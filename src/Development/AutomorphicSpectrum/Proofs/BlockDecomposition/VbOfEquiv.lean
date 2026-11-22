@@ -5,15 +5,15 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalSplittingG
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmallLiftBaseChangeLocal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsGeneralizedInverseOfUnitKernel
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ExactAndKerBaseChangeOfForallResidueField
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitComplexHomotopyDataStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitComplexHomotopyData
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HomotopyDataCohomologyBaseChangeStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantFibreRankStalkRank
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ModelComplexUnitElement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ComparisonMapsBijectiveFiniteStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ModelComparisonDegreeOneBijectiveStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ComparisonMapsBijectiveFinite
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ModelComparisonDegreeOneBijective
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ModelSteinOfComparison
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BaseChangeMapCompositionStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BaseChangeMapIdentityStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BaseChangeMapComposition
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BaseChangeMapIdentity
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ComparisonDegreeOneTowerFormulaStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GeneralizedInverseOfLiftLocal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LiftReductionZeroOfMaximalStatement
@@ -52,7 +52,7 @@ theorem vb_pure {R P₀ P₁ P₂ : Type} [CommRing R] [AddCommGroup P₀] [AddC
     haveI : Module.Free (Localization.AtPrime m) (TensorProduct R (Localization.AtPrime m) P₂) :=
       Module.free_of_flat_of_isLocalRing
     exact _root_.GlobalTheory.CompanionTheory.PerfVB.exists_generalised_inverse_of_lift _ _ _ _ (_root_.GlobalTheory.CompanionTheory.PerfVB.lift_of_smallLift R P₀ P₁ P₂ _ a₀ a₁ hc hL))
-  obtain ⟨j, π, h, h', hπj, haj, hπa, hsum⟩ := GlobalTheory.T.split_complex_homotopy_data R P₀ P₁ P₂ a₀ a₁ t s hc ht hs
+  obtain ⟨j, π, h, h', hπj, haj, hπa, hsum⟩ := _root_.GlobalTheory.CompanionTheory.PerfVB.exists_contraction_onto_homology R P₀ P₁ P₂ a₀ a₁ t s hc ht hs
   have hP := Module.Projective.of_split j π hπj
   have hsurj : Function.Surjective π := fun x => ⟨j x, by simpa using LinearMap.congr_fun hπj x⟩
   have hF := Module.Finite.of_surjective π hsurj
@@ -76,12 +76,12 @@ theorem small_lift {R C P₀ P₁ P₂ : Type} [CommRing R] [Category.{0} C]
         (m : BC F' F''), Function.Surjective m.coef.pull1) : SmallLift a₀ a₁ := by
   intro B _ _ _ t ht z hz
   obtain ⟨F', m0, F'', m, hsurj⟩ := hs B t ht
-  obtain ⟨l, hl⟩ := GlobalTheory.T.base_change_map_composition R B (B ⧸ Ideal.span {t}) C F F' F'' m0 m
+  obtain ⟨l, hl⟩ := _root_.GlobalTheory.CompanionTheory.PerfVB.exists_bc_comp R B (B ⧸ Ideal.span {t}) C F F' F'' m0 m
   obtain ⟨b0', b1', b2'⟩ := hbij B F F' m0
   obtain ⟨b0'', b1'', b2''⟩ := hbij (B ⧸ Ideal.span {t}) F F'' l
-  obtain ⟨e', he'⟩ := GlobalTheory.T.model_comparison_degree_one_bijective R B C P₀ P₁ P₂ F F' a₀ a₁ ψ₀ ψ₁ ψ₂ m0 hM b0' b1' b2'
+  obtain ⟨e', he'⟩ := _root_.GlobalTheory.CompanionTheory.PerfVB.Cls.model_comparison_degree_zero_bijective R B C P₀ P₁ P₂ F F' a₀ a₁ ψ₀ ψ₁ ψ₂ m0 hM b0' b1' b2'
   obtain ⟨e'', he''⟩ :=
-    GlobalTheory.T.model_comparison_degree_one_bijective R (B ⧸ Ideal.span {t}) C P₀ P₁ P₂ F F'' a₀ a₁ ψ₀ ψ₁ ψ₂ l hM b0'' b1'' b2''
+    _root_.GlobalTheory.CompanionTheory.PerfVB.Cls.model_comparison_degree_zero_bijective R (B ⧸ Ideal.span {t}) C P₀ P₁ P₂ F F'' a₀ a₁ ψ₀ ψ₁ ψ₂ l hM b0'' b1'' b2''
   have hmk : (Ideal.Quotient.mkₐ R (Ideal.span {t})) = IsScalarTower.toAlgHom R B (B ⧸ Ideal.span {t}) := by
     ext b
     rfl
@@ -128,7 +128,7 @@ theorem perfVB : PerfVBSt := by
       (F' : Pᵒᵖ ⥤ CommAlgCat.{0} S) (m : BC F F'), Function.Bijective (th0 m) ∧
         Function.Bijective (th1 m) ∧ Function.Bijective (th2 m) := by
     intro S _ _ F F' m
-    exact GlobalTheory.T.comparison_maps_bijective_finite R S P F F' m
+    exact _root_.GlobalTheory.CompanionTheory.PerfVB.th_bijective R S P F F' m
   have hE : ∀ (k : Type) [Field k] [Algebra R k] (x : k ⊗[R] P₀), a₀.lTensor k x = 0 →
       ∃ c : k, x = c • ((1 : k) ⊗ₜ[R] e) := by
     intro k _ _ x hx
@@ -139,7 +139,7 @@ theorem perfVB : PerfVBSt := by
     intro k _ _
     obtain ⟨F', m, hm⟩ := hfib k
     obtain ⟨b0, b1, b2⟩ := hbij k F F' m
-    obtain ⟨ek, -⟩ := GlobalTheory.T.model_comparison_degree_one_bijective R k Pᵒᵖ P₀ P₁ P₂ F F' a₀ a₁ ψ₀ ψ₁ ψ₂ m hMod b0 b1 b2
+    obtain ⟨ek, -⟩ := _root_.GlobalTheory.CompanionTheory.PerfVB.Cls.model_comparison_degree_zero_bijective R k Pᵒᵖ P₀ P₁ P₂ F F' a₀ a₁ ψ₀ ψ₁ ψ₂ m hMod b0 b1 b2
     rw [ek.finrank_eq]
     exact hm
   have hL : SmallLift a₀ a₁ := small_lift hbij F a₀ a₁ ψ₀ ψ₁ ψ₂ hMod (fun B _ _ _ t ht => hsm B t ht)
@@ -150,9 +150,9 @@ theorem perfVB : PerfVBSt := by
   haveI := f2
   haveI := p2
   have hv := vb_pure a₀ a₁ h10 g e he hE hG hL
-  obtain ⟨l, -⟩ := GlobalTheory.T.base_change_map_identity R Pᵒᵖ F
+  obtain ⟨l, -⟩ := _root_.GlobalTheory.CompanionTheory.PerfVB.bc_self R Pᵒᵖ F
   obtain ⟨c0, c1, c2⟩ := hbij R F F l
-  obtain ⟨eR, -⟩ := GlobalTheory.T.model_comparison_degree_one_bijective R R Pᵒᵖ P₀ P₁ P₂ F F a₀ a₁ ψ₀ ψ₁ ψ₂ l hMod c0 c1 c2
+  obtain ⟨eR, -⟩ := _root_.GlobalTheory.CompanionTheory.PerfVB.Cls.model_comparison_degree_zero_bijective R R Pᵒᵖ P₀ P₁ P₂ F F a₀ a₁ ψ₀ ψ₁ ψ₂ l hMod c0 c1 c2
   exact vb_of_equiv eR hv
 
 end GlobalTheory.CompanionTheory.PerfVB

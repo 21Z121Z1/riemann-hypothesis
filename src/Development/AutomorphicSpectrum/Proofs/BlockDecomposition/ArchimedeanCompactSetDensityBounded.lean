@@ -110,7 +110,7 @@ theorem density_inf : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Numb
         (Matrix.trace ((b' : Matrix (Fin n) (Fin n) (Ainf F ⊗[F] E)) * gramR (Ainf F) σ J X))) =
       Complex.exp (2 * Real.pi * Complex.I * ((pairC n c (Ψ b') (Ψ (gramH hCM hJ (Ainf F) X)) : ℝ) : ℂ)) := by
     intro b' X
-    rw [GlobalTheory.T.archimedean_character_in_coordinates F E σ ρ e τ Θ hΘ heρ a ψ hinf M n J _ X]
+    rw [_root_.GlobalTheory.CompanionTheory.SiegelND.Integ.Arch.PhaseCoord.psiInf_phase F E σ ρ e τ Θ hΘ heρ a ψ hinf M n J _ X]
     congr 3
     rw [phaseM, pairC_apply]
     refine Finset.sum_congr rfl fun w _ => ?_

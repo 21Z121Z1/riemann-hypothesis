@@ -5,24 +5,25 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermInf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermOf
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRing
 import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.FiniteAdeleTopologyStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.FiniteAdeleTopology
+import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.CountData
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsLatIntVec
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DeltaEqLatticeIndexStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DeltaEqLatticeIndex
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DeltaBlockQuotientInjection
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TsumCompBoundedFibresLe
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LamIsLatticeStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LamIsLattice
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeQuotientTorsionNonzero
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorsionCardLeAbsNormPowStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorsionCardLeAbsNormPow
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemLatticeOfDualPairing
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DenominatorIndexBoundStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DenominatorIndexBound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DenominatorNormQuadraticExtension
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IdealPrincipalElementNormBound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RelativeNormCmAbsNorm
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CmConjugationProperties
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorsionSumZetaBoundDeltaStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorsionSumZetaBoundDelta
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DeltaBlockMatrixMultiplicative
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DeltaBlockSeriesZetaBound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorsionOrthogonalityIntegralSolution
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DeltaBlockMatrixMultiplicativeStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorsionNormZetaBoundStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DeltaBlockLowerBoundTorsion
 
@@ -67,9 +68,9 @@ theorem step {F E : Type} [Field F] [NumberField F] [Field E] [NumberField E] [A
       ∑' q : ((Fin m → E) ⧸ intVec E m) × FQ F, G (x, q) ≤
         A * zetaR E r * (delta (Quotient.out x).1 : ℝ) ^ (-(s - 1)) := by
     intro x
-    obtain ⟨hU, hUle⟩ := GlobalTheory.T.torsion_sum_zeta_bound_delta E m (Quotient.out x).1 r hr1
+    obtain ⟨hU, hUle⟩ := _root_.GlobalTheory.CompanionTheory.SiegelND.Integ.Hua.HS.SumU.sum_tor E m (Quotient.out x).1 r hr1
     have hδ : (0 : ℝ) < delta (Quotient.out x).1 :=
-      Nat.cast_pos.mpr (Nat.pos_of_ne_zero (GlobalTheory.T.delta_eq_lattice_index E m _).1)
+      Nat.cast_pos.mpr (Nat.pos_of_ne_zero (_root_.GlobalTheory.CompanionTheory.SiegelND.Integ.Hua.HS.DeltaIndex.delta_index E m _).1)
     set B : ℝ := A * (delta (Quotient.out x).1 : ℝ) ^ (-s) with hB
     have hB0 : 0 ≤ B := mul_nonneg hA0 (Real.rpow_nonneg hδ.le _)
     have hsum : Summable (fun U : (Fin m → E) ⧸ intVec E m => ∑' D : FQ F, G (x, U, D)) :=

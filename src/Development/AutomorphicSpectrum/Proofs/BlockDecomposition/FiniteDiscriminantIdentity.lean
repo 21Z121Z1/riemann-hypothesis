@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFundamentalDomainGL
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AutomorphicNormFiniteNonzero
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OrthogonalOfNonIsomorphic
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TypedSpaceApproximationStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TypedSpaceApproximation
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KernelSumBoundUniform
 
 open scoped Classical
@@ -36,7 +36,7 @@ theorem main : FinDisc := by
   obtain ⟨V₁, h₁⟩ := hne
   obtain ⟨F, hF⟩ := _root_.GlobalTheory.CompanionTheory.FinDisc.exists_isFundamentalDomain_of_isSqInt E N μ _ (h₁.1.sqInt 0 (zero_mem _))
   obtain ⟨α, δ, hαc, hαs, hδ, hα⟩ := hRep
-  obtain ⟨Ω, hΩ, hconc⟩ := GlobalTheory.T.typed_space_approximation E N μ K W R ε δ α F hK hW hε hαc hαs hδ hF
+  obtain ⟨Ω, hΩ, hconc⟩ := _root_.GlobalTheory.CompanionTheory.Conc.conc E N μ K W R ε δ α F hK hW hε hαc hαs hδ hF
   obtain ⟨B, hB, hbes⟩ := _root_.GlobalTheory.CompanionTheory.FinDisc.bessel_lintegral_le E N μ δ α F Ω hαc hαs hδ hF hΩ
 
   have key : ∀ (n : ℕ) (Vs : Fin n → Submodule ℂ (Sm E N)), (∀ i, D (Vs i)) →

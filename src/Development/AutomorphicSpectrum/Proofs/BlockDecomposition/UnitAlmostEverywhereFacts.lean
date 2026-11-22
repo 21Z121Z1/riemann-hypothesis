@@ -3,7 +3,7 @@ import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.Archim
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalTwistContinuousInvolutionIntegralProperties
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyBezoutSeparableDerivativeAdicIntegers
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemMaxCompactGLOfCommuteEtaleCharpolyBoundedStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemMaxCompactGLOfCommuteEtaleCharpolyBounded
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralConjEtaleMemCentralizerMulIntegralGL
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InertIntegralTwistedConjugatesTwistedCentralizer
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyDefiniteUnitaryLocalPointMemMaxCompact
@@ -55,7 +55,7 @@ theorem eventually_one (hU : Unr E) (n : ℕ) (δ : GL (Fin n) E)
       exact ⟨t, ht, by simpa using hk⟩
     · obtain ⟨t, ht, k, hk, rfl⟩ := _root_.GlobalTheory.InertUniq.eq_twCent_mul_KGL E hU n w hs _ g hy hgood' hg
       exact ⟨t, ht, by simpa using hk⟩
-  · refine GlobalTheory.T.mem_maxCompactGL_of_commute_etale_charpoly_bounded E n w (nrmL n w (locEl n w δ)) t hNK hgood' ?_ hc
+  · refine _root_.GlobalTheory.StabInt.mem_KGL_of_commute E n w (nrmL n w (locEl n w δ)) t hNK hgood' ?_ hc
     have ht' : t * locEl n w δ = locEl n w δ * thL n w t := ht
     by_cases hs : IsSplitAt w
     · have hθ1 : thL n w = MonoidHom.id _ := by unfold thL; rw [if_pos hs]

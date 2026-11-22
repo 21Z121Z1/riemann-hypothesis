@@ -5,14 +5,14 @@ import Development.AbelianVarietyTheory.Definitions.Foundations.HTBasis
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExpStar
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoeffZeroEqZeroIff
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleEmbeddingFrobeniusGaloisCompat
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GaloisFixedSubringTensorWittSaturatedCompleteStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobeniusConstantsPiAdicFiltrationModEllStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GaloisFixedSubringTensorWittSaturatedComplete
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobeniusConstantsPiAdicFiltrationModEll
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleRingImageSaturatedAdicClosed
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicTowerFixesEpsilonRootsResGammaTrivialStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GaloisFixedTensorWittCompletePiAdicModEll
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleRingImageAddEllPiAdicClosed
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GaloisFixedTensorWittApproxFrobeniusPerfectionStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MatrixFrobeniusSubOneBijectiveModSubringStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GaloisFixedTensorWittApproxFrobeniusPerfection
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MatrixFrobeniusSubOneBijectiveModSubring
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DecWOfMatrixStatement
 
 open Formalism.WeaklyAdmissibleFiltrations Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.MainNotions.N Formalism.MainNotions.LocalSituation GlobalTheory.Cyc GlobalTheory.Decompl
@@ -34,8 +34,8 @@ theorem decompletion_matrix (l : ℕ) [Fact l.Prime] (P : LocPrime l) (AI : LocA
       (∀ i, ∃ e, ∑ k, E.tie.ioE (Pm i k) * φRW LL (z k) - z i = E.tie.ioE e) →
         ∀ i, ∃ e, z i = E.tie.ioE e) := by
   obtain ⟨c1, c2, c3, c4⟩ := _root_.GlobalTheory.Decompl.ioE_compat l P AI K s LL h W E
-  obtain ⟨f1, f2, f3⟩ := GlobalTheory.T.galoisFixedSubringTensorWitt_saturated_complete l P AI LL H
-  obtain ⟨p1, p2, -, -⟩ := GlobalTheory.T.frobenius_constants_piAdic_filtration_modEll l P AI LL s
+  obtain ⟨f1, f2, f3⟩ := _root_.GlobalTheory.Decompl.FixL.fixSub_ladic l P AI LL H
+  obtain ⟨p1, p2, -, -⟩ := _root_.GlobalTheory.DecomplFrob.frobenius_and_constants l P AI LL s
   obtain ⟨s1, s2⟩ := _root_.GlobalTheory.Decompl.Sat.ioE_saturated_closed l P AI K s LL h W E
   have hE : ∀ e, E.tie.ioE e ∈ fixSub AI LL H := fun e => mem_fixSub.2 fun g hg => by
     obtain ⟨hg, hg1⟩ := (hH g).1 hg
@@ -46,8 +46,8 @@ theorem decompletion_matrix (l : ℕ) [Fact l.Prime] (P : LocPrime l) (AI : LocA
   have hπ : piR AI LL s ∈ fixSub AI LL H := by rw [← c3]; exact hE _
   have q1 := _root_.GlobalTheory.Decompl.fixSub_nearPi_complete l P AI LL s H hπ
   have q2 := _root_.GlobalTheory.Decompl.ioE_closed l P AI K s LL h W E
-  have q3 := fun y hy => GlobalTheory.T.galoisFixedTensorWitt_approx_frobeniusPerfection l P AI K s LL h W E y (hsub y hy)
-  have q4 := GlobalTheory.T.matrix_frobenius_sub_one_bijective_mod_subring (RW LL) W.EE (RA LL) (E.tie.ioE : W.EE →+* RW LL) (inclR LL : RA LL →+* RW LL)
+  have q3 := fun y hy => _root_.GlobalTheory.DecomplDense.fixSub_approx_perfection l P AI K s LL h W E y (hsub y hy)
+  have q4 := _root_.GlobalTheory.DecomplMat.matrix_frob_sub_one_bijective (RW LL) W.EE (RA LL) (E.tie.ioE : W.EE →+* RW LL) (inclR LL : RA LL →+* RW LL)
     (φRW LL : RW LL →+* RW LL) (fixSub AI LL H) l (piR AI LL s)
     ((1 : ↥(OL LL)) ⊗ₜ[ℤ_[l]] piW AI s) rfl
   simp only [RingHom.coe_coe] at q4

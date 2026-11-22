@@ -2,9 +2,9 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.AtBase
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.NGData
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.LocalDiscriminantIsUnit
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUnitriangularFramesGramEqCellPointStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUnitriangularFramesGramEqCellPoint
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitriangularChangeRationalFlagIffRationalUnipot
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalisedBaseFramesRelevantPairStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalisedBaseFramesRelevantPair
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnsignedLocalTermRowLatticeIsTerm
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FinitePlacesNotPrimeToBaseFrameInvariants
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalUnitriangularFrameChangeLocalScalings
@@ -72,13 +72,13 @@ theorem base_data_of_global_term : ∀ (D : D7) (Z : LocDat D), ∀ (u u' : D.wh
   have hfr1 : frame F'1 = frameAct (frame F') (admXi D Λ (lf D F0) F')⁻¹ := funext fun b => (hF'1 b).trans rfl
   have hTri1 : Tri D.host.E (frame F') (frame F'1) := ⟨_, hA1, hF'1⟩
 
-  obtain ⟨-, hB1⟩ := GlobalTheory.T.exists_unitriangular_frames_gram_eq_cell_point D (lf D F0) F' w hT hT' hw
+  obtain ⟨-, hB1⟩ := _root_.GlobalTheory.LocOver.base_frames_at_point D (lf D F0) F' w hT hT' hw
   obtain ⟨hw1, hG1⟩ := hB1 (lf D F0) F'1 (tri_refl _ _) hTri1
-  obtain ⟨⟨F00, F'0, hTa, hTb, hpt⟩, hB2⟩ := GlobalTheory.T.exists_unitriangular_frames_gram_eq_cell_point D (lf D F0) F'1 w hT hT' hw1
+  obtain ⟨⟨F00, F'0, hTa, hTb, hpt⟩, hB2⟩ := _root_.GlobalTheory.LocOver.base_frames_at_point D (lf D F0) F'1 w hT hT' hw1
   have hG0 : Gval F00 F'0 ≠ 0 := by rw [(hB2 F00 F'0 hTa hTb).2, hG1]; exact hG
   obtain ⟨n, hn, hnf⟩ := ((GlobalTheory.FlagChange.flag_change D (lf D F0) hT).2 F00).1 hTa
 
-  have hFP := GlobalTheory.T.localisedBaseFrames_relevantPair D Z u u' w F00 F'0 hpt hG0
+  have hFP := _root_.GlobalTheory.LocBaseRel.atBase_relG D Z u u' w F00 F'0 hpt hG0
   choose FP hFPb using fun p => (hFP p).1
   have hFPr : ∀ p, (FP p).RelG (LocNG.theta (Z.M p)) := fun p => (hFP p).2 _ (hFPb p)
   have hIT := GlobalTheory.LocOver.locU_isTerm D Z u u' F0 Λ hR F' hPD hG

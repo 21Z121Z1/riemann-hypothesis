@@ -4,16 +4,16 @@ import Formalism.PairingDivisors.StatementH
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaTaylorCoeffsAlgebraicAtComplexMultiplicatioStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InducedTypeThetaGenusOnePermutes
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaPullbackConstantSqEqDet
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AdmissibleCharactersExistStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AdmissibleCharactersExist
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.StandardPairLatticeLocallyOrthonormalBasis
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaTranslationIntertwinerUnitary
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OddThetaFunctionExistenceUniqueness
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaSpaceSelfDualPairAtMostLineStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaSpaceSelfDualPairAtMostLine
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HermitianPairingRationalValues
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLatticeOfAdelicPoint
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmQuadraticFormEqAlternatingForm
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoordsAlongOrthonormalRealSubfieldBasisStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoordsAlongOrthonormalRealSubfieldBasis
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OrthoProductThetaMemThetaSpaceOfLattice
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SetAverageProdFundamentalDomainPlaneLatticePow
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LocalBasisLatticeIndexCoprime
@@ -107,7 +107,7 @@ theorem normSq_pullB (D : D7) (cc : Ideal (𝓞 D.host.K)) (δ : ℂ) (hC : Crv 
       nrm1Sq (lamOf D cc δ) g ^ r := by
   have hG := (GlobalTheory.InducedType.induced_type D).1
   have hlat := Parity.lamOf_eq_closure D cc δ hC
-  obtain ⟨-, -, hpar, hmem, hbij⟩ := GlobalTheory.T.coords_along_orthonormal_realSubfield_basis D hG cc δ N N' r b hb
+  obtain ⟨-, -, hpar, hmem, hbij⟩ := _root_.GlobalTheory.OnCoord.coords_of_orthonormal_basis D hG cc δ N N' r b hb
   let e0 : VC D N N' →ₗ[ℝ] (Fin r → ℂ) :=
     { toFun := fun z k => coordB D (tor0 D cc δ) b k z
       map_add' := fun z w => by
@@ -289,7 +289,7 @@ theorem exists_vacuum : ∀ (D : D7) (cc : Ideal (𝓞 D.host.K)) (δ : ℂ), Cr
   have hP : ∀ b : Fin (fF D * N * N') → Matrix (Fin N') (Fin N) D.host.E, OnB D b →
       pullB D (tor0 D cc δ) b (GL3Theta.th0 (lamOf D cc δ) t0) ∈ ThSp D (tor0 D cc δ) (LaB D (tor0 D cc δ) b) := by
     intro b hb
-    obtain ⟨-, -, hpar, hmem, -⟩ := GlobalTheory.T.coords_along_orthonormal_realSubfield_basis D hG cc δ N N' _ b hb
+    obtain ⟨-, -, hpar, hmem, -⟩ := _root_.GlobalTheory.OnCoord.coords_of_orthonormal_basis D hG cc δ N N' _ b hb
     exact _root_.GlobalTheory.ProdTheta.pullB_mem_ThSp D _ N N' _ b _ hpar hmem hd hth
   obtain ⟨b₀, hb₀, hl₀⟩ := _root_.GlobalTheory.OddGenus.odd_one D N N' hN 2 Nat.prime_two
   obtain ⟨κ, hκ, hκv⟩ := exists_kappa D N N' _ b₀ hb₀ hl₀ (hSD N) (hSD N')
@@ -309,7 +309,7 @@ theorem exists_vacuum : ∀ (D : D7) (cc : Ideal (𝓞 D.host.K)) (δ : ℂ), Cr
   · intro p hp lam _
     obtain ⟨b, hb, hl⟩ := _root_.GlobalTheory.OddGenus.odd_one D N N' hN p hp.out
     obtain ⟨c, ζ, m, hm, hζ, hc, hpull⟩ := _root_.GlobalTheory.UnitaryTheta.const_sq_eq_det D cc δ hC t0 ht N N' _ b₀ b hb₀ hb
-    obtain ⟨μ, hμ, hI⟩ := GlobalTheory.T.admissible_characters_exist D cc δ hC N N' _ _ _ (hKb b₀ hb₀) (hKb b hb) hK0 _ (hP b₀ hb₀)
+    obtain ⟨μ, hμ, hI⟩ := _root_.GlobalTheory.TripleIntertwiner.triple_constant D cc δ hC N N' _ _ _ (hKb b₀ hb₀) (hKb b hb) hK0 _ (hP b₀ hb₀)
     have hζQ : ζ ∈ Qbar := mem_Qbar_of_pow hm (hζ ▸ one_mem _)
     have hμQ : μ ∈ Qbar := mem_Qbar_of_pow (n := 8) (by norm_num) (hμ ▸ one_mem _)
     set u := phiQ D (((Matrix.of fun i j => hYY D (b j) (b₀ i)).det : D.host.K) : D.host.E) with hu
@@ -342,7 +342,7 @@ theorem exists_vacuum : ∀ (D : D7) (cc : Ideal (𝓞 D.host.K)) (δ : ℂ), Cr
       simp only [ε, map_div₀, map_mul, norm_div, norm_mul, n2, n3, mul_one]
       exact div_self n4
     · exact _root_.GlobalTheory.NormSum.LocIndex.index_coprime D hG cc δ N N' _ _ _ b p hp.out
-        (GlobalTheory.T.theta_space_selfDual_pair_at_most_line D hG cc δ hC N N' _ hK0).2.2.2.2.1 hl
+        (_root_.GlobalTheory.ThetaLine.theta_line D hG cc δ hC N N' _ hK0).2.2.2.2.1 hl
     · rw [hpull, Iop_smul, hI, hε]
       funext z
       field_simp

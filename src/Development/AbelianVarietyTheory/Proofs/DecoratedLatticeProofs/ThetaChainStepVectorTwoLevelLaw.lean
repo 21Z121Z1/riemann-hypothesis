@@ -55,8 +55,8 @@ theorem stepLevLawT (D : D7) (c : Com D) (hc : c.Is) (k : ℕ) (hk : k < D.R.m) 
     refine Finset.prod_congr rfl fun PP _ => ?_
     simp only [map_one, redFn_one, MonoidHom.inv_apply, inv_one, one_mul, hH]
   have hoT := _root_.GlobalTheory.ChainOnto.omegaG_levelP_move D s.V.rank s'.V.rank D.R.r D.R.t k hr hr' ea eb c.Pg c.P c.chi ξ1 H hBT hP
-  have h2 := GlobalTheory.T.weilRep_theta_datum_half_eq_smul D c.ψ s.V s'.V _ _ ω hW e _ f₀ _ f
-    (GlobalTheory.T.schrodingerIntertwiner_schwartzBruhat_isTheta D c.ψ hW.std s.V s'.V s.Λ s'.Λ hs.selfDual hs'.selfDual e (GlobalTheory.PlaceDatum.idemSum_mul_self he)
+  have h2 := _root_.GlobalTheory.ThetaMove.om_theta_eq_smul D c.ψ s.V s'.V _ _ ω hW e _ f₀ _ f
+    (_root_.GlobalTheory.SchrTheta.isTheta_placeModel D c.ψ hW.std s.V s'.V s.Λ s'.Λ hs.selfDual hs'.selfDual e (GlobalTheory.PlaceDatum.idemSum_mul_self he)
       (GlobalTheory.PlaceDatum.infPart_idemSum he) f₀ hf.2.theta) hΘ 1 κ
     (_root_.GlobalTheory.StabLatInv.mem_latO_iff_actO_mem D s.V s'.V s.Λ s'.Λ s.β s'.β hs.selfDual hs'.selfDual hs.frame hs'.frame 1 κ sg sh) _
     ((((c.P.chi ⟨_, hP⟩ * ∏ PP ∈ c.Pg, ∏ i ∈ Finset.range (k + 1),

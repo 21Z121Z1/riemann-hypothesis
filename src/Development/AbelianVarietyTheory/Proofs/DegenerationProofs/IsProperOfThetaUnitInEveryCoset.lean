@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
 import Development.AbelianVarietyTheory.Definitions.Degenerations.HomExtSt
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIntegralDegenerationValues
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusTorsionPointsCorrespondValuesStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusTorsionPointsCorrespondValues
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.FamiliesValuesCorrespond
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AbelianPartValuesOfExpansionLaws
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationValuesIntOfAdmissibleBase
@@ -113,7 +113,7 @@ theorem subsingleton_lattice (hV : HV) {E : Type} [Field E] [NumberField E] [IsC
   obtain ⟨Q, hQ⟩ := _root_.GlobalTheory.Ex.IntVal.main M.W _ hR M.P.D C M.ext N ν hI
   have hT := _root_.GlobalTheory.ValuesTorsion.tors_of_integral hL hL2 (_root_.GlobalTheory.ThetaInValues.brUth_of_laws hL) M.W M.P.D.toPre hev hbi C
     ⟨M.ext.1, fun r hr => M.ext.2 r (bot_le (a := IsLocalRing.maximalIdeal M.W) hr)⟩ N ν hI n hn ho h1
-  obtain ⟨g₁, g₂, g₃, -, g₅⟩ := GlobalTheory.T.torus_torsion_points_correspond_values M.W M.P.D.toPre hev hbi C N ν
+  obtain ⟨g₁, g₂, g₃, -, g₅⟩ := _root_.GlobalTheory.Ex.GtValues.points_correspond M.W M.P.D.toPre hev hbi C N ν
   have hk : 0 < (n ^ j) ^ 2 := pow_pos (pow_pos hn.pos _) _
   obtain ⟨g₆, g₇, g₈⟩ := g₅ ((n ^ j) ^ 2)
   obtain ⟨f, f₁, f₂, f₃, f₄, -⟩ := _root_.GlobalTheory.TorsionIso.torsion_eq hV.1 M.W _ hR M.P.D M.P.A M.t.G M.t.semi M.P.U C _ hk
@@ -150,7 +150,7 @@ theorem subsingleton_lattice (hV : HV) {E : Type} [Field E] [NumberField E] [IsC
   · rintro q q' a ⟨p, hp, e₁⟩ ⟨p', hp', e₂⟩
     exact (g₈ p p' q q' hp hp').1 ((f₃ p p').1 (e₁.trans e₂.symm))
   · choose p hp hp' using hq
-    have ht := _root_.GlobalTheory.Ex.ThetaSeries.theta_const_eq_series hV GlobalTheory.T.torus_torsion_points_correspond_values (_root_.GlobalTheory.Ex.brFam hL hL2) M.W _ M.cdv rfl M.P.D M.P.A M.t.G M.t.semi M.P.U C M.ext
+    have ht := _root_.GlobalTheory.Ex.ThetaSeries.theta_const_eq_series hV _root_.GlobalTheory.Ex.GtValues.points_correspond (_root_.GlobalTheory.Ex.brFam hL hL2) M.W _ M.cdv rfl M.P.D M.P.A M.t.G M.t.semi M.P.U C M.ext
       N ν (n ^ j) ho.pow D.La p q x (fun a => (f₁ _ _).2 (hp' a).symm) hp
     obtain ⟨c, hc⟩ := (c₂ 1 _ v ((c₃ _).1 ht)).1 ((c₃ _).1 hv')
     exact ⟨c, fun a => congrFun hc a⟩

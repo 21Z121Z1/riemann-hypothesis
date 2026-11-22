@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsInject
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCanonicalAcrisToBdRPlus
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLogTeichmullerAcrisEqMuMulUnit
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTeichmullerTiltMinusOnePowDivEnvelope
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsBdRPlusSectionOfThetaStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsBdRPlusSectionOfTheta
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsMaxUnramifiedEmbeddingIntoBcris
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCompatibleRootsOfUnityAndTiltPadicStatement
 import Development.AbelianVarietyTheory.CrystallinePeriods.RingIface
@@ -48,7 +48,7 @@ theorem coreEx_isUnit_l {l : ℕ} [Fact l.Prime] (e : Per.Fl l) (h1 : e.untilt =
 theorem nonempty_core : ∀ (l : ℕ) [Fact l.Prime], Nonempty (Core l) := by
   intro l _
   obtain ⟨ζ, ε, z0, zs, z1, hr⟩ := GlobalTheory.T.exists_compatible_rootsOfUnity_and_tilt_padic l
-  obtain ⟨o, ho⟩ := GlobalTheory.T.exists_isBdRPlusSectionOfTheta l
+  obtain ⟨o, ho⟩ := _root_.GlobalTheory.MemLoc.SecEx.exists_isSec l
   obtain ⟨j, hj⟩ := _root_.GlobalTheory.MemLoc.exists_isCrisP l
   obtain ⟨ι, hι, hinj⟩ := _root_.GlobalTheory.MemLoc.exists_iota_cris_dR l j hj
   have h1 : ε.untilt = 1 := by

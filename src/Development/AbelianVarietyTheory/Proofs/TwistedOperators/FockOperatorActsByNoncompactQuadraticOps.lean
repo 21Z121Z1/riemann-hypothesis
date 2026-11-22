@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsIntOv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PureTensorOInjective
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOfPderivStable
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaInnerProductHermitian
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasDerivAtHeisenbergMatrixCoeffRealLineSkewStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasDerivAtHeisenbergMatrixCoeffRealLineSkew
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum MeasureTheory IsDedekindDomain NumberField Matrix GlobalTheory.IndefiniteRowSideFullHecke.RestrictedTensorSplitting GlobalTheory.PlaceTensor
 open scoped TensorProduct ComplexOrder
@@ -557,7 +557,7 @@ theorem acts_by_fockP : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (θ : InfF
   have l1 : L (G (E 1)) = 0 := by rw [hL, e1]; exact h0 h ht hvac
   have lc : ∀ ρ N g, L (cre (pS ρ) (pT ρ) (d ρ) N g) = 0 := fun ρ N g => by
     have sk : ∀ N, L (d ρ N g) = -ipO μ 𝓕 g (d ρ N h) := fun N =>
-      (GlobalTheory.T.hasDerivAt_heisenbergMatrixCoeff_realLine_skew D ψ θ S T μ 𝓕 hψ hθ hμ g h g.2 ht ρ _).2
+      (_root_.GlobalTheory.MatrixCoeffDeriv.hasDerivAt_ipO_and_skew D ψ θ S T μ 𝓕 hψ hθ hμ g h g.2 ht ρ _).2
     have z : ipO μ 𝓕 g (ann (pS ρ) (pT ρ) (d ρ) N h : thetaSub S T ψ) = 0 := by
       rw [k1]; simp [ipO]
     rw [ann, LinearMap.add_apply, LinearMap.smul_apply, Submodule.coe_add,

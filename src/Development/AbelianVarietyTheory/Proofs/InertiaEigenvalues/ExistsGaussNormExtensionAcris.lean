@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsCris
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Acris0TorsionFree
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WittVectorGaussNormUltrametric
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WittVectorGaussNormMul
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UntiltNormUltrametricEqZeroStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UntiltNormUltrametricEqZero
 import Development.AbelianVarietyTheory.CrystallinePeriods.RingIface
 import Development.AbelianVarietyTheory.CrystallinePeriods.RingBasics
 
@@ -196,7 +196,7 @@ theorem exists_gauss_acris (l : ℕ) [Fact l.Prime] (r : ℝ) (hr : (l : ℝ)⁻
   have a0 : a 0 = 0 := by simp only [a, untilt_zero]; simp
   have a1 : a 1 = 1 := by simp [a]
   have amul : ∀ x y, a (x * y) = a x * a y := by intro x y; simp [a]
-  have aadd : ∀ x y, a (x + y) ≤ max (a x) (a y) := fun x y => (GlobalTheory.T.untilt_norm_ultrametric_eq_zero l x y).1
+  have aadd : ∀ x y, a (x + y) ≤ max (a x) (a y) := fun x y => (_root_.GlobalTheory.TiltAbs.untilt_ultrametric_definite l x y).1
   obtain ⟨N, hN⟩ : ∃ N : Per.Ainf l → ℝ,
       ∀ x, N x = ⨆ n : ℕ, a (x.coeff n) ^ ((1 : ℝ) / (l : ℝ) ^ n) * r ^ n := ⟨_, fun _ => rfl⟩
   obtain ⟨Nadd, Nneg, -⟩ := _root_.GlobalTheory.WittGauss.gaussNorm_ultrametric_submul l (Per.Fl l) a a01 a0 a1 amul aadd r hr0 hr1 N hN

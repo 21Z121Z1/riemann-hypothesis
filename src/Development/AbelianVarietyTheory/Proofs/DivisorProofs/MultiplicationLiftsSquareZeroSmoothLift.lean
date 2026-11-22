@@ -12,7 +12,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AffinePairLiftsGlue
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLiftHomOfReductionSquareZeroSmooth
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftsNaturalOfObstructionOneZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDegreeOneObstructionClass
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechPairRestrictBaseChangeBijectiveStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechPairRestrictBaseChangeBijective
 
 set_option autoImplicit false
 
@@ -109,7 +109,7 @@ theorem mul_lifts : FormSt → AxesVanishingExtendedDegOne → ∀ (R R₀ : Typ
     intro w
     obtain ⟨c, hc⟩ := _root_.GlobalTheory.Obs.exists_isOb1 R R₀ I hI π hπ hk R₁ α _ _ _ _ (ofSys S) (pairPre S' (μ[A₀]).left) (pairPull hh)
       l₀ (ofSys_isFun S) ((ofSys_isFun S').restrict _) hL w
-    obtain ⟨⟨-, hsurj⟩, -⟩ := (GlobalTheory.T.cechPairRestrict_baseChange_bijective R₀ R₁ _ _ (A₀ ⊗ A₀).hom (μ[A₀]).left).1
+    obtain ⟨⟨-, hsurj⟩, -⟩ := (_root_.GlobalTheory.Obs.PairExt.pairRes_ext_bijective R₀ R₁ _ _ (A₀ ⊗ A₀).hom (μ[A₀]).left).1
     obtain ⟨c', rfl⟩ := hsurj c
     have ax₁ : IsExtendedPullbackDegOne R₁ (overW (lift (𝟙 A₀) 1)) c' 0 :=
       _root_.GlobalTheory.Obs.retractionLiftObstruction_zero_of_liftedSection_alt R R₀ I hI π hπ hk R₁ α _ _ _ _ A₀.hom (A₀ ⊗ A₀).hom X.hom (X ⊗ X).hom i l h hl S S' P P'

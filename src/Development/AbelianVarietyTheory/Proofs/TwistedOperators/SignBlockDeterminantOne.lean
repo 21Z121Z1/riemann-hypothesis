@@ -6,9 +6,10 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Ex
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRealPlaceThetaObjectsTheoremARParts
 import Formalism.SharpRestriction.Divisibility.SchurIrreducible
 import Formalism.LocalToGlobal.BesselHermitianTheta.DefsReal
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LieActionFockOperatorsScalarsTraceStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CompactSubgroupsActOnFockVectorsAllSignaturesStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GluingLawHoldsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LieActionFockOperatorsScalarsTrace
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CompactSubgroupsActOnFockVectorsAllSignatures
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GluingLawHolds
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ChosenSeries
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaModelsAreCoverDiscreteSeriesOfHarishChandra
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.BarMatrix
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftCuspFormAutomorphicSmoothModerateGrowth
@@ -129,7 +130,7 @@ theorem lowVanishFock (h1 : GlobalTheory.Published.DiscreteSeriesCover) (h2 : Gl
 
   have hT : ∀ τ, ∀ Y ∈ lieAt W τ, ∀ φ z, HasDerivAt (fun t : ℝ => ω' (1, oneP θ W τ Y t) (pt φ) z)
       (pt (fockT τ (A.ε τ) (M'.ε τ) (M'.fr τ * Y * (M'.fr τ)⁻¹) φ + ((expS D k τ : ℂ) * Y.trace) • φ) z) 0 :=
-    fun τ Y hY φ z => (GlobalTheory.T.lieAction_fockOperators_scalars_trace D V' W A (Fr.ofModel M') θ ψ χS χT ω' f₀ τ (expS D k τ) (expT D k τ) hθ hW
+    fun τ Y hY φ z => (_root_.GlobalTheory.LieScalar.lieFockAll D V' W A (Fr.ofModel M') θ ψ χS χT ω' f₀ τ (expS D k τ) (expT D k τ) hθ hW
       (hexp τ).1 (hexp τ).2 hf).2 Y hY φ z
   have hBt : ∀ τ, ∀ Y ∈ lieAt W τ, ∀ φ (w : M'.Vec) (u : M'.sm τ), (u : M'.H τ) = dRep (M'.rep τ) Y (w τ) →
       G (fockT τ (A.ε τ) (M'.ε τ) (M'.fr τ * Y * (M'.fr τ)⁻¹) φ + ((expS D k τ : ℂ) * Y.trace) • φ)
@@ -148,7 +149,7 @@ theorem lowVanishFock (h1 : GlobalTheory.Published.DiscreteSeriesCover) (h2 : Gl
 
   have hav := mem_span_of_average G h' fun τ φ w => by
     obtain ⟨n, φs, c, hc, hφ⟩ := frame_fock_orbit D V' W _ A M' θ ψ ω' f₀ τ (expS D k τ) (expT D k τ) hθ
-      (GlobalTheory.T.compact_subgroups_act_on_fock_vectors_all_signatures D V' W A (Fr.ofModel M') θ ψ χS χT ω' f₀ τ _ _ hθ hW (hexp τ).1 (hexp τ).2 hf f0) φ
+      (_root_.GlobalTheory.CompactFockAction.compactFockAll D V' W A (Fr.ofModel M') θ ψ χS χT ω' f₀ τ _ _ hθ hW (hexp τ).1 (hexp τ).2 hf f0) φ
     have hk := GlobalTheory.Chain.IoLift.kMean_mem_kFin_of_coefFam D W _ M' τ n c hc (w τ)
     refine ⟨n, φs, fun i => ⟨_, h' τ (hk i)⟩, hk, ?_⟩
     funext g
@@ -185,7 +186,7 @@ theorem lowVanishFock (h1 : GlobalTheory.Published.DiscreteSeriesCover) (h2 : Gl
               ((expS D k τ₀ : ℂ) * Y.trace) • Q)) =
               fockT τ₀ (A.ε τ₀) (M'.ε τ₀) (M'.fr τ₀ * Y * (M'.fr τ₀)⁻¹) (glue (Function.update p τ₀ Q)) +
                 ((expS D k τ₀ : ℂ) * Y.trace) • glue (Function.update p τ₀ Q) := by
-            rw [((GlobalTheory.T.gluing_law_holds D V'.rank W.rank).2 τ₀ _ _ _).2, Function.update_idem, Function.update_self]
+            rw [((_root_.GlobalTheory.Chain.RealIt.GlueProof.glueLaw D V'.rank W.rank).2 τ₀ _ _ _).2, Function.update_idem, Function.update_self]
             simp only [← glueM_apply, MultilinearMap.map_update_add, MultilinearMap.map_update_smul]
           have eq2 : Function.update y τ₀ (a' τ₀ Y z) = Function.update (Function.update y τ₀ z) τ₀
               (a' τ₀ Y (Function.update y τ₀ z τ₀)) := by

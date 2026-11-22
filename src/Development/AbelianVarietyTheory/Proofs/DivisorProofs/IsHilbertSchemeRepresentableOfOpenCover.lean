@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComapEqKerIff
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsRepresentableOfCover
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertPointEqOfOpenCover
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertPointGlueOpenCoverStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertFunctorLocalRepresentingDataOfRestrictStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertFunctorLocalRepresentingDataOfRestrict
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsProperOfRepresentsHilbertFunctorOfLocalStatement
 
 set_option autoImplicit false
@@ -29,7 +29,7 @@ theorem GlobalTheory.HilbGlue.isHilbRep_of_cover : ∀ (S Z : Scheme.{0}) (z : Z
       IsProper π ∧ y.1 = π ≫ W.ι ∧ ∀ (Y : Scheme.{0}) (x : HPt z r Y) (b : Y ⟶ W.toScheme),
         x.1 = b ≫ W.ι → ∃! c : Y ⟶ T, HPt.map c y = x := fun s => by
     obtain ⟨W, hs, hW⟩ := hS s
-    exact ⟨W, hs, GlobalTheory.T.hilbertFunctor_local_representing_data_of_restrict z r W hW⟩
+    exact ⟨W, hs, _root_.GlobalTheory.HilbGlue.isHilbRep_restrict_local z r W hW⟩
   have hloc' := hloc
   choose W hsW T y π _ hπ huniq using hloc
   have hrep : (hilbFunctor z r).IsRepresentable :=

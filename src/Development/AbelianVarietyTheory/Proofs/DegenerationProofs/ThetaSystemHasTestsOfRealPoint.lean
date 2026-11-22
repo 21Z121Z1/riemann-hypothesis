@@ -1,11 +1,11 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUniformisedModel
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.UniformisedModelTorsionLabelsExist
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaConstantBoundedByShortestVectorStatement
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.UnitThetaConstantsGenerateIntegralTorsionStatement
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.WeightSpaceValuesIntegralTorsionBoundShortestVecStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaConstantBoundedByShortestVector
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.UnitThetaConstantsGenerateIntegralTorsion
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.WeightSpaceValuesIntegralTorsionBoundShortestVec
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsNormTorsionSumShortestVectorEq
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsWeightZeroSectionUnitIntegralTorsionPointStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsWeightZeroSectionUnitIntegralTorsionPoint
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsTestMatch
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 import Development.AbelianVarietyTheory.Statements.SemistableTorsion.UTorsSt
@@ -29,11 +29,11 @@ theorem hasTests_of_real : GlobalTheory.Published.SemistableReductionSt → ThmU
     obtain ⟨u, hu⟩ := _root_.GlobalTheory.exists_uniformised_model hS hU hL.polBaseChange o Ω S ρ p y₀ Fs
     obtain ⟨l⟩ := _root_.GlobalTheory.ZH.labels_exist hL hL2 hT o Ω S ρ p y₀ u hy
     obtain ⟨τ, hτ⟩ := exists_test_match o Ω S ρ p y₀ u l
-      (GlobalTheory.T.thetaConstant_bounded_by_shortestVector hL hL2 hT o Ω S ρ p y₀ u l hy)
-      (GlobalTheory.T.unitThetaConstants_generate_integralTorsion hL hL2 hT o Ω S ρ p y₀ u l hy)
-      (GlobalTheory.T.weightSpace_values_integralTorsion_bound_shortestVector hL hL2 hT o Ω S ρ p y₀ u l hy)
+      (_root_.GlobalTheory.ZH.TestVal.main hL hL2 hT o Ω S ρ p y₀ u l hy)
+      (_root_.GlobalTheory.UnitTheta.closure_unit_theta hL hL2 hT o Ω S ρ p y₀ u l hy)
+      (_root_.GlobalTheory.ZH.WeightBound.main hL hL2 hT o Ω S ρ p y₀ u l hy)
       (_root_.GlobalTheory.TestFibre.exists_norm_FF_eq hL hL2 hT o Ω S ρ p y₀ u l hy)
-      (GlobalTheory.T.exists_weightZeroSection_unit_integralTorsionPoint hL hL2 hT o Ω S ρ p y₀ u l hy)
+      (_root_.GlobalTheory.ZH.WeightZeroUnit.main hL hL2 hT o Ω S ρ p y₀ u l hy)
     exact ⟨u, l, τ, hτ, hu⟩
   refine ⟨?_, key⟩
   intro p _ y hy

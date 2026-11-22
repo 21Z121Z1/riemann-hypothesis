@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.CosetTrace
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NatCastEqOneOfCoprime
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPthPowerScaleThinShellStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPthPowerScaleThinShell
 
 open GlobalTheory.AlmostEt
 open scoped NNReal
@@ -15,7 +15,7 @@ theorem moves_top_of_coprime_order : ∀ (L : Type) [Field L] (v : Valuation L �
     (∃ y : L, σ • y ≠ y) → Moves v ⊤ σ := by
   intro L _ v p hp F hF hp0 hp1 G _ _ hv σ hσF l hl hσl ⟨y, hy⟩ r hr
   obtain ⟨d, hdF, _hd0, hrx, hx1⟩ :=
-    GlobalTheory.T.exists_pth_power_scale_thin_shell L v p hp F hF hp0 hp1 r hr (σ • y - y) (sub_ne_zero.mpr hy)
+    _root_.GlobalTheory.AlmostEt.klc_scale L v p hp F hF hp0 hp1 r hr (σ • y - y) (sub_ne_zero.mpr hy)
   set x := (σ • y - y) * d ^ p with hxdef
   refine ⟨x, Subfield.mem_top x, hx1, ?_⟩
   by_contra hle

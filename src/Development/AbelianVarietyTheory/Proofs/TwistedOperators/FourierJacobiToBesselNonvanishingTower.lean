@@ -5,8 +5,8 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilDatumD
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnfoldingLevelsAndStepsHaarMeasuresExist
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsWeilDatumHermitianPair
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridConjugationWeilDataInverseCharacter
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LinkedLineVectorsInvertibleOnThetaFunctionsStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftPeriodsIsTameThetaFunctionalStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LinkedLineVectorsInvertibleOnThetaFunctions
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftPeriodsIsTameThetaFunctional
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FourierJacobiPeriodGivesBesselPeriodOfLift
 
 noncomputable section
@@ -61,7 +61,7 @@ theorem rungB : FockTot → PartFixed → RungB := by
     congrArg star (hP D hD T L μ0 hL sc G W M hM ρ Φ u (2 * k) (by omega) k' hk' g)
 
   have hvac1 : VacG W.ψ _ _ (latCore G (2 * k + 1)) (star f) := (hdepiff f).1 hdep
-  obtain ⟨-, hlink⟩ := GlobalTheory.T.linkedLineVectors_invertible_on_theta_functions D W.ψ W.ψ_std (negSp F.Lz) (negSp F.Lz) (G.V (.core (2 * k + 1)))
+  obtain ⟨-, hlink⟩ := _root_.GlobalTheory.LinkInvTheta.link_inv_theta D W.ψ W.ψ_std (negSp F.Lz) (negSp F.Lz) (G.V (.core (2 * k + 1)))
     (F.ζ (k + 1)) (F.ζ k) (F.line (k + 1)) (F.line k) (F.lnk k)
   obtain ⟨Ξ₂, hΞ₂, hΦ₀eq⟩ := hlink Φ₀ hΦ₀.1
   have hbox' := hbox (star f) Ξ₂ hvac1 hΞ₂ (by rw [← hΦ₀eq]; exact hΦ₀)
@@ -81,7 +81,7 @@ theorem rungB : FockTot → PartFixed → RungB := by
   set ℓ : (WO (G.V (.grid (2 * k + 2) 0)) (G.V (.grid (2 * k + 1) 0)) → ℂ) → ℂ :=
     fun Φ' => (F.bes v k h).per W.ψ φ (liftS (omRow W (2 * k + 1)) vW.μ vW.𝓕 G' Φ')
   have htame : Tame W.ψ _ _ ℓ :=
-    (GlobalTheory.T.thetaLift_periods_isTameThetaFunctional D W.ψ _ vW G' hG').1 k (F.bes v k h) _ _ (omRow W (2 * k + 1)) hw1 φ hφ
+    (_root_.GlobalTheory.LiftTame.lift_periods_tame D W.ψ _ vW G' hG').1 k (F.bes v k h) _ _ (omRow W (2 * k + 1)) hw1 φ hφ
   have hℓ₁ : ℓ Φ₁ ≠ 0 := by
     have e : s.lift G' Φ₁ = liftS (omRow W (2 * k + 1)) vW.μ vW.𝓕 G' Φ₁ := by
       unfold GlobalTheory.Unf.Step.lift; rw [hsom, hsvW]

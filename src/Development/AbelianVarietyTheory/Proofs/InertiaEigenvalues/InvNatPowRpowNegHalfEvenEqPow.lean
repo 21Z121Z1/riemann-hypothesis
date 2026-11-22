@@ -158,7 +158,7 @@ theorem lat_iff {F : Frame S T} (hF : F.Good) {P : Pl D.host.E} (hPs : PlacesOK 
     rw [frMapO_smul]
     exact forall₂_congr fun i j => hφ2 _
   rw [← hint]
-  exact ⟨fun h => (GlobalTheory.T.frameMatrices_integral_of_mem_completedLattice hF hPs hh h).1, fun h => GlobalTheory.T.mem_completedLattice_of_frameMatrix_integral hF hPs hh h⟩
+  exact ⟨fun h => (_root_.GlobalTheory.LatHalfInt.frMap_int_of_mem_lat hF hPs hh h).1, fun h => _root_.GlobalTheory.IntHalfLat.mem_lat_of_frMapO_int hF hPs hh h⟩
 
 theorem halfInd_smul {m n : ℕ} {e : AE D} (he : e * e = e) (Λ : AddSubgroup (Mx D m n)) (y : Mx D m n) :
     halfInd e Λ (e • y) = if e • y ∈ Λ then 1 else 0 := by
@@ -238,7 +238,7 @@ theorem datum_rel (B : Base S T) (hB : B.Good) {Q : Finset (Pl D.host.E)} (hQ : 
       unfold actO; simp [GlobalTheory.AdelicLatMove.mt_one], map_one, Units.val_one, Matrix.one_mul] at this
 
   have hHk : ∀ k ∈ Finset.Icc 1 T.rank, Hk (Ov D v) p k (rho T π β' (α k)) ∧ Reps (Ov D v) (rho T π β' (α k)) (R k) (rho T π β') :=
-    fun k hk => ⟨GlobalTheory.T.heckeElement_component_mem_standardDoubleCoset e v π hsp hπ T β' hfr ϖ p k (α k) hpϖ (hα k hk).1,
+    fun k hk => ⟨_root_.GlobalTheory.SplitHecke.HeckeComp.hk_of_isHeckeElt e v π hsp hπ T β' hfr ϖ p k (α k) hpϖ (hα k hk).1,
       reps_of hsp hπ hfr (hα k hk).1.2.1 (hα k hk).2.1 (hα k hk).2.2⟩
   have hint : ∀ k ∈ Finset.Icc 1 T.rank, ∀ γ ∈ R k, IntM (Ov D v) (rho T π β' γ).1 := fun k hk γ hγ => by
     obtain ⟨k₁, k₂, g₁, g₂, hg⟩ := (hHk k hk).2.1 γ hγ
@@ -356,7 +356,7 @@ theorem vec_rel (B : Base S T) (hB : B.Good) (hbT : Lev.IsBaseFrame T B.F.βT B.
           ∑ γ ∈ R k, ω (1, γ) (B.vecAt Q fun PP y => if PP.1 = P then 1 else φ PP.1 y) := by
   obtain ⟨S', -, hq', hS'⟩ := hQ.1.split
   have he : IsIdemAt (idemAt P) P := hS'.isIdemAt (hq' (Finset.mem_union_right _ hP))
-  obtain ⟨v, π, hπ⟩ := GlobalTheory.T.exists_place_chart_of_splitIdempotent (idemAt P) he.1
+  obtain ⟨v, π, hπ⟩ := _root_.GlobalTheory.SplitChart.exists_chart (idemAt P) he.1
   obtain ⟨⟨p, hpϖ, hp⟩, hq⟩ := _root_.GlobalTheory.SplitUnif.unif_chart (idemAt P) P v π he hπ ϖ hϖ1 hϖ2
   obtain ⟨φv, hφ1, hφ2, hφ3, hfr⟩ := _root_.GlobalTheory.ChartLevels.chart_levels D (idemAt P) P v π he hπ
   have hq0 : Ideal.absNorm P.asIdeal ≠ 0 := fun h => P.ne_bot (Ideal.absNorm_eq_zero_iff.1 h)

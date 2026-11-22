@@ -3,9 +3,9 @@ import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
 import ReciprocityTheory.AnalyticForms.PotentialTheory.Partition
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffAtOfIsPotential
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.CompatibleChartProductProjectionStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.CompatibleChartProductProjection
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsSncAdaptedChartAtPoint
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncAdaptedChartSectionFormStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncAdaptedChartSectionForm
 open MvPolynomial MeasureTheory Filter Topology Matrix ReciprocityTheory.AnForm ReciprocityTheory.AnForm.M ReciprocityTheory.AnForm.P ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.AI.I1 ReciprocityTheory.ChartRestriction.G.AI.I2 ReciprocityTheory.ChartRestriction.G.AI.I4 GlobalTheory.CompanionTheory.Ar.PB GroundTheory.Heights₂.Heights GroundTheory.Heights₂.Heights.LowerBoundFree
 open scoped ComplexOrder Classical
 
@@ -52,7 +52,7 @@ theorem isSNC_pull {e n : ℕ} {X Z : Type} [TopologicalSpace X] [TopologicalSpa
   intro x
   obtain ⟨ψb, hcb, hxb, hsub, σb, hinj, hW, u, hu, hu0, hfac⟩ := hsnc (pr x)
   obtain ⟨ψ, kb, σ, hc, hx, hpr⟩ := hprod x
-  obtain ⟨ψ', hc', hsrc, hco⟩ := GlobalTheory.T.compatible_chart_product_projection e n X Z A Ab pr ψ kb σ ψb hc hcb hpr
+  obtain ⟨ψ', hc', hsrc, hco⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PB.ChartSwap.chart_swap e n X Z A Ab pr ψ kb σ ψb hc hcb hpr
   have hsrc' : ∀ y ∈ ψ'.source, pr y ∈ ψb.source := fun y hy => by
     rw [hsrc] at hy; exact hy.2
   refine ⟨ψ', hc', by rw [hsrc]; exact ⟨hx, hxb⟩, fun y hy => hsub (hsrc' y hy),
@@ -91,7 +91,7 @@ theorem exists_adapted {e : ℕ} {X : Type} [TopologicalSpace X] [CompactSpace X
     {W : Fin nb → Set X} (hL : IsPotential A L) (hs : IsSection A L s) (hsnc : IsSNC A L s m W) :
     ∃ B : FinHolAtlas e X, IsAdaptedAtlas A B L s := by
   choose φ S μ v hc hx hball h0 hU hμ hv hv0 hfac using _root_.GlobalTheory.CompanionTheory.Ar.PB.LocalForm.exists_local_form e X A L s nb m W hsnc
-  have hb := fun x => GlobalTheory.T.snc_adapted_chart_section_form e X A L s hL hs x (φ x) (S x) (μ x) (v x) (hc x) (hball x) (hU x)
+  have hb := fun x => _root_.GlobalTheory.CompanionTheory.Ar.PB.LocalModel.zero_set_and_bound e X A L s hL hs x (φ x) (S x) (μ x) (v x) (hc x) (hball x) (hU x)
     (hμ x) (hv x) (hv0 x) (hfac x)
   choose hzero M hM using fun x => And.intro (hb x).1 (hb x).2
   have hopen : ∀ x, IsOpen ((φ x).source ∩ φ x ⁻¹' Metric.ball (0 : Fin e → ℂ) 1) := fun x =>

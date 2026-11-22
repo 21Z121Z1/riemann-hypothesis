@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PathArgsOfNotMem
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TotalTensorThetaLiftEqOfSchwartzEqStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SandwichedFlipRouteThroughSmallEqInvConstRouteBiStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsClassSumSchwartzProductsGridPathStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TotalTensorThetaLiftEqOfSchwartzEq
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SandwichedFlipRouteThroughSmallEqInvConstRouteBi
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsClassSumSchwartzProductsGridPath
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links Formalism.L2.DIV
 open IsDedekindDomain NumberField MeasureTheory GlobalTheory.ChiGrid GlobalTheory.FunObj GlobalTheory.RowTest GlobalTheory.StdFrames GlobalTheory.RowClaim GlobalTheory.FlipRun
@@ -202,12 +202,12 @@ theorem exists_classes_two {μ₀ : T} (hL : L.Is μ₀) {W : G.Weil} (B : Frame
       (∀ κ ∈ s, VecAll ρ e p (φ κ) (d κ)) ∧ (∀ κ ∈ s, VecAll ρ e q (φ' κ) (d' κ)) ∧
       ∀ x x' y, HalfAll e p x → HalfAll e q x' → K (fun w => pathArgs B t w p x + pathArgs B t w q x') y =
         ∑ κ ∈ s, famProd p (φ κ) x * famProd q (φ' κ) x' * K (fun w => pathArgs B t w p (r κ) + pathArgs B t w q (r' κ)) y := by
-  obtain ⟨ι, s, φ, d, r, a1, a2⟩ := GlobalTheory.T.exists_classSum_schwartzProducts_gridPath hL B ρ t he n p hp np (U := ArgT G q × U)
+  obtain ⟨ι, s, φ, d, r, a1, a2⟩ := _root_.GlobalTheory.FlipRun.exists_classes_path hL B ρ t he n p hp np (U := ArgT G q × U)
     (fun x y => K (x + fun w => pathArgs B t w q y.1) y.2) (fun x z y hz => by rw [add_right_comm, h1 _ z _ hz])
     fun x y h w hw b hb => by
       have := h2 _ _ h w hw b (.inl hb)
       rwa [Pi.add_apply, Pi.add_apply, pathArgs_of_notMem B t w q _ b fun h' => hpq b h' hb, add_zero] at this
-  obtain ⟨ι', s', φ', d', r', b1, b2⟩ := GlobalTheory.T.exists_classSum_schwartzProducts_gridPath hL B ρ t he n q hq nq (U := ι × U)
+  obtain ⟨ι', s', φ', d', r', b1, b2⟩ := _root_.GlobalTheory.FlipRun.exists_classes_path hL B ρ t he n q hq nq (U := ι × U)
     (fun x y => K ((fun w => pathArgs B t w p (r y.1)) + x) y.2) (fun x z y hz => by rw [← add_assoc, h1 _ z _ hz])
     fun x y h w hw b hb => by
       have := h2 _ _ h w hw b (.inr hb)
@@ -323,12 +323,12 @@ theorem oneFlip : ∀ {D : D7} {T : Type} {L : LevCh D T} {sc : Consts} {G : Gri
   obtain ⟨φ', hφ', -⟩ := hR'
   obtain ⟨φ₂, hφ₂, hfun₂⟩ := hR₂
   refine ⟨totConv_tensE M ρ t he hC _ hPb _ φ' hφ' F hF _, ?_⟩
-  rw [GlobalTheory.T.totalTensorThetaLift_eq_of_schwartz_eq hL M ρ t he hC _ hPs τ _ φ φ₂ hφ hφ₂ (fun x hx => (hfun x hx).trans (hfun₂ x hx).symm) F hF Q,
+  rw [_root_.GlobalTheory.FlipRun.liftT_tensE_eq_of_famProd hL M ρ t he hC _ hPs τ _ φ φ₂ hφ hφ₂ (fun x hx => (hfun x hx).trans (hfun₂ x hx).symm) F hF Q,
     tensE_sum, liftT_sum, tensE_sum, liftT_sum, Finset.smul_sum]
   refine Finset.sum_congr rfl fun κ hκ => ?_
   obtain ⟨Φ, hΦ, hF'⟩ := hflip κ hκ
   obtain ⟨⟨φA, hφA⟩, φB, hφB⟩ := hout κ hκ
-  exact GlobalTheory.T.sandwichedFlip_routeThroughSmall_eq_inv_const_routeBig M B ρ t i j hi hj c hc hcomm hM hC A Bp hA hBp e he (α κ) (β κ) φA φB hφA hφB (σs κ) (σb κ) Φ hΦ hF' F hF Q
+  exact _root_.GlobalTheory.FlipRun.oneFlip_sandwich M B ρ t i j hi hj c hc hcomm hM hC A Bp hA hBp e he (α κ) (β κ) φA φB hφA hφB (σs κ) (σb κ) Φ hΦ hF' F hF Q
 
 end GlobalTheory.FlipRun
 

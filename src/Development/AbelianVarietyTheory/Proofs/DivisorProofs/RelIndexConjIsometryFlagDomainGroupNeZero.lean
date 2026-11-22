@@ -1,7 +1,7 @@
 import Mathlib
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Signature
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPosNatSmulMemOfFgAndSpanningLattice
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteRelIndexStabilizerCommensurableLattiStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteRelIndexStabilizerCommensurableLatti
 
 open NumberField ReciprocityTheory.ChartRestriction.G.FD
 
@@ -111,7 +111,7 @@ theorem relIndex_map_conj_ne_zero : ∀ {E : Type} [Field E] [NumberField E] [Is
     intro v hv
     have := hnat _ n₁ _ (h₂ v hv)
     rwa [smul_smul, ← Nat.cast_mul] at this
-  obtain ⟨K, hK, hKΛ⟩ := GlobalTheory.T.exists_finite_relIndex_stabilizer_commensurable_lattice X.Λ Λ' (n₁ * n₂) (Nat.mul_pos hn₁ hn₂) X.Λ_fg hA hB X.Γ
+  obtain ⟨K, hK, hKΛ⟩ := _root_.GlobalTheory.LatticeCongr.exists_relIndex_ne_zero_stab X.Λ Λ' (n₁ * n₂) (Nat.mul_pos hn₁ hn₂) X.Λ_fg hA hB X.Γ
     (fun γ hγ => (X.Γ_stab γ hγ).2)
   obtain ⟨S, hS⟩ := X₂.Γ_index
   have hAH : (X₂.Γ.map (MulAut.conj δ).toMonoidHom).relIndex (X.Γ ⊓ K) ≠ 0 :=

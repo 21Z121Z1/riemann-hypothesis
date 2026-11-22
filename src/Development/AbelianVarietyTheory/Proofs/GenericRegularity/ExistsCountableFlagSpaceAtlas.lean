@@ -43,7 +43,7 @@ theorem exists_countable_atlas : ∀ (E : Type) [Field E] [NumberField E] [IsCMF
   have hx : y.x = z₀.x := by
     rw [hz₀.1, hyA, ← Category.assoc, hf]
     exact (pullback.lift_fst _ _ _).symm
-  obtain ⟨g, ⟨hgu, hg⟩, -⟩ := (GlobalTheory.T.isTriangularReframe_exists_and_unique E H Dw l Xo c L z₀).2 y hx
+  obtain ⟨g, ⟨hgu, hg⟩, -⟩ := (_root_.GlobalTheory.Reg.ReframeEx.reframe_exists_unique E H Dw l Xo c L z₀).2 y hx
   choose σ u b h0 h1 hb e using fun τ => exists_perm_lower_upper (g τ) (hgu τ)
   let x : FlagVar Dw → L := fun v => u v.1 (σ v.1 v.2.1.2) v.2.1.1
   have hu : ∀ τ, (lowM x τ).submatrix (σ τ).symm id = u τ := by

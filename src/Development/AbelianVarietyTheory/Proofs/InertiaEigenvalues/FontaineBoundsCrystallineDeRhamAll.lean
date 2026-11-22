@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FontaineInequa
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConcretePeriodDeRhamModuleFinrankLe
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsDeRhamOfIsCrystallineSpan
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FinrankPeriodFunctorCoeffBaseChangeStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFinExtEmbeddingSplittingStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFinExtEmbeddingSplitting
 
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.WeaklyAdmissibleFiltrations Formalism.MainNotions.N TensorProduct Module
 
@@ -24,7 +24,7 @@ theorem fontCore_of_tied (l : ℕ) [Fact l.Prime] (P : LocPrime l) (AI : LocAinf
     (hT : LocTied l P AI) (K : FinExt l) : Formalism.MainNotions.LocalSituation.fontCore (P.PD K) := by
   intro LL _ _ _ O _ _ hO A
   haveI : FiniteDimensional ℚ_[l] LL := hO.2.1
-  obtain ⟨LL', ⟨f⟩, -, -⟩ := GlobalTheory.T.exists_finExt_embedding_splitting' l K LL
+  obtain ⟨LL', ⟨f⟩, -, -⟩ := _root_.GlobalTheory.exists_finExt_embedding_splitting l K LL
   letI : Algebra LL ↥LL'.1 := f.toRingHom.toAlgebra
   haveI : IsScalarTower ℚ_[l] LL ↥LL'.1 :=
     IsScalarTower.of_algebraMap_eq fun x => (f.commutes x).symm

@@ -6,7 +6,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatMulIntegra
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTranslatesEqPrimFrameLat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPureSumZero
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GenPtSSubset
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SmallModelThetaTransformInjectiveProductsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SmallModelThetaTransformInjectiveProducts
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsLocIsoRefl
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SmulOfMapsInlMemS
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatPtSLeClosureAndSelfDual
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HTensMixHalfS
@@ -35,7 +36,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsNotRelZero
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.UnitaryConjugation
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareStanding
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaGridCharactersArchExponentsGapGtRankStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaGridCharactersArchExponentsGapGtRank
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaGridSquareRankInequalities
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAdmissibleCMBaseDataOfSquareTupleStanding
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSplitCompletelyAuxiliaryPlaceOutsideFinset
@@ -304,7 +305,7 @@ theorem exists_datum (hL : L.Is μ₀) (h : IsTripleOf W M t i j e Bs Γ X) (hT 
     ∃ Φ ∈ schA D.host.F (IxS G i j),
       HasTheta Γ.M'.co W.ψ Φ (boxS t e (W.fock (.mu t i j) f₁ P₁) (W.fock (.chi i j) f₂ P₂)) ∧
       ∀ γ ∈ genPtS t e v, Γ.M'.co.rho W.ψ γ Φ = Φ := by
-  obtain ⟨-, hinj, hon⟩ := GlobalTheory.T.smallModel_thetaTransform_injective_products W M t i j e Bs Γ X om om' h hT
+  obtain ⟨-, hinj, hon⟩ := _root_.GlobalTheory.SmallDat.ThBox.thetaS_box W M t i j e Bs Γ X om om' h hT
   obtain ⟨a₁, b₁⟩ := fock_locVec W v₁ h₁ P₁
   obtain ⟨a₂, b₂⟩ := fock_locVec W v₂ h₂ P₂
   have hstd : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.IsStd W.ψ := h.ψ ▸ hT.base.std

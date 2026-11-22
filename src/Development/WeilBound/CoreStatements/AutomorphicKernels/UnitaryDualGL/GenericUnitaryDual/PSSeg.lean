@@ -23,7 +23,7 @@ theorem segDual_nu (hA : GlobalTheory.Published.IrreducibleAdmissibleGL) (Δ : S
   · show (Zc.segDual (Δ.nu s)).first = (Zc.segDual Δ).first.nu (-s)
     rw [GlobalTheory.CompanionTheory.SegDualPrec.first_segDual hc, GlobalTheory.CompanionTheory.SegDualPrec.first_segDual hc]
     show (Zc.dualCl (Δ.first.nu s)).nu (1 - ((Δ.len : ℕ) : ℂ)) = _
-    rw [GlobalTheory.T.dual_class_twist_neg hA, IrrGL.nu_nu, IrrGL.nu_nu]
+    rw [_root_.GlobalTheory.CompanionTheory.ZcDual.dualCl_nu hA, IrrGL.nu_nu, IrrGL.nu_nu]
     congr 1
     ring
   · show (Zc.segDual (Δ.nu s)).len = (Zc.segDual Δ).len

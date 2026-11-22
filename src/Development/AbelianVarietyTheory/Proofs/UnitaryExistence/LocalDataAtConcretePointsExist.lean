@@ -13,11 +13,11 @@ import Formalism.LocalToGlobal.ProjectiveLattices.IntAll
 import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
 import Formalism.LocalToGlobal.ProjectiveLattices.VolProofs
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsFlagModelBaseChangeIntegralFramedPoint
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsDegenerationDataAlgebraicPointModelStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsDegenerationDataAlgebraicPointModel
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.PeriodFormAdditiveBalancedPosDefBoundedRank
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsLocalDataPrescribedPointsFlag
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsTower
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.DegenerationDataCoordsNeZeroLatticesIsomorphicStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.DegenerationDataCoordsNeZeroLatticesIsomorphic
 open AlgebraicGeometry CategoryTheory Limits NumberField IsDedekindDomain IsLocalRing ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.FD Formalism.BasicNotions Formalism.MainNotions Formalism.BasicNotions.TH Formalism.L2.Theta Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.L2.Pj Formalism.MainNotions.DIV.Cons
 open scoped TensorProduct
 attribute [local instance] Formalism.BasicNotions.Host.cmStar
@@ -68,7 +68,7 @@ theorem uniq_of_factorsFin {E : Type} [Field E] [NumberField E] [IsCMField E] {H
     {Y : Model Xo c β} {p : ℕ} (hp : p.Prime) {C : SCF p} {P : PointsOfFlagModel.PtC Y C} (hf : FactorsFin Y P)
     (A A' : DatAt Y P) : ∃ e : A.toLatB.Y ≃ₗ[𝓞 E] A'.Ylat, ∀ a b, A'.beta (e a) (e b) = A.toLatB.beta a b := by
   obtain ⟨T, g, ιT, h1, h2, h3, h4⟩ := hf
-  exact (GlobalTheory.T.degenerationData_coords_ne_zero_lattices_isomorphic E H Dw l Xo c O β Y p C P hp T g ιT h1 h2 h3 h4 A A').2
+  exact (_root_.GlobalTheory.DatUniq.coord_ne_zero_and_exists_equiv E H Dw l Xo c O β Y p C P hp T g ιT h1 h2 h3 h4 A A').2
 
 theorem localData_exists :
     ∀ (D : D7) (Q : Par D), Q.Pins → (∀ j, 1 ≤ (Q.Dw j).p + (Q.Dw j).q) → Packet66Rest Q := by
@@ -78,7 +78,7 @@ theorem localData_exists :
   have hdat : ∀ j p (z : PointsOfFlagModel.Pt (Tw j p) .yy), p.Prime → FactorsFin ((Tw j p).Y z.1) z.2.2.1 →
       Nonempty (DatAt ((Tw j p).Y z.1) z.2.2.1) := by
     rintro j p z hp ⟨T, g, ιT, h1, h2, h3, h4⟩
-    obtain ⟨A, -⟩ := GlobalTheory.T.exists_degeneration_data_algebraic_point_model D.host.E Q.H (Q.Dw j) Q.l (Q.Xo j) Q.c _ _ _ p _ z.2.2.1 hp T g ιT h1 h2 h3 h4
+    obtain ⟨A, -⟩ := _root_.GlobalTheory.DatAtPoint.exists_datAt D.host.E Q.H (Q.Dw j) Q.l (Q.Xo j) Q.c _ _ _ p _ z.2.2.1 hp T g ιT h1 h2 h3 h4
     exact ⟨A⟩
   let Pt : ℕ → ℕ → Type := fun j p => {z : PointsOfFlagModel.Pt (Tw j p) .yy //
     (1 ≤ j ∧ j < D.R.m) ∧ p.Prime ∧ FactorsFin ((Tw j p).Y z.1) z.2.2.1}

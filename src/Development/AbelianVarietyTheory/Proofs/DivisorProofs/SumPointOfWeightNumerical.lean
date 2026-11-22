@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightedPrimeLogSum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DepthOscillationLeBoundEveryPrime
 import Development.AutomorphicArithmetic.CMTraceForms.Places
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartF
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaExponentsBigSmallFactorBoundsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaExponentsBigSmallFactorBounds
 import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.SmallVdSum
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HostFieldTwoConjugatePlacesOverTwo
 
@@ -61,7 +61,7 @@ theorem sumAt_of_sizes {PP C₁ C₂ : ℝ} (h1 : 0 ≤ C₁) (h2 : 0 ≤ C₂) 
   obtain ⟨hs, hk, B, Sg, hwt, a1, a2, hT1⟩ := hw
   obtain ⟨hl, hb, n1, hx, n2, n3, n4, n5, n6, n7⟩ := hn
   have hT1' : (1 : ℝ) ≤ lenT p i PP := by exact_mod_cast hT1
-  have hexp := GlobalTheory.T.thetaExponents_bigSmallFactorBounds _ _ (dat p i) D.R.f D.R.k D.R.m (nCol (dat p i)) B Sg u1 hs hk hwt
+  have hexp := _root_.GlobalTheory.RefSum.ThetaExp.expBd_thA _ _ (dat p i) D.R.f D.R.k D.R.m (nCol (dat p i)) B Sg u1 hs hk hwt
   have hd : p.T.Q.H.d = D.host.d := p.fw.laws.pins.1.1
   have htwo := GlobalTheory.CharDepth.twoPlaces_host D p.T.Q.H hd
   have hvd : ∀ q, 0 ≤ D.host.vdH q := D.host.vdH_nonneg

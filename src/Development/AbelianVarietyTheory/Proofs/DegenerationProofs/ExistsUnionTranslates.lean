@@ -5,9 +5,9 @@ import Development.AbelianVarietyTheory.Definitions.Degenerations.OfDerivationFn
 import Development.AbelianVarietyTheory.Definitions.Degenerations.PlOrdSomeOfAssociated
 import Development.AbelianVarietyTheory.Statements.SemistableTorsion.SemistableFin
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.StrictModelTranslatesTwistCompatible
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsGlueFinitelyManyCompatibleSmoothModelsStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsGlueFinitelyManyCompatibleSmoothModels
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ModelGroupLawDefinedAtTranslate
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUniqueModelExtensionOfDefinedAtPointsStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUniqueModelExtensionOfDefinedAtPoints
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry
 open scoped CategoryTheory.Obj
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -315,7 +315,7 @@ theorem exists_union_translates : ∀ (R K : Type) [CommRing R] [IsDomain R] [Is
     rw [transl_one]
     obtain ⟨y, hy⟩ := hM.1.1.1
     exact ⟨y, hy, isoAt_id M y⟩
-  obtain ⟨G, hle, hcov, hcomp⟩ := GlobalTheory.T.exists_glue_finitely_many_compatible_smoothModels R K A T.card (fun i => M.twist (transl (b i)))
+  obtain ⟨G, hle, hcov, hcomp⟩ := _root_.GlobalTheory.SS.GlueCompat.glue_compat R K A T.card (fun i => M.twist (transl (b i)))
     fun i j => _root_.GlobalTheory.SS.compat_twist_transl R K hS A hA M hM _ _ (hb i) (hb j)
   have hdef : ∀ z, DefAt (M.prod M) G (μ[A]) z := by
     intro z
@@ -324,7 +324,7 @@ theorem exists_union_translates : ∀ (R K : Type) [CommRing R] [IsDomain R] [Is
     have : b (T.equivFin ⟨z', hz'⟩).succ = a z' := by simp [b]
     rw [this]
     exact ⟨U z', φ z', hz, hφ z'⟩
-  obtain ⟨m, hm, -⟩ := GlobalTheory.T.existsUnique_model_extension_of_definedAtPoints R K _ _ _ _ _ hdef
+  obtain ⟨m, hm, -⟩ := _root_.GlobalTheory.SS.existsUnique_extension_of_forall_defAt R K _ _ _ _ _ hdef
   refine ⟨G, ?_, fun c hc => le_of_law hM m hm c hc (hcomp _ fun i => _root_.GlobalTheory.SS.compat_twist_transl R K hS A hA M hM _ _ hc (hb i)),
     fun y => ?_, hdef⟩
   · obtain ⟨g₀, o₀, e₀⟩ := hle 0

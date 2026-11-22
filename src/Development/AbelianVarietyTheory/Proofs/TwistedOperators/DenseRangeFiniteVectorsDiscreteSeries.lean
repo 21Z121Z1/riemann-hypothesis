@@ -2,7 +2,8 @@ import Mathlib
 import Formalism.SharpRestriction.Divisibility.SchurIrreducible
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SameBlockOfPosC
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EqZeroOfFactorialBound
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoverUpqClosureExpTopAndCartanStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoverUpqClosureExpTopAndCartan
+import Development.AbelianVarietyTheory.Definitions.Foundations.IsFockIPOfFockData
 
 open Formalism.BasicNotions.TH Formalism.MainNotions.SchurIrreducible
 
@@ -99,7 +100,7 @@ theorem dense_range_of_factorial_bound : ∀ (p q : ℕ), 1 ≤ p + q → ∀ (T
       D.U.π g⁻¹ x ∈ (LinearMap.range D.ι).topologicalClosure := by
     intro g
     have hg : g ∈ Subgroup.closure (T.expt '' upq p q) := by
-      rw [(GlobalTheory.T.coverUpq_closure_exp_top_and_cartan p q hpq T).1]
+      rw [(_root_.GlobalTheory.CoverExp.closure_expt_eq_top_and_cartan p q hpq T).1]
       exact Subgroup.mem_top g
     induction hg using Subgroup.closure_induction with
     | mem a ha => exact hgen a ha

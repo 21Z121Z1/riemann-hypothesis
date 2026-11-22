@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselFormConvergesEquivariantHermitianStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SmoothVectorsDenseInvariantStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselFormConvergesEquivariantHermitian
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SmoothVectorsDenseInvariant
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselSubgroupsClosedUnitaryWCompact
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsUnimodularBesselModelUnitaryGroup
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselSubgroupRepTwistedIsUnitaryRep
@@ -25,10 +25,10 @@ theorem afun_add (hStd : Std σ w a μG d) (hSide : Side z π μS) {v : H} (hv :
     {u u' : H} (hu : u ∈ DD σ w) (hu' : u' ∈ DD σ w) {x : Mat k r} (hx : x ∈ GG k r) :
     Afun (psiGen k r z c) π μS σ (u + u') v ξ x =
       Afun (psiGen k r z c) π μS σ u v ξ x + Afun (psiGen k r z c) π μS σ u' v ξ x := by
-  have hst := (GlobalTheory.T.smooth_vectors_dense_invariant k r σ w hStd.2.1).1
-  have h1 := (GlobalTheory.T.besselForm_converges_equivariant_hermitian k r σ w a μG d z c π μS hStd hSide (DD σ w) hst hStd.2.2.2.2.2.2.2.1
+  have hst := (_root_.GlobalTheory.SgInfDD.DD_stable_dense k r σ w hStd.2.1).1
+  have h1 := (_root_.GlobalTheory.SgInf.BeForm.be_converges_equivariant_hermitian_continuous k r σ w a μG d z c π μS hStd hSide (DD σ w) hst hStd.2.2.2.2.2.2.2.1
     (σ x u) (hst x hx u hu) v hv).1
-  have h2 := (GlobalTheory.T.besselForm_converges_equivariant_hermitian k r σ w a μG d z c π μS hStd hSide (DD σ w) hst hStd.2.2.2.2.2.2.2.1
+  have h2 := (_root_.GlobalTheory.SgInf.BeForm.be_converges_equivariant_hermitian_continuous k r σ w a μG d z c π μS hStd hSide (DD σ w) hst hStd.2.2.2.2.2.2.2.1
     (σ x u') (hst x hx u' hu') v hv).1
   simp only [Afun, be, map_add, coef_add_left, add_smul]
   rw [integral_add h1 h2, ContinuousLinearMap.add_apply]
@@ -48,8 +48,8 @@ theorem afun_mul_left (hStd : Std σ w a μG d) (hSide : Side z π μS) {v : H} 
     (hSG : Sset k r z ⊆ GG k r) :
     Afun (psiGen k r z c) π μS σ u v ξ (s * x) =
       PiS (psiGen k r z c) π s (Afun (psiGen k r z c) π μS σ u v ξ x) := by
-  have hst := (GlobalTheory.T.smooth_vectors_dense_invariant k r σ w hStd.2.1).1
-  have h := ((GlobalTheory.T.besselForm_converges_equivariant_hermitian k r σ w a μG d z c π μS hStd hSide (DD σ w) hst hStd.2.2.2.2.2.2.2.1
+  have hst := (_root_.GlobalTheory.SgInfDD.DD_stable_dense k r σ w hStd.2.1).1
+  have h := ((_root_.GlobalTheory.SgInf.BeForm.be_converges_equivariant_hermitian_continuous k r σ w a μG d z c π μS hStd hSide (DD σ w) hst hStd.2.2.2.2.2.2.2.1
     (σ x u) (hst x hx u hu) v hv).2.1 s hs).1
   simp only [Afun]
   rw [hStd.2.1.1.2 s (hSG hs) x hx, ContinuousLinearMap.comp_apply, h, ContinuousLinearMap.comp_apply]
@@ -88,7 +88,7 @@ theorem GlobalTheory.SgInf.bessel_ext_bounded : ∀ (k r : ℕ) {H : Type} [Norm
     intro h; have h1 := hStd.2.2.2.1; rw [h, norm_zero] at h1; exact zero_ne_one h1
   have hcl := _root_.GlobalTheory.SgInf.closedSub_groups k r z hSide.1 hSide.2.1
   have hSG : Sset k r z ⊆ GG k r := hcl.2.2.2.1.1
-  have hDD := GlobalTheory.T.smooth_vectors_dense_invariant k r σ w hσ
+  have hDD := _root_.GlobalTheory.SgInfDD.DD_stable_dense k r σ w hσ
   have hst : ∀ g ∈ GG k r, ∀ u ∈ DD σ w, σ g u ∈ DD σ w := hDD.1
   have hdense : Dense (DD σ w : Set H) := hDD.2.1 hStd.2.2.1 hw0
   have hconc : ∀ᵐ x ∂μG, Matrix.of x ∈ GG k r := by

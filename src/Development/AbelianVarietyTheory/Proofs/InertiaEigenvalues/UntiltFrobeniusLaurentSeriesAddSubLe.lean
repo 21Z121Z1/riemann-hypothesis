@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ImportsAlt
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TiltUntiltAddEstimateLe
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UntiltFrobeniusSeriesRadiusSizeLaws
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UntiltFrobeniusLaurentSeriesHasSumBoundFrobenius
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TiltFrobeniusIntegerPowerLawsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TiltFrobeniusIntegerPowerLaws
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UltrametricNormHasSumSubFinsetSumLe
 
 open Formalism.Per GlobalTheory.PSer
@@ -20,7 +20,7 @@ theorem lam_add_sub_le : ∀ (l : ℕ) [Fact l.Prime] (h j : ℕ) (r : ℝ) (x y
   have sxy := (_root_.GlobalTheory.PSer.lam_hasSum_norm_le_frob l h j r (x + y) hh hr hxy).1
   have hs := (sxy.sub sx).sub sy
   have hg := (_root_.GlobalTheory.gam_laws l h j r hh hr0 hr).1
-  have hpw := GlobalTheory.T.tiltFrobeniusIntegerPower_laws l
+  have hpw := _root_.GlobalTheory.PSer.PwLaws.pw_laws l
   have hε : 0 ≤ ‖(l : ℂ_[l])‖ * gam l h j r :=
     mul_nonneg (norm_nonneg _) (_root_.GlobalTheory.gam_laws l h j r hh hr0 hr).2.2.1
   have key := _root_.GlobalTheory.norm_hasSum_sub_finset_sum_le ℂ_[l] ℤ _ _ ∅ _ hε hs (by

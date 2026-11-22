@@ -1,6 +1,13 @@
 import Development.WeilBound.CoreStatements.FlagImmersions.Transport
 import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifVec
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspCorrespondenceBoundStatement
+import Mathlib
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspCorrespondenceBound
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.PotentialsBoundedRegSettingEqReference
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
+import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.IsPshLocallyIntegrableStatement
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.NineGeoU
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SectionBoundaryClosedAndCodenseStatement
 
 noncomputable section
@@ -153,7 +160,7 @@ theorem locChart (hLP : LocPer) (hT : Transport) (hFV : FrameVals) (hPM : PerMat
     obtain ⟨h1, -, -, -, v, hv, hf⟩ := h3 t ht
     exact (hFV hG E H D l Xo c Y RM.Ω RM.K RM.ι RM.y Or.𝔐 (z' t) s (b s) hN (hint _ (h21 h1)) (hfr₃ t ht s)).2 g Λ (R t) σ
       _ (fun i => v ⟨s, i⟩) (hlab t h1) (fun i => hv ⟨s, i⟩) (fibreLatVec_comp hf fun i => ⟨s, i⟩)
-  obtain ⟨σ', -, hσu, -, -, -, hσ⟩ := GlobalTheory.T.cusp_correspondence_bound E H D l Xo c Y ∅ RM.Ω RM.K RM.ι RM.y Or.𝔐 ℂ (z' t₀)
+  obtain ⟨σ', -, hσu, -, -, -, hσ⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.LabPt.exists_labVal E H D l Xo c Y ∅ RM.Ω RM.K RM.ι RM.y Or.𝔐 ℂ (z' t₀)
   obtain rfl := hσu σ (hlab _ ht₂)
   obtain ⟨hcm, -, hconj⟩ := hσ (RingHom.id ℂ)
   simp only [RingHom.id_comp] at hcm hconj

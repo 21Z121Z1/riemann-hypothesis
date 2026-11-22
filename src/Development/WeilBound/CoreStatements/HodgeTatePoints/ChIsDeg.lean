@@ -3,7 +3,8 @@ import Development.AutomorphicSpectrum.Statements.GeometryStatements.CurveSemiAb
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.SeparableFormGroupElementFixesUniquePositiveLine
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Proportional
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsUnitIffUnitAt
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValAtCompLocalHomStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValAtCompLocalHom
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CoordsAt
 
 open AlgebraicGeometry CategoryTheory NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Crv GlobalTheory.CompanionTheory.Ar.Conj
@@ -35,7 +36,7 @@ theorem isdeg_unique : ∀ (X : Scheme.{0}) (Ω : Type) [Field Ω] (ξ : Spec (C
     obtain ⟨ψ, hψ, hv⟩ := ValHom.exists_valAt_hom X Ω ξ _ (Y.x i) (h i) hξ
     have u := unitAt_div (g i) (g' i)
     have hun : IsUnit (ψ ⟨_, u.2.1⟩) := (hv ⟨_, u.2.1⟩).2 u
-    have hval := GlobalTheory.T.valAt_comp_local_hom X Ω ξ _ K (C.v i).valuationSubring.subtype (Y.x i) _ _
+    have hval := _root_.GlobalTheory.CompanionTheory.Ar.ChangeRing.valAt_change X Ω ξ _ K (C.v i).valuationSubring.subtype (Y.x i) _ _
       ((hψ _ _).2 ⟨u.2.1, rfl⟩) (by rw [Y.gen i]; exact h₀)
     rw [Y.gen i] at hval
     obtain ⟨m1, e1⟩ := (hφ _ _).1 hval

@@ -134,7 +134,7 @@ theorem pull_val : AllUF fun {R} _ _ {_} {D} {A} {G} _ _ U F _ _ => ∀ (E : End
   have H := (GlobalTheory.T.expansion_pullback_section_endomorphism hL R I hI D A G hG U F E hE ν 1 le_rfl hν ⟨β, hβ⟩).2 w₀ ρ hw₀ _ _ (lift_snd _ _) (lift_fst _ _)
     rfl α hα hαn t t' s s' ht ht' htt κ hκ
   obtain ⟨g, rfl⟩ := (gt_onto_divisible_kernel hL R I hI D F).1 b
-  obtain ⟨g', hg', -⟩ := (GlobalTheory.T.uniformizationEndomorphism_calculus hL R I hI D A G hG U F E E E).1 g
+  obtain ⟨g', hg', -⟩ := (_root_.GlobalTheory.EndCalc.end_calculus hL R I hI D A G hG U F E E E).1 g
   obtain ⟨w', hw'⟩ := (coef_basic R D.toPre F ν g).1
   obtain ⟨w, hw, hv⟩ := exists_gen D.toPre.P.isLB (φ' := DegPre.lineφ D.toPre F g'.b) (ε' := DegPre.lineε 1)
     (fun V _ h => by
@@ -287,11 +287,11 @@ theorem exists_act : AllUF fun {R} _ _ {_} {D} {A} {G} _ _ U F _ _ => ∀ (O : T
   intro R _ _ _ I hI D A G _ _ hG U F _ _ _ O _ _ _ o oA oG hlin hadj k hk p x hx a
   have hL := GlobalTheory.firstFiveLaws
   have hT := GlobalTheory.twistBaseChange
-  obtain ⟨E, eG, eA, -, -, eact⟩ := GlobalTheory.T.exists_uniformizationEndomorphism_of_linear hL R I hI D A G hG U O o oA oG hlin a
-  obtain ⟨E', eG', -, -, eh', -⟩ := GlobalTheory.T.exists_uniformizationEndomorphism_of_linear hL R I hI D A G hG U O o oA oG hlin (star a)
+  obtain ⟨E, eG, eA, -, -, eact⟩ := _root_.GlobalTheory.UT.OLinEnd.main hL R I hI D A G hG U O o oA oG hlin a
+  obtain ⟨E', eG', -, -, eh', -⟩ := _root_.GlobalTheory.UT.OLinEnd.main hL R I hI D A G hG U O o oA oG hlin (star a)
   obtain ⟨b₁, b₂⟩ := _root_.GlobalTheory.Balanced.main hL (twistBCSpan_of hT) TWM.vRatioGt (TWM.tw_of_laws hL.1 hT) (UUA.uu hL.1 hT) R I hI D A G hG U F E E'
     (by rw [eG, eG']; exact hadj a)
-  obtain ⟨ex, add, -⟩ := GlobalTheory.T.uniformizationEndomorphism_calculus hL R I hI D A G hG U F E E E
+  obtain ⟨ex, add, -⟩ := _root_.GlobalTheory.EndCalc.end_calculus hL R I hI D A G hG U F E E E
   choose f hf _ using ex
   letI := TorusExt.gtGroup D.toPre F
   let φ : GtPtF D.toPre F →+ GtPtF D.toPre F := AddMonoidHom.mk' f fun g g' =>

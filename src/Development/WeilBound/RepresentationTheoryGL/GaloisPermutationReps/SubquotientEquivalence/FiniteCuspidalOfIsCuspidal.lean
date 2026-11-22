@@ -3,7 +3,7 @@ import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsIrreducibleTranspor
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsCuspidalWithLabel
 import Development.WeilBound.CoreStatements.FiniteTypeHarishChandra.SupportExistsAll
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalLabelUniqueStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalLabelUnique
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CentralIdempotentsSimpleFDRepFiniteFinsumEqOne
 
 noncomputable section
@@ -131,7 +131,7 @@ theorem st7 : St7 := by
   refine ⟨τ, fun P hP => ⟨GlobalTheory.SerOSys.ZSum.isIrreducible_of_simple _ (hτ P hP).1,
     finite_cuspidal_of_isCuspidal _ (hτ P hP).2.1⟩, ?_⟩
   rintro P hP P' hP' ⟨e, he⟩
-  exact GlobalTheory.T.cuspidal_label_unique K C (Fin n) (τ P') P P' (hasCuspLabel_of_equiv C e he (hτ P hP).2.2)
+  exact _root_.GlobalTheory.CompanionTheory.TyFin.LabelUniq.hasCuspLabel_unique K C (Fin n) (τ P') P P' (hasCuspLabel_of_equiv C e he (hτ P hP).2.2)
     (hτ P' hP').2.2
 
 end PositivityTheory.Rg.DzCount

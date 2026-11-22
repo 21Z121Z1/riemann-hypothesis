@@ -12,8 +12,9 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NCoords
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
 import Development.AbelianVarietyTheory.Definitions.Jets.SideFam
 import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnipotentRadicalInterConjugateClosedUnimodularStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselRootMeasureIndependentOfChoicesStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnipotentRadicalInterConjugateClosedUnimodular
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselRootMeasureIndependentOfChoices
+import Formalism.SharpRestriction.CuspSpanNormBounds.NormalizedLocalScale
 
 noncomputable section
 
@@ -215,11 +216,11 @@ theorem use₇ (hB : WuBessel C) (u u' : D.what₂.Word)
   have hG : Formalism.QuantumDeterminants.Gf D.R.k D.R.rS (zB X (C.Qi τ) u τ) (zB X (C.Qi τ) u' τ) (JointAmplitudePoints.gamP C u u' w τ) ≠ 0 := by
     rw [RelPtR.gf_gamP C u u' w hw τ]
     exact (hb.2 τ).ne'
-  obtain ⟨-, hμ, hHaar⟩ := GlobalTheory.T.besselRootMeasure_independent_of_choices D _ _ _ _ _ _ _ hz hz' (hT.symm ▸ hTu u) (hT'.symm ▸ hTu u') hg hG
+  obtain ⟨-, hμ, hHaar⟩ := _root_.GlobalTheory.SnMass.RootUniq.rootMeas_unique D _ _ _ _ _ _ _ hz hz' (hT.symm ▸ hTu u) (hT'.symm ▸ hTu u') hg hG
     (ka_pos D) hr1 (root_push C u u' w hw τ hH.2.2.1 hp)
   have hq2 := quot_push C γ τ hQ
   rw [← hμ] at hq2
-  obtain ⟨hcl, hun⟩ := GlobalTheory.T.unipotentRadical_inter_conjugate_closed_unimodular D.R.k D.R.rS _ hg
+  obtain ⟨hcl, hun⟩ := _root_.GlobalTheory.UnipUnimod.rset_unimodular D.R.k D.R.rS _ hg
   have := FiniteDimensional.complete ℂ (X.Vloc u (vOf X τ))
   set F : MatKR D.R.k D.R.rS → (X.Vloc u' (vOf X τ) →L[ℂ] X.Vloc u (vOf X τ)) := fun x =>
     (innerSL ℂ ((locS hB u u' τ).Φ' x)).smulRight ((locS hB u u' τ).Φ (JointAmplitudePoints.gamP C u u' w τ * x)) with hF

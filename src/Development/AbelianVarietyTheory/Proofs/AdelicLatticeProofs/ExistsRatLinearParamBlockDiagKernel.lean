@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.AdelicPair
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.OneAddSmulMemOfSqZero
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsRatProjectorOfAutStableMatricesStatement
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsRatProjectorOfAutStableMatrices
 open Matrix GlobalTheory.ClassFin
 open scoped Kronecker ComplexOrder TensorProduct
 
@@ -48,7 +48,7 @@ theorem exists_linExt_corner_proj : ∀ (ι : Type) [Fintype ι] [DecidableEq ι
     · have h3 := congrArg (σ : ℂ →+* ℂ).mapMatrix hx2
       rw [map_mul, map_mul, map_sub, map_one, hEσ] at h3
       exact h3
-  obtain ⟨c, hc1, hc2⟩ := GlobalTheory.T.exists_rat_projector_of_autStable_matrices ι S hS
+  obtain ⟨c, hc1, hc2⟩ := _root_.GlobalTheory.ClassFin.RatProj.exists_rat_projector ι S hS
   exact ⟨c, fun X => hc1 X, fun ε h1 h2 => hc2 ε ⟨h1, h2⟩⟩
 
 end GlobalTheory.ClassFin

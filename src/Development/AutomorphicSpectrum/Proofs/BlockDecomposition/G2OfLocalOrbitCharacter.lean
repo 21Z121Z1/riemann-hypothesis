@@ -42,7 +42,7 @@ theorem resultant_factors_prod_eq_one {E : Type} [Field E] [NumberField E] [IsCM
 
   let f : Pl E → ℂ := fun w => ((μ.locK w k : ℂˣ) : ℂ) * absHalf w (algebraMap E (w.adicCompletion E) R)
   obtain ⟨hfin1, hprod1⟩ := _root_.GlobalTheory.HCharUnit.finprod_locK_mul_inf E μ k
-  obtain ⟨hfin2, hprod2⟩ := GlobalTheory.T.prodFormula_sqrt_normalizedAbsValues_CMField E R hR0
+  obtain ⟨hfin2, hprod2⟩ := _root_.GlobalTheory.ProdForm.absHalf_prodFormula E R hR0
   have hfin1' : (Function.mulSupport fun w : Pl E => ((μ.locK w k : ℂˣ) : ℂ)).Finite := by
     refine hfin1.subset fun w hw => ?_
     intro h1; apply hw; simp [h1]
@@ -174,9 +174,9 @@ theorem delta_eventually_one {E : Type} [Field E] [NumberField E] [IsCMField E] 
   have e2 : ∀ᶠ w in (cofinite : Filter (Pl E)), μ.locK w u = 1 :=
     Filter.eventually_cofinite.2 (_root_.GlobalTheory.HCharUnit.finprod_locK_mul_inf E μ u).1
   have e3 : ∀ᶠ w in (cofinite : Filter (Pl E)), absHalf w (algebraMap E (w.adicCompletion E) R) = 1 :=
-    Filter.eventually_cofinite.2 (GlobalTheory.T.prodFormula_sqrt_normalizedAbsValues_CMField E R hR0).1
+    Filter.eventually_cofinite.2 (_root_.GlobalTheory.ProdForm.absHalf_prodFormula E R hR0).1
   have e4 : ∀ᶠ w in (cofinite : Filter (Pl E)), absHalf w (algebraMap E (w.adicCompletion E) (R ^ 2 / d)) = 1 :=
-    Filter.eventually_cofinite.2 (GlobalTheory.T.prodFormula_sqrt_normalizedAbsValues_CMField E (R ^ 2 / d) (div_ne_zero (pow_ne_zero _ hR0) hd0)).1
+    Filter.eventually_cofinite.2 (_root_.GlobalTheory.ProdForm.absHalf_prodFormula E (R ^ 2 / d) (div_ne_zero (pow_ne_zero _ hR0) hd0)).1
   filter_upwards [e1, e2, e3, e4] with w h1 h2 h3 h4
   have hn₁ : (atPl w P₁).natDegree = a := by
     rw [atPl, Polynomial.natDegree_map_eq_of_injective (algebraMap E _).injective]; exact h₁.2.1

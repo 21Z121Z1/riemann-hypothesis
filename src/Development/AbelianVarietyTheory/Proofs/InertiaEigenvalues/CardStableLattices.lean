@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardStableEqCa
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardCommMapsEqCardHomQuot
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardKernelQuotOfBijective
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AlgebraMapDetRestrict
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LatticeHomSubmoduleFgAndSpanEqTopStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LatticeHomSubmoduleFgAndSpanEqTop
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DetCommutatorMapEqCharpolyResultant
 
 noncomputable section
@@ -26,7 +26,7 @@ theorem card_stable_lattices : ∀ (O : Type) [CommRing O] [IsDomain O] [IsDiscr
     intro ψ hψ x hx
     rw [adE_apply]
     exact M₁.sub_mem (hs₁ _ (hψ x hx)) (hψ _ (hs₂ x hx))
-  have hL := GlobalTheory.T.lattice_hom_submodule_fg_and_span_eq_top O E A₁ A₂ M₁ M₂ hM₁ hM₂
+  have hL := _root_.GlobalTheory.StableLatCount.homLat_fg_and_span_eq_top O E A₁ A₂ M₁ M₂ hM₁ hM₂
   have h2 := GlobalTheory.card_kernel_quot_of_bijective O _ (homLat E M₁ M₂) ((adE E g₁ g₂).restrictScalars O) hbij hN
   simp only [LinearMap.coe_restrictScalars] at h2
   rw [GlobalTheory.StableGraph.card_stable_eq_card_hom O A₁ A₂ g₁ g₂ M₁ M₂ hs₂, GlobalTheory.StableLatCount.card_commMaps_eq_card_homQuot O E A₁ A₂ g₁ g₂ M₁ M₂ hM₂ hs₁ hs₂, h2,

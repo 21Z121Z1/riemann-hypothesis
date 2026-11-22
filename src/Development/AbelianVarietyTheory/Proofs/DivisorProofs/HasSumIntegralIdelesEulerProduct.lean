@@ -5,13 +5,13 @@ import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.CountableIdea
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ForallLocInShift
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitsInCMFieldTwoPrimesDegreeOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValIotaLeOfMem
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemCompletedOrderOfLocalCongruenceSplitStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemCompletedOrderOfLocalCongruenceSplit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteCosetsUnitIdelesCompletedOrder
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIdealSectionIntegralFiniteIdeleUpToUnits
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalUnitRepresentativesSplitPrimeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalUnitRepresentativesSplitPrime
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniformiserSplitPlaceCmOrderNonunit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSplitPlaceUniformiserIdele
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeCharUnramifiedInverseSplitPairStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeCharUnramifiedInverseSplitPair
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConductorTimesSplitPrimesExponents
 
 noncomputable section
@@ -128,7 +128,7 @@ open Classical in
 theorem FS_resid (T : Finset (HeightOneSpectrum (𝓞 E))) {v : HeightOneSpectrum (OF E)} (hv : Splits v)
     {P : HeightOneSpectrum (𝓞 E)} (hP : Over P v) (hU : UnrAt χ P) (hk : m v = 1) (hT : ∀ w, Over w v → w ∈ T) :
     FS c χ S (Function.update m v 0) T = (((Ideal.absNorm v.asIdeal : ℕ) : ℂ) - 1) * FS c χ S m T := by
-  obtain ⟨R, h1, h2, h3⟩ := GlobalTheory.T.exists_local_unit_representatives_split_prime E v P hv hP
+  obtain ⟨R, h1, h2, h3⟩ := _root_.GlobalTheory.CMVal.Euler.Resid.exists_representatives E v P hv hP
   have h4 : ((Ideal.absNorm v.asIdeal : ℕ) : ℂ) - 1 = R.card := by rw [← h1]; push_cast; ring
   have key : ∀ r ∈ R, ∀ y : (Af E)ˣ, (single P r)⁻¹ * y ∈ MS m T ↔ LocIn 1 v (((single P r)⁻¹ * y : (Af E)ˣ) : Af E) ∧
       (∀ v' ≠ v, LocIn (m v') v' (y : Af E)) ∧ ∀ w ∈ T, Valued.v ((y : Af E) w) = 1 := fun r hr y => by
@@ -194,7 +194,7 @@ theorem FS_unr (hF : TrivOnF χ) (T : Finset (HeightOneSpectrum (𝓞 E))) {v : 
     · exact ⟨B, hB, e ▸ hAB⟩
     · exact ⟨A, hA, e⟩
   obtain ⟨s1, s2⟩ := _root_.GlobalTheory.CMVal.Euler.SplitPlace.split_place E v hv
-  obtain ⟨h', hval⟩ := GlobalTheory.T.heckeChar_unramified_inverse_split_pair E χ v P P' hF hv hP hP' hne (hl P' hP') h
+  obtain ⟨h', hval⟩ := _root_.GlobalTheory.CMVal.Euler.SplitPair.unrAt_and_val E χ v P P' hF hv hP hP' hne (hl P' hP') h
   have hfib : fib v = {P, P'} := by
     ext w
     rw [mem_aboveF, Finset.mem_insert, Finset.mem_singleton]
@@ -248,7 +248,7 @@ theorem hasSum_euler : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (I
         · simp [e, hU]
         · by_cases a : w = Pq v
           · exact a ▸ h
-          · exact (GlobalTheory.T.heckeChar_unramified_inverse_split_pair E χ v w (Pq v) hF hs hw (hPq v hvQ) a (hl _ (hPq v hvQ)) h).1
+          · exact (_root_.GlobalTheory.CMVal.Euler.SplitPair.unrAt_and_val E χ v w (Pq v) hF hs hw (hPq v hvQ) a (hl _ (hPq v hvQ)) h).1
     · have hl : ∀ w, Over w v → ExpAt χ w (expIn c v) := fun w hw => by
         rw [hnQ' v hvQ]; exact (hχ.2.2.2 v w hw).2 hvQ
       obtain ⟨k, hk⟩ := Nat.exists_eq_succ_of_ne_zero hv
@@ -296,7 +296,7 @@ theorem hasSum_euler : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (I
     exact (hχ.2.2.2 _ w (over_under w)).2 h3
 
   have hO : ∀ z : Af E, z ∈ hatO c ↔ ∀ v, LocIn (expIn c v) v z :=
-    fun z => ⟨locIn_of_mem_hatO, GlobalTheory.T.mem_completedOrder_of_local_congruence_split E c hc0 hsp z⟩
+    fun z => ⟨locIn_of_mem_hatO, _root_.GlobalTheory.CMVal.Euler.HatLoc.mem_hatO_of_locIn E c hc0 hsp z⟩
   have h2 : Tendsto (fun T => FS c χ S (expIn c) T) atTop (𝓝 1) := by
     refine tendsto_tsum_one hω hB atTop _ (MS_subset _) (fun y hy T => ⟨(hO _).1 hy.1, fun w _ => OrderUnits.val_eq_one hy w⟩)
       fun y hy => ?_

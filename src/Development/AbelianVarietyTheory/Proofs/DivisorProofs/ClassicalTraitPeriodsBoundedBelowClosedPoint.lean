@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsThetaSetupRegularOverModuliPoint
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteRegularThetaSetupCoverStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteRegularThetaSetupCover
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPadicTraitLiftFiniteThroughPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsClosedSingletonOfIsFiniteOfIsClosedImage
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryClassicalTraitPeriodsBoundedBelowStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowNormValLeUnitaryThetaFiniteModelsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryClassicalTraitPeriodsBoundedBelow
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowNormValLeUnitaryThetaFiniteModels
 import Development.AbelianVarietyTheory.Definitions.Divisors.SpecializesGenericImage
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsMonoFamNontrivial
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharacterGroupFinrankLeMinSignatureUnitaryTrait
@@ -64,9 +64,9 @@ theorem GlobalTheory.UPoinc.lam_of_closed : ∀ (E : Type) [Field E] [NumberFiel
   by_cases hpq : 1 ≤ Dw.p + Dw.q
   swap
   · exact ⟨0, fun t x hx => absurd (eq_zero_of_sum_eq_zero hpq t.T x) hx⟩
-  obtain ⟨m, X', U, hU, hcov⟩ := GlobalTheory.T.exists_finite_regular_thetaSetup_cover E H Dw l Xo c C (_root_.GlobalTheory.UPoinc.SetupAt.exists_uSetup_regular_at E H Dw hpq l Xo c C)
-  choose K hK using fun k => GlobalTheory.T.unitary_classical_trait_periods_bounded_below E H Dw l Xo c C (X' k) p
-  choose e he1 he using fun k => GlobalTheory.T.exists_pow_norm_val_le_unitaryTheta_finite_models E H Dw l Xo c C X₁ (X' k) z₁
+  obtain ⟨m, X', U, hU, hcov⟩ := _root_.GlobalTheory.UPoinc.exists_fin_uSetup_regular_cover E H Dw l Xo c C (_root_.GlobalTheory.UPoinc.SetupAt.exists_uSetup_regular_at E H Dw hpq l Xo c C)
+  choose K hK using fun k => _root_.GlobalTheory.UPoinc.ShortBound.main E H Dw l Xo c C (X' k) p
+  choose e he1 he using fun k => _root_.GlobalTheory.UPoinc.ValBound.exists_pow_norm_val_le E H Dw l Xo c C X₁ (X' k) z₁
   refine ⟨∑ k, (e k : ℝ) * |K k|, fun t x hx => ?_⟩
   have hzc : IsClosed ({X₁.π z₁} : Set C.Z) := by
     haveI := X₁.fin

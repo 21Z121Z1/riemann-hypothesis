@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormPeriodSq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousPhaseAt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousHeckeCharacterFinitePartStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousHeckeCharacterFinitePart
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeCharRestrictsEtaPowOfSign
 
 open NumberField MeasureTheory
@@ -34,7 +34,7 @@ theorem exists_hecke_of_heckeU : ∀ {D : D7} {N : ℕ} (c : HeckeU D N) (e : �
     have h : ((chi c θ e : (AE D)ˣ →* Circle) : (AE D)ˣ → Circle) = fun x => (finChar c x * infChar θ c.n x) ^ e := by
       funext x; rw [chi, MonoidHom.zpow_apply, MonoidHom.mul_apply]
     rw [h]
-    exact ((GlobalTheory.T.continuous_heckeCharacterFinitePart c).mul (continuous_infChar hθ c.n)).zpow e
+    exact ((_root_.GlobalTheory.HeckeUChar.continuous_finChar c).mul (continuous_infChar hθ c.n)).zpow e
   have haut : ∀ a : D.host.Eˣ, chi c θ e (Units.map (incA D).toMonoidHom a) = 1 := by
     intro a
     refine Circle.ext ?_

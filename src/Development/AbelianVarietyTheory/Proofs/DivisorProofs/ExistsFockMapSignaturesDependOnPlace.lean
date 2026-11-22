@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFockMap
 import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchHeisenbergDerivativesExist
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueArchimedeanMatrixAdeleExtensionOfCom
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealScalarArchimedeanAdeleSmulMatrixRealPlaceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealScalarArchimedeanAdeleSmulMatrixRealPlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchHeisenbergDerivativeAdditiveCommutatorStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanTraceSymplecticOrthonormalFramesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGaussianVacuumFramesPlaceSignaturesStatement
@@ -57,7 +57,7 @@ theorem exists_isFockMapD : ∀ (F E : Type) [Field F] [NumberField F] [Field E]
     have e : uOf ((r : ℂ) • c) = realAd F r • uOf c := by
       symm
       refine huniq _ _ (hAt_smul r _ (huOf c).1) fun w => ?_
-      rw [GlobalTheory.T.realScalarArchimedeanAdele_smul_matrix_realPlace σ τ hCM, (huOf c).2 w]
+      rw [_root_.GlobalTheory.RealScalar.realAd_smul_map σ τ hCM, (huOf c).2 w]
       simp [Matrix.mul_smul, Matrix.smul_mul]
     ext1 f
     simp only [H, e, hsm _ r (huOf c).1]

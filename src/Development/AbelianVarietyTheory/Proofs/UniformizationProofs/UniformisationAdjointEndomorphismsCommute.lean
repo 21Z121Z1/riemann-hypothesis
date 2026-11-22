@@ -16,11 +16,11 @@ import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsNsmulA
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.MemOfNonempty
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CardQuotientKTorsionPairs
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AdicBaseEmbedsValuationAlgebraicClosure
-import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationEndomorphismsToCompleteDvrStatement
-import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformizationEndomorphismCalculusStatement
-import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsEndomorphismActionUniformizationDataStatement
+import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationEndomorphismsToCompleteDvr
+import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformizationEndomorphismCalculus
+import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsEndomorphismActionUniformizationData
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.TorsionPointEndomorphismImageEqMovedGtPoint
-import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.EndomorphismTorusExtensionPeriodOfAdjointStatement
+import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.EndomorphismTorusExtensionPeriodOfAdjoint
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.QkToAkUInvariantUnderFieldEmbeddingStatement
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationTorsionIdentificationWithPairing
 open CategoryTheory CategoryTheory.Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry IsLocalRing
@@ -93,7 +93,7 @@ variable (hL : LL) {R : Type} [CommRing R] [IsDomain R] [CharZero R] {I : Ideal 
 include hL hR hG in
 theorem exists_actHom (F : Type) [Field F] [IsAlgClosed F] [Algebra (FractionRing R) F] :
     ∃ α : GtPtF D.toPre F →+ GtPtF D.toPre F, ∀ g g', E.Act g g' ↔ g' = α g := by
-  obtain ⟨ex, add, -⟩ := GlobalTheory.T.uniformizationEndomorphism_calculus hL R I hR D A G hG U F E E E
+  obtain ⟨ex, add, -⟩ := _root_.GlobalTheory.EndCalc.end_calculus hL R I hR D A G hG U F E E E
   choose a ha hu using ex
   refine ⟨AddMonoidHom.mk' a fun g g' => (isAdd_iff_eq _ _ _).1
     (add g g' _ _ _ _ ((isAdd_iff_eq _ _ _).2 rfl) (ha g) (ha g') (ha _)), fun g g' => ⟨hu g g', fun e => e ▸ ha g⟩⟩
@@ -209,7 +209,7 @@ theorem keeps_of_add (E : EndU U.toUnifPre) (h : D.toPre.X →+ D.toPre.X) (m : 
     (H₁ : KeepsIota E₁ h₁ F) (H₂ : KeepsTors E₁ h₁ F) : KeepsIota E h F ∧ KeepsTors E h F := by
   have hB := D.tau_bimult
   obtain ⟨M, mG, -, -, -, mAct⟩ := (GlobalTheory.IntEnd.exists_nsmul_and_neg hL R I hR D A G hG U).1 m
-  obtain ⟨-, -, hsum⟩ := (GlobalTheory.T.uniformizationEndomorphism_calculus hL R I hR D A G hG U F E M E₁).2.2.2.2.1 (by rw [eG, mG])
+  obtain ⟨-, -, hsum⟩ := (_root_.GlobalTheory.EndCalc.end_calculus hL R I hR D A G hG U F E M E₁).2.2.2.2.1 (by rw [eG, mG])
   have sum : ∀ g g' : GtPtF D.toPre F, E.Act g g' → E₁.Act g (g' + m • g) := fun g g' ha =>
     hsum g g' _ _ ha ((mAct F _ _).2 ((isNsmul_iff_eq _ _ _).2 rfl)) ((isAdd_iff_eq _ _ _).2 rfl)
   refine ⟨fun y g g' hy ha => ?_, fun k hk p p' x hy ha hx => ?_⟩
@@ -246,10 +246,10 @@ theorem exists_add (E : EndU U.toUnifPre) (m : ℕ) : ∃ E₁ : EndU U.toUnifPr
   have := E.homA
   have := M.homA
   have := U.gen_hom
-  obtain ⟨E₁, eG, eA⟩ := GlobalTheory.T.exists_endomorphism_action_uniformization_data hL R I hR D A G hG U (E.aG * M.aG) (E.aA * M.aA) (isMonHom_mul _ _)
+  obtain ⟨E₁, eG, eA⟩ := _root_.GlobalTheory.EndData.exists_endU hL R I hR D A G hG U (E.aG * M.aG) (E.aA * M.aA) (isMonHom_mul _ _)
     (isMonHom_mul _ _) (by
     rw [Functor.map_mul, MonObj.mul_comp, MonObj.comp_mul, E.ext, M.ext])
-  obtain ⟨-, eh, -⟩ := (GlobalTheory.T.uniformizationEndomorphism_calculus hL R I hR D A G hG U (AlgebraicClosure (FractionRing R)) E M E₁).2.2.2.2.1 eG
+  obtain ⟨-, eh, -⟩ := (_root_.GlobalTheory.EndCalc.end_calculus hL R I hR D A G hG U (AlgebraicClosure (FractionRing R)) E M E₁).2.2.2.2.1 eG
   exact ⟨E₁, mG ▸ eG, mA ▸ eA, fun y => by rw [eh, AddMonoidHom.add_apply, mh]⟩
 
 include hL hR hG in
@@ -264,7 +264,7 @@ theorem exists_keeps (h₁ : TwistBCSpanStatement) (h₂ : TWM.VRatioGtStatement
   have hR' : AdmBase V (maximalIdeal V) := ⟨inferInstance, inferInstance, inferInstance, hV⟩
   obtain ⟨ϖ, hϖ⟩ := IsDiscreteValuationRing.exists_irreducible V
   obtain ⟨v, hv⟩ := GlobalTheory.adic_base_embeds_valuation_algebraic_closure.2 V ϖ hϖ
-  obtain ⟨D', hD, A', U', hG', hU, hpt, hend⟩ := GlobalTheory.T.uniformisation_endomorphisms_to_complete_dvr hL R I hR D A G hG U V φ hV hφ hI
+  obtain ⟨D', hD, A', U', hG', hU, hpt, hend⟩ := _root_.GlobalTheory.UT.EndBaseChange.main hL R I hR D A G hG U V φ hV hφ hI
   choose Q hQ using QForm.exists_QVal hϖ D'
   let Ω := AlgebraicClosure (FractionRing V)
   let ψ : R →+* Ω := ((algebraMap (FractionRing V) Ω).comp (algebraMap V (FractionRing V))).comp φ
@@ -287,7 +287,7 @@ theorem exists_keeps (h₁ : TwistBCSpanStatement) (h₂ : TWM.VRatioGtStatement
       pullback.fst G.hom (specOf φ))) := ⟨wL, hw⟩
     rwa [show (Iso.refl ((Over.pullback (specOf φ)).obj G)).hom.left ≫ pullback.fst G.hom (specOf φ) =
       pullback.fst G.hom (specOf φ) from Category.id_comp _] at e
-  have kid := GlobalTheory.T.endomorphism_torusExtension_period_of_adjoint hL h₁ h₂ h₃ h₄ V hV ϖ hϖ D' Q hQ Ω v hv A' _ hG' U' E₁ E₁' (inj eh hE) (inj eh' hE') adj'
+  have kid := _root_.GlobalTheory.KeyIota.main hL h₁ h₂ h₃ h₄ V hV ϖ hϖ D' Q hQ Ω v hv A' _ hG' U' E₁ E₁' (inj eh hE) (inj eh' hE') adj'
   have key := _root_.GlobalTheory.UT.EndTors.main hL h₁ h₂ h₃ h₄ V hV ϖ hϖ D' Q hQ Ω v hv A' _ hG' U' E₁ (inj eh hE)
   choose π hπ _ using ex
   refine ⟨Ω, inferInstance, inferInstance, inferInstance, fun y g g' hy ha => ?_, fun k hk p p' x _ ha hx => ?_⟩

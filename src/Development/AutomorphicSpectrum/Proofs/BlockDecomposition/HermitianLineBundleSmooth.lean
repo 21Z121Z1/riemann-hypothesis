@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ArFormExis
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsPullHermPullLine
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MapPrBPtMP
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MultiprojectivePointOfNonvanishingCoordsStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MultiprojectiveChartHolomorphicCoordinatesStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MultiprojectiveChartHolomorphicCoordinates
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HolomorphicSectionSmoothComposition
 open CategoryTheory AlgebraicGeometry Limits TopologicalSpace MvPolynomial
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -31,7 +31,7 @@ theorem smooth_of_isHermRep : ∀ (m : ℕ) (n : Fin (m + 1) → ℕ) (M : HermL
     exact isOpen_iInter_of_finite fun k => isOpen_ne_fun (continuous_apply _) continuous_const
   have hz : z₀ ∈ T := hc
   let s := multiprojectivePoint (m := m) (n := n) c
-  obtain ⟨haff, hgen⟩ := GlobalTheory.T.multiprojective_chart_holomorphic_coordinates m n c
+  obtain ⟨haff, hgen⟩ := _root_.GlobalTheory.CompanionTheory.MPSmooth.mchart_affine_holo m n c
   have hmem : ∀ z ∈ T, s z ∈ ptsIn (mpStr ℤ m n) σ₀ (mchart c) := fun z h => (GlobalTheory.T.multiprojective_point_of_nonvanishing_coords m n c z h).2
   obtain ⟨hcont, hholo⟩ := holo_of_affine haff hT hmem hgen
   obtain ⟨i, hi⟩ := exists_mem_ptsIn M.isLB.cover (s z₀)

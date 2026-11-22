@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicComplexInte
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoeffNormLeOneOfIsogenySeriesIdentities
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExpMvNegLogMvMul
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TaylorSeriesInParameterRescaleOfAlgebraic
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SigmaStarSquareQuotientInModelParameterStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SigmaStarSquareQuotientInModelParameter
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntSerOfIsWq
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EvenThetaTwoTorsionBasicProperties
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsogenyFibresEvenThetaSigmaStarSquareQuotientStatement
@@ -155,7 +155,7 @@ include hok hlat h2 h3 hwp halg in
 theorem atU_sqTh {v : ℂ} (hv : v ∉ g.abelian₂) (hq : InRationalLattice g.abelian₂ v) :
     AlgEnt (sqTh g.abelian₂ v) ∧
       g.atU (sqTh g.abelian₂ v) = ePhi1 g.lam g.abelian₂ g.C g.wq ^ 2 * lineSer g.wq⁻¹ (xAt g v) :=
-  GlobalTheory.T.sigmaStarSquareQuotient_in_model_parameter 2 g hok.2.1 hlat h2 h3 (alg_sg halg) v hv (hwp v hq hv)
+  _root_.GlobalTheory.EvenTheta.Param.sqTh_atU 2 g hok.2.1 hlat h2 h3 (alg_sg halg) v hv (hwp v hq hv)
 
 include hok hlat h2 h3 hwp halg hnm htwo in
 theorem atU_th_sq : PowerSeries.constantCoeff (g.atU (GL3Theta.th0 g.abelian₂ t₀)) = 1 ∧

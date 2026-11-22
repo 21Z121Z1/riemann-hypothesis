@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Howe
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaLiftLevelsGoodPrimesProperties
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LevelOperatorsAtPrimeOffLevelDatumStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LevelOperatorsAtPrimeOffLevelDatum
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ChainInnerStepIntertwinesMatchedHecke
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaChainLastStepIntertwinesMatchedHecke
 
@@ -71,8 +71,8 @@ theorem compositeLift_relation_passes_to_rows (F : Face D A) (hl : R.toLevCh.Is 
     R.e0 (hk _ P c (U.1 (PiTensorProduct.tprod ℂ v))) = hk _ P c (R.e0 (U.1 (PiTensorProduct.tprod ℂ v))) := by
   obtain ⟨n, hn⟩ := hl.βY 0 (by have := D.R.two_le_m; omega)
   have hN := natCast_pow_notMem P ((_root_.GlobalTheory.GoodPrimes.good_primes R F hl).2.1 t P hP).1 n
-  have h1 := (GlobalTheory.T.level_operators_at_prime_off_level_datum _ _ _ _ (R.datYt t 0 R.triv) hn P hN hP).1
-  have h2 := (GlobalTheory.T.level_operators_at_prime_off_level_datum _ _ _ _ (R.dat0 R.triv) hn P hN fun PP h =>
+  have h1 := (_root_.GlobalTheory.LevOp.level_operators _ _ _ _ (R.datYt t 0 R.triv) hn P hN hP).1
+  have h2 := (_root_.GlobalTheory.LevOp.level_operators _ _ _ _ (R.dat0 R.triv) hn P hN fun PP h =>
     hP PP (Or.inl (h.resolve_right (Finset.notMem_empty PP)))).2.2.2.1
   have h3 := mult_level _ _ _ _ _ ((mem_multT R.θ (R.MY 0) _ _ _).1 U.2) v
   refine gaL_comm _ _ _ _ _ _ _ fun g0 => h2 c g0 _ fun k hk h => ?_

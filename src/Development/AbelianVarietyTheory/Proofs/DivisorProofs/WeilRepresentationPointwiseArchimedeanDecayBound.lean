@@ -4,9 +4,9 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WordAppend
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepFinitePeriodicityPolynomialHeight
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WordActionSquareIntegrableBound
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SobolevBoundPeriodicSchwartzStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SobolevBoundPeriodicSchwartz
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneAddNormPowLeSumLinearFormPow
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanDecayOperatorApplyMemAdelicSchwartzStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanDecayOperatorApplyMemAdelicSchwartz
 open NumberField IsDedekindDomain MeasureTheory Filter Topology Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes
 open GlobalTheory.WeilM GlobalTheory.AdelicU GlobalTheory.LFun GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels GlobalTheory.ThK
 open scoped TensorProduct NNReal Matrix
@@ -51,7 +51,7 @@ theorem om_bound_arch : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Nu
   let μ : Measure (Fin n × Fin d → AF F) := Measure.addHaar
   have hμ : μ.IsAddHaarMeasure := inferInstance
   obtain ⟨K, l, C0, hl, hpoly⟩ := _root_.GlobalTheory.ArchDecay.onePlusNormPow_le_sum_linearForm_pow F (Fin n × Fin d) N
-  obtain ⟨P, Cs, c, hsob⟩ := GlobalTheory.T.sobolev_bound_periodic_schwartz F (Fin n × Fin d) μ hμ
+  obtain ⟨P, Cs, c, hsob⟩ := _root_.GlobalTheory.ArchDecay.sobolev_per F (Fin n × Fin d) μ hμ
   obtain ⟨C1, k1, hfin⟩ := _root_.GlobalTheory.ArchDecay.per_om_level F E σ B n d X W M χX χW om r s r' s' hP Φ hΦ
   obtain ⟨C2, k2, hL2⟩ := _root_.GlobalTheory.ArchDecay.word_action_square_integrable F E σ B n d X W M χX χW om r s r' s' hP Φ hΦ μ hμ (P + N)
   set A : ℝ := max (max Cs 0 * max C1 1 ^ c * max C2 0) 1 with hA
@@ -72,7 +72,7 @@ theorem om_bound_arch : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Nu
       | cons o w ih =>
         obtain ⟨l', rfl, -⟩ := hwo o List.mem_cons_self
         obtain ⟨i1, i2⟩ := ih fun o' ho' => hwo o' (List.mem_cons_of_mem _ ho')
-        exact ⟨GlobalTheory.T.archimedeanDecayOperatorApply_mem_adelicSchwartz F _ (Sum.inr l') _ i1, per_mM i2 l'⟩
+        exact ⟨_root_.GlobalTheory.ArchDecay.SchAStab.app_mem_schA F _ (Sum.inr l') _ i1, per_mM i2 l'⟩
     have hH0 : 0 ≤ H := le_trans zero_le_one hH1
     have hb : 0 ≤ max C2 0 * H ^ k2 := mul_nonneg (le_max_right _ _) (pow_nonneg hH0 _)
     have hw' : ∀ v : List (Fin n × Fin d → mixedEmbedding.mixedSpace F), v.length ≤ P → (∀ u ∈ v, ‖u‖ ≤ 1) →

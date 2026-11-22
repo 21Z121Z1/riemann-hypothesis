@@ -3,13 +3,13 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsPotential
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.OneSubPhiOntoOfFilZero
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BhattScholzeCrystallineLattices
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.ConductorExponents
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoboundaryMemCocyclesOddPrimeStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoboundaryMemCocyclesOddPrime
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GaloisEqMulKisinInfTameSemidirect
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsBcrisTensorLatticeEquivPeriodRingStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PotentialCocycleMemLPowLattice
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFrobeniusPotentialCocycleClassStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFrobeniusPotentialCocycleClass
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GaloisCoboundaryMemLatticeInvLOfMonodromyEqZero
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CocycleMemLatticeOnKummerTowerGaloisStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CocycleMemLatticeOnKummerTowerGalois
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.WeaklyAdmissibleFiltrations TensorProduct PowerSeries GlobalTheory.Prism GlobalTheory.BK GlobalTheory.BKReal GlobalTheory.BKGal GlobalTheory.Per Matrix
 open scoped Formalism.Per
 
@@ -57,7 +57,7 @@ theorem step_mul {a e : ℕ} [NeZero a] [NeZero e] [TameDescentExponentData K l 
     (hc : (l : K) ^ c • D.zeta y ∈ D.MM) (b : TW (OB l O) T) (hb : R.IsPotential y b) (g h k : Gl l)
     (hg : g = h * k) (hh : sQ l h ∈ GK (ϖ.field a)) (hk : sQ l k ∈ ϖ.GKinf) :
     ∃ x : ↥T.L.T, (l : O) ^ c • (actB (sQ l) T g b - b) = (1 : OB l O) ⊗ₜ[O] x := by
-  obtain ⟨xk, hxk⟩ := GlobalTheory.T.cocycle_mem_lattice_on_kummerTowerGalois l a e O K t ϖ ι η H D T R y hy b hb k hk
+  obtain ⟨xk, hxk⟩ := _root_.GlobalTheory.CocycleKinf.cocycle_mem_lattice_of_mem_GKinf l a e O K t ϖ ι η H D T R y hy b hb k hk
   obtain ⟨xh, hxh⟩ := _root_.GlobalTheory.BKGal.potential_cocycle_mem_lpow l a e O K t ϖ ι η H D T R hηH hlH y hy c hc b hb h hh
     (_root_.GlobalTheory.BKGal.coboundary_mem_lattice_of_mon_eq_zero hF l a e O K t ϖ hl2 ι η H D T R y hy hM b hb h hh)
   refine ⟨(l : O) ^ c • T.actT h xk + xh, ?_⟩
@@ -102,7 +102,7 @@ end GlobalTheory.BKGal.MonZero
 theorem GlobalTheory.BKGal.classOf_of_mon_eq_zero : GlobalTheory.Published.FontaineBcris → ∀ (l : ℕ) [Fact l.Prime] (a e : ℕ) [NeZero a] [NeZero e] (ϖ : PiSys l e) (LL : FinExt l) [HasUnr a LL] [TameDescentExponentData ↥LL.1 l e a] (ι : Type) [Fintype ι] [DecidableEq ι] (η H : ℕ) (D : BKDat ↥(OL LL) ↥LL.1 l e a ι η H) (T : QLat LL) (R : GalDat (thetaW a LL) ϖ (sQ l) D T) (Pl : LocPrime l) (AI : LocAinf l Pl), IsStd Pl AI → η < H → 8 * H + 1 < l → ∀ y ∈ D.Y, D.Mon y = 0 → ∀ c : ℕ, (l : ↥LL.1) ^ c • D.zeta y ∈ D.MM → ∃ κ₁ ∈ latticeFiniteCocycles (Pl.PD (Formalism.MainNotions.ElementDenominator.qlExt l)) T.L, R.ClassOf ((l : ↥LL.1) ^ c • y) κ₁ := by
   intro hF l _ a e _ _ ϖ LL _ _ ι _ _ η H D T R Pl AI hstd hηH hlH y hy hM c hc
   have hl2 : l ≠ 2 := by omega
-  obtain ⟨b, hb⟩ := (GlobalTheory.T.exists_frobeniusPotential_cocycle_class l a e _ _ (thetaW a LL) ϖ ι η H D T R).1 y hy
+  obtain ⟨b, hb⟩ := (_root_.GlobalTheory.GalPot.potential_class l a e _ _ (thetaW a LL) ϖ ι η H D T R).1 y hy
   have hdec : ∀ g : Gl l, ∃ h k : Gl l, g = h * k ∧ sQ l h ∈ GK (ϖ.field a) ∧ sQ l k ∈ ϖ.GKinf := by
     intro g
     obtain ⟨h, hh, k, hk, hgk⟩ := (_root_.GlobalTheory.TameCover.main l a e ϖ LL).1 (sQ l g)
@@ -115,10 +115,10 @@ theorem GlobalTheory.BKGal.classOf_of_mon_eq_zero : GlobalTheory.Published.Fonta
     rw [e1]; exact hk
   obtain ⟨κ, hcob, hT⟩ := GlobalTheory.BKGal.MonZero.exists_cob (thetaW a LL) ϖ hF hl2 D T R hηH hlH y hy hM c hc b hb hdec
   have hcl : R.ClassOf y κ := ⟨b, hb, hcob⟩
-  have hZ1c : κ ∈ continuousCocycles T.ρ := GlobalTheory.T.coboundary_mem_cocycles_odd_prime l hl2 LL T b κ hcob
+  have hZ1c : κ ∈ continuousCocycles T.ρ := _root_.GlobalTheory.CobCont.main l hl2 LL T b κ hcob
   obtain ⟨β, -, -, -, hf⟩ := GlobalTheory.T.exists_bcrisTensorLattice_equiv_periodRing l LL T Pl AI hstd
   have hZ1f : κ ∈ finiteCocycles (Pl.PD (Formalism.MainNotions.ElementDenominator.qlExt l)) T.ρ := (hf κ hZ1c).2 ⟨b, hcob⟩
-  refine ⟨(l : ↥LL.1) ^ c • κ, ?_, (GlobalTheory.T.exists_frobeniusPotential_cocycle_class l a e _ _ (thetaW a LL) ϖ ι η H D T R).2.2.1 y κ c hcl⟩
+  refine ⟨(l : ↥LL.1) ^ c • κ, ?_, (_root_.GlobalTheory.GalPot.potential_class l a e _ _ (thetaW a LL) ϖ ι η H D T R).2.2.1 y κ c hcl⟩
   refine ⟨⟨(continuousCocycles T.ρ).smul_mem _ hZ1c, ?_⟩, (finiteCocycles (Pl.PD (Formalism.MainNotions.ElementDenominator.qlExt l)) T.ρ).smul_mem _ hZ1f⟩
   intro g _
   exact hT g

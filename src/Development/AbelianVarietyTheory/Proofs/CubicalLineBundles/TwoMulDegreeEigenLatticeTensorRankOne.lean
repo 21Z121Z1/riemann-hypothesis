@@ -7,8 +7,8 @@ import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.CmCurveLieChar
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.HermFormSumSum
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LieTensorLine
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.IntegersOfCmFieldConjStructure
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsLieRepresentationEigenLatticesStatement
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsUniqueCmHermitianLatticeFormStatement
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsLieRepresentationEigenLattices
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsUniqueCmHermitianLatticeForm
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.TwoMulDegDualLineCmIdeal
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LieAlgebraSquaredLengthCompPairingHom
 import Development.AbelianVarietyTheory.Definitions.CMLattices.IsDiffOf
@@ -229,10 +229,10 @@ theorem two_mul_deg_eigLat : ThetaUnifAV → Out.Laws → ∀ (E : Type) [Field 
     simp only [map_add, map_mul, map_intCast, ← hw]
     simp [wK]
   obtain ⟨𝔞, e, β, h𝔞, he, hrange, hβc, hβ, hform, hnorm⟩ := _root_.GlobalTheory.CM.exists_ideal_traceForm_of_rank_one E H D ε hK hrk hKF hpos
-  obtain ⟨k, hk, hku, -, -, -, -, N, xs, ys, hdual⟩ := GlobalTheory.T.exists_unique_cmHermitianLatticeForm E H D ε
+  obtain ⟨k, hk, hku, -, -, -, -, N, xs, ys, hdual⟩ := _root_.GlobalTheory.CM.exists_kForm E H D ε
   obtain rfl := hku hK hKF
   obtain ⟨c1, c2, c3, c4, c5, -⟩ := integral_tangent_coordinates K T.pol F
-  obtain ⟨r, hr, hr'⟩ := GlobalTheory.T.exists_lieRepresentation_eigenLattices K T.pol F (𝓞 E) T.t.act
+  obtain ⟨r, hr, hr'⟩ := _root_.GlobalTheory.CM.GenFib.exists_lieRep_eigLat K T.pol F (𝓞 E) T.t.act
   letI : Algebra (OK H) (𝓞 K) := τ₀.toAlgebra
   obtain ⟨hfin, hproj, -⟩ := (OK_isDedekindDomain_and_projective E H).2.2.2.2.2 D.La D.fin D.proj
   obtain ⟨f, -, f2, f3, f4, f5⟩ := lie_tensor_line (𝓞 K) (OK H) C.P.A T.t.G C.act _ D.La t.ten C.v hfin hproj C.basis hτ₀

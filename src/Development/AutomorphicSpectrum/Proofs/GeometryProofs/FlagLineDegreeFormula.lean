@@ -16,9 +16,9 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordDegreeBoundCha
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordDegreeBoundOfFlag
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HermitianLineMetricBound
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LogCardQuotientBound
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalRatioProductFormulaStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordsAtComplexEmbeddingStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValAtComplexEmbeddingStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalRatioProductFormula
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordsAtComplexEmbedding
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValAtComplexEmbedding
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelValueLift
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GramDetNeZeroOfIndep
 
@@ -70,7 +70,7 @@ theorem one_label (X : Scheme.{0}) (Ω : Type) [Field Ω] (ξ : Sp Ω ⟶ X) (K 
   have hloc := _root_.GlobalTheory.CompanionTheory.Ar.RootHt.FinLocal.coord_size X Ω ξ K J y G Li M V r b₀ m i A.a e₀ hc hall htie hm hind hsw hdeg L w z hw
     B MB (F.F i.castSucc) (F.F i.succ) hsub₀ hsub₁ c₀ hc₀ φ hval
   have hφ : φ ⟨s, hs1⟩ = u := hval ⟨s, hs1⟩ e ve t u he hve hsv hcls hu
-  obtain ⟨hρ, hfin, hsum⟩ := GlobalTheory.T.local_ratio_product_formula L K J A.a w c₀ u hne hc₀ hu0
+  obtain ⟨hρ, hfin, hsum⟩ := _root_.GlobalTheory.CompanionTheory.Ar.RootHt.RatioSum.ratio_sum L K J A.a w c₀ u hne hc₀ hu0
   have hidx := _root_.GlobalTheory.CompanionTheory.Ar.RootHt.log_index_le L B.carrier (F.F i.castSucc) (F.F i.succ) φ ⟨s, hs1⟩ m (locRatio A.a w c₀)
     (IsNoetherian.noetherian _) hker (by rw [hφ]; exact hu0) hm hρ hfin hloc
   rw [hφ, hsum] at hidx
@@ -89,8 +89,8 @@ theorem one_label (X : Scheme.{0}) (Ω : Type) [Field Ω] (ξ : Sp Ω ⟶ X) (K 
       · simpa using hle'
       · simpa using hl' j
     have hd : (gramAt h _ v').det ≠ 0 := by rw [← g0]; exact _root_.GlobalTheory.CompanionTheory.Ar.RootHt.gramDet_ne_zero_of_linearIndependent L B σ _ f hfi
-    have := hC₀ _ _ (GlobalTheory.T.coords_at_complex_embedding X Ω ξ K J y L w z σ hw) c₀ (fun k => by simpa using hc₀ k) ef e v' ve' t (σ u)
-      hef he hv' hve' hcls (GlobalTheory.T.val_at_complex_embedding X Ω ξ L z σ _ u hu) (by simpa using hu0) hd
+    have := hC₀ _ _ (_root_.GlobalTheory.CompanionTheory.Ar.RootHt.PullCoords.coordsAt_embedding X Ω ξ K J y L w z σ hw) c₀ (fun k => by simpa using hc₀ k) ef e v' ve' t (σ u)
+      hef he hv' hve' hcls (_root_.GlobalTheory.CompanionTheory.Ar.RootHt.PullVal.valAt_complex X Ω ξ L z σ _ u hu) (by simpa using hu0) hd
     rw [g0, g1]
     exact this
   have hN : (0 : ℝ) < Module.finrank ℚ L := by exact_mod_cast Module.finrank_pos

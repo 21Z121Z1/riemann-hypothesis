@@ -2,7 +2,10 @@ import Mathlib
 import CompanionTheory.RealGroups.GeneralUnitaryRepresentations.ArchimedeanJacquetSegments.SegmentSubquotients.SegRepOf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivativeCuspidalPairLength
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProdMapInjective
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductIrreducibleAppendEquivStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductIrreducibleAppendEquiv
+import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.PrincipalSeriesSupport.PrinSeriesWord
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasSupportOfIsSubquotientProdIrr
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ParabolicInductionPreservesSubquotient
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdjacentQuotientOfTwoSegment
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AlgebraMapIntertwiningMapBijectiveOfIsSmooth
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivProdIrrTw
@@ -146,16 +149,16 @@ theorem emb_right {p q q' r t : ℕ} (A : Fin p → IrrGL k) (y : Fin q → IrrG
     (hA : ∑ a, (A a).1 = r) (hy : ∑ a, (y a).1 = t) (hy' : ∑ a, (y' a).1 = t) (h : Emb (prodIrr y hy) (prodIrr y' hy'))
     (h1 : ∑ a, (Fin.append A y a).1 = r + t) (h2 : ∑ a, (Fin.append A y' a).1 = r + t) :
     Emb (prodIrr (Fin.append A y) h1) (prodIrr (Fin.append A y') h2) :=
-  embR (prodIrr A hA) (prodIrr y hy) (prodIrr y' hy') _ _ h (GlobalTheory.T.product_irreducible_append_equiv k p q r t A y hA hy h1)
-    (GlobalTheory.T.product_irreducible_append_equiv k p q' r t A y' hA hy' h2)
+  embR (prodIrr A hA) (prodIrr y hy) (prodIrr y' hy') _ _ h (_root_.GlobalTheory.CompanionTheory.ProdStage.prod₂_prodIrr_append k p q r t A y hA hy h1)
+    (_root_.GlobalTheory.CompanionTheory.ProdStage.prod₂_prodIrr_append k p q' r t A y' hA hy' h2)
 
 set_option synthInstance.maxHeartbeats 400000 in
 theorem emb_left {p p' q r t : ℕ} (y : Fin p → IrrGL k) (y' : Fin p' → IrrGL k) (B : Fin q → IrrGL k)
     (hy : ∑ a, (y a).1 = r) (hy' : ∑ a, (y' a).1 = r) (hB : ∑ a, (B a).1 = t) (h : Emb (prodIrr y hy) (prodIrr y' hy'))
     (h1 : ∑ a, (Fin.append y B a).1 = r + t) (h2 : ∑ a, (Fin.append y' B a).1 = r + t) :
     Emb (prodIrr (Fin.append y B) h1) (prodIrr (Fin.append y' B) h2) :=
-  embL (prodIrr y hy) (prodIrr y' hy') (prodIrr B hB) _ _ h (GlobalTheory.T.product_irreducible_append_equiv k p q r t y B hy hB h1)
-    (GlobalTheory.T.product_irreducible_append_equiv k p' q r t y' B hy' hB h2)
+  embL (prodIrr y hy) (prodIrr y' hy') (prodIrr B hB) _ _ h (_root_.GlobalTheory.CompanionTheory.ProdStage.prod₂_prodIrr_append k p q r t y B hy hB h1)
+    (_root_.GlobalTheory.CompanionTheory.ProdStage.prod₂_prodIrr_append k p' q r t y' B hy' hB h2)
 
 set_option synthInstance.maxHeartbeats 400000 in
 theorem comb {n c N : ℕ} (xx : Fin n → IrrGL k) (hdx : ∑ a, (xx a).1 = N) (iz : Fin n) (z : IrrGL k) (hz : xx iz = z)

@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.AxesVanishingStructureSheafDegOne
 import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.IsScalarTowerOfAlgebraMapEq
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianHodgeDeRham
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GrpObjPullbackAxesCohomologyProjectionsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GrpObjPullbackAxesCohomologyProjections
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeOneFormFrameAndSquare
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeGlobalOneFormsProjectiveRank
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BijectiveOfSplitInjectiveFgProjectiveConstantRan
@@ -17,7 +17,7 @@ namespace GlobalTheory.AbCoh
 theorem primF_of_abelian (R : Type) [CommRing R] (A : Over (Sp R)) [GrpObj A] (g : ℕ) (hA : IsAbelianScheme A)
     (hs : SmoothOfRelativeDimension g A.hom) : PrimF A := by
   obtain ⟨-, -, hAA, hsAA⟩ := _root_.GlobalTheory.AbCoh.basic_of_isAbelianScheme R A g hA hs
-  have hax := (GlobalTheory.T.grpObj_pullback_axes_cohomology_projections R A).2.1
+  have hax := (_root_.GlobalTheory.AbCoh.AxesPull.main R A).2.1
   have hM : FP R (GlobForm A.hom × GlobForm A.hom) (g + g) :=
     (_root_.GlobalTheory.AbCoh.fp_ext_prod).2 R _ _ g g (_root_.GlobalTheory.AbCoh.globForm_FP R A g hA hs) (_root_.GlobalTheory.AbCoh.globForm_FP R A g hA hs)
   have hN : FP R (GlobForm (A ⊗ A).hom) (g + g) := _root_.GlobalTheory.AbCoh.globForm_FP R (A ⊗ A) (g + g) hAA hsAA

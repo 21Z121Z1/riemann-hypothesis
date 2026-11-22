@@ -1,6 +1,7 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.TransPtBase
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverFramesPullbackStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverFramesPullback
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockMinorSumFrameIdentity
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverFramesAtBasePoint
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverBasePointRegularStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MinorOfRegularMatrixValue
@@ -54,7 +55,7 @@ theorem transPt_ratio_step [CharZero Φ'] {M : FlagModel y Ψ N j} {M' : FlagMod
   have hzv := _root_.GlobalTheory.CompanionTheory.Ar.PB.CovGraph.comp_v_mem_mcPts K ι Φ y Ψ N j M K' ι' Φ' y' M' Cv zb hzb
   obtain ⟨F', hF', hG'⟩ := (_root_.GlobalTheory.CompanionTheory.Ar.PB.CPts.main K' ι' Φ' y' Ψ N j M').2.1 zb hzb
   obtain ⟨F, hF, hG⟩ := (_root_.GlobalTheory.CompanionTheory.Ar.PB.CPts.main K ι Φ y Ψ N j M).2.1 _ hzv
-  obtain ⟨c, hc, hcs⟩ := GlobalTheory.T.flag_cover_frames_pullback K ι Φ y Ψ N j M K' ι' Φ' y' M' Cv F' F hF' hF
+  obtain ⟨c, hc, hcs⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PB.CovGraph.StepExpr.transPt_eq_smul_sum K ι Φ y Ψ N j M K' ι' Φ' y' M' Cv F' F hF' hF
     (fun k => x_chart_ne_of_pt M' hzb hG' k) (fun k => x_chart_ne_of_pt M hzv hG k) p k k' hp hk'
   obtain ⟨c', hc'⟩ := hy k'
   have hreg : ∀ (q : Σ k, ι k) (r : Σ k, ι' k),

@@ -4,7 +4,10 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Sec
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.FundamentalDomainPointBound
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.FaithfullyFlatPointsBaseChangeDescent
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.FramedPointBaseChangeLaws
-import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsFramedPointBaseChangeAlgHomStatement
+import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsFramedPointBaseChangeAlgHom
+import Formalism.LocalToGlobal.ProjectiveLattices.ThShort
+import Formalism.LocalToGlobal.ProjectiveLattices.ThGerm
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.VtUniq
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ThetaNullValueExistsUniqueNaturalLinear
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.FullLinearLevelCoverBaseChangeTorsor
 
@@ -83,7 +86,7 @@ theorem etaExpr_eq_of_levels (hL : Laws) {R : ℕ} (hR : Odd R) {J : Type} [Fint
   refine Module.eq_of_localization_maximal (R := T) (fun P _ => Localization.AtPrime P)
     (fun P _ => Algebra.linearMap T (Localization.AtPrime P)) _ _ fun P _ => ?_
   let ψ : T →ₐ[c.F] Localization.AtPrime P := IsScalarTower.toAlgHom c.F T _
-  obtain ⟨u, hu⟩ := GlobalTheory.T.exists_framedPoint_baseChange_algHom hL E H Dw l Xo c T _ ψ z
+  obtain ⟨u, hu⟩ := _root_.GlobalTheory.FramedBaseChange.exists_frMap hL E H Dw l Xo c T _ ψ z
   obtain ⟨e, he, hv⟩ := exists_level_baseChange hL hR ψ hu hev hw
   obtain ⟨e', he', hv'⟩ := exists_level_baseChange hL hR ψ hu hev' hw'
   obtain ⟨g, hg⟩ := ((_root_.GlobalTheory.fullLevel_cover_baseChange_torsor hL E H Dw l Xo _ hk).2.2.1 _ u.x e he).2 e' he'
@@ -116,7 +119,7 @@ theorem map_eq_of_etaValAt (hL : Laws) {R : ℕ} (hR : Odd R) {J : Type} [Fintyp
   obtain ⟨S', _, _, α, y₀', ev₀, w₀, hα, hmα, hev₀, hw₀, e₀⟩ := h₀
   obtain ⟨T', _, _, β, y', ev, w, hβ, hmβ, hev, hw, e⟩ := h
   obtain ⟨U, _, _, ψ₁, ψ₂, hc, -, hinj⟩ := GlobalTheory.exists_faithfullyFlat_pushout c.F S T' S' (β.comp φ) α hα
-  obtain ⟨z, hz⟩ := GlobalTheory.T.exists_framedPoint_baseChange_algHom hL E H Dw l Xo c T' U ψ₁ y'
+  obtain ⟨z, hz⟩ := _root_.GlobalTheory.FramedBaseChange.exists_frMap hL E H Dw l Xo c T' U ψ₁ y'
   have hz₀ : FrMap (ψ₂.comp α) y₀ z :=
     hc ▸ FramedBaseChange.trans _ ψ₁ (FramedBaseChange.trans φ β hm hmβ) hz
   have key := map_etaExpr_eq_of_levels hL hR cf x ψ₁ ψ₂ hz (FramedBaseChange.cancel α ψ₂ hmα hz₀) hev hw hev₀ hw₀
@@ -132,14 +135,14 @@ theorem exists_etaValAt (hL : Laws) {R : ℕ} (hR : Odd R) {J : Type} [Fintype J
   obtain ⟨B, _, φ₀, ev₀, hφ, hev₀⟩ := (_root_.GlobalTheory.fullLevel_cover_baseChange_torsor hL E H Dw l Xo _ hk).1 S y.x
   letI : Algebra c.F B := (φ₀.comp (algebraMap c.F S)).toAlgebra
   let φ : S →ₐ[c.F] B := { φ₀ with commutes' := fun _ => rfl }
-  obtain ⟨y', hm⟩ := GlobalTheory.T.exists_framedPoint_baseChange_algHom hL E H Dw l Xo c S B φ y
+  obtain ⟨y', hm⟩ := _root_.GlobalTheory.FramedBaseChange.exists_frMap hL E H Dw l Xo c S B φ y
   obtain ⟨ev, hev⟩ : ∃ ev, IsFullLev Xo (R ^ 4) y'.x ev := by
     rw [hm.1]
     exact ⟨ev₀, hev₀⟩
   choose w hw using fun q => (existsUnique_nullVal hL hR hev q).exists
   obtain ⟨v, hv, -⟩ := GlobalTheory.existsUnique_preimage_of_faithfullyFlat c.F S B φ hφ (etaExpr (R ^ 4) cf x w)
     fun T _ _ ψ₁ ψ₂ hc => by
-      obtain ⟨z, hz⟩ := GlobalTheory.T.exists_framedPoint_baseChange_algHom hL E H Dw l Xo c B T ψ₁ y'
+      obtain ⟨z, hz⟩ := _root_.GlobalTheory.FramedBaseChange.exists_frMap hL E H Dw l Xo c B T ψ₁ y'
       have hz₀ : FrMap (ψ₂.comp φ) y z := hc ▸ FramedBaseChange.trans φ ψ₁ hm hz
       exact map_etaExpr_eq_of_levels hL hR cf x ψ₁ ψ₂ hz (FramedBaseChange.cancel φ ψ₂ hm hz₀) hev hw hev hw
   exact ⟨v, B, inferInstance, inferInstance, φ, y', ev, w, hφ, hm, hev, hw, hv⟩

@@ -2,7 +2,7 @@ import Mathlib
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.TranslateMemIndOrder
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsUnitFormLocalizationEtaleNbhd
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HasValues
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CharacterSectionTangentFunctionalStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CharacterSectionTangentFunctional
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueTangentDualNumber
 open CategoryTheory Limits AlgebraicGeometry MonoidalCategory CartesianMonoidalCategory MonObj TensorProduct
 open GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.BT
@@ -50,7 +50,7 @@ theorem GlobalTheory.CompanionTheory.Ar.BT.QFGroup.isHT_baseChange : ∀ (R : Ty
     show valAt (Γ'.pt t).left ⊤ le_top (F.appTop.hom s) = _
     rw [← valAt_comp_top, ← hσj', valAt_spec_map, hb, ← RingHom.comp_apply, hj'i]
     simp
-  obtain ⟨l', hl'⟩ := GlobalTheory.T.character_section_tangent_functional R' T Γ' S G (Spec.map (CommRingCat.ofHom (algebraMap R R')) ≫ x) N (F ≫ i) hi'
+  obtain ⟨l', hl'⟩ := _root_.GlobalTheory.CompanionTheory.Ar.BT.HTLinear.char_on_tangent_linear R' T Γ' S G (Spec.map (CommRingCat.ofHom (algebraMap R R')) ≫ x) N (F ≫ i) hi'
     L' M' ((Units.map (algebraMap R R' : R →* R')).comp χ) (F.appTop.hom s) hs'
   have key : ∀ e, l' (β e) = Ideal.Quotient.mk (Ideal.span {(N : R')}) (w' (β e)) := by
     intro e

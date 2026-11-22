@@ -14,8 +14,8 @@ import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ExistsUniq
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.WeilIsAlternatingSkewNatural
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.UnitOnInjectiveOfCommRing
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsIsoIffBijectiveOverAlgClosed
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelObjectPullbackLevelPowerCalculusStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipalSiegelObjectOddLevelRigidStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelObjectPullbackLevelPowerCalculus
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipalSiegelObjectOddLevelRigid
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OmegaStdAddNsmul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsClopenGeometricPointsRootOfUnityEqUnitStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeilIsDiagRoot
@@ -65,7 +65,7 @@ theorem exists_levelCover : ∀ (h n N : ℕ) (B B' : Type) [CommRing B] [CommRi
   have hc₀ : c₀.Principal := RC.2.1 c c₀ hpb hc
   have hrel : ∀ (T : Scheme.{0}) (t : T ⟶ S) (C' : SiegPre h N (b.ζ : B') (t ≫ s')),
       SRel C' c₀ (N / n) 1 t ↔ SRel C' c (N / n) 1 t := fun T t C' => by
-    have := (GlobalTheory.T.siegelObjectPullbackLevelPower_calculus h n n N B B' B' ζ (b₀.ζ : B') (b.ζ : B') S S T (s' ≫ spMap j) s' (t ≫ s') c c₀ C'
+    have := (_root_.GlobalTheory.SiegLevCalc.sRel_calculus h n n N B B' B' ζ (b₀.ζ : B') (b.ζ : B') S S T (s' ≫ spMap j) s' (t ≫ s') c c₀ C'
       (𝟙 S) t 1 1 (N / n) ((sRel_one_one_iff c₀ c (𝟙 S)).2 hpb)).1
     rwa [Category.comp_id] at this
   have hNS : IsUnit (N : Γ(S, ⊤)) := by
@@ -223,7 +223,7 @@ theorem exists_levelCover : ∀ (h n N : ℕ) (B B' : Type) [CommRing B] [CommRi
     rintro t₂ ⟨ht₂, hpb₂⟩
     obtain ⟨φ₂, hsr₂, hl₂⟩ := (huniv' T t₂ B' (b.ζ : B') (t ≫ s') C').1 hpb₂
     rw [ht₂] at hsr₂
-    have e := GlobalTheory.T.principal_siegel_object_odd_level_rigid h n N (N / n) B' B' b₀ (b.ζ : B') S T s' (t ≫ s') c₀ C' t φ' φ₂ hn hnodd hc₀
+    have e := _root_.GlobalTheory.SiegRigid.eq_of_sRelBy h n N (N / n) B' B' b₀ (b.ζ : B') S T s' (t ≫ s') c₀ C' t φ' φ₂ hn hnodd hc₀
       ⟨pb', hφ', low'⟩ hsr₂
     subst e
     let h₂ : Tt ⟶ V := Over.homMk t₂ (ht₂.trans (Category.id_comp t).symm)

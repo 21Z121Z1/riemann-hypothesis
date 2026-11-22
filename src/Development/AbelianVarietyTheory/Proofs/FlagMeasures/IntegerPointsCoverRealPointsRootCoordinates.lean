@@ -11,7 +11,7 @@ import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLattic
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.LoopBPin
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StabUMapEqOfRoots
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RealBesselSubgroupActsFrameUpperUnitriangular
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalBesselFrameRealPlaceLinearIndependentStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalBesselFrameRealPlaceLinearIndependent
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalRootCoordinatesEqFrameMatrix
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FrameMatrixMemUnipotentStabilizerFrameGram
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FrameGramMulEqConjTransposeMulFrameMatrices
@@ -277,7 +277,7 @@ theorem cover_action : ∀ Cg cb Cu cT CT C0 A : ℝ, ∀ (D : D7) (X : HidaSett
     have e2 : s'⁻¹ * (s' * (γw⁻¹ * (sf⁻¹ * x.1 * sf) * γw) * s'⁻¹) = (γw⁻¹ * (sf⁻¹ * x.1 * sf) * γw) * s'⁻¹ := by
       group
     rw [e2] at hc2
-    have heq := isMatOn_unique (GlobalTheory.T.rationalBesselFrame_realPlace_linearIndependent D X u' v) hc3 hc2
+    have heq := isMatOn_unique (_root_.GlobalTheory.RationalFrame.frame_linearIndependent D X u' v) hc3 hc2
     have hA' : Ar.map (embS D τ) = sg * a.map (embS D τ) * sg := by
       ext i j
       rw [hsg, actSgn_conj_apply]

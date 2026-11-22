@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Degenerations.SepticCharacterInjective
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationWeilPairingPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationWeilPairingProperties
 open ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.Ex
 open scoped BigOperators
 
@@ -220,11 +220,11 @@ theorem orth_iff (hk : (k : C) ≠ 0)
     · obtain ⟨γ, hγ, hγ'⟩ := root_over N hk0 1 b' hb'
       let p' : N.QT k := ⟨(1, γ), hγ'.trans N.io_zero.symm⟩
       have e := N.wp_of_eq_zero (p * N.qTriv k (-z)) p' h1 rfl
-      rw [← (GlobalTheory.T.degenerationWeilPairing_properties C N k p _ p').2.2.2.2.1 hq, h p' rfl] at e
+      rw [← (_root_.GlobalTheory.Ex.WpPairing.wp_pairing C N k p _ p').2.2.2.2.1 hq, h p' rfl] at e
       rw [← hγ]
       exact e.symm
   · rintro ⟨p₀, hq, h1, h2⟩ p' hp'
-    rw [(GlobalTheory.T.degenerationWeilPairing_properties C N k p p₀ p').2.2.2.2.1 hq, (GlobalTheory.T.degenerationWeilPairing_properties C N k p₀ p' p').2.2.2.2.2.1 h1 h2, hp']
+    rw [(_root_.GlobalTheory.Ex.WpPairing.wp_pairing C N k p p₀ p').2.2.2.2.1 hq, (_root_.GlobalTheory.Ex.WpPairing.wp_pairing C N k p₀ p' p').2.2.2.2.2.1 h1 h2, hp']
     exact NumD.Gt.s_zero _
 
 end Main
@@ -255,7 +255,7 @@ theorem qStructure : ∀ (C : Type) [NormedField C] [IsAlgClosed C] (N : NumD C)
   have : p₀ = 1 := by
     refine Subtype.ext (Prod.ext h1 (NumD.Gt.ext hb (funext fun χ => ?_)))
     obtain ⟨p', rfl⟩ := h3 χ
-    rw [← (GlobalTheory.T.degenerationWeilPairing_properties C N _ p₀ p' p').2.2.2.2.2.1 h1 hb, ← (GlobalTheory.T.degenerationWeilPairing_properties C N _ p p₀ p').2.2.2.2.1 hq, hp p']
+    rw [← (_root_.GlobalTheory.Ex.WpPairing.wp_pairing C N _ p₀ p' p').2.2.2.2.2.1 h1 hb, ← (_root_.GlobalTheory.Ex.WpPairing.wp_pairing C N _ p p₀ p').2.2.2.2.1 hq, hp p']
     rfl
   rwa [this] at hq
 

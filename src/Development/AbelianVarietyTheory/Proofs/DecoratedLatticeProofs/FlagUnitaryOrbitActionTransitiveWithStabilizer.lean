@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ThetaA
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.TransvectionAction
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.WeilDatumExistence
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FlagUnipotentFourierJacobiGroupStructure
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RationalFramesSameGramOneUnitaryOrbitStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RationalFramesSameGramOneUnitaryOrbit
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum MeasureTheory IsDedekindDomain NumberField Matrix
 open GlobalTheory.MixModel GlobalTheory.MixPer GlobalTheory.Grow
 open scoped TensorProduct
@@ -72,7 +72,7 @@ theorem exists_act (hx : IsBase W x₀) (γ : (NFlagQ V d.e).prod (GQ W)) (x : O
   have hγ := Subgroup.mem_prod.1 γ.2
   have hn : γ.1.1.1 ∈ GQ V := Subgroup.mem_subgroupOf.1 (hγ.1 : γ.1.1 ∈ (GQ V).subgroupOf (NFlag V d.e))
   have hf : γ.1.1.1 ∈ flagN d := γ.1.1.2
-  obtain ⟨x₁, hx₁, e₁⟩ := (GlobalTheory.T.rational_frames_same_gram_one_unitary_orbit D W ρ x₀ hx.1).2 γ.1.2 hγ.2 x.1 x.2
+  obtain ⟨x₁, hx₁, e₁⟩ := (_root_.GlobalTheory.WittOrbit.orb_eq_orbit D W ρ x₀ hx.1).2 γ.1.2 hγ.2 x.1 x.2
   obtain ⟨u, hu, hb, -⟩ := blockX_spec d (inv_mem hf)
   obtain ⟨v, hv⟩ := mem_ratMx.1 (blockX_rat d (inv_mem hn))
   obtain ⟨w, hw⟩ := mem_ratMx.1 (blockX_rat d hn)
@@ -134,7 +134,7 @@ theorem act_base_iff (hx : IsBase W x₀) (γ : (NFlagQ V d.e).prod (GQ W)) :
     exact orb_ext d γ.1.1.2 ((act_spec d hx γ (base hx)).trans h.symm)
 
 theorem transitive (hx : IsBase W x₀) (x : Orb W x₀) : ∃ γ : (NFlagQ V d.e).prod (GQ W), act d hx γ (base hx) = x := by
-  obtain ⟨h, hh, e⟩ := (GlobalTheory.T.rational_frames_same_gram_one_unitary_orbit D W ρ x₀ hx.1).1 x.1 x.2
+  obtain ⟨h, hh, e⟩ := (_root_.GlobalTheory.WittOrbit.orb_eq_orbit D W ρ x₀ hx.1).1 x.1 x.2
   refine ⟨⟨(1, h), Subgroup.mem_prod.2 ⟨one_mem _, hh⟩⟩, orb_ext d (n := 1) (one_mem _) ((act_spec d hx _ _).trans ?_)⟩
   show mt W h ⬝ rat x₀ = rat x.1 ⬝ blockX d 1
   rw [blockX_one, Matrix.mul_one, e]

@@ -14,7 +14,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Ex
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ChevalleyUnits
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WeilDeligneInductionPrinciple
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MonodromyZeroOfWeilDeligneRepClassIff
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InducedRepresentationCharacterStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InducedRepresentationCharacter
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WeilDeligneOfFiniteImageStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MultiplicativeVirtualCharacter
 open NumberField IsDedekindDomain ValuativeRel Matrix Polynomial Formalism.ConjugateSelfDual ReciprocityTheory.Gal GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.SplitWeil GlobalTheory.LocGL GlobalTheory.WeilDeligne GlobalTheory.LocLanglands GlobalTheory.Published
@@ -67,8 +67,8 @@ theorem eq_of_induced : BrauerDegreeZero → ∀ (E Ω : Type) [Field E] [Number
       rw [this]
       exact a.smooth
     obtain ⟨r, H, χ, c, hbr⟩ := hB G (Fin n → ℂ) ρG
-    have hi1 := fun i => GlobalTheory.T.induced_representation_character G (H i) (χ i)
-    have hi2 := fun i => GlobalTheory.T.induced_representation_character G (H i) 1
+    have hi1 := fun i => _root_.GlobalTheory.InertiaEigenvalues.inducedRep_cyclic_trace G (H i) (χ i)
+    have hi2 := fun i => _root_.GlobalTheory.InertiaEigenvalues.inducedRep_cyclic_trace G (H i) 1
     choose Rχ vχ hRχ using hi1
     choose R1 v1 hR1 using hi2
     have hp1 := fun i => GlobalTheory.T.weil_deligne_of_finite_image E Ω A w h G π hopen _ (Rχ i) μ hμ

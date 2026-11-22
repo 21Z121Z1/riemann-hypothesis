@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.SiegelKlin
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AbelContinuation
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.CongSubgroup
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.TotallyRealFieldDenseEmbeddings
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.CardRealEmbeddingsEqFinrankStatement
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.CardRealEmbeddingsEqFinrank
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.NearIdentityMatrixPositiveSolution
 
 open NumberField NumberField.Units NumberField.Units.dirichletUnitTheorem GlobalTheory.CompanionTheory.Hypotheses₂.Shintani GlobalTheory.CompanionTheory.Hypotheses₂.Shintani.Cones
@@ -21,7 +21,7 @@ theorem exists_totPos_basis : ∀ (F : Type) [Field F] [NumberField F] [IsTotall
       ∀ x : F, TotPos F x → (∀ σ τ : F →+* ℝ, σ x ≤ M * τ x) → ∀ i, 0 < b.repr x i := by
   intro F _ _ _ M
   classical
-  obtain ⟨hfin, hcard⟩ := GlobalTheory.T.card_real_embeddings_eq_finrank F
+  obtain ⟨hfin, hcard⟩ := _root_.GlobalTheory.CompanionTheory.Hypotheses₂.Shintani.EmbCard.finite_and_card_realEmbeddings F
   letI : Fintype (F →+* ℝ) := Fintype.ofFinite _
   obtain ⟨ε, hε, hW⟩ := _root_.GlobalTheory.CompanionTheory.DiagDom.small_perturbation_injective_pos (κ := F →+* ℝ) M
   have hex : ∀ i : F →+* ℝ, ∃ v : F, ∀ σ : F →+* ℝ,

@@ -10,7 +10,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicHaarDe
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicQuotientMeasure
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicFundamentalDomainVolume
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicIntegralUnfolding
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicLeviIntegralFormulaStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicLeviIntegralFormula
 
 open MeasureTheory Topology
 open scoped ENNReal NNReal Matrix Pointwise
@@ -31,7 +31,7 @@ theorem exists_haar_fundamentalDomain : ∀ (P G₁ : Type) [Group P] [Topologic
   have hmap : ∀ u, Measure.map (fun m : π.ker => MulAut.conjNormal (ι u) m) ν = ν := by
     intro u; rw [hδ u, hδ1 u, one_smul]
   have hH := _root_.GlobalTheory.CompanionTheory.SplitExtLat.isHaarMeasure_map_splitHomeo P G₁ ι π hι hπ hπι ν μ₁ hmap
-  obtain ⟨hnull, hint⟩ := GlobalTheory.T.parabolic_levi_integral_formula P G₁ ι π hι hπ hπι ν μ₁ D 𝓕₁ hDm h𝓕₁.nullMeasurableSet
+  obtain ⟨hnull, hint⟩ := _root_.GlobalTheory.CompanionTheory.SplitExtLat.setLIntegral_splitHomeo_image_prod P G₁ ι π hι hπ hπι ν μ₁ D 𝓕₁ hDm h𝓕₁.nullMeasurableSet
   have hcov := _root_.GlobalTheory.CompanionTheory.SplitExtLat.ae_exists_smul_mem_image_prod P G₁ ι π hι hπ hπι Γ Γ₁ hΓ₁ ν μ₁ D 𝓕₁ hDu h𝓕₁
   have hdis := _root_.GlobalTheory.CompanionTheory.SplitExtLat.aedisjoint_smul_image_prod P G₁ ι π hι hπ hπι Γ Γ₁ hΓ ν μ₁ D 𝓕₁ hDu h𝓕₁
   refine ⟨ν, D, _, _, inferInstance, hνF, hν0, hνfin, hH,

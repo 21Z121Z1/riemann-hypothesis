@@ -19,7 +19,7 @@ theorem wd_rat_mem_TT : ∀ {D : D7} {cc : Ideal (𝓞 D.host.K)} {δ : ℂ}, Cr
   intro D cc δ hc N N' x M hM hx F hF
   obtain ⟨hd, m, hm, hFm⟩ := hF
   have hg := (GlobalTheory.InducedType.induced_type D).1
-  have hint := (GlobalTheory.T.theta_space_selfDual_pair_at_most_line D hg cc δ hc N N' (La0 D (tor0 D cc δ) N N')
+  have hint := (_root_.GlobalTheory.ThetaLine.theta_line D hg cc δ hc N N' (La0 D (tor0 D cc δ) N N')
     (GlobalTheory.NormSum.VacMove.klat _ (GlobalTheory.NormSum.VacMove.moves_one D N) (GlobalTheory.NormSum.VacMove.moves_one D N'))).2.2.1
   refine ⟨GlobalTheory.FinWeil.RatTransl.differentiable_wd x hd, m * M, Nat.mul_pos hm hM, fun y hy => ?_⟩
   have h0 : Wd D (tor0 D cc δ) ((m * M) • y) F = F := by

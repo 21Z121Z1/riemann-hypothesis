@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IntFormsSub
 import Development.AbelianVarietyTheory.Definitions.HeightFunctions.XiValIffXiAt
 import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.CoeSelfDualLatticeInFrameCoordinatesEq
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPullbackSectionToLevelCover
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoverPullbackMemBoundedCuspidalHolomorphicStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoverPullbackMemBoundedCuspidalHolomorphic
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegralPullbackUniformisedLevelCoverPlaces
 
 set_option autoImplicit false
@@ -18,11 +18,11 @@ theorem baseForms_sub_cover : ∀ (D : D7) (T : CoreJ D), LawsJ T → ∀ j, For
   constructor
   · rintro _ ⟨f, ⟨hf, hh⟩, rfl⟩
     obtain ⟨f₂, hf₂, hpull⟩ := _root_.GlobalTheory.CovPull.exists_pull D T hL j hj σ hσ C hU.1 a n f hf
-    exact ⟨f₂, ⟨hf₂, GlobalTheory.T.coverPullback_mem_boundedCuspidalHolomorphic D T hL j hj σ hσ C hU a n hD f hf hh f₂ hf₂ hpull⟩, hP.2 f hf f₂ hf₂ hpull⟩
+    exact ⟨f₂, ⟨hf₂, _root_.GlobalTheory.CoverHol.cover_pull_holSub0 D T hL j hj σ hσ C hU a n hD f hf hh f₂ hf₂ hpull⟩, hP.2 f hf f₂ hf₂ hpull⟩
   · intro S S₂ hS
     rintro _ ⟨f, ⟨hf, hh, hi⟩, rfl⟩
     obtain ⟨f₂, hf₂, hpull⟩ := _root_.GlobalTheory.CovPull.exists_pull D T hL j hj σ hσ C hU.1 a n f hf
-    exact ⟨f₂, ⟨⟨hf₂, GlobalTheory.T.coverPullback_mem_boundedCuspidalHolomorphic D T hL j hj σ hσ C hU a n hD f hf hh f₂ hf₂ hpull⟩,
+    exact ⟨f₂, ⟨⟨hf₂, _root_.GlobalTheory.CoverHol.cover_pull_holSub0 D T hL j hj σ hσ C hU a n hD f hf hh f₂ hf₂ hpull⟩,
       _root_.GlobalTheory.CoverUpInt.pull_integral D T hL j hj σ hσ C hU a n hD S S₂ hS f hf hi f₂ hf₂ hpull⟩, hP.2 f hf f₂ hf₂ hpull⟩
 
 end GlobalTheory.CoverUp

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFlagFrame
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.GrNormPosOfBasis
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TorsionCharExtendsDivisibleLevelStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TorsionCharExtendsDivisibleLevel
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsDlogUniqueModuloPStatement
 
 set_option autoImplicit false
@@ -131,7 +131,7 @@ theorem mem_latHT_iff : HTBoundSt → ∀ (E : Type) [Field E] [NumberField E] [
       have := (b i).2
       rwa [hb, pow_zero, _root_.one_mul] at this
     obtain ⟨c, hcj⟩ := hj j
-    obtain ⟨c', hc'⟩ := GlobalTheory.T.torsionChar_extends_divisible_level E H X t C x' (p ^ 1) (p ^ m) (pow_ne_zero _ hp.out.ne_zero) (pow_dvd_pow _ hm) c
+    obtain ⟨c', hc'⟩ := _root_.GlobalTheory.TorsCharExt.exists_extension E H X t C x' (p ^ 1) (p ^ m) (pow_ne_zero _ hp.out.ne_zero) (pow_dvd_pow _ hm) c
     obtain ⟨⟨D, hD⟩, -⟩ := GlobalTheory.T.exists_dlog_unique_modulo_p E H X t _ x' p m c' g e he.1
     have hδ := (GlobalTheory.T.exists_dlog_unique_modulo_p E H X t _ x' p 1 c g e he.1).2 D (h j) (dlog_down hm c' c hc' he.1 hD) hcj
     choose δ hδ using fun i => Ideal.mem_span_singleton'.1 (hδ i)

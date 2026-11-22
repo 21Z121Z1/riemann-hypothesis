@@ -7,10 +7,10 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.Uppe
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.FirstMinimumInvariantContinuousPosOnFrames
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QSPow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralPotentialWeightChartLtTop
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ScalarPoincareDetRatioPowerDifferentiableOnStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ScalarPoincareDetRatioPowerDifferentiableOn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ScalarPoincareDetRatioPowerRmulBorel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MetricScalarPoincareWeightEqTwoMulPotential
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormScalarPoincareDetRatioLactLeOneStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormScalarPoincareDetRatioLactLeOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOneOfOrthonormalConjBlockUpperTriangular
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGeTsumPowNeZeroOfSingleUnit
 open NumberField Formalism.L2.Pj ReciprocityTheory.ChartRestriction.G.FD
@@ -67,7 +67,7 @@ theorem GlobalTheory.ScalarPoin.exists_cusp_ne : ∀ (E : Type) [Field E] [Numbe
     congr 1; ring
   have hpo := fun k (hk : k0 ≤ k) => poin_holds r X x0 ho hPD (laS X k) _ bb (DivUpPf.metricW_exp X _)
     (DivUpPf.wLower_exp X _) hbb (fun _ => (1 : ℂ)) (qS X x0 k) (differentiableOn_const _) (hIn k hk)
-    ⟨GlobalTheory.T.scalarPoincareDetRatioPower_differentiableOn E r X x0 ho k, fun x _ b hb => _root_.GlobalTheory.ScalarPoin.qS_rmul E r X x0 k x b hb⟩ (fun z _ => qS_cpt X ho k z)
+    ⟨_root_.GlobalTheory.ScalarPoin.Holo.qS_holomorphicOn E r X x0 ho k, fun x _ b hb => _root_.GlobalTheory.ScalarPoin.qS_rmul E r X x0 k x b hb⟩ (fun z _ => qS_cpt X ho k z)
   set a : X.Γ → ℂ := fun γ => qS X x0 1 (lact γ.1 x0) with ha
   have ha1 : a 1 = 1 := by
     simp only [ha, OneMemClass.coe_one, KU.lact_one]
@@ -79,11 +79,11 @@ theorem GlobalTheory.ScalarPoin.exists_cusp_ne : ∀ (E : Type) [Field E] [Numbe
     have h := (hpo k0 le_rfl).1 x0 hx0
     simp_rw [hterm k0, norm_pow] at h
     exact h
-  have hle : ∀ γ : X.Γ, ‖a γ‖ ≤ 1 := fun γ => (GlobalTheory.T.norm_scalarPoincareDetRatio_lact_le_one E r X x0 ho γ.1 γ.2).1
+  have hle : ∀ γ : X.Γ, ‖a γ‖ ≤ 1 := fun γ => (_root_.GlobalTheory.ScalarPoin.norm_qS_lact_le E r X x0 ho γ.1 γ.2).1
   have hlt : ∀ γ : X.Γ, γ ≠ 1 → ‖a γ‖ < 1 := by
     intro γ hne
     refine lt_of_le_of_ne (hle γ) fun heq => hne (Subtype.ext ?_)
-    exact _root_.GlobalTheory.ScalarPoin.BlockFree.eq_one_of_gm_toBlocks₁₂ E r X x0 ho γ.1 γ.2 ((GlobalTheory.T.norm_scalarPoincareDetRatio_lact_le_one E r X x0 ho γ.1 γ.2).2 heq)
+    exact _root_.GlobalTheory.ScalarPoin.BlockFree.eq_one_of_gm_toBlocks₁₂ E r X x0 ho γ.1 γ.2 ((_root_.GlobalTheory.ScalarPoin.norm_qS_lact_le E r X x0 ho γ.1 γ.2).2 heq)
   obtain ⟨k, hk, hne⟩ := _root_.GlobalTheory.tsum_pow_eventually_ne_zero a 1 k0 ha1 hle hlt hsum (max N (k0 + 1))
   have hk0k : k0 ≤ k := le_trans (by omega) hk
   have hkpos : 0 < k := lt_of_lt_of_le (by omega) hk

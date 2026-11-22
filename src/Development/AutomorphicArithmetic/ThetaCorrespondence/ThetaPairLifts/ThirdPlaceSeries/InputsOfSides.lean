@@ -35,7 +35,7 @@ theorem exists_inputs_of_hkSup_galHodge : GlobalTheory.Published.ChebotarevDegre
       off := Y.off
       rel := _root_.GlobalTheory.DistRel.thURel_of_fullTie D Y.Z.ρ Y.Z.good Y.Z.rd Y.Z.full hL
       l3 := GlobalTheory.SeriesTie.thetaLatticeCondition_of_fullSeriesComparison D Y.Z.ρ Y.Z.good Y.Z.rd Y.Z.full hL
-      t4 := GlobalTheory.T.admT4_of_roots_in_field D Y.Z.ρ Y.Z.good Y.Z.rd Y.Z.full hRoots E
+      t4 := _root_.GlobalTheory.TwInputs.admT4_of_full_compatibility D Y.Z.ρ Y.Z.good Y.Z.rd Y.Z.full hRoots E
       type := GlobalTheory.ExportType.typeKept_of_fullTie D Y.Z.ρ Y.Z.good Y.Z.rd Y.Z.full hL.act E
       univ := univSup_of_xi D Y.Z.ρ Y.Z.good Y.Z.rd Y.Z.full hL hXi hBdd E
       supG := supG

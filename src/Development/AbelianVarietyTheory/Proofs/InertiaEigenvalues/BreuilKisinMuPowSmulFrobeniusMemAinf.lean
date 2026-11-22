@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsPotential
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.OneSubPhiOntoOfFilZero
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BhattScholzeCrystallineLattices
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.ConductorExponents
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TeichmullerSubOneAinfPropertiesCompatibleRootsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TeichmullerSubOneAinfPropertiesCompatibleRoots
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobeniusIntegralityCoeffTensorAinfVector
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobeniusIntegralityWittTiltAinf
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.WeaklyAdmissibleFiltrations TensorProduct PowerSeries GlobalTheory.Prism GlobalTheory.BK GlobalTheory.BKReal GlobalTheory.BKGal GlobalTheory.Per Matrix
@@ -14,7 +14,7 @@ namespace GlobalTheory.BKGal.LiftStep
 theorem ev_eis_mul_mu {l : ℕ} [Fact l.Prime] (a : ℕ) [NeZero a] {e : ℕ} [NeZero e] (ϖ : PiSys l e)
     {ε δ : OCb l} (hε : IsEps ε) (hδ : δ ^ l = ε) :
     ∃ u : Ainf l, IsUnit u ∧ ϖ.ev a (eis l a e) * muOf δ = u * muOf ε := by
-  obtain ⟨⟨ξ, hξ, hμ⟩, -⟩ := (GlobalTheory.T.teichmullerSubOneAinf_properties_compatibleRoots l).2 ε δ hε hδ
+  obtain ⟨⟨ξ, hξ, hμ⟩, -⟩ := (_root_.GlobalTheory.MuOfEps.main l).2 ε δ hε hδ
   have h : Associated (ϖ.ev a (eis l a e)) ξ := by
     rw [← Ideal.span_singleton_eq_span_singleton, hξ, PiSys.span_ev_eis]
   obtain ⟨v, hv⟩ := h
@@ -76,7 +76,7 @@ theorem GlobalTheory.BKGal.LiftStep.mu_pow_smul_mem : ∀ (l : ℕ) [Fact l.Prim
   intro l _ a e _ _ O K _ _ _ _ _ _ _ _ _ _ t ϖ ι _ _ P T I α β hL hM ε δ hε hδ y hy m₀ hm₀
   classical
   obtain ⟨u, hu, hEu⟩ := ev_eis_mul_mu a ϖ hε hδ
-  have hfr : WittVector.frobenius (muOf δ) = muOf ε := ((GlobalTheory.T.teichmullerSubOneAinf_properties_compatibleRoots l).2 ε δ hε hδ).2.1
+  have hfr : WittVector.frobenius (muOf δ) = muOf ε := ((_root_.GlobalTheory.MuOfEps.main l).2 ε δ hε hδ).2.1
   obtain ⟨-, hXi, hyI⟩ := integral t ϖ P α β hL hM
   choose cXi hcXi using hXi
   choose cy hcy using hyI y hy

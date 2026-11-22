@@ -1,7 +1,7 @@
 import CompanionTheory.AutomorphicTheory.TemperedLocalSpectra.ObstructionLifting.H1StructureDimLe
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.FibAc
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CechComplexTrivialLineBundleNotAcyclicStatement
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.PicardGroupOfFieldTrivialStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CechComplexTrivialLineBundleNotAcyclic
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.PicardGroupOfFieldTrivial
 import Mathlib
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.FibreAcyclicityOfSections
 import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.IsScalarTowerOfAlgebraMapEq
@@ -97,7 +97,7 @@ theorem pointSurj_pf : (∀ (k : Type) [Field k] [IsAlgClosed k] (A : Over (Sp k
     rw [cls_pull hG, eG, map_sub, ← pull_comp, ← Over.comp_left, comp_lift, lift_fst, comp_toUnit]
     have e₁ : GlobalTheory.CechPic.pull (lift (toUnit B ≫ x') (toUnit B)).left (cls M hM) = 0 := by
       have e := pull_evc hM (toUnit B) x' (𝟙 _)
-      rw [Category.comp_id, GlobalTheory.T.picard_group_of_field_trivial k (evc hM x' (𝟙 _)), map_zero] at e
+      rw [Category.comp_id, _root_.GlobalTheory.CompanionTheory.PicField.pic_eq_zero k (evc hM x' (𝟙 _)), map_zero] at e
       exact e.symm
     rw [e₁, zero_sub, evc_swap hP hsw]
     rfl
@@ -153,7 +153,7 @@ theorem pointSurj_pf : (∀ (k : Type) [Field k] [IsAlgClosed k] (A : Over (Sp k
     (hfin.image _) fibA htot' η[A].left (lift (toUnit B ≫ η[A]) (𝟙 B)).left hη
     (by rw [← Over.comp_left, lift_snd]; rfl) (by rw [← Over.comp_left, lift_fst, cst])
   have : Nonempty B.left := ⟨η[B].left (IsLocalRing.closedPoint k)⟩
-  refine GlobalTheory.T.cech_complex_trivial_line_bundle_not_acyclic B.hom _ (pull_isLB hG _) ?_ (Fin m) D hc hac
+  refine _root_.GlobalTheory.CompanionTheory.PointSurjectivity.not_acyclic_cechLB_of_triv B.hom _ (pull_isLB hG _) ?_ (Fin m) D hc hac
   refine (cls_eq_zero_iff (pull_isLB hG _)).1 ?_
   rw [sl₂, evc_swap hP hsw, ← Hom.one_def, IsAdditive.evc_one hP hadd, neg_zero]
 

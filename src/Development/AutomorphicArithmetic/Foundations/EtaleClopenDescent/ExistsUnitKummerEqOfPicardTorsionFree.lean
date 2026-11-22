@@ -1,6 +1,6 @@
 import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
 import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChosenInjectiveResolutionEtaleSheafPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChosenInjectiveResolutionEtaleSheafProperties
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleLocalPropertyCalculusRulesStatement
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleSheafSectionsExtAndGlue
@@ -121,7 +121,7 @@ private theorem rho_ex (q : ℕ) [NeZero q] (κ : RT q ⟶ Gm) :
   · intro U a
     change Sec.map ((resMap ℤ κ).f 0) _ = _
     rw [GlobalTheory.T.restrictScalarsResolutionMap_augmentation_spec]
-    obtain ⟨-, -, -, -, -, -, -, h⟩ := GlobalTheory.T.chosenInjectiveResolution_etaleSheaf_properties ℤ (RT q)
+    obtain ⟨-, -, -, -, -, -, -, h⟩ := _root_.GlobalTheory.EtC.ResBasic.res_basic ℤ (RT q)
     exact congrArg (fun f => Sec.map f (show Sec (RT q) U from a)) (h Gm κ).2
 
 private theorem tors_zero (q : ℕ) (A : Type) [CommRing A] (hpic : ∀ c : CommRing.Pic A, c ^ q = 1 → c = 1)

@@ -19,7 +19,8 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersecti
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.HeckeSectionsIsotropicCommutatorPairingPower
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterNamed
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.KleimanNefness.KleimanSt
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CmHostRankBoundsStatement
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CmHostRankBounds
+import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
 
 noncomputable section
 
@@ -62,7 +63,7 @@ theorem degPush_of (hEq : NumEq) (hPF : GeoPF) (hFib : FibNum) (hTr : TrdegU) (h
     · exact h
   intro _ hProp _ hG hInt E _ _ _ _ H D Xo l c Y _ T o II hY hX hII hp hq hqp a K _ J _ Ω _ _ W _ _ Dc Hd Or eb es _ _ eS eg
   have hIn : PB.Inputs := hG.2.2.2.2.2.2.2.2.2.1
-  have : Nonempty (CMType H) := (GlobalTheory.T.cm_host_rank_bounds E H).2.1
+  have : Nonempty (CMType H) := (_root_.GlobalTheory.CompanionTheory.Ar.Top.HostNumbers.host_numbers E H).2.1
   have hT : T.Proportional := _root_.GlobalTheory.CompanionTheory.Ar.Top.rootTower_proportional_of_unif hProp hIn II hII _ _ T _ (_root_.RootFieldNumerics.global_model_real_tower hG E H D Xo l c Y T o II hY hX hII hp hq)
   have htd : 0 < Top.testDeg (CMType H) (D.p + D.q) D.p := (_root_.GlobalTheory.CompanionTheory.Ar.Top.testPoly_facts (CMType H) (D.p + D.q) D.p hp (by omega)).2.1
   have eg' : genPt Or.𝔐.ξ₀ = genPt (o.Or 2 a).𝔐.ξ₀ := by

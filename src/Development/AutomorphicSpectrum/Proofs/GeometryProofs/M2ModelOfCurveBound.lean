@@ -3,10 +3,10 @@ import Development.AutomorphicSpectrum.Statements.GeometryStatements.CurveSemiAb
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.SeparableFormGroupElementFixesUniquePositiveLine
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Proportional
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FunctionFieldModelExists
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CurveThroughCoordinates
+import Development.WeilBound.CoreStatements.HodgeTatePoints.CiCurveIn
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CurveLieEigenDecomposition
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.NefThresholdGapCondition
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FunctionFieldDegreeEqStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FunctionFieldDegreeEq
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CurveLieLatticeDegree
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FunctionFieldCurveExists
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CurveLatticeDegreeFormula
@@ -179,7 +179,7 @@ theorem m2Model_of_m2Curve : CurveSemiAbelianConjecture → RootLineDeRhamModel 
   obtain ⟨K, _, _, _, w, hwW, hbir, hwk⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Crv.Field.curve_field M.K M.ι Wi p hprime hchar hdim
   obtain ⟨C, hFF, hne, hv⟩ := _root_.GlobalTheory.CompanionTheory.Ar.FF.places_form_curve (ZMod p) K
   haveI : CharP K p := charP_of_injective_algebraMap (algebraMap (ZMod p) K).injective p
-  obtain ⟨z, Y, h₀, h, hco, hfib⟩ := _root_.GlobalTheory.CompanionTheory.Relay.curve_through_coordinates D.X M.Ω D.ξ M.K M.ι M.y D.tie K C w
+  obtain ⟨z, Y, h₀, h, hco, hfib⟩ := _root_.PositivityTheory.HtPt.Ci.curve_in_cpt D.X M.Ω D.ξ M.K M.ι M.y D.tie K C w
     (by rw [hwW]; exact hPW) hwk
   obtain ⟨hz, hi⟩ := hfib p (CharP.cast_eq_zero K p)
   have hg : IsCptGen D.ξ := D.tie.gen
@@ -213,7 +213,7 @@ theorem m2Model_of_m2Curve : CurveSemiAbelianConjecture → RootLineDeRhamModel 
     (D.b₂ τ) (D.ind₂ τ).1 (D.ind₂ τ).2 (D.flag₂ τ)
   have hxdeg : ∀ r, geoNum 1 Wi (fun _ => M.xdeg r) = coordDeg C w (M.xdeg r) := fun r => by
     rw [← hwW]
-    exact GlobalTheory.T.function_field_degree_eq M.K M.ι p K C w (M.xdeg r) hFF hbir hwk
+    exact _root_.GlobalTheory.CompanionTheory.Ar.GeoDeg.geoNum_one_eq_coordDeg M.K M.ι p K C w (M.xdeg r) hFF hbir hwk
   let x : Ψ × Fin N → ℝ := fun r => (geoNum 1 Wi (fun _ => M.xdeg r) : ℝ)
   let wd : Ψ → ℕ → ℝ := fun τ i => (subDeg C (Y.lieLat Mz) (Wf τ i) : ℝ)
   let ld : Ψ → ℕ → ℝ := fun τ i => (subDeg C (Y.lieLat Mz) (Lf τ i) : ℝ)

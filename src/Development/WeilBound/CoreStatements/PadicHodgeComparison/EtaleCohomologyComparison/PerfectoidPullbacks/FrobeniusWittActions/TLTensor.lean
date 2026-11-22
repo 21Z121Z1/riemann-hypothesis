@@ -4,7 +4,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TracePairingSmu
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TracePairingSmulDual
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TracePairingGaloisEquivariantStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TracePairingFrobeniusCompatStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TracePairingLTensorNaturalityStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TracePairingLTensorNaturality
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TracePairingBasisEval
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TensorEvalFixedOfFixed
 
@@ -38,7 +38,7 @@ theorem T_phi {F : W →+* W} (φA : A →+* A) (φC : C₀ →+* C₀) (φL : L
 
 theorem T_lTensor {L' : Type 1} [AddCommGroup L'] [Module W L'] (g : L' →ₗ[W] L) (f : Module.Dual K₀ (K₀ ⊗[W] L))
     (z : A ⊗[W] L') : T c k hk f (LinearMap.lTensor A g z) = T c k hk (f ∘ₗ g.baseChange K₀) z :=
-  GlobalTheory.T.trace_pairing_lTensor_naturality c k hk g f z
+  _root_.GlobalTheory.CompanionTheory.FrobPsi.T_lTensor c k hk g f z
 
 theorem T_fac {B : Type} [Field B] (ι : C₀ →+* B) (i : A →+* B) (hι : ∀ a, ι (c a) = i a) (h : L →+ B)
     (hh : ∀ (w : W) y, h (w • y) = i (algebraMap W A w) * h y) {m : ℕ} (b : Module.Basis (Fin m) K₀ (K₀ ⊗[W] L)) :

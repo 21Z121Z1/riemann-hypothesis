@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCrysInvAndHo
 import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
 import Formalism.SharpRestriction.LevelLetterCocycles.LocCoh
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCrystallineCharJumpOne
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedCharIsCrystallineHodgeTateZeroStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedCharIsCrystallineHodgeTateZero
 
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.WeaklyAdmissibleFiltrations Formalism.MainNotions Formalism.MainNotions.N
 
@@ -42,7 +42,7 @@ theorem hasJumps_one (hT : LocTied l P AI) : HasJumps P K LL 1 0 := by
   have hc : Continuous (fun g => ((Formalism.MainNotions.tableLineDegreeTwo.charL (LL := ↥LL.1) (1 : ↥(GK K) →* (↥(OL LL))ˣ) g : (↥LL.1)ˣ) : ↥LL.1)) := by
     simp only [charL_val, MonoidHom.one_apply, Units.val_one, map_one]
     exact continuous_const
-  obtain ⟨h1, h2⟩ := GlobalTheory.T.unramifiedChar_isCrystalline_hodgeTate_zero l P AI hT K LL (Formalism.MainNotions.tableLineDegreeTwo.charL (LL := ↥LL.1) 1) hc
+  obtain ⟨h1, h2⟩ := _root_.GlobalTheory.UnramifiedChar.isCrys_and_multV_eq l P AI hT K LL (Formalism.MainNotions.tableLineDegreeTwo.charL (LL := ↥LL.1) 1) hc
     (fun g _ => by ext; simp [charL_val])
   exact ⟨hc, h1, fun τ b => by rw [h2]; rfl⟩
 
@@ -149,7 +149,7 @@ theorem GlobalTheory.CrysCharJumps.adm20_of_fonOf :
       exact h1.symm.trans hi
     simp [hc]
   · intro V _ _ _ _ _ _ _ ρ ρ' μ hρc hρ hμc hμI hρ'
-    obtain ⟨hμcr, hμm⟩ := GlobalTheory.T.unramifiedChar_isCrystalline_hodgeTate_zero l (D.loc l) (D.locA l) (D.locT l) K LL μ hμc hμI
+    obtain ⟨hμcr, hμm⟩ := _root_.GlobalTheory.UnramifiedChar.isCrys_and_multV_eq l (D.loc l) (D.locA l) (D.locT l) K LL μ hμc hμI
     have htw : IsTwistRep μ ρ ρ' := ⟨LinearEquiv.refl _ _, fun g x => by simp [hρ' g]⟩
     obtain ⟨h1, h2⟩ := GlobalTheory.TwistRepCrys.isCrys_and_multV_twist l (D.loc l) (D.locA l) (D.locT l) K LL
       V ρ V ρ' μ htw hμcr hρ

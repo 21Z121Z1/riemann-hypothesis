@@ -8,7 +8,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRin
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SemiabelianSchemes.PrecompleteBases.PsbLb
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.EntireAntilinearLatticePeriodsConst
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HolomorphicPeriodicCocycleCoboundary
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ConstThickeningComplexFunctionsStructureStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ConstThickeningComplexFunctionsStructure
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.AlgebraicCoboundaryOfHolomorphicCoboundary
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUniqueSectionOfLocallyRegular
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TrivialIffCoboundary
@@ -100,7 +100,7 @@ theorem cocycle_val (hp : IsPullback ρ π q (spMap (algebraMap ℂ (DualNumber 
       (Q.g i i').val = 1 + constFn π _ DualNumber.eps * (ρ.appLE _ _ h).hom (k i i'))
     (i i' i'' : Q.ι) (x : Sp ℂ ⟶ Y) (hx : ⊤ ≤ x ⁻¹ᵁ (j ⁻¹ᵁ (Q.U i ⊓ Q.U i' ⊓ Q.U i''))) :
     valAt' x _ (k i i') + valAt' x _ (k i' i'') = valAt' x _ (k i i'') := by
-  obtain ⟨hO, -, hD⟩ := GlobalTheory.T.const_thickening_complex_functions_structure Y Y' q π ρ j hp hj hq
+  obtain ⟨hO, -, hD⟩ := _root_.GlobalTheory.EpsThick.thickening_functions Y Y' q π ρ j hp hj hq
   have le : ∀ W : Y'.Opens, W ≤ ρ ⁻¹ᵁ (j ⁻¹ᵁ W) := fun W => (hO W).ge
   have l₁ : j ⁻¹ᵁ (Q.U i ⊓ Q.U i' ⊓ Q.U i'') ≤ j ⁻¹ᵁ (Q.U i ⊓ Q.U i') := fun _ hy => hy.1
   have l₂ : j ⁻¹ᵁ (Q.U i ⊓ Q.U i' ⊓ Q.U i'') ≤ j ⁻¹ᵁ (Q.U i' ⊓ Q.U i'') := fun _ hy => ⟨hy.1.2, hy.2⟩
@@ -131,7 +131,7 @@ theorem odd_part_coboundary (hp : IsPullback ρ π q (spMap (algebraMap ℂ (Dua
       (∀ i i', W i i' = ν ⁻¹ᵁ (j ⁻¹ᵁ Q.U i) ⊓ j ⁻¹ᵁ Q.U i') ∧
       ∀ i i' m m' (x : Sp ℂ ⟶ Y), ⊤ ≤ x ⁻¹ᵁ W i i' → ⊤ ≤ x ⁻¹ᵁ W m m' →
         valAt' (x ≫ ν) _ (k i m) - valAt' x _ (k i' m') = valAt' x _ (a i i') - valAt' x _ (a m m') := by
-  obtain ⟨hO, -, -⟩ := GlobalTheory.T.const_thickening_complex_functions_structure Y Y' q π ρ j hp hj hq
+  obtain ⟨hO, -, -⟩ := _root_.GlobalTheory.EpsThick.thickening_functions Y Y' q π ρ j hp hj hq
   have le : ∀ W : Y'.Opens, W ≤ ρ ⁻¹ᵁ (j ⁻¹ᵁ W) := fun W => (hO W).ge
   let Q' := LB.LinComb Q (K := Fin 2) ![ν', 𝟙 Y'] ![1, -1]
   have hW : ∀ J : Fin 2 → Q.ι, j ⁻¹ᵁ Q'.U J = ν ⁻¹ᵁ (j ⁻¹ᵁ Q.U (J 0)) ⊓ j ⁻¹ᵁ Q.U (J 1) := fun J => by

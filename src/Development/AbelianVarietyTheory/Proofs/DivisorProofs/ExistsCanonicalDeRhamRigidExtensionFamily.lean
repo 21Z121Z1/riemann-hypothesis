@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CrysToDRBi
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianHodgeDeRham
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DeRhamVectorExtension
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLinearCanonicalMapPrimitiveDeRhamRigExt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CanonicalRigidifiedExtensionPullbackNaturalityStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CanonicalRigidifiedExtensionPullbackNaturality
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeRhamToRigidifiedExtensionBijectivePNilpotent
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRelativeDimensionAbelianTorsionTower
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CanonicalIsoHodgeFiltrationEqRangeInvariantFormsStatement
@@ -54,7 +54,7 @@ theorem exists_canonical_family : GlobalTheory.Published.AbelianHodgeDeRham → 
   refine ⟨canFamily hP p, ?_, ?_, ?_, ?_⟩
   · intro R R' _ _ hR hR' A _ A' _ hA hA' G G' t t' σ φ m c
     exact ((isCan_iff_canMap p hA' t' _ _).1
-      (GlobalTheory.T.canonicalRigidifiedExtension_pullback_naturality p R R' A A' G G' t t' σ φ m c _ (isCan_canMap p hA t c)))
+      (_root_.GlobalTheory.PtExtNat.isCan_pull p R R' A A' G G' t t' σ φ m c _ (isCan_canMap p hA t c)))
   · intro R _ hR A _ hA G t
     obtain ⟨N, hN⟩ := hR
     exact GlobalTheory.T.canonical_iso_hodge_filtration_eq_range_invariant_forms p R N hN A hA G t (canMap p hA t)

@@ -12,14 +12,14 @@ import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.Archim
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.MatchBadIOf2
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.LeviMatchingWords.LeviMatchingBlocks.StabilizerDilationWeightsDualIsotropicVector
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatchingTransferOf
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermMultiplicativeStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatchingSplitOfStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermMultiplicative
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatchingSplitOf
 
 namespace PositivityTheory.Rg.BcB.F.MatchAll
 
 open PositivityTheory.Rg.Bc.ArchbcB.B PositivityTheory.Rg.BcN.F2.LocOpPf
 
-theorem ctMul : MT.CtMul := GlobalTheory.T.constant_term_multiplicative
+theorem ctMul : MT.CtMul := _root_.GlobalTheory.CompanionTheory.CtMulSplit.ctMul
 
 theorem hM4 : M4 := archimedean_base_change_fourth
 
@@ -29,7 +29,7 @@ theorem matchT_of (h4 : M4) : MT.MatchT := TorusMatching.match_torus_of_twisted_
 
 theorem matchUnitI_of (h1 : M1) : MB.MatchUnitI := MB.matchUnitIOf h1
 
-theorem matchSplit (h3 : M3) : MT.MatchSplit := GlobalTheory.T.matching_split_of h3 ctMul
+theorem matchSplit (h3 : M3) : MT.MatchSplit := _root_.GlobalTheory.CompanionTheory.MatchPowers.matchSplitOf h3 ctMul
 
 theorem matchLMId : MLM.MatchLMId := MLM.matchLMIdOf idemAlg BlockFiniteConvolution.locOk₀
 

@@ -20,7 +20,7 @@ theorem eta_fin_k {σ : E →ₐ[F] E} {B : Base F E} (hB : _root_.UpperTheory.T
   have hint : ∀ t : AF F, algebraMap (AF F) (AF F ⊗[F] E) t ∈ SE F E → ∀ v : HeightOneSpectrum (𝓞 F),
       2 * t.2 v ∈ v.adicCompletionIntegers F := by
     intro t ht v
-    have := GlobalTheory.T.finrank_smul_mem_adelesFiniteMultiple_of_tensorCongruence F E 1 t (CE_one ht)
+    have := _root_.GlobalTheory.HeckeExtend.TraceCE.finrank_smul_mem_intF F E 1 t (CE_one ht)
     rw [hB.cm.2.2.1] at this
     obtain ⟨c, hc, e⟩ := this
     have e2 : evalV F v (2 • t.2) = evalV F v (1 • c) := congrArg (evalV F v) e

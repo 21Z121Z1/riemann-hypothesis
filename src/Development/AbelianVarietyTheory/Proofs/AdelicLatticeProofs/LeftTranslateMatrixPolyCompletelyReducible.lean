@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsSemisimpleR
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsGroupHomRangeEqOfAutStable
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MatrixKroneckerPowerTensorActionAlgebra
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.CompletelyReducibleKroneckerPowerTranspose
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.LeftTranslateMatrixPolyTensorFormPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.LeftTranslateMatrixPolyTensorFormProperties
 open Matrix GlobalTheory.ClassFin
 open scoped Kronecker ComplexOrder TensorProduct
 
@@ -70,7 +70,7 @@ theorem ltr_completely_reducible : ∀ (ι : Type) [Fintype ι] [DecidableEq ι]
       refine ⟨g⁻¹, ?_⟩
       change LinearMap.toMatrix' (Matrix.toLin' (tpow n (ρ g⁻¹⁻¹))ᵀ) = _
       rw [inv_inv, LinearMap.toMatrix'_toLin']
-  choose p _ hp2 hp3 using (GlobalTheory.T.leftTranslateMatrixPoly_tensorForm_properties ι).2.2.2
+  choose p _ hp2 hp3 using (_root_.GlobalTheory.ClassFin.ltr_tensorForms ι).2.2.2
   have hsemi : (ltrRep ρ).IsSemisimpleRepresentation := by
     refine _root_.GlobalTheory.ClassFin.isSemisimpleRepresentation_of_iSup_range G _ (ltrRep ρ) (Σ n : ℕ, (Fin n → ι)) (fun j => (Fin j.1 → ι) → ℂ)
       (fun j => dualPowRep ρ j.1) (fun j => p j.1 j.2) (fun j => hs j.1) ?_ ?_

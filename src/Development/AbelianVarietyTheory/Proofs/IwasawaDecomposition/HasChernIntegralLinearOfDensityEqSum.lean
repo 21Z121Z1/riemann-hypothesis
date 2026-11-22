@@ -8,7 +8,8 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChernDensity
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.AntisymmFibrePointTwo
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TopChernDensityInvariantHolomorphicFrameChange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernTopChartIndependent
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MeasurableChernPolyTopDensityStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MeasurableChernPolyTopDensity
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.InterPolyProdSum
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GluedChartDensityMeasureAddOfCompatibleOn
 import Development.AbelianVarietyTheory.Definitions.Divisors.ChartMeasApplyOfSubset
 
@@ -145,7 +146,7 @@ theorem aemeasurable_dens (E : Fr (ratOf X) m 0) (O : X.X.Opens) (H : Mat m X.Fn
   haveI := hTc.to_subtype
   rw [hUT, aemeasurable_iUnion_iff]
   rintro ⟨A, -⟩
-  refine ((GlobalTheory.T.measurable_chernPolyTopDensity R fun w => H A (c.e.symm w)).aemeasurable).congr ?_
+  refine ((_root_.GlobalTheory.ChernMeas.measurable_chernTop R fun w => H A (c.e.symm w)).aemeasurable).congr ?_
   refine (ae_restrict_mem (hWo A).measurableSet).mono fun v hv => ?_
   obtain ⟨⟨hvt, hvS⟩, hvA⟩ := hv
   have hy : c.e.symm v ∈ c.e.source := c.e.map_target hvt

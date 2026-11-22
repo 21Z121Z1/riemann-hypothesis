@@ -40,7 +40,7 @@ theorem kapOrb_unit_pos (hU : Unr E) (n : ℕ) (hn : 1 ≤ n) (p₁ p₂ : E[X])
   have hP := ell_mul p₁ p₂ h1 h2 hc hd
   obtain ⟨S, hS⟩ := exists_section (E := E)
   filter_upwards [GlobalTheory.BCT.OrbUnit.orbUnit_ae E hU n hn S hS _ hP, _root_.GlobalTheory.BCT.exists_int_charpoly_atPl_split E hU n hn _ hP,
-    exists_integral_unitary hU n _ hP, GlobalTheory.T.eventually_unitary_conj_of_same_elliptic_charpoly_inert E hU n hn _ hP] with w hA hE1 hE2 hU2
+    exists_integral_unitary hU n _ hP, _root_.GlobalTheory.BCT.UnitInert.conj_of_charpoly_inert E hU n hn _ hP] with w hA hE1 hE2 hU2
   have hmap : atPl w (p₁ * p₂) = atPl w p₁ * atPl w p₂ := Polynomial.map_mul _
   rw [hmap] at hA hE1 hE2 hU2
   obtain ⟨γ₀, hγ₀K, hγ₀P⟩ : ∃ γ : UL n w, γ ∈ KL n w ∧ γ.1.val.charpoly = atPl w p₁ * atPl w p₂ := by

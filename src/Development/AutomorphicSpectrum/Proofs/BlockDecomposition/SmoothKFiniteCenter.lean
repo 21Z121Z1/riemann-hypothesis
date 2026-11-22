@@ -8,13 +8,13 @@ import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStable
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmMemArchSmooth
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsOpenLevel
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsGrowthUniform
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteZSpanIntegralRepresentationStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteZSpanIntegralRepresentation
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteAdelicRestrictionMeasureStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FundamentalDomainIntegralCountBoundStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactAdelicIntegralDenominator
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegersBoundedArchimedeanCount
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactConjugateCentrePowerBounded
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactConjugateRationalEntriesBoundedStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactConjugateRationalEntriesBounded
 
 open NumberField MeasureTheory Topology Matrix GlobalTheory.AutomorphicL2Unitary GlobalTheory.DiscreteSum GlobalTheory.OpTrace GlobalTheory.UnitaryBC GlobalTheory.DiscSpec GlobalTheory.CuspRep GlobalTheory.CuspRep.CuspidalL2GL
 open GroundTheory.Automorphic
@@ -69,7 +69,7 @@ theorem count_lattice (E : Type) [Field E] [NumberField E] [IsTotallyComplex E] 
     rw [pow_zero, mul_one]
     exact_mod_cast this
   obtain ⟨n₀, hn₀⟩ := _root_.GlobalTheory.CompanionTheory.CuspGrowth.abs_le_of_conj_mem_compact E a ha Q hQ
-  obtain ⟨Qf, C₁, hQf, hC₁, hent⟩ := GlobalTheory.T.compact_conjugate_rational_entries_bounded E a g₀ Q hQ n₀
+  obtain ⟨Qf, C₁, hQf, hC₁, hent⟩ := _root_.GlobalTheory.CompanionTheory.GrowthEntries.entries_bound E a g₀ Q hQ n₀
   obtain ⟨C₂, N₂, hC₂, hcount⟩ := count_rational E Qf hQf
   obtain ⟨c₃, hc₃⟩ : ∃ c₃ : ℝ, c₃ = C₂ * (C₁ + 1) ^ N₂ := ⟨_, rfl⟩
   have hc₃0 : 0 ≤ c₃ := by rw [hc₃]; positivity
@@ -175,7 +175,7 @@ theorem moderate_growth : ∀ (E : Type) [Field E] [NumberField E] [IsTotallyCom
   haveI : ν.IsHaarMeasure := by
     rw [hν, hpdef, hqdef]
     exact GlobalTheory.T.finite_adelic_restriction_measure E a μ U hUc hU1
-  obtain ⟨κ, hκc, hκs, hκ⟩ := GlobalTheory.T.finite_z_span_integral_representation E a φ hK hZ ν
+  obtain ⟨κ, hκc, hκs, hκ⟩ := _root_.GlobalTheory.CompanionTheory.HCRep.GrowthKernel.exists_kernel_of_finite E a φ hK hZ ν
   obtain ⟨S, hS⟩ : ∃ S, S = tsupport κ := ⟨_, rfl⟩
   have hSc : IsCompact S := hS ▸ hκs
   have hSm : MeasurableSet S := hSc.isClosed.measurableSet

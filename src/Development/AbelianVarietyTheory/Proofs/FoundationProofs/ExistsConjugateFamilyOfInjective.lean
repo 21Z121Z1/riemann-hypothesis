@@ -3,12 +3,12 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.ZetaActRefl
 import Development.AbelianVarietyTheory.Definitions.Foundations.MemRingOfInR
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModQPrin
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModJTau
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSLTwoPermutedModularFamilyAlgebraClosureStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSLTwoPermutedModularFamilyIffValuesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSLTwoPermutedModularFamilyAlgebraClosure
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSLTwoPermutedModularFamilyIffValues
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasQMdifferentiableAndIsBoundedAtImInfty
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasQIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasQExpansionOfLevelCoeffAndFunctionUnique
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QExpansionsCoeffwiseConjugateRingClosureStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QExpansionsCoeffwiseConjugateRingClosure
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCoeffwiseConjugateOfIntegralQuotient
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UpperHalfPlaneHolomorphicMulEqZeroIff
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularFormSymmetricFunctionDecomp
@@ -65,7 +65,7 @@ theorem prod_ne_zero {N : ℕ} (hN : 0 < N) {κ : Type} (s : Finset κ) (u : κ 
   | insert x s hx ih =>
     have hs : ∀ l ∈ s, u l ≠ 0 ∧ ∃ a, HasQ N (u l) a := fun l hl => hu l (Finset.mem_insert_of_mem hl)
     have hQ : ∃ b, HasQ N (fun τ => ∏ l ∈ s, u l τ) b :=
-      (hasQ_of_qConj ((GlobalTheory.T.qExpansionsCoeffwiseConjugate_ring_closure (RingEquiv.refl ℂ) N hN).2.2.2.2.2 κ s u u
+      (hasQ_of_qConj ((_root_.GlobalTheory.QFam.qConj_ring (RingEquiv.refl ℂ) N hN).2.2.2.2.2 κ s u u
         fun l hl => qConj_refl (hs l hl).2).2).1
     intro h
     have hprod : ∀ τ, u x τ * (∏ l ∈ s, u l τ) = 0 := fun τ => by
@@ -85,9 +85,9 @@ open Finset in
 theorem conj_family_of_injective : ∀ (g : ℂ ≃+* ℂ) (ι : Type) [Fintype ι] (act act' : ι → SL(2, ℤ) → ι) (m k N : ℕ) (t t' F : ι → ℍ → ℂ), 0 < N → ActBij act → ActBij act' → IsFam act m t → IsFam act' m t' → IsFam act k F → Function.Injective t → (∀ i, QConj g N (t i) (t' i)) → (∀ i, ∃ a, HasQ N (F i) a) → ∃ F' : ι → ℍ → ℂ, IsFam act' k F' ∧ ∀ i, QConj g N (F i) (F' i) := by
   intro g ι _ act act' m k N t t' F hN hb hb' ht ht' hF hinj htt' hFq
   classical
-  have hR := GlobalTheory.T.qExpansionsCoeffwiseConjugate_ring_closure g N hN
-  have hRr := GlobalTheory.T.qExpansionsCoeffwiseConjugate_ring_closure (RingEquiv.refl ℂ) N hN
-  have hA := GlobalTheory.T.isSLTwoPermutedModularFamily_algebra_closure ι act'
+  have hR := _root_.GlobalTheory.QFam.qConj_ring g N hN
+  have hRr := _root_.GlobalTheory.QFam.qConj_ring (RingEquiv.refl ℂ) N hN
+  have hA := _root_.GlobalTheory.QFam.isFam_algebra ι act'
 
   obtain ⟨c, hc, hlag⟩ := _root_.GlobalTheory.QFam.LagrangeFam.lagrange_fam ι act m k N t F hN hb ht hF (fun i => (hasQ_of_qConj (htt' i)).1) hFq
   choose c' hc' using fun j => _root_.GlobalTheory.FN.exists_conj_level_one g (k + m * j) N (c j) hN (hc j).1 (hc j).2
@@ -132,9 +132,9 @@ theorem conj_family_of_injective : ∀ (g : ℂ ≃+* ℂ) (ι : Type) [Fintype 
     (fun τ => by simp only [hD, hAd]; exact hlag i τ) (fun τ => hmin i τ)
   refine ⟨F', ?_, hF'1⟩
 
-  have hv := (GlobalTheory.T.isSLTwoPermutedModularFamily_iff_values ι act' m t').1 ht'
+  have hv := (_root_.GlobalTheory.QFam.isFam_iff_values ι act' m t').1 ht'
   have hD'fam : IsFam act' ((m * (Fintype.card ι - 1) : ℕ) : ℤ) D' := by
-    rw [GlobalTheory.T.isSLTwoPermutedModularFamily_iff_values]
+    rw [_root_.GlobalTheory.QFam.isFam_iff_values]
     intro i γ τ
     simp only [hD', hv]
     set X : ℂ := ((γ 1 0 : ℤ) : ℂ) * τ + ((γ 1 1 : ℤ) : ℂ)

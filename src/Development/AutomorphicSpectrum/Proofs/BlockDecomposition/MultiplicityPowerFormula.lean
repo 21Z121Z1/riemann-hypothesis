@@ -2,7 +2,7 @@ import Mathlib
 import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.UnramifiedWhittaker.CProps
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedQuotientCard
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResAlgSplitTwo
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianMatrixDiagonalizableStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianMatrixDiagonalizable
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CardRangeMulQuotientBoundedLevel
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MultiplicityReductionDiagonalProd
 import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.LocalDefs
@@ -36,7 +36,7 @@ theorem nuPow : PositivityTheory.SiegelWeilFormula.Gunr.NuPow := by
     rw [_root_.GlobalTheory.CompanionTheory.UnrDens.card_quot_lev R σ ϖ q ε hR k]
     exact pow_ne_zero _ (by omega))
   let _ : Fintype (R ⧸ lev ϖ k) := Fintype.ofFinite _
-  obtain ⟨g, g', d, hgg, hgg', hd, hgd⟩ := GlobalTheory.T.hermitian_matrix_diagonalizable R σ ϖ q ε hR n h hh
+  obtain ⟨g, g', d, hgg, hgg', hd, hgd⟩ := _root_.GlobalTheory.CompanionTheory.HermDiag.herm_diag R σ ϖ q ε hR n h hh
   choose eI hcard using fun i => card_range_pow hR k (d i) (hd i)
   have hnu : nuAt ϖ (red ϖ k h) = (q ^ 2) ^ (∑ i, eI i) := by
     rw [_root_.GlobalTheory.CompanionTheory.SiegLoc.NuDiag.nuAt_eq_prod R σ ϖ hR.fix_ϖ hR.inv k n h g g' d hgg hgg' hgd,

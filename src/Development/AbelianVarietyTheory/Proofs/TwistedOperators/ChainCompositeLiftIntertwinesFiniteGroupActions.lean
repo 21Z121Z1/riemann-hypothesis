@@ -11,8 +11,9 @@ import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
 import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
 import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
 import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StepVectorLiftPairFlagLevelRealizedChainStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LastStepVectorLiftPairFlagLevelCharactersStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StepVectorLiftPairFlagLevelRealizedChain
+import Formalism.LocalToGlobal.IndefiniteReal.FWExist
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LastStepVectorLiftPairFlagLevelCharacters
 
 noncomputable section
 
@@ -142,7 +143,7 @@ theorem stepY (h : R.toLevCh.Is A.μ0) (hM : R.IsModels) (hC : R.IsChain) (t : T
   have hm := meas_chain R hM.νY hM.νY' t k (Nat.lt_of_succ_lt hk)
   have hm' := meas_chain R hM.νY hM.νY' t (k + 1) hk
   have ha := inv_ne_zero (levChi_ne_zero (V := Yc D k) (β := R.βY k) (flagL (R.datYt t k R.triv)) κ)
-  have hv := smul_eq_of ha (GlobalTheory.T.stepVector_lift_pair_flagLevel_realized_chain R h hM.inf hC.ωY hC.vY t k hk g0 κ κ' hκ hκ')
+  have hv := smul_eq_of ha (_root_.GlobalTheory.StepVecLaw.stepVec_lifts R h hM.inf hC.ωY hC.vY t k hk g0 κ κ' hκ hκ')
   have hpt := GlobalTheory.FiniteFock.om_pureTensorO_of_finite R.ψ R.θ (Yc D k) (Yc D (k + 1)) _ _ (R.ωY t k) hM.inf (hC.ωY t k hk)
     _ _ _ _ _ (hC.ptY t k hk) κ hκ.1 κ' hκ'.1 _ hv
   exact step R.ψ R.θ hM.inf _ _ (R.ωY t k) (hC.ωY t k hk) (R.MY k) _ _ (R.ptY t k) (hC.ptY t k hk) (R.ItY k) (hC.ItY t k hk).ne
@@ -178,7 +179,7 @@ theorem stepX (h : R.toLevCh.Is A.μ0) (hM : R.IsModels) (hC : R.IsChain) (t : T
       (R.ioX t ((R.cX.toMap R.prX ∘ₗ (R.HX t).e).rangeRestrict y')) := by
   have ha := inv_ne_zero (levChi_ne_zero (V := Yc D (D.R.m - 1)) (β := R.βY (D.R.m - 1))
     (flagL (R.datYt t (D.R.m - 1) R.triv)) κ)
-  have hv := smul_eq_of ha (GlobalTheory.T.lastVector_lift_pair_flagLevel_characters R h hM.inf hC.ωX hC.vX t g0 κ κ' hκ hκ')
+  have hv := smul_eq_of ha (_root_.GlobalTheory.StepLaw.last_step_law R h hM.inf hC.ωX hC.vX t g0 κ κ' hκ hκ')
   have hpt := GlobalTheory.FiniteFock.om_pureTensorO_of_finite R.ψ R.θ (Yc D (D.R.m - 1)) D.sp.X' _ _ (R.ωX t) hM.inf (hC.ωX t)
     _ _ _ _ _ (hC.ptX t) κ hκ.1 κ' hκ'.1 _ hv
   exact step R.ψ R.θ hM.inf _ _ (R.ωX t) (hC.ωX t) (R.MY (D.R.m - 1)) _ _ (R.ptX t) (hC.ptX t) R.ItX (hC.ItX t).ne

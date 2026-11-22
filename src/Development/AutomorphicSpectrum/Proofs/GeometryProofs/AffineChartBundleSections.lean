@@ -9,13 +9,13 @@ import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.GagaSection
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolomorphicAffinePolydiscChart
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BoundaryChartFrameGrowth
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.VectorsAtComplexPointStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.VectorsAtComplexPoint
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsBdryChartOfHol
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackCorrespondence
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeDominantCompat
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelEigenvectorsAction
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsTransition
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModelStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelBaseChangeMap
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LieModel
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.UnLocal
@@ -193,7 +193,7 @@ theorem indep_of_frame {S : Scheme.{0}} {G : Over S} [GrpObj G] [IsCommMonObj G]
   classical
   subst hy
   letI := ψ.toAlgebra
-  obtain ⟨E', i1, i2, ⟨M'⟩⟩ := GlobalTheory.T.exists_lie_model S G ℂ (spMap ψ ≫ xR)
+  obtain ⟨E', i1, i2, ⟨M'⟩⟩ := _root_.GlobalTheory.CompanionTheory.Ar.lieModel_exists S G ℂ (spMap ψ ≫ xR)
   obtain ⟨j, hj, hlin, hb⟩ := _root_.GlobalTheory.CompanionTheory.Ar.lieModel_baseChange S G R ℂ xR (Fin g → R) E' M M'
   have hv' : v = fun i => M'.pt (j (u i)) :=
     funext fun i => Over.OverMorphism.ext ((hu i).trans (hj _).symm)
@@ -345,7 +345,7 @@ theorem chart_unit (Y : Model Xo c β) (τ : E →+* ℂ) (σ : c.F →+* ℂ) (
     have hy : (C.pt z ≫ k') ≫ Y.j = spMap ((C.ψ z).comp fR) ≫ hA.fromSpec := by
       rw [Category.assoc, hkj, ← Category.assoc, hp, spMap_comp', Category.assoc, hf]
     have hf2 := hframe ((C.ψ z).comp fR) ((C.pt z ≫ k') ≫ Y.j) v₀ w₀ hy (by rw [hy]; exact hover z hz.1) c1 c2
-    exact ⟨v, w, v₀, w₀, GlobalTheory.T.vectors_at_complex_point E H D l Xo c O β Y τ σ _ v w v₀ w₀ (hsnd z hz) a1 b1 hf2.1 hf2.2, a1, b1,
+    exact ⟨v, w, v₀, w₀, _root_.GlobalTheory.CompanionTheory.Ar.Flat.isFramed_of_model E H D l Xo c O β Y τ σ _ v w v₀ w₀ (hsnd z hz) a1 b1 hf2.1 hf2.2, a1, b1,
       c1, c2, fun i => ⟨uu i, a2 i, a3 i⟩, fun j => ⟨uw j, b2 j, b3 j⟩⟩
   choose v w v₀ w₀ hF hS₁ hS₂ hc₁ hc₂ hl₁ hl₂ using key
   let φ : (Fin d → ℂ) → ℂ := fun z => if hz : z ∈ punct d a 1 then Φ (C.pt z ≫ k') (v z hz) (w z hz) else 0

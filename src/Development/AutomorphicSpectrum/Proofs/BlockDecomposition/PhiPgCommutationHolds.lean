@@ -1,16 +1,16 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.LeibnizOrders.LeibnizOrd
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AvgVanish
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedJacquetClosedOpenSequenceStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedJacquetClosedOpenSequence
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicCellStructureData
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EvaluationMapsLinearStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClosedEvaluationEquivariantStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EvaluationMapsLinear
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocallyConstantCompactSupportUnipotent
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicDoubleCosetDecomposition
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClosedEvaluationEquivariant
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OpenEvaluationEquivariantStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClosedEvaluationInducedStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClosedEvaluationInduced
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OpenEvaluationInduced
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocallyConstantCompactSupportUnipotentStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicDoubleCosetDecompositionStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClosedEvaluationSurjectiveStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClosedEvaluationSurjective
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OpenEvaluationSurjectiveStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClosedEvaluationVanishingOnOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AverageVanishesClosedCell
@@ -128,8 +128,8 @@ theorem jO0_inj (ψ : AddChar k Circle) (τ : MRep k (i + 1)) (σ : GRep k (t + 
 def eCl (ψ : AddChar k Circle) (hψ : Continuous ψ) (τ : MRep k (i + 1)) (σ : GRep k (t + 1)) (hτ : IsSmooth τ.ρ)
     (hσ : IsSmooth σ.ρ) : XS τ σ →ₗ[ℂ] (Mir k ((i + 1) + t) → (psiN τ).V ⊗[ℂ] σ.V) where
   toFun f := eC ψ f
-  map_add' f g := (GlobalTheory.T.evaluation_maps_linear k i t ψ hψ τ σ hτ hσ f g 0).1
-  map_smul' c f := (GlobalTheory.T.evaluation_maps_linear k i t ψ hψ τ σ hτ hσ f f c).2.1
+  map_add' f g := (_root_.GlobalTheory.CompanionTheory.BZPhiPG.Lin.eC_eO_linear k i t ψ hψ τ σ hτ hσ f g 0).1
+  map_smul' c f := (_root_.GlobalTheory.CompanionTheory.BZPhiPG.Lin.eC_eO_linear k i t ψ hψ τ σ hτ hσ f f c).2.1
 
 def eOl (ψ : AddChar k Circle) (hψ : Continuous ψ) (τ : MRep k (i + 1)) (σ : GRep k (t + 1)) (hτ : IsSmooth τ.ρ)
     (hσ : IsSmooth σ.ρ) (hh : i + (t + 1) = (i + 1) + t) :
@@ -137,10 +137,10 @@ def eOl (ψ : AddChar k Circle) (hψ : Continuous ψ) (τ : MRep k (i + 1)) (σ 
   toFun f m := eO ψ f ((castM k hh).symm m)
   map_add' f g := by
     funext m
-    exact congrFun (GlobalTheory.T.evaluation_maps_linear k i t ψ hψ τ σ hτ hσ f g 0).2.2.1 _
+    exact congrFun (_root_.GlobalTheory.CompanionTheory.BZPhiPG.Lin.eC_eO_linear k i t ψ hψ τ σ hτ hσ f g 0).2.2.1 _
   map_smul' c f := by
     funext m
-    exact congrFun (GlobalTheory.T.evaluation_maps_linear k i t ψ hψ τ σ hτ hσ f f c).2.2.2 _
+    exact congrFun (_root_.GlobalTheory.CompanionTheory.BZPhiPG.Lin.eC_eO_linear k i t ψ hψ τ σ hτ hσ f f c).2.2.2 _
 
 theorem eOl_apply (ψ : AddChar k Circle) (hψ : Continuous ψ) (τ : MRep k (i + 1)) (σ : GRep k (t + 1)) (hτ : IsSmooth τ.ρ)
     (hσ : IsSmooth σ.ρ) (hh : i + (t + 1) = (i + 1) + t) (f : XS τ σ) (m : Mir k ((i + 1) + t)) :
@@ -195,20 +195,20 @@ theorem phiPG_core (ψ : AddChar k Circle) (hψ : Continuous ψ) (i t : ℕ) (τ
     show (e.symm v : cIndSpace (HPG k i (t + 1)) (sigO τ σ ψ)).1.1.1 ((castM k hh).symm x * (castM k hh).symm m) =
       (e.symm v : cIndSpace (HPG k i (t + 1)) (sigO τ σ ψ)).1.1.1 ((castM k hh).symm (x * m))
     rw [map_mul]
-  exact GlobalTheory.T.twisted_jacquet_closed_open_sequence (HPG k (i + 1) (t + 1)) (sigX τ σ) (MirUin k ((i + 1) + t + 1)) hUn (mirChar k ψ ((i + 1) + t)) hθ hdir
+  exact _root_.GlobalTheory.CompanionTheory.BZPhiPG.Glue.extension (HPG k (i + 1) (t + 1)) (sigX τ σ) (MirUin k ((i + 1) + t + 1)) hUn (mirChar k ψ ((i + 1) + t)) hθ hdir
     (sEmb k ((i + 1) + t)) (dpowM ((i + 1) + t) (-1 / 2)) (phiN ψ (n := (i + 1) + t) (XR' τ σ)).ρ (fun m f => rho_eq ψ τ σ m f)
     (Cl k i t) hCc hHC hCU
     (RC τ σ).ρ (mcast hh (RO ψ τ σ)).ρ
     (rightReg ℂ _ _) (rightReg ℂ _ _) (jC τ σ) jOl (jC_inj τ σ) hjOl (fun m v => rfl) hjOe
     (eCl ψ hψ τ σ hτ hσ) (eOl ψ hψ τ σ hτ hσ hh)
-    (fun u f => GlobalTheory.T.closed_evaluation_equivariant k i t ψ hψ τ σ hτ hσ u f)
+    (fun u f => _root_.GlobalTheory.CompanionTheory.BZPhiPG.TwC.eC_tw k i t ψ hψ τ σ hτ hσ u f)
     (fun u f => by
       funext m
       exact congrFun (GlobalTheory.T.open_evaluation_equivariant k i t ψ hψ τ σ hτ hσ u f) _)
     (fun m f => aC_eCl ψ hψ τ σ hτ hσ m f)
     (fun m f => aO_eOl ψ hψ τ σ hτ hσ hh m f)
     (fun f => by
-      obtain ⟨y, hy⟩ := GlobalTheory.T.closed_evaluation_induced k i t ψ hψ τ σ hτ hσ f
+      obtain ⟨y, hy⟩ := _root_.GlobalTheory.CompanionTheory.BZPhiPG.MemC.memC k i t ψ hψ τ σ hτ hσ f
       exact ⟨y, hy⟩)
     (fun f hf => by
       obtain ⟨y, hy⟩ := _root_.GlobalTheory.CompanionTheory.BZPhiPG.MemO.eO_mem k i t ψ hψ τ σ hτ hσ f hf
@@ -216,7 +216,7 @@ theorem phiPG_core (ψ : AddChar k Circle) (hψ : Continuous ψ) (i t : ℕ) (τ
       funext m
       have e1 : e.symm (e y) = y := e.symm_apply_apply y
       exact (congrArg (fun z => mirabolicRestriction ψ τ σ hh z m) e1).trans (congrFun hy _))
-    (fun v => GlobalTheory.T.closed_evaluation_surjective k i t ψ hψ τ σ hτ hσ v)
+    (fun v => _root_.GlobalTheory.CompanionTheory.BZPhiPG.Onto.eC_onto k i t ψ hψ τ σ hτ hσ v)
     (fun v => by
       obtain ⟨f, hf, hy⟩ := GlobalTheory.T.open_evaluation_surjective k i t ψ hψ τ σ hτ hσ (e.symm v)
       refine ⟨f, hf, ?_⟩

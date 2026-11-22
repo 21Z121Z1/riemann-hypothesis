@@ -19,7 +19,8 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GermSys
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GermSystemHeightFree
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsGermSystem
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GlobalModelPowerFreeStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GlobalModelPowerFree
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ToFirst
 open CategoryTheory AlgebraicGeometry NumberField GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.HT GlobalTheory.CompanionTheory.Ar.Flat ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor
 
 namespace GlobalTheory.CompanionTheory.Ar.Flat

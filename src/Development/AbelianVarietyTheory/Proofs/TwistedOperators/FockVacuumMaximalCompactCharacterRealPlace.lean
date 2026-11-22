@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RestrictedTensorBasePointNormSq
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsIntOv
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumRealPlacesFockVacuumCharacterStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumRealPlacesFockVacuumCharacter
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DetPositivePartKroneckerBlockUnitaryOrthonormal
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.HalfLinearCocycle
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnitaryOnTheta
@@ -121,7 +121,7 @@ theorem GlobalTheory.VacCharAtPlace.vacuum_char_at_place : ∀ (D : D7) (ψ : Ad
     (fun ρ e => by rw [dS, if_neg e])
   obtain ⟨y, hy, hyv⟩ := GlobalTheory.CompactFockAction.exists_root_at hθ T hh.1 τ v hv1 (by rw [dT, if_pos rfl, hv'])
     (fun ρ e => by rw [dT, if_neg e])
-  rw [GlobalTheory.T.weilDatum_realPlaces_fockVacuum_character D ψ hW.std S T θ hθ χS χT om η ⟨e1, e4, e3, e2⟩ hW sS sT hCS hCT g hg.1 h hh.1 commS commT x y hx hy
+  rw [_root_.GlobalTheory.WeilVacChar.vacuum_character D ψ hW.std S T θ hθ χS χT om η ⟨e1, e4, e3, e2⟩ hW sS sT hCS hCT g hg.1 h hh.1 commS commT x y hx hy
     f hf hv]
   congr 1
   have vx : (((χT * (η ^ T.rank)⁻¹) x : Circle) : ℂ) = κS.det ^ cT := by

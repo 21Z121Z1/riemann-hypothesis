@@ -3,11 +3,11 @@ import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.Archim
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConjTransposeAntidiagFixed
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryBorelSplitting
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsAdmissibleLinearFunctionalStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousUnitaryRootMapStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousUnitaryRootMap
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SimpleReflectionRootBorelDecomp
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SimpleReflectionMemMaximalCompactStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RootMapMemCompactOfIntegralStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ReflectionRootUnipotentShiftStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SimpleReflectionMemMaximalCompact
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RootMapMemCompactOfIntegral
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ReflectionRootUnipotentShift
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ReflectionRootDiagonalConj
 
 noncomputable section
@@ -31,7 +31,7 @@ theorem step_exists_int [CompleteSpace L] (hU : IsUnramInv ϖ σ q) (w : ℂ) (h
 
 theorem step_uR_continuous (hU : IsUnramInv ϖ σ q) (a : ℕ) (h : 2 * (a + 2) ≤ n) :
     Continuous (uR σ hU.1 a h : L → GU σ n) :=
-  GlobalTheory.T.continuous_unitary_root_map L ϖ σ q n hU a h
+  _root_.GlobalTheory.CompanionTheory.SwapRoot.continuous_uR L ϖ σ q n hU a h
 
 theorem step_factor (hU : IsUnramInv ϖ σ q) (a : ℕ) (h : 2 * (a + 2) ≤ n) (χ : Fin (n / 2) → ℂˣ) (i j : Fin (n / 2))
     (hi : i.val = a) (hj : j.val = a + 1) (x : L) (hx : x ≠ 0) :
@@ -41,16 +41,16 @@ theorem step_factor (hU : IsUnramInv ϖ σ q) (a : ℕ) (h : 2 * (a + 2) ≤ n) 
   _root_.GlobalTheory.CompanionTheory.SwapFactor.sR_uR_factor L ϖ σ q n hU a h χ i j hi hj x hx
 
 theorem step_sR_mem_KU (hU : IsUnramInv ϖ σ q) (a : ℕ) (h : 2 * (a + 2) ≤ n) : sR σ hU.1 a h ∈ KU σ n :=
-  GlobalTheory.T.simple_reflection_mem_maximal_compact L ϖ σ q n hU a h
+  _root_.GlobalTheory.CompanionTheory.SwapRoot.sR_mem_KU L ϖ σ q n hU a h
 
 theorem step_uR_mem_KU (hU : IsUnramInv ϖ σ q) (a : ℕ) (h : 2 * (a + 2) ≤ n) (x : L) (hx : Valued.v x ≤ 1) :
     uR σ hU.1 a h x ∈ KU σ n :=
-  GlobalTheory.T.root_map_mem_compact_of_integral L ϖ σ q n hU a h x hx
+  _root_.GlobalTheory.CompanionTheory.SwapRoot.uR_mem_KU L ϖ σ q n hU a h x hx
 
 theorem step_unip_shift (hσ : ∀ x, σ (σ x) = x) (a : ℕ) (h : 2 * (a + 2) ≤ n) (v : GU σ n) (hv : IsUnipU v) :
     ∃ y : L, ∀ x : L, ∃ b : GU σ n, IsUnipU b ∧
       sR σ hσ a h * uR σ hσ a h x * v = b * (sR σ hσ a h * uR σ hσ a h (x + y)) :=
-  GlobalTheory.T.reflection_root_unipotent_shift L σ n hσ a h v hv
+  _root_.GlobalTheory.CompanionTheory.SwapRoot.Unip.sR_uR_mul_unip L σ n hσ a h v hv
 
 theorem step_torus_shift (hU : IsUnramInv ϖ σ q) (a : ℕ) (h : 2 * (a + 2) ≤ n) (χ : Fin (n / 2) → ℂˣ) (i j : Fin (n / 2))
     (hi : i.val = a) (hj : j.val = a + 1) (t : GU σ n) (ht : IsDiagM (t : GL (Fin n) L)) :

@@ -3,12 +3,14 @@ import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.ThetaI
 import Development.AbelianVarietyTheory.Definitions.Divisors.ScalesBy
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GodementSummableHeightRpowRepresentatives
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousLeviBlock
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemDoublingSiegelParabolicIffChartMemSiegelUnnStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemDoublingSiegelParabolicIffChartMemSiegelUnn
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StandardUnitaryChartSiegelLeviDetEq
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HalfData
 import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelWeilUnitaryConvergent
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoubledSpaceMaximalLevelLatticeStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCompactLevelHeightScalesIsotropicFrameStatement
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ContinuesConst
+import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelEisensteinContinuationOfDoublingMethod
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MixSDblDecZero
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCompactLevelHeightScalesIsotropicFrame
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WittFrameRankLeAndExistsRationalSwap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeasureHeightShellLeIsotropicFrameQuotient
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsotropicEisensteinSeriesRationalPointsPermuteTe
@@ -86,7 +88,7 @@ theorem frame_bound : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Numb
     (a : GL (Fin n) (AF F ⊗[F] E)) (h : GAd σ J → ℝ), GlobalTheory.ResidueEisenstein.DataJ σ J X Y L a h → ∀ T, GlobalTheory.ResidueEisenstein.IsRepsJ σ J X T →
     ∃ B : ℝ, ∀ ε : ℝ, 0 < ε → ε ≤ 1 → ε * ∑' t : T, h t.1.1 ^ (((n : ℝ) - (r + 1)) + ε) ≤ B := by
   intro F E _ _ _ _ _ σ n J r X Y L a h hD T hT
-  obtain ⟨hK, hht, -⟩ := GlobalTheory.T.isCompact_level_height_scales_isotropicFrame F E σ n J r X Y L a h hD
+  obtain ⟨hK, hht, -⟩ := _root_.GlobalTheory.ResidueEisenstein.HtCont.isCompact_isHt_scales F E σ n J r X Y L a h hD
   obtain ⟨hperm, -, hinv, hrep⟩ := _root_.GlobalTheory.ResidueEisenstein.reps_perm F E σ n J r X Y L a h hD T hT
   obtain ⟨hn, -⟩ := _root_.GlobalTheory.ResidueEisenstein.Swap.two_mul_le_and_exists_ratPts_swap F E σ n J r X Y hD.cm hD.herm hD.witt
   set d : ℝ := (n : ℝ) - (r + 1) with hdd
@@ -283,12 +285,12 @@ theorem height_bound : ∀ (D : D7) (r : ℕ), ∃ H' : G D (r + 1) → ℝ≥0,
   obtain ⟨l, hl⟩ := GlobalTheory.RegSch.Inhab.exists_good (dblSp A)
   have hIw := GlobalTheory.Published.SiegelSectionIwasawa.hasIw_of_good d l hl
   obtain ⟨hD, -, -⟩ := _root_.GlobalTheory.ResidueDictionary.dict D (dblSp A) (GlobalTheory.Core.Rk.SWLaw.zeroSp D) r d (GlobalTheory.EisCont.isAniso_zeroSp D) l hl hIw
-  have hstabS : siegel A = GlobalTheory.RegSW.stab d := (GlobalTheory.T.doubled_space_maximal_level_lattice D A).1
+  have hstabS : siegel A = GlobalTheory.RegSW.stab d := (_root_.GlobalTheory.EisCont.siegel_eq_stab_dblDec D A).1
   have hsc : ∀ q : GlobalTheory.RegSW.stab d, GlobalTheory.ResidueEisenstein.ScalesBy D.sp.cm.sig (dblSp A).gram d.e (q : GA D (dblSp A)) (GlobalTheory.RegSW.onX d q) :=
     fun q => GlobalTheory.RegSW.mul_jX d q
   have hstab := (GlobalTheory.EisCont.parFlag_stab_leftInv D (dblSp A) _ (r + 1) d).2.2.1
   have hPs : ∀ x : GA D (dblSp A), x ∈ GlobalTheory.RegSW.stab d ↔ κ x ∈ P D (r + 1) := fun x => by
-    rw [← hstabS]; exact GlobalTheory.T.mem_doublingSiegelParabolic_iff_chart_mem_siegelUnn D A μ hμ κ hκ x
+    rw [← hstabS]; exact _root_.GlobalTheory.StdUnn.mem_siegel_iff_chart_mem_P D A μ hμ κ hκ x
   have hiff : ∀ x : GA D (dblSp A), (∃ β, GlobalTheory.ResidueEisenstein.ScalesBy D.sp.cm.sig (dblSp A).gram d.e x β) ↔ κ x ∈ P D (r + 1) := fun x =>
     ⟨fun ⟨β, e⟩ => (hPs x).1 (hstab x β e).1, fun hx => ⟨_, hsc ⟨x, (hPs x).2 hx⟩⟩⟩
   have hG : ∀ g, g ∈ GQ (dblSp A) ↔ κ g ∈ GF D (r + 1) := chart_mem_GF_iff D A μ hμ κ hκ
@@ -326,7 +328,7 @@ theorem height_bound : ∀ (D : D7) (r : ℕ), ∃ H' : G D (r + 1) → ℝ≥0,
       have e2 : q = q₀ := (Quotient.out_eq q).symm.trans e
       rw [e2]
   obtain ⟨B, hB⟩ := frame_bound _ _ _ _ _ _ _ _ _ _ _ hD T hT
-  obtain ⟨-, hht, hlaw⟩ := GlobalTheory.T.isCompact_level_height_scales_isotropicFrame _ _ _ _ _ _ _ _ _ _ _ hD
+  obtain ⟨-, hht, hlaw⟩ := _root_.GlobalTheory.ResidueEisenstein.HtCont.isCompact_isHt_scales _ _ _ _ _ _ _ _ _ _ _ hD
   have hNc : Continuous fun g : GA D (dblSp A) => GlobalTheory.Doubling.iwAbs (GlobalTheory.RegSW.absDet d) l.K g := by
     have := continuous_real_toNNReal.comp hht.cont
     refine this.congr fun g => ?_
@@ -334,10 +336,10 @@ theorem height_bound : ∀ (D : D7) (r : ℕ), ∃ H' : G D (r + 1) → ℝ≥0,
   let H' : G D (r + 1) → ℝ≥0 := fun g => GlobalTheory.Doubling.iwAbs (GlobalTheory.RegSW.absDet d) l.K (κ.symm g)
   refine ⟨H', ⟨hNc.comp (continuous_chart_symm D A μ hμ κ hκ), fun g => ?_, fun q hq a ha g => ?_⟩, B, fun ε h0 h1 => ?_⟩
   · exact NNReal.coe_pos.1 (hht.pos _)
-  · have hq1 : κ.symm q ∈ siegel A := (GlobalTheory.T.mem_doublingSiegelParabolic_iff_chart_mem_siegelUnn D A μ hμ κ hκ _).2 (show κ (κ.symm q) ∈ P D (r + 1) by rw [κ.apply_symm_apply]; exact hq)
+  · have hq1 : κ.symm q ∈ siegel A := (_root_.GlobalTheory.StdUnn.mem_siegel_iff_chart_mem_P D A μ hμ κ hκ _).2 (show κ (κ.symm q) ∈ P D (r + 1) by rw [κ.apply_symm_apply]; exact hq)
     have hq2 : κ.symm q ∈ GlobalTheory.RegSW.stab d := hstabS ▸ hq1
     have h1 := hlaw _ _ (hsc ⟨_, hq2⟩) (κ.symm g)
-    have h2 := (GlobalTheory.T.doubled_space_maximal_level_lattice D A).2.1 _ hq1 hq2
+    have h2 := (_root_.GlobalTheory.EisCont.siegel_eq_stab_dblDec D A).2.1 _ hq1 hq2
     have hk : blkA (mat (κ (κ.symm q))) = a.1 := by rw [κ.apply_symm_apply]; exact ha
     have h3 := _root_.GlobalTheory.StdUnn.chart_aP_eq_det D A μ hμ κ hκ ⟨_, hq1⟩ a hk
     apply NNReal.coe_injective

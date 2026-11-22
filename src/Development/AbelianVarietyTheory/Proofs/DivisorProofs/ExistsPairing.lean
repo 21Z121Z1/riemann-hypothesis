@@ -4,8 +4,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGrpPullbackDescen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAbelianSchemeQuotientByFiniteTranslations
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompEqOneOfTransl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDescentEndomorphismQuotientGroupSchemeStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorLieConditionsOfEtaleGaloisQuotientStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDescentHomQuotientGaloisGroupSchemeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorLieConditionsOfEtaleGaloisQuotient
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDescentHomQuotientGaloisGroupScheme
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGaloisCoverGrpSchemeSquareProductMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBirigidifiedBundleOfDescentStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DescendedBirigidifiedBundleSymmetric
@@ -106,7 +106,7 @@ theorem exists_quot {s : S ⟶ Sp R} (o : Obj b N s) (c : ℕ) (hc : ∃ e : ℕ
   have hc1 : 1 ≤ c := by
     obtain ⟨e, rfl⟩ := hc
     exact pow_pos (Fact.out : p.Prime).pos e
-  obtain ⟨hlie, hlieR⟩ := GlobalTheory.T.harrisTaylor_lie_conditions_of_etale_galois_quotient p D R b N S s o A' act' ψ _ _ hA' hψ hgal hcomp
+  obtain ⟨hlie, hlieR⟩ := _root_.GlobalTheory.UPel.HT.EtaleLie.lie_of_etale p D R b N S s o A' act' ψ _ _ hA' hψ hgal hcomp
   let o' : Obj b N s :=
     { A := A'
       ab := hA'
@@ -129,7 +129,7 @@ theorem exists_quot {s : S ⟶ Sp R} (o : Obj b N s) (c : ℕ) (hc : ∃ e : ℕ
       eta_ker := fun x => by rw [o.eta_ker, one_comp]
       geom := GlobalTheory.T.exists_tateSimilitude_quotient_by_pGroup_sections p D R b N S s o c hc H A' ψ hA' hψ hgal hpow act' hcomp P' hP' r1 r2 w }
   have hmk : IsMonHom (𝟙 o.A ^ c) := ReciprocityTheory.ChartRestriction.G.Geo.Tor.isMonHom_mulA c
-  obtain ⟨ψ', hψ'h, hψ'⟩ := GlobalTheory.T.exists_descent_hom_quotient_galois_group_scheme S o.A A' o.A H ψ hψ hgal (𝟙 o.A ^ c) hmk
+  obtain ⟨ψ', hψ'h, hψ'⟩ := _root_.GlobalTheory.HomDescent.exists_desc S o.A A' o.A H ψ hψ hgal (𝟙 o.A ^ c) hmk
     (fun h hh => by rw [MonObj.comp_pow, Category.comp_id, hpow h hh])
   refine ⟨o', ψ, ⟨hc, hψ, hcomp, fun x => rfl, ⟨w⟩, ψ', hψ'h, hψ', ?_⟩, fun κ _ _ x t => ⟨fun ht => ?_, ?_⟩⟩
   · show ψ' ≫ ψ = 𝟙 A' ^ c

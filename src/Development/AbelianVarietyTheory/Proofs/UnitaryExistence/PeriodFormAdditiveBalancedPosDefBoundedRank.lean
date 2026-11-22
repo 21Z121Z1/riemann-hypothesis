@@ -10,8 +10,8 @@ import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.BetaAtAddLeftAnd
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsGoodIntegral
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.RealPosOfDiscrete
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsMulEqSmulOne
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsDegenerationDataAlgebraicPointModelStatement
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.DegenerationDataCoordsNeZeroLatticesIsomorphicStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsDegenerationDataAlgebraicPointModel
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.DegenerationDataCoordsNeZeroLatticesIsomorphic
 
 noncomputable section
 
@@ -165,9 +165,9 @@ theorem rank_le_of_dvr {E : Type} [Field E] [NumberField E] [IsCMField E] {H : R
 
 theorem period_laws : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : ReciprocityTheory.ChartRestriction.G.Geo.Tor.Host E) (Dw : Datum H) (l : Level H) (Xo : Moduli Dw l) (c : Coeff l), ∀ (O : Type) [CommRing O] (β : O →+* c.F) (Y : Model Xo c β) (p : ℕ) (C : SCF p) (P : PointsOfFlagModel.PtC Y C), p.Prime → ∀ (T : CDVR) (g : T.V →+* intO ↥C.S) (ιT : Sp T.V ⟶ Y.X), T.FinRes → Function.Injective g → (∀ a ∈ maximalIdeal T.V, ‖((g a : intO ↥C.S) : ↥C.S)‖ < 1) → spMap g ≫ ιT = P.yt → ∀ A : DatAt Y P, (∀ a a' b, A.beta (a + a') b = A.beta a b + A.beta a' b) ∧ (∀ (x : 𝓞 E) a b, A.beta (x • a) b = A.beta a (H.bar x • b)) ∧ (∃ (ι : Type) (_ : Fintype ι) (b : Module.Basis ι ℤ A.Ylat), ∀ x : ι → ℝ, x ≠ 0 → 0 < ∑ i, ∑ k, x i * x k * A.beta (b i) (b k)) ∧ ∃ ρ : ℕ, Module.finrank ℤ A.Ylat = 2 * (Module.finrank ℚ E / 2) * ρ ∧ ρ ≤ Dw.p ∧ ρ ≤ Dw.q := by
   intro E _ _ _ H Dw l Xo c O _ β Y p C P hp T g ιT hT hg hloc hfac A
-  obtain ⟨A₀, ⟨_, -⟩, -⟩ := GlobalTheory.T.exists_degeneration_data_algebraic_point_model E H Dw l Xo c O β Y p C P hp T g ιT hT hg hloc hfac
-  obtain ⟨hψ₀, e, he⟩ := GlobalTheory.T.degenerationData_coords_ne_zero_lattices_isomorphic E H Dw l Xo c O β Y p C P hp T g ιT hT hg hloc hfac A₀ A
-  obtain ⟨hψ, -⟩ := GlobalTheory.T.degenerationData_coords_ne_zero_lattices_isomorphic E H Dw l Xo c O β Y p C P hp T g ιT hT hg hloc hfac A A
+  obtain ⟨A₀, ⟨_, -⟩, -⟩ := _root_.GlobalTheory.DatAtPoint.exists_datAt E H Dw l Xo c O β Y p C P hp T g ιT hT hg hloc hfac
+  obtain ⟨hψ₀, e, he⟩ := _root_.GlobalTheory.DatUniq.coord_ne_zero_and_exists_equiv E H Dw l Xo c O β Y p C P hp T g ιT hT hg hloc hfac A₀ A
+  obtain ⟨hψ, -⟩ := _root_.GlobalTheory.DatUniq.coord_ne_zero_and_exists_equiv E H Dw l Xo c O β Y p C P hp T g ιT hT hg hloc hfac A A
   let e' : A₀.Ylat ≃ₗ[ℤ] A.Ylat := e.toAddEquiv.toIntLinearEquiv
   refine ⟨(BetaAdd.main A.R A.U.D _ _ p A.normal (fun a => (A.f a).2) hψ).1,
     PeriodBalance.betaAt_balanced E H A.R A.t A.U _ _ p A.normal (fun a => (A.f a).2) hψ, ?_, ?_⟩

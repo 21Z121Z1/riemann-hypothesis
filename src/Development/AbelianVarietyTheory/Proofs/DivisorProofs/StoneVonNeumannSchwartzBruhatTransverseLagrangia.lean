@@ -25,7 +25,8 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsDoub
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BiThetaOfVac
 
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsVacuumTransverseLagrangianLocalField
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzBruhatVectorIrreducibleTranslationsCharaStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzBruhatVectorIrreducibleTranslationsChara
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsNeZeroOfEventually
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum Formalism.IndefR.Links
 open IsDedekindDomain NumberField MeasureTheory Matrix
@@ -269,7 +270,7 @@ theorem intertwiner_matrix : ∀ {k : Type} [Field k] [ValuativeRel k] [Topologi
         rw [h2, h1, hτa, hμa, GlobalTheory.WeilM.schr_schr, ← hcdef, smul_smul, inv_mul_cancel₀ hne, one_smul]
       rw [e]
       exact (LinearMap.range Tm).smul_mem _ ⟨Φ2, rfl⟩
-    have hW := GlobalTheory.T.schwartzBruhat_vector_irreducible_translations_characters ψ0 hcont hc (LinearMap.range Tm) (by rintro _ ⟨Φ, rfl⟩; exact hrange Φ)
+    have hW := _root_.GlobalTheory.IrredSBVec.sb_irreducible_vec ψ0 hcont hc (LinearMap.range Tm) (by rintro _ ⟨Φ, rfl⟩; exact hrange Φ)
       (fun φ h v => by
         have h' := hstab φ h (v, 0)
         have e : GlobalTheory.WeilM.schr ψ0 (v, 0) φ = fun x => φ (x + v) := by

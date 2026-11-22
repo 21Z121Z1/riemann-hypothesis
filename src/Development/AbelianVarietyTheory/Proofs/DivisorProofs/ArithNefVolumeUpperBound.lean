@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmallSectionsTwiste
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsNefPow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TendstoHermLineBundleGeometricDegreePowTensDivPo
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermLineBundleGeometricDegreeNonnegOfSemiPos
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTwistNefSquarefreeMonomialsSmallStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTwistNefSquarefreeMonomialsSmall
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithKleimanHeightNefOfIsNef
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyLeOfSmallSectionLogCountUpperBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianLineBundlePositivityPreservedIsometric
@@ -39,7 +39,7 @@ theorem main : GlobalTheory.Published.ArCalc → AmpleHS → SemiPull → ∀ (k
       Real.log (((L.pow m).tens N).smallSec.ncard : ℝ) ≤ (a / (D + 1).factorial + ε) * (m : ℝ) ^ (D + 1) := by
   intro HC HA HS k _ X _ p D hX L N a hL ha ε hε
   obtain ⟨⟨x, hx⟩, -⟩ := _root_.GlobalTheory.ArithTrdeg.isTranscendenceBasis_functionField k X p D hX
-  obtain ⟨H, hNH, hbox⟩ := GlobalTheory.T.exists_twist_nef_squarefree_monomials_small HC k X p D hX N x
+  obtain ⟨H, hNH, hbox⟩ := _root_.GlobalTheory.HSNef.BoxTwist.exists_twist HC k X p D hX N x
   set G := N.tens H with hG
 
   have hnef : ∀ m : ℕ, ((L.pow m).tens G).IsNef D := fun m =>

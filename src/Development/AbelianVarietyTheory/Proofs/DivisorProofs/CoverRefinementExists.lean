@@ -2,7 +2,8 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitKOfIsAlgClosed
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFiniteExtensionSplittingTorsion
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFlagFrame
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoverFunctionFieldEmbeddingStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoverFunctionFieldEmbedding
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HessRelFnB
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CommonRefinementCovers
 import Development.AbelianVarietyTheory.Definitions.Divisors.SemiposAtOfPositive
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
@@ -100,7 +101,7 @@ theorem exists_cover : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H
     have : Algebra.IsIntegral Y.Fn K := Algebra.IsIntegral.of_finite _ _
     exact (Algebra.IsIntegral.isField_iff_isField hinj).1 (Field.toIsField _)
   letI : Field K := hK.toField
-  obtain ⟨V₁, ρ₁, ψ, hρ₁, hψ⟩ := GlobalTheory.T.exists_cover_function_field_embedding F Y M K
+  obtain ⟨V₁, ρ₁, ψ, hρ₁, hψ⟩ := _root_.GlobalTheory.Mean4O.NormCover.exists_cover F Y M K
   obtain ⟨V, π₀, π₁, hπ₀, -, ⟨g₀, e₀, f₀⟩, ⟨g₁, e₁, f₁⟩⟩ := _root_.GlobalTheory.CoverCommon.exists_cover_dominating_two F Y V₀ V₁
   haveI := isPreimmersion_j V
   have hη := j_gen_specializes V

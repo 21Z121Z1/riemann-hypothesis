@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.SemiabelianTori.Geomet
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GrIsGenAt
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlagLabelBasesExist
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeRegularAtLocalPoint
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeEvalAtLocalRingStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeEvalAtLocalRing
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PrimeChartExistsUniquePoint
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CoordsAt
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtIffChartLocalization
@@ -26,7 +26,7 @@ import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MemPtsOverOfMemMcPts
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.OneMemChartLatNm
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValueScalingByMonomial
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalSubringChartPointStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalSubringChartPoint
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelLocalSubringPoint
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeTangentVectorsAffineOpen
@@ -60,7 +60,7 @@ theorem exists_chartPoint {X : Scheme.{0}} {Ω : Type} [Field Ω] {ξ : Spec (Co
       (∀ s : X.presheaf.stalk (centre z),
         (((Scheme.stalkClosedPointTo z).hom s : A) : F) = θ (genMap ξ ⟨centre z, h⟩ s)) ∧
       Spec.map (CommRingCat.ofHom A.subtype) ≫ z = Spec.map (CommRingCat.ofHom θ) ≫ ξ :=
-  GlobalTheory.T.local_subring_chart_point X Ω ξ κ x c T hc F θ A hA
+  _root_.GlobalTheory.CompanionTheory.Ar.ChartPoint.point_of_local_subring X Ω ξ κ x c T hc F θ A hA
 
 theorem model_ext {E : Type} [Field E] [NumberField E] [IsCMField E] {H : Host E} {D : Datum H} {l : Level H}
     {Xo : Moduli D l} {c : Coeff l} {O : Type} [CommRing O] {β : O →+* c.F} (Y : Model Xo c β)

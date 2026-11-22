@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Conjug
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.AdjointIsotropicDecomposition
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MixedModelFormulasWittSourceProof
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ConjWeilDatumViaAdjointExchangedPair
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HermitianAdjointSymplecticActionThetaHeisenbergStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HermitianAdjointSymplecticActionThetaHeisenberg
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WittMixedCoordsConjHermitianAdjoint
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum MeasureTheory IsDedekindDomain NumberField Matrix
 open GlobalTheory.MixModel GlobalTheory.MixPer GlobalTheory.Grow
@@ -53,7 +53,7 @@ theorem dagger_ofAdj (S T : HSp D) (z : Mx D S.rank T.rank) :
 
 theorem symplOH_dagger {ψ : AddChar (AF D.host.F) ℂ} (hψ : IsStdChar D ψ (-1)) (S T : HSp D) (x y : WO S T) :
     symplOH T S (dagger S T x) (dagger S T y) = -symplOH S T x y := by
-  rw [symplOH, symplOH, (GlobalTheory.T.hermitianAdjoint_symplectic_action_theta_heisenberg D ψ hψ S T).1 x y, mul_neg]
+  rw [symplOH, symplOH, (_root_.GlobalTheory.AdjointPair.adjoint_clauses D ψ hψ S T).1 x y, mul_neg]
 
 end GlobalTheory.MixTargetProof
 
@@ -127,7 +127,7 @@ theorem read_unip (hψ : IsStdChar D ψ (-1)) (b : Mx D ρ T₀.rank) (y : Mx D 
     d.mixT S ψ μ 𝓕 (om (1, d.nB b) f) y = heisO ψ S T₀ (ofAdj S T₀ (y ⬝ b)) (d.mixT S ψ μ 𝓕 f y) := by
   apply cj_dagger_inj S T₀
   have h1 := FS.unip b (incA D D.host.xi0⁻¹ • y)
-  rw [conjAdjoint_cj, hsw, Matrix.smul_mul, hsw, ← dagger_ofAdj, (GlobalTheory.T.hermitianAdjoint_symplectic_action_theta_heisenberg D ψ hψ S T₀).2.2.2] at h1
+  rw [conjAdjoint_cj, hsw, Matrix.smul_mul, hsw, ← dagger_ofAdj, (_root_.GlobalTheory.AdjointPair.adjoint_clauses D ψ hψ S T₀).2.2.2] at h1
   exact h1
 
 theorem read_centre (hψ : IsStdChar D ψ (-1)) (hμ : IsCovolOne (ratMx D ρ S.rank) μ 𝓕) (c : skewA D ρ)
@@ -147,7 +147,7 @@ theorem mixedTarget : ∀ D : D7, GlobalTheory.IndefiniteRowSideFullHecke.SkewGr
   intro D ψ S T T₀ ρ d χS χT om om₀ hom hom₀ μ 𝓕 hμ f hf
   have hψ := hom.std
   obtain ⟨μ', 𝓕', hμ', -, -, -, hsw⟩ := _root_.GlobalTheory.MixSwap.mixS_cj_dagger D ψ hψ S T T₀ ρ d μ 𝓕 hμ
-  have hF : IsThetaFunO ψ T S (cj (dagger T S) f) := ((GlobalTheory.T.hermitianAdjoint_symplectic_action_theta_heisenberg D ψ hψ S T).2.2.1 f).2 hf
+  have hF : IsThetaFunO ψ T S (cj (dagger T S) f) := ((_root_.GlobalTheory.AdjointPair.adjoint_clauses D ψ hψ S T).2.2.1 f).2 hf
   have FS := _root_.GlobalTheory.MixSourceFormulas.mixed_source D ψ T T₀ S ρ d χT χS (conjAdjoint om) (conjAdjoint om₀)
     (_root_.GlobalTheory.ConjAdjWeil.isWeilDatumO_conjAdjoint D ψ S T χS χT om hom) (_root_.GlobalTheory.ConjAdjWeil.isWeilDatumO_conjAdjoint D ψ S T₀ χS χT om₀ hom₀) μ' 𝓕' hμ' _ hF
   exact ⟨read_source hsw FS, read_core hsw FS, read_levi hsw FS, read_unip hsw FS hψ, read_centre hsw FS hψ hμ⟩

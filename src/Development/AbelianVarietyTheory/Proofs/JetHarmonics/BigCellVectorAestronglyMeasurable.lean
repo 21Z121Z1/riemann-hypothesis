@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.HermitianCurvature.StatementTBB
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.OrbitalIntegralAeConvergenceContinuity
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.TheoremPIntegralOfPlaces
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsContinuousFrameSectionStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsContinuousFrameSection
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselBigCellPointVectorEqBessel
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.AestronglyMeasurableBesselFunctionContinuousFami
 
@@ -17,7 +17,7 @@ theorem bigCell_vector_aestronglyMeasurable :
       AEStronglyMeasurable (fun c : Fin (P.r + 1) → ℂ => p.V H (TBB.bigPt P.r c)) volume := by
   intro Wp Wq _ _ _ _ _ _ P p H hH
   classical
-  obtain ⟨γ, hγc, hγ⟩ := GlobalTheory.T.exists_continuous_frame_section' P.k P.r Wp Wq p.T.base p.ν' p.m₀ p.hF
+  obtain ⟨γ, hγc, hγ⟩ := _root_.GlobalTheory.FrameSection.exists_continuous_frame_section P.k P.r Wp Wq p.T.base p.ν' p.m₀ p.hF
   set U : Set (Fin (P.r + 1) → ℂ) := {c | (∀ a, c a ≠ 0) ∧
     Tz P.k P.r p.T.base.z * Tz P.k P.r p.T.base.z' < Complex.normSq (c (Fin.last P.r))} with hU
   have hUo : IsOpen U := by

@@ -8,7 +8,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExtendedDivided
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UZeroApplySelf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NatCastIsUnit
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsLiftToThickening
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PeriodRingBaseChangeFromUniversalStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PeriodRingBaseChangeFromUniversal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EpsilonCyclotomicElementPropertiesStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RootExtensionLiftStatement
 set_option backward.isDefEq.respectTransparency false
@@ -244,7 +244,7 @@ theorem main : ∀ {l : ℕ} [Fact l.Prime] {O : Type} [CommRing O] {F : Fn O} {
   classical
   obtain ⟨X⟩ := GlobalTheory.CompanionTheory.RootAdjoin.nonempty_rootExt l Fact.out 𝓛.D 𝓛.t
   obtain ⟨e₀, hbij, hal, hr⟩ := GlobalTheory.T.root_extension_lift 𝒯 k n 𝓛 δ hδ hp hn X (θ.app (SingleObj.star _)) hn0 h1
-  obtain ⟨-, -, -, -, hfil, -, -⟩ := GlobalTheory.T.period_ring_base_change_from_universal 𝒯.A n
+  obtain ⟨-, -, -, -, hfil, -, -⟩ := _root_.GlobalTheory.CompanionTheory.AcrMod.acr_modp 𝒯.A n
   choose mm cc hb hnd using X.mono
   let χ : Gam d → X.ι → Acris l := fun g a =>
     if h : a = X.a₀ then 1 else ∏ j, ε.qk (mm a h) ^ (Multiplicative.toAdd g j * cc a h j)

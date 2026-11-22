@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CstSApply
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobeniusMapsDividedPowerSeriesGeneratorSet
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WittTiltFrobeniusEqPowAddMulStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WittTiltFrobeniusEqPowAddMul
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DividedPowerMonomialFrobeniusCongrPow
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DividedPowerSeriesGeneratorSetEqSumAddMulStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DividedPowerSeriesGeneratorSetEqSumAddMul
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DividedPowerSeriesSubringEqGeneratorSet
 
 noncomputable section
@@ -54,7 +54,7 @@ theorem frob_sd_congr : ∀ (l : ℕ) [Fact l.Prime] (a e : ℕ) [NeZero a] [NeZ
   have gcst : ∀ w, G (cstS t K w) := by
     intro w
     obtain ⟨hm, hf⟩ := cstS_mem_frob l a e O K t w
-    obtain ⟨x, hx⟩ := GlobalTheory.T.wittTiltFrobenius_eq_pow_add_mul l a w
+    obtain ⟨x, hx⟩ := _root_.GlobalTheory.FrobCong.sigma_eq_pow_add l a w
     refine ⟨memS hm, cstS t K x, memS (cstS_mem_frob l a e O K t x).1, ?_⟩
     rw [hf, hx, map_add, map_pow, map_mul, map_natCast]
   have gdp : ∀ n, G (dpS a e n) := by
@@ -67,7 +67,7 @@ theorem frob_sd_congr : ∀ (l : ℕ) [Fact l.Prime] (a e : ℕ) [NeZero a] [NeZ
     rw [map_zero, zero_pow hl0, mul_zero, add_zero]
   intro F hF
   refine ⟨_root_.GlobalTheory.CrysPrism.frobTot_mem_SdSet l a e O K t F hF, ?_⟩
-  obtain ⟨N, v, y, hy, hFe⟩ := GlobalTheory.T.dividedPowerSeriesGeneratorSet_eq_sum_add_mul l a e O K t F hF
+  obtain ⟨N, v, y, hy, hFe⟩ := _root_.GlobalTheory.CrysPrism.sdSet_eq_sum_add_mul l a e O K t F hF
   obtain ⟨hg, Bg, hBg, eg⟩ := gsum N v
   set g := ∑ n ∈ Finset.range N, cstS t K (v n) * dpS a e n
   set L : ZMod a → K⟦X⟧ := (l : ZMod a → K⟦X⟧)

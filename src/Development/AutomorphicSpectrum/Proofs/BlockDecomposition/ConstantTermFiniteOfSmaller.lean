@@ -1,12 +1,12 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CapS
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermUnipotentIntegralVariantStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermUnipotentIntegralVariant
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermTranslateFormula
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OneMemGoodCT
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermLeviParabolicFormula
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermKFiniteCoefficientStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CtGrowthStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermAutomorphicCriterionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermKFiniteCoefficient
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CtGrowth
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermAutomorphicCriterion
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermAuxiliaryStatementA
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDimCoefficientsFiniteDetermining
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SeparatelyFiniteDimFunctionsFinite
@@ -16,7 +16,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuantumDetermin
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CofiniteOfCapelliMonicStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CofiniteCenterMonicAnnihilator
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CapelliLeviFactorizationSumStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CapelliOperatorsCommuteStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CapelliOperatorsCommute
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CapelliUnseenStatementStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CapelliConstantTermVanishingStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CapelliPolynomialCoefficientsIdeal
@@ -73,8 +73,8 @@ theorem centre (J : Set (Module.End ℂ (Sm E (r + s)))) (hJ : Cofin J) :
     obtain ⟨b, b1, b2, b3⟩ := _root_.GlobalTheory.CompanionTheory.CTFin.QdetCoeff.qdet_shift_coeff (Module.End ℂ (Sm E (r + s))) s
       (fun i j : Fin s => Eop (a := r + s) τ (Fin.natAdd r i) (Fin.natAdd r j)) (((s : ℂ) - 1) / 2)
     refine _root_.GlobalTheory.CompanionTheory.Dblock.CentreBlocks.monic_relations_to_blocks (Sm E (r + s)) (fun u => cap (a := r + s) τ u) (capR r s τ) (capS r s τ) (leftN E r s) (vanM E r s) W₀
-      (-(s : ℂ) / 2) ((r : ℂ) / 2) r s a b (fun u v => (GlobalTheory.T.capelli_operators_commute E r s τ u v).1)
-      (fun u v => (GlobalTheory.T.capelli_operators_commute E r s τ u v).2.1) (fun u v => (GlobalTheory.T.capelli_operators_commute E r s τ u v).2.2)
+      (-(s : ℂ) / 2) ((r : ℂ) / 2) r s a b (fun u v => (_root_.GlobalTheory.CompanionTheory.CTFin.CapComm.capR_capS_commute E r s τ u v).1)
+      (fun u v => (_root_.GlobalTheory.CompanionTheory.CTFin.CapComm.capR_capS_commute E r s τ u v).2.1) (fun u v => (_root_.GlobalTheory.CompanionTheory.CTFin.CapComm.capR_capS_commute E r s τ u v).2.2)
       (fun u F hF => (GlobalTheory.T.capelli_constant_term_vanishing E r s τ u F).2 hF) (fun u F hF => ((GlobalTheory.T.capelli_constant_term_vanishing E r s τ u F).1 hF).1)
       (fun u F hF => ((GlobalTheory.T.capelli_constant_term_vanishing E r s τ u F).1 hF).2) ?_ a1 a2 a3 b1 b2 b3 (fun F hF => hF.1) ?_
     · intro u F hF m
@@ -113,12 +113,12 @@ theorem exists_mem_goodCT (L : Subgroup (GL (Fin (r + s)) (Af E))) {W : Type} [A
     (h𝓕 : IsAddFundamentalDomain (ratN E (r + s) r) 𝓕 μ) :
     ∃ F ∈ goodCT L ρ J, ∀ g, F.1 g = ∫ x in 𝓕, φ.1 (unip x * g) ∂μ := by
   obtain ⟨hA, hLf, hK, hZ⟩ := hφ
-  obtain ⟨F, hF1, hF2⟩ := GlobalTheory.T.constant_term_unipotent_integral_variant E (r + s) r φ hA.left hA.level μ 𝓕 hμ h𝓕
+  obtain ⟨F, hF1, hF2⟩ := _root_.GlobalTheory.CompanionTheory.CTSmooth.ct_smooth E (r + s) r φ hA.left hA.level μ 𝓕 hμ h𝓕
   have hlie : ∀ φ' F' : Sm E (r + s), (∀ (γ : GL (Fin (r + s)) E) (g : GA E (r + s)), φ'.1 (ratGL E (r + s) γ * g) = φ'.1 g) →
       IsOpen {k | finRep E (r + s) k φ' = φ'} → (∀ g, F'.1 g = ∫ x in 𝓕, φ'.1 (unip x * g) ∂μ) →
       ∀ (X : Lie E (r + s)) (g : GA E (r + s)), (lie E (r + s) X F').1 g = ∫ x in 𝓕, (lie E (r + s) X φ').1 (unip x * g) ∂μ := by
     intro φ' F' h1 h2 h3 X g
-    obtain ⟨F'', e1, e2⟩ := GlobalTheory.T.constant_term_unipotent_integral_variant E (r + s) r φ' h1 h2 μ 𝓕 hμ h𝓕
+    obtain ⟨F'', e1, e2⟩ := _root_.GlobalTheory.CompanionTheory.CTSmooth.ct_smooth E (r + s) r φ' h1 h2 μ 𝓕 hμ h𝓕
     have : F' = F'' := Subtype.ext (funext fun g => (h3 g).trans (e1 g).symm)
     rw [this]
     exact e2 X g
@@ -135,14 +135,14 @@ theorem exists_mem_goodCT (L : Subgroup (GL (Fin (r + s)) (Af E))) {W : Type} [A
     rw [← this]
     change _ = φ.1 (unip x * g * finGL E (r + s) k)
     rw [mul_assoc]
-  · have h := GlobalTheory.T.constant_term_k_finite_coefficient E (r + s) r φ hA.left hA.level W ρ hK μ 𝓕 hμ h𝓕 g
+  · have h := _root_.GlobalTheory.CompanionTheory.CTFin.KType.ct_mem_coeffSpan E (r + s) r φ hA.left hA.level W ρ hK μ 𝓕 hμ h𝓕 g
     convert h using 1
     funext k
     exact hF1 _
-  · obtain ⟨C, N, h⟩ := GlobalTheory.T.constant_term_moderate_growth_alt E (r + s) r φ hA μ 𝓕 hμ h𝓕 g
+  · obtain ⟨C, N, h⟩ := _root_.GlobalTheory.CompanionTheory.CTFin.Growth.ct_growth E (r + s) r φ hA μ 𝓕 hμ h𝓕 g
     exact ⟨C, N, fun y => by rw [hF1]; exact h y⟩
   · refine Subtype.ext (funext fun g => ?_)
-    rw [GlobalTheory.T.constant_term_automorphic_criterion E (r + s) r μ 𝓕 hμ h𝓕 hlie φ F hA.left hA.level hF1 z (hJ.1 hz) g, hZ z hz]
+    rw [_root_.GlobalTheory.CompanionTheory.CTFin.Central.ct_Zalg E (r + s) r μ 𝓕 hμ h𝓕 hlie φ F hA.left hA.level hF1 z (hJ.1 hz) g, hZ z hz]
     simp
 
 theorem finiteDimensional_goodCT (h₁ : GenFin E r) (h₂ : GenFin E s) (L : Subgroup (GL (Fin (r + s)) (Af E)))

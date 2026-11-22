@@ -2,8 +2,9 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TwistedModelAdmissibleCocycles
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.OnePlusPowerAssembly
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoeSmulMem
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GammaMinusOneDivVariablePolarKernelLeSenWeightsStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PolarPartFinrankAddSenWeightsLeRankStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GammaMinusOneDivVariablePolarKernelLeSenWeights
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.PowerSeriesOneAddConstMulXMulInv
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PolarPartFinrankAddSenWeightsLeRank
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GammaNablaMemOfKillingPolynomial
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmissibleLetterDataWindowArithmetic
 
@@ -131,7 +132,7 @@ theorem main : GlobalTheory.IndefiniteRowSideFullHecke.OnePlusPowerCharacters.Le
   · cases h : Dt.ty i with
     | G =>
       have e : ((Dt.w i).toNat : ℤ) = Dt.w i := Int.toNat_of_nonneg (hw i).1
-      have := GlobalTheory.T.gammaMinusOneDivVariable_polar_kernel_le_senWeights R (D.γ i) (D.γ_semi i) (N i) (hL i) (hC i) (Dt.w i).toNat
+      have := _root_.GlobalTheory.PhiGam.PolarKernel.main R (D.γ i) (D.γ_semi i) (N i) (hL i) (hC i) (Dt.w i).toNat
         (LinearMap.range (Fintype.linearCombination k fun a => c a i)) (fun x hx => by
           have := span_prop _ (D.γ i) _ _ (fun a => (hc a i).2.2.2.1 h) x hx
           rw [e]
@@ -147,7 +148,7 @@ theorem main : GlobalTheory.IndefiniteRowSideFullHecke.OnePlusPowerCharacters.Le
       have h2 := T1 i
       have h3 := (hW i).1
       obtain ⟨s1, s2⟩ := (hs i).2.2 h
-      have := GlobalTheory.T.polarPart_finrank_add_senWeights_le_rank R D Ψ ψ hΨ1 p1 (by simpa using p2 1) hΨ2
+      have := _root_.GlobalTheory.PhiGam.PolarCount.main R D Ψ ψ hΨ1 p1 (by simpa using p2 1) hΨ2
         (fun a ha ha' => by rw [p4 a ha ha']; ext x; simp [eq_comm]) i (N (i - 1)) (N i) (Dt.wst i).toNat
         (Dt.sg l (i - 1)) (Dt.w i) (hL _) (hL _) (hC _) (hC _) (by omega) (by omega) (by rw [e]; exact (hAB i).2)
         (hAB i).1 (by rw [e]; unfold TopData.wst; nlinarith) (hs _).1

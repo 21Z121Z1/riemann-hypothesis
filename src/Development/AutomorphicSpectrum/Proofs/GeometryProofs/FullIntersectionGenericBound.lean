@@ -20,7 +20,16 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.Metric
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsChartBundle
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CmHostRankBoundsStatement
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CmHostRankBounds
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.HodgeLatticeFlagBound
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.TrivFlagOnHodge
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.PadicIntegersHenselianFiniteResidue
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.HodgeComparisonCompatibility
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.CmpSt
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.NumberField
+import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.LocalAtPlaces
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
 
 noncomputable section
 
@@ -47,7 +56,7 @@ theorem exists_componentData_origin : Top.Given → Out.WeilSt → ∀ (E : Type
     htr, hsnc, hbd, hR, htors, hvb, hvert, hvert2, hli, hspan, hdeg⟩ :=
     _root_.GlobalTheory.CompanionTheory.Ar.GeoModel.exists_geo hG hW E H D Xo l c Y hgl hp hq Ω₀ ξ₀ hξ S₀ S₁ sm (D.p + D.q - j) hsmc hr hS₀ hS₁ hd hdisc
   have hn : D.dim = Fintype.card (CMType H) * j * (D.p + D.q - j) := by
-    have h2 := (GlobalTheory.T.cm_host_rank_bounds E H).2.2
+    have h2 := (_root_.GlobalTheory.CompanionTheory.Ar.Top.HostNumbers.host_numbers E H).2.2
     have hmul : j * (D.p + D.q - j) = D.p * D.q := by
       rcases hside with ⟨-, -, rfl⟩ | ⟨-, -, rfl⟩
       · rw [Nat.add_sub_cancel_left]

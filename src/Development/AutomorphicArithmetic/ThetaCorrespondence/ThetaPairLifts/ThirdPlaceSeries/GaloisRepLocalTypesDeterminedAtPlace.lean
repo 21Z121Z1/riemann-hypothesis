@@ -24,7 +24,7 @@ namespace GlobalTheory.TypesAtPin
 theorem locComp_of_isRc_classMapD_cenLoc : _root_.GlobalTheory.NRows.ThetaLocalInputsAlt → ∀ (hL : _root_.UpperTheory.Zero.LLC.RecTExists) (D : D7) (P : _root_.GlobalTheory.NPin.CharacterChoiceData hL D), (∀ i : D.nd.Loc, Nonempty (RowMod D P.rep (D.nd.j i))) → _root_.GlobalTheory.NRows.RowsAAlt D → Formalism.MainNotions.SumRepresentations.ArchimedeanSignatureMatching D := by
   intro pr hL D P hrow rA
   obtain ⟨S, hTrue, hLaws, hSupp⟩ := _root_.GlobalTheory.T.exists_true_reading_with_laws_suppLaws pr.fin hL D P hrow
-  have hTS : TameSplitAll D.host.E := fun w => GlobalTheory.T.tameParahoricRep_splits_as_product pr.bz pr.geo pr.unl pr.mp _
+  have hTS : TameSplitAll D.host.E := fun w => _root_.GlobalTheory.TameIwahori.tameSplit pr.bz pr.geo pr.unl pr.mp _
   have hBS : BlockSplitAll D.host.E := fun w => _root_.GlobalTheory.BlockSplitProof.main pr.bz pr.geo pr.unl pr.mp _
   have hchi : ChiIne D.nd D.naut := _root_.GlobalTheory.SplitRead.chiIne_main_alt D rA.tie0 rA.a2 rA.a5
     (GlobalTheory.MuIntegral.muInt_of_charTied D P.cf P.C P.tp P.chr)

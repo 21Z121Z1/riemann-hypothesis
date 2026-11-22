@@ -1,6 +1,7 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistSmulHomApp
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubobjectLeIffAffineSectionsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubobjectLeIffAffineSections
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PowSubSuccLe
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuasicoherentSupSectionsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IdealPowerSubobjectSectionsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoherentSubobjectCoherentStatement
@@ -54,7 +55,7 @@ lemma pow_smul_le_secs_lvl {A : Type} [CommRing A] [IsNoetherianRing A] (I : Ide
     have h1 : n ∈ secs (powSub I P (e + 1)) (U : X.Opens) := by
       rw [GlobalTheory.T.ideal_power_subobject_sections I P hP (e + 1) U U.2]
       exact hn
-    exact (GlobalTheory.T.subobject_le_iff_affine_sections _ _).1 (hS.pow_le e) U h1
+    exact (_root_.GlobalTheory.CompanionTheory.GE.le_iff_secs_subset _ _).1 (hS.pow_le e) U h1
 
 theorem span_grT_eq_top {A : Type} [CommRing A] [IsNoetherianRing A] (I : Ideal A) {X : Scheme.{0}}
     [X.Over (Spec (.of A))] {P : X.Modules} (hP : P.IsQuasicoherent) (S : ℕ → Subobject P)

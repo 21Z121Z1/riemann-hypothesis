@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankIntegralFixedVectorsEqOneAlmostAll
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedTraceIndicatorLevelLocalUnitary
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryHeckeOperatorLevelIndicatorEqInvIndex
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceHeckeOperatorSplitOnePlaceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceHeckeOperatorSplitOnePlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankLevelFixedVectorsDefiniteUnitaryEqProdStatement
 
 open NumberField IsDedekindDomain Matrix Polynomial Filter GlobalTheory.CuspRep GlobalTheory.PRep Formalism.UG Formalism.BasicNotions GlobalTheory.UnitaryBC Formalism.L2.Host GlobalTheory.BCT
@@ -92,7 +92,7 @@ theorem trOn_hop_eq_dimW_mul_finprod_twTr : ∀ (E : Type) [Field E] [NumberFiel
           by_cases h : w ∈ insert a U
           · simp only [h, if_true]; exact h1
           · simp only [h, if_false, hone]; rw [h2]
-      have hstep := GlobalTheory.T.trace_heckeOperator_split_one_place E hU n hn π hπ S hS K' hK' _ hg a haS (σ a) (hσ a)
+      have hstep := _root_.GlobalTheory.BCT.Peel.trOn_hop_peel E hU n hn π hπ S hS K' hK' _ hg a haS (σ a) (hσ a)
       have hupd : Function.update (fun w => if w ∈ insert a U then f w else one w) a
           ((K' a : Set (UL n a)).indicator 1) = fun w => if w ∈ U then f w else one w := by
         funext w

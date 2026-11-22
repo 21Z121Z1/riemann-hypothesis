@@ -5,7 +5,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.QdetAddOneSubEqSumQminor
 import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TracedQminorComatrixTruncatedInverse
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.QdetPolyMapMonicStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.QdetPolyMapMonic
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TraceElementGelfandPolynomialFormula
 
 noncomputable section
@@ -236,7 +236,7 @@ theorem gelfToCap (V : Type) [AddCommGroup V] [Module ℂ V] (m : ℕ)
     qdet M (Y + (((m + 1 : ℕ) : ℂ) - 1) / 2) v = Formalism.QuantumDeterminants.capP χ Y • v := by
   rw [← sub_eq_zero]
   refine (Module.forall_dual_apply_eq_zero_iff ℂ _).mp fun f => ?_
-  obtain ⟨c, hc1, hc⟩ := GlobalTheory.T.exists_monic_poly_eq_qdet (Module.End ℂ V) (m + 1) M
+  obtain ⟨c, hc1, hc⟩ := _root_.GlobalTheory.qdet_polyMap_monic (Module.End ℂ V) (m + 1) M
   set Q := GlobalTheory.CapelliNewton.polyOf (m + 1) c f v with hQd
   have hQ : ∀ u : ℂ, Q.eval u = f (qdet M u v) := fun u => by rw [hQd, GlobalTheory.CapelliNewton.polyOf_eval, hc]
   set P : ℂ[X] := ∏ s, (X + C (χ s - (m : ℂ) / 2)) with hP

@@ -2,11 +2,11 @@ import Mathlib
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.HsConjTranspose
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.IwasawaParabolicCompactFactorization
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.UnitaryMaximalCompactIsCompact
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.HilbertSchmidtProjectionBoundStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.HilbertSchmidtProjectionBound
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.ExistsGradedMatrixEigenBound
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.InverseGramEigenvaluesSumHsStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.InverseGramEigenvaluesSumHs
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.EigenvalueGapExists
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.FiniteNetOfGradedProjectionsStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.FiniteNetOfGradedProjections
 
 noncomputable section
 
@@ -269,7 +269,7 @@ theorem gap (g : S7.UJ ε) (hn : (n : ℝ) < hs (S7.toM g)) :
       Real.log (hs (S7.toM g) / n) / (n + 1) ≤ Real.log α - Real.log β ∧
       ∀ y : Fin n → ℂ, α * nsq (Pm A' *ᵥ y) + β⁻¹ * nsq (Pz A' *ᵥ y) ≤ nsq (S7.toM g⁻¹ *ᵥ y) := by
   have hT : ((S7.toM g⁻¹)ᴴ * S7.toM g⁻¹).IsHermitian := Matrix.isHermitian_conjTranspose_mul_self _
-  obtain ⟨hpos, hsum⟩ := GlobalTheory.T.inverse_gram_eigenvalues_sum_hs n ε g hT
+  obtain ⟨hpos, hsum⟩ := _root_.GlobalTheory.CompanionTheory.UGeo.specpos_inv_eigenvalues n ε g hT
   set lam := hT.eigenvalues with hlam
   have hn0 : 0 < n := by
     rcases Nat.eq_zero_or_pos n with h | h
@@ -384,7 +384,7 @@ theorem cover (n : ℕ) (ε : Fin n → Bool) :
       ∀ g : S7.UJ ε, R₀ < hs (S7.toM g) → ∃ (j : Fin m) (x : PSub ε (A j)) (k : S7.KG ε),
         g = (x : S7.UJ ε) * (k : S7.UJ ε) ∧
         c₁ * Real.log (hs (S7.toM (x : S7.UJ ε))) ≤ tauG (A j) (S7.toM (x : S7.UJ ε)) := by
-  obtain ⟨m, A, hA, hnet⟩ := GlobalTheory.T.finite_net_of_graded_projections n ε
+  obtain ⟨m, A, hA, hnet⟩ := _root_.GlobalTheory.CompanionTheory.UGeo.GradNet.exists_net n ε
   set large₂ := Real.log (20 * (n : ℝ) ^ 2) with hLg
   set E := 2 * ((n : ℝ) + 1) * large₂ + 2 * Real.log n with hE
   refine ⟨m, A, 1 / (4 * ((n : ℝ) + 1)), n + Real.exp E, by positivity, hA, fun g hg => ?_⟩
@@ -400,7 +400,7 @@ theorem cover (n : ℕ) (ε : Fin n → Bool) :
     · exact h
   have hnR : (1 : ℝ) ≤ n := by exact_mod_cast hn0
   subst hxk
-  obtain ⟨ea, eb⟩ := GlobalTheory.T.hilbert_schmidt_projection_bound n ε (A j) A' α β x k (hA j) hA' h1 h2 hβ1 hβα hy
+  obtain ⟨ea, eb⟩ := _root_.GlobalTheory.CompanionTheory.UGeo.Est.est n ε (A j) A' α β x k (hA j) hA' h1 h2 hβ1 hβα hy
   have hs_eq : hs (S7.toM ((x : S7.UJ ε) * (k : S7.UJ ε))) = hs (S7.toM (x : S7.UJ ε)) :=
     hs_mul_unitary _ _ (toMK_unitary k)
   rw [hs_eq] at hlog hg hn1

@@ -11,9 +11,9 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOn
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CoefBoundOfCasselmanWallach
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.FiniteDimensionalPolyV
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ContDiffMatrixRightInvariantDerivative
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.HilbertSchmidtCompactUnitarySubOneEqTraceStatement
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.HilbertSchmidtCompactUnitarySubOneLeFourMulStatement
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.CompactUnitaryHaarSmallBallLowerBoundStatement
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.HilbertSchmidtCompactUnitarySubOneEqTrace
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.HilbertSchmidtCompactUnitarySubOneLeFourMul
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.CompactUnitaryHaarSmallBallLowerBound
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExpNegMulSqrtDivPowLeStatement
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S Formalism.L2.Theta Matrix
 open Formalism.REAL GlobalTheory.SmoothGlob GlobalTheory.TypeSum
@@ -47,7 +47,7 @@ theorem phipow_mem {n : ℕ} (ε : Fin n → Bool) (A : ℝ) (m : ℕ) :
         (fun _ => ((1 - 2 * n / A : ℝ) : ℂ)) +
           ((2 / A : ℝ) : ℂ) • (fun k : KG ε => (((Matrix.trace (toMK k)).re : ℝ) : ℂ)) := by
       funext k
-      simp only [Pi.add_apply, Pi.smul_apply, smul_eq_mul, GlobalTheory.T.hilbertSchmidt_compactUnitary_sub_one_eq_trace]
+      simp only [Pi.add_apply, Pi.smul_apply, smul_eq_mul, _root_.GlobalTheory.hs_toMK_sub_one]
       push_cast
       ring
     rw [e]
@@ -66,7 +66,7 @@ theorem kernel_near_one : ∀ {n : ℕ} (ε : Fin n → Bool), ∃ C : ℝ, 0 �
   intro n ε
   set A : ℝ := 4 * n + 4 with hA
   have hApos : 0 < A := by positivity
-  obtain ⟨c, hc, D, hball⟩ := GlobalTheory.T.compactUnitaryHaar_smallBall_lower_bound ε
+  obtain ⟨c, hc, D, hball⟩ := _root_.GlobalTheory.HaarSmallBall.smallBall ε
   obtain ⟨C5, hC5⟩ := GlobalTheory.T.exists_exp_neg_mul_div_rpow_pow_le_mul_sqrt (1 / (2 * A)) D (by positivity)
   have hC5pos : 0 ≤ C5 := by
     have := hC5 0
@@ -80,7 +80,7 @@ theorem kernel_near_one : ∀ {n : ℕ} (ε : Fin n → Bool), ∃ C : ℝ, 0 �
     exact this.comp ((GlobalTheory.TypeSum.continuous_toMK ε).sub continuous_const)
   have h0 : ∀ k, 0 ≤ h k := fun k =>
     Finset.sum_nonneg fun i _ => Finset.sum_nonneg fun j _ => sq_nonneg _
-  have h4 : ∀ k, h k ≤ 4 * n := fun k => GlobalTheory.T.hilbertSchmidt_compactUnitary_sub_one_le_four_mul ε k
+  have h4 : ∀ k, h k ≤ 4 * n := fun k => _root_.GlobalTheory.HsLe.hs_toMK_sub_one_le ε k
   set φ : KG ε → ℝ := fun k => 1 - h k / A with hφ
   have φpos : ∀ k, 1 / ((n : ℝ) + 1) ≤ φ k := by
     intro k

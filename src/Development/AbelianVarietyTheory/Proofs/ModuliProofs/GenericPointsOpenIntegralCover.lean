@@ -16,17 +16,17 @@ import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HasFramesOfAmpFrames
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSectionPowerTransportCartesianSquare
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TransitionFramesPushOpenImmersionImage
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HasFramesDisjointUnionCechData
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsAmpleCechLineBundleDisjointUnionPushforwardStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsAmpleCechLineBundleDisjointUnionPushforward
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HasTransitionCompatibleFramesOfNoCompleteDVRPoinStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PulledSectionsFormBasisIdOfPulledSectionsFormBas
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CardPulledSectionsFormBasisEqPowDim
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CardBasisPolarisationPowerZeroEqOne
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.AbelianLocusIsOpenOfOpenImmersionCover
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.FibresSplitOfOpenImmersionCover
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HasFibrewiseThetaOfOpenImmersionCoverStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HasFibrewiseThetaOfOpenImmersionCover
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsQProjOverOfIsComplOpenImmersions
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsCompleteDVRPointGenericPoint
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsAbelianTripleGlueTwoOpenImmersionsStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsAbelianTripleGlueTwoOpenImmersions
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -228,7 +228,7 @@ theorem good_of_two {Z Z₁ Z₂ : Scheme.{0}} {f₁ : Z₁ ⟶ Z} {f₂ : Z₂ 
   have hc : ∀ z, ∃ b, z ∈ Set.range (f b) := fun z => (h z).elim (fun h => ⟨true, h⟩) fun h => ⟨false, h⟩
   have hg : ∀ b, Models.Good (u b) := by rintro (_ | _) <;> assumption
   exact ⟨_root_.GlobalTheory.AbLocusLocal.abOpen_of_cover E H Z t _ Y f u k ho hc fun b => (hg b).1, _root_.GlobalTheory.splitFib_of_openCover E H Z t _ Y f u k ho hc fun b => (hg b).2.1,
-    GlobalTheory.T.hasFibrewiseTheta_of_openImmersion_cover E H Z t _ Y f u k ho hc fun b => (hg b).2.2⟩
+    _root_.GlobalTheory.ThetaLocal.hasTheta_of_cover E H Z t _ Y f u k ho hc fun b => (hg b).2.2⟩
 
 theorem qproj_of_two {Z Z₁ Z₂ : Scheme.{0}} {f₁ : Z₁ ⟶ Z} {f₂ : Z₂ ⟶ Z} [IsOpenImmersion f₁] [IsOpenImmersion f₂]
     {t : SAB H Z} {t₁ : SAB H Z₁} {t₂ : SAB H Z₂} (n₁ : SABMap t₁ t f₁) (n₂ : SABMap t₂ t f₂)
@@ -256,7 +256,7 @@ theorem amp_of_two {Z Z₁ Z₂ : Scheme.{0}} {f₁ : Z₁ ⟶ Z} {f₂ : Z₂ �
       (fun x hx => (abLocus_pullback abLocusOne t.semi k.cart.1 x).1 hx) N _ _ _ _ (hasFrames_of_ampFrames A)
   have h₂ := key n₂ A₂
   rw [hn, hr, hs] at h₂
-  obtain ⟨a, b⟩ := GlobalTheory.T.isAmpleCechLineBundle_disjointUnion_pushforward Z Z₁ Z₂ f₁ f₂ A₁.A A₂.A h A₁.isLB A₂.isLB A₁.ample A₂.ample
+  obtain ⟨a, b⟩ := _root_.GlobalTheory.ModelSum.UnionAmple.sumLB_isLB_ampleFam Z Z₁ Z₂ f₁ f₂ A₁.A A₂.A h A₁.isLB A₂.isLB A₁.ample A₂.ample
   obtain ⟨A, -, e⟩ := exists_ampFrames a b (_root_.GlobalTheory.ModelSum.hasFrames_sumLB Z _ _ N _ _ _ _ _ (fun i j => le_bot_iff.1 (by
     rintro _ ⟨⟨x, -, rfl⟩, y, -, e⟩
     exact (Set.disjoint_left.1 h.disjoint ⟨x, rfl⟩ ⟨y, e⟩).elim)) (key n₁ A₁) h₂)
@@ -302,7 +302,7 @@ theorem HasModel.sum [IsNoetherianRing O] [IsReduced M] (hp : IsProper tM.G.hom)
   obtain ⟨p₁⟩ := map_cancel (g := coprod.inl) q₁ p (by rw [coprod.inl_map_assoc, coprod.inl_desc])
   obtain ⟨p₂⟩ := map_cancel (g := coprod.inr) q₂ p (by rw [coprod.inr_map_assoc, coprod.inr_desc])
   have pY := proper_of_map p hp
-  obtain ⟨t', ⟨u₀⟩, ⟨u₁⟩⟩ := GlobalTheory.T.exists_abelianTriple_glue_two_open_immersions E H _ _ _ _ (coprod.map C₁.j (𝟙 C₂.W.toScheme)) coprod.inl coprod.inl C₁.j _ _ _
+  obtain ⟨t', ⟨u₀⟩, ⟨u₁⟩⟩ := _root_.GlobalTheory.TripleGlueMap.exists_sab_glue_of_isPullback E H _ _ _ _ (coprod.map C₁.j (𝟙 C₂.W.toScheme)) coprod.inl coprod.inl C₁.j _ _ _
     p₁ C₁.m₂ o₂ inferInstance (isPullback_inl_inl_coprodMap _ _).flip (fun x => by
       obtain h | ⟨y, rfl⟩ := mem_inl_or_inr x
       · exact .inr h
@@ -311,7 +311,7 @@ theorem HasModel.sum [IsNoetherianRing O] [IsReduced M] (hp : IsProper tM.G.hom)
     ⟨isReduced_of_isOpenImmersion a, fun _ _ _ _ _ _ _ => inferInstance⟩
     ⟨isReduced_of_isNormalScheme C₁.normal, genericPoints_subset_abLocus C₁.m₂ (proper_of_map q₁ hp)⟩
   obtain ⟨v₂⟩ := map_comp (k := coprod.inr) p₂ u₀ (by simp)
-  obtain ⟨t, ⟨w₀⟩, ⟨w₂⟩⟩ := GlobalTheory.T.exists_abelianTriple_glue_two_open_immersions E H _ _ _ _ (coprod.map (𝟙 C₁.Z) C₂.j) coprod.inr coprod.inr C₂.j _ _ _
+  obtain ⟨t, ⟨w₀⟩, ⟨w₂⟩⟩ := _root_.GlobalTheory.TripleGlueMap.exists_sab_glue_of_isPullback E H _ _ _ _ (coprod.map (𝟙 C₁.Z) C₂.j) coprod.inr coprod.inr C₂.j _ _ _
     v₂ C₂.m₂ o₃ inferInstance (isPullback_inr_inr_coprodMap _ _).flip (fun x => by
       obtain ⟨y, rfl⟩ | h := mem_inl_or_inr x
       · exact .inl ⟨(coprod.inl : _ ⟶ C₁.Z ⨿ C₂.W.toScheme) y, by

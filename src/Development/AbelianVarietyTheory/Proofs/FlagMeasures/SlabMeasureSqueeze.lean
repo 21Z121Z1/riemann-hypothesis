@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurableSetHsBall
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IwasawaNearOneCompactNearLeviIntersectionStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsNearestPointCosetOrthogonalLieAlgebraStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IwasawaNearOneCompactNearLeviIntersection
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsNearestPointCosetOrthogonalLieAlgebra
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IwasawaSlabSqueezedBetweenBalls
 
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S GlobalTheory.Count GlobalTheory.FlagMeas GlobalTheory.IwConst
@@ -12,7 +12,7 @@ theorem slab_measure_squeeze : ∀ (n : ℕ) (ε : Fin n → Bool) (a : ℕ) (j 
   intro n ε a j W hW d E hcut hskew ν hν hinv ρ η hρ hρ8 hη
   set S := maxK ε ∩ flagM ε W with hS
   obtain ⟨t, ht, hsq⟩ := _root_.GlobalTheory.IwConst.slab_squeeze n ε S d E hcut ρ η hρ hρ8 hη
-  obtain ⟨r0, hr0, hnear⟩ := GlobalTheory.T.iwasawa_near_one_compact_near_levi_intersection n ε a j W hW t ht
+  obtain ⟨r0, hr0, hnear⟩ := _root_.GlobalTheory.IwConst.CloseLevi.close_levi n ε a j W hW t ht
   have hmem : Set.Iio (min t r0) ∈ nhds (0 : ℝ) := Iio_mem_nhds (lt_min ht hr0)
   filter_upwards [self_mem_nhdsWithin, nhdsWithin_le_nhds hmem] with r hr hr' u hu m hm k hk hball
   have hrpos : (0 : ℝ) < r := hr
@@ -23,7 +23,7 @@ theorem slab_measure_squeeze : ∀ (n : ℕ) (ε : Fin n → Bool) (a : ℕ) (j 
   have hb : nrm (uMat (u * m * k) - 1) ≤ r := hball
   obtain ⟨l0, hl0S, hl0⟩ := hnear u hu m hm k hk (le_trans hb hrr0.le)
 
-  obtain ⟨l1, hl1S, hcrd, hmin⟩ := GlobalTheory.T.exists_nearest_point_coset_orthogonal_lieAlgebra n ε S d E hcut (fun x hx => hx.1) hskew k hk
+  obtain ⟨l1, hl1S, hcrd, hmin⟩ := _root_.GlobalTheory.IwConstMin.exists_nearest n ε S d E hcut (fun x hx => hx.1) hskew k hk
   have hnrm : nrm (uMat (l1 * k) - 1) < t := lt_of_le_of_lt (hmin l0 hl0S) hl0
   have key := fun l (hl : l ∈ S) => hsq r hrpos hrt (l1 * k) hnrm hcrd l hl
 

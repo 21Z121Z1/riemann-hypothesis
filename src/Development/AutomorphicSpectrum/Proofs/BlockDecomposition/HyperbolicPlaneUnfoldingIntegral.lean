@@ -5,7 +5,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitExtensionF
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FundamentalDomainFibrationVolume
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StabiliserSplittingAdelicStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GlobalUnitaryMovesIsotropicFrame
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FramesSumByFirstVectorStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FramesSumByFirstVector
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsotropicFramesSumByOrbit
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FramesSumInvariantUnderStabiliserStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HyperbolicFramesUnitaryStable
@@ -171,7 +171,7 @@ theorem meanP : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberFiel
           (consA ((a : Fin 1 → Fin n → AF F ⊗[F] E) + ll Y m⁻¹)
             (actW (AF F) σ J u⁻¹ (ratTup (AF F) Y.1)))) := by
     intro u m
-    rw [phiA, GlobalTheory.T.frames_sum_by_first_vector F E σ M J n (fun X => Φ (actW (AF F) σ (hypOne J)
+    rw [phiA, _root_.GlobalTheory.CompanionTheory.WeilSiegel.HypStep.Unf.FrOne.tsum_framesOne F E σ M J n (fun X => Φ (actW (AF F) σ (hypOne J)
       ((((m : stabilizer₂ (AF F) σ J) * ι u : stabilizer₂ (AF F) σ J) : HA (AF F) σ (hypOne J)) * g)⁻¹ (ratTup (AF F) X)))]
     refine tsum_congr fun Y => ?_
     rw [← eA.tsum_eq]

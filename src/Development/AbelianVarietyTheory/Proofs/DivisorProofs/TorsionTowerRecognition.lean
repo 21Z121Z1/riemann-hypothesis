@@ -3,7 +3,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilIsIffPull
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorsionLabelSystemsSeriesScalarIndependentOfLeve
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorsionPairingValuesOfFamiliesValues
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusTorsionPointsCorrespondValues
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationSeriesTermsNestStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationSeriesTermsNest
+import Development.AbelianVarietyTheory.Definitions.Degenerations.SepticCharacterInjective
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsPowEqOfBaseChange
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -23,7 +24,7 @@ variable {O : Type} [CommRing O] [TopologicalSpace O] (N : NumD O)
 theorem tx_nest {n m M : ℕ} (hn : Odd n) (hm : Odd m) (hM : M = n * m) (Q : N.QT (M ^ 2)) (q : N.QT (m ^ 2))
     (h₁ : Q.1.1 = q.1.1 ^ n) (h₂ : q.1.2 = Q.1.2 ^ n) : N.tx M Q = N.tx m q := by
   subst hM
-  exact tsum_congr fun χ => GlobalTheory.T.degenerationSeriesTerms_nest O N n m hn hm Q q h₁ h₂ χ
+  exact tsum_congr fun χ => _root_.GlobalTheory.Ex.Nest.txT_nest O N n m hn hm Q q h₁ h₂ χ
 
 end Nest
 

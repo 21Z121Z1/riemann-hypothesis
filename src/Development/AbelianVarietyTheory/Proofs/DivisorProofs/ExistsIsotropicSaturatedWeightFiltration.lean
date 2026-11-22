@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmHostUnitAddConjEq
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.RelationsAreFunctions
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsToricRankOne
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LinearUniformisationTorsionIsomorphism
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompatibleIsometriesCoisotropicKernelsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompatibleIsometriesCoisotropicKernels
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateIsoLatticePartSurjectiveCoisotropicKernelStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEquivLatticePartZeroIffMemNsmul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankLeMin
@@ -83,7 +83,7 @@ theorem GlobalTheory.LowFilt.exists_filt : ∀ {E : Type} [Field E] [NumberField
     simp only [smul_sub, smul_smul]
     abel
   have hM : 0 < l.M' := Nat.lcm_pos (by have := l.three_le; omega) l.A_pos
-  obtain ⟨Z, hZ, hZr, g, hgi, hgt, hgN, hker⟩ := GlobalTheory.T.exists_compatible_isometries_coisotropic_kernels Dw y hcois htow (_root_.GlobalTheory.UChart.Fam.finrank_le_min Xo c R hR C) l.M' hM
+  obtain ⟨Z, hZ, hZr, g, hgi, hgt, hgN, hker⟩ := _root_.GlobalTheory.LowFilt.exists_compatible_isometries Dw y hcois htow (_root_.GlobalTheory.UChart.Fam.finrank_le_min Xo c R hR C) l.M' hM
   refine ⟨Z, hZ, hZr, tK, m1, m2, fun F _ _ _ => ?_⟩
   let I₁ := twistI hB I₀ g hgi hgt
   have hI₁ : XFLevel C tK m1 m2 F₀ I₁ := by

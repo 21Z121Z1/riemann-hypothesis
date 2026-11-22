@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DedekindFiniteTypeIdealCodimensionStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DedekindFiniteTypeIdealCodimension
 
 open Polynomial
 
@@ -13,7 +13,7 @@ theorem exists_deg_lt_two_correction_simple :
         w + ∑ i, p i • b i ∈ P₀ ∧ w + ∑ i, p i • b i ∉ P₀ ^ 2 := by
   intro k A _ _ _ _ _ _ _ _ _ _ n b P₀ w hP
   haveI : Algebra.FiniteType k A := Algebra.FiniteType.trans (S := k[X]) inferInstance inferInstance
-  obtain ⟨φ, hφ⟩ := ((GlobalTheory.T.dedekind_finiteType_ideal_codimension k A).2.1 P₀ hP).2
+  obtain ⟨φ, hφ⟩ := ((_root_.GlobalTheory.DedekindCodim.dedekind_finiteType_codim k A).2.1 P₀ hP).2
   set α : k := φ (algebraMap k[X] A X) with hα
   have hC : algebraMap k[X] A (C α) = algebraMap k A α := by
     rw [IsScalarTower.algebraMap_apply k k[X] A]; rfl

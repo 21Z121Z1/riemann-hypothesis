@@ -1,11 +1,11 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ParP
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasSatakeGLOfIsSatVecGL
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrbitalIntegralEqClosedSubgroupConjAverageStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrbitalIntegralEqClosedSubgroupConjAverage
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedOrbitalIntegralParabolicUnfoldLevi
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBlockUpperParabolicMulIntegralGL
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedCentralizerBlockLeParabolic
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentConjLeviEqBlockUpperTwistedSylvesterStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentConjLeviEqBlockUpperTwistedSylvester
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalisedMatrixIntegralCompLinearEquivDet
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetTwistedSylvesterSqMulDetPowEqResultantSq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjAverageUnipotentLocallyConstantCompactSuppor
@@ -123,7 +123,7 @@ theorem ct_eq_mul_orbN : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E],
   have hI : orbN (Nat.add_sub_cancel' ha) w f m = hint (intMat a (n - a) w)
       (fun X => cavg (GlobalTheory.LFun.KGL w n) f (blk (Nat.add_sub_cancel' ha) w m (adL m.1 m.2.val (Multiplicative.toAdd X)))) := by
     unfold orbN
-    simp only [GlobalTheory.T.unipotent_conj_levi_eq_blockUpperTwistedSylvester]
+    simp only [_root_.GlobalTheory.LeviDesc.LeviBlockConjugation.conj_blk]
   rw [hI, hJ]
   change absHalf w (m.1.val.det ^ (n - a) / m.2.val.det ^ a) * hint (intMat a (n - a) w)
       (fun X => cavg (GlobalTheory.LFun.KGL w n) f (blk (Nat.add_sub_cancel' ha) w m (Multiplicative.toAdd X))) = _
@@ -183,7 +183,7 @@ theorem orbInt_descent : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E],
   have hγ := blk_mem_parP E n a (n - a) (Nat.add_sub_cancel' ha) w m 0
   have hKG := GlobalTheory.LFun.SatCompare.isOpen_isCompact_KGL w n
   rw [h1, h2, ← _root_.GlobalTheory.LeviDesc.twistedOrbitalIntegral_parabolic_unfolding E n a ha w f hf' m hsep hγ,
-    ← GlobalTheory.T.orbitalIntegral_eq_closedSubgroup_conjAverage (GLw n w) (GlobalTheory.LFun.KGL w n) (parP a n w) hKG.1 hKG.2 (isClosed_parP E a n w) (_root_.GlobalTheory.LeviDesc.exists_parabolic_mul_maximalCompact E a n w) _ hγ
+    ← _root_.GlobalTheory.IwRed.twOrb_sub (GLw n w) (GlobalTheory.LFun.KGL w n) (parP a n w) hKG.1 hKG.2 (isClosed_parP E a n w) (_root_.GlobalTheory.LeviDesc.exists_parabolic_mul_maximalCompact E a n w) _ hγ
       (_root_.GlobalTheory.LeviDesc.twCent_blk_le_parP E n a (n - a) _ w m hsep) f hf']
 
 end GlobalTheory.LeviDesc

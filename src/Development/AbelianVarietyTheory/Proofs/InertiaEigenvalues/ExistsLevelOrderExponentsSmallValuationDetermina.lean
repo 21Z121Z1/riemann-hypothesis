@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NotDvdCoeffAev
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ValuationPolynomialAtRootOfUnitySubOne
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsLowCoeffNotDvdOfCongrMul
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsExponentStrictlyLeastWeight
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsLimitFamilyOfFiniteCoefficientsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsLimitFamilyOfFiniteCoefficients
 
 open scoped BigOperators
 
@@ -52,7 +52,7 @@ theorem exists_low_coeff_of_limit (O : Type) [CommRing O] [IsDomain O] [IsDiscre
   classical
   obtain ⟨K, hK⟩ := (Set.finite_range μ).bddAbove
   have hK' : ∀ x, μ x ≤ K := fun x => hK ⟨x, rfl⟩
-  obtain ⟨G₀, hG₀⟩ := GlobalTheory.T.exists_limit_family_of_finite_coefficients' σ I (Fin (K + 2) → Prop)
+  obtain ⟨G₀, hG₀⟩ := _root_.GlobalTheory.exists_limit_family_of_finite_coefficients σ I (Fin (K + 2) → Prop)
     (fun M x m j => ϖ ^ (j : ℕ) ∣ (F M x).coeff m)
   obtain ⟨G, hG⟩ : ∃ G : I → (σ →₀ ℕ) → ℕ → Prop, ∀ N M₁ : ℕ, ∃ M, M₁ ≤ M ∧ ∀ x m,
       m.degree ≤ N → ∀ j, j ≤ K + 1 → (ϖ ^ j ∣ (F M x).coeff m ↔ G x m j) := by

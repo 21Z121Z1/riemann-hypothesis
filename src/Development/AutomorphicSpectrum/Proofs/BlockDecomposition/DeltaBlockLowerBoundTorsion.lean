@@ -1,18 +1,18 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsLatIntVec
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TsumCompBoundedFibresLe
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DeltaEqLatticeIndexStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LamIsLatticeStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DeltaEqLatticeIndex
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LamIsLattice
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeQuotientTorsionNonzero
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorsionCardLeAbsNormPowStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorsionCardLeAbsNormPow
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemLatticeOfDualPairing
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DenominatorIndexBoundStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DenominatorIndexBound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DenominatorNormQuadraticExtension
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IdealPrincipalElementNormBound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RelativeNormCmAbsNorm
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CmConjugationProperties
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorsionOrthogonalityIntegralSolution
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DeltaBlockMatrixMultiplicativeStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DeltaBlockMatrixMultiplicative
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DeltaBlockQuotientInjection
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorsionNormZetaBoundStatement
 open NumberField Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.CompanionTheory.SiegelND.Integ.Hua GlobalTheory.CompanionTheory.SiegelND.Integ.Hua.HS
@@ -81,7 +81,7 @@ theorem one_le_lastFib {m : ℕ} (C : Matrix (Fin (m + 1)) (Fin (m + 1)) E) :
 
 theorem lastFib_fg {m : ℕ} (C : Matrix (Fin (m + 1)) (Fin (m + 1)) E) :
     (lastFib C).FG := by
-  have hfg : (lam C).FG := (GlobalTheory.T.lam_is_lattice E (m + 1) C).1
+  have hfg : (lam C).FG := (_root_.GlobalTheory.CompanionTheory.SiegelND.Integ.Hua.HS.isLat_lam_of_matrix E (m + 1) C).1
   have hmap : ((lastFib C).map
       (LinearMap.single (𝓞 E) (fun _ : Fin (m + 1) => E) (Fin.last m))).FG :=
     Submodule.FG.of_le hfg (Submodule.map_comap_le _ _)
@@ -192,11 +192,11 @@ theorem GlobalTheory.CompanionTheory.SiegelND.Integ.Hua.HS.LocalBound.local_boun
     have hnorm' : (t : E) = algebraMap (𝓞 E) E t := rfl
     rw [hnorm']
     linear_combination -hsum
-  have hmain := GlobalTheory.T.denominator_index_bound E ((tor c u).map (sO σ)) h𝔱
+  have hmain := _root_.GlobalTheory.CompanionTheory.SiegelND.Integ.Hua.IdxGe.absNorm_mul_den_le_idx E ((tor c u).map (sO σ)) h𝔱
     (lastFib (blk σ c u (algebraMap F E d))) (LocalBound.lastFib_fg _)
     (LocalBound.one_le_lastFib _) hinvb (sO σ t) _ _ (hmem t ht) hw hkey
   rw [hN, _root_.GlobalTheory.CompanionTheory.SiegelND.Integ.Hua.HS.DenMap.absNorm_den_algebraMap F E hCM.2.2.1] at hmain
-  rw [GlobalTheory.T.delta_block_matrix_multiplicative F E σ m c u (algebraMap F E d)]
+  rw [_root_.GlobalTheory.CompanionTheory.SiegelND.Integ.Hua.HS.IndexFormula.delta_blk F E σ m c u (algebraMap F E d)]
   calc delta c * Ideal.absNorm (tor c u) ^ 2 *
         Ideal.absNorm (den F (f + ((RingOfIntegers.norm F t : 𝓞 F) : F) * d)) ^ 2
       = delta c * Ideal.absNorm (tor c u) * (Ideal.absNorm (tor c u) *

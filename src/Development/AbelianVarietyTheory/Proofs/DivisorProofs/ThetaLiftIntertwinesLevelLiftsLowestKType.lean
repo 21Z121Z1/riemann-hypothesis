@@ -1,7 +1,8 @@
 import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LiftLowestKTypeCompatibility
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionLiftPairStepVectorInvLevelCharStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionLiftPairStepVectorInvLevelChar
+import Formalism.LocalToGlobal.IndefiniteReal.FWExist
 
 noncomputable section
 
@@ -54,7 +55,7 @@ theorem thF_shift_of_models : ∀ {D : D7} {G : Type} [Group G] [Fintype G] {Pl0
   intro D G _ _ Pl0 T A Ks _ _ _ R hlev hM hP i t g0 κ κ' hκ hκ' y y' hy v x
   have hc0 := levChi_ne_zero (V := Vc D i) (β := R.βV i) (flagL (R.datVt i t)) κ
   exact thF_shift_of_eigen R hM hP i t g0 κ κ' hκ y y' (levChi (Vc D i) (R.βV i) (flagL (R.datVt i t)) κ) hc0
-    (pt_shift R hM hP i t κ κ' hκ.1 hκ'.1 _ (GlobalTheory.T.weilAction_liftPair_stepVector_invLevelChar R hlev hM.inf hP.ωP hP.vP i t g0 κ κ' hκ hκ'))
+    (pt_shift R hM hP i t κ κ' hκ.1 hκ'.1 _ (_root_.GlobalTheory.VecInv.omega_lifts_vP R hlev hM.inf hP.ωP hP.vP i t g0 κ κ' hκ hκ'))
     (fun h => smul_apply_of_eq _ hc0 _ h _ (hy h)) v x
 
 end GlobalTheory.ThetaShift

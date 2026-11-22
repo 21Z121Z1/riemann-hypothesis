@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatAtVAtStable
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFinitePlaceVacuumOfHeisenbergLattice
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardAddCharSymplecticLocalLatticeEqOneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegerAddConjEqOneUnramifiedCm
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardAdelicCharacterNontrivialAtPlacesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardAdelicCharacterNontrivialAtPlaces
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianTensorSkewHermitianLatticeOpenCompact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceSymplecticAddSelfExpansionHalfIdempotentStatement
 
@@ -68,7 +68,7 @@ theorem exists_isVac : ∀ {F E : Type} [Field F] [NumberField F] [Field E] [Num
     refine hint _ ?_ γ hγ γ hγ
     rw [map_mul, map_mul, GlobalTheory.LatVac.evFin_liftV, h2]
     simpa using (v.adicCompletionIntegers F).natCast_mem 2
-  obtain ⟨φ, hφ, hφ0, hact⟩ := _root_.GlobalTheory.HeisLatVac.exists_vac_of_lattice M.co B.ψ v hB.std.1 (GlobalTheory.T.standard_adelic_character_nontrivial_at_places B.ψ hB.std v) _ hAt hSt hO hC
+  obtain ⟨φ, hφ, hφ0, hact⟩ := _root_.GlobalTheory.HeisLatVac.exists_vac_of_lattice M.co B.ψ v hB.std.1 (_root_.GlobalTheory.PsiNontriv.psiAt_ne_one B.ψ hB.std v) _ hAt hSt hO hC
     cc hc0 hcc hc2
   exact ⟨φ, hφ, hφ0, θ, hθ, hact⟩
 

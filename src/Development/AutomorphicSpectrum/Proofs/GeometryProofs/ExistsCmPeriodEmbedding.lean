@@ -5,7 +5,7 @@ import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.PureFamilyDecomposit
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsTransition
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.PurePeriodLocalBasisExists
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CmPackPureFrame
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CmPeriodAlgebraicStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CmPeriodAlgebraic
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -24,7 +24,7 @@ theorem exists_cmPoint_locBasis_frames :
   obtain ⟨hli, n, hn, hspan⟩ := id hloc
   have hn0 : 0 < n := Nat.pos_of_ne_zero (by rintro rfl; exact hn (dvd_zero _))
   obtain ⟨hsplit, -, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Fl.pure_family_spans_pure_sublattice E H (FU.Di i) g ty P hP D.p D.q x n hx hspan
-  obtain ⟨X, hkX⟩ := GlobalTheory.T.exists_cmPack_field_ge_of_isPeriod E H D l Xo c g ty FU i Z P hP n k hk hn0 hsplit
+  obtain ⟨X, hkX⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Fl.CMGiven.exists_pack_given E H D l Xo c g ty FU i Z P hP n k hk hn0 hsplit
   obtain ⟨⟨v, w, hvw⟩, -⟩ := _root_.GlobalTheory.CompanionTheory.Relay.cm_pack_pure_frame E H D l Xo c g ty FU i Z P hP X x hx τ hty hτ hli
   exact ⟨P, hP, x, hx, X, v, w, hkX, hloc, hvw⟩
 

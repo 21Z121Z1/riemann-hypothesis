@@ -16,7 +16,7 @@ import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LatNormGrL
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsCompletedStrictHens
 import Development.WeilBound.CoreStatements.HodgeTatePoints.MbLTopCommon
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncModelReindexedCoords
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexCoordsReindexedStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexCoordsReindexed
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentGenericIsGenericPoint
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IntegralClosureHeightEqOneOfLiesOver
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointFactorsOpen
@@ -400,7 +400,7 @@ theorem exists_eigBase : ReciprocityTheory.ChartRestriction.G.Geo.ResK.ResKState
     exact Iff.rfl
   · exact _root_.GlobalTheory.CompanionTheory.Ar.SncRefine.isSncModel_refine X₀ M'.X Ω₀ ξ M'.ξ g K₀ J₀ y₀ K₁ J₁ y₁ bk bx D.dim bd₀ hall M'.all htie tie₁ hξ' hy₁ hreg huniq hsnc
   · intro z w hw
-    have hw₁ := GlobalTheory.T.complex_coords_reindexed X₀ M'.X Ω₀ ξ M'.ξ g K₀ J₀ y₀ K₁ J₁ y₁ bk bx z w hall M'.all hg' hξ' hy₁ hreg hw
+    have hw₁ := _root_.GlobalTheory.CompanionTheory.Ar.CoordsDown.coordsAt_down X₀ M'.X Ω₀ ξ M'.ξ g K₀ J₀ y₀ K₁ J₁ y₁ bk bx z w hall M'.all hg' hξ' hy₁ hreg hw
     have hne : ∀ k, ∃ i, w ⟨k, i⟩ ≠ 0 := fun k => (hw.1 k).imp fun _ h => h.ne_zero
     have hne' : ∀ k, ∃ i, w (v ⟨k, i⟩) ≠ 0 := fun k => (hw₁.1 k).imp fun _ h => h.ne_zero
     rw [mem_mcPts_rename v bd₀ w hne hne']

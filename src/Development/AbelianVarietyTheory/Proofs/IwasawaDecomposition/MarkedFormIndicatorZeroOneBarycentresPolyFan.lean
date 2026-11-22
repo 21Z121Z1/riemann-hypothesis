@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MarkValEqZeroOrOne
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsMarkedBalancedIntFormPullbackIffSplitSurjectioStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MarkedFormIndicatorValueInvariantHostFixingAutStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MarkedFormIndicatorValueInvariantHostFixingAut
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolFanMarkedFormUniqueInCell
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolFanExistsMarkedFormInCellStatement
 
@@ -70,7 +70,7 @@ theorem exists_markFun_props : ∀ (E : Type) [Field E] [NumberField E] [IsCMFie
     split_ifs at h with h'
     · exact h'
     · norm_num at h
-  refine ⟨w, fun σ hσ n B => by rw [hw, hw]; exact GlobalTheory.T.markedFormIndicatorValue_invariant_hostFixingAut E H ψ lab i htψ htlab σ hσ n B, ?_⟩
+  refine ⟨w, fun σ hσ n B => by rw [hw, hw]; exact _root_.GlobalTheory.PolFan.Mark.markVal_twist E H ψ lab i htψ htlab σ hσ n B, ?_⟩
   intro X _ _ _ _ hX
   refine ⟨fun β _ _ => ?_, fun β _ _ h1 => (mk β h1).2.2.1, fun β _ _ h1 => (mk β h1).2.2.2.1,
     fun m v hv hle β _ _ β' _ _ h1 h1' hc hc' =>

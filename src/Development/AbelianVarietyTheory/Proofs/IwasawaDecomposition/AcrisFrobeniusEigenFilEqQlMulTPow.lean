@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BdRPlusFiltr
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AcrisFrobeniusFixedEqPadicInt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AcrisToBdRPlusInjective
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLogTeichmullerAcrisEqMuMulUnit
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AcrisLogTeichmullerUniqueGaloisFrobeniusBdRStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AcrisLogTeichmullerUniqueGaloisFrobeniusBdR
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTeichmullerTiltMinusOnePowDivEnvelope
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FrobeniusAcrisDecompositionMuPower
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FontaineTIsUnitBcrisAndUniformizerBdRPlus
@@ -158,7 +158,7 @@ theorem fix_pow (l : ℕ) [Fact l.Prime] (C : Core l) (r : ℕ) (x : Per.Acris l
     obtain ⟨-, hk, -, hth, -⟩ := _root_.GlobalTheory.MemLoc.thetaD_props l
     obtain ⟨w, hw⟩ := exists_w C.ε he.1
     obtain ⟨t, u, htl, hu, htu⟩ := _root_.GlobalTheory.MemLoc.exists_isLogA l C.ε he.1
-    have htt : C.t = t := (GlobalTheory.T.acris_logTeichmuller_unique_galois_frobenius_bdR l C.ε t he.1 htl).1 _ C.t_log
+    have htt : C.t = t := (_root_.GlobalTheory.MemLoc.LogFun.log_fun l C.ε t he.1 htl).1 _ C.t_log
     have hΘ : ∀ a, ((Per.θD l).comp C.j) (algebraMap (Per.Ainf l) (Per.Acris l) a) =
         (Per.θ l a : ℂ_[l]) := fun a => by
       rw [RingHom.comp_apply, j_alg C.j_cris, hth]

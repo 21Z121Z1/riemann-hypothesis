@@ -1,5 +1,6 @@
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasRigidCoords
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniversalAbelianSchemeTorsionRationalFieldPointStatement
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniversalAbelianSchemeTorsionRationalFieldPoint
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.AnForm.R
 open GlobalTheory.Toroidal GlobalTheory.LocM GlobalTheory.PolFan GlobalTheory.UChart GlobalTheory.UCanon
@@ -33,7 +34,7 @@ theorem torsion_rigid : ∀ {E : Type} [Field E] [NumberField E] [IsCMField E] {
       simp only [Over.mk_hom, hy, Category.assoc]
       rw [← Category.assoc (spMap ιK), ← spMap_comp])
   have hx' : (j ≫ x) ^ l.M' = 1 := by rw [← MonObj.comp_pow, hx, MonObj.comp_one]
-  obtain ⟨x₀, -, hx₀⟩ := GlobalTheory.T.universalAbelianScheme_torsion_rational_fieldPoint Xo c φ k K' (ιK.comp φ') y₀ (j ≫ x) hx'
+  obtain ⟨x₀, -, hx₀⟩ := _root_.GlobalTheory.XFTorsion.torsion_rational Xo c φ k K' (ιK.comp φ') y₀ (j ≫ x) hx'
   have hxl : x.left = spMap φ' ≫ x₀.left := by
     rw [← cancel_epi (spMap ιK)]
     have : spMap ιK ≫ x.left = spMap (ιK.comp φ') ≫ x₀.left := hx₀

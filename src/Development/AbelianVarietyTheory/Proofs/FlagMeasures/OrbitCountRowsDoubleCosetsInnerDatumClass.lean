@@ -5,8 +5,8 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LocClosed
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowLatticeAutomorphismsEqAdaptedModUnipotent
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsSubgroupUnitriangularPairsKeepingDoubleCos
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermsSameRationalInnerClassAreTranslates
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardStabilizerInnerDatumRowDoubleCosetStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermRowDoubleCosetEqIffIsometriesStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardStabilizerInnerDatumRowDoubleCoset
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermRowDoubleCosetEqIffIsometries
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsTermTranslateByAdaptedLatticeAutomorphisms
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BaseFrameLatticeInvariantUnderAdaptedTranslate
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MatchingTranslateSameRowDoubleCoset
@@ -64,7 +64,7 @@ theorem orbit_count : ∀ (D : D7) (X : HidaSetting D) (Y : Full X) (u u' : D.wh
   obtain ⟨A, N, hA, hN, hNA, hNn, hiA, hcA⟩ := _root_.GlobalTheory.AutQuot.autQuot D X Y u u' t₀.lam t₀.mem
   obtain ⟨A', N', hA', hN', hNA', hNn', hiA', hcA'⟩ := _root_.GlobalTheory.AutQuot.autQuot D X Y u' u t₀.lam' t₀.mem'
   obtain ⟨B, hB, hNB, hBiff⟩ := _root_.GlobalTheory.KeyGroup.keyStab_subgroup D X Y u u' t₀
-  have hS := GlobalTheory.T.card_stabilizer_innerDatum_rowDoubleCoset D X Y u u' F F' w hw hG t₀ Λ₀ h₀ B N N' hB hN hN'
+  have hS := _root_.GlobalTheory.StabCnt.stab_card D X Y u u' F F' w hw hG t₀ Λ₀ h₀ B N N' hB hN hN'
   have mA : ∀ a, a ∈ A ↔ a ∈ Aut0 (lf D (X.Fu u)) t₀.lam := fun a => SetLike.mem_coe.symm.trans (Set.ext_iff.mp hA a)
   have mA' : ∀ a, a ∈ A' ↔ a ∈ Aut0 (lf D (X.Fu u')) t₀.lam' := fun a => SetLike.mem_coe.symm.trans (Set.ext_iff.mp hA' a)
   have mN : ∀ a, a ∈ N ↔ a ∈ NLam t₀.lam (lf D (X.Fu u)) := fun a => SetLike.mem_coe.symm.trans (Set.ext_iff.mp hN a)
@@ -87,7 +87,7 @@ theorem orbit_count : ∀ (D : D7) (X : HidaSetting D) (Y : Full X) (u u' : D.wh
     intro p hp q hq
     obtain ⟨hp1, hp2, n, hn, n', hn', hpl⟩ := hs p hp
     obtain ⟨hq1, hq2, m, hm, m', hm', hql⟩ := hs q hq
-    rw [GlobalTheory.T.term_row_double_coset_eq_iff_isometries D X Y u u' (s p) (s q), hp1, hq1, hp2, hq2]
+    rw [_root_.GlobalTheory.Unfold.KeyIff.key_eq_iff D X Y u u' (s p) (s q), hp1, hq1, hp2, hq2]
     simp only [true_and]
     have ep : (s p).lin = (n * p.1) * t₀.lin * (n'⁻¹ * p.2)⁻¹ := by rw [hpl]; group
     have eq : (s q).lin = (m * q.1) * t₀.lin * (m'⁻¹ * q.2)⁻¹ := by rw [hql]; group

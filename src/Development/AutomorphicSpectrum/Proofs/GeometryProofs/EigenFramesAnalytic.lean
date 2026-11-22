@@ -17,7 +17,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GermStalkClosedPoin
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointNormalCoords
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrameNearGenericPoint
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.WedgeLatticeGeneratorStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProperPullbackLineBundleStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProperPullbackLineBundle
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericOfSmoothSurjective
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValueAlongStalkSurjection
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StalkSurjectiveOpenImmersion
@@ -194,7 +194,7 @@ theorem exists_gen_of_unitAn : Geo.ResK.ResKStatement → GagaSections → ∀ (
   obtain ⟨f₀, κ, hκ, hgen, hval⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.gaga_rat hGaga c.F σ X' s' Z.Ω ξ' _ W F hsP hsm' h3 hξg hconst hL'vb hgW
     hgenW hext
   have hnorm : NormalCpt (Z.ξ₀ ≫ Y.j) := GlobalTheory.CompanionTheory.Ar.XR.normalCpt_of_isCptGen hξ Y.normal
-  have hall := GlobalTheory.T.proper_pullback_line_bundle _ _ _ _ (Z.ξ₀ ≫ Y.j) (Z.ξ₀ ≫ Y.jQ) ξ' (pullback.fst Y.s (spMap β)) f _ Z.genFib f₀ hpre hfP
+  have hall := _root_.GlobalTheory.CompanionTheory.Ar.Flat.PushLoc.gen_descends _ _ _ _ (Z.ξ₀ ≫ Y.j) (Z.ξ₀ ≫ Y.jQ) ξ' (pullback.fst Y.s (spMap β)) f _ Z.genFib f₀ hpre hfP
     hnoeth (by simp [Model.j]) h1 hξ hnorm (fun x => Iff.rfl) hLvb (by rw [← hπ]; exact hgen)
   have hf0 : f₀ ≠ 0 := (hall _ hη).1
   refine ⟨f₀, κ, Y.j ⁻¹ᵁ (W₁ ⊓ W₂), hκ, ⟨hW₁, hW₂⟩, ⟨smul_ne_zero hf0 ha, hb, ?_⟩, ?_⟩

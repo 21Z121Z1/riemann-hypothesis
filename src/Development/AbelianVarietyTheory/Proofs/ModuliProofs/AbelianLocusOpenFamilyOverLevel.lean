@@ -18,10 +18,10 @@ import Development.AbelianVarietyTheory.Proofs.ModuliProofs.RelAmplePrincipalOfG
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsProjOverBaseChangeOfProperQuasiProjective
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.RelAmpleOfPolarisedAtEveryPoint
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.KernelTrivialOfEveryPointCovered
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.FullLevelObjectOfCoveringPullbacksStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.FullLevelObjectOfCoveringPullbacks
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TorsionLevelExtendsFromDenseOpenNormal
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsIsoNearNormalPointOfFiniteBirational
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.FullObjectOfGenericFibreDvrStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.FullObjectOfGenericFibreDvr
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.FullLevelObjectPullbackExistsAndFull
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsFiniteOfAmpleDeterminantFramesPullback
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.AmpleDeterminantFramesPullbackOfIsAffineHom
@@ -124,7 +124,7 @@ theorem exists_full_through (hE : GlobalTheory.LN.HomExtSt) (h1 : Out.Laws) (h2 
   have hpV := isProper_pull νV hp
   obtain ⟨am, kt⟩ := _root_.GlobalTheory.PolDvr.relAmple_kTriv_of_generic_fibre hE h1 h2 E H V K tV tK νK hpV oK.ample oK.ktriv
   refine ⟨Sp V, f, tV, νV, lV, ⟨_, hf₁⟩, fun a => ObjPull.secPull_left _ _, ?_⟩
-  refine GlobalTheory.T.fullObject_of_genericFibre_dvr h1 h2 E H D n N V K (f ≫ s) tV lV tK νK lK hN hpV am kt (fun a c => ?_) (fun a => ?_)
+  refine _root_.GlobalTheory.FullSpread.fullObj_of_genericFibre h1 h2 E H D n N V K (f ≫ s) tV lV tK νK lK hN hpV am kt (fun a c => ?_) (fun a => ?_)
     (fun a => ?_) ?_
   · simp only [lV, add, map_mul]
   · simp only [lV, ker, map_one]
@@ -155,7 +155,7 @@ theorem exists_full (hE : GlobalTheory.LN.HomExtSt) (h1 : Out.Laws) (h2 : Out.La
   have kt : Out.KTriv t.G t.PP.L := _root_.GlobalTheory.KTrivGlob.kTriv_of_forall_point h1 E H S t hp am fun p => by
     obtain ⟨S', f, t', ν', _, a, -, b⟩ := th p
     exact ⟨S', f, t', ν', a, b.ktriv⟩
-  exact ⟨lv, GlobalTheory.T.fullLevelObject_of_covering_pullbacks h1 E H D n N S s t lv hN hp am kt add ker th, hl⟩
+  exact ⟨lv, _root_.GlobalTheory.FullDescent.fullObj_of_cover h1 E H D n N S s t lv hN hp am kt add ker th, hl⟩
 
 theorem isProper_of_isProjOver {R : Type} [CommRing R] {X : Scheme.{0}} {s : X ⟶ Sp R} (h : IsProjOver s) :
     IsProper s := by

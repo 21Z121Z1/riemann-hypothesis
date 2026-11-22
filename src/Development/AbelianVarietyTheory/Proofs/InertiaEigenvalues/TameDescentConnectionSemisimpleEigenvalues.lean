@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.ImagePolynomialAction
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EulerEAddSmulMemEisensteinShiftGradedStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EulerEAddSmulMemEisensteinShiftGraded
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemAnalyticFiltrationIffLatticeFiltrationAdd
 
 open PowerSeries GlobalTheory.BK
@@ -118,7 +118,7 @@ theorem lc_semisimple : ∀ (O K : Type) [CommRing O] [NormedField K] [IsUltrame
     simp [lam]
   have hstep : ∀ j, ∀ x ∈ F j, D.EN x - lam j • x ∈ F (j + 1) := by
     intro j x hx
-    have h1 := GlobalTheory.T.eulerE_add_smul_mem_eisenstein_shift_graded O K l e a ι η H D j x hx
+    have h1 := _root_.GlobalTheory.Proof.eulerE_add_smul_mem_eisenstein_shift_graded.EN_add_smul_mem_shiftE O K l e a ι η H D j x hx
     have h2 : D.EN x - lam j • x = D.EN x + ((j * e * l : ℤ) : K) • x := by
       rw [sub_eq_add_neg, ← neg_smul]
       congr 2

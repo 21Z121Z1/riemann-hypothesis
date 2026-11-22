@@ -30,7 +30,7 @@ theorem natCast_mem_half (l : ReciprocityTheory.ChartRestriction.G.Geo.Tor.Level
 theorem exists_rightMul (γ : LaMod Dw l ≃ₗ[𝓞 E] LaMod Dw l) {n : ℕ} {rk : Bool} {x : Fin n → Dw.La}
     (hx : AdmX (l := l) rk x) : ∃ x' : Fin n → Dw.La, IsRightMul γ x x' ∧ AdmX (l := l) rk x' := by
   have hM₁ : 0 < l.M := by have := l.three_le; omega
-  obtain ⟨g, -, hγ, -⟩ := GlobalTheory.T.exists_completed_isometry_inducing_half_level_automorphism _ _ Dw l γ
+  obtain ⟨g, -, hγ, -⟩ := _root_.GlobalTheory.LevelIsometry.exists_isometry_inducing _ _ Dw l γ
   obtain ⟨g', hg'⟩ := g.inv l.M hM₁
   obtain ⟨fa, hfa⟩ := exists_adjoint Dw (g.f l.M)
   obtain ⟨ga, hga⟩ := exists_adjoint Dw g'
@@ -196,7 +196,7 @@ theorem exists_const (T : Full D) (hT : LawsFull T) (hj : InR D j) (hxi : TwistT
   obtain ⟨inst, hnab⟩ := hT.sh.dNab j hj w.n
   obtain ⟨ph, ψ, x₀, -, hpin, htie⟩ := hT.sh.dPhi j hj w.n hw
   have hTot := hT.sh.shTot j hj (wtA w) w.n (dom_wtA w)
-  obtain ⟨g, hν, hγ, hg⟩ := GlobalTheory.T.exists_completed_isometry_inducing_half_level_automorphism _ _ (T.Q.Dw j) T.Q.l γ
+  obtain ⟨g, hν, hγ, hg⟩ := _root_.GlobalTheory.LevelIsometry.exists_isometry_inducing _ _ (T.Q.Dw j) T.Q.l γ
   obtain ⟨ρ₂, hρ₂⟩ := GlobalTheory.LevelActionLaws.exists_levAut hpq (T.dδ j w.n).Xo₂ g (by rw [hν, sub_self]; exact dvd_zero _)
   obtain ⟨u, hu, hcd⟩ := exists_root T hT hj hxi hw g hν ρ₂ hρ₂
   refine ⟨u, hu, fun Λ N P x0 x0' f f' hG hx hf hf' => ?_⟩
@@ -244,7 +244,7 @@ theorem exists_const (T : Full D) (hT : LawsFull T) (hj : InR D j) (hxi : TwistT
   have e₁ := GlobalTheory.ShortLiftInvariance.cover_product_indep_of_lift hL hC _ _ _ _ _ _ _ d
     (GlobalTheory.T.moduliScheme_levelMaps_heckePoints'.2 _ _ _ hpq).1 hLev (hA₂.trans hA.symm) hnab ⟨ph, ψ, x₀, hpin, htie⟩ Λ N hU hb₂ hO _ _ hP₂ x0 _
     r' m' hE' k hk y' z₂ y₂' hz₂ ho' v v' hv hv'
-  have e₂ := GlobalTheory.T.shortThetaValue_under_levelMove hL hC _ _ _ _ d.Xo₂ d.c₂ d.nab₂ hnab k ρ₂.hom ν₂ _ _ y₂ y₂' hmv₂ hfr₂ σq hσ
+  have e₂ := _root_.GlobalTheory.ShortValMove.shortValAt_move hL hC _ _ _ _ d.Xo₂ d.c₂ d.nab₂ hnab k ρ₂.hom ν₂ _ _ y₂ y₂' hmv₂ hfr₂ σq hσ
     _ _ _ hP₂ (d.w x0) Λ _ N v' hv'
   rw [funext hw'] at e₂
   refine ⟨v', e₂, (evalAt_smul _ _ _ _ y).trans ?_⟩

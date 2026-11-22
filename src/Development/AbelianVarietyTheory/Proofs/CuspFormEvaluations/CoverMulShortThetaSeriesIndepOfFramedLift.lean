@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsQuotEqu
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsLevMoveOfFrOver
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ShortThetaValueExistsUniqueNaturalOfLaws
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermCut
-import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ShortThetaValueUnderLevelMoveStatement
+import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ShortThetaValueUnderLevelMove
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor Formalism.L2.Pj Formalism.MainNotions.ModuliIntegralCharts.H1
@@ -54,7 +54,7 @@ theorem cover_product_indep_of_lift : Laws → ChartIndepSt2 → ∀ (E : Type) 
     exact hg.2.2 a
   unfold DeltaDat.PsiTie at hpsi
   have hev := hpsi kI g ρ hg hmod hρ hk1 k y₂ y₂' hx
-  have h1 := GlobalTheory.T.shortThetaValue_under_levelMove hL hC E H Dw d.l₂ d.Xo₂ d.c₂ _ hNab k ρ.hom ν (g.f d.l₂.M) (g.f d.l₂.A)
+  have h1 := _root_.GlobalTheory.ShortValMove.shortValAt_move hL hC E H Dw d.l₂ d.Xo₂ d.c₂ _ hNab k ρ.hom ν (g.f d.l₂.M) (g.f d.l₂.A)
     y₂ y₂' hmv hfm σq hk2 n a P hP (d.w x0) Λ β N v' hv'
   have hw : ∀ q, d.w x0 q = d.eF ↑(ψ kI) * d.w x0 (fun b => σq.symm (q b)) := by
     intro q

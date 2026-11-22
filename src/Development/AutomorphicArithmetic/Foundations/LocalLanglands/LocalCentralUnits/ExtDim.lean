@@ -60,7 +60,7 @@ theorem UpperTheory.Zero.LLC.extDim :
   haveI : CharZero (w.adicCompletion E) := charZero_of_injective_algebraMap (algebraMap E _).injective
   obtain ⟨hd, s, hs, hc, hcp⟩ := dim_charPol H L x
   refine ⟨⟨hd, s, hs, hc, hcp⟩, fun ω hω σ => ?_⟩
-  obtain ⟨f, hf, hprod⟩ := GlobalTheory.T.centralCharacter_eq_prod_supercuspidalSupport Pr.bz (w.adicCompletion E) x s ω hs hω
+  obtain ⟨f, hf, hprod⟩ := _root_.GlobalTheory.CentralSupport.centralChar_eq_prod_support Pr.bz (w.adicCompletion E) x s ω hs hω
   have he : ((rc x).eig σ).prod = (s.map fun y => ((r y).eig σ).prod).prod := by
     rw [WD.eig, hcp, prod_roots_prod_of_monic s (fun y => (r y).charPol σ) fun y => WD.charPol_monic _ _]
     rfl

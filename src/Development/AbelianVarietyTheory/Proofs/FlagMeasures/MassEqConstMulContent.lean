@@ -6,14 +6,14 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.HermLat
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OrthonormalBasisAndOneOrbit
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DualInterSelfDualHermitianLatticeSubspace
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InvVolMulPosLeConj
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LatticeStabilizerCommensurableUnramifiedHermitiaStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LatticeStabilizerCommensurableUnramifiedHermitia
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CongruenceSubgroupLatticeStabilizer
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CommensurableCosetUnionContentIndependentNonneg
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MatrixCongruentOneModUniformizerPowGroupAndOrbitStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ThickOrbitSelfDualUnramifiedLatticeStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ThickOrbitSelfDualUnramifiedLattice
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormalisedContentThickenedSetIndependentOfLevel
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ContentThickenedTupleOrbitNormalSubgroup
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryGroupOrthogonalComplementUnimodularStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryGroupOrthogonalComplementUnimodular
 open ValuativeRel Formalism.MainNotions.S.Loc GlobalTheory.HL MeasureTheory
 open scoped Pointwise ENNReal Classical
 
@@ -91,7 +91,7 @@ theorem cont_inf (L : LocE F E) (ϖ : 𝒪[F]) (hϖ : Irreducible ϖ) {n : ℕ}
   obtain ⟨C, hC, hCi, hCn⟩ := (_root_.GlobalTheory.HL.congruence_subgroup_facts L ϖ hϖ Λ hΛ.1 (max N 1)).1
   have hC1 := (_root_.GlobalTheory.HL.congruence_subgroup_facts L ϖ hϖ Λ hΛ.1 (max N 1)).2.1 (le_max_right _ _)
   obtain ⟨e, he⟩ := exists_pow_smul L ϖ hϖ hΛ.1 x
-  obtain ⟨i0, hi0, hth⟩ := GlobalTheory.T.thick_orbit_selfDual_unramified_lattice L ϖ hϖ Hm hH Λs hs Λ hΛ m _ hx (max N 1) e
+  obtain ⟨i0, hi0, hth⟩ := _root_.GlobalTheory.ThickOrbit.main L ϖ hϖ Hm hH Λs hs Λ hΛ m _ hx (max N 1) e
   refine ⟨i0, fun i hi => ?_⟩
   set U := isomG L Hm with hU
   set H := fixG L Hm (Submodule.span E (Set.range x)) with hHdef
@@ -151,10 +151,10 @@ theorem relIndex_symm (L : LocE F E) {n : ℕ} {Hm : Matrix (Fin n) (Fin n) E} (
     rw [Set.range_eq_empty, Submodule.span_empty]
     refine inf_eq_left.2 fun a _ => ⟨fun v => by simp, fun v hv => ?_⟩
     rw [(Submodule.mem_bot E).1 hv]; simp
-  have h := GlobalTheory.T.unitaryGroup_orthogonalComplement_unimodular L Hm hH 0 Fin.elim0 (by simp) Λ Λ hΛ.1 hΛ.1 g (by rwa [hfix])
+  have h := _root_.GlobalTheory.HL.Unimod.unimodular L Hm hH 0 Fin.elim0 (by simp) Λ Λ hΛ.1 hΛ.1 g (by rwa [hfix])
   rw [hfix, hgΛ] at h
   have hne : ((isomG L Hm ⊓ stabL L Λ).relIndex (isomG L Hm ⊓ stabL L Λ') : ℝ) ≠ 0 := by
-    exact_mod_cast (GlobalTheory.T.latticeStabilizer_commensurable_unramified_hermitian L Λ' Λ hΛ'.1 hΛ.1 (isomG L Hm)).1
+    exact_mod_cast (_root_.GlobalTheory.LatComm.stab_commensurable L Λ' Λ hΛ'.1 hΛ.1 (isomG L Hm)).1
   simp only [invVol, Subgroup.relIndex_self, Nat.cast_one, div_one] at h
   exact (div_eq_one_iff_eq hne).1 h
 
@@ -166,7 +166,7 @@ theorem mass_eq_const_mul_content : ∀ {F : Type} [Field F] [ValuativeRel F] [T
     funext a b
     exact DualInter.cj_hf hH _ _
   obtain ⟨e, he⟩ := exists_pow_smul L ϖ hϖ hs.1 x
-  obtain ⟨j, hj, hth⟩ := GlobalTheory.T.thick_orbit_selfDual_unramified_lattice L ϖ hϖ Hm hH Λs hs Λs hs m _ hx 1 e
+  obtain ⟨j, hj, hth⟩ := _root_.GlobalTheory.ThickOrbit.main L ϖ hϖ Hm hH Λs hs Λs hs m _ hx 1 e
   have hth' := fun i hi => hth i hi (isomG L Hm ⊓ stabL L Λs) le_rfl
     (fun g hg hg' => ⟨hg, (_root_.GlobalTheory.HL.congruence_subgroup_facts L ϖ hϖ Λs hs.1 1).2.1 le_rfl g hg'⟩) x he rfl
   have h1K := fun i hi => GlobalTheory.T.matrixCongruentOneModUniformizerPow_group_and_orbits L ϖ hϖ m i hi
@@ -176,7 +176,7 @@ theorem mass_eq_const_mul_content : ∀ {F : Type} [Field F] [ValuativeRel F] [T
   have hhpos := ((h1K j hj).2.2 _ hΓ hx).2
   set H := fixG L Hm (Submodule.span E (Set.range x)) with hHdef
   have hcomm : ∀ A B, IsLat L A → IsLat L B → (H ⊓ stabL L B).relIndex (H ⊓ stabL L A) ≠ 0 :=
-    fun A B hA hB => (GlobalTheory.T.latticeStabilizer_commensurable_unramified_hermitian L A B hA hB H).1
+    fun A B hA hB => (_root_.GlobalTheory.LatComm.stab_commensurable L A B hA hB H).1
   have hvpos : 0 < invVol (H ⊓ stabL L Λ0) (H ⊓ stabL L Λs) :=
     (GlobalTheory.HL.invVol_mul_pos_le_conj _ (H ⊓ stabL L Λs) _ (hcomm _ _ hs.1 h0) (hcomm _ _ h0 hs.1)
       (hcomm _ _ hs.1 h0) (hcomm _ _ h0 hs.1)).2.1

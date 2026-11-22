@@ -4,7 +4,8 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GrGenOfIsFlagVBOn
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GradedSandwichDegreeBound
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapFromSpecStalk
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeEvalAtLocalRingStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeEvalAtLocalRing
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsIndepOfSat
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField TensorProduct Filter Topology Matrix
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CompanionTheory.Ar
@@ -198,7 +199,7 @@ theorem pick : ∀ (X : Scheme.{0}) (Ω : Type) [Field Ω] (ξ : Sp Ω ⟶ X) (K
   have hv0 : ValAt ξ zL ((m : Ω)⁻¹ * π i e) 0 :=
     valAt_zero_factor hg zL h hm hα hκ hκi hκ0 (htg ▸ hu)
   obtain ⟨ER, _, _, ⟨MR⟩⟩ := lieModel_exists X G L zL
-  obtain ⟨ev, hev, hevs, -⟩ := GlobalTheory.T.lie_lattice_eval_at_local_ring X G Ω ξ Li M L zL h ER MR hg inferInstance
+  obtain ⟨ev, hev, hevs, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.lieLat_val X G Ω ξ Li M L zL h ER MR hg inferInstance
   let ar : regAt ξ ⟨centre zL, h⟩ := ⟨_, hα⟩
   let xb : M.lat ⟨centre zL, h⟩ := ⟨_, hmb i⟩
   let xe : M.lat ⟨centre zL, h⟩ := ⟨e, he_lat⟩

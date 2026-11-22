@@ -3,7 +3,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Sec
 import Development.AbelianVarietyTheory.Statements.SemistableTorsion.UTorsSt
 import Development.AbelianVarietyTheory.PublishedTheorems.SemistableReduction₂.SemistableReductionSt
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUnitValue
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.WeightSpaceValuesIntegralTorsionBoundShortestVecStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.WeightSpaceValuesIntegralTorsionBoundShortestVec
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsRatLog
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsTorusPoint
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIsCombTranslatesOfNuGe
@@ -257,7 +257,7 @@ theorem main : Laws → Laws2 → UTorsSt → ∀ (o Ω : Type) [CommRing o] [Fi
   obtain ⟨i, -, hi⟩ := IsUltrametricDist.exists_norm_finsetSum_le_of_nonempty (t := Finset.univ) Finset.univ_nonempty
     fun i => b i * ∑ j, (y₀.comp (algebraMap o S.R)) (S.proj (S.perp l.yy.ker) 0 j i) * y₀ ⟨S.ev h j, S.ev_mem h j⟩
   rw [← key, norm_mul, norm_mul, hc1, _root_.mul_one] at hi
-  have hle := GlobalTheory.T.weightSpace_values_integralTorsion_bound_shortestVector hL hL2 hU o Ω S ρ p y₀ u l hy 0 (fun v₀ => by
+  have hle := _root_.GlobalTheory.ZH.WeightBound.main hL hL2 hU o Ω S ρ p y₀ u l hy 0 (fun v₀ => by
     rw [map_zero]; exact quadratic_nonneg _ l.pos _) h hh i
   rw [map_zero l.q, zero_div, neg_zero, Real.exp_zero, _root_.mul_one] at hle
   refine ⟨i, le_antisymm hle ?_⟩

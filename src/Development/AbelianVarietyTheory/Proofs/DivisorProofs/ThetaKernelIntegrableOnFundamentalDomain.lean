@@ -13,7 +13,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HermitianWittInd
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LintegralSiegelConeInvModulusLtTopWeil
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilThetaLevelPolynomialInHeight
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SobolevSeminormWeilThetaPolynomialInHeightStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WittFrameTorusEqLeviElementStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WittFrameTorusEqLeviElement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LeviThetaValueLeDetMulRationalSum
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HalfPowerDetAbsRealDiagonalTorus
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusMixedCoordinateSumRapidDecayStatement
@@ -47,7 +47,7 @@ theorem theta_le_height {D : D7} (ψ : AddChar (AF D.host.F) ℂ) (θ : InfFam D
   have hC₁ : IsCompact (C₀ * (K : Set (GA D M))) := hC₀.mul hK
   obtain ⟨K₀, hK₀n, hK₀c, m, e, hlev⟩ := _root_.GlobalTheory.LevelGrowth.level_poly ψ θ hθ ε M X χ χ' ω hω Φ hΦ _ hC₁
   obtain ⟨μ, 𝓕, hμ⟩ := GlobalTheory.Size.exists_isCovolOne (sgn ε M) X
-  obtain ⟨S₀, d, hA1⟩ := GlobalTheory.T.wittFrame_torus_eq_levi_element θ hθ ε M r Xf Yf hW
+  obtain ⟨S₀, d, hA1⟩ := _root_.GlobalTheory.WittLevi.witt_levi θ hθ ε M r Xf Yf hW
   obtain ⟨μ', 𝓕', hcov, hA2⟩ := _root_.GlobalTheory.LeviThetaSum.levi_sum ψ (sgn ε M) S₀ X r d χ χ' (ω.toSgn ε) hω
   obtain ⟨k, A, C, hC, hB⟩ := GlobalTheory.T.torus_mixedCoordinate_sum_rapid_decay ψ (IsWeilDatumO.std hω) θ hθ (sgn ε M) X S₀ r d μ' 𝓕' hcov c hc K₀ hK₀n hK₀c
     μ 𝓕 hμ τ₀ (Module.finrank ℚ D.host.F * X.rank)

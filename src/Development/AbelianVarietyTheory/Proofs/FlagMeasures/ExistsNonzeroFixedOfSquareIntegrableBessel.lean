@@ -3,13 +3,13 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.BlockAnti
 import Formalism.PeriodIntegrals.QuotInv
 import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
 import Formalism.LocalRingCardinality.DataCD
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SmoothVectorsDenseInvariantStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SmoothVectorsDenseInvariant
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselSubgroupsClosedUnitaryWCompact
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DiffQuotientBesselMapTendsto
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselOpNormPowerIntegralLtTopClosedSubgroupStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.WeilFormulaBesselUnitaryIntegrableStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnimodularBesselSubgroupsUWNStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselOpNormPowerIntegralLtTopClosedSubgroup
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.WeilFormulaBesselUnitaryIntegrable
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnimodularBesselSubgroupsUWN
 
 noncomputable section
 
@@ -160,7 +160,7 @@ theorem integrable_eFun {σ : Mat k r → (H →L[ℂ] H)} {w : H} {a d : ℝ} {
     refine lt_of_lt_of_le ?_ ha
     have := pow_lt_pow_right₀ (a := ((2 * r + k + 1 : ℕ) : ℝ)) (by linarith) (by norm_num : 2 < 5)
     linarith
-  have hfin := GlobalTheory.T.besselOpNormPowerIntegral_lt_top_closedSubgroup k r _ μG a hG hμ hA
+  have hfin := _root_.GlobalTheory.SgGrowth.normInt_lt_top k r _ μG a hG hμ hA
   refine ⟨aesm_of_continuousOn hG.2.1 (continuousOn_eFun hσ w μG) hae, ?_⟩
   have hle : ∫⁻ g, ‖eFun μG σ w (Matrix.of g)‖ₑ ∂μG ≤
       ∫⁻ g, ENNReal.ofReal (|fdegH μG σ w| * |C|) * ENNReal.ofReal (opn (Matrix.of g) ^ (-a)) ∂μG := by
@@ -238,7 +238,7 @@ theorem nonVan_of_bessel : ∀ (k r : ℕ) {H : Type} [NormedAddCommGroup H] [In
   obtain ⟨hG, -, -, hS, -⟩ := _root_.GlobalTheory.SgInf.closedSub_groups k r z hz hT
   have he := integrable_eFun hstd hG
   obtain ⟨-, hσ, -, hw, hμ, hsch, -, -, -⟩ := hstd
-  obtain ⟨hσf, hν, -⟩ := GlobalTheory.T.weil_formula_besselUnitary_integrable k r _ μG μS ν hS hμ hμS ((GlobalTheory.T.unimodular_besselSubgroups_UW_N k r z hz hT μS).1 hμS) hq
+  obtain ⟨hσf, hν, -⟩ := _root_.GlobalTheory.SgInf.weil_integrable k r _ μG μS ν hS hμ hμS ((_root_.GlobalTheory.SgInf.unimodular_S_N_UW k r z hz hT μS).1 hμS) hq
   haveI := hμ.1
   haveI : SecondCountableTopology Wp := by
     haveI : ProperSpace Wp := FiniteDimensional.proper_rclike ℂ Wp
@@ -246,7 +246,7 @@ theorem nonVan_of_bessel : ∀ (k r : ℕ) {H : Type} [NormedAddCommGroup H] [In
   have hνG : ∀ᵐ x ∂ν, Matrix.of x ∈ GG k r := hν
   have hμG : ∀ᵐ x ∂μG, Matrix.of x ∈ GG k r := hμ.2.2.1
   have hμSS : ∀ᵐ x ∂μS, Matrix.of x ∈ Sset k r z := hμS.2.2.1
-  obtain ⟨-, -, hDV, htr, hV⟩ := GlobalTheory.T.smooth_vectors_dense_invariant k r σ w hσ
+  obtain ⟨-, -, hDV, htr, hV⟩ := _root_.GlobalTheory.SgInfDD.DD_stable_dense k r σ w hσ
   have hDs : ∀ v ∈ DD σ w, IsSmoothVec σ v := fun v hv => (hV hws).1 v (hDV hv)
   have hcont : ∀ v, IsSmoothVec σ v → ContinuousOn (fun g => B (σ g v)) (GG k r) := fun v hv =>
     (_root_.GlobalTheory.diffQuot_bessel k r σ z _ π B v 0 hσ hB hv (by simp [InLieHpk])).2.1

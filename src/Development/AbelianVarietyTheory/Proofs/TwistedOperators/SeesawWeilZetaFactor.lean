@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRtensOp
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelProjectionFactorisationStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelProjectionFactorisation
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaTransformDarbouxModelLinearInjective
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DarbouxModelAlgebraicVectorsLeAdelicSchwartzStatement
 
@@ -86,7 +86,7 @@ theorem mapA_thO_sum_pure : GlobalTheory.Published.HoweDualityReal → GlobalThe
     obtain ⟨q, hq⟩ := exists_factor_inj T _ (fun x hx => hinj x (hS hx)) (liftPure Γ.M R.p Rf.p (vacIm Γ Rf))
     exact ⟨q, fun Ψ hΨ => by rw [← hT Ψ (hS hΨ)]; exact hq Ψ hΨ⟩
 
-  have HL := GlobalTheory.T.weil_model_projection_factorisation D.sp.cm.sig Γ.V Γ.W Γ.M Bs.ψ hg.hM _ R.p _ Rf.p (vacIm Γ Rf)
+  have HL := _root_.GlobalTheory.PureLift.exists_pureLift D.sp.cm.sig Γ.V Γ.W Γ.M Bs.ψ hg.hM _ R.p _ Rf.p (vacIm Γ Rf)
     (Filter.Eventually.of_forall fun _ => rfl)
   have hL : ∀ i, liftPure Γ.M R.p Rf.p (vacIm Γ Rf) (GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.pure (f i) (φ i)) =
       R.p (f i) ⊗ₜ[ℂ] GlobalTheory.SmallThetaModules.pureT (vacIm Γ Rf) (fun v => Rf.p v (φ i v)) := by

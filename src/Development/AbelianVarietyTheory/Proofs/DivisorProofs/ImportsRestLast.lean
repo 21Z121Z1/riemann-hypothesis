@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImagQuadIntegerLatt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralJInvariantOfComplexMultiplication
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DenominatorBoundWeierstrassCmTorsion
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EisensteinWeierstrassValuesLatticeTau
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraicValuationAtLeastBasicPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraicValuationAtLeastBasicProperties
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionPointOfLatticeTauLatticeMembership
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NatCastMulTorsMemLatticeIff
 
@@ -25,7 +25,7 @@ theorem main : ∀ (l : ℕ) [Fact l.Prime] (lam : algebraicClosure ℚ ℂ →+
   intro l hl lam d Λ c Ω τ hd h4 hΛ hτ hΩ
   obtain ⟨hst, him⟩ := _root_.GlobalTheory.IntLatMul.main d Λ hd.pos hΛ
   refine ⟨GlobalTheory.QFam.pow_twelve_eq_DD Λ c τ hτ Ω hΩ, ?_, ?_⟩
-  · refine (GlobalTheory.T.algebraicValuationAtLeast_basic_properties l lam).1 1 (jT τ) hl.out.not_dvd_one ?_
+  · refine (_root_.GlobalTheory.SzRules.main l lam).1 1 (jT τ) hl.out.not_dvd_one ?_
     rw [Nat.cast_one, one_mul]
     exact _root_.GlobalTheory.JInt.main Λ c τ _ hτ hst him
   · intro N _ M x hM hx hx0

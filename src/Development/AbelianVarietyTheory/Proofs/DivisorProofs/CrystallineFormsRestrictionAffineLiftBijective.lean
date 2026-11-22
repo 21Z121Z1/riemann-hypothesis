@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.DivPowerCompatTwoFo
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FourTermComplexRestrictionBijectiveCollapse
 import Development.AbelianVarietyTheory.Definitions.Divisors.PullbackBijectiveDegreesOneTwo
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoproductThickeningAffineLiftPoincare
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FourTermComplexQuasiIsoAtFormalPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FourTermComplexQuasiIsoAtFormalProperties
 
 set_option autoImplicit false
 
@@ -112,7 +112,7 @@ theorem qat_rr (U : AffOp D.X) : (KK D.κ D.t).QAt (rr Λ ((ell Λ h).obj U)) :=
       (Category.assoc _ _ _).symm.trans ((congrArg (· ≫ σ) h2).trans h1)⟩).trans
       (hu (𝟙 _) ⟨Category.comp_id _, Category.comp_id _⟩).symm
   have hi : IsIso σ := ⟨σ, hσ, hσ⟩
-  obtain ⟨hiso, hcomp, -⟩ := GlobalTheory.T.fourTermComplex_quasiIsoAt_formal_properties (Thick D.κ D.t) (KK D.κ D.t)
+  obtain ⟨hiso, hcomp, -⟩ := _root_.GlobalTheory.CxCoh.QAtFormal.qAt_formal (Thick D.κ D.t) (KK D.κ D.t)
   exact h1 ▸ hcomp _ _ _ _ _ (qat_ll Λ T) (hiso _ _ σ)
 
 theorem qat_map_id (U : AffOp D.X) {B : Thick D.κ D.t} (f : Λ.L.obj U ⟶ B) (hf : (KK D.κ D.t).QAt f) :

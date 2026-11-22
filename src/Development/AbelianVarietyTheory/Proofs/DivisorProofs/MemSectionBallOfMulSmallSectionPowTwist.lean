@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.SmallFam
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.SmallSecTensTriv
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsAlgClosedBaseChange
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeneratingPairSectionsNormBoundsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeneratingPairSectionsNormBounds
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithGlobalMaximumPrincipleOffDivisor
 import Development.AbelianVarietyTheory.Definitions.Divisors.CharZeroFunctionField
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.VolGe
@@ -19,7 +19,7 @@ namespace GlobalTheory.HSNef.MpDivTwist
 theorem mem_Bl_of_mul_pow_twist : ∀ (k : Type) [CommRing k] (X : Scheme.{0}) [IsIntegral X] (p : X ⟶ Sp k) (D : ℕ), IsArithVar p D → ∀ (P : Pair p) (c : ℕ), GenAt P c → ∀ s : X.functionField, s ∈ P.H 0 1 → s ≠ 0 → ∀ δ : ℝ, 0 < δ → ∃ C : ℝ, 0 ≤ C ∧ ∀ (N m : ℕ) (f : X.functionField), f ∈ P.H N (-c) → f * s ^ m ∈ P.Bl N (m - c) 2 → f ∈ P.Bl N (-c) (Real.exp (δ * N + C * m + C)) := by
   intro k _ X _ p D hX P c hc s hs hs0 δ hδ
 
-  obtain ⟨n, v, ρ₁, hρ₁, hv, hcov⟩ := GlobalTheory.T.generatingPairSections_norm_bounds k X p D hX P c hc
+  obtain ⟨n, v, ρ₁, hρ₁, hv, hcov⟩ := _root_.GlobalTheory.HSNef.GenLow.gen_low k X p D hX P c hc
 
   obtain ⟨ρ₂, hρ₂, hmax⟩ := _root_.GlobalTheory.VolBr.max_principle_global k X p D hX P s hs hs0 δ hδ
   have hnu0 : ∀ (a b : ℤ) (σ : k →+* ℂ) (y : CxPts p σ) (g : X.functionField), 0 ≤ P.nu a b σ y g := by

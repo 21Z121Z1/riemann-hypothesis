@@ -4,10 +4,10 @@ import Formalism.LocalToGlobal.CharacterGerms.CartesianBoundOnCurves
 import Formalism.LocalToGlobal.CharacterGerms.CoeffIterateZero
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.PeriodValuation
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.TwoMulChainStartIndexAddOneOfOdd
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.CoeffLeafGaugeSubMainTermEqZeroOnFirstAxisStatement
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.PderivLeafGaugeEqPairingAddIntegralStatement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.CoeffLeafGaugeSubMainTermEqZeroOnFirstAxis
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.PderivLeafGaugeEqPairingAddIntegral
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.LinearSubstCoordinateIntegralOfDegreeLt
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.CoeffIntegralOnExponentsSubstOfLowerSetStatement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.CoeffIntegralOnExponentsSubstOfLowerSet
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.CoeffCoordinatesGoodTangentsLtSq
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.HPullWUpGTwoGroupEmbeddingEqRename
 open Formalism.L2.FormalSeriesBounds Formalism.IncomingBounds GlobalTheory.MainTerm Classical
@@ -75,7 +75,7 @@ private theorem pderiv_inr_mainM_one {C : Type} [Field C] (V : VF C) {ι ι' : T
 theorem mPlus_of_good_tangents : ∀ (C : Type) [Field C] (V : VF C) (d : ℕ) [NeZero d] (I J : Fin 2 → Type) [∀ g, Fintype (I g)] [∀ g, Fintype (J g)] (X : RowData C V d I J), X.Alt → 1 < d → ∀ (g : Fin 2) (a : ZMod d) (S : ∀ g, Sys (X.G g)) (t : ∀ g, I g → MvPowerSeries (I g) C), (∀ g, (S g).IsT (t g)) → ∀ (N : ℕ) (em : Fin N ↪ I g) (v' : Fin X.n → I (1 - g) → C), (∀ δ, (X.G g).ty (Sum.inl (em δ)) = a) → (∀ δ x, (S g).al (em δ) 1 x = 0) → (∀ b k, V.Ge 0 (v' b k)) → (∀ b k, (X.G (1 - g)).ty (Sum.inl k) ≠ a + ((1 : ℕ) : ZMod d) → v' b k = 0) → X.MPlusConcl g a N (fun δ => (S g).tan (em δ)) v' (fun b c => ∑ κ : J g, ∑ k : I (1 - g), -((V.l : C) * (S g).be (em c) 1 κ) * X.pair g κ k * v' b k) := by
   intro C _ V d _ I J _ _ X hAlt hd g a S t hT N em v' hty hal hint hpure μ hμl hμr
   by_cases h0 : ∀ b, μ (Sum.inr b) = 0
-  · rw [GlobalTheory.T.coeff_leafGauge_sub_mainTerm_eq_zero_on_first_axis _ _ _ _ _ X g a 1 _ _ _ v' _ μ h0]
+  · rw [_root_.GlobalTheory.MainTerm.Axis.coeff_hM_sub_mainM_eq_zero _ _ _ _ _ X g a 1 _ _ _ v' _ μ h0]
     exact VF.Ge.zero 0
   simp only [not_forall] at h0
   obtain ⟨b, hb⟩ := h0
@@ -83,7 +83,7 @@ theorem mPlus_of_good_tangents : ∀ (C : Type) [Field C] (V : VF C) (d : ℕ) [
       (fun δ => (S g).tan (em δ)) c x = 0 := by
     intro c x hx
     exact tan_pure (S g) (em c) x (by rw [hty c]; exact hx)
-  obtain ⟨γ, hγ, hγeq⟩ := GlobalTheory.T.pderiv_leafGauge_eq_pairing_add_integral C V d I J X hAlt g a 1 odd_one hd S t hT (Fin N) (Fin X.n)
+  obtain ⟨γ, hγ, hγeq⟩ := _root_.GlobalTheory.GaugeDeriv.pderiv_hM C V d I J X hAlt g a 1 odd_one hd S t hT (Fin N) (Fin X.n)
     (fun δ => (S g).tan (em δ)) v' he_pure hint hpure b
   have h91 := _root_.GlobalTheory.MainTerm.hPullW_upG_toW C I g (Fin N) (Fin X.n) (fun δ => (S g).tan (em δ)) v'
   have hsingle : Finsupp.single (Sum.inr b) 1 ≤ μ :=
@@ -130,7 +130,7 @@ theorem mPlus_of_good_tangents : ∀ (C : Type) [Field C] (V : VF C) (d : ℕ) [
   rw [hsplit, map_add]
   refine VF.Ge.add ?_ ?_
   · have h2 : ∀ j g : Fin 2, j = g ∨ j = 1 - g := by decide
-    refine GlobalTheory.T.coeffIntegralOnExponents_subst_of_lower_set C V (Fin N ⊕ Fin X.n) (WV I)
+    refine _root_.GlobalTheory.LowerSubst.subst_int_on_lower C V (Fin N ⊕ Fin X.n) (WV I)
       (fun ν => ∑ c, ν (Sum.inl c) < V.l ^ 2 ∧ ∑ b', ν (Sum.inr b') < V.l) ?_ γ _ hγ ?_ ?_ μ' ⟨hl', hr'⟩
     · intro ν ν' hle hP
       exact ⟨lt_of_le_of_lt (Finset.sum_le_sum fun c _ => hle (Sum.inl c)) hP.1,

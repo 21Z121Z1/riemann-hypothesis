@@ -11,7 +11,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRin
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBC
 import Development.AbelianVarietyTheory.Definitions.Uniformization.TXFrame
 import Development.AbelianVarietyTheory.Definitions.Uniformization.AllDV
-import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformizationEndomorphismCalculusStatement
+import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformizationEndomorphismCalculus
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.RosatiAdjointAbelianPartAndClassifyingMapLinear
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.TorsionPointEndomorphismImageEqMovedGtPoint
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationTorsionIdentificationWithPairing
@@ -74,7 +74,7 @@ theorem main : LL → TwistBCSpanStatement → TWM.VRatioGtStatement → TWState
   have hB := D.tau_bimult
   have inj := GlobalTheory.IotaInj.main hL V _ hA D F
   have dv := (gt_onto_divisible_kernel hL V _ hA D F).2.1
-  have ec := GlobalTheory.T.uniformizationEndomorphism_calculus hL V _ hA D A G hG U F
+  have ec := _root_.GlobalTheory.EndCalc.end_calculus hL V _ hA D A G hG U F
   have key := _root_.GlobalTheory.UT.EndTors.main hL h₁ h₂ h₃ h₄ V hc ϖ hϖ D Q hQ F v hv A G hG U
   have ros := (_root_.GlobalTheory.UT.rosatiAdj_and_c_linear_of_endU hL V _ hA D A G hG U E E' hadj).1
 

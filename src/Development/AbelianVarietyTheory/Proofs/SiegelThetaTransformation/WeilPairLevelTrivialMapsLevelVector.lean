@@ -6,14 +6,14 @@ import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LevelTe
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.CompletedTensorLatticeStrongApproxOpenCompact
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SmulEqZeroOfInf
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaKernelOrthonormalFrameInDomainPeriodLinear
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdelicZakThetaExistsUniqueStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdelicZakThetaExistsUnique
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaKernelTestFunctionMapLinearInjectiveEquivar
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FiniteAdelicLatticeTransportLaws
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SelfDualLatticesAtLevelStatement
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.CompletedTensorLatticeLatticeVacuumTransportStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SelfDualLatticesAtLevel
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.CompletedTensorLatticeLatticeVacuumTransport
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FinitePointsCarryLatticeVacuumToMovedVacuum
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DefiniteGroupVacuumPhaseIndependentOfLattice
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RowsCongrOfTrivialAtLevelStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RowsCongrOfTrivialAtLevel
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum Formalism.L2.Pj MeasureTheory IsDedekindDomain NumberField Matrix Complex
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.FD GlobalTheory GlobalTheory.ThFr GlobalTheory.Ker
@@ -179,7 +179,7 @@ theorem om_Th_phi : ∀ (D : D7) (S T : HSp D) (C : Ctx S T), ∀ om : GA D S ×
     intro g
     by_cases H : ∃ L : Lt D.host.E T.rank, g ∈ GfC T ∧ TrivAt T (C.under Lv) g ∧ L.FG ∧ IsMov (fmt T g) C.X.Λ L
     · obtain ⟨L, h1, h2, h3, h4⟩ := H
-      have hL : L ∈ Lv.lats := ((GlobalTheory.T.self_dual_lattices_at_level D S T C).2 Lv g L h3 h4).2.1 h2
+      have hL : L ∈ Lv.lats := ((_root_.GlobalTheory.Ker.MovLev.mov_mem_lattices D S T C).2 Lv g L h3 h4).2.1 h2
       have hm := ((_root_.GlobalTheory.Ker.isMov_laws D _ _ hX0).2.2.2 _ _ (fmt_mul_inv T g)).2 L h3 h4
       have hc : conjI Lv.𝔪 ≠ ⊥ := fun e => Lv.proper (by
         have := Lv.cop
@@ -193,22 +193,22 @@ theorem om_Th_phi : ∀ (D : D7) (S T : HSp D) (C : Ctx S T), ∀ om : GA D S ×
   choose ep hep using H1
   choose c hc using H2
   refine ⟨ep, c, fun h Λ g L h1 h2 h3 h4 g1 g2 g3 g4 => ⟨(hep h Λ h1 h2 h3 h4).1, (hc g L g1 g2 g3 g4).1, ?_⟩⟩
-  have hL : L ∈ Lv.lats := ((GlobalTheory.T.self_dual_lattices_at_level D S T C).2 Lv g L g3 g4).2.1 g2
-  have hΛ : Λ ∈ Vset D.host.E S.rank M := (GlobalTheory.T.self_dual_lattices_at_level D S T C).1 M h Λ hM0 h2 h3 h4
+  have hL : L ∈ Lv.lats := ((_root_.GlobalTheory.Ker.MovLev.mov_mem_lattices D S T C).2 Lv g L g3 g4).2.1 g2
+  have hΛ : Λ ∈ Vset D.host.E S.rank M := (_root_.GlobalTheory.Ker.MovLev.mov_mem_lattices D S T C).1 M h Λ hM0 h2 h3 h4
   have hΛ0 : Λ.FG ∧ _ := ⟨h3, (((_root_.GlobalTheory.Ker.isMov_laws D _ _ hS).2.2.2 _ _ (fmtC_mul_inv S h)).2 Λ h3 h4).1⟩
   have hm := ((_root_.GlobalTheory.Ker.isMov_laws D _ _ hX0).2.2.2 _ _ (fmt_mul_inv T g)).2 L g3 g4
   have h𝔠 : Ideal.span {2} * conjI Lv.𝔪 ≠ ⊥ := fun e => Lv.proper (by
     have := RecSum.cop_level Lv
     rwa [e, ← Ideal.zero_eq_bot, isCoprime_zero_left, Ideal.isUnit_iff] at this)
   have hL0 := full_smul ⟨g3, hm.1⟩ h𝔠
-  have hmov := (GlobalTheory.T.completedTensorLattice_lattice_vacuum_transport D S T C h g _ _ _ _ h4 (hm.2.2.2.2 _ _ h𝔠 h𝔠).1).1
+  have hmov := (_root_.GlobalTheory.TensLatMove.hatA_move D S T C h g _ _ _ _ h4 (hm.2.2.2.2 _ _ h𝔠 h𝔠).1).1
   have hV0 := RecSum.isVac_unitv C.idx C.sympl C.even hSV (hl _ hX).1 (hv₀ _ hX)
   have hV := RecSum.isVac_unitv C.idx C.sympl C.even hΛ (hl _ hL).1 (hv₀ _ hL)
   have e0 : unitv (projA C.X C.bas Lv.w (tens (stdL D.host.E S.rank) (Lv.sh C.X.Λ)) (v₀ C.X.Λ)) = v₀ C.X.Λ := by
     rw [(RecSum.unitv_proj C.idx C.sympl C.even hSV (hl _ hX).1 (hv₀ _ hX) (hv₀ _ hX)).2, (hv₀ _ hX).2.1]
     simp
-  have t0 : C.IsTh (C.Th (C.xB B) (v₀ C.X.Λ)) := (GlobalTheory.T.adelicZakTheta_exists_unique D S T C _ hx _ (hv₀ _ hX).1).1.1
-  have t1 := (GlobalTheory.T.adelicZakTheta_exists_unique D S T C _ hx _ hV.1).1.1
+  have t0 : C.IsTh (C.Th (C.xB B) (v₀ C.X.Λ)) := (_root_.GlobalTheory.Ker.ZakEx.isZak_Th D S T C _ hx _ (hv₀ _ hX).1).1.1
+  have t1 := (_root_.GlobalTheory.Ker.ZakEx.isZak_Th D S T C _ hx _ hV.1).1.1
   have key : om (h, g) (C.Th (C.xB B) (v₀ C.X.Λ)) = (ep h * c g) •
       C.Th (C.xB B) (unitv (projA C.X C.bas Lv.w (tens Λ (Lv.sh L)) (v₀ L))) := by
     rw [show ((h, g) : GA D S × GA D T) = (h, 1) * (1, g) by simp, map_mul, Module.End.mul_apply,
@@ -220,7 +220,7 @@ theorem om_Th_phi : ∀ (D : D7) (S T : HSp D) (C : Ctx S T), ∀ om : GA D S ×
     (hmov _).2 ⟨_, ((HatLat.hatA_tens D S T C _ _ hS (full_smul hX0 h𝔠)).2.1 _).2 (f1 i), rfl⟩
   choose f' f1' u' hu' eu er using fun i => exists_approx C hΛ0 hL0 t1 (hu i) hM0
   have hcong : ∀ i k, Cong C.X Lv.𝔪 (f' i k) (f i k) := fun i =>
-    GlobalTheory.T.rows_congr_of_trivial_at_level D S T C Lv hn M hw hM0 hM h Λ g L h1 h2 h3 h4 g1 g2 g3 g4 _ _ (by
+    _root_.GlobalTheory.Ker.LevCong.cong_of_act D S T C Lv hn M hw hM0 hM h Λ g L h1 h2 h3 h4 g1 g2 g3 g4 _ _ (by
       rw [eu i, sub_add_cancel_left]
       exact neg_mem (nsmul_mem_hatA (fun y hy => nsmul_mem_tens hM hy) (hu' i)))
   rw [RecSum.phi_eq_sum C.idx C.sympl C.even hn hM hSV hX v₀ hV0 f f1 f2 f3,

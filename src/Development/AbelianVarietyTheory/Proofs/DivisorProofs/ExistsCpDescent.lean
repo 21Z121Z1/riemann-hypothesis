@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsIntegr
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AppTopBijectiveAndSurjectiveNormalDomain
 import Development.AbelianVarietyTheory.Definitions.Divisors.TateProductRigidificationTrivial
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AppBijectiveOfFlatBaseChangeGlobalFunctions
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPullbackPowersCartesianGroupSquareStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPullbackPowersCartesianGroupSquare
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTransportedGeneratorDescendBijectiveAppStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CubicalStructureOfPushedPointValuesCubeFunction
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CubeSymmCompatDescendsFromPushedPointsStatement
@@ -58,7 +58,7 @@ theorem exists_cp_descent : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRin
     have hb := _root_.GlobalTheory.Mum.app_bijective_of_flat_baseChange R M.S Y Z M.π y p q inferInstance inferInstance hbijπ hy hpb
     have : Surjective p := MorphismProperty.of_isPullback hpb.flip hsurjπ
     exact ⟨hb, fun a b e => cancel_of_surjective p (fun V => (hb V).1) a b e⟩
-  obtain ⟨A2, A3, A4⟩ := GlobalTheory.T.isPullback_powers_cartesian_group_square h
+  obtain ⟨A2, A3, A4⟩ := _root_.GlobalTheory.Mum.PowCart.isPullback_pow h
   have k0 := key (𝟙 (Sp R)) M.π (𝟙 M.S) inferInstance (IsPullback.id_vert M.π)
   have k1 := key G.hom β G'.hom hf1 h.1
   have k2 := key _ _ _ hf2 A2

@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.EndValuedForm11Coef
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChernDensityFrameIndepChartJacobianFactor
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AemeasurableChartOfLocallyContinuousDensityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousAtPolarisedTopChernCoeff
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernTopDensityEqPolarisedTopChernStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernTopDensityEqPolarisedTopChern
 open MeasureTheory Filter Topology GlobalTheory GlobalTheory.Cartier GlobalTheory.ProjVar GlobalTheory.CxPts GlobalTheory.ChartGlue GlobalTheory.FlagBundle GlobalTheory.HermFrame GlobalTheory.GoodMetric GlobalTheory.GoodTop
 open ReciprocityTheory.L2DbarEstimates (V)
 open scoped ContDiff Matrix
@@ -30,7 +30,7 @@ theorem isTopForm_mul_topDens : ∀ {F : Type} [Field F] {σ : F →+* ℂ} {X :
       have hu := hM.isUnit_det_chart hy c hc hA ()
       have h2 : ContinuousAt (fun v => chernTop (MvPolynomial.X ((), X.dim))
           (fun w => H (E.nonempty (under y)).choose (c.e.symm w)) v) (c.e y) := by
-        simp only [GlobalTheory.T.chernTopDensity_eq_polarisedTopChern]
+        simp only [_root_.GlobalTheory.GoodTop.chernTop_eq_mixTop]
         refine continuousAt_const.mul (Complex.continuous_re.continuousAt.comp ?_)
         refine _root_.GlobalTheory.GoodTop.continuousAt_mixTop (fun i a b p q => ?_)
         exact ((MContDiffAt.curv (j := 0) hsm hu (by norm_num) (coordVec a) (coordVec b)) p q).continuousAt

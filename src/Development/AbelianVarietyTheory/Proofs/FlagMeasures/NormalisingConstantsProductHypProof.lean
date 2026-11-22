@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ConstC
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.NormalizingConstantEq
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselLowestVectorLocalMassEqTransportedStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselLowestVectorLocalMassEqTransported
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnipotentHaarEqConstMulTransportedProduct
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HaarMeasureBesselUnitaryEqPullbackProduct
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ProdLocalQuotientMassEqMeasureRatio
@@ -41,7 +41,7 @@ theorem constC : ConstC := by
     obtain ⟨cH, hH0, hHT, hHu, hH⟩ := _root_.GlobalTheory.PullHaarW.pullH D X C hB hG u
     have hP := _root_.GlobalTheory.UnitW.prod_l2SG_eq D X C hB hG u cN cH hN0 hNT hH0 hHT hN hH
     have hP' : ∏ τ, l2SG (C.nuS u τ) (phiOf hB u τ) = cN * cH := by
-      rw [← hP]; exact Finset.prod_congr rfl fun τ _ => GlobalTheory.T.l2SG_phiOf_eq_l2SG_wT_of_goodLoc D X C hB hG u τ
+      rw [← hP]; exact Finset.prod_congr rfl fun τ _ => _root_.GlobalTheory.PhiTranslate.bessel_lowest_vector_local_mass_eq_transported D X C hB hG u τ
     have hFN : MeasurableSet (Y.FN u) := (Y.FN_fund u).1
     have hmN : (X.muN u (Y.FN u)).toReal = cN.toReal * (covN C Y u).toReal := by
       rw [hN _ hFN, ENNReal.toReal_mul]; rfl

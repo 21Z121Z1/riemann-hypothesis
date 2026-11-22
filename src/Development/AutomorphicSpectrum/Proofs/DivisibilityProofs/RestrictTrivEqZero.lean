@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.BijectiveC
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianHodgeDeRham
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsCrystalPairing
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CubeTheorem
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CoefRestrictSmallCoverInjectiveStatement
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CoefRestrictSmallCoverInjective
 open CategoryTheory AlgebraicGeometry MonoidalCategory CartesianMonoidalCategory
 open ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CatCoh GlobalTheory.Cris GlobalTheory.DeRham
 attribute [local instance] Over.cartesianMonoidalCategory
@@ -18,7 +18,7 @@ theorem restrict_triv_eq_zero : ∀ (R : Type) [CommRing R] (X : Scheme.{0}) (s 
   obtain ⟨c, rfl⟩ := H2.mk_surjective _ z
   rw [CoefMap.pullCohomologyTwo_class, H2.mk_eq_mk] at hz
   obtain ⟨f, hf⟩ := hz
-  apply GlobalTheory.T.coef_restrict_small_cover_injective R X s L.ι L.U hL.cover
+  apply _root_.GlobalTheory.CompanionTheory.TrivSmall.pull_restrict_small_injective R X s L.ι L.U hL.cover
   rw [map_zero, CoefMap.pullCohomologyTwo_class, CoefMap.pullCohomologyTwo_class, H2.mk_eq_zero]
   let P : ObjectProperty (IsTriv s).FullSubcategory :=
     fun T : (IsTriv s).FullSubcategory => IsSmall (dp0 R) s L.U T.obj

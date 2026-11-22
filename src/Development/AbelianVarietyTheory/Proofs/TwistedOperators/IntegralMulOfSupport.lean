@@ -14,8 +14,8 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FourierJacobiUni
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsHeisenbergSubgroupFourierJacobiCommutator
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSchwartzBruhatConvolutionLocalFieldPower
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSchwartzBruhatSupportedNhdsIntegralOne
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemFourierJacobiSubgroupIffParabolicMulColumnStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemRootExchangeParabolicAndFourierJacobiIffEntriStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemFourierJacobiSubgroupIffParabolicMulColumn
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemRootExchangeParabolicAndFourierJacobiIffEntri
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsUnimodularBlockUpperTriangularSymmetricLevels
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RootExchangeHeisenbergVariableSign
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RootExchangeOperatorWeilRowUnipotent
@@ -282,8 +282,8 @@ end Bessel
 theorem localSign : LocalSign k := by
   intro n n' _ _ _ _ c ρ h1 hc
   have h2 : ρ < c := by omega
-  refine ⟨(GlobalTheory.T.mem_fourierJacobiSubgroup_iff_parabolic_mul_column k n c ρ h1 h2).1,
-    _root_.GlobalTheory.LevelUnimod.unimodular k n c _ _ (fun i => ?_) _ ((GlobalTheory.T.mem_rootExchangeParabolic_and_fourierJacobi_iff_entries k n c ρ).2 h1 h2),
+  refine ⟨(_root_.GlobalTheory.RootEx.FourierJacobiGroup.mem_RFJ_iff k n c ρ h1 h2).1,
+    _root_.GlobalTheory.LevelUnimod.unimodular k n c _ _ (fun i => ?_) _ ((_root_.GlobalTheory.RootEx.ParabolicEntries.mem_R_iff_and_mem_RFJ_iff k n c ρ).2 h1 h2),
     (_root_.GlobalTheory.RootEx.HeisenbergSign.sign k n n' c ρ h1 h2).1, fun ψ ν hψ _ hν => ?_⟩
   · have := i.2
     simp only [Fin.val_rev]
@@ -406,7 +406,7 @@ theorem source : Source k := by
       have := hϑ (rowE (c + 1) ρ u) 1 F Φ (omR μ (rowE (c + 1) ρ u, 1) Φ) rfl
       rw [map_one, Module.End.one_apply] at this
       simp only [T, LinearMap.comp_apply, map_smul, smul_eq_mul, this]
-  refine ⟨_root_.GlobalTheory.LevelUnimod.unimodular k n c _ _ (fun i => ?_) _ (GlobalTheory.T.mem_rootExchangeParabolic_and_fourierJacobi_iff_entries k n c ρ).1, fun Φ Φ₀ => ?_, fun H Φ => ?_,
+  refine ⟨_root_.GlobalTheory.LevelUnimod.unimodular k n c _ _ (fun i => ?_) _ (_root_.GlobalTheory.RootEx.ParabolicEntries.mem_R_iff_and_mem_RFJ_iff k n c ρ).1, fun Φ Φ₀ => ?_, fun H Φ => ?_,
     fun H Φ Φ₀ => ?_⟩
   · have := i.2
     simp only [Fin.val_rev]

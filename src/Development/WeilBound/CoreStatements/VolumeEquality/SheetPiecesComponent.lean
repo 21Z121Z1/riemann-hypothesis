@@ -2,7 +2,7 @@ import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsSheetCover
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.ThreeLeLevel
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.MongeAmpereDensityOfBallPotentialStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.MongeAmpereDensityOfBallPotential
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MongeAmpereDensityChangeOfVariables
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.GroupDict
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsProved
@@ -21,12 +21,12 @@ theorem densU : ∃ κ : ℕ → ℕ → ℕ → ℝ, (∀ f j j', 0 < κ f j j'
       maDensity (fun (_ : Fin n) t' => ballPot q t' / 2) t = κ (Fintype.card Ψ) j j' * ballDens q t := by
   have hq : ∀ f j j' : ℕ, Nonempty (Fin f × Fin j × Fin j' ≃ Fin (f * j * j')) := fun f j j' =>
     ⟨Fintype.equivFinOfCardEq (by simp [_root_.mul_assoc])⟩
-  choose κ hκ hκ' using fun f j j' : ℕ => GlobalTheory.T.monge_ampere_density_of_ball_potential (Fin f) j j' (f * j * j') (hq f j j').some
+  choose κ hκ hκ' using fun f j j' : ℕ => _root_.GlobalTheory.CompanionTheory.Ar.Cusp.BallHess.maDensity_half_ballPot (Fin f) j j' (f * j * j') (hq f j j').some
   refine ⟨κ, hκ, fun Ψ _ j j' n q t ht => ?_⟩
   obtain rfl : n = Fintype.card Ψ * j * j' := by
     have := Fintype.card_congr q
     simpa [_root_.mul_assoc] using this.symm
-  obtain ⟨c, -, hc⟩ := GlobalTheory.T.monge_ampere_density_of_ball_potential Ψ j j' _ q
+  obtain ⟨c, -, hc⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.BallHess.maDensity_half_ballPot Ψ j j' _ q
   rw [hc t ht]
   congr 1
   have h0 := hc 0 (zero_mem_ballDom q)

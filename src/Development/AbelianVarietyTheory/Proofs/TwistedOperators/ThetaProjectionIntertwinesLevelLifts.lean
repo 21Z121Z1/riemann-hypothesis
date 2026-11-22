@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.FWExist
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LiftLowestKTypeCompatibility
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionLiftPairStepVectorInvLevelCharStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionLiftPairStepVectorInvLevelChar
 
 noncomputable section
 
@@ -68,7 +68,7 @@ theorem thG_intertwines_core : ∀ {D : D7} {G : Type} [Group G] [Fintype G] {Pl
   exact thG_of_value_core R F hR i t g y y' (fun ρ => v ρ) hw.1 (funext fun x =>
     (thF_shift_core R F hR i t (R.eG g) κ κ' hκ hκ'.1 y y' (levChi (Vc D i) (R.βV i) (flagL (R.datVt i t)) κ)
       (levChi_ne_zero (V := Vc D i) (β := R.βV i) (flagL (R.datVt i t)) κ)
-      (GlobalTheory.T.weilAction_liftPair_stepVector_invLevelChar R hR.lev hR.models.inf hR.thP.ωP hR.thP.vP i t (R.eG g) κ κ' hκ hκ') hy v x).trans
+      (_root_.GlobalTheory.VecInv.omega_lifts_vP R hR.lev hR.models.inf hR.thP.ωP hR.thP.vP i t (R.eG g) κ κ' hκ hκ') hy v x).trans
     (finiteGroup_acts_by_lift_translation_principalType R i (R.eG g) κ' hκ' _ (thF_type R hR.thP.thF_mem i t y _) x).symm)
 
 end GlobalTheory.ThetaProjEquiv

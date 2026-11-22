@@ -12,10 +12,11 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.VacuumFockFromSq
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.VacuumFockVectors
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaModelsAreCoverDiscreteSeriesOfHarishChandra
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.BarMatrix
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsGlobalFockIntertwinerTensorRealPlacesStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GluingLawHoldsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsGlobalFockIntertwinerTensorRealPlaces
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ChosenSeries
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GluingLawHolds
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsRealDiscreteSeriesDataThetaProperties
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LocalFockIntertwinerAdjointExchangedPairStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LocalFockIntertwinerAdjointExchangedPair
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.S Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.IndefR.Datum MeasureTheory NumberField Matrix
 open GlobalTheory.Chain GlobalTheory.ChainFr GlobalTheory.PairLift GlobalTheory.Chain.RealIt
 open scoped TensorProduct InnerProductSpace ComplexConjugate
@@ -40,10 +41,10 @@ theorem itPairUp : GlobalTheory.Published.DiscreteSeriesCover → GlobalTheory.P
     exact exists_locIt hX h1 h2 hB M M' τ hd (congrArg dualPar e1) (congrArg dualPar e2)
   choose hr A hA using key
   have hA' : ∀ τ, ∃ A', LocIt M' M τ (expT D k τ) (expS D k τ) A' := fun τ =>
-    GlobalTheory.T.localFockIntertwiner_adjoint_exchangedPair D V W _ _ M M' τ _ _ (A τ) (hA τ)
+    _root_.GlobalTheory.AdjLocIt.adj_locIt D V W _ _ M M' τ _ _ (A τ) (hA τ)
   choose A' hA' using hA'
-  obtain ⟨It, I, hI⟩ := GlobalTheory.T.exists_globalFockIntertwiner_tensor_realPlaces D W V _ _ M' M (expT D k) (expS D k) A' GlobalTheory.ContrObj.contraction.2
-    (GlobalTheory.T.gluing_law_holds D _ _) hA'
+  obtain ⟨It, I, hI⟩ := _root_.GlobalTheory.Chain.RealIt.TensorGlob.exists_globIt D W V _ _ M' M (expT D k) (expS D k) A' GlobalTheory.ContrObj.contraction.2
+    (_root_.GlobalTheory.Chain.RealIt.GlueProof.glueLaw D _ _) hA'
   refine ⟨It, fun ω f ⟨χS, χT, hω, he⟩ hf => ?_⟩
   have hv := fun τ => _root_.GlobalTheory.VacuumCharacter.vacChar D W V _ _ M' M θ ψ χS χT ω f τ _ _ hθ hω (he τ).1 (he τ).2 hf
   exact isItW_of_globIt hθ hI (fun τ => ⟨(hr τ).2, (hr τ).1⟩)

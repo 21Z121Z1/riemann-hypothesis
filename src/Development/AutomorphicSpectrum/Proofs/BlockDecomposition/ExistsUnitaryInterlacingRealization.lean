@@ -3,7 +3,7 @@ import Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.Em
 import Formalism.RealPlaceAnalysis.Complexify
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PartialFractionDiagonalIdentityStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PartialFractionOffDiagonalIdentity
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PartialFractionSquareIdentityStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PartialFractionSquareIdentity
 
 open Finset Matrix PositivityTheory.RgHe.Frame
 
@@ -101,7 +101,7 @@ lemma gram {ε : Fin (n + 1) → Bool} {d : Fin (n + 1) → ℝ} {ε' : Fin n �
   rw [hz1]
   by_cases hik : i = k
   · subst hik
-    have h1 := GlobalTheory.T.partial_fraction_square_identity d d' hinj i
+    have h1 := _root_.GlobalTheory.CompanionTheory.RgHeFrame.pfDer d d' hinj i
     have h2 := cc_sq (hD i)
     simp only [if_true]
     have h3 : ∑ j, pfR d d' j / ((d i - d' j) * (d i - d' j)) =

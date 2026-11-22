@@ -6,13 +6,13 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareTriple
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareStanding
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousAtPlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntAddConjEqOneOfBaseGood
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqAdeleSupportedAtFinitePlaceOfSupportedAtStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqAdeleSupportedAtFinitePlaceOfSupportedAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchrodingerTensorEqLocalOfSupportedAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AddCharHalfTraceTensorLatticeHeisenbergCocycleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSchroedingerEigenvectorCompactCocycle
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorLatticeAtFinitePlaceEqIntegralSpanGenerato
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousAddCharSymplecticSelfPairingPlaceCoordStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardTraceAdelicAddCharLocalComponentNeOneStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardTraceAdelicAddCharLocalComponentNeOne
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum Formalism.IndefR.Links
 open IsDedekindDomain NumberField MeasureTheory Matrix
@@ -69,16 +69,16 @@ theorem exists_isVac_any_darboux : ∀ {F E : Type} [Field F] [NumberField F] [F
     · simp [(hcomp a i).2, map_sum, map_mul, GlobalTheory.EmbChart.evFin_atPlace, Prod.snd_sum, Finset.sum_apply, u]
   have hψ : ∀ z : AF F, GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.At (GlobalTheory.AdelicU.evFin F v) z →
       B.ψ z = GlobalTheory.VacAny.psiV B.ψ v (GlobalTheory.AdelicU.evFin F v z) := fun z hz => by
-    rw [GlobalTheory.VacAny.psiV_apply, ← GlobalTheory.T.eq_adeleSupportedAtFinitePlace_of_supportedAt v z hz]
+    rw [GlobalTheory.VacAny.psiV_apply, ← _root_.GlobalTheory.VacAny.eq_atPlace_of_at v z hz]
   have hzero : ∀ a, ∑ m, (a m : Fv F v) • u m = 0 → γf a = 0 := by
     intro a h
     rw [← hev a] at h
     have h1 : co.e (γf a) = 0 := by
       refine Prod.ext (funext fun i => ?_) (funext fun i => ?_)
-      · rw [GlobalTheory.T.eq_adeleSupportedAtFinitePlace_of_supportedAt v _ (hAt a i).1, show GlobalTheory.AdelicU.evFin F v ((co.e (γf a)).1 i) = 0 from
+      · rw [_root_.GlobalTheory.VacAny.eq_atPlace_of_at v _ (hAt a i).1, show GlobalTheory.AdelicU.evFin F v ((co.e (γf a)).1 i) = 0 from
           congrFun (congrArg Prod.fst h) i, map_zero]
         rfl
-      · rw [GlobalTheory.T.eq_adeleSupportedAtFinitePlace_of_supportedAt v _ (hAt a i).2, show GlobalTheory.AdelicU.evFin F v ((co.e (γf a)).2 i) = 0 from
+      · rw [_root_.GlobalTheory.VacAny.eq_atPlace_of_at v _ (hAt a i).2, show GlobalTheory.AdelicU.evFin F v ((co.e (γf a)).2 i) = 0 from
           congrFun (congrArg Prod.snd h) i, map_zero]
         rfl
     exact co.e.map_eq_zero_iff.1 h1
@@ -111,7 +111,7 @@ theorem exists_isVac_any_darboux : ∀ {F E : Type} [Field F] [NumberField F] [F
       (GlobalTheory.VacAny.at_sub (hdot a b).1 (hdot b a).1))
     rw [hψ _ hz, map_neg, map_mul, map_sub, (hdot a b).2, (hdot b a).2, GlobalTheory.VacAny.evFin_invOf_two]
   obtain ⟨φ, hφSB, hφ0, hφ⟩ := _root_.GlobalTheory.VacLoc.exists_schr_eigen v (GlobalTheory.VacAny.psiV B.ψ v) (GlobalTheory.VacAny.continuous_psiV hB.std.1 v)
-    (GlobalTheory.T.standardTraceAdelicAddChar_localComponent_ne_one B.ψ hB.std v) u χ (GlobalTheory.T.continuous_addChar_symplecticSelfPairing_placeCoordinates σ B.ψ hB.std.1 X.J Y.J (θ : E) v g) hker hcoc
+    (_root_.GlobalTheory.PsiNontriv.psiV_ne_one B.ψ hB.std v) u χ (GlobalTheory.T.continuous_addChar_symplecticSelfPairing_placeCoordinates σ B.ψ hB.std.1 X.J Y.J (θ : E) v g) hker hcoc
   refine ⟨φ, hφSB, hφ0, θ, hθ, ?_⟩
   intro γ hγ
   obtain ⟨a, rfl⟩ := (hΓ γ).1 hγ

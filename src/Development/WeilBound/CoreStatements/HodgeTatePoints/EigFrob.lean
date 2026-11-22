@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsSplitGaussChars
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.GapCondExample
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DualLatticeDegreeNegStatement
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DualLatticeDegreeNeg
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.EigenProjectorsSplitAction
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SubAndQuotientBundlesStatement
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SubAndQuotientBundles
 
 open GlobalTheory.CompanionTheory.Ar.Crv
 
@@ -166,7 +166,7 @@ theorem eig_dual : ∀ (K : Type) [Field K] (C : ACurve K) (d : ℕ) (L : C.I �
   have hfr : Module.finrank K W = Module.finrank K (W' →ₗ[K] K) := by omega
   have hbij : Function.Bijective B :=
     ⟨hinj, (LinearMap.injective_iff_surjective_of_finrank_eq_finrank hfr).1 hinj⟩
-  obtain ⟨-, hdeg, -⟩ := GlobalTheory.T.dual_lattice_degree_neg K C W W' (sub C L W) B (GlobalTheory.T.sub_and_quotient_bundles K C _ L W hL).1 hbij
+  obtain ⟨-, hdeg, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Crv.DegDual.deg_dual K C W W' (sub C L W) B (_root_.GlobalTheory.CompanionTheory.Ar.Crv.SubQuot.isBun_sub_quot K C _ L W hL).1 hbij
   have hident : dualLat C (sub C L W) B = sub C (dotDual C L) W' := by
     funext i
     ext y

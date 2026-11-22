@@ -408,8 +408,8 @@ theorem step_inert : GlobalTheory.Hk3.HoweUnram → ∀ (D : D7) (G : Type) [Gro
     exact congrArg HeightOneSpectrum.asIdeal h1.symm
   have hV : (Vc D i).rank = D.R.r + D.R.t := D.sp.V_rank _ (Nat.le_add_left _ _) i.2
   have hWr : (Wc D i).rank = D.R.r := D.sp.W_rank _ (Nat.le_add_left _ _) i.2
-  have unr := GlobalTheory.FixAllGood.unrPl_chrTh ((GlobalTheory.T.splittingCharacters_unramified_offLevels R F hC.lev t P hgood).2 ((i : ℕ) + 1) (by omega) i.2)
-      (GlobalTheory.T.splittingCharacters_unramified_offLevels R F hC.lev t P hgood).1
+  have unr := GlobalTheory.FixAllGood.unrPl_chrTh ((_root_.GlobalTheory.UnrOffLevels.unrPl_of_good R F hC.lev t P hgood).2 ((i : ℕ) + 1) (by omega) i.2)
+      (_root_.GlobalTheory.UnrOffLevels.unrPl_of_good R F hC.lev t P hgood).1
   have hr : Odd D.R.r := GlobalTheory.VacFixInert.r_odd
   have ht : Odd D.R.t := D.R.t_odd
   have hfx : VacFix R.ψ (R.ωP i t) P :=

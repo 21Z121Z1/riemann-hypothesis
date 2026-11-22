@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Degenerations.CharZeroOfIsPrimitiveRoot
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaConstantTermRepresentativeDependence
 import Development.AbelianVarietyTheory.Definitions.Degenerations.SepticCharacterInjective
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationSeriesTermsNestStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationSeriesTermsNest
 
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry NumberField
 open scoped CategoryTheory.Obj BigOperators
@@ -95,7 +95,7 @@ theorem twist_tx_nest : ∀ (C : Type) [NormedField C] (N : NumD C) (La : Type) 
     have := qEq_pow N (q ((n * m) ^ 2)) (hadd _ hK0) x (n - 1)
     rwa [Nat.sub_add_cancel hn.pos] at this
   rw [tx_of_qEq _ (hn.mul hm) (qEq_of_twRel (hr.pow hK0) t2 h'' e2), tx_of_qEq _ hm (qEq_of_twRel (hr.pow hm2) t1 h e1)]
-  refine tsum_congr fun χ => GlobalTheory.T.degenerationSeriesTerms_nest C _ n m hn hm (P ^ n) P' rfl ?_ χ
+  refine tsum_congr fun χ => _root_.GlobalTheory.Ex.Nest.txT_nest C _ n m hn hm (P ^ n) P' rfl ?_ χ
   change P.1.2 ^ (n ^ 2) = (P.1.2 ^ n) ^ n
   rw [← pow_mul, sq n]
 end GlobalTheory.Ex

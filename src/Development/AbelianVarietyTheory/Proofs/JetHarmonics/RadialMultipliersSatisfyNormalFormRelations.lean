@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NormalFormActualOper
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.RadialPairConstantsPointwiseAdjointBounded
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.EulerDerivMultipliersCommuteCoordOps
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NormalFormEntriesCommutatorMultiplier
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ConnectionMulRelOfEntryRelationsStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ConnectionMulRelOfEntryRelations
 open Formalism.FourierDecayAlt Formalism.FourierDecayAlt.R Formalism.FourierDecayAlt.Wd Formalism.FourierDecayAlt.Fr Formalism.REAL Formalism.QuantumDeterminants MeasureTheory GlobalTheory.HatNF
 
 namespace GlobalTheory.HatNF.MulRelActual
@@ -118,7 +118,7 @@ theorem mulRel_actual : ∀ (Wp Wq : Type) [NormedAddCommGroup Wp] [InnerProduct
       · rw [h10]; exact commute_mkP (hfn _) (hfn _)
       · rw [h11]; exact commute_mkP (hfn _) (hfn _)
       · rw [h12]; exact commute_mkP (hfn _) (hfn _)
-  refine GlobalTheory.T.connection_mulRel_of_entry_relations P (RA P Bs) d hH _ fun q => ⟨hf q, fun l => ?_, fun l => ?_, hκ q, rfl, fun Y => ?_⟩
+  refine _root_.GlobalTheory.HatNF.MulRelAlg.mulRel_of_entries P (RA P Bs) d hH _ fun q => ⟨hf q, fun l => ?_, fun l => ?_, hκ q, rfl, fun Y => ?_⟩
   · rw [h1, mkPair_mul_mkPair, mkPair_mul_mkPair, mkPair_add_mkPair]
     refine mkPair_congr ((hC q).1 l).1 ?_
     rw [neg_mul, ((hC q).1 l).2.1, mul_neg]; abel

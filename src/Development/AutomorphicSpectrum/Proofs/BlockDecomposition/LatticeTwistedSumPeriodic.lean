@@ -3,7 +3,7 @@ import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.ThetaI
 import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasWeil
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftEisensteinLevelSubgroup
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TsumMeas
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeisenbergCharacterBilinearLawsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeisenbergCharacterBilinearLaws
 
 noncomputable section
 
@@ -27,7 +27,7 @@ theorem rt_add_periodic (ξ ξ' : Matrix (Fin ρ) (Fin p) D.host.E) :
 theorem dsum_add_rt (ψ : AddChar (AF D.host.F) ℂ) (hψ : IsCharAF D.host.F ψ) (b₀ : HermE D ρ)
     (Φ : Mx D ρ p → ℂ) (ξ : Matrix (Fin ρ) (Fin p) D.host.E) (x y : Mx D ρ p) :
     dsum ψ b₀ Φ x (y + rt ξ) = conj (chv ψ b₀ x (rt ξ)) * dsum ψ b₀ Φ x y := by
-  obtain ⟨-, h2, h3, -, -, -⟩ := GlobalTheory.T.heisenberg_character_bilinear_laws (D := D) (ρ := ρ) (p := p) ψ hψ b₀
+  obtain ⟨-, h2, h3, -, -, -⟩ := _root_.GlobalTheory.CompanionTheory.FJE.chv_facts (D := D) (ρ := ρ) (p := p) ψ hψ b₀
   unfold dsum
   rw [← tsum_mul_left, ← (Equiv.addRight ξ).tsum_eq
     (fun η : Matrix (Fin ρ) (Fin p) D.host.E =>
@@ -43,7 +43,7 @@ theorem dsum_add_rt (ψ : AddChar (AF D.host.F) ℂ) (hψ : IsCharAF D.host.F ψ
 theorem dsum_add_rt_left (ψ : AddChar (AF D.host.F) ℂ) (hψ : IsCharAF D.host.F ψ) (b₀ : HermE D ρ)
     (Φ : Mx D ρ p → ℂ) (ξ : Matrix (Fin ρ) (Fin p) D.host.E) (x y : Mx D ρ p) :
     dsum ψ b₀ Φ (x + rt ξ) y = dsum ψ b₀ Φ x y := by
-  obtain ⟨h1, -, -, -, h5, -⟩ := GlobalTheory.T.heisenberg_character_bilinear_laws (D := D) (ρ := ρ) (p := p) ψ hψ b₀
+  obtain ⟨h1, -, -, -, h5, -⟩ := _root_.GlobalTheory.CompanionTheory.FJE.chv_facts (D := D) (ρ := ρ) (p := p) ψ hψ b₀
   unfold dsum
   refine tsum_congr fun η => ?_
   rw [h1, h5, mul_one]
@@ -52,7 +52,7 @@ theorem ap_periodic (ψ : AddChar (AF D.host.F) ℂ) (hψ : IsCharAF D.host.F ψ
     (Φ φ : Mx D ρ p → ℂ) (ξ₁ ξ₂ : Matrix (Fin ρ) (Fin p) D.host.E)
     (v : Mx D ρ p × Mx D ρ p) :
     Ap ψ b₀ Φ φ (v + (rt ξ₁, rt ξ₂)) = Ap ψ b₀ Φ φ v := by
-  obtain ⟨-, -, h3, -, -, -⟩ := GlobalTheory.T.heisenberg_character_bilinear_laws (D := D) (ρ := ρ) (p := p) ψ hψ b₀
+  obtain ⟨-, -, h3, -, -, -⟩ := _root_.GlobalTheory.CompanionTheory.FJE.chv_facts (D := D) (ρ := ρ) (p := p) ψ hψ b₀
   obtain ⟨y, x⟩ := v
   show dsum ψ b₀ Φ (x + rt ξ₂) (y + rt ξ₁) * conj (dsum ψ b₀ φ (x + rt ξ₂) (y + rt ξ₁)) =
     dsum ψ b₀ Φ x y * conj (dsum ψ b₀ φ x y)

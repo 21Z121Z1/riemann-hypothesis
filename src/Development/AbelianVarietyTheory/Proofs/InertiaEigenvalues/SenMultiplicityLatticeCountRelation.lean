@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.PowerSeriesOneAddConstMulXMulInv
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NabBijectiveWindow
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GenEigenMultiplicityQuotientAdditiveChain
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuotientMultiplicityShiftLatticeQuotientStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuotientMultiplicityShiftLatticeQuotient
 
 noncomputable section
 namespace GlobalTheory.PhiGam.Count
@@ -137,7 +137,7 @@ theorem sen_count : ∀ {k : Type} [Field k] {l : ℕ} [Fact l.Prime] [CharP k l
       ((sh 1 Q).restrictScalars k) (fun _ hy => h1 Q hy) (fun _ hy => hQP hy)
       (fun _ hy => Window.nab_mem cP hy) (fun _ hy => Window.nab_mem cQ hy)
       (fun _ hy => Window.nab_mem_sh R hg cQ 1 hy) hfin x
-    rw [← GlobalTheory.T.quotientMultiplicity_shift_lattice_quotient R g hg P Q hP hQ hQP cP cQ x]
+    rw [← _root_.GlobalTheory.PhiGam.QuotShift.main R g hg P Q hP hQ hQP cP cQ x]
     unfold sen qmult
     omega
   · intro hne

@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TranslateUnique
 import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.IsScalarTowerOfAlgebraMapEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedFibreIsAbelianSchemeRelDimOfFrameStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianCechH1TrivialBundleRankBound
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechFirstCohomologyDimensionBoundCocyclesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechFirstCohomologyDimensionBoundCocycles
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechCocycleCoboundaryOfCoveringSubfamily
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAffineOpenPreimageQuotientFibre
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FibrePullbackAffineFunctionEqQuotientConst
@@ -39,7 +39,7 @@ theorem fieldDep : ∀ (K : Type) [Field K] (A : Over (Sp K)) [GrpObj A] (g : �
     rw [TopologicalSpace.Opens.mem_iSup]
     exact ⟨t.equivFin ⟨i, hi⟩, by simpa [σ] using hx⟩
   obtain ⟨hfin, hrk⟩ := _root_.GlobalTheory.AbCoh.FDimField.cechLB_triv_finite_finrank_one_le K A g hA hsm (Fin t.card) (fun k => W (σ k)) (fun k => hW _) hσ
-  obtain ⟨c, hc, h', hh'⟩ := GlobalTheory.T.cech_first_cohomology_dimension_bound_cocycles K A.left A.hom g (Fin t.card) (fun k => W (σ k)) hfin hrk
+  obtain ⟨c, hc, h', hh'⟩ := _root_.GlobalTheory.OrdCechDep.exists_comb_coboundary K A.left A.hom g (Fin t.card) (fun k => W (σ k)) hfin hrk
     (fun b k k' => e b (σ k) (σ k')) (fun b k k' k'' => he b _ _ _)
   refine ⟨c, hc, ?_⟩
   exact _root_.GlobalTheory.CechCobGlue.cocycle_coboundary_of_subcover A.left J W (Fin t.card) σ hσ

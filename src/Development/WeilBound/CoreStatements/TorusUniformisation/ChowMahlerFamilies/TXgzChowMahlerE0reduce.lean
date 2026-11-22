@@ -2,7 +2,7 @@ import Mathlib
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.IsSigmaCompactConeInter
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FibreCountRotationInvariant
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.IsScaleStable
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.MeasurableFibreCountOverStatement
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.MeasurableFibreCountOver
 set_option maxSynthPendingDepth 1
 open GroundTheory.Heights₂.Heights MeasureTheory MvPolynomial Matrix GlobalTheory.CompanionTheory.Ar.Short.Crofton
 open scoped ENNReal
@@ -19,7 +19,7 @@ theorem PositivityTheory.Xgn.t_xgz_chow_mahler_e0reduce : ∀ (n e : ℕ) (S : S
     exact (by fun_prop : Continuous fun π : Fin (e + 1) → Fin n → ℂ =>
       Real.exp (-∑ i, ∑ j, ‖π i j‖ ^ 2)).measurable.ennreal_ofReal
   have hC : Measurable (fun p : (Fin (e + 1) → Fin n → ℂ) × EuclideanSpace ℂ (Fin (e + 1)) =>
-      T (cntOver S p.1 p.2)) := hT.comp (GlobalTheory.T.measurable_fibre_count_over n (e + 1) S hσ)
+      T (cntOver S p.1 p.2)) := hT.comp (_root_.GlobalTheory.CompanionTheory.Ar.Short.Crofton.measurable_cntOver n (e + 1) S hσ)
   have hF : Measurable (Function.uncurry fun (π : Fin (e + 1) → Fin n → ℂ)
       (w : EuclideanSpace ℂ (Fin (e + 1))) => matGauss π * T (cntOver S π w)) :=
     (hG.comp measurable_fst).mul hC

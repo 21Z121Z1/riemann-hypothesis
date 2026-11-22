@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.AxesVanishingStructureSheafDegOne
 import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.IsScalarTowerOfAlgebraMapEq
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianHodgeDeRham
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GrpObjPullbackAxesCohomologyProjectionsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GrpObjPullbackAxesCohomologyProjections
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeOneFormFrameAndSquare
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeGlobalOneFormsClosed
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeRhamToStructureH1Surjective
@@ -44,7 +44,7 @@ theorem rank_prim_HH1 : ∀ (R : Type) [CommRing R] (A : Over (Sp R)) [GrpObj A]
   intro R _ A _ g hA hs
   refine ⟨fp_HH1 R A g hA hs, fun x ↦ ?_⟩
   obtain ⟨-, -, hAA, hsAA⟩ := _root_.GlobalTheory.AbCoh.basic_of_isAbelianScheme R A g hA hs
-  have ax := (GlobalTheory.T.grpObj_pullback_axes_cohomology_projections R A).2.2
+  have ax := (_root_.GlobalTheory.AbCoh.AxesPull.main R A).2.2
   set i₁ : A ⟶ A ⊗ A := lift (𝟙 A) (toUnit A ≫ η[A])
   set i₂ : A ⟶ A ⊗ A := lift (toUnit A ≫ η[A]) (𝟙 A)
   let f : HH1 A.hom × HH1 A.hom →ₗ[R] HH1 (A ⊗ A).hom :=

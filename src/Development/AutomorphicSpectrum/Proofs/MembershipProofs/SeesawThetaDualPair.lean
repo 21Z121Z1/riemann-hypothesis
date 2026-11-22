@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.HilbertNinetyQuotientHomEqIff
-import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaSumAdmissibilityStatement
+import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaSumAdmissibility
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.RationalUnitsHaarCharacterOne
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaHeisenbergTranslatesSeparate
-import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaDistributionNonzeroAdmissibleStatement
-import Development.AutomorphicSpectrum.Proofs.MembershipProofs.AdelicCharacterRationalDualStatement
+import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaDistributionNonzeroAdmissible
+import Development.AutomorphicSpectrum.Proofs.MembershipProofs.AdelicCharacterRationalDual
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.SplitQuadraticAlgebraOrder
 
 open Matrix NumberField IsDedekindDomain GlobalTheory.WeilM MeasureTheory
@@ -196,8 +196,8 @@ theorem theta_split_inc : ∀ (F : Type) [Field F] [NumberField F] [LocallyCompa
     exact Module.Finite.of_basis b
   letI : Invertible (2 : F) := invertibleOfNonzero two_ne_zero
   obtain ⟨g₀, rfl⟩ := exists_ratPt (AdeleRing (𝓞 F) F) c JB g γ hγ
-  obtain ⟨-, ⟨l₀, hl₀, hl₀Θ⟩, Φ₀, hΦ₀, hΦ₀ne⟩ := GlobalTheory.T.theta_distribution_nonzero_admissible F κ
-  obtain ⟨hpres, hrat⟩ := GlobalTheory.T.theta_distribution_heisenberg_invariant F κ ψ hψc hψ1 hψF
+  obtain ⟨-, ⟨l₀, hl₀, hl₀Θ⟩, Φ₀, hΦ₀, hΦ₀ne⟩ := _root_.GlobalTheory.CompanionTheory.ThetaAdm.theta_adm F κ
+  obtain ⟨hpres, hrat⟩ := _root_.GlobalTheory.CompanionTheory.AdelicHeis.schr_mem_and_thetaSum F κ ψ hψc hψ1 hψF
   have hact : ∀ (p : UG c JB) (x : Matrix α β E),
       actB (cA (AdeleRing (𝓞 F) F) c) (ratPt (AdeleRing (𝓞 F) F) c JB p) (x.map (inc (F := F) (AdeleRing (𝓞 F) F))) =
       (x * ((p : GL β E) : Matrix β β E)ᵀ).map (inc (F := F) (AdeleRing (𝓞 F) F)) := fun p x => by
@@ -207,7 +207,7 @@ theorem theta_split_inc : ∀ (F : Type) [Field F] [NumberField F] [LocallyCompa
         fun i => algebraMap F (AdeleRing (𝓞 F) F) ((d₀ x).2 i)) := hd
   have hex : ∀ p : UG c JB, ∃ a : ℂ, ∀ Φ ∈ schA F κ,
       thetaSum F (om (ratPt (AdeleRing (𝓞 F) F) c JB p) Φ) = a * thetaSum F Φ := fun p => by
-    obtain ⟨a, ha⟩ := GlobalTheory.T.admissible_functional_rational_invariance F κ ψ hψc hψ1 hψF _ (hS.adm (ratPt (AdeleRing (𝓞 F) F) c JB p) l₀ hl₀) (by
+    obtain ⟨a, ha⟩ := _root_.GlobalTheory.CompanionTheory.ThetaUniq.theta_unique F κ ψ hψc hψ1 hψF _ (hS.adm (ratPt (AdeleRing (𝓞 F) F) c JB p) l₀ hl₀) (by
       intro w Φ hΦ
       obtain ⟨x, rfl⟩ := d₀.surjective w
       have h1 := hS.impl (ratPt (AdeleRing (𝓞 F) F) c JB p) (x.map (inc (F := F) (AdeleRing (𝓞 F) F))) Φ hΦ

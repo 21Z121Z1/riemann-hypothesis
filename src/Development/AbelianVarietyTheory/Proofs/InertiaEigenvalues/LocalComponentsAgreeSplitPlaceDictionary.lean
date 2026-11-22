@@ -4,8 +4,8 @@ import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RingSp
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RecProdRecSatakeLL
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StandardCosocleGL
 import Formalism.SharpRestriction.LevelLetterCocycles.SphericalInertData
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitPlaceLocalComponentExistsUniqueClassStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DefiniteUnitaryAutFormEqZeroOfFinitePointsStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitPlaceLocalComponentExistsUniqueClass
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DefiniteUnitaryAutFormEqZeroOfFinitePoints
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsLocUniqueOfIsSplitAt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitPlaceUnitaryLocalPointsEquivGL
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHomTrivOutsideLoc
@@ -168,7 +168,7 @@ theorem locComp_agree : ∀ (L : Type) [Field L] [NumberField L] [IsCMField L] (
     IsCompAlong U (locU n s.w) ((cLoc s.w).comp (locU n s.w).subtype) σ.ρ →
     ∃ τ : GlobalTheory.SmGL.IrrRep (GL (Fin n) (s.w.adicCompletion L)), IsLocS π.S s τ ∧ Nonempty (τ.ρ.Equiv σ.ρ) := by
   intro L _ _ _ n F π U hD s σ hσ
-  obtain ⟨τ, hτ, -⟩ := GlobalTheory.T.splitPlaceLocalComponent_exists_unique_class L n π s
+  obtain ⟨τ, hτ, -⟩ := _root_.GlobalTheory.LocCompSplit.main L n π s
   refine ⟨τ, hτ, ?_⟩
   obtain ⟨i, T, hic, hi, hTinj, hTS, hTeq⟩ := hτ
   have hsplit : IsSplitAt s.w := isSplitAt_w F s i hic hi
@@ -189,7 +189,7 @@ theorem locComp_agree : ∀ (L : Type) [Field L] [NumberField L] [IsCMField L] (
     have h0 : ∀ y ∈ finU L n, (φ : UA L n → ℂ) y = 0 := fun y hy => by
       obtain ⟨x, rfl⟩ := F.onto y hy
       exact congrFun hφ x
-    exact Subtype.ext (GlobalTheory.T.definiteUnitaryAutForm_eq_zero_of_finitePoints L n φ (hD.1.aut φ φ.2) h0)
+    exact Subtype.ext (_root_.GlobalTheory.DefiniteDense.eq_zero_of_finU L n φ (hD.1.aut φ φ.2) h0)
   have hRrange : LinearMap.range R = U.map (LinearMap.funLeft ℂ ℂ F.j) := by
     rw [LinearMap.range_comp, Submodule.range_subtype]
   obtain ⟨hnt, -⟩ := (GlobalTheory.CuspRep.isIrreducible_iff _).1 τ.irr

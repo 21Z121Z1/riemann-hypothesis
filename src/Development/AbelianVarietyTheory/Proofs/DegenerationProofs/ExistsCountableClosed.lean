@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsOrderAct
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.PsiRelationDescendsFieldExtension
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsDegenerationPreDataOverSubfield
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsPullDegCancelTowerOfFields
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsRatioDescendsDegenerationPsiFamilyStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsRatioDescendsDegenerationPsiFamily
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry NumberField
 open scoped CategoryTheory.Obj BigOperators
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -53,7 +53,7 @@ theorem exists_pre (hL : Laws) {K : Type} [Field K] [IsAlgClosed K] {O : Type} [
   obtain ⟨c₀, hc₀, hc₁⟩ := _root_.GlobalTheory.PointDescent.additive_points_descend K₀ K _ P₀ D.P Φ gp D.X _ b hb' D.c D.c_add x₀ hx
   obtain ⟨D₀, ψ, hψ, h₀, rfl, e⟩ := _root_.GlobalTheory.FieldPull.exists_pre_below hL K₀ K _ D P₀ Φ gp hw c₀ hc₀ hc₁
   obtain rfl := eq_of_heq e
-  obtain ⟨a, Ha⟩ := GlobalTheory.T.exists_ratio_descends_degenerationPsiFamily K D ψ hψ
+  obtain ⟨a, Ha⟩ := _root_.GlobalTheory.FieldPull.exists_ratio_descends K D ψ hψ
   have : Countable D.X := Finsupp.Countable.of_moduleFinite (R := ℤ)
   obtain ⟨F₁, _, _, _, α, β, hαβ, hβ⟩ := exists_countable_closed K₀ a
   obtain ⟨D', h₁, -, -⟩ := DegPull.exists_isPullDeg hL.polBaseChange K₀ F₁ α D₀ ⊤ (nonempty_psiOn_field D₀) trivial

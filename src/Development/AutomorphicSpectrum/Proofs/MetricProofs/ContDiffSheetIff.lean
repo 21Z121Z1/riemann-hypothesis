@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleProductOf
 import Development.AbelianVarietyTheory.Definitions.Divisors.GenericPointAsIdeal
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.SheetUnsheet
 import Development.AutomorphicSpectrum.PublishedTheorems.Divisibility₂.PairingExists
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.SheetIsOpenEmbeddingRangeStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.SheetIsOpenEmbeddingRange
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry TopologicalSpace Filter Topology MeasureTheory
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
 open ReciprocityTheory.ChartRestriction.G.Out (nonzeroLocus)
@@ -16,7 +16,7 @@ namespace GlobalTheory.CompanionTheory.Ar.BaseZ
 
 theorem cInfAt_sheet_iff : ∀ (k : Type) [CommRing k] [Module.Finite ℤ k] (X : Scheme.{0}) (p : X ⟶ Sp k) (t : X ⟶ Sp ℤ) (τ : ℤ →+* ℂ) (σ : k →+* ℂ) (f : CxPts t τ → ℝ) (y : CxPts p σ), CInfAt f (sheet t τ y) ↔ CInfAt (fun z : CxPts p σ => f (sheet t τ z)) y := by
   intro k _ _ X p t τ σ f y
-  have hE := (GlobalTheory.T.sheet_isOpenEmbedding_range k X p t τ σ).1
+  have hE := (_root_.GlobalTheory.CompanionTheory.Ar.BaseZ.Sheet.isOpenEmbedding_and_range k X p t τ σ).1
   constructor
   · rintro ⟨W, ι, i, g, F, O, h₁, h₂, h₃, h₄, h₅⟩
     exact ⟨W, ι, i, g, F, O, h₁, h₂, h₃, h₄, hE.continuous.continuousAt.eventually h₅⟩

@@ -2,7 +2,8 @@ import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.Archim
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LengthFunctionCompact
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.LeftEquivariantFunctions.GelfandFlags.IntSmooth
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PositiveConeStructureStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PositiveConeStructure
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.LeftEquivariantFunctions.SymZeroCommFrame
 
 noncomputable section
 
@@ -127,7 +128,7 @@ theorem end1 : End1 := by
     simp only [hFm, hR _ (val_mem x) hx, zero_mul, map_zero]
   refine ⟨hphi ▸ hcont.integrable_of_hasCompactSupport hcs, ?_⟩
   rw [hphi, hform Fm hFmcont hFmsupp hFmK, ← integral_const_mul]
-  refine setIntegral_congr_fun (GlobalTheory.T.positive_cone_structure n).1.measurableSet (fun v hv => ?_)
+  refine setIntegral_congr_fun (_root_.GlobalTheory.CompanionTheory.ConeHaar.coneSt n).1.measurableSet (fun v hv => ?_)
   rw [show Γ * S 1 * Kc σ c Fr k Γ T d.val (v, v) = Γ * S 1 * Kc σ c Fr k Γ T d.val (v, v) from rfl]
   have := hcone v hv
   simp only [trL_apply] at this

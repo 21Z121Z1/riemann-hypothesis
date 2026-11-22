@@ -4,7 +4,8 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermi
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityUnitary
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityReal
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsThetaSubGAlgDOne
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelProjectionFactorisationStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelProjectionFactorisation
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRtensOp
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix
 open Formalism.L2.Theta Formalism.L2.DIV Formalism.L2.Indef Formalism.DivisionValues
@@ -31,9 +32,9 @@ theorem exists_algD_not_polMatch_zero : ∀ {F E : Type} [Field F] [NumberField 
   have hs0 : ∀ v ∉ X.T, s v ≠ 0 := fun v hv => by
     rw [← hsph v hv]; exact (h.fin.sph v hv).2
   have hXT : (X.T : Set (GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Pl F)).Finite := X.T.finite_toSet
-  obtain ⟨q, hq⟩ := GlobalTheory.T.weil_model_projection_factorisation σ G.V G.W G.M B.ψ h.triple.geo.hM R.Pi R.p Rf.Pi Rf.p s
+  obtain ⟨q, hq⟩ := _root_.GlobalTheory.PureLift.exists_pureLift σ G.V G.W G.M B.ψ h.triple.geo.hM R.Pi R.p Rf.Pi Rf.p s
     (Filter.eventually_cofinite.2 (hXT.subset fun v hv => by by_contra hn; exact hv (hsph v hn)))
-  obtain ⟨q', hq'⟩ := GlobalTheory.T.weil_model_projection_factorisation σ G.V' G.W G.M' B.ψ h.triple.geo.hM' R.Pi R.p' Rf.Pi Rf.p' s
+  obtain ⟨q', hq'⟩ := _root_.GlobalTheory.PureLift.exists_pureLift σ G.V' G.W G.M' B.ψ h.triple.geo.hM' R.Pi R.p' Rf.Pi Rf.p' s
     (Filter.Eventually.of_forall fun v => rfl)
   haveI := h.real.nontriv
   obtain ⟨x, hx⟩ := exists_ne (0 : R.Pi)

@@ -85,7 +85,7 @@ theorem PositivityTheory.Xgp.t_c_bm_exists_period : Given → ∀ (E : Type) [Fi
     · have := ((h6 τ a b).differentiableAt (h3.mem_nhds hu)).star_star
       rw [star_star] at this
       exact this.differentiableWithinAt
-    · have := GlobalTheory.T.gramAt_conj_point_map_conj E H D l (Xo l) c Y S M.Ω _ _ M.x 𝔐 _ _ _ _ (h7 τ _ hu).1
+    · have := _root_.GlobalTheory.CompanionTheory.Ar.HodgeMetric.ConjPoint.gramAt_conj_point E H D l (Xo l) c Y S M.Ω _ _ M.x 𝔐 _ _ _ _ (h7 τ _ hu).1
       have e : spMap (starRingEnd ℂ) ≫ p' ((ρ : ℂ) • star u) = p ((ρ : ℂ) • u) := by
         rw [hp']
         simp only

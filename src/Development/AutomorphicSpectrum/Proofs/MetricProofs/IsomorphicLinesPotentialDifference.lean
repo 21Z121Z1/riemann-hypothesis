@@ -11,9 +11,9 @@ import Development.AutomorphicSpectrum.Proofs.MetricProofs.LineIsomorphismDefect
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ConjugateHermitianLineIsometries
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRes
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.RationalSections.ThmISt
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.IntersectionFamilyDefectFormulaStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.IntersectionFamilyDefectFormula
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IntersectionFamilySymmetric
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.TelescopingCoordinateDifferenceStatement
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.TelescopingCoordinateDifference
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MongeAmpereDifferenceTendstoZero
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsTwiceDifferentiableAt
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.CompRightEqZero
@@ -121,7 +121,7 @@ theorem step_eq (hR : RatRStatement) (hB : ResBridgeStatement) (hG : GoodProjExi
     rw [Re.line_deg, Re.line_deg]
     exact hiso
   obtain ⟨w, hw, -, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cmp.defect_exists_smooth K ι P Re.J D Re.R (Re.line a₁ t) (Re.line a₂ t) f g Re.arith.2.1 hIso hl₁ hl₂
-  have h := GlobalTheory.T.intersection_family_defect_formula hR hB hG hA K ι (II K ι) hI P Re.J D Re.R (fun j => Re.line (u j) t) (Re.line a₁ t)
+  have h := _root_.GlobalTheory.CompanionTheory.Ar.Cmp.OneSlot.inter_sub_eq_neg_mInt hR hB hG hA K ι (II K ι) hI P Re.J D Re.R (fun j => Re.line (u j) t) (Re.line a₁ t)
     (Re.line a₂ t) f g w Re.arith (fun j => Re.line_smooth _ t h0 h1) hl₁ hl₂ hIso hw
   rw [h]
   have hval : ∀ x, w (Re.R.lift x x) = -(S.phT a₁ t (Re.π x) - S.phT a₂ t (Re.π x) - d (Re.π x)) := by
@@ -194,6 +194,6 @@ theorem cmp_one : Inputs → AvoidStatement → ∀ (II : IntersectionSystem), I
   have hsum := tendsto_finset_sum Finset.univ fun i (_ : i ∈ Finset.univ) => hstep i
   simp only [Finset.sum_const_zero] at hsum
   refine hsum.congr fun t => ?_
-  exact (GlobalTheory.T.telescoping_coordinate_difference (σ ⊕ σ) (D + 1) (Re.num II t) _ _).symm
+  exact (_root_.GlobalTheory.CompanionTheory.Telescope.telescope_fin_positions (σ ⊕ σ) (D + 1) (Re.num II t) _ _).symm
 
 end GlobalTheory.CompanionTheory.Ar.Cmp.OneModel

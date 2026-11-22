@@ -2,9 +2,9 @@ import Mathlib
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.SquareIntegrableTempered.CentredSegments.IrreducibleUnif
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.StandardFunctorsFiniteLength
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeckeOperatorJacquetEigenLeftStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeckeOperatorJacquetEigenLeft
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeckeOperatorJacquetEigenRight
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetQuotientEigenvectorStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetQuotientEigenvector
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformizerPowTendstoZero
 
 open Filter Topology MeasureTheory GlobalTheory.PRep GlobalTheory.SplitWeil GlobalTheory.SmGL GlobalTheory.LocGL GlobalTheory.JHMult ValuativeRel
@@ -45,7 +45,7 @@ theorem heckeSpectral_of_maxExpStrict (k : Type) [Field k] [ValuativeRel k] [Top
   have hTw : T w = μ • w := hw.apply_eq_smul
   have hmk : (Submodule.Quotient.mk (w : V) : Jacquet π (unipRad k (stdBlocks d hd))) ≠ 0 := by
     intro h0
-    obtain ⟨r, hr⟩ := GlobalTheory.T.hecke_operator_jacquet_eigen_left k N V π hs m hm d hd hd0 hd1 T hT' w h0
+    obtain ⟨r, hr⟩ := _root_.GlobalTheory.CompanionTheory.HeckeNilp.hecke_nilpotent k N V π hs m hm d hd hd0 hd1 T hT' w h0
     rw [hw.pow_apply r] at hr
     exact (smul_ne_zero (pow_ne_zero r hμ0) hw.2) hr
   have hjac := _root_.GlobalTheory.CompanionTheory.HeckeJacquet.hecke_omega_jacquet k N V π hs m hm d hd hd0 hd1 T hT' w
@@ -55,7 +55,7 @@ theorem heckeSpectral_of_maxExpStrict (k : Type) [Field k] [ValuativeRel k] [Top
     rw [← hjac, hTw]
     rfl
   obtain ⟨x, hx, hxd, hjm, hs0, c1, hs1⟩ :=
-    GlobalTheory.T.jacquet_quotient_eigenvector k N V π hs hi hA hF d hd hd0 hd1 μ w hmk heig
+    _root_.GlobalTheory.CompanionTheory.JacExp.exists_constituent_of_eigen k N V π hs hi hA hF d hd hd0 hd1 μ w hmk heig
   have hpos : ∀ a, 0 < (x a).1 := by
     intro a
     rw [hxd a]

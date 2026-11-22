@@ -3,9 +3,9 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FullToGlIsSelfAdjoint
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetRallisBorderedMatrixNormalFormInvariants
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FourierMatch
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitaryActionHermitianInvariantsTransitiveStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitaryActionHermitianInvariantsTransitive
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetRallisOrbitalIntegralsInvariantLocallyCon
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyJacquetRallisHaarMeasuresForallSizeStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyJacquetRallisHaarMeasuresForallSize
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsMulStarEqOfNormOneUnramifiedQuadratic
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGlConjugateLastBasisNormalFormOfNeZero
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetRallisHankelDetNeZeroOfLift
@@ -15,7 +15,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitaryOrbital
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HermitianBlockHasInvariantsOfLiftMatch
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HermitianBlockHasInvariantsOfLiftWithLastBasis
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitIndicatorsMatchAtOfOneLtNormFirstMoment
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BorderedInvariantsAndHankelDetMapRingHomStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BorderedInvariantsAndHankelDetMapRingHom
 
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology
 
@@ -38,7 +38,7 @@ theorem unitMatchAt_of_one_le_norm : ∀ r : ℕ, UnitMatch r → ∀ (F E : Typ
     rw [← hgZ, hinvF.1, hinvF.2.1]
   have hΔL : Delta (inv (GlobalTheory.JR.Step.lift Z μ a.2.2)) ≠ 0 := by rw [hinvL]; exact hΔ
   have hΔZ : Delta (inv Z) ≠ 0 := _root_.GlobalTheory.JR.Step.delta_lift_ne F r Z μ a.2.2 hΔL
-  obtain ⟨M'⟩ := GlobalTheory.T.nonempty_jacquetRallisHaarMeasures_forall_size F E r
+  obtain ⟨M'⟩ := _root_.GlobalTheory.JR.HaarExist.meas_nonempty F E r
   have hL7 := _root_.GlobalTheory.JR.OrbLC.orbital_integrals_invariant_locally_constant F E (r + 1) M
   have hL7' := _root_.GlobalTheory.JR.OrbLC.orbital_integrals_invariant_locally_constant F E r M'
   have hG : orbG M (unitG (r + 1) F) (sec a) = (if ‖a.2.2‖ ≤ 1 then 1 else 0) * orbG M' (unitG r F) (sec (inv Z)) := by
@@ -48,7 +48,7 @@ theorem unitMatchAt_of_one_le_norm : ∀ r : ℕ, UnitMatch r → ∀ (F E : Typ
   have hIH := hUM F E M' (inv Z) hΔZ
   have hΔmap : ∀ (X : Hn (r + 1) F E), HasInv X a → Delta (inv X.toGl) ≠ 0 := by
     intro X hX
-    rw [hX, (GlobalTheory.T.borderedInvariants_and_hankelDet_map_ringHom F E (algebraMap F E) (r + 1)).2]
+    rw [hX, (_root_.GlobalTheory.JR.Step.InvMap.inv_and_Delta_map F E (algebraMap F E) (r + 1)).2]
     exact (map_ne_zero _).mpr hΔ
   refine ⟨fun X hX => ?_, fun hno => ?_⟩
   · obtain ⟨u, X', ν, hν, huX⟩ := _root_.GlobalTheory.JR.Step.uNormal F E r X a hX hμ1
@@ -59,7 +59,7 @@ theorem unitMatchAt_of_one_le_norm : ∀ r : ℕ, UnitMatch r → ∀ (F E : Typ
         rw [this, hμ1]
       nlinarith [norm_nonneg ν]
     have hXL : HasInv (GlobalTheory.JR.Step.liftH X' ν a.2.2) a := by
-      rw [← huX]; exact (GlobalTheory.T.unitary_action_hermitian_invariants_transitive F E (r + 1)).2.1 u X a hX
+      rw [← huX]; exact (_root_.GlobalTheory.JR.HermInv.herm_invariants F E (r + 1)).2.1 u X a hX
     have hU : orbU M (unitU (r + 1) F E) X = (if ‖a.2.2‖ ≤ 1 then 1 else 0) * orbU M' (unitU r F E) X' := by
       rw [← hL7.2.1 _ u, huX]
       exact GlobalTheory.T.unitaryOrbitalIntegral_liftLastBasis_reduce F E r M M' X' ν a.2.2 hν1 (hΔmap _ hXL)

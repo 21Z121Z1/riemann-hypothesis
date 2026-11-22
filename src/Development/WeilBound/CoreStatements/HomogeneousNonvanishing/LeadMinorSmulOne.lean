@@ -56,7 +56,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.Uppe
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.UnitHmE
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.MetricsProjectionFormulaNef
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Proportional
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogDetComparableGramBoundStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogDetComparableGramBound
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.GramLogUnitaryTriangularInvariance
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.InFlagDomainOne
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.LintegralImageEqLintegralNormSqDetMul
@@ -316,7 +316,7 @@ theorem valAt_unique {O : Type} [CommRing O] {β : O →+* c.F} {Y : Model Xo c 
     (𝔐 : GlobalTheory.CompanionTheory.Ar.HodgeCpt Y S y) (z : Sp ℂ ⟶ 𝔐.X) {e : 𝔐.Li} {v w : GlobalTheory.CompanionTheory.Ar.epsAt z ⟶ 𝔐.t.G}
     (hv : 𝔐.M.ValAt z e v) (hw : 𝔐.M.ValAt z e w) : v = w := by
   obtain ⟨Vz, _, _, ⟨MR⟩⟩ := GlobalTheory.CompanionTheory.Ar.lieModel_exists 𝔐.X 𝔐.t.G ℂ z
-  obtain ⟨ev, hev1, -⟩ := GlobalTheory.T.lie_lattice_eval_at_local_ring 𝔐.X 𝔐.t.G Ω 𝔐.ξ 𝔐.Li 𝔐.M ℂ z (𝔐.all _) Vz MR 𝔐.tie.gen 𝔐.t.semi.smooth
+  obtain ⟨ev, hev1, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.lieLat_val 𝔐.X 𝔐.t.G Ω 𝔐.ξ 𝔐.Li 𝔐.M ℂ z (𝔐.all _) Vz MR 𝔐.tie.gen 𝔐.t.semi.smooth
   obtain ⟨a, rfl⟩ := MR.onto v (GlobalTheory.CompanionTheory.Ar.GrNorm.tan_of_valAt hv)
   obtain ⟨b, rfl⟩ := MR.onto w (GlobalTheory.CompanionTheory.Ar.GrNorm.tan_of_valAt hw)
   obtain ⟨_, e1⟩ := (hev1 _ _).1 hv

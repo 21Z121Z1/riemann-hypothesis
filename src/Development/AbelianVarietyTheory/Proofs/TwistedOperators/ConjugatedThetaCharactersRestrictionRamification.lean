@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConstMemBddAut
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnrOffOne
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IdeleCharRestrictLocalUnitsResidueCharStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IdeleCharRestrictLocalUnitsResidueChar
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsUnramifiedAtPlaceIdempotentOfHeckeCharUnramifiStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LevelCharactersUnramifiedOffLevelPlaces
 import Formalism.LocalToGlobal.IndefiniteReal.FWExist
@@ -93,12 +93,12 @@ theorem conj_chars_res : ∀ {D : D7} {G : Type} [Group G] [Fintype G] {Pl0 T : 
     · exact ((R.C.isMu0 i).tame PP).mul ((p1 PP hP).levelLe 1)
     · exact ((p2 PP hP i).levelLe 1).mul (hL.xi_tame t PP)
   have rη : ∀ PP, GlobalTheory.StepLaw.ResAt cη⁻¹ PP 1 := fun PP => by
-    have := ((GlobalTheory.T.ideleChar_restrict_localUnits_residueChar D cη η' ecη PP).2 (uη PP)).inv
+    have := ((_root_.GlobalTheory.ResLoc.resAt_of_chrEq D cη η' ecη PP).2 (uη PP)).inv
     rwa [inv_one] at this
   have uoη : ∀ Z, GlobalTheory.StepLaw.UnrOff cη Z := fun Z v ε hε _ =>
     GlobalTheory.T.isUnramifiedAtPlaceIdempotent_of_heckeChar_unramified_above D cη η' ecη v ε hε fun P _ => uη P
   refine ⟨fun PP hPP => ?_, fun Z hZ => ?_, fun w hw => ?_⟩
-  · have h1 := (GlobalTheory.T.ideleChar_restrict_localUnits_residueChar D cμ μ' ecμ PP).1 (m PP) (tμ PP hPP) (hres PP hPP)
+  · have h1 := (_root_.GlobalTheory.ResLoc.resAt_of_chrEq D cμ μ' ecμ PP).1 (m PP) (tμ PP hPP) (hres PP hPP)
     refine ⟨h1, ?_⟩
     have := h1.mul (rη PP)
     rwa [mul_one] at this

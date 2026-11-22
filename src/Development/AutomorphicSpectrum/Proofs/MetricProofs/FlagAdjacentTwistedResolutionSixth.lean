@@ -6,8 +6,8 @@ import Development.AutomorphicSpectrum.Proofs.MetricProofs.BaseVectorProperties
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PluckerNonvanishingOrbitInvariant
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PlkFlagPt
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentPluckerOrbit
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.BaseChartHolomorphicCompositionStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentArithVarietyFirstStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.BaseChartHolomorphicComposition
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentArithVarietyFirst
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentArithVarietySecond
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BaseMetricVectorLogResolution
 open MvPolynomial MeasureTheory Filter Topology Matrix ReciprocityTheory.AnForm ReciprocityTheory.AnForm.M ReciprocityTheory.AnForm.P ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.AI.I1 ReciprocityTheory.ChartRestriction.G.AI.I2 ReciprocityTheory.ChartRestriction.G.AI.I4 GlobalTheory.CompanionTheory.Ar.PB GroundTheory.Heights₂.Heights GroundTheory.Heights₂.Heights.LowerBoundFree
@@ -139,7 +139,7 @@ theorem GlobalTheory.CompanionTheory.Ar.PB.WSq.FC.dens_w : ∀ (K : Type) [Finty
       (∀ u ∈ V, ∀ τ', IsBlockDiag j (hh τ' u) ∧ (hh τ' u).det ≠ 0) →
       ∀ q, AnalyticOnNhd ℂ (fun u => FC.wVec M (BM.F l) (FC.bvec BM l (bp u)) (fun τ' => hh τ' u) τ a k₀ ca cb t q) V := by
     intro m V bp hh hV hc hch hO hhan _ qq
-    obtain ⟨hbv, hval⟩ := GlobalTheory.T.base_chart_holomorphic_composition K ι Φ y Ψ N j M n BM l m V bp hV hc hch hO
+    obtain ⟨hbv, hval⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PB.WSq.FC.bvec_val_analytic K ι Φ y Ψ N j M n BM l m V bp hV hc hch hO
     have hreg : ∀ qq I, AnalyticOnNhd ℂ (fun u => valAt M.x ((BM.F l).u qq I) (FC.bvec BM l (bp u))) V := fun qq I =>
       hval _ fun c hcO => ((FC.bvec_good K ι Φ y Ψ N j M n BM l c hcO).2.1.2.1 qq I).1
     obtain ⟨o, mm⟩ := qq
@@ -163,7 +163,7 @@ theorem GlobalTheory.CompanionTheory.Ar.PB.WSq.FC.dens_w : ∀ (K : Type) [Finty
   obtain ⟨x', hx'V, b', hb', h', hh', ho', hmin⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PB.WSq.Dens.dens_core K ι Φ y Ψ N j M n BM (Option K)
     (fun o => ι (o.getD k₀)) _ ⊤ (d + 2) RW rfl l
     (fun c h => FC.wVec M (BM.F l) (FC.bvec BM l c) h τ a k₀ ca cb t) _ hT han
-    (fun c hc h hh => GlobalTheory.T.flag_adjacent_arith_variety_first K ι Φ y Ψ N j M n BM d τ a b k₀ ca cb hb hab hblk hca hcb harith l c hc h t hh)
+    (fun c hc h hh => _root_.GlobalTheory.CompanionTheory.Ar.PB.WSq.FC.WMem.main K ι Φ y Ψ N j M n BM d τ a b k₀ ca cb hb hab hblk hca hcb harith l c hc h t hh)
     x _ hx h₀ hh₀ ho V hV hxV
   have hw := _root_.GlobalTheory.CompanionTheory.Ar.PB.WSq.FC.fstPt_sndPt_wVec K ι Φ y Ψ N j M τ a b k₀ ca cb hb hab hblk hca hcb (BM.F l) (FC.bvec BM l b') h' t
   have hb'O : b' ∈ BM.O l := hb'.1

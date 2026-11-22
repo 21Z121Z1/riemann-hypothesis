@@ -8,7 +8,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.F
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryLieBasis
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EmbGLMemRealSU
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Signature
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralMultipleInLieLatticeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralMultipleInLieLattice
 open NumberField IsDedekindDomain MeasureTheory Matrix GlobalTheory.AdLat GlobalTheory.UCls GlobalTheory.SUVol ReciprocityTheory.ChartRestriction.G.FD ReciprocityTheory.ChartRestriction.G.AR.Inst ReciprocityTheory.ChartRestriction.G.AR.Up
 open scoped ENNReal
 
@@ -77,7 +77,7 @@ theorem exists_lie_basis {E : Type} [Field E] [NumberField E] [IsCMField E] {r :
     ∃ e : Fin (r ^ 2 - 1) → Matrix (Fin r) (Fin r) E,
       (∀ i, e i ∈ lieLat G Λ) ∧ LinearIndependent (maximalRealSubfield E) e := by
   obtain ⟨e, he, hli⟩ := _root_.GlobalTheory.suLie_finrank_ge G hΛ.1 hΛ.2.1
-  choose N hN hmem using fun i => GlobalTheory.T.integral_multiple_in_lie_lattice G Λ hΛ.2.2.1 hΛ.2.2.2.1 (e i) (he i).1 (he i).2
+  choose N hN hmem using fun i => _root_.GlobalTheory.DenClear.exists_natSmul_mem_lieLat G Λ hΛ.2.2.1 hΛ.2.2.2.1 (e i) (he i).1 (he i).2
   refine ⟨fun i => (N i : E) • e i, hmem, ?_⟩
   let w : Fin (r ^ 2 - 1) → (maximalRealSubfield E)ˣ :=
     fun i => Units.mk0 (N i : maximalRealSubfield E) (by exact_mod_cast (hN i).ne')

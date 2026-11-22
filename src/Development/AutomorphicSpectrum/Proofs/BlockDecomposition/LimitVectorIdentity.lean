@@ -2,25 +2,26 @@ import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.Archim
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinStable
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsRescaledConvergentSubsequence
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDimensionalPairTypedStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDimensionalPairTyped
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemProdSpanInf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PairSpaceCarriesFlatStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatAbsoluteCharacterStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TendstoAbsoluteCharacterOne
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CarriesTwistAbsoluteCharacterStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CarriesTwistAbsoluteCharacter
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CarriesTwistStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinStableTwistStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinStableInducedSpanStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDimensionalTypedDiscreteStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDimensionalTypedExtensionStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDimensionalTypedNode
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFiniteDeterminingSetStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TypedFirstBlockRestrictionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFiniteDeterminingSet
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TypedFirstBlockRestriction
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TypedSecondBlockRestriction
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemProdSpanInfStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDimensionalProdSpan
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatNodeFunction
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NodeFunctionLeviDecompositionStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CarriesInducedNodeStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NodeFunctionLeviDecomposition
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviFactorOfUnipotentDecompStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CarriesInducedNode
 
 noncomputable section
 
@@ -90,7 +91,7 @@ theorem carries_indFin {r s : ℕ} (e₁ : GA E r → ℂ) (e₂ : GA E s → �
     (a₂ : FinStable U₂) (a₂' : FinStable U₂') (c₁ : Carries e₁ U₁ U₁') (c₂ : Carries e₂ U₂ U₂') :
     Carries (nodeFn e₁ e₂) (indFin U₁ U₂) (indFin U₁' U₂') := by
   intro φ hφ
-  obtain ⟨φ', h', he⟩ := GlobalTheory.T.carries_induced_node e₁ e₂ U₁ U₁' U₂ U₂' h₁ h₂ a₁ a₁' a₂ a₂' c₁ c₂ φ (indFin_le _ _ hφ)
+  obtain ⟨φ', h', he⟩ := _root_.GlobalTheory.CompanionTheory.LimV.NodeCarry.carries_nodeFn e₁ e₂ U₁ U₁' U₂ U₂' h₁ h₂ a₁ a₁' a₂ a₂' c₁ c₂ φ (indFin_le _ _ hφ)
   refine ⟨φ', mem_indFin (memInd2_of_indSpan h') ?_, he⟩
   have hF := _root_.GlobalTheory.CompanionTheory.LimV.NodeFlat.flatFn_nodeFn e₁ e₂ h₁ h₂
   have hv : FiniteDimensional ℂ (Submodule.span ℂ (Set.range fun k => cptRep E (r + s) k φ)) := finVec_of_indFin hφ
@@ -230,7 +231,7 @@ theorem treeflat {N : ℕ} (s : Tr E N) : ∀ (t : ℕ → Tr E N), s.Disc → (
     obtain rfl : t = fun k => Tr.leaf V (zk k) := funext hzk
     refine ⟨fun k => absFn M (z - zk k), fun k => GlobalTheory.T.flat_absolute_character M _, fun k => ?_, fun x => ?_⟩
     · simp only [space_leaf]
-      exact GlobalTheory.T.carries_twist_absolute_character V (zk k) z
+      exact _root_.GlobalTheory.CompanionTheory.LimV.carries_absFn_tw V (zk k) z
     · refine _root_.GlobalTheory.CompanionTheory.LimV.absFn_tendsto_one M x _ ?_
       have h0 := hz 0
       simp only [Tr.twists, List.getD_cons_zero] at h0
@@ -292,7 +293,7 @@ theorem limVec : PositivityTheory.Rg.BcB.SpectralAccumulation.LimVec := by
   let X : Submodule ℂ (H E a b → ℂ) :=
     pairSpace s₁.space s₂.space ⊓ typeHF (K₁ ⊓ KO E a) (K₂ ⊓ KO E b) W₁ W₂
   haveI : FiniteDimensional ℂ X :=
-    GlobalTheory.T.finiteDimensional_pair_typed _ _ _ _ _ _ (treefd s₁ hD₁ _ _ hO₁ hW₁) (treefd s₂ hD₂ _ _ hO₂ hW₂)
+    _root_.GlobalTheory.CompanionTheory.LimV.FdPair.finiteDimensional_pairSpace_inf_typeHF _ _ _ _ _ _ (treefd s₁ hD₁ _ _ hO₁ hW₁) (treefd s₂ hD₂ _ _ hO₂ hW₂)
   let EE : ℕ → H E a b → ℂ := fun k x => e₁ k x.1 * e₂ k x.2
   have hEne : ∀ k x, EE k x ≠ 0 := fun k x => mul_ne_zero ((he₁ k).ne _) ((he₂ k).ne _)
   have hmem : ∀ k i, (fun x => EE k x * f k i x) ∈ X := fun k i =>

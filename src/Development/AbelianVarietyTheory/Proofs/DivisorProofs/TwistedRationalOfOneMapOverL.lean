@@ -10,7 +10,11 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFrameConstant
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCuspFormClassSumNormalisedData
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdelicLiftEqGeometricClassSumAllTuples
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsNormalisedTupleDataOverCoefficientFieldStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsNormalisedTupleDataOverCoefficientField
+import Formalism.LocalToGlobal.IndefiniteReal.OneMapT
+import Formalism.LocalToGlobal.IndefiniteReal.OneMapEq
+import Formalism.LocalToGlobal.IndefiniteReal.ConcretePkgSpec
+import Formalism.LocalToGlobal.IndefiniteReal.FWExist
 
 set_option autoImplicit false
 
@@ -356,6 +360,6 @@ theorem twistedRational (hC : R.Char F) (fw : FWTie T R κ v₀) (hio : IoExt R)
     {O : ∀ i, OMDat T.toCore R i Unit (fun _ => A.μ0)} (hO : ∀ i, OMPins T R κ v₀ O i) (hQ : QGuard R)
     (hrow : ∀ i, OneMapRowR T R κ v₀ O ph i) (hK : CoverField T R) (hne : BaseLiftNeZero R) : TwistedRational R F ph :=
   twistedRational_of_core ⟨hC.lev, hC.grp, hC.fam, hC.models, hC.chain, hC.thP⟩ fw hio hU hQ hrow
-    (fun i => GlobalTheory.T.exists_normalisedTupleData_over_coefficientField D G Pl0 T0 A T R F κ v₀ O i hC ⟨fw⟩ (hO i) hQ hK) hne
+    (fun i => _root_.GlobalTheory.PinsOverField.pinsOverL D G Pl0 T0 A T R F κ v₀ O i hC ⟨fw⟩ (hO i) hQ hK) hne
 
 end GlobalTheory.TwistedClassSum

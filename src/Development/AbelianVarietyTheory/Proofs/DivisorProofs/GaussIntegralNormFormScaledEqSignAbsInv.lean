@@ -1,14 +1,14 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.UnipVal
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicIsNonarchimedeanLocalField
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompactOpenNormClosedBallQuadraticStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompactOpenNormClosedBallQuadratic
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussIntegralNormFormNonNormCancel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussIntegralQuadraticCharEventuallyConst
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasGaussIntegralCompAddEquivRescaleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactOpenSubgroupExhaustion
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuadExtTopology
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSelfDualBicharacterPairingOfSymmBilinForm
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapMulLeftEqNormSmulStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapMulLeftEqNormSmul
 
 open MeasureTheory Matrix GlobalTheory.KSp GlobalTheory.SplitUnitary
 open GlobalTheory.WeilM (UG IsQuad IsHerm ResEtaPow)
@@ -151,7 +151,7 @@ theorem hasGauss_norm_mul : ∀ (F : Type) [Field F] [CharZero F] [ValuativeRel 
         continuous_toFun := continuous_const.mul continuous_id
         continuous_invFun := continuous_const.mul continuous_id }
     have hT : μ.map T = (distribHaarChar F t)⁻¹ • μ := by
-      have h := GlobalTheory.T.map_mul_left_eq_inv_norm_haarChar_smul F E c δ hE μ w
+      have h := _root_.GlobalTheory.KSp.map_mul_left_eq_norm_smul F E c δ hE μ w
       rw [hw] at h
       exact h
     have h := GlobalTheory.T.hasGaussIntegral_comp_addEquiv_rescale E E μ μ T _ f γ hT hG
@@ -172,8 +172,8 @@ theorem hasGauss_norm_mul : ∀ (F : Type) [Field F] [CharZero F] [ValuativeRel 
     obtain ⟨a₂, ha₂⟩ := exists_cball_of_isCompact (hK₁.image hNc)
     obtain ⟨s', hs'1, hs'2⟩ := exists_cball_sup (t * a₁) a₂
     obtain ⟨s, hs1, hs2⟩ := exists_cball_sup s' s₀
-    obtain ⟨L, hLeq, hLc, hLo⟩ := GlobalTheory.T.exists_compactOpen_normClosedBall_quadratic F E c δ hE (t⁻¹ * s)
-    obtain ⟨L₁, hL₁eq, hL₁c, hL₁o⟩ := GlobalTheory.T.exists_compactOpen_normClosedBall_quadratic F E c δ hE s
+    obtain ⟨L, hLeq, hLc, hLo⟩ := _root_.GlobalTheory.NormBall.exists_normBall F E c δ hE (t⁻¹ * s)
+    obtain ⟨L₁, hL₁eq, hL₁c, hL₁o⟩ := _root_.GlobalTheory.NormBall.exists_normBall F E c δ hE s
     have hset : {z : E | (t : F) * Algebra.norm F z ∈ cball s} = (L : Set E) := by
       rw [hLeq]; ext z; exact mul_mem_cball_iff t s _
     have hK₁L₁ : K₁ ⊆ L₁ := by

@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobKerIdealLeAugId
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFactorThroughIsogenyOfDieudonneRangeLe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RigidifiedExtensionPullbackDualHomEqZeroOfIsEt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DieudonneFunctorBaseFunctorProperties
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivisibleGroupIsogenyBasicPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivisibleGroupIsogenyBasicProperties
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsConnIsEtSplitting
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomEqZeroOfIsConnOfIsEt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualIsConnOfIsEtPDivGroup
@@ -59,7 +59,7 @@ theorem divP_iff_red {G H : PDivGroup p k} (f : G ⟶ H) : DivP T f ↔ rigExtMa
 
 theorem exists_of_isConn {G H : PDivGroup p k} (hG : G.IsConn) (f : G ⟶ H) (hf : DivP T f) :
     ∃ g : G ⟶ H, f = (p : ℤ_[p]) • g := by
-  have hq : IsIsog ((p : ℤ_[p]) ^ 1 • 𝟙 G) := ((GlobalTheory.T.pDivisibleGroup_isogeny_basic_properties p k G).1 1).1
+  have hq : IsIsog ((p : ℤ_[p]) ^ 1 • 𝟙 G) := ((_root_.GlobalTheory.Dieu.isog_basics p k G).1 1).1
   obtain ⟨g, hg⟩ := _root_.GlobalTheory.Dieu.exists_comp_eq_of_range_map_le p T k G G H _ f hG hq (by
     rintro x ⟨m, rfl⟩
     obtain ⟨m', hm'⟩ := hf m

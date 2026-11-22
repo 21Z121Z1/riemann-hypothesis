@@ -1,7 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.JumpDictCrysAtOfWeights
 import Formalism.LocalToGlobal.GaloisLevelStructure.TiedLevel
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AlgWeightHighestWeightExistsUniqueAntitoneStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AlgWeightHighestWeightExistsUniqueAntitone
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RingSpecNormalisedCharacterEq
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AlgWeightContragredientExistsUnique
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HighestWeightAtConjugateEmbeddingRevNeg
 import Formalism.LocalToGlobal.GaloisLevelStructure.DefsAut
@@ -47,9 +48,9 @@ theorem weightParam_of_levelTied : ∀ (D : D7) (M : Formalism.L2.MtFam D) (tup 
   intro D M tup hL hEta hLoc i ρ
   set a := GlobalTheory.WtDual.dualWt (M.loc i).wt with ha
   have hd : (M.loc i).wt.IsDual a := GlobalTheory.WtDual.isDual_dualWt _
-  obtain ⟨⟨lam, hlam, -⟩, -⟩ := GlobalTheory.T.algWeight_highestWeight_exists_unique_antitone _ _ a (embT D ρ)
-  obtain ⟨⟨lam', hlam', -⟩, -⟩ := GlobalTheory.T.algWeight_highestWeight_exists_unique_antitone _ _ a (ComplexEmbedding.conjugate (embT D ρ))
-  have huniq := (GlobalTheory.T.algWeight_highestWeight_exists_unique_antitone _ _ a (embT D ρ)).1
+  obtain ⟨⟨lam, hlam, -⟩, -⟩ := _root_.GlobalTheory.AlgWtHW.hw_exists_unique_antitone _ _ a (embT D ρ)
+  obtain ⟨⟨lam', hlam', -⟩, -⟩ := _root_.GlobalTheory.AlgWtHW.hw_exists_unique_antitone _ _ a (ComplexEmbedding.conjugate (embT D ρ))
+  have huniq := (_root_.GlobalTheory.AlgWtHW.hw_exists_unique_antitone _ _ a (embT D ρ)).1
   have hsw := _root_.GlobalTheory.hwAt_conj_swap _ _ a (embT D ρ) lam' hlam'
   have heq : lam = fun k => -lam' (Fin.rev k) := huniq.unique hlam hsw
   have hlam'eq : lam' = fun k => -lam (Fin.rev k) := by

@@ -4,7 +4,7 @@ import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.GapCondExa
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FrobeniusLatticeDegreeMulP
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LinearIndependentMapVec
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SubDegreeMonoInjectiveHom
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SubDegreeBotAndMaxExistsStatement
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SubDegreeBotAndMaxExists
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ShortExactSubDegreeBound
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DotDualSubDegreeAnnihilator
 
@@ -25,7 +25,7 @@ theorem frob_estimate : ∀ (K : Type) [Field K] (C : ACurve K) (p : ℕ) [Fact 
       ∀ W : Submodule K (Fin d → K),
         ((p : ℤ) - 2) * subDeg C D.lie W ≤ deg C (dotDual C D.lie) := by
   intro K _ C p _ _ O _ _ d D hp
-  obtain ⟨h0, W₀, hW₀⟩ := GlobalTheory.T.sub_degree_bot_and_max_exists K C (Fin d → K) D.lie D.lie_bun
+  obtain ⟨h0, W₀, hW₀⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Crv.SubdegMax.subDeg_max K C (Fin d → K) D.lie D.lie_bun
   have hp2 : (0 : ℤ) < (p : ℤ) - 2 := by
     have : (2 : ℤ) < (p : ℤ) := by exact_mod_cast hp
     linarith

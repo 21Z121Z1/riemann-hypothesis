@@ -7,10 +7,10 @@ import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SchurHe
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.KZeroOnFrConstEntire
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaKernelOrthonormalFrameInDomainPeriodLinear
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaFunctionFundamentalDomainInnerProductBasic
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdelicZakThetaExistsUniqueStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdelicZakThetaExistsUnique
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaKernelTestFunctionMapLinearInjectiveEquivar
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsTestFunctionOfFockVacuumThetaFunction
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockPolynomialVectorTestThetaZeroEqThetaSeriesStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockPolynomialVectorTestThetaZeroEqThetaSeries
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.WeakWeilRepCarriesDerivativesVacuaFockVectors
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.InnerProductTranslatedVacuaEqGaussianKernel
 
@@ -117,14 +117,14 @@ theorem om_real_Th : ∀ (D : D7) (S T : HSp D) (C : Ctx S T), ∀ om : GA D S �
   have hB' : C.IsB (C.mvB g B) := (hmv g).1
   obtain ⟨-, hdom', -⟩ := (_root_.GlobalTheory.Ker.onBasis_frame_period D S T C).2 _ hB'
   have hth : ∀ x ∈ C.X.dom, ∀ φ : TF S.rank C.g, SW.IsSB φ → C.IsTh (C.Th x φ) :=
-    fun x hx φ hφ => (GlobalTheory.T.adelicZakTheta_exists_unique D S T C x hx φ hφ).1.1
+    fun x hx φ hφ => (_root_.GlobalTheory.Ker.ZakEx.isZak_Th D S T C x hx φ hφ).1.1
   have hex : ∀ φ : TF S.rank C.g, ∃ φ' : TF S.rank C.g, SW.IsSB φ →
       SW.IsSB φ' ∧ om (h, g) (C.Th (C.xB B) φ) = C.Th (C.xB (C.mvB g B)) φ' := by
     intro φ
     by_cases hφ : SW.IsSB φ
     · obtain ⟨φ', h'⟩ := _root_.GlobalTheory.Ker.exists_test_of_fock D S T C _ hB' _ (hom.om_pres (h, g) _ (hth _ hdom φ hφ))
         (((_root_.GlobalTheory.Ker.WeakMove.om_move D S T C om hom h g _ (hth _ hdom φ hφ)).2 B hB).1
-          ((GlobalTheory.T.fockPolynomialVector_testTheta_zero_eq_thetaSeries D S T C).2 B hB φ hφ).1)
+          ((_root_.GlobalTheory.Ker.fvec_Th_zero D S T C).2 B hB φ hφ).1)
       exact ⟨φ', fun _ => h'⟩
     · exact ⟨φ, fun h' => absurd h' hφ⟩
   choose A hA using hex

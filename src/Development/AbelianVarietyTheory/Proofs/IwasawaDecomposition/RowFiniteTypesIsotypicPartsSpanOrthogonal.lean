@@ -10,7 +10,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryCongruenceConjContainsCongruence
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCongruenceLevelMapsIntoLatticeCongruence
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PrincipalCongruenceLevelContained
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLatticeCongruenceInLevelCharacterOneStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLatticeCongruenceInLevelCharacterOne
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SchurPairingInvariantUnderStandardGroup
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SmoothAdmissibleUnitaryMemSupIsotypicPartsStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KernelVectorSumOfIsotypicPiecesStatement
@@ -198,7 +198,7 @@ theorem levN_open {D : D7} {V : HSp D} {n : ℕ} (P : principalLevelFrame.RowPsi
 theorem levOK_levS {D : D7} {V : HSp D} {n : ℕ} (P : principalLevelFrame.RowPsi V n) {hF : D.host.F = maximalRealSubfield D.host.E}
     (hP : StdFrame hF P) (β : GL (Fin V.rank) (Formalism.IndefR.Lev.EAf D)) (L : LevDat D.host.E ℂ V.rank) :
     principalLevelFrame.LevOK P (levS V β L) (levChi V β L) := by
-  obtain ⟨N, hN, h⟩ := GlobalTheory.T.exists_lattice_congruence_in_level_character_one D V β L
+  obtain ⟨N, hN, h⟩ := _root_.GlobalTheory.LevFinCong.exists_finCong_lev D V β L
   obtain ⟨N', hN', h'⟩ := _root_.GlobalTheory.StdFrameCong.exists_cong_finCong D V n P hF hP N hN
   exact ⟨N', hN', fun κ hκ => h _ (P.into κ) (h' κ hκ)⟩
 

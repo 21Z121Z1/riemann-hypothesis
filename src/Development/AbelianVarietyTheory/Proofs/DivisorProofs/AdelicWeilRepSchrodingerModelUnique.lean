@@ -2,8 +2,8 @@ import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledUnitaryCharacterTrivialOfSiegelStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharacterInvariantAdelicFormEqMulEvalZero
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzSpaceTranslateMemStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductFunctionOnSumCoordsMemAdelicSchwartzSpaceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzSpaceTranslateMem
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductFunctionOnSumCoordsMemAdelicSchwartzSpace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdelicSchwartzNeZeroAtOrigin
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDiagonalLagrangianInvariantForm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryDoubledBlockDiagOne
@@ -42,7 +42,7 @@ theorem scalar_of_commute (ψ : AddChar (AF F) ℂ) (hψ : IsStd ψ) {κ : Type}
   refine ⟨c, fun φ hφ => funext fun x => ?_⟩
   have h1 := congrFun (hc (x, 0) φ hφ) 0
   have e : schr ψ (x, 0) φ = fun z => φ (z + x) := by funext z; simp [schr]
-  have h2 := hc' _ (e ▸ GlobalTheory.T.adelicSchwartzSpace_translate_mem F κ x φ hφ)
+  have h2 := hc' _ (e ▸ _root_.GlobalTheory.SchwartzTranslate.main F κ x φ hφ)
   simp only [LinearMap.comp_apply, LinearMap.proj_apply] at h2
   rw [h1] at h2
   simp [schr] at h2
@@ -161,7 +161,7 @@ theorem member_unique (σ : E →ₐ[F] E) (hσ : IsCMExt F E σ) {a b : ℕ} (J
   intro g Φ hΦ
   obtain ⟨gd, hgd⟩ := _root_.GlobalTheory.unitary_diag_one_mem_dbl (AF F) (AE F E) (cA σ) (Fin b) (incM F JB) g
   obtain ⟨φ₂, hφ₂, hφ₂0⟩ := _root_.GlobalTheory.SchANonzero.exists_mem_schA_ne_zero F κ
-  have hb := GlobalTheory.T.productFunctionOnSumCoords_mem_adelicSchwartzSpace F κ κ Φ hΦ φ₂ hφ₂
+  have hb := _root_.GlobalTheory.SchwartzBox.boxFun_mem_schA F κ κ Φ hΦ φ₂ hφ₂
   have e := hres g gd hgd Φ hΦ φ₂ hφ₂
   have e₁ := hres₁ g gd hgd Φ hΦ φ₂ hφ₂
   rw [hcf gd _ hb, hcf1 gd, one_smul, e] at e₁

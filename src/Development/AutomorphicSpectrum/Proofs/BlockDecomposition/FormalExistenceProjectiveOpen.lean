@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformVanishing
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedNoetherianStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedNoetherian
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformVanishingOfGradedNoetherianStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformGenerationOfVanishing
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AmpleTwistedSectionsApproximation
@@ -24,8 +24,8 @@ theorem exists_sub_of_ample {A : Type} [CommRing A] [IsNoetherianRing A] (I : Id
   have hln : IsLocallyNoetherian X := LocallyOfFiniteType.isLocallyNoetherian (X ↘ Spec (.of A))
   have hcs : CompactSpace X := QuasiCompact.compactSpace_of_compactSpace (X ↘ Spec (.of A))
   have hno : IsNoetherian X := ⟨⟩
-  have hV : UniformVanishing := @GlobalTheory.T.uniform_vanishing_of_graded_noetherian GlobalTheory.T.graded_noetherian
-  have hG : UniformGen := @_root_.GlobalTheory.CompanionTheory.GE.uniformGen_of_gradedNoeth GlobalTheory.T.graded_noetherian (@hV)
+  have hV : UniformVanishing := @GlobalTheory.T.uniform_vanishing_of_graded_noetherian _root_.GlobalTheory.CompanionTheory.GE.GNoeth.gradedNoeth
+  have hG : UniformGen := @_root_.GlobalTheory.CompanionTheory.GE.uniformGen_of_gradedNoeth _root_.GlobalTheory.CompanionTheory.GE.GNoeth.gradedNoeth (@hV)
   obtain ⟨n₁, h₁⟩ := _root_.GlobalTheory.CompanionTheory.GE.Step.step_uniform (@hG) I H hH hP S hS
   have hW : ∀ n : ℤ, ∃ W : Set Γ(GlobalTheory.twistZ P H n, ⊤), (∀ e, W ⊆ twSecs H n (S e)) ∧
       (n₁ ≤ n → ∀ e, ∀ x ∈ twSecs H n (S e), ∃ b ∈ W, x - b ∈ twPow I H n P (e + 1)) := fun n => by

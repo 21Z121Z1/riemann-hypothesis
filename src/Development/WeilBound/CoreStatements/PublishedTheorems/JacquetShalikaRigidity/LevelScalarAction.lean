@@ -37,7 +37,7 @@ theorem global_level_of : jumpWindows.G0 → jumpWindows.G1 → jumpWindows.Almo
     exact hw (hS ((Set.Finite.mem_toFinset _).2 hc))
   refine ⟨fun w hw => (hoff w hw).1, fun α hα => ?_⟩
   have hgood : Good ψ (k - 1) (x₀ : GA E k → ℂ) := by
-    rw [hx₀]; exact GlobalTheory.T.isMirabolicWhittakerStage_of_isCuspForm E k ψ φ₀ (π.cusp _ hφ₀)
+    rw [hx₀]; exact _root_.GlobalTheory.CuspGeneric.good_of_isCuspForm E k ψ φ₀ (π.cusp _ hφ₀)
   have hx0 : x₀ ≠ 0 := by
     intro h
     subst h

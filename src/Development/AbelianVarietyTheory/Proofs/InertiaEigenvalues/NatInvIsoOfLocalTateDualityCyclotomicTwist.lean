@@ -3,7 +3,7 @@ import Formalism.WachLatticeTwists.LatticeDualFibres.FibreDualStable
 import Formalism.GaloisCohomology.LocalTateDualityK
 import ReciprocityTheory.ReductiveGroups.TraceFormulas.LatDefs
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BijectiveOfRetract
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LinearMapContinuousOfCompactSpaceOfFiniteStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LinearMapContinuousOfCompactSpaceOfFinite
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivDvrFgModuleStructure
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGeneratorH2Twist
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EveryGeneratorH2Twist
@@ -28,9 +28,9 @@ theorem natInvIso_of_localTateDuality (hT : Formalism.GaloisCohomology.LocalTate
       (fun i => LinearMap.proj i ∘ₗ LinearMap.snd O _ _ ∘ₗ E.toLinearMap)
       (fun i => E.symm.toLinearMap ∘ₗ LinearMap.inr O _ _ ∘ₗ
         LinearMap.single O (fun i : Fin m => O ⧸ IsLocalRing.maximalIdeal O ^ e i) i)
-      (fun j => GlobalTheory.T.continuous_linearMap_of_finite _) (fun j => GlobalTheory.T.continuous_linearMap_of_finite _) (fun i => GlobalTheory.T.continuous_linearMap_of_finite _) (fun i => ?_) ?_
+      (fun j => _root_.GlobalTheory.linearMap_continuous_of_compactSpace_of_finite _) (fun j => _root_.GlobalTheory.linearMap_continuous_of_compactSpace_of_finite _) (fun i => _root_.GlobalTheory.linearMap_continuous_of_compactSpace_of_finite _) (fun i => ?_) ?_
       (fun j => ?_) (fun i => hq (e i))
-    · have := GlobalTheory.T.continuous_linearMap_of_finite (M := O) (M' := M) ((E.symm.toLinearMap ∘ₗ LinearMap.inr O _ _ ∘ₗ
+    · have := _root_.GlobalTheory.linearMap_continuous_of_compactSpace_of_finite (M := O) (M' := M) ((E.symm.toLinearMap ∘ₗ LinearMap.inr O _ _ ∘ₗ
         LinearMap.single O (fun i : Fin m => O ⧸ IsLocalRing.maximalIdeal O ^ e i) i) ∘ₗ
           (IsLocalRing.maximalIdeal O ^ e i).mkQ)
       exact (Submodule.isOpenQuotientMap_mkQ _).isQuotientMap.continuous_iff.2 this

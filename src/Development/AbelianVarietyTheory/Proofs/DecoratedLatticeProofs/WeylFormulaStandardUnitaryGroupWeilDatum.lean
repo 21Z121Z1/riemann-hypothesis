@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HalfData
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StandardUnitaryChartWeylElementRational
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeylElementActsOnSchrodingerByFourierStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeylElementActsOnSchrodingerByFourier
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchrodingerThetaEqSchwartzBruhat
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HeckeFormNSOfHeckeForm
 import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelWeilUnitaryConvergent
@@ -31,7 +31,7 @@ theorem main : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (A B : HSp D) (χB 
   obtain ⟨hW1, h1, h2⟩ := _root_.GlobalTheory.StdUnn.chart_weyl D A μ hμ κ hκ (κ.symm g) hw
   have hg' := hT (κ.symm g) f hf Φ hΦ.symm
   rw [MulEquiv.apply_symm_apply] at hg'
-  rw [hg', GlobalTheory.T.weylElement_acts_on_schrodinger_by_fourier D ψ A B χB omh hW ν 𝓨 hν μ hμ (κ.symm g) hW1 h1 h2 f hf x, ← hΦ]
+  rw [hg', _root_.GlobalTheory.StdUnn.WeylFourier.sch_weyl D ψ A B χB omh hW ν 𝓨 hν μ hμ (κ.symm g) hW1 h1 h2 f hf x, ← hΦ]
   refine integral_congr_ae (Filter.Eventually.of_forall fun y => ?_)
   simp only [shift, AddChar.mulShift_apply]
   rw [← hlam, trA_incA_mul]

@@ -17,7 +17,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchwartzBruhatMa
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OpECutOmEquivariant
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ColEInvMulAffPt
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RowSupportUniform
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RootExchangeUnipotentSubgroupSuccDecompositionStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RootExchangeUnipotentSubgroupSuccDecomposition
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.QuotientIntegralWhittakerTwist
 open MeasureTheory ValuativeRel Matrix GlobalTheory.SplitWeil GlobalTheory.RootEx
 open Filter Topology
@@ -188,7 +188,7 @@ theorem fc_supp (hp : 1 ≤ p) (hc : p < c) (hψ1 : ψ ≠ 1) (hσ : IsSmoothRep
     exact h1 (Subtype.ext (funext hh))
   obtain ⟨r, hr, w, hw, rfl⟩ := H μ Φ.1 (subset_tsupport _) hΦ (cut p χ) (cut_lc p hχ) h x₀ hx₀
   obtain ⟨x, g, hg, rfl⟩ := Radical.exists_of_mem_R hr
-  obtain ⟨g₁, hg₁, u, rfl⟩ := GlobalTheory.T.rootExchangeUnipotentSubgroup_succ_decomposition k n c p g hg
+  obtain ⟨g₁, hg₁, u, rfl⟩ := _root_.GlobalTheory.RootEx.RadicalDecomp.succ_decomp k n c p g hg
   refine ⟨x, g₁, hg₁, rowE c p u * w, Set.mul_mem_mul (Set.mem_image_of_mem _ ?_) hw, by group⟩
   by_contra hu
   apply hne

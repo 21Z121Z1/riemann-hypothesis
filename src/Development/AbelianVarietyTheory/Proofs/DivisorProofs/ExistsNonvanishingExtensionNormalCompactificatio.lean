@@ -2,13 +2,13 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSectionOfChg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RegularOfRegularAtCodimOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocPtCompClosedPoint
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeterminantSectionUnitIntegralFramesDvrStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeterminantSectionUnitIntegralFramesDvr
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericFibreComponentClosureOpenIsIntegral
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToroidalGenericFibreAffineFrameCover
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModuliSchemeAffineFrameCoverTwoEigenParts
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsVecEquiv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCombinationIffOfSameVecs
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDeterminantLineSectionRestrictionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDeterminantLineSectionRestriction
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLieDeterminantLineRatioFunction
 
 set_option autoImplicit false
@@ -146,7 +146,7 @@ theorem exists_extension : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E
       exact (hZ K j₀ _ vz wz hz).ne_zero
     · obtain ⟨vb, wb, hb, a, b⟩ := exists_pull (algebraMap R K) hR hc.1
       obtain ⟨v', w', h', sv', sw'⟩ := (frame_transfer E H D l Xo c O β Y U τ K _ x).2 _ vb wb hxU hb
-      obtain ⟨u, hu⟩ := GlobalTheory.T.determinantSection_unit_integral_frames_dvr E H D l Xo c O β Y O' β' Z U τ σZ σ hσZ hZ hres R K j xR x _ vR wR v' w' vb wb
+      obtain ⟨u, hu⟩ := _root_.GlobalTheory.DetLine.DvrUnit.unit_in_integral_frame E H D l Xo c O β Y O' β' Z U τ σZ σ hσZ hZ hres R K j xR x _ vR wR v' w' vb wb
         hR h' hc.1 sv' sw' a b
       have hid : x = spMap (RingHom.id K) ≫ x := by rw [DetExtendZero.spMap_id, Category.id_comp]
       refine ⟨u, ?_⟩
@@ -158,7 +158,7 @@ theorem exists_extension : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E
       · refine (isCombination_iff_of_sameVecs E H D l Xo c O β Y K K _ x x _ w' wb w w₀ hid sw' sw _ i).2 ?_
         simp only [DetExtendZero.dual_id, Category.id_comp, b]
         exact hc.2.2 i
-    · obtain ⟨σ₁, h1, h2, h3⟩ := GlobalTheory.T.exists_determinantLine_section_restriction E H D l Xo c O β Y U τ σb hb
+    · obtain ⟨σ₁, h1, h2, h3⟩ := _root_.GlobalTheory.DetLine.Restrict.exists_restriction E H D l Xo c O β Y U τ σb hb
       obtain ⟨f, hf⟩ := GlobalTheory.detLine_exists_ratio E H l c _ _ _ _ _ τ _ _ U σ₁ σ
         (frameCover_univ E H D l Xo c U τ hτ) h1 (h3 hnz) hσ
       have e1 : valR x U f = 1 := by

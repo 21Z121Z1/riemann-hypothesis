@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ChernDegreeComplex
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsPresents
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChernIntegralWeightIndep
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChernIntegralPresentationTransferStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChernIntegralPresentationTransfer
 open CategoryTheory AlgebraicGeometry TopologicalSpace MeasureTheory
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
 open ReciprocityTheory.ChartRestriction.G.Out (nonzeroLocus)
@@ -15,7 +15,7 @@ theorem chernInt_eq_of_presents (Y : Var ℂ) (Δ : Y.Dv) (L L' : LB Y.X) (r : L
     (φ : Weight Y.str (RingHom.id ℂ) L) (ψ : Weight Y.str (RingHom.id ℂ) L')
     (hφ : φ.IsCInf) (hψ : ψ.IsCInf) :
     φ.chernInt Y.dim Set.univ (fun _ => 1) = ψ.chernInt Y.dim Set.univ (fun _ => 1) := by
-  obtain ⟨ψ₀, hψ₀, hmass⟩ := GlobalTheory.T.chern_integral_presentation_transfer Y Δ L L' r r' hL hL' φ hφ
+  obtain ⟨ψ₀, hψ₀, hmass⟩ := _root_.GlobalTheory.CompanionTheory.ChernTransport.transport Y Δ L L' r r' hL hL' φ hφ
   rw [← hmass]
   exact _root_.GlobalTheory.CompanionTheory.ChernMass.chernInt_eq_of_isCInf Y L' ψ₀ ψ hψ₀ hψ
 

@@ -3,10 +3,10 @@ import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsSplitGau
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.GapCondExample
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DualLatticeDegreeNeg
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LmuNumNonneg
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ConjugateEigenSubDegreeEqStatement
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ConjugateEigenSubDegreeEq
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LieSubDegreeBoundByDual
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DegreeSumEigenSubDegrees
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SubDegreeBotAndMaxExistsStatement
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SubDegreeBotAndMaxExists
 
 open GlobalTheory.CompanionTheory.Ar.Crv
 
@@ -46,7 +46,7 @@ theorem isHom_lie {K : Type} [Field K] {C : ACurve K} {p : ℕ} {O : Type} [Comm
 theorem lmuNum_nonneg_of_conjData : ∀ (K : Type) [Field K] (C : ACurve K) (p : ℕ) [Fact p.Prime] [CharP K p] (O k S T : Type) [CommRing O] [StarRing O] [Field k] [Algebra k K] [Fintype S] [Fintype T] (χ : S → (O →+* k)) (d : ℕ) (D : ConjData C p O d) (ι κ : T → S) (j q : ℕ) (μ : T → ℕ → ℝ) (W L : T → ℕ → Submodule K (Fin d → K)), 2 < p → IsSplit χ → (∀ i (c : k), C.v i (algebraMap k K c) ≤ 1) → Function.Bijective (Sum.elim ι κ) → (∀ τ a, χ (κ τ) a = χ (ι τ) (star a)) → 1 ≤ j → 1 ≤ q → (∀ τ, W τ 0 = ⊥) → (∀ τ, L τ 0 = ⊥) → (∀ τ, W τ j = (eig (fun a => Matrix.toLin' (D.ρ a)) (fun a => algebraMap k K (χ (ι τ) a)))) → (∀ τ, L τ q = (eig (fun a => Matrix.toLin' (D.ρ a)) (fun a => algebraMap k K (χ (κ τ) a)))) → GapCond p j q μ → 0 ≤ lmuNum j q μ (fun τ i => (subDeg C D.lie (W τ i) : ℝ)) (fun τ i => (subDeg C D.lie (L τ i) : ℝ)) := by
   intro K _ C p _ _ O k S T _ _ _ _ _ _ χ d D ι κ j q μ W L hp hs hc hbij hconj hj hq hW0 hL0 hWj hLq hgap
   classical
-  obtain ⟨hbot, W₀, hW₀⟩ := GlobalTheory.T.sub_degree_bot_and_max_exists K C (Fin d → K) D.lie D.lie_bun
+  obtain ⟨hbot, W₀, hW₀⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Crv.SubdegMax.subDeg_max K C (Fin d → K) D.lie D.lie_bun
   obtain ⟨he0, hC2⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Crv.FrobEst.frob_estimate K C p O d D hp
   have hsplit : deg C D.lie = ∑ s, subDeg C D.lie
       (eig (fun a => Matrix.toLin' (D.ρ a)) (fun a => algebraMap k K (χ s a))) :=
@@ -57,7 +57,7 @@ theorem lmuNum_nonneg_of_conjData : ∀ (K : Type) [Field K] (C : ACurve K) (p :
   have hC1 : ∀ τ, subDeg C D.lie (W τ j) = subDeg C D.lie (L τ q) := by
     intro τ
     rw [hWj, hLq]
-    exact GlobalTheory.T.conjugate_eigen_sub_degree_eq K C p O k S χ d D hs hc (ι τ) (κ τ) (hconj τ)
+    exact _root_.GlobalTheory.CompanionTheory.Ar.Crv.ConjEq.subDeg_eig_conj K C p O k S χ d D hs hc (ι τ) (κ τ) (hconj τ)
   have hsum : deg C D.lie = 2 * ∑ τ, subDeg C D.lie (W τ j) := by
     rw [hsplit, ← (Equiv.ofBijective _ hbij).sum_comp, Fintype.sum_sum_type, two_mul]
     simp only [Equiv.ofBijective_apply, Sum.elim_inl, Sum.elim_inr]

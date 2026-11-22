@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnitLemmaGr
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.KappaSumZeroAndStableSumMulZeroOfNotIntegral
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsConductorMulMemAdjoinOfSeparable
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteSubmodulesBetweenMulLeftImageLatticeStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TorusSubmoduleMulLeftImageMemSelfDualStableLattiStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TorusSubmoduleMulLeftImageMemSelfDualStableLatti
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RelIndexUnitStabilizerIntegralUnitsNeZero
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsMaximalOrderHullSelfDualStableLattice
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteSelfDualIntegralHermitianLatticesModUnits
@@ -70,7 +70,7 @@ theorem orbits_finite : ∀ (K : UQ) (B : InvAlg K), B.P.Separable → ∀ x : B
       ext y
       simp [mul_left_comm]
     have hmem : mulLat K.O (t : B.A) L ∈ W := by
-      refine ⟨Set.mem_biUnion htS ⟨?_, Submodule.map_mono hLJ⟩, GlobalTheory.T.torus_submoduleMulLeftImage_mem_selfDualStableLattices K B x t ht L hL⟩
+      refine ⟨Set.mem_biUnion htS ⟨?_, Submodule.map_mono hLJ⟩, _root_.GlobalTheory.UnitLemma.TorusAction.torus_mem_X K B x t ht L hL⟩
       rw [hcomm]
       exact Submodule.map_mono hJc
     refine ⟨⟨_, hmem⟩, ?_⟩

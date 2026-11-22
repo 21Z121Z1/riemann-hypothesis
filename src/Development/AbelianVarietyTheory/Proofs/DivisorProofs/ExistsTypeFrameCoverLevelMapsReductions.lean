@@ -3,7 +3,8 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.CongModRefl
 import Formalism.LocalToGlobal.IndefiniteReal.RhoGeo
 import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulVecMemOfFrame
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeCoordinatesModPrimeSelfDualStabilizerStatement
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeCoordinatesModPrimeSelfDualStabilizer
 open NumberField Formalism.BasicNotions Formalism.MainNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.L2.Theta Formalism.L2.Pj Formalism.L2.DIV Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.FWT
 open ReciprocityTheory.ChartRestriction.G.Geo.Tor (Datum Level)
 open GlobalTheory.LevDesc (TypeFrame IsTypeLevel typeRed)
@@ -150,7 +151,7 @@ theorem typeFrame_cover : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 T0 
   have htp : ∀ v, typePrime l₂ v = typePrime l v := typePrime_eq hM hl₂ hle
   have he₂ : ∀ v, (e v).1.asIdeal = typePrime l₂ v := fun v ↦ (he v).trans (htp v).symm
   let iso : ∀ v : Sq D.host, ZMod (D.host.g v.1) ≃+* kP (e v).1 := fun v ↦ (nonempty_iso hl₂ v _ (he₂ v)).some
-  have hφ := fun v : Sq D.host ↦ GlobalTheory.T.lattice_coordinates_mod_prime_selfDual_stabilizer D (Wc D i) (R.βW i) (R.ΛW i) hβ Dw.La ι hι (e v).1
+  have hφ := fun v : Sq D.host ↦ _root_.GlobalTheory.LatCoordRed.coord_red D (Wc D i) (R.βW i) (R.ΛW i) hβ Dw.La ι hι (e v).1
   choose φ hφs hφk using hφ
   have hfr0 := fun v ↦ exists_frame hl₂ hr v (e v).1 (he₂ v) (iso v) (rank_Wc i) (φ v) (hφs v)
   choose fr hfr using hfr0

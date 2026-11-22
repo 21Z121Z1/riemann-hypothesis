@@ -2,8 +2,8 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.ShimuraVarieties.MemPrimitiveTensorsIffIsPrimitiveElem
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrobeniusStableSubspaceElement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SubspaceContainsUnit
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NilpotentDerivationRankStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MultiplicativeDerivationRankStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NilpotentDerivationRank
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MultiplicativeDerivationRank
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PrimitiveElementPowersIndepStatement
 open scoped TensorProduct
 
@@ -113,7 +113,7 @@ theorem key (k : Type) [Field k] [IsAlgClosed k] (p : ℕ) [hp : Fact p.Prime] [
         rw [hg, Module.End.pow_apply]
         exact (dualDer_iter f hf (p - 1) w g).symm ▸ hw)
       obtain ⟨t, rfl⟩ := hw
-      exact GlobalTheory.T.nilpotent_derivation_rank k p _ D ε hD t (by simpa [Module.End.pow_apply] using hwu)
+      exact _root_.GlobalTheory.CompanionTheory.Ggeo.DerivFree.finrank_and_vanishing k p _ D ε hD t (by simpa [Module.End.pow_apply] using hwu)
     · have hD : ∀ a, (⇑D)^[p] a = D a := fun a => CartierDual.ext_apply fun c => by
         rw [dualDer_iter, hc]; rfl
       let u0 : A := ∑ i ∈ Finset.Ico 1 p, f ^ i
@@ -145,7 +145,7 @@ theorem key (k : Type) [Field k] [IsAlgClosed k] (p : ℕ) [hp : Fact p.Prime] [
         · rw [hg]; exact hw)
       have hw' : D w = w := by
         simpa [sub_eq_zero] using hw
-      exact GlobalTheory.T.multiplicative_derivation_rank k p _ D ε hD w hwu hw'
+      exact _root_.GlobalTheory.CompanionTheory.PowerDerivation.finrank_eq_and_derivation_eq_zero k p _ D ε hD w hwu hw'
   obtain ⟨hdim, z, hz, hu⟩ := hG
   refine ⟨?_, ?_⟩
   · let Ik : Submodule k A := (Ideal.span {f}).restrictScalars k

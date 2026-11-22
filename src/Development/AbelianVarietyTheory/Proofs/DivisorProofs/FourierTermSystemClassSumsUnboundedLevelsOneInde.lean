@@ -4,7 +4,7 @@ import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsChartMemberP
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGaloisTowerBaseChangeThetaMember
 import Development.AbelianVarietyTheory.Definitions.Divisors.LamRange
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLabelPreservingLatticeIsoOfMembersStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLabelPreservingLatticeIsoOfMembers
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeeperModelDividingLabelAndShiftsPreserved
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCentredPureExtensionTowerMember
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsThetaMemberInjectiveEvaluation
@@ -177,7 +177,7 @@ theorem classSums_deeper : ∀ (O : Type) [CommRing O] (bar : O → O) (q : ℕ)
   let M₂ := fun y => 𝔪₂ y (ev₂ y) (hExt y)
   have hyy := fun y => _root_.GlobalTheory.GSep.Labels.yy_hom O 𝔗.X₂ z₂ 𝔗.act₂ (V' y) (ev₂ y) _ _ _ (M₂ y)
   have hint₂ := fun y => _root_.GlobalTheory.GSep.mem_HH_iff_yy_zero O 𝔗.X₂ z₂ 𝔗.act₂ (𝔗.lam x₀) (hdiv₂ z₂ hz₂) (V' y) (ev₂ y) _ _ _ (M₂ y)
-  have hK := fun y => GlobalTheory.T.exists_labelPreserving_latticeIso_of_members O 𝔗.X₂ z₂ 𝔗.act₂ 𝔗.isAct (V' y₀) (ev₂ y₀) _ _ _ (M₂ y₀) (V' y) (ev₂ y) _ _ _ (M₂ y)
+  have hK := fun y => _root_.GlobalTheory.GSep.Cmp.exists_latTo_of_members O 𝔗.X₂ z₂ 𝔗.act₂ 𝔗.isAct (V' y₀) (ev₂ y₀) _ _ _ (M₂ y₀) (V' y) (ev₂ y) _ _ _ (M₂ y)
   choose K hKlin hKyy using hK
   let kk : ∀ y, Φ.X y₀ ≃+ Φ.X y := fun y => if h : y₀ = y then h ▸ AddEquiv.refl (Φ.X y₀) else one (K y)
   have hkk₀ : kk y₀ = AddEquiv.refl _ := by simp [kk]
@@ -277,7 +277,7 @@ theorem classSums_deeper : ∀ (O : Type) [CommRing O] (bar : O → O) (q : ℕ)
       congr 1
       exact 𝔗.X₂.M.stalkHom_injective z₂ (by show 𝔗.X₂.M.stalkHom z₂ (σ₂ x) = _; rw [hσ₂', hx])
     have hext₀ := hExtσ (Φ.ev y₀) (io y₀) (ev₂ y₀) (hExt y₀)
-    obtain ⟨Kσ, hKσlin, hKσyy⟩ := GlobalTheory.T.exists_labelPreserving_latticeIso_of_members O 𝔗.X₂ z₂ 𝔗.act₂ 𝔗.isAct
+    obtain ⟨Kσ, hKσlin, hKσyy⟩ := _root_.GlobalTheory.GSep.Cmp.exists_latTo_of_members O 𝔗.X₂ z₂ 𝔗.act₂ 𝔗.isAct
       (V' y₀) (ev₂ y₀) _ _ _ (M₂ y₀) (V' y₀) ((ev₂ y₀).comp σ₂.toRingHom) _ _ _
       (𝔪₂ y₀ ((ev₂ y₀).comp σ₂.toRingHom) hext₀)
     let gk : Φ.X y₀ ≃+ Φ.X y₀ := one Kσ

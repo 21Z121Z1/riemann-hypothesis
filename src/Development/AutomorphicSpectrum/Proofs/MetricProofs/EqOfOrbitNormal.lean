@@ -2,7 +2,7 @@ import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsLocSec
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MinorIJMap
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ElementaryTwistMinorOtherSteps
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.TwistedAtlasCompatibilityStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.TwistedAtlasCompatibility
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HoloOnDivCongr
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsValueAtOfTorus
 open MvPolynomial MeasureTheory Filter Topology Matrix ReciprocityTheory.AnForm ReciprocityTheory.AnForm.M ReciprocityTheory.AnForm.P ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.AI.I1 ReciprocityTheory.ChartRestriction.G.AI.I2 ReciprocityTheory.ChartRestriction.G.AI.I4 GlobalTheory.CompanionTheory.Ar.PB GroundTheory.Heights₂.Heights GroundTheory.Heights₂.Heights.LowerBoundFree
@@ -130,7 +130,7 @@ theorem main : ∀ (K : Type) [Fintype K] (ι : K → Type) [∀ k, Fintype (ι 
       exact ⟨z₀, z₁, fun _ => h⟩
     · exact ⟨0, 0, fun h => absurd h hwS⟩
   choose z₀ z₁ hz using hex
-  have hpb := fun w (hwS : w ∈ ψ.source) => GlobalTheory.T.twisted_atlas_compatibility K ι Φ y Ψ N j M n e Rb τ a k₀ ca cb RW pr hk hA w
+  have hpb := fun w (hwS : w ∈ ψ.source) => _root_.GlobalTheory.CompanionTheory.Ar.PB.WSq.Sec.PtBase.main K ι Φ y Ψ N j M n e Rb τ a k₀ ca cb RW pr hk hA w
     (z₀ w) (z₁ w) (hz w hwS).1 (hz w hwS).2.1
   have hn₀ : ∀ w ∈ ψ.source, ∀ k, basePart M.blk (z₀ w) ⟨k, F.c k⟩ = 1 := fun w hwS =>
     ((hz w hwS).2.2 τ a).1.1

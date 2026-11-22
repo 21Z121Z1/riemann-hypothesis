@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BergmanFunctionTota
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbsFinsumIntegralWeightSubLe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothVolumeDensityFiniteIsOpenPos
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramPosDefL2LeSupOfLinIndep
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicMorseSectionsMLAddAUniformStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicMorseSectionsMLAddAUniform
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsChernTopPowerVolumeDensityRatio
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology MeasureTheory
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -84,7 +84,7 @@ theorem tendsto_finsum_integral_berg : ∀ (k : Type) [CommRing k] (X : Scheme.{
   rw [hgd] at hr
   refine tendsto_of_abs_sub_le_eventually _ (fun m : ℕ => (r m : ℝ) / (m : ℝ) ^ D) (Iw / D.factorial)
     (G' / D.factorial) W V C hC0 hr fun ε hε => ?_
-  filter_upwards [GlobalTheory.T.holomorphicMorse_sections_mL_add_A_uniform k X p D hX hG P hpos ω ρ hρR ε hε, eventually_ge_atTop 1] with m hmo hm1
+  filter_upwards [_root_.GlobalTheory.HSAmp.Morse.cmb_le k X p D hX hG P hpos ω ρ hρR ε hε, eventually_ge_atTop 1] with m hmo hm1
   obtain ⟨hfam, hpd, -⟩ := _root_.GlobalTheory.HSAmp.gram_posDef_and_l2_le_sup_bound k X p D hX hG P ω m 1 (Fin (r m)) (f m) (hf m) (hli m)
   obtain ⟨hBi, hBs, hB0, hBx⟩ := _root_.GlobalTheory.HSAmp.berg_mass_extremal (k →+* ℂ) (fun σ => CxPts p σ) (Fin (r m))
     (fun σ => (ω σ).meas) (vals P m 1 (f m)) hfam hpd

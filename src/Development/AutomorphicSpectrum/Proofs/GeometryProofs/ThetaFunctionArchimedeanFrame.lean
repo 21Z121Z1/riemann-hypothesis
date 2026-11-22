@@ -13,8 +13,8 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HodgeIPIffHodg
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ThetaMultiplierNormalForm
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsThetaBasisOfFactor
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ThetaFunctionsFiniteDim
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TangentSpaceEquivHolUnifStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolUnifCompareIsogenyStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TangentSpaceEquivHolUnif
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolUnifCompareIsogeny
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelComplexBaseChange
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsDerivAt0CompLinMap
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabComp
@@ -27,7 +27,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsArchimedeanFr
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ThetaFunctionUnique
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ThetaFunctionDifferentiable
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FnFactorStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UniformizationIsoTransferStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UniformizationIsoTransfer
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UniformizationDimEqPpDim
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrameCoordinatesUnique
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ArchimedeanFrameOfPullback
@@ -74,7 +74,7 @@ theorem GlobalTheory.CompanionTheory.Ar.Sl.frames_main : ∀ (E : Type) [Field E
   refine ⟨_root_.GlobalTheory.CompanionTheory.Ar.Sl.exists_archFrame_of_isAH _ D.t.G D.t.PP (emb σ) t'.G m.φ D.g u Hm χ hcart hAH, fun a => ?_⟩
   obtain ⟨e, hmon, -⟩ := grpPullback_iso a.cart hcart
   haveI := hmon
-  obtain ⟨a₁, a₂⟩ := GlobalTheory.T.uniformization_iso_transfer t'.G a.A _ _ D.g u a.u e hab d₁ d₂
+  obtain ⟨a₁, a₂⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Sl.TanIso.tangentCoords_of_iso t'.G a.A _ _ D.g u a.u e hab d₁ d₂
   refine ⟨fun n s => _root_.GlobalTheory.CompanionTheory.Ar.Sl.frame_fn_existsUnique _ D.t.G D.t.PP (emb σ) D.g a n s,
     fun n s θ h => ⟨_root_.GlobalTheory.CompanionTheory.Ar.Sl.isFn_differentiable _ D.t.G D.t.PP (emb σ) D.g a n s θ h,
       GlobalTheory.T.theta_add_lattice_eq_of_isFn _ D.t.G D.t.PP (emb σ) D.g a n s θ h⟩,

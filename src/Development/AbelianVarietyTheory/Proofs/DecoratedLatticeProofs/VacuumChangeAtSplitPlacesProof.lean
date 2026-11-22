@@ -2,9 +2,9 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SmallPair
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceChangeBaseVacuumHeisenbergCombination
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CombAtSingleZero
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceHermitianFramePropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceHermitianFrameProperties
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DataAsCombinationsAtSplitPlacesProof
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualLatticePrescribedFinitelyManySplitPlacesStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualLatticePrescribedFinitelyManySplitPlaces
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceBaseVacuumDatumExistsUnique
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PlacesToAdeles
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceDataDistinctPlacesCommute
@@ -218,8 +218,8 @@ theorem gen (hstd : IsStdChar D ψ (-1)) {I : List ι} {P : Pl D → Prop} (hPl 
       by_cases hj : j ∈ l
       · simp only [BT, if_pos hj]; exact (hL j).2.2.2
       · simp only [BT, if_neg hj]; exact (hL j).2.2.1
-    obtain ⟨N₁S, hN₁S, hlatS, -⟩ := GlobalTheory.T.selfDualLattice_prescribed_finitelyManySplitPlaces D k ι p I P hPl n' S α NS h1 BS hBS
-    obtain ⟨N₁T, hN₁T, hlatT, -⟩ := GlobalTheory.T.selfDualLattice_prescribed_finitelyManySplitPlaces D k ι p I P hPl n T β NT h2 BT hBT
+    obtain ⟨N₁S, hN₁S, hlatS, -⟩ := _root_.GlobalTheory.LatPresc.latAll D k ι p I P hPl n' S α NS h1 BS hBS
+    obtain ⟨N₁T, hN₁T, hlatT, -⟩ := _root_.GlobalTheory.LatPresc.latAll D k ι p I P hPl n T β NT h2 BT hBT
     obtain ⟨g₁, hg₁, hO⟩ := ValDbl.overAll_cons.1 hg
     have hg₁' : OverAll ψ α β NS NT (fun j => latInd (BS j) (BT j)) l f g₁ :=
       overAll_congrΨ l (fun j hj => by simp only [BS, BT, if_pos hj]) f g₁ hg₁
@@ -268,10 +268,10 @@ theorem rebaseAll : ∀ D : D7, RebaseAll D := by
   intro D
   unfold RebaseAll
   intro k _ _ _ _ ι p I P hPl n n' _ _ _ _ ψ hstd S T α β LS MS LT MT hLS hLT hMS hMT
-  choose ALS hALS1 hALS2 _hALS3 using fun i => (GlobalTheory.T.splitPlaceHermitianFrame_properties D k (p i) S n' (α i)).2.2.2.1 LS hLS
-  choose AMS hAMS1 hAMS2 _hAMS3 using fun i => (GlobalTheory.T.splitPlaceHermitianFrame_properties D k (p i) S n' (α i)).2.2.2.1 MS hMS
-  choose ALT hALT1 hALT2 _hALT3 using fun i => (GlobalTheory.T.splitPlaceHermitianFrame_properties D k (p i) T n (β i)).2.2.2.1 LT hLT
-  choose AMT hAMT1 hAMT2 _hAMT3 using fun i => (GlobalTheory.T.splitPlaceHermitianFrame_properties D k (p i) T n (β i)).2.2.2.1 MT hMT
+  choose ALS hALS1 hALS2 _hALS3 using fun i => (_root_.GlobalTheory.FrameAt.frame_facts D k (p i) S n' (α i)).2.2.2.1 LS hLS
+  choose AMS hAMS1 hAMS2 _hAMS3 using fun i => (_root_.GlobalTheory.FrameAt.frame_facts D k (p i) S n' (α i)).2.2.2.1 MS hMS
+  choose ALT hALT1 hALT2 _hALT3 using fun i => (_root_.GlobalTheory.FrameAt.frame_facts D k (p i) T n (β i)).2.2.2.1 LT hLT
+  choose AMT hAMT1 hAMT2 _hAMT3 using fun i => (_root_.GlobalTheory.FrameAt.frame_facts D k (p i) T n (β i)).2.2.2.1 MT hMT
   have hL : ∀ j, (ALS j).IsLattice k ∧ (AMS j).IsLattice k ∧ (ALT j).IsLattice k ∧ (AMT j).IsLattice k :=
     fun j => ⟨hALS1 j, hAMS1 j, hALT1 j, hAMT1 j⟩
   have hA : ∀ j, (α j).IsLat LS (ALS j) ∧ (α j).IsLat MS (AMS j) ∧ (β j).IsLat LT (ALT j) ∧ (β j).IsLat MT (AMT j) :=

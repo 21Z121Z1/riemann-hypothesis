@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.GenReads
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemSpanDetSetIffAdelicLatticeValuationStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemSpanDetSetIffAdelicLatticeValuation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNumeratorIdealOfAntiInvariantDivisor
 import Formalism.LocalToGlobal.ProjectiveLattices.ThClass
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdelicCharacterEqProdUnramifiedValueZpow
@@ -260,7 +260,7 @@ theorem exists_ideal (V : HSp D) (hg : V.gram = 1) (hL : Bridge.hLat V 1 = stdLa
   obtain ⟨cc, c0, c1, c2, c3, c4⟩ := _root_.GlobalTheory.NumeratorIdeal.exists_numerator D.host.E (cO D) cP cO_cO mem_cP δ hfin δ1
   refine ⟨cc, c0, c1, c3 _ fun Q hQ hm => ?_, c4 _ fun x => ?_, ?_⟩
   · exact hQ (δ0 Q (fun h' => hb Q h' hm) fun h' => hb _ h' ((hbc Q).2 hm))
-  · rw [GlobalTheory.T.mem_span_detSet_iff_adelicLattice_valuation D.host.E _ _ _ (mem_hLat ι h1 h2 V hL (FWT.fin V h)) x]
+  · rw [_root_.GlobalTheory.AdelicDetSpan.mem_span_detSet_iff D.host.E _ _ _ (mem_hLat ι h1 h2 V hL (FWT.fin V h)) x]
     refine forall_congr' fun Q => ?_
     rw [← hδ, hev, hd]
     have a : ι (finPart D (Formalism.L2.Theta.mt V h).det) =

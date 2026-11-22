@@ -4,8 +4,8 @@ import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.TwistBaseCha
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.RosatiAdjointAbelianPartAndClassifyingMapLinear
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AllUniformizationLawsHold
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MK
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHomMumfordGeneratorNormalisedOriginStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomMumfordGeneratorAdditiveCubicalStructuresStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHomMumfordGeneratorNormalisedOrigin
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomMumfordGeneratorAdditiveCubicalStructures
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMumfordGeneratorAbelianPartAtLevel
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CubeVal
 
@@ -29,7 +29,7 @@ theorem GlobalTheory.HomMum.lbIso_descends : ∀ (R : Type) [CommRing R] [IsDoma
   obtain ⟨w, hw⟩ := H
   obtain ⟨t, ht, -⟩ := exists_gen_of_iso (isPart_inr U₁.LG.L U₂.LG.L) (isPart_inl U₁.LG.L U₂.LG.L) w hw
   have hN := join_isLB U₁.LG.isLB U₂.LG.isLB
-  obtain ⟨u, hu⟩ := GlobalTheory.T.exists_homMumfordGenerator_normalised_origin hN f g t ht
+  obtain ⟨u, hu⟩ := _root_.GlobalTheory.HomMum.exists_isNrm hN f g t ht
   have sj := (FamGerm.surjective_appTop_sq_cube U₁.toUnifPre).2
   have hP : AbLaw.IsProjBy D₁.toPre.P.A.hom := AbProj.isProjBy_of_isPullback D₁.toPre.P (IsPullback.id_horiz _)
   obtain ⟨V, hV, t', ht'⟩ := GlobalTheory.EndRosati.loc_gen_of_thickenings hGF (maximalIdeal R) _
@@ -43,7 +43,7 @@ theorem GlobalTheory.HomMum.lbIso_descends : ∀ (R : Type) [CommRing R] [IsDoma
         GroupConn.connectedSpace_of_section (thickObj R (maximalIdeal R) e G₁).hom
           (η : 𝟙_ _ ⟶ thickObj R (maximalIdeal R) e G₁).left (Over.w _)
       exact _root_.GlobalTheory.HomMum.exists_gen_level U₁.toUnifPre U₂.toUnifPre e (of e) (og e) u hu
-        fun T z J hJ x x' y => GlobalTheory.T.homMumfordGenerator_additive_cubicalStructures U₁.cubG U₂.cubG hN sj f g u hu T z J hJ x x' y) (closedPoint R)
+        fun T z J hJ x x' y => _root_.GlobalTheory.HomMumAdd.pair_add_of_surj U₁.cubG U₂.cubG hN sj f g u hu T z J hJ x x' y) (closedPoint R)
   have hall : ∀ p : PrimeSpectrum R, p ∈ V := fun p =>
     ((PrimeSpectrum.le_iff_specializes p (closedPoint R)).1 (le_maximalIdeal p.isPrime.ne_top)).mem_open V.isOpen hV
   obtain ⟨t'', ht'', -⟩ := glue_gen (jn_isLB D₁.toPre D₂.toPre) (mφ D₁.toPre.P.A D₂.toPre.P.A fB gB) mε

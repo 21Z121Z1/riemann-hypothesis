@@ -335,11 +335,11 @@ theorem mu_detAt {P : Pl D.host.E} (hoff : Bridge.SplitOff P (L.Pg : Set (Pl D.h
   have u1 : GlobalTheory.ExportSeries.UnramOutside (L.mu0 ((i : ℕ) + 1)) L.Pg := by
     unfold GlobalTheory.ExportSeries.UnramOutside
     rw [GlobalTheory.ExportSeries.idem_eq he]
-    exact GlobalTheory.T.heckeChar_trivial_on_idempotentIntegralUnits D _ _ _ e₀ (hL.mu0 i) he (GlobalTheory.T.levelCharacters_ramification_levelPlaces D T0 L μ0 hL μ0 i).2.2.2
+    exact _root_.GlobalTheory.ChrOff.unrOff_of_unrAt D _ _ _ e₀ (hL.mu0 i) he (_root_.GlobalTheory.LevelRamif.ramif_at_levels D T0 L μ0 hL μ0 i).2.2.2
   have u2 : GlobalTheory.ExportSeries.UnramOutside (L.xi μ0) L.Pg := by
     unfold GlobalTheory.ExportSeries.UnramOutside
     rw [GlobalTheory.ExportSeries.idem_eq he]
-    exact GlobalTheory.T.heckeChar_trivial_on_idempotentIntegralUnits D _ _ _ e₀ (hL.xi μ0) he fun _ _ _ => by rw [hL.xi_base]; exact fun _ _ => rfl
+    exact _root_.GlobalTheory.ChrOff.unrOff_of_unrAt D _ _ _ e₀ (hL.xi μ0) he fun _ _ _ => by rw [hL.xi_base]; exact fun _ _ => rfl
   have e0 : ((L.mu μ0 ((i : ℕ) + 1) (detAt e hP.1.1 V α) : Circle) : ℂ) =
       (L.mu0 ((i : ℕ) + 1) (detAt e hP.1.1 V α) : Circle) * (L.xi μ0 (detAt e hP.1.1 V α) : Circle) := rfl
   rw [e0, GlobalTheory.HeckeDetChar.chi_detAt (hL.mu0 i) u1 ⟨e₀, he⟩ hoff hα hz,

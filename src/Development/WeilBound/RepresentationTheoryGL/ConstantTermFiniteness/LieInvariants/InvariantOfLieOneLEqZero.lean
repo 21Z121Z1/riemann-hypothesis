@@ -16,10 +16,10 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchLieDerivati
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieOneLMemZalg
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsMonicAevalMemOfLeSup
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalGeneralizedSpaceSpanClosed
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitCentreTranslatePreservesCuspSpaceStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitCentreTranslatePreservesCuspSpace
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LinearOdeValueDeterminedByShifts
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitCentreDerivativeLieActionStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteGeneralizedEigenspaceCofiniteDecompositionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitCentreDerivativeLieAction
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteGeneralizedEigenspaceCofiniteDecomposition
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDimOfAnnihilatingPolyEigenspaces
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsMonicAevalAddOfKill
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemL2OfBoundedContinuousInvariant
@@ -56,7 +56,7 @@ theorem invariant_of_lie_oneL_eq_zero {a : ℕ} (ψ : Sm E a) (h : lie E a (oneL
   rw [CuspidalL2GL.splitCentre_comm]
   have hd : ∀ s, HasDerivAt (fun s : ℝ => ψ.1 (g * GlobalTheory.UnitaryBC.splitCentre E a s)) 0 s := by
     intro s
-    have := GlobalTheory.T.split_centre_derivative_lie_action E a ψ g s
+    have := _root_.GlobalTheory.CompanionTheory.CuspFinDeriv.hasDerivAt_splitCentre E a ψ g s
     rwa [h] at this
   have := is_const_of_deriv_eq_zero (f := fun s : ℝ => ψ.1 (g * GlobalTheory.UnitaryBC.splitCentre E a s))
     (fun s => (hd s).differentiableAt) (fun s => (hd s).deriv) t 0
@@ -77,7 +77,7 @@ theorem cuspFin_pos {a : ℕ} (ha : 0 < a) : CuspFin E a := by
       funext g
       have h := hTw (fun k s => ((z ^ k) φ).1 (g * GlobalTheory.UnitaryBC.splitCentre E a s))
         (fun k s => by
-          have h := GlobalTheory.T.split_centre_derivative_lie_action E a ((z ^ k) φ) g s
+          have h := _root_.GlobalTheory.CompanionTheory.CuspFinDeriv.hasDerivAt_splitCentre E a ((z ^ k) φ) g s
           rwa [← Module.End.mul_apply, ← pow_succ'] at h)
         (fun s => by
           have h0 := congrArg (fun ψ : Sm E a => ψ.1 (g * GlobalTheory.UnitaryBC.splitCentre E a s)) (hp φ hg.2.2.2)
@@ -87,9 +87,9 @@ theorem cuspFin_pos {a : ℕ} (ha : 0 < a) : CuspFin E a := by
       rfl
     rw [key]
     exact Submodule.sum_mem _ fun t _ => Submodule.smul_mem _ _
-      (Submodule.subset_span (GlobalTheory.T.split_centre_translate_preserves_cusp_space E a L W ρ J hJ.1 φ hg hc t))
+      (Submodule.subset_span (_root_.GlobalTheory.CompanionTheory.CuspFinGL.Transl.rt_splitCentre_mem E a L W ρ J hJ.1 φ hg hc t))
   refine _root_.GlobalTheory.CompanionTheory.LinAlg.finiteDimensional_of_polynomial_of_eigenspaces (Sm E a) z V hstab p hpm.ne_zero (fun v hv => hp v (hVC v hv).1.2.2.2) fun c => ?_
-  obtain ⟨χ, L', J', hL', hJ', hχ⟩ := GlobalTheory.T.exists_char_twist_cuspidal_lie_eigenvalue_zero E a ha L hL W ρ hρ J hJ c
+  obtain ⟨χ, L', J', hL', hJ', hχ⟩ := _root_.GlobalTheory.CompanionTheory.CuspTwist.twist_central E a ha L hL W ρ hρ J hJ c
   have hfin := GlobalTheory.CompanionTheory.CuspInvariant.cuspInvFin cuspFormsBoundedGL GlobalTheory.CompanionTheory.UnifAlpha.unifAlpha E a L' hL' W ρ hρ J' hJ'
   have hle : (Submodule.span ℂ {v | v ∈ V ∧ z v = c • v}).map (mulChi a χ).toLinearMap ≤
       Submodule.span ℂ {φ | φ ∈ genSpace L' ρ J' ∧ IsCuspidal φ.1 ∧

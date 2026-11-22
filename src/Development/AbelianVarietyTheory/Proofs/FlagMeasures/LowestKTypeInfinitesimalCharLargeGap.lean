@@ -5,15 +5,17 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InnerRepK
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TraceTransposePow
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PhiPositiveDefiniteCholeskyFormula
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.DiscreteSpectrumKFiniteDecomposition
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PsiEntriesCentreEigenfunctionsDiscreteSeriesStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PsiEntriesCentreEigenfunctionsDiscreteSeries
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PsiPolarDecompositionEquivariance
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.KTypeExtendsHolomorphicComplexifiedKStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GelfandInvariantsScalarOnLowestKTypeCoefficientsStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.KTypeExtendsHolomorphicComplexifiedK
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GelfandInvariantsScalarOnLowestKTypeCoefficients
+import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.ConvolutionSmoothL2
+import Formalism.HarderNarasimhan.ShiftInvariance
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LowestKTypeCompressionFormulaOfStrictLowestKType
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ActSingleNeZero
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.FirstSlotSliceSlotMixedCasimirZero
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.IsCompactInvariantOrthogonalInf
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LowestKTypeMultiplicityOneLargeGapsStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LowestKTypeMultiplicityOneLargeGaps
 
 open MeasureTheory Matrix Finset Formalism.MainNotions.S Formalism.REAL Formalism.QuantumDeterminants GlobalTheory.Count GlobalTheory.Dec GlobalTheory.DSId
 open scoped InnerProductSpace ComplexOrder
@@ -181,7 +183,7 @@ theorem lowChar_of_formula (hF : FormulaGap) (n : ℕ) (ε : Fin n → Bool) (la
   obtain ⟨-, -, hU, -, -, -, -⟩ := id hσ
   have hKU : IsURepOn (Kset ε) σ := URep_K hU
   obtain ⟨⟨hσ1, -⟩, -, -⟩ := id hU
-  obtain ⟨c, hc⟩ := GlobalTheory.T.gelfandInvariants_scalar_on_lowestKType_coefficients n ε lam H σ hU hS
+  obtain ⟨c, hc⟩ := _root_.GlobalTheory.CentreLow.centre_scalar_low n ε lam H σ hU hS
   obtain ⟨-, -, -, ⟨v0, hv0S, hv0, hv0w⟩, -⟩ := id hS
   obtain ⟨w, hwdef⟩ : ∃ w : H, w = ((‖v0‖ : ℂ))⁻¹ • v0 := ⟨_, rfl⟩
   have hwS : w ∈ lowKSub ε lam σ := by rw [hwdef]; exact (lowKSub ε lam σ).smul_mem _ hv0S
@@ -190,13 +192,13 @@ theorem lowChar_of_formula (hF : FormulaGap) (n : ℕ) (ε : Fin n → Bool) (la
     intro θ hθ
     rw [hwdef, map_smul, hv0w θ hθ]
     exact smul_comm _ _ _
-  obtain ⟨τ, hτ, hτσ⟩ := GlobalTheory.T.kType_extends_holomorphic_complexifiedK n ε (lowK ε lam) H σ (lowKSub ε lam σ) ⟨w, hwS⟩ hKU hS hwn hww
+  obtain ⟨τ, hτ, hτσ⟩ := _root_.GlobalTheory.Dec.TauExt.tauExists n ε (lowK ε lam) H σ (lowKSub ε lam σ) ⟨w, hwS⟩ hKU hS hwn hww
   have hhw : IsHighestUnit ε lam σ ((⟨w, hwS⟩ : lowKSub ε lam σ) : H) := by
     show _ ∧ _ ∧ _
     exact ⟨hwn, hwS, hww⟩
   have hcomp := compress_of_formula hF hlam hσ hgap hh hS hhw hτ hτσ
   have h1UJ : (1 : Matrix (Fin n) (Fin n) ℂ) ∈ UJset ε := K_UJ (one_K ε)
-  have hPE := GlobalTheory.T.psiEntries_centreEigenfunctions_discreteSeries n ε lam (lowKSub ε lam σ) τ ⟨w, hwS⟩ hlam hτ ⟨w, hwS⟩ ⟨w, hwS⟩
+  have hPE := _root_.GlobalTheory.Dec.PsiEig.psiEigen n ε lam (lowKSub ε lam σ) τ ⟨w, hwS⟩ hlam hτ ⟨w, hwS⟩ ⟨w, hwS⟩
   have hEC := eigConj n ε _ _ hPE.1 hPE.2
   have hfs : SmoothOnG ε (fun g => ⟪w, σ g w⟫_ℂ) := (hc w hwS w).1
   have hone : ⟪w, σ 1 w⟫_ℂ = 1 := by
@@ -220,6 +222,6 @@ theorem lowChar_of_formula (hF : FormulaGap) (n : ℕ) (ε : Fin n → Bool) (la
 
 theorem lowChar : ∀ (n : ℕ) (ε : Fin n → Bool) (lam : Fin n → ℝ) (H : Type) [NormedAddCommGroup H] [InnerProductSpace ℂ H] (σ : Matrix (Fin n) (Fin n) ℂ → (H →L[ℂ] H)), IsHCParam lam → IsDS ε lam σ → ∀ h : ℝ, GapAtLeast ε lam h → 120 * (n : ℝ) * ((rkR ε : ℕ) : ℝ) ^ ((3 : ℝ) / 2) ≤ h → ∀ s ∈ lowKSub ε lam σ, ∀ y : H, IsZEigen ε (fun a => (lam a : ℂ)) (fun g => ⟪y, σ g s⟫_ℂ) := fun n ε lam H _ _ σ hlam hσ h hgap hh =>
   lowChar_of_formula _root_.GlobalTheory.Jet.FormGapFree.formulaGap n ε lam H σ hlam hσ h hgap hh
-    (GlobalTheory.T.lowestKType_isKType_of_large_gaps n ε lam H σ hlam hσ (fun a b hab => two_mul_lt_gap hgap hh a b hab))
+    (_root_.GlobalTheory.Jet.MultGap.isKTypeOf_lowKSub n ε lam H σ hlam hσ (fun a b hab => two_mul_lt_gap hgap hh a b hab))
 
 end GlobalTheory.DSId.LowCharGap

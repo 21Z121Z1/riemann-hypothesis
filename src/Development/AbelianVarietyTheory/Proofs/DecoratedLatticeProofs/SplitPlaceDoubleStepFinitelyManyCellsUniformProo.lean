@@ -1,6 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CosInj
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatThetaMapsConvergeThetaFunctionsStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatThetaMapsConvergeThetaFunctions
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsQuasiFam
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ThetaAbsoluteSum
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.TransvectionAction
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.WeilDatumExistence
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergInvariantFactorsContraction
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ContrFactor
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.AllPositions
@@ -15,7 +19,7 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchwartzBr
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ToOneSucc
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LocalModelWeilOperatorTrivialAtPlaceIsModel
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilCharacterSplitPlaceExistsContinuousNontrivia
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceLocalGroupElementsJacobiBesselStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceLocalGroupElementsJacobiBessel
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BesselFourierJacobiNormalFramesExistSplitPlace
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatMapsPreserveSchwartzBruhatAndSurjective
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SupportLevelPlaceSymmetricChainSecondHalf
@@ -38,7 +42,7 @@ set_option maxHeartbeats 4000000 in
 theorem finOne : ∀ D : D7, FinOne D := by
   intro D ψ hstd σ S Q a
   have hOm := _root_.GlobalTheory.LocOm.omLoc D
-  have hFL := GlobalTheory.T.flatThetaMaps_converge_thetaFunctions D
+  have hFL := _root_.GlobalTheory.Unf.Flat.flatLaw D
   have hFLs := _root_.GlobalTheory.FinPl.flatLaws_all D
   have hBF := _root_.GlobalTheory.FlatBFLoc.flatBF_of_laws D hFL hFLs hOm
   have hFB := _root_.GlobalTheory.LocMod.flatFB_holds D hFL hFLs hOm
@@ -128,7 +132,7 @@ theorem finOne : ∀ D : D7, FinOne D := by
       rw [this, map_zero]
     obtain ⟨β, r, hr, t, ht, j, hj, hx⟩ := hT₁ x hne'
     refine ⟨t, ht, colE (Q.c + 1 + 1) (σ + 1 + 1) β * r, ?_, j, hj, hx⟩
-    exact (GlobalTheory.T.splitPlace_localGroupElements_jacobi_bessel D Q.k (ofSplit Q.q)).2.1 Q.n₁ (Q.c + 1 + 1) (σ + 1) S.J Q.F.s _ Q.F.F₁ Q.F.G₁ Q.F.jac _ β r hr
+    exact (_root_.GlobalTheory.LocGrp.local_groups D Q.k (ofSplit Q.q)).2.1 Q.n₁ (Q.c + 1 + 1) (σ + 1) S.J Q.F.s _ Q.F.F₁ Q.F.G₁ Q.F.jac _ β r hr
       (Q.loc₁ _)
   · intro x
     obtain ⟨T₂, hT₂⟩ := _root_.GlobalTheory.LocFlat.contr_support_finite_cells Q.k Q.ψk hψc hψ1 Q.ν hsd Q.n₀ Q.n₁ Q.n₂ (Q.c + 1) (σ + 1) (by omega) μV⁻¹ μV'⁻¹
@@ -153,7 +157,7 @@ theorem finOne : ∀ D : D7, FinOne D := by
       have : Ξ = 0 := Subtype.ext (hΞ.trans h0)
       rw [this, map_zero]
     obtain ⟨r, hr, t, ht, j, hj, hy⟩ := hT₂ y hne'
-    exact ⟨t, ht, r, (GlobalTheory.T.splitPlace_localGroupElements_jacobi_bessel D Q.k (ofSplit Q.q)).2.2 Q.n₂ (Q.c + 1) σ S.B' (Q.F.s * (ofSplit Q.q).xi) Q.F.F₂ Q.F.G₂
+    exact ⟨t, ht, r, (_root_.GlobalTheory.LocGrp.local_groups D Q.k (ofSplit Q.q)).2.2 Q.n₂ (Q.c + 1) σ S.B' (Q.F.s * (ofSplit Q.q).xi) Q.F.F₂ Q.F.G₂
       Q.F.bes' _ r hr (Q.loc₂ r), j, hj, hy⟩
 
 end GlobalTheory.QPl.FinOneProof

@@ -19,7 +19,7 @@ import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.FirstCohom
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CubeVal
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.IsNsmul
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.QkToAkU
-import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsEndomorphismAlgebraisingThickeningsStatement
+import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsEndomorphismAlgebraisingThickenings
 
 open CategoryTheory CategoryTheory.Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry IsLocalRing
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.DVR
@@ -137,7 +137,7 @@ theorem exists_abelian (hL : LL) (hR : AdmBase R I) (U : UnifPre I D A G) (aG : 
     ((Over.pullback (thick R I e)).map aG) inferInstance).2.exists
   have hql : ∀ e, (U.gt e).q.left ≫ (b e).left = ((Over.pullback (thick R I e)).map aG).left ≫ (U.gt e).q.left :=
     fun e => (congrArg (·.left) (hq e)).symm
-  obtain ⟨aB, haB⟩ := T.exists_endomorphism_algebraising_thickenings R I hC D.toPre.P.A D.toPre.P.isAb.smooth
+  obtain ⟨aB, haB⟩ := _root_.GlobalTheory.EndAlg.exists_end_of_thickenings R I hC D.toPre.P.A D.toPre.P.isAb.smooth
     (AbProj.isProjBy_of_isPullback D.toPre.P (IsPullback.id_horiz _))
     (fun e => (b e).left ≫ pullback.fst D.toPre.P.A.hom (thick R I e))
     (fun e => by

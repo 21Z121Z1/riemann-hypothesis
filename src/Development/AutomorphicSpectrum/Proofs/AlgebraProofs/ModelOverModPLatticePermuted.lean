@@ -9,7 +9,7 @@ import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.SameGeneric
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DvrBundleStatementD
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LatticeFamiliesGlueToBundle
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ChartBundleProduct
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LineBundleChartGenericComparisonStatement
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LineBundleChartGenericComparison
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ChartBundleIntersectionSymmetry
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LatticeFamilyInjectiveModelFacts
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DualBundleIntersection
@@ -292,7 +292,7 @@ theorem main : ∀ (O : Type) [CommRing O] [IsDomain O] [IsDiscreteValuationRing
       intro c hc
       refine powSpan_line (e := u * chartMon x c a) (fun v => hl c hc v) (fun v => ?_)
       rw [hPB c hc v, chartMon_smul, zpow_natCast, mul_pow]
-    obtain ⟨hPT, hpow⟩ := GlobalTheory.T.line_bundle_chart_generic_comparison O Ω K ι x d hmod (Xb τ i) T PB u a (p : ℤ) hu hA hT
+    obtain ⟨hPT, hpow⟩ := _root_.GlobalTheory.CompanionTheory.Ar.CkLinePow.main O Ω K ι x d hmod (Xb τ i) T PB u a (p : ℤ) hu hA hT
       (hXT τ i) hPB
     have hfacts := fun c (hc : mseg x c ≠ 0) => step_facts (D c) (hbase c hc) (τ := φ τ)
       (χ := fun a => algebraMap O Ω (χ (φ τ) a)) (i := i)

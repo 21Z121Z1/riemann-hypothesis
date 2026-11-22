@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermVolumeRatioSameK
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RankTwoDefiniteUnimodularHermitianClassBoundStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LeftQuotientCovolumeEqFundamentalDomainInter
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsGaugeAll
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryGaugeVolumeLeClassNumberDefiniteStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryGaugeVolumeLeClassNumberDefinite
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RiemannianHaarGaugeExistsPosUnique
 
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S GlobalTheory.Count GlobalTheory.FlagMeas
@@ -29,7 +29,7 @@ theorem fundDom_volume_pos_lt_top : VolumeStep → ∀ (I : AutInst) (μf : Meas
   have hg₀ : IsGaugeAll I₀ c₀ := fun v => (hc₀ v).2.1
   let μ₀ : Measure I₀.Gf := Measure.haar
   have heq := hratio I₀ hsame hsig₀ c μf c₀ μ₀ hg hg₀
-  have hdef := GlobalTheory.T.unitaryGaugeVolume_le_classNumber_definite I₀ 2 hsig₀ c₀ μ₀ hg₀
+  have hdef := _root_.GlobalTheory.DefiniteVolume.gaugeVol_le I₀ 2 hsig₀ c₀ μ₀ hg₀
   have hcl := GlobalTheory.T.rank_two_definite_unimodular_hermitian_class_bound I₀.E I₀.cm.cmUnram
   have h₀ : gaugeVol I₀ c₀ μ₀ < ⊤ :=
     hdef.trans_lt (ENNReal.mul_lt_top ENNReal.ofReal_lt_top (hcl.trans_lt ENNReal.ofReal_lt_top))

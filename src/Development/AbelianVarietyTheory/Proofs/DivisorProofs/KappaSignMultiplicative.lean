@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceConjugationPropertiesCmField
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramDetChangeOfBasesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramDetChangeOfBases
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KerAevalOrthogonalRangeUnitarySelfReciprocalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramDetNeZeroOfKerOrthStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryConjMapsKerAevalBasisAndGramStatement
@@ -54,7 +54,7 @@ theorem gram_change (σ : K →+* K) {n : ℕ} (W : Submodule K (Fin n → K)) {
     (hsu' : Submodule.span K (Set.range u') = W) :
     ∃ d : K, d ≠ 0 ∧ (Matrix.of fun i j => ∑ k, σ (u' i k) * u' j k).det =
       σ d * d * (Matrix.of fun i j => ∑ k, σ (u i k) * u j k).det :=
-  GlobalTheory.T.gram_det_change_of_basis' σ W u u' hu hsu hu' hsu'
+  _root_.GlobalTheory.gram_det_change_of_bases σ W u u' hu hsu hu' hsu'
 
 theorem csr_orth (σ : K →+* K) {n : ℕ} (γ : Matrix (Fin n) (Fin n) K) (hγ : (γ.map σ)ᵀ * γ = 1) (Q : K[X])
     (hQ : C (σ (Q.coeff 0)) * Q = (Q.map σ).reverse) (x z : Fin n → K) (hx : aeval γ Q *ᵥ x = 0) :

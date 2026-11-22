@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.PoincareDe
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CrysToDRBijective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsChartChoiceForPointsOfNontrivial
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDualNumberGeneratorOfTorsorCoboundary
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPointwiseGeneratorOfDualNumberLineBundleGeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPointwiseGeneratorOfDualNumberLineBundleGe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeDeRhamFreeHodgeSequenceBaseChange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechLineBundlePullTrivialOfPointwiseGenerator
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPointwiseLineBundleGeneratorOfTrivialPullb
@@ -42,7 +42,7 @@ theorem mem_fil_of_orth : GlobalTheory.Published.AbelianHodgeDeRham → ∀ (R :
   obtain ⟨s, hs⟩ := _root_.GlobalTheory.PtExt.exists_isPtGen R (A ⊗ B) A P hL (AbDual.inl A B) hP.zero_right
 
   obtain ⟨T, hT⟩ := _root_.GlobalTheory.PtExt.exists_isEpsGen_of_isCob R A B P hL v hv.1 j hj s hs k hk'
-  obtain ⟨t, ht⟩ := GlobalTheory.T.exists_pointwiseGenerator_of_dualNumberLineBundleGenerator R A B P hL v hv.1 T hT
+  obtain ⟨t, ht⟩ := _root_.GlobalTheory.PtExt.exists_isPtGen_of_isEpsGen R A B P hL v hv.1 T hT
   have htriv := _root_.GlobalTheory.PtExt.triv_pull_of_isPtGen R (A ⊗ B) (A ⊗ epsR R) P hL _ t ht
 
   have hv1 : v = 1 := hP.ker_right (epsR R) v htriv

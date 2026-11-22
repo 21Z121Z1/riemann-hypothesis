@@ -13,23 +13,23 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockOperatorsLieRep
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsFockIPOfFockData
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockPolynomialsLocallyFiniteRationalWeights
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockActionPowAnalyticVectorNormLe
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockDerivedActionsTensorMembersStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoverUpqClosureExpTopAndCartanStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockDerivedActionsTensorMembers
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoverUpqClosureExpTopAndCartan
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HighestWeightTensor
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsMatrixUnitStableSubspaceOfExtremalStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsMatrixUnitStableSubspaceOfExtremal
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemISupInfWeightSubmoduleOfDiagonalStable
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsKilledByLowerNilradicalActBlockDiagonal
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CasimirScalarOnModuleGeneratedKilledByLower
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CentredHarishChandraParameterIsParamBlattnerStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormSqCentredHarishChandraParameterSubRhoSqStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HarmonicMinorProductDeltaExtremalFirstMemberStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HarmonicMinorProductDeltaMemHighestWeightSecondStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CentredHarishChandraParameterIsParamBlattner
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormSqCentredHarishChandraParameterSubRhoSq
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HarmonicMinorProductDeltaExtremalFirstMember
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HarmonicMinorProductDeltaMemHighestWeightSecond
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HarmonicHighestWeightEqLowestKTypeHighestWeightStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsSubrepClosureAnalyticVectorsStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCentralCircleDistinctGradedEigenStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsHCModuleOfGradedDenseGKStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsSubrepClosureAnalyticVectors
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCentralCircleDistinctGradedEigen
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsHCModuleOfGradedDenseGK
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IrreducibleCompletionOfGradedIrreducibleGK
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemLpTwoOfCoshDecayUnitaryPQCoverStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemLpTwoOfCoshDecayUnitaryPQCover
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsEquivariantTensorMapOfCyclicCommuting
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InvariantInnerFormsProportionalWeightLine
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIntertwinerMapHighestWeightVectorCompact
@@ -38,9 +38,9 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FockTensorIntert
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IrreducibleOfWeightLine
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsHighestWeightVectorOfKStableStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsSubmodule
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KTypesUnitaryLowestWeightInConeStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KTypesUnitaryLowestWeightInCone
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FockIntertwinerCommutesUnitaryAndExtends
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LowestKTypeOfIrreducibleGeneratedModuleStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LowestKTypeOfIrreducibleGeneratedModule
 
 noncomputable section
 
@@ -99,11 +99,11 @@ theorem cyclic (M : GKMod p q) (H : Type) [NormedAddCommGroup H] [InnerProductSp
   have eT : Equivalence (fun _ _ : Ix p q => True) := ⟨fun _ => trivial, fun _ => trivial, fun _ _ => trivial⟩
   have htop : ∀ U' : Submodule ℂ M.V, v ∈ U' → (∀ a b, True → ∀ x ∈ U', M.act (Eab a b) x ∈ U') → ⊤ ≤ U' :=
     fun U' h1 h2 => hgen ▸ genSub_le (by simpa using h1) (stable_of_units fun a b => h2 a b trivial)
-  obtain ⟨U, hU1, hU2, -, hU4, -⟩ := GlobalTheory.T.exists_matrixUnit_stable_subspace_of_extremal p q M.V M.act M.lie _ eT r hr μ v hv fun a b _ h => hup a b h
+  obtain ⟨U, hU1, hU2, -, hU4, -⟩ := _root_.GlobalTheory.ExtremalGen.exists_generated p q M.V M.act M.lie _ eT r hr μ v hv fun a b _ h => hup a b h
   have hline : ∀ x ∈ wtSub M.act μ, ∃ c : ℂ, x = c • v := fun x hx => hU4 x (htop U hU1 hU2 trivial) hx
   refine ⟨⟨nontrivial_of_ne v 0 hv0, fun N hN => _root_.GlobalTheory.FockIrr.irreducible_of_weight_line p q M H E hE hadj _ eT μ v ⊤ hv htop
     (fun x _ hx => hline x hx) N le_top fun a b _ => hN _⟩, hline, ?_⟩
-  obtain ⟨W, hW1, hW2, hW3, -, -⟩ := GlobalTheory.T.exists_matrixUnit_stable_subspace_of_extremal p q M.V M.act M.lie _ equiv_sameBlock r hr μ v hv
+  obtain ⟨W, hW1, hW2, hW3, -, -⟩ := _root_.GlobalTheory.ExtremalGen.exists_generated p q M.V M.act M.lie _ equiv_sameBlock r hr μ v hv
     fun a b _ h => hup a b h
   have hmin : ∀ W' : Submodule ℂ M.V, v ∈ W' → KStable M.act W' → W ≤ W' := fun W' h1 h2 =>
     hW3 W' h1 fun a b hab _ => h2 _ (isKC_Eab (equiv_sameBlock.symm hab))
@@ -138,11 +138,11 @@ theorem globalize (hpq : 1 ≤ p + q) (T : GrpData p q) (πU : URep T) (M : GKMo
     (heig : ∀ m : ℕ, ∀ x ∈ N m, ∑ i : Fin p, M.act (Eab (Sum.inl i) (Sum.inl i)) x = ((c : ℂ) + m) • x) :
     ∃ (σ : URep T) (j : M.V →ₗ[ℂ] σ.H) (J : σ.H →ₗᵢ[ℂ] πU.H), IrrU σ ∧ IsHCMod σ M j ∧
       Dense (Set.range j) ∧ (∀ x, J (j x) = E x) ∧ ∀ g y, J (σ.π g y) = πU.π g (J y) := by
-  obtain ⟨σ, j, J, hd, hJ, hG, hD⟩ := GlobalTheory.T.exists_subrep_closure_analytic_vectors p q T (GlobalTheory.T.coverUpq_closure_exp_top_and_cartan p q hpq T).1 πU M.V M.act E hder hbd
+  obtain ⟨σ, j, J, hd, hJ, hG, hD⟩ := _root_.GlobalTheory.AnalyticClosure.exists_subrep_closure p q T (_root_.GlobalTheory.CoverExp.closure_expt_eq_top_and_cartan p q hpq T).1 πU M.V M.act E hder hbd
   have hj : Function.Injective j := fun x y h => hE (by rw [← hJ, ← hJ, h])
-  obtain ⟨k, hk, lam, hl, hlam⟩ := GlobalTheory.T.exists_central_circle_distinct_graded_eigen p q T σ M j hD N c heig
+  obtain ⟨k, hk, lam, hl, hlam⟩ := _root_.GlobalTheory.GradedCentralCircle.exists_central_eigen p q T σ M j hD N c heig
   exact ⟨σ, j, J, _root_.GlobalTheory.irrU_of_dense_graded_irrGK p q T σ M j hj hd hD hirr N k lam hN htop hk hl hlam,
-    GlobalTheory.T.isHCModule_of_graded_dense_gK p q hpq T σ M j hj hd hD N k lam hN htop hk hl hlam, hd, hJ, hG⟩
+    _root_.GlobalTheory.GradedKFin.isHCMod_of_graded p q hpq T σ M j hj hd hD N k lam hN htop hk hl hlam, hd, hJ, hG⟩
 
 theorem exists_fdeg (T : GrpData p q) (σ : URep T) (hσ : IrrU σ) (v : σ.H) (hv : v ≠ 0)
     (h : MemLp (fun g => inner ℂ v (σ.π g v)) 2 T.haar) :
@@ -177,13 +177,13 @@ variable {r s : ℕ} {T0 : GrpData (p * r + q * s) (p * s + q * r)} {T1 : GrpDat
   H := F.H
   π := F.π.comp (MonoidHom.inl _ _)
   isom _ x := F.isom _ x
-  cont x := (F.cont x).comp ((GlobalTheory.T.fock_derived_actions_tensor_members p q r s T0 T1 T2 F).1.comp (continuous_id.prodMk continuous_const))
+  cont x := (F.cont x).comp ((_root_.GlobalTheory.FockEmbExp.fock_derived p q r s T0 T1 T2 F).1.comp (continuous_id.prodMk continuous_const))
 
 @[reducible] def repSnd (F : FockData T0 T1 T2) : URep T2 where
   H := F.H
   π := F.π.comp (MonoidHom.inr _ _)
   isom _ x := F.isom _ x
-  cont x := (F.cont x).comp ((GlobalTheory.T.fock_derived_actions_tensor_members p q r s T0 T1 T2 F).1.comp (continuous_const.prodMk continuous_id))
+  cont x := (F.cont x).comp ((_root_.GlobalTheory.FockEmbExp.fock_derived p q r s T0 T1 T2 F).1.comp (continuous_const.prodMk continuous_id))
 
 @[reducible] def polFst (p q r s : ℕ) : GKMod p q where
   V := Pol p q r s
@@ -216,12 +216,12 @@ theorem om_bound (F : FockData T0 T1 T2) (Z : Matrix (Ln p q r s) (Ln p q r s) �
 theorem adj_fst (F : FockData T0 T1 T2) (Z : Mat p q) (x y : Pol p q r s) :
     inner ℂ (F.ι (fockAct1 p q r s Z x)) (F.ι y) = inner ℂ (F.ι x) (F.ι (fockAct1 p q r s (adjZ Z) y)) :=
   GlobalTheory.RealPar.DerivedAdjoint.derived_adjoint p q T1 (repFst F) (polFst p q r s) F.ι
-    (GlobalTheory.T.fock_derived_actions_tensor_members p q r s T0 T1 T2 F).2.1 Z x y
+    (_root_.GlobalTheory.FockEmbExp.fock_derived p q r s T0 T1 T2 F).2.1 Z x y
 
 theorem adj_snd (F : FockData T0 T1 T2) (Z : Mat r s) (x y : Pol p q r s) :
     inner ℂ (F.ι (fockAct2 p q r s Z x)) (F.ι y) = inner ℂ (F.ι x) (F.ι (fockAct2 p q r s (adjZ Z) y)) :=
   GlobalTheory.RealPar.DerivedAdjoint.derived_adjoint r s T2 (repSnd F) (polSnd p q r s) F.ι
-    (GlobalTheory.T.fock_derived_actions_tensor_members p q r s T0 T1 T2 F).2.2 Z x y
+    (_root_.GlobalTheory.FockEmbExp.fock_derived p q r s T0 T1 T2 F).2.2 Z x y
 
 end Fock
 
@@ -270,8 +270,8 @@ theorem exists_compact (F : FockData T0 T1 T2) (hn : p + q < n) (ap : Fin p → 
       i v = delta hn ap am ∧ (∀ Z x, i (M.act Z x) = fockAct2 p q n 0 Z (i x)) ∧
       ∃ (τ : URep T2) (j : M.V →ₗ[ℂ] τ.H) (v0 : M.V), IsCompactType τ M j (wtH n ap am) v0 := by
   obtain ⟨M, i, v, hi, hv, he, hgen⟩ := exists_cyclic_sub (polSnd p q n 0) (delta hn ap am)
-  have hΔ := GlobalTheory.T.harmonicMinorProductDelta_mem_highestWeight_second p q n hn ap am hap ham
-  have hΔ0 := (GlobalTheory.T.harmonicMinorProductDelta_extremal_first_member p q n hn ap am hap ham).1
+  have hΔ := _root_.GlobalTheory.DeltaHighest.delta_mem_hwSub p q n hn ap am hap ham
+  have hΔ0 := (_root_.GlobalTheory.FockMinorExtremal.delta_extremal p q n hn ap am hap ham).1
   have hv0 : v ≠ 0 := fun h => hΔ0 (by rw [← hv, h, map_zero])
   have hvw : v ∈ hwSub M.act (wtH n ap am) := (hw_iff hi he).2 (hv ▸ hΔ)
   have hE : Function.Injective (F.ι ∘ₗ i) := F.ι_inj.comp hi
@@ -279,13 +279,13 @@ theorem exists_compact (F : FockData T0 T1 T2) (hn : p + q < n) (ap : Fin p → 
     (fun Z x y => by simpa only [LinearMap.comp_apply, he] using adj_snd F Z (i x) (i y))
     (rkCompact n) rkCompact_inj _ v hv0 hvw.1
     (fun a b h => (GlobalTheory.TensorHW.mem_hw.1 hvw).2 a b (rkCompact_lt h)) hgen
-  obtain ⟨-, -, N, hN1, hN2, hN3⟩ := GlobalTheory.T.lowestKType_of_irreducible_generated_module n 0 M (wtH n ap am) W hirr hW2 hW3 hW4 ⟨v, hW1, hv0, hvw⟩
+  obtain ⟨-, -, N, hN1, hN2, hN3⟩ := _root_.GlobalTheory.LowestType.lowest n 0 M (wtH n ap am) W hirr hW2 hW3 hW4 ⟨v, hW1, hv0, hvw⟩
     (fun e _ a b => b.elim0)
     (eq_top_iff.2 (hgen ▸ genSub_le (by simpa using subset_genSub _ hW1) (genSub_stable _)))
   obtain ⟨τ, j, J, h1, h2, -, -, -⟩ := globalize (p := n) (q := 0) (by omega) T2 (repSnd F) M (F.ι ∘ₗ i) hE
     (fun Y hY x => by
       simp only [LinearMap.comp_apply, he]
-      exact (GlobalTheory.T.fock_derived_actions_tensor_members p q n 0 T0 T1 T2 F).2.2 Y hY (i x))
+      exact (_root_.GlobalTheory.FockEmbExp.fock_derived p q n 0 T0 T1 T2 F).2.2 Y hY (i x))
     (fun Y _ y => by
       simp only [LinearMap.comp_apply, pow_intw i _ _ (he Y)]
       exact om_bound F _ (i y))
@@ -317,8 +317,8 @@ theorem exists_lowest (F : FockData T0 T1 T2) (hn : p + q < n) (ap : Fin p → �
         ∑ a : Fin p, M.act (Eab (Sum.inl a) (Sum.inl a)) x =
           (((∑ a : Fin p, wtK n ap am (Sum.inl a) : ℚ) : ℂ) + m) • x := by
   obtain ⟨M, i, v, hi, hv, he, hgen⟩ := exists_cyclic_sub (polFst p q n 0) (delta hn ap am)
-  have hΔ2 := GlobalTheory.T.harmonicMinorProductDelta_mem_highestWeight_second p q n hn ap am hap ham
-  obtain ⟨hΔ0, hΔw, hΔa, hΔb, hΔk⟩ := GlobalTheory.T.harmonicMinorProductDelta_extremal_first_member p q n hn ap am hap ham
+  have hΔ2 := _root_.GlobalTheory.DeltaHighest.delta_mem_hwSub p q n hn ap am hap ham
+  obtain ⟨hΔ0, hΔw, hΔa, hΔb, hΔk⟩ := _root_.GlobalTheory.FockMinorExtremal.delta_extremal p q n hn ap am hap ham
   have hv0 : v ≠ 0 := fun h => hΔ0 (by rw [← hv, h, map_zero])
   have hvw : v ∈ wtSub M.act (wtExt n ap am) := (wt_iff hi he).2 (hv ▸ hΔw)
   have hE : Function.Injective (F.ι ∘ₗ i) := F.ι_inj.comp hi
@@ -359,12 +359,12 @@ theorem exists_lowest (F : FockData T0 T1 T2) (hn : p + q < n) (ap : Fin p → �
     eq_top_iff.2 (hgen ▸ genSub_le (by simpa using subset_genSub _ hW1) (genSub_stable _))
   have hge : genSub M.act {e} = ⊤ := (hirr.2 _ (genSub_stable _)).resolve_left fun h =>
     he0 (by simpa [h] using subset_genSub (act := M.act) {e} rfl)
-  obtain ⟨hlow, hone, hN⟩ := GlobalTheory.T.lowestKType_of_irreducible_generated_module p q M _ W hirr hW2 hW3 hW4 ⟨e, heW, he0, heh⟩ hWk hgW
-  obtain ⟨-, hbl, hlt⟩ := GlobalTheory.T.centredHarishChandraParameter_isParam_blattner p q n hn ap am hap ham hap1 ham1
+  obtain ⟨hlow, hone, hN⟩ := _root_.GlobalTheory.LowestType.lowest p q M _ W hirr hW2 hW3 hW4 ⟨e, heW, he0, heh⟩ hWk hgW
+  obtain ⟨-, hbl, hlt⟩ := _root_.GlobalTheory.HarmonicParam.hcParam_isParam_blattner p q n hn ap am hap ham hap1 ham1
   refine ⟨M, i, v, W, hi, hv, he, hW1, hv0, hvw, hline, hlow, hone, fun x => ?_, fun ν u hu => ?_, hN⟩
-  · rw [GlobalTheory.T.normSq_centredHarishChandraParameter_sub_rhoSq p q n ap am]
+  · rw [_root_.GlobalTheory.normSq_hcParam_sub_rhoSq p q n ap am]
     exact _root_.GlobalTheory.CasimirLowest.casimir_on_generated p q M.V M.act M.lie _ e heh (hWk e heW) hge x
-  · obtain ⟨m, hm1, hm2⟩ := GlobalTheory.T.kTypes_unitary_lowestWeight_in_cone p q M F.H _ hE hadj _ e heh (hWk e heW) hge ν u hu
+  · obtain ⟨m, hm1, hm2⟩ := _root_.GlobalTheory.LowestCone.cone p q M F.H _ hE hadj _ e heh (hWk e heW) hge ν u hu
     refine ⟨m, fun a b hab => ?_, hbl ▸ hm2⟩
     obtain ⟨a', b', rfl, rfl⟩ := hm1 a b hab
     exact hlt a' b'
@@ -493,7 +493,7 @@ theorem harmonicModule_of (hdec : GlobalTheory.IndefiniteRowSideFullHecke.FockSi
   obtain ⟨σ, j₁, J, hσ, hHC, hd, hJ, hG⟩ := globalize hpq T1 (repFst F) M₁ (F.ι ∘ₗ i) (F.ι_inj.comp hi)
     (fun Y hY x => by
       simp only [LinearMap.comp_apply, he]
-      exact (GlobalTheory.T.fock_derived_actions_tensor_members p q n 0 T0 T1 T2 F).2.1 Y hY (i x))
+      exact (_root_.GlobalTheory.FockEmbExp.fock_derived p q n 0 T0 T1 T2 F).2.1 Y hY (i x))
     (fun Y _ y => by
       simp only [LinearMap.comp_apply, pow_intw i _ _ (he Y)]
       exact om_bound F _ (i y))
@@ -503,14 +503,14 @@ theorem harmonicModule_of (hdec : GlobalTheory.IndefiniteRowSideFullHecke.FockSi
     fun e h a b => (zero_iff hi he).1 (hlow.2.2.2.2.2.2.1 e h a b)
   have hjv : j₁ v ≠ 0 := (map_ne_zero_iff j₁ hHC.1).2 hv0
   obtain ⟨d, hd0, hschur⟩ := exists_fdeg T1 σ hσ (j₁ v) hjv
-    (GlobalTheory.T.memLp_two_of_cosh_decay_unitaryPQCover hint p q n hn T1 _ (‖j₁ v‖ * ‖j₁ v‖) (continuous_const.inner (σ.cont _)) fun k hk X hX => by
+    (_root_.GlobalTheory.CoshSqInt.memLp_two_of_decay hint p q n hn T1 _ (‖j₁ v‖ * ‖j₁ v‖) (continuous_const.inner (σ.cont _)) fun k hk X hX => by
       have := hdecay k hk 1 (one_mem_Kset T1) X hX ⟨v, hvW⟩ ⟨v, hvW⟩
       rw [mul_one] at this
       exact this.trans_eq (by ring))
   let D : DSRep T1 :=
     { U := σ, nontriv := hσ.1, irred := hσ.2, fdeg := d, fdeg_pos := hd0, schur := hschur, HK := M₁, ι := j₁
       ι_inj := hHC.1, ι_range := hHC.2.1, der := hHC.2.2 }
-  obtain ⟨hpar, hbl, -⟩ := GlobalTheory.T.centredHarishChandraParameter_isParam_blattner p q n hn ap am hap ham hap1 ham1
+  obtain ⟨hpar, hbl, -⟩ := _root_.GlobalTheory.HarmonicParam.hcParam_isParam_blattner p q n hn ap am hap ham hap1 ham1
   obtain ⟨M₂, i₂, v₂, hirr₂, hv₂, hi₂, he₂, τ₀, j₀, w₀, hτ₀⟩ := exists_compact F hn ap am hap ham
   refine ⟨D, W, hlow, hbl, ⟨hpar, hbl ▸ hone, hcas, hcone⟩, hdecay, ?_, ⟨τ₀, M₂, j₀, w₀, hτ₀⟩, ?_⟩
   · have h0 : ‖j₁ v‖ ≠ 0 := norm_ne_zero_iff.2 hjv

@@ -11,7 +11,7 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlace
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.IndicatorFunctionIdentity
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsClopenIsCompactMapsPair
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DualLatticeCosetIndicatorIsSchwartzBruhat
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.GluedLatticeDatumMainPartMemSchwartzBruhatStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.GluedLatticeDatumMainPartMemSchwartzBruhat
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FourierPairingPairCharIndicatorDualLatticeIndica
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FourierPairingPairCharIndicatorCosetIndicatorStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FourierPairingDualIndicatorAddNonzeroCosets
@@ -552,7 +552,7 @@ theorem vertexGlued (D : D7) : VertexGlued D := by
       let vP : caSub B.A := ⟨φ P, hφ.2.2 P⟩
       let yP : SB (Matrix (n'' ⊕ Fin 1) n k) := row (latInd Q.lat Λ) hL btot hbtot
       have hM : ∀ Q' : Pair k n, (latInd P.ker Q'.ker + mainDatum q (resChar χ hχ q) 1 P Q') ∈ SB (Matrix n n' k) :=
-        fun Q' => add_mem (latInd_mem_SB _ _) (GlobalTheory.T.gluedLatticeDatum_mainPart_mem_schwartzBruhat k n n' q _ 1 P Q')
+        fun Q' => add_mem (latInd_mem_SB _ _) (_root_.GlobalTheory.FinPl.Comm.mainDatum_mem_SB k n n' q _ 1 P Q')
       let x₀ : SB (Matrix n (n' ⊕ Fin 1) k) := col (latInd P.ker Q.lat) (latInd_mem_SB _ _) (vecInd Q.lat) hvec
       let xm : Pair k n → SB (Matrix n (n' ⊕ Fin 1) k) := fun Q' =>
         col (latInd P.ker Q'.ker + mainDatum q (resChar χ hχ q) 1 P Q') (hM Q') (charInd (resChar χ hχ q) Q')

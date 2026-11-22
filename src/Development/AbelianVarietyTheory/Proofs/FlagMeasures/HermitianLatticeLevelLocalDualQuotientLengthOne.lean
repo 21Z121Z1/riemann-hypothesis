@@ -4,8 +4,8 @@ import Formalism.LocalToGlobal.HermitianForms.TiedStep
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CmFieldSplitCompletelyPlaceStructure
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SplitPlaceDualQuotientComponentsIff
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PrimeSqLeLocalHermitianDualIndex
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalHermitianDualQuotientCyclicSplitPlaceStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ProdLocalRelIndexDvdHermitianDualStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalHermitianDualQuotientCyclicSplitPlace
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ProdLocalRelIndexDvdHermitianDual
 
 open Formalism.BasicNotions Formalism.UG Formalism.L2.Forms NumberField IsDedekindDomain Matrix GlobalTheory.St.G
 open scoped TensorProduct
@@ -55,7 +55,7 @@ theorem tLat_local_index : ∀ (F E : Type) [Field F] [NumberField F] [Field E] 
     exact _root_.GlobalTheory.St.G.IdxLower.sq_le_local_index F E cm n J hJ hdet T f L hT hs hdeg hL w hw' sp hsp1 hsp2
       (_root_.GlobalTheory.St.G.dual_components_iff F E cm n J hJ hdet T f L hT hs hdeg hL w hw' sp hsp1 hsp2) h0
 
-  have hdvd := GlobalTheory.T.prod_local_relIndex_dvd_hermitian_dual F E cm n J hJ hdet T f L hT hs hdeg hL hfin.toFinset
+  have hdvd := _root_.GlobalTheory.St.G.GlobIdx.prod_loc_relIndex_dvd F E cm n J hJ hdet T f L hT hs hdeg hL hfin.toFinset
     (fun w hw => (Set.Finite.mem_toFinset hfin).mp hw)
   rw [hL.2.2.2.1] at hdvd
   have heq := tidx_arith hfin.toFinset
@@ -63,7 +63,7 @@ theorem tLat_local_index : ∀ (F E : Type) [Field F] [NumberField F] [Field E] 
     T f hT hcard hdvd hlow v ((Set.Finite.mem_toFinset hfin).mpr hv)
   refine ⟨heq, ?_⟩
   obtain ⟨_, _, sp, hsp1, hsp2⟩ := hloc v hv
-  exact GlobalTheory.T.local_hermitian_dual_quotient_cyclic_split_place F E cm n J hJ hdet T f L hT hs hdeg hL v hv sp hsp1 hsp2
+  exact _root_.GlobalTheory.St.G.CyclicQuot.local_dual_cyclic F E cm n J hJ hdet T f L hT hs hdeg hL v hv sp hsp1 hsp2
     (_root_.GlobalTheory.St.G.dual_components_iff F E cm n J hJ hdet T f L hT hs hdeg hL v hv sp hsp1 hsp2) heq
 
 end GlobalTheory.St.G

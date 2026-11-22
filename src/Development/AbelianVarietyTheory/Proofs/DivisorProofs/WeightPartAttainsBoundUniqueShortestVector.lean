@@ -137,7 +137,7 @@ theorem pull_term (hL : LL) (hT : TwistBCSpanStatement) (hVR : TWM.VRatioGtState
   have hA : AdmBase V (maximalIdeal V) := ⟨inferInstance, inferInstance, inferInstance, hcp⟩
   have hB := D.tau_bimult
   have hm2 : 1 ≤ m ^ 2 := pow_pos hm.pos 2
-  obtain ⟨h, o', g₂, ho, hh, hg₂, hv₂⟩ := GlobalTheory.T.exists_nsmul_add_decomp_with_coef_valuation hL hT hVR hTW hUU V hcp ϖ hϖ D Q hQ F v hv ϑ hprim k hk hku 0 ν
+  obtain ⟨h, o', g₂, ho, hh, hg₂, hv₂⟩ := _root_.GlobalTheory.UT.ExactTerm.exact_term_after_torsion hL hT hVR hTW hUU V hcp ϖ hϖ D Q hQ F v hv ϑ hprim k hk hku 0 ν
   rw [isZero_iff_eq] at ho
   rw [isNsmul_iff_eq] at hh
   rw [isAdd_iff_eq, zero_add] at hg₂

@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Hat1
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIdempotentIsUnitOneAddOrSubAdeleStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIdempotentIsUnitOneAddOrSubAdele
 
 open NumberField IsDedekindDomain GlobalTheory.AdLat
 open scoped TensorProduct Matrix nonZeroDivisors
@@ -88,7 +88,7 @@ theorem hilbert90_adeleRing_tensor_quadratic : ∀ (F E : Type) [Field F] [Numbe
     push Not at h
     exact hc (AlgEquiv.ext h)
   obtain ⟨t, ht⟩ := hT u
-  obtain ⟨e, he, hun⟩ := GlobalTheory.T.exists_idempotent_isUnit_one_add_or_sub_adele F ((2 : F)⁻¹ • t)
+  obtain ⟨e, he, hun⟩ := _root_.GlobalTheory.AdIdem.exists_idem_isUnit F ((2 : F)⁻¹ • t)
   let ι : AdeleRing (𝓞 F) F →+* AdeleRing (𝓞 F) F ⊗[F] E := Algebra.TensorProduct.includeLeftRingHom
   have hι : ∀ a, ι a = a ⊗ₜ 1 := fun a => rfl
   let κ : E →ₐ[F] AdeleRing (𝓞 F) F ⊗[F] E := Algebra.TensorProduct.includeRight

@@ -1,7 +1,12 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RunModel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemLatPIffMulVec
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeCoordinatesModPrimeSelfDualStabilizerStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeCoordinatesModPrimeSelfDualStabilizer
+import Development.AbelianVarietyTheory.Definitions.Divisors.MemLevEigenIffTransl
+import Development.AbelianVarietyTheory.Definitions.Divisors.CongModRefl
+import Formalism.LocalToGlobal.IndefiniteReal.RhoGeo
+import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulVecMemOfFrame
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDetOfMemSt
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsRightActFunPull
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsCoprimeOfNatCast
@@ -65,7 +70,7 @@ theorem levUnip_mod_place : ∀ {D : D7} {L : SizeData₂ D} {hT : GatTies D} {G
   have hrk : D.R.r = (p.T.Q.Dw ((i : ℕ) + 1)).p + (p.T.Q.Dw ((i : ℕ) + 1)).q :=
     (hL.j.unf _ ⟨Nat.le_add_left _ _, i.2⟩ _ (r.used v').full.toCore.good_σ₀).1
   set PPs := plg ⟨k, v⟩ with hPPs
-  obtain ⟨φ, hφs, hφk⟩ := GlobalTheory.T.lattice_coordinates_mod_prime_selfDual_stabilizer D (Wc D i) ((R2 p).βW i) ((R2 p).ΛW i) hβ _ _ hι PPs.1
+  obtain ⟨φ, hφs, hφk⟩ := _root_.GlobalTheory.LatCoordRed.coord_red D (Wc D i) ((R2 p).βW i) ((R2 p).ΛW i) hβ _ _ hι PPs.1
   obtain ⟨κ, hκ, hκa⟩ := hlev u
   have hMbP : p.T.Q.l.Mb ≤ PPs.1.asIdeal := by
     rw [hr.half]

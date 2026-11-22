@@ -2,12 +2,12 @@ import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartAndRightWordsSmooth
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatrixExpCurveDerivative
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RegularRepresentationContinuous
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LpIntegralAePointwiseStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ApproximateIdentityExistsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LpIntegralAePointwise
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ApproximateIdentityExists
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MollificationDifferentiable
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MollificationRightTranslateStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MollificationEvaluationContinuousStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivativeRightBasisExpansionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MollificationEvaluationContinuous
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivativeRightBasisExpansion
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.L2LimitEqPointwiseLimitHolds
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeftConvolutionApproximation
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MollificationAeEqConvolution
@@ -61,7 +61,7 @@ theorem mol_family (hU : Unimod) (x : List (Bool × Fin n × Fin n) → Lp V 2 �
       ∀ w p, ∀ z ∈ GLs n, Rd (bs p) (Mol μ φ (⇑(x w))) z = Mol μ φ (⇑(x (p :: w))) z := by
   have hd : ∀ w p, ∀ z ∈ GLs n, Rd (bs p) (Mol μ φ (⇑(x w))) z = Mol μ φ (⇑(x (p :: w))) z := by
     intro w p z hz
-    obtain ⟨Lz, hL⟩ := GlobalTheory.T.mollification_evaluation_continuous n μ V hU φ hφ z hz
+    obtain ⟨Lz, hL⟩ := _root_.GlobalTheory.CompanionTheory.PresSobA.MolBounded.mol_bounded n μ V hU φ hφ z hz
     have h1 : HasDerivAt (fun t : ℝ => Lz (rR μ V (expC (bs p) t) (x w))) (Lz (x (p :: w))) 0 :=
       Lz.hasFDerivAt.comp_hasDerivAt 0 (hx w p)
     have hcur : HasDerivAt (fun t : ℝ => z * (expC (bs p) t).val) (z * bs p) 0 := by
@@ -120,7 +120,7 @@ theorem GlobalTheory.CompanionTheory.PresSobA.presSob : PresSob := by
       exact (DFunLike.congr_fun (hcomm (expC (bs p) t)) _).symm
     rw [h3]
     exact h2
-  obtain ⟨φ, hφ, hφ0, hφ1, hφs⟩ := GlobalTheory.T.approximate_identity_exists n μ
+  obtain ⟨φ, hφ, hφ0, hφ1, hφs⟩ := _root_.GlobalTheory.CompanionTheory.PresSobA.exists_mollifiers n μ
   have hfam := fun k => mol_family (μ := μ) hU x hx (hφ k)
   have hRw : ∀ k w, ∀ z ∈ GLs n, Rw w (Mol μ (φ k) (⇑(x []))) z = Mol μ (φ k) (⇑(x w)) z := by
     intro k w

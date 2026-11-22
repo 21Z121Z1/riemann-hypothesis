@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Jets.PowerSeriesHasSumAt
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MvPowerSeriesIntegralBoundedClosureStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MvPowerSeriesIntegralBoundedClosure
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MvPowerSeriesEvalTsumOpenPolydiscProperties
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIntegralPolyOfCharacterStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIntegralCoeffInterpolationBivariateSeries
@@ -15,7 +15,7 @@ theorem ev_pow_of_intg (K : Type) [NormedField K] [IsUltrametricDist K] [Complet
     (σ : Type) [Fintype σ] (x : σ → K) (hx : ∀ i, ‖x i‖ < 1) (S : MvPowerSeries σ K)
     (hS : Intg S) (k : ℕ) : ev (S ^ k) x = ev S x ^ k := by
   obtain ⟨-, halg, hC, -⟩ := _root_.GlobalTheory.ConvSer.ev_algebra K σ x hx
-  obtain ⟨-, -, hpow, -⟩ := GlobalTheory.T.mvPowerSeries_integral_bounded_closure K σ
+  obtain ⟨-, -, hpow, -⟩ := _root_.GlobalTheory.BddAlg.bdd_alg K σ
   have hB : Bdd S := (hpow S 0).2.2 hS
   induction k with
   | zero => simpa using hC 1
@@ -55,7 +55,7 @@ theorem exists_intg_polynomial_level (K : Type) [NormedField K] [IsUltrametricDi
         intro y hy
         obtain ⟨i, -, rfl⟩ := Finset.mem_image.1 hy
         exact hxlt i)
-      (((GlobalTheory.T.mvPowerSeries_integral_bounded_closure K (Fin 2)).2.2.1 _ _).1 hF)
+      (((_root_.GlobalTheory.BddAlg.bdd_alg K (Fin 2)).2.2.1 _ _).1 hF)
     rw [hcard] at hc
     obtain ⟨c, hc1, hc2⟩ := hc
     refine ⟨c, hc1, fun i j => ?_⟩

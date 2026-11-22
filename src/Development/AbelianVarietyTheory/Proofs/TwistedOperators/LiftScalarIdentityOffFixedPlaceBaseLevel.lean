@@ -6,7 +6,8 @@ import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Howe
 import Formalism.LocalToGlobal.IndefiniteReal.LinksStage
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalLiftReadingsScaleClassSumEigenspaces
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReadingsExistRow
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftPointsPartEigenformsCoefficientFieldStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftPointsPartEigenformsCoefficientField
+import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ConjScalarThm
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LiftWeightComplexPointEqTwist
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateTransposeMajorant
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapConjTransposeTwist
@@ -43,7 +44,7 @@ theorem galD_base : GlobalTheory.Hk3.HoweUnram → GlobalTheory.LowRow.ConjRatLi
   obtain ⟨h5, hrat, h3w, hprov⟩ := hfacts
   have hcore := GlobalTheory.CoreOfWeak.core_of_weak R F hC hEx
   intro j v hv p
-  obtain ⟨a, ha⟩ := GlobalTheory.T.thetaLiftPoints_part_eigenforms_coefficientField R F s hOk hC h3w j p
+  obtain ⟨a, ha⟩ := _root_.GlobalTheory.ZPartEig.points_eig R F s hOk hC h3w j p
   have hOne := hPT j hU (hRow0 j)
   have hHerm : Formalism.DivisionValues.IsRatHerm (Formalism.DivisionValues.cmMax D.what₂.LL) ((A3.A.fam.L j A3.A.μ0).HZ (A3.A.fam.lvlA F.P0 F.ψ0) ((R.toCx3 F).Zl j A3.A.μ0))
       ((A3.A.fam.L j A3.A.μ0).XQ (A3.A.fam.lvlA F.P0 F.ψ0) ((R.toCx3 F).Zl j A3.A.μ0)) := hprov j

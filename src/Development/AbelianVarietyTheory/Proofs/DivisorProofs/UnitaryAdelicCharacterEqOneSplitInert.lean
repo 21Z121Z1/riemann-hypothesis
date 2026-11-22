@@ -10,9 +10,9 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaCosetIndicator
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplexCharEqOneOfForallCircleChar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SuppInertUnitaryAdelicPointComponentAtPrimes
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InertSupportedUnitaryPointIntegralCofiniteStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryPrimeComponentFinsetProdStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryPrimeComponentFinsetProd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonSplitSupportedFinitePartIntegralInert
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsProdLocalComponentsEqPrimePartStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsProdLocalComponentsEqPrimePart
 
 noncomputable section
 
@@ -29,7 +29,7 @@ theorem eq_one_at_inert {D : Formalism.BasicNotions.D7} (V : Formalism.BasicNoti
     μ (GlobalTheory.NormSum.VacInt.part D (fun p => p = q) y) = 1 := by
   obtain ⟨g, hg⟩ := GlobalTheory.BotFormula.exists_isFinPt_of_gram_one V hG y rfl
   rw [← GlobalTheory.BotClassDict.finStd_of_isFinPt V hG hg]
-  obtain ⟨l, hl, e⟩ := GlobalTheory.T.exists_prod_localComponents_eq_primePart V hG q hq g
+  obtain ⟨l, hl, e⟩ := _root_.GlobalTheory.PrimePart.exists_prod_eq_part V hG q hq g
   rw [← e, map_list_prod, map_list_prod, List.map_map]
   refine List.prod_eq_one (M := Circle) fun z hz => ?_
   obtain ⟨h, hh, rfl⟩ := List.mem_map.1 hz
@@ -59,9 +59,9 @@ theorem char_eq_one : ∀ {D : Formalism.BasicNotions.D7} (V : Formalism.BasicNo
     fun q hq hqi => eq_one_at_inert V hG μ (fun k a1 a2 => hμ _ (hi k a1 a2)) hq hqi y
   clear hs2
   induction s using Finset.induction_on with
-  | empty => rw [(GlobalTheory.T.unitaryPrimeComponent_finset_prod y).1, map_one]
+  | empty => rw [(_root_.GlobalTheory.NormSum.VacInt.PartFin.part_finset y).1, map_one]
   | insert q s hq ih =>
-    rw [(GlobalTheory.T.unitaryPrimeComponent_finset_prod y).2 q s hq, map_mul, hloc q (hs1 q (Finset.mem_insert_self q s)).1
+    rw [(_root_.GlobalTheory.NormSum.VacInt.PartFin.part_finset y).2 q s hq, map_mul, hloc q (hs1 q (Finset.mem_insert_self q s)).1
       (hs1 q (Finset.mem_insert_self q s)).2, one_mul]
     exact ih fun p hp => hs1 p (Finset.mem_insert_of_mem hp)
 

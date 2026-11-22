@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.SiegelMeanCc
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsTruncatedGaussiansWithDensitiesStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsTruncatedGaussiansWithDensities
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurableSetHasFlag
 
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S GlobalTheory.Count GlobalTheory.FlagMeas GlobalTheory.GaussMean Filter Topology
@@ -49,7 +49,7 @@ theorem siegelMean_of_cc : SiegelMeanCc → SiegelMean := by
   intro H I hn s μf _ _ fund hfund
   obtain ⟨hfin, hH⟩ := H I hn s μf fund hfund
   refine ⟨hfin, ?_⟩
-  choose φ D h1 h2 h3 using fun v => GlobalTheory.T.exists_truncated_gaussians_with_densities I.n (I.ε v)
+  choose φ D h1 h2 h3 using fun v => _root_.GlobalTheory.GaussMean.Trunc.exists_truncated I.n (I.ε v)
   haveI := countable_V I
   have hs : sgn ℝ s ≠ 0 := by cases s <;> simp [sgn]
   have hL := tendsto_lintegral_tsum ((I.muA μf).restrict fund)

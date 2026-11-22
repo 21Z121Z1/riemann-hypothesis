@@ -118,7 +118,7 @@ theorem model_periods {Xo : Moduli D l} {c : Coeff l} {Y : Model Xo c (algebraMa
   obtain ⟨θ, hθ⟩ : ∃ θ : Γ(𝔐.X, W) →+* C.R, spMap θ = h := ⟨(Spec.preimage h).hom, Spec.map_preimage _⟩
   subst hθ
   obtain ⟨mX, -⟩ := GlobalTheory.ObjMaps.exists_sab_comp mW mC
-  obtain ⟨x, hx⟩ := GlobalTheory.T.abelian_map_tangent_coordinates E H 𝔐.X 𝔐.t Γ(𝔐.X, W) hW.fromSpec _ v C.R C.t θ mX C.g C.M htan
+  obtain ⟨x, hx⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PeriodCoord.exists_coords E H 𝔐.X 𝔐.t Γ(𝔐.X, W) hW.fromSpec _ v C.R C.t θ mX C.g C.M htan
   have hw : ∀ z : Fin n → ℂ, ∃ w : A → (epsAt (spMap (C.ψ z) ≫ spMap θ ≫ hW.fromSpec) ⟶ 𝔐.t.G),
       (∀ k, 𝔐.M.ValAt _ (b k) (w k)) ∧
       ∀ k, (w k).left = spMap (dualMap (C.ψ z)) ≫ (C.M.pt (x (ea k))).left ≫ mX.φ := fun z => by

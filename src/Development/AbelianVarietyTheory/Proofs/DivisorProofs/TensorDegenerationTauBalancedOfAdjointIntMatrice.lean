@@ -1,13 +1,14 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMonHomOfMulComp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RosVec
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsStronglyTrivialCubicalThetaFinsuppTensorStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsStronglyTrivialCubicalThetaFinsuppTensor
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsStronglyTrivialFormalSumTensorAdd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsStronglyTrivialFormalSumTensorNeg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsStronglyTrivialFormalSumTensorZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RosatiBalanceFormalSumMemSpanCubicalThetaStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RosatiBalanceFormalSumPsiValuesEqTauProductStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RosatiGeneratorTensorPowerCorrespondsFormalSumStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RosatiBalanceFormalSumPsiValuesEqTauProduct
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RosatiGeneratorTensorPowerCorrespondsFormalSum
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransportedGeneratorUniqueGlobalFunctionsBase
 
 noncomputable section
 
@@ -25,7 +26,7 @@ theorem triv_span {R : Type} [CommRing R] [IsDomain R] {D D' : DegPre R} {r : �
     (T : Tens D D' W) (hB : D.TauBimult) {c : Vec r →₀ ℤ}
     (hc : c ∈ Submodule.span ℤ (Set.range fun p : Vec r × Vec r × Vec r => theta p.1 p.2.1 p.2.2)) : Triv T c := by
   induction hc using Submodule.span_induction with
-  | mem x hx => obtain ⟨p, rfl⟩ := hx; exact GlobalTheory.T.isStronglyTrivial_cubicalThetaFinsupp_tensor R D D' W T hB _ _ _
+  | mem x hx => obtain ⟨p, rfl⟩ := hx; exact _root_.GlobalTheory.TensBal.triv_theta R D D' W T hB _ _ _
   | zero => exact _root_.GlobalTheory.TensBal.triv_zero R D D' W T
   | add x y _ _ hx hy => exact _root_.GlobalTheory.TensBal.triv_add R D D' W T _ _ hx hy
   | smul n x _ hx =>
@@ -49,8 +50,8 @@ theorem tauBal_tens : ∀ (R : Type) [CommRing R] [IsDomain R] (I : Ideal R) (D 
   obtain ⟨Ξ, hΞ, hΞ0, hΞv⟩ := triv_span T D.tau_bimult (GlobalTheory.T.rosatiBalanceFormalSum_mem_span_cubicalTheta W A A' hA)
   refine corr_of_val D'.toPre.P.isLB fun z J' hJ' => ?_
   obtain ⟨J, hJ⟩ := GlobalTheory.BoxFamily.exists_good_at D.toPre.P.isLB z
-  have key := GlobalTheory.T.rosatiGenerator_tensorPower_corresponds_formalSum R D.toPre D'.toPre W T A A' u' hu' hn' Ξ hΞ hΞ0 z J J' hJ hJ' y y'
-  rw [hΞv z J hJ y y', GlobalTheory.T.rosatiBalanceFormalSum_psiValues_eq_tauProduct R D.toPre D'.toPre W T D.tau_bimult A A' z J hJ y y'] at key
+  have key := _root_.GlobalTheory.TensRos.ros_sig R D.toPre D'.toPre W T A A' u' hu' hn' Ξ hΞ hΞ0 z J J' hJ hJ' y y'
+  rw [hΞv z J hJ y y', _root_.GlobalTheory.TensBalLat.main R D.toPre D'.toPre W T D.tau_bimult A A' z J hJ y y'] at key
   have pr := prod_ros (matAct T A) (matAct T A') (cP D'.toPre (TK R) y) (cP D'.toPre (TK R) y')
     (isoV T.w z J J')
   have l₁ : cP D'.toPre (TK R) y ≫ matAct T A = cP D'.toPre (TK R) (latAct T A y) := by

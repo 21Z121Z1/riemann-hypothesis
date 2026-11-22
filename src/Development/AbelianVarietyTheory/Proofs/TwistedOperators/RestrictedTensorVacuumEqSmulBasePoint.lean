@@ -20,7 +20,7 @@ theorem eq_smul_base : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (θ : InfFa
   have hψn : ∀ x, ‖ψ x‖ = 1 := hψ.1.2.1
   obtain ⟨ρ, hρc, hρ1, hρ2⟩ := GlobalTheory.FockCompare.exists_real_chart D θ hθ (GlobalTheory.CMTypePlaces.places_bijective D)
   obtain ⟨σ, hσ⟩ := GlobalTheory.FockCompare.RealChart.exists_chart D θ hθ ρ hρc hρ1 hρ2
-  obtain ⟨hdual, hdec, heig⟩ := GlobalTheory.T.self_dual_lattice_pairing_dual D ψ S T ΛS ΛT hψ dS dT
+  obtain ⟨hdual, hdec, heig⟩ := _root_.GlobalTheory.LatVac.latO_selfDual_approx_sign D ψ S T ΛS ΛT hψ dS dT
   set Λ := latO S T (ΛS : Set (Fin S.rank → D.host.E)) (ΛT : Set (Fin T.rank → D.host.E)) fun _ => True with hΛ
   have hinf : ∀ u ∈ Λ, u.map (infPart D) = 0 := fun u hu => GlobalTheory.VacUnique.latO_inf S T _ _ _ hu
   have key : ∀ u ∈ Λ, ∃ ε : ℂ, (ε = 1 ∨ ε = -1) ∧ heisO ψ S T u f = ε • f ∧ heisO ψ S T u f₀ = ε • f₀ := by
@@ -36,7 +36,7 @@ theorem eq_smul_base : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (θ : InfFa
     · rw [ht₀.1 γ, GlobalTheory.VacUnique.apply_real_add hσ hψ (hinf u hu) h2 z]; ring
   have hN : ∀ γ : Matrix (Fin T.rank) (Fin S.rank) D.host.E, ∃ N : ℕ, 0 < N ∧ N • finRat S T γ ∈ Λ :=
     _root_.GlobalTheory.VacUnique.Den.exists_nsmul_finRat_mem D S T ΛS ΛT dS.1 dT.1
-  have hLd := GlobalTheory.T.rationalPoints_finitePart_selfDual_lattice_iff D S T ψ Λ hψ hinf hdual hdec hN
+  have hLd := _root_.GlobalTheory.RatSelfDual.finRat_mem_iff D S T ψ Λ hψ hinf hdual hdec hN
   obtain ⟨hJ, hanti, hinv, hpos⟩ := _root_.GlobalTheory.RealSymplForm.form_alt_inv_def D S T sS sT hS hT
   classical
   let c : Matrix (Fin T.rank) (Fin S.rank) D.host.E → ℂ := fun v =>
@@ -48,8 +48,8 @@ theorem eq_smul_base : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (θ : InfFa
     · rw [norm_mul, hψn, one_mul]
       rcases (key _ hv).choose_spec.1 with h | h <;> rw [h] <;> simp
     · simp
-  have hfd := GlobalTheory.T.fockVacuum_annihilation_equation_real_coordinates D θ σ hσ ψ hψ S T sS sT f hf hfock
-  have hfd₀ := GlobalTheory.T.fockVacuum_annihilation_equation_real_coordinates D θ σ hσ ψ hψ S T sS sT f₀ ht₀ hF₀
+  have hfd := _root_.GlobalTheory.VacUnique.Ann.vacuum_annihilation D θ σ hσ ψ hψ S T sS sT f hf hfock
+  have hfd₀ := _root_.GlobalTheory.VacUnique.Ann.vacuum_annihilation D θ σ hσ ψ hψ S T sS sT f₀ ht₀ hF₀
   have hspan : Submodule.span ℝ (Set.range (infRat S T)) = ⊤ := by
     have := GlobalTheory.FockCompare.span_piW_ratW_eq_top D θ σ hσ T S
     simpa [GlobalTheory.VacUnique.piW_ratW hθ] using this

@@ -3,8 +3,8 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SelfDualOne
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LatticeModelVacuumTranslateClassesIndependent
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DvdPowZeroIff
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CayleyTransformTrivialPhaseSkewHermitian
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsIntegralDualOfIndependentModUniformizerStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsIntegralSkewHermitianLiftModUniformizerStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsIntegralDualOfIndependentModUniformizer
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsIntegralSkewHermitianLiftModUniformizer
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CayleyTransformIntegralUnitaryCongruentOne
 
 open Matrix
@@ -69,8 +69,8 @@ theorem hensel_step : ∀ (L : Type) [Field L] [Valued L (WithZero (Multiplicati
       rw [← mul_assoc, ← pow_add]; congr 2; omega
     have := GlobalTheory.Hk3.IntWitt.dvdPow_sub h1 h2
     simpa using this
-  obtain ⟨a, haI, ha⟩ := GlobalTheory.T.exists_integral_dual_of_independentModUniformizer L ϖ hv n' ι z hz hind
-  obtain ⟨C, hCs, hCI, hCz⟩ := GlobalTheory.T.exists_integral_skew_hermitian_lift_mod_uniformizer L ϖ σ q hU hq n' JT hJT hherm ι z w a hz hwI haI ha hgram1
+  obtain ⟨a, haI, ha⟩ := _root_.GlobalTheory.Hk3.IntWitt.exists_dual_of_indepMod L ϖ hv n' ι z hz hind
+  obtain ⟨C, hCs, hCI, hCz⟩ := _root_.GlobalTheory.Hk3.SkewLift.skew_lift L ϖ σ q hU hq n' JT hJT hherm ι z w a hz hwI haI ha hgram1
   obtain ⟨g, hgI, hg1, hg2⟩ := _root_.GlobalTheory.Hk3.CayleyCong.cayley_cong L ϖ σ q hU hq n' JT hJT hherm C hCs hCI k hk
   refine ⟨g, hgI, hg1, fun i r => ?_⟩
   set G : Matrix (Fin n') (Fin n') L := ((g : GL (Fin n') L) : Matrix (Fin n') (Fin n') L) with hGdef

@@ -5,9 +5,9 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Irreducibl
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.StandardFunctorsFiniteLength
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdmissibleIrreducibleCentralScalar
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RealPowPartialSegmentLtOne
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetTwoFactorCentralCharacterMulStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetTwoFactorCentralCharacterMul
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentJacquetTwoFactorSplit
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentRepCentralCharacterFormulaStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentRepCentralCharacterFormula
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContractingUnitAbsPowBounds
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CentralCharacterTwistPowDegreeStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CentralCharacterEqOfScalarStatement
@@ -41,9 +41,9 @@ theorem centredSegSqInt : ∀ (k : Type) [Field k] [ValuativeRel k] [Topological
       Δ.first.snd.rep.irr (hIA k _ _ _ Δ.first.snd.rep.smooth Δ.first.snd.rep.irr) t
     obtain ⟨cy, hcy⟩ := _root_.GlobalTheory.CompanionTheory.SchurCentre.scalar_acts_by_scalar k y.fst _ y.rep y.snd.rep.smooth y.snd.rep.irr
       (hIA k _ _ _ y.snd.rep.smooth y.snd.rep.irr) t
-    have hprod := GlobalTheory.T.jacquet_two_factor_central_character_mul k y.fst _ y.rep x hd hjm t cy (c 0) (c 1) hcy (hc 0) (hc 1)
+    have hprod := _root_.GlobalTheory.CompanionTheory.JacCentral.scalar_mul_eq k y.fst _ y.rep x hd hjm t cy (c 0) (c 1) hcy (hc 0) (hc 1)
     have hcy1 : ‖cy‖ = 1 := hU t cy hcy
-    have hy1 := hU t _ (GlobalTheory.T.segment_rep_central_character_formula k Δ y hL t c0 hc0)
+    have hy1 := hU t _ (_root_.GlobalTheory.CompanionTheory.SegScalar.scalarBy_of_isLSeg k Δ y hL t c0 hc0)
     rw [norm_mul, norm_pow, norm_pow, hnorm, ← pow_mul] at hy1
     have hr : 0 < ‖c0‖ := by
       rcases (norm_nonneg c0).lt_or_eq with h | h
@@ -60,7 +60,7 @@ theorem centredSegSqInt : ∀ (k : Type) [Field k] [ValuativeRel k] [Topological
         (c0 * ↑((GlobalTheory.SmGL.absPow k ↑(Zc.below Γ 0)) t) ^ Δ.first.fst) := by
       rw [hfirst 0]
       exact GlobalTheory.T.central_character_twist_pow_degree k Δ.first t c0 _ hc0
-    have he0 := GlobalTheory.T.central_character_eq_of_scalar k (x 0) t _ _ (hc 0) (GlobalTheory.T.segment_rep_central_character_formula k (Γ 0) (x 0) (hΓ 0) t _ hG0)
+    have he0 := GlobalTheory.T.central_character_eq_of_scalar k (x 0) t _ _ (hc 0) (_root_.GlobalTheory.CompanionTheory.SegScalar.scalarBy_of_isLSeg k (Γ 0) (x 0) (hΓ 0) t _ hG0)
     have hn0 : ‖c 0‖ = ‖c0‖ ^ (Γ 0).len * GlobalTheory.SplitWeil.nabs k t ^
         (Δ.first.fst * ((Γ 0).len * (Γ 1).len + (Γ 0).len * ((Γ 0).len - 1) / 2)) := by
       rw [he0, norm_mul, norm_pow, norm_mul, norm_pow, norm_pow, hnorm, hnorm, hb0]

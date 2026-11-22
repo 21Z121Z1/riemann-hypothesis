@@ -8,8 +8,9 @@ import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsLogA
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.KisinInfGaloisActsThroughDescentDatum
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilKisinBcrisComparisonFrobeniusNaturality
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilKisinMuPowSmulFrobeniusMemAinf
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TeichmullerSubOneAinfPropertiesCompatibleRootsStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MonodromyMemRangeOfInvariantVectorStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TeichmullerSubOneAinfPropertiesCompatibleRoots
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MonodromyMemRangeOfInvariantVector
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsAlgebraMapEqRoot
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGaloisDecompTameCoverAction
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TensorOneInjective
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HorizEqXiRed
@@ -105,7 +106,7 @@ theorem isUnit_toB_muOf {ε : OCb l} (hε : IsEps ε) (n : ℕ) :
     IsUnit (toB l O ((1 : O) ⊗ₜ[ℤ_[l]] (muOf ε ^ n))) := by
   obtain ⟨δ, hδ, -⟩ := hε.2
   have hu : IsUnit (acrisToBcris l (ainfToAcris l (muOf ε))) :=
-    ((GlobalTheory.T.teichmullerSubOneAinf_properties_compatibleRoots l).2 ε δ hε hδ).2.2.2.1
+    ((_root_.GlobalTheory.MuOfEps.main l).2 ε δ hε hδ).2.2.2.1
   have e1 : toB l O ((1 : O) ⊗ₜ[ℤ_[l]] (muOf ε ^ n)) =
       (Algebra.TensorProduct.includeRight : Per.Bcris l →ₐ[ℤ_[l]] OB l O)
         (acrisToBcris l (ainfToAcris l (muOf ε)) ^ n) := by
@@ -205,7 +206,7 @@ theorem potential_class : ∀ (l : ℕ) [Fact l.Prime] (a e : ℕ) [NeZero a] [N
     have hy : y ∈ ME D.toPhiMod := BKDat.mem_invE_of_mem_Y hyY
     obtain ⟨m₀, hm₀⟩ := R.I.exists_phiW_sub (toW t ϖ D.toPhiMod ⟨y, hy⟩)
     have hYl : y ∈ D.Yl := D.desc.mem_Yl_iff.2 ⟨0, by rw [pow_zero, one_smul]; exact hyY⟩
-    obtain ⟨⟨σ, hσ, hinv, hconn, -⟩, -⟩ := GlobalTheory.T.monodromy_mem_range_of_invariant_vector O K l e a ι η H D y hYl
+    obtain ⟨⟨σ, hσ, hinv, hconn, -⟩, -⟩ := _root_.GlobalTheory.BK.BKDat.Mon_mem_range_Lc O K l e a ι η H D y hYl
     obtain ⟨b₀, hb₀⟩ := exists_isCrisVal R hyY hy m₀ hm₀
     exact ⟨_, hy, m₀, ⟨σ, hσ⟩, b₀, hm₀, hinv, hconn, hb₀, rfl⟩
   · rintro y c c' ⟨b, ⟨hy, m₀, σ, b₀, h1, h2, h3, h4, h5⟩, hc⟩ ⟨b', ⟨hy', m₀', σ', b₀', h1', h2', h3', h4', h5'⟩, hc'⟩

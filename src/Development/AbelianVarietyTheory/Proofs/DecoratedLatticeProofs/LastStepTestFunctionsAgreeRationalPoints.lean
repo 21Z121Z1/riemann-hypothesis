@@ -2,8 +2,9 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PhiTopAgree
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ZPosIxSuccInl
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IteratedDepthOneLevelCharacterClosedForm
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ResiduesOfCompletionAtPrimeWithUniformizerStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SymmetricLevelChainPatternIteratedStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ResiduesOfCompletionAtPrimeWithUniformizer
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SymmetricLevelChainPatternIterated
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.OnesRepresent
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemIntegralGLIffIsUnitDetAtPrime
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SymChainPatternIffPlaceConditions
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SymmetricLevelCharacterAtRationalPoint
@@ -58,7 +59,7 @@ theorem bottom_iff {P : HeightOneSpectrum (𝓞 E)} {q : ℕ} {ι : E →+* k} {
         Matrix (Ix (Fin κ ⊕ Fin l) (Fin τ) (j + 1)) (Ix (Fin κ ⊕ Fin l) (Fin τ) j) k).submatrix
           (ixSucc (Fin κ ⊕ Fin l) (Fin τ) j) id).toRows₂ ↔
       ∀ p p', κ + l + j * τ ≤ p → p < κ + l + (j + 1) * τ → p' < κ + l + j * τ → IntAt P (M p p' / (q : E)) := by
-  have res := GlobalTheory.T.residues_of_completionAtPrimeWithUniformizer E k P q ι ϖ hC hU
+  have res := _root_.GlobalTheory.SymBridge.ComplRes.residues E k P q ι ϖ hC hU
   constructor
   · intro h p p' hp hp' hp''
     have := h ⟨p - (κ + l + j * τ), by rw [Nat.add_mul] at hp'; omega⟩ ((zEquiv κ l τ j).symm ⟨p', hp''⟩)
@@ -76,7 +77,7 @@ theorem unit_char {P : HeightOneSpectrum (𝓞 E)} {q : ℕ} {ι : E →+* k} {�
     {χ : ℕ → (𝓞 E ⧸ P.asIdeal)ˣ →* Kˣ} {s κ : ℕ} {S : SymData k s κ} (hT : Comparison₂ P q ι σ₀ ψ₀ χ S) (i : ℕ) (d : E) (u : kˣ)
     (hd : IntAt P d) (hu : valuation k (u : k) = 1) (e : (u : k) = ι d) :
     (S.μ (i + 1) u : ℂ) = σ₀ (LocE.unitV (χ i) d) := by
-  have res := GlobalTheory.T.residues_of_completionAtPrimeWithUniformizer E k P q ι S.ϖ hT.compl S.unif
+  have res := _root_.GlobalTheory.SymBridge.ComplRes.residues E k P q ι S.ϖ hT.compl S.unif
   exact hT.chi i d u hd ((res.2.2.1 d hd).1 (e ▸ hu)) e
 
 theorem intAt_div {P : HeightOneSpectrum (𝓞 E)} {q : ℕ} {a : E} (h : IntAt P (a / (q : E))) (hq : (q : E) ≠ 0) :
@@ -91,9 +92,9 @@ theorem core (P : HeightOneSpectrum (𝓞 E)) (q : ℕ) (ι : E →+* k) (σ₀ 
       σ₀ (phiM q ψ₀ χ κ S.ρ (κ + s + 1) τ j N M) := by
   subst hN
   have hC := hT.compl
-  have res := GlobalTheory.T.residues_of_completionAtPrimeWithUniformizer E k P q ι S.ϖ hC S.unif
+  have res := _root_.GlobalTheory.SymBridge.ComplRes.residues E k P q ι S.ϖ hC S.unif
   have hq : (q : E) ≠ 0 := res.2.2.2.1
-  have hpat := GlobalTheory.T.symmetricLevelChain_pattern_iterated k s κ S (Fin τ) j
+  have hpat := _root_.GlobalTheory.SymChain.pattern_iter k s κ S (Fin τ) j
   set T : Matrix (Ix (Fin κ ⊕ Fin (s + 1)) (Fin τ) j) (Ix (Fin κ ⊕ Fin (s + 1)) (Fin τ) j) k :=
     Matrix.of fun a b => ι (M (zPos a) (zPos b)) with hTdef
   have hTop : ((Matrix.of fun a b => ι (M (zPos a) (zPos b)) :

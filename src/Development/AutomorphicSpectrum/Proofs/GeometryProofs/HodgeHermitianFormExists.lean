@@ -10,8 +10,8 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HodgeIPIffHodg
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ThetaMultiplierNormalForm
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsThetaBasisOfFactor
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ThetaFunctionsFiniteDim
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TangentSpaceEquivHolUnifStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolUnifCompareIsogenyStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TangentSpaceEquivHolUnif
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolUnifCompareIsogeny
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CompanionTheory.Ar
@@ -39,7 +39,7 @@ theorem exists_hodgeInnerProduct_form : ∀ (E : Type) [Field E] [NumberField E]
   have ht₁' : ∀ v, IsTangent v → ∃! w, u₁.IsDiff w v := ht₁
   have ht₂' : ∀ w, ∃! v, IsTangent v ∧ u₁.IsDiff w v := ht₂
   have hcart : IsGrpPullback t'.G t.G z m.φ := m.cart
-  obtain ⟨D, hD⟩ := GlobalTheory.T.tangent_space_equiv_hol_unif X t.G z V M t'.G m.φ _ g u₁ hcart ht₁' ht₂'
+  obtain ⟨D, hD⟩ := _root_.GlobalTheory.CompanionTheory.Ar.HodgeLin.exists_linearEquiv X t.G z V M t'.G m.φ _ g u₁ hcart ht₁' ht₂'
   choose x hxt hxφ hxd using hD
   let h : V →ₗ⋆[ℂ] V →ₗ[ℂ] ℂ := LinearMap.mk₂'ₛₗ (starRingEnd ℂ) (RingHom.id ℂ)
     (fun v w => (Real.pi : ℂ) * hermForm Hm (D w) (D v))
@@ -51,7 +51,7 @@ theorem exists_hodgeInnerProduct_form : ∀ (E : Type) [Field E] [NumberField E]
   have hh : ∀ v w, h v w = (Real.pi : ℂ) * hermForm Hm (D w) (D v) := fun _ _ => rfl
   refine ⟨h, fun v w c => ⟨?_, ?_⟩, fun v w => ?_, fun v hv => ?_⟩
   · rintro ⟨-, -, -, A, _, φ, g', u', Hm', χ', v', w', a, b, h1, h2, h3, h4, h5, h6, rfl⟩
-    have := GlobalTheory.T.hol_unif_compare_isogeny X t.G t.PP.L z t'.G A m.φ φ g g' u₁ u' Hm Hm' χ χ' t.PP.isLB hab hcart h1 ht₁' ht₂' hAH₁ h2
+    have := _root_.GlobalTheory.CompanionTheory.Ar.HodgeUniq.hermForm_eq_of_pullbacks X t.G t.PP.L z t'.G A m.φ φ g g' u₁ u' Hm Hm' χ χ' t.PP.isLB hab hcart h1 ht₁' ht₂' hAH₁ h2
       (x w) (x v) w' v' (D w) (D v) b a (hxt w) (hxt v) (h4.trans (hxφ w).symm) (h3.trans (hxφ v).symm)
       (hxd w) (hxd v) h6 h5
     rw [hh, ← this]

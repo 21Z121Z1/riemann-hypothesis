@@ -5,7 +5,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.S
 import Formalism.LocalToGlobal.ProjectiveLattices.RdOrbIntOfLatZ
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.CountableOfIsAddFundamentalDomain
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.HermitianMatrixRealizesCuspCoords
-import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.CuspFlowEqTorusActionStatement
+import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.CuspFlowEqTorusAction
 
 open ReciprocityTheory.ChartRestriction.G.FD NumberField Formalism.L2.Pj.FJ Formalism.L2.Pj.QAt
 
@@ -74,7 +74,7 @@ theorem maxCusps_mem_SSgt_of_coef_eq_zero : ∀ (E : Type) [Field E] [NumberFiel
   obtain ⟨cu, hspan⟩ := hcu ξ hξ
   obtain ⟨η, rfl⟩ := (Submodule.mem_span_range_iff_exists_fun E).1 hspan
   have hb : IsZBasis X cu (zBas X cu) := Classical.epsilon_spec (hbas cu)
-  obtain ⟨L, hflow, hph, hLint⟩ := GlobalTheory.T.cuspFlow_eq_torusAction E r ρ X cu hb η hξ.1
+  obtain ⟨L, hflow, hph, hLint⟩ := _root_.GlobalTheory.CuspFlow.flow_eq_zAct E r ρ X cu hb η hξ.1
   have hη : η ≠ 0 := by
     rintro rfl
     exact hξ.2.2 (by simp)

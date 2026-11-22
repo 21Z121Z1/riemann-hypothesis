@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolEval
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchActionReadingsCompatible
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOneParameterSubgroupUnitaryOfRealPlaceLieA
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIndefiniteUnitaryLieAlgAddISmulEqStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIndefiniteUnitaryLieAlgAddISmulEq
 
 noncomputable section
 
@@ -67,7 +67,7 @@ theorem tensAny_coinv_le_comap : ∀ (F E : Type) [Field F] [NumberField F] [Fie
   have hle : GlobalTheory.HoweR.coinv (P w) (Q w) (R w) (S w) (-c w) ≤ (N.comap Φ).comap e := by
     refine Submodule.span_le.2 ?_
     rintro _ ⟨Z, g, rfl⟩
-    obtain ⟨Z₁, h₁, Z₂, h₂, rfl⟩ := GlobalTheory.T.exists_indefiniteUnitaryLieAlg_add_I_smul_eq _ _ Z
+    obtain ⟨Z₁, h₁, Z₂, h₂, rfl⟩ := _root_.GlobalTheory.HoweD.upq_span _ _ Z
     have h := Submodule.add_mem _ (key Z₁ h₁ g) (Submodule.smul_mem _ Complex.I (key Z₂ h₂ g))
     rw [SetLike.mem_coe]
     convert h using 1

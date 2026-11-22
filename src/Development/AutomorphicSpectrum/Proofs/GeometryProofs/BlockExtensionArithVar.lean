@@ -3,7 +3,7 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsSncModel
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Proportional
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncModelEmbeddedLogResolution
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AdjoinCoordsArithVarStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AdjoinCoordsArithVar
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.EmbeddedResolutionAmpleMetric
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsArithVarOfBlockAlgebraicStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BlockJoinInclusionsCompat
@@ -35,7 +35,7 @@ theorem join_blocks {K : Type} [Fintype K] {ι : K → Type} [∀ k, Fintype (ι
 theorem exists_good_model : ReciprocityTheory.ChartRestriction.G.Geo.ResK.ResKStatement → ∀ (K : Type) [Fintype K] (ι : K → Type) [∀ k, Fintype (ι k)] (Ω : Type) [Field Ω] [CharZero Ω] (y : (Σ k, ι k) → Ω) (e : ℕ) (β : MRing ι) (b : K → ℕ), IsArithVar (mCoordIdeal y) (e + 1) → IsMultiHomog β b → β ∉ mCoordIdeal y → ∃ (K' : Type) (_ : Fintype K') (ι' : K' → Type) (_ : ∀ k, Fintype (ι' k)) (κ : K → K') (v : (Σ k, ι k) → Σ k, ι' k) (y' : (Σ k, ι' k) → Ω) (J : Ideal (MRing ι')) (R : AnLogRes (mCoordIdeal y') J e) (Amp : HermLine ι'), IsBlockMap κ v ∧ y' ∘ v = y ∧ blockFnField y' = blockFnField y ∧ IsArithVar (mCoordIdeal y') (e + 1) ∧ IsEmbedded R.A (mCoordIdeal y') R.U R.lift ∧ IsSmoothHerm Amp ∧ IsPotential R.A (potOf R Amp) ∧ IsPosPot R.A (potOf R Amp) ∧ ∀ z ∈ mcPts (mCoordIdeal y'), evC z (rename v β) = 0 → z ∈ mcPts J := by
   intro hRes K _ ι _ Ω _ _ y e β b hV hβ hβP
   obtain ⟨M, y₂, J, ⟨i₀, hi₀⟩, hfield, hJh, hJ, hsnc, hz⟩ :=
-    GlobalTheory.T.adjoin_coords_arith_var hRes K ι Ω y e β b hV hβ hβP
+    _root_.GlobalTheory.CompanionTheory.Ar.SncRes.exists_snc_model hRes K ι Ω y e β b hV hβ hβP
   have hj := (_root_.GlobalTheory.CompanionTheory.Ar.Cmp.join_block_maps).1 K ι Unit (fun _ => Fin M) Ω y y₂
   have hb₁ := hj.1
   have hcomp : joinVec y y₂ ∘ joinInl ι (fun _ : Unit => Fin M) = y := hj.2.2.1

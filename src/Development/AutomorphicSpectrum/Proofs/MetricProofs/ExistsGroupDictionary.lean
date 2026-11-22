@@ -9,7 +9,7 @@ import Development.AutomorphicSpectrum.Proofs.MetricProofs.LatticeStabilizerEqui
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.AdaptedFrameInverseProperties
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ArchimedeanUnitaryRepresentation
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ArchimedeanUnitarySurjective
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.ArchimedeanActionOnLatticeVectorsStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.ArchimedeanActionOnLatticeVectors
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsMajorantOfPositiveFrame
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsAdaptedFrameBis
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.AdaptedFrameDeterminesLatticeStatement
@@ -18,9 +18,9 @@ import Development.AutomorphicSpectrum.Proofs.MetricProofs.AdaptedFrameChangeUni
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.NormSqEqAdaptedFrameSum
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsTranslatedRiemannLatticeStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HolomorphicAdaptedFrameOnBall
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.BallMobiusHolomorphicPotentialChangeStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.BallMobiusMulStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.BallMobiusZeroEqIffUnitaryStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.BallMobiusHolomorphicPotentialChange
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.BallMobiusMul
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.BallMobiusZeroEqIffUnitary
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BallMobiusTransitive
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BallMobiusZeroContinuousStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BallAutomorphismInverseExists
@@ -157,7 +157,7 @@ theorem groupDict_nonempty : ∀ (E : Type) [Field E] [NumberField E] [IsCMField
     have hb : (fun τ => u a τ * u (a⁻¹ * b) τ) = u b := by
       funext τ
       rw [← uMul, mul_inv_cancel_left]
-    have := (GlobalTheory.T.ball_mobius_zero_eq_iff_unitary Ψ j j' n F.q (u a) (u (a⁻¹ * b)) (uU a) (uU _)).1 (by rw [hb]; exact h)
+    have := (_root_.GlobalTheory.CompanionTheory.Ar.Cusp.Dict.Stab.moebBall_zero_iff Ψ j j' n F.q (u a) (u (a⁻¹ * b)) (uU a) (uU _)).1 (by rw [hb]; exact h)
     intro τ
     rw [vEq]
     exact this τ
@@ -166,7 +166,7 @@ theorem groupDict_nonempty : ∀ (E : Type) [Field E] [NumberField E] [IsCMField
       intro t ht
       obtain ⟨a, rfl⟩ := hsurj t ht
       rw [hZπ]
-      exact (GlobalTheory.T.ball_mobius_holomorphic_potential_change Ψ j j' n F.q (u a) (uU a)).2.1 h0
+      exact (_root_.GlobalTheory.CompanionTheory.Ar.Cusp.Dict.Moeb.moebBall_props Ψ j j' n F.q (u a) (uU a)).2.1 h0
     refine ⟨hmaps, ?_, ?_⟩
     · intro t ht t' ht' h
       obtain ⟨a, rfl⟩ := hsurj t ht
@@ -193,7 +193,7 @@ theorem groupDict_nonempty : ∀ (E : Type) [Field E] [NumberField E] [IsCMField
     refine GlobalTheory.T.ball_mobius_zero_continuous Ψ j j' n F.q C.Arch u (fun τ => ?_) uU
     exact continuous_const.matrix_mul ((hcont τ).matrix_mul continuous_const)
   have hmem : ∀ a, moebBall F.q (u a) 0 ∈ ballDom F.q := fun a =>
-    (GlobalTheory.T.ball_mobius_holomorphic_potential_change Ψ j j' n F.q (u a) (uU a)).2.1 h0
+    (_root_.GlobalTheory.CompanionTheory.Ar.Cusp.Dict.Moeb.moebBall_props Ψ j j' n F.q (u a) (uU a)).2.1 h0
   obtain ⟨α, hα⟩ := GlobalTheory.T.lattice_stabilizer_equiv_automorphisms E Ψ j j' n g Λ F C
   refine ⟨{ h := C.h, e := C.e, e_inj := C.e_inj, e_smul := C.e_smul, Dn := C.Dn, integral := C.integral, orth := C.orth,
             M := M, κ := 2 * C.c, κ_pos := by have := C.c_pos; positivity, π := π, π_cont := ?_, π_range := ?_,
@@ -221,7 +221,7 @@ theorem groupDict_nonempty : ∀ (E : Type) [Field E] [NumberField E] [IsCMField
       congr 1
       funext τ
       have hv : C.vec ((α γ).1 x) τ = C.tm (archEmbed C.h (Pi.basisFun E (Fin (j + j'))) γ) τ *ᵥ C.vec x τ := by
-        rw [GlobalTheory.T.archimedean_action_on_lattice_vectors E Ψ j j' n g Λ F C]
+        rw [_root_.GlobalTheory.CompanionTheory.Ar.Cusp.Dict.tm_archEmbed_mulVec_vec E Ψ j j' n g Λ F C]
         funext i
         show embOf (F.σ τ) (C.e ((α γ).1 x) i) = _
         rw [hα]
@@ -233,7 +233,7 @@ theorem groupDict_nonempty : ∀ (E : Type) [Field E] [NumberField E] [IsCMField
     simp only [LinearEquiv.trans_apply]
     rw [e2, LinearEquiv.symm_apply_apply]
   · intro a₀
-    obtain ⟨hm1, hm2, G₂, hG₂, hpot₂⟩ := GlobalTheory.T.ball_mobius_holomorphic_potential_change Ψ j j' n F.q (u a₀) (uU a₀)
+    obtain ⟨hm1, hm2, G₂, hG₂, hpot₂⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.Dict.Moeb.moebBall_props Ψ j j' n F.q (u a₀) (uU a₀)
     have hZm : Set.MapsTo Z (ballDom F.q) (ballDom F.q) := hbij.mapsTo
     have hYm : Set.MapsTo Y (ballDom F.q) (ballDom F.q) := fun t ht => (hYZ t ht).1
     have hAm : Set.MapsTo (fun t => Y (moebBall F.q (u a₀) (Z t))) (ballDom F.q) (ballDom F.q) := fun t ht =>
@@ -245,7 +245,7 @@ theorem groupDict_nonempty : ∀ (E : Type) [Field E] [NumberField E] [IsCMField
       (hG₁.add (hG₂.comp hZ hZm)).sub (hG₁.comp hAd hAm), ?_, ?_⟩
     · intro a
       show π (a₀ * a) = Y (moebBall F.q (u a₀) (Z (π a)))
-      rw [hπY (a₀ * a), hZπ a, ← GlobalTheory.T.ball_mobius_mul Ψ j j' n F.q (u a₀) (u a) (uU a₀) (uU a) 0 h0]
+      rw [hπY (a₀ * a), hZπ a, ← _root_.GlobalTheory.CompanionTheory.Ar.Cusp.Dict.MoebAct.moebBall_mul Ψ j j' n F.q (u a₀) (u a) (uU a₀) (uU a) 0 h0]
       congr 2
       funext τ
       exact uMul a₀ a τ

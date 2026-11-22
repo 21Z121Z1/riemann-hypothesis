@@ -8,7 +8,7 @@ import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsProved
 import GroundTheory.HeightsAndTheta.Heights.CountingLowerBound.Assembly
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspVolumeLeft
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspVolumeRightStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspVolumeMiddleStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspVolumeMiddle
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.ThreeLeLevel
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField Matrix Filter Topology
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi
@@ -54,7 +54,7 @@ theorem top_mean_cusp_weight : Top.Given → ∃ Cu : ℝ, ∀ (E : Type) [Field
   intro E _ _ _ _ H D Xo l c Y II K _ J _ Ω _ _ W _ _ Dc Hd S₀ Or B₁ U _ _ hU
   obtain ⟨Q⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.pieces_nonempty hG E H D Xo l c Y II K J Ω W Dc Hd S₀ Or
   obtain ⟨κ, hκ, htr⟩ := GlobalTheory.T.ptsIntegral_eq_sum_ballDens_integrals E H D Xo l c Y II K J Ω W Dc Hd S₀ Or Q
-  have hw := GlobalTheory.T.cusp_volume_middle E H D Xo l c Y II K J Ω W Dc Hd S₀ Or Q U hU
+  have hw := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.WeightSheet.cuspWeight_torus_and_sheets E H D Xo l c Y II K J Ω W Dc Hd S₀ Or Q U hU
   obtain ⟨hrd, ⟨τ₀⟩, -⟩ := GlobalTheory.CompanionTheory.Ar.Top.HostNumbers.host_numbers E H
   intro hj' hN B hB
   have hjN : Dc.j + Dc.j' = Dc.N := by

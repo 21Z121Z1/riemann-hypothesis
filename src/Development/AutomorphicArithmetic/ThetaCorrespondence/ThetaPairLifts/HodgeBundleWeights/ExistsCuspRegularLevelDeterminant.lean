@@ -65,8 +65,8 @@ theorem separate_orbits_by_cusp (hP2 : _root_.GlobalTheory.CovTop.PublishedHodge
     exact Nat.choose_pos (by omega)
   obtain ⟨TF⟩ := _root_.GlobalTheory.T.torFlag_nonempty_of_one_le_dimFlag hP _ _ _ _ Y.d.Xo₂ Y.d.c₂ hfl
   have hF := hY.geo
-  have hV := GlobalTheory.T.flagSpace_component_smooth_projective_connected _ _ _ _ _ _ TF Z hF
-  obtain ⟨hint, hsm, hpr, hgc, hsurj, hnorm, hgen⟩ := GlobalTheory.T.compactificationComponent_integral_smooth_projective _ _ _ _ _ _ TF Z hF
+  have hV := _root_.GlobalTheory.VarFlag.isVariety₀_flag _ _ _ _ _ _ TF Z hF
+  obtain ⟨hint, hsm, hpr, hgc, hsurj, hnorm, hgen⟩ := _root_.GlobalTheory.BaseVar.isVariety_barComp _ _ _ _ _ _ TF Z hF
   obtain ⟨y, hy⟩ := _root_.GlobalTheory.GenCxPt.exists_frPt_ptF_eq_genPt _ _ _ _ Y.d.Xo₂ Y.d.c₂ Z
   have hyZ : LiesOn Z y := fun s => hy s ▸ (Z.2.1.isGenericPoint_genericPoint (isClosed_of_mem_irreducibleComponents _ Z.2)).mem
   refine ⟨y, hyZ, fun a ha => ?_⟩
@@ -76,7 +76,7 @@ theorem separate_orbits_by_cusp (hP2 : _root_.GlobalTheory.CovTop.PublishedHodge
       exact ⟨⟨_, (j_mem_barComp Z _).2 (hw s)⟩, rfl⟩), IsOpenImmersion.lift_fac _ _ _⟩
   obtain ⟨v₁, hv₁⟩ := lift y hyZ
   choose v hv using fun h : {h : S // LiesOn Z (move Y.d.Xo₂ Y.d.c₂ (h : LevelAut (T.Q.Dw j) Y.d.l₂)⁻¹ y)} => lift _ h.2
-  obtain ⟨Γ, ρ, hΓ, hρ, hmem⟩ := GlobalTheory.T.componentStabilizer_acts_by_levelChange _ _ _ _ _ _ TF.Y Z hpq hA S
+  obtain ⟨Γ, ρ, hΓ, hρ, hmem⟩ := _root_.GlobalTheory.CompLevelStab.stab_acts _ _ _ _ _ _ TF.Y Z hpq hA S
   obtain ⟨X', W, φ, ℓ, ρ', q, sW, hint', n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11⟩ :=
     _root_.GlobalTheory.EqModel.exists_equivariant_model Y.d.c₂.F _ _ (s₀ TF.Y Z) (j₀ TF.Y Z) Γ ρ hpr ⟨v₁ (IsLocalRing.closedPoint ℂ)⟩ hnorm hρ.1
   obtain ⟨δ, hδ, eδ, hlin⟩ := _root_.GlobalTheory.T.hodgeLineBundle_rational_linear_equiv_class hP2 _ _ _ _ _ _ TF Z hpq hA hF

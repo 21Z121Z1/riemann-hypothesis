@@ -5,7 +5,11 @@ import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Ad
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsBiThetaIffJoin
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilOperatorCommutesSuperpositionSlicesSourceStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilConjugationAdjointRuleStandardCharStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilConjugationAdjointRuleStandardChar
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsQuasiFam
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ThetaAbsoluteSum
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.TransvectionAction
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.WeilDatumExistence
 
 noncomputable section
 
@@ -41,8 +45,8 @@ theorem resS_symm_swap {W A B : HSp D} (d : OrthDec W A B) (T : HSp D) (u : WO A
 theorem isBiTheta_act_right : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (A S A' : HSp D) (χS' χA' : (AE D)ˣ →* Circle) (omb : Om S A'), IsWeilDatumO ψ S A' χS' χA' omb → ∀ C, IsBiTheta ψ A S A' C → ∀ q, IsBiTheta ψ A S A' fun u v => omb q (C u) v := by
   intro D ψ A S A' χS' χA' omb hω C hC q
   obtain ⟨g, h⟩ := q
-  have hw1 := ((GlobalTheory.T.weilConjugationAdjointRule_standard_char D ψ hω.std S A').conj_adjoint χS' χA' omb hω).1
-  have hw2 := ((GlobalTheory.T.weilConjugationAdjointRule_standard_char D ψ hω.std A' S).conj_source χA' χS' (conjAdjoint omb) hw1).1
+  have hw1 := ((_root_.GlobalTheory.WeilConjAdjoint.conjAdjoint_holds D ψ hω.std S A').conj_adjoint χS' χA' omb hω).1
+  have hw2 := ((_root_.GlobalTheory.WeilConjAdjoint.conjAdjoint_holds D ψ hω.std A' S).conj_source χA' χS' (conjAdjoint omb) hw1).1
   let d := sumDec A (negSp A')
   have hG := (GlobalTheory.T.weil_operator_commutes_superposition_slices_source D ψ _ (negSp A') A S d.symm _ _ (conjSource (conjAdjoint omb)) hw2 _ (isThetaFunO_join d hC)
     Unit 0 (fun _ => 0) (fun _ => 0) measurable_const (integrable_zero _ _ _) (negGA A' h, g)).1

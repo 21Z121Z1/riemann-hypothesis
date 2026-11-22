@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Transv
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.WeilDatumExistence
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnfoldingOnlyBaseGramRationalPointsContribute
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DependentFramesFirstRelationMeanZero
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DependentFrameFirstColumnRelationStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DependentFrameFirstColumnRelation
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaTermSeriesSummableModerateGrowthUniform
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MixedThetaSeriesTermsLawsUnipotentRational
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsotropicUnipotentRadicalsRationalCocompact
@@ -69,7 +69,7 @@ theorem mean_theta_orbit : ∀ (D : D7), Descent D → ∀ (ψ : AddChar (AF D.h
         (vN.ν.restrict vN.𝓝) :=
     fun S => Integrable.of_bound (hmeas S) _ (Filter.Eventually.of_forall (hpart S))
 
-  have h61 := fun x : Matrix (Fin W.rank) (Fin ρ) D.host.E => GlobalTheory.T.dependent_frame_first_column_relation D.host.E W.rank ρ x
+  have h61 := fun x : Matrix (Fin W.rank) (Fin ρ) D.host.E => _root_.GlobalTheory.DepFrame.dependent_frame_first_relation D.host.E W.rank ρ x
   let Sb : Set (Matrix (Fin W.rank) (Fin ρ) D.host.E) := {x | gramQ W x ≠ gramQ W x₀}
   let Sj : Fin ρ → Set (Matrix (Fin W.rank) (Fin ρ) D.host.E) := fun j => {x | gramQ W x = gramQ W x₀ ∧
     ((∀ a : Fin ρ → D.host.E, (∀ i, j ≤ i → a i = 0) → x *ᵥ a = 0 → a = 0) ∧

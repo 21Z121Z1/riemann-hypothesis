@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsSumFrame
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemHomLatticeCompletionIffSupportedMapsStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemHomLatticeCompletionIffSupportedMaps
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicPointComponentsAtPlacesLatticesVacua
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.FinPl GlobalTheory.MixPer
 open IsDedekindDomain NumberField Matrix
@@ -75,8 +75,8 @@ theorem vac_of_moves : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (S T : HSp 
   have hmem : ∀ u ∈ latO S T (MS : Set _) (MT : Set _) P,
       pull g h u ∈ latO S T (LS : Set _) (LT : Set _) P := by
     intro u hu
-    have hu' := (GlobalTheory.T.mem_homLatticeCompletion_iff_supported_maps D S T MS MT hMS hMT P u).1 hu
-    refine (GlobalTheory.T.mem_homLatticeCompletion_iff_supported_maps D S T LS LT hLS hLT P _).2 ⟨?_, ?_⟩
+    have hu' := (_root_.GlobalTheory.FinPl.LatMem.mem_latO_iff D S T MS MT hMS hMT P u).1 hu
+    refine (_root_.GlobalTheory.FinPl.LatMem.mem_latO_iff D S T LS LT hLS hLT P _).2 ⟨?_, ?_⟩
     · exact mem_ideal_mul_mul (idAt D P) _ _ _ hu'.1
     · intro y hy
       have hent := ((((_root_.GlobalTheory.FinPl.localComponents D P).2 S).2.2.2 LS y hLS.1).1 hy).1

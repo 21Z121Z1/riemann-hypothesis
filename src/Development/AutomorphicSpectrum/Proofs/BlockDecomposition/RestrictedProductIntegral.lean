@@ -5,8 +5,9 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LevelFamInf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousPairProjection
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexNeZeroOfIsOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ImportsBisExtra
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteRestrictedProductQuotientStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RestrictedProductHeckeSumStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteRestrictedProductQuotient
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RestrictedProductHeckeSum
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteSumFiberDecomposition
 open NumberField IsDedekindDomain Matrix MeasureTheory Filter
 open GlobalTheory.CuspRep GlobalTheory.PRep GlobalTheory.UnitaryBC GlobalTheory.BCT GlobalTheory.LFun PositivityTheory.Rg.BcB.E PositivityTheory.Rg.BcB.SpectralAccumulation PositivityTheory.Rg.BcB.G8 PositivityTheory.Rg.BcB.CG
 open PositivityTheory.Rg.BcB.F PositivityTheory.Rg.BcB.F.RS PositivityTheory.Rg.BcB.F.Tail PositivityTheory.Rg.BcB.F.FA
@@ -80,7 +81,7 @@ theorem hint_prod_eq_foldr : ∀ {ι Γ : Type} [Group Γ] {Hl : ι → Type} [�
   have hVe1 : ∀ᶠ i in cofinite, V i = KH i := hVe.mono fun i h => h.1
   have hidx : L.relIndex K ≠ 0 := by
     refine relIndex_ne_of_out L K hLK ?_
-    have h0 := GlobalTheory.T.finite_restricted_product_quotient p V (fun i => (KH i : Set (Hl i)))
+    have h0 := _root_.GlobalTheory.CompanionTheory.FinActS.finite_cosets_of_components_mem p V (fun i => (KH i : Set (Hl i)))
       (fun i x hx u hu => mul_mem hx (hVK i hu)) hfinKH
       (hVe1.mono fun i h x hx => by
         rw [SetLike.mem_coe, h]
@@ -118,7 +119,7 @@ theorem hint_prod_eq_foldr : ∀ {ι Γ : Type} [Group Γ] {Hl : ι → Type} [�
   have hfold : T.foldr (fun i g' x => hint (KH i) fun m => f i m * g' (x * e i m)) g =
       l.foldr (fun i g' x => hint (KH i) fun m => f i m * g' (x * e i m)) g := by
     rw [← hT, List.foldr_append, hfoldE extra hextra]
-  have hsum := GlobalTheory.T.restricted_product_hecke_sum p e KH V f hpe hpe' hsep hev hVK hVi hVe1 hfV hfs T hnd g hg 1
+  have hsum := _root_.GlobalTheory.CompanionTheory.FinActSum.sum_formula p e KH V f hpe hpe' hsep hev hVK hVi hVe1 hfV hfs T hnd g hg 1
   rw [hLdef] at hsum
   simp only [one_mul] at hsum
   have hF : ∀ x, (∏ᶠ j, if j ∈ T then f j (p j x)
@@ -153,7 +154,7 @@ theorem hint_prod_eq_foldr : ∀ {ι Γ : Type} [Group Γ] {Hl : ι → Type} [�
     refine (hfinKH i).subset fun q hq => ?_
     by_contra hn
     exact hq (Set.indicator_of_notMem (s := (KH i : Set (Hl i))) (show q.out ∉ (KH i : Set (Hl i)) from hn) _)
-  have hsum2 := GlobalTheory.T.restricted_product_hecke_sum p e KH V (fun i => (KH i : Set (Hl i)).indicator (1 : Hl i → ℂ))
+  have hsum2 := _root_.GlobalTheory.CompanionTheory.FinActSum.sum_formula p e KH V (fun i => (KH i : Set (Hl i)).indicator (1 : Hl i → ℂ))
     hpe hpe' hsep hev hVK hVi hVe1 hfVI hfsI T hnd (fun _ => 1) (fun _ _ _ => rfl) 1
   rw [hLdef] at hsum2
   have hfold2 : ∀ m : List ι, m.foldr (fun i g' x => hint (KH i) fun m =>

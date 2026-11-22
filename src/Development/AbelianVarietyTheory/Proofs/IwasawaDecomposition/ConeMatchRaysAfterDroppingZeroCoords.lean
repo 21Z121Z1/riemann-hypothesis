@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOfIsOrbFormConst
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PullAddInjective
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConeMatchRaysOfLinearIndependentIntFormsStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConeMatchRaysOfLinearIndependentIntForms
 open NumberField ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.Toroidal GlobalTheory.LocM GlobalTheory.TorRef GlobalTheory.PolFan GlobalTheory.PolFan.OrbMark
 
 namespace GlobalTheory.PolFan
@@ -30,7 +30,7 @@ theorem cone_match_rays_of_nonneg {X : Type} [AddCommGroup X] {m₀ : ℕ}
       by_contra h0
       exact hi ⟨e.symm ⟨i, lt_of_le_of_ne (ht i) (Ne.symm h0)⟩, by simp⟩
     rw [ha i this, zero_smul]
-  obtain ⟨r1, r2⟩ := GlobalTheory.T.coneMatch_rays_of_linearIndependent_intForms (fun i' => p (e i')) δ (hp.comp e e.injective) hδ
+  obtain ⟨r1, r2⟩ := _root_.GlobalTheory.PolFan.cone_match_rays (fun i' => p (e i')) δ (hp.comp e e.injective) hδ
     (fun i' => t (e i')) c (fun i' => (e i').2) hc
     (by rw [key t (fun _ h => h), ← hβ, hβ'])
     (fun i' => h1 _ (e i').2)

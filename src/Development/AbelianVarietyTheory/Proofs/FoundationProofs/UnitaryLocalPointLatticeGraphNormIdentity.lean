@@ -2,9 +2,9 @@ import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.GraphHeightLattice
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GraphElementIwasawaSplitPlace
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GraphElementIwasawaInertPlaceStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GraphElementIwasawaInertPlace
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DoublingNormDetSplitPlaceLatticeIntersectionStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DoublingNormDetInertPlaceLatticeLengthStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DoublingNormDetInertPlaceLatticeLength
 
 noncomputable section
 open scoped TensorProduct NNReal Matrix
@@ -133,13 +133,13 @@ theorem graphNormFinite : GraphNormFinite := by
       rw [hgr, GlobalTheory.T.doublingNorm_det_splitPlace_lattice_intersection F E σ h n J hJ L v hSD τ β hβ g _ hlat d hd]
       exact Finset.prod_le_one (fun _ _ => by positivity) (fun i _ => min_self_inv_le_one _)
   · intro P hP g
-    obtain ⟨p, k, hk, hpk⟩ := GlobalTheory.T.graph_element_iwasawa_inert_place F E σ h n J hJ L v hSD P hP g
+    obtain ⟨p, k, hk, hpk⟩ := _root_.GlobalTheory.InertIwasawaGen.ioH_mem_siegel_mul_KFin F E σ h n J hJ L v hSD P hP g
     have hlat := unitaryLocalPoint_latticeGraphNorm_identity F E σ h n J hJ L v g p k hk hpk
     have hgr : graphHgt σ J L v g = absEv F E v (Matrix.GeneralLinearGroup.det
         (leviOf finSumFinEquiv (matHom (Fv F v) σ (dblGram finSumFinEquiv J)) p)) := by
       rw [graphHgt, hpk, hgtFin_mul p hk]
       rfl
-    obtain ⟨l, hl1, hl2⟩ := GlobalTheory.T.doublingNorm_det_inertPlace_lattice_length F E σ h n J hJ L v P hP g _ hlat
+    obtain ⟨l, hl1, hl2⟩ := _root_.GlobalTheory.InertLatLength.absEv_det_eq_of_inert F E σ h n J hJ L v P hP g _ hlat
     refine ⟨⟨l, hl1, hgr.trans hl2⟩, ?_⟩
     rw [hgr, hl2]
     apply natCast_zpow_neg_le_one

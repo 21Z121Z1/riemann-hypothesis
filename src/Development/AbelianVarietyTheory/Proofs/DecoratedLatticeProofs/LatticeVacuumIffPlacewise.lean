@@ -3,10 +3,10 @@ import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsSumFrame
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.EvalVIndP
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HomLatticePlaceCutSmulMemOpenSubgroup
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HomLatticeCompletionCutIntegralProperties
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergOperatorDisjointSupportSmulAddStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaLatticeVacuumOfCarriesLatticeCompletionsStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergOperatorDisjointSupportSmulAdd
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaLatticeVacuumOfCarriesLatticeCompletions
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemHomLatticeCompletionIffSupportedMaps
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CarriesLatticeCompletionOfTrivialAtPlaces
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemHomLatticeCompletionIffSupportedMapsStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicPointComponentsAtPlacesLatticesVacua
 
 noncomputable section
@@ -90,7 +90,7 @@ theorem latVac_of_places (ψ : AddChar (AF D.host.F) ℂ) (S T : HSp D) (LS : La
         rw [hset, ← indicatorAdele_union_of_disjoint hdisj, pairA_add, add_smul]
         have hprod : pairA D.host.F 0 (indP D {v}) * pairA D.host.F 0 (indP D (↑(s \ t) : Set (Pl D))ᶜ) = 0 := by
           rw [pairA_mul, indicatorAdele_singleton_mul_singleton, Set.disjoint_iff_inter_eq_empty.mp hdisj, indicatorAdele_empty, pairA_zero]
-        rw [(GlobalTheory.T.heisenbergOperator_disjointSupport_smul_add) D ψ S T _ _ _ _ f hprod, ih']
+        rw [(_root_.GlobalTheory.HeisDisj.heisO_smul_add_smul) D ψ S T _ _ _ _ f hprod, ih']
         have hw := ((_root_.GlobalTheory.FinPl.latO_algebra) D S T _ _ P u hu).1 _ (indicatorAdele_mem_integralAdeles {v})
         have hw' : pairA D.host.F 0 (indP D {v}) • u ∈
             latO S T (LS : Set _) (LT : Set _) (fun v' => P v' ∧ v' = v) := by
@@ -123,10 +123,10 @@ theorem vac_loc : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (S T : HSp D) (�
   · exact fun u hu => h.2.1 u (latO_mono S T _ _ (fun v' h' => h' ▸ hv) hu)
   · exact fun e he u hu => h.2.2 e he u (latO_mono S T _ _ (fun v' h' => h' ▸ hv) hu)
   · intro h g hg k hk
-    exact (GlobalTheory.T.thetaLatticeVacuum_of_carriesLatticeCompletions) D ψ S T χS χT om hW LS LT hLS hLT P f h g k LS LT hLS hLT
+    exact (_root_.GlobalTheory.VacMove.vac_of_moves) D ψ S T χS χT om hW LS LT hLS hLT P f h g k LS LT hLS hLT
       ((_root_.GlobalTheory.fixes_latV_of_mem_grpOff) D S LS P g hg) ((_root_.GlobalTheory.fixes_latV_of_mem_grpOff) D T LT P k hk)
   · intro h g k MS MT hMS hMT hg hk
-    exact (GlobalTheory.T.thetaLatticeVacuum_of_carriesLatticeCompletions) D ψ S T χS χT om hW LS LT hLS hLT P f h g k MS MT hMS hMT hg hk
+    exact (_root_.GlobalTheory.VacMove.vac_of_moves) D ψ S T χS χT om hW LS LT hLS hLT P f h g k MS MT hMS hMT hg hk
 
 end GlobalTheory.VacLoc
 

@@ -2,7 +2,7 @@ import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCMFrame
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TransitionMatrixPeriodFrame
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsTransition
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CmPackEigenPeriodStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CmPackEigenPeriod
 import Development.WeilBound.CoreStatements.SesquilinearFractions.GFrameBC
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CmPackPureFrame
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CurveZNeZero
@@ -127,12 +127,12 @@ theorem GlobalTheory.CompanionTheory.Ar.Fl.CMValue.value_on_cmFrame : ∀ (E : T
       ((Z true).z • tyPart ty τ (P (x (.inl a)))) (v' a).left := by
     intro a
     rw [hv' a]
-    exact GlobalTheory.T.cm_pack_eigen_period E H D l Xo c g ty FU i Z P hP X true τ ⟨x (.inl a), hx.1 a⟩ (v a) (hfr.1 a)
+    exact _root_.GlobalTheory.CompanionTheory.Ar.Fl.CoordPart.isDerivAt0_of_isCMVec E H D l Xo c g ty FU i Z P hP X true τ ⟨x (.inl a), hx.1 a⟩ (v a) (hfr.1 a)
   have hDW : ∀ j, IsDerivAt0 (fun z => (FU.ex i P z).left)
       ((Z false).z • tyPart ty (ComplexEmbedding.conjugate τ) (P (x (.inr j)))) (w' j).left := by
     intro j
     rw [hw' j]
-    exact GlobalTheory.T.cm_pack_eigen_period E H D l Xo c g ty FU i Z P hP X false (ComplexEmbedding.conjugate τ)
+    exact _root_.GlobalTheory.CompanionTheory.Ar.Fl.CoordPart.isDerivAt0_of_isCMVec E H D l Xo c g ty FU i Z P hP X false (ComplexEmbedding.conjugate τ)
       ⟨x (.inr j), hx.2 j⟩ (w j) (hfr.2 j)
   have hvan : ∀ a, tyPart ty (ComplexEmbedding.conjugate τ) (P (x (.inl a))) = 0 := by
     intro a

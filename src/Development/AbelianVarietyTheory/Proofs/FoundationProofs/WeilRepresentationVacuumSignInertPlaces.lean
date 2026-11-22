@@ -9,18 +9,18 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPeriodPair
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsTraceOneIntegerConjDiffPrimeTo
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaTripleConstantEqOneDistributive
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaTripleConstantEqNegOnePow
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KernelLatticesFormSelfDualTriplesStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaLatticeTriplesDistributiveStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KernelLatticesFormSelfDualTriples
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaLatticeTriplesDistributive
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaTripleDataOfNeighbourTriple
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaTripleDiagonalDataOfSelfDualNeighbourTripleStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaTripleDiagonalDataOfSelfDualNeighbourTriple
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsTransvectionVectorsNeighbour
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UnitaryTransvectionMovesLatticeAtPrime
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLocalComponentUnitaryMatrix
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TrivialAtPrimeAdelicGLSubgroupStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TrivialAtPrimeAdelicGLSubgroup
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CardParitySignLengthOfEq
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaFunctionsAllLevelsClosure
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.WeilRepresentationThetaMovedLattice
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.WeilRepresentationCommHeisenbergIntertwinerStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.WeilRepresentationCommHeisenbergIntertwiner
 
 open NumberField Classical Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.TaylorLogMetric Formalism.MainNotions.StandardLatticesGL3 GlobalTheory.NormSum GlobalTheory.InertSign
 open scoped BigOperators
@@ -66,15 +66,15 @@ theorem eqAt_of_moves {D : D7} {n p : ℕ} (hp : p.Prime) {g : GA D n} {L : Lat 
   rw [moves_unique h (h1 g).1]; exact h5 p g hp ht
 
 theorem suppInert_one (D : D7) (n : ℕ) : SuppInert D ((1 : GA D n) : GL (Fin n) (AE D)) :=
-  fun q hq _ => (GlobalTheory.T.trivialAtPrime_adelicGL_subgroup D n q hq).1
+  fun q hq _ => (_root_.GlobalTheory.TrivSubgroup.trivAt_subgroup D n q hq).1
 
 theorem suppInert_mul {D : D7} {n : ℕ} {g h : GA D n} (hg : SuppInert D (g : GL (Fin n) (AE D)))
     (hh : SuppInert D (h : GL (Fin n) (AE D))) : SuppInert D ((g * h : GA D n) : GL (Fin n) (AE D)) :=
-  fun q hq hi => (GlobalTheory.T.trivialAtPrime_adelicGL_subgroup D n q hq).2.1 _ _ (hg q hq hi) (hh q hq hi)
+  fun q hq hi => (_root_.GlobalTheory.TrivSubgroup.trivAt_subgroup D n q hq).2.1 _ _ (hg q hq hi) (hh q hq hi)
 
 theorem suppInert_inv {D : D7} {n : ℕ} {g : GA D n} (hg : SuppInert D (g : GL (Fin n) (AE D))) :
     SuppInert D ((g⁻¹ : GA D n) : GL (Fin n) (AE D)) :=
-  fun q hq hi => (GlobalTheory.T.trivialAtPrime_adelicGL_subgroup D n q hq).2.2 _ (hg q hq hi)
+  fun q hq hi => (_root_.GlobalTheory.TrivSubgroup.trivAt_subgroup D n q hq).2.2 _ (hg q hq hi)
 
 theorem stable_of_inert {D : D7} {q : ℕ} (hq : q.Prime) (hi : InertQ D q) {P : Ideal (𝓞 D.host.E)} (hP : P.IsMaximal)
     (hqP : (q : 𝓞 D.host.E) ∈ P) : ∀ a ∈ P, sgO D a ∈ P := by
@@ -256,9 +256,9 @@ theorem GlobalTheory.InertSign.vacuum_inert : ∀ D : D7, odd3 D := by
   have hδ := delta_ne_zero hc
   have hK : ∀ {L : Lat D N} {L' : Lat D N'}, SD D L → SD D L' → KLat D (tor0 D cc δ) (La D (tor0 D cc δ) L L') :=
     fun h h' => Or.inr ⟨_, _, h, h', rfl⟩
-  obtain ⟨-, -, hII, htp⟩ := GlobalTheory.T.kernelLattices_form_selfDual_triples D cc δ hc N N'
+  obtain ⟨-, -, hII, htp⟩ := _root_.GlobalTheory.ThetaTriple.klat_triples D cc δ hc N N'
   obtain ⟨hTT, -⟩ := _root_.GlobalTheory.ThetaLevels.levels_closed D cc δ hc N N'
-  obtain ⟨d1, d2, d3⟩ := GlobalTheory.T.thetaLattice_triples_distributive D cc δ N N'
+  obtain ⟨d1, d2, d3⟩ := _root_.GlobalTheory.DistLa.dist_La D cc δ N N'
   have huni := GlobalTheory.theta_translation_intertwiner_unitary D cc δ hc N N'
   have hline := GlobalTheory.ThetaLine.theta_line D (GlobalTheory.InducedType.induced_type D).1 cc δ hc N N'
   have s0 : SD D (stdL D N) := sd_of_moves (moves_one D N)
@@ -297,11 +297,11 @@ theorem GlobalTheory.InertSign.vacuum_inert : ∀ D : D7, odd3 D := by
     (fun a L hL F hF c => W.smul a 1 c F (hTT _ _ hL s0' F hF))
     (fun k a b => W.inert k 1 a i1' b (suppInert_one D N'))
     (fun h L a => _root_.GlobalTheory.WeilTheta.om_mem_Th_moved D cc δ hc N N' e0 W h 1 1 1 _ _ _ _ (moves_one D N) (moves_one D N') (by rwa [mul_one]) m1' e0 he0)
-    (fun a h k _ _ _ _ b c d e F hF => GlobalTheory.T.weilRepresentation_comm_heisenbergIntertwiner D cc δ hc hδ N N' e0 W a h k 1 1 1 _ _ _ _ _ _ _ _ b (moves_one D N') c m1' d
+    (fun a h k _ _ _ _ b c d e F hF => _root_.GlobalTheory.WeilInter.om_iop D cc δ hc hδ N N' e0 W a h k 1 1 1 _ _ _ _ _ _ _ _ b (moves_one D N') c m1' d
       (moves_one D N') e m1' F hF)
     (fun _ _ _ a b c d => hdist _ _ _ (hK a s0') (hK b s0') (hK c s0') (d2 _ _ _ _ a c d))
     (fun P A B C a b c d => htr _ _ _ (hK d.1 s0') (hK d.2.1 s0') (hK d.2.2.1 s0') P N' a b c
-      (GlobalTheory.T.thetaTripleDiagonalData_of_selfDualNeighbourTriple D cc δ hc.1.1 hδ N N' P a b A B C d)) g L₁ sg mg
+      (_root_.GlobalTheory.TriangleRows.triDat_rows D cc δ hc.1.1 hδ N N' P a b A B C d)) g L₁ sg mg
   have c2 := core (T := tor0 D cc δ) (fun L => La D (tor0 D cc δ) (stdL D N) L) (fun h => W.Om 1 h) e0 ((-1) ^ N) (hsq _) W.nz he0
     (fun _ _ a b e he => ⟨(huni _ _ (hK s0 a) (hK s0 b) e he).2.1, (huni _ _ (hK s0 a) (hK s0 b) e he).2.2.2⟩)
     (fun _ a => hII _ (hK s0 a)) (fun _ a => (hline _ (hK s0 a)).1)
@@ -309,7 +309,7 @@ theorem GlobalTheory.InertSign.vacuum_inert : ∀ D : D7, odd3 D := by
     (fun a L hL F hF c => W.smul 1 a c F (hTT _ _ s0 hL F hF))
     (fun k a b => W.inert 1 k i1 a (suppInert_one D N) b)
     (fun h L a => _root_.GlobalTheory.WeilTheta.om_mem_Th_moved D cc δ hc N N' e0 W 1 1 h 1 _ _ _ _ (moves_one D N) (moves_one D N') m1 (by rwa [mul_one]) e0 he0)
-    (fun a h k _ _ _ _ b c d e F hF => GlobalTheory.T.weilRepresentation_comm_heisenbergIntertwiner D cc δ hc hδ N N' e0 W 1 1 1 a h k _ _ _ _ _ _ _ _ (moves_one D N) b m1 c
+    (fun a h k _ _ _ _ b c d e F hF => _root_.GlobalTheory.WeilInter.om_iop D cc δ hc hδ N N' e0 W 1 1 1 a h k _ _ _ _ _ _ _ _ (moves_one D N) b m1 c
       (moves_one D N) d m1 e F hF)
     (fun _ _ _ a b c d => hdist _ _ _ (hK s0 a) (hK s0 b) (hK s0 c) (d1 _ _ _ _ a c d))
     (fun P A B C a b c d => htr _ _ _ (hK s0 d.1) (hK s0 d.2.1) (hK s0 d.2.2.1) P N a b c
@@ -318,7 +318,7 @@ theorem GlobalTheory.InertSign.vacuum_inert : ∀ D : D7, odd3 D := by
   have sL' := sd_of_moves mg'
   have h1 : W.Om g g' e0 = W.Om 1 g' (W.Om g 1 e0) := by rw [← W.mul 1 g g' 1 e0 he0T, one_mul, mul_one]
   have hI1 := (huni _ _ (hK s0 s0') (hK sL s0') e0 he0).2.1
-  have h2 := GlobalTheory.T.weilRepresentation_comm_heisenbergIntertwiner D cc δ hc hδ N N' e0 W 1 1 g g' 1 1 _ _ _ _ _ _ _ _ (moves_one D N) (moves_one D N') m1
+  have h2 := _root_.GlobalTheory.WeilInter.om_iop D cc δ hc hδ N N' e0 W 1 1 g g' 1 1 _ _ _ _ _ _ _ _ (moves_one D N) (moves_one D N') m1
     (by rw [mul_one]; exact mg') mg (moves_one D N') (by rw [one_mul]; exact mg) (by rw [mul_one]; exact mg') e0 he0
   rw [h1, c1, W.smul 1 g' _ _ (hTT _ _ sL s0' _ hI1), h2, c2, Iop_smul,
     hdist _ _ _ (hK s0 s0') (hK s0 sL') (hK sL sL') (d3 _ _ _ _ s0' sL') e0 he0 W.nz]

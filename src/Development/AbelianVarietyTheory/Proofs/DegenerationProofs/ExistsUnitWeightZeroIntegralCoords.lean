@@ -4,7 +4,8 @@ import Development.AbelianVarietyTheory.Definitions.Degenerations.IsAffineSplitT
 import Development.AbelianVarietyTheory.Definitions.Degenerations.CompanionTheory
 import Development.AbelianVarietyTheory.Statements.SemistableTorsion.UTorsSt
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUnitCharts
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ImmByWeightZeroStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ImmByWeightZero
+import Development.AbelianVarietyTheory.Definitions.Degenerations.PullChartIsLB
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.KbIsAlgClosedAndConj
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry
 open scoped CategoryTheory.Obj
@@ -32,7 +33,7 @@ theorem exists_unit_and_residue_point : Out.Laws → Out.Laws2 → ∀ (p : ℕ)
     have := CrdCalc.crd_smul u hv
     rwa [← funext hu] at this
   refine ⟨?_, x, hx, h₃⟩
-  have hcov := (GlobalTheory.T.immBy_weight_zero' L₁ L₂ (kb p) m.Φ g N N' _ J _ m.F m.pol hB m.good m.dim).1
+  have hcov := (_root_.GlobalTheory.ZH.ClosedImm.immBy_weight_zero L₁ L₂ (kb p) m.Φ g N N' _ J _ m.F m.pol hB m.good m.dim).1
   have hmem : (x.left : Sp (kb p) ⟶ m.Φ.G.left) (IsLocalRing.closedPoint (kb p)) ∈
       ⨆ i ∈ {i | m.xe.symm (cls i) = 0}, Out.nonzeroLocus (m.F i) := by
     rw [hcov]; trivial

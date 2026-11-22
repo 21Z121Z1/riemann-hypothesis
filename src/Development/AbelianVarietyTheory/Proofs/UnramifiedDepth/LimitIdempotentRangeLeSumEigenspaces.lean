@@ -6,7 +6,7 @@ import Formalism.LocalToGlobal.CharacterGerms.NegMem
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartF
 import Development.AbelianVarietyTheory.Definitions.TeichmullerDepth.HasTeich
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsEmbeddingCongrIntegralCharacter
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.RingHomEqOfCongruentIntegralUnramifiedStatement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.RingHomEqOfCongruentIntegralUnramified
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.EigenvectorOfGeneralizedEigenUnramifiedStatement
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsIntegralCharacterGeneralizedEigen
 
@@ -247,7 +247,7 @@ theorem limit_idempotent_range : ∀ (C : Type) [Field C] [IsAlgClosed C] (V : V
     obtain ⟨a, ha⟩ := _root_.GlobalTheory.ResidueChar.main C V O d em h0 h1 ψ hψ fun x hx => by
       obtain ⟨y, hy⟩ := hP x hx
       exact hl x y hy
-    have hψa := GlobalTheory.T.ringHom_eq_of_congruent_integral_unramified C V O d hd ε hε hF ψ (em a) hψ (h0 a) hone ha
+    have hψa := _root_.GlobalTheory.CongruentCharacters.eq_of_congruent C V O d hd ε hε hF ψ (em a) hψ (h0 a) hone ha
     refine ⟨Pi.single a w, fun b x => ?_, by simp⟩
     by_cases hb : b = a
     · subst hb; rw [Pi.single_eq_same, heig, hψa]

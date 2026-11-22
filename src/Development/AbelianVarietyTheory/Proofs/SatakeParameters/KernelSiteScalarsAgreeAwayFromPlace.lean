@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DetLatticeTuples
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.KernelLatticeDetIdealCharacterEqConstMulDet
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AdelicPointsAgreeAwayOfLatticeTuplesAgreeAwayStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CharOnNormOneIdelesMulUnramifiedClassValue
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ReaderLevelBadPrimesCoprimeResidueCharStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LevelBadPrimesCoprimeResidueChar
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LatticeTuplePointDetNormOneOrderEqNegLength
 open Formalism.BasicNotions NumberField IsDedekindDomain Formalism.MainNotions Formalism.MainNotions.G Formalism.MainNotions.FormalGroupSystem Formalism.MainNotions.G.KAat Formalism.MainNotions.G.CmpJ Formalism.L2.G Formalism.L2.G.Cmp Formalism.L2.Forms Formalism.L2.DIV Formalism.UG Formalism.L2.Ker Formalism.L2.G.Pend Formalism.L2.PairingIndexBounds.F Formalism.L2.KerInert GlobalTheory.TwV GlobalTheory.TwV.Xc TensorProduct
 attribute [local instance] Formalism.BasicNotions.Host.cmStar
@@ -78,7 +78,7 @@ theorem scal_away : Sites (fun {D L hT Gi Gl Kc Dx cX ex u μ w hg Lv I H X} [Fa
   obtain ⟨-, hsl⟩ := GlobalTheory.T.adelicPoints_agreeAway_of_latticeTuples_agreeAway S hD hSpl v j hjle La Lb hab
   obtain ⟨-, hsl'⟩ := GlobalTheory.T.adelicPoints_agreeAway_of_latticeTuples_agreeAway S hD hSpl v (j + 1) hj1 La' Lb' hab'
   obtain ⟨hχm, hχ1, -, hχN⟩ := _root_.GlobalTheory.TwV.Xc.chiI_hom S hD hSpl
-  have hbad := (GlobalTheory.T.level_badPrimes_coprime_residueChar S hD hSpl).2.2.2
+  have hbad := (_root_.GlobalTheory.TwV.Xc.SBad.bad_prime_to_p S hD hSpl).2.2.2
   have hdtb := (_root_.GlobalTheory.TwV.Xc.latticeTuplePoint_det_normOne_order_eq_neg_length S hD hSpl j hjle Lb hab.2.1).1
   have hdtb' := (_root_.GlobalTheory.TwV.Xc.latticeTuplePoint_det_normOne_order_eq_neg_length S hD hSpl (j + 1) hj1 Lb' hab'.2.1).1
   have law := S.law

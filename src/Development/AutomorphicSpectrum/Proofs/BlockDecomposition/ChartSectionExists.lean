@@ -27,7 +27,7 @@ import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HalfData
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsStandardUnitaryChartDoubledSpace
 import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelWeilUnitaryConvergent
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StandardUnitaryChartMemRationalIff
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemDoublingSiegelParabolicIffChartMemSiegelUnnStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemDoublingSiegelParabolicIffChartMemSiegelUnn
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StandardUnitaryChartSiegelLeviDetEq
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsSiegelParabolicConjDoubledCompact
 
@@ -73,7 +73,7 @@ theorem tChart : TChart := by
   obtain ⟨hc, hc'⟩ := _root_.GlobalTheory.StdUnn.chart_continuous D V m0 hm0 κ hκ
   obtain ⟨Ψ, h1, h2, h3, h4⟩ := hStd hDict hDI D χ V.rank
   have hG := _root_.GlobalTheory.StdUnn.chart_mem_GF_iff D V m0 hm0 κ hκ
-  have hP := GlobalTheory.T.mem_doublingSiegelParabolic_iff_chart_mem_siegelUnn D V m0 hm0 κ hκ
+  have hP := _root_.GlobalTheory.StdUnn.mem_siegel_iff_chart_mem_P D V m0 hm0 κ hκ
   let κt : GA D (dblSp V) ≃ₜ* G D V.rank :=
     { κ with continuous_toFun := hc, continuous_invFun := hc' }
   have hκt : ∀ g, κt g = κ g := fun _ => rfl

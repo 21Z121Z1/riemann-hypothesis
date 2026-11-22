@@ -1,11 +1,14 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsInjectiveOfSubsingleton
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductIrreducibleAppendEquivStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductIrreducibleAppendEquiv
+import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.PrincipalSeriesSupport.PrinSeriesWord
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasSupportOfIsSubquotientProdIrr
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ParabolicInductionPreservesSubquotient
 open GlobalTheory.PRep GlobalTheory.SplitWeil GlobalTheory.SmGL GlobalTheory.LocGL GlobalTheory.JHMult GlobalTheory.SmGL.Exponents
 
 namespace GlobalTheory.CompanionTheory.SubEmb
 
 theorem subEmbedding : Ysupp.SubEmbedding :=
-  subEmbedding_of_stage GlobalTheory.T.product_irreducible_append_equiv
+  subEmbedding_of_stage _root_.GlobalTheory.CompanionTheory.ProdStage.prod₂_prodIrr_append
 
 end GlobalTheory.CompanionTheory.SubEmb

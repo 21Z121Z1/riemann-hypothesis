@@ -57,7 +57,7 @@ theorem boundary_real_group_action : ∀ {D : D7} {T : Type} [Finite T] {L : Lev
       (GlobalTheory.Mem.HeckeExp.hasInfExp_mul (hxi t τ) (GlobalTheory.Mem.HeckeExp.hasInfExp_inv (hxi μ₀ τ)))
     simpa using this
   choose k hk using fun τ => _root_.GlobalTheory.SplitParity.exists_int_add_half D _ WW.rank τ (b τ) (hW μ₀).hecT (hW μ₀).resT (hb τ)
-  refine ⟨k, GlobalTheory.RealColAct.realCol W.θ hθ A' hV, ?_, GlobalTheory.T.realUnitaryFockColumnAction_surjective hθ A' hV, ?_⟩
+  refine ⟨k, GlobalTheory.RealColAct.realCol W.θ hθ A' hV, ?_, _root_.GlobalTheory.RealColAct.realCol_surjective hθ A' hV, ?_⟩
   · intro τ a c
     simp only [GlobalTheory.RealColAct.realCol_apply, Matrix.transpose_apply]
     exact (((continuous_apply a).comp ((continuous_apply c).comp ((GlobalTheory.RealWeil.continuous_compAt hθ τ _ _).comp

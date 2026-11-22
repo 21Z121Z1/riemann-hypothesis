@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.JetHarmonics.QminorPolyMap
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CapelliOfGelfand
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.QdetAddOneSubEqSumQminor
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TracedQminorComatrixTruncatedInverse
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.QdetPolyMapMonicStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.QdetPolyMapMonic
 open scoped InnerProductSpace
 
 namespace GlobalTheory.CompanionTheory.CapelliEigen
@@ -18,7 +18,7 @@ theorem etr_apply_of_eigen : ∀ (V : Type) [AddCommGroup V] [Module ℂ V] (m :
   intro V _ _ m E hE P v hP N t ht
   rw [← sub_eq_zero]
   refine (Module.forall_dual_apply_eq_zero_iff ℂ _).mp fun φ => ?_
-  obtain ⟨c, hc1, hc⟩ := GlobalTheory.T.exists_monic_poly_eq_qdet (Module.End ℂ V) (m + 1) E
+  obtain ⟨c, hc1, hc⟩ := _root_.GlobalTheory.qdet_polyMap_monic (Module.End ℂ V) (m + 1) E
   have hmin : ∀ i j : Fin (m + 1), ∃ c' : ℕ → Module.End ℂ V, ∀ w : ℂ,
       qminor E (Fin.succAbove j) (Fin.succAbove i) w = ∑ d ∈ range (m + 1), w ^ d • c' d := by
     intro i j

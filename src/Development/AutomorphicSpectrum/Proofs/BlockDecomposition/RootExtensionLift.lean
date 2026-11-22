@@ -1,7 +1,7 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.ZariskiEtaleLifting.MapUSharp
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.AcrisKummerUnits.ValuationOfValuationModSquare
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PeriodRingBaseChangeFromUniversalStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PeriodRingBaseChangeFromUniversal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PeriodRingUniversalProperty
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EtaleLiftingOfNilIdeal
 set_option backward.isDefEq.respectTransparency false
@@ -157,7 +157,7 @@ theorem toAcr_sub_mem {l : ℕ} [Fact l.Prime] (A : PAlg l) (n : ℕ) (w : Ainf 
   · have hl0 : ((l : ℕ) : A.A) = 0 := by
       rw [← map_natCast A.s l, CharP.cast_eq_zero, map_zero]
     haveI : CharP A.A l := (CharP.charP_iff_prime_eq_zero (Fact.out : l.Prime)).mpr hl0
-    obtain ⟨π, hπ, -, -, -⟩ := (GlobalTheory.T.period_ring_base_change_from_universal A n).1
+    obtain ⟨π, hπ, -, -, -⟩ := (_root_.GlobalTheory.CompanionTheory.AcrMod.acr_modp A n).1
     have hlP : ((l : ℕ) : A.Acr n) ∈ A.PFil n := by
       rw [← Ideal.Quotient.eq_zero_iff_mem, map_natCast, ← map_natCast π l, hl0, map_zero]
     obtain ⟨y, hy⟩ : ∃ y : WittVector l A.A, y = A.sW w - WittVector.teichmuller l (A.s (w.coeff 0)) :=
@@ -223,8 +223,8 @@ theorem tower_acr {l : ℕ} [Fact l.Prime] {O : Type} [CommRing O] {F : Fn O} {�
       ∀ j m, e (X.r j m) = 𝒯.A.toAcr n (WittVector.teichmuller l (𝒯.c j m : 𝒯.A.A)) := by
   intro hn0 ht
   have hl : l.Prime := Fact.out
-  obtain ⟨⟨πb, hπb, -, hπb0, -⟩, -, -, -, -, hPb, -⟩ := GlobalTheory.T.period_ring_base_change_from_universal (base l) n
-  obtain ⟨⟨πA, hπA, -, hπA0, -⟩, -, hJJ, -, -, -, -⟩ := GlobalTheory.T.period_ring_base_change_from_universal 𝒯.A n
+  obtain ⟨⟨πb, hπb, -, hπb0, -⟩, -, -, -, -, hPb, -⟩ := _root_.GlobalTheory.CompanionTheory.AcrMod.acr_modp (base l) n
+  obtain ⟨⟨πA, hπA, -, hπA0, -⟩, -, hJJ, -, -, -, -⟩ := _root_.GlobalTheory.CompanionTheory.AcrMod.acr_modp 𝒯.A n
   have hPP : 𝒯.A.PFil n = ((base l).PFil n).map (mapAcr 𝒯.A.fromBase n) := hJJ true
   let φ : 𝓛.D →+* 𝒯.A.Acr n := θ.φ
   have hφ : ∀ r, φ (𝓛.i r) = mapAcr 𝒯.A.fromBase n r := θ.comm

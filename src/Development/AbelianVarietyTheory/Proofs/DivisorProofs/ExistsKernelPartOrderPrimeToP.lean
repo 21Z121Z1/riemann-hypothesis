@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankQuotKerIdealDvd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTorsionTowerAndHeightEqTwoDim
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KernelPartMulOfCoprimeAbelianVarietyStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KernelPartMulOfCoprimeAbelianVariety
 open CategoryTheory AlgebraicGeometry TensorProduct GlobalTheory GlobalTheory.AV GlobalTheory.AV.AbVar GlobalTheory.AV.KerPart
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo.Tor
 open scoped CategoryTheory.MonObj
@@ -61,7 +61,7 @@ theorem exists_kerPow_not_dvd : ∀ (p : ℕ) [Fact p.Prime] (k : Type) [Field k
     have hpb : ¬ p ∣ b := fun h => hdvd (h.mul_left a)
     obtain ⟨H₁, _, _, i₁, hi₁, h₁⟩ := iha (by omega) hpa
     obtain ⟨H₂, _, _, i₂, hi₂, h₂⟩ := ihb (by omega) hpb
-    obtain ⟨H, _, _, i, hi, hH⟩ := GlobalTheory.T.kernelPart_mul_of_coprime_abelianVariety k A B f a b hab H₁ i₁ H₂ i₂ hi₁ hi₂
+    obtain ⟨H, _, _, i, hi, hH⟩ := _root_.GlobalTheory.AV.KerPart.kerPow_mul_of_coprime k A B f a b hab H₁ i₁ H₂ i₂ hi₁ hi₂
     refine ⟨H, inferInstance, inferInstance, i, hi, ?_⟩
     rw [hH]
     intro h

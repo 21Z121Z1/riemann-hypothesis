@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.IsLocalize
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalFunctionAppOfPreservesGenericPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PushoutResidueLinearIndependent
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDomainSectionsQuotMaximalIdealSmoothConnected
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqMapMaximalIdealOfRingKrullDimEqOneStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqMapMaximalIdealOfRingKrullDimEqOne
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor
 open GlobalTheory GlobalTheory.Cartier GlobalTheory.Toroidal GlobalTheory.LocM GlobalTheory.PolFan GlobalTheory.ZM GlobalTheory.SiegelTor GlobalTheory.TorRef
@@ -69,7 +69,7 @@ theorem GlobalTheory.Desc.ResInj.mem_map_of_germ_mem : ∀ (R : Type) [CommRing 
   have hd : ringKrullDim (Localization.AtPrime p.asIdeal) = 1 := by
     rw [← hdim]
     exact ringKrullDim_eq_of_ringEquiv (IsLocalization.algEquiv p.asIdeal.primeCompl (Localization.AtPrime p.asIdeal) (G.left.presheaf.stalk y)).toRingEquiv
-  have e := GlobalTheory.T.eq_map_maximalIdeal_of_ringKrullDim_eq_one' R Γ(G.left, U) p.asIdeal hle hd (_root_.GlobalTheory.isDomain_quot_maximalIdeal_of_smooth R G hsm hgc U hU y hyU hy)
+  have e := _root_.GlobalTheory.eq_map_maximalIdeal_of_ringKrullDim_eq_one R Γ(G.left, U) p.asIdeal hle hd (_root_.GlobalTheory.isDomain_quot_maximalIdeal_of_smooth R G hsm hgc U hU y hyU hy)
   have : b ∈ p.asIdeal := (hmem b).1 hb
   rw [e] at this
   exact this

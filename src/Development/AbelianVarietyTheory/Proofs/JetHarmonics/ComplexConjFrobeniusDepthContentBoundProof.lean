@@ -5,7 +5,7 @@ import Formalism.LocalToGlobal.CharacterGerms.ContentLargeFromSupplies
 import Formalism.LocalToGlobal.CharacterGerms.ContentZeroAt
 import Formalism.LocalToGlobal.CharacterGerms.LatticeInclusionFormsInjective
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.CharacterBlocksAttainBound
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.MonomialBlockSupplyBothTypingsStatement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.MonomialBlockSupplyBothTypings
 
 open Formalism.L2.FormalSeriesBounds Formalism.IncomingBounds Formalism.UnitaryBoundIntegral
 open scoped BigOperators

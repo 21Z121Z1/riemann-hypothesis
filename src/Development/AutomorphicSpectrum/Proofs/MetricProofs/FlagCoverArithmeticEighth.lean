@@ -7,7 +7,7 @@ import Development.AutomorphicSpectrum.Proofs.MetricProofs.AevalNeZeroOfNotMem
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterBridgeB
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SameOrbitRefl
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagModelBaseProjectionPoints
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockDiagonalMinorVanishingStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockDiagonalMinorVanishing
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverArithmeticThird
 open MvPolynomial MeasureTheory Filter Topology Matrix ReciprocityTheory.AnForm ReciprocityTheory.AnForm.M ReciprocityTheory.AnForm.P ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.AI.I1 ReciprocityTheory.ChartRestriction.G.AI.I2 ReciprocityTheory.ChartRestriction.G.AI.I4 GlobalTheory.CompanionTheory.Ar.PB GroundTheory.Heights₂.Heights GroundTheory.Heights₂.Heights.LowerBoundFree
 open scoped ComplexOrder Classical
@@ -235,7 +235,7 @@ theorem flag_transfer (N j : ℕ) (i : Fin N) (hj : j ≤ N) {κ κ' : Type} [Fi
     (h1 : ∀ m, z₁ m = a' * ∑ I, uu m I * minorIJ h I (stepCols N j i)) :
     ∃ c : ℂ, c ≠ 0 ∧ ∀ m, z₁ m = c * ∑ I, uu m I * ∑ I', if IsStepRows N j i I' then
       minorIJ A I I' * ∑ m', u' I' m' * z₀ m' else 0 := by
-  obtain ⟨hCB, hvan', -, -⟩ := GlobalTheory.T.block_diagonal_minor_vanishing ℂ N j i hj
+  obtain ⟨hCB, hvan', -, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PB.MinorCalc.minors_main ℂ N j i hj
   have hvan : ∀ I, ¬ IsStepRows N j i I → minorIJ (T * h) I (stepCols N j i) = 0 := fun I hI => by
     rcases hvan' (T * h) I hTh hI with e | e
     · exact e

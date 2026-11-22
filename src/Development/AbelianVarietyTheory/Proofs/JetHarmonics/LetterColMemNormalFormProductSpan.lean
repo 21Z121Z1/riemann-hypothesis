@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Jets.SameFns
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LetterLiftOfParts
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HatLettersPassDiGIBoundedFactors
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WordLDecompositionNfSpan
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WordMDecompositionSelfAdjointStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WordMDecompositionSelfAdjoint
 
 open Formalism.FourierDecayAlt Formalism.FourierDecayAlt.R Formalism.FourierDecayAlt.Wd Formalism.FourierDecayAlt.Fr Formalism.REAL Formalism.QuantumDeterminants MeasureTheory GlobalTheory.HatNF
 
@@ -139,7 +139,7 @@ theorem letterCol_mem : ∀ (P : M.Par) (A : Type) [Ring A] [StarRing A] [Algebr
       rw [TL.aM, eζbi, eAv, j2]
       exact gen_mem d hβ hA2
     · simp only [Fin.mk_one, Matrix.cons_val_one, Matrix.cons_val_zero]
-      obtain ⟨E, hE, hl⟩ := GlobalTheory.T.word_m_decomposition_self_adjoint P A d hd0 L st s hT S w hAw l.pt m0 hr mm1
+      obtain ⟨E, hE, hl⟩ := _root_.GlobalTheory.HatNF.MShapeNF.mshape P A d hd0 L st s hT S w hAw l.pt m0 hr mm1
       rw [hl, eζi, eG, eAv, eBv]
       refine col_mem ?_ (fun f f' => ?_) e e'
       · have := gen_mem d (one_mem _) hR2

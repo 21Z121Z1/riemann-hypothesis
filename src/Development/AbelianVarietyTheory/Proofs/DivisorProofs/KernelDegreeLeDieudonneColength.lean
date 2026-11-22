@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WittModuleLengthCom
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CotangentKernelEqCokerOmegaMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueKernelOrderPPowerDegreeIsogeny
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasKernelOrderPPowerDegreeCompLeAdd
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivisibleGroupIsogenyBasicPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivisibleGroupIsogenyBasicProperties
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIsoIsogenyOmegaAndDualSurjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivisibleGroupExistsFactorThroughIsogeny
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsQuotientKernelSupFrobeniusKernel
@@ -98,7 +98,7 @@ theorem one_le_deg {X Q : PDivGroup p k} (q₁ : X ⟶ Q) (q₁' : Q ⟶ X)
   rcases Nat.eq_zero_or_pos e₁ with h | h
   · subst h
     have hI : IsIsog q₁ := ⟨1, q₁', by rw [pow_one]; exact h1, by rw [pow_one]; exact h2⟩
-    haveI := ((GlobalTheory.T.pDivisibleGroup_isogeny_basic_properties p k X).2.2.2 Q q₁ hI).1 he₁
+    haveI := ((_root_.GlobalTheory.Dieu.isog_basics p k X).2.2.2 Q q₁ hI).1 he₁
     exact absurd (omegaMap_surjective_of_isIso q₁) hns
   · exact h
 
@@ -110,13 +110,13 @@ theorem kernelDegree_le_dieudonneColength_of_colength_eq (n : ℕ) : ∀ (G H : 
   by_cases hA : Function.Surjective (omegaMap G H q)
   · by_cases hB : Function.Surjective (omegaMap H.dual G.dual (dualHom G H q))
     · haveI := _root_.GlobalTheory.Dieu.isIso_of_isIsog_of_omegaMap_surjective p k G H q hq hA hB
-      have h0 : HasLogDeg q 0 := ((GlobalTheory.T.pDivisibleGroup_isogeny_basic_properties p k G).2.2.2 H q hq).2 inferInstance
+      have h0 : HasLogDeg q 0 := ((_root_.GlobalTheory.Dieu.isog_basics p k G).2.2.2 H q hq).2 inferInstance
       have := (_root_.GlobalTheory.Dieu.existsUnique_hasLogDeg p k G H q hq).unique he h0
       omega
     · obtain ⟨Q, q₁, q₁', r, h1, h2, hfr, hr, hns⟩ := exists_step (dualHom G H q) hB
       have hg := GlobalTheory.T.pDivGroupIsogeny_height_eq_dual_sameDegree p k G H q hq
       have hq₁ : IsIsog q₁ := ⟨1, q₁', by rw [pow_one]; exact h1, by rw [pow_one]; exact h2⟩
-      have hrI : IsIsog r := (GlobalTheory.T.pDivisibleGroup_isogeny_basic_properties p k H.dual).2.2.1 Q G.dual q₁ r hq₁ (hr ▸ hg.2.1)
+      have hrI : IsIsog r := (_root_.GlobalTheory.Dieu.isog_basics p k H.dual).2.2.1 Q G.dual q₁ r hq₁ (hr ▸ hg.2.1)
       obtain ⟨e₁, he₁⟩ := (_root_.GlobalTheory.Dieu.existsUnique_hasLogDeg p k H.dual Q q₁ hq₁).exists
       obtain ⟨e₂, he₂⟩ := (_root_.GlobalTheory.Dieu.existsUnique_hasLogDeg p k Q G.dual r hrI).exists
       have hle : e ≤ e₁ + e₂ :=
@@ -148,7 +148,7 @@ theorem kernelDegree_le_dieudonneColength_of_colength_eq (n : ℕ) : ∀ (G H : 
       omega
   · obtain ⟨Q, q₁, q₁', r, h1, h2, hfr, hr, hns⟩ := exists_step q hA
     have hq₁ : IsIsog q₁ := ⟨1, q₁', by rw [pow_one]; exact h1, by rw [pow_one]; exact h2⟩
-    have hrI : IsIsog r := (GlobalTheory.T.pDivisibleGroup_isogeny_basic_properties p k G).2.2.1 Q H q₁ r hq₁ (hr ▸ hq)
+    have hrI : IsIsog r := (_root_.GlobalTheory.Dieu.isog_basics p k G).2.2.1 Q H q₁ r hq₁ (hr ▸ hq)
     obtain ⟨e₁, he₁⟩ := (_root_.GlobalTheory.Dieu.existsUnique_hasLogDeg p k G Q q₁ hq₁).exists
     obtain ⟨e₂, he₂⟩ := (_root_.GlobalTheory.Dieu.existsUnique_hasLogDeg p k Q H r hrI).exists
     have hle : e ≤ e₁ + e₂ := _root_.GlobalTheory.Dieu.hasLogDeg_comp_le p k G Q H q₁ r e₁ e₂ e he₁ he₂ (hr ▸ he)

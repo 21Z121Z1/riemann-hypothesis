@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsQuasiInverseI
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankQuotKerIdealDvd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsogenyKernelFiniteAlgebraFinrankEqDegree
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsogenyFlatFinrank
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KernelPartMulOfCoprimeAbelianVarietyStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KernelPartMulOfCoprimeAbelianVariety
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsKernelPartOrderPrimeToP
 open CategoryTheory AlgebraicGeometry TensorProduct GlobalTheory GlobalTheory.PDiv GlobalTheory.PDivGroup GlobalTheory.Dieu GlobalTheory.AV GlobalTheory.AV.AbVar
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -59,7 +59,7 @@ theorem isIsog_hasLogDeg_map : ∀ (p : ℕ) [Fact p.Prime] (k : Type) [Field k]
   · obtain ⟨H₀, _, _, i₀, hK₀, hdeg⟩ := _root_.GlobalTheory.AV.KerPart.exists_kerPow_zero_finrank_eq_deg k A B f hf
     obtain ⟨Hm, _, _, im, hKm, hpm⟩ := _root_.GlobalTheory.AV.KerPart.exists_kerPow_not_dvd p k A B f m hm0 hm
     have hcop : (p ^ a).Coprime m := (Nat.Coprime.pow_left a ((Nat.coprime_comm.1 ((Nat.Prime.coprime_iff_not_dvd hp).2 hm)).symm))
-    obtain ⟨H₁, _, _, i₁, hK₁, hrank⟩ := GlobalTheory.T.kernelPart_mul_of_coprime_abelianVariety k A B f (p ^ a) m hcop _ _ _ _ (kerPow_kerPt t t' f a) hKm
+    obtain ⟨H₁, _, _, i₁, hK₁, hrank⟩ := _root_.GlobalTheory.AV.KerPart.kerPow_mul_of_coprime k A B f (p ^ a) m hcop _ _ _ _ (kerPow_kerPt t t' f a) hKm
     have h01 : Module.finrank k H₁ = deg f := (finrank_eq_of_kerPow hK₁ hK₀ fun R _ _ x hx =>
       iff_of_true (kill x hx) (pow_zero x)).trans hdeg
     obtain ⟨j, -, hj⟩ := (Nat.dvd_prime_pow hp).1 (finrank_quot_kerIdeal_dvd (t.map t' f.hom) a)

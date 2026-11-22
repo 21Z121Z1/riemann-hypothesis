@@ -6,10 +6,10 @@ import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.IntegralTangen
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LieLatticeLocalBasisDescription
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LieLatticeLocalizationModelLieAlgebra
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LieLatticeFgAndSpanEqTopRingOfIntegers
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsLieRepresentationEigenLatticesStatement
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.DegLatticeNumberFieldExtensionEqStatement
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsLieRepresentationEigenLattices
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.DegLatticeNumberFieldExtensionEq
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.EigenLatticeNumberFieldBaseChange
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.DegreeLieLatticeHermitianInvariantStatement
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.DegreeLieLatticeHermitianInvariant
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.LiePush
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.DimSplitPf
 
@@ -159,8 +159,8 @@ theorem eigLat_eq_span (hB : Out.PolBaseChangeSt) (hξ : IsPolFibre (RingOfInteg
     (hact : ∀ a, (act'.act a).left ≫ ξ = ξ ≫ (act.act a).left) (τ : O →+* 𝓞 K) :
     (F₁).eigLat act' ((RingOfIntegers.mapRingHom j).comp τ) =
       Submodule.span (𝓞 K') ((fun c i => j (c i)) '' (F.eigLat act τ : Set (Fin F.P₀.g → K))) := by
-  obtain ⟨r, hr, he⟩ := GlobalTheory.T.exists_lieRepresentation_eigenLattices K P F O act
-  obtain ⟨r', hr', he'⟩ := GlobalTheory.T.exists_lieRepresentation_eigenLattices K' P' F₁ O act'
+  obtain ⟨r, hr, he⟩ := _root_.GlobalTheory.CM.GenFib.exists_lieRep_eigLat K P F O act
+  obtain ⟨r', hr', he'⟩ := _root_.GlobalTheory.CM.GenFib.exists_lieRep_eigLat K' P' F₁ O act'
   have hL := lieLat_eq_span (fib := fib) (basis := basis) hB hξ hψ w hv
   have key : ∀ a, ∀ c' ∈ (F₁).lieLat, r' a c' = ((LinearMap.toMatrix' (r a)).map j).mulVec c' := fun a c' hc' => by
     rw [hL] at hc'
@@ -215,14 +215,14 @@ theorem deg_eq_of_isPolFibre (hU : ThetaUnifAV) (hL : Out.Laws) (hξ : IsPolFibr
     (SmoothOfRelativeDimension.smooth F.P₀.g _) _ F.v F.basis
   let F₂ : GenFib P' := ⟨withDim F'.P₀ F.P₀.g hd, F'.φ, fib, v', basis⟩
   obtain ⟨h₂, H₂⟩ := (LieMetric.exists_unique_isHerm hU hL K' P' F₂).1
-  obtain ⟨d₁, d₂⟩ := GlobalTheory.T.degree_lie_lattice_hermitian_invariant hU hL K' P' F' F₂ h' h₂ H' H₂
+  obtain ⟨d₁, d₂⟩ := _root_.GlobalTheory.FibIndep.deg_lieLat_eq hU hL K' P' F' F₂ h' h₂ H' H₂
   have hf := form_single_eq hU hψ hv H H₂
   have hfg := (_root_.GlobalTheory.CM.LieLattice.lieLat_fg_and_span_eq_top K P F).1
   refine ⟨?_, fun O _ act act' hact τ => ?_⟩
   · rw [d₁, lieLat_eq_span hL.polBaseChange hξ hψ.2.1 w hv]
-    exact GlobalTheory.T.deg_lattice_numberField_extension_eq K K' j _ h h₂ _ hfg hf
+    exact _root_.GlobalTheory.deg_span_image_eq K K' j _ h h₂ _ hfg hf
   · rw [d₂, eigLat_eq_span hL.polBaseChange hξ hψ.2.1 w hv act act' hact τ]
-    exact GlobalTheory.T.deg_lattice_numberField_extension_eq K K' j _ h h₂ _
+    exact _root_.GlobalTheory.deg_span_image_eq K K' j _ h h₂ _
       (hfg.of_le (Submodule.span_mono fun _ ⟨u, hu, _⟩ => ⟨u, hu⟩)) hf
 
 theorem deg_lieLat_eigLat_baseChange : ThetaUnifAV → Out.Laws → ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host E) (K K' : Type) [Field K] [NumberField K] [Field K'] [NumberField K'] (j : K →+* K') (T : PAT H (Sp (𝓞 K))) (T' : PAT H (Sp (𝓞 K'))) (_ : SABMap T'.t T.t (spMap (RingOfIntegers.mapRingHom j))) (F : GenFib T.pol) (F' : GenFib T'.pol) (h : HermFam K (Fin F.P₀.g → K)) (h' : HermFam K' (Fin F'.P₀.g → K')), F.IsHerm h → F'.IsHerm h' → deg h' F'.lieLat = deg h F.lieLat ∧ ∀ τ : 𝓞 E →+* 𝓞 K, deg h' (F'.eigLat T'.t.act ((RingOfIntegers.mapRingHom j).comp τ)) = deg h (F.eigLat T.t.act τ) := by

@@ -1,11 +1,12 @@
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.OneCoset
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryLevelSubgroupPropertiesStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryLevelSubgroupProperties
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceConjugationPropertiesCmField
+import Development.AbelianVarietyTheory.Definitions.Divisors.GaloisRepOfPolarizedCuspidal
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.CharpolyConjDiagT
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryIwahoriFactsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryIwahoriFacts
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedCentralizerCompactPart
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceConjugationPropertiesCmFieldStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IwahoriProjSurjective
 
 noncomputable section
@@ -26,8 +27,8 @@ theorem unitary_hecke_orbit_single_coset (hU : Unr E) (w : Pl E) (hw : ¬ IsSpli
     (∃ p₀, OneCoset (MonoidHom.id (UL n w)) (iwU n w b) γ {g | fU n w b ϖ l g ≠ 0} p₀) ∧
       CentOK (MonoidHom.id (UL n w)) (KL n w) (iwU n w b) γ ∧ HasVals γ.1.val.charpoly (wexp n l) := by
   obtain ⟨p₀, u, h1, -, h3, h4, h5⟩ := s2raw hU w hw n b hb ϖ hϖ l hl γ hP
-  obtain ⟨-, hKc, hI, -, -⟩ := GlobalTheory.T.unitary_level_subgroup_properties E hU w hw n b hb ϖ l hϖ hl
-  have hIc : IsCompact (iwU n w b : Set (UL n w)) := (GlobalTheory.T.unitary_iwahori_facts E hU w hw n b hb).2.2.1
+  obtain ⟨-, hKc, hI, -, -⟩ := _root_.GlobalTheory.CompanionTheory.IwLevels.levels_unitary E hU w hw n b hb ϖ l hϖ hl
+  have hIc : IsCompact (iwU n w b : Set (UL n w)) := (_root_.GlobalTheory.CompanionTheory.UnitaryWitt.unitary_hyperbolic_basis E hU w hw n b hb).2.2.1
   have hC : IsCompact (((iwU n w b).map (MulAut.conj p₀).toMonoidHom : Subgroup (UL n w)) : Set (UL n w)) := by
     rw [Subgroup.coe_map]
     exact hIc.image ((continuous_const.mul continuous_id).mul continuous_const)

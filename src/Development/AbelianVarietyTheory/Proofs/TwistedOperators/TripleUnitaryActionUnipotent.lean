@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DarbouxModelAlge
 import Development.AbelianVarietyTheory.Definitions.Divisors.PairsOfSquareTriple
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMemKAt
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsAdelicUnitaryFactorFiniteSetOfPlaces
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFinsetAdelicUnitaryPreservesLatticeAlmostAStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFinsetAdelicUnitaryPreservesLatticeAlmostA
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteSupportUnitaryPointReplacesPureTensorFacto
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatticeStabilizersFixVacuaFixesPureTensorLeft
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnramifiedPlacesVacuumFixed
@@ -55,7 +55,7 @@ theorem finite_point_acts_placewise : GlobalTheory.FunPr.Hypotheses₂ → ∀ (
           (∀ v, φ' v - φ v ∈ augAt ω v) ∧ ω (g, 1) (pure f φ) = pure f φ' := by
     intro n Y M χX χW ω r s r' s' hP hsph g hg f φ hφ hvac
     classical
-    obtain ⟨S₁, hS₁⟩ := GlobalTheory.T.exists_finset_adelicUnitary_preserves_lattice_almost_all σ Y hP.herm.lat g
+    obtain ⟨S₁, hS₁⟩ := _root_.GlobalTheory.LatAlmostAll.exists_finset_keeps σ Y hP.herm.lat g
     have hfin := Filter.eventually_cofinite.1 hvac
     set S : Finset (GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Pl F) := S₀ ∪ S₁ ∪ hfin.toFinset with hSdef
     obtain ⟨gS, k, hgk, hgS, hkS, hkI, hkL⟩ := _root_.GlobalTheory.PlaceCut.exists_cut σ Y g S

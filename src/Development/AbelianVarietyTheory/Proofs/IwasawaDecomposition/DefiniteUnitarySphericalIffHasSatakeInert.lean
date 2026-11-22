@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousMapPFin
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IrreducibleRepIsotypicOfCentraliserFactor
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FixedPlaceUnitaryLocalPointsEquivLocalUnitaryGroStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnramifiedNonsplitExistsConjInvolutionUniformiseStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAdmissibleLocalComponentDefiniteUnitaryStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FixedPlaceUnitaryLocalPointsEquivLocalUnitaryGro
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnramifiedNonsplitExistsConjInvolutionUniformise
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAdmissibleLocalComponentDefiniteUnitary
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsContinuousRetractionOntoUnitaryLocalPointsStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFixedOfMemISup
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSatakeParameterSphericalUnramifiedUnitary
@@ -83,15 +83,15 @@ theorem GlobalTheory.InertSatake.sph_iff_isSat : ∀ (E : Type) [Field E] [Numbe
   show IsUnramU π.V w ↔ ∃ α, π.IsSat w α
   constructor
   · rintro ⟨φ, hφ, h0, hfix⟩
-    obtain ⟨s, ϖ, q, hs, hU⟩ := GlobalTheory.T.unramified_nonsplit_exists_conj_involution_uniformiser E w hun hns
-    obtain ⟨e, he⟩ := GlobalTheory.T.fixedPlace_unitaryLocalPoints_equiv_localUnitaryGroup E n w s hs hU.2.1
+    obtain ⟨s, ϖ, q, hs, hU⟩ := _root_.GlobalTheory.InertPlaceConj.exists_conj_isUnramInv E w hun hns
+    obtain ⟨e, he⟩ := _root_.GlobalTheory.DefU.Inert.locU_equiv E n w s hs hU.2.1
     obtain ⟨b, hbK, hb⟩ := GlobalTheory.LFun.InertChart.exists_congr_antiJ hU (one_mem (GlobalTheory.LFun.KGL w n))
       (by rw [Units.val_one, cT_one])
     let P : locU n w ≃ₜ* GU s n := e.trans (conjEquiv s b hb)
     have hP : ∀ x : locU n w, ((P x : GU s n) : GL (Fin n) (w.adicCompletion E)) = b⁻¹ * cLoc w x.1 * b := fun x => by
       change b⁻¹ * (e x : GL (Fin n) _) * b = _
       rw [he]
-    obtain ⟨σ0, hadm, hcomp⟩ := GlobalTheory.T.exists_admissible_localComponent_definiteUnitary E n π w
+    obtain ⟨σ0, hadm, hcomp⟩ := _root_.GlobalTheory.DefU.LocAdm.exists_admissible_comp E n π w
     obtain ⟨r, -, -, hr⟩ := GlobalTheory.T.exists_continuous_retraction_onto_unitaryLocalPoints E n w
     obtain ⟨-, f, hf0, hfm, hf⟩ := hcomp
     let F : σ0.ρ.IntertwiningMap (π.rep.comp (locU n w).subtype) :=
@@ -125,7 +125,7 @@ theorem GlobalTheory.InertSatake.sph_iff_isSat : ∀ (E : Type) [Field E] [Numbe
     rw [P.symm_apply_apply]
     exact hf x u
   · rintro ⟨α, s, ϖ, q, hs, hU, b, hbK, hb, p, hp, σ, ⟨-, f, hf0, hfm, hf⟩, hsat⟩
-    obtain ⟨e, he⟩ := GlobalTheory.T.fixedPlace_unitaryLocalPoints_equiv_localUnitaryGroup E n w s hs hU.2.1
+    obtain ⟨e, he⟩ := _root_.GlobalTheory.DefU.Inert.locU_equiv E n w s hs hU.2.1
     have hb1 : cT s b.1 * 1 * b.1 = antiJ _ n := by rwa [Matrix.mul_one]
     have hsurj : Function.Surjective p := fun g => by
       let P := e.trans (conjEquiv s b hb1)

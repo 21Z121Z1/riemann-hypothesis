@@ -24,7 +24,7 @@ theorem kernel_eq_sum_of_jets : ∀ {D : D7} {T : Type} [Finite T] {L : LevCh D 
   have hθ : IsInfFam W.θ := hv.2.inf
   have hS : IsSelfDualC A' X.rA'.Λ := hX.is.rigA'.1
   have hT : IsSelfDualC WW X.rW.Λ := hX.is.rigW.1
-  have hf := GlobalTheory.T.finiteDatum_isAlgebraicCombination_definiteBottom hX t
+  have hf := _root_.GlobalTheory.BotFourierSnd.finDatum'_isAlgComb hX t
   obtain ⟨k, c, w, hc, hw, e⟩ := om_alg hv hS hT hW (om_vac_algComb hv hS hT (fun τ => (hX.is.rigA'.2.2 τ).1)
     (fun τ => (hX.is.rigW.2.2 τ).1) hW hx hh) hf
   refine ⟨k, c, w, hc, hw, fun l => GlobalTheory.PlaceDatum.exists_nsmul_mem_latO' hS.1 hT.1 _ (hw l), fun P => ?_⟩

@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Jets.PowerSeriesHasSumAt
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MvPowerSeriesConvergentSubstHasSumAndBounds
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MvPowerSeriesIntegralBoundedClosureStatement
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ConvergentSubstOneVariableAndFormalAgreementStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MvPowerSeriesIntegralBoundedClosure
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ConvergentSubstOneVariableAndFormalAgreement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MvPowerSeriesConvergentSubstIsRingHomOnBounded
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MvPowerSeriesConvergentSubstAssoc
 
@@ -18,17 +18,17 @@ theorem ev_algebra : ∀ (K : Type) [NormedField K] [IsUltrametricDist K] [Compl
   have E : ∀ (ρ : Type) [Fintype ρ] (S : MvPowerSeries ρ K) (y : ρ → K),
       csub (fun i => (MvPowerSeries.C (y i) : MvPowerSeries Unit K)) S = MvPowerSeries.C (ev S y) := by
     intro ρ _ S y
-    exact (GlobalTheory.T.convergentSubst_oneVariable_and_formal_agreement K).2.2.2.1 ρ Unit S y
+    exact (_root_.GlobalTheory.ConvSer.Bridge.csub_bridge K).2.2.2.1 ρ Unit S y
   obtain ⟨c, hc⟩ : ∃ c : σ → MvPowerSeries Unit K, c = fun i => MvPowerSeries.C (x i) := ⟨_, rfl⟩
   have E' : ∀ S : MvPowerSeries σ K, csub c S = MvPowerSeries.C (ev S x) := by
     intro S
     subst hc
     exact E σ S x
-  have B := GlobalTheory.T.mvPowerSeries_integral_bounded_closure K σ
+  have B := _root_.GlobalTheory.BddAlg.bdd_alg K σ
   have hcs : ∀ i, Small (c i) := by
     intro i
     subst hc
-    exact ((GlobalTheory.T.mvPowerSeries_integral_bounded_closure K Unit).2.2.2.1 (x i)).2.2 (hx i)
+    exact ((_root_.GlobalTheory.BddAlg.bdd_alg K Unit).2.2.2.1 (x i)).2.2 (hx i)
   have R := _root_.GlobalTheory.ConvSer.csub_ring_map K σ Unit c hcs
 
   have p1 : ∀ S : MvPowerSeries σ K, Bdd S → HS S x (ev S x) := by
@@ -102,13 +102,13 @@ theorem ev_algebra : ∀ (K : Type) [NormedField K] [IsUltrametricDist K] [Compl
       (∀ j, Intg (a j)) → (∀ j, MvPowerSeries.constantCoeff (a j) = 0) → Bdd S →
         ev (MvPowerSeries.subst a S) x = ev S (fun j => ev (a j) x) := by
     intro ρ _ a S ha ha0 hS
-    rw [← (GlobalTheory.T.convergentSubst_oneVariable_and_formal_agreement K).2.2.2.2.2.1 ρ σ a S ha0]
+    rw [← (_root_.GlobalTheory.ConvSer.Bridge.csub_bridge K).2.2.2.2.2.1 ρ σ a S ha0]
     exact p6 ρ a S (fun j => small0 _ (ha j) (ha0 j)) hS
   have p8 : ∀ (a : MvPowerSeries σ K) (f : PowerSeries K), Intg a →
       MvPowerSeries.constantCoeff a = 0 → Bdd f → ev (f.subst a) x = ev1 f (ev a x) := by
     intro a f ha ha0 hf
-    rw [← (GlobalTheory.T.convergentSubst_oneVariable_and_formal_agreement K).2.2.2.2.2.2 σ a f ha0, (GlobalTheory.T.convergentSubst_oneVariable_and_formal_agreement K).1 σ a f,
-      (GlobalTheory.T.convergentSubst_oneVariable_and_formal_agreement K).2.1 f (ev a x)]
+    rw [← (_root_.GlobalTheory.ConvSer.Bridge.csub_bridge K).2.2.2.2.2.2 σ a f ha0, (_root_.GlobalTheory.ConvSer.Bridge.csub_bridge K).1 σ a f,
+      (_root_.GlobalTheory.ConvSer.Bridge.csub_bridge K).2.1 f (ev a x)]
     exact p6 Unit (fun _ => a) f (fun _ => small0 a ha ha0) hf
   exact ⟨p1, p2, p3, p4, p5, p6, p7, p8⟩
 

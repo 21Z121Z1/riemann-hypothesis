@@ -9,7 +9,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeftTranslateSo
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeftTranslateCommutes
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KernelRowLeftInvariantStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KernelActionFormulaStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveRepresentationStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveRepresentation
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveUniqueness
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PhiResolventIdentity
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveIntegralIdentity
@@ -117,7 +117,7 @@ theorem kerCore_of (hFR : RowExists) (hRM : RowMatrix) (hAS : AdjSmooth) (hRL : 
 theorem kerCore : KerCore :=
   have hLC := _root_.GlobalTheory.CompanionTheory.KerFc.ltComm_of_ltSob _root_.GlobalTheory.CompanionTheory.KerFc.ltSob
   kerCore_of (GlobalTheory.T.kernel_row_exists _root_.GlobalTheory.CompanionTheory.KerFc.factorRapid _root_.GlobalTheory.CompanionTheory.KerFc.evAdj) _root_.GlobalTheory.CompanionTheory.KerFc.rowMatrix_holds _root_.GlobalTheory.CompanionTheory.KerFc.adjSmooth
-    (GlobalTheory.T.kernel_row_left_invariant _root_.GlobalTheory.CompanionTheory.KerFc.ltSob hLC) (GlobalTheory.T.kernel_action_formula _root_.GlobalTheory.CompanionTheory.KerFc.ltSob hLC) GlobalTheory.T.wave_representation _root_.GlobalTheory.CompanionTheory.KerFc.waveUniq _root_.GlobalTheory.CompanionTheory.KerFc.phiRes_holds
+    (GlobalTheory.T.kernel_row_left_invariant _root_.GlobalTheory.CompanionTheory.KerFc.ltSob hLC) (GlobalTheory.T.kernel_action_formula _root_.GlobalTheory.CompanionTheory.KerFc.ltSob hLC) _root_.GlobalTheory.CompanionTheory.KerFc.waveRep _root_.GlobalTheory.CompanionTheory.KerFc.waveUniq _root_.GlobalTheory.CompanionTheory.KerFc.phiRes_holds
     _root_.GlobalTheory.CompanionTheory.KerFc.waveInt _root_.GlobalTheory.CompanionTheory.KerFc.supportRow
 
 end GlobalTheory.CompanionTheory.KerFc

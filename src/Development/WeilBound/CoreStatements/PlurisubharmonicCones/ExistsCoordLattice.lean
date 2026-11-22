@@ -11,7 +11,7 @@ import Development.AutomorphicSpectrum.Proofs.AdelicProofs.PadicLogIdealMaxEleme
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.LogIdealMulSpanMap
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.SumLogIdealEqLogAbsNorm
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.LogIdealSupportFinite
-import Development.AutomorphicSpectrum.Proofs.AdelicProofs.PadicEmbeddingDiscreteValuationRingStatement
+import Development.AutomorphicSpectrum.Proofs.AdelicProofs.PadicEmbeddingDiscreteValuationRing
 
 noncomputable section
 
@@ -31,7 +31,7 @@ theorem exists_max_det {n : ℕ} (E : Submodule (𝓞 L) (Fin n → 𝓞 L)) (hD
   classical
   have hj'inj : Function.Injective (j.comp (algebraMap (𝓞 L) L)) :=
     j.injective.comp (IsFractionRing.injective (𝓞 L) L)
-  obtain ⟨V, -, hV, hVO, -⟩ := GlobalTheory.T.padic_embedding_discrete_valuation_ring L p j
+  obtain ⟨V, -, hV, hVO, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Fl.ValRing.exists_dvr_of_padic_embedding L p j
   have hle1 : ∀ r : 𝓞 L, ‖(j.comp (algebraMap (𝓞 L) L)) r‖ ≤ 1 := fun r => (hV _).2 (hVO r)
   obtain ⟨a, haI, ha0, hamax, hlog⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Fl.exists_logIdeal_attained L p _ (detIdeal E) hj'inj hD
   have hapos : 0 < ‖(j.comp (algebraMap (𝓞 L) L)) a‖ :=

@@ -2,7 +2,7 @@ import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.HighestVectorsRegularLine
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WtRInjective
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CPoly
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualWeightSpacesSpanStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualWeightSpacesSpan
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorCharInjective
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeightPolynomialTraceIdentityStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DominanceOfWeylCharacterCoeff
@@ -38,7 +38,7 @@ theorem trOn_dualT_id {n : ℕ} (E : KMod n) (S : Submodule ℂ (E.V →L[ℂ] �
 theorem topeG : ∀ {n : ℕ} (lam : Fin n → ℤ), Antitone lam → ∀ (E : KMod n) (T : E.V →L[ℂ] E.V), IsLefK lam E T →
     (⨆ μ, wtDual E μ) = ⊤ ∧ ∀ μ, wtDual E μ ≠ ⊥ → DomLE (wtR μ) (m0 lam) := by
   intro n lam hlam E T hT
-  have hspan := GlobalTheory.T.dual_weight_spaces_span E
+  have hspan := _root_.GlobalTheory.CompanionTheory.RealCount.Tope.iSup_wtDual_eq_top E
   have hind := GlobalTheory.CompanionTheory.RealCount.Tope.wtDual_iSupIndep E
   have hfin : Set.Finite {μ | wtDual E μ ≠ ⊥} := WellFoundedGT.finite_ne_bot_of_iSupIndep hind
   set s := hfin.toFinset with hs

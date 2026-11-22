@@ -6,10 +6,10 @@ import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.Exponential
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermTranslateFormula
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OneMemGoodCT
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermAutomorphicCriterionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermAutomorphicCriterion
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuantumDeterminantPolynomialCoefficients
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CapS
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CapelliOperatorsCommuteStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CapelliOperatorsCommute
 
 noncomputable section
 
@@ -157,9 +157,9 @@ theorem trace_ss (hm : ∀ τ, (m τ).Nodup ∧ Multiset.card (m τ) = r + s) (�
     rw [e]
     simp [bP]
 
-  have hcRR := fun u v => (GlobalTheory.T.capelli_operators_commute E r s τ u v).1
-  have hcRS := fun u v => (GlobalTheory.T.capelli_operators_commute E r s τ u v).2.1
-  have hcSS := fun u v => (GlobalTheory.T.capelli_operators_commute E r s τ u v).2.2
+  have hcRR := fun u v => (_root_.GlobalTheory.CompanionTheory.CTFin.CapComm.capR_capS_commute E r s τ u v).1
+  have hcRS := fun u v => (_root_.GlobalTheory.CompanionTheory.CTFin.CapComm.capR_capS_commute E r s τ u v).2.1
+  have hcSS := fun u v => (_root_.GlobalTheory.CompanionTheory.CTFin.CapComm.capR_capS_commute E r s τ u v).2.2
   have hcab : ∀ i j, Commute (aP i) (aP j) ∧ Commute (aP i) (bP j) ∧ Commute (bP i) (bP j) := fun i j => by
     refine ⟨commute_val r s m ?_, commute_val r s m ?_, commute_val r s m ?_⟩
     · exact commute_span (fun u v => by rw [hqa, hqa]; exact hcRR _ _) (haspan i) (haspan j)
@@ -289,7 +289,7 @@ theorem ct_mem (hr : 0 < r) (hs : 0 < s) (ψ : Sm E (r + s)) (hψ : IsAutForm ψ
     exact _root_.GlobalTheory.CompanionTheory.CTFin.constTerm_unip_left E (r + s) r ψ hψ.left hψ.level μ 𝓕 hμ h𝓕 x g
   · refine Subtype.ext (funext fun g => ?_)
     have hz : cap τ u ∈ Zalg E (r + s) := Algebra.subset_adjoin ⟨τ, u, rfl⟩
-    have h1 := GlobalTheory.T.constant_term_automorphic_criterion E (r + s) r μ 𝓕 hμ h𝓕 hlie ψ F hψ.left hψ.level hF1 (cap τ u) hz g
+    have h1 := _root_.GlobalTheory.CompanionTheory.CTFin.Central.ct_Zalg E (r + s) r μ 𝓕 hμ h𝓕 hlie ψ F hψ.left hψ.level hF1 (cap τ u) hz g
     rw [(hinf τ).2 u ψ (Submodule.mem_span_singleton_self ψ)] at h1
     rw [h1]
     simp only [Submodule.coe_smul, Pi.smul_apply, smul_eq_mul]

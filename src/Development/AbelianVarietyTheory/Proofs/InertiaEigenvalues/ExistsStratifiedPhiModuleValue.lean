@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFinitePr
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.StableAndCoverPrismHomOfPushout
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPrismCoverReceivingBreuilKisin
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PrismCoverInjectiveAndDescent
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.StratifiedCoordinatesOfPrismCoverStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.StratifiedCoordinatesOfPrismCover
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.WeaklyAdmissibleFiltrations TensorProduct PowerSeries GlobalTheory.Prism GlobalTheory.BKReal GlobalTheory.Per GlobalTheory.BSP
 open scoped Formalism.Per NNReal
 
@@ -63,7 +63,7 @@ theorem exists_eval : ∀ (l : ℕ) [Fact l.Prime] (K : FinExt l) (bk : BK K) (d
   intro l _ K bk d S B
   obtain ⟨C, h, ⟨f⟩, hc⟩ := _root_.GlobalTheory.BSP.exists_cover_receiving_bk l K bk B
   obtain ⟨P, _, _, _, _, u, hu, hcoc⟩ := _root_.GlobalTheory.BSP.CoverDesc.exists_descent l K bk d S B C h f hc
-  have hv := GlobalTheory.T.stratifiedCoordinates_of_prismCover l K bk d S B C h f hc P u hcoc
+  have hv := _root_.GlobalTheory.BSP.SiteCoord.coords_of_cover l K bk d S B C h f hc P u hcoc
   choose vv hvv using hv
   have po : ∀ (Q : Obj l ↥(OL K)) (a : Hom B Q), ∃ (Q₀ : Obj l ↥(OL K)) (a₀ : Hom C Q₀) (h₀ : Hom Q Q₀),
       a₀.comp h = h₀.comp a ∧ Cover h₀ ∧ Function.Injective h₀.f := by

@@ -12,7 +12,7 @@ import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverIffIsPro
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsInvertibleMatrixChangeOfSpanEq
 import Development.AbelianVarietyTheory.Definitions.Degenerations.InducedModelMorphismCompStructureMap
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsAffineOpenNonzeroLocusOfUniversallyClosed
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsLineBundleSectionsOfUnimodularTuplesStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsLineBundleSectionsOfUnimodularTuples
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsAffineOpenOfLocalSectionCombinationLocus
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry
 open scoped CategoryTheory.Obj
@@ -159,7 +159,7 @@ theorem exists_bundle (Q : Clos ρ M U₀ EE) (hs : Function.Surjective Q.P.hom)
   have hne : ∀ (a : A) (K : Type) [Field K] (y : Sp K ⟶ Q.P.left), ⊤ ≤ y ⁻¹ᵁ V a →
       ((W ⊓ Q.W a.1 : M.Z.Opens) : Set M.Z).Nonempty := fun a K _ y h =>
     ⟨_, le1 a (h (x := IsLocalRing.closedPoint K) trivial)⟩
-  obtain ⟨g, T, hT⟩ := GlobalTheory.T.exists_lineBundle_sections_of_unimodular_tuples Q.P.left A S.J V t (fun a p hp => by
+  obtain ⟨g, T, hT⟩ := _root_.GlobalTheory.TupleGlue.exists_sections Q.P.left A S.J V t (fun a p hp => by
     obtain ⟨K, _, y, -, hy⟩ := exists_pt p
     obtain ⟨y, rfl⟩ := exists_lift y _ ((hy _).2 (le0 a hp.1))
     have h := (hy _).2 hp

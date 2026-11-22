@@ -13,7 +13,9 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BlochKatoDimFo
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.H1fGeneratorsAll
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BlochKatoCrystallineExtensionCriterion
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.H1fGenerationUnramified
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachLatticeLaterClausesHoldStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachLatticeLaterClausesHold
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NotFullBot
+import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GammaSubOneDivUniformiserAtLetterOfConclusions
 import Formalism.SharpRestriction.LevelLetterCocycles.UsedLocalConclusion
 import Formalism.SharpRestriction.LevelLetterCocycles.SemisimpleLetterIffForallMem
@@ -38,7 +40,7 @@ theorem admissible_ranks_of_CMDatum : GlobalTheory.Published.BlochKatoLocal → 
     Formalism.MainNotions.N.herr_description_H1_of_herr D HW F h6a, _root_.GlobalTheory.ExtCrysCrit.blochKato_ext_all D,
     GlobalTheory.HerrExtClass.herr_extension_class_formula D HW F,
     Formalism.MainNotions.HerrComplexNaturality.herr_naturality_theorem_holds D HW F h6a,
-    _root_.GlobalTheory.adm18_of_N1used D HW F Cm (GlobalTheory.T.wachLattice_laterClauses_hold D HW F Cm),
+    _root_.GlobalTheory.adm18_of_N1used D HW F Cm (_root_.GlobalTheory.NL.wach_used_clauses D HW F Cm),
     _root_.GlobalTheory.GenCountUnram.admGenL_all D⟩
 
 end GlobalTheory.TheoremCAdm

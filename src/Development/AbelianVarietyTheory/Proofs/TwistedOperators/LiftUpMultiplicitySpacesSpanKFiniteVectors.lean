@@ -23,8 +23,8 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PairThetaLiftFac
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftsCuspidalOfLowerTowerLiftsVanish
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LowerTowerLiftsVanishOfVanishOnFock
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LowerTowerLiftsVanishOnFock
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HermitianAdjointLawsStandardCharacterStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsConjWeilDatumExchangedPairStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HermitianAdjointLawsStandardCharacter
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsConjWeilDatumExchangedPair
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockVectorsConjAdjointPullbackBijection
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RealIntertwinerValuesKFinite
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.KFiniteSpanLeSpanRealIntertwinerValues
@@ -50,11 +50,11 @@ theorem liftUp_stage_span : GlobalTheory.Published.DiscreteSeriesCover → Globa
     GlobalTheory.T.pairThetaLift_factors_through_intertwiner D X hIn (_root_.GlobalTheory.PairLift.cuspAll_of_lowAll D X hIn (_root_.GlobalTheory.PairLift.lowAll_of_lowFock D X hIn (_root_.GlobalTheory.LowerMembersRule.lowFock D X hIn)))
   have hW := hp.weil
   have hstd : IsStdChar D c.ψ (-1) := hW.std
-  have hadj : AdjLaw c.ψ s.V s'.V := GlobalTheory.T.hermitianAdjoint_laws_standardCharacter D c.ψ hstd s.V s'.V
+  have hadj : AdjLaw c.ψ s.V s'.V := _root_.GlobalTheory.AdjLawPf.adjLaw D c.ψ hstd s.V s'.V
   have h0 : adjO s.V s'.V 0 = 0 := by
     have := hadj.add 0 0
     simpa using this
-  obtain ⟨ω', hW', hω'⟩ := GlobalTheory.T.exists_conj_weilDatum_exchangedPair D c.ψ s.V s'.V (c.χ k) (c.χ k) ω hW
+  obtain ⟨ω', hW', hω'⟩ := _root_.GlobalTheory.WeilConj.exists_conj_weilDatum D c.ψ s.V s'.V (c.χ k) (c.χ k) ω hW
   obtain ⟨j, -, hj⟩ := _root_.GlobalTheory.FockAdjoint.fock_dag D c.ψ c.θ hstd hc.inf s.V s'.V (Fr.ofModel s.M) (Fr.ofModel s'.M)
   obtain ⟨hvac', hpt⟩ := hj f (isVacF_of_isVacVec hp.vac)
   have hω'e : IsWeilExp c.ψ s'.V s.V (c.a k) (c.a k) ω' :=

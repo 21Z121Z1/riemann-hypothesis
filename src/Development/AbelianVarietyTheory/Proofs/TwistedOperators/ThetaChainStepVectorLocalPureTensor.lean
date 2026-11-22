@@ -2,12 +2,12 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsRedMap
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsIntOv
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdempotentMulEqZeroOfOrthogonal
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitIdempotentPrimeProjectionCorrespondenceStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DegreeOnePrimeReductionSplitPlaceDictionaryStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitIdempotentBaseFunctionIdentityStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitIdempotentPrimeProjectionCorrespondence
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DegreeOnePrimeReductionSplitPlaceDictionary
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitIdempotentBaseFunctionIdentity
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaFunctionSplitProductDatumIsPureTensor
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RestrictedTensorBasePointNormSq
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsIsLocalLevelAtPrimeOfLevelDatumStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsIsLocalLevelAtPrimeOfLevelDatum
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LevelDatumValueEqProdLocalResidueValues
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TwistDatumValueEqProdLocalResidueValues
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocalLevelDatumEqFunctionOfResidueReductionStatement
@@ -50,10 +50,10 @@ theorem stepVecLocal : ∀ D : D7, StepVecLocal D := by
   generalize hs : LS.Pg ∪ Q = s at *
   have hPs : ∀ PP, PP ∈ LS.Pg → PP ∈ s := fun PP h => hs ▸ Finset.mem_union_left _ h
   have hQs : ∀ PP, PP ∈ Q → PP ∈ s := fun PP h => hs ▸ Finset.mem_union_right _ h
-  have hsum := GlobalTheory.T.splitIdempotent_prime_projection_correspondence D
+  have hsum := _root_.GlobalTheory.SplitIdemDict.idem_dictionary D
   choose vP φP hφ hpr using fun i : ↥s => hsum.1 (es i.1) i.1 (hes i.1 i.2)
   choose rP hrP using fun i : ↥s => (show ∃ r, IsRedMap (φP i) i.1 r from
-    let ⟨r, h⟩ := (GlobalTheory.T.degree_one_prime_reduction_split_place_dictionary D (vP i) (φP i) i.1 (hpr i)).1; ⟨r, h⟩)
+    let ⟨r, h⟩ := (_root_.GlobalTheory.PlaceRed.red_dict D (vP i) (φP i) i.1 (hpr i)).1; ⟨r, h⟩)
 
   let ω : ∀ PP : Formalism.L2.DIV.Pl D.host.E, Matrix (Fin T.rank) (Fin S.rank) (Formalism.L2.DIV.kP PP) → ℂ := fun PP =>
     if h : PP ∈ LS.Pg then gLoc LS PP (Hl ⟨PP, h⟩) (cl ⟨PP, h⟩) (χ PP) else qLoc LS.r PP (ξ PP)
@@ -113,7 +113,7 @@ theorem stepVecLocal : ∀ D : D7, StepVecLocal D := by
     refine ⟨rfl, h6.symm, (h5 _ (h6 ▸ hφ i)).symm⟩
 
   have hmodel : ∀ i : ↥s, ∃ Tm, IsPlaceModel ψ (symplO S T) (heisO ψ S T) (es i.1) (latO S T ΛS ΛT fun _ => True) 1 f₀ Tm :=
-    fun i => (GlobalTheory.T.split_idempotent_base_function_identity D ψ θ S T sS sT ΛS ΛT f₀ hB (vP i) (es i.1) (hsplit i).1 (hsplit i).2).1
+    fun i => (_root_.GlobalTheory.PlaceModelOnto.placeModel_onto_local D ψ θ S T sS sT ΛS ΛT f₀ hB (vP i) (es i.1) (hsplit i).1 (hsplit i).2).1
   choose xθ hxθ using fun i : ↥s => GlobalTheory.PlaceDatum.exists_isThetaAt hψ hSd hTd (hes i.1 i.2).1.1
     (infPart_idemAt (hPi i)) (hmodel i) (hsb i)
   refine ⟨?_, ?_⟩
@@ -146,12 +146,12 @@ theorem stepVecLocal : ∀ D : D7, StepVecLocal D := by
         (x (.inl (vP i))) := by
       intro i
       by_cases hi : i.1 ∈ LS.Pg
-      · obtain ⟨mu, hmu⟩ := (GlobalTheory.T.degree_one_prime_reduction_split_place_dictionary D (vP i) (φP i) i.1 (hpr i)).2 (χ i.1)
-        obtain ⟨J, lam, hJ⟩ := GlobalTheory.T.exists_isLocalLevelAtPrimeOfLevelDatum D (vP i) (φP i) i.1 (rP i) (hrP i) _ LS (Hl ⟨i.1, hi⟩) (cl ⟨i.1, hi⟩)
+      · obtain ⟨mu, hmu⟩ := (_root_.GlobalTheory.PlaceRed.red_dict D (vP i) (φP i) i.1 (hpr i)).2 (χ i.1)
+        obtain ⟨J, lam, hJ⟩ := _root_.GlobalTheory.StepVec.exists_isLocLevel D (vP i) (φP i) i.1 (rP i) (hrP i) _ LS (Hl ⟨i.1, hi⟩) (cl ⟨i.1, hi⟩)
         have h := (hloc (vP i) (φP i) (es i.1) (hφ i) mu).1 ⟨i.1, hi⟩ (hpr i) hmu J lam hJ
         rwa [hcmpG i hi J lam mu hJ hmu] at h
       · have hq : i.1 ∈ Q := (Finset.mem_union.1 (hs ▸ i.2)).resolve_left hi
-        obtain ⟨mu, hmu⟩ := (GlobalTheory.T.degree_one_prime_reduction_split_place_dictionary D (vP i) (φP i) i.1 (hpr i)).2 (ξ i.1)⁻¹
+        obtain ⟨mu, hmu⟩ := (_root_.GlobalTheory.PlaceRed.red_dict D (vP i) (φP i) i.1 (hpr i)).2 (ξ i.1)⁻¹
         have h := (hloc (vP i) (φP i) (es i.1) (hφ i) mu).2 i.1 hq (hpr i) hmu
         rwa [hcmpQ i hq mu hmu] at h
     have hoff : ∀ p, (∀ i ∈ (Finset.univ : Finset ↥s), p ≠ .inl (vP i)) → x p = f₀ := by

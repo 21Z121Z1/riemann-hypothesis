@@ -44,11 +44,11 @@ theorem tendsto_val {E : Type} [Field E] [NumberField E] [IsCMField E] {H : Reci
     Tendsto (fun u => toC (evR Xo c g (y u))) (𝓝[≠] 0) (𝓝 0) := by
   haveI : IsLocalRing (CAt σ) := inferInstanceAs (IsLocalRing ℂ)
   obtain ⟨k, T, M₀, γ₀, xx, hT, hO₀, hL⟩ := _root_.GlobalTheory.ShFam.ArcLift.exists_orbit_lift E H Dw l Xo c O β Z σ N U A φ x fr ψ r y hσ hU hb.1 hm
-  obtain ⟨M, γ, hO, hγ⟩ := GlobalTheory.T.exists_holomorphicFrameOrbit_unipotent_order_two E N _ T M₀ γ₀ xx hO₀
+  obtain ⟨M, γ, hO, hγ⟩ := _root_.GlobalTheory.ShFam.OrbitUnip.exists_isOrbit_unipotent E N _ T M₀ γ₀ xx hO₀
   have hne : γ ≠ 1 := by
     rintro rfl
     obtain ⟨x₀, hx₀, x', h1, h2⟩ := _root_.GlobalTheory.ShFam.OrbitLimit.orbit_limit E N _ T M xx hO
-    exact GlobalTheory.T.boundary_arc_lift_not_converges_symmetric_domain E H Dw l Xo c O β Z σ N U A φ x fr ψ r y k T xx hσ hU hb hm hL x₀ hx₀ x' h1 h2
+    exact _root_.GlobalTheory.ShFam.BdArc.Leave.lift_not_converges E H Dw l Xo c O β Z σ N U A φ x fr ψ r y k T xx hσ hU hb hm hL x₀ hx₀ x' h1 h2
   obtain ⟨ξ, c', hξ, hc', ht⟩ := _root_.GlobalTheory.orbit_unipotent_short E N _ T M γ xx hO hγ hne
   obtain ⟨m, v, Lp, Lm, hlim⟩ :=
     _root_.GlobalTheory.ShFam.PerLim.exists_periods_tendsto_span E H Dw l Xo c O β Z σ N U A φ x fr ψ r y k T M γ xx hσ hU hb.1 hm hO hL

@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EncardSublatticesOfI
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMaximalIntegralHermitianLatticeOrthonormal
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemGenusIffMaximalIntegralHermitianLattice
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MaximalLatticeLocalFactorProductPosAndLe
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OrbitStabilizerMassEqWeightedSumFibresStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OrbitStabilizerMassEqWeightedSumFibres
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OrbitWeightedStabilizerSumMonoSubadditive
 
 open NumberField Matrix GlobalTheory.Mass Formalism.HermitianLatticesTheory
@@ -114,9 +114,9 @@ theorem main : MaxMass → ∀ (K V : Type) [Field K] [NumberField K] [StarRing 
   have hXst : Stable (isom h) X := by
     rintro g p ⟨h1, h2, h3⟩
     exact ⟨hDst g _ h1, hYst g _ h2, Submodule.map_mono h3⟩
-  have f1 := GlobalTheory.T.orbitStabilizerMass_eq_weightedSum_fibres (isom h) _ _ X (latsDisc (R := 𝓞 K) h n) Prod.fst (fun _ _ => rfl) hXst hDst
+  have f1 := _root_.GlobalTheory.Mass.orbMass_eq_orbSum_fibre (isom h) _ _ X (latsDisc (R := 𝓞 K) h n) Prod.fst (fun _ _ => rfl) hXst hDst
     (fun p hp => hp.1) (fun y hy => hfin y hy.1.1)
-  have f2 := GlobalTheory.T.orbitStabilizerMass_eq_weightedSum_fibres (isom h) _ _ X (genus h M₀) Prod.snd (fun _ _ => rfl) hXst hYst
+  have f2 := _root_.GlobalTheory.Mass.orbMass_eq_orbSum_fibre (isom h) _ _ X (genus h M₀) Prod.snd (fun _ _ => rfl) hXst hYst
     (fun p hp => hp.2.1) (fun y hy => hfin y hy.1)
   obtain ⟨mono, hconst, -⟩ := _root_.GlobalTheory.Mass.OrbMono.main (isom h) (Submodule (𝓞 K) V)
   have s1 : orbMass (isom h) (latsDisc (R := 𝓞 K) h n) ≤ orbMass (isom h) X := by

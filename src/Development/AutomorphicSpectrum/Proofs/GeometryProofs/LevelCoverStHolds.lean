@@ -6,7 +6,7 @@ import Development.AutomorphicSpectrum.Statements.GeometryStatements.LevelCoverS
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFullLevelAt
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointNormalCoords
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsFullLevelFiniteExtension
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsFiniteNormalModelOfResidueFinite
+import Development.WeilBound.CoreStatements.HodgeTatePoints.MfCoords
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FullLevelGenericCover
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProjectiveOverRestrictInt
 
@@ -82,7 +82,7 @@ theorem levelCover : LevelCoverSt := by
     | exact hfd
   have hfin := finite_descResidueField_spMap_comp (algebraMap K Ω) hi (y0 ≫ Y.j) hsurj
   obtain ⟨n, x, M, π, hMn, hπ, hMπ⟩ :=
-    _root_.GlobalTheory.CompanionTheory.Relay.exists_finite_normal_model_of_residue_finite Y.X _ hproj Ω (spMap (algebraMap K Ω) ≫ (y0 ≫ Y.j)) hfin
+    _root_.PositivityTheory.HtPt.Mf.xr_norm Y.X _ hproj Ω (spMap (algebraMap K Ω) ≫ (y0 ≫ Y.j)) hfin
   have hMg : IsCptGen M.ξ := by
     obtain ⟨hg, -, -, -⟩ := M.tie
     exact hg

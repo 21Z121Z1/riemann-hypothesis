@@ -5,11 +5,12 @@ import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Transv
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.WeilDatumExistence
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FlagUnipotentBesselCharacterLaws
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.WittSmallGroupEmbeddingMemPointwiseStabilizerIso
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MixedModelCentralTermsViaGramMatricesStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MixedModelCentralTermsViaGramMatrices
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsQuasiFam
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TransvectionIsUnitaryAdelic
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TransvectionStrictUpperMemFlagUnipotentRadical
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsTransvectionFixingFirstVectorsSum
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsTransvectionFixingIsotropicLastSumStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsTransvectionFixingIsotropicLastSum
 
 noncomputable section
 
@@ -43,7 +44,7 @@ theorem psi_qS_eq_one : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ), IsStdChar
   have hg : adj (rat x₀) ⬝ (gA W ⬝ rat x₀) = 0 := by
     have h : x₀ᴴ ⬝ HSpace.gram W ⬝ x₀ = 0 := by rw [Matrix.mul_assoc]; exact hx₀
     rw [gram_rat W h, rat_zero]
-  have hq := ((GlobalTheory.T.mixedModelCentralTerms_via_gramMatrices D).1 V V₀ W ρ d).2.1 c (rat x₀)
+  have hq := ((_root_.GlobalTheory.CentralGram.central D).1 V V₀ W ρ d).2.1 c (rat x₀)
   have h0 : GlobalTheory.IndefiniteRowSideFullHecke.SkewGramHalfModule.gramSkew W (rat x₀) = 0 := by
     rw [GlobalTheory.IndefiniteRowSideFullHecke.SkewGramHalfModule.gramSkew, hg, Matrix.transpose_zero, smul_zero]
   rw [HypDec.qS, hq, h0]
@@ -65,7 +66,7 @@ theorem conjBessel_isTh : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ), IsStdCh
     have key : ∃ v : GlobalTheory.IndefiniteRowSideFullHecke.TransvectionAction.VA B.V, GlobalTheory.IndefiniteRowSideFullHecke.TransvectionAction.form B.V (GlobalTheory.IndefiniteRowSideFullHecke.TransvectionAction.vecX B.d (GlobalTheory.IndefiniteRowSideFullHecke.TransvectionAction.ratVec a)) v = 0 ∧ (∀ i k : Fin ρ, k ≤ i → GlobalTheory.IndefiniteRowSideFullHecke.TransvectionAction.form B.V (GlobalTheory.IndefiniteRowSideFullHecke.TransvectionAction.vecX B.d (Pi.single k 1)) v * GlobalTheory.IndefiniteRowSideFullHecke.TransvectionAction.ratVec a i = 0) ∧ ∀ u : GA D B.V, GlobalTheory.IndefiniteRowSideFullHecke.TransvectionAction.IsTransv B.V (GlobalTheory.IndefiniteRowSideFullHecke.TransvectionAction.vecX B.d (GlobalTheory.IndefiniteRowSideFullHecke.TransvectionAction.ratVec a)) v u → (∀ i : {i : Fin ρ // i ≤ j}, u ∈ fixer B.V (B.d.jX.submatrix id fun _ : Fin 1 => i.1)) ∧ simpleSum B.d z u = s := by
       rcases lt_or_eq_of_le (Nat.succ_le_of_lt j.2) with h | h
       · exact _root_.GlobalTheory.TransvMid.exists_mid D B.V B.V₀ ρ B.d z j a haj hai h s
-      · exact GlobalTheory.T.exists_transvection_fixing_isotropic_last_sum D B.V B.V₀ ρ B.d z (vecB_norm_ne D B.V₀ B.A B.L B.o B.ζ B.line) j a haj hai h s
+      · exact _root_.GlobalTheory.TransvLast.exists_transv_simpleSum_last D B.V B.V₀ ρ B.d z (vecB_norm_ne D B.V₀ B.A B.L B.o B.ζ B.line) j a haj hai h s
     obtain ⟨v, hv0, hvT, hv⟩ := key
     obtain ⟨u, hu⟩ := _root_.GlobalTheory.TransvAdelic.transv_unitary D B.V B.V₀ ρ B.d (GlobalTheory.IndefiniteRowSideFullHecke.TransvectionAction.ratVec a) v hv0
     obtain ⟨hfix, hus⟩ := hv u hu

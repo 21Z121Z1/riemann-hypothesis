@@ -2,10 +2,10 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.SameIdIff
 import Development.AbelianVarietyTheory.Definitions.Divisors.NotIsIsoSpMapDnFst
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsCrystalPairing
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdditiveLineBundleFamilyCalculusRulesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdditiveLineBundleFamilyCalculusRules
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualNumberFieldHomFlatSurjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLiftMonoOfFpqcCoverLift
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMonoFiniteTypeAgreementLocusInjectiveFamilStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMonoFiniteTypeAgreementLocusInjectiveFamil
 
 set_option autoImplicit false
 noncomputable section
@@ -39,14 +39,14 @@ theorem tanLift_of_fieldChart : ∀ (S : Scheme.{0}) (A : Over S) [GrpObj A], Is
     ∀ (U : Over S) [LocallyOfFiniteType U.hom] (M : LB (A ⊗ U).left), Fam A M → Inj A M → FieldChart A M →
       TanLift A M := by
   intro S A _ hA U _ M hM hInj hFC k _ s N hN u₀ h₀
-  obtain ⟨hpull, -, -, hcomp, hev⟩ := GlobalTheory.T.additiveLineBundleFamily_calculus_rules S A
+  obtain ⟨hpull, -, -, hcomp, hev⟩ := _root_.GlobalTheory.FamCalc.famCalc S A
   obtain ⟨ψ, hψ₁, hψ₂, hflat, hsurj⟩ :=
     _root_.GlobalTheory.DualOpen.dualNumber_map_flat_surjective k (AlgebraicClosure k) (algebraMap k (AlgebraicClosure k))
 
   let T : Over S := Over.mk (spMap (dnInl k) ≫ s)
   haveI : IsNoetherianRing (DualNumber k) := inferInstance
   haveI : IsLocallyNoetherian T.left := (inferInstance : IsLocallyNoetherian (Sp (DualNumber k)))
-  obtain ⟨G, π, hmono, -, hG⟩ := GlobalTheory.T.exists_mono_finiteType_agreement_locus_injective_family S A hA T U N M hN hM hInj
+  obtain ⟨G, π, hmono, -, hG⟩ := _root_.GlobalTheory.DualGraph.exists_mono_same S A hA T U N M hN hM hInj
   haveI : Mono π.left := hmono
 
   let Y : Over S := Over.mk (spMap ψ ≫ spMap (dnInl k) ≫ s)

@@ -64,7 +64,7 @@ theorem fock_coef_real : GlobalTheory.IndefiniteRowSideFullHecke.MatrixMinorProd
     simp only [GlobalTheory.IndefiniteRowSideFullHecke.HolomorphicLowestType.pW, GlobalTheory.IndefiniteRowSideFullHecke.HolomorphicLowestType.qW] at e1
     simp only [pW]
     omega
-  have hharm := fun τ => GlobalTheory.T.mixed_laplacian_kills_product_of_minors D (Wc D i).rank (Vc D i).rank (pW D i) (qW D i) (aPlAt D i σ) (aMiAt D i σ) hpq τ
+  have hharm := fun τ => _root_.GlobalTheory.MinorHarmonic.laplacian_delta D (Wc D i).rank (Vc D i).rank (pW D i) (qW D i) (aPlAt D i σ) (aMiAt D i σ) hpq τ
   have hkill := _root_.GlobalTheory.FockKillAdapted.killed_of_harmonic_adapted D R.ψ R.θ (Vc D i) (Wc D i) cμ (cμ * cη⁻¹) ω hθ hW _ (R.MW i σ) (D.sp.V_sig _) (D.sp.W_sig _)
     (R.BV i) (hm.BV i) (pW D i) hε BW hBW f hfth hvac (deltaAtEmb D i σ) hharm
   have hee := _root_.GlobalTheory.RawLift.FockPair.coef_one_vector D R.ψ R.θ (Vc D i) (Wc D i) cμ (cμ * cη⁻¹) ω hθ hW _ (R.MW i σ) hHol hWt μ 𝓧 hcv c hc pt hptTh

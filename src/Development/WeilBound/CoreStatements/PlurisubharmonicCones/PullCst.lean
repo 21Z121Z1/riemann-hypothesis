@@ -27,7 +27,8 @@ import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularizedHodgeMetri
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PositionPot
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterNamed
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RootOriginComparisonSubset
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CmHostRankBoundsStatement
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CmHostRankBounds
+import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField Matrix Filter Topology
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi
@@ -93,7 +94,7 @@ theorem tie_of (hC : Common) (hR : Replace) (hB : BaseSide) : PB.AgreementPos �
   obtain ⟨x₀, hx₀⟩ := _root_.GlobalTheory.CompanionTheory.Ar.GenOpen.gen_open E H D l _ c _ _ Y _ _ _ _ _ (o.Or B a).𝔐 hmono
   have alg := _root_.GlobalTheory.CompanionTheory.Ar.RootAlg.algOver_of_immersion E H D l _ c _ _ Y _ _ _ _ (o.Or B a) (spMap (o.Or B a).𝔐.fn ≫ x₀) (by
     rw [Category.assoc, ← hx₀]; exact (o.Or B a).𝔐.fn_over) hmono (hEx.1 a)
-  have : Nonempty (RootIx D) := ⟨(Classical.choice (GlobalTheory.T.cm_host_rank_bounds E H).2.1, ⟨0, by omega⟩)⟩
+  have : Nonempty (RootIx D) := ⟨(Classical.choice (_root_.GlobalTheory.CompanionTheory.Ar.Top.HostNumbers.host_numbers E H).2.1, ⟨0, by omega⟩)⟩
   obtain ⟨K', _, ρ', _, κ, v, y', hb, hy, hfield, har', hcore⟩ := anCore hR hB hI hK hII ((o.Or B a).Re.comap some) alg
     (gapc (muExp D.p)) (Top.combLine (o.Or B a).sing (muExp D.p)) (by
       simp only [Top.combLine, (o.Or B a).sing_deg]

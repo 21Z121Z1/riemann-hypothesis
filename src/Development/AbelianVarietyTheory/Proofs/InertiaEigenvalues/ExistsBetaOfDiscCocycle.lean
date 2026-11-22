@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsDiscMaps
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CrystallineLatticeFrobeniusRationalColumns
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AinfDvdOfClosedDiscDvdEisensteinPow
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCongrPowE
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EisensteinImagePowIdealAinfPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EisensteinImagePowIdealAinfProperties
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsInvLift
 import Development.AbelianVarietyTheory.CrystallinePeriods.RingBasics
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.WeaklyAdmissibleFiltrations Formalism.MainNotions.N TensorProduct PowerSeries GlobalTheory.Prism GlobalTheory.BKReal GlobalTheory.Per GlobalTheory.BSP GlobalTheory.MemLoc GlobalTheory.Pst GlobalTheory.BKLim GlobalTheory.Cong Matrix
@@ -93,7 +93,7 @@ theorem dvd_gal_E (bk : BK K) (g : GQ l) : bk.ev bk.E ∣ Per.σA g (bk.ev bk.E)
 theorem dvd_of_iS_dvd (bk : BK K) (s : bk.S) (h : bk.iS bk.E ∣ bk.iS s) : bk.E ∣ s := by
   have h2 : bk.ev bk.E ^ 1 ∣ bk.ev s :=
     (GlobalTheory.BSP.ainf_dvd_of_disc_dvd l K bk (bk.ev s)).1 1 (by rw [pow_one]; exact h)
-  have h3 := (GlobalTheory.T.eisensteinImage_pow_ideal_ainf_properties l K bk 1).2.1 s h2
+  have h3 := (_root_.GlobalTheory.AinfEPow.ePow_facts l K bk 1).2.1 s h2
   rwa [pow_one] at h3
 
 end GlobalTheory.BKLim.BetaDR

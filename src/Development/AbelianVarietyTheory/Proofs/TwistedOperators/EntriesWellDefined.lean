@@ -14,16 +14,16 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsParabolicD
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RootExchangeUnipotentExistsResidueCardPowMemNhdsStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HaarCompactOpenRatioEqZpowOfTopNilpotent
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParabolicHaarVolumeConjIntersectionEqMul
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralTranslateIndicatorStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralTranslateIndicator
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsQuotIntCosetFnStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsAdaptedExponentSchwartzBruhatLastColumnStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteQuotientCosetsScaledStandardLatticeBoxStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsAdaptedExponentSchwartzBruhatLastColumn
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteQuotientCosetsScaledStandardLatticeBox
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsGenericLevelOfFrame
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsIsSymmetricPositionLevel
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GenericLevelOfFrameBlockAndCharacter
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SymmetricPositionLevelShapeOnParabolic
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FirstVertexIteratedLevelChainInFrame
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FirstVertexParahoricLevelChainTwistStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FirstVertexParahoricLevelChainTwist
 
 open MeasureTheory ValuativeRel Matrix Topology
 open scoped ENNReal
@@ -299,10 +299,10 @@ theorem reps_image {T : Chain k s X Z} (hL : T.Laws) {A A' : RepFam k s X}
 theorem chainFinite (hψ : HasConductor ψ 1) : ChainFinite ψ ν := by
   intro s X _ _ Z _ _ T hT hL
   refine ⟨fun j c h g g' => ?_, fun A hA => ⟨reps_finite hψ hT hA, fun A' hA' => reps_image hL hA hA',
-    fun ϖ hϖ => ?_, fun c₁ c₂ => (GlobalTheory.T.finite_quotient_cosets_scaledStandardLatticeBox k _ c₁ c₂).subset fun yb ⟨y, hy, e, _⟩ => ⟨y, hy, e⟩⟩⟩
+    fun ϖ hϖ => ?_, fun c₁ c₂ => (_root_.GlobalTheory.BoxCosets.finite_cosets k _ c₁ c₂).subset fun yb ⟨y, hy, e, _⟩ => ⟨y, hy, e⟩⟩⟩
   · exact (stepWellDefined hψ _ _ (c + 1) (by omega) _ _ _ _ (hT.1 _ _ _) (isCO_lev hT _ _ _) (isCO_lev hT _ _ _)
       (hL.1 j (c + 1) (by omega))).2.2.2.2.2.2 _ g g'
-  · obtain ⟨e, he, H⟩ := GlobalTheory.T.exists_adapted_exponent_schwartzBruhat_lastColumn k _ _ _ ((reps_finite hψ hT hA s 0 rfl).image
+  · obtain ⟨e, he, H⟩ := _root_.GlobalTheory.AdaptedExp.exists_adapted_exponent k _ _ _ ((reps_finite hψ hT hA s 0 rfl).image
       fun g => om (T.mu (s + 1)) g 1 (T.Phi s 0 rfl)) (by
         rintro _ ⟨g, -, rfl⟩; exact om_mem_SB _ _ _ (hT.1 _ _ _)) ϖ hϖ
     exact ⟨e, he, fun g hg => H _ ⟨g, hg, rfl⟩⟩
@@ -348,7 +348,7 @@ theorem cosetMeasure : CosetMeasure ν := by
       ENNReal.toReal_inv]
     ring
   · have key := GlobalTheory.T.isQuotInt_cosetFn_alt k ν n c J hJ h m (volR ν m (Cgrp J h)).toReal (ENNReal.toReal_pos v0 v1).ne'
-      (fun u hu g => by rw [GlobalTheory.T.integral_indicator_Cgrp_translate_eq_deltaR_mul k ν n c hc J hJ h hC m u hu g, hv, ENNReal.toReal_mul]) μG f hf
+      (fun u hu g => by rw [_root_.GlobalTheory.StepAvg.integral_translate_indicator k ν n c hc J hJ h hC m u hu g, hv, ENNReal.toReal_mul]) μG f hf
     exact ⟨fun hz => (QuotInt.quotInt_unique_exists k n c 1 le_rfl hc ν m μG f).1 _ _ hz key, fun e => e ▸ key⟩
 
 theorem volumeCancels : VolumeCancels ν := by
@@ -408,7 +408,7 @@ theorem firstVertexChains (hψ : HasConductor ψ 1) : FirstVertexChains ψ ν :=
     rcases hP with hP | ⟨ρ, -, hP⟩
     exacts [_root_.GlobalTheory.GenericShape.generic_shape k ψ ϖ _ _ P hP, _root_.GlobalTheory.SymShape.sym_shape k ψ ϖ ρ _ _ P hP]
   · exact firstVertex (Chain.ofTwist_regular _ _ _ _ _) (Chain.ofTwist_laws _ _ _ hη _ _)
-      (GlobalTheory.T.firstVertex_parahoricLevelChain_twist k ψ hψ s t κ δ hδ η)
+      (_root_.GlobalTheory.TwistVertex.firstVertex_twist k ψ hψ s t κ δ hδ η)
 
 end First
 

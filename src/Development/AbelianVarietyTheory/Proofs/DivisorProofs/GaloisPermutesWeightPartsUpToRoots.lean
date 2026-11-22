@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WtChar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GalLab
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapInverseNatCast
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaSetupDividingLabelPersistsDeeperLevelStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaSetupDividingLabelPersistsDeeperLevel
 
 noncomputable section
 
@@ -142,7 +142,7 @@ theorem exists_root_galois : ∀ (g n : ℕ) (F : SFam g n (zetaAway n)) (W : Ma
     have hne : (X₁.S.supI X₁.M z₁).Nonempty := X₁.div z₁
     rw [GSum.base, dif_pos hne]
     exact hne.some_mem
-  have hb' := GlobalTheory.T.thetaSetup_dividingLabel_persists_deeperLevel g n F W Z i X₁ hg hn hodd hi hE hT hP ε₁ hε₁ D z₁ _ hb z₂ hq
+  have hb' := _root_.GlobalTheory.Poinc.DivDeep.main g n F W Z i X₁ hg hn hodd hi hE hT hP ε₁ hε₁ D z₁ _ hb z₂ hq
   have hl : ∀ κ : X₁.S.Gam, GSum.lift D z₂ κ ∈ D.X.S.HH D.X.M z₂ ∧ ∃ κ', D.m • GSum.lift D z₂ κ = D.lab κ' := fun κ => by
     by_cases h : ∃ h' ∈ D.X.S.HH D.X.M z₂, D.m • h' = D.lab κ
     · rw [GSum.lift, dif_pos h]

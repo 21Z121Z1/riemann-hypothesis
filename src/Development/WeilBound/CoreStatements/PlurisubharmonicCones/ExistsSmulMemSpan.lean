@@ -10,7 +10,9 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 import Development.AbelianVarietyTheory.PublishedTheorems.SemiabelianTori.GeometricallyConnectedSplitTorusAff
-import Development.AutomorphicSpectrum.Proofs.AdelicProofs.PadicEmbeddingDiscreteValuationRingStatement
+import Development.AutomorphicSpectrum.Proofs.AdelicProofs.PadicEmbeddingDiscreteValuationRing
+import Development.AutomorphicSpectrum.Definitions.AdelicLattices.FactPrimes
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LatNormGrLatNeZeroOfSpan
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExtendedArcUAdicUniformisationOfArcData
 import GroundTheory.HeightsAndTheta.Heights.ArithDegree
 
@@ -220,7 +222,7 @@ theorem fin_norm (hρ : MB.IsActOf t'.act.act ρM)
     (hN : HasFinNorm U τ φ p (j.comp β) r) :
     r = Real.log ‖j (φ F y (fun k => vec (x₁ k)) fun k => vec (x₂ k))‖ + Real.log ‖j.comp e ((T₁.det : 𝓞 L) : L)‖ -
       Real.log ‖j.comp e ((T₂.det : 𝓞 L) : L)‖ := by
-  obtain ⟨V, hV, hV1, hV2, -⟩ := GlobalTheory.T.padic_embedding_discrete_valuation_ring F p j
+  obtain ⟨V, hV, hV1, hV2, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Fl.ValRing.exists_dvr_of_padic_embedding F p j
   let gV : 𝓞 L →+* V := (e.comp (algebraMap (𝓞 L) L)).codRestrict V.toSubring fun a =>
     hV2 (RingOfIntegers.mapRingHom e a)
   have hgV : (algebraMap V F).comp gV = e.comp (algebraMap (𝓞 L) L) := rfl

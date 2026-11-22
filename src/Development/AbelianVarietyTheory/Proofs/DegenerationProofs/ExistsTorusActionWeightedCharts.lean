@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Definitions.Degenerations.CompanionTheor
 import Development.AbelianVarietyTheory.Statements.SemistableTorsion.UTorsSt
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUniqueIsRatio
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsClosedImmersionBySectionsOfSpan
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsClosedImmersionAbelianPartBundleStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsClosedImmersionAbelianPartBundle
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsPartPartSec
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.EqOfWeightEq
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsPureWeightSectionNeZeroAt
@@ -369,7 +369,7 @@ theorem exists_split : Out.Laws → Out.Laws2 → ∀ (k : Type) [Field k] [IsAl
   have pure0 : ∀ i : {i // Ch.wt i = Ch.c₀}, Φ.Pure 0 (F' (e i.1)) := fun i => pure 0 h0 _ (i.2.trans hc₀.symm)
   choose s hs₁ hs₂ hs₃ using fun i => (FibPre.pure_zero k Φ).2 _ (pure0 i)
   have hs : ImmBy Φ.E.B.hom Φ.N₀ s Set.univ := by
-    obtain ⟨n, t, ht⟩ := GlobalTheory.T.exists_closedImmersion_abelianPart_bundle hL hL2 k Φ N hB.four π
+    obtain ⟨n, t, ht⟩ := _root_.GlobalTheory.VeryAmpleMove.exists_immBy_abelianPart hL hL2 k Φ N hB.four π
     have := Φ.E.isAbelian.proper
     refine SpanImm.immBy_of_span k _ _ _ Φ.isLB _ _ t s ht fun i => ?_
     obtain ⟨φ, hφ, hw⟩ := (FibPre.pure_zero k Φ).1 (t i)

@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaloisCocycleInt
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NonzeroClassBoundedTorsion
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CocycleVanishesOnKerToGSOfInertiaCoboundaryStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NotCongruentZeroIntCastMulPrimePowStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CardDualCocyclesModPrimePowUnramifiedOutsideSBouStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CardDualCocyclesModPrimePowUnramifiedOutsideSBou
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CardPrimePowTorsionSelmerClassesModPrimePowBound
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GreenbergWilesDualSelmerLowerBoundModPrimePow
 open NumberField IsDedekindDomain Formalism.ConjugateSelfDual ReciprocityTheory.Gal Formalism.MainNotions.N GlobalTheory.GalOfCusp UpperTheory.V UpperTheory.V.Af UpperTheory.V.HV GlobalTheory.Ord2
@@ -50,7 +50,7 @@ theorem dual_classes_unbounded : GlobalTheory.Mem.LiteralAutomorphy.LitCoh → �
     exact ⟨x, fun s hs => by rw [hYs]; exact hx s hs⟩
   refine ⟨c, hW, fun m => ?_⟩
   obtain ⟨C, hC⟩ := _root_.GlobalTheory.Ord2.GwIneq.gw_ineq hL l Ω e S A W hN c hW
-  obtain ⟨B, hB⟩ := _root_.GlobalTheory.Ord2.TorsBound.tors_bound l Ω e S A W hN c hW (GlobalTheory.T.card_dualCocyclesModPrimePow_unramifiedOutsideS_bounded_alt hL l Ω e S A W hN c hW) m
+  obtain ⟨B, hB⟩ := _root_.GlobalTheory.Ord2.TorsBound.tors_bound l Ω e S A W hN c hW (_root_.GlobalTheory.Ord2.GwFin.card_dualCocyclesModPrimePow_unramifiedOutsideS_bounded hL l Ω e S A W hN c hW) m
   obtain ⟨t, ht⟩ : ∃ t : ℕ, t = C * B + 1 := ⟨_, rfl⟩
   have hlt : C * B < l ^ t := by
     have := Nat.lt_pow_self (Fact.out : l.Prime).one_lt (n := t)

@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DepthLatticeGrid
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SmulMemLatOIdem
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsSelfDualFractionalIdealSmulLatticeOfNormOne
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsConjugateInverseStaircaseModulusIdeal
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DepthLatticeGridRowLeSelfDualHomLatticeShiftStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DepthLatticeGridRowLeSelfDualHomLatticeShift
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.IsSelfDualCOfBase
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DepthLatticeGridRowZeroLeSelfDualHomLattice
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IdempotentSmulMemHatLattice
@@ -41,7 +41,7 @@ theorem latRow_bidual : All fun {D} _ _ {sc} {G} W _ => ∀ i, i < D.R.m → ∀
   have hB : ∀ v ∈ latRow G i, v ∈ latBig G i := by
     rcases Nat.eq_zero_or_pos i with rfl | hi1
     · exact fun v hv => _root_.GlobalTheory.RowBig.latRow_zero_le_latBig D hq T L μ0 hL sc G W M hM hi hv
-    · exact fun v hv => GlobalTheory.T.depthLatticeGridRow_le_selfDualHomLatticeShift D hq T L μ0 hL sc G W M hM i hi1 hi hv
+    · exact fun v hv => _root_.GlobalTheory.RowBig.latRow_le_latBig D hq T L μ0 hL sc G W M hM i hi1 hi hv
   have hdep := _root_.GlobalTheory.DepthBig.smul_mem_hatMx_of_mem_latBig D hq T L μ0 hL sc G W M hM i hi
   have finO := (GlobalTheory.AscFinWit.finLat_latO sdS.1 sdT.1).fin
   have finB := (GlobalTheory.AscFinWit.finLat_latO (LS := G.Λ (.grid (i + 1) 0)) sdS.1 sdB.1).fin

@@ -13,14 +13,15 @@ import Development.AbelianVarietyTheory.Definitions.Uniformization.PointEqOfSubs
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.GagaSections
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatGenFrameComplexCompatStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatGenFrameComplexCompat
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsConstMul
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericFibreUniformisedFrame
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.PadicEmbeddingValuationSubring
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FiniteConstantAllHolds
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.LogIdealSupportFinite
 import Development.AutomorphicSpectrum.Definitions.AdelicLattices.FactPrimes
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LatNormGrLatNeZeroOfSpan
-import Development.AutomorphicSpectrum.Proofs.AdelicProofs.PadicEmbeddingDiscreteValuationRingStatement
+import Development.AutomorphicSpectrum.Proofs.AdelicProofs.PadicEmbeddingDiscreteValuationRing
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Fl GlobalTheory.CompanionTheory.Ar.Flat
 
@@ -58,7 +59,7 @@ theorem exists_place {l : Level H} (c : Coeff l) [NumberField c.F] (p : Nat.Prim
     ∃ W : ValuationSubring ℂ, ((p : ℕ) : ℂ) ∈ W.nonunits ∧ IsDiscreteValuationRing (c.V W) ∧
       ∀ x : c.F, ‖κ x‖ ≤ 1 ↔ x ∈ c.V W := by
   obtain ⟨W, hp, hW⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.exists_valuationSubring_of_padicEmbedding c.F p κ
-  obtain ⟨V, hV, hκ, -, -⟩ := GlobalTheory.T.padic_embedding_discrete_valuation_ring c.F p κ
+  obtain ⟨V, hV, hκ, -, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Fl.ValRing.exists_dvr_of_padic_embedding c.F p κ
   have hmem : ∀ x : c.F, x ∈ c.V W ↔ ‖κ x‖ ≤ 1 := fun x => (hW x).symm
   have heq : c.V W = V := by ext x; rw [hmem, hκ]
   refine ⟨W, hp, ?_, fun x => (hmem x).symm⟩
@@ -131,7 +132,7 @@ theorem thmFlatA_of_parts : PartI → FlatLineGenerator → FlatLineGeneratorCom
   have hfin : ∀ (p : Nat.Primes) (κ : c.F →+* ℂ_[p]), ∃ t, HasFinNorm U τ φ p κ t := by
     intro p κ
     obtain ⟨φ', hφ', -, t, ht⟩ := key p κ
-    obtain ⟨a, ha, he⟩ := GlobalTheory.T.flat_gen_frame_complex_compat E H D l (Xo l) c U τ φ' φ g ty FU i hty hφ' hφ
+    obtain ⟨a, ha, he⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.flatGen_unique E H D l (Xo l) c U τ φ' φ g ty FU i hty hφ' hφ
       (fun y hy hr => (hP y hy).1 hr)
     exact ⟨_, hasFinNorm_of_eq hφ.line ha he ht⟩
   let N : LogNorms c.F := ⟨fun s => (hinf s).choose, fun p κ => (hfin p κ).choose -
@@ -147,7 +148,7 @@ theorem thmFlatA_of_parts : PartI → FlatLineGenerator → FlatLineGeneratorCom
   by_contra hcon
   simp only [Set.mem_union, Set.mem_setOf_eq, not_or, not_exists, not_not] at hcon
   obtain ⟨⟨h1, h2⟩, h3⟩ := hcon
-  obtain ⟨-, -, -, -, hd⟩ := GlobalTheory.T.padic_embedding_discrete_valuation_ring c.F p ι₀
+  obtain ⟨-, -, -, -, hd⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Fl.ValRing.exists_dvr_of_padic_embedding c.F p ι₀
   have hd' : ‖((H.d : ℕ) : ℂ_[p])‖ = 1 := by simpa using hd H.d h2
   have h0 := hn0 p ι₀ _ h1 (hN.2 p ι₀)
   rw [h3 (ι₀.comp (tauIn c τ)), hd', Real.log_one] at h0

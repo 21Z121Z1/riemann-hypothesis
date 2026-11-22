@@ -4,16 +4,16 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.IsPshLocallyIntegrableStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LogPeriodLimit
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsIsChart
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsIsKerProjStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsIsKerProj
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ChartWSaturatedAndContinuousSection
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.IsotropicSubmoduleNonzeroFamily
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.RiemannLatticeEigenProjections
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.MemChartWOfContinuousPeriodStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsEigenComponentPolynomialStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.MemChartWOfContinuousPeriod
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsEigenComponentPolynomial
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.EigenComponentSpanRelIndexCriterion
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsContinuousChangeOfFrameStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.GramDetMulNormSqDet
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.GramDetImEqZeroStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.GramDetImEqZero
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsFamilyInIdealOfIsOFamily
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.NzEqNzOfAndPos
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.GramDetPosOfSemidefiniteTransversalStatement
@@ -70,7 +70,7 @@ theorem limit_of_data : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (
   simp only [Fin.cast_eq_self] at hT
   obtain ⟨y, hyI, hyv, hyli, hidx⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.BoundaryLimit.oFamily_of_image E g Λ W I per (L.B 0) r v hIW hinj hact hfam
   have h0ball : (0 : Fin n → ℂ) ∈ Metric.ball (0 : Fin n → ℂ) 1 := Metric.mem_ball_self one_pos
-  choose cf hcf using fun τ => GlobalTheory.T.exists_eigenComponent_polynomial E (σ τ)
+  choose cf hcf using fun τ => _root_.GlobalTheory.CompanionTheory.Ar.Cusp.EigCoef.eigComp_eq_combination E (σ τ)
   let f : Ψ → (Fin n → ℂ) → Fin r → Fin g → ℂ := fun τ z a => eigComp (L.B z) (σ τ) (s (y a) z)
   let qt : Ψ → (Fin n → ℂ) → Fin k → Fin g → ℂ := fun τ z c => ∑ j, T τ j (Fin.natAdd r c) • b τ j z
   let F : Ψ → (Fin n → ℂ) → Fin (r + k) → Fin g → ℂ := fun τ z => Fin.append (f τ z) (qt τ z)
@@ -227,7 +227,7 @@ theorem limit_of_data : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (
     have e1 := _root_.GlobalTheory.CompanionTheory.Ar.RiemannLimit.GramChange.gram_det_change E g Λ R (r + k) (fun i => b τ i z) (F τ z) (Tt τ z) (h1 τ)
     rw [hGQ τ] at e1
     have e2 := congrArg Complex.re e1
-    rw [Complex.mul_re, GlobalTheory.T.gram_det_im_eq_zero E g Λ R r (f τ z), zero_mul, sub_zero, Complex.re_ofReal_mul] at e2
+    rw [Complex.mul_re, _root_.GlobalTheory.CompanionTheory.Ar.Cusp.GramReal.gram_det_im_zero E g Λ R r (f τ z), zero_mul, sub_zero, Complex.re_ofReal_mul] at e2
     exact e2.symm
   obtain ⟨hnz, hnzpos⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.NzCase.nz_eq_nzOf_of_family E g Λ Ψ R σ I r (fun a' => (y a' : Λ)) hσ (fun x hx y hy => hiso x hx y hy) hyI hyli
     (by rw [← hidxdef]; exact hidx0)
@@ -258,9 +258,9 @@ theorem limit_at_centre : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E]
   intro E _ _ _ n a g Λ _ _ Ψ _ L σ m b hσ hb
   classical
   obtain ⟨bas, A, T0, B, c, ρ, h⟩ := exists_isChart L.toLogPeriods
-  obtain ⟨Pr, hPr⟩ := GlobalTheory.T.exists_isKerProj' g (∑ j, B j)
+  obtain ⟨Pr, hPr⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.BoundaryLimit.exists_isKerProj g (∑ j, B j)
   obtain ⟨hsat, hs, hinj, hspan⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.BoundaryLimit.noMonodromy_lattice n a g Λ L.toLogPeriods bas A T0 B c ρ h
-  obtain ⟨hext, hlim⟩ := GlobalTheory.T.mem_chartW_of_continuous_period n a g Λ L.toLogPeriods bas A T0 B c ρ h
+  obtain ⟨hext, hlim⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.CentrePeriods.periods_at_centre n a g Λ L.toLogPeriods bas A T0 B c ρ h
   obtain ⟨hHerm, hIm, hKill, hPos⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.BoundaryLimit.LimitForm.limit_form n a g Λ L.toLogPeriods bas A T0 B c ρ Pr h hPr
   obtain ⟨hQc, ρ', hρ', hrep⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.BoundaryLimit.QuotientForm.quotient_form_rep n a g Λ L.toLogPeriods bas A T0 B c ρ Pr h hPr
   have h0ball : (0 : Fin n → ℂ) ∈ Metric.ball (0 : Fin n → ℂ) 1 := Metric.mem_ball_self one_pos

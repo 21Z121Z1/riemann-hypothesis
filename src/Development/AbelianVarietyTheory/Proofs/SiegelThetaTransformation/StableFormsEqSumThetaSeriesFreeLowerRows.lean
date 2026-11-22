@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsStabForm
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LevelThetaSpan
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LevelStructureProperties
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaSeriesLowerRowsZeroEqFreeLowerRowsStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaSeriesLowerRowsZeroEqFreeLowerRows
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.VacuumMultiplierUnitaryCocycle
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsFormExtendToAllLattices
 
@@ -41,7 +41,7 @@ theorem GlobalTheory.Dict.stabForms_eq_sum_thP : ∀ (E : Type) [Field E] [Numbe
   obtain ⟨m, Λ, P, a, hΛP, hFsum⟩ :=
     GlobalTheory.SW.level_theta_span E r X g q0 hr bas idx n hS hE hn4 D hn M hM hMm v₀ hv mu hmu k k' F hF
 
-  have h97 := fun j => GlobalTheory.T.thetaSeries_lowerRowsZero_eq_freeLowerRows E r X g q0 hr bas idx n hS hE D hn M 𝔐 𝔍 hM hMm hmf hcop v₀ hv
+  have h97 := fun j => _root_.GlobalTheory.Dict.DiagFree.thP_phi_eq_thP_phiF E r X g q0 hr bas idx n hS hE D hn M 𝔐 𝔍 hM hMm hmf hcop v₀ hv
     k k' (Λ j) (hΛP j).1 (P j) (hΛP j).2
   choose Λ' hΛ' P' hP' heq using h97
   refine ⟨m, Λ', fun j => a j • P' j, fun j => ⟨hΛ' j, Submodule.smul_mem _ _ (hP' j)⟩, ?_⟩

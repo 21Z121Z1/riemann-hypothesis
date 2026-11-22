@@ -20,17 +20,17 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DimClosureGener
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DimOfIsArithVar
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanIntegralEq
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.VertEq
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MixedCycleReadExistsStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MixedCycleReadCombinationStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MixedCycleReadExists
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MixedCycleReadCombination
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MixedCyclePointDictionary
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MixedCycleCodimensionOne
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MixedCycleRationalExistsStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MixedCycleOfRationalStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MixedCycleRationalExists
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MixedCycleOfRational
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanIntegrableOn
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MixedPointLengthFormula
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MixedCurveIntersectionFormula
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeightEqOfFullIntersectionSystemStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeightEqOfFullIntersectionSystem
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MixedPolarizationIdentity
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianLineBundleSmooth
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ArakelovCycleHeights.QpSndStr
@@ -73,7 +73,7 @@ theorem formZ_direct :
   refine ⟨Φ, fun a => ?_, h0⟩
   have Rc := GlobalTheory.CompanionTheory.MixZ.readComb m n ι M A RA a
   have sC := isSmoothHerm_combLine sA a
-  have H := exists_height h₃ codimOne_holds GlobalTheory.T.mixed_cycle_rational_exists GlobalTheory.T.mixed_cycle_of_rational h₇ h₈ GlobalTheory.CompanionTheory.MixZ.Vert.vertEq GlobalTheory.CompanionTheory.MixZ.PtLenProof.ptLen curveInt hR II hII
+  have H := exists_height h₃ codimOne_holds _root_.GlobalTheory.CompanionTheory.MixZ.ExRat.existsRat _root_.GlobalTheory.CompanionTheory.MixZ.CycleRat.cycleOfRat h₇ h₈ GlobalTheory.CompanionTheory.MixZ.Vert.vertEq GlobalTheory.CompanionTheory.MixZ.PtLenProof.ptLen curveInt hR II hII
     (comb M a) (combLine A a) Rc sC
   refine ⟨_, (isometric_comb_pull M a i rfl).symm.isArithHeight hX (H.restrict (mp_var m n) i rfl), ?_⟩
   rw [htFn_eq II _ ((dim_of_generic i).trans hX.dim_eq), cycVal, if_pos hhor, hΦ]
@@ -90,8 +90,8 @@ theorem mixZ_direct :
   have hR := _root_.GlobalTheory.CompanionTheory.Ar.Giv.ratR_of_resK hK
   have hI := _root_.GlobalTheory.CompanionTheory.MixZ.archIntegrableOn_of_resK hK
   have hE := GlobalTheory.CompanionTheory.MixZ.archIntEq_of_integrable hI
-  exact mixZ_of GlobalTheory.T.mixed_cycle_read_exists GlobalTheory.T.mixed_cycle_read_combination _root_.GlobalTheory.CompanionTheory.MixZ.ptDict _root_.GlobalTheory.CompanionTheory.MixZ.codimOne_holds GlobalTheory.T.mixed_cycle_rational_exists GlobalTheory.T.mixed_cycle_of_rational hE hI _root_.GlobalTheory.CompanionTheory.MixZ.PolarProof.polar hR II hII
-    (GlobalTheory.T.height_eq_of_full_intersection_system _root_.GlobalTheory.CompanionTheory.MixZ.ptDict _root_.GlobalTheory.CompanionTheory.MixZ.codimOne_holds GlobalTheory.T.mixed_cycle_rational_exists GlobalTheory.T.mixed_cycle_of_rational hE GlobalTheory.CompanionTheory.MixZ.Vert.vertEq _root_.GlobalTheory.CompanionTheory.MixZ.PtLenProof.ptLen _root_.GlobalTheory.CompanionTheory.MixZ.curveInt hR II hII)
+  exact mixZ_of _root_.GlobalTheory.CompanionTheory.MixZ.existsRead _root_.GlobalTheory.CompanionTheory.MixZ.readComb _root_.GlobalTheory.CompanionTheory.MixZ.ptDict _root_.GlobalTheory.CompanionTheory.MixZ.codimOne_holds _root_.GlobalTheory.CompanionTheory.MixZ.ExRat.existsRat _root_.GlobalTheory.CompanionTheory.MixZ.CycleRat.cycleOfRat hE hI _root_.GlobalTheory.CompanionTheory.MixZ.PolarProof.polar hR II hII
+    (_root_.GlobalTheory.CompanionTheory.MixZ.heightEq_holds _root_.GlobalTheory.CompanionTheory.MixZ.ptDict _root_.GlobalTheory.CompanionTheory.MixZ.codimOne_holds _root_.GlobalTheory.CompanionTheory.MixZ.ExRat.existsRat _root_.GlobalTheory.CompanionTheory.MixZ.CycleRat.cycleOfRat hE GlobalTheory.CompanionTheory.MixZ.Vert.vertEq _root_.GlobalTheory.CompanionTheory.MixZ.PtLenProof.ptLen _root_.GlobalTheory.CompanionTheory.MixZ.curveInt hR II hII)
 
 end GlobalTheory.CompanionTheory.MixZ
 
@@ -102,7 +102,7 @@ theorem height_eq_direct : ReciprocityTheory.ChartRestriction.G.Geo.ResK.ResKSta
   intro hK II hII m n M A hA h H x d hd
   have hI := _root_.GlobalTheory.CompanionTheory.MixZ.archIntegrableOn_of_resK hK
   have hE := GlobalTheory.CompanionTheory.MixZ.archIntEq_of_integrable hI
-  have hH : GlobalTheory.CompanionTheory.MixZ.HeightEq II := GlobalTheory.T.height_eq_of_full_intersection_system _root_.GlobalTheory.CompanionTheory.MixZ.ptDict _root_.GlobalTheory.CompanionTheory.MixZ.codimOne_holds GlobalTheory.T.mixed_cycle_rational_exists GlobalTheory.T.mixed_cycle_of_rational hE GlobalTheory.CompanionTheory.MixZ.Vert.vertEq
+  have hH : GlobalTheory.CompanionTheory.MixZ.HeightEq II := _root_.GlobalTheory.CompanionTheory.MixZ.heightEq_holds _root_.GlobalTheory.CompanionTheory.MixZ.ptDict _root_.GlobalTheory.CompanionTheory.MixZ.codimOne_holds _root_.GlobalTheory.CompanionTheory.MixZ.ExRat.existsRat _root_.GlobalTheory.CompanionTheory.MixZ.CycleRat.cycleOfRat hE GlobalTheory.CompanionTheory.MixZ.Vert.vertEq
     _root_.GlobalTheory.CompanionTheory.MixZ.PtLenProof.ptLen _root_.GlobalTheory.CompanionTheory.MixZ.curveInt (_root_.GlobalTheory.CompanionTheory.Ar.Giv.ratR_of_resK hK) II hII
   have hX := isArithVar_mpStr m n
   obtain ⟨Z, i, _, _, rfl⟩ := exists_isClosedImmersion_genericPoint x

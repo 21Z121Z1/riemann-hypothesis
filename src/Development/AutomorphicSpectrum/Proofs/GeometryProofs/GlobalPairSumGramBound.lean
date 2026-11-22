@@ -14,7 +14,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalRingPointsExis
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.Metric
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexPointsIffCentres
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GramMatrixConjugationStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GramMatrixConjugation
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ConjugatePointSameCentre
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrameDomainInSegreChart
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeInnerProductMapIff
@@ -29,7 +29,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolomorphicDiscOver
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BoundaryDiscMapEmbeddingFixed
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeTangentVectorsAffineOpenStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolomorphicDiscInAffineOpen
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianMapTangentCoordinatesStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianMapTangentCoordinates
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChartLatticeTangentCoordinates
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeGeneratedSumSpecialization
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeGeneratedSumSpecializationFrame
@@ -117,7 +117,7 @@ theorem core {E : Type} [Field E] [NumberField E] [IsCMField E] {H : Host E} {D 
   obtain ⟨θ, hθ⟩ : ∃ θ : Γ(𝔐.X, W) →+* C.R, spMap θ = h := ⟨(Spec.preimage h).hom, Spec.map_preimage _⟩
   subst hθ
   obtain ⟨mX, -⟩ := GlobalTheory.ObjMaps.exists_sab_comp mW mC
-  obtain ⟨x, hx⟩ := GlobalTheory.T.abelian_map_tangent_coordinates E H 𝔐.X 𝔐.t Γ(𝔐.X, W) hW.fromSpec N v C.R C.t θ mX C.g C.M htan
+  obtain ⟨x, hx⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PeriodCoord.exists_coords E H 𝔐.X 𝔐.t Γ(𝔐.X, W) hW.fromSpec N v C.R C.t θ mX C.g C.M htan
 
   have hw : ∀ z : Fin n → ℂ, ∃ w : Fin N → (epsAt (spMap (C.ψ z) ≫ spMap θ ≫ hW.fromSpec) ⟶ 𝔐.t.G),
       (∀ k, 𝔐.M.ValAt _ ((bb k : ↥(𝔐.Vgen a ⊔ 𝔐.Vgen b)) : 𝔐.Li) (w k)) ∧
@@ -323,7 +323,7 @@ theorem exists_isFramePeriods : Top.Given → ∀ (E : Type) [Field E] [NumberFi
       have := Fintype.linearIndependent_iff.1 h4 (fun k => star (c' k)) (by simpa [star_smul] using e) k
       simpa using this
     · rw [hL u hu, huniq z _ _ hz (hp _ (smul_mem_ball' h1 h2 hu.1))]
-      have := GlobalTheory.T.gramAt_conj_point_map_conj E H D l (Xo l) c Y S Ω K J y 𝔐 _ N _ _ (h5 (star u) (star_mem_punct' hu))
+      have := _root_.GlobalTheory.CompanionTheory.Ar.HodgeMetric.ConjPoint.gramAt_conj_point E H D l (Xo l) c Y S Ω K J y 𝔐 _ N _ _ (h5 (star u) (star_mem_punct' hu))
       have e : spMap (starRingEnd ℂ) ≫ p' ((ρ₁ : ℂ) • star u) = p ((ρ₁ : ℂ) • u) := by
         rw [hp']
         simp only

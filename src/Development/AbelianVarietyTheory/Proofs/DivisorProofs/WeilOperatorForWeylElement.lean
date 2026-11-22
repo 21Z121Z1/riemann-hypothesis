@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSymp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSelfDualFor
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalFourierSchwartzStableStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalFourierSchwartzStable
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalFourierDoubleReflection
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalFourierSchrodingerIntertwine
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalLatticeIndicatorFourierStatement
@@ -31,7 +31,7 @@ theorem GlobalTheory.WeylFour.weyl_hasOp : ∀ (F : Type) [Field F] [NumberField
     · simp [spAct, weylM, Matrix.fromBlocks_map, Matrix.mulVec, dotProduct, Matrix.fromBlocks, Matrix.one_apply]
     · simp [spAct, weylM, Matrix.fromBlocks_map, Matrix.mulVec, dotProduct, Matrix.fromBlocks, Matrix.one_apply]
 
-  have hSB := fun v => GlobalTheory.T.local_fourier_schwartz_stable F ψ hψ v (hnt v) κ
+  have hSB := fun v => _root_.GlobalTheory.WeylFour.fourV_sb F ψ hψ v (hnt v) κ
   have hInv := fun v => _root_.GlobalTheory.WeylFour.LocInv.fourV_fourV F ψ hψ v (hnt v) κ
   have hLaw := _root_.GlobalTheory.WeylFour.schr_fourV_loc F ψ hψ
   have hInd := fun v => GlobalTheory.T.local_lattice_indicator_fourier F ψ hψ v κ

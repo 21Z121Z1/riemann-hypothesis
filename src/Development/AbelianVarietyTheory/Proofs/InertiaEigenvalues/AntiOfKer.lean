@@ -12,7 +12,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsOpenNorm
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChebotarevInductionGrowBoundOfPresentationStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UniversalSelmerCocycleMapAlgHom
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ComparisonCocycles
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SelmerUnramifiedOfVanishInertiaGeneratorsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SelmerUnramifiedOfVanishInertiaGenerators
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistedRepresentationKillsSmallSubgroup
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DetNeZeroOfLowestFormNeZeroPresentation
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UniversalCocycleRowsRelationNewPlaceStatement
@@ -25,7 +25,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SetupOfFactor
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUniversalSelmerCocycleBaseChange
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PerfectPairingFiniteModuleRowsCriterion
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NoInvDualOfSetup
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsDualSelmerClassNotKilledStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsDualSelmerClassNotKilled
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SelmerOrderFormulaDualSelmer
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalInvariantsKilled
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSmallSubgroupCocycleFormNeZeroStatement
@@ -106,7 +106,7 @@ theorem det_ne_zero (hPT : PoitouTateTotallyComplex) (hT : TameLocal) (hl : 0 < 
   have hσD : σ ∈ DecV N p := hp.2.2.2.2.2.1.1
   have hσL : σ ∈ L := hp.2.2.2.1 hσD
   obtain ⟨E, hE1, hE2, hE3⟩ := _root_.GlobalTheory.NewPrime.comparison_cocycles D N X bkP i s A κ Q Q' a a' Ψ (Φ'.map π) Z (fun g => (Z' g).map π) (two X γ) (two X σ)
-    hZ hZA (GlobalTheory.T.selmer_unramified_of_vanish_inertia_generators hT D N X bkP i s hl M L z p d σ γ h3 hL hp A κ hK ha hκ Q Q' hQ) (fun W _ _ b m => by
+    hZ hZA (_root_.GlobalTheory.NewPrimeUnr.selC_of_vanish hT D N X bkP i s hl M L z p d σ γ h3 hL hp A κ hK ha hκ Q Q' hQ) (fun W _ _ b m => by
       cases b
       · show repOn (Tgl i s) κ W σ m = m
         rw [(_root_.GlobalTheory.NewPrime.SmallActs.small_acts D N X i s hl M L z (by omega) hL A κ ρ hK hρ W σ hσL).1, hκ σ hσD, Units.val_one, one_smul]
@@ -211,7 +211,7 @@ theorem step : Cheb → PoitouTateTotallyComplex → CohDimTwo → TameLocal →
   letI : TopologicalSpace Y := ⊥
   haveI : DiscreteTopology Y := ⟨rfl⟩
   have hNI := _root_.GlobalTheory.NewPrime.noInvDual_of_setup D N X bkP i s A κ Q ρ z hSet hρ hz
-  obtain ⟨y, hy, hyc⟩ := GlobalTheory.T.exists_dual_selmer_class_not_killed D N X bkP i s A κ Q ρ hSet hK hρ hNI
+  obtain ⟨y, hy, hyc⟩ := _root_.GlobalTheory.NewPrime.DualClass.exists_not_cob D N X bkP i s A κ Q ρ hSet hK hρ hNI
     (_root_.GlobalTheory.SelOrder.orderFormula hPT hLF hLD hLE hGF hGE h4 D N X bkP i s A κ Q ρ hSet hK hρ hNI) Y β hβ a Ψ Z hZ ((X.l i : A) ^ nu X i * t ^ ((e + 1) * w)) t
     (Ψ.adjugate b) b'
     (_root_.GlobalTheory.NewPrime.LocInv.local_invariants_killed hT D N X bkP i s hl M R n d A₀ L z P hM1 hz hL hSt A κ Q ρ t a₀ hQ hSet hK hρ hκ

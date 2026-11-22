@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGlueToLocally
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsClosedImmersionSurjectivePreimage
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyDirectedOfBasis
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenImmersionSpecMapOfThickeningStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackConeFstSndRingNilpotentStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackConeFstSndRingNilpotent
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResSurjectiveNilpotentKer
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGoodMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FerrandPushoutGoodBasicOpenStatement
@@ -51,7 +51,7 @@ theorem exists_pushout_data : ∀ (Y₀ Y₁ Y₂ : Scheme.{0}) (i₁ : Y₀ ⟶
   intro Y₀ Y₁ Y₂ i₁ i₂ hc₁ hc₂ hs₁ hs₂ hn₁ hn₂
   haveI := hc₁; haveI := hc₂; haveI := hs₁; haveI := hs₂
   have hR : ∀ U ∈ good i₁ i₂, _ := fun U (hU : U ∈ good i₁ i₂) ↦
-    GlobalTheory.T.pullbackCone_surjective_nilpotent_ker (res i₁ U) (res i₂ U) (_root_.GlobalTheory.FerrandPush.res_surjective_nilpotent_ker i₁ hn₁ U hU.2.1).1 (_root_.GlobalTheory.FerrandPush.res_surjective_nilpotent_ker i₁ hn₁ U hU.2.1).2
+    _root_.GlobalTheory.pullbackCone_fst_snd_ring_nilpotent (res i₁ U) (res i₂ U) (_root_.GlobalTheory.FerrandPush.res_surjective_nilpotent_ker i₁ hn₁ U hU.2.1).1 (_root_.GlobalTheory.FerrandPush.res_surjective_nilpotent_ker i₁ hn₁ U hU.2.1).2
       (_root_.GlobalTheory.FerrandPush.res_surjective_nilpotent_ker i₂ hn₂ U hU.2.2).1 (_root_.GlobalTheory.FerrandPush.res_surjective_nilpotent_ker i₂ hn₂ U hU.2.2).2
   have hπ : ∀ U ∈ good i₁ i₂, Function.Surjective ((fibπ i₁ i₂).app (op U)).hom ∧
       IsNilpotent (RingHom.ker ((fibπ i₁ i₂).app (op U)).hom) := fun U hU ↦ (hR U hU).2.2

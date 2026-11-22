@@ -2,7 +2,7 @@ import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLat
 import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusCoefficientMemLp.AmpBig
 import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeLemma3
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutLemB
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselNormSqEqBigCellNormSqStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselNormSqEqBigCellNormSq
 import Development.AbelianVarietyTheory.Definitions.Jets.SideFam
 import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPrAlt
 import Mathlib
@@ -84,7 +84,7 @@ theorem energy_identity : EnergyTie := by
   intro k r L f μsec u u' p _ hc _ _ htie _ _ hsec
   obtain ⟨hz, hz', hπ, hπ', hW, hN, hW'⟩ := htie
   have e : TBB.jN2 p f = jNorm2 L f μsec := by
-    refine (GlobalTheory.T.jN2_eq_normSq_base (parOfL L u u') L.Wp L.Wq p f).trans ?_
+    refine (_root_.GlobalTheory.jN2_eq_normSq_base.besselNormSq_eq_bigCellNormSq (parOfL L u u') L.Wp L.Wq p f).trans ?_
     have h := normSq_sec (k := k) (r := r) p.hl.2.2 p.T.base f μsec (by
       have e1 : (p.T.base.z : Fin (2 * r + k + 1) → ℂ) = L.z := hz
       have e2 : (p.T.base.z' : Fin (2 * r + k + 1) → ℂ) = L.z' := hz'

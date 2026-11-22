@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsPairMass
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OmEqPullOfVacuum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MovedVacuumReads
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinPartSurjective
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InertIntegralPointsFixAdelicClassicalVacuumStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InertIntegralPointsFixAdelicClassicalVacuum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MovedVacuumConstantTrivialFinitePairs
 
 open NumberField MeasureTheory
@@ -57,6 +57,6 @@ theorem vacuum_move_reads : ∀ {D : D7} (ψ : AddChar (AF D.host.F) ℂ) (θ : 
     (GlobalTheory.VacLine.moved_vacuum_reads ψ θ S T hS hT cc δ r hSet e0 W χS χT om hW hInp t0 ht0 hev hodd hfS hfT f₀ hf₀)
     (mulStep ψ θ S T hS hT cc δ r hSet e0 W χS χT om hW hInp t0 ht0 hev hodd hfS hfT f₀ hf₀)
     (GlobalTheory.SplitVacMove.reads_om_split ψ θ S T hS hT cc δ r hSet e0 W χS χT om hW hInp t0 ht0 hev hodd hfS hfT f₀ hf₀)
-    (GlobalTheory.T.inertIntegralPoints_fix_adelic_classical_vacuum ψ θ S T hS hT cc δ r hSet e0 W χS χT om hW hInp t0 ht0 hev hodd hfS hfT f₀ hf₀) x y g h hg hh
+    (_root_.GlobalTheory.VacInertMove.inert_vacuum_reads ψ θ S T hS hT cc δ r hSet e0 W χS χT om hW hInp t0 ht0 hev hodd hfS hfT f₀ hf₀) x y g h hg hh
 
 end GlobalTheory.VacMoveFin

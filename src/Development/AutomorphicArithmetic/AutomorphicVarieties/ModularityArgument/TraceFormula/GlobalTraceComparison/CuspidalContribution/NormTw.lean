@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.CuspidalContribution.LevShrink
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.CuspidalSupport.CuspSupportOf
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieCentralElementTraceStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieCentralElementTrace
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TraceOperatorEigenvalueSum
 import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
@@ -159,7 +159,7 @@ theorem UpperTheory.V.Z.Tf.GlobalTraceComparison.Cusp.normTw :
       simp [(hm τ).1]
     have hlie : lie E N (oneL E N) (mulChi N (Model.absC E s) φ) =
         (∑ τ : E →+* ℂ, ((m τ).sum + N * s)) • mulChi N (Model.absC E s) φ := by
-      rw [GlobalTheory.T.lie_central_element_trace E N, LinearMap.sum_apply, Finset.sum_congr rfl fun τ _ => hsum τ, ← Finset.sum_smul]
+      rw [_root_.GlobalTheory.CompanionTheory.ClozelLie.lie_oneL_eq_sum_Eop E N, LinearMap.sum_apply, Finset.sum_congr rfl fun τ _ => hsum τ, ← Finset.sum_smul]
     have hz : ∑ τ : E →+* ℂ, ((m τ).sum + N * s) = 0 := by
       refine GlobalTheory.CompanionTheory.TotalTrace.eq_zero_of_exp_mul_eq_one fun t => ?_
       have h1 := GlobalTheory.T.central_eigen_exponential E N _ _ hlie t g₀

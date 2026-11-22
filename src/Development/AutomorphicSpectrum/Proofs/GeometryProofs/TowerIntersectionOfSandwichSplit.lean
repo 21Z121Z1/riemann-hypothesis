@@ -4,8 +4,8 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.SlopeBoundSt
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IntegralClosureHeightEqOneOfLiesOver
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatLineGenerator
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatUnitOfSplitRootLinesStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HasReferenceOfSandwichAllPrimesStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatUnitOfSplitRootLines
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HasReferenceOfSandwichAllPrimes
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootModelFlagHeight
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
@@ -14,7 +14,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 import Development.AbelianVarietyTheory.PublishedTheorems.SemiabelianTori.GeometricallyConnectedSplitTorusAff
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TowerI5OfFibreInput
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TowerI6OfReferenceStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TowerI6OfReference
 
 open AlgebraicGeometry CategoryTheory NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CompanionTheory.Ar
@@ -37,7 +37,7 @@ theorem tower_good_of_sandwich_split : Top.Given → Flat.FlatLineGenerator → 
     (∀ B a, ∀ p ∈ g.S B, ∃ κ, HT.IsCp p κ ∧ HT.Sandwich (g.Or B a).𝔐 p κ) → T.I5 II ∧ T.I6 II := by
   intro hG hA E _ _ _ H D l Xo c Y _ T g II hII hsp hS
   obtain ⟨⟨hI, hab, -⟩, -, hext, -, hres, -, -, -, hsl, -⟩ := hG
-  have hR : Ht.HasRef T g.R := GlobalTheory.T.has_reference_of_sandwich_all_primes E H D l Xo c Y T g hS
+  have hR : Ht.HasRef T g.R := _root_.GlobalTheory.CompanionTheory.Ar.OrRef.has_ref E H D l Xo c Y T g hS
   have hj := g.j_eq
   have h1 := T.j_pos
   have h2 := T.j_lt
@@ -45,8 +45,8 @@ theorem tower_good_of_sandwich_split : Top.Given → Flat.FlatLineGenerator → 
   have hq : 1 ≤ D.q := by omega
   have hN : 1 ≤ D.p + D.q := by omega
   refine ⟨tower_intersection_of_ample_flat _ D.p D.q hp hq T II g.R hII hR fun a => ⟨g.ample a, ?_, ?_⟩,
-    GlobalTheory.T.tower_i6_of_reference _ _ T II g.R hII hR⟩
-  · exact GlobalTheory.T.flat_unit_of_split_root_lines hA E H D l Xo c Y ∅ (g.R a) (g.refOr a).𝔐 (g.refOr a).Fl (g.refOr a).e hN hsp
+    _root_.GlobalTheory.CompanionTheory.Ar.Ht.UpperTower.tower_upper _ _ T II g.R hII hR⟩
+  · exact _root_.GlobalTheory.CompanionTheory.Ar.Ht.FlatGen.flat_unit_of_root_lines hA E H D l Xo c Y ∅ (g.R a) (g.refOr a).𝔐 (g.refOr a).Fl (g.refOr a).e hN hsp
       (g.refOr a).lines
   · exact _root_.GlobalTheory.CompanionTheory.Ar.TopFibre.fibreInput hab hI hres hext hsl E H D l Xo c Y ∅ (g.R a) (g.refOr a).𝔐 (g.refOr a).Fl (g.refOr a).e hN
       (g.refOr a).lines

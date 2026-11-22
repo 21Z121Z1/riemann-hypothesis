@@ -4,7 +4,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableMulIn
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatrixCoefficientOrthogonalityRelation
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormalDegreeMatrixCoefficientNorm
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormalDegreeSchurOrthogonality
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatrixCoefficientIntertwinerAdjointStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatrixCoefficientIntertwinerAdjoint
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CyclicVectorIntertwinerDetermined
 
 noncomputable section
@@ -82,7 +82,7 @@ theorem eigA : EigA := by
     exact Submodule.inner_left_of_mem_orthogonal hg hu
   have hlow := _root_.GlobalTheory.CompanionTheory.RgHeA.lower_bound_of_cyclic_coef σ ρ d hd.1 hσ hρ w₀ v i hi.1 hdense
     (coefOp ν σ hσ (fun g => star ⟪v, ρ g v⟫_ℂ) hm) (coefOp ν ρ hρ (fun g => star ⟪w₀, σ g w₀⟫_ℂ) hc)
-    (GlobalTheory.T.matrix_coefficient_intertwiner_adjoint ν σ ρ hσ hρ w₀ v hc hm) (_root_.GlobalTheory.CompanionTheory.RgHeA.avg_conj_coef_ge ν σ ρ d hσ hρ hd w₀ hw₀ hc i hi)
+    (_root_.GlobalTheory.CompanionTheory.RgHeA.TwPf.coefOp_translate ν σ ρ hσ hρ w₀ v hc hm) (_root_.GlobalTheory.CompanionTheory.RgHeA.avg_conj_coef_ge ν σ ρ d hσ hρ hd w₀ hw₀ hc i hi)
   have hlow' : ∀ a, ‖⟪ContinuousLinearMap.adjoint i v, a⟫_ℂ‖ ^ 2 / d ≤
       (⟪a, coefOp ν σ hσ (fun g => star ⟪v, ρ g v⟫_ℂ) hm a⟫_ℂ).re := fun a => by
     rw [ContinuousLinearMap.adjoint_inner_left]

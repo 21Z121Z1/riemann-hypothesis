@@ -130,7 +130,7 @@ theorem core (hSm : SmoothLine) (hLc : LocalCmp) (hNu : Numerics) (hF : HT.Fargu
     have hlies := _root_.GlobalTheory.CompanionTheory.Ar.Flat.LiesOver.valAt_cst 𝔐.X Ω 𝔐.ξ K J y F' ψ σ z w hN 𝔐.tie hz hσ (𝔐.all _)
     have k1 := hAn σ w g h dg dh hσ hg hh (by rw [hAa]; exact hdg) hgh
     have k2 : ‖evC w g‖ = Real.exp (N.inf (σ.comp ι)) * A₀.h w * ‖evC w h‖ := by
-      refine GlobalTheory.T.hermitian_norm_section_value 𝔐.X Ω 𝔐.ξ K J y z w A₀ (d₁ / d₂ / ∏ i, e (τ, i)) _ g h dg dh 𝔐.tie.gen hz ?_ hg hh
+      refine _root_.GlobalTheory.CompanionTheory.Ar.Flat.EvalPt.norm_evC_of_forms 𝔐.X Ω 𝔐.ξ K J y z w A₀ (d₁ / d₂ / ∏ i, e (τ, i)) _ g h dg dh 𝔐.tie.gen hz ?_ hg hh
         (by rw [hA₀a]; exact hdg) hgh hne
       intro cc u hcc hu
       refine _root_.GlobalTheory.CompanionTheory.Ar.RootGram.norm_against_root_metrics E H D l Xo c Y S Ω K J y 𝔐 Fl xdeg e hx A₀ τ (N.inf (σ.comp ι)) (d₁ / d₂) z w hroot hhod hA₀a

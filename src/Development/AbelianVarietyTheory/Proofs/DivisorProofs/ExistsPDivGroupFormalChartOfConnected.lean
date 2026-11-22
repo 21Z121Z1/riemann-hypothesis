@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoordinatesOf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAdicCompleteSpanNatCast
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KerTensor
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSeriesOfCompatible
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SurjectiveEvalTmulStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SurjectiveEvalTmul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantCoeffEqZeroOfEvalEqComulStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalChartGroupLawEvalRightUnitStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvalSwapEqStatement
@@ -80,7 +80,7 @@ theorem chart_exists : ∀ (p : ℕ) [Fact p.Prime] (C : Type) [Field C] [IsAlgC
   choose E₃ hE₃ using hE3
   have hsurj2 : ∀ n, Function.Surjective (E₂ n) := fun n => by
     haveI := hc2 n
-    exact GlobalTheory.T.surjective_isEval_tmul_of_surjective p O _ _ _ _ (x n) (x n) (ev n) (ev n) (E₂ n) (hev n) (hev n) (hE₂ n) (hsurj n) (hsurj n)
+    exact _root_.GlobalTheory.SurjTens.surjective_eval_tmul p O _ _ _ _ (x n) (x n) (ev n) (ev n) (E₂ n) (hev n) (hev n) (hE₂ n) (hsurj n) (hsurj n)
   have hker2 : ∀ m N : ℕ, ∃ n, ∀ f, E₂ n f = 0 → ∀ α : Fin d ⊕ Fin d →₀ ℕ, α.degree < N → (p : O) ^ m ∣ coeff α f := by
     intro m N
     obtain ⟨n, hn⟩ := hker m N

@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvIInfScaleMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRationalDarbouxHermitianTensorAdeles
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuadraticExtensionSymplecticCoordinates
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymplecticFormBaseChangeMatrixStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymplecticFormBaseChangeMatrix
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusElementActsOnFrameColumnsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WittFrameExtendsToBlockBasis
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymplecticPairingBlockReduction
@@ -167,7 +167,7 @@ theorem adapted_torus : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Nu
         q ((incM F Q * w₁) (Sum.inr (Sum.inr i))) ⬝ᵥ p ((incM F Q * w₂) (Sum.inr (Sum.inl i))) -
           q ((incM F Q * w₂) (Sum.inr (Sum.inr i))) ⬝ᵥ p ((incM F Q * w₁) (Sum.inr (Sum.inl i))) := fun i => by
       rw [neg_one_mul, neg_one_mul, map_neg, ← hpq', ← hpq]; ring
-    rw [e1, GlobalTheory.T.symplectic_form_base_change_matrix, hGinc, _root_.GlobalTheory.WeilM.symp_fromBlocks_hyperbolic, hform₀, he, he, hdot, hdot, blockCo_apply, blockCo_apply]
+    rw [e1, _root_.GlobalTheory.symp_mul_left, hGinc, _root_.GlobalTheory.WeilM.symp_fromBlocks_hyperbolic, hform₀, he, he, hdot, hdot, blockCo_apply, blockCo_apply]
     simp only [key, sumElim_dotProduct_sumElim, top]
     simp only [dotProduct, Fintype.sum_prod_type, Finset.sum_sub_distrib]
     ring

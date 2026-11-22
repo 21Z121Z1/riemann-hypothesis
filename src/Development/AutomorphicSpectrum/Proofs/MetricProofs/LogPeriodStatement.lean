@@ -4,7 +4,7 @@ import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagModelBaseProjecti
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.XCWArith
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockDiagonalMinorVanishingStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockDiagonalMinorVanishing
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MinorSumIdentityBaseChange
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ProportionalMinorsBlockTriangular
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ElementaryFactorizationOfNearTriangular
@@ -111,7 +111,7 @@ theorem step_mul_right (hj : j ≤ N) (i : Fin N) {A U : Matrix (Fin N) (Fin N) 
       (∏ c ∈ stepCols N j i, U c c) * ∑ I, v m I * minorIJ A I (stepCols N j i) := fun m => by
     rw [Finset.mul_sum]
     refine Finset.sum_congr rfl fun I _ => ?_
-    rw [(GlobalTheory.T.block_diagonal_minor_vanishing ℂ N j i hj).2.2.1 A U I hU hUt]
+    rw [(_root_.GlobalTheory.CompanionTheory.Ar.PB.MinorCalc.minors_main ℂ N j i hj).2.2.1 A U I hU hUt]
     ring
   simp only [e]
   constructor
@@ -160,7 +160,7 @@ theorem step_pl {F : FrameData ι Ψ N M.Ω M.blk} (hF : M.IsFrame F) {zb : (Σ 
       ∑ m : ι k, val (vA I₀ ⟨k, m⟩) * ∑ I, valAt M.x (F.u ⟨k, m⟩ I) zb * minorIJ A I (stepCols N j p.2) =
         minorIJ A I₀ (stepCols N j p.2) := fun A hA => by
     have off : ∀ I, ¬ IsStepRows N j p.2 I → minorIJ A I (stepCols N j p.2) = 0 := fun I hI =>
-      ((GlobalTheory.T.block_diagonal_minor_vanishing ℂ N j p.2 M.j_le).2.1 A I hA hI).resolve_right
+      ((_root_.GlobalTheory.CompanionTheory.Ar.PB.MinorCalc.minors_main ℂ N j p.2 M.j_le).2.1 A I hA hI).resolve_right
         (Finset.nonempty_iff_ne_empty.1 (stepCols_nonempty M.j_le p.2))
     have key : ∀ I, (∑ m : ι k, val (vA I₀ ⟨k, m⟩) * val (uA ⟨k, m⟩ I)) * minorIJ A I (stepCols N j p.2) =
         if I = I₀ then minorIJ A I₀ (stepCols N j p.2) else 0 := fun I => by
@@ -266,7 +266,7 @@ theorem frame_any {F : FrameData ι Ψ N M.Ω M.blk} (hF : M.IsFrame F) {S : Typ
   rw [e'] at h1
   have h2 : ∀ I, minorIJ (gg * bb) I (stepCols N j p.2) =
       minorIJ gg I (stepCols N j p.2) * ∏ c ∈ stepCols N j p.2, bb c c := fun I =>
-    (GlobalTheory.T.block_diagonal_minor_vanishing S N j p.2 M.j_le).2.2.1 gg bb I hbb hbt
+    (_root_.GlobalTheory.CompanionTheory.Ar.PB.MinorCalc.minors_main S N j p.2 M.j_le).2.2.1 gg bb I hbb hbt
   simp only [h2] at h1
   refine Eq.trans ?_ h1
   rw [mul_assoc, Finset.mul_sum (a := ∏ c ∈ stepCols N j p.2, bb c c)]

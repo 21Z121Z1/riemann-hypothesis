@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TraceRowOpera
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.EqWeightsOfTraceEPowerHighestWeightValueEq
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsRowOperatorStableDualWeylAndGLSubmodules
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.HighestWeightVectorMemOfLtStableDualWeyl
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.RowDegDominatedOfMemDualWeylModuleStatement
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.RowDegDominatedOfMemDualWeylModule
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TraceGlMatrixUnitPowHighestWeightMod
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DualWeylHighestWeightSpaceLineField
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsDominantHighestVectorOfLtStable
@@ -129,7 +129,7 @@ theorem hw_mem_of_lt_charZero (k : Type) [Field k] [CharZero k] (N : ℕ) (ν : 
     (hlast : ∀ h : 0 < N, ν ⟨N - 1, by omega⟩ = 0)
     (M M' : Submodule k (MvPolynomial (Fin N × Fin N) k)) (hM : Good M) (hM' : Good M') (hlt : M < M')
     (hle : M' ≤ dualWeyl k N N ν) : hw k le_rfl ν ∈ M' ∧ hw k le_rfl ν ∉ M := by
-  have dom := GlobalTheory.T.rowDeg_dominated_of_mem_dualWeylModule k N ν
+  have dom := _root_.GlobalTheory.Alc.rowDeg_dominated_of_mem_dualWeyl k N ν
   obtain ⟨μ, v, hμ, hvM', hvM, hvw, hraise⟩ := _root_.GlobalTheory.Alc.exists_dominant_highest_vector_of_lt k N M M' hM hM' hlt
     ⟨∑ a, ν a, fun f hf m hm => ((dom f (hle hf) m hm).2).le⟩
   have hv0 : v ≠ 0 := fun h => hvM (h ▸ zero_mem M)

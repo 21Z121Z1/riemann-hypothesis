@@ -5,7 +5,8 @@ import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModQPrin
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModJTau
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModBasic
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QAllQConjOfDvd
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QExpansionCoeffsInSubringRingClosedStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QExpansionCoeffsInSubringRingClosed
+import Development.AbelianVarietyTheory.Definitions.Divisors.HasQIff
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularDiscriminantDivQIntegerQExpansions
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.QExpansionAllCoeffsCompUpperTriangular
 open scoped UpperHalfPlane MatrixGroups ModularForm Manifold BigOperators
@@ -42,7 +43,7 @@ theorem qAll_pole_affine : ∀ (E : Subring ℂ) (N w a d : ℕ) (b : ℤ) (φ :
   intro E N w a d b φ hE hN ha hd hφ
   obtain ⟨d', rfl⟩ : ∃ d', d = d' + 1 := ⟨d - 1, by omega⟩
   have hM : 0 < N * (a * (d' + 1)) := by positivity
-  have RC := GlobalTheory.T.qExpansionCoeffsInSubring_ring_closed E (N * (a * (d' + 1))) hM
+  have RC := _root_.GlobalTheory.QFam.QAllSubring.ring_closed E (N * (a * (d' + 1))) hM
   obtain ⟨hDq, hqD⟩ := _root_.GlobalTheory.FN.dd_div_q_and_q_div_dd
   have h1 := QAll.of_dvd hM ⟨a, by ring⟩ E.zero_mem
     (_root_.GlobalTheory.FNQ.qAll_affine E N a (d' + 1) b _ hE hN ha (by omega) hφ)

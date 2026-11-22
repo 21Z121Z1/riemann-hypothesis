@@ -4,8 +4,8 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridLatticesComp
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicPointComponentsAtPlacesLatticesVacua
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PsiPrimitiveStandardFramesFourierJacobiLevel
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FourierJacobiStepBasePointColumnsPrimitive
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DepthLatticeGridRowLocalEqCompletedHomLatticeStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralAdeleSmulDepthLatticeGridRowMemLatOStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DepthLatticeGridRowLocalEqCompletedHomLattice
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralAdeleSmulDepthLatticeGridRowMemLatO
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SelfDualHomLatticeModulusShiftLocalEqLatO
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links MeasureTheory IsDedekindDomain NumberField Matrix
 open GlobalTheory.MixModel GlobalTheory.MixPer GlobalTheory.Grow GlobalTheory.Unf GlobalTheory.ChiGrid GlobalTheory.FunObj GlobalTheory.SepRows GlobalTheory.Asc
@@ -32,8 +32,8 @@ theorem goodAt_stdAt_fb : OnStd fun {D} _ _ {sc} {G} W F => ∀ σ (h : 2 * (σ 
   have I := _root_.GlobalTheory.AscFin.GridLat.lattices_grid D hQ T L μ0 hL sc G W M hM F hF
   have t1 := _root_.GlobalTheory.AscFin.primAt_jac_std D hQ T L μ0 hL sc G W M hM F hF (σ + 1) h v hv
   have t2 := _root_.GlobalTheory.ColsFB.cols_fb D hQ T L μ0 hL sc G W M hM F hF σ h h' v hv
-  have r1 := GlobalTheory.T.depthLatticeGridRow_local_eq_completed_homLattice D hQ T L μ0 hL sc G W M hM (2 * σ + 2) (by omega) v hv
-  have r2 := GlobalTheory.T.integralAdele_smul_depthLatticeGridRow_mem_latO D hQ T L μ0 hL sc G W M hM (2 * σ + 2) (by omega) v
+  have r1 := _root_.GlobalTheory.RowLoc.latRow_at D hQ T L μ0 hL sc G W M hM (2 * σ + 2) (by omega) v hv
+  have r2 := _root_.GlobalTheory.RowInt.smul_mem_latO_at D hQ T L μ0 hL sc G W M hM (2 * σ + 2) (by omega) v
   have r3 := _root_.GlobalTheory.BigLoc.latBig_at D hQ T L μ0 hL sc G W M hM (2 * σ + 2) (by omega) v hv
   obtain ⟨-, hb, -⟩ := I
   have hbσ := hb σ h'

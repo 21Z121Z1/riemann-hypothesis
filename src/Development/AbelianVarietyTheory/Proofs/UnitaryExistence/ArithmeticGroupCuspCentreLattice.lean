@@ -9,8 +9,8 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Sec
 import Development.AbelianVarietyTheory.PublishedTheorems.Landherr₂.ExistsNormTensor
 import Development.AbelianVarietyTheory.Statements.HyperbolicHypotheses.HypothesesInhabitedHyperbolic
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ZMatEInjective
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.SpanCuspCentreArithmeticGroupFgStatement
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.SkewMatrixMultipleInLatticeStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.SpanCuspCentreArithmeticGroupFg
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.SkewMatrixMultipleInLattice
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FinrankRatSkewHermitianMatricesCmField
 open NumberField ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.FD Formalism.L2.Pj Formalism.L2.PjFree
 open AlgebraicGeometry CategoryTheory Limits ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.Frames GlobalTheory.FrameUnif
@@ -64,12 +64,12 @@ theorem latZ : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (r ρ : �
           rw [Matrix.smul_apply, Matrix.smul_apply, Rat.smul_def, Rat.smul_def, cc_mul', hq, hx]
           ring
       · intro h
-        obtain ⟨n, hn, hm⟩ := GlobalTheory.T.skew_matrix_multiple_in_lattice E r ρ (X c) cu β h
+        obtain ⟨n, hn, hm⟩ := _root_.GlobalTheory.CuspCentre.exists_nsmul_mem_zGam E r ρ (X c) cu β h
         have h1 := Submodule.smul_mem (Submodule.span ℚ (FJ.zGam (X c) cu)) ((n : ℚ)⁻¹)
           (Submodule.subset_span hm)
         rwa [← Nat.cast_smul_eq_nsmul ℚ, smul_smul, inv_mul_cancel₀ (by exact_mod_cast hn.ne'),
           one_smul] at h1)
-  obtain ⟨bs, h1, h2⟩ := exists_int_basis_of_fg _ (GlobalTheory.T.span_cuspCentre_arithmeticGroup_fg E r ρ (X c) cu) hdim
+  obtain ⟨bs, h1, h2⟩ := exists_int_basis_of_fg _ (_root_.GlobalTheory.CuspCentre.span_zGam_fg E r ρ (X c) cu) hdim
   refine ⟨bs, h1, fun β => ?_⟩
   exact ((Set.ext_iff.1 hZ β).symm).trans (SetLike.ext_iff.1 h2 β).symm
 

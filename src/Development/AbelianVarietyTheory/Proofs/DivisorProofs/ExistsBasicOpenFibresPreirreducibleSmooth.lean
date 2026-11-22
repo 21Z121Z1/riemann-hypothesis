@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PreirreducibleFibreStandardEtaleSpreads
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RangeComapIncludeRightField
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PreirreducibleTensorLocalizationAwayStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PreirreducibleTensorLocalizationAway
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj TopologicalSpace TensorProduct
 open scoped CategoryTheory.Obj
 
@@ -20,7 +20,7 @@ theorem exists_basicOpen_fibres_preirreducible :
   intro A B _ _ _ hsm q Ω _ _ _ hq hΩ
   obtain ⟨b, hbq, n, _, hST, hSE⟩ :=
     Algebra.IsSmoothAt.exists_isStandardEtale_mvPolynomial (R := A) (p := q.asIdeal)
-  have hΩb := GlobalTheory.T.preirreducible_tensor_localization_away A B b Ω hΩ
+  have hΩb := _root_.GlobalTheory.preirreducibleSpace_primeSpectrum_tensor_localizationAway A B b Ω hΩ
   obtain ⟨a, I, haΩ, hIΩ, hall⟩ := _root_.GlobalTheory.preirreducibleSpace_fibre_standardEtale_spreads A (Localization.Away b) n hSE Ω hΩb
   have memq : ∀ x : A, algebraMap A B x ∈ q.asIdeal ↔ algebraMap A Ω x = 0 := by
     intro x

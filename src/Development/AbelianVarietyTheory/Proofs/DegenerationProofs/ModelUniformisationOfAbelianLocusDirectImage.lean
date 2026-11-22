@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Definitions.Degenerations.ToATotal
 import Development.AbelianVarietyTheory.Definitions.Degenerations.PelSt
 import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissiblePadicIntMaximalIdeal
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.GenericPointMemModuliOfMeetsAbelianLocus
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.FibrewiseNonvanishingOfInvertiblePushforwardStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.FibrewiseNonvanishingOfInvertiblePushforward
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUniformisationCompleteLocalNormalPrime
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.PelTrivialisationIsUnitOnAbelianLocus
 
@@ -33,7 +33,7 @@ theorem isAdmissibleCompleteLocalDomainPrime_maximalIdeal (R : Type) [CommRing R
 theorem model_uniformisation_of_clauses : Laws → Laws2 → Laws3 → Laws4 → Laws5 → Ega → USt → PelSt → ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host E) (D : Datum H) (l : Level H) (Xo : Moduli D l) (c : Coeff l) (W₀ : ValuationSubring ℂ) (Y : Model Xo c (c.V W₀).subtype) (p : ℕ), Y.LevelStructureConditions p → Y.N3 := by
   intro hL hL2 hL3 hL4 hL5 hE hU hP E _ _ _ H D l Xo c W₀ Y p hN R _ _ _ _ hR₁ hR₂ hR₃ ξ t ht hne hsp
   obtain ⟨-, hpol, hloc⟩ := _root_.GlobalTheory.LN.generic_point_of_meets_abLocus hL hL2 E H D l Xo c W₀ Y p hN R ξ t ht hne
-  have hθ : ThetaNZ t.G t.PP.L := T.fibrewise_nonvanishing_of_invertible_pushforward E H Y.X Y.t hN.2.2.1 R ξ t ht
+  have hθ : ThetaNZ t.G t.PP.L := _root_.GlobalTheory.ThetaLocal.thetaNZ_of_pushInvertible E H Y.X Y.t hN.2.2.1 R ξ t ht
   have hadm : admitted R (IsLocalRing.maximalIdeal R) := isAdmissibleCompleteLocalDomainPrime_maximalIdeal R hR₁ hR₂ hR₃
   let _ : Field (R ⧸ IsLocalRing.maximalIdeal R) := Ideal.Quotient.field _
   have hpid : IsPrincipalIdealRing (R ⧸ IsLocalRing.maximalIdeal R) := inferInstance

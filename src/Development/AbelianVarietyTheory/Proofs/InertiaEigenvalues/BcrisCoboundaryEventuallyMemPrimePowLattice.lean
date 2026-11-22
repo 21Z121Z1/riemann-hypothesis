@@ -4,14 +4,14 @@ import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.On
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BhattScholzeCrystallineLattices
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.ConductorExponents
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EventuallySubMemPow
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSmulEqAcrisLatticeImageStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSmulEqAcrisLatticeImage
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCoordAcrisBcris
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AcrisLpowDvdBoundTeichmullerMonoid
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ValuationBoundOfPrimePowDvdMuPowAcris
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistedActionAcrisTensorSubEventuallyLpow
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GaloisLatticeSubMemPowSmulEventually
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemPowSmulLatticeOfCoordDvd
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPowSmulMemGaloisStableLatticeQlStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPowSmulMemGaloisStableLatticeQl
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FrobeniusPeriodRingInjective
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.WeaklyAdmissibleFiltrations TensorProduct PowerSeries GlobalTheory.Prism GlobalTheory.BK GlobalTheory.BKReal GlobalTheory.BKGal GlobalTheory.Per Matrix
 open scoped Formalism.Per
@@ -56,7 +56,7 @@ theorem main_gen {O K : Type} [CommRing O] [Algebra ℤ_[l] O] [Module.Free ℤ_
       ∃ y ∈ T.L.T, (x : T.V) = ((l : O) ^ k) • y)
     (b : TW (OB l O) T) (c : G → T.V) (hc : IsCobOf s T b c) (m : ℕ) :
     ∀ᶠ g in nhds (1 : G), ∃ x ∈ T.L.T, c g = ((l : O) ^ m) • x := by
-  obtain ⟨s0, hs0, β, hβ⟩ := GlobalTheory.T.exists_smul_eq_acrisLattice_image T b
+  obtain ⟨s0, hs0, β, hβ⟩ := _root_.GlobalTheory.DenomCris.exists_smul_eq_TWincl T b
   obtain ⟨C, hC⟩ := _root_.GlobalTheory.AcrisMonBound.main l (s0 * s0) (by rw [map_mul]; exact mul_ne_zero hs0 hs0)
   set a : Per.Acris l := ainfToAcris l s0 with ha
   set m' := m + C + 1 with hm'
@@ -151,7 +151,7 @@ theorem cont_at_one : ∀ (l : ℕ) [Fact l.Prime], l ≠ 2 → ∀ (LL : FinExt
     exact ⟨t', ht', e.trans (natCast_pow_smul T k t').symm⟩
   case hD =>
     intro v
-    obtain ⟨n, x, hx, e⟩ := GlobalTheory.T.exists_pow_smul_mem_galoisStableLattice_Ql l LL T v
+    obtain ⟨n, x, hx, e⟩ := _root_.GlobalTheory.TContMul.main l LL T v
     exact ⟨n, x, hx, e.trans (natCast_pow_smul T n v).symm⟩
 
 end GlobalTheory.CocycleCont

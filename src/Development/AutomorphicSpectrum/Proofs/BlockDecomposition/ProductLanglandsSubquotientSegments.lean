@@ -29,7 +29,7 @@ theorem prod₂_isSubquotient_append {r t p q : ℕ} {U W : Type} [AddCommGroup 
     (x : Fin p → IrrGL k) (y : Fin q → IrrGL k) (hx : ∑ a, (x a).1 = r) (hy : ∑ a, (y a).1 = t)
     (hd : ∑ i, (Fin.append x y i).1 = r + t) (h₁ : IsSubquotient σ (prodIrr x hx))
     (h₂ : IsSubquotient ρ (prodIrr y hy)) : IsSubquotient (prod₂ σ ρ) (prodIrr (Fin.append x y) hd) := by
-  obtain ⟨F⟩ := GlobalTheory.T.product_irreducible_append_equiv k p q r t x y hx hy hd
+  obtain ⟨F⟩ := _root_.GlobalTheory.CompanionTheory.ProdStage.prod₂_prodIrr_append k p q r t x y hx hy hd
   exact GlobalTheory.CompanionTheory.Ysupp.isSubquotient_of_prod₂_equiv (isSmooth_prodIrr _ _) (isSmooth_prodIrr _ _)
     h₁ h₂ (Representation.Equiv.refl _) F
 

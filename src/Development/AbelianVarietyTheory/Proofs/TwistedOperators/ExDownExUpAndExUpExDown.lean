@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.SimpleSum
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.T2SpaceOfIsNonarchimedeanLocalFieldFlagMeasures
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RootExchangeSupportAndFourierRelation
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FourierTransformInversionLocalFieldPiStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FourierTransformInversionLocalFieldPi
 open MeasureTheory ValuativeRel Matrix GlobalTheory.SplitWeil GlobalTheory.RootEx
 
 namespace GlobalTheory.RootEx
@@ -69,7 +69,7 @@ theorem exDown_exUp_and_exUp_exDown : ∀ (k : Type) [Field k] [ValuativeRel k] 
   intro k _ _ _ _ _ _ n _ _ c p hp hpc ψ hψc hψ1 ν hsd A _ _ σ hσ l v
   have : ν.IsAddHaarMeasure := hsd.1
   have hT := _root_.GlobalTheory.RootEx.ExchangeSupport.exchange_support k n c p hp hpc ψ hψc hψ1 ν A σ hσ l v
-  have hF := GlobalTheory.T.fourier_transform_inversion_localFieldPi k n ψ hψc hψ1 ν hsd
+  have hF := _root_.GlobalTheory.SplitWeil.FourierPi.fourier_pi k n ψ hψc hψ1 ν hsd
   constructor
   · intro hN
     obtain ⟨hSB, -, hint⟩ := hT.1 hN

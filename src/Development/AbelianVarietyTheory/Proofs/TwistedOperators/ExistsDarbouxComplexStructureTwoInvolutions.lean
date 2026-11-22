@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchActionReadingsC
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueArchimedeanMatrixAdeleExtensionOfCom
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFockMap
 import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealScalarArchimedeanAdeleSmulMatrixRealPlaceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealScalarArchimedeanAdeleSmulMatrixRealPlace
 
 noncomputable section
 
@@ -202,7 +202,7 @@ theorem exists_bridge : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Nu
         simp only [mk_add, Matrix.map_apply, Matrix.add_apply, map_add, Pi.add_apply]
       map_smul' := fun r y => by
         funext w
-        rw [mk_smul_real, GlobalTheory.T.realScalarArchimedeanAdele_smul_matrix_realPlace σ τ hcm (mk d y) r w]
+        rw [mk_smul_real, _root_.GlobalTheory.RealScalar.realAd_smul_map σ τ hcm (mk d y) r w]
         ext i j
         simp only [Matrix.smul_apply, smul_eq_mul, Complex.real_smul, RingHom.id_apply, Pi.smul_apply] }
   have hΨl : ∀ y w, Ψl y w = (mk d y).map (piInf (τ w)) := fun _ _ => rfl

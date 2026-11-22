@@ -5,10 +5,10 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FirstTermE
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMulRightInvariantHaarAdelicUnitaryGroupHermiti
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HaarMeasureIwasawaModularCharacter
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsClosedUnipotentRadicalStabilizer
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnipotentRadicalStabilizerPropertyStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnipotentRadicalInfLeviTrivialStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AbsDetUnipotentRadicalEqOneStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsHaarUnipotentRadicalConjScalingStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnipotentRadicalStabilizerProperty
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnipotentRadicalInfLeviTrivial
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AbsDetUnipotentRadicalEqOne
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsHaarUnipotentRadicalConjScaling
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsRightInvariantHaarLevi
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HaarMeasureSemidirectProductFormula
 
@@ -24,14 +24,14 @@ theorem modular_stab (D : D7) (B W : HSp D) (t : ℕ) (d : HypDec B W t) [Locall
     (q : GlobalTheory.RegSW.stab d) :
     Measure.modularCharacterFun q = GlobalTheory.RegSW.absDet d q ^ (W.rank + t) := by
   haveI : LocallyCompactSpace (radN d) := (_root_.GlobalTheory.CompanionTheory.QKAvg.isClosed_radN D B W t d).isClosedEmbedding_subtypeVal.locallyCompactSpace
-  haveI : LocallyCompactSpace (levM d) := (GlobalTheory.T.unipotent_radical_stabilizer_property D B W t d).isClosedEmbedding_subtypeVal.locallyCompactSpace
+  haveI : LocallyCompactSpace (levM d) := (_root_.GlobalTheory.CompanionTheory.QKAvg.isClosed_levM D B W t d).isClosedEmbedding_subtypeVal.locallyCompactSpace
   haveI : SecondCountableTopology (GlobalTheory.RegSW.stab d) := TopologicalSpace.Subtype.secondCountableTopology _
-  obtain ⟨νN, h1, h2, h3⟩ := GlobalTheory.T.exists_haar_unipotent_radical_conj_scaling D B W t d
+  obtain ⟨νN, h1, h2, h3⟩ := _root_.GlobalTheory.CompanionTheory.QKAvg.RadMeas.exists_radN_measure D B W t d
   obtain ⟨νM, h4, h5⟩ := _root_.GlobalTheory.CompanionTheory.QKAvg.exists_levM_haar D B W t d
-  exact _root_.GlobalTheory.CompanionTheory.ModChar.modularCharacterFun_semidirect (GlobalTheory.RegSW.stab d) (radN d) (levM d) (_root_.GlobalTheory.CompanionTheory.QKAvg.isClosed_radN D B W t d) (GlobalTheory.T.unipotent_radical_stabilizer_property D B W t d)
-    (exists_radN_mul_levM d) (GlobalTheory.T.unipotent_radical_inf_levi_trivial D B W t d)
+  exact _root_.GlobalTheory.CompanionTheory.ModChar.modularCharacterFun_semidirect (GlobalTheory.RegSW.stab d) (radN d) (levM d) (_root_.GlobalTheory.CompanionTheory.QKAvg.isClosed_radN D B W t d) (_root_.GlobalTheory.CompanionTheory.QKAvg.isClosed_levM D B W t d)
+    (exists_radN_mul_levM d) (_root_.GlobalTheory.CompanionTheory.QKAvg.radN_disj_levM D B W t d)
     νN νM h1 h2 h4 h5 ((powMonoidHom (W.rank + t) : ℝ≥0 →* ℝ≥0).comp (GlobalTheory.RegSW.absDet d))
-    (fun n hn => by simp [GlobalTheory.T.absDet_unipotent_radical_eq_one D B W t d n hn]) (fun m hm => by simpa using h3 m hm) q
+    (fun n hn => by simp [_root_.GlobalTheory.CompanionTheory.QKAvg.absDet_radN D B W t d n hn]) (fun m hm => by simpa using h3 m hm) q
 
 theorem qk : PositivityTheory.Rg.Rsw.L.QK := by
   intro D t B W d l hl νK hνK s hs hlaw g

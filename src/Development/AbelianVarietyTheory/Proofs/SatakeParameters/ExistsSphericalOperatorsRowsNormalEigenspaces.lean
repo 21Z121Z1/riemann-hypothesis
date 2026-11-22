@@ -6,9 +6,9 @@ import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormalFamilyOrthogonalDecomposition
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SupportedSubgroupSplitCommutePrimeIdempotents
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaLiftLevelsGoodPrimesProperties
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LevelOperatorsAtPrimeOffLevelDatumStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LevelOperatorsAtPrimeOffLevelDatum
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalHeckeCombinationsCommuteFixedVectors
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalHeckeConjPlaceEqDualLabelStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalHeckeConjPlaceEqDualLabel
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalLabelOperatorsOnHyperspecialFixedVector
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeterssonAdjointHeckeOperatorEqDualLabel
 import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
@@ -96,8 +96,8 @@ theorem hk_comm (V : HSp D) (P P' : Pl D.host.E) (d d' : List ℤ) (u : GA D V �
     exact _root_.GlobalTheory.SphLabelComm.label_ops_comm V _ _ _ _ (rt V) u hu
   · obtain rfl := eq_conj hc
     simp only [← opOf_rt]
-    rw [(GlobalTheory.T.sphericalHecke_conjPlace_eq_dualLabel V P).2.2 _ _ (rt V) u hu,
-      (GlobalTheory.T.sphericalHecke_conjPlace_eq_dualLabel V P).2.2 _ _ (rt V) _ ((_root_.GlobalTheory.SphLabelOps.label_operators V P).2.1 _ _ (rt V) u hu)]
+    rw [(_root_.GlobalTheory.SphConj.sph_conj V P).2.2 _ _ (rt V) u hu,
+      (_root_.GlobalTheory.SphConj.sph_conj V P).2.2 _ _ (rt V) _ ((_root_.GlobalTheory.SphLabelOps.label_operators V P).2.1 _ _ (rt V) u hu)]
     exact _root_.GlobalTheory.SphLabelComm.label_ops_comm V _ _ _ _ (rt V) u hu
 
 variable {V : HSp D} {S : D.what₂.Tau → SPar} {θ : InfFam D} {M : DSModel V S}
@@ -233,7 +233,7 @@ theorem exists_opsE : ∀ {D : D7} {G : Type} [Group G] [Fintype G] {Pl0 T : Typ
   intro D G _ _ Pl0 T A Ks _ _ _ R F hC hS SF hSF
   obtain ⟨hQ, hg, hoff, -⟩ := _root_.GlobalTheory.GoodPrimes.good_primes R F hC.lev
   obtain ⟨n, hβ⟩ := hC.lev.βY 0 (lt_of_lt_of_le two_pos D.R.two_le_m)
-  have lev := fun P (hP : Good R A.μ0 P) => GlobalTheory.T.level_operators_at_prime_off_level_datum (Yc D 0) (R.βY 0) (R.ΛY 0) _ (R.dat0 R.triv) hβ P
+  have lev := fun P (hP : Good R A.μ0 P) => _root_.GlobalTheory.LevOp.level_operators (Yc D 0) (R.βY 0) (R.ΛY 0) _ (R.dat0 R.triv) hβ P
     (by rw [Nat.cast_pow]; exact fun hm => (hg _ P hP).1 (P.isPrime.mem_of_pow_mem n hm))
     (fun PP hPP => hP PP (hPP.imp id fun h => absurd h (Finset.notMem_empty _)))
   obtain ⟨h, h1, h2, h3, h4, h5⟩ := exists_ops (θ := R.θ) (M := R.MY 0) (levG _ (R.βY 0) (R.dat0 R.triv))

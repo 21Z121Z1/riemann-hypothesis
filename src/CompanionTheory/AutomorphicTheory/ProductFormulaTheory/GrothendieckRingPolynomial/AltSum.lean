@@ -6,7 +6,7 @@ import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.Zelevin
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.FineJacquetModules.SegDefs
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.SegmentRepresentation
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalTwistInjectiveStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalTwistInjective
 import CompanionTheory.AutomorphicTheory.TemperedLocalSpectra.BernsteinZelevinsky.TopAdm
 
 noncomputable section
@@ -22,7 +22,7 @@ variable {k : Type} [Field k] [ValuativeRel k] [TopologicalSpace k] [IsNonarchim
 def tN (Δ : Segment k) (n : ℕ) : IrrGL k := Δ.first.nu (n : ℂ)
 
 theorem tN_injective (Δ : Segment k) : Function.Injective (tN Δ) := fun a b h =>
-  GlobalTheory.T.cuspidal_twist_injective CompanionTheory.Tls2.BZGL.irreducibleAdmissibleGL_top Δ.first Δ.isCusp_first a b h
+  _root_.GlobalTheory.CompanionTheory.SegNu.nu_natCast_inj CompanionTheory.Tls2.BZGL.irreducibleAdmissibleGL_top Δ.first Δ.isCusp_first a b h
 
 theorem tN_zero (Δ : Segment k) : tN Δ 0 = Δ.first := by
   simp [tN]

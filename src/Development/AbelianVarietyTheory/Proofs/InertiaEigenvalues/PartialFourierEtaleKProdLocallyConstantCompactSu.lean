@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnifConst
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SelfDualMeasureExistsUniqueFourierInversion
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFactsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFacts
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology
 
 namespace GlobalTheory.JR.TildeTest
@@ -12,7 +12,7 @@ theorem main : ∀ (F E : Type) [NontriviallyNormedField F] [NontriviallyNormedF
   set T : A.K → A.K → ℂ := fun c u => A.tilde μK ψ φ' c u with hTdef
   have hslice : ∀ c, IsTest (fun u => T c u) := by
     intro c
-    have hnd := (GlobalTheory.T.etaleHermitianPair_structure_facts F E A).2.2.1
+    have hnd := (_root_.GlobalTheory.JR.EtFacts.main F E A).2.2.1
     have h := (_root_.GlobalTheory.JR.SelfDualUniq.selfDual_exists_unique_isTest F E ψ hψ A.K (Algebra.traceForm F A.K) (Algebra.traceForm_isSymm F) hnd).2 μK hμ
       (fun b => φ' (b, c)) (GlobalTheory.TestFn.slice_test φ' hφ c)
     convert h using 1

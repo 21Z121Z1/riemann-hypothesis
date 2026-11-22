@@ -46,7 +46,7 @@ theorem mem_fil_of_orth_of_ker (R : Type) [CommRing R] [Nontrivial R] (A B : Ove
     exact e
   obtain ⟨s, hs⟩ := _root_.GlobalTheory.PtExt.exists_isPtGen R (A ⊗ B) A P hLB (AbDual.inl A B) hz
   obtain ⟨T, hT⟩ := _root_.GlobalTheory.PtExt.exists_isEpsGen_of_isCob R A B P hLB v hv.1 j hj s hs k hk'
-  obtain ⟨t, ht⟩ := GlobalTheory.T.exists_pointwiseGenerator_of_dualNumberLineBundleGenerator R A B P hLB v hv.1 T hT
+  obtain ⟨t, ht⟩ := _root_.GlobalTheory.PtExt.exists_isPtGen_of_isEpsGen R A B P hLB v hv.1 T hT
   have htriv := _root_.GlobalTheory.PtExt.triv_pull_of_isPtGen R (A ⊗ B) (A ⊗ epsR R) P hLB _ t ht
   have hv1 : v ^ e = 1 := hker v htriv
   have hpow : ∀ n : ℕ, IsLieImage (n • y) (v ^ n) := by

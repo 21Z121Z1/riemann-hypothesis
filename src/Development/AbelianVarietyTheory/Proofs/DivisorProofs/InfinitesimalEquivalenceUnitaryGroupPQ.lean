@@ -288,7 +288,7 @@ theorem le_iSup_vIso (hU : IsURepOn (Kset ε) ρ)
 theorem kType_exists [CompleteSpace H] (hU : IsURepOn (UJset ε) ρ) :
     ∀ S : Submodule ℂ H, FiniteDimensional ℂ S → S ≠ ⊥ → IsKStableOn ε ρ S →
       (∀ S' : Submodule ℂ H, S' ≤ S → IsKStableOn ε ρ S' → S' = ⊥ ∨ S' = S) → ∃ Λ, IsKTypeOf ε ρ Λ S :=
-  (GlobalTheory.T.maxCompact_irreducible_has_highest_weight_and_iso n ε H ρ hU.1 hU.2.2 fun k hk => hU.2.1 k (mem_UJset_of_mem_Kset hk)).1
+  (_root_.GlobalTheory.KTypeHighest.ktype_highest_weight n ε H ρ hU.1 hU.2.2 fun k hk => hU.2.1 k (mem_UJset_of_mem_Kset hk)).1
 
 theorem mem_of_mem_closure [CompleteSpace H] (hU : IsURepOn (UJset ε) ρ) (hV : IsGKSub ε ρ V)
     (hA : IsAdmissibleSub ε ρ V) {w : H} (hw : w ∈ V.topologicalClosure) (hk : IsKFin ε ρ w) : w ∈ V := by
@@ -509,7 +509,7 @@ theorem finiteDimensional_kIso' (hU : IsURepOn (UJset ε) ρ) (hI : IsIrredOn (U
   · obtain ⟨S₀, hS₀⟩ := hex
     have hfd := GlobalTheory.GKPort.KFinLink.isAdmissible_of hU hI S₀ (GlobalTheory.KFinVec.isIrrKSub_of_isKTypeOf hS₀)
     refine Submodule.finiteDimensional_of_le (sSup_le fun S hS => ?_ : _ ≤ GlobalTheory.KFinVec.kIsotypic ε ρ S₀)
-    obtain ⟨B, hB, hBS⟩ := (GlobalTheory.T.maxCompact_irreducible_has_highest_weight_and_iso n ε H ρ hU.1 hU.2.2 fun k hk =>
+    obtain ⟨B, hB, hBS⟩ := (_root_.GlobalTheory.KTypeHighest.ktype_highest_weight n ε H ρ hU.1 hU.2.2 fun k hk =>
       hU.2.1 k (mem_UJset_of_mem_Kset hk)).2 Λ S₀ S hS₀ hS
     have hT : GlobalTheory.KFinVec.IsKMapFrom ε ρ S₀ ((B : H →ₗ[ℂ] H) ∘ₗ S₀.subtype) := fun k hk s s' hs => by
       show B s' = ρ k (B s)

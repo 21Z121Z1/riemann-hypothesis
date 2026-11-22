@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCombAt
 import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CuspAlongSmoothRows
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsRealSSmulTwoSmul
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnfoldedVacuaAreRealDatumLargeDepthStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnfoldedVacuaAreRealDatumLargeDepth
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnfoldedVacuaDifferByTwistValuesLargeDepth
 
 noncomputable section
@@ -46,7 +46,7 @@ theorem vacAt_of (h₁ : VacReal ch) (h₂ : VacTw ch) : VacAt ch := by
 
 theorem big_vacAt : Big fun ch => VacAt ch :=
   GlobalTheory.RowReal.big_mono (Q := fun ch => VacReal ch ∧ VacTw ch) (fun ch h => vacAt_of ch h.1 h.2)
-    (Big.and GlobalTheory.T.unfoldedVacuaAreRealDatum_largeDepth _root_.GlobalTheory.RowVacTw.vacTw)
+    (Big.and _root_.GlobalTheory.VacRealPf.vacReal _root_.GlobalTheory.RowVacTw.vacTw)
 
 end GlobalTheory.RowVal.OneVac
 

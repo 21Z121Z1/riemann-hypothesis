@@ -5,7 +5,7 @@ import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Cartier
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.IsMultiHomogIdealIff
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRedF
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.LogIntegralCongrSmul
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.FiniteVerticalRecursionStatement
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.FiniteVerticalRecursion
 open MvPolynomial GroundTheory.Heights₂.Heights.NumbersDVR GlobalTheory.CompanionTheory.Ar.Num GlobalTheory.CompanionTheory.Ar.Top GroundTheory.Heights₂.Heights.ModelLeaves
 open ReciprocityTheory.ChartRestriction.G.Geo (HermLine IsSmoothHerm IsArithVar IsHorizontal mcPts mCoordIdeal IsIntersectionFamily IsIntersectionSystem IntersectionSystem ptsIntegral geoNum charOf recR arInt ChartBundle chartRing)
 
@@ -75,8 +75,8 @@ theorem change_line : ∀ (K : Type) [Fintype K] [DecidableEq K] (ι : K → Typ
     ((GroundTheory.Heights₂.Heights.Bridge.isMultiHomog_iff _ _).1 hf) hfP
   have r2 := hI.2.2 P D L (A'.tensor B) (T.g ()) bg hP hL hAB' dG
     ((GroundTheory.Heights₂.Heights.Bridge.isMultiHomog_iff _ _).1 hg) hgP
-  obtain ⟨fin1, s1⟩ := GlobalTheory.T.finite_vertical_recursion K ι P D hP I bf (T.f ()) hf hfP L (A.tensor B)
-  obtain ⟨fin2, s2⟩ := GlobalTheory.T.finite_vertical_recursion K ι P D hP I bg (T.g ()) hg hgP L (A'.tensor B)
+  obtain ⟨fin1, s1⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Num.RecSplit.recR_split K ι P D hP I bf (T.f ()) hf hfP L (A.tensor B)
+  obtain ⟨fin2, s2⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Num.RecSplit.recR_split K ι P D hP I bg (T.g ()) hg hgP L (A'.tensor B)
   have hor : (∑ᶠ W, (divCycle P (T.f ()) W : ℝ) * Set.indicator {W | IsHorizontal W} (fun W => I W D L) W) =
       ∑ᶠ W, (divCycle P (T.g ()) W : ℝ) * Set.indicator {W | IsHorizontal W} (fun W => I W D L) W := by
     refine finsum_congr fun W => ?_

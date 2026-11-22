@@ -4,12 +4,12 @@ import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
 import Development.AbelianVarietyTheory.Definitions.Foundations.HTBasis
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicCharacterPadicBasicProperties
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousOrbitPadicComplex
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCyclotomicTowerLevelGeneratorPropertiesStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TateDecompositionCompletedCyclotomicIntegersStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCyclotomicTowerLevelGeneratorProperties
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TateDecompositionCompletedCyclotomicIntegers
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsTateOperatorLevelComplement
 import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicTateMaximalIdealKillsFirstCohomologyStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicTowerFixedIffMemCompletedIntegersStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicTateMaximalIdealKillsFirstCohomology
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicTowerFixedIffMemCompletedIntegers
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormUnitPowSubOne
 
 noncomputable section
@@ -234,7 +234,7 @@ theorem exists_coeff {act : GQ l →* (PadicComplex l ≃+* PadicComplex l)} {χ
   have hle := hinf_le_gj K s
   have hl0 : (l : PadicComplex l) ≠ 0 := by exact_mod_cast hp.ne_zero
   have hlR : (0 : ℝ) < l := by exact_mod_cast hp.pos
-  obtain ⟨x, hx, hx2⟩ := GlobalTheory.T.cyclotomic_tate_maximalIdeal_kills_first_cohomology l act ha K 1 (l : PadicComplex l)
+  obtain ⟨x, hx, hx2⟩ := _root_.GlobalTheory.Cyc.AveragingRankOne.cyclotomic_maximalIdeal_smul_cocycle_isCoboundary l act ha K 1 (l : PadicComplex l)
     ⟨l, natCast_mem (Kinf K) l, by simp⟩ norm_l_lt (fun g _ => c g)
     ⟨continuousOn_pi.2 fun _ => hc.1.mono hle, fun g hg _ => hc.2.1 g (hle hg),
       fun g hg h hh => by
@@ -250,16 +250,16 @@ theorem exists_coeff {act : GQ l →* (PadicComplex l ≃+* PadicComplex l)} {χ
     fun g => (l : PadicComplex l) * c g - (act g (x 0) - x 0) with hc1def
   have hc1H : ∀ h ∈ Hinf K, c1 h = 0 := fun h hh => by
     simp only [hc1def, hx3 h hh, sub_self]
-  obtain ⟨⟨γ, hγ⟩, hgen⟩ := GlobalTheory.T.exists_cyclotomicTowerLevelGenerator_properties l act χ ha hχ K s hs
+  obtain ⟨⟨γ, hγ⟩, hgen⟩ := _root_.GlobalTheory.Cyc.gen_dense l act χ ha hχ K s hs
   have hO : c1 γ ∈ Ohat K := by
-    refine (GlobalTheory.T.cyclotomicTower_fixed_iff_mem_completedIntegers l act ha K _ (hc1.2.1 γ hγ.1)).1 fun h hh => ?_
+    refine (_root_.GlobalTheory.CycInvariants.fixed_iff_mem_Ohat l act ha K _ (hc1.2.1 γ hγ.1)).1 fun h hh => ?_
     have hconj := conj_hinf hχ K s hγ.1 hh
     have e1 := hc1.2.2 h (hle hh) γ hγ.1
     have e2 := hc1.2.2 γ hγ.1 _ (hle hconj)
     have e3 : γ * (γ⁻¹ * h * γ) = h * γ := by group
     rw [e3, e1, hc1H h hh, hc1H _ hconj] at e2
     simpa using e2
-  obtain ⟨T1a, -, T1c, -⟩ := GlobalTheory.T.tate_decomposition_completed_cyclotomic_integers l act χ ha hχ K s hs.1
+  obtain ⟨T1a, -, T1c, -⟩ := _root_.GlobalTheory.TateDecomp.tate_decomposition l act χ ha hχ K s hs.1
   obtain ⟨y, hy, w, hw, hyw⟩ := T1a _ hO
   obtain ⟨ζ, hζ, hζK, -⟩ := exists_zeta K s hs.1
   have hζ0 : ζ - 1 ≠ 0 := sub_ne_zero.2 (hζ.ne_one hp.one_lt)
@@ -288,7 +288,7 @@ theorem exists_coeff {act : GQ l →* (PadicComplex l ≃+* PadicComplex l)} {χ
     γ hγ.1 (hgen γ hγ).2.2
     (fun h hh => by
       rw [hc1H h hh, logC_hinf hχ K hh, hz h (hle hh),
-        (GlobalTheory.T.cyclotomicTower_fixed_iff_mem_completedIntegers l act ha K _ (ohat_norm K hvO)).2 hvO h hh]
+        (_root_.GlobalTheory.CycInvariants.fixed_iff_mem_Ohat l act ha K _ (ohat_norm K hvO)).2 hvO h hh]
       ring)
     (by
       rw [hz γ hγ.1, ← sub_div, hv2, hyw, mul_div_cancel₀ _ hL0, mul_div_cancel_left₀ _ hζ0]
@@ -314,11 +314,11 @@ theorem coeff_eq_zero {act : GQ l →* (PadicComplex l ≃+* PadicComplex l)} {�
     (α : PadicComplex l) (hα : α ∈ inC (Ks K s)) (b : PadicComplex l)
     (hb : ∀ σ ∈ Gj K s, logC χ σ * α = act σ b - b) : α = 0 := by
   have hl0 : (l : PadicComplex l) ≠ 0 := by exact_mod_cast (Fact.out : l.Prime).ne_zero
-  obtain ⟨⟨γ, hγ⟩, -⟩ := GlobalTheory.T.exists_cyclotomicTowerLevelGenerator_properties l act χ ha hχ K s hs
-  obtain ⟨T1a, T1b, -, -, T1e, -⟩ := GlobalTheory.T.tate_decomposition_completed_cyclotomic_integers l act χ ha hχ K s hs.1
+  obtain ⟨⟨γ, hγ⟩, -⟩ := _root_.GlobalTheory.Cyc.gen_dense l act χ ha hχ K s hs
+  obtain ⟨T1a, T1b, -, -, T1e, -⟩ := _root_.GlobalTheory.TateDecomp.tate_decomposition l act χ ha hχ K s hs.1
   obtain ⟨n, hn⟩ := exists_scale b
   have hO : (l : PadicComplex l) ^ n * b ∈ Ohat K := by
-    refine (GlobalTheory.T.cyclotomicTower_fixed_iff_mem_completedIntegers l act ha K _ hn).1 fun h hh => ?_
+    refine (_root_.GlobalTheory.CycInvariants.fixed_iff_mem_Ohat l act ha K _ hn).1 fun h hh => ?_
     have := hb h (hinf_le_gj K s hh)
     rw [logC_hinf hχ K hh, zero_mul, eq_comm, sub_eq_zero] at this
     rw [map_mul, map_pow, map_natCast, this]

@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousAtPlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicHeisenbergActsByLocalSchrodinger
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchroedingerMemSchwartzBruhatFinitePlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LagrangianInvariantFormsProportionalFinitePlace
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymplecticFormEqZeroOfLagrangianAtPlaceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymplecticFormEqZeroOfLagrangianAtPlace
 
 open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.WeilM GlobalTheory.AdelicU GlobalTheory.LFun GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels
 open scoped TensorProduct Matrix GlobalTheory.VacAny
@@ -183,7 +183,7 @@ def lagCo (M : Model σ X W) (v : Pl F) {m : ℕ} (C : Matrix (Fin d) (Fin m) (A
 theorem lagCo_isotropic (M : Model σ X W) (v : Pl F) {m : ℕ} (C : Matrix (Fin d) (Fin m) (AE F E))
     (hC : IsLagrAt σ W v C) : ∀ a ∈ lagCo M v C, ∀ b ∈ lagCo M v C, a.1 ⬝ᵥ b.2 = b.1 ⬝ᵥ a.2 := by
   rintro _ ⟨u, hu, rfl⟩ _ ⟨u', hu', rfl⟩
-  have h0 := GlobalTheory.T.symplecticForm_eq_zero_of_lagrangianAtPlace σ X.J W v C hC (-1) u u' hu hu'
+  have h0 := _root_.GlobalTheory.InertVacIso.symp_eq_zero_of_lagAt σ X.J W v C hC (-1) u u' hu hu'
   rw [M.co.form] at h0
   have h1 := congrArg (evFin F v) h0
   rw [← sub_eq_zero]

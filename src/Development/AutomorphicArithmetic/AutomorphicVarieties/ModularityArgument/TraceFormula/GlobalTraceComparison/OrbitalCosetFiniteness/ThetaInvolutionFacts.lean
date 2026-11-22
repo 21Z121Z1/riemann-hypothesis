@@ -1,6 +1,8 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.OrbitalCosetFiniteness.CvGelfandAlt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RegularTwistedOrbitLocalFinitenessStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalTwistContinuousInvolutionIntegralPropertiesStatement
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RegularTwistedOrbitLocalFiniteness
+import Development.AbelianVarietyTheory.Definitions.Divisors.GaloisRepOfPolarizedCuspidal
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalTwistContinuousInvolutionIntegralProperties
 
 noncomputable section
 
@@ -63,8 +65,8 @@ private theorem orbFin_prod {G H : Type} [Group G] [Group H] [TopologicalSpace G
 
 theorem theta_involution_facts : Th2 := by
   intro E _ _ _ hE a b w _
-  have ta := GlobalTheory.T.localTwist_continuous_involution_integral_properties E hE a w
-  have tb := GlobalTheory.T.localTwist_continuous_involution_integral_properties E hE b w
+  have ta := _root_.GlobalTheory.BCT.ThBasic.twist_basic E hE a w
+  have tb := _root_.GlobalTheory.BCT.ThBasic.twist_basic E hE b w
   refine ⟨?_, ?_, ?_, ?_⟩
   · exact (ta.1.comp continuous_fst).prodMk (tb.1.comp continuous_snd)
   · intro x
@@ -73,7 +75,7 @@ theorem theta_involution_facts : Th2 := by
     exact ⟨ta.2.2.1 _ hk.1, tb.2.2.1 _ hk.2⟩
   · rintro ⟨y₁, y₂⟩ h₁ h₂
     exact orbFin_prod (thL a w) (thL b w) _ _ ta.2.2.2.2.2.1 tb.2.2.2.2.2.1 ta.2.2.1 tb.2.2.1 y₁ y₂
-      ((GlobalTheory.T.regularTwistedOrbit_local_finiteness E hE a w y₁ h₁ _ ⟨ta.2.2.2.2.1, le_rfl, ta.2.2.1⟩).2)
-      ((GlobalTheory.T.regularTwistedOrbit_local_finiteness E hE b w y₂ h₂ _ ⟨tb.2.2.2.2.1, le_rfl, tb.2.2.1⟩).2)
+      ((_root_.GlobalTheory.LocFin.main E hE a w y₁ h₁ _ ⟨ta.2.2.2.2.1, le_rfl, ta.2.2.1⟩).2)
+      ((_root_.GlobalTheory.LocFin.main E hE b w y₂ h₂ _ ⟨tb.2.2.2.2.1, le_rfl, tb.2.2.1⟩).2)
 
 end UpperTheory.V.Z.Tf.GlobalTraceComparison.Th

@@ -127,7 +127,7 @@ theorem ne_zero_and_psiCmp (h₁ : Laws) (h₂ : Laws2) {R V : Type} [CommRing R
   have hm : IsLocalRing.maximalIdeal V ≠ ⊤ := (IsLocalRing.maximalIdeal.isMaximal V).ne_top
   obtain ⟨σ', f', hf', hσσ, hff⟩ := ExpCmp.expT_cmp R V I _ φ C.map_le D D'.toPre A A' G G' U U' F C 1 σ f hf
   have hcmp : SecCmp D D'.toPre C.β C.v C.xe f f' := hff
-  have hrel' := GlobalTheory.T.psiRel_of_expT' h₁ h₂ V _ hV' D' A' G' U' U₀ hU σ' f' hf'
+  have hrel' := _root_.GlobalTheory.PsiExpansion.psiRel_of_expT h₁ h₂ V _ hV' D' A' G' U' U₀ hU σ' f' hf'
   obtain ⟨y', hy'⟩ := exists_point_of_cmp hφ C 1 σ σ' hσσ y hy
   have hne' : ∀ α, ∃ j, (f' α).f j ≠ 0 := _root_.GlobalTheory.forall_ne_zero_of_psiRel V D'.toPre f' hrel'
     (exists_term_ne_zero (IsLocalRing.jacobson_eq_maximalIdeal ⊥ bot_ne_top).ge U' 1 σ' f' hf' y' hy')
@@ -188,7 +188,7 @@ theorem exists_unif_of_ne_zero : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLoc
   have hrelE : PsiRel E (𝟙_ _) f := hrel
   obtain ⟨hrig, gam, hgam, hpsi⟩ := hps psi h hrel
   have hev : E.PsiEven :=
-    GlobalTheory.T.psiEven_descend_baseChange h₁.globalFns R V φ E D'.toPre C.β C.v C.xe C.pbB C.v_gen C.c_pr gam hgam hpsi D'.psi_even
+    _root_.GlobalTheory.PsiRing.psiEven_descend h₁.globalFns R V φ E D'.toPre C.β C.v C.xe C.pbB C.v_gen C.c_pr gam hgam hpsi D'.psi_even
   have hbi : E.TauBimult :=
     _root_.GlobalTheory.tauBimult_of_baseChange h₁.globalFns R V φ E D'.toPre C.β C.v C.xe C.pbB C.v_gen C.c_pr hrig gam hgam hpsi D'.tau_bimult
   obtain ⟨hD, hD₁, hD₂, hD₃⟩ :=

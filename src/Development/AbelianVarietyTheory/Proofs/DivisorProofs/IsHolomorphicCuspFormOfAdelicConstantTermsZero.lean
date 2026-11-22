@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsSmoothVector
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagDomainFramesEqGramFramesUnitary
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsArchimedeanLiftUnitaryGroupProductStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicAdelicFormOfBoundedSectionStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicTransvectionSubgroupEqAdelesClosedStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransvectionSubgroupCocompactHaarFundamentalDomaStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsArchimedeanLiftUnitaryGroupProduct
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicAdelicFormOfBoundedSection
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicTransvectionSubgroupEqAdelesClosed
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransvectionSubgroupCocompactHaarFundamentalDoma
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.FjFlow
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.CompactEntryBounds
 
@@ -119,7 +119,7 @@ set_option maxHeartbeats 1000000 in
 
 theorem isHolCusp_of_zCusp : ∀ (D : D7) (θ : InfFam D) (V : HSp D) (S : D.what₂.Tau → SPar) (M : DSModel V S) (w : D.what₂.Tau → Fin V.rank → ℤ) (r : ℕ) (hr : V.rank = r) (Comp : Type) (X : Comp → ReciprocityTheory.ChartRestriction.G.FD.Data D.host.E r) (la : ∀ k, ReciprocityTheory.ChartRestriction.G.FD.Wt (X k).Ψ r) (dict : GA D V → Σ k, ReciprocityTheory.ChartRestriction.G.FD.Frame (X k).Ψ r) (mu : GA D V → ℂ) (c : Comp → ℂ) (Kf : Subgroup (GA D V)), HolShape M → GoodDict θ M w hr X la dict mu c Kf → ∀ P : FDSec X, (∀ k, (X k).IsBddSec (la k) (P k)) → ZCusp V (adel V dict (muPin V dict mu c) P) → IsHolCusp X la P := by
   intro D θ V S M w r hr Comp X la dict mu c Kf hM hG P hP hZ k
-  have hF := GlobalTheory.T.holomorphicAdelicForm_of_boundedSection D θ V S M w r hr Comp X la dict mu c Kf hM hG P hP
+  have hF := _root_.GlobalTheory.HolDict.BackHol.holForm_adel D θ V S M w r hr Comp X la dict mu c Kf hM hG P hP
   obtain ⟨e, he, -, -⟩ := GlobalTheory.HolDict.FdDom.dom_iff_frDoms D θ V S M w r hr Comp X la dict mu c Kf hM hG k
   subst hr
   haveI : IsTopologicalGroup (GA D V) := by
@@ -156,9 +156,9 @@ theorem isHolCusp_of_zCusp : ∀ (D : D7) (θ : InfFam D) (V : HSp D) (S : D.wha
     intro ρ m
     rw [← inZe_iff (X k) hGm η (e ρ) m, he ρ]
     rfl
-  obtain ⟨L, hL1, -, hLc, hLm, hLi, -, -, hcomm, -⟩ := GlobalTheory.T.exists_archimedean_lift_unitaryGroupProduct D θ V hG.inf
-  obtain ⟨-, -, hZa, hZb, -⟩ := GlobalTheory.T.adelicTransvectionSubgroup_eq_adeles_closed D θ V hG.inf η hiso
-  obtain ⟨⟨μ, 𝓕, hμ, h𝓕, -⟩, hfin, hdec⟩ := GlobalTheory.T.transvectionSubgroup_cocompact_haar_fundamentalDomain D θ V hG.inf η hiso
+  obtain ⟨L, hL1, -, hLc, hLm, hLi, -, -, hcomm, -⟩ := _root_.GlobalTheory.RealLift.exists_real_lift D θ V hG.inf
+  obtain ⟨-, -, hZa, hZb, -⟩ := _root_.GlobalTheory.HolDict.TransvGroup.transvection_group D θ V hG.inf η hiso
+  obtain ⟨⟨μ, 𝓕, hμ, h𝓕, -⟩, hfin, hdec⟩ := _root_.GlobalTheory.TransvMeasure.transvection_measure D θ V hG.inf η hiso
   obtain ⟨ex, hex, -⟩ := hG.wt
   set f : ((X k).Ψ → ℝ) → ℂ := fun s => P k ((X k).flow ξ (fun τ => (s τ : ℂ)) x) with hf
   set C₀ : ℂ := c k * mu g * bchar (la k) b with hC₀

@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.SharpRestriction.Divisibility.SchurIrreducible
 import Formalism.LocalToGlobal.BesselHermitianTheta.DefsReal
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsFockIPOfFockData
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GlBlockFiniteDimModuleStructureStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GlBlockFiniteDimModuleStructure
 
 open Formalism.BasicNotions.TH Formalism.MainNotions.SchurIrreducible GlobalTheory.FockAlg
 
@@ -77,7 +77,7 @@ theorem exists_finiteDimensional_forall_map_mem :
   refine Nat.strong_induction_on n ?_
   intro n ih U hUW hUK hn
   have hUfd : FiniteDimensional ℂ U := Submodule.finiteDimensional_of_le hUW
-  obtain ⟨hsplit, hhw, -, -⟩ := GlobalTheory.T.glBlock_finiteDim_module_structure p q V act hact U hUfd hUK
+  obtain ⟨hsplit, hhw, -, -⟩ := _root_.GlobalTheory.BlockReps.finite_module_structure p q V act hact U hUfd hUK
     (fun v hv => hWwt v (hUW hv))
   by_cases hU0 : U = ⊥
   · refine ⟨⊥, inferInstance, fun φ _ v hv => ?_⟩

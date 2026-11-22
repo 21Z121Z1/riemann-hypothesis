@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Jets.CmLatticeCommutatorPairingPowEqOneOfGoodLift
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CpSeriesCoeffBoundedTaylorEllipticOfPolesStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CpSeriesCoeffBoundedTaylorEllipticOfPoles
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CpSeriesCoeffNormBoundedRingLaws
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CpTransportedTaylorSeriesInChartRingHomLaws
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SmallTorsionKilledByPrimePowers
@@ -110,11 +110,11 @@ theorem theta_quot : ∀ (d q : ℕ) [Fact q.Prime] (M : Mdl q) (ω : ℂ_[q]) (
       (by simpa using hz _ hp) hs
     exact not_half d hd.pos this.2
   have hbε : Bdd (hat M.ι (C ω * logS) (fun z => θ (α * z) / θ z ^ m)) := by
-    refine GlobalTheory.T.cpSeriesCoeffBounded_taylor_elliptic_of_poles q M _ _ hch hEε haε fun p hp => ?_
+    refine _root_.GlobalTheory.MomOne.EllBdd.bdd_hat_of_ell q M _ _ hch hEε haε fun p hp => ?_
     have := zero_of_pole hA hB p hp
     exact hns 1 p ⟨1, 0, by simp⟩ one_ne_zero (by simpa using (pow_eq_zero_iff'.1 this).1)
   have hbη : Bdd (hat M.ι (C ω * logS) (fun z => θ z ^ m / θ (α * z))) := by
-    refine GlobalTheory.T.cpSeriesCoeffBounded_taylor_elliptic_of_poles q M _ _ hch hEη haη fun p hp => ?_
+    refine _root_.GlobalTheory.MomOne.EllBdd.bdd_hat_of_ell q M _ _ hch hEη haη fun p hp => ?_
     exact hns α p hα hα0 (zero_of_pole hB hA p hp)
   obtain ⟨hh1, hh2, -, hh4, -⟩ := _root_.GlobalTheory.MomOne.TaylorRead.hat_laws q M.ι (C ω * logS) hch.2.1
   have hprod : hat M.ι (C ω * logS) (fun z => θ (α * z) / θ z ^ m) *

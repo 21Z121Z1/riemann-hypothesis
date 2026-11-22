@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOscillatorAct
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergSmoothOfWeakDerivativeClosedSet
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.PolarConjTranspose
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.CommuteGelfandInvariantMatrixUnitsOfGlRel
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeisenbergSmoothVectorDerivativeCalculusStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeisenbergSmoothVectorDerivativeCalculus
 
 open MeasureTheory Complex Matrix GlobalTheory.RealWeil GlobalTheory.Mem.Lift
 open scoped RealInnerProductSpace ContDiff Real ComplexOrder Topology
@@ -47,7 +47,7 @@ theorem GlobalTheory.Mem.Lift.exists_isCCR_xOp_dOp : ∀ (ι : Type) [Fintype ι
   intro ι _ _ H hH hd B _ _ ρ hρ
   obtain ⟨om, hom⟩ := exists_om H
   have hρ' : IsHeis (fun x y => om x y) ρ := by simpa only [hom] using hρ
-  have key := GlobalTheory.T.heisenbergSmoothVector_derivative_calculus (ι → ℂ) B om ρ (fun x => by rw [hom, im_self hH]) hρ'
+  have key := _root_.GlobalTheory.Mem.Lift.DCalc.dH_calculus (ι → ℂ) B om ρ (fun x => by rw [hom, im_self hH]) hρ'
   let D : (ι → ℂ) → Module.End ℂ (smS ρ) := fun v =>
     { toFun := fun f => ⟨dH ρ v f.1, (key f.1 f.2).1 v⟩
       map_add' := fun f g => Subtype.ext (dH_add v f.2 g.2)

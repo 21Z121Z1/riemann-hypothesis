@@ -5,7 +5,7 @@ import Formalism.FrobeniusOrbits.HostCorollaries
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.HostFacts
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PadicAlgClFiniteDenseEqAdjoin
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsPlaceOverPrimeOfPadicAlgClEmbedding
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FinrankLocalFieldEqCardDecompositionGroupStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FinrankLocalFieldEqCardDecompositionGroup
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.FrobeniusOrbits Formalism.MainNotions.N
 open scoped Pointwise
 
@@ -57,7 +57,7 @@ theorem embeddings_orbit : ∀ {R : Ranks} (H : Host R) (l : ℕ) [Fact l.Prime]
   haveI : NeZero N := ⟨hNpos.ne'⟩
   refine ⟨?_, ?_⟩
   · have hK : K.1 = IntermediateField.adjoin ℚ_[l] (Set.range c) := _root_.GlobalTheory.padicAlgCl_finite_dense_eq_adjoin l H.E c K.1 hc K.2 hcl
-    have hdeg := GlobalTheory.T.finrank_local_field_eq_card_decomposition_group l H.E c v hv
+    have hdeg := _root_.GlobalTheory.LocStab.finrank_adjoin_range_eq_card_stabilizer l H.E c v hv
     rw [← hord, ← Nat.card_zpowers, ← hstab, ← hdeg, hK]
   · intro τ
     let ρ : H.E →+* PadicAlgCl l := (τ : ↥K.1 →+* PadicAlgCl l).comp (c.codRestrict K.1 hc)

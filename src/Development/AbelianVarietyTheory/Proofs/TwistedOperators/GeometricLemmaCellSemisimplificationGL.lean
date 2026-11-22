@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Ha
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NonemptyEquivMultiProdOne
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SmRep
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PiExteriorTensorSmoothIrreducibleIsIrreducible
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TensorProductDeterminesFactorClassesStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TensorProductDeterminesFactorClasses
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsEquivPiExteriorTensorBlockLevi
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RelativeJacquetFunctorPiTensorEquiv
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormalisedInductionProductParabolicPiTensor
@@ -94,7 +94,7 @@ theorem GlobalTheory.SmGL.CellSemis.cellSemisimplification : GlobalTheory.Publis
   have hΘi : Function.Injective Θ := by
     intro s s' h
     funext i j
-    have h2 := GlobalTheory.T.tensor_product_determines_factor_classes β (fun j => GL (c i j) k) (fun j => (s i j).rep) (fun j => (s' i j).rep)
+    have h2 := _root_.GlobalTheory.TensorFactorUnique.cl_eq_of_piTensor_equiv β (fun j => GL (c i j) k) (fun j => (s i j).rep) (fun j => (s' i j).rep)
       (IrrRep.cl_eq_iff.1 (congrFun h i)) j
     rwa [IrrCl.cl_rep, IrrCl.cl_rep] at h2
   have hΘs : Function.Surjective Θ := by

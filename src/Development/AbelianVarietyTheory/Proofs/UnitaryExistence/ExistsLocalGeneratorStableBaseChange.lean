@@ -3,10 +3,10 @@ import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.UnivFram
 import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsLieBasis
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUniqueScaledBaseChangeFibreSectionStatement
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ScaledBaseChangeFibreSectionCalculusStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUniqueScaledBaseChangeFibreSection
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ScaledBaseChangeFibreSectionCalculus
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ScaledBaseChangeFibreSectionNonvanishingIff
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FibreSectionGeneratesOfNowhereZeroNoetherianBaseStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FibreSectionGeneratesOfNowhereZeroNoetherianBase
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsLocalSectionNonzeroAllFibresModuli
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
@@ -42,16 +42,16 @@ theorem exists_local_generator : Out.SecBaseChangeSt → ∀ (E : Type) [Field E
   obtain ⟨R, _, _, j, θ₀, hj, hz, hnz⟩ := _root_.GlobalTheory.PushLoc.exists_secNZ hB E H Dw l Xo (x p)
   obtain ⟨g, hg, φ, hφ⟩ := exists_away_lift x j p hz
   have hφ' : spMap (algebraMap S (Localization.Away g)) ≫ x = spMap φ ≫ j := hφ
-  obtain ⟨θ, hθ, -⟩ := GlobalTheory.T.existsUnique_scaledBaseChange_fibreSection E H Dw l Xo R (Localization.Away g) φ 1 j _ hφ' θ₀
+  obtain ⟨θ, hθ, -⟩ := _root_.GlobalTheory.Frames.SecPull.existsUnique_secBC E H Dw l Xo R (Localization.Away g) φ 1 j _ hφ' θ₀
   refine ⟨g, hg, θ, ?_⟩
   intro T _ ψ x' θ' hx' hbc
   have h1 : SecBC (ψ.comp φ) 1 j x' θ₀ θ' :=
-    ((GlobalTheory.T.scaledBaseChange_fibreSection_calculus E H Dw l Xo R (Localization.Away g) T φ ψ j _ x' hφ' hx').1 1 θ₀ θ θ' hθ).1 hbc
+    ((_root_.GlobalTheory.Frames.SecCalc.sec_calc E H Dw l Xo R (Localization.Away g) T φ ψ j _ x' hφ' hx').1 1 θ₀ θ θ' hθ).1 hbc
   have hx'' : x' = spMap (ψ.comp φ) ≫ j := by
     rw [hx', hφ', ← Category.assoc]
     congr 1
     exact (Spec.map_comp (CommRingCat.ofHom φ) (CommRingCat.ofHom ψ)).symm
-  exact ⟨GlobalTheory.T.fibreSectionGenerates_of_nowhereZero_noetherian_baseChange hB E H Dw l Xo R j θ₀ hnz T (ψ.comp φ) x' θ' hx'' h1,
+  exact ⟨_root_.GlobalTheory.FrameGenerator.secGen_of_secNZ_baseChange hB E H Dw l Xo R j θ₀ hnz T (ψ.comp φ) x' θ' hx'' h1,
     fun p' => (_root_.GlobalTheory.Frames.secBC_nonvanishing_iff E H Dw l Xo R T (ψ.comp φ) j x' hx'' θ₀ θ' h1 p').2 (hnz _)⟩
 
 end GlobalTheory.Frames

@@ -20,12 +20,13 @@ import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeightedLimitGauge.Char
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeightedLimitGauge.RhsWInvT
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeightedLimitGauge.RhsWInvO
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HaarUnitaryGroupWbDensityChart
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HyperboloidInvariantMeasurePolarFormStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HyperboloidInvariantMeasurePolarForm
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HyperboloidChartMeasureFormula
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StabiliserUnitaryGroupHasGaugeMeasure
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryGroupGaugeVolumeInHermitianUnitaryStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StabilizerTubeGaugeMassAsymptoticStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HyperboloidInvariantMeasureOrbitRepresentationStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryGroupGaugeVolumeInHermitianUnitary
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeightedLimitGauge.VolumeLieE
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StabilizerTubeGaugeMassAsymptotic
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HyperboloidInvariantMeasureOrbitRepresentation
 
 noncomputable section
 
@@ -44,7 +45,7 @@ theorem rhsWLim_of_leaves (hD : HaarDens) (hQ : HypQ) (hC : HypChart) (hK : Gaug
       hW.massW', hW.sec⟩
 
 theorem rhsWLim : Formalism.L2.SG.Pf.WB.RhsWLim :=
-  rhsWLim_of_leaves _root_.GlobalTheory.HaarDensChart.haarDens GlobalTheory.T.hyperboloid_invariant_measure_polar_form _root_.GlobalTheory.HypChartPf.hypChart _root_.GlobalTheory.GaugeKExists.gaugeK GlobalTheory.T.unitaryGroup_gaugeVolume_in_hermitianUnitary GlobalTheory.T.stabilizerTube_gaugeMass_asymptotic GlobalTheory.T.hyperboloid_invariant_measure_orbit_representation
+  rhsWLim_of_leaves _root_.GlobalTheory.HaarDensChart.haarDens _root_.GlobalTheory.HyperboloidPolar.hypQ _root_.GlobalTheory.HypChartPf.hypChart _root_.GlobalTheory.GaugeKExists.gaugeK _root_.GlobalTheory.GaugeVolFixer.gaugeVolUk _root_.GlobalTheory.StabTube.tubeLimK _root_.GlobalTheory.HypOrbitUnique.orbRepY
 
 instance : Fact (Formalism.L2.SG.Pf.WB.RhsWLim) := ⟨rhsWLim⟩
 

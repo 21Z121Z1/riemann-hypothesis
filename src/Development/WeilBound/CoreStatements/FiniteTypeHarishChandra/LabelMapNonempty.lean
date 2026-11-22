@@ -124,7 +124,7 @@ theorem iso_of_label (C : LabelConv K) {d : ℕ} (hd : 1 ≤ d) (τ τ' : FDRep 
 
 theorem cuspParam_all (C : LabelConv K) : CuspParam K C := fun d hd =>
   ⟨fun τ hs hc => ⟨(exists_label C hd τ hs hc).elim fun P hP =>
-      ⟨P, hP, fun Q hQ => GlobalTheory.T.cuspidal_label_unique K C _ τ Q P hQ hP⟩,
+      ⟨P, hP, fun Q hQ => _root_.GlobalTheory.CompanionTheory.TyFin.LabelUniq.hasCuspLabel_unique K C _ τ Q P hQ hP⟩,
       GlobalTheory.CompanionTheory.TyFin.finrank_of_simple_cuspidal C.ι C.ι_inj hd τ hs hc⟩,
     _root_.GlobalTheory.CompanionTheory.TyFin.CuspLabel.exists_cuspidal_label K C d hd, fun τ τ' P => iso_of_label C hd τ τ' P⟩
 

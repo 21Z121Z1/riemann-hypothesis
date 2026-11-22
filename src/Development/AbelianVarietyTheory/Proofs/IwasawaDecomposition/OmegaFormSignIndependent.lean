@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsConjug
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OrthonormalNegFirstFamilyFrameCartanMove
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormIntegrality
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormSignExists
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitFinitePointMovesVacuumToProjectionStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitFinitePointMovesVacuumToProjection
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormPeriodRelation
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicThetaOfTestFunctionExistsLawsFockVectors
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.IsLatticeVacuumIffSignedRationalFixed
@@ -293,7 +293,7 @@ theorem char_hatA (C : Ctx S T) {Λ : Lt D.host.E S.rank} (hΛ : Λ ∈ Vset D.h
     TensLat.smul_mem_tens hΛ o.isIntegral_coe hy
   refine fun u hu u' hu' => SignVac.char_sympl_hatA C.std.1.1 hA (fun y hy y' hy' => ?_) hu hu'
   obtain ⟨k, hk⟩ := (TensLat.tens_selfDual hΛ hL y).1 hy y' hy'
-  rw [← SplitScalar.symplOH_add_self, AddChar.map_add_eq_mul, (GlobalTheory.T.symplecticCharacter_real_finite_points_match D S T C).2.2.1, hk, ← Complex.exp_add,
+  rw [← SplitScalar.symplOH_add_self, AddChar.map_add_eq_mul, (_root_.GlobalTheory.FormMatch.forms_match D S T C).2.2.1, hk, ← Complex.exp_add,
     ← Complex.exp_int_mul_two_pi_mul_I (-k)]
   congr 1
   push_cast

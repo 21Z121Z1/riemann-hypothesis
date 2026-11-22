@@ -63,7 +63,7 @@ theorem conj_jet : ∀ (D : D7), GlobalTheory.NormSum.Inp D → ∀ (δ t0 : ℂ
   obtain ⟨k, hk, hC⟩ := GlobalTheory.T.exists_homLattice_commensurable_orthonormal D N N' _ b _ _ hb hL hL'
   have kB : KLat D (tor0 D D.host.ccK δ) (LaB D (tor0 D D.host.ccK δ) b) := Or.inl ⟨_, b, hb, rfl⟩
   have kL : KLat D (tor0 D D.host.ccK δ) (La D (tor0 D D.host.ccK δ) _ _) := Or.inr ⟨_, _, hL, hL', rfl⟩
-  obtain ⟨-, -, c1, c2, -⟩ := GlobalTheory.T.coords_along_orthonormal_realSubfield_basis D hG D.host.ccK δ N N' _ b hb
+  obtain ⟨-, -, c1, c2, -⟩ := _root_.GlobalTheory.OnCoord.coords_of_orthonormal_basis D hG D.host.ccK δ N N' _ b hb
   obtain ⟨d1, d2⟩ := _root_.GlobalTheory.HalfPeriodTheta.theta_signed_translation D hG D.host.ccK δ hc t0 ht0
   have hth0 := _root_.GlobalTheory.ProdTheta.pullB_mem_ThSp D (tor0 D D.host.ccK δ) N N' _ b _ c1 c2 d1 d2
   have hCb : Comm D b k (Set.range b) := by simpa using (comm_range D b).mul k

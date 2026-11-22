@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Ha
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HasDRepIffHasDerivAt
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.PairwiseDisjointCell
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaChainStageConjugateValuesHeckeOperatorsStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaChainStageConjugateValuesHeckeOperators
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaChainStageLatticeStabilizerParamsOffSet
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ChainParSucc
@@ -16,7 +16,7 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaChain
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaChainLevelProperties
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.EulerProductConjugationStableParametersPosStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BoundedAutomorphicParametersStarStableStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ChainStageFormsTwistedLevelLeFinerLevelStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ChainStageFormsTwistedLevelLeFinerLevel
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EventuallyEqOfIsZetaCont
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix
 open Formalism.L2.Theta Formalism.L2.DIV Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.IndefR.Datum
@@ -65,7 +65,7 @@ theorem conjStable_first_member (hCRD : GlobalTheory.Published.CuspRapidDecay) {
   set f : GA D s'.V → ℂ := fun g => conj (PiLocalization₂.val u' v g) with hfdef
   have hPF : ParFun c s' (PiLocalization₂.val u' v) B := hB'.2 v hv
   have h3 : GlobalTheory.LFun.IsParamFunV s'.V c.S f B := ((_root_.GlobalTheory.ChainOnto.stabLoc_isParamFun_frameLat D c hc 0 hj s' hflat).2 f B).1 hPF
-  obtain ⟨h4a, _, _⟩ := GlobalTheory.T.thetaChainStage_conjugate_values_hecke_operators hCRD D c hc 0 hj s' hflat
+  obtain ⟨h4a, _, _⟩ := _root_.GlobalTheory.ConjVal.conj_values_hecke hCRD D c hc 0 hj s' hflat
   obtain ⟨hcont, ⟨C, hC⟩, hinv, _⟩ := h4a u' v
   have hfmem : f ∈ GlobalTheory.FinZeta.bddAut s'.V := by
     refine ⟨(Complex.continuous_conj).comp hcont, fun γ hγ g => ?_, C, fun g => ?_⟩
@@ -82,7 +82,7 @@ theorem lPos_of_rapidDecay : GlobalTheory.Published.CuspRapidDecay → ∀ D : D
   subst hj0
   have hc := hw.com
   obtain ⟨hr, hL, hflat⟩ := hs
-  have hle := GlobalTheory.T.chain_stage_forms_twisted_level_le_finer_level D c w hw 0 hj s ⟨hr, hL, hflat⟩ hr
+  have hle := _root_.GlobalTheory.FlatLevel.flatLe D c w hw 0 hj s ⟨hr, hL, hflat⟩ hr
   have hB' := isPar_flat_of_le hr hle u B hB
   have hbd : GlobalTheory.LFun.Bounded (GlobalTheory.LFun.above D.host.E (c.S : Set (HeightOneSpectrum (𝓞 D.host.F)))) B D.R.r ((D.R.r : ℝ) / 2) :=
     GlobalTheory.LiftPole.Bounded.mono (bounded_first_member hCRD hc hj hflat _ B hB') (by linarith)

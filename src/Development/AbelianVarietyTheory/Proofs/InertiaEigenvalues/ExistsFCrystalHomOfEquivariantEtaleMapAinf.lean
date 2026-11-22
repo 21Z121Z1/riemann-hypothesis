@@ -3,8 +3,8 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdIPowLe
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BhattScholzeIntegral
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyBreuilKisinDatum
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsStratHom
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFramedStratifiedCrystalBasisStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFCrystalHomOfStratifiedPhiModuleHomStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFramedStratifiedCrystalBasis
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFCrystalHomOfStratifiedPhiModuleHom
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsStratifiedPhiModuleHomOfGaloisEquivariant
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EquivariantLatticeMatrixOverBreuilKisin
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSemilinearBaseChangeExistsBasisEqImageOfBasisStatement
@@ -56,8 +56,8 @@ theorem square_column {S A B P P' N N' Q Q' κ : Type} [CommRing S] [CommRing A]
 theorem exists_fHom_of_equivariant : ∀ (l : ℕ) [Fact l.Prime] (K : FinExt l) (T : Type) [AddCommGroup T] [Module ℤ_[l] T] (ρ : ↥(GK K) → (T →ₗ[ℤ_[l]] T)) (T' : Type) [AddCommGroup T'] [Module ℤ_[l] T'] (ρ' : ↥(GK K) → (T' →ₗ[ℤ_[l]] T')) (M M' : FCrys l ↥(OL K)) (j : M.M (ainfObj K) →ₛₗ[(inclW l).comp (ainfId K).toRingHom] (WCb l ⊗[ℤ_[l]] T)) (j' : M'.M (ainfObj K) →ₛₗ[(inclW l).comp (ainfId K).toRingHom] (WCb l ⊗[ℤ_[l]] T')), Realises K M (ainfObj K) (ainfId K) T ρ j → Realises K M' (ainfObj K) (ainfId K) T' ρ' j' → ∀ f : T →ₗ[ℤ_[l]] T', (∀ g x, f (ρ g x) = ρ' g (f x)) → ∃ u : FHom M M', ∀ x, j' (u.u (ainfObj K) x) = f.lTensor (WCb l) (j x) := by
   intro l _ K T _ _ ρ T' _ _ ρ' M M' j j' H H' f hf
   obtain ⟨bk⟩ := _root_.GlobalTheory.BSP.nonempty_bk_of_finExt l K
-  obtain ⟨d, S, e, hS⟩ := GlobalTheory.T.exists_framedStratifiedCrystalBasis l K bk M
-  obtain ⟨d', S', e', hS'⟩ := GlobalTheory.T.exists_framedStratifiedCrystalBasis l K bk M'
+  obtain ⟨d, S, e, hS⟩ := _root_.GlobalTheory.BSP.exists_framed l K bk M
+  obtain ⟨d', S', e', hS'⟩ := _root_.GlobalTheory.BSP.exists_framed l K bk M'
   obtain ⟨b, U, hU, hj⟩ := _root_.GlobalTheory.BSP.exists_mReal_of_realises l K bk d S M e hS T ρ j H
   obtain ⟨b', U', hU', hj'⟩ := _root_.GlobalTheory.BSP.exists_mReal_of_realises l K bk d' S' M' e' hS' T' ρ' j' H'
   have hF : ∀ g, LinearMap.toMatrix b b' f * LinearMap.toMatrix b b (ρ g) =
@@ -66,7 +66,7 @@ theorem exists_fHom_of_equivariant : ∀ (l : ℕ) [Fact l.Prime] (K : FinExt l)
     congr 1
     exact LinearMap.ext (hf g)
   obtain ⟨Y, hY⟩ := _root_.GlobalTheory.BSP.equivariant_matrix_over_bk l K bk d d' S S' _ _ U U' hU hU' _ hF
-  obtain ⟨u, hu⟩ := GlobalTheory.T.exists_fCrystalHom_of_stratifiedPhiModuleHom l K bk d d' S S' M M' e e' hS hS' Y
+  obtain ⟨u, hu⟩ := _root_.GlobalTheory.BSP.exists_fHom_of_isStratHom l K bk d d' S S' M M' e e' hS hS' Y
     (_root_.GlobalTheory.isStratHom_of_equivariant l K bk d d' S S' _ _ U U' hU hU' _ hF Y hY)
   obtain ⟨β, hβ⟩ := GlobalTheory.T.isSemilinearBaseChange_exists_basis_eq_image_of_basis _ _ _ _ _ (M.tr bk.ι) (M.tr_bc bk.ι) _ e
   refine ⟨u, fun x => ?_⟩

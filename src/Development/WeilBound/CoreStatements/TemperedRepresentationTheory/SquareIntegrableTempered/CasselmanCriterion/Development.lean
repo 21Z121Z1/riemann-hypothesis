@@ -10,7 +10,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothRepIsSmoo
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BlockIndexMonotone
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviEmbeddingMemLevi
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BlockCentralElementCommutesLevi
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContractingCentralUnipotentCongruenceStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContractingCentralUnipotentCongruence
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetModuleEquivFoundation
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubquotientScalarActionMod
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubquotientNontrivialExistsMem
@@ -22,8 +22,8 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdmissibleCentr
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LpCoefficientCenterNormPreserved
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LastBlockCentralScalarModulusOneStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ModulusContractingBlockLtOne
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContractingDoubleCosetMeasurableStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContractingDoubleCosetVolumeBoundStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContractingDoubleCosetMeasurable
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContractingDoubleCosetVolumeBound
 
 noncomputable section
 
@@ -103,7 +103,7 @@ theorem claim {N : ℕ} {V : Type} [AddCommGroup V] [Module ℂ V] (π : Represe
   obtain ⟨m₀, hm₀⟩ := _root_.GlobalTheory.CompanionTheory.JacquetEigen.exists_eigenvector_fixed k N π hadm (blockIdx (fun a => (x a).1) hd) hmono _ ha hcen W T' (δ * Λ)
     (mul_ne_zero hδ hΛ) hle hWst hWmod hex
   obtain ⟨y, hy0, hyfix, hyeig⟩ := hm₀ (max m₀ 1) (le_max_left _ _)
-  obtain ⟨hcN, hcNbar⟩ := GlobalTheory.T.contracting_central_unipotent_congruence k h N (fun a => (x a).1) hd t hv.le j (max m₀ 1)
+  obtain ⟨hcN, hcNbar⟩ := _root_.GlobalTheory.CompanionTheory.ZjContract.zj_contract k h N (fun a => (x a).1) hd t hv.le j (max m₀ 1)
   obtain ⟨w, l, hw, hl, hcoef⟩ := _root_.GlobalTheory.CompanionTheory.JacquetCoeff.exists_coeff_geometric k N π hadm (blockIdx (fun a => (x a).1) hd) hmono (max m₀ 1)
     (le_max_right _ _) _ ha hcen hcN hcNbar y (δ * Λ) hy0 hyfix hyeig
   exact ⟨max m₀ 1, le_max_right _ _, w, l, hw, hl, hcoef⟩
@@ -123,8 +123,8 @@ theorem lpBound {N : ℕ} {V : Type} [AddCommGroup V] [Module ℂ V] (π : Repre
     GlobalTheory.T.invariant_functional_open_stabilizer π (GroundTheory.Automorphic.GLnLocal.congruenceSubgroup k N m)
       (GroundTheory.Automorphic.GLnLocal.isOpen_congruenceSubgroup k N m) l hl
   obtain ⟨F, hF, hFmem⟩ := hL (Measure.haar (G := AdGL k N)) inferInstance w l hopen
-  obtain ⟨hmeas, hdisj⟩ := GlobalTheory.T.contracting_double_coset_measurable k h N (fun a => (x a).1) hd hpos t hv j hj m hm
-  obtain ⟨c0, hc0, hvol⟩ := GlobalTheory.T.contracting_double_coset_volume_bound k h N (fun a => (x a).1) hd hpos t hv j hj m hm
+  obtain ⟨hmeas, hdisj⟩ := _root_.GlobalTheory.CompanionTheory.ContractingCosets.images_measurable_and_disjoint k h N (fun a => (x a).1) hd hpos t hv j hj m hm
+  obtain ⟨c0, hc0, hvol⟩ := _root_.GlobalTheory.CompanionTheory.ContractVolume.volume_lower_bound k h N (fun a => (x a).1) hd hpos t hv j hj m hm
     (Measure.haar (G := AdGL k N)) inferInstance
   set δ : ℂ := ((deltaHalf k (fun a => Fin ((x a).1)) (zj (fun a => (x a).1) t j) : ℂˣ) : ℂ) with hδdef
   set Λ : ℂ := ∏ i ∈ Finset.univ.filter (· ≤ j), c i

@@ -102,8 +102,8 @@ private theorem proj_of_sum {G V : Type} [Group G] [AddCommGroup V] [Module ℂ 
 
 theorem embProj_holds : EmbProj := by
   intro E _ _ _ a τ U hU κ hκ u hu hu0
-  obtain ⟨e, he⟩ := GlobalTheory.T.archimedeanUnitaryPoints_equiv_unitaryGroup E a τ
-  obtain ⟨r, -, hr1, hr⟩ := GlobalTheory.T.exists_continuous_retraction_onto_unitaryArchimedeanPoints E a τ
+  obtain ⟨e, he⟩ := _root_.GlobalTheory.EmbUnitary.exists_equiv_unitaryGroup E a τ
+  obtain ⟨r, -, hr1, hr⟩ := _root_.GlobalTheory.DefU.exists_embRet E a τ
   let π : AutSub E a := ⟨U, hU⟩
   let s : Matrix.unitaryGroup (Fin a) ℂ →* UA E a := (embU a τ).subtype.comp e.symm.toMulEquiv.toMonoidHom
   have hs : ∀ y, cEmb τ (s y) = unitaryIncl a y := fun y => by

@@ -9,7 +9,13 @@ import Development.AbelianVarietyTheory.Statements.SemistableTorsion.SemistableF
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsGroupQuotientPullback
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ConnectedSpaceOfSection
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsTorusQuotientSchemeOverNilpotentThickening
-import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.LocallyTrivialTorusQuotientFlatSurjectiveCosetsStatement
+import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.LocallyTrivialTorusQuotientFlatSurjectiveCosets
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CubeVal
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.IsNsmul
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.QkToAkU
+import Development.AbelianVarietyTheory.Definitions.Uniformization.PointEqOfSubsingleton
+import Development.AbelianVarietyTheory.Definitions.Uniformization.ExistsUniqueTorusCompat
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsReducedAlgebraOfSmoothOfIsNoetherianRing
 
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry Opposite
@@ -392,7 +398,7 @@ theorem main : ∀ (k : Type) [Field k] (G : Over (Sp k)) [GrpObj G], SmConn G �
   have haff : IsAffineHom q.left := isAffineHom_of_forall_exists_isAffineOpen _ fun b => by
     obtain ⟨V, hb, hV, hg, -⟩ := H b
     exact ⟨V, hb, hV, hg.1⟩
-  obtain ⟨hm, hf, hs, hsB, hfib⟩ := GlobalTheory.T.locallyTrivial_torusQuotient_flat_surjective_cosets _ X G B i q hi haff fun b => by
+  obtain ⟨hm, hf, hs, hsB, hfib⟩ := _root_.GlobalTheory.LocTriv.main _ X G B i q hi haff fun b => by
     obtain ⟨V, hb, hV, hg, h₁, h₂⟩ := H b
     exact ⟨V, hb, hV, h₁, h₂, hg.2⟩
   obtain ⟨_, hcB, hq, hker⟩ := GlobalTheory.grpObj_of_flat_coset_quotient _ G _ B i q hi hm hf hs inferInstance hfib

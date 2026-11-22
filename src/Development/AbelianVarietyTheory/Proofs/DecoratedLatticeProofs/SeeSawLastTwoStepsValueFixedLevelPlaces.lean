@@ -15,7 +15,11 @@ import Development.AbelianVarietyTheory.Definitions.LatticeFrames.AllPositions
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AtMostOneHolds
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatMapBesselToFourierJacobiLocalModel
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ExistsUnitarySupportedAtPlaceOfMulEqIdem
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatThetaMapsConvergeThetaFunctionsStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatThetaMapsConvergeThetaFunctions
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsQuasiFam
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ThetaAbsoluteSum
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.TransvectionAction
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.WeilDatumExistence
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatMapsSatisfyFlatLawsFinitePlaces
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilDatumLocalModelFormula
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntegralIndicatorGivesLocalVacuumSplitPlace
@@ -186,7 +190,7 @@ theorem one_place (hc : c.Is) (hv : v.Is) (G : GLoc v) (j : ℕ) (h : j + 2 * 0 
   obtain ⟨F₀, hF₀⟩ := ((GlobalTheory.LocMod.normalFrames_exist D G.k (ofSplit G.q) _ 0 (G.sc G.s) hsc).1 (c.B G.s 0 h)
     (G.FX G.s (by omega))).1
   have hjac := G.jac G.s 0 h 0 rfl
-  obtain ⟨U₁, hU₁, hfl⟩ := _root_.GlobalTheory.FlatBFLoc.flatBF_of_laws D (GlobalTheory.T.flatThetaMaps_converge_thetaFunctions D) (_root_.GlobalTheory.FinPl.flatLaws_all D) (_root_.GlobalTheory.LocOm.omLoc D) G.k (ofSplit G.q) G.ν G.unitVol.1
+  obtain ⟨U₁, hU₁, hfl⟩ := _root_.GlobalTheory.FlatBFLoc.flatBF_of_laws D (_root_.GlobalTheory.Unf.Flat.flatLaw D) (_root_.GlobalTheory.FinPl.flatLaws_all D) (_root_.GlobalTheory.LocOm.omLoc D) G.k (ofSplit G.q) G.ν G.unitVol.1
     c.ψ G.S.ψ G.char 0 (c.B G.s 0 h) (c.J G.s 0 h) s₁ (G.sc G.s) hsc _ _ 0 (G.FX G.s (by omega)) F₀
     (G.FY G.s (0 + 1) (by omega)) (G.FX (G.s + 1) le_rfl) (G.FY (G.s + 1) 0 rfl) hF₀ (G.bes G.s 0 h (0 + 1) (by omega)) hjac T₁ hT₁
   obtain ⟨U₂, hU₂, hres, hext⟩ := splitLocalPlace_isModel_wittExtendByZero_rankZero (ofSplit G.q) c.ψ (c.jac G.s 0 h).d (G.FX (G.s + 1) le_rfl) (G.FY (G.s + 1) 0 rfl)

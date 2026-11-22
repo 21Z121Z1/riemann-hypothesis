@@ -5,11 +5,14 @@ import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Ad
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HasDRepIffHasDerivAt
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RealIntertwinerValuesKFinite
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LieActionFockOperatorsScalarsTraceStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LieActionFockOperatorsScalarsTrace
+import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsVacFOfIsVacVec
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsIntegralForm
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InclTprodUpdate
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.KFiniteVectorsDiscreteSeriesSmoothAbsolutelyIrreStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PiTensorSubmoduleEqTopOfAbsolutelyIrreducibleStaStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PiTensorSubmoduleEqTopOfAbsolutelyIrreducibleSta
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchurAndTensorSubmodule
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ScalarOfComm
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsRealIntertwinerNeZeroKFiniteTensor
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteSupport
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SobolevFormEqZeroOnSmoothOfKFiniteDiscreteSeries
@@ -59,7 +62,7 @@ theorem kfinSpan_le_span_it : GlobalTheory.Published.DiscreteSeriesCover → Glo
     change inclK h (g (It φ (inclK h' y))) = _
     rw [← hz, ← LinearMap.comp_apply g, hg, LinearMap.id_apply]
   obtain ⟨χS, χT, hω, hexp⟩ := hW
-  have hL := fun τ => GlobalTheory.T.lieAction_fockOperators_scalars_trace D V W (Fr.ofModel M) (Fr.ofModel M') θ ψ χS χT ω f τ (aS τ) (aT τ) hθ hω
+  have hL := fun τ => _root_.GlobalTheory.LieScalar.lieFockAll D V W (Fr.ofModel M) (Fr.ofModel M') θ ψ χS χT ω f τ (aS τ) (aT τ) hθ hω
     (hexp τ).1 (hexp τ).2 (isVacF_of_isVacVec hf)
   have hstep : ∀ τ, ∀ X ∈ lieAt V τ, ∀ φ, ∃ φ', ∀ y, intersection_update_fsHerm_neg_one τ (a τ X) (I φ y) = I φ' y := by
     intro τ X hX φ
@@ -88,7 +91,7 @@ theorem kfinSpan_le_span_it : GlobalTheory.Published.DiscreteSeriesCover → Glo
     have : I φ y ∈ N := hNd ▸ Submodule.subset_span ⟨φ, y, rfl⟩
     rw [e, Submodule.mem_bot] at this
     rw [← hI, this, map_zero]
-  have htop := GlobalTheory.T.piTensor_submodule_eq_top_of_absolutely_irreducible_stable D.what₂.Tau (fun τ => kFin M τ) (fun τ => lieAt V τ) (fun τ X => a τ X) hirr N hN h0
+  have htop := _root_.GlobalTheory.TensorIrr.eq_top_of_stable D.what₂.Tau (fun τ => kFin M τ) (fun τ => lieAt V τ) (fun τ X => a τ X) hirr N hN h0
   intro w hw
   obtain ⟨z, rfl⟩ := span_le_range M h hw
   have hz : z ∈ N := htop ▸ Submodule.mem_top

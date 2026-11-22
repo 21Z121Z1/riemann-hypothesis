@@ -6,7 +6,10 @@ import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsGoodCmPo
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsGoodCmPointAtCmBasisFrame
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOrthogonalLatticeFrameFlagDomain
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Signature
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCmLatticeDataUnfoldingSignatureOneZeroStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCmLatticeDataUnfoldingSignatureOneZero
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.NonemptyUnitAt
+import Development.AbelianVarietyTheory.Definitions.CMLattices.ExistsIsThetaDegOfIsLocalModel
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsCmPointLatticeDataOfAdaptedBasis
 
 namespace GlobalTheory.FlatCore.CMPointExistence
 
@@ -63,7 +66,7 @@ theorem exists_cmPt_on_comp : ∀ (E : Type) [Field E] [NumberField E] [IsCMFiel
   obtain ⟨x₁, hx₁, lam, h1, h2, h3, h4, h5, h6⟩ := _root_.GlobalTheory.OrthoFrame.exists_orthoFrame E r ((U σ₀).X k)
   let x₀ : ((U σ₀).X k).dom := ⟨x₁, hx₁⟩
   obtain ⟨W⟩ := ReciprocityTheory.ChartRestriction.G.PullbackSections.nonempty_unfAt hU k x₀
-  obtain ⟨Zl⟩ := GlobalTheory.T.exists_cmLattice_data_unfolding_signature_one_zero E H Dw l Xo c r (U σ₀) hU hr D₁ hD₁p hD₁q k x₀ W lam h1 h2 h3 h4 h5 h6
+  obtain ⟨Zl⟩ := _root_.GlobalTheory.LamT.CMRankOne.exists_cmLat_unfAt_rankOne E H Dw l Xo c r (U σ₀) hU hr D₁ hD₁p hD₁q k x₀ W lam h1 h2 h3 h4 h5 h6
   have hfd : FiniteDimensional ℚ c.F := c.fin
   obtain ⟨K₁, nf, hk1, ρ, X, y, t₀, m, m', -, -, -, -, -, hle, hρ, -, hy, hpt, -⟩ :=
     GlobalTheory.CM.cmExists_holds E H Dw l Xo W.g _ W.F (W.ik k) W.Pm W.per Zl c.F hfd

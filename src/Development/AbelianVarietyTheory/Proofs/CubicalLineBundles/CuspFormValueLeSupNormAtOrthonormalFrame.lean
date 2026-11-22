@@ -23,7 +23,7 @@ import Development.AbelianVarietyTheory.Proofs.GenericRegularity.PointwiseNormSe
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LowerTriIsUnitDet
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FramedModuliAlgebraicLawsChartWeightIntegrality
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.LawsFieldsSeparately
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.MetricDataUniqueStatement
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.MetricDataUnique
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.MetricChangeOfFrameStatement
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.UnifMetricScalar
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsOrthonormalFrameBorelChangeComplexFramedPo
@@ -80,7 +80,7 @@ theorem cabs_evR_le_supC : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E
   have hm1 := GlobalTheory.T.metric_change_of_frame E H Dw l Xo c σ ((U σ).un k x) y 1 _
     (fun b => Matrix.transpose (show Matrix (Fin (Dw.mult b)) (Fin (Dw.mult b)) ℂ from g b))
     (show ℂ from (t none : CAt σ)) (Units.ne_zero (M₀ := ℂ) (t none)) hchg hm0
-  obtain ⟨hNN, hG⟩ := GlobalTheory.T.metric_data_unique E H Dw l Xo c σ y _ _ _ _ hN hm1
+  obtain ⟨hNN, hG⟩ := _root_.GlobalTheory.LamT.MetUniq.isMetric_unique E H Dw l Xo c σ y _ _ _ _ hN hm1
   have hnone : cabs (t none : CAt σ) = Real.sqrt N := by
     rw [hNN, _root_.mul_one, Real.sqrt_sq (norm_nonneg _)]; rfl
   have hsome : ∀ p : Σ τ : E →+* ℂ, Fin (Dw.mult τ),

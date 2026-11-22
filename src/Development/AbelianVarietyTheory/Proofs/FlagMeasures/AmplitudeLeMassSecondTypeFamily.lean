@@ -6,8 +6,8 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormOrbitSumLeOfSymm
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetTermBasicFacts
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermInvariantsIndependentOfWitnesses
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CommonStabilizerStabilizersCommensurableVolumeStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianFramesStabilizerActsOnTermsStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermExponentsNonnegAndDefectGroupBoundStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianFramesStabilizerActsOnTerms
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermExponentsNonnegAndDefectGroupBound
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetMassLeAndFinite
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsSymmInvariantKernelHermitianFrames
 
@@ -71,7 +71,7 @@ theorem amp_le_mass {F : Type} [Field F] [ValuativeRel F] [TopologicalSpace F]
         (24 / 7 * (S.q : ℝ) ^ (1 - ((k : ℤ) - 2 * r - 3))) hK0
         (fun h hh x hx => by
           obtain ⟨hT, hI⟩ := (hPiff x).1 hx
-          have T := GlobalTheory.T.hermitianFrames_stabilizer_acts_on_terms L r k S d x hT h hh
+          have T := _root_.GlobalTheory.FrameAct.stabiliser_acts_on_terms L r k S d x hT h hh
           have hlat := (GlobalTheory.HL.TermBasic.term_basic L r k S d x hT).1.1
           exact ⟨(hPiff _).2 ⟨T.1, (T.2.2.2.2.2.2.2.2.2.1 β J βJ).2 hI⟩, T.2.1,
             ((GlobalTheory.T.commonStabilizer_stabilizers_commensurable_volume L r k S).1 x hlat).2.2 h hh, fun y hy => hm_inv h hh x y hx hy⟩)
@@ -95,7 +95,7 @@ theorem amp_le_mass {F : Type} [Field F] [ValuativeRel F] [TopologicalSpace F]
         · have hJ0 : J = 0 := by omega
           apply hTB.1
           refine le_antisymm (GlobalTheory.HL.TermBasic.term_basic L r k S d Λ hT).2.2.1 fun z hz => ?_
-          refine ((GlobalTheory.T.term_exponents_nonneg_and_defect_group_bound L r k S d Λ hT).2.2.2.2.2.2.2.2.2.1 z hz).1 ?_
+          refine ((_root_.GlobalTheory.HL.Defect.exponents_and_defect L r k S d Λ hT).2.2.2.2.2.2.2.2.2.1 z hz).1 ?_
           have := hle z hz
           omega
       rw [hamp]

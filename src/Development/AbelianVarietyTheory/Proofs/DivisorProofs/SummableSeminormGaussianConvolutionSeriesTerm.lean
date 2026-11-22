@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowForm
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormIteratedFDerivMultilinearDiagonalLeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormIteratedFDerivMultilinearDiagonalLe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormGaussianConvolutionSeriesCoefficientLeIntegrStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussianConvolutionSeriesCoefficientDescFactoria
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussianIteratedFDerivWeightedExpBoundedStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussianIteratedFDerivWeightedExpBounded
 open MeasureTheory Filter Topology
 
 namespace GlobalTheory.ConvSeries
@@ -29,7 +29,7 @@ theorem summable_seminorm_term : ∀ (E : Type) [NormedAddCommGroup E] [InnerPro
     have e2 : δ * (6 * c) ≤ b := by rwa [le_div_iff₀ (by positivity)] at hδ2
     rw [e1, hθ]; nlinarith
 
-  choose K hK using fun m => GlobalTheory.T.gaussian_iteratedFDeriv_weighted_exp_bounded E c α hc hα1 k m
+  choose K hK using fun m => _root_.GlobalTheory.GaussDerivBound.weighted_bound E c α hc hα1 k m
   set M : ℕ → ℝ := fun i => ∫ a, (2 * c * ‖a‖) ^ i * ‖h a‖ with hM
   have hM0 : ∀ i, 0 ≤ M i := fun i => integral_nonneg fun a => by positivity
   set B : ℝ := θ ^ n * ∑ i ∈ Finset.range (n + 1), (n.choose i : ℝ) * M (n - i) * K i with hB
@@ -65,7 +65,7 @@ theorem summable_seminorm_term : ∀ (E : Type) [NormedAddCommGroup E] [InnerPro
       intro i hi
       have hi' : i ≤ n := Nat.lt_succ_iff.1 (Finset.mem_range.1 hi)
       set m := n - i
-      have h1 := GlobalTheory.T.norm_iteratedFDeriv_multilinear_diagonal_le E j f m y
+      have h1 := _root_.GlobalTheory.norm_iteratedFDeriv_diag_multilinear_le E j f m y
       have h3 := _root_.GlobalTheory.TermEst.main E b c θ α hc hθ1 hα0 hθα h j m y
       have hPm : ‖iteratedFDeriv ℝ m (fun y : E => f (fun _ => y)) y‖ ≤
           θ⁻¹ ^ (j - m) * Real.exp (c * α * ‖y‖ ^ 2) * M m := by

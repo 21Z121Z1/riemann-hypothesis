@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegenerationDataValuesIsoTransportFormsLevelsFamStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegenerationValuesTransportFieldIsoStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegenerationDataValuesIsoTransportFormsLevelsFam
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegenerationValuesTransportFieldIso
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianKeyValueAdaptedVectorsFieldIso
 import Development.AbelianVarietyTheory.Definitions.Divisors.TanRel
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsPolAVSectionInverseImage
@@ -19,8 +19,8 @@ theorem archF_of_arch : ∀ κ : Rule, Funct κ → Arch κ → ArchF κ := by
   intro κ hF hA R _ _ _ _ D hP hT F _ _ _ e N ν g r m k hg hm hk β ζ q hq s hs vB bX σ gm hAd k₀ hK
   letI : Algebra (FractionRing R) ℂ := ((e : F →+* ℂ).comp (algebraMap (FractionRing R) F)).toAlgebra
   have he : ∀ x, e (algebraMap (FractionRing R) F x) = algebraMap (FractionRing R) ℂ x := fun _ => rfl
-  obtain ⟨N', ν', I, hb, hh, hl, heX, hth, hrg, hvE, hfam⟩ := GlobalTheory.T.degenerationValues_transport_fieldIso R D F ℂ e he N ν
-  obtain ⟨hform, hlev⟩ := GlobalTheory.T.degenerationDataValuesIso_transport_formsLevelsFamilies F ℂ e N N' I hb hh hl
+  obtain ⟨N', ν', I, hb, hh, hl, heX, hth, hrg, hvE, hfam⟩ := _root_.GlobalTheory.MBLow.FieldIso.transport_iso R D F ℂ e he N ν
+  obtain ⟨hform, hlev⟩ := _root_.GlobalTheory.MBLow.TrNum.transport F ℂ e N N' I hb hh hl
   obtain ⟨β', hβ⟩ := hform k β
   obtain ⟨q', hq', hev⟩ := hlev m g hm ζ q hq
   obtain ⟨hBK, hadp⟩ := _root_.GlobalTheory.MBLow.bKey_adapted_map κ hF R D F ℂ e he N ν N' ν' I hh hl heX hth hvE vB

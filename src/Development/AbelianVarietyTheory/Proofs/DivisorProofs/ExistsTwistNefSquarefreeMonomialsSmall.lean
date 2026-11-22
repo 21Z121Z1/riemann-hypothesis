@@ -11,7 +11,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAmpleNefHermi
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsNefPow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianLineBundleIsNefShiftOfNonneg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairSectionMemBallExpOfProjArithVariety
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsClearDenominatorsAmpleHermLineBundleStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsClearDenominatorsAmpleHermLineBundle
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianLineBundlePositivityPreservedIsometric
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHermPairSectionsChangeOfIsometricCombinati
 
@@ -68,7 +68,7 @@ theorem exists_twist : GlobalTheory.Published.ArCalc → ∀ (k : Type) [CommRin
   intro hC k _ X _ p D hX N x
   obtain ⟨A, hA, hAn, -⟩ := GlobalTheory.AmpleNefSmall.exists_ample_nef_smallSec hC k X p D hX
   obtain ⟨P, rfl, rfl⟩ := exists_pair N A
-  obtain ⟨c, g, -, hg, -, hgf⟩ := GlobalTheory.T.exists_clear_denominators_ampleHermLineBundle k X p D hX P hA (-1) (Finset (Fin D)) fun S => ∏ i ∈ S, x i
+  obtain ⟨c, g, -, hg, -, hgf⟩ := _root_.GlobalTheory.HSNef.Den.exists_clear_denominators k X p D hX P hA (-1) (Finset (Fin D)) fun S => ∏ i ∈ S, x i
   choose v hv0 hv using fun S => _root_.GlobalTheory.HSNef.bounded_norm k X p D hX P (-1) c _ (hgf S)
   let u : ℝ := ∑ S, v S
   have hu : 0 ≤ u := Finset.sum_nonneg fun S _ => hv0 S

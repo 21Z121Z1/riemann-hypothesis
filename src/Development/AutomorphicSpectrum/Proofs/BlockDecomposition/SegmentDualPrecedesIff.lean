@@ -2,8 +2,8 @@ import Mathlib
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.LSegJacquet
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualClassCuspidalStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualClassInvolutiveStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualClassTwistNegStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualClassInvolutive
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualClassTwistNeg
 
 open GlobalTheory.PRep GlobalTheory.SplitWeil GlobalTheory.SmGL GlobalTheory.LocGL GlobalTheory.JHMult Zc
 
@@ -108,6 +108,6 @@ end
 theorem segDual_precedes : ∀ {k : Type} [Field k] [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k]
     (hA : GlobalTheory.Published.IrreducibleAdmissibleGL) (Δ Δ' : Segment k),
     (segDual Δ).Precedes (segDual Δ') ↔ Δ'.Precedes Δ := fun hA Δ Δ' =>
-  segDual_precedes_iff (fun x hx => (GlobalTheory.T.dual_class_cuspidal hA x hx).1) (GlobalTheory.T.dual_class_twist_neg hA) (GlobalTheory.T.dual_class_involutive hA) Δ Δ'
+  segDual_precedes_iff (fun x hx => (GlobalTheory.T.dual_class_cuspidal hA x hx).1) (_root_.GlobalTheory.CompanionTheory.ZcDual.dualCl_nu hA) (_root_.GlobalTheory.CompanionTheory.Zcore.dualCl_dualCl hA) Δ Δ'
 
 end GlobalTheory.CompanionTheory.SegDualPrec

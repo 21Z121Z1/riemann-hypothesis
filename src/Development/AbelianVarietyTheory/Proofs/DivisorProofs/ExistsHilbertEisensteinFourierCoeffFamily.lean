@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasLevelStd
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasQIff
 import Development.AbelianVarietyTheory.Definitions.Divisors.JetAnalytic
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsHilbertEisensteinLatticeValueOfEisensteinSerieStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsHilbertEisensteinLatticeValueOfEisensteinSerie
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertEisensteinFourierExpansionSupport
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertEisensteinLatticeValueEqOfIsValue
 
@@ -20,7 +20,7 @@ theorem exists_isCoef : EisExp → ∀ (F : Type) [Field F] [NumberField F] [IsT
   obtain ⟨G, hG, -, hX⟩ := hE F hf 𝔞 𝔟 s hs
   obtain ⟨Z, a, hZ, h0, hint, hsupp, hsum⟩ := _root_.GlobalTheory.HilbFam.fourier_with_support F (2 * s) 𝔞 𝔟 G hX
   refine ⟨Z, a, hZ, h0, hint, hsupp, fun w hw ↦ ?_⟩
-  have hv := _root_.GlobalTheory.HilbFam.gval_eq_of_isGVal F (2 * s) _ _ _ _ (GlobalTheory.T.isHilbertEisensteinLatticeValue_of_eisensteinSeries F (2 * s) 𝔞 𝔟 G w (even_two_mul s) hG hw)
+  have hv := _root_.GlobalTheory.HilbFam.gval_eq_of_isGVal F (2 * s) _ _ _ _ (_root_.GlobalTheory.HilbFam.EisCmp.isGVal_of_isEis F (2 * s) 𝔞 𝔟 G w (even_two_mul s) hG hw)
   have hne : ((2 * Real.pi * Complex.I : ℂ) ^ Module.finrank ℚ F) ^ (2 * s) ≠ 0 :=
     pow_ne_zero _ (pow_ne_zero _ Complex.two_pi_I_ne_zero)
   rw [hv, mul_pow ((2 * Real.pi * Complex.I : ℂ) ^ Module.finrank ℚ F), mul_left_comm, mul_div_mul_left _ _ hne]

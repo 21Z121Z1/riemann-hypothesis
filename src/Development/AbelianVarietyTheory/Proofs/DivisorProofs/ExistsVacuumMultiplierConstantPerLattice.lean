@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsS
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicVacuumReadsMultipleClassicalVacuum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormAdelicClassicalVacuumFactorEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationRealMovesFrameDetChar
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepLatticeStabilizerVacuumEqDetCharSmulStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepLatticeStabilizerVacuumEqDetCharSmul
 
 open NumberField Matrix Complex MeasureTheory IsDedekindDomain
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.FD GlobalTheory GlobalTheory.ThFr GlobalTheory.Dict GlobalTheory.AdTh
@@ -243,7 +243,7 @@ theorem exists_vacuum_multiplier : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ)
   have hlat := le_antisymm (latO_le V W ΛV htw.le) (latO_le V W ΛV htw.ge)
   rw [hlat] at hl
   have hk' : c * k₀⁻¹ ∈ GfC W := mul_mem hc (inv_mem hk₀)
-  have hfix := GlobalTheory.T.weilRep_lattice_stabilizer_vacuum_eq_det_char_smul D ψ θ V W χV χW om hP mu hmu H ΛV L₀ hV0 hsV hs₀ s hcart _ hf₀ _ hk' (fun w => by
+  have hfix := _root_.GlobalTheory.VacStab.om_vacuum_eq_smul D ψ θ V W χV χW om hP mu hmu H ΛV L₀ hV0 hsV hs₀ s hcart _ hf₀ _ hk' (fun w => by
     rw [hl₀ w, hl]
     constructor
     · rintro ⟨w₀, hw₀, rfl⟩

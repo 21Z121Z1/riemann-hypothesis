@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrameMulTriangul
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.MemberDictionaryFramesOrthonormalUnit
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.MarkingRuleTranslateStable
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsFiniteAdelicElementMarkingComponent
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicUnitaryEqRealMulFiniteSplitStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicUnitaryEqRealMulFiniteSplit
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.MarkingComponentUniqueFrameUniqueArithmeticGroup
 open NumberField IsDedekindDomain ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.FD Formalism.BasicNotions Formalism.MainNotions Formalism.BasicNotions.TH Formalism.L2.Theta Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.L2.Pj
 open scoped TensorProduct Matrix Topology
@@ -52,7 +52,7 @@ theorem dict_real_equivariant_onto : ∀ (D : D7) (H : ReciprocityTheory.ChartRe
     have hm2 := (_root_.GlobalTheory.Member.mark_move D H Dw l Xo c σ V r C hC f k 1 hm).2.2.1 u hu
     obtain ⟨δ, hδ, e⟩ := dict_eq_of_mark D H Dw l Xo c σ V r C hC dict hd (f * u) k 1 hm2
     refine ⟨f * u, δ, hδ, b, hb, ?_⟩
-    rw [e, one_mul, ← (GlobalTheory.T.adelicUnitary_eq_real_mul_finite_split D V).2.1 u hu f hf,
+    rw [e, one_mul, ← (_root_.GlobalTheory.UnitarySplit.real_finite_split D V).2.1 u hu f hf,
       (_root_.GlobalTheory.Member.fr_orthonormal_unit D H Dw l Xo c σ V r C hC u k).2.2.2.2.1 f hf, hux, hx₀, frame_rmul_lact]
 
 end GlobalTheory.Member

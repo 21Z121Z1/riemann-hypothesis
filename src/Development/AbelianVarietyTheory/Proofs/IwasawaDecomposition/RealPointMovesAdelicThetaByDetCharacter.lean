@@ -2,7 +2,8 @@ import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.FWTie
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FibExtMarked
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsConjugateModelSameThetaFunctions
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumRealPlacesFockVacuumCharacterStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumRealPlacesFockVacuumCharacter
+import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnitaryOnTheta
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIdeleAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRealCharacter
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetBlockConj
@@ -53,7 +54,7 @@ theorem om_compact (C : GlobalTheory.Ker.Ctx S T) {χS χT η : (AE D)ˣ →* Ci
     rw [e]
     exact ⟨one_mul _, by simp, by rw [one_mul]; exact Matrix.PosDef.one⟩
   have h1 : IsDetRoot S 1 1 := by simp [IsDetRoot]
-  rw [GlobalTheory.T.weilDatum_realPlaces_fockVacuum_character D C.ψ hW.std S T C.θ C.inf χS χT om η hη hW (fun _ => 1) s hS hs 1 (one_mem _) k hk
+  rw [_root_.GlobalTheory.WeilVacChar.vacuum_character D C.ψ hW.std S T C.θ C.inf χS χT om η hη hW (fun _ => 1) s hS hs 1 (one_mem _) k hk
     (fun τ => by rw [one_mul, mul_one]) hc 1 y₀ h1 hy₀ f hf hv, root_eq hW.resS C.even hy₀ hy]
   congr 1
   obtain ⟨m, hm⟩ := C.even

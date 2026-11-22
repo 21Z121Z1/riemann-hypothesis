@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOneP
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntegrationByPartsRightDerivativeAdelicQuotientStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntegrationByPartsRightDerivativeAdelicQuotient
 
 noncomputable section
 
@@ -164,7 +164,7 @@ theorem gelf_by_parts : ∀ (D : D7) (θ : InfF D), IsInfFam θ → ∀ (V : HSp
   intro D θ hθ V μ 𝓕 hq τ Z hZ k F hF
   have h0 : (0 : Matrix (Fin V.rank) (Fin V.rank) ℂ) ∈ lieAt V τ := by simp [lieAt]
   have hint : ∀ φ F, IsMod θ V φ → F ∈ Decay θ V → IntegrableOn (fun g => φ g * F g) 𝓕 μ :=
-    fun φ F hφ hF => (GlobalTheory.T.integration_by_parts_rightDerivative_adelicQuotient D θ hθ V μ 𝓕 hq τ 0 h0 φ F hφ hF).1
+    fun φ F hφ hF => (_root_.GlobalTheory.Mem.IntByParts.integral_Rder_mul D θ hθ V μ 𝓕 hq τ 0 h0 φ F hφ hF).1
   have hRC : ∀ (W : Submodule ℂ (GA D V → ℂ)) (Y : Matrix (Fin V.rank) (Fin V.rank) ℂ) (φ : GA D V → ℂ),
       (∀ X ∈ lieAt V τ, Rder θ V τ X φ ∈ W) → RderC θ V τ Y φ ∈ W := by
     intro W Y φ hW
@@ -203,8 +203,8 @@ theorem gelf_by_parts : ∀ (D : D7) (θ : InfF D), IsInfFam θ → ∀ (V : HSp
     have hx' : IsMod θ V x.1 := hx
     have hy' : y.1 ∈ Decay θ V := hy
     obtain ⟨m1, m2⟩ := GlobalTheory.SmoothAutCheck.parts_mem V τ (Matrix.single a b 1)
-    have r1 := (GlobalTheory.T.integration_by_parts_rightDerivative_adelicQuotient D θ hθ V μ 𝓕 hq τ _ m1 x.1 y.1 hx' hy').2
-    have r2 := (GlobalTheory.T.integration_by_parts_rightDerivative_adelicQuotient D θ hθ V μ 𝓕 hq τ _ m2 x.1 y.1 hx' hy').2
+    have r1 := (_root_.GlobalTheory.Mem.IntByParts.integral_Rder_mul D θ hθ V μ 𝓕 hq τ _ m1 x.1 y.1 hx' hy').2
+    have r2 := (_root_.GlobalTheory.Mem.IntByParts.integral_Rder_mul D θ hθ V μ 𝓕 hq τ _ m2 x.1 y.1 hx' hy').2
     have i1 := hint _ _ (hx'.rder m1) hy'
     have i2 := hint _ _ (hx'.rder m2) hy'
     have j1 := hint _ _ hx' (Rder_mem_Decay hy' m1)

@@ -3,7 +3,8 @@ import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.Singul
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ExistsAdelicHaarCovolumeOne
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsCovolOne
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ExistsStandardLocalMeasuresStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ExistsStandardLocalMeasures
+import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
 
 noncomputable section
 
@@ -25,7 +26,7 @@ theorem oneD : OneD := by
   classical
   haveI : BorelSpace (AF F) := ⟨rfl⟩
   obtain ⟨db, hdb⟩ := _root_.GlobalTheory.CompanionTheory.Hypotheses₂.OneV.exists_isCovolOne F
-  obtain ⟨⟨laminf, hinf⟩, hlamex⟩ := GlobalTheory.T.exists_standard_local_measures F
+  obtain ⟨⟨laminf, hinf⟩, hlamex⟩ := _root_.GlobalTheory.CompanionTheory.SW.StdEx.exists_std F
   choose lam hlam using hlamex
   obtain ⟨S₁, hS₁⟩ := _root_.GlobalTheory.CompanionTheory.Hypotheses₂.OneV.Coef.Test.exists_test_approx F hF ψ hψ db hdb laminf lam hinf hlam
   obtain ⟨ρ, U, hρ, hρt, hU, hUt, hinv, hint, -, hlim⟩ := hS₁ (S ∪ S₁) Finset.subset_union_right

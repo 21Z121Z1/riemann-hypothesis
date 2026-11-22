@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsGaugeAll
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CompactHaarRightInvariantInst
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsRiemannianHaarUnitaryJSubgroupOfAlgebraStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsRiemannianHaarUnitaryJSubgroupOfAlgebra
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsNilpotentAlgebraIsotropicFlagUnipotentRadi
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.SameKindIsometric
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsAlgebraIsotropicFlagSelfAdjointLeviStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsAlgebraIsotropicFlagSelfAdjointLevi
 
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S GlobalTheory.Count GlobalTheory.FlagMeas
 
@@ -55,9 +55,9 @@ theorem gaugeSubEx : ∀ (n : ℕ) (ε : Fin n → Bool) (a : ℕ) (j : Fin a �
   refine ⟨?_, ?_, gaugeSubEx_haarK n ε⟩
   · obtain ⟨A, E, h1, h2, h3, h4⟩ := _root_.GlobalTheory.RadicalAlg.exists_algebra_flagN n ε a j W hW
     rw [h4]
-    exact GlobalTheory.T.exists_riemannianHaar_unitaryJSubgroupOfAlgebra n ε A _ E h1 h2 h3
-  · obtain ⟨A, E, h1, h2, h3, h4⟩ := GlobalTheory.T.exists_algebra_isotropicFlagSelfAdjointLevi n ε a j W hW
+    exact _root_.GlobalTheory.GaugeSubExists.exists_isGaugeSub n ε A _ E h1 h2 h3
+  · obtain ⟨A, E, h1, h2, h3, h4⟩ := _root_.GlobalTheory.LeviAlgebra.exists_levi_algebra n ε a j W hW
     rw [h4]
-    exact GlobalTheory.T.exists_riemannianHaar_unitaryJSubgroupOfAlgebra n ε A _ E h1 h2 h3
+    exact _root_.GlobalTheory.GaugeSubExists.exists_isGaugeSub n ε A _ E h1 h2 h3
 
 end GlobalTheory.FlagMeas

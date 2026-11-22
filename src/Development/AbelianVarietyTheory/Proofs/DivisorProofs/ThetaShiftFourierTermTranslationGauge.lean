@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRaynaudPointU
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRaynaudGaugeGeneratorWeightNegStatement
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RaynaudSectionIdentityOfGenericFibre
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFlatEpiLiftRaynaudExtensionFractionPointStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFlatEpiLiftRaynaudExtensionFractionPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RaynaudShiftUnitIdentityFractionFieldStatement
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry NumberField IsLocalRing
 open scoped CategoryTheory.Obj Matrix TensorProduct
@@ -201,7 +201,7 @@ theorem GlobalTheory.HeatShift.shift_term : ∀ (R : Type) [CommRing R] [IsDomai
 
   refine ⟨C1, ?_⟩
   intro σ'' σ₁' τ'' τ₁' ρ' hT'' hT₁' hρ' hL u' hu' hc' z J hJ
-  obtain ⟨Z, p, w0, y0, rfl, hepi, hinj, hyq⟩ := GlobalTheory.T.exists_flat_epi_lift_raynaud_extension_fraction_point R Dd.toPre O oa Y z
+  obtain ⟨Z, p, w0, y0, rfl, hepi, hinj, hyq⟩ := _root_.GlobalTheory.RayLift.exists_flat_lift R Dd.toPre O oa Y z
   have hJ₁ : ∃ J₁ : (Z ⟶ Dd.toPre.P.A.left) → Dd.toPre.P.L.ι, Good Dd.toPre.P.L w0 J₁ ∧ ∀ ψ, J₁ (p ≫ ψ) = J ψ := by
     classical
     refine ⟨fun φ => if h : ∃ ψ, p ≫ ψ = φ then J h.choose else (exists_chart Dd.toPre.P.isLB (φ w0)).choose,

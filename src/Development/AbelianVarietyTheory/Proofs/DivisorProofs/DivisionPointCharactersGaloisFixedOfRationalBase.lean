@@ -8,7 +8,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.GtActIffEqGtSmul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticePointNthMultipleGaloisFixedPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharacterValuesGaloisFixedOfIdempotentTorsion
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGtPointInvolutionActionSubOfIdempotentStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGtPointInvolutionActionSubOfIdempotent
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -35,7 +35,7 @@ theorem charFixed : ∀ {o W : Type} [CommRing o] [CommRing W] [IsLocalRing W] (
   set t := p.g - h with ht
   have htn : n • t = 0 := by rw [ht, nsmul_sub, hg, hh, sub_self]
   have hte : GtPtAct F.o F.e t t :=
-    GlobalTheory.T.isGtPointInvolutionAction_sub_of_idempotent F.o F.e F.idem p₀.g p.g h t hact hhe ((isAdd_iff_eq _ _ _).2 (sub_add_cancel p.g h).symm)
+    _root_.GlobalTheory.Mum.IdemDiff.gtPtAct_of_isAdd F.o F.e F.idem p₀.g p.g h t hact hhe ((isAdd_iff_eq _ _ _).2 (sub_add_cancel p.g h).symm)
   have hfixh : gtExt D'.toPre f hf h = h := ((eq_gtExt_iff f hf h h).2 ⟨hhb.symm, hhs⟩).symm
   have hgb : extMap f hf ≫ p.g.b = p.g.b := by
     obtain ⟨b, hb⟩ := hb

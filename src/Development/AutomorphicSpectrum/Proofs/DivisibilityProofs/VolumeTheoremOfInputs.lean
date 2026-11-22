@@ -43,7 +43,7 @@ import Development.WeilBound.CoreStatements.VolumeEquality.VolEqOfIsFullIntersec
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RealTowerA1
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.RefLinked
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RealTowerConvI2
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RealTowerI1Statement
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RealTowerI1
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.FullIntersectionTowerI8Identity
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RealTowerNefGeneral
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RealTowerProportional
@@ -103,7 +103,7 @@ theorem volumeTheoremX_of_inputs : Top.Given → PtsIntegrableStatement → Out.
   have hUnif := _root_.RootFieldNumerics.global_model_real_tower hG E H D Xo l c Y T o II hGl hX hII hp hq
   have hProp : T.Proportional := _root_.GlobalTheory.CompanionTheory.Ar.Top.rootTower_proportional_of_unif _root_.GlobalTheory.CompanionTheory.Ar.PB.proportional hIn II hII _ _ T _ hUnif
   have hCI := _root_.GlobalTheory.CompanionTheory.Ar.Top.real_tower_convergence_I2 hAg hIn II hII _ _ T (Top.realOf o.toTowerOrigin)
-  have hI1 := GlobalTheory.T.real_tower_I1 _root_.GlobalTheory.CompanionTheory.Ar.PB.Top.coefficients hAg hIn II hII _ _ T _
+  have hI1 := _root_.GlobalTheory.CompanionTheory.Ar.Top.TowerOverReals.tower_I1_of_reference_linked _root_.GlobalTheory.CompanionTheory.Ar.PB.Top.coefficients hAg hIn II hII _ _ T _
     (_root_.RootFieldNumerics.global_model_real_tower_smooth hG E H D Xo l c Y T o II hGl hX hII hp hq)
   have hPos : (Top.realOf o.toTowerOrigin).Pos := fun a => (o.Fx a).pos
   have hA1 := _root_.GlobalTheory.CompanionTheory.Ar.Top.tower_A1_of_real_tower hIn II hII _ _ T _ o.smooth o.flat hPos

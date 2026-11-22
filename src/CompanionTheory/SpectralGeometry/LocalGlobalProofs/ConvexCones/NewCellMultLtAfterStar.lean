@@ -132,7 +132,7 @@ theorem cellMult_lt_of_star_new : ∀ (O : Type) [CommRing O] [IsDedekindDomain 
   set ρ's : Fin (m₀ - 1 + 1) → balForms bar X := Fin.cons βs (fun k => δs (eJ k)) with hρ'sdef
   have hliρ' : LinearIndependent ℤ ρ's := _root_.GlobalTheory.PolFan.linearIndependent_cons_of_coord_ne_zero bar δs βs c j eJ hliδs hcβ hcj.ne' (fun hh => (heJ j).1 hh rfl)
   have hmultρ' : (cellMult bar ρ's : ℝ) = c j * cellMult bar δs :=
-    GlobalTheory.T.cell_multiplicity_positive_cone bar δs βs c j eJ hliδs hcβ hcj heJ (GlobalTheory.T.balancedFormCellMultiplicity_pos bar δs)
+    _root_.GlobalTheory.PolFan.ConsMult.cellMult_cons_eq bar δs βs c j eJ hliδs hcβ hcj heJ (_root_.GlobalTheory.PolFan.cellMult_pos bar δs)
   have hrange : Set.range (fun i => (⟨γ' i, hγ'.mem i⟩ : balForms bar X)) ⊆ Set.range ρ's := by
     rintro _ ⟨k, rfl⟩
     have e := hs' k
@@ -147,8 +147,8 @@ theorem cellMult_lt_of_star_new : ∀ (O : Type) [CommRing O] [IsDedekindDomain 
       rw [e, hl, hρs, hr]
   have hdvd : cellMult bar (fun i => (⟨γ' i, hγ'.mem i⟩ : balForms bar X)) ∣ cellMult bar ρ's :=
     _root_.GlobalTheory.natCard_torsion_quot_span_dvd_of_range_subset (balForms bar X) ρ's _ hliρ' hrange
-  have hle := Nat.le_of_dvd (GlobalTheory.T.balancedFormCellMultiplicity_pos bar ρ's) hdvd
-  have hδpos := GlobalTheory.T.balancedFormCellMultiplicity_pos bar δs
+  have hle := Nat.le_of_dvd (_root_.GlobalTheory.PolFan.cellMult_pos bar ρ's) hdvd
+  have hδpos := _root_.GlobalTheory.PolFan.cellMult_pos bar δs
   have hlt : (cellMult bar ρ's : ℝ) < cellMult bar δs := by
     rw [hmultρ']; exact mul_lt_of_lt_one_left (by exact_mod_cast hδpos) (hclt j)
   have hlt' : cellMult bar ρ's < cellMult bar δs := by exact_mod_cast hlt

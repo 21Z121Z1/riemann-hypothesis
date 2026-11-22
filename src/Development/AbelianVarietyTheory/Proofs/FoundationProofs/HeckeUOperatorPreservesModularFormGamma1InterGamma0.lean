@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Foundations.PetEqRelIndexMul
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SlashRatIsBoundedAtGamma1InterGamma0Level
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MdifferentiableHeckeOperatorsExplicit
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeUOperatorExplicitSlashInvariantGamma1InterGamma0
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeUOperatorExplicitEqSumSlashStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeUOperatorExplicitEqSumSlash
 open UpperHalfPlane ModularForm CongruenceSubgroup MeasureTheory
 open scoped MatrixGroups ModularForm Manifold
 
@@ -39,7 +39,7 @@ theorem uOp_modularForm : ∀ (N l q : ℕ) (k : ℤ), 0 < N → 0 < l → q.Pri
     rw [SL_slash] at this
     exact this
   · intro c hc
-    rw [GlobalTheory.T.heckeUOperatorExplicit_eq_sum_slash q k (⇑f) hq0]
+    rw [_root_.GlobalTheory.Hk.uOp_eq_sum_slash q k (⇑f) hq0]
     exact isBoundedAt_finsetSum _ c k fun j _ => _root_.GlobalTheory.Hk.slash_rat_isBoundedAt N l k _ hN hl (by
       simp [Matrix.GeneralLinearGroup.mkOfDetNeZero, Matrix.det_fin_two_of]; exact_mod_cast hq0) f c hc
 

@@ -6,7 +6,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Sec
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUniqueFrameChangeByMatricesStatement
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrameChangeExistsUniqueOfSamePoint
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrameChangeByMatricesReflAndComp
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrameChangeCommBaseChangeStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrameChangeCommBaseChange
 
 namespace GlobalTheory.Frames
 
@@ -16,7 +16,7 @@ open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.S
 theorem frPt_eq_of_frMap_injective : Out.SecBaseChangeSt → ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host E) (Dw : Datum H) (l : Level H) (Xo : Moduli Dw l) (c : Coeff l) (S : Type) [CommRing S] [Algebra c.F S] (T : Type) [CommRing T] [Algebra c.F T] (φ : S →ₐ[c.F] T) (z z' : FrPt Xo c S) (w : FrPt Xo c T), Function.Injective φ → z'.x = z.x → FrMap φ z w → FrMap φ z' w → z = z' := by
   intro _ E _ _ _ H Dw l Xo c S _ _ T _ _ φ z z' w hφ hx hz hz'
   obtain ⟨g, a, -, hga⟩ := (_root_.GlobalTheory.Frames.frChg_exists_unique E H Dw l Xo c S z z').1 hx
-  have h1 := (GlobalTheory.T.frameChange_comm_baseChange E H Dw l Xo c S T φ z z' w w g (a : S) hga hz).1 hz'
+  have h1 := (_root_.GlobalTheory.Frames.ChgBC.frChg_baseChange E H Dw l Xo c S T φ z z' w w g (a : S) hga hz).1 hz'
   have h2 := (_root_.GlobalTheory.Frames.frChg_refl_and_comp E H Dw l Xo c T w w w).1
   obtain ⟨hg, ha⟩ := (_root_.GlobalTheory.Frames.frChg_exists_unique E H Dw l Xo c T w w).2 _ _ _ _ h1 h2
   have ha1 : (a : S) = ((1 : Sˣ) : S) := hφ (by rw [ha]; simp)

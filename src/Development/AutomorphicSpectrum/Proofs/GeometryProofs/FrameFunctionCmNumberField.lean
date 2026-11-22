@@ -1,7 +1,9 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCMFrame
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsCmPeriodEmbedding
-import Development.AutomorphicSpectrum.Proofs.AdelicProofs.ExistsExtensionEmbeddingAlgClosedStatement
+import Development.AutomorphicSpectrum.Proofs.AdelicProofs.ExistsExtensionEmbeddingAlgClosed
+import Development.AutomorphicSpectrum.Definitions.AdelicLattices.FactPrimes
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LatNormGrLatNeZeroOfSpan
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CmPackPureFrameOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsTransition
 import Development.WeilBound.CoreStatements.SesquilinearFractions.GFrameBC
@@ -76,7 +78,7 @@ theorem hasInfNorm_value : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E
   have hGe := (_root_.GlobalTheory.CompanionTheory.Relay.gram_det_ne_zero_local_basis_cofinite E H (FU.Di i) _ e hcard he).1
   obtain ⟨hfram, hval⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Fl.CMValue.value_on_cmFrame E H D l Xo c g ty FU i Z P hP X x hx U τ φ e ρ T v w hty hτ hU hline he
     hconst hxli hT hfr
-  obtain ⟨s', hs'⟩ := GlobalTheory.T.exists_extension_embedding_alg_closed k X.K ℂ (IntermediateField.inclusion hkK).toRingHom s
+  obtain ⟨s', hs'⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Fl.exists_comp_eq_of_numberField k X.K ℂ (IntermediateField.inclusion hkK).toRingHom s
   have hs'a : ∀ a : k, s' (IntermediateField.inclusion hkK a) = s a := fun a => DFunLike.congr_fun hs' a
   have hβ : s'.comp X.β = s.comp (IntermediateField.inclusion hc).toRingHom := by
     ext a

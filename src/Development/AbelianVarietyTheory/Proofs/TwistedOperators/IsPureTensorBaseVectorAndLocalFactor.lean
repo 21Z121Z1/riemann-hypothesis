@@ -3,13 +3,13 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RestrictedTensor
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsIntOv
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.RealIdemMulOfReal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisThetaLaws
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockVacuaLocalFactorsStableHeisenbergAwayStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockVacuaLocalFactorsStableHeisenbergAway
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CmAdeleIdempotentOfPlaceProperties
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaInnerProductHermitian
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisenbergCompressionFinitePlaceLatticeVacuaScalStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisenbergCompressionRealPlaceFockVacuaScalarStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilMatrixComponentAtPlaceMemCompletedLatticeStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsEqSumWeilComponentsAddTwoSmulLatticeStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisenbergCompressionFinitePlaceLatticeVacuaScal
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisenbergCompressionRealPlaceFockVacuaScalar
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilMatrixComponentAtPlaceMemCompletedLattice
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsEqSumWeilComponentsAddTwoSmulLattice
 
 noncomputable section
 
@@ -74,11 +74,11 @@ theorem ip_heis_wAt (h : IsBase ψ θ S T sS sT ΛS ΛT f₀) (hμ : IsCovolOne 
   have h0 := base_vacAt h p
   have hb := base_theta h
   rcases p with v | τ
-  · obtain ⟨γ, hγ⟩ := GlobalTheory.T.heisenberg_compression_finite_place_lattice_vacua_scalar D ψ S T ΛS ΛT μ 𝓕 (base_std h) h.2.2.1 h.2.2.2.1 hμ v w
+  · obtain ⟨γ, hγ⟩ := _root_.GlobalTheory.PlaceCompress.compress_fin D ψ S T ΛS ΛT μ 𝓕 (base_std h) h.2.2.1 h.2.2.2.1 hμ v w
     have e0 := hγ f₀ f₀ hb hb h0 h0
     rw [ip_base h hμ, mul_one] at e0
     rw [hγ f g hf hg vf vg, e0]
-  · obtain ⟨γ, hγ⟩ := GlobalTheory.T.heisenberg_compression_real_place_fock_vacua_scalar D ψ θ S T μ 𝓕 (base_std h) (base_inf h) hμ τ (sS τ) (sT τ) (h.1 τ) (h.2.1 τ) w
+  · obtain ⟨γ, hγ⟩ := _root_.GlobalTheory.VacCompress.compress D ψ θ S T μ 𝓕 (base_std h) (base_inf h) hμ τ (sS τ) (sT τ) (h.1 τ) (h.2.1 τ) w
     have e0 := hγ f₀ f₀ hb hb h0 h0
     rw [ip_base h hμ, mul_one] at e0
     rw [hγ f g hf hg vf vg, e0]
@@ -102,7 +102,7 @@ theorem ip_heis_sum (h : IsBase ψ θ S T sS sT ΛS ΛT f₀) (hμ : IsCovolOne 
     have hZ : wAt a (∑ p ∈ P, wAt p w + z) = 0 := by
       rw [wAt_add, wAt_sum_of_notMem ha, hz a (Finset.mem_insert_self a P), add_zero]
     have hv : VacAt ψ θ S T sS sT ΛS ΛT a (heisO ψ S T (∑ p ∈ P, wAt p w + z) f₀) :=
-      (GlobalTheory.T.fockVacua_localFactors_stable_heisenberg_away D ψ θ S T sS sT ΛS ΛT hψ (base_inf h) f₀ hb).1 a _ hZ (base_vacAt h a)
+      (_root_.GlobalTheory.PlaceStable.heis_stable D ψ θ S T sS sT ΛS ΛT hψ (base_inf h) f₀ hb).1 a _ hZ (base_vacAt h a)
     rw [Finset.sum_insert ha, Finset.prod_insert ha, add_assoc,
       GlobalTheory.SplitScalar.heisO_add_of_orth ψ S T (symplO_wAt S T w hZ),
       ip_heis_wAt h hμ a w (hth _ _ hb) hy hv (vy a (Finset.mem_insert_self a P)), ih hzP vyP]
@@ -131,7 +131,7 @@ theorem isPure_local (h : IsBase ψ θ S T sS sT ΛS ΛT f₀) (hμ : IsCovolOne
   · refine (Set.finite_singleton q).subset fun p hp => ?_
     by_contra hpq
     exact hp (hq p hpq)
-  · obtain ⟨P₀, hP₀⟩ := GlobalTheory.T.exists_eq_sum_weilComponents_add_two_smul_lattice D S T ΛS ΛT h.2.2.1 h.2.2.2.1 w
+  · obtain ⟨P₀, hP₀⟩ := _root_.GlobalTheory.PlaceTensor.CompDecomp.exists_eq_sum_wAt_add_two_smul D S T ΛS ΛT h.2.2.1 h.2.2.2.1 w
     obtain ⟨u, hu, hw⟩ := hP₀ (insert q P₀) (Finset.subset_insert q P₀)
     have hqP : q ∈ insert q P₀ := Finset.mem_insert_self q P₀
     generalize insert q P₀ = P at hw hqP
@@ -165,8 +165,8 @@ theorem isPure_local (h : IsBase ψ θ S T sS sT ΛS ΛT f₀) (hμ : IsCovolOne
         rcases p with v | τ
         · have hv : IsLatVac (heisO ψ S T) (latO S T ΛS ΛT fun u => u = v) f₀ := base_vacAt h (.inl v)
           exact hv.1 _ (latO_mono (fun v' hv' => Sum.inl_injective hv'.2)
-            (GlobalTheory.T.weilMatrixComponentAtPlace_mem_completedLattice D S T ΛS ΛT (fun _ => True) u hu (.inl v)).1)
-        · rw [(GlobalTheory.T.weilMatrixComponentAtPlace_mem_completedLattice D S T ΛS ΛT (fun _ => True) u hu (.inr τ)).2.2 (fun v _ => Sum.inl_ne_inr),
+            (_root_.GlobalTheory.LatticeLocal.wAt_mem_latO D S T ΛS ΛT (fun _ => True) u hu (.inl v)).1)
+        · rw [(_root_.GlobalTheory.LatticeLocal.wAt_mem_latO D S T ΛS ΛT (fun _ => True) u hu (.inr τ)).2.2 (fun v _ => Sum.inl_ne_inr),
             smul_zero, GlobalTheory.SplitScalar.heisO_zero]
       rw [hh, ip_base h hμ]
     have e1 : heisO ψ S T w f₀ = heisO ψ S T (∑ p ∈ P, wAt p w) f₀ := by
@@ -193,7 +193,7 @@ theorem isPure_base_and_local : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (�
   · unfold IsPure IsRestricted
     refine ⟨⟨fun p => isEmptyElim p, Set.toFinite _⟩, base_theta h, fun w => ⟨Set.toFinite _, ?_⟩⟩
     rw [finprod_of_isEmpty]
-    obtain ⟨P₀, hP₀⟩ := GlobalTheory.T.exists_eq_sum_weilComponents_add_two_smul_lattice D S T ΛS ΛT h.2.2.1 h.2.2.2.1 w
+    obtain ⟨P₀, hP₀⟩ := _root_.GlobalTheory.PlaceTensor.CompDecomp.exists_eq_sum_wAt_add_two_smul D S T ΛS ΛT h.2.2.1 h.2.2.2.1 w
     obtain ⟨u, hu, hw⟩ := hP₀ P₀ subset_rfl
     rw [Finset.eq_empty_of_isEmpty P₀, Finset.sum_empty, zero_add] at hw
     rw [hw, (isLatVac_of_isBase h).1 u hu, ip_base h hμ]

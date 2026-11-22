@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 import Formalism.PairingDivisors.StatementH
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalStarComplexMultiplicationPointsStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalStarComplexMultiplicationPoints
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.WeilPairingGaloisEquivariantCmTorsion
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIntegerMapEqHalfOneAddSqrt
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsRingEquivOfIsTranscendenceBasis
@@ -184,6 +184,6 @@ theorem galPh1_of (D : D7) (hS : galStar D) (hW : WeilPairingGaloisAlt D) : galP
   exact h
 
 theorem galPh1_all : ∀ D : D7, galPh1 D := fun D =>
-  galPh1_of D (GlobalTheory.T.galStar_complexMultiplication_points D) (_root_.GlobalTheory.WeilPairingGalois.weilPairingGalois_all D)
+  galPh1_of D (_root_.GlobalTheory.ConjPoint.galStar_holds D) (_root_.GlobalTheory.WeilPairingGalois.weilPairingGalois_all D)
 
 end GlobalTheory.QuadPhase

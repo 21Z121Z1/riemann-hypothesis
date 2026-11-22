@@ -11,7 +11,8 @@ import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TopLePreimageOfValA
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPolarizedSuperlatticeOfRiemannForm
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaUnifAV
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeHomFiniteImageOfTrivialOnMultiples
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHolUnifPullAlongGroupHomStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHolUnifPullAlongGroupHom
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsLieBasis
 
 set_option autoImplicit false
 
@@ -125,7 +126,7 @@ theorem GlobalTheory.riemann_polarised_torus : ∀ (g : ℕ) (Λ : Submodule ℤ
   have hcomp : ∀ z, exA z ≫ φ = u.ex z := fun z => by
     simp only [exA, Category.assoc, hc, MonObj.comp_pow, Category.comp_id]
     rw [← e_nsmul, e_N]
-  obtain ⟨uA, χA, hΛA, hAHA⟩ := GlobalTheory.T.exists_holUnif_pull_along_groupHom A P.A φ P.L g u exA Λ Hm χ exA_add exA_onto exA_ker hd hf
+  obtain ⟨uA, χA, hΛA, hAHA⟩ := _root_.GlobalTheory.PullUnifHom.exists_holUnif_pull_hom A P.A φ P.L g u exA Λ Hm χ exA_add exA_onto exA_ker hd hf
     exA_hol hcomp (hu ▸ hle) hAH
   have hsm : SmoothOfRelativeDimension g A.hom :=
     GlobalTheory.SmoothDescent.smoothOfRelativeDimension_of_etale_cover ℂ _ _ ψ.left A.hom g hψe hψs inferInstance

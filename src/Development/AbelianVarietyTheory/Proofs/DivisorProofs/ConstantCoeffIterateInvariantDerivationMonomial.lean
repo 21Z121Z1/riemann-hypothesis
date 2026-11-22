@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.EqZeroOfForallPowDvd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvDer
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantDerivationCoeffEqZeroOfDegreeLt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantDerivationFormalGroupLawIsLinearStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantDerivationFormalGroupLawIsLinear
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantDerivationFormalGroupLawLeibniz
 open MvPowerSeries GlobalTheory GlobalTheory.Katz GlobalTheory.QLog GlobalTheory.PDivGroup GlobalTheory.Sandwich GlobalTheory.IndefiniteRowSideFullHecke.EpsilonPairingZeta GlobalTheory.PDivLat GlobalTheory.LawDer
 
@@ -153,7 +153,7 @@ theorem invDer_monomial (μ : Fin d → MvPowerSeries (Fin d ⊕ Fin d) R)
       (∀ β : Fin d →₀ ℕ, β.degree < n → coeff β G = 0) ∧
       invDer μ u (monomial α 1) =
         ∑ j, ((α j : R) * u j) • monomial (α - Finsupp.single j 1) (1 : R) + G := by
-  obtain ⟨hadd, hsmul, hC⟩ := GlobalTheory.T.invariantDerivationFormalGroupLaw_isLinear R d μ hc u
+  obtain ⟨hadd, hsmul, hC⟩ := _root_.GlobalTheory.LawDer.Linear.invDer_linear R d μ hc u
   intro n
   induction n with
   | zero =>
@@ -269,7 +269,7 @@ theorem constantCoeff_iterate_invDer_monomial : ∀ (R : Type) [CommRing R] (d :
     constantCoeff ((invDer μ u)^[α.degree] (monomial α (1 : R))) =
       (α.degree.factorial : R) * ∏ i, u i ^ α i := by
   intro R _ d μ hc hunit hswap u
-  obtain ⟨hadd, hsmul, hC⟩ := GlobalTheory.T.invariantDerivationFormalGroupLaw_isLinear R d μ hc u
+  obtain ⟨hadd, hsmul, hC⟩ := _root_.GlobalTheory.LawDer.Linear.invDer_linear R d μ hc u
   let L : Module.End R (MvPowerSeries (Fin d) R) :=
     { toFun := invDer μ u, map_add' := hadd, map_smul' := hsmul }
   have hL : ∀ (k : ℕ) (F : MvPowerSeries (Fin d) R), (invDer μ u)^[k] F = (L ^ k) F :=

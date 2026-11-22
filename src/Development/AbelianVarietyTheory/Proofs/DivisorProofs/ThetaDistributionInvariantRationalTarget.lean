@@ -3,16 +3,17 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDetSmulSubOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussSumNondegenerateFiniteHermitianModule
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsHeisTrivial
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexMapNsmulComapEqAbsNormDet
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalLatticeSelfDualFgFullIndexStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalLatticeSelfDualFgFullIndex
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralGaussianRealIsometryNoFixed
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsHalfIdem
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaTildeHeckeCharSplitMulSignOfNormFormulaStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaTildeHeckeCharSplitMulSignOfNormFormula
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCartanInvolutionCommQuasiReflection
 import Formalism.LocalToGlobal.IndefiniteReal.LocalNewformFunction
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalIsometryVacuumScalarGaussSumIntegralStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteWeilRepEqLatticeIntertwinerMulCharacterStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalSubstitutionThetaHeisenbergUnitaryStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchurLemmaThetaFunctionsOrientedPairStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalIsometryVacuumScalarGaussSumIntegral
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteWeilRepEqLatticeIntertwinerMulCharacter
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalSubstitutionThetaHeisenbergUnitary
+import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnitaryOnTheta
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchurLemmaThetaFunctionsOrientedPair
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSplitCharacter
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.UnitaryMatrixEqProdQuasiReflections
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.UnitaryQuasiReflectionLaws
@@ -187,7 +188,7 @@ theorem scalar_const (hψ : IsStdChar D ψ (-1)) (hθ : IsInfFam θ) (hS : IsSel
     (det_unitary_sub_one (GlobalTheory.LatVac.gram_det_isUnit S).ne_zero ha.unitary).1
   have db : b.det ≠ 0 := left_ne_zero_of_mul_eq_one
     (det_unitary_sub_one (GlobalTheory.LatVac.gram_det_isUnit T).ne_zero hb.unitary).1
-  have hof := GlobalTheory.T.finiteWeilRep_eq_latticeIntertwiner_mul_character D ψ hψ S T ΛS ΛT hS hT _ _ _ _ (hecke_pow hη _).1 (hecke_pow hη _).1 (hecke_pow hη _).2
+  have hof := _root_.GlobalTheory.FinWeilForm.finWeil_eq D ψ hψ S T ΛS ΛT hS hT _ _ _ _ (hecke_pow hη _).1 (hecke_pow hη _).1 (hecke_pow hη _).2
     (hecke_pow hη _).2 of hf lam hlam hsq w Om hO ε hε g h (κ (Units.mk0 _ da)) (κ (Units.mk0 _ db)⁻¹)
     (by rw [k1, show Formalism.L2.Theta.mt S g = _ from ha, Units.val_mk0, RingHom.map_det]; rfl)
     (by
@@ -197,7 +198,7 @@ theorem scalar_const (hψ : IsStdChar D ψ (-1)) (hθ : IsInfFam θ) (hS : IsSel
       congr 2
       rw [← one_mul (incA D _), ← e1, mul_assoc, ← RingHom.map_mul, mul_inv_cancel₀ db, RingHom.map_one, mul_one])
   set z := ((η ^ T.rank) (κ (Units.mk0 _ da)))⁻¹ * (η ^ S.rank) (κ (Units.mk0 _ db)⁻¹) with hz
-  obtain ⟨r₁, p₁, h1⟩ := GlobalTheory.T.rationalIsometry_vacuumScalar_gaussSum_integral D ψ hψ θ hθ S T sS sT cS cT ΛS ΛT hS hT w hO.hw g h a b ha hb hbij hI
+  obtain ⟨r₁, p₁, h1⟩ := _root_.GlobalTheory.RatTrace.gauss_mul_integral D ψ hψ θ hθ S T sS sT cS cT ΛS ΛT hS hT w hO.hw g h a b ha hb hbij hI
     (c⁻¹ * δ * z * (lam (idx (latF S T ΛS ΛT) ((latF S T ΛS ΛT).map (rhoF S T (g, h)))))⁻¹)
     (fun f f1 f2 x => by
       have e1 := congrFun (H f f.2) x
@@ -207,9 +208,9 @@ theorem scalar_const (hψ : IsStdChar D ψ (-1)) (hθ : IsInfFam θ) (hS : IsSel
       ring) n t t1 t2
   rw [g1] at h1
   have hN' : (N : D.host.E) ^ M ≠ 0 := pow_ne_zero _ (Nat.cast_ne_zero.2 hN)
-  obtain ⟨r₃, p₃, h3⟩ := GlobalTheory.T.etaTildeHeckeChar_split_mul_sign_of_norm_formula D η hη lam hlam hsq ε hε _ _ (mul_ne_zero hN' hd) i1
+  obtain ⟨r₃, p₃, h3⟩ := _root_.GlobalTheory.EtaProduct.eta_split_mul_lam_pos D η hη lam hlam hsq ε hε _ _ (mul_ne_zero hN' hd) i1
     (κ' (Units.mk0 _ hN' * Units.mk0 _ hd)) (k2 _)
-  obtain ⟨r₄, p₄, h4⟩ := GlobalTheory.T.etaTildeHeckeChar_split_mul_sign_of_norm_formula D η hη lam hlam hsq ε hε _ _ (mul_ne_zero hN' hΔ) i2
+  obtain ⟨r₄, p₄, h4⟩ := _root_.GlobalTheory.EtaProduct.eta_split_mul_lam_pos D η hη lam hlam hsq ε hε _ _ (mul_ne_zero hN' hΔ) i2
     (κ' (Units.mk0 _ hN' * Units.mk0 _ hΔ)) (k2 _)
   simp only [map_mul (tauE D _), map_mul lam, Finset.prod_mul_distrib] at h3 h4
   refine final_algebra p₁ p₂ p₃ p₄ hn hc hδ0 (Circle.coe_ne_zero z) h1 h2 h3 h4 g2 ?_
@@ -242,7 +243,7 @@ theorem of_oi_comm (hψ : IsStdChar D ψ (-1)) (hS : IsSelfDualC S ΛS) (hT : Is
   obtain ⟨lam, hlam, hsq⟩ := exists_goodNorm D
   obtain ⟨w, Om, hO⟩ := exists_isLatRep hψ hS hT hlam
   obtain ⟨ε, hε⟩ := exists_isHalfIdem D
-  exact oi_comm hψ hi hO (fun p => ⟨_, GlobalTheory.T.finiteWeilRep_eq_latticeIntertwiner_mul_character D ψ hψ S T ΛS ΛT hS hT _ _ _ _ (hecke_pow hη _).1 (hecke_pow hη _).1
+  exact oi_comm hψ hi hO (fun p => ⟨_, _root_.GlobalTheory.FinWeilForm.finWeil_eq D ψ hψ S T ΛS ΛT hS hT _ _ _ _ (hecke_pow hη _).1 (hecke_pow hη _).1
     (hecke_pow hη _).2 (hecke_pow hη _).2 of hf lam hlam hsq w Om hO ε hε p.1 p.2
     (GlobalTheory.SplitDetChar.cut ε hε.1 (Matrix.GeneralLinearGroup.det (matHom S p.1)))
     (GlobalTheory.SplitDetChar.cut ε hε.1 (Matrix.GeneralLinearGroup.det (matHom T p.2))) rfl rfl⟩) p q f h

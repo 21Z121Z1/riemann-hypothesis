@@ -28,7 +28,7 @@ theorem exists_prodFam (B : Out.PolAV (Sp (𝓞 K))) : ∀ (n : ℕ) (C : Fin n 
   | succ n ih =>
     intro C
     obtain ⟨Q', a', ha', hg', hex', hext'⟩ := ih fun k => C k.succ
-    obtain ⟨Q, u, v, hu, hv, huv, hQ⟩ := GlobalTheory.T.exists_prod_polAV_add_g GlobalTheory.CMClaims.laws (𝓞 K) (C 0) Q'
+    obtain ⟨Q, u, v, hu, hv, huv, hQ⟩ := _root_.GlobalTheory.PolProd.exists_prod_polAV GlobalTheory.CMClaims.laws (𝓞 K) (C 0) Q'
     refine ⟨Q, Fin.cases u fun j => v ≫ a' j, fun k => ?_, ?_, fun T x => ?_, fun T z z' h => ?_⟩
     · refine Fin.cases ?_ (fun j => ?_) k
       · exact hu

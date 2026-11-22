@@ -11,7 +11,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiagonalSignOfPosit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianCongrOfPositiveIndexEq
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsRootSelectionUnitaryRankOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NegDefOfHermitianMatrixPositiveIndexEqZeroStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SimilitudePairGramInvCongruentStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SimilitudePairGramInvCongruent
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MarkedSimilitudePairMinpolyRootsNormSqEqStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardSubtypeEqOfMultiset
 
@@ -520,7 +520,7 @@ theorem real_back (ha : G.a = 1) (P : Pair G) (pb : PowerBasis G.F M) (hpol : P.
       rw [hZ]; congr 2; exact funext fun i => hb _
     rw [map_mul, ← Matrix.mul_assoc (G.gram w)]
     exact diag_mul (G.gram w * G.psi w ((P.β⁻¹ : G.Cˣ) : G.C)) (G.psi w (j b)) Z d (fun i => (e i b).re) hD hB
-  obtain ⟨W, hW⟩ := GlobalTheory.T.similitudePair_gram_inv_congruent p G P w
+  obtain ⟨W, hW⟩ := _root_.GlobalTheory.LKMid.Pair.gram_psi_inv_congr p G P w
   by_cases hw : w = v
   · subst hw
     refine ⟨fun _ => pos_of_diag _ Z _ hD' (fun i => ?_) x hx, fun h => absurd hv h⟩

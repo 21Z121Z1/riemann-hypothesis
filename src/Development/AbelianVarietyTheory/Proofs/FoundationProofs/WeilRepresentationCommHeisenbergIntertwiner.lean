@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HESmulRight
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KernelLatticesFormSelfDualTriples
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsRationalPointOfMemMovedThetaLattice
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsThetaLatticeCorrespondenceWeilOperatorStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsThetaLatticeCorrespondenceWeilOperator
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.WeilRepresentationThetaMovedLattice
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaFunctionsAllLevelsClosure
 
@@ -90,7 +90,7 @@ theorem om_iop : ∀ (D : D7) (cc : Ideal (𝓞 D.host.K)) (δ : ℂ), Crv D cc 
   obtain ⟨t1, t2, t3, -⟩ := _root_.GlobalTheory.ThetaLevels.levels_closed D cc δ hc N N'
   have hFT := t1 _ _ (sd_of_moves a1) (sd_of_moves a1') F hF
   have hG := _root_.GlobalTheory.WeilTheta.om_mem_Th_moved D cc δ hc N N' e0 W g h g' h' L₁ L₂ L₁' L₂' a1 a1' a2 a2' F hF
-  obtain ⟨f, f1, f2, f3⟩ := GlobalTheory.T.exists_thetaLattice_correspondence_weilOperator D cc δ hc hδ N N' e0 W g h k g' h' k' L₁ L₂ M₁ M₂ L₁' L₂' M₁' M₂'
+  obtain ⟨f, f1, f2, f3⟩ := _root_.GlobalTheory.WeilCorr.exists_corr D cc δ hc hδ N N' e0 W g h k g' h' k' L₁ L₂ M₁ M₂ L₁' L₂' M₁' M₂'
     a1 a1' a2 a2' b1 b1' b2 b2' F hFT
   have kA1 := klat (tor0 D cc δ) a1 a1'
   have kA2 := klat (tor0 D cc δ) a2 a2'

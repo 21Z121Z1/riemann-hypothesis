@@ -2,9 +2,10 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotropicHermitian
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationPreservesSchwartz
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerGoodModelsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerGoodModels
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerTransitive
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicStoneVonNeumannLagrangianUniquenessStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicStoneVonNeumannLagrangianUniqueness
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 
 open scoped TensorProduct NNReal Matrix
 open NumberField IsDedekindDomain MeasureTheory Filter Topology Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes
@@ -339,10 +340,10 @@ theorem main : GlobalTheory.FunPr.Hypotheses₂ → ∀ (F E : Type) [Field F] [
   obtain ⟨L, hiso, hrk, hL⟩ := exists_lagr B hP.base M M₁ hP.good hP₁.good H hH
   have hadmT : ev0 F (Fin n₁ × Fin d) ∘ₗ T ∈ (adeleClass F).adm (Fin n × Fin d) := hTa _ (adelicCoordinatesEvalZeroForm_mem_admissible _)
   have hadmE : ev0 F (Fin n₁ × Fin d) ∘ₗ e ∈ (adeleClass F).adm (Fin n × Fin d) :=
-    GlobalTheory.T.eigen_intertwiner_good_models F E σ B n d n₁ d X W X₁ W M M₁ _ _ _ e hP.good hP₁.good he _ (adelicCoordinatesEvalZeroForm_mem_admissible _)
+    _root_.GlobalTheory.EvAdm.comp_mem_adm F E σ B n d n₁ d X W X₁ W M M₁ _ _ _ e hP.good hP₁.good he _ (adelicCoordinatesEvalZeroForm_mem_admissible _)
   obtain ⟨Φ₀, hΦ₀, hne⟩ := GlobalTheory.EvNonzero.exists_mem_schA_ev_ne_zero F E σ B n d n₁ d X W X₁ W M M₁ _ _ _ e hP.good hP₁.good he
   obtain ⟨y, hy⟩ := Function.ne_iff.1 hne
-  obtain ⟨c, hc⟩ := GlobalTheory.T.adelicStoneVonNeumann_lagrangian_uniqueness F B.ψ hψ (Fin n × Fin d) L hiso hrk _ hadmT _ hadmE
+  obtain ⟨c, hc⟩ := _root_.GlobalTheory.AdelicSvN.main F B.ψ hψ (Fin n × Fin d) L hiso hrk _ hadmT _ hadmE
     (fun t w hw Φ hΦ => evAt_zero_comp_eq_of_exp_phase_mul M M₁ B.ψ hψ H T hTh hTi _ (hL t w hw) Φ hΦ)
     (fun t w hw Φ hΦ => evAt_zero_comp_eq_of_exp_phase_mul M M₁ B.ψ hψ H e he.Heisenberg₂ he.inv _ (hL t w hw) Φ hΦ)
     ⟨_, GlobalTheory.HeisSchA.rho_mem_schA M B.ψ hψ _ Φ₀ hΦ₀, by

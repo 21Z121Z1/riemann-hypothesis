@@ -22,7 +22,7 @@ import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.UniNilp
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsSSRepOfTraceNondegenerate
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TraceNondegenerateOfIsSSRep
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BaseChangeIsomorphicFields
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CmSubfieldsCompositumClosedStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CmSubfieldsCompositumClosed
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobDenseOffFinite
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteOrderHeckeCharGalois
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormCharacterGaloisCofinite
@@ -88,7 +88,7 @@ theorem isCMField_intermediate (Ω : Type) [Field Ω] (K : Type) [Field K] [Numb
     intro y hy
     obtain ⟨x, -, rfl⟩ := (IntermediateField.mem_map L).1 hy
     exact AlgHom.mem_fieldRange.2 ⟨x, rfl⟩
-  haveI : IsCMField (L.map f) := (GlobalTheory.T.cm_subfields_compositum_closed Ω K).2.1 f.fieldRange (L.map f) hle inferInstance
+  haveI : IsCMField (L.map f) := (_root_.GlobalTheory.CMSub.isCMField_sup_le_adjoin Ω K).2.1 f.fieldRange (L.map f) hle inferInstance
   exact isCMField_of_ringEquiv (IntermediateField.equivMap L f).symm.toRingEquiv
 
 end GlobalTheory.SolvUp

@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DiagMod
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsGaloisConjValuationSubringSameTraceStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsGaloisConjValuationSubringSameTrace
 open scoped MatrixGroups TensorProduct
 open Matrix GlobalTheory.KZ GlobalTheory.KZ.ES
 
@@ -108,7 +108,7 @@ theorem valuationSubring_galois_stable_of_kummer : ∀ (l : ℕ), l.Prime → �
   obtain ⟨τ, hτ⟩ : ∃ τ, τ ∉ H := by
     by_contra h
     exact hH.1 (eq_top_iff.2 fun g _ => by_contra fun hg => h ⟨g, hg⟩)
-  obtain ⟨σ, hσ⟩ := GlobalTheory.T.exists_galois_conj_valuationSubring_same_trace (IntermediateField.fixedField H) L W (W.comap (τ : L →+* L))
+  obtain ⟨σ, hσ⟩ := _root_.GlobalTheory.KZ.ES.exists_conj_of_same_trace (IntermediateField.fixedField H) L W (W.comap (τ : L →+* L))
     (fun a => (hW α hθ0 hθl τ a (hKθ a a.2)).symm)
   have hη : σ.restrictScalars F ∈ H := by
     refine (IntermediateField.fixingSubgroup_fixedField H).le ?_

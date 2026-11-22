@@ -2,13 +2,13 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.BranchesAlongOfIrreducible
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SqRepTopVecOfUnitriangular
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NonemptyInvFunEquiv
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsPiTensorShuffleEquivStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsPiTensorShuffleEquiv
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PiTensorMapSurjectiveAndKer
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ContractsTensorProductChain
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TensorRepresentationIntertwinerCompatStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ContractsOfIsoDirectSumStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NonemptyInvFunDualTprodEquivStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsoOuterDualStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NonemptyInvFunDualTprodEquiv
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsoOuterDual
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsoTwistDetIrrShiftStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsoUnitaryIrrepConjDual
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryIrrepCompConjIsoDual
@@ -32,7 +32,7 @@ theorem Contracts.outer {ι H G : Type} [Fintype ι] [DecidableEq ι] [Monoid H]
     {σ : ∀ τ, Representation ℂ H (V τ)} {σ' : ∀ τ, Representation ℂ G (W τ)} (h : ∀ τ, Contracts (φ τ) (σ τ) (σ' τ)) :
     Contracts (outer₂ φ) (outer σ) (outer σ') := by
   choose π hs he hk using h
-  obtain ⟨e, hE⟩ := GlobalTheory.T.exists_piTensor_tmul_piTensor_linearEquiv_piTensor_tmul ι F V
+  obtain ⟨e, hE⟩ := _root_.GlobalTheory.exists_piTensor_shuffle_equiv ι F V
   obtain ⟨h1, h2⟩ := _root_.GlobalTheory.TensorKernel.piTensor_map_surjective_and_ker ι _ _ π hs
   refine ⟨PiTensorProduct.map π ∘ₗ e.toLinearMap, h1.comp e.surjective, fun h g f v => ?_, fun l hl x hx => ?_⟩
   · induction f using PiTensorProduct.induction_on with
@@ -158,7 +158,7 @@ theorem contracts_fockOne {a b : ℕ} (hab : a < b) (α β : ℤ) (lam : DomWeig
   refine (GlobalTheory.T.contracts_of_iso_directSum' _ _ _ _ _ _ _ _ _ _ (irr a lam) i₀ (_root_.GlobalTheory.OneFunctional.iso_directSum_fockOne a b α β) (fun i hi => ?_) ?_).congr (Iso.refl _) (Iso.refl _)
     (GlobalTheory.T.iso_twist_detU_pow_irr_of_weight_shift b β _ _ fun i => ?_)
   · refine ((iso_twist_conj a α _).tprod (Iso.refl _)).invFun_eq_bot ?_
-    obtain ⟨e⟩ := GlobalTheory.T.nonempty_invFun_dual_tprod_equiv_intertwiningMap _ _ _ (irr a (addW (GlobalTheory.GLDuality.pad a i) (-α))) (irr a lam)
+    obtain ⟨e⟩ := _root_.GlobalTheory.OneFunctional.nonempty_invFun_dual_tprod_equiv _ _ _ (irr a (addW (GlobalTheory.GLDuality.pad a i) (-α))) (irr a lam)
     have hne : lam ≠ addW (GlobalTheory.GLDuality.pad a i) (-α) := fun e' => hi (GlobalTheory.GLDuality.pad_injective (min_le_left a b)
       (domWeight_ext fun j => by
         have := congrArg (fun w : DomWeight a => w.w j) (ha.trans e')
@@ -169,7 +169,7 @@ theorem contracts_fockOne {a b : ℕ} (hab : a < b) (α β : ℤ) (lam : DomWeig
     rw [← Submodule.subsingleton_iff_eq_bot]
     exact e.toEquiv.subsingleton
   · rw [((iso_twist_conj a α _).tprod (Iso.refl _)).finrank_invFun, ha]
-    obtain ⟨e⟩ := GlobalTheory.T.nonempty_invFun_dual_tprod_equiv_intertwiningMap _ _ _ (irr a lam) (irr a lam)
+    obtain ⟨e⟩ := _root_.GlobalTheory.OneFunctional.nonempty_invFun_dual_tprod_equiv _ _ _ (irr a lam) (irr a lam)
     have := isIrreducible_smallRep_unitary a lam
     rw [e.finrank_eq]
     exact Representation.IsIrreducible.finrank_intertwiningMap_self _
@@ -192,7 +192,7 @@ theorem finrank_invFun_branch {n N : ℕ} (h : n + 1 = N) (hn : 0 < n) (lam : Do
   have e : (irr N lam).comp (embed1 h) = resRep (unitaryIncl n) h lam :=
     MonoidHom.ext fun g => congrArg (sqRep ℂ N lam) (Units.ext rfl)
   rw [e, ((Iso.tprod_comm _ _).trans ((iso_dual_dual hn kap).symm.tprod (Iso.refl _))).finrank_invFun]
-  obtain ⟨e⟩ := GlobalTheory.T.nonempty_invFun_dual_tprod_equiv_intertwiningMap _ _ _ (irr n kap.dual) (resRep (unitaryIncl n) h lam)
+  obtain ⟨e⟩ := _root_.GlobalTheory.OneFunctional.nonempty_invFun_dual_tprod_equiv _ _ _ (irr n kap.dual) (resRep (unitaryIncl n) h lam)
   rw [e.finrank_eq]
   exact (comult_unitary n N h lam kap.dual).1 hI
 
@@ -260,7 +260,7 @@ theorem oneLine : OneLine := by
       (Contracts.outer fun τ => contracts_fockOne (nC_lt S j) _ _ _ _ (hk τ j)).congr (_root_.GlobalTheory.OneFunctional.FockTensor.outer₂_fockOne_iso ι _ _ _ _) (Iso.refl _) (Iso.refl _)
   have i1 := (GlobalTheory.T.outer_irr_iso_weylRep_of_pos ι _ (nR_pos S _) (psiWt P) (fun τ => lam τ 0) hl0).symm
   have i2 := ((GlobalTheory.T.outer_irr_iso_weylRep_of_pos ι _ (nC_pos S _) (baseWt P) (fun τ => (kap τ 0).dual) hk0).symm.dual.trans
-    (GlobalTheory.T.iso_dual_outer_outer_dual ι _ _ _)).trans (Iso.outer fun τ => iso_dual_dual (nC_pos S _) (kap τ 0))
+    (_root_.GlobalTheory.OneFunctional.iso_outer_dual ι _ _ _)).trans (Iso.outer fun τ => iso_dual_dual (nC_pos S _) (kap τ 0))
   let c := (outer fun τ => irr _ (lam τ 0)).comp ((Pi.evalMonoidHom _ 0).comp (rowComp (ι := ι) S))
   let d := (outer fun τ => irr _ (kap τ 0)).comp
     ((Pi.evalMonoidHom (fun i : Fin (S.m + 1) => UG ι (S.nC i)) 0).comp (MonoidHom.snd (∀ j : Fin S.m, UG ι (S.nR j)) _))

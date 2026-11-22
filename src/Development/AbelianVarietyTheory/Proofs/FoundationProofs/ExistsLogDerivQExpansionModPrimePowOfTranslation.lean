@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Foundations.ApplyEqOfMemAdjo
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsTopWTopWOfExists
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPrimitiveExpansionQuotientLevelOne
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PrimitiveHahnSeriesInvertibleModPrimePow
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulOfIsPrimitiveIntegralHahnGaussStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulOfIsPrimitiveIntegralHahnGauss
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemTranslationInvariantSubfieldIffExponents
 open scoped MatrixGroups
 open GlobalTheory.KZ GlobalTheory.Glue GlobalTheory.K5 GlobalTheory.KummerEisensteinGalois
@@ -78,7 +78,7 @@ theorem GlobalTheory.dl_exists : ∀ {Ω : Type} [Field Ω] [Algebra ℚ Ω] [Is
     rw [e]; exact (KT X L).mul_mem ((KT X L).inv_mem hcK) ((KT X L).mul_mem hfK hbK)
   have hsa : Sp L (X.exp a) := (_root_.GlobalTheory.Glue.KTExp.mem_KT_iff ε X L hL a).1 haK
   have hsb : Sp L (X.exp b) := (_root_.GlobalTheory.Glue.KTExp.mem_KT_iff ε X L hL b).1 hbK
-  have hP : Prim A (X.exp a * X.exp b) := GlobalTheory.T.mul_of_isPrimitiveIntegral_hahn_gauss A _ _ ha hb
+  have hP : Prim A (X.exp a * X.exp b) := _root_.GlobalTheory.Glue.Prim.mul A _ _ ha hb
   obtain ⟨Q, hQA, hQs, hQP⟩ := _root_.GlobalTheory.prim_inv_mod_pow l A hl n L (X.exp a * X.exp b) hL hP (sp_mul hsa hsb)
   have hDA : ∀ r, (theta (L:ℚ) (X.exp a) * X.exp b - X.exp a * theta (L:ℚ) (X.exp b)).coeff r ∈ A :=
     intA_sub A (intA_mul A (intA_theta A ha.1 hsa) hb.1) (intA_mul A ha.1 (intA_theta A hb.1 hsb))

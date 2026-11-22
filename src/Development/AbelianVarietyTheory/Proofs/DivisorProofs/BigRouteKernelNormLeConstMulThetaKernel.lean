@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Un
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExternalProductOnHermitianSumSmulLeft
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsThetaFunOOfMatchedSquareBigRoute
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumAdjointNegSourceKernelsAgree
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawOneSourceOrthogonalSumTargetsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawOneSourceOrthogonalSumTargets
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum Formalism.IndefR.Links
 open IsDedekindDomain NumberField MeasureTheory Matrix
@@ -31,7 +31,7 @@ theorem kerBig_norm_le_thetaKO : ∀ {D : D7} {T : Type} {L : LevCh D T} {sc : C
   have h1 := W.om_is (.chi i (j + 1)) (show (↑i + 1 ≤ D.R.m ∧ ↑j + 1 ≤ D.R.m) by omega)
   have h2 := W.om_is (.mu t (i + 1) j) (show (↑i + 1 ≤ D.R.m ∧ ↑j + 1 ≤ D.R.m) by omega)
   obtain ⟨ω₂, χa, χb, hω₂, hadj⟩ := _root_.GlobalTheory.AdjSwap.weil_adjoint_negSource W.ψ W.ψ_std _ _ _ _ _ h2
-  obtain ⟨ω', χ, χ', c, hω', hc, hbox⟩ := GlobalTheory.T.seesaw_oneSource_orthogonalSumTargets W.ψ W.ψ_std _ _ _ _ _ _ _ _ ω₂ h1 hω₂
+  obtain ⟨ω', χ, χ', c, hω', hc, hbox⟩ := _root_.GlobalTheory.SeesawSumTarget.seesaw_sum W.ψ W.ψ_std _ _ _ _ _ _ _ _ ω₂ h1 hω₂
   let S := G.V (.grid (↑i + 1) (↑j + 1))
   let A := G.V (.grid (↑i) (↑j + 1))
   let Bs := G.V (.grid (↑i + 1) ↑j)

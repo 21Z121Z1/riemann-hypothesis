@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CuspFormConjugat
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularFormCoeffSeqLinearStructure
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RankinDirichletSeriesIdentityHecke
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TwistedLvalueNeZeroEdge
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoeffEisensteinSeriesTwistedHeckeUHeckeVStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoeffEisensteinSeriesTwistedHeckeUHeckeV
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoeffEisensteinSeriesTwistedQExpansionDouble
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DepletedCuspEigenformHeckeRelations
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RankinMeanSquareCuspForm
@@ -128,7 +128,7 @@ theorem rankin_values_at_zero : ∀ (e N l : ℕ) (χ θ : DirichletCharacter �
     have hθl : ∀ y : ℤ, ch θ ((l : ℤ) * y) = ch θ (l : ℤ) * ch θ y := by
       intro y; simp only [ch]; push_cast; exact map_mul θ _ _
     intro n hn
-    have := (GlobalTheory.T.coeffEisensteinSeriesTwisted_heckeU_heckeV e l c₀ (ch θ (l : ℤ)) (ch ψ) (ch θ) hl).1 hψ0 hθl n hn
+    have := (_root_.GlobalTheory.eis_U_V e l c₀ (ch θ (l : ℤ)) (ch ψ) (ch θ) hl).1 hψ0 hθl n hn
     simpa [ch] using this
 
   have hI : ∀ s : ℝ, 0 < s →

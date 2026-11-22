@@ -21,7 +21,7 @@ import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ValueAtOrigi
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsUniqueThetaConst
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.DenseTorsionAndEqOne
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ExistsIsGenOfInvariant
-import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformizationEndomorphismCalculusStatement
+import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformizationEndomorphismCalculus
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.RosatiAdjointAbelianPartAndClassifyingMapLinear
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExpansionPullbackSectionEndomorphismStatement
 open CategoryTheory CategoryTheory.Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry IsLocalRing
@@ -342,7 +342,7 @@ theorem exists_pull_val : LL → AllUF fun {R} _ _ {I} {D} {A} {G} _ _ U F _ _ =
     rfl α hα hαn t t' s s' ht ht' htt κ hκ
   refine ⟨s', fun χ b z J hJ => ?_⟩
   obtain ⟨g, rfl⟩ := (gt_onto_divisible_kernel hL R I hI D F).1 b
-  obtain ⟨g', hg', -⟩ := (T.uniformizationEndomorphism_calculus hL R I hI D A G hG U F E E E).1 g
+  obtain ⟨g', hg', -⟩ := (_root_.GlobalTheory.EndCalc.end_calculus hL R I hI D A G hG U F E E E).1 g
   obtain ⟨w', hw'⟩ := (coef_basic R D.toPre F ν g).1
   obtain ⟨w, hw, hv⟩ := exists_gen D.toPre.P.isLB (φ' := DegPre.lineφ D.toPre F g'.b) (ε' := DegPre.lineε 1)
     (fun V _ h => by

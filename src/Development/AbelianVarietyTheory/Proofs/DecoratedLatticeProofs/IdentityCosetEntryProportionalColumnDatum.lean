@@ -2,8 +2,8 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PhiTopAgree
 import Formalism.LocalToGlobal.Columns.ColumnsProofs.ChainCounts
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnfoldingIntegralEqFiniteSumOverNumberField
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SymLevelTestFunctionsAgreeRationalPointsStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ResiduesOfCompletionAtPrimeWithUniformizerStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SymLevelTestFunctionsAgreeRationalPoints
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ResiduesOfCompletionAtPrimeWithUniformizer
 
 open NumberField IsDedekindDomain MeasureTheory ValuativeRel Matrix Formalism.BasicNotions Formalism.HermitianLatticesTheory Formalism.L2.DIV Formalism.L2.Col GlobalTheory.SplitWeil GlobalTheory.RootEx GlobalTheory.StepData GlobalTheory.SymChain GlobalTheory.SymBridge
 
@@ -198,7 +198,7 @@ theorem omPhi_one {X : Fields} {Pr : Primes X} {R : Ranks} (Ch : Chars X Pr R.m)
 theorem entry_agree : ∀ (X : Fields) (Pr : Primes X) (R : Ranks) (Ch : Chars X Pr R.m) (sel : HeightOneSpectrum (𝓞 X.F) → HeightOneSpectrum (𝓞 X.E)) (S₀ : Set ℕ) (mu : Tup X.F X.E X.K S₀) (cst : LocCst X (rowSG Pr sel mu)) (σ₀ : X.K →+* ℂ) (P : rowSG Pr sel mu) (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] (ι : X.E →+* k) (s : ℕ) (S : SymData k s R.k) [MeasurableSpace k] [BorelSpace k] (ν : Measure k), IsUnitVol ν → AtType Ch sel mu cst σ₀ P ι S → EntryAgree Ch sel mu cst σ₀ P ι S ν := by
   intro X Pr R Ch sel S₀ mu cst σ₀ P k _ _ _ _ ι s S _ _ ν hν hA
   intro j c h e' e he' he
-  obtain ⟨-, -, -, -, hq, hu, -, -⟩ := GlobalTheory.T.residues_of_completionAtPrimeWithUniformizer X.E k P.1 (qOf P.1) ι S.ϖ hA.tie.compl S.unif
+  obtain ⟨-, -, -, -, hq, hu, -, -⟩ := _root_.GlobalTheory.SymBridge.ComplRes.residues X.E k P.1 (qOf P.1) ι S.ϖ hA.tie.compl S.unif
   haveI := hν.1
   have hm := hA.steps
   have hdeep := hA.deep
@@ -224,7 +224,7 @@ theorem entry_agree : ∀ (X : Fields) (Pr : Primes X) (R : Ranks) (Ch : Chars X
   have hf : (fun a => (e a).val) = xPos := funext he
   have hE' : IsOrd (yPos xPos (R.N j)) E' := hf' ▸ hE'0
   have hE : IsOrd (yPos xPos (R.N (j + 1))) E := hf ▸ hE0
-  have hΦE := GlobalTheory.T.symLevelTestFunctions_agree_rationalPoints X.E X.K k P.1 (qOf P.1) ι σ₀ (psi0P Ch P.1) (chiP Ch P.1) s R.k S hA.tie
+  have hΦE := _root_.GlobalTheory.SymBridge.PhiAgreeProof.phiAgree X.E X.K k P.1 (qOf P.1) ι σ₀ (psi0P Ch P.1) (chiP Ch P.1) s R.k S hA.tie
     R.t j (c + 1) (by omega) (R.N j) (cOf R j) (R.N (j + 1)) (cOf R (j + 1)) rfl rfl hcj hcj1 E' E hE' hE
   have hpsi : ∀ a, IntAt P.1 a → (S.ψ (ι (a / (qOf P.1 : X.E))) : ℂ) = σ₀ (cst.psi P (a / (qOf P.1 : X.E))) := by
     intro a ha

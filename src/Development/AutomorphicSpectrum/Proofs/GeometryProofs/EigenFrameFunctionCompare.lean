@@ -13,7 +13,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapFromSpecStalk
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapStalkMap
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrameAtComponentPoint
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AffineChartBundleSections
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.VectorsAtComplexPointStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.VectorsAtComplexPoint
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PairFramesOnSet
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PullbackFramesComplexPoint
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
@@ -84,7 +84,7 @@ theorem extendsUnitAt_resolution : ∀ (E : Type) [Field E] [NumberField E] [IsC
   obtain ⟨hV₁, hV₂⟩ := hval f (yy ≫ Y.j) u₁ u₂ hyf hspec hu₁ hu₂
   choose a₁ ha₁ using fun i => exists_sameVec_left Y yy (u₁ i)
   choose a₂ ha₂ using fun i => exists_sameVec_left Y yy (u₂ i)
-  have hfr₀ : IsFramed Set.univ τ σ yy a₁ a₂ := GlobalTheory.T.vectors_at_complex_point E H D l Xo c O β Y τ σ yy a₁ a₂ u₁ u₂ hys ha₁ ha₂ hE₁ hE₂
+  have hfr₀ : IsFramed Set.univ τ σ yy a₁ a₂ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.isFramed_of_model E H D l Xo c O β Y τ σ yy a₁ a₂ u₁ u₂ hys ha₁ ha₂ hE₁ hE₂
   have h₁ := (hk hW') yy a₁ a₂ u₁ u₂ hyj hys ha₁ ha₂ hu₁ hu₂
   have hqA : ∀ q : Cpt (Z.ξ₀ ≫ Y.j), q.1 = centre (yy ≫ Y.j) → q.1 ∈ A := fun q hq => by
     rw [hq, hyf, ← SetLike.mem_coe, ← hA.range_fromSpec]

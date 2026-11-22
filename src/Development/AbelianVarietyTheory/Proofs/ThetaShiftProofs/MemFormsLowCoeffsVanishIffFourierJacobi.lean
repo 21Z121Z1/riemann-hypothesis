@@ -73,7 +73,7 @@ theorem coefFn_eq_zero_of_fj (X : Data E r) (cu : CuspFD X ρ) (hbas : ∃ bs, I
   have hb : IsZBasis X cu (zBas X cu) := Classical.epsilon_spec hbas
   have hdom : ∀ u, zAct X cu u x ∈ X.dom := fun u =>
     zAct_mem_dom X cu (zBas_skew X cu hbas) u x hx
-  obtain ⟨L, hL1, hL2, hL3⟩ := GlobalTheory.T.cuspFlow_eq_torusAction E r ρ X cu hb η hηΛ
+  obtain ⟨L, hL1, hL2, hL3⟩ := _root_.GlobalTheory.CuspFlow.flow_eq_zAct E r ρ X cu hb η hηΛ
   set ν : X.Ψ → ℝ := fun τ => (τ.1 (hq χ η)).re with hν
   set g : (Fin (nZ X ρ) → ℝ) → ℂ := fun t => P (zAct X cu t x) with hg
   have hgc : Continuous g := hsec.1.continuousOn.comp_continuous (continuous_zAct X cu x) hdom

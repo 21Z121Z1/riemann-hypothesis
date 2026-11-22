@@ -8,9 +8,9 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SeriesEqZeroOfVa
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PowerSeriesEqOfCongruentValuesAtPrimitiveRoots
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsIntegralOfNormLeOne
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TruncatedShiftedSeriesEqIntegralPolyCombination
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CharacterTwistedSumCongrGaussSumDiracStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AmiceRiemannSumCongrDiracCoefficientsStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TeichmullerDecompositionDirichletTwistedPowerStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CharacterTwistedSumCongrGaussSumDirac
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AmiceRiemannSumCongrDiracCoefficients
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TeichmullerDecompositionDirichletTwistedPower
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPrimitiveCharacterTwistStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormGaussSumModPrimePowerLeHalfPowerStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaussSumModPrimePowerMulInvEqPrimePow
@@ -210,7 +210,7 @@ theorem mellin_comp (l : ℕ) [Fact l.Prime] (c : Coef l) (F : PowerSeries (Qbar
   have hmono : ∀ {i j : ℕ}, i ≤ j → ‖(l : Qbar l) ^ j‖ ≤ ‖(l : Qbar l) ^ i‖ := fun h => by
     rw [norm_pow, norm_pow]; exact pow_le_pow_of_le_one (norm_nonneg _) hl1 h
   choose a haO ha using fun N => _root_.GlobalTheory.KZ.Cmp.tval_eq_sum_pow_of_integral l c F N hF
-  choose ε t hε hεr hεc using fun R j => GlobalTheory.T.teichmuller_decomposition_dirichlet_twisted_power l φ e R j hl2
+  choose ε t hε hεr hεc using fun R j => _root_.GlobalTheory.TeichDec.teich l φ e R j hl2
   have hεO : ∀ R j, ε R j ∈ c.O := fun R j => (hε R j).elim (fun h => h ▸ zero_mem _) (hc _)
   have hF1 : ∀ n, ‖F.coeff n‖ ≤ 1 := fun n => FirstDer.norm_le_one_of_mem c (hF n)
   have ha1 : ∀ N j, ‖a N j‖ ≤ 1 := fun N j => FirstDer.norm_le_one_of_mem c (haO N j)
@@ -230,7 +230,7 @@ theorem mellin_comp (l : ℕ) [Fact l.Prime] (c : Coef l) (F : PowerSeries (Qbar
       refine mul_le_mul_of_nonneg_left ?_ (norm_nonneg _)
       rw [norm_pow (l : Qbar l)]
       exact pow_le_pow_left₀ (norm_nonneg _) hy r
-    · have h1 := GlobalTheory.T.amiceRiemannSum_congr_dirac_coefficients l φ e F (a N) N r ξ hr (by omega) hF1 (ha1 N) (ha N) hξ
+    · have h1 := _root_.GlobalTheory.KZ.Cmp.RiemannDirac.rSum_cg l φ e F (a N) N r ξ hr (by omega) hF1 (ha1 N) (ha N) hξ
       unfold Cg at h1
       have e1 : (l : Qbar l) ^ r * ∑ j ∈ Finset.range N, a N j * ε N (d * j) * ((1 + (l : Qbar l)) ^ e) ^ (t N (d * j)) -
           (d : Qbar l) ^ e * φ (d : ZMod l) * rSum φ e F r ξ =
@@ -264,7 +264,7 @@ theorem mellin_comp (l : ℕ) [Fact l.Prime] (c : Coef l) (F : PowerSeries (Qbar
     refine hA _ _ _ (l ^ (3 * k)) (l ^ (3 * (k + 1)) + (k + 1)) _ (GlobalTheory.AmiceDist.norm_sub_one_le hζ1) ?_ fun N hN => ?_
     · exact (mul_le_of_le_one_left (by positivity) hg).trans
         ((GlobalTheory.AmiceDist.norm_sub_one_pow_three_le hζ1).trans (hmono (by omega)))
-    · have h1 := GlobalTheory.T.characterTwistedSum_congr_gaussSum_dirac l F (a N) N (k + 1) z ψ (by omega) (by omega) hF1 (ha N) hz hψ
+    · have h1 := _root_.GlobalTheory.KZ.Cmp.ChD.chSum_gauss l F (a N) N (k + 1) z ψ (by omega) (by omega) hF1 (ha N) hz hψ
       unfold Cg at h1
       have e2 : ∑ j ∈ Finset.range N, a N j * ε N (d * j) * ζ ^ (t N (d * j)) =
           ψ⁻¹ (d : ZMod (l ^ (k + 1))) * ∑ j ∈ Finset.range N, a N j * ψ⁻¹ (j : ZMod (l ^ (k + 1))) := by

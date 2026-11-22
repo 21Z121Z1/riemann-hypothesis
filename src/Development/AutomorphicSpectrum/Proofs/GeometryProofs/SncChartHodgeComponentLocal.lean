@@ -18,7 +18,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolomorphicDiscOver
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BoundaryDiscMapEmbeddingFixed
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeTangentVectorsAffineOpenStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolomorphicDiscInAffineOpen
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianMapTangentCoordinatesStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianMapTangentCoordinates
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.UnLocal
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalRingPointsExistsUnique
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField Matrix Filter Topology
@@ -130,7 +130,7 @@ theorem exists_bdryChart_at : Top.Given → ∀ (E : Type) [Field E] [NumberFiel
   obtain ⟨θ, hθ⟩ : ∃ θ : Γ(𝔐.X, W) →+* C.R, spMap θ = h := ⟨(Spec.preimage h).hom, Spec.map_preimage _⟩
   subst hθ
   obtain ⟨mX, -⟩ := GlobalTheory.ObjMaps.exists_sab_comp mW mC
-  obtain ⟨x, hx⟩ := GlobalTheory.T.abelian_map_tangent_coordinates E H 𝔐.X 𝔐.t Γ(𝔐.X, W) hW.fromSpec N v C.R C.t θ mX C.g C.M htan
+  obtain ⟨x, hx⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PeriodCoord.exists_coords E H 𝔐.X 𝔐.t Γ(𝔐.X, W) hW.fromSpec N v C.R C.t θ mX C.g C.M htan
   have hpt : ∀ z ∈ Metric.ball (0 : Fin n → ℂ) 1, spMap (C.ψ z) ≫ spMap θ ≫ hW.fromSpec =
       p (((ρ₁ * ρ₂ : ℝ) : ℂ) • z) := fun z hz => by
     rw [← Category.assoc, hC z hz, hψp _ (smul_mem_ball hρ₂ hρ₂' hz), smul_smul]

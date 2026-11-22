@@ -6,7 +6,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AmplePt
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.GlobalFnsHolds
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsCechDataPullbackOfLineBundleOnOpen
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.GeneratorIsoExtendFromOpenContainingChartsStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.GeneratorIsoExtendFromOpenContainingCharts
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsGlueRigidifiedPartialLineBundles
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -73,7 +73,7 @@ theorem exists_glue : ∀ (S : Scheme.{0}) (I : Type) (U : I → S.Opens) (A : O
   obtain ⟨L, hL, hLr, hLi⟩ := _root_.GlobalTheory.PartialBundleGlue.exists_glue A.left S A.hom e I U N he (eq_one_of_section A hA he) hU
     (fun i => (hN₁ i).trans (TopologicalSpace.Opens.ext (Set.ext (hR i)))) hN₂
     (fun i => by
-      refine (GlobalTheory.T.generator_iso_extend_from_open_containing_charts S (U i).toScheme (U i).ι).1 _ (fun k s hs => ?_) ?_
+      refine (_root_.GlobalTheory.GenPush.gen_iso_of_charts_le_range S (U i).toScheme (U i).ι).1 _ (fun k s hs => ?_) ?_
       · have h₁ := (hR i _).1 (hNU i _ (mem_pull.1 hs))
         rw [← Scheme.Hom.comp_apply, he] at h₁
         exact ⟨⟨s, h₁⟩, rfl⟩
@@ -86,7 +86,7 @@ theorem exists_glue : ∀ (S : Scheme.{0}) (I : Type) (U : I → S.Opens) (A : O
     (fun i j => by
       have : IsOpenImmersion (a i j) :=
         MorphismProperty.of_isPullback (P := @IsOpenImmersion) (hB i j).flip (oi j)
-      refine (GlobalTheory.T.generator_iso_extend_from_open_containing_charts A.left (B i j) (a i j ≫ ψ i)).2 _ _ (fun k l x hx => ?_) ?_
+      refine (_root_.GlobalTheory.GenPush.gen_iso_of_charts_le_range A.left (B i j) (a i j ≫ ψ i)).2 _ _ (fun k l x hx => ?_) ?_
       · obtain ⟨y, hy⟩ := hNU i k hx.1
         obtain ⟨y', hy'⟩ := hNU j l hx.2
         obtain ⟨z, hz, -⟩ := Scheme.exists_preimage_of_isPullback (hB i j) y y' (hy.trans hy'.symm)

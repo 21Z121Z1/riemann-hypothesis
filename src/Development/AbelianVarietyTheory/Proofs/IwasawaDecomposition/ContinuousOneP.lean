@@ -64,7 +64,7 @@ attribute [local instance 100] LieRing.ofAssociativeRing in
 theorem glRel_derEnd (hθ : IsInfFam θ) (V : HSp D) (τ : D.what₂.Tau) : Formalism.REAL.GlRel fun a b : Fin V.rank =>
     GlobalTheory.Mem.RealTranslate.derEnd (V := V) hθ τ (Matrix.single a b 1) := by
   have R := (_root_.GlobalTheory.SmoothForms.RealPts.realPoints D).2 θ hθ V
-  obtain ⟨P, Q, hPQ, h⟩ := GlobalTheory.T.unitary_lie_generators_rep _ _ (R.1 τ).1 (R.1 τ).2
+  obtain ⟨P, Q, hPQ, h⟩ := _root_.GlobalTheory.UnitaryLieComplexification.glRel_and_span _ _ (R.1 τ).1 (R.1 τ).2
   have hG := (h _ (fun X => GlobalTheory.SmoothForms.opInf R (atPlace V τ X)) (GlobalTheory.SmoothForms.opAt_add R τ)
     (GlobalTheory.SmoothForms.opAt_smul R τ) (GlobalTheory.SmoothForms.opAt_bracket R τ)).1
   have e : SmFun θ V = GlobalTheory.SmoothForms.SmF θ V := Submodule.ext fun φ => GlobalTheory.SmoothForms.smooth_iff R φ

@@ -6,11 +6,11 @@ import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HMatMul
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.PeriodsLactSymplectic
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.WeilActionPreservesThetaAndInnerProduct
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.GaussRMulFactor
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SymplecticCharacterRealFinitePointsMatchStatement
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RealPointsClassicalModelRealVectorSpaceStatement
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaFunctionSpaceHeisenbergLawsStatement
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RationalUnitaryGroupStructureStatement
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdelicZakThetaExistsUniqueStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SymplecticCharacterRealFinitePointsMatch
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RealPointsClassicalModelRealVectorSpace
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaFunctionSpaceHeisenbergLaws
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RationalUnitaryGroupStructure
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdelicZakThetaExistsUnique
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum Formalism.L2.Pj MeasureTheory IsDedekindDomain NumberField Matrix Complex
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.FD GlobalTheory GlobalTheory.ThFr GlobalTheory.Ker
@@ -44,7 +44,7 @@ theorem realPt_actO (C : Ctx S T) {ga : GL (Fin T.rank) D.host.E} {γ : GA D T} 
     (w : WO S T) :
     C.realPt (actO S T 1 γ w) =
       fun σ k => ((ga : Matrix (Fin T.rank) (Fin T.rank) D.host.E).map σ.1) *ᵥ C.realPt w σ k := by
-  obtain ⟨-, -, -, -, -, -, -, -, -, hact⟩ := GlobalTheory.T.realPoints_classicalModel_realVectorSpace D S T C
+  obtain ⟨-, -, -, -, -, -, -, -, -, hact⟩ := _root_.GlobalTheory.KerReal.real_points D S T C
   funext σ k a
   have he : ∀ z, (σ.1 : D.host.E →+* ℂ) z = conj (tauE D (C.m.e.symm σ) z) := by
     intro z
@@ -68,9 +68,9 @@ namespace GlobalTheory.Ker
 
 theorem Ctx.th_laws : ∀ (D : D7) (S T : HSp D) (C : Ctx S T), ∀ x ∈ C.X.dom, ∀ φ : TF S.rank C.g, SW.IsSB φ → (∀ φ', SW.IsSB φ' → C.Th x (φ + φ') = C.Th x φ + C.Th x φ' ∧ (C.Th x φ = C.Th x φ' → φ = φ')) ∧ (∀ a : ℂ, C.Th x (a • φ) = a • C.Th x φ) ∧ (∀ y : Matrix (Fin S.rank) (Fin T.rank) D.host.E, C.rho (finW S T y) (C.Th x φ) = C.Th x (heisG C.X C.bas (-y) φ)) ∧ ∀ (ga : GL (Fin T.rank) D.host.E) (γ : GA D T), IsRatOf T ga γ → ∀ w, C.Th (lact ga x) (wG C.X C.bas C.idx ga φ) w = C.Th x φ (actO S T 1 γ⁻¹ w) := by
   intro D S T C x hx φ hφ
-  obtain ⟨R, -, -, hadd, hR, -, -, hfin0, -, hact⟩ := GlobalTheory.T.realPoints_classicalModel_realVectorSpace D S T C
-  have hth := GlobalTheory.T.thetaFunction_space_heisenberg_laws D S T C
-  have hzak := GlobalTheory.T.adelicZakTheta_exists_unique D S T C
+  obtain ⟨R, -, -, hadd, hR, -, -, hfin0, -, hact⟩ := _root_.GlobalTheory.KerReal.real_points D S T C
+  have hth := _root_.GlobalTheory.ThetaSpace.theta_space_laws D S T C
+  have hzak := _root_.GlobalTheory.Ker.ZakEx.isZak_Th D S T C
   have hlaws := thR_laws D.host.E T.rank C.X C.g C.q0 C.hr C.bas C.idx S.rank C.sympl C.even
   have hZ : C.IsZak x φ (C.Th x φ) := (hzak x hx φ hφ).1
   have huniq : ∀ ψ, SW.IsSB ψ → ∀ f, C.IsZak x ψ f → f = C.Th x ψ := fun ψ hψ => (hzak x hx ψ hψ).2
@@ -98,14 +98,14 @@ theorem Ctx.th_laws : ∀ (D : D7) (S T : HSp D) (C : Ctx S T), ∀ x ∈ C.X.do
     rw [Pi.smul_apply, hZ.2 w hw, (hlaws x hx φ hφ).2.2.2.2 a, Pi.smul_apply]
   · have hsb := ((heisG_laws D.host.E T.rank C.X C.g C.bas C.idx S.rank C.sympl C.even).2.2.2 (-y) φ hφ).1
     refine huniq _ hsb _ ⟨(hth.2.2 _ hZ.1).2.1 _, fun w hw => ?_⟩
-    obtain ⟨hrat, hfinW, hreal, -⟩ := (GlobalTheory.T.symplecticCharacter_real_finite_points_match D S T C).2.2.2.2.2.2.2 y
+    obtain ⟨hrat, hfinW, hreal, -⟩ := (_root_.GlobalTheory.FormMatch.forms_match D S T C).2.2.2.2.2.2.2 y
     have hw' : IsRealPt (w - (ratW T S yᵀ - finW S T y)) := by
       unfold IsRealPt at hw hreal ⊢
       rw [Matrix.map_sub _ (map_sub (finPart D)), hw, hreal, sub_zero]
     rw [(hth.2.2 _ hZ.1).2.2.2.1 y w hw, hZ.2 _ hw', hsub, hsub, hrat, hfin0 _ hfinW, sub_zero,
       (hlaws x hx φ hφ).2.1 (-y), ZakLaws.embR_neg, ZakLaws.EFR_neg_right]
     simp only [Complex.ofReal_neg, mul_neg, neg_neg, sub_eq_add_neg]
-  · have hq := (GlobalTheory.T.rational_unitary_group_structure D S T C).2.1
+  · have hq := (_root_.GlobalTheory.Ker.Grp.rational_points_and_parts D S T C).2.1
     have hinv : IsRatOf T ga⁻¹ γ⁻¹ := (hq γ γ ga ga hγ hγ).2.1
     have hun : IsUn C.X ga := (hq γ γ ga ga hγ hγ).2.2.2.1
     have hGQ : γ⁻¹ ∈ GQ T := (hq _ _ _ _ hinv hinv).2.2.1

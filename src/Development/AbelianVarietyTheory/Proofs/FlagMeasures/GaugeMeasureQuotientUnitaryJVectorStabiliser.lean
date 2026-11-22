@@ -15,14 +15,14 @@ import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TendstoSublev
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.HermitianNormFibreMeasureEqPolarCoordinates
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsTangentBorelSectionQuadric
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsUnitaryBlockEmbeddingOntoStabiliser
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.HermitianNormFibreMeasureFiniteInvariantStatement
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.HermitianNormFibreMeasureFiniteInvariant
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.InvariantMeasureQuadricMulHaarStabilizer
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.OrthogonalComplementUnitaryEmbeddingConjBlock
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaussianQuadricDensityExistsPosContinuousStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HsDistSectionMulBlockStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaussianQuadricDensityExistsPosContinuous
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HsDistSectionMulBlock
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PolarSqCompare
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BallVolSuccSqStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LintegralGaussianHermitianNormFibreEqDerivStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LintegralGaussianHermitianNormFibreEqDeriv
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsSignatureBlocksOfVectorAndFrame
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BlockPerpEmbeddingOfDiagonalFrame
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RiemannianHaarGaugeTransportBlockModel
@@ -220,7 +220,7 @@ theorem const_eq_one (e : Option (Fin P' ⊕ Fin Q') ≃ (Fin P ⊕ Fin Q)) (he 
   have := i1; have := i2; have := i3; have := i4; have := i5
   have := k1; have := k2; have := k3; have := k4; have := k5
   have hβ : sg (e none) ≠ 0 := sg_ne_zero _
-  have := (GlobalTheory.T.hermitianNormFibreMeasure_finite_invariant P Q fib (sg (e none)) hf hβ).1
+  have := (_root_.GlobalTheory.FibreInvariance.fibre_finite_invariant P Q fib (sg (e none)) hf hβ).1
   obtain ⟨σ, hσ, hσ2⟩ := GlobalTheory.TangentSection.exists_tangent_section P Q P' Q' e
   have hS : ∀ r : ℝ, MeasurableSet {g : UpqT P Q | hsDist g < r ^ 2} := fun r =>
     measurableSet_lt continuous_hsDist.measurable measurable_const
@@ -300,7 +300,7 @@ theorem const_eq_one (e : Option (Fin P' ⊕ Fin Q') ≃ (Fin P ⊕ Fin Q)) (he 
     have htip : 0 < t⁻¹ := inv_pos.2 htp
     have ht2 : 1 < t ^ 2 := by nlinarith
     have ht2p : 0 < t ^ 2 := pow_pos htp 2
-    obtain ⟨δ, hδ0, hδ⟩ := GlobalTheory.T.ptSq_add_hsDist_comparable_hsDist_mul P Q P' Q' e j hj (t ^ 2) ht2
+    obtain ⟨δ, hδ0, hδ⟩ := _root_.GlobalTheory.SectionHsCompare.hsDist_section_mul_block P Q P' Q' e j hj (t ^ 2) ht2
     have hm : 0 < min δ 1 / 2 := half_pos (lt_min hδ0 one_pos)
     have hev : ∀ᶠ r in 𝓝[>] (0 : ℝ), r ^ 2 < min δ 1 / 2 := by
       have hc : Tendsto (fun r : ℝ => r ^ 2) (𝓝[>] 0) (𝓝 0) := by
@@ -389,7 +389,7 @@ theorem quot_formula (e : Option (Fin P' ⊕ Fin Q') ≃ (Fin P ⊕ Fin Q)) (he 
   obtain ⟨g₀, hg₀, hjconj⟩ :=
     GlobalTheory.CompactDualQuot.PerpConj.perp_conj P Q P' Q' e he j₀ hj₀ x₀ A j hx₀ hA
   have hβ : sg (e none) ≠ 0 := sg_ne_zero _
-  obtain ⟨hfin, hinv⟩ := GlobalTheory.T.hermitianNormFibreMeasure_finite_invariant P Q fib (sg (e none)) hf hβ
+  obtain ⟨hfin, hinv⟩ := _root_.GlobalTheory.FibreInvariance.fibre_finite_invariant P Q fib (sg (e none)) hf hβ
   obtain ⟨κ, hκ⟩ := GlobalTheory.QuadricHaar.quadric_haar P Q P' Q' (sg (e none)) (baseVec e) j₀
     (fib (sg (e none))) μ μ' hj₀c hj₀r hfin (GlobalTheory.RealPlaceCompare.ae_qf hf _) hinv hμ hμ'
   have := hμ'
@@ -541,7 +541,7 @@ theorem gauge_quotient : ∀ (n : ℕ) (ε : Fin (n + 1) → Bool) (ε' : Fin n 
   have hfun : (fun t : ℝ => ∫ y in {y : Sp P Q | qf y ≤ t}, gaussSp y) =
       fun t => ∫ y in {y : Fin (n + 1) → ℂ | qEps ε y ≤ t}, gauss y :=
     funext fun t => integral_sublevel hf t
-  have hder := ((GlobalTheory.T.gaussianQuadricDensity_exists_pos_continuous (n + 1) ε).1 (sg (e none)) hβ).1
+  have hder := ((_root_.GlobalTheory.GaussMean.Density.gaussDens_spec (n + 1) ε).1 (sg (e none)) hβ).1
   rw [← hfun] at hder
   have hL := lintegral_map_symm hf (ENNReal.ofReal c) φ
   calc ENNReal.ofReal c * ∫⁻ g, ENNReal.ofReal (gauss ((uMat g)⁻¹ *ᵥ x₀)) * b g ∂(Formalism.REAL.muG ε)
@@ -554,7 +554,7 @@ theorem gauge_quotient : ∀ (n : ℕ) (ε : Fin (n + 1) → Bool) (ε' : Fin n 
           ∂((ENNReal.ofReal c' • Formalism.REAL.muG ε').map hf'.equiv.symm)) ∂(fib (sg (e none))) := hQ
     _ = ∫⁻ y, ENNReal.ofReal (gaussSp y) ∂(fib (sg (e none))) := lintegral_congr_ae hin
     _ = ENNReal.ofReal (2 ^ (n + 1) * gaussDens ε (GlobalTheory.GaussMean.sgn ℝ s)) := by
-        rw [GlobalTheory.T.lintegral_gaussian_hermitianNormFibre_eq_deriv P Q fib (sg (e none)) _ hfib hβ hder, hes,
+        rw [_root_.GlobalTheory.GaussFibre.gauss_fibre P Q fib (sg (e none)) _ hfib hβ hder, hes,
           GlobalTheory.Mem.Vol.Scale.Sorts.add_eq f]
 
 end GlobalTheory.GaugeQuot

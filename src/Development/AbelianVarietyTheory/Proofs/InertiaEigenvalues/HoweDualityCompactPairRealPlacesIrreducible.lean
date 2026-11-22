@@ -13,7 +13,7 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TranslateMe
 import Development.AbelianVarietyTheory.Definitions.Foundations.ForallEventuallyFinLocIff
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.RealLowestKTypeCoeffSquareIntegrable
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HoweDualityCompactPairPolynomialFockAllRealPlace
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RealPointsActFockByRealComponentsBasisStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RealPointsActFockByRealComponentsBasis
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasDerivAtFockVectorsTargetLieRealPlace
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpanConjUnitaryLieAlgebraRealPlaceEqTop
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix
@@ -48,7 +48,7 @@ theorem howe_irr : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 T : Type) 
   classical
   have hC := hG.core
   obtain ⟨-, -, hinj⟩ := GlobalTheory.CoefActIo.thetaVector_laws (i := i) hC t
-  obtain ⟨w, BS, r, hact, hU, hsurj, hε⟩ := GlobalTheory.T.realPoints_act_fock_by_realComponents_basis D G Pl0 T A Ks R F hG hFull i t
+  obtain ⟨w, BS, r, hact, hU, hsurj, hε⟩ := _root_.GlobalTheory.RealPtsFock.real_points_fock D G Pl0 T A Ks R F hG hFull i t
   set ρ' : ↥(GinfC (Vc D i)) →* Module.End ℂ (R.cV i).W := (R.cV i).ρ.comp (GinfC (Vc D i)).subtype with hρ'
   have eqv : ∀ ψ : (R.cV i).W →ₗ[ℂ] PolF D (Wc D i).rank (Vc D i).rank,
       (∀ u ∈ GinfC (Vc D i), ∀ w', R.ptP i t (ψ ((R.cV i).ρ u w')) = R.ωP i t (u, 1) (R.ptP i t (ψ w'))) →

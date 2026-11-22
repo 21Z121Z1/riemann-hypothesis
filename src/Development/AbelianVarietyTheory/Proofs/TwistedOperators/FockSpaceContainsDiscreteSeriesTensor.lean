@@ -3,13 +3,13 @@ import Formalism.SharpRestriction.Divisibility.SchurIrreducible
 import Formalism.LocalToGlobal.BesselHermitianTheta.DefsReal
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsFockIPOfFockData
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockActionPowAnalyticVectorNormLe
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockDerivedActionsTensorMembersStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjectorOfIntegrableDiscreteSeriesCoefficientStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockDerivedActionsTensorMembers
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjectorOfIntegrableDiscreteSeriesCoefficient
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryHarishChandraDiscreteSeries
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockPolynomialsLocallyFiniteRationalWeights
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockOperatorsLieRepresentationCommute
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesIntegrableCoefficientProjectorStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockModelDualPairCasimirApplyStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesIntegrableCoefficientProjector
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockModelDualPairCasimirApply
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LowestKTypesJointHarmonicShape
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CasimirNumberIdentityDualPair
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EmbedsOfLowestType
@@ -142,7 +142,7 @@ theorem proj_casimir₁ (F : FockData T0 T1 T2) (hF : Continuous F.emb) (D : DSR
     refine HasDerivAt.congr_of_eventuallyEq h2 (Filter.Eventually.of_forall fun u => ?_)
     exact (congrArg (fun L => L (D.ι y)) (hio1 (T1.expt (u • Y)))).symm
   have h := (GlobalTheory.T.derived_actions_adjoint_casimir_symmetric p q T1 (fockU₁ F hF) _ _ (fockAct1 p q r s) D.HK.act F.ι _
-    (GlobalTheory.T.fock_derived_actions_tensor_members p q r s T0 T1 T2 F).2.1 hd).2 Q v
+    (_root_.GlobalTheory.FockEmbExp.fock_derived p q r s T0 T1 T2 F).2.1 hd).2 Q v
   simp only [LinearMap.comp_apply, ContinuousLinearMap.coe_coe, hχ, map_smul, hio2] at h
   rw [hsa, inner_smul_left, hsa]
   refine h.trans ?_
@@ -165,7 +165,7 @@ theorem exists_embedding₂ (F : FockData T0 T1 T2) (hF : Continuous F.emb) (hrs
       (E (fockAct2 p q r s Y Q)) 0 := by
     intro Y hY Q
     have h2 := (P.restrictScalars ℝ).hasFDerivAt.comp_hasDerivAt (0 : ℝ)
-      ((GlobalTheory.T.fock_derived_actions_tensor_members p q r s T0 T1 T2 F).2.2 Y hY Q)
+      ((_root_.GlobalTheory.FockEmbExp.fock_derived p q r s T0 T1 T2 F).2.2 Y hY Q)
     exact HasDerivAt.congr_of_eventuallyEq h2 (Filter.Eventually.of_forall fun u => hcomm _ _)
   have hadjE := (GlobalTheory.T.derived_actions_adjoint_casimir_symmetric r s T2 (fockU₂ F hF) _ _ _ _ E E hE hE).1
   obtain ⟨A, f, Eb, hfs, hEb, hEf, hf⟩ := GlobalTheory.T.exists_unitary_module_quotient_of_invariant_inner r s (polMod₂ p q r s) F.H E hadjE
@@ -265,12 +265,12 @@ theorem arii_of (X : ProvA) (hD1 : DiscreteSeriesBlattner X) (hD3 : DiscreteSeri
   set F := X.fock p q r s
   set D := X.ds p q lam
   set D' := X.ds r s lam'
-  have hF := (GlobalTheory.T.fock_derived_actions_tensor_members p q r s _ _ _ F).1
+  have hF := (_root_.GlobalTheory.FockEmbExp.fock_derived p q r s _ _ _ F).1
   obtain ⟨hone, hcas, -⟩ := hD1 p q lam hpar
   obtain ⟨hone', hcas', -⟩ := hD1 r s lam' hpar'
   obtain ⟨v, hv⟩ := exists_unitHW D hone
   have hint := (hD3 p q lam hpar _ hgap le_rfl v hv).1
-  obtain ⟨hsa, hPP, hio⟩ := (GlobalTheory.T.projector_of_integrable_discreteSeries_coefficient p q _ D v hv.2 hint).2 (fockU₁ F hF)
+  obtain ⟨hsa, hPP, hio⟩ := (_root_.GlobalTheory.CoefProjector.projector_of_integrable_coefficient p q _ D v hv.2 hint).2 (fockU₁ F hF)
   have hm1 : mcoef D v 1 = 1 := by
     simp [mcoef, inner_self_eq_norm_sq_to_K, hv.2]
   have hid : ∀ x, opE (X.grp p q) (fockU₁ F hF).π (eFun D v)
@@ -290,7 +290,7 @@ theorem arii_of (X : ProvA) (hD1 : DiscreteSeriesBlattner X) (hD3 : DiscreteSeri
     (((h5 r s hrs).1 D'.U ⟨D'.nontriv, D'.irred⟩).2.2 D'.HK D'.ι ⟨D'.ι_inj, D'.ι_range, D'.der⟩).2
   obtain ⟨j, hj1, hj2, y₀, hy₀⟩ := exists_embedding₂ F hF hrs h7 h8 D' lam' hpar' hgap' hone' hcas'
     hirr P (fun h x => by rw [hP, hP]; exact opE_comm F _ h x) hid Φ hΦ.2.2.1.2 h0 (by
-      rw [GlobalTheory.T.fockModel_dualPair_casimir_apply, map_sub, map_sub, map_smul, map_smul,
+      rw [_root_.GlobalTheory.fock_casimir_apply, map_sub, map_sub, map_smul, map_smul,
         proj_casimir₁ F hF D v _ (hcas v) P hsa hio', ← sub_smul, hnum]
       push_cast
       rfl)
@@ -311,7 +311,7 @@ theorem arii_of (X : ProvA) (hD1 : DiscreteSeriesBlattner X) (hD3 : DiscreteSeri
 theorem fock_contains_tensor : ∀ X : ProvA, admH1 X → admH2 X → DiscreteSeriesBlattner X → DiscreteSeriesPositivity X → admQ5 X →
     CoverHaarIntegration X → admQ7 → admQ8 → ArchimedeanRallisFirst X → ArchimedeanRallisSecond X := by
   intro X _ _ hD1 hD2 h5 h6 h7 h8 h1
-  have hD3 := GlobalTheory.T.discreteSeries_integrableCoefficient_projector X hD2 h6
+  have hD3 := _root_.GlobalTheory.DSProj.discreteSeriesHighestVector_of_positivity X hD2 h6
   refine ⟨fun t al be ga de h => ?_, fun t al be ga de h => ?_⟩
   · obtain ⟨hA, -, hG2, hG3⟩ := id h
     obtain ⟨⟨hp1, hp2, -⟩, -⟩ := _root_.GlobalTheory.lowestKTypes_jointShape t al be ga de hA

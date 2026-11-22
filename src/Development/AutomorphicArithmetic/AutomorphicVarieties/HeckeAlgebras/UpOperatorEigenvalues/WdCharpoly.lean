@@ -35,7 +35,7 @@ theorem comp_ex {L : Type} [Field L] [NumberField L] [IsCMField L] {n : ℕ} {σ
     {w : Plc L} (hw : IsSplitAt w) :
     ∃ τ : SmIrr (GLw n w), IsCompAlong σ (locU n w) ((cLoc w).comp (locU n w).subtype) τ.ρ := by
   obtain ⟨e, he⟩ := _root_.GlobalTheory.locU_equiv_GL L n w hw
-  obtain ⟨τ, -, -, f, h0, h1, h2⟩ := GlobalTheory.T.exists_admissible_localComponent_definiteUnitary L n ⟨σ, hσ⟩ w
+  obtain ⟨τ, -, -, f, h0, h1, h2⟩ := _root_.GlobalTheory.DefU.LocAdm.exists_admissible_comp L n ⟨σ, hσ⟩ w
   refine ⟨GlobalTheory.InertSatake.transport e τ, (GlobalTheory.InertSatake.transport e τ).irred, f, h0, h1, fun x v => ?_⟩
   have := GlobalTheory.InertSatake.transport_apply e τ x v
   rw [he] at this

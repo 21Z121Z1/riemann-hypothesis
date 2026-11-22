@@ -216,7 +216,7 @@ theorem descends_to_fg_field : ∀ (o Ω : Type) [CommRing o] [Field Ω] [Algebr
     · rw [Category.assoc, hψ₁, Category.assoc, e₁, (hf₁ j).1]
     · rw [Category.assoc, hψ₂, ← Category.assoc, Over.w, Category.assoc, Over.w, hψ₂]
   obtain ⟨hab, hdim⟩ := _root_.GlobalTheory.FieldDescentAb.isAbelianScheme_and_relDim_descend _ K (gen β s).subtype A₁ t.A ψ hG t.isAb
-  obtain ⟨hr, hs, hk⟩ := GlobalTheory.T.rigidified_symmetric_kernelTrivial_descend_fieldExt _ K (gen β s).subtype A₁ t.A ψ L₁ t.L hab hG hL₁ t.isLB hL
+  obtain ⟨hr, hs, hk⟩ := _root_.GlobalTheory.PolDescent.rigidified_sym_kTriv_descend _ K (gen β s).subtype A₁ t.A ψ L₁ t.L hab hG hL₁ t.isLB hL
   have hamp := GlobalTheory.AmpleDescent.relAmple_of_fieldExtension _ K (gen β s).subtype A₁ t.A ψ L₁ t.L hab hG hL₁ t.isLB hL
     t.ample
   letI : Algebra o (gen β s) := (β.codRestrict _ (mem_gen β s)).toAlgebra

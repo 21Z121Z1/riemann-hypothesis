@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsPres
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChernIntegralPresentationIndepStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChernIntegralPolynomialGrowth
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntersectionNumberPolynomial
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HyperplaneTwistGloballyGeneratedStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HyperplaneTwistGloballyGenerated
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChernIntegralEqIntersection
 
 noncomputable section
@@ -20,12 +20,12 @@ theorem chernDegreeComplex : GlobalTheory.Published.ChernDegreeComplex := by
   intro Y Δ L r hr φ hφ
   refine ⟨GlobalTheory.Published.ChernDegreeComplexModel.integrable Y φ hφ, ?_⟩
   obtain ⟨i, hi⟩ := ProjSpace.exists_mem_chart ℂ Y.N (Y.ι (genericPoint ↥Y.X))
-  obtain ⟨M₀, hM₀⟩ := Filter.eventually_atTop.mp (GlobalTheory.T.hyperplane_twist_globally_generated Y i hi 0)
+  obtain ⟨M₀, hM₀⟩ := Filter.eventually_atTop.mp (_root_.GlobalTheory.CompanionTheory.SerreBpf.eventually_basePointFree Y i hi 0)
   obtain ⟨L₀, r₀, n₀, b₀, hL₀, hp₀, hb₀⟩ := hM₀ (M₀ + 1) (by omega)
   have hφ₀ := Weight.isCInf_fsBasis (p := Y.str) (σ := RingHom.id ℂ) hL₀ b₀ hb₀ 1 (by simp)
   obtain ⟨P, -, hP⟩ := _root_.GlobalTheory.CompanionTheory.ChernTwist.chernInt_twist_polynomial Y Δ _ L L₀ r r₀ hr hp₀ φ _ hφ hφ₀
   obtain ⟨Q, hQ⟩ := _root_.GlobalTheory.CompanionTheory.ChernPoly.inter_add_nsmul_polynomial Y Δ (0 + (M₀ + 1) • Y.hyp hi)
-  obtain ⟨M, hM⟩ := Filter.eventually_atTop.mp (GlobalTheory.T.hyperplane_twist_globally_generated Y i hi Δ)
+  obtain ⟨M, hM⟩ := Filter.eventually_atTop.mp (_root_.GlobalTheory.CompanionTheory.SerreBpf.eventually_basePointFree Y i hi Δ)
   have key : ∀ m : ℕ, M ≤ m → P.eval (m : ℝ) = Q.eval (m : ℝ) := by
     intro m hm
     obtain ⟨L', r', ψ, hp', hψ, hψeq⟩ := hP m

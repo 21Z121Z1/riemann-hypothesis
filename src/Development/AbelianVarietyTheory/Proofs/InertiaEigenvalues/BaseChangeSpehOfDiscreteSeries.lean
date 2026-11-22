@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsUnitarisa
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.LocalLanglandsGL
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsNormalisedThetaSub
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SatakeParameterSphericalProductSpehQuotients
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DiscreteAutomorphicRepGLLocalComponentIsUnitarisStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DiscreteAutomorphicRepGLLocalComponentIsUnitaris
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqOfNodupSumMultisetOfEq
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsAlgebraicWeightOfAutomorphicDefiniteUnitar
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BaseChangeDefiniteUnitary
@@ -55,7 +55,7 @@ theorem isUnitarisable_of_isLocComp (H : GlobalTheory.Published.DiscreteSpectrum
   obtain ⟨hd, h1⟩ := hc.loc w ρ σ' hρ hσ'
   obtain ⟨hd', h2⟩ := GlobalTheory.LocGL.isSpeh_one (GlobalTheory.LocGL.IrrGL.of ρ.ρ ρ.smooth ρ.irred)
   obtain ⟨e⟩ := h1.unique h2
-  have hu := GlobalTheory.T.discreteAutomorphicRepGL_localComponent_isUnitarisable E a V hV w σ' hσ'
+  have hu := _root_.GlobalTheory.DiscreteUnit.isUnitarisable_of_isLocCompGL E a V hV w σ' hσ'
   exact isUnitarisable_of_equiv' ((GlobalTheory.LocGL.IrrGL.equivOf ρ.ρ ρ.smooth ρ.irred).trans e).symm hu
 
 theorem hasInfChar_eq_of_sigma {E : Type} [Field E] [NumberField E] [IsTotallyComplex E] {a b : ℕ} {P : CuspSub E a}
@@ -98,7 +98,7 @@ theorem baseChange_speh_of_discreteSeries (H : GlobalTheory.Published.DiscreteSp
     fun i w => (hc i).loc w (ρ i w) (σ i w) (hρ i w) (bc.loc i w)
   have hun : ∀ i w, IsUnitarisable (ρ i w).ρ ∧ IsUnitarisable (σ i w).ρ := fun i w =>
     ⟨isUnitarisable_of_isLocComp H (hpos i).1 (P i) (hPn i) w (ρ i w) (hρ i w),
-      GlobalTheory.T.discreteAutomorphicRepGL_localComponent_isUnitarisable E (N i) (V i) (bc.discrete i) w (σ i w) (bc.loc i w)⟩
+      _root_.GlobalTheory.DiscreteUnit.isUnitarisable_of_isLocCompGL E (N i) (V i) (bc.discrete i) w (σ i w) (bc.loc i w)⟩
   have hm0 : ∀ i τ, m i τ ≠ 0 := fun i τ h0 => by
     have h1 := (bc.inf i τ).1
     rw [h0, Multiset.card_zero] at h1

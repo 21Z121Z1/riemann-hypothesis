@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotrop
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WordAppend
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousMixedSymm
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanDecayOperatorApplyMemAdelicSchwartzStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanDecayOperatorApplyMemAdelicSchwartz
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzContinuousHasDerivAtArchimedeanLin
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralUnitCubeTranslatesSlabPeriodicLeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanSlabOpenUnitCubeHaarPosFiniteStatement
@@ -73,7 +73,7 @@ theorem wordD_mem {f : (κ → AF F) → ℂ} (hf : f ∈ schA F κ) (w : List (
     wordD F w f ∈ schA F κ := by
   induction w with
   | nil => exact hf
-  | cons v w ih => rw [wordD_cons]; exact GlobalTheory.T.archimedeanDecayOperatorApply_mem_adelicSchwartz F κ (Sum.inl v) _ ih
+  | cons v w ih => rw [wordD_cons]; exact _root_.GlobalTheory.ArchDecay.SchAStab.app_mem_schA F κ (Sum.inl v) _ ih
 
 theorem archIn_single (j : Fin (dimA F κ)) (s : ℝ) :
     archIn F κ (Pi.single j s) = fun i => infAd F (s • ubasis F κ j i) := by

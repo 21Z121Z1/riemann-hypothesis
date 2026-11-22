@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AnnihilationOperatorSchroedingerFunctionsDoubled
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchrodingerFunctionLinearThetaFunctions
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicSchwartzSlicePolynomialGaussianOfAnnihilatStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicSchwartzSlicePolynomialGaussianOfAnnihilat
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemFockSpaceOfPolynomialGaussianSlices
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchrodingerThetaEqSchwartzBruhat
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HeckeFormNSOfHeckeForm
@@ -58,7 +58,7 @@ theorem sch_mem_fockA : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ), IsStdChar
     have h := (_root_.GlobalTheory.StdUnn.sch_linear D ψ hψ A B ν 𝓨 hν f f hth hth 0).2.2.2
     rwa [zero_smul, zero_smul] at h
   refine _root_.GlobalTheory.StdUnn.FockSlice.mem_fockA_of_slices D θ hθ B A.rank l sB _ hS
-    (GlobalTheory.T.adelicSchwartz_slice_polynomial_gaussian_of_annihilated D θ hθ B A.rank l sB hsB N _ hS ?_)
+    (_root_.GlobalTheory.StdUnn.Slice.slice_polyGauss D θ hθ B A.rank l sB hsB N _ hS ?_)
   intro L hL
   rw [← (key L).2, hN _ (by rw [List.length_map, hL]), hz]
 

@@ -47,7 +47,7 @@ theorem pair_trivial : ∀ (D : D7) (S T : HSp D) (C : Ctx S T) (hn : T.rank ≤
     ((hgen _ hh0).2).1 ⟨hfr ▸ ht2, fun PP hPP => hfr ▸ ht3 PP hPP⟩
   rw [← hLv] at ht0
   have ht0' := hatA_tens_mono (stdL D.host.E S.rank) (GlobalTheory.SW.Lev.smul_le_idq Lv.𝔪 (conjI Lv.𝔪) C.X.Λ) ht0
-  have hF := GlobalTheory.T.symplecticCharacter_real_finite_points_match D S T C
+  have hF := _root_.GlobalTheory.FormMatch.forms_match D S T C
   set t₀ := actO S T k₀⁻¹ 1 t with ht₀
   set w := actO S T k₀⁻¹ 1 u with hw₀
   have et : t = actO S T k₀ 1 t₀ := (actO_back k₀ t).symm

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsRatioCover
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisationPreimageValueRules
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedOneFormEvaluationRulesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedOneFormEvaluationRules
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry MonoidalCategory CartesianMonoidalCategory MonObj
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.Cris GlobalTheory.DeRham GlobalTheory.CechDR GlobalTheory.CechPer
 attribute [local instance] Over.cartesianMonoidalCategory
@@ -13,8 +13,8 @@ theorem uniformisedOneFormEvaluation_restriction_eq : ∀ (A : Over (Sp ℂ)) [G
   obtain ⟨hopen, -, -, -, -, hmono, -, -, hres, -, -, -⟩ := _root_.GlobalTheory.CechPer.pre_val_rules A g L u
   have hVU : V.1 ≤ U.1 := leOfHom a.unop
   have hzU : z ∈ pre u.ex U.1 := hmono _ _ hVU hz
-  have evV := GlobalTheory.T.uniformisedOneFormEvaluation_rules A g L u V.1 z hz
-  have evU := GlobalTheory.T.uniformisedOneFormEvaluation_rules A g L u U.1 z hzU
+  have evV := _root_.GlobalTheory.CechPer.evForm_rules A g L u V.1 z hz
+  have evU := _root_.GlobalTheory.CechPer.evForm_rules A g L u U.1 z hzU
   have hD : ∀ b : Sec (str A) U.1, fderiv ℂ (val u.ex V.1 (Sec.res (str A) hVU b)) z = fderiv ℂ (val u.ex U.1 b) z := by
     intro b
     apply Filter.EventuallyEq.fderiv_eq

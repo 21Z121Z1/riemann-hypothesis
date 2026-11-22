@@ -4,7 +4,7 @@ import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DualLatticeDegreeNeg
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FrobeniusLatticeDegreeMulP
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FormalGroupActionRingHom
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FormalHermitianActionPairing
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.AlphaBetaAdjointExactStatement
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.AlphaBetaAdjointExact
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.AlphaEquivariantFrobenius
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.BetaEquivariantFrobenius
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FormalDataBaseChange
@@ -416,7 +416,7 @@ theorem locSplit {p : ℕ} [Fact p.Prime] [CharP K p] (F : Family C p d O) (i : 
         am (F.Bi i) p * hw (F.Bi i) p +
         (hw (F.Bi i) p).transpose * bil (F.Bi i).sy 1 1 * hw (F.Bi i) p) fun u => by
       rw [← beta_alpha_apply]
-      exact LinearMap.congr_fun (GlobalTheory.T.alpha_beta_adjoint_exact _ p d O (F.Bi i)).2 u
+      exact LinearMap.congr_fun (_root_.GlobalTheory.CompanionTheory.Ar.Conj.Isotropy.beta_comp_alpha _ p d O (F.Bi i)).2 u
     rw [← neg_eq_zero, ← h0]
     abel
   have inj : ∀ u : Fin d → IsLocalRing.ResidueField (C.v i).valuationSubring,
@@ -441,7 +441,7 @@ theorem locSplit {p : ℕ} [Fact p.Prime] [CharP K p] (F : Family C p d O) (i : 
   simp only [map_add, map_sub, map_mul, map_one, map_zero, hT] at c₁ c₂ c₃ c₄ c₅ c₆
   refine locSplit_of_mats C (F.BK i) p i (Φ r₁) (Φ r₂) (Φ s₁) (Φ s₂) ?_ ?_ ?_
     (intM_map C i _) (intM_map C i _) (intM_map C i _) (intM_map C i _)
-    (fun u => LinearMap.congr_fun (GlobalTheory.T.alpha_beta_adjoint_exact K p d O (F.BK i)).2 u) ?_ ?_ ?_ ?_ ?_ ?_
+    (fun u => LinearMap.congr_fun (_root_.GlobalTheory.CompanionTheory.Ar.Conj.Isotropy.beta_comp_alpha K p d O (F.BK i)).2 u) ?_ ?_ ?_ ?_ ?_ ?_
   · rw [hh]; exact intM_map C i _
   · rw [ha]; exact intM_map C i _
   · rw [hS]; exact intM_map C i _

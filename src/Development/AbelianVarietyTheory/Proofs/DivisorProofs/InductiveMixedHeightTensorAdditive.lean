@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAmbOfIsArithVar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoheightOneIffPointClosureDimProjArith
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedArchIntegralAdditiveAndDiagonalStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedArchIntegralAdditiveAndDiagonal
 open CategoryTheory AlgebraicGeometry TopologicalSpace MvPolynomial
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
 open ReciprocityTheory.ChartRestriction.G.Out (nonzeroLocus)
@@ -13,7 +13,7 @@ theorem recVal_tens_cons : ArchInteg → ∀ (k : Type) [CommRing k] (Y : Scheme
   intro hA k _ Y _ _ q hq e hdim T hT M r hr A B L
   have hN := hq.isNoetherian
   have hfin := (M.div hr).finite_support_mult
-  have hm := (GlobalTheory.T.mixedArchIntegral_additive_and_diagonal hA k Y q hq M r hr).1 e hdim A B L
+  have hm := (_root_.GlobalTheory.MixAdd.mixArch_add_diag hA k Y q hq M r hr).1 e hdim A B L
   have hsupp : ∀ (f : Y → ℝ), (Function.support fun z => ((M.div hr).mult z : ℝ) * f z).Finite := fun f =>
     hfin.subset fun z hz h => hz (by simp [h])
   unfold recVal

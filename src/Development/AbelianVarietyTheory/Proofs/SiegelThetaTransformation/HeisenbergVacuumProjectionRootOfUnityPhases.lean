@@ -12,7 +12,7 @@ import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsHeatZero
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ComplexPhaseCalculusRootOfUnity
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.IsCosetQuadraticPhaseTestFunctionConjCharacterMu
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SchwartzBruhatIntegralGaussianShapeRootOfUnityPh
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SelfDualVacuumGaussianShapeRootOfUnityPhasesStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SelfDualVacuumGaussianShapeRootOfUnityPhases
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.VacuumTensorLatticeFixedRationalHeisenberg
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField Matrix Complex
@@ -55,8 +55,8 @@ theorem ip_conj {φ ψ : Matrix α β ℚ → ℂ} (hφ : IsSB φ) (hψ : IsSB �
   rw [hfun, hc]
 
 theorem ph_ip [DecidableEq β] {φ ψ : Matrix α β ℚ → ℂ} (hφ : PV φ) (hψ : PV ψ) : Ph (ip φ ψ) := by
-  have sφ : Shape φ := (GlobalTheory.T.selfDualVacuum_gaussian_shape_rootOfUnity_phases α β φ).2.1 hφ
-  have sψ : Shape ψ := (GlobalTheory.T.selfDualVacuum_gaussian_shape_rootOfUnity_phases α β ψ).2.1 hψ
+  have sφ : Shape φ := (_root_.GlobalTheory.Phase.VacShape.vacuum_shape α β φ).2.1 hφ
+  have sψ : Shape ψ := (_root_.GlobalTheory.Phase.VacShape.vacuum_shape α β ψ).2.1 hψ
   have sψc : Shape (fun x => conj (ψ x)) := (_root_.GlobalTheory.Phase.shape_conj_chr_mul α β ψ sψ).1
   have spr : Shape (fun x => φ x * conj (ψ x)) := (_root_.GlobalTheory.Phase.shape_conj_chr_mul α β φ sφ).2.2 _ sψc
   exact _root_.GlobalTheory.Phase.ph_haar_of_shape α β _ spr
@@ -95,7 +95,7 @@ theorem proj_phases : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (r 
   have hv' := hv
   unfold IsVac at hv'
   obtain ⟨A, ε, hA⟩ := _root_.GlobalTheory.Phase.vacS_of_isVac E r X g bas idx n hs hn w hw hw1 L hL (stdL E n) hstd v hv
-  obtain ⟨u, hu1, hupv⟩ := (GlobalTheory.T.selfDualVacuum_gaussian_shape_rootOfUnity_phases (Fin n) (Fin g) v).2.2.1 A ε hA
+  obtain ⟨u, hu1, hupv⟩ := (_root_.GlobalTheory.Phase.VacShape.vacuum_shape (Fin n) (Fin g) v).2.2.1 A ε hA
   refine ⟨u, hu1, fun Λ hΛ => ?_⟩
   have H := _root_.GlobalTheory.SW.TensVac.vacua E r X g bas idx n hs hn w hw hw1 L hL 1 Λ hΛ
   obtain ⟨vΛ, hvΛ⟩ := H.1
@@ -120,7 +120,7 @@ theorem proj_phases : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (r 
   · rw [hunit]
     exact isVac_smul hvΛ he
   · obtain ⟨A', ε', hA'⟩ := _root_.GlobalTheory.Phase.vacS_of_isVac E r X g bas idx n hs hn w hw hw1 L hL Λ hΛ vΛ hvΛ
-    obtain ⟨u', hu'1, hu'pv⟩ := (GlobalTheory.T.selfDualVacuum_gaussian_shape_rootOfUnity_phases (Fin n) (Fin g) vΛ).2.2.1 A' ε' hA'
+    obtain ⟨u', hu'1, hu'pv⟩ := (_root_.GlobalTheory.Phase.VacShape.vacuum_shape (Fin n) (Fin g) vΛ).2.2.1 A' ε' hA'
     have hph : Ph (ip (u • v) (u' • vΛ)) := ph_ip hupv hu'pv
     have hu'u : conj u' * u' = 1 := by
       rw [mul_comm, Complex.mul_conj, Complex.normSq_eq_norm_sq, hu'1]
@@ -131,7 +131,7 @@ theorem proj_phases : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (r 
       congr 1
       linear_combination (-(u * ip v vΛ * ((‖ip v vΛ‖ : ℝ) : ℂ)⁻¹)) * hu'u
     rw [heq]
-    exact (GlobalTheory.T.selfDualVacuum_gaussian_shape_rootOfUnity_phases (Fin n) (Fin g) (u' • vΛ)).2.2.2.1 hu'pv _
+    exact (_root_.GlobalTheory.Phase.VacShape.vacuum_shape (Fin n) (Fin g) (u' • vΛ)).2.2.2.1 hu'pv _
       (Ph.mul hph (Ph.inv ((_root_.GlobalTheory.Phase.Calc.calculus).2.2.1 ‖ip v vΛ‖)))
   · have hC : ((Real.sqrt (((stdL E n).toAddSubgroup.relIndex Λ.toAddSubgroup ^ r : ℕ) : ℝ) : ℝ) : ℂ) *
         ((‖ip v vΛ‖ : ℝ) : ℂ) = 1 := by

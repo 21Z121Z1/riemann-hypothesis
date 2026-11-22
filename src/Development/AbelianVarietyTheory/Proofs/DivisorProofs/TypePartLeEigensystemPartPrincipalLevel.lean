@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeEqSmulOfIsot
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SphericalHeckeScalarOnSphericalVectors
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SphericalEigenvaluesIndependentOfStandardFrameStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SphericalEigenvaluesIndependentOfStandardFrame
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LevelOperatorsAtPrimeOffLevelDatum
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaLiftLevelsGoodPrimesProperties
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLabelThetaLiftSpaceIffDual
@@ -80,7 +80,7 @@ theorem part_in_eigenpart : ∀ {D : D7} {G : Type} [Group G] [Fintype G] {Pl0 T
     have e2 := hEigOp P d B0 hB0full x0 hx0S hx0T
     rw [ha x0 hx0S hfix0] at e2
     exact smul_left_injective ℂ hx0 e2
-  obtain ⟨hiff, htr⟩ := GlobalTheory.T.sphericalEigenvalues_independent_of_standardFrame hF (PW i) (PW i0) (hPW i) (hPW i0) P d
+  obtain ⟨hiff, htr⟩ := _root_.GlobalTheory.FrameTransport.sph_eigen_frame_indep hF (PW i) (PW i0) (hPW i) (hPW i0) P d
   have hvec : ∀ y ∈ π.S, (∀ κ, (PW i).ψ κ ∈ hyp (Wc D i) P → Formalism.L2.NG.rt D.host.E n κ y = y) →
       principalLevelFrame.Hecke₃ (PW i) B y = c P d • y := by
     intro y hy hfy

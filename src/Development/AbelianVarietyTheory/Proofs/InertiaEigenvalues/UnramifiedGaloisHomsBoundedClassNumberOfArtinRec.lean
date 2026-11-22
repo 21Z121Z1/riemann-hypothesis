@@ -5,7 +5,8 @@ import Formalism.WachLatticeTwists.CoprimeLiftBounds.Statement
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
 import ReciprocityTheory.NeutralLocalFields.HilbertClassField
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HilbertClassFieldOfGlobalArtinReciprocity
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LengthAddMonoidHomFiniteGroupFractionQuotientLeStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LengthAddMonoidHomFiniteGroupFractionQuotientLe
+import Formalism.CharacterColumnKernels.StatementRho
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HilbertSubgroupLeKerOfKillsInertiaStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GaloisAddHomVanishesComplexConjugation
 import ReciprocityTheory.NeutralLocalFields.LocalFieldComparison.HilbertClassFieldA
@@ -76,7 +77,7 @@ theorem vhE_of_globalArtinReciprocity (hA : GlobalTheory.Published.GlobalArtinRe
     _ ≤ Module.length O (Additive (ClassGroup (𝓞 E)) →+ M) :=
         Module.length_le_of_surjective Φ.rangeRestrict Φ.surjective_rangeRestrict
     _ ≤ _ := by
-        have := GlobalTheory.T.length_addMonoidHom_finite_group_fractionQuotient_le l O M eM (Additive (ClassGroup (𝓞 E)))
+        have := _root_.GlobalTheory.HomLen.length_addMonoidHom_le l O M eM (Additive (ClassGroup (𝓞 E)))
         rwa [show Nat.card (Additive (ClassGroup (𝓞 E))) = classNumber E from by
           rw [NumberField.classNumber, ← Nat.card_eq_fintype_card]; rfl] at this
 end GlobalTheory.UnramifiedClassBound

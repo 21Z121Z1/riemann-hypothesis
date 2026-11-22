@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDeRhamSheafIffAlt
 import Development.AbelianVarietyTheory.Definitions.Divisors.TorsionTowersOfDivisibleGroup
 import Development.AbelianVarietyTheory.Definitions.Divisors.ComparisonMemCechHodgeFiltration
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StructureSheafComparisonInjective
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsClosedPowTransitionOfFrobeniusKillsClassStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsClosedPowTransitionOfFrobeniusKillsClass
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowEqOfKaehlerDEqZeroSmoothAffineOpen
 
 set_option autoImplicit false
@@ -25,7 +25,7 @@ theorem eq_sub_of_pow_eq_sub (p : ℕ) [Fact p.Prime] {B : Type} [CommRing B] [I
 theorem mem_hodgeFiltrationOne_of_absoluteFrobenius_pull_zero : ∀ (p : ℕ) [Fact p.Prime] (k : Type) [Field k] [IsAlgClosed k] (hk : (p : k) = 0) (X : Scheme.{0}) [IsIntegral X] (s : X ⟶ Sp k) [Smooth s] (hX : (p : Γ(X, ⊤)) = 0) (h : IsMor (dp0 k) s (dp0 k) s (frobR p k hk) (GlobalTheory.VB.frob X p hX)) (c : FirstDeRham s), h.pull1 c = 0 → c ∈ F1 s := by
   intro p _ k _ _ hk X _ s _ hX h c hc
   obtain ⟨f, rfl⟩ := GlobalTheory.CatCoh.H1.mk_surjective _ c
-  obtain ⟨u, hu, hf⟩ := GlobalTheory.T.exists_closed_pow_transition_of_frobenius_kills_class p k hk X s hX h f hc
+  obtain ⟨u, hu, hf⟩ := _root_.GlobalTheory.CechDR.FrobKill.exists_closed_pow p k hk X s hX h f hc
   choose w hw using fun U : GlobalTheory.CechDR.AffOp X ↦ _root_.GlobalTheory.ConjSeq.sec_exists_pow_of_D_eq_zero p k hk X s U.unop (u U) (hu U)
   refine LinearMap.mem_ker.2 (GlobalTheory.CechDR.cmpO_injective k X s ?_)
   rw [map_zero, ← GlobalTheory.CechDR.structureSheaf_comparison_comm, GlobalTheory.CechDR.comparison_mk]

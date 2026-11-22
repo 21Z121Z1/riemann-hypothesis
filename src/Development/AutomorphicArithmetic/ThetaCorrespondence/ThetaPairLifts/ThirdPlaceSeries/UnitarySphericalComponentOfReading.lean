@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ExistsReadingLaws
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HasFiniteLengthOfIsIrreducible
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RpowNegLeNormOfComponent
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalRepGLExistsSatakeParametersStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalRepGLExistsSatakeParameters
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsUnitarySphericalSatakeOfUnitarisableHasSatakeStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsUnitarySphericalSatakeMultisetMapInv
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.Laws
@@ -23,7 +23,7 @@ theorem unitarySphericalComponent_of_reading_alt : GlobalTheory.Published.Bernst
   have hsph : IsSpherical ((S i w hw).row σ).π := by
     rw [← (hL i w hw).sph, ← hloc, ← T.unr]
     exact hu
-  obtain ⟨α, hα⟩ := GlobalTheory.T.sphericalRepGL_exists_satakeParameters hBZ _ _ _ hsph
+  obtain ⟨α, hα⟩ := _root_.GlobalTheory.SatakeExists.main hBZ _ _ _ hsph
   have hfrob : A.frobEig (A.locW i σ w) =
       (Finset.univ.val.map fun j => (α j : ℂ)).map (·⁻¹) := by
     rw [T.frobEig w _ hu, hloc, (hL i w hw).sat _ _ α hα, Multiset.map_map]

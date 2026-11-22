@@ -11,7 +11,7 @@ import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HolomorphicEigenProjectionOnBall
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PeriodExtensionImaginaryForm
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.EigenProjectionInEigenspace
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.AdaptedFrameHermitianProductStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.AdaptedFrameHermitianProduct
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SignatureUnitaryBlocksInvertible
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.AdaptedFrameBallCoordinateStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LinearIndependentOfGramDetUnit
@@ -19,7 +19,7 @@ import Development.AutomorphicSpectrum.Proofs.MetricProofs.HolomorphicCoefficien
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BallDomainOpenConvexZero
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BallAutomorphismInverseExists
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BallPotentialFormula
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogDetChangeStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogDetChange
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsSideAlt
 open NumberField Matrix MeasureTheory Filter Topology GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Cusp ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor GroundTheory.Heights₂.Heights.FiniteCovolume GroundTheory.Automorphic GlobalTheory.CompanionTheory.Ar.Cusp.Dict
 open scoped ENNReal InnerProductSpace
@@ -57,7 +57,7 @@ theorem chart_exists : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (�
     fun τ i t => C.pPart (F.R t) τ (A₀ τ *ᵥ Sum.elim (Pi.single i 1) 0)
   let Wm : (Fin n → ℂ) → Ψ → Matrix (Fin j') (Fin j) ℂ := fun t τ => moebW (C.cinv (A₀ τ) τ * Ad t τ) 0
   have hgA := fun t (A : Ψ → Matrix (Fin (j + j')) (Sg j j') ℂ) (hA : C.IsAdapted (F.R t) A) =>
-    GlobalTheory.T.adapted_frame_hermitian_product E Ψ j j' n g Λ F C (F.R t) A (_root_.GlobalTheory.CompanionTheory.Ar.Cusp.Dict.Chart.im_perExt_eq_Fm E Ψ j j' n g Λ F C (F.R t) (F.form_eq t)) hA
+    _root_.GlobalTheory.CompanionTheory.Ar.Cusp.Dict.Chart.gram_last_block E Ψ j j' n g Λ F C (F.R t) A (_root_.GlobalTheory.CompanionTheory.Ar.Cusp.Dict.Chart.im_perExt_eq_Fm E Ψ j j' n g Λ F C (F.R t) (F.form_eq t)) hA
   have hpt := fun t (ht : t ∈ ballDom F.q) τ =>
     GlobalTheory.T.adapted_frame_ball_coordinate E Ψ j j' n g Λ F C (F.R t) (Ad t) A₀ τ (Wm t τ) (_root_.GlobalTheory.CompanionTheory.Ar.Cusp.Dict.Chart.sgU_blocks j j') (hgA t (Ad t) (hAd t ht) τ) (hAd t ht) (hunit τ) rfl
 
@@ -121,7 +121,7 @@ theorem chart_exists : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (�
       (fun t ht => (F.frames.2 t ht τ).1) (fun t ht => hYc t τ b ht)
 
   have hloc := fun t (ht : t ∈ ballDom F.q) τ =>
-    GlobalTheory.T.gram_det_change_of_basis_alt E g Λ (F.R t) j' (fun i => F.b τ i t) (fun b => dV τ b t) (Ym t τ) (1 - Wm t τ * (Wm t τ)ᴴ) (2 * C.c)
+    _root_.GlobalTheory.CompanionTheory.Ar.Cusp.Dict.Chart.PointLog.log_det_change E g Λ (F.R t) j' (fun i => F.b τ i t) (fun b => dV τ b t) (Ym t τ) (1 - Wm t τ * (Wm t τ)ᴴ) (2 * C.c)
       (mul_pos two_pos C.c_pos) (fun b => hYc t τ b ht) (hpt t ht τ).2.1 (hpt t ht τ).2.2
 
   let Pf : (Fin n → ℂ) → ℂ := fun t => ∏ τ, (Ym t τ).det

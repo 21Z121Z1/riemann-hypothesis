@@ -55,7 +55,7 @@ theorem local_density_binary_unimodular {ι : Type} [Fintype ι] {F : Type} [Fie
   induction n using Nat.strong_induction_on with
   | _ n ih =>
   intro s hs hs0 hn
-  obtain ⟨Dp, hDp, hprim⟩ := GlobalTheory.T.local_quadratic_density_near_one F v lam hstd h2 ι B hsym hB hdet 2 hc (by omega) s hs
+  obtain ⟨Dp, hDp, hprim⟩ := _root_.GlobalTheory.CompanionTheory.SW.LGPrim.density_primitive F v lam hstd h2 ι B hsym hB hdet 2 hc (by omega) s hs
   obtain ⟨π, hπ⟩ := exists_unif v
   have hπ0 := pi_ne_zero hπ
   have hs1 : Valued.v s ≤ 1 := mem_int.1 hs

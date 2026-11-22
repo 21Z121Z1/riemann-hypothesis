@@ -8,9 +8,9 @@ import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorsionCoordin
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaConstantsEqDegenerationSeries
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.FullTorsionPolarizedCMObjectExtendsAlgClosed
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.LiftValuationIntegralNormStatement
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusTorsionPointsCorrespondValuesStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusTorsionPointsCorrespondValues
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.FamiliesValuesCorrespond
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorsionPairingValuesOfFamiliesValuesStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorsionPairingValuesOfFamiliesValues
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AbelianPartValuesOfExpansionLaws
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AbelianPartValuesTorsionPairingSeparationIntegra
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusExtensionActionInValues
@@ -82,9 +82,9 @@ theorem actCompat_of_match (hL : Laws) (hL2 : Laws2) {E : Type} [Field E] [Numbe
     rw [← eW]
     refine _root_.GlobalTheory.Relabel.actV_compat_of_torsion hL _ _ _ C _ _ νW ν' J.toIso hg _ oW.onB M.P.oD.onB n hn hnC x (fun j y hy => ?_) y
     refine (congrArg J.φ (eW x y)).trans ?_
-    exact GlobalTheory.T.arcTorsionLabels_action_compat hL GlobalTheory.T.torus_torsion_points_correspond_values E H D O' C A.arc o M hTI N' ν' _ A.be u (r (n ^ j)) J (n ^ j) (pow_pos hn.pos j)
+    exact GlobalTheory.T.arcTorsionLabels_action_compat hL _root_.GlobalTheory.Ex.GtValues.points_correspond E H D O' C A.arc o M hTI N' ν' _ A.be u (r (n ^ j)) J (n ^ j) (pow_pos hn.pos j)
       (hr.pow (pow_pos hn.pos j)) (hlab j) x y hy
-  refine GlobalTheory.T.torsionQuotientAction_compat_of_rosatiValues hG GlobalTheory.T.torus_torsion_points_correspond_values E H D O' M.W C A.arc M.P.D.toPre M.P.oD M.P.D.psi_even M.P.D.tau_bimult N' ν' _ A.be u r J hr
+  refine GlobalTheory.T.torsionQuotientAction_compat_of_rosatiValues hG _root_.GlobalTheory.Ex.GtValues.points_correspond E H D O' M.W C A.arc M.P.D.toPre M.P.oD M.P.D.psi_even M.P.D.tau_bimult N' ν' _ A.be u r J hr
     (fun x y z => ?_) hX hB fun x => ?_
   · refine (A.be_eq _ _).trans (Eq.trans ?_ (A.be_eq _ _).symm)
     simp only [ArcF.act]
@@ -149,7 +149,7 @@ theorem exists_has : HV → Laws6 → GlobalTheory.LN.UDvrSt → GlobalTheory.LN
   letI := H.starRing
   have hL := hV.1.1
   have hL2 := hV.1.2.1
-  have hGt := GlobalTheory.T.torus_torsion_points_correspond_values
+  have hGt := _root_.GlobalTheory.Ex.GtValues.points_correspond
   have hFam := _root_.GlobalTheory.Ex.brFam hL hL2
   haveI := o₀.charZero
   obtain ⟨W, _, _, _, φ, K₁, _, _, _, e, hW, hX, he⟩ := _root_.GlobalTheory.HasFields.exists_cdv_over_powerSeries O' K
@@ -207,7 +207,7 @@ theorem exists_has : HV → Laws6 → GlobalTheory.LN.UDvrSt → GlobalTheory.LN
   have hTI : M.P.TorsionIso := haveI := M.admissible_base_of_complete_dvr.2
     _root_.GlobalTheory.UT.torsionIso_of_pelUnif hV.1 hV.2.1 hV.2.2.1 hV.2.2.2.1 hV.2.2.2.2 E H M.W _ M.admissible_base_of_complete_dvr.1 M.t M.P
   have hac := actCompat_of_match hL hL2 a hO A M hTI hint hr hn ho h1 ν' J hJX hlab oW ψ he' w e' νW hm hA' hgeo
-  obtain ⟨I', hI'ζ, hI'⟩ := GlobalTheory.T.exists_torsionIsometry_twistByRoots_of_dataIso hGt (GlobalTheory.T.torsionPairing_values_of_familiesValues hGt hFam) E H D O' M.W C A.arc M.P.D.toPre M.P.oD M.P.D.psi_even
+  obtain ⟨I', hI'ζ, hI'⟩ := GlobalTheory.T.exists_torsionIsometry_twistByRoots_of_dataIso hGt (_root_.GlobalTheory.WeilValues.weil_eq_values hGt hFam) E H D O' M.W C A.arc M.P.D.toPre M.P.oD M.P.D.psi_even
     M.P.D.tau_bimult N' ν' _ A.be u r J hr hac
   obtain ⟨I, hIζ, hI⟩ := GlobalTheory.T.exists_full_torsion_isometry_of_tateIsoQ hV.1 E H D C o M I'
   have hco := GlobalTheory.T.thetaPoints_coords_relabelled_twistedData_series hV.1 hGt (_root_.GlobalTheory.Ex.ThetaSeries.theta_const_eq_series hV hGt hFam) (_root_.GlobalTheory.Ex.CoordSeries.coord_eq_series hV hGt hFam) E H D C o M I A.N N' ν' _ A.be u r J A.q

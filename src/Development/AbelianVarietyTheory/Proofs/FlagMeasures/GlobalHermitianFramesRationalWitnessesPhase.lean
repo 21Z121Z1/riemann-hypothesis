@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemPerpSpan
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetTermBasicFacts
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermInvariantsIndependentOfWitnesses
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalExtend
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NumberFieldLatticeDeterminedByLocalLatticesStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NumberFieldLatticeDeterminedByLocalLattices
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StrongApproximationUnipotent
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoordinateLatticeUniqueTermAlmostAllPlaces
 
@@ -156,7 +156,7 @@ theorem good_places (A : Places F E sig) (r k : ℕ) (G : GFrames A r k) (hk : 4
     (d : G.Dat) (Λ : G.Lt) (hT : G.IsTerm d Λ) :
     {p | ¬ (G.S p).IsTermW (d p) (A.lat p Λ) 1 1}.Finite := by
   obtain ⟨hL, hloc⟩ := hT
-  refine ((GlobalTheory.T.numberField_lattice_determined_by_local_lattices A (k + 2 * r + 1) Λ hL).2.2.union (_root_.GlobalTheory.HL.StdPlace.coordinate_lattice_standard A r k G hk)).subset ?_
+  refine ((_root_.GlobalTheory.HL.PlacesRec.lattice_local A (k + 2 * r + 1) Λ hL).2.2.union (_root_.GlobalTheory.HL.StdPlace.coordinate_lattice_standard A r k G hk)).subset ?_
   intro p hp
   by_contra hq
   rw [Set.mem_union, not_or] at hq

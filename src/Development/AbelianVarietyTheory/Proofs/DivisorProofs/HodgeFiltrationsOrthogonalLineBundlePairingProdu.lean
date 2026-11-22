@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemHodgeFiltrationI
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPointwiseCochainCoboundaryEqChernCocycleAl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CupPullbackCocyclesPointValue
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrystallineCocycleOnTrivialThickeningsAdditiveLi
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoboundaryOfMemHodgeFiltrationStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoboundaryOfMemHodgeFiltration
 
 set_option autoImplicit false
 
@@ -90,7 +90,7 @@ theorem fil_orthogonal : GlobalTheory.Published.AbelianHodgeDeRham → ∀ (R : 
   choose β hβ using fun k ↦ CatCoh.H1.mk_surjective _ (b k).1
   obtain ⟨n, hcup⟩ := exists_isCupCob P α β (by simp only [hα, hβ]; exact hc)
   have hβ' : ∀ i, CatCoh.H1.mk _ (β i) ∈ primDR B := fun i ↦ by rw [hβ]; exact (b i).2
-  obtain ⟨k, hk⟩ := GlobalTheory.T.exists_coboundary_of_mem_hodgeFiltration H R A B g hB gB _ P.U hP.cover (Fin N) _ β hβ' n
+  obtain ⟨k, hk⟩ := _root_.GlobalTheory.PtExt.OrthPt.exists_isCob_of_mem_fil H R A B g hB gB _ P.U hP.cover (Fin N) _ β hβ' n
     (fun i ↦ (fv_isCoc_and_ev_eq R A (α i)).1) hcup y hy
   have eb : ∀ i, (⟨_, hβ' i⟩ : primDR B) = b i := fun i ↦ Subtype.ext (hβ i)
   have h0 := (Submodule.mem_dualAnnihilator _).1 hx _ (sum_mem_F1prim a α hα _ k hk)

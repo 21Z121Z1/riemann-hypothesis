@@ -3,7 +3,9 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsChar
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceChartParahoricLevelStabiliserHeight
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilCoefficientSplitsLocalFactorTwistPlace
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LowerBlockParameterTwistLFactor
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnramifiedDoublingIntegralTwistedPlaceEigenvectoStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnramifiedDoublingIntegralTwistedPlaceEigenvecto
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCoType
+import Formalism.LocalToGlobal.Columns.HeckeSp
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoubledLatticeHeightFunProperties
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PeterssonCoefficientBoundedSphericalUnramified
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaChainStageRealDataConjValueMemCuspForms
@@ -193,7 +195,7 @@ theorem local_factor : GlobalTheory.Published.UnramifiedDoublingGL → GlobalThe
       GlobalTheory.SplitWeil.ip ν (GlobalTheory.SplitWeil.om μT g (1 : GL (Fin D.R.r ⊕ Blocks (k + 1) D.R.t) _) (datum μT)) (datum μT) :=
     ⟨_, fun _ => rfl⟩
   have hcoef := _root_.GlobalTheory.TwistCoef.coef_split D hgap c w hw k hk s s' hs hs' p hp m X hX PP hPP _ pr hpr ι hι μT hμT ν hν cf hcf φ
-  obtain ⟨hc1, ζ₀, hζ, hζ1, hint⟩ := GlobalTheory.T.unramifiedDoublingIntegral_twisted_place_eigenvector hU _ ν hν ϖ hϖ D.R.r D.R.t k μT 1 hμu (htame μT hL).1 (htame μT hL).2
+  obtain ⟨hc1, ζ₀, hζ, hζ1, hint⟩ := _root_.GlobalTheory.TwistedZeta.local_zeta_twisted hU _ ν hν ϖ hϖ D.R.r D.R.t k μT 1 hμu (htame μT hL).1 (htame μT hL).2
     (fun _ _ => rfl) (fun _ => by simp) (qPar c PP x₀ k) α (((D.R.t : ℝ) - 1) / 2) (by rw [one_mul, hμϖ]; exact hαe)
     (by rw [hres]; exact hbd) _ hH m₀ hm₁ cf (by rw [one_mul]; exact hcf)
   obtain ⟨hI, hIv⟩ := hint (z : ℂ) (by rw [Complex.ofReal_re]; linarith)

@@ -4,8 +4,8 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.FormalCoboundarySmu
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuasiLogReduces
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuasiLogarithmEqPSmulAddIntegral
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MvPowerSeriesReductionModPrimeRules
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReductionCommutesFormalGroupLawCoboundariesStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsQuasiLogRedStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReductionCommutesFormalGroupLawCoboundaries
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsQuasiLogRed
 open CategoryTheory TensorProduct MvPowerSeries GlobalTheory GlobalTheory.PDiv GlobalTheory.PDivGroup GlobalTheory.Katz
 
 namespace GlobalTheory
@@ -15,10 +15,10 @@ theorem Katz.reductionMap : ∀ (p : ℕ) [Fact p.Prime] (k : Type) [Field k] [C
   have hμ' : ∀ i, constantCoeff (Katz.lift p (μ i)) = 0 := fun i => constantCoeff_lift p (h.const i)
   have hR1 := _root_.GlobalTheory.Katz.red_rules p k (Fin d)
   have hR2 := _root_.GlobalTheory.Katz.red_rules p k (Fin d ⊕ Fin d)
-  have hC := GlobalTheory.T.reduction_commutes_formalGroupLawCoboundaries p k d μ h.const
+  have hC := _root_.GlobalTheory.Katz.red_coboundaries p k d μ h.const
   have hD := _root_.GlobalTheory.quasiLog_reduces p k d μ h
   have hK := _root_.GlobalTheory.Katz.quasiLog_eq_p_smul_add_int p k d μ h
-  have hS := GlobalTheory.T.exists_quasiLog_red_coboundary_and_linear p k d μ h
+  have hS := _root_.GlobalTheory.Katz.exists_quasiLog_red p k d μ h
   have hVu : ∀ (v : Fin d → Fr p k) (w w' : Fin d → k), RedV p v w → RedV p v w' → w = w' := by
     intro v w w' h1 h2
     funext i

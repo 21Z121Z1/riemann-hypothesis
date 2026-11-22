@@ -17,7 +17,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.W1idxUnionW1
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LatticeIndexNonzeroIffUnderFieldMap
 import Formalism.QuotientMetricDivisors.Statement
 import Formalism.HermitianLattices.StatementLat
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HermitianDualLatticeBaseChangeStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HermitianDualLatticeBaseChange
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LiftFormsLatticeDefiniteLatticeBaseChangeExtende
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExtendedDataDefiniteLiftLatticeBaseChange
 
@@ -67,7 +67,7 @@ theorem extendedData_nonzero_index_places_correspond : GlobalTheory.Published.Di
     rw [← hG2, ← hG3] at k
     exact k
   · have k := _root_.GlobalTheory.LidxBaseChange.lidx_ne_zero_iff _ _ φ _ _ N hN1 P P' hP _ _ hT.fg (GlobalTheory.Mem.NonzeroPlacesOverPrimes.dual_fg _ hH _ hT)
-    rw [← GlobalTheory.T.hermitianDualLattice_baseChange _ _ φ _ _ N hN1 _ _ hN3 hH _ hT, ← hN2] at k
+    rw [← _root_.GlobalTheory.Mem.DualBC.dual_baseChange _ _ φ _ _ N hN1 _ _ hN3 hH _ hT, ← hN2] at k
     exact k
 
 end GlobalTheory.Mem.R3.TwistedPlaceExtensions

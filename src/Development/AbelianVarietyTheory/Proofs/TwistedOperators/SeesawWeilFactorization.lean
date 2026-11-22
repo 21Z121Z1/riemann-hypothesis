@@ -3,10 +3,10 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRtensOp
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DarbouxModelAlgebraicVectorsLeAdelicSchwartzStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilDoublingFactor
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilZetaUnramified
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilZetaGlobalStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GaussianThetaImagesAlgebraicStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilZetaGlobal
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GaussianThetaImagesAlgebraic
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilZetaContinuation
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilZetaFunctionalStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilZetaFunctional
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockAlgebraicThetaVectorsStableLineDerivative
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix
@@ -128,11 +128,11 @@ theorem thetaImage : GlobalTheory.Published.HoweDualityReal → GlobalTheory.Fun
       exact _root_.GlobalTheory.SquareComm.LineDeriv.deriv_line_mem_algF D ψ θ hψ hθ true W X A B _ hin L hLc hLf
     · rw [algF, Submodule.span_le]
       rintro q ⟨g, P, hg, rfl⟩
-      obtain ⟨Φ, hΦ, hΦe⟩ := GlobalTheory.T.seesaw_weil_zeta_global hHD hPr D ψ θ hψ hθ W W₁ X A A₁ B α β hTr ωA ωB hWA hWB e Bs Γ Xc om om' h hTA hTB
+      obtain ⟨Φ, hΦ, hΦe⟩ := _root_.GlobalTheory.FockThetaOnto.fockF_eq_thO hHD hPr D ψ θ hψ hθ W W₁ X A A₁ B α β hTr ωA ωB hWA hWB e Bs Γ Xc om om' h hTA hTB
         R Rf hM g P hg
       exact ⟨Φ, hΦ, by rw [hT Φ (hs hΦ), hΦe]⟩
   · refine map_eq Γ.M' Bs.ψ Bs.emb _ T _ hs' hT
-      (GlobalTheory.T.seesaw_weil_zeta_nonvanishing hHD hPr D ψ θ hψ hθ W W₁ X A A₁ B α β hTr ωA ωB hWA hWB e Bs Γ Xc om om' h hTA hTB R Rf hM)
+      (_root_.GlobalTheory.ThetaGaussAlg.thO_pure_gauss_mem_algF hHD hPr D ψ θ hψ hθ W W₁ X A A₁ B α β hTr ωA ωB hWA hWB e Bs Γ Xc om om' h hTA hTB R Rf hM)
       (fun f φ u f₁ hf hu hA h1 h2 hin => ?_) ?_
     · obtain ⟨L, hLc, hLf, hL⟩ := _root_.GlobalTheory.ThetaRealDeriv.thO_pure_deriv_second hHD hPr D ψ θ hψ hθ W W₁ X A A₁ B α β hTr ωA ωB hWA hWB e Bs Γ Xc om om' h hTA hTB
         R Rf hM f φ u f₁ hf hu hA h1 h2
@@ -140,7 +140,7 @@ theorem thetaImage : GlobalTheory.Published.HoweDualityReal → GlobalTheory.Fun
       exact _root_.GlobalTheory.SquareComm.LineDeriv.deriv_line_mem_algF D ψ θ hψ hθ false W₁ X A₁ B _ hin L hLc hLf
     · rw [algF, Submodule.span_le]
       rintro q ⟨g, P, hg, rfl⟩
-      obtain ⟨Φ, hΦ, hΦe⟩ := GlobalTheory.T.exists_darbAlg_thO_eq_fockF' hHD hPr D ψ θ hψ hθ W W₁ X A A₁ B α β hTr ωA ωB hWA hWB e Bs Γ Xc om om' h hTA hTB
+      obtain ⟨Φ, hΦ, hΦe⟩ := _root_.GlobalTheory.DarbImageRevB.exists_darbAlg_thO_eq_fockF hHD hPr D ψ θ hψ hθ W W₁ X A A₁ B α β hTr ωA ωB hWA hWB e Bs Γ Xc om om' h hTA hTB
         R Rf hM g P hg
       exact ⟨Φ, hΦ, by rw [hT Φ (hs' hΦ), hΦe]⟩
 

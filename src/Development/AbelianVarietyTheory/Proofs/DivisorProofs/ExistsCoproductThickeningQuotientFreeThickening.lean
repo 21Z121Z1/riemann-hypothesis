@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.DivPowerCompatTwoFormDerivativeCompOneForm
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFreeThickeningLevelFinitelyManyElementsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomSpecPointsLevelsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFreeThickeningLevelFinitelyManyElements
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomSpecPointsLevels
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsQuotientNilCrystallineThickeningOfSubDPIde
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothSectionsMonoReductionAffineInf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuotientSubDPIdeal
@@ -19,13 +19,13 @@ theorem exists_cop : ∀ (D : Data) (Λ : Lift D) (n : ℕ) (U : AffOp D.X) (T :
       (KK D.κ D.t).QAt u ∧ IsLev F.δ (n + 1) ∧ Function.Surjective q.φ ∧ (∀ b, q.φ b ∈ G.J → b ∈ F.J) ∧
         IsCop (n + 1) (u ≫ q) r := by
   intro D Λ n U T hT hU
-  obtain ⟨h1, h2, h3, -⟩ := GlobalTheory.T.hom_spec_points_levels D Λ
+  obtain ⟨h1, h2, h3, -⟩ := _root_.GlobalTheory.PDForm.Lift.hom_spec D Λ
   haveI : Algebra.Smooth D.R (Sec D.s U.unop.1) := (_root_.GlobalTheory.SmoothLift.Data.smooth_mono_inf D).1 U.unop
   obtain ⟨m, pres, hpres⟩ := Algebra.FiniteType.iff_quotient_mvPolynomial''.1
     (inferInstance : Algebra.FiniteType D.R (Sec D.s U.unop.1))
   obtain ⟨g, hgx, hgR⟩ := h2 U T hU
   choose bl hbl using fun i : Fin m ↦ T.surj (g (pres (MvPolynomial.X i)))
-  obtain ⟨F, u, τ, hfree, hQ⟩ := GlobalTheory.T.exists_freeThickening_level_finitelyMany_elements D.R D.I D.κ D.X₀ D.t n m T hT
+  obtain ⟨F, u, τ, hfree, hQ⟩ := _root_.GlobalTheory.PDForm.FreeFin.exists_free D.R D.I D.κ D.X₀ D.t n m T hT
   let ψ : MvPolynomial (Fin m) D.R →ₐ[D.R] F.B := MvPolynomial.aeval fun i ↦ u.φ (bl i) + τ i
   have hψX : ∀ i, ψ (MvPolynomial.X i) = u.φ (bl i) + τ i := fun i ↦ MvPolynomial.aeval_X _ _
 

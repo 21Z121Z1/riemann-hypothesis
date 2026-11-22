@@ -9,7 +9,8 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DenseInter
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CrysToDRBijective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqLastAddGaps
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CommonRestrIsoTens
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagSpaceComponentSmoothProjectiveConnectedStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagSpaceComponentSmoothProjectiveConnected
+import Development.AbelianVarietyTheory.Definitions.Divisors.NonemptyCuspFrame
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverIffIsProperAndExistsIsAmpleLB
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeadWeightLineNef
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsNefPullLLStepEx
@@ -35,7 +36,7 @@ theorem weight_line_bundle_isNef : _root_.GlobalTheory.CovTop.Hypotheses'' → G
   intro hPr hNN hSA E _ _ _ H Dw l Xo c TF Z hF la hla
   letI := algebraΓOfHom (str₀ TF.X Z)
   classical
-  obtain ⟨-, hproj, -⟩ := GlobalTheory.T.flagSpace_component_smooth_projective_connected E H Dw l Xo c TF Z hF
+  obtain ⟨-, hproj, -⟩ := _root_.GlobalTheory.VarFlag.isVariety₀_flag E H Dw l Xo c TF Z hF
   obtain ⟨A, hA⟩ := exists_isAmpleLB_of_isProjOver hproj
   let C := common₀ TF.X Z
   let φ := AddMonoidHom.mk' (fun a => cls (L₀ TF.X Z a) (C.isLB a)) (cls_common_add C)

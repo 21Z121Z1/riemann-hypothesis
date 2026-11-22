@@ -4,11 +4,11 @@ import Development.AbelianVarietyTheory.Definitions.LatticeFrames.KerBF
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ThetaAbsoluteSum
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.TransvectionAction
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.WeilDatumExistence
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BesselPeriodThetaLiftUnfoldingStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BesselPeriodThetaLiftUnfolding
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.InvariantIntegralInStages
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FourierJacobiMeasureUnitriangularCoordinatesStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FourierJacobiMeasureUnitriangularCoordinates
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BesselUnfoldingEvaluationIntegrandContinuousInva
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatPeriodEqIntegralEvaluationPeriodsStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatPeriodEqIntegralEvaluationPeriods
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.EvaluationFormAbsoluteConvergence
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FourierJacobiBesselGroupsClosedHaarProduct
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.WittSmallGroupEmbeddingMemPointwiseStabilizerIso
@@ -48,13 +48,13 @@ theorem evalBF_of_descent : ∀ D : D7, Descent D → EvalBF D := by
   have : IsLocallyFiniteMeasure s.vU.ν := inferInstance
   have : SigmaFinite s.vU.ν := inferInstance
   have : SFinite s.vU.ν := s_finite_of_sigma_finite s.vU.ν
-  obtain ⟨hc0, hH0, hI0, hI, hF⟩ := GlobalTheory.T.fourierJacobi_measure_unitriangular_coordinates D ρ J s.vU ν₀ 𝓝₀ hν₀ h𝓝₀ h1
+  obtain ⟨hc0, hH0, hI0, hI, hF⟩ := _root_.GlobalTheory.JacMeas.jac_measure D ρ J s.vU ν₀ 𝓝₀ hν₀ h𝓝₀ h1
   obtain ⟨o⟩ := nonempty_orthDec_zero D J.W₀
   obtain ⟨⟨hc, hH⟩, -⟩ := _root_.GlobalTheory.MixPer.jacGrp_besGrp_haar D J.W J.W₀ J.W₀ (diagSp D 0 ![] 0 0) ρ J.d o J.vN.ν J.vN.𝓝 J.vN.unit
   obtain ⟨hcont, hinv⟩ := _root_.GlobalTheory.Unf.evalIntegrand_continuous_invariant D ψ ρ B J s om' hom' φ G Φ hφ hG hΦ
-  have hrel := GlobalTheory.T.flatPeriod_eq_integral_evaluationPeriods D ψ ρ B J s om' hom' φ G Φ hφ hG hΦ
+  have hrel := _root_.GlobalTheory.FlatEval.perAll_flat_eq_integral D ψ ρ B J s om' hom' φ G Φ hφ hG hΦ
   have habs := _root_.GlobalTheory.Unf.evalBF_abs D ψ ρ B J s om' hom' φ G Φ hφ hG hΦ
-  have hU := GlobalTheory.T.besselPeriod_thetaLift_unfolding D hD ψ ρ B J s φ G Φ hφ hG hΦ
+  have hU := _root_.GlobalTheory.UnfBessel.unfBF D hD ψ ρ B J s φ G Φ hφ hG hΦ
   rw [funext fun h => (hrel h).2] at hU
   exact _root_.GlobalTheory.Unf.invariant_integral_in_stages (GA D J.W) s.vW.μ (radX J.d ⊔ J.d.emb0.range) (jacGrp J.d) hc0 hc
     (semiMeas (radX J.d) J.d.emb0 J.v0.μ ν₀) J.μR hH0 hI0 (hH _ J.v0.haar) hI (UX D ρ) s.vU.ν (fun u => J.d.levi u.1)

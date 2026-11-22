@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JoinCol
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GaussianDetLeviIntegralStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ComplexHessianLogFubiniStudyStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GaussianDetLeviIntegral
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ComplexHessianLogFubiniStudy
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ComplexHessianLogDehomogeniseStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeasurableZeroCountStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeasurableZeroCount
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChangeVariablesZeroCountStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LintegralSplitColumn
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PAreaMultiplicityWeight
@@ -159,7 +159,7 @@ theorem crofton_local : ∀ (d : ℕ) (α : Type) [Fintype α] [DecidableEq α] 
     rw [← hKA]
     exact MeasurableSet.iUnion fun n => (hK n).measurableSet
   have hΦ : Measurable fun C : Fin d → α → ℂ => gW d α C * zeroCnt d A b C :=
-    (measurable_gW d α).mul (GlobalTheory.T.measurable_zero_count d α U A b (fun j => (hb j).continuousOn) hAU hA)
+    (measurable_gW d α).mul (_root_.GlobalTheory.CompanionTheory.FSCrofton.measurable_zeroCnt d α U A b (fun j => (hb j).continuousOn) hAU hA)
   have hf : ∀ j : {j : α // j ≠ j₀}, DifferentiableOn ℂ (fun v => b j.1 v / b j₀ v) U :=
     fun j => differentiableOn_quot U b hb j₀ hne j.1
   obtain ⟨g, hg, hgA⟩ : ∃ g : {j : α // j ≠ j₀} → V d → ℂ, (∀ j, Measurable (g j)) ∧
@@ -180,11 +180,11 @@ theorem crofton_local : ∀ (d : ℕ) (α : Type) [Fintype α] [DecidableEq α] 
     rw [Fintype.card_subtype_compl, Fintype.card_subtype_eq]
     have : 0 < Fintype.card α := Fintype.card_pos_iff.mpr ⟨j₀⟩
     omega
-  have h1 := GlobalTheory.T.gaussian_det_levi_integral d {j : α // j ≠ j₀} (fun j => b j.1 z / b j₀ z)
+  have h1 := _root_.GlobalTheory.CompanionTheory.FSCrofton.GaussLevi.lintegral_gauss_levi d {j : α // j ≠ j₀} (fun j => b j.1 z / b j₀ z)
     (Matrix.of fun j a => fderiv ℂ (fun v => b (j : {j : α // j ≠ j₀}).1 v / b j₀ v) z
       (EuclideanSpace.single a 1))
   rw [GlobalTheory.T.complex_hessian_log_dehomogenise d α j₀ U b hU hb hne z (hAU hz),
-    GlobalTheory.T.complex_hessian_log_fubini_study d {j : α // j ≠ j₀} U (fun j v => b j.1 v / b j₀ v) hU hf z (hAU hz),
+    _root_.GlobalTheory.CompanionTheory.FSCrofton.cHess_log_one_add_sum d {j : α // j ≠ j₀} U (fun j v => b j.1 v / b j₀ v) hU hf z (hAU hz),
     ← const_arith d _ _ hcard, ← h1]
   simp only [hgA _ z hz]
 

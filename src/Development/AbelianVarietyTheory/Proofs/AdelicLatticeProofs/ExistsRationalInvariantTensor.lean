@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.AdelicPair
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsLeftTranslationReynoldsOperatorStatement
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.HilbertFinitenessLeftInvariantMatrixPolyStatement
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsLeftTranslationReynoldsOperator
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.HilbertFinitenessLeftInvariantMatrixPoly
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.InvariantFormEqSumInvariantTensors
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MemSpanRationalKroneckerInvariants
 open Matrix GlobalTheory.ClassFin
@@ -86,8 +86,8 @@ theorem good_homog {Γ : Set (Matrix ι ι ℂ)} (hΓ : IsPre Γ) (hS : SS Γ) (
 theorem exists_finite_family {Γ : Set (Matrix ι ι ℂ)} (hΓ : IsPre Γ) (hS : SS Γ) :
     ∃ S : Set (Σ n : ℕ, ((Fin n → ι) → ℚ)), S.Finite ∧ AllFixed Γ S ∧
       ∀ f, IsInv Γ f → evC f ∈ coordAlg S := by
-  obtain ⟨Rey, hR⟩ := GlobalTheory.T.exists_leftTranslation_reynoldsOperator ι Γ hΓ hS
-  obtain ⟨s, hs, hgen⟩ := GlobalTheory.T.hilbert_finiteness_leftInvariantMatrixPoly ι Γ Rey hR
+  obtain ⟨Rey, hR⟩ := _root_.GlobalTheory.ClassFin.ReynoldsLtr.exists_isReynolds ι Γ hΓ hS
+  obtain ⟨s, hs, hgen⟩ := _root_.GlobalTheory.ClassFin.HilbertFin.hilbert_finiteness ι Γ Rey hR
   have hg : ∀ F : s, Good Γ (evC F.1) := fun F => by
     obtain ⟨h1, n, h2⟩ := hs F.1 F.2
     exact good_homog hΓ hS n F.1 h1 h2

@@ -1,5 +1,5 @@
 import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.SiegelWeilActions.PhzEqFlat
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HaarMeasureSplitExactSequenceStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HaarMeasureSplitExactSequence
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdelicSkewMatricesLocallyCompactGroup
 import Development.WeilBound.ThetaLifts.LatticeBasics.UnfoldC
@@ -131,7 +131,7 @@ theorem fiber {nb : nA σ d.Y d.b → d.G} {lam : Measure (nA σ d.Y d.b)} {𝓖
   obtain ⟨ε, hε, hε'⟩ := eps_common L
   obtain ⟨h1, h2⟩ := nA_inst d.n d.Y d.b ε hε
   obtain ⟨h3, h4⟩ := nA_inst L.n L.Y L.b ε hε'
-  exact GlobalTheory.T.haar_measure_split_exact_sequence (prj L) (padN L) (continuous_prj L) (continuous_padN L) (prj_padN L)
+  exact _root_.GlobalTheory.CompanionTheory.FiberInt.integral_comp_eq (prj L) (padN L) (continuous_prj L) (continuous_padN L) (prj_padN L)
     (nF σ d.Y d.b) (nF σ L.Y L.b) (countable_nF _ _ _) (countable_nF _ _ _) (fun γ hγ => prj_nF L hγ)
     (fun γ hγ => padN_nF L hγ) lam lam' hc.2.1 hc'.2.1 𝓖 𝓖' hc.2.2.1 hc.2.2.2 hc'.2.2.1 hc'.2.2.2 G hG
     (fun γ hγ x => hper γ hγ x)

@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FunctionFieldOneVar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FunctionFieldPlaceOrderCalculus
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FunctionFieldPlaceRestrictionExistsPow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAdmissibleAdelicMatrixFamilyPullbackExtension
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSectionOfLargeAdelicDegreeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSectionOfLargeAdelicDegree
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BinaryFormSplits
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdmissibleDegreeSymmetricPowerFamily
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdmissibleDegreeTwistFamilyAtPlaceByScalar
@@ -35,7 +35,7 @@ theorem GlobalTheory.Nef.deg_le_two_mul_of_triangular : ∀ (k F : Type) [Field 
     rw [h0]; push_cast; linarith
   rw [not_isEmpty_iff] at hne
   obtain ⟨v₀⟩ := hne
-  obtain ⟨γ, hγ⟩ := GlobalTheory.T.exists_section_of_large_adelic_degree k F hFF
+  obtain ⟨γ, hγ⟩ := _root_.GlobalTheory.Nef.exists_section_of_large_deg k F hFF
   obtain ⟨π, hπ0, hπ⟩ := (_root_.GlobalTheory.Nef.ord_calculus k F v₀).2.2.2.2.2.1
   have key : ∀ m : ℕ, ((m * (m + 1) / 2 : ℕ) : ℝ) * (deg g : ℝ) ≤ (m + 1) * (m * b + 1 + γ) := by
     intro m

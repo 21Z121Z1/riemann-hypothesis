@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ThetaA
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.TransvectionAction
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.WeilDatumExistence
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.MixedModelTargetHeisenbergAnisotropicPart
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicMatrixQuotientPeriodicIntegralContinuousPaStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicMatrixQuotientPeriodicIntegralContinuousPa
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WittSourceMixedCoordHeisenbergRestriction
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.AdjointIsotropicDecomposition
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WittDecompositionMixedCoordsRankZero
@@ -31,7 +31,7 @@ theorem heis_mixS : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ), IsStdChar D �
   · have hX : Continuous (d.extX T) := continuous_id.matrix_mul continuous_const
     have hY : Continuous (d.extY T) := continuous_id.matrix_mul continuous_const
     have h0 : Continuous (d.ext0 T) := continuous_id.matrix_mul continuous_const
-    have K := GlobalTheory.T.adelicMatrixQuotient_periodicIntegral_continuous_param D T.rank ρ v (Mx D T.rank ρ × WO S₀ T)
+    have K := _root_.GlobalTheory.Unf.ParCont.parCont D T.rank ρ v (Mx D T.rank ρ × WO S₀ T)
       (fun a p => heisO ψ S T (d.extY T a) (heisO ψ S T (d.extX T p.1) (heisO ψ S T (d.ext0 T p.2) f)) 0) ?_
       (fun γ hγ x p => d.integrandS_periodic hf p.1 p.2 γ hγ x)
     · exact K.2.1

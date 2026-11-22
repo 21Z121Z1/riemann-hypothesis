@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FourierJac
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaTensorRuleOrthogonalSumSource
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilRepConjSourceLineEqTargetLine
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsWeilDatumHermitianPair
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LinkedLineVectorsInvertibleOnThetaFunctionsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LinkedLineVectorsInvertibleOnThetaFunctions
 
 noncomputable section
 
@@ -54,7 +54,7 @@ theorem perAll_box_eq_per : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (ρ : 
   have hrk : B.L.rank = L'.rank := B.line.1.trans hL'.1.symm
   have hres : ResEta D χz B.L.rank := by rw [hrk]; exact hoz.resT
   obtain ⟨omL, hoL⟩ := GlobalTheory.WeilDatumExistence.weilDatumExists D B.L J.W₀ ψ χz s.χW hψ hoz.hecT hoa.hecT hres hoa.resT
-  obtain ⟨hg, -⟩ := GlobalTheory.T.linkedLineVectors_invertible_on_theta_functions D ψ hψ B.L L' J.W₀ B.ζ ζ' B.line hL' l
+  obtain ⟨hg, -⟩ := _root_.GlobalTheory.LinkInvTheta.link_inv_theta D ψ hψ B.L L' J.W₀ B.ζ ζ' B.line hL' l
   have hg' : l.τᴴ ⬝ (B.L.gram ⬝ l.τ) = (((1 : ℤ) : D.host.E) * (D.host.xi0 * star D.host.xi0)) • L'.gram := by
     rw [Int.cast_one, one_mul]; exact hg
   have hcl := (GlobalTheory.ConjLine.conj_line D ψ B.L L' J.W₀ l.τ hrk hg' χz s.χW χ' omL omz hoL hoz Ξ₂ hΞ₂).2

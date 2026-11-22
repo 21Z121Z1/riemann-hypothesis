@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.LocalRingCardinality.HostCls
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.RecHeightSWith
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogLeLOfLeCond
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FockPartitionRowsNumericDatumMemIccStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FockPartitionRowsNumericDatumMemIcc
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions Formalism.L2.Col Formalism.L2.DIV Formalism.L2.Ker GlobalTheory.Mem GlobalTheory.Mem.Chr GlobalTheory.Mem.Col2 GlobalTheory.Core GlobalTheory.Core.Ht2 GlobalTheory.CoreHt
 open GlobalTheory.ColumnNormCompare (numDatumOfParameters codeRec plRec)
 attribute [local instance] GlobalTheory.Mem.Col2.starE
@@ -14,7 +14,7 @@ open GlobalTheory.IndefiniteRowSideFullHecke GlobalTheory.ColumnNormCompare.Size
 theorem sizeRowsS_numRec : ∀ (D : D7) (L : SizeData₂ D) (CY : ℝ), HtRowsS L CY → ∀ (u : D.what₂.Word),
     SizeRowsS CY (numDatumOfParameters D L) (codeRec L u) := by
   intro D large₂ CY hR u
-  have hnu := GlobalTheory.T.fockPartitionRows_numericDatum_mem_Icc D large₂ CY hR u
+  have hnu := _root_.GlobalTheory.CoreHt.RowsRangeS.nu_numRec_mem D large₂ CY hR u
   obtain ⟨⟨P⟩, ⟨s2, s3, s4⟩, hg, ⟨s10, -, -, -, s14⟩, ⟨n, hn⟩, -⟩ := hR
   have hDel : ((⌊D.s.Del⌋₊ : ℕ) : ℚ) = D.s.Del := by rw [hn, Nat.floor_natCast]
   have hSc : (numDatumOfParameters D large₂).Sc = large₂.Sc := by

@@ -7,14 +7,14 @@ import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogResolutionFromOrbi
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HoloMapOfLocalProductCharts
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MinorIJLowerUniSwap
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PMatStepColsEntryStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsLowerUniBlockDiagFactorizationStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsLowerUniBlockDiagFactorization
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockMapFrameRestriction
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockMapFrameRestrictionRegular
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FrameDataLocalResolutionOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FrameDataLocalResolutionRegular
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.CardPIdxEqChooseStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.CardPIdxEqChoose
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FrameDataLocalDegreeEstimate
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.FrameDataLocalDegreeBoundStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.FrameDataLocalDegreeBound
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FrameDataLocalNormComparison
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PRhoContinuous
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.UpVSmul
@@ -76,7 +76,7 @@ theorem main : ∀ (K : Type) [Fintype K] (ι : K → Type) [∀ k, Fintype (ι 
     have hh := _root_.GlobalTheory.CompanionTheory.Ar.PB.PFl.Holo.pPhi_holo K ι Φ y Ψ N j M n e Rb keep Kk ιk κ v F kb V bl r h ε hc
     have hr := _root_.GlobalTheory.CompanionTheory.Ar.PB.PFl.ChartRead.chart_reads K ι Φ y Ψ N j M n e Rb keep Kk ιk κ v F kb V bl r h ε hc
     have ho := GlobalTheory.CompanionTheory.Ar.PB.PFl.Onto.main K ι Φ y Ψ N j M n e Rb keep Kk ιk κ v F kb V bl r h ε hc
-    have hO := GlobalTheory.T.frameData_local_degree_bound K ι Φ y Ψ N j M n e Rb keep Kk ιk κ v F kb V bl r h ε hc
+    have hO := _root_.GlobalTheory.CompanionTheory.Ar.PB.PFl.POpn.main K ι Φ y Ψ N j M n e Rb keep Kk ιk κ v F kb V bl r h ε hc
     have hb' := _root_.GlobalTheory.CompanionTheory.Ar.PB.PFl.Orb.main K ι Φ y Ψ N j M n e Rb keep Kk ιk κ v F kb V bl r h ε hc
     have ht := _root_.GlobalTheory.CompanionTheory.Ar.PB.PFl.PCont.main K ι Φ y Ψ N j M n e Rb keep Kk ιk κ v F kb V bl r h ε hc
     have hi := GlobalTheory.CompanionTheory.Ar.PB.PFl.Imm.chart_immersion K ι Φ y Ψ N j M n e Rb keep Kk ιk κ v F kb V bl r h ε hc
@@ -154,7 +154,7 @@ theorem main : ∀ (K : Type) [Fintype K] (ι : K → Type) [∀ k, Fintype (ι 
     exact ⟨h1, h2⟩
   refine ⟨e, R, ?_, pr, ?_, ?_, hlast⟩
   · intro hall
-    rw [he, GlobalTheory.T.card_pIdx_eq_choose Ψ N j keep M.j_le hall, hd]
+    rw [he, _root_.GlobalTheory.CompanionTheory.Ar.PB.PFl.AllKept.card_pIdx_of_all Ψ N j keep M.j_le hall, hd]
   · refine GlobalTheory.CompanionTheory.Ar.PB.WMan.Coord.holoMap_of_coord e n R.X Rb.X R.A Rb.A pr fun x => ?_
     obtain ⟨ψ, kb, σ, h1, h2, h3⟩ := hlast x
     exact ⟨ψ, kb, σ, h1, h2, h3⟩

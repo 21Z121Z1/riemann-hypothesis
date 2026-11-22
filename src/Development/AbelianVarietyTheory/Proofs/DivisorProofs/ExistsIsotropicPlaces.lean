@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompactSetUni
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCompactSpecialUnitarySupportedAtPlaces
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRationalVectorIsotropicNondegeneratePlanes
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormSolutionAdelicFromArchimedeanStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdempotentAdelicNormEqOfLocalNormEqStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdempotentAdelicNormEqOfLocalNormEq
 open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.Published
 open scoped TensorProduct
 
@@ -60,5 +60,5 @@ theorem exists_isotropic_places : ∀ (F E : Type) [Field F] [NumberField F] [Fi
     letI : NontriviallyNormedField (v.adicCompletion F) := Valued.toNontriviallyNormedField _ _
     obtain ⟨z, hz, ⟨h1, ht1⟩, ⟨h2, ht2⟩⟩ :=
       _root_.GlobalTheory.PlaneNorm.exists_rational_middle_vector F E σ hσ (Fv F v) (HeightOneSpectrum.denseRange_algebraMap F v) M J hM hJ ⟨u, hu0, hu⟩ x y hx hy
-    exact ⟨z, hz, ⟨h1, GlobalTheory.T.idempotent_adelic_norm_eq_of_local_norm_eq F E σ v ε' hε' _ ht1⟩, ⟨h2, GlobalTheory.T.idempotent_adelic_norm_eq_of_local_norm_eq F E σ v ε' hε' _ ht2⟩⟩
+    exact ⟨z, hz, ⟨h1, _root_.GlobalTheory.NormFin.idem_norm_eq_of_local F E σ v ε' hε' _ ht1⟩, ⟨h2, _root_.GlobalTheory.NormFin.idem_norm_eq_of_local F E σ v ε' hε' _ ht2⟩⟩
 end GlobalTheory.PlaceIso

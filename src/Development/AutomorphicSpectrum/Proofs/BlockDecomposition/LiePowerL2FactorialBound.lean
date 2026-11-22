@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SkewAdjointCasimirSpectralStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SkewAdjointCasimirSpectral
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieSkewAdjointL2
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CasimirSignatureMemCenterStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CasimirSignatureMemCenter
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CenterCommutesLieAction
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDimStableSubspace
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.CuspDiscreteDecompositionGL
@@ -80,7 +80,7 @@ theorem mem_span_basis {W Y : Submodule ℂ (Sm E a)} (hYW : Y ≤ W) {m : ℕ} 
 
 theorem factorial_bound : ∀ (E : Type) [Field E] [NumberField E] [IsTotallyComplex E] (a : ℕ) (μ : Measure (GA E a)) [μ.IsHaarMeasure] [μ.IsMulRightInvariant] (W : Submodule ℂ (Sm E a)), IsStable W → (∀ φ ∈ W, IsAutForm φ ∧ MemL2Quotient (latticeGL E a) μ φ.1) → ∀ φ ∈ W, ∀ X : GlobalTheory.CuspRep.Lie E a, ∃ M C : ℝ, ∀ (k : ℕ) (h : MemL2Quotient (latticeGL E a) μ (((lie E a X) ^ k) φ).1), ‖h.toL2‖ ≤ M * C ^ k * (k.factorial : ℝ) := by
   intro E _ _ _ a μ _ _ W hW hA φ hφ X
-  obtain ⟨ι, _, _, Z, K, hspan, hskewK, hΩ⟩ := GlobalTheory.T.casimir_signature_mem_center E a
+  obtain ⟨ι, _, _, Z, K, hspan, hskewK, hΩ⟩ := _root_.GlobalTheory.CompanionTheory.CasFamily.exists_family E a
   have hL : ∀ (X : GlobalTheory.CuspRep.Lie E a), ∀ ψ ∈ W, lie E a X ψ ∈ W := fun X ψ h => hW (.lie X) ψ h
   have hm : ∀ ψ ∈ W, MemL2Quotient (latticeGL E a) μ ψ.1 := fun ψ h => (hA ψ h).2
   have hc : ∀ ψ ∈ W, Continuous ψ.1 := fun ψ h =>
@@ -120,7 +120,7 @@ theorem factorial_bound : ∀ (E : Type) [Field E] [NumberField E] [IsTotallyCom
   have hT : Restricts W (∑ i, ((x i : ℝ) : ℂ) • Zop i) (lie E a X) := by
     rw [← hx, lie_sum]
     exact Restricts.sum _ fun l => (hZ l).smul _
-  obtain ⟨M, C, hMC⟩ := GlobalTheory.T.skew_adjoint_casimir_spectral W (L2 (latticeGL E a) μ) j ι Zop K _
+  obtain ⟨M, C, hMC⟩ := _root_.GlobalTheory.CompanionTheory.AnalyticWord.analytic_bound W (L2 (latticeGL E a) μ) j ι Zop K _
     (fun e => (⟨(b e).1, hYW (b e).2⟩ : W)) d o (fun κ i l => ((r (κ, i) l : ℝ) : ℂ))
     hskew hcomm hcentral hd ho (fun i => (x i : ℂ)) ⟨φ, hφ⟩ (mem_span_basis hYW b hφY)
   refine ⟨M, C, fun k h => ?_⟩

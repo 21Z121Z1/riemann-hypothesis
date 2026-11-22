@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.JetHarmonics.AbsGeneratorRatioEqO
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeIsogenyLiftsToLatticeMapScalingForms
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeKernelComplexPointMatchesCosetsStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisenbergTranslateVacuumReadRationalPoints
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRationalApproxFinitePointVacuumLevelStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRationalApproxFinitePointVacuumLevel
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckePointThetaTraceEqPhasedTranslateSumStatement
 open Formalism.BasicNotions Formalism.MainNotions Formalism.BasicNotions.TH Formalism.L2.Theta Formalism.L2.DIV Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.FWT Formalism.L2.Pj Formalism.IndefR.Datum ReciprocityTheory.ChartRestriction.G.PullbackSections ReciprocityTheory.ChartRestriction.G.Geo.Tor
 open Formalism.L2.NTheta (IsIdemAt)
@@ -64,7 +64,7 @@ theorem theta_trace_read : ∀ (D : D7), GlobalTheory.IndefiniteRowSideFullHecke
           x = actO (Vc D i) (Wc D i) 1 (γ' * h)⁻¹ (ratW (Wc D i) (Vc D i) ℓ - GlobalTheory.IndefiniteRowSideFullHecke.OrthonormalLatticeThetaValues.realPt (Vc D i) (Wc D i) ℓ) + w) := by
     intro x
     by_cases h0 : x.map (infPart D) = 0
-    · obtain ⟨ℓ, w, h1, h2, h3⟩ := GlobalTheory.T.exists_rational_approx_finitePoint_vacuumLevel D G Pl0 T0 A T R hLev hFam hThP i (γ' * h) x h0
+    · obtain ⟨ℓ, w, h1, h2, h3⟩ := _root_.GlobalTheory.FinApprox.exists_rat_approx D G Pl0 T0 A T R hLev hFam hThP i (γ' * h) x h0
       exact ⟨ℓ, w, fun _ => ⟨h1, h2, h3⟩⟩
     · exact ⟨0, 0, fun h' => absurd h' h0⟩
   choose ℓ u hℓu using hex

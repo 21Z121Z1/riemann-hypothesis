@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsLeadOfUnif
 import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
 import Development.AbelianVarietyTheory.Definitions.Uniformization.SeriesFrame
 import Development.AbelianVarietyTheory.Definitions.QuasicoherentCohomology.BijectiveSmulChartSec
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralThetaFamilyPrescribedLeadingTermStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralThetaFamilyPrescribedLeadingTerm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeightZeroSectionNonzeroAtOrigin
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsThetaNormalisationConstantOrigin
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraitExpansionScalarsRescale
@@ -24,7 +24,7 @@ theorem exists_unit_normalisation : ∀ (R : Type) [CommRing R] [IsDomain R] [Is
   refine ⟨max k₁ 1, fun k hk Φ hΦ => ?_⟩
   obtain ⟨b₀, hb₀⟩ := hk₁ k (le_of_max_le_left hk)
   have hk1 : 1 ≤ k := le_of_max_le_right hk
-  obtain ⟨F₀, hF₀⟩ := (GlobalTheory.T.exists_integralThetaFamily_prescribed_leadingTerm R hR D).2 k hk1 b₀
+  obtain ⟨F₀, hF₀⟩ := (_root_.GlobalTheory.ThFam.exists_intFam_lead R hR D).2 k hk1 b₀
   obtain ⟨c₁, c₂, hc₂, hc⟩ := _root_.GlobalTheory.Mum.exists_norm_const R hR D C k hk1 b₀ hb₀ F₀ hF₀ (Φ F₀)
   refine ⟨fun F => scal C.A.A.hom (algebraMap R (FractionRing R) c₁ / algebraMap R (FractionRing R) c₂) • Φ F,
     fun W _ _ _ T => ?_⟩

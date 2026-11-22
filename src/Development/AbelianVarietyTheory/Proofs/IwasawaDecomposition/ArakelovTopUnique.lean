@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GenericallyS
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RationalIsometryIsometric
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CombPowIsometric
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SelfIntersectionShiftStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InducedMetricPullbackStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InducedMetricPullback
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InducedMetricPow
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InducedMetricShiftElement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClosedPointGeometricFibresFinite
@@ -52,7 +52,7 @@ theorem Reads.pull (hB : GlobalTheory.Published.ArBirational) (h : Reads A M L k
   obtain ⟨U, hU, hU'⟩ := hU
   have := M.ar.isIntegral
   have := N.ar.isIntegral
-  exact ⟨GlobalTheory.T.induced_metric_pullback F C Y A M N π hπ hj L k cf hI, a,
+  exact ⟨_root_.GlobalTheory.TrueGeo.InducedPull.induced_pull F C Y A M N π hπ hj L k cf hI, a,
     hB _ M.X N.X M.p N.p Y.dim M.ar N.ar (_root_.GlobalTheory.ModelCharts.genSmooth_model F Y M) (_root_.GlobalTheory.ModelCharts.genSmooth_model F Y N) π hπ U hU hU' L a ha, ht⟩
 
 theorem Reads.pow (hE : GlobalTheory.Published.ArCalc) (h : Reads A M L k cf t) (m : ℕ+) :

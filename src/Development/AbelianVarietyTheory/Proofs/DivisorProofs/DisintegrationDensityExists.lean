@@ -1,10 +1,11 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSupercuspidalOfIsCuspidal
 import Development.AbelianVarietyTheory.Definitions.Divisors.MaxWeightGL1EqOne
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentralTranslateDetOneCompact
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VerticalPairPowerSumVanish
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalUnipotentVanishing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockUnipotentMapContinuousMulDetOneCompactSuppo
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralUnipotentRadicalCoefficientCoinvariantEqStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralUnipotentRadicalCoefficientCoinvariantEq
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicIsNonarchimedeanLocalField
 
 open MeasureTheory Matrix GlobalTheory.PRep GlobalTheory.SmGL ValuativeRel GlobalTheory.SplitWeil GlobalTheory.StepData
 
@@ -60,7 +61,7 @@ theorem isCuspFn_cutCoef : ∀ (k : Type) [Field k] [ValuativeRel k] [Topologica
     have := hbi 1 K0.one_mem (g⁻¹ * y) hy g
     rwa [one_mul, mul_inv_cancel_left] at this
   obtain ⟨C, hC, hCs⟩ := (GlobalTheory.CuspCoef.isSupercuspidal_of_isCuspidal k N V π hπ).2 v l hl
-  obtain ⟨D, hD, hDs⟩ := GlobalTheory.T.central_translate_det_one_compact k N C hC
+  obtain ⟨D, hD, hDs⟩ := _root_.GlobalTheory.CentreCpt.exists_compact_center_mul k N C hC
   have hcs : HasCompactSupport f := by
     refine HasCompactSupport.intro hD fun g hg => ?_
     rw [hf]
@@ -73,7 +74,7 @@ theorem isCuspFn_cutCoef : ∀ (k : Type) [Field k] [ValuativeRel k] [Topologica
   intro a b e ha hb μ hμ u hu g h
   obtain ⟨huc, hum, hud, hup⟩ := _root_.GlobalTheory.blockUnipotent_props k N a b e u hu
   by_cases hg : ValuativeRel.valuation k (g : Matrix (Fin N) (Fin N) k).det = 1
-  · refine GlobalTheory.T.integral_unipotentRadical_coefficient_coinvariant_eq_zero k N V π hsm a b μ hμ u huc hum (l ∘ₗ π (g * h⁻¹)) (π h v)
+  · refine _root_.GlobalTheory.UnipCoefInt.integral_coef_eq_zero k N V π hsm a b μ hμ u huc hum (l ∘ₗ π (g * h⁻¹)) (π h v)
       (GlobalTheory.T.cuspidal_unipotent_vanishing k N V π hπ a b e ha hb u hu _) _ (hup f hcs g h) fun X => ?_
     have hd : ValuativeRel.valuation k ((g * (h⁻¹ * u X * h) : GL (Fin N) k) : Matrix (Fin N) (Fin N) k).det = 1 := by
       simp only [Units.val_mul, Matrix.det_mul, hud X, map_mul, hg, one_mul, mul_one]

@@ -12,7 +12,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasValLogOfHasValFo
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaEvalChar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasValLogOfMulSelfEqZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiffCoeffsInIdealTopPowerSeriesLog
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubstOneAddXPowLogEqNsmulStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubstOneAddXPowLogEqNsmul
 open MvPowerSeries GlobalTheory GlobalTheory.Katz GlobalTheory.QLog GlobalTheory.PDivGroup GlobalTheory.Sandwich GlobalTheory.IndefiniteRowSideFullHecke.EpsilonPairingZeta GlobalTheory.PDivLat GlobalTheory.FormalCalc WittVector
 
 set_option autoImplicit false
@@ -103,7 +103,7 @@ theorem pow_mul_logValue : ∀ (p : ℕ) [Fact p.Prime] (O : Type) [CommRing O] 
   have h1 : HasVal p (fun j => Ev (u j)) (PowerSeries.log F.Q : MvPowerSeries Unit F.Q) (algebraMap F.B F.Q x) := by
     rw [hEu]; exact _root_.GlobalTheory.QLog.SqZero.hasVal_log_of_mul_self_eq_zero F.B F.Q p x hxx
   have h2 := _root_.GlobalTheory.QLog.hasVal_subst p F.B O F.Q F.θ hF Unit (fun _ => e - 1) hnile Ev hEv Unit u _ _ hu0 hD h1
-  rw [hu, GlobalTheory.T.subst_one_add_X_pow_log_eq_nsmul F.B F.Q (p ^ n)] at h2
+  rw [hu, _root_.GlobalTheory.Proof.subst_one_add_X_pow_log_eq_nsmul.subst_pow_log F.B F.Q (p ^ n)] at h2
   have h3 := (_root_.GlobalTheory.QLog.ValLin.hasVal_add_smul_map p F.B O F.Q F.θ hF Unit (fun _ => e - 1) _ 0 q₁ 0 hq₁).2.1 ((p ^ n : ℕ) : F.Q)
   have h4 := HasVal.unique hF h3 h2
   refine ⟨j + b', ?_⟩

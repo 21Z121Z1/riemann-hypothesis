@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ReducedFibresAlmostAllStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ReducedFibresAlmostAll
 
 open Polynomial
 
@@ -25,7 +25,7 @@ theorem algebraMap_norm_mem_span {R S : Type} [CommRing R] [CommRing S] [Algebra
 theorem main : ∀ (k A : Type) [Field k] [IsAlgClosed k] [CharZero k] [CommRing A] [IsDedekindDomain A] [Algebra k A] [Algebra k[X] A] [IsScalarTower k k[X] A] [Module.Finite k[X] A] [Module.Free k[X] A] (g : A) (s : ℕ), g ≠ 0 → ∃ (q : k[X]) (r : ℕ) (Q : Fin r → Ideal A), q.Monic ∧ q.natDegree = s ∧ (∀ i, (Q i).IsMaximal) ∧ Function.Injective Q ∧ (∀ i, g ∉ Q i) ∧ Ideal.span {algebraMap k[X] A q} = ∏ i, Q i := by
   intro k A _ _ _ _ _ _ _ _ _ _ g s hg
   classical
-  obtain ⟨δ, hδ0, hδ⟩ := GlobalTheory.T.exists_nonzero_sub_C_not_mem_sq_maximal k A
+  obtain ⟨δ, hδ0, hδ⟩ := _root_.GlobalTheory.reduced_fibres_almost_all k A
   set u := algebraMap k[X] A with hu
   set N := Algebra.norm k[X] g with hNdef
   have hN : N ≠ 0 := Algebra.norm_ne_zero_iff.mpr hg

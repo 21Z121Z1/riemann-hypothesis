@@ -1,7 +1,7 @@
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.NormOneAtOne
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemSecondModelStabilizerIffCarriesRowLattice
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SupportedStabilizerConjSatisfiesDeepCongruenceStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SupportedStabilizerConjSatisfiesDeepCongruence
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SecondModelFinitePartFrameActionMatrix
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnitaryAdelicPointInfiniteMatricesEqOneOfFinite
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnitaryClassRepresentativesBijective
@@ -78,7 +78,7 @@ theorem levrow : ∀ (D : D7) (X : Formalism.L2.SG.HidaSetting.HidaSetting D) (h
     rw [e] at h4
     exact h4
   · intro h2
-    refine ⟨?_, GlobalTheory.T.supportedStabilizer_conj_satisfies_deepCongruence X h u v hv _ hκ h2⟩
+    refine ⟨?_, _root_.GlobalTheory.Core.Mi.KTwoAwayLevel.k2cong_conj_of_grpAt X h u v hv _ hκ h2⟩
     exact Formalism.L2.SG.Pf.unitaryCongruence.K_mul X.B.I (Formalism.L2.SG.Pf.unitaryCongruence.K_mul X.B.I
       (Formalism.L2.SG.Pf.unitaryCongruence.K_inv X.B.I (X.xu_K u)) h2) (X.xu_K u)
 

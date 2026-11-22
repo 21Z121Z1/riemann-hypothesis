@@ -9,16 +9,20 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.B
 import Development.AbelianVarietyTheory.PublishedTheorems.SemiabelianTori.GeometricallyConnectedSplitTorusAff
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabComp
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsAbelianPartExtensionStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsAbelianPartExtension
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianPartBaseChange
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsPrincipalBaseChangeIff
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianPartLieSignature
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieSignatureNumberFieldStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieSignatureNumberField
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PrincipalHermitianFibre
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieMetricHeightBound
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SemiabelianLieMetricHeightStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.HermitianBundleQuotientDegreeBoundStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsCocharacterLieModelStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.HermitianBundleQuotientDegreeBound
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsOrthFull
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsCocharacterLieModel
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCocharLie
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelRankEqGeneric
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SemiAbelianPullbackTorusExtensionStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianPartMapsCompatibleRight
@@ -58,13 +62,13 @@ theorem slope_unif : N1ab → PartI → Geo.ResK.ResKStatement → GlobalTheory.
   obtain ⟨C₀, hC₀, hSl⟩ := hS
   obtain ⟨Cc, hCc1, hCcK, hCc₁, hCc₀⟩ : ∃ Cc : ℝ, 1 ≤ Cc ∧ K₀ ≤ Cc ∧ C₁ ≤ Cc ∧ C₀ ≤ Cc :=
     ⟨max (max K₀ C₁) (max C₀ 1), by simp, by simp, by simp, by simp⟩
-  obtain ⟨C', hC', hPB⟩ := GlobalTheory.T.hermitian_bundle_quotient_degree_bound (Module.finrank Ω 𝔐.Li) Cc hCc1
+  obtain ⟨C', hC', hPB⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PtBoundary.slopeMax_le_log (Module.finrank Ω 𝔐.Li) Cc hCc1
   refine ⟨C', hC', fun L₀ _ _ z₀ => ?_⟩
-  obtain ⟨L₁, _, _, e₁, ⟨P₁⟩⟩ := GlobalTheory.T.exists_abelian_part_extension E H 𝔐.X 𝔐.t L₀ (spMap (algebraMap (𝓞 L₀) L₀) ≫ z₀)
+  obtain ⟨L₁, _, _, e₁, ⟨P₁⟩⟩ := _root_.GlobalTheory.CompanionTheory.Ar.abPart_exists E H 𝔐.X 𝔐.t L₀ (spMap (algebraMap (𝓞 L₀) L₀) ≫ z₀)
   obtain ⟨σ₁⟩ : Nonempty (L₁ →+* ℂ) := inferInstance
   obtain ⟨P₁c, _, mBc, _, _⟩ := _root_.GlobalTheory.CompanionTheory.Ar.AbPartFieldChange.exists_baseChange E H 𝔐.X 𝔐.t L₁ ℂ _ P₁ σ₁
   have hpr : IsPrincipal P₁.tB := (_root_.GlobalTheory.CompanionTheory.Ar.isPrincipal_iff_of_sabMap_field E H L₁ ℂ σ₁ P₁.tB P₁c.tB mBc).1 (hQ _ P₁c).1
-  obtain ⟨L, _, _, e₂, t', tK, ⟨m'⟩, ⟨mP⟩⟩ := GlobalTheory.T.lie_signature_number_field hN hP E H L₁ P₁.tB hpr
+  obtain ⟨L, _, _, e₂, t', tK, ⟨m'⟩, ⟨mP⟩⟩ := _root_.GlobalTheory.CompanionTheory.Ar.SabModel.exists_sab_model hN hP E H L₁ P₁.tB hpr
     (_root_.GlobalTheory.CompanionTheory.Ar.AbPartConst.lieMult_constant_along_cmType E H D l Xo c Y S Ω K J y 𝔐 L₁ _ P₁)
   have hprK : IsPrincipal tK := (_root_.GlobalTheory.CompanionTheory.Ar.isPrincipal_iff_of_sabMap_field E H L₁ L e₂ P₁.tB tK mP).2 hpr
   refine ⟨L, inferInstance, inferInstance, e₂.comp e₁, fun B MB hB => ?_⟩
@@ -86,7 +90,7 @@ theorem slope_unif : N1ab → PartI → Geo.ResK.ResKStatement → GlobalTheory.
   have hφ' : IsGrpPullback P₂.τ.B t'.G (spMap (algebraMap (𝓞 L) L)) (P₂.e.hom.left ≫ w ≫ m'.φ) := by
     have := (isGrpPullback_iso P₂.e).comp (hwp.comp m'.cart)
     simpa using this
-  obtain ⟨MT, hMT⟩ := GlobalTheory.T.exists_cocharacter_lie_model (Sp L) P₂.τ.X L (𝟙 _)
+  obtain ⟨MT, hMT⟩ := _root_.GlobalTheory.CompanionTheory.Ar.TorusLie.exists_lieModel_splitTorus (Sp L) P₂.τ.X L (𝟙 _)
   have hcart : IsGrpPullback P₂.tK.G 𝔐.t.G (spMap (algebraMap (𝓞 L) L) ≫ (spMap (RingOfIntegers.mapRingHom (e₂.comp e₁)) ≫ z₀)) P₂.m.φ := by
     rw [hz]; exact P₂.m.cart
   obtain ⟨r, bs, hbs⟩ := hT L _ P₂.tK.G P₂.m.φ P₂.τ hcart

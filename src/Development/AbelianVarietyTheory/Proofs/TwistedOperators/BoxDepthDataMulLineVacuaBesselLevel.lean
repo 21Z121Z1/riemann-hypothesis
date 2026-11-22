@@ -2,7 +2,9 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsAuxiliaryVectorWittDec
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BesselStepCoreComponentMemDepthLatticeGridCore
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BesselStepLineComponentEqKappaLatticePoint
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LinkedLineHomTransportLatticeVacuaStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LinkedLineHomTransportLatticeVacua
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HermitianLinkMapAdditiveRationalEquivariant
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HermitianAdjointLawsStandardCharacter
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links MeasureTheory IsDedekindDomain NumberField Matrix
 open GlobalTheory.MixModel GlobalTheory.MixPer GlobalTheory.Grow GlobalTheory.Unf GlobalTheory.ChiGrid GlobalTheory.FunObj GlobalTheory.SepRows GlobalTheory.Asc
 open scoped TensorProduct
@@ -27,13 +29,13 @@ theorem main : OnStd fun {D} _ _ {sc} {G} W F => ∀ ρ (h : 2 * ρ + 2 ≤ D.R.
     obtain ⟨w, hw, hw'⟩ := _root_.GlobalTheory.LineComp.main D hq T L μ0 hL sc G W M hM F hF ρ h u hu
     rw [OrthDec.heisO_boxS, map_nsmul, Prod.smul_fst, Prod.smul_snd,
       h1.2.1 _ (_root_.GlobalTheory.AscFin.pcBF_core_mem_latCore D hq T L μ0 hL sc G W M hM F hF ρ h u hu), hw',
-      (GlobalTheory.T.linked_line_hom_transport_lattice_vacua D W.ψ hn _ _ _ _ (F.line ρ) (F.lnk ρ) _ Ξ₂ h3.2 w hw).1]
+      (_root_.GlobalTheory.KapVac.kappa_vac D W.ψ hn _ _ _ _ (F.line ρ) (F.lnk ρ) _ Ξ₂ h3.2 w hw).1]
   · intro e he u hu hh
     obtain ⟨w, hw, hw'⟩ := _root_.GlobalTheory.LineComp.main D hq T L μ0 hL sc G W M hM F hF ρ h u hu
     have ha : IsHalf e ((F.oB ρ h).resS (G.V (.core (2 * ρ + 1))) u).1 := isHalf_mul hh _
     have hb : IsHalf e ((F.oB ρ h).resS (G.V (.core (2 * ρ + 1))) u).2 := isHalf_mul hh _
     rw [OrthDec.heisO_boxS, h1.2.2 e he _ (_root_.GlobalTheory.AscFin.pcBF_core_mem_latCore D hq T L μ0 hL sc G W M hM F hF ρ h u hu) ha, hw']
     rw [hw'] at hb
-    rw [(GlobalTheory.T.linked_line_hom_transport_lattice_vacua D W.ψ hn _ _ _ _ (F.line ρ) (F.lnk ρ) _ Ξ₂ h3.2 w hw).2 e he hb]
+    rw [(_root_.GlobalTheory.KapVac.kappa_vac D W.ψ hn _ _ _ _ (F.line ρ) (F.lnk ρ) _ Ξ₂ h3.2 w hw).2 e he hb]
 
 end GlobalTheory.AscFin.BoxBF

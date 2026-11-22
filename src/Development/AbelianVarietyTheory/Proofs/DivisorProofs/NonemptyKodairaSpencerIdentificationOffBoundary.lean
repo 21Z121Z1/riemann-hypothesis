@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsKSIffKsRel
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CrysToDRBijective
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Spread
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRegularKodairaSpencerCoordinateAffineOffBoStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRegularKodairaSpencerCoordinateAffineOffBo
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KodairaSpencerCoordinateUniqueNeZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KodairaSpencerCoordsTwoChartsTransition
 
@@ -50,7 +50,7 @@ theorem canId_nonempty : GlobalTheory.Published.AbelianDeRham → ∀ (E : Type)
       (z : Sp K ⟶ M.X) (hz : ⊤ ≤ z ⁻¹ᵁ ksOpen M t.1 t.2), KSRel M t.1 t.2 z (GlobalTheory.FlagMod.ev z _ hz a) := fun t =>
     GlobalTheory.FlagMod.glue_field (ksOpen M t.1 t.2) (fun L _ z x => KSRel M t.1 t.2 z x)
       (fun L _ z hz x y hx hy => (_root_.GlobalTheory.CompHS.ksRel_unique_ne_zero M hKS t.1 t.2 L z hz).1 x y hx hy)
-      (fun W hW hle => GlobalTheory.T.exists_regular_kodairaSpencerCoordinate_affine_off_boundary M hdR hKS t.1 t.2 W hW hle)
+      (fun W hW hle => _root_.GlobalTheory.CompHS.exists_regular_ksRel M hdR hKS t.1 t.2 W hW hle)
   choose a ha using hloc
   have cover : ∀ y ∈ M.off, ∃ t : M.K.bundle.ι × X.F.J, y ∈ ksOpen M t.1 t.2 := by
     intro y hy

@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnitaryOnTheta
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsFinWeil
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisThetaLaws
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchurLemmaThetaFunctionsOrientedPairStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchurLemmaThetaFunctionsOrientedPair
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicUnitaryEqRealMulFiniteSplit
 
 noncomputable section
@@ -44,7 +44,7 @@ theorem fin_eq_smul (hψ : IsStdChar D ψ (-1)) (hf : IsFinWeil ψ S T ΛS ΛT �
   obtain ⟨a, ha, b, hb, k, hk, l, hl, -, rfl⟩ := exists_parts p
   obtain ⟨om, hom⟩ := exists_extend (thetaSub ψ S T) Om
   have ho : ∀ p f (hf : IsThetaFunO ψ S T f), om p f = (Om p ⟨f, hf⟩ : WO S T → ℂ) := fun p f hf => hom p ⟨f, hf⟩
-  obtain ⟨c, -, hc⟩ := GlobalTheory.T.schurLemma_thetaFunctions_orientedPair D ψ hψ S T (of (k, l) * om (k⁻¹, l⁻¹))
+  obtain ⟨c, -, hc⟩ := _root_.GlobalTheory.ThetaSchur.schur D ψ hψ S T (of (k, l) * om (k⁻¹, l⁻¹))
     (fun f h1 => by
       rw [Module.End.mul_apply, ho _ f h1]
       exact hf.pres _ _ (Om _ ⟨f, h1⟩).2)

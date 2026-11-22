@@ -11,7 +11,9 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchingTripleSigna
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaIntegralsOfMinguez
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HypothesesAbsDet
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DefiniteThetaLiftContinuousInvariantHasDerivAt
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsWeilDatumGeneratorRealOneParamGroupStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsWeilDatumGeneratorRealOneParamGroup
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqTopOfTranslates
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.TwistedSquareThetaIntegralsEq
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.ThetaIntegralVanishesOnFiniteRelations
@@ -52,7 +54,7 @@ theorem definite_small_irreducible_lie_derivative : _root_.GlobalTheory.FunPr.Th
     | smul c x _ hx => exact GlobalTheory.OrientedHeis.theta_smul c hx
   have hth : IsThetaFunO ψ W₁ X Ψ := hthA Ψ hΨ
   have hpos : ∀ τ, (gramAt D W₁ τ).PosDef := fun τ => GlobalTheory.IndefiniteRowSideFullHecke.MassFormulaPositivity.posDef_of_hasSignature (hs₁ τ)
-  obtain ⟨Gn, hGn⟩ := GlobalTheory.T.exists_weilDatum_generator_realOneParamGroup D ψ W₁ X α (α / β) ωB hw θ hθ τ Y hY
+  obtain ⟨Gn, hGn⟩ := _root_.GlobalTheory.DefLift.Gen.exists_generator D ψ W₁ X α (α / β) ωB hw θ hθ τ Y hY
   have hGΨ : ∀ (g : GA D W₁) (k : GA D X),
       HasDerivAt (fun t : ℝ => thetaKO ωB g (k * oneP θ X τ Y t) Ψ) (thetaKO ωB g k Φ') 0 := by
     have hG : Gn Ψ = Φ' := by

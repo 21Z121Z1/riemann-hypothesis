@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Definitions.Foundations.IsHermND
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementReferenceCompactSubgroup
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GgNone
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianTotalMassLeGenericMassStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermOverRelationUniquenessStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermOverRelationUniqueness
 
 open ValuativeRel Formalism.MainNotions.S Formalism.MainNotions.S.Loc GlobalTheory.HL
 open scoped Pointwise ENNReal Classical
@@ -40,7 +40,7 @@ theorem mass_pairingClass_bounds : ∀ {F : Type} [Field F] [ValuativeRel F] [To
 
   have hCl : ∀ (d' : LocNG.Datum P) (t' : Term V M r), LocNG.IsTermOver P d' t' →
       (H.Zhat t'.f t'.f' ∈ c1 ↔ Cl t') := fun d' t' h' =>
-    GlobalTheory.T.term_over_relation_uniqueness M hM H r k P hdim hrel d d' t t' hdt h' Y0 c1 hc1 ht
+    _root_.GlobalTheory.HL.PairingClass.mem_class_iff M hM H r k P hdim hrel d d' t t' hdt h' Y0 c1 hc1 ht
 
   have hg' : g = ∑' d' : R.RD, ENNReal.ofReal (LocNG.Datum.wt d0 d'.1) *
       ∑' t' : {t' // t' ∈ R.RT d'.1 ∧ ¬ LocNG.BBne (H := H) t' ∧ Cl t'},

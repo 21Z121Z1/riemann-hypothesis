@@ -14,7 +14,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LinearIndepend
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MtLatFgOfReps
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ImportsBis
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NotDvdDiscrIffRamificationIdx
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SecondStepHeckeOperatorsNormalisedSumsStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SecondStepHeckeOperatorsNormalisedSums
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteHomEqOfFramesKeepMatrices
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions Formalism.MainNotions.N Formalism.MainNotions.StandardLattice Formalism.ConjugateSelfDual ReciprocityTheory.Gal Formalism.L2 Formalism.L2.Host Formalism.L2.DIV Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.NX GlobalTheory.HeightCounting GlobalTheory.TwInputs GlobalTheory.SeriesTie GlobalTheory.ExportSeries NumberField IsDedekindDomain
@@ -67,7 +67,7 @@ theorem exists_preTie : GlobalTheory.Published.GlobalArtinReciprocity → ∀ (D
   refine ⟨{
     Dat := Dat, th := th, lev := lev, thPsi := thPsi, h1 := h1, thU := thU, thP := thP, MtLat := MtLat, h2 := g2, h3 := g3
     ρ := ρ, good := hρ, pin := hp, vec := hv, ν := ν, scalar := hν, tie := t
-    hecke := fun i j b => (heckeRead_iff_tie.1 (GlobalTheory.T.secondStep_heckeOperators_normalisedSums D Γ Pl0 I0 T A3 Ks R cG kKs hk R.C Rw (lowAll D) Pq hL eig θ Bs Sb v₀
+    hecke := fun i j b => (heckeRead_iff_tie.1 (_root_.GlobalTheory.HeightCounting.SerCopy.heckeRead_ysOf D Γ Pl0 I0 T A3 Ks R cG kKs hk R.C Rw (lowAll D) Pq hL eig θ Bs Sb v₀
       ρ hρ hp hC.lev hC.allPl hH hSb i j b (ν i j b))).1
     bad := hbad, ch := hch'
     join := fun PV hPV i j b k Q ψ hAd hT => ?_ }⟩

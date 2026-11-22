@@ -1,9 +1,9 @@
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.MultForOf
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CommutantReductionRealStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ScalarActionFifthRealStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InvariantPickRealStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviStabilityRealStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviRelationsRealStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CommutantReductionReal
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ScalarActionFifthReal
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InvariantPickReal
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviStabilityReal
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviRelationsReal
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SemisimpleClassificationReal
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.LeviCommutantWordReduction
@@ -11,6 +11,6 @@ import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.Archim
 namespace PositivityTheory.RgBcC.RealD
 
 theorem multFor_of_capCls (hCC : CapCls) : MultFor :=
-  multFor_of GlobalTheory.T.invariant_pick_real GlobalTheory.T.levi_stability_real GlobalTheory.T.levi_relations_real _root_.GlobalTheory.CompanionTheory.SemiClass.semiCls hCC GlobalTheory.T.commutant_reduction_real GlobalTheory.T.scalar_action_fifth_real
+  multFor_of _root_.GlobalTheory.CompanionTheory.InvPickKP.invPick _root_.GlobalTheory.CompanionTheory.LevBd.levStab _root_.GlobalTheory.CompanionTheory.LevChainRel.levRel _root_.GlobalTheory.CompanionTheory.SemiClass.semiCls hCC _root_.GlobalTheory.CompanionTheory.BlockCapelliWords.commutant_block_capelli_words _root_.GlobalTheory.CompanionTheory.CapScal.capScal
 
 end PositivityTheory.RgBcC.RealD

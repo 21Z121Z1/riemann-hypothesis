@@ -64,7 +64,7 @@ theorem char_restr [IsTopologicalAddGroup M] [LocallyCompactSpace M] [SecondCoun
     rw [hl]
     change U p.1.1 + p.2.1 = U (p.1.1 + p.2.1)
     rw [map_add, hfix _ p.2.2]
-  rw [← e, GlobalTheory.ModuLR.addEquivAddHaarChar_transport Ψ, GlobalTheory.T.addEquivAddHaarChar_prodCongr, addEquivAddHaarChar_refl, mul_one]
+  rw [← e, GlobalTheory.ModuLR.addEquivAddHaarChar_transport Ψ, _root_.GlobalTheory.ModuLR.addEquivAddHaarChar_prodCE, addEquivAddHaarChar_refl, mul_one]
 
 end Abstract
 

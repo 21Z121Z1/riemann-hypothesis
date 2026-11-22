@@ -4,7 +4,8 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnipotentLeviRadical
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FlagUnipotentLebesgueMeasureIsHaarOn
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HaarLieIsHaarOnUnipotentRadical
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HaarLieNilpotentEqLebesgueStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HaarLieNilpotentEqLebesgue
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.BlockAnti
 
 noncomputable section
 
@@ -268,7 +269,7 @@ theorem haarLie_entries : ∀ (k r : ℕ), IsHaarOn (Nset k r) (haarLie (Nset k 
     refine ⟨Matrix.of.symm (NHaar.coord k r (x, q)), hbij.mapsTo (Set.mem_univ (x, q)), ?_⟩
     rw [nCoords_coord, hq, hx]
   · have hΦ' : Continuous fun q => (Matrix.of.symm (NHaar.coord k r q) : Mt k r) := hΦ
-    rw [GlobalTheory.T.haar_lie_nilpotent_eq_lebesgue, Measure.map_smul, add_comm (r * (k + 1)), lebN, Measure.map_map cont_nCoords.measurable hΦ'.measurable]
+    rw [_root_.GlobalTheory.Amp.NLie.haarLie_eq_lebN, Measure.map_smul, add_comm (r * (k + 1)), lebN, Measure.map_map cont_nCoords.measurable hΦ'.measurable]
     exact congrArg _ entries_mp.map_eq
 
 end GlobalTheory.SnMass.NEntry

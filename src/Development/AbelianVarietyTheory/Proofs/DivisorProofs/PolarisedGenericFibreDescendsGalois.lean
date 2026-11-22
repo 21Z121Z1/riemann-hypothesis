@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FixedMemRangeFracti
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FractionFieldMapFiniteOfFiniteInjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGrpPullbackGenericFibreFractionFieldMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLineBundleGaloisDescentAbelianVarietyFinit
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGaloisConjugateGenericBundleIsoStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGaloisConjugateGenericBundleIso
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RigidifiedSymmetricOfSymmetricFieldExtensionPull
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipalPolarisationOfGroupSchemeIso
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianOfFieldExtensionPullbackProper
@@ -38,7 +38,7 @@ theorem polarisedGeneric : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRing
   obtain ⟨L, hL, hLL⟩ := _root_.GlobalTheory.Mum.GenDesc.exists_lb_descent_of_finite_aut (FractionRing R) (FractionRing R') (fracMap ρ hρ)
     (_root_.GlobalTheory.Mum.GenDesc.fracMap_finite R R' ρ hρ hfin.2.2) (Gal ρ) (fun σ => fracAut σ.1) (fun σ x => fracAut_fracMap hρ σ x)
     (_root_.GlobalTheory.Mum.GenDesc.fixed_mem_range R R' ρ hρ hgal) ((Over.pullback (jK R)).obj G) ((Over.pullback (jK R')).obj G') _ hab hκ L' hL'
-    (GlobalTheory.T.exists_galoisConjugate_genericBundle_iso R R' ρ hρ D D' hD A' G' U' a G β hpb.1.w hinv)
+    (_root_.GlobalTheory.Mum.GenDesc.exists_inv R R' ρ hρ D D' hD A' G' U' a G β hpb.1.w hinv)
   obtain ⟨hrig, hsym⟩ := _root_.GlobalTheory.Mum.GenDesc.rigidified_and_sym_of_field_extension _ _ (fracMap ρ hρ) _ _ _ hab hκ L L' hL hL' hLL hsym'
   have := hsemi.quasiCompact
   have := hsemi.separated

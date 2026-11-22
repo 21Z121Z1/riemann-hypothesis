@@ -15,9 +15,11 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsBase
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.LineLatAt
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.BaseMatrixGlApply
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SymLevelTestFunctionsAgreeRationalPoints
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualLatticeFrameChainStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualLatticeFrameChain
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsSelfDualCoordLatticeOfSelfDualFrame
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LevelPlacesUnderInjective
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LatticeCompletionEqOfLocalAgreementStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LatticeCompletionEqOfLocalAgreement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MovesLocalSuppIff
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualLatticeEqOfSplitPlaceFrameSpan
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LatticesAgreeAlmostEverywhere
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.InLatticeStabilizerAtPlacesIffPlaceSetProd
@@ -119,7 +121,7 @@ theorem move_main : ∀ {D : D7} {L : SizeData₂ D} {hT : GatTies D} {Gi : Form
       fun PP h => (E PP h).symm.trans (stdOrd (Fin D.R.k) (Fin D.R.t) j _ (hsj PP h))
     let M : ∀ i : {PP // PP ∈ (pk W).Pg ∨ QAll W PP}, GL (Fin (Yc D j).rank) (l i.1 i.2).k :=
       fun i => frameGL (FY i.1 i.2 j _ (hsj i.1 i.2)) (bas i.1 i.2 j _ (hsj i.1 i.2)) (σ i.1 i.2)
-    have hsd := GlobalTheory.T.self_dual_lattice_frame_chain W hW j hj
+    have hsd := _root_.GlobalTheory.Fam.sdY_frames W hW j hj
     obtain ⟨t, ht, Lt, hLt, hMv, hAgree, hMT⟩ := _root_.GlobalTheory.FinPl.BasePoint.exists_move D (Yc D j) ((pk W).ΛY j) (N j) ((pk W).βY j)
       hsd.1 (hN j hj) {PP // PP ∈ (pk W).Pg ∨ QAll W PP} (fun i => (l i.1 i.2).k)
       (fun i => (l i.1 i.2).q) hinj M
@@ -140,7 +142,7 @@ theorem move_main : ∀ {D : D7} {L : SizeData₂ D} {hT : GatTies D} {Gi : Form
             (hInt PP h j _ (hsj PP h))
         · push_neg at hex
           exact hAgree w (fun i => (hex i).symm)
-      have hEq := GlobalTheory.T.latticeCompletion_eq_of_local_agreement (Yc D j) Lt (N j) P hLt.1 (hN j hj).1 hloc
+      have hEq := _root_.GlobalTheory.FinPl.LocAgree.latV_eq_of_local (Yc D j) Lt (N j) P hLt.1 (hN j hj).1 hloc
       have := hMv P
       unfold GlobalTheory.FinPl.Moves at this ⊢
       rwa [← hEq]

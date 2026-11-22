@@ -14,7 +14,7 @@ import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomology
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousCochainFiltrationDecomposition
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SerreClassOfCechSpectralSequence
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DoubleComplexClassSurjective
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DoubleComplexLeadZeroOfClassZeroStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DoubleComplexLeadZeroOfClassZero
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DoubleComplexClassZeroOfLeadZero
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DoubleComplexLeadSurjectiveStatement
 
@@ -30,7 +30,7 @@ theorem row_iso_of_columns : ∀ {R : Type} [CommRing R] (K : DCx.{w} R) (a : �
   have hab : ∀ p q, a < q → Subsingleton ((K.col p).H q) := fun p q h => hK p q (ne_of_gt h)
   have hbe : ∀ p q, q < a → Subsingleton ((K.col p).H q) := fun p q h => hK p q (ne_of_lt h)
   have hs := _root_.GlobalTheory.CompanionTheory.CechSerre.clsZ_surjective_of_acyclic K a j hab
-  have hk := GlobalTheory.T.double_complex_lead_zero_of_class_zero K a j hab
+  have hk := _root_.GlobalTheory.CompanionTheory.CechSerre.RowKer.leadE_eq_zero K a j hab
   have hi := _root_.GlobalTheory.CompanionTheory.RowInj.clsZ_eq_zero_of_leadE K a j hbe
   have hl := GlobalTheory.T.double_complex_lead_surjective K a j hbe
   let c := clsZ K (a + j) j

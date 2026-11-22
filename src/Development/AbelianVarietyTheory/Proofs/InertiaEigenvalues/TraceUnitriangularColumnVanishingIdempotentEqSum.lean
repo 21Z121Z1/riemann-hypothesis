@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsMirabolicConjInvar
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GgOneAndIsClass
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WhittakerDimensionHarishChandraInductionMul
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraInductionRestrictionIsClassFunction
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GelfandGraevCharacterGLnNormAndReciprocityStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GelfandGraevCharacterGLnNormAndReciprocity
 
 open GlobalTheory.GLq Formalism.MainNotions.ArithmeticCylinders Polynomial
 open scoped Classical
@@ -89,6 +89,6 @@ theorem tr_eJ'_eq_sum_wh_der : ∀ (g : ℕ) [Fact g.Prime] (ψ : AddChar (ZMod 
   congr 1
   refine Finset.sum_congr rfl fun i hi => ?_
   have hi' := Finset.mem_range.mp hi
-  rw [key i (by omega), (GlobalTheory.T.gelfandGraevCharacterGLn_norm_and_reciprocity g ψ hψ (k - i) (by omega)).1]
+  rw [key i (by omega), (_root_.GlobalTheory.GLq.GGNorm.gg_norm g ψ hψ (k - i) (by omega)).1]
 
 end GlobalTheory.GLq.ExactMult

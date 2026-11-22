@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Geometrica
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsLocModelIsPrimeOf
 import Development.AbelianVarietyTheory.Definitions.Divisors.NotDominatesTopPlace
 import Development.AbelianVarietyTheory.Definitions.QuasicoherentCohomology.IsQuasiRegularSeqSelfIffLocalizationMaximal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffMemSpanOfWeightedHomogeneousRelationQuasiReStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffMemSpanOfWeightedHomogeneousRelationQuasiRe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeightedHomogenisationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DvrLocPrincipalPrime
 
@@ -42,7 +42,7 @@ theorem exists_weightedMonomialPlace : ∀ {L : Type} [Field L] (c : ℂ →+* L
   have hz0 : (z 0 : L) ≠ 0 := by
     intro h
     have h1 : z 0 = 0 := Subtype.ext h
-    have := GlobalTheory.T.coeff_mem_span_of_weightedHomogeneous_relation_quasiRegular z wt hw hz (wt 0) (X 0) (isWeightedHomogeneous_X Q wt 0)
+    have := _root_.GlobalTheory.weightedRelation_coeff_mem_span z wt hw hz (wt 0) (X 0) (isWeightedHomogeneous_X Q wt 0)
       (by simp [h1]) (Finsupp.single 0 1)
     rw [coeff_X, if_pos rfl, hm] at this
     exact (IsLocalRing.maximalIdeal.isMaximal Q).ne_top ((Ideal.eq_top_iff_one _).mpr this)
@@ -53,7 +53,7 @@ theorem exists_weightedMonomialPlace : ∀ {L : Type} [Field L] (c : ℂ →+* L
     obtain ⟨N, F, hF, hFe, hc⟩ := GlobalTheory.T.exists_weightedHomogeneous_homogenisation Q r z wt hw0 hz0 P
     obtain ⟨β, hβ⟩ := hc α
     rw [← hβ, ← hm]
-    refine GlobalTheory.T.coeff_mem_span_of_weightedHomogeneous_relation_quasiRegular z wt hw hz N F hF ?_ β
+    refine _root_.GlobalTheory.weightedRelation_coeff_mem_span z wt hw hz N F hF ?_ β
     apply Subtype.ext
     rw [hFe, hP, mul_zero]
     rfl

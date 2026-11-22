@@ -3,7 +3,7 @@ import Formalism.SharpRestriction.LevelLetterCocycles.ArithmeticCylinders
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LabelDatum
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsCharLab
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraSeriesCentralIdempotentLaws
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntertwinerUnipotentInvariantStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntertwinerUnipotentInvariant
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CartanDecomposition
 
 noncomputable section
@@ -121,7 +121,7 @@ theorem opp (L : LabelDatum g) (h5 : 5 ≤ g) (hG : Green) (W W' : Type) [AddCom
     (h3 : ∀ m : Gn g n, (∀ i j, a i ≠ a j → (m : Mt g n) i j = 0) → ∀ w, T (ρ m w) = ρ' m (T w))
     (w : W) (hw : ρ'.asAlgebraHom (eSerC L n f') (T (ρ.asAlgebraHom (eSerC L n f) w)) ≠ 0) : f = f' := by
   obtain ⟨hi, hc, -⟩ := _root_.GlobalTheory.GLq.eSerC_laws g L h5 hG n
-  refine GlobalTheory.T.intertwiner_unipotent_invariant g L h5 hG n _ _ (cut ρ _ (hc f)) (cut ρ' _ (hc f'))
+  refine _root_.GlobalTheory.GLq.Opp.label_eq_of_opposite g L h5 hG n _ _ (cut ρ _ (hc f)) (cut ρ' _ (hc f'))
     ((ρ'.asAlgebraHom (eSerC L n f')).rangeRestrict ∘ₗ T ∘ₗ Submodule.subtype _) a f f' ?_ ?_ ?_
     (cut_idem _ _ _ (hi f)) (cut_idem _ _ _ (hi f')) ?_
   · intro u hu

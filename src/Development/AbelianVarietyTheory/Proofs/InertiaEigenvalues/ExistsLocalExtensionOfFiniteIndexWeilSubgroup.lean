@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPosPowGa
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsRootOfUnityFixedDvdWeilGroupDegree
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFinsetFixingSubsetOpenInertiaSubgroupStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFinsetFixingLeFiniteIndexWeilSubgroupStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFinsetFixingIffPreservesSubgroupOrbitStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFinsetFixingIffPreservesSubgroupOrbit
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsBaseNearOfDecompositionFixedStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.KrasnerLemmaDecompositionGroupStabilizerVersionStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsMonicBasePolynomialRootNearDecompositionStatement
@@ -36,7 +36,7 @@ theorem exists_localExt_of_finiteIndex : ∀ (E Ω : Type) [Field E] [NumberFiel
   obtain ⟨s, hs⟩ := GlobalTheory.T.exists_finset_fixing_le_finiteIndex_weilSubgroup E Ω A w h (_root_.GlobalTheory.PowFix.exists_pos_pow_fix E Ω) (_root_.GlobalTheory.exists_fixed_dvd_deg E Ω A w h) (GlobalTheory.T.exists_finset_fixing_subset_open_inertia_subgroup E Ω A) H hH hO
   obtain ⟨y, hy⟩ := _root_.GlobalTheory.stab_finset_eq_stab_primitive E Ω s
   have hyH : ∀ σ : Weil h, (σ : G E Ω) y = y → σ ∈ H := fun σ hσ => hs σ ((hy σ).1 hσ)
-  obtain ⟨s', hs'⟩ := GlobalTheory.T.exists_finset_fixing_iff_preserves_subgroup_orbit E Ω (H.map (Weil h).subtype) y
+  obtain ⟨s', hs'⟩ := _root_.GlobalTheory.orbit_stab_cut_finite E Ω (H.map (Weil h).subtype) y
   obtain ⟨β, hβ⟩ := _root_.GlobalTheory.stab_finset_eq_stab_primitive E Ω s'
   have hβH : ∀ σ : Weil h, (σ : G E Ω) β = β ↔ σ ∈ H := by
     intro σ

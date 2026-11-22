@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.NotCoboundaryConstantOne
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KummerCochainEqDlogCombinationFiniteLevelStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KummerCochainEqDlogCombinationFiniteLevel
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KummerCochainCupProductCongruence
 
 open GlobalTheory.K5 Polynomial
@@ -195,7 +195,7 @@ theorem cup_kummer_dlog : ∀ (p : ℕ) [Fact p.Prime], p ≠ 2 → ∃ c : ℕ,
       (p : Ω) ^ c * (ι (fPi p n k l α β α' β') / (T.ζ n - 1)) * (((lz g).val : Ω) * ((lq h).val : Ω))) := by
   intro p _ hp2
   classical
-  obtain ⟨c, hc⟩ := GlobalTheory.T.kummerCochain_eq_dlog_combination_finiteLevel p hp2
+  obtain ⟨c, hc⟩ := _root_.GlobalTheory.KumDlog.kummer_eq_dlog p hp2
   refine ⟨4 * (c + 1), ?_⟩
   intro Ω _ _ hΩ T n hn ι hι k l w w' α β α' β' hw hw' r s hr hs a b lz lq ha hb hz hq
   have r0 := root_ne_zero hn ι hr

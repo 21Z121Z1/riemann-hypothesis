@@ -7,8 +7,8 @@ import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCou
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.TermLoc
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NonGenericGenericTermsClosedUnderLocalUnitary
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.NGData
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalisedBaseFramesRelevantPairStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermAtBasePointOfFramesStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalisedBaseFramesRelevantPair
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermAtBasePointOfFrames
 
 noncomputable section
 
@@ -28,14 +28,14 @@ theorem setQ_locClosed {D : D7} {X : HidaSetting D} (Y : Full X) (u u' : D.what�
     (hB : GlobalTheory.Unfold.Based (zOf Y) FP (Tu D u) (Tu D u') F F') :
     GlobalTheory.Unfold.LocClosed F F' (zOf Y) FP (setQ Y u u' S) := by
   have hRel : ∀ p, (FP p).RelG (LocNG.theta ((zOf Y).M p)) := fun p =>
-    (GlobalTheory.T.localisedBaseFrames_relevantPair D (zOf Y) u u' w F F' hw hG p).2 (FP p) (hB p)
+    (_root_.GlobalTheory.LocBaseRel.atBase_relG D (zOf Y) u u' w F F' hw hG p).2 (FP p) (hB p)
   obtain ⟨hng, hgen, -, -⟩ := _root_.GlobalTheory.LocOrbit.closed_ng_gen D X Y u u' F F' w hw hG (zOf Y) FP hB hRel
   intro t t' Λ Λ' hΛ hΛ' hloc ht
   have hGt : ∀ s : TauC Y u u', s.G ≠ 0 → (Y.tO u u').G s ≠ 0 := fun s hs => by
     show Formalism.L2.SG.TermOp.Gt s ≠ 0
     simp [Formalism.L2.SG.TermOp.Gt, hs]
-  have h1 := hGt t (GlobalTheory.T.term_at_base_point_of_frames D X Y u u' F F' w hw hG t Λ hΛ).1
-  have h2 := hGt t' (GlobalTheory.T.term_at_base_point_of_frames D X Y u u' F F' w hw hG t' Λ' hΛ').1
+  have h1 := hGt t (_root_.GlobalTheory.Unfold.BasePt.term_at_base_point D X Y u u' F F' w hw hG t Λ hΛ).1
+  have h2 := hGt t' (_root_.GlobalTheory.Unfold.BasePt.term_at_base_point D X Y u u' F F' w hw hG t' Λ' hΛ').1
   have hiff : (Y.tO u u').gener t ↔ (Y.tO u u').gener t' := by
     constructor
     · intro hg

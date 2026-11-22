@@ -8,14 +8,14 @@ import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HMatMul
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DblZMemHn
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ConjKappa
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HermitianThetaSummableAndDeterminesTestFn
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SymplecticSiegelActionMemUpperHalfSpaceAndCocyclStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SymplecticSiegelActionMemUpperHalfSpaceAndCocycl
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsSymplecticActionOfPeriodLatticeMapStatement
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SiegelThetaMulConjEqBlockTheta
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IMemSiegel
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsSymplecticDoubledHermitianCoordinatesStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsSymplecticDoubledHermitianCoordinates
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.GaussianQuadFormRationalCoordsHermitian
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DetDoubledCoordinatesToRationalCoords
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.CanonicalThetaExponentSymplecticInvariantStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.CanonicalThetaExponentSymplecticInvariant
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsWeilOfSymplectic
 open Matrix Complex NumberField MeasureTheory GlobalTheory GlobalTheory.SW GlobalTheory.ThFr ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.FD
 open scoped ComplexConjugate ComplexOrder Real Classical
@@ -127,7 +127,7 @@ theorem can_trans {κ ι ι' : Type} [Fintype κ] [Fintype ι] [DecidableEq ι] 
     have h3 := congrFun (hM u) (e i)
     simp only [Pi.add_apply, mulVec, dotProduct, ← e.sum_comp] at h3 ⊢
     exact h3)
-  have hD := (GlobalTheory.T.symplecticSiegelAction_mem_upperHalfSpace_and_cocycle ι σ hσ τ hτ).1
+  have hD := (_root_.GlobalTheory.SiegelAction.symplectic_action ι σ hσ τ hτ).1
   have hζ : ∀ k, (M *ᵥ ζ k) ∘ e = ζ k ᵥ* (spDen σ τ)⁻¹ := fun k => by
     rw [← mulVec_transpose, ← e2]; rfl
   have hq : ∀ k, (M *ᵥ ζ k) ⬝ᵥ (τ'.map fun t => (t.im : ℂ))⁻¹ *ᵥ (M *ᵥ ζ k) =
@@ -139,7 +139,7 @@ theorem can_trans {κ ι ι' : Type} [Fintype κ] [Fintype ι] [DecidableEq ι] 
   rw [thS_reindex, e2, e1]
   simp only [hζ, hq]
   rw [h2 τ hτ ζ, Matrix.det_transpose, Matrix.det_nonsing_inv, Ring.inverse_eq_inv']
-  simp only [← GlobalTheory.T.canonicalThetaExponent_symplectic_invariant ι σ hσ τ hτ, Finset.sum_add_distrib, ← Finset.mul_sum, mul_add,
+  simp only [← _root_.GlobalTheory.SW.canon_exponent_invariant ι σ hσ τ hτ, Finset.sum_add_distrib, ← Finset.mul_sum, mul_add,
     Complex.exp_add]
   have : (π / 2 * (2 * I * ∑ k, ζ k ⬝ᵥ ((spDen σ τ)⁻¹ * qm σ.toBlocks₂₁) *ᵥ ζ k) : ℂ) =
       π * I * ∑ k, ζ k ⬝ᵥ ((spDen σ τ)⁻¹ * qm σ.toBlocks₂₁) *ᵥ ζ k := by ring
@@ -196,7 +196,7 @@ theorem exists_isDbl (hs : IsSympl X bas) (hn : Even n) {φ₁ φ₂ : TF n g} (
     (h₂ : IsSB φ₂) : ∃ ψ, IsSB ψ ∧ IsDbl X bas idx φ₁ φ₂ ψ := by
   obtain ⟨e⟩ := nonempty_equiv X idx
   have hΨ := Base.isType_data X
-  obtain ⟨F, hF, hFu⟩ := GlobalTheory.T.exists_symplectic_doubled_hermitian_coordinates E r X g bas hs
+  obtain ⟨F, hF, hFu⟩ := _root_.GlobalTheory.SW.DblLat.dbl_lat E r X g bas hs
   obtain ⟨hφ, hprod⟩ := _root_.GlobalTheory.SW.ThetaProd.thS_mul_conj_thS (Fin n) (Fin g) (Fin g) φ₁ φ₂ h₁ h₂
   obtain ⟨ψ, hψ, H⟩ := can_trans e F hF (by simpa using hn) hφ
   obtain ⟨c, hc⟩ := _root_.GlobalTheory.SW.det_dbl_coords E r X g idx e

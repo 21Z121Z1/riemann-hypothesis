@@ -2,13 +2,13 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwoChartAtlas.AdditionLawSecondIdentity
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsFormalBiextMap
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.GermExpAddAndEvConst
-import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.MvPowerSeriesJetEqCalculusStatement
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.MvPowerSeriesJetEqCalculus
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.JetEqFormalExpIffAndExistsLog
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ConstantCoeffInvariantPolyOperatorJetEq
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.InvariantPolyOperatorCopiesTransportedLawStatement
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.FormalChartJetRelUnitOneOnAxesStatement
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.CanonicalGaugeDifferenceBiadditiveJetStatement
-import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsBiadditiveSeriesJetEqOfBiadditiveJetStatement
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsBiadditiveSeriesJetEqOfBiadditiveJet
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.IsCanonicalGaugeSubBiadditive
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.HarmonicValueCopiesGaugeIndependent
 
@@ -154,14 +154,14 @@ theorem jeq_main [Algebra ℚ k] {n : ℕ} (m q : ℕ) (φ φi a : Pt k 1 d) (hi
     congr 1
     exact Finset.prod_congr rfl fun b _ => gt_ev_expS _ (hL b) _ hl
   rw [hE, _root_.mul_assoc, ← gt_expS_add _ _ (cS' _ hL lam hl) (cS' _ hL h0 hh0), ← smul_add, ← Finset.sum_add_distrib]
-  refine ((GlobalTheory.T.mvPowerSeriesJetEq_calculus k m).1 _ _ _ _ _ (JEq.refl m f') ?_).2.2
+  refine ((_root_.GlobalTheory.ChartCmp.JCalc.jeq_calculus k m).1 _ _ _ _ _ (JEq.refl m f') ?_).2.2
   have hsum : (∑ b : Fin n, (ev ![pt k (n := n) d b, comp1 a' (pt k (n := n) d b)] lam +
       ev ![pt k (n := n) d b, comp1 a' (pt k (n := n) d b)] h0)) =
       ∑ b : Fin n, ev ![pt k (n := n) d b, comp1 a' (pt k (n := n) d b)] (h0 + lam) :=
     Finset.sum_congr rfl fun b _ => by rw [gt_ev_add _ (hL b), add_comm]
   rw [hsum]
   refine ((_root_.GlobalTheory.ChartCmp.jeq_expS_iff_and_exists_log k n d m).1 _ _ (cS' _ hL h' hh') (cS' _ hL _ (by rw [map_add, hh0, hl, add_zero]))).1 ?_
-  exact jeq_smul _ (jeq_sum _ fun b => (GlobalTheory.T.mvPowerSeriesJetEq_calculus k m).2.2.2.1 d 2 n _ _ _ _ (hL b) (hL b)
+  exact jeq_smul _ (jeq_sum _ fun b => (_root_.GlobalTheory.ChartCmp.JCalc.jeq_calculus k m).2.2.2.1 d 2 n _ _ _ _ (hL b) (hL b)
     (fun _ _ => JEq.refl _ _) hj)
 
 end SlopeTestRemainingChoices
@@ -175,7 +175,7 @@ theorem exists_nabValN_eq : ∀ (R : Type) [CommRing R] (d : ℕ) (O : Type) [Co
   have hε1 := (GlobalTheory.T.formalChartJetRel_unit_one_on_axes R d O m B B' φ φi ε hε).1
   obtain ⟨lam, hl0, hle⟩ := (_root_.GlobalTheory.ChartCmp.jeq_expS_iff_and_exists_log k 2 d m).2 (FB.toK k ε) (by simp [FB.toK, hε1])
   have hbi := GlobalTheory.T.canonicalGauge_difference_biadditive_jet R d O m B B' φ φi ε hε k h h' lam hh hh' hl0 hle
-  obtain ⟨g', hg', hgg⟩ := GlobalTheory.T.exists_biadditive_series_jetEq_of_biadditiveJet R d O B' k m (by omega) _ hbi
+  obtain ⟨g', hg', hgg⟩ := _root_.GlobalTheory.ChartBilin.exists_biadd_jEq R d O B' k m (by omega) _ hbi
   have hcan := _root_.GlobalTheory.ChartCmp.Regauge.isCanonGauge_sub R d O B' k h' g' hh' hg'
   have c0 : ∀ {C : FB R d O} {g : PS k 2 d}, C.IsCanonGauge k g → MvPowerSeries.constantCoeff g = 0 := by
     intro C g hg

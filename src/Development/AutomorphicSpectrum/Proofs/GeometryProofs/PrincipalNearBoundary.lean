@@ -14,9 +14,9 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LogPeriodLimit
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLogPeriodFamily
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FamilyExpLogCoverBound
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianPartFactorsThrough
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsDvrThroughDiscPointStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsDvrThroughDiscPoint
 import Development.WeilBound.CoreStatements.HodgeTatePoints.PpicDvr
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolUnifPeriodMatrixLeftStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolUnifPeriodMatrixLeft
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsDerivAt0ZeroOfFixed
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolUnifPeriodMatrixMiddle
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolUnifPeriodMatrixRight
@@ -109,7 +109,7 @@ theorem abPart_principal_and_bound : ∀ (E : Type) [Field E] [NumberField E] [I
     ⟨Metric.isOpen_ball, fun r => (C.hol.2 r).mono (Metric.ball_subset_ball hρ1)⟩
   have hprin : ∀ z ∈ Metric.ball (0 : Fin n → ℂ) 1, ∀ P : AbPart C.t (spMap (C.ψ z)), IsPrincipal P.tB := by
     intro z hz P
-    obtain ⟨V, _, _, _, f, r, tV, mV, hV, hr, hker, hrf, hpol⟩ := GlobalTheory.T.exists_dvr_through_disc_point E H D l Xo σ n a C z hz
+    obtain ⟨V, _, _, _, f, r, tV, mV, hV, hr, hker, hrf, hpol⟩ := _root_.GlobalTheory.CompanionTheory.Ar.QuotLoc.exists_curve_through_point E H D l Xo σ n a C z hz
     have key : ∀ (z₀ : Sp ℂ ⟶ Sp C.R), z₀ = spMap r ≫ spMap f → ∀ P : AbPart C.t z₀, IsPrincipal P.tB := by
       rintro _ rfl P
       obtain ⟨m', -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.AbPartPull.exists_sabMap_tK E H _ _ tV C.t _ mV ℂ (spMap r) P
@@ -140,7 +140,7 @@ theorem abPart_principal_and_bound : ∀ (E : Type) [Field E] [NumberField E] [I
   refine ⟨hP, ?_⟩
   intro Mz hMz x v c hv hc
   obtain ⟨-, -, -, A, iA, φ, g', u, Hm, χ, v', w', a', b', hφ, hAH, hv', hw', ha', hb', rfl⟩ := hc
-  obtain ⟨ℓ, hℓ⟩ := GlobalTheory.T.hol_unif_period_matrix_left E H C.R C.t C.g n C.M _ C.ψ e _ P A iA φ g' u Hm χ hb hφ hAH hP
+  obtain ⟨ℓ, hℓ⟩ := _root_.GlobalTheory.CompanionTheory.Ar.QuotLoc.exists_isAbLift E H C.R C.t C.g n C.M _ C.ψ e _ P A iA φ g' u Hm χ hb hφ hAH hP
   have e1 : a' = ℓ x := GlobalTheory.CompanionTheory.Ar.QuotLoc.DiffL.isDiff_eq_lift E H C.R C.t C.g n C.M _ C.ψ e _ P A iA φ g' u Hm χ ℓ hb hφ hAH hP hℓ Mz hMz x v v' a' hv hv' ha'
   have e2 : b' = ℓ x := GlobalTheory.CompanionTheory.Ar.QuotLoc.DiffL.isDiff_eq_lift E H C.R C.t C.g n C.M _ C.ψ e _ P A iA φ g' u Hm χ ℓ hb hφ hAH hP hℓ Mz hMz x v w' b' hv hw' hb'
   obtain ⟨hin, honto⟩ := _root_.GlobalTheory.CompanionTheory.Ar.QuotLoc.periods_map_onto_lattice E H C.R C.t C.g n C.M _ C.ψ e _ P A iA φ g' u Hm χ ℓ hb hφ hAH hP hℓ

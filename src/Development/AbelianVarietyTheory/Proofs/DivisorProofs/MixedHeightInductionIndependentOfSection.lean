@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCommonDenomin
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTensorSectionsNonvanishingFiniteSet
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InductiveMixedHeightTensorAdditive
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InductiveMixedHeightReciprocityTwoSections
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InductiveArakelovFormulaRhsTensorAdditiveStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InductiveArakelovFormulaRhsTensorAdditive
 open CategoryTheory AlgebraicGeometry TopologicalSpace MvPolynomial
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
 open ReciprocityTheory.ChartRestriction.G.Out (nonzeroLocus)
@@ -54,9 +54,9 @@ theorem recVal_indep_sec : ArchInteg → ArchRecip → ∀ (k : Type) [CommRing 
     rw [← Fin.cons_self_tail L]
     linarith
   obtain ⟨A, u, t, t', hu, ht, ht', hrel⟩ := _root_.GlobalTheory.MixHt.exists_common_denom k Y q hq N r r' hr hr'
-  have v1 := GlobalTheory.T.inductiveArakelovFormula_rhs_tensor_additive hI k Y q hq (e + 1) hd (T (e + 1) L) L N A r hr _ (isRatSec_ratOfSec u hu) _
+  have v1 := _root_.GlobalTheory.MixHt.recVal_tens hI k Y q hq (e + 1) hd (T (e + 1) L) L N A r hr _ (isRatSec_ratOfSec u hu) _
     (isRatSec_ratOfSec t ht) fun i j hi hj => (hrel i j hi hj).1
-  have v2 := GlobalTheory.T.inductiveArakelovFormula_rhs_tensor_additive hI k Y q hq (e + 1) hd (T (e + 1) L) L N A r' hr' _ (isRatSec_ratOfSec u hu) _
+  have v2 := _root_.GlobalTheory.MixHt.recVal_tens hI k Y q hq (e + 1) hd (T (e + 1) L) L N A r' hr' _ (isRatSec_ratOfSec u hu) _
     (isRatSec_ratOfSec t' ht') fun i j hi hj => (hrel i j hi hj).2
   have s1 := step1 (N.tens A) t t' ht ht'
   linarith

@@ -5,8 +5,8 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IdentificationCompat
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalIsometryExtendsLocalIsometryStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalUnipotentGroupsLatticesGlobalCoordinatesStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalThetaGraphRationalIsometryMovedLattice
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PulledLocalGraphsEqIffIdentificationsCompatibleStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalCompatibilityOfLocalIdentificationsStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PulledLocalGraphsEqIffIdentificationsCompatible
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalCompatibilityOfLocalIdentifications
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.VolPin
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.Vanish
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.AtBase
@@ -38,7 +38,7 @@ theorem graph_eq_iff_local : ∀ (D : D7) (X : HidaSetting D) (Y : Full X) (u u'
   have hs : ∀ x, (gρ * gn).symm x = gn.symm (gρ.symm x) := fun x => rfl
   have hlat : G.datOf (c.lat (ρ * n) t.lam) p = G.datOf (c.lat (ρ * n) t₀.lam) p :=
     congrArg (fun Λ => G.datOf (c.lat (ρ * n) Λ) p) hl
-  refine Iff.trans ?_ (GlobalTheory.T.pulledLocalGraphs_eq_iff_identificationsCompatible D X Y u u' t₀ t n m hl hl' ⟨hn, hm, ht⟩ p gn hgn)
+  refine Iff.trans ?_ (_root_.GlobalTheory.PullGraph.pulled_graph_iff D X Y u u' t₀ t n m hl hl' ⟨hn, hm, ht⟩ p gn hgn)
   constructor
   · intro h a b
     rw [hlat] at h
@@ -115,6 +115,6 @@ theorem iotaCompat_iff_graph : ∀ (D : D7) (X : HidaSetting D) (Y : Full X) (u 
       exact _root_.GlobalTheory.IotaLoc.iota_typed D (⟨Y.δ, Y.M, Y.agree⟩ : LocDat D) u u' (X.Fu u) t₀.lam hrow t₀.frame t.frame hPD0 hPD1 _ hβ hβΛ hfr hI p gβ hgβ hs
         x' hx' x hx hx'p hxp
   · intro h
-    exact GlobalTheory.T.rationalCompatibility_of_local_identifications D X Y u u' t₀ t hl hl' (fun p _ => (hloc p).1 (h p))
+    exact _root_.GlobalTheory.IotaLocConv.iotaCompat_of_local D X Y u u' t₀ t hl hl' (fun p _ => (hloc p).1 (h p))
 
 end GlobalTheory.IotaGraph

@@ -3,7 +3,8 @@ import Development.AbelianVarietyTheory.Definitions.LatticeFrames.QLev
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ProdDat
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsSelfDualCoordLatticeOfSelfDualFrame
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaLatticeVacuumOfCarriesLatticeCompletions
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualImageAdelicPointWittCoreStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualImageAdelicPointWittCore
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsSumFrame
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.RealPack
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.TopReadAt
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.TrueW
@@ -46,7 +47,7 @@ theorem moved_vacuum_alt : ∀ (D : D7) (L : SizeData₂ D) (hT : GatTies D) (Gi
   have sdY : IsSelfDualC (Yc D (j + 1)) ((_root_.GlobalTheory.Fam.pk_z W).ΛY (j + 1)) :=
     GlobalTheory.SDFrameLattice.isSelfDualC_of_isSDFrame D _ _ _ _ (hLev.βY (j + 1) (by omega))
   have sdX : IsSelfDualC D.sp.X' (_root_.GlobalTheory.Fam.pk_z W).ΛX := GlobalTheory.SDFrameLattice.isSelfDualC_of_isSDFrame D _ _ _ _ hLev.βX
-  obtain ⟨M, hM, hmov⟩ := (GlobalTheory.T.selfDual_image_adelicPoint_wittCore D _ _ sdY).1 (f.g.b (j + 1))
+  obtain ⟨M, hM, hmov⟩ := (_root_.GlobalTheory.FinPl.GlobImage.glob D _ _ sdY).1 (f.g.b (j + 1))
   obtain ⟨χS, χT, hWe⟩ := _root_.GlobalTheory.TopVac.isWeil_top_alt W j h
   have sdT : IsSelfDualC D.sp.X' f.g.LT := hVT.bT.2 ▸ hv.sdT
   refine ⟨sdY, sdX, M, hM, hmov, ?_⟩

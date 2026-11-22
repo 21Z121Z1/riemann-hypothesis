@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.TestFnConstTermVani
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MeasurableEmbeddingEquiv
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasTypeVec
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.DiscreteSeriesCharacter
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsRegularSemisimpleTorusEllipticElementRealPlaceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsRegularSemisimpleTorusEllipticElementRealPlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentralizerTorusEllipticElementRealPlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactRealPlaceTorusClassesSignVectors
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinsumDiscreteSeriesCharacterEqWeylCharacter
@@ -258,7 +258,7 @@ theorem realStableX : RealStableX := by
       intro q
       obtain ⟨hH, hR, hvol, hcpt⟩ := _root_.GlobalTheory.RealPlaceCentraliser.centMeas_real_place V P ρ dt q.2.choose_spec.choose_spec.2
       obtain ⟨g, hg⟩ := hconj q
-      have := hO ρ _ (GlobalTheory.T.isRegularSemisimple_torusEllipticElement_realPlace V P ρ q.2.choose_spec.choose_spec.2) (hcpt.2 hc) g (θ q) hg (centMeas _ dt)
+      have := hO ρ _ (_root_.GlobalTheory.RegularGamma.isRegSS_gam V P ρ q.2.choose_spec.choose_spec.2) (hcpt.2 hc) g (θ q) hg (centMeas _ dt)
       rw [orbCls, this.orbInt_eq, hvol]
     have : Finite (XSet P (placeOf D ρ).Completion V.gram) := hfin.to_subtype
     have hlam' : M.lam ρ = fun a => ((lam ρ a : ℤ) : ℝ) := funext (hM ρ)
@@ -272,7 +272,7 @@ theorem realStableX : RealStableX := by
     rw [finsum_eq_sum_of_fintype, finsum_eq_sum_of_fintype, map_sum, Finset.sum_div]
   · refine (finsum_congr fun q => ?_).trans finsum_zero
     obtain ⟨hH, hR, hvol, hcpt⟩ := _root_.GlobalTheory.RealPlaceCentraliser.centMeas_real_place V P ρ dt q.2.choose_spec.choose_spec.2
-    exact (hf.orb_noncompact _ (GlobalTheory.T.isRegularSemisimple_torusEllipticElement_realPlace V P ρ q.2.choose_spec.choose_spec.2) (mt hcpt.1 hc) _).orbInt_eq
+    exact (hf.orb_noncompact _ (_root_.GlobalTheory.RegularGamma.isRegSS_gam V P ρ q.2.choose_spec.choose_spec.2) (mt hcpt.1 hc) _).orbInt_eq
 
 theorem geomExpansionX_of_parts : GlobalTheory.TrMult.EllTraceX → GlobalTheory.IndefiniteRowSideFullHecke.PlusPolynomialRoots.EllipticPartX → RealStableX →
     GeomExpansionX := by
@@ -418,7 +418,7 @@ theorem trCusp'_of_steps (hL : LocalPC) (hF : SpecFin) (hT : GlobalTheory.TrMult
         mCuspDS μ ρ M ≠ 0 → ¬ GlobalTheory.IndefiniteRowSideFullHecke.IwahoriDoubleCosets.IsIntegralOp ν ρ (finFn V ff) 0 → ∃ i, Nonempty (ρ.Equiv (τ i)) := by
     intro ff hffin hKinv X _ _ ρ hi ha hm hz
     haveI := hν.1
-    obtain ⟨x, hx0, hx⟩ := (GlobalTheory.T.admissibleRep_hasTrace_finiteAdelicPureTensorFunction D V ν ff hffin X ρ ha).2 K hKo hKc hKinv hz
+    obtain ⟨x, hx0, hx⟩ := (_root_.GlobalTheory.FinTrace.hasTrace_finFn D V ν ff hffin X ρ ha).2 K hKo hKc hKinv hz
     obtain ⟨i, ⟨e⟩⟩ := hcov₁ X ρ hi ha hm ⟨x, hx0, hx⟩
     obtain ⟨k, ⟨e'⟩⟩ := hA i
     exact ⟨k, ⟨e.trans e'⟩⟩
@@ -435,7 +435,7 @@ theorem trCusp'_of_steps (hL : LocalPC) (hF : SpecFin) (hT : GlobalTheory.TrMult
       obtain ⟨g₀, rfl⟩ := Φ.surjective g
       change finFn V' (transfer j ff) (Φ k₀ * Φ g₀) = _
       rw [← map_mul, hfinFn, hfinFn, hKinv k₀ hk₀]
-    obtain ⟨x, hx0, hx⟩ := (GlobalTheory.T.admissibleRep_hasTrace_finiteAdelicPureTensorFunction D V' (ν.map Φ) (transfer j ff) hffin X ρ ha).2 K' hK'o hK'c hKinv' hz
+    obtain ⟨x, hx0, hx⟩ := (_root_.GlobalTheory.FinTrace.hasTrace_finFn D V' (ν.map Φ) (transfer j ff) hffin X ρ ha).2 K' hK'o hK'c hKinv' hz
     obtain ⟨i, ⟨e⟩⟩ := hcov₂ X ρ hi ha hm ⟨x, hx0, hx⟩
     obtain ⟨k, ⟨e'⟩⟩ := hB i
     exact ⟨k, ⟨e.trans ((equivCompSymm' (σ₂ i) Φ).trans (equivComp e' Φ.symm.toMulEquiv.toMonoidHom))⟩⟩

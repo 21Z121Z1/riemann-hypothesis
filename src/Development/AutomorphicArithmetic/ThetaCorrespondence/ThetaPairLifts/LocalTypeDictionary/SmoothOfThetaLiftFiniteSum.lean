@@ -28,7 +28,7 @@ theorem theta_lift_finite_sum_smooth : GlobalTheory.IndefiniteRowSideFullHecke.C
   obtain ⟨νS, PS, hS⟩ := xp_is hG j hj.le
   obtain ⟨νT, PT, hT⟩ := xp_is hG (j + 1) hj
   obtain ⟨hsig, hdef⟩ := GlobalTheory.ColTypeLift.xp_definite hG j hj.le
-  obtain ⟨χ, hχ⟩ := GlobalTheory.T.exists_realCentralCharacter_definiteVertexMultiplicity D R.θ hθ (G.Xp j) νS PS hS
+  obtain ⟨χ, hχ⟩ := _root_.GlobalTheory.DefCenChar.cusp_hasCen D R.θ hθ (G.Xp j) νS PS hS
   have hψc : GlobalTheory.SeeSaw.HasCen (G.Xp j).V χ (∑ i, (F i).1 (w i)) := fun z hz hc h => by
     simp only [Finset.sum_apply, Finset.mul_sum]
     exact Finset.sum_congr rfl fun i _ => hχ (F i) (w i) z hz hc h

@@ -4,15 +4,15 @@ import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.FormalA
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.FormalAlgebraisation
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoherentSubobjectCoherentStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RestrictedSystemKilledByIdealStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormalExistenceTopIdealStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormalExistenceTopIdeal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NoetherianIdealIntegralOrSplit
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IdealSheafWellFoundedGt
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArtinReesClosedSystemStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormalExistenceProductIdealStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsChowCoverIntegralStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormalExistenceProductIdeal
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsChowCoverIntegral
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormalExistenceProjectiveOpenStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormalExistenceProperPushforward
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GrothendieckExistenceClosedAltBis
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GeClosedOfStatement
 
 set_option autoImplicit false
 noncomputable section
@@ -33,7 +33,7 @@ theorem step_integral {A : Type} [CommRing A] [IsNoetherianRing A] (I : Ideal A)
     (inferInstance : LocallyOfFiniteType (J.subschemeι ≫ (X ↘ Spec (.of A))))
   have h3 : QuasiCompact (J.subscheme ↘ Spec (.of A)) :=
     (inferInstance : QuasiCompact (J.subschemeι ≫ (X ↘ Spec (.of A))))
-  obtain ⟨N, Y, i, O, ψ, W, hi, hψ, hcomm, hW, hiso⟩ := GlobalTheory.T.exists_chow_cover_integral (A := A) (X := J.subscheme)
+  obtain ⟨N, Y, i, O, ψ, W, hi, hψ, hcomm, hW, hiso⟩ := _root_.GlobalTheory.CompanionTheory.GE.ChowOpen.exists_chow_open (A := A) (X := J.subscheme)
   letI : (O : Scheme.{0}).Over (Spec (.of A)) := ⟨O.ι ≫ i ≫ ProjSpace.toSpecBase A N⟩
   have hZ : Statement I (⊥ : (O : Scheme.{0}).IdealSheafData) := GlobalTheory.T.formal_existence_projective_open I hI i hi O
   have hover : (ψ ≫ J.subschemeι) ≫ (X ↘ Spec (.of A)) = ((O : Scheme.{0}) ↘ Spec (.of A)) := by
@@ -56,12 +56,12 @@ theorem statement_bot {A : Type} [CommRing A] [IsNoetherianRing A] (I : Ideal A)
   intro J IH
   by_cases hJ : J = ⊤
   · subst hJ
-    exact GlobalTheory.T.formal_existence_top_ideal I
+    exact _root_.GlobalTheory.CompanionTheory.GE.Unit.statement_top I
   rcases _root_.GlobalTheory.CompanionTheory.GE.Dich.isIntegral_or_exists_mul_mem J hJ with h | ⟨J₁, J₂, h₁, h₂, hm⟩
   · exact step_integral I hI J IH
-  · exact GlobalTheory.T.formal_existence_product_ideal I J J₁ J₂ hm (IH _ h₁) (IH _ h₂)
+  · exact _root_.GlobalTheory.CompanionTheory.GE.NonPrime.statement_of_mul_mem I J J₁ J₂ hm (IH _ h₁) (IH _ h₂)
 
 theorem geClosed : GEClosed :=
-  GlobalTheory.T.geClosed_of_statement_bot fun _ _ _ I hI X _ _ _ _ => statement_bot I hI X
+  _root_.GlobalTheory.CompanionTheory.GE.Close.geClosed_of_statement fun _ _ _ I hI X _ _ _ _ => statement_bot I hI X
 
 end GlobalTheory.CompanionTheory.GE

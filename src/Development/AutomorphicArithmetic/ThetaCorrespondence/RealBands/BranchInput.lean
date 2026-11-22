@@ -43,9 +43,9 @@ theorem UpperTheory.Lit.Branch.realInputE :
   intro hPL hEM
   unfold ProjLarge at hPL
   unfold EigMap at hEM
-  obtain ⟨C1, hC1, hIB⟩ := _root_.GlobalTheory.SepReal.intBounds_main GlobalTheory.T.unitary_stabiliser_embedding_norm_laws (_root_.GlobalTheory.SepReal.boost_of_embLaws GlobalTheory.T.unitary_stabiliser_embedding_norm_laws)
+  obtain ⟨C1, hC1, hIB⟩ := _root_.GlobalTheory.SepReal.intBounds_main _root_.GlobalTheory.SepReal.embLaws (_root_.GlobalTheory.SepReal.boost_of_embLaws _root_.GlobalTheory.SepReal.embLaws)
     (_root_.GlobalTheory.SepReal.powInt_of_volBall _root_.GlobalTheory.SepReal.volBall) _root_.GlobalTheory.SepReal.decPow 10 (by norm_num)
-  obtain ⟨C3, hC3, hDB⟩ := _root_.GlobalTheory.SepReal.DerInt.derBounds_of GlobalTheory.T.unitary_stabiliser_embedding_norm_laws (_root_.GlobalTheory.SepReal.powInt_of_volBall _root_.GlobalTheory.SepReal.volBall)
+  obtain ⟨C3, hC3, hDB⟩ := _root_.GlobalTheory.SepReal.DerInt.derBounds_of _root_.GlobalTheory.SepReal.embLaws (_root_.GlobalTheory.SepReal.powInt_of_volBall _root_.GlobalTheory.SepReal.volBall)
     _root_.GlobalTheory.SepReal.decPow _root_.GlobalTheory.SepReal.lieBound 10 (by norm_num)
   obtain ⟨C2, hC2, hVD⟩ := volDeg
   have hDR := _root_.GlobalTheory.SepReal.FormalDegreeRatio.degRatio_holds

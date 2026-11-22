@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.IsSymm
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsHomFromConstThickeningOfDerivation
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ConstThickeningComplexFunctionsStructureStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ConstThickeningComplexFunctionsStructure
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsGlobalDerivationOfKodairaSpencerZero
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsIsoThickeningMapOfModEps
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIsGrpPullbackRetraction
@@ -70,7 +70,7 @@ theorem exists_isConst_of_ksRel_zero :
     · rw [Category.assoc, heφ, hiΦ]
     · rw [Category.assoc, heπ, hiπ, hj.1.w]
 
-  have hpb' := (GlobalTheory.T.const_thickening_complex_functions_structure P₀.A.left Y' P₀.A.hom π ρ i hpb hiρ hiπ).2.1
+  have hpb' := (_root_.GlobalTheory.EpsThick.thickening_functions P₀.A.left Y' P₀.A.hom π ρ i hpb hiρ hiπ).2.1
   have := P₀.isAb.smooth
   have hfl : Flat π := MorphismProperty.of_isPullback (P := @Flat) hpb inferInstance
   have he : IsIso e := _root_.GlobalTheory.ThickeningIso.isIso_of_mod_eps P₀.A.left Y' A'.left P₀.A.hom π A'.hom i j e hpb' hj.1 hfl heπ hie

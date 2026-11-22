@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.ArithmeticCylinders
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LabelDatum
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraFrobeniusReciprocityStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraFrobeniusReciprocity
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraRestrictionTwoBlockCuspidalEqZero
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraRestrictionCuspidalProductSumSubsetStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraRestrictionCuspidalProductSumSubset
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CentralIdempotentOfIrrCharacterOrthogonalCentral
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraProductListIsCharacterAndPermInvari
 
@@ -129,7 +129,7 @@ theorem ip_long_cusp (a : ℕ) (ψ : Gn g a → ℂ) (hψ : IsCusp ψ) (K : List
     subst hd
     rw [hcL_cons, ip_comm]
     show ip ψ (hcT p.1 (degL r) (fun x y => p.2 x * hcL r (degL r) y) _) = 0
-    rw [GlobalTheory.T.harishChandra_frobenius_reciprocity g p.1 (degL r) _ rfl ψ _ (isClass_of_isChar (isChar_of_isCusp hψ))]
+    rw [_root_.GlobalTheory.GLq.FrobRecHC.hcT_adjoint g p.1 (degL r) _ rfl ψ _ (isClass_of_isChar (isChar_of_isCusp hψ))]
     have h := _root_.GlobalTheory.GLq.res_cusp_eq_zero g (p.1 + degL r) p.1 ψ hψ hp (by omega)
     rw [Nat.add_sub_cancel_left] at h
     simp [ip, h]
@@ -200,8 +200,8 @@ theorem finiteRing_sq_sub_mul_sq_eq_of_card : ∀ (L' L : List (Pc g)) (n : ℕ)
             ip (hcL ((Iᶜ.sort (· ≤ ·)).map L.get) (degL M)) (hcL M (degL M)) := by
       rw [hcL_cons]
       show ip _ (hcT a (degL M) (fun x y => ψ x * hcL M (degL M) y) _) = _
-      rw [GlobalTheory.T.harishChandra_frobenius_reciprocity g a (degL M) _ rfl _ _ hclass]
-      have hres := GlobalTheory.T.harishChandraRestriction_cuspidal_product_sum_subsets g L a (degL M) hL hc
+      rw [_root_.GlobalTheory.GLq.FrobRecHC.hcT_adjoint g a (degL M) _ rfl _ _ hclass]
+      have hres := _root_.GlobalTheory.GLq.ResCuspProd.main g L a (degL M) hL hc
       simp only [hres]
       rw [ip_sum_left]
       refine Finset.sum_congr rfl fun I _ => ?_

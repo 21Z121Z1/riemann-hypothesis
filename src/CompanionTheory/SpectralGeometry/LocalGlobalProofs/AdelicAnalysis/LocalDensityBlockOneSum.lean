@@ -6,7 +6,7 @@ import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.LocalUn
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.RankOneFiberMeasureBlockExtension
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramFiberConsProductSupport
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramFiberConsProductIntegral
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramFiberConsProductInvarianceStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramFiberConsProductInvariance
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramFiberConsProductNormalization
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramFiberConsProductPushforward
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramFiberConsProductDensity
@@ -30,7 +30,7 @@ theorem fibre_family_near_block : ∀ (F E : Type) [Field F] [NumberField F] [Fi
       hscale := k3, hcmc := k4, hmod := k5 }
   have V := _root_.GlobalTheory.CompanionTheory.SW.StageValue.family_at_block F E σ M J t n R d b lam m₁ m' s B₀ a κ₁ cm D T hT hdet hT'
   refine ⟨Bset R σ t a B₀, (_root_.GlobalTheory.CompanionTheory.SW.PiLocalization₂.Coord.coords F E σ M J t n R d b lam m₁ m' s B₀ a κ₁ cm D).2.2.2.2, V.1,
-    GlobalTheory.T.isUnit_det_of_mem_Bset' F E σ M J t n R d b lam m₁ m' s B₀ a κ₁ cm D, fibS σ J t m₁ m' s B₀ a κ₁ cm,
+    _root_.GlobalTheory.CompanionTheory.SW.PiLocalization₂.BsetUnit.isUnit_det_of_mem_Bset F E σ M J t n R d b lam m₁ m' s B₀ a κ₁ cm D, fibS σ J t m₁ m' s B₀ a κ₁ cm,
     ⟨_root_.GlobalTheory.CompanionTheory.SW.PiLocalization₂.fibS_support F E σ M J t n R d b lam m₁ m' s B₀ a κ₁ cm D, ?_, ?_⟩, ?_⟩
   · intro φ hφ
     exact (_root_.GlobalTheory.CompanionTheory.SW.PiLocalization₂.lintegral_Uset_eq_Mid F E σ M J t n R d b lam m₁ m' s B₀ a κ₁ cm D φ hφ).trans

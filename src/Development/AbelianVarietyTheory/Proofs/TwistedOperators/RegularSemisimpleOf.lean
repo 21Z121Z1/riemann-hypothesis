@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NotCompactOfIdem
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsEquivalenceFiniteEtaleBaseChangeResidueField
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CyclicVectorOfSeparableCharpolyField
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CyclicVectorSemilocalOfCyclicVectorField
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CyclicVectorGeneratedAlgebraStructureStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CyclicVectorGeneratedAlgebraStructure
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RegularSemisimpleSelfAdjointPartTensorBijective
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RegularSemisimpleSelfAdjointPartEtale
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RegularSemisimpleTensorCommutant
@@ -27,7 +27,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteAlgebraAde
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FieldAdelicUnitTranslateBoundedOfSmallMultiplesStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormOneBoundedOfUnitBoundedOfAdelicLattice
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdelicUnitTranslateBoundedOfFactorsStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CentraliserPointsBoundedOfNormOneBoundedStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CentraliserPointsBoundedOfNormOneBounded
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdelicQuotientCompactOfBoundedMatricesStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DetRestrictRangeIdempotentMatrix
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdelicQuotientNotCompactOfSplitIdempotentStatement
@@ -243,12 +243,12 @@ theorem regularSemisimple_of (a1 : CyclicSemilocal) (a2 : CyclicAlgebra) (a3 : P
       exact a17 F E n σ J γ h (a16 F E n σ J γ h hA hP hC hN)
 
 theorem regularSemisimple : RegularSemisimple :=
-  regularSemisimple_of (_root_.GlobalTheory.RegSS.Semilocal.cyclicSemilocal_of_cyclicField _root_.GlobalTheory.RegSS.cyclicField) GlobalTheory.T.cyclicVector_generatedAlgebra_structure _root_.GlobalTheory.RegSS.plusTensorBijective _root_.GlobalTheory.RegSS.plusEtale
+  regularSemisimple_of (_root_.GlobalTheory.RegSS.Semilocal.cyclicSemilocal_of_cyclicField _root_.GlobalTheory.RegSS.cyclicField) _root_.GlobalTheory.RegSS.CycAlg.cyclicAlgebra _root_.GlobalTheory.RegSS.plusTensorBijective _root_.GlobalTheory.RegSS.plusEtale
     (_root_.GlobalTheory.RegSS.pointsCentraliser_of_commutant_of_adjoint _root_.GlobalTheory.RegSS.pointsCommutant _root_.GlobalTheory.RegSS.pointsAdjoint) _root_.GlobalTheory.RegSS.splitClosed _root_.GlobalTheory.RegSS.splitIdempotents _root_.GlobalTheory.RegSS.IdemTorus.subtorusOfIdempotents
     (GlobalTheory.T.centralizer_splitRank_upper_bound _root_.GlobalTheory.RegSS.subtorusLaurent _root_.GlobalTheory.RegSS.characterMonomial _root_.GlobalTheory.RegSS.separatingPoints) _root_.GlobalTheory.RegSS.tensorFieldIff
     (GlobalTheory.T.nontrivial_split_subtorus_not_central _root_.GlobalTheory.RegSS.unitaryCommutant _root_.GlobalTheory.RegSS.subtorusLaurent _root_.GlobalTheory.RegSS.characterMonomial) (GlobalTheory.T.hermitianTraceForm_of_traceForm_perfect _root_.GlobalTheory.RegSS.tracePerfect)
     (GlobalTheory.T.fieldAdelicUnitTranslateBounded_of_smallMultiples _root_.GlobalTheory.RegSS.normOnePacking _root_.GlobalTheory.RegSSLattice.tensorLattice) (_root_.GlobalTheory.RegSS.normOfUnitBounded_of_tensorLattice _root_.GlobalTheory.RegSSLattice.tensorLattice)
-    (GlobalTheory.T.adelic_unit_translate_bounded_of_factors _root_.GlobalTheory.RegSSLattice.tensorLattice) GlobalTheory.T.centraliser_points_bounded_of_normOne_bounded (GlobalTheory.T.adelic_quotient_compact_of_bounded_matrices _root_.GlobalTheory.RegSSLattice.tensorLattice)
+    (GlobalTheory.T.adelic_unit_translate_bounded_of_factors _root_.GlobalTheory.RegSSLattice.tensorLattice) _root_.GlobalTheory.RegSS.MatBd.matOfNormBounded (GlobalTheory.T.adelic_quotient_compact_of_bounded_matrices _root_.GlobalTheory.RegSSLattice.tensorLattice)
     (GlobalTheory.T.adelic_quotient_not_compact_of_split_idempotent _root_.GlobalTheory.RegSS.idempotentDet)
 
 end GlobalTheory.RegSS

@@ -1,6 +1,5 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.DataN
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsExtensionRepIndexTwoOfTraceInvariantStatement
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.FiniteQuadraticCharactersInAdjoint
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsExtensionRepIndexTwoOfTraceInvariant
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ConjOnInterQuadraticKernelsOfTraceEq
@@ -76,7 +75,7 @@ private theorem exists_ne_zero_smul_mem_of_mem_span' {Γ k : Type} [Group Γ] [F
 theorem main : ∀ (Γ k : Type) [Group Γ] [TopologicalSpace Γ] [IsTopologicalGroup Γ] [Field k] [CharZero k] [IsAlgClosed k] [TopologicalSpace k] [IsTopologicalRing k] (n : ℕ) (ι : Type) [Infinite ι] (η : ι → (Γ →* ℤˣ)), Function.Injective η → (∀ i, IsOpen ((η i).ker : Set Γ)) → ∀ r : ∀ i, (η i).ker →* GL (Fin n) k, (∀ i, Continuous (r i) ∧ IsSSRep (r i)) → (∀ i (g : Γ) (h h' : (η i).ker), (h' : Γ) = g * h * g⁻¹ → ((r i h' : GL (Fin n) k) : Matrix (Fin n) (Fin n) k).trace = ((r i h : GL (Fin n) k) : Matrix (Fin n) (Fin n) k).trace) → (∀ i j (h : (η i).ker) (h' : (η j).ker), (h : Γ) = h' → ((r i h : GL (Fin n) k) : Matrix (Fin n) (Fin n) k).trace = ((r j h' : GL (Fin n) k) : Matrix (Fin n) (Fin n) k).trace) → ∃ ρ : Γ →* GL (Fin n) k, Continuous ρ ∧ IsSSRep ρ ∧ ∀ᶠ j in Filter.cofinite, ∀ h : (η j).ker, ((ρ (h : Γ) : GL (Fin n) k) : Matrix (Fin n) (Fin n) k).trace = ((r j h : GL (Fin n) k) : Matrix (Fin n) (Fin n) k).trace := by
   intro Γ k _ _ _ _ _ _ _ _ n ι _ η hinj hopen r hr hconj hcomp
   have hext : ∀ i, ∃ ρ : Γ →* GL (Fin n) k, Continuous ρ ∧ IsSSRep ρ ∧ ∀ h : (η i).ker, ρ h = r i h :=
-    fun i => GlobalTheory.T.exists_extension_rep_index_two_of_trace_invariant Γ k n (η i) (hopen i) (r i) (hr i).1 (hr i).2 (hconj i)
+    fun i => _root_.GlobalTheory.IndexTwoExt.main Γ k n (η i) (hopen i) (r i) (hr i).1 (hr i).2 (hconj i)
   choose ρe hρc hρs hρr using hext
   obtain ⟨i₀, hi₀⟩ : ∃ i, η i ≠ 1 := by
     by_contra hc

@@ -13,8 +13,8 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HodgeIPIffHodg
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ThetaMultiplierNormalForm
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsThetaBasisOfFactor
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ThetaFunctionsFiniteDim
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TangentSpaceEquivHolUnifStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolUnifCompareIsogenyStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TangentSpaceEquivHolUnif
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolUnifCompareIsogeny
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelComplexBaseChange
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsDerivAt0CompLinMap
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabComp
@@ -48,9 +48,9 @@ theorem len_sq_eq_pi_herm : ∀ (E : Type) [Field E] [NumberField E] [IsCMField 
   have tx₁ : IsTangent x₁ := (HodgeLin.isTangent_iff hp₀ x₁).2 (by rw [hx₁]; exact hvt)
   have lx₁ : x₁.left ≫ φ = v.left := congrArg (fun r => r.left) hx₁
   obtain ⟨w, hw, -⟩ := h1 x₁ tx₁
-  have T1 := GlobalTheory.T.hol_unif_compare_isogeny (Sp (𝓞 L)) D.t.G D.t.PP.L (emb σ) A a.A φ a.φ g D.g u a.u Hm a.Hm χ a.χ D.t.PP.isLB hab hp
+  have T1 := _root_.GlobalTheory.CompanionTheory.Ar.HodgeUniq.hermForm_eq_of_pullbacks (Sp (𝓞 L)) D.t.G D.t.PP.L (emb σ) A a.A φ a.φ g D.g u a.u Hm a.Hm χ a.χ D.t.PP.isLB hab hp
     a.cart h1 h2 hah a.ah x₁ x₁ v' v' w w c c tx₁ tx₁ (hv'.trans lx₁.symm) (hv'.trans lx₁.symm) hw hw hdiff hdiff
-  have T2 := GlobalTheory.T.hol_unif_compare_isogeny (Sp (𝓞 L)) D.t.G D.t.PP.L (emb σ) A A' φ φ' g g' u u' Hm Hm' χ χ' D.t.PP.isLB hab hp
+  have T2 := _root_.GlobalTheory.CompanionTheory.Ar.HodgeUniq.hermForm_eq_of_pullbacks (Sp (𝓞 L)) D.t.G D.t.PP.L (emb σ) A A' φ φ' g g' u u' Hm Hm' χ χ' D.t.PP.isLB hab hp
     hpz h1 h2 hah hah' x₁ x₁ q p w w b' a' tx₁ tx₁ (eq'.trans lx₁.symm) (ep.trans lx₁.symm) hw hw dq dp
   have hH : a.herm c c = hermForm Hm' b' a' := T1.trans T2.symm
   have hin : ((D.B.metric.form σ).inner ((1 : ComplexAt σ) ⊗ₜ[𝓞 L] x) ((1 : ComplexAt σ) ⊗ₜ[𝓞 L] x) : ℂ) =

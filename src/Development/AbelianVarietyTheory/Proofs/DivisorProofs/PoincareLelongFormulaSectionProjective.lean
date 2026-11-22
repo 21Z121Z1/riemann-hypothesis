@@ -30,7 +30,7 @@ import ReciprocityTheory.AnalyticForms.PotentialTheory.ProjectiveLinePartitionCo
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinsumDivisorIntegralPushforward
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsFiniteRestrictNearCodimOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothWeightedLineBundleIsometryCalculus
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedChernFormSignedPartMeasureEqOfIsometricProjStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedChernFormSignedPartMeasureEqOfIsometricProj
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothWeightedLineBundleLogSectionNormProperties
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinsumOrdPullbackMulResidueDegreeCodimOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PoincareLelongNormalCrossingsSmoothProjective
@@ -72,7 +72,7 @@ theorem poincareLelong_sec : GlobalTheory.Published.Principalisation → ∀ (F 
   have hdeg' : π.residueDegree (genericPoint Y) ≠ 0 := by rw [hdeg]; exact one_ne_zero
   have intEq : ∀ (A B : Fin (e + 1) → MLine (π ≫ p) σ), (∀ i, (A i).Isom (B i)) → ∀ f, Mix.int A f = Mix.int B f := by
     intro A B h f
-    simp only [Mix.int, GlobalTheory.T.mixedChernFormSignedPartMeasure_eq_of_isometric_projOver F Y (π ≫ p) σ hproj (e + 1) A B h]
+    simp only [Mix.int, _root_.GlobalTheory.Mix.part_eq_of_isom F Y (π ≫ p) σ hproj (e + 1) A B h]
   have hlog : (M.pull π rfl).logSec s' = fun y => M.logSec s (ptMap π rfl σ y) := by
     funext y; simp only [MLine.logSec, hnsq]
 

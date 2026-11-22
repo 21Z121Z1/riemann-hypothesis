@@ -8,9 +8,9 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsBesselMapRankO
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselModelProjectorOnLine
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LintegralHsNormSqMatrixCoeffLeFormalDegree
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SmoothVectorsDenseInvariantStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SmoothVectorsDenseInvariant
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AmplitudeEqAmpJAndBesselEqDoubleIntegral
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsNonzeroFixedOfSquareIntegrableBesselStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsNonzeroFixedOfSquareIntegrableBessel
 open MeasureTheory Matrix Filter Topology Formalism.QuantumDeterminants Formalism.MainNotions.S GlobalTheory.SgInf GlobalTheory.Amp
 open scoped InnerProductSpace ENNReal
 
@@ -63,7 +63,7 @@ theorem exists_isEll_smul (k r : ℕ) {H : Type} [NormedAddCommGroup H] [InnerPr
   have hw1' : ‖w‖₊ = 1 := NNReal.eq hw1
   have hG : IsHaarOn (GG k r) μG := hStd.2.2.2.2.1
   have hd : 0 < d := hStd.2.2.2.2.2.1.1
-  obtain ⟨-, -, hle, hact, hinf⟩ := GlobalTheory.T.smooth_vectors_dense_invariant k r σ w hU
+  obtain ⟨-, -, hle, hact, hinf⟩ := _root_.GlobalTheory.SgInfDD.DD_stable_dense k r σ w hU
   have hgw : ∀ g ∈ GG k r, σ g w ∈ smoothVecs (k := k) (r := r) σ := (hact w hsm).1
   haveI : Nontrivial Wp := hz.2.2
   have hdim : (0 : ℝ) < Module.finrank ℂ Wp := by exact_mod_cast Module.finrank_pos
@@ -72,7 +72,7 @@ theorem exists_isEll_smul (k r : ℕ) {H : Type} [NormedAddCommGroup H] [InnerPr
   have hLw : l2SG νS (fun g => B (σ g w)) * (‖v₀‖₊ : ℝ≥0∞) ^ 2 = l2SG νS (fun g => B (σ g v₀)) := by
     rw [h1 w hsm, hw1']; simp
   have hnv : NonVan z (psiGen k r z c) σ π w μG νS := by
-    refine GlobalTheory.T.exists_nonzero_fixed_of_squareIntegrable_bessel k r σ w a d μG μS νS z c π B ⟨hStd, hsm⟩ hz.1 hq hB ?_ ?_ ?_
+    refine _root_.GlobalTheory.BesselFixed.nonVan_of_bessel k r σ w a d μG μS νS z c π B ⟨hStd, hsm⟩ hz.1 hq hB ?_ ?_ ?_
     · intro h
       rw [h, zero_mul, h0] at hLw
       exact (ENNReal.ofReal_pos.2 (mul_pos hc hdim)).ne hLw

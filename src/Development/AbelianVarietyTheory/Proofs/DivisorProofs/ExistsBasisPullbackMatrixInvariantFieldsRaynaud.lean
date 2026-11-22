@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBasisRaynaudT
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LeISupInfPreimage
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothCommGroupSchemeHomTangentAtOriginSurjectiv
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantVectorFieldOfTangentVectorLinearCombinaStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantVectorFieldOfTangentVectorLinearCombina
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantVectorFieldPullbackAlongGroupHom
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry NumberField IsLocalRing
 open scoped CategoryTheory.Obj Matrix TensorProduct
@@ -58,7 +58,7 @@ theorem exists_basis_pull_matrix : ∀ (R : Type) [CommRing R] [IsDomain R] [IsL
     exact if_congr eq_comm rfl rfl
   · intro b V W hW f
     have hu : ∑ c, Matrix.of (fun c b => w.repr (L (v b)) c) c b • w c = L (v b) := w.sum_repr _
-    have hinv := GlobalTheory.T.invariant_vectorField_of_tangent_vector_linear_combination R Dd.toPre.P.A g w e he (fun c => Matrix.of (fun c b => w.repr (L (v b)) c) c b)
+    have hinv := _root_.GlobalTheory.Heat.InvComb.isInv_comb R Dd.toPre.P.A g w e he (fun c => Matrix.of (fun c b => w.repr (L (v b)) c) c b)
     rw [hu] at hinv
     rw [_root_.GlobalTheory.Heat.PullField.isInv_pbT_single R Y.H Dd.toPre.P.A Y.q (v b) (L (v b)) (dd b) _ rfl (hdd b) hinv V W hW f, GlobalTheory.KS.pbT_sum]
     refine Finset.sum_congr rfl fun c _ => ?_

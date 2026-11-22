@@ -5,10 +5,10 @@ import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 import Development.AbelianVarietyTheory.Definitions.Foundations.HTBasis
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExpStar
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowMulMemLatIff
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BoundedAndEventuallySubMemLatStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AinfMuFrobeniusEquationSolvableAndTendstoStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BoundedAndEventuallySubMemLat
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AinfMuFrobeniusEquationSolvableAndTendsto
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemDeRhamFiltrationOfForallAinfLatticeStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TeichmullerEpsilonRootPowSubZetaExpMemFiltrationStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TeichmullerEpsilonRootPowSubZetaExpMemFiltration
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsLiftsOfNormLeOne
 
 noncomputable section
@@ -66,7 +66,7 @@ theorem u_mem (j : ℕ) : u P j ∈ FilB P 0 := by
 theorem taylor0 (hT : LocTied l P AI) (m M : ℕ) :
     io AI (WittVector.teichmuller l AI.ε ^ m) - ∑ j ∈ Finset.range M, (m : P.R.BdR) ^ j * u P j ∈
       FilB P (M : ℤ) := by
-  have h := GlobalTheory.T.teichmullerEpsilonRoot_pow_sub_zeta_exp_mem_filtration l P AI hT 0 m M
+  have h := _root_.GlobalTheory.ExpImage.epsT_pow_taylor l P AI hT 0 m M
   rw [P.ζQ_zero, one_pow, map_one, one_mul] at h
   convert h using 3 with j hj
   · rfl
@@ -108,7 +108,7 @@ theorem tail (l : ℕ) [Fact l.Prime] (P : LocPrime l) (AI : LocAinf l P) (hT : 
     refine Finset.dvd_sum fun i _ => Dvd.dvd.mul_left ?_ _
     have := sub_dvd_pow_sub_pow (WittVector.teichmuller l AI.ε) 1 (m i)
     rwa [one_pow] at this
-  obtain ⟨hc1, hc2⟩ := GlobalTheory.T.ainf_mu_frobenius_equation_solvable_and_tendsto l P AI
+  obtain ⟨hc1, hc2⟩ := _root_.GlobalTheory.ExpImage.Conv.main l P AI
   obtain ⟨y', hy'⟩ := hc1 q
   have hy : (D 0 + AI.μ * y') - WittVector.frobenius (D 0 + AI.μ * y') =
       ∑ i ∈ T, w i * WittVector.teichmuller l AI.ε ^ m i := by
@@ -168,7 +168,7 @@ theorem tail (l : ℕ) [Fact l.Prime] (P : LocPrime l) (AI : LocAinf l P) (hT : 
     refine GlobalTheory.T.mem_deRhamFiltration_of_forall_ainfLattice l P AI hT M _ fun r => ?_
     obtain ⟨k₀, hk₀⟩ := hc2 M r
     have hk : ∀ j, ∃ k : ℕ, (l : P.R.BdR) ^ k * u P j ∈ Lat AI M r := fun j =>
-      (GlobalTheory.T.bounded_and_eventually_sub_mem_Lat_alt l P AI hT _ (u_mem j) M r).1
+      (_root_.GlobalTheory.ExpImage.bounded_and_eventually_sub_mem_Lat l P AI hT _ (u_mem j) M r).1
     choose k hk using hk
     set n := k₀ + ∑ j ∈ Finset.range M, k j with hn
     have hEn : E n ∈ Lat AI M r := by

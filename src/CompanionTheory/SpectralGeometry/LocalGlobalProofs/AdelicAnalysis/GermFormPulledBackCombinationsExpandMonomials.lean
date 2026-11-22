@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.UnipotentAdelicQuotients.SWXSDefs
 import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.DisintegrationDensityUniqueStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.DisintegrationDensityUnique
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.DisintegrationDensityContinuous
 open MeasureTheory Topology Matrix
 open scoped ENNReal NNReal
@@ -102,7 +102,7 @@ theorem continuousOn_fibre_integral : ∀ (V X Y : Type) [TopologicalSpace V] [L
   obtain ⟨hloc, -, -, hbd⟩ := _root_.GlobalTheory.CompanionTheory.SW.FibreFam.fibre_family_basic V X Y μ ν f g ι hι hg hfg B hB fib hF
   refine continuousOn_integral_of_bounded fib B hB hloc hbd ?_ W Φ hΦ hW C hC hsupp
   intro φ hφ hφc
-  have h := (GlobalTheory.T.fibre_family_integral_isContDensityOn V X Y μ ν f g ι hι hg hfg B hB fib hF (fun v => (φ v : ℂ))
+  have h := (_root_.GlobalTheory.CompanionTheory.SW.FibreDensity.isContDensityOn_fibreIntegral V X Y μ ν f g ι hι hg hfg B hB fib hF (fun v => (φ v : ℂ))
     (Complex.continuous_ofReal.comp hφ) (hφc.comp_left Complex.ofReal_zero)).1.1
   have h2 : ContinuousOn (fun b => Complex.re (∫ v, ((φ v : ℝ) : ℂ) ∂(fib b))) B :=
     Complex.continuous_re.comp_continuousOn h

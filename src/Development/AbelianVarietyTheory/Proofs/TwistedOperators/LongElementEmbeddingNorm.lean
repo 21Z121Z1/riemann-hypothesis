@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.DepthPays
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormSqUnitaryEmbeddingOrthogonal
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsDecompSmulLatticeEmbeddingStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsDecompSmulLatticeEmbedding
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SqrtAbsNormLeProdNormCmTypeEmbeddings
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OneLeNormRationalTranslate
 
@@ -37,7 +37,7 @@ theorem long_sum : ∀ (D : D7) (θ : InfFam D), IsInfFam θ → ∀ (Y V : HSp 
     nlinarith [sq_nonneg ‖tauE D τ u‖]
   refine ⟨?_, fun τ => ?_, fun γ z hγ hz' τ => _root_.GlobalTheory.SepPer.MajDom.one_le_nrm D θ hθ Y V d B x γ z hγ hz' τ⟩
   · intro 𝔪 h𝔪 w hw hw0
-    obtain ⟨y, hy, u, hu, rfl⟩ := GlobalTheory.T.exists_decomp_smul_lattice_embedding D Y V d Λ x 𝔪 w hw
+    obtain ⟨y, hy, u, hu, rfl⟩ := _root_.GlobalTheory.UnitaryEmbeddingLattice.mem_smul_lattice_unitaryEmbedding D Y V d Λ x 𝔪 w hw
     by_cases hy0 : y = 0
     · subst hy0
       rw [mulVec_zero, zero_add] at hw0 ⊢

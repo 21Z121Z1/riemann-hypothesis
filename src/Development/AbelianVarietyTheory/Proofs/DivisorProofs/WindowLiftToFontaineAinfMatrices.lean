@@ -2,11 +2,11 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.EqZeroOfForallPowDvd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FontaineAinfLocalDomainXiAdicOrder
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniquePadicOfFrobeniusEigenAinf
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusXiEqPMulUnitStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusXiEqPMulUnit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAinfFrameLiftTwistedFrobenius
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AinfFrobeniusSemilinearEquationExistsUnique
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIsoWindowsOfMatrixCongrModTau
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AinfSquareZeroFrameInvariantEqZeroOfTauDvdStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AinfSquareZeroFrameInvariantEqZeroOfTauDvd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MuDvdFrobXiSub
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitMatrixLiftModTauAinf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsNilpotentInvTransposeBlockFrobeniusAinfOfFrame
@@ -235,7 +235,7 @@ theorem window_lift : ∀ (p : ℕ) [Fact p.Prime] (C : Type) [Field C] [IsAlgCl
       exact this
     rw [Matrix.map_mul, hφFa, ← Matrix.mul_assoc, ← Matrix.mul_assoc, ← e, Matrix.smul_mul]
 
-  obtain ⟨u, hu, hτu, hau⟩ := GlobalTheory.T.frobenius_xi_eq_p_mul_unit p C v O hv ε hε F
+  obtain ⟨u, hu, hτu, hau⟩ := _root_.GlobalTheory.QLog.BFrame.frobenius_xi_unit p C v O hv ε hε F
   obtain ⟨l, hτl, hσl⟩ := _root_.GlobalTheory.FLam.exists_lam p C v O hv ε hε F u hτu
   let U' := V.map F.a * blk d k u 1
   have hU' : IsUnit U' := by

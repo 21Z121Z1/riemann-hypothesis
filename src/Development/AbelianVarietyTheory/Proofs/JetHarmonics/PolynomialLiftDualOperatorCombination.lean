@@ -2,11 +2,12 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Jets.BasicLiftAll
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.JdPolyOKPolynomialOperators
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.QuantumMinorSumPolynomialOperator
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CapelliDetConjugateTopCoefficientStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CapelliDetConjugateTopCoefficient
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ShiftedGeneratorEqIteSmulAdd
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.AntisymProdEqSumQuantumMinor
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LeibnizDetFrameMatrixMatrixUnit
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ConjugateTransposeLeibniz.YOperatorLeibnizRule
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.RightOperatorDualMemOfInfiniteStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.RightOperatorDualMemOfInfinite
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsDualMatrixFrameFvecStatement
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.BasicLift
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ActualAlgebraFacts
@@ -222,7 +223,7 @@ theorem group_identity (hz' : inWb k r z') (hT : 0 < Tz k r z') (Y : ℂ) :
   have hνs : ∀ a j, ContDiffOn ℝ ∞ (ν a j) {g | dZ z z' g ≠ 0} := fun a j =>
     (hs.inv fun x hx => hx).mul (contDiff_of_poly (cramer_poly z z' a j)).contDiffOn
   have hGl : GlRel (unitE z z' E) := glRel_cast (dim_eq k r) (level_generators_gl_relations generator_gl_level 0 (isOpen_dom z z'))
-  have top := GlobalTheory.T.capelliDet_conjugate_top_coefficient _ (r + 1) (r + k) (unitE z z' E) Qm (mulE E (isOpen_dom z z') (dZ z z'))
+  have top := _root_.GlobalTheory.CapelliTop.top_coefficient _ (r + 1) (r + k) (unitE z z' E) Qm (mulE E (isOpen_dom z z') (dZ z z'))
     (fun a j => mulE E (isOpen_dom z z') (ν a j)) u hGl
     (fun a j => end_ext _ fun G x hx => by
       have h := row_mul_det z z' (fun d => Qm (Fin.castAdd (r + k) j) d) a G hx
@@ -571,7 +572,7 @@ theorem polyLift_rhv : ∀ (Wp Wq : Type) [NormedAddCommGroup Wp] [InnerProductS
     have h2 : t + M.rho P ρ i = 0 := by exact_mod_cast h0
     simp only at h1
     linarith
-  refine GlobalTheory.T.rightOperatorDual_mem_of_infinite P _ d K ((fun t : ℝ => (t : ℂ)) '' Set.Ioi (b + 1))
+  refine _root_.GlobalTheory.RhvPoly.rhv_mem_of_infinite P _ d K ((fun t : ℝ => (t : ℂ)) '' Set.Ioi (b + 1))
     ((Set.Ioi_infinite _).image Complex.ofReal_injective.injOn) ?_ y
   rintro _ ⟨t, ht, rfl⟩
   have ht' : b + 1 < t := ht

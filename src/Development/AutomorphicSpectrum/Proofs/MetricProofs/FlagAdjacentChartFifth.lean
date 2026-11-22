@@ -2,7 +2,7 @@ import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsBaseChart
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogPeriodStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FrameMinorValueFormula
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockLUFactorizationStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockLUFactorization
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LUTwistRefactorization
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentChartTenth
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FrameLUMinorValue
@@ -53,7 +53,7 @@ theorem main : ∀ (K : Type) [Fintype K] (ι : K → Type) [∀ k, Fintype (ι 
     rw [_root_.GlobalTheory.CompanionTheory.Ar.PB.WMan.TwRead.main K ι Φ y Ψ N j M F zb (τ', i) k (h' τ') (h τ')⁻¹ (fstPt k₀ z) α _ hF hzb hG hp (hh' τ').1 hz₁]
     show α * minorIJ (G τ') _ _ = 0
     rw [h0, mul_zero]
-  choose L U hLb hLu hUb hUt hUd hLU using fun τ' => GlobalTheory.T.block_LU_factorization N j (G τ') hj (hGb τ') (hGd τ') (hmin τ')
+  choose L U hLb hLu hUb hUt hUd hLU using fun τ' => _root_.GlobalTheory.CompanionTheory.Ar.PB.WMan.LU.exists_lower_upper N j (G τ') hj (hGb τ') (hGd τ') (hmin τ')
   have hhL : ∀ τ', h τ' * (L τ' * U τ') = h' τ' := fun τ' => by
     rw [← hLU]
     exact Matrix.mul_nonsing_inv_cancel_left _ _ (hdu τ')

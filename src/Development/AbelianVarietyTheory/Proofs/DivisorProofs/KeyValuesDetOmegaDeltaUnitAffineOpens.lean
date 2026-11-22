@@ -12,11 +12,11 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipalPolarisati
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipalPolarisationOnAbLocusRestrictAffineOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SectionNonzeroOnEveryFibreLocalFormBaseChange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalFormOfTensorSectionInChart
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDualTangentBasisPulledCotangentChartFrameStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualTangentBasisPulledFrameCompatiblePointChangeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDualTangentBasisPulledCotangentChartFrame
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualTangentBasisPulledFrameCompatiblePointChange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FibreDatumBaseChangeToCoarserPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalFormsTensorSectionGenericFibreTransitionGer
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualTangentVectorsGenericFibreDetEqDetOmegaTransStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualTangentVectorsGenericFibreDetEqDetOmegaTrans
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor
 open GlobalTheory GlobalTheory.KeyCl GlobalTheory.Ex GlobalTheory.KeyEven
@@ -101,7 +101,7 @@ theorem exists_keyVal : ∀ κ : Rule, ∀ (S : Scheme.{0}) [IsIntegral S] [Char
     obtain ⟨p, hp⟩ := hne
     exact ((genericPoint_spec S).mem_open_set_iff hop).2 ⟨p, trivial, hp⟩
   obtain ⟨t, ht⟩ := _root_.GlobalTheory.KeyValsSec.exists_locSec S G L δ σ i _ (KeyVals.genPt S) hδ (KeyVals.genPt_le _ hgen.2)
-  obtain ⟨y, hy, hyb⟩ := GlobalTheory.T.exists_dualTangentBasis_pulledCotangentChartFrame S G g c _ (KeyVals.genPt S) hsa hsm (KeyVals.genPt_le _ hgen.1)
+  obtain ⟨y, hy, hyb⟩ := _root_.GlobalTheory.KeyVals.DualBasis.exists_isDual S G g c _ (KeyVals.genPt S) hsa hsm (KeyVals.genPt_le _ hgen.1)
   have hab := abLocus_generic S G hgab
   obtain ⟨x, hxg, hx⟩ := GlobalTheory.KeyDatumAb.exists_keyOn (KeyVals.FF S) (KeyVals.FF S) (RingHom.id _)
     (KeyVals.bG G (KeyVals.genPt S)) (KeyVals.bL L (KeyVals.genPt S)) t g y hg (semi_bG S G _ _ hsa)
@@ -142,7 +142,7 @@ theorem keyVal_unit : ∀ κ : Rule, Funct κ → ∀ (S : Scheme.{0}) [IsIntegr
     h (show hW.fromSpec q ∈ (W : Set S) from hW.range_fromSpec ▸ ⟨q, rfl⟩)
   have hri := hr _ (hle.trans inf_le_right)
   obtain ⟨t, ht⟩ := _root_.GlobalTheory.KeyValsSec.exists_locSec S G L δ σ i Γ(S, W) hW.fromSpec hδ hri
-  obtain ⟨y, hy, hyb⟩ := GlobalTheory.T.exists_dualTangentBasis_pulledCotangentChartFrame S G g c Γ(S, W) hW.fromSpec hsa hsm (hr _ (hle.trans inf_le_left))
+  obtain ⟨y, hy, hyb⟩ := _root_.GlobalTheory.KeyVals.DualBasis.exists_isDual S G g c Γ(S, W) hW.fromSpec hsa hsm (hr _ (hle.trans inf_le_left))
   obtain ⟨hopW, habW⟩ := abLocus_affine S G W hW ⟨p, hpW⟩ hop hgab
   have hsaW := semi_bG S G Γ(S, W) hW.fromSpec hsa
   have hsmW := smooth_bG S G g Γ(S, W) hW.fromSpec hsm
@@ -161,7 +161,7 @@ theorem keyVal_unit : ∀ κ : Rule, Funct κ → ∀ (S : Scheme.{0}) [IsIntegr
   have he : (RingHom.id _).comp r = e.comp (algebraMap _ _) := RingHom.ext fun a => (IsFractionRing.lift_algebraMap hinj a).symm
   have hξ := KeyVals.spMap_germ_fromSpec W hW h
   have hx' := _root_.GlobalTheory.KeyValsTrans.keyOn_trans S G _ L δ σ i Γ(S, W) (KeyVals.FF S) (KeyVals.FF S) hW.fromSpec r (KeyVals.genPt S) (RingHom.id _)
-    t y t' y' x hxg hξ hri ht ht' (GlobalTheory.T.dualTangentBasis_pulledFrame_compatible_pointChange S G _ c Γ(S, W) (KeyVals.FF S) hW.fromSpec r (KeyVals.genPt S) y y' hξ hsa hsm hy hy') hx
+    t y t' y' x hxg hξ hri ht ht' (_root_.GlobalTheory.KeyVals.Vec.dual_vec S G _ c Γ(S, W) (KeyVals.FF S) hW.fromSpec r (KeyVals.genPt S) y y' hξ hsa hsm hy hy') hx
   rw [he] at hx'
   have hpb := GlobalTheory.KeyEven.keyPB_of_keyOn_comp Γ(S, W) (FractionRing Γ(S, W)) (KeyVals.FF S) (algebraMap _ _) e
     (KeyVals.bG G hW.fromSpec) (KeyVals.bL L hW.fromSpec) t _ y z x rfl hxg hz hx'
@@ -181,7 +181,7 @@ theorem keyVal_compat : ∀ κ : Rule, Homog (fun _ => 1) κ → Funct κ → �
   intro κ hH hF S _ _ G _ _ g L δ σ hsa hsm hδ c c' i i' v v' h1 h2 hv hv'
   obtain ⟨t, y, x, hg, ht, hy, hk, rfl⟩ := hv
   obtain ⟨t', y', x', hg', ht', hy', hk', rfl⟩ := hv'
-  obtain ⟨M, hM, hdet⟩ := GlobalTheory.T.dualTangentVectors_genericFibre_det_eq_detOmegaTrans S G g hsa hsm c c' h1 y y' hy hy'
+  obtain ⟨M, hM, hdet⟩ := _root_.GlobalTheory.KeyVals.LieRel.lieRel S G g hsa hsm c c' h1 y y' hy hy'
   have hs := _root_.GlobalTheory.KeySecRel.locSec_eq_germ_mul S G L δ σ hδ i i' h2 t t' ht ht'
   have := GlobalTheory.KeyEven.keyValue_homog_of_fibres κ hH hF (KeyVals.FF S) (KeyVals.bG G (KeyVals.genPt S)) (KeyVals.bL L (KeyVals.genPt S)) t' t g y' y
     x' x hg' hg _ M hk' hk hs hM

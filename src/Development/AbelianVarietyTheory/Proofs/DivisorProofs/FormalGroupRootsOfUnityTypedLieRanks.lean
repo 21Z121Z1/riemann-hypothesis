@@ -5,10 +5,10 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EmbeddingReducedRes
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogarithmicGroupLawSplitByIdempotentStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RingHomKerEqIffFrobeniusTwist
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegersApproximatingRootOfUnityTwists
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalGroupDetPowDepthLeOfIntegralLogHomStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalGroupDetPowDepthLeOfIntegralLogHom
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegersActIntegralChartEigenDirectionsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LabelDirectionsIntegralBasisUnramifiedPrime
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusActsOnTypeAtValuationStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusActsOnTypeAtValuation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralLogHomDiagonalOfLimit
 
 set_option autoImplicit false
@@ -213,12 +213,12 @@ theorem typedPartAt (hp : UnramIn E p) (τ : E →+* ℂ) : TypedPartAt Ch X τ 
   · rw [frame, hco', if_neg]
     intro hb'
     exact hb (hinj ((congrArg Sigma.fst hb').trans hf))
-  · exact GlobalTheory.T.formalGroupDetPowDepth_le_of_integralLogHom X.C _ _ _ _ k _ _ _ _ hπ _
-  · have := GlobalTheory.T.formalGroupDetPowDepth_le_of_integralLogHom X.C _ _ _ _ k _ _ _ _ hι fun a => (L.submatrix j id).mulVec (frame Ch X f a)
+  · exact _root_.GlobalTheory.DepthMono.detDepth_le_of_isIntHom X.C _ _ _ _ k _ _ _ _ hπ _
+  · have := _root_.GlobalTheory.DepthMono.detDepth_le_of_isIntHom X.C _ _ _ _ k _ _ _ _ hι fun a => (L.submatrix j id).mulVec (frame Ch X f a)
     simp only [Matrix.mulVec_mulVec, frame, hfix, hf, ht1, one_pow, one_smul] at this
     exact this
 
 theorem formalGroupTypes : FormalGroupTypes := fun E _ _ _ H _ l _ c _ _ p _ hp T io X =>
-  ⟨GlobalTheory.T.frobenius_acts_on_type_at_valuation E H l c p T io X, fun _ Ch τ => typedPartAt Ch X hp τ⟩
+  ⟨_root_.GlobalTheory.PrimePart.frobOnType_all E H l c p T io X, fun _ Ch τ => typedPartAt Ch X hp τ⟩
 
 end GlobalTheory.PrimePart

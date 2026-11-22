@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.PointSide
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VolConjEqOneOfMassCNeZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MassMulVolumeCommensurable
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VolEqIdxRatio
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinsumDoubleCosetFoldIntermediateSubgroupStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinsumDoubleCosetFoldIntermediateSubgroup
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedCentralizerMassNeZeroOfMemSupportStatement
 
 open GlobalTheory.LKCount
@@ -122,7 +122,7 @@ theorem fold_sum (Γ' T K : Subgroup G) (F : G → ℂ) (hΓT : Γ' ≤ T)
           F (Quotient.out q) =
       ∑ᶠ y : DoubleCoset.Quotient (T : Set G) (K : Set G),
         ((massC Γ' T (T ⊓ K.map (MulAut.conj (Quotient.out y)).toMonoidHom) : ℚ) : ℂ) * F (Quotient.out y) :=
-  GlobalTheory.T.finsum_doubleCoset_fold_intermediate_subgroup Γ' T K F hΓT hF hfin hsupp
+  _root_.GlobalTheory.finsum_fold_intermediate Γ' T K F hΓT hF hfin hsupp
 
 theorem massC_ne_zero_of_ne (Γ' T K : Subgroup G) (F : G → ℂ) (hΓT : Γ' ≤ T)
     (hF : ∀ t ∈ T, ∀ x, ∀ k ∈ K, F (t * x * k) = F x)

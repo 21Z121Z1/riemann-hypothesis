@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.InvariantSubspaceMobiusInverseRecEqOfFinrankLt
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.EndomorphismMassMulParabolicInductionTrivial
-import Development.AbelianVarietyTheory.Proofs.CharacterTheory.FinsumCardCyclicVectorsInvariantSubspacesStatement
+import Development.AbelianVarietyTheory.Proofs.CharacterTheory.FinsumCardCyclicVectorsInvariantSubspaces
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.EndomorphismMassOfCharpolyCardCyclicVectorsStatement
 
 open Polynomial GlobalTheory.CuspGL
@@ -80,7 +80,7 @@ theorem mu_rec : ∀ (F : Type) [Field F] [Finite F] (P : F[X]), P.Monic →
       congr 1
       exact (Nat.card_congr (e.toEquiv.subtypeEquiv fun v => cyclic_conj e g v)).symm)
     P hP (by simp)
-  simp only [GlobalTheory.T.finsum_card_cyclic_vectors_invariant_subspaces] at key
+  simp only [_root_.GlobalTheory.CuspGL.finsum_card_cyclic_eq] at key
   rw [mass_const] at key
   have hr : conv (fun D : F[X] => mass (fun g : Module.End F (Fin D.natDegree → F) =>
       (Nat.card {v : Fin D.natDegree → F // ∀ U : Submodule F (Fin D.natDegree → F),

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsResidueAnnihilatorOfNotStandardColumnFormAStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ResidueTopFactorThroughBottom
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DvrMatrixProjPreimageStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DvrMatrixProjPreimage
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GlFactorFromBlocksModUniformizer
 open MeasureTheory Filter Topology
 open scoped InnerProductSpace BigOperators
@@ -14,7 +14,7 @@ theorem GlobalTheory.gen_type_core : ∀ (O K : Type) [CommRing O] [IsDomain O] 
   let U : Submodule O (Fin r ⊕ Fin t → O) := Submodule.comap ((Algebra.linearMap O K).compLeft (Fin r ⊕ Fin t)) (S.restrictScalars O)
   have hU : ∀ u, u ∈ U ↔ (fun i => algebraMap O K (u i)) ∈ S := fun u => Iff.rfl
   obtain ⟨b, hb⟩ := _root_.GlobalTheory.residue_top_factor_through_bottom O r t U a (fun u hu h2 => hA u ((hU u).1 hu) h2) (g : Matrix (Fin r) (Fin r) _) hg
-  obtain ⟨P, hP1, hP2⟩ := GlobalTheory.T.dvr_matrix_proj_preimage_alt O K (Fin r ⊕ Fin t) S
+  obtain ⟨P, hP1, hP2⟩ := _root_.GlobalTheory.dvr_matrix_proj_preimage O K (Fin r ⊕ Fin t) S
   set bt : Matrix (Fin r) (Fin t) O := b.map (Function.surjInv IsLocalRing.residue_surjective) with hbt
   have hbt' : bt.map (IsLocalRing.residue O) = b := by
     ext i j; simp [hbt, Function.surjInv_eq]

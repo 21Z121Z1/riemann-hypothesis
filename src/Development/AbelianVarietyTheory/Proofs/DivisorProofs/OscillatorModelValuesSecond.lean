@@ -6,7 +6,9 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ActLevMemCuspA
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisOApplyZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermCColMulVec
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSelfDualCHLat
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepLatticeStabilizerVacuumEqDetCharSmulStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepLatticeStabilizerVacuumEqDetCharSmul
+import Development.AbelianVarietyTheory.Definitions.Divisors.PerCEmb
+import Development.AbelianVarietyTheory.Definitions.Divisors.MarkAd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DictionaryComponentFrameMarkingUniformisation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaPairCharactersAtLevel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelFormCompatBaseEmbedding
@@ -366,7 +368,7 @@ theorem value_move {H : Geo.Tor.Host D.host.E} {Dw : Datum H} {W₀ W : HSp D} (
   have hG : ∀ k, (U.X k).Gm = -W₀.gramᵀ := fun k => (hM k).model.1
   have hxi : ∀ k k', (U.X k).ξ0 = (U.X k').ξ0 := fun k k' => (hM k).model.2.trans (hM k').model.2.symm
   obtain ⟨θ', hθ'⟩ := (GlobalTheory.Member.infiniteAdele_bijective D).1
-  obtain ⟨hAr, -, -⟩ := GlobalTheory.T.archimedeanMatrix_unitary_continuous_multiplicative D W₀ θ' hθ'
+  obtain ⟨hAr, -, -⟩ := _root_.GlobalTheory.Member.Arch.archM_spec D W₀ θ' hθ'
   obtain ⟨γ₁, hγ₁, hΛ₁, hm₁, hf₁⟩ := hL.2 h
   obtain ⟨γ₂, hγ₂, hΛ₂, hm₂, hf₂⟩ := hL.2 (h * κ)
   have hat : ∀ h γ, γ ∈ GQ W₀ → ((U.X (dict h).1).Λ : Set (Fin W₀.rank → D.host.E)) =

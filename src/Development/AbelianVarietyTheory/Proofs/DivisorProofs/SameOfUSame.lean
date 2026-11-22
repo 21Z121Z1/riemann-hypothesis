@@ -7,7 +7,8 @@ import Development.AbelianVarietyTheory.Counterexamples.ModuliSurvey.DeltaIsGrea
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaConstantBoundedByShortestVector
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.UnitThetaConstantsGenerateIntegralTorsion
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.WeightSpaceValuesIntegralTorsionBoundShortestVec
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightPartAttainsBoundUniqueShortestVectorStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightPartAttainsBoundUniqueShortestVector
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGenLab
 
 noncomputable section
 
@@ -246,7 +247,7 @@ theorem GLab.norms [ArithBase o Ω] (hM : ReciprocityTheory.ChartRestriction.G.G
     refine this.trans (le_of_eq ?_)
     congr 2
     exact mul_div_cancel_left₀ _ hN.ne'
-  · obtain ⟨h, hh, hk0, he⟩ := GlobalTheory.T.weightPart_attains_bound_unique_shortest_vector u l hint m k hm hk hkm ν (fun χ hχ => by
+  · obtain ⟨h, hh, hk0, he⟩ := _root_.GlobalTheory.UPoinc.ExactWeight.main u l hint m k hm hk hkm ν (fun χ hχ => by
       rw [hq, hq]
       exact hmin _ ⟨j χ, by rw [map_add, map_nsmul]⟩ fun e => hχ (by simpa using j.injective e))
     refine ⟨h, hker ▸ hh, hk0, fun ξ n hn hξ => ?_⟩

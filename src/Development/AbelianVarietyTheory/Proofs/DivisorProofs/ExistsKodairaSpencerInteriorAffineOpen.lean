@@ -14,7 +14,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentBasisMovesAl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsVectorFieldImageOpenImmersion
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentTranslateLiftsSemiAbelianTripleMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartPullbackLineBundleTransitionEqAppLE
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemiAbelianTripleMapIsOpenImmersionOpensRangeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemiAbelianTripleMapIsOpenImmersionOpensRange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReductionEqBasePoint
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry NumberField IsLocalRing
 open scoped CategoryTheory.Obj Matrix TensorProduct
@@ -81,7 +81,7 @@ theorem isKS_transport : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] 
   intro E _ _ _ H X X' t t' j _ m hcp V W W' hW' hbij hWV hWr n v v' hv hv't hvv D D' hD Θ' hKS
   obtain ⟨cp⟩ := hcp
   obtain ⟨J, Wc, jj, d, hsup, hj, hfld, hcomp, htest⟩ := hKS
-  obtain ⟨hφo, hφr⟩ := GlobalTheory.T.semiAbelianTripleMap_isOpenImmersion_opensRange E H X X' t t' j m
+  obtain ⟨hφo, hφr⟩ := _root_.GlobalTheory.sabMap_isOpenImmersion_opensRange E H X X' t t' j m
   set ψ := j.appLE W.1 W'.1 hW'.le with hψ
   let e := RingEquiv.ofBijective ψ.hom hbij
   have sq : m.φ ≫ t.G.hom = t'.G.hom ≫ j := m.cart.1.w

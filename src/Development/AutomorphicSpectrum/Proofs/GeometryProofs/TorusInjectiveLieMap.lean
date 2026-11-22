@@ -3,9 +3,9 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCocharLie
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CharValMultiplicative
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorusKernelPrimeQuotientStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorusKernelPrimeQuotient
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.KillsOverSquareZeroLift
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.KillsOverOfAdicCompletionStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.KillsOverOfAdicCompletion
 
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry NumberField
 open scoped CategoryTheory.Obj
@@ -78,9 +78,9 @@ theorem killsOver_pow (u : splitTorus S X ⟶ G) [IsMonHom u] (Y : AddSubgroup X
 theorem diff_injective_mod_pi : ∀ (R K : Type) [CommRing R] [IsDomain R] [IsDiscreteValuationRing R] [Field K] [Algebra R K] [IsFractionRing R K] (S : Scheme.{0}) (b : Sp R ⟶ S) (G : Over S) [GrpObj G] [IsSeparated G.hom] (X : Type) [AddCommGroup X] [Module.Finite ℤ X] (u : splitTorus S X ⟶ G) [IsMonHom u], (∀ (A : Type) [CommRing A] (g : K →+* A) (t : Over.mk (spMap g ≫ spMap (algebraMap R K) ≫ b) ⟶ splitTorus S X), t ≫ u = 1 → t = 1) → ∀ M : LieModel (splitTorus S X) (spMap (IsLocalRing.residue R) ≫ b) (X →+ IsLocalRing.ResidueField R), IsCocharLie M → ∀ δ, M.pt δ ≫ u = 1 → δ = 0 := by
   intro R K _ _ _ _ _ _ S b G _ _ X _ _ u _ hK M hM δ hδ
   by_contra hne
-  obtain ⟨l, hl, ψ, hψ, hk⟩ := GlobalTheory.T.torus_kernel_prime_quotient S G X u (IsLocalRing.ResidueField R)
+  obtain ⟨l, hl, ψ, hψ, hk⟩ := _root_.GlobalTheory.CompanionTheory.Ar.TsField.exists_mu_killed S G X u (IsLocalRing.ResidueField R)
     (spMap (IsLocalRing.residue R) ≫ b) M hM δ hne hδ
-  have hR := GlobalTheory.T.killsOver_of_adic_completion S G X u ψ.ker R b (killsOver_pow u ψ.ker b hk)
+  have hR := _root_.GlobalTheory.CompanionTheory.Ar.KillsAdic.killsOver_of_forall_pow S G X u ψ.ker R b (killsOver_pow u ψ.ker b hk)
   have hKk := killsOver_comp u ψ.ker b (algebraMap R K) hR
   haveI := Fact.mk hl
   obtain ⟨-, -, h1, -, hex, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.TorusPoints.main S X (AddMonoidAlgebra K (ZMod l))

@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFlagFrame
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FromModelAddStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FromModelNegStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FromModelZeroLogConstant
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FromModelOfLocMaxStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FromModelOfLocMax
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNormalModelOverProjective
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TangentSectionsOnNormalModel
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FrameCombinationCoeffUnique
@@ -126,7 +126,7 @@ theorem good_step (hB : HTBoundSt) [IsLocallyNoetherian X] (hX : X.IsSeparated) 
       (fun v e y => ∑ l : Fin k, stepLog t ρ f q (Fin.castLE hk l) v e y) := fun k hk => by
     have he : ∀ y, (∑ l : Fin k, Δ (Fin.castLE hk l)).IsEqn y (∏ l : Fin k, d y (Fin.castLE hk l)) := fun y =>
       isEqn_sum _ y fun l => hΔ y _
-    exact ⟨he, GlobalTheory.T.fromModel_of_locMax' F Y M _ _ _ he (_root_.GlobalTheory.LineNorm.Chart.locMax_flag hB E H X t hX F Y M ρ' ρ hM hρ m u₀ f d h q k hk)⟩
+    exact ⟨he, _root_.GlobalTheory.LineNorm.Glue.fromModel_of_locMax F Y M _ _ _ he (_root_.GlobalTheory.LineNorm.Chart.locMax_flag hB E H X t hX F Y M ρ' ρ hM hρ m u₀ f d h q k hk)⟩
   have hi : Fin.castLE (Nat.succ_le_of_lt i.2) (Fin.last i) = i := rfl
   refine ((key (i + 1) i.2).add (key i i.2.le).neg).congr ?_ (fun y => ?_) (fun v e y => ?_)
   · rw [Fin.sum_univ_castSucc, hi]

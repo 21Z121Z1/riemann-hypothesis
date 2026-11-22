@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Definitions.Uniformization.ExistsUniqueS
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsUniquePullB
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsPrimeHomZmodOfNeTop
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.LineBundleSectionsTorusTorsionWeightSpaces
-import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ThetaExpansionSupportNotInPrimeIndexSubgroupStatement
+import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ThetaExpansionSupportNotInPrimeIndexSubgroup
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExpFOneDimStatement
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.PullbackSectionFamilyNeZeroIff
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ThetaSupportPairIffDegreeTwoSumDiff
@@ -24,7 +24,7 @@ namespace GlobalTheory.UU
 theorem theta_support_eq_univ : Laws → Laws2 → (AllPre fun {V} _ _ _ {D} {A} {G} _ _ U => ∀ θ f, U.Theta θ f → (∀ α, ∃ j, (f α).f j ≠ 0) ∧ ∀ α, U.Supp (Kbar V) 2 α) := by
   intro h1 h2 V _ _ _ hV D A G _ _ U θ f hθ
   have hrel := _root_.GlobalTheory.UU.SuppRel.supp_rel h1 h2 V hV D A G U θ f hθ
-  have hodd := GlobalTheory.T.thetaExpansion_support_not_in_primeIndex_subgroup h1 h2 V hV D A G U θ f hθ
+  have hodd := _root_.GlobalTheory.UU.PrimeIndex.hom_zmod_eq_zero_of_support h1 h2 V hV D A G U θ f hθ
   have hw := _root_.GlobalTheory.UU.Weight.main h1 h2 V hV D A G U
   have hpull := GlobalTheory.UU.PullSec.pullEx V hV D A G U (Kbar V) (𝟙_ _) (toUnit _) 1
   obtain ⟨th, hth, -⟩ := hpull.1 θ

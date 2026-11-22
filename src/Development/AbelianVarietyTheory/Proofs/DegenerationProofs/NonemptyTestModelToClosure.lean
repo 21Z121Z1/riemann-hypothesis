@@ -1,7 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ImmByOfSpans
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ImmByWeightZeroStatement
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFactorClosedImmersionDensePointsStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ImmByWeightZero
+import Development.AbelianVarietyTheory.Definitions.Degenerations.PullChartIsLB
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFactorClosedImmersionDensePoints
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUnitCharts
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.KbIsAlgClosedAndConj
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsReducedAlgebraOfSmoothOfIsNoetherianRing
@@ -239,7 +240,7 @@ theorem crd_special (hL : GlobalTheory.UT.LL) (hS : S.Big) (a : Sp (kb p) ⟶ t.
   have h1 := t.mod.red x v hv
   rw [hx] at h1
   refine ⟨v, (ne_zero_iff hv).2 ?_, h1⟩
-  have hcov := (GlobalTheory.T.immBy_weight_zero' hL.1 hL.2.1 (kb p) t.mod.Φ _ _ _ _ _ _ t.mod.F t.mod.pol (big ρ hS)
+  have hcov := (_root_.GlobalTheory.ZH.ClosedImm.immBy_weight_zero hL.1 hL.2.1 (kb p) t.mod.Φ _ _ _ _ _ _ t.mod.F t.mod.pol (big ρ hS)
     t.mod.good t.mod.dim).1
   exact (hcov.ge.trans (iSup₂_le fun i _ => le_iSup (fun i => nonzeroLocus (t.mod.F i)) i)) trivial
 
@@ -439,7 +440,7 @@ theorem nonempty_tMap : GlobalTheory.UT.LL → ∀ (o Ω : Type) [CommRing o] [F
       exact (RatModel.gPt_specializes (y := y) rfl _).mem_open (Q.W l).isOpen hl),
       IsOpenImmersion.lift_fac _ _ _⟩
   choose x hx using hx
-  obtain ⟨f, hf, hfx, hfc⟩ := GlobalTheory.T.exists_factor_closedImmersion_dense_points Γ(M.Z, Q.W l) _ t.u.G.left ((Q.P.hom ∣_ Q.W l) ≫ (Q.aff l).isoSpec.hom)
+  obtain ⟨f, hf, hfx, hfc⟩ := _root_.GlobalTheory.ZH.ToImm.exists_factor Γ(M.Z, Q.W l) _ t.u.G.left ((Q.P.hom ∣_ Q.W l) ≫ (Q.aff l).isoSpec.hom)
     ((t.u.G.hom ≫ yW) ≫ (Q.aff l).isoSpec.hom) _ (t.u.H S.N) S.J (Q.σ l) (fun i => comb t.u.G.hom t.σ (m i))
     (pull_isLB Q.isLB _) t.mod.isLB (Q.imm l) (iSup_comb_eq_top t hL hS hb hm) (PadicAlgCl p) t.u.PtC t.u.toG x
     dense_toG (fun a => ⟨by

@@ -3,10 +3,10 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.FlagPairDefi
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ChartGen
 import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.MaxMass
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NormalFormDualOrthogonalLast
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermFramePairNormalFormGeometrySummaryStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CommonUnipotentStabiliserPreservesTermsAndDatumStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermFramePairNormalFormGeometrySummary
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CommonUnipotentStabiliserPreservesTermsAndDatum
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormalFormFlagLatticesNearUnderStabiliser
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormalFormIdealDivisibilityStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormalFormIdealDivisibility
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermFramePairSplitTermNearReferenceBySkew
 
 noncomputable section
@@ -142,14 +142,14 @@ end
 
 theorem exists_near : ∀ (K V : Type) [Field K] [NumberField K] [StarRing K] [AddCommGroup V] [Module K V] [FiniteDimensional K V] [Module (𝓞 K) V] [IsScalarTower (𝓞 K) K V] (H : HermSpace K V), Formalism.HermitianLatticesTheory.IsCMUnram K → ∀ (r : ℕ) (N : NF H r), ∀ (g : ℕ) (Λ : Submodule (𝓞 K) V), 1 ≤ g → N.IsTerm g Λ → ∀ 𝔠 : Ideal (𝓞 K), 𝔠 ≠ ⊥ → (∀ x ∈ 𝔠, ∃ y ∈ 𝔠, (y : K) = star (x : K)) → (∀ x ∈ 𝔠, (N.T : 𝓞 K) ∣ x) → (∀ (l : ℕ) (hl : l ≤ r + 1), l ≤ N.j → Dl N.F N.F' l hl ≠ 0 → ∀ x ∈ 𝔠, ∀ y ∈ ipow N.𝔡 (2 * ∑ a ∈ Finset.range l, ((r : ℤ) - a)), (x : K) * y / Dl N.F N.F' l hl ∈ (1 : Submodule (𝓞 K) K) ∧ (x : K) * y / star (Dl N.F N.F' l hl) ∈ (1 : Submodule (𝓞 K) K)) → N.Split Λ → ∃ s ∈ N.Rs, N.Split (s • Λ) ∧ N.Near (𝔠 ^ (12 * r + 50)) (s • Λ) := by
   intro K V _ _ _ _ _ _ _ _ H hK r N g Λ hg hΛ 𝔠 h0 hst hT hD hS
-  have hrad := (GlobalTheory.T.hermFramePairNormalForm_geometry_summary K V H hK r N).1.2.2.2.1
+  have hrad := (_root_.GlobalTheory.DegCnt.NF.geometry K V H hK r N).1.2.2.2.1
   obtain ⟨s₁, hs₁, -, h₁⟩ := _root_.GlobalTheory.DegCnt.PosJ.main K V H hK r N g Λ hg hΛ 𝔠 h0 hst hT hD
   obtain ⟨a₁, a₂, a₃, a₄⟩ := h₁ _ rfl
-  obtain ⟨t₁, -, th₁, -⟩ := GlobalTheory.T.commonUnipotent_stabiliser_preserves_terms_and_datum K V H hK r N g Λ hg hΛ s₁ hs₁.1
+  obtain ⟨t₁, -, th₁, -⟩ := _root_.GlobalTheory.DegCnt.StabInv.main K V H hK r N g Λ hg hΛ s₁ hs₁.1
   have hS₁ := split_smul N hs₁ th₁ hS
-  obtain ⟨s₂, hs₂, hfix, h₂⟩ := GlobalTheory.T.normal_form_ideal_divisibility K V H hK r N g _ hg t₁ 𝔠 h0 hst hT hD
+  obtain ⟨s₂, hs₂, hfix, h₂⟩ := _root_.GlobalTheory.DegCnt.PosIso.normal_position K V H hK r N g _ hg t₁ 𝔠 h0 hst hT hD
   obtain ⟨b₁, b₂, b₃⟩ := h₂ _ rfl
-  obtain ⟨t₂, -, th₂, -⟩ := GlobalTheory.T.commonUnipotent_stabiliser_preserves_terms_and_datum K V H hK r N g _ hg t₁ s₂ hs₂.1
+  obtain ⟨t₂, -, th₂, -⟩ := _root_.GlobalTheory.DegCnt.StabInv.main K V H hK r N g _ hg t₁ s₂ hs₂.1
   have hS₂ := split_smul N hs₂ th₂ hS₁
   have e₁ := smul_inf_eq s₂ (s₁ • Λ) (N.F.Xa N.j) fun y hy => hfix y (Submodule.mem_sup_left hy)
   have e₂ := smul_inf_eq s₂ (s₁ • Λ) (N.F'.Xa N.j) fun y hy => hfix y (Submodule.mem_sup_right hy)
@@ -166,7 +166,7 @@ theorem exists_near : ∀ (K V : Type) [Field K] [NumberField K] [StarRing K] [A
   obtain ⟨s₃, hs₃, hn⟩ := _root_.GlobalTheory.DegCnt.DualPos.near_of_skew K V H hK r N g _ hg t₂ 𝔠 h0 hst hT hD hS₂ (2 * r + 2) (by omega)
     key (by rw [e₁]; exact a₃) (by rw [e₂]; exact a₄) b₂
   have hs₃' : s₃ ∈ N.Rs := ⟨hs₃.1.1, hs₃.2⟩
-  obtain ⟨-, -, th₃, -⟩ := GlobalTheory.T.commonUnipotent_stabiliser_preserves_terms_and_datum K V H hK r N g _ hg t₂ s₃ hs₃'.1
+  obtain ⟨-, -, th₃, -⟩ := _root_.GlobalTheory.DegCnt.StabInv.main K V H hK r N g _ hg t₂ s₃ hs₃'.1
   refine ⟨s₃ * (s₂ * s₁), N.Rs.mul_mem hs₃' (N.Rs.mul_mem hs₂ hs₁), ?_, ?_⟩
   · rw [mul_smul, mul_smul]
     exact split_smul N hs₃' th₃ hS₂

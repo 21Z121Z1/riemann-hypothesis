@@ -1,9 +1,10 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PowIdeal
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PushforwardSystemAffineSectionsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PushforwardSystemAffineSections
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacobsonIdealFaithfulModule
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompleteModuleNoetherianRealization
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubobjectLeIffAffineSectionsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubobjectLeIffAffineSections
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PowSubSuccLe
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuasicoherentSupSectionsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IdealPowerSubobjectSectionsStatement
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.RestrictIso
@@ -75,7 +76,7 @@ theorem adjKer_pow_smul_mem_secs {A : Type} [CommRing A] [IsNoetherianRing A] (I
   have h1 : ∀ n, IB ^ (n + 1) • (⊤ : Submodule Γ(X, V) Γ(E, V)) ≤ T n := by
     intro n y hy
     have hy' : y ∈ secs (powSub I E (n + 1)) V := by rw [hpowsecs]; exact hy
-    exact (GlobalTheory.T.subobject_le_iff_affine_sections _ _).1 (hS.pow_le n) V hy'
+    exact (_root_.GlobalTheory.CompanionTheory.GE.le_iff_secs_subset _ _).1 (hS.pow_le n) V hy'
   have h2 : ∀ n, T n = T (n + 1) ⊔ IB ^ (n + 1) • (⊤ : Submodule Γ(X, V) Γ(E, V)) := by
     intro n
     have hq : (powSub I E (n + 1) : X.Modules).IsQuasicoherent := (closedSys_pow I E).qcoh n
@@ -111,7 +112,7 @@ theorem adjKer_pow_smul_mem_secs {A : Type} [CommRing A] [IsNoetherianRing A] (I
       rw [smul_comm a r u, hu, smul_zero]
   have hIso : IsIso (ψ ∣_ (J.subschemeι ⁻¹ᵁ X.basicOpen f)) :=
     GroundTheory.Arith.SchemeCoh.isIso_morphismRestrict_of_le ψ hf
-  have hch := GlobalTheory.T.pushforward_system_affine_sections I (ψ ≫ J.subschemeι) hover hE hS B hB (V : X.Opens) V.2 x hx
+  have hch := _root_.GlobalTheory.CompanionTheory.GE.Chart.chartIn_adjKer I (ψ ≫ J.subschemeι) hover hE hS B hB (V : X.Opens) V.2 x hx
   have hch' : ∀ n, ChartIn (ψ ≫ J.subschemeι) (V : X.Opens)
       (IB ^ (n + 1) • ⊤ : Submodule Γ(X, V) M) (μ x) := by
     intro n

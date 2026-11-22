@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LamGApply
 import Formalism.LocalToGlobal.HermitianForms.IsLocBasis
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormLeOneIffIntegralAtPadicEmbeddingPlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralWeylBasisSpanningAllRings
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemWeylLatticeAddIffDetPowMulStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemWeylLatticeAddIffDetPowMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinIndMapRangeField
 open NumberField IsDedekindDomain
 open scoped TensorProduct
@@ -172,7 +172,7 @@ theorem mem_localization_standardWeylLattice : ∀ (K : Type) [Field K] [NumberF
     refine Finset.sum_congr rfl fun i _ => ?_
     rw [map_smulₛₗ, map_smul, hΦi]
   obtain ⟨r, hr, hrv⟩ := latD_coords lamW F hF u (fun τ x0 hx0 => by
-    rw [res_eq hS τ, GlobalTheory.T.mem_weylLattice_add_iff_det_pow_mul] at hx0
+    rw [res_eq hS τ, _root_.GlobalTheory.WeylShift.mem_weyl_add] at hx0
     obtain ⟨g, hg, rfl⟩ := hx0
     rw [hspan τ F.O] at hg
     obtain ⟨d, rfl⟩ := (Submodule.mem_span_range_iff_exists_fun F.O).1 hg

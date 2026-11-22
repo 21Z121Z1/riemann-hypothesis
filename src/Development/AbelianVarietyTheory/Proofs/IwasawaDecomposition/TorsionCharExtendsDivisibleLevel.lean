@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFlagFrame
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TorsionCharEqOfEqOnTorsionStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLocalFiniteTorsionSplittingStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TorsionCharEqOfEqOnTorsion
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLocalFiniteTorsionSplitting
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TorsionCharacterCocycleDescent
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitTorsAlgClosedFractionField
 
@@ -165,7 +165,7 @@ theorem exists_char [IsLocallyNoetherian X] {R : Type} [CommRing R] [IsDomain R]
     [IsLocalRing R] [IsAlgClosed (FractionRing R)] (x : Sp R ⟶ X) (q : ℕ) (hq : q ≠ 0)
     (κ : (Over.mk (spMap (algebraMap R R) ≫ x) ⟶ t.G) →* Rˣ) :
     ∃ c : TorsChar t x q, ∀ w, w ^ q = 1 → c.χ R w = κ w := by
-  obtain ⟨f, B, _, _, u, hf, hu, hfib⟩ := GlobalTheory.T.exists_local_finite_torsion_splitting E H X t R x q hq (_root_.GlobalTheory.LineNorm.splitTors_of_isAlgClosed E H X t R x q hq)
+  obtain ⟨f, B, _, _, u, hf, hu, hfib⟩ := _root_.GlobalTheory.SplitFinitePart.exists_finite_part E H X t R x q hq (_root_.GlobalTheory.LineNorm.splitTors_of_isAlgClosed E H X t R x q hq)
     (IsLocalRing.maximalIdeal R) inferInstance
   have hf' : IsUnit f := by simpa using hf
   let e : R ≃+* Localization.Away f :=
@@ -211,7 +211,7 @@ theorem exists_extension : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E
   let c'' : TorsChar t x q :=
     ⟨c'.χ, fun B _ _ _ g g' h h' => c'.mul B g g' (up g h) (up g' h'),
       fun B B' _ _ _ _ _ _ φ g g' h h' => c'.nat B B' φ g g' (up g h) h'⟩
-  exact ⟨c', GlobalTheory.T.torsionChar_eq_of_eq_on_torsion E H X t C x q (left_ne_zero_of_mul hq') c'' c fun w hw =>
+  exact ⟨c', _root_.GlobalTheory.CharUniq.char_unique E H X t C x q (left_ne_zero_of_mul hq') c'' c fun w hw =>
     (hc' w (up w hw)).trans (hκ w hw)⟩
 
 end GlobalTheory.TorsCharExt

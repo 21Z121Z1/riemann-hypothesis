@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Unitary
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FiniteClsAndStab
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.WeilActionLevelSupNormUniformInLattice
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdmissibleLatticeFamilyHermitianWeilAction
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThHSiegelOperatorStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThHSiegelOperator
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SiegelOperatorHermitianEisensteinSeries
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SiegelWeilDifferenceAutomorphyLinearity
 
@@ -148,12 +148,12 @@ theorem tendsto_first {Ψ : Finset (E →+* ℂ)} (hΨ : IsType Ψ) (hn : Even n
   have hsb := isSB_of_adm hΨ hn hφ
   haveI : Finite (Cls E n M) := (finite_cls_and_stab E n M hφ.pos.1).1
   letI : Fintype (Cls E n M) := Fintype.ofFinite _
-  have hZ' : dropZ Ψ Z ∈ Hn Ψ N := ((GlobalTheory.T.tendsto_thH_pushZ_atTop_thH_dropF E Ψ hΨ n N 0 isSB_zero).2 Z hZ).1
+  have hZ' : dropZ Ψ Z ∈ Hn Ψ N := ((_root_.GlobalTheory.SW.thH_siegel_operator E Ψ hΨ n N 0 isSB_zero).2 Z hZ).1
   rw [← hsw M R _ (admissibleLatticeFamily_restrictFirstColumnZero hφ) _ hZ']
   unfold swd classSum
   simp only [finsum_eq_sum_of_fintype]
   refine tendsto_finset_sum _ fun c _ => Tendsto.const_mul _ (Tendsto.sub ?_ ?_)
-  · exact ((GlobalTheory.T.tendsto_thH_pushZ_atTop_thH_dropF E Ψ hΨ n N _ (hsb _ (Quot.out c).2)).2 Z hZ).2.2 0 0
+  · exact ((_root_.GlobalTheory.SW.thH_siegel_operator E Ψ hΨ n N _ (hsb _ (Quot.out c).2)).2 Z hZ).2.2 0 0
   · exact _root_.GlobalTheory.SW.eis_siegel_operator E Ψ hΨ n N hn hN _ (hsb _ (Quot.out c).2) Z hZ
 
 end GlobalTheory.SW.Cusp

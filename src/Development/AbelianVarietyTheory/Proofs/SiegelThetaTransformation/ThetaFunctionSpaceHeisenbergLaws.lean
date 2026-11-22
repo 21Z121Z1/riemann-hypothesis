@@ -3,8 +3,8 @@ import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsWeakOfDat
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsHeatZero
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.EventuallyFinEqOne
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SqNormIntegralFundamentalDomainEqL2NormSq
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SymplecticCharacterRealFinitePointsMatchStatement
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RealPointsClassicalModelRealVectorSpaceStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SymplecticCharacterRealFinitePointsMatch
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RealPointsClassicalModelRealVectorSpace
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.CompletedTensorLatticeStrongApproxOpenCompact
 
 noncomputable section
@@ -49,7 +49,7 @@ theorem isFinPt_nsmul {u : WO S T} (hu : IsFinPt u) (N : ℕ) : IsFinPt (N • u
   exact map_nsmul_eq_zero (infPart D) h1 N
 
 theorem exists_fin_add_real (C : Ctx S T) (w : WO S T) : ∃ u v, IsFinPt u ∧ IsRealPt v ∧ w = u + v := by
-  obtain ⟨R, -, -, -, h1, -, h2, -⟩ := GlobalTheory.T.realPoints_classicalModel_realVectorSpace D S T C
+  obtain ⟨R, -, -, -, h1, -, h2, -⟩ := _root_.GlobalTheory.KerReal.real_points D S T C
   exact ⟨_, _, h2 w, (h1 _).1, (sub_add_cancel _ _).symm⟩
 
 theorem isTh_rho (C : Ctx S T) {f : WO S T → ℂ} (hf : C.IsTh f) (w : WO S T) : C.IsTh (C.rho w f) := by
@@ -67,7 +67,7 @@ theorem exists_level (C : Ctx S T) {f : WO S T → ℂ} (hf : C.IsTh f) :
 theorem eq_zero_of_real (C : Ctx S T) {f : WO S T → ℂ} (hf : C.IsTh f) (h0 : ∀ w, IsRealPt w → f w = 0) :
     f = 0 := by
   obtain ⟨h1, -, h3, -⟩ := _root_.GlobalTheory.Ker.HatLat.hatA_tens D S T C _ _ (stdL_full D.host.E S.rank) ⟨C.X.Λ_fg, C.X.Λ_span⟩
-  have h7 := (GlobalTheory.T.symplecticCharacter_real_finite_points_match D S T C).2.2.2.2.2.2.2
+  have h7 := (_root_.GlobalTheory.FormMatch.forms_match D S T C).2.2.2.2.2.2.2
   obtain ⟨N, hN, hl⟩ := exists_level C hf
   funext w
   obtain ⟨u, v, hu, hv, rfl⟩ := exists_fin_add_real C w
@@ -87,8 +87,8 @@ theorem eq_zero_of_real (C : Ctx S T) {f : WO S T → ℂ} (hf : C.IsTh f) (h0 :
 theorem rho_finW (C : Ctx S T) {f : WO S T → ℂ} (hf : C.IsTh f) (y : Matrix (Fin S.rank) (Fin T.rank) D.host.E)
     (w : WO S T) (hw : IsRealPt w) : C.rho (finW S T y) f w =
       cexp (π * I * (EFR C.X (C.realPt w) (embR C.X y) : ℝ)) * f (w - (ratW T S yᵀ - finW S T y)) := by
-  obtain ⟨-, h2, -, -, -, -, -, h7⟩ := GlobalTheory.T.symplecticCharacter_real_finite_points_match D S T C
-  obtain ⟨-, -, -, hadd, -, -, -, hfin, -⟩ := GlobalTheory.T.realPoints_classicalModel_realVectorSpace D S T C
+  obtain ⟨-, h2, -, -, -, -, -, h7⟩ := _root_.GlobalTheory.FormMatch.forms_match D S T C
+  obtain ⟨-, -, -, hadd, -, -, -, hfin, -⟩ := _root_.GlobalTheory.KerReal.real_points D S T C
   obtain ⟨a1, a2, a3, -⟩ := h7 y
   set z := ratW T S yᵀ - finW S T y with hz
   have hr : ratW T S yᵀ = finW S T y + z := by rw [hz]; abel
@@ -97,7 +97,7 @@ theorem rho_finW (C : Ctx S T) {f : WO S T → ℂ} (hf : C.IsTh f) (y : Matrix 
   have e1 : w + finW S T y = ratW T S yᵀ + (w - z) := by rw [hz]; abel
   have hzz : symplOH S T z z = 0 := by
     unfold symplOH
-    rw [(GlobalTheory.T.symplecticCharacter_real_finite_points_match D S T C).2.2.2.2.1, mul_zero]
+    rw [(_root_.GlobalTheory.FormMatch.forms_match D S T C).2.2.2.2.1, mul_zero]
   have e2 : -symplOH S T (ratW T S yᵀ) (w - z) = symplOH S T w z := by
     have e3 : symplOH S T z w = symplOH S T z (w - z) + symplOH S T z z := by
       rw [← symplOH_add_right, sub_add_cancel]
@@ -115,8 +115,8 @@ theorem isTh_actO (C : Ctx S T) {f : WO S T → ℂ} (hf : C.IsTh f) {γ : GA D 
     (hγ' : γ' ∈ GQ T) : C.IsTh fun w => f (actO S T γ γ' w) := by
   have hs : ∀ w w', symplOH S T (actO S T γ γ' w) (actO S T γ γ' w') = symplOH S T w w' := fun w w' => by
     unfold symplOH
-    rw [(GlobalTheory.T.symplecticCharacter_real_finite_points_match D S T C).2.2.2.2.2.2.1]
-  obtain ⟨R, -, -, -, -, -, -, -, -, hact⟩ := GlobalTheory.T.realPoints_classicalModel_realVectorSpace D S T C
+    rw [(_root_.GlobalTheory.FormMatch.forms_match D S T C).2.2.2.2.2.2.1]
+  obtain ⟨R, -, -, -, -, -, -, -, -, hact⟩ := _root_.GlobalTheory.KerReal.real_points D S T C
   let A : WO S T →+ WO S T := AddMonoidHom.mk' (actO S T γ γ') (actO_add γ γ')
   have hA : Continuous (actO S T γ γ') := (continuous_const.matrix_mul continuous_id).matrix_mul continuous_const
   refine ⟨fun x w => ?_, ?_, hf.cont.comp hA, fun k L h1 h2 w => ?_⟩

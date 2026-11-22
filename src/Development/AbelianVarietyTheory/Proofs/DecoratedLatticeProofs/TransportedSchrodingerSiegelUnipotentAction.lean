@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HalfData
 import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelWeilUnitaryConvergent
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StandardUnitaryChartUnipotentEqWittUnipotent
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchrodingerFunctionUnitaryLeviRadicalActionsStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchrodingerFunctionUnitaryLeviRadicalActions
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchrodingerThetaEqSchwartzBruhat
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HeckeFormNSOfHeckeForm
 open scoped Matrix NNReal ComplexConjugate TensorProduct ContDiff
@@ -60,7 +60,7 @@ theorem transport_unip : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (A B : HS
   obtain ⟨f, hf, hfΦ⟩ := ((_root_.GlobalTheory.SchSchwartzAll.schSchwartz D) ψ hW.std θ hθ A B ν 𝓨 hν).2.1 Φ.1 Φ.2
   have h1 := hT (κ.symm g) f hf Φ hfΦ.symm
   rw [MulEquiv.apply_symm_apply] at h1
-  rw [h1, hgc, ((GlobalTheory.T.schrodingerFunction_unitary_levi_radical_actions D ψ A B χB omh hW ν 𝓨 hν f hf).2.2.1 c x), hfΦ]
+  rw [h1, hgc, ((_root_.GlobalTheory.Core.Rk.SchLaws.sch_laws D ψ A B χB omh hW ν 𝓨 hν f hf).2.2.1 c x), hfΦ]
   exact congrArg (· * Φ.1 x) (chr_eq_shift D ψ μ lam hlam _ b c hc)
 
 end GlobalTheory.StdUnn.Unip

@@ -5,12 +5,12 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsPermWOne
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemIwUIff
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryIwasawaBruhatDecomposition
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BruhatWeightDecreases
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryIwahoriFactorizationStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryIwahoriIndexFiniteStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DominantConjugateUnipotentMemStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryIwahoriFactorization
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryIwahoriIndexFinite
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DominantConjugateUnipotentMem
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetRepsOfFactorizationStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FunctionalZeroOfInjectivePower
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeckePowerCosetFormulaStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeckePowerCosetFormula
 open GlobalTheory.PRep Formalism.UG GlobalTheory.LFun PositivityTheory.SphericalProduct
 
 noncomputable section
@@ -81,7 +81,7 @@ theorem abs_main {G : Type} [Group G] (K I : Subgroup G) (hIK : I ≤ K) (hfin :
     exact Subtype.ext (hinj a a.2 (congrArg Subtype.val ha))
   have hl0 : l v = 0 := by
     refine _root_.GlobalTheory.CompanionTheory.SatPow.functional_eq_zero_of_late_iterates _ A hAinj l v j₀ fun j hj => ?_
-    obtain ⟨m, -, hm⟩ := GlobalTheory.T.hecke_power_coset_formula G K I hIK hfin t R h1R hRI hRt hR j
+    obtain ⟨m, -, hm⟩ := _root_.GlobalTheory.CompanionTheory.SatPow.HeckeTrace.heckeTrace G K I hIK hfin t R h1R hRI hRt hR j
     have := hm φ₀ hK
     rw [hlam, hcon j hj, mul_zero, finsum_eq_sum_of_fintype] at this
     show ∑ c : K ⧸ I.subgroupOf K, (((A ^ j) v : Wsp) : G → ℂ) ((c.out : K) : G) = 0
@@ -222,14 +222,14 @@ theorem satPowNonvan : PositivityTheory.SphericalProduct.SatPowNonvan := by
   have hq2 : 2 ≤ q := hU.2.2.2.2.2.1
   have hq : (q : ℂ) ≠ 0 := by exact_mod_cast (show q ≠ 0 by omega)
   have hα : ∀ i, (fun i => (α i : ℂ)) i ≠ 0 := fun i => (α i).ne_zero
-  obtain ⟨hKI, hYI⟩ := GlobalTheory.T.unitary_iwahori_index_finite L ϖ σ q n hU
+  obtain ⟨hKI, hYI⟩ := _root_.GlobalTheory.CompanionTheory.SatPow.finite_index_iwU L ϖ σ q n hU
   obtain ⟨R, h1R, hRP, hR⟩ := GlobalTheory.T.coset_reps_of_factorization (GU σ n) (IwU σ n) t (fun u => u ∈ IwU σ n ∧ IsUnipU u)
     ⟨one_mem _, isBorelU_one, fun i => by simp⟩ (hYI t) (fun i hi => by
-      obtain ⟨u, hu, hu', y, hy, hy', e⟩ := GlobalTheory.T.unitary_iwahori_factorization L σ n hσ hσv t htD htS i hi
+      obtain ⟨u, hu, hu', y, hy, hy', e⟩ := _root_.GlobalTheory.CompanionTheory.SatPow.IwFact.iwahori_fact L σ n hσ hσv t htD htS i hi
       exact ⟨u, hu, ⟨hu, hu'⟩, y, hy, hy', e⟩)
   have hRI : ∀ r ∈ R, r ∈ IwU σ n := fun r hr => (hRP r hr).1
   have hRt : ∀ r ∈ R, ∀ k : ℕ, t ^ k * r * (t ^ k)⁻¹ ∈ KU σ n := fun r hr k =>
-    GlobalTheory.T.dominant_conjugate_unipotent_mem L σ n t r htD htS (hRP r hr).1 (hRP r hr).2.2 k
+    _root_.GlobalTheory.CompanionTheory.SatPow.conj_unip_mem_KU L σ n t r htD htS (hRP r hr).1 (hRP r hr).2.2 k
   obtain ⟨φ₀, hsph, h1, -⟩ := Final.SphericalExistsU L ϖ σ q n (n / 2) hU (by omega) (by omega) (fun i => (α i : ℂ)) hα
   have hIK := GlobalTheory.CompanionTheory.KUFactsU.iwU_le_KU σ n
   have hK : ∀ g, ∀ k ∈ KU σ n, φ₀ (g * k) = φ₀ g := fun g k hk => by

@@ -3,10 +3,10 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsCliff
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HighestWeightAntitoneOfFiniteDimensionalStable
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsCliffordLowestVector
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CliffordVectorSpinWeight
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SpinGlRelationsAdjointStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsHighestWeightModuleStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SpinGlRelationsAdjoint
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsHighestWeightModule
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Sl2SquareKillsVector
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SpinTensorHighestWeightStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SpinTensorHighestWeight
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.PRVComponents
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.PieriRules.KTypeIntDomStatement
 import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.DiscreteSeriesCharacters.DiscreteSeriesInfinitesimalCharacter
@@ -124,7 +124,7 @@ theorem assemble {n : ℕ} {ι : Type} [Fintype ι] [DecidableEq ι] (c : Fin n 
     linarith
   refine ⟨σ, hσ, ?_⟩
   obtain ⟨Z, iZ1, iZ2, iZ3, E, u, a0, hEgl, hEu, hu0, hu, hirr, ha0, haw, hah⟩ :=
-    GlobalTheory.T.exists_highest_weight_module (fun a => wtR ν (σ a) - rhoV n (σ a)) hσ (-(((n : ℝ) - 1) / 2))
+    _root_.GlobalTheory.CompanionTheory.RealCount.Extremal.extremal_module (fun a => wtR ν (σ a) - rhoV n (σ a)) hσ (-(((n : ℝ) - 1) / 2))
       (fun a => ⟨ν (σ a) + ((σ a : ℕ) : ℤ), by simp only [wtR, rhoV]; push_cast; ring⟩) σ
   have hay : ∀ y, E y y a0 = ((wtR ν y - rhoV n y : ℝ) : ℂ) • a0 := by
     intro y
@@ -142,7 +142,7 @@ theorem assemble {n : ℕ} {ι : Type} [Fintype ι] [DecidableEq ι] (c : Fin n 
     · rcases lt_or_gt_of_ne (σ.symm.injective.ne hne) with h | h
       · left; simpa using hah _ _ h
       · right; simpa using hah _ _ h
-  obtain ⟨φ, hφq, hφup, hφdiag⟩ := GlobalTheory.T.spin_tensor_highest_weight c hc q hq0 hq1 hq2 E hEgl (wtR ν) a0 hay hadj
+  obtain ⟨φ, hφq, hφup, hφdiag⟩ := _root_.GlobalTheory.CompanionTheory.RealCount.SpinMap.exists_spin_map c hc q hq0 hq1 hq2 E hEgl (wtR ν) a0 hay hadj
   have hφsum : ∀ f : ι → ℂ, φ f = ∑ j, f j • φ (Pi.single j 1) := by
     intro f
     conv_lhs => rw [show f = ∑ j, f j • (Pi.single j 1 : ι → ℂ) by
@@ -178,13 +178,13 @@ theorem assemble {n : ℕ} {ι : Type} [Fintype ι] [DecidableEq ι] (c : Fin n 
   have hDstar : ∀ a b i j, star (ReciprocityTheory.ChartRestriction.DS.HW.matrixFamilyDual (spinM c) a b i j) =
       ReciprocityTheory.ChartRestriction.DS.HW.matrixFamilyDual (spinM c) b a j i := by
     intro a b i j
-    have := congrFun (congrFun ((GlobalTheory.T.spin_gl_relations_adjoint c hc).2 a b) i) j
+    have := congrFun (congrFun ((_root_.GlobalTheory.CompanionTheory.RealCount.SpinRel.spinRel c hc).2 a b) i) j
     simp only [ReciprocityTheory.ChartRestriction.DS.HW.matrixFamilyDual, Matrix.neg_apply, Matrix.transpose_apply, star_neg,
       Matrix.conjTranspose_apply] at this ⊢
     rw [this]
   obtain ⟨ψ, hψt, hψeq⟩ := CompanionTheory.D.DSIC.hHWMap n (fun _ => true) (PiLp 2 (fun _ : ι => Z)) V
     (ReciprocityTheory.ChartRestriction.DS.HW.tensAct E (ReciprocityTheory.ChartRestriction.DS.HW.matrixFamilyDual (spinM c))) Kf (wtR ν) t v S
-    (kRel_tensAct_of_glRel E _ hEgl (glRel_ext1Dual _ (GlobalTheory.T.spin_gl_relations_adjoint c hc).1))
+    (kRel_tensAct_of_glRel E _ hEgl (glRel_ext1Dual _ (_root_.GlobalTheory.CompanionTheory.RealCount.SpinRel.spinRel c hc).1))
     (kUnit_tensAct_of_adjoint E _ hEu hDstar) (fun a b c d _ _ => hK a b c d) (fun a b _ x y => hKu a b x y)
     ht0 hthigh hv hfd (fun a b _ w hw => hst a b w hw) hvS
   have hkey : ∀ a b (z : Z) (i : ι), ψ (WithLp.toLp 2 (Pi.single i (E a b z))) =

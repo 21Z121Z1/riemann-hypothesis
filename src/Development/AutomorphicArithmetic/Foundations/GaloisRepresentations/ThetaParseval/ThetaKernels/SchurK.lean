@@ -30,7 +30,7 @@ theorem schur_k : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberFi
     obtain ⟨τ⟩ : Nonempty (E →+* ℂ) := inferInstance
     apply τ.injective
     rw [hB.cm.2.2.2 τ, hB.cm.2.2.2 τ, star_star]
-  have hskew := GlobalTheory.T.adelicSymplecticTraceForm_alternating_swap F E σ hinv nS nT JS JT hJS hJT ξ₀ hσξ
+  have hskew := _root_.GlobalTheory.SymplSkew.symplOF_swap F E σ hinv nS nT JS JT hJS hJT ξ₀ hσξ
   have hann := _root_.GlobalTheory.T.rational_lattice_self_dual F E σ B hB nS nT JS JT hJS hJT ξ₀ hξ
   have hth : ∀ w f, IsThetaFunOF σ JS JT ξ₀ B.ψ f → IsThetaFunOF σ JS JT ξ₀ B.ψ (heisOF σ JS JT ξ₀ B.ψ w f) :=
     fun w f hf => _root_.GlobalTheory.HeisThetaF.isThetaFunOF_heisOF_k F E σ B hB nS nT JS JT ξ₀ w f hf

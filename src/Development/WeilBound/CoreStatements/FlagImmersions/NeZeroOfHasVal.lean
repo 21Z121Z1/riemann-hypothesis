@@ -1,5 +1,7 @@
 import Development.WeilBound.CoreStatements.FlagImmersions.Transport
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtFractionNoetherianClosedStatement
+import Mathlib
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtFractionNoetherianClosed
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
 
 noncomputable section
 
@@ -34,7 +36,7 @@ theorem exists_poly (T : CoordTie ℤ ξ (fun c' : (k : K) → J k => ∏ k, y �
     · simp
   have hmem : a ∈ chartRingZ y c := by
     refine hle ((T.ring c hc0 a).2 fun q hq => ?_)
-    obtain ⟨h1, -, h3⟩ := GlobalTheory.T.regAt_fraction_noetherian_closed X Ω ξ T.gen q
+    obtain ⟨h1, -, h3⟩ := _root_.GlobalTheory.CompanionTheory.Ar.RegAtRing.regAt_ring X Ω ξ T.gen q
     have h4 := h3 (hn q.1).2
     let φ : chartRingZ y c →+* regAt ξ q :=
       (algebraMap (chartRingZ y c) Ω).codRestrict _ fun r => (T.ring c hc0 r).1 (hge r.2) q hq

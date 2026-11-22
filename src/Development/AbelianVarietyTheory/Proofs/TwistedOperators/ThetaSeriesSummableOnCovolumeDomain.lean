@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.AdjointIsotropicDecomposition
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaRestrictIsotropicQuotientWittTowerPropertieStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaRestrictIsotropicQuotientWittTowerPropertie
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.EqZeroOfLintegralEqZero
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RationalSymplecticPointsSelfAnnihilator
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOfCoefficientsSeparatingCharactersEqZero
@@ -541,7 +541,7 @@ theorem core (D : D7) (V V' W S : HSp D) (hS : S.gram = 1) (C C' : Matrix (Fin V
   have hmid : midPart V V' W B 0 = 0 := Matrix.zero_mul _
   have hres : ∀ g, res V V' W C B μ 𝓨 g 0 = ∫ a, g (isoPart V W C a) ∂(μ.restrict 𝓨) := fun g => by
     simp only [res, hmid, add_zero]
-  obtain ⟨hH, -⟩ := GlobalTheory.T.thetaRestrictIsotropicQuotient_wittTower_properties D V V' W S.rank C B hs ψ hψ μ 𝓨 hcov'
+  obtain ⟨hH, -⟩ := _root_.GlobalTheory.TowerRestrict.res_theta D V V' W S.rank C B hs ψ hψ μ 𝓨 hcov'
   have hinv : ∀ g, IsThetaFunO ψ V W g → ∀ a, ∫ x, heisO ψ V W (isoPart V W C a) g (isoPart V W C x) ∂(μ.restrict 𝓨) =
       ∫ x, g (isoPart V W C x) ∂(μ.restrict 𝓨) := fun g hg a => by
     have := congrFun ((hH g hg).2.2.2 a) 0

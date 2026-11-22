@@ -2,8 +2,8 @@ import Mathlib
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.AcrisKummerUnits.ConstantCoeffSurjective
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.AcrisKummerUnits.GaloisTwistIdentitySection
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DividedPowerQuotientExists
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CrystallineFiltrationMultiplicativeStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiltrationDividedPowerStructuresStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CrystallineFiltrationMultiplicative
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiltrationDividedPowerStructures
 
 set_option backward.isDefEq.respectTransparency false
 
@@ -66,8 +66,8 @@ theorem exists_dividedPowers_fil_pfil : ∀ {l : ℕ} [Fact l.Prime] (A : PAlg l
     (∃ δ : DividedPowers (A.Fil n 1), R.IsPd (A.mkAcr n) (A.Fil0 1) δ) ∧
       ∃ δ : DividedPowers (A.PFil n), R.IsPd (A.mkAcr n) A.PFil0 δ := by
   intro l _ A n
-  obtain ⟨-, -, -, -, h1, h2, -⟩ := GlobalTheory.T.crystalline_filtration_multiplicative A
-  obtain ⟨p1, p2, -⟩ := GlobalTheory.T.filtration_divided_power_structures A
+  obtain ⟨-, -, -, -, h1, h2, -⟩ := _root_.GlobalTheory.CompanionTheory.FilMul.main A
+  obtain ⟨p1, p2, -⟩ := _root_.GlobalTheory.CompanionTheory.PerfFil.pdI_main A
   exact ⟨exists_dividedPowers_map_mkAcr A n _ p1 _ (h1 n 1),
     exists_dividedPowers_map_mkAcr A n _ p2 _ (h2 n)⟩
 

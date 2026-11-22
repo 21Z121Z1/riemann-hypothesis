@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.GoodGeneric
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsHeckeOperatorsRowsIntertwineThetaLiftsStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsHeckeOperatorsRowsIntertwineThetaLifts
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeThetaLevel3Exists
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsSeparatingInertEigenvaluePassage
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeOperatorsRowsLiftsRationalAdjointClosedStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeOperatorsRowsLiftsRationalAdjointClosed
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteTypesSeparatedByInertPlaces
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinRepApply
@@ -37,9 +37,9 @@ theorem heckeClose : HoweUnram → GlobalTheory.Published.HarishChandraFinite �
   have hTS : A3.fam3.TypesSep3 :=
     _root_.GlobalTheory.Hk3.typesSep3_of_pin hCD hH R F hLI hOk hC hEx ⟨fun t k => hJ.R t k.1 k.2, fun j t k => hJ.L j t k.1 k.2⟩ hPass hPos hB
   have hG : GoodGeneric A3.A.X F.P0 F.ψ0⁻¹ := (GlobalTheory.GoodGenericSer.goodGenericCharacter_of_seriesTypes R F hC s hOk hSer).2
-  have hR := GlobalTheory.T.exists_hecke_operators_rows_intertwine_theta_lifts hH hHC hCD R F hLI hC hEx hJ hB hPos
+  have hR := _root_.GlobalTheory.Hk3.HeckeRowsClose.exists_heckeIntertwiningDefinite_of_liftInteg hH hHC hCD R F hLI hC hEx hJ hB hPos
   have hL := _root_.GlobalTheory.Hk3.heckeTheta_level3_exists_alt hH hHC hCD R F hLI hC hEx hJ s hOk hG hU hGU hGE hLW hA hPos hB hParts hTS hPass
-  exact ⟨GlobalTheory.T.okH_inertRationalAdjoint_of_weakCharacterisation_inertJunk R F hC hJ, ⟨hR, hL⟩, hTS, tr, htr⟩
+  exact ⟨_root_.GlobalTheory.InertOkH.heckeOperators_rows_lifts_rational_adjointClosed R F hC hJ, ⟨hR, hL⟩, hTS, tr, htr⟩
 
 end GlobalTheory.Hk3.HeckeClose
 

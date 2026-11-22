@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.IsMetricFrOfIsMetri
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ChernDegreeComplex
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothFormsCalculusHolomorphicAtlas
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VarietyComplexPointsMapIsHolomorphic
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullFlagGradedLineChernFormsSmoothDbarClosedStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullFlagGradedLineChernFormsSmoothDbarClosed
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFlaggedBundleMetricPullGramRefinement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedFrameEventuallyFrameNearComplexPoint
 import Development.AbelianVarietyTheory.Definitions.Divisors.BsLApply
@@ -25,7 +25,7 @@ theorem fibre_integral : ∀ (F : Type) [Field F] (σ : F →+* ℂ) (X Y : Var 
   intro F _ σ X Y ι _ m E E' φ f hf hR H hH α hα
   have hol := _root_.GlobalTheory.ChernCalc.ptMap_isHolo F σ X Y f hf
   have hmet := _root_.GlobalTheory.ChernCalc.isMetricFr_pullGram F σ X Y ι m E E' φ f hf hR H hH
-  have hgr := GlobalTheory.T.fullFlagGradedLineChernForms_smooth_dbarClosed F σ Y ι m E' _ hmet
+  have hgr := _root_.GlobalTheory.ChernCalc.GradedForm.dbarCoh_grF F σ Y ι m E' _ hmet
   have hpb := (((GlobalTheory.formCalculus _ _ (atlas X σ)).2.2.2.2 _ _ (atlas Y σ) _ hol).2 1 α α).2.2.2 hα
   have hev := ((GlobalTheory.formCalculus _ _ (atlas Y σ)).2.2.2.1 (Root m) (grF E' (pullGram E H φ f hf)) (fibrePoint m)
     fun x => (hgr x).1).1

@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.EqZeroOfForallPowDv
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.FormalExpMulFormalExpNeg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCharSeries
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubstGroupLawEqMulOfDualTateCharacterStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowerSeriesLinearCoefficientsMvPowerSeriesFormalStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowerSeriesLinearCoefficientsMvPowerSeriesFormal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Cob1FormalLogMapMemKer
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusFormalLogSubSmulIntegral
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DlogEqSumLinearCoefficientsFormExplicitStatement
@@ -57,7 +57,7 @@ theorem GlobalTheory.CharLog.exists_log_char_period : ∀ (p : ℕ) [Fact p.Prim
     rw [if_pos rfl]
   have hlin : ∀ i, lin (formalLog (map (algebraMap F.B F.Q) g)) i =
       algebraMap F.B F.Q (coeff (Finsupp.single i 1) g) := fun i => by
-    rw [GlobalTheory.T.powerSeriesLinearCoefficients_mvPowerSeriesFormalLog F.Q d _ (by rw [constantCoeff_map, hg1, map_one]) i, lin, coeff_map]
+    rw [_root_.GlobalTheory.FormalCalc.lin_formalLog F.Q d _ (by rw [constantCoeff_map, hg1, map_one]) i, lin, coeff_map]
   have hcob := _root_.GlobalTheory.CobLog.cob1_formalLog_mem_ker p F.B O F.Q F.θ F.frame d μ' hlift.const g hg1 (by
     rw [hg]; convert hmul using 2; funext i; exact hμ i)
   refine ⟨formalLog (map (algebraMap F.B F.Q) g), fun i => coeff (Finsupp.single i 1) g,

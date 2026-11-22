@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InstPreorder
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HensIsLocalRingAndIsLocalHomOf
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleNbhdLocalRingToHenselisationInjectiveOfNbhdStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleNbhdLocalRingToHenselisationInjectiveOfNbhd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLeIsRootOfSimpleRootPointedEtaleNbhdStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PointedEtaleNeighbourhoodLocalRingIsDirectedStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleNbhdLocalRingToHenselisationAlgebraMapStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PointedEtaleNeighbourhoodLocalRingIsDirected
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleNbhdLocalRingToHenselisationAlgebraMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSubMemMaximalIdealPointedEtaleNeighbourhoo
 
 open IsLocalRing GlobalTheory.Henselisation Polynomial
@@ -39,7 +39,7 @@ theorem isUnit_of_sub_mem_maximalIdeal {S : Type*} [CommRing S] [IsLocalRing S] 
 theorem henselianLocalRing_hens : ∀ (R : Type) [CommRing R] [IsLocalRing R],
     HenselianLocalRing (Hens R) := by
   intro R _ _
-  haveI : IsDirected (EtNbhd R) (· ≤ ·) := GlobalTheory.T.pointedEtaleNeighbourhoodLocalRing_isDirected R
+  haveI : IsDirected (EtNbhd R) (· ≤ ·) := _root_.GlobalTheory.Henselisation.etNbhd_isDirected R
   obtain ⟨hloc, hofloc⟩ := _root_.GlobalTheory.Henselisation.hens_isLocalRing_and_isLocalHom_of R
   letI := hloc
   refine { toIsLocalRing := hloc, is_henselian := ?_ }
@@ -51,7 +51,7 @@ theorem henselianLocalRing_hens : ∀ (R : Type) [CommRing R] [IsLocalRing R],
   set ρ := algebraMap R (Hens R) r with hρdef
   have hρ : a₀ - ρ ∈ maximalIdeal (Hens R) := by
     haveI := hofloc i'
-    rw [← hb₀, hρdef, ← GlobalTheory.T.etaleNbhdLocalRingToHenselisation_algebraMap R i' r, ← map_sub]; exact map_nonunit _ _ hr
+    rw [← hb₀, hρdef, ← _root_.GlobalTheory.Henselisation.Hens.of_algebraMap R i' r, ← map_sub]; exact map_nonunit _ _ hr
   have hfρ : f.eval ρ ∈ maximalIdeal (Hens R) := by
     have hd := sub_dvd_eval_sub ρ a₀ f
     have : f.eval ρ - f.eval a₀ ∈ maximalIdeal (Hens R) := by
@@ -68,7 +68,7 @@ theorem henselianLocalRing_hens : ∀ (R : Type) [CommRing R] [IsLocalRing R],
   obtain ⟨i, g, hg⟩ : ∃ (i : EtNbhd R) (g : Polynomial i.B), g.map (Hens.of i) = f :=
     Ring.DirectLimit.Polynomial.exists_of (f' := fun _ _ h => EtNbhd.trans h) f
   haveI := hofloc i
-  have hgm : g.Monic := monic_of_injective (GlobalTheory.T.etaleNbhdLocalRingToHenselisation_injective_of_nbhd R i) (hg ▸ hf)
+  have hgm : g.Monic := monic_of_injective (_root_.GlobalTheory.Henselisation.Hens.of_injective_of_nbhd R i) (hg ▸ hf)
   let M := i.q.primeCompl
   let ψ : i.A →+* i.B := algebraMap i.A i.B
   let s : M := IsLocalization.commonDenom M g.support g.coeff
@@ -81,7 +81,7 @@ theorem henselianLocalRing_hens : ∀ (R : Type) [CommRing R] [IsLocalRing R],
   have hu : IsUnit u := (IsLocalization.map_units i.B s).map (Hens.of i)
   have hΦr : Φ (algebraMap R i.A r) = ρ := by
     simp only [Φ, ψ, RingHom.comp_apply, ← IsScalarTower.algebraMap_apply]
-    exact GlobalTheory.T.etaleNbhdLocalRingToHenselisation_algebraMap R i r
+    exact _root_.GlobalTheory.Henselisation.Hens.of_algebraMap R i r
   let a₀' : i.A := (s : i.A) * algebraMap R i.A r
   have hΦa₀' : Φ a₀' = u * ρ := by simp only [a₀', map_mul, hΦr]; rfl
   have hhΦ : h.map Φ = f.scaleRoots u := by

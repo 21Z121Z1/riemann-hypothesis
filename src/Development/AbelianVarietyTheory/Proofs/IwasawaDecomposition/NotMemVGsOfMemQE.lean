@@ -20,7 +20,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AffineEigenv
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnfoldingCharArgMulLeftUnipotent
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormOneDetEqOne
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLevelGroupModTypePrimeStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelGroupReductionStepZeroTypePrimeStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelGroupReductionStepZeroTypePrime
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelCharacterStepZeroTypePrimeStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelStepZeroAtTwistPrimeFullStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ProjConjLevelLeIntegralGLAtTypePrimeStatement
@@ -480,7 +480,7 @@ theorem exists_chIdx_of_cst {G : ChGlob X R.m} (hd : ∀ P : rowSG Pr sel mu, De
     | zero =>
       rw [h0] at hh
       obtain rfl : h = 1 := hh
-      exact ⟨_, GlobalTheory.T.levelGroupReduction_stepZero_typePrime Ch sel mu cst ⟨w.1, Finset.mem_union_left _ w.2⟩ w.2 hs (hd _),
+      exact ⟨_, _root_.GlobalTheory.Mem.ZeroGrp.grpG_zero Ch sel mu cst ⟨w.1, Finset.mem_union_left _ w.2⟩ w.2 hs (hd _),
         GlobalTheory.T.levelCharacter_stepZero_typePrime Ch sel mu cst ⟨w.1, Finset.mem_union_left _ w.2⟩ w.2 hs fun a => hpsi _ a w.2, fun _ => rfl⟩
     | succ i =>
       have hr := (hR _ _).2 h hh

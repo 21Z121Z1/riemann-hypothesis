@@ -20,7 +20,8 @@ import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsTorusOf
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsIntegralHarmonicNeZeroAndIsHomogeneous
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ThetaRuleExistsAndEval
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsAnalyticDataUnitFrameFramedPointStatement
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ThetaFunctionIsogenyRestrictionStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ThetaFunctionIsogenyRestriction
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.GCauchyStatement
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.NumericalConsequencesOfPins
 
 section Analytic
@@ -284,7 +285,7 @@ theorem exists_jet_ne_zero (hs : IsSympl X bas) (hd : x ∈ X.dom) {L : Lt E r} 
     have := hconj z z
     rw [hx_eq_hermForm] at this
     exact (Complex.conj_eq_iff_im.1 this.symm).symm
-  obtain ⟨y, hy, hne⟩ := GlobalTheory.T.theta_function_isogeny_restriction g _ hPD (perGrp idx x L)
+  obtain ⟨y, hy, hne⟩ := _root_.GlobalTheory.ThetaTranslJet.exists_translates_jet_ne_zero g _ hPD (perGrp idx x L)
     (discrete_of_integral _ hpos _ (span_image_pv idx hs hd L (TensLat.span_of_selfD X hL)) hint)
     (fun v => by
       simp only [hf_transpose]

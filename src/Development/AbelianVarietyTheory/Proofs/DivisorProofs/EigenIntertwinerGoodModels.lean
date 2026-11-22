@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyConstantFi
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasCompactSupportFinprodSchwartzBruhatFiniteAdel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenScaledInt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsScaledIntegralFiniteAdelePointsSubsetNhds
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndicatorCosetScaledIntegralEqRestrictedProductStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndicatorCosetScaledIntegralEqRestrictedProduct
 
 open scoped TensorProduct NNReal Matrix
 open NumberField IsDedekindDomain MeasureTheory Filter Topology Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes
@@ -25,7 +25,7 @@ theorem boxS : ∀ (F : Type) [Field F] [NumberField F] (κ : Type) [Fintype κ]
       (∀ᶠ v in cofinite, φ v = Set.indicator {x | ∀ i, x i ∈ v.adicCompletionIntegers F} 1) ∧
       ∀ y : κ → FiniteAdeleRing (𝓞 F) F, Set.indicator {y | y - r ∈ scaledInt F κ a} (fun _ => (1 : ℂ)) y =
         ∏ᶠ v, φ v fun i => evalV F v (y i) :=
-  GlobalTheory.T.indicator_coset_scaledIntegral_eq_restrictedProduct
+  _root_.GlobalTheory.EvAdm.indicator_coset_scaledInt_eq_finprod
 
 variable {F : Type} [Field F] [NumberField F] {κ : Type} [Fintype κ]
 

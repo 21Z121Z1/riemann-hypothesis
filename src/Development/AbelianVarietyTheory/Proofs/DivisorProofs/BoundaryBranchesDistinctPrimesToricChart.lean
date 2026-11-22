@@ -11,8 +11,10 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConeAtOfTori
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LinearUniformisationTorsionIsomorphism
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCommonSemiAbelianPullbackTwoUnitaryTraits
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdClassGroupMk0EqOfLinearEquivPiStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SteinitzPiIdealsLinearEquivOfClassGroupProdStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalHomCompleteDVRPrincipalMaximalIdealStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SteinitzPiIdealsLinearEquivOfClassGroupProd
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalHomCompleteDVRPrincipalMaximalIdeal
+import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissiblePadicIntMaximalIdeal
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCompleteDvrInjectiveLocal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalPushoutUnramifiedCharZeroStatement
 
 noncomputable section
@@ -61,7 +63,7 @@ theorem exists_equiv_comp_eq {X X' : Type} [AddCommGroup X] [Module O X] [Module
   have h1 := GlobalTheory.T.prod_classGroup_mk0_eq_of_linearEquiv_pi O (ι ⊕ μ) (Sum.elim B A) (Sum.elim B'' A) ⟨E₁.symm.trans E₂⟩
   rw [Fintype.prod_sum_type, Fintype.prod_sum_type] at h1
   simp only [Sum.elim_inl, Sum.elim_inr] at h1
-  obtain ⟨eBB⟩ := GlobalTheory.T.steinitz_pi_ideals_linearEquiv_of_classGroup_prod O ι B B'' (mul_right_cancel h1)
+  obtain ⟨eBB⟩ := _root_.GlobalTheory.SteinitzProd.steinitz O ι B B'' (mul_right_cancel h1)
   let κ : (LinearMap.ker ρ) ≃ₗ[O] (LinearMap.ker ρ') := eB.trans (eBB.trans eB''.symm)
   refine ⟨e₂.trans ((κ.symm.prodCongr (LinearEquiv.refl O X')).trans e₁.symm), fun x => ?_⟩
   rw [← he₁, ← he₂, LinearEquiv.trans_apply, LinearEquiv.trans_apply, LinearEquiv.apply_symm_apply]
@@ -226,7 +228,7 @@ theorem exists_two_traits {A : Type} [CommRing A] [CharZero k] (θ : A →+* Cha
     exact mem_nonZeroDivisors_iff.2 ⟨key, fun x hx => key x (by rw [mul_comm]; exact hx)⟩
   have hchB : CharZero (ResidueField B) :=
     (RingHom.charZero_iff (ResidueField.map g0).injective).1 hch
-  obtain ⟨W, _, _, _, h, hW, hloc, hϖ⟩ := GlobalTheory.T.exists_localHom_completeDVR_principal_maximalIdeal B ϖ hB hreg hchB
+  obtain ⟨W, _, _, _, h, hW, hloc, hϖ⟩ := _root_.GlobalTheory.PrincDvr.exists_cDvr_localHom B ϖ hB hreg hchB
   have hmem : ∀ j, bdParam k m e j ∈ maximalIdeal (ChartRing k m e) := fun j =>
     (mem_maximalIdeal _).2 (prime_mvX (k := k) _).not_unit
   have hϖn : ¬ IsUnit ϖ := (mem_maximalIdeal ϖ).1 (hB ▸ Ideal.mem_span_singleton_self ϖ)

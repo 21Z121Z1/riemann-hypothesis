@@ -11,7 +11,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LatticeCountBoundFra
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SelfDualHermitianLatticeMassOfTrace
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SumClsLeEncard
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RmulMul
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianFrameClassTermsLeOverlatticeMassesStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianFrameClassTermsLeOverlatticeMasses
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDataMassEqSumFrameClasses
 open ValuativeRel Formalism.MainNotions.S.Loc GlobalTheory.HL MeasureTheory
 open scoped Pointwise ENNReal Classical
@@ -109,7 +109,7 @@ theorem GlobalTheory.HL.GenMass.total_le_generic : ∀ {F : Type} [Field F] [Val
       S.massSig (S.M d₁ Λ₁) ≤ ENNReal.ofReal (2 * κ) := by
     simpa [Frames.M] using hM
   have hg' : g = ENNReal.ofReal (S.wC (S.Fr d₁ Λ₁)) * S.massSig (S.M d₁ Λ₁) := by
-    rw [hg, (GlobalTheory.T.hermitianFrameClass_terms_le_overlattice_masses L r k S _ hI.1 _ hp).2]
+    rw [hg, (_root_.GlobalTheory.HL.ClassMass.class_mass L r k S _ hI.1 _ hp).2]
     rfl
   have hw := ENNReal.one_le_ofReal.2 ((GlobalTheory.HL.volSt L r k S).2 _ hI.1).2.2.1
   have hlow : ENNReal.ofReal (κ / 2) ≤ g := by
@@ -124,7 +124,7 @@ theorem GlobalTheory.HL.GenMass.total_le_generic : ∀ {F : Type} [Field F] [Val
       obtain ⟨p, hpC⟩ : ∃ p, p ∈ C := by
         obtain ⟨n, -, n', -, rfl⟩ := hC
         exact ⟨_, pair_mem_cls S _ _⟩
-      refine ((GlobalTheory.T.hermitianFrameClass_terms_le_overlattice_masses L r k S C hC p hpC).1 fun _ => True).trans ?_
+      refine ((_root_.GlobalTheory.HL.ClassMass.class_mass L r k S C hC p hpC).1 fun _ => True).trans ?_
       refine (ENNReal.tsum_le_tsum (g := fun _ => ENNReal.ofReal (2 * κ)) fun Mh => ?_).trans ?_
       · refine (hU C hC p hpC Mh.1 Mh.2.1 Mh.2.2.1 Mh.2.2.2.1).2.trans (ENNReal.ofReal_le_ofReal ?_)
         refine mul_le_of_le_one_right (by positivity) ?_

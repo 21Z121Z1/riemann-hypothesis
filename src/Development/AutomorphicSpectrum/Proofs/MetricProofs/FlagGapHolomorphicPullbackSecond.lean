@@ -4,7 +4,7 @@ import Development.AutomorphicSpectrum.Proofs.MetricProofs.SelM
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagPotentialBlockDecomposition
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockDiagonalMinorVanishingStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockDiagonalMinorVanishing
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsClosedSectionBoundary
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PeriodChartPotentialLeviForm
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsTwiceDifferentiableAt
@@ -125,7 +125,7 @@ theorem minorIJ_one_self {N : ℕ} (I : Finset (Fin N)) : minorIJ (1 : Matrix (F
 theorem detFac_ne_zero' {N j : ℕ} (hj : j ≤ N) (i : Fin N) {H : Matrix (Fin N) (Fin N) ℂ}
     (hb : IsBlockDiag j H) (hd : H.det ≠ 0) : detFac j i H ≠ 0 := by
   have hu : IsUnit H.det := hd.isUnit
-  have h1 := ((GlobalTheory.T.block_diagonal_minor_vanishing ℂ N j i hj).2.2.2 H H⁻¹ hb (hb.inv hu)).2
+  have h1 := ((_root_.GlobalTheory.CompanionTheory.Ar.PB.MinorCalc.minors_main ℂ N j i hj).2.2.2 H H⁻¹ hb (hb.inv hu)).2
   rw [Matrix.mul_nonsing_inv _ hu] at h1
   have h2 : detFac j i (1 : Matrix (Fin N) (Fin N) ℂ) = 1 := by
     unfold detFac

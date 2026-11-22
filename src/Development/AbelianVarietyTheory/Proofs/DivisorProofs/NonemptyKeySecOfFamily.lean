@@ -45,7 +45,7 @@ theorem nonempty_keySec_of_family (E : Type) [Field E] [NumberField E] [IsCMFiel
     ⟨fun k => _root_.GlobalTheory.NormFrame.frameOK_of_isNormUn hT E H Dw l Xo c σ g e F _ M k (T k) (un k) hσ hM hξ (hun k),
       fun k => _root_.GlobalTheory.NormUnBor.normUn_bor hT E H Dw l Xo c σ g e F _ M un k (T k) hσ hM hξ (hun k),
       fun k => _root_.GlobalTheory.FrameUnif.normUn_gamma hT E H Dw l Xo c σ g e F _ M un k (T k) hσ hM hξ (hun k),
-      fun a n han f hf k => GlobalTheory.T.differentiableOn_readings_normalised_theta_points hB hT E H Dw l Xo c σ g e F _ M un k (T k) (hun k) a n han f hf⟩
+      fun a n han f hf k => _root_.GlobalTheory.FrameUnif.NormUnHol.differentiableOn_rdU hB hT E H Dw l Xo c σ g e F _ M un k (T k) (hun k) a n han f hf⟩
   have hU₀ := isUnf_built hB E H Dw l Xo c σ g e F _ M un hσ hM hξ hok
   have hC : (normConst (fun j => Formalism.L2.PjFree.relab c σ (e j).1) ξ₀ : ℂ) ≠ 0 := by
     rw [Complex.ofReal_ne_zero]

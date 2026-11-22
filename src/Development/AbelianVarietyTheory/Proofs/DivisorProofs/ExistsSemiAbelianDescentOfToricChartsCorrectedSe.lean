@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.FromBaseAlt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemiAbelianDescentFromCompleteRegularCharts
 import Development.AbelianVarietyTheory.Definitions.Divisors.SubsetSpanBy
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelAmpleRigidifiedBundlePullbackUniversalTripleStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelAmpleRigidifiedBundlePullbackUniversalTriple
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericFibreIsGrpPullbackOfUniversalTriple
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonemptySemiAbelianCompletionChartOfOpenPart
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedPointNotMemAbelianLocusTautologicalBoundar
@@ -31,7 +31,7 @@ theorem exists_semiAbelian_of_charts : ∀ {E : Type} [Field E] [NumberField E] 
   have hAab : IsAbelianScheme tF.G :=
     ⟨tF.comm, tF.semi.smooth, MorphismProperty.of_isPullback (P := @IsProper) mF.cart.1 Xo.univ.proper, tF.semi.geomConnected⟩
   have hLB : tF.PP.L.IsLB := tF.PP.isLB
-  have hAmp : RelAmple tF.G tF.PP.L := GlobalTheory.T.relAmple_rigidifiedBundle_pullback_universalTriple Xo c tF mF
+  have hAmp : RelAmple tF.G tF.PP.L := _root_.GlobalTheory.PullAmpleXF.relAmple_XF Xo c tF mF
   have hkc : ∀ (k : Type) [Field k], IsAdicComplete (maximalIdeal k) k := fun k _ => by
     rw [maximalIdeal_eq_bot]; infer_instance
 

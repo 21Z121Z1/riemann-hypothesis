@@ -11,7 +11,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FourierTransform
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PartialFourierInversion
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FourierInversionInverseRowTransformNegOne
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsThetaFunctionCompSkewAdjointSimilitude
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SkewAdjointSimilitudeExchangesHalvesStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SkewAdjointSimilitudeExchangesHalves
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceHermitianFormHalfSkewAdjointImage
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum MeasureTheory Matrix ValuativeRel GlobalTheory.MixModel GlobalTheory.MixPer GlobalTheory.Unf GlobalTheory.SplitWeil GlobalTheory.RootEx GlobalTheory.SeeSaw GlobalTheory.LocMod
 attribute [local instance] Formalism.BasicNotions.Host.cmStar
@@ -57,7 +57,7 @@ theorem kappa_model : ∀ (D : D7) (k : Type) [Field k] [ValuativeRel k] [Topolo
   have hTL : ∀ Φ w, TL Φ w = TLS (H Φ) (κ w) := fun _ _ => rfl
   obtain ⟨-, -, -, hpsi, -⟩ := GlobalTheory.LocSympl.halves_at_split D k p n Unit L S FL FS ψ ψk hk
   have hhalf : ∀ x, IsHalf (cA D p.e) (κ (p.up FS FL'' x)) := fun x =>
-    (GlobalTheory.T.skewAdjointSimilitude_exchanges_halves D L S L'' τ p.e _).2 (Witness.up_half p FS FL'' x)
+    (_root_.GlobalTheory.KappaHalf.ofAdj_rat_mul_half D L S L'' τ p.e _).2 (Witness.up_half p FS FL'' x)
   have hkey : ∀ x a, ψ (symplO L S (p.up FL FS a) (κ (p.up FS FL'' x))) = (ψk (-(∑ r, x () r * a r ())) : ℂ) := by
     intro x a
     rw [hpsi a _ (hhalf x)]
@@ -70,7 +70,7 @@ theorem kappa_model : ∀ (D : D7) (k : Type) [Field k] [ValuativeRel k] [Topolo
     rw [hTLS.modul (κ (p.up FS FL'' x)) (hhalf x) (H Φ) (H Φ') (fun t => ?_)]
     show finv ψk ν C Φ'.1 t = _ * finv ψk ν C Φ.1 t
     rw [finv_trans ψk ν C x h t, hkey]
-  · have hy' : IsHalf p.e (κ y) := (GlobalTheory.T.skewAdjointSimilitude_exchanges_halves D L S L'' τ p.e y).1 hy
+  · have hy' : IsHalf p.e (κ y) := (_root_.GlobalTheory.KappaHalf.ofAdj_rat_mul_half D L S L'' τ p.e y).1 hy
     set t₀ := p.down FL FS (κ y) with ht₀
     have hup : p.up FL FS t₀ = κ y := Witness.up_down p FL FS hy'
     have hmod : ∀ t, Φ'.1 t = (ψk (∑ r, t () r * t₀ r ()) : ℂ) * Φ.1 t := fun t => by

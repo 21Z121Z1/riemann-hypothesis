@@ -51,7 +51,7 @@ theorem localGlobal_compatible_at_place_alt (hPr : _root_.GlobalTheory.NRows.The
     GlobalTheory.MuTameQS.isTame_loc (GlobalTheory.MuTameQS.tameAt_mul ((P.cf.isMu0 j0).tame _) (P.tp.xi_tame _ _))
   obtain ⟨χ, hχ⟩ := _root_.GlobalTheory.TameRead.exists_tamePart _ _ e he _ htame
   refine ⟨_, χ, hχ, _root_.GlobalTheory.T.local_langlands_split_qp_alt_alt hPr hL D P i j0 hj0 k s.w e rcw hrc, fun Q => ?_⟩
-  obtain ⟨σ, hσ, -⟩ := GlobalTheory.T.splitPlaceLocalComponent_exists_unique_class D.host.E D.R.nV (P.H.av.rep i Q) s
+  obtain ⟨σ, hσ, -⟩ := _root_.GlobalTheory.LocCompSplit.main D.host.E D.R.nV (P.H.av.rep i Q) s
   have hσ' : IsLocS (n := D.R.nV) (P.H.av.S i Q) s σ := hσ
   refine ⟨Rep.of (σ.ρ.comp (Matrix.GeneralLinearGroup.map e.toRingHom)), GlobalTheory.T.isIrreducibleSmooth_pullback_padic_ringIso _ _ e he _ σ, ?_, ?_⟩
   · apply (P.T.e s.w).injective
@@ -70,7 +70,7 @@ theorem localGlobal_compatible_at_place_alt (hPr : _root_.GlobalTheory.NRows.The
   have hpar : ∀ (φ : J) (F : D.naut.typeV i Q),
       IsParVec (σ.ρ.comp (Matrix.GeneralLinearGroup.map e.toRingHom)) D.R.r D.R.t χ (φ.1 ((P.M.loc i).real F)) := by
     intro φ F
-    refine GlobalTheory.T.isParahoricTypeVector_of_blockTypeVector_padic_iso _ _ e he ξ χ hχ D.R.r D.R.t σ.V σ.ρ _ ?_
+    refine _root_.GlobalTheory.ParRead.isParVec_of_isBlockVec _ _ e he ξ χ hχ D.R.r D.R.t σ.V σ.ρ _ ?_
     refine GlobalTheory.BlockType.isBlockVec_of (r := D.R.r) (t := D.R.t) ξ σ.ρ _ fun h hh => ?_
     obtain ⟨x, hx, hxe⟩ := GlobalTheory.SplitLift.exists_trivOutside_loc_eq D.R.nV s
       (Matrix.GeneralLinearGroup.map c.symm.toRingHom h)

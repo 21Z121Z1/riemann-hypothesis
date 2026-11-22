@@ -303,7 +303,7 @@ private theorem quot_deg_lemma_4 {K : Type} [Field K] (C : ACurve K) {V : Type} 
   choose bq hbq1 hbq2 using fun i => exists_quot_basis b ρ χ (y i) (hyli i) (hysp i)
   have hLat : ∀ i, GlobalTheory.CompanionTheory.Ar.Crv.IsLatOf C i (bq i) (GlobalTheory.CompanionTheory.Ar.Crv.quot C H (eigSpan ρ χ) i) :=
     fun i => isLatOf_quot b ρ χ i (bq i) (H i) (hχ i) (hbq2 i) (hL i)
-  have hBun := (GlobalTheory.T.sub_and_quotient_bundles K C V H (eigSpan ρ χ) hH).2
+  have hBun := (_root_.GlobalTheory.CompanionTheory.Ar.Crv.SubQuot.isBun_sub_quot K C V H (eigSpan ρ χ) hH).2
   obtain ⟨hfin, hdeg⟩ :=
     _root_.GlobalTheory.CompanionTheory.Ar.Crv.DegFormula.deg_formula K C _ (GlobalTheory.CompanionTheory.Ar.Crv.quot C H (eigSpan ρ χ)) r b₀ bq hBun hLat
   have hdet : ∀ i, b₀.det (bq i) = (N i).det := by

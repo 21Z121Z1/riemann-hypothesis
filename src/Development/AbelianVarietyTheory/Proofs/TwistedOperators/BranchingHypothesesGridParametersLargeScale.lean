@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HarishChandraPar
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InterlacedSignedParameters
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsInterlacedSubSingleOfSpread
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParametersSeparatedByOne
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParametersSpacingAndGapStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParametersSpacingAndGap
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SignedParametersBounded
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ChiGridNumericalDataRealPlaceGapSizeBounds
 
@@ -52,7 +52,7 @@ private theorem exists_par_of_gridData_bounds {G : GlobalTheory.SignedHC.GridDat
   obtain ⟨hHl, hHm⟩ := _root_.GlobalTheory.HCEnum.isHCParam_parPi_zero_parD0 hke hme hn hl hm
   have hw := _root_.GlobalTheory.SignedHC.GridData.interlaced_pi_zero_and_D0 hga0 hvk1 hl hm
   obtain ⟨hs1, hs2⟩ := _root_.GlobalTheory.WordSep.word_sep hga0 hv (by omega) hl hm
-  obtain ⟨hwl, hwm, hgl, hgm⟩ := GlobalTheory.T.parameters_spacing_and_gap hH hga hv hvk hb hl hm
+  obtain ⟨hwl, hwm, hgl, hgm⟩ := _root_.GlobalTheory.SignedHC.GridData.pi_zero_and_D0_spacing hH hga hv hvk hb hl hm
   have habs : ∀ a c, a ≠ c → 2 ≤ |lam a - lam c| := by
     intro a c hac
     rcases lt_or_gt_of_ne hac with h | h

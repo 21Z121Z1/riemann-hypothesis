@@ -1,6 +1,6 @@
 import Mathlib
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSectionTwistNonvanishingRationalPointStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSectionTwistNonvanishingRationalPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonvanishingTwistedSectionsDescendFieldExtension
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry MonoidalCategory CartesianMonoidalCategory MonObj
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Semi
@@ -43,7 +43,7 @@ theorem exists_sec_algClosed {S : Scheme.{0}} (P : PolAV S) (K : Type) [Field K]
   have hq : q ≫ fst (Over.mk t) P.A = 𝟙 _ := by
     ext1
     exact pointOfClosedPoint_comp f z hz
-  obtain ⟨s, hs⟩ := GlobalTheory.T.exists_section_twist_nonvanishing_rationalPoint S P K t c (q ≫ snd _ _) (IsLocalRing.closedPoint _)
+  obtain ⟨s, hs⟩ := _root_.GlobalTheory.TwistFibre.exists_sec_twist_mem_nonzeroLocus S P K t c (q ≫ snd _ _) (IsLocalRing.closedPoint _)
   refine ⟨s, ?_⟩
   have e : lift (𝟙 (Over.mk t)) (q ≫ snd (Over.mk t) P.A) = q := by
     rw [← hq, lift_comp_fst_snd]

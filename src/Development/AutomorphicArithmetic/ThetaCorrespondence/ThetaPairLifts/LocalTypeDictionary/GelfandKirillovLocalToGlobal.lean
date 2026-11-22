@@ -118,7 +118,7 @@ theorem gelfandKirillov_local_to_global : _root_.GlobalTheory.FunPr.ThetaLocalIn
       (GlobalTheory.GKExt.conj_mem_UH (M.fr_unit τ) (M.fr_gram τ) hg) _
       (GlobalTheory.GKExt.conj_mem_UH (M.fr_unit τ') (M.fr_gram τ') hg'))
   obtain ⟨TE, hTE1, hTE2, hTE3⟩ := _root_.GlobalTheory.FactorExtension.extend_positions hHC hCW D V S M E p π dπ (fun τ => (hπ τ).1) hcomm T₀' hK' hL'
-  obtain ⟨hequiv, hcont⟩ := GlobalTheory.T.casselmanWallach_multMap_equivariant_sobolevContinuous D θ V S M E p ι N π hp
+  obtain ⟨hequiv, hcont⟩ := _root_.GlobalTheory.GKExtFields.multMap_fields D θ V S M E p ι N π hp
     (fun x d => ((hrange (ι x)).1 ⟨x, rfl⟩).2.2.2.2.2 d) (fun τ => (hπ τ).2.1) TE hTE2 hTE3
   let T : Formalism.IndefR.Mult.MMap M := ι.compMultilinearMap TE
   have hext : GlobalTheory.IndefiniteRowSideFullHecke.KTypeExtension.Extends T T₀ := fun v u h => by
@@ -126,7 +126,7 @@ theorem gelfandKirillov_local_to_global : _root_.GlobalTheory.FunPr.ThetaLocalIn
     rw [hTE1 v u h, hT₀']
   have hMult : Formalism.IndefR.Mult.IsMultMap θ M ∅ 1 T := by
     refine ⟨?_, fun v => ((hrange _).1 ⟨TE v, rfl⟩).2.2.2.2.1, fun v k hk => by simp at hk, hequiv, hcont⟩
-    exact GlobalTheory.T.isSmoothAutomorphicForm_multMap_value hHC D θ hθ V S M T U N hU (fun v => by
+    exact _root_.GlobalTheory.EquivValues.isAutFunSm hHC D θ hθ V S M T U N hU (fun v => by
       have h := (hrange (ι (TE v))).1 ⟨TE v, rfl⟩
       exact ⟨h.1, h.2.1, h.2.2.1, h.2.2.2.1, h.2.2.2.2.2⟩) hequiv hcont
   refine ⟨T, hMult, fun u => ?_⟩

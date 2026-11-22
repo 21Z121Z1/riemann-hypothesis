@@ -97,7 +97,7 @@ theorem untwRatS : UntwRatS := by
         (D.host.ccK_coprime _ (by simp [D.host.g_level k])).symm
     rw [hMg]
     exact (this 0).mul_left (this 1)
-  obtain ⟨ph, hph, hbase⟩ := GlobalTheory.T.coreConstants_eq_vacuumIdentity_up_to_phase D G Pl0 T0 A T R F κ v₀ hL hLev hG hFam hMod hTh hTie i hstd hV hFP
+  obtain ⟨ph, hph, hbase⟩ := _root_.GlobalTheory.LevelSeries.PinBase.baseCc_of_framePin D G Pl0 T0 A T R F κ v₀ hL hLev hG hFam hMod hTh hTie i hstd hV hFP
   obtain ⟨ka, hka, J, hJH, hJk, hJ⟩ := _root_.GlobalTheory.SerIntLetters.io_eq_phase_smul_harmLetters D G Pl0 T0 A T R F κ v₀ hL hLev hG hFam hMod hTh hTie i hstd u hu c0 hcm lt hlt
   have hph0 : ph ≠ 0 := fun h => by simp [h] at hph
   have hka0 : ka ≠ 0 := fun h => by simp [h] at hka

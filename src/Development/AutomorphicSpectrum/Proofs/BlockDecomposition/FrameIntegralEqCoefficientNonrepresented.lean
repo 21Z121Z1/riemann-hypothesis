@@ -8,10 +8,10 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Heisenberg
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsNonnegativeSchwartzBump
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TamagawaFourierIntegrable
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianCoordinatesTracePairing
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PositiveOnSubspaceOpenStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PositiveOnSubspaceOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PositivityPullsBackToSubspaceStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GramMapContinuousHermitian
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianScalarSequenceTendsZeroStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianScalarSequenceTendsZero
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NonrepresentedSignatureObstruction
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OfHermEBijective
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct
@@ -136,7 +136,7 @@ theorem W_eq_zero_of_obstruction (r : ℕ) (V : HSp D) (ψ : AddChar (AF D.host.
   have hgc : Continuous g := hu.comp hin.1
   let N : Set (Fin n → AF D.host.F) := {w | PosOn ε (compAt θ ρ (R w)) S}
   have hN : IsOpen N :=
-    (GlobalTheory.T.positive_on_subspace_open r ε S).preimage ((GlobalTheory.RealWeil.continuous_compAt hθ ρ r r).comp hR)
+    (_root_.GlobalTheory.CompanionTheory.WeilSiegel.NoFrame.isOpen_posOn r ε S).preimage ((GlobalTheory.RealWeil.continuous_compAt hθ ρ r r).comp hR)
   have hgN : ∀ y, g y ∉ N := by
     intro y hy
     have h1 : PosOn ε (compAt θ ρ (R (u (inner V y y)))) S := hy
@@ -159,7 +159,7 @@ theorem W_eq_zero_of_obstruction (r : ℕ) (V : HSp D) (ψ : AddChar (AF D.host.
     have hrat : compAt θ ρ (rat β.1) = β.1.map (tauE D ρ) := GlobalTheory.AdForm.RatMove.compAt_rat hθ ρ β.1
     rw [hRu _ ((hermA D r).add_mem (GlobalTheory.CompanionTheory.HermPoisson.rat_mem_hermA β) (he' k)), compAt_add', hec k, hrat]
     exact posOn_add_smul_one hS hε (by positivity)
-  obtain ⟨e, he, het, hec⟩ := GlobalTheory.T.hermitian_scalar_sequence_tends_zero D θ hθ r
+  obtain ⟨e, he, het, hec⟩ := _root_.GlobalTheory.CompanionTheory.WeilSiegel.NoFrame.Path.exists_herm_seq D θ hθ r
   have hz : z₀ ∈ closure N := by
     rcases hε with rfl | rfl
     · refine hcl e he het fun k => ?_

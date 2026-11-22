@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.GaloisRepOfPolarize
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulMat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulMatInjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceFormLinearIsometryEqMulNormOneTorus
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralUnitsOfIsCompactClosureZpowersMulStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralUnitsOfIsCompactClosureZpowersMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCompactClosureZpowersMulIntegralUnit
 open NumberField GlobalTheory.UnitaryBC IsDedekindDomain Matrix Polynomial GlobalTheory.CuspRep Formalism.UG GlobalTheory.BCT
 open scoped Classical
@@ -185,7 +185,7 @@ theorem twCent_equiv_torus : ∀ (E : Type) [Field E] [NumberField E] [IsCMField
     constructor
     · rintro ⟨hg, hc⟩
       obtain ⟨a, haT, rfl⟩ := hsurj g hg
-      exact ⟨a, ⟨GlobalTheory.T.integralUnits_of_isCompact_closure_zpowers_mul E hE w hw K e hec hint hval B m b a hc, haT⟩, rfl⟩
+      exact ⟨a, ⟨_root_.GlobalTheory.TwLat.mem_intUnits_of_isCompact_closure_zpowers E hE w hw K e hec hint hval B m b a hc, haT⟩, rfl⟩
     · rintro ⟨a, ⟨hai, haT⟩, rfl⟩
       exact ⟨hT a haT, _root_.GlobalTheory.TwLat.isCompact_closure_zpowers_mulU E hE w hw K e hec hint hval B m b a hai⟩
   rw [cptPart, hset, Subgroup.closure_eq, hφ t]

@@ -7,10 +7,11 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DimOfIsArithVar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DimClosureOfCoheightField
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PointIdealMultiprojectivePrime
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermRepClassDecomposition
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.O1ClassPullbackNaturalityStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.O1ClassPullbackNaturality
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GenericPointNonvanishingCoordinateSection
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoordinateDivisorMultiplicitySum
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EulerCharacteristicDimensionZeroStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EulerCharacteristicDimensionZero
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MixedPointLengthFormula
 
 set_option autoImplicit false
 noncomputable section
@@ -32,7 +33,7 @@ theorem key (p : ℕ) [Fact p.Prime] {m : ℕ} {n : Fin (m + 1) → ℕ} (a : Fi
   | zero =>
     intro Z _ f _ _ hd L hL _
     rw [topSelf_zero]
-    exact GlobalTheory.T.euler_characteristic_dimension_zero m n Z f p hd _
+    exact _root_.GlobalTheory.CompanionTheory.MixZ.VertBase.chi_eq_geoNum m n Z f p hd _
   | succ d ih =>
     intro Z _ f _ _ hd L hL hc
     have hp : IsProjOver (strHom (ZMod p) Z) :=
@@ -60,7 +61,7 @@ theorem key (p : ℕ) [Fact p.Prime] {m : ℕ} {n : Fin (m + 1) → ℕ} (a : Fi
           ∑ k, a k • cls (pullO ((redι C ≫ f) ≫ prB n k) 1) (isLB_pullO _ 1) := by
         rw [cls_pull hL, hc, map_sum]
         refine Finset.sum_congr rfl fun k _ => ?_
-        rw [map_zsmul, Category.assoc, GlobalTheory.T.cls_pullO_one_comp_eq_pull (redι C) (f ≫ prB n k)]
+        rw [map_zsmul, Category.assoc, _root_.GlobalTheory.CompanionTheory.MixZ.cls_pullO_comp (redι C) (f ≫ prB n k)]
       have e := ih _ (redι C ≫ f) hdim _ (pull_isLB hL _) hcl
       rw [interNumRed_def, interNumSub_def, interNumOn_def,
         interNum_pushforward_of_isClosedImmersion hfZ _ (fun _ => hL)]
@@ -98,6 +99,6 @@ theorem vertEq : VertEq := by
   refine key p A.a d Z (j ≫ i) hd _ (pull_isLB (pull_isLB M.isLB _) _) ?_
   rw [cls_pull (pull_isLB M.isLB _), cls_pull M.isLB, _root_.GlobalTheory.CompanionTheory.MPDict.ClsRep.cls_eq_of_isHermRep m n M A hA, map_sum, map_sum]
   refine Finset.sum_congr rfl fun k _ => ?_
-  rw [map_zsmul, map_zsmul, Category.assoc, GlobalTheory.T.cls_pullO_one_comp_eq_pull, GlobalTheory.T.cls_pullO_one_comp_eq_pull]
+  rw [map_zsmul, map_zsmul, Category.assoc, _root_.GlobalTheory.CompanionTheory.MixZ.cls_pullO_comp, _root_.GlobalTheory.CompanionTheory.MixZ.cls_pullO_comp]
 
 end GlobalTheory.CompanionTheory.MixZ.Vert

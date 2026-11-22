@@ -11,7 +11,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.MaxBoundPf
 import Formalism.LocalToGlobal.ProjectiveLattices.FrameCharts
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsUnitGramFrameBorelChange
-import Development.AbelianVarietyTheory.Proofs.GenericRegularity.CabsDiagEqOneStatement
+import Development.AbelianVarietyTheory.Proofs.GenericRegularity.CabsDiagEqOne
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.UnitFramesGeneratorRatioModulusOne
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LowerTriIsUnitDet
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsFramedPointBaseChangeAlgebraMap
@@ -75,7 +75,7 @@ theorem cabs_eq {σ : c.F →+* ℂ} {r : ℕ} (U : Formalism.L2.PjFree.Unf Xo c
   have h1 : cabs ((t'⁻¹ * t) i : CAt σ) = 1 := by
     cases i with
     | none => exact _root_.GlobalTheory.UnitFrameGen.cabs_gen_eq_one E H Dw l Xo c σ r U hσ hU k k' x x' _ hx hx' hc
-    | some j => exact GlobalTheory.T.cabs_frBor_eq_one_of_unitFr E H Dw l Xo c σ r U hσ hU k k' x x' _ hx hx' hc j
+    | some j => exact _root_.GlobalTheory.FrameNormLie.cabs_diag_eq_one E H Dw l Xo c σ r U hσ hU k k' x x' _ hx hx' hc j
   have e : (t i : CAt σ) = (t' i : CAt σ) * ((t'⁻¹ * t) i : CAt σ) := by
     rw [← Units.val_mul, Pi.mul_apply, Pi.inv_apply, mul_inv_cancel_left]
   rw [e, cabs_mul, h1, mul_one]

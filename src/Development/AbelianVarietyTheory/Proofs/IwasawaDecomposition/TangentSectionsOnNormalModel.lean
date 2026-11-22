@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFlagFrame
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAffineTangentBasisLocallyStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHomogeneousPolysTangentBasisStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHomogeneousPolysTangentBasis
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IoOfLeOneIff
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntOIsLocalRing
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.JGenSpecializes
@@ -251,7 +251,7 @@ theorem _root_.GlobalTheory.LineNorm.Chart.locMax_flag : HTBoundSt → ∀ (E : 
     by_contra hc
     exact (isUnit_natCast (genericPoint Y.X) hc).ne_zero hn
   have : CharZero Γ(M.X, V) := ι₀.charZero
-  obtain ⟨D, n, B, hB1, hB2, hB3⟩ := GlobalTheory.T.exists_homogeneous_polys_tangent_basis hB E H X t hX Γ(M.X, V) _ g e he q k
+  obtain ⟨D, n, B, hB1, hB2, hB3⟩ := _root_.GlobalTheory.LineNorm.WedgeMax.wedge_norm_max hB E H X t hX Γ(M.X, V) _ g e he q k
 
   have ha : ∀ y (hy : M.j y ∈ V) l, ∃ a, IsCombAtG t (spMap (α y hy) ≫ hV.fromSpec ≫ ρ')
       (fun i => spMap (dualMap (α y hy)) ≫ e i) a (f y l) := fun y hy l =>

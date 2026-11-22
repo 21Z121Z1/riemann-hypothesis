@@ -8,7 +8,7 @@ import Formalism.LocalRingCardinality.DataCD
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemLieEUnitaryGroupIffOfInvolutive
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BlkExt
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsProductChartTangentEquivBallVolume
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryTubeProductChartHasStrictFDerivAtEntryStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryTubeProductChartHasStrictFDerivAtEntry
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RotationInvariantMeasureUnitCircleArc
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ThinUnitaryTubeVolumeLimitArith
 
@@ -47,7 +47,7 @@ theorem thin_tube : ∀ (k : ℕ) (η : ℝ), 1 ≤ k → (η = 1 ∨ η = -1) �
     rw [nsq_hv]; have := norm_nonneg x.2.2; nlinarith
   have hch := _root_.GlobalTheory.ChartDensity.density_in_chart (k + 1) (UH (Hd k η)) μ _ (GlobalTheory.GramExp.isMatGroup_UH _ (Hd_sq k hη)) hμ hd (Par k)
     (chart η) L (chart_zero k η) hmem (fun i j => by
-      obtain ⟨D, h, h'⟩ := GlobalTheory.T.unitaryTubeProductChart_hasStrictFDerivAt_entry k η i j
+      obtain ⟨D, h, h'⟩ := _root_.GlobalTheory.TubeDeriv.chart_hasStrictFDerivAt k η i j
       exact ⟨D, h, fun v => by rw [h', hL]⟩)
   refine _root_.GlobalTheory.Tube.thin_tube_limit_arith k c c₀ (fun t => μ (tubeO k η t)) _
     (fun ρ => μ₀ (expSet (UH (1 : Matrix (Fin k) (Fin k) ℂ)) (Metric.ball 0 ρ)))

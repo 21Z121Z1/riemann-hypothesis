@@ -1,17 +1,17 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AvgVanish
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocallyConstantCompactSupportUnipotentStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicDoubleCosetDecompositionStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EvaluationMapsLinearStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClosedEvaluationInducedStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocallyConstantCompactSupportUnipotent
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicDoubleCosetDecomposition
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EvaluationMapsLinear
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClosedEvaluationInduced
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MulMemBall
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsOpenFixedOfSubgroup
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicIsNonarchimedeanLocalField
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AddCharConductorAndHaarIntegersExist
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothSubrepCompactInductionSpanStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothSubrepCompactInductionSpan
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CongruenceSubgroupOpenCompact
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CongruenceSubgroupsBasisNhdsStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ShiftedEmbeddingMemCongruenceIffStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ShiftedEmbeddingMemCongruenceIff
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnipotentCongruenceFactorization
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnipotentBallMemCongruence
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BumpSectionValueLocalIntegral
@@ -152,8 +152,8 @@ end Gen
 def imC {i t : ℕ} (ψ : AddChar k Circle) (hψ : Continuous ψ) (τ : MRep k (i + 1)) (σ : GRep k (t + 1))
     (hτ : IsSmooth τ.ρ) (hσ : IsSmooth σ.ρ) : Submodule ℂ (cIndSpace (MirabolicParabolic k (i + 1) t) (sigC τ σ)) :=
   imGen (MirabolicParabolic k (i + 1) t) (sigC τ σ) (eC ψ (τ := τ) (σ := σ))
-    (fun f g => (GlobalTheory.T.evaluation_maps_linear k i t ψ hψ τ σ hτ hσ f g 0).1)
-    (fun c f => (GlobalTheory.T.evaluation_maps_linear k i t ψ hψ τ σ hτ hσ f f c).2.1)
+    (fun f g => (_root_.GlobalTheory.CompanionTheory.BZPhiPG.Lin.eC_eO_linear k i t ψ hψ τ σ hτ hσ f g 0).1)
+    (fun c f => (_root_.GlobalTheory.CompanionTheory.BZPhiPG.Lin.eC_eO_linear k i t ψ hψ τ σ hτ hσ f f c).2.1)
 
 theorem mem_imC {i t : ℕ} (ψ : AddChar k Circle) (hψ : Continuous ψ) (τ : MRep k (i + 1)) (σ : GRep k (t + 1))
     (hτ : IsSmooth τ.ρ) (hσ : IsSmooth σ.ρ) (y : cIndSpace (MirabolicParabolic k (i + 1) t) (sigC τ σ)) :
@@ -196,7 +196,7 @@ theorem IsBump.off_ball (hF : IsBump s hs w F) (d : Fin (t + 1) → k) (hd : ¬ 
 
 theorem IsBump.intC_sEmb (ψ : AddChar k Circle) (hF : IsBump s hs w F) (x : Mir k ((i + 1) + t))
     (hx : x ∈ congM k s hs ((i + 1) + t)) : intC ψ F (sEmb k ((i + 1) + t) x) = intC ψ F 1 := by
-  have hsx := (GlobalTheory.T.shifted_embedding_mem_congruence_iff k _ s hs x).2 hx
+  have hsx := (_root_.GlobalTheory.CompanionTheory.BZPhiPG.Onto.sEmb_mem_congM_iff k _ s hs x).2 hx
   unfold intC
   have : (fun d : Fin (t + 1) → k => (((Circle.toUnits (ψ (d (Fin.last t))))⁻¹ : ℂˣ) : ℂ) •
       evX F (dEmb k i t d * sEmb k ((i + 1) + t) x)) =
@@ -230,7 +230,7 @@ theorem local_core {i t : ℕ} (ψ : AddChar k Circle) (hψ : Continuous ψ) (τ
         B.1.1.1 g = 0 := by
   have hv := _root_.GlobalTheory.CompanionTheory.BZPhiPG.Onto.intC_one_of_bump k i t ψ τ σ s hψ1 w F hF.on_ball hF.off_ball
   obtain ⟨c, hc0, hc⟩ := hv
-  have hy := GlobalTheory.T.closed_evaluation_induced k i t ψ hψ τ σ hτ hσ F
+  have hy := _root_.GlobalTheory.CompanionTheory.BZPhiPG.MemC.memC k i t ψ hψ τ σ hτ hσ F
   obtain ⟨yF, hyF⟩ := hy
   have hval : ∀ x ∈ congM k s hs ((i + 1) + t), yF.1.1.1 x = c • qC τ σ w := by
     intro x hx
@@ -297,7 +297,7 @@ theorem imC_translate {i t : ℕ} (ψ : AddChar k Circle) (hψ : Continuous ψ) 
     (hB : B ∈ imC ψ hψ τ σ hτ hσ) : cInd (MirabolicParabolic k (i + 1) t) (sigC τ σ) g B ∈ imC ψ hψ τ σ hτ hσ := by
   have hB' := (mem_imC ψ hψ τ σ hτ hσ B).1 hB
   obtain ⟨f, hf⟩ := hB'
-  have e := (GlobalTheory.T.evaluation_maps_linear k i t ψ hψ τ σ hτ hσ (rtr g f) (rtr g f) ((dpowM ((i + 1) + t) (-1 / 2) g : ℂˣ) : ℂ)).2.1
+  have e := (_root_.GlobalTheory.CompanionTheory.BZPhiPG.Lin.eC_eO_linear k i t ψ hψ τ σ hτ hσ (rtr g f) (rtr g f) ((dpowM ((i + 1) + t) (-1 / 2) g : ℂˣ) : ℂ)).2.1
   refine (mem_imC ψ hψ τ σ hτ hσ _).2 ⟨((dpowM ((i + 1) + t) (-1 / 2) g : ℂˣ) : ℂ) • rtr g f, e.trans ?_⟩
   funext x
   rw [ev_cInd, ← hf, Pi.smul_apply]
@@ -306,7 +306,7 @@ theorem imC_translate {i t : ℕ} (ψ : AddChar k Circle) (hψ : Continuous ψ) 
 theorem eC_onto : ∀ (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] (i t : ℕ) (ψ : AddChar k Circle) (hψ : Continuous ψ) (τ : MRep k (i + 1)) (σ : GRep k (t + 1)) (hτ : IsSmooth τ.ρ) (hσ : IsSmooth σ.ρ) (y : cIndSpace (MirabolicParabolic k (i + 1) t) (sigC τ σ)),
     ∃ f : XS τ σ, eC ψ f = (y : smoothPart (ind (MirabolicParabolic k (i + 1) t) (sigC τ σ))).1.1 := by
   intro k _ _ _ _ i t ψ hψ τ σ hτ hσ y
-  exact GlobalTheory.T.smooth_subrep_compact_induction_span (MirabolicParabolic k (i + 1) t) (sigC τ σ) (GlobalTheory.CompanionTheory.BZMirOnto.exists_compactOpen k _)
+  exact _root_.GlobalTheory.CompanionTheory.PRep.CIndGlue.eq_top_of_bumps (MirabolicParabolic k (i + 1) t) (sigC τ σ) (GlobalTheory.CompanionTheory.BZMirOnto.exists_compactOpen k _)
     (imC ψ hψ τ σ hτ hσ) (imC_translate ψ hψ τ σ hτ hσ) (exists_local ψ hψ τ σ hτ hσ) y |> (mem_imC ψ hψ τ σ hτ hσ y).1
 
 end GlobalTheory.CompanionTheory.BZPhiPG.Onto

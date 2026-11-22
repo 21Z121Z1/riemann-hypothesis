@@ -2,8 +2,16 @@ import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.Singul
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaMajorantAverageIdentity
 import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasChr
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsWeilDatumDoubledOfSchrodingerFormulas
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CompactAverageProjectionThetaSchrodingerStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IkedaMapSchrodingerPartialIntegralStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CompactAverageProjectionThetaSchrodinger
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.MeanPair
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SphericalEisensteinSeriesOnGroup
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EisensteinIsotropicLine
+import Development.AbelianVarietyTheory.Definitions.Foundations.AnalyticOnNhdTsumNpow
+import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelEisensteinPolesStd
+import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelEisensteinSimplePoleOfDoublingMethod
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.WeilThetaConvergence
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DifferentiableOneP
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IkedaMapSchrodingerPartialIntegral
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchrodingerThetaEqSchwartzBruhat
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HeckeFormNSOfHeckeForm
@@ -82,8 +90,8 @@ theorem main (D : D7) (A : HSp D) (t : ℕ) (B W : HSp D) (d : HypDec B W t) (ψ
   obtain ⟨𝓕₂, hμ₂⟩ := I.cov₁
   have hK := LIkSch.isCompact_K d I.good
   have := I.probK
-  have hP := GlobalTheory.T.compactAverageProjection_theta_schrodinger D ψ₀ A B χ⁻¹ omB homB μB 𝓕B hμB I.l.K hK I.νK I.probK
-  have hI := GlobalTheory.T.ikedaMap_schrodinger_partialIntegral D ψ₀ h₀ A B W t d μB 𝓕B hμB μW 𝓕W hμW μ₁ 𝓕₁ hμ₁ I.μ₁ 𝓕₂ hμ₂
+  have hP := _root_.GlobalTheory.RegSchProj.projK_theta_sch D ψ₀ A B χ⁻¹ omB homB μB 𝓕B hμB I.l.K hK I.νK I.probK
+  have hI := _root_.GlobalTheory.IkedaSch.sch_ikeda D ψ₀ h₀ A B W t d μB 𝓕B hμB μW 𝓕W hμW μ₁ 𝓕₁ hμ₁ I.μ₁ 𝓕₂ hμ₂
   have hgf := homB.om_pres (g, 1) f hf
   have e1 : ∀ φ, IsThetaFunO ψ₀ (dblSp A) B φ →
       ikp I (GlobalTheory.Core.Rk.SW.sch ψ₀ A B μB 𝓕B φ) = GlobalTheory.Core.Rk.SW.sch ψ₀ A W μW 𝓕W (ikeda ψ₀ d μ₁ 𝓕₁ (projK omB I.νK φ)) := fun φ hφ => by

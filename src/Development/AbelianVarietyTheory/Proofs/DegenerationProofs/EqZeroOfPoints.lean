@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUnitChar
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.CoeffSymmSum
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.KbIsAlgClosedAndConj
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsReducedAlgebraOfSmoothOfIsNoetherianRing
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorsionValuesCoordsOperatorPermuteStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorsionValuesCoordsOperatorPermute
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SpecialFibreTorsionEqReductions
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUnitWeightZeroIntegralCoords
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.UniformisedTestDimensionsAndSplitFibre
@@ -121,7 +121,7 @@ theorem mem_lattice_iff : GlobalTheory.UT.LL → ∀ (o Ω : Type) [CommRing o] 
     md hB z w hz hw
   have hxx : x'.left = x.left := pb.hom_ext (hx'.trans hr) ((Over.w x').trans (Over.w x).symm)
   refine ⟨_, hxx ▸ hc', ?_⟩
-  have h1 := hL a' _ (hA ▸ (GlobalTheory.T.torsionValues_coords_operator_permute L o Ω S ρ).1 _ y₀ a)
+  have h1 := hL a' _ (hA ▸ (_root_.GlobalTheory.ZH.EvCrd.ev_crd_act L o Ω S ρ).1 _ y₀ a)
   have h2 := CrdCalc.crd_map (OO p).subtype hw
   rw [show spMap (OO p).subtype ≫ z = u.toG a' from hg] at h2
   obtain ⟨t, ht⟩ := CrdCalc.crd_unique h2 h1

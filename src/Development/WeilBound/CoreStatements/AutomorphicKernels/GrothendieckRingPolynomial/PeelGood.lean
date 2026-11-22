@@ -11,20 +11,21 @@ import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosocleOfContragredientSocle
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.LSegJacquet
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContragredientProductIrreducibleStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContragredientProductIrreducible
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductIrreducibleFiniteLength
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.ZelevinskyCosocles.LUnlinkedComm
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ReverseOrderedProductHasSocle
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LanglandsFactorsDualReverseOrdered
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnlinkedCommuteOfIrreducibleStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LanglandsSocleOfOrderFreeStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnlinkedCommuteOfIrreducible
+import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.MirabolicDerivatives.SegmentCuspLines.ProdIrrFiniteLength
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LanglandsSocleOfOrderFree
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalLanglandsOfIrreducibleAdmissible
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.ZelevinskyCosocles.GKLocal
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentJacquetAllStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentJacquetAll
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LanglandsSegmentDual
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.FineJacquetModules.SegDefs
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.SegmentRepresentation
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IrreducibleSubSegmentProductStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IrreducibleSubSegmentProduct
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentProductWordInShuffleStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSegmentRepresentation
 
@@ -39,7 +40,7 @@ namespace PositivityTheory.Groth.ClsOfF
 variable {k : Type} [Field k] [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k]
 
 theorem comm_of (hI : Zc.Cos.LUnlinkedIrr k) : Zc.Cos.LUnlinkedComm k :=
-  GlobalTheory.T.unlinked_commute_of_irreducible k PositivityTheory.Tls2.BZGL.irreducibleAdmissibleGL_top hI
+  _root_.GlobalTheory.CompanionTheory.BZSegComm.lUnlinkedComm k PositivityTheory.Tls2.BZGL.irreducibleAdmissibleGL_top hI
 
 theorem stdCos (hZ : GlobalTheory.Published.SegmentRepresentation) (hI : Zc.Cos.LUnlinkedIrr k) :
     ∀ (𝔪 : Multiset (Segment k)) (h N : ℕ) (x : Fin h → IrrGL k) (hd : ∑ a, (x a).1 = N), LFactors 𝔪 x →
@@ -47,8 +48,8 @@ theorem stdCos (hZ : GlobalTheory.Published.SegmentRepresentation) (hI : Zc.Cos.
   have hA := PositivityTheory.Tls2.BZGL.irreducibleAdmissibleGL_top
   intro 𝔪 h N x hd hx
   obtain ⟨Γ, hΓ, hL⟩ := _root_.GlobalTheory.CompanionTheory.DualForms.exists_revOrdered_dual hA (_root_.GlobalTheory.CompanionTheory.SegLDual.lSegDual hA hZ) 𝔪 x hx
-  obtain ⟨hd', ⟨e⟩⟩ := GlobalTheory.T.contragredient_product_irreducible hA x hd
-  obtain ⟨τ, hτ⟩ := _root_.GlobalTheory.CompanionTheory.SocleRev.exists_isSocle_prodIrr_of_isRevOrdered hA (GlobalTheory.T.segment_jacquet_all hA hZ) hI (comm_of hI) Γ (fun a => dualCl (x a)) hd' hΓ hL
+  obtain ⟨hd', ⟨e⟩⟩ := _root_.GlobalTheory.CompanionTheory.ContraProd.contra_prodIrr hA x hd
+  obtain ⟨τ, hτ⟩ := _root_.GlobalTheory.CompanionTheory.SocleRev.exists_isSocle_prodIrr_of_isRevOrdered hA (_root_.GlobalTheory.CompanionTheory.SegCoarse.lSegJacquet hA hZ) hI (comm_of hI) Γ (fun a => dualCl (x a)) hd' hΓ hL
   exact _root_.GlobalTheory.CompanionTheory.CosocleContra.isCosocle_of_isSocle_contra hA (prodIrr x hd) (isSmooth_prodIrr x hd) (_root_.GlobalTheory.CompanionTheory.ProdFL.main hA x hd) τ
     (hτ.of_equiv (Representation.Equiv.refl _) e.symm)
 
@@ -142,17 +143,17 @@ theorem cls_of (hZ : GlobalTheory.Published.SegmentRepresentation) (k : Type) [F
   obtain ⟨hM, hR, hS⟩ := H
   have hCm : Zc.Cos.LUnlinkedComm k := comm_of hI
   have hF : Zc.LOrderFree k := PositivityTheory.PfEss.Zc2.cs_orderfree hA hCm
-  have hSoc : Zc.LSocleGL k := GlobalTheory.T.langlands_socle_of_order_free hA (_root_.GlobalTheory.CompanionTheory.GKLocalProof.gkLocal hA) hF
+  have hSoc : Zc.LSocleGL k := _root_.GlobalTheory.CompanionTheory.LSocle.lSocleGL hA (_root_.GlobalTheory.CompanionTheory.GKLocalProof.gkLocal hA) hF
   have HS := stdCos hZ hI
   have hC : CuspEmbP k := cuspEmbP k hA hR
   exact
     { ex := ex_of HS
       exh := exh_at hM hR hS hC (suppP k)
-        (juxtP_of_fineUniq hA hM hR hS hC (GlobalTheory.T.segment_product_word_in_shuffle hA (GlobalTheory.T.segment_jacquet_all hA hZ)) (GlobalTheory.T.irreducible_sub_segment_product hA hZ))
+        (juxtP_of_fineUniq hA hM hR hS hC (GlobalTheory.T.segment_product_word_in_shuffle hA (_root_.GlobalTheory.CompanionTheory.SegCoarse.lSegJacquet hA hZ)) (_root_.GlobalTheory.CompanionTheory.SegUniq.isLSeg_of_dec hA hZ))
         linkP minP (peelGood HS hSoc)
       free := hF
       soc := hSoc
-      jac := GlobalTheory.T.segment_jacquet_all hA hZ
+      jac := _root_.GlobalTheory.CompanionTheory.SegCoarse.lSegJacquet hA hZ
       seg := fun Δ => _root_.GlobalTheory.CompanionTheory.SegExists.exists_isLSeg hA Δ
       unl := hI
       com := hCm }

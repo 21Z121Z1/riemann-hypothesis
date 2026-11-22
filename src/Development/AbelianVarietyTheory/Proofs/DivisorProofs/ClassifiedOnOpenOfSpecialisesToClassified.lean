@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.HasRigidCoords
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsiUnitOnBasicOpenOfComesFromBaseStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTripleMapOfSameUniformisedCoords
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsProperRelAmpleKTrivOfTrivialisationsGenerate
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryModuliObjectSpreadNormalDomainStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryModuliObjectSpreadNormalDomain
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericFibreTorsionRationalOfBase
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolarizationTransferModels
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LevelQuotientRepresentsReduced
@@ -75,7 +75,7 @@ theorem GlobalTheory.clsOpen : ∀ {E : Type} [Field E] [NumberField E] [IsCMFie
   obtain ⟨n₂⟩ := GlobalTheory.TraitOrder.comp rfl bc m₁
   obtain ⟨n₃⟩ := GlobalTheory.TraitOrder.comp (Category.id_comp _) n₂ n₁
   obtain ⟨n₄⟩ := GlobalTheory.TraitOrder.cancel E1 mO n₃
-  obtain ⟨o, ho, ⟨mo⟩⟩ := GlobalTheory.T.exists_unitaryModuliObject_spread_normal_domain Dw l c A bA tO hpr ham hkt htors K g _ oK hsK n₄
+  obtain ⟨o, ho, ⟨mo⟩⟩ := _root_.GlobalTheory.ObjSpread.exists_obj Dw l c A bA tO hpr ham hkt htors K g _ oK hsK n₄
   obtain ⟨f₀, ⟨hf₀s, ⟨mf₀⟩⟩, -⟩ := Xo.rep (Sp A) (spMap (bA.comp incl)) inferInstance o
   have hf₀ : f₀ ≫ Xo.s = spMap bA ≫ spMap incl := by rw [hf₀s, spMap_comp']
   let yo : Sp A ⟶ Xo.XF c := pullback.lift f₀ (spMap bA) hf₀

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsRegularLocalRingAdicCompletion
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsRegularLocalRingOfFlatOfMapEqMaximalIdeal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDerivationExtendAdicCompletionLocalizationStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDerivationExtendAdicCompletionLocalization
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RegularFibreOfLiftedPartialDerivations
 open IsLocalRing TensorProduct
 
@@ -33,7 +33,7 @@ theorem isRegularRing_adicCompletion_tensor_of_mvPolynomial :
     exact ha
   have hD : ∀ s : Fin n, ∃ D : Derivation ℤ B B, ∀ x,
       D (algebraMap S₀ B x) = algebraMap S₀ B (MvPolynomial.pderiv s x) := fun s =>
-    GlobalTheory.T.exists_derivation_extend_adicCompletion_localization S₀ P ((MvPolynomial.pderiv s).restrictScalars ℤ)
+    _root_.GlobalTheory.derivation_extend_completion_localization_atPrime S₀ P ((MvPolynomial.pderiv s).restrictScalars ℤ)
   have hD' : ∀ s : Fin n, ∃ D : @Derivation ℤ B B _ _ _ (Ring.toIntAlgebra B) _ _, ∀ x,
       D (algebraMap S₀ B x) = algebraMap S₀ B (MvPolynomial.pderiv s x) := by
     intro s

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.HighestVectorsRegularLine
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WtRInjective
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsHighestWeightInInvariantSubmoduleStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsHighestWeightInInvariantSubmodule
 open Matrix Finset
 open scoped InnerProductSpace
 open PositivityTheory.RgBcC PositivityTheory.RgBcC.Real PositivityTheory.RgBcC.RealD GlobalTheory.CompanionTheory.RealCount GlobalTheory.CompanionTheory.RealCountG
@@ -29,7 +29,7 @@ theorem intertwiner_eq_zero_of_highest {n : ℕ} (H V : Type) [NormedAddCommGrou
       rw [hR, hu, map_zero]
     rw [← hadj]
     exact (Submodule.mem_orthogonal _ _).mp hw _ hu'
-  obtain ⟨μ, v, hvN, hv0, hk⟩ := GlobalTheory.T.exists_highest_weight_in_invariant_submodule H G hrel hadj _ hN hstable
+  obtain ⟨μ, v, hvN, hv0, hk⟩ := _root_.GlobalTheory.CompanionTheory.RealCountG.HwStable.exists_highest_of_stable H G hrel hadj _ hN hstable
   have hvK : v ∈ LinearMap.ker R := hhigh μ v hk
   exact hv0 (inner_self_eq_zero.mp ((Submodule.mem_orthogonal _ _).mp hvN v hvK))
 

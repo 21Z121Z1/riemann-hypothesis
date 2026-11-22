@@ -85,7 +85,7 @@ theorem isCuspFn_of_contRep {D : D7} (X : Formalism.L2.SG.HidaSetting.HidaSettin
   obtain ⟨hc, hi, he⟩ := hψ
   have hfund := X.B.fund_spec
   obtain ⟨hT, hL, hS, -⟩ := GlobalTheory.CongTop.adelic_topology X.B.I
-  obtain ⟨Γ, hΓ, hcΓ, -⟩ := GlobalTheory.T.rationalUnitaryPoints_discrete_fundamentalDomain X.B.I
+  obtain ⟨Γ, hΓ, hcΓ, -⟩ := _root_.GlobalTheory.RatDiscrete.rational_points X.B.I
   obtain ⟨hl, -, -, -, hop⟩ := _root_.GlobalTheory.AdelicUnimod.adelic_unimodular X.B.I X.B.μf
   have : BorelSpace X.B.I.GA := inferInstance
   have : (X.B.I.muA X.B.μf).IsMulLeftInvariant := ⟨hl⟩

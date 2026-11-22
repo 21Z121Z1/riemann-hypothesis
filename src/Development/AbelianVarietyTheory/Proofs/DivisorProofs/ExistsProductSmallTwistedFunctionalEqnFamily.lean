@@ -1,7 +1,7 @@
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsToricRankOneBis
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonzeroAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedExpansionMulOfMemberProductsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedRelationMulOfRelatedPairsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedRelationMulOfRelatedPairs
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCubeProductTwistedSectionsVanishing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdicSumTwistedSectionFamilyTendsToZeroStatement
@@ -35,7 +35,7 @@ theorem GlobalTheory.TwFam.exists_prod_family : ∀ (R : Type) [CommRing R] [IsD
       simp only [σ, Equiv.prodCongr_apply, Prod.map_fst, Prod.map_snd, Equiv.coe_addRight, shift, add_smul]
       abel
     have hσr : ∀ (mu : D.toPre.X) (q : D.toPre.X × D.toPre.X), TRel h mu (p q) (p (σ mu q)) := fun mu q =>
-      GlobalTheory.T.twistedRelation_mul_of_related_pairs R hadm D a a' h h' hED n j n' j' n'' j'' hn hj mu q.1 q.2 (σ mu q).1 (σ mu q).2
+      _root_.GlobalTheory.TwFam.ProdRel.trel_prod R hadm D a a' h h' hED n j n' j' n'' j'' hn hj mu q.1 q.2 (σ mu q).1 (σ mu q).2
         (f q.1) (g q.2) (p q) (f _) (g _) (p (σ mu q)) rfl rfl (hpP q) (hpP (σ mu q)) (hf mu q.1) (hg mu q.2)
     exact _root_.GlobalTheory.TwFam.SumFE.tfe_of_isSum R hadm D a a' h h' hED n'' j'' (D.toPre.X × D.toPre.X) (fun q => q.1 + q.2) p F σ
       hps hFs hσw hσr

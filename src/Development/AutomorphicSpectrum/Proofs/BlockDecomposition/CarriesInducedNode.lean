@@ -1,5 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NodeFunctionLeviDecompositionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NodeFunctionLeviDecomposition
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviFactorOfUnipotentDecompStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatNodeFunction
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinStable
 open NumberField IsDedekindDomain Matrix MeasureTheory Filter Topology
@@ -70,7 +71,7 @@ theorem nodeFn_slice {e₁ : GA E r → ℂ} {e₂ : GA E s → ℂ} (h₁ : Fla
     rw [hg, cf, cf, map_mul _ (unip xf * _) c, ← mul_assoc, infGL_comm, mul_assoc (finGL _ _ _), map_mul, finGL_unip,
       finGL_lev]
   rw [e1, ← mul_assoc, ← mul_assoc, hv, mul_assoc (unip v), ← map_mul]
-  exact GlobalTheory.T.node_function_levi_decomposition e₁ e₂ h₁ h₂ v _ k c hc
+  exact _root_.GlobalTheory.CompanionTheory.LimV.NodeApply.nodeFn_apply e₁ e₂ h₁ h₂ v _ k c hc
 
 theorem carries_nodeFn : ∀ {E : Type} [Field E] [NumberField E] [IsTotallyComplex E] {r s : ℕ} (e₁ : GA E r → ℂ) (e₂ : GA E s → ℂ) (U₁ U₁' : Submodule ℂ (Sm E r)) (U₂ U₂' : Submodule ℂ (Sm E s)), FlatFn e₁ → FlatFn e₂ → FinStable U₁ → FinStable U₁' → FinStable U₂ → FinStable U₂' → Carries e₁ U₁ U₁' → Carries e₂ U₂ U₂' → Carries (nodeFn e₁ e₂) (indSpan U₁ U₂) (indSpan U₁' U₂') := by
   intro E _ _ _ r s e₁ e₂ U₁ U₁' U₂ U₂' h₁ h₂ s₁ s₁' s₂ s₂' c₁ c₂ φ hφ
@@ -81,8 +82,8 @@ theorem carries_nodeFn : ∀ {E : Type} [Field E] [NumberField E] [IsTotallyComp
   · change nodeFn e₁ e₂ (unip u * g) * φ.1 (unip u * g) = nodeFn e₁ e₂ g * φ.1 g
     rw [hI.1]
     obtain ⟨v, m, k, c, hc, rfl⟩ := exists_iw g
-    rw [← mul_assoc, ← mul_assoc, ← D.unip_add', GlobalTheory.T.node_function_levi_decomposition e₁ e₂ h₁ h₂ _ _ _ _ hc,
-      GlobalTheory.T.node_function_levi_decomposition e₁ e₂ h₁ h₂ _ _ _ _ hc]
+    rw [← mul_assoc, ← mul_assoc, ← D.unip_add', _root_.GlobalTheory.CompanionTheory.LimV.NodeApply.nodeFn_apply e₁ e₂ h₁ h₂ _ _ _ _ hc,
+      _root_.GlobalTheory.CompanionTheory.LimV.NodeApply.nodeFn_apply e₁ e₂ h₁ h₂ _ _ _ _ hc]
   · obtain ⟨p, hp⟩ := nodeFn_slice h₁ h₂ k g
     obtain ⟨n, ψ₁, ψ₂, u₁, u₂, hs⟩ := tensor_pair_finite_sum (hI.2 k g)
     choose a ha hae using fun i => carries_translate s₁ s₁' c₁ p.1 (u₁ i)

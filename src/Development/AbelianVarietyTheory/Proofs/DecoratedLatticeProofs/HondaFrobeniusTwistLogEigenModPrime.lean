@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.EndOmega
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SubstCongrModPrimeOfIntegralDerivative
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PowPrimePowSubFrobeniusTwistNormLeStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PowPrimePowSubFrobeniusTwistNormLe
 
 open PowerSeries GlobalTheory.Honda
 
@@ -80,7 +80,7 @@ theorem frobLog_eigen : ∀ (K : Type) [NormedField K] [IsUltrametricDist K] [Ch
   have hM0 : MvPowerSeries.constantCoeff M = 0 :=
     PowerSeries.constantCoeff_subst_eq_zero hCf0 _ h0'
   have hMint : ∀ m, ‖MvPowerSeries.coeff m M‖ ≤ 1 := coefLe_mv_of_ps hw
-  have hAB := GlobalTheory.T.pow_prime_pow_sub_frobeniusTwist_norm_le K l σ hU' Unit M hMint i hn
+  have hAB := _root_.GlobalTheory.Honda.pow_frob_sub_le K l σ hU' Unit M hMint i hn
   set A := M ^ l ^ i with hA
   set B := MvPowerSeries.expand (l ^ i) hn (MvPowerSeries.map (σ ^ i) M) with hB
   have hA0 : MvPowerSeries.constantCoeff A = 0 := by

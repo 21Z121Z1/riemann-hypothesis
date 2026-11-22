@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsCoreLat
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsDualPairPositiveWeightCoefficientSpaceStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsDualPairPositiveWeightCoefficientSpace
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsColumnPerfectPairingDefiniteCoreNode
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IntegrandSZero
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.WeilRepresentationUnitaryPair
@@ -64,7 +64,7 @@ theorem eps_core_m (G : GridData L sc) (M : DSModel (G.V (.core D.R.m)) (Node.pa
 
 theorem topCols : TopCols := by
   intro D _ T L μ0 _ sc G W Mv _ M y hy w
-  obtain ⟨pr, hpr⟩ := GlobalTheory.T.exists_dualPair_positiveWeightCoefficientSpace G W.θ W.θ_is M
+  obtain ⟨pr, hpr⟩ := _root_.GlobalTheory.TopCoefPair.exists_dualPair G W.θ W.θ_is M
   obtain ⟨c, hc, e⟩ := _root_.GlobalTheory.TopColumn.exists_col G W.θ W.θ_is M (eps_core_m G M) (coefPlus_is G W.θ W.θ_is) pr hpr y hy
   refine ⟨c, hc, pr.flip w, ?_⟩
   subst e

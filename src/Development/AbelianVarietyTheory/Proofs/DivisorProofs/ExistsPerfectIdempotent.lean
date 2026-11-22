@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RigExtMapRelFrobCom
 import Development.AbelianVarietyTheory.Definitions.Divisors.WittOnFalse
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPerfectPartAlgHomFiniteAlgebra
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PerfectProjectionNaturalIdempotentReduced
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorSquarePerfectProjectionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorSquarePerfectProjection
 
 set_option autoImplicit false
 
@@ -26,7 +26,7 @@ theorem exists_perfect_idempotent (p : ℕ) [Fact p.Prime] (k : Type) [Field k] 
     (AlgHom.ext fun a => (_root_.GlobalTheory.PerfectProj.natural_idempotent_reduced p k (G.A n) k (π n) (AlgHom.id k k) (hπ n) hk).1
       (counitAlgHom k (G.A n)) a)
     (AlgHom.ext fun a => ((_root_.GlobalTheory.PerfectProj.natural_idempotent_reduced p k (G.A n) (G.A n ⊗[k] G.A n) (π n) _ (hπ n)
-      (GlobalTheory.T.tensor_map_nilpotent_sub_and_pow_of_projection p k (G.A n) (π n) (hπ n))).1 (comulAlgHom k (G.A n)) a).symm)
+      (_root_.GlobalTheory.tensorSquare_perfectProjection p k (G.A n) (π n) (hπ n))).1 (comulAlgHom k (G.A n)) a).symm)
   refine ⟨⟨b, fun n => ?_⟩, ?_, fun n a => (hπ n).1 a, fun n a => (nat n n).2.2 a⟩
   · refine BialgHom.ext fun a => ?_
     exact (nat (n + 1) n).1 (G.res n : G.A (n + 1) →ₐ[k] G.A n) a

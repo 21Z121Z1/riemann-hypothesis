@@ -175,5 +175,5 @@ theorem GlobalTheory.CompanionTheory.SW.selfDual_pi_inf : ∀ (F : Type) [Field 
       simp only [psiInf, map_add, ← AddChar.map_add_eq_mul]
       congr 1
       exact Prod.ext rfl (add_zero _).symm)
-    (GlobalTheory.T.localComponents_nontrivial_adelic_character F ψ hψ).2.2
+    (_root_.GlobalTheory.GaugeEx.CharLoc.char_local F ψ hψ).2.2
   exact selfDual_pi_of_form (coord F) he he' a ha _ hχ k hk ι

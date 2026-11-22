@@ -80,7 +80,7 @@ theorem exists_expInf {θ : InfFam D} (hθ : IsInfFam θ) (V : HSp D) (g : ℝ �
     exists_gen _ _ ((GlobalTheory.RealWeil.continuous_compAt hθ τ _ _).comp
         ((Units.continuous_val.comp continuous_subtype_val).comp hc))
       (by rw [h0]; exact R.2.2.2.2.1 1 (one_mem _) τ) (fun s t => by rw [hadd, R.2.2.2.1])
-      fun t => (GlobalTheory.T.adelicUnitary_action_at_real_place D θ hθ).1 V (g t) τ
+      fun t => (_root_.GlobalTheory.FockCompare.RealAction.real_action D θ hθ).1 V (g t) τ
   choose Z hZ hg using key
   refine ⟨fun τ => ⟨Z τ, hZ τ⟩, fun t => ?_⟩
   have h1 := GlobalTheory.SmoothForms.isExpFam_expInf R (t • fun τ => ⟨Z τ, hZ τ⟩)

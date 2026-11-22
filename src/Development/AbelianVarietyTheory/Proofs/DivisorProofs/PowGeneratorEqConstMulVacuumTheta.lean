@@ -8,7 +8,8 @@ import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsL
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockHxDifferentiable
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsIsNabUncond
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AnalyticFibreDescriptionUnique
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLevelOneThetaNeZeroOnIdealHalfLatticeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLevelOneThetaNeZeroOnIdealHalfLattice
+import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsStabForm
 
 namespace GlobalTheory.AdTh.GenConst
 
@@ -183,7 +184,7 @@ theorem exists_root_ne_zero {X : Data E r} {bas : (Fin g ⊕ Fin g → ℤ) ≃�
   have hM : 0 < l.M := lt_of_lt_of_le (by norm_num) l.three_le
   have hM0 : (l.M : E) ≠ 0 := Nat.cast_ne_zero.2 hM.ne'
   obtain ⟨-, -, h1, h2, -⟩ := DualMark.dual_marking E H Dw l r X L mk _ hL hmk (Complex.isPrimitiveRoot_exp l.M hM.ne')
-  obtain ⟨u, hu, hne⟩ := GlobalTheory.T.exists_levelOne_theta_ne_zero_on_ideal_half_lattice E r X g bas idx hs w L hL x hx (Mfr l) l.M (le_trans (by norm_num) l.three_le)
+  obtain ⟨u, hu, hne⟩ := _root_.GlobalTheory.Dict.ThetaHalf.exists_ne_zero_on_half E r X g bas idx hs w L hL x hx (Mfr l) l.M (le_trans (by norm_num) l.three_le)
     (by rw [h1, h2]) ϑ h h0
   obtain ⟨a, ha, t, ht, rfl⟩ := hmk.surj u hu
   refine ⟨fun _ => Submodule.Quotient.mk a, fun b hb => hne ?_⟩

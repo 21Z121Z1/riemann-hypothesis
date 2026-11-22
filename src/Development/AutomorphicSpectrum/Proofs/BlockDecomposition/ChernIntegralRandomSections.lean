@@ -2,14 +2,14 @@ import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ChernDegreeComplex
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsPresents
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JoinCol
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GaussianWeightTotalMassStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GaussianWeightTotalMass
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SigmaCompactDisjointRefinement
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PAreaMultiplicityWeight
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeasurableLocalZeroCount
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeasurableZeroCountStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeasurableZeroCount
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RandomSectionZeroCount
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GaussianDetLeviIntegralStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ComplexHessianLogFubiniStudyStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GaussianDetLeviIntegral
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ComplexHessianLogFubiniStudy
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ComplexHessianLogDehomogeniseStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChangeVariablesZeroCountStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LintegralSplitColumn
@@ -125,7 +125,7 @@ theorem crofton : ∀ (Y : Var ℂ) (Δ : Y.Dv) (L : LB Y.X) (r : L.ι → Y.Fn�
     refine ⟨?_⟩
     have h1 := hlin (fun _ => 1) measurable_const
     simp only [lintegral_one, mul_one] at h1
-    rw [h1, GlobalTheory.T.gaussian_weight_total_mass, Fintype.card_fin]
+    rw [h1, _root_.GlobalTheory.CompanionTheory.FSCrofton.lintegral_gW, Fintype.card_fin]
     exact ENNReal.inv_mul_cancel hGpos hGtop
   have hN : ∫⁻ C, (((Z C).encard : ℕ∞) : ℝ≥0∞) ∂μ = φ.chernPart Y.dim 1 Set.univ := by
     rw [hlin _ hNm, hsum, ← mul_assoc, ENNReal.inv_mul_cancel hGpos hGtop, one_mul]

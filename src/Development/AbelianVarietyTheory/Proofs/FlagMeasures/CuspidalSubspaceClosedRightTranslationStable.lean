@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LayerProd
 import Formalism.HarderNarasimhan.ShiftInvariance
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FiniteAdelicUnitaryCongruenceTopology
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalUnitaryPointsDiscreteFundamentalDomainStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalUnitaryPointsDiscreteFundamentalDomain
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AdelicUnitaryHaarBiInvariant
 import Formalism.SharpRestriction.CuspSpanNormBounds.GlobAut
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
@@ -281,7 +281,7 @@ theorem cuspidal_closed_stable : ∀ B : RowsAut, ∃ S : Submodule ℂ (B.I.L2 
   intro B
   classical
   obtain ⟨hT2, hLC, hSC, -⟩ := GlobalTheory.CongTop.adelic_topology B.I
-  obtain ⟨Γ, hΓset, hΓc, hΓfin, hΓfd⟩ := GlobalTheory.T.rationalUnitaryPoints_discrete_fundamentalDomain B.I
+  obtain ⟨Γ, hΓset, hΓc, hΓfin, hΓfd⟩ := _root_.GlobalTheory.RatDiscrete.rational_points B.I
   have h8 := _root_.GlobalTheory.AdelicUnimod.adelic_unimodular B.I B.μf
   have : (B.I.muA B.μf).IsMulLeftInvariant := ⟨h8.1⟩
   have : (B.I.muA B.μf).IsMulRightInvariant := ⟨h8.2.1⟩

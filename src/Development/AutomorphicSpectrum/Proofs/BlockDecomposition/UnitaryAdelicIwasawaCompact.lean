@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsHermRingRat
 import Development.WeilBound.ThetaLifts.Reductions.SiegelPar
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlagTransitiveOfBaseStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlagTransitiveOfBase
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsMaxEvenAdaptedLattice
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalHermitianRingStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalHermitianRing
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalHermitianHasBase
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalFormHermitianPerfect
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalWittFrame
@@ -12,7 +12,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeStabiliz
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MaxEvenLatticeFlagTransitiveLocalStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BlockTriangularMemMinimalParabolicLocalStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BlockTriangularMemMinimalParabolicStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviMatrixMapBaseChangeStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviMatrixMapBaseChange
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviMatrixOne
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MaxEvenLatticeAdaptedBasisStatement
 
@@ -58,7 +58,7 @@ theorem flag_map_kfin {A A' : Type} [CommRing A] [Algebra F A] [TopologicalSpace
 theorem exists_compact_iwasawa_good : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberField E] [Algebra F E] (σ : E →ₐ[F] E), IsCMExt F E σ → ∀ (n : ℕ) (J : Matrix (Fin n) (Fin n) E), IsHermND σ J → ∀ (r : ℕ) (X Y : Matrix (Fin n) (Fin r) E), IsWittFrame σ J X Y → ∃ K : Subgroup (GAd σ J), K ≤ finPts σ J ∧ IsCompact (K : Set (GAd σ J)) ∧ (∀ g ∈ finPts σ J, ∃ p ∈ minPar σ J X, p ∈ finPts σ J ∧ ∃ k ∈ K, g = p * k) ∧ GoodPosition σ J X Y K := by
   intro F E _ _ _ _ _ σ hCM n J hJ r X Y hW
   obtain ⟨L₀, hL₀, hae⟩ := _root_.GlobalTheory.CompanionTheory.KFin.AE.exists_lattice_maxEven_adapted hCM hJ hW
-  have hT : ∀ v, FlagTransitive (sigR (Fv F v) σ) (intLoc F E v) := fun v => GlobalTheory.T.flag_transitive_of_base _ _ (GlobalTheory.T.local_hermitian_ring hCM v) (_root_.GlobalTheory.CompanionTheory.KFin.Base.hasBase_place hCM v)
+  have hT : ∀ v, FlagTransitive (sigR (Fv F v) σ) (intLoc F E v) := fun v => _root_.GlobalTheory.CompanionTheory.KFin.Flag.flagTransitive _ _ (_root_.GlobalTheory.CompanionTheory.KFin.RingHyp.isHermRing_intLoc hCM v) (_root_.GlobalTheory.CompanionTheory.KFin.Base.hasBase_place hCM v)
   have hex : ∀ v, ∃ Λ : Submodule (intLoc F E v) (Fin n → Fv F v ⊗[F] E),
       IsMaxEven (sigR (Fv F v) σ) (intLoc F E v) (hR (Fv F v) σ J) Λ ∧
       IsAdapted (intLoc F E v) (hR (Fv F v) σ J) (colV v X) (colV v Y) Λ ∧
@@ -68,7 +68,7 @@ theorem exists_compact_iwasawa_good : ∀ (F E : Type) [Field F] [NumberField F]
     by_cases hg : IsMaxEven (sigR (Fv F v) σ) (intLoc F E v) (hR (Fv F v) σ J) (latLoc F L₀ v) ∧
         IsAdapted (intLoc F E v) (hR (Fv F v) σ J) (colV v X) (colV v Y) (latLoc F L₀ v)
     · exact ⟨_, hg.1, hg.2, fun _ => rfl⟩
-    · obtain ⟨L, h1, h2⟩ := _root_.GlobalTheory.CompanionTheory.KFin.Adapted.exists_maxEven_adapted _ (intLoc F E v) (GlobalTheory.T.local_hermitian_ring hCM v) (hR (Fv F v) σ J) (_root_.GlobalTheory.CompanionTheory.KFin.isHerm_isPerfect_hR hCM hJ v).1
+    · obtain ⟨L, h1, h2⟩ := _root_.GlobalTheory.CompanionTheory.KFin.Adapted.exists_maxEven_adapted _ (intLoc F E v) (_root_.GlobalTheory.CompanionTheory.KFin.RingHyp.isHermRing_intLoc hCM v) (hR (Fv F v) σ J) (_root_.GlobalTheory.CompanionTheory.KFin.isHerm_isPerfect_hR hCM hJ v).1
         (_root_.GlobalTheory.CompanionTheory.KFin.isHerm_isPerfect_hR hCM hJ v).2 (colV v X) (colV v Y) (_root_.GlobalTheory.CompanionTheory.KFin.FrameLoc.isFrame_colV hCM hJ hW v)
       exact ⟨L, h1, h2, fun h => absurd h hg⟩
   choose Λ hΛ1 hΛ2 hΛ3 using hex
@@ -138,7 +138,7 @@ theorem exists_compact_iwasawa_good : ∀ (F E : Type) [Field F] [NumberField F]
       refine mem_finPts.2 (Subtype.ext (Units.ext ?_))
       have e1 : (matHom _ σ J (projInf σ J m)).1 = 1 := by
         refine (matHom_mapH_kfin (fstA F) m).trans ?_
-        rw [hm, ← GlobalTheory.T.levi_matrix_map_base_change]
+        rw [hm, ← _root_.GlobalTheory.CompanionTheory.KFin.leviMat_map]
         have e2 : (matHom _ σ J p).1.map (Algebra.TensorProduct.map (fstA F) (AlgHom.id F E)) = 1 := by
           rw [← matHom_mapH_kfin]
           have := mem_finPts.1 hpf
@@ -153,7 +153,7 @@ theorem exists_compact_iwasawa_good : ∀ (F E : Type) [Field F] [NumberField F]
       refine GlobalTheory.T.max_even_lattice_adapted_basis hCM hJ hW v (Λ v) (hΛ1 v) (hΛ2 v) (proj σ J v p) (proj σ J v m) (hpv v) _
         (hB.map _) (flag_map_kfin (evFin F v) p B hpB) ?_
       refine (matHom_mapH_kfin (evFin F v) m).trans ?_
-      rw [hm, ← GlobalTheory.T.levi_matrix_map_base_change, ← matHom_mapH_kfin]
+      rw [hm, ← _root_.GlobalTheory.CompanionTheory.KFin.leviMat_map, ← matHom_mapH_kfin]
       rfl
     refine ⟨m, ⟨d, d', hd, ?_⟩, hmK, m⁻¹ * p, ⟨B', hB', hB1, hu, fun z hz' => ?_⟩, mul_mem (inv_mem hmK) hpK, by simp⟩
     · exact hd'

@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.QuasiCompact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FactorPowCompAdicCompletionMapToQuotientPow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdicCompletionMapInvariants
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdicCompletionRingInjectiveInvariantsOfModule
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatTensorGaloisInjectiveInvariantsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatTensorGaloisInjectiveInvariants
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdicCompletionEquivariantEquivOfLevelIsos
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -53,7 +53,7 @@ theorem completion_invariants_agree : ∀ (R : Type) [CommRing R] [IsDomain R] [
   have hmC := _root_.GlobalTheory.adicCompletion_map_invariants C JC C C' (Algebra.linearMap C C') _ (fun σ => (gC σ).toLinearMap) Subtype.val_injective hfixC
   obtain ⟨injC, rangeC⟩ := _root_.GlobalTheory.InvAlg.cmap_transfer C C' JC _ gC hmC.1 hmC.2
 
-  obtain ⟨injOT, fixOT⟩ := GlobalTheory.T.flat_tensor_galois_injective_invariants R R' O hinj hgal
+  obtain ⟨injOT, fixOT⟩ := _root_.GlobalTheory.InvAlg.flat_tensor_invariants R R' O hinj hgal
   have hfixO : ∀ t : T, t ∈ LinearMap.range (Algebra.linearMap O T) ↔
       ∀ σ, (galTensor O σ).toLinearMap t = t := by
     intro t; constructor

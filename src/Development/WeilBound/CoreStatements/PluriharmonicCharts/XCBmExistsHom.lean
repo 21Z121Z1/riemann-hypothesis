@@ -12,7 +12,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexPointsIffCen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValAtIffValueAt
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.InteriorPointPolarised
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GramMatrixTwoFramesStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GramMatrixConjugationStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GramMatrixConjugation
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ConjugatePointSameCentre
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.RefNorm
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.XCBmExistsBlockpos
@@ -207,7 +207,7 @@ theorem gr_conj (tie : FlagTie M 𝔐) (F τ w G) (h : Gr tie F τ w G) :
     Gr tie F τ (conjVec w) (G.map (starRingEnd ℂ)) := by
   obtain ⟨hF, gd, z, Γ, hw, hi, hΓ, hp, rfl⟩ := h
   have hcc := _root_.GlobalTheory.CompanionTheory.Ar.CoordConj.centre_and_coords_conj 𝔐.X M.Ω 𝔐.ξ _ _ M.x z w
-  refine ⟨hF, ?_, _, _, hcc.2 hw, ?_, GlobalTheory.T.gramAt_conj_point_map_conj E H D l Xo c Y S M.Ω _ _ M.x 𝔐 z _ _ _ hΓ, ?_,
+  refine ⟨hF, ?_, _, _, hcc.2 hw, ?_, _root_.GlobalTheory.CompanionTheory.Ar.HodgeMetric.ConjPoint.gramAt_conj_point E H D l Xo c Y S M.Ω _ _ M.x 𝔐 z _ _ _ hΓ, ?_,
     (blockG_conj Γ).symm⟩
   · have e : mCoordIdeal (conjVec w) = mCoordIdeal w :=
       (ptIdeal_centre (hcc.2 hw) (𝔐.all _)).symm.trans

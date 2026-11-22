@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondi
 import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RestrPreservesHomology
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsImageCocycleSemilinearSheafComplexMapStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChosenInjectiveResolutionEtaleSheafPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChosenInjectiveResolutionEtaleSheafProperties
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtendChainMapAlongQuasiIsoKInjectiveStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HypercohomologyPullbackPushforwardFunctorialStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SheafComplexSemilinearMapCompBijectiveStatement
@@ -21,7 +21,7 @@ theorem rAug_comp_toZ_eq_zero_of_kill (S : Type) [CommRing S] (F : Shv S) (R : T
   apply HomologicalComplex.from_single_hom_ext
   apply Sheaf.hom_ext
   ext U b
-  obtain ⟨-, -, -, -, h5, -⟩ := GlobalTheory.T.chosenInjectiveResolution_etaleSheaf_properties S F
+  obtain ⟨-, -, -, -, h5, -⟩ := _root_.GlobalTheory.EtC.ResBasic.res_basic S F
   let e := HomologicalComplex.singleObjXSelf (ComplexShape.up ℤ) 0 ((restr (Int.castRingHom S)).obj F)
   let a : Sec ((restr (Int.castRingHom S)).obj F) U.unop := Sec.map e.hom b
   have hb : b = Sec.map (sglι ((restr (Int.castRingHom S)).obj F)) a := by
@@ -48,10 +48,10 @@ theorem cpush_toZ_eq_zero_of_kill (S : Type) [CommRing S] (F : Shv S) (R : Type)
     (hδ : ∀ (U : Scheme.{0}) (a : Sec F U), δ.app U 0 (Sec.map (resι S F) a) = 0) (E : Spc) (n : ℤ)
     (y : CohomologyClass ((chains ℤ).obj E) ((rcx (Int.castRingHom S)).obj (res S F)) n) :
     cpush ((chains ℤ).obj E) δ.toZ n y = 0 := by
-  obtain ⟨-, -, -, hqF, -⟩ := GlobalTheory.T.chosenInjectiveResolution_etaleSheaf_properties S F
-  obtain ⟨-, hinjG, hgeG, hqG, -⟩ := GlobalTheory.T.chosenInjectiveResolution_etaleSheaf_properties R G
+  obtain ⟨-, -, -, hqF, -⟩ := _root_.GlobalTheory.EtC.ResBasic.res_basic S F
+  obtain ⟨-, hinjG, hgeG, hqG, -⟩ := _root_.GlobalTheory.EtC.ResBasic.res_basic R G
   let G' := (restr (Int.castRingHom R)).obj G
-  obtain ⟨hKI', -, hGE', -⟩ := GlobalTheory.T.chosenInjectiveResolution_etaleSheaf_properties ℤ G'
+  obtain ⟨hKI', -, hGE', -⟩ := _root_.GlobalTheory.EtC.ResBasic.res_basic ℤ G'
   haveI := hqF; haveI := hqG; haveI := hgeG; haveI := hKI'; haveI := hGE'
   haveI : QuasiIso (rAug (Int.castRingHom S) (resAug F)) := rAug_quasiIso _ _
   haveI : QuasiIso (rAug (Int.castRingHom R) (resAug G)) := rAug_quasiIso _ _

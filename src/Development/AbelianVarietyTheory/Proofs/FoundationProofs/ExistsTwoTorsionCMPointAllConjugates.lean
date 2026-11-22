@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 import Formalism.PairingDivisors.StatementH
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmThetaComplexConjugationCompatibleStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmThetaComplexConjugationCompatible
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ConjugateCurveDatumLatticeIsCurveLattice
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InducedTypeThetaGenusOnePermutes
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IdealPeriodLatticeOfCurveDatum
@@ -136,7 +136,7 @@ theorem exists_point : ∀ D : D7, t0Ex D := by
   have hD : DataIn D (tor0 D cc δ) M' := by
     refine ⟨fun τ x => halg _ ?_, (hext _ h2).1, (hext _ h3).1⟩
     exact (Algebra.IsAlgebraic.isAlgebraic (R := ℚ) x).algHom (embT D τ).toRatAlgHom
-  obtain ⟨hfix, hbar, -⟩ := GlobalTheory.T.cmTheta_complexConjugation_compatible D cc δ hc M' ρ' hD
+  obtain ⟨hfix, hbar, -⟩ := _root_.GlobalTheory.ThetaConj.useBar_holds D cc δ hc M' ρ' hD
   rcases hfix with hfix | hfix
   · obtain ⟨cc', δ', hc', -, e⟩ := _root_.GlobalTheory.ConjCurve.galCurve_holds D cc δ hc M' ρ' hfix hD.2.1 hD.2.2 1 one_pos
     rw [e]

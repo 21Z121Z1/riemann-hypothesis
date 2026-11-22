@@ -3,7 +3,7 @@ import Development.AutomorphicSpectrum.Statements.AlgebraStatements.RelationsSta
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.UniformizerModelPermModuleLattice
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsLatticeFamily
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.BundleChernComparison
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DescentRelationsFromModelsStatement
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DescentRelationsFromModels
 
 namespace GlobalTheory.CompanionTheory.Ar.Num.TopRel
 
@@ -13,7 +13,7 @@ open GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.NumbersDVR.Bundl
 
 theorem relations : GlobalTheory.CompanionTheory.Ar.Num.RelationsStatement := by
   intro O _ _ _ Ω _ _ K _ _ ι _ x _ ϖ hϖ d hmod hfn F _ _ _ n Sg _ r s p hp w χ φ D hD Lie W Om OmHT hB lie om hflag
-  have hck := GlobalTheory.T.lattice_family_ckRelations O Ω K ι x d hmod hfn p hp w χ φ D hD Lie W Om OmHT hB
+  have hck := _root_.GlobalTheory.CompanionTheory.Ar.Num.CkTop.ckRelations_of_model O Ω K ι x d hmod hfn p hp w χ φ D hD Lie W Om OmHT hB
   have hp0 : (p : O) ≠ 0 := hD.char.1
   have hw0 : w ≠ 0 := by
     rintro rfl

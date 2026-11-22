@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.VanIdealHomog
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompatibleSectionsGlueHomogeneousStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompatibleSectionsGlueHomogeneous
 
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry ReciprocityTheory.ChartRestriction.G.Out MvPolynomial GlobalTheory.CompanionTheory.GE
 open ReciprocityTheory.ChartRestriction.G.Geo.Tor (PSpace)
@@ -261,7 +261,7 @@ theorem uniform_lift : ∀ (R : Type) [CommRing R] [IsNoetherianRing R] (I : Ide
   intro R _ _ I N L hhom hbase hsat hcompat
   have hL : ∀ k e, (I.map (C : R →+* MvPolynomial (Fin (N + 1)) R)) ^ k * L e ≤ L (e + k) :=
     GlobalTheory.CompanionTheory.GE.Lift.pow_mul_le I L hbase hsat hcompat
-  obtain ⟨n₀, hn₀⟩ := GlobalTheory.T.compatible_sections_glue_homogeneous (reesAlgebra I) N
+  obtain ⟨n₀, hn₀⟩ := _root_.GlobalTheory.CompanionTheory.GE.SerreVan.serre_vanishing (reesAlgebra I) N
     (GlobalTheory.CompanionTheory.GE.Lift.reesIdeal L hL) (GlobalTheory.CompanionTheory.GE.Lift.reesIdeal_homog hhom hL)
   refine ⟨n₀, fun e n hn f hf hfh => ?_⟩
   choose m hm using hcompat e f hf

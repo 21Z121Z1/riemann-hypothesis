@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ImportsAlt
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsThetaDeRhamFiltrationAcris
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsAcrisPhiPowEigenvectorDoubleSeries
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UntiltFrobeniusDoubleSeriesHasSumAndNormBounds
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TiltUntiltToComplexPAdicBasicLawsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TiltUntiltToComplexPAdicBasicLaws
 import Development.AbelianVarietyTheory.CrystallinePeriods.RingIface
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsCrisP
 import Development.AbelianVarietyTheory.CrystallinePeriods.CrisMaps
@@ -60,7 +60,7 @@ theorem series_residues : ∀ (l : ℕ) [Fact l.Prime] (P : LocPrime l) (AI : Lo
     (Nat.lt_pow_self hp.one_lt).le.trans (Nat.pow_le_pow_right hp.pos (Nat.le_mul_of_pos_left N (by omega)))
   have key : ∀ k, ‖sh (y k ^ l ^ (h * N))‖ ≤ ‖(l : ℂ_[l])‖ := by
     intro k
-    rw [(GlobalTheory.T.tiltUntiltToComplexPAdic_basic_laws l).2.2.2.1, norm_pow]
+    rw [(_root_.GlobalTheory.PSer.Laws.sh_laws l).2.2.2.1, norm_pow]
     calc ‖sh (y k)‖ ^ (l ^ (h * N)) ≤ r ^ (l ^ (h * N)) := pow_le_pow_left₀ (norm_nonneg _) (hy k) _
       _ ≤ r ^ N := pow_le_pow_of_le_one hr0 hr.le hNle
       _ ≤ ‖(l : ℂ_[l])‖ := hN.le

@@ -120,9 +120,9 @@ theorem exists_mem_maximalIdeal {C : UCompact Xo c} (X₁ : USetup C) (p : ℕ) 
     rw [hat]
     exact RatModel.norm_val_le_one t.cen ((X₁.M.O z₁).algebraMap_mem a)
   obtain ⟨τ, e, hτ, -⟩ := exists_test_match X₁.o₁ X₁.Ω₁ S' ρ' p y₀ u lb
-    (GlobalTheory.T.thetaConstant_bounded_by_shortestVector hL hL2 hUT _ _ S' ρ' p y₀ u lb hy) (GlobalTheory.T.unitThetaConstants_generate_integralTorsion hL hL2 hUT _ _ S' ρ' p y₀ u lb hy)
-    (GlobalTheory.T.weightSpace_values_integralTorsion_bound_shortestVector hL hL2 hUT _ _ S' ρ' p y₀ u lb hy) (_root_.GlobalTheory.TestFibre.exists_norm_FF_eq hL hL2 hUT _ _ S' ρ' p y₀ u lb hy)
-    (GlobalTheory.T.exists_weightZeroSection_unit_integralTorsionPoint hL hL2 hUT _ _ S' ρ' p y₀ u lb hy)
+    (_root_.GlobalTheory.ZH.TestVal.main hL hL2 hUT _ _ S' ρ' p y₀ u lb hy) (_root_.GlobalTheory.UnitTheta.closure_unit_theta hL hL2 hUT _ _ S' ρ' p y₀ u lb hy)
+    (_root_.GlobalTheory.ZH.WeightBound.main hL hL2 hUT _ _ S' ρ' p y₀ u lb hy) (_root_.GlobalTheory.TestFibre.exists_norm_FF_eq hL hL2 hUT _ _ S' ρ' p y₀ u lb hy)
+    (_root_.GlobalTheory.ZH.WeightZeroUnit.main hL hL2 hUT _ _ S' ρ' p y₀ u lb hy)
   let α₀ : τ.X := e.symm (j.symm x')
   obtain ⟨v, hv⟩ := exists_shortest τ.q τ.pos X₁.S.N α₀
   have hne : α₀ + X₁.S.N • v ≠ 0 := fun h0 => hnd ⟨-(j (e v)), by

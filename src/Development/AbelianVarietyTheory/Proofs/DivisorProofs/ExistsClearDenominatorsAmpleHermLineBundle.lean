@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.SmallFam
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.SmallSecTensTriv
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsAlgClosedBaseChange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermLineBundlePairSectionsMulMemNormMul
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAmpleSectionClearingRationalFunctionDenomiStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAmpleSectionClearingRationalFunctionDenomi
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPosNonzeroPairSectionOfAmple
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -37,7 +37,7 @@ theorem exists_clear_denominators : ∀ (k : Type) [CommRing k] (X : Scheme.{0})
   intro k _ X _ p D hX P hA a J _ f
   classical
   have := Fintype.ofFinite J
-  choose c g hc hg0 hg hgf using fun j => GlobalTheory.T.exists_ampleSection_clearing_rationalFunction_denominator k X p D hX P hA (f j)
+  choose c g hc hg0 hg hgf using fun j => _root_.GlobalTheory.HSNef.DenOne.exists_den_one k X p D hX P hA (f j)
   obtain ⟨c', h, hc', h0, hh⟩ := _root_.GlobalTheory.HSNef.exists_pos_nonzero_mem_H k X p D hX P hA a
   refine ⟨c' + ∑ j, c j, h * ∏ j, g j, by omega, mul_ne_zero h0 (Finset.prod_ne_zero_iff.2 fun j _ => hg0 j), ?_, fun j => ?_⟩
   · have := mul_mem_H hh (prod_mem_H Finset.univ c g fun j _ => hg j)

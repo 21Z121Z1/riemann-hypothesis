@@ -94,7 +94,7 @@ theorem om_placeModel : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (S T : HSp
   have hψ : IsCharAF D.host.F ψ := by
     unfold IsStdChar at hstd
     exact hstd.1
-  have hdual := (GlobalTheory.T.self_dual_lattice_pairing_dual D ψ S T ΛS ΛT hstd hS hT).1
+  have hdual := (_root_.GlobalTheory.LatVac.latO_selfDual_approx_sign D ψ S T ΛS ΛT hstd hS hT).1
   have hsm : ∀ w : AE D, w * w = w → ∀ u ∈ (latO S T ΛS ΛT fun _ => True),
       w • u ∈ (latO S T ΛS ΛT fun _ => True) := by
     intro w hw u hu

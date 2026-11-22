@@ -15,13 +15,13 @@ import Development.AbelianVarietyTheory.Proofs.HeightProofs.DiscreteSeriesCoverI
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GlWordJetRelationsEqZeroOfNil
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CompressedWordsGlWordJetRelationsOfNoTypesStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryFlowCoeffEqOfTaylorSeries
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GlWordJetRelationsOfSchmidSystemJetsStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IteratedDerivInnerExpEqWordJetFormsStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LowestKTypeFunctionEquivalenceStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GlWordJetRelationsOfSchmidSystemJets
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IteratedDerivInnerExpEqWordJetForms
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LowestKTypeFunctionEquivalence
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NegativeRootArrayHighestVectorCoeffEqZero
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LowerKTypesPTensorStableUnderK
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FderivLeadingMinorPowerProductStrictUpperEqZero
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InnerFderivKAveragedMinorOperatorIntegralStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InnerFderivKAveragedMinorOperatorIntegral
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsHolomorphicLowestKTypeComplexified
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.KAveragedMinorOperatorExpPosBoundAnalytic
 
@@ -45,7 +45,7 @@ theorem funSchmid_ps (hl : IsHCParam lam) (hτ : IsTau ε (lowK ε lam) τ w) (h
   have hopen' : IsOpen (U1 ε) := hopen
   filter_upwards [hopen'.mem_nhds (hpos 1 Matrix.PosDef.one)] with z hz
   refine ext_inner_left ℂ fun y => ?_
-  have hd := fun p => GlobalTheory.T.inner_fderiv_kAveragedMinorOperator_integral n ε lam W τ w hl hτ z hz (z * thE ε p) y (G p)
+  have hd := fun p => _root_.GlobalTheory.SphJet.PsDer.inner_fderiv_ps n ε lam W τ w hl hτ z hz (z * thE ε p) y (G p)
   rw [inner_sum, inner_zero_right]
   simp only [fun p => (hd p).2]
   rw [← Finset.mul_sum, ← integral_finset_sum _ fun p _ => (hd p).1]
@@ -121,7 +121,7 @@ theorem compress_eq {H : Type} [NormedAddCommGroup H] [InnerProductSpace ℂ H]
   have han : ∀ Y, inP ε Y → AnalyticAt ℂ (ps ε lam τ w) (NormedSpace.exp Y) := fun Y hY =>
     (_root_.GlobalTheory.SphJet.ps_exp_pos_bound_analytic n ε lam W τ w hl hτ _ hg Y hY).2.2
   have h1 : AnalyticAt ℂ (ps ε lam τ w) 1 := by simpa using han _ (smul_transpose_mem_noncompactPart hX 0)
-  have r1 := GlobalTheory.T.glWordJetRelations_of_schmidSystem_jets V W n ε E _ u j _ h1 (GlobalTheory.T.lowest_K_type_function_equivalence n ε lam W τ w hl hτ V E u j hD ht)
+  have r1 := _root_.GlobalTheory.SphJet.FunRel.jetRel_funJet V W n ε E _ u j _ h1 (_root_.GlobalTheory.SphJet.PsEquivar.psFunEquiv n ε lam W τ w hl hτ V E u j hD ht)
     (funSchmid_ps hl hτ hD hw ht)
   have r2 := GlobalTheory.T.compressedWords_glWordJetRelations_of_no_types V W n ε E _ u j hD hlow
   have r3 := _root_.GlobalTheory.SphJet.jetRel_eq_zero_of_nil V W n ε E lam u j _ hD (fun a b hab hne => by
@@ -130,7 +130,7 @@ theorem compress_eq {H : Type} [NormedAddCommGroup H] [InnerProductSpace ℂ H]
     ext y x
     have : ps ε lam τ w 1 = ContinuousLinearMap.id ℂ W := (GlobalTheory.Dec.psBasic n ε lam W τ w hl hτ).2.2.2
     simp [funJet_apply, modJet_apply, Rw, ew, this])
-  have r4 := GlobalTheory.T.iteratedDeriv_inner_exp_eq_wordJetForms V W n ε E j _ h1 (fun l => sub_eq_zero.1 (r3 l)) X
+  have r4 := _root_.GlobalTheory.SphJet.Taylor.iteratedDeriv_inner_exp V W n ε E j _ h1 (fun l => sub_eq_zero.1 (r3 l)) X
   rw [thM_eq hX] at r4
   have hφ : ∀ y x : W, AnalyticOnNhd ℝ
       (fun t : ℝ => ⟪y, ps ε lam τ w (NormedSpace.exp ((t : ℂ) • Xᵀ)) x⟫_ℂ) Set.univ := by

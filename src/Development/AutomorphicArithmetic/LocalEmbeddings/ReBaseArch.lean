@@ -198,7 +198,7 @@ theorem member_arch_eq (σ : E →ₐ[F] E) (hσ : IsCMExt F E σ) {a b : ℕ} (
     simp only [MonoidHom.comp_apply, hπ, MonoidHom.one_apply] at this
     rw [← hcv, this]; rfl
   obtain ⟨φ₂, hφ₂, hφ₂0⟩ := _root_.GlobalTheory.SchANonzero.exists_mem_schA_ne_zero F κ
-  have hb := GlobalTheory.T.productFunctionOnSumCoords_mem_adelicSchwartzSpace F κ κ Φ hΦ φ₂ hφ₂
+  have hb := _root_.GlobalTheory.SchwartzBox.boxFun_mem_schA F κ κ Φ hΦ φ₂ hφ₂
   have e := hres g gd hgd Φ hΦ φ₂ hφ₂
   have e₁ := hres₁ g gd hgd Φ hΦ φ₂ hφ₂
   rw [hcf gd _ hb, hcf1, one_smul, e] at e₁

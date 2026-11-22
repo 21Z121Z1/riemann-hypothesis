@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsBaseFrame
 import Development.AbelianVarietyTheory.Definitions.Divisors.P22
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogarithmicDerivationLocalizationAtPrimeSpanOfRi
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DerivationExtendLocalizationAtPrimeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DerivationExtendLocalizationAtPrime
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DvdDerivationOfMemSpanProdParams
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.Monomial
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField
@@ -80,7 +80,7 @@ theorem logDet_local_eq_unit_mul_prod :
   choose N hN using fun i => _root_.GlobalTheory.logDerivation_atPrime_span F A R P I n b hspan (E i) (hE i)
 
   choose D' hD' using fun k =>
-    GlobalTheory.T.exists_derivation_extend_localization_atPrime ℤ A R P ((Algebra.linearMap A R).compDer (b k))
+    _root_.GlobalTheory.derivation_extend_localization_atPrime ℤ A R P ((Algebra.linearMap A R).compDer (b k))
   have hD'a : ∀ k a, D' k (φ a) = φ (b k a) := fun k a => hD' k a
   have hD'I : ∀ k, ∀ f ∈ I.map φ, D' k f ∈ I.map φ := by
     intro k f hf

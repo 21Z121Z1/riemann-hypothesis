@@ -8,11 +8,11 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.HermitianFor
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormPosOfIsUnit
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMeasurableCutoffFibreIntegralOneSubgroupStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FixedVectorDifferentiable
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OneParameterConjugationBoundStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OneParameterConjugationBound
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TorusModulusUnipotentRadicalUnitaryGroup
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryRepMatrixCoefficientBound
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoeffEqZeroOfLipschitzUnitaryFlowDecay
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicSplitTorusIwasawaUnitaryGroupStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicSplitTorusIwasawaUnitaryGroup
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HaarSubgroupBiInvariant
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnipotentRadicalVolumeGrowth
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DecayOfMemSpan
@@ -401,10 +401,10 @@ theorem constant_term_zero : ∀ (n : ℕ) (ε : Fin n → Bool) (W : Submodule 
   have hc0 : 0 ≤ c := by linarith
   have hc8 : 8 * (n : ℝ) * rkR ε < c := by linarith
   obtain ⟨β, hβ, hβt, hβ1⟩ := GlobalTheory.T.exists_measurable_cutoff_fibre_integral_one_subgroup (UJ ε) (nwSub ε W) ν (isClosed_NW ε W) hν
-  obtain ⟨a, Hm, hHm, haH, ha, ha', -, hiw⟩ := GlobalTheory.T.isotropic_splitTorus_iwasawa_unitaryGroup n ε W hW
+  obtain ⟨a, Hm, hHm, haH, ha, ha', -, hiw⟩ := _root_.GlobalTheory.IsoTorus.split_torus n ε W hW
   obtain ⟨κ, hκ, hmod⟩ := _root_.GlobalTheory.Dec.TorusModulus.torus_modulus n ε W ν hW hν a Hm hHm haH ha fun s m hm => (ha' s m hm).1
   obtain ⟨L, hL⟩ := _root_.GlobalTheory.GardingVec.fixed_vector_differentiable n ε H σ α w hσ hα hαc hfix
-  obtain ⟨C₀, hC₀⟩ := GlobalTheory.T.one_parameter_conjugation_bound n ε W ν hW hν β hβ hβt hβ1 a Hm hHm haH hiw κ hmod H σ d c w L hσ hd hc8
+  obtain ⟨C₀, hC₀⟩ := _root_.GlobalTheory.TorusLip.torus_lipschitz n ε W ν hW hν β hβ hβt hβ1 a Hm hHm haH hiw κ hmod H σ d c w L hσ hd hc8
     fun X hX => (hL X hX).1
   have hright := (_root_.GlobalTheory.UnipUnimod.unimodular_NW n ε W ν hW hν).1
   have hvol := (_root_.GlobalTheory.RadVol.radical_volume_growth n ε W ν hW hν).2

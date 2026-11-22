@@ -3,12 +3,12 @@ import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.UnivFram
 import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsLieBasis
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.TanBasisLocalStatement
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsFramedPointBaseChangeAlgebraMapStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.TanBasisLocal
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsFramedPointBaseChangeAlgebraMap
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FramedPointBaseChangeUniqueReflIff
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.EigenBasisIffTangentBasis
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FibreSectionNowhereZeroOfGenerates
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUniqueGlueSectionsPrincipalCoverStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUniqueGlueSectionsPrincipalCover
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUniqueGlueDual
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FibreSectionGeneratesOfNowhereZero
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ScaledBaseChangeFibreSectionNonvanishingIff
@@ -125,7 +125,7 @@ theorem GlobalTheory.Frames.frPt_glue : Out.SecBaseChangeSt → ∀ (E : Type) [
         (∀ τ k, z.u τ k = spMap (dualMap α) ≫ (y i).u τ k) ∧ (∀ τ k, z.u τ k = spMap (dualMap β) ≫ (y j).u τ k) ∧
         SecBC α 1 _ _ (y i).s z.s ∧ SecBC β 1 _ _ (y j).s z.s := by
     intro i j α β hα hβ
-    obtain ⟨z, hz⟩ := GlobalTheory.T.exists_framedPoint_baseChange_algebraMap hB E H Dw l Xo c _ _ (algOf (K := c.F) α hα) (y i)
+    obtain ⟨z, hz⟩ := _root_.GlobalTheory.Frames.FramedBaseChange.exists_frMap hB E H Dw l Xo c _ _ (algOf (K := c.F) α hα) (y i)
     have hz' := hov i j (algOf α hα) (algOf β hβ) hα hβ z hz
     have e₁ := ((_root_.GlobalTheory.Frames.frMap_unique_refl_iff E H Dw l Xo c _ _ _ (y i)).2.2 z).1 hz
     have e₂ := ((_root_.GlobalTheory.Frames.frMap_unique_refl_iff E H Dw l Xo c _ _ _ (y j)).2.2 z).1 hz'
@@ -162,7 +162,7 @@ theorem GlobalTheory.Frames.frPt_glue : Out.SecBaseChangeSt → ∀ (E : Type) [
   let e : Fin (Fintype.card (Σ τ : E →+* ℂ, Fin (Dw.mult τ))) ≃ Σ τ : E →+* ℂ, Fin (Dw.mult τ) :=
     (Fintype.equivFin _).symm
   have tb : TanBasis x (fun j => u₀ (e j).1 (e j).2) := by
-    refine GlobalTheory.T.tanBasis_of_local_tanBasis E H Dw l Xo S x n h hh _ _ fun i => ?_
+    refine _root_.GlobalTheory.TanBasisLocal.tanBasis_local E H Dw l Xo S x n h hh _ _ fun i => ?_
     have := (_root_.GlobalTheory.Frames.eigBasis_iff_tanBasis E H Dw l Xo c _ _ (u i) _ e (tan i) (eig i)).1 (basis i)
     simpa only [hu₀] using this
   have tan₀ : ∀ τ k, IsTanAt x (u₀ τ k) := by
@@ -173,7 +173,7 @@ theorem GlobalTheory.Frames.frPt_glue : Out.SecBaseChangeSt → ∀ (E : Type) [
     exact this
   have basis₀ := (_root_.GlobalTheory.Frames.eigBasis_iff_tanBasis E H Dw l Xo c S x u₀ _ e tan₀ eig₀).2 tb
 
-  obtain ⟨s₀, hs₀⟩ := (GlobalTheory.T.existsUnique_glue_sections_principal_cover E H Dw l Xo S x n h hh s (by
+  obtain ⟨s₀, hs₀⟩ := (_root_.GlobalTheory.SecGlue.existsUnique_glue E H Dw l Xo S x n h hh s (by
     intro i j α β hα hβ t ht
     obtain ⟨z, hz, -, -, h₁, h₂⟩ := ovl i j α β hα hβ
     exact secBC_transport hz h₁ h₂ t ht)).exists

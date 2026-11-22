@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResV
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHeatOperatorGluedPullbackBundlePower
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.LBLocal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGluedLineBundleSectionCoverStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGluedLineBundleSectionCover
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLineBundleSectionExtendBasicOpen
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ExistsSectionsSpanAffine
 
@@ -84,7 +84,7 @@ theorem heat_section : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H
   haveI := t.semi.separated
   haveI : CompactSpace t.G.left := QuasiCompact.compactSpace_of_compactSpace t.G.hom
   haveI : QuasiSeparatedSpace t.G.left := quasiSeparatedSpace_of_quasiSeparated t.G.hom
-  obtain ⟨tt, htt, htF⟩ := GlobalTheory.T.exists_glued_lineBundleSection_cover M hM (t.G.left.basicOpen f) W (fun i _ => j i) F (by rw [hcov, hb]) hWc hF
+  obtain ⟨tt, htt, htF⟩ := _root_.GlobalTheory.GlueOver.exists_glue M hM (t.G.left.basicOpen f) W (fun i _ => j i) F (by rw [hcov, hb]) hWc hF
   obtain ⟨N, s, hs⟩ := _root_.GlobalTheory.SecAff.sec_extend_basicOpen t.G.left M hM f tt htt
   refine ⟨c ^ N, s, pow_ne_zero N hc, fun i => ?_⟩
   have hWi : W i ≤ M.U (fun _ => j i) ⊓ t.G.left.basicOpen f := le_inf (hWc i) (hb ▸ hW i)

@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsSigmaFiniteHaa
 import Formalism.SharpRestriction.CuspSpanNormBounds.GlobAut
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermVolumeRatioSameKindOfVolumeRatioInduction
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RankTwoDefiniteUnimodularHermitianClassBoundStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryGaugeVolumeLeClassNumberDefiniteStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryGaugeVolumeLeClassNumberDefinite
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RiemannianHaarGaugeExistsPosUnique
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsGaugeAll
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AutInstDegreeRootDiscriminantRank
@@ -51,7 +51,7 @@ theorem absoluteVolume_of_volumeStep : VolumeStep → AbsoluteVolume := by
   choose c₀ _ hc₀ _ using fun v : InfinitePlace I₀.F => _root_.GlobalTheory.GaugeConst.gauge_exists_pos_unique I₀.n (I₀.ε v)
   have hg₀ : IsGaugeAll I₀ c₀ := hc₀
   have hE := hrat I₀ hsame hsig₀ c μf c₀ μ₀ hc hg₀
-  have hD := GlobalTheory.T.unitaryGaugeVolume_le_classNumber_definite I₀ 2 hsig₀ c₀ μ₀ hg₀
+  have hD := _root_.GlobalTheory.DefiniteVolume.gaugeVol_le I₀ 2 hsig₀ c₀ μ₀ hg₀
   have hV := GlobalTheory.T.rank_two_definite_unimodular_hermitian_class_bound I₀.E I₀.cm.cmUnram
   obtain ⟨e, -⟩ := hsame
   obtain ⟨hf₀, -, -, -, -, -⟩ := _root_.GlobalTheory.FlagMeas.instance_numbers I₀

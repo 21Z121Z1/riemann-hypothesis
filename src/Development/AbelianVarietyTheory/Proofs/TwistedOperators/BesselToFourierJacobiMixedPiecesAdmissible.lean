@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BesselStepPieces
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BidualityDepthLatticePieceBesselStep
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BesselStepPiecesBMutualAnnihilators
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GenericCharacterTrivialBesselStepUnitriangular
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BesselStepCorePieceFiniteNonzeroVacuumStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BesselStepCorePieceFiniteNonzeroVacuum
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BesselToFourierJacobiDepthLatticeSplits
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsAuxiliaryVectorWittDec
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links MeasureTheory IsDedekindDomain NumberField Matrix
@@ -52,7 +52,7 @@ theorem pieces_bf : OnStd fun {D} _ _ {sc} {G} W F => ∀ ρ (h : 2 * ρ + 2 ≤
   refine ⟨⟨_root_.GlobalTheory.AscFin.finLat_pcBF_A₁ D hD T L μ0 hL sc G W M hM F hF ρ h, ⟨?_, (_root_.GlobalTheory.AnnPiece.pcBF_A₂_compact_open D hD T L μ0 hL sc G W M hM F hF ρ h).1, (_root_.GlobalTheory.AnnPiece.pcBF_A₂_compact_open D hD T L μ0 hL sc G W M hM F hF ρ h).2⟩,
     (_root_.GlobalTheory.BesselPieceB.finLat_pcBF_B D hD T L μ0 hL sc G W M hM F hF ρ h).1, (_root_.GlobalTheory.BesselPieceB.finLat_pcBF_B D hD T L μ0 hL sc G W M hM F hF ρ h).2, ?_, ?_,
     (_root_.GlobalTheory.PcBFDual.dualB D hD T L μ0 hL sc G W M hM F hF ρ h).1, (_root_.GlobalTheory.PcBFDual.dualB D hD T L μ0 hL sc G W M hM F hF ρ h).2,
-    _root_.GlobalTheory.AscFin.UniBF.psiUni_pcBF D hD T L μ0 hL sc G W M hM F hF ρ h, (GlobalTheory.T.bessel_step_core_piece_finite_nonzero_vacuum D hD T L μ0 hL sc G W M hM F hF ρ h).1, (GlobalTheory.T.bessel_step_core_piece_finite_nonzero_vacuum D hD T L μ0 hL sc G W M hM F hF ρ h).2⟩,
+    _root_.GlobalTheory.AscFin.UniBF.psiUni_pcBF D hD T L μ0 hL sc G W M hM F hF ρ h, (_root_.GlobalTheory.AscFin.CorePiece.core_fin_vac D hD T L μ0 hL sc G W M hM F hF ρ h).1, (_root_.GlobalTheory.AscFin.CorePiece.core_fin_vac D hD T L μ0 hL sc G W M hM F hF ρ h).2⟩,
     _root_.GlobalTheory.AscFin.pcBF_splits D hD T L μ0 hL sc G W M hM F hF ρ h⟩
   · intro a' ha'
     induction ha' using AddSubgroup.closure_induction with

@@ -2,14 +2,14 @@ import Mathlib
 import Formalism.SharpRestriction.Divisibility.SchurIrreducible
 import Formalism.LocalToGlobal.BesselHermitianTheta.DefsReal
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsFockIPOfFockData
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockDerivedActionsTensorMembersStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockDerivedActionsTensorMembers
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryHarishChandraDiscreteSeries
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MinFirst
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockMinimalKTypeSecondMember
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JointShapeUniqueAndDegWEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockPolynomialsLocallyFiniteRationalWeights
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockOperatorsLieRepresentationCommute
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockModelDualPairCasimirApplyStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockModelDualPairCasimirApply
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CasimirNumberIdentityDualPair
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LowestLeastDegreeMirror
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EmbedsOfLowestType
@@ -18,7 +18,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockKsetPreserve
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockPolynomialKFiniteBothMembers
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFiniteDimensionalForallMapMem
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdjointIntertwinerDiscreteSeriesDescends
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsLinearMapTensorOfPairingStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsLinearMapTensorOfPairing
 open Formalism.BasicNotions.TH Formalism.MainNotions.SchurIrreducible GlobalTheory.FockAlg
 open TensorProduct
 
@@ -233,7 +233,7 @@ theorem exists_intw {p q r s : ℕ} {T0 : GrpData (p * r + q * s) (p * s + q * r
     (hT : ∀ g h x y, F.π (g, h) (Tm x y) = Tm (D.U.π g x) (D'.U.π h y))
     (Φ : Pol p q r s) (x₀ : D.U.H) (y₀ : D'.U.H) (h0 : inner ℂ (Tm x₀ y₀) (F.ι Φ) ≠ 0) :
     ∃ f : Pol p q r s →ₗ[ℂ] TensorProduct ℂ D.HK.V D'.HK.V, Intw D.HK D'.HK f ∧ f Φ ≠ 0 := by
-  obtain ⟨-, hd1, hd2⟩ := GlobalTheory.T.fock_derived_actions_tensor_members p q r s T0 T1 T2 F
+  obtain ⟨-, hd1, hd2⟩ := _root_.GlobalTheory.FockEmbExp.fock_derived p q r s T0 T1 T2 F
   have hK := _root_.GlobalTheory.FockKFin.kfin_fock p q r s T0 T1 T2 F (_root_.GlobalTheory.FockDegree.Om_Kset_homog p q r s T0 T1 T2 F)
   have h1 := fun y : D'.U.H => _root_.GlobalTheory.AdjDescent.adjoint_descends p q T1 D F.H (F.π.comp (MonoidHom.inl _ _))
     (fun g x => F.isom _ x) (Tm.flip y)
@@ -244,7 +244,7 @@ theorem exists_intw {p q r s : ℕ} {T0 : GrpData (p * r + q * s) (p * s + q * r
   choose φ hφ hφ' using h1
   choose ψ hψ hψ' using h2
   have hlie := (_root_.GlobalTheory.FockAlg.fock_lie_and_commute p q r s).2.1
-  obtain ⟨f, hf0, hf1, hf2⟩ := GlobalTheory.T.exists_linearMap_tensor_of_pairing _ _ _ _ _ D.ι D'.ι D.ι_inj D'.ι_inj φ ψ
+  obtain ⟨f, hf0, hf1, hf2⟩ := _root_.GlobalTheory.PairingTensor.exists_linearMap_tensor _ _ _ _ _ D.ι D'.ι D.ι_inj D'.ι_inj φ ψ
     (fun x y P => by rw [hφ, hψ]; rfl) (fun P => by
       obtain ⟨W, hW, hP, hst⟩ := ((_root_.GlobalTheory.FockPolGK.pol_locFin_weights p q r s).1 P).1
       obtain ⟨E, hE, hE'⟩ := _root_.GlobalTheory.KHomFinite.exists_finiteDimensional_forall_map_mem p q D.HK hA _ (fockAct1 p q r s) (fun Y Z _ _ => hlie Y Z) W hW hst
@@ -369,7 +369,7 @@ theorem general (X : ProvA) (h2 : admH2 X) (hD : DiscreteSeriesBlattner X) (h5 :
   refine ⟨fun MM f hf hne => ⟨?_, fun Φ hΦ => ⟨fun h0 => hne (keyU Φ hΦ _ f hf h0), fun f' hf' h => ?_⟩⟩,
     fun MM f hf hne => ⟨?_, fun Φ hΦ => ⟨fun h0 => hne (keyD Φ hΦ _ f hf h0), fun f' hf' h => ?_⟩⟩, ?_⟩
   · obtain ⟨u, hu, hfu, hcu⟩ := image_eq_tmul (a₁ := fockAct1 p q r s) (a₂ := fockAct2 p q r s) _ MM.M hr hv
-      (hc v) hΦ₀.2.1.2 hΦ₀.2.2.1.2 (GlobalTheory.T.fockModel_dualPair_casimir_apply p q r s Φ₀) f hf.1 hf.2
+      (hc v) hΦ₀.2.1.2 hΦ₀.2.2.1.2 (_root_.GlobalTheory.fock_casimir_apply p q r s Φ₀) f hf.1 hf.2
     have hu0 : u ≠ 0 := fun h0 => hne (keyU Φ₀ hΦ₀ _ f hf (by rw [hfu, h0, TensorProduct.tmul_zero]))
     obtain ⟨B, hB⟩ := _root_.GlobalTheory.DiscreteSeriesUnitary.exists_unitary r s _ (X.ds r s lam')
     have hU := _root_.GlobalTheory.LowestType.embeds_of_lowest_type h7 h8 r s lam' hp' hg' MM B u
@@ -383,7 +383,7 @@ theorem general (X : ProvA) (h2 : admH2 X) (hD : DiscreteSeriesBlattner X) (h5 :
     simpa [sub_eq_zero] using this
   · have hf1 := fun Z => comm_left (hf.1 Z)
     have hf2 := fun Z => comm_right (hf.2 Z)
-    have hcas := GlobalTheory.T.fockModel_dualPair_casimir_apply p q r s Φ₀
+    have hcas := _root_.GlobalTheory.fock_casimir_apply p q r s Φ₀
     obtain ⟨u, hu, hfu, hcu⟩ := image_eq_tmul (a₁ := fockAct2 p q r s) (a₂ := fockAct1 p q r s)
       (κ := -(((p + q : ℕ) : ℂ) * ((r + s : ℕ) : ℂ) * (((r + s : ℕ) : ℂ) - ((p + q : ℕ) : ℂ)) / 4))
       _ MM.M hr' hv' (hc' v') hΦ₀.2.2.1.2 hΦ₀.2.1.2 (by rw [hcas, neg_smul]; abel) _ hf2 hf1
@@ -407,9 +407,9 @@ theorem general (X : ProvA) (h2 : admH2 X) (hD : DiscreteSeriesBlattner X) (h5 :
     obtain ⟨f₀, hf₀, hne⟩ := exists_intw _ _ _ hA Tm hT Φ₀ x₀ y₀ h0
     refine ⟨f₀, hf₀, fun h => hne (by simp [h]), fun f hf => ?_⟩
     obtain ⟨u₀, hu₀, hfu₀, -⟩ := image_eq_tmul (a₁ := fockAct1 p q r s) (a₂ := fockAct2 p q r s) _ _ hr hv
-      (hc v) hΦ₀.2.1.2 hΦ₀.2.2.1.2 (GlobalTheory.T.fockModel_dualPair_casimir_apply p q r s Φ₀) f₀ hf₀.1 hf₀.2
+      (hc v) hΦ₀.2.1.2 hΦ₀.2.2.1.2 (_root_.GlobalTheory.fock_casimir_apply p q r s Φ₀) f₀ hf₀.1 hf₀.2
     obtain ⟨u, hu, hfu, -⟩ := image_eq_tmul (a₁ := fockAct1 p q r s) (a₂ := fockAct2 p q r s) _ _ hr hv
-      (hc v) hΦ₀.2.1.2 hΦ₀.2.2.1.2 (GlobalTheory.T.fockModel_dualPair_casimir_apply p q r s Φ₀) f hf.1 hf.2
+      (hc v) hΦ₀.2.1.2 hΦ₀.2.2.1.2 (_root_.GlobalTheory.fock_casimir_apply p q r s Φ₀) f hf.1 hf.2
     have hu0 : u₀ ≠ 0 := fun h => hne (by rw [hfu₀, h, TensorProduct.tmul_zero])
     obtain ⟨c, hcu⟩ := (finrank_eq_one_iff_of_nonzero' ⟨u₀, hu₀⟩
       (fun h => hu0 (congrArg Subtype.val h))).1 hr' ⟨u, hu⟩

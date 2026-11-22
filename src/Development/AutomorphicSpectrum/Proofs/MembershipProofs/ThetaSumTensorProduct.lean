@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.HilbertNinetyQuotientHomEqIff
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaSumAdmissibility
-import Development.AutomorphicSpectrum.Proofs.MembershipProofs.RemovableLogGrowthSingularityStatement
+import Development.AutomorphicSpectrum.Proofs.MembershipProofs.RemovableLogGrowthSingularity
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.SeesawThetaDualPair
 
 open Matrix NumberField IsDedekindDomain GlobalTheory.WeilM MeasureTheory
@@ -87,9 +87,9 @@ theorem theta_om_rational : ∀ (F : Type) [Field F] [NumberField F] [LocallyCom
   have : Invertible (2 : F) := invertibleOfNonzero two_ne_zero
   have key := split_of_eq F E c ξ α (β ⊕ β) (κ ⊕ κ) JA (dbl JB) ψ h1 h2 h3 hq hA (isHerm_dbl hB) _ ?_ dd
     (dblCoord d₀) ?_ χ β (diagCols β) _ ?_ omd hχ (isLagr_diagCols c JB) hSd hRd gd ⟨fromBlocks γ 0 0 1, ?_⟩
-    (boxFun Φ Φ₀) (GlobalTheory.T.theta_sum_tensor_product F κ κ Φ hΦ Φ₀ hΦ₀).1
-  · rw [hbox g gd hgd Φ hΦ Φ₀ hΦ₀, (GlobalTheory.T.theta_sum_tensor_product F κ κ _ (hS.pres g Φ hΦ) Φ₀ hΦ₀).2,
-      (GlobalTheory.T.theta_sum_tensor_product F κ κ Φ hΦ Φ₀ hΦ₀).2] at key
+    (boxFun Φ Φ₀) (_root_.GlobalTheory.CompanionTheory.ThetaBox.theta_box F κ κ Φ hΦ Φ₀ hΦ₀).1
+  · rw [hbox g gd hgd Φ hΦ Φ₀ hΦ₀, (_root_.GlobalTheory.CompanionTheory.ThetaBox.theta_box F κ κ _ (hS.pres g Φ hΦ) Φ₀ hΦ₀).2,
+      (_root_.GlobalTheory.CompanionTheory.ThetaBox.theta_box F κ κ Φ hΦ Φ₀ hΦ₀).2] at key
     exact mul_right_cancel₀ hne key
   · ext (i | i) (j | j) <;> simp [dbl, TensorProduct.tmul_neg]
   · intro x

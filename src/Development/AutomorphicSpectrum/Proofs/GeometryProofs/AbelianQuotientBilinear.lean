@@ -5,14 +5,14 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.QQuasiCompact
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SqMap
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FormalBilinearTermProductStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianQuotientLineBundleGaugeStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianQuotientGermPowerSeriesStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianQuotientLineBundleGauge
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianQuotientGermPowerSeries
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianQuotientDifferentialMatrixStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianQuotientGaugeTransform
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UnitTrivialOnBothAxesStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UnitTrivialOnBothAxes
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianQuotientGaugeUnit
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianQuotientGaugeRelationStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SubstitutionBilinearFormTransformStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SubstitutionBilinearFormTransform
 
 noncomputable section
 
@@ -27,18 +27,18 @@ namespace GlobalTheory.CompanionTheory.Ar.Flat.FrGauge
 theorem frame_gauge : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host E) [StarRing (𝓞 E)], (∀ a : 𝓞 E, star a = H.bar a) → ∀ (X : Scheme.{0}) (t : SAB H X) (k : Type) [Field k] [IsAlgClosed k] (p : ℕ) [Fact p.Prime] [CharP k p] (x : Sp k ⟶ X) (Q : AbQuot t x) (d d' : ℕ) (g : GermAt t x d) (gB : GermAt Q.tB (𝟙 (Sp k)) d'), ∀ P : Matrix (Fin d') (Fin d) k, Q.IsDiff g gB P → ∃ Z : Matrix (Fin d) (Fin d) k, ∀ a, bil (g.B.ad a) 1 1 + (rho g.B a).transpose * Z - Z * rho g.B (star a) = P.transpose * bil (gB.B.ad a) 1 1 * P := by
   intro E _ _ _ H _ hstar X t k _ _ p _ _ x Q d d' g gB P hP
   obtain ⟨w, hw⟩ := Q.bun
-  obtain ⟨Qs, hc, hQ⟩ := GlobalTheory.T.abelian_quotient_germ_power_series E H hstar X t k p x Q d d' g gB
+  obtain ⟨Qs, hc, hQ⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.FrGauge.ChartMap.main E H hstar X t k p x Q d d' g gB
   have hl := GlobalTheory.T.abelian_quotient_differential_matrix E H hstar X t k p x Q d d' g gB P hP Qs hc hQ
   obtain ⟨lam, hax, hlam⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.FrGauge.Lamex.exists_lam E H hstar X t k p x Q d d' g gB w hw Qs hc hQ
   refine ⟨bil lam 1 1, fun a => ?_⟩
   obtain ⟨wL, hwL, hrL⟩ := g.frame.ad a
   obtain ⟨wB, hwB, hrB⟩ := gB.frame.ad a
-  obtain ⟨u, hu⟩ := GlobalTheory.T.abelian_quotient_line_bundle_gauge E H hstar X t k p x Q d d' g gB w hw a wL wB hwL hwB
+  obtain ⟨u, hu⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.FrGauge.AdTr.adjunction_ratio E H hstar X t k p x Q d d' g gB w hw a wL wB hwL hwB
   obtain ⟨h0, h1⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.FrGauge.UAxis.unit_one_on_axes E H hstar X t k p x Q d d' g gB w hw Qs hc hQ a wL wB hwL hwB hrL hrB u hu
-  obtain rfl := GlobalTheory.T.unit_trivial_on_both_axes E H hstar X t k p x Q d g u h0 h1
+  obtain rfl := _root_.GlobalTheory.CompanionTheory.Ar.Flat.FrGauge.FibUnit.unit_eq_one_of_axes E H hstar X t k p x Q d g u h0 h1
   have hrel := GlobalTheory.T.abelian_quotient_gauge_relation E H hstar X t k p x Q d d' g gB w hw Qs hc hQ lam hlam a wL wB hwL hwB hrL hrB hu
   rw [← hstar a] at hrel
-  obtain ⟨hA, hbA⟩ := GlobalTheory.T.substitution_bilinear_form_transform k d d' Qs (gB.B.ad a) hc ⟨gB.B.adjoint_zero_fst a, gB.B.adjoint_zero_snd a⟩
+  obtain ⟨hA, hbA⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.FrGauge.BilQ.bil_axOne_subQ k d d' Qs (gB.B.ad a) hc ⟨gB.B.adjoint_zero_fst a, gB.B.adjoint_zero_snd a⟩
   have hadx : AxOne (g.B.ad a) := ⟨g.B.adjoint_zero_fst a, g.B.adjoint_zero_snd a⟩
   have hcs : ∀ (b : 𝓞 E) (i : Fin d), MvPowerSeries.constantCoeff (g.B.A.act b i) = 0 := fun b i => g.B.A.const b i
   have hp0 : ∀ i : Fin d, MvPowerSeries.constantCoeff (pt k (n := 1) d 0 i) = 0 := fun i => by simp [pt]

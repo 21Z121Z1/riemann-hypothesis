@@ -29,7 +29,7 @@ theorem UpperTheory.Zero.LLC.extInj :
     intro l p hp
     obtain ⟨Δ, -, rfl⟩ := List.mem_map.mp hp
     exact LExtInj.isIrrWD_lpTw (hr.irr _ (Segment.isCusp_first _)) _
-  have hperm := GlobalTheory.T.perm_of_weilDeligne_special_decomposition_eq E Ω A w h (mx.toList.map f) (my.toList.map f) (hirr _) (hirr _)
+  have hperm := _root_.GlobalTheory.WeilDeligne.SpUnique.perm_of_sumList_lpChar_lpSp_eq E Ω A w h (mx.toList.map f) (my.toList.map f) (hirr _) (hirr _)
     (by rw [List.map_map, List.map_map, hcomp]; exact e)
   have key : ∀ Δ Δ' : Segment (HeightOneSpectrum.adicCompletion E w),
       UpperTheory.Zero.LLC.GoodCusp Δ'.first → f Δ = f Δ' → Δ = Δ' := by

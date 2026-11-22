@@ -11,7 +11,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSymLam
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFiniteMulByNatAbelianVariety
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AmpleTrivialOfSamePolarization
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDescentDatumCompatibleOfLineBundleIso
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDescentCocycleDefectOfCompatibleStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDescentCocycleDefectOfCompatible
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZbLeftWhiskerRight
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLineBundleDescentFiniteFlat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DescCocycle
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SiegelObjectPullbackExistsAndPrincipal
@@ -68,7 +69,7 @@ theorem exists_descent_two {K : Type} [Field K] [IsAlgClosed K] (A : Over (Sp K)
   have := hA.smooth
   have : IsLocallyNoetherian A.left := LocallyOfFiniteType.isLocallyNoetherian A.hom
   obtain ⟨φ, hφ⟩ := GlobalTheory.LBDescent.descCompat_of_lbIso _ M hM H
-  obtain ⟨D, hD⟩ := GlobalTheory.T.exists_descentCocycleDefect_of_compatible _ M φ hM hφ
+  obtain ⟨D, hD⟩ := _root_.GlobalTheory.DescDefect.defect_exists _ M φ hM hφ
   obtain ⟨u, hu⟩ := _root_.GlobalTheory.TwoTors.killsSq_of_triCocycle K A hA hf D (_root_.GlobalTheory.PolRoot.triCocycle_of_defect _ _ _ M hM φ D hD)
   obtain ⟨M₂, ψ, hM₂, e, hc, hco⟩ := _root_.GlobalTheory.SqDatum.exists_sq_descent _ _ _ M hM φ D u hφ hD hu
   obtain ⟨L, hL, e'⟩ := _root_.GlobalTheory.LBDescent.exists_descent _ _ ((𝟙 A) ^ 2 : A ⟶ A).left M₂ hM₂ ψ hc hco

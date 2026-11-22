@@ -5,7 +5,7 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IntegralClosureHeightEqOneOfLiesOver
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatLineGenerator
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.JoinModelPointsProject
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootModelFlagCompareStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootModelFlagCompare
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplierLine
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptInteriorFlag
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptFiniteExtension
@@ -16,10 +16,15 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 import Development.AbelianVarietyTheory.PublishedTheorems.SemiabelianTori.GeometricallyConnectedSplitTorusAff
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCompCompareFlagStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCompCompareFlag
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DomBy
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlagLabelBasesExist
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.NotIsGenericFlagSelf
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GlueApplyOfNotInFibre
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeSpanProjectionBoundStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValuationCoordsComplexPointStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SubringCoordsComplexValueStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SubringCoordsComplexValue
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HodgeIPIffHodgeFormConj
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeComponentBaseChangeCompat
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeComponentLatticeMapCompat
@@ -104,7 +109,7 @@ theorem norm_cmp (𝔐 : HodgeCpt Y S y) (𝔐₀ : HodgeCpt Y S₀ y₀) (Fl : 
     ∃ a : W, IsUnit a ∧ (a : Ω) * t = i t₀ ∧ ν₀ = ‖φ a‖ * ν := by
   classical
   have hβ : Function.Injective (algebraMap (𝓞 c.F) c.F) := RingOfIntegers.coe_injective
-  obtain ⟨jj, hext, hspan, hpt, hlat⟩ := GlobalTheory.T.hodge_comp_compare_flag E H D l Xo c Y S S₀ Ω Ω₀ K K₀ J J₀ y y₀ 𝔐 𝔐₀ Fl₀ i hξ
+  obtain ⟨jj, hext, hspan, hpt, hlat⟩ := _root_.GlobalTheory.CompanionTheory.Ar.OrVert.LieCmp.lie_cmp E H D l Xo c Y S S₀ Ω Ω₀ K K₀ J J₀ y y₀ 𝔐 𝔐₀ Fl₀ i hξ
   obtain ⟨hz, hval⟩ := val_ext E H D l Xo c Y S S₀ Ω Ω₀ K K₀ J J₀ y y₀ 𝔐 𝔐₀ i jj W φ z₁ z₂ hξ hpt hW h₁ h₂
   have hq : genPt 𝔐.ξ ⤳ centre z₁ := 𝔐.all _
   have hq₀ : genPt 𝔐₀.ξ ⤳ centre z₂ := 𝔐₀.all _
@@ -236,9 +241,9 @@ theorem sing_agree : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H :
     congr 1
     exact (FlagPull.spMap_comp _ _)
   obtain ⟨W, φ, hW, hr, hs⟩ := GlobalTheory.T.valuation_coords_complex_point _ _ _ (Ht.joinOf M R i) w hw
-  obtain h₁ := GlobalTheory.T.subring_coords_complex_value o.𝔐.X M.Ω M.Ω (RingHom.id _) o.𝔐.ξ M.K M.ι M.y z₁ _ W φ o.𝔐.tie hc₁ hW
+  obtain h₁ := _root_.GlobalTheory.CompanionTheory.Ar.RegVal.contains_localRing o.𝔐.X M.Ω M.Ω (RingHom.id _) o.𝔐.ξ M.K M.ι M.y z₁ _ W φ o.𝔐.tie hc₁ hW
     (fun k c' e hc => hr (Sum.inl k) c' e hc)
-  obtain h₂ := GlobalTheory.T.subring_coords_complex_value o₀.𝔐.X R.Ω M.Ω i o₀.𝔐.ξ R.K R.ι R.y z₂ _ W φ o₀.𝔐.tie hc₂ hW
+  obtain h₂ := _root_.GlobalTheory.CompanionTheory.Ar.RegVal.contains_localRing o₀.𝔐.X R.Ω M.Ω i o₀.𝔐.ξ R.K R.ι R.y z₂ _ W φ o₀.𝔐.tie hc₂ hW
     (fun k c' e hc => by
       obtain ⟨h, e'⟩ := hr (Sum.inr k) c' e hc
       have e1 : i (R.y ⟨k, e⟩ / R.y ⟨k, c'⟩) = Ht.joinOf M R i ⟨Sum.inr k, e⟩ / Ht.joinOf M R i ⟨Sum.inr k, c'⟩ :=

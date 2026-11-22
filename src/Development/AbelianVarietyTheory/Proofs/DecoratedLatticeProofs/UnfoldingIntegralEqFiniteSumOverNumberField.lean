@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PhiTopAgree
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ResiduesOfCompletionAtPrimeWithUniformizerStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ResiduesOfCompletionAtPrimeWithUniformizer
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntegralPeriodicCompactSupportEqFiniteSum
 open NumberField IsDedekindDomain MeasureTheory ValuativeRel Matrix Formalism.BasicNotions Formalism.HermitianLatticesTheory Formalism.L2.DIV Formalism.L2.Col GlobalTheory.SplitWeil GlobalTheory.RootEx GlobalTheory.StepData GlobalTheory.SymChain GlobalTheory.SymBridge
 
@@ -262,7 +262,7 @@ theorem sumAgree : SumAgree := by
   classical
   have hq : ι (q : E) = (ϖ : k) := hC.unif.symm
   have hq0 : (q : E) ≠ 0 := fun h0 => ϖ.ne_zero (by rw [← hq, h0, map_zero])
-  obtain ⟨-, -, -, -, -, -, hres, hrep⟩ := GlobalTheory.T.residues_of_completionAtPrimeWithUniformizer E k P q ι ϖ hC hU
+  obtain ⟨-, -, -, -, -, -, hres, hrep⟩ := _root_.GlobalTheory.SymBridge.ComplRes.residues E k P q ι ϖ hC hU
   have hv : valuation k (ϖ : k) < 1 := (hU ϖ).2 le_rfl
   have hψ1 : ∀ b : k, valuation k b ≤ 1 → ψ b = 1 := fun b hb =>
     (hψ 1).2 le_rfl b (by simpa using hb)

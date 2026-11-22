@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HomLattice
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WittCoreEmbeddingPreservesSupportedUnitarySubgro
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.EventuallyIncAMulMemIntAt
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MemRangeOfOneTmulMem
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IwasawaDecompositionSelfDualWittSplitAtPlaceStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IwasawaDecompositionSelfDualWittSplitAtPlace
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualLatticeStabilizersFixWeilVacuumOnPlaceSe
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsSumFrame
 
@@ -590,7 +590,7 @@ theorem supportShift : ∀ D : D7, GlobalTheory.FinPl.SupportShift D := by
       rw [← h𝔉.Heisenberg₂.core f hθ (2 • w) hx, map_nsmul, map_nsmul, h2 _ (hmem w hw)]
     · rw [← h𝔉.Heisenberg₂.core f hθ w (LatMem.latO_mxAt hw), hh e he _ (hmem w hw) (VacFlat.wittExt_wittInc_isHalf J.d B.d hwe)]
   · obtain ⟨n, hnN, hnG, t, ht, htG, γ, hγ, κ, hκ, rfl⟩ :=
-      GlobalTheory.T.iwasawa_decomposition_selfDual_wittSplit_at_place D B.V B.V₀ σ B.d LW LW₀ v hA.tame hA.sdW hA.sdW₀ hA.monoW h hh
+      _root_.GlobalTheory.IwaPlace.iwasawa_at_place D B.V B.V₀ σ B.d LW LW₀ v hA.tame hA.sdW hA.sdW₀ hA.monoW h hh
     have hmul : s.om (1, n * B.d.levi t * B.d.emb0 γ * κ) f =
         s.om (1, n) (s.om (1, B.d.levi t * B.d.emb0 γ) (s.om (1, κ) f)) := by
       have : ((1 : GA D J.W), n * B.d.levi t * B.d.emb0 γ * κ) = (1, n) * (1, B.d.levi t * B.d.emb0 γ) * (1, κ) := by

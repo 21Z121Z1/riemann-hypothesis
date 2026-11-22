@@ -13,8 +13,8 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IdempotentBloc
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsHeckeSpanCorrectionDistinctEigenvaluesStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RankIdempotentBlockCharPolyOfProjection
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RankEqOfActsThroughFirstBlockStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MatrixRankMapFieldStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BlockDecompositionBaseChangeStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MatrixRankMapField
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BlockDecompositionBaseChange
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsInjectiveRootsOfNcardRootSetStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsDvrExtensionForMonicFamily
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IdempotentBlockRootFactorsRankOneDomainStatement
@@ -351,7 +351,7 @@ theorem consExist : ConsExist N i := by
       intro k M
       ext a b
       exact (hφ _).symm
-    obtain ⟨e', he'⟩ := GlobalTheory.T.block_mulVec_decomposition_map_of_decomposition φ e
+    obtain ⟨e', he'⟩ := _root_.GlobalTheory.blockDecomposition_baseChange φ e
     have hTT : ∀ f ∈ TA, (fun x => algebraMap A (N.O i) (f x)) ∈ N.T i := by
       intro f hf
       rw [← Subalgebra.mem_toSubmodule, hTO]
@@ -369,7 +369,7 @@ theorem consExist : ConsExist N i := by
       (by rw [hρ π hπ]; exact span_top_map (span_top (hS.2.2.2.2.2.2.2 π hπ)))
       ⟨inRing_map hTT hB, inRing_map hTT h1, hmul hBB, hmul h11,
         (hmul hB1).trans (by funext x; simp), (hmul h1B).trans (by funext x; simp),
-        fun x => by rw [hφM, GlobalTheory.T.rank_map_ringHom, hrB], fun x => by rw [hφM, GlobalTheory.T.rank_map_ringHom, hr1]⟩
+        fun x => by rw [hφM, _root_.GlobalTheory.matrix_rank_map_field, hrB], fun x => by rw [hφM, _root_.GlobalTheory.matrix_rank_map_field, hr1]⟩
       e' (by
         intro g u
         rw [hρ π hπ, overK_apply, overK_apply]

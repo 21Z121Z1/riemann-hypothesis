@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsBaryStageS
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOfToRealRel
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsSmoothAdmissibleFanOfCellMultOneCMField
 import CompanionTheory.SpectralGeometry.CountingDefinitions.VoronoiMeans.VorFunEvalEqFineMean
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BalancedFormCellMultiplicityPosStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BalancedFormCellMultiplicityPos
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLinFormCutFaceOfCellInCone
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLinFormCutFaceOfFaceOfCone
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqSubfamilyOfFaceSimplicialConePrimitive
@@ -51,7 +51,7 @@ theorem starOld_cell_mult_le : ∀ (O : Type) [CommRing O] [IsDedekindDomain O] 
       rintro _ ⟨j, rfl⟩
       exact ⟨s j, Subtype.ext (hs j).symm⟩
     have hdvd := _root_.GlobalTheory.natCard_torsion_quot_span_dvd_of_range_subset (balForms bar X) _ _ hliB hrange
-    have hpos := GlobalTheory.T.balancedFormCellMultiplicity_pos bar (fun i => (⟨δ₁ i, hδ₁.mem i⟩ : balForms bar X))
+    have hpos := _root_.GlobalTheory.PolFan.cellMult_pos bar (fun i => (⟨δ₁ i, hδ₁.mem i⟩ : balForms bar X))
     have hle := SmoothEnd.cellMult_le_maxMult hX hδ₁ hδ₁li hδ₁p
     have hle' : cellMult bar (fun i => (⟨δ₁ i, hδ₁.mem i⟩ : balForms bar X)) ≤ M := by
       exact_mod_cast hle.trans hM

@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HermFormSwapOfIsHerm
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsAmpleFramesIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnimodularOverlatticeRiemannForm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsShiftSemicharactersNestedLattices
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSectionOfAppellHumbertThetaFunctionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSectionOfAppellHumbertThetaFunction
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaFourthPowerUnderIsogeny
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAffineHomOfLiftTranslationFiniteIndexLattices
 
@@ -62,7 +62,7 @@ theorem relAmple_of_isAH : ∀ (g : ℕ) (A : Over (Sp ℂ)) [GrpObj A], IsAbeli
   have hNΛ' : ∀ x ∈ uB.Λ, N • x ∈ u.Λ := hΛB ▸ hNΛ
   obtain ⟨a, ha⟩ := _root_.GlobalTheory.SemicharShift.exists_shift_of_semichar g u.Λ uB.Λ Hm χ χB hle' u.discrete u.full hAH.1 hAH.2.1 hAH.2.2.1 hAHB.2.2.1
     (GlobalTheory.LatticeHom.semicharacter_add u hM hAH) (GlobalTheory.LatticeHom.semicharacter_add uB P.isLB hAHB)
-  obtain ⟨ψ, hψ, hψex, hcov⟩ := _root_.GlobalTheory.ThetaShift.exists_morphism_affine_cover g A hA M u Hm χ hM hAH (fun θ => GlobalTheory.T.exists_section_of_appellHumbert_thetaFunction g A hA M u Hm χ hM hAH 4 θ)
+  obtain ⟨ψ, hψ, hψex, hcov⟩ := _root_.GlobalTheory.ThetaShift.exists_morphism_affine_cover g A hA M u Hm χ hM hAH (fun θ => _root_.GlobalTheory.ThetaGAGA.exists_isFnPow g A hA M u Hm χ hM hAH 4 θ)
     P uB χB hle' a hg hAHB ha
   have hψa : IsAffineHom ψ := _root_.GlobalTheory.LiftAffine.isAffineHom_of_lift g A hA P.A P.isAb M P.L u uB a N hN hle' hNΛ' ψ hψ hψex
   have : IsProper A.hom := hA.proper

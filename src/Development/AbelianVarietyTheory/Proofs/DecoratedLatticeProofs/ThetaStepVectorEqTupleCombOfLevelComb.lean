@@ -22,8 +22,8 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.NeConjOfId
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdAtToEAfOfIsIdemSum
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrameMatrixReductionEqOfHalfIdempotentSubset
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsPlaceModelProdHalf
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StepDatumEqMulHalvesStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SupportedTranslatesCombinationCommutesSchrodingeStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StepDatumEqMulHalves
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SupportedTranslatesCombinationCommutesSchrodinge
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.L2.DIV Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Lev Formalism.IndefR.Mult Formalism.IndefR.Datum MeasureTheory IsDedekindDomain NumberField Matrix
 open GlobalTheory.MixModel GlobalTheory.MixPer GlobalTheory.Unf GlobalTheory.SeeSaw GlobalTheory.StepData GlobalTheory.SymChain GlobalTheory.LocMod GlobalTheory.MiS GlobalTheory.MiTop GlobalTheory.Fam ValuativeRel
@@ -100,7 +100,7 @@ theorem stepVec_of_prod : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (θ : In
   rw [hbase, ← LinearMap.comp_apply, ← hvQ] at hL1
   have hd : ∀ PP ∈ Pg, ¬ (fun p => ∃ PP ∈ Q, p = PP.under (𝓞 D.host.F)) (PP.under (𝓞 D.host.F)) :=
     fun PP hP ⟨PP', hP', h⟩ => hunder PP hP PP' hP' h
-  have hL2 := GlobalTheory.T.supportedTranslatesCombination_commutes_schrodinger D ψ hvac.1 S T _ eG Pg _ heG hd dQ hdQ f₀ _ (combL ψ S T dQ ∘ₗ
+  have hL2 := _root_.GlobalTheory.PlaceModelComb.main D ψ hvac.1 S T _ eG Pg _ heG hd dQ hdQ f₀ _ (combL ψ S T dQ ∘ₗ
     (Tm ∘ₗ restrictHalf eG eQ (latO S T (ΛS : Set (Fin S.rank → D.host.E)) (ΛT : Set (Fin T.rank → D.host.E)) fun _ => True)))
     hTG fun Φ => by rw [LinearMap.comp_apply, combL_apply]
   have hu := placeModel_eq hvac.1 hS hT hGG (infPart_idemSum heG) hL1 hL2 hsbG
@@ -109,7 +109,7 @@ theorem stepVec_of_prod : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (θ : In
   beta_reduce
   congr 1
   funext x
-  exact (GlobalTheory.T.stepDatum_eq_mul_halves D S T βS βT r t j hr Pg Q P χ χj ξ eG eQ heG heQ hGQ x).symm
+  exact (_root_.GlobalTheory.DatumHalves.stepDatum_eq_mul D S T βS βT r t j hr Pg Q P χ χj ξ eG eQ heG heQ hGQ x).symm
 
 end GlobalTheory.HalfProd
 

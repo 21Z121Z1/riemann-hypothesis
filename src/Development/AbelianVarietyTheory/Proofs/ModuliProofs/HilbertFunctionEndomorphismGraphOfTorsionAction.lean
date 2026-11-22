@@ -6,10 +6,10 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverIffIsProperAndExistsIsAmpleLB
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ClsLinCombSingle
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SectionsGrowthBasicPropertiesAbelianVarietyStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SectionsGrowthBasicPropertiesAbelianVariety
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PrincipalPolarisationVolumeFormSymmetricAmple
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsPolarisationFormOfLineBundle
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SectionsCountSqEqDetFormOnTorsionStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SectionsCountSqEqDetFormOnTorsion
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.WeilPairingTorsionBasisSymplecticStatement
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
@@ -195,7 +195,7 @@ theorem hilbert_graph_of_torsion : Out.Laws → Out.Laws2 → ∀ (g N κ l j : 
   obtain ⟨s, hs⟩ := _root_.GlobalTheory.BundleForm.exists_formIs hL1 hL2 K P M hM
   have hk : ((l ^ j : ℕ) : K) ≠ 0 := by push_cast; exact pow_ne_zero _ hl0
   have hSs : ActsBy pt s S := hS K P pt ζ f s hk hζ hT hW hf hAct hs
-  obtain ⟨δ, hVol, hH0, hdet⟩ := GlobalTheory.T.sections_count_sq_eq_det_form_on_torsion hL1 hL2 K P M s l hl hl0 hM hRelM hSym hs
+  obtain ⟨δ, hVol, hH0, hdet⟩ := _root_.GlobalTheory.SectionCount.sq_vol_eq_det hL1 hL2 K P M s l hl hl0 hM hRelM hSym hs
   have hδ2 : (δ : ZMod (l ^ j)) ^ 2 = S.det := hdet j pt S hT hSs
 
   have hc : 1 ≤ N * (1 + κ) := Nat.one_le_iff_ne_zero.2 (Nat.mul_ne_zero (by omega) (by omega))
@@ -211,13 +211,13 @@ theorem hilbert_graph_of_torsion : Out.Laws → Out.Laws2 → ∀ (g N κ l j : 
   have hMn : (lbPow M n).IsLB := LB.isLB_linComb hM _ _
   have V1 : Vol P.A.hom P.L P.g 1 := (_root_.GlobalTheory.principal_polarisation_numerics hL1 hL2 K P).1
   have V2 : Vol P.A.hom (lbPow P.L (N * (1 + κ))) P.g (((N * (1 + κ) : ℕ) : ℝ) ^ P.g * 1) :=
-    (GlobalTheory.T.sectionsGrowth_basic_properties_abelianVariety K P P.L P.g hPL).2.2.2.1 _ 1 hc V1
+    (_root_.GlobalTheory.VolBasic.vol_basic K P P.L P.g hPL).2.2.2.1 _ 1 hc V1
   have V3 : Vol P.A.hom (lbPow (lbPow P.L (N * (1 + κ))) n) P.g
       ((n : ℝ) ^ P.g * (((N * (1 + κ) : ℕ) : ℝ) ^ P.g * 1)) :=
-    (GlobalTheory.T.sectionsGrowth_basic_properties_abelianVariety K P _ P.g hLc).2.2.2.1 n _ hn V2
+    (_root_.GlobalTheory.VolBasic.vol_basic K P _ P.g hLc).2.2.2.1 n _ hn V2
   have V4 : Vol P.A.hom (lbPow M n) P.g ((n : ℝ) ^ P.g * (δ : ℝ)) :=
-    (GlobalTheory.T.sectionsGrowth_basic_properties_abelianVariety K P M P.g hM).2.2.2.1 n _ hn hVol
-  have hle := ((GlobalTheory.T.sectionsGrowth_basic_properties_abelianVariety K P (lbPow M n) P.g hMn).2.2.2.2.2 _ t hLcn ht).2 _ _ V4 V3
+    (_root_.GlobalTheory.VolBasic.vol_basic K P M P.g hM).2.2.2.1 n _ hn hVol
+  have hle := ((_root_.GlobalTheory.VolBasic.vol_basic K P (lbPow M n) P.g hMn).2.2.2.2.2 _ t hLcn ht).2 _ _ V4 V3
   have hnpos : (0 : ℝ) < (n : ℝ) ^ P.g := pow_pos (by exact_mod_cast hn) _
   have hδB : δ ≤ (N * (1 + κ)) ^ P.g := by
     have h1 : (δ : ℝ) ≤ ((N * (1 + κ) : ℕ) : ℝ) ^ P.g := by

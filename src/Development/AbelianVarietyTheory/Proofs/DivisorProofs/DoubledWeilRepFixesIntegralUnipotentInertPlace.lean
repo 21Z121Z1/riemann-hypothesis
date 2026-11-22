@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMemKAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FromBlocksMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledWeilRepFixesVacuumTensorSiegelParabolicIn
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledWeilInertPlaceVacuumEigenfunctionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledWeilInertPlaceVacuumEigenfunction
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralUnipotentRadicalConjToSquareInertPlace
 
 open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.WeilM GlobalTheory.AdelicU GlobalTheory.LFun GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels
@@ -23,7 +23,7 @@ theorem nab_fix : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberFi
       GlobalTheory.InertDbl.dblFun (tens (evFin F v) (G.M'.vac v) R) := by
   intro F E _ _ _ _ _ σ B a a' G X om om' hTr v w hin hT dd omd hdc hws R hR0 hRv n hn
   set Φ := GlobalTheory.InertDbl.dblFun (tens (evFin F v) (G.M'.vac v) R) with hΦdef
-  obtain ⟨c, hc⟩ := GlobalTheory.T.doubledWeil_inert_place_vacuum_eigenfunction F E σ B a a' G X om om' hTr v w hin hT dd omd hdc hws R hR0 hRv n hn.1
+  obtain ⟨c, hc⟩ := _root_.GlobalTheory.DblVacLine.dblFun_eigen F E σ B a a' G X om om' hTr v w hin hT dd omd hdc hws R hR0 hRv n hn.1
   obtain ⟨s, hs, hsn⟩ := _root_.GlobalTheory.InertConjSq.conj_sq F E σ B hTr.base (a + a') G.W v w hin n hn
   have hs1 : omd s Φ = Φ := _root_.GlobalTheory.InertDblPar.parD_fix F E σ B a a' G X om om' hTr v w hin hT dd omd hdc hws R hR0 hRv s hs
   have hs2 : omd s⁻¹ Φ = Φ := by

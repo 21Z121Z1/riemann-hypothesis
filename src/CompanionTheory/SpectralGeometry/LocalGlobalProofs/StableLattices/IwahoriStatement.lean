@@ -2,12 +2,12 @@ import Mathlib
 import CompanionTheory.RealGroups.UnitaryAdmissibility.ArchimedeanUnitaryDual.StSandwich
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.IsCongIdealTwoTorsion
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.IsPiecesPiece
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.IwahoriUpperLowerFactorizationStatement
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.AntiInvolutionSwapsUpperLowerStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.IwahoriUpperLowerFactorization
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.AntiInvolutionSwapsUpperLower
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.TorusConjugationPreservesCongruenceStatement
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.HermitianAdjointExists
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CongruenceEndomorphismInverseExistsStatement
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.UpperTriangularInverseIsUpperStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CongruenceEndomorphismInverseExists
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.UpperTriangularInverseIsUpper
 
 open CompanionTheory.Rg.FlB
 
@@ -19,7 +19,7 @@ theorem isCongIdeal_congJ {L V : Type} [NontriviallyNormedField L] [IsUltrametri
     [AddCommGroup V] [Module L V] [FiniteDimensional L V] {Λ : AddSubgroup V} (hΛ : IsLat L Λ)
     {π : L} (hπ : ‖π‖ < 1) {ι : Type} (P : ι → Module.End L V)
     (hP : ∀ i, ∀ x ∈ Λ, P i x ∈ Λ) : IsCongIdeal (congJ Λ π) P := by
-  refine ⟨?_, ?_, ?_, GlobalTheory.T.congruence_endomorphism_inverse_exists Λ hΛ π hπ⟩
+  refine ⟨?_, ?_, ?_, _root_.GlobalTheory.CompanionTheory.Iwahori.CongUnit.main Λ hΛ π hπ⟩
   · intro x hx y hy v hv
     obtain ⟨z, hz, e1⟩ := hy v hv
     obtain ⟨w, hw, e2⟩ := hx z hz
@@ -62,7 +62,7 @@ theorem stIwahori : StIwahori := by
   have hk1 : (k.toLinearMap : Module.End L V) - 1 ∈ congJ Λ π := fun x hx => by
     obtain ⟨y, hy, e1⟩ := hc x hx
     exact ⟨y, hy, by simpa using e1⟩
-  obtain ⟨a, b, ha, hb, hup, hlo, hab⟩ := GlobalTheory.T.iwahori_upper_lower_factorization wt wt_injective P hP _ hJ _ hk1
+  obtain ⟨a, b, ha, hb, hup, hlo, hab⟩ := _root_.GlobalTheory.CompanionTheory.Iwahori.Gauss.block_gauss wt wt_injective P hP _ hJ _ hk1
 
   obtain ⟨ya, hya, ia1, ia2⟩ := hJ.inv _ ha
   obtain ⟨yb, hyb, ib1, ib2⟩ := hJ.inv _ hb
@@ -79,10 +79,10 @@ theorem stIwahori : StIwahori := by
     obtain ⟨z, rfl⟩ := k.surjective y
     simp [Module.End.mul_apply, hkk z]
   rw [hab] at hk2 hk3
-  obtain ⟨ua, ub⟩ := GlobalTheory.T.unitary_factors_of_unitary_upper_mul_lowerUni wt P hP rev rev_rev
+  obtain ⟨ua, ub⟩ := _root_.GlobalTheory.CompanionTheory.Iwahori.Unitary.st_mul_self_of_factor wt P hP rev rev_rev
     (fun i j hij => by have := wt_rev i; have := wt_rev j; omega) wt_injective st st_mul st_one st_zero st_P
-    (fun a a' h1 h2 h3 => GlobalTheory.T.upper_triangular_inverse_is_upper wt P hP a a' h1 h2 h3)
-    (fun a a' h1 h2 h3 => (isUpper_rev_iff P a').1 (GlobalTheory.T.upper_triangular_inverse_is_upper _ P hP a a' h1 h2 ((isUpper_rev_iff P a).2 h3)))
+    (fun a a' h1 h2 h3 => _root_.GlobalTheory.CompanionTheory.Iwahori.UpInv.isUpper_inv wt P hP a a' h1 h2 h3)
+    (fun a a' h1 h2 h3 => (isUpper_rev_iff P a').1 (_root_.GlobalTheory.CompanionTheory.Iwahori.UpInv.isUpper_inv _ P hP a a' h1 h2 ((isUpper_rev_iff P a).2 h3)))
     a (1 + ya) b (1 + yb) ia1 ia2 ib1 ib2 hup hlo hk2 hk3
   let A : V ≃ₗ[L] V := LinearEquiv.ofLinear a (1 + ya) ia1 ia2
   let B : V ≃ₗ[L] V := LinearEquiv.ofLinear b (1 + yb) ib1 ib2

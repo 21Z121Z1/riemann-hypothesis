@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFourierStable
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzClosureStableLinearFormFourier
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemOfClosedSubmoduleGaussianConvolution
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemAllGaussianWidthsOfFourierStableSchwartz
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemClosureWideGaussianMulSchwartzStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemClosureWideGaussianMulSchwartz
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NarrowGaussConvolutionDense
 open FourierTransform MeasureTheory Filter Topology
 
@@ -45,7 +45,7 @@ theorem dense_of_stdGaussian_mem : ∀ (E : Type) [NormedAddCommGroup E] [InnerP
     exact closure_minimal hsub hcl (_root_.GlobalTheory.narrowGauss_convolution_dense E f)
   have hall : ∀ h : SchwartzMap E ℂ, h ∈ M := by
     intro h
-    exact closure_minimal (fun f hf => key h f hf) hcl (GlobalTheory.T.mem_closure_wideGaussian_mul_schwartz E h)
+    exact closure_minimal (fun f hf => key h f hf) hcl (_root_.GlobalTheory.GaussCutoff.mem_closure_gauss_mul E h)
   have htop : N.topologicalClosure = ⊤ := by
     rw [eq_top_iff]
     intro h _

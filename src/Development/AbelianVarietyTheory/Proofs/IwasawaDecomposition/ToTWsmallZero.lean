@@ -8,7 +8,10 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsOpenKe
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousCoordSymm
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsOrientedWeilDatumOfAdelicWeilRepTheta
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnitaryOnTheta
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdjoinGelfandInvariantsDualPairEqStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdjoinGelfandInvariantsDualPairEq
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsQuadOfPlane
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.PolarConjTranspose
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.CommuteGelfandInvariantMatrixUnitsOfGlRel
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GlRelOfCanonicalCommutationRelationsStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemSmoothFunctionsOfClosedRightDerivatives
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicHeightGrowthOfCosetGrowthUnitaryPair
@@ -17,8 +20,8 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GelfandInvar
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ThetaKernelLiftConvergesContinuousGrowthDeriv
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsOpenLevelFixingThetaFunction
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KernelLiftGelfandInvariantFiniteOfFiniteStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeilRepThetaFunctionPolynomialGrowthRealPointsStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ThetaKernelLieActionThroughWeylAlgebraStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeilRepThetaFunctionPolynomialGrowthRealPoints
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ThetaKernelLieActionThroughWeylAlgebra
 
 noncomputable section
 
@@ -57,7 +60,7 @@ theorem IsKerSys.lift (hP : GlobalTheory.Published.CuspRapidDecay) (hθ : IsInfF
     · rintro _ ⟨f, rfl⟩ τ X hX
       obtain ⟨f', e⟩ := hd f τ X hX
       exact ⟨_, ⟨f', rfl⟩, e⟩
-  · obtain ⟨K, hK⟩ := GlobalTheory.T.unitaryAdelicHeight_coset_le_normInf_pow D θ W
+  · obtain ⟨K, hK⟩ := _root_.GlobalTheory.SmoothForms.HeightCoset.height_le_normInf_pow D θ W
     refine ⟨K * N, fun l hl x => ?_⟩
     have hw : ∃ f', l.foldr (fun p φ => Rder θ W p.1 p.2 φ) (L f) = L f' := by
       induction l with
@@ -104,7 +107,7 @@ theorem isKerSys_thKer (hθ : IsInfFam θ) {ψ : AddChar (AF D.host.F) ℂ} (hψ
     have e' : om (g * k, h * k') = om (g, h) * om (k, k') := by rw [← map_mul]; rfl
     change om (g * k, h * k') f.1 0 = om (g, h) f.1 0
     rw [e', Module.End.mul_apply, e k h1 h2 k' h3 h4]
-  obtain ⟨x, d, hx⟩ := GlobalTheory.T.thetaKernel_lieAction_through_weylAlgebra D ψ hψ S T om hw hc θ hθ
+  obtain ⟨x, d, hx⟩ := _root_.GlobalTheory.Mem.Lift.WeylAction.weyl_action D ψ hψ S T om hw hc θ hθ
   have derV : ∀ τ, ∀ X ∈ lieAt S τ, ∀ f, ∃ f', ∀ g h,
       HasDerivAt (fun t : ℝ => thKer ψ S T om f (g * oneP θ S τ X t) h) (thKer ψ S T om f' g h) 0 :=
     fun τ X hX f => ((hx τ).2.2 X hX).elim fun _ e => ⟨_, e f⟩
@@ -112,7 +115,7 @@ theorem isKerSys_thKer (hθ : IsInfFam θ) {ψ : AddChar (AF D.host.F) ℂ} (hψ
       HasDerivAt (fun t : ℝ => thKer ψ S T om f g (h * oneP θ T τ X t)) (thKer ψ S T om f' g h) 0 :=
     fun τ X hX f => ((hx τ).2.1 X hX).elim fun _ e => ⟨_, e f⟩
   refine ⟨cont, left, level, ?_, derV, derW, fun τ => ?_⟩
-  · obtain ⟨N, hN⟩ := GlobalTheory.T.weilRep_thetaFunction_polynomialGrowth_realPoints D ψ hψ S T om hw θ hθ
+  · obtain ⟨N, hN⟩ := _root_.GlobalTheory.Mem.LiftBound.om_growth D ψ hψ S T om hw θ hθ
     obtain ⟨N', hN'⟩ := _root_.GlobalTheory.Mem.LiftGrow.growth_pair D θ hθ S T N
     exact ⟨N', fun f => hN' _ (left f) (level f) fun x y =>
       (hN f.1 f.2 x y).imp fun C e a ha b hb => e a ha b hb 0⟩
@@ -137,7 +140,7 @@ theorem isKerSys_thKer (hθ : IsInfFam θ) {ψ : AddChar (AF D.host.F) ℂ} (hψ
       (matLin fun a b => -∑ i, x τ (i, b) * d τ (i, a)) (by simpa only [matLin_single] using g2)
       fun Y hY => ((hx τ).2.2 Y hY).imp fun _ e f h g => e f g h
     simp only [matLin_single] at e1 e2
-    exact ⟨_, _, e2, e1, (GlobalTheory.T.adjoin_gelfandInvariants_dual_pair_eq _ _ _ (x τ) (d τ) (hx τ).1 c c').symm⟩
+    exact ⟨_, _, e2, e1, (_root_.GlobalTheory.Mem.Capelli.adjoin_gelfA_dual_pair _ _ _ (x τ) (d τ) (hx τ).1 c c').symm⟩
 
 theorem toTWsmall_zero (S T : HSp D) : toTWsmall S T 0 = 0 := by
   unfold toTWsmall

@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.CMLattices.LamLetters
 import Development.AbelianVarietyTheory.Definitions.CMLattices.ExistsIsThetaDegOfIsLocalModel
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.IntegralTangentVectorCoordinates
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.HermFamIsometryInjective
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsUniqueDifferentialMonHomLieBasisStatement
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsUniqueDifferentialMonHomLieBasis
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.HermitianMetricDifferentialEqOfPairingRelation
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LieLatticeFgAndSpanEqTopRingOfIntegers
 
@@ -48,8 +48,8 @@ theorem deg_eigLat_eq_of_iso : ThetaUnifAV → Out.Laws → ∀ (K : Type) [Fiel
   intro hT hL K _ _ P P' F F' h h' O _ a a' e hh hh' hlin hlam τ
   have hm : IsMonHom e.hom := hlin.1
   have hm' : IsMonHom e.inv := inferInstance
-  obtain ⟨M, hM, -⟩ := (GlobalTheory.T.existsUnique_differential_monHom_lieBasis K P F P' F' e.hom hm).1
-  obtain ⟨M', hM', -⟩ := (GlobalTheory.T.existsUnique_differential_monHom_lieBasis K P' F' P F e.inv hm').1
+  obtain ⟨M, hM, -⟩ := (_root_.GlobalTheory.CM.DiffCoord.existsUnique_isDiffOf K P F P' F' e.hom hm).1
+  obtain ⟨M', hM', -⟩ := (_root_.GlobalTheory.CM.DiffCoord.existsUnique_isDiffOf K P' F' P F e.inv hm').1
   have hid : F.IsDiffOf F (𝟙 P.A) LinearMap.id := fun u c hu => by simpa using hu
   have hiso := _root_.GlobalTheory.HermHom.form_diff_eq hT hL K P F P' F' h h' e.hom (𝟙 P.A) M LinearMap.id hh hh' hm inferInstance hlam hM hid
   have hle : F.eigLat a τ ≤ F.lieLat := Submodule.span_mono fun c ⟨u, hu, _⟩ => ⟨u, hu⟩

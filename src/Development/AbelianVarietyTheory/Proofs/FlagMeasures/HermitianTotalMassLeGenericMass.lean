@@ -17,9 +17,9 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TsumOrbitNormaliser
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NotField
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SpanToZero
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MassOrbitClass
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FramePairCoordinatesTransportUnitaryMassStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianFramePairCoordinatesTransportInnerDataStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermOverFrameCoordinatesStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FramePairCoordinatesTransportUnitaryMass
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianFramePairCoordinatesTransportInnerData
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermOverFrameCoordinates
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermsCorrespondStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianFramePairAmplitudeMassRepsEqOrbitsStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsWtEqMulNu
@@ -49,7 +49,7 @@ theorem fr_eq (hM : M.OK) (c : Coord P S) (d : LocNG.Datum P) (t : Term V M r)
       simp only at hT hT' hf hf'
       subst hf hf' hT hT'
       rfl
-  have hW := (GlobalTheory.T.term_over_frame_coordinates M hM H r k P S c d n n' t.abelian₂).mp ⟨by rw [heq]; exact ht0, hn, hn', hΛ, hΛ'⟩
+  have hW := (_root_.GlobalTheory.HL.CoordTerm.isTermW_iff M hM H r k P S c d n n' t.abelian₂).mp ⟨by rw [heq]; exact ht0, hn, hn', hΛ, hΛ'⟩
   rw [(GlobalTheory.HL.WitIndep.witness_independence M.L r k S _ _ _ _ hW).2.2.1]
   congr 1 <;> funext b
   · rw [c.f_eq b, GlobalTheory.HL.CoordUnip.grp_apply c, hf]
@@ -62,7 +62,7 @@ theorem sum_eq_mass (hM : M.OK) (c : Coord P S) (R : LocNG.Reps P) (d : LocNG.Da
     ∑' t : {t // t ∈ R.RT d ∧ C t}, ENNReal.ofReal (LocNG.mu P t.1) = S.mass (c.dat d) Q := by
   have := hM.loc
   have := hM.char0
-  have T17 := GlobalTheory.T.framePairCoordinates_transport_unitary_mass M hM H r k P S c
+  have T17 := _root_.GlobalTheory.HL.CoordMass.transport M hM H r k P S c
   have T22 := GlobalTheory.T.isTerm_and_om_eq_of_coord_isTermOver M hM H r k P S c
   have TR := GlobalTheory.HL.CoordUnip.transport M hM H r k P S c
   have hSt : ∀ g, g ∈ P.St ↔ c.grp g ∈ S.St := TR.2.2.2.1
@@ -116,8 +116,8 @@ theorem exists_wt_one (hM : M.OK) (c : Coord P S) (R : LocNG.Reps P) (d0 : LocNG
   have := hM.loc
   have := hM.char0
   obtain ⟨d, hdR, g, hg, hmv⟩ := R.hRD.2.1 d0 (Set.mem_univ _)
-  have T20 := GlobalTheory.T.hermitianFramePairCoordinates_transport_innerData M hM H r k P S c
-  have T17 := GlobalTheory.T.framePairCoordinates_transport_unitary_mass M hM H r k P S c
+  have T20 := _root_.GlobalTheory.HL.CoordDatum.transport M hM H r k P S c
+  have T17 := _root_.GlobalTheory.HL.CoordMass.transport M hM H r k P S c
   have T22 := GlobalTheory.T.isTerm_and_om_eq_of_coord_isTermOver M hM H r k P S c
   have hdat : c.grp g • c.dat d = c.dat d0 := (T20.2.1 g hg d d0).mp hmv
   have hgH : c.grp g ∈ S.H0 := (T17.1 g).mp hg

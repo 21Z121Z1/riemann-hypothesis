@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMemBand
 import GroundTheory.AutomorphicForms.ReductionSiegel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSiegelSetReductionAdelicDetNormBandStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModerateGrowthSpanHarishChandraFiniteFormsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTestFunctionReproducingFormsGlStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTestFunctionReproducingFormsGl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalRapidDecayOneSimpleRootStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumAddInvLeOfConsecutiveRatioBounds
 
@@ -27,7 +27,7 @@ theorem bounded_on_band_of_cuspidal : ∀ (E : Type) [Field E] [NumberField E] [
       rw [hx]
   obtain ⟨Ω, hΩc, hΩB, t, c₁, c₂, ht, hc₁, hred⟩ := GlobalTheory.T.exists_siegelSet_reduction_adelicDetNormBand E a
   obtain ⟨C₀, N₀, hC₀, hpoly⟩ := GlobalTheory.T.moderateGrowth_span_harishChandraFiniteForms E a L hL W X N φ hφ Ω hΩc
-  obtain ⟨β, hβ, hβc, hβs, hrep⟩ := GlobalTheory.T.exists_test_function_reproducing_forms_gl E a L W hW X hX N
+  obtain ⟨β, hβ, hβc, hβs, hrep⟩ := _root_.GlobalTheory.HCSmoothGL.exists_smooth_beta E a L W hW X hX N
   obtain ⟨C', K, hC', hineq⟩ := _root_.GlobalTheory.RatioIneq.sum_add_inv_le_of_ratio_bounds a t c₁ c₂ ht hc₁
   obtain ⟨Cm, hCm, hdec⟩ := GlobalTheory.T.cuspidal_rapidDecay_one_simpleRoot E a L hL W X N β hβ hβc hβs hrep φ hφ hcusp Ω hΩc hΩB t C₀ N₀ ht hpoly (K * N₀)
   refine ⟨max (C₀ * C' ^ N₀ * height (1 : GL (Fin a) (Cinf E)) ^ N₀) (Cm * C' ^ N₀), fun g hg => ?_⟩

@@ -1,7 +1,7 @@
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.WeilSiegelTheta.EisCellsDefs
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaSumInvariantLeviElement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaSumInvariantUnipotentTranslateStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaSumInvariantUnipotentTranslate
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaSumInvariantWeylInvolution
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RationalGroupLeOfGeneratorsMem
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct
@@ -27,7 +27,7 @@ theorem thetaInv : PositivityTheory.GramSchwartzFunctions.EC.ThetaInv := by
         rw [← Module.End.mul_apply, ← map_mul, mul_inv_cancel, map_one, Module.End.one_apply] at this
         exact this.symm }
   have hle : GF D n ≤ S := _root_.GlobalTheory.CompanionTheory.RatGen.GF_le_of_levi_unip_weyl D n S (fun g a hg Φ => _root_.GlobalTheory.CompanionTheory.ThetaInvLevi.theta_levi_invariant D n V ψ χ θ μ ω hS g a hg Φ)
-    (fun g b hg Φ => GlobalTheory.T.theta_sum_invariant_unipotent_translate D n V ψ χ θ μ ω hS g b hg Φ)
+    (fun g b hg Φ => _root_.GlobalTheory.CompanionTheory.ThetaInv.theta_unip D n V ψ χ θ μ ω hS g b hg Φ)
     (fun g hg Φ => _root_.GlobalTheory.CompanionTheory.ThetaPoisson.theta_weyl D n V ψ χ θ μ ω hS g hg Φ)
   intro Φ γ hγ
   exact hle hγ Φ

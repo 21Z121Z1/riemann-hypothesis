@@ -3,9 +3,9 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.SiegelKlin
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AbelContinuation
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.RayClassGroupFiniteRepresentativesStatement
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ExistsShintaniConeDomain
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.RayClassConeParametrizationStatement
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.RayClassConeParametrization
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AbelContinuationAlt
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.PartialZetaTwistedEntireDifferenceStatement
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.PartialZetaTwistedEntireDifference
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.PartialZetaRayClassSummable
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ExistsPrimeDegreeOneAvoiding
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.PartialZetaMeromorphicFromTwists
@@ -34,7 +34,7 @@ theorem exists_avoid_one (𝔣 𝔞 : Ideal (𝓞 F)) (h𝔣 : 𝔣 ≠ ⊥) (h�
             (classWeight (Ideal.absNorm 𝔠) 𝔠 I.1 : ℂ) * ((Ideal.absNorm I.1 : ℕ) : ℂ) ^ (-s)) (T s)) ∧
           ∀ k : ℕ, 1 ≤ k → ∃ q : ℚ, T (1 - (k : ℂ)) = (q : ℂ) := by
   classical
-  obtain ⟨𝔟, J, _, r', y, v', hP⟩ := GlobalTheory.T.ray_class_cone_parametrization F 𝔣 h𝔣 ι r v hv 𝔞 h𝔞
+  obtain ⟨𝔟, J, _, r', y, v', hP⟩ := _root_.GlobalTheory.CompanionTheory.Hypotheses₂.Shintani.exists_classParam F 𝔣 h𝔣 ι r v hv 𝔞 h𝔞
   refine ⟨Finset.univ.biUnion fun j : J => Finset.univ.image (v' j), ?_, _root_.GlobalTheory.CompanionTheory.Hypotheses₂.Shintani.classSummable F 𝔣 𝔞 𝔟 J r' y v' hP, ?_⟩
   · intro x hx
     simp only [Finset.mem_biUnion, Finset.mem_image, Finset.mem_univ, true_and] at hx
@@ -45,7 +45,7 @@ theorem exists_avoid_one (𝔣 𝔞 : Ideal (𝓞 F)) (h𝔣 : 𝔣 ≠ ⊥) (h�
     have := hpos ((NumberField.InfinitePlace.mk φ).embedding_of_isReal (IsTotallyReal.isReal _))
     simp [h0] at this
   · intro 𝔠 hpr hl hav
-    refine GlobalTheory.T.partial_zeta_twisted_entire_difference _root_.GlobalTheory.CompanionTheory.Hypotheses₂.Shintani.Abel.abelContinuation F 𝔣 𝔞 𝔟 𝔠 J r' y v' hP hpr hl fun j i hmem => ?_
+    refine _root_.GlobalTheory.CompanionTheory.Hypotheses₂.Shintani.classTwist_entire _root_.GlobalTheory.CompanionTheory.Hypotheses₂.Shintani.Abel.abelContinuation F 𝔣 𝔞 𝔟 𝔠 J r' y v' hP hpr hl fun j i hmem => ?_
     have hle : 𝔠 * 𝔟 ≤ 𝔠 := Ideal.mul_le_left
     refine hav (v' j i) ?_ (hle hmem)
     simp only [Finset.mem_biUnion, Finset.mem_image, Finset.mem_univ, true_and]

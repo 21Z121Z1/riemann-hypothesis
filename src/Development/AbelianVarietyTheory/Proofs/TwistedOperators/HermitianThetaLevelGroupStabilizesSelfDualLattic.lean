@@ -4,8 +4,8 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CmHostFractional
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SmulMemHermitianLatticeAdelicCompletionOfSmulLe
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatticeTransportOfPolarisationIdealTimesLattice
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteAdelicMemFrameStabilizerOfLatticeTransport
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MulVecSubMemLatticeCompletionOfLatticeStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatticeTransportCongruenceOfFrameVectorsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MulVecSubMemLatticeCompletionOfLattice
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatticeTransportCongruenceOfFrameVectors
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CongruenceModPrimeOfPolarisationIdealTimesLattic
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatticeReductionEqOneOfCompletionCongruenceStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ReductionTrivialOfConjugatePlaceSelfDual
@@ -30,8 +30,8 @@ theorem levK_frame : ∀ (D : D7) (S T : HSp D) (C : Ctx S T) (Lv : GlobalTheory
   obtain ⟨PP', hPP', hcj⟩ := _root_.GlobalTheory.ConjPlace.exists_conj_place D PP
   have hI : ∀ i j, κ' i j - (1 : Matrix (Fin T.rank) (Fin T.rank) (𝓞 D.host.E)) i j ∈ PP'.asIdeal := by
     rw [hPP']; exact hJ κ κ.2 κ' hκ' PP hPP
-  have h1 := GlobalTheory.T.latticeTransport_congruence_of_frameVectors D C.X.Λ Lv.β Lv.𝔪 PP'.asIdeal Lv.β_mem Lv.β_span (hPP' ▸ hPg PP hPP) (fmt T k) κ' hI hmov hc
-  have h2 := GlobalTheory.T.mulVec_sub_mem_latticeCompletion_of_lattice D C.X.Λ (PP'.asIdeal • C.X.Λ) (fmt T k) h1
+  have h1 := _root_.GlobalTheory.LevCong.cong_of_frame D C.X.Λ Lv.β Lv.𝔪 PP'.asIdeal Lv.β_mem Lv.β_span (hPP' ▸ hPg PP hPP) (fmt T k) κ' hI hmov hc
+  have h2 := _root_.GlobalTheory.LevExt.mulVec_sub_mem_hatV D C.X.Λ (PP'.asIdeal • C.X.Λ) (fmt T k) h1
   obtain ⟨b, hb, h3⟩ := _root_.GlobalTheory.LevkLoc.congr_of_isAA D C.X.Λ ΛT PP'.asIdeal PP'.isPrime hAA (fmt T k) h2
   have h4 := GlobalTheory.T.lattice_reduction_eq_one_of_completion_congruence D T ΛT βT hfr k hSt PP' b hb h3
   exact _root_.GlobalTheory.ConjPlaceRedGen.redFn_eq_one_of_conj D T ΛT hsd βT hfr k hSt PP PP' hcj h4

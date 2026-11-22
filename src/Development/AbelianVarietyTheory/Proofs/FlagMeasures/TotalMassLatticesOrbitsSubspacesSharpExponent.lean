@@ -118,9 +118,9 @@ theorem space_mass (hMM : MaxMass) (K V : Type) [Field K] [NumberField K] [StarR
   have hXst : Stable (isom h) X := by
     rintro g p ⟨h1, h2, h3⟩
     exact ⟨hDst g _ h1, hYst g _ h2, Submodule.map_mono h3⟩
-  have f1 := GlobalTheory.T.orbitStabilizerMass_eq_weightedSum_fibres (isom h) _ _ X (latsDisc (R := 𝓞 K) h n) Prod.fst (fun _ _ => rfl) hXst hDst
+  have f1 := _root_.GlobalTheory.Mass.orbMass_eq_orbSum_fibre (isom h) _ _ X (latsDisc (R := 𝓞 K) h n) Prod.fst (fun _ _ => rfl) hXst hDst
     (fun p hp => hp.1) (fun y hy => hfin y hy.1.1)
-  have f2 := GlobalTheory.T.orbitStabilizerMass_eq_weightedSum_fibres (isom h) _ _ X (genus h M₀) Prod.snd (fun _ _ => rfl) hXst hYst
+  have f2 := _root_.GlobalTheory.Mass.orbMass_eq_orbSum_fibre (isom h) _ _ X (genus h M₀) Prod.snd (fun _ _ => rfl) hXst hYst
     (fun p hp => hp.2.1) (fun y hy => hfin y hy.1)
   obtain ⟨mono, hconst, -⟩ := _root_.GlobalTheory.Mass.OrbMono.main (isom h) (Submodule (𝓞 K) V)
   have s1 : orbMass (isom h) (latsDisc (R := 𝓞 K) h n) ≤ orbMass (isom h) X := by
@@ -177,7 +177,7 @@ theorem real_eq (d i j : ℕ) (L c : ℝ) (hd : d ≠ 0) (hi : i ≠ 0) :
 
 theorem main : MaxMass → ∀ (K V : Type) [Field K] [NumberField K] [StarRing K] [AddCommGroup V] [Module K V] [FiniteDimensional K V] [Module (𝓞 K) V] [IsScalarTower (𝓞 K) K V] (h : V →ₗ⋆[K] V →ₗ[K] K), IsCMUnram K → h.IsSymm → PD h → (∀ (W : Type) [AddCommGroup W] [Module K W] [FiniteDimensional K W] [Module (𝓞 K) W] [IsScalarTower (𝓞 K) K W] (k : W →ₗ⋆[K] W →ₗ[K] K), k.IsSymm → PD k → (∃ L : Submodule (𝓞 K) W, Submodule.IsLattice K L ∧ IsUnimodular k L) → ∃ I : Submodule (𝓞 K) W, IsOrthoLattice k I (Module.finrank K W)) → ∀ j : ℕ, 1 ≤ j → ∀ (V₁ : Type) [AddCommGroup V₁] [Module K V₁] [FiniteDimensional K V₁] [Module (𝓞 K) V₁] [IsScalarTower (𝓞 K) K V₁] (h₁ : V₁ →ₗ⋆[K] V₁ →ₗ[K] K) (I₁ : Submodule (𝓞 K) V₁), h₁.IsSymm → IsOrthoLattice h₁ I₁ j → ∀ de : ℕ, 1 ≤ de → ∃ s : Finset (Submodule K V), (∀ U ∈ s, Module.finrank K U = j) ∧ (∀ U : Submodule K V, Module.finrank K U = j → (latsDisc (R := 𝓞 K) (hRes h U) (de ^ 2)).Nonempty → ∃ U₀ ∈ s, ∃ g : isom h, g • U₀ = U) ∧ ∑ U ∈ s, orbMass (isom (hRes h U)) (latsDisc (R := 𝓞 K) (hRes h U) (de ^ 2)) ≤ ENNReal.ofReal (mass h₁ I₁ * (de : ℝ) ^ j * (de : ℝ) ^ (2 + Real.logb 2 (fDeg K))) := by
   intro hMM K V _ _ _ _ _ _ _ _ h hK hs hp hL j hj V₁ _ _ _ _ _ h₁ I₁ hs₁ hI₁ de hde
-  obtain ⟨witt, res⟩ := GlobalTheory.T.witt_extension_totally_definite_hermitian K V h hK hs hp
+  obtain ⟨witt, res⟩ := _root_.GlobalTheory.Mass.Witt.witt_definite K V h hK hs hp
   choose! T hT1 hT2 using count_sets K
   have hc : 0 < mass h₁ I₁ := by
     have hp' := SpaceMass.PD_of_ortho h₁ hK I₁ _ hI₁

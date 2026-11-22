@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisenbergQuotie
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsHeisenbergInvariantLinearFormIsotropicVacu
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SumOpTransversalStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RelIndexIntegralMatricesUnitaryDiagonalTranslate
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CayleyUnitaryTorusInvDetIntegralOrderStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CayleyUnitaryTorusInvDetIntegralOrder
 open Matrix Formalism.UG GlobalTheory.Hk3 GlobalTheory.FinWeil GlobalTheory.SphTheta ValuativeRel Classical
 open GlobalTheory.LFun (HasSatU IsSatVecU heckeVec)
 open GlobalTheory.LGrp (bcParam extProd)
@@ -152,7 +152,7 @@ theorem GlobalTheory.SphTheta.mixed_torus_value : ∀ (L : Type) [Field L] [Valu
         rintro ⟨a, ha, hxa⟩
         exact hfi (mem_of_mixLat hϖle k t hT (hf i) ha hxa)
     simp only [key, Finset.sum_ite_eq', Finset.mem_univ, if_true]
-  obtain ⟨hd, hint, hord⟩ := GlobalTheory.T.cayley_unitaryTorus_inv_det_integral_order L ϖ σ q hU hS.v_two n' k t ht
+  obtain ⟨hd, hint, hord⟩ := _root_.GlobalTheory.CayleyTorus.cayley_torus_inv L ϖ σ q hU hS.v_two n' k t ht
   have hev := hC e heinv t⁻¹ hd hint
   rw [inv_inv, hord, he1, mul_one] at hev
   have hco := (_root_.GlobalTheory.SphTheta.sumOp_vacuum_lift hH _ hΛ s hS.2.1 hS.fixes hS.2.2.2 _ hΛ' hidx).2 e he1 heinv _ hv

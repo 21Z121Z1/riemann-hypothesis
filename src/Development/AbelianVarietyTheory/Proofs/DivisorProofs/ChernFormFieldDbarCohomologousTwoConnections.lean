@@ -2,8 +2,8 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsMetricFrOfIsMetricOn
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ChernDegreeComplex
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DbarCohomologousEvenFormsAlgebraClosed
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CurvaturePowerSumsDbarCohomologousStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernFormNewtonIdentitiesCurvaturePowerSumsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CurvaturePowerSumsDbarCohomologous
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernFormNewtonIdentitiesCurvaturePowerSums
 open CategoryTheory AlgebraicGeometry MvPolynomial MeasureTheory Filter Topology
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
 open ReciprocityTheory.L2DbarEstimates (V)
@@ -16,7 +16,7 @@ theorem dbarCoh_chernFld : ∀ (M : Type) [TopologicalSpace M] (n : ℕ) (A : Ho
     [DecidableEq r] (G G' : M → M → Matrix r r ℂ), IsGramPair A G G' → ∀ j, DbarCoh A (chernFld A G j) (chernFld A G' j) := by
   intro M _ n A r _ _ G G' hG j
   obtain ⟨h1, -, halg⟩ := _root_.GlobalTheory.ChernCalc.dbarCoh_algebra M n A
-  have hpow := GlobalTheory.T.curvaturePowerSums_dbarCohomologous M n A r G G' hG
+  have hpow := _root_.GlobalTheory.ChernCalc.PowCoh.dbarCoh_powFld M n A r G G' hG
   have hzero : DbarCoh A 0 0 := by
     have := (halg 0 1 1 1 1 h1 h1).1
     simpa using this
@@ -33,12 +33,12 @@ theorem dbarCoh_chernFld : ∀ (M : Type) [TopologicalSpace M] (n : ℕ) (A : Ho
       ∑ i ∈ Finset.range j, (-kappa) ^ (i + 1) • (powFld A H (i + 1) * chernFld A H (j - 1 - i))) := by
     intro H j hj
     funext x
-    have := (GlobalTheory.T.chernForm_newton_identities_curvature_power_sums n r (fun v => H x.pt (x.ch.symm v)) x.crd).2 j
+    have := (_root_.GlobalTheory.ChernCalc.chernAt_newton n r (fun v => H x.pt (x.ch.symm v)) x.crd).2 j
     simp only [Pi.smul_apply, Finset.sum_apply, Pi.mul_apply, chernFld, powFld, HolAtlas.chern]
     rw [neg_one_smul, ← this, smul_smul, inv_mul_cancel₀ (by exact_mod_cast hj.ne'), one_smul]
   have key0 : ∀ H : M → M → Matrix r r ℂ, chernFld A H 0 = 1 := by
     intro H; funext x
-    exact (GlobalTheory.T.chernForm_newton_identities_curvature_power_sums n r _ x.crd).1
+    exact (_root_.GlobalTheory.ChernCalc.chernAt_newton n r _ x.crd).1
   induction j using Nat.strong_induction_on with
   | _ j ih =>
     rcases Nat.eq_zero_or_pos j with rfl | hj

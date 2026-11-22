@@ -8,11 +8,11 @@ import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.SelfDua
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualProdIff
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HCoContinuousAddEquiv
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianCoordinatesNaturalInRing
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianPairingInCoordinatesStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianPairingInCoordinates
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoordinateFormSymmetricNondegenerate
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianCoordinatesMeasurePreserving
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CovolumeOneInvariantUnderMatrix
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TestFunctionContinuousCompactSupportAltBis
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TestTContinuousHasCompactSupport
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatrixPreservesIntegersAlmostAll
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FourierInversionInvariantMatrix
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ApproximateIdentityProductBumps
@@ -97,7 +97,7 @@ theorem core (F : Type) [Field F] [NumberField F] (hF : IsTotallyReal F) (ψ : A
     (GlobalTheory.CompanionTheory.SW.SdCoord.matE Bm hu).toHomeomorph.measurableEmbedding
   have hT := fun k => _root_.GlobalTheory.CompanionTheory.BigCell.fourier_prod_symm_preserving (AF F) ν ψ ι Bm (hBs.map _) hemb hpres (testT (ρ k) S (U k))
     (fouA ψ ν (testT (ρ k) S (U k))) (fun y => rfl) (hinv k).1 (hinv k).2
-  have hc := fun k => GlobalTheory.T.continuous_and_hasCompactSupport_testT F (ρ k) S (U k) (hρ k).1 (hρ k).2.1 (fun v => ⟨(hU k v).1, (hU k v).2.1⟩)
+  have hc := fun k => _root_.GlobalTheory.CompanionTheory.Hypotheses₂.OneV.Coef.TestC.testT_continuous_hasCompactSupport F (ρ k) S (U k) (hρ k).1 (hρ k).2.1 (fun v => ⟨(hU k v).1, (hU k v).2.1⟩)
   have hfou : ∀ k y, fouP ψ Bm P (powT (testT (ρ k) S (U k))) y =
       ∏ i, fouA ψ ν (testT (ρ k) S (U k)) (Bm.mulVec y i) := fun k y => (hT k).1 y
   have hP : P.IsAddHaarMeasure := inferInstance
@@ -278,7 +278,7 @@ theorem exists_testH_approx : ∀ (F E : Type) [Field F] [NumberField F] [Field 
   have hpair : ∀ w y : HermR (AF F) σ n, pairHerm (AF F) σ n w y = dotProduct (eA w) (Bm.mulVec (eA y)) := by
     intro w y
     rw [heA, heA]
-    exact GlobalTheory.T.hermitian_pairing_in_coordinates F E σ hCM (AF F) d b n w y
+    exact _root_.GlobalTheory.CompanionTheory.SiegelND.Coef.TestN.PairCoord.pairHerm_eq_coordForm F E σ hCM (AF F) d b n w y
   have hdb' : SelfDual db (fun S T => ψ (pairHerm (AF F) σ n S T)) := hdb
   have hsd : SelfDual (db.map eA) (fun x y => ψ (dotProduct x (Bm.mulVec y))) := by
     have h := GlobalTheory.CompanionTheory.SW.SdAny.selfDual_map eA db _ hdb'

@@ -4,7 +4,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsChartFrom
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FilteredCohomologyRestrictionBijective
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CechRefinementCohomologyBijective
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.ZariskiEtaleLifting.ZariskiCocycleRefinement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CohomologyVanishingAlongIdealFiltrationStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CohomologyVanishingAlongIdealFiltration
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteModulesSerreClass
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.InclStd
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SerreClassOfCechSpectralSequence
@@ -14,10 +14,10 @@ import GroundTheory.ArithmeticGeometry.SchemeCohomology.CechSeparated
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AffineCoverHigherCohomologyVanishes
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.AffineVanishing
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CechVanishingFromCoverStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSmoothCoordinateCoverStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSmoothCoordinateCover
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoordinatesRestrictAffineOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartIsGoodStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartDividedPowersGradedConstantStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartDividedPowersGradedConstant
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SheafFiltrationProperty
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatBaseChangeCohomology
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.Coords
@@ -31,7 +31,7 @@ import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomology
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.TerminalRes
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.TotPairing
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousCochainFiltrationDecomposition
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InOpenOfThickeningMorphismStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InOpenOfThickeningMorphism
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InOpenFiniteInfIff
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.SEqOne
 
@@ -207,7 +207,7 @@ theorem loc_vanish (hG : KH.LocGr) (hP : KH.PolyTf) {V : X.Opens} {d : ℕ} (c :
     rw [Set.mem_singleton_iff.1 hW] at h
     exact h
   have hD : St (TFs s') {V} c'.D := ⟨hTF, V, rfl, c'.inV⟩
-  obtain ⟨hpow, hc⟩ := GlobalTheory.T.chart_divided_powers_graded_constant c' hgood _ hQ hD
+  obtain ⟨hpow, hc⟩ := _root_.GlobalTheory.CompanionTheory.ChartFil.chart_grConst c' hgood _ hQ hD
   obtain ⟨PQ, hPQ⟩ := hP (dividedPowersBot K) q (Ideal.Quotient.mk ⊥) 1 s' {V}
   have hF := _root_.GlobalTheory.CompanionTheory.DPFil.isFil_sFil (St (TFs s') {V})
   have key := hG PQ hF (c'.frame hgood _ hQ hD) (fun T => ((c'.frame hgood _ hQ hD).ne T).some) hc (r : ℤ)
@@ -268,7 +268,7 @@ theorem thick_vanish (hG : KH.LocGr) (hP : KH.PolyTf) (hV : KH.GlobVanSt) (U : C
 
 theorem tower_vanish (hG : KH.LocGr) (hP : KH.PolyTf) (hV : KH.GlobVanSt) (U : Cov q) (s : ℕ) (hd : ∀ α, U.d α < s)
     (j : ℕ) : Subsingleton (CH.H (sq (thFil LL (s : ℤ)) (IdF.bot (thA LL))) j) := by
-  refine GlobalTheory.T.cohomology_vanishing_along_ideal_filtration (fun k => thFil LL ((s + k : ℕ) : ℤ)) (fun k T => ?_) (fun T => ?_) (fun k j => ?_) j
+  refine _root_.GlobalTheory.CompanionTheory.TowerEnd.vanish (fun k => thFil LL ((s + k : ℕ) : ℤ)) (fun k T => ?_) (fun T => ?_) (fun k j => ?_) j
   · exact T.pdPow_anti (by simp)
   · obtain ⟨N, hN⟩ := pdPow_nil q T
     refine ⟨N, le_bot_iff.1 ?_⟩

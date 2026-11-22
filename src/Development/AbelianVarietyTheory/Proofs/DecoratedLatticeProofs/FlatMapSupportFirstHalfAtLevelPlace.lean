@@ -2,7 +2,8 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCombAt
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PlacesToAdeles
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.AllPositions
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceLocalGroupElementsJacobiBesselStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceLocalGroupElementsJacobiBessel
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ExistsUnitarySupportedAtPlaceOfMulEqIdem
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatMapsPreserveSchwartzBruhatAndSurjective
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ContrFactor
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicIsNonarchimedeanLocalField
@@ -114,7 +115,7 @@ theorem exists_coreFrame {D : D7} {k : Type} [Field k] [ValuativeRel k] [Topolog
 
 theorem isLoc_one {D : D7} {k : Type} [Field k] [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k]
     (p : Place D k) {V : HSp D} {Y : Type} [Fintype Y] [DecidableEq Y] (Fr : Frame k V.rank Y) : p.IsLoc Fr 1 1 := by
-  obtain ⟨hloc, -, -⟩ := GlobalTheory.T.splitPlace_localGroupElements_jacobi_bessel D k p
+  obtain ⟨hloc, -, -⟩ := _root_.GlobalTheory.LocGrp.local_groups D k p
   obtain ⟨g₀, hg₀, hu⟩ := (hloc V Y Fr).1 1
   have h2 := (hloc V Y Fr).2.2 _ _ _ _ hg₀ hg₀
   rw [mul_one] at h2
@@ -126,7 +127,7 @@ theorem isLoc_one {D : D7} {k : Type} [Field k] [ValuativeRel k] [TopologicalSpa
 
 theorem gsupp1 : ∀ (D : D7), OmLoc D → FlatBF D → GlobalTheory.LocFlat.SymCollapse → GSupp1 D := by
   intro D hOm hFl hSym k _ _ _ _ p s κ S t _ _ ψ hψ j c H σ B J B' F s₁ hμ T₁ hT₁ Φ₁ hΦ₁ h hh hne
-  obtain ⟨hloc, hjac, -⟩ := GlobalTheory.T.splitPlace_localGroupElements_jacobi_bessel D k p
+  obtain ⟨hloc, hjac, -⟩ := _root_.GlobalTheory.LocGrp.local_groups D k p
   letI : MeasurableSpace k := borel k
   haveI : BorelSpace k := ⟨rfl⟩
   obtain ⟨ν, hν⟩ := exists_isUnitVol k

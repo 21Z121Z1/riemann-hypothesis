@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GivenLevelInner
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ColShiftVacEqSmul
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.VacRowScalar
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ActOMemLatOOfHat
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExpansionSumProdLastVertexMovedEqStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExpansionSumProdLastVertexMovedEq
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OmEqSumLattice
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MultilinearSumEqOfFunctionProductSumsEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSelfDualCColumnLatticeOfOrthonormalFrame
@@ -69,7 +69,7 @@ theorem loc (S : GridChoice W U) {t : T} {Φ : G.Datum} {β : CosFam G t} {τ : 
         (cc • moveFn (colPt S t (finEmb G.sp.topDec k)) (d.1 (lastIx D)).fn) j (x j)) *
       ∏ i, Function.update (fun i => (d.2 i).fn) (lastIx D) (cr • moveFn (rowPt S k) (d.2 (lastIx D)).fn) i (y i)) =
     τ.sum fun d a => a * (∏ j, (d.1 j).fn (x j)) * ∏ i, (d.2 i).fn (y i) :=
-  GlobalTheory.T.expansion_sumProd_lastVertex_moved_eq S hL hde hc ht hβ hexp hvec k hk cc cr hcc hcr x y
+  _root_.GlobalTheory.LastVertexLoc.sum_prod_moved_eq S hL hde hc ht hβ hexp hvec k hk cc cr hcc hcr x y
 
 end GlobalTheory.LastVertexTensor
 

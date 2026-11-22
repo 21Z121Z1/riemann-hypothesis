@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary�
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NormalFormDualOrthogonalLast
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianLatticeDiscriminantOrderNeZeroUnimodula
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PrimitiveSublatticeMeanCountBound
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardEmbeddedDataWithGivenFixedLatticeStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardEmbeddedDataWithGivenFixedLattice
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FixedLatticeInfEqAndPairingOfIsometry
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DiscriminantOrderCommonFixedLatticeEmbeddedData
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardIsometriesFixingSubspaceDefiniteLatticesLe
@@ -165,7 +165,7 @@ theorem dat_count (H : HermSpace K V) (hK : Formalism.HermitianLatticesTheory.Is
     exact ⟨fixLat_le hd, hd.2.2.2.1, hM⟩
   · intro La _
     refine le_trans (ENat.toENNReal_le.2 (Set.encard_le_encard ?_))
-      (GlobalTheory.T.card_embeddedData_with_given_fixedLattice K V H hK hP L₀ g j D₀ hL hD hG hg La x)
+      (_root_.GlobalTheory.DegCnt.DatCount.main K V H hK hP L₀ g j D₀ hL hD hG hg La x)
     rintro d ⟨⟨hd, -⟩, h⟩
     exact ⟨hd, h⟩
 

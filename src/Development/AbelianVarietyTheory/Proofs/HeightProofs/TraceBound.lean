@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.HeightProofs.InvSqrtTwo
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SobolevEmbeddingDiscreteSeriesHilbertSchmidt
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.IndefiniteUnitaryLieOrthonormalBasesProps
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.CasimirUnitaryGroupActsByScalarSmoothVectors
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.EllipticEstimateWordLeOnePlusLaplacianPowStatement
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.EllipticEstimateWordLeOnePlusLaplacianPow
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.WordsOnWeightedCasimirEigenvectorsBoundedFrame
 
 open Matrix Formalism.REAL Formalism.MainNotions.S Formalism.L2.Theta GlobalTheory.SmoothGlob GlobalTheory.TypeSum GlobalTheory.TypeSum.CasBasis GlobalTheory.LowTypeDetermined
@@ -23,7 +23,7 @@ theorem trace_bound : ∀ (n : ℕ) (ε : Fin n → Bool) (H : Type) [NormedAddC
     obtain ⟨l, hl, hm⟩ := List.mem_flatMap.1 hm
     obtain ⟨l', hl', rfl⟩ := List.mem_map.1 hm
     exact (List.mem_append.1 hX).elim (hS0 l' hl' X) (hS l hl X)
-  obtain ⟨s, C, hC⟩ := _root_.GlobalTheory.TypeSum.CasBasis.frame_bounded n ε H σ hσ (fun i => (hk i).1) (fun b => (hp b).1) χ hχ (GlobalTheory.T.elliptic_estimate_word_le_onePlusLaplacian_pow n ε H σ hσ) _ hT
+  obtain ⟨s, C, hC⟩ := _root_.GlobalTheory.TypeSum.CasBasis.frame_bounded n ε H σ hσ (fun i => (hk i).1) (fun b => (hp b).1) χ hχ (_root_.GlobalTheory.TypeSum.Elliptic.word_le_lapOne n ε H σ hσ) _ hT
   set C' := max C 0 with hC'
   have hC'0 : 0 ≤ C' := le_max_right _ _
   refine ⟨2 * s, S.length * (S.length * (C0 * C')), fun q e μ he hK hμ heig => ?_⟩

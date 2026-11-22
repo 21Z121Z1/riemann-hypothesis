@@ -3,10 +3,10 @@ import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.EchEqOn
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RationalSchwartzBruhatAlgebraIntegralLinear
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IMemSiegel
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SummableNormSiegelThetaSeriesTerms
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SymplecticSiegelActionMemUpperHalfSpaceAndCocyclStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SymplecticSiegelActionMemUpperHalfSpaceAndCocycl
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SchwartzBruhatIntegralEqSumResidueRepresentative
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.TsumSchwartzBruhatLevelEqSumResidueCosets
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.PoissonSummationThetaSeriesRowTermCosetStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.PoissonSummationThetaSeriesRowTermCoset
 
 open Matrix Complex GlobalTheory.SW GlobalTheory.SW.FourierJ
 open scoped ComplexConjugate Real
@@ -294,10 +294,10 @@ theorem trans_J [DecidableEq ι] {p : ℕ} (hp : Fintype.card κ = p + p) {R : �
   intro τ hτ ζ
   have hR0 : (R : ℚ) ≠ 0 := by exact_mod_cast hR.ne'
   have hRc : (R : ℂ) ≠ 0 := by exact_mod_cast hR.ne'
-  obtain ⟨hd, hs, -⟩ := GlobalTheory.T.symplecticSiegelAction_mem_upperHalfSpace_and_cocycle ι _ (SymplecticGroup.J_mem ι ℚ) τ hτ
+  obtain ⟨hd, hs, -⟩ := _root_.GlobalTheory.SiegelAction.symplectic_action ι _ (SymplecticGroup.J_mem ι ℚ) τ hτ
   rw [spAct_J] at hs
   rw [spDen_J] at hd
-  obtain ⟨c, hc, hrow⟩ := GlobalTheory.T.poisson_summation_thetaSeriesRowTerm_coset ι R hR τ hτ hs (Ne.isUnit hd)
+  obtain ⟨c, hc, hrow⟩ := _root_.GlobalTheory.SW.FourierJ.Row.poisson_class ι R hR τ hτ hs (Ne.isUnit hd)
   rw [spAct_J, spDen_J, qm_J, Matrix.mul_one, thS_eq, thS_eq,
     tsum_supp hR (ft_level hR h _)]
   have hsum : Summable fun x : Matrix κ ι ℚ => φ x * ∏ k, gs τ (ζ k) (x k) := by

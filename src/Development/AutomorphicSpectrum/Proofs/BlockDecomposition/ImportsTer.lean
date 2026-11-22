@@ -9,7 +9,7 @@ import GroundTheory.PAdicHodge.FieldOfNormsCyclBase
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DenseRangeUnits
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GlobalArtinLocalIdeleInjective
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChevalleyUnits
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GlobalArtinMapUniqueStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GlobalArtinMapUnique
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalGlobalArtinCompatible
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LubinTateUnramifiedDegreeOneStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ValuationLeIffNormEmbedding
@@ -65,7 +65,7 @@ theorem link : ∀ {E Ω : Type} [Field E] [NumberField E] [Field Ω] [Algebra E
     _root_.GlobalTheory.CompanionTheory.LTLink.local_restriction_abelianization_artin w Bw.j (fun y => (hφj y).symm) (unitsIncl _ u⁻¹) (σ : G E Ω) g
       (fun z => by rw [hg]; exact Bw.e_comm σ z) hloc L
   have h1 : art (localIdele E w (unitsIncl _ u)) = toAb E Ω σ := by
-    rw [GlobalTheory.T.global_artin_map_unique art hart]
+    rw [_root_.GlobalTheory.CompanionTheory.ArtinMapUniq.eq_inv_arithmetic_artin_map art hart]
     have hb : ∀ a b : Gab E Ω, (∀ (L : IntermediateField E Ω) [FiniteDimensional E L] [IsAbelianGalois E L],
         PositivityTheory.FamInh.res L a = PositivityTheory.FamInh.res L b) → a = b := by
       intro a b h

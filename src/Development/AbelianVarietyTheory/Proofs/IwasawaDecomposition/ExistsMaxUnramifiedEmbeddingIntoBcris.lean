@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsCrisP
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RootOfUnityPrimeToTeichmullerLiftStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RootOfUnityPrimeToTeichmullerLift
 
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc GlobalTheory.MemLoc
 open scoped Formalism.Per
@@ -53,7 +53,7 @@ theorem exists_unram_to_cris : ∀ (l : ℕ) [Fact l.Prime], ∀ (o : Om l →+*
       (fun y _ => Algebra.IsAlgebraic.isAlgebraic y)] at hx
     refine (Algebra.adjoin_le (S := S) ?_) hx
     rintro c ⟨m, h0, h1, h2⟩
-    obtain ⟨⟨xb, hxb⟩, h⟩ := GlobalTheory.T.rootOfUnity_prime_to_teichmuller_lift l o ho c m h0 h1 h2
+    obtain ⟨⟨xb, hxb⟩, h⟩ := _root_.GlobalTheory.MemLoc.rootOfUnity_teichmuller l o ho c m h0 h1 h2
     refine ⟨Per.aB l (Per.tm xb), ?_⟩
     exact (ha _).trans (by rw [(h xb hxb).2.2]; rfl)
   exact exists_factor_of_range (f.comp (MaximalUnramifiedExtension l).val.toRingHom) ι hι (fun x => key x x.2)

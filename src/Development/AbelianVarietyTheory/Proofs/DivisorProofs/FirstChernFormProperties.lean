@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.LineSCShortExact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstChernRealClosed
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstChernTensorAdd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstChernDualNeg
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstChernIsometricEqStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstChernIsometricEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagOmegaFormReal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecondChernRealClosed
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecondChernFlagIndependent
@@ -41,7 +41,7 @@ theorem basicForms : ∀ (k : Type) [CommRing k] (X : Scheme.{0}) [IsIntegral X]
           c1F hY σ ((VMetric.grLB fl 0 H).pull π w) + c1F hY σ ((VMetric.grLB fl 1 H).pull π w) := by
   intro k _ X _ p D hX σ
   refine ⟨fun L M => ⟨(_root_.GlobalTheory.LineForm.FirstChern.c1F_isRealForm_closed k X p D hX σ L).1, (_root_.GlobalTheory.LineForm.FirstChern.c1F_isRealForm_closed k X p D hX σ L).2.1, (_root_.GlobalTheory.LineForm.FirstChern.c1F_isRealForm_closed k X p D hX σ L).2.2,
-    _root_.GlobalTheory.LineForm.c1F_tens k X p D hX σ L M, _root_.GlobalTheory.LineForm.c1F_dual k X p D hX σ L, GlobalTheory.T.firstChern_isometric_eq k X p D hX σ L M⟩,
+    _root_.GlobalTheory.LineForm.c1F_tens k X p D hX σ L M, _root_.GlobalTheory.LineForm.c1F_dual k X p D hX σ L, _root_.GlobalTheory.LineForm.c1F_eq_of_isometric k X p D hX σ L M⟩,
     fun E h H fl fl' => ⟨_root_.GlobalTheory.LineForm.isRealForm_omF k X p D hX σ E h H fl, (_root_.GlobalTheory.ChernReal.c2F_isRealForm_closed k X p D hX σ E h H fl).1, (_root_.GlobalTheory.ChernReal.c2F_isRealForm_closed k X p D hX σ E h H fl).2.1,
       (_root_.GlobalTheory.ChernReal.c2F_isRealForm_closed k X p D hX σ E h H fl).2.2, _root_.GlobalTheory.LineForm.c2F_flag_indep k X p D hX σ E h H fl fl', _root_.GlobalTheory.LineForm.omF_mul_self k X p D hX σ E h H fl,
       _root_.GlobalTheory.c1F_grLB_add_grLB_flag_indep k X p D hX σ E h H fl fl', _root_.GlobalTheory.LineForm.ddc_omF_eq k X p D hX σ E h H fl⟩,

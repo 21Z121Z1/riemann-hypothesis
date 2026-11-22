@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsConjSelfReciproca
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormSolutionFields
 import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.InvolutionFixesPolynomialImage
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalNormAtSplitPlace
-import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.NonsplitCentraliserNormElement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonsplitCentraliserNormElement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TotallyPositiveRealPlaces
 import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.GlobalNormOfLocalNorms
 import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.ConjTransposeMulPosDef
@@ -47,7 +47,7 @@ theorem main : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E], Unr E →
     intro r Q hQ hx v
     by_cases hs : ∃ w w' : Pl E, w ≠ w' ∧ w.under (𝓞 (maximalRealSubfield E)) = v ∧ w'.under (𝓞 (maximalRealSubfield E)) = v
     · exact _root_.GlobalTheory.LocalNormSplit.exists_norm_of_split E r Q _ hx v hs
-    · refine GlobalTheory.T.nonsplit_centraliser_norm_element E hU n γ hγ hP m hloc' r Q hQ hx v (fun w w' hw hw' => ?_)
+    · refine _root_.GlobalTheory.NormInert.main E hU n γ hγ hP m hloc' r Q hQ hx v (fun w w' hw hw' => ?_)
       by_contra hne
       exact hs ⟨w, w', hne, hw, hw'⟩
   have hinf := _root_.GlobalTheory.RealPlaceNorms.exists_norm_at_infinite E n γ hγ hP m (fun τ => by rw [← hm]; exact GlobalTheory.T.conj_transpose_mul_posDef E n h τ)

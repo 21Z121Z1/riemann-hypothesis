@@ -6,7 +6,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsFiniteIntegralChartCoverFlagSpace
 import Development.AbelianVarietyTheory.Definitions.RegularCharts.MatrixTwoByTwoCongr
-import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsRefinedCoveringChartFamilyStatement
+import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsRefinedCoveringChartFamily
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsNormalChartsOfCoveringCharts
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField IsDedekindDomain
@@ -28,7 +28,7 @@ theorem exists_sCharts : ReciprocityTheory.ChartRestriction.G.Out.SecTwistSt →
   obtain ⟨S, hS, -⟩ := _root_.GlobalTheory.Reg.exists_scharts_of_covers E H Dw l Xo c hEv hDiag la J P hP
   refine ⟨⟨S, hS⟩, fun a n m ws hws hnz => ?_⟩
 
-  obtain ⟨J', hJ', P', hP', hF⟩ := GlobalTheory.T.exists_refined_covering_chart_family E H Dw l Xo c hEv _ _ J P hP a n m ws hws hnz
+  obtain ⟨J', hJ', P', hP', hF⟩ := _root_.GlobalTheory.Reg.exists_covers_fam E H Dw l Xo c hEv _ _ J P hP a n m ws hws hnz
   have := hJ'
   obtain ⟨S', hS', hW⟩ := _root_.GlobalTheory.Reg.exists_scharts_of_covers E H Dw l Xo c hEv hDiag la J' P' hP'
   exact ⟨S', hW m ws hF, hS'⟩

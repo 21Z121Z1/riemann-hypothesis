@@ -30,7 +30,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorusPointOverFract
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionAlongOrderDivides
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionAlongBaseChange
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionAlongGroupPullback
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionAlongUniqueUpToIsoStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionAlongUniqueUpToIso
 
 noncomputable section
 
@@ -239,7 +239,7 @@ theorem backward [IsIntegrallyClosed R] [IsNoetherianRing R] (hs : Function.Inje
   obtain ⟨_, T₂, _, Γ₂, i₂, L₂, _, _, M₂, j₂, χ₂, w₂, tor₂, hj₂, hHT₂, hw₂⟩ := H
   obtain ⟨L', _, _, ⟨M₀'⟩⟩ := lieModel_exists X' G' R' x'
   obtain ⟨Γ', i', β, tor', hβ, hsp, hext, hcore⟩ := core hs x x' f hx φ hφ hsm Γ N i₀ tor M₀ M₀'
-  obtain ⟨b, hb⟩ := GlobalTheory.T.torsion_along_unique_up_to_iso R' T₂ T Γ₂ Γ' X' G' x' N i₂ i' tor₂ tor'
+  obtain ⟨b, hb⟩ := _root_.GlobalTheory.CompanionTheory.Ar.BT.TorIso.exists_mulEquiv_isHT R' T₂ T Γ₂ Γ' X' G' x' N i₂ i' tor₂ tor'
   have H₁ := hb L₂ M₂ χ₂ w₂ hHT₂
   obtain ⟨g, hg, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.lieModel_existsUnique_equiv X' G' R' x' L' L₂ M₀' M₂
   have H₂ := isHT_lie Γ' g hg H₁

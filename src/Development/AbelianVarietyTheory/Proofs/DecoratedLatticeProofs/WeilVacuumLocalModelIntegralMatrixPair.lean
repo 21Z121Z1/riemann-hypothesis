@@ -2,7 +2,9 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LawLoc
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsInvariantForm
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CardInversePrimeRepsIntegralRightMulHecke
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LocalSelfDualLatticeSplitPlaceDecompositionStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LocalSelfDualLatticeSplitPlaceDecomposition
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilCharacterSplitPlaceExistsContinuousNontrivia
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergFrameHalfInverse
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IndexIntegralMatricesInSubstitutionImage
 
 noncomputable section
@@ -147,7 +149,7 @@ open GlobalTheory.SplitScalar GlobalTheory.LocMod.Witness in
 theorem vacuum_move : ∀ (D : D7) (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] (p : Place D k) (ψ : AddChar (AF D.host.F) ℂ) (S T : HSp D) (χS χT : (AE D)ˣ →* Circle) (ω : Om S T), IsWeilDatumO ψ S T χS χT ω → ∀ (μS μT : kˣ →* ℂˣ), p.IsComp χS μS → p.IsComp χT μT → ∀ (Y Y' : Type) [Fintype Y] [DecidableEq Y] [Fintype Y'] [DecidableEq Y'] (FS : Frame k S.rank Y') (FT : Frame k T.rank Y) (Tm : SB (Matrix Y Y' k) →ₗ[ℂ] (WO S T → ℂ)), p.IsModel ψ FS FT Tm → ∀ (g : GA D S) (gk : GL Y' k) (h : GA D T) (hk : GL Y k), p.IsLoc FS g gk → p.IsLoc FT h hk → Enl gk hk → ∃ Φ₀ Φ₀' : SB (Matrix Y Y' k), Φ₀ ≠ 0 ∧ Φ₀'.1 = (((μS * μT⁻¹) (Matrix.GeneralLinearGroup.det gk) : ℂˣ) : ℂ) • om μS⁻¹ gk hk Φ₀.1 ∧ ω (g, h) (Tm Φ₀) = Tm Φ₀' := by
   intro D k _ _ _ _ p ψ S T χS χT ω hW μS μT hμS hμT Y Y' _ _ _ _ FS FT Tm hTm g gk h hk hg hh he
   classical
-  obtain ⟨Λ, hdd, hd, hd', hup, hhalf, hchalf⟩ := GlobalTheory.T.localSelfDualLattice_split_place_decomposition D k p ψ hW.std S T Y Y' FS FT
+  obtain ⟨Λ, hdd, hd, hd', hup, hhalf, hchalf⟩ := _root_.GlobalTheory.SplitSelfDual.selfDual_lattice_split D k p ψ hW.std S T Y Y' FS FT
   obtain ⟨R₀, hcard, hR₀, hR₀u⟩ := _root_.GlobalTheory.LocOm.IntIndex.index_integral_image k Y Y' gk hk he
   have hact : ∀ x, actO S T g⁻¹ h⁻¹ (p.up FS FT x) =
       p.up FS FT (((hk⁻¹ : GL Y k) : Matrix Y Y k) * x * (gk : Matrix Y' Y' k)) :=

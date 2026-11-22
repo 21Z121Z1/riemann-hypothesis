@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepW
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HarishChandraFinite
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeCharacterisationPlacesPartsOfWeak
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalOperatorsFormsOnRankSpaceNormalStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalOperatorsFormsOnRankSpaceNormal
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CarriedPartEigensystemPassageOfType
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GoodProjectorUnitaryFormsModelLaws
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsBaseLevelVectorInGoodAlgebraicFormsSpan
@@ -90,7 +90,7 @@ theorem wc_le_wp_of_passage : HoweUnram → ∀ {D : D7} {G : Type} [Group G] [F
   obtain ⟨hcoreF, hSF, -, -, -, hWeq, -⟩ := _root_.GlobalTheory.CoreThree.heckeCharacterisation_places_parts_of_weak R F hCW
   have hcore := hcoreF hEx
   obtain ⟨h, -, hNorm, -, hsum, -, hev, hchar⟩ :=
-    GlobalTheory.T.sphericalOperators_forms_on_rank_space_normal R.toRealDat F.lv2 hcore hSch hOk.ok2.irr R.SF hSF j
+    _root_.GlobalTheory.SphOpsModel.sphericalOperators_forms_on_rank_space_normal_alt R.toRealDat F.lv2 hcore hSch hOk.ok2.irr R.SF hSF j
   have hidem := (eH_laws R.toRealDat F.lv2 hcore hOk.ok2.irr j).1
   by_cases h0 : R.Wc' j c = ⊥
   · rw [h0]; exact bot_le

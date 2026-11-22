@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TransferOn
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaKernelMulConjCuspFormIntegrableOnStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaKernelMulConjCuspFormIntegrableOn
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SetIntegralFundamentalDomainRightTranslateInvari
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ActOMemFinSub
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsPairingSingleNe
@@ -66,7 +66,7 @@ theorem thetaIntegral_param : GlobalTheory.Published.CuspRapidDecay → ∀ D : 
     induction hz using Submodule.span_induction with
     | mem z hz =>
       obtain ⟨a, rfl⟩ := hz
-      refine ⟨fun u hu x => GlobalTheory.T.thetaKernel_mul_conj_cuspForm_integrableOn hP D ψ S T χS χT om hW θ hθ ν 𝓕 hν h𝓕 u y hu hy hc (embV S v a) x,
+      refine ⟨fun u hu x => _root_.GlobalTheory.ChainOnto.ThetaFirstVar.thetaKO_mul_conj_integrableOn hP D ψ S T χS χT om hW θ hθ ν 𝓕 hν h𝓕 u y hu hy hc (embV S v a) x,
         fun γ hγ g => ?_⟩
       show conj (y (γ * g * embV S v a)) = conj (y (g * embV S v a))
       rw [mul_assoc, hy.left γ hγ]

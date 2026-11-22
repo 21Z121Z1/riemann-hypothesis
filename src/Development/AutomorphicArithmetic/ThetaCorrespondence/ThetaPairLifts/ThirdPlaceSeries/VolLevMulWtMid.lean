@@ -31,7 +31,7 @@ theorem volLev_mul_wt_mid_alt : ∀ {B : GlobalTheory.Mem.Base} {X : PreX B.toPr
     obtain ⟨H, φ, hH, hφK, hφs, hU⟩ := hK t J hJ α
     have hidx := relIndex_eq_prod_of_pi φ Up (J.A.U j (J.ι j α)) (fun i => KO (J.G i).k _) H hφK hφs hU
     have hreps := (_root_.GlobalTheory.ChartReps.twDat_reps I hW.tr.ok hW.tr.pins.some l Z u (W.P.I.tup t) J.Ch₀ J.A hJ.is j (by omega) (J.ι j α)).1
-    have hvol := GlobalTheory.T.archimedeanLevelVolume_mul_relIndex (I.rec7 l Z) _ (a.g.x j).vol (J.A.U j (J.ι j α)) Up (fun g hg => ((hU g).1 hg).1) hUpf hUpc
+    have hvol := _root_.GlobalTheory.LevVol.volLev_mul_relIndex (I.rec7 l Z) _ (a.g.x j).vol (J.A.U j (J.ι j α)) Up (fun g hg => ((hU g).1 hg).1) hUpf hUpc
       hreps.opn
     have hwt : J.wt j α = ((J.A.U j (J.ι j α)).relIndex Up : ℂ) := by
       rw [hidx, _root_.GlobalTheory.Fam.QuadraticExtensionData.wt]

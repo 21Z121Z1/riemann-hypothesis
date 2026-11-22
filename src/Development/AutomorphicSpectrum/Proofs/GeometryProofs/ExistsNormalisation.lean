@@ -6,8 +6,8 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CentreSetDominatingPoint
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DominatesRegAtLocal
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IntegralClosureFinite
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IntegralClosureChartSpanStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueDominatingMapStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IntegralClosureChartSpan
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueDominatingMap
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.JoinCoordsChartIntegral
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChartPrimeExistsUniquePoint
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProjectiveModelNonempty
@@ -19,7 +19,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PrimeMemIffNotUnitL
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegularFunctionsTwoComponents
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChartRingIntegralFraction
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChartRingIntegralClosureFiniteStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DominatingModelChartCompatStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DominatingModelChartCompat
 open AlgebraicGeometry CategoryTheory GlobalTheory.CompanionTheory.Ar NumberField
 
 noncomputable section
@@ -333,7 +333,7 @@ theorem exists_normalisation : ∀ (o : Type) [CommRing o] [Algebra.EssFiniteTyp
   have hinj : ∀ c, x c ≠ 0 → algebraMap Ω Ω' (x c) ≠ 0 := fun c hc => by
     simpa using hc
   have hinj' : ∀ c, algebraMap Ω Ω' (x c) ≠ 0 → x c ≠ 0 := fun c hc h => hc (by simp [h])
-  obtain ⟨d, n, z, hz1, hz2⟩ := GlobalTheory.T.integral_closure_chart_span o Ω' κ (fun k => algebraMap Ω Ω' (x k))
+  obtain ⟨d, n, z, hz1, hz2⟩ := _root_.GlobalTheory.CompanionTheory.Ar.IntClGens.exists_twisted_gens o Ω' κ (fun k => algebraMap Ω Ω' (x k))
     (fun c hc => GlobalTheory.T.chart_ring_integral_closure_finite M Ω' c (hinj' c hc))
   set x' : κ → Ω' := fun k => algebraMap Ω Ω' (x k) with hx'
   set y := joinCo (RingHom.id Ω') x' z with hy
@@ -366,7 +366,7 @@ theorem exists_normalisation : ∀ (o : Type) [CommRing o] [Algebra.EssFiniteTyp
     have hc : x c ≠ 0 := hinj' c (left_ne_zero_of_mul hp.1)
     exact (_root_.GlobalTheory.CompanionTheory.Ar.chart_regAt_localisation o Ω' _ y M' _ p' hp).1 _ ((hB c hc _).2
       (isIntegral_algebraMap (x := (⟨_, map_chRing x Ω' c a ha⟩ : chRing o x' c))))
-  obtain ⟨f, hf, -⟩ := GlobalTheory.T.existsUnique_dominating_map o Ω κ x M o Ω' _ y M' (algebraMap Ω Ω') fun p' => by
+  obtain ⟨f, hf, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.ChMorph.existsUnique_dominates o Ω κ x M o Ω' _ y M' (algebraMap Ω Ω') fun p' => by
     obtain ⟨c, hc, hp⟩ := hcov p'
     exact ⟨c, hc, hreg c p' hp⟩
   have hN : Flat.NormalCpt M'.ξ := by
@@ -378,7 +378,7 @@ theorem exists_normalisation : ∀ (o : Type) [CommRing o] [Algebra.EssFiniteTyp
       refine int_trans (chRing o x' c) (chRing o y (c, Sum.inl c)) (fun b hb => (hB c hc b).2
         (isIntegral_algebraMap (x := (⟨b, hb⟩ : chRing o x' c)))) (fun b hb => (hB c hc b).1 hb) a ha
   refine ⟨_, inferInstance, y, M', f, hf, hN, ?_, fun p => ?_⟩
-  · refine GlobalTheory.T.dominating_model_chart_compat M Ω' M' f (fun c => (c, Sum.inl c)) hf hyne
+  · refine _root_.GlobalTheory.CompanionTheory.Ar.ChartFin.isFinite_of_charts M Ω' M' f (fun c => (c, Sum.inl c)) hf hyne
       (fun c hc p' => chart_over M Ω' M' f _ hf (fun c hc a ha => (hB c hc a).2 ha) hC c hc p') fun c hc => ?_
     refine ⟨(Set.finite_range fun k => z k / x' c ^ d).toFinset, fun a => ?_⟩
     rw [Set.Finite.coe_toFinset]

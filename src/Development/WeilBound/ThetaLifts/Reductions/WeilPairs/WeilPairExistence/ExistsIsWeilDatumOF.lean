@@ -5,7 +5,7 @@ import Formalism.LocalToGlobal.IndefiniteReal.DatumF
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.FixedOfMem
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.LatRep
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.IsScalarOneOfComm
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumTwistByHeckeCharactersTrivialBaseStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumTwistByHeckeCharactersTrivialBase
 open scoped TensorProduct Matrix
 open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes
 open GlobalTheory.WeilM GlobalTheory.LFun GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels
@@ -43,10 +43,10 @@ theorem exists_isWeilDatumOF : ∀ (F E : Type) [Field F] [NumberField F] [Field
   intro F E _ _ _ _ _ σ B hB nS nT JS JT hS hT ξ₀ hξ hξσ hLat χS χT hcS hcT rS rT
   obtain ⟨η, hη1, hη2, hη3, hη4⟩ := PositivityTheory.ThKW.exists_eta F E σ B hB
   obtain ⟨Λ, hΛ1, hΛ2⟩ := hLat
-  have hc : GlobalTheory.FinLatF.HeisClosedF σ JS JT ξ₀ B.ψ := GlobalTheory.T.theta_function_heisenberg_invariant F E σ B hB nS nT JS JT ξ₀
+  have hc : GlobalTheory.FinLatF.HeisClosedF σ JS JT ξ₀ B.ψ := _root_.GlobalTheory.HeisThetaF.isThetaFunOF_heisOF F E σ B hB nS nT JS JT ξ₀
   obtain ⟨w, lam, Om, hO⟩ := PositivityTheory.ThKW.latRep F E σ B hB nS nT JS JT hS hT ξ₀ hξ hξσ Λ hΛ1 hΛ2 hc
   obtain ⟨om, hom⟩ := PositivityTheory.ThKW.datumEta F E σ B hB nS nT JS JT hS hT ξ₀ hξ hξσ Λ hΛ1 hΛ2 hc w lam Om hO η hη1 hη2 hη3 hη4
-  obtain ⟨om', hom'⟩ := GlobalTheory.T.weil_datum_twist_by_hecke_characters_trivial_base F E σ B hB nS nT JS JT hS hT ξ₀ hξ hξσ _ _ ((η ^ nS)⁻¹ * χS) ((η ^ nT)⁻¹ * χT) om hom
+  obtain ⟨om', hom'⟩ := _root_.GlobalTheory.WeilTwistF.exists_weilDatumOF_twist F E σ B hB nS nT JS JT hS hT ξ₀ hξ hξσ _ _ ((η ^ nS)⁻¹ * χS) ((η ^ nT)⁻¹ * χT) om hom
     (isHeckeCharF_div_pow hcS hη1 _) (isHeckeCharF_div_pow hcT hη1 _)
     (resEtaF_div_pow rS hη2) (resEtaF_div_pow rT hη2)
   rw [mul_inv_cancel_left, mul_inv_cancel_left] at hom'

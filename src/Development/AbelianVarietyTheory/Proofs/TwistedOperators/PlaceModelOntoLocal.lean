@@ -3,8 +3,8 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RestrictedTensor
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsIntOv
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOrEqOfPlaceIdem
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.RealIdemMulOfReal
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockVacuaLocalFactorsStableHeisenbergAwayStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocalFactorMemSpanLocalHeisenbergTranslatesStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockVacuaLocalFactorsStableHeisenbergAway
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocalFactorMemSpanLocalHeisenbergTranslates
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchwartzBruhatHalfSpanModulatedTranslates
 
 noncomputable section
@@ -69,7 +69,7 @@ theorem placeModel_onto_local : ∀ (D : Formalism.BasicNotions.D7) (ψ : AddCha
   have hT := hb.2.2.2.1
   obtain ⟨hgen, hspan⟩ := _root_.GlobalTheory.PlaceTensor.halfWaves_span D ψ S T ΛS ΛT hψ hS hT a h1 h2 (GlobalTheory.PlaceModelSum.infPart_split ha)
   have st := fun f (hf : IsLocal ψ θ S T sS sT ΛS ΛT (.inl v) f) =>
-    (GlobalTheory.T.fockVacua_localFactors_stable_heisenberg_away D ψ θ S T sS sT ΛS ΛT hψ hθ f hf.1).2 (.inl v) hf
+    (_root_.GlobalTheory.PlaceStable.heis_stable D ψ θ S T sS sT ΛS ΛT hψ hθ f hf.1).2 (.inl v) hf
   have l0 := base_isLocal hb (.inl v)
   have lz : IsLocal ψ θ S T sS sT ΛS ΛT (.inl v) 0 := by
     have := (st f₀ l0).2.1 (-1) f₀ l0
@@ -97,7 +97,7 @@ theorem placeModel_onto_local : ∀ (D : Formalism.BasicNotions.D7) (ψ : AddCha
       rw [map_smul]; exact this
   · refine Submodule.span_induction
       (p := fun x _ => ∃ Φ, IsSBHalf a (latO S T ΛS ΛT fun _ => True) Φ ∧ Tm Φ = x)
-      ?_ ?_ ?_ ?_ (GlobalTheory.T.localFactor_mem_span_localHeisenbergTranslates D ψ θ S T sS sT ΛS ΛT f₀ hb v x hx)
+      ?_ ?_ ?_ ?_ (_root_.GlobalTheory.LocalSpan.mem_span_local D ψ θ S T sS sT ΛS ΛT f₀ hb v x hx)
     · rintro _ ⟨w, rfl⟩
       have hx : IsHalf a (a • w) := by rw [GlobalTheory.SplitScalar.isHalf_iff, smul_smul, h1]
       have hy : IsHalf (cA D a) (cA D a • w) := by rw [GlobalTheory.SplitScalar.isHalf_iff, smul_smul, c1]

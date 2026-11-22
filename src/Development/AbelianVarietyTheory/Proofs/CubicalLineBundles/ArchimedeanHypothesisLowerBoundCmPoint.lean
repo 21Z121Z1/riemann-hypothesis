@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.CuspFormBoundedBySupNormAtGoodEmbeddingAllEmbedd
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsMetricDataCmPointComplexEmbeddingStatement
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsMetricDataCmPointComplexEmbedding
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.FramePolynomialEquivariantAndNeZero
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.MetricChangeOfFrameStatement
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUniqueFrameChangeByMatrices
@@ -38,7 +38,7 @@ theorem step5Arch_cm : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H
   intro E _ _ _ H Dw l Xo c _ _ r U ξ hU hξ hpq z f La hz a n hD F hF G hG σ
   obtain ⟨yσ, hy⟩ := GlobalTheory.Frames.FramedBaseChange.exists_frMap GlobalTheory.lawsFieldsSeparately.2.1 E H Dw l Xo c z.K
     (CAt (σ.comp (algebraMap c.F z.K))) (embAlg σ) z.y
-  obtain ⟨Hm, hpd, hLam, hU', hmet⟩ := GlobalTheory.T.exists_metricData_cmPoint_complexEmbedding E H Dw l Xo c z f La hz σ yσ hy
+  obtain ⟨Hm, hpd, hLam, hU', hmet⟩ := _root_.GlobalTheory.LamT.CMMetric.exists_isMetric E H Dw l Xo c z f La hz σ yσ hy
   have hsec : F ∈ sec Xo c a n := Formalism.L2.Pj.cusp_le_sec Xo c U a n hF
   refine ⟨Hm, hpd, hLam, hU', (_root_.GlobalTheory.LamT.isFrPoly_equiv_and_ne_zero E H Dw l Xo c z.K z.y a n F hsec G hG).1 σ, ?_⟩
   intro Y hY

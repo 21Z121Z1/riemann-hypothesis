@@ -6,13 +6,14 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PLocPrjGOfNotMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousInvolutiveLocalTransposeInverse
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalSupportFacts
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeckeIntegralFiniteSum
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDiagonalDoubleCosetsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDiagonalDoubleCosets
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactPartDiagonalMap
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsCompactConjugacyTransversal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeckeConvolutionSupport
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RelIndexNeZeroOfOpenLe
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SwapTwistedCentralizerDiagonal
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedOrbitalSwapConvolutionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedOrbitalSwapConvolution
+import Development.AbelianVarietyTheory.Definitions.Divisors.GaloisRepOfPolarizedCuspidal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RightStabilizerConjBiinvariantFiniteIndex
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StabilizerIndexNeZero
@@ -92,7 +93,7 @@ theorem splitConv_of_finite : ∀ (H : Type) [Group H] [TopologicalSpace H] [IsT
     rw [map_one]
   rw [he] at step₂
   rw [step₂]
-  exact GlobalTheory.T.twisted_orbital_swap_convolution H K K' (d * σ d') f₁ f₂ hKo hKc hK'o hK'K h₁ h₂ hG
+  exact _root_.GlobalTheory.CompanionTheory.SplitSwap.main H K K' (d * σ d') f₁ f₂ hKo hKc hK'o hK'K h₁ h₂ hG
     (_root_.GlobalTheory.CompanionTheory.OrbitalCount.exists_compact_reps_of_finite_doubleCosets H K (d * σ d') hKc hfin)
 
 end GlobalTheory.CompanionTheory.SplitConvF

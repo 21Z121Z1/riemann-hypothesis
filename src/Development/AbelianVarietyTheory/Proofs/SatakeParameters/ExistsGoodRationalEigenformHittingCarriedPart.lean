@@ -5,11 +5,11 @@ import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepW
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HarishChandraFinite
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeCharacterisationPlacesPartsOfWeak
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PartsEqOfSameEigensystemThetaAdjointStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PartsEqOfSameEigensystemThetaAdjoint
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaIntertwinesMatchedOperators
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalOperatorsFormsOnRankSpaceNormalStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalOperatorsFormsOnRankSpaceNormal
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RealizationFamilyNormalOperatorsStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GoodProjectorUnitaryFormsModelLaws
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SpanImageMaxGenEigenspace
@@ -358,7 +358,7 @@ theorem witness_real {I : Type} (R : RealDat D A Ks) (F : Face D A) (hCore : Cor
       R.thG j A.μ0 (R.jV j A.μ0 x) ∈ Wcc R SF j c ∧ R.thG j A.μ0 (R.jV j A.μ0 x) ≠ 0 ∧
       labW j pl cW c = fun i => D.what₂.embLL (sy i) := by
   have hM := hCore.models
-  refine Exists.elim (GlobalTheory.T.sphericalOperators_forms_on_rank_space_normal R F hCore hSch hirr SF hSF j) fun h hh => ?_
+  refine Exists.elim (_root_.GlobalTheory.SphOpsModel.sphericalOperators_forms_on_rank_space_normal_alt R F hCore hSch hirr SF hSF j) fun h hh => ?_
   have hOpsW := hh.1
   have hNorm := hh.2.1
   have hSup := hh.2.2.2.1
@@ -460,7 +460,7 @@ theorem exists_good_eigenform : HoweUnram → ∀ {D : D7} {G : Type} [Group G] 
       LinearMap.adjoint (R.thG j A3.A.μ0) w ≠ 0 → LinearMap.adjoint (R.thG j A3.A.μ0) w' ≠ 0 →
       labW j pl cW c = labW j pl cW c' → Wcc R.toRealDat R.SF j c = Wcc R.toRealDat R.SF j c' := by
     intro c c' w hw w' hw' h1 h2 h3
-    have h4 := GlobalTheory.T.parts_eq_of_same_eigensystem_thetaAdjoint hHowe R F hLI hC hEx hSch hJunk hirr j pl cV cW hDict c c' w (by rw [hWeq]; exact hw) w'
+    have h4 := _root_.GlobalTheory.Hk3.SepLift.parts_eq_of_labW hHowe R F hLI hC hEx hSch hJunk hirr j pl cV cW hDict c c' w (by rw [hWeq]; exact hw) w'
       (by rw [hWeq]; exact hw') h1 h2 h3
     rw [hWeq, hWeq] at h4
     exact h4

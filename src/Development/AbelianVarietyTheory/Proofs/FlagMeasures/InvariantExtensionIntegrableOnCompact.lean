@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.ConvolutionS
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FiniteAdelicUnitaryCongruenceTopology
 import Formalism.SharpRestriction.CuspSpanNormBounds.GlobAut
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalUnitaryPointsDiscreteFundamentalDomainStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalUnitaryPointsDiscreteFundamentalDomain
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AdelicUnitaryHaarBiInvariant
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AestronglyMeasurableCompRep
 
@@ -116,7 +116,7 @@ theorem ext_integrableOn : ∀ (B : RowsAut) (C : Set B.I.GA), IsCompact C → �
     ∀ F : B.I.L2 B.μf B.fund, IntegrableOn (B.I.ext F) C (B.I.muA B.μf) ∧
       ∫ y in C, ‖B.I.ext F y‖ ∂(B.I.muA B.μf) ≤ M * ‖F‖ := by
   intro B C hC
-  obtain ⟨Γ, hΓ, hΓc, hfin, hfd⟩ := GlobalTheory.T.rationalUnitaryPoints_discrete_fundamentalDomain B.I
+  obtain ⟨Γ, hΓ, hΓc, hfin, hfd⟩ := _root_.GlobalTheory.RatDiscrete.rational_points B.I
   obtain ⟨hT2, -, hsc, -⟩ := _root_.GlobalTheory.CongTop.adelic_topology B.I
   haveI := hΓc
   haveI := hT2

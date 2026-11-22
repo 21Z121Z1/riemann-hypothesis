@@ -4,9 +4,9 @@ import Development.AbelianVarietyTheory.Definitions.Foundations.IsHermND
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementReferenceCompactSubgroup
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.HermLat
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InvVolMulPosLeConj
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsLatticeStabilizerNormalisingSubgroupStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PowEqZeroOfMemHermitianFrameUnipotentStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LatticeStabilizerCommensurableUnramifiedHermitiaStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsLatticeStabilizerNormalisingSubgroup
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PowEqZeroOfMemHermitianFrameUnipotent
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LatticeStabilizerCommensurableUnramifiedHermitia
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CongruenceSubgroupLatticeStabilizer
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HaarInvVolumeConjModularCharacter
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnipotentStabilizesSomeLattice
@@ -46,25 +46,25 @@ theorem volSt {F : Type} [Field F] [ValuativeRel F] [TopologicalSpace F] [IsNona
     ∀ C, S.IsCls C → S.K0.relIndex (S.St ⊓ MulAction.stabilizer S.GLV C) ≠ 0 ∧
       (S.St ⊓ MulAction.stabilizer S.GLV C).relIndex S.K0 ≠ 0 ∧ 1 ≤ S.wC C ∧
       ∀ h ∈ S.St, S.wC (h • C) = S.wC C := by
-  obtain ⟨Λ1, hΛ1, hK0, -⟩ := GlobalTheory.T.exists_lattice_stabilizer_normalising_subgroup L r k S 1 S.N.one_mem 1 S.N'.one_mem
+  obtain ⟨Λ1, hΛ1, hK0, -⟩ := _root_.GlobalTheory.HL.FrameStabLat.main L r k S 1 S.N.one_mem 1 S.N'.one_mem
   have hK : S.K0 = S.St ⊓ stabL L Λ1 := hK0.symm
   have hc : ∀ Λ, IsLat L Λ → S.K0.relIndex (S.St ⊓ stabL L Λ) ≠ 0 ∧
       (S.St ⊓ stabL L Λ).relIndex S.K0 ≠ 0 := by
     intro Λ hΛ
     rw [hK]
-    exact ⟨(GlobalTheory.T.latticeStabilizer_commensurable_unramified_hermitian L Λ Λ1 hΛ hΛ1 S.St).1, (GlobalTheory.T.latticeStabilizer_commensurable_unramified_hermitian L Λ1 Λ hΛ1 hΛ S.St).1⟩
+    exact ⟨(_root_.GlobalTheory.LatComm.stab_commensurable L Λ Λ1 hΛ hΛ1 S.St).1, (_root_.GlobalTheory.LatComm.stab_commensurable L Λ1 Λ hΛ1 hΛ S.St).1⟩
   have hconj : ∀ h ∈ S.St, S.K0.relIndex (MulAut.conj h • S.K0) ≠ 0 ∧
       (MulAut.conj h • S.K0).relIndex S.K0 ≠ 0 := by
     intro h hh
     have e : MulAut.conj h • S.K0 = S.St ⊓ stabL L (h • Λ1) := by
       rw [hK]; exact (volSt_inf_stab_smul S.St hh Λ1).symm
     rw [e]
-    exact hc _ ((GlobalTheory.T.latticeStabilizer_commensurable_unramified_hermitian L Λ1 Λ1 hΛ1 hΛ1 S.St).2 h).1
+    exact hc _ ((_root_.GlobalTheory.LatComm.stab_commensurable L Λ1 Λ1 hΛ1 hΛ1 S.St).2 h).1
   have hle : S.K0 ≤ S.St := by rw [hK]; exact inf_le_left
   have hmod := (_root_.GlobalTheory.HL.invVol_conj_modular S.St S.K0 hle hconj).2.2.2
   have hone : ∀ h ∈ S.St, invVol S.K0 (MulAut.conj h • S.K0) = 1 := by
     intro h hh
-    obtain ⟨Λ, hΛ, hs⟩ := _root_.GlobalTheory.HL.exists_isLat_stabL_of_unipotent L h _ (GlobalTheory.T.pow_eq_zero_of_mem_hermitianFrameUnipotent L r k S h hh.1)
+    obtain ⟨Λ, hΛ, hs⟩ := _root_.GlobalTheory.HL.exists_isLat_stabL_of_unipotent L h _ (_root_.GlobalTheory.FlagUnipotent.main L r k S h hh.1)
     exact (hmod _ (hc Λ hΛ).1 (hc Λ hΛ).2 h hh).2 (volSt_conj_self _ ⟨hh, hs⟩)
   have hinv : ∀ K' : Subgroup S.GLV, S.K0.relIndex K' ≠ 0 → K'.relIndex S.K0 ≠ 0 → ∀ h ∈ S.St,
       invVol S.K0 (MulAut.conj h • K') = invVol S.K0 K' := by
@@ -75,7 +75,7 @@ theorem volSt {F : Type} [Field F] [ValuativeRel F] [TopologicalSpace F] [IsNona
     rw [volSt_inf_stab_smul S.St hh Λ]
     exact hinv _ (hc Λ hΛ).1 (hc Λ hΛ).2 h hh
   rintro C ⟨n, hn, n', hn', hC⟩
-  obtain ⟨Λ, hΛ, e1, e2, e3⟩ := GlobalTheory.T.exists_lattice_stabilizer_normalising_subgroup L r k S n hn n' hn'
+  obtain ⟨Λ, hΛ, e1, e2, e3⟩ := _root_.GlobalTheory.HL.FrameStabLat.main L r k S n hn n' hn'
   rw [← hC] at e2 e3
   obtain ⟨⟨K, hKm, hKi, -⟩, -⟩ := _root_.GlobalTheory.HL.congruence_subgroup_facts L S.ϖ S.ϖ_irr Λ hΛ 1
   have a1 : S.K0.relIndex (S.St ⊓ MulAction.stabilizer S.GLV C) ≠ 0 :=

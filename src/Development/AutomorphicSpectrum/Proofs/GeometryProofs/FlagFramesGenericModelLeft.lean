@@ -4,7 +4,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapStalkMap
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapGermEqGenMapGerm
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeEigenVectorBundle
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StalkSpecializesBijective
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlagBasisChangeIntegralStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlagBasisChangeIntegral
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MinorRatioRegularOfInvertibleStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrameChangeByUnitMatrix
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlagChartGenericField
@@ -66,7 +66,7 @@ theorem pull_isFlagVB_genB : ∀ (X : Scheme.{0}) (Ω : Type) [Field Ω] (ξ : S
     have := congrArg (fun M : Matrix (Fin (r s)) (Fin (r s)) Ω => M.map ι) hBA
     simpa [B, A, A₀, Matrix.map_mul] using this
   haveI : IsLocalRing (regAt ξ' p') := EigSplit.isLocalRing_regAt p'
-  obtain ⟨P, hPreg, hP0, hPinv, hPflag⟩ := GlobalTheory.T.flag_basis_change_integral (GenField Ω r) (regAt ξ' p') (r s) (fun c i => G i c) (fun k =>
+  obtain ⟨P, hPreg, hP0, hPinv, hPflag⟩ := _root_.GlobalTheory.CompanionTheory.Ar.FlagBun.Adapted.exists_adapted (GenField Ω r) (regAt ξ' p') (r s) (fun c i => G i c) (fun k =>
     GlobalTheory.T.minor_ratio_regular_of_invertible (GenField Ω r) (regAt ξ' p') (n s) (r s) A B G a k (J ⟨s, k⟩)
       (fun j l => hreg _ (hAreg j l)) (fun l j => hreg _ (hBreg l j)) hBA' ha
       (by have := (hmin ⟨s, k⟩).1; rwa [show flagMat φ c (⟨s, k⟩ : Σ s, Fin (r s)).1 = a • (A * G) from hF] at this)

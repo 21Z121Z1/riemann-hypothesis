@@ -8,8 +8,9 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HandBFSmul
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatThetaMapsPreserveThetaFunctions
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergCombinationDisjointPlacesCommuteVacua
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TrivialAtPlaceCommSeeSawCombinationKeepsVacuum
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatMapHandedFunctionVanishingPeriodInvariantStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnitaryFiniteAdelicGroupSplitFinitePlaceSetStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatMapHandedFunctionVanishingPeriodInvariant
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ValueDoubleExact
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnitaryFiniteAdelicGroupSplitFinitePlaceSet
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.IndefR.Datum MeasureTheory IsDedekindDomain NumberField Matrix
 open GlobalTheory.MixModel GlobalTheory.MixPer GlobalTheory.Grow GlobalTheory.Unf GlobalTheory.SeeSaw GlobalTheory.FinPl
 open scoped TensorProduct
@@ -64,12 +65,12 @@ theorem grpAt_off {V : HSp D} {P R : Pl D → Prop} (h : ∀ p, P p → ¬ R p) 
   exact fun u => h1.2 ⟨u.1, fun hp => h _ hp u.2⟩
 
 theorem grpAt_fin {V : HSp D} {P : Pl D → Prop} {g : GA D V} (hg : g ∈ grpAt V P) : g ∈ GfC V :=
-  (GlobalTheory.T.unitaryFiniteAdelicGroup_split_finitePlaceSet D V ∅).2.2.2.1 (grpAt_mono (fun p _ => Finset.notMem_empty p) hg)
+  (_root_.GlobalTheory.FinPl.SetCut.grp_split D V ∅).2.2.2.1 (grpAt_mono (fun p _ => Finset.notMem_empty p) hg)
 
 theorem split_two {V : HSp D} (G Q : Finset (Pl D)) {x : GA D V} (hx : x ∈ GfC V)
     (hx' : x ∈ grpOff V fun p => p ∉ G ∧ p ∉ Q) :
     ∃ y ∈ grpAt V (· ∈ Q), ∃ z ∈ grpAt V (· ∈ G), x = y * z := by
-  obtain ⟨-, -, hQ, -, -, ⟨e, he⟩, -, hinf, -⟩ := GlobalTheory.T.unitaryFiniteAdelicGroup_split_finitePlaceSet D V Q
+  obtain ⟨-, -, hQ, -, -, ⟨e, he⟩, -, hinf, -⟩ := _root_.GlobalTheory.FinPl.SetCut.grp_split D V Q
   obtain ⟨p, hp⟩ := e.surjective ⟨x, hx⟩
   have hxe : x = p.1.1 * p.2.1 := by rw [← he p, hp]
   refine ⟨p.1.1, p.1.2, p.2.1, ?_, hxe⟩
@@ -146,7 +147,7 @@ theorem integ_support : ∀ (D : D7) (c : Comm D) (v : VCom c) (t : Tup c) (w : 
     rw [this]
     exact mul_mem (mul_mem (inv_mem (grpAt_fin hrP)) hq₂) (inv_mem (grpAt_fin hκ.1))
   obtain ⟨yQ, hyQ, z, hz, rfl⟩ := split_two v.gP w.Q hyf hy
-  have comm := (GlobalTheory.T.unitaryFiniteAdelicGroup_split_finitePlaceSet D (c.V (j + 1 + 1)) v.gP).2.2.2.2.1
+  have comm := (_root_.GlobalTheory.FinPl.SetCut.grp_split D (c.V (j + 1 + 1)) v.gP).2.2.2.2.1
   have hQG : ∀ p, p ∈ w.Q → p ∉ v.gP := fun p hp => Finset.disjoint_left.mp hF.disjG hp
   have hyQ' := grpAt_mono hQG hyQ
   have hκ' : κ ∈ grpAt _ (· ∉ v.gP) := grpAt_mono (fun p hp => hp.1) hκ.1
@@ -164,7 +165,7 @@ theorem integ_support : ∀ (D : D7) (c : Comm D) (v : VCom c) (t : Tup c) (w : 
     refine W₂.om_pres _ _ ?_
     rw [← E₂]
     exact (moved_data W₂ hF.disjG (hv.atG (j + 1)).1 (hF.atQ (j + 1)).1 h₂ hq₁ hyQ).1.1
-  have hR := (GlobalTheory.T.flatMap_handedFunction_vanishing_period_invariant D c.ψ (offP v w)).2 σ _ _ (t.sFB j σ h) (c.vL j σ h)
+  have hR := (_root_.GlobalTheory.FlatRInv.vanish_invariant D c.ψ (offP v w)).2 σ _ _ (t.sFB j σ h) (c.vL j σ h)
     (handBF (t.sBF j (σ + 1) h) (c.lnk j σ h) (φ α) (flatBF (t.sBF j (σ + 1) h) (comb c.ψ _ _ (v.eG j) Ψ₁'))) _ T₂ r hr hrP
   rw [e₂] at hR
   rw [hΦ, E₁] at hH

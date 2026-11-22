@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotrop
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WordAppend
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AppSmul
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanDecayOperatorApplyMemAdelicSchwartzStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanDecayOperatorApplyMemAdelicSchwartz
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergDerivArchimedeanLiftTraceFormula
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergDerivArchimedeanWeilRepIntertwine
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanCoordsMovedStaySupportedAndRecovered
@@ -38,8 +38,8 @@ theorem GlobalTheory.ArchDecay.word_action_square_integrable : ∀ (F E : Type) 
   have hcl : ∀ ζ, ∀ f ∈ schA F (Fin n × Fin d), heisD M B.ψ (liftI M ζ) f ∈ schA F (Fin n × Fin d) := by
     intro ζ f hf
     rw [hT ζ f hf, dR]
-    exact Submodule.add_mem _ (GlobalTheory.T.archimedeanDecayOperatorApply_mem_adelicSchwartz F _ (Sum.inl ζ.1) f hf)
-      (Submodule.smul_mem _ c (GlobalTheory.T.archimedeanDecayOperatorApply_mem_adelicSchwartz F _ (Sum.inr _) f hf))
+    exact Submodule.add_mem _ (_root_.GlobalTheory.ArchDecay.SchAStab.app_mem_schA F _ (Sum.inl ζ.1) f hf)
+      (Submodule.smul_mem _ c (_root_.GlobalTheory.ArchDecay.SchAStab.app_mem_schA F _ (Sum.inr _) f hf))
   have hHcl : ∀ zs f, f ∈ schA F (Fin n × Fin d) → wordH M B.ψ zs f ∈ schA F (Fin n × Fin d) := by
     intro zs f hf
     induction zs with

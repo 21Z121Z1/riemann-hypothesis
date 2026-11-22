@@ -3,11 +3,11 @@ import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.HodgeWe
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.CechModulesFunctorShortExactOfIsAffineOpen
 import Development.AbelianVarietyTheory.Definitions.QuasicoherentCohomology.TopologicalKrullDimLeOfIrreducibleCloseds
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CubeResApply
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NaturalDegreeZeroHomologyIsoStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoinducedNerveAcyclicStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NaturalDegreeZeroHomologyIso
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoinducedNerveAcyclic
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoinducedCechAcyclicStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NerveCechDegreeZeroCompatibleStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CochainCohomologyNerveHomologyEquivStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NerveCechDegreeZeroCompatible
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CochainCohomologyNerveHomologyEquiv
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CechStructureSheafComparisonStatement
 
 set_option autoImplicit false
@@ -78,11 +78,11 @@ theorem exists_toCoind_shortExact {R : Type} [CommRing R] {P : Type} [Semilattic
 theorem nonempty_iso {R : Type} [CommRing R] {P : Type} [SemilatticeInf P] {κ : Type} [LinearOrder κ] (e : κ → P)
     (he : Function.Bijective e) (n : ℕ) (G : Pᵒᵖ ⥤ ModuleCat.{0} R) :
     Nonempty ((nerveCx.obj G).homology n ≅ ((cechOf e).obj G).homology n) := by
-  obtain ⟨ε, h1, h2⟩ := GlobalTheory.T.nerve_cech_degree_zero_compatible (R := R) e he
-  refine GlobalTheory.T.natural_degree_zero_homology_iso nerveCx (cechOf e) ε h1 h2 (fun G ↦ ?_) n G
+  obtain ⟨ε, h1, h2⟩ := _root_.GlobalTheory.CompanionTheory.Hodge.Nerve.DegZero.degZero (R := R) e he
+  refine _root_.GlobalTheory.CompanionTheory.Hodge.DimShift.homology_nonempty_iso nerveCx (cechOf e) ε h1 h2 (fun G ↦ ?_) n G
   obtain ⟨Q, p, w, h⟩ := exists_toCoind_shortExact G
   exact ⟨_, Q, toCoind G, p, w, nerveCx_shortExact _ h, cechOf_shortExact e _ h,
-    fun n ↦ ⟨GlobalTheory.T.coinduced_nerve_acyclic _ n, GlobalTheory.T.coinduced_cech_acyclic e he.2 _ n⟩⟩
+    fun n ↦ ⟨_root_.GlobalTheory.CompanionTheory.Hodge.Nerve.isZero_homology_coind _ n, GlobalTheory.T.coinduced_cech_acyclic e he.2 _ n⟩⟩
 
 theorem cmpSt_of_cxSt : CxSt → CmpSt := by
   intro _ R _ X s _ P _ _ S
@@ -108,7 +108,7 @@ theorem cmpSt_of_cxSt : CxSt → CmpSt := by
     obtain ⟨f⟩ := GlobalTheory.T.cech_structure_sheaf_comparison R X s P S e' n
     have : (GlobalTheory.structureModule X).IsQuasicoherent := GlobalTheory.QCoh.IsFiniteQC.isQuasicoherent
     exact ⟨i.toLinearEquiv ≪≫ₗ f ≪≫ₗ GlobalTheory.cechHEquivCoh R hc hD (GlobalTheory.structureModule X) n⟩
-  obtain ⟨⟨a⟩, b⟩ := GlobalTheory.T.cochain_cohomology_nerve_homology_equiv (OSys s S)
+  obtain ⟨⟨a⟩, b⟩ := _root_.GlobalTheory.CompanionTheory.Hodge.Nerve.Low.homology_nerveCx (OSys s S)
   obtain ⟨k⟩ := key 0
   refine ⟨⟨a ≪≫ₗ k⟩, fun n ↦ ?_⟩
   obtain ⟨b'⟩ := b n

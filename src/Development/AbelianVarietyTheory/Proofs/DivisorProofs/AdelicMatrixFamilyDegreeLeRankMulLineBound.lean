@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.IsAdmissibleIntegra
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FunctionFieldOneVariableTranscendentalFiniteAndE
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAdmissibleAdelicMatrixFamilyPullbackExtension
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IwasawaDecompositionAdmissibleFamily
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuotientLineDegreeLeOfTriangularFamilyStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuotientLineDegreeLeOfTriangularFamily
 
 open scoped IntermediateField Polynomial RatFunc
 open GlobalTheory.Nef
@@ -55,7 +55,7 @@ theorem deg_le_rank_mul_of_linesLE : ∀ (r : ℕ) (k F : Type) [Field k] [IsAlg
       have hδle : (degLine (pullAd ρ g) x : ℝ) ≤ a * Module.finrank F E := haS E ρ hρ x hx
       obtain ⟨h, u, -, -, hzero, hadm', hadmq, hdeg, hsum, hlines⟩ :=
         _root_.GlobalTheory.iwasawa_family k E hE r (pullAd ρ g) hGadm x hx
-      have hLq := GlobalTheory.T.quotient_line_degree_le_of_triangular_family k E hE r (fun v => u v * pullAd ρ g v * h) hadm' hzero hadmq
+      have hLq := _root_.GlobalTheory.Nef.QuotLine.quot_line_le k E hE r (fun v => u v * pullAd ρ g v * h) hadm' hzero hadmq
         (a * Module.finrank F E) (hlines _ hLG)
       rw [hsum] at hLq
       have hq := ih k E hE _ hadmq _ hLq

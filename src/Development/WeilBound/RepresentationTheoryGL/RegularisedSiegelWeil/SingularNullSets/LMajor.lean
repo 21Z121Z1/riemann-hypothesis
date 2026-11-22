@@ -7,8 +7,11 @@ import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TemperateMultiplierPreservesSchwartz
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.WeilSiegelTheta.BigCellDefs
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousRs
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsSchwartzBruhatAdelicMatrixOfMemAdelicSchwartzStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchwartzBruhatAdelicMatrixContinuousLeMajorantStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsSchwartzBruhatAdelicMatrixOfMemAdelicSchwartz
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.SchwartzBruhatMixedFamilies
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.RealSizeNonneg
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HeckeFormNSOfHeckeForm
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchwartzBruhatAdelicMatrixContinuousLeMajorant
 
 noncomputable section
 
@@ -28,7 +31,7 @@ open LMajor in
 theorem major : IdemEx → GoodEv → BumpEx → Major := by
   intro _ _ hB D θ hθ a b S e he Φ hΦ hG
   obtain ⟨k, f, M, hM, hdom⟩ := domBound θ hθ Φ hΦ
-  obtain ⟨-, K, hK, hmaj⟩ := GlobalTheory.T.schwartzBruhatAdelicMatrix_continuous_le_majorant D θ hθ a b Φ (GlobalTheory.T.isSchwartzBruhatAdelicMatrix_of_mem_adelicSchwartz D θ hθ a b Φ hΦ)
+  obtain ⟨-, K, hK, hmaj⟩ := _root_.GlobalTheory.SchwartzMaj.continuous_and_le_maj D θ hθ a b Φ (_root_.GlobalTheory.SchwartzPure.isSchwartzBruhat_of_mem_schwartzA D θ hθ a b Φ hΦ)
   obtain ⟨C0, hC0⟩ := hmaj 0
   have hbox : ∀ x, Φ x ≠ 0 → GlobalTheory.Unf.InBox K x := by
     intro x hx

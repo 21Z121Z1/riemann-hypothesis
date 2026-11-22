@@ -4,11 +4,12 @@ import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Ha
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowestKTypesJointShapeBlockUnitary
 import Formalism.SharpRestriction.Divisibility.SchurIrreducible
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsFockIPOfFockData
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GluingLawHoldsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GluingLawHolds
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ChosenSeries
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFockPolynomialIsoUnitaryPairStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesPureInnerProductsTensorProduct
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRealIntertwinerContractionOnePlace
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealIntertwinerContractionValuesKFiniteStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealIntertwinerContractionValuesKFinite
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsCoverKFinitePairingOfRealIntertwiner
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CovariantPairingUniqueUpToScalar
 
@@ -47,8 +48,8 @@ theorem locW_of_semiW {M : DSModel V S} {M' : DSModel W S'} {τ : D.what₂.Tau}
     {A : PolF D W.rank V.rank →ₗ[ℂ] M'.sm τ →ₗ[ℂ] M.H τ} (h : SemiW M M' τ aS aT A)
     {P : D.what₂.Tau → LPol W.rank V.rank} {j : LPol W.rank V.rank →ₗ[ℂ] PolF D W.rank V.rank}
     (hj : ∀ Q, j Q = glue (Function.update P τ Q)) : LocW M M' τ aS aT (A ∘ₗ j) := by
-  obtain ⟨hKs, hKt⟩ := GlobalTheory.T.realIntertwinerContraction_values_kFinite D V W S S' M M' τ aS aT A h
-  have hG := (GlobalTheory.T.gluing_law_holds D V.rank W.rank).2
+  obtain ⟨hKs, hKt⟩ := _root_.GlobalTheory.Chain.RealLineKFin.kfin D V W S S' M M' τ aS aT A h
+  have hG := (_root_.GlobalTheory.Chain.RealIt.GlueProof.glueLaw D V.rank W.rank).2
   have upd : ∀ Q Q' : LPol W.rank V.rank,
       Function.update (Function.update P τ Q) τ Q' = Function.update P τ Q' := fun Q Q' =>
     Function.update_idem _ _ _
@@ -208,7 +209,7 @@ theorem itLine (D : D7) (X : ProvA) (hX : ChosenSeries X) (h3 : Formalism.MainNo
           ellT M w (inclT M (I₂ (glue P) (PiTensorProduct.tprod ℂ v)))) → I₁ = I₂ := by
     intro I₁ I₂ h
     have hTL := tensorLaw D V _ M
-    refine LinearMap.ext_on_range (GlobalTheory.T.gluing_law_holds D V.rank W.rank).1 fun P => ?_
+    refine LinearMap.ext_on_range (_root_.GlobalTheory.Chain.RealIt.GlueProof.glueLaw D V.rank W.rank).1 fun P => ?_
     refine PiTensorProduct.ext (MultilinearMap.ext fun v => ?_)
     simp only [LinearMap.compMultilinearMap_apply]
     refine hTL.inj (sub_eq_zero.mp (hTL.sep _ fun w => ?_))

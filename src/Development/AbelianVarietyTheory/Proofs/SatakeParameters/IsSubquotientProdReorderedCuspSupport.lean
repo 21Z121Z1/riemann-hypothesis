@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CuspidalPairIrreducibleProductStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ParabolicProductEquivProductOfPartitionStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CuspidalPairIrreducibleProduct
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ParabolicProductEquivProductOfPartition
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ThetaMod
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HasFiniteLengthOfIsIrreducible
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
@@ -33,8 +33,8 @@ theorem isSubquotient_prod₂_of_cuspSupport_reorder : GlobalTheory.Published.Be
     simp [Fintype.card_sigma, sumc, ht]
   let e₁ := Fintype.equivOfCardEq c₁
   let e₂ := Fintype.equivOfCardEq c₂
-  obtain ⟨φ⟩ := GlobalTheory.T.parabolicProduct_equiv_product_of_partition k s d σ S r t e e₁ e₂ (fun a b ha hb n _ _ f f' =>
-    GlobalTheory.T.cuspidal_pair_irreducible_product hBZ hGL hUPI k n (fun i => d (![a, b] i)) (fun i => σ (![a, b] i))
+  obtain ⟨φ⟩ := _root_.GlobalTheory.ProdReorder.reorder_split k s d σ S r t e e₁ e₂ (fun a b ha hb n _ _ f f' =>
+    _root_.GlobalTheory.SwapTwo.swap_two_equiv hBZ hGL hUPI k n (fun i => d (![a, b] i)) (fun i => σ (![a, b] i))
       (fun i => ⟨(hσ _).1, (hσ _).2.2⟩) (hS b hb) (hunl a b ha hb) f f')
   refine ⟨Sᶜ.card, S.card, fun a => Sᶜ.orderEmbOfFin rfl a, fun b => S.orderEmbOfFin rfl b, e₁, e₂, _, _,
     inferInstance, inferInstance, inferInstance, inferInstance,

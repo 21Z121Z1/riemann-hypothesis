@@ -32,7 +32,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedChernIntegralP
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericFiberArithmeticVarietyIntegralProjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedChernMeasureIntegralEqGenericFibre
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsomOfChart
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedChernFormSignedPartMeasureEqOfIsometricProjStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedChernFormSignedPartMeasureEqOfIsometricProj
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoheightOneIffPointClosureDimProjArith
 
 open CategoryTheory AlgebraicGeometry TopologicalSpace Set Filter Topology MeasureTheory
@@ -91,7 +91,7 @@ theorem GlobalTheory.Mix.cycInt_genericFibre : ∀ (k K : Type) [CommRing k] [Fi
     (fun i => (L i).pull (closι (j x)) rfl)
   have h3 := fun i => GlobalTheory.Mix.BcPull.bc_pull_isom k K (algebraMap k K) X G (clos (j x)) G' p q j hp.w (closι (j x)) j' g hg1
     hp''.w τ (L i)
-  have h4 := GlobalTheory.T.mixedChernFormSignedPartMeasure_eq_of_isometric_projOver K G' (g ≫ q) τ hproj'' e _ _ h3
+  have h4 := _root_.GlobalTheory.Mix.part_eq_of_isom K G' (g ≫ q) τ hproj'' e _ _ h3
   conv_lhs => rw [← hgx]
   rw [h1]
   have h5 := (h2 (fun y => f (ptMap (closι (j x)) rfl _ y))).2

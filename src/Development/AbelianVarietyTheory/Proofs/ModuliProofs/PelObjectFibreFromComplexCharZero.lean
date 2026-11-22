@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.FiniteHomogeneousInf
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsPELPull
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PelStructureDescendsFieldExtensionStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PelStructureDescendsFieldExtension
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsRingHomComplexCompEqOfCountable
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaLevelObjectDescendsFgSubfield
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaLevelAbelianSchemePullback
@@ -34,7 +34,7 @@ theorem fromC_of_isPEL : Out.Laws → Out.Laws2 → ∀ (E : Type) [Field E] [Nu
   haveI : Countable K₀ := hcount (countable_of_finiteType o hb.2.1)
   have hcomp : spMap β = spMap K₀.subtype ≫ spMap β₀ := by
     rw [← hβ₀, ← Spec.map_comp]; rfl
-  obtain ⟨τ₀, hτ₀⟩ := GlobalTheory.T.pelStructure_descends_field_extension hL E H D g (N' ^ 2) J a bas o b ρ K₀ K K₀.subtype β₀ (spMap β) t₀ tx τx
+  obtain ⟨τ₀, hτ₀⟩ := _root_.GlobalTheory.PELDesc.isPEL_descends hL E H D g (N' ^ 2) J a bas o b ρ K₀ K K₀.subtype β₀ (spMap β) t₀ tx τx
     hcl hcomp ht₀ hτx
   obtain ⟨-, j, hj⟩ := _root_.GlobalTheory.exists_ringHom_complex_comp_eq_of_countable o em K₀ β₀ hb.1 hb.2.1 hb.2.2
   have hjc : spMap j ≫ spMap β₀ = spMap em := by

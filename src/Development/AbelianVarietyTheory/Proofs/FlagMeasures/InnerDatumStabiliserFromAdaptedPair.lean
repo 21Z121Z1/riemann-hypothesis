@@ -3,7 +3,7 @@ import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.NGData
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.TermLoc
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LocClosed
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FrameAdaptedIsometryOfFixingBothFrames
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InnerDatumStableIffIdentificationsCompatibleStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InnerDatumStableIffIdentificationsCompatible
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LsubGmapOfMapXspEq
 
 open scoped Classical ENNReal
@@ -90,7 +90,7 @@ theorem stab_onto : ∀ (D : D7) (T T' : D.host.E) (F0 F : LFlag (VS D) D.R.rS T
   have hx2' : ∀ x ∈ orth (VS D) (Xsp F'),
       h x - (g * γ * (n' * ((g * γ)⁻¹ * h * (g * γ))) * γ⁻¹ * g⁻¹) x ∈ Xsp F' := by
     rw [e3]; exact hx2
-  have hI := (GlobalTheory.T.innerDatum_stable_iff_identifications_compatible D T T' F0 F F0' F' lam lam' Λ γ g h (n * (g⁻¹ * h * g))
+  have hI := (_root_.GlobalTheory.GdatIota.gdat_iff_iotaCompat D T T' F0 F F0' F' lam lam' Λ γ g h (n * (g⁻¹ * h * g))
     (n' * ((g * γ)⁻¹ * h * (g * γ))) hγ hlam hg hg' hΛ hb1 hb2 hH0 hx1 hx2').mp hdat
   have e4 : h⁻¹ * (g * n⁻¹ * (n * (g⁻¹ * h * g)) * g⁻¹) = 1 := by group
   have hF : h⁻¹ * (g * n⁻¹ * (n * (g⁻¹ * h * g)) * g⁻¹) ∈ NRat F := by rw [e4]; exact nrat_one F

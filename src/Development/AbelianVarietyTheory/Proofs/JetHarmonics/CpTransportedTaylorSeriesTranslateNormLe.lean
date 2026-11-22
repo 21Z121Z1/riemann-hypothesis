@@ -3,9 +3,9 @@ import Development.AbelianVarietyTheory.Definitions.Jets.CmLatticeCommutatorPair
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CpSeriesCoeffNormBoundedRingLaws
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CpTransportedTaylorSeriesInChartRingHomLaws
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NormLeOfDistinct
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IntegralWeierstrassChartXyUnitSeriesStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IntegralWeierstrassChartXyUnitSeries
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsEllipticFunctionMulProdEqXyStatement
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ChartHatCoeffBoundsStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ChartHatCoeffBounds
 
 noncomputable section
 open PowerSeries GlobalTheory.MomOne
@@ -142,7 +142,7 @@ theorem translate_norm_le : ∀ (q : ℕ) [Fact q.Prime] (M : Mdl q) (ℓ : ℂ_
   obtain ⟨m, P, A, B', hP, hid⟩ := GlobalTheory.T.exists_ellipticFunction_mul_prod_eq_xy q M φ hc.1 hE
   have hPx : ∀ i, ‖M.ι (M.x (P i))‖ ≤ 1 := fun i =>
     not_lt.1 fun h => hpole _ (hP i).2 (Or.inr h)
-  obtain ⟨-, v, xs, ys, -, hxs, hys, -, hxs0, hys0, -, -, -, hread⟩ := GlobalTheory.T.integral_weierstrass_chart_xy_unit_series q M ℓ hc
+  obtain ⟨-, v, xs, ys, -, hxs, hys, -, hxs0, hys0, -, -, -, hread⟩ := _root_.GlobalTheory.MomOne.ChartXY.chart_xy q M ℓ hc
   set D : Polynomial ℂ := ∏ i, (Polynomial.X - Polynomial.C (M.x (P i))) with hD
   set k := max A.natDegree B'.natDegree with hk
   have e0 := hread φ A B' k h0 (le_max_left _ _) (le_max_right _ _) (fun _ => 1) analyticAt_const
@@ -157,7 +157,7 @@ theorem translate_norm_le : ∀ (q : ℕ) [Fact q.Prime] (M : Mdl q) (ℓ : ℂ_
     exact bd_mul_one (bd_mul_one (bd_C (norm_coeff_prod M.ι _ hPx i)) (bd_pow bd_X _)) (bd_pow hxs _)
   have hco := Triang.coeff_norm_le q xs ys k (fun i => M.ι (A.coeff i)) (fun i => M.ι (B'.coeff i)) B
     hxs hys hxs0 hys0 hS
-  obtain ⟨hxt, hyt, hbig⟩ := GlobalTheory.T.chart_hat_coeff_bounds q M ℓ t hc hts
+  obtain ⟨hxt, hyt, hbig⟩ := _root_.GlobalTheory.MomOne.Transl.translate_integral q M ℓ t hc hts
   have htl : t ∉ M.L.lattice := fun h => hts (Or.inl h)
   have ax := analyticAt_shift (analyticAt_x_of_not_mem_lattice M htl)
   have ay := analyticAt_shift (analyticAt_y M htl)

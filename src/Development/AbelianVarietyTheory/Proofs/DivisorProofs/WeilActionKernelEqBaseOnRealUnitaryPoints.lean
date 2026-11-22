@@ -91,7 +91,7 @@ theorem weil_kernel_real : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 T0
   intro D G _ _ Pl0 T0 A Ks _ _ _ R F hR i ξ χ ξR Q ω φ hK u hu f hf
   obtain ⟨n, hn, hξn⟩ := hK.fin
   obtain ⟨y, hy⟩ := exists_isDetRoot_pow (Vc D i) hu n hn
-  have h := GlobalTheory.TwistFactorProof.weil_ratio (GlobalTheory.T.weilDatum_unique_on_thetaFunctions D) (GlobalTheory.WeilChange.exists_weilDatum_twist D)
+  have h := GlobalTheory.TwistFactorProof.weil_ratio (_root_.GlobalTheory.WeilUniq.weilDatum_unique D) (GlobalTheory.WeilChange.exists_weilDatum_twist D)
     (hR.thP.ωP i A.μ0) hK.weil hy (GlobalTheory.TwistFactorProof.isDetRoot_one _) hf
   have hc : ChrEq (χ ^ n) 1 := by
     have := GlobalTheory.ConjTwist.BaseInhab.chrEq_pow hK.chr n hn

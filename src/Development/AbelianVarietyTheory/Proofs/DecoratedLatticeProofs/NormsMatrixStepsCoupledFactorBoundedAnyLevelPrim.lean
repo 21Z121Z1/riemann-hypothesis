@@ -82,7 +82,7 @@ theorem factors_leS : GlobalTheory.IndefiniteRowSideFullHecke.PaddedLastEntry.Bl
       unfold NumDatum.Nm Ranks.N
       have : N.R.m - 2 + 1 ≤ N.R.m := by omega
       gcongr
-    have h1 := GlobalTheory.T.coupled_class_sum_cauchy_schwarz X.K Q (placeUnder s.σ₀ hM.1 ρ) (Real.exp (kb (N.R.m - 2 + 1))) (Real.exp (kb N.R.m))
+    have h1 := _root_.GlobalTheory.ColNorms.CplCS.cpl_le X.K Q (placeUnder s.σ₀ hM.1 ρ) (Real.exp (kb (N.R.m - 2 + 1))) (Real.exp (kb N.R.m))
       (Real.exp (Cc * U)) (Real.exp (Cc * U)) (Real.exp (Cc * U)) (Real.exp (Cy * U))
       (Real.exp_pos _).le (Real.exp_pos _).le (Real.exp_pos _).le (Real.exp_pos _).le (Real.exp_pos _).le (Real.exp_pos _).le
       (fun _ => hpos (W.lamTrue u (N.R.m - 2))) (hpos (W.lamTrue u (N.R.m - 2 + 1))) (hpos (W.lamTrue u N.R.m))

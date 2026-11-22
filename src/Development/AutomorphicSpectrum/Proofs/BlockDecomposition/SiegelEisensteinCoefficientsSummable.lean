@@ -2,16 +2,16 @@ import Mathlib
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.WeilSiegelTheta.BigCellDefs
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousRs
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaIntegralContinuous
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaIntegralLocallySummableBoundStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PoissonSummationHermitianLatticeStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaIntegralLocallySummableBound
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PoissonSummationHermitianLattice
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SummableOfLatticeDecayStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FourierOneParameterIntegralStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FourierParameterDerivativeStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TemperateMultiplierPreservesSchwartz
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanMultiplierTemperateStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CharacterAlongOneParameterPathStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InjectivePairingFiniteFamilyStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralMultiplePathTrivialCharacterStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanMultiplierTemperate
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CharacterAlongOneParameterPath
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InjectivePairingFiniteFamily
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralMultiplePathTrivialCharacter
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableSchwartzAHaar
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaSumInvariantUnipotentTranslate
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SchwartzBoundFiniteInfinite
@@ -212,7 +212,7 @@ theorem W_mult {ψ : AddChar (AF D.host.F) ℂ} (hψ : IsCharAF D.host.F ψ) {θ
   have cont : ∀ φ ∈ schwartzA θ V.rank r, Continuous (Jt ψ V μ φ) :=
     fun φ h => _root_.GlobalTheory.CompanionTheory.BigCellJ.jt_continuous D r V ψ θ μ φ hψ hθ hμ' h
   have intg : ∀ φ ∈ schwartzA θ V.rank r, Integrable (Jt ψ V μ φ) lam' := fun φ h =>
-    (GlobalTheory.T.poisson_summation_hermitian_lattice D r ψ hψ lam' 𝓖 hlam _ (cont φ h) (GlobalTheory.T.theta_integral_locally_summable_bound D r V ψ θ μ φ hm hψ hθ hμ' h)).1
+    (_root_.GlobalTheory.CompanionTheory.HermPoisson.poisson_herm D r ψ hψ lam' 𝓖 hlam _ (cont φ h) (_root_.GlobalTheory.CompanionTheory.JtUnif.jt_unif D r V ψ θ μ φ hm hψ hθ hμ' h)).1
   have hc : ∀ (s : ℝ) y, ψ (halfTr (tq V (path hσ a s).1 y)) =
       Complex.exp (2 * Real.pi * Complex.I * ((s * multM θ α V a y : ℝ) : ℂ)) := fun s y => by
     rw [tq_path]
@@ -293,9 +293,9 @@ theorem GlobalTheory.CompanionTheory.WSum.summable_W_of_two_mul_lt_rank : ∀ (D
   haveI : lam.IsAddHaarMeasure := hlam.1
   obtain ⟨ψ₀, h₀, α, hα0, hα⟩ := GlobalTheory.ThetaAllChar.exists_std hψ
   obtain ⟨σ, hσ⟩ := GlobalTheory.RealLineAt.exists_inverse_chart hθ
-  have hph := GlobalTheory.T.character_along_one_parameter_path D ψ ψ₀ h₀ α hα θ σ hσ
-  obtain ⟨d, a, hinj⟩ := GlobalTheory.T.injective_pairing_finite_family D r θ hθ α hα0
-  have hq := fun k => GlobalTheory.T.archimedean_multiplier_temperate D r θ hθ α V (a k)
+  have hph := _root_.GlobalTheory.CompanionTheory.WSum.psi_halfTr_rs D ψ ψ₀ h₀ α hα θ σ hσ
+  obtain ⟨d, a, hinj⟩ := _root_.GlobalTheory.CompanionTheory.WSum.Sep.exists_separating D r θ hθ α hα0
+  have hq := fun k => _root_.GlobalTheory.CompanionTheory.WSum.multM_tempered D r θ hθ α V (a k)
   choose q hqt hqe using hq
   have hcomp : Continuous fun y : Mx D V.rank r => (fun τ i j => compAt θ τ y i j :
       D.what₂.Tau → Fin V.rank → Fin r → ℂ) :=
@@ -316,7 +316,7 @@ theorem GlobalTheory.CompanionTheory.WSum.summable_W_of_two_mul_lt_rank : ∀ (D
     (fun φ _ => ⟨_, fun β => GlobalTheory.CompanionTheory.WSum.norm_W_le hψ V μ lam φ β⟩) hmem
     (fun k φ h β => GlobalTheory.CompanionTheory.WSum.W_mult hψ hθ hσ hph hm hμ hlam (a k) (hmem k) (hMc k) h β) Finset.univ φ hφ
   obtain ⟨C, hC⟩ := hdec
-  have hlev := fun k => GlobalTheory.T.integral_multiple_path_trivial_character D r V ψ hψ θ σ hσ (a k) φ hφ
+  have hlev := fun k => _root_.GlobalTheory.CompanionTheory.WSum.Level.level D r V ψ hψ θ σ hσ (a k) φ hφ
   choose Nk hNk hNy using hlev
   refine GlobalTheory.T.summable_of_lattice_decay_of_injective (HermE D r) d _ (fun β k => GlobalTheory.CompanionTheory.WSum.pairF θ α (a k) β) hinj (∏ k, Nk k)
     (Finset.prod_pos fun k _ => hNk k) C hC fun β hW k => ?_

@@ -47,7 +47,7 @@ theorem mass_good_eq (hE2 : PositivityTheory.PfSWUS.HMass.OneVecBinaryMass) (hO 
     obtain ⟨C₁, hC₁⟩ := ih 1 hone T₁ hT₁.1 hT₁.2 d b
     obtain ⟨C₀, hC₀⟩ := PositivityTheory.PfSWUS.HMass.one_vec_bound hE2 hcm (n + 2) _ hJ' (by omega) b
     refine ⟨|C₀| + |C₁| + |C₀| * |C₁|, ?_⟩
-    have e1 := GlobalTheory.T.local_densities_congruent_target_almost_all F E σ hcm (n + 2) J hJ (n + 2) T hT hdet g hgdet _ hbh hblock d b
+    have e1 := _root_.GlobalTheory.CompanionTheory.SW.GoodScale.mass_eq F E σ hcm (n + 2) J hJ (n + 2) T hT hdet g hgdet _ hbh hblock d b
     have e2 := _root_.GlobalTheory.CompanionTheory.SW.lattice_mass_fibre_eq F E σ hcm (n + 2) J hJ _ hJ' d b (n + 2)
     have e3 := _root_.GlobalTheory.CompanionTheory.SW.GoodStep.blockFibre_mass F E σ hcm (n + 1) 1 hone t ht (n + 1) T₁ hT₁.1 hT₁.2 hbh d b
     have e5 := (_root_.GlobalTheory.CompanionTheory.SW.GoodInt.rational_integral_units F E σ hcm d b).2 t ht

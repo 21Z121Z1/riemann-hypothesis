@@ -4,12 +4,12 @@ import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.FormalGroupPoints
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IntegralChartFormalBiextensionGaugeBound
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.SurjectiveAppTopIntegralModelSquare
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.JetFramesDifferByUnitEachOrder
-import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsPowerSeriesLimitOfCompatibleJetPointsStatement
+import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsPowerSeriesLimitOfCompatibleJetPoints
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.SpecPowerSeriesHomExtOfJetsStatement
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ConstantSectionEqLimitChartPoint
-import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsSymmetricLiftOddOrderLocalRingStatement
+import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsSymmetricLiftOddOrderLocalRing
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.SymmetricLiftOrderSymmetryMultiplicativity
-import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.GermSymmetricTranslateFibreEqModelStatement
+import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.GermSymmetricTranslateFibreEqModel
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.EvalThetaSeriesMulQuadraticPartials
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.EvalIotaSeriesEqQuadraticInversionPartials
 
@@ -491,7 +491,7 @@ theorem model_unit {tg : Fin d → (Sp (DualNumber V) ⟶ t.G.left)}
       TrUnit B Θ jo k α u ∧ ∀ (f : PS V 1 d) (σ σ' : LB.Sec (LPow t.G t.PP.L (k : ℤ) (baseOver (Sp V)))),
         IsGermG t (𝟙 (Sp V)) d x B.A.act e wP k σ f → IsActOf t.G t.PP.L (k : ℤ) U σ σ' →
         IsGermG t (𝟙 (Sp V)) d x B.A.act e wP k σ' (u * shift B.G.F (fun _ => α) f) := by
-  obtain ⟨X, hX⟩ := GlobalTheory.T.exists_powerSeries_limit_of_compatible_jetPoints V t.G d x hc.trunc
+  obtain ⟨X, hX⟩ := _root_.GlobalTheory.TransUnit.LimEx.exists_isLimit V t.G d x hc.trunc
   let a : ∀ n, Sm B n := fun n => Sm.const B α hα
   have ha : ∀ n, toBase _ ≫ aV = ptOf X (a n) := fun n => Over.OverMorphism.ext
     ((congrArg (· ≫ aV.left) (Category.comp_id _)).trans (_root_.GlobalTheory.TransUnit.ptOf_const_left V d _ B t.G x X hX α hα aV.left haV n).symm)
@@ -506,7 +506,7 @@ theorem model_unit {tg : Fin d → (Sp (DualNumber V) ⟶ t.G.left)}
     have := congrArg (s ≫ ·) q
     simp only [← Category.assoc, MonObj.comp_one] at this
     rwa [base_ext (s ≫ _) (𝟙 _), Category.id_comp] at this
-  obtain ⟨U, hU⟩ := GlobalTheory.T.exists_symmetric_lift_odd_order_localRing E H V t hs k hk aV hak
+  obtain ⟨U, hU⟩ := _root_.GlobalTheory.SymLiftConst.exists_symLift_local E H V t hs k hk aV hak
   obtain ⟨j, hj0⟩ := Geo.Tor.exists_chart t.PP.isLB (η[t.G].left (closedPoint V))
   have hj : ⊤ ≤ η[t.G].left ⁻¹ᵁ t.PP.L.U j :=
     ((IsLocalRing.closedPoint_mem_iff (R := V) (η[t.G].left ⁻¹ᵁ t.PP.L.U j)).1 hj0).ge
@@ -641,7 +641,7 @@ theorem exists_trUnit : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (
     (b1 ▸ b2 ▸ b3 ▸ b4 ▸ b5 ▸ b6 ▸ C.frameT) C.primT hC
     (ModelSquareFunctions.surjective_appTop_square E H Dw l Xo c T io y.1 C.I) hh hΘ hjo hk hα hαk
     (Over.homMk aV h0) hψ
-  refine ⟨u, hu, fun F F' f hF hf hm => GlobalTheory.T.germ_symmetricTranslate_fibre_eq_model E H Dw l Xo c hstar T io y C hC k hk a _ r r0 r1 r2 U hU F F' f _
+  refine ⟨u, hu, fun F F' f hF hf hm => _root_.GlobalTheory.TransportGerm.germIs_translate E H Dw l Xo c hstar T io y C hC k hk a _ r r0 r1 r2 U hU F F' f _
     hF hf hm fun σ σ' => ?_⟩
   rw [← b2]
   exact hg f σ σ'

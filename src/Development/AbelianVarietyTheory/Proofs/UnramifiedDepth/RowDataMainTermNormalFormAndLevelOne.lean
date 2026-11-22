@@ -3,17 +3,18 @@ import Formalism.LocalToGlobal.CharacterGerms.LatticeInclusionFormsInjective
 import Formalism.LocalToGlobal.CharacterGerms.CartesianBoundOnCurves
 import Formalism.LocalToGlobal.CharacterGerms.CoeffIterateZero
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.TwoMulChainStartIndexAddOneOfOdd
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.PowerSemilinearRankNullityModMaxIdealStatement
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ChainStepKernelRankLeModMaxIdealStatement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.PowerSemilinearRankNullityModMaxIdeal
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ChainStepKernelRankLeModMaxIdeal
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.IndependentModFirstCoeffChainLastStep
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.PairingKernelLeOfSaturatedSubmodule
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsUnimodularMulEqNegOfIndependentModMaximal
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.CoeffLeafGaugeSubMainTermEqZeroOnFirstAxisStatement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.CoeffLeafGaugeSubMainTermEqZeroOnFirstAxis
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.LeafCoordinateWeightNonnegOfAdaptedChainData
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ZetaSeriesLeafMainTermCurveSystem
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.WeightGaugeSubMainTermLeafStatement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.WeightGaugeSubMainTermLeaf
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.GaugeSubMainTermIntegralLowBidegree
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.RowDataAdaptedChainDataStatement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.RowDataAdaptedChainData
+import Formalism.LocalToGlobal.CharacterGerms.ScaledSecondIntegral
 open Formalism.L2.FormalSeriesBounds Formalism.IncomingBounds GlobalTheory.MainTerm Classical
 
 open Formalism.BaseCaseIdentities (Data Kn s0)
@@ -43,7 +44,7 @@ theorem chain_rank (X : RowData C V d I J) (hA : X.Alt) (g : Fin 2) (a : ZMod d)
   | succ s ih =>
     obtain ⟨m, cc, hm, hI⟩ := ih (by omega)
     have hsK : s < Kn D.i := by rw [h.2.2.1]; omega
-    obtain ⟨m', cc', hm', hI'⟩ := GlobalTheory.T.powerSemilinear_rank_nullity_mod_maxIdeal C V (I g) m X.j' (V.l ^ 2)
+    obtain ⟨m', cc', hm', hI'⟩ := _root_.GlobalTheory.SemilinearNullity.rank_nullity C V (I g) m X.j' (V.l ^ 2)
       (Nat.one_le_pow _ _ V.l_prime.pos)
       (fun δ c => if D.lev c = s + 1 then chainMat D (s + 1) c (em (cc δ)) else 0)
       (by
@@ -53,7 +54,7 @@ theorem chain_rank (X : RowData C V d I J) (hA : X.Alt) (g : Fin 2) (a : ZMod d)
         · exact VF.Ge.zero 0)
       (by
         intro N' x hx hxI hxM
-        refine GlobalTheory.T.chainStep_kernel_rank_le_mod_maxIdeal C V d I J X hA g a hb i S Z D h s hs m
+        refine _root_.GlobalTheory.ChainStep.rank_le C V d I J X hA g a hb i S Z D h s hs m
           (fun δ c => chainMat D s c (em (cc δ))) (fun δ c => h.chainMat_int _ _ _) hI N' x hx hxI ?_
         intro ν e he
         have := hxM ν e
@@ -105,14 +106,14 @@ theorem both (X : RowData C V d I J) (hA : X.Alt) (h5 : 5 ≤ V.l) (g : Fin 2) (
   haveI := X.algClosed
   haveI := X.charZero
   obtain ⟨S, N1, D, hv, hl, hDi, hal, hty, hN1, A, hAint, hAeq⟩ :=
-    GlobalTheory.T.rowData_adaptedChainData C V d I J X hA g a hb i hi hid U hU
+    _root_.GlobalTheory.AdaptedChain.adaptedChainData C V d I J X hA g a hb i hi hid U hU
   have h : Adapted S D a i := ⟨hv, hl, hDi, hal, hty⟩
   obtain ⟨m, c1, hm, hI1⟩ := mainVec_rank X hA g a hb i S D h N1 ⟨D.ι, D.ι_inj⟩ D.ι_lev
   have hΨint : ∀ c0 (u : I (1 - g) → C), (∀ k, V.Ge 0 (u k)) →
       V.Ge 0 (∑ κ : J g, ∑ k : I (1 - g), mainVec S D c0 κ * X.pair g κ k * u k) :=
     fun c0 u hu => VF.Ge.sum fun κ _ => VF.Ge.sum fun k _ =>
       ((h.mainVec_int c0 κ).mul_int (X.pair_int g κ k)).mul_int (hu k)
-  obtain ⟨n0, c2, hn0, hI2⟩ := GlobalTheory.T.powerSemilinear_rank_nullity_mod_maxIdeal C V (Fin X.n) m X.j 1 le_rfl
+  obtain ⟨n0, c2, hn0, hI2⟩ := _root_.GlobalTheory.SemilinearNullity.rank_nullity C V (Fin X.n) m X.j 1 le_rfl
     (fun δ b => ∑ κ : J g, ∑ k : I (1 - g), mainVec S D (D.ι (c1 δ)) κ * X.pair g κ k * U' b k)
     (fun δ b => hΨint _ _ (hU'.1.1 b))
     (by
@@ -171,7 +172,7 @@ theorem both (X : RowData C V d I J) (hA : X.Alt) (h5 : 5 ≤ V.l) (g : Fin 2) (
     fun b c => ∑ κ : J g, ∑ k : I (1 - g), mainVec (SS g) D (em c) κ * X.pair g κ k * v' b k,
     ⟨⟨?_, hn0n⟩, isSat_tan _ em, ⟨fun c => A (c1 (c2 c)), fun c b => hAint _ b, fun c x => ?_⟩,
       ⟨Y, hYint, hYdet, fun b x => rfl⟩, fun b c => hΨint _ _ (hv'int b), fun b c hb => ?_, ?_,
-      fun μ hμ => GlobalTheory.T.coeff_leafGauge_sub_mainTerm_eq_zero_on_first_axis C V d I J X g a i _ _ _ _ _ μ hμ⟩,
+      fun μ hμ => _root_.GlobalTheory.MainTerm.Axis.coeff_hM_sub_mainM_eq_zero C V d I J X g a i _ _ _ _ _ μ hμ⟩,
     ⟨SS g, t g, em, fun c => mainVec (SS g) D (em c), ht g, fun c => rfl, hemal,
       fun c κ => h.mainVec_int _ _, fun b c => rfl, hζ⟩, ?_⟩
   · have h1 := two_mul_chainStartIndex_add_one_of_odd hi
@@ -186,7 +187,7 @@ theorem both (X : RowData C V d I J) (hA : X.Alt) (h5 : 5 ≤ V.l) (g : Fin 2) (
     refine Finset.sum_congr rfl fun κ _ => ?_
     rw [Finset.sum_comm]
     exact Finset.sum_congr rfl fun _ _ => Finset.sum_congr rfl fun _ _ => by ring
-  · exact GlobalTheory.T.weight_gauge_sub_mainTerm_leaf C V d I J X hA h5 g a i hi hid SS t ht n0 X.n _ v'
+  · exact _root_.GlobalTheory.MainTermWeight.weight_gauge_sub_main C V d I J X hA h5 g a i hi hid SS t ht n0 X.n _ v'
       (fun c => mainVec (SS g) D (em c)) hety hv'int hv'ty
       (_root_.GlobalTheory.LeafCoordWeight.weight_nonneg C V d (I g) (J g) (X.G g) (SS g) _ D a i h (t g) (ht g) n0 em hem) hζ
   · rintro rfl

@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GermOriginConstantS
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantVectorFieldEvalOriginEqTangentDerivativStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentDerivativeAtOriginAddTangentVector
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentDerivativeAtOriginSmulTangentVector
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentVectorEqOfTangentDerivativeAtOriginEqStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentVectorEqOfTangentDerivativeAtOriginEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTangentVectorOfOriginDerivationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OriginLocalRingNoetherianFreeUnitSectionConormalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DerivationFamilyCotangentBasis
@@ -66,7 +66,7 @@ theorem coords_at_origin : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRing
       congr 1
       exact (v.sum_repr w).symm
     · intro c hc'
-      have hw' : ∑ a, c a • v a = w := GlobalTheory.T.tangentVector_eq_of_tangentDerivativeAtOrigin_eq R G _ _ fun f => by rw [hlin, hw, hc' f]
+      have hw' : ∑ a, c a • v a = w := _root_.GlobalTheory.CoordsOrigin.tanM_eq_of_tanDer R G _ _ fun f => by rw [hlin, hw, hc' f]
       funext a
       rw [← hw', v.repr_sum_self]
   obtain ⟨z, hz0, hz1, hz2⟩ := _root_.GlobalTheory.CoordsAlg.coords_of_derivation_basis R _ (evO G) (GlobalTheory.FormalOrigin.evO_constO R G) hF hFin n

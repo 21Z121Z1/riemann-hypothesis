@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InertPlaceUnramifie
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SupportedMatrixIffFrameCoordinatesOfInert
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemTensorLatticeAtPlaceIffFrameCoordinatesIntegrStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilSymplecticFormFrameCoordinatesEqLocalTraceStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryHomConjInverseTransposeAtPlaceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryHomConjInverseTransposeAtPlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryHomFrameConjugationAtPlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameCoordinatesActionOfIdentityOffPlaceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SupportedAdelicUnitaryPointOfLocalMatrix
@@ -61,7 +61,7 @@ theorem GlobalTheory.InertLocFrame.frame : ∀ (F E : Type) [Field F] [NumberFie
     PV hPV
   obtain ⟨JT, hJT, hJTg, hJTh⟩ := GlobalTheory.T.inert_place_unramified_skew_space F E σ B hB v w hin (a + a') _ _ G.W hG.hW L ϖ σL q δ ι hunr hodd hδ hinj
     him hmul hσ hint PW hPW
-  obtain ⟨iV, hiV⟩ := GlobalTheory.T.exists_unitary_hom_conjInverseTranspose_at_place F E σ v a G.V L σL ι him hmul hσ PV JS hJSg
+  obtain ⟨iV, hiV⟩ := _root_.GlobalTheory.InertLocHomV.exists_homV F E σ v a G.V L σL ι him hmul hσ PV JS hJSg
   obtain ⟨iW, hiW⟩ := _root_.GlobalTheory.InertLocFrame.HomW.homW F E σ v (a + a') G.W L σL δ ι hδne him hmul hσ PW JT hJTg
   have hlat := GlobalTheory.T.mem_tensorLatticeAtPlace_iff_frame_coordinates_integral F E v a (a + a') G.V G.W L ι hinj him hmul hint PV PW hPV hPW
   have e1 : ∀ M : Matrix (Fin a) (Fin (a + a')) L,

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicUnitaryEqRealMulFiniteSplitStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicUnitaryEqRealMulFiniteSplit
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.RealAdelesCmFieldEquivComplexCmType
 import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.CoeSelfDualLatticeInFrameCoordinatesEq
 import Formalism.LocalToGlobal.ProjectiveLattices.ParCanon
@@ -143,7 +143,7 @@ theorem archM_spec : ∀ (D : D7) (V : HSp D), ∀ (θ : (D.host.E →+* ℂ) �
         exact (map_ne_zero τ.1).2 (gram_det_ne_zero V)) (fun τ => u τ.1) (fun τ => by
         rw [JR_map V (hθ τ.1)]
         exact (unit_iff _ _ _).1 (hu τ.1 τ.2))
-    obtain ⟨a, ha, hag⟩ := (GlobalTheory.T.adelicUnitary_eq_real_mul_finite_split D V).2.2.2.2 g hg
+    obtain ⟨a, ha, hag⟩ := (_root_.GlobalTheory.UnitarySplit.real_finite_split D V).2.2.2.2 g hg
     refine ⟨a, ha, fun τ hτ => ?_⟩
     rw [archM, hag]
     exact hgu ⟨τ, hτ⟩

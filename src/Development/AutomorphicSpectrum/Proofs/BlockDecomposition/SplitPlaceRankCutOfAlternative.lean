@@ -7,7 +7,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ModulusUpperPar
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormalizedValuationUniformizerStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalImageOfUnipotentElementStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SurjectiveReductionMaximalCompactStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsGlobalHermitianLocalApproximationStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsGlobalHermitianLocalApproximation
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CharacterPairingLocalHermitian
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SumCharacterOrthogonalityMatrices
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RankResidueLeRankGeneric
@@ -84,7 +84,7 @@ theorem split_place_rank_cut_of_local_computation : JpCondition → SplitPlaceRa
   obtain ⟨ρ, hρ, hρs, hρm⟩ := GlobalTheory.T.surjective_reduction_maximal_compact D n v τ
   obtain ⟨c, hcd, hct, hcint⟩ := hA (Ov D v) (Lv D v) n r t hrt hr ψ₀ hψ₀ _ hβ
   choose f hinf hoff hfX _ using fun Y : Matrix (Fin n) (Fin n) (kv D v) =>
-    GlobalTheory.T.exists_global_hermitian_local_approximation D n v τ (((w⁻¹ : (Lv D v)ˣ) : Lv D v) • liftM (L := Lv D v) ℓ Y)
+    _root_.GlobalTheory.CompanionTheory.Jp.exists_herm_at D n v τ (((w⁻¹ : (Lv D v)ˣ) : Lv D v) • liftM (L := Lv D v) ℓ Y)
   have hfinj : Function.Injective f := by
     intro Y Y' hYY
     have h1 : ((w⁻¹ : (Lv D v)ˣ) : Lv D v) • liftM (L := Lv D v) ℓ Y =
@@ -111,7 +111,7 @@ theorem split_place_rank_cut_of_local_computation : JpCondition → SplitPlaceRa
     have hTint : ∀ i j, (β'.1.map τ) i j ∈ HeightOneSpectrum.adicCompletionIntegers D.host.F v := by
       apply _root_.GlobalTheory.CompanionTheory.Jp.DualInt.mem_of_dual_integral D ψ v hgood n
       intro X hX
-      obtain ⟨x, hinf', hoff', htx, hint'⟩ := GlobalTheory.T.exists_global_hermitian_local_approximation D n v τ X
+      obtain ⟨x, hinf', hoff', htx, hint'⟩ := _root_.GlobalTheory.CompanionTheory.Jp.exists_herm_at D n v τ X
       rw [← htx, ← _root_.GlobalTheory.CompanionTheory.Jp.SplitPair.pch_rat_split D n v τ ψ x hinf' hoff' β']
       apply hint
       unfold PositivityTheory.Rg.Rsw.L.IntAt

@@ -2,8 +2,8 @@ import Mathlib
 import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsOfLayers
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobeniusSubOneWittTensorLatticeSurjectiveFixed
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUniqueCocycleStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGammaLayerPadicCoordinatesStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUniqueCocycle
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGammaLayerPadicCoordinates
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsWeakTopologyWittTiltTensorStatement
 open Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.WeaklyAdmissibleFiltrations TensorProduct GlobalTheory.HWL
 
@@ -45,7 +45,7 @@ theorem existsUnique_fits (L : Formalism.WeaklyAdmissibleFiltrations.Lattice (O 
     (lcont : Continuous lam) (h₀ : lam g₀ = Multiplicative.ofAdd 1) (b z : M)
     (hb : ∀ h, lam h = 1 → a h z = z ∧ ∃ t, j t = a h b - b) (hz : ∃ t, j t = z - (a g₀ b - b)) :
     ∃! c : ↥(latticeCocycles L), Fits L j a lam b z c := by
-  obtain ⟨c, ⟨cc, cT, ccoc, c1, c2⟩, cu⟩ := GlobalTheory.T.exists_unique_cocycle_alt l G M (fun g => (a g).toAddMonoidHom) a1 amul acont
+  obtain ⟨c, ⟨cc, cT, ccoc, c1, c2⟩, cu⟩ := _root_.GlobalTheory.HlCoc.exists_unique_cocycle l G M (fun g => (a g).toAddMonoidHom) a1 amul acont
     j.toAddMonoidHom.range (by
       have : (j.toAddMonoidHom.range : Set M) = Set.range j := by ext; simp
       rw [this]; exact isCompact_range jemb.continuous)
@@ -435,6 +435,6 @@ theorem exists_classMaps : ∀ (l : ℕ) [Fact l.Prime] (P : LocPrime l) (AI : L
       Setup (φRW LL) (fun g : ↥(GK K) => AI.gRW LL (g : GQ l)) l T := fun T =>
     ⟨⟨(_root_.GlobalTheory.WittTensorFixed.main l K LL T).1, fun b => ((_root_.GlobalTheory.WittTensorFixed.main l K LL T).2.1 b).1⟩, GlobalTheory.T.exists_weak_topology_witt_tilt_tensor l P AI K LL T⟩
   exact nonempty_cl (l := l) (I := I) (gRW_one AI LL) (fun g h => gRW_mul AI LL (g : GQ l) (h : GQ l))
-    (fun g => phi_gRW AI LL (g : GQ l)) hT (GlobalTheory.T.exists_gammaLayer_padic_coordinates l P K s LL hg Γ) E
+    (fun g => phi_gRW AI LL (g : GQ l)) hT (_root_.GlobalTheory.HWL.Coord.exists_gamma_coordinates l P K s LL hg Γ) E
 
 end GlobalTheory.HerrClassMaps

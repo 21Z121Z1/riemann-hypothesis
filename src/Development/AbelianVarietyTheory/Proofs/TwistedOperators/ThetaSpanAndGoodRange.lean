@@ -4,7 +4,8 @@ import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContDiffDerivSnoc
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PureTensorOSmul
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeilFiniteVectorFixedPrincipalLevelCoeffSpaceStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeilFiniteVectorFixedPrincipalLevelCoeffSpace
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqTopOfTranslates
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemLeviFlagOfMemParabolic
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsSelfDualCoordLatticeOfSelfDualFrame
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsCtxBase
@@ -14,13 +15,13 @@ import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Rationa
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockPolynomialVectorLaws
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormIntegrality
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemSpanThetaSeriesOfBoundedHolomorphic
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsContinuousRealScalarCharacterWeakWeilStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsContinuousRealScalarCharacterWeakWeil
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealPointsUnitaryCharacterEqDetPower
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CompactTorusActsFockVectorRowHighest
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HolomorphicUpToFactorOfLoweringKilledTorusWeight
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StableFockSpanContainsRowHighestPolynomials
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftFiniteVectorEqTranslateLevelDatum
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFrameChangeWeakWeilRepresentationStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFrameChangeWeakWeilRepresentation
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockPolynomialVectorsReframeSource
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ReframeVacuumAndLiftVector
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaSeriesEqThetaLiftDefiniteGroupForm
@@ -94,7 +95,7 @@ theorem span_std {S T : HSp D} (C : Ctx S T) (om : GA D S × GA D T →* Module.
     _root_.GlobalTheory.AdSpan.StableFock.fockSpan_rowHighest D S T C om hom hn B₀ hB₀ BS hBS f hf1 hf2 hf3 p q ap am hp hq pt U hpt hΔ hU
   set B : C.Bas := revB C.X.p0 B₀ with hBdef
   have hfock : ∀ x, C.IsFock B₀ x → C.IsFock B x := fun x hx τ => by rw [hs]; exact hx τ
-  obtain ⟨z, z1, z2, z3, z4⟩ := GlobalTheory.T.exists_continuous_realScalar_character_weakWeil D S T C om hom hc
+  obtain ⟨z, z1, z2, z3, z4⟩ := _root_.GlobalTheory.AdSpan.RealChar.realScal_character D S T C om hom hc
   obtain ⟨m, hm⟩ := _root_.GlobalTheory.AdSpan.char_eq_detPow D C.θ T C.inf hsig z z1 z2 z3
   have hsc : ∀ a ∈ GinfC T, RealScal C om B a (detPow C.θ T m a) := fun a ha => hm a ha ▸ z4 B hB a ha
   have htor : ∀ ρ s, torAt C.θ T B ρ s ∈ GinfC T := fun ρ s => by
@@ -190,7 +191,7 @@ theorem span_any {S T : HSp D} (ψ : AddChar (AF D.host.F) ℂ) (hψ : IsStdChar
   subst hp0
   let C : Ctx (reS S b) T := { C₀ with ψ := ψ, std := hψ, θ := θ, inf := hθ }
   obtain ⟨hB, hs⟩ := isB_onb C M hε
-  obtain ⟨e, he, hom'⟩ := GlobalTheory.T.exists_frameChange_weakWeilRepresentation D S T b
+  obtain ⟨e, he, hom'⟩ := _root_.GlobalTheory.AdSpan.reframe_weil D S T b
   obtain ⟨om', hw', hc', hre⟩ := hom' ψ om hom hc
   obtain ⟨BS', hBS', hpt'⟩ := _root_.GlobalTheory.AdSpan.pureTensorO_reF D S T b ψ θ hθ BS
   obtain ⟨βS', hβS', hvec⟩ := _root_.GlobalTheory.AdSpan.ReVec.reframe_thPVecOf D S T b hb ψ θ _ ΛS _ βS βT Pg Q ξ _ _ hΛS hβS hf
@@ -290,7 +291,7 @@ theorem value_mem_span (hP : GlobalTheory.Published.CuspRapidDecay) (hsz : Globa
   have hlv : ∀ k ∈ GfC (Wc D i), Lev.finE (Wc D i) k ∈ Formalism.L2.DIV.St (R.βW i) →
       (∀ PP ∈ R.Pg, Formalism.L2.DIV.redFn (R.βW i) PP (Lev.finE (Wc D i) k) = 1) →
       R.ωP i t (1, k) (R.vP i t) = R.vP i t ∧ ∀ g, T (fun ρ => u ρ) (g * k) = T (fun ρ => u ρ) g := fun k hk h1 h2 =>
-    ⟨GlobalTheory.T.weilFiniteVector_fixed_principalLevel_coeffSpace D G Pl0 T0 A Ks R hL hT.ωP hT.vP hth i t k (hlev i k hk h1 h2).1, fun g =>
+    ⟨_root_.GlobalTheory.DefLift.Level.om_level_vP D G Pl0 T0 A Ks R hL hT.ωP hT.vP hth i t k (hlev i k hk h1 h2).1, fun g =>
       (hmult.lev _ k (hlev i k hk h1 h2).1 g).trans (by rw [(hlev i k hk h1 h2).2, one_mul])⟩
   exact span_any R.ψ (hT.ωP i t).std R.θ hM.inf (R.ωP i t) (isWeak_of_datum (hT.ωP i t))
     (fun f hf w => ((hT.ωP i t).om_cont f hf w).comp (Continuous.prodMk_right 1)) b hb hev _ _ hpq (D.sp.W_sig _) hsigW hsz' hn

@@ -3,11 +3,12 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsNormalForm
 import Formalism.FormalDegreeBessel.FinalG
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FlagUnipotentGramNullAndFibreVolumeNormalForm
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TwoSidedSizeFunctionPosInvariantContinuous
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FlagGramNumberNormalizedInvarianceStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IwasawaDecompositionIsotropicFlagStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FlagGramNumberNormalizedInvariance
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IwasawaDecompositionIsotropicFlag
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FlagUnipotentLebesgueMeasureIsHaarOn
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.BlockAnti
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnimodularBesselSubgroupsUWNStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnimodularBesselSubgroupsUWN
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
 
 noncomputable section
 
@@ -80,7 +81,7 @@ theorem Tz_eq {z z' : Fin (2 * r + k + 1) → ℂ} {g : Mat k r} {c : ℂ} (hg :
 theorem fibre_volume : ∀ (k r j : ℕ) (hj : j ≤ r) (z z' : (Fin (2 * r + k + 1) → ℂ)), ∀ (γ : Mat k r) (De s : ℝ) (μR : Measure (Mt k r)), 1 ≤ j → j + 2 ≤ k → DeOK k r z z' γ De → 0 < s → IsNormalFormStabilizerMeasure k r hj z z' γ s μR → ∀ g₁ ∈ GG k r, lebN k r {n | Yj k r hj z z' γ (Matrix.of n * g₁) = 0} = 0 ∧ ∀ φ, SubCut (GG k r) μR φ → ∀ R₀ y : ℝ, 1 ≤ R₀ → 0 < y → ∫⁻ n, φ (rmulM g₁ n) * (Eset0 k r hj z z' γ R₀ y).indicator 1 (rmulM g₁ n) ∂(lebN k r) ≤ ENNReal.ofReal (fibVol0 k r j R₀ De y / s) := by
   intro k r j hj z z' γ De s μR h1 h2 hDe hs hN g₁ hg₁
   obtain ⟨hz, hz', hT, n₁, hn₁, n₂, hn₂, g₀, β, c, hg₀, rfl, rfl⟩ := hN
-  obtain ⟨n₀, hn₀, a, ha, m, hm, κ, hκ, hg⟩ := GlobalTheory.T.iwasawa_decomposition_isotropic_flag k r g₁ hg₁
+  obtain ⟨n₀, hn₀, a, ha, m, hm, κ, hκ, hg⟩ := _root_.GlobalTheory.Amp.Iwa.iwasawa k r g₁ hg₁
   have hT' : 0 < Tz k r z' := by rw [Tz_eq hg₀.1 hg₀.2.1 hg₀.2.2.1]; exact hT
   have hDe₀ : DeOK k r z z' g₀ De := by
     refine ⟨hDe.1, fun l hl => ?_⟩
@@ -99,7 +100,7 @@ theorem fibre_volume : ∀ (k r j : ℕ) (hj : j ≤ r) (z z' : (Fin (2 * r + k 
         Matrix.mul_nonsing_inv_cancel_right _ _ uκ]
     rw [this]; exact GG_mul (GG_mul (GG_inv hn₀.1) hg₁) (GG_inv hκ.1)
   have hH := _root_.GlobalTheory.Amp.NHaar.isHaarOn_lebN k r
-  have hU := ((GlobalTheory.T.unimodular_besselSubgroups_UW_N k r z hz hT (lebN k r)).2.1 hH).1
+  have hU := ((_root_.GlobalTheory.SgInf.unimodular_S_N_UW k r z hz hT (lebN k r)).2.1 hH).1
   set T := twoEquiv n₂ n₀ u₂ u₀ with hTdef
   have hmap : (lebN k r).map T = lebN k r := map_twoEquiv u₂ u₀ (hH.2.2.2 _ hn₂) (hU.1 _ hn₀)
   have hae : ∀ᵐ n ∂(lebN k r), Matrix.of n ∈ Nset k r := hH.2.2.1
@@ -108,8 +109,8 @@ theorem fibre_volume : ∀ (k r j : ℕ) (hj : j ≤ r) (z z' : (Fin (2 * r + k 
   have hY : ∀ n : Mt k r, Matrix.of n ∈ Nset k r →
       Yj k r hj z z' (n₁ * g₀ * n₂) (Matrix.of n * g₁) = Yj k r hj z z' g₀ (Matrix.of (T n) * A) := by
     intro n hn
-    rw [(GlobalTheory.T.flagGramNumberNormalized_invariance k r j hj z z' g₀ hz hz' hg₀.1 _ (GG_mul hn.1 hg₁)).2.1 n₁ hn₁ n₂ hn₂, hTof,
-      ← (GlobalTheory.T.flagGramNumberNormalized_invariance k r j hj z z' g₀ hz hz' hg₀.1 _
+    rw [(_root_.GlobalTheory.Amp.YjInv.yj_invariant k r j hj z z' g₀ hz hz' hg₀.1 _ (GG_mul hn.1 hg₁)).2.1 n₁ hn₁ n₂ hn₂, hTof,
+      ← (_root_.GlobalTheory.Amp.YjInv.yj_invariant k r j hj z z' g₀ hz hz' hg₀.1 _
         (GG_mul (GG_mul (GG_mul hn₂.1 hn.1) hn₀.1) hAG)).1 κ hκ, hg']
     simp only [Matrix.mul_assoc]
   refine ⟨?_, fun φ hφ R₀ y hR hy => ?_⟩

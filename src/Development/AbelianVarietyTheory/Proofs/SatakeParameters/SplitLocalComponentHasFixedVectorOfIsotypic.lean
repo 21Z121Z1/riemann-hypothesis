@@ -28,7 +28,7 @@ theorem le_iSup_range (ρ : Representation ℂ (GQ L n) W) (S : Submodule ℂ (G
     (i : s.v.adicCompletion (maximalRealSubfield L) ≃+* s.w.adicCompletion L) (T0 : τ.V →ₗ[ℂ] (GAf L n → W))
     (hT0inj : Function.Injective T0) (hT0S : ∀ a, T0 a ∈ S) (hT0eq : LocEq s τ i T0) :
     S ≤ ⨆ T : {T : τ.V →ₗ[ℂ] (GAf L n → W) // LocEq s τ i T}, LinearMap.range T.1 := by
-  obtain ⟨hdec, hcomm, -⟩ := GlobalTheory.T.unitaryFiniteAdeles_splitPlace_decomposition L n s
+  obtain ⟨hdec, hcomm, -⟩ := _root_.GlobalTheory.SplitAdelic.main L n s
   have hnt : Nontrivial τ.V := by
     haveI := τ.irr
     by_contra hn
@@ -99,7 +99,7 @@ theorem GlobalTheory.IsoTypFixLoc.main : ∀ (L : Type) [Field L] [NumberField L
   obtain ⟨i', T0, hi', hi'L, hT0inj, hT0S, hT0eq⟩ := hloc
   obtain rfl := GlobalTheory.splitPlace_completion_equiv_unique L s i' i hi' hi hi'L hiL
   have hspan := isoTyp_le ρ S s τ i' T0 hT0inj hT0S hT0eq hf
-  have hI := GlobalTheory.T.unitaryFiniteAdeles_splitPlace_decomposition L n s
+  have hI := _root_.GlobalTheory.SplitAdelic.main L n s
   let H : Subgroup (GAf L n) :=
     { carrier := {x | TrivOutside {s.v} x}
       mul_mem' := fun hx hy => GlobalTheory.HeckeScalarSph.triv_mul hx hy

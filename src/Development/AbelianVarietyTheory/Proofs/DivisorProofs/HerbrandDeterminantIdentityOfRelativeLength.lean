@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PreEig
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.IsSaturatedSubmoduleIffExistsIsComplOfValuationR
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankAddValuationIntegerSubmoduleEqFinrankSpan
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdjoinRootProdLinearFactorsLatticeFacts
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteEigenFiltrationPiecesAddValIntStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteEigenFiltrationPiecesAddValInt
 open GlobalTheory.IndefiniteRowSideFullHecke.MultiplicationKernelIdentity GlobalTheory.HermitianPreEigenvalues Polynomial Module
 
 noncomputable section
@@ -318,7 +318,7 @@ theorem detIdentity_of_relLen : ∀ (C : Type) [Field C] (v : AddValuation C (Wi
   intro C _ v S _ _ a ha N Fil hsat τ r hr hRL
   obtain ⟨hd, -, -, hE4, -, hE6, hE7, hE8, hE9, hE10, -, -⟩ :=
     _root_.GlobalTheory.herbrand_lattice_facts C v S a ha N Fil hsat τ
-  obtain ⟨hfFil, -, -, -, hfLie, -, -⟩ := GlobalTheory.T.finite_eigenFiltration_pieces_addValInt C v S a ha N Fil hsat τ
+  obtain ⟨hfFil, -, -, -, hfLie, -, -⟩ := _root_.GlobalTheory.HerbFin.finite_main C v S a ha N Fil hsat τ
 
   haveI : Module.IsTorsionFree (Int0 v) (eigSub a τ ((Fin N → RS a) ⧸ Fil)) :=
     Module.IsTorsionFree.of_smul_eq_zero fun c m hcm => by

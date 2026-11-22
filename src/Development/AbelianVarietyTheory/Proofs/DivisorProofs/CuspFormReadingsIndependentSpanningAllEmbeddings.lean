@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Ex
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormAdelicFunctionsIndependentGoodEmbedding
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormAdelicFunctionsEqModelValuesSemilinear
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisationGoodEmbeddingIndependentReadings
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertModelConjugationAntilinearBijectionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertModelConjugationAntilinearBijection
 
 open NumberField IsDedekindDomain MeasureTheory Matrix Formalism.BasicNotions Formalism.MainNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S Formalism.L2.Theta Formalism.L2.DIV Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.IndefR.Lev Formalism.IndefR.Datum Formalism.L2.Pj Formalism.IndefR.FWT Formalism.IndefR GlobalTheory.HolDict
 open scoped TensorProduct InnerProductSpace ContDiff
@@ -65,7 +65,7 @@ theorem unif_all : GlobalTheory.Published.CuspRapidDecay → GlobalTheory.Mem.Vo
   have good := _root_.GlobalTheory.UnifGood.unif_good h1 h2 D G Pl0 T0 A T R κ v₀ hL hM hT hp hκ hn i
   by_cases hσ : GoodEmb T.Q.c (res T σ)
   · exact good σ hσ
-  obtain ⟨hc, hb⟩ := GlobalTheory.T.hilbertModel_conjugation_antilinear_bijection D G Pl0 T0 A T R κ v₀ hM hT
+  obtain ⟨hc, hb⟩ := _root_.GlobalTheory.ConjHilb.conj_hilbert D G Pl0 T0 A T R κ v₀ hM hT
   have hbar := hb (_root_.GlobalTheory.CuspFormValues.jEvExists h1 h2 D G Pl0 T0 A T R κ v₀ hL hM hT hp)
   have hg := good_resC T hσ
   have hV := hT.laws.spaceW _ (inR i) _ hg

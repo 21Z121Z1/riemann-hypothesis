@@ -5,9 +5,9 @@ import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.FourUniq
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.IpTheta
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InfPartOneSubEInfSmul
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExtendByZeroMemCompletedLatticeSource
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StandardLatticeHalfEqDoubleAnnihilatorStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StandardLatticeHalfEqDoubleAnnihilator
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsFiniteRepsHalfStandardHomModNsmul
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FiniteQuotientAnnihilatorStandardLatticeConjHalfStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FiniteQuotientAnnihilatorStandardLatticeConjHalf
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum MeasureTheory Matrix ValuativeRel GlobalTheory.MixModel GlobalTheory.MixPer GlobalTheory.Unf GlobalTheory.SplitWeil GlobalTheory.SeeSaw GlobalTheory.AdForm GlobalTheory.LocMod
 
 noncomputable section
@@ -248,7 +248,7 @@ theorem theta_of_facts (ψ : AddChar (AF D.host.F) ℂ) (hψ : IsStdChar D ψ (-
 
 theorem theta_placeModel_std : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ), IsStdChar D ψ (-1) → ∀ (S T : HSp D) (Q : Finset (Formalism.L2.DIV.Pl D.host.E)) (E₂ : AE D), IsIdemSum E₂ Q → ∀ (f₀ : WO S T → ℂ) (T' : (WO S T → ℂ) →ₗ[ℂ] (WO S T → ℂ)), IsThetaFunO ψ S T f₀ → IsLatVac (heisO ψ S T) (stdHom S T) f₀ → IsPlaceModel ψ (symplO S T) (heisO ψ S T) E₂ (stdHom S T) 1 f₀ T' → ∀ Φ, IsSBHalf E₂ (stdHom S T) Φ → IsThetaFunO ψ S T (T' Φ) := by
   intro D ψ hψ S T Q E₂ hE f₀ T' hf₀ _ hPM Φ hΦ
-  exact theta_of_facts ψ hψ S T E₂ hE.2 (GlobalTheory.T.standard_lattice_half_eq_double_annihilator D ψ hψ S T Q E₂ hE) (_root_.GlobalTheory.HalfStdFin.exists_reps_half_stdHom D S T Q E₂ hE)
-    (GlobalTheory.T.finite_quotient_annihilator_standardLattice_conjHalf D ψ hψ S T Q E₂ hE) f₀ T' hf₀ hPM Φ hΦ
+  exact theta_of_facts ψ hψ S T E₂ hE.2 (_root_.GlobalTheory.HalfDoubleAnn.mem_of_ann_ann D ψ hψ S T Q E₂ hE) (_root_.GlobalTheory.HalfStdFin.exists_reps_half_stdHom D S T Q E₂ hE)
+    (_root_.GlobalTheory.AnnConjHalf.ann_conj_half_finite D ψ hψ S T Q E₂ hE) f₀ T' hf₀ hPM Φ hΦ
 
 end GlobalTheory.LocMod.StdTheta

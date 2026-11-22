@@ -101,7 +101,7 @@ theorem good_of_mem_pairSpan (hW : IsWittFrame D.sp.cm.sig V.gram X Y) (T : Fins
     obtain ⟨l, hl, rfl⟩ := hx
     refine ⟨?_, h l hl μ 𝓕 hμ h𝓕 h1 g⟩
     obtain ⟨C, hC, hcov⟩ := _root_.GlobalTheory.CuspCocpt.cocompact_unip _ _ _ (GlobalTheory.AdelicU.isCMExt_host D) _ _ hJ _ X Y hW T
-    have hcont := GlobalTheory.T.continuous_iteratedRealLineDeriv_unitaryAdelic _ _ _ (GlobalTheory.AdelicU.isCMExt_host D) _ _ hJ φ hφ.level hφ.cont hφ.smooth l hl
+    have hcont := _root_.GlobalTheory.DerCont.continuous_foldr_lineDer _ _ _ (GlobalTheory.AdelicU.isCMExt_host D) _ _ hJ φ hφ.level hφ.cont hφ.smooth l hl
     have hleft := GlobalTheory.UAut.ConstAut.leftInv_foldr
       (Γ := (GQ V ⊓ unip D.sp.cm.sig V.gram X T : Subgroup (GA D V))) (φ := φ) (fun γ hγ x => hφ.left γ hγ x) l
     refine GlobalTheory.integrableOn_fundamentalDomain_of_cocompact _ _ C hC hcov μ hμ 𝓕 h𝓕 _

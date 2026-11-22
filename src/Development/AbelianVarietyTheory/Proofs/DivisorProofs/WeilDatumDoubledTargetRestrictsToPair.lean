@@ -2,8 +2,8 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReindexDblIncM
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeltaTApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaFunctionHeisenbergInvariant
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsThetaFunctionDoublingThetaTensorCMStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergOpDoubledGramDoublingThetaTensorStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsThetaFunctionDoublingThetaTensorCM
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergOpDoubledGramDoublingThetaTensor
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilDatumDoubleSpaceActsUnitScalarSeesawCM
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.UnitaryCharEqOneOfTrivialRationalSplitPlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInvariantFormDoubledSpaceSplitPlace
@@ -41,7 +41,7 @@ theorem restrict_core : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Nu
   subst hdι
   have hsc := fun h' => _root_.PositivityTheory.ThKW.weil_rep_unitary_pair_equivariant F E σ B hB nS nT JS JT hS hT ξ₀ hξ hσξ χS χT ω hω ωd hωd h' (ι h') (hιm h')
   choose c hc1 hc using hsc
-  have hth := GlobalTheory.T.isThetaFunction_doublingThetaTensor_CM F E σ B hB nS nT JS JT hS hT ξ₀ hξ hσξ
+  have hth := _root_.GlobalTheory.DblTargetThetaF.main F E σ B hB nS nT JS JT hS hT ξ₀ hξ hσξ
   by_cases h0 : ∃ f₀, IsThetaFunOF σ JS JT ξ₀ B.ψ f₀ ∧ f₀ ≠ 0
   swap
   · push_neg at h0
@@ -142,7 +142,7 @@ theorem restrict_core : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Nu
     obtain ⟨rd, hrd, hrd'⟩ := hωd.om_split e he 1 (ι g) hS1 (hιs e g hg) 1 y hx1 (hιd e g y hy)
     obtain ⟨r, hr, hr'⟩ := hω.om_split e he 1 g hS1 hg 1 y hx1 hy
     obtain ⟨ℓ, hℓ, a, b, ha, hb, hℓab⟩ := _root_.GlobalTheory.DblSplitForm.exists_invForm_dbl F E σ B hB nS nT JS JT hS hT ξ₀ hξ hσξ e he
-    have hheis := GlobalTheory.T.heisenbergOp_doubledGram_doublingThetaTensor F E σ B hB nS nT JS JT hS hT ξ₀ hξ hσξ
+    have hheis := _root_.GlobalTheory.DblHeis.heisOF_dblG_deltaT F E σ B hB nS nT JS JT hS hT ξ₀ hξ hσξ
     have dadd : ∀ f f' : WOF F E nS nT → ℂ, deltaT (f + f') b = deltaT f b + deltaT f' b := fun f f' => by
       funext x; simp only [deltaT_apply, Pi.add_apply, add_mul]
     have dsmul : ∀ (s : ℂ) (f : WOF F E nS nT → ℂ), deltaT (s • f) b = s • deltaT f b := fun s f => by

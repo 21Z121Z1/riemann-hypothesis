@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsGrpDataMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPolarDecompositionIndefiniteUnitaryStatement
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndefiniteUnitaryCharacterMaximalCompactDetPow
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndefiniteUnitaryCharacterEqOneCayleyRotationStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndefiniteUnitaryCharacterEqOneCayleyRotation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfCayleyTwoIZpowEqOneForall
 open scoped TensorProduct GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels
 open NumberField MeasureTheory Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.BasicNotions.TH GlobalTheory.WeilM GlobalTheory.AdelicU GlobalTheory.FockAlg GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels GlobalTheory.RealLift
@@ -97,7 +97,7 @@ theorem charUpq : ∀ (R S : ℕ) (χ : Mat R S → ℂ),
     · subst hS; exact ⟨x, fun a d => by simp [Matrix.det_isEmpty]⟩
     have hxy' : x = y := by
       have h0 := _root_.GlobalTheory.zpow_cayley_two_eq_one_forall (x - y) (fun t => by
-        have e := GlobalTheory.T.indefiniteUnitaryCharacter_eq_one_cayleyRotation R S χ hmul hc hne ⟨0, hR⟩ ⟨0, hS⟩ t
+        have e := _root_.GlobalTheory.UnitaryCharRot.char_eq_one_rot R S χ hmul hc hne ⟨0, hR⟩ ⟨0, hS⟩ t
         have hu1 := diag_unit (⟨0, hR⟩ : Fin R) ((1 + 2 * Complex.I * t) / (1 - 2 * Complex.I * t)) (by
           rw [star_zeta]; field_simp [ne_zero_add t, ne_zero_sub t])
         have hu2 := diag_unit (⟨0, hS⟩ : Fin S) ((1 - 2 * Complex.I * t) / (1 + 2 * Complex.I * t)) (by

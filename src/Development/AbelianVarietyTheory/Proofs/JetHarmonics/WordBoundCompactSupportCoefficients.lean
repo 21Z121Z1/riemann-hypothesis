@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Jets.BasicLiftAll
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsRadialPartPolyDiffOperatorClosedStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsRadialPartPolyDiffOperatorClosed
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIsMulGOfSmoothLog
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WordOperatorRadialPointwiseBound
 import Development.AbelianVarietyTheory.Definitions.Jets.SameFns
@@ -19,7 +19,7 @@ theorem polyLift_listProd {Wp Wq : Type} [NormedAddCommGroup Wp] [InnerProductSp
     [InnerProductSpace ℂ Wq] [FiniteDimensional ℂ Wp] [FiniteDimensional ℂ Wq] (P : M.Par)
     (Bs : B.RealPlaceData P.k P.r Wp Wq) (o κ : ℕ) (H : List (RA P Bs)) (hH : ∀ h ∈ H, PolyLift P Bs o κ h) :
     PolyLift P Bs (H.length * o) (H.length * κ) H.prod := by
-  obtain ⟨h1, -, hmul⟩ := GlobalTheory.T.polyLift_one_mono_mul Wp Wq P Bs
+  obtain ⟨h1, -, hmul⟩ := _root_.GlobalTheory.HatNF.polyLift_closed Wp Wq P Bs
   induction H with
   | nil => simpa using h1
   | cons a H ih =>
@@ -46,7 +46,7 @@ theorem wordBound_cptCoef : ∀ a : ℕ → ℕ, BasicLiftAll a → ∀ (Wp Wq :
     · obtain ⟨Θ, hΘ⟩ := polyLift_listProd P p.T.base _ _ H (hTs H hH).2
       rw [(hTs H hH).1] at hΘ
       exact ⟨Θ, fun _ => hΘ⟩
-    · obtain ⟨Θ, -⟩ := (GlobalTheory.T.polyLift_one_mono_mul Wp Wq P p.T.base).1
+    · obtain ⟨Θ, -⟩ := (_root_.GlobalTheory.HatNF.polyLift_closed Wp Wq P p.T.base).1
       exact ⟨Θ, fun h => absurd h hH⟩
   choose lf hlf using hlift
   refine ⟨C, J, Ts.map lf, hC, ?_, ?_⟩

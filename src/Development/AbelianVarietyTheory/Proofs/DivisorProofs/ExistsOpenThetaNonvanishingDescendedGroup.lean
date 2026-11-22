@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.QuasiCompact
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedPointRangeEqFixedGroupImageStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedPointRangeEqFixedGroupImage
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -15,7 +15,7 @@ theorem GlobalTheory.Mum.exists_open_theta_descent : ∀ (R : Type) [CommRing R]
   obtain ⟨θ, OY, ⟨y₀, hy₀⟩, hθ⟩ := hT
   haveI := E.imm
   obtain ⟨W, hW, hWY⟩ := (E.j.isEmbedding.isInducing.isOpen_iff).1 OY.isOpen
-  have hrng := GlobalTheory.T.closedPoint_range_eq_fixedGroup_image R S π G' E
+  have hrng := _root_.GlobalTheory.Mum.Emb.range_closed R S π G' E
   have e1 : ∀ z, E.H.ι (l z) = N.u z := fun z => by rw [← Scheme.Hom.comp_apply, hl]
   have e2 : ∀ z, E.f (l z) = fU (pullback.fst N.U.hom π z) := fun z => by
     rw [← Scheme.Hom.comp_apply, hlf, Scheme.Hom.comp_apply]

@@ -177,7 +177,7 @@ theorem constituentCondition_of_noRepeatedFactor (D : D7) (i : D.nd.Loc) (r : D.
       apply SumRepresentations.isSSRep_descent (L := Qbar (D.nd.l i))
       show IsSSRep (mapRep f'.toRingHom _)
       rw [hQ]; exact (hr x).2.1
-    obtain ⟨d, u, σ, υ, h, Pm, hd, hrel⟩ := GlobalTheory.T.exists_conj_double_block_of_iso_subspaces _ W₁ W₂ hssK h1.2.1 h2.2.1 h1.1 hdis hiso
+    obtain ⟨d, u, σ, υ, h, Pm, hd, hrel⟩ := _root_.GlobalTheory.DoubleBlock.exists_conj_double _ W₁ W₂ hssK h1.2.1 h2.2.1 h1.1 hdis hiso
     exact hN x K' _ f'.toRingHom e' d u σ υ h Pm hd hrel
 
 theorem constituentCondition_of_hodgeJumps (D : D7) (ht : SumRepresentations.tie0 D) (i : D.nd.Loc)
@@ -195,7 +195,7 @@ theorem constituentCondition_of_hodgeJumps (D : D7) (ht : SumRepresentations.tie
   have hcσ : SumRepresentations.At.ContQ D.nd i (mapRep f' σ) :=
     (continuous_blocks' (SumRepresentations.At.sumRep (mapRep f' σ) (mapRep f' σ)) (mapRep f' σ) (mapRep f' σ) rfl 1 (fun g => by simp) hcA).1
   obtain ⟨P, hP⟩ := D.naut.pt_surj i x
-  obtain ⟨τ, w, hτw⟩ := GlobalTheory.T.exists_padicAlgCl_embedding_and_place_norm_lt_one D.host.E (D.nd.l i)
+  obtain ⟨τ, w, hτw⟩ := _root_.GlobalTheory.exists_embedding_padicAlgCl_place D.host.E (D.nd.l i)
   have hpl : ∀ w', InducesW D.nd i τ w' → w' ∈ placesOver D.host.E (D.nd.l i) :=
     fun w' hw' => mem_of_induces' D.host.E (D.nd.l i) τ w' hw'
   have hτ : InducesW D.nd i τ w := hτw

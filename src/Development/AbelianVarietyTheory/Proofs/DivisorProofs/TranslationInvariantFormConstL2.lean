@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TranslationInvariantSchwartzUnique
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzMapBarrelledSpace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzCompactSupportDense
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzPairingContinuousFunctionalStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzPairingContinuousFunctional
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealCompactPartitionUnity
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TranslationIsometrySchwartzOperator
 
@@ -77,7 +77,7 @@ theorem exists_lambda [FiniteDimensional ℝ V] [MeasurableSpace V] [BorelSpace 
   classical
   set B : 𝓢(V, ℂ) → 𝓢(V, ℂ) → ℂ := fun f g => ∫ x, T f x * starRingEnd ℂ (T g x) ∂μ with hB
   have hL : ∀ g, ∃ L : 𝓢(V, ℂ) →L[ℂ] ℂ, ∀ f, L f = B f g := fun g => by
-    obtain ⟨L, hL⟩ := GlobalTheory.T.schwartz_pairing_continuous_functional V μ (T g)
+    obtain ⟨L, hL⟩ := _root_.GlobalTheory.schwartz_pairing_conj_clm_of_borelSpace V μ (T g)
     exact ⟨L.comp T, fun f => by simp [hL, hB]⟩
   choose L hLB using hL
   obtain ⟨ψ, hψc, hψr, v, hsum1, hfin, M, hsumm⟩ := _root_.GlobalTheory.LatticePartition.exists_lattice_partition V
@@ -188,7 +188,7 @@ theorem main_of [FiniteDimensional ℝ V] [MeasurableSpace V] [BorelSpace V] (μ
   obtain ⟨Λ, hΛ⟩ := exists_lambda μ T htr hmul
   set B : 𝓢(V, ℂ) → 𝓢(V, ℂ) → ℂ := fun f g => ∫ x, T f x * starRingEnd ℂ (T g x) ∂μ with hB
   have hL : ∀ g, ∃ L : 𝓢(V, ℂ) →L[ℂ] ℂ, ∀ f, L f = B f g := fun g => by
-    obtain ⟨L, hL⟩ := GlobalTheory.T.schwartz_pairing_continuous_functional V μ (T g)
+    obtain ⟨L, hL⟩ := _root_.GlobalTheory.schwartz_pairing_conj_clm_of_borelSpace V μ (T g)
     exact ⟨L.comp T, fun f => by simp [hL, hB]⟩
   choose L hLB using hL
   let tr : V → 𝓢(V, ℂ) → 𝓢(V, ℂ) := fun a f => SchwartzMap.compSubConstCLM ℂ a f
@@ -241,7 +241,7 @@ theorem main_of [FiniteDimensional ℝ V] [MeasurableSpace V] [BorelSpace V] (μ
     exact (ne_of_gt (b.integral_pos (μ := μ))) this
   obtain ⟨c, hc⟩ := GlobalTheory.TransInvSchwartz.dim_le_one I Λ hIt hΛt' hI0
   refine ⟨c, fun f g => ?_⟩
-  obtain ⟨P, hP⟩ := GlobalTheory.T.schwartz_pairing_continuous_functional V μ g
+  obtain ⟨P, hP⟩ := _root_.GlobalTheory.schwartz_pairing_conj_clm_of_borelSpace V μ g
   have hcl : IsClosed {f : 𝓢(V, ℂ) | B f g = c * ∫ x, f x * starRingEnd ℂ (g x) ∂μ} := by
     have e : {f : 𝓢(V, ℂ) | B f g = c * ∫ x, f x * starRingEnd ℂ (g x) ∂μ} = {f | L g f = c * P f} := by
       ext f; simp only [Set.mem_setOf_eq, hLB, hP]

@@ -2,8 +2,8 @@ import Mathlib
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.WeilSiegelTheta.BigCellDefs
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OfHermEBijective
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaIntegralContinuous
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaIntegralLocallySummableBoundStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PoissonSummationHermitianLatticeStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaIntegralLocallySummableBound
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PoissonSummationHermitianLattice
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SiegelEisensteinCoefficientsSummable
 
 noncomputable section
@@ -19,9 +19,9 @@ theorem poissonHerm_main : PositivityTheory.GramSchwartzFunctions.BC.PoissonHerm
   intro D r V ψ θ μ lam ν φ hH hJ
   obtain ⟨hm, hψ, hθ, hμ, ⟨𝓖, hlam⟩, -, hφ, -⟩ := hH
   have hc := _root_.GlobalTheory.CompanionTheory.BigCellJ.jt_continuous D r V ψ θ μ φ hψ hθ hμ hφ
-  have hu := GlobalTheory.T.theta_integral_locally_summable_bound D r V ψ θ μ φ hm hψ hθ hμ hφ
+  have hu := _root_.GlobalTheory.CompanionTheory.JtUnif.jt_unif D r V ψ θ μ φ hm hψ hθ hμ hφ
   have hW := _root_.GlobalTheory.CompanionTheory.WSum.summable_W_of_two_mul_lt_rank D r V ψ θ μ lam 𝓖 φ hm hψ hθ hμ hlam hφ
-  obtain ⟨-, hP⟩ := GlobalTheory.T.poisson_summation_hermitian_lattice D r ψ hψ lam 𝓖 hlam _ hc hu
+  obtain ⟨-, hP⟩ := _root_.GlobalTheory.CompanionTheory.HermPoisson.poisson_herm D r ψ hψ lam 𝓖 hlam _ hc hu
   have hgW : ∀ β : HermE D r, (fun t : ratHerm D r => ∫ b, Jt ψ V μ φ b *
       ψ (-halfTr (Matrix.trace (HMul.hMul t.1.1 b.1 : Mx D r r))) ∂lam) ((hermEquiv (D := D) (r := r)) β) = W ψ V μ lam φ β :=
     fun β => (W_eq ψ V μ lam φ β).symm

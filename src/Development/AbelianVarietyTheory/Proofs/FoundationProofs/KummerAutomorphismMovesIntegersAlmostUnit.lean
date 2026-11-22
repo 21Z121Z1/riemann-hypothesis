@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.CosetTrace
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KummerGeneratorApproxCriticalRadius
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPthPowerScaleThinShellStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPthPowerScaleThinShell
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ValuationSubOnePowEqPrime
 
 open GlobalTheory.AlmostEt
@@ -43,7 +43,7 @@ theorem kummer_moves : ∀ (L : Type) [Field L] (v : Valuation L ℝ≥0) (p : �
           exact le_self_pow₀ hs1.le hpn
         _ = s ^ (p - 1) * (v (p : L) * v α ^ (p - 1)) := by ring
     exact le_of_pow_le_pow_left₀ hpn (zero_le') h1
-  obtain ⟨d, hdF, hd0, hdlo, hdhi⟩ := GlobalTheory.T.exists_pth_power_scale_thin_shell L v p hp F hF hp0 hp1 (r * s) hrs β hβ0
+  obtain ⟨d, hdF, hd0, hdlo, hdhi⟩ := _root_.GlobalTheory.AlmostEt.klc_scale L v p hp F hF hp0 hp1 (r * s) hrs β hβ0
   refine ⟨β * d ^ p, Subfield.mem_top _, hdhi, ?_⟩
   have hσx : σ • (β * d ^ p) - β * d ^ p = d ^ p * (σ • β - β) := by
     rw [smul_mul', smul_pow', hσ d hdF]; ring

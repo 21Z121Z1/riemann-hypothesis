@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.PartialZet
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KFacDifferentiable
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FTermIteratedFDerivBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeEisensteinFourierTermMoveUnit
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBalancedUnitMultipleTotallyRealStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBalancedUnitMultipleTotallyReal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SummableHeckeBalancedLatticeDoubleSum
 open NumberField Complex
 open scoped nonZeroDivisors ContDiff
@@ -20,7 +20,7 @@ theorem fTerm_deriv_summable_bound : ∀ (F : Type) [Field F] [NumberField F] [N
       ∀ p, ∀ σ ∈ K, ∀ z ∈ L, ‖iteratedFDeriv ℝ n (fun z : Emb F → ℂ => fTerm σ z p.1.out.1 p.2.1) z‖ ≤ u p := by
   intro F _ _ _ 𝔞 𝔟 K hK hKH L hL hLU n
   obtain ⟨m, hm⟩ := _root_.GlobalTheory.HeckeTwo.TermBound.fTerm_iteratedFDeriv_bound F K hK hKH L hL hLU n
-  obtain ⟨C₀, -, hC₀⟩ := GlobalTheory.T.exists_balanced_unit_multiple_totallyReal F
+  obtain ⟨C₀, -, hC₀⟩ := _root_.GlobalTheory.BalancedUnits.balanced_unit_multiple F
   obtain ⟨N, hN⟩ := _root_.GlobalTheory.HeckeTwo.summable_balanced_latSum F 𝔞 𝔟 C₀ m
   obtain ⟨C, hC⟩ := hm N
   choose ε hε using fun c : Quotient (unitRel (𝔟 : FractionalIdeal (𝓞 F)⁰ F)) => hC₀ c.out.1 c.out.2.2

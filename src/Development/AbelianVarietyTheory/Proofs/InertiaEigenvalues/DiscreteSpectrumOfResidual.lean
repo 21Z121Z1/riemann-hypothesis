@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UpperMatrixUni
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CapelliDetDiagonalBlockActsByInfinitesimalCharacStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdelicGLIwasawaDecompositionStandardParabolic
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LieMemCompactFiniteVectorsOfMem
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LieDerivativeInducedTensorFormsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LieDerivativeInducedTensorForms
 
 noncomputable section
 
@@ -26,7 +26,7 @@ theorem lie_tensorForms : ∀ (E : Type) [Field E] [NumberField E] [IsTotallyCom
     (h : ∑ i, n i = N) (π : ∀ i, CuspSub E (n i)) (X : Lie E N) (φ : Sm E N), φ ∈ indForms h π →
     ∀ (k : Kinf E N) (g : GL (Fin N) (Af E)), (fun m => (lie E N X φ).1 (leviEmb (Ad E) (stdBlocks n h) m *
       (infGL E N (Unitary.toUnits k) * finGL E N g))) ∈ tensorForms π :=
-  GlobalTheory.T.lie_derivative_induced_tensor_forms
+  _root_.GlobalTheory.LieTensor.lie_tensorForms
 
 theorem qdet_sub_blocks_mem : ∀ (A : Type) [Ring A] [Algebra ℂ A] {c N : ℕ} (n : Fin c → ℕ) (h : ∑ i, n i = N)
     (X : Fin N → Fin N → A), Formalism.REAL.GlRel X → ∀ u : ℂ,

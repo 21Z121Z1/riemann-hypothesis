@@ -1,12 +1,12 @@
 import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.NormalizedLocalScale
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RootMeasureTransportDoubleCosetStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RootMeasureTransportDoubleCoset
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselAmplitudeIndependentOfQuotientMeasure
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NCoords
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
 import Development.AbelianVarietyTheory.Definitions.Jets.SideFam
 import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselRootMeasureIndependentOfChoicesStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselRootMeasureIndependentOfChoices
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HcTypeWIrreducibleAndSchurAverage
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FramesCharactersAgreeCommonStabiliser
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselCharacterUnipotentRadicalProperties
@@ -235,9 +235,9 @@ theorem hsNormSq_amp_doubleCoset : ∀ (D : D7) τ w w' θ (W : LocW D.R.k D.R.r
   have hπ' := (GlobalTheory.Amp.Schur.type_irred hw' t2).2.1
   have hψ : ∀ n, ‖psiS D W.z n‖ = 1 := (GlobalTheory.BesselPsi.psi_character _ _ _ _ hz).1
   have hψ' : ∀ n, ‖psiS D W.z' n‖ = 1 := (GlobalTheory.BesselPsi.psi_character _ _ _ _ hz').1
-  have hH := (GlobalTheory.T.besselRootMeasure_independent_of_choices D W.z W.z' γ q q μ μ hz hz' hw hw' hγ hGf (ka_pos D) hμ hμ).2.2
-  have hmv := GlobalTheory.T.rootMeasure_transport_doubleCoset D W.z W.z' q γ a a' μ hz hz' hw hw' hγ ha ha' hμ
-  obtain ⟨-, e, hH'⟩ := GlobalTheory.T.besselRootMeasure_independent_of_choices D W.z W.z' _ q' q μ' _ hz hz' hw hw' hγ' hGf' (ka_pos D) hμ' hmv
+  have hH := (_root_.GlobalTheory.SnMass.RootUniq.rootMeas_unique D W.z W.z' γ q q μ μ hz hz' hw hw' hγ hGf (ka_pos D) hμ hμ).2.2
+  have hmv := _root_.GlobalTheory.Amp.RootMove.rootMeas_move D W.z W.z' q γ a a' μ hz hz' hw hw' hγ ha ha' hμ
+  obtain ⟨-, e, hH'⟩ := _root_.GlobalTheory.SnMass.RootUniq.rootMeas_unique D W.z W.z' _ q' q μ' _ hz hz' hw hw' hγ' hGf' (ka_pos D) hμ' hmv
   have hu := isUnit_det_of_mem_GG (s1' ha')
   have hq : IsQuotMeas W.μG μ' (ν.map (lmulM a')) := by
     rw [e]

@@ -6,8 +6,8 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrameCoeffsRegularI
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LocalFrameOfTwistGeneration
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MinorRatioRegularOfMatrixIdentity
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MinorExpansionOfScaledProductStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.CauchyBinetSumPositionedMinorsStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.TMatBlockDiagDetFactorsStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.CauchyBinetSumPositionedMinors
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.TMatBlockDiagDetFactors
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ProdXbPowEqXcOfPowStatement
 open AlgebraicGeometry CategoryTheory NumberField Matrix
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -118,7 +118,7 @@ theorem frames_pure (A : ∀ s, Matrix (Fin (n s)) (Fin (rk Ψ p q s)) Ω) (x₀
         (if (r.2 : ℕ) + 1 = p + q then υs (.inr r.1) else 1) }
   refine ⟨F, rfl, ⟨fun τ => ?_, fun r k hk i h hh => ?_, fun r k hk I I' hI hI' => ?_, fun r hr' => ?_⟩,
     fun r I => ⟨?_, ?_⟩, fun r hr' => ?_⟩
-  · obtain ⟨h1, h2, -⟩ := GlobalTheory.T.tMat_blockDiag_det_factors Ts τ
+  · obtain ⟨h1, h2, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PB.FMX.Frm.tMat_main Ts τ
     exact ⟨h1, by show (tMat Ts τ).det ≠ 0; rw [h2]; exact mul_ne_zero (hT _) (hT _)⟩
   · obtain ⟨hp, rfl⟩ : IsProperStep (p + q) p r.2 ∧ k = .inr (stepOf Ψ p q r) := by
       unfold blkF at hk
@@ -128,7 +128,7 @@ theorem frames_pure (A : ∀ s, Matrix (Fin (n s)) (Fin (rk Ψ p q s)) Ω) (x₀
       (stepCols (p + q) p r.2) (card_stepCols r)
     have key : detFac p r.2 (tMat Ts r.1) * xcOf x₀ c ^ (m (stepOf Ψ p q r).1 * (((stepOf Ψ p q r).2 : ℕ) + 1)) =
         (∏ k', xb A x₀ ⟨k', c k'⟩ ^ bF m r k') * wt (stepOf Ψ p q r) := by
-      rw [GlobalTheory.T.prod_xb_pow_eq_xcOf_pow, (GlobalTheory.T.tMat_blockDiag_det_factors Ts r.1).2.2]
+      rw [GlobalTheory.T.prod_xb_pow_eq_xcOf_pow, (_root_.GlobalTheory.CompanionTheory.Ar.PB.FMX.Frm.tMat_main Ts r.1).2.2]
       have hr2 := r.2.2
       obtain ⟨hp1, hp2⟩ := hp
       by_cases hi : (r.2 : ℕ) < p
@@ -160,7 +160,7 @@ theorem frames_pure (A : ∀ s, Matrix (Fin (n s)) (Fin (rk Ψ p q s)) Ω) (x₀
       unfold blkF at hk
       split_ifs at hk with hp
       exact ⟨hp, (Option.some.inj hk).symm⟩
-    have e2 := GlobalTheory.T.cauchyBinet_sum_positioned_minors C B hBC (stepOf Ψ p q r) I I' (hI.1.trans (card_stepCols r)) (hI'.1.trans (card_stepCols r))
+    have e2 := _root_.GlobalTheory.CompanionTheory.Ar.PB.FMX.Frm.Inv.sum_sMin_mul_cMin C B hBC (stepOf Ψ p q r) I I' (hI.1.trans (card_stepCols r)) (hI'.1.trans (card_stepCols r))
       (stepRows_pos r hI) (stepRows_pos r hI')
     have hw := (hwt (stepOf Ψ p q r)).1
     refine Eq.trans ?_ e2
@@ -177,7 +177,7 @@ theorem frames_pure (A : ∀ s, Matrix (Fin (n s)) (Fin (rk Ψ p q s)) Ω) (x₀
       exact hnp ⟨by omega, by omega⟩
     show detFac p r.2 (tMat Ts r.1) * 1 = (∏ k', xb A x₀ ⟨k', c k'⟩ ^ bF m r k') *
       ((if p ≤ (r.2 : ℕ) + 1 then υs (.inl r.1) else 1) * (if (r.2 : ℕ) + 1 = p + q then υs (.inr r.1) else 1))
-    rw [GlobalTheory.T.prod_xb_pow_eq_xcOf_pow, (GlobalTheory.T.tMat_blockDiag_det_factors Ts r.1).2.2]
+    rw [GlobalTheory.T.prod_xb_pow_eq_xcOf_pow, (_root_.GlobalTheory.CompanionTheory.Ar.PB.FMX.Frm.tMat_main Ts r.1).2.2]
     simp only [if_pos hpi]
     have h3 : (Ts (.inl r.1)).det = (xcOf x₀ c ^ m (.inl r.1)) ^ p * υs (.inl r.1) * (zOf A c (.inl r.1))⁻¹ := hW _
     have h4 : (Ts (.inr r.1)).det = (xcOf x₀ c ^ m (.inr r.1)) ^ q * υs (.inr r.1) * (zOf A c (.inr r.1))⁻¹ := hW _

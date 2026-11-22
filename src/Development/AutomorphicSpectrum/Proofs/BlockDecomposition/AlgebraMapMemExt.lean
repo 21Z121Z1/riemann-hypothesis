@@ -1,8 +1,8 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.ZariskiEtaleLifting.SubThickRees
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.WittExactSequences.IsCompl
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConnectionOnDividedPowerBasisStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DividedPowerPolynomialFiltrationStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConnectionOnDividedPowerBasis
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DividedPowerPolynomialFiltration
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CyclotomicDividedPowerExpansion
 set_option backward.isDefEq.respectTransparency false
 open CategoryTheory AlgebraicGeometry Polynomial DividedPowers GlobalTheory.LogCris GlobalTheory.PDA CrystallineSemistableComparison CrystallineSemistableComparison.CH CrystallineSemistableComparison.B
@@ -91,14 +91,14 @@ theorem main : ∀ {B : Type} [CommRing B] {J : Ideal B} (δ : DividedPowers J) 
     rw [← mul_geom_sum]
     exact J.mul_mem_left _ hx
   obtain ⟨hqn, ν, hν1, hνd, hνf, hνn, hνz⟩ := _root_.GlobalTheory.CompanionTheory.QPd.dpow_pow_sub_one δ p hp hpn x hx
-  obtain ⟨hfm, hfa, -, hfr⟩ := GlobalTheory.T.divided_power_polynomial_filtration δ Q η hS
+  obtain ⟨hfm, hfa, -, hfr⟩ := _root_.GlobalTheory.CompanionTheory.PDFil.fil_pdPoly δ Q η hS
   have h1 : g (Q.e 1) = algebraMap B Q.P (x ^ p - 1) + algebraMap B Q.P (x ^ p) * Q.e 1 := by
     have := hg1
     rw [map_add, map_one, mul_add, mul_one, add_comm (1 : Q.P)] at this
     rw [_root_.map_sub, map_one (algebraMap B Q.P)]
     linear_combination this
   have hg := map_sub_self hS hμ hνd g hgB hgd h1
-  obtain ⟨hker, hsurj⟩ := GlobalTheory.T.connection_on_divided_power_basis Q.e (fil δ) p (x ^ p) ν (qDer Q (x ^ p) ν) hp.ne_zero hpn
+  obtain ⟨hker, hsurj⟩ := _root_.GlobalTheory.CompanionTheory.QDerivative.ker_and_surjective Q.e (fil δ) p (x ^ p) ν (qDer Q (x ^ p) ν) hp.ne_zero hpn
     hqn hfm hfa hν1 hνf hνn hνz (qDer_e Q (x ^ p) ν)
   refine ⟨fun a b hab ↦ by rw [← hrepr a, hab, hrepr], ?_, ?_⟩
   · intro r z hz hgz

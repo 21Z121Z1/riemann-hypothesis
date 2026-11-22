@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarizationVectorB
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClsDivPullEqVPull
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBasicOpenSmoothOfRelativeDimensionOfGeneri
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFrameChart
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeBundlePullbackGenOfFrameIsGenStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeBundlePullbackGenOfFrameIsGen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeFrameGeneratorValuePullbackStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraitPullbackSemiAbelianModelIdentification
 
@@ -60,14 +60,14 @@ theorem exists_integral_hodgeGen : ∀ (S' : Scheme.{0}) (g : ℕ) (G : Over S')
   have p₁ := isGrpPullback_pullback G₁ (jK R)
   have ha : IsFrame fun i => (omegaBase p₁).app ⊤ (pullbackSections (jK R) _ le_top (ε i)) :=
     (GlobalTheory.BadPt.Fibre.frame_pb (jK R) hε le_top).map_iso _
-  refine ⟨gen hα ha, GlobalTheory.T.hodgeBundlePullbackGenOfFrame_isGen hα ha, ?_⟩
+  refine ⟨gen hα ha, _root_.GlobalTheory.HodgeFrameGen.gen_isGen hα ha, ?_⟩
   intro W _ _ _ hW φ gam hgam χ' hχ
   haveI : IsDiscreteValuationRing W := hW.1
   obtain ⟨ρ', ψ', hρ', hψ', e₁, e₂⟩ := _root_.GlobalTheory.HodgeFrameGen.traitPullback_identification hG hG₁ hα φ gam hgam χ' hχ
   have pW := isGrpPullback_pullback G₁ (spMap φ)
   have ha' : IsFrame fun i => (omegaBase pW).app ⊤ (pullbackSections (spMap φ) _ le_top (ε i)) :=
     (GlobalTheory.BadPt.Fibre.frame_pb (spMap φ) hε le_top).map_iso _
-  refine ⟨gen hψ' ha', GlobalTheory.T.hodgeBundlePullbackGenOfFrame_isGen hψ' ha', fun z J hJ => ?_⟩
+  refine ⟨gen hψ' ha', _root_.GlobalTheory.HodgeFrameGen.gen_isGen hψ' ha', fun z J hJ => ?_⟩
   have q := isGrpPullback_pullback ((Over.pullback (jK R)).obj G₁) (spMap gam)
   have hA := q.comp hα
   have hq₁ := q.comp p₁

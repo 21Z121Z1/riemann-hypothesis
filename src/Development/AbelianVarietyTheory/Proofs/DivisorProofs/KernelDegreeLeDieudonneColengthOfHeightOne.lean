@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.RedSurjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KerEqRangeOfRangeEqKer
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobKerIdealLeAugIdeal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ColengthRangeMapGeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ColengthRangeMapGe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CotangentKernelEqCokerOmegaMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsQuotientKernelSupFrobeniusKernel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankQuotKernelIdealEqBeyondExponent
@@ -93,7 +93,7 @@ theorem GlobalTheory.Dieu.le_colength_of_htOne : ∀ (p : ℕ) [Fact p.Prime] (T
   haveI := GlobalTheory.PDivGroup.finite_omega_of_eq_zero hp0 H
   have hiso : IsIsog q := ⟨1, q', by rw [pow_one]; exact h1, by rw [pow_one]; exact h2⟩
   have hd := (_root_.GlobalTheory.Dieu.isog_finrank_omega p T k G H q hiso).2.2.1
-  have hL := (GlobalTheory.T.finrank_quot_range_le_length_quot_range_map p T k H.dual G.dual (dualHom G H q)).2
+  have hL := (_root_.GlobalTheory.Dieu.colength_range_map_ge p T k H.dual G.dual (dualHom G H q)).2
   rw [finrank_coker_lieMap_congr G.bidual H.bidual q _ (bidual_hom_dualHom_dualHom q),
     finrank_coker_lieMap q hd] at hL
-  refine ⟨le_trans (by exact_mod_cast h3) (GlobalTheory.T.finrank_quot_range_le_length_quot_range_map p T k G H q).1, le_trans (by exact_mod_cast h3) hL, h3⟩
+  refine ⟨le_trans (by exact_mod_cast h3) (_root_.GlobalTheory.Dieu.colength_range_map_ge p T k G H q).1, le_trans (by exact_mod_cast h3) hL, h3⟩

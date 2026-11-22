@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.EqZeroOfForallPowDvd
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsHomNmulOfIsLawStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsHomNmulOfIsLaw
 
 set_option autoImplicit false
 
@@ -122,7 +122,7 @@ theorem formalGroupLawCoboundaryOne_mulDefect (R Q : Type) [CommRing R] [CommRin
     (hs : map (algebraMap R Q) s = defect μ k f) :
     cob1 μ s = (k : R) • g - at2 g (fun i => inL (nmul μ k i)) (fun i => inR (nmul μ k i)) ∧
       constantCoeff g = 0 := by
-  have hH := GlobalTheory.T.isHom_nmul_of_isLaw R d μ hμ k
+  have hH := _root_.GlobalTheory.NMulEndo.isHom_nmul R d μ hμ k
   have hμ0 := hμ.const
   have hN0 := hH.const
   have hmapinj : ∀ {σ : Type} (a b : MvPowerSeries σ R),

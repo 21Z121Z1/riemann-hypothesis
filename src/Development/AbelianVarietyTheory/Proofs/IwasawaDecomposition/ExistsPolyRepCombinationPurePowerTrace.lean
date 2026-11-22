@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SumSumEqSumPair
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.AevalDualModel
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolynomialMatrixFamilyRepLieTensorProductStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolynomialMatrixFamilyRepLieExteriorSquareStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TwoMulTraceExteriorSquareDerivationPowStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolynomialMatrixFamilyRepLieTensorProduct
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolynomialMatrixFamilyRepLieExteriorSquare
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TwoMulTraceExteriorSquareDerivationPow
 
 set_option autoImplicit false
 
@@ -34,11 +34,11 @@ theorem virt_fsum {α : Type} [Fintype α] (g : α → ℕ → Mat m S → S) (h
 
 theorem ptr_tensor_sub_wedge2 (ρ : PolyRep m) (A : Mat m S) (b : ℕ) :
     (ρ.tensor ρ).ptr b A - 2 * ρ.wedge2.ptr b A = 2 ^ b * ρ.ptr b A := by
-  have h := GlobalTheory.T.two_mul_trace_exteriorSquareDerivation_pow (ρ.lie A) b
+  have h := _root_.GlobalTheory.GoodMetric.ChernSpan.two_mul_trace_wedge2Lie_pow (ρ.lie A) b
   have e1 : (ρ.tensor ρ).ptr b A = ((kron (ρ.lie A) 1 + kron 1 (ρ.lie A)) ^ b).trace :=
-    congrArg (fun L => (L ^ b).trace) (GlobalTheory.T.polynomialMatrixFamilyRep_lie_tensorProduct ρ ρ A)
+    congrArg (fun L => (L ^ b).trace) (_root_.GlobalTheory.GoodMetric.PolyRep.lie_tensor ρ ρ A)
   have e2 : ρ.wedge2.ptr b A = ((wedge2Lie (ρ.lie A)) ^ b).trace :=
-    congrArg (fun L => (L ^ b).trace) (GlobalTheory.T.polynomialMatrixFamilyRep_lie_exteriorSquare ρ A)
+    congrArg (fun L => (L ^ b).trace) (_root_.GlobalTheory.GoodMetric.PolyRep.lie_wedge2 ρ A)
   have e3 : ρ.ptr b A = ((ρ.lie A) ^ b).trace := rfl
   linear_combination e1 - 2 * e2 - h - 2 ^ b * e3
 

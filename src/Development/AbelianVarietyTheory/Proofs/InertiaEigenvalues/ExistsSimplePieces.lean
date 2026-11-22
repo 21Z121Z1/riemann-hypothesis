@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TwistedMode
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.OnePlusPowerAssembly
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSeriesOfExact
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ModelPushOfSurjective
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ModelPreimageOfInjectiveFinDimRepModelHomStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ModelPreimageOfInjectiveFinDimRepModelHom
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ModelObjAndAbc
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SenMultiplicityAdditiveExactSequence
 
@@ -89,7 +89,7 @@ theorem ModTh.exists_simple_pieces : ∀ {k G : Type} [Field k] [Group G] {l n :
       unfold sen qmult gmult
       exact Module.finrank_zero_of_subsingleton
   · obtain ⟨A, C₀, f, p, ef, ep, hf, hp, H, hs, hlt⟩ := exists_simple_quotient B hB
-    obtain ⟨s, C, L, hL, hC, hss, hsen⟩ := ih A hlt _ (GlobalTheory.T.model_preimage_of_injective_finDimRepModelHom F M A B f N ef hf hN)
+    obtain ⟨s, C, L, hL, hC, hss, hsen⟩ := ih A hlt _ (_root_.GlobalTheory.Models.SubModel.model_pre F M A B f N ef hf hN)
     obtain ⟨hobj, hlat, -, hc⟩ := _root_.GlobalTheory.Models.model_obj_and_abc F M B N hN
     let C' : Fin (s + 1) → Ob k G := Fin.cons C₀ C
     refine ⟨s + 1, C', Fin.cons (α := fun a => Lats k n (C' a).m) (F.push B C₀ p N) L, fun a => ?_, fun a => ?_,

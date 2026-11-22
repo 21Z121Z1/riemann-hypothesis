@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FourierMatch
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedQuadraticIntegralTraceFormPerfectStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedQuadraticIntegralTraceFormPerfect
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology
 
 noncomputable section
@@ -215,7 +215,7 @@ theorem psi_conductor : ∀ (F E : Type) [NontriviallyNormedField F] [Nontrivial
   haveI := hU.charZero
   haveI := hU.lcF
   haveI : ProperSpace F := ProperSpace.of_locallyCompactSpace F
-  obtain ⟨htr, he, -⟩ := GlobalTheory.T.unramifiedQuadratic_integral_traceForm_perfect F E
+  obtain ⟨htr, he, -⟩ := _root_.GlobalTheory.NTr.traceForm_perfect F E
   exact ⟨exists_stdChar F, fun ψ hψ => ⟨locConst hψ, norm_eq_one hψ, conductor hψ,
     conductor_trace htr he hψ⟩⟩
 

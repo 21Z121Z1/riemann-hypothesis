@@ -6,7 +6,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsFlagCellChartOverModelChart
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.LieBasisCoordinatesBijectiveTangent
-import Development.AbelianVarietyTheory.Proofs.GenericRegularity.IsCombAtIffCoordinateCombinationStatement
+import Development.AbelianVarietyTheory.Proofs.GenericRegularity.IsCombAtIffCoordinateCombination
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.NonemptyLift
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsFiniteMchartCover
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsChartFiniteType
@@ -27,7 +27,7 @@ theorem MChart.Lift.exists_coordinates (E : Type) [Field E] [NumberField E] [IsC
       Λ.LieTie g y.u ∧ ∀ τ, LinearIndependent L (g τ).transpose := by
   classical
   have hb := vec_bijective E H Dw l Xo c O β Y M L f y.x Λ
-  have hc := GlobalTheory.T.isCombAt_iff_coordinate_combination E H Dw l Xo c O β Y M L f y.x Λ
+  have hc := _root_.GlobalTheory.Reg.VecComb.isCombAt_iff_vec E H Dw l Xo c O β Y M L f y.x Λ
   choose cv hcv using fun τ i => (hb.2.2 (y.u τ i) (y.4 τ i)).exists
   refine ⟨fun τ j i => cv τ i j, fun τ i => hcv τ i, fun τ => ?_⟩
   refine Fintype.linearIndependent_iff.2 fun a ha k => ?_

@@ -3,7 +3,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import Development.AbelianVarietyTheory.Counterexamples.AbelianLawCounterexamples.WeilIsUniqueOfLocal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSympLevel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFullSymplecticLevelStructureUniqueOfLevelsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFullSymplecticLevelStructureOfTateIsoStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFullSymplecticLevelStructureOfTateIso
 
 set_option autoImplicit false
 
@@ -50,7 +50,7 @@ theorem exists_unique_fullLevel {D : Datum H} {l : Level H} {B : Type} [CommRing
         Induces l (fun a => toUnit _ ≫ o.etaA a) (fun a => toUnit _ ≫ o.eta a) ev := by
   obtain ⟨-, I, hIA, hetaA, heta⟩ := o.geom k x β hx
   have hzA' : z ^ (l.M' / l.A) = I.ζ l.A := Units.ext (by rw [Units.val_pow_eq_pow_val, hzA, hIA])
-  obtain ⟨ev, hev, hA, hM⟩ := GlobalTheory.T.exists_fullSymplecticLevelStructure_of_tateIso l I hz hzA'
+  obtain ⟨ev, hev, hA, hM⟩ := _root_.GlobalTheory.FullLevel.exists_sympLevel_of_tate l I hz hzA'
   have hi : Induces l (fun a => toUnit _ ≫ o.etaA a) (fun a => toUnit _ ≫ o.eta a) ev :=
     ⟨fun a => (hA a).trans (hetaA a).symm, fun a ha => (hM a ha).trans (heta a ha).symm⟩
   refine ⟨ev, ⟨hev, hi⟩, ?_⟩

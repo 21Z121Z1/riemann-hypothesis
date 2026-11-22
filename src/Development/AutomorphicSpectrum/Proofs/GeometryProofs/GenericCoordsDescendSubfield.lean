@@ -4,7 +4,8 @@ import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatLineGenerator
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.CardComapMulFinsumEqFinsumFibres
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlagModelStatementHoldsStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlagModelStatementHolds
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlagModelStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SegreRefineLineBundles
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IntegralClosureHeightEqOneOfLiesOver
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GlueApplyOfNotInFibre
@@ -373,7 +374,7 @@ theorem SatModel.exists_flagged_model (E : Type) [Field E] [NumberField E] [IsCM
   have hw : ∃ l, x l ≠ 0 := by
     obtain ⟨l, hl⟩ := htie.cover (Flat.ZLat.gp ξ)
     exact ⟨l, hl.1⟩
-  obtain ⟨κ', _, y0, M', g, hd, hN, hch, hflag, -, hnorm⟩ := GlobalTheory.T.FlagModelStatement_holds ℤ Ω ((k : K) → J k) x
+  obtain ⟨κ', _, y0, M', g, hd, hN, hch, hflag, -, hnorm⟩ := _root_.GlobalTheory.CompanionTheory.Ar.FlagModel.flagModel ℤ Ω ((k : K) → J k) x
     (PModel.mk X ξ (specZIsTerminal.from X) hover hall htie) Unit (fun _ => (k : K) → J k) (fun _ => x)
     (CMType H ⊕ CMType H) Li (fun _ => M.lat) (fun _ => Module.finrank Ω Li) (labelRk D) (fun _ => ⊤) b
     (fun _ => hw) (fun _ => hvb) hbind (fun _ _ => trivial)

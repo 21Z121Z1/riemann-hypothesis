@@ -1,6 +1,6 @@
 import Mathlib
 import ReciprocityTheory.CommutativeAlgebra.SaturatedChains.Integral
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RingKrullDimLtTopOfEssFiniteTypeStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RingKrullDimLtTopOfEssFiniteType
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AssociatedPrimeLocalizationDvr
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsInjectiveAdicCompletionMapOfFiniteStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteIntegralClosureOfEssFiniteTypeIntDomain
@@ -122,7 +122,7 @@ theorem isReduced_of_dim_le : ∀ (n : ℕ) (D : Type) [CommRing D] [IsDomain D]
 theorem isReduced_adicCompletion : ∀ (D : Type) [CommRing D] [IsDomain D] [Algebra.EssFiniteType ℤ D]
     (J : Ideal D), J ≤ Ideal.jacobson (⊥ : Ideal D) → IsReduced (AdicCompletion J D) := by
   intro D _ _ _ J hJ
-  have hlt := GlobalTheory.T.ringKrullDim_finite_of_essFiniteType_int D
+  have hlt := _root_.GlobalTheory.ringKrullDim_lt_top_of_essFiniteType D
   obtain ⟨m, hm⟩ : ∃ m : ℕ, ringKrullDim D ≤ (m : WithBot ℕ∞) := by
     generalize ringKrullDim D = e at hlt ⊢
     induction e using WithBot.recBotCoe with

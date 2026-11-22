@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.AxesVanishingStructureSheafDegOne
 import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.IsScalarTowerOfAlgebraMapEq
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianHodgeDeRham
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GrpObjPullbackAxesCohomologyProjectionsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GrpObjPullbackAxesCohomologyProjections
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeOneFormFrameAndSquare
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumWedgeGlobalOneFormsEqZeroIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeGlobalOneFormsPrimitiveStatement
@@ -26,7 +26,7 @@ theorem wsum_eq_zero_of_mul : ∀ (R : Type) [CommRing R] (A : Over (Sp R)) [Grp
   have hP : ∀ x : GlobForm A.hom, pF μ[A] x = pF (fst A A) x + pF (snd A A) x := GlobalTheory.T.abelianScheme_globalOneForms_primitive R A g hA hs
   obtain ⟨hF, hC, hA2, hs2⟩ := _root_.GlobalTheory.AbCoh.basic_of_isAbelianScheme R A g hA hs
   obtain ⟨hF2, hC2, -, -⟩ := _root_.GlobalTheory.AbCoh.basic_of_isAbelianScheme R (A ⊗ A) (g + g) hA2 hs2
-  obtain ⟨-, hax, -⟩ := GlobalTheory.T.grpObj_pullback_axes_cohomology_projections R A
+  obtain ⟨-, hax, -⟩ := _root_.GlobalTheory.AbCoh.AxesPull.main R A
   let U : Fin (n + n) → GlobForm (A ⊗ A).hom :=
     Fin.append (fun k ↦ pF (fst A A) (u k)) (fun k ↦ pF (snd A A) (u k))
   let V : Fin (n + n) → GlobForm (A ⊗ A).hom :=

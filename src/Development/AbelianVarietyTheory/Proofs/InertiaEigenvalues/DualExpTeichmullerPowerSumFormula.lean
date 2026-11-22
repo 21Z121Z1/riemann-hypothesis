@@ -5,11 +5,11 @@ import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 import Development.AbelianVarietyTheory.Definitions.Foundations.HTBasis
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExpStar
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowMulMemLatIff
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobeniusSolutionExpansionModFiltrationStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExpStarOfLowTermsRemovedStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsDeRhamElementOfCocycleRecursionStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobeniusSolutionExpansionModFiltration
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExpStarOfLowTermsRemoved
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsDeRhamElementOfCocycleRecursion
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsLiftsOfNormLeOne
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AinfCocycleSolutionTeichmullerEpsilonRootPowStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AinfCocycleSolutionTeichmullerEpsilonRootPow
 
 noncomputable section
 
@@ -71,15 +71,15 @@ theorem expStar_levSum : ∀ (LT : LocTheory) (l : ℕ) [Fact l.Prime] (AI : Loc
       exact ⟨w, fun _ => hw⟩
     · exact ⟨0, fun h => absurd h hi⟩
   choose w hw using hw
-  obtain ⟨y, hy, hexp⟩ := GlobalTheory.T.frobeniusSolution_expansion_mod_filtration l (LT l) AI hT K s ι T w c m (e + 1) d (by omega) hw
+  obtain ⟨y, hy, hexp⟩ := _root_.GlobalTheory.ExpImage.Expand.expand l (LT l) AI hT K s ι T w c m (e + 1) d (by omega) hw
     (fun j hj => hd j (by omega))
   have hsolv : Solv AI K s g U (y - WittVector.frobenius y) := by
     rw [hy]
     refine Solv.sum T _ fun i hi => ?_
-    exact (GlobalTheory.T.ainfCocycleSolution_teichmullerEpsilonRoot_pow l (LT l) AI K s hs g hχ U hU1 (m i) (hc i hi).2).mul
+    exact (_root_.GlobalTheory.ExpImage.EpsSolve.main l (LT l) AI K s hs g hχ U hU1 (m i) (hc i hi).2).mul
       ((hw i hi).act (Gj_le_fix s hg)) (fun h hh => (hw i hi).act (Hinf_le_fix hh))
-  obtain ⟨b, hb0, hbH, z₀, hz₀⟩ := GlobalTheory.T.exists_deRham_element_of_cocycleRecursion l (LT l) AI hT K s hs g U (e + 1) (by omega) y hsolv
-  obtain ⟨z, hz, hE⟩ := GlobalTheory.T.expStar_of_low_terms_removed LT l AI hT K s hs e g hgen
+  obtain ⟨b, hb0, hbH, z₀, hz₀⟩ := _root_.GlobalTheory.ExpImage.Sum.main l (LT l) AI hT K s hs g U (e + 1) (by omega) y hsolv
+  obtain ⟨z, hz, hE⟩ := _root_.GlobalTheory.ExpImage.LowTerms.expStar_of_sum LT l AI hT K s hs e g hgen
     (fun j => algebraMap ℚ_[l] (Om l) ((j.factorial : ℚ_[l]) * (l : ℚ_[l]) ^ (s * j))⁻¹ *
       levSum (LT l) K s j T c m (d j))
     (fun j => mul_mem (IntermediateField.algebraMap_mem _ _) (levSum_mem_Ks _ _ _ _ _ _ _ _))

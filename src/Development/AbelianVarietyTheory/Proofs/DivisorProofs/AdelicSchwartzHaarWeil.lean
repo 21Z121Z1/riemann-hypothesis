@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUSplittingInl
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ImportsBis
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledUnitaryPartnerDiagStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledUnitaryPartnerDiag
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsContOnOfLocal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdeleJoinZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrArchPairAdeleJoin
@@ -48,7 +48,7 @@ theorem seminorm_rem_le (a : V) (L : V →L[ℝ] ℝ) (c : ℝ) (f : 𝓢(V, ℂ
   set P : 𝓢(V, ℂ) →L[ℂ] 𝓢(V, ℂ) := SchwartzMap.smulLeftCLM ℂ (fun x => ((L x : ℝ) : ℂ)) with hP
   set d := LineDeriv.lineDerivOpCLM ℂ 𝓢(V, ℂ) a f with hd
   obtain ⟨C3, hC3⟩ := _root_.GlobalTheory.LinPhaseSeminorm.seminorm_smulLeft_phase_le L c k n
-  choose C1 hC1 using fun m => GlobalTheory.T.schwartz_seminorm_translate_sub_lineDeriv_le a f k m
+  choose C1 hC1 using fun m => _root_.GlobalTheory.SchwartzTranslate.seminorm_translate_sub_le a f k m
   obtain ⟨C2, hC2⟩ := _root_.GlobalTheory.LinearPhase.seminorm_phase_sub_le L c d k n
   obtain ⟨C0, hC0⟩ := _root_.GlobalTheory.LinearPhase.seminorm_phase_sub_le L c f k n
   set p := SchwartzMap.seminorm ℂ k n (E := V) (F := ℂ) with hp

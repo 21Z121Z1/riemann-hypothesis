@@ -2,7 +2,7 @@ import Mathlib
 import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.UnramifiedWhittaker.CProps
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SeriesEqDens
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeVolumeUnramified
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LevelCharactersUnramifiedStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LevelCharactersUnramified
 
 noncomputable section
 
@@ -244,7 +244,7 @@ theorem jtLev : JtLev := by
   intro F E _ _ _ _ _ σ M n d J T bs v ψv S σS ϖ ε hG μv hμ k X hX
   have hvol : μv (latV bs v) = 1 := _root_.GlobalTheory.CompanionTheory.GunrVol.volLat F E σ M n d J T bs v ψv S σS ϖ ε hG μv hμ
   have hlev : IsLevelChars σS hG.pS (hG.psiLev (one_mem _)) :=
-    GlobalTheory.T.level_characters_unramified F E σ M n d J T bs v ψv S σS ϖ ε hG 1 (one_mem _) norm_one
+    _root_.GlobalTheory.CompanionTheory.GunrLevChars.levChars F E σ M n d J T bs v ψv S σS ϖ ε hG 1 (one_mem _) norm_one
   have hR : IsUnrQuad S σS hG.pS (Ideal.absNorm v.asIdeal) ε := hG.quad
   have hfin : ∀ k, Finite (S ⧸ lev hG.pS k) := fun k => Nat.finite_of_card_ne_zero (by
     rw [_root_.GlobalTheory.CompanionTheory.UnrDens.card_quot_lev S σS hG.pS _ ε hR k]

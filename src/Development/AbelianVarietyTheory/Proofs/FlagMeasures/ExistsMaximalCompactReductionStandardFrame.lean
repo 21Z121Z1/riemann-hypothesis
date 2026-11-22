@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowsIdentificationFs
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FixedTypePrimePlacesChoiceOnePerConjugatePair
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ReducedMatrixOfActsAsDegreeOnePrimeFrame
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsSplitPlaceEqFixedTypePrimePlace
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CmFieldSplitPlaceEqOfPlaceEqStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CmFieldSplitPlaceEqOfPlaceEq
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsFixedPlaceConjugatorLiftsActByReductions
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.S Formalism.MainNotions.ArithmeticCylinders Formalism.L2.Theta Formalism.IndefR.Mult Formalism.IndefR.Links Formalism.IndefR.AutomorphicEvaluation Formalism.IndefR.principalLevelFrame Formalism.L2.DIV Formalism.L2.SG.RowDict Formalism.L2.SG.RowsJoinPinned Formalism.L2.SG.RowLevelMatch Formalism.L2.SG.HidaSetting Formalism.L2.SG.PoincareInHH.PoincareSetting MeasureTheory NumberField ReciprocityTheory.Aut Formalism.AUTREP GlobalTheory.Mem.SRe GlobalTheory.LabPin
 attribute [local instance] Formalism.BasicNotions.Host.cmStar GlobalTheory.LabPin.instCM
@@ -17,7 +17,7 @@ namespace GlobalTheory.LabPin
 
 theorem frameRed_exists : ∀ (D : D7) (X : HidaSetting D) (h : X.B.I = Formalism.L2.SG.InstExistsPf.instOf D) (t : Formalism.L2.Theta.GA D (D.sp.Y 0)) (PY : RowPsi (Yc D 0) D.R.r) (hF : D.host.F = maximalRealSubfield D.host.E), StdPsi hF PY → (∀ x : X.B.I.E, HEq (X.ιE x) x) → ∃ c red, FrameRed X h t PY c red := by
   intro D X h t PY hF hstd hι
-  obtain ⟨c, fr, hB⟩ := _root_.GlobalTheory.FixedConj.exists_conj_frames D X h t PY hF hstd hι (GlobalTheory.T.cmField_splitPlace_eq_of_place_eq D.host.E)
+  obtain ⟨c, fr, hB⟩ := _root_.GlobalTheory.FixedConj.exists_conj_frames D X h t PY hF hstd hι (_root_.GlobalTheory.SplitUniq.splitPlace_eq_of_w_eq D.host.E)
   obtain ⟨ρ, hρ⟩ := GlobalTheory.RowLev.exists_red_actsBy X.B.I D.R.r D.host.g D.nd.PlG
     (fun k v => Formalism.L2.SG.Pf.RowDictPf.wB X (D.naut.plGw k v)) fr X.n_eq (_root_.GlobalTheory.RowLev.FixedChoice.isChoice_wB_plGw D X)
   have hg : X.B.g = D.host.g 0 * D.host.g 1 := X.g_eq

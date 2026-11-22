@@ -45,7 +45,7 @@ theorem parts_eq_of_rowLabels : ∀ {D : D7} {G : Type} [Group G] [Fintype G] {P
   refine ⟨?_, fun i => ?_⟩
   · obtain ⟨n, hβ⟩ := hC.lev.βY 0 (by have := D.R.two_le_m; omega)
     have hlev := fun (P : Pl D.host.E) (hP : Good R A.μ0 P) =>
-      GlobalTheory.T.level_operators_at_prime_off_level_datum (Yc D 0) (R.βY 0) (R.ΛY 0) ((D.host.g 0 * D.host.g 1) ^ n) (R.dat0 R.triv) hβ P
+      _root_.GlobalTheory.LevOp.level_operators (Yc D 0) (R.βY 0) (R.ΛY 0) ((D.host.g 0 * D.host.g 1) ^ n) (R.dat0 R.triv) hβ P
         (by
           intro h
           push_cast at h
@@ -66,7 +66,7 @@ theorem parts_eq_of_rowLabels : ∀ {D : D7} {G : Type} [Group G] [Fintype G] {P
     rw [key P d hP ⟨B, (((hlev P hP).2.1 SF d B).1 hB).2⟩]
   · obtain ⟨n, hβ⟩ := hC.lev.βW i
     have hlev := fun (P : Pl D.host.E) (hP : Good R A.μ0 P) =>
-      GlobalTheory.T.level_operators_at_prime_off_level_datum (Wc D i) (R.βW i) (R.ΛW i) (1 ^ n) (R.datWp i R.triv) hβ P
+      _root_.GlobalTheory.LevOp.level_operators (Wc D i) (R.βW i) (R.ΛW i) (1 ^ n) (R.datWp i R.triv) hβ P
         (by rw [one_pow, Nat.cast_one]; exact (Ideal.ne_top_iff_one _).1 P.isPrime.ne_top)
         (by
           intro PP hPP

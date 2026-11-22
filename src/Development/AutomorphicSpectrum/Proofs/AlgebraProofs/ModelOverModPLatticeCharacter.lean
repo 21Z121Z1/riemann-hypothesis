@@ -2,7 +2,7 @@ import Mathlib
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsLatticeFamily
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.BundleChernComparison
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SameGenericBundleFrames
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LineBundleChartGenericComparisonStatement
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LineBundleChartGenericComparison
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SameGenericLinearEquiv
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.TrivFlagMod
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.FlagMinor
@@ -309,7 +309,7 @@ theorem relH_main : ∀ (O : Type) [CommRing O] [IsDomain O] [IsDiscreteValuatio
       exact hA2 i⟩) k hk1 hk2 q L Q hQ
   rw [hsum, Finset.mul_sum]
   refine Finset.sum_congr rfl fun i _ => ?_
-  have hP := (GlobalTheory.T.line_bundle_chart_generic_comparison O Ω K ι x d hmodel (Xb τ i) T (A3 i) (u τ i) (a τ i) (-1) (hu τ i) (hlX i)
+  have hP := (_root_.GlobalTheory.CompanionTheory.Ar.CkLinePow.main O Ω K ι x d hmodel (Xb τ i) T (A3 i) (u τ i) (a τ i) (-1) (hu τ i) (hlX i)
     hT (hSGX i) (hA3 i)).2 k hk1 hk2 q L Q hQ
   have hTr := (_root_.GlobalTheory.CompanionTheory.Ar.Num.CkTransport.main O Ω K ι x d hmodel 1 Ω Ω
     (LinearEquiv.smulOfNeZero Ω Ω (u τ i)⁻¹ (inv_ne_zero (hu τ i))) (A1 i) (A2 i) (A3 i) T (hSG12 i)

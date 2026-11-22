@@ -7,13 +7,13 @@ import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.AbByPOfCo
 import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.InvariantSubspaceMobiusInverseRecEqOfFinrankLt
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.MatrixTraceIffIsCharacterOverSubfieldComplex
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.IsCharacterCuspidalRootSumRegularStatement
-import Development.AbelianVarietyTheory.Proofs.CharacterTheory.GeneralLinearFunctionExtendZeroEndPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.CharacterTheory.GeneralLinearFunctionExtendZeroEndProperties
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.ExponentRegularOfNatDegreeMinpolyGeneratorPow
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.FinsumUnipotentRadicalEqZeroStatement
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.InvariantSubspaceMobiusInverseCharpolyOfIrreduci
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.IsPrimitiveEndClassFunctionInvariantSubspaceMobi
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.RootPowerSumCharacterAdditiveAndXSubOnePow
-import Development.AbelianVarietyTheory.Proofs.CharacterTheory.FrobeniusTorusMinpolyDegreeRootPowerSumStatement
+import Development.AbelianVarietyTheory.Proofs.CharacterTheory.FrobeniusTorusMinpolyDegreeRootPowerSum
 
 open ReciprocityTheory.Ty.Fin
 open Formalism.IrreducibleCountingLemmas.TYPES hiding zIdem IsCuspidal
@@ -48,7 +48,7 @@ theorem rootSum_minpoly {K : Type} [Field K] [Fintype K] (θ : AlgebraicClosure 
     {w : AlgebraicClosure K} (hw : w ^ (Fintype.card K ^ d - 1) = 1) (hdeg : (minpoly K w).natDegree = d)
     (j : ℕ) : GlobalTheory.CuspGL.rootSum θ j (minpoly K w) =
       ∑ i ∈ Finset.range d, θ (w ^ Fintype.card K ^ i) ^ j := by
-  have h := (GlobalTheory.T.frobeniusTorus_minpoly_degree_rootPowerSum K θ d hd w (by
+  have h := (_root_.GlobalTheory.CuspGL.torus_minpoly K θ d hd w (by
     show w ^ (Nat.card K ^ d - 1) = 1
     rw [Nat.card_eq_fintype_card]; exact hw)).2.2 j
   rw [hdeg, Nat.div_self hd, pow_one, Nat.card_eq_fintype_card] at h
@@ -84,7 +84,7 @@ theorem exists_cuspidal_label : ∀ (K : Type) [Field K] [Fintype K] [DecidableE
     rw [PI.SerBridgeGLW.repOfGL_character, ← hρ]
   refine ⟨PI.SerBridgeGLW.repOfGL ρ, ?_, ?_, hmon, hirr, hX, by simpa using hdeg, ?_⟩
   · rw [FDRep.simple_iff_char_is_norm_one]
-    rw [(GlobalTheory.T.generalLinearFunctionExtendZeroEnd_properties K d (fun _ => 0)).2.2.1, finsum_eq_sum_of_fintype, GlobalTheory.CuspGL.glCard] at hip
+    rw [(_root_.GlobalTheory.CuspGL.extZero_spec K d (fun _ => 0)).2.2.1, finsum_eq_sum_of_fintype, GlobalTheory.CuspGL.glCard] at hip
     rw [← hip]
     refine Finset.sum_congr rfl fun x _ => ?_
     have h1 : ((-1 : ℂ) ^ (d - 1)) * ((-1 : ℂ) ^ (d - 1)) = 1 := by

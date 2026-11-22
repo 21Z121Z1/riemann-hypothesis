@@ -5,7 +5,8 @@ import Formalism.LocalToGlobal.GaloisLevelStructure.TiedHecke
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.HeckeStdTwOfStd
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverAct
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CoeffMonicPolySum
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteCosetsHeckeSetAtSplitPlaceOutsideLevelStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteCosetsHeckeSetAtSplitPlaceOutsideLevel
+import Formalism.LocalToGlobal.GaloisLevelStructure.DefsAut
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ComplexHeckeEigenvectorDescendsToCoefficientFiel
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplitExEveryDatum
 open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.N Formalism.ConjugateSelfDual ReciprocityTheory.Gal Polynomial NumberField IsDedekindDomain GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.SplitWeil GlobalTheory.RowTie GlobalTheory.SplitRead
@@ -119,7 +120,7 @@ theorem main : ∀ (D : D7) (M : Formalism.L2.MtFam D), Formalism.L2.HeckeTied D
       obtain ⟨hv, hk1, hk2⟩ := (Formalism.L2.genAt_iff NL h v k).2 hvk
       obtain ⟨s, ϖ, hc, hu⟩ := _root_.GlobalTheory.SplitConjPlace.splitEx_all D v hv.1
       have hbad : s.v ∉ Formalism.L2.badPl D i := not_bad_of_genAt NL _ _ i h v k s hvk hc
-      have hfin := GlobalTheory.T.finite_cosets_heckeSet_at_splitPlace_outside_level D.host.E D.R.nV (M.loc i).J (M.loc i).χ (Formalism.L2.badPl D i) (HT.J_hyp i)
+      have hfin := _root_.GlobalTheory.TSetFin.finite_image_tSet D.host.E D.R.nV (M.loc i).J (M.loc i).χ (Formalism.L2.badPl D i) (HT.J_hyp i)
         s ϖ k hbad hu
       refine ⟨s, ϖ, hc, hu, ?_, ?_⟩
       · intro c f f'

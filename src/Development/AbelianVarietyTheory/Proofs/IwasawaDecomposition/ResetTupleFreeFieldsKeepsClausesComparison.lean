@@ -14,7 +14,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Ex
 import Formalism.LocalToGlobal.IndefiniteReal.LinksStage
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CrdOver
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RSideA
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DefiniteFormsReadingResetBaseEnlargementStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DefiniteFormsReadingResetBaseEnlargement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResetModelsMeasuresFormsEnlargedCoefficientBase
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NVNeZero
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StandardLatticesDiagonal
@@ -69,7 +69,7 @@ theorem reset_stepW : GlobalTheory.Published.DiscreteSeriesCover → GlobalTheor
   letI := alg'
   obtain ⟨hHH, -, -, hPos, hStd, hStdX, -, -⟩ := hK (w'.st Z') hOv
   obtain ⟨hVals, -⟩ := hOB w'.px w'.I hX' w'.ok w'.C_eq w'.xi_range
-  refine (GlobalTheory.T.definiteFormsReading_reset_baseEnlargement z hE hf hp hFine.2.2.2 (fun i => (hStd _).2.1) hStdX hVals R₀ cG hKept).elim fun Ra h => h.elim fun cGa h => ?_
+  refine (_root_.GlobalTheory.Mem.R3.RsA.reset_side z hE hf hp hFine.2.2.2 (fun i => (hStd _).2.1) hStdX hVals R₀ cG hKept).elim fun Ra h => h.elim fun cGa h => ?_
   refine (_root_.GlobalTheory.Mem.R3.Rw.resetW z hE hf hp core' ha hc.1 hc.2.1 hc.2.2.1 Ra cGa h.1 h.2).elim fun R₁ h => h.elim fun cG₁ h => ?_
   obtain ⟨⟨a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11⟩, b⟩ := h
   exact ⟨R₁, cG₁, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, b⟩

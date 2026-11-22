@@ -1,8 +1,10 @@
 import Mathlib
 import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorInvolutionAlgebraProperties
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianUnitFormDiagonalizesStatement
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianUnitFormRepresentsUnitStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianUnitFormDiagonalizes
+import Formalism.UnipotentAdelicQuotients.SWXSDefs
+import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianUnitFormRepresentsUnit
 open HeckeCharacterZeroLocus.SiegelWeilU GlobalTheory.CompanionTheory.SW NumberField IsDedekindDomain MeasureTheory Topology
 open scoped TensorProduct ENNReal NNReal Matrix
 
@@ -13,9 +15,9 @@ theorem hermR_unit_diagonalisable : ∀ (F E : Type) [Field F] [NumberField F] [
   obtain ⟨hart, -, h2, hinv, hδ, hfix, hunit⟩ := _root_.GlobalTheory.CompanionTheory.SW.KAlg.algebra_tensor_invol F E σ hσ R
   haveI : IsArtinianRing (R ⊗[F] E) := hart
   haveI : Finite (MaximalSpectrum (R ⊗[F] E)) := inferInstance
-  have hrep := GlobalTheory.T.hermitian_unit_form_represents_unit (R ⊗[F] E) (sigR R σ) hinv h2 hδ
+  have hrep := _root_.GlobalTheory.CompanionTheory.SW.UnitRep.exists_isUnit_hform (R ⊗[F] E) (sigR R σ) hinv h2 hδ
   obtain ⟨g, d, hg, hd, hgd⟩ :=
-    GlobalTheory.T.hermitian_unit_form_diagonalizes (R ⊗[F] E) (sigR R σ) hinv hrep n (S : Matrix (Fin n) (Fin n) (R ⊗[F] E)) S.2 hS
+    _root_.GlobalTheory.CompanionTheory.SW.RingDiag.diagonalise (R ⊗[F] E) (sigR R σ) hinv hrep n (S : Matrix (Fin n) (Fin n) (R ⊗[F] E)) S.2 hS
   choose r hr using fun i => hfix (d i) (hd i).2
   have hru : ∀ i, IsUnit (r i) := fun i => (hunit (r i)).1 (hr i ▸ (hd i).1)
   have hgi : g * g⁻¹ = 1 := Matrix.mul_nonsing_inv g hg

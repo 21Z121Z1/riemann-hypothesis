@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JoinCol
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PAreaMultiplicityWeight
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GaussianDetSquareIntegralStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GaussianDetSquareIntegral
 open MeasureTheory ReciprocityTheory.L2DbarEstimates GlobalTheory.CompanionTheory.FSCrofton
 open scoped ENNReal ComplexConjugate
 
@@ -226,7 +226,7 @@ theorem lintegral_gauss_levi : ∀ (d : ℕ) (β : Type) [Fintype β] [Decidable
   simp_rw [hpt]
   rw [lintegral_rows d (pM f) hPd H hH]
   have hI : ∫⁻ D, H D = ENNReal.ofReal (Real.pi ^ (d * Fintype.card β) * (d.factorial : ℝ) *
-      (G.conjTranspose * G).det.re) := GlobalTheory.T.gaussian_det_square_integral d β G
+      (G.conjTranspose * G).det.re) := _root_.GlobalTheory.CompanionTheory.FSCrofton.lintegral_gW_norm_det_sq d β G
   rw [hI, ← ENNReal.ofReal_mul (abs_nonneg _)]
   congr 1
   have hn : Complex.normSq (pM f).det = nS f := by

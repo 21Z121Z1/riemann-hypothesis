@@ -179,7 +179,7 @@ theorem GlobalTheory.LevZeroPlace.one_place : ∀ {D : D7} {c : Comm D} {v : VCo
       (horth PP ⟨PP', hPP'⟩ fun h => hne (congrArg Subtype.val h).symm) _ _ _
       (GlobalTheory.PlaceMatch.suppAt_conj' hg _) (hst _ hl)
   obtain ⟨n, γ, hnN, hnJ, hγJ, hc⟩ := _root_.GlobalTheory.SymChain.SymData.exists_N_embX_inv_mul_mem_KOne (G PP).k (G PP).s D.R.k (G PP).S x.1 x.2
-  obtain ⟨hup1, hup2⟩ := GlobalTheory.T.levelZeroUniformizerFrame_unipotent_and_embedGL (G PP).k (G PP).s D.R.k (G PP).S (Fin D.R.t)
+  obtain ⟨hup1, hup2⟩ := _root_.GlobalTheory.LevZeroUp.upZero_N_embX (G PP).k (G PP).s D.R.k (G PP).S (Fin D.R.t)
   obtain ⟨hupN, -⟩ := hup1 ⟨n, hnJ⟩ hnN
   rw [hρ] at hupN
   obtain ⟨ν, hν⟩ := GlobalTheory.LocMod.Witness.exists_isLoc (GlobalTheory.LocMod.ofSplit (G PP).q)

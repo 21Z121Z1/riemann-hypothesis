@@ -1,7 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsStableGauss
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SelfDualMeasureExistsUniqueFourierInversion
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFactsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFacts
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
 open GlobalTheory.JR GlobalTheory.JR.WeilQuad Matrix MeasureTheory Filter Topology
 
 noncomputable section
@@ -48,13 +49,13 @@ theorem beta_symm [Unram F E] (A : Et F E) (hK : IsField A.K) (hL : IsField A.L)
   rw [beta_apply, beta_apply]
   congr 2
   apply algMap_inj A hK hL
-  rw [(GlobalTheory.T.etaleHermitianPair_structure_facts F E A).2.1, (GlobalTheory.T.etaleHermitianPair_structure_facts F E A).2.1, star_mul, star_mul, star_star, star_star]
+  rw [(_root_.GlobalTheory.JR.EtFacts.main F E A).2.1, (_root_.GlobalTheory.JR.EtFacts.main F E A).2.1, star_mul, star_mul, star_star, star_star]
   ring
 
 theorem trace_algMap [Unram F E] (A : Et F E) (hK : IsField A.K) (hL : IsField A.L) (c : A.K) :
     Algebra.trace A.K A.L (algebraMap A.K A.L c) = 2 * c := by
   apply algMap_inj A hK hL
-  rw [(GlobalTheory.T.etaleHermitianPair_structure_facts F E A).2.1, A.star_K, map_mul, map_ofNat]
+  rw [(_root_.GlobalTheory.JR.EtFacts.main F E A).2.1, A.star_K, map_mul, map_ofNat]
   ring
 
 theorem beta_sepLeft [Unram F E] (A : Et F E) (hK : IsField A.K) (hL : IsField A.L) (x : A.Kˣ) :
@@ -82,7 +83,7 @@ theorem beta_sepLeft [Unram F E] (A : Et F E) (hK : IsField A.K) (hL : IsField A
         _ = k := by rw [Units.mul_inv, ht, one_mul, one_mul]
     rwa [e] at this
   have h1 : (1 : A.K) = 0 :=
-    (GlobalTheory.T.etaleHermitianPair_structure_facts F E A).2.2.1.1 1 (fun n => by rw [Algebra.traceForm_apply, one_mul]; exact htr n)
+    (_root_.GlobalTheory.JR.EtFacts.main F E A).2.2.1.1 1 (fun n => by rw [Algebra.traceForm_apply, one_mul]; exact htr n)
   exact one_ne_zero h1
 
 theorem beta_isSymm [Unram F E] (A : Et F E) (hK : IsField A.K) (hL : IsField A.L) (x : A.K) :

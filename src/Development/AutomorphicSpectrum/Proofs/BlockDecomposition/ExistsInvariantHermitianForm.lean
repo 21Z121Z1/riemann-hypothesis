@@ -14,7 +14,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Cloz
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DiscreteSpectrumGLTwoOfCuspidalSpectrum
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ClozelPurity.EopV
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormalisedCuspFormL2Bounded
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieActionSkewAdjointL2Statement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieActionSkewAdjointL2
 
 noncomputable section
 
@@ -38,7 +38,7 @@ theorem exists_isHerm : GlobalTheory.Published.CuspFormsBoundedGL → ∀ (E : T
   have hl := _root_.GlobalTheory.CompanionTheory.CuspForms.memL2_and_bounded_of_normalised hB E a μ π hπ
   have hm : ∀ φ ∈ π.V, GlobalTheory.AutomorphicL2Unitary.MemL2Quotient (GlobalTheory.UnitaryBC.latticeGL E a) μ φ.1 := fun φ hφ => (hl φ hφ).1
   have hb : ∀ φ ∈ π.V, ∃ C : ℝ, ∀ g, ‖φ.1 g‖ ≤ C := fun φ hφ => (hl φ hφ).2
-  refine ⟨petersson μ π hm, fun X φ ψ => GlobalTheory.T.lie_action_skew_adjoint_L2 E a μ π hm hb X φ ψ, ?_⟩
+  refine ⟨petersson μ π hm, fun X φ ψ => _root_.GlobalTheory.CompanionTheory.PeterssonSkew.lie_skew_adjoint E a μ π hm hb X φ ψ, ?_⟩
   obtain ⟨φ, hφ, hne⟩ := Submodule.exists_mem_ne_zero_of_ne_bot π.ne_bot
   have hi : Function.Injective (toL2ₗ μ π.V hm) :=
     toL2ₗ_injective hm fun ψ hψ => ContAut.continuous_of_isOpen_stab E a ψ (π.cusp ψ hψ).1.level

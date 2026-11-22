@@ -215,7 +215,7 @@ theorem logGrowth_snc : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (
     simp
   intro V _ _ _ B a hB ha haN b₀ hb₀
   obtain ⟨W, Wi, hW, hWi, hdir⟩ :=
-    GlobalTheory.T.exists_continuousOn_frameDirections_inverse E H Dw l Xo c O β Z σ n g' ch ex hexp V B a hB ha fun b hb => (haN b hb).1
+    _root_.GlobalTheory.ShFam.Hor.ExpDirs.exists_dirs_continuousOn E H Dw l Xo c O β Z σ n g' ch ex hexp V B a hB ha fun b hb => (haN b hb).1
   have hBn : B ∈ 𝓝 b₀ := hB.mem_nhds hb₀
   obtain ⟨M, hM, hWM⟩ := eventually_entries_le (hW.continuousAt hBn)
   obtain ⟨M', hM', hWM'⟩ := eventually_entries_le (hWi.continuousAt hBn)
@@ -260,8 +260,8 @@ theorem horOf_eq_perVal {Z : Model Xo c β} (hx : ∀ i, IsPerBasis (Fu.Di i) (x
   have hs := hex.choose_spec
   generalize hex.choose = w at hs
   obtain ⟨j, Q'⟩ := w
-  obtain rfl : j = i := (GlobalTheory.T.two_markings_differ_by_level_isometry E H Dw l Xo c O β Z σ g e Fu a).1 _ _ _ _ hs h
-  obtain ⟨gm, h1, h2, h3⟩ := (GlobalTheory.T.two_markings_differ_by_level_isometry E H Dw l Xo c O β Z σ g e Fu a).2 _ _ _ h hs
+  obtain rfl : j = i := (_root_.GlobalTheory.ShFam.Hor.TwoMarkings.per_unique E H Dw l Xo c O β Z σ g e Fu a).1 _ _ _ _ hs h
+  obtain ⟨gm, h1, h2, h3⟩ := (_root_.GlobalTheory.ShFam.Hor.TwoMarkings.per_unique E H Dw l Xo c O β Z σ g e Fu a).2 _ _ _ h hs
   have := perVal_isLev (hx j) (_root_.GlobalTheory.ShFam.Hor.goodPer_of_per E H Dw l Xo c O β Z σ g e Fu τ a j Q' _ _ hs (hx j)) h1 h2
   rw [← this]
   congr 1
@@ -274,10 +274,10 @@ theorem horFn_horOf_snc {Z : Model Xo c β} (hsm : SmoothOfRelativeDimension Dw.
   have good := fun a i Q h => _root_.GlobalTheory.ShFam.Hor.goodPer_of_per E H Dw l Xo c O β Z σ g e Fu τ a i Q _ _ h (hx i)
   refine ⟨fun a ha => ?_, fun a a' M N ha hM hN => ?_, fun V _ _ _ B a hB hf hi b₀ hb => ?_,
     logGrowth_snc E H Dw l Xo c O β Z hsm hsnc σ g e Fu τ x hm _ hσ hr hx (horOf_eq_perVal hx)⟩
-  · obtain ⟨i, Q, h⟩ := GlobalTheory.T.exists_periods_in_frame_off_boundary E H Dw l Xo c O β Z σ g e Fu a ha
+  · obtain ⟨i, Q, h⟩ := _root_.GlobalTheory.ShFam.Hor.exists_per E H Dw l Xo c O β Z σ g e Fu a ha
     rw [horOf_eq_perVal hx a i Q h]
     exact (good a i Q h).perVal_ne_zero
-  · obtain ⟨i, Q, h⟩ := GlobalTheory.T.exists_periods_in_frame_off_boundary E H Dw l Xo c O β Z σ g e Fu a ha
+  · obtain ⟨i, Q, h⟩ := _root_.GlobalTheory.ShFam.Hor.exists_per E H Dw l Xo c O β Z σ g e Fu a ha
     obtain ⟨Q', h', hc⟩ := _root_.GlobalTheory.ShFam.Hor.per_chg E H Dw l Xo c O β Z σ g e Fu a a' i Q h hM.1
     have key : ∀ ρ M, Chg a a' ρ M → perMat (x i) Q ρ = Mᵀ * perMat (x i) Q' ρ := fun ρ M hM => by
       ext j k
@@ -288,7 +288,7 @@ theorem horFn_horOf_snc {Z : Model Xo c β} (hsm : SmoothOfRelativeDimension Dw.
     obtain ⟨-, h0, -, S', hS'⟩ := good a' i Q' h'
     rw [horOf_eq_perVal hx a i Q h, horOf_eq_perVal hx a' i Q' h', perVal, perVal, k2, key _ _ hM]
     exact GlobalTheory.ShFam.Hor.horVal_change N M h0 hS' (k2 ▸ hR) (key _ _ hM ▸ hS)
-  · obtain ⟨B', i, Q, hB', hb', -, hP, hd⟩ := GlobalTheory.T.exists_locally_holomorphic_periods_family E H Dw l Xo c O β Z σ g e Fu V B a hB hf hi b₀ hb
+  · obtain ⟨B', i, Q, hB', hb', -, hP, hd⟩ := _root_.GlobalTheory.ShFam.HorLift.exists_hol_per E H Dw l Xo c O β Z σ g e Fu V B a hB hf hi b₀ hb
     have hn := hB'.mem_nhds hb'
     have hd' : ∀ v z, DifferentiableAt ℂ (fun b => Q b v z) b₀ := fun v z => (hd v z).differentiableAt hn
     obtain ⟨R, hR⟩ := (good _ i _ (hP b₀ hb')).2.2.1

@@ -2,10 +2,10 @@ import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ChernDegreeComplex
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsPresents
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JoinCol
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeasurableZeroCountStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeasurableZeroCount
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RandomSectionZeroCount
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GaussianDetLeviIntegralStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ComplexHessianLogFubiniStudyStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GaussianDetLeviIntegral
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ComplexHessianLogFubiniStudy
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ComplexHessianLogDehomogeniseStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChangeVariablesZeroCountStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LintegralSplitColumn
@@ -123,7 +123,7 @@ theorem GlobalTheory.CompanionTheory.FSCrofton.crofton_chart : ∀ (Y : Var ℂ)
     exact mem_ptsIn_inf.2 ⟨hAi hy, (secVal_ne_zero_iff (b j₀) (hAi hy)).1 (hA0 y hy)⟩
   refine ⟨?_, ?_⟩
   · simp only [hcnt]
-    exact GlobalTheory.T.measurable_zero_count Y.dim (Fin n) U (c.e '' A) (chartVal b c i)
+    exact _root_.GlobalTheory.CompanionTheory.FSCrofton.measurable_zeroCnt Y.dim (Fin n) U (c.e '' A) (chartVal b c i)
       (fun j => (hd j).continuousOn) hBU hBs
   · simp only [hcnt]
     have key := _root_.GlobalTheory.CompanionTheory.FSCrofton.LocalCrofton.crofton_local Y.dim (Fin n) j₀ U (c.e '' A) (chartVal b c i) hUo hd h0 hBU hBs

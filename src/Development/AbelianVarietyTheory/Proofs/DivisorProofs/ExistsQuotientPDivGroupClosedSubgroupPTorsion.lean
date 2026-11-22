@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KerEqRangeOfRangeEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobKerIdealLeAugIdeal
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsRetractionMulP
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConvEqOneOfForallPairing
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsQuotientFiniteCommGroupSchemeClosedSubgrouStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsQuotientFiniteCommGroupSchemeClosedSubgrou
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsQuotPDivGroup
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivSubgroupQuotientTowerRSEqSRes
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BialgHomFactorThroughSplitInjection
@@ -61,7 +61,7 @@ theorem GlobalTheory.HTPair.exists_quot_field : ∀ (p : ℕ) [Fact p.Prime] (k 
   have hsurj : ∀ m, Function.Surjective (π.comp (levelRes G m)) := fun m =>
     hπ.comp (levelRes_surjective G m)
   choose B iR iH iC iF j hinj hker huniv using
-    fun m => GlobalTheory.T.exists_quotient_finiteCommGroupScheme_closedSubgroup k (G.A (m + 1)) C (π.comp (levelRes G m)) (hsurj m)
+    fun m => _root_.GlobalTheory.HopfQuot.exists_quotient k (G.A (m + 1)) C (π.comp (levelRes G m)) (hsurj m)
   letI := iR
   letI := iH
   letI := iC

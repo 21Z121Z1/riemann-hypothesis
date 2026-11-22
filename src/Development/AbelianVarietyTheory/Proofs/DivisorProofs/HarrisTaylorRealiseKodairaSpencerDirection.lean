@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrysActApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsBCTrivSqZeroExt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoords
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualNumberGraphFiltrationExistsIsComplStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualNumberGraphFiltrationExistsIsCompl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemHodgeFiltrationIffDualNumberGraphReductionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualNumberGraphFiltrationPushforwardMem
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CanonicalOfAbelianDeRham
@@ -46,7 +46,7 @@ theorem realise_core (p : ℕ) [Fact p.Prime] (D : GlobalTheory.UPel.HT.Datum p)
     fun r => ⟨TrivSqZeroExt.inl r, rfl⟩
   have hsq : RingHom.ker (TrivSqZeroExt.fstHom k k k).toRingHom ^ 2 = 0 := (SqExt.dual k).sq
   have hA₀ := o₀.ab
-  obtain ⟨M, hM⟩ := GlobalTheory.T.dualNumberGraphFiltration_exists_isCompl k o₀.A hA₀ f
+  obtain ⟨M, hM⟩ := _root_.GlobalTheory.HTRealise.graphFil_exists_isCompl k o₀.A hA₀ f
   obtain ⟨A, _, i, h, act, hA, hE, hact⟩ := GlobalTheory.HTDeform.exists_lift_oAct p D R b N (DualNumber k) k
     (TrivSqZeroExt.fstHom k k k).toRingHom hπ hsq tR o₀ (graphFil o₀.A f) ⟨M, hM⟩
     (fun y => GlobalTheory.T.mem_hodgeFiltration_iff_dualNumberGraph_reduction k o₀.A hA₀ f y)

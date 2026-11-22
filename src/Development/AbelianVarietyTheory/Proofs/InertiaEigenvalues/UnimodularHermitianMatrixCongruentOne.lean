@@ -1,7 +1,7 @@
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FourierMatch
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsMulStarEqOfNormOneUnramifiedQuadratic
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedQuadraticIntegralTraceFormPerfectStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedQuadraticIntegralTraceFormPerfect
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormOneAddEqOne
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology
 
@@ -244,7 +244,7 @@ theorem pivot {n : Type} [Fintype n] [DecidableEq n] [Nonempty n] (G : Matrix n 
     ∃ P : Matrix n n E, Intg P ∧ ‖P.det‖ = 1 ∧ ∃ k, (Pᴴ * G * P) k k = 1 := by
   haveI := Unram.ultraE (F := F) (E := E)
   have hs : ∀ y : E, ‖star y‖ = ‖y‖ := Unram.norm_star (F := F)
-  obtain ⟨-, ⟨e0, he0, he0'⟩, -⟩ := GlobalTheory.T.unramifiedQuadratic_integral_traceForm_perfect F E
+  obtain ⟨-, ⟨e0, he0, he0'⟩, -⟩ := _root_.GlobalTheory.NTr.traceForm_perfect F E
   obtain ⟨i, w, hw, hwi, hq⟩ := pivot_w hs e0 he0 he0' G hG hGi hGd
   have ha : star (star w ⬝ᵥ (G *ᵥ w)) = star w ⬝ᵥ (G *ᵥ w) := by
     calc star (star w ⬝ᵥ (G *ᵥ w)) = (star w ᵥ* Gᴴ) ⬝ᵥ w := by rw [star_dotProduct, star_mulVec, star_star]

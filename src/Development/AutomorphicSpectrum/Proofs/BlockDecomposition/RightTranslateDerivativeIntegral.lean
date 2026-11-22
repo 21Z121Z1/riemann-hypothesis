@@ -3,7 +3,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RwAppend
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartAndRightWordsSmooth
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatrixExpCurveDerivative
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RegularRepresentationContinuous
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LpIntegralAePointwiseStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LpIntegralAePointwise
 open MeasureTheory Matrix Finset Filter Topology
 open scoped ContDiff ComplexConjugate InnerProductSpace ZeroAtInfty
 open PositivityTheory.RgTw (Mat G)
@@ -68,7 +68,7 @@ theorem setIntegral_ae (hU : Unimod) {f : Mat n → V} (X : Mat n) (hf : ContDif
     ((_root_.GlobalTheory.CompanionTheory.PresSobA.translations_strongly_continuous n μ V hU (cls μ (Rd X f))).1).comp (_root_.GlobalTheory.CompanionTheory.PresSobA.ExpCurve.expC_continuous_hasDerivAt n X).1
   have hint : Integrable (fun s : ℝ => rR μ V (expC X s) (cls μ (Rd X f)))
       (volume.restrict (Set.Ioc a b)) := hc.integrableOn_Ioc
-  refine GlobalTheory.T.lp_integral_ae_pointwise ℝ (G n) V (volume.restrict (Set.Ioc a b)) μ _
+  refine _root_.GlobalTheory.CompanionTheory.LpBochner.coe_integral_ae_eq ℝ (G n) V (volume.restrict (Set.Ioc a b)) μ _
     (fun s z => Rd X f (z.val * (expC X s).val)) hint ?_ ?_
   · have : Continuous (Function.uncurry fun (s : ℝ) (z : G n) => Rd X f (z.val * (expC X s).val)) :=
       continuous_F hf X

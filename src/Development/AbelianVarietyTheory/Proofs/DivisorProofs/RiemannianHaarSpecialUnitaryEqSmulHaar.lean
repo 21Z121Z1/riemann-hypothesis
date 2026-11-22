@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDiagonalTorus
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HaarSpecialUnitaryProductChartFormula
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpecialUnitaryNearOneEqChartMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RiemannianMeasureLieAlgebraEqSmulMapChartLebesguStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartDensityContinuousAtZeroEqOneStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartDensityContinuousAtZeroEqOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TotallyRealDegreeAndChartDimensionEq
 
 open NumberField MeasureTheory Matrix Filter Topology GlobalTheory.SUVol GlobalTheory.RiemConst ReciprocityTheory.ChartRestriction.G.FD ReciprocityTheory.ChartRestriction.G.AR.Inst ReciprocityTheory.ChartRestriction.G.AR.Up ReciprocityTheory.L2DbarEstimates
@@ -28,7 +28,7 @@ theorem riemHaar_eq_smul (E : Type) [Field E] [NumberField E] [IsCMField E] (r :
         ∫⁻ z, φ (cpt X x z) ∂muF X x) :
     riemHaar X.Ψ X.Gm x = ENNReal.ofReal
       (((2 : ℝ) ^ (r * (r - 1) / 2) * (2 * Real.pi) ^ (r - 1) * Real.sqrt r) ^ fdeg E) • ν := by
-  obtain ⟨hdc, hd0, hdet⟩ := GlobalTheory.T.chartDensity_continuousAt_zero_eq_one E r X x hx
+  obtain ⟨hdc, hd0, hdet⟩ := _root_.GlobalTheory.DensOne.dens_one E r X x hx
   obtain ⟨hf, hnd⟩ := _root_.GlobalTheory.ChartCount.fdeg_and_nd E r X
   obtain ⟨σ, ρ, D₁, hρ, hσ0, hσc, hσB, hσD, hD₁⟩ := _root_.GlobalTheory.SUChartSection.exists_section E r X x hx
   obtain ⟨t, Dt, htx, htmul, htc, htD, hDt, hstab⟩ := _root_.GlobalTheory.TorusFrame.torus_param E r X x hx

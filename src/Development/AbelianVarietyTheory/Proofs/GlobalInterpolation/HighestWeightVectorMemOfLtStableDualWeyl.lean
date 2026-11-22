@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.GoodTopBot
 import Development.AbelianVarietyTheory.PublishedTheorems.GlobalTheta.WeylDualWeylLatticesAgreeOfLowestAlcove
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.RowDegDominatedOfMemDualWeylModuleStatement
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.RowDegDominatedOfMemDualWeylModule
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TraceGlMatrixUnitPowHighestWeightMod
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DualWeylHighestWeightSpaceLineField
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.EqWeightsOfTraceEPowerHighestWeightValueEq
@@ -22,7 +22,7 @@ theorem weight_rowW_apply {N : ℕ} (m : Fin N × Fin N →₀ ℕ) (a : Fin N) 
 
 theorem hw_mem_of_lt : ∀ (p : ℕ), p.Prime → ∀ (k : Type) [Field k] [CharP k p] (N : ℕ) (ν : Fin N → ℕ), Antitone ν → (∀ h : 0 < N, ν ⟨N - 1, by omega⟩ = 0 ∧ ν ⟨0, h⟩ + (N - 1) ≤ p) → ∀ M M' : Submodule k (MvPolynomial (Fin N × Fin N) k), Good M → Good M' → M < M' → M' ≤ dualWeyl k N N ν → hw k le_rfl ν ∈ M' ∧ hw k le_rfl ν ∉ M := by
   intro p hp k _ _ N ν hν hal M M' hM hM' hlt hle
-  have dom := GlobalTheory.T.rowDeg_dominated_of_mem_dualWeylModule k N ν
+  have dom := _root_.GlobalTheory.Alc.rowDeg_dominated_of_mem_dualWeyl k N ν
   obtain ⟨μ, v, hμ, hvM', hvM, hvw, hraise⟩ := _root_.GlobalTheory.Alc.exists_dominant_highest_vector_of_lt k N M M' hM hM' hlt
     ⟨∑ a, ν a, fun f hf m hm => ((dom f (hle hf) m hm).2).le⟩
   have hv0 : v ≠ 0 := fun h => hvM (h ▸ zero_mem M)

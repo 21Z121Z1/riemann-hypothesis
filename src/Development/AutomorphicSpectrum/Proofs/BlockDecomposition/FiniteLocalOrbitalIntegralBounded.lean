@@ -5,7 +5,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermInf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermOf
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRing
 import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.FiniteAdeleTopologyStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.FiniteAdeleTopology
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RatTuple
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.SchwartzBruhatEqSumPure
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GaussSumQuadraticCharacterBound
@@ -25,7 +25,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RationalCharact
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PairingOnRationalTupleFormula
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RationalTupleInLatticeLevel
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DisjointTranslatesVolumeBound
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DeltaConjInvariantStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DeltaConjInvariant
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DeltaPosIndex
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.L2.Theta Formalism.L2.Pj Formalism.IndefR.Datum MeasureTheory
@@ -49,7 +49,7 @@ theorem finite_bound : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Num
         C * (delta (t • c).1 : ℝ) ^ (-((M : ℝ) / 2)) := by
   intro F E _ _ _ _ _ σ hCM M J hJ n ψ hψ μ hμ Q hQ
   classical
-  obtain ⟨hA1, hA2, hA3, -⟩ := GlobalTheory.T.mem_Oh_iff_and_nat_mul_properties F
+  obtain ⟨hA1, hA2, hA3, -⟩ := _root_.GlobalTheory.CompanionTheory.SW.Core.AfTop.finiteAdele_topology F
   haveI : LocallyCompactSpace (Af F) := hA1
   haveI : SecondCountableTopology (Af F) := hA2
   haveI : T2Space (Af F) := hA3
@@ -102,7 +102,7 @@ theorem finite_bound : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Num
     rw [add_sub_cancel, hv.2 l hl, hu.2 l hl, one_mul] at h
     exact h.symm
   set c' : Matrix (Fin n) (Fin n) E := ((t • c).1).map σ with hc'
-  have hδ : delta c' = delta (t • c).1 := GlobalTheory.T.delta_conj_invariant F E σ n _
+  have hδ : delta c' = delta (t • c).1 := _root_.GlobalTheory.CompanionTheory.SiegelND.Integ.Hua.DeltaMap.delta_map F E σ n _
   have hδ0 : delta c' ≠ 0 := _root_.GlobalTheory.CompanionTheory.SiegelND.Integ.Hua.Fin.delta_pos_index E n c'
   haveI hfin : Finite ((Fin n → 𝓞 E) ⧸ Kc c') := Nat.finite_of_card_ne_zero hδ0
   haveI := Fintype.ofFinite ((Fin n → 𝓞 E) ⧸ Kc c')

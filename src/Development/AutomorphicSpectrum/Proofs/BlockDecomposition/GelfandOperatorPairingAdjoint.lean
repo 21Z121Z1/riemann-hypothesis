@@ -2,7 +2,7 @@ import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.WaveSt
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsMultOfFintype
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GelfandOperatorCenterExpansion
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GelfandOperatorAdjointStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GelfandOperatorAdjoint
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConjGelfValOfIsHerm
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralDoubleSum
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryMemGLs
@@ -107,7 +107,7 @@ private theorem isHecke_div_and_resEtaPow_div (n : ℕ) (s : Bool) (m : ℕ) : �
     rw [Finset.sum_congr rfl (fun j _ => by rw [h3 j, mul_assoc]), ← Finset.mul_sum, ← hv (χ (!s)), ← mul_assoc, ← mul_pow]
     simp
   · intro hL hR _ _ μ _ V _ _ _ f h hf hh cf ch
-    rw [GlobalTheory.T.gelfand_operator_adjoint hL hR n μ V s m f h hf hh cf ch]
+    rw [_root_.GlobalTheory.CompanionTheory.WaveMult.Ibp.ibp_gel hL hR n μ V s m f h hf hh cf ch]
     have hpt : ∀ y : G n, ⟪f y.val, GlobalTheory.CompanionTheory.WaveMult.gelT (!s) m h y.val⟫_ℂ = ∑ j, d j * ⟪f y.val, zOp ((w j).map (fun k => (!s, k))) h y.val⟫_ℂ := by
       intro y
       rw [ho hR (!s) h hh y.val (val_mem_GLs y), inner_sum]

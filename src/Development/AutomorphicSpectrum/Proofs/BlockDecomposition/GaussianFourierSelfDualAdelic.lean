@@ -19,11 +19,11 @@ theorem fourier_coefficient_any : ∀ (F : Type) [Field F] [NumberField F], ∀ 
   haveI : Countable F := countable_field
   obtain ⟨hTR, -, -, -, hρ, -, -⟩ := id hQ
   obtain ⟨hprob, -, -, hOrth, -⟩ := id hC
-  obtain ⟨-, -, hT2, hOc, hOo, -, hmem, -, -, -⟩ := GlobalTheory.T.mem_Oh_iff_and_nat_mul_properties F
+  obtain ⟨-, -, hT2, hOc, hOo, -, hmem, -, -, -⟩ := _root_.GlobalTheory.CompanionTheory.SW.Core.AfTop.finiteAdele_topology F
   obtain ⟨-, -, -, hfd⟩ := _root_.GlobalTheory.CompanionTheory.SW.FD.main F hTR ρ hρ N hN
   obtain ⟨hvol, horth⟩ := hfd D hD
   have hsb : SB (indL a : (ι → A F) → ℂ) := sb_indL hT2 hOc hOo ha
-  obtain ⟨C, hCb⟩ := GlobalTheory.T.weighted_theta_average_le_of_countData F ι M B ρ P hQ Ω Pr gf gi hC (indL a) hsb 1 1 one_pos one_pos
+  obtain ⟨C, hCb⟩ := _root_.GlobalTheory.CompanionTheory.SW.Core.ThetaBound.theta_integral_bound F ι M B ρ P hQ Ω Pr gf gi hC (indL a) hsb 1 1 one_pos one_pos
   obtain ⟨hmeas, hbound⟩ := hCb (fun _ => Complex.I) (by simp) (by simp)
   set s : (ι → F) → Ω → ℂ :=
     fun z ω => thTerm B ρ P (gf ω) (gi ω) (indL a) (fun _ => Complex.I) z with hs
@@ -116,7 +116,7 @@ theorem fourier_coeff_eis_any : ∀ (F : Type) [Field F] [NumberField F] [Measur
   have hcount : Countable F := (Module.finBasis ℚ F).equivFun.toEquiv.injective.countable
   obtain ⟨-, hLcount, hLmem, hLD⟩ := _root_.GlobalTheory.CompanionTheory.SW.FD.main F hTR ρ hρ N hN
   obtain ⟨hvol, -⟩ := hLD D hD
-  obtain ⟨-, -, -, -, hOopen, -, hOint, -, -, hWopen⟩ := GlobalTheory.T.mem_Oh_iff_and_nat_mul_properties F
+  obtain ⟨-, -, -, -, hOopen, -, hOint, -, -, hWopen⟩ := _root_.GlobalTheory.CompanionTheory.SW.Core.AfTop.finiteAdele_topology F
   obtain ⟨-, hψ'⟩ := GlobalTheory.T.standard_adelic_character F
   obtain ⟨hψ1, hψO, -⟩ := hψ' ψ hψ
   obtain ⟨C, hC⟩ := _root_.GlobalTheory.CompanionTheory.SW.Core.EiBound.ei_bound F lf hlf h1 ψ hψ ι M B ρ P hQ hM φ hφ 1 one_pos
@@ -360,10 +360,10 @@ theorem core_zero : ∀ (F : Type) [Field F] [NumberField F], IsTotallyReal F �
   have hC : CountData M B ρ Pr gf gi := ⟨inferInstance, m1, m2, fun ω => ⟨o2 ω, o1 ω⟩, hcnt⟩
   obtain ⟨ψ, hψ⟩ := (GlobalTheory.T.standard_adelic_character F).1
   obtain ⟨C, hb⟩ := PositivityTheory.PlacePermOperatorBicommutantSpan.bounded_a F lf hlf h1 ψ hψ ι M B ρ P hQ hM Ω Pr gf gi hC
-  choose! Df d1 d2 d3 d4 d5 using GlobalTheory.T.schur_function_whittaker_equivariant F lf hlf h1 ψ hψ ι M B ρ P hQ hM
-  obtain ⟨Di, i1, i2, i3, i4, i5⟩ := GlobalTheory.T.quadratic_level_set_density F ι M B ρ P hQ hM
+  choose! Df d1 d2 d3 d4 d5 using _root_.GlobalTheory.CompanionTheory.SW.Core.Dens.density_main F lf hlf h1 ψ hψ ι M B ρ P hQ hM
+  obtain ⟨Di, i1, i2, i3, i4, i5⟩ := _root_.GlobalTheory.CompanionTheory.SW.Core.Dens.density_of_q F ι M B ρ P hQ hM
   refine ⟨C, Df, Di, fun a ha => ⟨d1 a ha, d2 a ha, d3 a ha⟩, ⟨i1, i2, i3⟩, fun a ha => ?_⟩
-  obtain ⟨-, -, -, -, -, -, hint, -, hK, -⟩ := GlobalTheory.T.mem_Oh_iff_and_nat_mul_properties F
+  obtain ⟨-, -, -, -, -, -, hint, -, hK, -⟩ := _root_.GlobalTheory.CompanionTheory.SW.Core.AfTop.finiteAdele_topology F
   have hs := PositivityTheory.PlacePermOperatorBicommutantSpan.sb_indL (F := F) (ι := ι) ha
   obtain ⟨N₁, p1, n1⟩ := _root_.GlobalTheory.CompanionTheory.SW.FstarPer.fstar_periodic F lf hlf h1 ψ hψ ι M B ρ P hQ _ hs
   have hq : Continuous (qf (hf F) (Bf B) : (ι → A F) → A F) := by unfold qf; fun_prop

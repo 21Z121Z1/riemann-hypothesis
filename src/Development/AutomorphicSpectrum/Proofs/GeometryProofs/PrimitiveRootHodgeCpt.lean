@@ -5,7 +5,7 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GlueApplyOfNot
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GenWeil
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsGenericWeilPairing
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TateIsoPullbackEquiv
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProjectiveModuleModNBasisStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProjectiveModuleModNBasis
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CompanionTheory.Ar
 open GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.NumbersDVR.Bundles
@@ -113,7 +113,7 @@ theorem torsion_of_tate {E : Type} [Field E] [NumberField E] [IsCMField E] (H : 
     rw [MonObj.comp_mul, hev, hev, hev, I.add])
   have hlin : ∀ (c : 𝓞 E) a, ev (c • a) = ev a ≫ t.act.act c := fun c a => inj _ _ (by
     rw [← Category.assoc, hev, hev]; exact I.lin N c a)
-  obtain ⟨φ, hφ1, hφ2⟩ := GlobalTheory.T.projective_module_mod_N_basis E D.La D.fin D.proj (D.p + D.q) N D.rank hN0
+  obtain ⟨φ, hφ1, hφ2⟩ := _root_.GlobalTheory.CompanionTheory.ModFree.exists_free_map_mod E D.La D.fin D.proj (D.p + D.q) N D.rank hN0
 
   have hζΩ : IsPrimitiveRoot (ζ : Ω) N := hζ.map_of_injective (f := Units.coeHom Ω) Units.val_injective
   have hζK : IsPrimitiveRoot (iK ζ) N := hζΩ.map_of_injective iK.injective

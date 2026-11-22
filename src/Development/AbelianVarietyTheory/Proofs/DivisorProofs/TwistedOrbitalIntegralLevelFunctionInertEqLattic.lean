@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemAdjoinOfMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedOrbitalIntegralTwistedConjInvariant
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalTwistContinuousInvolutionIntegralProperties
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedOrbitalIntegralIndicatorEqLatticeCount
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeSpannedByGLColumnsEqIffGLintCosetStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeSpannedByGLColumnsEqIffGLintCoset
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGLCompletionLatticeEqColumns
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeSpannedByGLColumnsMulLeftMatrixEqMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedNormIntegralIffLatticeUnimodular
@@ -19,7 +19,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedConjIffMulNo
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharpolyMulLeftGeneratorEqMapSymm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralOfIntegralMatrixCharpolyRoot
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralOfPreservesFullLattice
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumTwistedOrbitalIntegralsEqFinsumParametrisedStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumTwistedOrbitalIntegralsEqFinsumParametrised
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipalCongruenceGLConjMaxCompactIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormOfClassOfFixedUnitsEq
 
@@ -99,7 +99,7 @@ theorem twOrb_level_eq_stSum : ∀ (E : Type) [Field E] [NumberField E] [IsCMFie
       rw [h2, h1, LinearMap.charpoly_toMatrix, hP, Polynomial.map_map]
       ext n
       simp [Polynomial.coeff_map]
-    obtain ⟨hΛK, hlat⟩ := GlobalTheory.T.latticeSpannedByGLColumns_eq_iff_GLint_coset E hE w hw K e hc hint hval B m b
+    obtain ⟨hΛK, hlat⟩ := _root_.GlobalTheory.TwLatCoset.lat_coset E hE w hw K e hc hint hval B m b
     have hOrb : ∀ x : B.Aˣ, B.σ (x : B.A) = x →
         twOrb (thL m w) (GlobalTheory.LFun.KGL w m) (dlt e b ((β₀ : B.A) * x)) f = ((B.N x : ℚ) : ℂ) := by
       intro x hx
@@ -129,7 +129,7 @@ theorem twOrb_level_eq_stSum : ∀ (E : Type) [Field E] [NumberField E] [IsCMFie
         · rintro ⟨hun, hg⟩
           obtain ⟨hL, -, hsd⟩ := hXiff.1 ⟨hlat q, hun⟩
           exact ⟨hL, hg, hsd⟩
-    have hsum := GlobalTheory.T.sum_twistedOrbitalIntegrals_eq_finsum_parametrised (GLw m w) (thL m w) (GlobalTheory.LFun.KGL w m) S f B.Cl
+    have hsum := _root_.GlobalTheory.BCT.ClSumParam.clSum_eq_finsum_param (GLw m w) (thL m w) (GlobalTheory.LFun.KGL w m) S f B.Cl
       (fun c => dlt e b ((β₀ : B.A) * ((Quot.out c).1 : B.Aˣ))) (fun c => ((B.N c.rep : ℚ) : ℂ))
       (fun c => by show (nrmL m w _).val.charpoly = Q; rw [hN _ (Quot.out c).2]; exact hcp)
       (by

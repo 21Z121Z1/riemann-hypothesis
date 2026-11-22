@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ClosedSubgroupBesselHaarFiniteCompactPosOpenStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ClosedSubgroupBesselHaarFiniteCompactPosOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselSubgroupsClosedUnitaryWCompact
 
 open MeasureTheory Matrix Formalism.QuantumDeterminants Formalism.MainNotions.S GlobalTheory.SgInf
@@ -51,7 +51,7 @@ theorem gg_closedSub (k r : ℕ) : IsClosedSub k r (GG k r) :=
 
 theorem haar_compact_lt_top {μ : Measure (Mt k r)} (hμ : IsHaarOn (GG k r) μ) {C : Set (Mt k r)}
     (hC : IsCompact C) : μ C < ⊤ :=
-  (GlobalTheory.T.closedSubgroupBessel_haar_finite_compact_pos_open k r (GG k r) μ (gg_closedSub k r) hμ).1 C hC
+  (_root_.GlobalTheory.SgInf.haarOn_locFinite_openPos k r (GG k r) μ (gg_closedSub k r) hμ).1 C hC
 
 theorem nbd_pos {μ : Measure (Mt k r)} (hμ : IsHaarOn (GG k r) μ) (j : ℕ) : 0 < μ (nbd k r j) := by
   have h1 : Matrix.of (oneM k r) = (1 : Mat k r) := by
@@ -60,7 +60,7 @@ theorem nbd_pos {μ : Measure (Mt k r)} (hμ : IsHaarOn (GG k r) μ) (j : ℕ) :
   have hone : Matrix.of (oneM k r) ∈ GG k r := by
     rw [h1]
     exact (gg_closedSub k r).2.2.1
-  have hU := (GlobalTheory.T.closedSubgroupBessel_haar_finite_compact_pos_open k r (GG k r) μ (gg_closedSub k r) hμ).2
+  have hU := (_root_.GlobalTheory.SgInf.haarOn_locFinite_openPos k r (GG k r) μ (gg_closedSub k r) hμ).2
     (Metric.ball (oneM k r) (1 / ((j : ℝ) + 1))) Metric.isOpen_ball
     ⟨oneM k r, Metric.mem_ball_self (by positivity), hone⟩
   unfold nbd

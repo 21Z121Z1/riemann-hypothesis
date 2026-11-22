@@ -1,9 +1,9 @@
 import Development.AbelianVarietyTheory.Definitions.Divisors.EigLatLe
 import Formalism.LocalToGlobal.ProjectiveLattices.LiftLaSpec
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFlatSectionValueEqMulDetInvStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFlatSectionValueEqMulDetInv
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatSectionValuationAtFinitePlaceEqSubDet
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantNormFlatSectionEqNormDivNormDetStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantNormFlatSectionEqNormDivNormDet
 
 noncomputable section
 
@@ -15,9 +15,9 @@ namespace GlobalTheory.DefPt
 theorem degLie_eq_neg_deg_flat : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : ReciprocityTheory.ChartRestriction.G.Geo.Tor.Host E) (Dw : Datum H) (l : Level H) (Xo : Moduli Dw l) (c : Coeff l) (r : ℕ) (U : ∀ σ : c.F →+* ℂ, Unf Xo c σ r) (ξ : ℝ), DefCase U ξ → ∀ (Z : Comp Xo c) (P : PtData Z), (∀ (τ : Psi H) (s : FlatSec U ξ Z τ), P.degLie τ.1 = -s.deg) ∧ ∀ τ : E →+* ℂ, τ (H.rt : E) ≠ H.rt0 → Dw.mult τ = 0 := by
   intro E _ _ _ H Dw l Xo c r U ξ hD Z P
   refine ⟨fun τ s => ?_, fun τ h => ?_⟩
-  · obtain ⟨b, hb0, hb⟩ := GlobalTheory.T.exists_flatSectionValue_eq_mul_det_inv E H Dw l Xo c r U ξ hD Z P τ s
+  · obtain ⟨b, hb0, hb⟩ := _root_.GlobalTheory.FlatValue.exists_evR_mul_det E H Dw l Xo c r U ξ hD Z P τ s
     have h2 := _root_.GlobalTheory.DefPt.rho_vw_eq_vAdd_sub E H Dw l Xo c r U ξ hD Z P τ s b hb0 hb
-    have h3 := GlobalTheory.T.constantNorm_flatSection_eq_norm_div_norm_det E H Dw l Xo c r U ξ hD Z P τ s b hb0 hb
+    have h3 := _root_.GlobalTheory.DefPt.ArchVal.cInf_eq_norm_div_norm_det E H Dw l Xo c r U ξ hD Z P τ s b hb0 hb
     have hX : ∀ σ, 0 < ‖(P.X σ τ.1).det‖ := fun σ => norm_pos_iff.2 ((P.arch σ).2.1 τ.1)
     have hfB : (Function.support fun w => (vAdd w (P.B w τ.1).det : ℝ)).Finite := by
       have e : (fun w => (vAdd w (P.B w τ.1).det : ℝ)) = (fun w => (vAdd w b : ℝ)) - s.rho_vw := by

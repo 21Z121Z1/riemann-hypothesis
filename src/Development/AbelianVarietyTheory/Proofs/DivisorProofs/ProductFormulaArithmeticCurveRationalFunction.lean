@@ -1,12 +1,12 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAmbOfIsArithVar
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogCardEqFinsumLengthLocalizedMaximalStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogCardEqFinsumLengthLocalizedMaximal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogCardQuotSpanEqFinsumLogNormEmbeddings
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticCurveIsAffineAndFiniteInt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnderEqGenericPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernPartSingleton
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AffineArithmeticCurveFinsumOrdLogEqLocalLengths
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AffineArithmeticCurveSumComplexPointsLogEqRingHoStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AffineArithmeticCurveSumComplexPointsLogEqRingHo
 
 open CategoryTheory AlgebraicGeometry TopologicalSpace MvPolynomial
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -108,8 +108,8 @@ theorem product_formula_curve : ∀ (k : Type) [CommRing k] (Y : Scheme.{0}) [Is
     intro c hc
     obtain ⟨hfq, hlog⟩ := _root_.GlobalTheory.IndexNormEmb.log_card_quot_span_eq_finsum_log_norm Γ(Y, ⊤) c hc
     have := hfq
-    rw [_root_.GlobalTheory.AffineCurveSum.finsum_ord_eq k Y q hq c hc, ← GlobalTheory.T.log_card_eq_finsum_length_localized_maximal Γ(Y, ⊤) (Γ(Y, ⊤) ⧸ Ideal.span {c}), hlog,
-      GlobalTheory.T.affineArithmeticCurve_sum_complexPoints_log_eq_ringHoms k Y q hq c]
+    rw [_root_.GlobalTheory.AffineCurveSum.finsum_ord_eq k Y q hq c hc, ← _root_.GlobalTheory.CardLength.log_card_eq_finsum_length Γ(Y, ⊤) (Γ(Y, ⊤) ⧸ Ideal.span {c}), hlog,
+      _root_.GlobalTheory.AffCurveSum.main k Y q hq c]
 
   obtain ⟨a, b, hb, rfl⟩ := IsFractionRing.div_surjective Γ(Y, ⊤) f
   have hb0 : b ≠ 0 := nonZeroDivisors.ne_zero hb

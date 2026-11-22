@@ -94,7 +94,7 @@ theorem jhMult_cell_colour : ∀ {k : Type} [Field k] [ValuativeRel k] [Topologi
     obtain ⟨φ⟩ := (jhMult_ne_zero_iff.1 hne).nonempty_equiv hirr
       (_root_.GlobalTheory.ExtTensorIrr.piTensor_isIrreducible hBZ k _ _ fun j => (z j).rep)
     have hcl : ∀ j, (W.get j).2 = z j := fun j => by
-      have := GlobalTheory.T.tensor_product_determines_factor_classes _ (fun j => GL (Fin (W.get j).1) k) (fun j => (W.get j).2.rep)
+      have := _root_.GlobalTheory.TensorFactorUnique.cl_eq_of_piTensor_equiv _ (fun j => GL (Fin (W.get j).1) k) (fun j => (W.get j).2.rep)
         (fun j => (z j).rep) ⟨φ.symm⟩ j
       rwa [IrrCl.cl_rep, IrrCl.cl_rep] at this
     refine hs (funext fun i => funext fun j => ?_)

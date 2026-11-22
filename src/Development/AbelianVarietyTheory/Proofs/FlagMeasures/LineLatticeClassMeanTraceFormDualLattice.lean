@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsLatMeasurableConst
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurableSetDetNormPos
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DetMatrixSandwichLinearMapStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsLatticeTraceDualAndTraceDualTraceDualStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsLatticeTraceDualAndTraceDualTraceDual
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TraceFormDualTranslatedLatticeEqInverseTranspose
 
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S GlobalTheory.Count GlobalTheory.FlagMeas GlobalTheory.FlagBase GlobalTheory.MeanDual
@@ -349,7 +349,7 @@ theorem term_dual (hE : IsTotallyComplex E) {Λ : Submodule (𝓞 E) (Fin j → 
     (hm : Measurable ({g | 0 < detNorm E j g}.indicator fun g => F (latAt E j (trDual E j Λ) g))) :
     term E j (fun L => F (dualAt E j L)) Λ = term E j F (trDual E j Λ) := by
   apply le_antisymm
-  · exact covol_invT_le (GlobalTheory.T.isLattice_traceDual_and_traceDual_traceDual E j Λ hΛ).2 _ _ (fun x hx => congrArg F (_root_.GlobalTheory.MeanDual.dualAt_latAt_eq_latAt_trDual E hE j Λ hΛ x hx)) hm
+  · exact covol_invT_le (_root_.GlobalTheory.MeanDual.Alg.isLattice_trDual_and_trDual_trDual E j Λ hΛ).2 _ _ (fun x hx => congrArg F (_root_.GlobalTheory.MeanDual.dualAt_latAt_eq_latAt_trDual E hE j Λ hΛ x hx)) hm
   · refine covol_invT_le rfl _ _ (fun x hx => ?_) ?_
     · beta_reduce
       rw [_root_.GlobalTheory.MeanDual.dualAt_latAt_eq_latAt_trDual E hE j Λ hΛ _ ((detNorm_invT_pos_iff E j x).2 hx), invT_invT E j hx]
@@ -368,8 +368,8 @@ theorem latMean_dualAt : ∀ (E : Type) [Field E] [NumberField E], IsTotallyComp
   intro E _ _ hE j F hF
   let X := {Λ : Submodule (𝓞 E) (Fin j → E) // Submodule.IsLattice E Λ}
   let r : X → X → Prop := fun Λ Λ' => ∃ γ : GL (Fin j) E, Carries E j γ Λ.1 Λ'.1
-  let d : X → X := fun Λ => ⟨trDual E j Λ.1, (GlobalTheory.T.isLattice_traceDual_and_traceDual_traceDual E j Λ.1 Λ.2).1⟩
-  have hdd : ∀ Λ, d (d Λ) = Λ := fun Λ => Subtype.ext (GlobalTheory.T.isLattice_traceDual_and_traceDual_traceDual E j Λ.1 Λ.2).2
+  let d : X → X := fun Λ => ⟨trDual E j Λ.1, (_root_.GlobalTheory.MeanDual.Alg.isLattice_trDual_and_trDual_trDual E j Λ.1 Λ.2).1⟩
+  have hdd : ∀ Λ, d (d Λ) = Λ := fun Λ => Subtype.ext (_root_.GlobalTheory.MeanDual.Alg.isLattice_trDual_and_trDual_trDual E j Λ.1 Λ.2).2
   have hd : ∀ ⦃a b⦄, r a b → r (d a) (d b) := fun a b ⟨γ, h⟩ => ⟨_, h.trDual⟩
   let D : Quot r → Quot r := Quot.map d hd
   have hD : Function.Involutive D := by

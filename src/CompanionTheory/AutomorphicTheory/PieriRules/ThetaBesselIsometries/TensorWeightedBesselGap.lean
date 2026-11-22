@@ -7,7 +7,7 @@ import Formalism.PeriodIntegrals.LowCyc
 import Formalism.PeriodIntegrals.UpqRep
 import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.TensorWeightedBesselSum
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselFunctionLocalityInvariantFactorFiniteSumStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselFunctionLocalityInvariantFactorFiniteSum
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.BesselSettingGapDecay
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MirrorDecomposition.HpkRowEsI
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.IsDSOfIsDG
@@ -73,7 +73,7 @@ theorem pieri_bessel : HypsG → ∀ (k r : ℕ) (ι κ : Type) [Fintype ι] [De
   have hγG : γ ∈ GG k r := hγ.1
   obtain ⟨Ft, st, hFt, hsum, hz, hst⟩ := _root_.Gp91.GlobalTheory.coef_mul_split H.1.2.2.1 k r ι κ ρ Γ d R RI io pr ep ε mu muI Wp Wq om om'
     l l' lI lI' F s hR (fun I => (hRI I).1) hρ hT hF
-  obtain ⟨hloc, hfac, hfin, -⟩ := GlobalTheory.T.besselFunction_locality_invariantFactor_finiteSum k r Wp Wq D γ hγG
+  obtain ⟨hloc, hfac, hfin, -⟩ := _root_.GlobalTheory.BesselFunctionBasic.JF_basic k r Wp Wq D γ hγG
   have hOO := fun I => _root_.Gp91.GlobalTheory.BesselOrbital.bessel_integral_eq_smul H k r ε (muI I) h (RI I) Wp Wq D (lI I) (lI' I) (hRI I).1 (hRI I).2 hgap
     (hBe I).1 (hBe I).2
   choose OO hOO using hOO

@@ -4,7 +4,8 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LiftSchurMultipl
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ActEqTranslate
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PostOnGaLMemGoodPart
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContDiffDerivSnoc
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StepVectorLiftPairFlagLevelRealizedChainStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StepVectorLiftPairFlagLevelRealizedChain
+import Formalism.LocalToGlobal.IndefiniteReal.FWExist
 
 noncomputable section
 

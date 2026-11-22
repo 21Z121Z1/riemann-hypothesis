@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.GBasic
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SiegelRegionNormBound
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsometryOpNormBoundedByTwoFramesStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsometryOpNormBoundedByTwoFrames
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselZhatInvAndRegularIffStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselModelUnitaryGroupOpNormProperties
 
@@ -41,7 +41,7 @@ theorem left_bound (z z' : Fin (2 * r + k + 1) → ℂ) (C : Set (Mat k r)) (hz 
     ∃ C0 : ℝ, ∀ γ ∈ C, ∀ s ∈ Sset k r z, ∀ s' ∈ Sset k r z',
       opn s ≤ C0 * opn (s * γ * s'⁻¹) ^ (2 * (r ^ 2 + r + 1)) := by
   obtain ⟨C1, h1⟩ := _root_.GlobalTheory.SgInf.frame_image_bound k r z z' C hz hz' hT hT' hC hCr
-  obtain ⟨C2, h2⟩ := GlobalTheory.T.isometry_opNorm_bounded_by_two_frames k r z z' C hz hz' hT hT' hC
+  obtain ⟨C2, h2⟩ := _root_.GlobalTheory.SgInf.isom_frame_bound k r z z' C hz hz' hT hT' hC
     (fun γ hγ => ⟨(hCr hγ).1, (hCr hγ).2.2⟩)
   obtain ⟨hN1, -, -, -, hN5, -⟩ := _root_.GlobalTheory.SgInf.opn_facts k r
   refine ⟨C2 * (max 1 C1) ^ 2, fun γ hγ s hs s' hs' => ?_⟩

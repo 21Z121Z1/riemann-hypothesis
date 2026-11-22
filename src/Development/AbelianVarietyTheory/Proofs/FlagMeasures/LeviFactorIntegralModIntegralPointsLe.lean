@@ -3,9 +3,10 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsLatMeasura
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalUnitaryPointsDiscreteFundamentalDomain
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryLatticeStabilizerDetRoot
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LintegralRpowNegChangeOfVariable
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LeftQuotientCovolumeWithDensityDetNormSqStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LeftQuotientCovolumeWithDensityDetNormSq
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsGaugeAll
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FlagLeviRealPlacesProductMeasure
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsScalarStableLatticeAutomorphismFundamentalStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsScalarStableLatticeAutomorphismFundamental
 
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S GlobalTheory.Count GlobalTheory.FlagMeas GlobalTheory.FlagBase
 
@@ -385,7 +386,7 @@ theorem exists_dom (hE : IsTotallyComplex E) (hj : 1 ≤ j) {Λ : Submodule (�
       (∀ g, 0 < detNorm E j g → ∃ γ ∈ autGL E j Λ, γ * g ∈ D) ∧
       ∀ G : ℝ → ENNReal, Measurable G → ∫⁻ x in D, G ((detNorm E j x / κ) ^ (-(1 / N))) ∂haarGL E j =
         slabVol E j Λ * ∫⁻ t in Set.Ioi (0 : ℝ), G t * ENNReal.ofReal (N / t) := by
-  obtain ⟨D, hDm, hDpos, hDcov, -, hDint⟩ := GlobalTheory.T.exists_scalarStable_latticeAutomorphismFundamentalDomain E hE j Λ hΛ
+  obtain ⟨D, hDm, hDpos, hDcov, -, hDint⟩ := _root_.GlobalTheory.LatDom.exists_cone_domain E hE j Λ hΛ
   refine ⟨D, hDm, hDpos, hDcov, fun G hG => ?_⟩
   have hAm : MeasurableSet {g : MatInf E j | 0 < detNorm E j g} :=
     measurableSet_lt measurable_const measurable_detNorm
@@ -404,7 +405,7 @@ theorem exists_dom (hE : IsTotallyComplex E) (hj : 1 ≤ j) {Λ : Submodule (�
   rw [haarGL_restrict hj, Set.inter_eq_right.2 hDpos] at h1
   beta_reduce at h1
   rw [← h1]
-  have h2 := GlobalTheory.T.leftQuotientCovolume_withDensity_detNormSq E hE j hj Λ hΛ (fun t => G ((t / κ) ^ (-(1 / N)))) hF
+  have h2 := _root_.GlobalTheory.DetSlab.covol_withDensity_detNorm E hE j hj Λ hΛ (fun t => G ((t / κ) ^ (-(1 / N)))) hF
   beta_reduce at h2
   rw [h2, GlobalTheory.FlagMeas.lintegral_rpow_neg_change_of_variable N κ hN hκ G hG]
   rfl

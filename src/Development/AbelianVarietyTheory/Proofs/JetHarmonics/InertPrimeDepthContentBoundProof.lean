@@ -6,9 +6,9 @@ import Formalism.LocalToGlobal.CharacterGerms.ContentZeroAt
 import Formalism.LocalToGlobal.CharacterGerms.LatticeInclusionFormsInjective
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.LevelsUsedBalancedValueOrbitSums
 import Formalism.LocalToGlobal.CharacterGerms.ValuationChoiceHypothesis
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FlowProgrammeBoundsAndLowLevelOptimumStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FlowProgrammeBoundsAndLowLevelOptimum
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsGoodIntegerPlanLowLevelsBound
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.InertPrimeValueLePlanBlocksStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.InertPrimeValueLePlanBlocks
 
 open Formalism.L2.FormalSeriesBounds Formalism.IncomingBounds Formalism.UnitaryBoundIntegral Formalism.L2.DIV Formalism.L2.Pj Formalism.BasicNotions GlobalTheory.GoodDepth NumberField IsDedekindDomain ReciprocityTheory.ChartRestriction.G.Geo.Tor
 open scoped BigOperators
@@ -109,7 +109,7 @@ theorem orbit (l d : ℕ) [NeZero d] (hl : 5 ≤ l) (m k : ℕ) (hmk : m + 3 ≤
   have hadd := add_le l k (i0 k l) hl (by omega) hi
   obtain ⟨g1, g2, g3, g4⟩ := inv_le hl
   have hD : ∀ a, 0 ≤ ((k : ℝ) - 1) * w a := fun a => mul_nonneg (by linarith) (hw a).le
-  obtain ⟨f1, f2, -⟩ := GlobalTheory.T.flow_programme_bounds_and_low_level_optimum l d (fun a => ((k : ℝ) - 1) * w a) (by omega) hD
+  obtain ⟨f1, f2, -⟩ := _root_.GlobalTheory.FlowProgrammeFacts.main l d (fun a => ((k : ℝ) - 1) * w a) (by omega) hD
   have hF0 : 0 ≤ Fnum l d (fun a => ((k : ℝ) - 1) * w a) :=
     le_trans (mul_nonneg g4 (Finset.sum_nonneg fun a _ => hD a)) f1
   have hF : Fnum l d (fun a => ((k - 1 : ℕ) : ℝ) * ((1 - θ) * w a / T)) =
@@ -225,7 +225,7 @@ theorem main : InertBd := by
       exact ⟨p, fun _ => hp⟩
     · exact ⟨Plan.triv _ _ _, fun h => absurd h hz⟩
   choose p hp using key
-  have hν := GlobalTheory.T.inertPrime_value_le_planBlocks P l C1 hP hl Pk p (fun z hz => (hp z hz).1) (fun z hz => (hp z hz).2.1)
+  have hν := _root_.GlobalTheory.PlanValue.val_le_plan P l C1 hP hl Pk p (fun z hz => (hp z hz).1) (fun z hz => (hp z hz).2.1)
   have hT0 : 0 < Pk.T := by linarith [dg.T_one]
   have h1 := mul_le_mul_of_nonneg_left hν hT0.le
   rw [mul_add, Finset.mul_sum] at h1

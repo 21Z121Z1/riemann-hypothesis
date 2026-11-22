@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GaloisPowFrobe
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoversOfAction
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoversAction
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemKummerTowerUnramifiedOfCoversOne
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FixingKunrMemInertiaModFieldInfStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FixingKunrMemInertiaModFieldInf
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGaloisPrescribedUnramifiedKummer
 import Development.AbelianVarietyTheory.CrystallinePeriods.RingBasics
 
@@ -134,7 +134,7 @@ theorem main : ∀ (l : ℕ) [Fact l.Prime] (a e : ℕ) [NeZero a] [NeZero e] (�
     have hr' : ∀ x : Om l, x ^ l ^ a = x → k x = x := fun x hx => by
       rw [hr x hx]
       simp
-    obtain ⟨k', hk', h, hh, hkh⟩ := GlobalTheory.T.fixing_kunr_mem_inertia_mod_fieldInf l a e ϖ hsucc k hr'
+    obtain ⟨k', hk', h, hh, hkh⟩ := _root_.GlobalTheory.InertiaMod.main l a e ϖ hsucc k hr'
     have hc : Covers ↥LL.1 (thetaW a LL) ϖ (k' : GQ l) (TameGal.inertia ζ : TameGal ↥LL.1 l e a) := by
       have := covers_mul ϖ LL hk (covers_of_mem ϖ LL hh)
       rwa [mul_one, ← hkh] at this

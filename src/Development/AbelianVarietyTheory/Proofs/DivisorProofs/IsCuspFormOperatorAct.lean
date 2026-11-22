@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemZalgCommuteCompa
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemZalgCommuteLieAction
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalSpanCompactOrbitLieDerivativeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieGrowthOfFinite
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCuspidalLieActionOfIsCuspFormStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCuspidalLieActionOfIsCuspForm
 
 open NumberField GlobalTheory.CuspRep
 
@@ -143,7 +143,7 @@ theorem isCuspForm_act' (hP : GlobalTheory.Published.AutomorphicFormsFiniteGL) (
       exact hC r h0 h1 μ 𝓕 hμ hF (g * infGL E a (Unitary.toUnits c))
   | lie X =>
     refine ⟨⟨fun γ g => ?_, ?_, GlobalTheory.T.finiteDimensional_span_compact_orbit_lieDerivative E a X φ hA.kfin, zfin_of_comm _ (fun z hz => _root_.GlobalTheory.CuspRep.Zalg_mul_lie E a X z hz) hA.zfin, GlobalTheory.AutGrowth.lie_growth_of_finite hP E a X φ hA⟩,
-      GlobalTheory.T.isCuspidal_lieAction_of_isCuspForm E a X φ ⟨hA, hC⟩⟩
+      _root_.GlobalTheory.CuspRep.isCuspidal_lie_of_isCuspForm E a X φ ⟨hA, hC⟩⟩
     · change lieD X φ.1 (ratGL E a γ * g) = lieD X φ.1 g
       have e : chart φ.1 (ratGL E a γ * g) = chart φ.1 g := by
         funext x

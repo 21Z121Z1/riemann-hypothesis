@@ -5,7 +5,7 @@ import GroundTheory.AutomorphicForms.MultiplicityOne.Injective
 import Development.AbelianVarietyTheory.Definitions.Divisors.NAInterSupSSubset
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermAutomorphicFormIntegral
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormModerateGrowthCompact
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GlobalWhittakerCoefficientLinearArchimedeanKerneStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GlobalWhittakerCoefficientLinearArchimedeanKerne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanKernelSpanCuspFormRightInvariantOpen
 
 noncomputable section
@@ -104,7 +104,7 @@ theorem GlobalTheory.JSW.MirSemi.whitSpace_exists : ∀ (E : Type) [Field E] [Nu
       add_mem' := by
         rintro _ _ ⟨F, hF, rfl⟩ ⟨G, hG, rfl⟩
         refine ⟨F + G, add_mem hF hG, funext fun g => ?_⟩
-        have h := ((GlobalTheory.T.globalWhittakerCoefficient_linear_archimedeanKernel E (m + 1) F G (hreg F hF).1 (hreg G hG).1 (hreg F hF).2 (hreg G hG).2).1 1 g)
+        have h := ((_root_.GlobalTheory.JSW.WhitAlg.whit_linear_kerInf E (m + 1) F G (hreg F hF).1 (hreg G hG).1 (hreg F hF).2 (hreg G hG).2).1 1 g)
         simp only [one_mul] at h
         exact h
       zero_mem' := ⟨0, zero_mem _, funext fun g => by
@@ -120,7 +120,7 @@ theorem GlobalTheory.JSW.MirSemi.whitSpace_exists : ∀ (E : Type) [Field E] [Nu
     exact ⟨_, rt_mem_locSpan hF hh, funext fun g => (whit_mul_right_fun F g h).symm⟩
   · rintro _ ⟨F, hF, rfl⟩ X _ ν _ k γ hk
     refine ⟨GlobalTheory.JSW.kerInf ν k γ F, kerInf_mem_locSpan hF ν hk, funext fun g => ?_⟩
-    rw [(GlobalTheory.T.globalWhittakerCoefficient_linear_archimedeanKernel E (m + 1) F F (hreg F hF).1 (hreg F hF).1 (hreg F hF).2 (hreg F hF).2).2 X ν k γ hk g]
+    rw [(_root_.GlobalTheory.JSW.WhitAlg.whit_linear_kerInf E (m + 1) F F (hreg F hF).1 (hreg F hF).1 (hreg F hF).2 (hreg F hF).2).2 X ν k γ hk g]
     rfl
   · rintro _ ⟨F, hF, rfl⟩ g
     exact whit_infGL_growth (hreg F hF).1 (hreg F hF).2 g

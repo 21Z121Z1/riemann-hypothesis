@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Degenerations.IsNormalScheme
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.MemPadicAlgClValuationSubringIffNormLeOne
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.JacobsonClosedPointsToolsInt
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.KbIsAlgClosedAndConjStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.KbIsAlgClosedAndConj
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry
 open scoped CategoryTheory.Obj
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -62,7 +62,7 @@ theorem exists_integral_point_lifting_residue_point :
         (∀ (x : Sp (kb p) ⟶ X) (s : Sp (kb p)), IsClosed ({x s} : Set X)) := by
   intro X _ π _ _ U hU p hp
   obtain ⟨hJ, hfin, -⟩ := jacobson_closedPoints_tools_int X π
-  obtain ⟨-, hord, hgal⟩ := GlobalTheory.T.kb_isAlgClosed_and_conj' p
+  obtain ⟨-, hord, hgal⟩ := _root_.GlobalTheory.ZJ.kb_isAlgClosed_and_conj p
   have hcl : ∀ (x : Sp (kb p) ⟶ X) (s : Sp (kb p)), IsClosed ({x s} : Set X) :=
     fun x s => isClosed_image_point_of_forall_pow_eq_one hord x s
   refine ⟨fun x => ?_, hcl⟩

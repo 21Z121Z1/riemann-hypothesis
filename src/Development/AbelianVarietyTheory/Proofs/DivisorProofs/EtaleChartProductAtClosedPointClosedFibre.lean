@@ -1,7 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.QuasiCompact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCoordinatesDescendAlongProperMap
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedPointRangeEqFixedGroupImageStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedPointRangeEqFixedGroupImage
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
+import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMemFibreOfGeometricLifting
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEtaleCoordsLiftImmersion
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoordinateMapEtaleNearProperFibre
@@ -68,7 +70,7 @@ theorem etale_chart_at_closed_point : ∀ (R : Type) [CommRing R] [IsDomain R] [
     simp only [Scheme.Hom.comp_apply] at h1
     rw [← h1, hz]
     simpa [Scheme.Hom.comp_apply] using hx0
-  obtain ⟨y, hy⟩ := (GlobalTheory.T.closedPoint_range_eq_fixedGroup_image R M.S M.π G' E).1 (X.ι z) hz0
+  obtain ⟨y, hy⟩ := (_root_.GlobalTheory.Mum.Emb.range_closed R M.S M.π G' E).1 (X.ι z) hz0
   have hyb : E.j y = b x := by
     rw [← hy, ← hz]
     have h1 := congrArg (fun f : X.toScheme ⟶ PSpace R E.N => f z) hab

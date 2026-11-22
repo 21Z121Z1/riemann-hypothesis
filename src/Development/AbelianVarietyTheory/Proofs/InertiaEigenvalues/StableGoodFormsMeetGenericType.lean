@@ -5,9 +5,10 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCentralIdempotent
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UupEqOneOfLeOne
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.StableSubmoduleMeetsCharacterTypeVectors
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MonoidAlgebraExistsRightInvOfMapFieldStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MonoidAlgebraExistsRightInvOfMapField
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSubfieldAdjoinRootsOfUnityEmbeddingComplexStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsRightInverseCentralProjectorUnitElementStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsRightInverseCentralProjectorUnitElement
+import Formalism.LocalToGlobal.NormalizedHeckeFactors.TypesDefs
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodIdempotentIrreducibleCharacterGenericSumNeZe
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ConcreteTwistFrameExtraExcludedOverSmallPrimes
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.ExpDefs
@@ -31,7 +32,7 @@ theorem GlobalTheory.MeetsGen.exists_right_inv_generic_central_projector : ∀ (
       GlobalTheory.MeetsGen.uElt U (fun u => (((ψ u)⁻¹ : ℂˣ) : ℂ)) D.ntypes.e0 * v = 1 := by
   intro D S _ U _ hU ψ hψ hr
   obtain ⟨hc, hi⟩ := GlobalTheory.GoodLatCompare.goodSeriesIdempotent_central_idempotent D
-  exact GlobalTheory.T.exists_right_inverse_centralProjectorUnitElement U ψ D.ntypes.e0 hi (fun a => ((Subalgebra.mem_center_iff.mp hc) a).symm)
+  exact _root_.GlobalTheory.MeetsUnit.exists_rightInv_uElt U ψ D.ntypes.e0 hi (fun a => ((Subalgebra.mem_center_iff.mp hc) a).symm)
     (_root_.GlobalTheory.WhittakerMeets.sum_ne_zero D S U hU ψ hψ hr)
 
 open GlobalTheory.MeetsGen in
@@ -132,7 +133,7 @@ theorem GlobalTheory.TwInputs.meetsAll_of_ties : GlobalTheory.Published.GreenCus
     rw [MonoidAlgebra.coeff_mapRingHom, D.nexp.eAlg_def]
     simp only [eE, MonoidAlgebra.coeff_ofCoeff, Finsupp.coe_equivFunOnFinite_symm]
     rfl
-  obtain ⟨vE, hvE⟩ := GlobalTheory.T.monoidAlgebra_exists_right_inv_of_map_field jE (uElt D.nexp.U fE eE) ⟨vC, by rw [hC1]; exact hvC⟩
+  obtain ⟨vE, hvE⟩ := _root_.GlobalTheory.groupAlgebra_exists_right_inv_of_map jE (uElt D.nexp.U fE eE) ⟨vC, by rw [hC1]; exact hvC⟩
   have hvK := congrArg (MonoidAlgebra.mapRingHom (G0g D.nd) E.subtype) hvE
   rw [map_mul, map_one, GlobalTheory.MeetsGen.map_uElt, hK1] at hvK
   have heq := GlobalTheory.MeetsGen.eq_sum_of_uElt_mul D.nexp.U _ (D.nexp.eAlg i b) _ (D.nexp.eAlg_idem i b) (D.nexp.eAlg_central i b) hvK

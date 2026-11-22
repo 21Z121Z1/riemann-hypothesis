@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ChartGen
 import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.MaxMass
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NormalFormDualOrthogonalLast
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermFramePairOmSumSameDatumLe
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormalFormTerminalDeterminantStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormalFormTerminalDeterminant
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FlagPairDefiniteThetaLatticeLeFixedIndexBound
 open NumberField Formalism.HermitianLatticeCounting.S6 GlobalTheory.HermLat GlobalTheory.DegCnt
 open scoped Pointwise ENNReal Classical
@@ -75,7 +75,7 @@ theorem omSum_sameDat_le : ∀ (K V : Type) [Field K] [NumberField K] [StarRing 
     rintro Λ' ⟨h1, h2⟩
     refine ⟨(N.iI g Λ', N.bI Λ'), ?_, h1, h2, rfl, rfl⟩
     obtain ⟨-, -, hI', hb, -⟩ := _root_.GlobalTheory.DegCnt.FixIdx.main K V H hK r N g Λ' hg h1
-    have hb0 := (GlobalTheory.T.normal_form_terminal_determinant K V H hK r N g Λ' hg h1).1
+    have hb0 := (_root_.GlobalTheory.DegCnt.SplitIdx.main K V H hK r N g Λ' hg h1).1
     have hgg : N.gI g Λ' = N.gI g Λ := by
       unfold NF.gI flagPairDefinitePartLattice latLa
       rw [h2.1, h2.2.2]

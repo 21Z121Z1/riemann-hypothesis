@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ImportsAlt
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TiltUntiltInjectiveAndDvdOfNormLe
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TiltUntiltToComplexPAdicBasicLawsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TiltUntiltToComplexPAdicBasicLaws
 
 open Formalism.Per GlobalTheory.PSer
 open scoped Formalism.Per
@@ -10,7 +10,7 @@ namespace GlobalTheory.PSer
 
 theorem tiltUntilt_add_estimate_of_norm_le (l : ℕ) [Fact l.Prime] (x y : Fl l) (hxy : ‖sh x‖ ≤ ‖sh y‖) :
     ‖sh (x + y) - sh x - sh y‖ ≤ ‖(l : ℂ_[l])‖ * ‖sh y‖ ∧ ‖sh (x + y)‖ ≤ ‖sh y‖ := by
-  obtain ⟨h1, -, hmul, -, hle1, -, hadd, -⟩ := GlobalTheory.T.tiltUntiltToComplexPAdic_basic_laws l
+  obtain ⟨h1, -, hmul, -, hle1, -, hadd, -⟩ := _root_.GlobalTheory.PSer.Laws.sh_laws l
   obtain ⟨u, rfl⟩ := (_root_.GlobalTheory.PSer.untilt_injective_zero_and_dvd_of_norm_sh_le l).2 x y hxy
   have hsum : y * u + y = y * (u + 1) := by ring
   rw [hsum, hmul, hmul]

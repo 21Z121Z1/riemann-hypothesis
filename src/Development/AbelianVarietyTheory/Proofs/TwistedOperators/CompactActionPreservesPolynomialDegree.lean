@@ -5,17 +5,17 @@ import Formalism.SharpRestriction.Divisibility.SchurIrreducible
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsFockIPOfFockData
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsRealIntertwinerOfCompactGroupIntertwiner
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CompactExponentialSurjective
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GluingLawHoldsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GluingLawHolds
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFockPolynomialIsoUnitaryPairStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsContractionIsometricDiscreteSeriesFock
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsLocalFockIntertwinerRealPlaceOfCoverContraStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsGlobalFockIntertwinerTensorRealPlacesStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesPureInnerProductsTensorProductStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsGlobalFockIntertwinerTensorRealPlaces
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesPureInnerProductsTensorProduct
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NotLocallyFiniteQuadraticMulAddDegreeNonraising
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockSourceGlActionEqQuadraticAddNonRaisingStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockTargetGlActionEqQuadraticAddNonRaisingStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockSourceGlActionEqQuadraticAddNonRaising
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockTargetGlActionEqQuadraticAddNonRaising
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EquivariantOfGeneratorOneParameterGroup
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemMaximalCompactOfMapsFockVectorToFockStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemMaximalCompactOfMapsFockVectorToFock
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SubstitutionTotalDegreeLe
 
 noncomputable section
@@ -217,11 +217,11 @@ theorem equiv_alt (hθ : IsInfFam θ) (h : GlobIt M M' aS aT It I) (τ : D.what�
     have : φ' = 0 := hinj (by rw [e, map_zero, map_zero])
     subst this
     simp only [map_zero, LinearMap.zero_apply]
-  have T := GlobalTheory.T.discreteSeries_pureInnerProducts_tensorProduct D V S M
-  obtain ⟨k, hk, rfl⟩ := GlobalTheory.T.mem_maximalCompact_of_maps_fockVector_to_fock V.rank (M.ε τ) (M.fr τ) (gramAt D V τ) _ _ (ptL ψ θ M M' f)
+  have T := _root_.GlobalTheory.Chain.RealIt.tensorLaw D V S M
+  obtain ⟨k, hk, rfl⟩ := _root_.GlobalTheory.Chain.RealIt.CompactStab.mem_compact V.rank (M.ε τ) (M.fr τ) (gramAt D V τ) _ _ (ptL ψ θ M M' f)
     (fun g => ω (atTau θ V τ g, 1)) (srcOp M M' τ (aT τ)) (M.fr_unit τ) (M.fr_gram τ) hinj (om_src_one hθ τ)
     (om_src_mul hθ τ) (fun X hX => hasDerivAt_lieAction_source_operator hL hX) (compact_action_preserves_polynomial_degree hθ hC)
-    (fun X _ ⟨j, k, hjk, h1, h2⟩ => not_locFin _ (GlobalTheory.T.fockSourceGlAction_eq_quadratic_add_nonRaising D _ _ τ (M.ε τ) (M'.ε τ) _ hr
+    (fun X _ ⟨j, k, hjk, h1, h2⟩ => not_locFin _ (_root_.GlobalTheory.Chain.RealIt.FockSrcDec.fockS_decomp D _ _ τ (M.ε τ) (M'.ε τ) _ hr
       ⟨j, k, hjk, (_root_.map_ne_zero (starRingEnd ℂ)).2 h1, (_root_.map_ne_zero (starRingEnd ℂ)).2 h2⟩))
     g hg φ φ' h0 e
   obtain ⟨X, hX, h1, hK⟩ := compact_path (M.fr_unit τ) (M.fr_gram τ) hk
@@ -265,12 +265,12 @@ theorem inv_tgt (hθ : IsInfFam θ) (h : GlobIt M M' aS aT It I) (τ : D.what₂
     have : φ' = 0 := hinj (by rw [e, map_zero, map_zero])
     subst this
     simp only [map_zero, LinearMap.zero_apply]
-  have T := GlobalTheory.T.discreteSeries_pureInnerProducts_tensorProduct D V S M
-  have T' := GlobalTheory.T.discreteSeries_pureInnerProducts_tensorProduct D W S' M'
-  obtain ⟨k, hk, rfl⟩ := GlobalTheory.T.mem_maximalCompact_of_maps_fockVector_to_fock W.rank (M'.ε τ) (M'.fr τ) (gramAt D W τ) _ _ (ptL ψ θ M M' f)
+  have T := _root_.GlobalTheory.Chain.RealIt.tensorLaw D V S M
+  have T' := _root_.GlobalTheory.Chain.RealIt.tensorLaw D W S' M'
+  obtain ⟨k, hk, rfl⟩ := _root_.GlobalTheory.Chain.RealIt.CompactStab.mem_compact W.rank (M'.ε τ) (M'.fr τ) (gramAt D W τ) _ _ (ptL ψ θ M M' f)
     (fun g => ω (1, atTau θ W τ g)) (tgtOp M M' τ (aS τ)) (M'.fr_unit τ) (M'.fr_gram τ) hinj (om_tgt_one hθ τ)
     (om_tgt_mul hθ τ) (fun X hX => lie_tgt hL hX) (cpt_tgt hθ hC)
-    (fun X _ hjk => not_locFin _ (GlobalTheory.T.fockTargetGlAction_eq_quadratic_add_nonRaising D _ _ τ (M.ε τ) (M'.ε τ) _ hr hjk))
+    (fun X _ hjk => not_locFin _ (_root_.GlobalTheory.Chain.FockTDec.fockT_decomp D _ _ τ (M.ε τ) (M'.ε τ) _ hr hjk))
     g hg φ φ' h0 e
   obtain ⟨X, hX, h1, hK⟩ := compact_path (M'.fr_unit τ) (M'.fr_gram τ) hk
   have hm : ∀ t : ℝ, NormedSpace.exp (t • X) ∈ Formalism.QuantumDeterminants.UH (gramAt D W τ) := fun t => by
@@ -327,7 +327,7 @@ theorem isItW_of_globIt : ∀ {D : D7} {V W : HSp D} {S S' : D.what₂.Tau → S
     Function.Injective (ptOf ψ θ M M' f) → (∀ τ, CompactFock ψ θ M M' ω f τ (aS τ) (aT τ)) →
     (∀ τ, LieFock ψ θ M M' ω f τ (aS τ) (aT τ)) → IsItW θ M M' ω (ptOf ψ θ M M' f) It := by
   intro D V W S S' M M' θ hθ ψ ω f aS aT It I h hr hinj hC hL
-  have T := GlobalTheory.T.discreteSeries_pureInnerProducts_tensorProduct D V S M
+  have T := _root_.GlobalTheory.Chain.RealIt.tensorLaw D V S M
   refine ⟨h.ne, ?_, ?_, ?_, ?_, ?_⟩
   · intro φ w
     obtain ⟨c, hc⟩ := span_bound M' _ (h.adj φ w)

@@ -9,9 +9,11 @@ import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LocalBasisGramDetLog
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.PureTypeLatticesOrthogonal
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CurveZNeZero
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CmPackPureFrameOpen
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CmPackPureNormStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CmPackPureNorm
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsCmPeriodEmbedding
-import Development.AutomorphicSpectrum.Proofs.AdelicProofs.ExistsExtensionEmbeddingAlgClosedStatement
+import Development.AutomorphicSpectrum.Proofs.AdelicProofs.ExistsExtensionEmbeddingAlgClosed
+import Development.AutomorphicSpectrum.Definitions.AdelicLattices.FactPrimes
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LatNormGrLatNeZeroOfSpan
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -49,9 +51,9 @@ theorem flatGen_finNorm : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E]
   · intro hel j
     rw [_root_.PositivityTheory.Xgf.padic_norm_transition_det_one E H (FU.Di i) _ x e T ℓ hxl hel hT j, Real.log_one]
   · intro j t₀ hN
-    obtain ⟨j', hj'⟩ := GlobalTheory.T.exists_extension_embedding_alg_closed k X.K ℂ_[ℓ] (IntermediateField.inclusion hkK).toRingHom j
+    obtain ⟨j', hj'⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Fl.exists_comp_eq_of_numberField k X.K ℂ_[ℓ] (IntermediateField.inclusion hkK).toRingHom j
     obtain ⟨V, hV, hVf, Tm, m'', δ, δ', v', w', hval, hδ, hδ', hlogδ, hlogδ', hA, hB, hfr', hiv, hiw⟩ :=
-      GlobalTheory.T.cm_pack_pure_norm E H D l Xo c g ty FU i Z P hP X x hx τ ℓ j' v w hty hrt hxl hfr
+      _root_.GlobalTheory.CompanionTheory.Ar.Fl.GFin.intFrames_fin E H D l Xo c g ty FU i Z P hP X x hx τ ℓ j' v w hty hrt hxl hfr
     obtain ⟨hF, hφ⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Fl.CMValue.value_on_cmFrame E H D l Xo c g ty FU i Z P hP X x hx U τ φ e ρ T v w hty hrt
       hmem hline he hconst hxl.1 hT hfr
     have hF' : IsFramed U τ X.β X.y v' w' := ⟨hfr'.1, hF.2.1, hfr'.2.2⟩

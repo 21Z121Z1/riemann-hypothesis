@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.TermLoc
 import Formalism.SharpRestriction.CuspSpanNormBounds.IsTermOver
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SpanDifferentEqLocalGeneratorStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SpanDifferentEqLocalGenerator
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RelIndexMulMeasure
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AbsNormEqFinprod
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GFrames
@@ -60,7 +60,7 @@ theorem finprod_modK_localGen : ∀ (D : D7) (Z : LocDat D),
     ring
   have hcount : ∀ p, GlobalTheory.HL.vE (Z.M p).L (ϖ p) (algebraMap _ _ (Z.δ p)) =
       ((Associates.mk p.asIdeal).count (Associates.mk (differentIdeal ℤ (𝓞 D.host.F))).factors : ℕ) :=
-    fun p => GlobalTheory.IdealResProd.vE_eq_count (D.s.atP p) (Z.M p).L (hϖ p) _ hI (hδ p) (GlobalTheory.T.span_different_eq_localGenerator D Z p)
+    fun p => GlobalTheory.IdealResProd.vE_eq_count (D.s.atP p) (Z.M p).L (hϖ p) _ hI (hδ p) (_root_.GlobalTheory.LocDiffGen.span_different_eq D Z p)
   have hfin : (Function.mulSupport g).Finite := by
     refine (Ideal.finite_factors hI).subset fun p hp => ?_
     simp only [Set.mem_setOf_eq]
@@ -72,7 +72,7 @@ theorem finprod_modK_localGen : ∀ (D : D7) (Z : LocDat D),
     simp [g, hcount p, h0]
   have hprod : ∏ᶠ p, g p = |(NumberField.discr D.host.F : ℝ)| :=
     (GlobalTheory.IdealResProd.discr_and_level A ϖ hϖ).1 (fun p => Units.mk0 (Z.δ p) (hδ p))
-      (fun p => GlobalTheory.T.span_different_eq_localGenerator D Z p)
+      (fun p => _root_.GlobalTheory.LocDiffGen.span_different_eq D Z p)
   have hsupp : (Function.mulSupport fun p : PlF D => (Z.M p).modK (algebraMap _ _ (Z.δ p))) ⊆
       Function.mulSupport g := fun p hp h => hp (by show (Z.M p).modK _ = 1; rw [hmod, h]; simp)
   refine ⟨hfin.subset hsupp, ?_⟩

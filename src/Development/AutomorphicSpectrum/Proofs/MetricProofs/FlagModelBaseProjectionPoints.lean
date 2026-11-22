@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockDiagonalMinorVanishingStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockDiagonalMinorVanishing
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.AevalNeZeroOfNotMem
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsValueAtOfTorus
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.FiniteEtaleSurjectiveOfPullback
@@ -269,7 +269,7 @@ theorem stepCols_nonempty {j : ℕ} (hj : j ≤ N) (i : Fin N) : (stepCols N j i
 theorem detFac_ne_zero {L : Type} [Field L] {j : ℕ} (hj : j ≤ N) (i : Fin N) {T : Matrix (Fin N) (Fin N) L}
     (hT : IsBlockDiag j T) (hd : T.det ≠ 0) : detFac j i T ≠ 0 := by
   have hu : IsUnit T.det := hd.isUnit
-  have h := ((GlobalTheory.T.block_diagonal_minor_vanishing L N j i hj).2.2.2 T T⁻¹ hT (hT.inv hu)).2
+  have h := ((_root_.GlobalTheory.CompanionTheory.Ar.PB.MinorCalc.minors_main L N j i hj).2.2.2 T T⁻¹ hT (hT.inv hu)).2
   rw [Matrix.mul_nonsing_inv _ hu, detFac_one] at h
   exact left_ne_zero_of_mul_eq_one h.symm
 
@@ -339,7 +339,7 @@ theorem frame_gen {F : FrameData ι Ψ N M.Ω M.blk} (hF : M.IsFrame F) {S : Typ
   rw [e'] at h1
   have h2 : ∀ I, minorIJ ((M.g p.1).map f * bb) I (stepCols N j p.2) =
       f (minorIJ (M.g p.1) I (stepCols N j p.2)) * ∏ c ∈ stepCols N j p.2, bb c c := fun I => by
-    rw [(GlobalTheory.T.block_diagonal_minor_vanishing S N j p.2 M.j_le).2.2.1 _ bb I hbb hbt, minorIJ_map]
+    rw [(_root_.GlobalTheory.CompanionTheory.Ar.PB.MinorCalc.minors_main S N j p.2 M.j_le).2.2.1 _ bb I hbb hbt, minorIJ_map]
   simp only [h2] at h1
   have h3 : f (y ⟨k, m⟩) = ∑ I, algebraMap M.Ω S (M.coef ⟨k, m⟩ I) * f (minorIJ (M.g p.1) I (stepCols N j p.2)) := by
     rw [M.y_step p k hp m, map_sum]

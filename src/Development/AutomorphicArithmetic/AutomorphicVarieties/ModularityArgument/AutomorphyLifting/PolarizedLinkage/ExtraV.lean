@@ -79,7 +79,7 @@ private theorem prod_law (H : LawsT a ha rc) (r t : ℕ) (σ : IrrRep (GL (Fin r
   haveI := cz (E := E) (w := w)
   obtain ⟨𝔪, h𝔪⟩ := Pr.exh _ (cls σ)
   obtain ⟨𝔫, h𝔫⟩ := Pr.exh _ (cls τ)
-  have hp := GlobalTheory.T.isLanglandsClassification_add_of_irreducible_product Pr.multi Pr.cos _ r t σ τ π 𝔪 𝔫 (h𝔪.of_equiv (equivRep σ).symm)
+  have hp := _root_.GlobalTheory.LocGL.SumProd.isL_add_of_equiv_prod₂ Pr.multi Pr.cos _ r t σ τ π 𝔪 𝔫 (h𝔪.of_equiv (equivRep σ).symm)
     (h𝔫.of_equiv (equivRep τ).symm) hπ
   rw [H.langlands 𝔪.toList (cls σ) (by rwa [Multiset.coe_toList]),
     H.langlands 𝔫.toList (cls τ) (by rwa [Multiset.coe_toList]),
@@ -104,7 +104,7 @@ private theorem supp_law (H : LawsT a ha rc) (x : IrrGL (w.adicCompletion E)) (s
   haveI := cz (E := E) (w := w)
   obtain ⟨𝔪, hm⟩ := Pr.exh (w.adicCompletion E) x
   have h1 := GlobalTheory.T.langlandsClassification_supercuspidalSupport_multisegment Pr.zel _ 𝔪 x hm
-  obtain rfl : s = msupp 𝔪 := GlobalTheory.T.supercuspidalSupport_unique_GL geo Pr.bz Pr.zel _ x s _ hs h1
+  obtain rfl : s = msupp 𝔪 := _root_.GlobalTheory.LocGL.SupportUnique.hasSupport_unique geo Pr.bz Pr.zel _ x s _ hs h1
   rw [H.langlands 𝔪.toList x (by rw [Multiset.coe_toList]; exact hm), segSum, SuppLaw.charPol_sumList, List.map_map,
     msupp, Multiset.map_bind, Multiset.prod_bind]
   have hl : ∀ (l : List (Segment (w.adicCompletion E))) (F : Segment (w.adicCompletion E) → ℂ[X]),

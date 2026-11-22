@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FamilyUnifFibreL
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ArcOffBoundaryDescendsToModuliLocalization
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GermSectionsHalfPlaneGlobalSectionStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsConstSubstitutionOfHolomorphicFamilies
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHolomorphicFramesSamePeriodCoordinatesStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHolomorphicFramesSamePeriodCoordinates
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnipotentTriangularOfPeriodCoordinatesEq
 
 open AlgebraicGeometry CategoryTheory Limits NumberField ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor Formalism.BasicNotions Formalism.L2.Pj GlobalTheory.Toroidal GlobalTheory.Cartier GlobalTheory.ShFam GlobalTheory.ShFam.BdArc Filter Topology
@@ -292,7 +292,7 @@ theorem exists_orbit_lift : ∀ (E : Type) [Field E] [NumberField E] [IsCMField 
     exact h a j
   haveI : Inhabited (Frame (U.X k).Ψ N) := inferInstance
   choose! x₁ hx₁ hr₁ using fun (w : ℂ) (hw : T < w.im) => honto (P w) (hP w hw).1.1
-  obtain ⟨xx, hxd, hxx⟩ := GlobalTheory.T.exists_holomorphicFrames_same_periodCoordinates E N (U.X k) {w : ℂ | T < w.im} x₁ hx₁
+  obtain ⟨xx, hxd, hxx⟩ := _root_.GlobalTheory.HolFrameLift.exists_holomorphic_frames E N (U.X k) {w : ℂ | T < w.im} x₁ hx₁
     (hall fun a j => (differentiableOn_pi.1 (hPd a) j).congr fun w hw => hr₁ w hw a j)
   have hxP : ∀ w : ℂ, T < w.im → ∀ a j,
       GlobalTheory.GenericFrames.pc (U.X k) (xx w) (φL k a : Fin N → E) (idx j).1 (idx j).2 = P w a j :=

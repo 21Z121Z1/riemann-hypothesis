@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ThetaA
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.TransvectionAction
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.WeilDatumExistence
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilDatumThetaJointlyContinuous
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicMatrixQuotientPeriodicIntegralContinuousPaStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicMatrixQuotientPeriodicIntegralContinuousPa
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilRepresentationRationalTranslateSubstitution
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum MeasureTheory IsDedekindDomain NumberField Matrix
@@ -77,7 +77,7 @@ theorem pairKer_law : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (σ : ℕ) (
     refine (congrArg (· * _) e1).trans ?_
     change ψ (-symplOH J.W₀ B.V₀ (B.o.jB ⬝ rat γ) (B.o.jB ⬝ x)) * _ * _ = _
     rw [e3, star_mul', mul_mul_mul_comm, hn, one_mul]
-  obtain ⟨-, hcont, -, hinv⟩ := GlobalTheory.T.adelicMatrixQuotient_periodicIntegral_continuous_param D _ _ vL _ K hc hper
+  obtain ⟨-, hcont, -, hinv⟩ := _root_.GlobalTheory.Unf.ParCont.parCont D _ _ vL _ K hc hper
   refine ⟨?_, fun γ hγ h₀ h₁ => ?_, fun γ hγ h₀ h₁ => ?_⟩
   · have : Function.uncurry (pairKer s vL Y Ξ) = fun p => ∫ w in vL.𝓕, K w p ∂vL.μ := funext fun p => hP p.1 p.2
     rw [this]; exact hcont

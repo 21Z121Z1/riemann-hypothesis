@@ -3,8 +3,8 @@ import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsProbabilityMea
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.FundSetPf
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.OrthoStatementPf
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LintegralUnfoldArithmeticQuotientDoubleCosets
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.UnitFrameRealUnitaryOrbitGramRigidStatement
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsDiscreteArithGroupImageRealUnitaryStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.UnitFrameRealUnitaryOrbitGramRigid
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsDiscreteArithGroupImageRealUnitary
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsMeasurePreservingFrameChangeProportionalHeStatement
 
 set_option autoImplicit false
@@ -122,7 +122,7 @@ theorem lintegral_dict {Comp : Type} [Fintype Comp] (X : Comp → Data E r) {G :
       (∀ k, ∀ b ∈ Bor (X k).Ψ r, ∀ x ∈ (X k).dom, F k (rmul x b) = F k x) →
       Measurable (fun g => F (dict g).1 (dict g).2) ∧
         ∫⁻ g in 𝓕, F (dict g).1 (dict g).2 ∂μ = κ * ∑ k, quotInt (X k) (F k) := by
-  obtain ⟨hG, hgr⟩ := GlobalTheory.T.unitFrame_real_unitary_orbit_gram_rigid E r Comp X G Gi dict (fun k g τ => ar τ.1 g) (fun k τ => J τ.1) x0
+  obtain ⟨hG, hgr⟩ := _root_.GlobalTheory.PeterssonRigid.rigid E r Comp X G Gi dict (fun k g τ => ar τ.1 g) (fun k τ => J τ.1) x0
     (fun k τ => hJ τ.1) hs d0 dI dD dU
   choose t ht0 ht using hG
   choose y hy b hb hxb using fun k => ReciprocityTheory.ChartRestriction.G.AR.Up.ortho_holds r (X k) (x0 k) (d0 k).1
@@ -137,7 +137,7 @@ theorem lintegral_dict {Comp : Type} [Fintype Comp] (X : Comp → Data E r) {G :
     fun τ g => (hJG k τ _).1 (hu k τ g)
   choose s hsy using fun k => exists_real_of_orth (X k) (baseFr_mem (X k)) (hy k)
   choose g hg using fun k => (d0 k).2
-  choose Λ hΛ hΛd using fun k => GlobalTheory.T.exists_discrete_arithGroupImage_realUnitary E r (X k)
+  choose Λ hΛ hΛd using fun k => _root_.GlobalTheory.ArithImage.exists_discrete_image E r (X k)
   have hfr : ∀ k h τ, mat (frameOf (X k) (s k * ψ k h)) τ = ar τ.1 h * mat (y k) τ := by
     intro k h τ
     rw [← hψ, hsy, mat_frameOf, Matrix.mul_assoc]

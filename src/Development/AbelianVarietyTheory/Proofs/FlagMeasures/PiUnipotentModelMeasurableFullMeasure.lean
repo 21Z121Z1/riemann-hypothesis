@@ -1,5 +1,7 @@
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsVolData
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HaarLieNilpotentCoordinatesStatement
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HaarLieNilpotentCoordinates
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NCoords
 open NumberField IsDedekindDomain MeasureTheory Matrix Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.QuantumDeterminants Formalism.MainNotions.S GlobalTheory.SgAlg GlobalTheory.SgGlob GlobalTheory.SnMass GlobalTheory.SnMass.VolN
 open scoped TensorProduct ENNReal nonZeroDivisors
 
@@ -21,7 +23,7 @@ theorem nset_closed (k r : ℕ) : IsClosed {y : Mt k r | Matrix.of y ∈ Nset k 
 theorem pi_nset_full : ∀ (ι : Type) [Fintype ι] (k r : ℕ), MeasurableSet {x : ι → Mt k r | ∀ w, Matrix.of (x w) ∈ Nset k r} ∧ (Measure.pi fun _ : ι => haarLie (Nset k r) 1) {x : ι → Mt k r | ∀ w, Matrix.of (x w) ∈ Nset k r}ᶜ = 0 := by
   intro ι _ k r
   have hS : MeasurableSet {y : Mt k r | Matrix.of y ∈ Nset k r} := (nset_closed k r).measurableSet
-  have hH := (GlobalTheory.T.haar_lie_nilpotent_coordinates k r).1
+  have hH := (_root_.GlobalTheory.SnMass.NEntry.haarLie_entries k r).1
   haveI : SigmaFinite (haarLie (Nset k r) 1) := hH.1
   have hset : {x : ι → Mt k r | ∀ w, Matrix.of (x w) ∈ Nset k r} =
       ⋂ w, Function.eval w ⁻¹' {y : Mt k r | Matrix.of y ∈ Nset k r} := by

@@ -11,7 +11,11 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaChain
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaChainStageLatticeStabilizerParamsOffSet
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaChainStageLevelSphericalOffSet
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSatakeParametersBoundedEigenfunction
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeckeOperatorInverseCosetConjEigenvalueStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeckeOperatorInverseCosetConjEigenvalue
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConstMemBddAut
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsLevMeas
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TransferOn
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CartFrSgn
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsParamFunVIffIsSysParamDOfLevel
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.GEqMain
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaChainEigenPartHasHeckeParameters
@@ -143,7 +147,7 @@ theorem rowPar_of_chain : GlobalTheory.Published.CuspRapidDecay → ∀ {D : D7}
     intro y hy w
     obtain ⟨hcont, ⟨C, hC⟩, hinv, hlev⟩ := hval y w
     have hb : PiLocalization₂.val y w ∈ GlobalTheory.FinZeta.bddAut s'.V := ⟨hcont, hinv, C, hC⟩
-    have heig := GlobalTheory.T.heckeOperator_inverseCoset_conj_eigenvalue D s'.V _ _ (comR R t).S hsph (PiLocalization₂.val y w) hb hlev c
+    have heig := _root_.GlobalTheory.HeckeAdjEigen.heckeLin_eq_conj_of_dualLab D s'.V _ _ (comR R t).S hsph (PiLocalization₂.val y w) hb hlev c
       (fun P d Rr hR => val_hecke_of_mem_partFull y _ hy P d Rr hR w)
     refine ⟨fun k hk g => ?_, fun P d Rr hR => ?_, ?_⟩
     · show conj (PiLocalization₂.val y w (g * k)) = _

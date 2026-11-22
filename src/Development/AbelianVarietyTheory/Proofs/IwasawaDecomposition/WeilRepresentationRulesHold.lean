@@ -17,8 +17,8 @@ import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsSelfDualCLa
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MemLatOIffExistsActO
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIsDetRoot
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeilDatumTwistHeckeCharacters
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumFixesVacuumNonSplitPlaceUnramifiedStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumUniqueOnThetaFunctionsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumFixesVacuumNonSplitPlaceUnramified
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumUniqueOnThetaFunctions
 
 noncomputable section
 
@@ -55,7 +55,7 @@ theorem twist_small (hψ : IsStdChar D ψ (-1)) {V W : HSp D} {χ χ' ν ν' : I
   obtain ⟨u, rfl⟩ := c.surjective w
   have hf : IsThetaFunO ψ V W fun x => Φ.1 (toTWsmall V W x) := by
     simpa only [hc] using (hth ψ Φ.1).2 (mem_ThS.1 Φ.2)
-  have k := congrFun (GlobalTheory.T.weilDatum_unique_on_thetaFunctions D ψ hψ V W _ _ o' o'' ho' ho'' (g, h) _ hf) u
+  have k := congrFun (_root_.GlobalTheory.WeilUniq.weilDatum_unique D ψ hψ V W _ _ o' o'' ho' ho'' (g, h) _ hf) u
   rw [e', e'' g h x y hx hy, LinearMap.smul_apply, e] at k
   rw [hc]
   exact k
@@ -130,7 +130,7 @@ theorem fixes_local {S T : HSp D} {χS χT : IdC D} {om : GA D S × GA D T →* 
     · have := (GlobalTheory.PlaceModel.idem_smul_mem hε he' heε' hu).1
       rwa [show cA D e • u = u from Matrix.ext hh] at this
   · obtain ⟨η, e1, e2, e3, e4⟩ := GlobalTheory.Mem.EtaTilde.exists_etaTilde D
-    have k := GlobalTheory.T.weilDatum_fixes_vacuum_nonSplitPlace_unramified D ψ H.std S T _ _ (GlobalTheory.PlaceModel.isSelfDualC_latFrame S) (GlobalTheory.PlaceModel.isSelfDualC_latFrame T)
+    have k := _root_.GlobalTheory.VacInert.fixesVacAt_of_unram D ψ H.std S T _ _ (GlobalTheory.PlaceModel.isSelfDualC_latFrame S) (GlobalTheory.PlaceModel.isSelfDualC_latFrame T)
       χS χT om ⟨η, e1, e4, e3, e2⟩ H v ε ⟨hε, hs⟩ uS uT g h sg sh
     rw [GlobalTheory.PlaceModel.coe_latFrame, GlobalTheory.PlaceModel.coe_latFrame] at k
     refine k (fun u => ⟨GlobalTheory.LatStabAct.actO_mem_latO_of_stab D S T _ hg _ hh _ u, fun hu => ?_⟩) f hf hv

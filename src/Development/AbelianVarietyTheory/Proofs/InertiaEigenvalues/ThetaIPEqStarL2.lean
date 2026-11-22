@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilMatrixCoeffi
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCartanInvOneOfOnb
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsLocalPreimageOfSupportedAtPlace
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PairFixedVectorLatticeVacuumOffLevels
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WeilDatumCharactersUnramifiedOffLevelsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WeilDatumCharactersUnramifiedOffLevels
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SphericalKernelNormSqMulLatticeIndexEqOne
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix
 open Formalism.L2.Theta Formalism.L2.DIV Formalism.L2.Indef
@@ -33,7 +33,7 @@ theorem goodMod : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 T : Type) (
   obtain ⟨a, rfl⟩ := _root_.GlobalTheory.RawLift.suppF_finIdem_mem_range D (Wc D i) v f hf k hk
   have hW := hL.thP.ωP i t
   have hvac := _root_.GlobalTheory.RawLift.vacFin_off D G Pl0 T A Ks R F hL i t v f hf hoff
-  have hunr := GlobalTheory.T.weilDatumCharacters_unramified_offLevels D G Pl0 T A Ks R F hL i t v f hf hoff
+  have hunr := _root_.GlobalTheory.GoodModUnr.chrTh_unrAt D G Pl0 T A Ks R F hL i t v f hf hoff
   obtain ⟨φ, hφ, hc⟩ := GlobalTheory.VacCoef.vac_coef D R.ψ (Vc D i) (Wc D i) _ _ (R.ωP i t) hW μ 𝓕 hμ v hunr
   have hmod := _root_.GlobalTheory.LocKerMod.sq_norm_mul_latIndex D (Wc D i) (Vc D i).rank _ v φ hφ (fun w h => (hunr w h).1) a
   have h1 := hc a (R.vP i t) (R.vP i t) hvac hvac

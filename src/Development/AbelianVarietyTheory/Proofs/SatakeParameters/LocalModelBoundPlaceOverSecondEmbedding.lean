@@ -11,7 +11,7 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.OrbitBoundOverSe
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FockRowsOfFills
 import Formalism.SharpRestriction.GrowthBounds.WeilJacquetShalikaLaw
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ServedPrimeProperties
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CofactorLowerBoundOfPlaceBoundWittStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CofactorLowerBoundOfPlaceBoundWitt
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HasSubstCoordZA
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CoeffApplyDPIvOfKvalGe
 
@@ -80,7 +80,7 @@ theorem lowAt_F : ∀ (D : D7) (u : D.what₂.Word) (w : D.what₂.places.Pl) (h
   have hN : ∀ j, NN (D.gat u w hg).P.m (Y.Fl u w hg).t j = D.R.N j := fun j => by
     simp only [NN, Ranks.N, ht]
     omega
-  refine GlobalTheory.T.lowAt_of_placeCofactorValuationLowerBound _ _ Y5 i v _ hcc ?_
+  refine _root_.GlobalTheory.TwU.LowGen.cofactor_lower_bound_of_place_bound_witt _ _ Y5 i v _ hcc ?_
   refine lowBound_of_series_bound_one_place (Sys.mk (D.gat u w hg) (Y.Fl u w hg) Lv Ch std vp unif eO eO_spec dG dG_spec om) Y5.be i v (fun s => E.nu u i (posPl D (D.what₂.places.resChar w) (true, t) s.val)) _ hcc ?_ ?_
   · intro s r
     have h1 := _root_.GlobalTheory.fock_rows_of_fills D u w hg hT Y hFill ht v (toFin s) i hi r

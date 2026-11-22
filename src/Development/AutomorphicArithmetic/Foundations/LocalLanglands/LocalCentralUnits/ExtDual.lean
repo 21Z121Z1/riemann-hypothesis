@@ -11,7 +11,7 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.EpsMeasFami
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CuspLaws
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.LanglandsDataDualGL
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Mono0OfLpDimEqOne
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WeilDeligneParamDualListSumAbsTwistSpecialStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WeilDeligneParamDualListSumAbsTwistSpecial
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.GoodSeg
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.ClBasic
 
@@ -38,7 +38,7 @@ private theorem summand_dual (H : CuspT a ha r) {Δ Δ' : Segment (w.adicComplet
   have e1 := H.dual _ _ hc Δ'.isCusp_first hgn hD
   have e2 : Δ.first.nu ((Δ.len : ℂ) - 1) = Δ.first.nu (((Δ.len : ℝ) - 1 : ℝ) : ℂ) := by push_cast; rfl
   rw [e2, H.nu _ Δ.isCusp_first] at e1
-  obtain ⟨hS, hT, hP⟩ := GlobalTheory.T.weilDeligneParam_dual_listSum_absTwist_special E Ω A w h
+  obtain ⟨hS, hT, hP⟩ := _root_.GlobalTheory.WDDual.lpDual_sum_tw_sp E Ω A w h
   rw [e1, hl, hP, hT, hT, WD.lpTw_add]
   congr 2
   ring
@@ -64,5 +64,5 @@ theorem UpperTheory.Zero.LLC.extDual :
     rw [Multiset.coe_toList]; exact h𝔪
   obtain ⟨l', hF, hL'⟩ := (UpperTheory.Zero.LLC.Pr.dual (w.adicCompletion E)).2 𝔪.toList (cls π) (cls π') hL ⟨n, π, π', rfl, rfl, hπ⟩
   have hgl := ((UpperTheory.Zero.LLC.goodSeg (w.adicCompletion E)).1 _ _ hL).1 hg
-  rw [hE _ _ hL, hE _ _ hL', segSum, segSum, (GlobalTheory.T.weilDeligneParam_dual_listSum_absTwist_special E Ω A w h).1, List.map_map]
+  rw [hE _ _ hL, hE _ _ hL', segSum, segSum, (_root_.GlobalTheory.WDDual.lpDual_sum_tw_sp E Ω A w h).1, List.map_map]
   exact congrArg sumList (UpperTheory.Zero.LLC.map_summand_dual H hgl hF)

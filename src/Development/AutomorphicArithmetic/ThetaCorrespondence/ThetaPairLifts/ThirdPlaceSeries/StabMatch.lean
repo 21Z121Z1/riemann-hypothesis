@@ -89,7 +89,7 @@ theorem exists_center_stab_at_of_transport_correction : ∀ {D : D7} {L : SizeDa
           have h1 := D.R.m_add_three_le_k
           rw [Fintype.card_fin, D.sp.X_rank 0 (Nat.zero_le _), Ranks.N]
           omega
-        refine GlobalTheory.T.exists_central_element_homothetic_gluedCores D k (o.p i) _ _ _ B.o B.ζ _ (o.β 0 i) β₀ M _ μ _ o.q (o.Q 0 i) a₀ hr e1 d1 s2 e2 hF.ne (s6 _) z2
+        refine _root_.GlobalTheory.Core.Mi.LatMatch.CoreHomothety.exists_central_sMoves D k (o.p i) _ _ _ B.o B.ζ _ (o.β 0 i) β₀ M _ μ _ o.q (o.Q 0 i) a₀ hr e1 d1 s2 e2 hF.ne (s6 _) z2
           (GlobalTheory.SeeSaw.LevelTest.unifT_of _ _ hTv) fun a ha => ?_
         obtain ⟨y, hy, hU⟩ := _root_.GlobalTheory.Core.Mi.LevRow.levrow D W.S.X W.Q.instEq u W.Q.Rl.ψ (_root_.GlobalTheory.MiTop.formsAtZero W u) (W.S.tr u) W.S.Y.hK B a₀ hE hLM hBa ha₀ _ hg a ha
         have c5 : (y : GL _ _) ∈ (_root_.GlobalTheory.MiTop.formsAtZero W u).cls0.lev.U ↔ Moves (D.sp.Y 0) (embA B.d B.o a) (v.N 0) (v.N 0) (· = (o.p i).v) :=
@@ -103,11 +103,11 @@ theorem exists_center_stab_at_of_transport_correction : ∀ {D : D7} {L : SizeDa
         exact _root_.GlobalTheory.Core.Mi.LatMatch.coreOff_homothetic D _ _ _ B.o B.ζ M _ (f.g.x 0).L LL μ _ p a₀ B.line e1 e2
           (rows_trace hE hF hLM hBa ha₀ p (hBT.lat p hpT))
           (_root_.GlobalTheory.Core.Mi.LatMatch.SplitOff.splitsAt D _ _ _ B.o B.ζ _ μ _ p B.line s2 hF.ne (s6 p) z2 hTv) hF.ne (s6 p) z2 hTv
-  obtain ⟨a, haf, hac, z, hz, hmvz⟩ := GlobalTheory.T.exists_central_glue_localHomotheties D (D.sp.Y 0) (D.sp.X 0) (embA B.d B.o) (embA B.d B.o a₀) Lm
+  obtain ⟨a, haf, hac, z, hz, hmvz⟩ := _root_.GlobalTheory.Core.Mi.LatGlue.glue D (D.sp.Y 0) (D.sp.X 0) (embA B.d B.o) (embA B.d B.o a₀) Lm
     (latS D) hLm s1 (fun v a ha => embA_mem_grpAt _ _ ha) (fun v => by simpa only [map_mul] using loc v)
   rw [← map_mul] at hmvz
   exact ⟨a, haf, hac, stab_of_frame W.S.X W.Q.instEq u ((_root_.GlobalTheory.Fam.pk_z W).βY 0) _ _ z hz
-    (GlobalTheory.T.isFrame_finitePart_mul_of_carries_lattice D (D.sp.Y 0) _ ((_root_.GlobalTheory.Fam.pk_z W).ΛY 0) (latS D) ((_root_.GlobalTheory.Fam.pk_z W).βY 0) (moves_trans (hmv _) hmvz) hfr)⟩
+    (_root_.GlobalTheory.Core.Mi.FrameMove.isFrame_of_moves D (D.sp.Y 0) _ ((_root_.GlobalTheory.Fam.pk_z W).ΛY 0) (latS D) ((_root_.GlobalTheory.Fam.pk_z W).βY 0) (moves_trans (hmv _) hmvz) hfr)⟩
 end GlobalTheory.LevZero.StabMatch
 end
 end

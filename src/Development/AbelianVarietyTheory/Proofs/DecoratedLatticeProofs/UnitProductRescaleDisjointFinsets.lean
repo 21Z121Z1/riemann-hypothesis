@@ -3,7 +3,12 @@ import Development.AbelianVarietyTheory.Definitions.LatticeFrames.NotBadPrimeBas
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StepVectorLiftPairFlagLevelRealizedChain
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilRepThetaDatumHalfEqSmul
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TypePlacesLocalDatumBlockTriangularLaw
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SupportedSubgroupSplitCommutePrimeIdempotentsStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SupportedSubgroupSplitCommutePrimeIdempotents
+import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
+import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
+import Formalism.LocalToGlobal.IndefiniteReal.LocalNewformFunction
+import Formalism.LocalToGlobal.Columns.HeckeSp
+import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 
 noncomputable section
 
@@ -177,7 +182,7 @@ theorem idemSum_eq (V : HSp D) {e e' : AE D} {P : Finset (Pl D.host.E)} (h : IsI
   obtain ⟨⟨es, hes, rfl⟩, -⟩ := h
   obtain ⟨⟨es', hes', rfl⟩, -⟩ := h'
   exact Finset.sum_congr rfl fun PP hP =>
-    (((GlobalTheory.T.supported_subgroup_split_commute_primeIdempotents V).2.2.1 PP _ _ (Or.inl ⟨hes PP hP, rfl⟩)).2.2.2.1 _ _ (Or.inl ⟨hes' PP hP, rfl⟩)).1
+    (((_root_.GlobalTheory.IdemSupport.supported_group_and_prime_idempotents V).2.2.1 PP _ _ (Or.inl ⟨hes PP hP, rfl⟩)).2.2.2.1 _ _ (Or.inl ⟨hes' PP hP, rfl⟩)).1
 
 end Move
 
@@ -202,7 +207,7 @@ theorem stepVec_eq_sum : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (θ : Inf
   have he' : IsIdemSum e (Pg ∪ Q) := he
   obtain rfl : e' = e := idemSum_eq S he' he2
   obtain ⟨Tm, hTm⟩ := hΘ.1
-  have hth := GlobalTheory.T.schrodingerIntertwiner_schwartzBruhat_isTheta D ψ hW.std S T ΛS ΛT dS dT e' (GlobalTheory.PlaceDatum.idemSum_mul_self he) (GlobalTheory.PlaceDatum.infPart_idemSum he) f₀
+  have hth := _root_.GlobalTheory.SchrTheta.isTheta_placeModel D ψ hW.std S T ΛS ΛT dS dT e' (GlobalTheory.PlaceDatum.idemSum_mul_self he) (GlobalTheory.PlaceDatum.infPart_idemSum he) f₀
       hf.2.theta Tm hTm
   have one1 : finE T (1 : GA D T) = 1 := map_one (finE T)
   have sh : finE T (1 : GA D T) ∈ St βT := one1 ▸ one_mem _

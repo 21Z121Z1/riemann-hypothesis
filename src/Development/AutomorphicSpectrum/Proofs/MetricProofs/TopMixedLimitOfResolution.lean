@@ -17,8 +17,8 @@ import Development.AutomorphicSpectrum.Proofs.MetricProofs.LocalOrbitChart
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsLocalOrbitChart
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LocalHolomorphicSectionOfPotential
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularizedWeightPshAndBounds
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularizedWeightTendstoC2Statement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularChartDataPropertiesStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularizedWeightTendstoC2
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularChartDataProperties
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogRatio
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IntersectionNumberTelescopingStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularizedWeightUniformOnCompact
@@ -159,7 +159,7 @@ theorem term_tendsto (X : ComponentSetting D O Lt) (B : ℕ) (Θ : LocPot X.M.Xc
     have h5 : C₁ ≤ b := (le_abs_self _).trans (le_add_of_nonneg_right (abs_nonneg _))
     constructor <;> nlinarith
   have hsm0 : X.M.atlas.Smooth (fun _ : X.M.Xc => (0 : ℝ)) := fun _ => contDiffOn_const
-  have hYo : IsOpen R.Yo := (GlobalTheory.T.regular_chart_data_properties D.n X.M.Xc X.M.atlas R).1
+  have hYo : IsOpen R.Yo := (_root_.GlobalTheory.CompanionTheory.Ar.Giv.regData_open_part D.n X.M.Xc X.M.atlas R).1
   refine _root_.GlobalTheory.CompanionTheory.Ar.Giv.Mix.tendsto_ptsIntegral_of_chart_conv K ι (mCoordIdeal D.y) D.n X.M R Θ Pp f fT (fun x => φ t₀ x - R.ph x)
     (fun t x => φ t₀ x - φ t x) (2 * b)
     (fun t => mixWord (n := D.n) (muReg X.H X.S B t) (muReg X.H X.S B t₀) D.A' k i)
@@ -185,7 +185,7 @@ theorem term_tendsto (X : ComponentSetting D O Lt) (B : ℕ) (Θ : LocPot X.M.Xc
       constructor <;> nlinarith
   · intro j c K' hK' hc
     rcases hcases j with ⟨-, -, hf, hT⟩ | ⟨-, -, -, hf, hT⟩ | ⟨-, -, -, hf, hT⟩ <;> simp only [hT, hf]
-    · exact GlobalTheory.T.regularized_weight_tendsto_C2 K ι (mCoordIdeal D.y) D.n X.M D.Xo (muLine X.H) X.S X.S_tied c K' hK' hc
+    · exact _root_.GlobalTheory.CompanionTheory.Ar.Giv.regWeight_tendsto_C2_of_tied K ι (mCoordIdeal D.y) D.n X.M D.Xo (muLine X.H) X.S X.S_tied c K' hK' hc
     · exact ⟨tendstoUniformlyOn_const' _ _, tendstoUniformlyOn_const' _ _, tendstoUniformlyOn_const' _ _⟩
     · exact ⟨tendstoUniformlyOn_const' _ _, tendstoUniformlyOn_const' _ _, tendstoUniformlyOn_const' _ _⟩
   · filter_upwards [hev] with t ht

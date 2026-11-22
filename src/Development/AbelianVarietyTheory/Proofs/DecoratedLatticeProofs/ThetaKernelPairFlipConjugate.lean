@@ -125,8 +125,8 @@ theorem GlobalTheory.KernelFlip.kernelPair_flip : ∀ (D : D7) (ψ : AddChar (AF
   intro D ψ θ A B χA χB sA sB K₁ K₂ c hθ hsA hsB hK
   obtain ⟨om, Φ₁, Φ₂, H, hF₁, hF₂, -, -, hK₁, hK₂, hc⟩ := hK
   have hψ : IsStdChar D ψ (-1) := H.std
-  have hBA : AdjLaw ψ B A := GlobalTheory.T.hermitianAdjoint_laws_standardCharacter D ψ hψ B A
-  have hAB : AdjLaw ψ A B := GlobalTheory.T.hermitianAdjoint_laws_standardCharacter D ψ hψ A B
+  have hBA : AdjLaw ψ B A := _root_.GlobalTheory.AdjLawPf.adjLaw D ψ hψ B A
+  have hAB : AdjLaw ψ A B := _root_.GlobalTheory.AdjLawPf.adjLaw D ψ hψ A B
   obtain ⟨om', H', hom'⟩ := GlobalTheory.WeilConj.exists_conj_weilDatum D ψ B A χB χA om H
   have hθK : ∀ (g : GA D A) (h : GA D B) (Φ : WO B A → ℂ),
       starRingEnd ℂ (thetaKO om' g h (dag B A Φ)) = thetaKO om h g Φ := by

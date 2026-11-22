@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IoInjective
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.SkewOfCommute
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DerivativeSkewAdjointCuspFormsStatement
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DerivativeSkewAdjointCuspForms
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LieAlgebraSpannedByCompactAndFrame
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.FiniteCoefficientSpaceAnnihilatingPolynomial
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.SkewOperatorBoundedByPolynomialRootsStatement
@@ -67,7 +67,7 @@ end Bd
 theorem inner_der_der (μ : Measure (GA D V)) [μ.IsHaarMeasure] (hθ : IsInfFam θ) {τ : D.what₂.Tau}
     {X : Matrix (Fin V.rank) (Fin V.rank) ℂ} (hX : X ∈ lieAt V τ) (φ : Mc θ V) :
     ⟪io μ hθ φ, io μ hθ (der hθ τ hX (der hθ τ hX φ))⟫_ℂ = -((‖io μ hθ (der hθ τ hX φ)‖ ^ 2 : ℝ) : ℂ) := by
-  have h := GlobalTheory.T.derivative_skew_adjoint_cusp_forms D θ hθ V μ τ X hX φ (der hθ τ hX φ)
+  have h := _root_.GlobalTheory.CompanionTheory.HCCusp.inner_io_der_skew D θ hθ V μ τ X hX φ (der hθ τ hX φ)
   have h' : ⟪io μ hθ φ, io μ hθ (der hθ τ hX (der hθ τ hX φ))⟫_ℂ =
       -⟪io μ hθ (der hθ τ hX φ), io μ hθ (der hθ τ hX φ)⟫_ℂ := by rw [h, neg_neg]
   rw [h', inner_self_eq_norm_sq_to_K]
@@ -202,7 +202,7 @@ theorem bd_ktype (μ : Measure (GA D V)) [μ.IsHaarMeasure] (hθ : IsInfFam θ) 
   obtain ⟨m, hm0, hm⟩ := _root_.GlobalTheory.CompanionTheory.HcFinite.OneParam.coeff_ode (Formalism.REAL.KG e) W ρ hρ s hc h0 ha
   have hκ0 : 0 ≤ ∑ r ∈ m.roots.toFinset, ‖r‖ := Finset.sum_nonneg fun _ _ => norm_nonneg _
   refine ⟨_, hκ0, fun φ hφ => GlobalTheory.T.skew_operator_bounded_by_polynomial_roots _ _ (io μ hθ) (io_injective μ hθ) (der hθ τ hY)
-    (fun a b => GlobalTheory.T.derivative_skew_adjoint_cusp_forms D θ hθ V μ τ _ hY a b) m hm0 _ hκ0
+    (fun a b => _root_.GlobalTheory.CompanionTheory.HCCusp.inner_io_der_skew D θ hθ V μ τ _ hY a b) m hm0 _ hκ0
     (fun r hr => Finset.single_le_sum (f := fun r : ℂ => ‖r‖) (fun _ _ => norm_nonneg _)
       (Multiset.mem_toFinset.2 hr)) φ ?_⟩
   refine Subtype.ext (funext fun x => ?_)

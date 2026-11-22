@@ -12,7 +12,7 @@ import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LieLattice
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.BundleObjects
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChartBundleLatticeGenerators
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChartBundleLocalGeneration
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsReversedDualBasisStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsReversedDualBasis
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ReversedDualTriangular
 open AlgebraicGeometry CategoryTheory NumberField MvPolynomial ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Num GlobalTheory.CompanionTheory.Ar.Top GlobalTheory.CompanionTheory.Ar.Num.HodgeModel
 open GroundTheory.Heights₂.Heights.NumbersDVR (pointIdeal segreVec IsFlagFrame IsFlagPair SameGenericFibre IsModelOver divCycle)
@@ -79,8 +79,8 @@ theorem dualPair : ∀ (O : Type) [CommRing O] [IsDomain O] [IsDiscreteValuation
       IsFlagPair ϖ y C C' v v' (fun i => -x (Fin.rev i)) (fun i => -x' (Fin.rev i)) (fun i => g (Fin.rev i))
         (fun i => f (Fin.rev i)) := by
   intro O _ _ _ Ω _ _ K _ _ J _ y ϖ r B B' w w' x x' f g h
-  obtain ⟨v, hv⟩ := GlobalTheory.T.exists_reversed_dual_basis Ω r w
-  obtain ⟨v', hv'⟩ := GlobalTheory.T.exists_reversed_dual_basis Ω r w'
+  obtain ⟨v, hv⟩ := _root_.GlobalTheory.CompanionTheory.Ar.DualRev.dotDualRevBasis Ω r w
+  obtain ⟨v', hv'⟩ := _root_.GlobalTheory.CompanionTheory.Ar.DualRev.dotDualRevBasis Ω r w'
   obtain ⟨htri, hdiag⟩ := _root_.GlobalTheory.CompanionTheory.Ar.DualPair.dualRevTri Ω r w w' v v' hv hv' h.sameFlag
   have hdual : ∀ B₀ : ChartBundle O (segreVec y) r (Fin r → Ω),
       IsDualLat O y (dotForm Ω r) B₀.lat (dualBundle B₀).lat := by

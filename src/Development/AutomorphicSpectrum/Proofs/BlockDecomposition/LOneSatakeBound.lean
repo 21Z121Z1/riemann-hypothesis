@@ -79,7 +79,7 @@ theorem len_eq_one [CharZero k] (Δ : Segment k) (y : IrrGL k) (hL : IsLSeg Δ y
   obtain ⟨N, c⟩ := y
   obtain ⟨hd, hc⟩ := id hL
   have hsub : IsSubquotient c.rep.ρ (prodIrr Δ.term hd) := hc.isSubquotient
-  have hsph := GlobalTheory.T.isSpherical_factor_of_spherical_subquotient k Δ.len N Δ.term hd _ c.rep.ρ hsub hS
+  have hsph := _root_.GlobalTheory.LocLanglands.SphFac.isSpherical_factor k Δ.len N Δ.term hd _ c.rep.ρ hsub hS
   have h0 : Δ.term ⟨0, Δ.len_pos⟩ = Δ.first := by simp [Segment.term]
   have key : ∀ x z : IrrGL k, x = z → IsSpherical x.rep → IsSpherical z.rep := by
     rintro _ _ rfl h; exact h
@@ -131,7 +131,7 @@ theorem isL_single_unrChar [CharZero k] (x : IrrGL k) (α : Fin x.1 → ℂˣ) (
   obtain ⟨𝔪, hL⟩ := PositivityTheory.Exh.langlandsExhaustionGL_holds k x
   obtain ⟨h, y, hd, ⟨Δ, hord, hseg⟩, hcos⟩ := id hL
   have hsphy : ∀ a, IsSpherical (y a).rep :=
-    GlobalTheory.T.isSpherical_factor_of_spherical_subquotient k h x.1 y hd x.2.rep.V x.rep hcos.isSubquotient hsat.2.1
+    _root_.GlobalTheory.LocLanglands.SphFac.isSpherical_factor k h x.1 y hd x.2.rep.V x.rep hcos.isSubquotient hsat.2.1
   have hlen : ∀ i, (Δ i).len = 1 := fun i => len_eq_one (Δ i) (y i) (hseg i) (hsphy i)
   have hsingle : ∀ i, Δ i = Segment.single (Δ i).first (Δ i).isCusp_first := fun i =>
     Segment.ext_first rfl (by rw [hlen i]; rfl)

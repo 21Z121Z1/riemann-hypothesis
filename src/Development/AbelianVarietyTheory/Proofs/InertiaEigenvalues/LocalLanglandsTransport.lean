@@ -21,7 +21,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RankinSelbergE
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PlaceOverTransportRingIsoSymm
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalArtinMapUniqueTransportPlaceIso
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RecTransportFieldIso
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RecUniqueOfLawsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RecUniqueOfLaws
 
 noncomputable section
 
@@ -132,7 +132,7 @@ theorem fieldCompatible : GlobalArtinReciprocity → ChevalleyUnits → BrauerDe
   obtain ⟨ψ, hψ, hψ1⟩ := exists_continuous_addChar_ne_one (w.adicCompletion E)
   have hE : ε E w h ψ = fun y => ε' E' w' h' (psiMap i ψ) (S y) := funext fun y =>
     _root_.GlobalTheory.LocLanglands.EpsUnique.eps_eq_of_placeIso hG hC hB hL E Ω A w h E' Ω' A' w' h' φ j i P ε ε' hε hε' ψ _ hψ hψ1 (hpsi ψ) y _ ((hS _ _).2 rfl)
-  have hrc := GlobalTheory.T.rec_unique_of_laws hLC hLE hBZ E Ω A w h a ha _ rc _ ψ _ hψ hψ1 hE H.toLawsMin M
+  have hrc := _root_.GlobalTheory.LocLanglands.Unique.eq_of_lawsMin hLC hLE hBZ E Ω A w h a ha _ rc _ ψ _ hψ hψ1 hE H.toLawsMin M
   have hπ : T (cls π) = cls π' := (hT _ _).1 ⟨n, π, π', e, rfl, rfl, he⟩
   refine exists_of_wdRel ((hS _ _).2 ?_) (H.dim _)
   rw [congrFun hrc (cls π), S.apply_symm_apply, hπ]

@@ -1,5 +1,8 @@
 import Development.WeilBound.CoreStatements.SesquilinearFractions.GLieIntC
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackEquivalenceStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackEquivalence
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCocharLie
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LieModel
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.LieFree
@@ -66,7 +69,7 @@ theorem isogeny_decomposition_product : ∀ (R V : Type) [CommRing R] [CommRing 
   obtain ⟨EBV, _, _, ⟨MBV⟩⟩ := lieModel_exists (Sp R) B.A V (spMap f ≫ 𝟙 (Sp R))
   obtain ⟨j, hj, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.LieBaseChange.existsUnique_semilinear_lifts (Sp R) B.A R V f (𝟙 _) EBR EBV MBR MBV
   have hx : spMap f ≫ 𝟙 (Sp R) = 𝟙 (Sp V) ≫ spMap f := by simp
-  obtain ⟨MG, hMG⟩ := (GlobalTheory.T.lie_model_pullback_equivalence (Sp R) (Sp V) B.A G (spMap f) π hpb V (𝟙 (Sp V)) EBV).1 (castM hx MBV)
+  obtain ⟨MG, hMG⟩ := (_root_.GlobalTheory.CompanionTheory.Ar.LiePull.lieModel_pullback (Sp R) (Sp V) B.A G (spMap f) π hpb V (𝟙 (Sp V)) EBV).1 (castM hx MBV)
   have hMG' : ∀ e, (MG.pt e).left ≫ π = (MBV.pt e).left := fun e => (hMG e).trans (castM_left hx MBV e)
 
   have hvt : ∀ k, IsTanAt B.A (𝟙 (Sp R)) (toAt (v k) ≫ ψ k) := fun k => by

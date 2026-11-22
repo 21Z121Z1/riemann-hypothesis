@@ -4,13 +4,13 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KummerTowerQqPow
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsIntPrimeDivRootOfUnitySubOnePow
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsAlmostGaloisCoordinates
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TraceTowerAlmostDualBasesAdjoinKummerRoot
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDerivationModIntegralExtensionPCubeStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDerivationModIntegralExtensionPCube
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DerivationModIntegralAlmostDualPSqIsInt
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TowerLevelEmbeddingInjectiveRangeAdjoinRoots
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TowerGaloisFixedEqDivLevelElementsStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TowerGaloisFixedEqDivLevelElements
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TowerLevelAdjoinRootsIntegrallyClosedQuotient
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDlogDerivationsTowerLevelModIntegral
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDlogDerivationsGluedTowerLevelsStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDlogDerivationsGluedTowerLevels
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KaehlerRelationDerivationModIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TowerGnExponentsKummerCochains
 
@@ -62,7 +62,7 @@ theorem gal_mem_fix {T : Tower p Ω} {n : ℕ} {a lz lq : Gal p Ω → ZMod (p ^
 theorem fix_mem_Lev (hΩ : IsClo p Ω) (T : Tower p Ω) :
     ∀ x ∈ FixI (Hinf T), ∃ m : ℕ, x ∈ Lev T m := by
   intro x hx
-  obtain ⟨m, a, ha, b, hb, hb0, rfl⟩ := GlobalTheory.T.towerGaloisFixed_eq_div_levelElements p Ω hΩ T x hx.2
+  obtain ⟨m, a, ha, b, hb, hb0, rfl⟩ := _root_.GlobalTheory.FixFrac.fixed_eq_div p Ω hΩ T x hx.2
   exact ⟨m + 1, _root_.GlobalTheory.K5.LevClosed.lev_closed p Ω hΩ T (m + 1) (by omega) a (Lev_mono T (by omega) ha) b
     (Lev_mono T (by omega) hb) hb0 hx.1⟩
 
@@ -89,10 +89,10 @@ theorem exists_ders (hp2 : p ≠ 2) (hΩ : IsClo p Ω) (T : Tower p Ω) (n : ℕ
   have hH : ∀ h ∈ Hinf T, ∃ i : ℕ, h r = T.ζ n ^ i * r := fun h hh => ⟨_, ha h (Hinf_le T n hh)⟩
   obtain ⟨ι, _, u, v, hu, hv, huv, h0⟩ := _root_.GlobalTheory.KumDlog.almostGal_coord p hp2 Ω hΩ T n r hr hH
   obtain ⟨tr, hd⟩ := _root_.GlobalTheory.traceTower_dualData p Ω T n r hr hH ι u v hu hv huv h0
-  obtain ⟨dz, dq, hdz, hdq, hval⟩ := GlobalTheory.T.exists_dlog_derivations_glued_tower_levels p Ω hΩ T _ (fix_mem_Lev hΩ T)
+  obtain ⟨dz, dq, hdz, hdq, hval⟩ := _root_.GlobalTheory.LevGlue.glue p Ω hΩ T _ (fix_mem_Lev hΩ T)
     (fun m hm => _root_.GlobalTheory.LevDer.exists_levDer p Ω hΩ T m hm)
-  obtain ⟨Dz, hDz, ez⟩ := GlobalTheory.T.exists_derivationModIntegral_extension_p_cube p Ω _ _ ι u v tr hd dz hdz
-  obtain ⟨Dq, hDq, eq⟩ := GlobalTheory.T.exists_derivationModIntegral_extension_p_cube p Ω _ _ ι u v tr hd dq hdq
+  obtain ⟨Dz, hDz, ez⟩ := _root_.GlobalTheory.DerExt.exists_ext p Ω _ _ ι u v tr hd dz hdz
+  obtain ⟨Dq, hDq, eq⟩ := _root_.GlobalTheory.DerExt.exists_ext p Ω _ _ ι u v tr hd dq hdq
   have hC := hd.2.1
   have hLB : ∀ m, Lev T m ≤ FixI (Hinf T) := fun m => Lev_le_FixI T m (Hinf_le T m)
   have p3 : IsInt p ((p : Ω) ^ 3) := int_pow (int_nat p) 3

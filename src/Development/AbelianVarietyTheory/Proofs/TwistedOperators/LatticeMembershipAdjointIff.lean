@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IncAdjYZer
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.InverseDifferentPowCompletionTrivialAtSplitPlace
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PeriodIdealZpowCompletionAdeleConjIff
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.JZeroMulMemLatticeIff
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StaircaseLatticeIsotropicLineIdealIffStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StaircaseLatticeIsotropicLineIdealIff
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BesselCoreLatticeMeetsLineOfZIdeal
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ModulusIdealOffS0Trivial
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StaircaseIdealsCompletionEqOfModulusUnit
@@ -74,7 +74,7 @@ theorem incAdj_yZero_mem_latO_iff_gen : ∀ (D : D7) (ψ : AddChar (AF D.host.F)
   constructor
   · rintro ⟨-, hu⟩
     obtain ⟨g, hg, g', -, hgg, hiff⟩ := h6 𝔠⁻¹ hci
-    obtain ⟨y, hy, hyg⟩ := GlobalTheory.T.hermitianPairing_onto_inverseIdeal_at_place D ψ hψ S A L o ζ M 𝔠 v hM hline hc g hg
+    obtain ⟨y, hy, hyg⟩ := _root_.GlobalTheory.SeeSaw.HzOnto.hz_onto D ψ hψ S A L o ζ M 𝔠 v hM hline hc g hg
     have h7 := ((hiff _).1 ((key y hy).1 (hu y hy))).2
     rw [hyg] at h7
     rw [← hgg a ha]
@@ -91,7 +91,7 @@ theorem incAdj_yZero_mem_latO_iff_gen : ∀ (D : D7) (ψ : AddChar (AF D.host.F)
       refine (congrArg (· ∈ idAt D (· = v)) e5).mpr ?_
       exact Ideal.mul_mem_right _ _ (Ideal.mul_mem_right _ _ (Ideal.mul_mem_left _ _ hcA))
     · have hmul := (h2 𝔠⁻¹ 𝔠⁻¹ hci hci a ha).2 (by rw [mul_inv_cancel₀ hci]; exact (h1 a).2 haI)
-      exact hmul _ (GlobalTheory.T.lineVector_pairing_mem_inverseIdealCompletion D ψ hψ S A L o ζ M 𝔠 v hM hline hc y hy)
+      exact hmul _ (_root_.GlobalTheory.LineDual.line_pair_mem_idV D ψ hψ S A L o ζ M 𝔠 v hM hline hc y hy)
 
 end GlobalTheory.LastGen
 
@@ -106,7 +106,7 @@ theorem incAdj_yBF_mem_latO_iff : OnStd fun {D} _ _ {sc} {G} W F => ∀ ρ (h : 
   exact GlobalTheory.LastGen.incAdj_yZero_mem_latO_iff_gen D W.ψ hψ _ _ _ _ _ (F.oB ρ h) (F.ζ (ρ + 1)) ρ (F.dJ ρ h) (lat0 F ρ h) (G.Λ (.grid (2 * ρ + 1) 0))
     (G.Λ (.core (2 * ρ + 1)))
     (fun i => FractionalIdeal.spanSingleton _ ((-D.host.xi0) ^ (i + 1))⁻¹ * (G.pl.stA sc ^ (2 * ρ - i) * (G.pl.stAbar sc ^ (i + 1))⁻¹))
-    _ v (I.2.1 ρ h).1 hsdJ ⟨((I.2.1 ρ h).2.1 v).2, fun i b hb => GlobalTheory.T.staircase_lattice_isotropic_line_ideal_iff D hoff T L μ0 hL sc G W M hM F hF ρ h v i b hb⟩
+    _ v (I.2.1 ρ h).1 hsdJ ⟨((I.2.1 ρ h).2.1 v).2, fun i b hb => _root_.GlobalTheory.StairLine.colMul_dJ_mem_iff D hoff T L μ0 hL sc G W M hM F hF ρ h v i b hb⟩
     (_root_.GlobalTheory.ZLineIdeal.bessel_core_lattice_meets_line_of_z_ideal D hoff T L μ0 hL sc G W M hM F hF ρ h v) hc0 hb0 hid hρ a ha
 
 end GlobalTheory.AscFin

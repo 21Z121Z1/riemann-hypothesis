@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CubeLineBundleAdjointIffHermFormAdjointStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CubeLineBundleAdjointIffHermFormAdjoint
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.AppellHumbertUniformisationRiemannForm
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SymplecticTorsionSystemIsGeometricBasis
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUniqueIsMonHomOfLinearMapLatticeAnyDim
@@ -115,7 +115,7 @@ theorem thetaObject_of_lattice :
     refine obbuild_adj Hm _ hspan _ _ ?_
     rintro _ ⟨x, rfl⟩ _ ⟨y, rfl⟩
     rw [hF, hF, him, him, hadj]
-  have hiso := (GlobalTheory.T.cubeLineBundle_adjoint_iff_hermForm_adjoint h1 h2 h3 h4 P u Hm χ _ _ _ _ hAH (hact w).1 (hact w').1 (hact w).2 (hact w').2).2 hadjH
+  have hiso := (_root_.GlobalTheory.HermAdjoint.lbIso_cubeLB_iff_hermForm h1 h2 h3 h4 P u Hm χ _ _ _ _ hAH (hact w).1 (hact w').1 (hact w).2 (hact w').2).2 hadjH
   obtain ⟨m1, m2, m3, m4, m5, -, m7, m8⟩ := _root_.GlobalTheory.PrimNormPol.normalised_polarisation h1 h3 ℂ P _ _ (hact w).1 (hact w').1 hmul hiso _ rfl
   obtain ⟨Ef, hEf, -⟩ := _root_.GlobalTheory.AnyAppellHumbert.isAH_properties h1 h2 h3 h4 P u Hm χ hAH
   obtain ⟨u₁, χ₁, hex, hΛ₁, hAH₁, hχ₁⟩ := _root_.GlobalTheory.PulledBiextFrame.exists_appellHumbert_frame h1 h2 h3 h4 P u Hm χ Ef (act w) (F w) (F w') hAH hEf

@@ -3,7 +3,7 @@ import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.ThetaI
 import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasWeil
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftEisensteinLevelSubgroup
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TsumMeas
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeisenbergCharacterBilinearLawsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeisenbergCharacterBilinearLaws
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeisenbergCharacterIntegralVanishesStatement
 
 noncomputable section
@@ -50,7 +50,7 @@ theorem parseval {D : D7} {ρ p : ℕ} (m : Meas D ρ p) (ψ : AddChar (AF D.hos
         conj (∑' ξ : Matrix (Fin ρ) (Fin p) D.host.E, chv ψ b₀ x (rt ξ) * b ξ) ∂m.μ =
       ∑' η : Matrix (Fin ρ) (Fin p) D.host.E, a η * conj (b η) := by
   classical
-  obtain ⟨-, hadd, hnorm, hneg, -, hcont⟩ := GlobalTheory.T.heisenberg_character_bilinear_laws (p := p) ψ hψ b₀
+  obtain ⟨-, hadd, hnorm, hneg, -, hcont⟩ := _root_.GlobalTheory.CompanionTheory.FJE.chv_facts (p := p) ψ hψ b₀
   haveI : BorelSpace (Mx D ρ p) := ⟨rfl⟩
   haveI : Countable (Matrix (Fin ρ) (Fin p) D.host.E) :=
     inferInstanceAs (Countable (Fin ρ → Fin p → D.host.E))

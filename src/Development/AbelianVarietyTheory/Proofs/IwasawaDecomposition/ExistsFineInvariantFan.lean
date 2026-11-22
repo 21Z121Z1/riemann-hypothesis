@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsEqAddOfRedVEq
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasPolyhedralCoverBalancedFormsCMFieldStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasPolyhedralCoverBalancedFormsCMField
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DominatesLinearFormsOnBalancedFormsCm
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolarisationBaseFunctionProperties
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFiniteRationalPolyhedralCellsUptoAut
@@ -26,7 +26,7 @@ theorem exists_fine_invariant_fan {E : Type} [Field E] [NumberField E] [IsCMFiel
   have hpoly : IsPolyFan H.bar q (baseFun (𝓞 E) (fineDen g (𝒩.image (· - 1))) φs (𝒩.image (· - 1))) := by
     intro X _ _ _ _ hX
     obtain ⟨h1, h2, h3, h4⟩ := _root_.GlobalTheory.PolFan.baseFun_props E H g q φs (𝒩.image (· - 1)) X hφ hq hX
-    exact ⟨h1, h2, h3, h4, _root_.GlobalTheory.PolCell.exists_cells E H g q φs (𝒩.image (· - 1)) X hφ hq hX (GlobalTheory.T.hasPolyhedralCover_balancedForms_CMField E H X)⟩
+    exact ⟨h1, h2, h3, h4, _root_.GlobalTheory.PolCell.exists_cells E H g q φs (𝒩.image (· - 1)) X hφ hq hX (_root_.GlobalTheory.RedTh.hasRedCover E H X)⟩
   have htw : IsTwInv H (baseFun (𝓞 E) (fineDen g (𝒩.image (· - 1))) φs (𝒩.image (· - 1))) := by
     intro σ _ n B
     exact baseFun_twist _ _ _ σ n B

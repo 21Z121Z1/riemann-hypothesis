@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundaryEffectiveUp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegrallyClosedOfIsEtaleTowerOverNormalLocal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsQuotientLastCoordinateEtaleTowerNormalLoca
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleTowerTrBasisAppendCoordinates
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DvrPlaceDiscKaehlerWedgePermNegStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DvrPlaceDiscKaehlerWedgePermNeg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KltOfKltRestrict
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RingEquivTransportsVarietyPairDataStatement
 open CategoryTheory AlgebraicGeometry TopologicalSpace
@@ -32,7 +32,7 @@ theorem klt_comp_equiv {k L : Type} [Field k] [CharZero k] [Field L] (c : k →+
     rw [hs]
     rcases Int.units_eq_one_or (Equiv.Perm.sign σ) with h | h <;> simp [h]
   have hd : ∀ E : Place c, E.disc (dForm c (y ∘ σ)) D = E.disc (dForm c y) D :=
-    fun E => (GlobalTheory.T.dvrPlace_disc_kaehlerWedge_perm_neg c m y σ E D).1
+    fun E => (_root_.GlobalTheory.FieldPair.disc_dForm_perm_neg c m y σ E D).1
   constructor
   · rintro ⟨h1, h2, h3⟩
     exact ⟨hne.1 h1, h2, fun E hE => hd E ▸ h3 E hE⟩
@@ -50,7 +50,7 @@ theorem effAt_comp_equiv {k L : Type} [Field k] [CharZero k] [Field L] (c : k �
     rw [hs]
     rcases Int.units_eq_one_or (Equiv.Perm.sign σ) with h | h <;> simp [h]
   have hd : ∀ E : Place c, E.disc (dForm c (y ∘ σ)) D = E.disc (dForm c y) D :=
-    fun E => (GlobalTheory.T.dvrPlace_disc_kaehlerWedge_perm_neg c m y σ E D).1
+    fun E => (_root_.GlobalTheory.FieldPair.disc_dForm_perm_neg c m y σ E D).1
   constructor
   · rintro ⟨h1, h2, h3⟩
     exact ⟨hne.1 h1, h2, fun E hE => hd E ▸ h3 E hE⟩

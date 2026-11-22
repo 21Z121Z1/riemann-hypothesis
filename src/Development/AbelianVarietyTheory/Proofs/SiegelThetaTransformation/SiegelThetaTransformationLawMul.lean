@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IMemSiegel
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SymplecticSiegelActionMemUpperHalfSpaceAndCocyclStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SymplecticSiegelActionMemUpperHalfSpaceAndCocycl
 
 open Matrix Complex GlobalTheory.SW
 open scoped ComplexConjugate Real
@@ -86,9 +86,9 @@ open GlobalTheory.SW.TransComp in
 
 theorem GlobalTheory.SW.transS_comp : ∀ (κ ι : Type) [Fintype κ] [Fintype ι] [DecidableEq ι] (σ σ' : Matrix (ι ⊕ ι) (ι ⊕ ι) ℚ), σ ∈ Matrix.symplecticGroup ι ℚ → σ' ∈ Matrix.symplecticGroup ι ℚ → ∀ φ ψ χ : Matrix κ ι ℚ → ℂ, TransS σ φ ψ → TransS σ' ψ χ → TransS (σ' * σ) φ χ := by
   intro κ ι _ _ _ σ σ' hσ hσ' φ ψ χ h1 h2 τ hτ ζ
-  obtain ⟨hd, hmem, -, -, hcomp⟩ := GlobalTheory.T.symplecticSiegelAction_mem_upperHalfSpace_and_cocycle ι σ hσ τ hτ
+  obtain ⟨hd, hmem, -, -, hcomp⟩ := _root_.GlobalTheory.SiegelAction.symplectic_action ι σ hσ τ hτ
   obtain ⟨hden, hact⟩ := hcomp σ' hσ'
-  have hd' := (GlobalTheory.T.symplecticSiegelAction_mem_upperHalfSpace_and_cocycle ι σ' hσ' _ hmem).1
+  have hd' := (_root_.GlobalTheory.SiegelAction.symplectic_action ι σ' hσ' _ hmem).1
   rw [hden, hact]
 
   have hk := key hσ hτ.1 hd hmem.1

@@ -31,7 +31,7 @@ theorem exists_thV_eqF_k : ∀ (F E : Type) [Field F] [NumberField F] [Field E] 
   intro F E _ _ _ _ _ σ B hB nS nT JS JT hJS hJT ξ₀ hξ hσξ hstd N e he hrat f hf
   have hR : IsTotallyReal F := hB.cm.1
   have hψ : IsCharAF F B.ψ := hstd.1
-  obtain ⟨hc, hcs, hfin, hinf⟩ := GlobalTheory.T.adelicLinearCoordinates_continuous_finite_real_points F E nS nT N e
+  obtain ⟨hc, hcs, hfin, hinf⟩ := _root_.GlobalTheory.AdelicCoordF.coord F E nS nT N e
   obtain ⟨lam, ν, hC⟩ := GlobalTheory.SWQ.ctx_exists F hR B.ψ hψ N (half F N) half_ne_zero
   obtain ⟨-, -, -, ⟨K, hK, hKc⟩, 𝓓, -, hD, h1⟩ := GlobalTheory.SWQ.rat_lattice_fundamentalDomain F N ν hC.2.2.2.1
   have hsymm : ∀ (u : VA F N) (g : WOF F E nS nT → ℂ),
@@ -109,7 +109,7 @@ theorem exists_thV_eqF_k : ∀ (F E : Type) [Field F] [NumberField F] [Field E] 
     _root_.GlobalTheory.LevelSchwartz.mem_schA_of_level F N _ hl hs (_root_.GlobalTheory.ThetaTransform.schwartz_invV_realTranslate F N B.ψ lam ν hC 𝓓 hD h1 𝒱 hV hder
       (_root_.GlobalTheory.InvDecay.invV_decay F N B.ψ lam ν hC 𝓓 hD h1 𝒱 (fun g hg => (hV g hg).2) hder) _ hmem)
   refine ⟨_, hS, ?_⟩
-  rw [_root_.GlobalTheory.ThetaTransform.thV_invV_eq F N B.ψ lam ν hC 𝓓 hD h1 _ (hV _ hmem).1 (hV _ hmem).2.1 (GlobalTheory.T.adelicRapidDecay_of_mem_adelicSchwartzSpace F N _ hS)]
+  rw [_root_.GlobalTheory.ThetaTransform.thV_invV_eq F N B.ψ lam ν hC 𝓓 hD h1 _ (hV _ hmem).1 (hV _ hmem).2.1 (_root_.GlobalTheory.SchwartzDecay.decay_of_mem_schA F N _ hS)]
   funext w
   simp
 end GlobalTheory.ThetaOntoF

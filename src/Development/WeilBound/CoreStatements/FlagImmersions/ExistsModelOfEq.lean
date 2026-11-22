@@ -6,7 +6,8 @@ import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.InteriorPointPolarised
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ContDiffUncentre
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GramMatrixChangeFrame
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.InteriorPointLatticeDataStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.InteriorPointLatticeData
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FibreLatticeLinearEquiv
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.IsPshLocallyIntegrableStatement
@@ -253,7 +254,7 @@ theorem frameVals : FrameVals := by
     have hsc := PhMuFree.val_eig 𝔐 𝔐.tie.gen h1 s a w hw (hbs i) (hv i)
     exact SheetPot.eig_of_isDiff hpb u (𝔐.t.act.act a) (R.B a) (fun p => hact a p) (hv i).isTanAt
       (c := σ s a) (by rw [← hr]; exact hsc) e₁ d₁
-  obtain ⟨g', Λ', _, _, R', x', hf', -, hrk⟩ := GlobalTheory.T.interior_point_lattice_data hG.2.2.2.2.1 E H D l Xo c Y ∅ Ω K J y 𝔐 z h1 hz hG _ v
+  obtain ⟨g', Λ', _, _, R', x', hf', -, hrk⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.FibreEx.exists_riemLat_of_interior hG.2.2.2.2.1 E H D l Xo c Y ∅ Ω K J y 𝔐 z h1 hz hG _ v
     fun i => (hv i).isTanAt
   obtain ⟨φ, -, -, hφ, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.FibreUnique.exists_linearEquiv_of_fibreLatVec E H 𝔐.X 𝔐.t z g g' Λ Λ' R R' _ x x' v hf hf'
   refine ⟨hli, ?_, hgram, hpos⟩

@@ -3,10 +3,10 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DblApply
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.WeilSiegelFormulaUnitary
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IntegrandPeriodic
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrameOfFst
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SiegelWeilDoublingProductRationalTranslateEqFramStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SiegelWeilDoublingProductRationalTranslateEqFram
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegralHermitianAdjointCovolOnePeriodicEq
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsDoubledLagrangianOfRationalUnitaryFrameStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DoubledLagrangianEqIffSiegelParabolicCosetStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsDoubledLagrangianOfRationalUnitaryFrame
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DoubledLagrangianEqIffSiegelParabolicCoset
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsRationalUnitaryDoubledLagrangianFrameWitt
 
 noncomputable section
@@ -39,7 +39,7 @@ theorem integral_eq {ψ : AddChar (AF D.host.F) ℂ} {V W : HSp D} {χV χW : (A
     ∫ y in 𝓖', GlobalTheory.SWPairProof.dbl V W f₁ f₂ (actO (GlobalTheory.Doubling.dblSp W) V γ⁻¹ 1 (GlobalTheory.SiegelFormula.lagr W V y)) ∂ν =
       lagTerm μ 𝓕 (frameOf W g₀) f₁ f₂ := by
   have hψ : ∀ x, ‖ψ x‖ = 1 := hS.weil.std.1.2.1
-  simp_rw [GlobalTheory.T.siegelWeilDoublingProduct_rational_translate_eq_frame D V W f₁ f₂ γ g₀ hγ]
+  simp_rw [_root_.GlobalTheory.SWLagTerms.dbl_actO_lagr D V W f₁ f₂ γ g₀ hγ]
   unfold lagTerm
   exact _root_.GlobalTheory.SWChangeVar.integral_adjO_eq D V W ν 𝓖' μ 𝓕 hν hS.covol
     (fun u => f₁ (ratMul (frameOf W g₀).1 u) * star (f₂ (ratMul (frameOf W g₀).2 u)))
@@ -56,11 +56,11 @@ theorem classes (W : HSp D) :
     fun γ => rat_of_mem (GlobalTheory.Doubling.dblSp W) γ γ.2
   choose g₀ hg₀ using hg
   have hY : ∀ γ : GQ (GlobalTheory.Doubling.dblSp W), ∃ Y : Lag W, IsLagFrame W Y (frameOf W (g₀ γ)) :=
-    fun γ => GlobalTheory.T.exists_doubledLagrangian_of_rational_unitary_frame D W γ (g₀ γ) (hg₀ γ)
+    fun γ => _root_.GlobalTheory.SWLagTerms.LagrangianFrames.exists_lag_isLagFrame_frameOf D W γ (g₀ γ) (hg₀ γ)
   choose Y hY using hY
   have key : ∀ a b : GQ (GlobalTheory.Doubling.dblSp W), Y a = Y b ↔
       ((b : GA D (GlobalTheory.Doubling.dblSp W)) * (a : GA D (GlobalTheory.Doubling.dblSp W))⁻¹ ∈ GlobalTheory.Doubling.siegel W) :=
-    fun a b => GlobalTheory.T.doubledLagrangian_eq_iff_siegelParabolic_coset D W a b (g₀ a) (g₀ b) (hg₀ a) (hg₀ b) (Y a) (Y b) (hY a) (hY b)
+    fun a b => _root_.GlobalTheory.SWLagSame.sameClass D W a b (g₀ a) (g₀ b) (hg₀ a) (hg₀ b) (Y a) (Y b) (hY a) (hY b)
   let f : GlobalTheory.Eis.Cosets (GlobalTheory.Doubling.siegel W) (GQ (GlobalTheory.Doubling.dblSp W)) → Lag W :=
     Quotient.lift Y (fun a b hab => (key a b).2 (by
       have := QuotientGroup.rightRel_apply.1 hab
@@ -82,7 +82,7 @@ theorem classes (W : HSp D) :
     obtain ⟨γ, hγQ, g₁, hg₁, hZ⟩ := _root_.GlobalTheory.SWLagTerms.exists_rat_unitary_lagFrame D W Z
     refine ⟨Quotient.mk _ ⟨γ, hγQ⟩, ?_⟩
     rw [hf]
-    have := (GlobalTheory.T.doubledLagrangian_eq_iff_siegelParabolic_coset D W γ γ (g₀ ⟨γ, hγQ⟩) g₁ (hg₀ ⟨γ, hγQ⟩) hg₁ (Y ⟨γ, hγQ⟩) Z (hY ⟨γ, hγQ⟩) hZ).2
+    have := (_root_.GlobalTheory.SWLagSame.sameClass D W γ γ (g₀ ⟨γ, hγQ⟩) g₁ (hg₀ ⟨γ, hγQ⟩) hg₁ (Y ⟨γ, hγQ⟩) Z (hY ⟨γ, hγQ⟩) hZ).2
     exact this (by simpa using (GlobalTheory.Doubling.siegel W).one_mem)
   refine ⟨Equiv.ofBijective f ⟨inj, surj⟩, fun q => ⟨g₀ q.out, hg₀ q.out, ?_⟩⟩
   show IsLagFrame W (f q) _

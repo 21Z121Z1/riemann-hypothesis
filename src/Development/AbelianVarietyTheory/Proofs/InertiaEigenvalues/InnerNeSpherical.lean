@@ -8,11 +8,11 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EulerOperatorI
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TrivialLevelCosetRepresentativeMemLevel
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCovolumeOneMeasureHomSpaceOfLaws
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FixedVectorCoefficientLeftInvariantLevelGroup
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasSumInnerProductFinsuppLocalCosetFamiliesStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasSumInnerProductFinsuppLocalCosetFamilies
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalCoefficientNontrivialCosetsSummableBound
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RightTranslateOperatorMulLocalOperatorHasSum
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RightTranslateOperatorFamilyProdUpdateStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalOperatorScalarOnSphericalEigenspaceStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RightTranslateOperatorFamilyProdUpdate
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalOperatorScalarOnSphericalEigenspace
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix
 open Formalism.L2.Theta Formalism.L2.DIV Formalism.L2.Indef
 open Formalism.IndefR.Lev Formalism.IndefR.Mult Formalism.IndefR.Datum Formalism.IndefR.Cx Formalism.IndefR.Links
@@ -68,13 +68,13 @@ theorem innerNe_main {D : D7} {G : Type} [Group G] [Fintype G] {Pl0 T : Type} {A
   have hcov := @_root_.GlobalTheory.RawLift.Covol.exists_isCovolOne_of_laws D G _ _ Pl0 T A Ks _ _ _ R F hL i
   obtain ⟨μ, 𝓕, hμ⟩ := hcov
   have hleft := @_root_.GlobalTheory.RawLift.CoefLeft.coef_lev_mul D G _ _ Pl0 T A Ks _ _ _ R F hL i t hLF μ 𝓕 hμ
-  have hfa := @GlobalTheory.T.hasSum_innerProduct_finsupp_localCosetFamilies D G _ _ Pl0 T A Ks _ _ _ R i t hLP hTL hFM hLF hVN hFS th hth μ 𝓕 hμ
+  have hfa := @_root_.GlobalTheory.RawLift.FamSum.hasSum_families D G _ _ Pl0 T A Ks _ _ _ R i t hLP hTL hFM hLF hVN hFS th hth μ 𝓕 hμ
   have hsm := @_root_.GlobalTheory.RawLift.Eu.acoef_small D G _ _ Pl0 T A Ks _ _ _ R i t hLS μ 𝓕 hμ
   obtain ⟨a, ha, hfam⟩ := hfa
   obtain ⟨s, hs, hs1, hsC⟩ := hsm
   have hconv := @_root_.GlobalTheory.RawLift.Eu.bop_mul_zop_hasSum D G _ _ Pl0 T A Ks _ _ _ R i t hLS hTL hLF μ 𝓕 hμ hleft
-  have hupd := @GlobalTheory.T.rightTranslateOperator_familyProd_update D G _ _ Pl0 T A Ks _ _ _ R i hTL
-  have heig := @GlobalTheory.T.localOperator_scalar_on_sphericalEigenspace D G _ _ Pl0 T A Ks _ _ _ R F hL i t hBS hLF hLS hLP hTL μ 𝓕 hμ hleft c
+  have hupd := @_root_.GlobalTheory.RawLift.Eu.bop_famProd_update D G _ _ Pl0 T A Ks _ _ _ R i hTL
+  have heig := @_root_.GlobalTheory.RawLift.Eig.zop_eigen D G _ _ Pl0 T A Ks _ _ _ R F hL i t hBS hLF hLS hLP hTL μ 𝓕 hμ hleft c
   have hUpd : ∀ v (f : ∀ v, Eu.LX R i v), {w | f w ≠ Eu.lx0 R i w}.Finite → f v = Eu.lx0 R i v →
       HasSum (fun x => Eu.acoef R i t μ 𝓕 v x • Eu.Bfam R i (Function.update f v x))
         (Eu.Bfam R i f * Eu.Zop R i t μ 𝓕 v) := by

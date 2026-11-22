@@ -3,11 +3,11 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsArchOne
 import Development.AbelianVarietyTheory.BlockTheory.PoincareCuspForms.SmallUnipotentElements
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LactMemDomOfIsom
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EmbedsInRegularRepresentationCopiesOfGroupDetermStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCuspFormIndependentTranslatesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCuspFormIndependentTranslates
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoLevelCuspFormsPullMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoLevelCuspFormsMulMemAddWeight
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoLevelCuspFormsRestrictHolInvariantStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCocyclePullbackRepresentationStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCocyclePullbackRepresentation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolynomialCHolInvariantMemNonZeroDivisors
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedPullbackPolynomialRightActionOfCocycleStatement
 
@@ -78,7 +78,7 @@ theorem GlobalTheory.CuspEmb.cusp_embReg : ∀ (E : Type) [Field E] [NumberField
   intro E _ _ _ r U C _ _ _ _ M ka ρ hρ ep c0 hR H hL
   classical
   haveI : Fintype U := Fintype.ofFinite U
-  obtain ⟨u0, hu0, hdet⟩ := GlobalTheory.T.exists_cuspForm_independent_translates E r H C (sub M H) hL (sOf M) (even_sOf M) (le_sOf M)
+  obtain ⟨u0, hu0, hdet⟩ := _root_.GlobalTheory.TranslatesDet.independentTranslates E r H C (sub M H) hL (sOf M) (even_sOf M) (le_sOf M)
   have hu0' : u0 ∈ M.SS (deMul M.Ψ r M.p0 (sOf M)) := hu0
   have hVHA : ∀ f ∈ M.cusp ka, f ∈ HA M := fun f hf => by
     refine (Submodule.span_le (p := Subalgebra.toSubmodule (HA M))).2 ?_ hf
@@ -88,7 +88,7 @@ theorem GlobalTheory.CuspEmb.cusp_embReg : ∀ (E : Type) [Field E] [NumberField
     refine (Submodule.span_le (p := Subalgebra.toSubmodule (HA M))).2 ?_ hf
     rintro _ ⟨F, hF, rfl⟩
     exact GlobalTheory.T.twoLevelCuspForms_restrict_holInvariant E r U C M _ F hF
-  obtain ⟨a, hcoc, hform⟩ := GlobalTheory.T.exists_cocycle_pullbackRepresentation E r U C M ka ρ hρ (fun f hf => (hVHA f hf).2)
+  obtain ⟨a, hcoc, hform⟩ := _root_.GlobalTheory.PullCocycle.exists_cocycle E r U C M ka ρ hρ (fun f hf => (hVHA f hf).2)
   obtain ⟨h1, hlaw⟩ := GlobalTheory.T.twistedPullbackPolynomial_rightAction_of_cocycle E r U C M a hcoc
   let act : U →* (Polynomial (HA M) →ₐ[ℂ] Polynomial (HA M)) :=
     { toFun := fun k => tw M (fun c => (a k⁻¹ c : ℂ)) k⁻¹

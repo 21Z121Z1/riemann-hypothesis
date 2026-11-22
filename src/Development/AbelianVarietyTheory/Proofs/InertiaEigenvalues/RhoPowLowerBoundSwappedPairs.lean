@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnitLemmaGroup
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LinearDescent
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DltEqZero
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteIntegralClosureOfSeparableInvolutionAlgebrStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteIntegralClosureOfSeparableInvolutionAlgebr
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsInjectiveTorusClassesOfIdempotentDecomposi
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CharpolyDvdPowOfAevalEqZero
 open GlobalTheory.UnitLemma GlobalTheory.UnitLemma.Desc Polynomial Filter Topology
@@ -70,7 +70,7 @@ theorem finite_rhoSet (K : UQ) (B : InvAlg K) (hsep : B.P.Separable) (a : K.O) (
   classical
   set R : Submodule K.O B.A := (integralClosure K.O B.A).toSubmodule with hR
   have hRfg : R.FG := by
-    have := GlobalTheory.T.finite_integralClosure_of_separable_involution_algebra K B hsep
+    have := _root_.GlobalTheory.UnitLemma.IntegralFinite.finite_integralClosure K B hsep
     have h2 := Module.Finite.fg_top (R := K.O) (M := integralClosure K.O B.A)
     have h3 := h2.map (integralClosure K.O B.A).val.toLinearMap
     convert h3 using 1

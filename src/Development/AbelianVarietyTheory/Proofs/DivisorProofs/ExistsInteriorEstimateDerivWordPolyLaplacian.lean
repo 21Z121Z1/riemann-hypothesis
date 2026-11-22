@@ -5,7 +5,7 @@ import GroundTheory.AutomorphicForms.HarishChandraInvariance.Compact
 import GroundTheory.AutomorphicForms.DixmierMalliavin
 import GroundTheory.AutomorphicForms.GKModules.ParametricIntegral
 import Development.AbelianVarietyTheory.Definitions.Divisors.ZeroMemSolSet
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeftInvariantVectorFieldsExpCoordsSmoothFrameStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeftInvariantVectorFieldsExpCoordsSmoothFrame
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EllipticWeakSolWordDerivLeConstMulSup
 import Formalism.UnipotentAdelicQuotients.EllRegCheck
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEllipticWeakSolOfPolynomialLaplacianZeroStatement
@@ -32,7 +32,7 @@ theorem foldr_rightDeriv_leftTranslate {𝔸 : Type} [NormedRing 𝔸] [NormedAl
 theorem interior_word_bound : ∀ (𝔸 : Type) [NormedRing 𝔸] [NormedAlgebra ℝ 𝔸] [CompleteSpace 𝔸] [FiniteDimensional ℝ 𝔸] (G : Subgroup 𝔸ˣ) (𝔤 : Submodule ℝ 𝔸) (h : IsExpLieAlgebra G 𝔤) (d : ℕ) (b : Module.Basis (Fin d) ℝ 𝔤) (P : Polynomial ℂ), P.Monic → ∃ Kc : Set G, IsCompact Kc ∧ ∀ l : List 𝔤, ∃ C : ℝ, 0 ≤ C ∧ ∀ f : h.smoothFuns (F := ℂ), Polynomial.aeval (∑ i, h.rightDerivEnd (F := ℂ) (b i) * h.rightDerivEnd (F := ℂ) (b i)) P f = 0 → ∀ (g : G) (M : ℝ), (∀ y ∈ Kc, ‖(f : G → ℂ) (g * y)‖ ≤ M) → ‖l.foldr h.rightDeriv (f : G → ℂ) g‖ ≤ C * M := by
   intro 𝔸 _ _ _ _ G 𝔤 h d b P hP
   obtain ⟨r₁, hr₁, m, a, ha, hell, hsol⟩ := GlobalTheory.T.exists_elliptic_weakSol_of_polynomial_laplacian_zero 𝔸 G 𝔤 h d b P hP
-  obtain ⟨r₂, hr₂, c, hc⟩ := GlobalTheory.T.leftInvariantVectorFields_expCoords_smooth_frame 𝔸 G 𝔤 h d b
+  obtain ⟨r₂, hr₂, c, hc⟩ := _root_.GlobalTheory.ExpCoordFrame.leftInvariant_frame 𝔸 G 𝔤 h d b
   refine ⟨(fun x : E d => h.expG (coordEquiv b x)) '' Metric.closedBall 0 r₁,
     (isCompact_closedBall 0 r₁).image (h.continuous_expG.comp (coordEquiv b).continuous), ?_⟩
   intro l

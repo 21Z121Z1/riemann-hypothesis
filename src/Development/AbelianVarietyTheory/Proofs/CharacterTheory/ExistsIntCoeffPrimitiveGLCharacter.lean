@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.AbByPOfCo
 import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.InvariantSubspaceMobiusInverseRecEqOfFinrankLt
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.IsCharacterOverSubfieldRestrictClassFunctionOne
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.PrimitiveClassFunctionExpansionRootSumsStatement
-import Development.AbelianVarietyTheory.Proofs.CharacterTheory.GeneralLinearFunctionExtendZeroEndPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.CharacterTheory.GeneralLinearFunctionExtendZeroEndProperties
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.RootPowerSumCharpolyMemVirtualCharactersGLStatement
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.VirtualCharacterInnerEqIntMulCard
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.InvariantSubspaceMobiusInverseOneProdIcoStatement
@@ -22,7 +22,7 @@ theorem exists_int_coeff_of_isPrimitive (F : Type) [Field F] [Finite F] (θ : Al
         ∏ i ∈ Finset.Ico 1 d, (1 - (Nat.card F : ℂ) ^ i) := by
   classical
   obtain ⟨-, hconj, -⟩ := _root_.GlobalTheory.isChar_restrict_conj_one ℂ ℂ _ χ hχ
-  obtain ⟨hval, -, hip, hcls⟩ := GlobalTheory.T.generalLinearFunctionExtendZeroEnd_properties F d χ
+  obtain ⟨hval, -, hip, hcls⟩ := _root_.GlobalTheory.CuspGL.extZero_spec F d χ
   have hrank : Module.finrank F (Fin d → F) = d := Module.finrank_fin_fun F
   have hint : ∀ k : ℕ, ∃ m : ℤ, ipGL (extZero χ)
       (fun g : Module.End F (Fin d → F) => rootSum θ k (LinearMap.charpoly g)) = m * glCard F d := by

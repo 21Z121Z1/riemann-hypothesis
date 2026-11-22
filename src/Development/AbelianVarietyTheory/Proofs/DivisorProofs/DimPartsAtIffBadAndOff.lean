@@ -5,8 +5,11 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumWIffGoodFormsOrt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CompletelySplitPrimeHostPlaceProperties
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LevelHyperspecialTrivialCharacterSplitsOffPlaces
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrimeToPartFrob
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLabelsSemisimpleParameterGLFiniteFieldStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquarefreeMonicPolyLabelsSemisimpleParameterStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLabelsSemisimpleParameterGLFiniteField
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LabelsCharOne
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalCharacterFormula
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraSeriesLabelExistsUniqueGLn
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquarefreeMonicPolyLabelsSemisimpleParameter
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TameLabelsOfGenerator
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ParabolicCharacterEqProdSuperdiagonalSum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicShapeIntegralWeightGoodEmbedding
@@ -240,13 +243,13 @@ theorem TameTie.idemTie (hG : Green) {om : ∀ i : Fin 2, (ZMod (D.host.g i))ˣ 
     ((Set.ext_iff.1 (ser a s h hg k v).1) _).2 rfl
   have exa : ∀ s, ∃ a, Rel L a s := by
     intro s
-    choose x f hf using fun kv : (Σ k : Fin 2, D.nd.PlG k) => GlobalTheory.T.exists_labels_semisimple_parameter_GL_finiteField _ (L kv.1) _ (s ⟨kv.1, below kv.1 kv.2⟩)
+    choose x f hf using fun kv : (Σ k : Fin 2, D.nd.PlG k) => _root_.GlobalTheory.ParamLabel.exists_labels _ (L kv.1) _ (s ⟨kv.1, below kv.1 kv.2⟩)
     refine ⟨fun kv i => (f kv).coeff i, fun k v => ⟨x ⟨k, v⟩, ?_⟩⟩
     rw [Formalism.CyclotomicNorms.Sqf.monicOf_coeffs _ (hf ⟨k, v⟩).2.2.1 (_root_.GlobalTheory.ParamLabel.RootPolyFactor.rootPoly_factor _ _ _ _ _ (hf ⟨k, v⟩).2).1]
     exact hf ⟨k, v⟩
   have exs : ∀ a, D.ntypes.goodTuple (fun k v => Formalism.CyclotomicNorms.monicOf (a ⟨k, v⟩)) → ∃ s, Rel L a s := by
     intro a hg
-    choose s hs using fun k v => GlobalTheory.T.squarefree_monic_poly_labels_semisimple_parameter _ (L k) _ _ ((hg k).1.1 v).1 ((hg k).1.1 v).2.1 ((hg k).1.1 v).2.2 ((hg k).1.2.1 v)
+    choose s hs using fun k v => _root_.GlobalTheory.ParamExists.param_exists _ (L k) _ _ ((hg k).1.1 v).1 ((hg k).1.1 v).2.1 ((hg k).1.1 v).2.2 ((hg k).1.2.1 v)
     refine ⟨fun w => s w.1 ((Equiv.ofBijective _ (below_bijective w.1)).symm w.2), fun k v => ?_⟩
     have : (Equiv.ofBijective _ (below_bijective k)).symm (below k v) = v :=
       (Equiv.ofBijective _ (below_bijective k)).symm_apply_apply v

@@ -13,8 +13,8 @@ import Development.AbelianVarietyTheory.Counterexamples.PlaceInjectivity.PlaceIn
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDualFamilyOfIsLattice
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCompactAdele
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TopFacts
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsSchwartzBruhatIndicatorLocalLatticeCompletionStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EventuallyLocalLatticeCompletionEqCoordinateLattStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsSchwartzBruhatIndicatorLocalLatticeCompletion
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EventuallyLocalLatticeCompletionEqCoordinateLatt
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IndicatorCompletedLatticeEqFinprodLocal
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GaugeUnfold
 import Formalism.LocalToGlobal.GlobalTheory.GL5.Statement
@@ -33,8 +33,8 @@ import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SelfDualSumPa
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsFibreMeasureFamilyMapHomeomorph
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.FibreIntegralPiProdEqProdFibreIntegral
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsOrthogonalComplementUnitaryFrameOfMatrix
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsUnitarySignatureStabiliserCosetCutoffStatement
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.UnitaryQuotientIntegralProdOverPlacesStatement
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsUnitarySignatureStabiliserCosetCutoff
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.UnitaryQuotientIntegralProdOverPlaces
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.HermitianNormFibreLintegralNeZeroOfPos
 
 noncomputable section
@@ -210,9 +210,9 @@ theorem arch (hR3 : ActionCoordinates.RealPlaceMeasures) (c : CDHaar) (hσ : IsC
         ((hj g ρ).1.trans (hι ρ _).1.symm) ((hj g ρ).2.trans (hι ρ _).2.symm)
     have hfr : ∀ ρ, ActionCoordinates.IsPerpFrame (xr ρ) (Matrix.toLin' (C ρ)) (ι ρ) := fun ρ =>
       _root_.GlobalTheory.PerpFrameOfMatrix.isPerpFrame_of_matrix P Q P' Q' hM' (xr ρ) (by rw [hxq]; exact hb0) (C ρ) (hC ρ).1 (hC ρ).2 (ι ρ) (hι ρ)
-    choose u hu using fun ρ => GlobalTheory.T.exists_unitarySignatureStabiliserCosetCutoff c P Q P' Q' (xr ρ) (by rw [hxq]; exact hb0) _ (ι ρ) (hfr ρ)
+    choose u hu using fun ρ => _root_.GlobalTheory.StabiliserCutoff.exists_cutoff c P Q P' Q' (xr ρ) (by rw [hxq]; exact hb0) _ (ι ρ) (hfr ρ)
       ((hQ P Q b hb1 (xr ρ) (hxq ρ)).2.2 P' Q' _ _ (hfr ρ)).1
-    have h := GlobalTheory.T.unitaryQuotientIntegral_prod_over_places hQ c T P Q P' Q' b hb1 xr hxq _ ι hfr u hu j hjι ν hν fib hfb _ hφm
+    have h := _root_.GlobalTheory.RealQuotProd.quot_integral_prod hQ c T P Q P' Q' b hb1 xr hxq _ ι hfr u hu j hjι ν hν fib hfb _ hφm
     rw [Finset.prod_mul_distrib, Finset.prod_const, Finset.card_univ, hM] at h
     rw [← h]
     refine lintegral_congr fun s => Finset.prod_congr rfl fun ρ _ => ?_
@@ -353,7 +353,7 @@ theorem ratio_of_setting (hL5 : PlaceSplittingTypes.SelfDualLatticeDensity) (hR3
   let Φf : (Fin 1 → Fin W.rank → Af D.host.F ⊗[D.host.F] D.host.E) → ℂ :=
     {X | X 0 ∈ latHat D.host.F D.host.E (GlobalTheory.AdelicU.frameLat W : Set (Fin W.rank → D.host.E))}.indicator 1
   have hpure : IsPureFin b Φf Φv :=
-    ⟨GlobalTheory.T.isSchwartzBruhat_indicator_localLatticeCompletion _ _ _ _ hlat, (GlobalTheory.T.eventually_localLatticeCompletion_eq_coordinateLattice _ _ _ _ b _ hlat).mono fun v hv => by simp only [Φv, hv],
+    ⟨_root_.GlobalTheory.LatticeIndicator.isSB_indicator_latLoc _ _ _ _ hlat, (_root_.GlobalTheory.AdelicU.Cofinite.eventually_latLoc_eq_latV _ _ _ _ b _ hlat).mono fun v hv => by simp only [Φv, hv],
       _root_.GlobalTheory.AdelicU.indicator_latHat_eq_finprod _ _ _ _ hlat⟩
   have hsw := hSW _ _ _ hσ _ _ hJ hr β hβ0 _ b (LatticeTensorUnfolding.latTensor (L0c D W) Φi) Φi Φf Φv hΦi hpure
     (fun v Y => by by_cases h : Y 0 ∈ GlobalTheory.AdelicU.latLoc D.host.F (GlobalTheory.AdelicU.frameLat W) v <;> simp [Φv, h])

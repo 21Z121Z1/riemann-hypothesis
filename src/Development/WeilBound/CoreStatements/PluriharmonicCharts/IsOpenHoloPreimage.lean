@@ -5,7 +5,7 @@ import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverArithmeticFi
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverArithmeticEighth
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.TransPtBase
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SamePotBlock
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverArithmeticSecondStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverArithmeticSecond
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverFramesAtPoint
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
@@ -14,7 +14,7 @@ import Development.AutomorphicSpectrum.Proofs.MetricProofs.AevalNeZeroOfNotMem
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsValueAtOfTorus
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsBlkCover
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MinorIJMap
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockDiagonalMinorVanishingStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockDiagonalMinorVanishing
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagModelBaseProjectionPoints
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PtsOverPt
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PullbackPullback
@@ -163,7 +163,7 @@ theorem img_exact (Cv : FlagCover M' M) (z : (Σ k, ι' k) → ℂ) (F' : FrameD
     (hz : ∀ m' : ι' k', z ⟨k', m'⟩ = a * plk M' F' (basePart M'.blk z) p.2 ⟨k', m'⟩ (h p.1)) (m : ι k) :
     img Cv F' F z ⟨k, m⟩ = a * plk M F (basePart M'.blk z ∘ Cv.v) p.2 ⟨k, m⟩
       (Cv.trans F' F (basePart M'.blk z) p.1 * h p.1) := by
-  have hCB := GlobalTheory.T.block_diagonal_minor_vanishing ℂ N j p.2 M.j_le
+  have hCB := _root_.GlobalTheory.CompanionTheory.Ar.PB.MinorCalc.minors_main ℂ N j p.2 M.j_le
   have hoff : ∀ J, ¬ IsStepRows N j p.2 J → minorIJ (h p.1) J (stepCols N j p.2) = 0 := fun J hJ =>
     (hCB.2.1 (h p.1) J (hh p.1) hJ).resolve_right (stepCols_ne_empty M.j_le)
   have hdelta : ∀ I' J, IsStepRows N j p.2 I' → IsStepRows N j p.2 J →
@@ -337,7 +337,7 @@ theorem pot_loc (CR : CovReal FA Cv) (hy : IsArithVar (mCoordIdeal y) (d + 2))
   have horb : ∀ u ∈ W ∩ Z ⁻¹' V, SameOrbit (f (Z u)) (Y u) := fun u hu => by
     obtain ⟨g1, g2, e1⟩ := hs _ ⟨hu.2, hm u hu.1⟩
     rw [e1]
-    exact GlobalTheory.T.flag_cover_arithmetic_second K ι Φ y Ψ N j M K' ι' Φ' y' M' Cv d hy hy' _ (hm u hu.1) _ _
+    exact _root_.GlobalTheory.CompanionTheory.Ar.PB.CovMap.isImg_unique K ι Φ y Ψ N j M K' ι' Φ' y' M' Cv d hy hy' _ (hm u hu.1) _ _
       (img_spec K ι Φ y Ψ N j M K' ι' Φ' y' M' Cv _ F' F (hm u hu.1) hF' hF g1 g2).2 (hi u hu.1)
   choose m hm0 using hY0 x hx
   have hO₂ : IsOpen (W ∩ Y ⁻¹' {w | ∀ k, w ⟨k, m k⟩ ≠ 0}) := isOpen_holo_preimage hW hY (by

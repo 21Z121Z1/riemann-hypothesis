@@ -25,7 +25,7 @@ theorem embedding_of_exponent : ∀ (k : Type) [Field k] [ValuativeRel k] [Topol
     congr 1
     funext a
     exact GlobalTheory.CompanionTheory.PinLift.gl_one_comm _ _
-  obtain ⟨hanti, hpow⟩ := GlobalTheory.T.deep_level_subgroups_filtration (k := k) n hd1
+  obtain ⟨hanti, hpow⟩ := _root_.GlobalTheory.CompanionTheory.KmPow.KM_antitone_and_pow (k := k) n hd1
   have hsm : ∀ w : Jacquet π (unipRad k (stdBlocks (fun _ : Fin n => 1) hd1)), ∃ m,
       ∀ u ∈ PositivityTheory.Lbc.KM k n (Zls.Km k n (m + 1)) (fun _ : Fin n => 1) hd1,
         jac (stdBlocks (fun _ : Fin n => 1) hd1) π u w = w := by

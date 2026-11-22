@@ -3,11 +3,11 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PadicContinuousEvaluationExistsUniqueSubstNatura
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompatiblePDivGroupLevelCoordinatesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaximalIdealPowNatCastDvdFiniteIntegersAlgebra
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAdicCompleteSpanNatCastFiniteProjectiveAlgebraStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAdicCompleteSpanNatCastFiniteProjectiveAlgebra
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AevalSurjectiveOfCotangentSpanTop
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.FinrankOfIsStandardSmoothOfRelativeDimension
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInvariantDerivationsQuotientBialgebraStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffAnnihilatedOfAevalMemKerPowStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffAnnihilatedOfAevalMemKerPow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTruncationCongrOfPadicContinuousEvalEqZero
 
 set_option autoImplicit false
@@ -31,7 +31,7 @@ theorem GlobalTheory.PDivGroup.exists_coords_of_isConn : ∀ (p : ℕ) [Fact p.P
     haveI := hG n
     exact _root_.GlobalTheory.maxIdeal_pow_dvd_natCast_of_integers p hp0 C v O hv (G.A n) (x n i) ((IsLocalRing.mem_maximalIdeal _).2 (hmem n i))
   have hex : ∀ n, ∃ E : MvPowerSeries (Fin d) O →ₐ[O] G.A n, IsEval p (x n) E := fun n => by
-    haveI := GlobalTheory.T.isAdicComplete_span_natCast_finite_projective_algebra p O (G.A n)
+    haveI := _root_.GlobalTheory.FinProjComplete.isAdicComplete_span_natCast_of_finite_projective p O (G.A n)
     exact ((_root_.GlobalTheory.CEval.continuous_eval p O (G.A n) (Fin d) (x n) (hnil n)).1).exists
   choose ev hev using hex
   have hpoly : ∀ n (P : MvPolynomial (Fin d) O),
@@ -48,7 +48,7 @@ theorem GlobalTheory.PDivGroup.exists_coords_of_isConn : ∀ (p : ℕ) [Fact p.P
       (fun i => by rw [Bialgebra.counitAlgHom_apply]; exact hcou n i)
       (fun i => by simpa [map_natCast] using hnil n i) (hspan n) a
     exact ⟨P, (hpoly n P).trans hP⟩
-  · obtain ⟨K, hK0, hK⟩ := GlobalTheory.T.coeff_annihilated_of_aeval_mem_ker_pow d N
+  · obtain ⟨K, hK0, hK⟩ := _root_.GlobalTheory.TriangularityLowCoeff.exists_mul_coeff_eq_zero d N
     obtain ⟨e, u, hu, hKu⟩ := Nat.exists_eq_pow_mul_and_not_dvd hK0.ne' p (Fact.out : p.Prime).ne_one
     refine ⟨m + e, fun f hf α hα => ?_⟩
     obtain ⟨P, hPdeg, hPco, hPmem⟩ := _root_.GlobalTheory.trunc_dec p O (G.A (m + e)) d (x (m + e)) (ev (m + e)) (hev _) (m + e) N f hf

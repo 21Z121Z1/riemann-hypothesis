@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GermRatioAgreeSelf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsThetaImmersionTorusExtensionProjective
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsLeadOfUnif
 import Development.AbelianVarietyTheory.Definitions.Uniformization.SeriesFrame
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralThetaFamilyPrescribedLeadingTermStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralThetaFamilyPrescribedLeadingTerm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsExpandsAtSectionUniformised
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ThickenedPointToTorusExtensionGenerator
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedFibreSectionValueEqUnitMulFourierTerm
@@ -54,7 +54,7 @@ theorem eq_of_germRatioAgree : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocal
   intro R _ _ _ hB D A G _ _ hG U
   obtain ⟨Y⟩ : Nonempty (Ext D.toPre) := inferInstance
   obtain ⟨S, k₁, hk₁⟩ := _root_.GlobalTheory.Mum.ThetaImm.exists_immersion R hB D Y
-  choose k₀f hk₀f using (GlobalTheory.T.exists_integralThetaFamily_prescribed_leadingTerm R hB D).1
+  choose k₀f hk₀f using (_root_.GlobalTheory.ThFam.exists_intFam_lead R hB D).1
   refine ⟨max 3 (max k₁ (S.sup k₀f)), le_max_left _ _, ?_⟩
   intro e k hk Z u u' hu s₀ i i'' z h
   have hk3 : 3 ≤ k := le_trans (le_max_left _ _) hk

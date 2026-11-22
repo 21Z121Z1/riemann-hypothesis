@@ -5,19 +5,19 @@ import Development.AbelianVarietyTheory.Definitions.Degenerations.CompanionTheor
 import Development.AbelianVarietyTheory.Statements.SemistableTorsion.UTorsSt
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsHomOpenPart
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ImmByOfSpans
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsProjBundleClosureStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsProjBundleClosure
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsInvertibleMatrixChangeOfSpanEq
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.IsIntegralOfSmoothFieldOfConnectedSpace
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AbProj
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SemiabelianSchemes.PrecompleteBases.PsbLb
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsHomSpecOfLeRingOn
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFunctionFieldOfIsDominantStatement
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DivIffMemNonzeroLocusStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFunctionFieldOfIsDominant
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DivIffMemNonzeroLocus
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ClosedImmersionBaseChangeProjChart
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIsLBGenTrivOfRatiosStatement
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.GenericTrivialisationSectionAndPullbackStatement
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsClosedImmersionOfCoordinateDivisibilityStatement
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIsPullbackOfProjChartStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIsLBGenTrivOfRatios
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.GenericTrivialisationSectionAndPullback
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsClosedImmersionOfCoordinateDivisibility
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIsPullbackOfProjChart
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.HomogeneousCoordinatesMulVecOfGenericValueStatement
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry
 open scoped CategoryTheory.Obj
@@ -175,7 +175,7 @@ theorem nonempty_clos : GlobalTheory.UT.LL → ∀ (o Ω : Type) [CommRing o] [F
     have : IsDominant (M.ptOpen U₀ hne ≫ U₀.ι) := by rw [M.ptOpen_ι]; infer_instance
     exact IsDominant.of_comp (M.ptOpen U₀ hne) U₀.ι
   have : IsDominant (pullback.snd ρ.P.A.hom u₀ ≫ U₀.ι) := inferInstance
-  obtain ⟨Ω', _, _, φ, pt, hgen, honto, hpt⟩ := GlobalTheory.T.exists_functionField_of_isDominant' o Ω M _ (pullback.snd ρ.P.A.hom u₀ ≫ U₀.ι)
+  obtain ⟨Ω', _, _, φ, pt, hgen, honto, hpt⟩ := _root_.GlobalTheory.ZH.RatModel.exists_functionField_of_isDominant o Ω M _ (pullback.snd ρ.P.A.hom u₀ ≫ U₀.ι)
   let N : RatModel o Ω' :=
     { Z := pullback ρ.P.A.hom u₀
       s := (pullback.snd ρ.P.A.hom u₀ ≫ U₀.ι) ≫ M.s
@@ -205,12 +205,12 @@ theorem nonempty_clos : GlobalTheory.UT.LL → ∀ (o Ω : Type) [CommRing o] [F
     rw [ha₁, Category.comp_id]
     exact IsPullback.of_hasPullback _ _
   obtain ⟨t, ht⟩ := CrdCalc.crd_exists hH ρ.s (N.pt ≫ a)
-  obtain ⟨hdiv, hval⟩ := GlobalTheory.T.div_iff_mem_nonzeroLocus_and_crd_ratio o Ω' N _ a _ _ ρ.s t hH (by simpa using himm.1) ht
+  obtain ⟨hdiv, hval⟩ := _root_.GlobalTheory.ZH.DivCrd.div_iff_mem_nonzeroLocus o Ω' N _ a _ _ ρ.s t hH (by simpa using himm.1) ht
   have hchN := _root_.GlobalTheory.ZH.RatModel.projChart_of_isPullback o Ω M Ω' φ N U₀ _ _ _ u₀ a _ _ _ ρ.s t hpb hN himm ht hdiv
   obtain ⟨W₀, hW₀, hz₀, hle₀⟩ := exists_isAffineOpen_mem_and_subset (U := U₀) hne.some_mem
   obtain ⟨ht0, htop⟩ := (hchN W₀ hle₀ hW₀ ⟨_, hz₀⟩).closure_eq_top hN ⟨_, hz₀⟩
 
-  obtain ⟨P, f, hf, hproj, hP⟩ := GlobalTheory.T.exists_projBundle_closure_alt o Ω M Ω' φ S.J EE t hB.ov.proj ht0 htop
+  obtain ⟨P, f, hf, hproj, hP⟩ := _root_.GlobalTheory.ZH.RatModel.exists_projBundle_closure o Ω M Ω' φ S.J EE t hB.ov.proj ht0 htop
   have hch : ∀ l : EE.Frame, M.ProjChart P φ f l.W (l.co φ t) := fun l => hP l.W l.B l.aff l.ne l.basis
   have hstd : ∀ (W : M.Z.Opens) (hW : IsAffineOpen W) (hWne : (W : Set M.Z).Nonempty) (h : _),
       (EE.stdFrame hW hWne h).co φ t = t := fun W hW hWne h => by
@@ -220,7 +220,7 @@ theorem nonempty_clos : GlobalTheory.UT.LL → ∀ (o Ω : Type) [CommRing o] [F
     fun W hle hW hWne => by
       have := hch (EE.stdFrame hW hWne fun z hz => hB.ee.1 z (hle hz))
       rwa [hstd] at this
-  obtain ⟨a₀, ha₀, hcart⟩ := GlobalTheory.T.exists_isPullback_of_projChart' o Ω M Ω' φ N P U₀ _ f S.J t hN hf
+  obtain ⟨a₀, ha₀, hcart⟩ := _root_.GlobalTheory.ZH.RatModel.exists_isPullback_of_projChart o Ω M Ω' φ N P U₀ _ f S.J t hN hf
     fun W hle hW hWne => ⟨hchN W hle hW hWne, hchP W hle hW hWne⟩
 
   let I : Type := {k : EE.Frame × S.J // k.1.co φ t k.2 ≠ 0}
@@ -230,10 +230,10 @@ theorem nonempty_clos : GlobalTheory.UT.LL → ∀ (o Ω : Type) [CommRing o] [F
     obtain ⟨l, hl⟩ := EE.exists_frame hB.mem (f z)
     obtain ⟨i, hi⟩ := (hch l).1 z hl
     exact TopologicalSpace.Opens.mem_iSup.2 ⟨⟨(l, i), hi.1⟩, hl, hi⟩
-  obtain ⟨g, hLB, hG⟩ := GlobalTheory.T.exists_isLB_genTriv_of_ratios' o Ω' P I U d hUcov (fun k => k.2)
+  obtain ⟨g, hLB, hG⟩ := _root_.GlobalTheory.ZH.RatModel.exists_isLB_genTriv_of_ratios o Ω' P I U d hUcov (fun k => k.2)
     fun k k' z hz => RatModel.Lat.Frame.div_mem hf k.1.1 k'.1.1 hz.1.1 hz.2.1 hz.1.2 k'.1.2
   let O1 : LB P.Z := ⟨I, U, g⟩
-  obtain ⟨hsec, hpull⟩ := GlobalTheory.T.genericTrivialisation_section_and_pullback o Ω' P O1 d hG
+  obtain ⟨hsec, hpull⟩ := _root_.GlobalTheory.ZH.RatModel.genTriv_sec_and_pull o Ω' P O1 d hG
   choose st hst using fun j => hsec (t j) fun k z hz => RatModel.Lat.Frame.div_mem' hf k.1.1 hz.1 hz.2 j
   have hV : ∀ l : EE.Frame, ((f ⁻¹ᵁ l.W : P.Z.Opens) : Set P.Z).Nonempty := fun l => ⟨_, hf.genericPoint_mem l.ne⟩
   let Q : EE.Frame → RatModel o Ω' := fun l => P.openPart _ (hV l)
@@ -251,7 +251,7 @@ theorem nonempty_clos : GlobalTheory.UT.LL → ∀ (o Ω : Type) [CommRing o] [F
   have hD : ∀ (l : EE.Frame) (z : (f ⁻¹ᵁ l.W).toScheme) (u : S.J → Ω') (i : S.J),
       (Q l).Div u i z ↔ P.Div u i ((f ⁻¹ᵁ l.W).ι z) := fun l z u i => by
     simp only [RatModel.Div, hO]
-  choose σ hσ using fun (l : EE.Frame) (j : S.J) => (GlobalTheory.T.genericTrivialisation_section_and_pullback o Ω' (Q l) _ _ (hGQ l)).1 (l.co φ t j)
+  choose σ hσ using fun (l : EE.Frame) (j : S.J) => (_root_.GlobalTheory.ZH.RatModel.genTriv_sec_and_pull o Ω' (Q l) _ _ (hGQ l)).1 (l.co φ t j)
     fun k z hz => (hO l z).ge (RatModel.Lat.Frame.div_mem hf _ l (hmem l k z hz).1 z.2 (hmem l k z hz).2 j)
   have : IsProper (f ≫ M.s) := by
     rw [hf.inducedModelMorphism_comp_structureMap]
@@ -309,7 +309,7 @@ theorem nonempty_clos : GlobalTheory.UT.LL → ∀ (o Ω : Type) [CommRing o] [F
     have e3 := ha₀.val_comp x (IsLocalRing.closedPoint K) (hi.2 j)
     rw [hvj j, mul_comm]
     exact congrArg (v i * ·) (e3.symm.trans e2)
-  · refine GlobalTheory.T.isClosedImmersion_of_coordinate_divisibility o Ω' (Q l) _ _ S.J (σ l) (l.co φ t) _ _ (φ.toRingHom.comp (M.res l.W l.ne))
+  · refine _root_.GlobalTheory.ZH.RatModel.immBy_of_div o Ω' (Q l) _ _ S.J (σ l) (l.co φ t) _ _ (φ.toRingHom.comp (M.res l.W l.ne))
       (LB.isLB_pull hLB _) (hGQ l) (hσ l) (fun k z hz => ?_) ?_ fun i hi => ?_
     · obtain ⟨i, hi⟩ := (hch l).1 ((f ⁻¹ᵁ l.W).ι z) z.2
       exact ⟨i, hi.1, (hO l z).ge (RatModel.Lat.Frame.div_mem hf l _ z.2 (hmem l k z hz).1 hi _)⟩

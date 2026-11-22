@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DedekindFiniteTypeIdealCodimensionStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DedekindFiniteTypeIdealCodimension
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsNeZeroForallPointExtendSubalgebra
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.JetsMemSubalgebraOfFiniteTypeAlgebra
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemMaximalPowOfJetsVanishStatement
@@ -54,7 +54,7 @@ theorem specialise_generic_solution : ∀ (k A : Type) [Field k] [IsAlgClosed k]
   obtain ⟨a, S, hξS, ha0, hTS, hspec⟩ := _root_.GlobalTheory.exists_ne_zero_forall_point_extend_subalgebra k A R ξ hinj T
   refine ⟨a, ha0, ?_⟩
   intro P hPmax haP
-  obtain ⟨-, φ, hφ⟩ := (GlobalTheory.T.dedekind_finiteType_ideal_codimension k A).2.1 P hPmax
+  obtain ⟨-, φ, hφ⟩ := (_root_.GlobalTheory.DedekindCodim.dedekind_finiteType_codim k A).2.1 P hPmax
   obtain ⟨ψ, hψ⟩ := hspec φ (fun h => haP ((hφ a).2 h))
   obtain ⟨L, hL⟩ := LinearMap.exists_extend (ψ.toLinearMap.comp
     (LinearEquiv.refl k (Subalgebra.toSubmodule S)).toLinearMap)

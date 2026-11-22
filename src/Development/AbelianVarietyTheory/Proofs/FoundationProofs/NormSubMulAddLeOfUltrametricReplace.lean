@@ -80,7 +80,7 @@ theorem glob_of_shapiro_system_noLayer (l : ℕ) [Fact l.Prime] (Ω : Type) [Fie
     rw [hcoc g h]
     rfl
   refine ⟨y, hZ1, hyO, ?_, fun r s i => hyA s i r, GlobalTheory.T.kummerScalarLayerLink_of_shapiroSpecialization_approx l Ω A e χ Y y (fun r s _ _ => hyA s 1 r)⟩
-  exact GlobalTheory.T.unramified_away_from_l_of_twisted_shapiro_limit l Ω W c θ ρ Y η y hWc hθc hWO hWθ hρO hYc hYO hY hYp hηO (fun r s x => hcong r s x) hZ1
+  exact _root_.GlobalTheory.KA.unr_of_twisted_limit l Ω W c θ ρ Y η y hWc hθc hWO hWθ hρO hYc hYO hY hYp hηO (fun r s x => hcong r s x) hZ1
     (fun r s i => hyA s i r)
 
 theorem iwSys2_of_shCoc (l : ℕ) [Fact l.Prime] (Ω : Type) [Field Ω] [Algebra ℚ Ω] (W : R2 Ω l) (c : Coef l)

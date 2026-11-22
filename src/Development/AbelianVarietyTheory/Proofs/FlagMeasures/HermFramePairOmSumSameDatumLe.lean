@@ -3,17 +3,17 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.FlagPairDefi
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ChartGen
 import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.MaxMass
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NormalFormDualOrthogonalLast
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsStarStableIdealAbsorbingMinorsStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsStarStableIdealAbsorbingMinors
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EncardLatticesNearReferenceLatticeLe
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardSublatticesDefiniteQuotientNormalFormLe
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LeOfLatMod
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermFramePairNormalFormGeometrySummaryStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EncardUnimodularHermGluingsLeStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermFramePairNormalFormGeometrySummary
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EncardUnimodularHermGluingsLe
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermFramePairCommonUnipotentStabiliserSummary
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CommonUnipotentStabiliserPreservesTermsAndDatumStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermFramePairInnerLatticesUnimodularPrimitiveStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CommonUnipotentStabiliserPreservesTermsAndDatum
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermFramePairInnerLatticesUnimodularPrimitive
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FlagPairDefiniteThetaLatticeLeFixedIndexBound
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermFramePairExistsUnipotentSplitLatticeStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermFramePairExistsUnipotentSplitLattice
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermFramePairNormalFormExistsConjNearReference
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RelIndexNeZero
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SplitTermWeightLeNearReferenceLattice
@@ -153,8 +153,8 @@ variable {K V : Type} [Field K] [NumberField K] [StarRing K] [AddCommGroup V] [M
 
 theorem om_smul (hK : Formalism.HermitianLatticesTheory.IsCMUnram K) (N : NF H r) {g : ℕ} {Λ : Submodule (𝓞 K) V} (hg : 1 ≤ g)
     (hΛ : N.IsTerm g Λ) {s : V ≃ₗ[K] V} (hs : s ∈ N.R) : N.om (s • Λ) = N.om Λ := by
-  obtain ⟨-, hS, -, -⟩ := GlobalTheory.T.commonUnipotent_stabiliser_preserves_terms_and_datum K V H hK r N g Λ hg hΛ s hs
-  obtain ⟨-, -, -, -, hRef, -⟩ := GlobalTheory.T.hermFramePair_innerLattices_unimodular_primitive K V H hK r N g Λ hg hΛ
+  obtain ⟨-, hS, -, -⟩ := _root_.GlobalTheory.DegCnt.StabInv.main K V H hK r N g Λ hg hΛ s hs
+  obtain ⟨-, -, -, -, hRef, -⟩ := _root_.GlobalTheory.DegCnt.InnerLat.main K V H hK r N g Λ hg hΛ
   obtain ⟨-, -, -, -, hnil⟩ := _root_.GlobalTheory.UnipStab.common_unipotent_stabiliser K V H hK r N
   have hL : Submodule.IsLattice K Λ := ((isUnimod_iff H Λ).1 hΛ.1.1).1
   unfold NF.om NF.Gam
@@ -165,7 +165,7 @@ theorem isLatMod_latLa (hK : Formalism.HermitianLatticesTheory.IsCMUnram K) (N :
     (hΛ : N.IsTerm g Λ) :
     IsLatMod (latLa N.F N.F' Λ (g : 𝓞 K)) (wSp N.F N.F') (II N.F N.F') := by
   obtain ⟨hTh, -, -, -, -, -, -, ⟨M, -, hM⟩, hsp⟩ := _root_.GlobalTheory.DegCnt.FixIdx.main K V H hK r N g Λ hg hΛ
-  obtain ⟨⟨⟨⟨M', hM', hL⟩, -⟩, -⟩, -⟩ := GlobalTheory.T.hermFramePair_innerLattices_unimodular_primitive K V H hK r N g Λ hg hΛ
+  obtain ⟨⟨⟨⟨M', hM', hL⟩, -⟩, -⟩, -⟩ := _root_.GlobalTheory.DegCnt.InnerLat.main K V H hK r N g Λ hg hΛ
   have h0 : latLa N.F N.F' Λ (g : 𝓞 K) ≤ flagPairDefinitePartLattice N.F N.F' Λ := fun x hx => hx.1.2
   have hI : rs (𝓞 K) (II N.F N.F') ≤ latLa N.F N.F' Λ (g : 𝓞 K) := le_trans (by rw [hM]; exact le_sup_right) hTh
   refine ⟨⟨latLa N.F N.F' Λ (g : 𝓞 K) ⊓ M', ?_, ?_⟩, le_antisymm ?_ ?_⟩
@@ -178,7 +178,7 @@ theorem isLatMod_latLa (hK : Formalism.HermitianLatticesTheory.IsCMUnram K) (N :
 
 theorem inf_Wt_of_split (hK : Formalism.HermitianLatticesTheory.IsCMUnram K) (N : NF H r) {Λ : Submodule (𝓞 K) V} (h : N.Split Λ) :
     Λ ⊓ rs (𝓞 K) N.Wt = latTh N.F N.F' Λ ⊓ rs (𝓞 K) N.Wt := by
-  obtain ⟨-, hlift, -⟩ := GlobalTheory.T.hermFramePairNormalForm_geometry_summary K V H hK r N
+  obtain ⟨-, hlift, -⟩ := _root_.GlobalTheory.DegCnt.NF.geometry K V H hK r N
   rw [h, sup_inf_assoc_of_le _ inf_le_right, eq_comm, sup_eq_left]
   intro x hx
   have : x ∈ N.Wt ⊓ II N.F N.F' := ⟨hx.2, hx.1⟩
@@ -188,7 +188,7 @@ theorem inf_Wt_of_split (hK : Formalism.HermitianLatticesTheory.IsCMUnram K) (N 
 theorem idx_dual_le (hK : Formalism.HermitianLatticesTheory.IsCMUnram K) (N : NF H r) {g : ℕ} {Λ : Submodule (𝓞 K) V} (hg : 1 ≤ g)
     (hΛ : N.IsTerm g Λ) (h : N.Split Λ) :
     (idx (dual H (Λ ⊓ rs (𝓞 K) N.Wt)) (Λ ⊓ rs (𝓞 K) N.Wt) : ℝ) ≤ (N.Del * N.NT) ^ 2 := by
-  obtain ⟨-, hlift, -, -, -, -, hw, -, hPD, -⟩ := GlobalTheory.T.hermFramePairNormalForm_geometry_summary K V H hK r N
+  obtain ⟨-, hlift, -, -, -, -, hw, -, hPD, -⟩ := _root_.GlobalTheory.DegCnt.NF.geometry K V H hK r N
   obtain ⟨-, -, -, -, hgi, -, hdel, hlat⟩ := _root_.GlobalTheory.DegCnt.FixIdx.main K V H hK r N g Λ hg hΛ
   have h1 : ∀ x ∈ N.Wt ⊔ II N.F N.F', ∀ y ∈ II N.F N.F', H.B x y = 0 := by
     intro x hx y hy
@@ -236,9 +236,9 @@ end
 
 theorem main : ∀ (K V : Type) [Field K] [NumberField K] [StarRing K] [AddCommGroup V] [Module K V] [FiniteDimensional K V] [Module (𝓞 K) V] [IsScalarTower (𝓞 K) K V] (H : HermSpace K V), Formalism.HermitianLatticesTheory.IsCMUnram K → ∀ (r : ℕ) (N : NF H r), ∀ (g : ℕ) (Λ : Submodule (𝓞 K) V), 1 ≤ g → N.IsTerm g Λ → ∀ i b : ℕ, N.omSum (fun Λ' => N.IsTerm g Λ' ∧ N.SameDat g Λ Λ' ∧ N.iI g Λ' = i ∧ N.bI Λ' = b) ≤ ENNReal.ofReal (((i : ℝ) * b) ^ Module.finrank K N.Wt * (i : ℝ) ^ cf K * (N.Db * N.Del * N.NT) ^ (10000 * (r + 1) ^ 3)) := by
   intro K V _ _ _ _ _ _ _ _ H hK r N g Λ hg hΛ i b
-  obtain ⟨𝔠, hcn, hDb, hDel, hQ⟩ := GlobalTheory.T.exists_star_stable_ideal_absorbing_minors K V H hK r N g Λ hg hΛ
+  obtain ⟨𝔠, hcn, hDb, hDel, hQ⟩ := _root_.GlobalTheory.DegCnt.Absorb.exists_absorbing_ideal K V H hK r N g Λ hg hΛ
   refine hQ _ fun c0 c1 c2 c3 => ?_
-  obtain ⟨-, -, hcompl, hrk, -, -, -, -, -, hT, -⟩ := GlobalTheory.T.hermFramePairNormalForm_geometry_summary K V H hK r N
+  obtain ⟨-, -, hcompl, hrk, -, -, -, -, -, hT, -⟩ := _root_.GlobalTheory.DegCnt.NF.geometry K V H hK r N
   have hrkPi : Module.finrank K (perp H N.Wt) = 2 * r + 1 := by
     have := Submodule.finrank_add_eq_of_isCompl hcompl
     unfold NF.Pi at this
@@ -251,7 +251,7 @@ theorem main : ∀ (K V : Type) [Field K] [NumberField K] [StarRing K] [AddCommG
   have hQs : ∀ Λ', (N.IsTerm g Λ' ∧ N.SameDat g Λ Λ' ∧ N.iI g Λ' = i ∧ N.bI Λ' = b) → ∀ s ∈ N.R,
       (N.IsTerm g (s • Λ') ∧ N.SameDat g Λ (s • Λ') ∧ N.iI g (s • Λ') = i ∧ N.bI (s • Λ') = b) := by
     rintro Λ' ⟨h1, h2, h3, h4⟩ s hs
-    obtain ⟨k1, k2, k3, k4⟩ := GlobalTheory.T.commonUnipotent_stabiliser_preserves_terms_and_datum K V H hK r N g Λ' hg h1 s hs
+    obtain ⟨k1, k2, k3, k4⟩ := _root_.GlobalTheory.DegCnt.StabInv.main K V H hK r N g Λ' hg h1 s hs
     refine ⟨k1, ⟨k2.1.trans h2.1, k2.2.1.trans h2.2.1, k2.2.2.trans h2.2.2⟩, ?_, k4.trans h4⟩
     rw [← h3]
     unfold NF.iI latLa
@@ -261,7 +261,7 @@ theorem main : ∀ (K V : Type) [Field K] [NumberField K] [StarRing K] [AddCommG
     refine tsum_orbits_le (G := N.R)
       (fun Λ' => N.IsTerm g Λ' ∧ N.SameDat g Λ Λ' ∧ N.iI g Λ' = i ∧ N.bI Λ' = b) (fun Λ' => ENNReal.ofReal (N.om Λ')) S _ ?_
     intro Λ' h
-    obtain ⟨s, hs, hsp⟩ := GlobalTheory.T.hermFramePair_exists_unipotent_split_lattice K V H hK r N g Λ' hg h.1
+    obtain ⟨s, hs, hsp⟩ := _root_.GlobalTheory.DegCnt.SplitLift.main K V H hK r N g Λ' hg h.1
     have h' := hQs Λ' h s hs
     obtain ⟨t, ht, hsp', hnear⟩ := _root_.GlobalTheory.DegCnt.NormalPos.exists_near K V H hK r N g _ hg h'.1 𝔠 c0 c1 c2 c3 hsp
     have h'' := hQs _ h' t ht.1
@@ -294,7 +294,7 @@ theorem main : ∀ (K V : Type) [Field K] [NumberField K] [StarRing K] [AddCommG
     · rw [← e]; exact (_root_.GlobalTheory.DegCnt.FixIdx.main K V H hK r N g Λ' hg h1).1
     · rw [← e]; exact h3
   · rintro Λ' ⟨⟨h1, h2, h3, h4⟩, h5, h6⟩
-    have hgl := GlobalTheory.T.encard_unimodular_hermGluings_le K V H hK N.Wt (Λ' ⊓ rs (𝓞 K) N.Wt) (Λ' ⊓ rs (𝓞 K) N.Pi) _ hcompl rfl
+    have hgl := _root_.GlobalTheory.DegCnt.Glue.encard_gluings_le K V H hK N.Wt (Λ' ⊓ rs (𝓞 K) N.Wt) (Λ' ⊓ rs (𝓞 K) N.Pi) _ hcompl rfl
     refine le_trans (ENat.toENNReal_le.2 (Set.encard_le_encard ?_)) (hgl.trans ?_)
     · rintro Λ'' ⟨⟨⟨k1, -⟩, k5, -⟩, k⟩
       refine ⟨k1.1.1, ?_, (Prod.ext_iff.1 k).2⟩

@@ -47,7 +47,7 @@ theorem exists_isLatRep_of {ΛS : Submodule (𝓞 D.host.E) (Fin S.rank → D.ho
     ∃ Om, IsLatRep hψ.1 ΛS ΛT w lam Om := by
   have H := isHeis_opF hψ.1 S T hw
   have hA := selfDual_latF (GlobalTheory.LatVac.latO_selfDual_approx_sign D ψ S T ΛS ΛT hψ hS hT).1
-  obtain ⟨hlev, hmov⟩ := GlobalTheory.T.completedHomLattice_multiple_mem_open_level D S T ΛS ΛT hS hT (_root_.GlobalTheory.LatFinGen.latO_finitely_generated D S T ΛS ΛT hS hT)
+  obtain ⟨hlev, hmov⟩ := _root_.GlobalTheory.LatLevel.level_of_generators D S T ΛS ΛT hS hT (_root_.GlobalTheory.LatFinGen.latO_finitely_generated D S T ΛS ΛT hS hT)
   have hspan := _root_.GlobalTheory.FinWeil.span_translates_vacua H _ hA (smooth_theta hψ.1 hS hT hw hA hlev)
   have hidx : ∀ p, idx (latF S T ΛS ΛT) ((latF S T ΛS ΛT).map (rhoF S T p)) ≠ 0 := fun p => by
     obtain ⟨N, hN, h⟩ := hmov p.1 p.2
@@ -135,7 +135,7 @@ theorem exists_deep {ΛS : Submodule (𝓞 D.host.E) (Fin S.rank → D.host.E)}
     (x : XF S T) (f : thetaSub ψ S T) :
     ∃ m : ℕ, 0 < m ∧ ∀ l ∈ latF S T ΛS ΛT, opF hψ S T w (x + m • l) f = opF hψ S T w x f := by
   have H := isHeis_opF hψ S T hw
-  obtain ⟨hlev, -⟩ := GlobalTheory.T.completedHomLattice_multiple_mem_open_level D S T ΛS ΛT hS hT (_root_.GlobalTheory.LatFinGen.latO_finitely_generated D S T ΛS ΛT hS hT)
+  obtain ⟨hlev, -⟩ := _root_.GlobalTheory.LatLevel.level_of_generators D S T ΛS ΛT hS hT (_root_.GlobalTheory.LatFinGen.latO_finitely_generated D S T ΛS ΛT hS hT)
   obtain ⟨V, hV, hf⟩ := f.2.level
   obtain ⟨N, hN, hNU⟩ := hlev V hV
   obtain ⟨M, hM, hMU⟩ := hlev _ (GlobalTheory.FinTranslate.isOpen_annSub hψ (XF.fin (w • x)))
@@ -172,7 +172,7 @@ theorem reads_opF (hset : Setup ψ θ S T cc δ r) {w w' : 𝓞 D.host.E} (hw : 
     (h : Reads ψ θ (S := S) (T := T) rfl rfl cc δ r F f) (x : XF S T) :
     Reads ψ θ (S := S) (T := T) rfl rfl cc δ r (WA (back S T r x) F) (opF hset.std.1 S T w x f) := by
   have hr : r ≠ 0 := IsScale.ne_zero hset.crv.1.1 hset.scale
-  obtain ⟨-, -, h3, -⟩ := GlobalTheory.T.completedStandardAdelicLattice_properties D (_root_.GlobalTheory.InducedType.induced_type D).1 cc δ hset.crv S.rank T.rank
+  obtain ⟨-, -, h3, -⟩ := _root_.GlobalTheory.CompletedLattice.completed_lattice D (_root_.GlobalTheory.InducedType.induced_type D).1 cc δ hset.crv S.rank T.rank
   obtain ⟨m, hm, hmx⟩ := exists_deep hset.std.1 hS hT hw hA x f
   obtain ⟨n, hn, hnx⟩ := hM.2.2.2.2 (back S T r x) F
   obtain ⟨z, a, ha, hz⟩ := h3 (back S T r x) (m * n) (Nat.mul_pos hm hn)

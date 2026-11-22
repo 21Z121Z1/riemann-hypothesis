@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.HasBlockOfOccurs
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ChebotarevDegreeOneIffCheb
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BhattScholzeCrystallineLattices
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseChange
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsJointRowWeightDualWeylModuleStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsJointRowWeightDualWeylModule
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JointRowWeightBoundsDualWeylModule
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JointRowWeightAntitoneOfMaxPotential
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericRowCoefMemCoefAlgebraOfDomain
@@ -22,7 +22,7 @@ theorem GlobalTheory.HighWt.simpleSubquot_embeds : ∀ (O : Type) [CommRing O] [
   intro O _ _ _ _ N ι _ _ lam ϖ hϖ hlam Gm _ _ hs hsub
   classical
   haveI : Nontrivial Gm := IsSimpleModule.nontrivial (alg O N lam) Gm
-  obtain ⟨w0, hw0⟩ := GlobalTheory.T.exists_jointRowWeight_dualWeylModule O N ι lam Gm inferInstance
+  obtain ⟨w0, hw0⟩ := _root_.GlobalTheory.HighWt.exists_jointWt O N ι lam Gm inferInstance
   have hB := _root_.GlobalTheory.HighWt.jointWt_bounds O N ι lam hlam Gm
   let S : Set (ι → Fin N → ℕ) := {w | GlobalTheory.HighWt.JointWt O N lam Gm w}
   have hfin : S.Finite := by

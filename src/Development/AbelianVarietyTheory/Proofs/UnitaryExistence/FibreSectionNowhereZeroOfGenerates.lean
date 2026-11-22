@@ -5,8 +5,8 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsLocalGeneratorStableBaseChange
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ScaledBaseChangeFibreSectionNonvanishingIff
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ScaledBaseChangeFibreSectionCalculusStatement
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsFibreSectionPowMulBaseChangeAwayStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ScaledBaseChangeFibreSectionCalculus
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsFibreSectionPowMulBaseChangeAway
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor Formalism.L2.Pj GlobalTheory.Frames
@@ -20,7 +20,7 @@ theorem secNZ_of_secGen : Out.SecBaseChangeSt → ∀ (E : Type) [Field E] [Numb
     intro R _ z
     have : spMap (RingHom.id R) = 𝟙 (Sp R) := Spec.map_id _
     rw [this, Category.id_comp]
-  obtain ⟨-, hc2, -, hc4⟩ := GlobalTheory.T.scaledBaseChange_fibreSection_calculus E H Dw l Xo (Localization.Away g) (Localization.Away g)
+  obtain ⟨-, hc2, -, hc4⟩ := _root_.GlobalTheory.Frames.SecCalc.sec_calc E H Dw l Xo (Localization.Away g) (Localization.Away g)
     (Localization.Away g) (RingHom.id _) (RingHom.id _) (spMap (algebraMap S (Localization.Away g)) ≫ x)
     _ _ (hid _ _) (hid _ _)
   have hθθ : SecBC (RingHom.id (Localization.Away g)) 1 _ _ θ θ :=
@@ -33,7 +33,7 @@ theorem secNZ_of_secGen : Out.SecBaseChangeSt → ∀ (E : Type) [Field E] [Numb
       rw [h]; exact hg
     exact this
   obtain ⟨q, i, hq, hqi⟩ := hnz p'
-  obtain ⟨N, s₀, s₁, h01, h1⟩ := GlobalTheory.T.exists_fibreSection_pow_mul_baseChange_away E H Dw l Xo S x g θ
+  obtain ⟨N, s₀, s₁, h01, h1⟩ := _root_.GlobalTheory.Frames.SecLoc.exists_secBC_pow_mul E H Dw l Xo S x g θ
   have hu : IsUnit (scal (spMap (algebraMap S (Localization.Away g)) ≫ x)
       ((algebraMap S (Localization.Away g)) g ^ N) i) := by
     obtain ⟨v, hv⟩ := ((IsLocalization.Away.algebraMap_isUnit (S := Localization.Away g) g).pow N).exists_right_inv

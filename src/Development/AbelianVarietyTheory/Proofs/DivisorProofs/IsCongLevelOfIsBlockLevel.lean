@@ -17,15 +17,15 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CmHostImag
 import Development.AbelianVarietyTheory.Definitions.Divisors.FinitePrimesUnder
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OmPureTensorOOfFinite
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsStandardPositiveDefiniteHermitianSpaceRank
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteAdelicEmbeddingStandardUnitaryGroupStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOpenCompactLevelOfStandardCongruenceLevelStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteAdelicEmbeddingStandardUnitaryGroup
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOpenCompactLevelOfStandardCongruenceLevel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsVolumeOneMeasureDefiniteOpenCompact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelMeasureEqRelIndexSmul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormScaleCurveIdeal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHeckeCharacterOfThetaModelCharacterStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHeckeCharacterOfThetaModelCharacter
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasInfinityExponentOfFinitePartPower
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdelicThetaReadsCurveThetaFunctionStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFockVacuumOfReadsGaussianEntireStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdelicThetaReadsCurveThetaFunction
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFockVacuumOfReadsGaussianEntire
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergFinitePointReadsClassicalTranslation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockVectorMinorProductOriginEqPeriodsJet
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MovedThetaFunctionsReadOfMovedVacuumReads
@@ -263,7 +263,7 @@ theorem IsExact.reads_om (hI : GlobalTheory.NormSum.Inp D) (h : IsExact P X r) (
     {G : VC D P.a P.d → ℂ} (hG : G ∈ TT D (tor0 D cc δ) P.a P.d) {f : WO X.A X.B → ℂ}
     (hf : Reads X.ψ X.θ X.rkA X.rkB cc δ r G f) :
     Reads X.ψ X.θ X.rkA X.rkB cc δ r (P.W.Om x y G) (X.om (X.ιA x, X.ιB y) f) := by
-  obtain ⟨f₀, hf₀⟩ := GlobalTheory.T.exists_adelicTheta_reads_curveThetaFunction X.ψ X.θ X.A X.B X.rkA X.rkB cc δ r h.setup P.e0
+  obtain ⟨f₀, hf₀⟩ := _root_.GlobalTheory.NormExact.ReadEx.exists_reads X.ψ X.θ X.A X.B X.rkA X.rkB cc δ r h.setup P.e0
     (GlobalTheory.NormSum.VacMove.vac_TT (GlobalTheory.InducedType.induced_type D).1 P.crv P.vac.1)
   have h1 := _root_.GlobalTheory.VacMoveFin.vacuum_move_reads X.ψ X.θ X.A X.B X.rkA X.rkB cc δ r h.setup P.e0 P.W X.χA X.χB X.om h.weil hI t0 P.pt0 P.even_mul
     P.vac h.chA h.chB x y _ _ (h.std.ptA x) (h.std.ptB y) f₀ hf₀
@@ -299,7 +299,7 @@ theorem IsExact.isDictWt (hI : GlobalTheory.NormSum.Inp D) (h : IsExact P X r) :
     convert h1 using 1
     linarith
   refine ⟨⟨h.std.frame, h.inf, h.weil, h.read.1,
-    GlobalTheory.T.isFockVacuum_of_readsGaussianEntire X.ψ X.θ X.A X.B X.rkA X.rkB cc δ r h.setup _ _ hF.1 h.read, fun h0 => ?_, fun x y T => ?_,
+    _root_.GlobalTheory.NormExact.reads_isFockVacAt X.ψ X.θ X.A X.B X.rkA X.rkB cc δ r h.setup _ _ hF.1 h.read, fun h0 => ?_, fun x y T => ?_,
     fun k hk T => ?_, fun j hj => ?_, hb⟩, hb⟩
   · have := h.norm_const
     rw [h0] at this
@@ -352,11 +352,11 @@ theorem exists_stdFrame (P : Pair D cc δ t0 Q) (hJ : IsCongLevel P.J) :
       IsStdFrame P Y ∧ IsMaxLevel Y K₀ μ₀ := by
   obtain ⟨A, rA, gA, dA⟩ := _root_.GlobalTheory.StdDefSpace.exists_std_definite D P.a
   obtain ⟨B, rB, gB, dB⟩ := _root_.GlobalTheory.StdDefSpace.exists_std_definite D P.d
-  obtain ⟨ιA, pA, iA, sA, qA⟩ := GlobalTheory.T.exists_finiteAdelicEmbedding_standardUnitaryGroup A P.a gA rA
-  obtain ⟨ιB, pB, iB, sB, qB⟩ := GlobalTheory.T.exists_finiteAdelicEmbedding_standardUnitaryGroup B P.d gB rB
-  obtain ⟨KA, lA, mA⟩ := GlobalTheory.T.exists_openCompactLevel_of_standardCongruenceLevel A P.a ιA _ gA pA iA sA le_rfl (isCongLevel_intG _)
-  obtain ⟨KB, lB, mB⟩ := GlobalTheory.T.exists_openCompactLevel_of_standardCongruenceLevel B P.d ιB _ gB pB iB sB P.J_le hJ
-  obtain ⟨K₀, l₀, m₀⟩ := GlobalTheory.T.exists_openCompactLevel_of_standardCongruenceLevel B P.d ιB _ gB pB iB sB le_rfl (isCongLevel_intG _)
+  obtain ⟨ιA, pA, iA, sA, qA⟩ := _root_.GlobalTheory.FinEmbStd.exists_finEmb A P.a gA rA
+  obtain ⟨ιB, pB, iB, sB, qB⟩ := _root_.GlobalTheory.FinEmbStd.exists_finEmb B P.d gB rB
+  obtain ⟨KA, lA, mA⟩ := _root_.GlobalTheory.CongLevelStd.exists_level A P.a ιA _ gA pA iA sA le_rfl (isCongLevel_intG _)
+  obtain ⟨KB, lB, mB⟩ := _root_.GlobalTheory.CongLevelStd.exists_level B P.d ιB _ gB pB iB sB P.J_le hJ
+  obtain ⟨K₀, l₀, m₀⟩ := _root_.GlobalTheory.CongLevelStd.exists_level B P.d ιB _ gB pB iB sB le_rfl (isCongLevel_intG _)
   obtain ⟨μA, 𝓕A, hA⟩ := _root_.GlobalTheory.DefiniteLevelMeasure.exists_isMeasDef_openCompact A KA dA lA
   obtain ⟨μB, 𝓕B, hB⟩ := _root_.GlobalTheory.DefiniteLevelMeasure.exists_isMeasDef_openCompact B KB dB lB
   obtain ⟨μ₀, 𝓕₀, h₀⟩ := _root_.GlobalTheory.DefiniteLevelMeasure.exists_isMeasDef_openCompact B K₀ dB l₀
@@ -370,10 +370,10 @@ theorem exists_isExact (P : Pair D cc δ t0 Q) (hJ : IsCongLevel P.J) :
   obtain ⟨ψ, hψ⟩ := GlobalTheory.StdAdelicChar.exists_isStdChar D
   obtain ⟨θ, hθ⟩ := GlobalTheory.AdelicU.exists_isInfFam D
   obtain ⟨r, hr⟩ := _root_.GlobalTheory.NormRatio.exists_scale D cc P.crv.1
-  obtain ⟨χA, a1, a2, a3⟩ := GlobalTheory.T.exists_heckeCharacter_of_thetaModelCharacter P.W.chV P.W.ep P.W.ep_pm.1
-  obtain ⟨χB, b1, b2, b3⟩ := GlobalTheory.T.exists_heckeCharacter_of_thetaModelCharacter P.W.chV' (-P.W.ep') (by rcases P.W.ep_pm.2 with h | h <;> simp [h])
+  obtain ⟨χA, a1, a2, a3⟩ := _root_.GlobalTheory.HeckeUChar.exists_hecke_of_heckeU P.W.chV P.W.ep P.W.ep_pm.1
+  obtain ⟨χB, b1, b2, b3⟩ := _root_.GlobalTheory.HeckeUChar.exists_hecke_of_heckeU P.W.chV' (-P.W.ep') (by rcases P.W.ep_pm.2 with h | h <;> simp [h])
   obtain ⟨om, hom⟩ := GlobalTheory.Unf.Inhab.exists_weil hψ Y.A Y.B a1 b1 (Y.rkA.symm ▸ a2) (Y.rkB.symm ▸ b2)
-  obtain ⟨f, hf⟩ := GlobalTheory.T.exists_adelicTheta_reads_curveThetaFunction ψ θ Y.A Y.B Y.rkA Y.rkB cc δ r ⟨hψ, hθ, hY.frame.gramA, hY.frame.gramB, P.crv, hr⟩ P.F (test_TT P)
+  obtain ⟨f, hf⟩ := _root_.GlobalTheory.NormExact.ReadEx.exists_reads ψ θ Y.A Y.B Y.rkA Y.rkB cc δ r ⟨hψ, hθ, hY.frame.gramA, hY.frame.gramB, P.crv, hr⟩ P.F (test_TT P)
   exact ⟨⟨Y, ψ, θ, χA, χB, om, f, ∏ τ, period D δ r τ ^ (P.a * P.n τ)⟩, r, K₀, μ₀, ⟨hY, hθ, hom, a3, b3, hr, hf, rfl⟩, hm⟩
 
 theorem isCongLevel_of_isBlockLevel {δ t0 : ℂ} {Q : ℕ} {P : Pair D ⊤ δ t0 Q} {𝔪 : Ideal (𝓞 D.host.E)} (h𝔪 : 𝔪 ≠ ⊥) {a : ℕ}

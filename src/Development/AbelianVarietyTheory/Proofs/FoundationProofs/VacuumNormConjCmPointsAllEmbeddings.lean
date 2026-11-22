@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 import Formalism.PairingDivisors.StatementH
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmThetaComplexConjugationCompatibleStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaVacuaConjugatesCmPointsStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmThetaComplexConjugationCompatible
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaVacuaConjugatesCmPoints
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ConjugateCurveDatumLatticeIsCurveLattice
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InducedTypeThetaGenusOnePermutes
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaTranslateGaloisRationalityCmPoints
@@ -12,8 +12,8 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntegralJAndAlge
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IdealPeriodLatticeOfCurveDatum
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HalfPeriodThetaDifferentiableAndSignedTranslateI
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OrthonormalRealBasisComplexCoordinatesStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OrthonormalProductThetaMemThetaSpaceStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OrthonormalRealBasisComplexCoordinates
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OrthonormalProductThetaMemThetaSpace
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MeanSquareOrthoProductThetaEqProd
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsSelfDualPairGaloisConjugateHomLattice
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OrthonormalBasisGaloisMap
@@ -56,8 +56,8 @@ theorem norm_core (D : D7) (σ : D.host.E ≃ₐ[ℚ] D.host.E)
       funext τ i j
       simp [embV, tor0, torTw]
   obtain ⟨hd, hinv⟩ := _root_.GlobalTheory.HalfPeriodTheta.theta_signed_translation D g1 cc δ hc t0 ht
-  obtain ⟨o1, o2⟩ := GlobalTheory.T.orthonormal_realBasis_complex_coordinates D g1 cc δ N N' _ _ hb'
-  have hth := GlobalTheory.T.orthonormalProductTheta_mem_thetaSpace D (tor0 D cc δ) N N' _ _ o1 _ hd hinv
+  obtain ⟨o1, o2⟩ := _root_.GlobalTheory.OrthoCoord.orthonormal_coord D g1 cc δ N N' _ _ hb'
+  have hth := _root_.GlobalTheory.OrthoProdTheta.pullB_mem_ThSp D (tor0 D cc δ) N N' _ _ o1 _ hd hinv
   have hn := _root_.GlobalTheory.PullNorm.normSq_pullB D (tor0 D cc δ) N N' _ _ (_root_.GlobalTheory.CurveLattice.lattice_of_curve D g1 cc δ hc).1 o1 o2 _ hd.continuous (by
     intro ω hω z
     obtain ⟨m, -, hm⟩ := hinv ω hω
@@ -150,7 +150,7 @@ theorem norm_fix (D : D7) (cc : Ideal (𝓞 D.host.K)) (δ : ℂ) (hc : Crv D cc
     exact hσ' τ y
   have hGTh : G ∈ Th D (tor0 D cc δ) L L' :=
     (norm_core D AlgEquiv.refl (fun _ => rfl) cc δ hc t0 ht L L' hL hL' G hG).1
-  have hE := (GlobalTheory.T.thetaVacua_conjugates_cmPoints D cc δ hc t0 ht N N' L L' hL hL' hN G hG M ρ hD hC).2.1 t0' ht'
+  have hE := (_root_.GlobalTheory.ThetaConj.useConj_all D cc δ hc t0 ht N N' L L' hL hL' hN G hG M ρ hD hC).2.1 t0' ht'
   obtain ⟨m, hm, hmx⟩ := hx
   have htors := ((_root_.GlobalTheory.CurveAlgebraic.integral_j_and_algebraic_data D g1).2 cc δ hc).2
   obtain ⟨x', hx', -⟩ := _root_.GlobalTheory.GalExist.galEx_all D cc δ hc M ρ hK hD
@@ -177,10 +177,10 @@ theorem norm_big (D : D7) (cc : Ideal (𝓞 D.host.K)) (δ : ℂ) (hc : Crv D cc
     normSq D (torConj D (tor0 D cc δ) M ρ) (La D (torConj D (tor0 D cc δ) M ρ) L L')
         (fnConj D M ρ (U D (tor0 D cc δ) x G)) =
       nrm1Sq (lamConj M ρ (lamOf D cc δ)) (GL3Theta.th0 (lamConj M ρ (lamOf D cc δ)) t0') ^ (fF D * N * N') := by
-  rcases (GlobalTheory.T.cmTheta_complexConjugation_compatible D cc δ hc M ρ hD).1 with hK | hK
+  rcases (_root_.GlobalTheory.ThetaConj.useBar_holds D cc δ hc M ρ hD).1 with hK | hK
   · obtain ⟨-, x', e1, e2⟩ := norm_fix D cc δ hc t0 ht L L' hL hL' hN G hG M ρ hK hQ hD hC t0' ht' x hx hCx
     rw [e1, e2]
-  · obtain ⟨-, hT, hb⟩ := GlobalTheory.T.cmTheta_complexConjugation_compatible D cc δ hc M (rhoBar M ρ) hD
+  · obtain ⟨-, hT, hb⟩ := _root_.GlobalTheory.ThetaConj.useBar_holds D cc δ hc M (rhoBar M ρ) hD
     have hbb : rhoBar M (rhoBar M ρ) = ρ := by
       ext y; simp [rhoBar]
     rw [hbb] at hT hb
@@ -203,7 +203,7 @@ theorem norm_big (D : D7) (cc : Ideal (𝓞 D.host.K)) (δ : ℂ) (hc : Crv D cc
       · simpa [map_ofNat, sub_eq_add_neg] using a2
     obtain ⟨hlat, x', e1, e2⟩ :=
       norm_fix D cc δ hc t0 ht L L' hL hL' hN G hG M (rhoBar M ρ) hK hQ hD hC _ ht'' x hx hCx
-    have hTh := (GlobalTheory.T.thetaVacua_conjugates_cmPoints D cc δ hc t0 ht N N' L L' hL hL' hN G hG M (rhoBar M ρ) hD hC).1
+    have hTh := (_root_.GlobalTheory.ThetaConj.useConj_all D cc δ hc t0 ht N N' L L' hL hL' hN G hG M (rhoBar M ρ) hD hC).1
     have e3 := ((hb N N' L L' (fnConj D M (rhoBar M ρ) G)).2.2 hTh).2 hL hL' x'
     have e4 := _root_.GlobalTheory.MeanSquareConj.nrm1Sq_th0_map_conj_eq _ hlat ((starRingEnd ℂ) t0')
     rw [Complex.conj_conj, ← hl] at e4

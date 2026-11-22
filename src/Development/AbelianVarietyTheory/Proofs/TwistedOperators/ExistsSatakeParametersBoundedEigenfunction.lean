@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConstMemBddAut
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsParamFunVIffIsSysParamDOfLevel
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSplitPlOfTwoMem
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdelicSphericalEigenfunctionLocalHeckeAlgebraEigStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdelicSphericalEigenfunctionLocalHeckeAlgebraEig
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSatakeParamTrivialBoundUnitaryGL
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSatakeParameterTrivialBoundUnramifiedUnita
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.TrivialParameterBound
@@ -87,7 +87,7 @@ theorem exists_param_at (D : D7) (V : HSp D) (J : Set (GA D V)) (χ : GA D V →
     ∃ B : Multiset ℂˣ, IsParamVec D.sp.cm.sig V.gram (frameLat V) h
         ((rightReg ℂ (GA D V) ℂ).comp (embV V v)) f B ∧
       ∀ b ∈ B, ‖(b : ℂ)‖ ≤ (Ideal.absNorm w.asIdeal : ℝ) ^ (((V.rank : ℝ) - 1) / 2) := by
-  obtain ⟨hfix, heig⟩ := GlobalTheory.T.adelicSphericalEigenfunction_local_heckeAlgebra_eigen D V J χ Sb hJ v hv f hlev c hc
+  obtain ⟨hfix, heig⟩ := _root_.GlobalTheory.FinZeta.eigen_heckeAlg D V J χ Sb hJ v hv f hlev c hc
   let ρ : Representation ℂ (Gv V v) (bddAut V) := (bddRep V).comp (embV V v)
   let x : bddAut V := ⟨f, hfm⟩
   have hx0 : x ≠ 0 := fun e => hf0 (congrArg Subtype.val e)

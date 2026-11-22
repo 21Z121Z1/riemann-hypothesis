@@ -12,7 +12,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergOperatorF
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeIsometrySignFirst
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FiniteFourierExpansionHalfSplitPlaces
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaFourierSumEqSumHeisenbergTranslates
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StdCharSymplecticHalfPeriodLatticeEqOneStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StdCharSymplecticHalfPeriodLatticeEqOne
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergOperatorConjugateHalfVacuumEqSemichara
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergOperatorHalfComponentOnVacuumTranslate
 
@@ -74,7 +74,7 @@ theorem reads_datum_eq_thC : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (θ :
     · intro p _ i j
       simp only [Matrix.map_apply, ← mul_assoc, ← map_mul, hee]
     · intro p hp u hu
-      exact GlobalTheory.T.stdChar_symplectic_halfPeriodLattice_eq_one D ψ θ S T a b hS hT δ sc hP e SS hE N N' c hc hcP h2 hLa hdS hdT (py p.2) (hpy' _ (Finset.mem_product.1 hp).2).1 u hu
+      exact _root_.GlobalTheory.AdForm.HalfPairing.char_sympl_halfB D ψ θ S T a b hS hT δ sc hP e SS hE N N' c hc hcP h2 hLa hdS hdT (py p.2) (hpy' _ (Finset.mem_product.1 hp).2).1 u hu
     · intro t
       rw [hF t, Finset.sum_product]
 

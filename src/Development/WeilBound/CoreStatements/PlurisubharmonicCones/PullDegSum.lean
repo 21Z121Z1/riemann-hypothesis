@@ -25,7 +25,9 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BlockPullbackHermLi
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ConjugateHermitianLineIsometries
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRes
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.RationalSections.ThmISt
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CmHostRankBoundsStatement
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CmHostRankBounds
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.HodgeLatticeFlagBound
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.TrivFlagOnHodge
 
 open AlgebraicGeometry CategoryTheory Limits NumberField Matrix
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi
@@ -181,7 +183,7 @@ theorem common (h₁ : LevelFree) (h₂ : MuHodge) : Common := by
     rcases Or.side with ⟨-, -, h⟩ | ⟨h, -, -⟩
     · rw [h, Or.N_eq]; omega
     · rw [hbg] at h
-      obtain ⟨τ⟩ : Nonempty (CMType H) := (GlobalTheory.T.cm_host_rank_bounds E H).2.1
+      obtain ⟨τ⟩ : Nonempty (CMType H) := (_root_.GlobalTheory.CompanionTheory.Ar.Top.HostNumbers.host_numbers E H).2.1
       exact absurd (congrFun h τ) (by simp)
   simp only [hsm] at hs hdeg hmet
   choose Lp hLp using fun r => ((_root_.GlobalTheory.CompanionTheory.Ar.Cmp.hermLine_pull_blockMap RM.K RM.ι K₃ ρ κ₁ v₁ bm₁).1 (oR.sing r)).exists

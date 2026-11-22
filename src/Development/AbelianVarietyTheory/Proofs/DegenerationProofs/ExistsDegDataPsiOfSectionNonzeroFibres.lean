@@ -18,12 +18,12 @@ import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsUnitVa
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.PsiInIffScalarMem
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.TorsionEqOneOfTranslationKeepsRatios
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.RigidificationComparisonUniformisation
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.PsiRelOfExpTStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.PsiRelOfExpT
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ForallTermNeZeroOfPsiRelation
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsExpansionTermUnitClosedFibre
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.FibrewiseNonzeroSectionProdAndBaseChange
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.PsiCmpOfSecCmp
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.PsiEvenDescendBaseChangeStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.PsiEvenDescendBaseChange
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TauBimultOfBaseChange
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIsPullDegOfComparison
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsThetaSectionNonzeroFibresLocalRing
@@ -82,7 +82,7 @@ theorem exists_degData_of_thetaNZ : Laws → Laws2 → Ega → ∀ (R : Type) [C
   obtain ⟨f, hf, -⟩ := CompleteBaseExpansion.main h₁ h₂ hE R I hR hP.ne_top D A G U 1 σ
   obtain ⟨σ', f', hf', hσσ, hff⟩ := ExpCmp.expT_cmp R V I _ φ hIm D D'.toPre A A' G G' U U' F C 1 σ f hf
   have hcmp : SecCmp D D'.toPre C.β C.v C.xe f f' := hff
-  have hrel' := GlobalTheory.T.psiRel_of_expT' h₁ h₂ V _ hV' D' A' G' U' U₀ hU σ' f' hf'
+  have hrel' := _root_.GlobalTheory.PsiExpansion.psiRel_of_expT h₁ h₂ V _ hV' D' A' G' U' U₀ hU σ' f' hf'
   have hne' : ∀ α, ∃ j, (f' α).f j ≠ 0 := by
     refine _root_.GlobalTheory.forall_ne_zero_of_psiRel V D'.toPre f' hrel' ?_
     obtain ⟨T, y, z, J, α, hJ, -, -, hu⟩ := _root_.GlobalTheory.PsiRing.exists_unit_term V _ hm D'.toPre A' G' U' 1 σ' f' hf' (hσ₂ 1 σ σ' hσσ hσ)
@@ -99,7 +99,7 @@ theorem exists_degData_of_thetaNZ : Laws → Laws2 → Ega → ∀ (R : Type) [C
   have hpsi : PsiCmp E D'.toPre C.β C.v C.xe gam :=
     _root_.GlobalTheory.psiCmp_of_secCmp R V φ E D'.toPre C.β C.v C.xe C.pbB C.v_gen C.c_pr hrig f f' hcmp hrelE hrel' (hne' 0) gam hgam
   have hev : E.PsiEven :=
-    GlobalTheory.T.psiEven_descend_baseChange h₁.globalFns R V φ E D'.toPre C.β C.v C.xe C.pbB C.v_gen C.c_pr gam hgam hpsi D'.psi_even
+    _root_.GlobalTheory.PsiRing.psiEven_descend h₁.globalFns R V φ E D'.toPre C.β C.v C.xe C.pbB C.v_gen C.c_pr gam hgam hpsi D'.psi_even
   have hbi : E.TauBimult :=
     _root_.GlobalTheory.tauBimult_of_baseChange h₁.globalFns R V φ E D'.toPre C.β C.v C.xe C.pbB C.v_gen C.c_pr hrig gam hgam hpsi D'.tau_bimult
   obtain ⟨hD, hD₁, hD₂, hD₃⟩ :=

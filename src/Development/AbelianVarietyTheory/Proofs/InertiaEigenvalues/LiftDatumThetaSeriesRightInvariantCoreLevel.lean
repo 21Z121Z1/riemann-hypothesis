@@ -74,7 +74,7 @@ theorem ser_right_inv_levelK : ∀ (D : D7) (Γ : Type) [Group Γ] [Fintype Γ] 
   have hlift : Formalism.IndefR.Lev.IsLevelLift (Wc D j) (Rl.toRealDat.βW j) (Rl.toRealDat.datWp j Rl.toRealDat.triv) 1 k' :=
     (_root_.GlobalTheory.LiftLevel.isLift_one_iff_mem_level T Rl.toRealDat κ v₀ hcore.lev hti hpb j T.σ₀ T.toCore.good_σ₀ hV k').2 (by rw [hkk]; exact hk)
   have hv : Rl.toRealDat.ωP j A3.A.μ0 (1, k') (Rl.toRealDat.vP j A3.A.μ0) = (1 : ℂ) • Rl.toRealDat.vP j A3.A.μ0 := by
-    have e := GlobalTheory.T.weilAction_liftPair_stepVector_invLevelChar Rl.toRealDat hcore.lev hcore.models.inf hcore.thP.ωP hcore.thP.vP j A3.A.μ0 1 1 k'
+    have e := _root_.GlobalTheory.VecInv.omega_lifts_vP Rl.toRealDat hcore.lev hcore.models.inf hcore.thP.ωP hcore.thP.vP j A3.A.μ0 1 1 k'
       (GlobalTheory.RawLift.LevelFix.realDatum_identity_lifts_identity Rl.toRealDat j A3.A.μ0) hlift
     rw [e, GlobalTheory.RawLift.LevelFix.levChi_flag_one Rl.toRealDat j A3.A.μ0, inv_one]
   have hP : ∀ P, Rl.toRealDat.ωP j A3.A.μ0 (1, k') (Rl.toRealDat.ptP j A3.A.μ0 P) = Rl.toRealDat.ptP j A3.A.μ0 P := by

@@ -3,9 +3,11 @@ import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsAuxil
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.InvDiagTorusIntegralBesselJacobiUnramified
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.JacobiToBesselFlatMapSupportProof
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergCombinationDisjointPlacesCommuteVacua
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HomLatticeCompletionSelfAnnihilatorAtPlacesStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemHomLatticeCompletionIffSupportedMapsStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntegralOfAddCharTrivialOnHomLatticeLineStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HomLatticeCompletionSelfAnnihilatorAtPlaces
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsSumFrame
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemHomLatticeCompletionIffSupportedMaps
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntegralOfAddCharTrivialOnHomLatticeLine
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PlacesToAdeles
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsTameFinitePlaceHermitianAll
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ValueDoubleExact
 
@@ -68,7 +70,7 @@ theorem inv_int_of_pt : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ), IsStdChar
   have hsum : dW.jX ⬝ ((t⁻¹).1 ⬝ u.1.1) = (mt W (dW.levi t)⁻¹ ⬝ (xZero dW ⬝ u.1.1) - xZero dW - a) + (a - b₀) + b₀ + dW.jX ⬝ (1 : Mx D ρ ρ) := by
     rw [hlev, Matrix.mul_one, xZero]
     abel
-  refine GlobalTheory.T.integral_of_addChar_trivial_on_homLattice_line D ψ hψ V V₀ W W₀ ρ dV dW LV LV₀ LW LW₀ v (_root_.GlobalTheory.FinPl.TamePlaces.tame D v) hG.sdV hG.sdW hG.monoV hG.monoW
+  refine _root_.GlobalTheory.FinPl.InvLat.int_of_psi_line D ψ hψ V V₀ W W₀ ρ dV dW LV LV₀ LW LW₀ v (_root_.GlobalTheory.FinPl.TamePlaces.tame D v) hG.sdV hG.sdW hG.monoV hG.monoW
     hG.cols i _ hc1 ?_
   intro b hb hY
   have hYm : MxAt (· = v) (dV.extY W (dW.jY ⬝ Matrix.single i i b)) := LatMem.latO_mxAt hY
@@ -88,10 +90,10 @@ theorem inv_int_of_pt : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ), IsStdChar
     rw [← hτ, symplO_off dV hab _ hYm, AddChar.map_zero_eq_one]
   have k3 : ψ (Algebra.trace (AF D.host.F) (AE D) (incA D D.host.xi0 * pairS W b₀ (dW.jY ⬝ Matrix.single i i b))) = 1 := by
     rw [← hτ]
-    exact (GlobalTheory.T.homLatticeCompletion_self_annihilator_atPlaces D ψ hψ V W LV LW hG.sdV hG.sdW (· = v) _ (LatMem.latO_mxAt hb₀)).1 hb₀ _ hY
+    exact (_root_.GlobalTheory.SelfDualAt.latO_ann_at D ψ hψ V W LV LW hG.sdV hG.sdW (· = v) _ (LatMem.latO_mxAt hb₀)).1 hb₀ _ hY
   have hlat : SelfDualAt.cP (· = v) • dV.extX W (dW.jX ⬝ (Matrix.single i i 1 : Mx D ρ ρ)) ∈
       latO V W (LV : Set _) (LW : Set _) (· = v) := by
-    refine (GlobalTheory.T.mem_homLatticeCompletion_iff_supported_maps D V W LV LW hG.sdV hG.sdW (· = v) _).2 ⟨fun k l => ?_, fun y hy => ?_⟩
+    refine (_root_.GlobalTheory.FinPl.LatMem.mem_latO_iff D V W LV LW hG.sdV hG.sdW (· = v) _).2 ⟨fun k l => ?_, fun y hy => ?_⟩
     · rw [Matrix.smul_apply, Algebra.smul_def]
       exact Ideal.mul_mem_right _ _ (SuppShift.eps_idAt v)
     · have e0 : SelfDualAt.cP (· = v) • dV.extX W (dW.jX ⬝ (Matrix.single i i 1 : Mx D ρ ρ)) =
@@ -114,7 +116,7 @@ theorem inv_int_of_pt : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ), IsStdChar
       rw [Matrix.smul_apply, Algebra.smul_def]
       exact SuppShift.eps_mul (hYm k l)
     rw [← hτ, ← hfix, SelfDualAt.symplO_smul_swap]
-    exact (GlobalTheory.T.homLatticeCompletion_self_annihilator_atPlaces D ψ hψ V W LV LW hG.sdV hG.sdW (· = v) _ (LatMem.latO_mxAt hlat)).1 hlat _ hY
+    exact (_root_.GlobalTheory.SelfDualAt.latO_ann_at D ψ hψ V W LV LW hG.sdV hG.sdW (· = v) _ (LatMem.latO_mxAt hlat)).1 hlat _ hY
   have hadd : ∀ x y : AE D, ψ (Algebra.trace (AF D.host.F) (AE D) (incA D D.host.xi0 * (x + y))) =
       ψ (Algebra.trace (AF D.host.F) (AE D) (incA D D.host.xi0 * x)) *
         ψ (Algebra.trace (AF D.host.F) (AE D) (incA D D.host.xi0 * y)) := fun x y => by

@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Definitions.HeightFunctions.JointQ
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CmQuadraticFormEqAlternatingForm
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsRationalUnitaryDeterminantMapRationalUnitaryTo
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOfCongSet
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharacterFiniteIdeleValueMemFieldStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharacterFiniteIdeleValueMemField
 
 noncomputable section
 
@@ -36,7 +36,7 @@ theorem mem_of_orderDvd : ∀ (E : Type) [Field E] [NumberField E] [IsTotallyCom
     rw [inf_eq_one χ hn0 hord k, Units.val_one]
     exact one_mem M
   rw [← GlobalTheory.Mem.ReadEx.map_finPartI hn0 hord x]
-  exact GlobalTheory.T.heckeCharacter_finiteIdele_value_mem_field E χ M hM hinf (GlobalTheory.Mem.Chr.finPartI E x) fun w => by
+  exact _root_.GlobalTheory.HeckeValField.mem_of_inf_eq_one E χ M hM hinf (GlobalTheory.Mem.Chr.finPartI E x) fun w => by
     rw [GlobalTheory.Mem.Chr.finPartI_fst]; rfl
 
 end GlobalTheory.Mem.ValFin

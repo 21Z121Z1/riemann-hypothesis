@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TwTransAlt
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PutInSplitPlacesDatumProductOnHalfStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PutInSplitPlacesDatumProductOnHalf
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ChartBasePointsLevelDatumEqLocalProd
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntegralCoordinateVectorsChainSpaceSelfDual
 
@@ -32,7 +32,7 @@ theorem twVec' : TwVec' := by
     exact ⟨fun u hu => hvac.2.lat.1 u (hle hu), fun e' he' u hu hh => hvac.2.lat.2 e' he' u (hle hu) hh⟩
   have hO := hReps.2 (vac j) hV
   obtain ⟨eq, heq⟩ := hStd.1
-  have hF := GlobalTheory.T.putInSplitPlaces_datum_product_on_half (I.rec7 l Z) k ι p J hPl _ _ ψ hX.std _ _ (β j) (β (j + 1)) (x j).L (x (j + 1)).L
+  have hF := _root_.GlobalTheory.FinPl.PutIn.ratDatum_of_overAll (I.rec7 l Z) k ι p J hPl _ _ ψ hX.std _ _ (β j) (β (j + 1)) (x j).L (x (j + 1)).L
     (_root_.GlobalTheory.AdForm.intVec_isSelfDualC I hOk l Z j hjm _ hL0) (_root_.GlobalTheory.AdForm.intVec_isSelfDualC I hOk l Z (j + 1) hj _ hL1) hL0 hL1 _ e he ⟨eq, heq⟩ _ (vac j) _ hvac.2.theta hvac.2.lat hO
   have hval := _root_.GlobalTheory.PhiOneVal.phiT_base_eq_prod I hOk hPins l Z u a Ch A hA k ι p β Q _ hStd J hPl j hj α γ
   convert hF using 2 with z

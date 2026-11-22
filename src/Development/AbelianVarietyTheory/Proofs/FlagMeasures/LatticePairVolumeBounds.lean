@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.HarderNarasimhan.ShiftInvariance
 import Formalism.RealPlaceAnalysis.Complexify
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DifferentSmulMemOfTraceIntegral
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LatticeCoveringOfTraceDualLowerBoundStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LatticeCoveringOfTraceDualLowerBound
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HilbertSchmidtLowerBoundInverseDifferent
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsTer
 open Formalism.HN Formalism.HermitianLatticesTheory Matrix NumberField Finset
@@ -144,7 +144,7 @@ theorem exists_hom_near : ∀ (K : Type) [Field K] [NumberField K] [StarRing K] 
     rw [← hn]; exact_mod_cast Fintype.card_pos
   have hs0 : 0 < Real.sqrt (nPl K) := Real.sqrt_pos.2 hn0
   have hss : Real.sqrt (nPl K) ^ 2 = nPl K := Real.sq_sqrt hn0.le
-  obtain ⟨y, hy, hle⟩ := GlobalTheory.T.lattice_covering_of_trace_dual_lower_bound K (Fin b × Fin a) (Fin b × Fin a) (homLat A B)
+  obtain ⟨y, hy, hle⟩ := _root_.GlobalTheory.TraceCover.cover K (Fin b × Fin a) (Fin b × Fin a) (homLat A B)
     (fun w => frameEquiv (X' w) (X w) (hX' w) (hX w)) (Real.sqrt (nPl K) * (lo / (rd * hi)))
     (homLat_fg A B hA hB hAs) (homLat_span A B hA hBs) (by positivity)
     (fun f c hf hint hc => by

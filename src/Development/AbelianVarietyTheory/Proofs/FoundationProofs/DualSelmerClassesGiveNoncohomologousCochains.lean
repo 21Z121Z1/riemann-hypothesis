@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ContinuousMatQAp
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SelNZero
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DvdOfMemIk
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OrdDualGeneratorPairingModPowNondegenerateStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsEqOrdDualGeneratorPairingOfAdditiveMapStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsEqOrdDualGeneratorPairingOfAdditiveMap
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PlanePairingEquivariantTwistCartierDual
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DualCocycleCoboundaryOnInertiaOfOrthogonalStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DualCocycleCoboundaryOnStableLineOfOrthogonalStatement
@@ -28,8 +28,8 @@ theorem phi_bijective : ∀ (l : ℕ) [Fact l.Prime] (c : Coef l) (n : ℕ), Fun
     · exact h1
   · intro φ
     let φ' : Mn c n →ₗ[ZMod (l ^ n)] ZMod (l ^ n) := φ
-    obtain ⟨b0, h0⟩ := GlobalTheory.T.exists_eq_ordDualGeneratorPairing_of_additiveMap l c n (φ'.toAddMonoidHom.comp (AddMonoidHom.single (fun _ : Fin 2 => Qn c n) 0))
-    obtain ⟨b1, h1⟩ := GlobalTheory.T.exists_eq_ordDualGeneratorPairing_of_additiveMap l c n (φ'.toAddMonoidHom.comp (AddMonoidHom.single (fun _ : Fin 2 => Qn c n) 1))
+    obtain ⟨b0, h0⟩ := _root_.GlobalTheory.Ord2.SelPerp.exists_eq_tbA_mul l c n (φ'.toAddMonoidHom.comp (AddMonoidHom.single (fun _ : Fin 2 => Qn c n) 0))
+    obtain ⟨b1, h1⟩ := _root_.GlobalTheory.Ord2.SelPerp.exists_eq_tbA_mul l c n (φ'.toAddMonoidHom.comp (AddMonoidHom.single (fun _ : Fin 2 => Qn c n) 1))
     refine ⟨![-b1, b0], TDual.ext fun x => ?_⟩
     have e : x = Pi.single 0 (x 0) + Pi.single 1 (x 1) := by
       funext i; fin_cases i <;> simp

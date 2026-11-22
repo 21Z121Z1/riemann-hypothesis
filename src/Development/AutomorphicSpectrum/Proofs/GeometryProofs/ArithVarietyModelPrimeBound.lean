@@ -8,14 +8,14 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IntegralClosur
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.IsPolLatticePlane
 import Development.AutomorphicSpectrum.Statements.AlgebraStatements.HodgeTateNormComparison
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Birational
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ArithVarietyHodgePrimeDegreeStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ArithVarietyHodgePrimeDegree
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DvrLocalizationConstants
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegularLatticeLocalFree
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.FlagMinor
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DotDualLatticeFamily
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericTorsionUnramifiedPrime
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CmFlagUnramifiedPrime
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CpRatioUnramifiedOddPrimeStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CpRatioUnramifiedOddPrime
 open AlgebraicGeometry CategoryTheory NumberField MvPolynomial ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Num GlobalTheory.CompanionTheory.Ar.Top
 open GroundTheory.Heights₂.Heights.NumbersDVR (pointIdeal segreVec IsFlagFrame IsFlagPair SameGenericFibre IsModelOver divCycle)
 open GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.NumbersDVR.Bundles (mseg fnField)
@@ -195,7 +195,7 @@ theorem lat_main : GlobalTheory.CompanionTheory.Ar.HT.FarguesHodgeTate → ∀ (
   intro hF E _ _ _ H D l Xo c O₀ _ β Y S Ω _ K _ _ J _ y 𝔐 d hvar hpq p _ hpS hfree hp2 hdisc b hb A _ _ _ m _ hpm O _ _ _ _
     _ _ _ w hw t
   have hpp : p.Prime := Fact.out
-  have hG : Nonempty (GenTors 𝔐 p) := GlobalTheory.T.arith_variety_hodge_prime_degree E H D l Xo c O₀ β Y S Ω K J y 𝔐 d hvar hpq p hpS hfree hp2 hdisc
+  have hG : Nonempty (GenTors 𝔐 p) := _root_.GlobalTheory.CompanionTheory.Ar.Num.FamEx.nonempty_genTors E H D l Xo c O₀ β Y S Ω K J y 𝔐 d hvar hpq p hpS hfree hp2 hdisc
   obtain ⟨κ, hκ, hS⟩ := _root_.GlobalTheory.CompanionTheory.Ar.HT.ModelSandwich.sandwich_of_htFree hF E H D l Xo c O₀ β Y S Ω K J y 𝔐 p hpS hpq hfree
   obtain ⟨-, -, -, hcon, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Num.ConstClosure.const_closure E H D l Xo c O₀ β Y S Ω K J y 𝔐 d hvar A
   have hE := _root_.GlobalTheory.CompanionTheory.Ar.Num.FamEx.htLattice_eq_dR_of_charZero E H D l Xo c O₀ β Y S Ω K J y 𝔐 p hpS hG hdisc
@@ -220,7 +220,7 @@ theorem lat_main : GlobalTheory.CompanionTheory.Ar.HT.FarguesHodgeTate → ∀ (
       𝔐.dR t q ≤ 𝔐.HT p t q ∧ ∀ e ∈ 𝔐.HT p t q, algebraMap O Ω w • e ∈ 𝔐.dR t q := by
     intro q hq
     by_cases hf : InFibre 𝔐.ξ p q
-    · exact GlobalTheory.T.cp_ratio_unramified_odd_prime E H D l Xo c O₀ β Y S Ω K J y 𝔐 p hpS hp2 hdisc κ _ hκ hw hS q hf (hq w) t
+    · exact _root_.GlobalTheory.CompanionTheory.Ar.Num.FamEx.SandPt.sandwich_at_point E H D l Xo c O₀ β Y S Ω K J y 𝔐 p hpS hp2 hdisc κ _ hκ hw hS q hf (hq w) t
     · have hall : ∀ r : ℕ, r.Prime → ¬ InFibre 𝔐.ξ r q := fun r hr => by
         by_cases hrp : r = p
         · exact hrp ▸ hf

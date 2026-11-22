@@ -14,7 +14,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointFactors
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsFiniteExtensionPrimesStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordsAfterFiniteExtensionStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordsCompatibleAlongMap
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCompComparisonLeftStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCompComparisonLeft
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCompComparisonMiddleStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCompComparisonRight
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
@@ -92,7 +92,7 @@ theorem exists_cover : Top.Given → Out.WeilSt → ∀ (E : Type) [Field E] [Nu
     haveI : NumberField c.F := {}
     exact cst_ext (spMap_inj h4)
   obtain ⟨jA, hext, hpt, hact, hlat⟩ :=
-    GlobalTheory.T.hodge_comp_comparison_left E H D l Xo c Y ∅ S R.Ω Ω R.K R.ι R.y K₂ J₂ y₂ o.𝔐 B i (g ≫ h₁) hdomB hfB
+    _root_.GlobalTheory.CompanionTheory.Ar.CoverLie.main E H D l Xo c Y ∅ S R.Ω Ω R.K R.ι R.y K₂ J₂ y₂ o.𝔐 B i (g ≫ h₁) hdomB hfB
   obtain ⟨Li₀, _, _, M₀, j, V₀, hspan, hj, hV, hflag⟩ :=
     GlobalTheory.T.hodge_comp_comparison_middle E H D l Xo c Y ∅ S R.Ω Ω R.K R.ι R.y K₂ J₂ y₂ o.𝔐 o.Fl B i (g ≫ h₁) jA hfin hdomB hfB hcst hext hpt hact
   have hvb := _root_.GlobalTheory.CompanionTheory.Ar.VbGen.isFlagVBOn_genFib E H D l Xo c Y ∅ S R.Ω Ω R.K R.ι R.y K₂ J₂ y₂ o.𝔐 o.Fl B i (g ≫ h₁) jA hdomB hfB hcst hext hpt hact hlat

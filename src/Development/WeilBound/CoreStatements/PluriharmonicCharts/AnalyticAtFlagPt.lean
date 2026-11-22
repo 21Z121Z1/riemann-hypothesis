@@ -1,11 +1,11 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.ExistsHoloOnOfGerm
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FrameLUMinorValue
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockLUFactorizationStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockLUFactorization
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FrameMinorValueFormula
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsBaseChart
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogPeriodStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.BaseChartHolomorphicCompositionStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.BaseChartHolomorphicComposition
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsFlagPointInOrbit
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BasePartFlagPt
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagPointTriangularChangeOrbit
@@ -41,7 +41,7 @@ theorem bvec_holo (hp : HoloMap A BM.Rb.A pr) {W : Set X} (hW : IsOpen W) {l : F
     (∀ q, A.HoloOn W fun x => FC.bvec BM l (pr x) q) ∧
       ∀ s : M.Ω, (∀ b ∈ BM.O l, RegAt M.x (mCoordIdeal (FC.bvec BM l b)) s) →
         A.HoloOn W fun x => valAt M.x s (FC.bvec BM l (pr x)) := by
-  have key := fun k => GlobalTheory.T.base_chart_holomorphic_composition K ι Φ y Ψ N j M n BM l e ((A.chart k).target ∩ (A.chart k).symm ⁻¹' W)
+  have key := fun k => _root_.GlobalTheory.CompanionTheory.Ar.PB.WSq.FC.bvec_val_analytic K ι Φ y Ψ N j M n BM l e ((A.chart k).target ∩ (A.chart k).symm ⁻¹' W)
     (pr ∘ (A.chart k).symm) ((A.chart k).isOpen_inter_preimage_symm hW)
     (hp.1.comp_continuousOn ((A.chart k).continuousOn_symm.mono Set.inter_subset_left))
     (fun m => (hp.2 k m).mono fun t ht => ⟨ht.1.1, ht.2⟩) (fun u hu => hl _ hu.2)
@@ -123,7 +123,7 @@ theorem exists_holo_flags (hp : HoloMap A BM.Rb.A pr) {W : Set X} (hW : IsOpen W
     have hLU : ∀ τ, ∃ L U : Matrix (Fin N) (Fin N) ℂ, IsBlockDiag j L ∧ IsLowerUni L ∧ IsBlockDiag j U ∧
         U.BlockTriangular id ∧ (∀ c, U c c ≠ 0) ∧ (h₀ τ)⁻¹ * h' τ = L * U := by
       intro τ
-      refine GlobalTheory.T.block_LU_factorization N j _ hj (((hh₀ τ).1.inv (hh₀ τ).2.isUnit).mul (hh' τ).1) ?_ fun i hi => ?_
+      refine _root_.GlobalTheory.CompanionTheory.Ar.PB.WMan.LU.exists_lower_upper N j _ hj (((hh₀ τ).1.inv (hh₀ τ).2.isUnit).mul (hh' τ).1) ?_ fun i hi => ?_
       · rw [Matrix.det_mul]
         exact mul_ne_zero (Matrix.isUnit_nonsing_inv_det _ (hh₀ τ).2.isUnit).ne_zero (hh' τ).2
       · obtain ⟨k, hk⟩ := Option.ne_none_iff_exists'.1 fun e => (M.blk_none (τ, i)).1 e hi

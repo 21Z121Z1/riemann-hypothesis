@@ -9,7 +9,11 @@ import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsFiniteMch
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsChartFiniteType
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.NonemptyLift
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.LieBasisCoordinatesBijectiveTangent
-import Development.AbelianVarietyTheory.Proofs.GenericRegularity.IsCombAtIffCoordinateCombinationStatement
+import Development.AbelianVarietyTheory.Proofs.GenericRegularity.IsCombAtIffCoordinateCombination
+import Development.AbelianVarietyTheory.Definitions.RegularCharts.MatrixTwoByTwoCongr
+import Formalism.LocalToGlobal.ProjectiveLattices.FrameCharts
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.IsEigenvectorIffLieBasisCoordinates
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsFrPtTie
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.TieBaseChange
@@ -170,7 +174,7 @@ theorem inV_of_extIn_eqChar : ∀ (E : Type) [Field E] [NumberField E] [IsCMFiel
     have htan := hv2 _ _ hw
     have heig := (GlobalTheory.Reg.isEigAt_iff_eig E H Dw l Xo c _ _ Y (M j) T.Fr _ y.1.x ΛK τ _ _ hw).mpr hcvK
     obtain ⟨a0, ha0, -⟩ := y.1.basis τ w htan heig
-    have hv := (GlobalTheory.T.isCombAt_iff_coordinate_combination E H Dw l Xo c _ _ Y (M j) T.Fr _ y.1.x ΛK _ (fun i j' => g τ j' i) (y.1.u τ) a0 w
+    have hv := (_root_.GlobalTheory.Reg.VecComb.isCombAt_iff_vec E H Dw l Xo c _ _ Y (M j) T.Fr _ y.1.x ΛK _ (fun i j' => g τ j' i) (y.1.u τ) a0 w
       (hg τ)).mp ha0
     have heq : (∑ i, a0 i • fun j' => g τ j' i) = fun i => algebraMap T.V T.Fr (cv i) := (hv3 w htan).unique hv hw
     refine GlobalTheory.EqCharGood.existsUnique_mulVec_of_inCell (algebraMap T.V T.Fr) hinj (ix τ) (u₀ τ) (hcell τ) cv

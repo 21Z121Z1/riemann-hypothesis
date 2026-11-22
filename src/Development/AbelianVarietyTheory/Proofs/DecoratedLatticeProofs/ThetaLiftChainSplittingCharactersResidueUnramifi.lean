@@ -1,9 +1,11 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnrOffOne
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ChainParSucc
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IdeleCharRestrictLocalUnitsResidueCharStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IdeleCharRestrictLocalUnitsResidueChar
+import Formalism.LocalToGlobal.IndefiniteReal.FWExist
+import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnitaryOnTheta
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsUnramifiedAtPlaceIdempotentOfHeckeCharUnramifiStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeckeCharTameAtOfFactorsThroughResidueStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeckeCharTameAtOfFactorsThroughResidue
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CharacterEquivalenceLocalData
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DualTypeResidueCharsUnramifiedTuple
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HatCPhiHat
@@ -23,7 +25,7 @@ theorem levRes_step : ∀ (D : D7) (c : Com D), c.Is → ∀ k < D.R.m, (∀ PP 
   intro D c hc k hk
   obtain ⟨H, hEq, hres⟩ := hc.res ⟨k, hk⟩
   have hμR : ∀ PP ∈ c.Pg, ResAt (c.μ (k + 1)) PP (c.chi (k + 1) PP)⁻¹ := fun PP hP =>
-    (GlobalTheory.T.ideleChar_restrict_localUnits_residueChar D _ H hEq PP).1 _ (GlobalTheory.T.heckeChar_tameAt_of_factors_through_residue D H PP _ (hres PP hP)) (hres PP hP)
+    (_root_.GlobalTheory.ResLoc.resAt_of_chrEq D _ H hEq PP).1 _ (_root_.GlobalTheory.ChainOnto.TameRes.tameAt_of_isRes D H PP _ (hres PP hP)) (hres PP hP)
   have hμU : UnrOff (c.μ (k + 1)) c.Pg := fun v ε hε hv =>
     GlobalTheory.T.isUnramifiedAtPlaceIdempotent_of_heckeChar_unramified_above D _ H hEq v ε hε fun P hP =>
       (GlobalTheory.ChrTie.unrAt_iff_and_val_eq D _ H hEq P).1.1 (hc.unr ⟨k, hk⟩ P fun hm => by

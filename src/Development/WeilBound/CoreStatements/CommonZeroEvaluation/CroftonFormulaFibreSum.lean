@@ -11,7 +11,7 @@ import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamili
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.AeFibrePointsCardEqDegree
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.GaussianMatrixMeasurePosFinite
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.RandomSetSumExpectationStatement
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.MeasurableFibreCountOverStatement
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.MeasurableFibreCountOver
 set_option maxSynthPendingDepth 1
 open GroundTheory.Heights₂.Heights MeasureTheory MvPolynomial Matrix GlobalTheory.CompanionTheory.Ar.Short.Crofton
 open scoped ENNReal
@@ -25,7 +25,7 @@ theorem measurable_matrix_gaussian (m n : ℕ) :
 
 theorem measurable_cntOver_first {n e : ℕ} {S : Set (EuclideanSpace ℂ (Fin n))} (hS : IsSigmaCompact S) :
     Measurable fun π : Fin (e + 1) → Fin n → ℂ => cntOver S π (firstCoordVec (e + 1)) := by
-  have H := GlobalTheory.T.measurable_fibre_count_over n (e + 1) S hS
+  have H := _root_.GlobalTheory.CompanionTheory.Ar.Short.Crofton.measurable_cntOver n (e + 1) S hS
   have H2 := H.comp (measurable_id.prodMk (measurable_const (a := firstCoordVec (e + 1))))
   exact H2
 

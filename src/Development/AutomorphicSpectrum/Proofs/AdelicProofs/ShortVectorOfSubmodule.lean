@@ -11,7 +11,7 @@ import Development.AutomorphicSpectrum.Proofs.AdelicProofs.IdealLineLatticeIndex
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.GramMatrixPosDefConjugate
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.LinearIndependentCoordinatesDenominatorStatement
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.HermitianLatticeDegreeEqBundleDegreeStatement
-import Development.AutomorphicSpectrum.Proofs.AdelicProofs.SpanBaseChangeCoordinatesStatement
+import Development.AutomorphicSpectrum.Proofs.AdelicProofs.SpanBaseChangeCoordinates
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField MeasureTheory
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi
@@ -295,7 +295,7 @@ theorem short_vector_of_submodule : LineOfLargeDegree.Statement → ∀ (L : Typ
   have hile : i ≤ Module.finrank (𝓞 L) B.carrier := Submodule.finrank_le F
   obtain ⟨K', _, _, _, v, hv, hle⟩ := hS L i hi1 Fl 1 one_pos
   obtain ⟨K'', _, _, _, x, hx0, hxM, hlin⟩ := lattice_line L i Fl K' v hv
-  obtain ⟨X, hX⟩ := GlobalTheory.T.baseChange_inner_self_eq_gramMat_form L B F i f c hcD K'' x hxM
+  obtain ⟨X, hX⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Lines.Lift.lift_length L B F i f c hcD K'' x hxM
   refine ⟨K'', inferInstance, inferInstance, inferInstance, X, ?_, ?_⟩
   · rintro rfl
     obtain ⟨τ⟩ : Nonempty (K'' →+* ℂ) := inferInstance

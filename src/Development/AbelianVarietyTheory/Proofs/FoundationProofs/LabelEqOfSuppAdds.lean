@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ReductionActio
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUpperMulInc
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DetCharacterIrreducibleLabel
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntertwinerUnipotentInvariant
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LabelUniqueOfIrreducibleStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LabelUniqueOfIrreducible
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemPrincipalCongruenceFixedVectorsIff
 
 noncomputable section
@@ -231,7 +231,7 @@ theorem label_of_mapsToProd (L : LabelDatum g) (h5 : 5 ≤ g) (hG : Green) {n : 
   have eid : mapDomainAlgHom ℂ ℂ (MonoidHom.id (Gn g (a + b))) (eSerC L _ F') = eSerC L _ F' := by
     simp
   rw [eid] at hF'
-  obtain rfl : F = F' := GlobalTheory.T.label_unique_of_irreducible g L h5 hG _ V π hπ _ _ hF ⟨w, hw, fun h => hF' (by
+  obtain rfl : F = F' := _root_.GlobalTheory.GLp.OneLabel.label_unique g L h5 hG _ V π hπ _ _ hF ⟨w, hw, fun h => hF' (by
     change Λ _ = 0
     rw [Submodule.subtype_apply, repK_alg, h, map_zero])⟩
   obtain ⟨f₂, hf₂⟩ := hsum (inB finSumFinEquiv) _ hF'
@@ -259,7 +259,7 @@ def lab (L : LabelDatum g) (ρ : GLRep g) : (ZMod g)[X] := Classical.epsilon (Ha
 
 theorem lab_eq (L : LabelDatum g) (h5 : 5 ≤ g) (hG : Green) {ρ : GLRep g} (hρ : IsIrrRep ρ.2.ρ)
     {f : (ZMod g)[X]} (hf : HasLab L ρ.2.ρ f) : lab L ρ = f :=
-  GlobalTheory.T.label_unique_of_irreducible g L h5 hG _ _ _ hρ _ _ (Classical.epsilon_spec ⟨f, hf⟩) hf
+  _root_.GlobalTheory.GLp.OneLabel.label_unique g L h5 hG _ _ _ hρ _ _ (Classical.epsilon_spec ⟨f, hf⟩) hf
 
 theorem InInd.label (L : LabelDatum g) (h5 : 5 ≤ g) (hG : Green) {π : GLRep g} {S : List (GLRep g)}
     (h : InInd π S) : ∀ F, HasLab L π.2.ρ F → F = (S.map (lab L)).prod := by

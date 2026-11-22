@@ -6,11 +6,11 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSqIntCoeffOf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SummableProdPowMultiIndex
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdmissibleIrreducibleCentralScalar
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatrixCoefficientHeckeDecay
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CartanDecompositionCongruenceStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DoubleCosetVolumeFormulaStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CongruenceSubgroupFiniteVolumeStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CartanDecompositionCongruence
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DoubleCosetVolumeFormula
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CongruenceSubgroupFiniteVolume
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatrixCoefficientCartanTranslate
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CongruenceSubgroupBasisNhdsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CongruenceSubgroupBasisNhds
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CongruenceSubgroupAntitone
 
 open Filter Topology MeasureTheory GlobalTheory.PRep GlobalTheory.SplitWeil GlobalTheory.SmGL GlobalTheory.LocGL GlobalTheory.JHMult ValuativeRel
@@ -95,8 +95,8 @@ theorem isSqIntCoeff_of_heckeSpectral : ∀ (k : Type) [Field k] [ValuativeRel k
       (fun _ => (hasSum_fintype _).summable)
     intro _ _ x _
     rw [Subsingleton.elim x 1, norm_norm]
-  obtain ⟨m1, hm1, hK1⟩ := GlobalTheory.T.congruence_subgroup_basis_nhds k N _ (hs v) (by simp)
-  obtain ⟨m2, hm2, hK2⟩ := GlobalTheory.T.congruence_subgroup_basis_nhds k N _ hl (by simp [Module.End.one_eq_id])
+  obtain ⟨m1, hm1, hK1⟩ := _root_.GlobalTheory.CompanionTheory.CongruenceBasis.exists_Km_subset k N _ (hs v) (by simp)
+  obtain ⟨m2, hm2, hK2⟩ := _root_.GlobalTheory.CompanionTheory.CongruenceBasis.exists_Km_subset k N _ hl (by simp [Module.End.one_eq_id])
   have hm : 1 ≤ max m1 m2 := hm1.trans (le_max_left _ _)
   obtain ⟨m, hmm⟩ : ∃ m, m = max m1 m2 := ⟨_, rfl⟩
   rw [← hmm] at hm
@@ -106,7 +106,7 @@ theorem isSqIntCoeff_of_heckeSpectral : ∀ (k : Type) [Field k] [ValuativeRel k
     simpa using this
   have hlK : ∀ x ∈ Zls.Km k N m, l ∘ₗ π x = l := fun x hx =>
     hK2 (_root_.GlobalTheory.CompanionTheory.CongruenceSubgroups.Km_antitone k N m2 m (hmm ▸ le_max_right _ _) hx)
-  obtain ⟨s, hsK, hcov⟩ := GlobalTheory.T.cartan_decomposition_congruence k N m hm hN
+  obtain ⟨s, hsK, hcov⟩ := _root_.GlobalTheory.CompanionTheory.Dblock.CartanCover.cartan_cover k N m hm hN
   have key : ∀ p : s, ∃ (C : ℝ) (ρ : Fin (N - 1) → ℝ), (∀ j, 0 ≤ ρ j) ∧
       (∀ j : Fin (N - 1), (Nat.card 𝓀[k] : ℝ) ^ (((j : ℕ) + 1) * (N - ((j : ℕ) + 1))) * ρ j ^ 2 < 1) ∧
       ∀ g : Fin (N - 1) → ℕ, ∀ x ∈ Zls.Km k N m, ∀ y ∈ Zls.Km k N m,
@@ -126,7 +126,7 @@ theorem isSqIntCoeff_of_heckeSpectral : ∀ (k : Type) [Field k] [ValuativeRel k
     (fun _ g => (Nat.card 𝓀[k] : ℝ) ^ (∑ j : Fin (N - 1), g j * (((j : ℕ) + 1) * (N - ((j : ℕ) + 1)))))
     (fun _ _ => by positivity)
     (μ ((QuotientGroup.mk : GL (Fin N) k → AdGL k N) '' (Zls.Km k N m : Set (GL (Fin N) k))))
-    (GlobalTheory.T.congruence_subgroup_finite_volume k N μ hμ m) ?_ ?_ ?_
+    (_root_.GlobalTheory.CompanionTheory.KmVol.measure_image_Km_lt_top k N μ hμ m) ?_ ?_ ?_
   · intro x
     obtain ⟨h, rfl⟩ := QuotientGroup.mk_surjective x
     obtain ⟨p, hp, g, a, ha', b, hb, z, hz, rfl⟩ := hcov h
@@ -137,7 +137,7 @@ theorem isSqIntCoeff_of_heckeSpectral : ∀ (k : Type) [Field k] [ValuativeRel k
     exact hbound p g a ha' b hb
   · intro p g
     obtain ⟨h1, h2⟩ := hsK p.1 p.2
-    refine (GlobalTheory.T.double_coset_volume_le k N μ hμ m hm p.1.1 p.1.2 h1 h2 g).trans_eq ?_
+    refine (_root_.GlobalTheory.CompanionTheory.KmVolume.measure_translated_doubleCoset_le k N μ hμ m hm p.1.1 p.1.2 h1 h2 g).trans_eq ?_
     rw [ENNReal.ofReal_pow (Nat.cast_nonneg _), ENNReal.ofReal_natCast]
   · intro p
     have h := GlobalTheory.CompanionTheory.Summability.summable_prod_pow_multiIndex (N - 1)

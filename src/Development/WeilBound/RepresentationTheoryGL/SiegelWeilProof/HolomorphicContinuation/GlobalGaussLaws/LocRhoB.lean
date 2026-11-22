@@ -1,6 +1,9 @@
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.GlobalGaussLaws.FourierZeroN
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.KeepLatticeHyperbolicEmbedding
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExtensionAdeleRealComponentsCmTypeStatement
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExtensionAdeleRealComponentsCmType
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HalfData
+import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelWeilUnitaryConvergent
 
 noncomputable section
 
@@ -34,7 +37,7 @@ theorem reidx_one : reidx (1 : M2 n) = 1 := by
 theorem compAt_cT_mul {θ : InfFam D} (hθ : IsInfFam θ) {m : ℕ} (M : Matrix (Fin m) (Fin m) (AE D)) (τ' : D.what₂.Tau) :
     compAt θ τ' (Formalism.UG.cT (Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes.sigR (AF D.host.F) D.sp.cm.sig) M * M) =
       (compAt θ τ' M)ᴴ * compAt θ τ' M := by
-  obtain ⟨-, hcA, -, -⟩ := GlobalTheory.T.extensionAdele_realComponents_cmType D θ hθ
+  obtain ⟨-, hcA, -, -⟩ := _root_.GlobalTheory.StdUnn.RealComp.real_components D θ hθ
   ext i j
   simp only [compAt, Matrix.map_apply, Matrix.mul_apply, Formalism.UG.cT, Matrix.transpose_apply,
     Matrix.conjTranspose_apply]
@@ -52,7 +55,7 @@ theorem cT_one {m : ℕ} : Formalism.UG.cT (Formalism.MainNotions.GlobalTheoryTh
 
 theorem iota_mem_K {θ : InfFam D} {τ : D.what₂.Tau} {ι : GR n →* G D n} (hθ : IsInfFam θ) (hι : IsPlaceEmb θ τ ι)
     (k : GR n) (hk : InK (mR k)) : ι k ∈ K D n := by
-  obtain ⟨hinf0, hcA, -, -⟩ := GlobalTheory.T.extensionAdele_realComponents_cmType D θ hθ
+  obtain ⟨hinf0, hcA, -, -⟩ := _root_.GlobalTheory.StdUnn.RealComp.real_components D θ hθ
   obtain ⟨-, hcomp⟩ := hι
   obtain ⟨hτ, hτ', hfin⟩ := hcomp k
   rw [K, GlobalTheory.RegSch.EmbLevel.mem_levelAll_iff]

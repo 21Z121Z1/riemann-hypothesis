@@ -2,13 +2,13 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.PartFixed
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsVacFOfIsVacVec
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConjMono
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockGaussianReadingDifferentiableStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockGaussianJetsAtOriginEqFockVectorsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockGaussianReadingDifferentiable
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockGaussianJetsAtOriginEqFockVectors
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GaussianConjMonomialMomentEqTaylorCoefficient
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockBargmannReproducingFormula
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegrableConjMonomialBargmannGaussian
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralBargmannEqZeroOfMomentsStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockRealPointTransportContinuousIntegralStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralBargmannEqZeroOfMoments
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockRealPointTransportContinuousIntegral
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsInverseChart
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaSquareIntegrable
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaPureTensorO
@@ -31,7 +31,7 @@ theorem tame_kills_real_translates : ∀ (D : D7) (ψ : AddChar (AF D.host.F) �
     ∀ w : WO S T, w.map (finPart D) = 0 → ℓ (heisO ψ S T w f) = 0 := by
   intro D ψ θ hψ hθ S T A B ℓ hℓ f hf hP w hw
   obtain ⟨σ, hσ⟩ := GlobalTheory.RealLineAt.exists_inverse_chart hθ
-  obtain ⟨hcont, hsurj, htr⟩ := GlobalTheory.T.fockRealPoint_transport_continuous_integral D θ σ hσ S T A B
+  obtain ⟨hcont, hsurj, htr⟩ := _root_.GlobalTheory.FockTransport.fockPt_transport D θ σ hσ S T A B
   obtain ⟨z₀, rfl⟩ := hsurj w hw
   have hth := hf.1
   set F : VCx D.what₂.Tau S.rank T.rank → ℂ := fun z => ℓ (heisO ψ S T (fockPt σ A B z) f) with hFdef
@@ -55,7 +55,7 @@ theorem tame_kills_real_translates : ∀ (D : D7) (ψ : AddChar (AF D.host.F) �
     rw [rd, norm_mul, GlobalTheory.ThetaSquare.norm_heisO hψ, Complex.norm_real, Real.norm_eq_abs,
       abs_of_pos (Real.exp_pos _), mul_comm]
     exact mul_le_mul_of_nonneg_right (hC _) (Real.exp_pos _).le
-  have hent := GlobalTheory.T.fockGaussianReading_differentiable D ψ θ σ hψ hσ S T A B f hf
+  have hent := _root_.GlobalTheory.FockEntire.rd_differentiable D ψ θ σ hψ hσ S T A B f hf
   have hc : ∀ τ, 0 < fw D τ := fw_pos D
   obtain ⟨hint1, hint2⟩ := _root_.GlobalTheory.FockTransl.integrable_conjMono_bargmann_gauss D.what₂.Tau S.rank T.rank (fw D) hc
   have hgq : ∀ z : VCx D.what₂.Tau S.rank T.rank, ∀ x, (Real.exp (-gq (fw D) z) : ℂ) * rd ψ σ A B f x z =
@@ -64,7 +64,7 @@ theorem tame_kills_real_translates : ∀ (D : D7) (ψ : AddChar (AF D.host.F) �
     rw [rd, ← mul_assoc, ← Complex.ofReal_mul, ← Real.exp_add]
     congr 3; ring
 
-  obtain ⟨Cj, hCj⟩ := GlobalTheory.T.fock_gaussian_jets_at_origin_eq_fock_vectors D ψ θ σ hψ hσ S T A B
+  obtain ⟨Cj, hCj⟩ := _root_.GlobalTheory.FockTransl.Jet.jet_eq_fock D ψ θ σ hψ hσ S T A B
   have hpt : ∀ P, IsThetaFunO ψ S T (GlobalTheory.ChainFr.ptF ψ θ A B f P) :=
     fun P => GlobalTheory.GalLift.Vec.theta_pureTensorO hψ hθ _ _ _ _ hth P
   have hmom : ∀ m : DVar D.what₂.Tau S.rank T.rank →₀ ℕ,
@@ -89,7 +89,7 @@ theorem tame_kills_real_translates : ∀ (D : D7) (ψ : AddChar (AF D.host.F) �
     have := key _ (hint1 m) hthe
     rw [← this, e, hℓ.smul _ _ (hpt _), hP, mul_zero]
 
-  have hU := GlobalTheory.T.integral_exp_bk_mul_eq_zero_of_moments_zero D.what₂.Tau S.rank T.rank (fw D) hc F hFc hFb hmom z₀
+  have hU := _root_.GlobalTheory.FockTransl.integral_bargmann_eq_zero_of_moments D.what₂.Tau S.rank T.rank (fw D) hc F hFc hFb hmom z₀
   set K' : ℂ := ((∏ τ, (fw D τ / Real.pi) ^ (S.rank * T.rank) : ℝ) : ℂ) * (Real.exp (-gq (fw D) z₀ / 2) : ℂ) with hK'
   have e : (fun x => ∫ z, (K' * (Complex.exp (bk (fw D) z₀ z) * (Real.exp (-gq (fw D) z / 2) : ℂ))) *
       heisO ψ S T (fockPt σ A B z) f x) = heisO ψ S T (fockPt σ A B z₀) f := by

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FinrankEqZeroIff
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FlagComponentFramedPointFrame
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChartFrameBaseHoldsStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChartFrameBaseHolds
 
 noncomputable section
 
@@ -88,6 +88,6 @@ theorem flagBase_of (hF : FrameBaseSt) : FlagBaseSt := by
       rw [← bc_bc, Category.assoc]
       exact isCombAtG_bc _ ψ hc
 
-theorem flagBase : FlagBaseSt := flagBase_of GlobalTheory.T.chart_frame_base_holds
+theorem flagBase : FlagBaseSt := flagBase_of _root_.GlobalTheory.LocM.FrameBase.frameBase
 
 end GlobalTheory.LocM.Cht.FlagBase

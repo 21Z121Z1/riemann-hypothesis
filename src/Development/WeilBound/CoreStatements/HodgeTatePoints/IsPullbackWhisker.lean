@@ -1,6 +1,7 @@
 import Development.WeilBound.CoreStatements.HodgeTatePoints.Comp1PointPowerExpand
 import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatLieBc
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModelStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LieModel
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ChartJetTrD
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBMapPf
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBIdLB
@@ -108,8 +109,8 @@ theorem basis_bc {n : ℕ} {tg : Fin n → (Sp (DualNumber S) ⟶ t.G.left)} (ht
     (hw : IsTanAtG t (spMap f ≫ x) w) :
     ∃! a : Fin n → S₂, IsCombAtG t (spMap f ≫ x) (fun i => spMap (GlobalTheory.CompanionTheory.Ar.dualMap f) ≫ tg i) a w := by
   letI : Algebra S S₂ := f.toAlgebra
-  obtain ⟨V, _, _, ⟨M⟩⟩ := GlobalTheory.T.exists_lie_model X0 t.G S x
-  obtain ⟨V', _, _, ⟨M'⟩⟩ := GlobalTheory.T.exists_lie_model X0 t.G S₂ (spMap f ≫ x)
+  obtain ⟨V, _, _, ⟨M⟩⟩ := _root_.GlobalTheory.CompanionTheory.Ar.lieModel_exists X0 t.G S x
+  obtain ⟨V', _, _, ⟨M'⟩⟩ := _root_.GlobalTheory.CompanionTheory.Ar.lieModel_exists X0 t.G S₂ (spMap f ≫ x)
   obtain ⟨j, hj, -, hbs⟩ := PositivityTheory.HtPt.Htat.lie_bc X0 t.G S S₂ x V V' M M'
   choose b hb' using fun l => M.onto (Over.homMk (tg l) (ht l).1) (ht l).2
   have htg : tg = fun l => (M.pt (b l)).left := funext fun l => by rw [hb']; rfl

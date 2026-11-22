@@ -3,8 +3,8 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Cu
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfMemWeakIn
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SetIntegralNormRmulLe
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ContinuousIntegralInvMulOfLocallyIntegrable
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCommonDenominatorCompactFiniteAdelesStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardAlgebraicIntegersBoundedArchimedeanLeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCommonDenominatorCompactFiniteAdeles
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardAlgebraicIntegersBoundedArchimedeanLe
 open NumberField GlobalTheory.CuspRep GlobalTheory.CuspRep.CuspidalL2GL GlobalTheory.CuspQuot GlobalTheory.AutomorphicL2Unitary GlobalTheory.OpTrace MeasureTheory
 
 namespace GlobalTheory
@@ -21,9 +21,9 @@ theorem rat_bounded_compact_polynomial : ∀ (E : Type) [Field E] [NumberField E
       ({ξ : E | ‖pInf E (algebraMap E (Ad E) ξ)‖ ≤ T ∧ pFin E (algebraMap E (Ad E) ξ) ∈ Kf}.ncard : ℝ)
         ≤ C * T ^ m := by
   intro E _ _ _
-  obtain ⟨m, C₀, hC₀, hcount⟩ := GlobalTheory.T.card_algebraic_integers_bounded_archimedean_le E
+  obtain ⟨m, C₀, hC₀, hcount⟩ := _root_.GlobalTheory.IntCount.card_bounded_integers_le E
   refine ⟨m, fun Kf hKf => ?_⟩
-  obtain ⟨n, hn, hint⟩ := GlobalTheory.T.exists_common_denominator_compact_finiteAdeles E Kf hKf
+  obtain ⟨n, hn, hint⟩ := _root_.GlobalTheory.AdeleDenom.exists_common_denom E Kf hKf
   have hn' : (1 : ℝ) ≤ n := by exact_mod_cast hn
   refine ⟨C₀ * (n : ℝ) ^ m, by positivity, fun T hT => ?_⟩
   have hnT : (1 : ℝ) ≤ n * T := by nlinarith

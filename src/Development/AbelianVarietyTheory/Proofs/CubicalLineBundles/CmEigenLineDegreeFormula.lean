@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Statements.PrincipalLattices.ConclusionsAtIdentity
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.DegreeLieLatticesCmTripleBaseChangeStatement
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.DegreeLieLatticesCmTripleBaseChange
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsCmEllipticCurveIntegersWithPeriod
 import Development.AbelianVarietyTheory.Definitions.CMLattices.ExistsIsThetaDegOfIsLocalModel
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsTensorDecompositionPureTypeCmTriple
@@ -91,8 +91,8 @@ theorem degSt : CMCurve → ThetaUnifAV → Out.Laws → HomExtDvr → DegSt := 
   obtain ⟨⟨h', hh'⟩, -⟩ := LieMetric.exists_unique_isHerm hU hL k T'.pol F'
   obtain ⟨⟨h₁, hh₁⟩, -⟩ := LieMetric.exists_unique_isHerm hU hL k₁ T₁.pol F₁
 
-  have d1 := (GlobalTheory.T.degree_lieLattices_cmTriple_baseChange hU hL E H K k j T T' mT F F' h h' hh hh').2 τ
-  have d2 := (GlobalTheory.T.degree_lieLattices_cmTriple_baseChange hU hL E H k k₁ (IntermediateField.inclusion hk).toRingHom T' T₁ m₁ F' F₁ h' h₁
+  have d1 := (_root_.GlobalTheory.CM.LieBaseChange.deg_lieLat_eigLat_baseChange hU hL E H K k j T T' mT F F' h h' hh hh').2 τ
+  have d2 := (_root_.GlobalTheory.CM.LieBaseChange.deg_lieLat_eigLat_baseChange hU hL E H k k₁ (IntermediateField.inclusion hk).toRingHom T' T₁ m₁ F' F₁ h' h₁
     hh' hh₁).2 ((RingOfIntegers.mapRingHom j).comp τ)
 
   have h2 : 2 * τ H.w0 = 1 + ρ := by

@@ -16,7 +16,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCuspCentre
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FramesOnEqModel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormsComponentFiniteDimensionalAndSpanned
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCuspFormPairQuotientHorizontalGenerator
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSectionQuotientOfContinuousReadingStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSectionQuotientOfContinuousReading
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousOnReadingIntegerExponentSection
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecZEqZeroOfGenVal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnfoldingSectionsFiniteType
@@ -247,7 +247,7 @@ theorem flatSec_always : Always fun U x => ArchEx U x := by
   have hσ₀ := hgood c.F.val.toRingHom
   generalize goodOf c c.F.val.toRingHom = σ₀ at hσ₀
   obtain ⟨a₀, ha₀, h₀⟩ := hq σ₀ hσ₀
-  obtain ⟨sig, hsig, hsi, hsf⟩ := GlobalTheory.T.exists_section_quotient_of_continuous_reading E H Dw l Xo c r U x hL Z _ _ f g hfs hf.2 hgs hg.2 hf0 σ₀ hσ₀
+  obtain ⟨sig, hsig, hsi, hsf⟩ := _root_.GlobalTheory.SecDivision.exists_quotient E H Dw l Xo c r U x hL Z _ _ f g hfs hf.2 hgs hg.2 hf0 σ₀ hσ₀
     (fun k y => a₀ * horizGen ⟨_, hmem σ₀ hσ₀ k⟩ y)
     (fun k => continuousOn_const.mul (flatSec_continuousOn_horizGen _ _)) (fun z hz => h₀ z.1 _ z.2 hz)
   rw [hex] at hsig
@@ -284,7 +284,7 @@ theorem flatSec_always : Always fun U x => ArchEx U x := by
     have h4 := h3 z hz
     rw [h1, ← zero_smul c.F (0 : Rul Xo c), homN_smul, map_zero, norm_zero, zero_mul] at h4
     exact hb.ne h4
-  obtain ⟨inv, hinv, hii, hig⟩ := GlobalTheory.T.exists_section_quotient_of_continuous_reading E H Dw l Xo c r U x hL Z _ _ g f hgs hg.2 hfs hf.2 hg0 σ₀ hσ₀
+  obtain ⟨inv, hinv, hii, hig⟩ := _root_.GlobalTheory.SecDivision.exists_quotient E H Dw l Xo c r U x hL Z _ _ g f hgs hg.2 hfs hf.2 hg0 σ₀ hσ₀
     (fun k y => a₀⁻¹ * (mat y ⟨_, hmem σ₀ hσ₀ k⟩).det)
     (fun k => (continuous_const.mul (flatSec_continuous_det _)).continuousOn) (fun z hz => by
       have hd := (hz.1 ⟨_, hmem σ₀ hσ₀ z.1⟩).1
@@ -321,7 +321,7 @@ theorem exists_ne_zero_key (hL : Laws U x) : Nonempty (KeySec Xo c) ∧ ∀ (Z :
     (Fintype.equivFin _).symm
   obtain ⟨K, hKmem, hKval⟩ := _root_.GlobalTheory.KeyFourth.exists_unit_secZ_keyRule κ k₁ k₂ k₆ E H Dw l Xo c _ e hL.pos
   have hσ0 := goodEmb_goodOf c c.F.val.toRingHom
-  obtain ⟨ρ, -⟩ := GlobalTheory.T.exists_keySection_fourthRoot_perComponent κ k₁ k₂ k₆ k₄ E H Dw l Xo c _ e _ r (U _) K hσ0 (hL.unf _ hσ0) hL.geo hL.pos hKmem hKval
+  obtain ⟨ρ, -⟩ := _root_.GlobalTheory.KeyRoot.exists_keySec_pow_four κ k₁ k₂ k₆ k₄ E H Dw l Xo c _ e _ r (U _) K hσ0 (hL.unf _ hσ0) hL.geo hL.pos hKmem hKval
   refine ⟨⟨ρ⟩, fun Z G hG ⟨f, hf, hf0⟩ => ⟨f * (idem Z * (K : Rul Xo c)), ?_,
     mul_ne_zero_of_inv (t := ((K⁻¹ : (Rul Xo c)ˣ) : Rul Xo c)) hf hf0 (by rw [mul_assoc, Units.mul_inv, mul_one])⟩⟩
   have hwt := GlobalTheory.KeyRootTw.wtOf_zero_fst E H Dw

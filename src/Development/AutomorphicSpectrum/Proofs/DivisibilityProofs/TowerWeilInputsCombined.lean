@@ -21,9 +21,10 @@ import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.TowerWeilTheore
 import GroundTheory.HeightsAndTheta.Heights.Antisymmetric.Statements
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.TowerI3OfSemipositiveNef
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.FlagHeightI9PropertiesStatement
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.TowerT1LimitStatement
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.TowerT1Limit
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DivSuppArithHolds
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueRationalStatementStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueRationalStatement
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRes
 open MvPolynomial ReciprocityTheory.ChartRestriction.G.Geo Filter Topology GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Top
 
 namespace GlobalTheory.CompanionTheory.Ar.Top
@@ -40,8 +41,8 @@ theorem chain_tower : PB.FlagHeight → PB.Inputs → SuccessiveMinimaLowerBound
     hI5 hI6 hI7 hI8 hP6 hPA hPF hVol hSL
   have hN : 2 ≤ N := by have := T.j_pos; have := T.j_lt; omega
   have hI3 : T.I3 := _root_.GlobalTheory.CompanionTheory.Ar.Top.RootTower.tower_I3_of_nef_inputs Ψ N T hA1 hM1 hM2 hAN
-  have hT1 : T.T1 II := GlobalTheory.T.tower_T1_limit II Ψ N T hP hI2 hI3
-  have hW : T.ThmW II := _root_.GlobalTheory.CompanionTheory.Ar.Top.thmW_tower hIn.2.2.2.2.2.1 GlobalTheory.T.exists_unique_rational_statement GlobalTheory.CompanionTheory.Ar.Link.divSuppArith_holds hZ1 hZ2
+  have hT1 : T.T1 II := _root_.GlobalTheory.CompanionTheory.Ar.Top.LimitVolumeRatio.tower_T1_limit_of_inputs II Ψ N T hP hI2 hI3
+  have hW : T.ThmW II := _root_.GlobalTheory.CompanionTheory.Ar.Top.thmW_tower hIn.2.2.2.2.2.1 _root_.GlobalTheory.CompanionTheory.Ar.Link.existsUnique_rat GlobalTheory.CompanionTheory.Ar.Link.divSuppArith_holds hZ1 hZ2
     II hII Ψ N T hP hI1 hI2 hI3 hI5 hI6 hI7
   have hI9 : I9 (Ψ := Ψ) (N := N) (hhFl Ψ N II) := GlobalTheory.T.flag_height_I9_properties hFH hIn II hII Ψ N hN
   have hB : T.ThmB II (hhFl Ψ N II) := GlobalTheory.T.tower_theorem_B hAP II Ψ N T (hhFl Ψ N II) hP hW hI8 hI9

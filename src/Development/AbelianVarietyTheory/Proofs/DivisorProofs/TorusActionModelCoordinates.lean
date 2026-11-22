@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationP
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdelicSchwartzNeZeroAtOrigin
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergWordL2Bound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeasurableThetaSumOfSchrodinger
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralInfiniteScalingStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralInfiniteScaling
 open scoped TensorProduct NNReal Matrix ENNReal
 open NumberField IsDedekindDomain MeasureTheory Filter Topology Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes
 open GlobalTheory.WeilM GlobalTheory.AdelicU GlobalTheory.LFun GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels GlobalTheory.ThK
@@ -129,7 +129,7 @@ theorem main : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberField
     rw [eLpNorm_lt_top_iff_lintegral_rpow_enorm_lt_top (by norm_num) (by norm_num)] at h2
     simpa using h2.ne
   have hU := hS.unit μ hμ (g, 1) Φ hΦ
-  have hsc := GlobalTheory.T.lintegral_infinite_scaling F (Fin n × Fin d) u hu μ hμ (fun y => ‖Φ y‖ₑ ^ 2)
+  have hsc := _root_.GlobalTheory.TorusTheta.lintegral_infScale_pi F (Fin n × Fin d) u hu μ hμ (fun y => ‖Φ y‖ₑ ^ 2)
   simp only [hval Φ hΦ, enorm_mul, mul_pow] at hU
   rw [lintegral_const_mul' _ _ (by simp), hsc] at hU
   set P := ENNReal.ofReal (∏ j, u j ^ Module.finrank ℚ F) with hPdef

@@ -75,12 +75,12 @@ theorem zak_laws : ∀ (D : D7) (S T : HSp D) (r g : ℕ) (hr : T.rank = r) (ψ 
       Zak ψ θ hr eT bas idx (frOf hr eT Z) φ f ↔ f = C.Th (C.xB B) φ := by
     intro φ hφ f
     rw [← hzak]
-    exact ⟨(GlobalTheory.T.adelicZakTheta_exists_unique D S T C _ hx φ hφ).2 f, fun h => h ▸ (GlobalTheory.T.adelicZakTheta_exists_unique D S T C _ hx φ hφ).1⟩
+    exact ⟨(_root_.GlobalTheory.Ker.ZakEx.isZak_Th D S T C _ hx φ hφ).2 f, fun h => h ▸ (_root_.GlobalTheory.Ker.ZakEx.isZak_Th D S T C _ hx φ hφ).1⟩
   refine ⟨fun φ hφ => ⟨⟨_, (key φ hφ _).2 rfl⟩, fun f hf => ?_⟩, fun f hf hF => ?_⟩
   · have hth : C.IsTh f := hf.1
     obtain rfl := (key φ hφ f).1 hf
     obtain ⟨l1, l2, l3, -⟩ := _root_.GlobalTheory.Ker.Ctx.th_laws D S T C _ hx φ hφ
-    obtain ⟨f1, f2⟩ := (GlobalTheory.T.fockPolynomialVector_testTheta_zero_eq_thetaSeries D S T C).2 B hB φ hφ
+    obtain ⟨f1, f2⟩ := (_root_.GlobalTheory.Ker.fvec_Th_zero D S T C).2 B hB φ hφ
     refine ⟨fun f' hf' => (key φ hφ f').1 hf', fun φ' hφ' h => ?_, fun a => ?_, fun φ' f' hφ' h => ?_,
       fun y => ?_, fun ρ => ?_, fun q0 hq Q => ?_⟩
     · exact ((l1 φ' hφ').2 ((key φ' hφ' _).1 h)).symm

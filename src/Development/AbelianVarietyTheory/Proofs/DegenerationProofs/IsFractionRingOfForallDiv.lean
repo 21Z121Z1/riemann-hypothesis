@@ -12,7 +12,7 @@ import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsRigidifi
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSymmetricSpreadOutLineBundleAbelianScheme
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ClosedImmersionGenericUnitLocusStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsKernelPolarisationTrivialSpreadLocalisatio
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSymmetryHypothesisSpreadFromGenericFibreStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSymmetryHypothesisSpreadFromGenericFibre
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsPointIndependenceSpreadToGeometricFibres
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsLevelStructureOfGenericOfFibrewiseIndep
 
@@ -166,7 +166,7 @@ theorem polAV_spreads_out : ∀ (o Ω : Type) [CommRing o] [Field Ω] [Algebra o
   obtain ⟨d₁, hd₁, Hsym⟩ := _root_.GlobalTheory.GenSpread.exists_sym R₂ Ω G P.A φ₂ L₂ P.L hab hG hL₂ P.isLB eL₂ P.sym
   obtain ⟨d₂, hd₂, Hk⟩ := _root_.GlobalTheory.GenSpread.exists_kTriv hL.globalFns R₂ Ω G P.A φ₂ L₂ P.L hab hG hL₂ P.isLB eL₂
     ((ProjSpace.isProjBy_iff_isProjOver G.hom).2 (aH₂.isProjOver G.hom)) P.ktriv
-  obtain ⟨d₃, hd₃, Hs⟩ := GlobalTheory.T.exists_symmetryHypothesis_spread_from_genericFibre R₂ Ω G P.A φ₂ L₂ P.L hab hG hL₂ P.isLB eL₂ w wd w₀ wd₀ hw hwd hw₀ hwd₀ hww hS₁ hS₂
+  obtain ⟨d₃, hd₃, Hs⟩ := _root_.GlobalTheory.SymSpread.exists_forall_hypS R₂ Ω G P.A φ₂ L₂ P.L hab hG hL₂ P.isLB eL₂ w wd w₀ wd₀ hw hwd hw₀ hwd₀ hww hS₁ hS₂
   obtain ⟨d₄, hd₄, Hi⟩ := _root_.GlobalTheory.GenSpread.exists_forall_linComb_injective R₂ Ω G P.A φ₂ inferInstance hG _ M y lev.pt hy fun c c' h => by
     refine lev.indep (AlgebraicClosure Ω) (spMap (algebraMap Ω _)) c c' ?_
     rw [← comp_linComb, ← comp_linComb, h]

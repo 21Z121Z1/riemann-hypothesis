@@ -5,7 +5,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HasPeriods
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EvalMod
 import Development.WeilBound.CoreStatements.CrystallinePeriodRings.MaximalIdealEqSpanT
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LubinTateIterateLimitCongruence
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LubinTateScaledIterateTendsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LubinTateScaledIterateTends
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LubinTateSeriesCommuteLinear
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LubinTateCommutingSeriesUnique
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LubinTateIterateEventuallyZero
@@ -15,9 +15,9 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemFBOfNear
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TeichmullerNearPowerExists
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LubinTateSeriesDeRhamPeriod
 import Development.WeilBound.CoreStatements.HeckeCharacterDeRham.DeRhamHeckeResults.LAdicHeckeDeRham.LAdicHeckeFields.Reduce
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LubinTateNormCyclotomicStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LubinTateNormCyclotomic
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LubinTateEndomorphismSeriesExists
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CharacterValuesIntegralStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CharacterValuesIntegral
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformizerPropertiesResidue
 
 noncomputable section
@@ -156,7 +156,7 @@ theorem pre_period (HT : TiltLeaf) (K : FinExt l) (χ : ↥(GK K) →* (↥K.1)�
       rw [pow_one] at *
       linear_combination e'
     rwa [this]
-  obtain ⟨t, ht⟩ := GlobalTheory.T.lubin_tate_scaled_iterate_tends E ϖ' hϖ' q hq2 Q hQS hnilQ
+  obtain ⟨t, ht⟩ := _root_.GlobalTheory.CompanionTheory.LTPer.LogConv.log_converges E ϖ' hϖ' q hq2 Q hQS hnilQ
   have hkerF : ∀ x, thB l x = 0 ↔ x ∈ FB l 1 := fun x => by
     rw [FB, pow_one, RingHom.mem_ker]
   refine ⟨t, ?_, ?_, ?_⟩
@@ -167,7 +167,7 @@ theorem pre_period (HT : TiltLeaf) (K : FinExt l) (χ : ↥(GK K) →* (↥K.1)�
     refine hnot (v 0 ^ (q ^ n)) (pow_ne_zero _ hv0) (-s) (S.neg_mem hs) ?_
     rw [mul_neg, ← e, neg_neg]
   · intro g hg hfix
-    obtain ⟨a, ha⟩ := GlobalTheory.T.character_values_integral K χ hc ⟨g, hg⟩
+    obtain ⟨a, ha⟩ := _root_.GlobalTheory.CompanionTheory.LTPer.IntVal.integral_values K χ hc ⟨g, hg⟩
     obtain ⟨φ, hφ0, hφ1, hφc⟩ := _root_.GlobalTheory.CompanionTheory.LTPer.exists_series_comm K π hπ a
     have hφ1' : ((PowerSeries.coeff 1 φ : ↥(OL K)) : ↥K.1) = ((χ ⟨g, hg⟩ : (↥K.1)ˣ) : ↥K.1) := by
       rw [hφ1, ha]
@@ -242,7 +242,7 @@ theorem hasPeriods_main (HT : TiltLeaf) (HP : ProductLeaf) {l : ℕ} [Fact l.Pri
     (K : FinExt l) (χ : ↥(GK K) →* (↥K.1)ˣ) (hLT : IsLTChar K χ)
     (hc : Continuous (fun g => (((χ g : (↥K.1)ˣ) : ↥K.1) : Om l))) : HasPeriods P K χ := by
   obtain ⟨T⟩ := hT
-  have hN := GlobalTheory.T.lubin_tate_norm_cyclotomic K χ hLT hc
+  have hN := _root_.GlobalTheory.CompanionTheory.LTNorm.norm_eq_cyclo K χ hLT hc
   obtain ⟨π, z, hD⟩ := hLT
   choose t ht using fun μ => pre_period HT K χ π z hD hc μ
   have hP := HP K χ hN t ht

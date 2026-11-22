@@ -1,6 +1,10 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SumMulFG
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionValueUniqueBaseChangeStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionValueUniqueBaseChange
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsThetaMeanSquareNorm
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.ZhangDimensionPushDownGrassmannianHeightBounds
+import GroundTheory.HeightsAndTheta.Heights.KernelsLattice
+import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.StatementsBundles
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionValueLineBundleSectionStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TheoremOfCubeSectionValueStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LineBundlePullbackGenerator
@@ -28,7 +32,7 @@ variable {E : Type} [Field E] [NumberField E] [IsCMField E] {H : Host E} {L : Ty
 theorem exists_mulGen (D : PPData H L) (th : Out.H0 D.t.PP.L 1) (N : ℕ) (hN : 1 ≤ N) :
     ∃ w : LB.Gen (LB.LinComb D.t.PP.L (K := Fin 2) ![((𝟙 D.t.G : D.t.G ⟶ D.t.G) ^ N).left, 𝟙 D.t.G.left] ![1, -((N : ℤ) ^ 2)]),
       w.IsGen := by
-  obtain ⟨T, hT, -⟩ := (GlobalTheory.T.torsion_value_unique_base_change E H L D 1 th L (spMap (algebraMap (𝓞 L) L)) 1 N hN (one_pow N)).1
+  obtain ⟨T, hT, -⟩ := (_root_.GlobalTheory.CompanionTheory.Ar.Sl.TorsExist.torsVal_existsUnique E H L D 1 th L (spMap (algebraMap (𝓞 L) L)) 1 N hN (one_pow N)).1
   obtain ⟨-, -, w, _, _, hw, -⟩ := hT
   exact ⟨w, hw⟩
 end GlobalTheory.CompanionTheory.Ar.Sl.Transl

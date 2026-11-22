@@ -8,7 +8,7 @@ import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
 import Formalism.LocalToGlobal.ProjectiveLattices.VolProofs
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.MemberDictionaryInvariantRationalLevel
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.MemberDictionaryFramesOrthonormalUnit
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsPrincipalLevelSubgroupOpenStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsPrincipalLevelSubgroupOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.MarkingRuleTranslateStable
 
 open NumberField IsDedekindDomain ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.FD Formalism.BasicNotions Formalism.MainNotions Formalism.BasicNotions.TH Formalism.L2.Theta Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.L2.Pj
@@ -27,7 +27,7 @@ theorem adel_leftInv_and_continuous : ∀ (D : D7) (H : ReciprocityTheory.ChartR
   have : IsTopologicalGroup (GA D V) :=
     inferInstanceAs (IsTopologicalGroup (HR (AF D.host.F) D.sp.cm.sig V.gram))
   have hM : 0 < l.M := lt_of_lt_of_le (by norm_num) l.three_le
-  obtain ⟨⟨Kf, hKf⟩, hnb⟩ := GlobalTheory.T.exists_principalLevel_subgroup_open D V l.M
+  obtain ⟨⟨Kf, hKf⟩, hnb⟩ := _root_.GlobalTheory.Member.PrincLevel.exists_levelK_and_nhds D V l.M
   obtain ⟨h1, -, h3, -, h5⟩ := _root_.GlobalTheory.Member.dict_invariant D H Dw l Xo c σ V r C hC dict hd Kf hKf
   have hχ := hC.base.chi
   have hsec : ∀ k, (C.M.X k).IsSec (la k) (P k) := fun k => (hP k).1.1

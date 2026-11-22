@@ -35,7 +35,7 @@ theorem rallis_inner_product_bottom_norm_eq (hP : _root_.GlobalTheory.FunPr.Thet
       volQ B mH * volQ A m * ((∏ i ∈ Finset.range A.rank, l i) /
         LFun.dSfun D.host.E (Sf : Set (FinPl D)) A.rank B.rank ((t : ℂ) / 2)) *
         ∫ g in openOff A LA Sf, wcoef om ν 𝓕 Φ Φ g ∂m := by
-  have hU19 := GlobalTheory.T.unramifiedDoublingIntegral_inert_place
+  have hU19 := _root_.GlobalTheory.InertZeta.unramDoublingInert
   have hPB := paramBoundOn_all_of_split_inert D (GlobalTheory.T.sphericalParameterBound_split_place D) (GlobalTheory.T.sphericalParameterBound_nonsplit_places hU19 D)
   have hLZ := localZetaOn_all_of_split_inert D (GlobalTheory.T.unramifiedDoublingIntegral_splitPlace_adelic hP.unramifiedDoublingGL D)
     (GlobalTheory.T.unramified_doubling_integral_inert_adelic hU19 D (GlobalTheory.T.sphericalParameterBound_nonsplit_places hU19 D))

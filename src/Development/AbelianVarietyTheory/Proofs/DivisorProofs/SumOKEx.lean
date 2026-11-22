@@ -2,9 +2,9 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSBArgs
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GridMovedTensorBoundedSupportLocallyConstant
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatTensorDependsBelowAndSmallTranslationInvaria
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatTensorSupportBoundedByUniformizerPowStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatTensorSupportBoundedByUniformizerPow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatTensorVanishesUnlessLastRowBounded
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFinsetCosetRepsBoundedHalfPointsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFinsetCosetRepsBoundedHalfPoints
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndicatorSmallCosetHalfIsSchwartzBruhat
 
 noncomputable section
@@ -241,7 +241,7 @@ theorem exists_isSBArgs_flat [MeasurableSpace k] [BorelSpace k] (G : Grid k) (hs
     (hm : 2 ≤ G.m) (hϖ : IsUnif ϖ) (hψ : HasConductor ψ 1) (hT : G.IsTensor ϖ e (oppositePath G.m) T) :
     ∃ n, IsSBArgs G ϖ n (flatTensor hs ψ ν (moved G keep g T)) := by
   obtain ⟨hdep, n₁, hper⟩ := _root_.GlobalTheory.FunObj.FlatDep.flatTensor_dep_and_per G hs ψ ν ϖ e T keep g hϖ hψ hT
-  obtain ⟨n₂, hsupp⟩ := GlobalTheory.T.flatTensor_support_bounded_by_uniformizer_pow G hs ψ ν ϖ e T keep g hϖ hT
+  obtain ⟨n₂, hsupp⟩ := _root_.GlobalTheory.FunObj.FlatSupp.flatTensor_support G hs ψ ν ϖ e T keep g hϖ hT
   obtain ⟨n₃, hlast⟩ := _root_.GlobalTheory.FunObj.FlatLast.flatTensor_lastRow_bounded G hs ψ ν ϖ e T keep g hm hϖ hψ hT
   refine ⟨max n₁ (max n₂ n₃), hdep, fun x y a b ha hb => hper x a y b
     (fun j hj r s => (ha j hj r s).trans (val_pow_anti hϖ (le_max_left _ _)))
@@ -516,9 +516,9 @@ theorem GridChoice.exists_isCosExpansion {μ₀ : T} (hL : L.Is μ₀) (S : Grid
   set N := Finset.univ.sup n with hN
   have hF : ∀ w : locPl G t, IsSBArgs (locGrid G t w.1) (unifAt w.1) N (S.term t Φ β w).datum := fun w =>
     (hn w).mono (isUnif_unifAt w.1) (Finset.le_sup (f := n) (Finset.mem_univ w))
-  choose R hR1 hR2 hR3 using fun j : Fin D.R.m => GlobalTheory.T.exists_finset_cosetReps_bounded_half_points (S.βp (j + 1)) (S.βp j) (locPl G t) e N he
+  choose R hR1 hR2 hR3 using fun j : Fin D.R.m => _root_.GlobalTheory.FunObj.exists_finset_cosetReps (S.βp (j + 1)) (S.βp j) (locPl G t) e N he
   choose R' hR1' hR2' hR3' using fun i : Fin D.R.m =>
-    GlobalTheory.T.exists_finset_cosetReps_bounded_half_points (S.B.β i D.R.m) (S.B.β (i + 1) D.R.m) (locPl G t) e N he
+    _root_.GlobalTheory.FunObj.exists_finset_cosetReps (S.B.β i D.R.m) (S.B.β (i + 1) D.R.m) (locPl G t) e N he
   let Ix := (∀ j : Fin D.R.m, R j) × (∀ i : Fin D.R.m, R' i)
   let rX : Ix → ∀ j : Fin D.R.m, WO (G.V (.top j)) (G.V (.top (j + 1))) := fun κ j => (κ.1 j).1
   let rY : Ix → ∀ i : Fin D.R.m, WO (G.pS (.chi i D.R.m : Pair T)) (G.pT (.chi i D.R.m : Pair T)) := fun κ i => (κ.2 i).1

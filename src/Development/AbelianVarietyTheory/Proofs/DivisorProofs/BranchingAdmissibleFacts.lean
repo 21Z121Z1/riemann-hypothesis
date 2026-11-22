@@ -8,7 +8,7 @@ import Formalism.BranchSandwichDivisors.DivFromPassageAndNorm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualWeylLeOfHighestVectorRowOperatorStable
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LastRowTopComponentDualWeylEqMonomialMulStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualWeylLastZeroInclusion
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockPairingLastRowMonomialReadsCoefficientStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockPairingLastRowMonomialReadsCoefficient
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BranchingListCharacterProduct
 
 open MvPolynomial Formalism.GradedWeylDivisibility Formalism.BranchingDeterminantCap Formalism.BasicNotions Formalism.L2.DIV GlobalTheory.Mem.Gelf GlobalTheory.Mem.GelfCheck GlobalTheory.BrCompare
@@ -324,7 +324,7 @@ theorem fock_xi {lam sg : Fin n → ℕ} (hI : Interlace (lamZ lam) (fun i => (s
       ring)
     (by
       simp only [LinearMap.sub_apply, LinearMap.smul_apply, LinearMap.flip_apply, fockBL_apply, smul_eq_mul]
-      rw [fockB_zcomp _ _ _ (bmF_lead_WH K n _ _), zcomp_lift hl, (GlobalTheory.T.fockPairing_lastRow_monomial_reads_coefficient K n _).2]
+      rw [fockB_zcomp _ _ _ (bmF_lead_WH K n _ _), zcomp_lift hl, (_root_.GlobalTheory.BrCoefFock.fockB_zmon_emb K n _).2]
       ring) x hx
   simp only [LinearMap.sub_apply, LinearMap.smul_apply, LinearMap.flip_apply, fockBL_apply, smul_eq_mul] at h
   linear_combination h

@@ -4,7 +4,7 @@ import Formalism.LocalToGlobal.Divisibility.Tuples
 import Formalism.LocalToGlobal.UnitaryNorms.CharTied
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsRationalUnitaryDeterminantMapRationalUnitaryTo
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HostCmEmbeddingProperties
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHeckeCharTrivOnRealSubfieldInfinityTypeStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHeckeCharTrivOnRealSubfieldInfinityType
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CompletelySplitPrimeHostPlaceProperties
 import Development.AutomorphicArithmetic.WeightCongruences.ProdNegOneZpow
 import Development.AutomorphicArithmetic.WeightCongruences.ProdResidueCharNormOneUnitEqOne
@@ -96,7 +96,7 @@ theorem exists_unitary_mu_zero_characters_of_split_type_primes : ∀ (R : Ranks)
     intro k _ k' _ hkk'
     refine Finset.disjoint_left.2 fun w hw hw' => hkk' ?_
     exact eq_of_overP (P.overP ((hmem k w).1 hw)) (P.overP ((hmem k' w).1 hw'))
-  obtain ⟨χ, hu, ht, hi, htame, hunr, hloc, -⟩ := GlobalTheory.T.exists_heckeChar_trivOn_realSubfield_infinityType H.F H.E c (R.Psi) (embPsi H) hcm z S θ
+  obtain ⟨χ, hu, ht, hi, htame, hunr, hloc, -⟩ := _root_.GlobalTheory.Mem.Chr.AntiExist.exists_hecke_trivOn H.F H.E c (R.Psi) (embPsi H) hcm z S θ
     (by
       intro w hw w' hcj hw'
       obtain ⟨k, hk⟩ := (hS w).1 hw

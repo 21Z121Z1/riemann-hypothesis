@@ -8,7 +8,7 @@ import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.
 import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.AnalyticTransOfAdd
 import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.BinomialSeriesCoefficients.CurveIntegerMultiplicationSeries
 import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.BinomialSeriesCoefficients.USideB
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MultiplicationSeriesUnitCoeffNormLeStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MultiplicationSeriesUnitCoeffNormLe
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeierstrassPOddMulSubTwoTorsionProduct
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeierstrassPIntegralOfMulIntegralGoodReduction
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.NormWeierstrassPSubEqOneOfGood
@@ -286,7 +286,7 @@ theorem height_le_two (L : PeriodPair) (l : ℕ) [Fact l.Prime] (hl : 5 ≤ l) (
     rwa [hb2, zero_div] at this
   have hu := series_u (logPair W) hX _ _ S _ _ hzser
   rw [← hcard]
-  refine GlobalTheory.T.multiplication_series_unit_coeff_norm_le ℂ_[l] (Formalism.L2.Th1.A.xS W) _ (ι (L.weierstrassP t)) (ι (L.weierstrassP t')) S.card
+  refine _root_.GlobalTheory.Honda.htform_unit_coeff_le ℂ_[l] (Formalism.L2.Th1.A.xS W) _ (ι (L.weierstrassP t)) (ι (L.weierstrassP t')) S.card
     (Polynomial.C ((l : ℂ_[l]) ^ 2) * ∏ P ∈ S, (Polynomial.X - Polynomial.C (ι (L.weierstrassP P))))
     (Polynomial.C 1 * ∏ P ∈ insert 0 S, (Polynomial.X - Polynomial.C (ι (L.weierstrassP (t + P)))))
     hx (Formalism.L2.Th1.A.wSerFactor ℂ_[l] W).2.2.2.1 ?_ (cc_mulBy (logPair W) _) ?_ ?_ ?_ ?_ ?_ ?_ ?_ ?_

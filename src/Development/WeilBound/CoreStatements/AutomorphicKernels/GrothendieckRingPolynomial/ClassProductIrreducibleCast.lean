@@ -7,9 +7,10 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GelfandKazhdanC
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.ZelevinskyCosocles.GKLocal
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalLanglandsOfIrreducibleAdmissible
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductTransposeInverseDualReverseStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContragredientProductIrreducibleStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualClassInvolutiveStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductTransposeInverseDualReverse
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContragredientProductIrreducible
+import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.LSegJacquet
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualClassInvolutive
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParabolicProductHasFiniteLengthGL
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HasFiniteLengthOfIsIrreducible
@@ -245,13 +246,13 @@ theorem jhMult_pair_le (x y : IrrGL k) {N : ℕ} (h1 : ∑ a, (![x, y] a).1 = N)
     (σ : IrrRep (GL (Fin N) k)) : jhMult σ.ρ (prodIrr ![x, y] h1) ≤ jhMult σ.ρ (prodIrr ![y, x] h2) := by
   have hA := PositivityTheory.Tls2.BZGL.irreducibleAdmissibleGL_top
   have hGK : GKLocal k := _root_.GlobalTheory.CompanionTheory.GKLocalProof.gkLocal hA
-  obtain ⟨hd', ⟨E1⟩⟩ := GlobalTheory.T.product_transpose_inverse_dual_reverse hA hGK ![x, y] h1
-  obtain ⟨hd'', ⟨E2⟩⟩ := GlobalTheory.T.contragredient_product_irreducible hA (fun a => dualCl (![x, y] (Fin.rev a))) hd'
+  obtain ⟨hd', ⟨E1⟩⟩ := _root_.GlobalTheory.CompanionTheory.ThetaProd.prodIrr_comp_thetaW hA hGK ![x, y] h1
+  obtain ⟨hd'', ⟨E2⟩⟩ := _root_.GlobalTheory.CompanionTheory.ContraProd.contra_prodIrr hA (fun a => dualCl (![x, y] (Fin.rev a))) hd'
   have hz : (fun a => dualCl (dualCl (![x, y] (Fin.rev a)))) = ![y, x] := by
     funext a
     fin_cases a
-    · exact GlobalTheory.T.dual_class_involutive hA y
-    · exact GlobalTheory.T.dual_class_involutive hA x
+    · exact _root_.GlobalTheory.CompanionTheory.Zcore.dualCl_dualCl hA y
+    · exact _root_.GlobalTheory.CompanionTheory.Zcore.dualCl_dualCl hA x
   obtain ⟨E3⟩ := prodIrr_congr hz hd'' h2
   obtain ⟨G1⟩ := _root_.GlobalTheory.CompanionTheory.ThetaW.comp_thetaW_equiv_contra hGK N σ.ρ σ.smooth σ.irr
   have hG := GlobalTheory.SqIntUnit.compactOpen_basis k N

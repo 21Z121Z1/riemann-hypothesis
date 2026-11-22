@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.GlobalTheory.GL5.FamilyMassVolumeIdentityOfClassDecomp
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.LandherrAndLandherrSt
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DetEqNormMulOfSelfDualSameSignatureStatement
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DetEqNormMulOfSelfDualSameSignature
 
 noncomputable section
 
@@ -88,7 +88,7 @@ theorem congr_of_det_norm {n : ℕ} (G G' : Matrix (Fin n) (Fin n) E) (hG : Gᴴ
 theorem exists_isometry (hc : Formalism.HermitianLatticesTheory.IsCMUnram E) (W₁ W₂ : HSpace E) (h₁ : W₁.SigOK) (h₂ : W₂.SigOK)
     (hr : W₁.rank = W₂.rank) (hs : ∀ τ, W₁.sig τ = W₂.sig τ) :
     ∃ φ : W₁.V ≃ₗ[E] W₂.V, ∀ x y, W₂.hT (φ x) (φ y) = W₁.hT x y := by
-  obtain ⟨z, hz⟩ := GlobalTheory.T.det_eq_norm_mul_of_selfDual_same_signature E hc W₁ W₂ h₁ h₂ hr hs
+  obtain ⟨z, hz⟩ := _root_.GlobalTheory.SelfDualDet.det_eq_norm_mul E hc W₁ W₂ h₁ h₂ hr hs
   let c : Fin W₁.rank ≃ Fin W₂.rank := finCongr hr
   have hH : ∀ W : HSpace E, W.gramᴴ = W.gram := fun W => by
     ext a b

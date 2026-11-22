@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPairingCoordi
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSymplecticGroupMatrixOfPreservesPhaseSpace
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchwartzOneParameterGroupFormula
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RealMetaplecticRepresentation
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSymplecticLieEqExpOneParamStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSymplecticLieEqExpOneParam
 
 open GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.WeilM GlobalTheory.AdelicU GlobalTheory.LFun
 open GlobalTheory.ArchUniq MeasureTheory Filter Topology
@@ -57,7 +57,7 @@ theorem tendsto_slope_of_pairing (hP : GlobalTheory.FunPr.Hypotheses₂) {V : Ty
       simp
     simp only [e]
     exact (continuous_apply i).comp (hφc.comp (hAc _))
-  obtain ⟨Z, hZ, hgZ⟩ := GlobalTheory.T.exists_symplecticLie_eq_exp_oneParam (Fin n) (fun t => (Mt t : Matrix (Fin n ⊕ Fin n) (Fin n ⊕ Fin n) ℝ)) hgc hg0 hgm
+  obtain ⟨Z, hZ, hgZ⟩ := _root_.GlobalTheory.SymplecticOneParam.exists_mem_sp_eq_exp (Fin n) (fun t => (Mt t : Matrix (Fin n ⊕ Fin n) (Fin n ⊕ Fin n) ℝ)) hgc hg0 hgm
     fun t => (Mt t).2
 
   obtain ⟨K, hK⟩ : ∃ K : 𝓢(EuclideanSpace ℝ (Fin n), ℂ) →L[ℂ] 𝓢(V, ℂ), ∀ h x, K h x = h (C x) :=

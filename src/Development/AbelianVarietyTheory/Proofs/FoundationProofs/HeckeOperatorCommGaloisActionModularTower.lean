@@ -5,8 +5,8 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalBMemKummerInv
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsDiamondMatrixGamma1Gamma0OfCoprime
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalAlgClosureRatPrimitiveRootEqPow
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SumActUpperTriangularHeckeReindexCoprimeUnitStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalBActDiagNatOneCommStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaloisActionUpperTriangularHeckeReindexOnBStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalBActDiagNatOneComm
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaloisActionUpperTriangularHeckeReindexOnB
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalBActCommGamma0CapGamma0LevelShimuraReciprocit
 open scoped MatrixGroups TensorProduct
 open Matrix GlobalTheory.KZ
@@ -46,7 +46,7 @@ theorem op_galB_comm : ∀ {Ω : Type} [Field Ω] [Algebra ℚ Ω] [IsAlgClosure
     rw [LinearMap.sum_apply, LinearMap.sum_apply, map_sum]
     rw [← GlobalTheory.T.sum_act_upperTriangular_hecke_reindex_coprime_unit X l _ hinv q e hq he]
     refine Finset.sum_congr rfl fun j _ => ?_
-    exact (GlobalTheory.T.galoisAction_upperTriangular_hecke_reindex_on_B ε X hε hj N l w hl hN hNl hw s q e hq hζ (j : ℤ) b hb).symm
+    exact (_root_.GlobalTheory.KZ.GalUpper.galB_act_upper ε X hε hj N l w hl hN hNl hw s q e hq hζ (j : ℤ) b hb).symm
 
   have hdiam : ∀ d : ℕ, Nat.Coprime d N → sgD N l d ∈ CongruenceSubgroup.Gamma0 N ⊓ CongruenceSubgroup.Gamma0 l := by
     intro d hd
@@ -66,7 +66,7 @@ theorem op_galB_comm : ∀ {Ω : Type} [Field Ω] [Algebra ℚ Ω] [IsAlgClosure
     have hdet2 : 0 < (!![(q : ℤ), 0; 0, 1] : Matrix (Fin 2) (Fin 2) ℤ).det := by
       simp [Matrix.det_fin_two_of]; exact_mod_cast hq
     rw [← Tower.act_act Ω ε X l _ _ hdet1 hdet2, ← Tower.act_act Ω ε X l _ _ hdet1 hdet2,
-      GlobalTheory.T.galB_act_diagNatOne_comm ε X hε l q hq s,
+      _root_.GlobalTheory.KZ.Tower.galB_act_diag ε X hε l q hq s,
       _root_.GlobalTheory.KZ.GammaZeroComm.galB_act_comm ε X hε hj N l w hl hN hNl hw (sgD N l q) (hdiam q hqN) s b hb]
   | U =>
     simp only [Tower.op, Tower.heckeU]

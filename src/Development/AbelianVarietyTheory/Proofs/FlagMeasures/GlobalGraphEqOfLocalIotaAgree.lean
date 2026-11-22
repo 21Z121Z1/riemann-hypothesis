@@ -60,7 +60,7 @@ variable {D : D7}
 
 theorem mem_iff_loc (Z : LocDat D) (N : LV D) (hN : Submodule.IsLattice D.host.E N) (x : (VS D).V) :
     x ∈ N ↔ ∀ p, baseChange₂ D p x ∈ lattice₂ D Z.M p N := by
-  have h := (GlobalTheory.T.numberField_lattice_determined_by_local_lattices (GlobalTheory.HL.placesOf Z) (nV D) (LatLoc.cL N) (LatLoc.isLattice_map _ _ hN)).1 (LatLoc.cE D x)
+  have h := (_root_.GlobalTheory.HL.PlacesRec.lattice_local (GlobalTheory.HL.placesOf Z) (nV D) (LatLoc.cL N) (LatLoc.isLattice_map _ _ hN)).1 (LatLoc.cE D x)
   simp only [← LatLoc.localLattice_eq, ← LatLoc.baseChange_eq] at h
   refine Iff.trans ⟨fun hx => Submodule.mem_map_of_mem hx, fun hx => ?_⟩ h
   obtain ⟨y, hy, hyx⟩ := hx

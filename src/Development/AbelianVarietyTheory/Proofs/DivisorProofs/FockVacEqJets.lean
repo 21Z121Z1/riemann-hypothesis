@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsTwoTorsion
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormSqMulGaussianLatticeTranslateEqShifted
 import Formalism.SharpRestriction.GlobalSchurBounds.Joints
 import Formalism.SharpRestriction.GlobalSchurBounds.StandardLatticesGL3
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitVacuumStandardLatticesDefinitePairStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitVacuumStandardLatticesDefinitePair
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockJetVacuumEqConstMulPeriodScaledJet
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockJetsOriginOppositeSignVacuumConjPeriod
 
@@ -110,7 +110,7 @@ theorem normal_nonempty : ∀ μ0, L.Is μ0 → ∀ (U : Set T) (N : Std G U), N
     then Classical.choose h else 0
   have vac_is : ∀ p, DefPair D.R.m p →
       IsVacO W.ψ W.θ _ _ (G.cartS W.cart p) (G.onT W.cart p) (N.latS p : Set _) (N.latT p : Set _) (vac p) := fun p hp => by
-    have h := GlobalTheory.T.exists_unitVacuum_standardLattices_definitePair W N p hp
+    have h := _root_.GlobalTheory.FunObj.vac_exists_of_defPair W N p hp
     simp only [vac, dif_pos h]
     exact Classical.choose_spec h
   let c0 : Pair T → ℂˣ := fun p =>

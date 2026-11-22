@@ -2,8 +2,8 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasRigidCoords
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShimuraObjectPullbackCompCancel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsProperRelAmpleKTrivOfTrivialisationsGenerate
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryModuliObjectSpreadNormalDomainStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniversalAbelianSchemeTorsionRationalFieldPointStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryModuliObjectSpreadNormalDomain
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniversalAbelianSchemeTorsionRationalFieldPoint
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.AnForm.R
@@ -49,7 +49,7 @@ theorem torsRat_of_point {Dw : Datum H} {l : Geo.Tor.Level H} (Xo : Moduli Dw l)
     rw [map_pow, hpush, map_one]
   let x' := pushHom mK.cart (Over.mk (spMap κ')) xK
   have hx' : x' ^ l.M' = 1 := by rw [← map_pow, hxK, map_one]
-  obtain ⟨x₀, -, hx₀⟩ := GlobalTheory.T.universalAbelianScheme_torsion_rational_fieldPoint Xo c φ K₀ K κ' y x' hx'
+  obtain ⟨x₀, -, hx₀⟩ := _root_.GlobalTheory.XFTorsion.torsion_rational Xo c φ K₀ K κ' y x' hx'
   have w₀ : x₀.left ≫ Xo.univ.t.G.hom = 𝟙 _ ≫ (y ≫ pullback.fst _ _) := by
     rw [Category.id_comp]; exact Over.w x₀
   let s₀ := mK.cart.1.lift x₀.left (𝟙 _) w₀
@@ -129,7 +129,7 @@ theorem openCls : ∀ {E : Type} [Field E] [NumberField E] [IsCMField E] {H : Ho
     show (C.y ≫ pullback.fst _ _) ≫ Xo.s = _
     rw [Category.assoc, pullback.condition, ← Category.assoc, C.y_over, ← eR]
     simp only [Category.assoc, spMap_comp']
-  obtain ⟨o, ho, ⟨mo⟩⟩ := GlobalTheory.T.exists_unitaryModuliObject_spread_normal_domain Dw l c _ b' tO hprop hamp hkt htors (FractionRing R) gA s' oK hs' k₃
+  obtain ⟨o, ho, ⟨mo⟩⟩ := _root_.GlobalTheory.ObjSpread.exists_obj Dw l c _ b' tO hprop hamp hkt htors (FractionRing R) gA s' oK hs' k₃
   obtain ⟨fX, ⟨hfs, ⟨mf⟩⟩, -⟩ := Xo.rep (Sp (Localization.Away (∏ i, C.s i))) (spMap (b'.comp incl)) inferInstance o
   have hfs' : fX ≫ Xo.s = spMap b' ≫ spMap incl := hfs.trans (spMap_comp' _ _).symm
   subst ho

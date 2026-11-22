@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.RedSurjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KerEqRangeOfRangeEqKer
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobKerIdealLeAugIdeal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WittModuleLengthComposition
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LengthGeFinrankOfSemilinearSurjectiveStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LengthGeFinrankOfSemilinearSurjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivGroupIsogenyHeightEqDualSameDegreeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DieudonneTheoryVEqVerschiebungInjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DieudonneFunctorBaseFunctorProperties
@@ -128,7 +128,7 @@ theorem isog_core (T : Theory p) {G H : PDivGroup p k} (q : G ⟶ H) (hq : IsIso
     obtain ⟨-, hs, hk, hl, -⟩ := hθ K
     haveI : Module.Finite (WittVector p k) (T.M K) := T.base.finite K trivial
     haveI := finite_of_frob_surj (θ K) hs hl
-    refine (GlobalTheory.T.length_ge_finrank_of_semilinear_surjective p k (T.M K) K.omega (WittVector.frobeniusEquiv p k) (θ K) hs ?_
+    refine (_root_.GlobalTheory.Dieu.length_ge_finrank_of_semilinear_surj p k (T.M K) K.omega (WittVector.frobeniusEquiv p k) (θ K) hs ?_
       (frobImage (T.F K) ⊤)).2 ?_
     · intro a m
       rw [WittVector.frobeniusEquiv_apply]

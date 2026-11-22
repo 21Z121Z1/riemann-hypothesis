@@ -5,7 +5,8 @@ import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IsIntegralDiscrM
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsLamLettersIsGood
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsLamObjGoodOfCmObj
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.IsFibreOfIffIsPolFibre
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LieAlgebraEigenDecompositionCMSignatureStatement
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LieAlgebraEigenDecompositionCMSignature
+import Development.AbelianVarietyTheory.Definitions.CMLattices.ExistsIsThetaDegOfIsLocalModel
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsIsSplit
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArcPointTangentPart
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.LieBasisCoordinatesBijectiveTangent
@@ -81,7 +82,7 @@ theorem exists_cmIn : Known → ∀ (E : Type) [Field E] [NumberField E] [IsCMFi
     have : 0 < Module.finrank ℚ (maximalRealSubfield E) := Module.finrank_pos
     omega
   have gB : X.B.g = Module.finrank ℚ E / 2 * (Dw.p - 1 + (Dw.q - 1)) :=
-    (GlobalTheory.T.lieAlgebra_eigenDecomposition_CM_signature E H K₁ ρ X.B ⟨a.D₀.P, ψ, hψ, v, hv⟩ _ _ X.split X.typeB X.ρ_sq).2.2.2.1
+    (_root_.GlobalTheory.CM.EigDec.eigen_decomposition E H K₁ ρ X.B ⟨a.D₀.P, ψ, hψ, v, hv⟩ _ _ X.split X.typeB X.ρ_sq).2.2.2.1
   have hg : 1 ≤ a.D₀.P.g := by
     rw [hψ.1]
     show 1 ≤ X.B.g

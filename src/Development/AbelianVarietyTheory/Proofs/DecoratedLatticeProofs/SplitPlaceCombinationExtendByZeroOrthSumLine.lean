@@ -4,10 +4,11 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LatIndLast
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceBaseVacuumDatumExistsUnique
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PlacesToAdeles
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HomLatticeIndicatorOnSplitHalfEqHalfIndicator
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HomLatticeCompletionSelfAnnihilatorAtPlacesStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HomLatticeCompletionSelfAnnihilatorAtPlaces
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsSumFrame
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.T2SpaceMatrixOfIsNonarchimedeanLocalField
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceHermitianFrameProperties
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExtendByZeroSourceTensorColumnProductStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExtendByZeroSourceTensorColumnProduct
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExtendByZeroTargetTensorRowProductStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsThetaFunOSourceSlice
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsThetaFunOTargetSliceOrthogonalSum
@@ -15,7 +16,7 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Heisenberg
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergCombinationExtendByZeroTargetSlice
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExtendByZeroMemCompletedLatticeSource
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExtensionByZeroMapsCompletedHomLattice
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsSchwartzBruhatHalfSourceBoxLatticeStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsSchwartzBruhatHalfSourceBoxLattice
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsSchwartzBruhatHalfTargetBoxDualIndicator
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchroedingerIntertwinerSliceRestrictionPlaceMode
 
@@ -32,15 +33,15 @@ theorem ext_zero : ∀ (D : D7) (k : Type) [Field k] [ValuativeRel k] [Topologic
   obtain ⟨ΛT', hΛT', hβ', -⟩ := (GlobalTheory.FrameAt.frame_facts D k p T n β).2.2.2.1 LT hT
   have hΛeq : ΛT' = ΛT := Submodule.ext fun x => (hβ' x).trans (hβ x).symm
   haveI : ΛT.IsLattice k := hΛeq ▸ hΛT'
-  have sdA := GlobalTheory.T.homLatticeCompletion_self_annihilator_atPlaces D ψ hψ A T LA LT hA hT (· = p.v)
-  have sdS := GlobalTheory.T.homLatticeCompletion_self_annihilator_atPlaces D ψ hψ S T LS LT hS hT (· = p.v)
-  have sdA' := GlobalTheory.T.homLatticeCompletion_self_annihilator_atPlaces D ψ hψ T A LT LA hT hA (· = p.v)
-  have sdS' := GlobalTheory.T.homLatticeCompletion_self_annihilator_atPlaces D ψ hψ T S LT LS hT hS (· = p.v)
+  have sdA := _root_.GlobalTheory.SelfDualAt.latO_ann_at D ψ hψ A T LA LT hA hT (· = p.v)
+  have sdS := _root_.GlobalTheory.SelfDualAt.latO_ann_at D ψ hψ S T LS LT hS hT (· = p.v)
+  have sdA' := _root_.GlobalTheory.SelfDualAt.latO_ann_at D ψ hψ T A LT LA hT hA (· = p.v)
+  have sdS' := _root_.GlobalTheory.SelfDualAt.latO_ann_at D ψ hψ T S LT LS hT hS (· = p.v)
   have facS : halfInd p.e (latO S T (LS : Set _) (LT : Set _) (· = p.v)) =
       o.boxS T (halfInd p.e (latO A T (LA : Set _) (LT : Set _) (· = p.v))) (colFun β ζ (vecInd ΛT)) := by
     rw [← _root_.GlobalTheory.FinPl.LatIndHalf.extFun_latInd_eq_halfInd D k p n (n' ⊕ Fin 1) S T α₀ β LS LT hS hT hU _ _ hα₀ hβ,
       ← _root_.GlobalTheory.FinPl.LatIndHalf.extFun_latInd_eq_halfInd D k p n n' A T α β LA LT hA hT hU _ _ hαA hβ, latInd_lastKer,
-      GlobalTheory.T.extendByZero_source_tensor_column_product D k p n n' S A L T o ζ α α₀ β hsum]
+      _root_.GlobalTheory.FinPl.ExtZero.extFun_tensCol_sum D k p n n' S A L T o ζ α α₀ β hsum]
   have facT : halfInd p.e (latO T S (LT : Set _) (LS : Set _) (· = p.v)) =
       o.boxT T (halfInd p.e (latO T A (LT : Set _) (LA : Set _) (· = p.v))) (rowFun β ζ (dualInd ΛT)) := by
     rw [← _root_.GlobalTheory.FinPl.LatIndHalf.extFun_latInd_eq_halfInd D k p (n' ⊕ Fin 1) n T S β α₀ LT LS hT hS hU _ _ hβ hα₀,
@@ -81,10 +82,10 @@ theorem ext_zero : ∀ (D : D7) (k : Type) [Field k] [ValuativeRel k] [Topologic
     have hmod := _root_.GlobalTheory.FinPl.ExtZero.restrModel_isPlaceModel D ψ (symplO S T) (heisO ψ S T) (symplO A T) (heisO ψ A T) (o.resS T) p.e _ _
       (colFun β ζ (vecInd ΛT)) f₀ T' hT' (fun a F w y => heisO_resS_symm ψ o a F w y)
       (fun t a => symplO_resS_symm o t a) (fun a ha => half_resS_symm o ha) (fun a ha => half_resS_symm o ha)
-      (GlobalTheory.T.isSchwartzBruhatHalf_source_box_lattice D k p n S A L T o ζ β LA LS LT ΛT facS) facS y
+      (_root_.GlobalTheory.FinPl.ExtZero.SBBox.isSBHalf_boxS D k p n S A L T o ζ β LA LS LT ΛT facS) facS y
     have key := congrFun ((hyp _ (vacS f₀ hf₀ y)).2.2.2.2.2 _ hmod) w
     rw [_root_.GlobalTheory.FinPl.ExtZero.comb_extS_slice] at key
-    rw [key, restrModel_apply, GlobalTheory.T.extendByZero_source_tensor_column_product D k p n n' S A L T o ζ α α₀ β hsum]
+    rw [key, restrModel_apply, _root_.GlobalTheory.FinPl.ExtZero.extFun_tensCol_sum D k p n n' S A L T o ζ α α₀ β hsum]
     rfl
   · have hΨ : Ψ ∈ SB (Matrix n' n k) := (hyp _ (vacT f₀ hf₀ 0)).2.2.2.1
     have hΨ' : tensRow Ψ (dualInd ΛT) ∈ SB (Matrix (n' ⊕ Fin 1) n k) :=

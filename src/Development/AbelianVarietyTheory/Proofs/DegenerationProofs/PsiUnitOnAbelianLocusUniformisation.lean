@@ -11,7 +11,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
 import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissiblePadicIntMaximalIdeal
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.MemRangeOfForallHeightEqOneOfIsReflexive
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.PsiUnitOnOfFixedOverUnramifiedExtensionStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.PsiUnitOnOfFixedOverUnramifiedExtension
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUnramifiedExtTorsionPointsGoodReduction
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.QkToAkUInvariantUnderFieldEmbeddingStatement
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationTorsionIdentificationWithPairing
@@ -260,7 +260,7 @@ theorem psiUnitOn_abLocus : Laws → Laws2 → Laws3 → Laws4 → Laws5 → ∀
   have := hB.2.2.1
   obtain ⟨n, hn, hu⟩ := exists_two_le_isUnit R
   refine psiUnitOn_of_height_one D.toPre y _ fun P hP h1 => ?_
-  refine T.psiUnitOn_of_fixed_over_unramified_extension h₁ h₂ R D.toPre D.tau_bimult D.psi_even P h1 n hn (fun j => ?_) y
+  refine _root_.GlobalTheory.UnramTorsion.psiUnitOn_of_unramified h₁ h₂ R D.toPre D.tau_bimult D.psi_even P h1 n hn (fun j => ?_) y
   have := PrimeSpectrum.isPrime P
   let T := Localization.AtPrime (PrimeSpectrum.asIdeal P)
   let F := AlgebraicClosure (FractionRing R)

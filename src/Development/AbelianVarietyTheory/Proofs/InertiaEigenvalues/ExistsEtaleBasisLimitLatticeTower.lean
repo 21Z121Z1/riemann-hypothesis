@@ -6,7 +6,9 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AcrisTorsio
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DeRhamPotSemistable
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEtaleBasisModPow
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivariantMapBreuilKisinMatrix
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegralElementsUnitFactorizationStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegralElementsUnitFactorization
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsStratHom
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BhattScholzeIntegral
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LadicDescentStepToOE
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.WeaklyAdmissibleFiltrations Formalism.MainNotions.N TensorProduct PowerSeries GlobalTheory.Prism GlobalTheory.BKReal GlobalTheory.Per GlobalTheory.BSP GlobalTheory.MemLoc GlobalTheory.Pst GlobalTheory.BKLim GlobalTheory.Cong Matrix
 open scoped Formalism.Per NNReal
@@ -114,7 +116,7 @@ namespace GlobalTheory.BKLim.EtaleLimit
 variable {l : ℕ} [Fact l.Prime] {K : FinExt l}
 
 theorem inv_mem (bk : BK K) {x : WCb l} (hx : x ∈ bk.OE) (hu : IsUnit x) : ∃ v ∈ bk.OE, x * v = 1 := by
-  obtain ⟨-, -, -, hval, -⟩ := GlobalTheory.T.integral_elements_unit_factorization l K bk
+  obtain ⟨-, -, -, hval, -⟩ := _root_.GlobalTheory.OEDvr.main l K bk
   obtain ⟨k, v, v', hv, hv', hvv, rfl⟩ := hval x hx hu.ne_zero
   cases k with
   | zero => exact ⟨v', hv', by rw [pow_zero, one_mul, hvv]⟩

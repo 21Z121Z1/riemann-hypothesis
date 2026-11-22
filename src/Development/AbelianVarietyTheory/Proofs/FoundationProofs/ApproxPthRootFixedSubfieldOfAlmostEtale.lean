@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.CosetTrace
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPthPowerScaleThinShellStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPthPowerScaleThinShell
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PowMulApproxPowOfAlmostEtaleSeparatingFamily
 
 open GlobalTheory.AlmostEt
@@ -31,7 +31,7 @@ theorem approxRoot_fix_of_almostSep : ∀ (L : Type) [Field L] (v : Valuation L 
   · refine ⟨0, zero_mem _, ?_⟩
     simp [hx0, hp.ne_zero]
   obtain ⟨d, hdF, hd0, hdr, hd1⟩ :=
-    GlobalTheory.T.exists_pth_power_scale_thin_shell L v p hp _ ⟨θ, hθ1, hθ⟩ hp0 hp1 r hr1 x hx0
+    _root_.GlobalTheory.AlmostEt.klc_scale L v p hp _ ⟨θ, hθ1, hθ⟩ hp0 hp1 r hr1 x hx0
   have hdN : d ∈ Fix L N := fun σ => hdF ⟨σ.1, Subgroup.mem_top _⟩
   have hx'N : x * d ^ p ∈ Fix L N := mul_mem hx (pow_mem hdN p)
   obtain ⟨w, hwN, hw⟩ :=

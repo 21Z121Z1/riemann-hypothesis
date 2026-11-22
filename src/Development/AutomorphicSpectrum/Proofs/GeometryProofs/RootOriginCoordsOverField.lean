@@ -17,9 +17,9 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexPointsIffCen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.Metric
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PositiveHomogeneousPotentialStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PositiveHomogeneousPotential
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatOnLogResolutionCorr
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LogResolutionPotentialPullbackStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LogResolutionPotentialPullback
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LogResolutionReindexedStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolomorphicDegreeComposition
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DominatingRegularPush
@@ -27,8 +27,8 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DominatingCoordsRei
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCompDescentFirst
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCompDescentSecond
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCompDescentThird
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCompDescentFourthStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DegreeReindexedCoordsStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCompDescentFourth
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DegreeReindexedCoords
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCompDescentFifth
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginCoordField
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
@@ -77,11 +77,11 @@ theorem root_model_on_cover : Top.Given → ∀ (E : Type) [Field E] [NumberFiel
   have hT : ∀ r : RootIx D, ∃ T : HermLine J, T.a = xdeg r - pullDeg bk (R.xdeg r) ∧ IsSmoothHerm T ∧
       IsConjInvariantH T ∧ IsFlatOn R' T ∧ IsRatio 𝔐.ξ y R.y bk bx i (xdeg r) (R.xdeg r) (e r) (o.e r) T.h := by
     intro r
-    have hu := GlobalTheory.T.hodge_comp_descent_fourth E H D l Xo c _ _ Y ∅ S R.Ω Ω R.K K R.ι J R.y y o.𝔐 𝔐 i h hd o.Fl Fl bk bx (xdeg r) (R.xdeg r)
+    have hu := _root_.GlobalTheory.CompanionTheory.Ar.ChgUnit.comparison_unit E H D l Xo c _ _ Y ∅ S R.Ω Ω R.K K R.ι J R.y y o.𝔐 𝔐 i h hd o.Fl Fl bk bx (xdeg r) (R.xdeg r)
       (e r) (o.e r) r hβ inferInstance hy hgen (o.lines r) (hlines r) hrefl hreg hco
-    obtain ⟨φ, h1, h2, h3, h4, h5⟩ := GlobalTheory.T.degree_reindexed_coords 𝔐.X Ω R.Ω 𝔐.ξ i R.K K R.ι J R.y y bk bx (xdeg r) (R.xdeg r) (e r) (o.e r)
+    obtain ⟨φ, h1, h2, h3, h4, h5⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Chg.Ratio.exists_isRatio 𝔐.X Ω R.Ω 𝔐.ξ i R.K K R.ι J R.y y bk bx (xdeg r) (R.xdeg r) (e r) (o.e r)
       𝔐.tie 𝔐.all hbk hy hu
-    obtain ⟨T, t1, t2, t3, t4, t5⟩ := GlobalTheory.T.positive_homogeneous_potential K J _ _ R' _ φ h1 h2 h3 h4
+    obtain ⟨T, t1, t2, t3, t4, t5⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Chg.FlatExt.exists_flat_line K J _ _ R' _ φ h1 h2 h3 h4
     refine ⟨T, t1, t2, t3, t5, fun z w hw c c₀ hc hc₀ => ?_⟩
     have hm : w ∈ mcPts (mCoordIdeal y) := (_root_.GlobalTheory.CompanionTheory.Ar.mem_mcPts_iff_exists_coordsAt 𝔐.X Ω 𝔐.ξ K J y 𝔐.tie w).2 ⟨z, 𝔐.all _, hw⟩
     rw [t4 w hm]
@@ -115,7 +115,7 @@ theorem root_model_on_cover : Top.Given → ∀ (E : Type) [Field E] [NumberFiel
       br := o.Re.π '' br₀, degree := hdeg
       ref := fun a => (pullHerm hv (o.Re.ref a)).tensor (corr T a)
       ref_smooth := fun a => isSmoothHerm_tensor (isSmoothHerm_pull hv (o.Re.ref_smooth a)) (isSmoothHerm_corr hTs a)
-      ref_pot := fun a => GlobalTheory.T.log_resolution_potential_pullback R.K K R.ι J bk (blkV bk bx) _ _ _ _ _ o.Re.R R' Sys.X Sys.A (Sys.th a) (o.Re.ref a)
+      ref_pot := fun a => _root_.GlobalTheory.CompanionTheory.Ar.Chg.Twist.samePot_twist R.K K R.ι J bk (blkV bk bx) _ _ _ _ _ o.Re.R R' Sys.X Sys.A (Sys.th a) (o.Re.ref a)
         (corr T a) o.Re.π o.Re.holo hh hv hholoπ.1 hholo horb' (o.Re.ref_pot a) (_root_.GlobalTheory.CompanionTheory.Ar.Chg.isFlatOn_corr K J _ _ _ R' _ _ T hTf a)
       line := fun a t => (pullHerm hv (o.Re.line a t)).tensor (corr T a)
       line_deg := fun a t => by

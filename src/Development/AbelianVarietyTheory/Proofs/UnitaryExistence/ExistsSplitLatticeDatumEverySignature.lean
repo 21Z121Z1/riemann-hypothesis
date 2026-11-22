@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Permutes
 import Formalism.LocalToGlobal.ProjectiveLattices.UnFree
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsDatumSumAndAllSignatures
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsConjDatum
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.HermitianLatticeSignatureSplitOfDefiniteStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.HermitianLatticeSignatureSplitOfDefinite
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor Formalism.L2.Pj GlobalTheory.PureType GlobalTheory.CompRat
 open scoped CategoryTheory.Obj TensorProduct
@@ -88,7 +88,7 @@ theorem exists_splitLat_of_signature : ∀ (E : Type) [Field E] [NumberField E] 
     simp [hp, hq]
   · change p * D.q + q * D.p = q
     simp [hp, hq]
-  · refine SplitSum.splitLat_sum (GlobalTheory.T.hermitianLatticeSignatureSplit_of_definite E H _ (Or.inr ?_)) (GlobalTheory.T.hermitianLatticeSignatureSplit_of_definite E H _ (Or.inl ?_))
+  · refine SplitSum.splitLat_sum (_root_.GlobalTheory.CompRat.splitLat_of_definite E H _ (Or.inr ?_)) (_root_.GlobalTheory.CompRat.splitLat_of_definite E H _ (Or.inl ?_))
     · change p * D.q = 0
       simp [hq]
     · change q * D.q = 0

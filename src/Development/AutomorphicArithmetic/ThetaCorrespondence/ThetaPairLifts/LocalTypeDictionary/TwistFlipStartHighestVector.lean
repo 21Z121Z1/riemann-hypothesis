@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RankCol
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FlatIntegrandFlippedTensorLocallyConstantCompact
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HostIdealUnitAtPlacesPrimeToLevel
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsThetaAtEnlargePlaceIdempotentLatticeIndicator
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridFirstColumnStepIsSchwartzBruhatHalfStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridFirstColumnStepIsSchwartzBruhatHalf
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FirstColumnTypeTwistDatumEqGivenFunction
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RowChainLastStepVectorEqThetaOfDatum
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
@@ -39,7 +39,7 @@ theorem flipStart_highestVector : _root_.GlobalTheory.FunPr.ThetaLocalInputs →
     rcases Finset.mem_union.1 hw with h | h
     · exact Finset.mem_union_left _ (levelChainTypePlaces_subset_chosenPlaces ch.G hL t h)
     · exact Finset.mem_union_right _ h
-  obtain ⟨h1, h2⟩ := _root_.GlobalTheory.ThetaEnlarge.isThetaAt_enlarge hS hT hv he he' hsub (GlobalTheory.T.gridFirstColumnStep_isSchwartzBruhat_half ch.G ch.S.B hL t he' j j.2) hθ
+  obtain ⟨h1, h2⟩ := _root_.GlobalTheory.ThetaEnlarge.isThetaAt_enlarge hS hT hv he he' hsub (_root_.GlobalTheory.FlipTop.isSBHalf_topFn ch.G ch.S.B hL t he' j j.2) hθ
   have hAA : ∀ w ∈ locPl ch.G t, w ∉ GlobalTheory.FlipTop.topPl R.toLevCh t →
       ((∀ a ∈ D.host.AA, Valued.v (algebraMap D.host.E (Kw w) a) ≤ 1) ∧
         ∃ a ∈ D.host.AA, Valued.v (algebraMap D.host.E (Kw w) a) = 1) := by

@@ -4,7 +4,7 @@ import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsF
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.LogIntegralCongrSmul
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.IsMultiProjPrimeExtTo
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.FractionRingRingEquiv
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.FiniteVerticalRecursionStatement
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.FiniteVerticalRecursion
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.VerticalNumberLocalCycle
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.UniformizerDivisorCycleNumber
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.BundleChernComparison
@@ -97,8 +97,8 @@ theorem ptsIntegral_one_eq_vertAt (P : Ideal (MRing ι ℤ)) (D : ℕ) (hP : IsA
   have f2 : IsMultiHomog (C (2 : ℤ) : MRing ι ℤ) (0 : K → ℕ) := isWeightedHomogeneous_C _ _
   have e1 := hI.2.2 P D L (trivLine ι) 1 0 hP hL hA (fun k => by simp [trivLine]) g1 nm1
   have e2 := hI.2.2 P D L (trivLine ι) (C 2) 0 hP hL hA (fun k => by simp [trivLine]) g2 nm2
-  rw [(GlobalTheory.T.finite_vertical_recursion K ι P D hP I 0 1 f1 nm1 L (trivLine ι)).2] at e1
-  rw [(GlobalTheory.T.finite_vertical_recursion K ι P D hP I 0 (C 2) f2 nm2 L (trivLine ι)).2] at e2
+  rw [(_root_.GlobalTheory.CompanionTheory.Ar.Num.RecSplit.recR_split K ι P D hP I 0 1 f1 nm1 L (trivLine ι)).2] at e1
+  rw [(_root_.GlobalTheory.CompanionTheory.Ar.Num.RecSplit.recR_split K ι P D hP I 0 (C 2) f2 nm2 L (trivLine ι)).2] at e2
   have a1 : arInt P (1 : MRing ι ℤ) (trivLine ι) L = 0 := by
     unfold arInt
     rw [hc.1 _ (fun _ => (0 : ℝ) * 1) (fun z _ => by simp [ReciprocityTheory.ChartRestriction.G.Geo.logNorm, trivLine]),

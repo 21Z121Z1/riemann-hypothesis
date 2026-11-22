@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsStableComplBot
 import Development.AbelianVarietyTheory.Definitions.Foundations.NotIsSplitOfIsInertAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsoDefiniteUnitaryAdelicUnitaryGroup
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteUnitaryPointSelfDualToOrthonormal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefiniteUnitaryLocalPointsTransferIffStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefiniteUnitaryLocalPointsTransferIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperspecialStabilizerTransferConjSelfDualLattic
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivAtSelfDualLatticeIffHasElementaryDivisors
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemSameDoubleCosetOfHasElementaryDivisorsDefinitStatement
@@ -88,7 +88,7 @@ theorem exists_isTransfer : ∀ (D : D7) [IsCMField D.host.E] (V : HSp D) (θ : 
   intro D _ V θ hθ hs hp
   obtain ⟨j, M, hM, hrat, hfin, hinf, hA, hform⟩ := _root_.GlobalTheory.DefTransfer.Glob.exists_iso D V θ hθ hs hp
   obtain ⟨h₀, hh₀, hlat⟩ := _root_.GlobalTheory.DefTransfer.LatMove.exists_finite_point D V M hM
-  obtain ⟨hex, hloc⟩ := GlobalTheory.T.definiteUnitary_localPoints_transfer_iff D V j h₀ M hM hh₀ hfin hform hlat
+  obtain ⟨hex, hloc⟩ := _root_.GlobalTheory.DefTransfer.Loc.locU_iff D V j h₀ M hM hh₀ hfin hform hlat
   have hhyp := _root_.GlobalTheory.TransferHyp.cj_mem_hyp_iff D V j h₀ M hM hh₀ hfin hform hlat hloc
   have hdiv := _root_.GlobalTheory.DivTransfer.divAt_cj_iff D V j h₀ M hM hh₀ hfin hform hlat
   refine ⟨j, h₀, hh₀, hrat, hfin, hinf, hA, fun P x => ?_, hhyp, ?_⟩

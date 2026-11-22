@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DiagMod
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularFunctionTowerIntegrality
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ValuationSubringGaloisStableOfKummer
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RootFFiniteGaloisIsPGroupStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RootFFiniteGaloisIsPGroup
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaussValuationUniqueOnLthRootLevelFields
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemModularUnitsOfRootMemKummerAdjoin
 open scoped MatrixGroups TensorProduct
@@ -200,7 +200,7 @@ theorem GlobalTheory.KZ.ES.pow_of_gauss_congr_one : ∀ {Ω : Type} [Field Ω] [
   obtain ⟨W', hW'⟩ := exists_ext (algebraMap X.K (AlgebraicClosure X.K)) W
   have hG : Gauss (algebraMap X.K (AlgebraicClosure X.K) X.jK) V W' :=
     (gauss_map (IsScalarTower.toAlgHom Ω X.K (AlgebraicClosure X.K)) hW' X.jK V).2 hW
-  obtain ⟨h1, h2, h3⟩ := GlobalTheory.T.rootF_finiteDimensional_isGalois_isPGroup ε X l M₀ k n hl hM₀ hlM U hlev
+  obtain ⟨h1, h2, h3⟩ := _root_.GlobalTheory.KZ.ES.RootGal.rootF_finite_galois_isPGroup ε X l M₀ k n hl hM₀ hlM U hlev
   set L := rootF X M₀ (M₀ * l ^ k) (l ^ n) U with hL
   let WL : ValuationSubring L := W'.comap (algebraMap L (AlgebraicClosure X.K))
   have hWL : ∀ x : L, algebraMap L (AlgebraicClosure X.K) x ∈ W' ↔ x ∈ WL := fun x => Iff.rfl
@@ -216,7 +216,7 @@ theorem GlobalTheory.KZ.ES.pow_of_gauss_congr_one : ∀ {Ω : Type} [Field Ω] [
       rw [map_zero] at hθf
       exact hθ (Subtype.ext (pow_eq_zero_iff hl.ne_zero |>.1 hθf))
     have hfU : Units.mk0 f hf0 ∈ X.Un l := _root_.GlobalTheory.KZ.UnRoot.mem_Un_of_root_mem_adjoin ε X (l ^ n) l hm hl.pos θ _
-      (rootF_le X (fun g W hW => (GlobalTheory.T.overAffineJLine_comap_sl_gal ε X ε.injective hhol W hW).1 g) _ _ _ U hU θ θ.2) hθf
+      (rootF_le X (fun g W hW => (_root_.GlobalTheory.KZ.Tower.overY_comap_sl_gal ε X ε.injective hhol W hW).1 g) _ _ _ U hU θ θ.2) hθf
     let τ' := τ.liftNormal (AlgebraicClosure X.K)
     let σ : AlgebraicClosure X.K →ₐ[Ω] AlgebraicClosure X.K := (τ'.restrictScalars Ω : _ ≃ₐ[Ω] _)
     have hj : σ (algebraMap X.K (AlgebraicClosure X.K) X.jK) = algebraMap X.K (AlgebraicClosure X.K) X.jK :=

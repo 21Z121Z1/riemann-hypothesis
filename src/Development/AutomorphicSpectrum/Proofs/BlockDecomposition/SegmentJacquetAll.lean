@@ -8,9 +8,9 @@ import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.Princip
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasSupportOfIsSubquotientProdIrr
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ParabolicInductionPreservesSubquotient
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FineJacquetLengthOneStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FineJacquetSegmentLengthTwoStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FineJacquetSegmentLengthTwo
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FineJacquetSegmentInductionStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IrreducibleSubSegmentProductStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IrreducibleSubSegmentProduct
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetMultiplicityConcat
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConcatenatedJacquetMultiplicityFactorization
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConcatApplyEquiv
@@ -33,7 +33,7 @@ theorem fineJac_all (hA : GlobalTheory.Published.IrreducibleAdmissibleGL) (hZ : 
     · interval_cases n
       · omega
       · exact @GlobalTheory.T.fine_jacquet_length_one k _ _ _ _ hA Δ h
-      · exact @GlobalTheory.T.fine_jacquet_segment_length_two k _ _ _ _ hA hZ Δ h
+      · exact @_root_.GlobalTheory.CompanionTheory.SegFine2.fineJac_of_len_eq_two k _ _ _ _ hA hZ Δ h
     · exact @GlobalTheory.T.fine_jacquet_segment_induction k _ _ _ _ hA Δ (h ▸ h3) fun Δ' hlt => ih _ (h ▸ hlt) Δ' rfl
 
 theorem occurs_topCut (hA : GlobalTheory.Published.IrreducibleAdmissibleGL) (hZ : GlobalTheory.Published.SegmentRepresentation)
@@ -71,7 +71,7 @@ theorem occurs_topCut (hA : GlobalTheory.Published.IrreducibleAdmissibleGL) (hZ 
   subst hxeq
   refine ⟨c, hc, hl, hcat0, hle, fun a => ?_⟩
   obtain ⟨φ, hφ⟩ := hemb a
-  exact GlobalTheory.T.irreducible_sub_segment_product hA hZ (topCut Δ c hc a) (hx a) (y a).rep (y a).2.rep.smooth (y a).2.rep.irr φ hφ
+  exact _root_.GlobalTheory.CompanionTheory.SegUniq.isLSeg_of_dec hA hZ (topCut Δ c hc a) (hx a) (y a).rep (y a).2.rep.smooth (y a).2.rep.irr φ hφ
 
 theorem lSegJacquet : ∀ {k : Type} [Field k] [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k]
     (hA : GlobalTheory.Published.IrreducibleAdmissibleGL) (hZ : GlobalTheory.Published.SegmentRepresentation), LSegJacquet k := by

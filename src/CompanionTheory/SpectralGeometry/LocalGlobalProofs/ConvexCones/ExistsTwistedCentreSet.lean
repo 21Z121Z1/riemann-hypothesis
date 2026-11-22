@@ -50,7 +50,7 @@ theorem centres_exists : ∀ (O : Type) [CommRing O] [IsDedekindDomain O] [CharZ
       (_ : Module.Projective O X), Module.finrank O X ≤ q ∧
       ∃ (m : ℕ) (δ : Fin m → LinearMap.BilinForm ℤ X), IsMultCell bar φ M δ ∧ c.Carries δ
   · obtain ⟨X₀, _, _, _, _, -, m₀, δ₀, hM₀, hc₀⟩ := hex
-    obtain ⟨v, hv, hvp, hvn, t, ht, htv⟩ := GlobalTheory.T.exists_primitiveBalancedForm_fracCoords_of_cellMult bar φ M δ₀ hM₀ hM
+    obtain ⟨v, hv, hvp, hvn, t, ht, htv⟩ := _root_.GlobalTheory.PolFan.CentreChoice.exists_isPrim_frac bar φ M δ₀ hM₀ hM
     obtain ⟨h₀, hli, hpr, -⟩ := hM₀
     have hv0 : v ≠ 0 := fun h => by
       have e : (⟨v, hv⟩ : balForms bar X₀) = 0 := Subtype.ext h

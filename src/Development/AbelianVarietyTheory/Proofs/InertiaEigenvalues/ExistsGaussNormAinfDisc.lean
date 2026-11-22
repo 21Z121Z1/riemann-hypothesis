@@ -204,9 +204,9 @@ theorem exists_gauss_disc : ∀ (l : ℕ) [Fact l.Prime] (K : FinExt l) (bk : BK
   have v0 : v 0 = 0 := by simp only [v, GlobalTheory.GaussExt.untilt_zero]; simp
   have v1 : v 1 = 1 := by simp [v]
   have vmul : ∀ x y, v (x * y) = v x * v y := by intro x y; simp [v]
-  have vadd : ∀ x y, v (x + y) ≤ max (v x) (v y) := fun x y => (GlobalTheory.T.untilt_norm_ultrametric_eq_zero l x y).1
+  have vadd : ∀ x y, v (x + y) ≤ max (v x) (v y) := fun x y => (_root_.GlobalTheory.TiltAbs.untilt_ultrametric_definite l x y).1
   have vdvd : ∀ x y, v x ≤ v y → y ∣ x := dvd_of_norm_le
-  have vf0 : 0 < v bk.flat := norm_pos_iff.2 fun h => hf0 ((GlobalTheory.T.untilt_norm_ultrametric_eq_zero l bk.flat 0).2 (Subtype.ext h))
+  have vf0 : 0 < v bk.flat := norm_pos_iff.2 fun h => hf0 ((_root_.GlobalTheory.TiltAbs.untilt_ultrametric_definite l bk.flat 0).2 (Subtype.ext h))
   have vf1 : v bk.flat < 1 := lt_of_not_ge fun h => hfu (isUnit_of_dvd_one (vdvd 1 _ (v1 ▸ h)))
   obtain ⟨t, ht, hρ⟩ : ∃ t : ℝ, 0 < t ∧ v bk.flat ^ t = ρ :=
     ⟨Real.logb (v bk.flat) ρ, Real.logb_pos_of_base_lt_one vf0 vf1 h0' h1', Real.rpow_logb vf0 vf1.ne h0'⟩

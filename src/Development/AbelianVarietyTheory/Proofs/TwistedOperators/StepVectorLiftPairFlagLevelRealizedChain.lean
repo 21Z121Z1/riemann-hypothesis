@@ -5,18 +5,18 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnrOffOne
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.OmVacuumEqSplitFacSmulSum
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdempotentMulEqZeroOfOrthogonal
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsInvariantForm
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchrodingerIntertwinerSchwartzBruhatIsThetaStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilRepThetaDatumHalfEqSmulStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchrodingerIntertwinerSchwartzBruhatIsTheta
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilRepThetaDatumHalfEqSmul
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EigenOfLocalComponentsFiniteAdelicPair
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemHomLatticeIffFrameStabilizerActMem
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IdempotentComponentMemFrameStabilizer
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsIntegralUnitDeterminantAtIdempotentResidue
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilOperatorFixesLatticeVacuumNonsplitUnramifiedStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilOperatorFixesLatticeVacuumNonsplitUnramified
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PlaceIdempotentUnderEqOfLiesOver
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TypePlaceDatumBlockTriangularMove
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TwistPlaceDatumParabolicMove
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FrameMatrixMovedHomIntegralReductions
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IdeleCharRestrictLocalUnitsResidueCharStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IdeleCharRestrictLocalUnitsResidueChar
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsUnramifiedAtPlaceIdempotentOfHeckeCharUnramifiStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LevelCharactersUnramifiedOffLevelPlaces
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsCharFamIsVacVec
@@ -171,7 +171,7 @@ theorem om_vac (hW : IsWeilDatumO ψ S T χS χT om) (kS : S.SigOK) (kT : T.SigO
       rw [split _ ha hae x y hx hy, uT v ε hε hv' x (by rw [← sup ha.1 hx, ← mul_assoc, h1]) x1 x2,
         uS v ε hε hv' y (by rw [← sup ha.1 hy, ← mul_assoc, h1]) y1 y2]
       simp
-    · exact GlobalTheory.T.weilOperator_fixes_latticeVacuum_nonsplit_unramified D ψ S T χS χT om hW ΛS ΛT dS dT v ε ⟨hε, hs⟩ (uS v ε hε hv') (uT v ε hε hv') g' h' pg ph hl
+    · exact _root_.GlobalTheory.InertVac.om_fixes_latVac D ψ S T χS χT om hW ΛS ΛT dS dT v ε ⟨hε, hs⟩ (uS v ε hε hv') (uT v ε hε hv') g' h' pg ph hl
         f₀ hf.2.theta hf.2.lat
 
 end Vac
@@ -241,8 +241,8 @@ theorem step_law (hW : IsWeilDatumO ψ S T χS χT om) (kS : S.SigOK) (kT : T.Si
     fun PP hP => ⟨parLev_g hg.2.1 hP, parLev_g hh.2.1 hP, (congrFun hg.2.2 ⟨PP, hP⟩).trans (congrFun hh.2.2 ⟨PP, hP⟩).symm⟩
   have hoQ := _root_.GlobalTheory.ParabolicDatum.omegaQ_parabolic D _ _ r ha hb Q ξ 1 (fun PP => redFn βS PP (finE S g)) (fun PP => redFn βT PP (finE T h))
     fun PP hP => ⟨parLev_q hg.2.1 hP, parLev_q hh.2.1 hP⟩
-  have h2 := GlobalTheory.T.weilRep_theta_datum_half_eq_smul D ψ S T χS χT om hW e _ f₀ _ f
-    (GlobalTheory.T.schrodingerIntertwiner_schwartzBruhat_isTheta D ψ hW.std S T ΛS ΛT dS dT e (GlobalTheory.PlaceDatum.idemSum_mul_self he) (GlobalTheory.PlaceDatum.infPart_idemSum he) f₀
+  have h2 := _root_.GlobalTheory.ThetaMove.om_theta_eq_smul D ψ S T χS χT om hW e _ f₀ _ f
+    (_root_.GlobalTheory.SchrTheta.isTheta_placeModel D ψ hW.std S T ΛS ΛT dS dT e (GlobalTheory.PlaceDatum.idemSum_mul_self he) (GlobalTheory.PlaceDatum.infPart_idemSum he) f₀
       hf.2.theta) hΘ g h (_root_.GlobalTheory.StabLatInv.mem_latO_iff_actO_mem D S T ΛS ΛT βS βT dS dT fS fT g h sg sh) _ (_ * _) (Units.ne_zero _) h1 (fun x => by
       obtain ⟨i1, i2⟩ := _root_.GlobalTheory.FrameRed.frMapO_actO_int_red D S T βS βT g h sg sh x
       have i0 : IsHalf e (actO S T g⁻¹ h⁻¹ x) ↔ IsHalf e x :=
@@ -277,11 +277,11 @@ def LevRes (L : LevCh D T0) (t : T0) (j : ℕ) (c : (AE D)ˣ →* Circle) : Prop
 theorem levRes_mu (hL : L.Is μ0) (t : T0) (j : Fin D.R.m) : LevRes L t ((j : ℕ) + 1) (L.mu t ((j : ℕ) + 1)) := by
   obtain ⟨-, p1, p2, p3⟩ := _root_.GlobalTheory.levCh_unramified_places D T0 L μ0 hL t
   refine ⟨fun PP hP => ?_, fun PP hP => ?_, UnrOff.mul (fun v ε hε hv => ?_) fun v ε hε hv => ?_⟩
-  · have := ((GlobalTheory.T.ideleChar_restrict_localUnits_residueChar D _ _ (hL.mu0 j) PP).1 _ ((L.C.isMu0 j).tame PP) (hL.chi j PP hP)).mul
-      ((GlobalTheory.T.ideleChar_restrict_localUnits_residueChar D _ _ (hL.xi t) PP).2 (p1 PP hP))
+  · have := ((_root_.GlobalTheory.ResLoc.resAt_of_chrEq D _ _ (hL.mu0 j) PP).1 _ ((L.C.isMu0 j).tame PP) (hL.chi j PP hP)).mul
+      ((_root_.GlobalTheory.ResLoc.resAt_of_chrEq D _ _ (hL.xi t) PP).2 (p1 PP hP))
     rwa [mul_one] at this
-  · have := ((GlobalTheory.T.ideleChar_restrict_localUnits_residueChar D _ _ (hL.mu0 j) PP).2 (p2 PP hP j)).mul
-      ((GlobalTheory.T.ideleChar_restrict_localUnits_residueChar D _ _ (hL.xi t) PP).1 _ (hL.xi_tame t PP) (hL.xiR t PP hP))
+  · have := ((_root_.GlobalTheory.ResLoc.resAt_of_chrEq D _ _ (hL.mu0 j) PP).2 (p2 PP hP j)).mul
+      ((_root_.GlobalTheory.ResLoc.resAt_of_chrEq D _ _ (hL.xi t) PP).1 _ (hL.xi_tame t PP) (hL.xiR t PP hP))
     rwa [one_mul] at this
   · exact GlobalTheory.T.isUnramifiedAtPlaceIdempotent_of_heckeChar_unramified_above D _ _ (hL.mu0 j) v ε hε fun P hP =>
       (p3 P fun PP h => hP ▸ hv PP (Finset.mem_union.2 h)).2 j
@@ -291,7 +291,7 @@ theorem levRes_mu (hL : L.Is μ0) (t : T0) (j : Fin D.R.m) : LevRes L t ((j : �
 theorem LevRes.mul_eta_inv (hL : L.Is μ0) {t : T0} {j : ℕ} {c : (AE D)ˣ →* Circle} (h : LevRes L t j c) :
     LevRes L t j (c * L.eta⁻¹) := by
   have h1 : ∀ PP, ResAt L.eta⁻¹ PP 1 := fun PP => by
-    have := ((GlobalTheory.T.ideleChar_restrict_localUnits_residueChar D _ _ hL.eta PP).2 (L.C.isEta.unr PP)).inv
+    have := ((_root_.GlobalTheory.ResLoc.resAt_of_chrEq D _ _ hL.eta PP).2 (L.C.isEta.unr PP)).inv
     rwa [inv_one] at this
   refine ⟨fun PP hP => ?_, fun PP hP => ?_, h.2.2.mul (UnrOff.inv fun v ε hε _ => ?_)⟩
   · have := (h.1 PP hP).mul (h1 PP)

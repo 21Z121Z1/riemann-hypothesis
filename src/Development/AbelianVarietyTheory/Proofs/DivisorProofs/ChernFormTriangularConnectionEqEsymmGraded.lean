@@ -1,7 +1,7 @@
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsMetricFrOfIsMetricOn
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernFormTriangularEqEsymmFirstChernForms
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramLowerTriangularFactorPosDefPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramLowerTriangularFactorPosDefProperties
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramLowerTriangularFactorGradedLengthSmooth
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlaggedBundleMetricSmoothUnitEtaleChart
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ChernDegreeComplex
@@ -21,12 +21,12 @@ theorem chernFld_ldPart_eq_esymm_grF : ∀ (F : Type) [Field F] (σ : F →+* �
   change ∀ᶠ v in 𝓝 p.crd, MContDiffAt ∞ (fun u => H A (p.ch.symm u) τ) v ∧ (H A (p.ch.symm v) τ).PosDef at hev
   have h0 := hev.self_of_nhds
   have hs := _root_.GlobalTheory.ChernCalc.ldPart_grD_smooth X.dim (m τ) (fun u => H A (p.ch.symm u) τ) p.crd h0.1 h0.2
-  have hp0 := GlobalTheory.T.gramLowerTriangularFactor_posDef_properties (m τ) _ h0.2
+  have hp0 := _root_.GlobalTheory.ChernCalc.ldPart_posDef_spec (m τ) _ h0.2
   show chernAt (fun v => ldPart (H A (p.ch.symm v) τ)) p.crd j = _
   refine (_root_.GlobalTheory.ChernTri.chernAt_tri X.dim (m τ) (fun v => ldPart (H A (p.ch.symm v) τ))
     (fun i v => grD (H A (p.ch.symm v) τ) i) p.crd hs.1 (fun i => (hp0.2.1 i).1) ?_ j).trans rfl
   filter_upwards [hev] with x hx
-  have hpx := GlobalTheory.T.gramLowerTriangularFactor_posDef_properties (m τ) _ hx.2
+  have hpx := _root_.GlobalTheory.ChernCalc.ldPart_posDef_spec (m τ) _ hx.2
   exact ⟨hpx.2.2.1, fun i => (hpx.2.1 i).2⟩
 
 end GlobalTheory.ChernCalc

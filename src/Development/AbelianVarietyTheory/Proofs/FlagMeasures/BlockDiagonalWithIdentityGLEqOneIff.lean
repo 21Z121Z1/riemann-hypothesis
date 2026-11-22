@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsMirClass
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WhittakerJacquetIdempotentsPropertiesPrimeField
 import Formalism.SharpRestriction.LevelLetterCocycles.ArithmeticCylinders
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LabelDatum
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WhittakerDimensionHarishChandraInductionMulStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WhittakerDimensionHarishChandraInductionMul
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BernsteinZelevinskyDerivativeGLnEqTwistedSum
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MirabolicClassFunBlockDiagonalEqSumDerivatives
 
@@ -62,7 +62,7 @@ theorem wh_sum (ψ : AddChar (ZMod g) ℂ) {n : ℕ} (s : Finset ℕ) (f : ℕ �
 theorem wh_hc (ψ : AddChar (ZMod g) ℂ) (hψ : ψ ≠ 1) (a b n : ℕ) (hn : n = a + b) (α : Gn g a → ℂ)
     (β : Gn g b → ℂ) (hα : IsClass α) (hβ : IsClass β) : wh ψ (hc a b α β n) = wh ψ α * wh ψ β := by
   unfold hc
-  rw [GlobalTheory.T.whittakerDimension_harishChandraInduction_mul g ψ hψ a b n hn _ (fun y x z => by simp only [hα x z]) (fun x y z => by simp only [hβ y z])]
+  rw [_root_.GlobalTheory.GLq.WhMul.wh_hcT g ψ hψ a b n hn _ (fun y x z => by simp only [hα x z]) (fun x y z => by simp only [hβ y z])]
   simp only [wh_mul_left]
   rw [mul_comm, ← wh_mul_left]
   simp only [mul_comm]

@@ -11,7 +11,7 @@ import Development.AutomorphicSpectrum.Proofs.MetricProofs.FiniteMinimalPrimes
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncResolutionCompactEmbeddedStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncResolutionTransitionPolynomialStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncResolutionCoverAndCone
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncResolutionLocalChartPolynomialStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncResolutionLocalChartPolynomial
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncResolutionRegularLocalRing
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncResolutionBoundaryNormalCrossing
 
@@ -167,7 +167,7 @@ theorem isEmbedded_of_isSncModel : ∀ (K : Type) [Fintype K] (ι : K → Type) 
   obtain ⟨hcpt, hsrc⟩ := GlobalTheory.T.snc_resolution_compact_embedded K ι _ hPh
   obtain ⟨himage, htrans⟩ := GlobalTheory.T.snc_resolution_transition_polynomial K ι _ hPh
   obtain ⟨hcover, hliftmem, hcompat, hsurj, hinj, hzero⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cmp.SncRes.chart_lifts_package K ι _ _ hPh hDh
-  have hinv := GlobalTheory.T.snc_resolution_local_chart_polynomial K ι _ hPh
+  have hinv := _root_.GlobalTheory.CompanionTheory.Ar.Cmp.SncRes.ChartInv.chart_coord_ratio K ι _ hPh
   have hreg := _root_.GlobalTheory.CompanionTheory.Ar.Cmp.SncRes.Reg.isRegularLocalRing_chart K ι Ω y e J hP hsnc
   have hsc := _root_.GlobalTheory.CompanionTheory.Ar.Cmp.SncRes.Par.exists_sncData_of_isSncModel K ι Ω y e J hP hJ hJP hsnc
   let E := Fintype.equivFin ((k : K) → ι k)

@@ -8,7 +8,8 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LinearIndepend
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ComplexHeckeConjugatePlacePeterssonAdjoint
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MinpolySeparableOfComplexNormalReading
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodProjectorFormsIdempotent
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsKsFormOfAlgebraicFormsIsoStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsKsFormOfAlgebraicFormsIso
+import Formalism.LocalToGlobal.IndefiniteReal.DoubleCosetOperators.RatDatOfReal
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AevalIntertwine
 open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.IntegralHeckeForms Formalism.ConjugateSelfDual ReciprocityTheory.Gal NumberField IsDedekindDomain Polynomial GlobalTheory.LiftLeaf GlobalTheory.SupLaw Formalism.IndefR.NX
 open scoped TensorProduct InnerProductSpace
@@ -237,7 +238,7 @@ theorem hL_separable_good : ∀ {D : D7} {G : Type} [Group G] [Fintype G] {Pl0 I
     rw [hSS', LinearMap.smul_apply, h2, smul_smul, mul_assoc, inv_mul_cancel₀ hc'0, mul_one]
   have hTT : ∀ z : ↥V, T (T' z) = T' (T z) := fun z => Subtype.ext (LinearMap.congr_fun hPQc z.1)
 
-  obtain ⟨nb, bs, hbs, -, hspan, hbLL, -⟩ := GlobalTheory.T.isKsForm_of_algebraicFormsIso _ _ (Y.fi i0) (hI i0).1
+  obtain ⟨nb, bs, hbs, -, hspan, hbLL, -⟩ := _root_.GlobalTheory.isKsForm_of_formsIso _ _ (Y.fi i0) (hI i0).1
   haveI : IsScalarTower S.Ks ↥D.LL0 D.what₂.LL := IsScalarTower.of_algebraMap_eq fun x => (S.kKs_spec x).symm
   haveI : Module.Finite S.Ks (FmK S ((i0 : ℕ) + 1)) := by
     have h := FiniteDimensional.span_of_finite S.Ks (Set.finite_range bs)

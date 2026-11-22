@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.FormsStable
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemFormsIffExistsEquivariantExtension
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LevelPrimeIncidenceFiniteFibresStableStatement
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.UopIsExtStatement
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LevelPrimeIncidenceFiniteFibresStable
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.UopIsExt
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LevelChainTransitionIsExtKernelSum
 
 noncomputable section
@@ -46,7 +46,7 @@ theorem finsum_inc_eq (v : X.A.vT) (p : M.Pt) (F : M.Pt → M.Val) :
   rw [inc_eq_image, finsum_mem_image (M.update_pt_injective v p).injOn]
 
 theorem finite_inc_loc (v : X.A.vT) (p : M.Pt) : {q | (p.2 v).Inc q}.Finite := by
-  have h := ((GlobalTheory.T.levelPrime_incidence_finite_fibres_stable D u X i M v).1 p).1
+  have h := ((_root_.GlobalTheory.LvT.inc_finite_stable D u X i M v).1 p).1
   rw [inc_eq_image] at h
   exact Set.Finite.of_finite_image h (M.update_pt_injective v p).injOn
 
@@ -68,10 +68,10 @@ theorem formsStable_of_tgtEq : ∀ (D : D7) (u : D.what₂.Word) (X : Ch D u) (L
   intro D u X Lv Kt hK
   refine ⟨fun i hi v φ hφ => ?_, fun i hi v v' φ hφ => ?_, fun i hi φ hφ => ?_⟩
   · obtain ⟨Φ, hΦ⟩ := (_root_.GlobalTheory.LvT.PtModel.mem_Fi_iff_exists_isExt D u X i (Lv i hi) φ).1 hφ
-    exact (_root_.GlobalTheory.LvT.PtModel.mem_Fi_iff_exists_isExt D u X i (Lv i hi) _).2 ⟨_, GlobalTheory.T.isExt_Uop_finsum_inc_of_isExt D u X i (Lv i hi) v φ Φ hΦ⟩
+    exact (_root_.GlobalTheory.LvT.PtModel.mem_Fi_iff_exists_isExt D u X i (Lv i hi) _).2 ⟨_, _root_.GlobalTheory.LvT.uop_isExt D u X i (Lv i hi) v φ Φ hΦ⟩
   · obtain ⟨Φ, hΦ⟩ := (_root_.GlobalTheory.LvT.PtModel.mem_Fi_iff_exists_isExt D u X i (Lv i hi) φ).1 hφ
-    have h1 := GlobalTheory.T.isExt_Uop_finsum_inc_of_isExt D u X i (Lv i hi) v _ _ (GlobalTheory.T.isExt_Uop_finsum_inc_of_isExt D u X i (Lv i hi) v' φ Φ hΦ)
-    have h2 := GlobalTheory.T.isExt_Uop_finsum_inc_of_isExt D u X i (Lv i hi) v' _ _ (GlobalTheory.T.isExt_Uop_finsum_inc_of_isExt D u X i (Lv i hi) v φ Φ hΦ)
+    have h1 := _root_.GlobalTheory.LvT.uop_isExt D u X i (Lv i hi) v _ _ (_root_.GlobalTheory.LvT.uop_isExt D u X i (Lv i hi) v' φ Φ hΦ)
+    have h2 := _root_.GlobalTheory.LvT.uop_isExt D u X i (Lv i hi) v' _ _ (_root_.GlobalTheory.LvT.uop_isExt D u X i (Lv i hi) v φ Φ hΦ)
     funext c
     rw [h1.1 c, h2.1 c]
     simp only []

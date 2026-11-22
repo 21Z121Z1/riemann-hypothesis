@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.CentralNilGL
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlkEquivInl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CommutingMonicOperatorPolynomials
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolyMapOfSum
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalSpanAdjoinStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalSpanAdjoin
 
 open NumberField MeasureTheory GlobalTheory.CuspRep
 
@@ -84,7 +84,7 @@ theorem twoBlocks : ∀ (M : Type) [AddCommGroup M] [Module ℂ M] (r m : ℕ) (
       c22 (fun u u' => c11 _ _) (fun u u' => (c12 _ _).symm) (fun u u' => constantCoeff_threeGroupsFirstVariables_eq_zero _ _)
       (fun u x hx => ⟨sMX u x hx, sM _ _ x hx, sM _ _ x hx⟩) (fun u x hx => sK2 _ x hx) e v hv hfin
 
-theorem finDim : ∀ (V : Type) [AddCommGroup V] [Module ℂ V] (n : ℕ) (c : ℕ → Module.End ℂ V) (g : ℂ → Module.End ℂ V), (∀ u, g u = ∑ i ∈ Finset.range (n + 1), u ^ i • c i) → (∀ u u', Commute (g u) (g u')) → ∀ (w : V) (P : ℂ → Polynomial ℂ), (∀ u, P u ≠ 0) → (∀ u, Polynomial.aeval (g u) (P u) w = 0) → FiniteDimensional ℂ (Submodule.span ℂ {y | ∃ b ∈ Algebra.adjoin ℂ (Set.range g), y = b w}) := GlobalTheory.T.finiteDimensional_span_adjoin_apply_of_annihilating
+theorem finDim : ∀ (V : Type) [AddCommGroup V] [Module ℂ V] (n : ℕ) (c : ℕ → Module.End ℂ V) (g : ℂ → Module.End ℂ V), (∀ u, g u = ∑ i ∈ Finset.range (n + 1), u ^ i • c i) → (∀ u u', Commute (g u) (g u')) → ∀ (w : V) (P : ℂ → Polynomial ℂ), (∀ u, P u ≠ 0) → (∀ u, Polynomial.aeval (g u) (P u) w = 0) → FiniteDimensional ℂ (Submodule.span ℂ {y | ∃ b ∈ Algebra.adjoin ℂ (Set.range g), y = b w}) := _root_.GlobalTheory.CycSpanFin.finiteDimensional_span_adjoin
 
 theorem exists_poly {V : Type} [AddCommGroup V] [Module ℂ V] (K : Submodule ℂ V) (A : Subalgebra ℂ (Module.End ℂ V))
     {T : Module.End ℂ V} (hT : T ∈ A) (w : V) (hf : FinMod K A w) :

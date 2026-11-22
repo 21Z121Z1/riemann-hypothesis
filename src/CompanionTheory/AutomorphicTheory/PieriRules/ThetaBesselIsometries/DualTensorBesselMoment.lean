@@ -11,9 +11,9 @@ import Formalism.RealPlaceAnalysis.StatementKT
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.GBasic
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ContinuousMulMt
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CasimirScalarOfCapelliDeterminantEigenvalue
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FrameWConjMatrixUnitsStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FrameWConjMatrixUnits
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ProjectorEntryValueUnderLinearFunctional
-import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.BesselLieTriangularVanishingStatement
+import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.BesselLieTriangularVanishing
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.BesselFrameEntryRelation
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.QuantumDeterminantEigenvalue
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.DualTensorCayleyCompatible
@@ -96,7 +96,7 @@ theorem bessel_ev_projector_value : HypsG → ∀ (k r : ℕ) (ε : Fin (2 * r +
   obtain ⟨hz, hTz, ⟨u₀, hu₀⟩, hcap, -⟩ := hS
   have hπ1 : π 1 = 1 := (Formalism.FourierDecayAlt.P.MatrixMultiplicationContinuity.piW_facts hTz hu₀).1
   obtain ⟨g, hg, -⟩ := hu₀
-  obtain ⟨hgu, hN, ⟨hfr, hunit⟩, hf, hω⟩ := GlobalTheory.T.frameW_conj_matrix_units k r z g hz hTz hg
+  obtain ⟨hgu, hN, ⟨hfr, hunit⟩, hf, hω⟩ := _root_.GlobalTheory.CapFrame.frame_matrix_units k r z g hz hTz hg
   have hd : IsUnit g.det := (Matrix.isUnit_iff_isUnit_det g).1 hgu
   have hQ : IsUnit g⁻¹ := (Matrix.isUnit_nonsing_inv_iff).2 hgu
   have hgi : g⁻¹⁻¹ = g := Matrix.nonsing_inv_nonsing_inv g hd
@@ -124,7 +124,7 @@ theorem bessel_ev_projector_value : HypsG → ∀ (k r : ℕ) (ε : Fin (2 * r +
     (Real.sqrt (Formalism.QuantumDeterminants.Tz k r z)) hk hEg
     (fun a b hab hnot => ⟨fun v => by
       rw [hL, hL, hE']
-      exact GlobalTheory.T.bessel_functional_lie_triangular_eq_character_smul hK k r ε mu R hR Wp z π l hz (fun x => by rw [hπ1]; rfl) hB _ (hN a b hab hnot).1 _ v.2,
+      exact _root_.Gp91.GlobalTheory.BesselNilp.bessel_dC hK k r ε mu R hR Wp z π l hz (fun x => by rw [hπ1]; rfl) hB _ (hN a b hab hnot).1 _ v.2,
       (hN a b hab hnot).2⟩)
     mu u (fun i j => Formalism.FourierDecayAlt.Q.EcRep (Formalism.QuantumDeterminants.Hpk k r) π (Formalism.FourierDecayAlt.Q.unitB (Formalism.QuantumDeterminants.Hpk k r)
       (fun i : Fin k => g *ᵥ Pi.single ((fun i : Fin k => (⟨r + i.val, by omega⟩ : Fin (2 * r + k + 1))) i) 1) i j))

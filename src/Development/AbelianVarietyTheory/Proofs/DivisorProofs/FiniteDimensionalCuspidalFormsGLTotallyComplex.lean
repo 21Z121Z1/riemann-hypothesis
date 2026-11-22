@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMemBand
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalOfTotallyBoundedSupNormBall
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormLeSupWiderBandGenCentralEigenformsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormLeSupWiderBandGenCentralEigenforms
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalHarishChandraFiniteFormBoundedDetNormBan
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarishChandraFormsEquicontinuousOnBandStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarishChandraFormsEquicontinuousOnBand
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormsUniformlySmallOutsideCompactBand
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TotallyBoundedSupOfEquicontinuousInvariantTailsStatement
 
@@ -32,7 +32,7 @@ theorem finiteDimensional_cuspGL : ∀ (E : Type) [Field E] [NumberField E] [IsT
     refine _root_.GlobalTheory.finiteDimensional_of_totallyBounded_supBall (GA E a) V' (band E a) ?_ ?_ ?_
     · rintro _ ⟨φ, hφ, rfl⟩ h0
       funext g
-      obtain ⟨C, hC⟩ := GlobalTheory.T.norm_le_sup_wider_band_genCentralEigenforms E a L hL W hW X hX N (max 1 (max (absDetA g) (absDetA g)⁻¹)) (le_max_left _ _)
+      obtain ⟨C, hC⟩ := _root_.GlobalTheory.HCF.norm_le_of_band_wide E a L hL W hW X hX N (max 1 (max (absDetA g) (absDetA g)⁻¹)) (le_max_left _ _)
       have hp := absDetA_pos g
       have h1 : (max 1 (max (absDetA g) (absDetA g)⁻¹))⁻¹ ≤ absDetA g := by
         rw [inv_le_comm₀ (by positivity) hp]
@@ -52,7 +52,7 @@ theorem finiteDimensional_cuspGL : ∀ (E : Type) [Field E] [NumberField E] [IsT
         (by rintro f ⟨φ, -, rfl, hb⟩; exact hb)
         (by
           intro ε hε
-          obtain ⟨U, hU, h⟩ := GlobalTheory.T.harishChandraForms_equicontinuous_on_band E a L hL W hW X hX N ε hε
+          obtain ⟨U, hU, h⟩ := _root_.GlobalTheory.HCF.Equi.equicontinuous_band E a L hL W hW X hX N ε hε
           refine ⟨U, hU, ?_⟩
           rintro f ⟨φ, hφ, rfl, hb⟩ g hg u hu hgu
           simpa using h φ (hV hφ) 1 hb g hg u hu hgu)

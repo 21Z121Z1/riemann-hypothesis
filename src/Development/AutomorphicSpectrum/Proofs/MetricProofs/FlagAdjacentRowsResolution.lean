@@ -9,18 +9,18 @@ import Development.AutomorphicSpectrum.Proofs.MetricProofs.HoloMapOfLocalProduct
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagDimensionIndexEquiv
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsContinuousOrbitSection
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsBaseChartAtGoodPointStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.OrbitChartTransitionAnalyticStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogResolutionFromOrbitChartsStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.OrbitChartTransitionAnalytic
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogResolutionFromOrbitCharts
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentChartFirst
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentChartSecond
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentChartThird
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentChartFourth
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentChartFifth
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentChartSixthStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentChartSixth
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentChartSeventh
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentChartEighthStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentChartNinthStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentArithmeticHeightStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentChartEighth
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentChartNinth
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentArithmeticHeight
 open MvPolynomial MeasureTheory Filter Topology Matrix ReciprocityTheory.AnForm ReciprocityTheory.AnForm.M ReciprocityTheory.AnForm.P ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.AI.I1 ReciprocityTheory.ChartRestriction.G.AI.I2 ReciprocityTheory.ChartRestriction.G.AI.I4 GlobalTheory.CompanionTheory.Ar.PB GroundTheory.Heights₂.Heights GroundTheory.Heights₂.Heights.LowerBoundFree
 open scoped ComplexOrder Classical
 open GlobalTheory.CompanionTheory.Ar.PB.WSq
@@ -67,7 +67,7 @@ theorem fibreSquare_atlas : ∀ (K : Type) [Fintype K] (ι : K → Type) [∀ k,
   intro K _ ι _ Φ _ y Ψ _ _ N j M n d Rb τ a b k₀ ca cb hb hab hk hca hcb hy hd
   have hA := (_root_.PositivityTheory.Xgp.t_c_w_arith K ι Φ y Ψ N j M d τ a b k₀ ca cb hb hab hk hca hcb hy).1
   obtain ⟨ε⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PB.WMan.ChartCount.nonempty_paramEquiv Ψ N j n d M.j_le hd
-  have hcov := GlobalTheory.T.flag_adjacent_arithmetic_height K ι Φ y Ψ N j M n d Rb τ a b k₀ ca cb hb hab hk hca hcb hy
+  have hcov := _root_.GlobalTheory.CompanionTheory.Ar.PB.WMan.Cover.main K ι Φ y Ψ N j M n d Rb τ a b k₀ ca cb hb hab hk hca hcb hy
   have mk : ∀ (F : FrameData ι Ψ N M.Ω M.blk) (kb : Fin Rb.A.n) (V : Set (Fin n → ℂ))
       (bl : (Fin n → ℂ) → (Σ k, baseIdx ι M.blk k) → ℂ) (r : ((Σ k, baseIdx ι M.blk k) → ℂ) → Rb.X)
       (h : Ψ → Matrix (Fin N) (Fin N) ℂ), IsWCtx M Rb τ a b k₀ ca cb d F kb V bl r h →
@@ -79,10 +79,10 @@ theorem fibreSquare_atlas : ∀ (K : Type) [Fintype K] (ι : K → Type) [∀ k,
     have hm := _root_.GlobalTheory.CompanionTheory.Ar.PB.WMan.Mem.main K ι Φ y Ψ N j M n d Rb τ a b k₀ ca cb F kb V bl r h ε hc
     have hr := _root_.GlobalTheory.CompanionTheory.Ar.PB.WMan.Read.chart_reads K ι Φ y Ψ N j M n d Rb τ a b k₀ ca cb F kb V bl r h ε hc
     have ho := _root_.GlobalTheory.CompanionTheory.Ar.PB.WMan.Onto.main K ι Φ y Ψ N j M n d Rb τ a b k₀ ca cb F kb V bl r h ε hc
-    have hO := GlobalTheory.T.flag_adjacent_chart_sixth K ι Φ y Ψ N j M n d Rb τ a b k₀ ca cb F kb V bl r h hc
+    have hO := _root_.GlobalTheory.CompanionTheory.Ar.PB.WMan.Opn.main K ι Φ y Ψ N j M n d Rb τ a b k₀ ca cb F kb V bl r h hc
     have hb' := _root_.GlobalTheory.CompanionTheory.Ar.PB.WMan.Orb.main K ι Φ y Ψ N j M n d Rb τ a b k₀ ca cb F kb V bl r h ε hc
-    have ht := GlobalTheory.T.flag_adjacent_chart_eighth K ι Φ y Ψ N j M n d Rb τ a b k₀ ca cb F kb V bl r h ε hc
-    have hi := GlobalTheory.T.flag_adjacent_chart_ninth K ι Φ y Ψ N j M n d Rb τ a b k₀ ca cb F kb V bl r h ε hc
+    have ht := _root_.GlobalTheory.CompanionTheory.Ar.PB.WMan.wRho_continuousOn K ι Φ y Ψ N j M n d Rb τ a b k₀ ca cb F kb V bl r h ε hc
+    have hi := _root_.GlobalTheory.CompanionTheory.Ar.PB.WMan.Imm.chart_immersion K ι Φ y Ψ N j M n d Rb τ a b k₀ ca cb F kb V bl r h ε hc
     exact ⟨{ D := wD ε V
              isOpen_D := hV.preimage (continuous_pi fun i => continuous_apply _)
              φ := wPhi M F bl h ε k₀ τ ca cb
@@ -99,7 +99,7 @@ theorem fibreSquare_atlas : ∀ (K : Type) [Fintype K] (ι : K → Type) [∀ k,
              ρ_mem := fun z hz => (ho z hz).1
              φ_ρ := fun z hz => (ho z hz).2
              immersion := hi }, rfl, rfl, rfl⟩
-  obtain ⟨R, hR⟩ := GlobalTheory.T.log_resolution_from_orbit_charts (Option K) (fun o => ι (o.getD k₀)) (wP M τ a k₀ ca cb) (d + 2) hA.1 hA.2.1.2.1
+  obtain ⟨R, hR⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PB.WMan.Gen.exists_anLogRes_of_orbitCharts (Option K) (fun o => ι (o.getD k₀)) (wP M τ a k₀ ca cb) (d + 2) hA.1 hA.2.1.2.1
     (fun h => hA.2.1.1.ne_top (top_le_iff.mp h)) (fun z hz => by
       obtain ⟨F, kb, V, bl, r, h, hc, hzO⟩ := hcov z hz
       obtain ⟨C, -, -, hO⟩ := mk F kb V bl r h hc

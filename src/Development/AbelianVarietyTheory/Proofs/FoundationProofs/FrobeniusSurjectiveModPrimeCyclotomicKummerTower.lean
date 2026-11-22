@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.CosetTrace
 import Development.AbelianVarietyTheory.Definitions.Foundations.NotCoboundaryConstantOne
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PAdicCompletionLaurentEqSumPthPowersModPStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PAdicCompletionLaurentEqSumPthPowersModP
 open GlobalTheory.AlmostEt GlobalTheory.K5
 open scoped NNReal
 
@@ -65,7 +65,7 @@ theorem frob_surj_adjoin_tower : ∀ (p : ℕ) [Fact p.Prime] (Ω : Type) [Field
     · rw [← T.ζpow n]; exact isPthPowerModP_pow S (hζ _)
     · rw [← T.qpow n]; exact isPthPowerModP_pow S (hq _)
   | algebraMap r =>
-    obtain ⟨g, h, rfl⟩ := GlobalTheory.T.pAdicCompletionLaurent_eq_sum_pthPowers_mod_p p r
+    obtain ⟨g, h, rfl⟩ := _root_.GlobalTheory.K5.exists_eq_sum_qO_pow_mul_pow_add_mul p r
     rw [map_add, map_sum, map_mul, map_natCast]
     refine isPthPowerModP_add_p_mul S ?_ ?_
     · refine Finset.sum_induction _ (IsPowModP S p) (fun a b ha hb => isPthPowerModP_add S hpp ha hb)

@@ -3,9 +3,12 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsTowerPlaceAtUpperHalfPlanePoint
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsRootOne
 import Development.AbelianVarietyTheory.Definitions.Foundations.EigenOfTwoStep
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularTowerMemAdjoinJOfSlTwoIntInvariantStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularTowerMemAdjoinJOfSlTwoIntInvariant
+import Development.AbelianVarietyTheory.Definitions.Foundations.ApplyEqOfMemAdjoin
+import Development.AbelianVarietyTheory.Definitions.Foundations.IsTopWTopWOfExists
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteDimensionalLevStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsGaloisConjValuationSubringSameTraceStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsGaloisConjValuationSubringSameTrace
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DiagMod
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OverAffineJLineComapSlGal
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.BddOrder
 
@@ -357,7 +360,7 @@ theorem UpperTheory.Kd.K4.eb :
     have hfix : ∀ γ : SL(2, ℤ), X.sl (ofSL γ) (u : X.K) = u := fun γ =>
       congrArg Subtype.val (hu (resA X M γ) (Subgroup.mem_top _))
     obtain ⟨r, s, hrs⟩ := (IntermediateField.mem_adjoin_simple_iff Ω _).1
-      (GlobalTheory.T.modularTower_mem_adjoin_j_of_slTwoInt_invariant ε X ⟨φ, hφd, hφ⟩ (u : X.K) hfix)
+      (_root_.GlobalTheory.KZ.LevelOneFrac.mem_adjoin_of_sl_inv ε X ⟨φ, hφd, hφ⟩ (u : X.K) hfix)
     rw [IntermediateField.mem_bot]
     refine ⟨algebraMap (Polynomial Ω) (RatFunc Ω) r / algebraMap (Polynomial Ω) (RatFunc Ω) s, ?_⟩
     apply Subtype.ext
@@ -414,7 +417,7 @@ theorem UpperTheory.Kd.K4.eb :
       intro a
       rw [← RatFunc.num_div_denom a, hjRat, hjRat]
       exact ⟨aeval_div_mem_of_mem_of_same_pole X W Wτ hW hWτ c hc hcτ _ _, aeval_div_mem_of_mem_of_same_pole X Wτ W hWτ hW c hcτ hc _ _⟩
-    obtain ⟨σ, hσ⟩ := GlobalTheory.T.exists_galois_conj_valuationSubring_same_trace (RatFunc Ω) (lev X (CongruenceSubgroup.Gamma M))
+    obtain ⟨σ, hσ⟩ := _root_.GlobalTheory.KZ.ES.exists_conj_of_same_trace (RatFunc Ω) (lev X (CongruenceSubgroup.Gamma M))
       (W.comap (lev X (CongruenceSubgroup.Gamma M)).subtype)
       (Wτ.comap (lev X (CongruenceSubgroup.Gamma M)).subtype) hres
     have hxs : ((σ ⟨x, hxL⟩ : lev X (CongruenceSubgroup.Gamma M)) : X.K) ≠ 0 := by
@@ -507,7 +510,7 @@ theorem UpperTheory.Kd.K4.eb :
       intro a
       rw [← RatFunc.num_div_denom a, hjRat]
       exact ⟨fun _ => ValuationSubring.mem_top _, fun _ => aeval_div_mem_of_forall_inv_sub_mem X W hW hcase _ _⟩
-    obtain ⟨σ, hσ⟩ := GlobalTheory.T.exists_galois_conj_valuationSubring_same_trace (RatFunc Ω) (lev X (CongruenceSubgroup.Gamma M))
+    obtain ⟨σ, hσ⟩ := _root_.GlobalTheory.KZ.ES.exists_conj_of_same_trace (RatFunc Ω) (lev X (CongruenceSubgroup.Gamma M))
       (W.comap (lev X (CongruenceSubgroup.Gamma M)).subtype) ⊤ hall
     have hallW : ∀ u : lev X (CongruenceSubgroup.Gamma M), (u : X.K) ∈ W := fun u =>
       ValuationSubring.mem_comap.1 ((hσ u).1 (ValuationSubring.mem_top _))

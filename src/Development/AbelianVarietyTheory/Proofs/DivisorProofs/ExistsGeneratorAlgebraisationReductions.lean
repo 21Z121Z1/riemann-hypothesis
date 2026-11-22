@@ -3,7 +3,8 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.BaseIdealIdeal
 import Development.AbelianVarietyTheory.Definitions.Divisors.ProjectiveNotIsUnit
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsProjectiveAlgebraisationFormalCompleteLoca
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeneratorSchemeLineBundleAffineFiniteType
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalAlgebraisationMorphismsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalAlgebraisationMorphisms
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.FormalAlgebraisation
 
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.AbLaw GlobalTheory.FormalAlg GlobalTheory.Degen.FormalEmb
@@ -49,7 +50,7 @@ theorem exists_isGen_of_reductions : ∀ (R : Type) [CommRing R] [IsNoetherianRi
         exact appLE_eq_of_gm (β e) (b e) (b (e + 1)) (hβ e) i (s e i) (s (e + 1) i) (hsβ e · i)⟩
       ⟨hfq e, hfu e⟩
   let Z : Over (Spec (CommRingCat.of R)) := Over.mk (q ≫ X.hom)
-  have H := GlobalTheory.T.formalAlgebraisation_morphisms'
+  have H := _root_.GlobalTheory.FormalAlgMorphisms.formalAlgebraisation_morphisms
   obtain ⟨g, hg, -⟩ := H R I hI X Z hX (inferInstanceAs (IsSeparated (q ≫ X.hom)))
     (inferInstanceAs (LocallyOfFiniteType (q ≫ X.hom))) (inferInstanceAs (QuasiCompact (q ≫ X.hom)))
     Y β b hb hβ f (fun e => by

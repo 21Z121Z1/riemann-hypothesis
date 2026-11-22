@@ -1,6 +1,7 @@
 import Mathlib
 import Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.RealTraceClifford.RealTrOfAll
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LengthFunctionFactsHoldStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LengthFunctionFactsHold
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.WaveSt
 
 noncomputable section
 
@@ -14,5 +15,5 @@ attribute [local instance] Matrix.normedAddCommGroup Matrix.normedSpace
 theorem UpperTheory.RealTr.lgCpt :
     ∀ (n : ℕ) (R : ℝ), IsCompact {y : G n | lg y.val ≤ R} := by
   intro n R
-  obtain ⟨-, -, -, -, hc, -⟩ := GlobalTheory.T.length_function_facts_hold n
+  obtain ⟨-, -, -, -, hc, -⟩ := _root_.GlobalTheory.CompanionTheory.LengthGL.lgFacts n
   exact hc R

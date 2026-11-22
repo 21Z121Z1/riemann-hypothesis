@@ -6,7 +6,7 @@ import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatLineGen
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.CardComapMulFinsumEqFinsumFibres
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AddJFintype
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncModelReindexedCoords
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DominantSmoothMapCoordsStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DominantSmoothMapCoords
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FractionFieldCoordsGenerated
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CoordsAt
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EtaleLocalizationAtPrimeTensorOfLowHeight
@@ -91,7 +91,7 @@ theorem isSncModel_pull : ∀ (X X' : Scheme.{0}) (Ω₀ Ω : Type) [Field Ω₀
     obtain ⟨d, hd⟩ := exists_seg_ratio (addY y x') c₁ hc₁ p
     rw [hd]
     exact Algebra.subset_adjoin ⟨d, rfl⟩
-  obtain ⟨φ, hφ, hφs⟩ := GlobalTheory.T.dominant_smooth_map_coords X X' Ω₀ Ω ξ ξ' f (algebraMap Ω₀ Ω) _ _ (seg y) (seg (addY y x'))
+  obtain ⟨φ, hφ, hφs⟩ := _root_.GlobalTheory.CompanionTheory.Ar.ChartSmooth.smooth_chartRing X X' Ω₀ Ω ξ ξ' f (algebraMap Ω₀ Ω) _ _ (seg y) (seg (addY y x'))
     hq hq' tie tie' hd hsm c c₁ hxc hxc₁ (fun d => by
       have e1 : seg y d / seg y c = ∏ k, bratio y c ⟨k, d k⟩ := (Finset.prod_div_distrib _ _).symm
       rw [e1, map_prod]

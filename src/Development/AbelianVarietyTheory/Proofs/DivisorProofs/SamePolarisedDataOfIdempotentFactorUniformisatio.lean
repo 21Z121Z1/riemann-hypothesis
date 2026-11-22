@@ -13,7 +13,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedGroupHom
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CubeBundleIsoUniformisedGroupGenericFibre
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MumfordBundleIsoAlongHomsDescendsAbelianPart
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FactorPeriodsProjectionPeriodPoints
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SamePolarisedOfTwoIdempotentFactorsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SamePolarisedOfTwoIdempotentFactors
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemiAbelianHomTorsionCompatiblePeriodsLattices
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAlgClosedFieldTorsionMapsCommuteHom
 
@@ -247,6 +247,6 @@ theorem samePol_of_unif_factor : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLoc
         have := ht (F.xi (ε.symm a)) (F.xi (ε.symm b)) z J J' hJ hJ'
         rw [hε, hε, ex, ex] at this
         exact this }
-  exact GlobalTheory.T.samePolarised_of_two_idempotentFactors R D.toPre D₀.toPre D'.toPre D.tau_bimult F F₀ rfl rfl (fun _ => rfl) (fun _ => rfl)
+  exact _root_.GlobalTheory.Mum.TwoFac.samePol_of_two_factors R D.toPre D₀.toPre D'.toPre D.tau_bimult F F₀ rfl rfl (fun _ => rfl) (fun _ => rfl)
 
 end GlobalTheory.Mum.FactorPol

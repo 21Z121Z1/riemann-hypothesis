@@ -3,9 +3,9 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntDerApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DerivationTaylorPowerSeriesOfDerivationsKill
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TaylorIsRingHom
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfForallMemFilt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoeffwiseDerivationMvPowerSeriesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoeffwiseDerivationMvPowerSeries
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSolveMvPowerSeriesMatrixIdentityConst
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffSingleDerivationTaylorPowerSeriesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffSingleDerivationTaylorPowerSeries
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MvPowerSeriesDegreeAdicFiltrationMulLeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoordinatePolynomialSubMemMaximalIdealPowStatement
 open IsLocalRing GlobalTheory.FormalOrigin GlobalTheory.FormalOrigin.Extend
@@ -34,7 +34,7 @@ theorem derivation_extends : ∀ (R A : Type) [CommRing R] [IsLocalRing R] [IsNo
   intro R A _ _ _ _ _ _ _ _ inc ev hev n ds z hz hdz hm hinc d D hdD
   obtain ⟨T, hT⟩ := taylor_isRingHom A R n ev ds
   simp only [← hT]
-  obtain ⟨E, hE⟩ := GlobalTheory.T.exists_coeffwise_derivation_mvPowerSeries (Fin n) R D
+  obtain ⟨E, hE⟩ := _root_.GlobalTheory.mvPowerSeries_derivation_coeffwise (Fin n) R D
   have hEC : ∀ r, E (MvPowerSeries.C r) = MvPowerSeries.C (D r) := by
     intro r; ext α
     rw [hE, MvPowerSeries.coeff_C, MvPowerSeries.coeff_C]
@@ -45,7 +45,7 @@ theorem derivation_extends : ∀ (R A : Type) [CommRing R] [IsLocalRing R] [IsNo
     intro i j
     simp only [pdZ_apply]
     rw [← MvPowerSeries.coeff_zero_eq_constantCoeff_apply, MvPowerSeries.coeff_pderiv, zero_add, hT,
-      GlobalTheory.T.coeff_single_derivationTaylorPowerSeries, hdz]
+      _root_.GlobalTheory.FormalOrigin.Extend.taylor_coeff_single, hdz]
     simp [eq_comm]) (fun i => T (d (z i)) - E (T (z i)))
   set dΩ : Derivation ℤ (MvPowerSeries (Fin n) R) (MvPowerSeries (Fin n) R) := E + ∑ j, G j • pdZ j with hdΩ
   have hΩ : ∀ F, dΩ F = E F + ∑ j, G j * pdZ j F := fun F => add_sum_apply E G _ F

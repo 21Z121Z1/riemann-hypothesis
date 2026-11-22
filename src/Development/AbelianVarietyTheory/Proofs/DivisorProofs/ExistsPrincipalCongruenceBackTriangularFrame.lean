@@ -101,7 +101,7 @@ theorem exists_congr_back : ∀ (E : Type) [Field E] [NumberField E] [IsCMField 
     simp only [gm, LinearEquiv.trans_apply, LinearEquiv.symm_apply_apply]
     rw [← hEF, ← hEF, hiso]
 
-  obtain ⟨η, ε, -, hξ, hav, hlat, hisoη⟩ := GlobalTheory.T.exists_rational_isometry_of_trace_isometry E r (U.X k) (U.X k) (fun _ => rfl) gm hgiso
+  obtain ⟨η, ε, -, hξ, hav, hlat, hisoη⟩ := _root_.GlobalTheory.TraceIsometry.exists_gl_of_trace_isometry E r (U.X k) (U.X k) (fun _ => rfl) gm hgiso
   have hε : ε = 1 := mul_right_cancel₀ (U.X k).ξ0_ne (hξ.symm.trans (one_mul _).symm)
   have hUS : IsUStab (U.X k).Gm (U.X k).Λ η := ⟨fun u v => by rw [hisoη, hε, one_mul], hlat⟩
   have hcong : ∀ w ∈ (U.X k).Λ, ∃ y ∈ (U.X k).Λ,
@@ -135,7 +135,7 @@ theorem exists_congr_back : ∀ (E : Type) [Field E] [NumberField E] [IsCMField 
     fun τ i hi v hv => by
       have := hAr (ρe.symm τ) i hi ⟨v, hv⟩
       rwa [he, ← hav] at this
-  obtain ⟨b, hb, hxb, -⟩ := GlobalTheory.T.frames_differ_by_isometry_and_triangular_of_periods E r (U.X k) (U.X k) η (isMatch_of_isUStab (U.X k) hUS)
+  obtain ⟨b, hb, hxb, -⟩ := _root_.GlobalTheory.PeriodBorel.borel_of_periods E r (U.X k) (U.X k) η (isMatch_of_isUStab (U.X k) hUS)
     (fun τ => Dw.mult (ρe.symm τ)) m1 m2 (lact γ x) hx' x hx (fun τ => A (ρe.symm τ))
     (fun τ => hA0 _) hrel
   exact ⟨η, hUS, hcong, b, hb, hxb⟩

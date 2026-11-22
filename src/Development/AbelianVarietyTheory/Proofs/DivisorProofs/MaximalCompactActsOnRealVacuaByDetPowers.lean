@@ -21,7 +21,7 @@ import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsIntegra
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsOpenNsmulCompletedHomLatticeFiniteAdelic
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ThetaNormSqSumHeisenbergTranslatesDistinctChars
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ActAApply
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompletedHomLatticeMultipleMemOpenLevelStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompletedHomLatticeMultipleMemOpenLevel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemSpanHeisenbergTranslatesOfVacuumStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBasisAdaptedToCartanInvolution
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryPQContinuousCharacterEqDetPowProd
@@ -228,7 +228,7 @@ theorem mem_span (kS : S.SigOK) (kT : T.SigOK) (hS : ∀ τ, IsCartanInv (gramAt
   have hθ := h₀.2.inf
   obtain ⟨h1, -, h3⟩ := GlobalTheory.LatVac.latO_selfDual_approx_sign D ψ S T ΛS ΛT hψ dS dT
   have hfin := GlobalTheory.LatFinMod.latO_finite_mod D S T ΛS ΛT dS.1.fg dT.1.fg fun _ => True
-  have hlev := (GlobalTheory.T.completedHomLattice_multiple_mem_open_level D S T ΛS ΛT dS dT (_root_.GlobalTheory.LatFinGen.latO_finitely_generated D S T ΛS ΛT dS dT)).1
+  have hlev := (_root_.GlobalTheory.LatLevel.level_of_generators D S T ΛS ΛT dS dT (_root_.GlobalTheory.LatFinGen.latO_finitely_generated D S T ΛS ΛT dS dT)).1
   have hinf := fun u => GlobalTheory.SplitScalar.latO_fin (u := u) (S := S) (T := T) (LS := (ΛS : Set (Fin S.rank → D.host.E)))
     (LT := (ΛT : Set (Fin T.rank → D.host.E)))
   let M := realVac hψ hθ fun τ => cplxO (sS τ) (sT τ)

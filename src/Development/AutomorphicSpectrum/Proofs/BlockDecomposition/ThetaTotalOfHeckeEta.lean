@@ -2,18 +2,18 @@ import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.ThetaIdempotents.HeckeEta
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FockTranslateSchwartzMajorant
 import Development.AutomorphicSpectrum.Proofs.TwistedProofs.ExistsIsCovolOneRatMx
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ZeroCoefficientTotalStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RankOneThetaTotalStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StepTotalOfProductsStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductThetaOfSchwartzTensorStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductMeasureStatementStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ZeroCoefficientTotal
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RankOneThetaTotal
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StepTotalOfProducts
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductThetaOfSchwartzTensor
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductMeasureStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SchwartzTensorDensity
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeilRepresentationContinuity
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeilRepresentationKFinite
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OrbitMajorant
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwasawaCompactness
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RankOneMajorant
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EuclideanTotalStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EuclideanTotal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FockTotalOfEuclidean
 
 noncomputable section
@@ -104,10 +104,10 @@ theorem thTotal_of (h0 : ZeroTotal) (h1 : OneTotal) (hS : StepTotal) : HeckeEta 
   exact core h0 h1 hS hH D ρ p m.μ m.𝓕 m.hμ ψ hψ b₀ hb χ hχ hr h0' θ hθ
 
 theorem thTotal : HeckeEta → ThTotal :=
-  thTotal_of GlobalTheory.T.zero_coefficient_total
-    (GlobalTheory.T.rank_one_theta_total _root_.GlobalTheory.CompanionTheory.ThTot.weilCont (_root_.GlobalTheory.CompanionTheory.ThTot.rank_one_majorant_of_parts _root_.GlobalTheory.CompanionTheory.ThTot.weilCont _root_.GlobalTheory.CompanionTheory.ThTot.weilKFin _root_.GlobalTheory.CompanionTheory.ThTot.orbitMaj _root_.GlobalTheory.CompanionTheory.ThTot.iwaCpt)
-      (_root_.GlobalTheory.CompanionTheory.ThTot.fockTotal_of_eucTotal GlobalTheory.T.euclidean_total))
-    (GlobalTheory.T.step_total_of_products (GlobalTheory.T.product_theta_of_schwartz_tensor _root_.GlobalTheory.CompanionTheory.ThTot.SchwT.schwTensor) GlobalTheory.T.product_measure_statement)
+  thTotal_of _root_.GlobalTheory.CompanionTheory.ThTot.zeroTotal
+    (_root_.GlobalTheory.CompanionTheory.ThTot.OneRow.oneTotal _root_.GlobalTheory.CompanionTheory.ThTot.weilCont (_root_.GlobalTheory.CompanionTheory.ThTot.rank_one_majorant_of_parts _root_.GlobalTheory.CompanionTheory.ThTot.weilCont _root_.GlobalTheory.CompanionTheory.ThTot.weilKFin _root_.GlobalTheory.CompanionTheory.ThTot.orbitMaj _root_.GlobalTheory.CompanionTheory.ThTot.iwaCpt)
+      (_root_.GlobalTheory.CompanionTheory.ThTot.fockTotal_of_eucTotal _root_.GlobalTheory.CompanionTheory.ThTot.EucT.eucTotal))
+    (_root_.GlobalTheory.CompanionTheory.ThTot.stepTotal (_root_.GlobalTheory.CompanionTheory.ThTot.ProductTheta.prodTh_of_schwTensor _root_.GlobalTheory.CompanionTheory.ThTot.SchwT.schwTensor) _root_.GlobalTheory.CompanionTheory.ThTot.ProdMeasPf.prodMeas)
 
 end GlobalTheory.CompanionTheory.ThTot
 

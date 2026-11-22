@@ -5,8 +5,8 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementRe
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DualInterSelfDualHermitianLatticeSubspace
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BasisOfIsCompl
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetFrameClassProperties
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FrameLatticeGramDetAndMinorsOrbitInvariantStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardDiscriminantModuleIntegralOverlatticeSpanStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FrameLatticeGramDetAndMinorsOrbitInvariant
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardDiscriminantModuleIntegralOverlatticeSpan
 
 open ValuativeRel Formalism.MainNotions.S.Loc GlobalTheory.HL MeasureTheory
 open scoped Pointwise ENNReal Classical
@@ -114,7 +114,7 @@ theorem gluing_count : ∀ {F : Type} [Field F] [ValuativeRel F] [TopologicalSpa
   · simp [h0]
   obtain ⟨n, hn, n', hn', rfl⟩ := hC
   rw [((GlobalTheory.HL.FrameClass.frame_classes L r k S _ _).2.1 p hp).2] at hM
-  obtain ⟨⟨c, hc0, hca, hdet⟩, -, hsp⟩ := GlobalTheory.T.frameLattice_gramDet_and_minors_orbit_invariant L r k S n hn n' hn'
+  obtain ⟨⟨c, hc0, hca, hdet⟩, -, hsp⟩ := _root_.GlobalTheory.FrameGram.main L r k S n hn n' hn'
   obtain ⟨hli, hcompl, -⟩ := GlobalTheory.FrameBasic.main L r k S
   have hMh : ∀ x, x ∈ Mh ↔ x ∈ Λ₁ ∧ x ∈ S.ME := fun x => by rw [← hΛ₁.2.1]; rfl
   let Md : Submodule L.O S.V :=
@@ -133,7 +133,7 @@ theorem gluing_count : ∀ {F : Type} [Field F] [ValuativeRel F] [TopologicalSpa
         have : hf L S.Hm (s • u) z = s * hf L S.Hm u z := DualInter.smul_l L S.Hm s u z
         rw [this]
         exact L.O.mul_mem s.2 (hu' z hz) }
-  obtain ⟨-, hidx, -, b, hb⟩ := GlobalTheory.T.card_discriminantModule_integralOverlattice_span L S.Hm S.herm S.ϖ S.ϖ_irr _ c hc0 hdet Mh Md
+  obtain ⟨-, hidx, -, b, hb⟩ := _root_.GlobalTheory.DiscOver.disc_overlattice L S.Hm S.herm S.ϖ S.ϖ_irr _ c hc0 hdet Mh Md
     (by rw [Set.Sum.elim_range]; exact hM)
     (fun x hx => by rw [hsp]; exact ((hMh x).1 hx).2)
     (fun x hx z hz => (hΛ₁.1.2 z).2 ((hMh z).1 hz).1 x ((hMh x).1 hx).1)

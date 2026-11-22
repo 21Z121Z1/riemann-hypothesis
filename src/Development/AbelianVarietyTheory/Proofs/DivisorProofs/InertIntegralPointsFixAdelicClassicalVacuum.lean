@@ -336,7 +336,7 @@ theorem latVac_of_reads {ψ : AddChar (AF D.host.F) ℂ} {θ : InfFam D} {S T : 
     have ht : embT D τ r ≠ 0 := (map_ne_zero _).2 hr
     simp only [Pi.smul_apply, smul_eq_mul]
     field_simp
-  obtain ⟨c, hc'⟩ := (GlobalTheory.T.theta_space_selfDual_pair_at_most_line D (_root_.GlobalTheory.InducedType.induced_type D).1 cc δ crv _ _ _ (GlobalTheory.NormSum.VacMove.klat (tor0 D cc δ)
+  obtain ⟨c, hc'⟩ := (_root_.GlobalTheory.ThetaLine.theta_line D (_root_.GlobalTheory.InducedType.induced_type D).1 cc δ crv _ _ _ (GlobalTheory.NormSum.VacMove.klat (tor0 D cc δ)
     (GlobalTheory.NormSum.VacMove.moves_one D S.rank) (GlobalTheory.NormSum.VacMove.moves_one D T.rank))).1 _ he _ hG (by
       intro h0
       apply GlobalTheory.StepMove.vacO_ne_zero hf

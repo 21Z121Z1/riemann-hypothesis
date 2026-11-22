@@ -7,16 +7,16 @@ import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedFiniteIntegral
 import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.UnramifiedWhittaker.BasisSet
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResidueRingStructureStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResidueRingStructure
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FixedFieldStructure
 import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.UnramifiedWhittaker.AlmostGoodOf
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformizerExistenceStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformizerExistence
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TraceDualAtPlace
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedQuadraticConditionOneStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedQuadraticConditionOne
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedQuadraticConditionTwo
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedQuadraticConditionThreeStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedQuadraticConditionFourStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedQuadraticConditionFiveStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedQuadraticConditionThree
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedQuadraticConditionFour
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedQuadraticConditionFive
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CardUnimodularHermitianRepsLevelOne
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResAlgSplitTwo
 
@@ -76,8 +76,8 @@ theorem count_good (F E : Type) [Field F] [NumberField F] [Field E] [NumberField
     rwa [Matrix.det_unique] at h
   filter_upwards [hFI, hintE (J 0 0), hintE (J 0 0)⁻¹, hun 2 two_ne_zero] with v hInt hjI hjiI hv2 BO hBO s hsu
   have hv2' : Valued.v (2 : Fv F v) = 1 := by rwa [map_ofNat] at hv2
-  obtain ⟨ϖ, hϖ0, hϖ1, hϖd, hϖc⟩ := GlobalTheory.T.uniformizer_existence F v
-  obtain ⟨S, σS, hS, hsig⟩ := GlobalTheory.T.residue_ring_structure F E σ d b v hInt
+  obtain ⟨ϖ, hϖ0, hϖ1, hϖd, hϖc⟩ := _root_.GlobalTheory.CompanionTheory.LocalUnif.unifEx F v
+  obtain ⟨S, σS, hS, hsig⟩ := _root_.GlobalTheory.CompanionTheory.RvRingPf.rvRing F E σ d b v hInt
   have hfix := _root_.GlobalTheory.CompanionTheory.FixedPointsCM.fixedK F E σ hCM v
   have htr := _root_.GlobalTheory.CompanionTheory.Gunr.TraceDual.traceDualAt F E σ hCM d b v hInt
   have hR1 : (1 : Fv F v ⊗[F] E) ∈ Rv b v := by
@@ -99,7 +99,7 @@ theorem count_good (F E : Type) [Field F] [NumberField F] [Field E] [NumberField
   have hε : (ε : ℂ) = PositivityTheory.SiegelWeilFormula.Gen.eSp E v := by
     simp only [ε, PositivityTheory.SiegelWeilFormula.Gen.eSp]
     split_ifs <;> simp
-  have hQ := PositivityTheory.SiegelWeilFormula.Gunr.quadAt_of GlobalTheory.T.unramified_quadratic_condition_one _root_.GlobalTheory.CompanionTheory.ValuationCompleteness.q2 GlobalTheory.T.unramified_quadratic_condition_three GlobalTheory.T.unramified_quadratic_condition_four GlobalTheory.T.unramified_quadratic_condition_five
+  have hQ := PositivityTheory.SiegelWeilFormula.Gunr.quadAt_of _root_.GlobalTheory.CompanionTheory.ResidueInvolution.q1 _root_.GlobalTheory.CompanionTheory.ValuationCompleteness.q2 _root_.GlobalTheory.CompanionTheory.GunrResCard.q3 _root_.GlobalTheory.CompanionTheory.DiscriminantUnit.q4 _root_.GlobalTheory.CompanionTheory.GunrInert.isField_tensor_iff_isField_quot
     F E σ hCM d b v hInt S σS hS hsig ϖ hϖ0 hϖ1 hϖd hϖc hϖS ε hε
   let ϖS : S := ⟨_, hϖS⟩
   have hjS : inclR (Fv F v) (J 0 0) ∈ S := (hRS _).1 hjI

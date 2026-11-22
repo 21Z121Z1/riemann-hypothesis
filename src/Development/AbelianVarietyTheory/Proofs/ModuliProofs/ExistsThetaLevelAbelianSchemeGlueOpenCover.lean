@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUniqueHom
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaLevelAbelianSchemePullback
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.GlueSchemesOverOpensAlongCocycle
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaObjectComparisonMapsCocycleStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaObjectComparisonMapsCocycle
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.GroupLawsOnCoverAgreeOnCommonPoints
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsBinaryOpGluedAlongCover
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsGrpObjOfLocalGroupLawsOnCover
@@ -12,9 +12,9 @@ import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SymmetricLocalOnBase
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.RelAmpleOfCover
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaGroupKernelTrivialOfOpenCover
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.WeilIsLocalOnBaseOfOpenCover
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TorsionAndIsMonHomOfOpenCoverStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TorsionAndIsMonHomOfOpenCover
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TorsionBasisGeometricFibresOfOpenCover
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsGlueRigidifiedLineBundlesCoverStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsGlueRigidifiedLineBundlesCover
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.BCTools
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.FiniteHomogeneousInf
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
@@ -78,7 +78,7 @@ theorem exists_tobj_of_cover : ∀ (o : Type) [CommRing o] (g k : ℕ) (J : Type
   simp only [TMap] at hl hr
   choose a ha using hl
   choose a' ha' using hr
-  have hcoc := GlobalTheory.T.thetaObject_comparison_maps_cocycle tObj_pull o g k J b S s I U t u a a'
+  have hcoc := _root_.GlobalTheory.ThetaCocycle.cocycle tObj_pull o g k J b S s I U t u a a'
     (fun i j => ⟨(ha i j).1, (ha i j).2.1, (ha i j).2.2.1⟩)
     (fun i j => ⟨(ha' i j).1, (ha' i j).2.1, (ha' i j).2.2.1⟩) hrig
   obtain ⟨A, ψ, hp, hB⟩ := _root_.GlobalTheory.CocycleGlue.glue_over_opens S I U (fun i => (t i).A) (fun i j => (u i j).A) a a'
@@ -97,7 +97,7 @@ theorem exists_tobj_of_cover : ∀ (o : Type) [CommRing o] (g k : ℕ) (J : Type
       by simpa only [lift_fst_assoc, Hom.inv_def] using hn i T x y x₀ y₀ hx hy⟩) he
   have hab := _root_.GlobalTheory.CoverGlue.isAbelianScheme_and_relDim_of_cover S I U A (fun i => (t i).A) ψ hU hgp
   have hA : IsAbelianScheme A := hab.1 (fun i => (t i).ab)
-  obtain ⟨L, hL, hrigL, hLi⟩ := GlobalTheory.T.exists_glue_rigidified_lineBundles_cover S I U A (fun i => (t i).A) ψ hU hgp hA (fun i => (t i).ab)
+  obtain ⟨L, hL, hrigL, hLi⟩ := _root_.GlobalTheory.RigidBundleGlue.exists_glue S I U A (fun i => (t i).A) ψ hU hgp hA (fun i => (t i).ab)
     (fun i => (t i).L) (fun i j => (u i j).A.left) a a' hB (fun i => (t i).isLB) (fun i => (t i).rigid)
     (fun i j => LBIso.trans (pull_isLB (t i).isLB _) (u i j).isLB (pull_isLB (t j).isLB _)
       (ha i j).2.1.symm (ha' i j).2.1)
@@ -107,7 +107,7 @@ theorem exists_tobj_of_cover : ∀ (o : Type) [CommRing o] (g k : ℕ) (J : Type
   choose F hF using fun w => exists_endo_of_compatible_local_endos hU hp hB (fun i => (t i).act w) (fun i j => by
     rw [← Category.assoc, ← (ha i j).2.2.2 w, Category.assoc, (hB i j).w, ← Category.assoc,
       (ha' i j).2.2.2 w, Category.assoc])
-  have h82 := GlobalTheory.T.torsion_and_isMonHom_of_open_cover S I U A (fun i => (t i).A) ψ hU hgp hA (fun i => (t i).ab)
+  have h82 := _root_.GlobalTheory.CoverGlue.tors_and_isMonHom_of_cover S I U A (fun i => (t i).A) ψ hU hgp hA (fun i => (t i).ab)
   have hsym := GlobalTheory.T.symmetric_local_on_base_cover S I U A (fun i => (t i).A) ψ hU hgp L (fun i => (t i).L) hL
     (fun i => (t i).isLB) hLi (fun i => (t i).sym)
   have hamp := _root_.GlobalTheory.CoverGlue.relAmple_of_cover S I U A (fun i => (t i).A) ψ hU hgp L (fun i => (t i).L) hL

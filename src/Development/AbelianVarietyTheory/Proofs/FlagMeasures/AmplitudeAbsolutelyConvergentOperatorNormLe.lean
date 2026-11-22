@@ -3,11 +3,11 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.BlockAnti
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ExistsIsFolnerUWset
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselZhatInvAndRegularIffStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AmplitudeOperatorNormFinalArithmeticLe
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AmplificationAbsoluteSidePieceBoundStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AmplificationAbsoluteSidePieceBound
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LintegralBoundByDyadicSummation
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ContinuousOnMajorantFlagLengths
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MajorantFlagLengthsInvarianceTorusPositivityStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TwoFlagsGramNumberMulTopMinorNormLeTwoPowStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MajorantFlagLengthsInvarianceTorusPositivity
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TwoFlagsGramNumberMulTopMinorNormLeTwoPow
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormalFormRootMeasureHaarUnimodular
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegrableAndNormAmplitudeLeOfPairingsStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TopMinorAndGramNumberLeMajorantLengths
@@ -121,7 +121,7 @@ theorem side {Wq : Type} [NormedAddCommGroup Wq] [InnerProductSpace ℂ Wq] [Fin
   have q2 : (2 : ℝ) ^ i' * H₁ ≤ 2 ^ (i + i') * H₁ := by
     rw [pow_add]; gcongr; exact le_mul_of_one_le_left (by positivity) p1
   have hR : (1 : ℝ) ≤ 2 ^ (i + i') * H₁ := one_le_mul_of_one_le_of_one_le (one_le_pow₀ one_le_two) hH
-  have key := (GlobalTheory.T.amplification_absolute_side_piece_bound k r z z' π' ψ' μG μW' νS' μR νR Φ' γ c κ s H₁ De _ hr hk hκ hs hH h1 h2 h3 h4 h5 h6).2
+  have key := (_root_.GlobalTheory.Amp.AbsSide.abs_side k r z z' π' ψ' μG μW' νS' μR νR Φ' γ c κ s H₁ De _ hr hk hκ hs hH h1 h2 h3 h4 h5 h6).2
     w hw i' _ y hR hy
   refine le_trans (lintegral_mono' (Measure.restrict_mono ?_ le_rfl) fun x => ?_) (key.trans (le_of_eq ?_))
   · rintro x ⟨a1, a2, a3, a4, a5⟩
@@ -172,8 +172,8 @@ theorem abs_core : ∀ (k r : ℕ) {Wp : Type} [NormedAddCommGroup Wp] [InnerPro
   have hD : 0 < Dr k r z z' γ := lt_of_le_of_ne (norm_nonneg _) hD0.symm
   have hDe : (Dr k r z z' γ)⁻¹ ≤ De := de.2 ⟨r, by omega⟩ le_rfl (norm_ne_zero_iff.1 hD0)
   have hDe1 : 1 ≤ De := de.1
-  have n1 := (GlobalTheory.T.amplification_absolute_side_piece_bound k r z z' π' ψ' μG μW' νS' μR νR Φ' γ c κ s H₁ De _ hr hk hκ hs hH o2 m2 tf de nr qm).1
-  have n2 := (GlobalTheory.T.amplification_absolute_side_piece_bound k r z' z π ψ μG μW νS _ _ Φ γ⁻¹ c κ s H₁ De _ hr hk hκ hs hH o1 m1 tf' de' nr' qm').1
+  have n1 := (_root_.GlobalTheory.Amp.AbsSide.abs_side k r z z' π' ψ' μG μW' νS' μR νR Φ' γ c κ s H₁ De _ hr hk hκ hs hH o2 m2 tf de nr qm).1
+  have n2 := (_root_.GlobalTheory.Amp.AbsSide.abs_side k r z' z π ψ μG μW νS _ _ Φ γ⁻¹ c κ s H₁ De _ hr hk hκ hs hH o1 m1 tf' de' nr' qm').1
   rw [MeasurableEquiv.map_apply] at n2
   have a1 : ∀ᵐ x ∂νR, Matrix.of x ∈ GG k r ∧ Yv k r z z' γ (Matrix.of x) ≠ 0 := by
     filter_upwards [compl_mem_ae_iff.2 n1] with x hx
@@ -217,8 +217,8 @@ theorem abs_core : ∀ (k r : ℕ) {Wp : Type} [NormedAddCommGroup Wp] [InnerPro
     have hx' : γ * Matrix.of x ∈ GG k r := isClosedSub_GG.2.2.2.1 _ hγ _ hx.1
     have e1 : ∀ f : Mat k r → ℝ, ext0 f (lmulM γ x) = f (γ * Matrix.of x) := fun f => cochainExtendByZeroSubgroup_of_mem f hx'
     simp only [e1, cochainExtendByZeroSubgroup_of_mem _ hx.1]
-    have s1 : 1 ≤ Sg k r z (γ * Matrix.of x) := ((GlobalTheory.T.majorant_flag_lengths_invariance_torus_positivity k r z tf.1).2.2 _).1
-    have s2 : 1 ≤ Sg k r z' (Matrix.of x) := ((GlobalTheory.T.majorant_flag_lengths_invariance_torus_positivity k r z' tf.2.1).2.2 _).1
+    have s1 : 1 ≤ Sg k r z (γ * Matrix.of x) := ((_root_.GlobalTheory.Amp.LInv.lengths_basic k r z tf.1).2.2 _).1
+    have s2 : 1 ≤ Sg k r z' (Matrix.of x) := ((_root_.GlobalTheory.Amp.LInv.lengths_basic k r z' tf.2.1).2.2 _).1
     obtain ⟨b1, b2, b3⟩ := _root_.GlobalTheory.Amp.YBound.dr_y_le k r z z' γ tf _ hx.1
     obtain ⟨-, b5, b6⟩ := _root_.GlobalTheory.Amp.YBound.dr_y_le k r z' z γ⁻¹ tf' _ hx'
     rw [Matrix.nonsing_inv_mul_cancel_left γ (Matrix.of x) (isUnit_det_of_mem_GG hγ), dr_inv z z' hγ] at b6
@@ -226,7 +226,7 @@ theorem abs_core : ∀ (k r : ℕ) {Wp : Type} [NormedAddCommGroup Wp] [InnerPro
       max_bounds hr s1 hDe1 hDe (zero_le_one.trans s2) (le_max_right _ _) b6,
       max_bounds hr s1 hDe1 hDe (zero_le_one.trans s1) (le_max_left _ _) b3⟩
     · rw [mul_comm (Yv k r z' z γ⁻¹ _)]
-      exact GlobalTheory.T.twoFlagsGramNumber_mul_topMinorNorm_le_two_pow k r z z' γ tf _ hx.1
+      exact _root_.GlobalTheory.Amp.LemA.Yv_mul_Yv_mul_Dr_le k r z z' γ tf _ hx.1
     · refine b1.trans ?_
       rw [show ∀ t : ℝ, t ^ (2 * r) = t ^ r * t ^ r from fun t => by ring]
       exact mul_le_mul (pow_le_pow_left₀ (zero_le_one.trans s2) (le_max_right _ _) _)

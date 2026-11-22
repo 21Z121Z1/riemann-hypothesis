@@ -16,7 +16,8 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SegreRefineLineBundles
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieOmegaLatticeVectorBundle
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeTateWeilPullback
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlagModelStatementHoldsStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlagModelStatementHolds
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlagModelStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NormalCptIffNormalScheme
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.DvrData
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.MemEigSpOfMemHtDual
@@ -304,7 +305,7 @@ theorem exists_flag_model : Out.WeilSt → ∀ (E : Type) [Field E] [NumberField
     exact h
   have hmem : ∀ s k, b s k ∈ 𝔐.Vgen s := fun s k => hb s ▸ Submodule.subset_span ⟨k, rfl⟩
   have hlat := (_root_.GlobalTheory.CompanionTheory.Ar.lieLat_isVB_of_smooth 𝔐.X Ω 𝔐.ξ 𝔐.t.G 𝔐.Li 𝔐.M 𝔐.tie.gen 𝔐.t.semi.smooth).1
-  obtain ⟨κ', _, y₁, M', f, hd, hN, -, hfl, -, hnorm⟩ := GlobalTheory.T.FlagModelStatement_holds ℤ Ω _ _ (pmodel 𝔐) Empty (fun _ => Empty)
+  obtain ⟨κ', _, y₁, M', f, hd, hN, -, hfl, -, hnorm⟩ := _root_.GlobalTheory.CompanionTheory.Ar.FlagModel.flagModel ℤ Ω _ _ (pmodel 𝔐) Empty (fun _ => Empty)
     (fun a => a.elim) ((CMType H ⊕ CMType H) × Bool) 𝔐.Li
     (fun σ => if σ.2 then 𝔐.V σ.1 else 𝔐.M.lat) (fun σ => if σ.2 then labelRk D σ.1 else Module.finrank Ω 𝔐.Li)
     (fun σ => labelRk D σ.1) (fun σ => if σ.2 then 𝔐.Vgen σ.1 else ⊤) (fun σ => b σ.1) (fun a => a.elim)

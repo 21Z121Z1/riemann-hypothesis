@@ -21,7 +21,7 @@ import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExpBijFAndEx
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ValueAtOrigin
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsNsmulAndNeg
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ValuationsTorusPointsFramesFamilyTerms
-import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ProductOfSectionsExpandsToConvolutionStatement
+import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ProductOfSectionsExpandsToConvolution
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationTorsionMapsCompatibleInLevel
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExpansionPullbackSectionEndomorphismStatement
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SumVRootOfConvolutionPow
@@ -319,7 +319,7 @@ theorem value_at_torsion : LL → TwistBCSpanStatement → TWM.VRatioGtStatement
       obtain ⟨t'', h''⟩ := exists_secA_mul t t'
       obtain ⟨s'', hs'', -⟩ := (hbij (k + k') (by omega) w₀ hN.1).1 t''
       refine ⟨_, ⟨t'', s'', hs'', fun z J hJ => ?_, rfl⟩, fun α => (AdicValSum.main V ϖ hϖ F v hv _ _ _
-        (GlobalTheory.T.product_of_sections_expands_to_convolution hL V _ hA D A G hG U F w₀ hN.1 k k' _ hk hk' rfl t t' t'' s s' s'' hs hs' hs''
+        (_root_.GlobalTheory.UT.ProdConv.main hL V _ hA D A G hG U F w₀ hN.1 k k' _ hk hk' rfl t t' t'' s s' s'' hs hs' hs''
           (fun z J hJ => h'' _ _ z J hJ) p.g _ _ _ (hΩ k) (hΩ k') (hΩ _)
           (fun z J hJ => by rw [hΩv _ z J hJ, hΩv _ z J hJ, hΩv _ z J hJ, pow_add]) α)).1⟩
       have cm : @id ((TFK (R := V) F).left.presheaf.stalk z) (cst (R := V) F z (c * c')) =

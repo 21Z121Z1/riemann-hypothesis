@@ -1,13 +1,14 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSplitEtaleHermitianPairIsometry
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedQuadraticIntegralTraceFormPerfectStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedQuadraticIntegralTraceFormPerfect
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FourierMatch
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocallyConstantCompactSupportSlicesOperatorApplyStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteEtaleHermitianLinearEquivContinuousStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteEtaleHermitianLinearEquivContinuous
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TraceTowerFiniteEtaleHermitianPair
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSelfDualPiHaarTraceStarDotProductUnramified
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TransportSelfDualHaarMeasureKernelAddEquiv
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TraceEqSumCoordsOfAlgEquivStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TraceEqSumCoordsOfAlgEquiv
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology
 
 namespace GlobalTheory
@@ -33,7 +34,7 @@ theorem weilSL2_hermitian : WeilEt → GammaOne → ∀ (F E : Type) [Nontrivial
   haveI : CharZero F := Unram.charZero (E := E)
   letI mE : MeasurableSpace E := M.mE
   haveI : BorelSpace E := M.bE
-  obtain ⟨hjc, hjsc⟩ := GlobalTheory.T.finiteEtaleHermitian_linearEquiv_continuous F E A r j
+  obtain ⟨hjc, hjsc⟩ := _root_.GlobalTheory.JR.et_equiv_continuous F E A r j
   let jh : A.L ≃ₜ (Fin r → E) := { j.toEquiv with continuous_toFun := hjc, continuous_invFun := hjsc }
   let μE : Measure (Fin r → E) := Measure.pi fun _ => M.μE
   let B : (Fin r → E) → (Fin r → E) → ℂ := fun c b => ψ (Algebra.trace F E (star c ⬝ᵥ b))
@@ -49,7 +50,7 @@ theorem weilSL2_hermitian : WeilEt → GammaOne → ∀ (F E : Type) [Nontrivial
     rw [hker]; exact hT1 hsd
   obtain ⟨γ, Wk, hWk⟩ := hW F E A ψ hψ 1 _ hsdL
   have hγ : γ = 1 := hG F E A ψ hψ 1 _ hsdL A.etaK γ Wk hWk r j (by simpa using hj)
-  obtain ⟨hTrE, -, -⟩ := GlobalTheory.T.unramifiedQuadratic_integral_traceForm_perfect F E
+  obtain ⟨hTrE, -, -⟩ := _root_.GlobalTheory.NTr.traceForm_perfect F E
   have htr2 : ∀ a : F, Algebra.trace F E (algebraMap F E a) = 2 * a := by
     intro a
     apply (algebraMap F E).injective
@@ -58,7 +59,7 @@ theorem weilSL2_hermitian : WeilEt → GammaOne → ∀ (F E : Type) [Nontrivial
     intro y
     have : star (j y) ⬝ᵥ j y = algebraMap F E (∑ i, e (A.NL y) i) := by
       simp only [dotProduct, Pi.star_apply, map_sum, hNe y, mul_comm]
-    rw [this, htr2, GlobalTheory.T.trace_eq_sum_of_algEquiv_pi r e]; field_simp
+    rw [this, htr2, _root_.GlobalTheory.trace_eq_sum_coords_of_algEquiv r e]; field_simp
   have testj : ∀ φ : (Fin r → E) → ℂ, IsTest φ → IsTest (fun y : A.L => φ (j y)) := fun φ hφ =>
     ⟨hφ.1.comp_continuous hjc, hφ.2.comp_homeomorph jh⟩
   have testjs : ∀ φ : A.L → ℂ, IsTest φ → IsTest (fun b => φ (j.symm b)) := fun φ hφ =>

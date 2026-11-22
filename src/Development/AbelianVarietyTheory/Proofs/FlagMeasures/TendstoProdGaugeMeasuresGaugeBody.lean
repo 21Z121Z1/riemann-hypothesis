@@ -1,8 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurableSetHsBall
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaugeMeasureMatrixAlgebraSubgroupLocalAsymptoticStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaugeMeasureMatrixAlgebraSubgroupLocalAsymptotic
+import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.SameKindIsometric
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.VagueLimitRescaledMeasuresProdStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TendstoRescaledMeasureGaugeUnitBodyStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TendstoRescaledMeasureGaugeUnitBody
 
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S GlobalTheory.Count GlobalTheory.FlagMeas GlobalTheory.IwConst
 
@@ -14,7 +15,7 @@ theorem local_vag {n d : ℕ} {ε : Fin n → Bool} {S : Set (Formalism.REAL.UJ 
       IsFiniteMeasure (μ.restrict {g | nrm (uMat g - 1) < t}) ∧
       Vag (μ.restrict {g | nrm (uMat g - 1) < t}) (fun g => crd E (uMat g - 1)) volume d := by
   obtain ⟨A, hA, hON, hspan, rfl⟩ := h
-  obtain ⟨hσ, hcpt, -, r₀, hr₀, hlim⟩ := GlobalTheory.T.gaugeMeasure_matrixAlgebraSubgroup_local_asymptotics n ε A d E hA hON hspan μ hμ
+  obtain ⟨hσ, hcpt, -, r₀, hr₀, hlim⟩ := _root_.GlobalTheory.GaugeSubLoc.gauge_local_asymptotics n ε A d E hA hON hspan μ hμ
   refine ⟨hσ, Real.sqrt r₀, Real.sqrt_pos.2 hr₀, fun t ht htt => ⟨?_, ?_⟩⟩
   ·
     refine isFiniteMeasure_restrict.2 (ne_of_lt ?_)
@@ -64,7 +65,7 @@ theorem prod_gauge_body : ∀ (n : ℕ) (ε : Fin n → Bool) (SN SM MainNotions
   have h3 : (volume.prod (volume.prod volume) :
       Measure ((Fin dN → ℝ) × (Fin dM → ℝ) × (Fin dK → ℝ))).IsAddHaarMeasure :=
     Measure.prod.instIsAddHaarMeasure _ _
-  have key := GlobalTheory.T.tendsto_rescaled_measure_gauge_unit_body _ _ ((μN.restrict s).prod ((μM.restrict s).prod (μK.restrict s)))
+  have key := _root_.GlobalTheory.IwConst.VagBody.tendsto_body _ _ ((μN.restrict s).prod ((μM.restrict s).prod (μK.restrict s)))
     (Prod.map (fun g => crd EN (uMat g - 1))
       (Prod.map (fun g => crd EM (uMat g - 1)) (fun g => crd EK (uMat g - 1))))
     (volume.prod (volume.prod volume)) (dN + (dM + dK)) (gau EN EM EK EL)

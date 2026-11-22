@@ -2,18 +2,18 @@ import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HermitianCurvatureForms
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CovariantSecondFundamentalForm
 import Development.AbelianVarietyTheory.Definitions.Divisors.DiagValExtTraceNonneg
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConnectionBlocksHermitianFrameStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConnectionBlocksHermitianFrame
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubbundleCurvatureFormulaStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuotientBundleCurvatureFormulaStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilPairingTorsionPointsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CurvatureQuotientSubBlockStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CurvatureQuotientSubBlock
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DbarExtensionFormZeroStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CovDelHolExtensionZeroStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DdcExtensionTraceChernFormsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DdcExtensionTraceChernForms
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtTraceNonnegOfPosFrameStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtTraceWedgeSelfEqZero
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubBundleCurvatureRankOneStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernTwoDdcExtTraceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubBundleCurvatureRankOne
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernTwoDdcExtTrace
 
 open Matrix Complex ComplexConjugate Filter Topology
 open scoped ComplexOrder ContDiff
@@ -24,7 +24,7 @@ noncomputable section
 namespace GlobalTheory.SubQuotCurv
 
 theorem connBlocks : ∀ {V : Type} [NormedAddCommGroup V] [NormedSpace ℂ V] [NormedSpace ℝ V] [IsScalarTower ℝ ℂ V] {m l : Type} [Fintype m] [Fintype l] [DecidableEq m] [DecidableEq l] {U : Set V} {H : V → Matrix (m ⊕ l) (m ⊕ l) ℂ} {z : V} (h : IsHermFrame U H) (hs : ∀ x ∈ U, IsUnit (subGram (H x)).det) (hz : z ∈ U), ConnBlocks H z (fun η => -secondFormAdj H z η) (secondForm H z) :=
-  GlobalTheory.T.connection_blocks_hermitian_frame
+  _root_.GlobalTheory.SubQuotConn.connBlocks_secondForm
 
 theorem gaussS : ∀ {V : Type} [NormedAddCommGroup V] [NormedSpace ℂ V] [NormedSpace ℝ V] [IsScalarTower ℝ ℂ V] {m l : Type} [Fintype m] [Fintype l] [DecidableEq m] [DecidableEq l] {U : Set V} {H : V → Matrix (m ⊕ l) (m ⊕ l) ℂ} {z : V} (h : IsHermFrame U H) (hs : ∀ x ∈ U, IsUnit (subGram (H x)).det) (hz : z ∈ U) (ξ η : V), curv (gramS H) z ξ η = blockSS (H z) (curv H z ξ η) + wedgeAntiHol (secondFormAdj H z) (secondForm H z) ξ η :=
   GlobalTheory.T.subbundle_curvature_formula
@@ -36,7 +36,7 @@ theorem curvSQ : ∀ {V : Type} [NormedAddCommGroup V] [NormedSpace ℂ V] [Norm
   GlobalTheory.T.curvature_off_diagonal_block
 
 theorem curvQS : ∀ {V : Type} [NormedAddCommGroup V] [NormedSpace ℂ V] [NormedSpace ℝ V] [IsScalarTower ℝ ℂ V] {m l : Type} [Fintype m] [Fintype l] [DecidableEq m] [DecidableEq l] {U : Set V} {H : V → Matrix (m ⊕ l) (m ⊕ l) ℂ} {z : V} (h : IsHermFrame U H) (hs : ∀ x ∈ U, IsUnit (subGram (H x)).det) (hz : z ∈ U) (ξ η : V), blockQS (curv H z ξ η) = -dbarHol (extFormAdj H) z ξ η :=
-  GlobalTheory.T.curvature_quotient_sub_block
+  _root_.GlobalTheory.blockQS_curv_eq_neg_dbarHol_extFormAdj
 
 theorem dbarExt : ∀ {V : Type} [NormedAddCommGroup V] [NormedSpace ℂ V] [NormedSpace ℝ V] [IsScalarTower ℝ ℂ V] {m l : Type} [Fintype m] [Fintype l] [DecidableEq m] [DecidableEq l] {U : Set V} {H : V → Matrix (m ⊕ l) (m ⊕ l) ℂ} {z : V} (h : IsHermFrame U H) (hs : ∀ x ∈ U, IsUnit (subGram (H x)).det) (hz : z ∈ U) (η₁ η₂ : V), dbarAnti (extForm H) z η₁ η₂ = 0 :=
   GlobalTheory.T.dbar_extension_form_zero
@@ -45,7 +45,7 @@ theorem delExtAdj : ∀ {V : Type} [NormedAddCommGroup V] [NormedSpace ℂ V] [N
   GlobalTheory.T.cov_del_hol_extension_zero
 
 theorem ddcAny : ∀ {V : Type} [NormedAddCommGroup V] [NormedSpace ℂ V] [NormedSpace ℝ V] [IsScalarTower ℝ ℂ V] {m l : Type} [Fintype m] [Fintype l] [DecidableEq m] [DecidableEq l] {U : Set V} {H : V → Matrix (m ⊕ l) (m ⊕ l) ℂ} {z : V} (h : IsHermFrame U H) (hs : ∀ x ∈ U, IsUnit (subGram (H x)).det) (hz : z ∈ U) (hb : ∀ x ∈ U, ExtBlocksAt H x) (ξ₁ η₁ ξ₂ η₂ : V), ddcForm (extTrace H) z ξ₁ η₁ ξ₂ η₂ = chTwo (gramS H) z ξ₁ η₁ ξ₂ η₂ + chTwo (gramQ H) z ξ₁ η₁ ξ₂ η₂ - chTwo H z ξ₁ η₁ ξ₂ η₂ :=
-  GlobalTheory.T.ddc_extension_trace_chern_forms
+  _root_.GlobalTheory.SubQuotChTwo.ddcForm_extTrace_eq
 
 theorem nonneg : ∀ {V : Type} [NormedAddCommGroup V] [NormedSpace ℂ V] [NormedSpace ℝ V] [IsScalarTower ℝ ℂ V] {m l : Type} [Fintype m] [Fintype l] [DecidableEq m] [DecidableEq l] {U : Set V} {H : V → Matrix (m ⊕ l) (m ⊕ l) ℂ} {z : V} (h : IsPosFrame U H) (hz : z ∈ U), IsNonnegForm (extTrace H z) :=
   GlobalTheory.T.ext_trace_nonneg_of_pos_frame
@@ -54,10 +54,10 @@ theorem sqZero : ∀ {V : Type} [NormedAddCommGroup V] [NormedSpace ℂ V] [Norm
   _root_.GlobalTheory.extTrace_wedge_self_eq_zero_of_line
 
 theorem line_bundle_curvature_subquotient : ∀ {V : Type} [NormedAddCommGroup V] [NormedSpace ℂ V] [NormedSpace ℝ V] [IsScalarTower ℝ ℂ V] {m l : Type} [Fintype m] [Fintype l] [DecidableEq m] [DecidableEq l] {U : Set V} {H : V → Matrix (m ⊕ l) (m ⊕ l) ℂ} {z : V} (h : IsPosFrame U H) (hz : z ∈ U) (hm : Fintype.card m = 1) (hl : Fintype.card l = 1) (hg : ∀ ξ η, curv (gramS H) z ξ η = blockSS (H z) (curv H z ξ η) + wedgeAntiHol (secondFormAdj H z) (secondForm H z) ξ η) (hc : ∀ ξ η, chernOne H z ξ η = chernOne (gramS H) z ξ η + chernOne (gramQ H) z ξ η) (u : m → ℂ) (hu : u ≠ 0) (ξ η : V), chernOne (gramS H) z ξ η = lineCurv H z (incl m l *ᵥ u) ξ η - extTrace H z ξ η ∧ chernOne (gramQ H) z ξ η = chernOne H z ξ η - lineCurv H z (incl m l *ᵥ u) ξ η + extTrace H z ξ η :=
-  GlobalTheory.T.sub_bundle_curvature_rank_one
+  _root_.GlobalTheory.LineRankTwo.chernOne_sub_quot_line
 
 theorem ddcTwo : ∀ {V : Type} [NormedAddCommGroup V] [NormedSpace ℂ V] [NormedSpace ℝ V] [IsScalarTower ℝ ℂ V] {m l : Type} [Fintype m] [Fintype l] [DecidableEq m] [DecidableEq l] {H : V → Matrix (m ⊕ l) (m ⊕ l) ℂ} {z : V} (hm : Fintype.card m = 1) (hl : Fintype.card l = 1) (hc : ∀ ξ η, chernOne H z ξ η = chernOne (gramS H) z ξ η + chernOne (gramQ H) z ξ η) (hd : ∀ ξ₁ η₁ ξ₂ η₂, ddcForm (extTrace H) z ξ₁ η₁ ξ₂ η₂ = chTwo (gramS H) z ξ₁ η₁ ξ₂ η₂ + chTwo (gramQ H) z ξ₁ η₁ ξ₂ η₂ - chTwo H z ξ₁ η₁ ξ₂ η₂) (ξ₁ η₁ ξ₂ η₂ : V), ddcForm (extTrace H) z ξ₁ η₁ ξ₂ η₂ = chernTwo H z ξ₁ η₁ ξ₂ η₂ - wedge (chernOne (gramS H) z) (chernOne (gramQ H) z) ξ₁ η₁ ξ₂ η₂ :=
-  GlobalTheory.T.chern_two_ddc_ext_trace
+  _root_.GlobalTheory.ddcForm_extTrace_eq_rank_two
 
 variable {V : Type} [NormedAddCommGroup V] [NormedSpace ℂ V] [NormedSpace ℝ V] [IsScalarTower ℝ ℂ V]
   {m l : Type} [Fintype m] [Fintype l] [DecidableEq m] [DecidableEq l]

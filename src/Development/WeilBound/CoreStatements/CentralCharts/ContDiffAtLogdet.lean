@@ -1,6 +1,6 @@
 import Development.WeilBound.CoreStatements.CentralCharts.TraceMulReNonneg
 import Development.WeilBound.CoreStatements.CentralCharts.ContDiffAtLogNorm
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PeriodGramSmoothPuncturedStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PeriodGramSmoothPunctured
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PeriodGramComparisonBound
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ContDiffUncentre
@@ -60,7 +60,7 @@ theorem tame_logdet {a₀ k r : ℕ} {Λ : Type} [AddCommGroup Λ] (L : Flat.Log
   have hentry : ∀ y : Fin n → ℂ, ‖y‖ < ε → (∀ i : Fin n, (i : ℕ) < a → y i ≠ 0) →
       ∀ p q, ContDiffAt ℝ (⊤ : ℕ∞) (fun u => G u p q) y := by
     intro y hy hy0 p q
-    exact (GlobalTheory.T.period_gram_smooth_punctured n a₀ k r Λ L U hU p q _ (hpunct y hy hy0)).comp y
+    exact (_root_.GlobalTheory.CompanionTheory.Ar.HodgeMetric.GramSmooth.periodGram_contDiffAt n a₀ k r Λ L U hU p q _ (hpunct y hy hy0)).comp y
       (HodgeMetric.contDiff_uncentre 0 ρ π).contDiffAt
   have hgood : ∀ y : Fin n → ℂ, ‖y‖ < ε → ‖y‖ < 1 → (∀ i : Fin n, (i : ℕ) < a → y i ≠ 0) →
       ∀ᶠ z in 𝓝 y, ‖z‖ < ε ∧ ‖z‖ < 1 ∧ ∀ i : Fin n, (i : ℕ) < a → z i ≠ 0 := by

@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Ge
 import GroundTheory.AutomorphicForms.GeometricLemma
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicEqBlockUpper
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicLeviProjection
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ModulusCharacterLeviStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ModulusCharacterLevi
 set_option maxSynthPendingDepth 1
 open GlobalTheory.SmGL
 open GroundTheory.Automorphic.Parabolic (levi parabolicInd jacquetRep JacquetModule sqrtModular leviIncl cellLeviSub normInducing unipotentRadical)
@@ -24,7 +24,7 @@ theorem parInd_equiv_parabolicInd : ∀ (k : Type) [Field k] [ValuativeRel k] [T
           ρ (φ.symm (GroundTheory.Automorphic.Parabolic.leviProj k N β ⟨p, h2⟩)) w := by
     intro p h1 h2 w
     have hL := _root_.GlobalTheory.CompanionTheory.SmGLBridge.leviProj_found_eq k e β hβ φ hφ p h1 h2
-    rw [← hL, MulEquiv.symm_apply_apply, GlobalTheory.T.modulus_character_levi k e β hβ φ hφ, hL,
+    rw [← hL, MulEquiv.symm_apply_apply, _root_.GlobalTheory.CompanionTheory.DeltaLevi.deltaHalf_eq_sqrtModular k e β hβ φ hφ, hL,
       GroundTheory.Automorphic.Parabolic.sqrtModular_leviProj]
   let σ := ρ.comp φ.symm.toMonoidHom
   let E : IndSp e ρ ≃ₗ[ℂ] GroundTheory.Automorphic.Parabolic.parabolicIndSpace k N β σ :=

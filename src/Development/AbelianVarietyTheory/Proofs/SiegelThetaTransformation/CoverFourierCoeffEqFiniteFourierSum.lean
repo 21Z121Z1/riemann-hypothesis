@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsBaseClass
 import Formalism.LocalToGlobal.ProjectiveLattices.CuspFree
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.AnChartAsm
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DualHalfLevelMarkingExistsAndMatchStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DualHalfLevelMarkingExistsAndMatch
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.TensorLatticeSelfDualSemicharacterIndex
 import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.AdmissibleSmulIffOfCoprime
 
@@ -418,7 +418,7 @@ theorem w_eq_sum : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : H
   have hpd := (LevelCoverDatum.pd_pos d hlev).ne'
   have hζ := (LevelPairing.zetaM_prim c).map_of_injective (algebraMap c.F ℂ).injective
   have hζ₂ := (LevelPairing.zetaM_prim d.c₂).map_of_injective (algebraMap d.c₂.F ℂ).injective
-  obtain ⟨⟨δ₂, hδ₂⟩, hall, -⟩ := GlobalTheory.T.dual_half_level_marking_exists_and_match E H Dw d.l₂ r X L mk₂ _ hL.1 hmk₂ hζ₂
+  obtain ⟨⟨δ₂, hδ₂⟩, hall, -⟩ := _root_.GlobalTheory.Dict.DualMark.dual_marking E H Dw d.l₂ r X L mk₂ _ hL.1 hmk₂ hζ₂
   obtain ⟨hsur, hinj, -⟩ := hall δ₂ hδ₂
   clear hall
   have h𝔐 : D.𝔪 ≤ Mfr l := hT.prod ▸ Ideal.mul_le_left

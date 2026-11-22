@@ -94,7 +94,7 @@ theorem GlobalTheory.AvgJet.avg_jet : ∀ (ι : Type) [Fintype ι] (a b : ℕ), 
         Λ' (rhoK lam' (invTrK h⁻¹) (Formalism.L2.Ker.jetOp lam lam' (fun m => ℓ (MvPolynomial.monomial m 1)) nn v)) := by
   intro ι _ a b hab ha lam lam' nn hJ K _ _ _ _ _ ν _ _ r hr Q Λ
   classical
-  obtain ⟨-, hcomp, -, -, -, -, hsep, -⟩ := GlobalTheory.T.fockSubstitution_identities ι a b hab
+  obtain ⟨-, hcomp, -, -, -, -, hsep, -⟩ := _root_.GlobalTheory.KJInf.substIdentities ι a b hab
   haveI : FiniteDimensional ℂ (VV ℂ lam) := Module.Finite.of_basis (bVV ℂ lam)
   obtain ⟨S, c, hΛ⟩ := dual_eq_sum_evalAt (VV ℂ lam) hsep Λ
   have hav := fun y : {y : ι → Matrix (Fin a) (Fin a) ℂ // IsInv y} =>

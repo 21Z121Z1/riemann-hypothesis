@@ -1,7 +1,7 @@
 import Mathlib
 import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.LocalHaarQuadraticSubstitutionInvariant
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.StandardLocalHaarPropertiesStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.StandardLocalHaarProperties
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.CompletionIsLocalRing
 
 open HeckeCharacterZeroLocus.SiegelWeilU GlobalTheory.CompanionTheory.SW NumberField IsDedekindDomain MeasureTheory Topology
@@ -258,7 +258,7 @@ theorem measure_residue_class : ∀ (F : Type) [Field F] [NumberField F] (v : He
   have hx₀' : ∀ i, Valued.v (x₀ i) ≤ 1 := hx₀
   obtain ⟨i, hi⟩ := exists_unit_coord hB' hdet hx₀' hp
   set Nn : ℝ≥0∞ := (Ideal.absNorm v.asIdeal : ℝ≥0∞)⁻¹ with hNn
-  have hvol : lam {t | Valued.v t < 1} = Nn := (GlobalTheory.T.standard_local_haar_properties F v lam hstd).1
+  have hvol : lam {t | Valued.v t < 1} = Nn := (_root_.GlobalTheory.CompanionTheory.SW.Vol.volumes_in_completion F v lam hstd).1
   have hball : ∀ b : Fv F v, lam {s | Valued.v (s - b) < 1} = Nn := by
     intro b
     have : {s | Valued.v (s - b) < 1} = (fun h => -b + h) ⁻¹' {t | Valued.v t < 1} := by

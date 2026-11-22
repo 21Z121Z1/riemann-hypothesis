@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Ex
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StableIffCarrierEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoreClausesOfWeakCharacterisation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchurConstantsExistOnChainOfCuspRapidDecay
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RowTypePartLeEigensystemPartStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RowTypePartLeEigensystemPart
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TypePartLeEigensystemPartPrincipalLevel
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil
@@ -248,7 +248,7 @@ theorem isot_part : (GlobalTheory.Published.DiscreteSeriesCover ∧ GlobalTheory
 
   intro x hx
   rw [Submodule.mem_comap] at hx
-  obtain ⟨x', hx', hxe⟩ := GlobalTheory.T.rowTypePart_le_eigensystemPart R.toRealDat F.lv2 (s := 1) hCore hSch R.SF hSF Y.hF Y.PY Y.PW hPY hPW π i0 c hc true
+  obtain ⟨x', hx', hxe⟩ := _root_.GlobalTheory.TypePart.isotE_sub_eigenpart R.toRealDat F.lv2 (s := 1) hCore hSch R.SF hSF Y.hF Y.PY Y.PW hPY hPW π i0 c hc true
     (R.HE.e x) hx
   have hxx : x' = x := hCore.models.HE.1 hxe
   subst hxx

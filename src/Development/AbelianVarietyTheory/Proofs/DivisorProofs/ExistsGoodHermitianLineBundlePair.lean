@@ -8,11 +8,11 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAmpleNefHermi
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSectionAmpleTwistNonvanishingFiniteSet
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteControllingPoints
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianLineBundleIsNefShiftOfNonneg
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepresentsBaseBundlesAndTrivialStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepresentsBaseBundlesAndTrivial
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepresentedBundleSectionsRationalFunctionsDict
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepresentsHermitianLineBundleDual
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepresentsHermitianLineBundlePow
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermPairWithSectionsRepresentsTensorStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermPairWithSectionsRepresentsTensor
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.PullCub
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -72,7 +72,7 @@ theorem exists_good_pair : GlobalTheory.Published.ArCalc → ∀ (k : Type) [Com
   intro hC k _ X _ p D hX L
   obtain ⟨A₀, hAmp, hNef, s₀, hs₀, hs₀ne⟩ := _root_.GlobalTheory.AmpleNefSmall.exists_ample_nef_smallSec hC k X p D hX
   obtain ⟨P, rfl, rfl⟩ := exists_pair L A₀
-  have hrep := GlobalTheory.T.represents_base_bundles_and_trivial k X p P
+  have hrep := _root_.GlobalTheory.VolBr.Pair.rep_base k X p P
 
   obtain ⟨e, -, he_rng, he_nu, he_loc⟩ := _root_.GlobalTheory.VolBr.RepDict.rep_dict k X p P 0 1 P.A hrep.2.1
   have hsH : e s₀ ∈ P.H 0 1 := by
@@ -98,7 +98,7 @@ theorem exists_good_pair : GlobalTheory.Published.ArCalc → ∀ (k : Type) [Com
   have hR1 : P.Rep (-1) 0 P.L.dual := by simpa using _root_.GlobalTheory.VolBr.Pair.rep_dual k X p P 1 0 P.L hrep.1
   have hR2 : P.Rep 0 b (P.A.pow b) := by simpa using _root_.GlobalTheory.VolBr.Pair.rep_pow k X p P 0 1 P.A b hrep.2.1
   have hR : P.Rep (-1) b (P.L.dual.tens (P.A.pow b)) := by
-    simpa using GlobalTheory.T.hermPairWithSections_represents_tensor k X p P (-1) 0 0 b _ _ hR1 hR2
+    simpa using _root_.GlobalTheory.VolBr.Pair.rep_tens k X p P (-1) 0 0 b _ _ hR1 hR2
   obtain ⟨e', -, he'_rng, he'_nu, he'_loc⟩ := _root_.GlobalTheory.VolBr.RepDict.rep_dict k X p P (-1) b _ hR
   have htH : e' u ∈ P.H (-1) b := by
     show e' u ∈ (P.H (-1) b : Set X.functionField)

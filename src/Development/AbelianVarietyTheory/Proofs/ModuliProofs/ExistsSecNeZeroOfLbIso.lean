@@ -10,9 +10,9 @@ import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.CubeTheore
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSectionsCoverCubeEffectiveAbelianVariety
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.RelAmpleOfCubeDivGeneratedField
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSecRelAmplePowDivNeZeroStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSecRelAmplePowDivNeZero
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSectionNeZeroFibreOfGenericSection
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.RelAmpleOfAmpleGeometricFibresAbelianSchemeStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.RelAmpleOfAmpleGeometricFibresAbelianScheme
 
 noncomputable section
 
@@ -70,7 +70,7 @@ theorem relAmple_of_genericFibre : Out.Laws → Out.Laws2 → ∀ (S : Scheme.{0
   intro hL _ S _ _ P M K _ x hM hx hamp
   have hne : Nonempty (baseChange P x).A.left :=
     ⟨eSec (baseChange P x).A (Classical.arbitrary (Sp K))⟩
-  obtain ⟨a, s, ha, hs⟩ := GlobalTheory.T.exists_sec_relAmplePow_div_ne_zero K (baseChange P x).A (baseChange P x).L (M.pull (pullback.fst P.A.hom x))
+  obtain ⟨a, s, ha, hs⟩ := _root_.GlobalTheory.AmpleDivSec.exists_sec_pow_div_ne_zero K (baseChange P x).A (baseChange P x).L (M.pull (pullback.fst P.A.hom x))
     (baseChange P x).isAb.proper hne (baseChange P x).isLB (pull_isLB hM _) hamp
   have hp : (lbPow M a).IsLB := LB.isLB_linComb hM _ _
   have hN := LB.isLB_div hp P.isLB
@@ -78,7 +78,7 @@ theorem relAmple_of_genericFibre : Out.Laws → Out.Laws2 → ∀ (S : Scheme.{0
     LB.isLB_div (LB.isLB_linComb (pull_isLB hM f) _ _) (pull_isLB P.isLB f)
   obtain ⟨t, ht⟩ := exists_sec_ne_zero_of_lbIso (pull_isLB hN _) (hN' _)
     (lbIso_pull_div_lbPow P.isLB hM (pullback.fst P.A.hom x) a) ⟨s, hs⟩
-  refine GlobalTheory.T.relAmple_of_ample_geometricFibres_abelianScheme hL S P M hM fun K' _ _ y => ?_
+  refine _root_.GlobalTheory.FibreAmple.relAmple_of_geometricFibres hL S P M hM fun K' _ _ y => ?_
   obtain ⟨t', ht'⟩ := exists_sec_ne_zero_of_lbIso (hN' _) (pull_isLB hN _)
     (lbIso_pull_div_lbPow P.isLB hM (pullback.fst P.A.hom y) a).symm
     (_root_.GlobalTheory.GenericSection.exists_sec_ne_zero_of_generic hL S P _ K K' x y t hN hx ht)

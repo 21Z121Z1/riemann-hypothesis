@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PadicNormZpowS
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormUnitPowSubOne
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCyclotomicFrobeniusTwistedValueEqPowMulStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DualExpTeichmullerPowerSumFormula
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicTowerFrobeniusFormulaPosWeightStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicTowerFrobeniusFormulaPosWeight
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
 import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
@@ -94,7 +94,7 @@ theorem expStar_image : ∀ (D : Formalism.BasicNotions.D7) (l : ℕ) [Fact l.Pr
           exact ⟨h2, by simpa using h3⟩)
       convert this using 5
       simp [cycVal, levSum]
-  · refine key _ ?_ (GlobalTheory.T.cyclotomicTower_frobenius_formula_pos_weight D.loc l (D.locA l) (D.locT l) K (s' + 1) hs e he g hg hχ)
+  · refine key _ ?_ (_root_.GlobalTheory.ExpImage.PosWeight.formula_pos D.loc l (D.locA l) (D.locT l) K (s' + 1) hs e he g hg hχ)
     obtain ⟨e', rfl⟩ := Nat.exists_eq_add_of_le' he
     have h6 := GlobalTheory.Cyc.LiftExp.norm_zpow_sub_one l (s' + 1) hs u hn ((e' + 1 : ℕ) : ℤ) (by omega)
     rw [zpow_natCast, padicValInt.of_nat] at h6

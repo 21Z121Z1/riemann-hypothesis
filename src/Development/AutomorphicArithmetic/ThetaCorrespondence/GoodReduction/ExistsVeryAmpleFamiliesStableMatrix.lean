@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianVarietyIsPro
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.VeryAmpleByPw
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLineBundleExtensionOfGenericFibreDvr
 import Development.AutomorphicArithmetic.ThetaCorrespondence.GoodReduction.TwistedSectionsExtend
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsGenIsoPullbackLineBundleZpowStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsGenIsoPullbackLineBundleZpow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VeryAmplePowerOfExtensionGenericFibreAbelianMode
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsVeryAmpleBasisSectionsAbelianSchemeOverDvr
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeIsoLineBundleSectionsTransfer
@@ -77,7 +77,7 @@ theorem exists_veryAmple_families_stable_matrix : ∀ (R K W K' : Type) [CommRin
   obtain ⟨M₀, w₀, hM₀, hw₀⟩ := _root_.GlobalTheory.exists_lineBundle_extension_of_genericFibre_dvr W K' G hG (H₀.pull (e.hom.left ≫ pullback.fst A.hom (spMap (algebraMap K K')))) (pull_isLB hH₀ _)
   obtain ⟨n, hn, m₂, t₀, ht₀⟩ := _root_.GlobalTheory.ModelAmple.veryAmpleBy_pw_of_generic K W K' A hA G hG e H₀ m₀ s₀ M₀ w₀ hH₀ hs₀ hM₀ hw₀
   obtain ⟨m₁, s₁, hs₁⟩ := GlobalTheory.AbLaw.veryAmpleBy_pw K A.left A.hom H₀ m₀ s₀ hH₀ hs₀ n hn
-  obtain ⟨w, hw⟩ := GlobalTheory.T.exists_isGen_iso_pullback_lineBundle_zpow M₀ H₀ _ _ w₀ hM₀ hH₀ hw₀ n
+  obtain ⟨w, hw⟩ := _root_.GlobalTheory.PullPow.exists_isGen_iso_pw M₀ H₀ _ _ w₀ hM₀ hH₀ hw₀ n
   have hH := GlobalTheory.AbLaw.isLB_pw hH₀ n
   have hM := GlobalTheory.AbLaw.isLB_pw hM₀ n
   obtain ⟨N, t, ht, htb⟩ := _root_.GlobalTheory.exists_veryAmpleBy_basis_of_dvr W G hG _ m₂ t₀ hM ht₀

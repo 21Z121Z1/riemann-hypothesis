@@ -4,12 +4,12 @@ import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LeviNormalizesUnipote
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsContinuousAdelicUnitaryEmbedding
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.OrthogonalSubspaceUnitaryEmbedding
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ContinuousConjBlockEmbedding
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ConstantTermRestrictSmoothModerateStatement
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.SmoothAutomorphicDerivativeGrowthStatement
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ConstantTermRestrictSmoothModerate
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.SmoothAutomorphicDerivativeGrowth
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.StandardThreeBlockIndex
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsCuspFunSlice
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ConstantTermParabolicFiniteType
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.CasimirAnnihilatedCuspFormsFiniteDimensionalStatement
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.CasimirAnnihilatedCuspFormsFiniteDimensional
 import GroundTheory.PAdicHodge.NormalizedTrace
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Matrix
 open scoped TensorProduct ContDiff
@@ -37,7 +37,7 @@ theorem finite_slices_core : ∀ (D : D7) (θ : D.what₂.Tau → (Ainf D.host.F
   obtain ⟨s, hsc, hsrel, hsq⟩ := GlobalTheory.Mem.UnitaryEmb.exists_embHom D V V' ι hι
   have hs : ∀ h, EmbRel V V' ι (s h) h := fun h => (hsrel h (s h)).2 rfl
   obtain ⟨hsu, hsurj, hsf⟩ := _root_.GlobalTheory.CompanionTheory.Hypotheses₂.LeviPart.UEmb.range_embHom D V m X Y hXY T V' ι hι hran s hs
-  obtain ⟨ε', fr', j, hfr', hj, hk⟩ := GlobalTheory.T.frame_adapted_subspace_unitary_group D θ hθ V ε fr hfr m X Y hXY T hAd V' ι hι hran s hs
+  obtain ⟨ε', fr', j, hfr', hj, hk⟩ := _root_.GlobalTheory.CompanionTheory.Hypotheses₂.LeviPart.UCore.Frames.exists_restricted_frame D θ hθ V ε fr hfr m X Y hXY T hAd V' ι hι hran s hs
   obtain ⟨A, hA⟩ := _root_.GlobalTheory.CompanionTheory.Hypotheses₂.LeviPart.UCentre.gelf_slices_monic D θ hθ V U ε fr W ρ c m X Y hXY T V' ι hι hran s hs
   let U' : Subgroup (GA D V') := U.comap s
   have hU' : IsOpen (U' : Set (GA D V')) := hU.preimage hsc
@@ -47,13 +47,13 @@ theorem finite_slices_core : ∀ (D : D7) (θ : D.what₂.Tau → (Ainf D.host.F
     (∀ τ, HasTypeAt θ V' τ (ε' τ) (fr' τ) (ρ' τ) φ) ∧ IsCuspFun V' φ ∧
     ∀ τ, (A τ 1).foldr (fun a f => gelf θ V' τ 1 f - a • f) φ = 0}
   have hfin : FiniteDimensional ℂ (Submodule.span ℂ B) :=
-    GlobalTheory.T.constant_term_parabolic_finite_type D θ hθ V' U' hU' ε' fr' hfr' W ρ' hρ' (fun τ => A τ 1)
+    _root_.GlobalTheory.CompanionTheory.HCCusp.GenEig.finite_of_polyGelf D θ hθ V' U' hU' ε' fr' hfr' W ρ' hρ' (fun τ => A τ 1)
   have hmem : ∀ ψ ∈ cuspOn θ V X Y T U ε fr ρ c, ∀ y ∈ levi D.sp.cm.sig V.gram X Y T,
       (∀ t ∈ uPart D.sp.cm.sig V.gram X Y T, t * y = y * t) → (fun h => ψ (s h * y)) ∈ B := by
     intro ψ hψ y hy hyc
     obtain ⟨h1, h2, h3, _⟩ := hψ.1
     have hcomm : ∀ h, s h * y = y * s h := fun h => hyc _ (hsu h)
-    obtain ⟨hsm, hgr⟩ := GlobalTheory.T.constant_term_restrict_smooth_moderate D θ hθ V V' ι hι s hs _ ψ h1 y hcomm
+    obtain ⟨hsm, hgr⟩ := _root_.GlobalTheory.CompanionTheory.Hypotheses₂.LeviPart.UCore.SliceReg.slice_regular D θ hθ V V' ι hι s hs _ ψ h1 y hcomm
     have hAF : IsAutFun V' (fun h => ψ (s h * y)) :=
       { left := fun γ hγ g => by
           have hm : s γ ∈ leftSub V X Y T :=

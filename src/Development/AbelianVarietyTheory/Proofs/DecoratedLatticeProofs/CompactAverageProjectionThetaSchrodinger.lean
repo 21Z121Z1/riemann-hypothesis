@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelEi
 import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelEisensteinSimplePoleOfDoublingMethod
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.WeilThetaConvergence
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DifferentiableOneP
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CompactAverageSchwartzProjectionMemAdelicSchwartStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CompactAverageSchwartzProjectionMemAdelicSchwart
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchrodingerFunctionUnitaryLeviRadicalActions
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoubledThetaEqSumSchrodingerFunctionPeriodisatio
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoubledPairSchrodingerFunctionContinuousIntegrab
@@ -15,7 +15,7 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoubledPai
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchrodingerThetaEqSchwartzBruhat
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicMatrixSchwartzMajorantMeasurableRationalSh
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsSchwartzBruhatAdelicMatrixOfMemAdelicSchwartz
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchwartzBruhatAdelicMatrixContinuousLeMajorantStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchwartzBruhatAdelicMatrixContinuousLeMajorant
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsSummableBoundSchwartzMajorantRationalTrans
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.SchwartzBruhatMixedFamilies
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.RealSizeNonneg
@@ -98,7 +98,7 @@ theorem exists_summable_bound {θ : InfFam D} (hθ : IsInfFam θ) (T : HSp D) (n
     ∃ b : Matrix (Fin T.rank) (Fin n) D.host.E → ℝ, Summable b ∧
       ∀ k ∈ K, ∀ ξ, ‖Φ (mt T k⁻¹ ⬝ (x + rat ξ : Mx D T.rank n))‖ ≤ b ξ := by
   obtain ⟨N, hN⟩ := _root_.GlobalTheory.Unf.MajLoc.summable_bound D θ hθ T.rank n
-  obtain ⟨-, K₀, hK₀, hC⟩ := GlobalTheory.T.schwartzBruhatAdelicMatrix_continuous_le_majorant D θ hθ T.rank n Φ
+  obtain ⟨-, K₀, hK₀, hC⟩ := _root_.GlobalTheory.SchwartzMaj.continuous_and_le_maj D θ hθ T.rank n Φ
     (GlobalTheory.SchwartzPure.isSchwartzBruhat_of_mem_schwartzA D θ hθ T.rank n Φ hΦ)
   obtain ⟨C, hC⟩ := hC N
   obtain ⟨K', hK', hM⟩ := maj_mt_le hθ T n hK hK₀
@@ -125,7 +125,7 @@ theorem projK_theta_sch : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (A B : H
   have hψ := hW.std
   obtain ⟨θ, hθ⟩ : ∃ θ : InfFam D, IsInfFam θ := GlobalTheory.DualPairCompare.exists_infFam D
   obtain ⟨h1, h2, -⟩ := GlobalTheory.SchSchwartzAll.schSchwartz D ψ hψ θ hθ A B ν 𝓨 hν
-  obtain ⟨f', hf', hs⟩ := h2 _ (GlobalTheory.T.compactAverageSchwartzProjection_mem_adelicSchwartz D θ hθ B A.rank K hK νK hνK _ (h1 φ hφ))
+  obtain ⟨f', hf', hs⟩ := h2 _ (_root_.GlobalTheory.CompactAvgSchwartz.projS_mem D θ hθ B A.rank K hK νK hνK _ (h1 φ hφ))
   suffices h : projK om νK φ = f' by rw [h]; exact ⟨hf', hs⟩
   funext w
   obtain ⟨x, y, rfl⟩ := GlobalTheory.Core.Rk.SchwInj.exists_extX_add_extY A B w

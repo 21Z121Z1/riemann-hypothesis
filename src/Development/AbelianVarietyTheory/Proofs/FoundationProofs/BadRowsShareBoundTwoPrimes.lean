@@ -2,11 +2,11 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.StandardFiveNontrivial
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GroupAlgebraOperatorConvolutionCalculus
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExteriorTensorProductConvolutionCalculus
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SubgroupCharacterIdempotentPropertiesStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LevelDatumSubgroupCharacterPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SubgroupCharacterIdempotentProperties
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LevelDatumSubgroupCharacterProperties
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GoodTupleProjectorIsProjCentral
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.BadLabelTupleWeightLeBound
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FinrankRangeLeSumThreeComplementsStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FinrankRangeLeSumThreeComplements
 
 open Polynomial Classical GlobalTheory.BadShare
 namespace GlobalTheory.BadShare.ShareThm
@@ -71,7 +71,7 @@ theorem abstract_step (H₁ H₂ : Type) [Group H₁] [Fintype H₁] [Group H₂
     rw [mul_left_comm (E₁ 1), Complex.re_ofReal_mul]; ring
   rw [v₁] at k₁
   rw [v₂] at k₂
-  have hs := GlobalTheory.T.finrank_range_le_sum_three_complements M (op ρ (tens2 E₁ E₂)) (op ρ (tens2 A₁ dirac)) (op ρ (tens2 dirac A₂))
+  have hs := _root_.GlobalTheory.BadShare.finrank_range_le_three M (op ρ (tens2 E₁ E₂)) (op ρ (tens2 A₁ dirac)) (op ρ (tens2 dirac A₂))
   have r₀ : op ρ (tens2 A₁ dirac) * op ρ (tens2 dirac A₂) * op ρ (tens2 E₁ E₂)
       = op ρ (conv (tens2 A₁ A₂) (tens2 E₁ E₂)) := by
     rw [← (hop _ _).1, ← (hop _ _).1, tc A₁ dirac, (hd₁ A₁).2, (hd₂ A₂).1]
@@ -88,10 +88,10 @@ theorem level_proj (g : ℕ) [Fact g.Prime] (N : ℕ) (ι : Type) [Fintype ι] (
     IsProj (tens fun v => (L v).e) ∧ ∀ γ, (tens fun v => (L v).e) γ ≠ 0 → AllUnip γ := by
   constructor
   · refine (_root_.GlobalTheory.BadShare.tens_calculus ι (GG g N) Unit).2.1 _ fun v => ?_
-    obtain ⟨a, b, c, d, -⟩ := GlobalTheory.T.levelDatum_submonoid_chi_mul_unipotent g N (L v)
-    exact (GlobalTheory.T.subgroupCharacterIdempotent_properties (GG g N) ℂ 1 _ _ a b c d).1
+    obtain ⟨a, b, c, d, -⟩ := _root_.GlobalTheory.BadShare.LevGroup.lev_group g N (L v)
+    exact (_root_.GlobalTheory.BadShare.EpsProj.eps_spec (GG g N) ℂ 1 _ _ a b c d).1
   · intro γ h v
-    apply (GlobalTheory.T.levelDatum_submonoid_chi_mul_unipotent g N (L v)).2.2.2.2
+    apply (_root_.GlobalTheory.BadShare.LevGroup.lev_group g N (L v)).2.2.2.2
     have h' : (L v).e (γ v) ≠ 0 := Finset.prod_ne_zero_iff.mp h v (Finset.mem_univ v)
     by_contra hn
     exact h' (by simp [Lev.e, eps, hn])

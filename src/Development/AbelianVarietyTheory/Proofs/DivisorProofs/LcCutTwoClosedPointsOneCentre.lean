@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRationalLogCa
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonKltLocusDimLtAfterPerturbation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KltAtLcAtOfLeCoeff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EffQCartierNumEquivMultipleNonnegSmul
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsEffectiveQCartierDivisorConvexConeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsEffectiveQCartierDivisorConvexCone
 open CategoryTheory AlgebraicGeometry TopologicalSpace
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
 open ReciprocityTheory.ChartRestriction.G.Out (nonzeroLocus)
@@ -45,7 +45,7 @@ theorem logCanonicalCut_two_points : GlobalTheory.Published.Principalisation →
           _ < _ := hpos)
   have hBq : IsQCart B := hB.isQCart
   have hδ1' : (0 : ℚ) ≤ 1 - δ₀ := by linarith
-  have hDδ : IsQCart ((1 - δ₀) • D) := (GlobalTheory.T.isEffectiveQCartierDivisor_convexCone X D D (1 - δ₀) hDq hDq hδ1').2.1
+  have hDδ : IsQCart ((1 - δ₀) • D) := (_root_.GlobalTheory.QCartCone.isQCart_cone X D D (1 - δ₀) hDq hDq hδ1').2.1
   have hkx : KltAt p n (Δ + (1 - δ₀) • D) x :=
     _root_.GlobalTheory.PairStep.kltAt_add_smul_of_lcAt X p n hp hn Δ D δ₀ x hDq (hklt x) hlx hδ0 hδ1
   have hkx' : KltAt p n (Δ + (1 - δ₀) • D) x' :=

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Admissible
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselFunctionEqScalarSqNormalisedBesselTorusCon
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselTorusElementPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselTorusElementProperties
 open Formalism.FourierDecayAlt GlobalTheory.ThA MeasureTheory Formalism.QuantumDeterminants Matrix
 open scoped InnerProductSpace
 
@@ -72,7 +72,7 @@ theorem energy_change_of_frame : ∀ (k r : ℕ) (L : Formalism.MainNotions.S.Lo
   have hJ := _root_.GlobalTheory.ThA.besselJ_changeFrame k r L μsec Bs cN F hstd hrat hc h0 htop
   have hα : cStd / L.c ≠ 0 := div_ne_zero (by simp [cStd]) hc
   set α := cStd / L.c with hαdef
-  have hB := (GlobalTheory.T.besselTorusElement_properties k r α hα).2.2.2
+  have hB := (_root_.GlobalTheory.ThA.TorusElt.torusElt k r α hα).2.2.2
   have ht : 0 < ‖α‖ := norm_pos_iff.2 hα
   obtain ⟨hz, hz', -, -, -, -, -, hμ⟩ := hstd
   let s : Fin r → ℝ := fun a => ‖α‖ ^ (2 * (r - a.val))

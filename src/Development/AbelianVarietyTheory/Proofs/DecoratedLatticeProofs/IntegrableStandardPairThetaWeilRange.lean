@@ -21,7 +21,7 @@ theorem integrable_theta : GlobalTheory.Published.WeilThetaConvergence → ∀ (
   intro hP D n V hn hr θ hθ ω ν hν Φ g
   set φ := ω g Φ with hφdef
   have hfin : GlobalTheory.SiegelFormula.absThetaInt V ν φ.1 < ⊤ := hP D n V hn (Or.inr hr) θ hθ ν hν φ
-  have hcont : Continuous φ.1 := (GlobalTheory.T.schwartzBruhatAdelicMatrix_continuous_le_majorant D θ hθ _ _ φ.1
+  have hcont : Continuous φ.1 := (_root_.GlobalTheory.SchwartzMaj.continuous_and_le_maj D θ hθ _ _ φ.1
     (GlobalTheory.SchwartzPure.isSchwartzBruhat_of_mem_schwartzA D θ hθ _ _ φ.1 φ.2)).1
   have hleft := GlobalTheory.SiegelWeilLitCompare.leftInv_theta ω Φ g
   have hterm : ∀ h, theta ω Φ g h = ∑' ξ, φ.1 (GlobalTheory.SiegelFormula.invPt V h ξ) := fun h => rfl

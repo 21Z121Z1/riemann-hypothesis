@@ -6,7 +6,7 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GermSys
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeAt
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenFrameIffEigenspaceBasisStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenFrameIffEigenspaceBasis
 
 noncomputable section
 
@@ -55,7 +55,7 @@ theorem frame_of_matrix {S : Scheme.{0}} {L : Type} [Field L] {G : Over S} [GrpO
     (hx : IsEigFrame act x₀ σ fun k => M.pt (x k)) (P : Matrix (Fin n) (Fin n) L) (hP : P.det ≠ 0) :
     LinearIndependent L (fun k => ∑ i, P k i • x i) ∧ IsEigFrame act x₀ σ (fun k => M.pt (∑ i, P k i • x i)) ∧
       ∀ k, IsComb (P k) (fun i => M.pt (x i)) (M.pt (∑ i, P k i • x i)) := by
-  obtain ⟨h1, h2⟩ := (GlobalTheory.T.eigen_frame_iff_eigenspace_basis S L G x₀ W M O act ρ σ n x hM).1 hx
+  obtain ⟨h1, h2⟩ := (_root_.GlobalTheory.CompanionTheory.Ar.Flat.LieEigFrame.isEigFrame_pt_iff S L G x₀ W M O act ρ σ n x hM).1 hx
   have hU : IsUnit P.det := IsUnit.mk0 _ hP
   have key : ∀ u : Fin n → L, ∑ k, u k • ∑ i, P k i • x i = ∑ i, (Matrix.vecMul u P) i • x i := fun u => by
     simp only [Finset.smul_sum, smul_smul, Matrix.vecMul, dotProduct, Finset.sum_smul]
@@ -74,7 +74,7 @@ theorem frame_of_matrix {S : Scheme.{0}} {L : Type} [Field L] {G : Over S} [GrpO
     have e2 : (0 : Fin n → L) = cf := h0 0 (by simp)
     rw [e1, ← e2]
     rfl
-  · exact (GlobalTheory.T.eigen_frame_iff_eigenspace_basis S L G x₀ W M O act ρ σ n (fun k => ∑ i, P k i • x i) hM).2
+  · exact (_root_.GlobalTheory.CompanionTheory.Ar.Flat.LieEigFrame.isEigFrame_pt_iff S L G x₀ W M O act ρ σ n (fun k => ∑ i, P k i • x i) hM).2
       ⟨fun k => Submodule.sum_mem _ fun i _ => Submodule.smul_mem _ _ (h1 i), huniq⟩
   · exact (_root_.GlobalTheory.CompanionTheory.Ar.Flat.CPoint.isComb_lieModel_pt_iff S L G x₀ W M n x (P k) _).2 rfl
 

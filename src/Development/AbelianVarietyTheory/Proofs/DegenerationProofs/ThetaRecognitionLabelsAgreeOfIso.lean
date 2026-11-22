@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Degenerations.NotAllMatchRankZero
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationWeilPairingPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationWeilPairingProperties
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaConstantTermRepresentativeDependence
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NormRepGeneratorsAndThetaSeriesTerm
 import Development.AbelianVarietyTheory.Definitions.Degenerations.SepticCharacterInjective
@@ -81,14 +81,14 @@ theorem eq_of_qEq {k : ℕ} (hk : k ≠ 0) {p q : N.QT k} (h : N.QEq p q) (hy : 
   exact Subtype.ext (Prod.ext hy h2.symm)
 
 theorem wp_mul_left {k : ℕ} (p p' q : N.QT k) : N.wp (p * p') q = N.wp p q * N.wp p' q :=
-  (GlobalTheory.T.degenerationWeilPairing_properties _ N k p p' q).1
+  (_root_.GlobalTheory.Ex.WpPairing.wp_pairing _ N k p p' q).1
 
 theorem wp_mul_right {k : ℕ} (p q q' : N.QT k) : N.wp p (q * q') = N.wp p q * N.wp p q' := by
   rw [N.wp_swap, wp_mul_left, mul_inv, ← N.wp_swap, ← N.wp_swap]
 
 theorem wp_tor {k : ℕ} {d : N.QT k} (h1 : d.1.1 = 1) (h2 : d.1.2.b = 1) (q : N.QT k) :
     N.wp d q = d.1.2.s q.1.1.toAdd :=
-  (GlobalTheory.T.degenerationWeilPairing_properties _ N k d q q).2.2.2.2.2.1 h1 h2
+  (_root_.GlobalTheory.Ex.WpPairing.wp_pairing _ N k d q q).2.2.2.2.2.1 h1 h2
 
 end Transport
 
@@ -372,7 +372,7 @@ theorem main : AllMatch fun {_} _ {N} {N'} {_} μ _ _ =>
     (fun x y => defect_symm μ J (s x) (s y) (hs x) (hs y) (hd x) (hd y))
     (fun x y => by
       obtain ⟨a, ha⟩ := tr_exists J (s y)
-      have := (GlobalTheory.T.degenerationWeilPairing_properties _ N' _ (d x) a a).2.2.2.1
+      have := (_root_.GlobalTheory.Ex.WpPairing.wp_pairing _ N' _ (d x) a a).2.2.2.1
       rwa [wp_tor (hd x).1 (hd x).2.1, ha.1, hs] at this)
     (fun a => by
       rw [zpow_natCast]

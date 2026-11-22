@@ -7,8 +7,8 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChartFrameBa
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsBlockMetricDiagForm
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.LawsProved
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedTripleAbelianLocusProperRelAmpleStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsKodairaSpencerAffineOpenAbelianPullbackStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedTripleAbelianLocusProperRelAmple
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsKodairaSpencerAffineOpenAbelianPullback
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry NumberField IsLocalRing
 open scoped CategoryTheory.Obj Matrix TensorProduct
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor Formalism.L2.Pj
@@ -64,7 +64,7 @@ theorem exists_isKS_abLocus : ∀ (E : Type) [Field E] [NumberField E] [IsCMFiel
     exact hq
   have hx : ∀ s, ∏ i, tt i ∉ ((chart U) s).asIdeal := fun s =>
     h4 _ (by rw [← U.2.range_fromSpec]; exact ⟨s, rfl⟩)
-  obtain ⟨hP, hA, hK⟩ := GlobalTheory.T.uniformisedTriple_abelianLocus_proper_relAmple E H R t P m tt htt hab _ (chart U) _ hx ⟨mm⟩
-  exact GlobalTheory.T.exists_kodairaSpencer_affine_open_abelian_pullback E H (Sp R) t _ U le_rfl _ ⟨mm⟩ hP hA hK n _ hv hb DV
+  obtain ⟨hP, hA, hK⟩ := _root_.GlobalTheory.AbLocusPol.isProper_relAmple_kTriv_of_abLocus E H R t P m tt htt hab _ (chart U) _ hx ⟨mm⟩
+  exact _root_.GlobalTheory.KSOpen.exists_isKS_of_pull E H (Sp R) t _ U le_rfl _ ⟨mm⟩ hP hA hK n _ hv hb DV
 
 end GlobalTheory.KSAbLocus

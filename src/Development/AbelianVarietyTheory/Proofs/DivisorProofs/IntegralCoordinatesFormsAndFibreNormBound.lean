@@ -2,7 +2,10 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.EigLatLe
 import Formalism.LocalToGlobal.ProjectiveLattices.LiftLaSpec
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualWeylTensorEvaluationTranslateKronecker
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulNormDualWeylTensorEvaluationLeFibreNormStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulNormDualWeylTensorEvaluationLeFibreNorm
+import Development.AbelianVarietyTheory.Definitions.Divisors.IsAdelicOne
+import Formalism.LocalToGlobal.CMDeterminantIdeals.StatementG
+import Formalism.PolynomialDimension.WeylDim
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.MetricDataUnique
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.MetricChangeOfFrame
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.IsMetricConjugateFramedPoint
@@ -158,7 +161,7 @@ theorem cabs_le_matNorm {Z : Comp Xo c} (P : PtData Z) {a : (E →+* ℂ) × ℕ
   have hs : cabs (s : CAt σ) = (Real.sqrt (P.N σ))⁻¹ := by
     rw [← Real.sqrt_inv, ← eq_inv_of_mul_eq_one_left hN.symm]
     exact (Real.sqrt_sq (norm_nonneg (show ℂ from (s : CAt σ)))).symm
-  have hb := GlobalTheory.T.mul_norm_dualWeylTensorEvaluation_le_fibreNorm _ _ (part Dw a) (fun τ i j hij => hd.1 τ hij) (fun I => σ (x I)) (P.X σ)
+  have hb := _root_.GlobalTheory.TSup.mul_norm_tval_le_fibNorm _ _ (part Dw a) (fun τ i j hij => hd.1 τ hij) (fun I => σ (x I)) (P.X σ)
     (fun τ => ⟨W τ, Matrix.mem_unitaryGroup_iff'.2 (hW2 τ)⟩) ((Real.sqrt (P.N σ))⁻¹ ^ n) (by positivity)
   refine le_trans (le_of_eq ?_) hb
   have e : (fun τ => P.X σ τ * W τ) =

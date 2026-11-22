@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLinearHomProd
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRosatiCoordinatesDivisibleOfPowStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRosatiCoordinatesDivisibleOfPow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCmHomGramMatrixDetNeZeroDefinite
 
 set_option autoImplicit false
@@ -23,7 +23,7 @@ theorem lat_fg : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Rec
   have hN : (N : E) ≠ 0 := by exact_mod_cast hN0
   have key : ∀ c ∈ GlobalTheory.FlatCM.HomLat.coords X, ∀ b, ∃ z : 𝓞 E, (z : E) = (N : E) * c b := by
     rintro c ⟨n, hn, x, hx, f, hf, hfx⟩ b
-    choose y hy using GlobalTheory.T.exists_rosatiCoordinates_divisible_of_pow E H hH K ρ σ₁ p 0 X gP gQ hG n x f hn hf hfx
+    choose y hy using _root_.GlobalTheory.FlatCM.RosatiCoord.exists_mul_eq_gram_sum E H hH K ρ σ₁ p 0 X gP gQ hG n x f hn hf hfx
     have hmv : gP.mulVec (fun b => H.bar (x b)) = fun a => (n : 𝓞 E) * y a := by
       funext a; simp [Matrix.mulVec, dotProduct, hy]
     have hadj : gP.det • (fun b => H.bar (x b)) = fun a => (n : 𝓞 E) * gP.adjugate.mulVec y a := by

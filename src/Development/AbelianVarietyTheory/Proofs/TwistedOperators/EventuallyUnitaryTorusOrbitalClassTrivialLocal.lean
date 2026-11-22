@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCyclicOfFi
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasOrbIntTensorOfHasOrbInt
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TorusElementCharpolyRegularCentralizer
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormClassesIffConjUnitaryTorusEllipticElements
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryTorusEquivCentralizerWithMeasureStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryTorusEquivCentralizerWithMeasure
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocalStableOrbitalIntegralsWellDefinedStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EventuallyUnitClassRealizedByLatticeIsometry
 
@@ -58,7 +58,7 @@ theorem eventually_unitLoc_orbCls : ∀ (F E : Type) [Field F] [NumberField F] [
       have h1 := ((GlobalTheory.T.local_stable_orbital_integrals_well_defined F E σ hE r r P J hJ).1 v μ dt (unitLoc σ J L v) hμ hdt hcont hcs).2 1 φ₁ h₁
       have hqe : (⟨QuotientGroup.mk 1, 1, φ₁, rfl, h₁⟩ : XSet P (Fv F v) J) = q := Subtype.ext (by rw [hq]; rfl)
       rw [hqe] at h1
-      obtain ⟨e, he1, he2⟩ := GlobalTheory.T.unitaryTorus_equiv_centralizer_with_measure F E σ hE r r P J hJ (Fv F v) 1 φ₁ h₁
+      obtain ⟨e, he1, he2⟩ := _root_.GlobalTheory.TorCentTop.torEquiv_cent F E σ hE r r P J hJ (Fv F v) 1 φ₁ h₁
       rw [he2] at h1
       haveI := hμ
       haveI := hdt

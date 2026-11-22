@@ -3,8 +3,8 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.H1MapSubgro
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGeneratorsOfCardHomResidueFieldLeStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCompatibleGeneratorsTowerLocalRing
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChainLeIInfSupPowSmulTopOfPrecomplete
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsTorsionModuleExtendingResidueMapsStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LeftExactFunctorRepresentableTorsionModulesStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsTorsionModuleExtendingResidueMaps
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LeftExactFunctorRepresentableTorsionModules
 
 noncomputable section
 
@@ -251,7 +251,7 @@ theorem few_relations [IsNoetherianRing Λ] [Finite (ResidueField Λ)] (F : Modu
         (∀ c, x'.1 c = f.hom (x.1 c)) → e B' hB' x' = (F.map f).hom (e B hB x)) :
     ∃ v : Fin a → N, Submodule.span Λ (Set.range v) = ⊤ := by
   classical
-  obtain ⟨B, f, hBt, hf, hext⟩ := GlobalTheory.T.exists_torsion_module_extending_residue_maps Λ (Fin a → Λ) N
+  obtain ⟨B, f, hBt, hf, hext⟩ := _root_.GlobalTheory.SelFun.exists_torsion_extension Λ (Fin a → Λ) N
   let K : ModuleCat.{0} Λ := ModuleCat.of Λ (ResidueField Λ)
   let B'' : ModuleCat.{0} Λ := ModuleCat.of Λ (B ⧸ LinearMap.range f)
   let fK : K ⟶ B := ModuleCat.ofHom f
@@ -351,7 +351,7 @@ theorem kernelRep : KernelRep := by
     exact (hobs (ModuleCat.of Λ (ResidueField Λ)) (ModuleCat.of Λ (ResidueField Λ)) (ModuleCat.of Λ PUnit.{1})
       hsimple hKt (𝟙 _) 0 (fun _ _ h => h) (fun y => ⟨fun _ => ⟨y, rfl⟩, fun _ => rfl⟩)
       (fun _ => ⟨0, rfl⟩)).1
-  choose M0 ξ0 hfin hkill hmin0 huniv0 using GlobalTheory.T.leftExact_functor_representable_torsion_modules Λ F hlex hFk
+  choose M0 ξ0 hfin hkill hmin0 huniv0 using _root_.GlobalTheory.SelFun.Level.level Λ F hlex hFk
   have : ∀ n, Finite (M0 n) := hfin
   have htr : ∀ n, ∃ t : M0 (n + 1 + 1) ⟶ M0 (n + 1), (F.map t).hom (ξ0 (n + 1 + 1)) = ξ0 (n + 1) :=
     fun n => huniv0 (n + 1 + 1) (M0 (n + 1)) (hfin (n + 1))

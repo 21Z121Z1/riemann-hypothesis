@@ -1,16 +1,18 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.LineSCShortExact
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFormOneAddMulSmulStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFormOneAddMulSmul
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContDiffOnCoefficientsComplexFormMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DelDbarAdditiveComplexLinearOne
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DelOperatorAtDbarOperatorAtLinearLocalStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DelOperatorAtDbarOperatorAtLinearLocal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DelDbarLeibnizEvenFormMulStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolAtlasIsFormDelDbarSmooth
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContDiffOnCoefficientsDelOperatorDbarOperator
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DelDbarChainRuleHolomorphicPullbackStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolAtlasIsFormPullbackHolomorphicStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolAtlasIsFormPullbackHolomorphic
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContDiffOnReprPullbackComplexFormFderiv
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackComplexFormsLinearMapComp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DelDbarCommPullbackOfSmoothDelDbar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolAtlasPullbackEqChartExpression
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackComplexFormsLinearMapCompStatement
 open CategoryTheory AlgebraicGeometry MvPolynomial MeasureTheory
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
 open GlobalTheory GlobalTheory.ArInt GlobalTheory.CxForm GlobalTheory.CxPts GlobalTheory.VB GlobalTheory.Cartier GlobalTheory.CovTest GlobalTheory.LineForm
@@ -34,9 +36,9 @@ theorem formCalculus : ∀ (M : Type) [TopologicalSpace M] (n : ℕ) (A : HolAtl
         (A.IsForm α → A'.IsForm (A.pullback A' f α) ∧ A'.del (A.pullback A' f α) = A.pullback A' f (A.del α) ∧
           A'.dbar (A.pullback A' f α) = A.pullback A' f (A.dbar α)) := by
   intro M _ n A
-  refine ⟨(GlobalTheory.T.isForm_one_add_mul_smul M n A).1, fun c α β hα hβ => ?_, fun w β hw hβ => GlobalTheory.T.del_dbar_leibniz_evenForm_mul M n A w β hw hβ, fun ι w P hw => ?_,
+  refine ⟨(_root_.GlobalTheory.CxForm.HolAtlas.isForm_algebra M n A).1, fun c α β hα hβ => ?_, fun w β hw hβ => GlobalTheory.T.del_dbar_leibniz_evenForm_mul M n A w β hw hβ, fun ι w P hw => ?_,
     fun M' _ n' A' f hf => ?_⟩
-  · obtain ⟨h1, h2, h3⟩ := (GlobalTheory.T.isForm_one_add_mul_smul M n A).2 c α β hα hβ
+  · obtain ⟨h1, h2, h3⟩ := (_root_.GlobalTheory.CxForm.HolAtlas.isForm_algebra M n A).2 c α β hα hβ
     obtain ⟨d1, d2⟩ := _root_.GlobalTheory.CxForm.isForm_del_dbar M n A α hα
     obtain ⟨e1, e2, e3, e4⟩ := (_root_.GlobalTheory.CxForm.HolAtlas.del_dbar_linear M n A).2 c α β hα hβ
     exact ⟨h1, h2, h3, d1, d2, e1, e2, e3, e4⟩
@@ -46,8 +48,8 @@ theorem formCalculus : ∀ (M : Type) [TopologicalSpace M] (n : ℕ) (A : HolAtl
         funext x
         simp [evalF, fld, Algebra.algebraMap_eq_smul_one]
         first | rfl | exact Subalgebra.coe_smul _ _ _ | (rw [SetLike.val_smul]; simp) | simp [Subalgebra.coe_algebraMap]
-      have h1 := (GlobalTheory.T.isForm_one_add_mul_smul M n A).1
-      have hf := ((GlobalTheory.T.isForm_one_add_mul_smul M n A).2 (r : ℂ) 1 1 h1 h1).2.2
+      have h1 := (_root_.GlobalTheory.CxForm.HolAtlas.isForm_algebra M n A).1
+      have hf := ((_root_.GlobalTheory.CxForm.HolAtlas.isForm_algebra M n A).2 (r : ℂ) 1 1 h1 h1).2.2
       obtain ⟨⟨z1, z2⟩, hl⟩ := _root_.GlobalTheory.CxForm.HolAtlas.del_dbar_linear M n A
       obtain ⟨-, -, s1, s2⟩ := hl (r : ℂ) 1 1 h1 h1
       rw [e]
@@ -58,7 +60,7 @@ theorem formCalculus : ∀ (M : Type) [TopologicalSpace M] (n : ℕ) (A : HolAtl
         simp [evalF, fld]
       obtain ⟨hp1, hp2, hp3⟩ := hp
       obtain ⟨hq1, hq2, hq3⟩ := hq
-      obtain ⟨a1, -, -⟩ := (GlobalTheory.T.isForm_one_add_mul_smul M n A).2 1 _ _ hp1 hq1
+      obtain ⟨a1, -, -⟩ := (_root_.GlobalTheory.CxForm.HolAtlas.isForm_algebra M n A).2 1 _ _ hp1 hq1
       obtain ⟨l1, l2, -, -⟩ := (_root_.GlobalTheory.CxForm.HolAtlas.del_dbar_linear M n A).2 1 _ _ hp1 hq1
       rw [e]
       exact ⟨a1, fun h => by rw [l1, hp2 h, hq2 h, add_zero], fun h => by rw [l2, hp3 h, hq3 h, add_zero]⟩
@@ -67,7 +69,7 @@ theorem formCalculus : ∀ (M : Type) [TopologicalSpace M] (n : ℕ) (A : HolAtl
         funext x
         simp [evalF, fld]
       obtain ⟨hp1, hp2, hp3⟩ := hp
-      obtain ⟨-, a2, -⟩ := (GlobalTheory.T.isForm_one_add_mul_smul M n A).2 1 _ _ hp1 (hw i)
+      obtain ⟨-, a2, -⟩ := (_root_.GlobalTheory.CxForm.HolAtlas.isForm_algebra M n A).2 1 _ _ hp1 (hw i)
       obtain ⟨b1, b2⟩ := GlobalTheory.T.del_dbar_leibniz_evenForm_mul M n A (fun x => aeval (fun i => w i x) (p.map (algebraMap ℝ ℂ))) (fld A (w i)) hp1 (hw i)
       rw [e]
       refine ⟨a2, fun h => ?_, fun h => ?_⟩
@@ -82,6 +84,6 @@ theorem formCalculus : ∀ (M : Type) [TopologicalSpace M] (n : ℕ) (A : HolAtl
   · refine ⟨funext fun x => map_one _, fun c α β => ⟨funext fun x => map_add _ _ _, funext fun x => map_mul _ _ _,
       funext fun x => map_smul (pull _) c _, fun hα => ?_⟩⟩
     obtain ⟨d1, d2⟩ := _root_.GlobalTheory.CxForm.isForm_del_dbar M n A α hα
-    exact ⟨GlobalTheory.T.holAtlas_isForm_pullback_holomorphic M M' n n' A A' f α hf hα, _root_.GlobalTheory.CxForm.HolAtlas.del_dbar_comm_pullback M M' n n' A A' f α hf hα d1 d2⟩
+    exact ⟨_root_.GlobalTheory.PullbackForm.isForm_pullback M M' n n' A A' f α hf hα, _root_.GlobalTheory.CxForm.HolAtlas.del_dbar_comm_pullback M M' n n' A A' f α hf hα d1 d2⟩
 
 end GlobalTheory

@@ -8,9 +8,9 @@ import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DifferentiableU1
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CpTransportedTaylorSeriesInChartRingHomLaws
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CmLatticeHeisenbergRelationsOneVariable
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ImagQuadraticMaximalOrderArithmeticAtSplitPrime
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ThetaVectorsSetupExistsEqSmulStatement
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HeisenbergOperatorsOrthogonalFrameCoordsStatement
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsOrthogonalFrameNormsCoprimeOfUnimodularStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ThetaVectorsSetupExistsEqSmul
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HeisenbergOperatorsOrthogonalFrameCoords
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsOrthogonalFrameNormsCoprimeOfUnimodular
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CmThetaOperatorInvariantOfLiftCongrOne
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsPadicIntFrameChangeEtaleBasis
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsCmThetaEqSumProdTranslates
@@ -252,8 +252,8 @@ theorem theta_in_frame (ι : ℂ ≃+* ℂ_[q]) (δ : ℂ) (θ : ℂ → ℂ) {g
       ∀ z : Fin g → ℂ, e (∑ i, z i • x i) = ∑ j, r j * ∏ i, U1 S.d (t j i) θ (z i) ^ a i := by
   have hd := hO.1.pos
   obtain ⟨m, r, t, Θ, hΘ, hne, hr, ht, hz⟩ := _root_.GlobalTheory.MomOne.exists_theta_eq_sum_prod q g S x a θ Fact.out hO hx hxx ha hθ
-  obtain ⟨c, rfl⟩ := GlobalTheory.T.theta_vectors_setup_exists_eq_smul g S e Θ hO he hΘ hne
-  obtain ⟨C1, -, -, C4⟩ := GlobalTheory.T.heisenbergOperators_orthogonalFrame_coords g S x a hd hxx fun i => (ha i).1
+  obtain ⟨c, rfl⟩ := _root_.GlobalTheory.MomOne.ThetaLine.exists_eq_smul g S e Θ hO he hΘ hne
+  obtain ⟨C1, -, -, C4⟩ := _root_.GlobalTheory.MomOne.Frame.coord g S x a hd hxx fun i => (ha i).1
   have hc : c ∈ Qbar := by
     by_contra hc
     have hΦ : ContDiff ℂ ⊤ (fun z : Fin g → ℂ => Θ (∑ i, z i • x i)) := hΘ.1.comp (by fun_prop)
@@ -291,9 +291,9 @@ theorem moments_of_translates : ∀ (d q : ℕ) [Fact q.Prime] (lam : Qbar →+*
   have hd := hp.pos
   have hq : q.Prime := Fact.out
   obtain ⟨-, K2, -, -, -, -, K7⟩ := _root_.GlobalTheory.MomOne.okArith S.d q ι hp h7 hS
-  obtain ⟨x, a, hx, hxx, ha⟩ := GlobalTheory.T.exists_orthogonal_frame_norms_coprime_of_unimodular q g S hq hO K7
+  obtain ⟨x, a, hx, hxx, ha⟩ := _root_.GlobalTheory.MomOne.exists_orthFrame q g S hq hO K7
   obtain ⟨m, c, t, hc, ht, hz⟩ := theta_in_frame ι δ θ S hO hS hθ hδ hL x a hx hxx ha e he hj
-  obtain ⟨C1, -, C3, C4⟩ := GlobalTheory.T.heisenbergOperators_orthogonalFrame_coords g S x a hd hxx fun i => (ha i).1
+  obtain ⟨C1, -, C3, C4⟩ := _root_.GlobalTheory.MomOne.Frame.coord g S x a hd hxx fun i => (ha i).1
   obtain ⟨T, hT⟩ := _root_.GlobalTheory.MomOne.frameChange q ι g S x a r b hO hS hx hxx ha hb
   have hΩ0 : Ω ≠ 0 := by rintro rfl; simp at hΩ
   obtain ⟨N, hN⟩ := product_measures S.d ι δ Ω θ hd hδ hΩ0 hθ.1 hL0 a c t ht

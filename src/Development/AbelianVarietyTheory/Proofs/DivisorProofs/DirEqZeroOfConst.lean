@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.GlobalFnsH
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SubsingletonSpDualNumber
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PulledBackLineBundleAutomorphismEqConst
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualNumberUnitEqOfGermEq
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinIndepIntBilinFormCharZeroCombinationEqZeroStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinIndepIntBilinFormCharZeroCombinationEqZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MonomialBoundaryFamilyParamNeZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitPartOfPeriodTauMonomial
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry NumberField IsLocalRing
@@ -68,6 +68,6 @@ theorem dir_eq_zero_of_const : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocal
     have he := _root_.GlobalTheory.DualUnitGerm.unit_eq_of_germ_eq k zz _ _ h'
     have := congrArg (fun u : (DualNumber k)ˣ => TrivSqZeroExt.snd (u : DualNumber k)) he
     simpa [e] using this
-  exact GlobalTheory.T.linIndep_intBilinForm_charZero_combination_eq_zero gam k a hli key
+  exact _root_.GlobalTheory.linIndep_intBilinForm_charZero_comb_eq_zero gam k a hli key
 
 end GlobalTheory.ConstPointCone

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BasePartFlagPt
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAnalyticSpaceNonempty
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentArithVarietyFirstStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentArithVarietyFirst
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogResolutionFunctorialHolomorphic
 open MvPolynomial MeasureTheory Filter Topology Matrix ReciprocityTheory.AnForm ReciprocityTheory.AnForm.M ReciprocityTheory.AnForm.P ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.AI.I1 ReciprocityTheory.ChartRestriction.G.AI.I2 ReciprocityTheory.ChartRestriction.G.AI.I4 GlobalTheory.CompanionTheory.Ar.PB GroundTheory.Heights₂.Heights GroundTheory.Heights₂.Heights.LowerBoundFree
 open scoped ComplexOrder Classical
@@ -15,7 +15,7 @@ theorem anLogRes_W_nonempty : ∀ (K : Type) [Fintype K] (ι : K → Type) [∀ 
   intro K _ ι _ Φ _ y Ψ _ _ N j M n d BM FA τ a b k₀ ca cb hab hj hk hca hcb RW
   obtain ⟨x⟩ := flagAn_S_nonempty K ι Φ y Ψ N j M n d BM FA
   obtain ⟨l, hl⟩ := BM.O_cover (FA.pr x)
-  have hz := GlobalTheory.T.flag_adjacent_arith_variety_first K ι Φ y Ψ N j M n BM d τ a b k₀ ca cb hab hj hk hca hcb FA.Re.arith l (FA.pr x) hl
+  have hz := _root_.GlobalTheory.CompanionTheory.Ar.PB.WSq.FC.WMem.main K ι Φ y Ψ N j M n BM d τ a b k₀ ca cb hab hj hk hca hcb FA.Re.arith l (FA.pr x) hl
     (fun _ => 1) 0 (fun _ => ⟨?_, by simp⟩)
   · obtain ⟨w, -⟩ := RW.surj _ hz (GlobalTheory.CompanionTheory.Ar.PB.Proj.not_mem_mcPts_top _)
     exact ⟨w⟩

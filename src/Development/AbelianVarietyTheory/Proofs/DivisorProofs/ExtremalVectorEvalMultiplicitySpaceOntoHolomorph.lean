@@ -3,8 +3,8 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.IsSmoothVector
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFinPair
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicCuspFormOfExtremalVectorMultiplicity
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundedHolomorphicFormEqMultiplicitySpaceValueStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicAdelicFormOfBoundedSectionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundedHolomorphicFormEqMultiplicitySpaceValue
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicAdelicFormOfBoundedSection
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicCuspFormTransvectionConstantTermsZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBoundedSectionOfBoundedHolomorphicForm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsHolomorphicCuspFormOfAdelicConstantTermsZero
@@ -27,9 +27,9 @@ theorem mult_eval_eq_adel_holSub0 : GlobalTheory.Published.CuspRapidDecay → Gl
     clear hP
     induction hP1 using Submodule.span_induction with
     | mem P hP =>
-      have h1 := GlobalTheory.T.holomorphicAdelicForm_of_boundedSection D θ V S M w r hr Comp X la dict mu c Kf hS hG P (fun k => (hP k).1)
+      have h1 := _root_.GlobalTheory.HolDict.BackHol.holForm_adel D θ V S M w r hr Comp X la dict mu c Kf hS hG P (fun k => (hP k).1)
       have h2 := _root_.GlobalTheory.HolDict.TransvCusp.zCusp_adel D θ V S M w r hr Comp X la dict mu c Kf hS hG P hP
-      obtain ⟨T, hT, hTv⟩ := GlobalTheory.T.boundedHolomorphicForm_eq_multiplicitySpace_value D θ V S M w v hG.inf hS hw hv (exists_finPair hvol D V)
+      obtain ⟨T, hT, hTv⟩ := _root_.GlobalTheory.BackForm.exists_multMap D θ V S M w v hG.inf hS hw hv (exists_finPair hvol D V)
         (Kf : Set (GA D V)) χ _ hG.levFin (h1.congr_level fun k hk => (hχ k hk).symm) h2
       exact ⟨T, Submodule.subset_span hT, hTv⟩
     | zero => exact ⟨0, Submodule.zero_mem _, by simp⟩

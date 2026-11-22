@@ -4,9 +4,9 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicIsNonarchim
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsCompletionPlaceData
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ProdEqSumOfFactorwiseLinearExpansion
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FlatTensorPureTensorEqProdLocalFactors
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FrameLatticePointsEqIntegralMatricesLargeDepthStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FrameLatticePointsEqIntegralMatricesLargeDepth
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocalCharacterComponentsLargeDepth
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DictionaryPointsLocalMatricesLargeDepthStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DictionaryPointsLocalMatricesLargeDepth
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BesselFrameOfGridLatticeLargeDepth
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JacobiFrameOfGridLatticeLargeDepth
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FlatDictionaryScalarLargeDepth
@@ -198,7 +198,7 @@ theorem placeAt_of (hc : ChrP ch) (ha : ArrP ch) (hl : LocP ch) (hd : DblP ch) (
 theorem big_placeAt : Big fun ch => ∃ s, PlaceAt ch s :=
   big_mono (fun ch ⟨⟨⟨⟨⟨⟨⟨⟨⟨lat, chr⟩, loc⟩, bes⟩, jac⟩, scal⟩, arr⟩, comb⟩, dbl⟩, last⟩ =>
     ⟨-1, placeAt_of ch chr (arr lat chr) loc (dbl chr (arr lat chr) loc bes jac) (last chr (arr lat chr) loc bes jac) (comb lat) scal⟩)
-  (((((((((GlobalTheory.T.frameLattice_points_eq_integralMatrices_largeDepth.and _root_.GlobalTheory.FlatPlace.chrP_big).and GlobalTheory.T.dictionaryPoints_localMatrices_largeDepth).and _root_.GlobalTheory.FlatPlace.Big₂).and _root_.GlobalTheory.FlatPlace.big_jacP).and _root_.GlobalTheory.FlatScal.scal).and
+  (((((((((GlobalTheory.T.frameLattice_points_eq_integralMatrices_largeDepth.and _root_.GlobalTheory.FlatPlace.chrP_big).and _root_.GlobalTheory.FlatPlaceLoc.localization₂).and _root_.GlobalTheory.FlatPlace.Big₂).and _root_.GlobalTheory.FlatPlace.big_jacP).and _root_.GlobalTheory.FlatScal.scal).and
     _root_.GlobalTheory.ArrowModel.arrow_model).and _root_.GlobalTheory.FlatPlace.eventually_combination_of_lattice).and _root_.GlobalTheory.FlatPlace.dblP_big).and _root_.GlobalTheory.FlatPlace.lastStep_eventually)
 
 end GlobalTheory.FlatPlace

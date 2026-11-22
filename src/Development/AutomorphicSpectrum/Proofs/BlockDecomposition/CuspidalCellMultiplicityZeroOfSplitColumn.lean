@@ -1,8 +1,9 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.ZelevinskyCosocles.LUnlinkedComm
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContragredientProductIrreducibleStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalMultiplicityProductZeroStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContragredientProductIrreducible
+import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.LSegJacquet
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalMultiplicityProductZero
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InducedProductDropZeroFactors
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DropHom
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StandardBlocksReindexStrictMono
@@ -52,7 +53,7 @@ theorem jhMult_cell_eq_zero : ∀ {k : Type} [Field k] [ValuativeRel k] [Topolog
   obtain ⟨E⟩ := _root_.GlobalTheory.CompanionTheory.FineProd.ProdDrop.prodIrr_drop Y (hcol j) o o.strictMono hrange hsum
   have h3 := h2.trans (.of_injective E.toIntertwiningMap E.toLinearEquiv.injective)
   refine jhMult_ne_zero_iff.2 h3
-    (GlobalTheory.T.cuspidal_multiplicity_product_zero hA (y j) (fun a => Y (o a)) hsum (hy j) hcard fun a => Nat.pos_of_ne_zero ?_)
+    (_root_.GlobalTheory.CompanionTheory.CuspNotInd.jhMult_eq_zero_of_isCusp hA (y j) (fun a => Y (o a)) hsum (hy j) hcard fun a => Nat.pos_of_ne_zero ?_)
   have := ho a
   simpa [S, hYb] using this
 

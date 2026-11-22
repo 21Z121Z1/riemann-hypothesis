@@ -8,13 +8,13 @@ import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LevelSt
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LevelTestFunctionFiniteSumEquivariant
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaFunctionFundamentalDomainInnerProductBasic
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaKernelOrthonormalFrameInDomainPeriodLinear
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RationalUnitaryGroupStructureStatement
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdelicZakThetaExistsUniqueStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RationalUnitaryGroupStructure
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdelicZakThetaExistsUnique
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaKernelTestFunctionMapLinearInjectiveEquivar
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FiniteAdelicLatticeTransportLaws
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SelfDualLatticesAtLevelStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SelfDualLatticesAtLevel
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FinitePointsCarryLatticeVacuumToMovedVacuum
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsVacuaInnerEqConstMulTestInnerStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsVacuaInnerEqConstMulTestInner
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum Formalism.L2.Pj MeasureTheory IsDedekindDomain NumberField Matrix Complex
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.FD GlobalTheory GlobalTheory.ThFr GlobalTheory.Ker
@@ -47,14 +47,14 @@ theorem phase_indep : ∀ (D : D7) (S T : HSp D) (C : Ctx S T), ∀ om : GA D S 
   obtain ⟨w, hw⟩ : ∃ w : Lt D.host.E T.rank → TF S.rank C.g,
       ∀ L, w L = unitv (projA C.X C.bas Lv.w (tens Λ (Lv.sh L)) (v₀ L)) := ⟨_, fun _ => rfl⟩
   have hx : C.xB B ∈ C.X.dom := ((_root_.GlobalTheory.Ker.onBasis_frame_period D S T C).2 B hB).2.1
-  have hΛM : Λ ∈ Vset D.host.E S.rank M := (GlobalTheory.T.self_dual_lattices_at_level D S T C).1 M h Λ hM htriv hfg hmov
+  have hΛM : Λ ∈ Vset D.host.E S.rank M := (_root_.GlobalTheory.Ker.MovLev.mov_mem_lattices D S T C).1 M h Λ hM htriv hfg hmov
   have hstd : stdL D.host.E S.rank ∈ Vset D.host.E S.rank M := GlobalTheory.SW.stdL_mem_Vset M
   have h6833 := _root_.GlobalTheory.SW.level_laws D.host.E T.rank C.X C.g C.bas C.idx S.rank C.sympl C.even Lv hn
   have fmt_one : ∀ V : HSp D, fmt V 1 = 1 ∧ fmtC V 1 = 1 := fun V =>
-    ⟨(((GlobalTheory.T.rational_unitary_group_structure D S T C).2.2.2 V).2.2.2.1 1 (one_mem _)).1,
-      (((GlobalTheory.T.rational_unitary_group_structure D S T C).2.2.2 V).2.2.2.1 1 (one_mem _)).2.1⟩
+    ⟨(((_root_.GlobalTheory.Ker.Grp.rational_points_and_parts D S T C).2.2.2 V).2.2.2.1 1 (one_mem _)).1,
+      (((_root_.GlobalTheory.Ker.Grp.rational_points_and_parts D S T C).2.2.2 V).2.2.2.1 1 (one_mem _)).2.1⟩
   obtain ⟨μ, 𝓕, hcov⟩ := (GlobalTheory.Ker.ScalarProduct.ip_basic D S T C).1
-  obtain ⟨κ, hκ, hipTh⟩ := GlobalTheory.T.exists_vacua_inner_eq_const_mul_testInner D S T C μ 𝓕 hcov
+  obtain ⟨κ, hκ, hipTh⟩ := _root_.GlobalTheory.KerVacIp.ip_vacua D S T C μ 𝓕 hcov
   have hsd : ∀ L ∈ Lv.lats, SelfD C.X (Lv.sh L) := fun L hL => (h6833.2.2.2.1 L hL).1
   have hvac : ∀ L ∈ Lv.lats, IsVac C.X C.bas Lv.w (tens Λ (Lv.sh L)) (w L) := fun L hL => by
     rw [hw L]
@@ -90,7 +90,7 @@ theorem phase_indep : ∀ (D : D7) (S T : HSp D) (C : Ctx S T), ∀ om : GA D S 
   refine ⟨ep, hep1, ?_⟩
   intro g L hg hgtriv hLfg hgmov
   rw [← hw L]
-  have hL : L ∈ Lv.lats := ((GlobalTheory.T.self_dual_lattices_at_level D S T C).2 Lv g L hLfg hgmov).2.1 hgtriv
+  have hL : L ∈ Lv.lats := ((_root_.GlobalTheory.Ker.MovLev.mov_mem_lattices D S T C).2 Lv g L hLfg hgmov).2.1 hgtriv
   obtain ⟨c, hc1, hc⟩ := phase L hL
   rw [hc]
 
@@ -98,7 +98,7 @@ theorem phase_indep : ∀ (D : D7) (S T : HSp D) (C : Ctx S T), ∀ om : GA D S 
   have hXfs : C.X.Λ.FG ∧ Submodule.span D.host.E (C.X.Λ : Set (Fin T.rank → D.host.E)) = ⊤ :=
     ⟨hXsd.1, (h6833.2.2.2.1 _ hXl).2.1⟩
   have hinv : fmt T g * fmt T g⁻¹ = 1 := by
-    rw [← (((GlobalTheory.T.rational_unitary_group_structure D S T C).2.2.2 T).2.1 g g⁻¹).2.1, mul_inv_cancel, (fmt_one T).1]
+    rw [← (((_root_.GlobalTheory.Ker.Grp.rational_points_and_parts D S T C).2.2.2 T).2.1 g g⁻¹).2.1, mul_inv_cancel, (fmt_one T).1]
   have hshmov : IsMov (fmt T g) (Lv.sh C.X.Λ) (Lv.sh L) :=
     ((((_root_.GlobalTheory.Ker.isMov_laws D T.rank C.X.Λ hXfs).2.2.2 (fmt T g) (fmt T g⁻¹) hinv).2 L hLfg hgmov).2.2.2.2
       Lv.𝔪 (conjI Lv.𝔪) Lv.ne_bot (GlobalTheory.Ker.VacPhase.conjI_ne_bot Lv.ne_bot)).2.1
@@ -108,8 +108,8 @@ theorem phase_indep : ∀ (D : D7) (S T : HSp D) (C : Ctx S T), ∀ om : GA D S 
   obtain ⟨b, hb1, hb⟩ := _root_.GlobalTheory.Ker.om_Th_vac D S T C om hom Lv.w Lv.w_int Lv.w_tr hidem M _ hΛM _ hΛM _ _
     (hsd _ hXl) (hsd L hL) 1 (one_mem _) g hg (hS1 _) hshmov (w C.X.Λ) (w L) (hvac _ hXl) (hvac L hL) B hB
 
-  have hThX := (GlobalTheory.T.adelicZakTheta_exists_unique D S T C _ hx _ (hsbv _ hXl)).1.1
-  have hThwX := (GlobalTheory.T.adelicZakTheta_exists_unique D S T C _ hx _ (hsbw _ hXl)).1.1
+  have hThX := (_root_.GlobalTheory.Ker.ZakEx.isZak_Th D S T C _ hx _ (hsbv _ hXl)).1.1
+  have hThwX := (_root_.GlobalTheory.Ker.ZakEx.isZak_Th D S T C _ hx _ (hsbw _ hXl)).1.1
   have hinvar := (((GlobalTheory.Ker.ScalarProduct.ip_basic D S T C).2 μ 𝓕 hcov _ hThX).2.2.2 _ hThwX).2.2.2.2.2
     om hom (1, g)
   rw [ha, hb, ← (_root_.GlobalTheory.Ker.Ctx.th_laws D S T C _ hx _ (hsbv L hL)).2.1 a,

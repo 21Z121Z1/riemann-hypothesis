@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HalfData
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StandardUnitaryChartBlockDiagonalEqLevi
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchrodingerFunctionUnitaryLeviRadicalActionsStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchrodingerFunctionUnitaryLeviRadicalActions
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchrodingerThetaEqSchwartzBruhat
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HeckeFormNSOfHeckeForm
 import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelWeilUnitaryConvergent
@@ -22,6 +22,6 @@ theorem transport_levi : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (A B : HS
     _root_.GlobalTheory.StdUnn.chart_levi D A μ hμ κ hκ (κ.symm g) a (by rw [MulEquiv.apply_symm_apply]; exact hg)
   have h1 := hT (κ.symm g) f hf Φ hfΦ.symm
   rw [MulEquiv.apply_symm_apply] at h1
-  rw [h1, hlev, (GlobalTheory.T.schrodingerFunction_unitary_levi_radical_actions D ψ A B χB omh hW ν 𝓨 hcov f hf).2.1 a x, hfΦ]
+  rw [h1, hlev, (_root_.GlobalTheory.Core.Rk.SchLaws.sch_laws D ψ A B χB omh hW ν 𝓨 hcov f hf).2.1 a x, hfΦ]
 
 end GlobalTheory.StdUnn

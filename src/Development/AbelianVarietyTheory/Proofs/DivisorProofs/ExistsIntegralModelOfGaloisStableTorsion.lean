@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.AddMonoidHomEqZ
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeierstrassCoeffsIntegralAverageChangeOfVariableStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntVVariableChangeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralJOfNonrealMultiplier
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaloisStableLatticePointsSymmetricMemStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaloisStableLatticePointsSymmetricMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionCoordsMemOfOdd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationDerivWeierstrassPOddTorsion
 open NumberField IsDedekindDomain WeierstrassCurve GlobalTheory GlobalTheory.Published GlobalTheory.CMModel Formalism.L2.Th1.F
@@ -32,7 +32,7 @@ theorem GlobalTheory.CMModel.modelAt_of_stable_torsion : ∀ (L : PeriodPair) (�
     (fun i => by
       show V.valuation (2 * (L.derivWeierstrassP (T i) / 2)) = V.valuation u ^ 3
       rw [mul_div_cancel₀ _ two_ne_zero]; exact hud i)
-  obtain ⟨h1, h2, h3, -⟩ := GlobalTheory.T.galoisStable_lattice_points_symmetric_mem F L ι T hg2 hg3 hst (fun i => (hT i).1)
+  obtain ⟨h1, h2, h3, -⟩ := _root_.GlobalTheory.CMModel.stable_sym_mem F L ι T hg2 hg3 hst (fun i => (hT i).1)
   have hnF : ((Fintype.card ι : ℕ) : ℂ) ∈ F := natCast_mem F _
   refine ⟨⟨Units.mk0 u hu, (∑ i, L.weierstrassP (T i)) / Fintype.card ι,
     (∑ i, (3 * L.weierstrassP (T i) ^ 2 + -L.g₂ / 4) / (2 * (L.derivWeierstrassP (T i) / 2))) / Fintype.card ι,

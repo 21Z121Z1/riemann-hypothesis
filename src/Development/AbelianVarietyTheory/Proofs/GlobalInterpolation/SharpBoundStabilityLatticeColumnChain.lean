@@ -5,9 +5,9 @@ import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NotDvdCardSta
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsLevelPrimePointModelRealisation
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsCoordinatesValueLatticesEqWeylLatticesStatement
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsPointKernelRealisedModels
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DilateLawPointKernelOfCoefficientKernelStatement
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DilateLawPointKernelOfCoefficientKernel
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.HeckeLawPointKernelOfCoefficientKernelStatement
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ConjugatePrimeBoundPointKernelOfCoefficientKerneStatement
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ConjugatePrimeBoundPointKernelOfCoefficientKerne
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IntPOfKerP
 
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.L2.Col Formalism.L2.DIV GlobalTheory.Mem.Col2 GlobalTheory.LvT GlobalTheory.LvT.Built
@@ -40,11 +40,11 @@ theorem sharpBound_stability_latticeColumnChain : ∀ (D : D7) (u : D.what₂.Wo
   let Kt : KerTie Lv := fun i h => (hK i h).choose
   have laws : KerLaws Vt Kt :=
     { tgt := fun i h => (hK i h).choose_spec.1
-      dil := fun i h => GlobalTheory.T.dilateLaw_pointKernel_of_coefficientKernel D u B i _ _ _ _ (hR i h.le) (hR (i + 1) h) _ _
+      dil := fun i h => _root_.GlobalTheory.LvT.Built.DilPass.dilLaw_of_kerDil D u B i _ _ _ _ (hR i h.le) (hR (i + 1) h) _ _
         (hK i h).choose_spec.1 (hK i h).choose_spec.2 (hk i h).choose_spec.2.1
       uk := fun i h => GlobalTheory.T.heckeLaw_pointKernel_of_coefficientKernel D u B i _ _ _ _ (hR i h.le) (hR (i + 1) h) _ _
         (hK i h).choose_spec.1 (hK i h).choose_spec.2 (hk i h).choose_spec.2.2.1
-      bar := fun i h => GlobalTheory.T.conjugatePrimeBound_pointKernel_of_coefficientKernel D u B i _ _ _ _ (hR i h.le) (hR (i + 1) h) _ _ _ _
+      bar := fun i h => _root_.GlobalTheory.LvT.Built.BarPass.intBar_of_kerBar D u B i _ _ _ _ (hR i h.le) (hR (i + 1) h) _ _ _ _
         (hK i h).choose_spec.1 (hK i h).choose_spec.2 (hC i h.le).choose_spec.1 (hC (i + 1) h).choose_spec.1
         (hC i h.le).choose_spec.2 (hC (i + 1) h).choose_spec.2 (hk i h).choose_spec.2.2.2.1
       intP := fun i h => IntPPass.intP_of_kerP D u B i _ _ _ _ (hR i h.le) (hR (i + 1) h) _ _ _ _

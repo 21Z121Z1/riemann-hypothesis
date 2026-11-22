@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.IndEtOfForallFinset
 import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCechAugmentationSepClosureIsEquivalenceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SimplicialCochainClassesBasicPropertiesStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FreeEtaleModuleSheafHomEquivNaturalSectionsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FreeEtaleModuleSheafHomEquivNaturalSections
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaloisDescentFreeSheafCechLevelSepClosureStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomogeneousCochainsHomologyAddEquivStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeraySimplicialCocycleCoboundaryOfAcyclicLevelsStatement
@@ -215,14 +215,14 @@ def galE (m : ℕ) : (cochC R (cech (fK K Ω)) F).obj ⦋m⦌ →+ ((Fin (m + 1)
   toFun s σ := e.symm (val (show (free R).obj ((cech (fK K Ω)).obj (op ⦋m⦌)) ⟶ F from s) _ (galPt K Ω m σ))
   map_zero' := by
     funext σ
-    have h := ((GlobalTheory.T.freeEtaleModuleSheaf_hom_equiv_natural_sections R ((cech (fK K Ω)).obj (op ⦋m⦌)) F).2.2.2.2.2 0 0 0 _ (galPt K Ω m σ)).2
+    have h := ((_root_.GlobalTheory.EtC.FreeHom.main R ((cech (fK K Ω)).obj (op ⦋m⦌)) F).2.2.2.2.2 0 0 0 _ (galPt K Ω m σ)).2
     rw [zero_smul, zero_smul] at h
     simp only [Pi.zero_apply]
     rw [← map_zero e.symm]
     exact congrArg e.symm h
   map_add' a b := by
     funext σ
-    have h := ((GlobalTheory.T.freeEtaleModuleSheaf_hom_equiv_natural_sections R ((cech (fK K Ω)).obj (op ⦋m⦌)) F).2.2.2.2.2 a b 0 _ (galPt K Ω m σ)).1
+    have h := ((_root_.GlobalTheory.EtC.FreeHom.main R ((cech (fK K Ω)).obj (op ⦋m⦌)) F).2.2.2.2.2 a b 0 _ (galPt K Ω m σ)).1
     simp only [Pi.add_apply]
     rw [← map_add e.symm]
     exact congrArg e.symm h
@@ -255,7 +255,7 @@ theorem cohomology_field_addEquiv_galois : ∀ (R : Type) [CommRing R] (F : Shv 
       · exact ((GlobalTheory.T.galoisDescent_freeSheaf_cechLevel_sepClosure R F hF K Ω m).2.1 c).comp e.symm
       · intro τ σ
         rw [galE_apply, galE_apply, hρ, ← galPt_mul,
-          (GlobalTheory.T.freeEtaleModuleSheaf_hom_equiv_natural_sections R ((cech (fK K Ω)).obj (op ⦋m⦌)) F).2.2.1]
+          (_root_.GlobalTheory.EtC.FreeHom.main R ((cech (fK K Ω)).obj (op ⦋m⦌)) F).2.2.1]
     · rintro ⟨hlc, heq⟩
       obtain ⟨s, hs⟩ := (GlobalTheory.T.galoisDescent_freeSheaf_cechLevel_sepClosure R F hF K Ω m).2.2 (fun σ => e (φ σ)) (hlc.comp e) (by
         intro τ σ
@@ -266,7 +266,7 @@ theorem cohomology_field_addEquiv_galois : ∀ (R : Type) [CommRing R] (F : Shv 
   have hface : ∀ m (i : Fin (m + 2)) (c : (cochC R (cech (fK K Ω)) F).obj ⦋m⦌) (σ : Fin (m + 2) → (Ω ≃ₐ[K] Ω)),
       galE K Ω R F M e (m + 1) ((cochC R (cech (fK K Ω)) F).δ i c) σ = galE K Ω R F M e m c (σ ∘ i.succAbove) := by
     intro m i c σ
-    have h4 := (GlobalTheory.T.freeEtaleModuleSheaf_hom_equiv_natural_sections R ((cech (fK K Ω)).obj (op ⦋m⦌)) F).2.2.2.1 _ ((cech (fK K Ω)).δ i) c
+    have h4 := (_root_.GlobalTheory.EtC.FreeHom.main R ((cech (fK K Ω)).obj (op ⦋m⦌)) F).2.2.2.1 _ ((cech (fK K Ω)).δ i) c
       (Spec (CommRingCat.of Ω)) (galPt K Ω (m + 1) σ)
     rw [galE_apply, galE_apply, ← galPt_face, ← h4]
     rfl

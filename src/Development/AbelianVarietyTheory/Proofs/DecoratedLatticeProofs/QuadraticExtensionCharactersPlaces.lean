@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Heisenberg
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ParahoricTestFunctionIntegralAdelicReduction
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiagonalBlockDetBlockTriangular
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceFrameMovedBackIsLatticeBasis
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntegralFrameMatrixIffMemSplitHalfHomLatticeStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntegralFrameMatrixIffMemSplitHalfHomLattice
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ListConvolutionDistinctPlacesSupportedAndComposi
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceBaseEqOfSameIdempotentPrime
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.L2.Forms MeasureTheory IsDedekindDomain NumberField Matrix
@@ -219,7 +219,7 @@ theorem gen {r : ℕ} {k : Fin r → Type} [∀ i, Field (k i)] [∀ i, Valuativ
     rw [← hTm.vac, one_smul]
     refine congrArg Tm (funext fun x => if_congr ?_ rfl rfl)
     rw [and_comm]
-    exact and_congr_left fun hx => GlobalTheory.T.integralFrameMatrix_iff_mem_splitHalfHomLattice D r k q pl Q e hq hU hpl hQ he S T ΛS ΛT hS hT βS βT hlat x hx
+    exact and_congr_left fun hx => _root_.GlobalTheory.HalfInt.isIntM_iff_mem_latO D r k q pl Q e hq hU hpl hQ he S T ΛS ΛT hS hT βS βT hlat x hx
   have e1 : comb ψ S T d vac = Tm (datum e βS βT fun y => ((List.finRange r).map fun i => locQ L.r (ξ (pl i)) (y (pl i))).prod) := by
     refine (hall Tm hTm).trans (congrArg Tm (funext fun x => if_congr Iff.rfl ?_ rfl))
     have hQ' : Q = Finset.univ.image pl := Finset.ext fun w => by simpa using hQ w

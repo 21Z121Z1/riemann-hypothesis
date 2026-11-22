@@ -2,15 +2,15 @@ import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocUnitApply
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AbsoluteGaloisAbelianizationEqOneOfMemOpenSubgro
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RestrictScalarsHomContinuousKrullStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RestrictScalarsHomContinuousKrull
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ProdIdeleCharGlobalUnitEqOne
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsOpenIdeleSubgroupContainsCongruenceUnitsStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsOpenIdeleSubgroupContainsCongruenceUnits
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormCloseToOneOfCloseAbovePlace
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CharacterGlobalArtinUnitsTrivialUniformiserPower
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ProdLocalValuesGlobalOverPlacesAboveStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsApproxFinitePlacesNumberFieldTarget
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFinsetPlacesOverFinsetPlacesStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsTotallyComplexOfAlgebraOfIsTotallyComplexStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFinsetPlacesOverFinsetPlaces
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsTotallyComplexOfAlgebraOfIsTotallyComplex
 
 noncomputable section
 
@@ -45,11 +45,11 @@ theorem res_art_eq_art_norm : ∀ (E Ω : Type) [Field E] [NumberField E] [IsTot
             (Units.map (Algebra.norm E (S := K)) y))) := by
   intro E Ω _ _ _ _ _ _ K _ _ _ art artK ha haK v W hW hWu y τ hτ
   classical
-  haveI : IsTotallyComplex K := GlobalTheory.T.isTotallyComplex_of_algebra_of_isTotallyComplex E K
+  haveI : IsTotallyComplex K := _root_.GlobalTheory.isTotallyComplex_of_algebra E K
   haveI : IsClosed ((commutator (G E Ω)).topologicalClosure : Set (G E Ω)) :=
     Subgroup.isClosed_topologicalClosure _
   let r : G K Ω →* Gab E Ω := (toAb E Ω).comp (AlgEquiv.restrictScalarsHom E)
-  have hr : Continuous r := QuotientGroup.continuous_mk.comp (GlobalTheory.T.continuous_restrictScalarsHom' E Ω K)
+  have hr : Continuous r := QuotientGroup.continuous_mk.comp (_root_.GlobalTheory.restrictScalarsHom_continuous_krull E Ω K)
   let ρ : Gab K Ω →* Gab E Ω := liftAb r hr
   have hρ : ∀ σ : G K Ω, ρ (toAb K Ω σ) = toAb E Ω (σ.restrictScalars E) := fun σ => rfl
   have hρc : Continuous ρ := continuous_liftAb r hr
@@ -85,11 +85,11 @@ theorem res_art_eq_art_norm : ∀ (E Ω : Type) [Field E] [NumberField E] [IsTot
   have ho2 : IsOpen (ψ2.ker : Set (Ideles E)) := by
     rw [hker2]; exact hU.preimage ha.quot.continuous
 
-  obtain ⟨SE, ME, hvS, hSu, hSc⟩ := GlobalTheory.T.isOpen_idele_subgroup_contains_congruence_units E ψ2.ker ho2 {v}
+  obtain ⟨SE, ME, hvS, hSu, hSc⟩ := _root_.GlobalTheory.OpenIdeleCongr.open_subgroup_contains_congr E ψ2.ker ho2 {v}
   have hvSE : v ∈ SE := hvS (Finset.mem_singleton_self v)
-  obtain ⟨TSK, hTSK⟩ := GlobalTheory.T.exists_finset_places_over_finset_places E K SE
+  obtain ⟨TSK, hTSK⟩ := _root_.GlobalTheory.PlacesOver.places_over_finset E K SE
   have hWT : W ∈ TSK := (hTSK W).mpr ⟨v, hvSE, hW⟩
-  obtain ⟨MainNotions, MK, hTS, -, hSKc⟩ := GlobalTheory.T.isOpen_idele_subgroup_contains_congruence_units K ψ1.ker ho1 TSK
+  obtain ⟨MainNotions, MK, hTS, -, hSKc⟩ := _root_.GlobalTheory.OpenIdeleCongr.open_subgroup_contains_congr K ψ1.ker ho1 TSK
   choose M' hM' using fun v' : HeightOneSpectrum (𝓞 E) => _root_.GlobalTheory.NormCompat.NormCont.norm_close_to_one E K v' ME
   let M'' : ℕ := SE.sup M'
   let m : ℕ := (WithZero.log (W.valuation K (y : K))).natAbs

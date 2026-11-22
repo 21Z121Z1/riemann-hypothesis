@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormCloseToOneOfCloseAbovePlace
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsTensorIdempotentOfAlgHomToBaseStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsTensorIdempotentOfAlgHomToBase
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormEqMulNormIdempotentCorner
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ValuationLeOneOfSqSubSelfIntegralBasisStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGlobalElementNearIdempotentAdicCompletionStatement
@@ -33,7 +33,7 @@ theorem norm_div_close_to_one : ∀ (E E' : Type) [Field E] [NumberField E] [Fie
   let ψ : K ⊗[E] E' →ₐ[K] K := Algebra.TensorProduct.lift (Algebra.ofId K K) σA (fun _ _ => Commute.all _ _)
   have hψ : ∀ x : E', ψ ((1 : K) ⊗ₜ x) = σ x := fun x => by
     simp [ψ, σA, Algebra.TensorProduct.lift_tmul]
-  obtain ⟨e, he1, he⟩ := GlobalTheory.T.exists_tensor_idempotent_of_algHom_to_base E K E' ψ
+  obtain ⟨e, he1, he⟩ := _root_.GlobalTheory.exists_tensor_idem_of_algHom E K E' ψ
   have hee : e * e = e := by rw [he, he1, map_one, one_mul]
   obtain ⟨s, b, hb⟩ := FiniteDimensional.exists_is_basis_integral (𝓞 E) E E'
   have hb' : ∀ i, IsIntegral ℤ (b i) := fun i => isIntegral_trans _ (hb i)

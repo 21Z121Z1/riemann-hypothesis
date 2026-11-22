@@ -6,9 +6,9 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieChart
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelExistsUniqueSemilinear
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalizationSheafGlueModules
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProjectiveModulesGlueCover
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalizedModuleBaseChangeStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalizedModuleBaseChange
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DualModuleFiniteProjective
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DualNumberPointsGlueStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DualNumberPointsGlue
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry NumberField
 open scoped CategoryTheory.Obj
 open ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.CompanionTheory.Ar
@@ -148,7 +148,7 @@ theorem loc_of_family {R : Type} [CommRing R] (x : Sp R ⟶ S) {J : Type} [Finit
       ((mg g).pt (r e)).left = spMap (dualMap (algebraMap R (Localization.Away g.1))) ≫ (M.pt e).left :=
     fun g => exists_trL (R := R) x (ptAt x g.1) (algebraMap R _) (fun _ => rfl) rfl M (mg g)
   choose ρ hρ using hρ
-  have hglue := fun X => GlobalTheory.T.dual_number_points_glue X R J f hf
+  have hglue := fun X => _root_.GlobalTheory.CompanionTheory.Ar.LieFinGlue.dual_glue X R J f hf
   refine ⟨ρ, hρ, _root_.GlobalTheory.CompanionTheory.BasicCover.isLocalizedModule_of_basic_cover R E J f hf F res ρ ?_ ?_ ?_ ?_ ?_ ?_ ?_⟩
   · intro g h y
     apply pt_left_inj (mg g)
@@ -301,7 +301,7 @@ theorem fin_of_charts {R : Type} [CommRing R] (x : Sp R ⟶ S) {J : Type} [Finit
       unit_of_dvd ((hix g).trans h)
     obtain ⟨e, he⟩ := exists_equiv (R := R) (ptAt x g'.1) (m (ix g) _ hu') (m (ix g') _ (unit_of_dvd (hix g')))
     haveI := cmap_loc h ht
-    haveI hcr := GlobalTheory.T.localized_module_base_change R (P (ix g)) (Localization.Away g.1) (Localization.Away g'.1) (f (ix g)) t
+    haveI hcr := _root_.GlobalTheory.CompanionTheory.LocHom.isLocalizedModule_compRight_away R (P (ix g)) (Localization.Away g.1) (Localization.Away g'.1) (f (ix g)) t
       (unit_of_dvd (hix g)) (cmap h) (cmap_loc h ht)
     have hrr : r = (e : _ →ₗ[R] _) ∘ₗ LinearMap.compRight R (cmap h).toLinearMap := by
       refine LinearMap.ext fun y => pt_left_inj (m (ix g') _ (unit_of_dvd (hix g'))) ?_

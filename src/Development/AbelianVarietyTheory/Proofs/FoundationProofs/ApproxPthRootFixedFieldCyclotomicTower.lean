@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Definitions.Foundations.NotCoboundaryCon
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FrobeniusSurjectiveModPrimeCyclotomicKummerTower
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemAdjoinDivOfFixed
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EqUnitMulPowCyclotomicUniformizer
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ApproxPthRootClosedMulDivPowStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ApproxPthRootClosedMulDivPow
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ValuationTowerZetaSubOneStatement
 
 open GlobalTheory.AlmostEt GlobalTheory.K5
@@ -91,8 +91,8 @@ theorem approxRoot_fix_tower : ∀ (p : ℕ) [Fact p.Prime] (Ω : Type) [Field �
       rw [hb0, zero_pow hpp.ne_zero, sub_zero, map_zero]; exact zero_le
     obtain ⟨n, k, hn, u, hu, u', hu', e, rfl⟩ := _root_.GlobalTheory.K5.UnitPow.eq_unit_mul_pow p Ω hclo T b hb hb0
     have h1 := hunit u hu u' hu' e
-    have h2 := (GlobalTheory.T.approxPthRoot_closed_mul_div_pow Ω v p F θ hθ1 _ _ (hzeta n hn) (hzeta n hn)).2.2 k
-    exact (GlobalTheory.T.approxPthRoot_closed_mul_div_pow Ω v p F θ hθ1 _ _ h1 h2).1
+    have h2 := (_root_.GlobalTheory.AlmostEt.approxRoot_closed Ω v p F θ hθ1 _ _ (hzeta n hn) (hzeta n hn)).2.2 k
+    exact (_root_.GlobalTheory.AlmostEt.approxRoot_closed Ω v p F θ hθ1 _ _ h1 h2).1
 
   refine ⟨θ, hθ1, fun x hx => ?_⟩
   haveI : CharZero Ω := Basic.charZero_of_isClo hclo
@@ -107,6 +107,6 @@ theorem approxRoot_fix_tower : ∀ (p : ℕ) [Fact p.Prime] (Ω : Type) [Field �
         ⟨hg _ (Or.inl ⟨n, rfl⟩), hg _ (Or.inr ⟨n, rfl⟩)⟩
     exact hx ⟨g, hgm⟩
   obtain ⟨b, hb, c, hc, hc0, rfl⟩ := _root_.GlobalTheory.mem_adjoin_div_of_fixed (O0 p) Ω hclo.inj S x hfix
-  exact (GlobalTheory.T.approxPthRoot_closed_mul_div_pow Ω v p F θ hθ1 _ _ (hB b hb) (hB c hc)).2.1 hc0
+  exact (_root_.GlobalTheory.AlmostEt.approxRoot_closed Ω v p F θ hθ1 _ _ (hB b hb) (hB c hc)).2.1 hc0
 
 end GlobalTheory.K5.TopRoots

@@ -7,11 +7,12 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormHeckeVecDos
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SatakePowerNonvanishing
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NilpotentOfProjectionZero
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsDomMonoid
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CasselmanFirstPropertyStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CasselmanFirstProperty
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.StrictDominance.JointGeneralisedEigenvectors.IsJointGenEig
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeckeCharacterExistsUnique
 import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.LocalBaseChange.TwistedIndependenceLemma.TwistedIndependence
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwahoriUnipotentDatum
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DominantUnipotentContractionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DominantUnipotentContraction
 
 open GlobalTheory.PRep Formalism.UG GlobalTheory.LFun PositivityTheory.SphericalProduct
 
@@ -29,7 +30,7 @@ theorem hecke_pow {G : Type} [Group G] [TopologicalSpace G] [IsTopologicalGroup 
   | succ r ih =>
     rw [pow_succ, pow_succ U]
     exact ⟨(GlobalTheory.CompanionTheory.Cass.isDom_monoid G D).2 _ _ ih.1 ht,
-      GlobalTheory.T.casselman_first_property G D V π hπ (t ^ r) t ih.1 ht _ _ ih.2 hU⟩
+      _root_.GlobalTheory.CompanionTheory.Casselman.hecke_dominant_mul_abstract G D V π hπ (t ^ r) t ih.1 ht _ _ ih.2 hU⟩
 
 theorem jacNeU : JacNeU := by
   intro L _ _ _ ϖ σ q n V _ _ ρ α hu hadm _ hsat
@@ -39,7 +40,7 @@ theorem jacNeU : JacNeU := by
   · obtain ⟨D, hJ, hN, hNm, hT⟩ := _root_.GlobalTheory.CompanionTheory.IwUnit.iwahoriU L ϖ σ q hu n
     obtain ⟨hKo, hKc, hIK, t₀, ht₀d, ht₀s⟩ := GlobalTheory.CompanionTheory.KUFactsU.kuFacts L ϖ σ q n hu
     have hstr : D.IsStrDom ⟨t₀, (hT _).2 ht₀d⟩ :=
-      (GlobalTheory.T.dominant_unipotent_contraction L ϖ σ q hu n D hJ hN hNm hT ⟨t₀, (hT _).2 ht₀d⟩).2 ht₀s
+      (_root_.GlobalTheory.CompanionTheory.DomUnitary.domU L ϖ σ q hu n D hJ hN hNm hT ⟨t₀, (hT _).2 ht₀d⟩).2 ht₀s
     have hker : twKer ρ D.N 1 = jacU ρ := twKer_eq_jacSub D _ hN ρ
     have hproj0 : D.proj ρ v₀ = 0 := by
       refine (Submodule.Quotient.mk_eq_zero _).2 ?_

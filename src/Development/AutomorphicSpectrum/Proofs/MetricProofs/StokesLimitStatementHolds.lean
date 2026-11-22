@@ -13,13 +13,13 @@ import ReciprocityTheory.AnalyticForms.LeviForms.IsRegFamilyInhabitStatement
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRes
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsMeasurableDominatingFunction
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LocalSectionOfPotentialOnModel
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularChartDataPropertiesStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularChartDataProperties
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LocalHolomorphicSectionOfPotential
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MixedIntegralModelFormula
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsPtsBddConv
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.StLemmaETailMass
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularizedWeightPshAndBounds
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularizedWeightTendstoC2Statement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularizedWeightTendstoC2
 
 set_option maxSynthPendingDepth 1
 
@@ -387,7 +387,7 @@ theorem stokesLimitTVb : StokesLimitTVb.Statement := by
   obtain ⟨Θ, hΘ, hΘs⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Giv.exists_potential_of_smoothHerm K ι (mCoordIdeal D.y) D.n X.M D.A' D.A'_pos.1
   have hΘp : IsPosPot X.M.atlas Θ := _root_.GlobalTheory.CompanionTheory.Ar.Giv.potential_pos_of_section II Ψ K ι Ω E D X.M Θ hΘ hΘs
   obtain ⟨-, ⟨C₁, hC₁⟩, hε⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Giv.tied_regularisation_weak K ι (mCoordIdeal D.y) D.n X.M D.Xo (muLine X.H) X.S Θ X.S_tied hΘ hΘp
-  obtain ⟨hYo, hnull, -, -⟩ := GlobalTheory.T.regular_chart_data_properties D.n X.M.Xc X.M.atlas X.S.R
+  obtain ⟨hYo, hnull, -, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Giv.regData_open_part D.n X.M.Xc X.M.atlas X.S.R
   obtain ⟨G, Cg, hGm, hGb, hGe⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Giv.cuspWeight_descends II Ψ K ι Ω E D O Lt X
   set R := X.S.R with hR
   set c : ℝ := (p : ℝ) / q with hc
@@ -465,7 +465,7 @@ theorem stokesLimitTVb : StokesLimitTVb.Statement := by
     · have := mul_nonneg hC0 hl
       linarith
   · intro i j K' hK' hc'
-    exact GlobalTheory.T.regularized_weight_tendsto_C2 K ι (mCoordIdeal D.y) D.n X.M D.Xo (muLine X.H) X.S X.S_tied j K' hK' hc'
+    exact _root_.GlobalTheory.CompanionTheory.Ar.Giv.regWeight_tendsto_C2_of_tied K ι (mCoordIdeal D.y) D.n X.M D.Xo (muLine X.H) X.S X.S_tied j K' hK' hc'
   · refine Eventually.of_forall fun t => ⟨?_, fun x hx => ?_⟩
     · have hind : R.Yo.indicator G₀ = G₀ := by
         funext x

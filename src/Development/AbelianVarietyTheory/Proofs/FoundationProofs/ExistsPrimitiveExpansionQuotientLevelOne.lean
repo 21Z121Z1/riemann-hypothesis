@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.ApplyEqOfMemAdjoin
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsTopWTopWOfExists
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelUnitJPolynomialBoundedDenominatorsStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelUnitJPolynomialBoundedDenominators
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PrincipalCongruenceFunctionMemAdjoinJSiegelUnits
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PrimitiveConstMulOfBoundedExpansion
 open scoped MatrixGroups
@@ -94,9 +94,9 @@ theorem exists_prim_frac_level_one : ∀ {Ω : Type} [Field Ω] [Algebra ℚ Ω]
     simp only [ht]
     rw [tq 1 _ (by rw [← QuotientGroup.eq]; simp), map_one, X.sl_one]
   have hbd : ∀ γ : SL(2, ℤ), Bd X (X.sl (ofSL γ) Q) := fun γ =>
-    GlobalTheory.T.siegelUnit_jPolynomial_bounded_denominators ε X M (6 * M + 1) hM hc1 hc6 hcM Q hQ γ
+    _root_.GlobalTheory.FracBd.frac_bd ε X M (6 * M + 1) hM hc1 hc6 hcM Q hQ γ
   have hPbd : Bd X P := by
-    have := GlobalTheory.T.siegelUnit_jPolynomial_bounded_denominators ε X M (6 * M + 1) hM hc1 hc6 hcM P hP 1
+    have := _root_.GlobalTheory.FracBd.frac_bd ε X M (6 * M + 1) hM hc1 hc6 hcM P hP 1
     rwa [map_one, X.sl_one] at this
   set R : X.K := ∏ q ∈ Finset.univ.erase 1, t q with hR
   have hbR : b0 = R * Q := by

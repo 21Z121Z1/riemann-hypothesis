@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.NonUnitAt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolarizationTransferModels
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormIdeal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpanCoeffProdLinearStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpanCoeffProdLinear
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteAlgebraSplittingNormForm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLiftToCompleteDvrOfFinite
 import Formalism.LocalToGlobal.GroupLattices.PerfectRings.IsLocalRingOfComplete
@@ -34,7 +34,7 @@ theorem GlobalTheory.NormSheaf.normIdeal_map_eq_prod_lifts : ∀ (A B K L : Type
       Ideal.span (Set.range fun s => (f.comp h) (P.coeff s)) =
         ∏ j, Ideal.span (Set.range fun i => ψ j (g i)) := by
     intro m g P hPR
-    rw [← GlobalTheory.T.span_coeff_prod_linear_eq_prod_span V' _ m (fun j i => ψ j (g i))]
+    rw [← _root_.GlobalTheory.GaussContentLinearForms.span_coeff_prod_linear V' _ m (fun j i => ψ j (g i))]
     have hE : (∏ j, ∑ i, C (ψ j (g i)) * X i : MvPolynomial (Fin m) V') = (P.map (algebraMap A R)).map ρ := by
       rw [hPR]; simp [map_prod, map_sum, ψ]
     have hfun : (fun s => (f.comp h) (P.coeff s)) =

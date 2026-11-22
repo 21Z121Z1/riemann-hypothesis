@@ -8,14 +8,14 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ZarhinBundleKernelF
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncChartPoint
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProjectivePointImageReduced
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StandardSmoothBasicOpen
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LiftGenericPointOverIsoOpenStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LiftGenericPointOverIsoOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProjectivePointCoordsExist
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegularValuesInAdjoinedField
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SegreProductAffineChartStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncChartOfSmoothCoordsStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsStandardSmoothLocalizationStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SegreProductAffineChart
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncChartOfSmoothCoords
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsStandardSmoothLocalization
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StandardSmoothChartOfNonzero
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HomogeneousFormNonvanishingPointStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HomogeneousFormNonvanishingPoint
 
 noncomputable section
 
@@ -41,7 +41,7 @@ theorem smooth_basicOpen {Z : Scheme.{0}} (ζ : Sp Ω ⟶ Z) [IsDominant ζ] [Is
 theorem lift_generic {X X' : Scheme.{0}} (ξ : Sp Ω ⟶ X) [IsDominant ξ] (f : X' ⟶ X) (U : X.Opens)
     [IsIso (f ∣_ U)] (hd : Dense ((f ⁻¹ᵁ U : X'.Opens) : Set X')) (hU : ⊤ ≤ ξ ⁻¹ᵁ U) :
     ∃ ζ : Sp Ω ⟶ X', ζ ≫ f = ξ ∧ IsDominant ζ ∧ ⊤ ≤ ζ ⁻¹ᵁ (f ⁻¹ᵁ U) :=
-  GlobalTheory.T.lift_generic_point_over_iso_open Ω X X' ξ f U hd hU
+  _root_.GlobalTheory.CompanionTheory.Ar.Coords.dense_point_lift Ω X X' ξ f U hd hU
 
 theorem exists_coords {r : ℕ} (p : Sp Ω ⟶ PSpace ℚ r) : ∃ (x' : Fin (r + 1) → Ω) (hx' : x' ≠ 0), p = point ℚ x' hx' :=
   _root_.GlobalTheory.CompanionTheory.Ar.TupleCoords.exists_tuple_eq_point Ω r p
@@ -61,13 +61,13 @@ theorem prod_chart {N r : ℕ} {Z : Scheme.{0}} (j : Z ⟶ pullback (PSpace.str 
       ∃ h : ⊤ ≤ ζ ⁻¹ᵁ ((j ≫ pullback.fst _ _) ⁻¹ᵁ chart ℚ N a ⊓ (j ≫ pullback.snd _ _) ⁻¹ᵁ chart ℚ r l),
         Set.range (valMap ζ _ h).hom =
           Algebra.adjoin ℚ (Set.range (fun k => x k / x a) ∪ Set.range (fun k => x' k / x' l)) :=
-  GlobalTheory.T.segre_product_affine_chart Ω N r Z j ζ x hx x' hx' h₁ h₂ a l ha hl
+  _root_.GlobalTheory.CompanionTheory.Ar.SncRes.ProdChart.prod_chart Ω N r Z j ζ x hx x' hx' h₁ h₂ a l ha hl
 
 theorem snc_transfer {Z : Scheme.{0}} (ζ : Sp Ω ⟶ Z) [IsDominant ζ] [IsReduced Z] (g : Z ⟶ Sp ℚ) (e : ℕ) (T : Set Z)
     (hsm : SmoothOfRelativeDimension e g) (hc : HasSncCoords g e T) {W : Z.Opens} (hW : IsAffineOpen W)
     (h : ⊤ ≤ ζ ⁻¹ᵁ W) (A : Subalgebra ℚ Ω) (hA : Set.range (valMap ζ W h).hom = A) (σ : Γ(Z, W))
     (hσ : ∀ t ∈ W, t ∈ T ↔ t ∉ Z.basicOpen σ) : SncChart A e (valR ζ W σ) :=
-  GlobalTheory.T.snc_chart_of_smooth_coords Ω Z ζ g e T hsm hc W hW h A hA σ hσ
+  _root_.GlobalTheory.CompanionTheory.Ar.SncRes.sncChart_of_coords Ω Z ζ g e T hsm hc W hW h A hA σ hσ
 
 theorem form_section {N : ℕ} {Z : Scheme.{0}} (u : Z ⟶ PSpace ℚ N) (η : Sp Ω ⟶ Z) (x : Fin (N + 1) → Ω) (hx : x ≠ 0)
     (hu : η ≫ u = point ℚ x hx) {W : Z.Opens} (hW : ⊤ ≤ η ⁻¹ᵁ W) {a : Fin (N + 1)} (hi : W ≤ u ⁻¹ᵁ chart ℚ N a)
@@ -171,7 +171,7 @@ theorem exists_smooth (y : (Σ k, ι k) → Ω) (e : ℕ) (hA : IsArithVar (mCoo
     (E : Fin (N + 1) ≃ ((k : K) → ι k)) (c₀ : Fin (N + 1)) (hc : ∀ k, y ⟨k, E c₀ k⟩ ≠ 0) :
     ∃ s : Algebra.adjoin ℚ (Set.range fun j => (∏ k, y ⟨k, E j k⟩) / ∏ k, y ⟨k, E c₀ k⟩), s ≠ 0 ∧
       Algebra.IsStandardSmoothOfRelativeDimension e ℚ (Localization.Away s) :=
-  GlobalTheory.T.exists_standard_smooth_localization Ω K ι y e hA N E c₀ hc
+  _root_.GlobalTheory.CompanionTheory.Ar.SegreChart.exists_away_standardSmooth Ω K ι y e hA N E c₀ hc
 
 theorem exists_form (y : (Σ k, ι k) → Ω) (e : ℕ) (β : MRing ι) (b : K → ℕ) (hb : IsMultiHomog β b)
     (hβ : β ∉ mCoordIdeal y) (N : ℕ) (E : Fin (N + 1) ≃ ((k : K) → ι k)) (c₀ : Fin (N + 1))
@@ -202,7 +202,7 @@ theorem final_data (y : (Σ k, ι k) → Ω) (e : ℕ) (β : MRing ι) (N : ℕ)
       ¬ J ≤ mCoordIdeal (joinVec y y') ∧ IsSncModel (joinVec y y') e J ∧
       ∀ z ∈ mcPts (mCoordIdeal (joinVec y y')),
         evC z (rename (joinInl ι fun _ : Unit => Fin (r + 1)) β) = 0 → z ∈ mcPts J :=
-  GlobalTheory.T.homogeneous_form_nonvanishing_point Ω K ι y e β N E d Gz r x' hG h0 hβ hx' hF hch
+  _root_.GlobalTheory.CompanionTheory.Ar.SegreChart.final_data_main Ω K ι y e β N E d Gz r x' hG h0 hβ hx' hF hch
 
 theorem adjoin_seg_le (y : (Σ k, ι k) → Ω) (N : ℕ) (E : Fin (N + 1) ≃ ((k : K) → ι k)) (c₀ : Fin (N + 1))
     (hc : ∀ k, y ⟨k, E c₀ k⟩ ≠ 0) :

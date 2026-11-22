@@ -4,17 +4,17 @@ import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasWeil
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftEisensteinLevelSubgroup
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TsumMeas
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CountableMatricesAndCosets
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FourierJacobiTermsSummableStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FourierJacobiTermsSummable
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SectionLeftInvariantRationalParabolic
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeTranslationPreservedStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaFourierJacobiLatticeSwap
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StronglyMeasurableCoefficientComposition
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FourierJacobiExpansionBounded
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SchwartzLatticeSumBoundedAltBis
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PeriodisationBound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StronglyMeasurableTwistedLatticeSum
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeisenbergCharacterBilinearLawsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeisenbergCharacterBilinearLaws
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeTransformInvariance
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeTwistedSumPeriodicStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeTwistedSumPeriodic
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedLatticeSumsBoundedProduct
 
 noncomputable section
@@ -37,7 +37,7 @@ theorem GlobalTheory.CompanionTheory.FJE.fjEis : ZUnfold → ThTwist → FJEis :
   obtain ⟨hcM, hcC⟩ := _root_.GlobalTheory.CompanionTheory.FJE.countable_mat_cosets D ρ p
   have hsum := fun g' => (hZ D n ρ p hn M m ψ hψ b₀ hb χ hχ s f hf hl hs g').1
   have hC := (hZ D n ρ p hn M m ψ hψ b₀ hb χ hχ s f hf hl hs g).2
-  obtain ⟨t, ht, hT⟩ := GlobalTheory.T.fourier_jacobi_terms_summable M m ψ hψ b₀ χ s f hl g hC
+  obtain ⟨t, ht, hT⟩ := _root_.GlobalTheory.CompanionTheory.FJE.Domination.domination M m ψ hψ b₀ χ s f hl g hC
   have hF : LeftInv (GF D n) (eisS f) := GlobalTheory.Eis.leftInv_cosetSum (_root_.GlobalTheory.CompanionTheory.FJE.leftInv_of_isLaw χ s f hχ hl)
   have hTr := fun q : GlobalTheory.Eis.Cosets (P D p) (GF D p) => GlobalTheory.T.lattice_translation_preserved M ((q.out : GF D p) : G D p) q.out.2
   choose T hT1 hT2 hT3 using hTr
@@ -79,7 +79,7 @@ theorem GlobalTheory.CompanionTheory.FJE.fjEis : ZUnfold → ThTwist → FJEis :
 
   have hcont : ∀ h, Continuous (Ω h) := fun h => hΩ.cont.comp (continuous_const.prodMk continuous_id)
   have hsm : ∀ h, StronglyMeasurable (Ω h) := fun h => (hcont h).stronglyMeasurable
-  have hbd := fun h => GlobalTheory.T.exists_bound_lattice_sum_norm_schwartzA θ hθ (Ω h) (hΩ.mem h)
+  have hbd := fun h => _root_.GlobalTheory.CompanionTheory.FJE.periodisation_bound θ hθ (Ω h) (hΩ.mem h)
   obtain ⟨Bθ, hBθ⟩ := hbd 1
   have hthm : StronglyMeasurable fun v : Mx D ρ p × Mx D ρ p => conj (th ψ b₀ (Ω 1) 0 v.2 v.1) := by
     simp only [th_zero]
@@ -88,7 +88,7 @@ theorem GlobalTheory.CompanionTheory.FJE.fjEis : ZUnfold → ThTwist → FJEis :
   have hthb : ∀ v : Mx D ρ p × Mx D ρ p, ‖conj (th ψ b₀ (Ω 1) 0 v.2 v.1)‖ ≤ Bθ := fun v => by
     rw [RCLike.norm_conj, th_zero]
     have hn1 : ∀ ξ : Matrix (Fin ρ) (Fin p) D.host.E, ‖chv ψ b₀ v.2 (rt ξ) * Ω 1 (rt ξ + v.1)‖ = ‖Ω 1 (rt ξ + v.1)‖ := fun ξ => by
-      rw [norm_mul, (GlobalTheory.T.heisenberg_character_bilinear_laws ψ hψ b₀).2.2.1, one_mul]
+      rw [norm_mul, (_root_.GlobalTheory.CompanionTheory.FJE.chv_facts ψ hψ b₀).2.2.1, one_mul]
     refine (norm_tsum_le_tsum_norm ((summable_congr hn1).2 (hBθ v.1).1)).trans ?_
     rw [tsum_congr hn1]
     exact (hBθ v.1).2
@@ -102,7 +102,7 @@ theorem GlobalTheory.CompanionTheory.FJE.fjEis : ZUnfold → ThTwist → FJEis :
         Ap ψ b₀ (fun y => Wz M m ψ b₀ f (M.sh y * M.emb (q.out : GF D p) * g)) (Ω ((q.out : GF D p) : G D p)) (T q v) :=
       fun v => (hterm q v).2
     simp only [e1]
-    rw [_root_.GlobalTheory.CompanionTheory.FJE.TransportInt.transport_int m (T q) (hT1 q) (hT2 q) _ (fun ξ₁ ξ₂ v => GlobalTheory.T.lattice_twisted_sum_periodic ψ hψ b₀ _ _ ξ₁ ξ₂ v),
+    rw [_root_.GlobalTheory.CompanionTheory.FJE.TransportInt.transport_int m (T q) (hT1 q) (hT2 q) _ (fun ξ₁ ξ₂ v => _root_.GlobalTheory.CompanionTheory.FJE.ap_periodic_all ψ hψ b₀ _ _ ξ₁ ξ₂ v),
       _root_.GlobalTheory.CompanionTheory.FJE.fold_parseval m ψ hψ b₀ hb _ _ (t q) B₂ hΦm (hsm _) (fun y => hT q y) hB₂, mul_one]
     rfl
 

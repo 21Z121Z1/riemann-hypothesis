@@ -15,7 +15,7 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsIrreducibl
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsSphericalTwistOfJacquetConstituentEmptyBlock
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormalisedParabolicInductionReindexEquivStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsIntertwiningOfCentralFiltrationStep
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GeometricLemmaCellOneBlockSwapEquivStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GeometricLemmaCellOneBlockSwapEquiv
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsCentralScalarDistinctGeometricLemmaCells
 open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.N Formalism.ConjugateSelfDual ReciprocityTheory.Gal ReciprocityTheory.Aut Formalism.AUTREP Formalism.L2 Formalism.L2.Host Formalism.L2.NT NumberField IsDedekindDomain Polynomial GlobalTheory.HeightCounting GlobalTheory.RowTie GlobalTheory.SplitRead GlobalTheory.NPin
 attribute [local instance] GlobalTheory.LocalData.complRel GlobalTheory.LocalData.isLocalField
@@ -71,7 +71,7 @@ theorem exists_jac_map_ne_zero : GlobalTheory.Published.BernsteinZelevinskyFinit
       · fin_cases i <;> simp [Fin.sum_univ_two, hd1]
       · fin_cases j <;> simp [Fin.sum_univ_two, hd1]⟩, rfl⟩
   have hgood : (b (b.symm G0)).1 1 0 = 1 := by rw [Equiv.apply_symm_apply, hG0]; rfl
-  obtain ⟨f₀, g₀, ⟨E₀⟩⟩ := GlobalTheory.T.geometricLemmaCell_one_block_swap_equiv k d σ hd1 (b (b.symm G0)) hgood
+  obtain ⟨f₀, g₀, ⟨E₀⟩⟩ := _root_.GlobalTheory.OneBlockCell.cellFunctor_swap_equiv k d σ hd1 (b (b.symm G0)) hgood
   have hbad' : ∀ t, t ≠ b.symm G0 → (b t).1 1 0 = 0 := by
     intro t ht
     have r1 := (b t).2.1 1

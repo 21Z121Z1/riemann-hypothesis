@@ -11,7 +11,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StableEigenTangents
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenFramesInvertibleChange
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TangentVectorsSpreadFromStalk
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StableEigenAtComponentStalk
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FramePointMultiplicityCompatStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FramePointMultiplicityCompat
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalPointSpecializesComponent
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrameFunctionExteriorValue
 
@@ -179,7 +179,7 @@ theorem exists_regular_near : ∀ (E : Type) [Field E] [NumberField E] [IsCMFiel
   obtain ⟨a, b, hgen, hrep⟩ := hF.exists_gen
   obtain ⟨R, _, x, _, θ, φ₂, e₁, e₂, f, b₁, b₂, α, κ, C₁, C₂, hθ, hφ₂, ha, hb, hf, ht₁, ht₂, hb₁, hb₂, hu₁, hu₂,
     hc₁, hc₂⟩ := exists_localData E H D l Xo c U τ O β Y Z a b p.R z q hp hq hgen hcen
-  obtain ⟨g, θ', C₁', C₂', hgq, hθ', hu₁', hu₂', hc₁', hc₂'⟩ := GlobalTheory.T.frame_point_multiplicity_compat E H D l Xo c O β Y p.R z q R x θ τ _ _ _
+  obtain ⟨g, θ', C₁', C₂', hgq, hθ', hu₁', hu₂', hc₁', hc₂'⟩ := _root_.GlobalTheory.CompanionTheory.Ar.LocFn.Spread.exists_away_frames E H D l Xo c O β Y p.R z q R x θ τ _ _ _
     hp hq e₁ e₂ C₁ C₂ hθ ht₁ ht₂ hu₁ hu₂ hc₁ hc₂
   have FS := _root_.GlobalTheory.CompanionTheory.Ar.LocFn.function_of_frames_at_field_point E H D l Xo c U τ O β Y Z φ a b p.R z hp hq R x φ₂ e₁ e₂ f b₁ b₂ α κ
     (Localization.Away g) θ' C₁' C₂' hL hrep hφ₂ ha hb hf ht₁ ht₂ hb₁ hb₂ hθ' hu₁' hu₂' hc₁' hc₂'

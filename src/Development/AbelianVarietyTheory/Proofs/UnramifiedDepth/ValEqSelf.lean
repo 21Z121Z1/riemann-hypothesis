@@ -11,17 +11,17 @@ import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.IntSOfMulEqOne
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.HasGaugeAdjointTeichmullerEndSelfConjugatePlace
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsAdjointIntegralEndOfLadicLimit
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsIntegralEndOfLadicActionLimit
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsLadicSeparatingSequenceEmbeddingsStatement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsLadicSeparatingSequenceEmbeddings
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.DiagonalSplit
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsIntegralSeriesFrameEqProdRows
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsEndomorphismPairW0
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.GaugeBiadditiveSymmAdjointIntegralEndStatement
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.InvariantDerivationsConstantInLogCoordinatesStatement
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ConstantCoeffDerivationPolynomialEqJetAt0Statement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.GaugeBiadditiveSymmAdjointIntegralEnd
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.InvariantDerivationsConstantInLogCoordinates
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ConstantCoeffDerivationPolynomialEqJetAt0
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.JetAt0ProdSubstDisjointVariables
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.AdmissibleRowsValueEqRowGauge
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.IntegralGermEqGaugedFormalGroupLawExpIntegral
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.HasGaugeAdjointLieProjectorsSelfConjugatePlaceStatement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.HasGaugeAdjointLieProjectorsSelfConjugatePlace
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.IsIntegralGaugedFormalGroupLawSelfConjugateSquarStatement
 
 open scoped BigOperators
@@ -36,7 +36,7 @@ theorem exists_sep (p : ∀ o, SelfData Y d (I0 o)) (hs : SelfSep Y p) (o : Orb)
     ∃ E E' : Matrix (Fin 2 × Fin dd) (Fin 2 × Fin dd) C, IsEnd (Y.rawSelf (p o)) V E E' ∧
       (∀ g c, E.mulVec ((Y.rawSelf (p o)).u g c) = (Y.rawSelf (p o)).u g c) ∧
       ∀ o', o' ≠ o → ∀ g c, E.mulVec ((Y.rawSelf (p o')).u g c) = 0 ∧ E'.mulVec ((Y.rawSelf (p o')).u g c) = 0 := by
-  obtain ⟨s, hs1, hs2, hs3⟩ := GlobalTheory.T.exists_ladic_separating_sequence_embeddings C V O d (p o).em (p o).em_int (p o).em_frob (p o).em_unr
+  obtain ⟨s, hs1, hs2, hs3⟩ := _root_.GlobalTheory.SeparatingSeq.main C V O d (p o).em (p o).em_int (p o).em_frob (p o).em_unr
   let X : RawChart C d (fun _ => I0 o) (Fin dd) :=
     { lg := fun i => un1 (Y.lg i), ex := fun i => un1 (Y.ex i), h := Y.h, k := 0, u := fun _ => (p o).e,
       ty := fun _ => (p o).ty0, n := 0, j := 0, j' := 0, big := fun _ _ => True }
@@ -105,9 +105,9 @@ theorem exists_plane [Fintype Orb] (p : ∀ o, SelfData Y d (I0 o)) (hs : SelfSe
   classical
   have hL := GlobalTheory.T.isIntegralGaugedFormalGroupLaw_selfConjugateSquare C V O dd Y d _ (p o₀)
   obtain ⟨W, W', hW, hWW, hWv, hWh⟩ := _root_.GlobalTheory.ActionEndSelf.exists_endomorphism_w0 C V O dd Y d _ (p o₀)
-  choose P hP01 hP10 hPid hPk hPr using fun o => GlobalTheory.T.hasGaugeAdjointLieProjectors_selfConjugatePlace C V O dd Y d _ (p o)
+  choose P hP01 hP10 hPid hPk hPr using fun o => _root_.GlobalTheory.ProjSelf.hasProj_self C V O dd Y d _ (p o)
   choose E E' hE hEid hEk using exists_sep Y p hs
-  obtain ⟨-, -, cmul, czero, -, -, cadj⟩ := GlobalTheory.T.gauge_biadditive_symm_adjoint_integralEnd C V d _ _ (Y.rawSelf (p o₀)) hL
+  obtain ⟨-, -, cmul, czero, -, -, cadj⟩ := _root_.GlobalTheory.RowVal.EndCalc.end_calc C V d _ _ (Y.rawSelf (p o₀)) hL
   have hPg : ∀ o g, IsEnd (Y.rawSelf (p o₀)) V (P o g) (P o (1 - g)) := by
     intro o g
     fin_cases g
@@ -311,9 +311,9 @@ theorem valEqSelf : ∀ (C : Type) [Field C] [CharZero C] (V : VF C) (O : Type) 
   have hE0 : ∀ s : Fin n × Fin dd, MvPowerSeries.constantCoeff
       (MvPowerSeries.subst (fun j : Fin dd => linCol pl u (s.1, j)) (un1 (Y.ex s.2))) = 0 := fun s =>
     constantCoeff_subst_zero (fun j => cc_linCol pl u _) (by rw [constantCoeff_uncurry, Y.ex_const])
-  have hjet := GlobalTheory.T.constantCoeff_derivationPolynomial_eq_jetAt0 C dd n (Y.B.FK C) _ (Ls.cp n) (Ls.uv n) _ _ hE0 co P (by
+  have hjet := _root_.GlobalTheory.DerivJet.constantCoeff_DpolyN_eq_jetAt0 C dd n (Y.B.FK C) _ (Ls.cp n) (Ls.uv n) _ _ hE0 co P (by
     intro ℓ hℓ
-    refine GlobalTheory.T.invariantDerivations_constant_in_logCoordinates C V O dd Y n _ (linCol pl u) (cc_linCol pl u) _ _ _ ?_
+    refine _root_.GlobalTheory.InvDerivLog.subst_ex_DofN C V O dd Y n _ (linCol pl u) (cc_linCol pl u) _ _ _ ?_
     intro b j
     obtain ⟨ρ, col, hpl, h0, h1⟩ := hco ℓ hℓ
     have h2 : ∀ x, MvPowerSeries.pderiv C x (linCol pl u (b, j)) =

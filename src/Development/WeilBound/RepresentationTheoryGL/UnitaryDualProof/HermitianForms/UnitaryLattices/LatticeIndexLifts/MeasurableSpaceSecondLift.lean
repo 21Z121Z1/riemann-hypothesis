@@ -1,9 +1,9 @@
 import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.HermitianForms.UnitaryLattices.LatticeIndexLifts.AvNonneg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalizedAbsDetMulIntegralCompMulVecFinitePlace
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AnnihilatorOpenCompactStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AnnihilatorOpenCompact
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RelIndexAnnihilatorsDuality
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeAnnihilatorWithinNhdsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeAnnihilatorWithinNhds
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsOpenCompactLatticeContainingStatement
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GaussianDualMeasure.SecondCountableTopologyAndT2Space
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalContinuousSectionVecMulOrbit
@@ -25,10 +25,10 @@ section Lattices
 variable (ψ : AddChar k Circle) {n : ℕ}
 
 theorem perp_open (hψ : Continuous ψ) (hψ1 : ψ ≠ 1) {A : AddSubgroup (Fin n → k)} (hA : Lat A) :
-    IsOpen (perp ψ A : Set (Fin n → k)) := (GlobalTheory.T.annihilator_open_compact k ψ hψ hψ1 n A hA.1 hA.2).1
+    IsOpen (perp ψ A : Set (Fin n → k)) := (_root_.GlobalTheory.CompanionTheory.CharPerp.perp_isOpen_isCompact k ψ hψ hψ1 n A hA.1 hA.2).1
 
 theorem perp_compact (hψ : Continuous ψ) (hψ1 : ψ ≠ 1) {A : AddSubgroup (Fin n → k)} (hA : Lat A) :
-    IsCompact (perp ψ A : Set (Fin n → k)) := (GlobalTheory.T.annihilator_open_compact k ψ hψ hψ1 n A hA.1 hA.2).2
+    IsCompact (perp ψ A : Set (Fin n → k)) := (_root_.GlobalTheory.CompanionTheory.CharPerp.perp_isOpen_isCompact k ψ hψ hψ1 n A hA.1 hA.2).2
 
 theorem perp_anti {A A' : AddSubgroup (Fin n → k)} (h : A ≤ A') : perp ψ A' ≤ perp ψ A :=
   fun _ hξ a ha => hξ a (h ha)
@@ -49,7 +49,7 @@ theorem lat_over {K : Set (Fin n → k)} (hK : IsCompact K) : ∃ A : AddSubgrou
 
 theorem lat_shrink (hψ : Continuous ψ) (hψ1 : ψ ≠ 1) {U : Set (Fin n → k)} (hU : U ∈ 𝓝 (0 : Fin n → k)) :
     ∃ A : AddSubgroup (Fin n → k), Lat A ∧ (perp ψ A : Set _) ⊆ U := by
-  obtain ⟨A, h1, h2, h3⟩ := GlobalTheory.T.lattice_annihilator_within_nhds k ψ hψ hψ1 n U hU
+  obtain ⟨A, h1, h2, h3⟩ := _root_.GlobalTheory.CompanionTheory.AnnihShrink.exists_compact_open_annihilator_subset k ψ hψ hψ1 n U hU
   exact ⟨A, ⟨h1, h2⟩, h3⟩
 
 theorem lat_sup {A A' : AddSubgroup (Fin n → k)} (h : Lat A) (h' : Lat A') : ∃ A'', Lat A'' ∧ A ≤ A'' ∧ A' ≤ A'' := by

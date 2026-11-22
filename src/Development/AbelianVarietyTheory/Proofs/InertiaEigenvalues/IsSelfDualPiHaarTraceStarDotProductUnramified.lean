@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SelfDualIffLatticeVolumeAndPlancherel
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedQuadraticIntegralTraceFormPerfectStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedQuadraticIntegralTraceFormPerfect
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedStandardAddCharConductorProperties
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FourierMatch
 
@@ -31,7 +31,7 @@ theorem star_smul_F {r : ℕ} (a : F) (c : Fin r → E) : star (a • c) = a •
 
 theorem trace_star (z : E) : Algebra.trace F E (star z) = Algebra.trace F E z := by
   apply (algebraMap F E).injective
-  rw [(GlobalTheory.T.unramifiedQuadratic_integral_traceForm_perfect F E).1, (GlobalTheory.T.unramifiedQuadratic_integral_traceForm_perfect F E).1, star_star, add_comm]
+  rw [(_root_.GlobalTheory.NTr.traceForm_perfect F E).1, (_root_.GlobalTheory.NTr.traceForm_perfect F E).1, star_star, add_comm]
 
 def trForm (r : ℕ) : LinearMap.BilinForm F (Fin r → E) :=
   LinearMap.mk₂ F (fun c b => Algebra.trace F E (star c ⬝ᵥ b))
@@ -50,11 +50,11 @@ theorem trForm_isSymm (r : ℕ) : (trForm (F := F) (E := E) r).IsSymm := by
 theorem trForm_separatingLeft (r : ℕ) (c : Fin r → E) (hc : ∀ b, trForm (F := F) r c b = 0) : c = 0 := by
   classical
   funext i
-  obtain ⟨e, -, he⟩ := (GlobalTheory.T.unramifiedQuadratic_integral_traceForm_perfect F E).2.1
+  obtain ⟨e, -, he⟩ := (_root_.GlobalTheory.NTr.traceForm_perfect F E).2.1
   have h0 := hc (Pi.single i (c i * e))
   rw [trForm_apply, dotProduct_single, Pi.star_apply] at h0
   have h1 : algebraMap F E (Algebra.trace F E (star (c i) * (c i * e))) = star (c i) * c i * (e + star e) := by
-    rw [(GlobalTheory.T.unramifiedQuadratic_integral_traceForm_perfect F E).1]
+    rw [(_root_.GlobalTheory.NTr.traceForm_perfect F E).1]
     simp only [star_mul, star_star]
     ring
   rw [h0, map_zero, he, mul_one] at h1

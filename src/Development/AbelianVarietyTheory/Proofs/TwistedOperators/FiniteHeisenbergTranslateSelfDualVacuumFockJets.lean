@@ -13,7 +13,7 @@ import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ApplyAddInfRa
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SmulEqZeroOfInf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockJetsUnitVacuumEqScaledThetaJets
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusHermitianFormScaledCoordinateEq
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockVacuumRealRestrictionGaussianEntireStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockVacuumRealRestrictionGaussianEntire
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockMonomialAtOriginGaussianEntireOrthonormal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramAtPosDef
@@ -23,7 +23,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.WeilRepresentati
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.UnitaryDatumNumbersForSupBounds
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisenbergRootSmulFiniteRationalLatticeDecomp
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.OmAtSmulRight
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DeltaOrthonormalCoordsMemLatticeOfFiniteRationalStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DeltaOrthonormalCoordsMemLatticeOfFiniteRational
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EntireEqOfMonomialDerivationsAtZeroEq
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisenbergTranslateFiniteRationalRealGaussian
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsSelfDualImageOrthonormalFrameLattice
@@ -106,7 +106,7 @@ theorem core (ψ : AddChar (AF D.host.F) ℂ) (θ : InfFam D) (S T : HSp D)
   rw [← hΛSe, ← hΛTe] at hF hw
   obtain ⟨M, ζ, hζ, hnM, heq⟩ := _root_.GlobalTheory.MultLatDecomp.heisO_eq_root_smul_finRat ψ S T ΛS ΛT hψ hΛS hΛT F hF.2.lat n hn w hw
   rw [hΛSe, hΛTe] at hnM
-  obtain ⟨Φ, hΦd, hΦ⟩ := GlobalTheory.T.fockVacuum_real_restriction_gaussian_entire ψ θ S T frS frT _ _ hS hT F hF
+  obtain ⟨Φ, hΦd, hΦ⟩ := _root_.GlobalTheory.FockPos.vacuum_real_entire ψ θ S T frS frT _ _ hS hT F hF
   set sc : ℂ := (((Real.sqrt (2 * Real.pi * Formalism.L2.Pj.xiR D) : ℝ) : ℂ)⁻¹) with hsc
   have hper : ∀ τ : D.what₂.Tau, GlobalTheory.FunObj.period δ τ = δ * sc := fun τ => by
     rw [GlobalTheory.FunObj.period, GlobalTheory.AdTh.Fock.norm_embedding_hostFormConstant_eq, div_eq_mul_inv]
@@ -161,7 +161,7 @@ theorem core (ψ : AddChar (AF D.host.F) ℂ) (θ : InfFam D) (S T : HSp D)
   · have hv : GlobalTheory.VacUnique.finRat S T (-(n • M)) ∈
         latO S T (GlobalTheory.MovedDict.inV frS Ls) (GlobalTheory.MovedDict.inV frT Lt) (fun _ => True) := by
       rw [map_neg]; exact neg_mem hnM
-    have := GlobalTheory.T.delta_orthonormalCoords_mem_lattice_of_finiteRational S T frS frT hS hT Ls Lt hLs hLt δ (-(n • M)) hv
+    have := _root_.GlobalTheory.MovedTransLat.mem_La_of_finRat S T frS frT hS hT Ls Lt hLs hLt δ (-(n • M)) hv
     convert this using 1
     have e : ∀ τ, Matrix.of (GlobalTheory.VacUnique.infRat S T (-(n • M)) τ) =
         -((n : ℂ) • Matrix.of (GlobalTheory.VacUnique.infRat S T M τ)) := by

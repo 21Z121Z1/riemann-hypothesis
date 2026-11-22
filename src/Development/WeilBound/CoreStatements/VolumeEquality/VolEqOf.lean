@@ -14,7 +14,16 @@ import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IntegralClosureHeightEqOneOfLiesOver
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.WeilSt
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CmHostRankBoundsStatement
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CmHostRankBounds
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.HodgeLatticeFlagBound
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.TrivFlagOnHodge
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.PadicIntegersHenselianFiniteResidue
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.HodgeComparisonCompatibility
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.CmpSt
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.NumberField
+import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.LocalAtPlaces
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.AgreementPositive
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.AgreementPos
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
@@ -98,7 +107,7 @@ theorem volEq_of (h1 : HolNull) (h2 : ChartMeets) (h3 : RootBranches) (h4 : Cove
     have eb : Or.bg = Sum.inl := e4
     have ej : Dc.j = D.p := e3
     have es : Or.sm = Sum.inr := by
-      obtain ⟨τ⟩ : Nonempty (CMType H) := (GlobalTheory.T.cm_host_rank_bounds E H).2.1
+      obtain ⟨τ⟩ : Nonempty (CMType H) := (_root_.GlobalTheory.CompanionTheory.Ar.Top.HostNumbers.host_numbers E H).2.1
       refine Or.side.elim (fun h => h.2.1) fun h => ?_
       simpa [eb] using congrFun h.1 τ
     have eg : genPt (o.Fx a).ξf = genPt Or.𝔐.ξ₀ := by

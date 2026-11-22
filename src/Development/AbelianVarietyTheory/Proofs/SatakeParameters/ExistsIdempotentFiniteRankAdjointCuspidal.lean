@@ -3,8 +3,9 @@ import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.DualIsConjByO
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsSpanFormsNeBot
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsLocCompAndIsLocLoc
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BarKHomSurjective
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CompactSpaceMaximalCompactUnitaryInfiniteStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsSemisimpleOfLocallyFiniteCompactGroupStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CompactSpaceMaximalCompactUnitaryInfinite
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExpoConjOfIsCsd
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsSemisimpleOfLocallyFiniteCompactGroup
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsComplementWithoutCommonIrreducibleTypes
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsComplOrthogonalOfNoCommonIrreducibleTypes
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CuspidalTypeClosurePreservedByArchCompactIntertw
@@ -119,7 +120,7 @@ theorem exists_idem_adj : AutomorphicFormsFiniteGL → ∀ (L : Type) [Field L] 
         (∀ X φ ψ, B (π.op (.lie X) φ) ψ + B φ (π.op (s (.lie X)) ψ) = 0) →
         ∃ P' : Module.End ℂ π.V, ∀ φ ψ, B (P φ) ψ = B φ (P' ψ) := by
   intro h L _ _ _ a π
-  haveI := GlobalTheory.T.compactSpace_maximalCompact_unitary_infinite L a
+  haveI := _root_.GlobalTheory.KinfCompactness.compactSpace_Kinf L a
 
   obtain ⟨φ, hφ, h0⟩ := (Submodule.ne_bot_iff _).1 π.ne_bot
   set φ₀ : π.V := ⟨φ, hφ⟩ with hφ₀
@@ -151,7 +152,7 @@ theorem exists_idem_adj : AutomorphicFormsFiniteGL → ∀ (L : Type) [Field L] 
         (ℓ ∘ₗ Submodule.inclusion hSV) ⟨u.1, hu⟩
       convert this using 2 with k
       rfl
-  obtain ⟨hss, hfin, hsum⟩ := GlobalTheory.T.isSemisimple_of_locallyFinite_compactGroup (Kinf L a) π.V (cptOn π) hloc
+  obtain ⟨hss, hfin, hsum⟩ := _root_.GlobalTheory.LocFinSemisimple.semisimple_of_locallyFinite (Kinf L a) π.V (cptOn π) hloc
 
   set X := typeSub π ρ₀ with hX
   have hφX : φ₀ ∈ X.toSubmodule := fun g =>

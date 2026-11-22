@@ -4,7 +4,8 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.IsAddHaarMeasureVol
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StrongMultiplicityOne
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsRapidInf
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdelicUnitriangularMulMemUnipotentTimesIntegral
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LintegralThetaSeriesUnfoldMirabolicStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LintegralThetaSeriesUnfoldMirabolic
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.T2SpaceAdelicGeneralLinearGroupNumberField
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnfoldMirabolic
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEqColGenMulBlkU
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnipotentBlockColumnIndex
@@ -17,7 +18,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DecaysOfMemSmo
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.LeviEmbMemNormalizerLower
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsStandardAdelicAddCharGlobalAdelicChar
 import GroundTheory.GlobalFields.TateThesis.AdelicChar
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IteratedColumnTransformEqGlobalWhittakerStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IteratedColumnTransformEqGlobalWhittaker
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CuspidalBlockAverageLastColumnEqZero
 
 open NumberField IsDedekindDomain Matrix MeasureTheory GlobalTheory.CuspRep GlobalTheory.JSW GroundTheory.Global.IdeleGroup Formalism.L2.Host
@@ -251,7 +252,7 @@ theorem GlobalTheory.RSUnfold.lintegral_theta_eq_whit : ∀ (E : Type) [Field E]
       continuous_const.matrix_vecMul Units.continuous_val
     exact (((GlobalTheory.RSTheta.continuous_rsPsi hB.cont hB.cont hΦc hΦt J η).comp (continuous_id.prodMk hv)).enorm.measurable).mul
       (ENNReal.measurable_ofReal.comp (hcd.measurable.pow_const x))
-  have e1 := GlobalTheory.T.lintegral_theta_series_unfold_mirabolic E a ha μ 𝓕 𝓕P h𝓕 h𝓕P
+  have e1 := _root_.GlobalTheory.ThetaUnfold.lintegral_theta_unfold E a ha μ 𝓕 𝓕P h𝓕 h𝓕P
     (fun g y => ‖GlobalTheory.RSTheta.rsPsi ℓ F F Φ J η g y‖ₑ * ENNReal.ofReal ((ideleModule E (GeneralLinearGroup.det g) : ℝ) ^ x))
     hmeas (fun γ g y => by simp only [GlobalTheory.RSTheta.rsPsi_ratGL_mul ℓ hB.left hB.left, hdet])
   simp_rw [← ENNReal.tsum_mul_right]
@@ -277,6 +278,6 @@ theorem GlobalTheory.RSUnfold.lintegral_theta_eq_whit : ∀ (E : Type) [Field E]
     have := whit_transport ψC (a - 1) F (sInv ℓ) (fun g => ((Real.sqrt ‖Φ (yInf ℓ g)‖ : ℝ) : ℂ))
       (fun k _ _ y g => ⟨sInv_mul (blkU_row hℓ y) g, by simp only [yInf_mul (blkU_row hℓ y)]⟩) g
     rw [show fW ℓ Φ F = fun g => F (g * sInv ℓ g) * ((Real.sqrt ‖Φ (yInf ℓ g)‖ : ℝ) : ℂ) from rfl, this,
-      GlobalTheory.T.iteratedColumnTransform_eq_globalWhittaker E a F ha hB.cont hB.left]
+      _root_.GlobalTheory.CuspGeneric.WhitEq.whit_eq_whittaker E a F ha hB.cont hB.left]
     rfl
   rw [hA]

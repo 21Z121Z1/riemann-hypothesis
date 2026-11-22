@@ -7,9 +7,9 @@ import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.FractionRingRin
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.IsMultiProjPrimeExtTo
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.UniformizerDivisorCycleNumber
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.BundleChernComparison
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.FlagM3PadicGlobalStatement
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.FlagM3PadicGlobal
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.PowerSumsVanishAtPlaces
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RootModelGeometricGenericNumberStatement
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RootModelGeometricGenericNumber
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RootPowerSumMixedExpansion
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.PowerSumTermDiscreteValuation
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.IsometricFamilyIntersectionEq
@@ -98,7 +98,7 @@ theorem power_sum_height_model_change : ∀ (Ψ : Type) [Fintype Ψ] [DecidableE
     refine Eq.trans hlink (Finset.sum_congr rfl fun p hp => ?_)
     congr 1
     obtain ⟨hirr, hmod, hv⟩ := zp_model M.K M.ι M.P (dimFl Ψ N) M.arith p
-    have hm3 := GlobalTheory.T.flag_m3_padic_global M.K M.ι M.Ω M.y A hinj hconst (dimFl Ψ N) M.arith p Ψ N j (φ p) S R.pairs hvert
+    have hm3 := _root_.GlobalTheory.CompanionTheory.Ar.Num.PlacesFlagM3.flag_m3_padic M.K M.ι M.Ω M.y A hinj hconst (dimFl Ψ N) M.arith p Ψ N j (φ p) S R.pairs hvert
       (fun m _ hm O _ _ _ _ _ _ _ => (hloc p hp m hm O).1)
     have hz := _root_.GlobalTheory.CompanionTheory.Ar.Num.powerSumsVanish_extTo_of_atPlacesOver M.K M.ι M.Ω M.y A hinj hconst (dimFl Ψ N) M.arith p N (fun i => R.xdeg (τ, i))
       (fun m _ hm O _ _ _ _ _ _ _ => (hloc p hp m hm O).2 τ)
@@ -112,7 +112,7 @@ theorem power_sum_height_model_change : ∀ (Ψ : Type) [Fintype Ψ] [DecidableE
       (bracket j (φ p) p k τ * Q) (dimFl Ψ N) hH [] (by simp)
     simp only [Units.val_one, one_mul, pow_one, Nat.cast_one] at h2
     have h3 := genNum_zp_eq_rat M.K M.ι M.P p (Ψ × Fin N) M.xdeg (bracket j (φ p) p k τ * Q) []
-    have h4 := GlobalTheory.T.root_model_geometric_generic_number Ψ N M II hII _ hH
+    have h4 := _root_.GlobalTheory.CompanionTheory.Ar.Num.GeoModel.geoFun_toA_eq Ψ N M II hII _ hH
     refine h1.trans ?_
     refine Eq.trans h2 ?_
     rw [h3, h4]

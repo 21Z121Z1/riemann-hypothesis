@@ -1,7 +1,9 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HasStepCharts
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SelM
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockDiagonalMinorVanishingStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockDiagonalMinorVanishing
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockMetricGrassmannChartLocal
 
 noncomputable section
@@ -38,7 +40,7 @@ theorem exists_plk_ne_zero : ∀ (K : Type) [Fintype K] (ι : K → Type) [∀ k
     · have e := hpl I hI
       rw [hcon I hI] at e
       exact (mul_eq_zero.1 e.symm).resolve_left ha
-    · exact ((GlobalTheory.T.block_diagonal_minor_vanishing ℂ N j p.2 M.j_le).2.1 h I hb hI).resolve_right
+    · exact ((_root_.GlobalTheory.CompanionTheory.Ar.PB.MinorCalc.minors_main ℂ N j p.2 M.j_le).2.1 h I hb hI).resolve_right
         (stepCols_ne_empty_of_le M.j_le p.2)
   obtain ⟨m, hm⟩ := hz.1 k₀
   exact hm (by rw [hzk m]; simp [hmin])

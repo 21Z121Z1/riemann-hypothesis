@@ -61,7 +61,7 @@ private theorem coarse (hG : GlobalTheory.Published.GeometricLemma) (hBZ : Globa
     rw [← hx, Equiv.sum_comp finSigmaFinEquiv.symm (fun p : (Σ a, Fin (t a)) => (x p.1 p.2).1), Fintype.sum_sigma]
   let e := stdBlocks d hd
   let e' : ∀ a, (Σ b, Fin ((x a b).1)) ≃ Fin (d a) := fun a => stdBlocks (fun i => (x a i).1) rfl
-  obtain ⟨φR⟩ := GlobalTheory.T.piExteriorTensor_flattenedIndex_equiv_nested s t (fun a b => GL (Fin ((x a b).1)) k) _ fun a b => (x a b).rep
+  obtain ⟨φR⟩ := _root_.GlobalTheory.JacStages.piTensor_flatHom_equiv s t (fun a b => GL (Fin ((x a b).1)) k) _ fun a b => (x a b).rep
   obtain ⟨φS⟩ := _root_.GlobalTheory.JacStagesProof.jac_refinePlace_equiv k s w.1 d e t (fun a b => (x a b).1) e' _ w.rep
   obtain ⟨φP⟩ := (GlobalTheory.SmGL.Placing.parInd_jac_placing k _ _ _ (stdBlocks _ hx) (refinePlace e e') _).2 w.rep
   have hirr0 : (piTensor fun c : Fin (∑ a, t a) =>

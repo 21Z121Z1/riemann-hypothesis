@@ -2,7 +2,7 @@ import Mathlib
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.GeoDefs
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EvalZeroOfMemHomogeneousIdeal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HomogeneousIdealNeTop
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HomogeneousIdealComponentMemStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HomogeneousIdealComponentMem
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemHomogeneousIdealOfEvalZero
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BasicOpenNonemptyOfNeZeroStatement
 
@@ -21,8 +21,8 @@ variable {K : Type} [Field K] {X : Scheme.{0}} {N : ℕ} (i : X ⟶ PSpace K N)
 
 theorem homIdeal_homog : ∀ f ∈ homIdeal i, ∀ n : ℕ, MvPolynomial.homogeneousComponent n f ∈ homIdeal i := by
   first
-    | exact GlobalTheory.T.homogeneous_ideal_component_mem ..
-    | (intros; apply GlobalTheory.T.homogeneous_ideal_component_mem <;> assumption)
+    | exact _root_.GlobalTheory.CompanionTheory.Geo.homIdeal_homog ..
+    | (intros; apply _root_.GlobalTheory.CompanionTheory.Geo.homIdeal_homog <;> assumption)
 
 theorem homIdeal_ne_top [Nonempty X] : homIdeal i ≠ ⊤ := by
   first

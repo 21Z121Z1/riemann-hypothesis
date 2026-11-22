@@ -11,7 +11,9 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Differentiab
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteDimensionalEigenspaceSumSqInvariantFieldsA
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteDimensionalKerAevalOfEigenspacesStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SmoothOfFiniteDimensionalTranslationStable
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.QuadraticGelfandInvariantEqNegSumSqDefiniteStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.QuadraticGelfandInvariantEqNegSumSqDefinite
+import Formalism.SatakeDualWeyl.Statement
+import Formalism.FormalDegreeBessel.StatementG
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DefiniteHermitianEqPmGramUnitaryCompactStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntertwineAeval
 
@@ -241,7 +243,7 @@ theorem gelf_one (R : RealPoints θ V) (hs : V.SigOK) (hd : V.IsDefinite) (τ : 
     ∃ X : Fin V.rank × Fin V.rank × Bool → LieAt V τ, Submodule.span ℝ (Set.range X) = ⊤ ∧ ∀ f : SmF θ V,
       ((∑ i, opInf R (atPlace V τ (X i)) * opInf R (atPlace V τ (X i))) f).1 = -gelf θ V τ 1 f.1 := by
   obtain ⟨B, hB, hJ⟩ := (frame_at hs hd τ).1
-  obtain ⟨X, hX, h⟩ := GlobalTheory.T.quadraticGelfandInvariant_eq_neg_sum_sq_definite _ _ B hB hJ
+  obtain ⟨X, hX, h⟩ := _root_.GlobalTheory.DefiniteUnitaryCasimir.casimir_eq_neg_sum_sq _ _ B hB hJ
   obtain ⟨P, Q, hPQ, -⟩ := GlobalTheory.UnitaryLieComplexification.glRel_and_span _ _ (R.1 τ).1 (R.1 τ).2
   have h1 := h P Q hPQ _ (fun Y => opInf R (atPlace V τ Y)) (opAt_add R τ) (opAt_smul R τ)
   refine ⟨X, hX, fun f => ?_⟩

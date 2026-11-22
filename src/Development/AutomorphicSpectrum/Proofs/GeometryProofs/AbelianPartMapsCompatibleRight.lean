@@ -11,7 +11,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackEqu
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianPartBaseChange
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeInnerProductPullbackUnique
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeInnerProductOnSpan
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelComplexBaseChangeStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelComplexBaseChange
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianPartMapsCompatibleLeft
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField TensorProduct Filter Topology Matrix
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CompanionTheory.Ar
@@ -112,8 +112,8 @@ theorem GlobalTheory.CompanionTheory.Ar.SlopeNorm.sqAt_le : ∀ (E : Type) [Fiel
   haveI : Smooth t.G.hom := t.semi.smooth
   haveI : Smooth t'.G.hom := t'.semi.smooth
   obtain ⟨Pσ, mKσ, mBσ, d1, d2⟩ := _root_.GlobalTheory.CompanionTheory.Ar.AbPartFieldChange.exists_baseChange E H X t L₁ ℂ z₁ P₁ (σ.comp e₂)
-  obtain ⟨Mσ, hMσ⟩ := GlobalTheory.T.lie_model_complex_base_change X t.G L z B.carrier MB σ
-  obtain ⟨Mσ', hMσ'⟩ := GlobalTheory.T.lie_model_complex_base_change (Sp (𝓞 L)) t'.G L (𝟙 _) B'.carrier MB' σ
+  obtain ⟨Mσ, hMσ⟩ := _root_.GlobalTheory.CompanionTheory.Ar.LieSigma.lieModel_fibre X t.G L z B.carrier MB σ
+  obtain ⟨Mσ', hMσ'⟩ := _root_.GlobalTheory.CompanionTheory.Ar.LieSigma.lieModel_fibre (Sp (𝓞 L)) t'.G L (𝟙 _) B'.carrier MB' σ
   have hb : spMap (σ.comp (algebraMap (𝓞 L) L)) ≫ z = spMap (σ.comp e₂) ≫ z₁ := by
     rw [← spComp (algebraMap (𝓞 L) L) σ, ← spComp e₂ σ, Category.assoc, Category.assoc, hz]
   have hb' : spMap (σ.comp (algebraMap (𝓞 L) L)) ≫ 𝟙 _ = spMap σ ≫ spMap (algebraMap (𝓞 L) L) := by

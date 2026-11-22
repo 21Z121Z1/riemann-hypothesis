@@ -142,7 +142,7 @@ theorem fibStr : ∀ (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] 
     IsSmoothChar μ → Nonempty ((omegaOn a b μ {κ}).Equiv (indSnd e (fibRep a c d μ κ))) := by
   intro k _ _ _ _ a b c d _ _ _ _ _ _ _ _ e κ hκ μ hμ
   obtain ⟨_, _⟩ := SplitWeil.Model.secondCountable_and_t2_local_field (k := k)
-  obtain ⟨E, hE⟩ := GlobalTheory.T.schwartzBruhat_sweep_smoothly_induced (GL b k) (RankIn k a b {κ}) (RankIn k a c {κ})
+  obtain ⟨E, hE⟩ := _root_.GlobalTheory.SBInduced.sb_induced (GL b k) (RankIn k a b {κ}) (RankIn k a c {κ})
     (SB (RankIn k a c {κ})) (lAct {κ}) (lAct_one _) (lAct_mul _) (continuous_lAct _)
     (topEmbR e) (isClosedEmbedding_topEmbR e) (parab k (two e)) (KO k b) SplitFlip.isCompact_KO
     (exists_topEmbR e hκ)

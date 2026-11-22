@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFlagFrame
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntOIsLocalRing
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsBlockMetricDiagForm
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SuccessiveMinimaPositiveNorms
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UniqueIntegralLiftNormPInverseStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UniqueIntegralLiftNormPInverse
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTangentPresentationPrimeStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHomogeneousInvariantsNorms
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFiniteExtensionSplittingTorsion
@@ -222,7 +222,7 @@ theorem wedge_norm_max : HTBoundSt → ∀ (E : Type) [Field E] [NumberField E] 
     by_cases hp : p = q
     · subst hp
       rw [decide_eq_true rfl]
-      exact GlobalTheory.T.unique_integral_lift_norm_p_inverse hHT E H X t p ℂ_[p] (by rw [hn, Padic.norm_p]) _ (ext_intO hX _) g _
+      exact _root_.GlobalTheory.HTLevel.mem_latHT_iff hHT E H X t p ℂ_[p] (by rw [hn, Padic.norm_p]) _ (ext_intO hX _) g _
         (isTanBasis_map t y he') n (fun j i => y (h j i)) (hh ℂ_[p] y).1 (hh ℂ_[p] y).2 b w hw
     · rw [decide_eq_false hp]
       have h1 : ‖(q : ℂ_[p])‖ = 1 := by

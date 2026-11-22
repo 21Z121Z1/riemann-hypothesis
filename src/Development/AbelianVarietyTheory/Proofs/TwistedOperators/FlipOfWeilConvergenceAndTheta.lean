@@ -55,23 +55,23 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteDimensiona
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspidalListedTopForms
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FinCoefMultT
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsAutFunSmRealProd
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsDualFrameSpanUnitaryRepresentationStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsDualFrameSpanUnitaryRepresentation
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesModelAdjointEqInvFiniteDimensional
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOfInnerSmooth
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealPlacePointCommuteOfNePlace
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsSmoothAutomorphicFunctionTranslateAtRealPlace
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOnAtTau
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ModelTypeFormExpandsAlongDualFrame
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExpandPiOfExpandEachStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExpandPiOfExpandEach
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SumProdUpdateRegroup
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftVerticalCuspidalSum
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspidalAlongRightGridArrows
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspidalAlongDownGridArrows
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GivenPathRepresentationFinite
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocalFlipStageIsTensorPlaceDepth
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridSquareFlipSmallRouteEqInvSmulBigRouteStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridSquareFlipSmallRouteEqInvSmulBigRoute
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridPathCutAtSquareSwapRoute
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GivenOppositeGridPathsAndDeterminedByEdgesStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GivenOppositeGridPathsAndDeterminedByEdges
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FlippedFiniteTensorOfRepresentingOppositePathStatement
 
 noncomputable section
@@ -161,7 +161,7 @@ theorem flipAt_of (hL : R.toLevCh.Is A.μ0) (ch : Choice R)
     induction k with
     | zero =>
       intro _
-      obtain ⟨⟨h1, h2⟩, -, -⟩ := GlobalTheory.T.given_opposite_gridPaths_and_determined_by_edges D.R.m t
+      obtain ⟨⟨h1, h2⟩, -, -⟩ := _root_.GlobalTheory.FlipPaths.given_opp_paths D.R.m t
       refine ⟨GlobalTheory.FunObj.givenPath t D.R.m, h1, by simpa using h2, τg, hRg, fun M hM y => ?_⟩
       obtain ⟨a, b⟩ := hg M hM y
       refine ⟨a, ?_⟩
@@ -203,7 +203,7 @@ theorem flipAt_of (hL : R.toLevCh.Is A.μ0) (ch : Choice R)
             (((flipOrder D.R.m).take k).foldl (fun γ x => GlobalTheory.SplitFlip.flipPath x.1 x.2 γ) (GlobalTheory.SplitFlip.givenPath D.R.m)) := e2
         rw [← e3]
         exact this
-      obtain ⟨τ', hR', hF⟩ := GlobalTheory.T.gridSquareFlip_smallRoute_eq_inv_smul_bigRoute hL ch.W ch.S.B ch.rm t x.1 x.2 hi hj _ (hK _ _ t) (hA t ⟨x.1, hi⟩ ⟨x.2, hj⟩)
+      obtain ⟨τ', hR', hF⟩ := _root_.GlobalTheory.FlipRun.oneFlip hL ch.W ch.S.B ch.rm t x.1 x.2 hi hj _ (hK _ _ t) (hA t ⟨x.1, hi⟩ ⟨x.2, hj⟩)
         A Bp hA' hB' (GlobalTheory.FlipRun.flipsPolE ch.rm ((flipOrder D.R.m).take k) Pg) τ (fun w => (S k w).tensor) hT hTb hR
       refine ⟨(A.comp (routeBig t x.1 x.2)).comp Bp, hN, ?_, τ', ?_, fun M hM y => ?_⟩
       · rw [hNe, hedge, htake, List.foldl_append]; rfl
@@ -223,7 +223,7 @@ theorem flipAt_of (hL : R.toLevCh.Is A.μ0) (ch : Choice R)
         exact (mul_inv _ _).symm.trans (by rw [mul_assoc])
   obtain ⟨p, hp, hedge, τ, hR, hI⟩ := key (D.R.m ^ 2) le_rfl
   have htk : (flipOrder D.R.m).take (D.R.m ^ 2) = flipOrder D.R.m := List.take_of_length_le (by rw [hlen])
-  obtain ⟨-, ⟨h1, h2⟩, h3⟩ := GlobalTheory.T.given_opposite_gridPaths_and_determined_by_edges D.R.m t
+  obtain ⟨-, ⟨h1, h2⟩, h3⟩ := _root_.GlobalTheory.FlipPaths.given_opp_paths D.R.m t
   have hp' : p = oppPath t D.R.m := h3 p _ hp h1 (by rw [hedge, h2, htk]; exact (canFlip_flipOrder D.R.m).2.2)
   subst hp'
   have hTf : (fun w => (S (D.R.m ^ 2) w).tensor) = Tflip ch.W ch.S.B t Φ := by

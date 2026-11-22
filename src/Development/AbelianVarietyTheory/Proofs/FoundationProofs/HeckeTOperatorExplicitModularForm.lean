@@ -3,8 +3,8 @@ import Development.AbelianVarietyTheory.Definitions.Foundations.PetEqRelIndexMul
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SlashRatIsBoundedAtGamma1InterGamma0Level
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MdifferentiableHeckeOperatorsExplicit
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeTSlashInvariant
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeUOperatorExplicitEqSumSlashStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PowSmulHeckeVOperatorExplicitEqSlashDiagStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeUOperatorExplicitEqSumSlash
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PowSmulHeckeVOperatorExplicitEqSlashDiag
 open UpperHalfPlane ModularForm CongruenceSubgroup MeasureTheory
 open scoped MatrixGroups ModularForm Manifold
 
@@ -39,8 +39,8 @@ theorem heckeT_modularForm : ∀ (N l q : ℕ) (k : ℤ) (σ : SL(2, ℤ)), 0 < 
     exact _root_.GlobalTheory.HkInv.heckeT_slash_invariant N l q k σ ⇑f hN hq hql hσ hinv A hA
   · exact (_root_.GlobalTheory.Hk.hecke_mdiff q k σ ⇑f hq0 f.holo').2.2
   · intro c hc
-    have hsum := GlobalTheory.T.heckeUOperatorExplicit_eq_sum_slash q k (⇑f) hq0
-    have hv := GlobalTheory.T.pow_smul_heckeVOperatorExplicit_eq_slash_diag q k ((⇑f) ∣[k] σ) hq0
+    have hsum := _root_.GlobalTheory.Hk.uOp_eq_sum_slash q k (⇑f) hq0
+    have hv := _root_.GlobalTheory.Hk.smul_vOp_eq_slash q k ((⇑f) ∣[k] σ) hq0
     show c.IsBoundedAt (heckeT k q σ ⇑f) k
     unfold heckeT
     rw [hsum, hv]

@@ -3,9 +3,9 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TestGridCommonDa
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MultiplicityValuesContinuousBoundedHeckeConj
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ChainParSucc
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TransferOn
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdjointExchangeLawsThetaHeisenbergStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdjointExchangeLawsThetaHeisenberg
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CoreChainPreStepsExistOfDepthCongruenceStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SelfDualLatticeChangeOfLatticeLawsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SelfDualLatticeChangeOfLatticeLaws
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TestGridStageLatticesPropertiesProof
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EvenRankThetaChainWeilDatumExtendsToStep
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.KFiniteSpanLeSpanRealIntertwinerValues
@@ -44,8 +44,8 @@ theorem chainEx (hDS : GlobalTheory.Published.DiscreteSeriesCover) (hHC : Global
   have hCM' := hCM D hq T L μ0 hL sc G W Mv hM
   have hStep := _root_.GlobalTheory.EvenOnto.StepExists.stepEx hDS hHC hCR hCW D
   have hConj := _root_.GlobalTheory.EvenOnto.ConjVal.values_conj_hecke hCR D
-  have hEx := GlobalTheory.T.adjointExchange_laws_thetaHeisenberg D
-  have hRL := GlobalTheory.T.selfDualLattice_changeOfLattice_laws D
+  have hEx := _root_.GlobalTheory.ExchPf.exchLaw D
+  have hRL := _root_.GlobalTheory.ReLatPf.reLatLaw_holds D
 
   have rapid : ∀ i, i ≤ D.R.m → ∀ r, IsCoreLat G i r → ∀ M (y : (gridStage G v i r M).CC (gridCom W)) w,
       GlobalTheory.Grow.RapidDec (G.V (.core i)) (GlobalTheory.EvenOnto.PiLocalization₂.val y w) := by

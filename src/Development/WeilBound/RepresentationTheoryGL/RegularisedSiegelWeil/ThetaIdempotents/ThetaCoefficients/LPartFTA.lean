@@ -2,7 +2,7 @@ import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.Singul
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinHeisenbergSchwartz
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.WeilSiegelTheta.HeisSch
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinVanishingStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinVanishing
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinUnfoldingSecondTerm
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.WeilSiegelTheta.Unfold2
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinCovariance
@@ -87,7 +87,7 @@ theorem theta_weyl_w {D : D7} {n : ℕ} {V : HSp D} {ψ χ θ μ ω} (hS : SetW 
   obtain ⟨i1, i2, i3, i4, i5, K, hK, hKc⟩ := lattice_Mx D V.rank n
   haveI : BorelSpace (Mx D V.rank n) := ⟨rfl⟩
   have hT := isHermND_gram V
-  obtain ⟨h1, h2⟩ := GlobalTheory.T.rationalAdelicMatrices_self_annihilator D V.rank n V.gram hT ψ hψ
+  obtain ⟨h1, h2⟩ := _root_.GlobalTheory.GramAnnih.ratMx_annihilator D V.rank n V.gram hT ψ hψ
   have hs := pairing_symm (n := n) hT ψ
   have hval : ∀ x, (ω g Φ).1 x = ∫ y, Φ.1 y * GlobalTheory.IndefiniteRowSideFullHecke.GramMatrixBlocks.pairing V.gram ψ y x ∂μ := fun x => by
     rw [hω.weyl g hg Φ x]
@@ -112,7 +112,7 @@ theorem theta_weyl_w {D : D7} {n : ℕ} {V : HSp D} {ψ χ θ μ ω} (hS : SetW 
   · simp only [hs _ y]
     unfold GlobalTheory.IndefiniteRowSideFullHecke.GramMatrixBlocks.pairing GlobalTheory.IndefiniteRowSideFullHecke.GramMatrixBlocks.trA GlobalTheory.IndefiniteRowSideFullHecke.GramMatrixBlocks.gramQ GlobalTheory.IndefiniteRowSideFullHecke.GramMatrixBlocks.mmul
     rw [Matrix.mul_add, Matrix.trace_add, map_add, AddChar.map_add_eq_mul]
-  · exact (GlobalTheory.T.schwartzBruhatAdelicMatrix_continuous_le_majorant D θ hθ _ n Φ.1
+  · exact (_root_.GlobalTheory.SchwartzMaj.continuous_and_le_maj D θ hθ _ n Φ.1
       (GlobalTheory.SchwartzPure.isSchwartzBruhat_of_mem_schwartzA D θ hθ _ n Φ.1 Φ.2)).1
   · simp only [← hval]
     exact (ratEquiv D V.rank n).summable_iff.1 (GlobalTheory.SiegelWeilLitCompare.summable_rat hθ (ω g Φ))
@@ -157,7 +157,7 @@ theorem partial_fourier_second_term {D : D7} {n : ℕ} {V : HSp D} {ψ χ θ μ 
     (ω γ Φ).1 0 = J ψ V μr (pull c Φ.1) b := by
   obtain ⟨hψ, -, hθ, ⟨𝓕, hcov⟩, -⟩ := id hS
   have hinv : mat γ * mat γ⁻¹ = 1 := mat_mul_inv' γ
-  rw [GlobalTheory.T.eisenstein_vanishing D ψ hψ θ hθ V n μ 𝓕 hcov (ω γ Φ).1 (ω γ Φ).2,
+  rw [_root_.GlobalTheory.CompanionTheory.EisZero.zero D ψ hψ θ hθ V n μ 𝓕 hcov (ω γ Φ).1 (ω γ Φ).2,
     ← _root_.GlobalTheory.CompanionTheory.EisUnfold.unfold2 D ψ hψ θ hθ V n r hr μ 𝓕 hcov μr hμr c a hc b Φ.1 Φ.2]
   refine integral_congr_ae (Filter.Eventually.of_forall fun y => ?_)
   simp only [← hmat]

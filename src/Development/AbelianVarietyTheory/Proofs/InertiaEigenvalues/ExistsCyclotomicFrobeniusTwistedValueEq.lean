@@ -5,7 +5,7 @@ import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 import Development.AbelianVarietyTheory.Definitions.Foundations.HTBasis
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExpStar
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowMulMemLatIff
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrKIsometricAndOneSubSurjectiveStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrKIsometricAndOneSubSurjective
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIntWeightsCompatibleRootsOfUnityLevels
 
 open Formalism.WeaklyAdmissibleFiltrations Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.MainNotions.N Formalism.MainNotions.LocalSituation GlobalTheory.Cyc GlobalTheory.ExpImage
@@ -67,7 +67,7 @@ theorem exists_pre (k : ℕ) (y : ↥(K0 K)) :
     refine ⟨x, ?_, ?_⟩
     · rw [pow_succ', AlgHom.mul_apply, hx]
     · rw [hn]
-      exact ((GlobalTheory.T.norm_frK_eq_and_exists_sub_pow_smul_frK_eq l P K).1 z).symm
+      exact ((_root_.GlobalTheory.ExpImage.frK_isometric_and_one_sub_surjective l P K).1 z).symm
 
 theorem norm_int_mul {z : ℤ} {x : ↥(K0 K)} (hx : ‖(x : Om l)‖ ≤ 1) :
     ‖(((z : ↥(K0 K)) * x : ↥(K0 K)) : Om l)‖ ≤ 1 := by
@@ -127,8 +127,8 @@ theorem exists_cycVal_eq (l : ℕ) [Fact l.Prime] (P : LocPrime l) (K : FinExt l
   · subst hj1
     simp only [if_true] at h1 h2
     obtain ⟨ν, g1, g2⟩ := exists_minus_one P hjs
-    obtain ⟨d, hd, hdc⟩ := (GlobalTheory.T.norm_frK_eq_and_exists_sub_pow_smul_frK_eq l P K).2 (e + 1) (by omega) (frK P K c)
-      (by rw [(GlobalTheory.T.norm_frK_eq_and_exists_sub_pow_smul_frK_eq l P K).1]; exact hc1)
+    obtain ⟨d, hd, hdc⟩ := (_root_.GlobalTheory.ExpImage.frK_isometric_and_one_sub_surjective l P K).2 (e + 1) (by omega) (frK P K c)
+      (by rw [(_root_.GlobalTheory.ExpImage.frK_isometric_and_one_sub_surjective l P K).1]; exact hc1)
     obtain ⟨x, hx, hxn⟩ := exists_pre P K (s - 1) c
     obtain ⟨y, hy, hyn⟩ := exists_pre P K (s - 1) ((l : ↥(K0 K)) ^ e * d)
     obtain ⟨t, rfl⟩ : ∃ t, s = t + 1 := ⟨s - 1, by omega⟩

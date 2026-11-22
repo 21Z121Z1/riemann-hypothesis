@@ -5,9 +5,9 @@ import Formalism.HarderNarasimhan.ShiftInvariance
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.EigenfunctionFiniteCoefficients
 import Formalism.RealPlaceAnalysis.FinalF
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.HermitianFormUnitaryOneOne
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DerivativesCoefficientsConvolutionFixedVectorStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DerivativesCoefficientsConvolutionFixedVector
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsSmoothCompactSupportFixLowestKType
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GelfandInvariantCommRightTranslationStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GelfandInvariantCommRightTranslation
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.KMapLowestKTypeSubspaceEqScalar
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S Formalism.REAL Formalism.QuantumDeterminants GlobalTheory.Count GlobalTheory.Dec GlobalTheory.DSId
 open scoped InnerProductSpace ComplexOrder ContDiff
@@ -64,7 +64,7 @@ theorem gelf_congr {ε : Fin n → Bool} {f f' : Matrix (Fin n) (Fin n) ℂ → 
 theorem centre_scalar_low : ∀ (n : ℕ) (ε : Fin n → Bool) (lam : Fin n → ℝ) (H : Type) [NormedAddCommGroup H] [InnerProductSpace ℂ H] [CompleteSpace H] (σ : Matrix (Fin n) (Fin n) ℂ → (H →L[ℂ] H)), IsURepOn (UJset ε) σ → IsKTypeOf ε σ (lowK ε lam) (lowKSub ε lam σ) → ∃ c : ℕ → ℂ, ∀ s ∈ lowKSub ε lam σ, ∀ u : H, SmoothOnG ε (fun g => ⟪u, σ g s⟫_ℂ) ∧ ∀ m, ∀ g ∈ UJset ε, gelf ε m (fun x => ⟪u, σ x s⟫_ℂ) g = c m * ⟪u, σ g s⟫_ℂ := by
   intro n ε lam H _ _ _ σ hσ hK
   obtain ⟨α, hα, hαc, hfix⟩ := _root_.GlobalTheory.exists_smooth_fix_lowKSub n ε lam H σ hσ hK
-  have hD := fun (s : lowKSub ε lam σ) => GlobalTheory.T.derivatives_coefficients_convolutionFixed_vector n ε H σ α s hσ hα hαc (hfix s s.2)
+  have hD := fun (s : lowKSub ε lam σ) => _root_.GlobalTheory.DerivConv.derivConv n ε H σ α s hσ hα hαc (hfix s s.2)
   have hsm : ∀ (s : lowKSub ε lam σ) (u : H), SmoothOnG ε (fun g => ⟪u, σ g s⟫_ℂ) := fun s => (hD s).1
   have h1 : (1 : Matrix (Fin n) (Fin n) ℂ) ∈ UJset ε := by simp [UJset, inUJ]
   have hone : ∀ v, σ 1 v = v := fun v => by rw [hσ.1.1]; rfl
@@ -96,7 +96,7 @@ theorem centre_scalar_low : ∀ (n : ℕ) (ε : Fin n → Bool) (lam : Fin n →
     refine ext_inner_left ℂ fun u => ?_
     change ⟪u, C m s'⟫_ℂ = ⟪u, σ k (C m s)⟫_ℂ
     rw [hC1, ← hC m s u k hkU, ← Matrix.one_mul k,
-      ← GlobalTheory.T.gelfandInvariant_comm_rightTranslation n ε m _ k 1 (hsm s u) hkU h1]
+      ← _root_.GlobalTheory.Dec.GelfAd.gelf_right n ε m _ k 1 (hsm s u) hkU h1]
     refine gelf_congr (fun g hg => ?_) m 1 h1
     rw [e, hmul g hg k hkU]
   choose c hc using key

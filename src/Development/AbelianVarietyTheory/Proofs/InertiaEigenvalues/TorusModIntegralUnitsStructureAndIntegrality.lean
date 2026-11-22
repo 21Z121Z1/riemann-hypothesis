@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnitLemmaGr
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LinearDescent
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ValsAtApply
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsReducedOfLieReg
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSurjectiveValuationIsIntegralIffNonnegStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSurjectiveValuationIsIntegralIffNonneg
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsIntegralIffForallMaximalSpectrumResidueStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitPrescribedResidueReducedFiniteAlgebra
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsIntegralResidueComapInvolutionIff
@@ -30,7 +30,7 @@ theorem torus_mod_intUnits_structure : ∀ (K : UQ) (B : InvAlg K), B.LieReg →
     haveI : FiniteDimensional K.E (B.A ⧸ m.asIdeal) :=
       Module.Finite.of_surjective (Ideal.Quotient.mkₐ K.E m.asIdeal).toLinearMap
         (Ideal.Quotient.mkₐ_surjective K.E m.asIdeal)
-    exact GlobalTheory.T.exists_surjective_valuation_isIntegral_iff_nonneg K (B.A ⧸ m.asIdeal)
+    exact _root_.GlobalTheory.UnitLemma.exists_surjective_valuation_isIntegral_iff K (B.A ⧸ m.asIdeal)
   choose v hvs hvi using hv
   let w : MaximalSpectrum B.A → B.Aˣ →* Multiplicative ℤ := fun m =>
     (v m).comp (Units.map (Ideal.Quotient.mk m.asIdeal : B.A →* B.A ⧸ m.asIdeal))

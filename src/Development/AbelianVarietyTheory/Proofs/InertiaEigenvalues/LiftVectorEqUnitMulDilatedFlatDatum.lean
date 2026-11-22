@@ -33,7 +33,10 @@ import Formalism.LocalRingCardinality.DataTies
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemOfForallRingEquivFixed
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicCuspSectionsLeSpanAlgebraicCuspForms
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KapTopLastPosRun
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IdempotentSumSelfDualFramesBoundStatement
+import Development.AbelianVarietyTheory.Definitions.HeightFunctions.FiniteDimensionalOfSz
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LFunctionPositiveConductorFourEight
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.CurveOverOfRayField
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.WeberInvariantTorsionValuesSubsetRayClassField
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaPairCharactersAtLevel
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.UnderEqOfConj
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ThetaAtEqSumHeisOfFourierSum
@@ -254,7 +257,7 @@ theorem exists_reps_pairing : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0
       refine ⟨isIntM_add h1 (hmem u hu).2, fun PP hPP => ?_⟩
       rw [redM_add PP h1 (hmem u hu).2, h2 PP hPP, neg_add_cancel]
   · exact _root_.GlobalTheory.HalfAdjInt.frMapAdj_int_of_half D (Vc D i) (Wc D i) (R.ΛV i) (R.ΛW i) (R.βV i) (R.βW i) sV sW hcV.1 hcW.1 (R.Q t) eQ heQ hP x h hx
-  · exact GlobalTheory.T.idempotent_sum_self_dual_frames_bound D (Vc D i) (Wc D i) (R.ΛV i) (R.ΛW i) (R.βV i) (R.βW i) sV sW hcV.1 hcW.1 (R.Q t) eQ heQ hP x hx h
+  · exact _root_.GlobalTheory.HalfAdjLattice.mem_latO_of_adj_int D (Vc D i) (Wc D i) (R.ΛV i) (R.ΛW i) (R.βV i) (R.βW i) sV sW hcV.1 hcW.1 (R.Q t) eQ heQ hP x hx h
 
 end GlobalTheory.LiftFlatModel
 

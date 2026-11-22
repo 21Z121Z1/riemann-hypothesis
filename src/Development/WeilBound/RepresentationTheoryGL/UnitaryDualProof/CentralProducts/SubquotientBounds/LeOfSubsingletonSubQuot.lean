@@ -1,7 +1,9 @@
 import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.CentralProducts.TopProdD
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeibnizOrderOfExactSequences
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsNontrivialDerivative
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedJacquetIteratedPhiEquivStatement
+import Mathlib
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedJacquetIteratedPhiEquiv
+import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.MirabolicDerivatives.UnipotentDerivatives.DerUnipLeUnipB
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSmoothIterPhi
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdjacentQuotientOfTwoSegment
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsCIndValue
@@ -202,7 +204,7 @@ theorem isTop_pos (ψ : AddChar k Circle) (hc : Continuous ψ) (h1 : ψ ≠ 1) {
   obtain ⟨n0, hn0, hnt⟩ := GlobalTheory.CompanionTheory.BZMirDer.NonZero.exists_derivative_nontrivial k ψ hc h1 m π.V
     (resM k π.ρ).ρ (GlobalTheory.CompanionTheory.BZCuspPair.isSmooth_resM hs) inferInstance
   obtain ⟨j, rfl⟩ := Nat.exists_eq_add_of_le hn0
-  obtain ⟨E⟩ := GlobalTheory.T.twisted_jacquet_iterated_phi_equiv k ψ n0 j (resM k π.ρ)
+  obtain ⟨E⟩ := _root_.GlobalTheory.CompanionTheory.BZMir.iterPhi_twJacquet_equiv k ψ n0 j (resM k π.ρ)
   by_contra hlt
   have hsub := T.2.2 n0 (j + 1) rfl (by omega)
   have : Nontrivial (TwJacquet (iterPhi k ψ j (resM k π.ρ)).ρ (MirUin k n0) 1) := @Equiv.nontrivial _ _ E.toEquiv hnt

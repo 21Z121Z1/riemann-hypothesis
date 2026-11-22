@@ -10,7 +10,12 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalUnipotentGro
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MovedTermLatticeIsGlobalTermPhase
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RatLinkPoints
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NumberFieldLatticeDeterminedByLocalLattices
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GlobalHermitianFramesRationalWitnessesPhaseStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GlobalHermitianFramesRationalWitnessesPhase
+import Formalism.SharpRestriction.CuspSpanNormBounds.FractionFieldToGenericStalkAlgebraMapEq
+import Formalism.SharpRestriction.CuspSpanNormBounds.PsiEDef
+import Development.AbelianVarietyTheory.Definitions.Foundations.IsHermND
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementReferenceCompactSubgroup
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GFrames
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalExtend
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianLatticeDatumEquivariantFlagIsometries
 import Formalism.SharpRestriction.CuspSpanNormBounds.CayleyDegreeNondegeneracy.FibreCountOfPositions
@@ -66,8 +71,8 @@ theorem term_eq_map {A : Places F E sig} {r k : ℕ} (G : GFrames A r k) (hk : 4
     {Λ Γ : G.Lt} (hΛ : G.IsTerm d Λ) (hΓ : G.IsTerm d Γ) :
     (∃ x ∈ G.N, Γ = Λ.map ((x : G.V →ₗ[E] G.V).restrictScalars (𝓞 E))) ∧
       ∃ x ∈ G.N', Γ = Λ.map ((x : G.V →ₗ[E] G.V).restrictScalars (𝓞 E)) := by
-  obtain ⟨⟨n0, hn0, n0', hn0', h0⟩, -⟩ := GlobalTheory.T.globalHermitianFrames_rational_witnesses_phase A r k G hk d Λ hΛ
-  obtain ⟨⟨n1, hn1, n1', hn1', h1⟩, -⟩ := GlobalTheory.T.globalHermitianFrames_rational_witnesses_phase A r k G hk d Γ hΓ
+  obtain ⟨⟨n0, hn0, n0', hn0', h0⟩, -⟩ := _root_.GlobalTheory.HL.GlobalWit.global_witnesses A r k G hk d Λ hΛ
+  obtain ⟨⟨n1, hn1, n1', hn1', h1⟩, -⟩ := _root_.GlobalTheory.HL.GlobalWit.global_witnesses A r k G hk d Γ hΓ
   refine ⟨⟨n1 * n0⁻¹, G.N.mul_mem hn1 (G.N.inv_mem hn0), eq_map_of_local A hΛ.1 hΓ.1 _ fun p => ?_⟩,
     ⟨n1' * n0'⁻¹, G.N'.mul_mem hn1' (G.N'.inv_mem hn0'), eq_map_of_local A hΛ.1 hΓ.1 _ fun p => ?_⟩⟩
   · obtain ⟨m0, -, e0⟩ := hn0 p

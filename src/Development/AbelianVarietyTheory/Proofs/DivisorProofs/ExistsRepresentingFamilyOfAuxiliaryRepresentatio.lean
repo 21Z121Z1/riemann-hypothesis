@@ -25,7 +25,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieConditionDescend
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieMultiplicitiesGeometricPointsDescend
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeometricTateLevelConditionDescendsGaloisCover
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorSymplecticLevelFamilyUniversalProper
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSymplecticSimilitudeActionOnLevelFamilyStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSymplecticSimilitudeActionOnLevelFamily
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorSimilitudeFixingPointEqOneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymplecticLevelOverCyclotomicStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalSymplecticSimilitudeClassifyingMapsStatement
@@ -180,7 +180,7 @@ theorem exists_representing_family_of_level_structure : ∀ (p : ℕ) [Fact p.Pr
   intro p _ D R _ _ b N M e hN hNp hM hodd hMp hep hMe hperf hrep
   obtain ⟨X, s, s₁, u, lev, hlev, hq, huniv⟩ := hrep
   haveI : NeZero M := ⟨by omega⟩
-  obtain ⟨ρ, h1, hmul, hact⟩ := GlobalTheory.T.exists_symplecticSimilitude_action_on_levelFamily p D R b N _ M (by omega) X s s₁ u lev hlev huniv
+  obtain ⟨ρ, h1, hmul, hact⟩ := _root_.GlobalTheory.UPel.HT.SympAct.exists_sympActs p D R b N _ M (by omega) X s s₁ u lev hlev huniv
   exact exists_repFam_of_levelCover p D R b N hN hNp X s u _ ρ hq h1 hmul (fun a => (hact a).1)
     (fun a => let ⟨m, _⟩ := (hact a).2.2; ⟨m⟩)
     (GlobalTheory.T.harrisTaylor_similitude_fixing_point_eq_one p D R b N _ M hN hNp (by omega) X s s₁ u lev hlev ρ hact)

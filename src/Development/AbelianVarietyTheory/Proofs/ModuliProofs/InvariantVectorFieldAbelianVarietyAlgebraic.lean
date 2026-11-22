@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsLocalDerivationOfDualNumberThickeningStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsLocalDerivationOfDualNumberThickening
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TopLePreimageOfValAtNeZero
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.IsSymm
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaUnifAV
@@ -97,7 +97,7 @@ theorem exists_locDer_of_isDiff {g : ℕ} (A : Over (Sp ℂ)) [GrpObj A] {L : LB
     have h1 : j' ≫ (ρ' * v') = 𝟙 A := by rw [comp_mul_monObj, hj1, hj2, _root_.mul_one]
     exact congrArg (fun t => t.left) h1
   have hΦp : Φ ≫ A.hom = π ≫ spMap (algebraMap ℂ (DualNumber ℂ)) := Over.w (ρ' * v')
-  obtain ⟨d, hd1, hd2⟩ := GlobalTheory.T.exists_localDerivation_of_dualNumber_thickening A.left _ A.hom π ρ j (IsPullback.of_hasPullback _ _)
+  obtain ⟨d, hd1, hd2⟩ := _root_.GlobalTheory.KS.EpsDer.exists_locDer A.left _ A.hom π ρ j (IsPullback.of_hasPullback _ _)
     (pullback.lift_fst _ _ _) (pullback.lift_snd _ _ _) ℂ (algebraMap ℂ (DualNumber ℂ)) A.left A.hom
     (𝟙 A.left) Φ hjΦ hΦp
   refine ⟨d, ?_, ?_⟩

@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpMapFactorResidueF
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsReducedAlgebraOfSmoothOfIsNoetherianRing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIsoOfIsIsoOnGeometricFibresOfSmooth
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftImmersionOfReduced
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedPointRangeEqFixedGroupImageStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedPointRangeEqFixedGroupImage
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -59,7 +59,7 @@ theorem Emb.pullback_iso_of_closed (R : Type) [CommRing R] [IsLocalRing R] (S : 
   haveI : IsReduced (pullback G'.hom t) := GlobalTheory.isReduced_of_smooth_of_isReduced (pullback.snd G'.hom t)
   have hrj : Set.range (l ≫ E.f) ⊆ Set.range E.j := by
     rintro _ ⟨w, rfl⟩
-    obtain ⟨y, hy⟩ := (GlobalTheory.T.closedPoint_range_eq_fixedGroup_image R S π G' E).1 (l w) (by
+    obtain ⟨y, hy⟩ := (_root_.GlobalTheory.Mum.Emb.range_closed R S π G' E).1 (l w) (by
       have e1 : E.H.ι (l w) = pullback.fst G'.hom t w := by rw [← Scheme.Hom.comp_apply, hl]
       rw [e1]; exact hclosed w)
     exact ⟨y, by rw [Scheme.Hom.comp_apply, hy]⟩

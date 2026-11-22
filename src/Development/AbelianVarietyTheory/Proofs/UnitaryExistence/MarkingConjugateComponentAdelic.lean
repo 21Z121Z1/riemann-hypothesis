@@ -5,7 +5,7 @@ import Formalism.LocalToGlobal.ProjectiveLattices.ThClassPins
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.MarkingConj
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIsSplitPeriod
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsDatumRankOne
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.RationalPointsAdelicUnitaryEqUnitaryStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.RationalPointsAdelicUnitaryEqUnitary
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicElementLatticeFullAndCompletion
 import Formalism.LocalToGlobal.ProjectiveLattices.ParCanon
 import Formalism.LocalToGlobal.ProjectiveLattices.ExistsParameterConditions
@@ -254,7 +254,7 @@ theorem exists_of_matched {D : D7} (V : HSp D) (g g' δ : GA D V) (δ' : GL (Fin
       (finHom V u).1.det * ((1 : Af D.host.F) ⊗ₜ[D.host.F] S.det) - 1 ∈
         GlobalTheory.AdLat.hat1 D.host.F ((algebraMap (𝓞 D.host.E) D.host.E) '' (I : Set (𝓞 D.host.E))) := by
   obtain ⟨m1, -, -, m4⟩ := _root_.GlobalTheory.Member.latG_move D V
-  obtain ⟨-, -, -, -, r5⟩ := GlobalTheory.T.rational_points_adelicUnitary_eq_unitary D V
+  obtain ⟨-, -, -, -, r5⟩ := _root_.GlobalTheory.Member.RatElt.rational_elements D V
   obtain ⟨m1, m2⟩ := m1 δ δ' g hδ
   have hL : latG V g' = latG V (δ * g) := by
     ext v
@@ -334,7 +334,7 @@ theorem marking_of_conjugate : ∀ (D : D7) (H : ReciprocityTheory.ChartRestrict
       rw [(hC.modelW k).2] at this
       simp only [cc, map_neg] at this ⊢
       rw [this]) (hmod k) (hmod (π k)) hiso
-  obtain ⟨r1, -, r3, -⟩ := GlobalTheory.T.rational_points_adelicUnitary_eq_unitary D V
+  obtain ⟨r1, -, r3, -⟩ := _root_.GlobalTheory.Member.RatElt.rational_elements D V
   obtain ⟨δ, hδ⟩ := r3 δ' hδ1
   have := (C.F.Di k).fin
   obtain ⟨hp, hq⟩ := GlobalTheory.CM.LatData.finrank_lat hP (by rw [(C.F.sig k).1, (C.F.sig k).2]; exact hty) one_pos

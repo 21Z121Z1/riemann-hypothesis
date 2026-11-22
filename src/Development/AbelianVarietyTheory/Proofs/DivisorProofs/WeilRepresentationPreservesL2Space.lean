@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BicharacterFourierT
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelParabolicWeylElementGenerateUnitary
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSelfDualBicharacterPairingOfSymmBilinForm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralSqSiegelParabolicOperatorEqStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralFourSqStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralFourSq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianMatrixColumnPairingAlgebraicProperties
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuadExtTopology
 open MeasureTheory Matrix GlobalTheory.KSp GlobalTheory.SplitUnitary
@@ -49,7 +49,7 @@ theorem weil_representation_preserves_L2 : ∀ (F : Type) [Field F] [CharZero F]
     have := _root_.GlobalTheory.KSp.isPair_addChar_form F (Matrix α ν E) ψ hψ hψ1 hψne β hβs hβn
     simpa only [hβ] using this
   obtain ⟨C, hC, hfi⟩ := GlobalTheory.T.bicharacterFourierTransform_twice_eq_pos_smul_reflect (Matrix α ν E) hgood μ _ hpair
-  have hpl := GlobalTheory.T.lintegral_four_sq_eq_mul_of_inversion (Matrix α ν E) hgood μ _ hpair C hC hfi
+  have hpl := _root_.GlobalTheory.KSp.Planch.lintegral_four_sq (Matrix α ν E) hgood μ _ hpair C hC hfi
   have hw : ∀ φ : SB (Matrix α ν E), N (ω (weyl c ν) φ) = (‖κ‖ₑ ^ 2 * ENNReal.ofReal C) * N φ := by
     intro φ
     simp only [N]

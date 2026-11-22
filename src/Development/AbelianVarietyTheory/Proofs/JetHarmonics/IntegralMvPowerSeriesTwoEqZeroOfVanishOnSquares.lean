@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Jets.PowerSeriesHasSumAt
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PowerSeriesEvalTsumUnitDiscPropertiesAlt
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NormCoeffIntegralPowerSeriesLeProdZerosStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NormCoeffIntegralPowerSeriesLeProdZeros
 
 open GlobalTheory.ConvSer
 
@@ -25,7 +25,7 @@ theorem integralPowerSeries_eq_zero_of_vanish_on_points (K : Type) [NormedField 
   have key : ‖PowerSeries.coeff k h‖ * r ^ k ≤ 0 := by
     refine ge_of_tendsto hT ?_
     filter_upwards [Filter.eventually_ge_atTop m] with n hn
-    exact (GlobalTheory.T.norm_coeff_integral_powerSeries_le_prod_zeros K h (G n) hh (fun x hx => ⟨(hG n x hx).2, hz n hn x hx⟩)).1 r hr hr1
+    exact (_root_.GlobalTheory.ConvSer.norm_coeff_le_prod_zeros K h (G n) hh (fun x hx => ⟨(hG n x hx).2, hz n hn x hx⟩)).1 r hr hr1
       (fun x hx => (hG n x hx).1) k
   have hp : 0 < r ^ k := pow_pos hr k
   have h0 : ‖PowerSeries.coeff k h‖ ≤ 0 := by

@@ -5,13 +5,13 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsUnitOfStableLi
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ClosEqZeroOfMulMemStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.KerPEqSpanBeta
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FilPEqSpanBetaDPow
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AinfAdjoinBetaImageDivBetaPowStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AinfAdjoinBetaImageDivBetaPow
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BetaImageDeRhamPlusDvdOfLAdicResidues
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DivPowerEnvelopeMemAinfAdjoinBeta
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AcrisMemBetaAdicClosureAinfAdjoinBeta
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LogPeriodCongruenceBdr
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsLogOnePlusKerThetaDeRhamPlusStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GaloisLogTeichmullerRatioEqAddKummerStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsLogOnePlusKerThetaDeRhamPlus
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GaloisLogTeichmullerRatioEqAddKummer
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsKummerFracCoboundaryFullGalois
 import Development.AbelianVarietyTheory.CrystallinePeriods.RingIface
 
@@ -57,7 +57,7 @@ theorem StLat.not_frac (l : ℕ) [Fact l.Prime] (Co : Core l) (ϖ : Per.Fl l)
     ring
   have hA := _root_.GlobalTheory.Pst.StLat.acris_mem_clos l Co.j Co.j_cris ϖ (_root_.GlobalTheory.Pst.StLat.acris0_le_sa l ϖ hϖ) hfil
   have hz := GlobalTheory.T.eq_zero_of_mem_clos_of_pow_mul_mul_mem_clos l (Fact.out : l.Prime) (isUnit_l_BdRp l) (betaD ϖ) hβ0 hsep (Sg ϖ)
-    (GlobalTheory.T.ainfAdjoinBetaImage_div_beta_pow l ϖ hϖ hker hfil) (_root_.GlobalTheory.Pst.StLat.betaD_dvd_of_res l ϖ hker hfil) u
+    (_root_.GlobalTheory.Pst.StLat.BetaDiv.Sg_div_betaD_pow l ϖ hϖ hker hfil) (_root_.GlobalTheory.Pst.StLat.betaD_dvd_of_res l ϖ hker hfil) u
     (_root_.GlobalTheory.Pst.StLat.log_trunc_pow l ϖ hker hfil u hu) (Co.j (ax * Co.t ^ r')) 0 (hA _) (by
       rw [pow_zero, one_mul, ← e3]; exact hA _)
   have hz2 : Co.ι (x * tt ^ (r + r')) = 0 := by
@@ -83,9 +83,9 @@ theorem StLat.kummer_not_frac : ∀ (l : ℕ) [Fact l.Prime] (P : LocPrime l) (A
     have := hr 0
     rw [lRoot_zero, map_natCast] at this
     exact this.trans (SubringClass.coe_natCast _ _).symm)
-  obtain ⟨u, hu⟩ := GlobalTheory.T.exists_logOnePlus_kerTheta_deRhamPlus l (beta ϖ) (by
+  obtain ⟨u, hu⟩ := _root_.GlobalTheory.Pst.LogExist.exists_isLogP l (beta ϖ) (by
     rw [_root_.GlobalTheory.Pst.StLat.ker_localizedTheta_eq_span_beta l ϖ hϖ]; exact Ideal.mem_span_singleton_self _)
-  have hg := GlobalTheory.T.galois_logTeichmullerRatio_eq_add_kummer l P Co hC.ζ ϖ hr hϖ u hu
+  have hg := _root_.GlobalTheory.Pst.StLat.gal_log l P Co hC.ζ ϖ hr hϖ u hu
   letI : Field P.R.BdR := (GlobalTheory.RegularRing.isField_of_tied T).toField
   set U := T.eD.symm (algebraMap (Per.BdRp l) (Per.BdR l) u) with hUdef
   have hct : ∀ g : GQ l, T.eD (P.ιB ((kummer P g : ℚ_[l]) • P.tB)) =

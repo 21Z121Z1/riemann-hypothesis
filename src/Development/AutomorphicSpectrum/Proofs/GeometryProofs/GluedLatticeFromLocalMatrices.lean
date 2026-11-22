@@ -5,7 +5,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsValues
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PlaceEqOneOfNotMem
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalIndexAtSinglePlaceStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalIndexFrameLogDetStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GlobalIndexFrameLogNormStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GlobalIndexFrameLogNorm
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GluedLatticeFiniteIndexStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GluedLatticeLocalizationStatement
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField Matrix Filter Topology
@@ -129,7 +129,7 @@ theorem logIdx_localFrames : ∀ (L : Type) [Field L] [NumberField L] (V : Type)
       rw [hfr]; rfl
     rw [e, hFg, Submodule.map_toAddSubgroup, Submodule.map_toAddSubgroup]
     exact gIdx_map _ hΦ _ _
-  obtain ⟨g1, g2, g3⟩ := GlobalTheory.T.global_index_frame_log_norm L n C hC
+  obtain ⟨g1, g2, g3⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.GlobDet.gIdx_frame L n C hC
   have hfin' : {v : FinitePlace L | ¬ UnitAt v (T v)}.Finite := hfin
   obtain ⟨a1, a2⟩ := GlobalTheory.T.glued_lattice_finite_index L n T hd hfin'
   rw [hidx, gIdx_add a1 a2 g1 g2, g3, gIdx_glued hfin'.toFinset T hd fun v hv => by

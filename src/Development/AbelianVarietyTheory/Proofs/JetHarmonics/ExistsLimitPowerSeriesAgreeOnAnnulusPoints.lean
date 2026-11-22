@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Jets.PowerSeriesHasSumAt
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NormCoeffIntegralPowerSeriesLeProdZerosStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NormCoeffIntegralPowerSeriesLeProdZeros
 
 open GlobalTheory.ConvSer Filter Topology
 
@@ -59,7 +59,7 @@ theorem exists_limit_of_agree_on_points : ∀ (K : Type) [NormedField K] [IsUltr
       unfold ev1 at h3 ⊢
       simp only [map_sub, sub_mul]
       rw [h1.tsum_sub h2, h3, sub_self]
-    have := (GlobalTheory.T.norm_coeff_integral_powerSeries_le_prod_zeros K _ (G n) hI hz).1 r hr hr1 (fun x hxn => (hx n x hxn).1) k
+    have := (_root_.GlobalTheory.ConvSer.norm_coeff_le_prod_zeros K _ (G n) hI hz).1 r hr hr1 (fun x hxn => (hx n x hxn).1) k
     rw [map_sub] at this
     rwa [le_div_iff₀ (by positivity)]
   have hlim : ∀ k, ∃ l, Tendsto (fun n => PowerSeries.coeff k (g n)) atTop (𝓝 l) := by

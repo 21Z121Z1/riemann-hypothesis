@@ -1,15 +1,15 @@
 import Development.AbelianVarietyTheory.Definitions.Divisors.HermSysHypOneLeLambdaZero
 import ReciprocityTheory.SemistableReduction.TorusL2CauchyInequality
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmulDetSpanSupLeDetSpanLatticeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmulDetSpanSupLeDetSpanLattice
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMaxIdealSmulMemOfLtOfRelIndexNeZeroStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexSupSpanSingletonEqAbsNormStatement
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexIdealSmulFractionalIdealEqAbsNormNumberF
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BasisDetIntegralSpanEqOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetSpanCommonDenominator
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermFamGramDetEqNormSqBasisDetMulStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermFamGramDetEqNormSqBasisDetMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinsumLogFinitePlaceEqNegLogAbsNorm
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinsumLogGaussAbsLeFractionalIdealIndexStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinsumLogGaussAbsLeFractionalIdealIndex
 open NumberField MvPolynomial ReciprocityTheory.MultiplicativeHeights ReciprocityTheory.GeometryOfNumbersTheory
 open GlobalTheory GlobalTheory.ChowHt GlobalTheory.Adelic GlobalTheory.HermTools GlobalTheory.HilbertSamuel GlobalTheory.HSChoice GlobalTheory.HSShort
 
@@ -59,7 +59,7 @@ theorem detSpan_relIndex_le : ∀ (F V : Type) [Field F] [NumberField F] [AddCom
   have hpA : p • A N₁ ≤ A N₀ := by
     rw [Submodule.smul_le]
     intro π hπ y hy
-    exact GlobalTheory.T.smul_detSpan_sup_le_detSpan_lattice F V d β N₀ u π (hpu π hπ) y hy
+    exact _root_.GlobalTheory.DetColon.smul_detSpan_sup_le F V d β N₀ u π (hpu π hπ) y hy
   have hp0 : p ≠ ⊥ := by
     rintro rfl; exact hpN (by simp)
   have hfr := _root_.GlobalTheory.FracIdealIndex.relIndex_smul_eq_absNorm F (A N₁) p hp0 hne1 ⟨c, hc0, fun y hy => hc y (hmono _ _ h1N hy)⟩
@@ -115,13 +115,13 @@ theorem finPart_sub_mean_le_deg : ∀ (F V : Type) [Field F] [NumberField F] [Ad
   have h1B : (1 : Submodule (𝓞 F) F) ≤ B := by
     rw [← hbase]
     exact Submodule.span_mono fun y ⟨w, hw, hy⟩ => ⟨w, fun i => hLM (hw i), hy⟩
-  have hgauss := GlobalTheory.T.finsum_log_gaussAbs_le_fractionalIdeal_index F τ g hg B δ hδ0 h1B hbdd hcoef'
+  have hgauss := _root_.GlobalTheory.GaussFrac.finsum_log_gaussAbs_le F τ g hg B δ hδ0 h1B hbdd hcoef'
   have hprod := _root_.GlobalTheory.ProdFormula.finsum_log_finitePlace_eq_neg_log_abs_norm F δ hδ0
   have hn : (0 : ℝ) < Module.finrank ℚ F := by exact_mod_cast Module.finrank_pos
 
   have hG : ∀ σ : F →+* ℂ, Real.log (nm.gram σ v).det.re = Real.log (Complex.normSq (σ δ)) + Real.log (nm.gram σ b).det.re := by
     intro σ
-    rw [GlobalTheory.T.hermFam_gram_det_eq_normSq_basis_det_mul F V nm σ r b v, ← hδ]
+    rw [_root_.GlobalTheory.GramChange.gram_det F V nm σ r b v, ← hδ]
     have hpos : 0 < (nm.gram σ ⇑b).det.re := by
       have := (nm.posDef σ r b b.linearIndependent).det_pos
       exact (Complex.pos_iff.mp this).1

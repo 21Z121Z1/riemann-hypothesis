@@ -20,10 +20,10 @@ import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.WeilDa
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.AdjointIsotropicDecomposition
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousIntegralCompactAutomorphicQuotientPara
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CompactAverageThetaFamilySmooth
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsJointlySmoothBiThetaHeisenbergDerivStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsJointlySmoothBiThetaHeisenbergDeriv
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergOneParamDerivOrthDecJoinedEqSum
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilOperatorFirstCommutesHeisenbergDerivativeSecStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergDerivWeilTranslateContinuousCombinatioStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilOperatorFirstCommutesHeisenbergDerivativeSec
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergDerivWeilTranslateContinuousCombinatio
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsCompactRealPointsOfDefiniteHermitianSpaceData
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.LevelADef
 
@@ -117,7 +117,7 @@ theorem isBiSmooth_avg (ha : IsWeilDatumO ψ A S χA χS oma) (hb : IsWeilDatumO
       obtain ⟨f1, f2, -⟩ := _root_.GlobalTheory.BiJoinDeriv.dLine_join D ψ hψ _ A S A' d G hG M hM hM0
       have c1 : Continuous ((fstH d S).comp M) := (continuous_fstH d S).comp hM
       have c2 : Continuous ((sndH d S).comp M) := (continuous_sndH d S).comp hM
-      obtain ⟨m, N, e, hN, hN0, he, hexp⟩ := GlobalTheory.T.heisenbergDeriv_weilTranslate_continuous_combination D ψ A S χA χS oma ha _ c1 f1
+      obtain ⟨m, N, e, hN, hN0, he, hexp⟩ := _root_.GlobalTheory.HeisLineComb.dLine_om_comb D ψ A S χA χS oma ha _ c1 f1
       have key : (fun k => dLine ψ _ S M (c k • join d S fun u v => oma (p k) (fun u' => G u' v) u)) =
           (∑ i, fun k => (c k * e i (p k)) • join d S fun u v =>
             oma (p k) (fun u' => dLine ψ A S (N i) (fun u'' => G u'' v) u') u) +
@@ -126,7 +126,7 @@ theorem isBiSmooth_avg (ha : IsWeilDatumO ψ A S χA χS oma) (hb : IsWeilDatumO
         rw [dLine_smul, (_root_.GlobalTheory.BiJoinDeriv.dLine_join D ψ hψ _ A S A' d _ (hT (p k)) M hM hM0).2.2]
         funext x
         simp only [Pi.smul_apply, Pi.add_apply, Finset.sum_apply, join_apply, smul_eq_mul]
-        rw [GlobalTheory.T.weilOperator_first_commutes_heisenbergDerivative_second D ψ A S A' _ _ _ _ oma omb ha hb hB G hG _ c2 f2, mul_add]
+        rw [_root_.GlobalTheory.DerivComm.om_dLine_right D ψ A S A' _ _ _ _ oma omb ha hb hB G hG _ c2 f2, mul_add]
         congr 1
         have := congrFun (hexp (p k) _ (GlobalTheory.FrComb.slice_left hG (sndH d S x))) (fstH d S x)
         simp only [Pi.smul_apply, Finset.sum_apply, smul_eq_mul] at this
@@ -135,8 +135,8 @@ theorem isBiSmooth_avg (ha : IsWeilDatumO ψ A S χA χS oma) (hb : IsWeilDatumO
         exact Finset.sum_congr rfl fun i _ => (mul_assoc _ _ _).symm
       rw [key]
       refine Submodule.add_mem _ (Submodule.sum_mem _ fun i _ => Submodule.subset_span ?_) (Submodule.subset_span ?_)
-      · exact ⟨_, _, hc.mul ((he i).comp hp), (GlobalTheory.T.isJointlySmoothBiTheta_heisenbergDeriv D ψ hψ A S A' G hG).1 _ (hN i) (hN0 i), rfl⟩
-      · exact ⟨_, _, hc, (GlobalTheory.T.isJointlySmoothBiTheta_heisenbergDeriv D ψ hψ A S A' G hG).2 _ c2 f2, rfl⟩
+      · exact ⟨_, _, hc.mul ((he i).comp hp), (_root_.GlobalTheory.BiDeriv.isBiTheta_dLine D ψ hψ A S A' G hG).1 _ (hN i) (hN0 i), rfl⟩
+      · exact ⟨_, _, hc, (_root_.GlobalTheory.BiDeriv.isBiTheta_dLine D ψ hψ A S A' G hG).2 _ c2 f2, rfl⟩
     | zero =>
       have : (fun k : K => dLine ψ _ S M ((0 : K → WO (GlobalTheory.Doubling.hsum A (GlobalTheory.ChiGrid.negSp A')) S → ℂ) k)) = 0 := by
         funext k x

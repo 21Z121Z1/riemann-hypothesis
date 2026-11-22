@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousFourierGau
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOscillatorActionOfGaussianPairingsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOscillatorActionOfGaussianPairings
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CartanInvolutionConjOfPosDef
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussianPairingUnitaryGroupTwoThree
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianCongrInvolution
@@ -178,7 +178,7 @@ theorem exists_osc_involution (H : Matrix ι ι ℂ) (h1 : Hᴴ = H) (h2 : H * H
     rw [omJ_cplx, omJ_cplx]
     change (star (crd ι (kL _ y)) ⬝ᵥ H *ᵥ crd ι (kL _ x)).im = _
     rw [crd_kL, crd_kL, form_mulVec, hg]
-  obtain ⟨Ω, hΩ, hc, hv⟩ := GlobalTheory.T.exists_oscillatorAction_of_gaussianPairings (EuclideanSpace ℂ ι) B (cplx H h1 h2) _ hJ hρ' (uGrp H) (kU H)
+  obtain ⟨Ω, hΩ, hc, hv⟩ := _root_.GlobalTheory.RealWeil.Osc.exists_isOsc (EuclideanSpace ℂ ι) B (cplx H h1 h2) _ hJ hρ' (uGrp H) (kU H)
     (fun g => dP H (g.1 : Matrix ι ι ℂ)) hom (detPlus_one₂ H)
     (fun g => by
       obtain ⟨e1, e2, e3⟩ := hl (g.1 : Matrix ι ι ℂ) (kU H g) g.2 (crd_kL _)

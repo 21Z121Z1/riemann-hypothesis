@@ -10,7 +10,7 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HeightOfZeroDimVariety
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspIntersectionFinite
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspIntersectionHeightStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspCorrespondenceBoundStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspCorrespondenceBound
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieMetricHeightBound
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.SlopeBoundSt
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
@@ -18,7 +18,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 import Development.AbelianVarietyTheory.PublishedTheorems.SemiabelianTori.GeometricallyConnectedSplitTorusAff
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieSignatureNumberFieldStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieSignatureNumberField
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.IntegralPointExtendsCompact
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PhiDegFibLatLeOfIsOFamilyOfIsAdapted
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsAdapted
@@ -166,7 +166,7 @@ theorem htU_of_given : Top.Given → Fl.FlatDegree → ∃ Ch : ℝ, ∀ (E : Ty
   obtain ⟨L, _, _, e, z, Pa, V, _, _, _, _, MV, A, hco, hlin, hrk, hBq⟩ :=
     _root_.LevelTowerAlt.integral_point_extends_compact hG E H D l (Xo l) c Y S₀ Ω K J Dc.y Or.𝔐 L₀ hpq1 w hwy
   obtain ⟨-, -, -, -, -, hcard, -⟩ :=
-    GlobalTheory.T.cusp_correspondence_bound E H D l (Xo l) c Y S₀ Ω K J Dc.y Or.𝔐 L (spMap (algebraMap (𝓞 L) L) ≫ z)
+    _root_.GlobalTheory.CompanionTheory.Ar.Cusp.LabPt.exists_labVal E H D l (Xo l) c Y S₀ Ω K J Dc.y Or.𝔐 L (spMap (algebraMap (𝓞 L) L) ≫ z)
   obtain ⟨⟨r, v, hv⟩, hadp⟩ := _root_.LevelTowerAlt.orthogonal_family_adapted_basis E L (CMType H) V A hcard
   have hne : Nonempty (CMType H) := by
     have h1 : 0 < Module.finrank ℚ E := Module.finrank_pos

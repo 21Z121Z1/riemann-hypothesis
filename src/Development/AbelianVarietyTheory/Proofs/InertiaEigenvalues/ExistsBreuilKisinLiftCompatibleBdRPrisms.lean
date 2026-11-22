@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsStratHom
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BhattScholzeIntegral
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilKisinPrismHomsAgreeWittAndModIdealStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilKisinPrismHomsAgreeWittAndModIdeal
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsApproxRootEisensteinAwayPrime
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalPeriodRingsSectionEqAinfToBdRPlus
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilKisinApproxRootImageIndep
@@ -90,7 +90,7 @@ theorem good_C (w : Wq l bk.a) :
     have h3 : oK K C (bk.str.symm (Ideal.Quotient.mk _ (PowerSeries.C w))) = aDp l (wA l bk.a w) := h2
     rw [h3, RingHom.comp_apply, bk.ev_C, pow_zero, one_mul, sub_self]
     exact Ideal.zero_mem _
-  · rw [(GlobalTheory.T.breuilKisinPrism_homs_agree_witt_and_mod_ideal l K bk B f g).1 w, sub_self, mul_zero]
+  · rw [(_root_.GlobalTheory.BSP.IdealSubMembership.main l K bk B f g).1 w, sub_self, mul_zero]
     exact dvd_zero _
 
 theorem good_X : Good bk C n (bk.str.symm (Ideal.Quotient.mk _ X)) := by

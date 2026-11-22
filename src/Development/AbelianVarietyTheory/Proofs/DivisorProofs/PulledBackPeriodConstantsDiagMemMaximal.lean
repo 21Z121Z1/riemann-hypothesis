@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodRel
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegenerationDataPeriodDiagonalMemMaxIdealMulGeneStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegenerationDataPeriodDiagonalMemMaxIdealMulGene
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor
 open GlobalTheory.Toroidal GlobalTheory.LocM GlobalTheory.PolFan GlobalTheory.ZM GlobalTheory.SiegelTor GlobalTheory.TorRef GlobalTheory.PolDeg GlobalTheory.SiegJoin GlobalTheory.TChart
@@ -107,7 +107,7 @@ theorem periods_pos_diag : ∀ (n : ℕ) (V : Type) [CommRing V] [IsDomain V] [I
   classical
   set c := e.trans e₀ with hc
   have hy : c a ≠ 0 := (AddEquiv.map_ne_zero_iff c).2 ha
-  obtain ⟨r₀, hr₀, k, hk, u, hu⟩ := GlobalTheory.T.degenerationData_period_diagonal_mem_maxIdeal_mul_generator V D (c a) hy
+  obtain ⟨r₀, hr₀, k, hk, u, hu⟩ := _root_.GlobalTheory.DataPos.tau_diag_pos V D (c a) hy
   obtain ⟨κK, hκ, hfr⟩ := exists_fracMap V V₁ f₁ hf₁
   obtain ⟨z⟩ : Nonempty (TK V₁).left := ⟨⟨⊥, Ideal.isPrime_bot⟩⟩
   let P : Sp V₁ ⟶ (G2 B').left := (lift (x a) (x a)).left

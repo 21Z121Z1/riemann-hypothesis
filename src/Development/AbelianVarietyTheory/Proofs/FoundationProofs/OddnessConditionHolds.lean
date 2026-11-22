@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UnitaryHeckeChar
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmFiniteAdeleIntegralSeparatedComplete
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.WeilRepresentationVacuumSignInertPlaces
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaTranslationIntertwinerUnitary
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaSpaceSelfDualPairAtMostLineStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaSpaceSelfDualPairAtMostLine
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsHalfIdem
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.WeilOperatorConjHeisenbergMovedLattice
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaLatticeAgreeOfTrivialAtPrime
@@ -397,8 +397,8 @@ theorem lattice_facts (hc : Crv D cc δ) {e0 : VC D N N' → ℂ}
     Or.inr ⟨_, _, sd_of_moves (moves_one D N), sd_of_moves (moves_one D N'), rfl⟩
   have k1 : KLat D (tor0 D cc δ) (La D (tor0 D cc δ) L L') := Or.inr ⟨_, _, sd_of_moves hL, sd_of_moves hL', rfl⟩
   obtain ⟨-, hTh, -, hII⟩ := _root_.GlobalTheory.theta_translation_intertwiner_unitary D cc δ hc N N' _ _ k0 k1 e0 he
-  have w0 := (GlobalTheory.T.theta_space_selfDual_pair_at_most_line D hg1 cc δ hc N N' _ k0).2.1
-  have w1 := (GlobalTheory.T.theta_space_selfDual_pair_at_most_line D hg1 cc δ hc N N' _ k1).2.1
+  have w0 := (_root_.GlobalTheory.ThetaLine.theta_line D hg1 cc δ hc N N' _ k0).2.1
+  have w1 := (_root_.GlobalTheory.ThetaLine.theta_line D hg1 cc δ hc N N' _ k1).2.1
   have hne : Iop D (tor0 D cc δ) (La0 D (tor0 D cc δ) N N') (La D (tor0 D cc δ) L L') e0 ≠ 0 := by
     intro h; rw [h, Iop_zero] at hII; exact h0 hII.symm
   have hfix : ∀ x ∈ La D (tor0 D cc δ) L L', Wl (tor0 D cc δ) x

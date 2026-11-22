@@ -10,11 +10,11 @@ import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FlagIndices
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Objects
 import ReciprocityTheory.AnalyticForms.LeviForms.IsRegFamilyInhabitStatement
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRes
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularizedWeightTendstoC2Statement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularizedWeightTendstoC2
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MixedIntegralTendstoOffDivisor
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularChartDataPropertiesStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularChartDataProperties
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LocalHolomorphicSectionOfPotential
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.IntersectionNumberMetricChangeStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.IntersectionNumberMetricChange
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularizedHodgeMetricSmooth
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.VerticalHodgeMetricLogFormula
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsContinuousMetricRatio
@@ -66,7 +66,7 @@ theorem tendsto_arLimFun (hLoc : ReciprocityTheory.ChartRestriction.G.AI.I2.Metr
   obtain ⟨Bκ, hBκ⟩ : ∃ b : ℝ, ∀ x, |κ x| ≤ b := by
     obtain ⟨b, hb⟩ := (isCompact_univ.image hκc).isBounded.exists_norm_le
     exact ⟨b, fun x => hb _ ⟨x, Set.mem_univ _, rfl⟩⟩
-  obtain ⟨hYo, hYnull, -, -⟩ := GlobalTheory.T.regular_chart_data_properties D.n M.Xc M.atlas S.R
+  obtain ⟨hYo, hYnull, -, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Giv.regData_open_part D.n M.Xc M.atlas S.R
   have hph := S.R.ph_smooth
 
   set Cc : ℝ := |C₁| + |S.R.Clog| + |Bκ| + 1 with hCc
@@ -132,7 +132,7 @@ theorem tendsto_arLimFun (hLoc : ReciprocityTheory.ChartRestriction.G.AI.I2.Metr
     · intro j k K' hK' hK'c
       by_cases h : (j : ℕ) < i
       · simp only [h, if_true]
-        exact GlobalTheory.T.regularized_weight_tendsto_C2 K J (mCoordIdeal D.y) D.n M D.Xo (muLine Hd) S hS k K' hK' hK'c
+        exact _root_.GlobalTheory.CompanionTheory.Ar.Giv.regWeight_tendsto_C2_of_tied K J (mCoordIdeal D.y) D.n M D.Xo (muLine Hd) S hS k K' hK' hK'c
       · simp only [h, if_false]
         exact ⟨tuo_const _ _ _, tuo_const _ _ _, tuo_const _ _ _⟩
     · filter_upwards [hbd] with t ht
@@ -213,7 +213,7 @@ theorem tendsto_arLimFun (hLoc : ReciprocityTheory.ChartRestriction.G.AI.I2.Metr
       (Filter.eventually_all_finset _).2 fun i _ => (hconv i).2.1
     filter_upwards [_root_.GlobalTheory.CompanionTheory.Ar.Cusp.muReg_smooth_log K J II Ψ Ω W D Hd M S B hS, hbd, hint] with t hsp hb hi
     obtain ⟨hsm, hdeg, hlog⟩ := hsp
-    have hT := GlobalTheory.T.intersection_number_metric_change hLoc K J II (mCoordIdeal D.y) D.n Nb (muReg Hd S B t) hII D.arith hNb hsm
+    have hT := _root_.GlobalTheory.CompanionTheory.Ar.Tele.telescope hLoc K J II (mCoordIdeal D.y) D.n Nb (muReg Hd S B t) hII D.arith hNb hsm
       (hdeg.trans hNa.symm)
     rw [arLimFun, hT]
     congr 1

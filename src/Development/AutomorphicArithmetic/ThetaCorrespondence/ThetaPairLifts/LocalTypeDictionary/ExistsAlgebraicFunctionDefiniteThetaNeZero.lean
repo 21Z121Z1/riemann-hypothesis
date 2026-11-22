@@ -40,7 +40,7 @@ theorem exists_algebraic_vector_definite_theta_ne (hP : _root_.GlobalTheory.FunP
   have hPair := (GlobalTheory.ThK.Check.isPair_of_isTriple hT).2
   have hpres : ∀ x, ∀ Φ ∈ GlobalTheory.WeilM.schA F (Fin a' × Fin (a + a')), om' x Φ ∈ GlobalTheory.WeilM.schA F (Fin a' × Fin (a + a')) :=
     hPair.weil.isUSplitting.pres
-  have hdense := GlobalTheory.T.polynomialFock_dense_archimedeanSchwartz F E σ B _ _ _ _ G.M' _ _ om' _ _ _ _ hPair
+  have hdense := _root_.GlobalTheory.PolDense.pol_dense F E σ B _ _ _ _ G.M' _ _ om' _ _ _ _ hPair
   have hsch : ∀ Ψ ∈ G.M'.So B.ψ B.τ₁, Ψ ∈ GlobalTheory.WeilM.schA F (Fin a' × Fin (a + a')) := by
     intro Ψ hΨ
     refine (Submodule.span_le.2 ?_) hΨ

@@ -2,11 +2,11 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
 import Formalism.FormalDegreeBessel.FinalG
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselSubgroupsClosedUnitaryWCompact
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselOpNormPowerIntegralLtTopClosedSubgroupStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselOpNormPowerIntegralLtTopClosedSubgroup
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselModelUnitaryGroupOpNormProperties
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselConstantBoundsOfGeTwoNPowFive
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselSubgroupRepTwistedIsUnitaryRep
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnimodularBesselSubgroupsUWNStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnimodularBesselSubgroupsUWN
 
 noncomputable section
 
@@ -281,11 +281,11 @@ theorem be_converges_equivariant_hermitian_continuous : ∀ (k r : ℕ) {H : Typ
   obtain ⟨hz, hT, hπ, hHaar, -⟩ := hSide
   have hS : IsClosedSub k r (Sset k r z) := (_root_.GlobalTheory.SgInf.closedSub_groups k r z hz hT).2.2.2.1
   have h47 := _root_.GlobalTheory.SgInf.PiUnitary.piS_unitary k r z c π hz hT hπ
-  have hU : IsUnimod (Sset k r z) μS := (GlobalTheory.T.unimodular_besselSubgroups_UW_N k r z hz hT μS).1 hHaar
+  have hU : IsUnimod (Sset k r z) μS := (_root_.GlobalTheory.SgInf.unimodular_S_N_UW k r z hz hT μS).1 hHaar
   have hb := _root_.GlobalTheory.SgInf.a_bounds_of_ge_two_n_pow_five k r a hk ha5
   have hn : (0:ℝ) ≤ 2 * ((2 * r + k + 1 : ℕ) : ℝ) ^ 2 := by positivity
   have hapos : 0 < a := by linarith [hb.1]
-  have hint : normInt μS a < ⊤ := GlobalTheory.T.besselOpNormPowerIntegral_lt_top_closedSubgroup k r _ μS a hS hHaar (by linarith [hb.1])
+  have hint : normInt μS a < ⊤ := _root_.GlobalTheory.SgGrowth.normInt_lt_top k r _ μS a hS hHaar (by linarith [hb.1])
   obtain ⟨C, hC⟩ := hDec u hu u' hu'
   obtain ⟨C', hC'⟩ := hDec u' hu' u hu
   have hPc := h47.2.2.2.1

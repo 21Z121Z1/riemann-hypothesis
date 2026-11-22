@@ -7,7 +7,8 @@ import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ColumnDataLaws
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.VacuumCharacterDeterminant
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.GeneralDiagonalMatrix
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InnerThetaFunctionsReadingTestFunctionFrames
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdelicZakThetaExistsUniqueStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdelicZakThetaExistsUnique
+import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsHeatZero
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.WeilActionTranslatesThetaByUnitScalar
 
 open AlgebraicGeometry CategoryTheory NumberField Matrix MeasureTheory
@@ -48,7 +49,7 @@ theorem scalar_eq {om : GA D S × GA D T →* Module.End ℂ (WO S T → ℂ)} (
   have hmv : ∀ A, C.IsB A → C.IsB (C.mvB u A) := fun A hA =>
     (((GlobalTheory.Ker.onBasis_frame_period D S T C).2 A hA).2.2.2.2.2 u).1
   have hth : ∀ A, C.IsB A → C.IsTh (C.Th (C.xB A) φ) := fun A hA =>
-    (GlobalTheory.T.adelicZakTheta_exists_unique D S T C _ (xB_mem_dom C hA) φ hφ).1.1
+    (_root_.GlobalTheory.Ker.ZakEx.isZak_Th D S T C _ (xB_mem_dom C hA) φ hφ).1.1
   have hd : dbl C.X C.bas C.idx φ φ 0 ≠ 0 := by
     intro hc
     have h1 := GlobalTheory.AdTh.Overlap.ipO_Th C hμ (xB_mem_dom C hB) (xB_mem_dom C hB) hφ hφ

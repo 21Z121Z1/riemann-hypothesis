@@ -6,9 +6,11 @@ import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermCut
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 import Formalism.LocalToGlobal.ProjectiveLattices.FrameCharts
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.FramedPointBaseChangeLaws
-import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsFramedPointBaseChangeAlgHomStatement
+import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsFramedPointBaseChangeAlgHom
+import Formalism.LocalToGlobal.ProjectiveLattices.ThGerm
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.VtUniq
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ConnectionLinearInSectionStatement
-import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.HarmonicSumTriangularFrameChangeStatement
+import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.HarmonicSumTriangularFrameChange
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor Formalism.L2.Pj Formalism.MainNotions.ModuliIntegralCharts.H1
@@ -171,7 +173,7 @@ theorem sum_eq (hC : ChartIndepSt2) [StarRing (𝓞 E)] {nab : NabV Xo c} (hn : 
         ∏ b, nab d.pt ((N : ℤ) ^ 2) (scaleSec Xo.univ.t.G (toΓ S (t none : S)) (F b)) (colOf m b) =
       wchar (ex Dw a n) t * ∑ m ∈ P.support, algebraMap c.F S (P.coeff m) *
         ∏ b, nab y ((N : ℤ) ^ 2) (F b) (colOf m b) := by
-  have h1 := _root_.GlobalTheory.T.harmonic_sum_triangular_frameChange hC E H Dw l Xo c nab hn S y d.pt t hb (𝟙 _) rfl n a P hP N F F
+  have h1 := _root_.GlobalTheory.TriangularFrame.harmonic_sum_frBor hC E H Dw l Xo c nab hn S y d.pt t hb (𝟙 _) rfl n a P hP N F F
     (fun b => isPullSec_id _ (F b))
   have h2 : ∀ b q, nab d.pt ((N : ℤ) ^ 2) (scaleSec Xo.univ.t.G (toΓ S (t none : S)) (F b)) q =
       (t none : S) * nab d.pt ((N : ℤ) ^ 2) (F b) q :=
@@ -264,7 +266,7 @@ theorem thetaValue_weight : Laws → ChartIndepSt2 → ∀ (E : Type) [Field E] 
   refine ⟨fun hP x v hv => ?_, fun hP w Λ β N v hv => ?_⟩
   · obtain ⟨S', _, _, φ, z, F, hff, hmap, hvt, hvv⟩ := hv
     have hP' : P ∈ HHa Dw.mult n c.F ComplexEmbedding.conjugate (InPsi H) (fun τ i => a (τ, i)) := hP.1
-    obtain ⟨z', hz'⟩ := _root_.GlobalTheory.T.exists_framedPoint_baseChange_algHom hL E H Dw l Xo c S S' φ d₀.pt
+    obtain ⟨z', hz'⟩ := _root_.GlobalTheory.FramedBaseChange.exists_frMap hL E H Dw l Xo c S S' φ d₀.pt
     obtain ⟨d, rfl⟩ := exists_reframe z z' (hz'.1.trans hmap.1.symm)
     have hb' := frBor_units_map_of_frMap φ d₀ d hb hmap hz'
     refine ⟨S', inferInstance, inferInstance, φ, d.pt,
@@ -276,7 +278,7 @@ theorem thetaValue_weight : Laws → ChartIndepSt2 → ∀ (E : Type) [Field E] 
     rw [sum_eq hC hn d hb' hP' l.M F]
     ring
   · obtain ⟨S', _, _, φ, z, zz, tp, F, hff, hmap, hz1, hz2, hz3, hz4, hvv⟩ := hv
-    obtain ⟨z', hz'⟩ := _root_.GlobalTheory.T.exists_framedPoint_baseChange_algHom hL E H Dw l Xo c S S' φ d₀.pt
+    obtain ⟨z', hz'⟩ := _root_.GlobalTheory.FramedBaseChange.exists_frMap hL E H Dw l Xo c S S' φ d₀.pt
     obtain ⟨d, rfl⟩ := exists_reframe z z' (hz'.1.trans hmap.1.symm)
     have hb' := frBor_units_map_of_frMap φ d₀ d hb hmap hz'
     refine ⟨S', inferInstance, inferInstance, φ, d.pt, zz, tp,

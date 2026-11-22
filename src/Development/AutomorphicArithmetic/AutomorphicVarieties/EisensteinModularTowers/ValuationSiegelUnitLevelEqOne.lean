@@ -2,8 +2,9 @@ import Development.AbelianVarietyTheory.Definitions.Foundations.IsPrimitiveRootT
 import Development.AbelianVarietyTheory.Definitions.Foundations.EeProd
 import Development.AbelianVarietyTheory.Definitions.Foundations.Letter
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsIntegralModularTowerJCompGlTwoPosRat
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SlTwoInvariantHolomorphicMemAdjoinJInvariantStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OverAffineJLineComapSlGalStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SlTwoInvariantHolomorphicMemAdjoinJInvariant
+import Development.AbelianVarietyTheory.Definitions.Foundations.EigenOfTwoStep
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OverAffineJLineComapSlGal
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelUnitInTowerNeZero
 import Development.AbelianVarietyTheory.Definitions.Foundations.SgC
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasQIff
@@ -141,7 +142,7 @@ private theorem int_of_hol [IsAlgClosure ℚ Ω] (X : Tower Ω ε) (f : X.K)
     rw [hPQ, Polynomial.coeff_map]
     exact (Q.coeff n).2
   have hcoef : ∀ n, P.coeff n ∈ Algebra.adjoin Ω {X.jK} := fun n =>
-    GlobalTheory.T.slTwo_invariant_holomorphic_mem_adjoin_jInvariant ε X hinj (jhol X) _ (fun γ => hcinv γ n) (hchol n)
+    _root_.GlobalTheory.KZ.LevelOne.mem_adjoin_j ε X hinj (jhol X) _ (fun γ => hcinv γ n) (hchol n)
   have hlift : P ∈ Polynomial.lifts (algebraMap (Algebra.adjoin Ω {X.jK}) X.K) :=
     (Polynomial.lifts_iff_coeff_lifts P).mpr fun n => ⟨⟨P.coeff n, hcoef n⟩, rfl⟩
   have hmon : P.Monic := Polynomial.monic_prod_of_monic _ _ (fun h _ => Polynomial.monic_X_sub_C h)
@@ -170,7 +171,7 @@ private theorem admissible_index_siegel {c D : ℕ} (hc : 1 < c) (h6 : Nat.Copri
 
 private theorem val_sl [IsAlgClosure ℚ Ω] (X : Tower Ω ε) {c : ℕ} {x : Fin 2 → ℚ} (hx : GlobalTheory.Sieg.admitted c x) (g : GQ)
     (W : ValuationSubring X.K) (hW : X.OverY W) : W.valuation (X.sl g (siegel X c x)) = 1 := by
-  have hY := (GlobalTheory.T.overAffineJLine_comap_sl_gal ε X ε.injective (jhol X) W hW).1 g
+  have hY := (_root_.GlobalTheory.KZ.Tower.overY_comap_sl_gal ε X ε.injective (jhol X) W hW).1 g
   have h1 := mem_of_int X _ hY (int_of_hol X _ (siegel_hol X hx))
   have h2 := mem_of_int X _ hY (int_of_hol X _ (siegel_inv_hol X hx))
   rw [ValuationSubring.mem_comap] at h1 h2

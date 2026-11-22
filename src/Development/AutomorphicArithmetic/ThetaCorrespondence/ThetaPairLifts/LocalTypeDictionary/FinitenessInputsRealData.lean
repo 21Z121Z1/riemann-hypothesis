@@ -38,8 +38,8 @@ theorem adelC_of_siegelWeil_of_doubling_alt : GlobalTheory.Published.CuspRapidDe
   exact GlobalTheory.T.adelicLift_scalar_of_innerProductFormula R F (_root_.GlobalTheory.LowRow.CuspLift.liftIsCuspC hCusp R F) (_root_.GlobalTheory.SourceLaw.sourceLevelLaw hLoc R F hPM)
     (_root_.GlobalTheory.innerProductFormula_of_hypotheses hCusp hWS (_root_.ResidueKilled.sec_of_dm hDbl) R F hL)
     (_root_.GlobalTheory.FockCoeffImage.fockCoefficientC hHM R F hPM) (deltaNorm_all D)
-    (_root_.GlobalTheory.LowRow.finiteZetaC_of_finiteZetaL R F (GlobalTheory.T.finiteZetaIntegral_thetaLift_eq_partialLValue hCusp hBZ hUnr R F)) (_root_.GlobalTheory.LevelIndex.levelIndexNormC hLoc R F hPM)
-    (GlobalTheory.T.unitaryMassLowerBound_of_orthonormalLatticeFrames D hStd) (_root_.GlobalTheory.LowRow.formalDegreeUpperC_of_hypotheses hFD R F)
+    (_root_.GlobalTheory.LowRow.finiteZetaC_of_finiteZetaL R F (_root_.GlobalTheory.FinZeta.finiteZetaL hCusp hBZ hUnr R F)) (_root_.GlobalTheory.LevelIndex.levelIndexNormC hLoc R F hPM)
+    (_root_.GlobalTheory.LowRow.StdMass.massLower_of_stdV D hStd) (_root_.GlobalTheory.LowRow.formalDegreeUpperC_of_hypotheses hFD R F)
 end GlobalTheory.LowRowAdel
 end
 

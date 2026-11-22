@@ -6,7 +6,8 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TraceLatticeLeTh
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GoodLiftOnto
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemRangeSrcForm
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GoodFormsCoordinateMapMemOfLiftsMem
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionLiftPairStepVectorInvLevelCharStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionLiftPairStepVectorInvLevelChar
+import Formalism.LocalToGlobal.IndefiniteReal.FWExist
 
 set_option autoImplicit false
 
@@ -75,7 +76,7 @@ theorem leafTW2_of_isRec : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 T0
     have := lattices_of_tie (T := (r.used v).full) (inst := inst) (R := R)
       (ht v j).1 (ht v j).2 hinc (chi_eq_one_of_mem_base R F hC.grp j)
       ⟨hC.lev, hC.grp.red_L, hC.fam.tie, hC.models, hC.thP, hU, ⟨_, (fw.hv₀ j _).1⟩, (hOk.lifts _ _).act,
-        GlobalTheory.T.weilAction_liftPair_stepVector_invLevelChar R hC.lev hC.models.inf hC.thP.ωP hC.thP.vP j (R.mu v)⟩
+        _root_.GlobalTheory.VecInv.omega_lifts_vP R hC.lev hC.models.inf hC.thP.ωP hC.thP.vP j (R.mu v)⟩
       (hOk.lifts _ _).good hOk.irr (h3 j)
       (goodLiftOnto_of_base R F hOk.irr hC.models.HW hC.thP.thG hU hB.1 _ _ _ one_ne_zero)
     exact ⟨this.1, this.2.1, Formalism.L2.DIV.localization_mono _ this.2.2⟩

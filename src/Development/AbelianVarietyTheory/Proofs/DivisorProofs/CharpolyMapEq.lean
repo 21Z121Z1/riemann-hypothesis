@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompEqZeroOfN
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTorsionTowerAndHeightEqTwoDim
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DieudonneFunctorBaseFunctorProperties
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DieudonneTheoryVEqVerschiebungInjective
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfNormProdAevalEqStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfNormProdAevalEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MultiplicativePolynomialFunctionEqNormFormStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianVarietyEndCharpolySpecStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomDegreeIntegerCombinationIsHomogeneousStatement
@@ -93,7 +93,7 @@ theorem charpoly_map_eq : ∀ (p : ℕ) [Fact p.Prime] (T : Theory p) (k : Type)
   have hPdeg : P.natDegree = 2 * A.dim := by
     rw [← hPm.natDegree_map ψ, hP, LinearMap.charpoly_natDegree, hrank]
   have key : P.map (algebraMap ℤ_[p] ℚ_[p]) = (charpoly f).map (Int.castRingHom ℚ_[p]) := by
-    refine GlobalTheory.T.eq_of_norm_prod_aeval_eq' p _ _ (hPm.map _) (hQm.map _) ?_ ?_
+    refine _root_.GlobalTheory.PadicRootNorm.eq_of_norm_prod_aeval_eq p _ _ (hPm.map _) (hQm.map _) ?_ ?_
     · rw [hPm.natDegree_map, hQm.natDegree_map, hPdeg, hQdeg]
     · intro R
       obtain ⟨PR, -, hPR⟩ := _root_.GlobalTheory.DieuCharpoly.exists_monic_map_eq_charpoly p k (T.M G) (T.F G) ψ

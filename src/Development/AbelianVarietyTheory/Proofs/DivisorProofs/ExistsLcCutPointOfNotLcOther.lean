@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDivisorNonKlt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonKltLocusDimLtAfterPerturbation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KltAtLcAtOfLeCoeff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MultNsmulOfQadd
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsEffectiveQCartierDivisorConvexConeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsEffectiveQCartierDivisorConvexCone
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EffQCartierNumEquivMultipleNonnegSmul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NotKltAtSubOfNotLcAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRationalLogCanonicalThresholdAtPoint
@@ -33,7 +33,7 @@ theorem exists_lcCut_of_not_lcAt : GlobalTheory.Published.Principalisation → G
   obtain ⟨δ, hδ, hδ1, hδa, hδb⟩ : ∃ δ : ℚ, 0 < δ ∧ δ ≤ 1 ∧ δ ≤ δ₀ ∧ δ ≤ δ₁ :=
     ⟨min δ₀ δ₁, lt_min hδ₀ hδ₁, (min_le_left _ _).trans hδ₀1, min_le_left _ _, min_le_right _ _⟩
   have hBc : IsQCart B := QNum.isQCart hBq
-  have hDδ : IsQCart ((1 - δ) • D) := (GlobalTheory.T.isEffectiveQCartierDivisor_convexCone X D D (1 - δ) hDq hDq (by linarith)).2.1
+  have hDδ : IsQCart ((1 - δ) • D) := (_root_.GlobalTheory.QCartCone.isQCart_cone X D D (1 - δ) hDq hDq (by linarith)).2.1
 
   have hkx : KltAt p n (Δ + (1 - δ) • D) x := _root_.GlobalTheory.PairStep.kltAt_add_smul_of_lcAt X p n hp hn Δ D δ x hDq (hklt x) hlc hδ hδ1
   have hnkx : ¬ KltAt p n (Δ + (1 - δ) • D + B) x := hnk δ hδ.le hδa x (Finset.mem_singleton_self x)

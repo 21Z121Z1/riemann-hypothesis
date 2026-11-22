@@ -1,5 +1,8 @@
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FrameCoordsMemSelfDualLatticeCoordsIff
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsNormalFramesAndBasePointSplitPlaceStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsNormalFramesAndBasePointSplitPlace
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCombAt
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PlacesToAdeles
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.AllPositions
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsSelfDualLineLatticeSplittingSum
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SymRead
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.LevTrue
@@ -51,7 +54,7 @@ theorem splitAt_places : ∀ {D : D7} {L : SizeData₂ D} {hT : GatTies D} {Gi :
       have h1 := hsc j
       rw [h0, map_zero] at h1
       exact zero_ne_one h1
-    obtain ⟨F₀, hF₀⟩ := ((GlobalTheory.T.exists_normal_frames_and_base_point_split_place D (l PP hP).k (ofSplit (l PP hP).q) hxi).1 _ ρ ((y.bes j ρ h).lev (a.x j).vol)
+    obtain ⟨F₀, hF₀⟩ := ((_root_.GlobalTheory.LocMod.normalFrames_and_basePoint_exist D (l PP hP).k (ofSplit (l PP hP).q) hxi).1 _ ρ ((y.bes j ρ h).lev (a.x j).vol)
       (sc PP hP j) ((l PP hP).FX j hj) hs0).1
     have hIntM := hcore PP hP j ρ h hj F₀ hF₀
     have hA : IsSelfDualC (D.sp.X j) (a.x j).L := (hIs.x j (by omega)).sd

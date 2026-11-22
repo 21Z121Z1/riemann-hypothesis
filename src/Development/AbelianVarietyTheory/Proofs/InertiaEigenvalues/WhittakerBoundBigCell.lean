@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFactsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFacts
 
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology
 
@@ -75,7 +75,7 @@ theorem main : ∀ (F E : Type) [NontriviallyNormedField F] [NontriviallyNormedF
   let b := Module.finBasis F A.K
   have : T2Space A.K := .of_injective_continuous b.equivFun.injective
     (IsModuleTopology.continuous_of_linearMap b.equivFun.toLinearMap)
-  obtain ⟨-, -, -, -, -, -, -, -, -, -, hcpt, R, hR⟩ := GlobalTheory.T.etaleHermitianPair_structure_facts F E A
+  obtain ⟨-, -, -, -, -, -, -, -, -, -, hcpt, R, hR⟩ := _root_.GlobalTheory.JR.EtFacts.main F E A
   obtain ⟨V, hV, hloc⟩ := hΨ.1
   obtain ⟨C, hC⟩ := bdd_of_loc_const A.K A.OK hcpt Ψ V hV hloc
   refine ⟨C, fun z s α β hα hβ hs hsz h => ?_⟩

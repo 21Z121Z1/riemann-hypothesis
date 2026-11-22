@@ -1,8 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsAuxiliaryVectorWittDec
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridLatticesCompactSelfDualSplitting
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CompletedHomLatticeModulusDepthMemShiftStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RationalMatrixSandwichMemCompletedHomLatticeSelfStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CompletedHomLatticeModulusDepthMemShift
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemHomLatticeCompletionIffSupportedMaps
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RationalMatrixSandwichMemCompletedHomLatticeSelf
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links MeasureTheory IsDedekindDomain NumberField Matrix
 open GlobalTheory.MixModel GlobalTheory.MixPer GlobalTheory.Grow GlobalTheory.Unf GlobalTheory.ChiGrid GlobalTheory.FunObj GlobalTheory.SepRows GlobalTheory.Asc
 open scoped TensorProduct
@@ -167,7 +168,7 @@ theorem pcBF_big_core : OnStd fun {D} _ _ {sc} {G} W F =>
   obtain ⟨e, he, -⟩ := W.cosVec_is
   have big : (F.dB ρ h).ext0 (G.V (.grid (2 * ρ + 1) 0)) w ∈ latO (G.V (.grid (2 * ρ + 1 + 1) 0)) (G.V (.grid (2 * ρ + 1) 0))
       (G.Λ (.grid (2 * ρ + 1 + 1) 0) : Set _) (idLat (shiftId G) (G.Λ (.grid (2 * ρ + 1) 0)) : Set _) (fun _ => True) := by
-    have key := GlobalTheory.T.completedHomLattice_modulus_depth_mem_shift hq μ0 hL G (S := G.V (.grid (2 * ρ + 2) 0)) (B := G.V (.grid (2 * ρ + 1) 0))
+    have key := _root_.GlobalTheory.DepthShift.mem_latO_shift hq μ0 hL G (S := G.V (.grid (2 * ρ + 2) 0)) (B := G.V (.grid (2 * ρ + 1) 0))
       (G.Λ (.grid (2 * ρ + 2) 0)) 1 (G.Λ (.grid (2 * ρ + 1) 0)) sdS (by rw [idLat_one]; exact sdT)
       (by rw [one_mul]; exact sdB) _ (by rw [idLat_one]; exact latO_negSp_le _ _ _ _ _ hw.1)
       ⟨e, he, by rw [idLat_one]; exact hw.2 e he⟩
@@ -182,9 +183,9 @@ theorem pcBF_big_core : OnStd fun {D} _ _ {sc} {G} W F =>
     rw [e1]
     exact proj_lat _ _ (hF.hJ ρ h) (by omega) (hF.aJ ρ h) _ _
   have sdS' : IsSelfDualC (G.V (.grid (2 * ρ + 1 + 1) 0)) (G.Λ (.grid (2 * ρ + 1 + 1) 0)) := sdS
-  have hx := GlobalTheory.T.rationalMatrix_sandwich_mem_completed_homLattice_selfDual sdS' sdS' sdB 1 ((F.dJ ρ h).e * (F.dJ ρ h).qX)
+  have hx := _root_.GlobalTheory.Twist.RatLatO.rat_mul_mem_latO sdS' sdS' sdB 1 ((F.dJ ρ h).e * (F.dJ ρ h).qX)
     (fun y hy => by rw [Matrix.one_mulVec]; exact hy) (idLat_mulVec _ _ _ fun x hx => (hlat x hx).1) _ big
-  have hy := GlobalTheory.T.rationalMatrix_sandwich_mem_completed_homLattice_selfDual sdS' sdS' sdB 1 ((F.dJ ρ h).e' * (F.dJ ρ h).qY)
+  have hy := _root_.GlobalTheory.Twist.RatLatO.rat_mul_mem_latO sdS' sdS' sdB 1 ((F.dJ ρ h).e' * (F.dJ ρ h).qY)
     (fun y hy => by rw [Matrix.one_mulVec]; exact hy) (idLat_mulVec _ _ _ fun x hx => (hlat x hx).2) _ big
   have hr1 : ∀ x : Mx D (G.V (.grid (2 * ρ + 1) 0)).rank (G.V (.grid (2 * ρ + 2) 0)).rank, x ⬝ rat 1 = x := fun x => by
     rw [rat_one]; exact Matrix.mul_one x

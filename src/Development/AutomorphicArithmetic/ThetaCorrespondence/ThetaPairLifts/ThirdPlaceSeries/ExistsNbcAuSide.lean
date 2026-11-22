@@ -80,7 +80,7 @@ theorem exists_nbc_auSide_true_of_empty (hE : IsEmpty D.nd.Loc) :
     { cls := fun _ _ _ π => clsA π
       surj := fun _ _ _ X => ⟨X.rep, AUq.cls_rep X⟩
       iso := fun _ _ _ π π' => clsA_eq_iff π π'
-      mult := fun _ _ _ π => GlobalTheory.T.automorphic_multiplicity_eq_of_iso _ _ _ _ (rep_iso π)
+      mult := fun _ _ _ π => _root_.GlobalTheory.MultIso.mult_eq_of_iso _ _ _ _ (rep_iso π)
       sph := fun _ _ _ π w v _ hv => _root_.GlobalTheory.AutQuot.f_sph_alt D π w v hv
       sat := fun _ _ _ π v w hv Dv hα => f_sat D π v w hv Dv hα
       clsWt := fun _ _ _ a => clsW a

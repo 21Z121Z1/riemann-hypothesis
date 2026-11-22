@@ -13,7 +13,7 @@ import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SumMonomialAddSingle
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SectionsDimSymmetricAmplePowEqMulPow
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.MatrixPolynomialDetNormFixedPoints
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.DenseTorsionAndEqOne
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SectionsGrowthBasicPropertiesAbelianVarietyStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SectionsGrowthBasicPropertiesAbelianVariety
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SectionsPowerGrowthVolumePullFiniteEndomorphism
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.EqProdOfMul
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSqAddSubDvd
@@ -217,7 +217,7 @@ theorem sq_vol_eq_det : Out.Laws → Out.Laws2 → ∀ (K : Type) [Field K] [IsA
   have hB : ∀ F, (cubeLB P.A ![𝟙 P.A, ev F] P.L).IsLB := fun F => DVR.linComb_isLB _ P.isLB _ _
   have uniq : ∀ F (a : ℝ), Out.RelAmple P.A (cubeLB P.A ![𝟙 P.A, ev F] P.L) →
       Vol P.A.hom (cubeLB P.A ![𝟙 P.A, ev F] P.L) P.g a → (D F : ℝ) = a := fun F a h h' =>
-    (GlobalTheory.T.sectionsGrowth_basic_properties_abelianVariety K P _ P.g (hB F)).2.1 _ _ (hDv F h) h'
+    (_root_.GlobalTheory.VolBasic.vol_basic K P _ P.g (hB F)).2.1 _ _ (hDv F h) h'
   have fa := fun (ψ : P.A ⟶ P.A) (N : LB P.A.left) (n : ℕ) (hn : 0 < n) (hN : N.IsLB) (hψ : IsFinite ψ.left) =>
     GlobalTheory.relAmple_finite_pow_iso (Sp K) P.A P.A ψ N n hn P.isAb P.isAb hN hψ
   have hid : IsFinite (𝟙 P.A : P.A ⟶ P.A).left := by rw [Over.id_left]; infer_instance
@@ -229,8 +229,8 @@ theorem sq_vol_eq_det : Out.Laws → Out.Laws2 → ∀ (K : Type) [Field K] [IsA
     have hN2 : (lbPow N 2).IsLB := DVR.linComb_isLB _ hN _ _
     have hA2 := (fa _ _ 1 one_pos hN2 hid).2.2.2 _ (hB F) hI.symm ((fa _ N 2 two_pos hN hid).2.1.2 hA)
     refine ⟨hA2, uniq F _ hA2 ?_⟩
-    have := (GlobalTheory.T.sectionsGrowth_basic_properties_abelianVariety K P _ P.g hN).2.2.2.1 2 a one_le_two hV
-    exact (GlobalTheory.T.sectionsGrowth_basic_properties_abelianVariety K P _ P.g hN2).2.2.1 _ _ (hB F) hI.symm (by simpa using this)
+    have := (_root_.GlobalTheory.VolBasic.vol_basic K P _ P.g hN).2.2.2.1 2 a one_le_two hV
+    exact (_root_.GlobalTheory.VolBasic.vol_basic K P _ P.g hN2).2.2.1 _ _ (hB F) hI.symm (by simpa using this)
   obtain ⟨hA1, hD1⟩ := hsqr 1 P.L 1 P.isLB P.ample (_root_.GlobalTheory.principal_polarisation_numerics hL hL2 K P).1 hone
   obtain ⟨-, hDX⟩ := hsqr Polynomial.X M δ hM hamp hvol (hXM hsym)
   replace hD1 : D 1 = 2 ^ P.g := by exact_mod_cast (by simpa using hD1 : (D 1 : ℝ) = 2 ^ P.g)
@@ -244,7 +244,7 @@ theorem sq_vol_eq_det : Out.Laws → Out.Laws2 → ∀ (K : Type) [Field K] [IsA
     have hP : ((cubeLB P.A ![𝟙 P.A, ev F] P.L).pull (ev G).left).IsLB := LB.isLB_pull (hB F) _
     have hA2 := (fa _ _ 1 one_pos hP hid).2.2.2 _ (hB _) (hsq F G).symm ((fa _ _ 1 one_pos (hB F) hf).1 hA)
     refine ⟨hA2, ?_⟩
-    have := uniq _ _ hA2 ((GlobalTheory.T.sectionsGrowth_basic_properties_abelianVariety K P _ P.g hP).2.2.1 _ _ (hB _) (hsq F G).symm
+    have := uniq _ _ hA2 ((_root_.GlobalTheory.VolBasic.vol_basic K P _ P.g hP).2.2.1 _ _ (hB _) (hsq F G).symm
       (_root_.GlobalTheory.vol_pull_of_isFinite K P (ev G) d _ _ (hmon G) hf hd (hB F) hA (hDv F hA)))
     exact_mod_cast this
   have hN : ∀ G, ((D (G ^ 2) / 2 ^ P.g : ℚ) : ℚ_[l]) = ((Polynomial.aeval U G).det : ℤ_[l]) := by

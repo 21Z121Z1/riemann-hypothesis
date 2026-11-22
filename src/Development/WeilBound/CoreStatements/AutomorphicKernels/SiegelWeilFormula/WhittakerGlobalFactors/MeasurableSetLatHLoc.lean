@@ -51,7 +51,7 @@ theorem herm_split (σ : E →ₐ[F] E) (hCM : IsCMExt F E σ) (ψ : AddChar (AF
         ∫ b in UH σ bs n S, gi (hermInf σ b) * ∏ v ∈ S, g v (hermV σ v (hermFin σ b)) ∂ν =
           (∫ x, gi x ∂νi) * ∏ v ∈ S, ∫ x, g v x ∂(νv v) := by
   classical
-  obtain ⟨⟨laminf, hinf⟩, hlamE⟩ := GlobalTheory.T.exists_standard_local_measures F
+  obtain ⟨⟨laminf, hinf⟩, hlamE⟩ := _root_.GlobalTheory.CompanionTheory.SW.StdEx.exists_std F
   choose lam hlam using hlamE
   obtain ⟨lf, hlf, h1⟩ := GlobalTheory.CompanionTheory.AdeleHaar.exists_haar_integral_one F
   obtain ⟨cinf, c, hU, hci, hcv⟩ := GlobalTheory.CompanionTheory.SW.sdHerm_eq_coord F E σ hCM d bs laminf lam hinf hlam ψ hψ n

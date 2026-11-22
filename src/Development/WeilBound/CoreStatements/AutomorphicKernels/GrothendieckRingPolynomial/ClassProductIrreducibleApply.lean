@@ -6,11 +6,12 @@ import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.Zelevin
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.LanglandsMultisegments
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.LanglandsExhaustionGL
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OrderedFormsInterleaveSumStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OrderedFormsInterleaveSum
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LanglandsInjectiveOfSocleStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductIrreducibleFiniteLength
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.ZelevinskyCosocles.LUnlinkedComm
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContragredientProductIrreducibleStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContragredientProductIrreducible
+import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.LSegJacquet
 
 noncomputable section
 
@@ -48,7 +49,7 @@ theorem isL_cls_unique (hf : LOrderFree k) {𝔪 : Multiset (Segment k)} {x y : 
   exact congrArg (Sigma.mk n) (irrCl_eq_iff.2 (_root_.GlobalTheory.CompanionTheory.LUniq.isL_unique hf 𝔪 _ _ hx hy))
 
 theorem exists_orderedForm (𝔪 : Multiset (Segment k)) : ∃ (h : ℕ) (Δ : Fin h → Segment k), IsOrderedForm Δ 𝔪 := by
-  obtain ⟨h₁, -, -, Δ₁, -, -, hΔ₁, -⟩ := GlobalTheory.T.ordered_forms_interleave_sum PositivityTheory.Tls2.BZGL.irreducibleAdmissibleGL_top 𝔪 0
+  obtain ⟨h₁, -, -, Δ₁, -, -, hΔ₁, -⟩ := _root_.GlobalTheory.CompanionTheory.ZcMerge.exists_common_orderedForm PositivityTheory.Tls2.BZGL.irreducibleAdmissibleGL_top 𝔪 0
   exact ⟨h₁, Δ₁, hΔ₁⟩
 
 theorem class_apply_same_degree {N : ℕ} {V : Type} [AddCommGroup V] [Module ℂ V] (π : Representation ℂ (GL (Fin N) k) V)

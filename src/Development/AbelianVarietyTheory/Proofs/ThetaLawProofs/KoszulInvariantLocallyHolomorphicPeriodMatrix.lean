@@ -23,7 +23,7 @@ import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsDifferentiab
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.SubmatrixMulOfVanish
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.SignInsert
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.LineBundlePowSectionsEqThetaLevel
-import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsHolomorphicThetaOfLevelBasisStatement
+import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsHolomorphicThetaOfLevelBasis
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsKoszulTorsionTransversalSplitZeros
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsSquareDeterminantComparisonIsAlgClosed
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj MeasureTheory
@@ -503,7 +503,7 @@ theorem exists_data (laws : Out.Laws) (hT : ThetaUnifAV) {n l d : ℕ} {a b : Fi
         (∀ k, FnPw x u (bs k) (Th j (k.cast (by rw [h])) p)) → IsSquareDeterminantComparison x (l - j * n) (al (l - j * n)) bs la →
         (la : ℂ) = lam p := fun j => by
     by_cases hj : j ≤ g
-    · obtain ⟨lam, h⟩ := GlobalTheory.T.exists_holomorphic_theta_of_level_basis laws hT g _ a b _ (Th j) hab (hpos j hj) (hal _) (hTh j hj)
+    · obtain ⟨lam, h⟩ := _root_.GlobalTheory.SimilTheta.l2Val_holomorphic laws hT g _ a b _ (Th j) hab (hpos j hj) (hal _) (hTh j hj)
       exact ⟨lam, fun _ => h⟩
     · exact ⟨0, fun h => absurd h hj⟩
   choose lam hlam using h3

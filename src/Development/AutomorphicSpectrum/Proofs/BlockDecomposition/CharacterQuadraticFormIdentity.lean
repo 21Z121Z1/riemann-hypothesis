@@ -1,11 +1,11 @@
 import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.SingularNullSets.WeakApproximationFinitePlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftEisensteinLevelSubgroup
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResEtaOfIsWeilSch
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SchwartzExistsRealMajorantStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableSchwartzRestrictionColumnsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SchwartzExistsRealMajorant
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableSchwartzRestrictionColumns
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeilRepresentationThetaIntegral
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeilRepresentationFourierCoefficientStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeilRepresentationFourierCoefficient
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaFourierCoefficientWeylIntegral
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousThetaKernelComponents
 
@@ -28,7 +28,7 @@ theorem maj_mem {θ : InfFam D} {a b : ℕ} {φ : Mx D a b → ℂ} (hφ : φ �
   induction hφ using Submodule.span_induction with
   | mem φ h =>
     obtain ⟨f, g, hg, rfl⟩ := h
-    obtain ⟨F₀, hF₀⟩ := GlobalTheory.T.schwartz_exists_real_majorant _ f
+    obtain ⟨F₀, hF₀⟩ := _root_.GlobalTheory.CompanionTheory.SchwartzMaj.exists_nonneg_schwartz_majorant _ f
     refine ⟨fun x => F₀ (fun τ i j => compAt θ τ x i j) * (fun u => ((‖g u‖ : ℝ) : ℂ)) (fun i j => finPart D (x i j)),
       Submodule.subset_span ⟨F₀, fun u => ((‖g u‖ : ℝ) : ℂ), ⟨?_, ?_⟩, rfl⟩, fun x => ?_⟩
     · exact hg.1.comp fun z => ((‖z‖ : ℝ) : ℂ)
@@ -93,7 +93,7 @@ theorem character_quadratic_form_identity (V : HSp D) {ψ : AddChar (AF D.host.F
   ring
 
 theorem integrable_schwartz_slice {θ : InfFam D} (hθ : IsInfFam θ) {a : ℕ} (hn : r + t = n) (μt : Measure (Mx D a t)) [μt.IsAddHaarMeasure]
-    (Φ : schwartzA θ a n) (x : Mx D a r) : Integrable (fun v => Φ.1 (jn hn x v)) μt := GlobalTheory.T.integrable_schwartz_restriction_columns hθ hn μt Φ x
+    (Φ : schwartzA θ a n) (x : Mx D a r) : Integrable (fun v => Φ.1 (jn hn x v)) μt := _root_.GlobalTheory.CompanionTheory.ColSlice.integrable_slice hθ hn μt Φ x
 
 theorem fub {X Y : Type} [MeasurableSpace X] [MeasurableSpace Y] {μ : Measure Y} {ν : Measure X} [SFinite μ] [SFinite ν]
     {P : X → ℂ} {e : Y → X → ℂ} {O : Y → ℂ} (hP : Integrable P ν) (hO : Integrable O μ)
@@ -206,7 +206,7 @@ theorem core (hP : PartFT) {hn : r + t = n} (M : Maps D hn) (m : Meas D r t) (V 
     rw [_root_.GlobalTheory.CompanionTheory.WzFib.wz_eq_fib hP M m V hψ hχ hη hθ hμ hω hμr hμt b₀ hfib Φ, integral_prod _ (hIPe y)]
     refine integral_congr_ae (ae_of_all _ fun x => ?_)
     beta_reduce
-    rw [GlobalTheory.T.weil_representation_fourier_coefficient hP M V hψ hχ hη hθ hμ hω hμr hμt Φ hnb hw b y x]
+    rw [_root_.GlobalTheory.CompanionTheory.CellVal.weil_translate_frame hP M V hψ hχ hη hθ hμ hω hμr hμt Φ hnb hw b y x]
     refine integral_congr_ae (ae_of_all _ fun v => ?_)
     beta_reduce
     rw [inner_product_mul_eq_pairing V b₀ hb x v y]

@@ -3,9 +3,9 @@ import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.AbByPOfCo
 import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.InvariantSubspaceMobiusInverseRecEqOfFinrankLt
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.IsCharacterOverSubfieldRestrictClassFunctionOne
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.CharpolyBlockAndInvariantUnderStabilizerNilradic
-import Development.AbelianVarietyTheory.Proofs.CharacterTheory.GeneralLinearFunctionExtendZeroEndPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.CharacterTheory.GeneralLinearFunctionExtendZeroEndProperties
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.CharacterCosetSumEqZeroOfSubgroupSum
-import Development.AbelianVarietyTheory.Proofs.CharacterTheory.ExistsStandardUnipotentRadicalBijOnNilradicalStatement
+import Development.AbelianVarietyTheory.Proofs.CharacterTheory.ExistsStandardUnipotentRadicalBijOnNilradical
 open Polynomial GlobalTheory.CuspGL GlobalTheory.BI
 namespace GlobalTheory.CuspGL
 
@@ -37,7 +37,7 @@ theorem finsum_nilRad_extZero_eq_zero (F : Type) [Field F] [Finite F] (d : ℕ) 
     (h0 : ∑ᶠ u ∈ (H : Set (GL (Fin d) F)), χ u = 0)
     (g : Module.End F (Fin d → F)) (hg : ∀ x ∈ A, g x ∈ A) :
     ∑ᶠ h ∈ nilRad A, extZero χ (g + h) = 0 := by
-  obtain ⟨e1, e2, -, -⟩ := GlobalTheory.T.generalLinearFunctionExtendZeroEnd_properties F d χ
+  obtain ⟨e1, e2, -, -⟩ := _root_.GlobalTheory.CuspGL.extZero_spec F d χ
   by_cases hu : IsUnit g
   · have hm : IsUnit (LinearMap.toMatrix' g) := by
       have := hu.map (LinearMap.toMatrixAlgEquiv' (R := F) (n := Fin d))
@@ -77,11 +77,11 @@ theorem isPrimitive_extZero_of_sum_unipotent : ∀ (F : Type) [Field F] [Finite 
   have ha1 : Module.finrank F A < d := by
     have := Submodule.finrank_lt hA1
     simpa using this
-  obtain ⟨B, H, hB, hH, hb⟩ := GlobalTheory.T.exists_standardUnipotentRadical_bijOn_nilradical F d _ ha1.le
+  obtain ⟨B, H, hB, hH, hb⟩ := _root_.GlobalTheory.CuspGL.UnipNilRad.exists_unip_bijOn_nilRad F d _ ha1.le
   have h0 := hs _ ha0 ha1
   rw [← hH] at h0
   obtain ⟨e, he⟩ := exists_linearEquiv_mem_iff_of_finrank_eq A B hB.symm
-  have hcl := (GlobalTheory.T.generalLinearFunctionExtendZeroEnd_properties F d χ).2.2.2 (GlobalTheory.isChar_restrict_conj_one ℂ ℂ _ χ hχ).2.1
+  have hcl := (_root_.GlobalTheory.CuspGL.extZero_spec F d χ).2.2.2 (GlobalTheory.isChar_restrict_conj_one ℂ ℂ _ χ hχ).2.1
   have key := finsum_nilRad_extZero_eq_zero F d χ hχ B H hb h0 (e.conj g) (fun x hx => by
     rw [LinearEquiv.conj_apply_apply, he]
     apply hg

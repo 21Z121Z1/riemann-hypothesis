@@ -4,11 +4,11 @@ import Development.AutomorphicSpectrum.Statements.GeometryStatements.ZhangDimens
 import GroundTheory.HeightsAndTheta.Heights.KernelsLattice
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.StatementsBundles
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ThetaFunctionArchimedeanFrame
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ThetaMultiplierQuadraticCharacterStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ThetaMultiplierQuadraticCharacter
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PolarizedDataFieldExtension
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SectionSupNormFieldExtension
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionValueUniqueBaseChangeStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsFullTorsionNumberFieldStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionValueUniqueBaseChange
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsFullTorsionNumberField
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionValueIntegral
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SectionDivisibleByDenominator
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionFieldExtensionExists
@@ -228,7 +228,7 @@ theorem exists_div (D : PPData H L) (D' : PPData H L') (e : D.Ext D') (th : Out.
   have hyF : yF ^ N = 1 := push_pow D D' e f y yF rfl hT.2.1
   have hNm : 1 ≤ N * m := Nat.mul_pos hN hm
   have htors := tors_comb (ptAt_pow D x hx f) hyF
-  obtain ⟨⟨T', hT', -⟩, -⟩ := GlobalTheory.T.torsion_value_unique_base_change _ H L D 1 th K (baseF L f) _ (N * m) hNm htors
+  obtain ⟨⟨T', hT', -⟩, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Sl.TorsExist.torsVal_existsUnique _ H L D 1 th K (baseF L f) _ (N * m) hNm htors
   have hint : IsIntegral ℤ T' := integral_of_torsVal D th _ (baseF_eq f) _ hT'
   obtain ⟨r, hr, he⟩ := hrel K f y yF N T T' rfl hT hT'
   have hfd : f (d : L') ≠ 0 := by
@@ -304,8 +304,8 @@ theorem nrm_eq_of_tors (D : PPData H L) (D' : PPData H L') (e : D.Ext D') (th : 
   let yF : Over.mk (baseF L σ') ⟶ D.t.G := pushPt e.cart.1.w y
   have hyF : yF ^ N = 1 := push_pow D D' e σ' y yF rfl hy
   have htors := tors_comb (ptAt_pow D x hx σ') hyF
-  obtain ⟨⟨T, hT, -⟩, -⟩ := GlobalTheory.T.torsion_value_unique_base_change _ H L' D' (m ^ 2) s ℂ (emb σ') y N hN hy
-  obtain ⟨⟨T', hT', -⟩, -⟩ := GlobalTheory.T.torsion_value_unique_base_change _ H L D 1 th ℂ (baseF L σ') _ (N * m) (Nat.mul_pos hN hm) htors
+  obtain ⟨⟨T, hT, -⟩, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Sl.TorsExist.torsVal_existsUnique _ H L' D' (m ^ 2) s ℂ (emb σ') y N hN hy
+  obtain ⟨⟨T', hT', -⟩, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Sl.TorsExist.torsVal_existsUnique _ H L D 1 th ℂ (baseF L σ') _ (N * m) (Nat.mul_pos hN hm) htors
   obtain ⟨q, hq, he⟩ := hrel ℂ σ' y yF N T T' rfl hT hT'
   have n1 := TorsArch.torsVal_norm _ H L' D' σ' a' (m ^ 2) s (fun v => σ' (d : L') * f v) y w N T
     (isFn_const D' σ' a' s s' d hs f hf) rfl hT
@@ -339,7 +339,7 @@ theorem core (D : PPData H L) (D' : PPData H L') (e : D.Ext D') (th : Out.H0 D.t
     (f : Ix → (Fin D'.g → ℂ) → ℂ) (hf : ∀ i, a'.IsFn (s' i) (f i)) (hf' : ∀ i, a'.IsTheta (m ^ 2) (f i)) :
     (∀ i w, a'.nrm (m ^ 2) (f i) w ≤ M (σ'.comp (algebraMap L L'))) ∧
       ∀ F, a'.IsTheta (m ^ 2) F → ∃ c : Ix → ℂ, F = ∑ i, c i • f i := by
-  obtain ⟨u1, u2, u3, -⟩ := GlobalTheory.T.theta_multiplier_quadratic_character _ H L' D' σ' a'
+  obtain ⟨u1, u2, u3, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Sl.Unimod.frame_unimodular _ H L' D' σ' a'
   have hL2 : ∀ {g : ℕ} (_ : g = D.g) (a : ArchFrame D.t.PP (emb (σ'.comp (algebraMap L L'))) g) (θ : (Fin g → ℂ) → ℂ),
       a.IsFn th θ → a.IsThetaMeanSquareNorm θ (b (σ'.comp (algebraMap L L'))) := by
     intro g hg a θ h
@@ -403,7 +403,7 @@ end Ext
 theorem main : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host E) (L : Type) [Field L] [NumberField L] (D : PPData H L) (th : Out.H0 D.t.PP.L 1) (Φ : ℝ) (M : (L →+* ℂ) → ℝ) (m : ℕ), 1 ≤ m → D.HasTheta th Φ → D.SupLe th M → ∃ (L' : Type) (_ : Field L') (_ : NumberField L') (_ : Algebra L L') (D' : PPData H L') (_ : D.Ext D') (s : Fin (m ^ (2 * D.g)) → Out.H0 D'.t.PP.L (m ^ 2)), (∀ i, D'.SupLe (s i) fun σ' => M (σ'.comp (algebraMap L L'))) ∧ ∀ (σ' : L' →+* ℂ) (a : D'.Frame σ') (f : Fin (m ^ (2 * D.g)) → (Fin D'.g → ℂ) → ℂ), (∀ i, a.IsFn (s i) (f i)) → ∀ F, a.IsTheta (m ^ 2) F → ∃ c : Fin (m ^ (2 * D.g)) → ℂ, F = ∑ i, c i • f i := by
   intro E _ _ _ H L _ _ D th Φ M m hm hΘ hS
   obtain ⟨b, hb, -⟩ := hΘ
-  obtain ⟨K, _, _, _, x, hxm, hxu⟩ := GlobalTheory.T.exists_full_torsion_number_field E H L D m hm
+  obtain ⟨K, _, _, _, x, hxm, hxu⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Sl.TorsRat.torsion_rational E H L D m hm
   have ht := fun i => _root_.GlobalTheory.CompanionTheory.Ar.Sl.Transl.transl_main E H L D th m K (x i) hm (hxm i)
   choose K' fK nK aK aL tw hK' using ht
   letI := fK

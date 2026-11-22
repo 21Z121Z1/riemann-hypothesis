@@ -8,7 +8,7 @@ import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.GagaSection
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatZeroFromResolutionAndGagaStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatFirstFromResolutionAndGagaStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatFirstFromResolutionAndGaga
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FiniteConstantHolds
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.FinConstFor
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatTheoremOfParts
@@ -22,6 +22,6 @@ namespace GlobalTheory.CompanionTheory.Ar.Flat
 theorem thmFlatA_of_resK_gaga_partI :
     Geo.ResK.ResKStatement → GagaSections → PartI → ThmFlatA :=
   fun hR hG hP =>
-    _root_.GlobalTheory.CompanionTheory.Ar.Flat.thmFlatA_of_parts hP (GlobalTheory.T.flat_zero_from_resolution_and_gaga hR hG) (GlobalTheory.T.flat_first_from_resolution_and_gaga hR hG) _root_.GlobalTheory.CompanionTheory.Ar.Flat.finConst_of_all_hosts
+    _root_.GlobalTheory.CompanionTheory.Ar.Flat.thmFlatA_of_parts hP (GlobalTheory.T.flat_zero_from_resolution_and_gaga hR hG) (_root_.GlobalTheory.CompanionTheory.Ar.Flat.FlatFirstTheorem.flat_first_of_resolution_gaga hR hG) _root_.GlobalTheory.CompanionTheory.Ar.Flat.finConst_of_all_hosts
 
 end GlobalTheory.CompanionTheory.Ar.Flat

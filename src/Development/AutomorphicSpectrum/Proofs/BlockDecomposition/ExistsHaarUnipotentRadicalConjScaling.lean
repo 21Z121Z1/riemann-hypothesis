@@ -1,8 +1,8 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.SingularNullSets.WeakApproximationFinitePlace
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsRadNMulLevM
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnipotentRadicalHaarFromProductStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HaarSkewMatricesConjScalingStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnipotentRadicalHaarFromProduct
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HaarSkewMatricesConjScaling
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AddHaarCharLeftRightMatrixMulAdeleTensor
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StabilizerImageNoDualComponent
 open scoped Matrix NNReal ENNReal TensorProduct
@@ -92,7 +92,7 @@ theorem exists_radN_measure (D : D7) (B W : HSp D) (t : ℕ) (d : HypDec B W t) 
   haveI hβ : β.IsAddHaarMeasure := inferInstance
   haveI := sFinite_of_haar κ
   haveI := sFinite_of_haar β
-  obtain ⟨Ψ, hΨ, hH, hR⟩ := GlobalTheory.T.unipotent_radical_haar_from_product D B W t d κ β hκ hβ
+  obtain ⟨Ψ, hΨ, hH, hR⟩ := _root_.GlobalTheory.CompanionTheory.QKAvg.RadHaar.exists_coord D B W t d κ β hκ hβ
   refine ⟨(κ.prod β).map Ψ, hH, hR, ?_⟩
   rintro m ⟨g, a, hm⟩
   let f₁ : skewA D t → skewA D t := skewConj a.1
@@ -118,7 +118,7 @@ theorem exists_radN_measure (D : D7) (B W : HSp D) (t : ℕ) (d : HypDec B W t) 
       rw [← hconj, Ψ.apply_symm_apply]
     rw [this]
     exact (Ψ.continuous.comp ((hf₁.prodMap hf₂).comp Ψ.symm.continuous)).measurable
-  have hk := GlobalTheory.T.haar_skew_matrices_conj_scaling D t κ hκ a
+  have hk := _root_.GlobalTheory.CompanionTheory.SkewMod.map_skewConj D t κ hκ a
   have hb := map_lr a (matHom W g⁻¹) (GlobalTheory.CompanionTheory.HyperbolicDecompositionLaw.absA_det_matHom g⁻¹) β hβ
   rw [Measure.map_map hcm Ψ.continuous.measurable]
   have hc : (fun n : radN d => MulAut.conjNormal m n) ∘ Ψ = Ψ ∘ Prod.map f₁ f₂ := by

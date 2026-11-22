@@ -3,8 +3,8 @@ import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.TermLoc
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LocClosed
 import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.ConcreteLevelAdelicSubset
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FrameAdaptedIsometryOfFixingBothFrames
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InnerDatumStableIffIdentificationsCompatibleStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InnerDatumStabiliserFromAdaptedPairStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InnerDatumStableIffIdentificationsCompatible
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InnerDatumStabiliserFromAdaptedPair
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniqueIsometryFixingBothFramesOfFrameAdapt
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowLatticesSameInnerDifferByRationalUnipotent
@@ -126,7 +126,7 @@ theorem corr_stab {lam lam' Λ : LV D} (hγl : Formalism.HermitianLatticesTheory
   obtain ⟨hs1, hs2, hseq⟩ := s_adapt hγ hg hg' hb.1.1 hb.2.1.1 hn hn' he
   have hG : Adapt (g * γ) F0' F' := adapt_mul (adapt_mapLF hγ) hg'
   have hh' : h = (g * n⁻¹ * b.1 * g⁻¹) * (h⁻¹ * (g * n⁻¹ * b.1 * g⁻¹))⁻¹ := by group
-  refine ⟨hh0, (GlobalTheory.T.innerDatum_stable_iff_identifications_compatible D T T' F0 F F0' F' lam lam' Λ γ g h b.1 b.2 hγ hγl hg hg' hΛ hb.1 hb.2.1 hh0
+  refine ⟨hh0, (_root_.GlobalTheory.GdatIota.gdat_iff_iotaCompat D T T' F0 F F0' F' lam lam' Λ γ g h b.1 b.2 hγ hγl hg hg' hΛ hb.1 hb.2.1 hh0
     ?_ ?_).2 hb.2.2.2⟩
   · intro x hx
     rw [hh']
@@ -203,7 +203,7 @@ theorem stab_card : ∀ (D : D7) (X : HidaSetting D) (Y : Full X) (u u' : D.what
     exact corr_stab hγ hg hg2 hγl hΛ ((hB' b).1 b.2) (hfs b)
   · have hrow : IsRowLat D (X.Fu u) t.lam := (Y.rowsOK u).1 _ t.mem
     have hrow' : IsRowLat D (X.Fu u') t.lam' := (Y.rowsOK u').1 _ t.mem'
-    obtain ⟨b, hbB, hbC⟩ := GlobalTheory.T.innerDatumStabiliser_from_adapted_pair D _ _ (lf D (X.Fu u)) F (lf D (X.Fu u')) F' t.lam t.lam' Λ t.lin g h
+    obtain ⟨b, hbB, hbC⟩ := _root_.GlobalTheory.StabCnt.stab_onto D _ _ (lf D (X.Fu u)) F (lf D (X.Fu u')) F' t.lam t.lam' Λ t.lin g h
       hγ hγl hg hg2 hΛ (fun σ hσ hL => _root_.GlobalTheory.Unfold.sameInner_unip D _ (X.Fu u) t.lam t.lam σ hrow hrow hσ hL)
       (fun σ hσ hL => _root_.GlobalTheory.Unfold.sameInner_unip D _ (X.Fu u') t.lam' t.lam' σ hrow' hrow' hσ hL) hh
     refine ⟨⟨b, (hB' b).2 hbB⟩, ?_⟩

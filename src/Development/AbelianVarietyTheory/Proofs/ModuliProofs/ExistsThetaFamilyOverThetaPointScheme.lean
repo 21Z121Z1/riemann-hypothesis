@@ -7,7 +7,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsLiftClosedImmersionOfDense
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaLevelAbelianSchemePullback
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaLevelPullbackIdCompCancelStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaLevelPullbackIdCompCancel
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HasThetaConstantsIffOfThetaLevelPullback
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HasThetaConstantsRingBaseChange
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaConstantsUniqueUpToUnit
@@ -16,13 +16,13 @@ import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaFamilyFro
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaLevelShapePrimitivityPullbackDescent
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.VeryDenseClosedPointObjectsOfMinimalPrimes
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsGenericObjectMinimalPrimeModuliChart
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaLevelIsoUniqueOfDenseCommonFibresStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaLevelIsoUniqueOfDenseCommonFibres
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SecCoordBcScaleUnique
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SectionCoordinateVectorExistsLocally
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsSectionCoordinateVectorOfLocallyOnRingStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIdealOfLocally
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaLevelShapeOfGenericPoint
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.RelAmpleOfAmpleGeometricFibresAbelianSchemeStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.RelAmpleOfAmpleGeometricFibresAbelianScheme
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaLevelAbelianSchemeGlueAffineCover
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -84,7 +84,7 @@ theorem tpull {S S' : Scheme.{0}} {s : S ⟶ Sp o} (t : TObj g k J b s) (f : S' 
 theorem tcomp {S S' S'' : Scheme.{0}} {s : S ⟶ Sp o} {s' : S' ⟶ Sp o} {s'' : S'' ⟶ Sp o} {t : TObj g k J b s}
     {t' : TObj g k J b s'} {t'' : TObj g k J b s''} {f : S' ⟶ S} {f' : S'' ⟶ S'} {f'' : S'' ⟶ S} (h : TMap t' t f)
     (e : f' ≫ f = f'') : TMap t'' t' f' ↔ TMap t'' t f'' :=
-  e ▸ (T.thetaLevelPullback_id_comp_cancel o g k J b S S' S'' s s' s'' t t' t'').2 f f' h
+  e ▸ (_root_.GlobalTheory.ZM.tmap_id_comp_cancel o g k J b S S' S'' s s' s'' t t' t'').2 f f' h
 
 theorem shape_pull {S S' : Scheme.{0}} {s : S ⟶ Sp o} {s' : S' ⟶ Sp o} {t : TObj g k J b s}
     {t' : TObj g k J b s'} {f : S' ⟶ S} (h : TMap t' t f) (H : t.Shape Mat κ) : t'.Shape Mat κ := fun j =>
@@ -101,7 +101,7 @@ theorem shape_of_fibres (h₁ : Out.Laws) {S : Scheme.{0}} [IsLocallyNoetherian 
       ∃ t' : TObj g k J b (y ≫ s), TMap t' t y ∧ t'.Shape Mat κ) : t.Shape Mat κ := by
   intro j
   have := t.ab.proper
-  refine ⟨fun i => ?_, T.relAmple_of_ample_geometricFibres_abelianScheme h₁ S t.pol _ (DVR.linComb_isLB _ t.isLB _ _) fun K _ _ y => ?_⟩
+  refine ⟨fun i => ?_, _root_.GlobalTheory.FibreAmple.relAmple_of_geometricFibres h₁ S t.pol _ (DVR.linComb_isLB _ t.isLB _ _) fun K _ _ y => ?_⟩
   · refine Over.OverMorphism.ext (hom_ext_of_geometricPoints_dense (X := S) t.A.hom _ _
       ((Over.w _).trans (Over.w _).symm) Set.univ dense_univ fun K _ _ y _ => ?_)
     obtain ⟨t', ⟨φ, h, hL, hpt, hact⟩, hs⟩ := H K y
@@ -246,7 +246,7 @@ theorem exists_glued (h₁ : Out.Laws) (h₂ : Out.Laws2) (ho : Odd N') {m : ℕ
     obtain ⟨β, rfl⟩ := exists_spMap s'
     obtain ⟨u', hu'⟩ := tpull (t i') a' _ e₁
     refine (tcomp hu' (Category.id_comp _)).1
-      (T.thetaLevel_iso_unique_of_dense_common_fibres h₁ h₂ o g N' J b m A β u u' hm hm' ho (Dense.mono (fun p _ => ?_) dense_univ)).1
+      (_root_.GlobalTheory.TUniq.iso_unique_of_dense h₁ h₂ o g N' J b m A β u u' hm hm' ho (Dense.mono (fun p _ => ?_) dense_univ)).1
     obtain ⟨K, _, _, y, hy⟩ := exists_geomPt p
     obtain ⟨w, hw⟩ := tpull u y _ rfl
     refine ⟨K, _, y, w, hy, hw, (tcomp hu' rfl).2 ?_⟩

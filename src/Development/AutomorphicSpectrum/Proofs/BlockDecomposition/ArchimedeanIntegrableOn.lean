@@ -10,10 +10,10 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.B
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Proportional
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterBridge
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothWeightPullbackIsPotential
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RationalSectionFiniteOpenCoverStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RationalSectionFiniteOpenCover
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LogNormContinuousOffDivisorStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ComplexPointLiftsToMulticone
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MulticonePointDescendsToSubvarietyStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MulticonePointDescendsToSubvariety
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PointsEqIffSameTorusOrbitStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsUnderOfSameOrbit
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HolomorphicLiftGivesHolomorphicSectionStatement
@@ -21,7 +21,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ZeroLocusRegula
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeasureZeroSetAvoidedByHolomorphicMap
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothWeightPullbackChartFormula
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DehomogenizedEvalEqRatio
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RestrictedFormNonzeroOnGenericPointStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RestrictedFormNonzeroOnGenericPoint
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HypersurfaceComplexPointsMeasurableNull
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothWeightsIntegralPullbackFormula
 set_option autoImplicit false
@@ -55,7 +55,7 @@ theorem exists_modif (hK : ReciprocityTheory.ChartRestriction.G.Geo.ResK.ResKSta
   obtain ⟨a, ha⟩ := hS f hfS
   have hfJ : f ∈ J := hJ ▸ Ideal.subset_span hfS
   have hJz : ∀ z ∈ mcPts J, eval z (map (Int.castRingHom ℂ) f) = 0 := fun z hz => hz.2 f hfJ
-  choose F hF' using fun x => GlobalTheory.T.multicone_point_descends_to_subvariety m n X i (R.lift x x) (R.mem x x (R.mem_U x))
+  choose F hF' using fun x => _root_.GlobalTheory.CompanionTheory.MPDict.UnderSub.exists_cxPt_of_mem_mcPts m n X i (R.lift x x) (R.mem x x (R.mem_U x))
   have hU : ∀ x, ∀ y ∈ R.U x, IsUnder (PtsOver.map i rfl _ (F y)) (R.lift x y) := fun x y hy =>
     _root_.GlobalTheory.CompanionTheory.MixZ.Orbit.isUnder_of_sameOrbit m n _ _ _ (hF' y) (R.compat x y y ⟨hy, R.mem_U y⟩)
   have key (x : R.X) (j : Fin R.A.n) := GlobalTheory.T.holomorphic_lift_gives_holomorphic_section m n X i D
@@ -106,7 +106,7 @@ theorem integrableOn_of_modif {X : Scheme.{0}} [IsIntegral X] {q : X ⟶ Sp ℤ}
     {r : C.ι → X.functionFieldˣ} (hr : IsRatSec C r) (ε : ℤˣ) :
     IntegrableOn (GlobalTheory.Cartier.logNorm ψ r) (offSupp q σ (divOfRatSec ψ.isLB hr)) (φ.chernPart D ε) := by
   classical
-  obtain ⟨N, W, b, a, d, hcov, hWb, hd, hf⟩ := GlobalTheory.T.rational_section_finite_open_cover ψ hr
+  obtain ⟨N, W, b, a, d, hcov, hWb, hd, hf⟩ := _root_.GlobalTheory.CompanionTheory.MixZ.ArchRep.logNorm_finite_rep ψ hr
   set S := offSupp q σ (divOfRatSec ψ.isLB hr) with hSdef
   have hSo : IsOpen S := isOpen_offSupp _
   have hgc := GlobalTheory.T.log_norm_continuous_off_divisor ψ hψ hr

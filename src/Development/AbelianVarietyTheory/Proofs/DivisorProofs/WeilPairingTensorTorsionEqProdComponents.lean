@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.FamiliesValues
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorsionPairingValuesOfFamiliesValues
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AllSixAbelianSchemeLawsHold
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorDataValuesFacts
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorTorsionPairingEqProdFactorPairingsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorTorsionPairingEqProdFactorPairings
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -29,7 +29,7 @@ theorem weilQk_tens : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRing R], 
   have hF := _root_.GlobalTheory.Mum.TensTor.tensFacts_holds R ‹_› D D' W T F N N' ν ν'
   obtain ⟨a', as, ha', has, hra⟩ := hp
   obtain ⟨b', bs, hb', hbs, hrb⟩ := hq
-  have hv := GlobalTheory.T.tensorTorsionPairing_eq_prod_factor_pairings F N N' W (cmp T ν ν') (chi T ν ν') (wv T ν ν') hF k hk1 a' b' as bs hra hrb
+  have hv := _root_.GlobalTheory.Mum.TensTor.PairVal.wp_eq_prod F N N' W (cmp T ν ν') (chi T ν ν') (wv T ν ν') hF k hk1 a' b' as bs hra hrb
   refine (hW' p' q' a' b' _ ha' hb').2 ?_
   rw [hv]
   have hz' : ∀ i j, z i j = N.wp (as i) (bs j) := fun i j =>

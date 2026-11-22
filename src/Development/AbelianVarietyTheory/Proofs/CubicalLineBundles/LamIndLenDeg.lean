@@ -7,14 +7,14 @@ import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ThetaUniform
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LamDegStLogOm
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.EqZeroOfPow
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.FormLetterLe
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.CmLieStatementsIffLibraryStatement
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.CmLieStatementsIffLibrary
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsKroneckerCmLogPeriodEqConst
 open NumberField Formalism.BasicNotions Formalism.MainNotions Formalism.L2.Pj
 
 theorem GlobalTheory.LamF.lam_ind_len_deg :
     Formalism.L2.Pj.abelian₂.LamIndSt ∧ Formalism.L2.Pj.abelian₂.LamLenSt ∧
       ∀ (D : D7) (Q : Par D), Q.PinHost → ∀ large₂ : SizeData₂ D, Formalism.L2.Pj.abelian₂.LamDegSt Q.H large₂.logOm := by
-  obtain ⟨hdeg, hind, hlen⟩ := GlobalTheory.T.cmLieStatements_iff_library
+  obtain ⟨hdeg, hind, hlen⟩ := _root_.GlobalTheory.LamF.lambdaBundle_conditions_iff
   have hL : ReciprocityTheory.ChartRestriction.G.Out.Laws := GlobalTheory.firstFiveLaws.1
   refine ⟨hind.1 GlobalTheory.LamF.Ind.lamInd, hlen.1 (GlobalTheory.LamF.lamLen GlobalTheory.thetaUnifAV_all hL), fun D Q hQ large₂ => ?_⟩
   obtain ⟨_, χ, hχ, h⟩ := _root_.GlobalTheory.LamF.exists_kronecker_logOm_eq D Q hQ large₂

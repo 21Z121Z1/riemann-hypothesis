@@ -209,7 +209,7 @@ theorem replace_gen {II : IntersectionSystem} (hII : IsFullIntersectionSystem II
   have hsum := tendsto_finsetSum Finset.univ fun i (_ : i ∈ Finset.univ) => hstep i
   simp only [Finset.sum_const_zero] at hsum
   refine hsum.congr fun t => ?_
-  exact (GlobalTheory.T.telescoping_coordinate_difference (HermLine J) (e + 1) (II K J P (e + 1)) _ _).symm
+  exact (_root_.GlobalTheory.CompanionTheory.Telescope.telescope_fin_positions (HermLine J) (e + 1) (II K J P (e + 1)) _ _).symm
 
 theorem replace : Replace := by
   intro _ II hII K _ J _ P B e a b R Θ L s nb mb Wb σ _ A M m n f g w C hab hP hΘ hΘp hL hs hsnc hle hA hM hw hw0

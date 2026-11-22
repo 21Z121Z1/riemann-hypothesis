@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsUniqueLi
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.EqZeroOfFderivEqZero
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsLinearEquivOfLifting
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsMonHomLift
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolomorphicUniformizationDimEqStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolomorphicUniformizationDimEq
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolomorphicUniformizationDiffUnique
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsLieBasis
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.ContinuousOnValue
@@ -24,7 +24,7 @@ namespace GlobalTheory.CompanionTheory.Ar.Cusp.FibreUnique
 
 theorem dim_eq_of_smooth {A : Over (Sp ℂ)} [GrpObj A] {L : LB A.left} {g d : ℕ} (u : HolUnif A L g)
     (hs : SmoothOfRelativeDimension d A.hom) : g = d :=
-  GlobalTheory.T.holomorphic_uniformization_dim_eq A L g d u hs
+  _root_.GlobalTheory.CompanionTheory.Ar.UnifDim.eq_relativeDimension A L g d u hs
 
 theorem isDiff_unique_off {A : Over (Sp ℂ)} [GrpObj A] {L : LB A.left} {g : ℕ} (u : HolUnif A L g)
     (hs : SmoothOfRelativeDimension g A.hom) (hc : ConnectedSpace A.left) {v : epsR ℂ ⟶ A} (hv : ¬ IsTangent v)

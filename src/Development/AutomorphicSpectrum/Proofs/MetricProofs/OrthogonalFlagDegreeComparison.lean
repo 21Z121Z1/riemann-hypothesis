@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsOrthFull
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.NormalizedDegreeOrthogonalSumStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.NormalizedDegreeOrthogonalSum
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.NormalizedDegreeFullRankSublattice
 
 open GroundTheory.Heights₂.Heights NumberField TensorProduct ComplexAt GlobalTheory.CompanionTheory.Ar Matrix
@@ -15,7 +15,7 @@ theorem iSup_part_degree_rank {K : Type} [Field K] [NumberField K] {E : Hermitia
       E.rank (⨆ a, A.part a) = Module.finrank (𝓞 K) E.carrier := by
   unfold GlobalTheory.CompanionTheory.Ar.FlagPair.IsOrthFull at h
   obtain ⟨hort, hcard⟩ := h
-  obtain ⟨hdeg, hrk⟩ := GlobalTheory.T.normalized_degree_orthogonal_sum K E (Ψ ⊕ Ψ) A.part hort
+  obtain ⟨hdeg, hrk⟩ := _root_.GlobalTheory.CompanionTheory.Ar.OrthSum.normDegree_rank_iSup K E (Ψ ⊕ Ψ) A.part hort
   refine ⟨?_, ?_⟩
   · rw [hdeg, Fintype.sum_sum_type]
     rfl

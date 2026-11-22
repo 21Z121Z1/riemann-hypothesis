@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPairingStdP
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulRealAdEqZero
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsAdmissibleFiniteFactorArchimedeanSchwartzStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsAdmissibleFiniteFactorArchimedeanSchwartz
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLineOneParameter
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionUnitaryCompact
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsHeisenbergLineDerivativeFormula
@@ -42,7 +42,7 @@ theorem deriv_line_quad : GlobalTheory.FunPr.Hypotheses₂ → ∀ {F E : Type} 
     (GlobalTheory.ArchUniq.Coord.isPairing_trP (F := F) (Fin n × Fin d)) A T hAc hadd h0 hA hiso hc1 (hc2 μ inferInstance)
   choose u hu hDu using fun i => _root_.GlobalTheory.HeisDerivArch.exists_heisLine_actsD_eq M ψ hψ (a i)
   choose v hv hDv using fun i => _root_.GlobalTheory.HeisDerivArch.exists_heisLine_actsD_eq M ψ hψ (b i)
-  obtain ⟨r₀, hr₀, hinj⟩ := GlobalTheory.T.exists_admissible_finiteFactor_archimedeanSchwartz (F := F) (Fin n × Fin d)
+  obtain ⟨r₀, hr₀, hinj⟩ := _root_.GlobalTheory.ArchUniq.exists_admissible_finite_factor (F := F) (Fin n × Fin d)
   refine ⟨m, u, v, c, c₀, fun i => ⟨hu i, hv i⟩, ?_⟩
   intro f g₁ g₂ h1 h2 F₁ hF y
   have eF : ∀ t, F₁ t = T t f := fun t => hinj _ _ ((hF t r₀ (hr₀ f)).symm.trans (hT t f r₀ (hr₀ f)))

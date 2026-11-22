@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementRe
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GFrames
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetTermBasicFacts
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalExtend
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NumberFieldLatticeDeterminedByLocalLatticesStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NumberFieldLatticeDeterminedByLocalLattices
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniqueGlobalLatticeOfLocalLattices
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StrongApproxStab
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoordinateLatticeUniqueTermAlmostAllPlaces
@@ -94,8 +94,8 @@ variable {F E : Type} [Field F] [NumberField F] [Field E] [NumberField E] [Algeb
 theorem lrel_of_local (G : GFrames A r k) {d : G.Dat} {Γ Γ' : G.Lt} (hT : G.IsTerm d Γ)
     (hL' : Submodule.IsLattice E Γ') (H : ∀ p, ∃ h ∈ (G.S p).St, A.lat p Γ' = h • A.lat p Γ) :
     G.LRel Γ Γ' := by
-  have recΓ := GlobalTheory.T.numberField_lattice_determined_by_local_lattices A _ Γ hT.1
-  have recΓ' := GlobalTheory.T.numberField_lattice_determined_by_local_lattices A _ Γ' hL'
+  have recΓ := _root_.GlobalTheory.HL.PlacesRec.lattice_local A _ Γ hT.1
+  have recΓ' := _root_.GlobalTheory.HL.PlacesRec.lattice_local A _ Γ' hL'
   let n : ∀ p, (G.S p).GLV := fun p => if A.lat p Γ' = A.lat p Γ then 1 else (H p).choose
   have hn : ∀ p, n p ∈ (G.S p).St ∧ A.lat p Γ' = n p • A.lat p Γ := by
     intro p
@@ -168,7 +168,7 @@ theorem glue_terms (G : GFrames A r k) (hk : 4 * r + 7 ≤ k) {d : G.Dat} {Λ₀
     (hΛ : ∀ p, (G.S p).IsTerm (d p) (Λ p)) :
     ∃ Γ, G.IsTerm d Γ ∧ ∀ p, ∃ h ∈ (G.S p).St, A.lat p Γ = h • Λ p := by
   have hstd := _root_.GlobalTheory.HL.StdPlace.coordinate_lattice_standard A r k G hk
-  have rec₀ := GlobalTheory.T.numberField_lattice_determined_by_local_lattices A _ Λ₀ h₀.1
+  have rec₀ := _root_.GlobalTheory.HL.PlacesRec.lattice_local A _ Λ₀ h₀.1
   obtain ⟨B, hBfin, hB⟩ : ∃ B : Set (HeightOneSpectrum (𝓞 F)), B.Finite ∧ ∀ p ∉ B,
       A.lat p Λ₀ = Submodule.span (A.L p).O (Set.range fun i => (Pi.single i 1 : (G.S p).V)) ∧
       ∃ h ∈ (G.S p).St, Λ p = h • Submodule.span (A.L p).O (Set.range fun i => (Pi.single i 1 : (G.S p).V)) := by

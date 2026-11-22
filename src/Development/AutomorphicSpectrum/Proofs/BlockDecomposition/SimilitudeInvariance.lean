@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ScalHHermScal
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SimilitudeBetweenNonemptySpheresStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SimilitudeBetweenNonemptySpheres
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaMeasureIndependentChoices
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.BinaryMassMeans.MeanVal
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.SiegelWeilMeasureOfCongruentForm
@@ -34,7 +34,7 @@ theorem JR_sim {F E : Type} [Field F] [Field E] [Algebra F E] (R : Type) [CommRi
 theorem simil : PositivityTheory.Rg.Mass.Simil := by
   intro F E _ _ _ _ _ σ J d b li lam μ 𝓕 mi m hcm hJ _ hli hlam hμ h𝓕 hmi hm β β' hβ hβ' hs hs' c hc
   have hl0 : β' / β ≠ 0 := div_ne_zero hβ' hβ
-  obtain ⟨γ, hγ⟩ := GlobalTheory.T.similitude_between_nonempty_spheres F E σ hcm J hJ β β' hβ hβ' hs hs'
+  obtain ⟨γ, hγ⟩ := _root_.GlobalTheory.CompanionTheory.SimilExists.exists_similitude F E σ hcm J hJ β β' hβ hβ' hs hs'
   obtain ⟨μ', 𝓕', hμ', h𝓕', hth⟩ := _root_.GlobalTheory.CompanionTheory.SW.SimTheta.theta_simil F E σ hcm 2 J hJ μ 𝓕 hμ h𝓕 γ (β' / β) hl0 hγ
   have hT : (fun _ _ => algebraMap F E β' : Matrix (Fin 1) (Fin 1) E) =
       (algebraMap F E (β' / β)) • (fun _ _ => algebraMap F E β : Matrix (Fin 1) (Fin 1) E) := by

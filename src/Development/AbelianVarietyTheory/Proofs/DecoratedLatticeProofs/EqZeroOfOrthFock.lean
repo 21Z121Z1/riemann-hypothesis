@@ -3,8 +3,8 @@ import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ValLast
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleDiscreteSeriesOfHasParam
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.OrthRealHeisenbergTranslatesVacuumOfOrthFockStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.OrthAllHeisenbergTranslatesOfOrthRealLatticeVacuStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.OrthRealHeisenbergTranslatesVacuumOfOrthFock
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.OrthAllHeisenbergTranslatesOfOrthRealLatticeVacu
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaFunEqZeroOfOrthHeisenbergTranslates
 
 noncomputable section
@@ -23,7 +23,7 @@ theorem eq_zero_of_orth_fock : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (θ
     have h1 := hvac.2.norm.2 (v.μ, v.𝓕) v.covol
     simp [h0, nrm2] at h1
   exact _root_.GlobalTheory.ThetaIrred.eq_zero_of_orth_heis D ψ hvac.1 S T v f vac hf hvac.2.theta hne
-    (GlobalTheory.T.orth_allHeisenbergTranslates_of_orth_real_latticeVacuum D ψ θ hθ S T x y hx hy vac hvac v f hf hlat
-      (GlobalTheory.T.orth_realHeisenbergTranslates_vacuum_of_orth_fock D ψ θ hθ S T x y hx hy vac hvac v f hf horth))
+    (_root_.GlobalTheory.FinOrth.orth_all D ψ θ hθ S T x y hx hy vac hvac v f hf hlat
+      (_root_.GlobalTheory.FockRealOrth.orth_real_translate D ψ θ hθ S T x y hx hy vac hvac v f hf horth))
 
 end GlobalTheory.FockTotal

@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Degenerations.IsNormalSchemeSp
 import Development.AbelianVarietyTheory.Definitions.Degenerations.IsAffineSplitTorusLeft
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SplitChartsTorusExtensionOverFieldStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SplitChartsTorusExtensionOverField
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.WeightedProjectiveChartsSplitGenericPointStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsDenseClosedPointsChartSplitting
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AbelianSchemeProperClosureDataBasicProperties
@@ -38,7 +38,7 @@ theorem exists_splitExt_of_split (K : Type) [Field K] (H : Over (Sp K)) [GrpObj 
     [IsSeparated H.hom] [QuasiCompact H.hom] (C : Charts H.left) (d : ℕ) (c : Fin d → C.Cl) (h : C.Split c) :
     ∃ E : SplitExt (Sp K), E.IsGt H := by
   obtain ⟨hc, i, hT⟩ := h
-  obtain ⟨B, gB, q, hB, hq, hf, hs, ha, hk, -⟩ := GlobalTheory.T.splitCharts_torus_extension_over_field K H C d c i hc hT
+  obtain ⟨B, gB, q, hB, hq, hf, hs, ha, hk, -⟩ := _root_.GlobalTheory.SplitChartsField.main K H C d c i hc hT
   exact GlobalTheory.exists_splitExt_isGt_of_torusExtension K H ⟨{
     X := Fin d → ℤ, B := B, grpB := gB, isAbelian := hB, i := i, q := q, i_hom := hT.hom, q_hom := hq,
     q_flat := hf, q_surjective := hs, q_quasiCompact := inferInstance, isKernel := hk }⟩

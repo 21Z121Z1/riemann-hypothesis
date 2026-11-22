@@ -4,7 +4,9 @@ import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagModelAnalyticDataExists
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.NotMemTop
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.MinorIJOneSelf
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagGapPullbackThirdStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagGapPullbackThird
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.HasStepCharts
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.SelM
 open MvPolynomial MeasureTheory Filter Topology Matrix ReciprocityTheory.AnForm ReciprocityTheory.AnForm.M ReciprocityTheory.AnForm.P ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.AI.I1 ReciprocityTheory.ChartRestriction.G.AI.I2 ReciprocityTheory.ChartRestriction.G.AI.I4 GlobalTheory.CompanionTheory.Ar.PB GroundTheory.Heights₂.Heights GroundTheory.Heights₂.Heights.LowerBoundFree
 open scoped ComplexOrder Classical
 
@@ -66,7 +68,7 @@ theorem step_member [Fintype Ψ] [DecidableEq Ψ]
     · rw [stepGap, hh, sub_self]; rfl
     · rfl
   have hps := PositivityTheory.Xgp.plurisubharmonic_charts.isPshOn_stepPot K ι Φ y Ψ N j M n BM p K ι id id e R pr hp
-    (GlobalTheory.T.flag_gap_pullback_third K ι Φ y Ψ N j M n BM p K ι id id e R pr hyp)
+    (_root_.GlobalTheory.CompanionTheory.Ar.PB.StepW.ChartEx.hasStepCharts K ι Φ y Ψ N j M n BM p K ι id id e R pr hyp)
   rw [h0] at hps
   have hps' : IsPsh R.A (potOf R (fsHerm ι (M.dy p)) + LocPot.ofFun (0 : R.X → ℝ)) := isPsh_of_univ hU hps
   have hsm0 : R.A.Smooth (0 : R.X → ℝ) := fun jj => by

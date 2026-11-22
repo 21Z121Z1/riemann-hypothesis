@@ -1,15 +1,16 @@
 import Development.WeilBound.CoreStatements.AutomorphicKernels.GrothendieckRingPolynomial.ProdList
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.BernsteinZelevinskyGL.TopAdm
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CanonicalSegmentsReverseOrderedStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CanonicalSegmentsReverseOrdered
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContragredientProductIrreducible
+import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.LSegJacquet
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsCanonicalSegmentOrderStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ReverseOrderedProductPermEquivStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CanonicalProductEquivMultiplicityOneStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetMultiplicityPosStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ReverseOrderedProductPermEquiv
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CanonicalProductEquivMultiplicityOne
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetMultiplicityPos
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetMultiplicityOfEquiv
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.ZelevinskyCosocles.LUnlinkedComm
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContragredientProductIrreducibleStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductIrreducibleFiniteLength
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JhMultMulLeOfSteps
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InSupportOfIsSubquotient
@@ -125,7 +126,7 @@ theorem jhMult_le_one_of_equiv (y : IrrGL k) {V : Type} [AddCommGroup V] [Module
   have hnt := nontrivial_of_irreducible hirr
   obtain ⟨v, hv⟩ := exists_ne (0 : y.2.rep.V)
   have hpos : 1 ≤ jm z hz (IrrGL.rep y) :=
-    GlobalTheory.T.jacquet_multiplicity_pos hA z hz (IrrGL.rep y) y.2.rep.smooth (e.toIntertwiningMap.comp f)
+    _root_.GlobalTheory.CompanionTheory.FrobJm.one_le_jm hA z hz (IrrGL.rep y) y.2.rep.smooth (e.toIntertwiningMap.comp f)
       ⟨v, fun h0 => hv (hf (e.injective (by simpa using h0)))⟩
   have hle := jhMult_mul_jm_le z hz (prodIrr z hz) (IrrGL.rep y) (isSmooth_prodIrr z hz)
   rw [jhMult_congr_right _ e]
@@ -138,12 +139,12 @@ theorem jhMult_rev_le_one (c : Cls k) (_𝔪 : Multiset (Segment k)) {h : ℕ} (
   have hA := PositivityTheory.Tls2.BZGL.irreducibleAdmissibleGL_top
   have hΓ : IsRevOrdered (Δ ∘ Fin.rev) := fun i j hij => hΔo (Fin.rev j) (Fin.rev i) (Fin.rev_lt_rev.2 hij)
   obtain ⟨σ, hσ⟩ := GlobalTheory.T.exists_canonical_segment_order (Δ ∘ Fin.rev)
-  have hσr := GlobalTheory.T.canonical_segments_reverse_ordered _ hσ
+  have hσr := _root_.GlobalTheory.CompanionTheory.Canon.isRevOrdered_of_isCanon _ hσ
   have hdrs : ∑ a, ((x ∘ Fin.rev) (σ a)).1 = y.1 := by
     rw [← hdr]; exact Equiv.sum_comp σ (fun a => ((x ∘ Fin.rev) a).1)
-  obtain ⟨e1⟩ := GlobalTheory.T.reverse_ordered_product_perm_equiv hA c.com (Δ ∘ Fin.rev) σ (x ∘ Fin.rev) hdr hdrs hΓ hσr (fun i => hΔL (Fin.rev i))
+  obtain ⟨e1⟩ := _root_.GlobalTheory.CompanionTheory.ReorderRev.prodIrr_equiv_of_isRevOrdered hA c.com (Δ ∘ Fin.rev) σ (x ∘ Fin.rev) hdr hdrs hΓ hσr (fun i => hΔL (Fin.rev i))
   obtain ⟨g, z, hz, ⟨e2⟩, hjm⟩ :=
-    GlobalTheory.T.canonical_product_equiv_multiplicity_one hA c.jac c.unl ((Δ ∘ Fin.rev) ∘ σ) ((x ∘ Fin.rev) ∘ σ) hdrs hσ (fun i => hΔL (Fin.rev (σ i)))
+    _root_.GlobalTheory.CompanionTheory.GroupCount.groupCount hA c.jac c.unl ((Δ ∘ Fin.rev) ∘ σ) ((x ∘ Fin.rev) ∘ σ) hdrs hσ (fun i => hΔL (Fin.rev (σ i)))
   have e : (prodIrr (x ∘ Fin.rev) hdr).Equiv (prodIrr z hz) := e1.trans e2
   exact jhMult_le_one_of_equiv y hsoc e hjm
 

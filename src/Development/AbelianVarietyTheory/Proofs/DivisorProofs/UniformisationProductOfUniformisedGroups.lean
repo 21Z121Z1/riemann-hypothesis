@@ -13,7 +13,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsLastLast
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompatBox
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThickeningProductIsoPreservesCubicalStructureStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBoxFamilyProductDegeneration
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoxFamilyLinearIndependentProductDegenerationStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoxFamilyLinearIndependentProductDegeneration
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExpansionModIdealPowBoxProductEqBoxProductStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothDimTensor
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FamDimOfExpBij
@@ -327,7 +327,7 @@ theorem exists_unif (hR : AdmBase R I) (hD : IsSumDeg D.toPre D₁.toPre D₂.to
       (h₁ := ((Over.pullback (jK R)).map (fst G₁ G₂)).left) (h₂ := ((Over.pullback (jK R)).map (snd G₁ G₂)).left)
       wL hwL U₁.LG.isLB U₂.LG.isLB U.LG.isLB (fun _ => (pullback.lift_fst _ _ _).symm)
       (fun _ => (pullback.lift_fst _ _ _).symm) (σ₁ a.1) (σ₂ a.2)
-  have hli := GlobalTheory.T.boxFamily_linearIndependent_productDegeneration R _ _ _ p₁ p₂ q₁ q₂ hD wM (FractionRing R) k _ _ b₁ b₂ b b₁.linearIndependent
+  have hli := _root_.GlobalTheory.ProdIndep.boxFam₂_linearIndependent R _ _ _ p₁ p₂ q₁ q₂ hD wM (FractionRing R) k _ _ b₁ b₂ b b₁.linearIndependent
     b₂.linearIndependent hb
   have hc : Fintype.card (Fin (k ^ A₁.g) × Fin (k ^ A₂.g)) = k ^ A₁.g * k ^ A₂.g := by
     rw [Fintype.card_prod, Fintype.card_fin, Fintype.card_fin]

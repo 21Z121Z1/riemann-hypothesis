@@ -33,12 +33,12 @@ theorem schurSt_of_big_tie_uniform : ∀ Cg cb Cu cT CT C1 : ℝ, ∃ C₀ : ℝ
   obtain ⟨t1, t2, t3, t4, t5, -, t7, t8, -, t10, -, -, t13, -, t15⟩ := hS'
   obtain ⟨-, -, -, -, hz, hz', -, -, -, -, -, hN, -, -⟩ := hW
   obtain ⟨-, -, a3, a4, a5, a6, -, -, -, -, P, hP, hdeg⟩ := hA
-  obtain ⟨c, hc, hdens, -⟩ := GlobalTheory.T.exists_unique_haarDensity_at_identity _ (GG D.R.k D.R.rS) W.μG (PI.QuotSetU.UnitaryGroupMassFormula.unitary_hermitian_group _ _) s6
+  obtain ⟨c, hc, hdens, -⟩ := _root_.GlobalTheory.MatHaarDensity.exists_hasDens _ (GG D.R.k D.R.rS) W.μG (PI.QuotSetU.UnitaryGroupMassFormula.unitary_hermitian_group _ _) s6
   have hSch := _root_.GlobalTheory.FdegDens.schur_of_dens D.R.k D.R.rS A.σ (epsSH D.R) D.cd _ P A.deg c W.μG (htie _ _) hP hdeg hc s6 hdens
   have hd : 0 < A.deg := hdeg.1
   set κ : ℝ := (2 * D.host.v) ^ (-((D.R.rS : ℝ) * D.R.k)) * θ with hκ
   have hκ0 : 0 < κ := mul_pos (Real.rpow_pos_of_pos (by linarith) _) hθ0
-  obtain ⟨hmeas, hdis⟩ := GlobalTheory.T.besselDoubleCosetMeasure_bigCell_eq D.R.k D.R.rS W.z W.z' μsec W.μG W.μW W.μW' c κ hk1 s1 t1 s2 t2 hsec hc hκ0
+  obtain ⟨hmeas, hdis⟩ := _root_.GlobalTheory.DoubleCosetMeasure.isDis_bigCell D.R.k D.R.rS W.z W.z' μsec W.μG W.μW W.μW' c κ hk1 s1 t1 s2 t2 hsec hc hκ0
     s6 hdens s7 s8 t7 t8
   have hN' : haarLie (Nset D.R.k D.R.rS) (ENNReal.ofReal κ) = W.μN := hN.symm
   rw [hN'] at hdis

@@ -1,6 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnitaryOnTheta
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryGroupCharacterEqOneOfTrivialIntegralStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryGroupCharacterEqOneOfTrivialIntegral
+import Formalism.SatakeDualWeyl.StatementF
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertPlaceHeckeDoubleCosetsInverseRepsLabel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnramifiedConjugatePlaceUniformiser
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsSplitAt
@@ -30,7 +31,7 @@ theorem core (hc : CMData (maximalRealSubfield E) E) (V : HSpace E)
   obtain ⟨σ, π, hσE, hσ⟩ := GlobalTheory.FixedPrime.exists_isUnramInv v P hin
   obtain ⟨ψ, hψE, hψσ, hψO⟩ := _root_.GlobalTheory.InertCompletion.exists_ringEquiv_completion E v P hin σ hσE hσ.2.1
   obtain ⟨h, hfr, hon⟩ := exists_orthonormal hc V v
-  obtain ⟨s1, s2, s3⟩ := GlobalTheory.T.adelicUnitary_supportedAtFinitePlace_eq_localUnitary _ E hc V v e he
+  obtain ⟨s1, s2, s3⟩ := _root_.GlobalTheory.SuppLocal.supp_local _ E hc V v e he
   let ψ' : LocAlg v →+* P.adicCompletion E := ψ
   let φ : HA (AF (maximalRealSubfield E)) hc.sig V.gram →* GL (Fin V.rank) (P.adicCompletion E) :=
     (bc ψ').comp ((MulAut.conj h⁻¹).toMonoidHom.comp (locMat hc V v))
@@ -76,7 +77,7 @@ theorem core (hc : CMData (maximalRealSubfield E) E) (V : HSpace E)
       ← map_ofNat (algebraMap (𝓞 E) E) 2, HeightOneSpectrum.valuation_of_algebraMap]
     exact (HeightOneSpectrum.intValuation_eq_one_iff).2 h2
   have : CharZero (P.adicCompletion E) := algebraRat.charZero _
-  have key := GlobalTheory.T.unitaryGroup_character_eq_one_of_trivial_integral (P.adicCompletion E) π σ _ V.rank 1 hσ hv2 (one_mem _)
+  have key := _root_.GlobalTheory.UnitaryCharacter.char_eq_one (P.adicCompletion E) π σ _ V.rank 1 hσ hv2 (one_mem _)
     (fun i j => by
       simp only [Units.val_one, Matrix.one_apply, eq_comm (a := j)]
       split_ifs

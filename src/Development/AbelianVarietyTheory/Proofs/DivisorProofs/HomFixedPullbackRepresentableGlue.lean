@@ -2,9 +2,9 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OfGroupPullbackDataBase
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtCover
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGlueData
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GlueWitStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GlueWit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalRepUniversal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomFixRepOfUniversalStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomFixRepOfUniversalAlt
 
 set_option autoImplicit false
 noncomputable section
@@ -68,7 +68,7 @@ theorem glue_pts : (∀ (H : Scheme.{0}) (A B : Over H) [GrpObj A] [IsCommMonObj
     apply pullback.hom_ext
     · rw [Category.assoc, pullback.lift_fst, e1, pullback.lift_fst]
     · rw [Category.assoc, pullback.lift_snd, ← Category.assoc, e2, pullback.lift_snd]
-  refine ⟨⟨t, f, GlobalTheory.T.glue_wit_alt hiso S A B L M hL hM hA hB hrA hrB Z 𝒰 t f hw⟩, fun i => ?_⟩
+  refine ⟨⟨t, f, _root_.GlobalTheory.EndLoc.HomGlue.glue_wit hiso S A B L M hL hM hA hB hrA hrB Z 𝒰 t f hw⟩, fun i => ?_⟩
   refine HomGlue.Pt.ext' (h i).1 ?_
   show _ ≫ HomGlue.pmap A t (𝒰.f i) ≫ f = _
   exact (Category.assoc _ _ _).symm.trans ((h i).2 _
@@ -122,7 +122,7 @@ theorem homFixRep_glue : (∀ (H : Scheme.{0}) (A B : Over H) [GrpObj A] [IsComm
     refine ⟨F.representableBy.homEquiv.symm x, ?_, fun c hc => ?_⟩
     · dsimp only; rw [key]; exact F.representableBy.homEquiv.apply_symm_apply x
     · dsimp only at hc; rw [key] at hc; rw [← hc]; exact (F.representableBy.homEquiv.symm_apply_apply c).symm
-  obtain ⟨R0, e, he⟩ := GlobalTheory.T.exists_homFixRep_iso_of_universal S A B L M hL hM X u huniv
+  obtain ⟨R0, e, he⟩ := _root_.GlobalTheory.EndLoc.HomGlue.homFixRep_of_universal S A B L M hL hM X u huniv
   have hloc' : ∀ i, ∃ e : (R i).H ≅ (u.t ⁻¹ᵁ W i).toScheme, e.hom ≫ (u.t ∣_ W i) = πW i := fun i =>
     reps_iso S A B L M hL hM X u huniv (W i) (R i).H (y i) (πW i) ((hyt i).trans (hπW i).symm) (hloc i)
   choose ei hei using hloc'

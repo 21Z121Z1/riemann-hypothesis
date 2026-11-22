@@ -12,8 +12,8 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LowestTypePositi
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PolarCoordinatesUnitaryPQDoubleCover
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NoIntertwinerSmallerFockToDiscreteSeries
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaCorrespondenceFockDsUniqueness
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DoublingIntegralJointHarmonicPosStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockSpaceContainsDiscreteSeriesTensorStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DoublingIntegralJointHarmonicPos
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockSpaceContainsDiscreteSeriesTensor
 
 open Formalism.BasicNotions.TH Formalism.MainNotions.SchurIrreducible Formalism.L2.Theta
 
@@ -35,8 +35,8 @@ theorem exists_record_theta :
   have hQ7 : admQ7 := TensorHW.highestWeight_tensor
   have hQ8 : admQ8 := GlobalTheory.InducedPBW.pbw_induced
   have hD2 : DiscreteSeriesPositivity X := GlobalTheory.SphJet.lowest_type_positive_and_decays X hD1 hQ5 hQ7 hQ8
-  have hA1 : ArchimedeanRallisFirst X := GlobalTheory.T.doublingIntegral_jointHarmonic_pos X hH1 hH2 hD1 hD2 hQ5 hQ6 hQ7 hQ8
-  have hA2 : ArchimedeanRallisSecond X := GlobalTheory.T.fockSpace_contains_discreteSeriesTensor X hH1 hH2 hD1 hD2 hQ5 hQ6 hQ7 hQ8 hA1
+  have hA1 : ArchimedeanRallisFirst X := _root_.GlobalTheory.DoublingPos.doubling_pos X hH1 hH2 hD1 hD2 hQ5 hQ6 hQ7 hQ8
+  have hA2 : ArchimedeanRallisSecond X := _root_.GlobalTheory.FockTensor.fock_contains_tensor X hH1 hH2 hD1 hD2 hQ5 hQ6 hQ7 hQ8 hA1
   have hA3 : ArchimedeanRallisUpDownLine X := _root_.GlobalTheory.ThetaUnique.theta_unique X hH1 hH2 hD1 hQ5 hQ7 hQ8 hA1 hA2
   have hA5 : ArchimedeanRallisFifth X := _root_.GlobalTheory.SmallerSource.no_map_smaller_source X hH1 hH2 hD1 hQ5
   exact ⟨X, hX, hD1, hQ5, hA1, hA2, hA3, hA5⟩

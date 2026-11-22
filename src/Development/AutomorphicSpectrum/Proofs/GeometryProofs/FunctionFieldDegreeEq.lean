@@ -3,9 +3,9 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PrimeIsMaximalOfIsF
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.CurveSemiAbelianConjecture
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.SeparableFormGroupElementFixesUniquePositiveLine
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Proportional
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LengthFormulaSumValuations
+import Development.WeilBound.CoreStatements.HodgeTatePoints.PlenPlaces
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalRingEssFiniteType
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GeometricNumberZeroFinrankStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GeometricNumberZeroFinrank
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsMultihomogPrimeOfPlace
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MultihomogPrimeMemDivisorSupportStatement
 open AlgebraicGeometry CategoryTheory NumberField
@@ -16,7 +16,7 @@ namespace GlobalTheory.CompanionTheory.Ar.GeoDeg
 open MvPolynomial GroundTheory.FunctionField GroundTheory.Heights₂.Heights.Inter IsLocalRing
 
 local notation "T_eft" => _root_.GlobalTheory.CompanionTheory.Ar.GeoDeg.essFiniteType_locRing
-local notation "T_geo" => GlobalTheory.T.geometric_number_zero_finrank
+local notation "T_geo" => _root_.GlobalTheory.CompanionTheory.Ar.GeoDeg.ResDeg.geoNum_zero_eq_finrank
 local notation "T_ex1" => _root_.GlobalTheory.CompanionTheory.Ar.GeoDeg.Centre.exists_centre
 local notation "T_ex2" => GlobalTheory.T.multihomog_prime_mem_divisor_support
 
@@ -105,7 +105,7 @@ theorem local_term (w : (Σ k, J k) → K) (hbir : Birational w) (k : B) (c : J 
       obtain ⟨g, hg⟩ := hF.mul_inv_cancel hf0
       exact IsUnit.of_mul_eq_one _ hg
     exact ((isUnit_iff hVW f hs ht (hc' k) hy).1 hu) hxW
-  have key := _root_.GlobalTheory.CompanionTheory.Relay.length_formula_sum_valuations (ZMod p) K (locRing (mCoordIdeal w) W) hnf f hf0
+  have key := _root_.PositivityTheory.HtPt.Plen.len_places (ZMod p) K (locRing (mCoordIdeal w) W) hnf f hf0
   have hset : {v : Place (ZMod p) K | (∀ a : locRing (mCoordIdeal w) W, v.valuation (algebraMap _ K a) ≤ 1) ∧
       ∀ a ∈ maximalIdeal (locRing (mCoordIdeal w) W), v.valuation (algebraMap _ K a) < 1} =
       {v : Place (ZMod p) K | Dom v w W} := by

@@ -28,7 +28,7 @@ theorem exists_generic_representation : _root_.GlobalTheory.FunPr.ThetaLocalInpu
       ActsBy τ C ω₀ Φ (fockAct2 P Q R S) c₀ := by
   intro hP hD hV F E _ _ _ _ _ σ α β κ _ _ _ _ _ P Q R S ψ τ JA JB d a b A C Φ hCM hψ hFr hΦ
   obtain ⟨ρ, c₀, hR, hcont, hder⟩ := _root_.GlobalTheory.T.archimedean_component_discreteSeries hP hD hV F E σ α β κ P Q R S ψ τ JA JB d a b A C Φ hCM hψ hFr hΦ
-  obtain ⟨ω₀, hω⟩ := GlobalTheory.T.exists_adelicRep_extending_archimedeanSchwartzRep F κ (UG (cA σ) JB) ρ
+  obtain ⟨ω₀, hω⟩ := _root_.GlobalTheory.SliceExt.exists_rep_pure F κ (UG (cA σ) JB) ρ
   have hgen : ∀ g, ∀ φ ∈ schA F κ, ω₀ g φ ∈ schA F κ := by
     intro g φ hφ
     unfold schA at hφ ⊢

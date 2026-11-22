@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRtensOp
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawFramesWeilEquivalence
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilArchimedeanFactor
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilUnramifiedFactor
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MatchedMapsArchimedeanIdentityStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MatchedMapsArchimedeanIdentity
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TensorIrreducibleOfCountableDimensionIrreducible
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RestrictedTensorProductIrreducibleCountableDimen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RankSchwartzBruhatAdicCompletionPiLeAleph0
@@ -450,7 +450,7 @@ theorem isIrred_piT : GlobalTheory.Published.HoweDualityReal → GlobalTheory.Fu
         q (GlobalTheory.TripleRead.thO Γ.M ψ (sgn true W).gram e Ψ) = liftPure Γ.M R.p Rf.p (vacIm Γ Rf) Ψ := by
       obtain ⟨q, hq⟩ := Onto.exists_factor T _ (fun x hx => hinj x (hS hx)) (liftPure Γ.M R.p Rf.p (vacIm Γ Rf))
       exact ⟨q, fun Ψ hΨ => by rw [← hTh Ψ (hS hΨ)]; exact hq Ψ hΨ⟩
-    have H' := GlobalTheory.T.weil_model_projection_factorisation _ _ _ Γ.M Bs.ψ hM _ R.p _ Rf.p (vacIm Γ Rf) (Filter.Eventually.of_forall fun _ => rfl)
+    have H' := _root_.GlobalTheory.PureLift.exists_pureLift _ _ _ Γ.M Bs.ψ hM _ R.p _ Rf.p (vacIm Γ Rf) (Filter.Eventually.of_forall fun _ => rfl)
     have e1 : mapA ψ e Bs Γ R Rf = H.choose := dif_pos H
     have e2 : liftPure Γ.M R.p Rf.p (vacIm Γ Rf) = H'.choose := dif_pos H'
     rw [e1]
@@ -544,7 +544,7 @@ theorem isIrred_piT : GlobalTheory.Published.HoweDualityReal → GlobalTheory.Fu
         refine hQ b (fun x hx => ?_) _ hfQ
         rw [← hop]
         exact hNl τ Y hY x hx)
-    exact hm.real.irred Q hlie (GlobalTheory.T.matched_maps_archimedean_identity hP Bs Γ Xc om om' R Rf hm Q hlie)
+    exact hm.real.irred Q hlie (_root_.GlobalTheory.KStableLie.lieStable_kStable hP Bs Γ Xc om om' R Rf hm Q hlie)
   ·
     rintro _ ⟨v, a, ⟨k, hk, ha⟩, rfl⟩ x hx
     obtain ⟨g, rfl⟩ := toUX_surj X e h.JX hξ k

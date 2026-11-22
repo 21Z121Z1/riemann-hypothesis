@@ -1,7 +1,9 @@
 import Development.WeilBound.CoreStatements.CentralCharts.IsCoeffAtOfSmul
 import Development.WeilBound.CoreStatements.CentralCharts.ChartAnalytic
 import Development.WeilBound.CoreStatements.CentralCharts.OneLeDimFl
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptFlagXdegStatement
+import Mathlib
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptFlagXdeg
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
 
 noncomputable section
 
@@ -156,7 +158,7 @@ theorem reference_geometry_holomorphic_inverse : Top.Given → Flat.FlatLineGene
   intro hG h0 h1 E _ _ _ H D Xo l c Y hGl hS hp hq G
   haveI := c.fin
   haveI : NumberField c.F := {}
-  choose sing hdeg hhod hconj using GlobalTheory.T.hodge_cpt_flag_xdeg E H D l (Xo l) c _ _ Y ∅ G.Ω G.K G.J G.y G.𝔐 G.Fl G.xdeg G.e
+  choose sing hdeg hhod hconj using _root_.GlobalTheory.CompanionTheory.Ar.HodgeLine.exists_hodgeLine E H D l (Xo l) c _ _ Y ∅ G.Ω G.K G.J G.y G.𝔐 G.Fl G.xdeg G.e
     RingOfIntegers.coe_injective G.lines
   have hI : PB.Inputs := hG.2.2.2.2.2.2.2.2.2.1
   exact An.of_local hI hp hq G sing hdeg hhod hconj fun χ τ i =>

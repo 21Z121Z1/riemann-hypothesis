@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFactsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFacts
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SelfDualMeasureExistsUniqueFourierInversion
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology
 
@@ -52,7 +52,7 @@ theorem fourK_isTest : ∀ (F E : Type) [NontriviallyNormedField F] [Nontriviall
   haveI := secondCountable A
   haveI : μK.IsAddHaarMeasure := hsd.1
   haveI : (μK.prod μK).IsAddHaarMeasure := Measure.prod.instIsAddHaarMeasure _ _
-  have hnd := (GlobalTheory.T.etaleHermitianPair_structure_facts F E A).2.2.1
+  have hnd := (_root_.GlobalTheory.JR.EtFacts.main F E A).2.2.1
   have key := (_root_.GlobalTheory.JR.SelfDualUniq.selfDual_exists_unique_isTest F E ψ hψ (A.K × A.K) (betaK A) (betaK_isSymm A) (betaK_nondeg A hnd)).2
     (μK.prod μK) inferInstance φ' hφ
   have hψc := psi_continuous ψ hψ

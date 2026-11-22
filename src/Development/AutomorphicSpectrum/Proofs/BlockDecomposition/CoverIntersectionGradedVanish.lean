@@ -13,7 +13,7 @@ import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomology
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.TotPairing
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousCochainFiltrationDecomposition
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SerreClassOfCechSpectralSequence
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoverIntersectionGradedIsoStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoverIntersectionGradedIso
 
 set_option backward.isDefEq.respectTransparency false
 open CategoryTheory AlgebraicGeometry GlobalTheory.LogCris DividedPowers GlobalTheory.CechDR GlobalTheory.HodgeCoh CrystallineSemistableComparison CrystallineSemistableComparison.Pb CrystallineSemistableComparison.Om CrystallineSemistableComparison.Om.Glob GlobalTheory.CompanionTheory.CechSerre
@@ -34,7 +34,7 @@ theorem van {K : Type} [Field K] [CharZero K] {X : Scheme.{0}} (q : X ⟶ Spec (
     (U : Cov q) (a n : ℕ) (i : Fin (n + 1) → U.ι) (r : ℕ) (hr : r ≠ a) :
     Subsingleton (HU (Fk q U a) (capT (Vk q U a) i) r) := by
   classical
-  obtain ⟨e⟩ := GlobalTheory.T.cover_intersection_graded_iso q U a n i r
+  obtain ⟨e⟩ := _root_.GlobalTheory.CompanionTheory.CapKC.cap_kc q U a n i r
   have hV : IsAffineOpen (capO U.U i) := by
     rw [capO_eq_iInf_image]
     exact U.inter _ ⟨i 0, Finset.mem_image_of_mem i (Finset.mem_univ 0)⟩

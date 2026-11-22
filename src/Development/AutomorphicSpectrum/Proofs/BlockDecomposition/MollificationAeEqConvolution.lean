@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RwAppend
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LpIntegralAePointwiseStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LpIntegralAePointwise
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RegularRepresentationContinuous
 open MeasureTheory Matrix Finset Filter Topology
 open scoped ContDiff ComplexConjugate InnerProductSpace ZeroAtInfty
@@ -51,7 +51,7 @@ theorem mol_ae_lConv : ∀ (n : ℕ) [MeasurableSpace (G n)] [BorelSpace (G n)] 
     refine Eventually.of_forall fun y => ?_
     filter_upwards [Lp.coeFn_smul (φ y.val) (lT μ V y x), lT_coe μ y x] with z e1 e2
     rw [e1, Pi.smul_apply, e2]
-  have key := GlobalTheory.T.lp_integral_ae_pointwise (G n) (G n) V μ μ (fun y : G n => φ y.val • lT μ V y x)
+  have key := _root_.GlobalTheory.CompanionTheory.LpBochner.coe_integral_ae_eq (G n) (G n) V μ μ (fun y : G n => φ y.val • lT μ V y x)
     (fun y z => φ y.val • (x : G n → V) (y⁻¹ * z)) hint hF hae
   have hconv : lConv μ V φ x = ∫ y : G n, φ y.val • lT μ V y x ∂μ := rfl
   rw [hconv]

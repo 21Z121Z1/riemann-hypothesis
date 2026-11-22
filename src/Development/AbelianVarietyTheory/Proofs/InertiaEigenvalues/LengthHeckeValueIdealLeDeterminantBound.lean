@@ -87,7 +87,7 @@ theorem main : ∀ (D : D7) (i : D.nd.Loc) (r : D.nd.X i → (GE D.nd →* GL (F
     intro c a
     rw [← hfχ, ← Algebra.algebraMap_eq_smul_one]
     rfl
-  have key := GlobalTheory.T.determinantLemma_discreteValuationRing_quotientLength_bound (D.nd.O i) A (Option (Fin D.R.t)) d ψ (by
+  have key := _root_.GlobalTheory.DetGen.length_quot_le_sum_length (D.nd.O i) A (Option (Fin D.R.t)) d ψ (by
     rintro (_ | c) B
     · obtain ⟨a, ha, rfl⟩ := hsurj B
       exact ⟨⟨a, ha⟩, hfρ _⟩

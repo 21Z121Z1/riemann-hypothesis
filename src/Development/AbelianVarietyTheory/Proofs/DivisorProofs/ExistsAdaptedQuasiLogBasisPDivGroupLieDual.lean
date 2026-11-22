@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowEqOfIntege
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsQuasiLogarithmLieAddPSmul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivGroupChartIntegralAdditiveSeriesEqZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuasiLogarithmGenerationOfDivisionStepPadic
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuasiLogarithmDivisionStepDecompositionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuasiLogarithmDivisionStepDecomposition
 
 open MvPowerSeries GlobalTheory GlobalTheory.Katz GlobalTheory.QLog GlobalTheory.PDivGroup GlobalTheory.Sandwich GlobalTheory.IndefiniteRowSideFullHecke.EpsilonPairingZeta GlobalTheory.PDivLat
 
@@ -218,7 +218,7 @@ theorem adapted_basis : ∀ (p : ℕ) [Fact p.Prime] (C : Type) [Field C] [IsAlg
     fun i => ⟨fun α => ⟨0, (RingHom.mem_ker).2 (map_zero _), by rw [hcob i, map_zero, map_zero]⟩,
       hlin' i⟩, hcob, hlie⟩
   obtain ⟨b, hb⟩ := _root_.GlobalTheory.QLog.Conv.generate_of_step p O E hE d c.μ c.isLaw _ e hQ
-    (GlobalTheory.T.quasiLogarithm_division_step_decomposition p C v O hv G d c E hE _ e lb hQ hcob hlin' hlie) f hf
+    (_root_.GlobalTheory.QLogStep.main p C v O hv G d c E hE _ e lb hQ hcob hlin' hlie) f hf
   refine ⟨b, hb, fun b' hb' => ?_⟩
   have h1 : In (⊤ : Ideal O) (comb (b' - b) e) := by
     rw [comb_sub]

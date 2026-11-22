@@ -27,7 +27,7 @@ theorem exists_bumps_inf : (∀ (P : Type) [Fintype P] (a : P → ℝ), (∀ w, 
       simp only [psiInf, map_add, ← AddChar.map_add_eq_mul]
       congr 1
       exact Prod.ext rfl (add_zero _).symm)
-    (GlobalTheory.T.localComponents_nontrivial_adelic_character F ψ hψ).2.2
+    (_root_.GlobalTheory.GaugeEx.CharLoc.char_local F ψ hψ).2.2
   obtain ⟨g, hg1, hg2, hg3⟩ := hreal (InfinitePlace F) a ha
   set e := GlobalTheory.CompanionTheory.SW.RealCoord.coord F with hedef
   set E := GlobalTheory.CompanionTheory.SW.RealCoord.coordHomeo F with hEdef

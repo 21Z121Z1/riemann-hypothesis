@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.ApplyEqOfMemAdjoin
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsTopWTopWOfExists
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PrimitiveHahnSeriesNotZeroDivisorModPrimePow
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulOfIsPrimitiveIntegralHahnGaussStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulOfIsPrimitiveIntegralHahnGauss
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemTranslationInvariantSubfieldIffExponents
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaDerivationHahnSeriesLeibnizAddConst
 open scoped MatrixGroups
@@ -92,9 +92,9 @@ theorem isDl_unique : ∀ {Ω : Type} [Field Ω] [Algebra ℚ Ω] [IsAlgClosure 
   have hkey := key (theta s) (fun P Q => (hth P Q).1) (fun c => (hth 0 0).2.2 c) κ κ2 hκ _ _ _ _ hE
 
   set P := X.exp a * X.exp b * (X.exp a2 * X.exp b2) with hP
-  have hPab := GlobalTheory.T.mul_of_isPrimitiveIntegral_hahn_gauss A _ _ hPa hPb
-  have hPab2 := GlobalTheory.T.mul_of_isPrimitiveIntegral_hahn_gauss A _ _ hPa2 hPb2
-  have hPP : Prim A P := GlobalTheory.T.mul_of_isPrimitiveIntegral_hahn_gauss A _ _ hPab hPab2
+  have hPab := _root_.GlobalTheory.Glue.Prim.mul A _ _ hPa hPb
+  have hPab2 := _root_.GlobalTheory.Glue.Prim.mul A _ _ hPa2 hPb2
+  have hPP : Prim A P := _root_.GlobalTheory.Glue.Prim.mul A _ _ hPab hPab2
   obtain ⟨M, hM, hMK⟩ := mem_KT X (a * b * (a2 * b2))
   have hsupp := (_root_.GlobalTheory.Glue.KTExp.mem_KT_iff ε X M hM _).mp hMK
   have hsuppP : ∀ r : ℚ, P.coeff r ≠ 0 → (r * M).den = 1 := by

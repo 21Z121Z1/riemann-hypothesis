@@ -9,7 +9,7 @@ import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Infinit
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.UnitsOpenEmbeddingLocalTensor
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramFiberMeasuresIntegralFormula
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianLocalContinuousCongruenceSection
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.SizeFunctionRapidDecayIntegrableStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.SizeFunctionRapidDecayIntegrable
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRing
 open HeckeCharacterZeroLocus.SiegelWeilU GlobalTheory.CompanionTheory.SW NumberField IsDedekindDomain MeasureTheory Topology
 open scoped TensorProduct ENNReal NNReal Matrix
@@ -186,9 +186,9 @@ theorem fibre_rapid_eq_density : ∀ (F E : Type) [Field F] [NumberField F] [Fie
     exact hfib
   obtain ⟨B₁, s, hB₁, hSB₁, hsc, hs1, hsS⟩ := _root_.GlobalTheory.CompanionTheory.SW.exists_local_section F E σ hσ (Ainf F) hLoc 1 S hS
   obtain ⟨κ, hκc, hκ0, -, hκ⟩ := _root_.GlobalTheory.CompanionTheory.SW.ScaleCont.fibre_scale_continuous F E σ hσ M J hJ (Ainf F) hLoc 1 μ ν m hμ hν hfib
-  obtain ⟨-, hsz0, N, hN⟩ := GlobalTheory.T.size_function_rapid_decay_integrable F E σ hσ d b 1 M μ hμ
+  obtain ⟨-, hsz0, N, hN⟩ := _root_.GlobalTheory.CompanionTheory.SW.SizeInt.size_neg_pow_integrable F E σ hσ d b 1 M μ hμ
   have hszc : Continuous (sizeTup b : (Fin 1 → Fin M → Ainf F ⊗[F] E) → ℝ) :=
-    (GlobalTheory.T.size_function_rapid_decay_integrable F E σ hσ d b 1 M μ hμ).1
+    (_root_.GlobalTheory.CompanionTheory.SW.SizeInt.size_neg_pow_integrable F E σ hσ d b 1 M μ hμ).1
   obtain ⟨hg1, hg2, hg3, -, -⟩ := GlobalTheory.CompanionTheory.SW.GramAlg.gram_algebra F E σ hσ M J hJ (Ainf F) 1
   set w : (Fin 1 → Fin M → Ainf F ⊗[F] E) → ℝ≥0∞ :=
     fun X => ENNReal.ofReal (((1 + sizeTup b X) ^ N)⁻¹) with hw

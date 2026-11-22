@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.IsHermH
 import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Hat1
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsIsotropicBasisNonorthogonalTwoVectorsStatement
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.UnitaryTransvectionSubmonoidNormalDetOne
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.QuasiReflectionEqMulTransvectionsOfHyperbolicPlaStatement
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.QuasiReflectionEqMulTransvectionsOfHyperbolicPla
 
 open NumberField IsDedekindDomain Matrix GlobalTheory.UTrans GlobalTheory.AdLat
 open scoped TensorProduct
@@ -90,7 +90,7 @@ theorem eventually_chain (σ : E →+* E) (G : Matrix (Fin n) (Fin n) E) (hG : I
       abel
     rw [hsplit] at h3 ⊢
     obtain ⟨m', hm', hm'eq⟩ :=
-      GlobalTheory.T.quasiReflection_eq_mul_transvections_of_hyperbolicPlane E n σ G hG _ (z j) ((t : E) * l j) u (hz j) h1 h2 h3 hu
+      _root_.GlobalTheory.UTrans.PlaneRefl.quasiRefl_eq_mul_of_plane E n σ G hG _ (z j) ((t : E) * l j) u (hz j) h1 h2 h3 hu
     exact ⟨m * m', (TvGen σ G).mul_mem hm hm', by rw [hmeq, hm'eq, mul_assoc]⟩
 
 end GlobalTheory.UTrans.Chain

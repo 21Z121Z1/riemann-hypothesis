@@ -3,8 +3,6 @@ import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.Invariant
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.AdditiveEqPolynomialVonMangoldtConvolutionOne
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.ConjOfPrimaryFinrankKerPowEq
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.InvariantSubspaceMobiusInverseCharpolyLinearEqui
-import Development.AbelianVarietyTheory.Proofs.CharacterTheory.AdditiveEqPolynomialVonMangoldtConvolutionOneStatement
-import Development.AbelianVarietyTheory.Proofs.CharacterTheory.InvariantSubspaceMobiusInverseCharpolyLinearEquiStatement
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.EndomorphismMassMobiusInverseMonicEq
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.EqZeroOfNotPrimary
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.PrimitiveEndClassFunctionEqZeroOfPrimary
@@ -42,12 +40,12 @@ theorem eq_zero_of_mass_charpoly_eq_zero (F : Type) [Field F] [Finite F] (V : Ty
   obtain ⟨f, m, hfm, hf, hm0, hg⟩ := hprim
   set s : F[X] → ℂ := fun P => (P.natDegree : ℂ) with hs
   have hsa : IsAdditive s := isAdditive_natDegree
-  have hπc : IsClassFn (psi s V) := fun e x => GlobalTheory.T.invariantSubspaceMobiusInverseCharpoly_linearEquiv_conj F s V V e x
+  have hπc : IsClassFn (psi s V) := fun e x => _root_.GlobalTheory.CuspGL.psi_conj F s V V e x
   have hπp : IsPrimitive (psi s V) := _root_.GlobalTheory.CuspGL.isPrimitive_psi F V s hsa
   have hdeg : (LinearMap.charpoly g).natDegree = Module.finrank F V := LinearMap.charpoly_natDegree g
   have hmass : mass (psi s V) (LinearMap.charpoly g) ≠ 0 := by
     rw [_root_.GlobalTheory.CuspGL.mass_psi_eq_glCard_mul_mangoldt_div F V s hsa _ (LinearMap.charpoly_monic g) hdeg, hdeg, hg,
-      (GlobalTheory.T.additive_eq_polynomialVonMangoldt_convolution_one F s hsa).2.1 f m hfm hf hm0]
+      (_root_.GlobalTheory.CuspGL.mangoldt_conv_spec F s hsa).2.1 f m hfm hf hm0]
     have h1 : glCard F (Module.finrank F V) ≠ 0 := by
       rw [glCard]
       exact_mod_cast (Nat.card_pos (α := GL (Fin (Module.finrank F V)) F)).ne'

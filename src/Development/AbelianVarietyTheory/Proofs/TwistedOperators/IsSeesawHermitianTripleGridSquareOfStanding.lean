@@ -5,7 +5,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareThetaTripleHy
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsHeckeCharMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaGridCharactersArchExponentsGapGtRank
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareThetaTripleExistsSignatureRankSumLt
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSignatureFstUniqueSylvesterStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSignatureFstUniqueSylvester
+import Formalism.SatakeDualWeyl.Statement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SquareTripleFinitePlacesOfOrientedRoutes
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum Formalism.IndefR.Links
 open IsDedekindDomain NumberField MeasureTheory Matrix
@@ -91,9 +92,9 @@ theorem isTriple_of_standing : ∀ {D : D7} {T : Type} {L : LevCh D T} {sc : Con
       have r1 := sgn (↑i + 1) (↑j + 1) (by omega) (by omega) τ₀
       have c1 := hasSignature_add r1
       have c2 := hasSignature_add tW
-      have u := GlobalTheory.T.hasSignature_fst_unique_sylvester tW r1
+      have u := _root_.GlobalTheory.SylvesterInertia.hasSignature_fst_unique tW r1
       omega
-    have hq : Γ.q = (D.R.m - ↑j) / 2 := GlobalTheory.T.hasSignature_fst_unique_sylvester tW₁ (sgnN ↑i ↑j (by omega) (by omega) τ₀)
+    have hq : Γ.q = (D.R.m - ↑j) / 2 := _root_.GlobalTheory.SylvesterInertia.hasSignature_fst_unique tW₁ (sgnN ↑i ↑j (by omega) (by omega) τ₀)
     have h1 := hY.geo.eBig
     have h2 := hY.geo.aBig
     have h3 := hY.geo.lt
@@ -119,7 +120,7 @@ theorem isTriple_of_standing : ∀ {D : D7} {T : Type} {L : LevCh D T} {sc : Con
     exact s
   · intro τ
     refine ⟨_, _, GlobalTheory.SquareExps.alpha_exp (G := G) hL t ↑i ↑j j.2 τ, GlobalTheory.SquareExps.beta_exp (G := G) hL ↑i ↑j i.2 τ, ?_⟩
-    have key := GlobalTheory.T.chiGridVertexRank_add_lt_two_exponent_add_centre sc.cGap τ ↑i ↑j i.2 j.2
+    have key := _root_.GlobalTheory.ChiGrid.rankV_add_lt_two_e_add_two_cen sc.cGap τ ↑i ↑j i.2 j.2
     rw [hrank, rW, rW₁]
     push_cast at key ⊢
     linarith

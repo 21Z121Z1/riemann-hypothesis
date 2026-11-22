@@ -6,8 +6,8 @@ import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaVa
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaHeisenbergUnitaryColumnChange
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsRowHighestHarmonicPolyDerivUnitaryAction
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsCmFieldGeneratorAtPrimesDividing
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SelfDualLatticeDiagonalUnitaryPatchedStandardStatement
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SumMovedVacuumTranslatesEqFreeRowTestFunctionStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SelfDualLatticeDiagonalUnitaryPatchedStandard
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SumMovedVacuumTranslatesEqFreeRowTestFunction
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.L2NormFundamentalDomain
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField Matrix Complex
@@ -86,9 +86,9 @@ theorem thP_phi_eq_thP_phiF : ∀ (E : Type) [Field E] [NumberField E] [IsCMFiel
   obtain ⟨α, 𝔞, hα, hspan, hcopa⟩ := _root_.GlobalTheory.Dict.exists_generator_at_primes_dividing E 𝔍 M h𝔍 hM
   set H : Matrix (Fin n) (Fin n) E :=
     Matrix.diagonal (fun k : Fin n => if (k : ℕ) < r then 1 else cc (α : E) / (α : E)) with hHdef
-  obtain ⟨hunit, hmove⟩ := GlobalTheory.T.selfDual_lattice_diagonal_unitary_patched_standard E n r M 𝔍 𝔞 α hM hMJ hcopJ hα hspan hcopa H hHdef
+  obtain ⟨hunit, hmove⟩ := _root_.GlobalTheory.Dict.Patch.main E n r M 𝔍 𝔞 α hM hMJ hcopJ hα hspan hcopa H hHdef
   obtain ⟨Λ', hΛ', Λ'', hΛ'', hmv, hle1, hle2⟩ := hmove Λ hΛ
-  obtain ⟨t, ht0, ht⟩ := GlobalTheory.T.sum_moved_vacuum_translates_eq_freeRow_testFunction E r X g bas idx n hs hn D hrn M 𝔐 𝔍 𝔞 α hM hMm hsplit hcop hα
+  obtain ⟨t, ht0, ht⟩ := _root_.GlobalTheory.Dict.SumFree.sum_free E r X g bas idx n hs hn D hrn M 𝔐 𝔍 𝔞 α hM hMm hsplit hcop hα
     hspan hcopa v₀ hv₀ H hHdef Λ hΛ Λ' hΛ' Λ'' hΛ'' hmv hle1 hle2
   obtain ⟨t', ht'1, ht'⟩ := _root_.GlobalTheory.Dict.thA_vacuum_hAct E r X g bas idx n hs hn D.w D.w_int D.w_tr H hunit Λ
     (vset_one hΛ) Λ'' hΛ'' hmv

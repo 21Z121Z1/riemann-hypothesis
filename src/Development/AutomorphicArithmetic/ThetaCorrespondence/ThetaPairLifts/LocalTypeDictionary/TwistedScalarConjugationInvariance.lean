@@ -21,7 +21,7 @@ import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.HalfLi
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.LocalIntegralGL
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockVectorMatrixCoefficientFormula
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.HeckeCharacterParameters
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteZetaIntegralThetaLiftEqPartialLValueStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteZetaIntegralThetaLiftEqPartialLValue
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TwistedThetaLiftInnerProductFormulaOfHyp
 import Formalism.UnipotentAdelicQuotients.SiegelWeilUnitaryConvergent
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.GreenCuspidalIff
@@ -45,7 +45,7 @@ theorem GlobalTheory.ScalConj.twisted_scalar_conjugation : GlobalTheory.Publishe
     (_root_.GlobalTheory.SourceLaw.sourceLevelLaw GlobalTheory.SingleBlock.localIntegralSingleBlock R.toRealDat F.lv2 (GlobalTheory.PlaceTensor.placeModels D))
     (_root_.GlobalTheory.innerProductFormula_of_hypotheses pD pW pI R.toRealDat F.lv2 hP)
     (_root_.GlobalTheory.FockCoeffImage.fockCoefficientC (GlobalTheory.HarmModule.harmonicModule_of GlobalTheory.FockDecay.harmonicDecay GlobalTheory.CartanInt.coshIntegral) R.toRealDat F.lv2 (GlobalTheory.PlaceTensor.placeModels D))
-    (GlobalTheory.T.finiteZetaIntegral_thetaLift_eq_partialLValue pD pBZ pU R.toRealDat F.lv2)
+    (_root_.GlobalTheory.FinZeta.finiteZetaL pD pBZ pU R.toRealDat F.lv2)
 end
 
 section

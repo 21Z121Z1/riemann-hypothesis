@@ -3,7 +3,7 @@ import Development.AutomorphicSpectrum.Statements.GeometryStatements.AgreementPo
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.RefLinked
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.KillNoneFormPoly
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RealTowerArithAgreementStatement
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RealTowerArithAgreement
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.PolarizationPolynomialCoeffBound
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.CompactGapsGE
 
@@ -104,7 +104,7 @@ theorem tower_I1_of_reference_linked : PB.Coefficients → PB.AgreementPos → P
   by_cases hm : m.degree = dimFl Ψ N + 1
   · obtain ⟨C₃, s₀, -, hag⟩ := hAg hI _ _ (R.Sys c) 0 (hpos c)
     have htend := (hag II hII _ _ _ (R.tie B c).Re).1
-    have hnum := GlobalTheory.T.real_tower_arith_agreement hI II hII Ψ N (T.M B c) (R.Sys c) (R.n c) (R.tie B c)
+    have hnum := _root_.GlobalTheory.CompanionTheory.Ar.Top.RootNum.arith_degrees hI II hII Ψ N (T.M B c) (R.Sys c) (R.n c) (R.tie B c)
     have hle := abs_le_coeff (dimFl Ψ N + 1) ((T.M B c).PP II) (R.n c) (T.M B c).kA (hnum 0 0).1
       (T.M B c).kA_pos ((R.tie B c).Re.PB II) (fun lam s => ((hnum lam s).2.2 htend (hpos c)).2) m hm
     obtain ⟨K, iK, ι, iι, P, Re, Re', Sf, α, H, h1, h2, h3, h4, h5, h6, h7, h8, h9⟩ := hlink B hB c

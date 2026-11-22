@@ -6,15 +6,16 @@ import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatLineGen
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.CardComapMulFinsumEqFinsumFibres
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptBirationalArithVar
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AmpleOfSingleCoordBlockStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SameOrbitOfProportionalCoordsStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AmpleOfSingleCoordBlock
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordRelationsHomogeneous
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SameOrbitOfProportionalCoords
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolomorphicAtlasCoordCompat
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SmallPointsCoordRatioBound
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalRingPointsExistsUnique
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.Metric
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AlgebraicConstantsInRangeStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AlgebraicConstantsInRange
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPushAlongMap
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolomorphicInverseChartValue
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
@@ -340,13 +341,13 @@ theorem refRoot : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Ho
     obtain ⟨i, hi⟩ := (hmem (inv x)).1 G.k₀
     exact hi (by simpa [pt] using congrFun h (ix.symm i))
   have pt_inj : ∀ x x' (a : ℂ), pt x = a • pt x' → x = x' := fun x x' a h => by
-    have ho := GlobalTheory.T.same_orbit_of_proportional_coords G.𝔐.X G.Ω G.𝔐.ξ G.K G.J G.y G.k₀ G.𝔐.tie G.embeds _ (hmem (inv x)) _ (hmem (inv x')) a
+    have ho := _root_.GlobalTheory.CompanionTheory.Ar.OrbitBlock.sameOrbit_of_block G.𝔐.X G.Ω G.𝔐.ξ G.K G.J G.y G.k₀ G.𝔐.tie G.embeds _ (hmem (inv x)) _ (hmem (inv x')) a
       (fun i => by simpa [pt] using congrFun h (ix.symm i))
     have := A.embedded.inj _ _ ho
     rw [← hcov x, this, hcov]
   have hpt : ∀ x, ∃ a : ℂ, (fun i => A.Re.R.lift x x ⟨G.k₀, ix i⟩) = a • pt (A.Re.π x) := fun x =>
     ⟨1, by simp [pt, hinv]⟩
-  have hconst := GlobalTheory.T.algebraic_constants_in_range E H D l Xo c Y ∅ G.Ω G.K G.J G.y G.𝔐 G.Fl hsplit G.deg_one
+  have hconst := _root_.GlobalTheory.CompanionTheory.Ar.FlagConst.isAlgebraic_mem_cst_range E H D l Xo c Y ∅ G.Ω G.K G.J G.y G.𝔐 G.Fl hsplit G.deg_one
   refine ⟨refFixed A Mf m ix gen pt pt_ne pt_inj k q' hq (fun r => (k * q' : ℕ) * ν r) s hs,
     refModel A hb k hk _ hδ,
     refOrigin A hb k hk hδ Mf hMf m ix gen pt pt_ne pt_inj hpt q' hq _ s hs hconst heff,
@@ -355,7 +356,7 @@ theorem refRoot : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Ho
     have e : G.𝔐.ξ ≫ G.𝔐.f = spMap G.𝔐.fn ≫ G.𝔐.ξ₀ := G.𝔐.fn_over
     rw [e]
     exact genPt_comp_spMap _ _
-  · exact GlobalTheory.T.ample_of_single_coord_block G.𝔐.X G.Ω G.𝔐.ξ G.K G.J G.y G.k₀ _ G.𝔐.tie G.embeds A.none_deg.1 A.none_deg.2
+  · exact _root_.GlobalTheory.CompanionTheory.Ar.AmpleBlock.ampleQ_of_embeds G.𝔐.X G.Ω G.𝔐.ξ G.K G.J G.y G.k₀ _ G.𝔐.tie G.embeds A.none_deg.1 A.none_deg.2
   · intro x
     have hx₁ := A.Re.R.mem_U (inv x)
     refine ⟨inv ⁻¹' A.Re.R.U (inv x), fun y i => A.Re.R.lift (inv x) (inv y) ⟨G.k₀, ix i⟩,

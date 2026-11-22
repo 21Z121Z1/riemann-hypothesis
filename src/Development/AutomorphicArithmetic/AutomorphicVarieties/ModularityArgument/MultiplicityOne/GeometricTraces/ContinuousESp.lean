@@ -247,7 +247,7 @@ theorem evalD : EvalD := by
     (hcc (cPl w)).2.2 (by rw [(hcc w).1]; exact ((hcc w).2.1 h).symm)
   have hnot : ∀ w ∈ S, IsSplitAt w → cPl w ∉ S := fun w hw h hc =>
     (hcc w).2.1 h ((hsec S hS w).2 hw hc)
-  choose σ₀ hc hfd using fun i w => (GlobalTheory.T.exists_unique_admissible_localComponent_definiteUnitary E hU n hn (σ i) (hdec.1 i).1 w).1
+  choose σ₀ hc hfd using fun i w => (_root_.GlobalTheory.BCT.LocCompU.exists_unique_locComp E hU n hn (σ i) (hdec.1 i).1 w).1
   have hne : ∀ i, ∀ w ∈ S, fixed (σ₀ i w).ρ (K' w) ≠ ⊥ := fun i w hw =>
     _root_.GlobalTheory.BCT.LocFix.fixed_ne_bot E hU n hn S hS lam K' hLev (σ i) (hdec.1 i).1 (hdec.1 i).2.1 (hdec.1 i).2.2 w hw (σ₀ i w) (hc i w)
   have hline : ∀ i, ∀ w ∈ S, w ∉ Z → Module.finrank ℂ (fixed (σ₀ i w).ρ (KL n w)) = 1 ∧

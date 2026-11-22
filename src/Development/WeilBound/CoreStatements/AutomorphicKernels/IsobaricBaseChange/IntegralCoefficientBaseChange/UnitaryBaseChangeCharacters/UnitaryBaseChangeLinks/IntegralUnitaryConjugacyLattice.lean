@@ -1,12 +1,13 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceConjugationPropertiesCmField
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalTwistContinuousInvolutionIntegralPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalTwistContinuousInvolutionIntegralProperties
+import Development.AbelianVarietyTheory.Definitions.Divisors.GaloisRepOfPolarizedCuspidal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteTwistedClassesCharpoly
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AevalRootEqZeroIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitOneAddPiOMul
 import GroundTheory.LocalFields.FilteredSurj
-import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.NormApproximationFirstLevel
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormApproximationFirstLevel
 import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.NormApproximationFiltration
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormFiltrationComplete
 import Formalism.SatakeDualWeyl.StatementF
@@ -70,7 +71,7 @@ theorem normU_surj (L : Type) [Field L] [Valued L (WithZero (Multiplicative ℤ)
   have hgr : ∀ n, ∀ z ∈ E (id n), ∃ g ∈ filt h P n, z / f g ∈ E (id (n + 1)) := by
     intro n z hz
     rcases Nat.eq_zero_or_pos n with rfl | hn
-    · obtain ⟨u, hu⟩ := GlobalTheory.T.norm_approximation_first_level L σ ϖ q h P hP z.1 z.2
+    · obtain ⟨u, hu⟩ := _root_.GlobalTheory.NormEq.exists_mul_conj_sub_mem_piPow_one L σ ϖ q h P hP z.1 z.2
       refine ⟨u, by rw [filt_zero]; exact Subgroup.mem_top u, ?_⟩
       show ((z.1 / normU P u : (Alg P)ˣ) : Alg P) - 1 ∈ piPow h P (0 + 1)
       exact div_mem_of_sub_mem hu

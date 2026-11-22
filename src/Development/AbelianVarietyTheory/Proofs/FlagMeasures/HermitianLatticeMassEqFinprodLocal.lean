@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CommonStabilizerStab
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StrongApproxStab
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RelIndexComapPairOfDenseImage
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HaarInvVolumeRelIndexPiUnivEqFinprod
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NumberFieldLatticeDeterminedByLocalLatticesStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NumberFieldLatticeDeterminedByLocalLattices
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoordinateLatticeUniqueTermAlmostAllPlaces
 
 noncomputable section
@@ -133,7 +133,7 @@ theorem mass_eq_finprod : ∀ {F E : Type} [Field F] [NumberField F] [Field E] [
     {p | (G.S p).St ⊓ MulAction.stabilizer (G.S p).GLV (A.lat p Λ) ≠ (G.S p).K0}.Finite ∧
       G.mu Λ = ∏ᶠ p, (G.S p).mu (A.lat p Λ) := by
   intro F E _ _ _ _ _ sig A r k G hk Λ hΛ
-  obtain ⟨-, hlat, hcoord⟩ := GlobalTheory.T.numberField_lattice_determined_by_local_lattices A (k + 2 * r + 1) Λ hΛ
+  obtain ⟨-, hlat, hcoord⟩ := _root_.GlobalTheory.HL.PlacesRec.lattice_local A (k + 2 * r + 1) Λ hΛ
   have hstd := _root_.GlobalTheory.HL.StdPlace.coordinate_lattice_standard A r k G hk
   let U : ∀ p, Subgroup (G.S p).GLV :=
     fun p => (G.S p).St ⊓ MulAction.stabilizer (G.S p).GLV (A.lat p Λ)

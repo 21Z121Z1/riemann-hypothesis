@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.CMLattices.ExistsIsThetaDegOfIsLocalModel
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsCmCurveHomFamilyToFibreAtPeriod
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.CmCurveLieCharacterOfAdjoinGenerator
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.IsCMPairingFamilyOfPolarisationDiagonalComplexStatement
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.IsCMPairingFamilyOfPolarisationDiagonalComplex
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.WeilPairingEqOfIsomorphicCubePairings
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.WeilEqIffHermFormEqComplex
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.PolFibreIdCompCancel
@@ -249,7 +249,7 @@ theorem exists_isFam_of_pureType : ThetaUnifAV → Out.Laws → ∀ (E : Type) [
   have hh : IsKForm D ε h := fun x y => by
     simp only [h, wK, Subalgebra.coe_add, Subalgebra.coe_mul, SubringClass.coe_intCast]
   refine ⟨D, ε, h, φ, by rw [hp, hq, hpq], hh, hpos,
-    GlobalTheory.T.isCMPairingFamily_of_polarisationDiagonal_complex hT hL E H ω C D ε h T ⊤ φ hh (fun x _ => hpos x) (hφ _ (C.basis.1 0)), ?_⟩
+    _root_.GlobalTheory.CM.FamPairing.isFam_of_isHomFamily hT hL E H ω C D ε h T ⊤ φ hh (fun x _ => hpos x) (hφ _ (C.basis.1 0)), ?_⟩
   refine ontoAt_of_span u φ (fun a => F (Pe a)) ?_ (fun z => u₀.ex fun _ => c * z) fun a z => by rw [hφe, map_smul]
   have e : (Set.range fun a : (⊤ : Submodule (𝓞 E) D.La) => F (Pe a)) = F.toLinearMap '' Set.range Pe := by
     ext z

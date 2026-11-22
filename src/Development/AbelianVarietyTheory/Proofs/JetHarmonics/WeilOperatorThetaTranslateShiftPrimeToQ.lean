@@ -6,10 +6,10 @@ import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CpBinomialPowerSubOn
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ConstantCoeffShiftS
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ScaledThetaTranslationQuotientEllipticStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CmLatticeHeisenbergRelationsOneVariable
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CpSeriesMultiplicativeShiftCompAndSubstStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CpSeriesMultiplicativeShiftCompAndSubst
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CmEvenThetaSeriesChartCoeffIntegral
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CmLatticeWeylOperatorEqThetaRootOfUnityShiftStatement
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CpTransportedTaylorSeriesShiftEqTranslateStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CmLatticeWeylOperatorEqThetaRootOfUnityShift
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CpTransportedTaylorSeriesShiftEqTranslate
 
 open PowerSeries GlobalTheory.MomOne
 open scoped ComplexConjugate BigOperators Topology
@@ -101,9 +101,9 @@ theorem main : ∀ (d q : ℕ) [Fact q.Prime] (M : Mdl q) (ω : ℂ_[q]) (θ : �
     rw [hφf] at hB
     exact ⟨B, ((MulSeries.mulS_laws q).2.2.2.1 _ _ B hsn).mp hB⟩
   have hθb : Bdd (hat M.ι (C ω * logS) θ) := ⟨1, _root_.GlobalTheory.MomOne.theta_series_integral d q M ω θ hd hd16 hsp hOK hM hθ⟩
-  obtain ⟨ψ, hψa, hψ, hψh⟩ := GlobalTheory.T.cpTransportedTaylorSeries_shift_eq_translate q M ω _ y' _ hM hAt' hEll hφa hφb
+  obtain ⟨ψ, hψa, hψ, hψh⟩ := _root_.GlobalTheory.MomOne.Transfer.shift_eq_hat_translate q M ω _ y' _ hM hAt' hEll hφa hφb
   rw [hφf] at hψh
-  have hsc := ((GlobalTheory.T.cpSeriesMultiplicativeShift_comp_and_subst q).2 _ n s (s : ℤ_[q]) _ hζ' (by
+  have hsc := ((_root_.GlobalTheory.MomOne.ShiftComp.main q).2 _ n s (s : ℤ_[q]) _ hζ' (by
     rw [sub_self, norm_zero]; positivity) hfb).2
   rw [hsc, ← hζζ] at hψh
 
@@ -134,7 +134,7 @@ theorem main : ∀ (d q : ℕ) [Fact q.Prime] (M : Mdl q) (ω : ℂ_[q]) (θ : �
     field_simp
   rw [(hring _ _ hψa hWs).2.1, hψh, hscale _ (hWd.analyticAt 0), hscale _ (hWUd.analyticAt 0),
     ← subst_mul (hasSubst_mulS _)] at hprod
-  rw [← subst_mulS_cancel hsn hprod, GlobalTheory.T.cmLatticeWeylOperator_eq_theta_rootOfUnity_shift d q M ω θ hd hd16 hsp hOK hM hθ hgood n y hg,
+  rw [← subst_mulS_cancel hsn hprod, _root_.GlobalTheory.MomOne.ThShift.theta_shift d q M ω θ hd hd16 hsp hOK hM hθ hgood n y hg,
     ← ((Shift.shift_laws q _ hAt.2.1).2.1 _ _ hfb hθb).2, ← (hring _ _ hfa (hθd.analyticAt 0)).2.1]
   congr 1
   refine (hring _ _ (hfa.mul (hθd.analyticAt 0)) (hUd.analyticAt 0)).2.2.1 ?_

@@ -14,7 +14,9 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.H1fGenerationU
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DDeRhamEqDCrisOfUnramified
 import Formalism.SharpRestriction.LevelLetterCocycles.CrystallineMapLemmas
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DcrisExactStrictElementwiseCrystalline
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachLatticeLaterClausesHoldStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachLatticeLaterClausesHold
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NotFullBot
+import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JumpsExactAdm
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HerrExtensionClassFormula
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalConstantsFromAdmittedLocalGaloisStatements
@@ -34,7 +36,7 @@ theorem admissible_ranks_of_CMDatum : GlobalTheory.Published.BlochKatoLocal → 
     ∀ (D : D7) (HW : HWOf D.loc) (F : FonOf D.loc D.locA HW) (Cm : CmpOf D.loc D.locA HW F),
       ArcLiftingSetup.admitted D HW F Cm 10 23 32 32 8 := by
   intro hBK hTD hEC D HW F Cm
-  have hN1 := GlobalTheory.T.wachLattice_laterClauses_hold D HW F Cm
+  have hN1 := _root_.GlobalTheory.NL.wach_used_clauses D HW F Cm
   obtain ⟨hP1, -, -, -, -, hP6, -, hP8, hP9, -⟩ := hN1
   have h54 := _root_.GlobalTheory.localConstants_from_admitted_local_Galois_statements_alt hBK hTD hEC D HW F Cm
   obtain ⟨-, ⟨hWX, -⟩, hW1, -, -, hH, -, -⟩ := h54

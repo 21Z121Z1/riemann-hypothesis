@@ -8,9 +8,9 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InnerIntegralLe
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SectionOrthCptZero
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveCptBoundedTime
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GelfandOperatorPairingAdjoint
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WavePairingTimeSymmetryStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CenterOperatorPreservesWaveStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CenterOperatorCommutesIntegralStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WavePairingTimeSymmetry
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CenterOperatorPreservesWave
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CenterOperatorCommutesIntegral
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KernelActionEquivariant
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KernelAdjointRegularStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveTimeAverageIsWave
@@ -118,7 +118,7 @@ theorem term_eq (hL : LgFacts) (hR : RCalc) (hS : WaveSpeed) {E : KMod n}
     ∫ y : G n, ⟪zOp w' f y.val, ∫ t, (g t : ℂ) • v t y.val⟫_ℂ ∂μ
       = ∫ y : G n, ⟪act μ E K' f y.val, h y.val⟫_ℂ ∂μ := by
   haveI := FiniteDimensional.complete ℂ E.V
-  have hui : IsWave E (fun t => zOp w' (u t)) := GlobalTheory.T.center_operator_preserves_wave hR n E u w' hu
+  have hui : IsWave E (fun t => zOp w' (u t)) := _root_.GlobalTheory.CompanionTheory.WaveMult.WaveZ.isWave_zOp hR n E u w' hu
   have cu0 : Cpt (u 0) := by
     obtain ⟨R, hR'⟩ := cf
     exact ⟨R, fun y hy hl => by rw [hu0 y hy]; exact hR' y hy hl⟩
@@ -139,7 +139,7 @@ theorem term_eq (hL : LgFacts) (hR : RCalc) (hS : WaveSpeed) {E : KMod n}
       _ = _ := by
           refine integral_congr_ae (Eventually.of_forall fun t => ?_)
           simp only
-          rw [GlobalTheory.T.wave_pairing_time_symmetry hL hR hS n μ E _ v hui hv cui0 cv0 t]
+          rw [_root_.GlobalTheory.CompanionTheory.WaveMult.wave_symm hL hR hS n μ E _ v hui hv cui0 cv0 t]
   have Rr : ∫ y : G n, ⟪act μ E K' f y.val, h y.val⟫_ℂ ∂μ
       = ∫ t, (g t : ℂ) * ∫ y : G n, ⟪zOp w' (u t) y.val, v 0 y.val⟫_ℂ ∂μ := by
     have hF := pair_avg μ hL c2 cv0 hui.1.continuousOn hb
@@ -152,7 +152,7 @@ theorem term_eq (hL : LgFacts) (hR : RCalc) (hS : WaveSpeed) {E : KMod n}
             simp only
             rw [hu0 _ (GlobalTheory.CompanionTheory.WaveKer.mul_mem_GLs hy (PairAdj.val_mem_GLs z))]
           simp only
-          rw [e1, hK.2.2.2 u hu _ hy, GlobalTheory.T.center_operator_commutes_integral n u g T w' hu.1 hb _ hy, hv0 _ hy]
+          rw [e1, hK.2.2.2 u hu _ hy, _root_.GlobalTheory.CompanionTheory.WaveMult.ZOpAvg.zOp_avg n u g T w' hu.1 hb _ hy, hv0 _ hy]
       _ = conj (∫ y : G n, ⟪v 0 y.val, ∫ t, (g t : ℂ) • zOp w' (u t) y.val⟫_ℂ ∂μ) := by
           rw [← integral_conj]
           simp only [inner_conj_symm]

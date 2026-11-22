@@ -2,7 +2,8 @@ import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.MatchT
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryLevelSubgroupProperties
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HintConstMulSum
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermConvolutionHeckeStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermConvolutionHecke
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.LeviOf
 
 open NumberField IsDedekindDomain Matrix Polynomial Filter
 open GlobalTheory.CuspRep GlobalTheory.PRep Formalism.UG Formalism.BasicNotions GlobalTheory.UnitaryBC Formalism.L2.Host GlobalTheory.BCT PositivityTheory.Rg.BcN.F2
@@ -240,7 +241,7 @@ theorem ct_gconv {n a b : ℕ} (h : a + b = n) (w : Pl E) {f₁ f₂ : GLw n w �
     refine ⟨1, ⟨Finset.mem_singleton_self _, by simpa using hk⟩, ?_⟩
     rintro y ⟨hy, -⟩
     exact Finset.mem_singleton.1 hy
-  have hmul := GlobalTheory.T.constant_term_convolution_hecke E n a b h w (GlobalTheory.LFun.KGL w n) h₁.1 le_rfl hnorm {1} hX1 hX2 f₁ f₂ h₁ h₂ 1
+  have hmul := _root_.GlobalTheory.CompanionTheory.ConvMat.constant_term_convolution E n a b h w (GlobalTheory.LFun.KGL w n) h₁.1 le_rfl hnorm {1} hX1 hX2 f₁ f₂ h₁ h₂ 1
     (Finset.mem_singleton_self _) 1 (Finset.mem_singleton_self _) m
   rw [constant_term_eq_mackey_entry h w (gconv_bi (hbi h₁) (hbi h₂)), constant_term_eq_mackey_entry h w (hbi h₁), constant_term_eq_mackey_entry h w (hbi h₂), hmul]
   simp

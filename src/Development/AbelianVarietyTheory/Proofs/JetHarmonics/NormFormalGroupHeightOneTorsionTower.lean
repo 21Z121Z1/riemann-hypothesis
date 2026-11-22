@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Jets.PowerSeriesHasSumAt
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MvPowerSeriesIntegralBoundedClosureStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MvPowerSeriesIntegralBoundedClosure
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PowerSeriesEvalTsumUnitDiscPropertiesAlt
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NormCoeffIntegralPowerSeriesLeProdZerosStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NormCoeffIntegralPowerSeriesLeProdZeros
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FormalGroupNatMulSeriesProperties
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FormalGroupTorsionTowerExactOrder
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FormalGroupNatMulSeriesEvalOpenDiscProperties
@@ -58,11 +58,11 @@ theorem prod_fibre (f : PowerSeries K) (p : ℕ) (hp : 0 < p) (hf : Intg f)
     (hinj : Set.InjOn x T) (hx : ∀ b ∈ T, ‖x b‖ < 1 ∧ ev1 f (x b) = c) :
     ∏ b ∈ T, ‖x b‖ = ‖c‖ := by
   classical
-  obtain ⟨A1, A2, A3, A4, -⟩ := GlobalTheory.T.mvPowerSeries_integral_bounded_closure K Unit
+  obtain ⟨A1, A2, A3, A4, -⟩ := _root_.GlobalTheory.BddAlg.bdd_alg K Unit
   have hC : Intg (PowerSeries.C c : PowerSeries K) := (A4 c).2.1 hc.le
   have hI : Intg (f - PowerSeries.C c) := (A1 _ _ hf hC).2.1
   have hcard : (T.image x).card = p := by rw [Finset.card_image_of_injOn hinj, hT]
-  have key := (GlobalTheory.T.norm_coeff_integral_powerSeries_le_prod_zeros K (f - PowerSeries.C c) (T.image x) hI (by
+  have key := (_root_.GlobalTheory.ConvSer.norm_coeff_le_prod_zeros K (f - PowerSeries.C c) (T.image x) hI (by
     intro y hy
     obtain ⟨b, hb, rfl⟩ := Finset.mem_image.1 hy
     refine ⟨(hx b hb).1, ?_⟩
@@ -88,7 +88,7 @@ theorem prod_zero_fibre (f : PowerSeries K) (p : ℕ) (hp : 0 < p) (hf : Intg f)
     (hinj : Set.InjOn x T) (hx : ∀ b ∈ T, ‖x b‖ < 1 ∧ ev1 f (x b) = 0 ∧ x b ≠ 0) :
     ∏ b ∈ T, ‖x b‖ = ‖PowerSeries.coeff 1 f‖ := by
   classical
-  obtain ⟨A1, A2, A3, A4, A5, -, -, -, -, A10⟩ := GlobalTheory.T.mvPowerSeries_integral_bounded_closure K Unit
+  obtain ⟨A1, A2, A3, A4, A5, -, -, -, -, A10⟩ := _root_.GlobalTheory.BddAlg.bdd_alg K Unit
   set h : PowerSeries K := PowerSeries.mk fun n => PowerSeries.coeff (n + 1) f with hh
   have hco : ∀ k, PowerSeries.coeff k h = PowerSeries.coeff (k + 1) f := by
     intro k; simp [hh]
@@ -99,7 +99,7 @@ theorem prod_zero_fibre (f : PowerSeries K) (p : ℕ) (hp : 0 < p) (hf : Intg f)
     rw [h0, map_zero, add_zero] at this
     exact this
   have hcard : (T.image x).card = p - 1 := by rw [Finset.card_image_of_injOn hinj, hT]
-  have key := (GlobalTheory.T.norm_coeff_integral_powerSeries_le_prod_zeros K h (T.image x) hI (by
+  have key := (_root_.GlobalTheory.ConvSer.norm_coeff_le_prod_zeros K h (T.image x) hI (by
     intro y hy
     obtain ⟨b, hb, rfl⟩ := Finset.mem_image.1 hy
     refine ⟨(hx b hb).1, ?_⟩

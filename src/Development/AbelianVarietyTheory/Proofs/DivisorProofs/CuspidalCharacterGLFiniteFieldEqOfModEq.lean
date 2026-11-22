@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.OrthSubrepresentati
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.PrimitiveEndClassFunctionZeroOfCharpolyMassZeroStatement
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.EndomorphismMassMobiusInverseMonicEq
 import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.InvariantSubspaceMobiusInverseRecEqOfFinrankLt
-import Development.AbelianVarietyTheory.Proofs.CharacterTheory.InvariantSubspaceMobiusInverseCharpolyLinearEquiStatement
+import Development.AbelianVarietyTheory.Proofs.CharacterTheory.InvariantSubspaceMobiusInverseCharpolyLinearEqui
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.IsPrimitiveEndClassFunctionInvariantSubspaceMobi
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.RootPowerSumCharacterAdditiveAndXSubOnePow
 import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.AbByPOfComm
@@ -87,7 +87,7 @@ theorem cusp_eq_of_modEq : ∀ (F : Type) [Field F] [Finite F] (θ : AlgebraicCl
   let φ : Module.End F V → ℂ := fun h => psi (rootSum θ k') V h - psi (rootSum θ k) V h
   have hc : IsClassFn φ := by
     intro e h
-    simp only [φ, GlobalTheory.T.invariantSubspaceMobiusInverseCharpoly_linearEquiv_conj]
+    simp only [φ, _root_.GlobalTheory.CuspGL.psi_conj]
   have hp : GlobalTheory.CuspGL.IsPrimitive φ := by
     intro A hA hA' g' hg'
     have e1 := _root_.GlobalTheory.CuspGL.isPrimitive_psi F V _ hs' A hA hA' g' hg'

@@ -11,7 +11,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProperMultiplicatio
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsFiniteKernelNonzero
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsFormalGermLocal
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ToFirst
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianQuotientOfPowerFnsStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianQuotientOfPowerFns
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProperHasPowerFns
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianQuotientLattice
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianQuotientBilinear
@@ -231,7 +231,7 @@ open LemFGeo in
 
 theorem hfree_geom : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host E) [StarRing (𝓞 E)], (∀ a : 𝓞 E, star a = H.bar a) → ∀ (X : Scheme.{0}) (t : SAB H X), PowFns t → ∀ (k : Type) [Field k] [IsAlgClosed k] (p : ℕ) [Fact p.Prime] [CharP k p] (x : Sp k ⟶ X), GeomPF t x → ∀ (d r : ℕ) (g : GermAt t x d), HChar g.B r → HFree g.B r := by
   intro E _ _ _ H _ hbar X t hP k _ _ p _ _ x hG d r g hc
-  obtain ⟨Q⟩ := GlobalTheory.T.abelian_quotient_of_power_fns E H X t hP k p x hG
+  obtain ⟨Q⟩ := _root_.GlobalTheory.CompanionTheory.Ar.AbQ.exists_abQuot E H X t hP k p x hG
   obtain ⟨d', ⟨gB⟩⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Conj.germAt_exists_of_isLocalRing E H hbar (Sp k) Q.tB (_root_.GlobalTheory.CompanionTheory.Ar.Conj.ProperPowFns.powFns_of_proper_algClosed E H k Q.tB Q.proper) k (𝟙 (Sp k))
   obtain ⟨Λ, _, _, _, _, P, j, hD, hs, hi, hk, hρ, hj⟩ := _root_.GlobalTheory.CompanionTheory.Ar.LieSeq.lie_seq E H hbar X t k p x Q d d' g gB
   obtain ⟨Z, hZ⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.FrGauge.frame_gauge E H hbar X t k p x Q d d' g gB P hD

@@ -2,7 +2,7 @@ import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRedA
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PBoundedSectionTransfer
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ArchimedeanValueBoundStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ArchimedeanValueBound
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.VerticalBoundHeightCompare
 
 open MvPolynomial ReciprocityTheory.ChartRestriction.G.Geo NumberField GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Top GlobalTheory.CompanionTheory.Ar.Small GlobalTheory.CompanionTheory.Ar.Cmp GlobalTheory.CompanionTheory.Ar.Ht
@@ -67,8 +67,8 @@ theorem exists_arch_bound {y : (Σ k, ι k) → Ω} {d : ℕ} (hAr : IsArithVar 
       |(k : ℝ) * Real.log (A.h z) - Real.log ‖val‖| ≤ C := by
   obtain ⟨hu, q, m, hq, hm, -, h1, h2⟩ := hV
   have hP := isSmoothHerm_powH hS k
-  obtain ⟨C₁, hC₁⟩ := GlobalTheory.T.archimedean_value_bound K ι Ω y d hAr hB (powH A k) q m u hP hq hm h1
-  obtain ⟨C₂, hC₂⟩ := GlobalTheory.T.archimedean_value_bound K ι Ω y d hAr hB (powH A k).inv q m u⁻¹ (isSmoothHerm_inv hP) hq hm h2
+  obtain ⟨C₁, hC₁⟩ := _root_.GlobalTheory.CompanionTheory.Ar.ArchBd.section_bound K ι Ω y d hAr hB (powH A k) q m u hP hq hm h1
+  obtain ⟨C₂, hC₂⟩ := _root_.GlobalTheory.CompanionTheory.Ar.ArchBd.section_bound K ι Ω y d hAr hB (powH A k).inv q m u⁻¹ (isSmoothHerm_inv hP) hq hm h2
   refine ⟨max C₁ C₂, fun z hz val hv hval => ?_⟩
   have hp : 0 < A.h z := A.pos z hz.1
   have hn : 0 < ‖val‖ := norm_pos_iff.2 hv

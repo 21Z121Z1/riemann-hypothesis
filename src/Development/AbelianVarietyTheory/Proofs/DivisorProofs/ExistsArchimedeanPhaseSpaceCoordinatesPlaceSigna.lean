@@ -65,7 +65,7 @@ theorem exists_coords : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Nu
   have hsmul : ∀ (r : ℝ) c, U (r • c) = realAd F r • U c := fun r c => by
     refine (hU' (r • c) _ ⟨fun u hu => ?_, fun w => ?_⟩).symm
     · rw [smul_comm, (hU c).1 u hu, smul_zero]
-    · rw [GlobalTheory.T.realScalarArchimedeanAdele_smul_matrix_realPlace σ τ hCM, (hU c).2, Pi.smul_apply, Matrix.mul_smul, Matrix.smul_mul]
+    · rw [_root_.GlobalTheory.RealScalar.realAd_smul_map σ τ hCM, (hU c).2, Pi.smul_apply, Matrix.mul_smul, Matrix.smul_mul]
       ext i j
       simp
   let p : (∀ w : InfinitePlace F, Matrix (Ix (P w) (Q w)) (Ix (R w) (S w)) ℂ) →ₗ[ℝ] (κ → mixedEmbedding.mixedSpace F) :=

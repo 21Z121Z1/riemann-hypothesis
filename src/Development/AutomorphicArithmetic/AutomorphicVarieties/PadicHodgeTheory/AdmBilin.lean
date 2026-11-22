@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FontaineFormal
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BcrisRegularOfTensorInj
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AcrisTorsionFreeComplete
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AlgClosureTensorBcrisToBdRInjectiveStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AlgClosureTensorBcrisToBdRInjective
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RatioInvariantInK0
 open Formalism.WeaklyAdmissibleFiltrations Formalism.MainNotions.N Formalism.BasicNotions Formalism.BasicNotions.Loc ReciprocityTheory.Gal TensorProduct Module UpperTheory.V.Loc Topology
 
@@ -236,11 +236,11 @@ theorem UpperTheory.V.Loc.admissible_of_bilinear_openSubgroup_galois :
       (fun x y hx hxy => ?_) (fun x hx hxy => ?_) (resCoef ℚ_[l] ρ) (resCoef ℚ_[l] ρ') (resCoef ℚ_[l] π) b hb hs
       _ (fun x => ?_) _ (fun x => ?_) _ (fun x => ?_) h h'
     · exact (eB g _).trans (AlgEquiv.commutes _ c)
-    · refine GlobalTheory.RegularRing.fracInv hfit (GlobalTheory.T.algClosure_tensor_bcris_to_bdR_injective l C) K x y hx fun g => ?_
+    · refine GlobalTheory.RegularRing.fracInv hfit (_root_.GlobalTheory.MemLoc.TensorInj.tensorInj l C) K x y hx fun g => ?_
       obtain ⟨g, rfl⟩ := e.surjective g
       rw [← eB, ← eB]
       exact hxy g
-    · refine GlobalTheory.RegularRing.lineUnit hfit (_root_.GlobalTheory.MemLoc.regular_of_tensorInj l C (GlobalTheory.T.algClosure_tensor_bcris_to_bdR_injective l C)) K x hx fun g => ?_
+    · refine GlobalTheory.RegularRing.lineUnit hfit (_root_.GlobalTheory.MemLoc.regular_of_tensorInj l C (_root_.GlobalTheory.MemLoc.TensorInj.tensorInj l C)) K x hx fun g => ?_
       obtain ⟨g, rfl⟩ := e.surjective g
       rw [← eB]
       exact hxy g

@@ -16,7 +16,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRin
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.LBLocal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTensorBundleRigidification
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPrincipallyPolarisedPowerUnimodularForm
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorDegenerationDataPsiEvenStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorDegenerationDataPsiEven
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorDegenerationDataTauBimultiplicative
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorDegenerationDataPsiPosTendstoZero
 
@@ -224,7 +224,7 @@ theorem exists_tensPol : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRing R
     subst hz
     exact id
   obtain ⟨hpos, htend⟩ := _root_.GlobalTheory.Mum.TensPol.psi_pos_tendsto R hR Q D' W pr hpr lim (AddEquiv.refl _) hc w hw hv hW hQ
-  exact ⟨⟨D', GlobalTheory.T.tensorDegenerationData_psi_even R hR Q D' W pr hpr lim (AddEquiv.refl _) hc w hw hv,
+  exact ⟨⟨D', _root_.GlobalTheory.PolTensEven.main R hR Q D' W pr hpr lim (AddEquiv.refl _) hc w hw hv,
     _root_.GlobalTheory.TensPolBimult.main R hR Q D' W pr hpr lim (AddEquiv.refl _) hc w hw hv h0, hpos, htend⟩,
     pr, AddEquiv.refl _, w, hpr, ⟨lim⟩, hc, hw, hv⟩
 

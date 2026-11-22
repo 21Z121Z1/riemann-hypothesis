@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ResidueDeg
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ArFormExists
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMixedHeightOfArchimedeanIntegrals
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithIntersectionNumberExistsOfMixedHeights
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsArithHeightEqMixedHeightDiagonalStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsArithHeightEqMixedHeightDiagonal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithMixedInterInductiveOfMixedHeights
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithHeightProjectionFormulaEveryPoint
 open CategoryTheory AlgebraicGeometry TopologicalSpace MvPolynomial
@@ -20,7 +20,7 @@ theorem arFormExists_arMix_heightProjection (hI : ArchInteg) (hR : ArchRecip) :
   refine ⟨_root_.GlobalTheory.MixHt.arFormExists_of_isMix hI hE, _root_.GlobalTheory.MixHt.arMix_of_mixHt hI hE, ?_⟩
   intro k _ X Y _ p q D e hX hY π hπ _ _ L h hh
   obtain ⟨T, hT⟩ := hE k Y q (isAmb_of_isArithVar hY) (e + 1)
-  obtain ⟨h', hh', -⟩ := GlobalTheory.T.exists_arithHeight_eq_mixedHeight_diagonal hI k Y q e hY T hT (L.pull π hπ)
+  obtain ⟨h', hh', -⟩ := _root_.GlobalTheory.MixHtDiag.exists_isArithHeight hI k Y q e hY T hT (L.pull π hπ)
   exact ⟨h', hh', _root_.GlobalTheory.MixHt.heightProj k X Y p q D e hX hY π hπ L h h' hh hh' (genericPoint Y)⟩
 
 end GlobalTheory.MixHtCalc

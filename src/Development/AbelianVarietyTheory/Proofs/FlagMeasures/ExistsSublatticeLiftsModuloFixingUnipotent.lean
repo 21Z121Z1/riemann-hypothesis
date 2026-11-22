@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.RowMinor
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EncardBiUnionLe
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegralOfUnimodular
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LinearFormsBoundedRepresentativesStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LinearFormsBoundedRepresentatives
 import Formalism.FlagUnipotentLattices.CardSubgroupsOfIndexLe
 
 noncomputable section
@@ -251,7 +251,7 @@ theorem fun_reps {u u' : D.what₂.Word} {F0 : Fb D u} {Λ : LatV D} (hSt : Stan
     Module.IsTorsionFree.trans_faithfulSMul (𝓞 D.host.E) D.host.E _
   obtain ⟨S₁, hc₁, hS₁⟩ := restrict_reps (RingOfIntegers.not_isField D.host.E) (P.comap M.subtype)
     (Nat.finite_of_card_ne_zero (by unfold idxW at h1; omega))
-  obtain ⟨S₂, hc₂, hS₂⟩ := GlobalTheory.T.linear_forms_bounded_representatives D u u' F0 Λ hSt hB hR M (sat_primitive hPL)
+  obtain ⟨S₂, hc₂, hS₂⟩ := _root_.GlobalTheory.LoopC.FunIdx.funIdx D u u' F0 Λ hSt hB hR M (sat_primitive hPL)
   let e := Submodule.comapSubtypeEquivOfLe hPM
   refine ⟨(S₂ ×ˢ S₁).image (fun q => q.2 ∘ₗ e.symm.toLinearMap + q.1 ∘ₗ Submodule.inclusion hPM), ?_, fun ψ => ?_⟩
   · have h2 : (S₁.card : ℝ) ≤ Q := le_trans (by exact_mod_cast hc₁) hQ

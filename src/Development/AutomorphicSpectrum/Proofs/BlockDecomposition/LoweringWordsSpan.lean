@@ -7,7 +7,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NatOfSimpleLowe
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CasimirEqOfSingularWeightVectorStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EqZeroOfLowExponentCasimirStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeightVectorMemLowSpanSupVermaStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LowSpanInfIdealLeSquareSpanStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LowSpanInfIdealLeSquareSpan
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AnnihilatorSpannedByWeightVectorsStatement
 set_option maxSynthPendingDepth 1
 
@@ -147,7 +147,7 @@ theorem pres_rho : ∀ {n : ℕ} {A Z : Type} [AddCommGroup A] [Module ℂ A] [A
     refine (Submodule.span_le.2 ?_) (GlobalTheory.T.annihilator_spanned_by_weight_vectors φ t hd' Y hYt)
     rintro y ⟨μ, hy, h0⟩
     exact mem_Jp_of_adW φ t ht0 hd' hu' (-ht μ + 1).toNat μ y (by omega) hy h0
-  have hYs := GlobalTheory.T.low_span_inf_ideal_le_square_span Y hYlow hYJ
+  have hYs := _root_.GlobalTheory.CompanionTheory.PresRho.LowMeet.mem_sqSpan_of_mem_lowSpan_of_mem_Jp Y hYlow hYJ
   have h := act_eq_zero_of_sqSpan ψ hψ z hz hYs
   rw [hY, map_sum, LinearMap.sum_apply] at h
   rw [← h]

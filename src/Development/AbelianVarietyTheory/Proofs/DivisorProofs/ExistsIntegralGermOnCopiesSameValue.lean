@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MvIsIntMapMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DepthNonnegIntegralOperatorIntegralVectors
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogarithmSumIntegralAdditive
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ActionLinearLogCoordinatesIntegral
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogIntegralUnitsSubgroupExpHomProofStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogIntegralUnitsSubgroupExpHomProof
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CanonGaugeBiadditiveOfLogSumActionLinear
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameSeriesExpSumOfActionLinearLogUnitStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaugeHermitianCombinationOfStepsStatement
@@ -100,7 +100,7 @@ theorem exists_germ_on_copies : ∀ (E : Type) [Field E] [NumberField E] [IsCMFi
   intro p _ la T io e _ y Ch X cx n B hB N k f hf
   have hadd := _root_.GlobalTheory.IsoTriv.log_sum_additive_preserves_integrality
   have hact := _root_.GlobalTheory.IsoTriv.actSt
-  have hunit := GlobalTheory.T.logIntegralUnitsSubgroupExpHom_proof
+  have hunit := _root_.GlobalTheory.IsoTriv.unitSt
   have hcont := _root_.GlobalTheory.IsoTriv.contSt_holds
   have hbi := _root_.GlobalTheory.IsoTriv.GaugeBiadd.biadd_of_add_of_act hadd hact
   have hfr := GlobalTheory.T.frameSeriesExpSum_of_actionLinear_logUnit hact hunit

@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZbLeftWhiskerRight
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDescentDatumCompatibleOfLineBundleIso
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineBundleIsoPullbackFstSndOfAdditiveTrivialKern
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDescentCocycleDefectOfCompatibleStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDescentCocycleDefectOfCompatible
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GlobalUnitTripleFibreProductInvariantSetGroupCoo
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGlobalUnitTwistNormaliseDescentFamily
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DescentCocycleDefectNormalisedEqOne
@@ -30,7 +30,7 @@ theorem descentDatum_of_additive : ∀ (K : Type) [Field K] [IsAlgClosed K] (A A
   obtain ⟨τ, hτ⟩ := hzero
   obtain ⟨u, hu⟩ := _root_.GlobalTheory.DescNormU.normalise K A A' B q P τ hP hτ φ₀ hφ₀
   have hc : DescCompat (q ▷ B).left P (twist (q ▷ B).left P φ₀ u) := twist_descCompat _ P φ₀ u hφ₀
-  obtain ⟨D, hD⟩ := GlobalTheory.T.exists_descentCocycleDefect_of_compatible _ P _ hP hc
+  obtain ⟨D, hD⟩ := _root_.GlobalTheory.DescDefect.defect_exists _ P _ hP hc
   have h1 := _root_.GlobalTheory.DescNorm.defect_normalised K A A' B q P τ hP _ D hu hD
   have h2 := _root_.GlobalTheory.DescNorm.RigidW.gm_rhoW_eq_gm_id_of_abelian K A A' B q hB D
   refine ⟨twist (q ▷ B).left P φ₀ u, hc, fun w i j k hi hj hk => ?_⟩

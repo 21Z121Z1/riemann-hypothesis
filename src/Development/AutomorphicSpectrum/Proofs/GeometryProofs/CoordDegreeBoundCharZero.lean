@@ -11,9 +11,9 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCocharLie
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelIsBaseChange
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelLocalizationAtPrime
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeEvalAtLocalRingStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeEvalAtLocalRing
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeRegularAtLocalPoint
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordValuationBoundLocalStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordValuationBoundLocal
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField TensorProduct Filter Topology Matrix
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CompanionTheory.Ar
 open GlobalTheory.CompanionTheory.Ar.RootHt GroundTheory.Heights₂.Heights
@@ -129,7 +129,7 @@ theorem core (X : Scheme.{0}) (Ω : Type) [Field Ω] (ξ : Sp Ω ⟶ X) (K : Typ
   have hzL : spMap (algebraMap (𝓞 L) L) ≫ z = spMap (algebraMap A L) ≫ zA := by
     rw [hzA, ← Category.assoc, IsScalarTower.algebraMap_eq (𝓞 L) A L]
     simp only [spMap, CommRingCat.ofHom_comp, Spec.map_comp]
-  obtain ⟨c, h, hcne, hmax, hin⟩ := GlobalTheory.T.coord_valuation_bound_local X Ω ξ K J y L w v A zA hgen hcoord hA₁ hA₂ (hzL ▸ hw)
+  obtain ⟨c, h, hcne, hmax, hin⟩ := _root_.GlobalTheory.CompanionTheory.Ar.RootHt.bestChart_finite X Ω ξ K J y L w v A zA hgen hcoord hA₁ hA₂ (hzL ▸ hw)
   obtain ⟨b, π, κ, hfl, -, hmb, hdual, hreg, hκ0, hκ, hκi, hcls⟩ :=
     _root_.GlobalTheory.CompanionTheory.Ar.RootHt.cls_frame X Ω ξ K J y G Li M V r b₀ m i a e₀ hb₀ hS hdeg ⟨centre zA, h⟩ c hin
   set f : Module.Dual Ω Li := (m : Ω) • π i with hfdef

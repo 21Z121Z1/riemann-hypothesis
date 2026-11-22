@@ -4,10 +4,10 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Ex
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleDiscreteSeriesOfHasParam
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.OneSubIdemQMulSelf
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousIdempotentCutIsClosedScaledKernelStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnitaryIdempotentCutMemFourierJacobiBesselGroupStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsCompactOpenLatticeStabilizerAtPlacesStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.InLatticeStabilizerAtPlacesIffPlaceSetProdStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousIdempotentCutIsClosedScaledKernel
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnitaryIdempotentCutMemFourierJacobiBesselGroup
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsCompactOpenLatticeStabilizerAtPlaces
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.InLatticeStabilizerAtPlacesIffPlaceSetProd
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.IndefR.Datum MeasureTheory IsDedekindDomain NumberField Matrix
 open GlobalTheory.MixModel GlobalTheory.MixPer GlobalTheory.Grow GlobalTheory.Unf GlobalTheory.SeeSaw GlobalTheory.FinPl
 open scoped TensorProduct
@@ -157,7 +157,7 @@ theorem cutG_mem_Qc (V : HSp D) (Q : Finset (Pl D)) {g : GA D V} (hg : g ∈ GfC
 
 theorem isClosed_of_idem (V : HSp D) (P : Pl D → Prop) (c : AF D.host.F)
     (hc : ∀ a, a ∈ idAt D P ↔ algebraMap (AF D.host.F) (AE D) c * a = a) : IsClosed (grpAt V P : Set (GA D V)) := by
-  have h := (GlobalTheory.T.continuous_idempotentCut_and_isClosed_scaledKernel D V).2 (1 - c)
+  have h := (_root_.GlobalTheory.FinPl.SetCut.continuous_cutG_and_isClosed D V).2 (1 - c)
   convert h using 1
   ext g
   rw [SetLike.mem_coe, grpAt, mem_congGrp_iff, Set.mem_setOf_eq]
@@ -175,20 +175,20 @@ def splitHomeo (V : HSp D) (Q : Finset (Pl D)) : (grpAt V (· ∈ Q) × grpAt V 
     exact Continuous.subtype_mk
       ((continuous_subtype_val.comp continuous_fst).mul (continuous_subtype_val.comp continuous_snd)) _
   continuous_invFun :=
-    (Continuous.subtype_mk (((GlobalTheory.T.continuous_idempotentCut_and_isClosed_scaledKernel D V).1 _ _).comp continuous_subtype_val) _).prodMk
-      (Continuous.subtype_mk (((GlobalTheory.T.continuous_idempotentCut_and_isClosed_scaledKernel D V).1 _ _).comp continuous_subtype_val) _)
+    (Continuous.subtype_mk (((_root_.GlobalTheory.FinPl.SetCut.continuous_cutG_and_isClosed D V).1 _ _).comp continuous_subtype_val) _).prodMk
+      (Continuous.subtype_mk (((_root_.GlobalTheory.FinPl.SetCut.continuous_cutG_and_isClosed D V).1 _ _).comp continuous_subtype_val) _)
 
 theorem grp_split : ∀ (D : D7) (V : HSp D) (Q : Finset (Pl D)), IsClosed (grpAt V (· ∈ Q) : Set (GA D V)) ∧ IsClosed (grpAt V (· ∉ Q) : Set (GA D V)) ∧ grpAt V (· ∈ Q) ≤ GfC V ∧ grpAt V (· ∉ Q) ≤ GfC V ∧ (∀ a ∈ grpAt V (· ∈ Q), ∀ b ∈ grpAt V (· ∉ Q), a * b = b * a) ∧ (∃ e : (grpAt V (· ∈ Q) × grpAt V (· ∉ Q)) ≃ₜ GfC V, ∀ p, (e p : GA D V) = p.1 * p.2) ∧ (∀ P P' : Pl D → Prop, (∀ p, P p → ¬ P' p) → grpAt V P ≤ grpOff V P') ∧ (∀ P : Pl D → Prop, GfC V ⊓ grpOff V P = grpAt V fun p => ¬ P p) ∧ (∀ (L : Lat V), IsSelfDualC V L → ∀ P : Pl D → Prop, (∃ K : Subgroup (GA D V), (∀ g, g ∈ K ↔ InK V L P g) ∧ IsCompact (K : Set (GA D V)) ∧ IsOpen ((K.subgroupOf (grpAt V P) : Subgroup _) : Set (grpAt V P))) ∧ ∀ κ, InK V L P κ ↔ ∃ a b, InK V L (fun p => P p ∧ p ∈ Q) a ∧ InK V L (fun p => P p ∧ p ∉ Q) b ∧ κ = a * b) ∧ ∀ (V₀ : HSp D) (ρ : ℕ) (d : HypDec V V₀ ρ), (∀ a ∈ grpAt V (· ∈ Q), ∀ b ∈ grpAt V (· ∉ Q), a * b ∈ jacGrp d → a ∈ jacGrp d ∧ b ∈ jacGrp d) ∧ ∀ (A L : HSp D) (o : OrthDec V₀ A L), ∀ a ∈ grpAt V (· ∈ Q), ∀ b ∈ grpAt V (· ∉ Q), a * b ∈ besGrp d o → a ∈ besGrp d o ∧ b ∈ besGrp d o := by
   intro D V Q
   refine ⟨isClosed_of_idem V _ _ (mem_idAt_Q_iff Q), isClosed_of_idem V _ _ (mem_idAt_Qc_iff Q), grpAt_le_GfC V _,
     grpAt_le_GfC V _, fun a ha b hb => comm_Q V Q ha hb, ⟨splitHomeo V Q, fun _ => rfl⟩, grpAt_le_grpOff V,
-    GfC_inf_grpOff V, fun L hL P => ⟨GlobalTheory.T.exists_compactOpen_latticeStabilizerAtPlaces D V L hL P, GlobalTheory.T.inLatticeStabilizerAtPlaces_iff_placeSet_prod D V L P Q⟩, fun V₀ ρ d => ⟨?_, ?_⟩⟩
+    GfC_inf_grpOff V, fun L hL P => ⟨_root_.GlobalTheory.FinPl.KOpen.exists_compact_open D V L hL P, _root_.GlobalTheory.FinPl.KSplit.inK_iff_prod D V L P Q⟩, fun V₀ ρ d => ⟨?_, ?_⟩⟩
   · intro a ha b hb h
-    exact ⟨cutG_left V Q ha hb ▸ (GlobalTheory.T.unitaryIdempotentCut_mem_fourierJacobi_besselGroup D V V₀ ρ d _ (idemQ_mul_self Q)).1 _ h,
-      cutG_right V Q ha hb ▸ (GlobalTheory.T.unitaryIdempotentCut_mem_fourierJacobi_besselGroup D V V₀ ρ d _ (one_sub_idemQ_mul_self Q)).1 _ h⟩
+    exact ⟨cutG_left V Q ha hb ▸ (_root_.GlobalTheory.FinPl.SetCut.cutG_mem_jacGrp_besGrp D V V₀ ρ d _ (idemQ_mul_self Q)).1 _ h,
+      cutG_right V Q ha hb ▸ (_root_.GlobalTheory.FinPl.SetCut.cutG_mem_jacGrp_besGrp D V V₀ ρ d _ (one_sub_idemQ_mul_self Q)).1 _ h⟩
   · intro A L o a ha b hb h
-    exact ⟨cutG_left V Q ha hb ▸ (GlobalTheory.T.unitaryIdempotentCut_mem_fourierJacobi_besselGroup D V V₀ ρ d _ (idemQ_mul_self Q)).2 A L o _ h,
-      cutG_right V Q ha hb ▸ (GlobalTheory.T.unitaryIdempotentCut_mem_fourierJacobi_besselGroup D V V₀ ρ d _ (one_sub_idemQ_mul_self Q)).2 A L o _ h⟩
+    exact ⟨cutG_left V Q ha hb ▸ (_root_.GlobalTheory.FinPl.SetCut.cutG_mem_jacGrp_besGrp D V V₀ ρ d _ (idemQ_mul_self Q)).2 A L o _ h,
+      cutG_right V Q ha hb ▸ (_root_.GlobalTheory.FinPl.SetCut.cutG_mem_jacGrp_besGrp D V V₀ ρ d _ (one_sub_idemQ_mul_self Q)).2 A L o _ h⟩
 
 end GlobalTheory.FinPl.SetCut
 

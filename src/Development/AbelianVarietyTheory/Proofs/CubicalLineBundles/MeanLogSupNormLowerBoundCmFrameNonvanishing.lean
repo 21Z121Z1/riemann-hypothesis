@@ -21,7 +21,7 @@ import Formalism.LocalToGlobal.ProjectiveLattices.RosatiLatticeNorms.LinkNum
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ArchimedeanHypothesisLowerBoundCmPoint
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.FramePolynomialEquivariantAndNeZero
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LocalLowerBoundCmPointFramePolynomialEveryPrimeStatement
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LocalLowerBoundCmPointFramePolynomialEveryPrime
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsIsFramePolynomialOfRuleNumberField
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsGoodCmPointAtCmBasisFrame
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.CmPointLowerBoundFree
@@ -75,7 +75,7 @@ theorem meanLogSup_lowerBound : ∀ (E : Type) [Field E] [NumberField E] [IsCMFi
     rw [dif_pos x₀.2]
     exact h0
   have hG0 : G ≠ 0 := (_root_.GlobalTheory.LamT.isFrPoly_equiv_and_ne_zero E H Dw l Xo c z.K z.y a n F hFs G hG).2 _ σ₁ _ hx hev
-  have hloc := GlobalTheory.T.localLowerBound_cmPoint_framePolynomial_every_prime E H Dw l Xo c z _ La hz a n F hFs hint G hG
+  have hloc := _root_.GlobalTheory.LamT.LocClause.step5Loc_cmPt E H Dw l Xo c z _ La hz a n F hFs hint G hG
   have harch := _root_.GlobalTheory.LamT.step5Arch_cm E H Dw l Xo c r U ξ hU hξ hpq z _ La hz a n hd F hF G hG
   obtain ⟨hGood, hL, -⟩ := hz
   have hdeg := LamF.lamDegSt_logOm GlobalTheory.thetaUnifAV_all GlobalTheory.firstFiveLaws.1 E H χ hχ l c hstar _ _ _ z.obj La hGood

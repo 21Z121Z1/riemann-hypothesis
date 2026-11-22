@@ -3,15 +3,15 @@ import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.BlockProductIsom
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsCuspidalIffCompositions
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBlockDiagActEq
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.IsSimpleModuleOfFinrankEnd
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInjectiveKernelCoindIntertwiningMapStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInjectiveKernelCoindIntertwiningMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroCoindIntertwinerOfDoubleCoset
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPermMatrixRepParabolicDoubleCosetStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalLeviDatumPermBlocksMatchStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EquivOfNeZeroMapIsotypicSumOfCopiesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EquivOfNeZeroMapIsotypicSumOfCopies
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockGLHomConjPermMatrixOfBlocksMatchStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroIntertwiningOfCommutingIsotypicFacto
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPermOfBlockSizeBijection
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLeviGeneratedCommutingBlockGLStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLeviGeneratedCommutingBlockGL
 
 open Formalism.L2.DIV GlobalTheory.FinGL GlobalTheory.Parabolic GlobalTheory.IndefiniteRowSideFullHecke.BlockProductIsomorphism
 
@@ -68,7 +68,7 @@ theorem coind_irreducible [Finite G] (P : Subgroup G) (σ : Representation ℂ P
   have := nontrivial_of_irr hσ
   have := finiteDimensional_of_irr hσ
   have : NeZero (Nat.card G : ℂ) := ⟨by exact_mod_cast Nat.card_pos.ne'⟩
-  obtain ⟨K, hi, hK⟩ := GlobalTheory.T.exists_injective_kernel_coind_intertwiningMap G P P V V σ σ
+  obtain ⟨K, hi, hK⟩ := _root_.GlobalTheory.CoindKernel.exists_kernel G P P V V σ σ
   obtain ⟨Φ, hΦ⟩ := _root_.GlobalTheory.exists_ne_zero_intertwiningMap_coind_of_doubleCoset G P P V V σ σ 1 LinearMap.id (fun e => by
     obtain ⟨v, hv⟩ := exists_ne (0 : V)
     exact hv (LinearMap.congr_fun e v)) (fun p p' e => by
@@ -158,7 +158,7 @@ theorem isoGL_of_twist [Finite F] {b b' : Fin r → ℕ} {σ : Representation �
   obtain ⟨π, hπ⟩ := h2 d hc hc'
   let τ' : Representation ℂ (GL (Fin d) F) V' :=
     (σ'.comp (blockHom F b' _ hc')).comp (MulAut.conj π).toMonoidHom
-  refine (isoGL_iff _ _).2 (GlobalTheory.T.equiv_of_ne_zero_map_isotypicSumOfCopies _ V V' W W' _ τ' ρ ρ' hi hi' hs (isotypic_conj π (fun g => rfl) hs')
+  refine (isoGL_iff _ _).2 (_root_.GlobalTheory.IsotypicMap.equiv_of_isotypic_map _ V V' W W' _ τ' ρ ρ' hi hi' hs (isotypic_conj π (fun g => rfl) hs')
     ⟨T, fun g => (ht _ _ (hπ g)).symm⟩ fun e => hT (congrArg Representation.IntertwiningMap.toLinearMap e))
 
 end Iso
@@ -198,7 +198,7 @@ theorem exists_twist (h : IsRegularCusp b σ d W ρ) (h' : IsRegularCusp b' σ' 
   have := finiteDimensional_of_irr h.1.irr
   have := finiteDimensional_of_irr h'.1.irr
   have hf : ∀ c : Set.range b, IsFactor b σ c (ρ c) := fun c => h.2.1 c c.2
-  obtain ⟨f, hf1, hf2, hf3⟩ := GlobalTheory.T.exists_levi_generated_commuting_blockGL F r b (fun c => d c) fun c => (hf c).2.1
+  obtain ⟨f, hf1, hf2, hf3⟩ := _root_.GlobalTheory.Parabolic.LeviGen.levi_generated F r b (fun c => d c) fun c => (hf c).2.1
   have hL : levi F b = levi F (b' ∘ w) := levi_congr hw
   let ι : levi F b →* blockTri (κ := F) b := Subgroup.inclusion (levi_le_blockTri b)
   let ι' : levi F b →* blockTri (κ := F) b' := (Subgroup.inclusion (levi_le_blockTri b')).comp
@@ -238,7 +238,7 @@ theorem irrPar : IrrPar := by
   have hi' := parInd_irreducible h'
   constructor
   · rintro ⟨e⟩
-    obtain ⟨K, hKi, hK⟩ := GlobalTheory.T.exists_injective_kernel_coind_intertwiningMap _ _ _ V V' σ σ'
+    obtain ⟨K, hKi, hK⟩ := _root_.GlobalTheory.CoindKernel.exists_kernel _ _ _ V V' σ σ'
     have := nontrivial_of_irr hi
     have h0 : K e.toIntertwiningMap ≠ 0 := fun e0 => by
       have e1 := hKi (e0.trans (map_zero K).symm)

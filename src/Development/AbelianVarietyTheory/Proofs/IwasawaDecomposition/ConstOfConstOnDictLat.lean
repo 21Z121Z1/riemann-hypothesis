@@ -21,7 +21,7 @@ theorem const_of_const_on_dictLat : ∀ (D : D7) (H : ReciprocityTheory.ChartRes
     rw [(hW k).1, (hU.2.1 k).1]
     exact hx τ (((hU.2.1 k).2 τ).1 hτ)
   obtain ⟨θ, hθ⟩ := (GlobalTheory.Member.infiniteAdele_bijective D).1
-  obtain ⟨hAr, -, -⟩ := GlobalTheory.T.archimedeanMatrix_unitary_continuous_multiplicative D V θ hθ
+  obtain ⟨hAr, -, -⟩ := _root_.GlobalTheory.Member.Arch.archM_spec D V θ hθ
   have hdom : ∀ h, (dict h).2 ∈ (U.X (dict h).1).dom := by
     intro h
     obtain ⟨γ, -, -, -, hfr⟩ := hD.2 h

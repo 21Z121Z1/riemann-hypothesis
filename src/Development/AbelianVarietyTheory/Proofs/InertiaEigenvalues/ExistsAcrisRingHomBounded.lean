@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.CrystallinePeriods.AdicMaps
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsStratHom
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BhattScholzeIntegral
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilKisinSeedDiscNormBoundsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilKisinSeedDiscNormBounds
 import Development.AbelianVarietyTheory.CrystallinePeriods.RingIface
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.WeaklyAdmissibleFiltrations TensorProduct PowerSeries GlobalTheory.Prism GlobalTheory.BKReal GlobalTheory.Per GlobalTheory.BSP GlobalTheory.MemLoc
 open scoped Formalism.Per NNReal
@@ -234,7 +234,7 @@ theorem exists_acris_to_disc : ∀ (l : ℕ) [Fact l.Prime] (K : FinExt l) (bk :
     ∃ γ : Per.Acris l →+* bk.DA bk.ρ₀,
       (∀ a : Ainf l, γ (algebraMap (Ainf l) (Per.Acris l) a) = bk.iA a) ∧ ∀ x, ‖γ x‖ ≤ 1 := by
   intro l _ K bk
-  obtain ⟨-, hL, hθ⟩ := GlobalTheory.T.breuilKisin_seedDisc_norm_bounds l K bk
+  obtain ⟨-, hL, hθ⟩ := _root_.GlobalTheory.BSP.RhoZeroNormBounds.seed_norms l K bk
   let B := unitBall l (bk.ev X) bk.ρ₀
   haveI : IsAdicComplete (Ideal.span {(l : B)}) B := isAdicComplete_unitBall hL
   let f0 : Per.Acris0 l →+* B :=

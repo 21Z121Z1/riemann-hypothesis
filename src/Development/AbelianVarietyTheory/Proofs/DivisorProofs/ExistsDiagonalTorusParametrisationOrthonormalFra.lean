@@ -4,7 +4,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.Uppe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PhaseFrame
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitDetOfIsOrth
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusElementConjugatedByFrameMemSpecialUnitary
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasStrictFDerivAtDiagonalTorusZeroStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasStrictFDerivAtDiagonalTorusZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusTangentMemSpecialUnitaryLieDiagonal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UpperTriangularSignFormDiagonalUnimodular
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTorusAnglesOfUnimodularProdOne
@@ -49,7 +49,7 @@ theorem torus_param : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (r 
       · exact Complex.continuous_exp.comp (continuous_const.mul
           (Complex.continuous_ofReal.comp (continuous_angles a))).neg
     exact (continuous_const.mul (hph.comp (continuous_apply τ))).mul continuous_const
-  · exact GlobalTheory.T.hasStrictFDerivAt_diagonalTorus_zero E r X.Ψ x
+  · exact _root_.GlobalTheory.TorusFrame.hasStrictFDerivAt_torus_zero E r X.Ψ x
   · rintro g ⟨b, hb, hgb⟩
     have hgx (τ : X.Ψ) : ((g : X.Ψ → GL (Fin r) ℂ) τ : Matrix (Fin r) (Fin r) ℂ) * mat x τ = mat x τ * mat b τ :=
       congrFun hgb τ

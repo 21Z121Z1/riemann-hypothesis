@@ -21,7 +21,7 @@ theorem antisymmetry_transposition_factor : AntisymmetryFibreSquares := by
   obtain ⟨m, d, S', K, _, ι, _, P, Re', hm, ⟨F⟩, hPB, hdeg⟩ := hSq B c
   obtain ⟨⟨c₀, hc₀, hfl⟩, hprop⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PB.proportional hIn Ψ N T.j hN hjN
   obtain ⟨-, hv⟩ := hprop (d + 1) S' F.dim F.unif
-  have hnpos : 0 < R.n c := (GlobalTheory.T.real_tower_arith_agreement hIn II hII Ψ N (T.M B c) (R.Sys c) (R.n c) (R.tie B c) lam 0).1
+  have hnpos : 0 < R.n c := (_root_.GlobalTheory.CompanionTheory.Ar.Top.RootNum.arith_degrees hIn II hII Ψ N (T.M B c) (R.Sys c) (R.n c) (R.tie B c) lam 0).1
   have hn0 : (R.n c : ℝ) ≠ 0 := Nat.cast_ne_zero.2 hnpos.ne'
 
   have hvol : m * ((R.n c : ℝ) * T.vol c) = PB.volOf S' := by
@@ -47,7 +47,7 @@ theorem antisymmetry_transposition_factor : AntisymmetryFibreSquares := by
   have hnum : ∀ mu : Wt Ψ N, m * ((R.n c : ℝ) * T.PPc II B c (linRoot mu ^ (Top.dimFl Ψ N + 1))) =
       eval (fun x : Ψ × Fin N => mu x.1 x.2) (PB.toWt (Re'.PB II)) := by
     intro mu
-    have h1 := ((GlobalTheory.T.real_tower_arith_agreement hIn II hII Ψ N (T.M B c) (R.Sys c) (R.n c) (R.tie B c) mu 0).2.2 hconv hpos).2
+    have h1 := ((_root_.GlobalTheory.CompanionTheory.Ar.Top.RootNum.arith_degrees hIn II hII Ψ N (T.M B c) (R.Sys c) (R.n c) (R.tie B c) mu 0).2.2 hconv hpos).2
     rw [zero_div, linA_zero_pow] at h1
     have e : PB.gapS (fun x : Ψ × Fin N => mu x.1 x.2) 0 =
         fun o => o.elim 0 (PB.gap fun x : Ψ × Fin N => mu x.1 x.2) := rfl

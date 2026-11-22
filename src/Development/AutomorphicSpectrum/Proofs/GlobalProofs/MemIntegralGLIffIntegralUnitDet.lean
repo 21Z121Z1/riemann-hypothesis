@@ -1,5 +1,6 @@
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.InstBorelGL
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LocalFieldUniformizerNormPropertiesStatement
+import Mathlib
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LocalFieldUniformizerNormProperties
 open MeasureTheory Matrix GlobalTheory.CompanionTheory.QL
 open scoped ComplexConjugate ValuativeRel
 
@@ -31,7 +32,7 @@ theorem mem_GLint_iff {F : Type} [Field F] [ValuativeRel F] [TopologicalSpace F]
     (hLF : LF O ϖ nrm q) (n : ℕ) (g : GL (Fin n) F) :
     g ∈ GLint O n ↔ (IsInt O (g : Matrix (Fin n) (Fin n) F) ∧
       nrm (g : Matrix (Fin n) (Fin n) F).det = 1) := by
-  obtain ⟨-, -, hO, -, -, -, -⟩ := GlobalTheory.T.localField_uniformizer_norm_properties hLF
+  obtain ⟨-, -, hO, -, -, -, -⟩ := _root_.GlobalTheory.CompanionTheory.QL.NormalisedValue.main hLF
   have hdet : (g : Matrix (Fin n) (Fin n) F).det * ((g⁻¹ : GL (Fin n) F) : Matrix (Fin n) (Fin n) F).det = 1 := by
     rw [← Matrix.det_mul, ← Units.val_mul, mul_inv_cancel, Units.val_one, Matrix.det_one]
   constructor

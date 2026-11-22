@@ -25,7 +25,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.B
 import Development.AbelianVarietyTheory.PublishedTheorems.SemiabelianTori.GeometricallyConnectedSplitTorusAff
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PrincipalHermitianFibre
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsPrincipalBaseChangeIff
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelComplexBaseChangeStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelComplexBaseChange
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField MeasureTheory
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi
 open GroundTheory.Heights₂.Heights TensorProduct
@@ -173,8 +173,8 @@ theorem ext_props (D : PPData H L) (D' : PPData H L') (m : D.Ext D') :
         ((D.B.metric.form (σ'.comp (algebraMap L L'))).inner ((1 : ComplexAt _) ⊗ₜ[𝓞 L] x)
           ((1 : ComplexAt _) ⊗ₜ[𝓞 L] y) : ℂ) := by
     intro σ' x y
-    obtain ⟨M₁, h₁⟩ := GlobalTheory.T.lie_model_complex_base_change _ D.t.G L (𝟙 _) D.B.carrier D.MB (σ'.comp (algebraMap L L'))
-    obtain ⟨M₂, h₂⟩ := GlobalTheory.T.lie_model_complex_base_change _ D'.t.G L' (𝟙 _) D'.B.carrier D'.MB σ'
+    obtain ⟨M₁, h₁⟩ := _root_.GlobalTheory.CompanionTheory.Ar.LieSigma.lieModel_fibre _ D.t.G L (𝟙 _) D.B.carrier D.MB (σ'.comp (algebraMap L L'))
+    obtain ⟨M₂, h₂⟩ := _root_.GlobalTheory.CompanionTheory.Ar.LieSigma.lieModel_fibre _ D'.t.G L' (𝟙 _) D'.B.carrier D'.MB σ'
     have a := D.fib (σ'.comp (algebraMap L L')) x y _ _ (h₁ x) (h₁ y)
     have b := D'.fib σ' (j x) (j y) _ _ (h₂ (j x)) (h₂ (j y))
     have hring : (σ'.comp (algebraMap (𝓞 L') L')).comp (algebraMap (𝓞 L) (𝓞 L')) =

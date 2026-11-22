@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FourierMatch
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetRallisOrbitInvariantMapProper
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitaryActionHermitianInvariantsTransitiveStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitaryActionHermitianInvariantsTransitive
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InvariantImageOpenClosedLocalSections
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetRallisTransferFactorKrylovDet
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitaryGroupPositiveCharacterTrivialAndUnimodulaStatement
@@ -183,7 +183,7 @@ theorem part4 (F E : Type) [NontriviallyNormedField F] [NontriviallyNormedField 
     (hΔ : Delta a₀ ≠ 0) (hX₀ : HasInv X₀ a₀) :
     ∀ᶠ a in 𝓝 a₀, (∃ X : Hn r F E, HasInv X a) ∧ ∀ X : Hn r F E, HasInv X a → orbU M f X = orbU M f X₀ := by
   obtain ⟨Ω, s, hΩc, hΩo, ha₀, hs, hsinv, hprop⟩ := (_root_.GlobalTheory.JR.image_openClosed_section F E r a₀ hΔ).2 ⟨X₀, hX₀⟩
-  have huniq := (GlobalTheory.T.unitary_action_hermitian_invariants_transitive F E r).2.2.1
+  have huniq := (_root_.GlobalTheory.JR.HermInv.herm_invariants F E r).2.2.1
   set K : Set (Matrix.unitaryGroup (Fin r) E) :=
     Prod.fst '' {p : Matrix.unitaryGroup (Fin r) E × Inv r F | p.2 ∈ Ω ∧ actU p.1 (s p.2) ∈ tsupport f} with hKdef
   have hK : IsCompact K := (hprop (tsupport f) hf.2).image continuous_fst

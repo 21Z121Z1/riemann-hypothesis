@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalRepGLEx
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsTorusEigenformOfCompactTorusEigenvectorStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JordanHolderMultiplicityNormalizedBorelJacquetUn
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EqZeroOfMemTwistedJacquetKernelUpperUnitriangula
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PrincipalSeriesTypeCharacterTriangularStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PrincipalSeriesTypeCharacterTriangular
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsTrivialOnUnitsModConductorUnitCharacterValuePr
 
 open GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.SplitWeil ValuativeRel GlobalTheory.PsType
@@ -33,7 +33,7 @@ theorem subquotient_prinSeries_of_hasVec : GlobalTheory.Published.BernsteinZelev
       rw [val_diagT, Matrix.diagonal_apply_ne _ hij.ne]
       exact (_root_.GlobalTheory.PsType.triv_ev_props k).2.2.1 _
     have hth : theta ψ (diagT k (Fin n) t) = (torusChar ψ t : ℂ) := by
-      rw [GlobalTheory.T.principalSeriesTypeCharacter_triangular k n ψ (diagT k (Fin n) t) t ht (fun i => by rw [val_diagT, Matrix.diagonal_apply_eq])
+      rw [_root_.GlobalTheory.PsType.theta_of_triangular k n ψ (diagT k (Fin n) t) t ht (fun i => by rw [val_diagT, Matrix.diagonal_apply_eq])
         (Or.inr fun i j hij => by rw [val_diagT, Matrix.diagonal_apply_ne _ hij.ne'])]
       simp
     rw [UnramFixed.jacB_apply, jacBU_mk, hv _ hgrp, hth]

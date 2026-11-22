@@ -7,7 +7,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsAnalyticUnifo
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InvSmulEqFinitePartInvSmul
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmulQuotientInvMkEqMkIffMulEquiv
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AbelianizationEqOfForallAbRestrictEq
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArtinMapAbelianUniqueStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArtinMapAbelianUnique
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsConjEqOnAlgebraicClosure
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MapPointEqPointMapRing
 
@@ -22,7 +22,7 @@ theorem ellipticMainTheoremCM : GlobalTheory.Published.EllipticMainTheoremCM := 
   obtain ⟨Art₀, hArt₀, hlink⟩ := GlobalTheory.CompanionTheory.EllipticCM.exists_globalArtinMap_tied K h2
   have hEq : Art = Art₀ := MonoidHom.ext fun c =>
     GlobalTheory.CompanionTheory.GaloisAb.abelianization_eq_of_forall_abRestrict_eq K _ _ fun L h =>
-      GlobalTheory.T.artin_map_abelian_unique K Art Art₀ hArt hArt₀ L h c
+      _root_.GlobalTheory.CompanionTheory.ArtinUniq.abRestrict_eq K Art Art₀ hArt hArt₀ L h c
   subst hEq
   have hfound := hlink σ s hs
   let 𝔞u : (FractionalIdeal (𝓞 K)⁰ K)ˣ := Units.mk0 𝔞 h𝔞

@@ -9,7 +9,8 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DecompositionGr
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FrobeniusPowerFixesRootUniqueStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormFromKummerUnramifiedUnit
 import GroundTheory.LocalFields.MainTheorem
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KummerCocycleNormCriterionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KummerCocycleNormCriterion
+import GroundTheory.ProfiniteCohomology.LocalTateDuality.KummerCup
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResidueFieldCardEqNorm
 import GroundTheory.GlobalFields.LocalFieldAtPlace
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformizerRatioValuationZero
@@ -162,7 +163,7 @@ theorem exists_cochain_cup (l : ℕ) [Fact l.Prime] (r : ℕ) (hr : 0 < r) {ζ :
     rw [hlift', apply_eq_pow_cycMod l r _ hζ.pow_eq_one, map_pow]
   have hκ' : ∀ σ : GlobalTheory.LocDict.GalLoc v, σ (ι t) = ι ζ ^ (κt (θ.symm σ)).val * ι t := fun σ => by
     rw [hlift', hκ, map_mul, map_pow]
-  obtain ⟨c, hc, hc2⟩ := GlobalTheory.T.kummer_cocycle_norm_criterion (K := v.adicCompletion F) (Ω := GlobalTheory.LocDict.Kbar v) (l ^ r) hN (ι ζ)
+  obtain ⟨c, hc, hc2⟩ := _root_.GlobalTheory.CompanionTheory.KummerCup.kummerCup_eq_coboundary (K := v.adicCompletion F) (Ω := GlobalTheory.LocDict.Kbar v) (l ^ r) hN (ι ζ)
     (hζ.map_of_injective ι.toRingHom.injective) _ hc0 ψ ho U hnorm (ι t) (fun σ => κt (θ.symm σ)) hT hκ'
   refine ⟨fun g => c (θ g), hc.continuous.comp hθ, fun g h => ?_⟩
   have e := hc2 (θ g) (θ h)

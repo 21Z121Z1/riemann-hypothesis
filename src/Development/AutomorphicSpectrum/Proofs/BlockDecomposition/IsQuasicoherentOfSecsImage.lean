@@ -1,7 +1,8 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformVanishing
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubsetOfClosedFibre
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubobjectLeIffAffineSectionsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubobjectLeIffAffineSections
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PowSubSuccLe
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ExactAndSurjectiveAppOfExactOfEpi
 
 set_option autoImplicit false
@@ -54,8 +55,8 @@ theorem isQuasicoherent_of_secs_image {X : Scheme.{0}} (O : X.Opens) {P : X.Modu
       refine ⟨_, ⟨((Bb : X.Modules).restrictAppIso O.ι (U : (O : Scheme.{0}).Opens)).hom y, rfl⟩, ?_⟩
       rw [Scheme.Modules.Hom.comp_app, ConcreteCategory.comp_apply, restrict_map_app]
   have hEq : B = Subobject.mk (kernel.ι (cokernel.π g)) :=
-    le_antisymm ((GlobalTheory.T.subobject_le_iff_affine_sections _ _).2 fun U => (hs U).subset)
-      ((GlobalTheory.T.subobject_le_iff_affine_sections _ _).2 fun U => (hs U).symm.subset)
+    le_antisymm ((_root_.GlobalTheory.CompanionTheory.GE.le_iff_secs_subset _ _).2 fun U => (hs U).subset)
+      ((_root_.GlobalTheory.CompanionTheory.GE.le_iff_secs_subset _ _).2 fun U => (hs U).symm.subset)
   have hK : (kernel (cokernel.π g)).IsQuasicoherent := inferInstance
   rw [hEq]
   exact GlobalTheory.QCoh.isQuasicoherent_of_iso (Subobject.underlyingIso (kernel.ι (cokernel.π g))).symm

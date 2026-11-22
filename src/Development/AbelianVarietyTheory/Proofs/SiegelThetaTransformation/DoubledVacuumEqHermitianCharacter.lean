@@ -9,8 +9,8 @@ import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HMatMul
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DoubledLatticeSplit
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.TensorLatticeSelfDualSemicharacterIndex
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.TensorLatticeVacuaExistUnique
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DoubledHermitianTestFunctionSpecStatement
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DoubledThetaTestFunctionSesquilinearHeisenbergStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DoubledHermitianTestFunctionSpec
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DoubledThetaTestFunctionSesquilinearHeisenberg
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DoubledHermitianTestFunctionZeroAndNorm
 
 open Matrix Complex NumberField MeasureTheory GlobalTheory GlobalTheory.SW GlobalTheory.ThFr ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.FD
@@ -476,16 +476,16 @@ theorem ip_dbl (hs : IsSympl X bas) (hn : Even n) {b : ℂ}
     {φ₁ φ₂ ψ₁ ψ₂ : TF n g} (h₁ : IsSB φ₁) (h₂ : IsSB φ₂) (k₁ : IsSB ψ₁) (k₂ : IsSB ψ₂) :
     ip (dbl X bas idx φ₁ φ₂) (dbl X bas idx ψ₁ ψ₂) = b * (ip φ₁ ψ₁ * ip ψ₂ φ₂) := by
   have sbD : ∀ x y : TF n g, IsSB x → IsSB y → IsSB (dbl X bas idx x y) :=
-    fun x y hx hy => (GlobalTheory.T.doubledHermitianTestFunction_spec E r X g bas idx n hs hn x y hx hy).1
+    fun x y hx hy => (_root_.GlobalTheory.SW.DblEx.dbl_spec E r X g bas idx n hs hn x y hx hy).1
   have addL : ∀ x x' y : TF n g, IsSB x → IsSB x' → IsSB y →
       dbl X bas idx (x + x') y = dbl X bas idx x y + dbl X bas idx x' y :=
-    fun x x' y hx hx' hy => ((GlobalTheory.T.doubledThetaTestFunction_sesquilinear_heisenberg E r X g bas idx n hs hn x y hx hy).1 x' hx').1
+    fun x x' y hx hx' hy => ((_root_.GlobalTheory.SW.DblLin.dbl_lin E r X g bas idx n hs hn x y hx hy).1 x' hx').1
   have addR : ∀ x y y' : TF n g, IsSB x → IsSB y → IsSB y' →
       dbl X bas idx x (y + y') = dbl X bas idx x y + dbl X bas idx x y' :=
-    fun x y y' hx hy hy' => ((GlobalTheory.T.doubledThetaTestFunction_sesquilinear_heisenberg E r X g bas idx n hs hn x y hx hy).1 y' hy').2
+    fun x y y' hx hy hy' => ((_root_.GlobalTheory.SW.DblLin.dbl_lin E r X g bas idx n hs hn x y hx hy).1 y' hy').2
   have smulD : ∀ (x y : TF n g) (a c : ℂ), IsSB x → IsSB y →
       dbl X bas idx (a • x) (c • y) = (a * conj c) • dbl X bas idx x y :=
-    fun x y a c hx hy => (GlobalTheory.T.doubledThetaTestFunction_sesquilinear_heisenberg E r X g bas idx n hs hn x y hx hy).2.1 a c
+    fun x y a c hx hy => (_root_.GlobalTheory.SW.DblLin.dbl_lin E r X g bas idx n hs hn x y hx hy).2.1 a c
   have smulL : ∀ (x y : TF n g) (a : ℂ), IsSB x → IsSB y →
       dbl X bas idx (a • x) y = a • dbl X bas idx x y := by
     intro x y a hx hy
@@ -561,8 +561,8 @@ theorem GlobalTheory.SW.dbl_vacuum : ∀ (E : Type) [Field E] [NumberField E] [I
   obtain ⟨a, ha, b, hb, hab⟩ := _root_.GlobalTheory.SW.dbl_zero_and_norm E r X g bas idx n hs hn
   have VAC := GlobalTheory.SW.TensVac.vacua E r X g bas idx n hs hn w hw hw1
   have TL := GlobalTheory.SW.TensLat.tens_selfDual_semichar_index E r X g bas idx n hs hn w hw hw1
-  have WeylSymmetry := GlobalTheory.T.doubledHermitianTestFunction_spec E r X g bas idx n hs hn
-  have D9 := GlobalTheory.T.doubledThetaTestFunction_sesquilinear_heisenberg E r X g bas idx n hs hn
+  have WeylSymmetry := _root_.GlobalTheory.SW.DblEx.dbl_spec E r X g bas idx n hs hn
+  have D9 := _root_.GlobalTheory.SW.DblLin.dbl_lin E r X g bas idx n hs hn
   have hΛ₀ : stdL E n ∈ Vset E n M := GlobalTheory.SW.Base.stdL_mem_Vset n M
 
   have LAW : ∀ Λ ∈ Vset E n M, ∀ V₁ V₂ : TF n g, IsVac X bas w (tens Λ L₁) V₁ →

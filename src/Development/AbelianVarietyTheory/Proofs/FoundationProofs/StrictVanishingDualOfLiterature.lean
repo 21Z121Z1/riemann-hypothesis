@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaloisCocycleInt
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CupProductDualTwistIsTwoCocycleUnramifiedStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TateDualCocycleCoboundaryOfVanishOnFixing
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GreenbergOrdinaryOfVanishingOnCycloKernel
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeightCommutatorInvarianceStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeightCommutatorInvariance
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCommutatorDetNonzero
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CohomologyUnramifiedLiftStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CocyclePairAlternatingNeOnCycloKernel
@@ -252,7 +252,7 @@ theorem main : GlobalTheory.Mem.LiteralAutomorphy.LitCoh → ∀ (l : ℕ) [Fact
       (hloc n)
     have hr := GlobalTheory.T.cohomology_unramified_lift hLit l Ω e S A W hN c2 y' z' u S' n hn hWc2 hy' hz' hy'int hz'int hy'U hz2loc
       ⟨xA, hxA, hxAe⟩ (hT' n hn) hu huint huS hucup
-    have hc := GlobalTheory.T.height_commutator_invariance l Ω n c2 W y' z' u hWc2 hy' hz' hucup φ hφH g hg h hh
+    have hc := _root_.GlobalTheory.Ord2.ht_commutator l Ω n c2 W y' z' u hWc2 hy' hz' hucup φ hφH g hg h hh
     have h0 := hr φ hφ
     have h1 := hr _ hφ1
     rw [hmat] at h1

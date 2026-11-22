@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsQuaternionNor
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquaringOpenAtOneOfCompleteTwoNeZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuaternionNormOneTraceOpenProd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuaternionNormOneTraceOpenPi
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuaternionNormOneTraceOpenFiniteAdeleRingStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuaternionNormOneTraceOpenFiniteAdeleRing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyExistsQuaternionNormOneReEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfinitePlaceCompletionNhdsNEZeroNeBot
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquaringOpenAtOneAdicCompletionNumberField
@@ -38,7 +38,7 @@ theorem traceOpen_inf (F : Type) [Field F] [NumberField F] (a b : F) (ha : a ≠
 theorem traceOpen_fin (F : Type) [Field F] [NumberField F] (a b : F) (ha : a ≠ 0) (hb : b ≠ 0) :
     TraceOpen (FiniteAdeleRing (𝓞 F) F) (algebraMap F (FiniteAdeleRing (𝓞 F) F) a)
       (algebraMap F (FiniteAdeleRing (𝓞 F) F) b) := by
-  refine GlobalTheory.T.quaternionNormOneTraceOpen_finiteAdeleRing F a b (fun v => ?_) (_root_.GlobalTheory.QSA.IntRep.exists_nrm_eq_one_re_eq F a b ha hb)
+  refine _root_.GlobalTheory.QSA.FinAdele.traceOpen_finiteAdele F a b (fun v => ?_) (_root_.GlobalTheory.QSA.IntRep.exists_nrm_eq_one_re_eq F a b ha hb)
   have h2 : (2 : v.adicCompletion F) ≠ 0 := by
     have := (map_ne_zero (algebraMap F (v.adicCompletion F))).2 (two_ne_zero : (2 : F) ≠ 0)
     rwa [map_ofNat] at this

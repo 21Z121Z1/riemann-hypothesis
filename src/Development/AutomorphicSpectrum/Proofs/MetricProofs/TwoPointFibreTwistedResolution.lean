@@ -2,7 +2,7 @@ import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsFibreChartIff
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAnalyticOrbitOffBoundary
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.TwoByTwoMinorGramIdentity
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.ElementaryFactorPropertiesStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.ElementaryFactorProperties
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogNormProductFormulaStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogSineFormulaStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.StepFactorNeZeroStatement
@@ -37,7 +37,7 @@ theorem logNorm_add_weights_eq_logSin : ∀ (K : Type) [Fintype K] (ι : K → T
   have hcab : ca ≠ cb := fun e => by
     have : (ca : ℕ) = cb := congrArg Fin.val e
     omega
-  have shear := fun s : ℂ => GlobalTheory.T.elementary_factor_properties N j a b ca cb s M.j_le hb hstep hca hcb
+  have shear := fun s : ℂ => _root_.GlobalTheory.CompanionTheory.Ar.PB.WSq.Fib.Shear.shear_main N j a b ca cb s M.j_le hb hstep hca hcb
   have hflag : ∀ (s : ℂ) (τ' : Ψ), IsBlockDiag j (flagAt H τ ca cb s w τ') ∧ (flagAt H τ ca cb s w τ').det ≠ 0 := by
     intro s τ'
     unfold flagAt

@@ -420,7 +420,7 @@ theorem latO_bidual (hψ : IsStdChar D ψ (-1)) (hS : Submodule.IsLattice D.host
   have hTf := GlobalTheory.PlaceModel.isSelfDualC_latFrame T
   have hSl : Submodule.IsLattice D.host.E (GlobalTheory.PlaceModel.latFrame S) := hSf.1
   have hTl : Submodule.IsLattice D.host.E (GlobalTheory.PlaceModel.latFrame T) := hTf.1
-  have hI := (GlobalTheory.T.self_dual_lattice_pairing_dual D ψ S T (GlobalTheory.PlaceModel.latFrame S) (GlobalTheory.PlaceModel.latFrame T) hψ hSf hTf).1
+  have hI := (_root_.GlobalTheory.LatVac.latO_selfDual_approx_sign D ψ S T (GlobalTheory.PlaceModel.latFrame S) (GlobalTheory.PlaceModel.latFrame T) hψ hSf hTf).1
   have hmap : ∀ u : WO S T, IsHalf a u → u.map (infPart D) = 0 := by
     intro u hu
     rw [← smul_eq_of_half hu]
@@ -550,7 +550,7 @@ theorem isTheta_placeModel (hψ : IsStdChar D ψ (-1)) (hS : Submodule.IsLattice
   have hTf := GlobalTheory.PlaceModel.isSelfDualC_latFrame T
   have hSl : Submodule.IsLattice D.host.E (GlobalTheory.PlaceModel.latFrame S) := hSf.1
   have hTl : Submodule.IsLattice D.host.E (GlobalTheory.PlaceModel.latFrame T) := hTf.1
-  have hI := (GlobalTheory.T.self_dual_lattice_pairing_dual D ψ S T (GlobalTheory.PlaceModel.latFrame S) (GlobalTheory.PlaceModel.latFrame T) hψ hSf hTf).1
+  have hI := (_root_.GlobalTheory.LatVac.latO_selfDual_approx_sign D ψ S T (GlobalTheory.PlaceModel.latFrame S) (GlobalTheory.PlaceModel.latFrame T) hψ hSf hTf).1
   obtain ⟨M1, hM1, h1⟩ := exists_nsmul_latO (ΛS := ΛS) (ΛT := ΛT) (ΛS' := GlobalTheory.PlaceModel.latFrame S)
     (ΛT' := GlobalTheory.PlaceModel.latFrame T) hS.fg hT.fg hSl hTl
   have hTd := isPlaceModel_dualLat (ψ := ψ) hc hTm

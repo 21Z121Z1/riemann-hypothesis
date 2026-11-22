@@ -9,7 +9,7 @@ import Formalism.SharpRestriction.CuspSpanNormBounds.PsiEDef
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsHermND
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementReferenceCompactSubgroup
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GFrames
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NumberFieldLatticeDeterminedByLocalLatticesStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NumberFieldLatticeDeterminedByLocalLattices
 
 noncomputable section
 
@@ -55,7 +55,7 @@ theorem cL_injective : Function.Injective (cL (D := D)) := by
 theorem std_finite (Z : LocDat D) (Λ : LV D) (h : Submodule.IsLattice D.host.E Λ) :
     {p | lattice₂ D Z.M p Λ ≠ Submodule.span ((GlobalTheory.HL.placesOf Z).L p).O
       (Set.range fun i => (Pi.single i 1 : Fin (nV D) → ((GlobalTheory.HL.placesOf Z).loc p).Ep))}.Finite := by
-  have := (GlobalTheory.T.numberField_lattice_determined_by_local_lattices (GlobalTheory.HL.placesOf Z) (nV D) (cL Λ) (isLattice_map _ _ h)).2.2
+  have := (_root_.GlobalTheory.HL.PlacesRec.lattice_local (GlobalTheory.HL.placesOf Z) (nV D) (cL Λ) (isLattice_map _ _ h)).2.2
   simp only [localLattice_eq]
   exact this
 
@@ -73,8 +73,8 @@ theorem lattices_local_global : ∀ (D : D7) (Z : LocDat D), (∀ Λ₁ Λ₂ : 
     simp only [Set.mem_union, Set.mem_setOf_eq, not_or, not_not] at hc
     exact hp (hc.1.trans hc.2.symm)
   · apply cL_injective
-    have r₁ := (GlobalTheory.T.numberField_lattice_determined_by_local_lattices (GlobalTheory.HL.placesOf Z) (nV D) (cL Λ₁) (isLattice_map _ _ h₁)).1
-    have r₂ := (GlobalTheory.T.numberField_lattice_determined_by_local_lattices (GlobalTheory.HL.placesOf Z) (nV D) (cL Λ₂) (isLattice_map _ _ h₂)).1
+    have r₁ := (_root_.GlobalTheory.HL.PlacesRec.lattice_local (GlobalTheory.HL.placesOf Z) (nV D) (cL Λ₁) (isLattice_map _ _ h₁)).1
+    have r₂ := (_root_.GlobalTheory.HL.PlacesRec.lattice_local (GlobalTheory.HL.placesOf Z) (nV D) (cL Λ₂) (isLattice_map _ _ h₂)).1
     ext x
     rw [r₁, r₂]
     refine forall_congr' fun p => ?_

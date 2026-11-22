@@ -14,12 +14,12 @@ import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepW
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaximalCompactActsOnRealVacuaByDetPowersStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsExtremalUnitVectorSameHighestImage
 import Formalism.LocalToGlobal.IndefiniteReal.ExistsChosenExtremalVector
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MinorProductTorusWeightBlockTranslatesStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LowestKTypeSmoothVectorsIsKStableStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MinorProductTorusWeightBlockTranslates
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LowestKTypeSmoothVectorsIsKStable
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FockPolynomialVectorsInjectiveNonzeroVacuum
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FockPolynomialVectorMaximalCompactBasisSubstitutStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FockPolynomialVectorMaximalCompactBasisSubstitut
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SchrodingerIntertwinerInjectiveSchwartzBruhat
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNonvanishingFiniteDatumDefiniteLiftStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNonvanishingFiniteDatumDefiniteLift
 
 noncomputable section
 
@@ -47,7 +47,7 @@ theorem thPVec_ne_zero {ψ : AddChar (AF D.host.F) ℂ} {θ : InfFam D} {S T : H
   have ho := GlobalTheory.PlaceModelSum.isOrthSum_of_isIdemSum he
   have hinf := ho.conj.infPart_eq
   rw [hall Tm hTm]
-  obtain ⟨x, h1, h2, h3⟩ := GlobalTheory.T.exists_nonvanishing_finite_datum_definite_lift D S T βS βT Pg Q _ ξ e hr he (fun PP h => Finset.mem_union_left _ h)
+  obtain ⟨x, h1, h2, h3⟩ := _root_.GlobalTheory.AdjDatumNe.exists_datum_ne_zero D S T βS βT Pg Q _ ξ e hr he (fun PP h => Finset.mem_union_left _ h)
     fun PP h => Finset.mem_union_right _ h
   refine _root_.GlobalTheory.PlaceModelInj.placeModel_ne_zero D ψ S T ΛS ΛT _ f₀ _ Tm hv.1 hS hT ho.conj.idem
     (by rw [GlobalTheory.DualPairCheck.cA_cA, mul_comm, he.2]) hinf hTm h0
@@ -245,7 +245,7 @@ theorem om_pt {ψ : AddChar (AF D.host.F) ℂ} {θ : InfFam D} {S T : HSp D} {χ
       (onb M) (fun ρ => onb M ρ * Function.update (fun _ => (1 : Matrix (Fin T.rank) (Fin T.rank) ℂ)) τ k ρ) 1 g (fun ρ => by rw [e1]) hc
       (fun ρ => by rw [e1, Matrix.one_mul]) (fun ρ => ?_) f hf P).2,
     h f hf hv 1 (one_mem _) g a1 (fun ρ => by rw [e1]) hc, pureTensorO_smul, map_smul,
-    GlobalTheory.T.fockPolynomialVector_maximalCompact_basis_substitution D ψ θ S T S' M BS f _ (Function.update (fun _ => 1) τ (tw (M.ε τ) k)) hW.std hθ hS hf (fun ρ => ?_)
+    _root_.GlobalTheory.FockSubst.pureTensorO_subst D ψ θ S T S' M BS f _ (Function.update (fun _ => 1) τ (tw (M.ε τ) k)) hW.std hθ hS hf (fun ρ => ?_)
       (fun ρ a b => ?_)]
   · congr 1
     rw [Finset.prod_eq_single τ (fun ρ _ e => ?_) (fun e => (e (Finset.mem_univ _)).elim)]
@@ -294,7 +294,7 @@ theorem delta_weights {m n : ℕ} (p q : D.what₂.Tau → ℕ) (ap am : D.what�
           Complex.exp (((∑ a, ν a * t a : ℝ) : ℂ) * Complex.I) • y) →
         ∑ a : Fin m, ν a * (if ε a then -((a : ℕ) : ℝ) else ((a : ℕ) : ℝ)) ≤
           ∑ a : Fin m, μ a * (if ε a then -((a : ℕ) : ℝ) else ((a : ℕ) : ℝ)) := by
-  obtain ⟨e, h1, h2⟩ := GlobalTheory.T.minorProduct_torusWeight_block_translates D m n p q ap am τ
+  obtain ⟨e, h1, h2⟩ := _root_.GlobalTheory.MinorWeight.delta_torus_weight D m n p q ap am τ
   refine ⟨fun a => κ a + (if ε a then 1 else -1) * e a, fun t => ?_, fun ν y hy hy0 hw => ?_⟩
   · rw [hπ, tw_diag, h1 _ _ (fun ρ hρ => Function.update_of_ne hρ _ _) (Function.update_self _ _ _), hχ, smul_smul]
     congr 1
@@ -394,8 +394,8 @@ theorem replace_at {V W : HSp D} {S' : D.what₂.Tau → SPar} {θ : InfFam D} (
   obtain ⟨μ, h1, h2⟩ := delta_weights (n := V.rank) p q ap am τ hε χ κ hχ π fun _ _ => rfl
   rw [← hd] at h1 h2
   obtain ⟨x, hx, x1, x2, x3⟩ := _root_.GlobalTheory.ExtRep.exists_extremal_same_image _ _ _ (M.ε τ) (M.lam τ) μ (M.σ τ) π _ (φ₀ ∘ₗ r) (ι (v τ)) (M.ds τ).2.2.1
-    inf_le_left (GlobalTheory.T.lowestKType_smoothVectors_isKStable D W S' M τ) (fun k hk x hx => by
-      obtain ⟨u', hu'⟩ := hL _ (GlobalTheory.T.lowestKType_smoothVectors_isKStable D W S' M τ k hk x hx)
+    inf_le_left (_root_.GlobalTheory.SmoothLowKStable.isKStableOn_lowKSub_inf_sm D W S' M τ) (fun k hk x hx => by
+      obtain ⟨u', hu'⟩ := hL _ (_root_.GlobalTheory.SmoothLowKStable.isKStableOn_lowKSub_inf_sm D W S' M τ k hk x hx)
       obtain ⟨u, rfl⟩ := hL x hx
       rw [← hu', hφ, hφ]
       apply hinj

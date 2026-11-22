@@ -17,7 +17,7 @@ import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MkLeContinuumOfDense
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.WeierstrassPTorsionIntegralAndDistinctMod
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TranslateModifiedSigmaTwoMulAtZero
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormNatCastLe
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DuplicationFormulaMaxNormEqCpUnitDiscriminantStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DuplicationFormulaMaxNormEqCpUnitDiscriminant
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LatticeTranslateHalfPeriodSigmaStarPowEightMulEq
 open NumberField Classical Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.TaylorLogMetric Formalism.MainNotions.StandardLatticesGL3 GlobalTheory.NormSum GlobalTheory.EvenTheta
 open scoped BigOperators
@@ -94,7 +94,7 @@ theorem mu_double (D : D7) (p : ℕ) [Fact p.Prime] (cc : Ideal (𝓞 D.host.K))
   have hdbl := dbl_complex hlat hv0 h2v
   obtain ⟨hε, -⟩ := GlobalTheory.EvenTheta.DatumBasic.datum_basic p g hok hlat h2 h3 hdisc
   obtain ⟨⟨ha1, ha2, ha3, ha4, ha6, hΔ⟩, -⟩ := hok
-  have key := GlobalTheory.T.duplicationFormula_maxNorm_eq_cp_unitDiscriminant p g.W ha1 ha2 ha3 ha4 ha6 hΔ (xAt g v)
+  have key := _root_.GlobalTheory.DupNorm.max_norm_eq_padicComplex p g.W ha1 ha2 ha3 ha4 ha6 hΔ (xAt g v)
   set ε : ℂ_[p] := ((g.C.u⁻¹ : ℂ_[p]ˣ) : ℂ_[p]) with hεdef
   have hA : lamC g.lam (-(g2 g.abelian₂) / 4) = -(ι (g2 g.abelian₂)) / 4 := by
     rw [GlobalTheory.ThetaPar.ModelPoint.lamC_neg_div_four _ h2, lamC_eq hι h2]
@@ -153,7 +153,7 @@ theorem mu_two_tors (D : D7) (p : ℕ) [Fact p.Prime] (cc : Ideal (𝓞 D.host.K
     rw [← hsq, hD0]; ring
   obtain ⟨hε, -⟩ := GlobalTheory.EvenTheta.DatumBasic.datum_basic p g hok hlat h2 h3 hdisc
   obtain ⟨⟨ha1, ha2, ha3, ha4, ha6, hΔ⟩, -⟩ := hok
-  have key := GlobalTheory.T.duplicationFormula_maxNorm_eq_cp_unitDiscriminant p g.W ha1 ha2 ha3 ha4 ha6 hΔ (xAt g v)
+  have key := _root_.GlobalTheory.DupNorm.max_norm_eq_padicComplex p g.W ha1 ha2 ha3 ha4 ha6 hΔ (xAt g v)
   set ε : ℂ_[p] := ((g.C.u⁻¹ : ℂ_[p]ˣ) : ℂ_[p]) with hεdef
   have hA : lamC g.lam (-(g2 g.abelian₂) / 4) = -(ι (g2 g.abelian₂)) / 4 := by
     rw [GlobalTheory.ThetaPar.ModelPoint.lamC_neg_div_four _ h2, lamC_eq hι h2]

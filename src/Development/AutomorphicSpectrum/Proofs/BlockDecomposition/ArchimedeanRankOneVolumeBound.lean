@@ -5,7 +5,7 @@ import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GaussQ
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ExistsTraceFormGramMatrixInBasis
 import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.SymmetricInvertibleExistsPosdefCongruence
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.QuadraticLevelSetDensityStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.QuadraticLevelSetDensity
 import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.CountData
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ArchimedeanCoordinateMeasureTransport
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.CoordinateHomeomorphRankOneTuples
@@ -161,7 +161,7 @@ theorem smallDensity_transport : ∀ (F E : Type) [Field F] [NumberField F] [Fie
       exact (map_ne_zero _).2 hBd
   choose Pm hPd hPm using hP
   have hcard : Fintype.card (Fin M × Fin d) = 2 * M := by simp [hd, mul_comm]
-  obtain ⟨Di, hDc, -, hDd, -⟩ := GlobalTheory.T.quadratic_level_set_density F (Fin M × Fin d) M B ρ Pm
+  obtain ⟨Di, hDc, -, hDd, -⟩ := _root_.GlobalTheory.CompanionTheory.SW.Core.Dens.density_of_q F (Fin M × Fin d) M B ρ Pm
     ⟨hcm.1, hcard, hBs, hBd, hρ, hPd, hPm⟩ hM
 
   set κ : ℝ := (Real.sqrt |(discr F : ℝ)|)⁻¹ with hκdef

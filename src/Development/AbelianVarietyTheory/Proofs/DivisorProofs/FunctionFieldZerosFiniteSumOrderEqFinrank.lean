@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAdmissibleIntegralBasisChangeOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FunctionFieldOneVariableTranscendentalFiniteAndE
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FunctionFieldPlaceSumOrderEqFinrankStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FunctionFieldPlaceSumOrderEqFinrank
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniquePlaceOrdEqOneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FunctionFieldPlaceRestrictionExistsPow
 
@@ -54,7 +54,7 @@ theorem zeros_finite_sum_eq_degree : ∀ (k F : Type) [Field k] [IsAlgClosed k] 
   obtain ⟨ρ, hρ⟩ := (_root_.GlobalTheory.Nef.place_res_exists_pow k k⟮x⟯ F).1
   have ht0 : t ≠ 0 := by
     intro h; apply hx; rw [← htx, h, map_zero]; exact isAlgebraic_zero
-  obtain ⟨hfin, hsum⟩ := GlobalTheory.T.functionFieldPlace_sum_order_eq_finrank k k⟮x⟯ F hL ρ hρ v0 t ht0 hv0
+  obtain ⟨hfin, hsum⟩ := _root_.GlobalTheory.Nef.FundId.sum_ord_eq_finrank k k⟮x⟯ F hL ρ hρ v0 t ht0 hv0
   have hset : {v : Place k F | v.1 x < 1} = {p | ρ p = v0} := by
     ext p
     obtain ⟨e, he, hpow, -⟩ := (_root_.GlobalTheory.Nef.place_res_exists_pow k k⟮x⟯ F).2 ρ hρ p

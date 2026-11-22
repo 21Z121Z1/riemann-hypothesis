@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ECure
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SpectralRedivisionTermEquivKeepsTermDataStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SpectralRedivisionTermEquivKeepsTermData
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KeepPuVolAR
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsoPairToTermSymm
 import Formalism.LocalToGlobal.IndefiniteReal.HeckeNonvanishing.Imports
@@ -32,26 +32,26 @@ def sIsoRe : SIso (sOf h) ((@sOf (reD D Z) (@reX D Z X) (@reY D Z X Y) h')) wher
   volH := (by with_unfolding_all exact ((Eq.refl Y.volH) :))
   eT := (by with_unfolding_all exact ((eRT Z Y) :))
   aTerm_eq := (by with_unfolding_all exact ((keep_pu_vol_aR D Z X Y h h').2.2 :))
-  isId := fun {u u'} t => (by with_unfolding_all exact (((GlobalTheory.T.spectralRedivisionTermEquiv_keeps_term_data D Z X Y u u').1 t).1 :))
-  inS := fun {u u'} t => (by with_unfolding_all exact (((GlobalTheory.T.spectralRedivisionTermEquiv_keeps_term_data D Z X Y u u').1 t).2.1 :))
-  relevant := fun {u u'} t => (by with_unfolding_all exact (((GlobalTheory.T.spectralRedivisionTermEquiv_keeps_term_data D Z X Y u u').1 t).2.2.1 :))
-  FeqF := fun {u u'} t => (by with_unfolding_all exact (((GlobalTheory.T.spectralRedivisionTermEquiv_keeps_term_data D Z X Y u u').1 t).2.2.2.1 :))
-  Gterm := fun {u u'} t => Subtype.ext (a1 := (sOf h).Gterm t) (a2 := (by with_unfolding_all exact (((sOf h').Gterm (eRT Z Y u u' t)) :))) ((by with_unfolding_all exact (((GlobalTheory.T.spectralRedivisionTermEquiv_keeps_term_data D Z X Y u u').1 t).2.2.2.2.2.1 :)))
+  isId := fun {u u'} t => (by with_unfolding_all exact (((_root_.GlobalTheory.Mem.SRe.eRT_keeps_term_data D Z X Y u u').1 t).1 :))
+  inS := fun {u u'} t => (by with_unfolding_all exact (((_root_.GlobalTheory.Mem.SRe.eRT_keeps_term_data D Z X Y u u').1 t).2.1 :))
+  relevant := fun {u u'} t => (by with_unfolding_all exact (((_root_.GlobalTheory.Mem.SRe.eRT_keeps_term_data D Z X Y u u').1 t).2.2.1 :))
+  FeqF := fun {u u'} t => (by with_unfolding_all exact (((_root_.GlobalTheory.Mem.SRe.eRT_keeps_term_data D Z X Y u u').1 t).2.2.2.1 :))
+  Gterm := fun {u u'} t => Subtype.ext (a1 := (sOf h).Gterm t) (a2 := (by with_unfolding_all exact (((sOf h').Gterm (eRT Z Y u u' t)) :))) ((by with_unfolding_all exact (((_root_.GlobalTheory.Mem.SRe.eRT_keeps_term_data D Z X Y u u').1 t).2.2.2.2.2.1 :)))
   atP := fun p => (by with_unfolding_all exact ((Formalism.L2.S.LocIso.refl (Formalism.L2.S.locC D p)) :))
   ePl := (by with_unfolding_all exact ((Equiv.refl (Formalism.MainNotions.S.LocalSplitGroups.PlF D)) :))
-  BBne := fun {u u'} t q => (by with_unfolding_all exact ((((GlobalTheory.T.spectralRedivisionTermEquiv_keeps_term_data D Z X Y u u').1 t).2.2.2.2.2.2.1 q) :))
-  generic := fun {u u'} t => (by with_unfolding_all exact (((GlobalTheory.T.spectralRedivisionTermEquiv_keeps_term_data D Z X Y u u').1 t).2.2.2.2.1 :))
+  BBne := fun {u u'} t q => (by with_unfolding_all exact ((((_root_.GlobalTheory.Mem.SRe.eRT_keeps_term_data D Z X Y u u').1 t).2.2.2.2.2.2.1 q) :))
+  generic := fun {u u'} t => (by with_unfolding_all exact (((_root_.GlobalTheory.Mem.SRe.eRT_keeps_term_data D Z X Y u u').1 t).2.2.2.2.1 :))
   eP := (by with_unfolding_all exact ((eP Z h h') :))
   pfst := fun {u u'} p => (by with_unfolding_all exact ((((rp_iso_pair D Z X Y h h' u u').choose_spec p).1) :))
   psnd := fun {u u'} p => (by with_unfolding_all exact ((((rp_iso_pair D Z X Y h h' u u').choose_spec p).2.1) :))
   s0 := fun {u u'} p => (by with_unfolding_all exact ((((rp_iso_pair D Z X Y h h' u u').choose_spec p).2.2.1) :))
   scalarPair := fun {u u'} p => (by with_unfolding_all exact ((((rp_iso_pair D Z X Y h h' u u').choose_spec p).2.2.2.1) :))
   pval := fun {u u'} p => (by with_unfolding_all exact ((((rp_iso_pair D Z X Y h h' u u').choose_spec p).2.2.2.2) :))
-  ptOf := fun {u u'} t => (by with_unfolding_all exact (((GlobalTheory.T.spectralRedivisionTermEquiv_keeps_term_data D Z X Y u u').1 t).2.2.2.2.2.2.2.1 :))
-  cTerm := fun {u u'} t => (by with_unfolding_all exact (((GlobalTheory.T.spectralRedivisionTermEquiv_keeps_term_data D Z X Y u u').1 t).2.2.2.2.2.2.2.2.2 :))
-  massPair := fun {u u'} p => (by with_unfolding_all exact (((((GlobalTheory.T.spectralRedivisionTermEquiv_keeps_term_data D Z X Y u u').1 ((p.1.1) : RT Y u u')).2.2.2.2.2.2.2.2.1).trans
+  ptOf := fun {u u'} t => (by with_unfolding_all exact (((_root_.GlobalTheory.Mem.SRe.eRT_keeps_term_data D Z X Y u u').1 t).2.2.2.2.2.2.2.1 :))
+  cTerm := fun {u u'} t => (by with_unfolding_all exact (((_root_.GlobalTheory.Mem.SRe.eRT_keeps_term_data D Z X Y u u').1 t).2.2.2.2.2.2.2.2.2 :))
+  massPair := fun {u u'} p => (by with_unfolding_all exact (((((_root_.GlobalTheory.Mem.SRe.eRT_keeps_term_data D Z X Y u u').1 ((p.1.1) : RT Y u u')).2.2.2.2.2.2.2.2.1).trans
       (congrArg Formalism.L2.SG.PairVal.massTerm ((rp_iso_pair D Z X Y h h' u u').choose_spec ((p) : RP Y u u')).1)) : _))
-  meanCount := (by with_unfolding_all exact ((funext fun u => funext fun u' => funext fun w => (GlobalTheory.T.spectralRedivisionTermEquiv_keeps_term_data D Z X Y u u').2 w :
+  meanCount := (by with_unfolding_all exact ((funext fun u => funext fun u' => funext fun w => (_root_.GlobalTheory.Mem.SRe.eRT_keeps_term_data D Z X Y u u').2 w :
       (fun (u u' : D.what₂.Word) w => Formalism.L2.SG.PairVal.meanCount D u u' (X.Fu u) (Y.what₂ u) w) =
         fun (u u' : D.what₂.Word) w => Formalism.L2.SG.PairVal.meanCount (reD D Z) (wd Z u) (wd Z u') ((reX Z X).Fu (wd Z u)) ((reY Z Y).what₂ (wd Z u)) w) :))
 

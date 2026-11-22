@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.CosetTrace
 import Development.AbelianVarietyTheory.Definitions.Foundations.NotIsTrDataGaussianIntOne
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDerivationOnExtensionCubeDefectStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDerivationOnExtensionCubeDefect
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KaehlerRelationOfDerivationOnLargeSubalgebra
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsTowerUnionZetaDerivationModIntegralClosure
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsTowerUnionQDerivationModIntegralClosureStatement
@@ -50,7 +50,7 @@ theorem dlog_indep_pow_three : ∀ (p : ℕ) [Fact p.Prime] (Ω : Type) [Field �
   obtain ⟨k, rfl⟩ : ∃ k, n = k + 1 := ⟨n - 1, by omega⟩
   constructor
   · obtain ⟨Dz, hDz, hDzv⟩ := _root_.GlobalTheory.AlmostEt.zeta_derivation p Ω hclo T
-    obtain ⟨D', hD', hD'v⟩ := GlobalTheory.T.exists_derivationOn_extension_cube_defect (O0 p) (integralClosure (O0 p) Ω) (Frac p Ω)
+    obtain ⟨D', hD', hD'v⟩ := _root_.GlobalTheory.AlmostEt.exists_derOn_ext (O0 p) (integralClosure (O0 p) Ω) (Frac p Ω)
       (towerAlg T) C tr m a b _ htr Dz hDz
     have h := hF C hFC hyC (Frac p Ω) D' hD'
     simp only [Fin.sum_univ_two, Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.head_cons] at h
@@ -63,7 +63,7 @@ theorem dlog_indep_pow_three : ∀ (p : ℕ) [Fact p.Prime] (Ω : Type) [Field �
     field_simp
     linear_combination (-((x : Ω) * (p : Ω) ^ (k + 1))) * hzΩ
   · obtain ⟨Dq, hDq, hDqv⟩ := GlobalTheory.T.exists_towerUnion_qDerivation_modIntegralClosure p Ω hclo T
-    obtain ⟨D', hD', hD'v⟩ := GlobalTheory.T.exists_derivationOn_extension_cube_defect (O0 p) (integralClosure (O0 p) Ω) (Frac p Ω)
+    obtain ⟨D', hD', hD'v⟩ := _root_.GlobalTheory.AlmostEt.exists_derOn_ext (O0 p) (integralClosure (O0 p) Ω) (Frac p Ω)
       (towerAlg T) C tr m a b _ htr Dq hDq
     have h := hF C hFC hyC (Frac p Ω) D' hD'
     simp only [Fin.sum_univ_two, Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.head_cons] at h

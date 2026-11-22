@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Statements.SemistableTorsion.UTorsSt
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.UniformisedTestDimensionsAndSplitFibre
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NonemptyGeometricSpecialFibreUniformised
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.GoodReductionAdaptedBasis
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaSeriesAtPointIntegralOfPeriodValuationStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaSeriesAtPointIntegralOfPeriodValuation
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SemiabelianSchemes.PrecompleteBases.PsbLb
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry
 open scoped CategoryTheory.Obj
@@ -34,7 +34,7 @@ theorem utest_nonempty_mod : GlobalTheory.UT.LL → UTorsSt → ∀ (o Ω : Type
             pol := fb.pol
             dim := ?_
             red := hred
-            ser := GlobalTheory.T.theta_series_at_point_integral_of_period_valuation hL hT o Ω S ρ p y₀ u l σ cls f hb }⟩
+            ser := _root_.GlobalTheory.ZH.SeriesAtPoint.main hL hT o Ω S ρ p y₀ u l σ cls f hb }⟩
   rw [fb.dim, fb.xe.toIntLinearEquiv.finrank_eq]
   exact hdim
 

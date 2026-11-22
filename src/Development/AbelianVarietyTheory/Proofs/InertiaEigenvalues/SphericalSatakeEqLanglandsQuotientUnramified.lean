@@ -13,10 +13,10 @@ import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Ha
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ChevalleyUnits
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SupercuspidalSupportOfPrincipalSeriesSubquotient
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSphericalFactorOfSphericalSubquotientStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSphericalFactorOfSphericalSubquotient
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SphericalSegmentRepLengthOneUnramified
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LanglandsClassificationSupercuspidalSupportMultiStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SupercuspidalSupportUniqueGLStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SupercuspidalSupportUniqueGL
 open NumberField IsDedekindDomain ValuativeRel Matrix Polynomial Formalism.ConjugateSelfDual ReciprocityTheory.Gal GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.SplitWeil GlobalTheory.LocGL GlobalTheory.WeilDeligne GlobalTheory.LocLanglands GlobalTheory.Published
 attribute [local instance] GlobalTheory.LocalData.complRel GlobalTheory.LocalData.isLocalField
 
@@ -33,7 +33,7 @@ theorem isL_single_unrChar : LanglandsExhaustionGL → LanglandsMultisegments �
   obtain ⟨h, y, hd, ⟨Δ, hord, hseg⟩, hcos⟩ := id hL
 
   have hsphy : ∀ a, IsSpherical (y a).rep :=
-    GlobalTheory.T.isSpherical_factor_of_spherical_subquotient k h x.1 y hd x.2.rep.V x.rep hcos.isSubquotient hsat.2.1
+    _root_.GlobalTheory.LocLanglands.SphFac.isSpherical_factor k h x.1 y hd x.2.rep.V x.rep hcos.isSubquotient hsat.2.1
 
   have hlen : ∀ i, (Δ i).len = 1 := fun i =>
     (_root_.GlobalTheory.SphSeg.len_eq_one_and_isUnramChar hLM hSC hZP hGL hBZ k (Δ i) (y i) (hseg i) (hsphy i)).1
@@ -45,7 +45,7 @@ theorem isL_single_unrChar : LanglandsExhaustionGL → LanglandsMultisegments �
   have h1 : HasSupport x.rep (msupp 𝔪) := GlobalTheory.T.langlandsClassification_supercuspidalSupport_multisegment hZP k 𝔪 x hL
   have h2 := _root_.GlobalTheory.LocLanglands.hasSupport_of_isSubquotient_prinSeries k x.1 (fun i => GlobalTheory.SmGL.unrChar k (α i))
     (fun i => isSmoothChar_of_isUnram (isUnram_unrChar k (α i))) x.2.rep hsat.2.2
-  have heq := GlobalTheory.T.supercuspidalSupport_unique_GL hGL hBZ hZP k x _ _ h1 h2
+  have heq := _root_.GlobalTheory.LocGL.SupportUnique.hasSupport_unique hGL hBZ hZP k x _ _ h1 h2
   have hsupp : msupp 𝔪 = Finset.univ.val.map fun i => (Δ i).first := by
     rw [msupp, ← hord.1, Multiset.bind_map]
     simp only [hms]

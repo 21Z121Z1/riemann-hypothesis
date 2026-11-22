@@ -1,11 +1,11 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsStrict
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIntegralDegenerationValues
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusTorsionPointsCorrespondValuesStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusTorsionPointsCorrespondValues
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.FamiliesValuesCorrespond
 import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
 import Development.AbelianVarietyTheory.Definitions.Degenerations.HomExtSt
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorsionPairingValuesOfFamiliesValuesStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorsionPairingValuesOfFamiliesValues
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AbelianPartValuesOfExpansionLaws
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationValuesIntOfAdmissibleBase
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ArcTorsionValuesNormsIntegralPositive
@@ -22,7 +22,7 @@ import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsDegenera
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ArcDatumPullbackRescaledMatchesStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsDegenerationValuesOfRescaledTwisted
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorsionLabelSystemsProportionalSeriesMatchTorsio
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorsionLabelSystemsSeriesScalarIndependentOfLeveStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorsionLabelSystemsSeriesScalarIndependentOfLeve
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationIsoCommInducedLabelMaps
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorsionIsometryValuesIsTorsionLabelSystemStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorsionLabelSystemTwistByCompatibleRoots
@@ -84,9 +84,9 @@ theorem data_of_model : HV → Laws6 → GlobalTheory.LN.UDvrSt → GlobalTheory
   have hL : Laws := hV.1.1
   have hL2 : Laws2 := hV.1.2.1
   obtain ⟨_, _⟩ := local_of_arcBase hO
-  have hGt := GlobalTheory.T.torus_torsion_points_correspond_values
+  have hGt := _root_.GlobalTheory.Ex.GtValues.points_correspond
   have hFam := _root_.GlobalTheory.Ex.brFam hL hL2
-  have hWp := GlobalTheory.T.torsionPairing_values_of_familiesValues hGt hFam
+  have hWp := _root_.GlobalTheory.WeilValues.weil_eq_values hGt hFam
   have hUth := _root_.GlobalTheory.ThetaInValues.brUth_of_laws hL
   have hUrec := _root_.GlobalTheory.Ex.Recognition.urec_of_abelian (_root_.GlobalTheory.Ex.AbPartIso.main hL hT hUth)
   have hDvr := M.cdv.1
@@ -130,7 +130,7 @@ theorem data_of_model : HV → Laws6 → GlobalTheory.LN.UDvrSt → GlobalTheory
     have := hn.two_le
     obtain ⟨t, rfl⟩ := ho
     rw [pow_one]; omega
-  obtain ⟨c₀, hc₀, hc⟩ := GlobalTheory.T.torsionLabelSystems_series_scalar_independent_of_level C _ N' D.La D.EF A.I.ζ I'.ζ lab lab' n ho lT lM (fun j => (th j).1)
+  obtain ⟨c₀, hc₀, hc⟩ := _root_.GlobalTheory.ModelData.Scalar.scalar_const C _ N' D.La D.EF A.I.ζ I'.ζ lab lab' n ho lT lM (fun j => (th j).1)
     (Function.ne_iff.1 ((th 1).2 h3))
   obtain ⟨mt, hmt⟩ := _root_.GlobalTheory.ModelData.LabelMatch.exists_match C _ N' D.La D.EF A.I.ζ I'.ζ lab lab' n hn ho (eq_zero_of_nsmul D) lT lM A.I.ζ_pow I'.ζ_pow
     (fun j => by rw [hζ]; exact (hθ j).1) c₀ hc₀ hc

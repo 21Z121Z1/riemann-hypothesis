@@ -2,7 +2,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LastRowMulRowGL
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteAdelicLatticeOpenCompact
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AnnihilatorAdelicLatticeCompactStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BoxFourierIntegralBoundStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BoxFourierIntegralBound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdelicVectorIntegralProductStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InfiniteVectorMeasureIsAddHaarStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanCharacterRealPairing
@@ -497,7 +497,7 @@ theorem cut_of (h0 : PositivityTheory.jumpWindows.G0) (h4 : S4) (h8 : S8) (hk : 
       linear_combination (ψ (sInf E (∑ i, pInf E (y i) * zi i)) * ψ (sFin E (∑ i, pFin E (y i) * zf i))) * hφ'
     rw [key, norm_mul]
     have hA : ‖∫ x, A x ∂nuInf E k‖ ≤ C * ((1 + ‖zi‖) ^ M)⁻¹ := hCb zi g
-    obtain ⟨hB1, hB2⟩ := GlobalTheory.T.box_fourier_integral_bound (k := k) hψ.norm hψ.cont (latS S B) hLc hLo (eRow (Af E) k) zf
+    obtain ⟨hB1, hB2⟩ := _root_.GlobalTheory.CompanionTheory.CutOff.FinFT.box_fourier_main (k := k) hψ.norm hψ.cont (latS S B) hLc hLo (eRow (Af E) k) zf
     by_cases hz : zf ∈ Set.pi Set.univ fun _ : Fin k => C₁
     · rw [Set.indicator_of_mem hz]
       calc ‖∫ x, A x ∂nuInf E k‖ * ‖∫ f, Bf f ∂nuFin E k‖

@@ -10,17 +10,17 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IterationAndLine
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCombAt
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsExpansionZero
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealLine
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LastRowRealIteratedIntegralEqConstMulFiniteStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LastRowRealIteratedIntegralEqConstMulFinite
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CellSumRelationsPassToIntegralsProof
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RowPeriodGroupsSplitRealFiniteLargeDepth
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnfoldedIntegrandBiInvariantLargeDepthStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnfoldedIntegrandBiInvariantLargeDepth
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegrandSupportedOnCellsLargeDepth
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RepresentationAtEveryPlace
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RowTestCellValueOfStepsLargeDepth
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SingleCosetOffTwistPlacesLargeDepthStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SingleCosetOffTwistPlacesLargeDepth
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DefinitePeriodDependsOnProductFunction
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RowTestDefinitePeriodChangeOfMeasures
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CellMassesAgainstLevelVolumesLargeDepthStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CellMassesAgainstLevelVolumesLargeDepth
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PeriodReductionToFockVectorsLargeDepth
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LastRowUnfoldingBasicHypotheses
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RowTestSupportFamiliesStaircaseCosets
@@ -31,19 +31,19 @@ section
 open GlobalTheory.RowClaim GlobalTheory.RowVal GlobalTheory.RowReal
 namespace GlobalTheory.RowUnfLast
 theorem twisted_theta_integral_unfolding : _root_.GlobalTheory.FunPr.ThetaLocalInputs → GlobalTheory.IndefiniteRowSideFullHecke.CuspAlongSmoothLifts.LiftsCuspidal → SumOKK → StepUnfold := fun p c s =>
-  have rel := GlobalTheory.T.lastRow_real_iterated_integral_eq_const_mul_finite
+  have rel := _root_.GlobalTheory.RowRealInt.unfold_of_steps
   have hcv := _root_.GlobalTheory.RowVal.cellVan_holds
   have grp := _root_.GlobalTheory.RowGrpSplit.grpAt_big
   have it := _root_.GlobalTheory.T.twisted_iterate_chain
-  have inv := GlobalTheory.T.unfolded_integrand_biInvariant_large_depth
+  have inv := _root_.GlobalTheory.RowInv.main
   have flat := GlobalTheory.RowFlatAsm.flatAt_big
   have supp := _root_.GlobalTheory.RowVal.big_suppOn_of_flat
   have rep := _root_.GlobalTheory.RowRep.rep_at
   have val := _root_.GlobalTheory.RowVal.valAt_big
-  have off := GlobalTheory.T.singleCosetOffTwistPlaces_largeDepth
+  have off := _root_.GlobalTheory.RowOneCos.offAt_big
   have tens := _root_.GlobalTheory.RowVal.tensAt_big
   have vol := _root_.GlobalTheory.RowVal.volAt_big
-  have wt := GlobalTheory.T.cell_masses_against_level_volumes_large_depth
+  have wt := _root_.GlobalTheory.RowWt.wtAt_big
   have fock := _root_.GlobalTheory.FockRed.fockAt_big
   have bas := _root_.GlobalTheory.RowBasic.basicAt
   have one := _root_.GlobalTheory.RowVal.oneAt

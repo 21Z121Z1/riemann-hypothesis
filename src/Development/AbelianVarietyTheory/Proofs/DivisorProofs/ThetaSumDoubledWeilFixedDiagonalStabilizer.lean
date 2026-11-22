@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDiagonalLagrangianInvariantForm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationPreservesSchwartz
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasSumDiagonalIntegralRationalHeisenbergStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasSumDiagonalIntegralRationalHeisenberg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicModuleNormRationalUnitEqOne
 open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.WeilM GlobalTheory.AdelicU GlobalTheory.LFun GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels
 open scoped Matrix TensorProduct
@@ -262,7 +262,7 @@ theorem GlobalTheory.ThetaSiegelRat.thetaSum_omd_of_fix_diag : ∀ (F E : Type) 
             (dd.rho ψ (Matrix.fromCols (incM F (x * (P - R)ᵀ)) (0 : Matrix (Fin a) (Fin b) (AE F E))) (omd p φ)) :=
           hdiag _ _ (GlobalTheory.HeisSchA.schr_mem_schA ψ hψ _ _ (hS.pres p φ hφ))
 
-  obtain ⟨c, hc0, hc⟩ := GlobalTheory.T.hasSum_diagonalIntegral_rationalHeisenberg F ψ hψ κ
+  obtain ⟨c, hc0, hc⟩ := _root_.GlobalTheory.ThetaRatSum.hasSum_lDiag_schr_rat F ψ hψ κ
   have h1 := hc φ hφ
   have h3 := (e.hasSum_iff).mpr (hc (omd p φ) (hS.pres p φ hφ))
   have h4 : HasSum (fun uv : (κ → F) × (κ → F) => GlobalTheory.DiagForm.lDiag F κ (schr ψ

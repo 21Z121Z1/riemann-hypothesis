@@ -16,14 +16,15 @@ import Development.AutomorphicArithmetic.DivisorFrames.ExistsPolynomialOfIsFinFT
 import Development.AutomorphicArithmetic.DivisorFrames.IdempotentSumFixesIffHalfEl
 import Development.AutomorphicArithmetic.DivisorFrames.StdAStdBMemSchwartzBruhat
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsLatticeThetaDataOfRamificationPlacesCMDatu
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitPlaceCharacterComponentSmoothUnitaryConductStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitPlaceCharacterComponentSmoothUnitaryConduct
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndicatorIntMMemSB
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CartFrSgnFalseRigFr
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GridSquareInfinityExponentGapLargeGrids
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TowerStageFinitePlacesUnramifiedOrSplit
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRtensOp
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockAlgebraicThetaVectorsStableFiniteAdelesLie
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawFramesWeilEquivalence
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilIntertwiningValueStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilIntertwiningValue
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilLocalFactorEq
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilArchimedeanFactor
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilUnramifiedFactor
@@ -75,7 +76,7 @@ private theorem local_matching_decomposition {B : Base F E} {a a' : ℕ} {G : Ge
   obtain ⟨ι, ι', hι, hι', -, -, hz⟩ := hZ
   have hν : GlobalTheory.LFun.IsHecke F E X.ν := ⟨hT.chars.heckeα.1.div' hT.chars.heckeβ.1, fun x => by
     rw [Chars.ν, MonoidHom.div_apply, hT.chars.heckeα.2, hT.chars.heckeβ.2, div_one]⟩
-  have h1 := (GlobalTheory.T.splitPlaceCharacterComponent_smooth_unitary_conductor F E X.ν hν v (B.τ v)).2.1
+  have h1 := (_root_.GlobalTheory.ChrWLocal.chrW_local F E X.ν hν v (B.τ v)).2.1
   have hdiv : chrW X.ν (B.τ v) = chrW X.α (B.τ v) / chrW X.β (B.τ v) := by
     ext x
     simp [chrW, Chars.ν, GlobalTheory.LFun.locChar]

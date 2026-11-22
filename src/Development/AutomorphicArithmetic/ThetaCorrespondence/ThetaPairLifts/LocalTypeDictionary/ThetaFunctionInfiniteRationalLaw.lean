@@ -235,12 +235,12 @@ private theorem theta_function_infinite_rational_law {D : D7} {θ : InfFam D} {�
   have e3 : heisO ψ S T (GlobalTheory.VacUnique.finRat S T (-v)) f (GlobalTheory.FockCompare.iotaW σ T S z) =
       f (GlobalTheory.FockCompare.iotaW σ T S z + GlobalTheory.VacUnique.finRat S T (-v)) := by
     show ψ (symplOH S T (GlobalTheory.FockCompare.iotaW σ T S z) _) * _ = _
-    rw [GlobalTheory.T.stdCharacter_halfSymplecticForm_realPoint D θ ψ h.inf hψ S T _ _ (Or.inl (h.real_iota T S z)),
+    rw [_root_.GlobalTheory.OrientedChar.char_symplOH D θ ψ h.inf hψ S T _ _ (Or.inl (h.real_iota T S z)),
       GlobalTheory.VacUnique.piW_of_inf θ (GlobalTheory.VacUnique.finRat_inf S T _), LinearMap.map_zero]
     simp
   rw [e, hf.quasi, e3, e2, GlobalTheory.RatFinIso.symplOH_ratW_finRat_neg, add_zero,
     AddChar.map_neg_eq_inv ψ (symplOH S T (ratW T S v) (GlobalTheory.FockCompare.iotaW σ T S z)),
-    GlobalTheory.T.stdCharacter_halfSymplecticForm_realPoint D θ ψ h.inf hψ S T _ _ (Or.inr (h.real_iota T S z)), GlobalTheory.VacUnique.piW_ratW h.inf, h.pi_iota,
+    _root_.GlobalTheory.OrientedChar.char_symplOH D θ ψ h.inf hψ S T _ _ (Or.inr (h.real_iota T S z)), GlobalTheory.VacUnique.piW_ratW h.inf, h.pi_iota,
     ← Complex.exp_neg]
   push_cast
   ring_nf
@@ -441,12 +441,12 @@ private theorem jets_move_with_frames {D : D7} {ψ : AddChar (AF D.host.F) ℂ} 
         P γ ∈ Formalism.MainNotions.TaylorLogMetric.La D (tor0 D D.host.ccK δ) Ls Lt) ∧
       ∀ z ∈ Formalism.MainNotions.TaylorLogMetric.La D (tor0 D D.host.ccK δ) Ls Lt, ∃ γ, z = P γ := by
     intro Ls Lt hLs hLt f hf
-    obtain ⟨Φ, hΦd, hreal⟩ := GlobalTheory.T.fockVacuum_real_restriction_gaussian_entire ψ θ S T frS frT _ _ hS hT f hf
-    have hTh := GlobalTheory.T.unitVacuumEntireFactor_isTheta_movedLattices ψ θ S T frS frT hS hT δ hC hδ Ls Lt hLs hLt f hf Φ hΦd hreal
+    obtain ⟨Φ, hΦd, hreal⟩ := _root_.GlobalTheory.FockPos.vacuum_real_entire ψ θ S T frS frT _ _ hS hT f hf
+    have hTh := _root_.GlobalTheory.ThetaLawMoved.theta_of_vacuum_moved ψ θ S T frS frT hS hT δ hC hδ Ls Lt hLs hLt f hf Φ hΦd hreal
     have hr := hrdΦ f Φ hreal
     have hne : rd f ≠ 0 := by
       intro h0
-      obtain ⟨w, hw, hfw⟩ := GlobalTheory.T.exists_finitePartZero_ne_of_isVacuum_orientedModel ψ θ S T _ _ _ _ f hf
+      obtain ⟨w, hw, hfw⟩ := _root_.GlobalTheory.VacNonzeroReal.exists_finPart_zero_ne ψ θ S T _ _ _ _ f hf
       apply hfw
       have h1 := congrFun (hr.symm.trans h0) (δ • GlobalTheory.FockPos.zCo θ frS frT w)
       simp only [smul_smul, inv_mul_cancel₀ hδ, one_smul, Pi.zero_apply] at h1
@@ -459,7 +459,7 @@ private theorem jets_move_with_frames {D : D7} {ψ : AddChar (AF D.host.F) ℂ} 
     · obtain ⟨ΛS, hΛS, hSd⟩ := GlobalTheory.MovedDict.isSelfDualC_inV S frS hS Ls hLs
       obtain ⟨ΛT, hΛT, hTd⟩ := GlobalTheory.MovedDict.isSelfDualC_inV T frT hT Lt hLt
       rw [← hΛS, ← hΛT] at hf hγ
-      obtain ⟨ε, hε1, hε⟩ := (GlobalTheory.T.self_dual_lattice_pairing_dual D ψ S T ΛS ΛT hψ hSd hTd).2.2 f hf.2.lat _ hγ
+      obtain ⟨ε, hε1, hε⟩ := (_root_.GlobalTheory.LatVac.latO_selfDual_approx_sign D ψ S T ΛS ΛT hψ hSd hTd).2.2 f hf.2.lat _ hγ
       refine mem_self_dual_of_eigen hH hsd hα hTh.2 hne (ε := ε) (by rcases hε1 with rfl | rfl <;> norm_num) ?_
       rw [← hrd f hf.2.theta, hε f hf.2.lat, map_smul]
     · obtain ⟨v, hv, hvx⟩ := GlobalTheory.ThetaLawMoved.mem_La_frame_sd S T frS frT hS hT Ls Lt hLs δ _ hγ
@@ -605,7 +605,7 @@ theorem _root_.GlobalTheory.T.twist_splitMoveFrames_jets : _root_.GlobalTheory.F
   | chi i j =>
     obtain ⟨hi, rfl⟩ := hp
     have hW := GlobalTheory.ConjDict.weil_cjOm _ _ _ _ _ _ (ch.W.om_is (.chi i D.R.m) ⟨hi, le_rfl⟩)
-    have hconj := GlobalTheory.T.isVacuum_conj_of_negHermitianSpace ch.W.ψ ch.W.θ (ch.G.V (.grid (i + 1) D.R.m)) (ch.G.V (.grid i D.R.m))
+    have hconj := _root_.GlobalTheory.VacConj.isVacO_conj_negSp ch.W.ψ ch.W.θ (ch.G.V (.grid (i + 1) D.R.m)) (ch.G.V (.grid i D.R.m))
       (ch.W.cart (.grid (i + 1) D.R.m)) (ch.W.cart (.grid i D.R.m)) _ _ _ hvac
     simp only [GridData.toPair, map_mul] at hact hact'
     have hmove := orbit_membership_of_onto_moves hact hact'

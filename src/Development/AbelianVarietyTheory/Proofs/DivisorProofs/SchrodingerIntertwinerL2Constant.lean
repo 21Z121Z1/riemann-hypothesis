@@ -3,12 +3,12 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotrop
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUSplittingTrRep
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RealMetaplecticRepresentation
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzFunctionalIntegralCommStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerRepSchwartzPolynomialBoundStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzFunctionalIntegralComm
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerRepSchwartzPolynomialBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatrixCoeffContinuousRapidDecay
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerOrthogonalityRelationStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerOrthogonalityRelation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianFormConstMulInner
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerRepUnitaryStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerRepUnitary
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RhoInvariantFormConstMulInner
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPairingCoordinatesSchrodingerFolland
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulRealAdEqZero
@@ -76,8 +76,8 @@ theorem step (n : ℕ) (B : Sch (Fin n) → Sch (Fin n) → ℂ)
   have hpt : ∀ x, (ip • g') x = ∫ w, c w * G w x := by
     intro x
     simp only [SchwartzMap.smul_apply, smul_eq_mul, hc, hG]
-    rw [GlobalTheory.T.schrodinger_orthogonality_relation n f g g' x]
-  have key := GlobalTheory.T.schwartz_functional_integral_comm (Fin n ⊕ Fin n → ℝ) volume n L G c (ip • g') hGc hcc hint hpt
+    rw [_root_.GlobalTheory.MoyalPointwise.moyal_pointwise n f g g' x]
+  have key := _root_.GlobalTheory.SchwartzIntegral.clm_integral_interchange (Fin n ⊕ Fin n → ℝ) volume n L G c (ip • g') hGc hcc hint hpt
   calc ip * B g' f' = B (ip • g') f' := by rw [hL, hL, map_smul, smul_eq_mul]
     _ = ∫ w, c w * L (G w) := by rw [hL]; exact key
     _ = ∫ w, c w * B (G w) f' := by simp only [hL]
@@ -90,8 +90,8 @@ theorem core : ∀ (n : ℕ) (B : GlobalTheory.RealWeil.Sch (Fin n) → GlobalTh
     ∃ c : ℝ, 0 ≤ c ∧ ∀ h h', B h h' = c * ∫ x, h x * starRingEnd ℂ (h' x) := by
   intro n B hB hherm hpos hinv
   refine _root_.GlobalTheory.hermitian_form_eq_smul_l2 n B hherm hpos fun f f' g g' => ?_
-  obtain ⟨G, hGc, hG, hGb⟩ := GlobalTheory.T.schrodinger_rep_schwartz_polynomial_bound n f
-  obtain ⟨G', hG'c, hG', hG'b⟩ := GlobalTheory.T.schrodinger_rep_schwartz_polynomial_bound n f'
+  obtain ⟨G, hGc, hG, hGb⟩ := _root_.GlobalTheory.RealWeil.SchrFamily.exists_continuous_schwartz_rhoFun n f
+  obtain ⟨G', hG'c, hG', hG'b⟩ := _root_.GlobalTheory.RealWeil.SchrFamily.exists_continuous_schwartz_rhoFun n f'
   have s1 := step n B hB f f' g g' G hGc hG hGb
   have s2 := step n B hB f' f g' g G' hG'c hG' hG'b
   set mc : Sch (Fin n) → Sch (Fin n) → (Fin n ⊕ Fin n → ℝ) → ℂ :=
@@ -103,7 +103,7 @@ theorem core : ∀ (n : ℕ) (B : GlobalTheory.RealWeil.Sch (Fin n) → GlobalTh
     have e2 : mc g g' w = ∫ t, g t * starRingEnd ℂ (rhoFun (-w) ⇑g' t) := by
       simp only [hmc]
       conv_lhs => rw [← rhoFun_neg_cancel w ⇑g']
-      exact GlobalTheory.T.schrodinger_rep_unitary n w ⇑g (rhoFun (-w) ⇑g')
+      exact _root_.GlobalTheory.RealWeil.integral_rhoFun_mul_conj n w ⇑g (rhoFun (-w) ⇑g')
     rw [e1, hherm, e2, ← integral_conj]
     simp only [hmc, map_mul, Complex.conj_conj]
     congr 1

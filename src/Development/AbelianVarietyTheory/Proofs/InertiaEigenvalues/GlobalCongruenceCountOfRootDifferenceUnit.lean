@@ -6,10 +6,10 @@ import Formalism.SharpRestriction.LevelLetterCocycles.TableLineDegreeTwo
 import Formalism.SharpRestriction.LevelLetterCocycles.AdmissibleParameterJ
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.BaseSizes
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LengthQuotEqZeroIff
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteQuotientCocycleSpansLeContinuousCocyclesStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteQuotientCocycleSpansLeContinuousCocycles
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LengthHeckeValueIdealLeDeterminantBound
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LenCob
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LengthCutCoboundaryModuleLeUnitDeltaStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LengthCutCoboundaryModuleLeUnitDelta
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalCocyclesAboveEllInCutUnitDelta
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InertiaCocycleBlockLengthLeOfQuadraticRelation
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InertiaRestrictionPolynomialConditionSecondForm
@@ -58,11 +58,11 @@ theorem main : GlobalTheory.Published.GlobalArtinReciprocity → ∀ (D : D7) (i
     obtain ⟨C, hC, hfin, hlen⟩ := _root_.GlobalTheory.Cut.CountL.main D i r Set.univ _ (WpO D.nd i ρ π) (cocRho i r S Set.univ) 0
       (fun w hw => ⟨(hl w hw).1, (_root_.GlobalTheory.Cut.LocalCocycleConstruction.main D i r ρ π Set.univ S hr hS hπ w hw).1⟩)
     rw [mul_zero, Nat.cast_zero, zero_mul, zero_add] at hlen
-    refine hlen.trans ((_root_.GlobalTheory.Cut.SelClass.main D i ρ π C (hC.trans (GlobalTheory.T.finiteQuotientCocycleSpans_le_continuousCocycles D i r ρ π Set.univ S hr hS hπ).1) hfin ?_).trans ?_)
+    refine hlen.trans ((_root_.GlobalTheory.Cut.SelClass.main D i ρ π C (hC.trans (_root_.GlobalTheory.Cut.CocN.main D i r ρ π Set.univ S hr hS hπ).1) hfin ?_).trans ?_)
     · intro v h1 h2 h3
       exact CutCore.resIne_eq_bot_of_le i hC
         (GlobalTheory.Proof.LocalGlobalSelmer.main D i r Set.univ S _ S.ψρ (CutCore.inR'_one i r S) hU v h1 h2 h3)
-    · have hc := (CutCore.lenCob_mono i _ hC).trans (GlobalTheory.T.length_cutCoboundaryModule_le_unitDelta D i r ρ π Set.univ S hr hS hπ).1
+    · have hc := (CutCore.lenCob_mono i _ hC).trans (_root_.GlobalTheory.Cut.CobOrd.main D i r ρ π Set.univ S hr hS hπ).1
       rw [hd, mul_zero, nonpos_iff_eq_zero] at hc
       rw [hc, zero_add, ← hs]
 
@@ -72,7 +72,7 @@ theorem main : GlobalTheory.Published.GlobalArtinReciprocity → ∀ (D : D7) (i
         ∑ q ∈ D.nd.Q i, lenQ i (D.nd.zeta i q - 1) := by
     intro c
     obtain ⟨C', hC', hq, hlen'⟩ := GlobalTheory.Cut.Peel.main D i 1 (cocChi i r S Set.univ c) (D.nd.Q i)
-    have hZ1 := hC'.trans ((GlobalTheory.T.finiteQuotientCocycleSpans_le_continuousCocycles D i r ρ π Set.univ S hr hS hπ).2 c)
+    have hZ1 := hC'.trans ((_root_.GlobalTheory.Cut.CocN.main D i r ρ π Set.univ S hr hS hπ).2 c)
     have hunr : ∀ v, v ∉ placesOver D.host.E (D.nd.l i) → resIne i C' v = ⊥ := by
       intro v h1
       by_cases h3 : v ∈ D.nd.Q i
@@ -109,7 +109,7 @@ theorem main : GlobalTheory.Published.GlobalArtinReciprocity → ∀ (D : D7) (i
           (hl w hw).2.1 _ (Finset.mem_Icc.mpr ⟨h2, ht⟩) z hz)
             ((_root_.GlobalTheory.Cut.LocalCocycleConstruction.main D i r ρ π Set.univ S hr hS hπ w hw).2 c f (hC' hf))) hunr
       rw [Nat.add_sub_cancel] at h
-      have hc0 := (CutCore.lenCob_mono i _ hC').trans ((GlobalTheory.T.length_cutCoboundaryModule_le_unitDelta D i r ρ π Set.univ S hr hS hπ).2 c)
+      have hc0 := (CutCore.lenCob_mono i _ hC').trans ((_root_.GlobalTheory.Cut.CobOrd.main D i r ρ π Set.univ S hr hS hπ).2 c)
       rw [hd, mul_zero, nonpos_iff_eq_zero] at hc0
       rw [hc0, zero_add] at h
       exact h

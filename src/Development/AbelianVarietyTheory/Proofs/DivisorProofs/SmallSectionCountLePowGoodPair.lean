@@ -4,13 +4,13 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.SmallSecTe
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.VolGe
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EqOfIsometricTrivShift
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsAlgClosedBaseChange
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermLineBundlePairBallsFiniteStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermLineBundlePairBallsFinite
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithHilbertSamuelLogBallCountTendsto
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsNefPow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianLineBundleIsNefShiftOfNonneg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermLineBundlePairSectionsMulMemNormMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermPairPowSectionMemAndNormPow
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepresentsBaseBundlesAndTrivialStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepresentsBaseBundlesAndTrivial
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepresentsHermitianLineBundlePow
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -48,7 +48,7 @@ theorem lc_le_of_good {k : Type} [CommRing k] {X : Scheme.{0}} [IsIntegral X] {p
 theorem crude_upper_lc : GlobalTheory.Published.ArithHilbertSamuel → GlobalTheory.Published.ArCalc → ∀ (k : Type) [CommRing k] (X : Scheme.{0}) [IsIntegral X] (p : X ⟶ Sp k) (D : ℕ), IsArithVar p D → ∀ (P : Pair p), ∀ (b : ℕ) (s t : X.functionField), P.Good D b s t → ∃ C : ℝ, ∀ᶠ N : ℕ in atTop, P.lc N 0 (Real.exp (3 * N)) ≤ C * (N : ℝ) ^ (D + 1) := by
   intro hHS hAC k _ X _ p D hX P b s t hG
   have hRep : P.Rep 0 (b : ℤ) (P.A.pow b) := by
-    have := _root_.GlobalTheory.VolBr.Pair.rep_pow k X p P 0 1 P.A b (GlobalTheory.T.represents_base_bundles_and_trivial k X p P).2.1
+    have := _root_.GlobalTheory.VolBr.Pair.rep_pow k X p P 0 1 P.A b (_root_.GlobalTheory.VolBr.Pair.rep_base k X p P).2.1
     simpa using this
   have hnef : (P.A.pow b).IsNef D := _root_.GlobalTheory.NefPow.isNef_pow hAC k X p D hX P.A b hG.nef
   have hnef0 : ((P.A.pow b).shift (fun _ => (0 : ℝ)) fun _ => rfl).IsNef D :=
@@ -67,6 +67,6 @@ theorem crude_upper_lc : GlobalTheory.Published.ArithHilbertSamuel → GlobalThe
   rw [div_lt_iff₀ hpos] at hN
   simp only [mul_zero] at hN
   refine le_trans ?_ hN.le
-  exact lc_le_of_good P hG N _ (GlobalTheory.T.hermLineBundlePair_balls_finite hHS k X p D hX P b s t hG 0 _ _ hAC)
+  exact lc_le_of_good P hG N _ (_root_.GlobalTheory.VolBr.BallFinite.bl_finite hHS k X p D hX P b s t hG 0 _ _ hAC)
 
 end GlobalTheory.VolBr

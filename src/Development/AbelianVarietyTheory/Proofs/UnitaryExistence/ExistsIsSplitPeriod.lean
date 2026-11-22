@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.PermutesRefl
 import Formalism.LocalToGlobal.ProjectiveLattices.UnFree
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.HermitianLatticeSignatureSplitOfDefiniteStatement
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.HermitianLatticeSignatureSplitOfIndefiniteStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.HermitianLatticeSignatureSplitOfDefinite
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.HermitianLatticeSignatureSplitOfIndefinite
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsSplitPureTypePeriodOfSignatureSplitStatement
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
@@ -17,12 +17,12 @@ theorem exists_isSplit_period : ∀ (E : Type) [Field E] [NumberField E] [IsCMFi
   have hq : (F.Di i).q = D.q := (F.sig i).2
   refine GlobalTheory.T.exists_splitPureTypePeriod_of_signatureSplit E H (F.Di i) g ty (by rw [hp, hq]; exact hty) ?_
   by_cases h0 : D.p = 0 ∨ D.q = 0
-  · exact GlobalTheory.T.hermitianLatticeSignatureSplit_of_definite E H (F.Di i) (by rw [hp, hq]; exact h0)
+  · exact _root_.GlobalTheory.CompRat.splitLat_of_definite E H (F.Di i) (by rw [hp, hq]; exact h0)
   · have h1 : D.p ≠ 0 := fun h => h0 (Or.inl h)
     have h2 : D.q ≠ 0 := fun h => h0 (Or.inr h)
     rcases hc with h | h | ⟨h3, h4⟩
     · exact absurd h h1
     · exact absurd h h2
-    · exact GlobalTheory.T.hermitianLatticeSignatureSplit_of_indefinite E H (F.Di i) h4 (by omega) (by omega) (by omega)
+    · exact _root_.GlobalTheory.SplitGenus.splitLat_of_indefinite E H (F.Di i) h4 (by omega) (by omega) (by omega)
 
 end GlobalTheory.CompRat

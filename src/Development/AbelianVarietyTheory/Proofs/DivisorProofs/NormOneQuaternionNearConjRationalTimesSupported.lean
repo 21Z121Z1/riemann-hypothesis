@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.OneMemH0WeightZero
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.NotIsCompactUnivFv
 import GroundTheory.GlobalFields.IdeleGroups.IdeleNorms
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdditiveStrongApproximationAvoidingFinset
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRationalPureQuaternionSqOfAdelicStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRationalPureQuaternionSqOfAdelic
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitIntertwinerAdelicQuaternion
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuaternionNormOneTraceOpenAdeles
 open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.QSA GlobalTheory.Published
@@ -121,7 +121,7 @@ theorem key_step : ∀ (F : Type) [Field F] [NumberField F] (a b : F), a ≠ 0 �
   set q := u - algebraMap (AF F) (DA F a b) (ι t) with hq
   have hqq' : q * q = algebraMap (AF F) (DA F a b) (ι (t ^ 2 - 1)) := by
     rw [hqq]; simp [hι]
-  obtain ⟨p, hp0, hpp⟩ := GlobalTheory.T.exists_rational_pure_quaternion_sq_of_adelic F a b ha hb _ hc q hq0 hqq'
+  obtain ⟨p, hp0, hpp⟩ := _root_.GlobalTheory.QSA.PureSq.exists_rat_of_adelic F a b ha hb _ hc q hq0 hqq'
   have hrp0 : (rat p).re = 0 := by simp [rat, hp0]
   have hrpp : rat p * rat p = algebraMap (AF F) (DA F a b) (ι (t ^ 2 - 1)) := by
     rw [← rat_mul, hpp, rat_algebraMap]

@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DerivationDetEqDoubleSumAdjugateEntry
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PiolaIdentityAdjugateDivergenceFreeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PiolaIdentityAdjugateDivergenceFree
 open MvPolynomial
 
 namespace GlobalTheory
@@ -10,7 +10,7 @@ theorem weighted_det_divergence_mem_ideal : ∀ {K R : Type} [CommRing K] [CommR
   set c : ι → R := fun i => ∑ j, M.adjugate j i * a j with hc
   have hdet : δ0 M.det = ∑ i, δ i (c i) := by
     rw [_root_.GlobalTheory.DetDeriv.main δ0 M]
-    have hp := GlobalTheory.T.piola_identity_adjugate_divergence_free δ M hM
+    have hp := _root_.GlobalTheory.PiolaAlg.piola_identity δ M hM
     have h1 : ∀ i, δ i (c i) = ∑ j, M.adjugate j i * δ0 (M i j) + ∑ j, a j * δ i (M.adjugate j i) := by
       intro i
       simp only [hc, map_sum, Derivation.leibniz, smul_eq_mul, h0, Finset.sum_add_distrib]

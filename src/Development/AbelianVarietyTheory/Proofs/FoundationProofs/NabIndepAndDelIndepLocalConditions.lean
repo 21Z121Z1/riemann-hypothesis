@@ -9,7 +9,7 @@ import Formalism.QuotientMetricDivisors.ProdFormula
 import Formalism.LocalToGlobal.Divisibility.CoefModLemmas
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.RealCubicMeans.LeafBounds.MeanMaxLeaf.LeafMMFree
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ActPMemLocPNabStdOfIsBasisAtStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ActPMemLocPDelStdOfIsBasisAtStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ActPMemLocPDelStdOfIsBasisAt
 
 open NumberField IsDedekindDomain MvPolynomial Formalism.BasicNotions Formalism.L2.DIV
 open scoped Matrix
@@ -40,6 +40,6 @@ theorem nabIndep_and_delIndep : NabIndep ∧ DelIndep :=
   ⟨fun K _ _ ι _ n lam w M B B' h h' F =>
       indep_of_stable lam w _ (GlobalTheory.T.polyAction_mem_locP_nabStd_of_isBasisAt K ι n lam w) M B B' h h' F,
     fun K _ _ ι _ n lam w M B B' h h' F =>
-      indep_of_stable lam w _ (GlobalTheory.T.polyAction_mem_locP_delStd_of_isBasisAt K ι n lam w) M B B' h h' F⟩
+      indep_of_stable lam w _ (_root_.GlobalTheory.TestLat.WeylLocal.polyAction_mem_locP_delStd K ι n lam w) M B B' h h' F⟩
 
 end GlobalTheory.TestLat

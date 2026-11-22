@@ -13,7 +13,7 @@ import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TotalDegreeSubstFLe
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLocalHoweContractionCompactUnitary
 import ReciprocityTheory.DualLattices.FischerSelfNeZero
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DetTwistedConjugateIsKTypeOfReversedStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DetTwistedConjugateIsKTypeOfReversed
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridRowRealParameterSuccAllPlusLowestWeights
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.NodeYPredEqChainVertexAtRowZeroLast
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LastStepParametersPartitionExtendedByZeros
@@ -122,7 +122,7 @@ theorem om_ptOf_exp {D : D7} {V W : HSp D} {S S' : D.what₂.Tau → SPar} {ψ :
       (polAct M M' x₁ x₃ (fun τ => compAt θ τ (Formalism.L2.Theta.mt V g)) (fun τ => compAt θ τ (Formalism.L2.Theta.mt W h)) φ) := by
   unfold GlobalTheory.Chain.ptOf
   rw [cart_eq_one M hε, cart_eq_one M' hε'] at hv ⊢
-  have e1 := GlobalTheory.T.vacuum_character_positive_definite_source D ψ θ V W χS χT ω hω hθ hV hW (fun _ => 1) (isCartan_one M hε) (isCartan_one M' hε')
+  have e1 := _root_.GlobalTheory.VacuumCharacter.vacuum_character D ψ θ V W χS χT ω hω hθ hV hW (fun _ => 1) (isCartan_one M hε) (isCartan_one M' hε')
     _ _ ha hb x₁ (fun τ => x₁ τ - V.rank) x₃ h1
     (fun τ => by push_cast; rw [h1]; ring)
     (fun τ => by
@@ -139,7 +139,7 @@ theorem om_ptOf_exp {D : D7} {V W : HSp D} {S S' : D.what₂.Tau → SPar} {ψ :
       rw [onb, inFr, Matrix.mul_assoc, Matrix.nonsing_inv_mul_cancel_left _ _ (fr_det M τ)])
     (fun τ => by
       rw [onb, inFr, Matrix.mul_assoc, Matrix.nonsing_inv_mul_cancel_left _ _ (fr_det M' τ)]) f hf φ).2
-  rw [e2, e1, GlobalTheory.FiniteFock.pureTensorO_smul, GlobalTheory.T.fockPolynomialVector_basisChange_eq_substitution D ψ θ V W hω.std hθ _ _ _ _ f hf, polAct, map_smul]
+  rw [e2, e1, GlobalTheory.FiniteFock.pureTensorO_smul, _root_.GlobalTheory.FockBaseChange.pureTensorO_subst D ψ θ V W hω.std hθ _ _ _ _ f hf, polAct, map_smul]
   congr 1
   refine Finset.prod_congr rfl fun τ _ => ?_
   have a1 : (1 / 2 : ℂ) • ((1 : Matrix (Fin W.rank) (Fin W.rank) ℂ) + 1) = 1 := by module
@@ -192,7 +192,7 @@ theorem exists_col_intertwiner : ∀ {D : D7} {Γ : Type} [Group Γ] [Fintype Γ
     _root_.GlobalTheory.CompactHowe.exists_local_lift (G.nX j).V.rank (G.Xp j).V.rank (hn τ) (ν τ) (x₁ τ) (x₃ τ) _ _ ((G.Xp j).M.H τ) ((G.Xp j).M.σ τ) ((G.nX j).M.H τ) ((G.nX j).M.σ τ)
       (n1 τ) (n2 τ) (n3 τ) (n4 τ) (m τ).2.2.1 (m τ).2.2.2 (m' τ).2.2.1 (m' τ).2.2.2
   choose I I0 hI using hl
-  obtain ⟨J, J0, hJ⟩ := GlobalTheory.T.exists_equivariant_piTensor_polynomialBilinear D.what₂.Tau (G.nX j).V.rank (G.Xp j).V.rank (G.Xp j).M.H (G.nX j).M.H I I0
+  obtain ⟨J, J0, hJ⟩ := _root_.GlobalTheory.CompactHowe.PolyTensor.exists_tensor D.what₂.Tau (G.nX j).V.rank (G.Xp j).V.rank (G.Xp j).M.H (G.nX j).M.H I I0
   have key : ∀ (g : D.what₂.Tau → Matrix (Fin (G.Xp j).V.rank) (Fin (G.Xp j).V.rank) ℂ)
       (h : D.what₂.Tau → Matrix (Fin (G.nX j).V.rank) (Fin (G.nX j).V.rank) ℂ),
       (∀ τ, g τ ∈ Formalism.QuantumDeterminants.UH (gramAt D (G.Xp j).V τ)) → (∀ τ, h τ ∈ Formalism.QuantumDeterminants.UH (gramAt D (G.nX j).V τ)) → ∀ φ x,

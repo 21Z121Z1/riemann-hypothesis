@@ -1,13 +1,14 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.IwasawaUnitaryAdelic.IUAIwa
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieAlgebraOfExpLocalStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicStabilizerBlockUnitStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieAlgebraOfExpLocal
+import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsAdmOnOfFiniteDimensional
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicStabilizerBlockUnit
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalExpProductDecompositionStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CartanLocalToGlobalStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CartanLocalToGlobal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExpBlockTriangularStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieAlgebraFunctionCalculusStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieAlgebraFunctionCalculus
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CartanDecompositionLieAlgebraStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsMaximalAbelianHermitianStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsMaximalAbelianHermitian
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CommutingHermitianSimultaneousDiagStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsRegularElementAbelian
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CentralizerRegularCommutesStatement
@@ -28,7 +29,7 @@ theorem frame {n : ℕ} (𝔤 : Submodule ℝ (Matrix (Fin n) (Fin n) ℂ)) :
       U * Matrix.diagonal (fun i => (h i : ℂ)) * Uᴴ ∈ 𝔤 ∧
       ∀ Y ∈ 𝔤, Yᴴ = Y → (U * Matrix.diagonal (fun i => (h i : ℂ)) * Uᴴ) * Y = Y * (U * Matrix.diagonal (fun i => (h i : ℂ)) * Uᴴ) →
         (Uᴴ * Y * U).IsDiag := by
-  obtain ⟨𝔞, hle, hH, hC, hM⟩ := GlobalTheory.T.exists_maximal_abelian_hermitian 𝔤
+  obtain ⟨𝔞, hle, hH, hC, hM⟩ := _root_.GlobalTheory.CompanionTheory.HermitianCommuting.exists_maximal_commuting_hermitian_subspace 𝔤
   obtain ⟨U₀, hU₀, hD⟩ := GlobalTheory.T.commuting_hermitian_simultaneous_diag (𝔞 : Set (Matrix (Fin n) (Fin n) ℂ)) hH hC
   obtain ⟨H, hHa, hreg⟩ := _root_.GlobalTheory.CompanionTheory.IwaGen.exists_regular_point 𝔞 U₀
   have hU₀' : U₀ * U₀ᴴ = 1 := Matrix.mem_unitaryGroup_iff.1 hU₀
@@ -96,7 +97,7 @@ theorem alg {n : ℕ} (𝔤 : Submodule ℝ (Matrix (Fin n) (Fin n) ℂ)) (hs : 
     have := hreg _ ((mem Y).1 hY) (by simp [Matrix.conjTranspose_mul, hYs, Matrix.mul_assoc]) (by rw [mulc, mulc, hc])
     rwa [cj'] at this
   refine ⟨U, hU, fun X hX => ?_⟩
-  obtain ⟨A, hA, B, hB, hAB, hAs, hBt⟩ := GlobalTheory.T.exists_skewHermitian_add_blockTriangular 𝔥 h hanti (GlobalTheory.T.lie_algebra_function_calculus 𝔥 h ((mem _).2 hd) hb') hs' hreg' _ (mem' X hX)
+  obtain ⟨A, hA, B, hB, hAB, hAs, hBt⟩ := GlobalTheory.T.exists_skewHermitian_add_blockTriangular 𝔥 h hanti (_root_.GlobalTheory.CompanionTheory.AdProj.mem_of_entrywise 𝔥 h ((mem _).2 hd) hb') hs' hreg' _ (mem' X hX)
   refine ⟨U * A * Uᴴ, (mem _).1 hA, U * B * Uᴴ, (mem _).1 hB, ?_, ?_, ?_⟩
   · rw [← Matrix.add_mul, ← Matrix.mul_add, ← hAB, cj]
   · simp [Matrix.conjTranspose_mul, hAs, Matrix.mul_assoc]
@@ -104,8 +105,8 @@ theorem alg {n : ℕ} (𝔤 : Submodule ℝ (Matrix (Fin n) (Fin n) ℂ)) (hs : 
 
 theorem iwaOn_of_isLinRed : ∀ {n : ℕ} {G : Set (Matrix (Fin n) (Fin n) ℂ)}, GlobalTheory.LinRed.IsLinRed G → PositivityTheory.Tls2.Iua.IwaOn G := by
   intro n G hG
-  obtain ⟨𝔤, hiff, hV⟩ := GlobalTheory.T.lie_algebra_of_exp_local hG
-  obtain ⟨hs, hb⟩ := GlobalTheory.T.lie_algebra_star_closed_bracket hG 𝔤 hiff
+  obtain ⟨𝔤, hiff, hV⟩ := _root_.GlobalTheory.CompanionTheory.LinRedLie.exists_lieAlgebra hG
+  obtain ⟨hs, hb⟩ := _root_.GlobalTheory.CompanionTheory.LieStable.lieAlg_stable hG 𝔤 hiff
   obtain ⟨U, hU, hdec⟩ := alg 𝔤 hs hb
   have hexp : ∀ X ∈ 𝔤, NormedSpace.exp X ∈ G := fun X hX => by
     simpa using (hiff X).1 hX 1
@@ -138,7 +139,7 @@ theorem iwaOn_of_isLinRed : ∀ {n : ℕ} {G : Set (Matrix (Fin n) (Fin n) ℂ)}
     obtain ⟨A, hA, B, hB, hAB, hAs, hBt⟩ := hdec X hX
     rw [hAB]
     exact Submodule.add_mem_sup ⟨hA, hAs⟩ ⟨hB, hBt⟩)
-  obtain h := GlobalTheory.T.cartan_local_to_global hG U hU (by
+  obtain h := _root_.GlobalTheory.CompanionTheory.LinRedFactor.factor_of_local hG U hU (by
     filter_upwards [hloc] with g hg hgG
     obtain ⟨X, hX, Y, hY, rfl⟩ := hg hgG
     exact ⟨_, ⟨hexp X hX.1, exp_mem_unitaryGroup X hX.2⟩, _, hexp Y hY.1, rfl, GlobalTheory.T.exp_block_triangular U Y hU hY.2⟩)

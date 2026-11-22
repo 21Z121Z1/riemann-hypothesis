@@ -37,7 +37,7 @@ theorem exists_rational_family {G : Over (Sp k)} [GrpObj G] (hG : SmConn G)
       IsChart G j ε f ∧ Pd ≠ 0 ∧ (∀ t, Pd.eval t ≠ 0 → ∀ i, ψ t (f i) * Pd.eval t = (P i).eval t) ∧
       Pd.eval t₁ ≠ 0 ∧ Pd.eval t₂ ≠ 0 ∧ ψ t₁ ≠ ψ t₂ := by
   obtain ⟨A, _, _, j, ε, r, f, hc⟩ := _root_.GlobalTheory.SS.ArcInf.exists_isChart k G hG
-  obtain ⟨h, d, hd1, hh1, ht⟩ := GlobalTheory.T.exists_arcQuotient_twoVariable_coords k G A j ε r f hc a
+  obtain ⟨h, d, hd1, hh1, ht⟩ := _root_.GlobalTheory.SS.ArcInf.TwoVarSetup.exists_twoVar k G A j ε r f hc a
   have hsep := hG.2.2.1
   have hXd := mt ((_root_.GlobalTheory.subst_two_variables_identities k).1 d).1.1 hd1
   have hXh := fun i => ((_root_.GlobalTheory.subst_two_variables_identities k).1 (h i)).1.2 (hh1 i)

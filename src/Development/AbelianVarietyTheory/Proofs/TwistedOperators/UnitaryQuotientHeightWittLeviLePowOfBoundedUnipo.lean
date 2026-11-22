@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.PartFix
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsVacFOfIsVacVec
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WittAnisotropicGroupNormalizesFlagUnipotent
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.VsizeNonneg
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryQuotientHeightLeOfNoShortVectorStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryQuotientHeightLeOfNoShortVector
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LeAdelicVectorSizeProductMulUnitaryQuotientHeigh
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModerateGrowthOfHasCompactSupport
 
@@ -311,7 +311,7 @@ open GlobalTheory.Asc
 
 theorem quotHeight_le_pow (D : D7) (S S₀ : HSp D) (ρ : ℕ) (d : HypDec S S₀ ρ) : ∃ (C : ℝ) (a : ℕ), ∀ n ∈ flagN d,
     ∀ h : GA D S₀, quotHeight S₀ h ≤ C * quotHeight S (n * d.emb0 h) ^ a := by
-  obtain ⟨C₁, b, hM⟩ := GlobalTheory.T.unitaryQuotientHeight_le_of_no_short_vector D S₀
+  obtain ⟨C₁, b, hM⟩ := _root_.GlobalTheory.HtMahler.quotHeight_le_of_no_short D S₀
   obtain ⟨c, C, hc, hP⟩ := exists_le_vsize d (_root_.GlobalTheory.SeenSize.le_vsize_mul_quotHeight D S)
   have hK : 0 < max C c := lt_max_of_lt_right hc
   refine ⟨C₁ * (max C c / c) ^ b, (ρ + 1) * b, fun n hn h => ?_⟩

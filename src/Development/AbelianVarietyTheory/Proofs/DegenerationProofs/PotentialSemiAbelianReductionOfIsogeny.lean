@@ -9,8 +9,8 @@ import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.FirstCohom
 import Development.AbelianVarietyTheory.Definitions.Degenerations.OfDerivationFnOn
 import Development.AbelianVarietyTheory.Definitions.Degenerations.PlOrdSomeOfAssociated
 import Development.AbelianVarietyTheory.Statements.SemistableTorsion.SemistableFin
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SemiAbelianReductionAlongIsogenyStrictHenselianStatement
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIntegralExtIsAlgClosedResidueFieldStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SemiAbelianReductionAlongIsogenyStrictHenselian
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIntegralExtIsAlgClosedResidueField
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.HenselianIUnionCompleteOfIntegralOverCompleteDvr
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsProjByBaseChange
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SmConnModelDescends
@@ -88,7 +88,7 @@ theorem exists_model_of_isogeny (K R K' : Type) [Field K] [CommRing R] [IsDomain
     simp only [Category.assoc]
     rw [← Functor.map_comp_assoc, hri, pullback_map_id_pow, MonObj.pow_comp, MonObj.comp_pow]
     simp
-  obtain ⟨G, _, e₂, hsc, he₂, ht⟩ := GlobalTheory.T.semiAbelian_reduction_along_isogeny_strict_henselian R K' hSH ((Over.pullback (spMap (algebraMap K K'))).obj A) G' g m hA' hP' hG' hgA' hgG
+  obtain ⟨G, _, e₂, hsc, he₂, ht⟩ := _root_.GlobalTheory.IsogRed.semiAbelian_reduction_of_isogeny R K' hSH ((Over.pullback (spMap (algebraMap K K'))).obj A) G' g m hA' hP' hG' hgA' hgG
     ((Over.pullback (spMap (algebraMap K K'))).map i ≫ e.inv) (e.hom ≫ (Over.pullback (spMap (algebraMap K K'))).map r) inferInstance inferInstance hm hri'
   exact ⟨G, inferInstance, hsc, show ∃ _, _ from ⟨e₂, he₂⟩, ht⟩
 
@@ -108,7 +108,7 @@ theorem potModel_semiAbelian_of_isogeny : ∀ (V K : Type) [CommRing V] [IsDomai
   haveI : CharZero L := (RingHom.charZero_iff (algebraMap K L).injective).1 inferInstance
   haveI : CharZero W := (RingHom.charZero_iff (IsFractionRing.injective W L)).2 inferInstance
   haveI : CharZero V := (RingHom.charZero_iff (IsFractionRing.injective V K)).2 inferInstance
-  obtain ⟨R, _, _, _, _, hinj, hint, hac⟩ := GlobalTheory.T.exists_integral_ext_isAlgClosed_residueField' W
+  obtain ⟨R, _, _, _, _, hinj, hint, hac⟩ := _root_.GlobalTheory.ClosedResidueExt.exists_integral_ext_isAlgClosed_residueField W
   obtain ⟨-, hhen, -⟩ := _root_.GlobalTheory.henselian_and_union_of_isIntegral_complete W R hinj hint
   have hWK : Function.Injective ((algebraMap R (FractionRing R)).comp (algebraMap W R)) :=
     (IsFractionRing.injective R (FractionRing R)).comp hinj

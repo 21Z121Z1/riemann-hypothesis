@@ -61,7 +61,7 @@ theorem rho_nat_of (hP : ∀ (M N : Model l K) (u : M.X ⟶ N.X) (hu : u ≫ N.p
   obtain ⟨s, e0, e1, e2, e3⟩ : ∃ s, s₀ ≤ s ∧ s₀' ≤ s ∧ s₁ ≤ s ∧ s₂ ≤ s := ⟨s₀ + s₀' + s₁ + s₂, by omega⟩
   have h := _root_.GlobalTheory.CompanionTheory.KapRhoHom.rho_hom (chK S hS hC N m s) (chK S hS hC M m s) _ (hs₂ s e3) (hs₁ s e2) (hP M N u hu m s)
     (show (N.HS false j).lim from x).1 f (h₀ s e0)
-  have e := GlobalTheory.T.realization_unique (chK S hS hC M m s) (hs₁ s e2) _ f' _ (h₀' s e1) h
+  have e := _root_.GlobalTheory.CompanionTheory.KapUniq.rho_unique (chK S hS hC M m s) (hs₁ s e2) _ f' _ (h₀' s e1) h
   rw [e]
   rfl
 

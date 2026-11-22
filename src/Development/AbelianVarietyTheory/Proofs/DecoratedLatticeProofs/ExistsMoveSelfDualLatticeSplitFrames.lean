@@ -1,5 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsSelfDualLatticePrescribedSplitPlaceStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsSelfDualLatticePrescribedSplitPlace
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCombAt
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CombAtSingleZero
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsNormalFr
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.FrameTopAlt
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PairForm
@@ -27,7 +29,7 @@ theorem exists_selfDual_frames : ∀ (D : D7) (S : HSp D) (L₀ : GlobalTheory.F
     refine Finset.induction_on s ⟨L₀, hL₀, by simp⟩ ?_
     intro j s hj ih
     obtain ⟨L, hL, hs⟩ := ih
-    obtain ⟨L', hL', hother, hq⟩ := GlobalTheory.T.exists_selfDualLattice_prescribed_splitPlace D (K j) (q j) S (Y j) (F j) L hL
+    obtain ⟨L', hL', hother, hq⟩ := _root_.GlobalTheory.SplitLat.exists_selfDual_frame D (K j) (q j) S (Y j) (F j) L hL
     refine ⟨L', hL', ?_⟩
     intro i hi
     rcases Finset.mem_insert.mp hi with rfl | hi'

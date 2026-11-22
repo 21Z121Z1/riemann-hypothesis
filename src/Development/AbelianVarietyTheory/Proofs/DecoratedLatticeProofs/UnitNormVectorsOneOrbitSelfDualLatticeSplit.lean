@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PlacesToAdeles
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WittCoreEmbeddingPreservesSupportedUnitarySubgro
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsSelfDualLatticeAtPlaceLatticeCompletionStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualLatticesSingleOrbitTamePlaceStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsSelfDualLatticeAtPlaceLatticeCompletion
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualLatticesSingleOrbitTamePlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatSmulMatrixMulVecCompletedSelfDual
 import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.LatticeAndConstantUnique
 
@@ -217,9 +217,9 @@ theorem moves_of_split {S A B : HSp D} (o : OrthDec S A B) {L₀ : Lat S} {LA : 
 
 theorem orbitSplit : ∀ D : D7, GlobalTheory.FinPl.OrbitSplit D := by
   intro D σ B L₀ v hT hL₀ ⟨LA, LL, hLA, hLL, hO⟩ γ hγ hz
-  have hM := isSDAt_pre_unitary (GlobalTheory.T.isSelfDualLatticeAtPlace_latticeCompletion D B.V₀ L₀ v hL₀) γ⁻¹
-  obtain ⟨hA, hsplit⟩ := split_of_le B.o hM (GlobalTheory.T.isSelfDualLatticeAtPlace_latticeCompletion D B.L LL v hLL) (line_le B.o B.line hO _ hz)
-  obtain ⟨a, ha, hmv⟩ := GlobalTheory.T.selfDualLattices_single_orbit_tamePlace D B.A v _ _ hT (GlobalTheory.T.isSelfDualLatticeAtPlace_latticeCompletion D B.A LA v hLA) hA
+  have hM := isSDAt_pre_unitary (_root_.GlobalTheory.IwaPlace.LocSD.isSDAt_latV D B.V₀ L₀ v hL₀) γ⁻¹
+  obtain ⟨hA, hsplit⟩ := split_of_le B.o hM (_root_.GlobalTheory.IwaPlace.LocSD.isSDAt_latV D B.L LL v hLL) (line_le B.o B.line hO _ hz)
+  obtain ⟨a, ha, hmv⟩ := _root_.GlobalTheory.IwaOrbit.selfDual_orbit D B.A v _ _ hT (_root_.GlobalTheory.IwaPlace.LocSD.isSDAt_latV D B.A LA v hLA) hA
   exact ⟨a, ha, (B.o.emb (a, 1))⁻¹ * γ, ⟨mul_mem (inv_mem (emb_mem_grpAt B.o ha)) hγ,
     moves_of_split B.o hO γ a hsplit hmv⟩, (mul_inv_cancel_left _ _).symm⟩
 

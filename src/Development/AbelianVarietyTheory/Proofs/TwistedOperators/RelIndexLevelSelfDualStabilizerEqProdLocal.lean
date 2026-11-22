@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BlockPartitionOf
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LevelPlacesUnionTwistPlacesSplitDisjoint
 import Formalism.LocalToGlobal.Divisibility.DefGroupLemmas
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatticeLevelEqUnitaryInfFrameStabilizer
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CardBlockUpperTriangularSubgroupOfTopBlockStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CardBlockUpperTriangularSubgroupOfTopBlock
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix
 open Formalism.L2.Theta Formalism.L2.DIV Formalism.L2.Indef Formalism.DivisionValues
 open Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Lev Formalism.IndefR.Mult Formalism.IndefR.Datum Formalism.IndefR.Cx
@@ -155,14 +155,14 @@ theorem relIndex_levV_latLev : ∀ {D : D7} {G : Type} [Group G] [Fintype G] {Pl
     by_cases h : PP.1 ∈ R.Pg
     · have e2 : Bl PP = parSub (r_le_V i) (Hl ⟨PP.1, h⟩) := hBp PP h
       simp only [g, dif_pos h]
-      rw [e2, GlobalTheory.T.card_blockUpperTriangularSubgroupOfTopBlock (kP PP.1) _ _ _ (r_le_V i) hn]
+      rw [e2, _root_.GlobalTheory.ParIndex.card_parSub (kP PP.1) _ _ _ (r_le_V i) hn]
       push_cast; ring
     · have e2 : Bl PP = parSub (r_le_V i) ⊤ := by
         rw [hBn PP h]
         ext x
         simp [mem_parSub]
       simp only [g, dif_neg h]
-      rw [e2, GlobalTheory.T.card_blockUpperTriangularSubgroupOfTopBlock (kP PP.1) _ _ _ (r_le_V i) hn, Subgroup.card_top]
+      rw [e2, _root_.GlobalTheory.ParIndex.card_parSub (kP PP.1) _ _ _ (r_le_V i) hn, Subgroup.card_top]
       push_cast; ring
   rw [hidx, Finset.prod_congr rfl (fun PP _ => hloc PP), Finset.prod_coe_sort Ts g, hTs, Finset.prod_union hdis]
   congr 1

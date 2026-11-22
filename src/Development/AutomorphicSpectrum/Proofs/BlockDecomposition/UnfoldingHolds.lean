@@ -14,9 +14,10 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinRatio
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousHalfTr
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetCell
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FundamentalDomainFourierUnfolding
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetCellInvariantUnipotentStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BigCellCosetsHermitianParamStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NondegenerateCharacterCellFactorizationStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetCellInvariantUnipotent
+import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.AdelicConjTransposeBlockMatrixTwoByTwoFin
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BigCellCosetsHermitianParam
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NondegenerateCharacterCellFactorization
 
 noncomputable section
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct
@@ -161,7 +162,7 @@ theorem unfold : PositivityTheory.PfSWUS.Unfold := by
   haveI : DiscreteTopology (ratHerm D n) := hcolat.1
   haveI : Countable (ratHerm D n) := countable_ratHerm
   haveI : Countable (Cosets (P D n) (GF D n)) := countable_cosets
-  obtain ⟨e, he, hr, hterm⟩ := GlobalTheory.T.big_cell_cosets_hermitian_param hw hNb
+  obtain ⟨e, he, hr, hterm⟩ := _root_.GlobalTheory.CompanionTheory.SwUnf.BigCell.bigCell hw hNb
   choose bb hbG hbm using nb_mem_GF hNb
   let F : Cosets (P D n) (GF D n) → hermA D n → ℂ := fun q b => term (P D n) (GF D n) (sect ω H Φ z) (nb b * g) q
   let ch : hermA D n → ℂ := fun b => ψ (-halfTr (Matrix.trace (HMul.hMul (β.1.map (incA D)) b.1 : Mx D n n)))
@@ -198,13 +199,13 @@ theorem unfold : PositivityTheory.PfSWUS.Unfold := by
       have := GlobalTheory.CompanionTheory.HermPoisson.chi_rat hψ (m := (-(β.1.map (incA D)) : Mx D n n)) (neg_mem (rat_mem_of β.1)) l
       rw [GlobalTheory.CompanionTheory.HermPoisson.chi_neg_left] at this
       exact this)
-    _ hM τ hτ (fun l q => GlobalTheory.T.coset_cell_invariant_unipotent q ⟨nb l.1, hbG l⟩ (bb l) (hbm l)) e he hr
+    _ hM τ hτ (fun l q => _root_.GlobalTheory.CompanionTheory.SwUnf.cosetCell_rmulEquiv q ⟨nb l.1, hbG l⟩ (bb l) (hbm l)) e he hr
     (fun l b => by
       simp only [F]
       rw [hterm _ hinv, nb_add hNb]
       simp only [mul_assoc])
     (fun y hy => by
-      obtain ⟨ν', h1, h2⟩ := GlobalTheory.T.nondegenerate_character_cell_factorization hψ β hβ y hy
+      obtain ⟨ν', h1, h2⟩ := _root_.GlobalTheory.CompanionTheory.SwUnf.SmallCell.small_cell hψ β hβ y hy
       refine ⟨ν', h1, fun q hq b => ?_⟩
       obtain ⟨p, hp, a, ha, hd, hpe⟩ := h2 (q.out : GF D n) (nb ν') (q.out : GF D n).2 (ratOf q.out) (mat_ratOf _) hq (hNb _)
       simp only [F, term]

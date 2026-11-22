@@ -62,7 +62,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormNon
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ActLevMemCuspA
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsHalfOfBasePins
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormHeckeEigen
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeilVacuumFiniteSelfDualLatticeSplittingStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeilVacuumFiniteSelfDualLatticeSplitting
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionLiftPairStepVectorInvLevelChar
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLatticeVacuumStabilizerSplittingCharacters
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateWeilRepresentationSecond
@@ -92,7 +92,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IdentityClassLat
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsSelfDualCLatFrame
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneSubIdempotentSmulMemLattice
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdempotentSumConjSumOrthogonalDvd
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteAdelicMatrixMemLatticeOfColumnsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteAdelicMatrixMemLatticeOfColumns
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenMapTranspose
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinPartConjMem
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SelfDualLatticePairingDual
@@ -104,7 +104,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinTensAlgebraMap
 import Development.AbelianVarietyTheory.Definitions.Divisors.ConstantUniqueOfEqProduct
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormSignExists
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SignForWeilModelFamily
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemSpanDetSetIffAdelicLatticeValuationStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemSpanDetSetIffAdelicLatticeValuation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNumeratorIdealOfAntiInvariantDivisor
 import Formalism.LocalToGlobal.ProjectiveLattices.ThClass
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdelicCharacterEqProdUnramifiedValueZpow
@@ -1236,7 +1236,7 @@ theorem eqAt_of_frAtEmb_ofFive : ∀ {D : D7} {G : Type} [Group G] [Fintype G] {
     simp
   have hi : (1 : Af D.host.F ⊗[D.host.F] D.host.E) ∈ intAE D :=
     AddSubgroup.subset_closure ⟨1, fun v => one_mem _, 1, rfl⟩
-  have hvac := GlobalTheory.T.weil_vacuum_finite_selfDualLattice_splitting D (Vc D i) (Wc D i) R.ψ R.θ p1.2.1 (D.sp.V_sig _) (D.sp.W_sig _) _ _ _ ho ⟨_, c1⟩ c4
+  have hvac := _root_.GlobalTheory.FinVac.om_vacuum_finite D (Vc D i) (Wc D i) R.ψ R.θ p1.2.1 (D.sp.V_sig _) (D.sp.W_sig _) _ _ _ ho ⟨_, c1⟩ c4
     (fun _ => 1) (cart (R.MW i σ))
     (fun τ => ⟨Matrix.mul_one _, by simp, by
       have : gramAt D (Vc D i) τ = 1 := by
@@ -2217,7 +2217,7 @@ theorem zak_class_term_conj_ofFive : ∀ {D : D7} {G : Type} [Group G] [Fintype 
   obtain ⟨-, -, ⟨c, hc, -, hc'⟩, ⟨-, hN, hN'⟩, -⟩ := (hP.reps ()).1 k
   replace hN' := hN'.trans inf_le_left
   rw [Formalism.L2.Pj.stdLat, FactsLat.pi_eq_stdL] at hc' hN'
-  have hE := GlobalTheory.T.splitFinitePoint_moves_vacuum_to_projection D _ _ _ g _ _ _ X eT bas idx hS (D.sp.V_sig _) (D.sp.W_sig _) _ _ _ hom _ hw hw' hw2 _ hZ LT L
+  have hE := _root_.GlobalTheory.OneMapRef.SplitProj.zak_om_split D _ _ _ g _ _ _ X eT bas idx hS (D.sp.V_sig _) (D.sp.W_sig _) _ _ _ hom _ hw hw' hw2 _ hZ LT L
     hLT1 hL (hLG ▸ hLT2) e P he (h k) hfin hs x hx _ hΛ hmv v hv a _ hz
   refine ⟨Const.isSB_gphi idx hS.2.2.2.2.2.2.2 hS.2.2.2.1 hw hw' hL hΛ hv.1 _ _, ?_⟩
   obtain ⟨Y₀, hY₀⟩ := DualMark.exists_roots (L := LinearMap.range (T.iota ((i : ℕ) + 1))) (O.dδ ()).l₂

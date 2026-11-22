@@ -3,7 +3,8 @@ import ReciprocityTheory.ReductiveGroups.TraceFormulas.LatDefs
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteQuotientOfCompleteNakayama
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FreeModuleAdicCompleteSeparated
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CompactDvrAdicCompleteSeparatedUniformizer
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DualLatFiniteFreeStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DualLatFiniteFree
+import Formalism.WachLatticeTwists.LatticeDualFibres.StatDualFibreLattice
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteFreeModuleCompactAdicDvrStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CocycleEqAddUniformizerSmulAddCoboundaryStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ModUniformiserCocyclesFiniteClassesLocal
@@ -18,7 +19,7 @@ theorem finIso_of_localTateDuality (hT : Formalism.GaloisCohomology.LocalTateDua
   obtain ⟨hR, hC, hT2, hA, hpm, hp0⟩ := hO
   haveI := hR; haveI := hC; haveI := hT2; haveI := hD.t2'
   obtain ⟨ϖ, hϖ⟩ := IsDiscreteValuationRing.exists_irreducible O
-  obtain ⟨hFin, hFree⟩ := GlobalTheory.T.dualLat_finite_free_of_isLatticeIn D.bT D.T hD.lat hD.perf
+  obtain ⟨hFin, hFree⟩ := _root_.GlobalTheory.dualLat_finite_free D.bT D.T hD.lat hD.perf
   haveI := hFin; haveI := hFree
   obtain ⟨hcpl, hsep⟩ := _root_.GlobalTheory.compact_dvr_complete_separated hA ϖ hϖ
   obtain ⟨hcT, hsT⟩ := GlobalTheory.freeModule_adicComplete_separated ϖ hcpl hsep (↥D.T')

@@ -5,16 +5,16 @@ import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsMatrixBa
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsPlaceCentredClosedPointDetectsUnits
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFiniteNormalExtContainingAlgebraicElements
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ShortestRepresentativesFormSumDependsOnLattice
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ArcDataPsiValuationEqHalfFormStatement
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUniformisationTrivialTorusAbelianLocusStatement
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ModelTraitExtensionPolarisedFlatBundleIsoStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ArcDataPsiValuationEqHalfForm
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUniformisationTrivialTorusAbelianLocus
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ModelTraitExtensionPolarisedFlatBundleIso
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsRigidifiedPolarisedFibreAtFieldPoint
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsThetaBasisAfterEveryFieldExtensionStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsThetaBasisAfterEveryFieldExtension
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SectionPowerCalculusGeometricFibreStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.RigidifiedBundleTwoPullbacksCompareStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaTableAlgClosedCompleteSingleValued
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TraitSectionBasisDescendsFiniteDvrExtension
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsBasisRecombinationInvertibleMatrixTraitStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsBasisRecombinationInvertibleMatrixTrait
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.PolarizedAbelianValueTableMapsUnderBaseChangeStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsAdaptedBasisAtTraitVsGenericBasisStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.UniformisedTableLatticeIntegralFamilies
@@ -184,10 +184,10 @@ theorem exists_isFrame_pow_sq : GlobalTheory.Ex.HV → Laws6 → GlobalTheory.LN
     letI := g.toAlgebra
     have : Module.Finite (PowerSeries O') R₁ := hgf
     exact IsNoetherianRing.of_finite (PowerSeries O') R₁
-  obtain ⟨x₁, x₂, x₃, x₄⟩ := GlobalTheory.T.model_trait_extension_polarised_flat_bundleIso E H D l Xo c _ _ Y
+  obtain ⟨x₁, x₂, x₃, x₄⟩ := _root_.GlobalTheory.ModelFacts.model_facts E H D l Xo c _ _ Y
   have hL₀ := Y.t.PP.isLB
   obtain ⟨A, φA, w, ρ, hA⟩ := _root_.GlobalTheory.OneBasis.exists_rigPull_of_polAt hL.1 hL.2.1 E H _ Y.t _ _ (x₂ _ y₁)
-  obtain ⟨r, τ, hτ⟩ := GlobalTheory.T.exists_thetaBasis_after_every_field_extension hL.1 hL.2.1 _ Y.t.G _ hL₀ _ _ A φA w hA.1 hA.2.1 (m ^ 2) hm2
+  obtain ⟨r, τ, hτ⟩ := _root_.GlobalTheory.OneBasis.AllExt.exists_allBasis hL.1 hL.2.1 _ Y.t.G _ hL₀ _ _ A φA w hA.1 hA.2.1 (m ^ 2) hm2
   let K := AlgebraicClosure (FractionRing R₁)
   have cal := GlobalTheory.T.sectionPower_calculus_geometric_fibre _ Y.t.G _ hL₀ R₁ _ A φA w hA.1 hA.2.1 K
   obtain ⟨θK, hθK, -⟩ := (cal 1).1 (Over.mk (y₁ ≫ Y.j)) (jFK (R := R₁) K) rfl θ
@@ -226,7 +226,7 @@ theorem exists_isFrame_pow_sq : GlobalTheory.Ex.HV → Laws6 → GlobalTheory.LN
       · have := hW.1
         have e : spMap (RingHom.id W) ≫ χ = χ := by
           rw [show spMap (RingHom.id W) = 𝟙 _ from Spec.map_id _, Category.id_comp]
-        obtain ⟨t, mt, P, hP⟩ := GlobalTheory.T.exists_uniformisation_trivial_torus_abelianLocus hL hU E H D l Xo c _ _ Y W hW χ (spMap gam ≫ y₁)
+        obtain ⟨t, mt, P, hP⟩ := _root_.GlobalTheory.GoodTrait.exists_pelUnif_subsingleton hL hU E H D l Xo c _ _ Y W hW χ (spMap gam ≫ y₁)
           ((Category.assoc _ _ _).trans h) (g₁ hu)
         refine ⟨W, inferInstance, inferInstance, inferInstance, RingHom.id W, t, e.symm ▸ mt, P, hW, Function.injective_id,
           RingHom.Finite.id _, fun ϖ Q e hϖ hQ he cls mu _ => ?_⟩
@@ -236,7 +236,7 @@ theorem exists_isFrame_pow_sq : GlobalTheory.Ex.HV → Laws6 → GlobalTheory.LN
         simp [this, e₀]
       · obtain ⟨V, _, _, _, io, hV', hi, hf, hd⟩ := g₂ hu
         have := hV'.1
-        obtain ⟨t, mt, P, ε, hP⟩ := GlobalTheory.T.arcData_psi_valuation_eq_half_form E H D l Xo c _ _ Y O' b a V _ _ _
+        obtain ⟨t, mt, P, ε, hP⟩ := _root_.GlobalTheory.ArcPsiVal.q_eq_of_hasArcData E H D l Xo c _ _ Y O' b a V _ _ _
           (hi.comp (hφ.comp (hg.comp PowerSeries.C_injective))) hd
         refine ⟨V, inferInstance, inferInstance, inferInstance, io, t, mt, P, hV', hi, hf,
           fun ϖ Q e hϖ hQ he cls mu hcls => hnum _ Q ε e (Nat.pos_of_ne_zero ?_) (hP ϖ Q e hϖ hQ he) cls mu hcls⟩
@@ -287,7 +287,7 @@ theorem exists_isFrame_pow_sq : GlobalTheory.Ex.HV → Laws6 → GlobalTheory.LN
     exact ⟨_, ⟨fun s => (mem _ _ (hσ _)).2 ⟨φ s, (hgam s).symm⟩, _, _, _, O, T', _, rfl, hT'⟩, mem⟩)
   obtain ⟨Φ, hΦ⟩ := _root_.GlobalTheory.OneBasis.Places.exists_basis_all_places K r (tab ρ m θK τK) (m ^ 2) n d κ PP S₀ hm2 hnp.one_le hd hS₀ hfull (fun S hS => hS.2) hunit
   obtain ⟨R₂, _, _, h, h', j, Φ₂, f₁, f₂, f₃, f₄, f₅, f₆, f₇⟩ := _root_.GlobalTheory.OneBasis.exists_finite_normal_containing R₁ hn (Fin r × Fin r) (fun p => Φ p.1 p.2)
-  obtain ⟨f, hf⟩ := GlobalTheory.T.exists_basis_recombination_invertible_matrix_trait _ Y.t.G _ hL₀ (m ^ 2) _ _ (y₁ ≫ Y.j) h' ((spMap h' ≫ y₁) ≫ Y.j) (Category.assoc _ _ _).symm r τ
+  obtain ⟨f, hf⟩ := _root_.GlobalTheory.Recombine.exists_recombination _ Y.t.G _ hL₀ (m ^ 2) _ _ (y₁ ≫ Y.j) h' ((spMap h' ≫ y₁) ≫ Y.j) (Category.assoc _ _ _).symm r τ
     (Matrix.of fun i k => Φ₂ (i, k))
   refine ⟨R₂, inferInstance, inferInstance, h, h', f₁, f₂, f₃, f₄, r, f, fun W _ _ _ hW φ gam hgam χ hχ => ?_⟩
   have := hW.1

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.EvalAtOneExtremalMul
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SqRepTopVecOfUnitriangular
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FockSubstitutionIdentitiesStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FockSubstitutionIdentities
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeylDeterminantTwistTensorFiniteDimensionalStabl
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.EquivariantHomMultiplicityFreeIrreducible
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeylDeterminantTwistTensorUnitIndexIrreducibleUn
@@ -77,10 +77,10 @@ def vnRep {a : ℕ} (lam : Unit → DomWeight a) (n : Unit → ℕ) :
     rw [vnMap_apply, Module.End.one_apply]
     have : (fun _ : Unit => ((1 : Matrix.unitaryGroup (Fin a) ℂ) : Matrix (Fin a) (Fin a) ℂ)ᵀ) = fun _ => 1 := by
       exact funext fun _ => Matrix.transpose_one
-    rw [this, (GlobalTheory.T.fockSubstitution_identities Unit a a le_rfl).2.2.2.2.1]
+    rw [this, (_root_.GlobalTheory.KJInf.substIdentities Unit a a le_rfl).2.2.2.2.1]
   map_mul' k k' := by
     refine LinearMap.ext fun F => Subtype.ext ?_
-    rw [Module.End.mul_apply, vnMap_apply, vnMap_apply, vnMap_apply, (GlobalTheory.T.fockSubstitution_identities Unit a a le_rfl).2.2.2.1]
+    rw [Module.End.mul_apply, vnMap_apply, vnMap_apply, vnMap_apply, (_root_.GlobalTheory.KJInf.substIdentities Unit a a le_rfl).2.2.2.1]
     congr 2
     refine funext fun _ => ?_
     first | exact (Matrix.transpose_mul _ _).symm | exact Matrix.transpose_mul _ _
@@ -157,7 +157,7 @@ theorem subMap_intertwines {a b : ℕ} (hab : a ≤ b) (lam : Unit → DomWeight
     (y' : Unit → Matrix (Fin b) (Fin b) ℂ) (k : Matrix.unitaryGroup (Fin a) ℂ) (F : Vn lam n) :
     subMap hab lam n y' (vnRep lam n k F) =
       polyRep (unitaryIncl a) (MonoidHom.id (GL (Fin b) ℂ)) (k, 1) (subMap hab lam n y' F) := by
-  rw [subMap_apply, subMap_apply, polyRep_apply, (GlobalTheory.T.fockSubstitution_identities Unit a b hab).1, vnRep_apply]
+  rw [subMap_apply, subMap_apply, polyRep_apply, (_root_.GlobalTheory.KJInf.substIdentities Unit a b hab).1, vnRep_apply]
   simp only [Units.val_one, one_mul]
 
 theorem comp_subMap {a b : ℕ} (hab : a ≤ b) (lam : Unit → DomWeight a) (n : Unit → ℕ)
@@ -165,10 +165,10 @@ theorem comp_subMap {a b : ℕ} (hab : a ≤ b) (lam : Unit → DomWeight a) (n 
     polyRep (unitaryIncl a) (MonoidHom.id (GL (Fin b) ℂ)) (1, h) ∘ₗ subMap hab lam n y' =
       subMap hab lam n (fun τ => (h : Matrix (Fin b) (Fin b) ℂ) * y' τ) := by
   refine LinearMap.ext fun F => ?_
-  rw [LinearMap.comp_apply, subMap_apply, subMap_apply, polyRep_apply, (GlobalTheory.T.fockSubstitution_identities Unit a b hab).1]
+  rw [LinearMap.comp_apply, subMap_apply, subMap_apply, polyRep_apply, (_root_.GlobalTheory.KJInf.substIdentities Unit a b hab).1]
   have : (fun _ : Unit => ((1 : Matrix.unitaryGroup (Fin a) ℂ) : Matrix (Fin a) (Fin a) ℂ)ᵀ) = fun _ => 1 :=
     funext fun _ => Matrix.transpose_one
-  rw [this, (GlobalTheory.T.fockSubstitution_identities Unit a a le_rfl).2.2.2.2.1]
+  rw [this, (_root_.GlobalTheory.KJInf.substIdentities Unit a a le_rfl).2.2.2.2.1]
 
 theorem howeSpan_unit : HoweSpan Unit := by
   intro a b hab ha lam n Q hQ

@@ -22,20 +22,20 @@ theorem local_group_two {D : D7} (V : HSp D) (β : GL (Fin V.rank) (Lev.EAf D))
         k₁ ∈ Lc ∧ k = k₁ * k₂ ∧ ∀ l ∈ Lc, Commute k₂ l) ∧
       (levEnv V β L).J ⊓ Lc ≤ (levEnv V β L').J := by
   have hP : IsPrimeIdem P e (e + cA D e) := Or.inl ⟨he, rfl⟩
-  have h01 := (GlobalTheory.T.supported_subgroup_split_commute_primeIdempotents V).2.2.1 P e _ hP
+  have h01 := (_root_.GlobalTheory.IdemSupport.supported_group_and_prime_idempotents V).2.2.1 P e _ hP
   have hff := h01.1
   have hcf := h01.2.1
-  have h02 := ((GlobalTheory.T.supported_subgroup_split_commute_primeIdempotents V).1 _ hff hcf).1
+  have h02 := ((_root_.GlobalTheory.IdemSupport.supported_group_and_prime_idempotents V).1 _ hff hcf).1
   refine h02.elim fun L₀ hL₀ => ?_
   have h1 : ((1 : ℕ) : 𝓞 D.host.E) ∉ P.asIdeal := by
     rw [Nat.cast_one]; exact (Ideal.ne_top_iff_one _).1 P.isPrime.ne_top
-  have h03 := (GlobalTheory.T.level_hyperspecial_trivialCharacter_splits_off_places V β Λ 1 (flag1L L) hβ).2 P e _ hP h1 hoff
-  have hK' := ((GlobalTheory.T.level_hyperspecial_trivialCharacter_splits_off_places V β Λ 1 (flag1L L') hβ).2 P e _ hP h1 hoff').1
+  have h03 := (_root_.GlobalTheory.LevSplit.lev_split V β Λ 1 (flag1L L) hβ).2 P e _ hP h1 hoff
+  have hK' := ((_root_.GlobalTheory.LevSplit.lev_split V β Λ 1 (flag1L L') hβ).2 P e _ hP h1 hoff').1
   have hK := h03.1
   have hχ := h03.2.1
   have hsp := h03.2.2
   have hL : ∀ g, g ∈ L₀ ↔ SuppAt e V g := hL₀
-  have h04 := (GlobalTheory.T.involution_spherical_hecke_anti V P e he).1
+  have h04 := (_root_.GlobalTheory.SplitPlace.split_local V P e he).1
   have h05 := transport_local (fin V) (GfC V) (levG V β (flag1L L)) L₀ (levEnv V β L).J (SuppAt e V)
     (SuppF V (1 - (e + cA D e))) (KsphC V ∅) (fun k => ((levEnv V β L).χ k : ℂ)) (levChi V β (flag1L L))
     (fin_lift V) (fun g g' => fin_inj V) (fun g => mem_J V β L) (fun g hg => hg.1) hL (fun g => supp_fin V he)

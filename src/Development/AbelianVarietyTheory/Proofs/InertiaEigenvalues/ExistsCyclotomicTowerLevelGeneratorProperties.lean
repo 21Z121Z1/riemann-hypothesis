@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 import Development.AbelianVarietyTheory.Definitions.Foundations.HTBasis
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FinrankCyclotomicExtAndCyclotomicCharSurjectiveStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicCharacterPadicBasicPropertiesStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PadicNormZpowSubOnePadicValIntStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FinrankCyclotomicExtAndCyclotomicCharSurjective
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicCharacterPadicBasicProperties
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PadicNormZpowSubOnePadicValInt
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowSubOneLe
 
 open Formalism.BasicNotions Formalism.BasicNotions.Loc GlobalTheory.Cyc
@@ -34,7 +34,7 @@ theorem norm_pow_pow_sub_one (j : ℕ) (hj : Lev l j) (u : ℚ_[l])
     (hu : ‖u - 1‖ = (l : ℝ) ^ (-(j : ℤ))) (b : ℕ) :
     ‖u ^ (l ^ b) - 1‖ = (l : ℝ) ^ (-((j + b : ℕ) : ℤ)) := by
   have hl : l.Prime := Fact.out
-  have h := GlobalTheory.T.padic_norm_zpow_sub_one_padicValInt l j hj u hu ((l ^ b : ℕ) : ℤ) (by exact_mod_cast pow_ne_zero _ hl.ne_zero)
+  have h := _root_.GlobalTheory.Cyc.LiftExp.norm_zpow_sub_one l j hj u hu ((l ^ b : ℕ) : ℤ) (by exact_mod_cast pow_ne_zero _ hl.ne_zero)
   rw [zpow_natCast, padicValInt.of_nat, padicValNat.prime_pow] at h
   rw [h]; push_cast; rfl
 
@@ -85,7 +85,7 @@ theorem gen_dense : ∀ (l : ℕ) [Fact l.Prime] (act : GQ l →* (PadicComplex 
   have hl : l.Prime := Fact.out
   have hl1 : (1 : ℝ) < l := by exact_mod_cast hl.one_lt
   have hl0 : (0 : ℝ) < l := by linarith
-  obtain ⟨hn, hcont, hG⟩ := GlobalTheory.T.cyclotomicCharacterPadic_basic_properties l χ hχ
+  obtain ⟨hn, hcont, hG⟩ := _root_.GlobalTheory.Cyc.cyc_basic l χ hχ
   refine ⟨?_, fun g hg => ?_⟩
   · have hp : ‖(l : ℚ_[l]) ^ j‖ = (l : ℝ) ^ (-(j : ℤ)) := by
       rw [norm_pow, Padic.norm_p]; simp
@@ -94,7 +94,7 @@ theorem gen_dense : ∀ (l : ℕ) [Fact l.Prime] (act : GQ l →* (PadicComplex 
     have hu : ‖(1 : ℚ_[l]) + (l : ℚ_[l]) ^ j‖ = 1 := by
       rw [IsUltrametricDist.norm_add_eq_max_of_norm_ne_norm (by rw [norm_one]; exact hlt.ne'),
         norm_one, max_eq_left hlt.le]
-    obtain ⟨g, hg0, hg⟩ := (GlobalTheory.T.finrank_cyclotomicExt_and_cyclotomicChar_surjective l K).2 χ hχ _ hu
+    obtain ⟨g, hg0, hg⟩ := (_root_.GlobalTheory.Cyc.finrank_Ks_and_chi_surjective l K).2 χ hχ _ hu
     have : ‖(χ g : ℚ_[l]) - 1‖ = (l : ℝ) ^ (-(j : ℤ)) := by rw [hg, add_sub_cancel_left, hp]
     exact ⟨g, ((hG K g hg0).1 j).2 this.le, this⟩
   have hg0 := cyclotomicTowerLevelGaloisSubgroup_le_fixingSubgroup_base K j hg.1

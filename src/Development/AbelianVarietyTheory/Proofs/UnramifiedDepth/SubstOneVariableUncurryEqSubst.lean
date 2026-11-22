@@ -6,15 +6,15 @@ import Formalism.LocalToGlobal.CharacterGerms.NegMem
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartF
 import Development.AbelianVarietyTheory.Definitions.TeichmullerDepth.HasTeich
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.IntSOfMulEqOne
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.InvariantDerivationsConstantInLogCoordinatesStatement
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ConstantCoeffDerivationPolynomialEqJetAt0Statement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.InvariantDerivationsConstantInLogCoordinates
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ConstantCoeffDerivationPolynomialEqJetAt0
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.JetAt0ProdSubstDisjointVariables
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.AdmissibleRowsValueEqRowGauge
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsIntegralEndOfActionLinearPartStatement
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.GaugeBiadditiveSymmAdjointIntegralEndStatement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsIntegralEndOfActionLinearPart
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.GaugeBiadditiveSymmAdjointIntegralEnd
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.IntegralGermEqGaugedFormalGroupLawExpIntegral
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsOrthogonalAdjointProjectorsPlacePairs
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.IsIntegralGaugedFormalGroupLawPairDataStatement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.IsIntegralGaugedFormalGroupLawPairData
 
 noncomputable section
 
@@ -264,9 +264,9 @@ theorem one_row (hs : PairsSep Y p) (gr : ∀ o, MvPowerSeries (WV (I o)) C)
     rw [one_mul, subst_mvExp (cE τ v) cL, e1, hz cL, mvExp_zero']
     simp
   obtain ⟨M, hadj, hfix, hkill, himg⟩ := _root_.GlobalTheory.PlaceProj.exists_orth_proj C V O dd Y d Orb I p hs
-  have hX := GlobalTheory.T.isIntegralGaugedFormalGroupLaw_pairData C V O dd Y d (I o0) (p o0)
-  obtain ⟨W, W', hW, hW', aW, hL⟩ := GlobalTheory.T.exists_integralEnd_of_action_linearPart C V O dd Y d (I o0) (p o0) Y.w0
-  obtain ⟨c0, cadd, cmul, cz, cb, cs, cadj⟩ := GlobalTheory.T.gauge_biadditive_symm_adjoint_integralEnd C V d (I o0) (Fin dd) (Y.raw (p o0)) hX
+  have hX := _root_.GlobalTheory.RowLawPair.rLaw_pairData C V O dd Y d (I o0) (p o0)
+  obtain ⟨W, W', hW, hW', aW, hL⟩ := _root_.GlobalTheory.ActionEnd.exists_isEnd_act C V O dd Y d (I o0) (p o0) Y.w0
+  obtain ⟨c0, cadd, cmul, cz, cb, cs, cadj⟩ := _root_.GlobalTheory.RowVal.EndCalc.end_calc C V d (I o0) (Fin dd) (Y.raw (p o0)) hX
   have aM : ∀ o g, IsEnd (Y.raw (p o0)) V (M o g) (M o (1 - g)) := by
     intro o g
     fin_cases g
@@ -482,7 +482,7 @@ theorem value_eq_prod : ∀ (C : Type) [Field C] [CharZero C] (V : VF C) (O : Ty
   intro C _ _ V O _ _ dd Y d _ Orb _ I _ p H Ls n hs P _ Po hQ kind hk S t ht gr hg
   classical
   have hg' : ∀ ρ o, gr o ρ ∈ ExpInt (Y.raw (p o)) V := fun ρ o => by
-    rw [← _root_.GlobalTheory.RowLaw.intGerm_eq_expInt C V d (I o) (Fin dd) (Y.raw (p o)) (GlobalTheory.T.isIntegralGaugedFormalGroupLaw_pairData C V O dd Y d (I o) (p o)) (H o).cartH (S o) (t o)
+    rw [← _root_.GlobalTheory.RowLaw.intGerm_eq_expInt C V d (I o) (Fin dd) (Y.raw (p o)) (_root_.GlobalTheory.RowLawPair.rLaw_pairData C V O dd Y d (I o) (p o)) (H o).cartH (S o) (t o)
       (ht o)]
     exact hg o ρ
   choose f hfi hf using fun ρ => one_row Y p hs (fun o => gr o ρ) (hg' ρ)
@@ -492,9 +492,9 @@ theorem value_eq_prod : ∀ (C : Type) [Field C] [CharZero C] (V : VF C) (O : Ty
   have hE : ∀ s : Fin n × Fin dd,
       constantCoeff (subst (genVec Y p fun w : WVO I => (s.1, w)) (un1 (Y.ex s.2))) = 0 :=
     fun s => by rw [cc_subst (cc_genVec Y p _), cc_ex]
-  have hj := GlobalTheory.T.constantCoeff_derivationPolynomial_eq_jetAt0 C dd n (Y.B.FK C) (Ls.ι n) (Ls.cp n) (Ls.uv n) (Fin n × WVO I) _ hE
+  have hj := _root_.GlobalTheory.DerivJet.constantCoeff_DpolyN_eq_jetAt0 C dd n (Y.B.FK C) (Ls.ι n) (Ls.cp n) (Ls.uv n) (Fin n × WVO I) _ hE
     (fun ℓ x => if x.1 = Ls.cp n ℓ then co ℓ x.2 else 0) P (fun ℓ hℓ G =>
-      GlobalTheory.T.invariantDerivations_constant_in_logCoordinates C V O dd Y n (Fin n × WVO I) (fun s => genVec Y p (fun w : WVO I => (s.1, w)) s.2)
+      _root_.GlobalTheory.InvDerivLog.subst_ex_DofN C V O dd Y n (Fin n × WVO I) (fun s => genVec Y p (fun w : WVO I => (s.1, w)) s.2)
         (fun s => cc_genVec Y p _ _) (Ls.cp n ℓ) (Ls.uv n ℓ) _
         (deriv_genVec Y p (Ls.cp n ℓ) (Ls.uv n ℓ) (co ℓ) (hco ℓ hℓ)) G)
   have e1 : (fun ℓ => ∑ x : Fin n × WVO I, MvPolynomial.C (if x.1 = Ls.cp n ℓ then co ℓ x.2 else 0) *

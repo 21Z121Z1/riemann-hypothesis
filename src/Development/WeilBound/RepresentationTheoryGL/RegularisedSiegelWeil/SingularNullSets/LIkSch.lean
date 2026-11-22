@@ -1,6 +1,6 @@
 import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.SingularNullSets.WeakApproximationFinitePlace
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CompactAverageSchwartzProjectionMemAdelicSchwartStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IkedaPartialFourierIntegralMemAdelicSchwartzStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CompactAverageSchwartzProjectionMemAdelicSchwart
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IkedaPartialFourierIntegralMemAdelicSchwartz
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.GoodMajorantLevelConjUnitaryAdelicMaximalCompact
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.MeanPair
@@ -40,9 +40,9 @@ namespace PositivityTheory.Rg.Rsw.L
 theorem ikSch : IkSch := by
   intro D n t B W d I θ hθ Φ hΦ
   have hK : IsCompact (I.l.K : Set (GA D B)) := LIkSch.isCompact_K d I.good
-  have h1 := GlobalTheory.T.compactAverageSchwartzProjection_mem_adelicSchwartz D θ hθ B n I.l.K hK I.νK I.probK Φ hΦ
+  have h1 := _root_.GlobalTheory.CompactAvgSchwartz.projS_mem D θ hθ B n I.l.K hK I.νK I.probK Φ hΦ
   refine ⟨h1, ?_⟩
   obtain ⟨𝓕, h𝓕⟩ := I.cov₁
-  exact GlobalTheory.T.ikedaPartialFourierIntegral_mem_adelicSchwartz D θ hθ B W t n d I.μ₁ 𝓕 h𝓕 _ h1
+  exact _root_.GlobalTheory.RegSch.IkSchwartz.ikS_mem_schwartzA D θ hθ B W t n d I.μ₁ 𝓕 h𝓕 _ h1
 
 end PositivityTheory.Rg.Rsw.L

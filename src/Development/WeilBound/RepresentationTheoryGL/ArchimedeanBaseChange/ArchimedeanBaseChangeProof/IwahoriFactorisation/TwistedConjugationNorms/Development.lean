@@ -9,10 +9,11 @@ import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.Archim
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.HilbertNinetyNorms.IwfLeOneOfPowMul
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.HilbertNinetyNorms.BlockEmbeddingSecondVal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactElementEigenvaluesUnitsStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwahoriAndMaximalCompactCriteriaStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwahoriAndMaximalCompactCriteria
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceConjugationPropertiesCmField
+import Development.AbelianVarietyTheory.Definitions.Divisors.GaloisRepOfPolarizedCuspidal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThLInvolutive
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsNormalisedThetaSub
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceConjugationPropertiesCmFieldStatement
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.HilbertNinetyNorms.InertDeltaFirstCaseEqPower
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.HilbertNinetyNorms.MaximalCurveCore
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.HilbertNinetyNorms.UnitaryHeckeOrbitSingleCoset
@@ -270,7 +271,7 @@ theorem thL_diag (w : Pl E) (hw : ¬ IsSplitAt w) (a : ℕ) {g : GLw a w} (hg : 
 
 theorem TO_le_iw (w : Pl E) (a : ℕ) {s : GLw a w} (hs : s ∈ TO a w) : s ∈ iwGL a w := by
   have hd : IsDiag s := hs.1
-  rw [(GlobalTheory.T.iwahori_and_maximal_compact_criteria E w a s).1]
+  rw [(_root_.GlobalTheory.CompanionTheory.IwEntries.iwGL_KGL_entries E w a s).1]
   refine ⟨fun i j => ?_, fun i j => ?_, fun i j hij => ?_⟩
   · by_cases h : i = j
     · subst h; exact (hs.2 i).le
@@ -292,7 +293,7 @@ theorem nrm_d (hU : Unr E) (w : Pl E) (hw : ¬ IsSplitAt w) (ϖ : (w.adicComplet
     IsDiag (tdiag ϖ y * τ * thL a w (tdiag ϖ y * τ)) ∧
       ∀ i, (tdiag ϖ y * τ * thL a w (tdiag ϖ y * τ)).val i i ≠ 0 ∧
         ordL ((tdiag ϖ y * τ * thL a w (tdiag ϖ y * τ)).val i i) = nv y i := by
-  have hv : ∀ x, Valued.v (cj w x) = Valued.v x := (GlobalTheory.T.placeConjugation_properties_cmField E hU w).2.2.1
+  have hv : ∀ x, Valued.v (cj w x) = Valued.v x := (_root_.GlobalTheory.ConjAtPlace.main E hU w).2.2.1
   obtain ⟨hd, hde⟩ := d_diag w ϖ a y hτ
   obtain ⟨hθ, hθe⟩ := thL_diag w hw a hd
   obtain ⟨hN, hNe⟩ := diag_mul hd hθ

@@ -66,7 +66,7 @@ theorem xi_det_eq_of_marked_isometry : ∀ {D : D7} {H : ReciprocityTheory.Chart
   have hG0 : X.Gm = -(HSpace.gram V)ᵀ := by
     rw [hW.1]
     simp
-  obtain ⟨r1, -, r3, -⟩ := GlobalTheory.T.rational_points_adelicUnitary_eq_unitary D V
+  obtain ⟨r1, -, r3, -⟩ := _root_.GlobalTheory.Member.RatElt.rational_elements D V
   obtain ⟨δ, hδ⟩ := r3 δ' (by rw [← hG0]; exact hδ1)
   have hLg : Set.range φL = latG V g := hr.trans (hL.trans (Set.image_id _))
   have hLg' : Set.range φL' = latG V g' := hr'.trans (hL'.trans (Set.image_id _))

@@ -54,7 +54,7 @@ theorem lsd_pos : ∀ (D : D7) (S : Finset (HeightOneSpectrum (𝓞 D.host.F))) 
       have e : Formalism.L2.Host.aboveF (L := D.host.E) D.host.F v.1 = {w, w'} := by ext u; simp [mem_aboveF, hall]
       have e2 : npow w' (-(s : ℂ)) = npow w (-(s : ℂ)) := by rw [npow, npow, hN, hN']
       have e3 : twist B (val μ)⁻¹ w' = (twist B (val μ)⁻¹ w).map star := by
-        have hm := GlobalTheory.T.quadraticPowerCharacter_splitPlaces_values_inverse _ _ _ hc μ 0 hb' w w' (hw.trans hw'.symm) hne (hun w hw) (hun w' hw')
+        have hm := _root_.GlobalTheory.LFun.SplitVal.val_mul_val_eq_one _ _ _ hc μ 0 hb' w w' (hw.trans hw'.symm) hne (hun w hw) (hun w' hw')
         have hs' : (val μ w')⁻¹ = star (val μ w)⁻¹ := by
           rw [star_inv, star_eq_inv (norm_val μ w), inv_inv, eq_comm, eq_inv_iff_mul_eq_one, hm]
         simp only [twist, Pi.inv_apply, hs', Multiset.map_map, Function.comp_def, star_mul',

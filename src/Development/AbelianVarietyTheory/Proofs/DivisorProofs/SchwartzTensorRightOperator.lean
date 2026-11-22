@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasTemperateGrowthElim
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClmSupBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PartialOperatorFderivFormulaStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PartialOperatorSchwartzSeminormBoundStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PartialOperatorSchwartzSeminormBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IteratedDerivativeBoundByPartials
 
 open GlobalTheory.SliceSchwartz
@@ -42,7 +42,7 @@ theorem decay_qOp (n : ℕ) : ∀ (P : SchwartzMap (κ' → V) ℂ →L[ℂ] Sch
   induction n with
   | zero =>
     intro P k
-    obtain ⟨s, C, hC, h⟩ := GlobalTheory.T.partial_operator_schwartz_seminorm_bound V κ κ' κ₁' P k
+    obtain ⟨s, C, hC, h⟩ := _root_.GlobalTheory.SliceOpDecay.decay V κ κ' κ₁' P k
     exact ⟨s, C, hC, fun f z => by rw [norm_iteratedFDeriv_zero]; exact h f z⟩
   | succ n ih =>
     intro P k

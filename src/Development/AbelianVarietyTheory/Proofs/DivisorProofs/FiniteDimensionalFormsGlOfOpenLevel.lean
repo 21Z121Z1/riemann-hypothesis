@@ -9,9 +9,9 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteDimensi
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CommuteCapOfCommuteEop
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CapCommuteRtInfGL
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOfIsOpenStab
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermAutomorphicFormIntegralStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermIntegralLeftInvariantStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermModerateGrowthStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermAutomorphicFormIntegral
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermIntegralLeftInvariant
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermModerateGrowth
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarishChandraCapelliUniformDiagonalBlocks
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalSlowlyIncreasingKilledCapelliPo
 
@@ -106,11 +106,11 @@ theorem exists_constTerm {L : Subgroup (GL (Fin a) (Af E))} (hL : IsOpen (L : Se
     · exact (LinearMap.congr_fun (lie_rt_fin X k) x.1).symm.trans (congrArg (lie E a X) (hx.2.1 k hk))
     · change lieD X x.2.1 g = _
       rw [funext hx.2.2]
-      exact (GlobalTheory.T.constant_term_automorphic_form_integral E a r μ 𝓕 hμ h𝓕 h1 x.1 hx.1 (isOpen_stab hL hx.2.1)).2 X g
-  refine ⟨⟨_, (GlobalTheory.T.constant_term_automorphic_form_integral E a r μ 𝓕 hμ h𝓕 h1 φ hl (isOpen_stab hL hf)).1⟩, fun _ => rfl, fun τ u P hP => ?_⟩
+      exact (_root_.GlobalTheory.ConstTermSmooth.constTerm_mem_Sm E a r μ 𝓕 hμ h𝓕 h1 x.1 hx.1 (isOpen_stab hL hx.2.1)).2 X g
+  refine ⟨⟨_, (_root_.GlobalTheory.ConstTermSmooth.constTerm_mem_Sm E a r μ 𝓕 hμ h𝓕 h1 φ hl (isOpen_stab hL hf)).1⟩, fun _ => rfl, fun τ u P hP => ?_⟩
   have h := rel_aeval_qdet Γ (Eop τ) (Eop τ)
     (fun i j x hx => Γ.smul_mem (1 / 2 : ℂ) (Γ.sub_mem (hlie _ x hx) (Γ.smul_mem Complex.I (hlie _ x hx)))) u P
-    (φ, ⟨_, (GlobalTheory.T.constant_term_automorphic_form_integral E a r μ 𝓕 hμ h𝓕 h1 φ hl (isOpen_stab hL hf)).1⟩) ⟨hl, hf, fun _ => rfl⟩
+    (φ, ⟨_, (_root_.GlobalTheory.ConstTermSmooth.constTerm_mem_Sm E a r μ 𝓕 hμ h𝓕 h1 φ hl (isOpen_stab hL hf)).1⟩) ⟨hl, hf, fun _ => rfl⟩
   refine Subtype.ext (funext fun g => (h.2.2 g).trans ?_)
   simp only [hP]
   exact integral_zero _ _
@@ -224,7 +224,7 @@ theorem exists_translated {L : Subgroup (GL (Fin a) (Af E))} (hL : IsOpen (L : S
   have hψ : ∀ g, ψ.1 g = c.1 (g * (finGL E a t * infGL E a (Unitary.toUnits κ))) := fun _ => rfl
   refine ⟨ψ, fun g => by rw [hψ, hc, mul_assoc g], fun γ g => ?_, fun k hk => ?_, fun g => ?_, ?_, hq ψ ?_ ?_⟩
   · rw [hψ, hψ, hc, hc, mul_assoc]
-    exact GlobalTheory.T.constant_term_integral_left_invariant E a r hr μ 𝓕 hμ h𝓕 h1 φ.1 hl γ _
+    exact _root_.GlobalTheory.LeviConstTerm.constTerm_levi_invariant E a r hr μ 𝓕 hμ h𝓕 h1 φ.1 hl γ _
   · refine Subtype.ext (funext fun g => ?_)
     have hk' : t⁻¹ * k * t⁻¹⁻¹ ∈ L := hk
     have e : g * finGL E a k * (finGL E a t * infGL E a (Unitary.toUnits κ)) =
@@ -250,7 +250,7 @@ theorem exists_translated {L : Subgroup (GL (Fin a) (Af E))} (hL : IsOpen (L : S
     rfl
   · have g1 : c.1 ∈ growth E a := fun g => by
       simp only [hc]
-      exact GlobalTheory.T.constant_term_moderate_growth E a r μ 𝓕 hμ h𝓕 h1 φ hl (isOpen_stab hL hf) hg g
+      exact _root_.GlobalTheory.ConstTermGrowth.norm_constTerm_le E a r μ 𝓕 hμ h𝓕 h1 φ hl (isOpen_stab hL hf) hg g
     have g2 := SmoothFinite.growth_cptRep g1 κ
     intro g
     obtain ⟨C, n, h⟩ := g2 (g * finGL E a t)

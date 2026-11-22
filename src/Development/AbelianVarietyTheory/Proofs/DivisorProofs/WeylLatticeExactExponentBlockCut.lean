@@ -5,10 +5,10 @@ import Formalism.PieriBlockIdeals.PieriColumnMinors.ProdInitialMinorsMemDetSpan
 import Formalism.PieriBlockIdeals.PieriColumnMinors.HighestWeightMemWZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NablaSchur
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankOneProjectorWeightZeroInvariance
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankTwoConsecutiveProjectorInvarianceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankTwoConsecutiveProjectorInvariance
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GridInvarianceOfRankOneTwoStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdjointActionEndomorphismWeightBound
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjectorValueHighestWeightVectorStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjectorValueHighestWeightVector
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjectorGridScalarOfProjectorScalar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjectorGridDenominatorBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BetaIntegralDenominatorBound
@@ -152,7 +152,7 @@ theorem ExCut₂ (hG : GridInv) (hA : AdjBdd) (hS : GridScalar) (hI : GridInt) (
     ring
 
 theorem exCut : Formalism.CohomologicalDescent.E.ExCut :=
-  ExCut₂ (GlobalTheory.T.grid_invariance_of_rank_one_two _root_.GlobalTheory.LeviCut.rankOne GlobalTheory.T.rank_two_consecutive_projector_invariance) _root_.GlobalTheory.LeviCut.adjBdd_holds (_root_.GlobalTheory.LeviCut.gridScalar_of_stepScalar GlobalTheory.T.projector_value_highest_weight_vector) _root_.GlobalTheory.LeviCut.gridInt_holds
+  ExCut₂ (GlobalTheory.T.grid_invariance_of_rank_one_two _root_.GlobalTheory.LeviCut.rankOne _root_.GlobalTheory.LeviCut.RankTwoProof.rankTwo) _root_.GlobalTheory.LeviCut.adjBdd_holds (_root_.GlobalTheory.LeviCut.gridScalar_of_stepScalar _root_.GlobalTheory.LeviCut.StepScalarProof.stepScalar) _root_.GlobalTheory.LeviCut.gridInt_holds
     _root_.GlobalTheory.LeviCut.nablaGl _root_.GlobalTheory.LeviCut.nablaBdd _root_.GlobalTheory.LeviCut.nablaSchur
     (_root_.GlobalTheory.LeviCut.leviProj_of (_root_.GlobalTheory.LeviCut.resLat_of_substMem _root_.GlobalTheory.LeviCut.substMem) _root_.GlobalTheory.LeviCut.resHw_holds _root_.GlobalTheory.LeviCut.dualWeyl_resDer) _root_.GlobalTheory.LeviCut.betaDen
 

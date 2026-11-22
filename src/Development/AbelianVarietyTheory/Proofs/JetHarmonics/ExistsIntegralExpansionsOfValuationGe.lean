@@ -13,7 +13,10 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRin
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IsExtensionPullOver
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsRepresentativesModNsmul
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.FamEqOnClassOfEq
-import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IntegralDegenerationFamilyBaseChangeExtensionFieStatement
+import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IntegralDegenerationFamilyBaseChangeExtensionFie
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.ValuationMultiplicationInvariance
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBCPf
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.DivCalc
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsDivOfExpandsAt
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IntegralFamilyOfStrictMin
 
@@ -148,7 +151,7 @@ theorem exists_integral_expansions_of_vge : Laws → ∀ (V : Type) [CommRing V]
   choose Φ f hf hfβ hf0 using fun p : (Σ i : Fin N, Fin (n i)) =>
     IntComb.integralFamily_of_min hL hϖ hQ hq (χ p.1) (β p.1 p.2) (hmin p.1)
   choose σ hσ using fun p => IntegralExpansion.main hL V D A G U q hq (Φ p) (f p) (hf p)
-  choose θ hθ using fun p => GlobalTheory.T.integralDegenerationFamily_baseChange_extensionField hL.globalFns V _ D q (Φ p) (f p) (hf p) F
+  choose θ hθ using fun p => _root_.GlobalTheory.FamBaseChange.main hL.globalFns V _ D q (Φ p) (f p) (hf p) F
   let E := (Fintype.equivFin (Σ i : Fin N, Fin (n i))).symm
   have hst : s = ∑ x, a (E x).1 (E x).2 • θ (E x) := by
     refine fam_ext fun α => ?_

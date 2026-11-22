@@ -5,13 +5,13 @@ import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LeviNormalizesUnipote
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ArchimedeanIwasawaMinimalParabolic
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ContinuousConjBlockEmbedding
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.RationalUnipotentLeParabolic
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsotropicFrameRankLeWittIndexStatement
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsotropicFrameWittBoundStatement
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsotropicFrameRankLeWittIndex
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsotropicFrameWittBound
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.RestrictedCuspConstantTermVanish
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.RestrictedConstantTermCompatible
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LeviInfUnipotentLeHermitianPart
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.RestrictedAutomorphicInvariance
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.HermitianFormChangeOfBasisLieStatement
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.HermitianFormChangeOfBasisLie
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsContinuousAdelicUnitaryEmbedding
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstAlongCocompactUniqueStages
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuotientMeasureProductGroups
@@ -68,8 +68,8 @@ theorem isCuspFun_slice : ∀ (D : D7) (θ : D.what₂.Tau → (Ainf D.host.F �
       GlobalTheory.CompanionTheory.Hypotheses₂.LeviPart.UCore.uPart_le_levi D V m X Y T (hup γ)⟩
     change ψ (s (γ * g) * y) = ψ (s g * y)
     rw [map_mul, mul_assoc, hψl _ h1]
-  obtain ⟨m', e, X', Y', hsl, hW'⟩ := GlobalTheory.T.orthogonal_subspace_witt_frame_extension D V m X Y hW T V' ι hι hr
-  refine _root_.GlobalTheory.CompanionTheory.Hypotheses₂.LeviPart.UCore.CuspOfFrame.isCuspFun_of_isConstAlong D V' m' X' Y' hW' (GlobalTheory.T.isotropic_frame_rank_le_witt_index D V' m' X' Y' hW') _ hfl fun k => ?_
+  obtain ⟨m', e, X', Y', hsl, hW'⟩ := _root_.GlobalTheory.CompanionTheory.Hypotheses₂.LeviPart.UCore.Slice.exists_sliceFrame D V m X Y hW T V' ι hι hr
+  refine _root_.GlobalTheory.CompanionTheory.Hypotheses₂.LeviPart.UCore.CuspOfFrame.isCuspFun_of_isConstAlong D V' m' X' Y' hW' (_root_.GlobalTheory.CompanionTheory.IsoFrameBound.isoFrame_le_wittFrame D V' m' X' Y' hW') _ hfl fun k => ?_
   have hκ : e k ∉ upTo T := (hsl.2.1 _).2 ⟨k, rfl⟩
   have hκT : e k ∉ T := fun h => hκ ⟨_, h, le_rfl⟩
   have hTT' : T ⊂ insert (e k) T := Finset.ssubset_insert hκT
@@ -89,7 +89,7 @@ theorem isCuspFun_slice : ∀ (D : D7) (θ : D.what₂.Tau → (Ainf D.host.F �
   have hnorm : ∀ p ∈ unip D.sp.cm.sig V.gram X (insert (e k) T), ∀ a ∈ unip D.sp.cm.sig V.gram X T,
       p * a * p⁻¹ ∈ unip D.sp.cm.sig V.gram X T := fun p hp a ha =>
     conj_mem_unip_of_subset hcm hJ hW hTT'.1 hp ha
-  obtain ⟨π, hπc, hπ, hπQ⟩ := GlobalTheory.T.restricted_automorphic_invariance D V m X Y hW T V' ι hι hr s hs _ _ hnorm hdec
+  obtain ⟨π, hπc, hπ, hπQ⟩ := _root_.GlobalTheory.CompanionTheory.Hypotheses₂.LeviPart.UCore.Slice.Proj.exists_proj D V m X Y hW T V' ι hι hr s hs _ _ hnorm hdec
   let s₁ : unip D.sp.cm.sig V'.gram X' {k} →* unip D.sp.cm.sig V.gram X (insert (e k) T) :=
     (s.comp (unip D.sp.cm.sig V'.gram X' {k}).subtype).codRestrict _ fun u => hs1 _ u.2
   have hs₁c : Continuous s₁ := (hsc.comp continuous_subtype_val).subtype_mk _

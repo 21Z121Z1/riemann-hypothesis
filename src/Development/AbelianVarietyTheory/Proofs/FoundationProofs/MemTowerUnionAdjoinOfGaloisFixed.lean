@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsDiscreteValuat
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemAdjoinDivOfFixed
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLevelOfMemAdjoin
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TowerEmbeddingInjective
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemTowerUnionAdjoinIntegralClosureIffStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemTowerUnionAdjoinIntegralClosureIff
 
 noncomputable section
 
@@ -55,7 +55,7 @@ theorem GlobalTheory.K5.mem_towerAlg_of_fixed :
   haveI := h.clo
   haveI := h.alg
   haveI : CharZero Ω := GlobalTheory.K5.Basic.charZero_of_isClo h
-  rw [GlobalTheory.T.mem_towerUnionAdjoinIntegralClosure_iff p Ω T x]
+  rw [_root_.GlobalTheory.towerAlg_mem_iff p Ω T x]
   set B := Algebra.adjoin (O0 p) (Set.range T.ζ ∪ Set.range T.qq)
   obtain ⟨b, hb, c, hc, hc0, hbc⟩ := GlobalTheory.mem_adjoin_div_of_fixed (O0 p) Ω h.inj
     (Set.range T.ζ ∪ Set.range T.qq) (x : Ω) (fun g hg => hx g (by

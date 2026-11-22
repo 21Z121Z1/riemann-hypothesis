@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CuspFormBoundG
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SupSetFinitelyGenerated
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsIntegralAdjoinOfForallCdvrStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CuspFormIntegralValuesEqualCharacteristic
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIntegralFlagChartEnlargeContainingValueStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIntegralFlagChartEnlargeContainingValue
 
 open AlgebraicGeometry CategoryTheory NumberField IsDedekindDomain
 open ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.FD Formalism.L2.Pj
@@ -56,7 +56,7 @@ theorem exists_cover_noPole : ∀ (E : Type) [Field E] [NumberField E] [IsCMFiel
     change evR Xo c f z ∈ _ at h1
     rw [e1] at h1
     exact h1
-  choose P' hP'1 hP'2 using fun j => GlobalTheory.T.exists_integralFlagChart_enlarge_containing_value E H Dw l Xo c (la.valuation c.F).valuationSubring f (P j) (hmem j) (hint j)
+  choose P' hP'1 hP'2 using fun j => _root_.GlobalTheory.Reg.Enlarge.enlarge_exists E H Dw l Xo c (la.valuation c.F).valuationSubring f (P j) (hmem j) (hint j)
   refine ⟨J, hJ, P', fun L _ _ W hW y => ?_, hP'1⟩
   obtain ⟨j, hj⟩ := hC L W hW y
   exact ⟨j, hP'2 j L W hW y hj⟩

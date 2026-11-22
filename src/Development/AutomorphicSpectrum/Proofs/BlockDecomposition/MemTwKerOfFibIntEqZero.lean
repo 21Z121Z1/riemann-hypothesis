@@ -1,12 +1,12 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsUMOfMem
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemTwKerIffAverage
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnipotentTopMemParabolicStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviBlockMemParabolicStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnipotentTopMemParabolic
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviBlockMemParabolic
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicUnipotentLeviDecomp
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MulVecMidBlockDecompStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MulVecMidBlockDecomp
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousLeviUnipotentProj
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothIntegralLinearChangeStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothIntegralLinearChange
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwasawaDecompParabolicMaximalCompact
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SumOverCompactCosetsJacquetKernel
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsInducedSectionSupportedOpen
@@ -15,17 +15,17 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsCompactCosetS
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EqZeroOfEigOfMemTwKer
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothTopRepresentation
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothFibreActionStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsLatticePeriodicityStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsLatticePeriodicity
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocallyConstantCosetIndicatorSum
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralCosetIndicatorSum
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HaarMeasureCosetNeZero
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetFunctionTranslateJacquetKernelStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetFunctionTranslateJacquetKernel
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetFunctionJacquetKernelStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClosureKernelMemJacquetKernel
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteJacquetKernelCommonLattice
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetKernelLatticeConjCompact
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FibreFunctionUnipotentActionStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteFibreFunctionsCompactStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FibreFunctionUnipotentAction
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteFibreFunctionsCompact
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InducedVanishingOnCompact
 
 noncomputable section
@@ -123,7 +123,7 @@ theorem mem_twKer_fibAct (i t : ℕ) {Z : Type} [AddCommGroup Z] [Module ℂ Z]
     [MeasurableSpace (Fin t → k)] [BorelSpace (Fin t → k)] (μ : MeasureTheory.Measure (Fin t → k)) [μ.IsAddHaarMeasure]
     (φ : fibM (Fin t → k) Z) (h : smInt μ φ.1 ∈ twKer ρ₀ ⊤ 1) : φ ∈ twKer (fibAct t ρ₀) ⊤ 1 := by
   classical
-  obtain ⟨c, hc, hinv⟩ := GlobalTheory.T.exists_lattice_periodicity k t φ.1 φ.2.1 φ.2.2
+  obtain ⟨c, hc, hinv⟩ := _root_.GlobalTheory.CompanionTheory.BZPsiPG.FibKer.LatInv.exists_Lc_invariant k t φ.1 φ.2.1 φ.2.2
   obtain ⟨A, hA⟩ := _root_.GlobalTheory.CompanionTheory.BZPsiPG.FibKer.eq_sum_coset_indicators k t φ.1 c hc φ.2.2 hinv
   have hφ : φ.1 = fun v => ∑ a ∈ A, (cosetSet t c a).indicator (fun _ => φ.1 a) v := funext hA
   have hsum : φ = ∑ a ∈ A, cosetFn t hc a (φ.1 a) := by
@@ -148,7 +148,7 @@ theorem mem_twKer_fibAct (i t : ℕ) {Z : Type} [AddCommGroup Z] [Module ℂ Z]
     have e : φ - cosetFn t hc 0 (∑ a ∈ A, φ.1 a) = ∑ a ∈ A, (cosetFn t hc a (φ.1 a) - cosetFn t hc 0 (φ.1 a)) := by
       rw [h0, Finset.sum_sub_distrib, ← hsum]
     rw [e]
-    exact Submodule.sum_mem _ fun a _ => GlobalTheory.T.coset_function_translate_jacquet_kernel k i t ρ₀ c hc a _
+    exact Submodule.sum_mem _ fun a _ => _root_.GlobalTheory.CompanionTheory.BZPsiPG.FibKer.cosetFn_sub_cosetFn_zero_mem_twKer k i t ρ₀ c hc a _
   have := (twKer (fibAct t ρ₀) ⊤ 1).add_mem hd (GlobalTheory.T.coset_function_jacquet_kernel k i t ρ₀ c hc _ hz)
   simpa using this
 
@@ -185,14 +185,14 @@ theorem GlobalTheory.CompanionTheory.BZPsiPG.FibKer.mem_twKer_of_fibInt_eq_zero 
   have hfin : ((fun κ => fibLin τ σ hτ hσ κ f) '' (GlobalTheory.SplitWeil.KO k (Fin (i + t)) : Set (GL (Fin (i + t)) k))).Finite := by
     refine Set.Finite.of_finite_image (f := Subtype.val) ?_ Subtype.val_injective.injOn
     rw [Set.image_image]
-    exact GlobalTheory.T.finite_fibre_functions_compact k i t τ σ f
+    exact _root_.GlobalTheory.CompanionTheory.BZPsiPG.FibFin.finite_fibV_image k i t τ σ f
   have hF : ∀ κ ∈ (GlobalTheory.SplitWeil.KO k (Fin (i + t)) : Set (GL (Fin (i + t)) k)), ∀ y x,
       fibLin τ σ hτ hσ κ (MonoidHom.comp (prodPG τ σ) (uMh k (i + t)) y x) =
         fibAct t (topRep τ W) (mulH κ y) (fibLin τ σ hτ hσ κ x) := by
     intro κ _ y x
     apply Subtype.ext
     funext v
-    exact GlobalTheory.T.fibre_function_unipotent_action k i t τ σ x y.toAdd κ v
+    exact _root_.GlobalTheory.CompanionTheory.BZPsiPG.FibKer.FibU.fibV_uM k i t τ σ x y.toAdd κ v
   have hinj : ∀ x, (∀ κ ∈ (GlobalTheory.SplitWeil.KO k (Fin (i + t)) : Set (GL (Fin (i + t)) k)), fibLin τ σ hτ hσ κ x = 0) → x = 0 := by
     intro x hx
     exact _root_.GlobalTheory.CompanionTheory.BZPsiPG.FibKer.eq_zero_of_fibV_eq_zero k i t τ σ x fun κ hκ => congrArg Subtype.val (hx κ hκ)

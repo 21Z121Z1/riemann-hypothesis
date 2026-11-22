@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryGroupContinuousCharEqDetZpowStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryGroupContinuousCharEqDetZpow
 open Matrix
 open scoped ComplexOrder
 
@@ -44,7 +44,7 @@ theorem char_unitary {p : ℕ} (f : Matrix.unitaryGroup (Fin p) ℂ → ℂ)
       map_one' := Circle.ext hone
       map_mul' := fun a b => Circle.ext (hmul a b) }
   have hcont : Continuous c := Continuous.subtype_mk hc hmem
-  obtain ⟨m, hm⟩ := GlobalTheory.T.unitaryGroup_continuous_char_eq_det_zpow p c hcont
+  obtain ⟨m, hm⟩ := _root_.GlobalTheory.UnitaryChar.char_eq_det_zpow p c hcont
   exact ⟨m, fun a => hm a⟩
 
 private theorem matrix_eq_zero_of_eq_neg {ι κ : Type} (X : Matrix ι κ ℂ) (h : X = -X) : X = 0 := by

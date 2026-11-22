@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.L2UnitaryRepresentationData
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CoverHaarPushforwardSignatureUnitaryGroup
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockModelJointHarmonicsFormNormalisationUniqueneStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockModelJointHarmonicsFormNormalisationUniquene
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.NotTrivialAndTwist
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockDerivedActionsTensorMembers
 
@@ -57,7 +57,7 @@ theorem zetaLaw_of_cover : ∀ (D : D7) (V : HSp D) (S : D.what₂.Tau → SPar)
   obtain ⟨hK, hC1, hC2⟩ := hC
   obtain ⟨-, hA2⟩ := hA
   obtain ⟨c', hc', hJHW⟩ :=
-    (GlobalTheory.T.fockModel_jointHarmonics_form_normalisation_uniqueness X p q r s (blattner lam) (blattner lam')).2.1 (κ Φ) (hJ Φ hΦ)
+    (_root_.GlobalTheory.ArchRec.Joint.joint_harmonics X p q r s (blattner lam) (blattner lam')).2.1 (κ Φ) (hJ Φ hΦ)
   obtain ⟨hIntC, hEqC, hPosC, hCpt⟩ := hA2 _ (u v) hJHW huv
 
   have hFc : ∀ x, Continuous fun g : (X.grp p q).G => (X.fock p q r s).π (g, 1) x := by

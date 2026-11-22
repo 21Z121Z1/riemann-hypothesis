@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.PreimageEqTo
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsProperAndGeometricallyConnectedOfIsNilpotent
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsGroupQuotientPullback
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsTorusQuotientSchemeOverNilpotentThickening
-import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.LocallyTrivialTorusQuotientFlatSurjectiveCosetsStatement
+import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.LocallyTrivialTorusQuotientFlatSurjectiveCosets
 
 open CategoryTheory CategoryTheory.Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -146,7 +146,7 @@ theorem main : (∀ (A : Type) [CommRing A] [IsLocalRing A] (J : Ideal A), IsNil
   intro A _ _ J hJ X _ _ _ G _ _ _ G₀ _ F h Q₀
   obtain ⟨i, hi, hc⟩ := exists_torus A J hJ X G G₀ F h Q₀
   obtain ⟨B, q, j, hjpb, -, haff, hloc⟩ := _root_.GlobalTheory.TorusQuotientLift.exists_quotient_scheme A J hJ X G G₀ F h Q₀ i hi hc
-  obtain ⟨hmono, hflat, hsurj, hsmooth, hcoset⟩ := GlobalTheory.T.locallyTrivial_torusQuotient_flat_surjective_cosets _ X G B i q hi haff hloc
+  obtain ⟨hmono, hflat, hsurj, hsmooth, hcoset⟩ := _root_.GlobalTheory.LocTriv.main _ X G B i q hi haff hloc
   have : IsAffineHom q.left := haff
   obtain ⟨grpB, hcommB, hq, hker⟩ := GlobalTheory.grpObj_of_flat_coset_quotient _ G (splitTorus _ X) B i q
     hi hmono hflat hsurj inferInstance hcoset

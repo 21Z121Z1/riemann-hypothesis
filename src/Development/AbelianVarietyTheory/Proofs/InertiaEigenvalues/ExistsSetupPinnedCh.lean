@@ -69,7 +69,7 @@ theorem exists_setup_ch (Rl : RealDat3 D A3 Ks) (cG : G0 Rl.Pg D.R.r ≃* G0g D.
     twistOf rc (f i b) (ch i) (D.ntw.pD i) (Formalism.MainNotions.BlochKatoReduction.Gen.psiAt b (D.ntw.delta i))
   have hde : ∀ i b, (de i b).Good := fun i b => _root_.GlobalTheory.DeltaGood.twistOf_delta_good D rc hrc i (ch i) (hch1 i) (f i b) (hfi i b) b
   have hpl : ∀ i b, PlacesOK Rl.Pg (de i b).Q := fun i _ =>
-    GlobalTheory.T.typePlaces_twistPlaces_goodPosition D Γ Pl0 I0 T A3 Ks Rl A3.A.μ0 hC.lev hspl hq i (ch i) (hch1 i)
+    _root_.GlobalTheory.SeriesTie.PlacesGood.placesOK D Γ Pl0 I0 T A3 Ks Rl A3.A.μ0 hC.lev hspl hq i (ch i) (hch1 i)
   have hB := fun i j b => _root_.GlobalTheory.SeriesTie.BaseGood.base_good D Γ Pl0 I0 T A3 Ks Rl F3 hC j (F j) (hF j) (de i b) (hde i b) (hpl i b)
   choose w mu hwp hwm hBg using hB
   let P : D.ntw.Tw → ∀ j : Fin D.R.m, Bool → LevelP Rl.Pg (Wc D j).rank ℂ := fun i j b =>
@@ -83,7 +83,7 @@ theorem exists_setup_ch (Rl : RealDat3 D A3 Ks) (cG : G0 Rl.Pg D.R.r ≃* G0g D.
     intro i j b χ
     by_cases h : ∃ t : Twist D Circle, t.Good ∧ t.chi = χ
     · obtain ⟨t, ht, rfl⟩ := h
-      obtain ⟨ω, hω⟩ := GlobalTheory.T.exists_weilRep_good_twist D _ _ (B i j b) hW (hBG i j b) (hFstd j) t ht
+      obtain ⟨ω, hω⟩ := _root_.GlobalTheory.WeilTwistExists.exists_isWeil D _ _ (B i j b) hW (hBG i j b) (hFstd j) t ht
       exact ⟨ω, fun _ _ _ => hω⟩
     · exact ⟨1, fun t ht h' => absurd ⟨t, ht, h'⟩ h⟩
   choose om hom using hom

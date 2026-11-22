@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasCompactSupportSu
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormLinearCombination
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmMemArchSmooth
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieDerivativeConvolutionKernel
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ModerateGrowthConvolutionIntegralStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ModerateGrowthConvolutionIntegral
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.L2ConvolutionLocallyCompactMemStatement
 
 open NumberField MeasureTheory Topology Matrix GlobalTheory.AutomorphicL2Unitary GlobalTheory.DiscreteSum GlobalTheory.OpTrace GlobalTheory.UnitaryBC GlobalTheory.DiscSpec GlobalTheory.CuspRep GlobalTheory.CuspRep.CuspidalL2GL
@@ -158,7 +158,7 @@ theorem exists_stable (E : Type) [Field E] [NumberField E] [IsTotallyComplex E] 
       (AutomorphicForm.infEmb E a) AutomorphicForm.continuous_infEmb D hD hDc φ.1 (lie E a X φ).1 hc h3 hrep
     refine ⟨⟨⟨fun γ g => lieD_left X (h1.1.left γ) g, ?_, GlobalTheory.T.finiteDimensional_span_compact_orbit_lieDerivative E a X φ h1.1.kfin,
       GlobalTheory.CuspStab.zfin_of_comm _ (fun z hz => _root_.GlobalTheory.CuspRep.Zalg_mul_lie E a X z hz) h1.1.zfin,
-      GlobalTheory.T.moderate_growth_convolution_integral E a _ φ.1 _ hc h1.1.growth D hD hDc hrep⟩, GlobalTheory.T.isCuspidal_lieAction_of_isCuspForm E a X φ h1⟩,
+      _root_.GlobalTheory.CompanionTheory.GrowthConv.growth_conv E a _ φ.1 _ hc h1.1.growth D hD hDc hrep⟩, _root_.GlobalTheory.CuspRep.isCuspidal_lie_of_isCuspForm E a X φ h1⟩,
       fun t g => lieD_left X (h2 t) g, h', hW H hS h4⟩
     exact GlobalTheory.CuspStab.level_of_le h1.1.level fun k hk => by
       change finRep E a k (lie E a X φ) = lie E a X φ

@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.IsRatioOfWeight
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GeometricallyConnectedOfIsIsoRestrict
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CountGrowthExponentialRadii
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankFunctionFieldQuotientSubfieldEqDegree
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithHilbertSamuelLowerBoundCountRankAmpleStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithHilbertSamuelLowerBoundCountRankAmple
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithHilbertSamuelUpperBoundCountRankAmple
 
 set_option autoImplicit false
@@ -18,7 +18,7 @@ theorem lc_exp_bounds : GlobalTheory.Published.ArCalc → ∀ (k : Type) [CommRi
   intro hA k _ X _ p D hp P hL e x hx κ t hκ hκ1 ht h1 h2 ε hε
   have hdeg := _root_.GlobalTheory.HSAmp.finrank_ratF_eq_gdeg hA k X p D hp P hL e x hx
   have hup := _root_.GlobalTheory.HSAmp.HSUpper.upper_bound k X p D hp P hL e x hx
-  have hlo := GlobalTheory.T.arithHilbertSamuel_lowerBound_count_rank_ample k X p D hp P hL e x hx
+  have hlo := _root_.GlobalTheory.HSAmp.FLower.count_rank_lower k X p D hp P hL e x hx
   have he : (0 : ℝ) < e := by exact_mod_cast hx.pos
   have hfin : ∀ (m : ℕ) (R : ℝ), 0 ≤ R → (P.Bl m 1 R).Finite := by
     intro m R hR

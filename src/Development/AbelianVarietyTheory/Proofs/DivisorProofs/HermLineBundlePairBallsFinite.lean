@@ -6,11 +6,11 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EqOfIsomet
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsAlgClosedBaseChange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermLineBundlePairSectionsMulMemNormMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermPairPowSectionMemAndNormPow
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepresentsBaseBundlesAndTrivialStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermPairWithSectionsRepresentsTensorStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepresentsBaseBundlesAndTrivial
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermPairWithSectionsRepresentsTensor
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepresentsHermitianLineBundlePow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepresentsHermitianLineBundleDual
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmallSectionsTwistedPowerEncardEqBallStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmallSectionsTwistedPowerEncardEqBall
 
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -25,7 +25,7 @@ namespace GlobalTheory.VolBr.BallFinite
 variable {k : Type} [CommRing k] {X : Scheme.{0}} [IsIntegral X] {p : X ⟶ Sp k}
 
 theorem exists_rep (P : Pair p) (a c : ℤ) : ∃ M : HermLB p, P.Rep a c M := by
-  obtain ⟨hL, hA, -⟩ := GlobalTheory.T.represents_base_bundles_and_trivial k X p P
+  obtain ⟨hL, hA, -⟩ := _root_.GlobalTheory.VolBr.Pair.rep_base k X p P
   have h1 : ∃ M : HermLB p, P.Rep a 0 M := by
     obtain ⟨n, rfl | rfl⟩ := Int.eq_nat_or_neg a
     · have := _root_.GlobalTheory.VolBr.Pair.rep_pow k X p P 1 0 P.L n hL
@@ -44,7 +44,7 @@ theorem exists_rep (P : Pair p) (a c : ℤ) : ∃ M : HermLB p, P.Rep a c M := b
       exact ⟨_, this⟩
   obtain ⟨M₁, h₁⟩ := h1
   obtain ⟨M₂, h₂⟩ := h2
-  have := GlobalTheory.T.hermPairWithSections_represents_tensor k X p P _ _ _ _ M₁ M₂ h₁ h₂
+  have := _root_.GlobalTheory.VolBr.Pair.rep_tens k X p P _ _ _ _ M₁ M₂ h₁ h₂
   rw [add_zero, zero_add] at this
   exact ⟨_, this⟩
 
@@ -68,13 +68,13 @@ theorem bl_finite : GlobalTheory.Published.ArithHilbertSamuel → ∀ (k : Type)
   obtain ⟨Φ, hΦ⟩ := ((hC.arExists k X p D hX).2 Unit (fun _ => P.A)).1
   have hSI := ((hC.arIso k X p D hX).2 Unit (fun _ => P.A) Φ hΦ).1 ()
   obtain ⟨m, hm⟩ := ((hHS k X p D hX P.A (M.shift (fun _ => R) fun _ => rfl) _ hG.nef hSI).1).exists
-  have hA := (GlobalTheory.T.represents_base_bundles_and_trivial k X p P).2.1
+  have hA := (_root_.GlobalTheory.VolBr.Pair.rep_base k X p P).2.1
   have hAm := _root_.GlobalTheory.VolBr.Pair.rep_pow k X p P 0 1 P.A m hA
-  have hT := GlobalTheory.T.hermPairWithSections_represents_tensor k X p P _ _ _ _ _ _ hAm hM
+  have hT := _root_.GlobalTheory.VolBr.Pair.rep_tens k X p P _ _ _ _ _ _ hAm hM
   have hsm : (((P.A.pow m).tens M).shift (fun _ => R) fun _ => rfl).smallSec.Finite :=
     hm.subset (smallSec_tens_shift _ _ _)
   have hB : (P.Bl (m * 0 + a) (m * 1 + c) (Real.exp R)).Finite := by
-    have e := (GlobalTheory.T.smallSections_twistedPower_encard_eq_ball k X p P _ _ _ hT R 0).2.2
+    have e := (_root_.GlobalTheory.VolBr.SmallBall.main k X p P _ _ _ hT R 0).2.2
     rw [← Set.encard_lt_top_iff, ← e]
     exact hsm.encard_lt_top
   have hs := hG.s_mem

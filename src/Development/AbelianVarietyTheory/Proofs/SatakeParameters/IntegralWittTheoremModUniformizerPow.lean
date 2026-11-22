@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SelfDualOne
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LatticeModelVacuumTranslateClassesIndependent
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DvdPowZeroIff
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IntegralWittUnitaryModUniformizerStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IntegralWittUnitaryModUniformizer
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.UnitaryGroupHenselStepFamilies
 
 noncomputable section
@@ -121,7 +121,7 @@ theorem witt_mod_pow : ∀ (L : Type) [Field L] [Valued L (WithZero (Multiplicat
     intro k hk
     induction k, hk using Nat.le_induction with
     | base =>
-      obtain ⟨h, hh, hc⟩ := GlobalTheory.T.integral_witt_unitary_mod_uniformizer L ϖ σ q hU hq n' JT hJT hJh ι z z' hz hz' hiz hiz'
+      obtain ⟨h, hh, hc⟩ := _root_.GlobalTheory.Hk3.IntWittBase.witt_mod_base L ϖ σ q hU hq n' JT hJT hJh ι z z' hz hz' hiz hiz'
         (fun i j => dvdPow_mono hϖ (le_min (ha i) (ha j)) (hG i j))
       refine ⟨h, hh, fun i r => ?_⟩
       rw [min_eq_right (ha i)]; exact hc i r

@@ -11,14 +11,15 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ChartGen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NormalFormDualOrthogonalLast
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.AdaptSelf
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsDefiniteSpaceIsometryOfAdaptedPair
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsStarStableIdealAbsorbingMinorsStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsStarStableIdealAbsorbingMinors
+import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.MaxMass
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryHostFieldArithmeticConditionsProof
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.RowsMeanC
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowLatticeTermAdaptedNormalForm
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EquivFramesSameSecondLatticeFiberProof
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FrameClassTermCountLeCardAut
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermDeterminedByFrameClassAndIsometry
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermsOverRowCompatibleStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermsOverRowCompatible
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsAdaptedNormalFormRelevantTermProof
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AdaptedNormalFormNormsMinorsEqLabelProof
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ClsOmNonneg
@@ -78,7 +79,7 @@ theorem termData (D : D7) (large₂ : SizeData₂ D) (X : HidaSetting D) (Y : Fu
   have hg : 1 ≤ gS D := by omega
   obtain ⟨-, hx1, hxD, -, hdim⟩ := _root_.GlobalTheory.DegAsm.isDat_datOf D.host.E (VS D).V W (HV D) HW W.subtype hK D.R.rS (F0 X u) (Ft t)
     (dI D) N (gS D) t.lam hg he hA hterm
-  obtain ⟨𝔠, -, hDb1, hDel1, -⟩ := GlobalTheory.T.exists_star_stable_ideal_absorbing_minors D.host.E (VS D).V (HV D) hK D.R.rS N (gS D) t.lam hg hterm
+  obtain ⟨𝔠, -, hDb1, hDel1, -⟩ := _root_.GlobalTheory.DegCnt.Absorb.exists_absorbing_ideal D.host.E (VS D).V (HV D) hK D.R.rS N (gS D) t.lam hg hterm
   have hiso : t.lin ∈ GlobalTheory.HermLat.isomGrp (HV D) := fun x y => t.rep.2.2.1 x y
   obtain ⟨h, hh, hH, -, -⟩ := _root_.GlobalTheory.DegAsm.exists_isH D.host.E (VS D).V W (HV D) HW W.subtype hK D.R.rS (F0 X u) (Ft t) (dI D) N
     t.lin he hA hiso (fun a => GlobalTheory.TypeAsm.FibProof.Ft_e t a)
@@ -98,7 +99,7 @@ theorem pairTrip (D : D7) (large₂ : SizeData₂ D) (X : HidaSetting D) (Y : Fu
           (N₂.gI (gS D) p.1.lam) := by
   obtain ⟨hK, -, -, -, -, -, -, -, -, -, -, hg2, -⟩ := _root_.GlobalTheory.TypeAsm.hostC D large₂ hS
   have hg : 1 ≤ gS D := by omega
-  obtain ⟨hl, hl', hc⟩ := GlobalTheory.T.termsOverRow_compatible D X Y u p ⟨trivial, trivial, hp.2.2⟩
+  obtain ⟨hl, hl', hc⟩ := _root_.GlobalTheory.TypeAsm.CompatPf.compatC D X Y u p ⟨trivial, trivial, hp.2.2⟩
   refine ⟨hl, ?_⟩
   have hi₁ : p.1.lin ∈ GlobalTheory.HermLat.isomGrp (HV D) := fun x y => p.1.rep.2.2.1 x y
   have hi₂ : p.2.lin ∈ GlobalTheory.HermLat.isomGrp (HV D) := fun x y => p.2.rep.2.2.1 x y

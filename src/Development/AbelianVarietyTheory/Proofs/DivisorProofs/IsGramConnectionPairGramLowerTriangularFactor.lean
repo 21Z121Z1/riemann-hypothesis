@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedFrameEventua
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsMetricFrOfIsMetricOn
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ChernDegreeComplex
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramLowerTriangularFactorLowerTriangularConj
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramLowerTriangularFactorPosDefPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramLowerTriangularFactorPosDefProperties
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramLowerTriangularFactorGradedLengthSmooth
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlaggedBundleMetricSmoothUnitEtaleChart
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsHolomorphicUnitMatrixAtRationalMatrixValues
@@ -41,7 +41,7 @@ theorem isGramPair_ldPart (F : Type) [Field F] (σ : F →+* ℂ) (X : Var F) (�
     rw [Matrix.map_apply, hp.2.2.2 i j i.2 hij]
     exact ratVal_zero_var w
   refine ⟨fun y => ⟨(hsm y).1, ?_⟩, fun y => ?_⟩
-  · refine ⟨(GlobalTheory.T.gramLowerTriangularFactor_posDef_properties _ _ (hH.posDef y _ (hA y) τ)).2.2.2, fun c hc => ?_⟩
+  · refine ⟨(_root_.GlobalTheory.ChernCalc.ldPart_posDef_spec _ _ (hH.posDef y _ (hA y) τ)).2.2.2, fun c hc => ?_⟩
     filter_upwards [(hsm y).2 c hc] with v hv
     exact (_root_.GlobalTheory.ChernCalc.ldPart_grD_smooth _ _ _ v hv.1 hv.2).1
   · have h1 := _root_.GlobalTheory.ChernCalc.frame_eventually_near F σ X ι m m E y _ (hA y)

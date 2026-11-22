@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFieldOfV
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ArcTorsionValuesNormsIntegralPositive
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SummableVtQT
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaCoordinatesExistUniqueSeparatePointsStatement
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsArcSeriesIntegralAlgebraicOverPowerSeriesStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsArcSeriesIntegralAlgebraicOverPowerSeries
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsObjectWithThetaPointOfDegenerationSeries
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaPointsAllPrimePowerLevelsOfSingleObject
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.PowerSeriesAlgebraicClosureCompatible
@@ -199,7 +199,7 @@ theorem exists_point : HV → Laws6 → GlobalTheory.LN.UDvrSt → GlobalTheory.
   letI : Algebra (FractionRing O') K := (IsFractionRing.lift hC).toAlgebra
   have hK : ∀ x, algebraMap (FractionRing O') K (algebraMap O' _ x) = algebraMap (PowerSeries O') K (PowerSeries.C x) :=
     fun x => IsFractionRing.lift_algebraMap hC x
-  obtain ⟨S⟩ := GlobalTheory.T.exists_arcSeries_integral_algebraic_over_powerSeries hV h6 hU hH hT hE hA E H D l Xo c W₀ Y O' b ϖ a hb K hK
+  obtain ⟨S⟩ := _root_.GlobalTheory.ArcSeries.exists_series hV h6 hU hH hT hE hA E H D l Xo c W₀ Y O' b ϖ a hb K hK
   obtain ⟨n, hn, hodd, hu, hd⟩ := exists_prime_unit O' H.d_prime.ne_zero
   obtain ⟨o₀, hρ₀, h₀⟩ := _root_.GlobalTheory.Ex.AllLevels.one_object hV h6 hU hH hT hE hA E H D l Xo c W₀ Y O' b ϖ a hb K hK S n hn hodd fun j hj =>
     _root_.GlobalTheory.Ex.OneLevel.exists_full_theta hV h6 hU hH hT hE hA E H D l Xo c W₀ Y O' b ϖ a hb K hK S n j hn hodd hu hd hj

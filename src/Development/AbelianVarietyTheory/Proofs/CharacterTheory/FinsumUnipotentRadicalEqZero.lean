@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.AbByPOfComm
 import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.InvariantSubspaceMobiusInverseRecEqOfFinrankLt
-import Development.AbelianVarietyTheory.Proofs.CharacterTheory.ExistsStandardUnipotentRadicalBijOnNilradicalStatement
+import Development.AbelianVarietyTheory.Proofs.CharacterTheory.ExistsStandardUnipotentRadicalBijOnNilradical
 
 open Polynomial GlobalTheory.CuspGL GlobalTheory.BI
 
@@ -12,7 +12,7 @@ theorem IsPrimitive.finsum_unipotentRadical_eq_zero (F : Type) [Field F] [Finite
     ∑ᶠ u ∈ {u : GL (Fin d) F | ∀ i j : Fin d,
       (u : Matrix (Fin d) (Fin d) F) i j = (if i = j then 1 else 0) ∨ (i.val < a ∧ a ≤ j.val)},
       φ (Matrix.toLin' (u : Matrix (Fin d) (Fin d) F)) = 0 := by
-  obtain ⟨A, H, hA, hH, hbij⟩ := GlobalTheory.T.exists_standardUnipotentRadical_bijOn_nilradical F d a had.le
+  obtain ⟨A, H, hA, hH, hbij⟩ := _root_.GlobalTheory.CuspGL.UnipNilRad.exists_unip_bijOn_nilRad F d a had.le
   have hbot : A ≠ ⊥ := by
     rintro rfl
     rw [finrank_bot] at hA

@@ -141,13 +141,13 @@ theorem exists_chart_cm (hc : CMData (maximalRealSubfield E) E)
     | zero => simp only [map_zero]
     | add x y hx hy => simp only [map_add, hx, hy]
     | tmul a x => rfl
-  · rw [GlobalTheory.T.mem_integralFiniteAdelesTensor_iff_localOrders]
+  · rw [_root_.GlobalTheory.PlaceComp.IntLocal.mem_intA_iff]
     refine Iff.trans ⟨fun h => hev a ▸ h v, fun h w => ?_⟩ (hO _)
     by_cases hw : w = v
     · subst hw; rwa [hev]
     · rw [hew a w hw]; exact zero_mem _
   obtain ⟨h, hfr, hon⟩ := exists_orthonormal hc V v
-  obtain ⟨s1, s2, s3⟩ := GlobalTheory.T.adelicUnitary_supportedAtFinitePlace_eq_localUnitary _ E hc V v e he
+  obtain ⟨s1, s2, s3⟩ := _root_.GlobalTheory.SuppLocal.supp_local _ E hc V v e he
   let χ : P.adicCompletion E →+* LocAlg v := ψ.symm
   have hback' : ∀ x : GL (Fin V.rank) (P.adicCompletion E), bc ψ' (bc χ x) = x :=
     fun x => Units.ext (Matrix.ext fun i j => ψ.apply_symm_apply _)

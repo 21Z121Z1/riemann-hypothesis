@@ -8,7 +8,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothWeightPul
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ComplexPointLiftsToMulticone
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ZeroLocusRegularFunctionNull
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DehomogenizedEvalEqRatio
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RestrictedFormNonzeroOnGenericPointStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RestrictedFormNonzeroOnGenericPoint
 set_option autoImplicit false
 open CategoryTheory AlgebraicGeometry Limits TopologicalSpace MvPolynomial MeasureTheory
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -86,7 +86,7 @@ theorem zeroLocus_measurable_null : ∀ (m : ℕ) (n : Fin (m + 1) → ℕ) (X :
   rw [Set.preimage_iUnion, Set.inter_iUnion]
   refine measure_iUnion_null fun c => ?_
   by_cases hg : genericPoint X ∈ i ⁻¹ᵁ mchart c
-  · exact _root_.GlobalTheory.CompanionTheory.MixZ.volume_chart_zeroSet_fnOf X (i ≫ mpStr ℤ m n) σ₀ D ch _ hg _ (GlobalTheory.T.restricted_form_nonzero_on_generic_point m n X i c hg f a hf hI)
+  · exact _root_.GlobalTheory.CompanionTheory.MixZ.volume_chart_zeroSet_fnOf X (i ≫ mpStr ℤ m n) σ₀ D ch _ hg _ (_root_.GlobalTheory.CompanionTheory.MixZ.FnForm.fnAt_ne_zero_of_notMem_ptIdeal m n X i c hg f a hf hI)
   · have e : ch.e.target ∩ ch.e.symm ⁻¹' {y | y ∈ ptsIn (i ≫ mpStr ℤ m n) σ₀ (i ⁻¹ᵁ mchart c) ∧
         ev (i ≫ mpStr ℤ m n) σ₀ (i ⁻¹ᵁ mchart c) (i.app _ (dehomog c f)) y = 0} = ∅ :=
       Set.eq_empty_iff_forall_notMem.2 fun v hv => hg

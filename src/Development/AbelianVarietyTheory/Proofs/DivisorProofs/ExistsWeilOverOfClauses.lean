@@ -23,7 +23,7 @@ theorem exists_weil_over_of_clauses (hW : GlobalTheory.Published.WeilRepresentat
     [Algebra Ks D.what₂.LL] (R : RealDat D A Ks) (hlev : R.toLevCh.Is A.μ0) (hch : R.IsChain) (hmod : R.IsModels)
     (sc : Consts) (G : GridData R.toLevCh sc) : ∃ W : G.Weil, W.Over R := by
   have hψ := (hch.ωX A.μ0).std
-  obtain ⟨W, hWψ⟩ := GlobalTheory.T.exists_weilRepresentation_vacuum_cosetVectors_grid hW D T R.toLevCh A.μ0 hlev sc G R.ψ hψ
+  obtain ⟨W, hWψ⟩ := _root_.GlobalTheory.GridWeil.exists_weil hW D T R.toLevCh A.μ0 hlev sc G R.ψ hψ
   obtain ⟨e, he, -⟩ := W.cosVec_is
   have lt : ∀ j, j < D.R.m → G.V (.grid 0 j) = Yc D j := fun j h => congrArg LSp.sp (colY_lt R.toLevCh h)
   have top : G.V (.grid 0 D.R.m) = D.sp.X' := congrArg LSp.sp (colY_m R.toLevCh)

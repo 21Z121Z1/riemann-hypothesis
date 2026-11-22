@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselOrbitalIntegra
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IintEquivariant
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselSubgroupsClosedUnitaryWCompact
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselSubgroupRepTwistedIsUnitaryRep
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnimodularBesselSubgroupsUWNStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnimodularBesselSubgroupsUWN
 
 noncomputable section
 
@@ -150,8 +150,8 @@ theorem hsNormSq_Iint_le_liminf : ∀ (k r : ℕ) {H : Type} [NormedAddCommGroup
   have hcl' := (_root_.GlobalTheory.SgInf.closedSub_groups k r z' hS'.1 hS'.2.1).2.2.2.1
   have hP := _root_.GlobalTheory.SgInf.PiUnitary.piS_unitary k r z c π hS.1 hS.2.1 hS.2.2.1
   have hP' := _root_.GlobalTheory.SgInf.PiUnitary.piS_unitary k r z' c' π' hS'.1 hS'.2.1 hS'.2.2.1
-  have hinv := ((GlobalTheory.T.unimodular_besselSubgroups_UW_N k r z hS.1 hS.2.1 μS).1 hS.2.2.2.1).2
-  have hinv' := ((GlobalTheory.T.unimodular_besselSubgroups_UW_N k r z' hS'.1 hS'.2.1 μS').1 hS'.2.2.2.1).2
+  have hinv := ((_root_.GlobalTheory.SgInf.unimodular_S_N_UW k r z hS.1 hS.2.1 μS).1 hS.2.2.2.1).2
+  have hinv' := ((_root_.GlobalTheory.SgInf.unimodular_S_N_UW k r z' hS'.1 hS'.2.1 μS').1 hS'.2.2.2.1).2
   haveI := hS.2.2.2.1.1
   haveI := hS'.2.2.2.1.1
   have h0 := hS.2.2.2.1.2.2.1

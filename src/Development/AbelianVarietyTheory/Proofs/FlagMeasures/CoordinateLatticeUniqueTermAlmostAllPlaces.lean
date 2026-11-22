@@ -24,7 +24,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsGluingHomomorp
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalExtend
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsIntegralOfQuad
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsOrthonormalSameIntegralSpanUnimodular
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianTermSplitsUnimodularComplementStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianTermSplitsUnimodularComplement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FrameLatticeUnimodularGeneratorsExponentZero
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FramesCoordinateLatticeIsTermTrivialWitnesses
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StabilizerFramesCoordinateLatticeGoodPlace
@@ -43,8 +43,8 @@ theorem term_orbit {F : Type} [Field F] [ValuativeRel F] [TopologicalSpace F] [I
     have : Module.Finite F E := Module.finite_of_finrank_pos (by rw [L.rank]; norm_num)
     exact IsArtinianRing.of_finite F E
   obtain ⟨u₀, hu₀, hE, hui, hup⟩ := _root_.GlobalTheory.HL.FrameUnimod.frame_unimodular L r k S d Λ hT ha
-  obtain ⟨b₀, hbW, hΛ, hbi, hbp⟩ := GlobalTheory.T.hermitianTerm_splits_unimodular_complement L r k S d Λ hT ha
-  obtain ⟨c₀, hcW, hΛ₁, hci, hcp⟩ := GlobalTheory.T.hermitianTerm_splits_unimodular_complement L r k S d₁ Λ₁ hT₁ ha
+  obtain ⟨b₀, hbW, hΛ, hbi, hbp⟩ := _root_.GlobalTheory.HL.UnimodSplit.main L r k S d Λ hT ha
+  obtain ⟨c₀, hcW, hΛ₁, hci, hcp⟩ := _root_.GlobalTheory.HL.UnimodSplit.main L r k S d₁ Λ₁ hT₁ ha
   obtain ⟨u, huo, hus⟩ := _root_.GlobalTheory.HL.SelfDual.exists_orthonormal_same_span L S.Hm S.herm u₀ hui hup
   obtain ⟨b, hbo, hbs⟩ := _root_.GlobalTheory.HL.SelfDual.exists_orthonormal_same_span L S.Hm S.herm b₀ hbi hbp
   obtain ⟨c, hco, hcs⟩ := _root_.GlobalTheory.HL.SelfDual.exists_orthonormal_same_span L S.Hm S.herm c₀ hci hcp

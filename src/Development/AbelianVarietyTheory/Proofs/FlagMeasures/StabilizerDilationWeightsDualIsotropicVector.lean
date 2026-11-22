@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsNormalFormStabilizerMeasure
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CommonStabilizerSetEqRangeNormalForm
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StabilizerHaarUnimodularNormalStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StabilizerHaarUnimodularNormal
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicLeviEmbeddingHomomorphismProperties
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicStabilizerRadicalStructure
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MatGroupHaarUniqueFiniteCompactOpenPos
@@ -727,7 +727,7 @@ theorem normalFormStabilizerMeasure_scalar_le {j : ℕ} (hj : j ≤ r) (z z' : F
   obtain ⟨-, -, -, m₁, hm₁, m₂, hm₂, g₀', β', c', hg₀', hγ', hμ'⟩ := h'
   obtain ⟨hR, hcl⟩ := _root_.GlobalTheory.Amp.rset_normal0 k r j hj z z' g₀ β c hz hz' hT hg₀
   obtain ⟨hR', hcl'⟩ := _root_.GlobalTheory.Amp.rset_normal0 k r j hj z z' g₀' β' c' hz hz' hT hg₀'
-  obtain ⟨hH, -⟩ := GlobalTheory.T.stabilizer_haar_unimodular_normal k r j hj z z' g₀ β c hz hz' hT hg₀
+  obtain ⟨hH, -⟩ := _root_.GlobalTheory.Amp.StabHaar.lebesgue_haar_unimodular_stabilizer k r j hj z z' g₀ β c hz hz' hT hg₀
   obtain ⟨-, hNmul, hNinv⟩ := nSubgroup k r
   have hv₂ : IsUnit m₂.det := unit_of_GG hm₂.1
   have hn : m₂ * n₂⁻¹ ∈ Nset k r := hNmul _ hm₂ _ (hNinv _ hn₂)

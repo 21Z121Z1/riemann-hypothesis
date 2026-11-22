@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Definitions.Foundations.IsTopWTopWOfExis
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KaehlerDRootTwist
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TorsionKaehlerSpanDlogIndep
 import Development.AbelianVarietyTheory.Definitions.Foundations.IntegralLocallyConstCochainModPow
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SmulKaehlerDReparametrizationEqStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SmulKaehlerDReparametrizationEq
 open scoped MatrixGroups
 open GlobalTheory.KZ GlobalTheory.Glue GlobalTheory.K5 GlobalTheory.KummerEisensteinGalois
 
@@ -77,7 +77,7 @@ theorem d_psi {T : Tower p Ω} {L : ℕ} {ψ : O0 p →+* Ω} (hψ : IsReb T L �
     (hy : (y : Ω) = ψ (algebraMap (Lau p) (O0 p) (thL b))) (hq : (qL : Ω) = T.qq L) :
     qL • KaehlerDifferential.D (O0 p) (integralClosure (O0 p) Ω) x =
       y • KaehlerDifferential.D (O0 p) (integralClosure (O0 p) Ω) qL :=
-  GlobalTheory.T.smul_kaehlerD_reparametrization_eq p Ω T L ψ hψ b x y qL hx hy hq
+  _root_.GlobalTheory.Glue.DPsi.smul_D_psi p Ω T L ψ hψ b x y qL hx hy hq
 
 set_option maxHeartbeats 2000000 in
 

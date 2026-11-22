@@ -98,7 +98,7 @@ abbrev recXE : ThetaX D where
     rw [actReal, dif_pos hg]; exact trE_cusp hθ V _ _ F hF
   Gf V := GfC V
   actF := actFin hθ
-  actF_cusp V g F hF := trE_cusp hθ V g (fun φ h => GlobalTheory.T.smoothAutomorphicForm_rightTranslate_finiteAdelic D θ hθ V φ h g g.2) F hF
+  actF_cusp V g F hF := trE_cusp hθ V g (fun φ h => _root_.GlobalTheory.Mem.FinTranslate.isAutFunSm_rTr_fin D θ hθ V φ h g g.2) F hF
   actF_actR V g τ h := by
     unfold actReal
     split_ifs with hh
@@ -111,7 +111,7 @@ abbrev recXE : ThetaX D where
   typ V P := (TypS θ V P).comap (AFs θ V).subtype
   Chr := chrGrp D
   infTy := expo
-  infTy_mul χ χ' τ := expo_eq ((GlobalTheory.T.heckeCharacter_infinityExponent_group_laws D).2.2 _ _ _ _ _ (expo_spec χ τ) (expo_spec χ' τ))
+  infTy_mul χ χ' τ := expo_eq ((_root_.GlobalTheory.Mem.HeckeExp.hecke_exp_laws D).2.2 _ _ _ _ _ (expo_spec χ τ) (expo_spec χ' τ))
   chrOf μ j := ⟨Rc.chr μ j, mem_chrGrp.2 (Rc.chr_hc μ j)⟩
   chrOf_inf μ j τ := expo_eq (Rc.chr_inf μ j τ)
   etaT := ⟨Rc.eta, mem_chrGrp.2 ⟨Rc.eta_hc, fun τ => ⟨_, Rc.eta_inf τ⟩⟩⟩
@@ -135,7 +135,7 @@ abbrev recXE : ThetaX D where
   YsLow_zero := Tw.YsLow_zero
   Xs_rec := Tw.Xs_rec
   Ys_rec := Tw.Ys_rec
-  conjAF V F := ⟨fun g => star (F.1 g), Submodule.subset_span (GlobalTheory.T.isSmoothAutomorphicFunction_star D θ hθ V _ (aut hθ F))⟩
+  conjAF V F := ⟨fun g => star (F.1 g), Submodule.subset_span (_root_.GlobalTheory.Mem.AutConj.isAutFunSm_star D θ hθ V _ (aut hθ F))⟩
   conjAF_add V F F' := Subtype.ext (funext fun g => star_add _ _)
   conjAF_smul V c F := Subtype.ext (funext fun g => star_mul' _ _)
   conjAF_conjAF V F := Subtype.ext (funext fun g => star_star _)

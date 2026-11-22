@@ -1,11 +1,12 @@
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.BaseOneSide.PsiSide
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EquidistributionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Equidistribution
+import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.BinaryMassMeans.MeanVal
 import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.MassOneBase.MassOne
 import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.SiegelDensities.PlugInf
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TateIntegralFormulaStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CharacterSideEquidistributionStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalDensityRatioFormulaStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianExistencePrincipleStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TateIntegralFormula
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CharacterSideEquidistribution
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalDensityRatioFormula
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianExistencePrinciple
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ScalarFibrationFormula
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalDensityOfMassOne
@@ -23,8 +24,8 @@ namespace PositivityTheory.Rg.Base1
 
 theorem baseOne_of (hM : PositivityTheory.SiegelWeilFormula.Densx.MassOne) : PositivityTheory.SiegelWeilFormula.Densx.BaseOne :=
   GlobalTheory.T.siegel_weil_rank_one_base_case (_root_.GlobalTheory.CompanionTheory.Mass.Rank.mass_formula_of_total_mass_one hM) (_root_.GlobalTheory.CompanionTheory.SW.BaseSimil.simil _root_.GlobalTheory.CompanionTheory.RgBase.ScalFib.scal) _root_.GlobalTheory.CompanionTheory.SW.BaseHasse.hasse
-    (_root_.GlobalTheory.CompanionTheory.RgBaseCnt.cnt_of GlobalTheory.T.tate_integral_formula (GlobalTheory.T.character_side_equidistribution GlobalTheory.T.equidistribution) GlobalTheory.T.local_density_ratio_formula GlobalTheory.T.hermitian_existence_principle _root_.GlobalTheory.CompanionTheory.SW.BaseTest.testEx _root_.GlobalTheory.CompanionTheory.SW.RankOne.dens
-      (_root_.GlobalTheory.CompanionTheory.SW.RankOneSiegelWeil.lside GlobalTheory.T.equidistribution) (_root_.GlobalTheory.CompanionTheory.RgBase.Theta.thetaId _root_.GlobalTheory.CompanionTheory.RgBase.ScalFib.scal (_root_.GlobalTheory.CompanionTheory.RankOneLoc.locR _root_.GlobalTheory.CompanionTheory.RgBase.ScalFib.scal hM)))
+    (_root_.GlobalTheory.CompanionTheory.RgBaseCnt.cnt_of _root_.GlobalTheory.CompanionTheory.TateRes.tate (_root_.GlobalTheory.CompanionTheory.BasePsi.psiSide_of_equi _root_.GlobalTheory.CompanionTheory.Equi.equi) _root_.GlobalTheory.CompanionTheory.RatioBase.ratio _root_.GlobalTheory.CompanionTheory.RgBase.hEx _root_.GlobalTheory.CompanionTheory.SW.BaseTest.testEx _root_.GlobalTheory.CompanionTheory.SW.RankOne.dens
+      (_root_.GlobalTheory.CompanionTheory.SW.RankOneSiegelWeil.lside _root_.GlobalTheory.CompanionTheory.Equi.equi) (_root_.GlobalTheory.CompanionTheory.RgBase.Theta.thetaId _root_.GlobalTheory.CompanionTheory.RgBase.ScalFib.scal (_root_.GlobalTheory.CompanionTheory.RankOneLoc.locR _root_.GlobalTheory.CompanionTheory.RgBase.ScalFib.scal hM)))
 
 theorem baseOne : PositivityTheory.SiegelWeilFormula.Densx.BaseOne := baseOne_of PositivityTheory.SiegelWeilFormula.BaseOne.massOne
 

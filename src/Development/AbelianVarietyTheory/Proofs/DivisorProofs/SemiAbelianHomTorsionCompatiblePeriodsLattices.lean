@@ -75,7 +75,7 @@ theorem periods_of_key : ∀ (R : Type) [CommRing R] [IsDomain R] [CharZero R] (
     simp only [map_zero]))
   have hq'tor : IsTor (t.comp (AddMonoidHom.toMultiplicative h)) q'.g := tor t q.g q'.g hq ((hm _ _).2 hqg)
 
-  have ec := GlobalTheory.T.uniformizationEndomorphism_calculus hL R I hA D₁ A₁ G₁ hG₁ U₁ F E E E
+  have ec := _root_.GlobalTheory.EndCalc.end_calculus hL R I hA D₁ A₁ G₁ hG₁ U₁ F E E E
   have adE := ec.2.1
   choose aEf haE huE using ec.1
   let aE : GtPtF D₁.toPre F →+ GtPtF D₁.toPre F := AddMonoidHom.mk' aEf fun x x' => (isAdd_iff_eq _ _ _).1

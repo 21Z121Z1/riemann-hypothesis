@@ -3,7 +3,7 @@ import Formalism.SharpRestriction.CuspSpanNormBounds.FractionFieldToGenericStalk
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsHermND
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementReferenceCompactSubgroup
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InvVolMulPosLeConj
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetTermBasicFactsStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetTermBasicFacts
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StabilizerCommensurableInvVolumeSmulComplement
 open ValuativeRel Formalism.MainNotions.S Formalism.MainNotions.S.Loc GlobalTheory.HL
 open scoped Pointwise ENNReal Classical
@@ -57,7 +57,7 @@ theorem Frames.nu_pos_and_smul : ∀ {F : Type} [Field F] [ValuativeRel F] [Topo
   intro F _ _ _ _ _ E _ _ _ L r k S d Λ hT
   obtain ⟨hv, hd⟩ := _root_.GlobalTheory.HL.Frames.stab_commensurable_invVol_smul L r k S
   obtain ⟨d1, d2⟩ := hd d Λ hT
-  have hSD := (GlobalTheory.T.hermitian_double_coset_term_basic_facts L r k S d Λ hT).1
+  have hSD := (_root_.GlobalTheory.HL.TermBasic.term_basic L r k S d Λ hT).1
   obtain ⟨l1, l2, l3⟩ := hv Λ hSD.1
   refine ⟨(invVol_mul_pos_le_conj _ _ _ d1 d2 d1 d2).2.1, fun h hh => ?_⟩
   have := l3 h hh

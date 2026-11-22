@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsSmoothVec
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AnalyticVectorExponentialSeriesStatement
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AnalyticVectorExponentialSeries
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.SmoothVectorsInvariantSubspace
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DerivedActionOfSmoothVector
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DerivedActionAdditiveStatement
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DerivedActionAdditive
 import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AnalyticIntertwiners.CommutatorAdjointHolds
 
 noncomputable section
@@ -120,9 +120,9 @@ theorem dRep_smul (hG : IsLinRed G) (hrep : Formalism.QuantumDeterminants.IsCRep
 def actX (hG : IsLinRed G) (hrep : Formalism.QuantumDeterminants.IsCRepOn G π) {X : Matrix (Fin n) (Fin n) ℂ}
     (hX : X ∈ HCSS.lieOf G) : Module.End ℝ (smoothSub hG hrep) where
   toFun x := ⟨dRep π X x, (_root_.GlobalTheory.CompanionTheory.Hypotheses₂.HCA.hasDerivAt_dRep_and_isSmoothVec hG hrep x.2 hX).2⟩
-  map_add' x y := Subtype.ext (GlobalTheory.T.derived_action_additive hG hrep x.2 y.2 hX hX).2.1
+  map_add' x y := Subtype.ext (_root_.GlobalTheory.CompanionTheory.Hypotheses₂.HCA.SmoothLin.dRep_linear hG hrep x.2 y.2 hX hX).2.1
   map_smul' r x := Subtype.ext (by
-    have h := (GlobalTheory.T.derived_action_additive hG hrep x.2 x.2 hX hX).2.2 (r : ℂ)
+    have h := (_root_.GlobalTheory.CompanionTheory.Hypotheses₂.HCA.SmoothLin.dRep_linear hG hrep x.2 x.2 hX hX).2.2 (r : ℂ)
     simp only [Complex.coe_smul] at h
     exact h)
 
@@ -142,7 +142,7 @@ def act (hG : IsLinRed (UJset ε)) (hrep : Formalism.QuantumDeterminants.IsCRepO
     refine LinearMap.ext fun x => Subtype.ext ?_
     show dRep π (projL ε (Y + Z)) x = dRep π (projL ε Y) x + dRep π (projL ε Z) x
     rw [map_add]
-    exact (GlobalTheory.T.derived_action_additive hG hrep x.2 x.2 (projL_mem ε Y) (projL_mem ε Z)).1
+    exact (_root_.GlobalTheory.CompanionTheory.Hypotheses₂.HCA.SmoothLin.dRep_linear hG hrep x.2 x.2 (projL_mem ε Y) (projL_mem ε Z)).1
   map_smul' r Y := by
     refine LinearMap.ext fun x => Subtype.ext ?_
     show dRep π (projL ε (r • Y)) x = r • dRep π (projL ε Y) x
@@ -172,7 +172,7 @@ theorem exists_series [CompleteSpace H] (hrep : Formalism.QuantumDeterminants.Is
       ∀ᶠ Y in 𝓝 (0 : Fin n → Fin n → ℂ), ReciprocityTheory.ChartRestriction.DS.inG ε (Matrix.of Y) →
         Φ Y = π (NormedSpace.exp (Matrix.of Y)) v := by
   have hG : IsLinRed (UJset ε) := GlobalTheory.HCUnitary.isLinRed_UJset ε
-  obtain ⟨r₀, hr₀, hsum⟩ := GlobalTheory.T.analytic_vector_exponential_series hG hrep hc hs hw
+  obtain ⟨r₀, hr₀, hsum⟩ := _root_.GlobalTheory.CompanionTheory.Hypotheses₂.HCA.hasSum_orbit_of_wordBound hG hrep hc hs hw
   obtain ⟨C, hC, hb⟩ := hw
   let v' : smoothSub hG hrep := ⟨v, hs⟩
   let ev : Module.End ℝ (smoothSub hG hrep) →ₗ[ℝ] H := (smoothSub hG hrep).subtype ∘ₗ LinearMap.applyₗ v'

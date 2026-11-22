@@ -23,7 +23,8 @@ import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatLineGen
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.CardComapMulFinsumEqFinsumFibres
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.VolumeTheoremOfInputs
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatZeroFromResolutionAndGagaStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatFirstFromResolutionAndGagaStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatFirstFromResolutionAndGaga
+import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.GagaSections
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsGeometricHeightConstantsStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ModelOnHodgeFromFamily
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsLatFlagPair
@@ -57,7 +58,7 @@ theorem goodTower_and_volume :
   have hGaga : Flat.GagaSections := hG.2.2.2.2.2.2.2.1
   have hPB : PB.Inputs := hG.2.2.2.2.2.2.2.2.2.1
   have hA0 := GlobalTheory.T.flat_zero_from_resolution_and_gaga hR hGaga
-  have hA1 := GlobalTheory.T.flat_first_from_resolution_and_gaga hR hGaga
+  have hA1 := _root_.GlobalTheory.CompanionTheory.Ar.Flat.FlatFirstTheorem.flat_first_of_resolution_gaga hR hGaga
   refine ⟨?_, ?_⟩
   · intro E _ _ _ H D Xo l c Y _ hgl hs hp hq
     exact _root_.GlobalTheory.CompanionTheory.Ar.TopTower.exists_good_tower hG hW hA0 hA1 E H D Xo l c Y hgl hs hp hq

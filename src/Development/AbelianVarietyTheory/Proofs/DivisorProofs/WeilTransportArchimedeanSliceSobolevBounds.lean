@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUSplittingInl
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ImportsBis
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledUnitaryPartnerDiagStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledUnitaryPartnerDiag
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsContOnOfLocal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdeleJoinZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalFiniteDimFinitePartsWeilOperators
@@ -164,7 +164,7 @@ theorem GlobalTheory.WeilL2Words.weilTransport_archimedeanSlice_sobolev_bounds_a
   ∀ Φ ∈ GlobalTheory.WeilM.schA D.host.F κ, ∀ (y : κ → FiniteAdeleRing (𝓞 D.host.F) D.host.F) p0 (i j : ℕ), ∃ B : ℝ,
       ∀ᶠ p in nhds p0, ∫ x, (‖x‖ ^ i * ‖iteratedFDeriv ℝ j (fun x => om p Φ (GlobalTheory.WeilCont.adeleJoin D.host.F x y)) x‖) ^ 2 ≤ B := by
   intro D ψ hψ S T χS χT hS hT hrS hrT JA JB ξ hA hJB κ _ co hco ω hω om hom Φ hΦ y p0 i j
-  have hI := GlobalTheory.T.transportedWeil_preserves_schwartz_heisenberg_equivariant D ψ hψ S T χS χT hS hT hrS hrT JA JB ξ hA hJB κ co hco ω hω om hom
+  have hI := _root_.GlobalTheory.WeilSchrodinger.PresImpl.pres_impl D ψ hψ S T χS χT hS hT hrS hrT JA JB ξ hA hJB κ co hco ω hω om hom
   obtain ⟨M, himpl, hM⟩ := _root_.GlobalTheory.ArchTransportHost.archDir_transport_host D ψ _ _ JA JB ξ κ co om hI.2
   obtain ⟨μ, hμ, hiso⟩ := _root_.GlobalTheory.WeilL2Transport.l2A_transport D ψ hψ S T χS χT hS hT hrS hrT JA JB ξ hA hJB κ co hco ω hω om hom
   exact GlobalTheory.WeilL2Words.slice_l2_of (_root_.GlobalTheory.WeilL2Words.StdTheta.isStdInf_of_isStdChar D ψ hψ) om hI.1 M himpl hM μ hμ hiso hΦ p0

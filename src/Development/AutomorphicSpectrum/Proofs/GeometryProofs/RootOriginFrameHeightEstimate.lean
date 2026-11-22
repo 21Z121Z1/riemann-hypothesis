@@ -3,7 +3,8 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsFrameVec
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginFrameArchimedeanStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginFrameNonarchimedeanStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FiniteResidueAbsoluteValue
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeEvalAtLocalRingStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeEvalAtLocalRing
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GlueApplyOfNotInFibre
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DiscriminantValuationDifferent
@@ -154,7 +155,7 @@ theorem smul_mem_fibAt [IsCommMonObj G] [IsScalarTower R C EC] (hξ : IsCptGen �
     obtain ⟨hh, e, he, hv⟩ := hw
     refine Submodule.subset_span ⟨hh, a • e, h hh e he, ?_⟩
     obtain ⟨h', s, hs, hs'⟩ := hr
-    obtain ⟨ev, h1, h2, -⟩ := GlobalTheory.T.lie_lattice_eval_at_local_ring X G Ω ξ Li M C _ h' EC MC hξ hsm
+    obtain ⟨ev, h1, h2, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.lieLat_val X G Ω ξ Li M C _ h' EC MC hξ hsm
     obtain ⟨hel, rfl⟩ := (h1 e w).1 hv
     let a' : regAt ξ ⟨_, h'⟩ := ⟨a, ⟨s, hs⟩⟩
     have e2 := h2 a' (algebraMap R C D) ⟨e, hel⟩ ⟨h', s, hs, hs'⟩

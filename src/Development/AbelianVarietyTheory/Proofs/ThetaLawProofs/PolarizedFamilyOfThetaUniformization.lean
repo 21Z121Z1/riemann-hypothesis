@@ -16,7 +16,7 @@ import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsTwoTorsionTr
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.PotentiallyKnownOfSameLambdaBundle
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.LiftIdempotentEqOfSameComplexComponent
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.GeomIntegralOfEtaleFaithfullyFlatCover
-import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.SiegelFamilyStandardLevelPointsSameComponentStatement
+import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.SiegelFamilyStandardLevelPointsSameComponent
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsSiegelFamilyOverNumberField
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsNumberFieldPointSiegelFamilyKnownValue
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsSymmetricSqrtPrincipalSiegelFiniteEtale
@@ -144,7 +144,7 @@ theorem GlobalTheory.KeyFam.polFam : Out.Laws → Out.Laws2 → ThetaUnifAV → 
   obtain ⟨K₁, _, _, j₁, σ₁, y, q, χy, τ', hσ, hq, hy, hyq, hpt⟩ :=
     _root_.GlobalTheory.KeyFam.exists_known_point hL hU P.g k K ζ σ F hg hk ho hζ inferInstance
   have hq' : (spMap σ₁ ≫ q) ≫ F.s = spMap σ := by rw [Category.assoc, hq, ← spMap_comp, hσ]
-  have hc := GlobalTheory.T.siegelFamily_standard_level_points_same_component hL hL2 hU hA P.g k K ζ σ F hg hk ho hζ τ τ' p _ hp hq' ⟨P, lev, χ, hper, hP, hlev⟩ hpt
+  have hc := _root_.GlobalTheory.SiegelConnected.sameComp_of_ptAt hL hL2 hU hA P.g k K ζ σ F hg hk ho hζ τ τ' p _ hp hq' ⟨P, lev, χ, hper, hP, hlev⟩ hpt
   obtain ⟨R, _, i, a, p', q', hi, ha, rfl, rfl⟩ := exists_affine F.s F.qproj p q
   letI := σ.toAlgebra
   letI := j₁.toAlgebra

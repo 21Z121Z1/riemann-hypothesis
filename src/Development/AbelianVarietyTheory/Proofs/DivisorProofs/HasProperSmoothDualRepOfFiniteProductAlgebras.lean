@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.SameIdIff
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsCrystalPairing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCechPicardGlueFiniteDisjointCoverStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenImmersionWhiskerLeftRangePreimageSndStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenImmersionWhiskerLeftRangePreimageSnd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProperSmoothGeomConnectedSigmaDescDisjointCover
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteSetsInAffineOpenFiniteCoproduct
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasProperSmoothDualRepresentativeFinAffineOfIso
@@ -43,7 +43,7 @@ theorem hasRepAF_of_disjoint_cover {S : Scheme.{0}} (A : Over S) [GrpObj A] (g :
   have hb : ∀ i, j i ≫ bt = b i ≫ Over.homMk (V i).ι := fun i => by
     ext1; simp [j, bt]
 
-  have hk : ∀ i, IsOpenImmersion (A ◁ j i).left := fun i => (GlobalTheory.T.isOpenImmersion_whiskerLeft_range_preimage_snd A (j i)).1
+  have hk : ∀ i, IsOpenImmersion (A ◁ j i).left := fun i => (_root_.GlobalTheory.DualCon.isOpenImmersion_whiskerLeft_left_and_range A (j i)).1
   have hkc : ⨆ i, (A ◁ j i).left.opensRange = ⊤ := by
     rw [eq_top_iff]
     intro z _
@@ -51,7 +51,7 @@ theorem hasRepAF_of_disjoint_cover {S : Scheme.{0}} (A : Over S) [GrpObj A] (g :
     obtain ⟨i, hi⟩ := TopologicalSpace.Opens.mem_iSup.1 hz
     refine TopologicalSpace.Opens.mem_iSup.2 ⟨i, ?_⟩
     change z ∈ Set.range (A ◁ j i).left
-    rw [(GlobalTheory.T.isOpenImmersion_whiskerLeft_range_preimage_snd A (j i)).2]
+    rw [(_root_.GlobalTheory.DualCon.isOpenImmersion_whiskerLeft_left_and_range A (j i)).2]
     exact hi
   have hkd : Pairwise fun i i' => Disjoint (A ◁ j i).left.opensRange (A ◁ j i').left.opensRange := by
     intro i i' hii'
@@ -59,8 +59,8 @@ theorem hasRepAF_of_disjoint_cover {S : Scheme.{0}} (A : Over S) [GrpObj A] (g :
     rintro z ⟨h1, h2⟩
     change z ∈ Set.range (A ◁ j i).left at h1
     change z ∈ Set.range (A ◁ j i').left at h2
-    rw [(GlobalTheory.T.isOpenImmersion_whiskerLeft_range_preimage_snd A (j i)).2] at h1
-    rw [(GlobalTheory.T.isOpenImmersion_whiskerLeft_range_preimage_snd A (j i')).2] at h2
+    rw [(_root_.GlobalTheory.DualCon.isOpenImmersion_whiskerLeft_left_and_range A (j i)).2] at h1
+    rw [(_root_.GlobalTheory.DualCon.isOpenImmersion_whiskerLeft_left_and_range A (j i')).2] at h2
     exact (disjoint_iff.1 (hjd hii')).le ⟨h1, h2⟩
   obtain ⟨d, hd⟩ := GlobalTheory.T.exists_cechPicard_glue_finite_disjoint_cover (fun i => (A ◁ j i).left) hkc hkd (fun i => cls (P i) (hP i).1.fam.isLB)
   obtain ⟨Pt, hPt, rfl⟩ := cls_surj d

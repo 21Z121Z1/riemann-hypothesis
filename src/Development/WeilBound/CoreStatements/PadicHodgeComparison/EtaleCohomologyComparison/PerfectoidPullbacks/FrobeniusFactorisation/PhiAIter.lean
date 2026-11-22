@@ -8,7 +8,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteLengthOfL
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.TwistedRepresentations.Tens
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LimitDivisibleOfVanishingLevel
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ModuleFiniteLimitOfLseq
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BoundedCokernelLimitToLevelStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BoundedCokernelLimitToLevel
 
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false
@@ -50,7 +50,7 @@ theorem pin_all (M : Model l K) (j : ℕ) : ∃ (e : ℕ) (α : (sH r M j).lim �
   obtain ⟨E⟩ := LsG.ls_seq r M hM j
   have ha : ∀ n, IsArtinian (WittVector l r.k) ((HSW r M j).M n) := fun n =>
     (isFiniteLength_iff_isNoetherian_isArtinian.1 (_root_.GlobalTheory.CompanionTheory.TowerLen.isFiniteLength_level _ l _ _ E (smooth_model_finite_length_link r M hM j) n)).2
-  obtain ⟨c, hc⟩ := GlobalTheory.T.bounded_cokernel_limit_to_level _ l _ _ E ha (lw_fin r M hM (j + 1))
+  obtain ⟨c, hc⟩ := _root_.GlobalTheory.CompanionTheory.TwCok.lim_cokernel_bounded _ l _ _ E ha (lw_fin r M hM (j + 1))
   have := flatW r
   have : IsAdicComplete (Ideal.span {(l : AW r)}) (AW r) := adicA
   obtain ⟨α, hα⟩ := Fa.pin_ex l (WittVector.irreducible l) c (lw_fin r M hM j) E.kill (_root_.GlobalTheory.CompanionTheory.Tower.lim_eq_pow_smul _ l _ _ E ha) hc (gH r M j)

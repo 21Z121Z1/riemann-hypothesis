@@ -18,7 +18,8 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaInteg
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaChainUpwardLiftHeckeParamTransferred
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitProjectionUnderEqResidueCardEqAbsNorm
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TameLiftResidueCharacterIsTameNotUnramified
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LiftsCharOfResidueCharAtSplitPlaceStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LiftsCharOfResidueCharAtSplitPlace
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnrOffOne
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaLiftChainSplittingCharactersResidueUnramifi
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix
 open Formalism.L2.Theta Formalism.L2.DIV Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.IndefR.Datum
@@ -114,9 +115,9 @@ theorem GlobalTheory.ChainTw.upQ_holds : GlobalTheory.Published.CuspRapidDecay �
   have hQ := hres PP (hw.union ▸ Finset.mem_union_right _ hPP)
   rw [hw.chiQ (k + 1) PP hPP, inv_inv] at hQ
   have hunS : GlobalTheory.SplitWeil.IsUnram (μS * ξl⁻¹) :=
-    isUnram_of_lifts φv PP hφv (w.ξ PP) μS ξl (GlobalTheory.T.liftsChar_of_residueChar_at_splitPlace D _ PP _ hQ.1 v φv hφv μS hμS) hξl
+    isUnram_of_lifts φv PP hφv (w.ξ PP) μS ξl (_root_.GlobalTheory.ResLift.liftsChar_of_resAt D _ PP _ hQ.1 v φv hφv μS hμS) hξl
   have hunT : GlobalTheory.SplitWeil.IsUnram (μT * ξl⁻¹) :=
-    isUnram_of_lifts φv PP hφv (w.ξ PP) μT ξl (GlobalTheory.T.liftsChar_of_residueChar_at_splitPlace D _ PP _ hQ.2 v φv hφv μT hμT) hξl
+    isUnram_of_lifts φv PP hφv (w.ξ PP) μT ξl (_root_.GlobalTheory.ResLift.liftsChar_of_resAt D _ PP _ hQ.2 v φv hφv μT hμT) hξl
   have hcard : Fintype.card (Blocks (k + 1) D.R.t) = Fintype.card (Blocks k D.R.t) + D.R.t := by
     simp [Blocks, Fintype.card_sigma]
     ring

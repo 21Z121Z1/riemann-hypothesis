@@ -3,7 +3,7 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GlueApplyOfNot
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapStalkMap
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProjectiveModelNonempty
 import Development.WeilBound.CoreStatements.VolumeEquality.RegularFunctionChartAdjoin
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueDominatingMapStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueDominatingMap
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsNormalisation
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LatNormGrLatNeZeroOfSpan
@@ -193,7 +193,7 @@ theorem exists_normal_pModel [Finite κ] [Finite κ₃] (hs : ∀ c, s c = u₁ 
     exact ⟨t * a, hle _ hta, t, hle _ ht, by rw [mul_div_cancel_left₀ _ h0]⟩
   refine ⟨N, ?_⟩
 
-  obtain ⟨g, hg, -⟩ := GlobalTheory.T.existsUnique_dominating_map ℤ Ω κ₃ u₃ M ℤ Ω κ s N (RingHom.id Ω) fun p' => by
+  obtain ⟨g, hg, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.ChMorph.existsUnique_dominates ℤ Ω κ₃ u₃ M ℤ Ω κ s N (RingHom.id Ω) fun p' => by
     obtain ⟨c, hc⟩ := N.tie.cover p'
     exact mem_ctrSet (RingHom.id Ω) (inChart_parts hs ho hc).2.2
   intro q a ha
@@ -365,10 +365,10 @@ theorem exists_normal_join : ∀ (Ω₁ Ω₂ Ω : Type) [Field Ω₁] [Field Ω
   obtain ⟨N, hNN⟩ := exists_normal_pModel (u₁ := U₁) (u₂ := U₂) hs ho M' hN hc₁ hc₂
   have key : ∀ {c p}, InChart N.ξ s c p → InChart N.ξ U₁ (π₁ c) p ∧ InChart N.ξ U₂ (π₂ c) p ∧ InChart N.ξ y' (π₃ c) p :=
     fun h => inChart_parts hs ho h
-  obtain ⟨h₁, hh₁, -⟩ := GlobalTheory.T.existsUnique_dominating_map ℤ Ω₁ _ _ (pModelOfTie ha₁ ht₁) ℤ Ω _ s N i₁ fun p' => by
+  obtain ⟨h₁, hh₁, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.ChMorph.existsUnique_dominates ℤ Ω₁ _ _ (pModelOfTie ha₁ ht₁) ℤ Ω _ s N i₁ fun p' => by
     obtain ⟨c, hc⟩ := N.tie.cover p'
     exact mem_ctrSet (x := x₁) i₁ (key hc).1
-  obtain ⟨h₂, hh₂, -⟩ := GlobalTheory.T.existsUnique_dominating_map ℤ Ω₂ _ _ (pModelOfTie ha₂ ht₂) ℤ Ω _ s N i₂ fun p' => by
+  obtain ⟨h₂, hh₂, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.ChMorph.existsUnique_dominates ℤ Ω₂ _ _ (pModelOfTie ha₂ ht₂) ℤ Ω _ s N i₂ fun p' => by
     obtain ⟨c, hc⟩ := N.tie.cover p'
     exact mem_ctrSet (x := x₂) i₂ (key hc).2.1
   exact ⟨m, w, y, N.X, N.ξ, h₁, h₂, fun _ _ => rfl, fun _ _ => rfl, fun _ => rfl, N.all, N.tie, stalk_normal N hNN, hh₁, hh₂⟩

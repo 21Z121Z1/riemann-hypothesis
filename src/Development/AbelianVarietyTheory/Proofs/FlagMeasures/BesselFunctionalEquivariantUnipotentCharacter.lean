@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselFormConvergesEquivariantHermitianStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SmoothVectorsDenseInvariantStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselFormConvergesEquivariantHermitian
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SmoothVectorsDenseInvariant
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselSubgroupRepTwistedIsUnitaryRep
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselSubgroupsClosedUnitaryWCompact
 open MeasureTheory Matrix Formalism.QuantumDeterminants Formalism.MainNotions.S GlobalTheory.SgInf
@@ -20,10 +20,10 @@ theorem Afun_isSPsiEquiv : ∀ (k r : ℕ) {H : Type} [NormedAddCommGroup H] [In
   have hCl := _root_.GlobalTheory.SgInf.closedSub_groups k r z hz hT
   have hSsub : Sset k r z ⊆ GG k r := hCl.2.2.2.1.1
   have hhm : h * m ∈ Sset k r z := ⟨h, hh, m, hm, rfl⟩
-  have hstab := (GlobalTheory.T.smooth_vectors_dense_invariant k r σ w hRep).1
+  have hstab := (_root_.GlobalTheory.SgInfDD.DD_stable_dense k r σ w hRep).1
   have hgu : σ g u ∈ DD σ w := hstab g hg u hu
   have hmul : σ (h * m * g) = (σ (h * m)).comp (σ g) := hRep.1.2 _ (hSsub hhm) _ hg
-  have hD1 := (GlobalTheory.T.besselForm_converges_equivariant_hermitian k r σ w a μG d z c π μS hStd hSide (DD σ w : Set H)
+  have hD1 := (_root_.GlobalTheory.SgInf.BeForm.be_converges_equivariant_hermitian_continuous k r σ w a μG d z c π μS hStd hSide (DD σ w : Set H)
     (fun g hg v hv => hstab g hg v hv) hDec (σ g u) hgu v hv).2.1 (h * m) hhm
   have hPi := ((_root_.GlobalTheory.SgInf.PiUnitary.piS_unitary k r z c π hz hT hπ).1 h hh m hm).2
   unfold Afun

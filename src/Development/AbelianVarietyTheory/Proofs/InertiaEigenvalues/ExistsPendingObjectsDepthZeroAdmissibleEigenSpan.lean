@@ -14,7 +14,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LabelTwistMult
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyLocalisedFormsTypeSectionHecke
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TypeSpaceProjectionEigenOfLocalisedFormsSection
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyGroupAlgebraCentreLatticeAction
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CentralActsOnHeckeEigenspaceOfTypeSectionsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CentralActsOnHeckeEigenspaceOfTypeSections
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PointParameterIsTypeParameterOfTame
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSplitPlaceOfOverTypePrime
 open Formalism Formalism.MainNotions Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.MainNotions.N Formalism.WeaklyAdmissibleFiltrations Formalism.L2 NumberField IsDedekindDomain Formalism.ConjugateSelfDual ReciprocityTheory.Gal Module Polynomial GlobalTheory.Pass GlobalTheory.PendOf
@@ -38,6 +38,6 @@ theorem main : ∀ (D : D7) (M : MtFam D), HeckeTied D M → HeckeRational D M �
     _root_.GlobalTheory.TypeSplit.main D k _ (D.naut.plGw_over k v)
   have hPS : ParSurj D := _root_.GlobalTheory.ParOfPoint.main D hPar h0 h5 hSplit hDep hDZ
   let P : PairedCharacterCondition.Pend D := mk lz hlz hSer hZeta Ω hΩ hChar Z hZL hPr hPS
-  exact ⟨P, GlobalTheory.T.depthZeroAdmissible_all_pending_data D P hAdm, GlobalTheory.T.centralActsOnHeckeEigenspace_of_typeSections D P hSec hCT⟩
+  exact ⟨P, GlobalTheory.T.depthZeroAdmissible_all_pending_data D P hAdm, _root_.GlobalTheory.PendOf.EigSpanProof.main D P hSec hCT⟩
 
 end GlobalTheory.PendClose

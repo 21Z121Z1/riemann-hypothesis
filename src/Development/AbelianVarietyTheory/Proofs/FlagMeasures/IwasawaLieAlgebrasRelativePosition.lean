@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurableSetHsBall
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicFlagRadicalLowersLeviKeepsStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LieAlgebraOfIsCutOutByRealMatrixAlgebraStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TraceLoweringMulKeepingIsotropicFlagStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicFlagRadicalLowersLeviKeeps
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LieAlgebraOfIsCutOutByRealMatrixAlgebra
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TraceLoweringMulKeepingIsotropicFlag
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S GlobalTheory.Count GlobalTheory.FlagMeas GlobalTheory.IwConst
 
 namespace GlobalTheory.IwConst.LiePos
@@ -62,7 +62,7 @@ theorem mem_span_of_subset {S S' : Set (Formalism.REAL.UJ ε)} {d d' : ℕ} {E :
     {E' : Fin d' → Matrix (Fin n) (Fin n) ℂ} (h : IsCut ε S E) (h' : IsCut ε S' E') (hS : S ⊆ S') (i : Fin d) :
     E i ∈ Submodule.span ℝ (Set.range E') := by
   obtain ⟨A', -, -, hA', hS'⟩ := h'
-  have hT : E i ∈ A' := (GlobalTheory.T.lie_algebra_of_isCutOutByRealMatrixAlgebra n ε S d E h).2.1 A' (fun g hg => by
+  have hT : E i ∈ A' := (_root_.GlobalTheory.IwTangent.lie_algebra_of_isCut n ε S d E h).2.1 A' (fun g hg => by
     have hg' : g ∈ S' := hS hg
     rw [hS'] at hg'
     exact hg') i
@@ -70,11 +70,11 @@ theorem mem_span_of_subset {S S' : Set (Formalism.REAL.UJ ε)} {d d' : ℕ} {E :
 
 theorem lieRel : ∀ (n : ℕ) (ε : Fin n → Bool) (a : ℕ) (j : Fin a → ℕ) (W : Fin (a + 1) → Submodule ℂ (Fin n → ℂ)), IsIsoFlag ε j W → ∀ (dN dM dK dL : ℕ) (EN : Fin dN → Matrix (Fin n) (Fin n) ℂ) (EM : Fin dM → Matrix (Fin n) (Fin n) ℂ) (EK : Fin dK → Matrix (Fin n) (Fin n) ℂ) (EL : Fin dL → Matrix (Fin n) (Fin n) ℂ), IsCut ε (flagN ε W) EN → IsCut ε (flagM ε W) EM → IsCut ε (maxK ε) EK → IsCut ε (maxK ε ∩ flagM ε W) EL → LieRel EN EM EK EL := by
   intro n ε a j W hW dN dM dK dL EN EM EK EL hN hM hK hL
-  obtain ⟨hlow, hkeep⟩ := GlobalTheory.T.isotropicFlag_radical_lowers_levi_keeps n ε a j W hW
-  obtain ⟨htr, hle, hone, -⟩ := GlobalTheory.T.trace_lowering_mul_keeping_isotropicFlag n ε a j W hW
-  have hENlow : ∀ i, EN i ∈ lowers ε W := (GlobalTheory.T.lie_algebra_of_isCutOutByRealMatrixAlgebra n ε _ dN EN hN).2.1 (lowers ε W) hlow
+  obtain ⟨hlow, hkeep⟩ := _root_.GlobalTheory.IwConst.FlagMem.lowers_keeps n ε a j W hW
+  obtain ⟨htr, hle, hone, -⟩ := _root_.GlobalTheory.IwConst.FlagTrace.trace_lowers_keeps n ε a j W hW
+  have hENlow : ∀ i, EN i ∈ lowers ε W := (_root_.GlobalTheory.IwTangent.lie_algebra_of_isCut n ε _ dN EN hN).2.1 (lowers ε W) hlow
   have hEMkeep : ∀ k, EM k ∈ keeps ε W :=
-    (GlobalTheory.T.lie_algebra_of_isCutOutByRealMatrixAlgebra n ε _ dM EM hM).2.1 (keeps ε W) (fun m hm => sub_mem (hkeep m hm).1 hone)
+    (_root_.GlobalTheory.IwTangent.lie_algebra_of_isCut n ε _ dM EM hM).2.1 (keeps ε W) (fun m hm => sub_mem (hkeep m hm).1 hone)
   have hEMstar : ∀ k, (EM k)ᴴ ∈ keeps ε W := by
     let T2 : Submodule ℝ (Matrix (Fin n) (Fin n) ℂ) :=
       { carrier := {Y | Yᴴ ∈ keeps ε W}
@@ -88,7 +88,7 @@ theorem lieRel : ∀ (n : ℕ) (ε : Fin n → Bool) (a : ℕ) (j : Fin a → �
           simp only [Set.mem_ofPred_eq] at *
           rw [conjTranspose_smul, star_trivial]
           exact Submodule.smul_mem _ c hY }
-    exact (GlobalTheory.T.lie_algebra_of_isCutOutByRealMatrixAlgebra n ε _ dM EM hM).2.1 T2 (fun m hm => by
+    exact (_root_.GlobalTheory.IwTangent.lie_algebra_of_isCut n ε _ dM EM hM).2.1 T2 (fun m hm => by
       change (uMat m - 1)ᴴ ∈ keeps ε W
       rw [conjTranspose_sub, conjTranspose_one]
       exact sub_mem (hkeep m hm).2 hone)
@@ -101,7 +101,7 @@ theorem lieRel : ∀ (n : ℕ) (ε : Fin n → Bool) (a : ℕ) (j : Fin a → �
       smul_mem' := fun c Y hY => by
         simp only [Set.mem_ofPred_eq] at *
         rw [smul_mul_assoc, mul_smul_comm, hY] }
-  have hEK : ∀ i, EK i ∈ TC := (GlobalTheory.T.lie_algebra_of_isCutOutByRealMatrixAlgebra n ε _ dK EK hK).2.1 TC (fun g hg => by
+  have hEK : ∀ i, EK i ∈ TC := (_root_.GlobalTheory.IwTangent.lie_algebra_of_isCut n ε _ dK EK hK).2.1 TC (fun g hg => by
     change (uMat g - 1) * Formalism.REAL.Jm ε = Formalism.REAL.Jm ε * (uMat g - 1)
     rw [sub_mul, mul_sub, one_mul, mul_one, comm_of_maxK hg])
   have hspan : Submodule.span ℝ (Set.range EK) ≤ TC :=
@@ -115,7 +115,7 @@ theorem lieRel : ∀ (n : ℕ) (ε : Fin n → Bool) (a : ℕ) (j : Fin a → �
   have hY : Formalism.REAL.inG ε (EN i - (EN i)ᴴ) := inG_sub hG (inG_conjTranspose hG)
   have hskew : (EN i - (EN i)ᴴ)ᴴ = -(EN i - (EN i)ᴴ) := by
     rw [conjTranspose_sub, conjTranspose_conjTranspose, neg_sub]
-  refine (GlobalTheory.T.lie_algebra_of_isCutOutByRealMatrixAlgebra n ε _ dK EK hK).2.2 _ hY (fun t g hg => ?_)
+  refine (_root_.GlobalTheory.IwTangent.lie_algebra_of_isCut n ε _ dK EK hK).2.2 _ hY (fun t g hg => ?_)
   change (uMat g)ᴴ * uMat g = 1
   rw [hg]
   exact exp_unitary hskew t

@@ -48,7 +48,7 @@ theorem quad_symm (μ : Measure (GA D V)) [μ.IsHaarMeasure] (hθ : IsInfFam θ)
     (hX : ∀ a, X a ∈ lieAt V τ) (hY : ∀ b, Y b ∈ lieAt V τ) (φ ψ : Mc θ V) :
     ⟪io μ hθ (quad hθ hX hY φ), io μ hθ ψ⟫_ℂ = ⟪io μ hθ φ, io μ hθ (quad hθ hX hY ψ)⟫_ℂ :=
   symm_of_skew (io μ hθ) (fun a => der hθ τ (hX a)) (fun b => der hθ τ (hY b))
-    (fun a x y => GlobalTheory.T.derivative_skew_adjoint_cusp_forms D θ hθ V μ τ _ (hX a) x y) (fun b x y => GlobalTheory.T.derivative_skew_adjoint_cusp_forms D θ hθ V μ τ _ (hY b) x y) φ ψ
+    (fun a x y => _root_.GlobalTheory.CompanionTheory.HCCusp.inner_io_der_skew D θ hθ V μ τ _ (hX a) x y) (fun b x y => _root_.GlobalTheory.CompanionTheory.HCCusp.inner_io_der_skew D θ hθ V μ τ _ (hY b) x y) φ ψ
 
 theorem bd_of_quad (μ : Measure (GA D V)) [μ.IsHaarMeasure] (hθ : IsInfFam θ) {τ : D.what₂.Tau}
     (E : Set (Mc θ V)) {n₁ n₂ : ℕ} {X : Fin n₁ → Matrix (Fin V.rank) (Fin V.rank) ℂ}

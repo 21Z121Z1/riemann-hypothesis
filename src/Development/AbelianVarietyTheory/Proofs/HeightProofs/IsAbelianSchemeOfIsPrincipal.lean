@@ -128,7 +128,7 @@ theorem isFinFlatSurj_sumMap_iff (σ : K →+* ℂ) (A A' B : Out.PolAV (Sp (�
   · intro hs
     obtain ⟨P, pP, hP⟩ := _root_.GlobalTheory.CM.exists_polAV_isPowGrp (𝓞 K) A p
     obtain ⟨P', pP', hP'⟩ := _root_.GlobalTheory.CM.exists_polAV_isPowGrp (𝓞 K) A' q
-    obtain ⟨Q, u, v, hu, hv, huv, hQ⟩ := GlobalTheory.T.exists_prod_polAV_add_g GlobalTheory.T.abelianScheme_laws_unconditional.1 (𝓞 K) P P'
+    obtain ⟨Q, u, v, hu, hv, huv, hQ⟩ := _root_.GlobalTheory.PolProd.exists_prod_polAV GlobalTheory.T.abelianScheme_laws_unconditional.1 (𝓞 K) P P'
     have := pP.hom
     have := pP'.hom
     have := Q.isAb.comm

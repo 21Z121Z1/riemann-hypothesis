@@ -7,7 +7,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BlockInverseInt
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BlockDetOrderAdd
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermHeckeFormula
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeIndicatorIntegralIndex
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeIndexEqDiagonalStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeIndexEqDiagonal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DiagonalLatticeIndexPowStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedCharacterBlockValue
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ModulusHalfBlockValue
@@ -54,7 +54,7 @@ theorem hint_lat (E : Type) [Field E] [NumberField E] [IsCMField E] (a b : ℕ) 
     rw [e]
     exact IsInt.mul hX j2
   have := _root_.GlobalTheory.CompanionTheory.HintInd.hint_indicator_lattice E a b w (latM ϖ m) hle
-  rw [GlobalTheory.T.lattice_index_eq_diagonal E a b w ϖ hϖ i j hi hj m t1 t2, GlobalTheory.T.diagonal_lattice_index_pow E a b w ϖ hϖ i j hi hj] at this
+  rw [_root_.GlobalTheory.CompanionTheory.CtS.Tr.latM_relIndex E a b w ϖ hϖ i j hi hj m t1 t2, GlobalTheory.T.diagonal_lattice_index_pow E a b w ϖ hϖ i j hi hj] at this
   rw [Nat.cast_pow] at this
   have e2 : (fun X : Multiplicative (Matrix (Fin a) (Fin b) (w.adicCompletion E)) =>
       if IsInt w (m.1.val * Multiplicative.toAdd X) ∧ IsInt w (ϖ • (Multiplicative.toAdd X * (m.2⁻¹).val)) then (1 : ℂ) else 0) =

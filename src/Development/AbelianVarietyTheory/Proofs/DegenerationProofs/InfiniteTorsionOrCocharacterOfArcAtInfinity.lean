@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Statements.SemistableTorsion.SemistableF
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AlgOverHomSurjective
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsAffineUnitChartSmoothGroupScheme
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsBasicOpenFactorFieldPointAffineOpen
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsArcQuotientTwoVariableCoordsStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsArcQuotientTwoVariableCoords
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SubstTwoVariablesIdentities
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsLeadingQuotientWeightedArcs
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.InfinitePowCharEqOneOfAdditiveFamily
@@ -340,7 +340,7 @@ theorem dichotomy_alg (p : ℕ) [CharP k p] (hG : SmConn G)
     (hna : ¬ ∃ b : algOver k (PowerSeries k) ⟶ G, algOverHom (toK k) ≫ b = a) :
     Infinite {x : (algOver k k ⟶ G) // x ^ p = 1} ∨ ∃ f : Gm (Sp k) ⟶ G, IsMonHom f ∧ f ≠ 1 := by
   obtain ⟨A, _, _, j, ε, r, f, hc⟩ := _root_.GlobalTheory.SS.ArcInf.exists_isChart k G hG
-  obtain ⟨h, d, hd1, hh1, ht⟩ := GlobalTheory.T.exists_arcQuotient_twoVariable_coords k G A j ε r f hc a
+  obtain ⟨h, d, hd1, hh1, ht⟩ := _root_.GlobalTheory.SS.ArcInf.TwoVarSetup.exists_twoVar k G A j ε r f hc a
   have hsep := hG.2.2.1
   have hXd := mt ((_root_.GlobalTheory.subst_two_variables_identities k).1 d).1.1 hd1
   have hXh := fun i => ((_root_.GlobalTheory.subst_two_variables_identities k).1 (h i)).1.2 (hh1 i)

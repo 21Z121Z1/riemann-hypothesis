@@ -5,7 +5,9 @@ import Development.AutomorphicSpectrum.Definitions.AdelicLattices.FactPrimes
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LatNormGrLatNeZeroOfSpan
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.UltrametricDetNormStable
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.NegDefBlockOfPosDef
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsOrthogonalLocalBasis
+import Development.WeilBound.CoreStatements.SesquilinearFractions.ExistsOrthogonalLocalBasisExtension
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.PadicIntegralIffDenominator
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsLocalBasisStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LocalBasisGramDeterminantBoundStatement
 import Development.WeilBound.CoreStatements.SesquilinearFractions.GramSignatureOrthogonalSplit
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SesqSesquilinearSkewHermitian
@@ -228,7 +230,7 @@ theorem GlobalTheory.CompanionTheory.Ar.Fl.DSplit.exists_split_period : ∀ (E :
     congr 1
     simp [Fintype.sum_sum_type, Matrix.one_apply, ite_smul]
   obtain ⟨hd0, hdn⟩ := DSplit.norm_det_close D p ℓ (x ∘ Sum.inl) x' w hx' hx0 hxn
-  obtain ⟨x₂, hx₂, hb₂, horth⟩ := _root_.GlobalTheory.CompanionTheory.Relay.exists_orthogonal_local_basis E H D p q ℓ x' hpq hd0 hdn
+  obtain ⟨x₂, hx₂, hb₂, horth⟩ := _root_.PositivityTheory.Xgf.exists_orthogonal_local_basis E H D p q ℓ x' hpq hd0 hdn
   have hpos : ∀ τ : E →+* ℂ, τ (H.rt : E) = H.rt0 →
       ((gramE D (x₂ ∘ Sum.inl)).map fun a => Complex.I * τ a).PosDef := by
     intro τ hτ

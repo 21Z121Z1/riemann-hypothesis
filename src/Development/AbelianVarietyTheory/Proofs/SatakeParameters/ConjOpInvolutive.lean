@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.DualIsConjByO
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsSpanFormsNeBot
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsNormalisedThetaSub
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FunctionalFixedByIdempotentRepresentedStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsIdempotentFiniteRankAdjointCuspidalStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsIdempotentFiniteRankAdjointCuspidal
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsConjSelfDualOfInvTransposeIsoCmConjStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CuspRepDualIsoOfCommonRepresentedFunctional
 
@@ -37,7 +37,7 @@ theorem isCsd_of_paired : GlobalTheory.Published.AutomorphicFormsFiniteGL → �
   intro hP L _ _ _ a π h1 h2
   obtain ⟨B₁, l1, r1, f1, c1, x1⟩ := h1
   obtain ⟨B₂, l2, r2, f2, c2, x2⟩ := h2
-  obtain ⟨P, hP0, hPP, hfin, hadj⟩ := GlobalTheory.T.exists_idempotent_finiteRank_adjoint_cuspidal hP L a π
+  obtain ⟨P, hP0, hPP, hfin, hadj⟩ := _root_.GlobalTheory.IdemAdj.exists_idem_adj hP L a π
   obtain ⟨P₁, e1⟩ := hadj invTOp (Or.inl rfl) B₁ l1 r1 f1 c1 x1
   obtain ⟨P₂, e2⟩ := hadj conjOp (Or.inr rfl) B₂ l2 r2 f2 c2 x2
   obtain ⟨v, hv⟩ : ∃ v, P v ≠ 0 := by

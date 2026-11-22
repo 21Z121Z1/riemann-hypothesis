@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Foundations.PetEqRelIndexMul
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CuspFormGamma1InterGamma0SlashRatIsZeroAt
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MdifferentiableHeckeOperatorsExplicit
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeUOperatorExplicitSlashInvariantGamma1InterGamma0
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeUOperatorExplicitEqSumSlashStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeUOperatorExplicitEqSumSlash
 open UpperHalfPlane ModularForm CongruenceSubgroup MeasureTheory
 open scoped MatrixGroups ModularForm Manifold
 
@@ -33,7 +33,7 @@ theorem uOp_cuspForm : ∀ (N l q : ℕ) (k : ℤ), 0 < N → 0 < l → q.Prime 
               exact hU A hA
             holo' := (_root_.GlobalTheory.Hk.hecke_mdiff q k 1 (⇑f) hq.pos (CuspFormClass.holo f)).1
             zero_at_cusps' := fun {c} hc => by
-              rw [GlobalTheory.T.heckeUOperatorExplicit_eq_sum_slash q k (⇑f) hq.pos]
+              rw [_root_.GlobalTheory.Hk.uOp_eq_sum_slash q k (⇑f) hq.pos]
               exact isZeroAt_finset_sum _ c k _ fun j _ =>
                 _root_.GlobalTheory.Hk.cuspForm_slash_rat_isZeroAt N l k _ hN hl (by simp [Matrix.det_fin_two_of]; exact_mod_cast hq.pos) f c hc }, rfl⟩
 

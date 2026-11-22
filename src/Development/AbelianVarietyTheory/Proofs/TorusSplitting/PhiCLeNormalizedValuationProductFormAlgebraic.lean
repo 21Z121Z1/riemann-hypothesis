@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsOpenOfRangeGen
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.EtaProductRuleValueEqProductFormOfTestRing
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.DegenerationDataAtModelPointOfUniformisation
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.FiniteExtensionRamificationEmbedding
-import Development.AbelianVarietyTheory.Proofs.TorusSplitting.ValuationFormPsiBalancedSymmetricPeriodFormStatement
+import Development.AbelianVarietyTheory.Proofs.TorusSplitting.ValuationFormPsiBalancedSymmetricPeriodForm
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.IntegralThetaSectionExistsAndBaseChangeStatement
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.PhiCSmulPull
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.CardMulPhiLeValuationProductForm
@@ -51,7 +51,7 @@ theorem phiC_le_normalized_valuation_local_model_base_change (E : Type) [Field E
   obtain ⟨A, e', hA⟩ := _root_.GlobalTheory.EtaVal.datAt_of_uniformisation E H Dw l Xo c O β₀ Y la hB
     T io e hO y.1.x y.1.s G I y.1.x_over T' φ G' m U hU hUt _ C Pc eF f heF hy hfφ hfm
   obtain ⟨ϖ, hϖ⟩ := IsDiscreteValuationRing.exists_irreducible T'.V
-  obtain ⟨Q, β, hQ, hQ0, -, hβQ, hβ⟩ := GlobalTheory.T.valuationForm_psi_balanced_symmetric_periodForm E H T'.V G' U ϖ hϖ cj hcj
+  obtain ⟨Q, β, hQ, hQ0, -, hβQ, hβ⟩ := _root_.GlobalTheory.ValForm.main E H T'.V G' U ϖ hϖ cj hcj
   have hf1 : ∀ a, ‖((intO ↥C.S).subtype.comp f) a‖ ≤ 1 := fun a => (f a).2
   have hfi' : Function.Injective ((intO ↥C.S).subtype.comp f) :=
     (intO ↥C.S).subtype_injective.comp hfi

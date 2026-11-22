@@ -7,11 +7,11 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GFrames
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GlobalHermitianFramesTermsOrbitsLocal
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianLatticeMassEqFinprodLocal
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoordinateLatticeUniqueTermAlmostAllPlaces
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NumberFieldLatticeDeterminedByLocalLatticesStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NumberFieldLatticeDeterminedByLocalLattices
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetMassLeAndFinite
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianFramesStabilizerActsOnTermsStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianFramesStabilizerActsOnTerms
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CommonStabilizerStabilizersCommensurableVolumeStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetTermBasicFactsStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetTermBasicFacts
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianFramesComplementUnitaryNormalisesStabil
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AmplitudeMassEqOneOfSingleOrbit
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalAmplitudeSummandAtTermOrbit
@@ -54,7 +54,7 @@ theorem std_one : ∀ {F : Type} [Field F] [ValuativeRel F] [TopologicalSpace F]
       unfold Frames.mu
       rw [hK]
       simp [invVol, Subgroup.relIndex_self]
-    · rw [← e.2.1, hsΛ, (GlobalTheory.T.hermitianFrames_stabilizer_acts_on_terms L r k S d₀ Λs hterm s hs).2.1, hom]
+    · rw [← e.2.1, hsΛ, (_root_.GlobalTheory.FrameAct.stabiliser_acts_on_terms L r k S d₀ Λs hterm s hs).2.1, hom]
   obtain ⟨s, hs, e1, hmu, hom1⟩ := key Λ hΛ
   obtain ⟨s', hs', e2, -, -⟩ := key Λ' hΛ'
   refine ⟨⟨h * (s' * s⁻¹) * h⁻¹, tr2.1 _ (S.St.mul_mem hs' (S.St.inv_mem hs)), ?_⟩, hmu, hom1⟩
@@ -86,7 +86,7 @@ theorem term_of_LRel {A : Places F E sig} {r k : ℕ} (G : GFrames A r k) (hk : 
   refine ⟨hl, fun p => ?_⟩
   obtain ⟨s, hs, hsp⟩ := e p
   rw [hsp]
-  exact (GlobalTheory.T.hermitianFrames_stabilizer_acts_on_terms (A.L p) r k (G.S p) (d p) _ (hΓ.2 p) s hs).1
+  exact (_root_.GlobalTheory.FrameAct.stabiliser_acts_on_terms (A.L p) r k (G.S p) (d p) _ (hΓ.2 p) s hs).1
 
 end GlobalTheory.HL.ProdStruct
 
@@ -98,7 +98,7 @@ theorem product_structure : ∀ {F E : Type} [Field F] [NumberField F] [Field E]
   obtain ⟨Λ₀, hΛ₀⟩ := id hex
   have orb := _root_.GlobalTheory.HL.GlobalOrbits.global_terms_orbits A r k G hk d hex
   have hstd := _root_.GlobalTheory.HL.StdPlace.coordinate_lattice_standard A r k G hk
-  have hrec := GlobalTheory.T.numberField_lattice_determined_by_local_lattices A _ Λ₀ hΛ₀.1
+  have hrec := _root_.GlobalTheory.HL.PlacesRec.lattice_local A _ Λ₀ hΛ₀.1
   have hfin := (hstd.union hrec.2.2).union hPfin
   set s := hfin.toFinset with hs_def
 
@@ -135,11 +135,11 @@ theorem product_structure : ∀ {F E : Type} [Field F] [NumberField F] [Field E]
     intro p Λ h hh
     constructor
     · rintro ⟨h1, h2⟩
-      have e := GlobalTheory.T.hermitianFrames_stabilizer_acts_on_terms (A.L p) r k (G.S p) (d p) _ h1 h⁻¹ ((G.S p).St.inv_mem hh)
+      have e := _root_.GlobalTheory.FrameAct.stabiliser_acts_on_terms (A.L p) r k (G.S p) (d p) _ h1 h⁻¹ ((G.S p).St.inv_mem hh)
       rw [inv_smul_smul] at e
       exact ⟨e.1, by simpa using hPinv p h⁻¹ ((G.S p).St.inv_mem hh) _ h1 h2⟩
     · rintro ⟨h1, h2⟩
-      exact ⟨(GlobalTheory.T.hermitianFrames_stabilizer_acts_on_terms (A.L p) r k (G.S p) (d p) _ h1 h hh).1, hPinv p h hh Λ h1 h2⟩
+      exact ⟨(_root_.GlobalTheory.FrameAct.stabiliser_acts_on_terms (A.L p) r k (G.S p) (d p) _ h1 h hh).1, hPinv p h hh Λ h1 h2⟩
   let O := fun p => MulAction.orbitRel.Quotient (G.S p).St (Submodule (A.L p).O (G.S p).V)
   let Φ : Quot G.LRel → ∀ p, O p := fun c p => Quotient.mk'' (A.lat p c.out)
   let U : ∀ p, Set (O p) := fun p => {o | (G.S p).IsTerm (d p) o.out}
@@ -154,7 +154,7 @@ theorem product_structure : ∀ {F E : Type} [Field F] [NumberField F] [Field E]
       gM p (Quotient.mk'' (A.lat p Γ)) = (if P p (A.lat p Γ) then ENNReal.ofReal ((G.S p).mu (A.lat p Γ)) else 0) := by
     intro Γ hΓ p
     have t := _root_.GlobalTheory.HL.amp_summand_orbit (A.L p) r k (G.S p) (d p) (fun Λ => (G.S p).IsTerm (d p) Λ ∧ P p Λ) (hPinv' p)
-      (A.lat p Γ) (hΓ.2 p) ((GlobalTheory.T.numberField_lattice_determined_by_local_lattices A _ Γ hΓ.1).2.1 p) _ rfl
+      (A.lat p Γ) (hΓ.2 p) ((_root_.GlobalTheory.HL.PlacesRec.lattice_local A _ Γ hΓ.1).2.1 p) _ rfl
     simp only [and_self_left, hΓ.2 p, true_and] at t
     exact ⟨t.1, t.2.2.1, t.2.2.2⟩
   have hUfin : ∀ p ∈ s, (U p).Finite := fun p _ => (_root_.GlobalTheory.HL.MassGlue.mass_le_and_finite (A.L p) r k (G.S p) (by omega) (d p)).2

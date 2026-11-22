@@ -7,7 +7,8 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Ia
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FractionalIdealEqOfLocalSpansEq
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.SaturatedPf
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FlagCoeffIdealOfLatticeFgAndMemIffStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LatticeInfIsotropicEqSumFractionalIdealSmulStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LatticeInfIsotropicEqSumFractionalIdealSmul
+import Formalism.SharpRestriction.CuspSpanNormBounds.IsPrimitiveSub
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SpanCoefficientIdealEqSpanFrameScale
 
 noncomputable section
@@ -37,7 +38,7 @@ theorem xlam_eq_span_scaled : ∀ (D : D7) (T : D.host.E) (G : LFlag (VS D) D.R.
     have h := Formalism.L2.SG.Pf.locDiffC_holds D Z p a.castSucc
     simp only [Fin.coe_castSucc] at h
     exact h.symm
-  obtain ⟨e', he, hX⟩ := GlobalTheory.T.lattice_inf_isotropic_eq_sum_fractionalIdeal_smul (VS D) D.R.rS T G Λ
+  obtain ⟨e', he, hX⟩ := _root_.GlobalTheory.RowLatAssembly.xLam_eq_span (VS D) D.R.rS T G Λ
     (fun a => ddS D ^ (-((D.R.rS : ℤ) - (a : ℕ)))) (fun a => zpow_ne_zero _ hdd)
     (fun a x hx hxa => by
       have h1 : G.fl.coefX x a ∈ GlobalTheory.RowLatXS.Ia Λ G.fl a :=

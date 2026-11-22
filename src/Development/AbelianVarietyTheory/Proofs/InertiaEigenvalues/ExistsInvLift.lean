@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AcrisTorsio
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DeRhamPotSemistable
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsApproxRootEisensteinAwayPrime
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilKisinApproxRootImageIndep
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EisensteinImagePowIdealAinfPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EisensteinImagePowIdealAinfProperties
 
 noncomputable section
 
@@ -71,7 +71,7 @@ theorem cancel_pow_l (k : ℕ) (a : Ainf l) (h : bk.ev bk.E ^ m ∣ (l : Ainf l)
   induction k generalizing a with
   | zero => simpa using h
   | succ k ih =>
-    apply (GlobalTheory.T.eisensteinImage_pow_ideal_ainf_properties l K bk m).1
+    apply (_root_.GlobalTheory.AinfEPow.ePow_facts l K bk m).1
     apply ih
     rwa [pow_succ, mul_assoc] at h
 

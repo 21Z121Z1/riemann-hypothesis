@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.HolomorphicHomDetermined
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsUniqueSpecializes
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.BCTools
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaConstantBoundedByShortestVectorStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaConstantBoundedByShortestVector
 import Development.AbelianVarietyTheory.Statements.SemistableTorsion.UTorsSt
 import Development.AbelianVarietyTheory.PublishedTheorems.SemistableReduction₂.SemistableReductionSt
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
@@ -233,7 +233,7 @@ theorem closure_unit_theta : Laws → Laws2 → UTorsSt → ∀ (o Ω : Type) [C
   have hδ := hc.trans_le hcδ
   have hsub : {x | ‖y₀ ⟨S.th x, S.th_mem x⟩‖ = S.delta y₀} ⊆ l.yy.ker := fun x hx => by
     have hx : ‖y₀ ⟨S.th x, S.th_mem x⟩‖ = S.delta y₀ := hx
-    obtain ⟨w, hw, hw'⟩ := GlobalTheory.T.thetaConstant_bounded_by_shortestVector hL hL₂ hT o Ω S ρ p y₀ u l hy x (norm_pos_iff.1 (hx ▸ hδ))
+    obtain ⟨w, hw, hw'⟩ := _root_.GlobalTheory.ZH.TestVal.main hL hL₂ hT o Ω S ρ p y₀ u l hy x (norm_pos_iff.1 (hx ▸ hδ))
     rw [hx, le_mul_iff_one_le_right hδ, Real.one_le_exp_iff, neg_nonneg] at hw'
     have hpos : (0 : ℝ) < ((S.r * S.N : ℕ) : ℝ) ^ 2 := pow_pos (Nat.cast_pos.2 (NeZero.pos _)) 2
     have hq : l.q w ≤ 0 := not_lt.1 fun h => (div_pos h hpos).not_ge hw'

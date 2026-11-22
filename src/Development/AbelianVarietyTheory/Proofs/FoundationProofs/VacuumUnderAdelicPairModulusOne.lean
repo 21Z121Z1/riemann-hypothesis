@@ -4,12 +4,12 @@ import Formalism.PairingDivisors.StatementH
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RationalPointsIntegralPointsMembership
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLatticeOfAdelicPoint
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UnitaryHeckeCharacterValues
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaSpaceSelfDualPairAtMostLineStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmFiniteAdeleIntegralSeparatedCompleteStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaSpaceSelfDualPairAtMostLine
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmFiniteAdeleIntegralSeparatedComplete
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCmIdempotentsSelectConjugatePrimes
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsRationalPointOfMemMovedThetaLattice
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmThetaLatticePointMemThetaLatticeOfAdelic
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmFiniteAdeleStrongApproxModAdelicIdealStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmFiniteAdeleStrongApproxModAdelicIdeal
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsHalfIdem
 
 open NumberField Classical Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.TaylorLogMetric Formalism.MainNotions.StandardLatticesGL3 GlobalTheory.NormSum
@@ -118,14 +118,14 @@ theorem MI_bound (hc : cc ≠ ⊥) (P : Matrix (Fin a) (Fin a) (AE D)) (Q : Matr
   refine ⟨n * n', Nat.mul_pos hn hn', fun m M hM i j => ?_⟩
   choose y hy e using hM
   refine ⟨∑ l, ∑ k, ((n : AE D) * P i k * ((n' : AE D) * Q l j)) * y k l,
-    sum_mem fun l _ => sum_mem fun k _ => (GlobalTheory.T.cmFiniteAdele_strong_approx_mod_adelicIdeal D cc hc).2.2 _ (mul_mem (hP _ _) (hQ _ _)) _ (hy _ _), ?_⟩
+    sum_mem fun l _ => sum_mem fun k _ => (_root_.GlobalTheory.AdelicApprox.approx_mod_ideal D cc hc).2.2 _ (mul_mem (hP _ _) (hQ _ _)) _ (hy _ _), ?_⟩
   simp only [Matrix.mul_apply, Finset.sum_mul, Finset.mul_sum, e]
   refine Finset.sum_congr rfl fun l _ => Finset.sum_congr rfl fun k _ => ?_
   push_cast; ring
 
 theorem MI_approx (hc : cc ≠ ⊥) (M : Matrix (Fin a) (Fin b) (AE D)) (m : ℕ) (hm : 0 < m) :
     ∃ z : Matrix (Fin a) (Fin b) D.host.E, MI D cc m (z.map (inc D) - M) := by
-  choose e t ht h using fun i j => (GlobalTheory.T.cmFiniteAdele_strong_approx_mod_adelicIdeal D cc hc).1 (M i j) m hm
+  choose e t ht h using fun i j => (_root_.GlobalTheory.AdelicApprox.approx_mod_ideal D cc hc).1 (M i j) m hm
   exact ⟨Matrix.of e, fun i j => ⟨t i j, ht i j, h i j⟩⟩
 
 end
@@ -157,7 +157,7 @@ theorem klat {D : D7} (T : Tor D) {N N' : ℕ} {g : GA D N} {g' : GA D N'} {L₁
 theorem wd_fix {D : D7} (h1 : admG1 D) {cc : Ideal (𝓞 D.host.K)} {δ : ℂ} (hc : Crv D cc δ) {N N' : ℕ}
     {A : AddSubgroup (VC D N N')} (hA : KLat D (tor0 D cc δ) A) {F : VC D N N' → ℂ}
     (hF : F ∈ ThSp D (tor0 D cc δ) A) {x : VC D N N'} (hx : x ∈ A) : Wd D (tor0 D cc δ) x F = F := by
-  rw [(GlobalTheory.T.theta_space_selfDual_pair_at_most_line D h1 cc δ hc N N' A hA).2.1 x hx]
+  rw [(_root_.GlobalTheory.ThetaLine.theta_line D h1 cc δ hc N N' A hA).2.1 x hx]
   exact funext (hF.2 x hx)
 
 theorem vac_TT {D : D7} (h1 : admG1 D) {cc : Ideal (𝓞 D.host.K)} {δ : ℂ} (hc : Crv D cc δ) {N N' : ℕ}
@@ -181,7 +181,7 @@ theorem exists_scalar {D : D7} (hI : Inp D) {cc : Ideal (𝓞 D.host.K)} {δ : �
     intro h0
     rw [h0, iop_zero] at hinv
     exact W.nz hinv.symm
-  obtain ⟨hline, hW, -⟩ := GlobalTheory.T.theta_space_selfDual_pair_at_most_line D hI.g1 cc δ hc N N' _ k1
+  obtain ⟨hline, hW, -⟩ := _root_.GlobalTheory.ThetaLine.theta_line D hI.g1 cc δ hc N N' _ k1
   suffices hG : W.Om g g' e0 ∈ ThSp D (tor0 D cc δ) (La D (tor0 D cc δ) L₁ L₁') from hline _ hG _ hF hF0
   refine ⟨(W.maps g g' e0 hT).1, fun x hx => ?_⟩
   suffices hs : Wd D (tor0 D cc δ) x (W.Om g g' e0) = W.Om g g' e0 by

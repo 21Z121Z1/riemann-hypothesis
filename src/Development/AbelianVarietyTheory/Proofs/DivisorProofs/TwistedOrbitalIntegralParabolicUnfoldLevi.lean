@@ -4,8 +4,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedOrbitalInteg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrbitalIntegralSemidirectProductUnfolding
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBlockUpperParabolicLeviProjectionUnipotent
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemTwistedCentralizerBlockIff
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemCompactPartParabolicCentralizerIffBlockDiagonStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentralizerInfConjIntegralGLProdLeCptPartStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemCompactPartParabolicCentralizerIffBlockDiagon
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentralizerInfConjIntegralGLProdLeCptPart
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteIndexLeviSubgroupUnipotentConjIntegr
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteParabolicDoubleCosetsOrbitalIntegral
 open NumberField IsDedekindDomain Matrix Polynomial Filter GlobalTheory.CuspRep GlobalTheory.PRep Formalism.UG Formalism.BasicNotions GlobalTheory.UnitaryBC Formalism.L2.Host GlobalTheory.BCT
@@ -32,7 +32,7 @@ theorem twistedOrbitalIntegral_parabolic_unfolding : ∀ (E : Type) [Field E] [N
   have hγs : (⟨blk (Nat.add_sub_cancel' ha) w m 0, hγ⟩ : GlobalTheory.LeviDesc.parP a n w) = s m := Subtype.ext (hs m).symm
   have hfin := _root_.GlobalTheory.LeviDesc.OrbFin.fin_doubleCosets E n a (n - a) (Nat.add_sub_cancel' ha) w f hf m hsep hγ
   have hcent := _root_.GlobalTheory.LeviDesc.mem_twistedCentralizer_parabolic_iff E n a (n - a) (Nat.add_sub_cancel' ha) w m hsep hγ
-  have hcpt := GlobalTheory.T.mem_compactPart_parabolicCentralizer_iff_blockDiagonal E n a (n - a) (Nat.add_sub_cancel' ha) w m hsep hγ
+  have hcpt := _root_.GlobalTheory.LeviDesc.CptLevi.mem_compactPart_parabolic_iff E n a (n - a) (Nat.add_sub_cancel' ha) w m hsep hγ
   rw [hγs] at hfin hcent hcpt ⊢
   have hrhs : GlobalTheory.LeviDesc.orbN (Nat.add_sub_cancel' ha) w f = fun m' => hint (intMat a (n - a) w) (fun X =>
       (fun p : GlobalTheory.LeviDesc.parP a n w => GlobalTheory.LeviDesc.cavg (GlobalTheory.LFun.KGL w n) f (p : GLw n w)) ((u X)⁻¹ * s m' * u X)) := by
@@ -49,7 +49,7 @@ theorem twistedOrbitalIntegral_parabolic_unfolding : ∀ (E : Type) [Field E] [N
     rw [hcpt]
     simp only [Subtype.ext_iff, hs]
   · intro q
-    exact GlobalTheory.T.centralizer_inf_conj_integralGLProd_le_cptPart E a (n - a) w m q
+    exact _root_.GlobalTheory.CentCpt.twCent_inf_conjKK_le_cptPart E a (n - a) w m q
   · intro X
     obtain ⟨U, hU, hUi, hUk⟩ := _root_.GlobalTheory.LeviDesc.ConjStab.exists_stab E n a (n - a) (Nat.add_sub_cancel' ha) w (Multiplicative.toAdd X)
     refine ⟨U, hU, hUi, fun k hk => ?_⟩

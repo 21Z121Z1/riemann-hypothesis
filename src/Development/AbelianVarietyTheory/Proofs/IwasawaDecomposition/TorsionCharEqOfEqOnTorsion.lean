@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFlagFrame
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLocalFiniteTorsionSplittingStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLocalFiniteTorsionSplitting
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitTorsAlgClosedFractionField
 import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.IsFractionRingIntO
 
@@ -95,7 +95,7 @@ theorem exists_finPart_local [IsLocallyNoetherian X] (R : Type) [CommRing R] [Is
     ∃ (B₀ : Type) (_ : CommRing B₀) (_ : Algebra R B₀) (u : Over.mk (spMap (algebraMap R B₀) ≫ x) ⟶ t.G),
       IsFinPart t x q u ∧ ∀ (B : Type) [CommRing B] [Algebra R B] [Module.Finite R B]
         (w : Over.mk (spMap (algebraMap R B) ≫ x) ⟶ t.G), w ^ q = 1 → Thru t u.left (algebraMap R B) w.left := by
-  obtain ⟨f, B₀, _, _, u, hf, hu, hk⟩ := GlobalTheory.T.exists_local_finite_torsion_splitting E H X t R x q hq hs (IsLocalRing.maximalIdeal R) inferInstance
+  obtain ⟨f, B₀, _, _, u, hf, hu, hk⟩ := _root_.GlobalTheory.SplitFinitePart.exists_finite_part E H X t R x q hq hs (IsLocalRing.maximalIdeal R) inferInstance
   have hfu : IsUnit f := by
     by_contra hn
     exact hf hn

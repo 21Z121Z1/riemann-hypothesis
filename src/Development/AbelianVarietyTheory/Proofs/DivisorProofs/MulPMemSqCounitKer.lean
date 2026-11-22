@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquarePresentationO
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalFactorAtAugmentationCounitalComul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPresentationSquareAtPointOfLocalFactor
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftSquarePresentationOfFlat
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CotangentMapInjectiveOfSquarePresentationAtPointStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CotangentMapInjectiveOfSquarePresentationAtPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulPFlat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivGroupMulPUnitFibreEqLevelOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NatCastSmulMemAugIdealSqSupMapMulP
@@ -136,6 +136,6 @@ theorem GlobalTheory.PDivGroup.mulP_mem_sq_counit : ∀ (p : ℕ) [Fact p.Prime]
           (algebraMap (G.A n) (G.A (n + 1))) := by
     rw [hker]
     exact _root_.GlobalTheory.PDivGroup.natCast_smul_mem_augSq_sup_map p O G n
-  have := GlobalTheory.T.cotangent_map_injective_of_square_presentation_at_point O (G.A n) (G.A (n + 1)) (Fin s ⊕ Fin r) (Bialgebra.counitAlgHom O (G.A (n + 1))) x f (p : O)
+  have := _root_.GlobalTheory.CotangentSquare.cotangent_map_injective_of_square_presentation O (G.A n) (G.A (n + 1)) (Fin s ⊕ Fin r) (Bialgebra.counitAlgHom O (G.A (n + 1))) x f (p : O)
     hp0 hxs hf0 hfker hpt b hb
   rwa [hker] at this

@@ -5,7 +5,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.Fa
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.OmBStatement
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.WtSubOneLe
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsSatFrame
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DepthNonnegIntegralOperatorIntegralVectorsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DepthNonnegIntegralOperatorIntegralVectors
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferentialOperatorDepthLeDividedPowerContentStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatrixVariablesDeterminantPowMonomialShape
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DividedPowerContentValuationDetPowBounds
@@ -38,7 +38,7 @@ theorem detDepth_bounds : ∀ (C : Type) [Field C] [CharZero C] (v : AddValuatio
   obtain ⟨hhom, hint, -, -⟩ := _root_.GlobalTheory.DetPowShape.detPow_shape C i c
   have h0 : 0 ≤ detDepth G u c := by
     unfold detDepth
-    exact GlobalTheory.T.depth_nonneg_integral_operator_integral_vectors C v (Fin i) (fun _ => d) (fun _ => G) (fun _ => Fin i) (fun _ => u)
+    exact _root_.GlobalTheory.DepthNonneg.depth_nonneg C v (Fin i) (fun _ => d) (fun _ => G) (fun _ => Fin i) (fun _ => u)
       (detPow C i c) (fun _ a e => hu.1 a e)
       (fun α => by obtain ⟨n, hn⟩ := hint α; rw [hn]; exact intCast_isInt v n)
   have h1 : detDepth G u c ≤ content v (detPow C i c) := by

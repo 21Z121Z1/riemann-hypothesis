@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsGaugeAll
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicFlagLeviMaxCompactClosedSubgroups
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DetConjOnMatricesKillingIntoSubspaceStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DetConjOnMatricesKillingIntoSubspace
 
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S GlobalTheory.Count GlobalTheory.FlagMeas
 
@@ -264,7 +264,7 @@ theorem flag_finrank_det : ∀ (n : ℕ) (f g : Matrix (Fin n) (Fin n) ℂ) (r :
     homSub_stable (GlobalTheory.FlagLeviGroup.inv_keeps hgf P hP) hQ
   have key := fun (P Q : Submodule ℂ (Fin n → ℂ)) (hP : ∀ y ∈ P, f *ᵥ y ∈ P)
       (hQ : ∀ y ∈ Q, f *ᵥ y ∈ Q) =>
-    GlobalTheory.T.det_conj_on_matrices_killing_into_subspace n f g P Q (homSub P Q) hfg hdet hP hQ (fun _ => mem_homSub)
+    _root_.GlobalTheory.HomConjDet.det_conj_hom n f g P Q (homSub P Q) hfg hdet hP hQ (fun _ => mem_homSub)
   have hmono : ∀ k, F k ≤ F (k + 1) := fun k => hF (Nat.le_succ k)
   have hK0 : killing N (F 0) = N := by
     ext X

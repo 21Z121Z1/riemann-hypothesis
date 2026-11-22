@@ -15,7 +15,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardPairFirstMe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardPairSecondMemberHalfIsometryMoved
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HaarFundamentalDomainMapIsometryConj
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockPureTensorIsometryMovedOrthonormal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsConstSeesawTripleTransportIsometriesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsConstSeesawTripleTransportIsometries
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links Formalism.L2.Theta IsDedekindDomain NumberField Finset
 open Formalism.DivisionValues (vw)
@@ -43,7 +43,7 @@ theorem GlobalTheory.TriMove.transport_bottom : ∀ {D : D7} {T : Type} {Lc : Le
   obtain ⟨IA'⟩ := _root_.GlobalTheory.BottomIsom.isoMat_of_posDef e2 nY2 nX2
   obtain ⟨IW⟩ := _root_.GlobalTheory.BottomIsom.isoMat_of_posDef e3 nY3 nX3
   refine ⟨triMove IA IA' IW Y, ⟨hp, hq, rX1, negRightMulLetterShift, nX1, nX2, nX3, ?_⟩,
-    fun c hc => GlobalTheory.T.isConst_seesawTriple_transport_isometries IA IA' IW Y W.ψ W.θ isY.isVac.2.inf c hc⟩
+    fun c hc => _root_.GlobalTheory.TriMoveConst.isConst_triMove IA IA' IW Y W.ψ W.θ isY.isVac.2.inf c hc⟩
   exact
     { rank := isX.rank
       rigA := GlobalTheory.T.isometryMovedRigging_is IA _ isY.rigA

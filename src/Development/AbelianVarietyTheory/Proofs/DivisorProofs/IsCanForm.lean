@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsDatNeZero
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionTowerPresentationCotangentPullbackResRigiStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionTowerPresentationCotangentPullbackResRigi
 
 set_option autoImplicit false
 
@@ -34,7 +34,7 @@ theorem isCan_form : ∀ (R : Type) [CommRing R] (A : Over (Sp R)) [GrpObj A] (p
     (t : G.TorsionTower A) (β : Form (A.hom ≫ 𝟙 _)) (hβ : Form.cl _ β ∈ primDR A),
     ∃ w : G.omega, (∀ n, w.1 n = cotVal β.1 (t.y n)) ∧ IsCan t ⟨_, hβ⟩ (G.rigOfOmega w) := by
   intro R _ A _ p G t β hβ
-  refine ⟨⟨(formDat t β hβ).om, fun n ↦ GlobalTheory.T.torsionTowerPresentation_cotangentPullback_res_rigidification R A p G t _ (formDat t β hβ) n⟩, fun n ↦ ?_,
+  refine ⟨⟨(formDat t β hβ).om, fun n ↦ _root_.GlobalTheory.PtExt.OmRes.cotMap_res_om R A p G t _ (formDat t β hβ) n⟩, fun n ↦ ?_,
     formDat t β hβ, 0, _, fun n ↦ ?_, fun _ ↦ rfl, rfl⟩
   · change cotVal β.1 (t.y n) - dUnit R (0 : G.A n) = _
     rw [dUnit, map_zero, sub_zero]

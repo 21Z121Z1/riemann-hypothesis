@@ -18,7 +18,7 @@ private theorem nrmL_locEl {E : Type} [Field E] [NumberField E] [IsCMField E] (h
   · rfl
   · have hm : thetaGL n (cj w) (GeneralLinearGroup.map (algebraMap E (w.adicCompletion E)) δ) =
         GeneralLinearGroup.map (algebraMap E (w.adicCompletion E)) (thE E n δ) :=
-      (GlobalTheory.ThetaPull.map_thetaGL _ _ _ (fun x => ((GlobalTheory.T.placeConjugation_properties_cmField E hU w).2.2.2.1 hs).1 x |>.symm) δ).symm
+      (GlobalTheory.ThetaPull.map_thetaGL _ _ _ (fun x => ((_root_.GlobalTheory.ConjAtPlace.main E hU w).2.2.2.1 hs).1 x |>.symm) δ).symm
     rw [hm, ← map_mul]
 
 theorem UpperTheory.ConvolutionTheory.G3.cptInt :

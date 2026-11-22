@@ -13,12 +13,12 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsDualHalfLa
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SelfDualLatticePairingDual
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsInvariantForm
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUniformiserFamilyHostFieldIntegers
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CentralScalarInverseUniformisersIdempotentSumStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CentralScalarInverseUniformisersIdempotentSum
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemCompletedLatticeHalfIffFrameMatrixIntegral
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IdempotentSumIntegralDivUniformisersIffReduction
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIntegralLiftResiduesIdempotentSum
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsConjugateHalfPrescribedAdjointFrameMatrix
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemCompletedLatticeConjugateHalfIffDualStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemCompletedLatticeConjugateHalfIffDual
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LatticeHalfRepresentativesModReductions
 open Formalism.BasicNotions Formalism.MainNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice IsDedekindDomain NumberField Matrix Formalism.L2.Theta Formalism.L2.DIV Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.IndefR.Datum Formalism.IndefR.FWT Formalism.L2.Pj
 open scoped TensorProduct
@@ -180,7 +180,7 @@ theorem GlobalTheory.ZRep.central_reps : ∀ (D : D7) (G : Type) [Group G] [Fint
   subst heQ
   have hc : (∑ PP ∈ R.Q t, es PP) * cA D (∑ PP ∈ R.Q t, es PP) = 0 := hq.2
   have hϖ0 : ∀ PP ∈ R.Q t, ϖ PP ≠ 0 := fun PP hPP h0 => (hϖ PP hPP).2 (by rw [h0]; exact zero_mem _)
-  obtain ⟨hex, hZ⟩ := GlobalTheory.T.centralScalar_inverse_uniformisers_idempotent_sum D (Vc D i) (R.Q t) es ϖ hes hc hϖ0
+  obtain ⟨hex, hZ⟩ := _root_.GlobalTheory.CentralScalar.centralScalar D (Vc D i) (R.Q t) es ϖ hes hc hϖ0
   refine ⟨hex, fun z hz Λ hΛ => ?_⟩
   obtain ⟨hcen, hGf, hsupp, hdet, hinv, ha1, ha2, ha3, ha4⟩ := hZ z hz
 
@@ -231,8 +231,8 @@ theorem GlobalTheory.ZRep.central_reps : ∀ (D : D7) (G : Type) [Group G] [Fint
     fun c hci w hw hh => (H1c _ (isHalf_smul c hh)).2 (by
       rw [GlobalTheory.RedHalfDrop.frMapAdj_smul_eq]; exact isIntM_smul hci ((H1c w hh).1 hw))
   have hπci : toEAf D (cA D (cA D π)) ∈ Formalism.L2.Herm.intAf D.host.F D.host.E := by rw [cA_cA]; exact hπi
-  have Dc := GlobalTheory.T.mem_completedLattice_conjugateHalf_iff_dual D R.ψ _ _ _ _ hψ sV sW e he_idem hc heInf heInt
-  have De := GlobalTheory.T.mem_completedLattice_conjugateHalf_iff_dual D R.ψ _ _ _ _ hψ sV sW (cA D e) hce_idem hcc hceInf hceInt
+  have Dc := _root_.GlobalTheory.ConjHalfDual.mem_latO_iff_of_conjHalf D R.ψ _ _ _ _ hψ sV sW e he_idem hc heInf heInt
+  have De := _root_.GlobalTheory.ConjHalfDual.mem_latO_iff_of_conjHalf D R.ψ _ _ _ _ hψ sV sW (cA D e) hce_idem hcc hceInf hceInt
 
   let Λe : AddSubgroup (WO (Vc D i) (Wc D i)) :=
     { carrier := {w | IsHalf e w ∧ actO (Vc D i) (Wc D i) z⁻¹ 1 w ∈ Λ}

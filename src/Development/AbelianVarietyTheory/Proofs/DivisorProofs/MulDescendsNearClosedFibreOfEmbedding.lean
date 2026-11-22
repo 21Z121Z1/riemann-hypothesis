@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.QuasiCompact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AppTopBijectiveAndSurjectiveNormalDomain
 import Development.AbelianVarietyTheory.Definitions.Divisors.TateProductRigidificationTrivial
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MorphismDescendsNearFibreRigidity
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOpenMulPointOnPullbackContainingClosedFibrStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOpenMulPointOnPullbackContainingClosedFibr
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedFibreProductCoordConstantOnProjectionFibre
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MorphismLocalDescentsGlueUnion
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDescentOfEqualisedProperCoverNormal
@@ -23,7 +23,7 @@ theorem Near.law_of_emb : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRing 
   haveI := M.proper
   haveI := M.integral
   haveI := N.smooth
-  obtain ⟨O, h, hfib, hover, hpt⟩ := GlobalTheory.T.exists_open_mul_point_on_pullback_containing_closedFibre R M G' N
+  obtain ⟨O, h, hfib, hover, hpt⟩ := _root_.GlobalTheory.Mum.Near.exists_mul_pt_pullback R M G' N
   have hconst := _root_.GlobalTheory.Mum.Near.closed_fibre_constant R M G' E N fU l hl1 hl2 hsurj O h hpt
   have hflat : Flat (N.U ⊗ N.U).hom := by
     rw [Over.tensorObj_hom]; infer_instance

@@ -72,9 +72,9 @@ theorem real_maps_unique : _root_.GlobalTheory.FunPr.ThetaLocalInputs → ∀ (F
       have h1' := (hDi f' hf' (D f')).2 rfl
       rw [h.cpt k hk f hf f' hf' f₁ (D f') hf₁ h1' e.symm]
       exact h2 k hk f' hf' (D f') h1' (e ▸ hN)
-  obtain ⟨ψ, hψ⟩ := GlobalTheory.T.exists_equiv_howeDuality_realPlaces F E σ B _ _ _ _ G.M om _ _ R.p R₃.p actV (_root_.GlobalTheory.ReBase.howe_supremum_projection hKP hPV) hR.quot hR₃.quot hR.nontriv
+  obtain ⟨ψ, hψ⟩ := _root_.GlobalTheory.HoweRealKer.exists_equiv F E σ B _ _ _ _ G.M om _ _ R.p R₃.p actV (_root_.GlobalTheory.ReBase.howe_supremum_projection hKP hPV) hR.quot hR₃.quot hR.nontriv
     hR₃.nontriv (ks_p R hR) (ks_p R₃ hR₃) hR.irred hR₃.irred
-  obtain ⟨ψ₁, hψ₁⟩ := GlobalTheory.T.exists_equiv_howeDuality_realPlaces F E σ B _ _ _ _ G.M' om' _ _ R.p' R₃.p' actV' (_root_.GlobalTheory.ReBase.howe_supremum_projection hKP hPV') hR.quot' hR₃.quot'
+  obtain ⟨ψ₁, hψ₁⟩ := _root_.GlobalTheory.HoweRealKer.exists_equiv F E σ B _ _ _ _ G.M' om' _ _ R.p' R₃.p' actV' (_root_.GlobalTheory.ReBase.howe_supremum_projection hKP hPV') hR.quot' hR₃.quot'
     hR.nontriv hR₃.nontriv (ks_p' R hR) (ks_p' R₃ hR₃) (irr_p' R hR) (irr_p' R₃ hR₃)
   choose DL hDLm hDLi using actV.2.2.1
   choose DK hDKm hDKi using actV.2.2.2

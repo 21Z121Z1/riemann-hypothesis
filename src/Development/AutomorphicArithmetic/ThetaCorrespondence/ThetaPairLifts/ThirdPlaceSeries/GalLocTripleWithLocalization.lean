@@ -25,7 +25,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistSecondSte
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GaloisHodgeOfCuspidal
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ResidualCompatibleRows
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodPartEigensystemIsTripleEigensystemStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodPartEigensystemIsTripleEigensystem
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.StableGoodFormsMeetGenericType
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.GreenCuspidalIff
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TwistedPlaceLocalIndex
@@ -127,7 +127,7 @@ theorem galLoc_triple_with_localization_alt (hP : _root_.GlobalTheory.HeightCoun
   obtain ⟨Rw', hR, Bs', -⟩ := _root_.GlobalTheory.TwInputs.SideBLoc.exists_sideB_withLoc D cf Rw low Pq S hl eig θ Bs L ψ hψ
   have hg := _root_.GlobalTheory.GalAway.galoisReps_of_cgTrue_alt_alt hL hP.what₂.fin hP.what₂.gal _ T cg
   have hm := _root_.GlobalTheory.TwInputs.meetsAll_of_ties hP.greenC _ exT grp
-  have hs := GlobalTheory.T.good_part_eigensystem_is_triple_eigensystem _ _ _ _ _ _ _ _ _ Bs' nf hm cm fa
+  have hs := _root_.GlobalTheory.TwInputs.EigAll.sig_all_of_sideB _ _ _ _ _ _ _ _ _ Bs' nf hm cm fa
   exact _root_.GlobalTheory.T.side_eigen_export_alt hP.what₂.cheb hP.what₂.art _ _ _ _ _ _ _ _ _ Bs' Sb hSb ks chiT grp chr val roots hstar (eT Rw' hR) eO
     (rp Rw' hR) (rt Rw' hR) hg hs
 end GlobalTheory.GalLoc

@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsLieBase
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HodgePeriodGram
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeChartBoundsOfSchurLemW
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MumfordGoodGrowthBoundCongrGermGramStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MumfordGoodGrowthBoundCongrGermGram
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InvHodgeMetricGramMumfordGoodGrowthBoundaryChart
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MumfordGoodGrowthBoundFrameChangeOrthogonalSumma
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHodgeMetricPeriodChartAtBoundaryPoint
@@ -73,7 +73,7 @@ theorem lieGram_isGood : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] 
       · intro i hi
         exact (hbd z hzs).2 ⟨i, hi⟩ hzO
     have hGB := hfr (ch z) hzW (hzb.trans_le (min_le_left _ _)) τ
-    refine GlobalTheory.T.mumfordGoodGrowthBound_congr_germ_gram X.dim _ _ c' N' _ _ (ch z) ?_ hGB
+    refine _root_.GlobalTheory.GoodMetric.goodBound_congr_nhds X.dim _ _ c' N' _ _ (ch z) ?_ hGB
     filter_upwards [hWo.mem_nhds hzW] with u hu
     have := hform (ch.symm u) (ch.map_target hu.1.1) hu.1.2 τ
     rw [ch.right_inv hu.1.1] at this

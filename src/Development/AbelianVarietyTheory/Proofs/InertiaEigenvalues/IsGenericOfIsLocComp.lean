@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnipotentColum
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ColumnWhittakerTransformKeepsLaterLawStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuotientAverageUnipotentBlockColumnTransformEqZe
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WhittakerLawUpperTriangularUnipotentAdelicStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsMirabolicWhittakerStageOfIsCuspFormStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsMirabolicWhittakerStageOfIsCuspForm
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnipotentColumnWhittakerTransformNeZero
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSplitAdelicMatrixLocalComponent
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalUpperUnipotentAdelicUpperUnipotent
@@ -111,7 +111,7 @@ theorem isGeneric_of_isLocComp : ∀ (E : Type) [Field E] [NumberField E] [IsTot
     GlobalTheory.LocGL.IsGeneric σ.ρ := by
   rintro E _ _ _ a P w σ ⟨f, hf0, hf⟩
   obtain ⟨ψ, hψ⟩ := _root_.GlobalTheory.CuspGeneric.exists_stdPsi E
-  have hg : ∀ v, Good ψ (a - 1) (f v).1.1 := fun v => GlobalTheory.T.isMirabolicWhittakerStage_of_isCuspForm E a ψ (f v).1 (P.cusp _ (f v).2)
+  have hg : ∀ v, Good ψ (a - 1) (f v).1.1 := fun v => _root_.GlobalTheory.CuspGeneric.good_of_isCuspForm E a ψ (f v).1 (P.cusp _ (f v).2)
   have h0 : a - 1 < a ∨ a - 1 = 0 := by omega
   obtain ⟨v₀, hv₀⟩ : ∃ v, f v ≠ 0 := by
     by_contra h

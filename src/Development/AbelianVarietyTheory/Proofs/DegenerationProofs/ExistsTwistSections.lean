@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.SpanEqTopO
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AbelianSchemeProperClosureDataBasicProperties
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ImmByOfSpans
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsChartUnit
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsThetaPullbackNonzeroOnClosedFibreStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsThetaPullbackNonzeroOnClosedFibre
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry
 open scoped CategoryTheory.Obj
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -191,7 +191,7 @@ theorem exists_theta : GlobalTheory.UT.LL → ∀ (o Ω : Type) [CommRing o] [Fi
     rwa [map_natCast] at h₂
   refine ⟨⟨_, c', θ, ρ.n ^ ρ.k, hm, _, LB.isLB_pull Q.isLB Q.G.ι, secPull (Q.st ρ.i₀) Q.G.ι, w, hw, hs,
     fun z hz => ?_⟩, lbIso_refl hL⟩
-  obtain ⟨x, hx, hG', e⟩ := GlobalTheory.T.exists_theta_pullback_nonzero_on_closed_fibre hLL o Ω S ρ M U₀ EE hB Q hS hG z hz
+  obtain ⟨x, hx, hG', e⟩ := _root_.GlobalTheory.ZH.ThetaFibre.exists_mem_nonzeroLocus_fibre hLL o Ω S ρ M U₀ EE hB Q hS hG z hz
   refine ⟨⟨x, hG'⟩, ?_, e⟩
   erw [nonzeroLocus_secPull]
   exact hx

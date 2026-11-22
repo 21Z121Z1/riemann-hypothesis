@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsStableGauss
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Sl2PresentationRelations
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuadraticWeilUnipotentTorusPreserveTestStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuadraticWeilUnipotentTorusPreserveTest
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuadraticWeilFourierPreservesTestAdditive
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormGroupSignMulAndNegOne
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuadraticWeilTorusMulUnipotentCommute
@@ -189,7 +189,7 @@ open Classical in
 theorem weilField_main : WeilField := by
   intro F E _ _ _ _ _ A hK hL ψ hψ x μ hμ ω hω
   have H : Hyp A ψ x μ ω := ⟨hK, hL, hψ, hμ, hω⟩
-  have h2a := GlobalTheory.T.quadraticWeil_unipotent_torus_preserve_test F E A ψ x μ ω H
+  have h2a := _root_.GlobalTheory.JR.WeilQuad.isTest_nOp_mOp F E A ψ x μ ω H
   have h2b := _root_.GlobalTheory.JR.WeilQuad.fOp_isTest_add F E A ψ x μ ω H
   obtain ⟨hmul, hneg⟩ := _root_.GlobalTheory.JR.WeilQuad.NormSign.omega_mul_neg_one F E A ψ x μ ω H
   obtain ⟨G₁, hG₁⟩ := _root_.GlobalTheory.JR.WeilQuad.exists_stableGauss F E A ψ x μ ω H 1

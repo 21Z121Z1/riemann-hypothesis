@@ -3,12 +3,14 @@ import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBase
 import Development.AbelianVarietyTheory.Definitions.Degenerations.HomExtSt
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIsFib
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIsoOnG
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AbelianPartIsoCarriesCubeValuesStatement
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AbelianPartIsoCarriesSymmetryValuesStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AbelianPartIsoCarriesCubeValues
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AbelianPartIsoCarriesSymmetryValues
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsAbelianPartIsoThetaSectionScale
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsAbelianFibreIsoOfMatchedTorsionTheta
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsProductIsoOfFibreIsoFieldStatement
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsTorsionMapOfThetaMatchingStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsTorsionMapOfThetaMatching
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationDataTorsionStructureAlgClosed
+import Development.AbelianVarietyTheory.Definitions.Degenerations.SepticCharacterInjective
 
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry NumberField
 open scoped CategoryTheory.Obj BigOperators
@@ -70,8 +72,8 @@ theorem wVal_ne (w : BunIso φ) {f : N.A → N'.A} {x : N.A} (h : Carries ν ν'
 theorem exists_iso (hG : GlobalFnsSt) (w : BunIso φ) (hφ : HomF φ) (hw : w.IsGen) (hne : ∃ x, N'.th x ≠ 0) :
     ∃ I : NumB.Iso N.toNumB N'.toNumB, GeoIso ν ν' I ∧ ∀ x, Carries ν ν' φ x (I.φ x) := by
   obtain ⟨f, hf⟩ := exists_equiv ν ν' hφ
-  have h₁ := GlobalTheory.T.abelianPartIso_carries_cube_values hG R D D' F N N' ν ν' φ w f hφ hw hf
-  have h₂ := GlobalTheory.T.abelianPartIso_carries_symmetry_values hG R D D' F N N' ν ν' φ w f hφ hw hf
+  have h₁ := _root_.GlobalTheory.Ex.AbPartCube.theta_move hG R D D' F N N' ν ν' φ w f hφ hw hf
+  have h₂ := _root_.GlobalTheory.AbPartSym.sym_values hG R D D' F N N' ν ν' φ w f hφ hw hf
   obtain ⟨c, h₃⟩ := _root_.GlobalTheory.Ex.AbPartIso.exists_th_scale R D D' F N N' ν ν' φ w f hφ hw hf
   have h₀ := fun x => wVal_ne ν ν' w (hf x)
   have hc : c ≠ 0 := by
@@ -100,7 +102,7 @@ theorem main : Laws → ThetaPtDeterminesSt → BrUthSt → UrCSt := by
   obtain ⟨Q, Φ, hΦ⟩ := exists_isFib hL.polBaseChange D C
   obtain ⟨Q', Φ', hΦ'⟩ := exists_isFib hL.polBaseChange D' C
   obtain ⟨j₀, H⟩ := _root_.GlobalTheory.Ex.FibIso.exists_iso_fib hL hQ hU R D D' e₁ b₁ e₂ b₂ hg C N N' ν ν' Q Q' Φ Φ' hΦ hΦ' n hn ho hn0
-  choose ρ hρ hρ' hρ'' using GlobalTheory.T.exists_torsion_map_of_theta_matching C N N' q q' n _ _ hn ho hnC hI hI' hT hT' mt hA e hTm
+  choose ρ hρ hρ' hρ'' using _root_.GlobalTheory.Ex.TorsMatch.exists_torsMap C N N' q q' n _ _ hn ho hnC hI hI' hT hT' mt hA e hTm
   have key : ∀ j, j₀ ≤ j → ∃ I : NumB.Iso N.toNumB N'.toNumB, GeoIso ν ν' I ∧
       ∀ b, b ^ (n ^ j) ^ 2 = 1 → I.φ b = ρ j b := fun j hj => by
     obtain ⟨σ, hσ, hs⟩ := H j hj _ _ mt.c₀_ne (hρ j)

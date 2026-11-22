@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.SiegelKlingenDeligneRibet
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AbelContinuation
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.CongSubgroup
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.SimplicialConeTilesSignStatement
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.SimplicialConeTilesSign
 
 set_option autoImplicit false
 
@@ -61,7 +61,7 @@ theorem tile_signs (P : ConvexCone ℚ V) (s : Finset V) (hli : LinearIndepOn �
   · intro l t _ ih
     refine tile_refine (fun u hu huP hQu => ?_) ih
     refine tile_mono (fun A hA => ⟨hA.2.trans hQu.1, fun l' hl' => ?_⟩)
-      (tile_inside (GlobalTheory.T.simplicial_cone_tiles_sign P l u hu huP))
+      (tile_inside (_root_.GlobalTheory.CompanionTheory.Hypotheses₂.Shintani.Cones.TileSign.main P l u hu huP))
     rcases Finset.mem_insert.1 (Finset.mem_coe.1 hl') with rfl | h'
     · exact hA.1
     · exact signConst_mono (hQu.2 l' (Finset.mem_coe.2 h')) hA.2

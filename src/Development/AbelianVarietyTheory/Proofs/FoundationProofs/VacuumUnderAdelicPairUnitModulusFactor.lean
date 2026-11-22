@@ -26,7 +26,7 @@ theorem exists_scalar {D : D7} {cc : Ideal (𝓞 D.host.K)} {δ : ℂ} (hc : Crv
     intro h0
     rw [h0, iop_zero] at hinv
     exact W.nz hinv.symm
-  obtain ⟨hline, hW, -⟩ := GlobalTheory.T.theta_space_selfDual_pair_at_most_line D (_root_.GlobalTheory.InducedType.induced_type D).1 cc δ hc N N' _ k1
+  obtain ⟨hline, hW, -⟩ := _root_.GlobalTheory.ThetaLine.theta_line D (_root_.GlobalTheory.InducedType.induced_type D).1 cc δ hc N N' _ k1
   suffices hG : W.Om g g' e0 ∈ ThSp D (tor0 D cc δ) (La D (tor0 D cc δ) L₁ L₁') from hline _ hG _ hF hF0
   refine ⟨(W.maps g g' e0 hT).1, fun x hx => ?_⟩
   suffices hs : Wd D (tor0 D cc δ) x (W.Om g g' e0) = W.Om g g' e0 by

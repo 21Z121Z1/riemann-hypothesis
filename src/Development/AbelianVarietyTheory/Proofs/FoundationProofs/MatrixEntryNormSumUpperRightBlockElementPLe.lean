@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.StarMulOfMemKc
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsInvInvariantOfRight
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SumNormEntriesLeSumSingularValues
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MeasurableCoshPowStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MeasurableCoshPow
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LintegralExpNegMulSumNormStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LamBallULeStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExpLogNearOne
@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsHermitianL
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SumNormSqExpHermSubOneLeBlockMat
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsometricChartBlockHermitian
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InvariantMeasureLowerBoundOfChart
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoshConstNumericalBoundStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoshConstNumericalBound
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.SchurIrreducible GlobalTheory.PolarU GlobalTheory.IndefiniteRowSideFullHecke.CartanCoshPower GlobalTheory.CartanInt Matrix MeasureTheory
 
@@ -278,7 +278,7 @@ theorem lintegral_coshPow_le (m mK : Measure (UpqT p q)) (C : ℝ) (hC : 0 < C)
     {c : ℝ} (hc : 2 * (((p + q : ℕ) : ℝ) - 1) < c) :
     ∫⁻ g, ENNReal.ofReal (coshPow c g) ∂m ≤ ENNReal.ofReal (C * ((2 : ℝ) ^ (c * (min p q : ℕ)) *
       (2 * Real.pi / ((c - 2 * (((p + q : ℕ) : ℝ) - 1)) / ((((p + q : ℕ) : ℝ) + 1) / 2)) ^ 2) ^ (p * q))) := by
-  rw [hf _ (GlobalTheory.T.measurable_coshPow' p q c).ennreal_ofReal, ENNReal.ofReal_mul hC.le, ENNReal.ofReal_mul (by positivity),
+  rw [hf _ (_root_.GlobalTheory.CoshPowMeas.measurable_coshPow p q c).ennreal_ofReal, ENNReal.ofReal_mul hC.le, ENNReal.ofReal_mul (by positivity),
     ← GlobalTheory.T.lintegral_exp_neg_mul_sum_norm_matrix p q _ (div_pos (by linarith) (by positivity)), ← lintegral_const_mul' (ENNReal.ofReal (2 ^ _)) _ ENNReal.ofReal_ne_top]
   refine mul_le_mul_right (lintegral_mono fun B => ?_) _
   rw [← lintegral_mul_const' _ _ ENNReal.ofReal_ne_top, ← ENNReal.ofReal_mul (by positivity)]
@@ -294,7 +294,7 @@ theorem coshPow_anti {c c' : ℝ} (h : c ≤ c') (g : UpqT p q) : coshPow c' g �
 theorem coshFinite : CoshFinite := by
   intro p q m hm c hc
   obtain ⟨C, mK, hC, hprob, hK0, -, hf⟩ := haar_polar p q m hm.1
-  refine ⟨(GlobalTheory.T.measurable_coshPow' p q c).aestronglyMeasurable, ?_⟩
+  refine ⟨(_root_.GlobalTheory.CoshPowMeas.measurable_coshPow p q c).aestronglyMeasurable, ?_⟩
   rw [hasFiniteIntegral_iff_ofReal (Filter.Eventually.of_forall fun g => (coshPow_pos c g).le)]
   exact (lintegral_coshPow_le m mK C hC hprob hK0 hf hc).trans_lt ENNReal.ofReal_lt_top
 
@@ -316,7 +316,7 @@ theorem coshBound : CoshBound := by
   rw [integral_eq_lintegral_of_nonneg_ae (Filter.Eventually.of_forall fun g => (coshPow_pos _ g).le) hi'.1]
   refine ENNReal.toReal_le_of_le_ofReal (Real.exp_pos _).le
     ((lintegral_coshPow_le m mK C hC hprob hK0 hf hc).trans (ENNReal.ofReal_le_ofReal ?_))
-  refine le_trans ?_ (GlobalTheory.T.cosh_constant_le_exp_three_mul_sq_mul_log p q)
+  refine le_trans ?_ (_root_.GlobalTheory.CartanInt.cosh_const_numerical_bound p q)
   rw [show 2 * ((p + q : ℕ) : ℝ) - 2 * (((p + q : ℕ) : ℝ) - 1) = 2 by ring,
     show 2 * ((p + q : ℕ) : ℝ) * ((min p q : ℕ) : ℝ) = ((2 * (p + q) * min p q : ℕ) : ℝ) by push_cast; ring,
     Real.rpow_natCast]

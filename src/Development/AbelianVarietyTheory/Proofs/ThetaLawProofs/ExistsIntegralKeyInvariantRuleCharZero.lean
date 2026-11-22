@@ -15,7 +15,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsAdmissibleKeyNumericalDataPrimeTo
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.BasisPowerSectionsLocalBaseChange
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsCompleteDiscreteValuationRingWithResidues
-import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.KeyInvariantIndependentOfSectionsStatement
+import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.KeyInvariantIndependentOfSections
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.KeyInvariantBaseChange
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsKeyInvariantAlgClosedTransversal
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.GenericSectionsMeetTransversally
@@ -167,7 +167,7 @@ theorem kaSt : Out.Laws → ThetaUnifAV → GlobalTheory.TorusAlgebraic → KeyD
       ∃ (K' : Type) (_ : Field K') (_ : IsAlgClosed K') (f : K →+* K') (x' : KeyIn K') (s' : Fin x'.P.g → RR x' n)
         (κ' : K'ˣ), KeyPB x' x f ∧ KaVal x' n l l' al s' κ' := fun K _ _ _ x => by
     by_cases hx : x.P.g = g
-    · obtain ⟨κ, h₁, K', _, _, f, x', φ, w, s', κ', h₂, h₃⟩ := GlobalTheory.T.keyInvariant_independent_of_sections hL K x n l l' al (hx ▸ hA)
+    · obtain ⟨κ, h₁, K', _, _, f, x', φ, w, s', κ', h₂, h₃⟩ := _root_.GlobalTheory.KaIndep.kaVal_independent hL K x n l l' al (hx ▸ hA)
       exact ⟨κ, fun _ => ⟨h₁, K', inferInstance, inferInstance, f, x', s', κ',
         (KeyVia.main _ _ x x' _).1.2 ⟨_, _, h₂⟩, h₃⟩⟩
     · exact ⟨1, fun h => absurd h hx⟩

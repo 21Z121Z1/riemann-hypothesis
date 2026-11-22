@@ -5,7 +5,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EqZeroOfIsInteg
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GoodConstOfAniso
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SumFrameIdem
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorusArchimedeanFrameAction
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConeFrameWeightRatioBoundStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConeFrameWeightRatioBound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MinimalParabolicFrameBlockZero
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactFiniteAdelicDenominatorStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FrameBlockZeroStabilizesFlag
@@ -81,7 +81,7 @@ theorem frameLev_le (s : Fin r) (α : FrameIx r) : frameLev s α ≤ 2 := by
 
 theorem block_bound : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberField E] [Algebra F E] (σ : E →ₐ[F] E), IsCMExt F E σ → ∀ (n : ℕ) (J : Matrix (Fin n) (Fin n) E), IsHermND σ J → ∀ (r : ℕ) (X Y : Matrix (Fin n) (Fin r) E), IsWittFrame σ J X Y → ∀ (Ω C : Set (GAd σ J)), IsCompact Ω → Ω ⊆ minParOne σ J X → IsCompact C → ∀ c : ℝ, 0 < c → ∃ B : ℝ, 0 ≤ B ∧ ∀ p ∈ Ω, ∀ t ∈ cone r c, ∀ a, IsTorusElt σ J X Y t a → ∀ m ∈ C, ∀ (w : InfinitePlace F) (τ : EmbOver E w) (s : Fin r) (α β : FrameIx r), frameLev s α < 2 → frameLev s β = 2 → ∀ u v : Fin n, ‖((frameIdem (σ : E →+* E) J X Y α).map τ.1 * archMat σ J τ (projArch σ J w (p * a * m * a⁻¹ * p⁻¹)) * (frameIdem (σ : E →+* E) J X Y β).map τ.1) u v‖ ≤ B / ratio t s := by
   intro F E _ _ _ _ _ σ h n J hJ r X Y hW Ω C hΩ hΩP hC c hc
-  obtain ⟨K, hK0, hK⟩ := GlobalTheory.T.cone_frame_weight_ratio_bound r c hc
+  obtain ⟨K, hK0, hK⟩ := _root_.GlobalTheory.CompanionTheory.RapidDecay.frameWt_div_le_div_ratio r c hc
   have hb : ∀ q : (Σ w : InfinitePlace F, EmbOver E w) × FrameIx r × FrameIx r × FrameIx r × FrameIx r × Fin n × Fin n,
       ∃ B : ℝ, ∀ x ∈ Ω ×ˢ C,
       ‖((frameIdem (σ : E →+* E) J X Y q.2.1).map q.1.2.1 * archMat σ J q.1.2 (projArch σ J q.1.1 x.1) *

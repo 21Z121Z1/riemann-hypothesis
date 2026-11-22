@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HESmulRight
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsGeneratorCmDifferentIdealScaled
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaLatticeImageRationalHomLatticeStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaLatticeImageRationalHomLattice
 
 noncomputable section
 
@@ -151,7 +151,7 @@ theorem Hf_Row (δ : ℂ) {N N' : ℕ} (t₀ : D.host.E) (b x : Fin N → D.host
 
 theorem Pt_mem {δ : ℂ} (hδ : δ ≠ 0) {N N' : ℕ} {L : Lat D N} (hL : SD D L) (z : Fin N' → Fin N → D.host.E) :
     Pt D cc δ N N' z ∈ La D (tor0 D cc δ) L (stdL D N') ↔ ∀ i, z i ∈ IC D cc L := by
-  obtain ⟨h1, h2, -, h4⟩ := GlobalTheory.T.thetaLattice_image_rationalHomLattice D cc δ hδ N N'
+  obtain ⟨h1, h2, -, h4⟩ := _root_.GlobalTheory.ThetaLatImage.theta_lattice_image D cc δ hδ N N'
   rw [h2]
   constructor
   · rintro ⟨w, hw, e⟩
@@ -163,7 +163,7 @@ theorem Pt_mem {δ : ℂ} (hδ : δ ≠ 0) {N N' : ℕ} {L : Lat D N} (hL : SD D
 
 theorem exists_Pt {δ : ℂ} (hδ : δ ≠ 0) {N N' : ℕ} {L : Lat D N} {v : VC D N N'}
     (hv : v ∈ La D (tor0 D cc δ) L (stdL D N')) : ∃ z, v = Pt D cc δ N N' z := by
-  obtain ⟨w, -, e⟩ := ((GlobalTheory.T.thetaLattice_image_rationalHomLattice D cc δ hδ N N').2.1 L _ v).1 hv
+  obtain ⟨w, -, e⟩ := ((_root_.GlobalTheory.ThetaLatImage.theta_lattice_image D cc δ hδ N N').2.1 L _ v).1 hv
   exact ⟨w, e⟩
 
 theorem single_mem {δ : ℂ} (hδ : δ ≠ 0) {N N' : ℕ} {L : Lat D N} (hL : SD D L) (i : Fin N')

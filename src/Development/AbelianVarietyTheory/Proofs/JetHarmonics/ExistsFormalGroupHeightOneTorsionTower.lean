@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Jets.PowerSeriesHasSumAt
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MvPowerSeriesIntegralBoundedClosureStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MvPowerSeriesIntegralBoundedClosure
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PowerSeriesEvalTsumUnitDiscPropertiesAlt
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FormalGroupNatMulSeriesProperties
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsRootOpenDiscOfWeierstrassDegree
@@ -11,7 +11,7 @@ namespace GlobalTheory.ConvSer
 
 theorem intg_nMul_of_intg (K : Type) [NormedField K] [IsUltrametricDist K] (F : FormalGroup K)
     (hF : Intg F.toPowerSeries) (n : ℕ) : Intg (nMul F n) := by
-  obtain ⟨-, -, -, -, hX, -, hsub, -⟩ := GlobalTheory.T.mvPowerSeries_integral_bounded_closure K Unit
+  obtain ⟨-, -, -, -, hX, -, hsub, -⟩ := _root_.GlobalTheory.BddAlg.bdd_alg K Unit
   induction n with
   | zero =>
     rw [nMul_zero]
@@ -40,7 +40,7 @@ theorem exists_torsion_tower (K : Type) [NormedField K] [IsUltrametricDist K] [C
   have hpr : p.Prime := Fact.out
   have hI := intg_nMul_of_intg K F hF p
   set h := nMul F p with hh
-  obtain ⟨-, -, hpow, -, -, -, -, -, -, hiff⟩ := GlobalTheory.T.mvPowerSeries_integral_bounded_closure K Unit
+  obtain ⟨-, -, hpow, -, -, -, -, -, -, hiff⟩ := _root_.GlobalTheory.BddAlg.bdd_alg K Unit
   have hev := fun (x : K) (hx : ‖x‖ < 1) => _root_.GlobalTheory.ConvSer.powerSeriesEvalTsum_unitDisc_properties K x hx
   have hbdd : ∀ f : PowerSeries K, Intg f → Bdd f := fun f hf => (hpow f 0).2.2 hf
   have hcoef : ∀ n, ‖PowerSeries.coeff n h‖ ≤ 1 := (hiff h).1.1 hI

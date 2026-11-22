@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ResPlaneSmulEqZero
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ContinuousResiduePlaneGaloisRepUnramifiedOutside
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ReducedSelmerCochainMemContinuousCocyclesOfContStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ReducedSelmerCochainMemContinuousCocyclesOfCont
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DivCoboundaryOfReducedCocyclesCohomologous
 
 noncomputable section
@@ -27,7 +27,7 @@ theorem finite_lTorsion_divSel : GlobalTheory.Mem.LiteralAutomorphy.LitCoh → �
     simpa only [AddSubgroup.coe_nsmul, Pi.smul_apply, nsmul_eq_mul] using this
   choose z hz y hy hzy hx using key
   refine Finite.of_injective (fun x => (Submodule.Quotient.mk
-    ⟨descS S (resCoc c W (z x) (y x)), GlobalTheory.T.reduced_selmer_cochain_mem_continuous_cocycles_of_cont l Ω S A W c hO hN hW (z x) (hz x) (y x) (hy x) (hzy x)⟩ :
+    ⟨descS S (resCoc c W (z x) (y x)), _root_.GlobalTheory.Ord2.descS_resCoc_mem_z1_of_continuous l Ω S A W c hO hN hW (z x) (hz x) (y x) (hy x) (hzy x)⟩ :
       H1 (resRep c W hO S hN))) ?_
   intro x x' h
   rw [Submodule.Quotient.eq, Submodule.mem_comap, (mem_coboundaries1 _ _)] at h

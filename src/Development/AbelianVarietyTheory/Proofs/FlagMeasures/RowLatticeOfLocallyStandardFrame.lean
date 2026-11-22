@@ -3,11 +3,11 @@ import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.NGData
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.TermLoc
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LocClosed
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.WittExistsHolds
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsUnimodularOfLocalStandardLatticeTranslatesStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsUnimodularOfLocalStandardLatticeTranslates
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicPartEqSpanScaledFrameUnitriangular
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsAddIsotropicSpanMemLocallyStandardLatticeStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsAddIsotropicSpanMemLocallyStandardLattice
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AnisotropicFrameVectorPrimitiveInInnerLattice
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsFlagOfUnitriangularIsotropicShiftStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsFlagOfUnitriangularIsotropicShift
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowLatticePropertiesTransportByIsometry
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FixedConvOfIntegralFlagLattice
 
@@ -87,11 +87,11 @@ theorem xlam_eq {D : D7} {T T' : D.host.E} (F : LFlag (VS D) D.R.rS T) (F' : LFl
 
 theorem row_lattice_of_local_standard : ∀ (D : D7) (Tn : ℕ), Tn ≠ 0 → ∀ (F0 : FlagG (VS D) D.R.rS (Tn : D.host.E)) (G : LFlag (VS D) D.R.rS (Tn : D.host.E)) (Z : LocDat D) (A : ∀ p : PlF D, LocNG.FrameD (locH Z p) D.R.rS), (∀ p, (A p).f = fun a => frFac Z.δ p a • baseChange₂ D p (frame G a)) → ∀ Λ : LV D, Submodule.IsLattice D.host.E Λ → (∀ p, ∃ n ∈ (A p).N, ∃ L, (A p).IsInner L ∧ lattice₂ D Z.M p Λ = LocNG.img n ((A p).LamStd L)) → ∃ g, Adapt g (lf D F0) G ∧ IsRowLat D F0 (Formalism.HermitianLatticesTheory.gmap g⁻¹ Λ) := by
   intro D Tn hTn F0 G Z A hA Λ hΛ hloc
-  have hU := GlobalTheory.T.isUnimodular_of_local_standardLattice_translates
+  have hU := _root_.GlobalTheory.Unfold.StdDual.unimodular_of_local
   have hX := _root_.GlobalTheory.RowLatXS.xlam_eq_span_scaled
-  have hZ := GlobalTheory.T.exists_add_isotropicSpan_mem_locallyStandardLattice
+  have hZ := _root_.GlobalTheory.IsotropicLift.exists_add_mem
   have hP := _root_.GlobalTheory.FramePrim.coef_integral
-  have hM := GlobalTheory.T.exists_flag_of_unitriangular_isotropic_shift
+  have hM := _root_.GlobalTheory.MkFlag.mkflag
   have hTr := _root_.GlobalTheory.RowLatTransport.rowLat_transport
   have hC := _root_.GlobalTheory.FixConvRow.isFixedConv_of_XLam_eq
   have hu := hU D Z A Λ hΛ hloc

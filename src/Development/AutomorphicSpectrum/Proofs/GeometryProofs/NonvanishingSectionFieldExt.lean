@@ -10,7 +10,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PolarizedDataFieldE
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SemiabelianSchemes.PrecompleteBases.PsbLb
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsNonzeroSectionPpDataStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SectionModuleDivisibleAtPrimeStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SectionModuleBoundedDenominatorStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SectionModuleBoundedDenominator
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NonzeroSectionGenericFibreStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsSectionNotInSet
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SectionModuleFieldExtMapStatement
@@ -32,7 +32,7 @@ theorem section_and_basis : ∀ (E : Type) [Field E] [NumberField E] [IsCMField 
   have hN : (LB.LinComb D.t.PP.L (K := Fin 1) (fun _ => 𝟙 _) (fun _ => ((1 : ℕ) : ℤ))).IsLB :=
     LB.isLB_linComb D.t.PP.isLB _ _
   obtain ⟨t, ht⟩ := GlobalTheory.T.exists_nonzero_section_pp_data E H L D
-  obtain ⟨d₀, hd₀, hb⟩ := GlobalTheory.T.section_module_bounded_denominator (𝓞 L) D.t.G _ hN t ht
+  obtain ⟨d₀, hd₀, hb⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Sl.KeyDeg.Denom.bounded_denominators (𝓞 L) D.t.G _ hN t ht
   let I : Ideal (𝓞 L) :=
     { carrier := {x | ∃ u : SecMod D.t.G.hom (LB.LinComb D.t.PP.L (K := Fin 1) (fun _ => 𝟙 _) (fun _ => ((1 : ℕ) : ℤ))), d₀ • u = x • t}
       add_mem' := by

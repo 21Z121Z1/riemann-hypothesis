@@ -4,7 +4,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.KerScheme
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HeckeSetEtaleLevelStructureExists
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HeckeQuotientDescendsEtaleSurjectiveCoverStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HeckeQuotientDescendsEtaleSurjectiveCover
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIsoQuotientsSameKernelReducedBase
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsGeomPtRangeEq
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsHeckeKernelSchemeUniversalReducedBases
@@ -69,7 +69,7 @@ theorem corr_nonempty : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (
     _root_.GlobalTheory.exists_cover_lists_heckeSet E H D l P p i Z.Hk _ Z.o₁ Z.K hA hZ Z.hecke
   have hH' := ((GlobalTheory.heckeSets_pull E H D P p i _ _ _ _ _ m.toSABMap Z.o₁.proper).2 Z.K).1 Z.hecke
   have hq' := _root_.GlobalTheory.hasQuot_of_lists_of_smooth E H D l Xo P p i _ S' _ o' τ _ hr hA inferInstance hL hH'
-  obtain ⟨o₂, ψ, hi, hk⟩ := GlobalTheory.T.heckeQuotient_descends_etale_surjective_cover E H D l Xo P p i Z.Hk S' _ π Z.o₁ o' m Z.K hA Z.hecke he hsu
+  obtain ⟨o₂, ψ, hi, hk⟩ := _root_.GlobalTheory.HkFam.hasQuot_descend E H D l Xo P p i Z.Hk S' _ π Z.o₁ o' m Z.K hA Z.hecke he hsu
     inferInstance hq'
   obtain ⟨π₂, ⟨hb, ⟨m₂⟩⟩, -⟩ := Xo.rep _ _ hred o₂
   refine ⟨{ toKerScheme := Z, π₂ := π₂, base₂ := hb, o₂ := o₂, m₂ := m₂, ψ := ψ, isog := hi, ker := hk, univ := ?_ }⟩

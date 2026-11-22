@@ -12,13 +12,13 @@ import ReciprocityTheory.AnalyticForms.LeviForms.IsRegFamilyInhabitStatement
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRes
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsMeasurableDominatingFunction
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LocalSectionOfPotentialOnModel
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularChartDataPropertiesStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularChartDataProperties
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LocalHolomorphicSectionOfPotential
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MixedIntegralModelFormula
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsPtsBddConv
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.StLemmaETailMass
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularizedWeightPshAndBounds
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularizedWeightTendstoC2Statement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularizedWeightTendstoC2
 set_option maxSynthPendingDepth 1
 
 noncomputable section
@@ -393,8 +393,8 @@ theorem core (X : ComponentSetting D O Lt) (B : ℕ) (Q : (((k : K) → ι k) �
   have hΘpos := _root_.GlobalTheory.CompanionTheory.Ar.Giv.potential_pos_of_section II Ψ K ι Ω E D X.M Θ hΘp hΘr
   obtain ⟨hPshOn, ⟨C1, hC1⟩, hPsh⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Giv.tied_regularisation_weak K ι (mCoordIdeal D.y) D.n X.M D.Xo (muLine X.H) X.S Θ
     X.S_tied hΘp hΘpos
-  obtain ⟨hop, hnull, -, -⟩ := GlobalTheory.T.regular_chart_data_properties D.n X.M.Xc X.M.atlas X.S.R
-  have hc2 := GlobalTheory.T.regularized_weight_tendsto_C2 K ι (mCoordIdeal D.y) D.n X.M D.Xo (muLine X.H) X.S X.S_tied
+  obtain ⟨hop, hnull, -, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Giv.regData_open_part D.n X.M.Xc X.M.atlas X.S.R
+  have hc2 := _root_.GlobalTheory.CompanionTheory.Ar.Giv.regWeight_tendsto_C2_of_tied K ι (mCoordIdeal D.y) D.n X.M D.Xo (muLine X.H) X.S X.S_tied
   set C : ℝ := |C1| + |X.S.R.Clog| + |Cg| with hC
   have hC0 : 0 ≤ C := by positivity
   have hlog : ∀ x ∈ X.S.R.Yo, 0 ≤ Real.log (X.S.R.r x) := fun x hx => Real.log_nonneg (X.S.R.one_le_r x hx)
@@ -534,7 +534,7 @@ theorem muMeasureLimit : GroundTheory.Heights₂.Heights.LowerBoundFree.MuMeasur
     have hm1 : @Measurable X.M.Xc ℝ (borel X.M.Xc) _ (X.S.R.Yo.indicator fun _ => (1 : ℝ)) := by
       letI : MeasurableSpace X.M.Xc := borel X.M.Xc
       haveI : BorelSpace X.M.Xc := ⟨rfl⟩
-      exact measurable_const.indicator (GlobalTheory.T.regular_chart_data_properties D.n X.M.Xc X.M.atlas X.S.R).1.measurableSet
+      exact measurable_const.indicator (_root_.GlobalTheory.CompanionTheory.Ar.Giv.regData_open_part D.n X.M.Xc X.M.atlas X.S.R).1.measurableSet
     obtain ⟨-, cU, tU, hnull, hdens⟩ := core X B hΨ.choose hΨ.choose_spec (fun z => X.Cd.cuspWeight z / 2)
       (fun x => G x / 2) |Cg| hm2 hCg (fun z hz hY => by rw [hG z hz hY])
     obtain ⟨hI1, c1, t1, -, -⟩ := core X B hΨ.choose hΨ.choose_spec (fun _ => 1) (fun _ => 1) 1 hm1

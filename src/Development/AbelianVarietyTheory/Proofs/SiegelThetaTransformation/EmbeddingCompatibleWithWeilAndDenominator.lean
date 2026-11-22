@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsHeatZero
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.GCauchyStatement
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.UnitaryActHalfSpace
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HermitianWeilActionUnitaryGroupTestFunctions
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThHSiegelOperatorStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThHSiegelOperator
 
 open Matrix Complex NumberField GlobalTheory.SW Filter Topology
 open ReciprocityTheory.ChartRestriction.G.FD (cc herm)
@@ -245,8 +245,8 @@ theorem transH_drop (hΨ : IsType Ψ) {γ : M2 E N} (hγ : γ ∈ UU E N)
   obtain ⟨w', hw'⟩ : ∃ w' : CM Ψ n N, w' = fun τ => Matrix.of fun k => z' τ k ᵥ* (hDen Ψ γ Z τ)⁻¹ :=
     ⟨_, rfl⟩
   rw [← hw, ← hw']
-  have hWφ := (GlobalTheory.T.tendsto_thH_pushZ_atTop_thH_dropF E Ψ hΨ n N φ hφ).2 (corZ I Z) (corZ_mem hZ)
-  have hWψ := (GlobalTheory.T.tendsto_thH_pushZ_atTop_thH_dropF E Ψ hΨ n N ψ hψ).2 (corZ I (hAct Ψ γ Z)) (corZ_mem hact)
+  have hWφ := (_root_.GlobalTheory.SW.thH_siegel_operator E Ψ hΨ n N φ hφ).2 (corZ I Z) (corZ_mem hZ)
+  have hWψ := (_root_.GlobalTheory.SW.thH_siegel_operator E Ψ hΨ n N ψ hψ).2 (corZ I (hAct Ψ γ Z)) (corZ_mem hact)
   have L1 := hWφ.2.2 (corV z) (corV z')
   have L2 := hWψ.2.2 (corV w) (corV w')
   simp only [dropZ_corZ, drop_corV] at L1 L2
@@ -274,8 +274,8 @@ theorem dropF_weil (hΨ : IsType Ψ) (hn : Even n) {γ : M2 E N} (hγ : γ ∈ U
     {φ : Matrix (Fin n) (Fin (N + 1)) E → ℂ} (hφ : IsSB φ) :
     dropF (weil Ψ (emb γ) φ) = weil Ψ γ (dropF φ) := by
   obtain ⟨hsb, htr, -⟩ := _root_.GlobalTheory.SW.weil_action E Ψ hΨ n (N + 1) hn (emb γ) (emb_mem hγ) φ hφ
-  have hd := (GlobalTheory.T.tendsto_thH_pushZ_atTop_thH_dropF E Ψ hΨ n N φ hφ).1
-  have hdw := (GlobalTheory.T.tendsto_thH_pushZ_atTop_thH_dropF E Ψ hΨ n N _ hsb).1
+  have hd := (_root_.GlobalTheory.SW.thH_siegel_operator E Ψ hΨ n N φ hφ).1
+  have hdw := (_root_.GlobalTheory.SW.thH_siegel_operator E Ψ hΨ n N _ hsb).1
   exact (_root_.GlobalTheory.SW.weil_action E Ψ hΨ n N hn γ hγ (dropF φ) hd).2.2.1 _ hdw (transH_drop hΨ hγ hφ hsb htr)
 
 abbrev up (N : ℕ) : Fin N ⊕ Fin N → Fin (N + 1) ⊕ Fin (N + 1) := Sum.map Fin.succ Fin.succ

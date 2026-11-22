@@ -8,13 +8,13 @@ import Development.WeilBound.CoreStatements.PlurisubharmonicCones.EigenProjectio
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.RiemannLatticeEigenProjections
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PlurisubharmonicLocal
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.PhiISemipositive
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.EigenComponentPolynomialInActionStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.EigenComponentPolynomialInAction
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsotropicQuotientStructure
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HolomorphicLocalQuotientMapStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.QuotientFamilyEigenFrame
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.HolomorphicSpanCoefficientsStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.HolomorphicSpanCoefficients
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsExtendLinearIndependentOfSpanStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.GramDetPosIffLinearIndependentStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.GramDetPosIffLinearIndependent
 open NumberField Matrix Filter Topology GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Cusp GroundTheory.Heights₂.Heights.LowerBoundFree GroundTheory.Heights₂.Heights.Regular
 
 namespace GlobalTheory.CompanionTheory.Ar.Cusp.PhiI
@@ -61,7 +61,7 @@ variable {E : Type} [Field E] [NumberField E] [IsCMField E] {g : ℕ} {Λ : Type
 
 theorem hol_eig {U : Set (Fin n → ℂ)} {R : (Fin n → ℂ) → RiemLat E g Λ} (hP : ∀ x, DifferentiableOn ℂ (fun t => (R t).P x) U)
     (s : 𝓞 E →+* ℂ) (x : Λ) : DifferentiableOn ℂ (fun t => eigComp (R t).B s ((R t).P x)) U := by
-  obtain ⟨N, a, c, h⟩ := GlobalTheory.T.eigen_component_polynomial_in_action E s
+  obtain ⟨N, a, c, h⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.EigFormula.eigComp_eq_sum E s
   have e : (fun t => eigComp (R t).B s ((R t).P x)) = fun t => ∑ i, c i • (R t).P (a i • x) := by
     funext t
     rw [h g Λ (R t)]
@@ -108,7 +108,7 @@ theorem perEmb {U W : Set (Fin n → ℂ)} {R : (Fin n → ℂ) → RiemLat E g 
     refine Fin.addCases (fun a => ?_) (fun j => ?_) i
     · simp only [hc, Fin.append_left]; rw [hbs t (hWU ht)]; exact hwe t a
     · simp only [hc, Fin.append_right]; exact Submodule.subset_span ⟨_, rfl⟩
-  obtain ⟨V, hVo, ht₀V, hVW, G, hG, hGl⟩ := GlobalTheory.T.holomorphic_span_coefficients E g Λ n (r + k) W R b c t₀ hW ht₀
+  obtain ⟨V, hVo, ht₀V, hVW, G, hG, hGl⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.FrameChange.log_gram_frame_change E g Λ n (r + k) W R b c t₀ hW ht₀
     (fun i => (hb i).mono hWU) hch (fun t ht => hbl t (hWU ht)) hcs hli
   have hSc : ∀ t ∈ V, ((R t).gram fun i => c i t).det =
       ((R t).gram fun a => w a t).det * ((R' t).gram fun j => q t (b (J j) t)).det := by
@@ -117,12 +117,12 @@ theorem perEmb {U W : Set (Fin n → ℂ)} {R : (Fin n → ℂ) → RiemLat E g 
     exact _root_.GlobalTheory.CompanionTheory.Ar.Cusp.SchurGram.gram_append_eq E g g' Λ Λ' (R t) (R' t) (q t) I s r k v (fun j => b (J j) t) (hiso t (hWU htW)) hv
       (hker t htW) (hcomp t htW) (fun j => by rw [← hbs t (hWU htW)]; exact Submodule.subset_span ⟨_, rfl⟩)
   have hcpos : ∀ t ∈ V, 0 < ((R t).gram fun i => c i t).det.re ∧ ((R t).gram fun i => c i t).det.im = 0 :=
-    fun t ht => (GlobalTheory.T.gram_det_pos_iff_linearIndependent E g Λ (R t) _ _).1 (hGl t ht).1
+    fun t ht => (_root_.GlobalTheory.CompanionTheory.Ar.Cusp.GramPos.gram_det_pos_iff E g Λ (R t) _ _).1 (hGl t ht).1
   have hwpos : ∀ t ∈ V, 0 < ((R t).gram fun a => w a t).det.re ∧ ((R t).gram fun a => w a t).det.im = 0 :=
-    fun t ht => (GlobalTheory.T.gram_det_pos_iff_linearIndependent E g Λ (R t) _ _).1 (hwl t (hWU (hVW ht)))
+    fun t ht => (_root_.GlobalTheory.CompanionTheory.Ar.Cusp.GramPos.gram_det_pos_iff E g Λ (R t) _ _).1 (hwl t (hWU (hVW ht)))
   have hul : ∀ t ∈ V, LinearIndependent ℂ fun j => q t (b (J j) t) := by
     intro t ht
-    refine (GlobalTheory.T.gram_det_pos_iff_linearIndependent E g' Λ' (R' t) _ _).2 fun h0 => ?_
+    refine (_root_.GlobalTheory.CompanionTheory.Ar.Cusp.GramPos.gram_det_pos_iff E g' Λ' (R' t) _ _).2 fun h0 => ?_
     have := hSc t ht
     rw [h0, mul_zero] at this
     have h1 := (hcpos t ht).1
@@ -207,7 +207,7 @@ theorem phi_isPsh_continuous : ∀ (E : Type) [Field E] [NumberField E] [IsCMFie
   have hidx0 : idx ≠ 0 := by
     rw [hidx]; exact_mod_cast hv.2.2.2
   have hwpos : ∀ t ∈ U, ∀ τ, 0 < ((R t).gram fun a => w τ a t).det.re := fun t ht τ =>
-    ((GlobalTheory.T.gram_det_pos_iff_linearIndependent E g Λ (R t) _ _).1
+    ((_root_.GlobalTheory.CompanionTheory.Ar.Cusp.GramPos.gram_det_pos_iff E g Λ (R t) _ _).1
       ((_root_.LevelTowerAlt.eigen_projection_conjugate_inner E g Λ Unit (R t) I (hcusp t ht).2 (σ τ)).2 r v hv.2.1 hv.2.2.1)).1
   have hlog : ∀ t ∈ U, (R t).logDet (fun τ i => b τ i t) - Real.log ((R t).nz σ I) =
       (∑ τ, (Real.log ((R t).gram fun i => b τ i t).det.re - Real.log ((R t).gram fun a => w τ a t).det.re)) +

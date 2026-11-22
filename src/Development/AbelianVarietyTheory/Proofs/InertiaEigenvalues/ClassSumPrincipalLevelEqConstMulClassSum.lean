@@ -5,9 +5,9 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralEqVolMul
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PrincipalLevelLeLevelCharactersAgree
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ClassSumSmallerLevel
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteCosetRepresentativesLevel
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ClassSumRegroupFinerLevelCosetsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ClassSumRegroupFinerLevelCosets
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ClassSumTermsInvariantPrincipalLevel
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsConstTwistedSumFockVectorsPrincipalDatumStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsConstTwistedSumFockVectorsPrincipalDatum
 
 noncomputable section
 
@@ -77,13 +77,13 @@ theorem classSum_princ_eq : ∀ (D : D7) (S T : HSp D) (B : Base S T), B.Good �
   intro D S T B hB hS ψ hψ hQ ω hω m h₀ hC₀ I _ h hC
   obtain ⟨hle, -⟩ := _root_.GlobalTheory.FlatVecSum.princ_levJ_le_levLam_eq B hB ψ hQ
   obtain ⟨Fs, hF, hFu⟩ := _root_.GlobalTheory.LevReps.reps B hB ψ hQ
-  obtain ⟨κ, hκ⟩ := GlobalTheory.T.exists_const_twistedSum_fockVectors_principalDatum B hB hS ψ hψ hQ ω hω Fs hF hFu
+  obtain ⟨κ, hκ⟩ := _root_.GlobalTheory.LevTransl.sum_om_fock_princ B hB hS ψ hψ hQ ω hω Fs hF hFu
   refine ⟨κ, fun F hFm => ?_⟩
   have hinv := _root_.GlobalTheory.PrincClassSum.terms_inv B hB hS ψ hψ hQ ω hω F hFm
   have hlaw := ((B.mem_formsC).1 hFm).2
   funext g
   rw [Base.classSum_apply, Base.classSum_apply, Finset.sum_apply, Pi.smul_apply, Finset.sum_apply]
-  have key := GlobalTheory.T.classSum_regroup_finerLevel_cosets (Bridge.ratF S) (ratF_injective S) hle hF hFu (fun i => finPt S (h₀ i)) hC₀.reps
+  have key := _root_.GlobalTheory.ClassRefineBridge.sum_isReps_refine (Bridge.ratF S) (ratF_injective S) hle hF hFu (fun i => finPt S (h₀ i)) hC₀.reps
     (fun i => finPt S (h i)) hC.reps
     (fun y => series B.F ω ((GlobalTheory.FlatVecSum.princ B).vecFlat ψ) (((GlobalTheory.ClassRegroup.finEquiv S).symm y : GfC S) : GA D S) (F y) g)
     (fun γ y => (hinv g).1 γ y) (fun k hk y => (hinv g).2 k hk y)

@@ -1,5 +1,5 @@
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SymplOHZeroRight
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemHomLatticeCompletionIffSupportedMapsStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemHomLatticeCompletionIffSupportedMaps
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicPointComponentsAtPlacesLatticesVacua
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsSumFrame
@@ -75,8 +75,8 @@ theorem latO_extR : ∀ (D : D7) (V₀ A L S : HSp D) (o : OrthDec V₀ A L) (P 
     ∀ u ∈ latO S A (LS : Set _) (LA : Set _) P, (o.resT S).symm (u, 0) ∈ latO S V₀ (LS : Set _) (M : Set _) P := by
   intro D V₀ A L S o P LA LS M hLA hLS hM hloc u hu
   rw [OrthDec.resT_symm_apply, Matrix.mul_zero, add_zero]
-  have hu' := (GlobalTheory.T.mem_homLatticeCompletion_iff_supported_maps D S A LS LA hLS hLA P u).1 hu
-  refine (GlobalTheory.T.mem_homLatticeCompletion_iff_supported_maps D S V₀ LS M hLS hM P _).2 ⟨fun i j => ?_, fun y hy => ?_⟩
+  have hu' := (_root_.GlobalTheory.FinPl.LatMem.mem_latO_iff D S A LS LA hLS hLA P u).1 hu
+  refine (_root_.GlobalTheory.FinPl.LatMem.mem_latO_iff D S V₀ LS M hLS hM P _).2 ⟨fun i j => ?_, fun y hy => ?_⟩
   · rw [Matrix.mul_apply]
     exact sum_mem fun k _ => Ideal.mul_mem_left _ _ (hu'.1 k j)
   · show (o.jA * u) *ᵥ y ∈ _

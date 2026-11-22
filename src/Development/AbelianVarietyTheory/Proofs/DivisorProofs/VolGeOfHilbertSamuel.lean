@@ -5,15 +5,15 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.VolGe
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EqOfIsometricTrivShift
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsAlgClosedBaseChange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmallSectionCountContinuousFromAbove
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermLineBundlePairBallsFiniteStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermLineBundlePairBallsFinite
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGoodHermitianLineBundlePair
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeArithVolumeOfFrequentlySmallSectionsLower
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMetricShiftIsNefPowTensAmple
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TendstoSelfIntersectionPowTensorDivPow
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepresentsBaseBundlesAndTrivialStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepresentsBaseBundlesAndTrivial
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepresentsHermitianLineBundlePow
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmallSectionsTwistedPowerEncardEqBallStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermPairWithSectionsRepresentsTensorStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmallSectionsTwistedPowerEncardEqBall
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermPairWithSectionsRepresentsTensor
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogCardSmallSectionsGeOfShiftNef
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -29,7 +29,7 @@ theorem volGe_of_hilbertSamuel :
   obtain ⟨P, b, s, t, hPL, hG⟩ := _root_.GlobalTheory.VolBr.exists_good_pair hAC k X p D hX L
   subst hPL
   obtain ⟨α, hα, hαlim⟩ := _root_.GlobalTheory.SelfInterGrowth.main hAC k X p D hX P.L P.A a hSI
-  obtain ⟨hRL, hRA, -⟩ := GlobalTheory.T.represents_base_bundles_and_trivial k X p P
+  obtain ⟨hRL, hRA, -⟩ := _root_.GlobalTheory.VolBr.Pair.rep_base k X p P
   apply _root_.GlobalTheory.VolBr.le_arVol_of_frequently_le k X p D P.L a
   intro ε hε
   have hF1 : (1 : ℝ) ≤ ((D + 1).factorial : ℝ) := by exact_mod_cast Nat.factorial_pos _
@@ -40,7 +40,7 @@ theorem volGe_of_hilbertSamuel :
     (hlim.and (_root_.GlobalTheory.VolBr.lc_add_A_le hHS hAC k X p D hX P b s t hG (ε / 3) hε3))).exists
   have hRn : P.Rep (n : ℤ) 1 ((P.L.pow n).tens P.A) := by
     have h1 := _root_.GlobalTheory.VolBr.Pair.rep_pow k X p P 1 0 P.L n hRL
-    have h2 := GlobalTheory.T.hermPairWithSections_represents_tensor k X p P _ _ 0 1 _ P.A h1 hRA
+    have h2 := _root_.GlobalTheory.VolBr.Pair.rep_tens k X p P _ _ 0 1 _ P.A h1 hRA
     simpa using h2
   obtain ⟨t₀, ht₀⟩ := _root_.GlobalTheory.VolBr.exists_isNef_shift_pow_tens hAC hNN k X p D hX P.L P.A n hSP hNF hG.ample hG.nef
   have hstep := _root_.GlobalTheory.VolBr.log_ncard_ball_one_ge_of_shift_nef hHS hAC k X p D hX P b s t hG n 1 _ (α n) t₀ hRn (hα n) ht₀ (ε / 3) hε3
@@ -49,9 +49,9 @@ theorem volGe_of_hilbertSamuel :
   obtain ⟨m, hm, hm1, hm2⟩ := ((eventually_ge_atTop (max N₀ 1)).and (hstep.and hcont)).exists
   have hmN : N₀ ≤ m := le_of_max_le_left hm
   refine ⟨n * m, le_trans hmN (Nat.le_mul_of_pos_left m hn1), ?_⟩
-  have hsm := (GlobalTheory.T.smallSections_twistedPower_encard_eq_ball k X p P 1 0 P.L hRL 0 (n * m)).2.1
+  have hsm := (_root_.GlobalTheory.VolBr.SmallBall.main k X p P 1 0 P.L hRL 0 (n * m)).2.1
   rw [mul_one, mul_zero] at hsm
-  have hfin := GlobalTheory.T.hermLineBundlePair_balls_finite hHS k X p D hX P b s t hG ((n * m : ℕ) : ℤ) 0 1 hAC
+  have hfin := _root_.GlobalTheory.VolBr.BallFinite.bl_finite hHS k X p D hX P b s t hG ((n * m : ℕ) : ℤ) 0 1 hAC
   have hnc : (P.L.pow (n * m)).smallSec.ncard = (P.Bl ((n * m : ℕ) : ℤ) 0 1).ncard := by
     rw [Set.ncard_def, Set.ncard_def, hsm]
   refine ⟨Set.encard_lt_top_iff.mp (hsm ▸ Set.encard_lt_top_iff.mpr hfin), ?_⟩

@@ -1,8 +1,8 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.InjectiveDecompositionAction
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InjectiveWedgeHighestCoefficient
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PairMultiplicityGenericUnitaryStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PairMultiplicityTopCycleStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PairMultiplicityGenericUnitary
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PairMultiplicityTopCycle
 
 noncomputable section
 
@@ -543,6 +543,6 @@ theorem actUU_of (hG : GlobalTheory.CompanionTheory.PairMult.GenCOU2) (hT : Glob
   rw [Phi_bd _ E1 E2 hsw, Phi_Phi, ← hw3, map_sub, Phi_top, (Phi_evLc lev E1 E2 b _ (single_supp lev v)).2, Phi_top,
     lift_top, evalPair_tau_eq_evalKPair]
 
-theorem actUU : PositivityTheory.RgBcC.RealD.ActUU := actUU_of GlobalTheory.T.pair_multiplicity_generic_unitary GlobalTheory.T.pair_multiplicity_top_cycle
+theorem actUU : PositivityTheory.RgBcC.RealD.ActUU := actUU_of _root_.GlobalTheory.CompanionTheory.PairMult.COU.genCOU2 _root_.GlobalTheory.CompanionTheory.PairMult.TopCycQ.topCyc
 
 end GlobalTheory.CompanionTheory.PairBridge

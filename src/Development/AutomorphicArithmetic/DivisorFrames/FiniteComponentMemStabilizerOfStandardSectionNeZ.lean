@@ -109,7 +109,7 @@ theorem UpperTheory.finiteComponent_mem_stabilizer_of_standardSection_ne_zero :
   have hcomp : ∀ PP ∈ Z, GlobalTheory.AdelicU.proj D.sp.cm.sig S.gram (PP.under (𝓞 D.host.F)) k =
       GlobalTheory.AdelicU.proj D.sp.cm.sig S.gram (PP.under (𝓞 D.host.F)) g := fun PP hP => by
     rw [← GlobalTheory.SuppLevO.proj_finPartG S g]
-    exact _root_.GlobalTheory.CompIdem.projV_eq_of_idem S _ _ k _ (GlobalTheory.T.adeleTensorComponent_idempotentSum_add_conj_eq_one Z e hZe PP hP) hmt
+    exact _root_.GlobalTheory.CompIdem.projV_eq_of_idem S _ _ k _ (_root_.GlobalTheory.CompFinIdemSum.compFin_add_cA_eq_one Z e hZe PP hP) hmt
   have hkloc := (_root_.GlobalTheory.ChainOnto.LStab.finE_mem_St_iff_stabLoc D S βS ΛS hfr k).1 hSt
   refine (_root_.GlobalTheory.ChainOnto.LStab.finE_mem_St_iff_stabLoc D S βS ΛS hfr g).2 fun v => ?_
   by_cases hv : ∃ PP ∈ Z, PP.under (𝓞 D.host.F) = v

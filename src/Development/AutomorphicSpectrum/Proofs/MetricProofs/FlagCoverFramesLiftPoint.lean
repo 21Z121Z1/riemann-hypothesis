@@ -1,6 +1,7 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.TransPtBase
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverFramesPullbackStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverFramesPullback
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockMinorSumFrameIdentity
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverFramesAtBasePoint
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverBasePointRegularStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MinorOfRegularMatrixValue
@@ -121,12 +122,12 @@ theorem main : ∀ (K : Type) [Fintype K] (ι : K → Type) [∀ k, Fintype (ι 
   have ch' : ∀ k, M'.x ⟨k, F'.c k⟩ ≠ 0 := fun k => coord_ne hzb (hG'.1 k)
   have ch : ∀ k, M.x ⟨k, F.c k⟩ ≠ 0 := fun k => coord_ne hzv (hG.1 k)
   obtain ⟨c, hc0, htr⟩ :=
-    GlobalTheory.T.flag_cover_frames_pullback K ι Φ y Ψ N j M K' ι' Φ' y' M' Cv F' F hF' hF ch' ch p k k' hp hk'
+    _root_.GlobalTheory.CompanionTheory.Ar.PB.CovGraph.StepExpr.transPt_eq_smul_sum K ι Φ y Ψ N j M K' ι' Φ' y' M' Cv F' F hF' hF ch' ch p k k' hp hk'
   obtain ⟨a', ha', hz1⟩ := hfl'.2.2 p k' hk'
   obtain ⟨a, ha, hz0⟩ := hfl.2.2 p k hp
   have hE := fun m m' =>
     _root_.GlobalTheory.CompanionTheory.Ar.PB.CovGraph.coE_regAt_valAt K ι Φ y Ψ N j M K' ι' Φ' y' M' Cv zb F' F hzb hF' hF hG' hG p ⟨k, m⟩ ⟨k', m'⟩
-  have hmin := GlobalTheory.T.block_diagonal_minor_vanishing ℂ N j p.2 M.j_le
+  have hmin := _root_.GlobalTheory.CompanionTheory.Ar.PB.MinorCalc.minors_main ℂ N j p.2 M.j_le
   have hne : stepCols N j p.2 ≠ ∅ := stepCols_ne p.2 M.j_le
   obtain ⟨cc, hcc, horbE⟩ := horb
   have hval : ∀ s, valAt M.x s (basePart M.blk z₀) = valAt M.x s (zb ∘ Cv.v) := fun s => by

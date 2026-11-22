@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ColumnsCharacterEqLi
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntAfApproxInterUnitConj
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RestrictedBlockUnipotentSymmetric
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ScalWIdent
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.OrthProjHyperbolicNegativeSpanFixesBasisAndIdempStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.OrthProjHyperbolicNegativeSpanFixesBasisAndIdemp
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.OrthProjHyperbolicNegativeSpanSelfAdjoint
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsUnitaryScalarBlendSelfAdjointIdempotent
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ScalarBlendProjectionMemStabilizerAndCommutes
@@ -18,7 +18,7 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.NatCoprime
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WordElementConjOrthProjHyperbolicNegativeSpanEq
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsCoprimeMultiplierHyperbolicTermsNearRefere
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsCoprimeMultiplierNegativeVectorTermNear
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.OrthProjReferenceFrameOnFlagBasisModLevelStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.OrthProjReferenceFrameOnFlagBasisModLevel
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FrameMatrixDiagonalModLevelOfDiagonalAction
 open NumberField IsDedekindDomain Matrix Formalism.BasicNotions Formalism.MainNotions.S Formalism.L2.SG.HidaSetting Formalism.L2.SG.PoincareInHH.PoincareSetting Formalism.L2.DIV GlobalTheory.FlagBasis GlobalTheory.LevNorm
 open scoped TensorProduct
@@ -40,14 +40,14 @@ theorem scalar_diag_mod_g : ∀ (D : D7) (X : HidaSetting D) (u : D.what₂.Word
   have hc' : c.1 * sigA X.B.I c.1 = 1 := by
     have := congrArg Subtype.val hc
     simpa [sigInt_coe] using this
-  obtain ⟨hfix, hfz, hidem⟩ := GlobalTheory.T.orthProjHyperbolicNegativeSpan_fixes_basis_and_idempotent D X u
+  obtain ⟨hfix, hfz, hidem⟩ := _root_.GlobalTheory.ScalW.prj_fix_idem D X u
   obtain ⟨h, hh, hhi⟩ := _root_.GlobalTheory.unitTorus_unit X.B.I (GlobalTheory.ScalW.prjM X u) c.1
     (fun y => by rw [GlobalTheory.ScalW.prjM_mulVec, GlobalTheory.ScalW.prjM_mulVec, hidem])
     (fun x y => by rw [GlobalTheory.ScalW.prjM_mulVec, GlobalTheory.ScalW.prjM_mulVec, _root_.GlobalTheory.ScalW.prj_selfAdjoint]) hc'
   have hh' : X.B.I.fmat h = GlobalTheory.ScalW.hMat X u c.1 := hh
   have hhi' : X.B.I.fmat h⁻¹ = GlobalTheory.ScalW.hMat X u (sigA X.B.I c.1) := hhi
   obtain ⟨hH, hcomm⟩ := _root_.GlobalTheory.ScalW.hMat_mem_hfin_comm D X u c.1 h hfix hfz hh'
-  obtain ⟨hP0, hfl⟩ := GlobalTheory.T.orthProjReferenceFrame_on_flagBasis_mod_level D X
+  obtain ⟨hP0, hfl⟩ := _root_.GlobalTheory.RefProjFlag.prj0_flagVec_mem_mL_or_sub_mem_mL D X
 
   set P' : VA X.B.I → VA X.B.I := fun y => X.B.I.fmat (X.xu u)⁻¹ *ᵥ GlobalTheory.ScalW.prj X u (X.B.I.fmat (X.xu u) *ᵥ y)
     with hP'

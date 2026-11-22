@@ -92,7 +92,7 @@ theorem cmDiff_definite : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E]
   obtain ⟨hneP, hdegP⟩ := _root_.GlobalTheory.LatIndexDeg.deg_eq_deg_add_log_absNorm_idx K _ h p _ _ hsubP (hfg τ) hrkP hrsP
   obtain ⟨hneQ, hdegQ⟩ := _root_.GlobalTheory.LatIndexDeg.deg_eq_deg_add_log_absNorm_idx K _ h 0 _ _ hsubQ (hfg τb) hrkQ hrsQ
   rw [hdegP, hdegQ, hdP, hdQ]
-  have hdvd := (GlobalTheory.T.absNorm_map_ringOfIntegers_hom' E K τ ⊥).1
+  have hdvd := (_root_.GlobalTheory.absNorm_map_ringOfIntegers_hom E K τ ⊥).1
   have hfE : 0 < Module.finrank ℚ E := Module.finrank_pos
   have hfK : 0 < Module.finrank ℚ K := Module.finrank_pos
   set n := Module.finrank ℚ K / Module.finrank ℚ E with hn
@@ -101,7 +101,7 @@ theorem cmDiff_definite : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E]
     field_simp
   have hn0 : 0 < n := Nat.div_pos (Nat.le_of_dvd hfK hdvd) hfE
   have hbar : Ideal.absNorm (𝔫.map (H.bar : 𝓞 E →+* 𝓞 E)) = Ideal.absNorm 𝔫 := by
-    rw [(GlobalTheory.T.absNorm_map_ringOfIntegers_hom' E E _ 𝔫).2, Nat.div_self hfE, pow_one]
+    rw [(_root_.GlobalTheory.absNorm_map_ringOfIntegers_hom E E _ 𝔫).2, Nat.div_self hfE, pow_one]
   have hnorm : ∀ x : 𝓞 E, (Ideal.absNorm (Ideal.span {x}) : ℝ) = |((Algebra.norm ℚ (x : E) : ℚ) : ℝ)| := fun x => by
     rw [Ideal.absNorm_span_singleton, ← Algebra.coe_norm_int, Nat.cast_natAbs]
     push_cast
@@ -110,7 +110,7 @@ theorem cmDiff_definite : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E]
     rw [Ideal.map_span, Set.image_singleton]
   rw [hspan] at hid'
   have e1 := congrArg Ideal.absNorm hid'
-  rw [map_mul, map_mul, (GlobalTheory.T.absNorm_map_ringOfIntegers_hom' E K τ _).2, (GlobalTheory.T.absNorm_map_ringOfIntegers_hom' E K τ _).2] at e1
+  rw [map_mul, map_mul, (_root_.GlobalTheory.absNorm_map_ringOfIntegers_hom E K τ _).2, (_root_.GlobalTheory.absNorm_map_ringOfIntegers_hom E K τ _).2] at e1
   have e2 := congrArg Ideal.absNorm h𝔫
   rw [map_mul, hbar, ← Ideal.span_singleton_mul_span_singleton, map_mul] at e2
   have hA : (Ideal.absNorm (idx K p (F.eigLat X.B.t.act τ) (subP (FA true) F (fun a => M (.inl a)) τ)) : ℝ) ≠ 0 := by

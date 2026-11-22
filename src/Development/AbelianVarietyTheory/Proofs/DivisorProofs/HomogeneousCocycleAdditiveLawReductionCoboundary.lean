@@ -2,12 +2,12 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.WittOnFalse
 import Development.AbelianVarietyTheory.Definitions.Divisors.FormalCoboundarySmul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MvPowerSeriesReductionModPrimeRules
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReductionCommutesFormalGroupLawCoboundariesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReductionCommutesFormalGroupLawCoboundaries
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdditiveFormalGroupCoboundaryHomogeneous
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymmetricCocycleAdditiveEqCoboundaryAddStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LazardOneVariableExistsWittLiftStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffPowerSeriesEvalTwoGroupsSinglePairStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdditiveTwoCocycleCoeffRelationsOnePairStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LazardOneVariableExistsWittLift
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffPowerSeriesEvalTwoGroupsSinglePair
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdditiveTwoCocycleCoeffRelationsOnePair
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoboundaryOneAdditiveFormalGroupLawXPowStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffCoboundaryOneAdditiveEqZeroOfDegree
 open CategoryTheory TensorProduct MvPowerSeries GlobalTheory GlobalTheory.PDiv GlobalTheory.PDivGroup GlobalTheory.Katz
@@ -57,7 +57,7 @@ theorem homogCoc_red_cob : ∀ (p : ℕ) [Fact p.Prime] (k : Type) [Field k] [Ch
         rw [hbNc, if_neg hα]) γ hγ, zero_add]
       refine (Finset.sum_eq_zero fun m _ => ?_).symm
       simp only [cm]
-      rw [GlobalTheory.T.coeff_powerSeriesEvalTwoGroups_single_pair]
+      rw [_root_.GlobalTheory.coeff_at2_single_X_inl_inr]
       split_ifs <;> simp [hhom γ hγ]
 
   set a : Fin d → ℕ → k := fun m n => coeff (Finsupp.single (Sum.inl m) n + Finsupp.single (Sum.inr m) (N - n)) c with ha
@@ -74,11 +74,11 @@ theorem homogCoc_red_cob : ∀ (p : ℕ) [Fact p.Prime] (k : Type) [Field k] [Ch
     have e1 : N - (i + j) = l := by omega
     have e2 : N - i = j + l := by omega
     rw [e1, e2]
-    exact (GlobalTheory.T.additiveTwoCocycle_coeff_relations_one_pair k d c hc.1 m).2 i j l hi hj hl
-  have ht := fun m => GlobalTheory.T.lazard_one_variable_exists_witt_lift p k N (a m) hN (hsym m) (hrel m)
+    exact (_root_.GlobalTheory.Katz.CocRel.relations k d c hc.1 m).2 i j l hi hj hl
+  have ht := fun m => _root_.GlobalTheory.LazardOne.exists_lift p k N (a m) hN (hsym m) (hrel m)
   choose t ht using ht
   have hzero : ∀ m, coeff (Finsupp.single (Sum.inl m) N) c = 0 :=
-    fun m => (GlobalTheory.T.additiveTwoCocycle_coeff_relations_one_pair k d c hc.1 m).1 N (by omega)
+    fun m => (_root_.GlobalTheory.Katz.CocRel.relations k d c hc.1 m).1 N (by omega)
   have hzero' : ∀ m, coeff (Finsupp.single (Sum.inr m) N) c = 0 := by
     intro m
     have := hsym m 0 (Nat.zero_le _)
@@ -108,7 +108,7 @@ theorem homogCoc_red_cob : ∀ (p : ℕ) [Fact p.Prime] (k : Type) [Field k] [Ch
     intro m α
     rw [GlobalTheory.T.cob1_addLaw_X_pow_eq_sum_choose (Fr p k) d N m (by omega)]
     simp only [cm]
-    rw [GlobalTheory.T.coeff_powerSeriesEvalTwoGroups_single_pair, map_smul, map_sum]
+    rw [_root_.GlobalTheory.coeff_at2_single_X_inl_inr, map_smul, map_sum]
     simp only [coeff_monomial, smul_eq_mul]
     set i := α (Sum.inl m) with hi
     set j := α (Sum.inr m) with hj
@@ -159,7 +159,7 @@ theorem homogCoc_red_cob : ∀ (p : ℕ) [Fact p.Prime] (k : Type) [Field k] [Ch
     intro h; apply hα; rw [h, Finsupp.degree_single]
   · have h1 : Red p (cob1 (addLaw (Fr p k) d) (Katz.lift p bN)) (cob1 (addLaw k d) bN) := by
       rw [← lift_addLaw p k d]
-      exact ((GlobalTheory.T.reduction_commutes_formalGroupLawCoboundaries p k d (addLaw k d) (hconst k)).2.1 _ _
+      exact ((_root_.GlobalTheory.Katz.red_coboundaries p k d (addLaw k d) (hconst k)).2.1 _ _
         ((_root_.GlobalTheory.Katz.red_rules p k _).2.2.1 bN)).1
     have h2 : Red p (∑ m, cob1 (addLaw (Fr p k) d) (t m • (X m ^ N : MvPowerSeries (Fin d) (Fr p k))))
         (∑ m, cm m) := by

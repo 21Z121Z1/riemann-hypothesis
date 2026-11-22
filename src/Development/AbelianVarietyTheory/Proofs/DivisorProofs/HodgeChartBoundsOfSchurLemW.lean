@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodChartUniformC
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeMetricGramMatrixLocalHolomorphicImPartStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PoincareMetricPuncturedPolydiscBounds
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConnectionMatrixGramOperatorNormLe
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeCurvatureDualMetricPointwiseBoundStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeCurvatureDualMetricPointwiseBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernCurvatureFormSelfEqDualNorm
 
 open Matrix Complex Filter Topology
@@ -195,7 +195,7 @@ theorem hodgeChartBounds_of_schur_lemW (hS : ∀ (k l : ℕ) (a bt : Matrix (Fin
   ·
     have hC' : 0 ≤ 1 / 4 * K₁ ^ 2 := by positivity
     have hPD : ∀ z ∈ punctured ha ρ, ((imPeriod ha τ₀ B z).map Complex.ofReal).PosDef := fun z hz =>
-      (GlobalTheory.T.hodgeCurvature_dual_metric_pointwise_bound g a (imPeriod ha τ₀ B z) (fun i => (B i).map (Int.cast : ℤ → ℝ)) 0 0
+      (_root_.GlobalTheory.HodgeCurvPoint.dual_bound g a (imPeriod ha τ₀ B z) (fun i => (B i).map (Int.cast : ℤ → ℝ)) 0 0
         (fun i => tlog (z (Fin.castLE ha i)) - T₀) c₁ 0 hc₁ le_rfl (hsymR z (hz1 z hz).1) (hYlow z hz)
         hP.psd (fun i => show 0 < tlog _ - T₀ by linarith [ht z hz i]) (hYBi z hz) (fun j k => by simp)).1
     have hPos : IsPosFrame (punctured ha ρ) (hodgeGram ha τ₀ B) := ⟨isOpen_punctured ha ρ,
@@ -215,7 +215,7 @@ theorem hodgeChartBounds_of_schur_lemW (hS : ∀ (k l : ℕ) (a bt : Matrix (Fin
       (mem_of_superset ((isOpen_polydisc n 1).mem_nhds hzp.1) fun x hx => hsymC x hx)
       (mem_of_superset ((isOpen_polydisc n 1).mem_nhds hzp.1) fun x hx => hhermC x hx) hB3 ξ v,
       hB2 ξ, smulMulVec, form_smul_left, form_smul_right]
-    obtain ⟨-, hbd⟩ := GlobalTheory.T.hodgeCurvature_dual_metric_pointwise_bound g a (imPeriod ha τ₀ B z) (fun i => (B i).map (Int.cast : ℤ → ℝ))
+    obtain ⟨-, hbd⟩ := _root_.GlobalTheory.HodgeCurvPoint.dual_bound g a (imPeriod ha τ₀ B z) (fun i => (B i).map (Int.cast : ℤ → ℝ))
       (of fun j k => fderiv ℂ (fun x => τ₀ x j k) z ξ)
       (fun i => ξ (Fin.castLE ha i) / (2 * Real.pi * Complex.I * z (Fin.castLE ha i)))
       (fun i => tlog (z (Fin.castLE ha i)) - T₀) c₁ (M * ‖ξ‖) hc₁ (by positivity)

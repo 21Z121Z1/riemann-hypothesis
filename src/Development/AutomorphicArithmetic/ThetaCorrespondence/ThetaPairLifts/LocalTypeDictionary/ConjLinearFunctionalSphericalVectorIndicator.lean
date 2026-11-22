@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndicatorIntMMemSB
 import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianLatticeSelfDualEverywhere
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitBasisWittModelLocal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewHermitianLatticeSplitPlaceComponentsDualStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewHermitianLatticeSplitPlaceComponentsDual
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.LinearFunctionalSphericalVectorNeZero
 
@@ -30,7 +30,7 @@ theorem conjLinearFunctional_sphericalVector_indicator : _root_.GlobalTheory.Fun
     by rw [Matrix.det_transpose]; exact GlobalTheory.HermSelfDualLoc.det_ne_zero_of_isHerm σ B hPair.herm⟩
   have hL := GlobalTheory.HermSelfDualLoc.isSelfDualAt_transpose F E σ B n X r s hPair.base hPair.herm v
   have hb2 := hb.dual hcm hJX hL
-  obtain ⟨z, c₂, hz1, hc2v, hc2⟩ := GlobalTheory.T.skewHermitianLattice_splitPlace_components_dual F E σ B d W r' s' hPair.base hPair.skew v t c hc
+  obtain ⟨z, c₂, hz1, hc2v, hc2⟩ := _root_.GlobalTheory.SkewSplitDual.skewSplitDual F E σ B d W r' s' hPair.base hPair.skew v t c hc
   have hc3 : IsSplitBasis (t.comp σ) W.L (-c₂) := fun u => by
     have := hc2 (-u)
     simp only [Pi.neg_apply, neg_mem_iff, Matrix.mulVec_neg] at this

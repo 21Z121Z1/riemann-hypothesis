@@ -8,11 +8,11 @@ import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CpBinomialPowerSubOn
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ImagQuadraticMaximalOrderArithmeticAtSplitPrime
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ConstantCoeffShiftS
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CmLatticeHeisenbergRelationsOneVariable
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CpSeriesMultiplicativeShiftCompAndSubstStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CpSeriesMultiplicativeShiftCompAndSubst
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SmallTorsionKilledByPrimePowers
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ThetaNormQuotientEllipticUnitSeries
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CmEvenThetaSeriesChartCoeffIntegral
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CpTransportedTaylorSeriesShiftEqTranslateStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CpTransportedTaylorSeriesShiftEqTranslate
 
 open PowerSeries GlobalTheory.MomOne
 open scoped ComplexConjugate BigOperators Topology
@@ -236,7 +236,7 @@ theorem theta_shift : ∀ (d q : ℕ) [Fact q.Prime] (M : Mdl q) (ω : ℂ_[q]) 
     refine ⟨m, hm2, hmn, ⟨s * N, by rw [hmdef]; ring⟩, ?_⟩
     obtain ⟨ε, hε1, hε2, -, hε4, hε5, hε6⟩ :=
       _root_.GlobalTheory.MomOne.ThetaQuot.theta_quot d q M ω θ hd hd7 hs hL hM hθ α m hα hα0 hm
-    obtain ⟨ψ, hψ1, hψ2, hψ3⟩ := GlobalTheory.T.cpTransportedTaylorSeries_shift_eq_translate q M ω ζ y ε hM hA hε1 hε2 ⟨1, hε4⟩
+    obtain ⟨ψ, hψ1, hψ2, hψ3⟩ := _root_.GlobalTheory.MomOne.Transfer.shift_eq_hat_translate q M ω ζ y ε hM hA hε1 hε2 ⟨1, hε4⟩
     have hWW := W_mul_eq d M.ι θ hd hd7 hs hθ n y hy α hα (he1.trans hlen)
     have e1 : f.subst (mulS a : ℂ_[q]⟦X⟧) = f ^ m * hat M.ι (C ω * logS) ε := by
       apply hat_funEq M.ι ω θ ε hθan hε2 α a ha m
@@ -253,7 +253,7 @@ theorem theta_shift : ∀ (d q : ℕ) [Fact q.Prime] (M : Mdl q) (ω : ℂ_[q]) 
     have ha1 : ‖a - ((1 : ℕ) : ℤ_[q])‖ ≤ (q : ℝ) ^ (-(n : ℤ)) := by
       rw [Nat.cast_one, ← hn, zc_sub_one, ← ha]; exact he1.trans hlen
     have e3 : h.subst (mulS a : ℂ_[q]⟦X⟧) = h ^ m * hat M.ι (C ω * logS) ψ := by
-      have := ((GlobalTheory.T.cpSeriesMultiplicativeShift_comp_and_subst q).2 ζ n 1 a f hζq ha1 ⟨1, hfb⟩).2
+      have := ((_root_.GlobalTheory.MomOne.ShiftComp.main q).2 ζ n 1 a f hζq ha1 ⟨1, hfb⟩).2
       rw [pow_one, e1, (sh2 _ _ ⟨1, bd_pow f hfb m⟩ ⟨1, hε4⟩).2, shift_pow ζ hζ f hfb m] at this
       rw [hψ3, this]
     have hsub : HasSubst (mulS a : ℂ_[q]⟦X⟧) := HasSubst.of_constantCoeff_zero' (mu1 a).2.1

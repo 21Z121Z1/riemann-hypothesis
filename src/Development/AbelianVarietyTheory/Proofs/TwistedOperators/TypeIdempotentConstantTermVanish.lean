@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Standa
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SumRepSubgroupEqZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOfValILeOne
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemStdMaxParabolicOfBlockParabolicLeConjStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StdMaxParabolicRadicalLeBlockUnipotentRadicalStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StdMaxParabolicRadicalLeBlockUnipotentRadical
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ReductionMaxCompactInterConjRadicalContainsConj
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralCompactOpenTypeIdempotentUnipotentEqZeroStatement
 
@@ -81,7 +81,7 @@ theorem conj_stdMaxRad_le (F : Type) [Field F] {r a b : ℕ} (h : a + b = r) (P 
     have e : x = (g⁻¹ * g₀) * ((g⁻¹ * g₀)⁻¹ * x * (g⁻¹ * g₀)) * (g⁻¹ * g₀)⁻¹ := by group
     rw [e]
     exact mul_mem (mul_mem hc this) (inv_mem hc)
-  have h3 := GlobalTheory.T.stdMaxParabolicRadical_le_blockUnipotentRadical F h d hd h2
+  have h3 := _root_.GlobalTheory.RadRev.stdMaxRad_le_unipRad F h d hd h2
   intro y hy
   rw [mem_conjBy] at hy ⊢
   have hn : (g⁻¹ * g₀) * (g₀⁻¹ * y * g₀) * (g⁻¹ * g₀)⁻¹ ∈ stdMaxRad F h :=

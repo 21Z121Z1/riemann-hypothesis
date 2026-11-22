@@ -8,7 +8,9 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CuspFormRapidK
 import Development.AbelianVarietyTheory.Definitions.Divisors.MeasurableCompInfGL
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemBddFormsOfWithSmoothings
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivariantProj
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InverseTransposeMemCuspFormRapidKernelSpanContraStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InverseTransposeMemCuspFormRapidKernelSpanContra
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemContraIff
+import Development.AbelianVarietyTheory.Definitions.Divisors.IsRapidInf
 
 noncomputable section
 
@@ -22,7 +24,7 @@ variable {E : Type} [Field E] [NumberField E] [IsTotallyComplex E] {a : ℕ}
 
 theorem mspanR_invT (π : CuspSub E a) {F : GA E a → ℂ} (hF : F ∈ GlobalTheory.JSW.mspanR π) :
     (fun g => F (invT a (Ad E) g)) ∈ GlobalTheory.JSW.mspanR π.contra :=
-  GlobalTheory.T.inverseTranspose_mem_cuspFormRapidKernelSpan_contragredient E a π F hF
+  _root_.GlobalTheory.JSW.invT_mem_mspanR_contra E a π F hF
 
 def rsm (π : CuspSub E a) : Submodule ℂ (Sm E a) := (GlobalTheory.JSW.mspanR π).comap (Sm E a).subtype
 
@@ -103,7 +105,7 @@ theorem integrableOn_partA (hπ : π.IsUnitary) (hπ' : π'.IsUnitary) (hφ : φ
     {s : ℂ} (hs : 1 < s.re) : IntegrableOn (fun g => rsHat ℓ φ.1 φ'.1 Φ J η g 0 *
       ((ideleModule E (GeneralLinearGroup.det g) : ℝ) : ℂ) ^ (s - 1)) (𝓕 ∩ lowSet E a) μ := by
   obtain ⟨C, hC⟩ := exists_norm_rsHat_le_const J η hπ hπ' hφ hφ' hΦ
-  refine ((GlobalTheory.T.integrableOn_absDet_rpow_le_one_fundamentalDomain E a ℓ.pos μ 𝓕 h𝓕 (s.re - 1) (by linarith)).const_mul C).mono'
+  refine ((_root_.GlobalTheory.RSThetaLow.integrableOn_absDet_rpow_low E a ℓ.pos μ 𝓕 h𝓕 (s.re - 1) (by linarith)).const_mul C).mono'
     ((stronglyMeasurable_rsHat J η hc hc' hΦ continuous_const).aestronglyMeasurable.mul
       ((Complex.measurable_ofReal.comp GlobalTheory.RSThetaLow.continuous_absDet.measurable).pow_const _).aestronglyMeasurable)
     (.of_forall fun g => ?_)
@@ -130,7 +132,7 @@ theorem partB_entire (hπ : π.IsUnitary) (hπ' : π'.IsUnitary) (hφ : φ ∈ r
       (ae_restrict_mem (isClosed_le GlobalTheory.RSThetaLow.continuous_absDet continuous_const).measurableSet)
   have hδ := hlow.mono (q := fun g => 0 < (ideleModule E (GeneralLinearGroup.det g) : ℝ) ∧
     (ideleModule E (GeneralLinearGroup.det g) : ℝ) ≤ 1) fun g hg => ⟨(ideleModule E _).2, hg⟩
-  have hi := GlobalTheory.T.integrableOn_absDet_rpow_le_one_fundamentalDomain E a ℓ.pos μ 𝓕 h𝓕 1 one_pos
+  have hi := _root_.GlobalTheory.RSThetaLow.integrableOn_absDet_rpow_low E a ℓ.pos μ 𝓕 h𝓕 1 one_pos
   simp only [Real.rpow_one] at hi
   have hb := exists_tsum_norm_rsHat_le J η hπ hπ' hφ hφ' hΦ
   have h1 := _root_.GlobalTheory.integral_mul_cpow_of_rapid_decay_entire _ _ _ _ GlobalTheory.RSThetaLow.continuous_absDet.measurable hδ hi (AEStronglyMeasurable.tsum hm) fun K =>

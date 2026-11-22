@@ -4,8 +4,8 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmissibleTwis
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SideIn
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SwapCastEqSwapAE
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExtLvlFormMemCutSp
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeOperatorKeepsRationalIntegralLevelFormsStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StdFrameLevelSubgroupBoundedOpenHyperspecialStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeOperatorKeepsRationalIntegralLevelForms
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StdFrameLevelSubgroupBoundedOpenHyperspecial
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RamifiedLevelEqParahoricWithTupleCharacter
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DatVtEq
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsProdLevelStdFrameTwoBlockUnipotentLevel
@@ -95,7 +95,7 @@ theorem side_read {V : HSp D} {n : ℕ} (hn : V.rank = n) {β : GL (Fin V.rank) 
   have hsp := hcut.2.1
   clear hcut
   have hty := GlobalTheory.T.definiteLevelForms_iff_stdGroupTypeSpace D V hr Pg Q chi xi c P e hg hP he u.G₀ u.tie.red u.eG u.P₀ u.ψ₀ u.red
-  have hk := GlobalTheory.T.heckeOperator_keeps_rational_integral_levelForms D V hr Pg Q chi xi c P e hg hs hP he alg irr u.G₀ u.S u.act u.pres u.tie u.eG u.P₀ u.ψ₀ u.red _ u.c0
+  have hk := _root_.GlobalTheory.MtInHecke.tN_lvlForm D V hr Pg Q chi xi c P e hg hs hP he alg irr u.G₀ u.S u.act u.pres u.tie u.eG u.P₀ u.ψ₀ u.red _ u.c0
     u.pair u.del u.map u.coef u.vals
   let T : (Bridge.Gf V → c.W) ≃ₗ[ℂ] (Formalism.AUTREP.GAf D.host.E V.rank → c.W) :=
     LinearEquiv.funCongrLeft ℂ c.W (Equiv.ofBijective _ hbij)
@@ -136,7 +136,7 @@ theorem tup_read {μ : D.what₂.Tup} {i : Fin D.R.m} {c : CoefA (Vc D i)} {T : 
   obtain ⟨a, eW, Φ, hw, heq, hΦ, hli, hsp, hk⟩ := side_read (rank_V i) hβ hr τ.u hg hs hP _ τ.u.lev
   obtain ⟨r, rinj, rrange, hr'⟩ := constr_semi ((D.what₂.jMt μ ((i : ℕ) + 1)).comp τ.e.toLinearMap) Φ τ.li τ.span hli
   have hrj : ∀ x, r (D.what₂.jMt μ ((i : ℕ) + 1) (τ.e x)) = Φ x := hr'
-  obtain ⟨-, hop, hhyp⟩ := GlobalTheory.T.stdFrameLevelSubgroup_bounded_open_hyperspecial D D.R.nV
+  obtain ⟨-, hop, hhyp⟩ := _root_.GlobalTheory.MtIn.OpenLev.stdJ_open D D.R.nV
     (datV D D.R.nV hr L.Pg (L.Q t) (P0 L.Pg D.R.r ψ) (L.chi ((i : ℕ) + 1)) (L.xiR t))
   have hB := hhyp (gPl D ∪ qPl D (L.C.mu0 i * L.xiH t)) (GlobalTheory.MtIn.Under.places_under D T L μ0 hL hPg i t)
   have hk' := hk _ hB

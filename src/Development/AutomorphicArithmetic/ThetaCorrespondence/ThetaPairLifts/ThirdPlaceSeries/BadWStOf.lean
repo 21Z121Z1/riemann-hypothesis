@@ -28,7 +28,7 @@ theorem badW_of_del_bound_of_T_bound (p : PtAt ex Csz) (i : Fin D.R.m) (T : ℕ)
   classical
   obtain ⟨C, hCf, hact, M, ka, ρ, σ, f, hpull, hequiv, hli, hspan, hlev, hcard, hcase⟩ := hmod
   obtain ⟨lam, ψ, hW, hlam, hhalf⟩ := _root_.GlobalTheory.T.exists_whittaker_lam_psi_half_unip D L hT Gi Gl Kc Y cX ex Csz p hRows
-  obtain ⟨-, hHex⟩ := GlobalTheory.T.exists_whittakerDatum_and_halfLevels D ψ hW.1
+  obtain ⟨-, hHex⟩ := _root_.GlobalTheory.BadCount.Inh.exists_whit_half D ψ hW.1
   choose Hh hHh using hHex
   let e : p.P.Gp ≃* G0g D.nd := p.R.eG.trans p.cG
   let π : p.P.Gp →* G0g D.nd := e.toMonoidHom

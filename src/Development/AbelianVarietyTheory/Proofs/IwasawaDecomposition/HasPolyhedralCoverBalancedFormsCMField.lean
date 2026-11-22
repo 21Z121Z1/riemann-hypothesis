@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsSiegelZeroFront
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPosDefBalancedRealFormCmFieldStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPosDefBalancedRealFormCmField
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SiegelGramMemConeIntegerSquares
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAdaptedSiegelBasisBalancedForms
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteBalancedCmIntegersActionsSiegelReduced
@@ -85,7 +85,7 @@ theorem hasRedCover (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host
       (LinearMap.ext fun x => LinearMap.congr_fun hi x)
   haveI : Module.Free ℤ X := inferInstance
   obtain ⟨n, hn⟩ : ∃ n, Module.finrank ℤ X = n := ⟨_, rfl⟩
-  obtain ⟨B₀, hB₀, hB₀'⟩ := GlobalTheory.T.exists_posDef_balanced_realForm_cmField E H X
+  obtain ⟨B₀, hB₀, hB₀'⟩ := _root_.GlobalTheory.DefForm.exists_posDef_realForm E H X
   have hF := _root_.GlobalTheory.RedTh.finite_balanced_actions E H n
   obtain ⟨S, hS⟩ := _root_.GlobalTheory.SiegelCone.gram_mem_cone n
   haveI : Nonempty (Module.Basis (Fin n) ℤ X) := ⟨Module.finBasisOfFinrankEq ℤ X hn⟩

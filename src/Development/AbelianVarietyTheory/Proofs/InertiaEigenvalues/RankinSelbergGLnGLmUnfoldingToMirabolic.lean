@@ -131,7 +131,7 @@ theorem rs_unfold : ∀ (E : Type) [Field E] [NumberField E] [IsTotallyComplex E
     ring
   have hWg : ∀ f : GA E (m + 1) → ℂ, Good (GlobalTheory.StdCharConductor.psi E) m f → ∀ g,
       GlobalTheory.JSW.whit f g = GlobalTheory.CuspGeneric.whit (GlobalTheory.StdCharConductor.psi E) m f g := fun f hf g =>
-    GlobalTheory.T.globalWhittakerCoeff_eq_iteratedColumnTransform E m f hf.cont (fun γ hγ g => hf.left γ (GlobalTheory.ZUnf.isMir_of_mem_mirU_zero hγ) g) g
+    _root_.GlobalTheory.WhitCols.whit_eq_colWhit E m f hf.cont (fun γ hγ g => hf.left γ (GlobalTheory.ZUnf.isMir_of_mem_mirU_zero hγ) g) g
   have hW1 : ∀ g, GlobalTheory.CuspGeneric.whit (GlobalTheory.StdCharConductor.psi E) m f1 g =
       c1 g * GlobalTheory.JSW.whit φ (blockGL (by omega : m + 1 ≤ m + r + 1 + 1) g) := by
     intro g

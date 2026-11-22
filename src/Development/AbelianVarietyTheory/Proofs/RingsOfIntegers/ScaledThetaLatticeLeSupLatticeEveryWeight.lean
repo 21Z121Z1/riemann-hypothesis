@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Statements.ShortVectorBound.ScaledLatticesInSupLattices
-import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ThetaGeneratorPlaceValuationBoundStatement
+import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ThetaGeneratorPlaceValuationBound
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.RamifiedPrimeLossLeValuationPrimePowerStatement
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.WeightAssemblyClause
 import Formalism.LocalToGlobal.ProjectiveLattices.CrudeVal
@@ -54,7 +54,7 @@ theorem thInt_of_oriented (D : D7) (T : Top D) (h : LawsP T) (j : ℕ) (hj : InR
   have hG' : G.1 ∈ Submodule.span (𝓞 T.Q.c.F) (T.th j w) := hG
   refine (Pf.le_val_of_mem_span (isVal_vAt (y : T.PtA j la)) (fun g hg => ?_) _ hG').trans
     (recPJ_vAt_inc h j hj la y w G).ge
-  refine le_trans (EReal.coe_le_coe_iff.2 ?_) (GlobalTheory.T.thetaGenerator_place_valuation_bound D T h j hj hinj EX hO w g hg la y)
+  refine le_trans (EReal.coe_le_coe_iff.2 ?_) (_root_.GlobalTheory.ThetaBound.thBound D T h j hj hinj EX hO w g hg la y)
   have h1 := GlobalTheory.T.ramified_prime_loss_le_valuation_prime_power D T.Q.c.F la j w _ _ le_rfl le_rfl
   have h2 := vLa_int_mul_natCast (K := T.Q.c.F) la (nnW (recB h.toLawsCore) hinj EX w) _ hs
   have h3 : ((vAdd la ((GlobalTheory.RunIn.sOf (recB h.toLawsCore) hinj EX w : 𝓞 (recB h.toLawsCore).KO) :

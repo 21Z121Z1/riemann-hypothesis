@@ -40,7 +40,7 @@ theorem chi_eq [IsTotallyReal F] [DecidableEq κ] (M : Matrix κ κ (AF F)) (hM 
 
 theorem absE_eq [IsTotallyReal F] {E : Type} [Field E] [NumberField E] [Algebra F E] (t : (AF F ⊗[F] E)ˣ) :
     GlobalTheory.Doubling.absE F E t = distribHaarChar (AF F) (Units.map (Algebra.norm (AF F) : AF F ⊗[F] E →* AF F) t) :=
-  NNReal.coe_injective (by rw [distrib_eq, ← GlobalTheory.T.tensorIdeleNormalizedAbs_eq_adelic_abs_norm]; rfl)
+  NNReal.coe_injective (by rw [distrib_eq, ← _root_.GlobalTheory.absE_eq_prod_norm_fstA_sndA]; rfl)
 
 theorem continuous_toMixed : Continuous (InfiniteAdeleRing.ringEquiv_mixedSpace F) := by
   refine Continuous.prodMk (continuous_pi fun v => ?_) (continuous_pi fun v => ?_)

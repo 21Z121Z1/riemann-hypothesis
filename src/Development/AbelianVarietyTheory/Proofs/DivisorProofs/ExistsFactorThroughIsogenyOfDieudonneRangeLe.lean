@@ -6,14 +6,14 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WittModuleLengthCom
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivGroupIsConnOfIsogeny
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AppSurjectiveOfOmegaMapSurjectiveConnected
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CotangentKernelEqCokerOmegaMap
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivisibleGroupIsogenyBasicPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivisibleGroupIsogenyBasicProperties
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivisibleGroupExistsFactorThroughIsogeny
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsQuotientKernelSupFrobeniusKernel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsQuotientPDivGroupClosedSubgroupPTorsion
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqCounitOfHeightOneCotangentPullbackZeroStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsogenousPDivGroupFinrankOmegaDual
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DieudonneFunctorBaseFunctorProperties
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ColengthRangeMapGeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ColengthRangeMapGe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsThetaDieudonneModFrobeniusDifferentials
 
 open CategoryTheory TensorProduct Coalgebra Bialgebra GlobalTheory GlobalTheory.PDiv GlobalTheory.PDivGroup GlobalTheory.Dieu
@@ -87,7 +87,7 @@ theorem exists_comp_eq_of_colength (p : ℕ) [Fact p.Prime] (T : Theory p) (k : 
   obtain ⟨f', hf'⟩ := _root_.GlobalTheory.Dieu.exists_comp_eq_of_kerIdeal_le p k G Q₁ H 1 q₁ q₁' f e1' e2' (hk1 ▸ hfπ)
   obtain ⟨r, hr⟩ := _root_.GlobalTheory.Dieu.exists_comp_eq_of_kerIdeal_le p k G Q₁ Q 1 q₁ q₁' q e1' e2' (hk1 ▸ hqπ)
   have hq₁ : IsIsog q₁ := ⟨1, q₁', e1', e2'⟩
-  have hr' : IsIsog r := (GlobalTheory.T.pDivisibleGroup_isogeny_basic_properties p k G).2.2.1 Q₁ Q q₁ r hq₁ (hr ▸ hq)
+  have hr' : IsIsog r := (_root_.GlobalTheory.Dieu.isog_basics p k G).2.2.1 Q₁ Q q₁ r hq₁ (hr ▸ hq)
   have hG₁ : Q₁.IsConn := _root_.GlobalTheory.Dieu.isConn_of_isIsog p k G Q₁ q₁ hq₁ hG
   have hfun := _root_.GlobalTheory.Dieu.base_functor_props p _ T.base k G Q₁ Q trivial trivial trivial
   have hfun' := _root_.GlobalTheory.Dieu.base_functor_props p _ T.base k G Q₁ H trivial trivial trivial
@@ -110,7 +110,7 @@ theorem exists_comp_eq_of_colength (p : ℕ) [Fact p.Prime] (T : Theory p) (k : 
       Submodule.Quotient.nontrivial_iff.2 fun h => hsurj (LinearMap.range_eq_top.1 h)
     exact Module.finrank_pos
   have h1 : (1 : ℕ∞) ≤ Module.length (WittVector p k) (T.M G ⧸ LinearMap.range (T.map q₁)) := by
-    refine le_trans ?_ (GlobalTheory.T.finrank_quot_range_le_length_quot_range_map p T k G Q₁ q₁).1
+    refine le_trans ?_ (_root_.GlobalTheory.Dieu.colength_range_map_ge p T k G Q₁ q₁).1
     rw [hCq₁, ← hCq]
     exact_mod_cast hpos
   have hadd := (_root_.GlobalTheory.Dieu.colength_add_and_pow_and_eq p k (T.M G) (T.M Q₁) (T.M Q)).1 (T.map q₁) (T.map r) hinj

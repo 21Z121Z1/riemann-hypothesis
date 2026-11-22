@@ -3,9 +3,9 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ContinuousMatQAp
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SelNZero
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UnramifiedH1CardInvariants
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistedDualEvalBidualApply
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OrdinarySelmerModPrimePowInjectsResidualSelmerStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OrdinarySelmerModPrimePowInjectsResidualSelmer
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DualSelmerClassesGiveNoncohomologousCochains
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CardOrdinaryLocalConditionModPrimePowLeConstMulStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CardOrdinaryLocalConditionModPrimePowLeConstMul
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CardGaloisInvariantsOrdinaryRankTwoModPowBounded
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ArchimedeanInvariantsCard
 open NumberField IsDedekindDomain Formalism.ConjugateSelfDual ReciprocityTheory.Gal Formalism.MainNotions.N GlobalTheory.GalOfCusp UpperTheory.V UpperTheory.V.Af UpperTheory.V.HV GlobalTheory.Ord2 GlobalTheory.Ord2.GwIneq
@@ -41,7 +41,7 @@ theorem gw_ineq : GlobalTheory.Mem.LiteralAutomorphy.LitCoh → ∀ (l : ℕ) [F
   intro hL l _ Ω _ _ _ e S A W hW c hint
   have hN := kills_NS hW
   obtain ⟨C0, hC0⟩ := _root_.GlobalTheory.Ord2.GwCard.exists_card_H0_rhoS_le l Ω e S A W hW c hint hN
-  obtain ⟨CA, hCA⟩ := GlobalTheory.T.card_ordinaryLocalConditionModPrimePow_le_const_mul hL l Ω e S A W hW c hint hN
+  obtain ⟨CA, hCA⟩ := _root_.GlobalTheory.Ord2.GwIneq.CardOrd.card_ord hL l Ω e S A W hW c hint hN
   refine ⟨C0 * CA, fun n hn N y hy hyd => ?_⟩
   have hn0 : 0 < n := hn
   have hS := hW.above
@@ -97,7 +97,7 @@ theorem gw_ineq : GlobalTheory.Mem.LiteralAutomorphy.LitCoh → ∀ (l : ℕ) [F
         _ = (C0 * CA * Nat.card (SelD c n W hint S hN A hW.cont μ)) * (Nat.card (Qn c n) * P) := by ring
     exact Nat.le_of_mul_le_mul_right key (Nat.mul_pos hq hP)
 
-  obtain ⟨cls, hcls, hinj⟩ := GlobalTheory.T.ordinarySelmerModPrimePow_injects_residualSelmer l Ω e S A W hW c hint hN n hn
+  obtain ⟨cls, hcls, hinj⟩ := _root_.GlobalTheory.Ord2.SelLower.sel_lower l Ω e S A W hW c hint hN n hn
   have hN1 : N ≤ Nat.card (SelG c n W hint S hN A) := by
     let f : Fin N → SelG c n W hint S hN A := fun i => ⟨cls (y i), hcls _ (hy i)⟩
     have hf : Function.Injective f := by

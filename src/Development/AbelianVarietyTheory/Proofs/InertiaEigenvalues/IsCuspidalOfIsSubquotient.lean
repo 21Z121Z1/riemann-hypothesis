@@ -11,7 +11,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormalizedJacq
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCuspidalJacquetModuleSecondBlockOfVanishingStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSmoothDualNeZeroAtVector
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsUnitarizableComplexRepOfSupercuspidalUnitaryCentralCharacter
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsNonzeroIntertwiningMapFromUnitarySupercuspStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsNonzeroIntertwiningMapFromUnitarySupercusp
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InjectiveTensorLiftEquivariantMapsOfIrreducible
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivExteriorTensorOfIrreducibleProdRep
 open GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.SplitWeil ValuativeRel Topology
@@ -93,7 +93,7 @@ theorem exists_irreducible_sub {b : ℕ} (hb : 0 < b) {X : Type} [AddCommGroup X
       have h := GlobalTheory.LocGL.hasCentralChar_twist hωc ψ z
       rw [Fintype.card_fin] at h
       exact ⟨_, hψ1 z, h⟩)
-  obtain ⟨ι, hι⟩ := GlobalTheory.T.exists_nonzero_intertwiningMap_from_unitary_supercuspidal _ _ _ (twist S.toRepresentation (detChar (Fin b) ψ)) _ (twistMap p _)
+  obtain ⟨ι, hι⟩ := _root_.GlobalTheory.CuspBack.exists_back _ _ _ (twist S.toRepresentation (detChar (Fin b) ψ)) _ (twistMap p _)
     (isSmooth_twist hSs hψ.detChar) hsc hu
     (fun z hz' => by
       obtain ⟨c, hc⟩ := hz z hz'

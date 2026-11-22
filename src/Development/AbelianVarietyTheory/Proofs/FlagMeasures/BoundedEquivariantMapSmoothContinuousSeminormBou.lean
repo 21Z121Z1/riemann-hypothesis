@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBess
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TendstoAverageL2Compact
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BallMeanContinuousLinearFunctional
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SmoothFunctionalOrbitSmoothVectorStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SobolevIneqTranslateCompactStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SobolevIneqTranslateCompact
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsContinuousLimitUniformCauchy
 open MeasureTheory Matrix Formalism.QuantumDeterminants Formalism.MainNotions.S GlobalTheory.SgInf
 open scoped InnerProductSpace
@@ -75,7 +75,7 @@ theorem reg_main : ∀ (k r : ℕ) {H : Type} [NormedAddCommGroup H] [InnerProdu
     have := hc.aestronglyMeasurable (μ := μ) hGm
     rwa [hrest] at this
   obtain ⟨C₀, Ws, K₀, hK₀, hWs, hsob⟩ := _root_.GlobalTheory.SobAtOne.sobolev_at_one_G k r μ hμ
-  have hsu := GlobalTheory.T.sobolev_ineq_translate_compact k r μ C₀ Ws K₀ hμ hK₀ hsob
+  have hsu := _root_.GlobalTheory.SgInf.SobTranslate.sobolev_translate k r μ C₀ Ws K₀ hμ hK₀ hsob
   have hclm : ∀ Q : Set (Mt k r), IsCompact Q → ∃ K₂ : Set (Mt k r), IsCompact K₂ ∧
       ∀ (Λ' : H →L[ℂ] Wp) (u : H), IsSmoothVec (k := k) (r := r) σ u → ∀ x ∈ Q,
       (Matrix.of x : Mat k r) ∈ GG k r →

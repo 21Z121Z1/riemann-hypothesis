@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwoChartAtlas.AdditionLawSecondIdentity
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.AdjointnessSeriesTransportFrames
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.FirstPartialLawPushAlongTripleMap
-import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.SecondPartialLawPushAlongTripleMapStatement
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.SecondPartialLawPushAlongTripleMap
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.FamSyPush
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.PushChart
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsPushFr
@@ -29,7 +29,7 @@ theorem jrel_of_sabMap : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] 
     (isFrameG_iff t' _ d y _ _ _ _ _ _ f).2
       ⟨fun m => (hp m).1,
         _root_.GlobalTheory.famPh1_push E H V t t' n w d x y e f hw hy hg hp _ _ κ tg uv _ hc h1,
-        GlobalTheory.T.secondPartialLaw_push_along_tripleMap E H V t t' n w d x y e f hw hy hg hp _ _ κ tg uv _ hc h2,
+        _root_.GlobalTheory.PushSecondLaw.famPh2_push E H V t t' n w d x y e f hw hy hg hp _ _ κ tg uv _ hc h2,
         _root_.GlobalTheory.PushSym.famSy_push E H V t t' n w d x y e f hw hy hg hp _ h3,
         _root_.GlobalTheory.ChartCmp.PushAd.famAd_push E H V t t' n w d x y e f hw hy hg hp _ _ κ tg uv _ hc h4⟩
   obtain ⟨φ, φi, hj, hd⟩ := _root_.GlobalTheory.ChartCmp.jRel_of_charts_frames E H hstar V t' hs d B B' κ κ' (fun l => tg l ≫ n.φ) tg' uv uv' y x' f e'

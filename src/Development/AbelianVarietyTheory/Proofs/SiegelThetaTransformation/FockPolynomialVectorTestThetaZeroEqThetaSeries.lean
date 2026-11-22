@@ -3,11 +3,11 @@ import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsWeakOfDat
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsHeatZero
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaSeriesTestFunctionHolomorphicWeight
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaKernelOrthonormalFrameInDomainPeriodLinear
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaFunctionSpaceHeisenbergLawsStatement
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdelicZakThetaExistsUniqueStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaFunctionSpaceHeisenbergLaws
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdelicZakThetaExistsUnique
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AnnihilationCreationPeriodCoordinates
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockPolynomialVectorOriginEqPolyDeriv
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HeisenbergDerivativeThetaFunctionLawsStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HeisenbergDerivativeThetaFunctionLaws
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum Formalism.L2.Pj MeasureTheory IsDedekindDomain NumberField Matrix Complex
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.FD GlobalTheory GlobalTheory.ThFr GlobalTheory.Ker
@@ -62,17 +62,17 @@ theorem fvec_Th_zero : ∀ (D : D7) (S T : HSp D) (C : Ctx S T), Function.Biject
   intro D S T C
   refine ⟨C.toH_bijective, fun B hB φ hφ => ?_⟩
   have hx : C.xB B ∈ C.X.dom := ((_root_.GlobalTheory.Ker.onBasis_frame_period D S T C).2 B hB).2.1
-  have hZ := (GlobalTheory.T.adelicZakTheta_exists_unique D S T C _ hx φ hφ).1
+  have hZ := (_root_.GlobalTheory.Ker.ZakEx.isZak_Th D S T C _ hx φ hφ).1
   have hd : Differentiable ℂ (thA C.X C.bas C.idx φ (C.xB B)) := fun z =>
     ((GlobalTheory.SW.theta_holomorphic_weight _ _ C.X C.g C.q0 C.hr C.bas C.idx S.rank C.sympl C.even (fun _ _ => 0)
       (fun _ _ => 0) φ hφ 0 (Submodule.zero_mem _)).2.2.2 _ hx z trivial).differentiableAt
   have hG : ∀ w, IsRealPt w → C.Th (C.xB B) φ w = gaussR C.X C.bas C.idx (C.xB B) (C.zOf (C.xB B) w) *
       thA C.X C.bas C.idx φ (C.xB B) (C.zOf (C.xB B) w) := hZ.2
   refine ⟨fun τ z => ?_, fun Q => _root_.GlobalTheory.Ker.FockOrigin.fvec_zero_eq_polyDeriv D S T C B hB _ _ hd hG Q⟩
-  obtain ⟨h0, h1, h2⟩ := GlobalTheory.T.thetaFunction_space_heisenberg_laws D S T C
+  obtain ⟨h0, h1, h2⟩ := _root_.GlobalTheory.ThetaSpace.theta_space_laws D S T C
   have hth : C.IsTh (annih (heisO C.ψ S T) C.θ τ (cplxO 1 (C.sB B τ)) z (C.Th (C.xB B) φ)) :=
-    (h1 _ _ (GlobalTheory.T.heisenbergDerivative_thetaFunction_laws D S T C _ hZ.1 τ z).1
-      ((h2 _ (GlobalTheory.T.heisenbergDerivative_thetaFunction_laws D S T C _ hZ.1 τ (cplxO 1 (C.sB B τ) z)).1).1 I)).1
+    (h1 _ _ (_root_.GlobalTheory.Ker.HeisDeriv.dRho_laws D S T C _ hZ.1 τ z).1
+      ((h2 _ (_root_.GlobalTheory.Ker.HeisDeriv.dRho_laws D S T C _ hZ.1 τ (cplxO 1 (C.sB B τ) z)).1).1 I)).1
   refine (h1 _ _ hth h0).2 fun w hw => ?_
   rw [(_root_.GlobalTheory.Ker.annih_crea_coord D S T C B hB _ _ (hd.restrictScalars ℝ) hG τ z _ rfl w hw).1,
     ((hd _).hasFDerivAt.restrictScalars ℝ).fderiv]

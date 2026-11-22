@@ -4,10 +4,10 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WtRInjective
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TZero
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MonomialCoefficientComparisonStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeylDenominatorProductStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.VandermondeSquaresStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProdPairSumsEqSumPowersetScoreStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.VandermondeSquares
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProdPairSumsEqSumPowersetScore
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ScoreTZeroEqLevelCount
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ScoreRigidityPermEqOneStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ScoreRigidityPermEqOne
 
 noncomputable section
 open Matrix Finset
@@ -31,7 +31,7 @@ theorem flip_prod (z : Fin n → ℂ) (h0 : ∀ a, z a ≠ 0) :
 theorem den_sq (z : Fin n → ℂ) :
     (Matrix.of fun i j : Fin n => (z i ^ 2) ^ (n - 1 - (j : ℕ))).det =
       (Matrix.of fun i j : Fin n => z i ^ (n - 1 - (j : ℕ))).det * ∏ p ∈ prs n, (z p.1 + z p.2) :=
-  GlobalTheory.T.vandermonde_squares z
+  _root_.GlobalTheory.CompanionTheory.CoefId.det_vandermonde_sq z
 
 theorem den_ne_zero (t : Fin n → ℂ) (ht : Function.Injective t) :
     (Matrix.of fun i j : Fin n => t i ^ (n - 1 - (j : ℕ))).det ≠ 0 := by
@@ -46,7 +46,7 @@ theorem den_ne_zero (t : Fin n → ℂ) (ht : Function.Injective t) :
 
 theorem prod_expand (z : Fin n → ℂ) :
     ∏ p ∈ prs n, (z p.1 + z p.2) = ∑ T ∈ (prs n).powerset, mon (score T) z :=
-  GlobalTheory.T.prod_pair_sums_eq_sum_powerset_score z
+  _root_.GlobalTheory.CompanionTheory.CoefId.prod_pairs_add_eq_sum_score z
 
 theorem alt_expand (e : Fin n → ℤ) (z : Fin n → ℂ) :
     (Matrix.of fun i j : Fin n => z i ^ e j).det =
@@ -63,7 +63,7 @@ theorem step_unique (lev : Fin n → ℕ) (hm : Monotone lev) (L : Fin n → ℤ
     (hb : ∀ a b, lev a = lev b → L a - L b = ((b : ℕ) : ℤ) - ((a : ℕ) : ℤ)) (σ : Equiv.Perm (Fin n))
     (T : Finset (Fin n × Fin n)) (hT : T ⊆ prs n)
     (h : ∀ a, score T a = score (tZero lev) a + 2 * (L a - L (σ a))) : σ = 1 ∧ T = tZero lev :=
-  GlobalTheory.T.score_rigidity_perm_eq_one lev hm L hL hb (fun a b hab => by
+  _root_.GlobalTheory.CompanionTheory.CoefId.Unique.tournament_unique lev hm L hL hb (fun a b hab => by
     rw [score_tZero lev hm a, score_tZero lev hm b]
     simp only [hab, add_sub_cancel_right]) σ T hT h
 

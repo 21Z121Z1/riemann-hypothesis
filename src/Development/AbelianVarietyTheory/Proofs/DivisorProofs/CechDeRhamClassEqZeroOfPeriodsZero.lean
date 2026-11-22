@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsRatioCover
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisationPreimageValueRules
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedOneFormEvaluationRulesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedOneFormEvaluationRules
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KaehlerOneFormEqZeroOfUniformisedValues
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsRegOfPeriodicOfIsRegSub
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsRegularOnOpenUniformisedOfLocally
@@ -62,7 +62,7 @@ theorem eq_zero_of_isPer_zero : ∀ (A : Over (Sp ℂ)) [GrpObj A] (g : ℕ) (L 
     apply sub_eq_zero.1
     apply _root_.GlobalTheory.form_eq_zero_of_evForm_eq_zero A g L u hA U
     intro z hz
-    rw [map_sub, (GlobalTheory.T.uniformisedOneFormEvaluation_rules A g L u U.1 z hz).2.2 (b' U), ← hω U z hz, sub_eq_zero]
+    rw [map_sub, (_root_.GlobalTheory.CechPer.evForm_rules A g L u U.1 z hz).2.2 (b' U), ← hω U z hz, sub_eq_zero]
     refine (Filter.EventuallyEq.fderiv_eq ?_).symm
     filter_upwards [(hopen U.1).mem_nhds hz] with y hy
     exact hb U y hy

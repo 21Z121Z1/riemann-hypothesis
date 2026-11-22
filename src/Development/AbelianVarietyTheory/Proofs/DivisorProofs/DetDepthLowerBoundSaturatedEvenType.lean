@@ -9,9 +9,9 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.Pt
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.CauchyBinet
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsSatFrame
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.TypicalBasisCoordinates
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalGroupDeterminantPowDepthBasisChangeInvariaStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferentialOperatorDepthIntegralCoordinatesStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeFormalGroupDeterminantPowDepthOfRadiiStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalGroupDeterminantPowDepthBasisChangeInvaria
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferentialOperatorDepthIntegralCoordinates
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeFormalGroupDeterminantPowDepthOfRadii
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DividedPowerContentValuationDetPowBounds
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogFGLDepthStagesLowA
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSolutionOrdGeRadius
@@ -272,11 +272,11 @@ theorem detDepth_lower : ∀ (C : Type) [Field C] [IsAlgClosed C] [CharZero C] (
     simp only [hx', Finset.sum_apply, Pi.smul_apply, smul_eq_mul, hxT, Finset.mul_sum]
     rw [Finset.sum_comm]
     exact Finset.sum_congr rfl fun a' _ => Finset.sum_congr rfl fun b _ => by ring
-  rw [← GlobalTheory.T.formalGroupDeterminantPowDepth_basis_change_invariant C v i d c G u g hgdet,
-    GlobalTheory.T.differentialOperatorDepth_integral_coordinates C v i d c G _ (basisMap G γ) Ψ
+  rw [← _root_.GlobalTheory.DetDepthBasis.main C v i d c G u g hgdet,
+    _root_.GlobalTheory.FGDepth.Coord.depth_in_coords C v i d c G _ (basisMap G γ) Ψ
       (fun a => ⟨(hΦ a).2, (hΦ a).1, hΨint a, hΨ0 a⟩) (fun a => ⟨hΨΦ a, hΦΨ a⟩) t ht0 heq]
   refine le_iInf fun f => WithBot.coe_le_coe.2 ?_
-  refine GlobalTheory.T.le_formalGroupDeterminantPowDepth_of_radii C v i d c ρ t _ ht0
+  refine _root_.GlobalTheory.DepthCount.depth_count C v i d c ρ t _ ht0
     (fun a => ordGe_mono (htord a) (radius_nonneg hp3 _)) (fun α hα => ?_) f.1 f.2
   have hk : ((((i * c : ℝ) / (p - 1) - (i : ℝ) ^ 2 * Real.logb p (c + 1) : ℝ)) : EReal) ≤
       toE (v ((detPow C i c).coeff α * mfact α)) :=

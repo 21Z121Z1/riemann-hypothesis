@@ -7,13 +7,13 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GammaActionRed
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsWachModuleGeneratorReduction
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ReductionCyclotomicEndoEqFrobeniusLaurentStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsDiagonalRingHomOfLetterwiseReductions
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobeniusFixedTensorEqConstantStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobeniusFixedTensorEqConstant
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IdempotentWittTiltEqZeroOfResidueZero
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.KernelInverseFibreProductLatticesStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LatticeQuotientsClosedSubQuotSumStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FixedOfFixedByDeltaGammaLiftsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.KernelInverseFibreProductLattices
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LatticeQuotientsClosedSubQuotSum
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FixedOfFixedByDeltaGammaLifts
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TeichmullerRootsActFaithfullyLaurentStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsLetterBijectionStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsLetterBijection
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ReductionMapPi0
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FinrankAndKernelOfLetterImageTensorStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsExactFunctorPhiGammaOfFramesStatement
@@ -223,7 +223,7 @@ theorem IsRed.push [IsDomain O] [IsPrincipalIdealRing O] {lam : O} {κ : k⸨X�
     {q : ↥T.L.T →ₗ[O] (Fin A.m → k)} {q' : ↥T'.L.T →ₗ[O] (Fin A'.m → k)}
     {g : (Fin A.m → k) →ₗ[k] (Fin A'.m → k)} (hq : Onto T A q) (hq' : Onto T' A' q') (hg : IsHom A A' g)
     (x : ↥(DΔ W T)) : ∃ x' : ↥(DΔ W T'), J E ρ T' q' x' = g.baseChange Rk (J E ρ T q x) := by
-  obtain ⟨T'', f, f', h1, h2⟩ := (GlobalTheory.T.kernel_inverse_fibreProduct_lattices lam h.lam_ne ((h.res_ker lam).2 dvd_rfl)).2.2 T A q T' A' q' g hq hq' hg
+  obtain ⟨T'', f, f', h1, h2⟩ := (_root_.GlobalTheory.RedFun.SubLat.ker_inv_fibre lam h.lam_ne ((h.res_ker lam).2 dvd_rfl)).2.2 T A q T' A' q' g hq hq' hg
   obtain ⟨z, hz⟩ := map_surj hm f h1 x
   obtain ⟨u, hu⟩ := h.res_surj ((W.DelF.card : ℕ) : k)⁻¹
   set z' := ∑ δ ∈ W.DelF, W.γD T'' δ z with hz'
@@ -250,7 +250,7 @@ theorem exists_frames [IsDomain O] [IsPrincipalIdealRing O] {lam : O} {κ : k⸨
         ∀ y, (∃ x, β x = y) ↔ ∃ x : ↥(DΔ W T), y = eps E ρ i • J E ρ T q x := by
   by_cases hA : ∃ (T : LocLat G Qp LL O) (q : ↥T.L.T →ₗ[O] (Fin A.m → k)), Onto T A q
   · obtain ⟨T₀, q₀, h₀⟩ := hA
-    obtain ⟨T', f, hf⟩ := (GlobalTheory.T.kernel_inverse_fibreProduct_lattices lam h.lam_ne ((h.res_ker lam).2 dvd_rfl)).1 T₀ A q₀ h₀
+    obtain ⟨T', f, hf⟩ := (_root_.GlobalTheory.RedFun.SubLat.ker_inv_fibre lam h.lam_ne ((h.res_ker lam).2 dvd_rfl)).1 T₀ A q₀ h₀
     obtain ⟨β, h1, h2⟩ := GlobalTheory.T.exists_frame_of_torsion_invariants W E ρ lam κ a ι σ h hd T₀ A q₀ h₀ i
       (GlobalTheory.T.finrank_and_kernel_of_letter_image_tensor W E ρ lam κ h T₀ A.m q₀ h₀.1 T' f hf i).1
     refine ⟨β, fun T q hq => ⟨h1, fun y => (h2 y).trans ⟨?_, ?_⟩⟩⟩
@@ -314,7 +314,7 @@ theorem exists_pres [IsDomain O] [IsPrincipalIdealRing O] [NeZero n] (hO : Funct
   obtain ⟨g₀, hg₀⟩ := W.resΓ_onto γ
   choose β₀ hβ₀ using exists_frames h hd hm
   haveI : Nontrivial Rk := nontrivial_of_ne _ _ (h.eps_ne 0)
-  obtain ⟨c1, c2, c3, c4⟩ := GlobalTheory.T.latticeQuotients_closed_sub_quot_sum (G := G) (Qp := Qp) lam h.lam_ne hlam h.res_surj
+  obtain ⟨c1, c2, c3, c4⟩ := _root_.GlobalTheory.RedFun.LatQuot.lattice_quotients (G := G) (Qp := Qp) lam h.lam_ne hlam h.res_surj
     (fun x => (h.res_ker x).1)
   obtain ⟨u, u₀, u1, u2, u3, u4, u5⟩ := exists_unit (E := E) hO
   have hJu : ∀ q : ↥W.one.L.T →ₗ[O] (Fin 1 → k), J E ρ W.one q u = (1 : Rk) ⊗ₜ[k] q u₀ := fun q => by
@@ -447,7 +447,7 @@ theorem exists_pres [IsDomain O] [IsPrincipalIdealRing O] [NeZero n] (hO : Funct
       rw [← hj T A q i hq, map_eq_zero_iff _ (hinj T A q hq (τ i))]
     rw [h0]
     constructor
-    · obtain ⟨s, hs⟩ := (GlobalTheory.T.kernel_inverse_fibreProduct_lattices (G := G) (Qp := Qp) lam h.lam_ne hlam).2.1 T T' f hf (fun z hz =>
+    · obtain ⟨s, hs⟩ := (_root_.GlobalTheory.RedFun.SubLat.ker_inv_fibre (G := G) (Qp := Qp) lam h.lam_ne hlam).2.1 T T' f hf (fun z hz =>
         (hk (lam • ⟨z, hz⟩)).1 (by rw [map_smul, ← algebraMap_smul k lam, hlam, zero_smul]))
       exact (GlobalTheory.T.finrank_and_kernel_of_letter_image_tensor W E ρ lam κ h T A.m q hq.1 T' f hk (τ i)).2 s hs x
     · rintro ⟨y, hy⟩
@@ -557,8 +557,8 @@ theorem realD : ∀ {l : ℕ} [Fact l.Prime] {P : LocPrime l} (AI : LocAinf l P)
   intro l _ P AI H E S k _ _ _ hk
   obtain ⟨R, ι, hι, hv⟩ := GlobalTheory.CycRing.exists_cyclotomic l k S.hyp.1.1
   obtain ⟨⟨γ, hγ1, hγ2⟩, e, he⟩ := GlobalTheory.RedAct.gamma_action_reduction H S k
-  obtain ⟨τ, t1, t2, t3⟩ := GlobalTheory.T.exists_letter_bijection' H S
-  obtain ⟨hc, hden⟩ := GlobalTheory.T.fixed_of_fixed_by_delta_gamma_lifts AI H S k hk
+  obtain ⟨τ, t1, t2, t3⟩ := _root_.GlobalTheory.RedFun.exists_letter_bijection H S
+  obtain ⟨hc, hden⟩ := _root_.GlobalTheory.RedDense.fixed_of_fixed_lifts AI H S k hk
   have hp : (P.PD S.K).p = l := P.PD_p S.K
   obtain ⟨_, -⟩ := GlobalTheory.FinExtIntegers.dvr_complete S.LL
   have hm := EtaleExact.map_ne_top_of_tie (E.E S.K 1 S.LL S.hyp.1.2.1.2.2).tie
@@ -566,7 +566,7 @@ theorem realD : ∀ {l : ℕ} [Fact l.Prime] {P : LocPrime l} (AI : LocAinf l P)
   obtain ⟨F, hF⟩ := exists_pres_tensor (E.E S.K 1 S.LL S.hyp.1.2.1.2.2).tie Subtype.val_injective hm l hp
     S.Γ.lam hk.1 hk.2 S.hyp.1.2.2.2.2.2.ne_zero (_root_.GlobalTheory.IdemVanish.idem_eq_zero P S.LL k S.Γ.lam hk.1 hk.2)
     (fun g h => HerrClass.gRW_mul AI S.LL g h) (gRW_one AI S.LL) (fun g => HerrClass.phi_gRW AI S.LL g)
-    (GlobalTheory.T.frobenius_fixed_tensor_eq_constant S.LL k) R ι hι hv e he hc γ hγ2 (hden γ hγ1) τ t1 t3
+    (_root_.GlobalTheory.RedFixed.fixed_red S.LL k) R ι hι hv e he hc γ hγ2 (hden γ hγ1) τ t1 t3
   exact ⟨R, ι, hι, F, τ, γ, t2, hγ1, hF⟩
 
 end GlobalTheory.RedFun

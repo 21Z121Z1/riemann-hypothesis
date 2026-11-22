@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFlagFrame
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TorsionFlatLocallyQuasiFinite
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.FormallyUnramifiedOfTangentMapInjective
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFieldOfValues
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResidueFieldMapFiniteOfQuasiFiniteStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResidueFieldMapFiniteOfQuasiFinite
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCyclotomicSplittingExtension
 
 open AlgebraicGeometry CategoryTheory Limits NumberField IsDedekindDomain
@@ -44,7 +44,7 @@ theorem exists_poly_split_torsion {E : Type} [Field E] [NumberField E] [IsCMFiel
     intro z
     letI := ((torsion t.G q).hom.residueFieldMap z).hom.toAlgebra
     have : Module.Finite (X.residueField ((torsion t.G q).hom z)) ((torsion t.G q).left.residueField z) :=
-      GlobalTheory.T.residueFieldMap_finite_of_quasiFinite _ z
+      _root_.GlobalTheory.residueFieldMap_finite_of_locallyQuasiFinite _ z
     exact Module.Finite.fg_top
   choose s hs using hgen
   have hint : ∀ (z : (torsion t.G q).left) (c : (torsion t.G q).left.residueField z),
@@ -53,7 +53,7 @@ theorem exists_poly_split_torsion {E : Type} [Field E] [NumberField E] [IsCMFiel
     intro z c
     letI := ((torsion t.G q).hom.residueFieldMap z).hom.toAlgebra
     have : Module.Finite (X.residueField ((torsion t.G q).hom z)) ((torsion t.G q).left.residueField z) :=
-      GlobalTheory.T.residueFieldMap_finite_of_quasiFinite _ z
+      _root_.GlobalTheory.residueFieldMap_finite_of_locallyQuasiFinite _ z
     exact Algebra.IsIntegral.isIntegral c
   let P : ∀ z : (torsion t.G q).left, (torsion t.G q).left.residueField z → Polynomial K := fun z c =>
     if h : (torsion t.G q).hom z = x0 then

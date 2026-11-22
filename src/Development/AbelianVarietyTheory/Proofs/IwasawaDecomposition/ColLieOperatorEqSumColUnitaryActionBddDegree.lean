@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ColLieApply
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsSumUnitarySubstitutionsEqRowLieStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsSumUnitarySubstitutionsEqRowLie
 
 noncomputable section
 
@@ -67,7 +67,7 @@ theorem colLie_eq_sum_colSub : ∀ (ι : Type) [Fintype ι] (m n d : ℕ) (τ : 
     ∃ (s : Finset (Matrix.unitaryGroup (Fin n) ℂ)) (c : Matrix.unitaryGroup (Fin n) ℂ → ℂ),
       ∀ P : Pol ι m n, P.totalDegree ≤ d → ∑ g ∈ s, c g • colSub m τ g P = colLie m τ k l P := by
   intro ι _ m n d τ k l
-  obtain ⟨s, c, h⟩ := GlobalTheory.T.exists_sum_unitarySubstitutions_eq_rowLie ι n m d τ k l
+  obtain ⟨s, c, h⟩ := _root_.GlobalTheory.DefLift.exists_sum_rowSub_eq_rowLie ι n m d τ k l
   refine ⟨s.map ⟨cj, Function.LeftInverse.injective cj_cj⟩, fun g => c (cj g), fun P hP => ?_⟩
   have e : MvPolynomial.rename (sw ι n m) (MvPolynomial.rename (sw ι m n) P) = P := by
     rw [MvPolynomial.rename_rename]

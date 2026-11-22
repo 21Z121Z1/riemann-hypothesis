@@ -3,9 +3,10 @@ import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.Archim
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteLengthOfProducts
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubquotientOfEigencharacter
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsolateRepresentationAtCharacterStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubquotientOfNonNilpotentVariantStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteSubquotientsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsolateRepresentationAtCharacter
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubquotientOfNonNilpotentVariant
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.SubOfEig
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteSubquotients
 
 namespace PositivityTheory.Rg.BcN.F2.Final
 
@@ -16,6 +17,6 @@ variable (F : Type) [Field F] [ValuativeRel F] [TopologicalSpace F] [IsNonarchim
 
 theorem hkAlg : HkAlg F ι := _root_.GlobalTheory.CompanionTheory.HeckeAlg.hk_alg F ι
 theorem prodFinLen : ProdFinLen F ι := _root_.GlobalTheory.CompanionTheory.ProdLen.prodFinLen F ι
-theorem subOfNonNil' : SubOfNonNil' F ι := GlobalTheory.T.subquotient_of_non_nilpotent_variant F ι
+theorem subOfNonNil' : SubOfNonNil' F ι := _root_.GlobalTheory.CompanionTheory.HeckeSub.subOfNonNil_of_subquot F ι
 
 end PositivityTheory.Rg.BcN.F2.Final

@@ -8,9 +8,9 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.L2Extensio
 import Development.AbelianVarietyTheory.Definitions.Divisors.EtaleEmpty
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HormanderEstimateOnBallConstLeviBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralNsqCanonicalAddChartPart
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHoloAeEqStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHoloAeEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeometricSeriesSectionsL2Limit
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHoloSectionAeEqOfBallCoverStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHoloSectionAeEqOfBallCover
 
 open MeasureTheory Filter Topology Metric ReciprocityTheory.L2DbarEstimates ReciprocityTheory.L2DbarEstimates.Y GlobalTheory.OTY GlobalTheory.Published.L2Extension
 open scoped ENNReal ContDiff
@@ -96,7 +96,7 @@ theorem exists_isSec_of_rapid_cauchy : ∀ (n : ℕ) (Y : Type) [TopologicalSpac
         (ball (C.c a) (C.r a)) :=
       Real.continuous_exp.comp_continuousOn
         (((A.smooth_ph la (C.idx a)).continuousOn.mono (hWsub a)).neg)
-    refine GlobalTheory.T.exists_differentiableOn_ae_eq_of_weighted_L2_limit n (ball (C.c a) (C.r a)) _ (fun m => u m a)
+    refine _root_.GlobalTheory.L2LimitHolomorphic.exists_holo_ae_eq n (ball (C.c a) (C.r a)) _ (fun m => u m a)
       (f (C.idx a) ∘ (A.chart (C.idx a)).symm) isOpen_ball hρ (fun v _ => Real.exp_pos _)
       (fun m => hu m a) ((hfm (C.idx a)).mono_measure (Measure.restrict_mono (hWsub a) le_rfl)) ?_
     refine tendsto_of_tendsto_of_tendsto_of_le_of_le tendsto_const_nhds hT (fun _ => bot_le) ?_
@@ -133,7 +133,7 @@ theorem exists_isSec_of_rapid_cauchy : ∀ (n : ℕ) (Y : Type) [TopologicalSpac
           · exact hD m a
           · exact hule m a
   choose g hg hgae using hG
-  obtain ⟨G, hGs, hGae⟩ := GlobalTheory.T.exists_holo_section_ae_eq_of_ball_cover n Y ι La A C (A.kap + la) f g hfc hg hgae
+  obtain ⟨G, hGs, hGae⟩ := _root_.GlobalTheory.AeHoloGlue.main n Y ι La A C (A.kap + la) f g hfc hg hgae
   refine ⟨G, hGs, ?_⟩
   have e : n0 A la (F 0 - G) = n0 A la (F 0 - f) := by
     unfold n0

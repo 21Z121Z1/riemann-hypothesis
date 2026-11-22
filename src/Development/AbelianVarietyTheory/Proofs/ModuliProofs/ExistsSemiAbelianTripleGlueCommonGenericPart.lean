@@ -11,7 +11,7 @@ import Development.AbelianVarietyTheory.Statements.HeckeInFamilies.GenericMemCha
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSabCancel
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsIsoStalkMapOfFlatOfSurjectiveOnStalks
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSabMapIdOfCommonGeneric
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsTripleGlueTwoOpensStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsTripleGlueTwoOpens
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -97,7 +97,7 @@ theorem DensePart.glue_top {X X₀ : Scheme.{0}} {j : X₀ ⟶ X} (h : DensePart
     rw [← cancel_mono V.ι, Category.assoc, Scheme.homOfLE_ι, hk, hV]
   obtain ⟨s, b, m₁, -⟩ := exists_fac a₁ _ hkU
   obtain ⟨m₂, -⟩ := (h.restrict _ hk).exists_map hdvr hkV a₂ b hp
-  obtain ⟨t, n₁, -, -⟩ := GlobalTheory.T.exists_triple_glue_two_opens E H X U V t₁ t₂ s m₁ m₂ hUV ((h.restrict _ hU).generic a₁ hp)
+  obtain ⟨t, n₁, -, -⟩ := _root_.GlobalTheory.TripleGlue.exists_sab_glue E H X U V t₁ t₂ s m₁ m₂ hUV ((h.restrict _ hU).generic a₁ hp)
     ((h.restrict _ hV).generic a₂ hp)
   obtain ⟨n, -⟩ := ObjMaps.exists_sab_comp n₁ a₁
   obtain ⟨n', -⟩ := exists_cast n hU

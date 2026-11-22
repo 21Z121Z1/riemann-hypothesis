@@ -5,9 +5,9 @@ import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepW
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CardKerSubspacesAndHeckePolyOfConvolution
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaLiftLevelsGoodPrimesProperties
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplittingCharactersUnramifiedOffLevelsStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaVacuumHeckeIdentitySplitPlaceStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaLiftGoodProjectorIntertwinesMatchedHeckeStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplittingCharactersUnramifiedOffLevels
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaVacuumHeckeIdentitySplitPlace
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaLiftGoodProjectorIntertwinesMatchedHecke
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParahoricLevelLiftsExist
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix
 open Formalism.L2.Theta Formalism.L2.DIV Formalism.L2.Indef Formalism.DivisionValues Polynomial
@@ -100,7 +100,7 @@ theorem transfer_and_heckePoly : ∀ {D : D7} {G : Type} [Group G] [Fintype G] {
   intro D G _ _ Pl0 T A Ks _ _ _ R F hc hS i t P
   obtain ⟨hQ0, hG, -, hF⟩ := _root_.GlobalTheory.GoodPrimes.good_primes R F hc.lev
   obtain ⟨hgood, hsplit, hq⟩ := hF hc.fam t P P.2
-  obtain ⟨hunη, hunμ⟩ := GlobalTheory.T.splittingCharacters_unramified_offLevels R F hc.lev t _ hgood
+  obtain ⟨hunη, hunμ⟩ := _root_.GlobalTheory.UnrOffLevels.unrPl_of_good R F hc.lev t _ hgood
   obtain ⟨gramR, c0R, c0L, tie⟩ := hc.fam.tie
   obtain ⟨-, hAr, hAt⟩ := tie.ranks
   have hP0 : (P : Pl0) ∈ A.ok A.μ0 := by
@@ -122,13 +122,13 @@ theorem transfer_and_heckePoly : ∀ {D : D7} {G : Type} [Group G] [Fintype G] {
     rw [hx, Formalism.L2.JoinChr.locE, Units.val_mk0]
     ring
   have hun1 := hunμ ((i : ℕ) + 1) (Nat.le_add_left _ _) i.2
-  obtain ⟨hfix, hM⟩ := GlobalTheory.T.thetaVacuum_heckeIdentity_splitPlace R.ψ _ _ _ _ _ (R.pl P) (hc.thP.ωP i t) hsplit hun1 (unrPl_mul_inv hun1 hunη)
+  obtain ⟨hfix, hM⟩ := _root_.GlobalTheory.Hk3.SplitMatch.match_split R.ψ _ _ _ _ _ (R.pl P) (hc.thP.ωP i t) hsplit hun1 (unrPl_mul_inv hun1 hunη)
   have hW : (Wc D i).rank = D.R.r := D.sp.W_rank _ (Nat.le_add_left _ _) i.2
   have hV : (Vc D i).rank = (Wc D i).rank + D.R.t := by
     rw [hW]
     exact D.sp.V_rank _ (Nat.le_add_left _ _) i.2
   have hM' := (hM e ϖ x D.R.t he hϖ1 hϖ2 hx').2 hV
-  refine ⟨_, fun k hk => GlobalTheory.T.thetaLiftGoodProjector_intertwines_matchedHecke R F hc hS i t _ hgood hfix _ _ (hM' k hk), fun a => ?_⟩
+  refine ⟨_, fun k hk => _root_.GlobalTheory.DefLiftHecke.matchW_of_match R F hc hS i t _ hgood hfix _ _ (hM' k hk), fun a => ?_⟩
 
   have hu0 : (R.C.mu0 i).UnrAt (R.pl P) := by
     refine (R.C.isMu0 i).unr _ fun k hk => (hG t _ hgood).1 ?_

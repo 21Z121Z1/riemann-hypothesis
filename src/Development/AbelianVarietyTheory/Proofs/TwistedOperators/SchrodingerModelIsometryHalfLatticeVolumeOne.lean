@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RestrictedTensorBasePointNormSq
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsIntOv
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaInnerProductHermitian
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsSchwartzBruhatHalfIffPullbackMatrixStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsSchwartzBruhatHalfIffPullbackMatrix
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchwartzBruhatHalfSpanModulatedTranslates
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.RealIdemMulOfReal
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SelfDualLatticePairingDual
@@ -201,7 +201,7 @@ theorem placeModel_isometry : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (θ 
   refine ⟨(hκ.2.2.1.measure_pos _ ⟨κ 0, 0, ⟨zero_mem _, fun _ _ => mul_zero _⟩, rfl⟩).ne',
     hκ.2.2.2.measure_lt_top.ne, ?_⟩
   obtain ⟨w1, w2⟩ := _root_.GlobalTheory.PlaceTensor.halfWaves_span D ψ S T ΛS ΛT hψ hS hT a ha.1 ha.2.1 (infPart_splitIdem ha)
-  obtain ⟨c1, c2⟩ := GlobalTheory.T.isSchwartzBruhatHalf_iff_pullback_matrix D S T v m n a _ κ hκ
+  obtain ⟨c1, c2⟩ := _root_.GlobalTheory.HalfCoordSB.isSBHalf_iff_pull D S T v m n a _ κ hκ
   have I := _root_.GlobalTheory.ThetaPairingLaws.ipO_laws D ψ S T μ 𝓕 hψ hμ
   set W := {Ψ : WO S T → ℂ | ∃ x y : WO S T, IsHalf a x ∧ IsHalf (cA D a) y ∧
     Ψ = fun t => ψ (symplO S T t y) * halfInd a (latO S T ΛS ΛT fun _ => True) (t + x)} with hW

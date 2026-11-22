@@ -4,8 +4,8 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResAlgSplitTwo
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FixedNondeg
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedQuotientCard
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResidueAlgebraUnramified
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormFibreCardNonzeroStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormFibreCardZeroStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormFibreCardNonzero
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormFibreCardZero
 
 open PositivityTheory.PfSWUS.Loc GlobalTheory.CompanionTheory.UnrDens GlobalTheory.CompanionTheory.SiegLoc Filter Topology
 
@@ -78,10 +78,10 @@ theorem gauss_core (h : ResAlg E τ q ε) (χ : AddChar E ℂ) (A b : E) (hb : �
     rw [hc']
     by_cases h0 : t = 0
     · subst h0
-      rw [GlobalTheory.T.norm_fibre_card_zero E τ q ε h, if_pos rfl]
+      rw [_root_.GlobalTheory.CompanionTheory.UnrDens.NormZero.card_norm_zero E τ q ε h, if_pos rfl]
       push_cast
       ring
-    · rw [GlobalTheory.T.norm_fibre_card_nonzero E τ q ε h t ht' h0, if_neg h0]
+    · rw [_root_.GlobalTheory.CompanionTheory.UnrDens.NormUnit.card_fibre E τ q ε h t ht' h0, if_neg h0]
       push_cast
       ring
   rw [Finset.sum_congr rfl hfib]

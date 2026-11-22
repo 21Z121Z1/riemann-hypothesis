@@ -5,9 +5,12 @@ import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.La
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StandardCosocleGL
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitarisableSegmentTwistPrecedesAddOneLe
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LanglandsClassificationUnitaryStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.StandardModulePropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.StandardModuleProperties
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivProdIrrTw
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasSupportOfIsSubquotientProdIrr
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsIrreducibleSecondFactorOfIrreducibleProduct
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpehLanglandsQuotientStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SegmentLinkedShiftStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SegmentLinkedShift
 
 noncomputable section
 
@@ -117,6 +120,6 @@ theorem of_lemmas (hA : ∀ (k : Type) [Field k] [ValuativeRel k] [TopologicalSp
 theorem genericUnitaryDualGL_of_hypotheses : GlobalTheory.Published.UnitaryDualGL → GlobalTheory.Published.SquareIntegrableSegment →
     GlobalTheory.Published.GenericUnlinkedGL → GlobalTheory.Published.LanglandsMultisegments → GlobalTheory.Published.StandardCosocleGL →
     GlobalTheory.Published.GenericUnitaryDualGL :=
-  of_lemmas GlobalTheory.T.langlands_classification_unitary GlobalTheory.T.standard_module_properties GlobalTheory.T.speh_langlands_quotient GlobalTheory.T.segment_linked_shift
+  of_lemmas GlobalTheory.T.langlands_classification_unitary _root_.GlobalTheory.LocGL.IrrProdL.isL_sum_of_isIrreducible GlobalTheory.T.speh_langlands_quotient _root_.GlobalTheory.SmGL.Segment.linked_nu_nu_sub_one
 
 end GlobalTheory.GenericUnitaryBridge

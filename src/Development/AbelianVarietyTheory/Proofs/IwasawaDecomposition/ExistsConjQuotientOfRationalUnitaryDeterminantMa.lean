@@ -4,7 +4,7 @@ import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 import Formalism.LocalToGlobal.Divisibility.Tuples
 import Formalism.LocalToGlobal.UnitaryNorms.CharTied
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsRationalUnitaryDeterminantMapRationalUnitaryTo
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryDeterminantKernelOpenAndFactorStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryDeterminantKernelOpenAndFactor
 
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.FrobeniusOrbits Neutral.B1 ReciprocityTheory.Neutral.Bridge.HCFR Formalism.L2.Host GlobalTheory.Mem.Chr
 
@@ -57,7 +57,7 @@ theorem rat_points : ∀ (R : Ranks) (H : Formalism.BasicNotions.Host R), IsRati
       (IsCMField.complexConj_eq_self_iff H.E _).1 ((hc _).trans hfix)
     have hne : (⟨_, hF⟩ : H.F) ≠ 0 := fun e => (k⁻¹ * k').ne_zero (congrArg Subtype.val e)
     have e : upF H.F (Units.mk0 _ hne) = k⁻¹ * k' := Units.ext rfl
-    have := (GlobalTheory.T.unitaryDeterminantKernel_open_and_factor R H).2.2.1 (Units.mk0 _ hne)
+    have := (_root_.GlobalTheory.Mem.KerDet.kernel_open_and_factor R H).2.2.1 (Units.mk0 _ hne)
     rw [e, map_mul, map_inv] at this
     exact QuotientGroup.eq.2 this
   refine ⟨isRationalUnitaryDeterminantMap_rationalUnitaryToDeterminants H ?_, h90⟩

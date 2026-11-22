@@ -21,7 +21,7 @@ import Development.AbelianVarietyTheory.Definitions.Foundations.WittIndexEqZeroI
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsRegularSemisimpleUnitaryDataOfRegular
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSplitFactorRegularSemisimpleReducible
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsotropicIdempotentOfSplitFactor
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsotropicIdempotentGivesDualStableSubspacesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsotropicIdempotentGivesDualStableSubspaces
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDualBasesIsotropicSubspacesDuality
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryCarryHyperbolicFamilyWittFrame
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjMemStandardLeviWittFrame
@@ -44,7 +44,7 @@ theorem exists_conj_mem_levi : ∀ {D : D7} {V : HSp D}, 0 < V.rank → GlobalTh
   obtain ⟨k, K, hK1, hK2, he, i, hi⟩ := _root_.GlobalTheory.SplitFactor.exists_split_factor D.sp.cm.sig V.gram γ.1 hr hss hA hR hirr hnf
   obtain ⟨ε, hεL, hεε, hε0, hεi⟩ :=
     @_root_.GlobalTheory.SplitFactorIdem.exists_isotropic_idempotent _ _ _ _ _ _ _ D.sp.cm.sig V.gram γ.1 hreg hA hP k K hK1 hK2 he i hi
-  obtain ⟨X, X', hX0, hXi, hX'i, hXs, hX's, hn1, hn2⟩ := GlobalTheory.T.isotropicIdempotent_gives_dual_stable_subspaces γ ε hεL hεε hε0 hεi
+  obtain ⟨X, X', hX0, hXi, hX'i, hXs, hX's, hn1, hn2⟩ := _root_.GlobalTheory.IdemIsotropic.idem_isotropic_pair γ ε hεL hεε hε0 hεi
   obtain ⟨a, x, x', ha0, ha, hx, hx', hli, hee, hff, hef⟩ := _root_.GlobalTheory.IsoDuality.exists_dual_bases X X' hX0 hXi hX'i hn1 hn2
   obtain ⟨g, hg⟩ := _root_.GlobalTheory.WittCarry.exists_GF_carry_hyperbolic Φ ha x x' hli hee hff hef
   refine ⟨g, {stdVec ⟨a - 1, by omega⟩}, ?_, Finset.singleton_nonempty _, ?_⟩

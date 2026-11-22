@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemProdSpanInfStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemProdSpanInf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDimensionalProdSpan
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinStable
 open NumberField IsDedekindDomain Matrix MeasureTheory Filter Topology
@@ -88,6 +88,6 @@ theorem finiteDimensional_pairSpace_inf_typeHF : ∀ {E : Type} [Field E] [Numbe
     (U₂.map (Sm E b).subtype ⊓ typeF K₂ W₂)) ?_
   rintro F ⟨hU, hT⟩
   rw [SetLike.mem_coe, pairSpace_eq_prodSpan] at hU
-  exact GlobalTheory.T.mem_prodSpan_inf _ _ _ _ F hU (fun y => slice_left hT y) (fun x => slice_right hT x)
+  exact _root_.GlobalTheory.CompanionTheory.LimV.Slices.mem_prodSpan_inf_of_slices _ _ _ _ F hU (fun y => slice_left hT y) (fun x => slice_right hT x)
 
 end GlobalTheory.CompanionTheory.LimV.FdPair

@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConjThetaKOMulIn
 import Formalism.LocalToGlobal.IndefiniteReal.MultLemmas
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.AdelicDataRowMeasureScaleTrivialTuple
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridParameterRegularCardEqRankFormula
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsTypeAtDualParIffStarIsTypeAtStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsTypeAtDualParIffStarIsTypeAt
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsThetaFunctionFockVectorRightwardArrow
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsConstSetIntegralHaarFundamentalDomainsUnit
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links Formalism.L2.DIV
@@ -118,7 +118,7 @@ theorem isCuspOfType_iff_isCuspListed : ∀ {D : D7} {Γ : Type} [Group Γ] [Fin
     unfold GlobalTheory.Grid.parV GlobalTheory.ChiGrid.parV
     rw [GlobalTheory.GridParDCount.grid_eq_num D τ]
   rw [hp]
-  exact GlobalTheory.T.isTypeAt_dualPar_iff_star_isTypeAt R.θ (G'.V (.grid i j)) τ _ φ
+  exact _root_.GlobalTheory.TypeConj.isTypeAt_dualPar_iff R.θ (G'.V (.grid i j)) τ _ φ
 
 open GlobalTheory.GridJoin in
 

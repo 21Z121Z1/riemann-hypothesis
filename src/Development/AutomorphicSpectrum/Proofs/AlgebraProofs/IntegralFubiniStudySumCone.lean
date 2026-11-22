@@ -7,12 +7,12 @@ import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.IsScaleStable
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.GaussianProjectionBallIndicatorStatement
 import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.XXgzChowMahlerFibreavg
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FibreCountRotationInvariant
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.MeasurableFibreCountOverStatement
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.MeasurableFibreCountOver
 import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.TXgzChowMahlerE0reduce
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.AeFibrePointsCardEqDegree
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.GaussianMatrixMeasurePosFinite
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.RandomSetSumExpectationStatement
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LogGapMeasurableScaleStableStatement
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LogGapMeasurableScaleStable
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FubiniStudyLogLeLogNorm
 import Development.WeilBound.CoreStatements.CommonZeroEvaluation.ConeBallLogGapIntegral
 set_option maxSynthPendingDepth 1
@@ -83,7 +83,7 @@ theorem GlobalTheory.CompanionTheory.Ar.Short.Crofton.fsSum_crofton : ∀ (n e �
       ∫ π, fsSum h u (coneSet h W) π ∂(gaussM (e + 1) n) =
         (gaussM (e + 1) n Set.univ).toReal * coneIntegral h W e (fsLog h u) := by
   intro n e δ h W f u hW hf hδ hu
-  obtain ⟨hLGm, hLGo⟩ := GlobalTheory.T.log_gap_measurable_scale_stable n h u
+  obtain ⟨hLGm, hLGo⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Short.Crofton.logGap_basic n h u
   obtain ⟨hGm, hGeq⟩ := _root_.GlobalTheory.CompanionTheory.Relay.crofton_formula_fibre_sum n e δ h W f hW hf hδ (logGap h u) hLGm hLGo
   obtain ⟨hL, hLr⟩ := _root_.ModelDimension.integral_coneBall_log_gap_eq n e h W f u hW hf hu
   obtain ⟨hμ0, hμt⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Short.Crofton.gaussM_univ_pos_lt_top (e + 1) n

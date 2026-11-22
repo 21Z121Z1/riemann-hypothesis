@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsPrincipalIdealRing
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsNormOneOrthTriple
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BasisOfIsCompl
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetTermBasicFacts
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermExponentsNonnegAndDefectGroupBoundStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermExponentsNonnegAndDefectGroupBound
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CongruenceSubgroupLatticeStabilizer
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ProperIdealsOfHenselian
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsTraceChar
@@ -287,7 +287,7 @@ theorem shares : ∀ {F : Type} [Field F] [ValuativeRel F] [TopologicalSpace F] 
   obtain ⟨-, hcj, -, -, hint, -, hq, -⟩ := GlobalTheory.UnramOrder.order_facts L S.ϖ S.ϖ_irr
   have hSD := (GlobalTheory.HL.TermBasic.term_basic L r k S d Λ hT).1
   have hli := (GlobalTheory.FrameBasic.main L r k S).1
-  obtain ⟨a, ha⟩ := Int.eq_ofNat_of_zero_le (GlobalTheory.T.term_exponents_nonneg_and_defect_group_bound L r k S d Λ hT).1
+  obtain ⟨a, ha⟩ := Int.eq_ofNat_of_zero_le (_root_.GlobalTheory.HL.Defect.exponents_and_defect L r k S d Λ hT).1
   rw [ha] at haN hZ ⊢
   simp only [zpow_natCast] at hZ ⊢
   have haN' : a + 1 ≤ N := by omega

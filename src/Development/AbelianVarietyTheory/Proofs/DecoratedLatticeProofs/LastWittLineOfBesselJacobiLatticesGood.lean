@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.NormOneAtOne
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IncAdjYZeroMemLatOIff
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualLatticeRationalLineTraceFractionalIdealStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualLatticeRationalLineTraceFractionalIdeal
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FractionalIdealCompletionPropertiesAtPlace
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.LineLatAt
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.BaseMatrixGlApply
@@ -16,8 +16,8 @@ import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsLatticeDualZIdealM
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsHermitianAuxiliaryVectorSystemBesselVectors
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SingleMemIdAt
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergOperatorDisjointSupportSmulAdd
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LineVectorPairingMemInverseIdealCompletionStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HermitianPairingOntoInverseIdealAtPlaceStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LineVectorPairingMemInverseIdealCompletion
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HermitianPairingOntoInverseIdealAtPlace
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemHomLatticeCompletionIffSupportedMaps
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.S Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes MeasureTheory IsDedekindDomain NumberField Matrix Formalism.L2.Theta Formalism.L2.DIV Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Lev Formalism.IndefR.Mult Formalism.IndefR.Datum Formalism.IndefR.AutomorphicEvaluation Formalism.L2.SG.HidaSetting Formalism.L2.SG.PoincareInHH.PoincareSetting Formalism.L2.SG.RowDict Formalism.L2.SG.RowsJoinPinned GlobalTheory.MixModel GlobalTheory.MixPer GlobalTheory.Unf GlobalTheory.Core.Rk GlobalTheory.Core.Mi
 open scoped TensorProduct InnerProductSpace Classical
@@ -175,12 +175,12 @@ theorem last_sameAt {ψ : AddChar (AF D.host.F) ℂ} (hψ : IsStdChar D ψ (-1))
     ← h2 _ _ (inv_ne_zero h𝔷0) h𝔑0 a ha]
   constructor
   · rintro ⟨-, hu⟩ g hg
-    obtain ⟨y, hy, hyg⟩ := GlobalTheory.T.hermitianPairing_onto_inverseIdeal_at_place D ψ hψ B.V₀ B.A B.L B.o B.ζ LV₀ 𝔷 v hG.sdV₀ h𝔷 h𝔷0 g hg
+    obtain ⟨y, hy, hyg⟩ := _root_.GlobalTheory.SeeSaw.HzOnto.hz_onto D ψ hψ B.V₀ B.A B.L B.o B.ζ LV₀ 𝔷 v hG.sdV₀ h𝔷 h𝔷0 g hg
     rw [← hyg]
     exact (key a ha y hy).1 (hu y hy)
   · intro h
     have hcA : cA D a ∈ idAt D (· = v) := cA_mem_idAt'' ha
-    refine ⟨fun k l => ?_, fun y hy => (key a ha y hy).2 (h _ (GlobalTheory.T.lineVector_pairing_mem_inverseIdealCompletion D ψ hψ B.V₀ B.A B.L B.o B.ζ LV₀ 𝔷 v hG.sdV₀ h𝔷 h𝔷0 y hy))⟩
+    refine ⟨fun k l => ?_, fun y hy => (key a ha y hy).2 (h _ (_root_.GlobalTheory.LineDual.line_pair_mem_idV D ψ hψ B.V₀ B.A B.L B.o B.ζ LV₀ 𝔷 v hG.sdV₀ h𝔷 h𝔷0 y hy))⟩
     have e6 := congrFun (incAdj_yZero_mulVec D ρ B J hρ a (Pi.single l 1)) k
     rw [Matrix.mulVec_single_one] at e6
     refine (congrArg (· ∈ idAt D (· = v)) e6).mpr ?_
@@ -208,14 +208,14 @@ open GlobalTheory.Core.Mi.ChainLast in
 theorem GlobalTheory.Core.Mi.LatMatch.lastAt_of_goodBF : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ), IsStdChar D ψ (-1) → ∀ (ρ : ℕ) (B : BesLev D ρ) (J : JacLev D ρ) (LV : Lat B.V) (LV₀ : Lat B.V₀) (LW : Lat J.W) (LW₀ : Lat J.W₀) (v : GlobalTheory.FinPl.Pl D), GoodBF ψ B J LV LV₀ LW LW₀ v → LastAt ψ B.d (vecB B.o B.ζ) LV LV₀ v := by
   intro D ψ hψ ρ B J LV LV₀ LW LW₀ v hG i hi s hs
   obtain ⟨-, h2, -, -, h5, -, -⟩ := _root_.GlobalTheory.SeeSaw.idV_props D ψ hψ v
-  obtain ⟨𝔢, h𝔢0, -, h𝔢⟩ := GlobalTheory.T.selfDualLattice_rationalLineTrace_fractionalIdeal D B.V LV (col B.d i) hG.sdV (col_ne_zero _ _)
-  obtain ⟨𝔷, h𝔷0, -, h𝔷⟩ := GlobalTheory.T.selfDualLattice_rationalLineTrace_fractionalIdeal D B.V₀ LV₀ (vecB B.o B.ζ) hG.sdV₀ (vecB_ne_zero B.o B.line)
+  obtain ⟨𝔢, h𝔢0, -, h𝔢⟩ := _root_.GlobalTheory.Core.Mi.LatLine.line_trace D B.V LV (col B.d i) hG.sdV (col_ne_zero _ _)
+  obtain ⟨𝔷, h𝔷0, -, h𝔷⟩ := _root_.GlobalTheory.Core.Mi.LatLine.line_trace D B.V₀ LV₀ (vecB B.o B.ζ) hG.sdV₀ (vecB_ne_zero B.o B.line)
   let 𝔟 : ℕ → FI D := fun n => if h : n < ρ then
-    Classical.choose (GlobalTheory.T.selfDualLattice_rationalLineTrace_fractionalIdeal D J.W LW (col J.d ⟨n, h⟩) hG.sdW (col_ne_zero _ _)) else 1
+    Classical.choose (_root_.GlobalTheory.Core.Mi.LatLine.line_trace D J.W LW (col J.d ⟨n, h⟩) hG.sdW (col_ne_zero _ _)) else 1
   have h𝔟 : ∀ j : Fin ρ, 𝔟 j ≠ 0 ∧
       ∀ a ∈ idAt D (· = v), a • ratV (col J.d j) ∈ latV J.W LW (· = v) ↔ a ∈ idV (𝔟 j) v := by
     intro j
-    have hs := Classical.choose_spec (GlobalTheory.T.selfDualLattice_rationalLineTrace_fractionalIdeal D J.W LW (col J.d j) hG.sdW (col_ne_zero _ _))
+    have hs := Classical.choose_spec (_root_.GlobalTheory.Core.Mi.LatLine.line_trace D J.W LW (col J.d j) hG.sdW (col_ne_zero _ _))
     simp only [𝔟, dif_pos j.2, Fin.eta]
     exact ⟨hs.1, hs.2.2 v⟩
   have hmono : GlobalTheory.SeeSaw.MonoId J.d LW LW₀ 𝔟 v :=

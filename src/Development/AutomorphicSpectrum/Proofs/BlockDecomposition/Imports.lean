@@ -5,7 +5,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsAdmissibleDeg
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactOpenSubgroupsBasis
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsUnitarisableDegenerateSeries
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NontrivialSubrepresentation
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdmissibleUnitarySemisimpleStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdmissibleUnitarySemisimple
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetInducedTwoCharacters
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InducedTwoCharactersNotScalar
 open GlobalTheory.PRep GlobalTheory.SmGL
@@ -25,7 +25,7 @@ theorem prod₂_detRep_isIrreducible :
   show IsSimpleOrder (Subrepresentation (parInd (two (stdSum (rfl : a + b = a + b)))
     ((extTensor (detRep (Fin a) χ₁) (detRep (Fin b) χ₂)).comp (leviTwo k (Fin a) (Fin b)).symm.toMonoidHom)))
   refine ⟨fun W => ?_⟩
-  obtain ⟨W', hc⟩ := GlobalTheory.T.admissible_unitary_semisimple _ (GlobalTheory.CompanionTheory.SmGL.exists_compact_open_subgroup_subset k (a + b))
+  obtain ⟨W', hc⟩ := _root_.GlobalTheory.CompanionTheory.UnitSemisimple.exists_isCompl _ (GlobalTheory.CompanionTheory.SmGL.exists_compact_open_subgroup_subset k (a + b))
     (GlobalTheory.CompanionTheory.DegenSeries.isAdmissible_degenerate k a b χ₁ χ₂ s₁ s₂)
     (GlobalTheory.CompanionTheory.DegenerateSeries.isUnitarisable_degenerateSeries k a b χ₁ χ₂ s₁ s₂ u₁ u₂) W
   by_contra h

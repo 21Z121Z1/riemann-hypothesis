@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.AllPositions
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntegralBlockIndicatorStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SymLevelChainTestFunctionAddRowStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SymLevelChainTestFunctionAddRow
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MatrixBlockColumnVanishingStepStatement
 
 open MeasureTheory ValuativeRel Matrix GlobalTheory.SplitWeil GlobalTheory.RootEx GlobalTheory.StepData GlobalTheory.SymChain
@@ -86,7 +86,7 @@ theorem opE_step (ν : Measure k) (hν : IsUnitVol ν) {s κ : ℕ} (S : SymData
         · simp at hs
       · intro h s'; exact (val_inv_mul_le_one a _).2 (h (Sum.inr q, Sum.inl s') ⟨rfl, rfl⟩)
     simp only [G]
-    rw [hch, hx, hΦ, GlobalTheory.T.symLevelChain_testFunction_add_row k s κ S t hP j c H q hq _ row0 v]
+    rw [hch, hx, hΦ, _root_.GlobalTheory.SymChain.RowShift.phi_add_row k s κ S t hP j c H q hq _ row0 v]
     by_cases hc : ∀ i, A i → m i ∈ sA
     · rw [if_pos (hiff.2 hc), if_pos hc, one_mul]
     · rw [if_neg (fun h => hc (hiff.1 h)), if_neg hc, zero_mul, zero_mul]

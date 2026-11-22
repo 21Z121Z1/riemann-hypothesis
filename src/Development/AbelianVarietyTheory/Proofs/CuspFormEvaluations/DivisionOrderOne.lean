@@ -7,9 +7,9 @@ import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.PoinSumMul
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.MeasureStatements
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.FirstMinimumInvariantContinuousPosOnFrames
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.UnfoldPoincareOnto
-import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.SingularMetricFreeDivisorInvariantLowerBoundStatement
+import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.SingularMetricFreeDivisorInvariantLowerBound
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.SingularMetricFreeDivisorSmoothCurvature
-import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.SquareIntegrableSingularMetricOrderOneStatement
+import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.SquareIntegrableSingularMetricOrderOne
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.OneDivisionUpstairsFreeWeightStatement
 
 open NumberField ReciprocityTheory.ChartRestriction.G.FD ReciprocityTheory.ChartRestriction.G.AR ReciprocityTheory.ChartRestriction.G.AR.Inst ReciprocityTheory.ChartRestriction.G.AR.Up ReciprocityTheory.L2DbarEstimates MeasureTheory Topology GlobalTheory.Shares
@@ -34,9 +34,9 @@ theorem division_order_one : ∀ (E : Type) [Field E] [NumberField E] [IsCMField
     have : 0 ≤ bb ^ 2 * ((X.Ψ.card * min X.p0 (r - X.p0) : ℕ) : ℝ) := by positivity
     linarith
   have hs : ∀ k, X.IsSec Xa.L (Fl.s k) := fun k => (Fl.s_van k).1.1.1
-  have hIn := GlobalTheory.T.square_integrable_singular_metric_order_one E r X Xa Fl G x0 ho FF hFF f hf.1 hfC hvan
-  obtain ⟨hMT, hLT, hET⟩ := GlobalTheory.T.singularMetricFreeDivisor_invariant_lower_bound E r X Xa Fl G (nd X + 1) (by omega)
-  obtain ⟨hMn, hLn, -⟩ := GlobalTheory.T.singularMetricFreeDivisor_invariant_lower_bound E r X Xa Fl G (nd X) (by omega)
+  have hIn := _root_.GlobalTheory.FreeWeightInFF.inFF_order_one E r X Xa Fl G x0 ho FF hFF f hf.1 hfC hvan
+  obtain ⟨hMT, hLT, hET⟩ := _root_.GlobalTheory.FreeDivMetric.freeDivMetric E r X Xa Fl G (nd X + 1) (by omega)
+  obtain ⟨hMn, hLn, -⟩ := _root_.GlobalTheory.FreeDivMetric.freeDivMetric E r X Xa Fl G (nd X) (by omega)
   obtain ⟨⟨k0, z0, hz0, hz0'⟩, hLev⟩ := _root_.GlobalTheory.Shares.divLevi_freeWeight E r X Xa Fl G (nd X + 1) (by omega) x0 ho
   obtain ⟨F, P, hF, hFI, hP, hPF, hpo⟩ := hOn r X x0 ho hPD _ _
     (fun x => phla X G x + (1 / 2) * Real.log (∑ k, ‖Xa.w k x‖ ^ 2) +

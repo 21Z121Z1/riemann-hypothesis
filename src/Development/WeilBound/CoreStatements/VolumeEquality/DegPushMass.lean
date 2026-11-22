@@ -19,7 +19,7 @@ import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsCuspDataForToru
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.PotentialsBoundedRegSettingEqReference
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.BoundedStatements
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.HeightComparisonBetweenModelsStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.HeightComparisonBetweenModels
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspWeightRegularisationsTied
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
@@ -31,7 +31,9 @@ import Development.AutomorphicSpectrum.Statements.GeometryStatements.HodgeCompar
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.CmpSt
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.NumberField
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.LocalAtPlaces
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CmHostRankBoundsStatement
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CmHostRankBounds
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.HodgeLatticeFlagBound
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.TrivFlagOnHodge
 
 noncomputable section
 
@@ -44,11 +46,11 @@ open GroundTheory.Heights₂.Heights.LowerBoundFree GroundTheory.Heights₂.Heig
 theorem muMass : MuMass := by
   intro hG hP E _ _ _ _ H D Xo l c Y II K _ J _ Ω _ _ W _ _ Dc Hd S₀ Or hII
   classical
-  have : Nonempty (CMType H) := (GlobalTheory.T.cm_host_rank_bounds E H).2.1
+  have : Nonempty (CMType H) := (_root_.GlobalTheory.CompanionTheory.Ar.Top.HostNumbers.host_numbers E H).2.1
   obtain ⟨U, M, S, S', -, h0, ht, hS, hS', -⟩ := _root_.GlobalTheory.CompanionTheory.Relay.cusp_weight_regularisations_tied hG E H D Xo l c Y II K J Ω W Dc Hd S₀ Or
   obtain ⟨Cd, rfl⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.Fake.every_weight_is_cusp_weight K J II _ Ω W Dc U h0 ht
   let X : ComponentSetting Dc ℤ (Fin 2 → ℤ) := ⟨Hd, Cd, M, S, hS, S', hS', 0, 0⟩
-  have hA := (GlobalTheory.T.height_comparison_between_models hG hP K J II _ Ω W Dc Hd M M S S 0 hII hS hS).1
+  have hA := (_root_.GlobalTheory.CompanionTheory.Ar.Cusp.arLim_exists_eq hG hP K J II _ Ω W Dc Hd M M S S 0 hII hS hS).1
   have hL := (_root_.GlobalTheory.CompanionTheory.Ar.Giv.muMeasureLimit II _ K J Ω W Dc ℤ (Fin 2 → ℤ) X 0 hII.1 hA).2
   have hSm := MuRegSmooth.proof HermExtend.proof (ProjSmoothAlong.proof HoloInjDerivInj.proof _root_.GlobalTheory.CompanionTheory.Ar.Giv.localOrbitChart)
     (VertFactorSmooth.proof VertFactorPos.proof) VertFactorPos.proof II _ K J Ω W Dc ℤ (Fin 2 → ℤ) X 0

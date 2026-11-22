@@ -5,7 +5,7 @@ import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModJTau
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsFractionFieldExtensionOfMaps
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsCuspExpansionAtInfinityProperties
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsInjectiveCuspExpansionRingHomStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsInjectiveCuspExpansionRingHom
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsRingEquivCoeffConj
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UpperHalfPlaneGermRingHomAndRestrict
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UpperHalfPlaneCodiscreteGermIdentityAndUnits
@@ -29,7 +29,7 @@ theorem frac_nonempty : ∀ (Ω : Type) [Field Ω] [Algebra ℚ Ω] [IsAlgClosur
   haveI : IsDomain (ring ε.range) := _root_.GlobalTheory.FN.ring_isDomain ε.range
   obtain ⟨hmem, hconst⟩ := _root_.GlobalTheory.FN.mem_ring_iff_inR ε.range
   obtain ⟨-, huniq, hC, -, -⟩ := _root_.GlobalTheory.FNExp.exp_props Ω ε
-  obtain ⟨e, he_inj, he_exp⟩ := GlobalTheory.T.exists_injective_cuspExpansion_ringHom Ω ε
+  obtain ⟨e, he_inj, he_exp⟩ := _root_.GlobalTheory.FN.expansion_injective_ringHom Ω ε
   obtain ⟨hexp_mem, -, -, -, -, -⟩ := _root_.GlobalTheory.FNRoots.main Ω ε
   obtain ⟨⟨G, hG⟩, hmd, -, -, hHs⟩ := _root_.GlobalTheory.FN.germ_ringHom_and_restrict
   obtain ⟨-, hid, hunit⟩ := _root_.GlobalTheory.FN.germ_main

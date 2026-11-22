@@ -6,15 +6,15 @@ import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CuspAl
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TiltSc
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsTameFinitePlaceHermitianAll
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridRowZeroBasePointCarriesLattice
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.VacuumBasePointMovesRowLatticesStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PosNormLineSelfDualAndTopLatticeSplitsStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NegLineLatticeAndBesselCoreLatticeSelfDualSplitStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.VacuumBasePointMovesRowLattices
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PosNormLineSelfDualAndTopLatticeSplits
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NegLineLatticeAndBesselCoreLatticeSelfDualSplit
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsSelfDualGridRowMovedLatticeLargeDepth
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridRowMovedLatticeSplitsBesselLargeDepthStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridRowMovedLatticeSplitsBesselLargeDepth
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridRowMovedLatticeSplitsJacobiLargeDepth
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BesselFlagCharacterPrimitiveRowTestMovedLattice
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JacobiFlagCharPrimitiveMovedLatticeLargeDepth
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BesselToJacobiBasePointCarriesRowLatticeLinesStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BesselToJacobiBasePointCarriesRowLatticeLines
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JacobiToBesselCarriesFlagLinesRowPeriodSucc
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BesselLastVectorMemHomLatticeIffIntegral
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LastSeesawLineMapKeepsLatticesLargeDepth
@@ -32,8 +32,8 @@ set_option maxHeartbeats 800000 in
 
 theorem shapeAt_big : Big fun ch => ShapeAt ch := by
   refine big_mono (fun {D} {Γ} _ _ {Pl0 T} {A} {Ks} _ _ _ {R} ch h => ?_)
-    ((((((((((((((_root_.GlobalTheory.RowShape.moves0).and GlobalTheory.T.vacuum_base_point_moves_row_lattices).and GlobalTheory.T.posNormLine_selfDual_and_topLattice_splits).and GlobalTheory.T.negLineLattice_and_besselCoreLattice_selfDual_split).and _root_.GlobalTheory.RowShape.big_isSelfDualC_rowN).and GlobalTheory.T.gridRowMovedLattice_splits_bessel_largeDepth).and _root_.GlobalTheory.RowShape.rowN_monoAt).and _root_.GlobalTheory.RowShape.big_primAt_rowN).and _root_.GlobalTheory.RowShape.big_primAt_rowJac).and
-      GlobalTheory.T.besselToJacobi_basePoint_carries_row_lattice_lines).and _root_.GlobalTheory.RowShape.cols_jacBes_rowN).and _root_.GlobalTheory.RowShape.big_last_rowN).and _root_.GlobalTheory.LastLineLat.kap_lastTau_latO).and _root_.GlobalTheory.LastRowUnram.chars_unram)
+    ((((((((((((((_root_.GlobalTheory.RowShape.moves0).and _root_.GlobalTheory.BaseTiltMove.base_moves_rowN).and _root_.GlobalTheory.RowShape.topL_selfDual_orthAt).and _root_.GlobalTheory.RowShape.coreL_selfDual_split).and _root_.GlobalTheory.RowShape.big_isSelfDualC_rowN).and _root_.GlobalTheory.RowShape.big_monoAt_rowN).and _root_.GlobalTheory.RowShape.rowN_monoAt).and _root_.GlobalTheory.RowShape.big_primAt_rowN).and _root_.GlobalTheory.RowShape.big_primAt_rowJac).and
+      _root_.GlobalTheory.RowColsBF.colsAt_bf).and _root_.GlobalTheory.RowShape.cols_jacBes_rowN).and _root_.GlobalTheory.RowShape.big_last_rowN).and _root_.GlobalTheory.LastLineLat.kap_lastTau_latO).and _root_.GlobalTheory.LastRowUnram.chars_unram)
   obtain ⟨⟨⟨⟨⟨⟨⟨⟨⟨⟨⟨⟨⟨hmv0, hmvS⟩, htop⟩, hcore⟩, hsd⟩, hmB⟩, hmJ⟩, hpB⟩, hpJ⟩, hcBF⟩, hcFB⟩, hlast⟩, hkap⟩, hun⟩ := h
   have hmv : ∀ (t : T) (b : Pts ch.G), IsBase t ch.S.B b → ∀ j, j ≤ D.R.m → GlobalTheory.FinPl.Moves _ (b j) (ch.G.Λ (.grid D.R.m j)) (GlobalTheory.RowShape.rowN ch.G j) fun _ => True := fun t b hb j hj => by
     rcases Nat.eq_zero_or_pos j with rfl | hj0

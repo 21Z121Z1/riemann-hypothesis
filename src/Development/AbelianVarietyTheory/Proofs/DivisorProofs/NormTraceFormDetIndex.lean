@@ -1,6 +1,6 @@
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.TamagawaSpecialUnitary
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.WeightFunctionOnFrames
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieBasisSpansUnitaryLieStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieBasisSpansUnitaryLie
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceProductSkewHermitianReal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceIntegralOfPreservedLattice
@@ -70,7 +70,7 @@ theorem abs_norm_gram_eq_index : ∀ (E : Type) [Field E] [NumberField E] [IsCMF
     rw [Submodule.map_span, ← Set.range_comp, hve]
   have hspan : ⊤ ≤ Submodule.span (maximalRealSubfield E) (Set.range v) := by
     rintro ⟨X, hX⟩ -
-    have h := GlobalTheory.T.lie_basis_spans_unitary_lie E r G e hG hd heV hli X hX.1 hX.2
+    have h := _root_.GlobalTheory.SkewSpan.mem_span_of_skew E r G e hG hd heV hli X hX.1 hX.2
     rw [← hmapv] at h
     obtain ⟨y, hy, hyX⟩ := h
     have : y = ⟨X, hX⟩ := Subtype.ext hyX

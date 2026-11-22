@@ -4,7 +4,7 @@ import Formalism.LocalToGlobal.ProjectiveLattices.VAtVNeBot
 import Formalism.LocalToGlobal.ProjectiveLattices.RulInst
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FramePointVectors
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrameBorelChangeVectorsStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatModelTorusRingStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatModelTorusRing
 open AlgebraicGeometry CategoryTheory Limits NumberField ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Fl GlobalTheory.CompanionTheory.Ar.Flat
 
 noncomputable section
@@ -213,7 +213,7 @@ theorem pointRule {U : Set (Xo.XF c)} {τ : E →+* ℂ} {O : Type} [CommRing O]
       by_cases hx : (frPtF z) (show Sp p.R from q) ∈ U
       · have hr₀ : Set.range (fpt z (algebraMap p.R q.asIdeal.ResidueField)) ⊆ U := by
           rw [range_fpt_subset_iff, kerPt_residue]; exact hx
-        obtain ⟨g, a, h0, h⟩ := GlobalTheory.T.flat_model_torus_ring E H D l Xo c U τ O β Y Z φ hτ hU hl hf p z q.asIdeal.ResidueField
+        obtain ⟨g, a, h0, h⟩ := _root_.GlobalTheory.CompanionTheory.Ar.LocFn.exists_regular_near E H D l Xo c U τ O β Y Z φ hτ hU hl hf p z q.asIdeal.ResidueField
           (algebraMap p.R _) _ (fpt_under z _) (fpt_snd z _) hr₀
         refine ⟨g, a, fun hg => h0 ?_, fun F _ ψ hg => ?_⟩
         · have : g ∈ RingHom.ker (algebraMap p.R q.asIdeal.ResidueField) := by

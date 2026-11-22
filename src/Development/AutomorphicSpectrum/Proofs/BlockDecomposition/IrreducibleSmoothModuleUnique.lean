@@ -2,10 +2,10 @@ import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.CuspDiscreteDecompositionGL
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.NotIsFinitePartOfBot
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AnalyticOrthogonalVanishingStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.L2InnerDerivativeTranslateStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubgroupOneParameterClosedEqTopStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.L2InnerDerivativeTranslate
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubgroupOneParameterClosedEqTop
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IrreducibleCuspidalFormL2Mem
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LiePowerL2FactorialBoundStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LiePowerL2FactorialBound
 
 open NumberField MeasureTheory Topology Matrix GlobalTheory.AutomorphicL2Unitary GlobalTheory.DiscreteSum GlobalTheory.OpTrace GlobalTheory.UnitaryBC GlobalTheory.DiscSpec GlobalTheory.CuspRep GlobalTheory.CuspRep.CuspidalL2GL
 
@@ -47,9 +47,9 @@ theorem R_curve_mem {W : Submodule ℂ (Sm E a)} (hs : IsStable W)
   have hM : ∀ k, MemL2Quotient (latticeGL E a) μ (ψ k).1 := fun k => (hW _ (hmem k)).2
   have hcont : ∀ k, Continuous (ψ k).1 := fun k => ContAut.continuous_of_isOpen_stab E a _ (hW _ (hmem k)).1.level
   let F : ℕ → ℝ → L2 (latticeGL E a) μ := fun k t => R (latticeGL E a) μ (infGL E a (c t)) (hM k).toL2
-  obtain ⟨M, B, hb⟩ := GlobalTheory.T.lie_power_l2_factorial_bound E a μ W hs hW φ hφ X
+  obtain ⟨M, B, hb⟩ := _root_.GlobalTheory.CompanionTheory.AnalyticBound.factorial_bound E a μ W hs hW φ hφ X
   have hd : ∀ k t, HasDerivAt (F k) (F (k + 1) t) t := fun k t =>
-    GlobalTheory.T.hasDerivAt_right_translate_toL2 (GA E a) (latticeGL E a) μ (ψ k).1 (ψ (k + 1)).1 (hM k) (hM (k + 1)) (fun t => infGL E a (c t))
+    _root_.GlobalTheory.CompanionTheory.TransDeriv.hasDerivAt_R (GA E a) (latticeGL E a) μ (ψ k).1 (ψ (k + 1)).1 (hM k) (hM (k + 1)) (fun t => infGL E a (c t))
       (hcont k) (hcont (k + 1)) (continuous_infGL'.comp hc) (by simp [h0]) (fun s t => by simp [hadd])
       (fun g => by
         have := hasDerivAt_curve (ψ k) g c X h0 hX
@@ -84,7 +84,7 @@ theorem isSubrep_closure {W : Submodule ℂ (Sm E a)} (hs : IsStable W)
           rw [map_mul, map_mul]; exact hx.1 _ (hy.1 v hv), fun v hv => by
           rw [_root_.mul_inv_rev, map_mul, map_mul]; exact hy.2 _ (hx.2 v hv)⟩
       inv_mem' := fun {x} hx => ⟨hx.2, by simpa using hx.1⟩ }
-  have hS : S = ⊤ := GlobalTheory.T.subgroup_one_parameter_closed_eq_top E a S fun c X hc h0 hadd hX t => by
+  have hS : S = ⊤ := _root_.GlobalTheory.CompanionTheory.GenOneParam.eq_top_of_oneParam_Cinf E a S fun c X hc h0 hadd hX t => by
     have key : ∀ t, ∀ v ∈ C, R (latticeGL E a) μ (infGL E a (c t)) v ∈ C := fun t v hv =>
       map_closure_le hCdef _ (fun F hF => by
         obtain ⟨φ, hφ, h, rfl⟩ := hcls F hF

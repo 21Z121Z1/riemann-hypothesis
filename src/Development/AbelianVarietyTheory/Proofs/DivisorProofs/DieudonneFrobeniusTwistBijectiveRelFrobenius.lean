@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.RedSurjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KerEqRangeOfRangeEqKer
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobKerIdealLeAugIdeal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DieudonneFunctorBaseFunctorProperties
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DieudonneBaseChangeBasisStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DieudonneBaseChangeBasis
 
 set_option autoImplicit false
 
@@ -56,7 +56,7 @@ theorem GlobalTheory.Dieu.frobTwist_module : ∀ (p : ℕ) [Fact p.Prime] (B : B
   · haveI := B.free G trivial
     haveI := B.finite G trivial
     letI := (frobRing (p_eq_zero p k)).toAlgebra
-    obtain ⟨b', hb'⟩ := GlobalTheory.T.dieudonne_baseChange_basis p (fun _ _ _ => True) B k k G trivial trivial _
+    obtain ⟨b', hb'⟩ := _root_.GlobalTheory.Dieu.Base.smap_toBase_basis p (fun _ _ _ => True) B k k G trivial trivial _
       (Module.Free.chooseBasis (WittVector p k) (B.M G trivial))
     exact bijective_of_basis _ (wittMap_frobRing_bijective p k) _
       (fun a m => B.smap_smul trivial trivial _ a m) _ b' hb'

@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SqMap
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GeneratorRatioUnitExistsStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GeneratorRatioUnitExists
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FrRatio
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermBPrim
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBIdSy
@@ -301,7 +301,7 @@ theorem cube_eq (hq : ∀ m, fibPt t x (g.x m) ≫ Q.q = homAt (𝟙 (Sp k)) (su
 
 theorem exists_U (hw : w.IsGen) (hq : ∀ m, fibPt t x (g.x m) ≫ Q.q = homAt (𝟙 (Sp k)) (sub1 Qs m) ≫ gB.x m) (m : ℕ) :
     ∃ U : (Jet k (Fin 2 × Fin d) m)ˣ, TrG g gB w Qs m (unitΓ U⁻¹) := by
-  obtain ⟨u, hu⟩ := GlobalTheory.T.generator_ratio_unit_exists t.G.left Q.tB.G.left (GF t x).left t.PP.L Q.tB.PP.L (pullback.fst t.G.hom x) Q.q.left
+  obtain ⟨u, hu⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.FrGauge.exists_ratio_iso t.G.left Q.tB.G.left (GF t x).left t.PP.L Q.tB.PP.L (pullback.fst t.G.hom x) Q.q.left
     t.PP.isLB Q.tB.PP.isLB w hw (Sp (Jet k (Fin 2 × Fin d) m)) (ULift (Finset (Fin 2))) (cubeF t x (xsG g m))
     (cφG t (xsG g m)) (phiM gB Qs m) (cε 2) (g.e m) (bG gB Qs m) (fun I => fibPt_fst t x _) (cube_eq hq m)
     (g.frame.gen m) (pullGen_isGen _ _ _ _ (gB.frame.gen m) _)

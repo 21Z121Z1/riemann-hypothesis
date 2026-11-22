@@ -3,7 +3,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTransportF
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDblCoordDblD
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaDiagInt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledDarbouxCoordsCompat
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicStoneVonNeumannLagrangianUniquenessStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicStoneVonNeumannLagrangianUniqueness
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 
 open scoped TensorProduct Matrix
 open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes
@@ -106,7 +107,7 @@ theorem eq_mul_diagInt : ∀ (F : Type) [Field F] [NumberField F] (ψ : AddChar 
       refine Prod.ext ?_ ?_ <;> funext i <;> cases i <;> simp [diagL]
     rw [e]
     exact h _ _ φ hφ
-  obtain ⟨c, hc⟩ := GlobalTheory.T.adelicStoneVonNeumann_lagrangian_uniqueness F ψ hψ (κ ⊕ κ) (LinearMap.range (diagL F κ))
+  obtain ⟨c, hc⟩ := _root_.GlobalTheory.AdelicSvN.main F ψ hψ (κ ⊕ κ) (LinearMap.range (diagL F κ))
     (by
       rintro _ ⟨p, rfl⟩ _ ⟨q, rfl⟩
       simp [diagL, dotProduct, Fintype.sum_sum_type])

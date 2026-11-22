@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.CubeLBPairingI
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsMulEquivOfIsGrpPullback
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteExtensionPrincipalTriplesTensorLatti
 import Development.AbelianVarietyTheory.Definitions.CMLattices.ExistsIsThetaDegOfIsLocalModel
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmTensorRetractOfCmDatumRankOneStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmTensorRetractOfCmDatumRankOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegerRelationLinearHomsCmSignatureType
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqPowOfBaseChangeEqPowPrincipalAbelianCMTriple
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmObjHomOfTypeLinearIndependent
@@ -186,7 +186,7 @@ theorem eigLat_le_span : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] 
   intro E _ _ _ H _ K _ _ ρ σ₁ p X FP FB MP hMP τ _ τE hτE w hw
   obtain ⟨K', _, _, j, ω, C, A', B', mA, mB, DA, DB, hA, hB, rA, -, ⟨tA⟩, ⟨tB⟩⟩ :=
     _root_.GlobalTheory.CM.TenPair.exists_isTen_pair E H K ρ (X.A true) X.B 1 p X.ρ_sq X.typeP X.typeB
-  obtain ⟨n, f', g', hf', hg', hfg⟩ := GlobalTheory.T.cmTensor_retract_of_cmDatum_rank_one E H _ ω C A' B' DA DB hA hB rA tA tB
+  obtain ⟨n, f', g', hf', hg', hfg⟩ := _root_.GlobalTheory.CM.isTen_retract_of_rank_one E H _ ω C A' B' DA DB hA hB rA tA tB
   have hj : Function.Injective (RingOfIntegers.mapRingHom j) := fun a b h => by
     apply RingOfIntegers.ext
     apply j.injective

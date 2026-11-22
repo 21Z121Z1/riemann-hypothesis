@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartValEq
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBasicOpenIntegralOfIntegralAtPointStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBasicOpenIntegralOfIntegralAtPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralElemNearFibreOfGenericPoint
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField
@@ -19,7 +19,7 @@ theorem GlobalTheory.Mum.intAt_of_intAt_fibreGeneric : ∀ (R : Type) [CommRing 
   have hWj : W ≤ L.U j := fun z hz => (hWle hz).1
   have hWU : W ≤ G.hom ⁻¹ᵁ U := fun z hz => (hWle hz).2
   obtain ⟨c', hxc', hc'⟩ := _root_.GlobalTheory.Mum.intElem_basicOpen_of_fibre_generic R M G hsm hqc hgi Y α t hpb W hW U hU hWU (chartVal L α s j W hWj) x ζ hxW hζ hgen
-    (GlobalTheory.T.exists_basicOpen_integral_of_integral_at_point L α k s ζ hint j W hWj hW hζW)
+    (_root_.GlobalTheory.Mum.intAt_chart L α k s ζ hint j W hWj hW hζW)
   refine ⟨j, G.left.basicOpen c', (G.left.basicOpen_le c').trans hWj, hxc', hW.basicOpen c', ?_⟩
   convert hc' using 1
   simp only [chartVal]

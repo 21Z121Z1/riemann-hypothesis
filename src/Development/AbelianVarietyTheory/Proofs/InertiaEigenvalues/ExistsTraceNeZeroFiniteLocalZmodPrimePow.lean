@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TraceAdjoinRootMap
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteFieldExistsGeneratorMinpolyStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteFieldExistsGeneratorMinpoly
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpanPowersOfUniformizerOfNilpotent
 open NumberField IsDedekindDomain Polynomial
 
@@ -53,7 +53,7 @@ theorem exists_trace_ne_zero : ∀ (l b e : ℕ) [Fact l.Prime] (B : Type) [Comm
     exact hlmax
   letI : Algebra (ZMod l) K := ZMod.algebra K l
   haveI : Finite K := Finite.of_surjective _ IsLocalRing.residue_surjective
-  obtain ⟨a, p, hpm, hpirr, hpa, hpa', hgen, hcardK⟩ := GlobalTheory.T.exists_separable_generator_card_eq_pow_natDegree l K
+  obtain ⟨a, p, hpm, hpirr, hpa, hpa', hgen, hcardK⟩ := _root_.GlobalTheory.finiteField_exists_generator_minpoly l K
   set g : ZMod (l ^ b) →+* ZMod l := ZMod.castHom (dvd_pow_self l hb) (ZMod l) with hg
   have hgs : Function.Surjective g := ZMod.ringHom_surjective g
   obtain ⟨h, hhp, hdeg, hmon⟩ :=

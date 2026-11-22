@@ -1,7 +1,11 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PositionPot
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterNamed
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularizedWeightTendstoC2Statement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularizedWeightTendstoC2
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FlagIndices
+import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Objects
+import ReciprocityTheory.AnalyticForms.LeviForms.IsRegFamilyInhabitStatement
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRes
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField Matrix Filter Topology
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi
 open GroundTheory.Heights₂.Heights.LowerBoundFree GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Cusp
@@ -39,7 +43,7 @@ theorem tendstoUniformlyOn_regWeight_of_isTied :
         show (M.atlas.chart j).symm ((M.atlas.chart j) y) ∈ S.R.Yo
         rw [(M.atlas.chart j).left_inv (hCs hy.1)]
         exact hK'Y hy.2
-      have hu := (GlobalTheory.T.regularized_weight_tendsto_C2 K J P n M Xo A S hS j _ hsub himg).1
+      have hu := (_root_.GlobalTheory.CompanionTheory.Ar.Giv.regWeight_tendsto_C2_of_tied K J P n M Xo A S hS j _ hsub himg).1
       rw [Metric.tendstoUniformlyOn_iff] at hu ⊢
       intro ε hε
       filter_upwards [hu ε hε] with t ht y hy

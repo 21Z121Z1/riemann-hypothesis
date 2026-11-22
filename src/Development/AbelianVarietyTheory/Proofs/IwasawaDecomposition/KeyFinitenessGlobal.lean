@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteChars
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharTrivialOnCongruenceUnitIdelesStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharTrivialOnCongruenceUnitIdeles
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RayClassGroupIdelicFiniteIndex
 import Formalism.LocalToGlobal.UnitaryNorms.IsUnitaryNormOf
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.GKeyFin
@@ -31,7 +31,7 @@ namespace GlobalTheory.Mem.LiteralAutomorphy
 theorem heckeFin : ∀ (L : Type) [Field L] [NumberField L] (I : Type) [Fintype I] (φ : I → L →+* ℂ) (n : I → ℤ)
     (S : Set (HeightOneSpectrum (𝓞 L))) (N : ℕ), S.Finite →
     {χ : Formalism.L2.Host.HChar L | χ.HasInf φ n ∧ (∀ v, v ∉ S → χ.UnrAt v) ∧ ∀ v ∈ S, χ.LevelLe v N}.Finite :=
-  GlobalTheory.LevelChars.heckeFin_of GlobalTheory.T.heckeChar_trivial_on_congruenceUnitIdeles _root_.GlobalTheory.LevelChars.rayClass_finite
+  GlobalTheory.LevelChars.heckeFin_of _root_.GlobalTheory.LevelChars.LevTriv.levSub_triv _root_.GlobalTheory.LevelChars.rayClass_finite
 
 namespace KeyFiniteness
 

@@ -14,12 +14,12 @@ import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.EqOfValFGeneri
 import Development.AbelianVarietyTheory.Definitions.Degenerations.BaseFacts
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUnitCharts
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsInvertibleMatrixChangeOfSpanEq
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsProjSpaceMapOfLocalSectionsNoCommonZeroStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsProjSpaceMapOfLocalSectionsNoCommonZero
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsClosedImmersionProjSpaceOfSections
 import Development.AbelianVarietyTheory.Definitions.Degenerations.PullChartIsLB
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverMorphismRestrictOfRelAmple
 import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.MemRangeCompIffOfIsClosedImmersion
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsImmersionProjSpaceOfLocalLinearChangeStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsImmersionProjSpaceOfLocalLinearChange
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SemiabelianSchemes.PrecompleteBases.PsbLb
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry
 open scoped CategoryTheory.Obj
@@ -90,11 +90,11 @@ theorem ZHPre.immersedBy_of_clos (Q : ZHPre ρ M U₀) (C : Clos ρ M U₀ EE) (
     ImmersedBy Q.G.hom M.s (LB.LinComb Q.L.L (K := Fin 1) (fun _ => 𝟙 Q.G.left) (fun _ => (S.N : ℤ))) (Q.G.hom ⁻¹ᵁ W) σ := by
   obtain ⟨m, hm⟩ : ∃ m, Fintype.card S.J = m + 1 := Nat.exists_eq_succ_of_ne_zero Fintype.card_ne_zero
   let e : Fin (m + 1) ≃ S.J := (Fintype.equivFinOfCardEq hm).symm
-  obtain ⟨π, hπ, hcl, hπc⟩ := GlobalTheory.T.exists_projSpace_map_of_local_sections_no_common_zero o _ _ Q.G.hom M.s _ _ _ σ m e (fun i => (hσ i).1) hz
+  obtain ⟨π, hπ, hcl, hπc⟩ := _root_.GlobalTheory.ZH.CoordMap.exists_coordMap o _ _ Q.G.hom M.s _ _ _ σ m e (fun i => (hσ i).1) hz
   refine ⟨m, e, π, hπ, ?_, hcl⟩
   let V := Q.G.hom ⁻¹ᵁ W
   have : IsReduced V.toScheme := isReduced_of_isOpenImmersion V.ι
-  refine GlobalTheory.T.isImmersion_projSpace_of_local_linearChange o _ _ M.s (V.ι ≫ Q.G.hom) m π hπ fun y => ?_
+  refine _root_.GlobalTheory.ZH.LinFrame.isImmersion_lift_of_linear_change o _ _ M.s (V.ι ≫ Q.G.hom) m π hπ fun y => ?_
   have hyW : (V.ι ≫ Q.G.hom) y ∈ W := by
     rw [Scheme.Hom.comp_apply]
     exact y.2

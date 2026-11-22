@@ -8,7 +8,7 @@ import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.ArcLi
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.SupBoundPageRows
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.LocalUnfoldBStatementHolds
-import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ComponentModelWeightDimensionDictionaryStatement
+import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ComponentModelWeightDimensionDictionary
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.MemSpanCuspReadingsIffComponents
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsMulNe
 
@@ -76,7 +76,7 @@ theorem upper : ∀ (D : D7) (T : Top D) (h : LawsP T) (j : ℕ) (hj : InR D j) 
   intro D T h j hj n R e hR N wL wF w Tn c1 A t Fl δ xs en _
   refine finrank_le_of_parts _ e (fun k => (Fl.Fl k).δ) _ δ en fun k m g hg => ?_
   choose f hf hgf using fun q => (_root_.GlobalTheory.Shares.span_readings_components D T h j hj n R e hR (addL wF wL Tn)).1 (g q).1 (g q).2
-  have hw := (GlobalTheory.T.componentModelWeight_dimension_dictionary D T h j hj k).2.2.1 wF wL Tn
+  have hw := (_root_.GlobalTheory.Shares.WtDic.weights_dictionary D T h j hj k).2.2.1 wF wL Tn
   have := GlobalTheory.UpperModel.upper _ _ _ (A.Xa k) (Fl.Fl k) m (fun q => f q k) (fun q => by
     rw [A.hF, A.hL, A.hT, ← hw]
     exact (hf q k).1.1) (fun u hu => by

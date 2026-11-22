@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.VsizeNonneg
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FinitePlaceRelativeNormLeLocalSizePowStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FinitePlaceRelativeNormLeLocalSizePow
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InfinitePlaceRelativeNormLeMaxEmbeddingPow
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Matrix
@@ -129,7 +129,7 @@ theorem rat_size {n : ℕ} (ξ : Fin n → D.host.E) (hξ : ξ ≠ 0) :
   have hd : Module.finrank D.host.F D.host.E ≠ 0 := Module.finrank_pos.ne'
   have ha : ∀ v, ‖algebraMap D.host.F (Fv D.host.F v) (Algebra.norm D.host.F (ξ i))‖₊ ≤
       vFin v (fun i => incA D (ξ i)) ^ Module.finrank D.host.F D.host.E := fun v => by
-    refine (GlobalTheory.T.finitePlace_relativeNorm_le_localSize_pow D v (ξ i)).trans (pow_le_pow_left₀ zero_le ?_ _)
+    refine (_root_.GlobalTheory.NormFin.normFin_le D v (ξ i)).trans (pow_le_pow_left₀ zero_le ?_ _)
     rw [← compFin_incA]
     exact Finset.le_sup (f := fun i => absFin D.host.F v (compFin D.host.F D.host.E v (incA D (ξ i))))
       (Finset.mem_univ i)

@@ -30,7 +30,7 @@ theorem exists_rat_finCong_of_marks (l : Level H) (V : HSp D) (io : Dw.La →ₗ
         (l.M : ℕ) • w) :
     ∃ γ ∈ GQ V, ∃ u : GA D V, gLat V u = latHat V ∧ FinCong V l.M u ∧ g' = γ * g * u := by
   subst hΛ hΛ'
-  obtain ⟨r1, -, r3, -, r5⟩ := GlobalTheory.T.rational_points_adelicUnitary_eq_unitary D V
+  obtain ⟨r1, -, r3, -, r5⟩ := _root_.GlobalTheory.Member.RatElt.rational_elements D V
   obtain ⟨δ, hδ1, hδ2, hδ3⟩ := exists_unitary_of_trace_eq _ _ (_root_.GlobalTheory.Member.latG_lattice_and_completion D V g).2.1 (_root_.GlobalTheory.Member.latG_lattice_and_completion D V g').2.1
     φ φ' _ ξ hξ htr
   obtain ⟨γ, hγ⟩ := r3 δ hδ3

@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.MemPowSub
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.AlgebraMapNormTensorEqProdConjugatesStatement
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.AlgebraMapNormTensorEqProdConjugates
 open NumberField IsDedekindDomain Polynomial GlobalTheory.QNorm GlobalTheory.CNorm
 open scoped WithZero TensorProduct
 
@@ -54,8 +54,8 @@ theorem TNorm.of_tower (F M E K : Type) [Field F] [Field M] [Field E] [Algebra F
   refine ⟨π (∏ q : (E ≃ₐ[F] E) ⧸ φ.range,
     Algebra.TensorProduct.map (AlgHom.id K K) (((q.out)⁻¹ : E ≃ₐ[F] E) : E →ₐ[F] E) y), ?_⟩
   apply (algebraMap K (K ⊗[M] E)).injective
-  rw [GlobalTheory.T.algebraMap_norm_tensor_eq_prod_galois_conjugates M E K, ← IsScalarTower.algebraMap_apply F M K x, ← hy, ← π.commutes,
-    GlobalTheory.T.algebraMap_norm_tensor_eq_prod_galois_conjugates F E K, map_prod π, map_prod π,
+  rw [_root_.GlobalTheory.CNorm.algebraMap_norm_tensor_eq_prod_conjugates M E K, ← IsScalarTower.algebraMap_apply F M K x, ← hy, ← π.commutes,
+    _root_.GlobalTheory.CNorm.algebraMap_norm_tensor_eq_prod_conjugates F E K, map_prod π, map_prod π,
     ← (bijective_mul_out_inv φ hφ).prod_comp (fun g : E ≃ₐ[F] E =>
       π (Algebra.TensorProduct.map (AlgHom.id K K) (g : E →ₐ[F] E) y)), Fintype.prod_prod_type]
   refine Finset.prod_congr rfl fun h _ => ?_

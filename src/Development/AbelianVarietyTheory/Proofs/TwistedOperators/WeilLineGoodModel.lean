@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaTransformDa
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRtensOp
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LieActionFockOperatorsScalarsTrace
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFinOfRest
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLineGoodModelPolynomialStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLineGoodModelPolynomial
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix
 open Formalism.L2.Theta Formalism.L2.DIV Formalism.L2.Indef Formalism.DivisionValues
@@ -54,7 +54,7 @@ theorem hasDerivAt_thetaSum_lineY : GlobalTheory.FunPr.Hypotheses₂ → ∀ {F 
       simp [GlobalTheory.WeilM.thetaSum]
     simp only [ht0, h1, map_zero, hrho0, hth0]
     exact hasDerivAt_const (0 : ℝ) (0 : ℂ)
-  obtain ⟨c, g, hc, hlim⟩ := GlobalTheory.T.weil_line_good_model_polynomial hP M ψ χX χW om hψ hG hW γ hγ f r hR
+  obtain ⟨c, g, hc, hlim⟩ := _root_.GlobalTheory.ArchLinePair.exists_curve_lineY hP M ψ χX χW om hψ hG hW γ hγ f r hR
   obtain ⟨Λ, hΛ⟩ := GlobalTheory.ThetaSchrCont.exists_clm_hasSum M ψ hψ u f r hR hf
   have hcurve : (fun t : ℝ => GlobalTheory.WeilM.thetaSum F (M.co.rho ψ u (om (γ (Multiplicative.ofAdd t), 1) (tens (evI F) f r))))
       = fun t => Λ (c t) := by

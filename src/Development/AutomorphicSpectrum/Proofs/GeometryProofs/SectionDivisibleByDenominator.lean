@@ -3,7 +3,7 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsThetaMeanSqu
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.ZhangDimensionPushDownGrassmannianHeightBounds
 import GroundTheory.HeightsAndTheta.Heights.KernelsLattice
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.StatementsBundles
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionValueUniqueBaseChangeStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionValueUniqueBaseChange
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TopLeOfClosedPoint
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PrimeIdealExtensionLocalDomain
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GroupSchemeIntegralNoetherian
@@ -13,7 +13,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LineBundleSectionDi
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionPointValuationRingLift
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SemiAbelianTorsionFiniteAndClosedPointFiniteOrde
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AbelianTorsionFiniteAndMulNSurjective
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AlgebraicPointOverNumberFieldStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AlgebraicPointOverNumberField
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionPointLineBundleUnitStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.JacobsonClosedPointsToolsInt
 
@@ -79,7 +79,7 @@ theorem point_bound (D : PPData H L) (n : ℕ) (s : Out.H0 D.t.PP.L n) (d : 𝓞
     fun x hx => hWU (htop hx)
   haveI : Algebra.IsAlgebraic ℚ C := Algebra.IsAlgebraic.trans ℚ L C
   haveI : FaithfulSMul O C := (faithfulSMul_iff_algebraMap_injective O C).2 Subtype.val_injective
-  obtain ⟨K, _, _, e, x', hx⟩ := GlobalTheory.T.algebraic_point_over_number_field C D.t.G.left (D.t.G.hom ≫ spMap (algebraMap ℤ (𝓞 L)))
+  obtain ⟨K, _, _, e, x', hx⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Sl.Reg.Descend.exists_numberField_point C D.t.G.left (D.t.G.hom ≫ spMap (algebraMap ℤ (𝓞 L)))
     (spMap (algebraMap O C) ≫ yO)
   obtain ⟨c', hc⟩ := Spec.map_surjective (x' ≫ D.t.G.hom)
   let c : 𝓞 L →+* K := c'.hom
@@ -100,7 +100,7 @@ theorem point_bound (D : PPData H L) (n : ℕ) (s : Out.H0 D.t.PP.L n) (d : 𝓞
     have h1 : u ≫ yK ^ N = u ≫ 1 := by rw [MonObj.comp_pow, huy, hyCN, MonObj.comp_one]
     have h2 : spMap e ≫ (yK ^ N).left = spMap e ≫ (1 : Over.mk (spMap c) ⟶ D.t.G).left := congrArg (·.left) h1
     refine Over.OverMorphism.ext (ext_of_isDominant_of_isSeparated (X := Sp K) D.t.G.hom ((Over.w _).trans (Over.w _).symm) (spMap e) h2)
-  obtain ⟨⟨T, hT, -⟩, hmap⟩ := GlobalTheory.T.torsion_value_unique_base_change E H L D n s K (spMap c) yK N hN hyKN
+  obtain ⟨⟨T, hT, -⟩, hmap⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Sl.TorsExist.torsVal_existsUnique E H L D n s K (spMap c) yK N hN hyKN
   have hC := hmap C e yC T rfl hT
   have hI := Hy K c yK N T hT
   obtain ⟨ε, hε⟩ := GlobalTheory.T.torsion_point_line_bundle_unit E H L D n s O C ρ y N hN hyN i hi _ hb yC hyC (e T) hC

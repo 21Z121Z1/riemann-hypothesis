@@ -3,10 +3,12 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnifConst
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PartialFourierEtaleKProdLocallyConstantCompactSu
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SelfDualMeasureExistsUniqueFourierInversion
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFactsStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FourierEtaleKEqIntegralPartialFourierStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFacts
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FourierEtaleKEqIntegralPartialFourier
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TestFunctionLocallyInvariant
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JHypUnipotentTorusEquivarianceStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JHypUnipotentTorusEquivariance
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedValuationParitySignCharacterKernelNorm
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FourierMatch
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology
 
 namespace GlobalTheory.JR.HypJ
@@ -18,7 +20,7 @@ theorem main : ∀ (F E : Type) [NontriviallyNormedField F] [NontriviallyNormedF
   intro F E _ _ _ _ _ A ψ hψ μK hsd φ' hφ
   have hH : μK.IsAddHaarMeasure := hsd.1
   have hT := _root_.GlobalTheory.JR.TildeTest.main F E A ψ hψ μK hH φ' hφ
-  refine ⟨⟨?_, fun z s g => GlobalTheory.T.jHyp_unipotent_torus_equivariance F E A μK hH ψ φ' z s g⟩, ?_⟩
+  refine ⟨⟨?_, fun z s g => _root_.GlobalTheory.JHypEquiv.jHyp_nm F E A μK hH ψ φ' z s g⟩, ?_⟩
   · obtain ⟨U, hU, hk⟩ := _root_.GlobalTheory.RowSmooth.row_smooth A.K _ hT
     refine ⟨U, hU, fun g k hkU => ?_⟩
     unfold Et.jHyp
@@ -42,7 +44,7 @@ theorem main : ∀ (F E : Type) [NontriviallyNormedField F] [NontriviallyNormedF
       unfold Et.tilde fourB
       refine integral_congr_ae (Filter.Eventually.of_forall fun b => ?_)
       simp only
-      rw [GlobalTheory.T.fourierEtaleK_eq_integral_partialFourier F E A ψ hψ μK hH φ' hφ b c]
+      rw [_root_.GlobalTheory.FourKFub.fourK_eq_fourB_tilde F E A ψ hψ μK hH φ' hφ b c]
       unfold fourB Et.tilde Et.kerK
       rw [mul_comm u b]
     unfold Et.jHyp

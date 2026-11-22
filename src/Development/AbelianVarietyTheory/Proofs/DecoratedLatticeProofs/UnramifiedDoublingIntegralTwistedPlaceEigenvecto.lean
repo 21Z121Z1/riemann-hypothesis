@@ -11,11 +11,11 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralBiInvari
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilRepChainStepMatrixCoefficientTwistedStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SupportParahoricBiTransformingDoubleCosets
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SupportParahoricBiTransformingDoubleCosetsStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnramifiedDoublingSumGLConvergentLValueStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnramifiedDoublingSumGLConvergentLValue
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ChainStepIdentities
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsUnramifiedHeightFunctionLowerBlock
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ParahoricHeckeGenericEigenvalueMapMulStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnramifiedTwistSphericalFunctionReindexStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ParahoricHeckeGenericEigenvalueMapMul
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnramifiedTwistSphericalFunctionReindex
 
 open MeasureTheory ValuativeRel Matrix GlobalTheory.PRep GlobalTheory.SplitWeil GlobalTheory.SmGL GlobalTheory.Doubling GlobalTheory.GLDoubling GlobalTheory.IndefiniteRowSideFullHecke.VolumeFlatSection GlobalTheory.ZonalCellDecomposition GlobalTheory.SatakeBound GlobalTheory.ParHecke
 
@@ -120,7 +120,7 @@ theorem hgt_lower : ∀ (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace 
 
 theorem genVal_map_mul : ∀ (q r N n : ℕ) (B : Multiset ℂˣ) (c : ℂˣ),
     genVal q r N (B.map (· * c)) n = (c : ℂ) ^ n * genVal q r N B n :=
-  GlobalTheory.T.parahoricHeckeGenericEigenvalue_map_mul
+  _root_.GlobalTheory.ParHecke.genVal_map_mul
 
 theorem twist_transport : ∀ (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k]
     (D : Type) [Fintype D] [DecidableEq D] (N : ℕ) (ε : Fin N ≃ D) (ϖ : kˣ),
@@ -133,7 +133,7 @@ theorem twist_transport : ∀ (k : Type) [Field k] [ValuativeRel k] [Topological
     (∀ κ ∈ KO k (Fin N), ∀ m, f₂ (κ * m) = f₂ m ∧ f₂ (m * κ) = f₂ m) ∧
     ∀ (s : Finset (Fin N)) R, IsRepsK (torusElt k (Fin N) ϖ (indic s)) R → ∀ m,
       ∑ g ∈ R, f₂ (m * g) = (((μ₀ ϖ)⁻¹ : ℂˣ) : ℂ) ^ s.card * genVal (resCard k) 0 N β s.card * f₂ m :=
-  GlobalTheory.T.unramifiedTwist_sphericalFunction_reindex
+  _root_.GlobalTheory.TwistRenumber.twist_renumber
 
 theorem lower_eigen : ∀ (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k]
   (ϖ : kˣ), valuation k (ϖ : k) = uniformizer k →
@@ -307,7 +307,7 @@ theorem local_zeta_twisted : GlobalTheory.Published.UnramifiedDoublingGL → ∀
     rw [cellFun_of_mem w hdisj ⟨0, fun _ _ _ => le_refl _⟩ h0, hw]
     simp [sumAbs, torusElt_zero, zonalInt_one μK hμK hψB]
   · intro s hs
-    obtain ⟨hsum, hhas⟩ := GlobalTheory.T.unramified_doubling_sum_GL_convergent_L_value hUD k (l * t) μK hμK ϖ hϖ α ρ hαρ ψ hψB s hs
+    obtain ⟨hsum, hhas⟩ := _root_.GlobalTheory.DoublingSeries.unramified_doubling_sum hUD k (l * t) μK hμK ϖ hϖ α ρ hαρ ψ hψB s hs
     have hHtor : ∀ e : Fin (l * t) → ℤ, H (mtor ϖ (e ∘ (blkEquiv l t).symm)) = (resCard k : ℝ) ^ (-(sumAbs e)) := by
       intro e; rw [mtor, hH.2, sumAbs_elim, sumAbs_comp]
     have hqC : ((resCard k : ℝ) : ℂ) ≠ 0 := by exact_mod_cast hq.ne'

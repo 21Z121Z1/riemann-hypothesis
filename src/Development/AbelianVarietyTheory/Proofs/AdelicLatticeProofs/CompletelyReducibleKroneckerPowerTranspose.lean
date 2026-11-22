@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.AdelicP
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsSemisimpleRepresentationTprodChevalley
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.CompletelyReducibleToMatrixIffIsSemisimpleRepres
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsGroupHomRangeEqOfAutStable
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsCompletelyReducibleMatrixSetTransposeImageStatement
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsCompletelyReducibleMatrixSetTransposeImage
 
 open Matrix GlobalTheory.ClassFin
 open scoped Kronecker ComplexOrder TensorProduct
@@ -68,7 +68,7 @@ theorem ss_tpow_transpose : ∀ (ι : Type) [Fintype ι] [DecidableEq ι] (Γ : 
   intro ι _ _ Γ hΓ hs n
   obtain ⟨G, _, ρ, rfl⟩ := _root_.GlobalTheory.ClassFin.IsPre.exists_group_range ι Γ hΓ
   obtain ⟨V, _, _, r, b, hr, hb⟩ := exists_semisimple_rep_tpow ρ hs n
-  have h := GlobalTheory.T.isCompletelyReducibleMatrixSet_transpose_image _ _ ((_root_.GlobalTheory.ClassFin.ss_range_toMatrix_iff_isSemisimpleRepresentation _ G V r b).2 hr)
+  have h := _root_.GlobalTheory.ClassFin.ss_transpose _ _ ((_root_.GlobalTheory.ClassFin.ss_range_toMatrix_iff_isSemisimpleRepresentation _ G V r b).2 hr)
   simp only [hb] at h
   rw [← Set.range_comp] at h ⊢
   exact h

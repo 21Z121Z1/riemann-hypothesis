@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsWeilDatum
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteVolumeAdelicUnitaryQuotient
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SiegelWeilLagrangianTermsAbsTsumLeHeightPoly
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SiegelWeilTsumEnormRationalInvariantStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SiegelWeilTsumEnormRationalInvariant
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix
 open Formalism.L2.Theta Formalism.L2.DIV Formalism.L2.Indef
 open Formalism.IndefR.Lev Formalism.IndefR.Mult Formalism.IndefR.Datum Formalism.IndefR.Cx Formalism.IndefR.Links
@@ -102,7 +102,7 @@ theorem eisAbs_of_bounds (hP : GlobalTheory.Published.CuspRapidDecay) (hV : Glob
   rw [ENNReal.tsum_mul_right, ENNReal.tsum_mul_right]
 
 theorem eisAbs : GlobalTheory.Published.CuspRapidDecay → ∀ D : D7, EisAbs D :=
-  fun hP => eisAbs_of_bounds hP GlobalTheory.Mem.VolFin.finVol _root_.GlobalTheory.SWAbsGrowth.tsum_lagTerm_le GlobalTheory.T.siegelWeil_tsum_enorm_rational_invariant
+  fun hP => eisAbs_of_bounds hP GlobalTheory.Mem.VolFin.finVol _root_.GlobalTheory.SWAbsGrowth.tsum_lagTerm_le _root_.GlobalTheory.SWAbsInv.tsum_enorm_lagTerm_rat
 
 end GlobalTheory.EisAbsPf
 

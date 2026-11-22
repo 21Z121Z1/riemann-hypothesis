@@ -4,7 +4,9 @@ import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 import Formalism.SharpRestriction.LevelLetterCocycles.ElementDenominator
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsDeRhamOfIsCrystallineSpan
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RestrictCrystallineDeRhamFiniteExt
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HodgeJumpMultiplicityRestrictFiniteExtStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HodgeJumpMultiplicityRestrictFiniteExt
+import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
+import Formalism.SharpRestriction.LevelLetterCocycles.LocCoh
 
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.WeaklyAdmissibleFiltrations Formalism.MainNotions Formalism.MainNotions.N
 
@@ -17,6 +19,6 @@ theorem adm12_elementDenominator : ∀ D : D7, Formalism.MainNotions.ElementDeno
   refine ⟨?_, ?_⟩
   · exact (GlobalTheory.Per.TiedRestrict.restrict_crys_deRham l (D.loc l) (D.locA l) hT K' K LL hKK T.V T.ρ).1 hc
   · intro τ a
-    exact GlobalTheory.T.hodgeJumpMultiplicity_restrict_finite_ext l (D.loc l) (D.locA l) hT K' K LL hKK T.V T.ρ hdr τ a
+    exact _root_.GlobalTheory.JumpRestrict.multV_restrict l (D.loc l) (D.locA l) hT K' K LL hKK T.V T.ρ hdr τ a
 
 end GlobalTheory.Per.ResFinite

@@ -14,7 +14,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ProductFormu
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RestrictedProductTailSplitFiniteFactors
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TailProdMulOfLatticeMassMul
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LintegralOrthogonalComplementPairIndepGroupElemeStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EventuallyIntegralOrthogonalComplementPairStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EventuallyIntegralOrthogonalComplementPair
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HermitianQuadraticFormOrbitRationalVectorEqStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLocalComponentsAdelicUnitaryElementStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousUnitaryTwoStepVectorAndTranslatePair
@@ -143,7 +143,7 @@ theorem good_ae (hCM : IsCMExt F E σ) (hS : StepData σ J x a B J') :
       ∀ (y : Fin 1 → Fin (M + 1) → Fv F v ⊗[F] E) (g : HA (Fv F v) σ J),
         g • ratTup (F := F) (Fv F v) x = y → y ∈ latV b v →
         m' {y' | pairOf (Fv F v) σ J B y g y' ∈ latV b v} = m' (latV b v) := by
-  filter_upwards [GlobalTheory.T.eventually_integral_orthogonalComplement_pair F E σ d b M J x a B J' hS,
+  filter_upwards [_root_.GlobalTheory.GaugeEx.PairLat.main F E σ d b M J x a B J' hS,
     GlobalTheory.T.integral_witt_theorem_almost_all_places F E σ hCM d b (M + 1) J x a hS.1 hS.2.1 hS.2.2.1] with v h1 h2 m' hm' y g hg hy
   obtain ⟨k, hk, hk'⟩ := h2 y hy (hg ▸ GlobalTheory.T.hermitian_quadratic_form_orbit_rational_vector_eq F E σ hCM _ _ J x a hS.2.2.1 g)
   have hL := measurableSet_latV b σ v 2 (M + 1)
@@ -249,7 +249,7 @@ theorem inner_eq (hCM : IsCMExt F E σ) (hS : StepData σ J x a B J')
     have key := isProd_sets b h S
       (fun v => {y' | pairOf (Fv F v) σ J B (projV v (projFin y)) (gv v) y' ∈ latV b v}) hA
       (by
-        filter_upwards [GlobalTheory.T.eventually_integral_orthogonalComplement_pair F E σ d b M J x a B J' hS, h5, S.finite_toSet.compl_mem_cofinite]
+        filter_upwards [_root_.GlobalTheory.GaugeEx.PairLat.main F E σ d b M J x a B J' hS, h5, S.finite_toSet.compl_mem_cofinite]
           with v e1 e2 e3
         ext y'
         simp [e1 _ e2, hyL v e3])

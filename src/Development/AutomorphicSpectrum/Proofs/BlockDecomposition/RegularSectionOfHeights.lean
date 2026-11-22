@@ -6,9 +6,9 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeightPowerInte
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousOnDifferentiableOnIntegral
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CentreCharacterContinuousUnit
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ShiftCommutesLeviEmbeddingStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoefficientLeviEquivarianceStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoefficientLeviEquivariance
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ShiftUnipotentLeviCommutator
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoefficientUnipotentLeviInvarianceStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoefficientUnipotentLeviInvariance
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CentreCharacterQuadraticTrace
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicUnipotentLeviFactor
 import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.ThetaIdempotents.HeckeEta
@@ -256,7 +256,7 @@ theorem rsec_levi {χ χ' : (AE D)ˣ →* Circle} {θ : InfFam D} {Ω : G D p �
     have e1 : M.sh y * M.emb (g₀ * h) * g = M.emb g₀ * (M.sh (HMul.hMul y a.1 : Mx D ρ p) * M.emb h * g) := by
       rw [map_mul, ← mul_assoc, GlobalTheory.T.shift_commutes_levi_embedding D n ρ p hn M g₀ a ha y]
       simp only [mul_assoc]
-    rw [e1, GlobalTheory.T.coefficient_levi_equivariance D n ρ p hn M m ψ b₀ χ z f hf g₀ a ha, hΩ.levi g₀ a ha h y]
+    rw [e1, _root_.GlobalTheory.CompanionTheory.WzLevi.wz_emb D n ρ p hn M m ψ b₀ χ z f hf g₀ a ha, hΩ.levi g₀ a ha h y]
     simp only [map_mul]
     ring
   unfold Rsec
@@ -291,7 +291,7 @@ theorem rsec_unip (hψ : IsCharAF D.host.F ψ) {χ χ' : (AE D)ˣ →* Circle} {
     simp only [mul_assoc]
   show Wz M m ψ b₀ f (M.sh y * M.emb (g₁ * h) * g) * conj (Ω (g₁ * h) y) =
     Wz M m ψ b₀ f (M.sh y * M.emb h * g) * conj (Ω h y)
-  rw [e3, GlobalTheory.T.coefficient_unipotent_levi_invariance D n ρ p hn M m ψ hψ b₀ χ z f hf g₁ b hb, hΩ.unip g₁ b hb h y, _root_.GlobalTheory.CompanionTheory.ChzConj.chz_conj D ρ p ψ b₀ b y z₀ e2, map_mul]
+  rw [e3, _root_.GlobalTheory.CompanionTheory.WzHeis.wz_heis D n ρ p hn M m ψ hψ b₀ χ z f hf g₁ b hb, hΩ.unip g₁ b hb h y, _root_.GlobalTheory.CompanionTheory.ChzConj.chz_conj D ρ p ψ b₀ b y z₀ e2, map_mul]
   have hu : ψ (halfTr (Matrix.trace (HMul.hMul b (pr b₀ y y) : Mx D p p))) *
       conj (ψ (halfTr (Matrix.trace (HMul.hMul b (pr b₀ y y) : Mx D p p)))) = 1 := by
     rw [Complex.mul_conj', hψ.2.1]; simp

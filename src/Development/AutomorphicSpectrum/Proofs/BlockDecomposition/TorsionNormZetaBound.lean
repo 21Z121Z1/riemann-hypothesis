@@ -1,12 +1,12 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsLatIntVec
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TsumCompBoundedFibresLe
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DeltaEqLatticeIndexStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LamIsLatticeStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DeltaEqLatticeIndex
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LamIsLattice
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeQuotientTorsionNonzero
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorsionCardLeAbsNormPowStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorsionCardLeAbsNormPow
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemLatticeOfDualPairing
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DenominatorIndexBoundStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DenominatorIndexBound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DenominatorNormQuadraticExtension
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IdealPrincipalElementNormBound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RelativeNormCmAbsNorm
@@ -38,7 +38,7 @@ theorem sum_torsion_le (K : Type) [Field K] [NumberField K] (m : ℕ)
     intro 𝔞 h𝔞
     obtain ⟨x₀, -, rfl⟩ := Finset.mem_image.mp h𝔞
     have hne : τ x₀ ≠ ⊥ := _root_.GlobalTheory.CompanionTheory.SiegelND.Integ.Hua.HS.torsionOf_quot_lat_ne_bot K m L hL x₀
-    obtain ⟨hfin, hcard⟩ := GlobalTheory.T.torsion_card_le_absNorm_pow K m L hL (τ x₀) hne
+    obtain ⟨hfin, hcard⟩ := _root_.GlobalTheory.CompanionTheory.SiegelND.Integ.Hua.TorCard.tor_card K m L hL (τ x₀) hne
     have hN : (0 : ℝ) < (Ideal.absNorm (τ x₀) : ℝ) := by
       have : Ideal.absNorm (τ x₀) ≠ 0 := fun h => hne (Ideal.absNorm_eq_zero_iff.mp h)
       exact_mod_cast Nat.pos_of_ne_zero this

@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PolarisationFormIntP
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SiegelFamilyTangentDimensionBound
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsPointPrimitiveBundleEqTranslatePpav
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPointPicardClassEqTranslateOfTrivialLambda
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelAmpleRigidTranslateLineBundleRationalPointStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelAmpleRigidTranslateLineBundleRationalPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KernelTrivialRigidTranslateLineBundle
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymmetricRigidTranslateLineBundleOfSquareDefect
 
@@ -36,7 +36,7 @@ theorem exists_sym_translate : ∀ (K : Type) [Field K] [IsAlgClosed K] (B : Ove
   obtain ⟨a, hab⟩ := SS.SemiDivisible.pow_surj_abelian K B hB (n := 2) (by norm_num) b
   have hL' : (RigidTranslate.rigTransl L a).IsLB := DVR.linComb_isLB _ hL _ _
   refine ⟨_, hL', RigidTranslate.rigidified_rigTransl hL, _root_.GlobalTheory.SymTranslate.sym_rigTransl_of_sq K B L hL hΘ a (by rw [← eO, hb, hab]),
-    GlobalTheory.T.relAmple_rigidTranslateLineBundle_rationalPoint K B hB L hL a ha, _root_.GlobalTheory.RigidTranslate.kTriv_rigTransl_any _ B L hL a hk, ?_⟩
+    _root_.GlobalTheory.RigidTranslate.relAmple_rigTransl_point K B hB L hL a ha, _root_.GlobalTheory.RigidTranslate.kTriv_rigTransl_any _ B L hL a hk, ?_⟩
   have e := (CechPic.cls_eq_iff (LB.isLB_linComb hL' _ _) (pull_isLB (LB.isLB_linComb hL _ _) _)).2
     (RigidTranslate.lam_rigTransl (t := a) hL c hc)
   rw [CechPic.cls_pull (LB.isLB_linComb hL _ _), CechPic.pull_id] at e

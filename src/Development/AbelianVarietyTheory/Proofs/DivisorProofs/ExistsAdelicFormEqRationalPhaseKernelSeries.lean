@@ -119,7 +119,7 @@ theorem isLevDatum_kerDat (hL : R.toLevCh.Is A.μ0) {ξ χ ξR Q ω φ} (hK : Ke
     exact hN P0 (Finset.mem_union.1 hP0)
   · intro t ht
     by_cases hc : IsHalf (cA D e) t ∧ IsIntM (frMapAdj (Vc D j) (Wc D j) (R.βV j) (R.βW j) t)
-    · exact ⟨GlobalTheory.T.idempotent_sum_self_dual_frames_bound D _ _ _ _ _ _ hsV hsW hfV hfW _ e he hP2 t hc.1 hc.2, hc.1⟩
+    · exact ⟨_root_.GlobalTheory.HalfAdjLattice.mem_latO_of_adj_int D _ _ _ _ _ _ hsV hsW hfV hfW _ e he hP2 t hc.1 hc.2, hc.1⟩
     · exact absurd (if_neg hc) ht
   · intro u hu hue t
     have hN' := _root_.GlobalTheory.HalfAdjInt.frMapAdj_int_of_half D _ _ _ _ _ _ hsV hsW hfV hfW _ e he hP2 u hu hue

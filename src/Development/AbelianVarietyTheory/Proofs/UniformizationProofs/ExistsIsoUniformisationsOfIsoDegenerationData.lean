@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.GmMulEqOfRes
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AbelianPartIsoIsMonHomAndRigidified
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsThickIsoOfIsPullDeg
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsGenericFibreIsoOfCompatibleThickenings
-import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.GenericIsoExtendsSemiAbelianDvrInducingFormalStatement
+import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.GenericIsoExtendsSemiAbelianDvrInducingFormal
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsBundleIsoExtendingGeneric
 
 open CategoryTheory CategoryTheory.Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry NumberField
@@ -69,7 +69,7 @@ theorem exists_iso_isPullUnif_of_isPullDeg : Laws → Laws2 → ∀ (R : Type) [
   intro hL hL2 R _ _ _ I hR hI D D' A A' G G' _ _ _ _ hG hG' U U' hD
   obtain ⟨j, hj⟩ := exists_thick_iso_of_isPullDeg hL.globalFns R I hR hI D D' A A' G G' hG hG' U U' hD
   obtain ⟨ΦK, wK, hK⟩ := _root_.GlobalTheory.exists_genericFibre_iso_of_thickenings hL hL2 R I hR hI D D' A A' G G' hG hG' U U' hD j hj
-  obtain ⟨ψ, hψ⟩ := GlobalTheory.T.generic_iso_extends_semiAbelian_dvr_inducing_formal hL hL2 R I hR hI D D' A A' G G' hG hG' U U' hD j hj ΦK wK hK
+  obtain ⟨ψ, hψ⟩ := _root_.GlobalTheory.FormalExt.main hL hL2 R I hR hI D D' A A' G G' hG hG' U U' hD j hj ΦK wK hK
   obtain ⟨wL, hwL, H⟩ := _root_.GlobalTheory.exists_bundleIso_extending_generic hL hL2 R I hR hI D D' A A' G G' hG hG' U U' hD j hj ΦK wK hK ψ hψ
   obtain ⟨hm, -, hf⟩ := hψ
   have hs := Geo.Tor.specOf_id R

@@ -4,7 +4,7 @@ import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.TermLoc
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LocClosed
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TotallyPositiveOrthogonalOfTwoFlagExtendedSpaces
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FiniteIsometriesFixingBothFramesStabilizingLatti
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalOrbitLatticesInfFrameSpanEqStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalOrbitLatticesInfFrameSpanEq
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OrbitLatticeBetweenFrameAndComplementParts
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BasedFlagPairLatticeContainment
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FiniteClassesLatticesFixedFramePartBoundedScale
@@ -22,7 +22,7 @@ theorem classes_finite : ∀ (D : D7) (X : HidaSetting D) (Y : Full X) (u u' : D
   obtain ⟨N, hN, hNs⟩ := _root_.GlobalTheory.FrameProj.lattice_between_parts D X Y u u' F F' w hw hG Z FP hB hR Λ₀ hΛ₀
   obtain ⟨d, c, hd, hc, hdc⟩ := _root_.GlobalTheory.CompScale.scale_dual D X Y u u' F F' w hw hG Z FP hB hR Λ₀ hΛ₀
   obtain ⟨S, hS⟩ := _root_.GlobalTheory.LatClassFin.classes_fin D F F' hpos (Λ₀ ⊓ toO (VS D) (Xplus F ⊔ Xplus F')) N d c hN hd hc
-  exact ⟨S, fun Λ hΛ hloc => hS Λ hΛ (GlobalTheory.T.localOrbitLattices_inf_frameSpan_eq D X Y u u' F F' w hw hG Z FP hB hR Λ₀ hΛ₀ Λ hΛ hloc)
+  exact ⟨S, fun Λ hΛ hloc => hS Λ hΛ (_root_.GlobalTheory.FrameSpanLat.inf_span_eq D X Y u u' F F' w hw hG Z FP hB hR Λ₀ hΛ₀ Λ hΛ hloc)
     (hNs Λ hΛ hloc) (hdc Λ hΛ hloc).1 (hdc Λ hΛ hloc).2⟩
 
 end GlobalTheory.Unfold.ClFin

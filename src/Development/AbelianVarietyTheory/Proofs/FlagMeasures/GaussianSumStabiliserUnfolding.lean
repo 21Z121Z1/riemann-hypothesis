@@ -13,8 +13,9 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RiemannianHaarGaugeE
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsGaugeAll
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LeftQuotientCovolumeWithDensityUnfoldSubgroup
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.SameKindIsometric
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaussianQuadricDensityExistsPosContinuousStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaugeMeasureQuotientUnitaryJVectorStabiliserStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaussianQuadricDensityExistsPosContinuous
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GaugeUnfold
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaugeMeasureQuotientUnitaryJVectorStabiliser
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AutInstDegreeRootDiscriminantRank
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsOrthComplementUnitVectorSameFields
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LintegralTsumCosetsFundamentalDomainEqCovol
@@ -51,7 +52,7 @@ theorem real_quot {n m : ℕ} (ε : Fin n → Bool) (ε' : Fin m → Bool) (s : 
   have hinv : (ENNReal.ofReal c')⁻¹ ≠ ⊤ := ENNReal.inv_ne_top.2 hne
   have hmul : ENNReal.ofReal c' * (ENNReal.ofReal c')⁻¹ = 1 :=
     ENNReal.mul_inv_cancel hne ENNReal.ofReal_ne_top
-  have key := GlobalTheory.T.gauge_measure_quotient_unitaryJ_vector_stabiliser m ε ε' s x₀ B j h1 h2 h3 h4 c c' hc hc'
+  have key := _root_.GlobalTheory.GaugeQuot.gauge_quotient m ε ε' s x₀ B j h1 h2 h3 h4 c c' hc hc'
     (fun g => (ENNReal.ofReal c')⁻¹ * b g) (hb.const_mul _) (fun g => by
       rw [lintegral_const_mul' _ _ hinv, hb1, mul_one, hmul])
   rw [← key]
@@ -182,7 +183,7 @@ theorem unfold_sib (I : AutInst) (D : Sib I) (s : Bool) (x : Fin I.n → I.E)
   have hq := fun v => real_quot (I.ε v) (D.ε v) s _ _ (jv v) hp.1 (hloc v).1 (hloc v).2.1 (hloc v).2.2 (hjv v)
     (c v) (c' v) (hc v) (hc' v) (bv v) (hbv v) (hbv1 v)
   have hs : sgn ℝ s ≠ 0 := by unfold sgn; split_ifs <;> norm_num
-  have hd : ∀ v, 0 ≤ gaussDens (I.ε v) (sgn ℝ s) := fun v => ((GlobalTheory.T.gaussianQuadricDensity_exists_pos_continuous _ (I.ε v)).1 _ hs).2
+  have hd : ∀ v, 0 ≤ gaussDens (I.ε v) (sgn ℝ s) := fun v => ((_root_.GlobalTheory.GaussMean.Density.gaussDens_spec _ (I.ε v)).1 _ hs).2
   have hprod := Finset.prod_congr (s₁ := Finset.univ) rfl fun v _ => hq v
   rw [Finset.prod_mul_distrib, Finset.prod_mul_distrib,
     ← ENNReal.ofReal_prod_of_nonneg fun v _ => (gauge_pos (hc v)).le,

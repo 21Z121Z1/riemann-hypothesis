@@ -3,7 +3,7 @@ import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 import Development.AbelianVarietyTheory.Definitions.Foundations.HTBasis
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicCharacterPadicBasicProperties
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormPrimitiveRootPrimePowSubOnePadicComplexStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormEqZpowOfMemMaxUnramifiedSubfieldStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormEqZpowOfMemMaxUnramifiedSubfield
 
 noncomputable section
 
@@ -28,7 +28,7 @@ theorem aeval_ne_zero_of_norm_eq (K : FinExt l) (N : ℕ) (π : Om l)
     have h0 : ((p.coeff i : ↥(K0 K)) : Om l) ≠ 0 := by
       have := mem_support_iff.1 hi
       exact fun h => this (Subtype.ext h)
-    obtain ⟨n, hn⟩ := GlobalTheory.T.norm_eq_zpow_of_mem_maxUnramifiedSubfield l K _ (p.coeff i).2 h0
+    obtain ⟨n, hn⟩ := _root_.GlobalTheory.UnramValue.norm_of_mem_unramified_subfield l K _ (p.coeff i).2 h0
     refine ⟨n, ?_⟩
     change ‖((p.coeff i : ↥(K0 K)) : Om l) * π ^ i‖ = _
     rw [norm_mul, norm_pow, hn, hπ, ← Real.rpow_natCast, ← Real.rpow_mul hl0.le,

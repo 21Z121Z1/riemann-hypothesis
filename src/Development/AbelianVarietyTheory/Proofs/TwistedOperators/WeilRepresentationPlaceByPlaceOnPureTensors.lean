@@ -3,10 +3,10 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RestrictedTensor
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsIntOv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralMulConjSelf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisThetaLaws
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdelicUnitaryComponentAtPlaceLawsStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocalFactorStableUnitaryGroupsAtPlaceStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdelicUnitaryComponentAtPlaceLaws
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocalFactorStableUnitaryGroupsAtPlace
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisenbergOperatorPureTensorPlaceByPlaceStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PureTensorInnerProductEqFinprodLocalInnerProductStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PureTensorInnerProductEqFinprodLocalInnerProduct
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum MeasureTheory IsDedekindDomain NumberField Matrix GlobalTheory.IndefiniteRowSideFullHecke.RestrictedTensorSplitting GlobalTheory.PlaceTensor
 open scoped TensorProduct ComplexOrder
@@ -29,19 +29,19 @@ theorem isPure_om : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (θ : InfFam D
   intro D ψ θ S T χS χT om sS sT ΛS ΛT f₀ μ 𝓕 hW hB hμ g h hfin hinv x f hx
   have hpres := (GlobalTheory.HeisThetaLaws.heis_theta_laws D ψ hW.std S T).1
   have h0 := base_theta hB
-  refine ⟨⟨fun p => GlobalTheory.T.localFactor_stable_unitaryGroupsAtPlace D ψ θ S T χS χT om sS sT ΛS ΛT hW (base_inf hB) p _ (hx.1.1 p) g h, ?_⟩,
+  refine ⟨⟨fun p => _root_.GlobalTheory.LocalFactorUnitary.isLocal_om_gAt D ψ θ S T χS χT om sS sT ΛS ΛT hW (base_inf hB) p _ (hx.1.1 p) g h, ?_⟩,
     hW.om_pres _ _ hx.2.1, fun w => ?_⟩
   · refine (hfin.union hx.1.2).subset fun p hp => ?_
     by_contra hc
     simp only [Set.mem_union, Set.mem_setOf_eq, not_or, not_not] at hc
     exact hp (by simp only [hc.2, hc.1])
   · have hy := GlobalTheory.T.heisenberg_operator_pure_tensor_place_by_place D ψ θ S T sS sT ΛS ΛT f₀ μ 𝓕 hB hμ _ _ hinv (actO S T g⁻¹ h⁻¹ w)
-    have hp := GlobalTheory.T.pureTensor_innerProduct_eq_finprod_localInnerProducts D ψ θ S T sS sT ΛS ΛT f₀ μ 𝓕 hB hμ _ _ _ _ hx hy
+    have hp := _root_.GlobalTheory.PlaceTensor.PureScalar.ip_pure_eq_finprod D ψ θ S T sS sT ΛS ΛT f₀ μ 𝓕 hB hμ _ _ _ _ hx hy
     have e : (fun p => ipO μ 𝓕 (om (gAt S p g, gAt T p h) (x p)) (heisO ψ S T (wAt p w) f₀)) =
         fun p => ipO μ 𝓕 (x p) (heisO ψ S T (wAt p (actO S T g⁻¹ h⁻¹ w)) (om (gAt S p g⁻¹, gAt T p h⁻¹) f₀)) := by
       funext p
       rw [ipO_om_left hW hμ _ _ (hx.1.1 p).1 (hpres _ _ h0), ← gAt_inv, ← gAt_inv, hW.om_heis _ _ _ _ h0,
-        ((GlobalTheory.T.adelicUnitaryComponentAtPlace_laws D).2 S T p g⁻¹ h⁻¹ w).2]
+        ((_root_.GlobalTheory.PlaceComponent.gAt_laws D).2 S T p g⁻¹ h⁻¹ w).2]
     refine ⟨by rw [e]; exact hp.1, ?_⟩
     rw [e, ipO_om_left hW hμ _ _ hx.2.1 (hpres _ _ h0), hW.om_heis _ _ _ _ h0]
     exact hp.2

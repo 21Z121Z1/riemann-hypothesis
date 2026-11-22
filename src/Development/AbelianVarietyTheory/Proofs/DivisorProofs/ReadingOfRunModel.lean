@@ -3,8 +3,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsExtEmbedding
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSemilinearExtensionOfFormWithTransportedRe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoLevelFlagDomainTransporterMemDomain
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UsedRunCuspFormReadingMemModelCuspForms
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UsedRunCuspFormReadingLinearIndependentStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelCuspFormsSpanUsedRunReadingsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UsedRunCuspFormReadingLinearIndependent
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelCuspFormsSpan
 
 set_option autoImplicit false
 
@@ -76,7 +76,7 @@ theorem reading_of_runModel (p : PtAt ex Csz) (r : TwoRuns p.T p.P.Gp) (h : Runs
     show LinearIndependent _ (fun k => cu (bC k))
     rw [hbC']; exact hbK
   have hR : LinearIndependent ℂ (fun k => Rd (bC k)) :=
-    LinearIndependent.of_comp (M.cusp ka).subtype (GlobalTheory.T.cuspForm_family_linearIndependent h ha m bC hK)
+    LinearIndependent.of_comp (M.cusp ka).subtype (_root_.GlobalTheory.ShareOn.Reading.rdLin_linearIndependent h ha m bC hK)
   have hRs : Submodule.span ℂ (Set.range Rd) = ⊤ := by
     rw [eq_top_iff]
     rintro ⟨y, hy⟩ -
@@ -85,7 +85,7 @@ theorem reading_of_runModel (p : PtAt ex Csz) (r : TwoRuns p.T p.P.Gp) (h : Runs
       unfold TwoLevels.cusp at hy
       refine Submodule.span_le.2 ?_ hy
       rintro _ ⟨G, hG, rfl⟩
-      obtain ⟨m', α, Fs, hGe⟩ := GlobalTheory.T.modelCuspForms_span_usedRunReadings h ha hb hb0 hn G hG
+      obtain ⟨m', α, Fs, hGe⟩ := _root_.GlobalTheory.ShareOn.Reading.rdFun_onto h ha hb hb0 hn G hG
       have hGs : M.res G = ∑ k, α k • rdLin h ha (Fs k) := by
         funext c x
         simp only [TwoLevels.res, Finset.sum_apply, Pi.smul_apply, smul_eq_mul, rdLin_apply]
@@ -101,7 +101,7 @@ theorem reading_of_runModel (p : PtAt ex Csz) (r : TwoRuns p.T p.P.Gp) (h : Runs
     rw [← hfcu, ← hfcu, hint, hcu g F]
   obtain ⟨a, hpull⟩ := hc
   refine ⟨ρ, σ, f, ⟨a, fun g G hG c x => ?_⟩, hint, hind, hspan⟩
-  obtain ⟨m', α, Fs, hGe⟩ := GlobalTheory.T.modelCuspForms_span_usedRunReadings h ha hb hb0 hn G hG
+  obtain ⟨m', α, Fs, hGe⟩ := _root_.GlobalTheory.ShareOn.Reading.rdFun_onto h ha hb hb0 hn G hG
   have hy : (⟨M.res G, Submodule.subset_span ⟨G, hG, rfl⟩⟩ : M.cusp ka) = ∑ k, α k • Rd (Fs k) := by
     apply Subtype.ext
     funext c' x'

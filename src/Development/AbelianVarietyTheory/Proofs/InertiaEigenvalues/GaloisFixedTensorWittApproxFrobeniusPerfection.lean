@@ -5,8 +5,8 @@ import Development.AbelianVarietyTheory.Definitions.Foundations.HTBasis
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExpStar
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoeffZeroEqZeroIff
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleEmbeddingFrobeniusGaloisCompat
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TiltInvariantApproxByEpsilonRootsClosureStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TeichmullerEpsilonRootsMemFrobeniusPerfectionModStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TiltInvariantApproxByEpsilonRootsClosure
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TeichmullerEpsilonRootsMemFrobeniusPerfectionMod
 
 open Formalism.WeaklyAdmissibleFiltrations Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.MainNotions.N Formalism.MainNotions.LocalSituation GlobalTheory.Cyc GlobalTheory.Decompl
 open scoped TensorProduct
@@ -236,7 +236,7 @@ theorem fixSub_approx_perfection (l : ℕ) [Fact l.Prime] (P : LocPrime l) (AI :
       {xb | ∃ c : Om l, c ∈ K0 K ∧ ∃ m : ℕ, 0 < m ∧ ¬ l ∣ m ∧ c ^ m = 1 ∧ IsTiltOf c m xb}),
       ∃ v : OCb l, algebraMap (OCb l) (Cb l) ((AI.εroot s - 1) ^ N) * (crd (basisO LL) i y).coeff 0 =
         algebraMap (OCb l) (Cb l) (u + (AI.εroot s - 1) ^ (N + m) * v) :=
-    fun i => GlobalTheory.T.tilt_invariant_approx_by_epsilonRoots_closure l P AI K s ((crd (basisO LL) i y).coeff 0) (hcoef i) m
+    fun i => _root_.GlobalTheory.FlatInvariants.flat_invariant_approx l P AI K s ((crd (basisO LL) i y).coeff 0) (hcoef i) m
   choose N₀ hN₀ using hap
   have hall : ∀ i, ∃ u ∈ Subring.closure (Set.range AI.εroot ∪
       {xb | ∃ c : Om l, c ∈ K0 K ∧ ∃ m : ℕ, 0 < m ∧ ¬ l ∣ m ∧ c ^ m = 1 ∧ IsTiltOf c m xb}),
@@ -257,7 +257,7 @@ theorem fixSub_approx_perfection (l : ℕ) [Fact l.Prime] (P : LocPrime l) (AI :
         (E.tie.ioE.commutes _).symm
       rw [hb]
       exact InPerf.of_ι _
-    · exact GlobalTheory.T.teichmullerEpsilonRoots_mem_frobeniusPerfection_mod_l l P AI K s LL h W E (u i) (hu i)
+    · exact _root_.GlobalTheory.DecomplPerf.teich_mem_perfection l P AI K s LL h W E (u i) (hu i)
   unfold NearPi at hnear
   obtain ⟨y0, hy0, hn0⟩ := exists_inPerf_near (j := (inclR LL : RA LL →+* RW LL)) hφ' W.EE_π hπ hy1 hnear
   obtain ⟨n, e, r, her⟩ := hy0

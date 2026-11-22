@@ -34,7 +34,7 @@ theorem nabValN_transport (R : Type) [CommRing R] (d : ℕ) (O : Type) [CommRing
   have hε1 := (GlobalTheory.T.formalChartJetRel_unit_one_on_axes R d O m B B' φ φi ε hε).1
   obtain ⟨lam, hl0, hle⟩ := (_root_.GlobalTheory.ChartCmp.jeq_expS_iff_and_exists_log k 2 d m).2 (FB.toK k ε) (by simp [FB.toK, hε1])
   have hbi := GlobalTheory.T.canonicalGauge_difference_biadditive_jet R d O m B B' φ φi ε hε k h h' lam hh hh' hl0 hle
-  obtain ⟨g', hg', hgg⟩ := GlobalTheory.T.exists_biadditive_series_jetEq_of_biadditiveJet R d O B' k m (by omega) _ hbi
+  obtain ⟨g', hg', hgg⟩ := _root_.GlobalTheory.ChartBilin.exists_biadd_jEq R d O B' k m (by omega) _ hbi
   have hcan := _root_.GlobalTheory.ChartCmp.Regauge.isCanonGauge_sub R d O B' k h' g' hh' hg'
   have c0 : ∀ {C : FB R d O} {g : PS k 2 d}, C.IsCanonGauge k g → MvPowerSeries.constantCoeff g = 0 := by
     intro C g hg
@@ -113,7 +113,7 @@ theorem jeq_prod {σ J : Type} {m : ℕ} (s : Finset J) {f g : J → MvPowerSeri
   | empty => simpa using JEq.refl m _
   | insert a s ha ih =>
     rw [Finset.prod_insert ha, Finset.prod_insert ha]
-    exact ((GlobalTheory.T.mvPowerSeriesJetEq_calculus k m).1 _ _ _ _ _ (h a) ih).2.2
+    exact ((_root_.GlobalTheory.ChartCmp.JCalc.jeq_calculus k m).1 _ _ _ _ _ (h a) ih).2.2
 
 theorem sb_one (u : Q k d n) (f : PS k 1 d) : sb ![u] f = ev ![u.1] f :=
   (sb_apply _ _).trans (congrArg (ev · f) (funext fun j => by fin_cases j; rfl))
@@ -141,7 +141,7 @@ theorem jeq_box {m q : ℕ} (Φ Ψ A : Q k d 1) (hΦΨ : ac Φ Ψ = gen 0) (ε :
     rw [← FrameRatioAdj.ac_ac, hΦΨ]
     exact congrArg (fun u => sb ![u] (f b)) (sq_gen ![gen b] 0).symm
   rw [e3, sb_apply, sb_apply]
-  exact (GlobalTheory.T.mvPowerSeriesJetEq_calculus k m).2.2.2.1 d 1 n _ _ _ _ (fun i j => (_ : Q k d n).2 j) (fun i j => (_ : Q k d n).2 j)
+  exact (_root_.GlobalTheory.ChartCmp.JCalc.jeq_calculus k m).2.2.2.1 d 1 n _ _ _ _ (fun i j => (_ : Q k d n).2 j) (fun i j => (_ : Q k d n).2 j)
     (fun _ _ => JEq.refl _ _) (h b)
 
 theorem ac_gen (Φ : Q k d 1) : ac Φ (gen 0 : Q k d 1) = Φ := Subtype.ext ((ac_val _ _).trans (gt_comp1_pt_right _))

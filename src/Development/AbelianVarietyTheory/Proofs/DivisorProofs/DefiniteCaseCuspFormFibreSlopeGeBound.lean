@@ -2,15 +2,15 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.EigLatLe
 import Formalism.LocalToGlobal.ProjectiveLattices.LiftLaSpec
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonemptyDefiniteRationalPointDataComponent
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInjectiveDualWeylTensorCuspFormsRationalPoStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralCoordinatesFormsAndFibreNormBoundStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInjectiveDualWeylTensorCuspFormsRationalPo
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralCoordinatesFormsAndFibreNormBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegreeDualDetLieEqNegFlatSectionDegree
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLineDegreeGeHalfDetLieDefinitePoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FibreActionPreservesAdelicMatrices
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAdelicOne
 import Formalism.LocalToGlobal.CMDeterminantIdeals.StatementG
 import Formalism.PolynomialDimension.WeylDim
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SlopeDualWeylFibreLatticeGeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SlopeDualWeylFibreLatticeGe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLatticeLatticeOfLocalMatrixFamilyStatement
 
 noncomputable section
@@ -52,8 +52,8 @@ theorem fibreAt_defCase : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E]
     rw [← InfinitePlace.not_isReal_iff_isComplex, InfinitePlace.isReal_iff, ComplexEmbedding.isReal_iff]
     exact fun e => GlobalTheory.CompHt.conj_comp_ne (c := c) v.embedding (RingHom.ext fun a => RingHom.congr_fun e a)⟩
   have hanti : ∀ τ, Antitone (part Dw a τ) := fun τ i j hij => hDom.1 τ (show (i : ℕ) ≤ j from hij)
-  obtain ⟨φ, hinj, hrange, hreads⟩ := GlobalTheory.T.exists_injective_dualWeylTensor_cuspForms_rationalPoint E H Dw l Xo c r U ξ a n hD hDom Z P
-  obtain ⟨hconj, hint⟩ := GlobalTheory.T.integral_coordinates_forms_and_fibre_norm_bound E H Dw l Xo c r U ξ a n hD hDom Z P
+  obtain ⟨φ, hinj, hrange, hreads⟩ := _root_.GlobalTheory.DefPt.ReadsPt.exists_linearMap_reads E H Dw l Xo c r U ξ a n hD hDom Z P
+  obtain ⟨hconj, hint⟩ := _root_.GlobalTheory.DefPt.IntNorm.integral_and_norm_le E H Dw l Xo c r U ξ a n hD hDom Z P
   obtain ⟨hlie, -⟩ := _root_.GlobalTheory.DefPt.degLie_eq_neg_deg_flat E H Dw l Xo c r U ξ hD Z P
   have hth := _root_.GlobalTheory.DefPt.ThetaDeg.main E H Dw l Xo c r U ξ hD Z P
   have hIntOne : ∀ (w : HeightOneSpectrum (𝓞 c.F)) (m : ℕ), IntAt w (1 : Matrix (Fin m) (Fin m) c.F) :=
@@ -73,7 +73,7 @@ theorem fibreAt_defCase : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E]
     pow_pos (inv_pos.2 (Real.sqrt_pos.2 (P.arch σ).1)) n
   have hsconj : ∀ σ, (Real.sqrt (P.N ((starRingEnd ℂ).comp σ)))⁻¹ ^ n = (Real.sqrt (P.N σ))⁻¹ ^ n := fun σ => by
     rw [(hconj σ).1]
-  obtain ⟨hdet, hslope⟩ := GlobalTheory.T.slope_dualWeylFibreLattice_ge c.F (E →+* ℂ) Dw.mult (part Dw a) hanti (fun w => P.a w ^ n) P.B
+  obtain ⟨hdet, hslope⟩ := _root_.GlobalTheory.FibSlope.slope_fibre_ge c.F (E →+* ℂ) Dw.mult (part Dw a) hanti (fun w => P.a w ^ n) P.B
     (fun σ => (Real.sqrt (P.N σ))⁻¹ ^ n) P.X ha0 hsupp hBad hspos (fun σ τ => (P.arch σ).2.1 τ) hsconj
     (fun σ τ => (hconj σ).2 τ)
   have hlat : IsAdelic fun w => fibA (part Dw a) (P.a w ^ n) (P.B w) :=

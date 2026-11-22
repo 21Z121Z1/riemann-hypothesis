@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsVacFOfIsVacVec
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MulNonsingInvCancelRightGram
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CompactSubgroupsActOnFockVectorsAllSignaturesStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CompactSubgroupsActOnFockVectorsAllSignatures
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemSmoothFunctionsOfClosedRightDerivatives
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOnAtTau
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasDerivAtPhiCol
@@ -695,7 +695,7 @@ theorem lieFockAll : ∀ D : D7, GlobalTheory.ChainFr.LieFockAll D := by
       exact hasDerivAt_const _ _
   obtain ⟨κS, κT, hκ⟩ := GlobalTheory.LieFock.lieFockUpTo D V W A B θ ψ χS χT ω τ hθ hω
   obtain ⟨h1, h2⟩ := hκ f hf
-  obtain ⟨x, y, hx, hy, hc⟩ := GlobalTheory.T.compact_subgroups_act_on_fock_vectors_all_signatures D V W A B θ ψ χS χT ω f τ aS aT hθ hω hS hT hf h0
+  obtain ⟨x, y, hx, hy, hc⟩ := _root_.GlobalTheory.CompactFockAction.compactFockAll D V W A B θ ψ χS χT ω f τ aS aT hθ hω hS hT hf h0
   have hinj := ptF_injective hθ hψ A B hf h0
   have hth := (ptF_laws hθ hψ A B hf).1 τ
   have hFA : IsUnit (A.fr τ).det := (Matrix.isUnit_iff_isUnit_det _).1 (A.fr_unit τ)

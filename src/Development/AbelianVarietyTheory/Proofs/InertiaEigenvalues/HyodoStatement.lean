@@ -10,7 +10,7 @@ import Formalism.SharpRestriction.LevelLetterCocycles.LocCoh
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SemistableCocyclesBetweenBlochKatoAndContinuousStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsDeRhamOfIsSemistable
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FinrankBlochKatoGAddELeFAddF
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsTateTwistDualPerfectPairingStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsTateTwistDualPerfectPairing
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FinrankFiniteLeExponentialCocyclesStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteDimensionalContinuousCocyclesGaloisRep
 
@@ -25,7 +25,7 @@ theorem hyodo : Hyodo := by
   intro l _ P AI T K V _ _ _ _ _ ρ hcont hsst c hc hcoc hdR
   haveI : ContinuousAdd V := IsModuleTopology.toContinuousAdd ℚ_[l] V
   haveI : ContinuousSMul ℚ_[l] V := IsModuleTopology.toContinuousSMul ℚ_[l] V
-  obtain ⟨ρ', m, hρ'c, hdual⟩ := GlobalTheory.T.exists_tateTwistDual_perfectPairing l P K V ρ hcont
+  obtain ⟨ρ', m, hρ'c, hdual⟩ := _root_.GlobalTheory.DualTwist.exists_dual1 l P K V ρ hcont
   have hdrV : IsDR (P.PD K) ρ := _root_.GlobalTheory.sst_isDR l P AI T K V ρ hsst
   have hdrV' : IsDR (P.PD K) ρ' := by
     letI : Module ℤ_[l] V := Module.compHom V (algebraMap ℤ_[l] ℚ_[l])

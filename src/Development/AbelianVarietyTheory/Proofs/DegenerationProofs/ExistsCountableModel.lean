@@ -3,14 +3,14 @@ import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBase
 import Development.AbelianVarietyTheory.Definitions.Degenerations.HomExtSt
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsCountableClosed
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.CompRel
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIntegralDegenerationValuesStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIntegralDegenerationValues
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.HomTransport
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsDegenerationValuesOverSubfield
 import Development.AbelianVarietyTheory.Definitions.Degenerations.CharZeroOfIsPrimitiveRoot
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsQkPullEquiv
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IsScalarFormTraceForm
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsTorsionPairDescentAlgClosedSubfield
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsDegenerationValuesIsoFieldPullbackStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsDegenerationValuesIsoFieldPullback
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsIsPullQk
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsFiniteCubeInduction
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsAddInjective
@@ -60,7 +60,7 @@ theorem exact_of_pull (hG : GlobalFnsSt) {A : ArcF D R F} {A' : ArcF D K F} (hD 
     (hF : ArcPull.Compat φ F) (hx : ∀ (a : 𝓞 E) y, hD.xe (a • y) = a • hD.xe y) (hρ : A.ρ = A'.ρ) (hζ : A.I.ζ = A'.I.ζ)
     (hev : ∀ n a, A'.I.ev n a = pullQk hD hG hF A.bimult A'.bimult (A.I.ev n a)) :
     Exact (RingHom.id F) A A' ∧ Exact (RingHom.id F) A' A := by
-  obtain ⟨I, he, hr⟩ := GlobalTheory.T.exists_degenerationValuesIso_fieldPullback hG R K φ _ _ hD F hF _ _ A.ν A'.ν
+  obtain ⟨I, he, hr⟩ := _root_.GlobalTheory.ValuesPullIso.exists_values_iso hG R K φ _ _ hD F hF _ _ A.ν A'.ν
   have act : ∀ a y, I.e (A'.act a y) = A.act a (I.e y) := fun a y => A.ν.eX.injective (by
     rw [he, ArcF.act, ArcF.act, AddEquiv.apply_symm_apply, AddEquiv.apply_symm_apply, he, hx])
   have hq : ∀ n a, (A.q n a).1.1.toAdd = I.e (A'.q n a).1.1.toAdd ∧ I.Rel (A'.q n a).1.2 (A.q n a).1.2 := fun n a => by
@@ -117,7 +117,7 @@ theorem det_iff {D₀ : DegPre R} {D' : DegPre K} (hD : IsPullDeg φ D₀ D') [M
 
 theorem exists_values (hL : Laws) (hGt : BrGtSt) [IsAlgClosed F] (D' : DegPre K) (he : D'.PsiEven) (hB : D'.TauBimult) :
     ∃ (N : NumD F) (ν : NumOf D' F N), ∀ k (p : QkPt D' F k), ∃ q, ν.QPt p q := by
-  obtain ⟨N, ν, -⟩ := GlobalTheory.T.exists_integral_degeneration_values hL K D' he hB F ⊤ fun _ => trivial
+  obtain ⟨N, ν, -⟩ := _root_.GlobalTheory.ValuesExist.exists_integral_values hL K D' he hB F ⊤ fun _ => trivial
   exact ⟨N, ν, fun k p => (((hGt K D' he hB F N ν).2.2.2.2 k).1 p).exists⟩
 
 theorem exists_up (hL : Laws) (hGt : BrGtSt) [IsAlgClosed F] (hF : ArcPull.Compat φ F) (A : ArcF D R F) :

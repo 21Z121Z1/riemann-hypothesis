@@ -13,7 +13,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeIntersection
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeFrameSubBasis
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AffineDomainGenericSpecializes
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeSectionsAffineModel
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentComplexPointTangentsStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentComplexPointTangents
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsChartLieBasisMatrices
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Fl GlobalTheory.CompanionTheory.Ar.Flat Filter Topology Metric
@@ -75,10 +75,10 @@ theorem exists_affine_eigenframes : ∀ (E : Type) [Field E] [NumberField E] [Is
     have hyA := hcA f y hy
     have h := hcl _ hyA
     have hq := (hN ⟨centre y, h⟩ (hAN hyA).1).2
-    exact ⟨GlobalTheory.T.component_complex_point_tangents E H D l Xo c O β Y U Z τ σ D.p _ y h v hinj hfr hs
+    exact ⟨_root_.GlobalTheory.CompanionTheory.Ar.LocFrames.EigValue.isEigFrame_value E H D l Xo c O β Y U Z τ σ D.p _ y h v hinj hfr hs
         (_root_.GlobalTheory.CompanionTheory.Ar.SubFrame.isFrameAt_comp Y.X Z.Ω _ Z.V Z.M.lat _ _ g D.p b ι₁ ι₁.injective hb.1 hq (by rw [r₁]; exact e₁))
         (fun i => hval y f h hy (ι₁ i) (v i) (hv i)),
-      GlobalTheory.T.component_complex_point_tangents E H D l Xo c O β Y U Z _ σ D.q _ y h w hinj hfr hs
+      _root_.GlobalTheory.CompanionTheory.Ar.LocFrames.EigValue.isEigFrame_value E H D l Xo c O β Y U Z _ σ D.q _ y h w hinj hfr hs
         (_root_.GlobalTheory.CompanionTheory.Ar.SubFrame.isFrameAt_comp Y.X Z.Ω _ Z.V Z.M.lat _ _ g D.q b ι₂ ι₂.injective hb.1 hq (by rw [r₂]; exact e₂))
         (fun j => hval y f h hy (ι₂ j) (w j) (hw j))⟩
   · intro f y v w hy h hv hw

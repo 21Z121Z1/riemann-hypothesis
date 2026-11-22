@@ -1,8 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramAtPosDef
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusHermitianFormScaledCoordinateEq
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRationalFrameCoordsOfMemTorusLatticeStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticePointSignEqThetaLawSemicharacterStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRationalFrameCoordsOfMemTorusLattice
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IdealPeriodLatticeOfCurveDatum
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsSemicharacterCompletedSelfDualLattice
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticePointSignEqThetaLawSemicharacter
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum Formalism.IndefR.Links
 open IsDedekindDomain NumberField Matrix MvPolynomial
 open GlobalTheory.SignedHC GlobalTheory.ChiGrid Formalism.L2.DIV Formalism.L2.Ker GlobalTheory.FunObj
@@ -19,14 +21,14 @@ theorem theta_of_vacuum_real : ∀ {D : D7} (ψ : AddChar (AF D.host.F) ℂ) (θ
   obtain ⟨σ, hch⟩ := GlobalTheory.RealLineAt.exists_inverse_chart hθ
   have hSd := GlobalTheory.FunObj.VecEx.isSelfDualC_colLat S frS hS
   have hTd := GlobalTheory.FunObj.VecEx.isSelfDualC_colLat T frT hT
-  obtain ⟨-, -, h3⟩ := GlobalTheory.T.self_dual_lattice_pairing_dual D ψ S T (colLat frS) (colLat frT) hψ hSd hTd
+  obtain ⟨-, -, h3⟩ := _root_.GlobalTheory.LatVac.latO_selfDual_approx_sign D ψ S T (colLat frS) (colLat frT) hψ hSd hTd
   refine ⟨hΦd.comp ((differentiable_id).const_smul δ⁻¹), ?_⟩
   intro x hx Y
-  obtain ⟨v, hv, rfl⟩ := GlobalTheory.T.exists_rational_frameCoords_of_mem_torusLattice S T frS frT hS hT δ x hx
+  obtain ⟨v, hv, rfl⟩ := _root_.GlobalTheory.ThetaLawLat.mem_La_frame S T frS frT hS hT δ x hx
   have hv' : GlobalTheory.VacUnique.finRat S T (-v) ∈ latO S T (colLat frS : Set _) (colLat frT : Set _) (fun _ => True) := by
     rw [AddMonoidHom.map_neg]; exact neg_mem hv
   obtain ⟨ε, -, hε⟩ := h3 f hf.2.lat _ hv'
-  have hsign := GlobalTheory.T.latticePoint_sign_eq_thetaLaw_semicharacter ψ S T frS frT hS hT hψ δ hδ v hv ε (fun g hg => hε g hg)
+  have hsign := _root_.GlobalTheory.ThetaSignLat.sign_eq_alpha ψ S T frS frT hS hT hψ δ hδ v hv ε (fun g hg => hε g hg)
   have hlaw := GlobalTheory.VacUnique.apply_add_infRat hch hψ hf.2.theta v (hε f hf.2.lat)
   set X : Formalism.MainNotions.TaylorLogMetric.VC D S.rank T.rank := fun τ a b => ((GlobalTheory.FockPos.frAt frT τ)⁻¹ * Matrix.of (GlobalTheory.VacUnique.infRat S T v τ) * GlobalTheory.FockPos.frAt frS τ) a b with hX
   set Z : Formalism.MainNotions.TaylorLogMetric.VC D S.rank T.rank := δ⁻¹ • Y with hZ

@@ -48,8 +48,8 @@ theorem chi_adele (F : Type) [Field F] [NumberField F] {κ : Type} [Fintype κ] 
   haveI : IsArtinianRing (Ainf F) := inferInstanceAs (IsArtinianRing (∀ v : InfinitePlace F, v.Completion))
   haveI : IsReduced (Ainf F) := inferInstanceAs (IsReduced (∀ v : InfinitePlace F, v.Completion))
   have s2 : addEquivAddHaarChar (mulVecCE Mi hMi) = modu (Ainf F) Mi.det :=
-    GlobalTheory.T.addEquivAddHaarChar_mulVec_artinian_reduced (Ainf F) inferInstance inferInstance κ Mi hMi
-  rw [s1, GlobalTheory.T.addEquivAddHaarChar_prodCongr, NNReal.coe_mul, s2, chi_Af F Mf hMf, hi, hf]
+    _root_.GlobalTheory.ModuArtin.addEquivAddHaarChar_mulVecCE (Ainf F) inferInstance inferInstance κ Mi hMi
+  rw [s1, _root_.GlobalTheory.ModuLR.addEquivAddHaarChar_prodCE, NNReal.coe_mul, s2, chi_Af F Mf hMf, hi, hf]
 
 theorem addEquivAddHaarChar_mulVecCE_adele (F : Type) [Field F] [NumberField F] {κ : Type} [Fintype κ]
     [DecidableEq κ] (M : Matrix κ κ (AF F)) (hM : IsUnit M.det) :

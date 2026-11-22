@@ -6,7 +6,7 @@ import Formalism.LocalToGlobal.CharacterGerms.NegMem
 import Formalism.LocalToGlobal.CharacterGerms.CharacteristicFromRanks
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartF
 import Development.AbelianVarietyTheory.Definitions.TeichmullerDepth.HasTeich
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsSaturatedGoodVectorsSmallCorankStatement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsSaturatedGoodVectorsSmallCorank
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.GoodCurvesPairingMemMaxIdeal
 
 open scoped BigOperators
@@ -142,7 +142,7 @@ theorem independenceBoundCondition_of_rankMaximalCondition : ∀ (C : Type) [Fie
   have hb1 : X.big (1 - g) (a + 1) := (hR.big_compl g (a + 1)).2 fun h => (hstep g a).1 h ha
   have hb2 : ¬ X.big (1 - g) (a + 1 + 1) := fun h => (hstep (1 - g) (a + 1)).1 h hb1
   obtain ⟨M, w', x', hgood', hsupp, hsat, hcard⟩ :=
-    GlobalTheory.T.exists_saturated_good_vectors_small_corank C V d (I (1 - g)) (JJ I (1 - g)) (RawChart.cart (H (1 - g))) (a + 1)
+    _root_.GlobalTheory.GoodCorank.exists_good_sat C V d (I (1 - g)) (JJ I (1 - g)) (RawChart.cart (H (1 - g))) (a + 1)
   have c1 := hR.rk_big (1 - g) (a + 1) hb1
   have c2 := hR.rk_small (1 - g) (a + 1 + 1) hb2
   have hl : V.l ≠ 0 := V.l_prime.ne_zero

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsMetricFrOfIsMetricOn
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ChernDegreeComplex
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernTransgressionFormsFrameInvariantStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernTransgressionFormsFrameInvariant
 
 set_option autoImplicit false
 
@@ -38,7 +38,7 @@ theorem loc_fields_near : ∀ (M : Type) [TopologicalSpace M] (n : ℕ) (A : Hol
   have dK := hK.2 i hz
   have dK' := hK'.2 i hz
   rw [hzv] at dT dK dK'
-  have key := GlobalTheory.T.chernTransgression_forms_frame_invariant n r (fun u => G y ((A.e i).symm u)) (fun u => G' y ((A.e i).symm u))
+  have key := _root_.GlobalTheory.ChernCalc.FrameInv.pow_chern_trans_frame n r (fun u => G y ((A.e i).symm u)) (fun u => G' y ((A.e i).symm u))
     (fun u => G ((A.e i).symm v) ((A.e i).symm u)) (fun u => G' ((A.e i).symm v) ((A.e i).symm u))
     (fun u => T ((A.e i).symm u)) (fun u => K ((A.e i).symm u)) (fun u => K' ((A.e i).symm u)) v
     h1 h3 h2 h4 dT hT.1 dK hK.1 dK' hK'.1 (hct.eventually hw) k

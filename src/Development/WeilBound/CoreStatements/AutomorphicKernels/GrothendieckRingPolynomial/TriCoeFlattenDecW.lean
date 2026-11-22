@@ -1,11 +1,15 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.AutomorphicKernels.GrothendieckRingPolynomial.ProdList
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.BernsteinZelevinskyGL.TopAdm
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LanglandsRepOrderedWordOccursStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LanglandsRepOrderedWordOccurs
+import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.ZelevinskyInterleaving.LInjective
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.LanglandsMultisegments
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.LanglandsExhaustionGL
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentProductWordInShuffleStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WordOccursOfSubquotientStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OrderedWordLettersCuspidalStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OrderedFormsMutualShuffleEqStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OrderedWordLettersCuspidal
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OrderedFormsMutualShuffleEq
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ShuffleWeightSquareLengthLtStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ShufflePermFlattenStatement
 
@@ -62,11 +66,11 @@ theorem tri (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] [IsNonarc
   obtain ⟨Δ, hΔ, hx⟩ := hL
   obtain ⟨h', x', hd', ⟨Γ, hΓ, _⟩, _⟩ := id hy
   have hadm := PositivityTheory.Tls2.BZGL.irreducibleAdmissibleGL_top
-  have hw : Wd y.rep (wtW Γ) := GlobalTheory.T.langlands_rep_ordered_word_occurs hadm c.soc c.jac 𝔫 y.rep hy h' Γ hΓ
+  have hw : Wd y.rep (wtW Γ) := _root_.GlobalTheory.CompanionTheory.ZWordL.wd_wtW_of_isL hadm c.soc c.jac 𝔫 y.rep hy h' Γ hΓ
   have hsub : IsSubquotient y.rep (prodIrr x hd) := jhMult_ne_zero_iff.mp hj
   have hw2 : Wd (prodIrr x hd) (wtW Γ) := GlobalTheory.T.word_occurs_of_subquotient _ _ (isSmooth_prodIrr x hd) hsub _ hw
   have hsh : InShW (Multiset.map Δ Finset.univ.val) (wtW Γ) :=
-    GlobalTheory.T.segment_product_word_in_shuffle hadm c.jac x hd Δ hx _ (GlobalTheory.T.ordered_word_letters_cuspidal Γ) hw2
+    GlobalTheory.T.segment_product_word_in_shuffle hadm c.jac x hd Δ hx _ (_root_.GlobalTheory.CompanionTheory.ZcWords.wtW_isCusp Γ) hw2
   rw [hΔ.1] at hsh
   refine ⟨(tri_msupp_of_inShW hsh).trans (tri_msupp_wtW hΓ).symm, ?_⟩
   by_cases heq : 𝔪 = 𝔫

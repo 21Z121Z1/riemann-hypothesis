@@ -15,7 +15,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaCore
 import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IsCoprimeTwoSubRtTwoAddRt
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsGenRosati
-import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsRingActionDegenerationLinearUniformisationStatement
+import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsRingActionDegenerationLinearUniformisation
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.TorsionIsoOfLinearUniformisationTriple
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.PsiFunctionEqThetaOfPrimitiveLineBundle
 
@@ -113,7 +113,7 @@ theorem main : LL → TwistBCSpanStatement → TWM.VRatioGtStatement → TWState
   have prim : LBIso U.LG.L (cubeLB t.G ![𝟙 t.G, t.act.toRingAct.act H.w0] U.LG.L) := by
     rw [hU]; exact t.prim
   obtain ⟨oA, hA⟩ := exists_oAct_unif U.toUnifPre t.act.toRingAct adj
-  obtain ⟨md, oD, lin⟩ := GlobalTheory.T.exists_ring_action_degeneration_linear_uniformisation hL h₁ h₂ h₃ h₄ R I hR D A t.G t.semi U _ oA t.act.toRingAct hA adj
+  obtain ⟨md, oD, lin⟩ := _root_.GlobalTheory.RingActData.exists_oAct hL h₁ h₂ h₃ h₄ R I hR D A t.G t.semi U _ oA t.act.toRingAct hA adj
   have hd := H.d_mod
   have w0 := _root_.GlobalTheory.PsiPrim.traceFormTwistIso_of_primitive_lineBundle hL h₁ h₂ h₃ h₄ R I hR D A t.G t.semi U _ oD oA t.act.toRingAct lin adj H.w0 ((H.d + 1) / 4)
     (by show H.w0 + H.bar H.w0 = 1; rw [GlobalTheory.HostModel.cmHost_bar_halfIntegerGenerator, add_sub_cancel]) (w0_mul_bar_w0_eq_d_add_one_div_four H) (by omega)

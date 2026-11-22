@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMemBand
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarishChandraFormsEquicontinuousOnBandStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarishChandraFormsEquicontinuousOnBand
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOfIsOpenStab
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.ExistsNormRconvLeSiegel
 import GroundTheory.AutomorphicForms.ReductionSiegel
@@ -120,7 +120,7 @@ theorem oneRoot (E : Type) [Field E] [NumberField E] [IsTotallyComplex E] (a : �
       b * diagUnits a (fun i => posIdele (K := E) (ρ i) (hρ i)) * k ∈ band E a →
       R * ρ ⟨r, hra⟩ ≤ ρ ⟨r - 1, by omega⟩ →
       ‖φ.1 (b * diagUnits a (fun i => posIdele (K := E) (ρ i) (hρ i)) * k)‖ ≤ ε * M := by
-  obtain ⟨U, hU, hequi⟩ := GlobalTheory.T.harishChandraForms_equicontinuous_on_band E a L hL W hW X hX N ε hε
+  obtain ⟨U, hU, hequi⟩ := _root_.GlobalTheory.HCF.Equi.equicontinuous_band E a L hL W hW X hX N ε hε
   obtain ⟨M₀, hM₀, hfin⟩ := finConj E a r L hL ω hω
   obtain ⟨C₁, hC₁⟩ := GroundTheory.Automorphic.CuspidalSpectrum.exists_norm_archMat_conj_le hω hωB ht hr hra
     (GroundTheory.Automorphic.isCompact_scaledInfSet (K := E) M₀)

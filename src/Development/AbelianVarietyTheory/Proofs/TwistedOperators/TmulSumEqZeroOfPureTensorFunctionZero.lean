@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Hypo
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PolMatchLinear
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SumPureMemAlgD
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEigenIntertwinerModels
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MultilinearSumEqOfProdFunEqStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MultilinearSumEqOfProdFunEq
 
 open NumberField IsDedekindDomain
 open scoped TensorProduct
@@ -202,7 +202,7 @@ theorem tmul_sum_eq_zero_of_pure : ∀ {F : Type} [Field F] [NumberField F] {κ 
   intro F _ _ κ _ vac h0 hstd P _ _ p Q _ _ q T m f φ hφ hs
   have hloc := sum_local_eq_zero vac h0 hstd T f φ hφ hs
   refine (Module.forall_dual_apply_eq_zero_iff ℂ _).1 fun ℓ => ?_
-  have key := GlobalTheory.T.multilinearMap_sum_eq_of_sum_prod_eval_eq (Vf F κ T) (formOf p q ℓ) (Finsupp.equivFunOnFinite.symm fun _ : Fin m => (1 : ℂ))
+  have key := _root_.GlobalTheory.multilinear_sum_eq_of_prod_fun_eq (Vf F κ T) (formOf p q ℓ) (Finsupp.equivFunOnFinite.symm fun _ : Fin m => (1 : ℂ))
     (fun i => famOf T (f i) (φ i)) (fun _ => 0) (fun z => by
       rw [Finsupp.sum_fintype _ _ (fun _ => zero_mul _), Finsupp.sum_fintype _ _ (fun _ => zero_mul _)]
       simp only [Finsupp.coe_equivFunOnFinite_symm, one_mul, Fintype.prod_option]

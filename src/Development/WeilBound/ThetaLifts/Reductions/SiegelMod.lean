@@ -4,7 +4,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AddEquivAddHaarCharEqOfIsOpenEmbeddingRestrict
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MulVecCEApply
 import Development.AbelianVarietyTheory.Definitions.Foundations.T2SpaceTensorProductFiniteExtension
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AddEquivAddHaarCharProdCongrStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AddEquivAddHaarCharProdCongr
 
 set_option linter.unusedSectionVars false
 
@@ -302,7 +302,7 @@ theorem s_inv {u : Rˣ} (hu : s u = u) : s u⁻¹.1 = u⁻¹.1 :=
 theorem haar_character_frame_annihilator (h : Fr s J X Y) [LocallyCompactSpace (W1 s J X Y)] (u : Rˣ) :
     addEquivAddHaarChar (scalM n k u) = addEquivAddHaarChar (scal (W1 s J X Y) u (smul_mem_frame_annihilator _) (smul_mem_frame_annihilator _)) *
       (addEquivAddHaarChar (scalM k k u) * addEquivAddHaarChar (scalM k k u)) := by
-  rw [← GlobalTheory.T.addEquivAddHaarChar_prodCongr, ← GlobalTheory.T.addEquivAddHaarChar_prodCongr]
+  rw [← _root_.GlobalTheory.ModuLR.addEquivAddHaarChar_prodCE, ← _root_.GlobalTheory.ModuLR.addEquivAddHaarChar_prodCE]
   let e : (W1 s J X Y × Matrix (Fin k) (Fin k) R × Matrix (Fin k) (Fin k) R) ≃ₜ+ Matrix (Fin n) (Fin k) R :=
     { toFun := fun p => p.1.1 + X * p.2.1 + Y * p.2.2
       invFun := fun U => (⟨U - X * (cT s Y * J * U) - Y * (cT s X * J * U),
@@ -332,7 +332,7 @@ theorem haar_character_skew_hermitian [Invertible (2 : R)] (hs : Continuous s) (
     (ω : Rˣ) (hω : s ω = -ω) {u : Rˣ} (hu : s u = u) :
     addEquivAddHaarChar (scalM k k u) = addEquivAddHaarChar (scal (W2 s k) u (smul_mem_skew_hermitian hu) (smul_mem_skew_hermitian (s_inv hu))) *
       addEquivAddHaarChar (scal (W2 s k) u (smul_mem_skew_hermitian hu) (smul_mem_skew_hermitian (s_inv hu))) := by
-  rw [← GlobalTheory.T.addEquivAddHaarChar_prodCongr]
+  rw [← _root_.GlobalTheory.ModuLR.addEquivAddHaarChar_prodCE]
   have cc : ∀ P : Matrix (Fin k) (Fin k) R, cT s (cT s P) = P := fun P => Matrix.ext fun _ _ => hss _
   have hω' : s ω⁻¹.1 = -ω⁻¹.1 := by
     have : s ω⁻¹.1 * ω = -1 := by rw [← neg_neg ω.1, ← hω, mul_neg, ← map_mul, Units.inv_mul, map_one]

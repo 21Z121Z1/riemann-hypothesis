@@ -5,9 +5,9 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualit
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityReal
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PairInfApply
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ContDiffContinuousOneParameterFiniteDimensionalLStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSchwartzHeisenbergOperatorDerivativeStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisenbergEquivariantIsometryStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchwartzIsometryInnerProductEqStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSchwartzHeisenbergOperatorDerivative
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisenbergEquivariantIsometry
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchwartzIsometryInnerProductEq
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockVacuaSmoothFamilyComplexGaussians
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GaussianPairingIntegralContDiffNeZeroDiagStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ContDiffOfContinuousQuasiMultiplicativeSmoothDefStatement
@@ -74,8 +74,8 @@ theorem GlobalTheory.WeilVacuum.smooth_flow : ∀ {V : Type} [NormedAddCommGroup
       Complex.I * GlobalTheory.GaussLine.dHeis β w ⇑(T t f₀) x := by
     intro t w x
     set u := A (-t) w
-    obtain ⟨g1, hg1⟩ := GlobalTheory.T.exists_schwartz_heisenbergOperatorDerivative β (J₀ u) f₀
-    obtain ⟨g2, hg2⟩ := GlobalTheory.T.exists_schwartz_heisenbergOperatorDerivative β u f₀
+    obtain ⟨g1, hg1⟩ := _root_.GlobalTheory.dHeis_schwartz β (J₀ u) f₀
+    obtain ⟨g2, hg2⟩ := _root_.GlobalTheory.dHeis_schwartz β u f₀
     have hg12 : g1 = Complex.I • g2 := by
       ext y; rw [SchwartzMap.smul_apply, hg1, hg2, hf₀, smul_eq_mul]
     have hI : ∀ w₁ : V × V, ∀ (s : ℝ) (f g : SchwartzMap V ℂ),
@@ -84,8 +84,8 @@ theorem GlobalTheory.WeilVacuum.smooth_flow : ∀ {V : Type} [NormedAddCommGroup
       intro w₁ s f g h
       have := hint t (s • w₁).1 (s • w₁).2 f g h
       rwa [Prod.mk.eta, map_smul] at this
-    have h1 := GlobalTheory.T.heisenberg_equivariant_isometry μ β (T t) (hunit t) (J₀ u) (A t (J₀ u)) (hI _) f₀ g1 hg1 x
-    have h2 := GlobalTheory.T.heisenberg_equivariant_isometry μ β (T t) (hunit t) u (A t u) (hI _) f₀ g2 hg2 x
+    have h1 := _root_.GlobalTheory.HeisenbergL2.map_dHeis_of_isometry μ β (T t) (hunit t) (J₀ u) (A t (J₀ u)) (hI _) f₀ g1 hg1 x
+    have h2 := _root_.GlobalTheory.HeisenbergL2.map_dHeis_of_isometry μ β (T t) (hunit t) u (A t u) (hI _) f₀ g2 hg2 x
     have hu : A t u = w := hinv t w
     rw [hu] at h2
     rw [hJapp, ← h1, ← h2, hg12, map_smul, SchwartzMap.smul_apply, smul_eq_mul]
@@ -106,7 +106,7 @@ theorem GlobalTheory.WeilVacuum.smooth_flow : ∀ {V : Type} [NormedAddCommGroup
     simp_rw [hrep, map_mul]
     rw [hKdef, ← integral_const_mul]
     congr 1; funext x; ring
-  have hpol := fun s => GlobalTheory.T.schwartz_isometry_inner_product_eq μ (T s) (hunit s)
+  have hpol := fun s => _root_.GlobalTheory.schwartz_L2_isometry_preserves_inner μ (T s) (hunit s)
   have eq1 : ∀ s t, cc (s + t) * starRingEnd ℂ (cc s) * K (s + t) s = cc t * starRingEnd ℂ (cc 0) * K t 0 := by
     intro s t
     have := hpol s (T t f₀) (T 0 f₀)

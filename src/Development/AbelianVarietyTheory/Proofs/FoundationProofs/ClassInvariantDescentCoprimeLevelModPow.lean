@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DiagMod
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SpecialLinearGroupIntMapZmodSurjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitOfCocycleRightActionCharZero
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsHomToKernelSqCentralExtensionSlTwoZMod
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.JTranslatesLevelAndScalarModStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.JTranslatesLevelAndScalarMod
 
 open scoped MatrixGroups TensorProduct
 open Matrix GlobalTheory.KZ GlobalTheory.KZ.ES
@@ -262,7 +262,7 @@ theorem descent : ∀ {Ω : Type} [Field Ω] [Algebra ℚ Ω] [IsAlgClosure ℚ 
       exact ⟨u g hg1, Subtype.ext hg2⟩)
     (fun a ha q => Subtype.ext (sl_root X (pow_pos hl.pos n) (congrArg Subtype.val ha) _))
     (fun q hq => by
-      obtain ⟨h1, h2⟩ := GlobalTheory.T.jTranslates_level_and_scalar_mod ε X Mb hMb
+      obtain ⟨h1, h2⟩ := _root_.GlobalTheory.KZ.ES.Scal.lev_and_scalar ε X Mb hMb
       obtain ⟨e1, e2, e3⟩ := h2 (s q) (fun g hg =>
         congrArg Subtype.val (hq ⟨_, fun γ hγ => h1 g hg γ (gamma_mono (dvd_mul_left Mb Ma) hγ)⟩))
       have key : ∀ i j, (en (s q) i j : ZMod Mb) = q i j := fun i j =>

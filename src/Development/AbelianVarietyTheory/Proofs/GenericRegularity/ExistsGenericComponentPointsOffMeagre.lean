@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsPeriodMulV
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsCountableFlagSpaceAtlas
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.FlagChartsCoverFramedFieldPoints
 import Formalism.LocalToGlobal.ProjectiveLattices.CompFin
-import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsComponentOfModelChartsStatement
+import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsComponentOfModelCharts
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsCountableHolomorphicFamiliesSmooth
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.ExistsHolomorphicFamily
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.DenseMvPolynomialEvalNeZero
@@ -399,7 +399,7 @@ theorem exists_comp_generic_off_meagre : ∀ (E : Type) [Field E] [NumberField E
   intro E _ _ _ H Dw l Xo c σ r U hσ hU h k
   obtain ⟨-, hmul, hinv, -⟩ := GlobalTheory.Reg.BorelGroupoid.frBor_groupoid E H Dw l Xo c (CAt σ)
   obtain ⟨ι, _, C, hC⟩ := _root_.GlobalTheory.Reg.exists_countable_atlas E H Dw l Xo c h
-  obtain ⟨Z, hZ⟩ := GlobalTheory.T.exists_component_of_modelCharts E H Dw l Xo c σ r (Formalism.L2.PjFree.Unf.ofPj U) hU h k
+  obtain ⟨Z, hZ⟩ := _root_.GlobalTheory.OneComp.exists_comp_of_charts E H Dw l Xo c σ r (Formalism.L2.PjFree.Unf.ofPj U) hU h k
   obtain ⟨S, hS, hcov⟩ := exists_seq_of_isMeagre
     (isMeagre_iUnion fun i => isMeagre_chart (Formalism.L2.PjFree.Unf.ofPj U) hσ hU k (C i))
   refine ⟨Z, S, hS, fun x hx => ?_⟩

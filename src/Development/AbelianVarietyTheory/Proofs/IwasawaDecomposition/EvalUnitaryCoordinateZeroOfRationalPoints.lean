@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPolyRep
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MvPolynomialClearDenominatorsEvalStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MvPolynomialClearDenominatorsEval
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CayleyTransformMemRationalUnitaryGroup
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryFamilyEqCayleyOfSkewFamilyStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryFamilyEqCayleyOfSkewFamily
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MvPolynomialEvalZeroOfVanishingRationalSkewHermiStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNormOneCmFieldDetOneAddNeZero
 
@@ -43,7 +43,7 @@ theorem vanish_generic (L : Type) [Field L] [NumberField L] [IsCMField L] (n : �
     fun p => ((1 + V p.1) * (1 - V p.1).adjugate) p.2.1 p.2.2
   let D : (L →+* ℂ) × Fin n × Fin n → MvPolynomial ((L →+* ℂ) × Fin n × Fin n) ℂ :=
     fun p => (1 - V p.1).det
-  obtain ⟨G, M, hGM⟩ := GlobalTheory.T.mvPolynomial_clear_denominators_eval F P D
+  obtain ⟨G, M, hGM⟩ := _root_.GlobalTheory.clearDenominators F P D
   have evV : ∀ (y : (L →+* ℂ) → Matrix (Fin n) (Fin n) ℂ) σ,
       (V σ).map (MvPolynomial.eval (upt y)) = y σ := by
     intro y σ; ext i j; simp [V, upt]
@@ -91,7 +91,7 @@ theorem vanish_generic (L : Type) [Field L] [NumberField L] [IsCMField L] (n : �
         simp only [ratPt, Matrix.map_mul, map_inv_field_hom, Matrix.map_sub _ (map_sub _), Matrix.map_add _ (map_add _),
           Matrix.map_one _ (map_zero _) (map_one _)]
       rw [hc, hF γ₀ hγ, mul_zero, zero_mul]
-  obtain ⟨Y, hYs, hYd, hYX⟩ := GlobalTheory.T.unitary_family_eq_cayley_of_skew_family L n X hX hd
+  obtain ⟨Y, hYs, hYd, hYX⟩ := _root_.GlobalTheory.unitary_isCayley_of_det_ne_zero L n X hX hd
   have hQY := GlobalTheory.T.mvPolynomial_eval_zero_of_vanishing_rational_skewHermitian L n Q hQ Y hYs
   have hDY : ∀ p, MvPolynomial.eval (upt Y) (D p) ≠ 0 := fun p => by
     rw [show MvPolynomial.eval (upt Y) (D p) = _ from evDet _ p.1]; exact hYd p.1

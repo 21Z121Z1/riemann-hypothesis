@@ -2,17 +2,17 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnitLemmaGroup
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LinearDescent
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DltEqZero
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteClassesOfSeparableCharPolyStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteClassesOfSeparableCharPoly
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InvolutionIdempotentDecompositionOfSeparableChar
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPlusElementEtaNormNegOne
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsUniformizerIdempotentFrameProd
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RhoProdFiniteAlgebraWithInvolutionStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormCharacterOnIdempotentPartFramePropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RhoProdFiniteAlgebraWithInvolution
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormCharacterOnIdempotentPartFrameProperties
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SignedInvolutionStableLatticeSumEqAlternatingSum
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormCharacterOnIdempotentPartOrthogonalityClasse
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardClProdFiniteAlgebraWithInvolutionStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardClProdFiniteAlgebraWithInvolution
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormCharacterOnIdempotentPartProdInl
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TendstoSignedLatticeSumSubNormCharacterMulStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TendstoSignedLatticeSumSubNormCharacterMul
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TendstoSignedLatticeSumProductSubFactors
 
 open GlobalTheory.UnitLemma GlobalTheory.UnitLemma.Desc Polynomial Filter Topology
@@ -92,7 +92,7 @@ theorem sum_formula {K : UQ} (B : InvAlg K) {ι : Type} [Fintype ι] [DecidableE
       (chi B e I x : ℝ) * h I := by
     intro I hI x hx
     have t1 := lim_HH B e π S a hB ha hF ℓ hℓ I hI x hx
-    have t2 := GlobalTheory.T.tendsto_signedLatticeSum_sub_normCharacter_mul K B ι e π S a hB ha hF I hI x hx
+    have t2 := _root_.GlobalTheory.UnitLemma.Desc.HH_sub_chi_mul_HH_negligible K B ι e π S a hB ha hF I hI x hx
     have t3 := (lim1 I hI).const_mul (chi B e I x : ℝ)
     have t4 := t2.add t3
     rw [zero_add] at t4
@@ -100,7 +100,7 @@ theorem sum_formula {K : UQ} (B : InvAlg K) {ι : Type} [Fintype ι] [DecidableE
     push_cast
     ring
   refine ⟨lim1 I hI, ?_⟩
-  haveI : Finite B.Cl := GlobalTheory.T.finite_classes_of_separable_charPoly K B hB.2
+  haveI : Finite B.Cl := _root_.GlobalTheory.UnitLemma.ClFin.finite_Cl_of_separable K B hB.2
   exact _root_.GlobalTheory.UnitLemma.Desc.sum_chi_ell_cl K B ι e π S hF this ℓ h key I hI
 
 theorem linearDescent : LinearDescent := by
@@ -141,7 +141,7 @@ theorem linearDescent : LinearDescent := by
   set v := val K.O (resultant B₁.P B₂.P)
   have hrho : ∀ k : ℕ, (B₁.prod B₂).rho (algebraMap K.O (B₁.A × B₂.A) a ^ k) =
       B₁.rho (algebraMap K.O B₁.A a ^ k) * B₂.rho (algebraMap K.O B₂.A a ^ k) := fun k =>
-    GlobalTheory.T.rho_prod_finiteAlgebraWithInvolution K B₁ B₂ _ _
+    _root_.GlobalTheory.RhoProd.rho_prod K B₁ B₂ _ _
   have hh : h = (-(K.q : ℝ)) ^ v * (h₁ * h₂) := by
     have t1 := (l₁.mul l₂).const_mul ((-(K.q : ℝ)) ^ v)
     have t2 := hd.add t1
@@ -153,7 +153,7 @@ theorem linearDescent : LinearDescent := by
   have e₁' : ∑ᶠ k : B₁.Cl, (K.eta (Algebra.norm K.E k.rep) : ℝ) * ℓ₁ k.rep =
       ∑ᶠ k : B₁.Cl, (chi B₁ e₁ S₁ k.rep : ℝ) * ℓ₁ k.rep := by
     refine finsum_congr fun k => ?_
-    rw [((GlobalTheory.T.normCharacterOnIdempotentPart_frame_properties K B₁ ι₁ e₁ π₁ S₁ hF₁).2.2.2 (InvAlg.Cl.rep k) ⟨Units.isUnit _, (Quot.out k).2⟩)]
+    rw [((_root_.GlobalTheory.UnitLemma.Desc.chi_frame_props K B₁ ι₁ e₁ π₁ S₁ hF₁).2.2.2 (InvAlg.Cl.rep k) ⟨Units.isUnit _, (Quot.out k).2⟩)]
   have e₂' : ∑ᶠ k : B₂.Cl, ℓ₂ k.rep = ∑ᶠ k : B₂.Cl, (chi B₂ e₂ ∅ k.rep : ℝ) * ℓ₂ k.rep := by
     refine finsum_congr fun k => ?_
     simp [chi, eS, UQ.eta, val]
@@ -165,8 +165,8 @@ theorem linearDescent : LinearDescent := by
     have hk : (B₁.prod B₂).Plus k.rep := ⟨Units.isUnit _, (Quot.out k).2⟩
     have hk1 : B₁.Plus (InvAlg.Cl.rep k).1 :=
       ⟨(Prod.isUnit_iff.1 hk.1).1, congrArg Prod.fst hk.2⟩
-    rw [((GlobalTheory.T.normCharacterOnIdempotentPart_frame_properties K B₁ ι₁ e₁ π₁ S₁ hF₁).2.2.2 (InvAlg.Cl.rep k).1 hk1)]
-  rw [e₁', e₂', e', c, c₁, c₂, hh, GlobalTheory.T.card_cl_prod_finiteAlgebraWithInvolution, Finset.card_disjSum]
+    rw [((_root_.GlobalTheory.UnitLemma.Desc.chi_frame_props K B₁ ι₁ e₁ π₁ S₁ hF₁).2.2.2 (InvAlg.Cl.rep k).1 hk1)]
+  rw [e₁', e₂', e', c, c₁, c₂, hh, _root_.GlobalTheory.UnitLemma.InvAlg.ClProd.card_cl_prod, Finset.card_disjSum]
   push_cast
   ring
 

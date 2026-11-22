@@ -8,12 +8,12 @@ import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensor
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieOneLMemZalg
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsStableBdSub
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductSubsetSumVanishesStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TensorSumAnnihilatorStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TensorSumAnnihilator
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CommutingHeckeCapelliOperatorsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HasDerivAtTorusTranslateStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExponentialPolynomialSolutionSpace
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsRecurrencePolynomialStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorusElementLeviEmbeddingStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorusElementLeviEmbedding
 open scoped ENNReal
 open NumberField IsDedekindDomain Matrix MeasureTheory Filter Topology Polynomial
 open GlobalTheory.CuspRep GlobalTheory.UnitaryBC PositivityTheory.Rg.Rs GlobalTheory.CompanionTheory.Conc
@@ -109,7 +109,7 @@ theorem levi_kill : ∀ (E : Type) [Field E] [NumberField E] [IsTotallyComplex E
   intro E _ _ _ r s M hr hs hcard
   classical
   obtain ⟨S, a, b, t, hcomm, hcapc, hleft, haS, hbS, ha1, hb1, htr, hA, hB⟩ := GlobalTheory.T.commuting_hecke_capelli_operators E r s hr hs
-  obtain ⟨l', hcard', hl'⟩ := GlobalTheory.T.tensor_sum_annihilator (Finset.univ : Finset (E →+* ℂ)) (fun τ => ((M τ).powersetCard r).map Multiset.sum)
+  obtain ⟨l', hcard', hl'⟩ := _root_.GlobalTheory.CompanionTheory.KillSum.sum_killed (Finset.univ : Finset (E →+* ℂ)) (fun τ => ((M τ).powersetCard r).map Multiset.sum)
   refine ⟨l'.toList.map (· - ∑ τ, t τ), ?_, fun F hFN hFc p => ?_⟩
   · rw [List.length_map, Multiset.length_toList, hcard']
     simp [hcard, Multiset.card_powersetCard]
@@ -260,7 +260,7 @@ theorem orbit_mem (r s : ℕ) (hr : 0 < r) (hs : 0 < s) (φ : Sm E (r + s)) (hφ
   have hmem := hS (Sm E (r + s)) (∑ τ : E →+* ℂ, ∑ i : Fin r, Eop (a := r + s) τ (Fin.castAdd s i) (Fin.castAdd s i)) ev
     (fun x t => GlobalTheory.T.hasDerivAt_torus_translate E r s x _ t) F (funext fun t => by
       change (_ : Sm E (r + s)).1 (lev (Ad E) r s p * aT E (r + s) r t) = 0
-      rw [GlobalTheory.T.torus_element_levi_embedding E r s t, ← map_mul]
+      rw [_root_.GlobalTheory.CompanionTheory.Conc.LevAt.aT_eq_lev E r s t, ← map_mul]
       exact hk F hFN hFc _)
   convert hmem using 1
   funext t

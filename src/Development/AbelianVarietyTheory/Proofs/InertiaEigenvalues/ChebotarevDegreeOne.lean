@@ -3,7 +3,7 @@ import ReciprocityTheory.GaloisValuations.Global
 import ReciprocityTheory.GaloisValuations.GlobalA
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ChebotarevDegreeOneIffCheb
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPrimeDvdSubOneCyclotomicIrreducibleOver
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCyclotomicCrossingFieldDecidingFrobeniusStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCyclotomicCrossingFieldDecidingFrobenius
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsFrobRestrictScalarsOfPrimeAbsNormStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPrimeAbsNormEqOfIrreducibleCyclotomic
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IdealCharacterLContinuationNeZeroOne
@@ -22,7 +22,7 @@ theorem chebotarevDegreeOne' : ChebotarevDegreeOne := by
   obtain ⟨g', rfl⟩ := AlgEquiv.restrictNormalHom_surjective (F := F) (K₁ := L) Ω g
   have : NumberField L := NumberField.of_module_finite F L
   obtain ⟨m, hm, hdvd, hirr⟩ := _root_.GlobalTheory.exists_prime_dvd_sub_one_irreducible_cyclotomic L (Module.finrank F L) Module.finrank_pos.ne'
-  obtain ⟨Z, τ, hZ, hZirr, hcross⟩ := GlobalTheory.T.exists_cyclotomic_crossing_field_deciding_frobenius F Ω L g' m hm hdvd hirr
+  obtain ⟨Z, τ, hZ, hZirr, hcross⟩ := _root_.GlobalTheory.ChebCross.cross F Ω L g' m hm hdvd hirr
   have : NumberField Z := NumberField.of_module_finite F Z
   have : IsAlgClosure Z Ω := ⟨IsAlgClosure.isAlgClosed F, inferInstance⟩
   have hfin := hS.union (GlobalTheory.T.finite_places_inertia_not_fixing_finiteExtension F Ω L)

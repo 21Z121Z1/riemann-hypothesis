@@ -21,7 +21,7 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CoordsAt
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsExtendLin
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeTateChartDualAction
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeChartDualActionCompat
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeComponentIntegralOverRingStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeComponentIntegralOverRing
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeComponentResidueIntegrality
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeComponentReductionAtP
 
@@ -385,8 +385,8 @@ theorem exactModLat_hodgeTate : FarguesHodgeTate → ∀ (E : Type) [Field E] [N
       (∀ e ∈ 𝔐.V (.inr τ) q, ∀ l, (J' s e l - J' t e l) / (p : Ω) ∈ regAt 𝔐.ξ q) := by
     intro s t q hs ht hq
     have hZ := HT.ModelTest.overZp_of_inFibre 𝔐 (Fact.out : p.Prime) q hq
-    have hls := GlobalTheory.T.hodge_component_integral_over_ring E H D l Xo c O β Y S Ω K J y 𝔐 p o ho s.1 q hs hZ
-    have hlt := GlobalTheory.T.hodge_component_integral_over_ring E H D l Xo c O β Y S Ω K J y 𝔐 p o ho t.1 q ht hZ
+    have hls := _root_.GlobalTheory.CompanionTheory.Ar.Flat.HTL.isLocIn_regAt_chartRing E H D l Xo c O β Y S Ω K J y 𝔐 p o ho s.1 q hs hZ
+    have hlt := _root_.GlobalTheory.CompanionTheory.Ar.Flat.HTL.isLocIn_regAt_chartRing E H D l Xo c O β Y S Ω K J y 𝔐 p o ho t.1 q ht hZ
     obtain ⟨b, hb⟩ := hκd s
     have hb' : (p : Ω) ^ 2 = κ * (b : Ω) := by
       have := congrArg (algebraMap (chartRing o (mseg y) s.1) Ω) hb
@@ -497,7 +497,7 @@ theorem exactModLat_hodgeTate : FarguesHodgeTate → ∀ (E : Type) [Field E] [N
   have hqc' : InChart 𝔐.ξ (mseg y) (sx x).1 q := hqc
   have hqF : InFibre 𝔐.ξ p q := hq
   have hZ := HT.ModelTest.overZp_of_inFibre 𝔐 (Fact.out : p.Prime) q hqF
-  have hls := GlobalTheory.T.hodge_component_integral_over_ring E H D l Xo c O β Y S Ω K J y 𝔐 p o ho (sx x).1 q hqc' hZ
+  have hls := _root_.GlobalTheory.CompanionTheory.Ar.Flat.HTL.isLocIn_regAt_chartRing E H D l Xo c O β Y S Ω K J y 𝔐 p o ho (sx x).1 q hqc' hZ
   obtain ⟨k1, -, ⟨R1, hR1, hR1'⟩, ⟨R2, hR2, hR2'⟩, k5⟩ := hpack (sx x) _ hls
   have hl := fun e => _root_.GlobalTheory.CompanionTheory.Ar.Flat.HTStalk.mem_V_inl_iff E H D l Xo c O β Y S Ω K J y 𝔐 p o ho Dc hfam hpS τ σ hσ (sx x) (ds (sx x)) (hgd _) q hqc' hqF e
   have hr := fun e => _root_.GlobalTheory.CompanionTheory.Ar.Flat.mem_V_inr_iff_latOn E H D l Xo c O β Y S Ω K J y 𝔐 p o ho Dc hfam hpS τ σ hσ (sx x) q hqc' hqF e

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ChainParSucc
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingHeightEqOneLatticeStabilizerComponents
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PushforwardHaarRealPointsTimesLevelStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PushforwardHaarRealPointsTimesLevel
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaChainStagePeterssonValueRealLevelTranslate
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix
 open Formalism.L2.Theta Formalism.L2.DIV Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.IndefR.Datum
@@ -56,7 +56,7 @@ theorem zetaNe_of_real : ∀ D : D7, MetEx D → LevFacts D → LevelLaw D → C
   have hkm : k ≤ D.R.m := hk.le
   obtain ⟨ipD, ip, hip⟩ := hMet c hc k hkm s hs
   obtain ⟨_, _, hLF3, _, _, hLF6⟩ := hLev c hc k hkm s hs
-  obtain ⟨hmOff, _, hAsub, _, mR, hmR, hint⟩ := GlobalTheory.T.pushforward_haar_realPoints_times_level D hLev c hc k hkm s hs
+  obtain ⟨hmOff, _, hAsub, _, mR, hmR, hint⟩ := _root_.GlobalTheory.ChainOnto.HaarInf.pushforward_haar_real D hLev c hc k hkm s hs
   have hpet := _root_.GlobalTheory.ChainOnto.PetCoef.petco D c hc k hkm s hs ipD ip hip
   have hlaw := (hLaw hng c hc k hk s s' hs hs' p hp φ).1
   have hsupp := hSupp hng c hc k hk s s' hs hs' p hp m X hcov φ

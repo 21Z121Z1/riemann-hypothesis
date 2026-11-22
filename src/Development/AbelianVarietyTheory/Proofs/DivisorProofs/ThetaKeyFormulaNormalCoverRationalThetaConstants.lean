@@ -5,12 +5,12 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Si
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeBundleGeneratedOfModelIso
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemRangeOfSmallTraits
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelHasDivOfGenericPointProjectiveCoords
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsProjectiveSpaceMapOfModelHasDivStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsProjectiveSpaceMapOfModelHasDiv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymmetricCoordinatesO1FactorialPower
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniversalTripleFibrePrincipallyPolarisedDimensio
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelSemiAbelianRelDimCotangentVectorBundle
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipallyPolarisedFibreIffOfGrpPullback
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianLocusEqPreimageModuliAndPrincipalStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianLocusEqPreimageModuliAndPrincipal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaCoordinatesSectionExists
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasDivOfHasDivThetaSymmetricFunctionsDegreeFacto
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasThetaConstantsTwoLevelsMoveCartesian
@@ -59,7 +59,7 @@ theorem key_on_cover : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H
     rw [h1]; exact hf Ω y d hth
   have hD : M.HasDiv d :=
     _root_.GlobalTheory.UMin.hasDiv_of_hasDiv_symTup c.F Ω M (n + 1) d hZ (_root_.GlobalTheory.UMin.hasDiv_of_pCrd_pt c.F Ω o M n (π ≫ g) (symTup d) hP)
-  obtain ⟨h, -, hhP⟩ := GlobalTheory.T.exists_projectiveSpace_map_of_model_hasDiv c.F Ω M n d hD
+  obtain ⟨h, -, hhP⟩ := _root_.GlobalTheory.UMin.CrdMap.exists_map_of_hasDiv c.F Ω M n d hD
   have hsym := _root_.GlobalTheory.UMin.CrdSym.lbIso_symTup c.F Ω o M n h (π ≫ g) d hhP hP
   have hThO : HasTh Y.oF.t.G Y.oF.t.PP.L Y.oF.t.PP.rig m y d := (hasTh_of_sabMap Y.m0.toSABMap m y d).2 hth
   have hThY : HasTh Y.t.G Y.t.PP.L Y.t.PP.rig m (M.pt ≫ π) d := by
@@ -72,7 +72,7 @@ theorem key_on_cover : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H
   have hPol : PolFib t.G t.PP.L (Module.finrank ℚ E / 2 * (Dw.p + Dw.q)) M.pt := (polFib_of_sabMap mt _ M.pt).2 hPolY
   have hmk : IsUnit (m : c.F) := isUnit_iff_ne_zero.2 (Nat.cast_ne_zero.2 (by omega))
   obtain ⟨σ, hσ⟩ := _root_.GlobalTheory.UMin.ThBdl.pull_theta_bundle E H c.F Ω M t _ m n d h hZ hm hm3 hmk hPol hTh hhP
-  obtain ⟨hab, hop, hamp⟩ := GlobalTheory.T.abelianLocus_eq_preimage_moduli_and_principal E H Dw l Xo c Y M.Z π t ⟨mt⟩
+  obtain ⟨hab, hop, hamp⟩ := _root_.GlobalTheory.ModelAbLocus.abLocus_eq_and_pol E H Dw l Xo c Y M.Z π t ⟨mt⟩
   obtain ⟨hsmY, hvY⟩ := _root_.GlobalTheory.ModelRelDim.relDim_and_isVB_omega E H Dw l Xo c Y
   have hsm : SmoothOfRelativeDimension (Module.finrank ℚ E / 2 * (Dw.p + Dw.q)) t.G.hom :=
     (smoothOfRelativeDimension_isStableUnderBaseChange _).of_isPullback mt.cart.1 hsmY

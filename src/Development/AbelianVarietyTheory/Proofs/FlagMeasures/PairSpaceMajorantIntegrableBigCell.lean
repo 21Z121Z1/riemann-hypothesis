@@ -19,7 +19,7 @@ import Formalism.HermitianCurvature.HermitianCurvatureProofs.BigCellHermitian
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SettingConstruction
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.BFCell
 import Formalism.FormalDegreeBessel.FinalBF
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BigCellQuotientNormalisesUnipotentStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BigCellQuotientNormalisesUnipotent
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MapConjUnipotentHaarEqSmul
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegrableBesselPairMajorantMulRight
 open MeasureTheory Matrix
@@ -117,7 +117,7 @@ theorem bigConv : ∀ (k r : ℕ) (L : Formalism.MainNotions.S.LocBessel k r) (h
   have hu₁ := Formalism.QuantumDeterminants.WeylGroupFacts.isUnit_of_uh hg₁
   set a := (Formalism.QuantumDeterminants.bigCell k r c μ₁)⁻¹ * Formalism.QuantumDeterminants.bigCell k r c μ with ha
   have haU : a ∈ Formalism.QuantumDeterminants.UH (Formalism.QuantumDeterminants.Hpk k r) := Formalism.QuantumDeterminants.WeylGroupFacts.uh_mul (Formalism.QuantumDeterminants.WeylGroupFacts.uh_inv hg₁) hg
-  have hN := GlobalTheory.T.bigCell_quotient_normalises_unipotent k r c μ₁ μ hc hμ₁ hμ
+  have hN := _root_.GlobalTheory.BigConvLevi.levi_conj_mem_iff k r c μ₁ μ hc hμ₁ hμ
   obtain ⟨C, hC, hmap⟩ := _root_.GlobalTheory.NConjHaar.map_conj_eq_smul k r L hκ0 hκ a haU hN
   refine ⟨b, hb0, hb1, ?_⟩
   have e : Formalism.QuantumDeterminants.bigCell k r c μ₁ * a = Formalism.QuantumDeterminants.bigCell k r c μ := by

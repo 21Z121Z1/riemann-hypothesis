@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ReducedBas
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SiegelReducedIntegralFormBoundedEntries
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CuspIntegralBasisCovolumeConstant
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MulMatTranspose
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TraceFormRealCoordinatesIntegralGramStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TraceFormRealCoordinatesIntegralGram
 
 open NumberField Matrix Formalism.MainNotions.S GlobalTheory.CuspGeo GlobalTheory.ClassFin
 open scoped Topology
@@ -151,7 +151,7 @@ theorem GlobalTheory.CuspGeo.redBasis_holds : ∀ I : AutInst, RedBasis I := by
     exact RingOfIntegers.isIntegral_coe _
   choose X hX using fun k => MulCoord.mul_conj_coord I N ρ hρ _ (hint k)
   choose C2 hC2 using fun k => _root_.GlobalTheory.ReducedBasisBound.integral_conj_bounded N C0 (entSum (X k))
-  obtain ⟨Xt, μ, c, hμ, hc, hXt⟩ := GlobalTheory.T.traceForm_real_coordinates_integral_gram I N ρ hρ
+  obtain ⟨Xt, μ, c, hμ, hc, hXt⟩ := _root_.GlobalTheory.CuspGeo.TrReal.trace_form_real_coord I N ρ hρ
   obtain ⟨s, hs⟩ : ∃ s : ℝ, lam * s * lam = 1 := ⟨lam⁻¹ * lam⁻¹, by field_simp⟩
   obtain ⟨μ', hμ'0, hμ'⟩ : ∃ μ' : ℝ, μ' ≠ 0 ∧ lam * lam * μ = μ' * s := by
     refine ⟨lam * lam * μ * lam * lam, by positivity, ?_⟩

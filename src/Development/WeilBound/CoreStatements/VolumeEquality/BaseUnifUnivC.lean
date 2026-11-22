@@ -7,15 +7,19 @@ import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifRiem
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BigZe
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SiegelTransformSymplecticImaginaryStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SiegelNormalFormOfHermitianStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.BallDomainIffPosDefStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.BallDomainIffPosDef
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogDetEqBallPotentialStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SymmetricMatrixInBallImageStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ConjugateEmbeddingsCriterionStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SiegelTransformCommutesAction
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.SpanStandardBasisEigenspaceStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.SpanStandardBasisEigenspace
 import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifUnivA
 import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifUnivB
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsNormalizedRiemannLatticeStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsNormalizedRiemannLattice
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsEigFrames
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
+import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.IsPshLocallyIntegrableStatement
+import Development.WeilBound.CoreStatements.PlurisubharmonicCones.RiemannLatticeEigenProjections
 
 open NumberField Matrix MeasureTheory Filter Topology GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Cusp ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor GroundTheory.Heights₂.Heights.FiniteCovolume
 open scoped ENNReal InnerProductSpace
@@ -209,17 +213,17 @@ theorem exists_univFam : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] 
   intro E _ _ _ Ψ _ j j' n g Λ _ _ R₀ σ q hσ hsig
   classical
   obtain ⟨e, c, hc, hco⟩ := Frame.exists_ortho_frame R₀ σ hσ hsig
-  obtain ⟨R₁, hform, hHm, hB⟩ := GlobalTheory.T.exists_normalized_riemann_lattice R₀ σ e c hc hco
+  obtain ⟨R₁, hform, hHm, hB⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.Univ.CoordLat.coord_lat R₀ σ e c hc hco
   have hmem : ∀ t, ∃ R : RiemLat E g Λ, R.form = R₀.form ∧ (t ∈ ballDom q → R.B = R₁.B ∧
       R.Hm = (1 - (bigZe e q t)ᴴ * bigZe e q t)⁻¹ ∧ ∀ x, R.P x = tz (bigZe e q t) (R₁.P x)) := by
     intro t
     by_cases ht : t ∈ ballDom q
     · obtain ⟨R, h1, h2, h3, h4⟩ := member R₁ (bigZe e q t) hHm (bigZe_symm e q t)
-        ((GlobalTheory.T.ball_domain_iff_pos_def e q t).1 ht) (_root_.GlobalTheory.CompanionTheory.Ar.Cusp.Univ.tz_bigZe_comm σ e q t R₁.B hσ hB)
+        ((_root_.GlobalTheory.CompanionTheory.Ar.Cusp.Univ.mem_ballDom_iff_posDef_bigZe e q t).1 ht) (_root_.GlobalTheory.CompanionTheory.Ar.Cusp.Univ.tz_bigZe_comm σ e q t R₁.B hσ hB)
       exact ⟨R, h1.trans hform, fun _ => ⟨h2, h3, h4⟩⟩
     · exact ⟨R₁, hform, fun h => absurd h ht⟩
   choose R hRf hR using hmem
-  have hfr := GlobalTheory.T.span_standard_basis_eigenspace σ e R₁.B hσ hB
+  have hfr := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.Univ.Frames.span_single_eigSp σ e R₁.B hσ hB
   have hli : ∀ {m : ℕ} (f : Fin m → Ix Ψ j j'), Function.Injective f →
       LinearIndependent ℂ (fun i : Fin m => (Pi.single (e (f i)) 1 : Fin g → ℂ)) := by
     intro m f hf
@@ -267,7 +271,7 @@ theorem exists_univFam : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] 
       rw [mul_comm] at this
       exact mul_left_cancel₀ hik this
     obtain ⟨t, rfl⟩ := GlobalTheory.T.symmetric_pattern_matrix_mem_range_bigZe e q Z hZs hZ0
-    have ht : t ∈ ballDom q := (GlobalTheory.T.ball_domain_iff_pos_def e q t).2 hZp
+    have ht : t ∈ ballDom q := (_root_.GlobalTheory.CompanionTheory.Ar.Cusp.Univ.mem_ballDom_iff_posDef_bigZe e q t).2 hZp
     refine ⟨t, ⟨ht, A, fun x => ?_⟩, ?_⟩
     · rw [(hR t ht).2.2 x, ← hLZ, hL1]
       rfl

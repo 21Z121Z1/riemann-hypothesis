@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Jets.ImportsAlt
 import Formalism.HermitianCurvature.HerGenC
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutLimE
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MeasurePreservingSnocMeasurableEquiv
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TopDensityBigCellEqProdLevelWeightsMulTopFormStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TopDensityBigCellEqProdLevelWeightsMulTopForm
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LevelModuleFormEqIntegralOfCompactCoeff
 import Formalism.HermitianCurvature.StatementTBB
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LevelZeroFormDiagonalBigCellImEqZero
@@ -44,10 +44,10 @@ theorem levelZero_eq_integral_topVector_of_cpt :
   have hae : (fun c : Fin (P.r + 1) → ℂ => (∏ i : Fin (P.r + 1), KB.levW P ((i : ℕ) + 1) (c i)) * R (P.r + 1) c)
       =ᵐ[volume] fun c => ‖tv p H w c‖ ^ 2 := by
     filter_upwards [GlobalTheory.ae_coords_ne_zero (P.r + 1)] with c hc
-    rw [← GlobalTheory.TopVec.Ew_eq_norm_tv_sq Wp Wq P p H w c, (GlobalTheory.T.topDensity_bigCell_eq_prod_levelWeights_mul_topForm Wp Wq P p H w c hc).1]
+    rw [← GlobalTheory.TopVec.Ew_eq_norm_tv_sq Wp Wq P p H w c, (_root_.GlobalTheory.TopDensity.topDensity_eq Wp Wq P p H w c hc).1]
     rfl
   obtain ⟨hint, heq⟩ := GlobalTheory.iterated_integral_eq_integral_pi (P.r + 1) (KB.levW P) R (levWeight_nonneg P)
-    (fun c hc => (GlobalTheory.T.topDensity_bigCell_eq_prod_levelWeights_mul_topForm Wp Wq P p H w c hc).2.2)
+    (fun c hc => (_root_.GlobalTheory.TopDensity.topDensity_eq Wp Wq P p H w c hc).2.2)
     ((hmeas.norm.pow 2).aemeasurable.congr hae.symm)
     (fun j hj c hc => by
       obtain ⟨h1, h2⟩ := _root_.GlobalTheory.LevelIntegralStep.levelForm_eq_integral hP Wp Wq P p Cb H w j _ hD hH hw (Nat.lt_succ_iff.1 hj)

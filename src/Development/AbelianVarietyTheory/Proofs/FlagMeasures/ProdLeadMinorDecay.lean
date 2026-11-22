@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CumulantLowerBoundOfBoundedCentred
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LeadMinorExpHermitianEqConvexExpSumStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LeadMinorExpHermitianEqConvexExpSum
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DerivLeadMinorExpHermitianZeroDiag
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AbsSumEigenvaluesNoncompactPartLe
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HsLeWeightedSumBlockVariancesOfGap
@@ -100,7 +100,7 @@ lemma minor_bound {n : ℕ} {ε : Fin n → Bool} {Y : Matrix (Fin n) (Fin n) �
         if l ≤ a.val ∧ b.val < l then ‖Y a b‖ ^ 2 else 0) / 4
         ≤ Real.log (leadMinor (NormedSpace.exp Y) l hl).re := by
   have hH := herm_of_inP h
-  obtain ⟨w, hw0, -, hw1, hw⟩ := GlobalTheory.T.leadMinor_exp_hermitian_eq_convex_exp_sum n Y hH l hl
+  obtain ⟨w, hw0, -, hw1, hw⟩ := _root_.GlobalTheory.LeadMinorExp.leadMinor_exp_eq_sum n Y hH l hl
   obtain ⟨hd1, hd2⟩ := _root_.GlobalTheory.MinorJet.deriv_leadMinor_exp n Y hH (diag_of_inP h) l hl
   have hrange := _root_.GlobalTheory.EigenPartialSum.abs_sum_eigenvalues_le n ε Y hH h
   rw [← hR] at hrange

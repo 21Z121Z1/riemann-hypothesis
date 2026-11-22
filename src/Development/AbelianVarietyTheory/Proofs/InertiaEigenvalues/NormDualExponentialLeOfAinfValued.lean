@@ -8,10 +8,11 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicChar
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousOrbitPadicComplex
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormPrimitiveRootPrimePowSubOnePadicComplex
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormUnitPowSubOne
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TateInvariantsCyclotomicTwistStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TateInvariantsCyclotomicTwist
+import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicTwistCocycleCoboundary
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicTwistCocycleCoboundaryStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.H1BallCocycleLogCyclotomicStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.H1BallCocycleLogCyclotomic
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyThetaOnBdRPlusPeriodData
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DeRhamFilQuotientXiPowerAinf
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ThetaBdRPlusSurjectiveKerUnitsEquivariant
@@ -40,7 +41,7 @@ theorem norm_le_of_twist {act : GQ l →* (PadicComplex l ≃+* PadicComplex l)}
         have h2 : act g (chiC χ j g') = chiC χ j g' := act_algebraMap ha g _
         simp only [chiC_mul, map_mul, map_sub, h2, RingAut.mul_apply]
         ring⟩
-  have h0 := (GlobalTheory.T.tate_invariants_cyclotomic_twist l act χ ha hχ K s hs j
+  have h0 := (_root_.GlobalTheory.CyclotomicTowerSubgroupInclusions.invariants_twist l act χ ha hχ K s hs j
     ((l : PadicComplex l) ^ (1 + s + padicValInt l j) * β - γ) (fun g hg => by
       have := e g hg
       simp only [map_sub, map_mul, map_pow, map_natCast] at this ⊢
@@ -55,7 +56,7 @@ theorem norm_le_of_log {act : GQ l →* (PadicComplex l ≃+* PadicComplex l)} {
       (α : PadicComplex l) + (act σ β - β)‖ ≤ 1) :
     ‖α‖ ≤ (l : ℝ) ^ (1 + s) := by
   obtain ⟨hn, hc, -⟩ := GlobalTheory.Cyc.cyc_basic l χ hχ
-  obtain ⟨H1, H2⟩ := GlobalTheory.T.cocycle_eq_log_cyclotomic_smul_add_coboundary l act χ ha hχ K s hs
+  obtain ⟨H1, H2⟩ := _root_.GlobalTheory.Cyc.LogClass.image_H1_logChi l act χ ha hχ K s hs
   obtain ⟨_, ⟨α', hα', rfl⟩, hn', b, e⟩ := H1 (fun σ =>
     algebraMap ℚ_[l] (PadicComplex l) (logZl l (χ σ : ℚ_[l])) * (α : PadicComplex l) + (act σ β - β))
     ⟨(((continuous_algMap.comp ((GlobalTheory.PadicLogUnits.logZl_hom l).2.1.comp_continuous hc hn)).mul

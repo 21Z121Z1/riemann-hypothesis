@@ -5,7 +5,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousParti
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PeriodicPartialFourierMeanStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EqConstOfFourierCoefficientsZero
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PartialCoefficientUnipotentMean
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FourierCoefficientConjugationStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FourierCoefficientConjugation
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianBlockDiagonalNormalFormStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RankDirectSumHermitianLt
 noncomputable section
@@ -106,7 +106,7 @@ theorem pcFc : PcFc := by
   refine ⟨?_, ?_⟩
   · intro h nb lam 𝓖 hC β hr g
     obtain ⟨a, b₀, β', hd, he⟩ := GlobalTheory.T.hermitian_block_diagonal_normal_form hn β hr
-    obtain ⟨q, hq⟩ := GlobalTheory.T.fourier_coefficient_conjugation hψ F hF hinv hC a β
+    obtain ⟨q, hq⟩ := _root_.GlobalTheory.CompanionTheory.PcFc.fc_levi hψ F hF hinv hC a β
     have h1 := hq (q⁻¹ * g)
     rw [mul_inv_cancel_left] at h1
     rw [h1, he]

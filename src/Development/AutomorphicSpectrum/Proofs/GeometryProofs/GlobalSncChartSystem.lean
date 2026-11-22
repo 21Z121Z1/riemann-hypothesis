@@ -23,23 +23,23 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.Metric
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsProperIntegralModel
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DominatesOfCoordsRegularStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DominatesOfCoordsRegular
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericFibreProjectiveEmbedding
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsSncPatchRat
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointGenericFibreStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointGenericFibre
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointMemDenseOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointLiftAlongIso
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SmoothSchemeStalksDomainsStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ClosedInProductProjective
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EveryComponentInSomeChart
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordsGenerateFunctionField
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordChartsMatchRegularStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordChartsMatchRegular
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CharZeroIffNonzeroUnitsStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegularRingDeterminesComponent
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegularRingsEqualImagesEqual
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CharZeroCentreOfComplex
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncPatchAtEachComponentStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncPatchAtEachComponent
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptProjectiveModel
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GenWeil
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsCoordsOfGenericPoint
@@ -61,14 +61,14 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LabelEmbeddingInjec
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeTensorPowerLineBundleStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NormalCptIffNormalScheme
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtNoetherianModelNoetherianStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProjectiveModelOverBaseStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProjectiveModelOverBase
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DenseOpenGenericFibre
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericFibreOpenCoords
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncPointsTransferDominatingStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncPointsTransferDominating
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsProjectiveCoordModel
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncModelBoundaryCoords
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeFramesAwayPrime
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DetLatticeLineBundleStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DetLatticeLineBundle
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.VerticalDivisorDegree
 
 noncomputable section
@@ -89,7 +89,7 @@ theorem exists_patches_of_res (hRes : ResK.ResKStatement)
       (∀ q : X, genPt ξ ⤳ q) ∧ CoordTie ℤ ξ x ∧ ξ ≫ f = ξ₀ ∧
       SncPts ξ e {p | Char0 ξ p ∧ f p.1 ∉ Ab} := by
   obtain ⟨hred, hln, M, i, hi, his⟩ := _root_.GlobalTheory.CompanionTheory.Ar.SncBase.genericFibre_reduced_noetherian_closed F P s hp hn
-  obtain ⟨b, ξF, hF1, hF2, hFg⟩ := GlobalTheory.T.generic_point_generic_fibre F P s Ω ξ₀ hξ₀
+  obtain ⟨b, ξF, hF1, hF2, hFg⟩ := _root_.GlobalTheory.CompanionTheory.Ar.GenFibre.exists_point F P s Ω ξ₀ hξ₀
   have hmem := _root_.GlobalTheory.CompanionTheory.Ar.SncBase.genPt_mem_of_dense_open _ Ω ξF U hFg hd
   have hin : ResK.IsResInput M i U e := ⟨hi, hred, hd, by rw [his]; exact hU⟩
   obtain ⟨r, X', j, f', hj, hfj, hsm, hiso, hdense, hsnc⟩ := hRes F M e _ i U hin
@@ -128,12 +128,12 @@ theorem exists_patches_of_res (hRes : ResK.ResKStatement)
     have e1 : ((∏ a, x2 (q1 a)) * x2 q2 * u c') / ((∏ a, x2 (q1 a)) * x2 q2 * u q3) = u c' / u q3 := by
       field_simp [hne.1.1, hne.1.2, hne.2]
     simpa [e1] using this
-  obtain ⟨f, hf, -⟩ := GlobalTheory.T.dominates_of_coords_regular P Ω ξ₀ (𝓞 F) _ u X Ω ξ (RingHom.id Ω) hu htX.gen hirr hreg hchart
+  obtain ⟨f, hf, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.CoordMap.exists_dominating_map P Ω ξ₀ (𝓞 F) _ u X Ω ξ (RingHom.id Ω) hu htX.gen hirr hreg hchart
   have hf' : ξ ≫ f = ξ₀ := by
     have : ξ ≫ f = _ := hf
     rw [this]; simp
   obtain ⟨N, x, hx⟩ := _root_.GlobalTheory.CompanionTheory.Ar.coordTie_int_of_finite X Ω ξ (𝓞 F) _ _ htX
-  obtain ⟨R1, R2⟩ := GlobalTheory.T.coord_charts_match_regular (𝓞 F) F Ω X X' ξ ξ' _ _ htX ht
+  obtain ⟨R1, R2⟩ := _root_.GlobalTheory.CompanionTheory.Ar.SncBase.FracPts.regAt_frac (𝓞 F) F Ω X X' ξ ξ' _ _ htX ht
   have hchar := GlobalTheory.T.char_zero_iff_nonzero_units F Ω X ξ _ _ htX
   have hFreg : ∀ (a : F) (p' : Cpt ξ'), algebraMap F Ω a ∈ regAt ξ' p' := by
     intro a p'
@@ -175,7 +175,7 @@ theorem exists_patches_of_res (hRes : ResK.ResKStatement)
     · rintro ⟨p', hp', rfl⟩
       obtain ⟨p, h⟩ := R1 p'
       exact ⟨p, ⟨hunit p p' h, (hgen p p' h).2 hp'⟩, h⟩
-  have hpatch := GlobalTheory.T.snc_patch_at_each_component F X' _ e T Ω ξ' hξ' hξs hsm hsnc (_root_.GlobalTheory.CompanionTheory.Ar.SncBase.eq_of_regAt_eq_of_coordTie X' Ω ξ' F _ _ ht)
+  have hpatch := _root_.GlobalTheory.CompanionTheory.Ar.SncBase.Patch.exists_patch F X' _ e T Ω ξ' hξ' hξs hsm hsnc (_root_.GlobalTheory.CompanionTheory.Ar.SncBase.eq_of_regAt_eq_of_coordTie X' Ω ξ' F _ _ ht)
   refine ⟨N, x, X, ξ, f, hirr, hx, hf', fun p hp0 => ?_⟩
   obtain ⟨p', h⟩ := R2 p ((hchar p).1 hp0)
   show ∃ (A : Subalgebra ℚ Ω) (z : Fin e → A) (n : ℕ) (q : Ideal A),
@@ -240,7 +240,7 @@ theorem exists_base (hRes : ResK.ResKStatement) (E : Type) [Field E] [NumberFiel
   have hU := _root_.GlobalTheory.CompanionTheory.Ar.GenSmooth.smooth_genericFibre E H D l Xo c Y Ω K₁ J₁ y₁ M (h ≫ f₀) y₀ U hy₀ hsm htr
   have hnm : Tor.IsNormalScheme M.X := ((_root_.GlobalTheory.CompanionTheory.Ar.XR.component_whole_isIntegral_and_normal _ Ω M.ξ M.tie.gen M.all).2).1 hnorm
   obtain ⟨N, x, X, ξ, f₂, hall, htie, hf₂, hp⟩ := exists_patches_of_res hRes c.F M.X ((h ≫ f₀) ≫ Y.s)
-    (GlobalTheory.T.projective_model_over_base E H D l Xo c Y Ω _ _ M (h ≫ f₀)) hnm U hd D.dim hU _ hAb Ω M.ξ M.tie.gen
+    (_root_.GlobalTheory.CompanionTheory.Ar.ProjModel.isProjOver_comp_model E H D l Xo c Y Ω _ _ M (h ≫ f₀)) hnm U hd D.dim hU _ hAb Ω M.ξ M.tie.gen
   obtain ⟨K, _, J, _, y, M₁, g, hne, hdom₁, hn₁, hp₁⟩ := _root_.GlobalTheory.CompanionTheory.Ar.GeoModel.NormPatch.exists_normal_model Ω X ξ N x D.dim
     (f₂ ⁻¹' ((h ≫ f₀) ⁻¹' abLocus Y.t.G)) hall htie hp
   have hg₁ : M₁.ξ ≫ g = ξ := by
@@ -426,7 +426,7 @@ theorem exists_geo : Top.Given → Out.WeilSt → ∀ (E : Type) [Field E] [Numb
     rw [e]; simp
   have hβ : Function.Injective (algebraMap (𝓞 c.F) c.F) := RingOfIntegers.coe_injective
   have hsncA : SncPts A.ξ D.dim {p | Char0 A.ξ p ∧ g p.1 ∉ f₁ ⁻¹' abLocus Y.t.G} :=
-    GlobalTheory.T.snc_points_transfer_dominating Ω _ _ _ _ M₁.X A.X M₁.ξ A.ξ g D.dim _ M₁.all A.all M₁.tie A.tie hdom₂ hiso hsnc₁
+    _root_.GlobalTheory.CompanionTheory.Ar.PatchIso.sncPts_of_isoAt Ω _ _ _ _ M₁.X A.X M₁.ξ A.ξ g D.dim _ M₁.all A.all M₁.tie A.tie hdom₂ hiso hsnc₁
   have hi : GlobalTheory.CompanionTheory.Ar.Dominates A.ξ ξ₀ A.f i := by
     show A.ξ ≫ A.f = _
     rw [hf₂, ← Category.assoc, hgA]
@@ -463,7 +463,7 @@ theorem exists_geo : Top.Given → Out.WeilSt → ∀ (E : Type) [Field E] [Numb
           (hB.1 (sm τ)).symm)
   choose Δ hΔv hΔ1 hΔf using hdel
   let lmu : Lat A.ξ Ω := Lat.tens (fun τ => Cusp.detLat (Lat.patch S₀ (A.dR (sm τ)) fun p => A.HT p (sm τ)) (s τ)) fun _ => -1
-  have hmu : lmu.IsVB 1 ⊤ := (GlobalTheory.T.lattice_tensor_power_line_bundle A.X Ω A.ξ _ _ Set.univ (fun τ => GlobalTheory.T.det_lattice_line_bundle A.X Ω A.ξ A.Li _ r (A.Vgen (sm τ)) (s τ)
+  have hmu : lmu.IsVB 1 ⊤ := (GlobalTheory.T.lattice_tensor_power_line_bundle A.X Ω A.ξ _ _ Set.univ (fun τ => _root_.GlobalTheory.CompanionTheory.Ar.Cusp.DetLine.isVB_detLat A.X Ω A.ξ A.Li _ r (A.Vgen (sm τ)) (s τ)
     (hsl τ) (hss τ) (hrk τ ▸ hVB (sm τ))) _).1
   let Λ : Option S₁ → Lat A.ξ Ω := fun o => o.elim lmu Δ
   have hΛ : ∀ o, (Λ o).IsVB 1 ⊤ := by

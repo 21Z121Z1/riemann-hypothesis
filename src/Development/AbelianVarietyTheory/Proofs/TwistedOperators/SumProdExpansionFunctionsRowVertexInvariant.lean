@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PairPtsEqSum
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MovFn
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionSchrodingerModelFiniteIdempotent
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ActOChiRight
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TermDatumRowMoveLevelEdgeFactorsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TermDatumRowMoveLevelEdgeFactors
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.VacuumScalarsEqProductEdgeFactorsRowStatement
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links Formalism.L2.DIV
 open IsDedekindDomain NumberField MeasureTheory GlobalTheory.ChiGrid GlobalTheory.FunObj GlobalTheory.ExpansionInvariance GlobalTheory.RowVertexInv
@@ -200,7 +200,7 @@ theorem local_prod (S : GridChoice W U) {t : T} {Φ : G.Datum} (β : CosFam G t)
   rw [GlobalTheory.T.vacuum_scalars_eq_product_edge_factors_row S hμ hU j hj k hk c₁ c₂ h1 h2, ← Finset.prod_mul_distrib]
   refine Finset.prod_congr rfl fun w _ => ?_
   rw [GlobalTheory.RowMoveAt.rowAt_move S hU j hj k w.1 w.2 y]
-  exact GlobalTheory.T.termDatum_rowMove_level_edgeFactors S β hμ hq hc hU w j hj _ (hκ w) _ _
+  exact _root_.GlobalTheory.FlatRowMove.term_datum_move S β hμ hq hc hU w j hj _ (hκ w) _ _
 
 end GlobalTheory.RowVertexInv
 

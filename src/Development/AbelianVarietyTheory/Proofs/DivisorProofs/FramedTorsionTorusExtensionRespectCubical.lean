@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HRedFst
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralDataFramedTorsionPointTorusExtStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionPointFrameMulEqIntegralGeneratorsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisationSectionsExtendingPointsMultiplyStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalPointsAbelianPartsMultiplyStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalPointsAbelianPartsMultiply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralFramesRespectCubicalStructuresStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisationCubicalStructureGenericFibreStatement
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing
@@ -45,7 +45,7 @@ theorem cube_of_liesOver : ∀ (V : Type) [CommRing V] [IsDomain V] [IsLocalRing
     (hS S).1 (hS S).2.1 (hS S).2.2.1 (hS S).2.2.2
   have hm : ∀ S T S', x S' = x S * x T → h S' = h S * h T ∧ (g' S').b = (g' S).b * (g' T).b := fun S T S' hx => by
     have a := GlobalTheory.T.uniformisation_sections_extending_points_multiply V hV D A G hG U (x S) (x T) (h S) (h T) (h S') (hE S) (hE T) (hx ▸ hE S')
-    exact ⟨a, GlobalTheory.T.formal_points_abelian_parts_multiply V hV D A G hG U (h S) (h T) (g' S) (g' T) (g' S') (hF S) (hF T) (a ▸ hF S')⟩
+    exact ⟨a, _root_.GlobalTheory.Poinc.Sep.FormalMul.b_mul V hV D A G hG U (h S) (h T) (g' S) (g' T) (g' S') (hF S) (hF T) (a ▸ hF S')⟩
   have m₀ := hm ∅ ∅ ∅ (by rw [hx₀, _root_.mul_one])
   have m₁ := hm _ _ _ hx₁
   have m₂ := hm _ _ _ hx₂

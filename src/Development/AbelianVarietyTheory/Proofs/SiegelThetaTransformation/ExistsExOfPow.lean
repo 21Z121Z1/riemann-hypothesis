@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IMemSiegel
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SchwartzBruhatInnerProductSelfNonnegBoundsStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SchwartzBruhatInnerProductSelfNonnegBounds
 open Matrix Complex GlobalTheory.SW
 open scoped ComplexConjugate Real
 
@@ -374,7 +374,7 @@ theorem vacuum (κ ι : Type) [Fintype κ] [Fintype ι] [DecidableEq ι] (A : Ad
       rw [e] at h1 h2
       rw [← h2, fac, h1]
       simp [pr_zero_left, pr_zero_right, ex_zero]
-  obtain ⟨him, hre, hsup, -⟩ := GlobalTheory.T.schwartzBruhatInnerProduct_self_nonneg_bounds ℚ κ ι _ v hR hlev
+  obtain ⟨him, hre, hsup, -⟩ := _root_.GlobalTheory.SW.ip_self_nonneg_and_bounds ℚ κ ι _ v hR hlev
   have hpos : 0 < (ip v v).re := by
     refine lt_of_le_of_ne hre fun h => ?_
     have := hsup x₀

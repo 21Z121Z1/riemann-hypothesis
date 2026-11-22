@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.AevalEqZeroOfMemCon
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsChowFormOfHomogeneousPrimeKrullDimStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdealQuotientHilbertPolyConeIdealEqFieldDegreeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FieldDegreeLeChowFormDegreeAlgebraicPoint
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChowFormDegreeLeFieldDegreeAlgebraicPointStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChowFormDegreeLeFieldDegreeAlgebraicPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdealQuotientHilbertPolyMapBaseChange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPrimeMapRationalFunctionsGenericLinearFormNotMStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPrimeSaturationGenericHyperplaneSectionStatement
@@ -126,7 +126,7 @@ theorem degree_eq_coeff (D : ℕ) : ∀ (K : Type) [Field K] [CharZero K] (P : I
   | zero =>
     intro K _ _ P _ hP δ f h
     obtain ⟨y, j, hy, rfl⟩ := exists_eq_coneIdeal hP h
-    rw [GlobalTheory.T.idealQuotientHilbertPoly_coneIdeal_eq_field_degree K N y j hy, le_antisymm (GlobalTheory.T.chowForm_degree_le_field_degree_algebraic_point K N δ y j f hy h) (_root_.GlobalTheory.CompHt.PointLow.finrank_le_of_isChowFormInt K N δ y j f hy h)]
+    rw [GlobalTheory.T.idealQuotientHilbertPoly_coneIdeal_eq_field_degree K N y j hy, le_antisymm (_root_.GlobalTheory.CompHt.PointUp.le_finrank_of_isChowFormInt K N δ y j f hy h) (_root_.GlobalTheory.CompHt.PointLow.finrank_le_of_isChowFormInt K N δ y j f hy h)]
     simp
   | succ D ih =>
     intro K _ _ P hp hP δ f h

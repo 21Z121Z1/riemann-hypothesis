@@ -206,7 +206,7 @@ theorem exists_arc_secZ' [Algebra c.F ℂ⸨X⸩]
       exact Ideal.mem_span_singleton_self _))
   obtain ⟨T', hT'⟩ := GlobalTheory.ArcQZ.hasSum_evR_arc_natural h1 h2 E H Dw l Xo c σ _ _ Y _ χ W _ _ Uw.F Ha y e th Θ z hev halg hover
     hmono hpush hth hy he
-  refine ⟨y, max T (max T' Ha.T), s, d, GlobalTheory.T.boundaryExtension_independent_of_model E H Dw l Xo c _ _ Z _ _ Y _ _ _ y
+  refine ⟨y, max T (max T' Ha.T), s, d, _root_.GlobalTheory.CuspFrom.bdExt_of_bdExt E H Dw l Xo c _ _ Z _ _ Y _ _ _ y
     (RingHom.ext fun t => (halg t).symm) hbd, hd, fun w hw => ?_⟩
   simp only [max_lt_iff] at hw
   obtain ⟨hxw, hlie⟩ := hflow w hw.1

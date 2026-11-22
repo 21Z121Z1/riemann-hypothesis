@@ -11,9 +11,9 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Ds
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PureTensorOSmul
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCoreCompatibleAdelicDataCharacters
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsReferenceTupleThetaComparisonNormalisedDatStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsReferenceTupleThetaComparisonNormalisedDat
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsConstantsThetaComparisonAllTuples
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCoreConstantsBaseSolutionEquivariantStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCoreConstantsBaseSolutionEquivariant
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ThetaComparisonDataIndependentOfAlgebraicForms
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsGeometricHalfRealisationGeometricAction
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GeometricHalfCoreFormsUniformisationIntegral
@@ -30,10 +30,10 @@ theorem exists_geoHalf : GlobalTheory.Published.CuspRapidDecay → ∀ (D : D7) 
   intro hC D G _ _ Pl0 T0 A T _ R hvol hJ hcore halg hpb hpre hval hfr hLL hfin hQ hstd hn
   obtain ⟨dict, mu, chiW, x₀, htie, hcore₁⟩ := _root_.GlobalTheory.RealGeo.exists_tieIn_reCore D G Pl0 T0 A T R hvol hJ hcore halg hpre.lev hval hfr
   have hio : IoExt R := GlobalTheory.IoExtremal.ioExt D G Pl0 T0 A _ R hpre.lev hpre.fam hpre.models hpre.thP
-  obtain ⟨O, hO⟩ := GlobalTheory.T.exists_referenceTuple_thetaComparison_normalisedData D G Pl0 T0 A (reCore T dict mu chiW x₀ T.cE) R (kapTop D) (v0 R) hpre hLL htie hpb hQ hstd
+  obtain ⟨O, hO⟩ := _root_.GlobalTheory.RefPins.exists_omPins D G Pl0 T0 A (reCore T dict mu chiW x₀ T.cE) R (kapTop D) (v0 R) hpre hLL htie hpb hQ hstd
   choose cc hcc0 hcc using fun i => _root_.GlobalTheory.RealGeo.exists_const_oneMapOf_all D G Pl0 T0 A (reCore T dict mu chiW x₀ T.cE) R (kapTop D) (v0 R) O hpre htie
     hpb hfin hQ hio i (hstd i) (hO i)
-  obtain ⟨cE, hcE, htie₂, hO₂, hF⟩ := GlobalTheory.T.exists_core_constants_base_solution_equivariant D G Pl0 T0 A (reCore T dict mu chiW x₀ T.cE) R (kapTop D) (v0 R) O cc
+  obtain ⟨cE, hcE, htie₂, hO₂, hF⟩ := _root_.GlobalTheory.RealGeoConst.exists_constants D G Pl0 T0 A (reCore T dict mu chiW x₀ T.cE) R (kapTop D) (v0 R) O cc
     hpre.lev htie hpb hO hcc0
   obtain ⟨B, hκ, hv, hFB, hpre₂, hchi⟩ := _root_.GlobalTheory.RealGeo.exists_geoHalf_geoR D G Pl0 T0 A (reCore T dict mu chiW x₀ cE) R (kapTop D) (v0 R) O
     (fun _ => 1) hpre htie₂ hO₂ hF

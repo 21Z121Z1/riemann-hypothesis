@@ -13,8 +13,11 @@ import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZ
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisOSumSmul
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsRepSuppSplit
 import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilDatumFinitePairVacuumAlgebraicCombinationStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealPointActsOnVacuumByAlgebraicScalarStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilDatumFinitePairVacuumAlgebraicCombination
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsVacuumMovedThetaVacuum
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LengthPosOfPosDef
+import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.CoeSelfDualLatticeInFrameCoordinatesEq
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealPointActsOnVacuumByAlgebraicScalar
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
 
 section
@@ -43,8 +46,8 @@ theorem rational_vacuum_eq_smul_algebraic_combination : ∀ {D : D7} {T : Type} 
     show (GlobalTheory.Grid.ofSgn true A) ((GlobalTheory.Grid.ofSgn true A).symm (γ * a)) ∈ GfC A
     rw [MulEquiv.apply_symm_apply]
     exact hfa
-  obtain ⟨κ₁, F, hF, hκ₁⟩ := GlobalTheory.T.weilDatum_finite_pair_vacuum_algebraic_combination hI.isVac hsdS hI.rigW.1 cS cT hom _ hx _ hfa'
-  obtain ⟨C, -, hC⟩ := GlobalTheory.T.realPoint_acts_on_vacuum_by_algebraicScalar hX t γ hγ a ha γ' hγ' a' ha' hfa hfa'
+  obtain ⟨κ₁, F, hF, hκ₁⟩ := _root_.GlobalTheory.FinWeilAlg.om_vac_algComb hI.isVac hsdS hI.rigW.1 cS cT hom _ hx _ hfa'
+  obtain ⟨C, -, hC⟩ := _root_.GlobalTheory.RealScalarAlg.realScalar hX t γ hγ a ha γ' hγ' a' ha' hfa hfa'
   have e1 : X.ω t (γ * a, γ' * a') X.vac = κ₁ • F := hκ₁
   have e2 : X.ω t (γ * a, γ' * a') X.vac = C • X.ω t (γ, γ') X.vac := by
     rw [show ((γ * a, γ' * a') : GA D A × GA D WW) = (γ, γ') * (a, a') from rfl, map_mul, Module.End.mul_apply, hC,

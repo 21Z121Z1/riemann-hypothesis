@@ -11,7 +11,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IoEquivariant
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsBasisDD
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsBasisMul
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsAlgClosedTiltFieldAndValuationRing
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemRangeOfFrobeniusEquationCyclotomicFixedStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemRangeOfFrobeniusEquationCyclotomicFixed
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CrystallineQuotientTensorDual
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitForOfTie
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SumPart
@@ -69,6 +69,6 @@ theorem descends {P : LocPrime l} {AI : LocAinf l P} {K : FinExt l} {s : ℕ} {L
     {W : LocWach (P.PD K) ↥LL.1 ↥(OL LL) (P.v LL) (Module.finrank ℚ_[l] ↥(K0 K))}
     (E : EtSit P AI K s LL h W) : Descends E.tie := by
   intro ι _ M w hg hw i
-  exact GlobalTheory.T.mem_range_of_frobeniusEquation_cyclotomicFixed l P AI K s LL h W E ι M 0 w hg (fun i => by simpa using hw i) i
+  exact _root_.GlobalTheory.FrobDescent.mem_range_of_fixed l P AI K s LL h W E ι M 0 w hg (fun i => by simpa using hw i) i
 
 end GlobalTheory.WachTensor

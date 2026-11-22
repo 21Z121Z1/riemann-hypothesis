@@ -7,7 +7,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFiniteSem
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothSectionsAffineFlat
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AbelianSchemeBaseChangeExists
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsUniqueConstantOfCompatibleFamilyStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductFirstCohomologyComparisonStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductFirstCohomologyComparison
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsPullOWOverComp
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatCocycleTensorRepresentationStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CocycleTensorCoboundaryClassZeroStatement
@@ -177,7 +177,7 @@ theorem axOSt : DescentSt → LowSt → SysBCSt → SteinSt → AxOSt := by
   have := hA2.proper
   have := hA.smooth
   obtain ⟨P, _, _, ⟨S⟩⟩ := _root_.GlobalTheory.CompanionTheory.Axis.exists_finite_sys_of_separated_quasiCompact R A.left A.hom inferInstance inferInstance
-  obtain ⟨Q, _, S', m, hm, hfst, hsnd⟩ := GlobalTheory.T.product_first_cohomology_comparison R A P S
+  obtain ⟨Q, _, S', m, hm, hfst, hsnd⟩ := _root_.GlobalTheory.CompanionTheory.Axis.exists_boxSys R A P S
   have hU := ust_abelian hD hL hB hS R A g hA hg P S
   have hb := (hL _ _ _ _ _ (resSys A.hom S) (hD R _ A.hom inferInstance P S)).1
   have hb' := (hL _ _ _ _ _ (resSys (A ⊗ A).hom S') (hD R _ (A ⊗ A).hom inferInstance Q S')).1

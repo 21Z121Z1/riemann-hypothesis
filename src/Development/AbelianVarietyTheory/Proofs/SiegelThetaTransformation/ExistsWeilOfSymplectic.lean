@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IMemSiegel
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsUnitarySiegelThetaTransformationLawStandarStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsUnitarySiegelThetaTransformationLawStandar
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SiegelThetaTransformationLawMul
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SymplecticEqParabolicJParabolicJParabolic
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SiegelThetaTransformationSiegelParabolic
@@ -35,7 +35,7 @@ theorem exists_weil_of_symplectic :
   have w₁ := _root_.GlobalTheory.SW.Parab.trans_parabolic κ ι p₁ hκ h₁ l₁
   have w₂ := _root_.GlobalTheory.SW.Parab.trans_parabolic κ ι p₂ hκ h₂ l₂
   have w₃ := _root_.GlobalTheory.SW.Parab.trans_parabolic κ ι p₃ hκ h₃ l₃
-  have wJ := GlobalTheory.T.exists_unitary_siegelThetaTransformationLaw_standardJ κ ι hκ
+  have wJ := _root_.GlobalTheory.SW.FourierJ.exists_trans_J κ ι hκ
   have a₁ := mul_mem h₁ hJ
   have a₂ := mul_mem a₁ h₂
   have a₃ := mul_mem a₂ hJ

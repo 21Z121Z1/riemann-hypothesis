@@ -9,12 +9,12 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsThetaSections
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IteratedDerivBoundGaussianGrowthStatement
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.IntegralFlagEmbeddingCriterion
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PolarizedDataFieldExtension
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SectionSupNormFieldExtensionStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SectionSupNormFieldExtension
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ThetaFunctionArchimedeanFrame
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsIntegralJetBasis
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.ThetaDerivativeBoundStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.ThetaDerivativeBound
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsThetaSupBoundLogMean
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ThetaMultiplierQuadraticCharacterStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ThetaMultiplierQuadraticCharacter
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField MeasureTheory
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi
 open GroundTheory.Heights₂.Heights TensorProduct
@@ -159,7 +159,7 @@ theorem fn_ne_zero {H : Host E} {L : Type} [Field L] [NumberField L] (D : PPData
 theorem theta_on_ext {H : Host E} {L L' : Type} [Field L] [NumberField L] [Field L'] [NumberField L'] [Algebra L L']
     (D : PPData H L) (D' : PPData H L') (e : D.Ext D') (th : Out.H0 D.t.PP.L 1) {Φ : ℝ} (hth : D.HasTheta th Φ)
     (hg : D'.g = D.g) (σ' : L' →+* ℂ) (a' : D'.Frame σ') : ∃ θ, a'.IsTheta 1 θ ∧ θ ≠ 0 := by
-  obtain ⟨s', -, hs'⟩ := GlobalTheory.T.section_sup_norm_field_extension E H L D L' D' e 1 th
+  obtain ⟨s', -, hs'⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Sl.ExtTrans.exists_section E H L D L' D' e 1 th
   obtain ⟨-, hall⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Sl.frames_main E H L' D' σ'
   obtain ⟨h1, h2, -⟩ := hall a'
   obtain ⟨θ, hθ, -⟩ := h1 1 s'
@@ -231,8 +231,8 @@ theorem core_applied {H : Host E} {L : Type} [Field L] [NumberField L] (D : PPDa
     have σ : L →+* ℂ := (IsAlgClosed.lift : L →ₐ[ℚ] ℂ).toRingHom
     obtain ⟨a, f, v, hf, -, hvec, hv0, -⟩ := hdata σ
     obtain ⟨θ, hθ1, hθ0⟩ := hθ σ a
-    obtain ⟨u1, u2, u3, -⟩ := GlobalTheory.T.theta_multiplier_quadratic_character E H L D σ a
-    obtain ⟨F, hF, hvan, hne⟩ := GlobalTheory.T.theta_derivative_bound a u1 u2 u3 θ v n' i hθ1 hθ0 hv0 hi
+    obtain ⟨u1, u2, u3, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Sl.Unimod.frame_unimodular E H L D σ a
+    obtain ⟨F, hF, hvan, hne⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Sl.Jump.lefschetz_direction a u1 u2 u3 θ v n' i hθ1 hθ0 hv0 hi
     obtain ⟨c, hc⟩ := hspan σ a f hf F hF
     have hfun : (fun τ : ℂ => F (τ • v)) = fun τ : ℂ => ∑ j, c j * f j (τ • v) := by
       funext τ

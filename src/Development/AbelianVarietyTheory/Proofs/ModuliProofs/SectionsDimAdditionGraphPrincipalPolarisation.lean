@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverIffIsPro
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsHeckeQuotientTriple
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SectionsHaveFiniteDimensionInvarianceIsomorphism
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PrincipalPolarisationVolumeFormSymmetricAmple
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SectionsCountSqEqDetFormOnTorsionStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SectionsCountSqEqDetFormOnTorsion
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SqIsPowGrp
 
 set_option autoImplicit false
@@ -210,7 +210,7 @@ theorem sectionsDim_additionGraph_principalPolarisation : Out.Laws → Out.Laws2
       push_cast at h h'
       linear_combination h' - h
     · exact ⟨2, Nat.prime_two, h⟩
-  obtain ⟨δ, -, hδ, hdet⟩ := GlobalTheory.T.sections_count_sq_eq_det_form_on_torsion laws laws₂ K Q M s l hl hlK hM hamp hsymM hform
+  obtain ⟨δ, -, hδ, hdet⟩ := _root_.GlobalTheory.SectionCount.sq_vol_eq_det laws laws₂ K Q M s l hl hlK hM hamp hsymM hform
   have hsq : δ ^ 2 = ((3 * N ^ 2) ^ P.g) ^ 2 := by
     refine eq_of_forall_zmod hl fun j => ?_
     obtain ⟨pt, ⟨h₀, h₁, h₂⟩, -⟩ := htor (l ^ j) (by rw [Nat.cast_pow]; exact pow_ne_zero _ hlK)

@@ -64,6 +64,6 @@ end Split
 theorem UpperTheory.V.Z.Mult.cpUniq :
     UpperTheory.V.Z.Mult.CpUniq := by
   intro E _ _ _ hU n hn σ hσ w hw τ τ' h h'
-  obtain ⟨e⟩ := (GlobalTheory.T.exists_unique_admissible_localComponent_definiteUnitary E hU n hn σ hσ w).2 (toUL hw τ) (toUL hw τ') (isCompU_toUL hw h) (isCompU_toUL hw h')
+  obtain ⟨e⟩ := (_root_.GlobalTheory.BCT.LocCompU.exists_unique_locComp E hU n hn σ hσ w).2 (toUL hw τ) (toUL hw τ') (isCompU_toUL hw h) (isCompU_toUL hw h')
   have e' := equivOfUL hw e
   exact ⟨fun B hB => GlobalTheory.PrinSat.hasSatGL_of_equiv e'.symm hB, fun f => trc_of_equiv e' _ f⟩

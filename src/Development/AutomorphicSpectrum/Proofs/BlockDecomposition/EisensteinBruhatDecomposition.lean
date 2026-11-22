@@ -1,7 +1,7 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.WeilSiegelTheta.EisCellsDefs
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsBlockMatrixTwoByTwoFinEq
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SpanRangeComplementTransformStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SpanRangeComplementTransform
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SameSpanTransferMatricesStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianBlockSolutionExists
 
@@ -134,7 +134,7 @@ theorem bruhat : Bruhat := by
   have hrep' := repMat_unitary σ hσ b' (a U') hb' (ha U').1
   obtain ⟨p', hp', hC', hD'⟩ := factor_of_siegel hg hrep'.1 hq rfl (repMat_eq σ b' (a U'))
   have hUU : U' = U := by
-    rw [← (hc U').2, ← GlobalTheory.T.span_range_complement_transform (hr U') (c U') (a U') p' (ha U') hp', ← hC']
+    rw [← (hc U').2, ← _root_.GlobalTheory.CompanionTheory.BruhatCell.span_range_lowerLeft (hr U') (c U') (a U') p' (ha U') hp', ← hC']
   subst hUU
   have hrep := repMat_unitary σ hσ b (a U) hb (ha U).1
   obtain ⟨p, hp, hC, hD⟩ := factor_of_siegel hg hrep.1 hS rfl (repMat_eq σ b (a U))

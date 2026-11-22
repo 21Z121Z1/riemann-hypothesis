@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFactsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFacts
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SelfDualIffLatticeVolumeAndPlancherel
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedValuationParitySignCharacterKernelNorm
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FourierMatch
@@ -46,7 +46,7 @@ theorem collapse : ∀ (F E : Type) [NontriviallyNormedField F] [NontriviallyNor
   have := U.charZero; have := U.ultraF; have := U.lcF
   haveI := GlobalTheory.FourKFub.secondCountableK A
   obtain ⟨_, _, _, _, -⟩ := GlobalTheory.JR.EtMeas.top_facts F A.K
-  obtain ⟨-, -, hnd, -, -, -, -, -, -, hOKo, hOKc, R, hR⟩ := GlobalTheory.T.etaleHermitianPair_structure_facts F E A
+  obtain ⟨-, -, hnd, -, -, -, -, -, -, hOKo, hOKc, R, hR⟩ := _root_.GlobalTheory.JR.EtFacts.main F E A
   have hψc := GlobalTheory.FourKFub.psiK_continuous A ψ hψ
   have hηm := measurable_etaK A
   have hφc : Continuous φ' := hφ.1.continuous

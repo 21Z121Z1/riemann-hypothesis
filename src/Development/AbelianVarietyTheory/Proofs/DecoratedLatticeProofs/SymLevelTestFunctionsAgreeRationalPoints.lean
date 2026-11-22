@@ -1,10 +1,11 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PhiTopAgree
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CompletionChainLatticeEntriesAgree
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ResiduesOfCompletionAtPrimeWithUniformizerStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SymmetricLevelChainPatternIteratedStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ResiduesOfCompletionAtPrimeWithUniformizer
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SymmetricLevelChainPatternIterated
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.OnesRepresent
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IteratedDepthOneLevelCharacterClosedForm
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IteratedLevelPatternToFramePlacesStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IteratedLevelPatternToFramePlaces
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IteratedLevelPatternOfFramePlaces
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SymLevelCharacterByResidueCharacter
 open NumberField IsDedekindDomain MeasureTheory ValuativeRel Matrix Formalism.BasicNotions Formalism.HermitianLatticesTheory Formalism.L2.DIV Formalism.L2.Col GlobalTheory.SplitWeil GlobalTheory.RootEx GlobalTheory.StepData GlobalTheory.SymChain GlobalTheory.SymBridge
@@ -19,7 +20,7 @@ theorem places_iff_pattern : ∀ (F : Type) [Zero F] [One F] (κ ρ s τ j : ℕ
       (∀ p p', κ + s + 1 ≤ p' → p' < κ + s + 1 + j * τ → p < κ + s + 1 + j * τ →
         (p' - (κ + s + 1)) / τ < (p - (κ + s + 1)) / τ → R p p' = 0)) := by
   intro F _ _ κ ρ s τ j R
-  exact ⟨GlobalTheory.T.iteratedLevelPattern_to_framePlaces F κ ρ s τ j R, _root_.GlobalTheory.patOfPlaces F κ ρ s τ j R⟩
+  exact ⟨_root_.GlobalTheory.PatPlaces.pattern_to_places F κ ρ s τ j R, _root_.GlobalTheory.patOfPlaces F κ ρ s τ j R⟩
 
 theorem symmetricLevelCharacter_rationalPoint_eq_residue : ∀ (E K k : Type) [Field E] [NumberField E] [StarRing E] [Field K] [Field k] [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] (P : HeightOneSpectrum (𝓞 E)) (q : ℕ) (ι : E →+* k) (σ₀ : K →+* ℂ) (ψ₀ : AddChar (𝓞 E ⧸ P.asIdeal) K) (χ : ℕ → (𝓞 E ⧸ P.asIdeal)ˣ →* Kˣ) (s κ : ℕ) (S : SymData k s κ), Comparison₂ P q ι σ₀ ψ₀ χ S → ∀ (M : ℕ → ℕ → E), (∀ p p', p < κ + s + 1 → p' < κ + s + 1 → IntAt P (M p p')) → ∀ (g : S.P.J), (g : GL (Fin κ ⊕ Fin (s + 1)) k).val = Matrix.of (fun a b => ι (M (GlobalTheory.IndefiniteRowSideFullHecke.FramePositiveSum.framePos κ (s + 1) a) (GlobalTheory.IndefiniteRowSideFullHecke.FramePositiveSum.framePos κ (s + 1) b))) → ((S.P.lam g : ℂˣ) : ℂ) = σ₀ (ψ₀ (redP P (∑ i ∈ Finset.range (κ - 1), M i (i + 1) + ∑ i ∈ Finset.range (κ + s + 1 - κ - 1), M (κ + i) (κ + i + 1)))) := _root_.GlobalTheory.symLevel_lam_residue
 
@@ -103,7 +104,7 @@ theorem phiAgree : ∀ (E K k : Type) [Field E] [NumberField E] [StarRing E] [Fi
   intro τ j c h n' c' n c₂ hn' hn hc' hc₂ e' e ho' ho x
   have hent := _root_.GlobalTheory.SymBridge.EntryBases.entries_agree E K k P q ι σ₀ ψ₀ χ s κ S hT τ j c h n' c' n c₂ hn' hn hc' hc₂ e' e ho' ho x
   subst c' c₂
-  obtain ⟨hres1, hres2, hres3, hq0, -, -, -, -⟩ := GlobalTheory.T.residues_of_completionAtPrimeWithUniformizer E k P q ι S.ϖ hT.compl S.unif
+  obtain ⟨hres1, hres2, hres3, hq0, -, -, -, -⟩ := _root_.GlobalTheory.SymBridge.ComplRes.residues E k P q ι S.ϖ hT.compl S.unif
   have hint : ∀ a : E, ι a ∈ 𝒪[k] ↔ IntAt P a := hT.compl.int
   have hNc : n + c = κ + s + 1 + j * τ + τ := by subst hn; rw [← h]; ring
   set M := LocE.entB q κ (c + 1) n' c n (fun i => i + 1) (fun i => i + 1) x with hM
@@ -134,7 +135,7 @@ theorem phiAgree : ∀ (E K k : Type) [Field E] [NumberField E] [StarRing E] [Fi
   have hzs : ∀ p, p < κ + s + 1 + j * τ → ∃ a : Ix (Fin κ ⊕ Fin (s + 1)) (Fin τ) j, zPos a = p := fun p hp => by
     obtain ⟨eqv, he⟩ := zPos_equiv κ (s + 1) τ j; exact ⟨eqv.symm ⟨p, hp⟩, by rw [← he]; simp⟩
   have hdetG : G.det = ι (Matrix.of fun p p' : Fin (κ + s + 1 + j * τ) => M p p').det := det_zPos ι κ (s + 1) τ j M
-  have hpat := GlobalTheory.T.symmetricLevelChain_pattern_iterated k s κ S (Fin τ) j
+  have hpat := _root_.GlobalTheory.SymChain.pattern_iter k s κ S (Fin τ) j
   have htr : (∀ a b : Ix (Fin κ ⊕ Fin (s + 1)) (Fin τ) j, IntAt P (M (zPos a) (zPos b))) → ∀ a b : Ix (Fin κ ⊕ Fin (s + 1)) (Fin τ) j,
       (valuation k (G a b - (1 : Matrix _ _ k) a b) < 1 ↔ redP P (M (zPos a) (zPos b)) = if a = b then 1 else 0) := by
     intro hI a b

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.UnipVal
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicIsNonarchimedeanLocalField
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompactOpenNormClosedBallQuadraticStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompactOpenNormClosedBallQuadratic
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuadExtTopology
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyConstantAddChar
 
@@ -20,7 +20,7 @@ theorem sc_eventually_eq_one : ∀ (F : Type) [Field F] [CharZero F] [ValuativeR
     ∀ᶠ z in nhds (1 : E), sc F χ m z = 1 := by
   intro F _ _ _ _ _ E _ _ _ _ c δ hE m χ hχ
   obtain ⟨hfd, htr, hinv, ht2, -, hN, -, -⟩ := _root_.GlobalTheory.quadExt_topology F E c δ hE
-  obtain ⟨L, hL, hLc, hLo⟩ := GlobalTheory.T.exists_compactOpen_normClosedBall_quadratic F E c δ hE 1
+  obtain ⟨L, hL, hLc, hLo⟩ := _root_.GlobalTheory.NormBall.exists_normBall F E c δ hE 1
 
   have h0 : {t : Eˣ | ‖(χ t : ℂ) - 1‖ < 1 / 2} ∈ 𝓝 (1 : Eˣ) :=
     (isOpen_lt (by fun_prop) continuous_const).mem_nhds (by simp)

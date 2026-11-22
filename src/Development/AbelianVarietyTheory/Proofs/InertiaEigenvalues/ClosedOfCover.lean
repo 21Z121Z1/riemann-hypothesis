@@ -19,11 +19,11 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsHodgeBas
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsHodgeTateIffDiagonalAdaptedBasis
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HodgeTateOperatorPowEqSum
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MultisetEqOfPowerSumsZpowEq
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaConjBoundedCompatibleBreuilKisinFramesStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaConjBoundedCompatibleBreuilKisinFrames
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilKisinPreframeBoundedPoles
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsDeRhamFrameLimitLatticeBreuilKisinTowerStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LayerDdRBoundsStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DeRhamCrystallineOfLatticeReadsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DeRhamCrystallineOfLatticeReads
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSemistableLatticeInMatrixAlgebraLayer
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TracePowEqAlongLatticeTowerCover
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.WeaklyAdmissibleFiltrations Formalism.MainNotions.N TensorProduct PowerSeries GlobalTheory.Prism GlobalTheory.BKReal GlobalTheory.Per GlobalTheory.BSP GlobalTheory.MemLoc GlobalTheory.Pst GlobalTheory.BKLim GlobalTheory.Cong Matrix
@@ -187,7 +187,7 @@ theorem closed_of_cover : ∀ (l : ℕ) [Fact l.Prime] (K L₀ : FinExt l) (P : 
   choose F hFdr hFcr using hfr
   obtain ⟨F₀, hF₀dr, hF₀cr, rr, hlink⟩ := GlobalTheory.T.exists_deRhamFrame_limitLattice_breuilKisinTower l K bk τp hτp Cv.d N Cv.ρ Cv.tw F hFdr
   have hdr0 : Formalism.MainNotions.N.IsDR (P.PD K) (qRep Cv.ρ) := _root_.GlobalTheory.BKLim.isDR_of_frame_isDR l K bk τp hτp P AI T N Cv.d Cv.ρ F₀ hF₀dr
-  have hread := GlobalTheory.T.deRham_crystalline_of_lattice_reads l K L₀ P AI T a Cv.d Cv.ρ r Cv.b Cv.e Cv.reads L r' R hL hR hr'
+  have hread := _root_.GlobalTheory.ReadPass.isDR_isCrys_of_reads l K L₀ P AI T a Cv.d Cv.ρ r Cv.b Cv.e Cv.reads L r' R hL hR hr'
   have hdrR : Formalism.MainNotions.N.IsDR (P.PD K) R := hread.1 hdr0
   refine ⟨hdrR, ?_, fun hcr => hread.2 (GlobalTheory.T.isCrys_of_crystallineBreuilKisinFrame l K bk τp hτp P AI T N Cv.d Cv.ρ F₀
     (hF₀cr fun m => hFcr m ((_root_.GlobalTheory.LayerSst.main l K L₀ P AI T a Cl _ (Cv.tw.ρ' m) (Cv.lay m)).2 hcr)))⟩
@@ -217,7 +217,7 @@ theorem closed_of_cover : ∀ (l : ℕ) [Fact l.Prime] (K L₀ : FinExt l) (P : 
   obtain ⟨H0, -⟩ := GlobalTheory.T.exists_hodge_basis_deRham_lattice l K P AI T C hC (bk.ev bk.E) hξ _ Cv.ρ hdr0
   obtain ⟨Y0, -, hY0, -⟩ := _root_.GlobalTheory.BKLim.pre_bounded_poles l K bk τp hτp N _ _ F₀.toPre
   obtain ⟨U, hUY, hUV⟩ := (GlobalTheory.T.adaptedBasis_theta_galoisFixed_poles l K bk τp hτp C hCd N _ _ F₀ Y0 hF₀dr hY0 H0).1 g z hz
-  obtain ⟨Bd, hBd⟩ := GlobalTheory.T.theta_conj_bounded_compatible_breuilKisin_frames l K bk τp hτp N
+  obtain ⟨Bd, hBd⟩ := _root_.GlobalTheory.HTBound.bounded_compat l K bk τp hτp N
   have hBdm := fun (m n : ℕ) => hBd N Cv.d (Cv.tw.d' m) n _ _ F₀ (F m) Y0 (Ym m) rfl hY0 (hYm m) g U (U' m) hUY (hU'Y m)
   have hUb : ∀ i j, ‖U i j‖ ≤ Bd := (hBdm 0 0).1
   have hU'b : ∀ m i j, ‖U' m i j‖ ≤ Bd := fun m => (hBdm m 0).2.1

@@ -3,10 +3,12 @@ import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.SegmentDeri
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.MirabolicDerivatives.SegmentCuspLines.ProdIrrFiniteLength
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.MirabolicDerivatives.UnipotentDerivatives.DerUnipLeUnipB
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicTwistedKernelDerivativeZeroStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicTwistedKernelDerivativeZero
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedJacquetPhiMinusEquiv
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RestrictionMirabolicTwistedKernel
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviIrreducibleTensorDecompositionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviIrreducibleTensorDecomposition
+import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.FineJacquetModules.SegDefs
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.SegmentRepresentation
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SupercuspidalSupportUniqueGL
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IrreducibleSubquotientParabolicProductTwoFiniteL
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.JacquetModuleFiniteLength
@@ -33,7 +35,7 @@ theorem exists_proj (ψ : AddChar k Circle) (n : ℕ) : ∀ (j : ℕ) (τ : MRep
         twKer (iterPhi k ψ j τ).ρ (MirUin k n) 1
   | 0, τ => ⟨LinearMap.id, Function.surjective_id, fun _ _ => rfl, by
       rintro _ ⟨y, hy, rfl⟩
-      exact (GlobalTheory.T.mirabolic_twisted_kernel_derivative_zero k ψ n τ.V τ.ρ).ge hy⟩
+      exact (_root_.GlobalTheory.CompanionTheory.BZMir.twKer_MirUin_eq_derUnipM k ψ n τ.V τ.ρ).ge hy⟩
   | j + 1, τ => by
     obtain ⟨p, hp, hq, hk⟩ := exists_proj ψ n j (MRep.phiM k ψ τ)
     have hnm : n ≤ n + j := Nat.le_add_right n j
@@ -302,7 +304,7 @@ theorem exists_tensor (hA : GlobalTheory.Published.IrreducibleAdmissibleGL) {n t
       Nonempty (Representation.Equiv (σ 0).rep.ρ A) := by
   obtain ⟨Y, _, _, τ, hτi, hτs, hP⟩ := exists_irr_block T hT A hAi h
   have hτsm : IsSmooth τ := hτs.isSmooth hs
-  obtain ⟨σ, ⟨φ⟩⟩ := GlobalTheory.T.levi_irreducible_tensor_decomposition hA (dd n t) (⟨Y, τ, hτsm, hτi⟩ : IrrRep _)
+  obtain ⟨σ, ⟨φ⟩⟩ := _root_.GlobalTheory.CompanionTheory.LeviTensor.nonempty_equiv_piTensor hA (dd n t) (⟨Y, τ, hτsm, hτi⟩ : IrrRep _)
   have h3 : IsSubquotient A ((piTensor fun a => (σ a).rep.ρ).comp (iota n t) :
       Representation ℂ (GL (Fin n) k) _) :=
     hP.trans (GlobalTheory.LocGL.SupportUnique.isSubquotient_comp

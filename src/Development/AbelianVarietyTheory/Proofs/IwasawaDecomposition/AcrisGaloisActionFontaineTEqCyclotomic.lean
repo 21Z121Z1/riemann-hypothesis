@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Acris0Torsio
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OneAddMulDerivativeTrunc
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AcrisToBdRPlusInjective
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLogTeichmullerAcrisEqMuMulUnit
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AcrisLogTeichmullerUniqueGaloisFrobeniusBdRStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AcrisLogTeichmullerUniqueGaloisFrobeniusBdR
 import Development.AbelianVarietyTheory.CrystallinePeriods.RingBasics
 
 noncomputable section
@@ -25,8 +25,8 @@ theorem logA_mul {j : Per.Acris l →+* Per.BdRp l} (hj : IsCrisP j) {e e' : Per
   have hee : (e * e').untilt = 1 := by rw [map_mul, he, he', one_mul]
   obtain ⟨z, _, hz, -, -⟩ := _root_.GlobalTheory.MemLoc.exists_isLogA l (e * e') hee
   have h := GlobalTheory.MemLoc.LogAdd.log_add l e e' (j y) (j y') (j z) he he'
-    ((GlobalTheory.T.acris_logTeichmuller_unique_galois_frobenius_bdR l e y he hy).2.2.2 j hj) ((GlobalTheory.T.acris_logTeichmuller_unique_galois_frobenius_bdR l e' y' he' hy').2.2.2 j hj)
-    ((GlobalTheory.T.acris_logTeichmuller_unique_galois_frobenius_bdR l _ z hee hz).2.2.2 j hj)
+    ((_root_.GlobalTheory.MemLoc.LogFun.log_fun l e y he hy).2.2.2 j hj) ((_root_.GlobalTheory.MemLoc.LogFun.log_fun l e' y' he' hy').2.2.2 j hj)
+    ((_root_.GlobalTheory.MemLoc.LogFun.log_fun l _ z hee hz).2.2.2 j hj)
   rw [← map_add] at h
   rw [← _root_.GlobalTheory.MemLoc.crisP_injective l j hj h]
   exact hz
@@ -39,7 +39,7 @@ theorem logA_pow {j : Per.Acris l →+* Per.BdRp l} (hj : IsCrisP j) {e : Per.Fl
     obtain ⟨z, _, hz, -, -⟩ := _root_.GlobalTheory.MemLoc.exists_isLogA l 1 h1
     have h2 := logA_mul hj h1 h1 hz hz
     rw [one_mul] at h2
-    have h3 := (GlobalTheory.T.acris_logTeichmuller_unique_galois_frobenius_bdR l 1 z h1 hz).1 _ h2
+    have h3 := (_root_.GlobalTheory.MemLoc.LogFun.log_fun l 1 z h1 hz).1 _ h2
     have h4 : z = 0 := by simpa using h3
     rw [pow_zero, Nat.cast_zero, zero_mul, ← h4]
     exact hz
@@ -89,11 +89,11 @@ theorem cong (C : Core l) (g : GQ l) (m : ℕ) : ∃ w : Per.Acris l,
   have h1 := logA_pow C.j_cris he hz (l ^ m)
   have hgε : (Per.σF g C.ε).untilt = 1 := by rw [GlobalTheory.RingBasics.untilt_σF, hε, map_one]
   have h2 := logA_mul C.j_cris hgε (by rw [map_pow, hε, one_pow])
-    ((GlobalTheory.T.acris_logTeichmuller_unique_galois_frobenius_bdR l _ _ hε C.t_log).2.1 g) (logA_pow C.j_cris hε C.t_log b)
+    ((_root_.GlobalTheory.MemLoc.LogFun.log_fun l _ _ hε C.t_log).2.1 g) (logA_pow C.j_cris hε C.t_log b)
   have h3 : (Per.σF g em * em ^ b) ^ (l ^ m) = Per.σF g C.ε * C.ε ^ b := by
     rw [mul_pow, ← map_pow, ← pow_mul, mul_comm b, pow_mul, hem, iter_pow]
   rw [h3] at h1
-  have h4 := (GlobalTheory.T.acris_logTeichmuller_unique_galois_frobenius_bdR l _ _ (by rw [map_mul, hgε, map_pow, hε, one_pow, one_mul]) h1).1 _ h2
+  have h4 := (_root_.GlobalTheory.MemLoc.LogFun.log_fun l _ _ (by rw [map_mul, hgε, map_pow, hε, one_pow, one_mul]) h1).1 _ h2
   refine ⟨z - C.t, ?_⟩
   have h5 : (a : Per.Acris l) + b = (l : Per.Acris l) ^ m := by exact_mod_cast congrArg (Nat.cast : ℕ → Per.Acris l) hb
   push_cast at h4

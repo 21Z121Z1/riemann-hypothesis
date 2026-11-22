@@ -5,7 +5,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.JoinModelPointsLift
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BoundedHeightPointsDense
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LineHeightInvariantScaling
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NumberFieldPointHeight
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DominantWeightGapShiftStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DominantWeightGapShift
 
 open MvPolynomial ReciprocityTheory.ChartRestriction.G.Geo NumberField GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Top GlobalTheory.CompanionTheory.Ar.Small GlobalTheory.CompanionTheory.Ar.Cmp GlobalTheory.CompanionTheory.Ar.Ht
 
@@ -73,7 +73,7 @@ theorem tower_upper : ∀ (Ψ : Type) [Fintype Ψ] [DecidableEq Ψ] (N : ℕ) (T
     (R : T.Comp → RootModel Ψ N), IsIntersectionSystem II → HasRef T R → T.I6 II := by
   intro Ψ _ _ N T II R hII href c₀ hc₀
   obtain ⟨C, s₀, hs₀, href⟩ := href
-  obtain ⟨θ₁, hθ₁, hθ₁1, hwt⟩ := GlobalTheory.T.dominant_weight_gap_shift Ψ N T.j T.nu c₀ T.j_pos T.j_lt hc₀
+  obtain ⟨θ₁, hθ₁, hθ₁1, hwt⟩ := _root_.GlobalTheory.CompanionTheory.Ar.WtShift.sub_small_dominant Ψ N T.j T.nu c₀ T.j_pos T.j_lt hc₀
   choose D hD using fun c : T.Comp =>
     _root_.GlobalTheory.CompanionTheory.Ar.Dense0.dense_bounded_lines (R c).K (R c).ι (R c).P _ (R c).arith _ ((R c).line 1) (line_smooth (R c) 1)
   set D' : ℝ := ∑ c, |D c| with hD'

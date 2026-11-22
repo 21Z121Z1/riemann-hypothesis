@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.EigenfunctionFiniteCoefficients
 import Formalism.RealPlaceAnalysis.FinalF
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryGroupStructuresPermConjInvariantStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryGroupStructuresPermConjInvariant
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TraceTransposePow
 
 open MeasureTheory Matrix Finset Formalism.MainNotions.S Formalism.REAL Formalism.QuantumDeterminants GlobalTheory.Count GlobalTheory.Dec GlobalTheory.DSId
@@ -166,7 +166,7 @@ lemma sqIntIrr_perm {ε : Fin n → Bool} (s : Equiv.Perm (Fin n))
     have := hst (g.submatrix s s) (GlobalTheory.Dec.FormF.UJ_perm s hg) w hw
     simpa [Matrix.submatrix_submatrix] using this
   · intro v w
-    exact ((GlobalTheory.T.unitaryGroup_structures_perm_conj_invariant _ ε s).2 (fun x => ⟪w, σ x v⟫_ℂ) 2).1.mp (hsq v w)
+    exact ((_root_.GlobalTheory.Dec.PermGroup.permGroup _ ε s).2 (fun x => ⟪w, σ x v⟫_ℂ) 2).1.mp (hsq v w)
 
 private lemma eword_comp_perm_submatrix (ε : Fin n → Bool) (s : Equiv.Perm (Fin n)) (f : Matrix (Fin n) (Fin n) ℂ → ℂ)
     (w : List (Fin n × Fin n)) :

@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsCris
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPrimitiveTiltedRootOfUnityLocalPeriodRingsData
 import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLogTeichmullerAcrisEqMuMulUnit
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AcrisLogTeichmullerUniqueGaloisFrobeniusBdRStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AcrisLogTeichmullerUniqueGaloisFrobeniusBdR
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AcrisFrobeniusFontaineTEqMul
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Acris0TorsionFree
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AwayOfInjective
@@ -62,7 +62,7 @@ theorem exists_unit (C : Core l) : ∃ u : Per.Acris l, IsUnit u ∧
     (l : Per.Acris l) * u = algebraMap (Per.Ainf l) (Per.Acris l) (Per.φA l (xi C.ε)) := by
   have he := _root_.GlobalTheory.MemLoc.core_isEps l C
   obtain ⟨t, ρ, ht, hρ, htρ⟩ := _root_.GlobalTheory.MemLoc.exists_isLogA l C.ε he.1
-  have h1 : t = C.t := (GlobalTheory.T.acris_logTeichmuller_unique_galois_frobenius_bdR l C.ε C.t he.1 C.t_log).1 t ht
+  have h1 : t = C.t := (_root_.GlobalTheory.MemLoc.LogFun.log_fun l C.ε C.t he.1 C.t_log).1 t ht
   have hφt := _root_.GlobalTheory.MemLoc.TPhi.t_phi l C
   rw [← h1, htρ, map_mul, phiA_alg, φA_mu, map_mul, mul_assoc, mul_left_comm (l : Per.Acris l)] at hφt
   have h2 := cancel_mu C _ _ hφt

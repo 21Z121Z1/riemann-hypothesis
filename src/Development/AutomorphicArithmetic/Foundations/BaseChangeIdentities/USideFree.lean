@@ -9,11 +9,11 @@ namespace GlobalTheory.BCT
 
 theorem _root_.UpperTheory.BaseChangeIdentities.uSide : USide := by
   intro E _ _ _ hU n hn S hS lam K' hK'
-  have L3 := GlobalTheory.T.inf_fixedVectors_adelicLevel_ne_bot_of_localLevel
+  have L3 := _root_.GlobalTheory.FixLev.inf_fixed_globLev_ne_bot
   have L4 := _root_.GlobalTheory.BCT.LocFix.fixed_ne_bot
   have L5 := _root_.GlobalTheory.BCT.hop_mem_inf_fixed
   obtain ⟨hfd, ι, hι, π, hπ, hind, hsup, hcomp⟩ := _root_.GlobalTheory.BCT.forms_decomp E hU n hn S hS lam K' hK'
-  have hloc := fun i w => GlobalTheory.T.exists_unique_admissible_localComponent_definiteUnitary E hU n hn (π i) (hπ i).1 w
+  have hloc := fun i w => _root_.GlobalTheory.BCT.LocCompU.exists_unique_locComp E hU n hn (π i) (hπ i).1 w
   choose σ hσc hσf using fun i w => (hloc i w).1
   refine ⟨ι, hι, π, σ, fun i => ⟨(hπ i).1, (hπ i).2.1, hasLevel_of_fixed hS (hπ i).2.2, fun w hw =>
     ⟨hσc i w, L4 E hU n hn S hS lam K' hK' (π i) (hπ i).1 (hπ i).2.1 (hπ i).2.2 w hw (σ i w) (hσc i w), hσf i w⟩⟩,
@@ -21,7 +21,7 @@ theorem _root_.UpperTheory.BaseChangeIdentities.uSide : USide := by
   · intro π₀ h0 hw0 hl0
     obtain ⟨i, hi⟩ := hcomp π₀ h0 hw0 (L3 E n S hS K' hK' π₀ h0 hl0)
     refine ⟨i, fun w _ => ?_⟩
-    obtain ⟨⟨σ₀, h₀, -⟩, -⟩ := GlobalTheory.T.exists_unique_admissible_localComponent_definiteUnitary E hU n hn π₀ h0 w
+    obtain ⟨⟨σ₀, h₀, -⟩, -⟩ := _root_.GlobalTheory.BCT.LocCompU.exists_unique_locComp E hU n hn π₀ h0 w
     obtain ⟨e⟩ := (hloc i w).2 σ₀ (σ i w) (hi w σ₀ h₀) (hσc i w)
     exact isCompU_of_equiv h₀ e
   · intro f hf hsep

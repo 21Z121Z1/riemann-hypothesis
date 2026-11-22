@@ -16,7 +16,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CupPeriodClassesSum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstBiadditiveCoboundarySymmetric
 import Development.AbelianVarietyTheory.Definitions.Divisors.EllFamNontrivial
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianDotProductMulVecStarSwap
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegZeroCocycleExistsCoboundaryOfRichBasedStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegZeroCocycleExistsCoboundaryOfRichBased
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHolomorphicParamOfDegZeroCompatibleStatement
 
 set_option autoImplicit false
@@ -92,6 +92,6 @@ theorem pchern_of (hsep : ∀ {R : Type} [CommRing R] (A : Over (Sp R)) [GrpObj 
   linear_combination hs'
 
 theorem pchern : GlobalTheory.AnPer.PChern (-1) :=
-  pchern_of @_root_.GlobalTheory.abelianScheme_left_isSeparated_of_affine @_root_.GlobalTheory.AnPer.exists_charts_subordinate @_root_.GlobalTheory.AnPer.isChern_real @_root_.GlobalTheory.AnPer.FrameFn.exists_frame_factor_log @_root_.GlobalTheory.LiftUnits.exists_units @_root_.GlobalTheory.AnPer.log_cocycle_cohomologous @_root_.GlobalTheory.T.cup_period_classes_sum_const @_root_.GlobalTheory.AnPer.const_biadditive_coboundary_symm @GlobalTheory.pi_mul_hermitian_alternation @_root_.GlobalTheory.T.degZeroCocycle_exists_coboundary_of_rich_based @_root_.GlobalTheory.T.exists_holomorphic_param_of_degZero_compatible
+  pchern_of @_root_.GlobalTheory.abelianScheme_left_isSeparated_of_affine @_root_.GlobalTheory.AnPer.exists_charts_subordinate @_root_.GlobalTheory.AnPer.isChern_real @_root_.GlobalTheory.AnPer.FrameFn.exists_frame_factor_log @_root_.GlobalTheory.LiftUnits.exists_units @_root_.GlobalTheory.AnPer.log_cocycle_cohomologous @_root_.GlobalTheory.T.cup_period_classes_sum_const @_root_.GlobalTheory.AnPer.const_biadditive_coboundary_symm @GlobalTheory.pi_mul_hermitian_alternation @_root_.GlobalTheory.AnPer.Charts.DegZero.exists_gauge @_root_.GlobalTheory.T.exists_holomorphic_param_of_degZero_compatible
 
 end GlobalTheory.AnPer.ChernClause

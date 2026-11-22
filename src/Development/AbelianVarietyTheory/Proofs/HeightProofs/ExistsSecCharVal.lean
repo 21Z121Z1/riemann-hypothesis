@@ -47,7 +47,7 @@ theorem exists_sec_char_val (D : D7) (H : ReciprocityTheory.ChartRestriction.G.G
     · obtain ⟨a, ha⟩ := h3 1
       exact ⟨a, ⟨_, ha⟩, fun h γ hm hi => absurd ⟨h, γ, hm, hi⟩ hex⟩
   choose v hv1 hv2 using hv
-  obtain ⟨f, hf, hf1, hf2⟩ := GlobalTheory.T.exists_weightZero_section_of_periodSpace_function D.host.E H Dw l Xo c σ g _ F hpos hgood
+  obtain ⟨f, hf, hf1, hf2⟩ := _root_.GlobalTheory.CompFun.exists_section_of_function D.host.E H Dw l Xo c σ g _ F hpos hgood
     ((_root_.GlobalTheory.Relab.relab_good _ H l c σ hgood).2.2.2 Dw g e) hA hcl v
   refine ⟨f, hf, fun m hm => hf1 m fun i => σ.injective ?_, fun y => ?_, fun h γ hm => ?_⟩
   · obtain ⟨u, hu⟩ := hv1 i

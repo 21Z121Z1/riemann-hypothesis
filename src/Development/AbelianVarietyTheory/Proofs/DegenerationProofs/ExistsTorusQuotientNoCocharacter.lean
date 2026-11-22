@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Definitions.Degenerations.PlOrdSomeOfAss
 import Development.AbelianVarietyTheory.Statements.SemistableTorsion.SemistableFin
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.HomBaseChangeBijectiveOfLeNilradical
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SplitTorusImageFactorQuotientGoodOpen
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSmoothTorusQuotientOfGoodOpenCoverStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSmoothTorusQuotientOfGoodOpenCover
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsLiftOneParameterQuotientTorus
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry
 open scoped CategoryTheory.Obj
@@ -62,7 +62,7 @@ theorem exists_quot_no_cocharacter : ∀ (k : Type) [Field k] [IsAlgClosed k] (G
     (i : splitTorus (Sp k) X ⟶ G), IsMonHom i ∧ (∀ x : G.left, ∃ V, x ∈ V ∧ GoodOpen i V) ∧ Module.finrank ℤ X = n
   have hb : ∀ n, P n → n ≤ g := by
     rintro _ ⟨X, _, _, _, i, hi, hV, rfl⟩
-    obtain ⟨B, _, q, -, hd⟩ := GlobalTheory.T.exists_smooth_torus_quotient_of_goodOpen_cover k G hG X i hi hV
+    obtain ⟨B, _, q, -, hd⟩ := _root_.GlobalTheory.TorusQuotientGlue.main k G hG X i hi hV
     obtain ⟨a, -, ha⟩ := hd g hg
     omega
   obtain ⟨n₀, h₀⟩ : ∃ n, P n := by
@@ -70,7 +70,7 @@ theorem exists_quot_no_cocharacter : ∀ (k : Type) [Field k] [IsAlgClosed k] (G
       (inferInstanceAs (IsMonHom (toUnit _ ≫ η[G])))
     exact ⟨_, X', _, ‹_›, ‹_›, i', h1, hV, rfl⟩
   obtain ⟨X, _, _, _, i, hi, hV, hn⟩ : P (Nat.findGreatest P g) := Nat.findGreatest_spec (hb _ h₀) h₀
-  obtain ⟨B, _, q, hq, -⟩ := GlobalTheory.T.exists_smooth_torus_quotient_of_goodOpen_cover k G hG X i hi hV
+  obtain ⟨B, _, q, hq, -⟩ := _root_.GlobalTheory.TorusQuotientGlue.main k G hG X i hi hV
   refine ⟨X, _, inferInstance, inferInstance, B, _, i, q, hq, fun f hf => ?_⟩
   obtain ⟨j, hj, rfl⟩ := _root_.GlobalTheory.SS.exists_lift_oneParameter k G hG X B i q hq f hf
   obtain ⟨-, hqm, -, -, -, hpb, -⟩ := hq

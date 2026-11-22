@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SigmaFiniteOfRealSmul
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AutPointMajorantFramesGiveMajorants
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ComplementaryBlockUnitaryFormsStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ComplementaryBlockUnitaryForms
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InfiniteGLHaarMeasureEqPiLocal
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurePreservingRearrangePiProdMeasuresStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RealPlacesMatchIsomorphicCMInstances
@@ -12,7 +12,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HaarComplexGLMatrice
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsSaturatedIsotropicFlagOfAdaptedBasisStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsTotallyIsotropicFlagComplexifiedSaturatedFlag
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsGaugeAll
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GradedPieceSizesUnipotentLeviCompactMoveStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GradedPieceSizesUnipotentLeviCompactMove
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RiemannianHaarGaugeWholeGroup
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.SameKindIsometric
 
@@ -74,7 +74,7 @@ theorem exists_charts (I I₀ : AutInst) (e : I₀.E ≃+* I.E) (xf : I.Gf) (a :
   have sw : ∀ i k, (T' i)ᴴ * I.J * T k = ((T k)ᴴ * I.J * T' i)ᴴ := by
     intro i k
     simp only [Matrix.conjTranspose_mul, Matrix.conjTranspose_conjTranspose, hJ, Matrix.mul_assoc]
-  refine GlobalTheory.T.complementary_block_unitary_forms _ _ a j _ _ _ _ (fun i => ((I.P v)⁻¹ * (T' i).map (I.φ v))ᴴ * Jm (I.ε v)) _ τ τ₀ hτ hτ₀ hn
+  refine _root_.GlobalTheory.LeviIso.Chart.exists_leviChart _ _ a j _ _ _ _ (fun i => ((I.P v)⁻¹ * (T' i).map (I.φ v))ᴴ * Jm (I.ε v)) _ τ τ₀ hτ hτ₀ hn
     (fun i => ?_) (fun i k hik => ?_) (fun i k => ?_) (fun i => ?_) ?_ hsp (_root_.GlobalTheory.FlagMeas.isIsoFlag_flagAt_of_isSatFlag I _ a j S hsat v)
   · rw [gram_place, sw, (h2 i).1]
     simp
@@ -200,7 +200,7 @@ theorem levi_product : ∀ (I I₀ : AutInst) (e : I₀.E ≃+* I.E) (xf : I.Gf)
     · simp only [hu i hi, Matrix.mulVec_zero]
     · simp only [Matrix.mulVec_sum, Matrix.mulVec_mulVec, hA]
   · have h0 : ∀ v, uMat ((1 : I.Ginf) v) = 1 := fun v => rfl
-    have h1 := GlobalTheory.T.gradedPieceSizes_unipotent_levi_compact_move I xf a j hj S hsat 1 (fun v => θ v (R z v)) 1
+    have h1 := _root_.GlobalTheory.FlagMeas.SizeMove.size_move I xf a j hj S hsat 1 (fun v => θ v (R z v)) 1
       (fun v => ⟨fun i y _ => by rw [h0]; simp, fun y _ => by rw [h0]; simp⟩) (hM z hz)
       (fun v => show (uMat ((1 : I.Ginf) v))ᴴ * uMat ((1 : I.Ginf) v) = 1 by rw [h0]; simp) i
     rw [one_mul, mul_one] at h1

@@ -15,9 +15,9 @@ import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExpansionOfIntegr
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.ValuationMultiplicationInvariance
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.DivCalc
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IntegralExpansionUniqueOfUniformization
-import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IntegralDegenerationFamilyBaseChangeExtensionFieStatement
-import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.PullAlExtensionFieldOfFractionStatement
-import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.PullAlLinearCombinationStatement
+import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IntegralDegenerationFamilyBaseChangeExtensionFie
+import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.PullAlExtensionFieldOfFraction
+import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.PullAlLinearCombination
 
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.DVR
@@ -212,12 +212,12 @@ theorem term (hL : Laws) (U : Unif (maximalIdeal V) D A G) {O : Type} [Ring O] [
   obtain ⟨E', ⟨t, ht, σ', f', h₁, h₂, h₃⟩, hP⟩ := hB s E hE s' ⟨u, hu, hc,
     (secRel_iff hLG _ _ _ _ _ _ _ _ _ _).2 fun y J hJ => hs' _ _ y J hJ⟩
   have h₂' : IsBC D.toPre (FractionRing V) (toF V (FractionRing V) t • E') f' := isBC_of_scal h₂
-  obtain ⟨θ, hθ⟩ := GlobalTheory.T.integralDegenerationFamily_baseChange_extensionField hL.globalFns V _ D k E f hEg F
-  obtain ⟨θ', hθ'⟩ := GlobalTheory.T.integralDegenerationFamily_baseChange_extensionField hL.globalFns V _ D (k * N) _ f' h₂' F
-  have hP' := GlobalTheory.T.pullAl_linear_combination hL.globalFns V D (FractionRing V) O oa a k N 1 one_pos
+  obtain ⟨θ, hθ⟩ := _root_.GlobalTheory.FamBaseChange.main hL.globalFns V _ D k E f hEg F
+  obtain ⟨θ', hθ'⟩ := _root_.GlobalTheory.FamBaseChange.main hL.globalFns V _ D (k * N) _ f' h₂' F
+  have hP' := _root_.GlobalTheory.PullComb.main hL.globalFns V D (FractionRing V) O oa a k N 1 one_pos
     (fun _ => toF V (FractionRing V) t) (fun _ => E) (fun _ => E') (fun _ => hP)
   rw [Fin.sum_univ_one, Fin.sum_univ_one] at hP'
-  refine ⟨t, σ', f', θ, θ', ht, h₃, hθ, hθ', GlobalTheory.T.pullAl_extension_field_of_fraction V D F O oa a k N _ _ _ f' _ θ'
+  refine ⟨t, σ', f', θ, θ', ht, h₃, hθ, hθ', _root_.GlobalTheory.PullBaseChange.main V D F O oa a k N _ _ _ f' _ θ'
     (IsBC.smul hEg t) h₂' (IsBC.smul hθ t) hθ' hP', fun Z r z J hJ => ?_⟩
   rw [secScal_val h₁ r z hJ, gs_scal, hs' _ r z J hJ, hs _ _ z J hJ]
 
@@ -252,11 +252,11 @@ theorem of_generic (hL : Laws) (U : Unif (maximalIdeal V) D A G) {O : Type} [Rin
   · rcases Nat.eq_zero_or_pos n with rfl | hn
     · obtain ⟨t₀, -, -, θ₀, θ₀', -, -, -, -, hP₀, -⟩ :=
         term hL U oa a φ k N hk hB u hu hc F _ _ (fun e => expandsAt_zero U.toUnifPre e k)
-      have := GlobalTheory.T.pullAl_linear_combination hL.globalFns V D F O oa a k N 1 one_pos (fun _ => 0) _ _ (fun _ => hP₀)
+      have := _root_.GlobalTheory.PullComb.main hL.globalFns V D F O oa a k N 1 one_pos (fun _ => 0) _ _ (fun _ => hP₀)
       rw [Fin.sum_univ_one, Fin.sum_univ_one, zero_smul, zero_smul] at this
       rw [hs, Fin.sum_univ_zero, Fin.sum_univ_zero]
       exact this
-    · have := GlobalTheory.T.pullAl_linear_combination hL.globalFns V D F O oa a k N n hn c' _ _ hP
+    · have := _root_.GlobalTheory.PullComb.main hL.globalFns V D F O oa a k N n hn c' _ _ hP
       simp only [smul_smul, hc'] at this
       rw [hs]
       exact this

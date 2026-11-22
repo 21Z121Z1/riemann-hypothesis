@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.PerRowC
 import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.MaxMass
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SumPairBdMulDatBdLe
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermsOverRowCompatibleStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermsOverRowCompatible
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DefiniteQuotientModelExists
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.RowsMeanC
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryHostFieldArithmeticConditionsProof
@@ -12,7 +12,11 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsAdaptedNormalF
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermPairsRowLatticeCountedViaEmbeddings
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowsMeanBoundOfGenusMean
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowLatticeTermAdaptedNormalForm
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsometricEmbeddedDatumPairsEncardIsometrySmulStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsometricEmbeddedDatumPairsEncardIsometrySmul
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.FlagPairDefinitePartLattice
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ChartGen
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NormalFormDualOrthogonalLast
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.AdaptSelf
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ParameterSizeConstraints
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RelevantTermNormsGeOneAndBounded
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.RelevantSetZeroGNotIdentity
@@ -146,8 +150,8 @@ theorem pair_count_bound_of_siegel_mass : GlobalTheory.Mass.MaxMass → Formalis
     hlog hb2 hv1 hvb hg (hTu u).1 (hTu u).2 hS1 hS1' hD1 hD1' hDb1 hDb1' hDA hDA' hDbA hDbA'
 
   obtain ⟨W, HW, hemb, hrkW, hPD⟩ := _root_.GlobalTheory.TypeAsm.embC D large₂ X u hStd
-  have hI := _root_.GlobalTheory.TypeAsm.PairsSum.pairs_sum_le D large₂ X Y u hStd GlobalTheory.T.termsOverRow_compatible _root_.GlobalTheory.TypeAsm.perRowC _root_.GlobalTheory.TypeAsm.rowsMean W HW hemb
-    (fun s M x x' => GlobalTheory.T.isometricEmbeddedDatumPairs_encard_isometry_smul _ _ HW (gS D) D.R.rS x x' s M)
+  have hI := _root_.GlobalTheory.TypeAsm.PairsSum.pairs_sum_le D large₂ X Y u hStd _root_.GlobalTheory.TypeAsm.CompatPf.compatC _root_.GlobalTheory.TypeAsm.perRowC _root_.GlobalTheory.TypeAsm.rowsMean W HW hemb
+    (fun s M x x' => _root_.GlobalTheory.TripInv.trip_encard_smul _ _ HW (gS D) D.R.rS x x' s M)
     (fun x x' => GlobalTheory.DegAsm.pairBd D.host.E D.R.k (gS D) D.R.rS (Tu D u) x x')
     (fun x x' => GlobalTheory.DegAsm.pairBd_nonneg _ _ _ _ _ _ _)
     (fun Λ hΛ x x' hx hx' => _root_.GlobalTheory.PairsRow.main hMM hSR hHost _root_.GlobalTheory.TypeAsm.lat0C D large₂ X Y u hStd W HW hemb hrkW hPD Λ hΛ x x' hx hx')

@@ -22,7 +22,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersecti
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.HeckeSectionsIsotropicCommutatorPairingPower
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterNamed
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.KleimanNefness.KleimanSt
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.HeightComparisonBetweenModelsStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.HeightComparisonBetweenModels
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MeasureLimitStatementHolds
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsMuMeasureLimit
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularizedHodgeMetricSmooth
@@ -52,7 +52,7 @@ theorem testPoly_eq_slX : PB.AgreementPos → PB.Proportional → Cmp.CmpSt → 
   have hJpos : 0 < Top.testDeg (CMType H) (D.p + D.q) T.j :=
     (_root_.GlobalTheory.CompanionTheory.Ar.Top.testPoly_facts (CMType H) (D.p + D.q) T.j T.j_pos T.j_lt).2.1
   have hLim : ArLimExists X.H X.S B :=
-    (GlobalTheory.T.height_comparison_between_models hGiv hPts K J II (CMType H) Ω W Dc X.H X.M X.M X.S X.S B hII X.S_tied X.S_tied).1
+    (_root_.GlobalTheory.CompanionTheory.Ar.Cusp.arLim_exists_eq hGiv hPts K J II (CMType H) Ω W Dc X.H X.M X.M X.S X.S B hII X.S_tied X.S_tied).1
   have hMass := (_root_.GlobalTheory.CompanionTheory.Ar.Giv.muMeasureLimit II (CMType H) K J Ω W Dc O Lt X B hII.1 hLim).2
   have hSm := GlobalTheory.CompanionTheory.Ar.Cusp.muReg_smooth_log K J II (CMType H) Ω W Dc X.H X.M X.S B X.S_tied
   obtain ⟨K₃, _, ι₃, _, κ, v, P₃, e, r, cf, Mt, Nt, δ, hb, hY, himg, hδ, hdeg, hNs, hpull, hT, hGeo⟩ :=

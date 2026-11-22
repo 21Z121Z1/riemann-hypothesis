@@ -1,5 +1,5 @@
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatFrameApply
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SndSectionValueTranslateProdFirstOrderLinearStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SndSectionValueTranslateProdFirstOrderLinear
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TranslateTangentCombinationEqProd
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField
@@ -62,7 +62,7 @@ theorem isKS_frame_change : ∀ (E : Type) [Field E] [NumberField E] [IsCMField 
       (valR (w a) O' f').snd = ∑ c, φ (B a c) * (valR (w' c) O' f').snd := by
     intro a O' f' hO'
     obtain ⟨h0, hw'⟩ := _root_.GlobalTheory.LogKSDiv.translate_comb t U v' (B a) (v a) φ g₀ hg g' yc hv' (hB a) rfl hyc
-    rw [hw' (w a) (hw a), GlobalTheory.T.snd_sectionValue_translate_prod_first_order_linear (g₀ ≫ t.G.hom) t.G g₀ g' rfl yc (fun c => φ (B a c)) h0 O' f' hO']
+    rw [hw' (w a) (hw a), _root_.GlobalTheory.KSLin.snd_valR_translate_prod (g₀ ≫ t.G.hom) t.G g₀ g' rfl yc (fun c => φ (B a c)) h0 O' f' hO']
     refine Finset.sum_congr rfl fun c _ => ?_
     rw [← hwc c, hgc' c]
   simp_rw [key _ O f hgO]

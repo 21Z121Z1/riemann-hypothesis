@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsAuxiliaryVectorWittDec
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsStandardAuxiliaryFramesAllRowGridsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsStandardAuxiliaryFramesAllRowGrids
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StandardAuxiliaryFramesFitGridEnds
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StandardAuxiliaryFramesGoodRowGrids
 
@@ -16,7 +16,7 @@ namespace GlobalTheory.AscFin
 
 theorem towerEx_of_depFixed : GlobalTheory.SepRows.DepFixed → GlobalTheory.Asc.TowerEx := by
   intro hd D hq T L μ0 hL sc G W M hM v
-  obtain ⟨F, hF⟩ := GlobalTheory.T.exists_standardAuxiliaryFrames_allRowGrids D hq T L μ0 hL sc G W M hM
+  obtain ⟨F, hF⟩ := _root_.GlobalTheory.AscFin.exists_std_frames D hq T L μ0 hL sc G W M hM
   exact ⟨F, _root_.GlobalTheory.AscFin.EndsPf.ends D hq T L μ0 hL sc G W M hM v F hF, lineLat F,
     _root_.GlobalTheory.AscFin.GoodStd.std_good hd D hq T L μ0 hL sc G W M hM v F hF⟩
 

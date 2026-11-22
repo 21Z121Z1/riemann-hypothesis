@@ -166,7 +166,7 @@ theorem mass_good_lt (hE2 : OneVecBinaryMass) (hcm : IsCMExt F E σ) : ∀ (n M 
     obtain ⟨C₁, hC₁⟩ := ih M₁ 1 hone (by omega) T₁ hT₁.1 hT₁.2 d b
     obtain ⟨C₀, hC₀⟩ := one_vec_bound hE2 hcm (M₁ + 1) _ hJ' (by omega) b
     refine ⟨|C₀| + |C₁| + |C₀| * |C₁|, ?_⟩
-    have e1 := GlobalTheory.T.local_densities_congruent_target_almost_all F E σ hcm (M₁ + 1) J hJ (n + 1) T hT hdet g hgdet _ hbh hblock d b
+    have e1 := _root_.GlobalTheory.CompanionTheory.SW.GoodScale.mass_eq F E σ hcm (M₁ + 1) J hJ (n + 1) T hT hdet g hgdet _ hbh hblock d b
     have e2 := _root_.GlobalTheory.CompanionTheory.SW.lattice_mass_fibre_eq F E σ hcm (M₁ + 1) J hJ _ hJ' d b (n + 1)
     have e3 := _root_.GlobalTheory.CompanionTheory.SW.GoodStep.blockFibre_mass F E σ hcm M₁ 1 hone t ht n T₁ hT₁.1 hT₁.2 hbh d b
     have e5 := (_root_.GlobalTheory.CompanionTheory.SW.GoodInt.rational_integral_units F E σ hcm d b).2 t ht
@@ -283,11 +283,11 @@ theorem step_lt (hE1 : OneVecBinary) (hE2 : OneVecBinaryMass) : ∀ (F E : Type)
   haveI hBi : BorelSpace (Ainf F) := ⟨rfl⟩
   haveI hBv : ∀ v, BorelSpace (Fv F v) := fun v => ⟨rfl⟩
   have hta : algebraMap F E t ≠ 0 := by simpa using ht
-  obtain ⟨hdetb, hhermb, -, -⟩ := GlobalTheory.T.block_one_det_hermitian_gram F E σ hCM M J t
+  obtain ⟨hdetb, hhermb, -, -⟩ := _root_.GlobalTheory.CompanionTheory.SW.BlockAlg.block_alg F E σ hCM M J t
   have hJ' : IsHermND σ (blockOne (algebraMap F E t) J) :=
     ⟨hhermb hJ.1, by rw [hdetb]; exact mul_ne_zero hta hJ.2⟩
   have hdet' : (blockOne (algebraMap F E t) T).det ≠ 0 := by
-    rw [(GlobalTheory.T.block_one_det_hermitian_gram F E σ hCM n T t).1]; exact mul_ne_zero hta hdet
+    rw [(_root_.GlobalTheory.CompanionTheory.SW.BlockAlg.block_alg F E σ hCM n T t).1]; exact mul_ne_zero hta hdet
 
   obtain ⟨m₁inf, hm₁inf⟩ := Step.loc_families σ hCM _ hJ' (Ainf F) hLi b laminf hinf.1 1
   obtain ⟨m'inf, hm'inf⟩ := Step.loc_families σ hCM J hJ (Ainf F) hLi b laminf hinf.1 n
@@ -305,7 +305,7 @@ theorem step_lt (hE1 : OneVecBinary) (hE2 : OneVecBinaryMass) : ∀ (F E : Type)
       c v • coordK (Fv F v) b (lam v) := fun v => by
     obtain ⟨h1, h2, h3, h4, -⟩ := hLv v
     exact hcv v _ (_root_.GlobalTheory.CompanionTheory.SW.coord_measures_haar F E σ hCM (Fv F v) d b (lam v) (hlam v).1).1
-  obtain ⟨-, -, -, -, -, -, -, S₃, hS₃⟩ := GlobalTheory.T.unit_product_closure_properties F cinf 1 c (fun _ => 1) hc ⟨by simp, by simp⟩
+  obtain ⟨-, -, -, -, -, -, -, S₃, hS₃⟩ := _root_.GlobalTheory.CompanionTheory.SW.UnitProdAlg.main F cinf 1 c (fun _ => 1) hc ⟨by simp, by simp⟩
 
   have hE' := hSW d b laminf lam hinf hlam μ₁ 𝓕₁ hμ₁ h𝓕₁ m'inf (fun v => m' v) hm'inf hm'
   let T1 : Matrix (Fin 1) (Fin 1) E := fun _ _ => algebraMap F E t
@@ -410,7 +410,7 @@ theorem swMeas_lt (hE1 : OneVecBinary) (hE2 : OneVecBinaryMass) : ∀ (F E : Typ
       have ha' : IsAnisoH σ (blockOne (algebraMap F E t) J₁) := by
         rw [hb']
         exact isAnisoH_of_isometry σ J g' ha
-      refine GlobalTheory.T.siegel_weil_measure_of_congruent_form F E σ hσ (M₁ + 1) J hJ g' _ hb' (n + 1) _ hT' hd' ?_
+      refine _root_.GlobalTheory.CompanionTheory.SW.SWIsom.swMeas_of_isometry F E σ hσ (M₁ + 1) J hJ g' _ hb' (n + 1) _ hT' hd' ?_
       exact step_lt hE1 hE2 F E σ hσ M₁ J₁ hJ₁ t ht (Or.inr ha') n (by omega) T₁ hT₁.1 hT₁.2 hT'
         (ih M₁ J₁ hJ₁ (by omega) (Or.inr (isAnisoH_of_block σ _ J₁ ha')) T₁ hT₁.1 hT₁.2)
     · exact notRep_lt hE1 hE2 F E σ hσ M J hJ t ht (Or.inr ha) n hM T₁ hT₁.1 hT₁.2 hT'
@@ -448,12 +448,12 @@ theorem siegelDensitiesLowA_of (hE1 : OneVecBinary) (hE2 : OneVecBinaryMass) (hB
   have hfv : FinVol F E σ M J := _root_.GlobalTheory.CompanionTheory.SW.finVol_unitaryGroup F E σ hCM M J hJ
   refine ⟨hfv.1, fun μ hμ => ⟨(hfv.2 μ hμ).1, fun 𝓕 h𝓕 =>
     ⟨GlobalTheory.CompanionTheory.SW.CharEx.exists_isCharAF F, fun ψ hψ => ?_⟩⟩⟩
-  obtain ⟨⟨laminf, hli⟩, hlv⟩ := GlobalTheory.T.exists_standard_local_measures F
+  obtain ⟨⟨laminf, hli⟩, hlv⟩ := _root_.GlobalTheory.CompanionTheory.SW.StdEx.exists_std F
   choose lam hlam using hlv
   obtain ⟨ci, c, hc1, hWi, hWv⟩ := _root_.GlobalTheory.CompanionTheory.SW.SdTuples.sdW_coord F E σ hCM M J hJ d b laminf lam hli hlam ψ hψ n
   obtain ⟨ei, e, he1, hHi, hHv⟩ := _root_.GlobalTheory.CompanionTheory.SW.sdHerm_eq_coord F E σ hCM d b laminf lam hli hlam ψ hψ n
-  obtain ⟨hci0, hc0, -, -, hdiv, -⟩ := GlobalTheory.T.unit_product_closure_properties F ci ei c e hc1 he1
-  obtain ⟨hei0, he0, -⟩ := GlobalTheory.T.unit_product_closure_properties F ei ci e c he1 hc1
+  obtain ⟨hci0, hc0, -, -, hdiv, -⟩ := _root_.GlobalTheory.CompanionTheory.SW.UnitProdAlg.main F ci ei c e hc1 he1
+  obtain ⟨hei0, he0, -⟩ := _root_.GlobalTheory.CompanionTheory.SW.UnitProdAlg.main F ei ci e c he1 hc1
   refine ⟨⟨_, (hWi _).2 rfl⟩, fun μinf hμinf => ⟨⟨_, (hHi _).2 rfl⟩, fun νinf hνinf =>
     ⟨⟨_, fun v => (hWv v _).2 rfl⟩, fun μv hμv => ⟨⟨_, fun v => (hHv v _).2 rfl⟩, fun νv hνv => ?_⟩⟩⟩⟩
   haveI : BorelSpace (Ainf F) := ⟨rfl⟩

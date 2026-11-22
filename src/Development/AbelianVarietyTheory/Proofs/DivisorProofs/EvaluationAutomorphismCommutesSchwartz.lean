@@ -5,7 +5,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjMapApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianAdaptedPlaneConstant
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyConstantFinprodSchwartzBruhatFiniteAdel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasCompactSupportFinprodSchwartzBruhatFiniteAdel
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzBijectionRightInverseStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzBijectionRightInverse
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzMapBarrelledSpace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilEigenSurjectiveExtends
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilEigenInjectiveExtends
 open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.WeilM GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels GlobalTheory.ThK MeasureTheory GlobalTheory.DoublingEv
@@ -31,7 +32,7 @@ theorem isTame_symm : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Numb
   have hbi : Function.Bijective ei :=
     ⟨_root_.GlobalTheory.EvInj.ei_injective F E σ B n d X W M M₁ hM e hbij.injOn ei ev (fun v => (hev v).1) hloc,
       GlobalTheory.ArchSurj.surjective_arch F E σ B n d X W M M₁ hM hM₁ e hbij.surjOn ei ev hev hloc⟩
-  obtain ⟨S, hS⟩ := GlobalTheory.T.schwartz_bijection_right_inverse _ _ ei hbi
+  obtain ⟨S, hS⟩ := _root_.GlobalTheory.FrechetOpenMapping.schwartz_exists_inverse _ _ ei hbi
   have hpre : ∀ j v, ∃ ψ ∈ SB (Fin n × Fin d → Fv F v), ev v ψ = φ j v ∧ (φ j v = M₁.vac v → ψ = M.vac v) := by
     intro j v
     by_cases h : φ j v = M₁.vac v

@@ -6,7 +6,8 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IwasawaDecomposition
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MajorantFlagLengthsInvarianceTorusPositivity
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselUnipotentMulVecMiddleVec
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FlagUnipotentLebesgueMeasureIsHaarOn
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnimodularBesselSubgroupsUWNStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnimodularBesselSubgroupsUWN
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
 
 noncomputable section
 
@@ -98,7 +99,7 @@ theorem fibre_volume : ∀ (k r : ℕ) (z z' : (Fin (2 * r + k + 1) → ℂ)) (�
 
   have hl2 : (lebN k r).map (lmulM n₂) = lebN k r := (_root_.GlobalTheory.Amp.NHaar.isHaarOn_lebN k r).2.2.2 n₂ hn₂
   have hr2 : (lebN k r).map (rmulM (n₂⁻¹ * n')) = lebN k r :=
-    ((GlobalTheory.T.unimodular_besselSubgroups_UW_N k r z hz hT (lebN k r)).2.1 (_root_.GlobalTheory.Amp.NHaar.isHaarOn_lebN k r)).1.1 _ ((nSubgroup k r).2.1 _ hn₂i _ hn')
+    ((_root_.GlobalTheory.SgInf.unimodular_S_N_UW k r z hz hT (lebN k r)).2.1 (_root_.GlobalTheory.Amp.NHaar.isHaarOn_lebN k r)).1.1 _ ((nSubgroup k r).2.1 _ hn₂i _ hn')
   have hu' : IsUnit (n₂⁻¹ * n').det := GG_unit (GG_mul (GG_inv hn₂G) hn'G)
   obtain ⟨e, he_map, he⟩ : ∃ e : Mt k r ≃ᵐ Mt k r, (lebN k r).map e = lebN k r ∧
       ∀ n, Matrix.of (e n) = n₂ * Matrix.of n * (n₂⁻¹ * n') :=

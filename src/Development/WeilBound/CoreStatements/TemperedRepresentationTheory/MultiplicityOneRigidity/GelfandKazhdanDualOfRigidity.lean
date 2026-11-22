@@ -64,7 +64,7 @@ theorem paired_of_dualSubC_iso (hB : GlobalTheory.Published.CuspFormsBoundedGL) 
 theorem dualSubC_iso (hJ : GlobalTheory.Published.JacquetShalikaRigidity)
     (hB : GlobalTheory.Published.CuspFormsBoundedGL) (ha : 1 ≤ a) {π : CuspSub E a} (hπ : IsNormalised π) : (dualSubC π).Iso π := by
   refine Quotient.exact (hJ.strong_multiplicity_one ha (CG.mk (dualSubC π)) (CG.mk π) ?_)
-  filter_upwards [GlobalTheory.T.cuspidal_satake_almost_all π] with w hw
+  filter_upwards [_root_.GlobalTheory.CompanionTheory.SatAe.eventually_exists_hasSat π] with w hw
   obtain ⟨B, hw⟩ := hw
   exact ⟨B, PositivityTheory.PRW.SatakeDual.hasSat_dual hB hπ (dualSubC π) (fun ψ => ⟨fun ⟨φ, hφ, e⟩ => ⟨φ, hφ, e ▸ rfl⟩,
     fun ⟨φ, hφ, e⟩ => ⟨φ, hφ, Subtype.ext e.symm⟩⟩) w B hw, hw⟩
@@ -74,7 +74,7 @@ theorem gelfandKazhdanDual_of_rigidity (hJ : GlobalTheory.Published.JacquetShali
   intro E _ _ _ n π
   rcases Nat.eq_zero_or_pos n with rfl | hn
   · exact GlobalTheory.Published.InvTransposeModel.rank_zero π
-  obtain ⟨π₀, χ, h0, rfl⟩ := GlobalTheory.T.cuspidal_eq_twist_normalised π
+  obtain ⟨π₀, χ, h0, rfl⟩ := _root_.GlobalTheory.CompanionTheory.TwistNorm.exists_twist_normalised π
   exact GlobalTheory.Published.InvTransposeModel.twist (paired_of_dualSubC_iso hB h0 (dualSubC_iso hJ hB hn h0)) χ
 
 end PositivityTheory.JMult1

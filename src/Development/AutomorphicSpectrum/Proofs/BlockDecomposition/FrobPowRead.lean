@@ -11,10 +11,10 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TeichmullerComp
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TeichmullerFixedPointApproximation
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformizerDividesFrobeniusDifference
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TeichmullerCharacterEqResidueLift
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TeichmullerResidueCongruenceStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TeichmullerResidueCongruence
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteFieldEmbeddingsDifferFrobenius
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsGaloisExtensionOfEmbedding
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LubinTateTeichmullerSequenceCompatibilityStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LubinTateTeichmullerSequenceCompatibility
 noncomputable section
 open NumberField IsDedekindDomain Neutral.B1 Formalism.ConjugateSelfDual ReciprocityTheory.Gal Formalism.L2.Host Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.WeaklyAdmissibleFiltrations
 open GlobalTheory.HeckeGal GlobalTheory.Pst GlobalTheory.TripleGal GlobalTheory.CompanionTheory.LTHodge GlobalTheory.CompanionTheory.LTPer
@@ -100,7 +100,7 @@ theorem exp_twist {l : ℕ} [Fact l.Prime] (K : FinExt l) (π : ↥(OL K)) (f : 
   let α : (↥(OL K) ⧸ Ideal.span {π}) →+* Tl l := Ideal.Quotient.lift _ r₀ hker
   obtain ⟨i, hi⟩ := _root_.GlobalTheory.CompanionTheory.LTPer.Tilt.exists_frobenius_pow_of_ringHoms (l := l) (k := ↥(OL K) ⧸ Ideal.span {π}) (D := Tl l) α ((actT g).comp α)
   refine ⟨i, fun c => ?_⟩
-  obtain ⟨c', hc'⟩ := GlobalTheory.T.teichmuller_residue_congruence K π f hf hqf hl h1 hπ0 (r₀ c) c (hr1 c) (hr2 c)
+  obtain ⟨c', hc'⟩ := _root_.GlobalTheory.CompanionTheory.LTPer.Tilt.sh_root_near_integer K π f hf hqf hl h1 hπ0 (r₀ c) c (hr1 c) (hr2 c)
   refine ⟨c', ?_⟩
   have h : actT g (r₀ c) = r₀ c ^ l ^ i := hi (Ideal.Quotient.mk _ c)
   rw [← h, sh_actT, hc', oc_eq, galCp_omC, hg]
@@ -197,7 +197,7 @@ theorem GlobalTheory.CompanionTheory.LTPer.Tilt.tilt_period : ∀ {l : ℕ} [Fac
       ∀ c, ∃ c' : ↥(OL K), sh (r₀ c ^ l ^ i) = omC (μ ((c + π * c' : ↥(OL K)) : ↥K.1)) := by
     by_cases hμ : μ = K.1.val
     · refine ⟨0, fun _ => rfl, fun c => ?_⟩
-      obtain ⟨c', hc'⟩ := GlobalTheory.T.teichmuller_residue_congruence K π f hf hqf hl hπ1' hπ0 (r₀ c) c (hr1 c) (hr2 c)
+      obtain ⟨c', hc'⟩ := _root_.GlobalTheory.CompanionTheory.LTPer.Tilt.sh_root_near_integer K π f hf hqf hl hπ1' hπ0 (r₀ c) c (hr1 c) (hr2 c)
       refine ⟨c', ?_⟩
       rw [pow_zero, pow_one, hc', hμ]
       rfl
@@ -217,7 +217,7 @@ theorem GlobalTheory.CompanionTheory.LTPer.Tilt.tilt_period : ∀ {l : ℕ} [Fac
   · exact tch_clause K π f hf μ r₀ hr1 i hic
   · intro g hg φ h0 h1 hcomm n D
     have hs := hgal ⟨g, hg⟩ φ h0 h1 hcomm
-    have hd := GlobalTheory.T.lubin_tate_teichmuller_sequence_compatibility K π z f hf hl hπ1' hzlt hzgt u hu1 hu2 r₀ hr1 hr2 hu0 g
+    have hd := _root_.GlobalTheory.CompanionTheory.LTPer.Tilt.GalDiv.galdiv K π z f hf hl hπ1' hzlt hzgt u hu1 hu2 r₀ hr1 hr2 hu0 g
       (fun k => PowerSeries.coeff k φ) hs n D
     exact gal_clause g r₀ i (u n) (fun k => PowerSeries.coeff k φ) D hd
   · intro hμ n

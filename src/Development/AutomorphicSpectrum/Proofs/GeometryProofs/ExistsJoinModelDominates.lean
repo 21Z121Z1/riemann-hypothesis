@@ -4,7 +4,7 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LatNormGrLatNeZeroOfSpan
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsCompletedStrictHens
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.JoinCoordsCentreChart
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueDominatingMapStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueDominatingMap
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProjectiveModelNonempty
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtLocalOrderFraction
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtChartLocalization
@@ -82,7 +82,7 @@ theorem join_exists : ∀ (o : Type) [CommRing o] (Ω : Type) [Field Ω] [Algebr
     exact ⟨y, hy, z, hz, rfl⟩
   obtain ⟨M'⟩ := _root_.GlobalTheory.CompanionTheory.Ar.nonempty_pModel_of_chart o Ω' (κ × κ') (joinCo i x w) ⟨(c, l), hJ, hfrac⟩
   have hctr : ∀ p', p' ∈ ctrSet o x i M'.ξ := fun p' => (_root_.GlobalTheory.CompanionTheory.Ar.join_points_charts o Ω κ κ' x Ω' i w M' hi p').1
-  obtain ⟨f, hf, -⟩ := GlobalTheory.T.existsUnique_dominating_map o Ω κ x M o Ω' (κ × κ') (joinCo i x w) M' i hctr
+  obtain ⟨f, hf, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.ChMorph.existsUnique_dominates o Ω κ x M o Ω' (κ × κ') (joinCo i x w) M' i hctr
   exact ⟨M', f, hf⟩
 
 end GlobalTheory.CompanionTheory.Ar

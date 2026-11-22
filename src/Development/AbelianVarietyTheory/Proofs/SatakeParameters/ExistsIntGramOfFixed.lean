@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Howe
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemIntMat
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeisenbergTranslateFixedIntegralUnitary
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LatticeModelVacuumTranslateClassesIndependent
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CayleyTransformTrivialPhaseSkewHermitianStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CayleyTransformTrivialPhaseSkewHermitian
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsIntegralGramOfPhaseConditions
 
 noncomputable section
@@ -34,6 +34,6 @@ theorem exists_int_gram_of_fixed : ∀ (L : Type) [Field L] [CharZero L] [Valued
     · exact sub_eq_zero.1 h1
     · exact absurd h1 hne
   exact _root_.GlobalTheory.Hk3.HoweDuality.exists_int_gram_of_phases L ϖ σ q δ n n' JS ψ hP.unr hP.odd hP.intS hP.hermS hP.delta hP.psi_int hP.psi_ne x
-    (GlobalTheory.T.cayleyTransform_trivial_phase_skewHermitian L ϖ σ q δ n n' JS JT ψ hP.unr hP.odd hP.intS hP.intT hP.hermS hP.hermT hP.delta hP.psi_int x Hph)
+    (_root_.GlobalTheory.Hk3.CayleyPhase.cayley_phase L ϖ σ q δ n n' JS JT ψ hP.unr hP.odd hP.intS hP.intT hP.hermS hP.hermT hP.delta hP.psi_int x Hph)
 end GlobalTheory.Hk3.HoweDuality
 end

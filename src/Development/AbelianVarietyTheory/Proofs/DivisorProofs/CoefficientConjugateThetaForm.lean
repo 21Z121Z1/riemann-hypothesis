@@ -161,7 +161,7 @@ theorem exists_io_poly (D : D7) (V W : HSp D) (θ : InfFam D) (Sp : D.what₂.Ta
   obtain ⟨hhK, hhU⟩ := GlobalTheory.T.fockActions_isHolomorphicProductKRepFamily D W.rank V.rank M.ε x₁ x₂ x₃
   obtain ⟨κ, Δ', hκ, hΔ, hbK, hbU⟩ := _root_.GlobalTheory.JointHarm.MinorBottom.exists_joint_bottom D W.rank V.rank M.ε p q ap am x₁ x₂ x₃ hr hpq hε hap ham
   obtain ⟨m, hm1, hm2, hm3⟩ := _root_.GlobalTheory.JointHarm.MultiOp.lowest_types_act D W Sp M _ _ _ hhK
-  obtain ⟨hv1', hv2', hv3, hv4⟩ := GlobalTheory.T.frameFunctionAction_holomorphic_extremal_lowest D.what₂.Tau V.rank lam
+  obtain ⟨hv1', hv2', hv3, hv4⟩ := _root_.GlobalTheory.JointHarm.vact_isHolFam_isBotFam D.what₂.Tau V.rank lam
   obtain ⟨ϖ, hϖ⟩ : ∃ ϖ : (D.what₂.Tau → Matrix (Fin V.rank) (Fin V.rank) ℂ) → Module.End ℂ (Pol ℂ D.what₂.Tau V.rank),
       ϖ = fun u => vact lam fun ρ => u (l.symm ρ) := ⟨_, rfl⟩
   have hv1 := isHolFam_relabel l hv1'
@@ -175,7 +175,7 @@ theorem exists_io_poly (D : D7) (V W : HSp D) (θ : InfFam D) (Sp : D.what₂.Ta
     funext τ j; rw [hU]; push_cast; rfl
   rw [eK] at hbK
   rw [eU] at hbU
-  obtain ⟨ψ, hψ⟩ := GlobalTheory.T.lowest_weight_vector_transfer _ _ _ _ _ _ _ _ _ _ _ _ hhU hv1 hbU hv2 hv3
+  obtain ⟨ψ, hψ⟩ := _root_.GlobalTheory.JointHarm.OrbitMap.exists_orbit_map _ _ _ _ _ _ _ _ _ _ _ _ hhU hv1 hbU hv2 hv3
   have key : ∀ F ∈ VV ℂ lam,
       ψ F ∈ botSub M.ε (factK V.rank M.ε x₁ x₂ x₃) (fun τ => -Formalism.QuantumDeterminants.lowK (M.ε τ) (M.lam τ)) ∧
       ∀ u : D.what₂.Tau → Matrix (Fin V.rank) (Fin V.rank) ℂ, (∀ τ, u τ ∈ Formalism.REAL.Kset (allPos V.rank)) →

@@ -2,7 +2,7 @@ import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IntegrandSZero
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MulVecPairVecDiag
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoubledLagrangianTransverseInOpenOrbit
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ConjDoublingIsotropicUnipotentMemSiegelStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ConjDoublingIsotropicUnipotentMemSiegel
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RationalIsometryNormalisesIsotropicUnipotentRadi
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RationalIsometryKeepsIsotropicFrameOfSiegel
 open scoped ComplexConjugate Matrix NNReal
@@ -85,7 +85,7 @@ theorem offOpen : ∀ (D : D7) (V : HSp D), ∀ γ ∈ GQ (dblSp V), ¬ (∃ δ 
         _ = Formalism.UG.cT (D.sp.cm.sig : D.host.E →+* D.host.E) (Qd * K) * V.gram * (Qd * K) := by
             rw [hI, Formalism.UG.cT_mul]; simp only [Matrix.mul_assoc]
         _ = 0 := by rw [hQK]; simp [Formalism.UG.cT]
-  refine ⟨_, P * K, hiso, GlobalTheory.T.conj_doubling_isotropic_unipotent_mem_siegel D V γ hγ γi hγi _ K hQK hiso, ?_⟩
+  refine ⟨_, P * K, hiso, _root_.GlobalTheory.Core.Rk.Dich.conj_io_unip_siegel D V γ hγ γi hγi _ K hQK hiso, ?_⟩
   intro δ hδ hs n hn
   obtain ⟨d, -, hδm, -⟩ := exists_rat V hδ
   obtain ⟨G, hG, hGe⟩ := _root_.GlobalTheory.Core.Rk.Dich.isoFrame_keep D V γ hγ γi hγi _ K hQK hspan hiso δ hδ d.1 hδm hs

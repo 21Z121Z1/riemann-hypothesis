@@ -8,7 +8,7 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCocharLie
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelIsBaseChange
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackEquivalenceStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackEquivalence
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelEigenvectorsAction
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsTransition
 
@@ -112,7 +112,7 @@ theorem push_model {S S' : Scheme.{0}} {t : SAB H S} {t' : SAB H S'} {f : S' ⟶
     (M' : LieModel t'.G x' W) (ρ : 𝓞 E →+* Module.End R W) (hρ : M'.IsActOf t'.act.act ρ) :
     ∃ M : LieModel t.G x W, M.IsActOf t.act.act ρ ∧ ∀ u, (M'.pt u).left ≫ m.φ = (M.pt u).left := by
   subst hx
-  obtain ⟨M, hM⟩ := (GlobalTheory.T.lie_model_pullback_equivalence S S' t.G t'.G f m.φ m.cart R x' W).2 M'
+  obtain ⟨M, hM⟩ := (_root_.GlobalTheory.CompanionTheory.Ar.LiePull.lieModel_pullback S S' t.G t'.G f m.φ m.cart R x' W).2 M'
   refine ⟨M, fun a e => Over.OverMorphism.ext ?_, hM⟩
   rw [← hM, hρ a e, Over.comp_left, Over.comp_left, ← hM, Category.assoc, Category.assoc, m.act a]
 
@@ -142,7 +142,7 @@ theorem exists_model (hρ : MB.IsActOf t'.act.act ρM) {S : Scheme.{0}} {t : SAB
   have key : ∀ (x₀ : Sp R ⟶ Sp (𝓞 L)) (M₀ : LieModel t'.G x₀ W), x₀ = x ≫ f →
       ∃ M' : LieModel t.G x W, ∀ e, (M'.pt e).left ≫ m.φ = (M₀.pt e).left := by
     rintro _ M₀ rfl
-    exact (GlobalTheory.T.lie_model_pullback_equivalence _ S t'.G t.G f m.φ m.cart R x W).1 M₀
+    exact (_root_.GlobalTheory.CompanionTheory.Ar.LiePull.lieModel_pullback _ S t'.G t.G f m.φ m.cart R x W).1 M₀
   obtain ⟨MW, hMW⟩ := key _ M₁ (by rw [hx, Category.comp_id])
   have hl : ∀ z, (MW.pt (j z)).left ≫ m.φ = spMap (dualMap g) ≫ (MB.pt z).left := fun z =>
     (hMW _).trans ((Category.comp_id _).symm.trans (hj₀ z))

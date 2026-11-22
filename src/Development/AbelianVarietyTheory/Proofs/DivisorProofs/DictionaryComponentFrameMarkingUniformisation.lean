@@ -6,7 +6,14 @@ import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsDerivAt0CompLi
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.UnitFrameEqOrthonormalMulTriangular
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrameUniformEmbeddingSecond
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.RealAdelesCmFieldEquivComplexCmType
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ArchimedeanMatrixUnitaryContinuousMultiplicativeStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ArchimedeanMatrixUnitaryContinuousMultiplicative
+import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.CoeSelfDualLatticeInFrameCoordinatesEq
+import Formalism.LocalToGlobal.ProjectiveLattices.ParCanon
+import Formalism.LocalToGlobal.ProjectiveLattices.ExistsParameterConditions
+import Formalism.LocalToGlobal.ProjectiveLattices.ValSetAlgSubset
+import Formalism.LocalToGlobal.ProjectiveLattices.IntAll
+import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
+import Formalism.LocalToGlobal.ProjectiveLattices.VolProofs
 import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.OrthonormalBaseFrameNeg
 
 namespace GlobalTheory.AdTh.MarkUniq
@@ -174,7 +181,7 @@ theorem GlobalTheory.AdTh.dict_atComp_markAd : ∀ (D : D7) (H : Geo.Tor.Host D.
   subst hr
   obtain ⟨γ, hγ, hΛ, hm, hfr⟩ := hD.2 h
   obtain ⟨θ', hθ'⟩ := (GlobalTheory.Member.infiniteAdele_bijective D).1
-  obtain ⟨hAr, -, -⟩ := GlobalTheory.T.archimedeanMatrix_unitary_continuous_multiplicative D W θ' hθ'
+  obtain ⟨hAr, -, -⟩ := _root_.GlobalTheory.Member.Arch.archM_spec D W θ' hθ'
   generalize hk : dict h = kx at hΛ hm hfr
   obtain ⟨k, x⟩ := kx
   dsimp only at hΛ hm hfr ⊢

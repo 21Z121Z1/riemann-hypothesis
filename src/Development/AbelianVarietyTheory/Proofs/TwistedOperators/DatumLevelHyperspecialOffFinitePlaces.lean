@@ -146,7 +146,7 @@ theorem level_offS : ∀ (D : D7) (V : HSp D) (β : GL (Fin V.rank) (EAf D)) (Λ
   refine ⟨?_, ?_, ?_, ?_⟩
   · intro P hP
     rw [GlobalTheory.GoodPrimes.offS_iff] at hP
-    obtain ⟨e, f, hpe⟩ := (GlobalTheory.T.supported_subgroup_split_commute_primeIdempotents V).2.1 P
+    obtain ⟨e, f, hpe⟩ := (_root_.GlobalTheory.IdemSupport.supported_group_and_prime_idempotents V).2.1 P
     have h1P : ((1 : ℕ) : 𝓞 D.host.E) ∉ P.asIdeal := by
       rw [Nat.cast_one]
       exact fun h => P.isPrime.ne_top ((Ideal.eq_top_iff_one _).2 h)

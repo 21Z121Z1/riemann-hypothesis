@@ -29,7 +29,7 @@ theorem automorphic_points_exist : ∀ (D : D7) (cf : CharFrame D) (jE : D.host.
       SplitOut X.nd i w → IsConjPl D.host w s.w → IsUnif D.host.E s.v ϖ → ∀ (c : ℂ) (f f' : GAf D.host.E D.R.nV → (mlX M X i).wt.W),
       NG.tN (mlX M X i).J s ϖ k (c • f + f') = c • NG.tN (mlX M X i).J s ϖ k f + NG.tN (mlX M X i).J s ϖ k f' := by
     intro w k s ϖ hw hc hu c f f'
-    have hfin := GlobalTheory.T.finite_cosets_heckeSet_at_splitPlace_outside_level D.host.E D.R.nV (mlX M X i).J (mlX M X i).χ B hhyp s ϖ k (hbad w s hw hc) hu
+    have hfin := _root_.GlobalTheory.TSetFin.finite_image_tSet D.host.E D.R.nV (mlX M X i).J (mlX M X i).χ B hhyp s ϖ k (hbad w s hw hc) hu
     simp only [NG.tN]
     rw [GlobalTheory.PtLocalEig.heckeD_add _ _ _ _ hfin c f f', smul_add, smul_comm]
   let Par := PlE D.host × ℕ × (Σ s : SplitPlace D.host.E, s.v.adicCompletion (maximalRealSubfield D.host.E))

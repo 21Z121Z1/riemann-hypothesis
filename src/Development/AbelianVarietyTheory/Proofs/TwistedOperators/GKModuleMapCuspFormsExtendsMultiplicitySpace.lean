@@ -8,8 +8,8 @@ import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsVacFO
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsCommonLevelGrowthExponentGKMap
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealPlacePointCommuteOfNePlace
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MultilinearGKMapExtendsToSmoothVectors
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CasselmanWallachMultMapEquivariantSobolevContinuStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsSmoothAutomorphicFormMultMapValueStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CasselmanWallachMultMapEquivariantSobolevContinu
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsSmoothAutomorphicFormMultMapValue
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GKMapExtensionLevelCharacterCovariant
 open Classical Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.IndefR.Datum MeasureTheory NumberField Matrix
 attribute [local instance] Formalism.BasicNotions.Host.cmStar
@@ -118,7 +118,7 @@ theorem extExists : GlobalTheory.Published.HarishChandraModules → GlobalTheory
       exact congrArg (fun z => ι x (y * z)) (_root_.GlobalTheory.PointAtPlaceComm.atTau_comm D θ hθ V τ τ' hne _ (conj_mem_UH (M.fr_unit τ) (M.fr_gram τ) hg) _
         (conj_mem_UH (M.fr_unit τ') (M.fr_gram τ') hg'))
     obtain ⟨TE, hTE1, hTE2, hTE3⟩ := _root_.GlobalTheory.FactorExtension.extend_positions hHC hCW D V S M E p π dπ (fun τ => (hπ τ).1) hcomm T₀' hK hL
-    obtain ⟨hequiv, hcont⟩ := GlobalTheory.T.casselmanWallach_multMap_equivariant_sobolevContinuous D θ V S M E p ι N π hp
+    obtain ⟨hequiv, hcont⟩ := _root_.GlobalTheory.GKExtFields.multMap_fields D θ V S M E p ι N π hp
       (fun x d => ((hrange (ι x)).1 ⟨x, rfl⟩).2.2.2.2.2 d) (fun τ => (hπ τ).2.1) TE hTE2 hTE3
     let T : MMap M := ι.compMultilinearMap TE
     have hext : GlobalTheory.IndefiniteRowSideFullHecke.KTypeExtension.Extends T T₀ := fun v u h => by
@@ -126,7 +126,7 @@ theorem extExists : GlobalTheory.Published.HarishChandraModules → GlobalTheory
       rw [hTE1 v u h, hT₀']
     refine ⟨T, ⟨?_, fun v => ((hrange _).1 ⟨TE v, rfl⟩).2.2.2.2.1,
       _root_.GlobalTheory.GKExtLevel.lev hHC D θ hθ V S M J χ μ 𝓕 T₀ hT₀ T hext hcont, hequiv, hcont⟩, hext⟩
-    exact GlobalTheory.T.isSmoothAutomorphicForm_multMap_value hHC D θ hθ V S M T U N hU (fun v => by
+    exact _root_.GlobalTheory.EquivValues.isAutFunSm hHC D θ hθ V S M T U N hU (fun v => by
       have h := (hrange (ι (TE v))).1 ⟨TE v, rfl⟩
       exact ⟨h.1, h.2.1, h.2.2.1, h.2.2.2.1, h.2.2.2.2.2⟩) hequiv hcont
   · rintro T T' ⟨hT, hTe⟩ ⟨hT', hT'e⟩

@@ -16,7 +16,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlagCmTypeLatticeCo
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExteriorCoeffBaseChangeCompat
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CmTypeExteriorLatticeComparison
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlagWeightedDegreeSection
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HermitianNormSectionValueStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HermitianNormSectionValue
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsFormNotInCoordIdeal
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PointOverNumberFieldValue
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexPointsDenseNonvanishing
@@ -24,7 +24,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersecti
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexPointExistsUniqueEmbedding
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.FiniteEtaleSurjectiveOfPullback
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DvrModelOfNumberFieldPlace
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProperDvrModelLatticeValuationStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProperDvrModelLatticeValuation
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FiniteTypeOverIntegersModel
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsPrimeDividingUniformizerStatement
 
@@ -110,7 +110,7 @@ theorem exists_orders (hZ : PropZ) {X : Scheme.{0}} {Ω : Type} [Field Ω] {ξ :
         · rw [hy₀, ← map_mul, mul_inv_cancel₀ hb0, map_one, map_one]
     have hℓu : (ℓ : Ω) = algebraMap O Ω (ϖ * u) := by
       rw [map_mul, hϖπ, hu, ← map_mul, mul_div_cancel₀ _ hπ0, map_natCast]
-    obtain ⟨M, a, hM, h⟩ := @GlobalTheory.T.proper_dvr_model_lattice_valuation X X' Ω _ _ ξ ξ' g O _ _ _ _ s hs ϖ L σ ℓ u hZ hϖ hinj hξs hξg ht.gen hgen' hall'
+    obtain ⟨M, a, hM, h⟩ := @_root_.GlobalTheory.CompanionTheory.Ar.Flat.PlaceOrd.order_at_place X X' Ω _ _ ξ ξ' g O _ _ _ _ s hs ϖ L σ ℓ u hZ hϖ hinj hξs hξg ht.gen hgen' hall'
       hN hcc hreg hL hg hℓu (hp ℓ hℓ)
     refine ⟨M, a, hM, fun p hv => ?_⟩
     have := h p (hsurj p hv)

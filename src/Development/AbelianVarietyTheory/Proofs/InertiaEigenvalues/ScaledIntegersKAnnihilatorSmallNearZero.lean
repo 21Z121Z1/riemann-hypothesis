@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSmallDualLattices
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFactsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFacts
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology
 
 theorem GlobalTheory.JR.annihilator_small : ∀ (F E : Type) [NontriviallyNormedField F] [NontriviallyNormedField E] [NormedAlgebra F E] [StarRing E] [Unram F E] (A : Et F E) (ψ : AddChar F ℂ), IsStdChar ψ → ∀ U ∈ 𝓝 (0 : A.K), ∀ᶠ c in 𝓝[≠] (0 : F), ∀ b : A.K, (∀ z : A.K, c • z ∈ A.OK → A.psiK ψ (z * b) = 1) → b ∈ U := by
@@ -9,7 +9,7 @@ theorem GlobalTheory.JR.annihilator_small : ∀ (F E : Type) [NontriviallyNormed
   haveI : IsUltrametricDist F := hU.ultraF
   haveI : LocallyCompactSpace F := hU.lcF
   haveI : ContinuousSMul F A.K := IsModuleTopology.toContinuousSMul F A.K
-  have hfacts := GlobalTheory.T.etaleHermitianPair_structure_facts F E A
+  have hfacts := _root_.GlobalTheory.JR.EtFacts.main F E A
   have hnd : (Algebra.traceForm F A.K).Nondegenerate := hfacts.2.2.1
   have hOKopen : IsOpen A.OK := hfacts.2.2.2.2.2.2.2.2.2.1
   obtain ⟨R, hR⟩ := hfacts.2.2.2.2.2.2.2.2.2.2.2

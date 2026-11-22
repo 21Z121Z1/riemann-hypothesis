@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.QuotientInteg
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.T2SpaceCmHostAdeles
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FlagUnipotentAnisotropicProjectionEqOne
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FourierJacobiGroupSplitRealFinite
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BesselGroupSplitRealFiniteStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BesselGroupSplitRealFinite
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FourierJacobiGroupHaarIsMulRightInvariant
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BesselGroupHaarIsMulRightInvariant
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.IndefR.Datum MeasureTheory IsDedekindDomain NumberField Matrix
@@ -181,7 +181,7 @@ theorem adelic_split : ∀ (D : D7) (V : HSp D), IsClosed (GinfC V : Set (GA D V
     exact GlobalTheory.QuotDiscrete.isInvInvariant_of_isMulRightInvariant μ
   have hB := GlobalTheory.BesClosed.besGrp_isClosed D V V₀ A L ρ d o
   haveI : LocallyCompactSpace (besGrp d o) := hB.locallyCompactSpace
-  refine ⟨GlobalTheory.T.besselGroup_split_real_finite D V V₀ A L ρ d o, fun μ hμ => ?_, fun μ hμ => ?_⟩
+  refine ⟨_root_.GlobalTheory.BesSplit.besGrp_split D V V₀ A L ρ d o, fun μ hμ => ?_, fun μ hμ => ?_⟩
   · haveI := hμ
     haveI := _root_.GlobalTheory.BesUnimod.besGrp_isMulRightInvariant D V V₀ A L ρ d o μ hμ
     exact GlobalTheory.QuotDiscrete.isInvInvariant_of_isMulRightInvariant μ
@@ -190,7 +190,7 @@ theorem adelic_split : ∀ (D : D7) (V : HSp D), IsClosed (GinfC V : Set (GA D V
     haveI : LocallyCompactSpace ((besGrp d o).subgroupOf (GfC V)) := hc.locallyCompactSpace
     haveI := hμ
     haveI := rightInv_restr (GinfC V) (GfC V) (besGrp d o) hi hf hB (splitEquiv V) (splitEquiv_apply V)
-      (GlobalTheory.T.besselGroup_split_real_finite D V V₀ A L ρ d o) (_root_.GlobalTheory.BesUnimod.besGrp_isMulRightInvariant D V V₀ A L ρ d o) μ hμ
+      (_root_.GlobalTheory.BesSplit.besGrp_split D V V₀ A L ρ d o) (_root_.GlobalTheory.BesUnimod.besGrp_isMulRightInvariant D V V₀ A L ρ d o) μ hμ
     exact GlobalTheory.QuotDiscrete.isInvInvariant_of_isMulRightInvariant μ
 
 end GlobalTheory.AdelicSplit

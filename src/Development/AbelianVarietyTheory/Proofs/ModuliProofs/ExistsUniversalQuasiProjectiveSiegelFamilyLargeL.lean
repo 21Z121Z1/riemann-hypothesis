@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.ModuliProofs.NonemptySiegelFamily
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.IsSeparatedOfIsQProjOver
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSiegelFamilyLocalisedCyclotomicIntegersStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSiegelFamilyLocalisedCyclotomicIntegers
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.RigidSys
@@ -56,7 +56,7 @@ theorem exists_siegelFamily_siegRep : Out.Laws → Out.Laws2 → (∀ (S : Schem
     rw [← pow_mul]
     exact h3.trans (Nat.le_self_pow (by omega) n)
   have hinj : Function.Injective i := fun x y hxy => hem.2.2 (by rw [← hi, ← hi, hxy])
-  obtain ⟨Ag, hAg⟩ := GlobalTheory.T.exists_siegelFamily_localised_cyclotomic_integers L L2 h _ p o _ i (hodd.pow.pow) hk hp hinj hζ hconst
+  obtain ⟨Ag, hAg⟩ := _root_.GlobalTheory.SiegelFamilyBaseChange.exists_siegelFamily L L2 h _ p o _ i (hodd.pow.pow) hk hp hinj hζ hconst
     (isAlgebraic_of_injective (by omega) i hinj) F
   obtain ⟨F', -⟩ := F.exists_baseChange i hinj hζ
   obtain ⟨Ag', -, H⟩ := F'.exists_sRep_siegRep (by omega) Ag hAg

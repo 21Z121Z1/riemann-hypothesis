@@ -80,7 +80,7 @@ theorem splitLat_of_one_one : ∀ (E : Type) [Field E] [NumberField E] [IsCMFiel
     simp at h5
   obtain ⟨b₁, hb₁, m₁⟩ := GlobalTheory.SelfDualIsom.exists_nat_smul_mem φ φ₀ span₀
   obtain ⟨b₂, hb₂, m₂⟩ := GlobalTheory.SelfDualIsom.exists_nat_smul_mem φ₀ φ span
-  obtain ⟨k, f, hk, hf⟩ := GlobalTheory.T.exists_coprime_scaled_isometry_same_signature E H D D₀ ep eq (2 * b₁ * b₂) (by positivity)
+  obtain ⟨k, f, hk, hf⟩ := _root_.GlobalTheory.LocalIsomAt.exists_coprime_scaled_isometry E H D D₀ ep eq (2 * b₁ * b₂) (by positivity)
   have hk0 : k ≠ 0 := by
     rintro rfl
     rw [Nat.coprime_zero_left] at hk

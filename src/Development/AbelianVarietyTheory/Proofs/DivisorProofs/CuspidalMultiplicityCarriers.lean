@@ -5,7 +5,8 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Ex
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinRepApply
 import Formalism.LocalToGlobal.IndefiniteReal.BaseLiftsPackageOfPrimitiveLinks
 import Formalism.LocalToGlobal.Divisibility.TrivialExtensionSideWellFormed
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalOperatorsFormsOnRankSpaceNormalStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalOperatorsFormsOnRankSpaceNormal
+import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigensystemGoodFormsThetaTargetOccursOnRows
 import Formalism.LocalToGlobal.IndefiniteReal.CutTuples2
@@ -24,7 +25,7 @@ theorem iSup_wp3_eq_range_eH : ∀ {D : D7} {G : Type} [Group G] [Fintype G] {Pl
   obtain ⟨hCore, hSF, hE, hWc⟩ := GlobalTheory.CoreOfWeak.core_of_weak R F hW hEx
   have hOk2 : A3.A.fam.Ok s := hOk.ok2
   have hirr : ∀ χ ∈ A3.A.X, IsAbsIrrChar χ := hOk2.irr
-  obtain ⟨h, -, -, -, hsum, -⟩ := GlobalTheory.T.sphericalOperators_forms_on_rank_space_normal R.toRealDat F.lv2 hCore hS hirr R.SF hSF i
+  obtain ⟨h, -, -, -, hsum, -⟩ := _root_.GlobalTheory.SphOpsModel.sphericalOperators_forms_on_rank_space_normal_alt R.toRealDat F.lv2 hCore hS hirr R.SF hSF i
   rw [← hsum]
   apply le_antisymm
   · refine iSup_le fun p => iSup₂_le fun c _ => ?_

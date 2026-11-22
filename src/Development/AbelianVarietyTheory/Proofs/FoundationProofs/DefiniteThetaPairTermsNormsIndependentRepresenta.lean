@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UnitaryDoubleCos
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UnitaryRationalConjIntersectionCardDvdInvariant
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RationalPointsIntegralPointsMembership
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLatticeOfAdelicPoint
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaSpaceSelfDualPairAtMostLineStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaSpaceSelfDualPairAtMostLine
 
 open NumberField Classical Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.TaylorLogMetric Formalism.MainNotions.StandardLatticesGL3 GlobalTheory.NormSum
 open scoped BigOperators
@@ -73,7 +73,7 @@ theorem sd_std (D : D7) (N : ℕ) : SD D (stdL D N) := by
 theorem test_mem (hg : admG1 D) (hc : Crv D cc δ) (P : Pair D cc δ t0 Q) (hQ : 0 < Q) :
     P.F ∈ TT D (tor0 D cc δ) P.a P.d := by
   obtain ⟨k, r, z, hz, -, -, hF⟩ := P.pres
-  obtain ⟨-, hW, hI, -⟩ := GlobalTheory.T.theta_space_selfDual_pair_at_most_line D hg cc δ hc P.a P.d (La0 D (tor0 D cc δ) P.a P.d)
+  obtain ⟨-, hW, hI, -⟩ := _root_.GlobalTheory.ThetaLine.theta_line D hg cc δ hc P.a P.d (La0 D (tor0 D cc δ) P.a P.d)
     (Or.inr ⟨_, _, sd_std D _, sd_std D _, rfl⟩)
   obtain ⟨hd, he⟩ := P.vac.1
   refine ⟨?_, Q, hQ, fun x hx => ?_⟩

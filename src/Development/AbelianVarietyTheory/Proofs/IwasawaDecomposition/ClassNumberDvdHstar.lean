@@ -6,15 +6,15 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntValuationEqOf
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteDimensionalKummerFieldOfPowerIdealRootsStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EllipticTorsionPointCoordinatesFinite
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsAlgebraicOfEllipticTorsionCoordinatesFinite
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RayClassFieldFinrankPowPrincipalStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClassNumberDvdFinrankStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RayClassFieldFinrankPowPrincipal
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClassNumberDvdFinrank
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NotInjectiveTwoPrimesEqualNormCofinite
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTwoPrimesSameNormOfTrivialFrobeniusStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClosureFrobeniusElementsEqTop
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AbsNormModEqOneOfPrincipalRayClass
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RootsOfUnityMemRayClassFieldOfMultipleStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RootsOfUnityMemRayClassFieldOfMultiple
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsGeneratorPowPrimeOneModModulusStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TameHeckeCharacterValueViaPowerGeneratorStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TameHeckeCharacterValueViaPowerGenerator
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AlgebraicHeckeCharacterValueMemKummerField
 
 noncomputable section
@@ -98,7 +98,7 @@ theorem rootOne_mem_ray [IsTotallyComplex E] (φ : E →+* ℂ) {n p : ℕ} (hn 
     Ideal.span_singleton_le_span_singleton.2 (Nat.cast_dvd_cast hp)
   have hfin : {v : HeightOneSpectrum (𝓞 E) | v.asIdeal ∣ natIdeal E n}.Finite :=
     Ideal.finite_factors (natIdeal_ne_bot hn)
-  obtain ⟨x, hx⟩ := GlobalTheory.T.rootsOfUnity_mem_rayClassField_of_multiple E M L _ p hp0 hq hM.isRayField
+  obtain ⟨x, hx⟩ := _root_.GlobalTheory.Mem.RayZeta.root_mem_rayField E M L _ p hp0 hq hM.isRayField
     (_root_.GlobalTheory.Mem.FieldsEx.closure_frob_eq_top E L _ hfin fun F _ _ _ => aut_eq_one _ hfin F) (_root_.GlobalTheory.Mem.RayNorm.absNorm_modEq_one E _ p hq)
     ⟨rootOne p, hS _ (Finset.mem_insert_self _ _)⟩
     (Subtype.ext (Complex.isPrimitiveRoot_exp p hp0).pow_eq_one)
@@ -114,10 +114,10 @@ theorem valueField_le [IsGalois ℚ E] [IsTotallyComplex E] (φ₀ : E →+* ℂ
   rw [valueField, IntermediateField.adjoin_le_iff]
   rintro _ ⟨v, hv, rfl⟩
   let := algOf φ₀ M hM.emb_mem
-  obtain ⟨k, hk, hk1⟩ := GlobalTheory.T.exists_generator_pow_prime_one_mod_modulus E 𝔮 _ h𝔮 (GlobalTheory.T.rayClassField_finrank_pow_principal E M 𝔮 hM.isRayField) v
+  obtain ⟨k, hk, hk1⟩ := GlobalTheory.T.exists_generator_pow_prime_one_mod_modulus E 𝔮 _ h𝔮 (_root_.GlobalTheory.Mem.Fld.RayExp.pow_finrank_principal E M 𝔮 hM.isRayField) v
   have hfin := Ideal.finite_factors h𝔮
   refine _root_.GlobalTheory.Mem.FieldsEx.valTw_mem_kummerField E φ₀ I φ hφ χ n r hi he v _ k hk
-    (GlobalTheory.T.tameHeckeCharacter_value_via_power_generator E χ (hfin.toFinset.erase v) (fun w hw => ?_) (fun w _ => ht w) v (Finset.notMem_erase _ _) _ k hk
+    (_root_.GlobalTheory.Mem.ValPow.inf_mul_val_pow E χ (hfin.toFinset.erase v) (fun w hw => ?_) (fun w _ => ht w) v (Finset.notMem_erase _ _) _ k hk
       fun w hw => ?_)
   · by_cases e : w = v
     · exact e ▸ hv
@@ -139,7 +139,7 @@ theorem host_cplx (P : Pre) : IsTotallyComplex P.host.E := by
 
 theorem classNumber_dvd_hstar : classNumber P.host.E ∣ D.hstar := by
   let := algOf P.host.φ₀ D.ray D.isRay.emb_mem
-  exact GlobalTheory.T.classNumber_dvd_finrank_alt P.host.E D.ray _ (natIdeal_ne_bot (modulus_ne_zero P)) D.isRay.isRayField
+  exact _root_.GlobalTheory.Mem.ClassDvd.classNumber_dvd_finrank P.host.E D.ray _ (natIdeal_ne_bot (modulus_ne_zero P)) D.isRay.isRayField
 
 theorem kummer_le_V : kummerField P.host.φ₀ (classNumber P.host.E) ≤ D.V :=
   kummerField_mono _ D.hstar_pos.ne' (classNumber_dvd_hstar D)

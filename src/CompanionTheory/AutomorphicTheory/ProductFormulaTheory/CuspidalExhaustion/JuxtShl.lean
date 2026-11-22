@@ -3,7 +3,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NonemptyEquivMultiProdOne
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.LSegJacquet
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetMultiplicityPosStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetMultiplicityPos
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.PropsCos
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.LanglandsMultisegments
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.LanglandsExhaustionGL
@@ -72,7 +72,7 @@ theorem words_of_subq (hA : GlobalTheory.Published.IrreducibleAdmissibleGL) (hW 
   have hnt : ∃ v, f v ≠ 0 := by
     obtain ⟨v, hv⟩ := exists_ne (0 : σ.2.rep.V)
     exact ⟨v, fun h => hv (hf (h.trans (f.toLinearMap.map_zero).symm))⟩
-  have h1 : 1 ≤ jm l.get hd2 σ.rep := GlobalTheory.T.jacquet_multiplicity_pos hA l.get hd2 σ.rep σ.2.rep.smooth f hnt
+  have h1 : 1 ≤ jm l.get hd2 σ.rep := _root_.GlobalTheory.CompanionTheory.FrobJm.one_le_jm hA l.get hd2 σ.rep σ.2.rep.smooth f hnt
   have hwd : Wd σ.rep l := ⟨hd2, by intro h; rw [h] at h1; simp at h1⟩
   have hwd2 : Wd (prodIrr [nxt Δ, b].get hd1) l :=
     GlobalTheory.T.word_occurs_of_subquotient _ σ.rep (isSmooth_prodIrr _ _) hsub l hwd

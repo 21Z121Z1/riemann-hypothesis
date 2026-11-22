@@ -4,7 +4,10 @@ import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ValidForConst
 import Formalism.LocalToGlobal.GroupLattices.AdmissibleAtGeneratorPlaces
 import Formalism.SharpRestriction.AdmissibleParameterJoins.GandSaj
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.JetTableBoundConstantOneOfChainAgreement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.KernelDegreesSmallAgainstTypePrimesStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.KernelDegreesSmallAgainstTypePrimes
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.JetOpIntegral
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.JetsInIffStepField
+import Formalism.SharpRestriction.ElevenLe
 
 noncomputable section
 
@@ -19,7 +22,7 @@ theorem row_atG_of_jetSplitAmb : JetSplitAmb → ∀ {Bd : BdT} (Q : V4.Slot) (L
   intro hJ Bd Q Lk hE
   refine ⟨_, hE, fun 𝒜 σ s => ?_⟩
   refine ⟨1 / 100, by norm_num, fun eps he hle => ?_⟩
-  obtain ⟨xs, hxs⟩ := GlobalTheory.T.kernelDegrees_small_against_typePrimes eps he (by linarith)
+  obtain ⟨xs, hxs⟩ := _root_.GlobalTheory.AtG.KernelSizes.sizeAt_of_params eps he (by linarith)
   refine ⟨⟨0, fun _ => 0, fun _ => 2, fun _ => 0⟩, fun Fm CH hc hL => ?_⟩
   have hg : (2 : ℝ) ≤ Fm.cX.err.g := hL.2.2.1 Fm.cX.err.g (by simp [FamP.cMid])
   obtain ⟨κ, -, -, t⟩ := s Fm (w3_a hc)

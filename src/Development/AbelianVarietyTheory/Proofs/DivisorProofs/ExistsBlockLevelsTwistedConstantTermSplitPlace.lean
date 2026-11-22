@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockLevelsEqIntegr
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockUpperTimesUnipotentMulBlockDiagonal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HaarIntegralNormalizedIntegralMatricesTwoSidedMu
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbsHalfBlockDetIntegralGLInvariant
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasCompactSupportTwistedConstantTermSplitPlaceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasCompactSupportTwistedConstantTermSplitPlace
 
 noncomputable section
 
@@ -108,7 +108,7 @@ theorem levels_split : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E], �
   obtain ⟨N, hNo, hNK, hNn, hNf⟩ := GlobalTheory.T.exists_open_conjStable_subgroup_of_splitLevel E n w K' hw hK'
   have hlev := _root_.GlobalTheory.BCT.CtLevel.isLevel_lev_split E a (n - a) n (Nat.add_sub_cancel' ha) w N μ hw hNo hμ
   refine ⟨lev₁ (Nat.add_sub_cancel' ha) w N μ, lev₂ (Nat.add_sub_cancel' ha) w N μ, N, hlev.1, hlev.2, ?_, hNo, hNK,
-    ?_, ?_, ?_, fun f hf => ⟨GlobalTheory.T.hasCompactSupport_twistedConstantTermSplitPlace E a (n - a) n _ w μ f hw hf.1, fun k hk m =>
+    ?_, ?_, ?_, fun f hf => ⟨_root_.GlobalTheory.BCT.CtLevel.hasCompactSupport_ctMu_split E a (n - a) n _ w μ f hw hf.1, fun k hk m =>
       ctMu_inv_blocks _ w hw N K' μ f hf hNK hNn k hk m⟩⟩
   · rintro ⟨hK'e, hμ1⟩
     rw [hNf hK'e]

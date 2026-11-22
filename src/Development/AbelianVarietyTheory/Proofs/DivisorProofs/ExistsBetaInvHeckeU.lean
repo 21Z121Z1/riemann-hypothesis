@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PhaseNeZero
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharacterIdeleCharacterMatchUnique
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCongruenceHeckeCharacterBoundedLevelTrivia
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeCharacterNonInertBoundedLevelKillsUnits
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeCharacterBoundedConductorKillsIdeleNormsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeCharacterBoundedConductorKillsIdeleNorms
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnramifiedEtaCharacterKillsFiniteIdeleNorm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPrimeNotInertPlaceOfMem
 
@@ -46,7 +46,7 @@ theorem exists_betaInv_heckeU {D : D7} {T : Type} {L : LevCh D T} {sc : Consts} 
   have hcu := GlobalTheory.ChrEqUnique.isUnitary_of_chrEq D _ _ (G.ch.chi_eq _ k1 k2)
   have hci : (G.ch.chiH (D.R.m - i)).HasInf (embT D) (fun τ => 2 * cen D sc.cGap τ (D.R.m - i)) := G.ch.inf _ k1 k2
   let χc : HeckeU D 0 := ofChar 0 _ _ hcu hci (_root_.GlobalTheory.HeckeCont.eq_one_of_cong D _ _ 2 (fun q hq => (hS q hq).1) hlev)
-    (GlobalTheory.T.heckeCharacter_bounded_conductor_kills_idele_norms D _ _ _ 2 (G.ch.triv _ k1 k2) hci (fun q hq => (hS q hq).1) hlev)
+    (_root_.GlobalTheory.NormKill.chi_finIdl_norm_eq_one D _ _ _ 2 (G.ch.triv _ k1 k2) hci (fun q hq => (hS q hq).1) hlev)
     (fun τ => by simp) (_root_.GlobalTheory.FunObj.SqNum.hchar_finIdl_eq_one_of_zeroAt D _ _ 2 hS hlev)
   have he := L.C.isEta
   have hei : L.C.eta.HasInf (embT D) (fun _ => 1) := fun a => by

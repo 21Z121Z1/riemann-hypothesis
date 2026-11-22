@@ -16,7 +16,7 @@ import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUniversalFullL
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CmFamilyFiniteUnramifiedOverSiegelFamily
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.NonemptyAmpleFramedModelPELThetaFamilyStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUniversalQuasiProjectiveSiegelFamilyLargeL
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFullLevelModelOfFamilyBirationalModelStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFullLevelModelOfFamilyBirationalModel
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaFamilyPelSmoothGenericFibreStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CmModelCoefficientSubringDedekindCompatibleEmbed
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsEquivStdSymp
@@ -205,7 +205,7 @@ theorem topAmpExists : GlobalTheory.LN.HomExtSt → Out.Laws → Out.Laws2 → G
     ⟨w, w', haw, haw'⟩ hb hPEL hsm hpq hnp hno ⟨j, hj, rfl⟩
   have hcl2 := _root_.GlobalTheory.siegClause_of_famCore hHE hL hL2 E H D n ((n ^ j) ^ 2) F.MM F.s τ lev hpq hnp hno
     ⟨j * 2, by omega, hNe⟩ hcore (hj₃ j hj3)
-  obtain ⟨T, hT⟩ := GlobalTheory.T.exists_fullLevel_model_of_family_birationalModel hHE hL hL2 E H D Xo n ((n ^ j) ^ 2) F.MM F.s τ lev (n ^ k) C hpq hn
+  obtain ⟨T, hT⟩ := _root_.GlobalTheory.TopOfFamily.exists_top hHE hL hL2 E H D Xo n ((n ^ j) ^ 2) F.MM F.s τ lev (n ^ k) C hpq hn
     ⟨j * 2, by omega, hNe⟩ (pow_pos hn0 k) hcore hcl2
   refine ⟨j * 2, k, ?_⟩
   rw [← hNe]

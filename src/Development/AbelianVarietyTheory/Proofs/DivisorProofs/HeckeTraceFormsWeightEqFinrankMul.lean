@@ -3,9 +3,9 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqSplitFinMulSplitI
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteLeftOfFiniteTensorProductComplex
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AutomorphicMapPhiInjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VectorFormTensorRangeLeUnitaryAutFormsWeightLeve
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryAutFormsWeightLevelLeTensorRangeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryAutFormsWeightLevelLeTensorRange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryHeckeOperatorVectorMemLevelFunctions
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryHeckeOperatorCommuteWeightVectorFunctionEStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryHeckeOperatorCommuteWeightVectorFunctionE
 
 open NumberField IsDedekindDomain Matrix Polynomial Filter GlobalTheory.CuspRep GlobalTheory.PRep Formalism.UG Formalism.BasicNotions GlobalTheory.UnitaryBC Formalism.L2.Host GlobalTheory.BCT
 open scoped Classical TensorProduct
@@ -26,7 +26,7 @@ theorem trOn_forms_eq_finrank_mul : ∀ (E : Type) [Field E] [NumberField E] [Is
   intro E _ _ _ hE n hn S hS lam K' hK f hf
   have hinj := _root_.GlobalTheory.BCT.TrKer.Phi_injective E hE n hn S hS lam K' hK
   have hrange : LinearMap.range (Phi S lam K') = forms S lam K' :=
-    le_antisymm (_root_.GlobalTheory.BCT.TrKer.range_Phi_le_forms E hE n hn S hS lam K' hK) (GlobalTheory.T.unitaryAutForms_weight_level_le_tensor_range E hE n hn S hS lam K' hK)
+    le_antisymm (_root_.GlobalTheory.BCT.TrKer.range_Phi_le_forms E hE n hn S hS lam K' hK) (_root_.GlobalTheory.BCT.TrKer.forms_le_range E hE n hn S hS lam K' hK)
   have hM := _root_.GlobalTheory.BCT.TrKer.HopStab.hopM_mem_vecM E n S lam K' hK f hf
   let A := (hopM S lam K' f).restrict hM
   have hcomm : ∀ x, hop S K' f (Phi S lam K' x) = Phi S lam K' (TensorProduct.map A LinearMap.id x) := by
@@ -34,7 +34,7 @@ theorem trOn_forms_eq_finrank_mul : ∀ (E : Type) [Field E] [NumberField E] [Is
     induction x using TensorProduct.induction_on with
     | zero => simp
     | tmul F w =>
-      rw [TensorProduct.map_tmul, Phi_tmul, Phi_tmul, GlobalTheory.T.unitaryHeckeOperator_commute_weightVectorFunction_explicit]
+      rw [TensorProduct.map_tmul, Phi_tmul, Phi_tmul, _root_.GlobalTheory.BCT.TrKer.hop_phiFun_comm]
       rfl
     | add x y hx hy => rw [map_add, map_add, map_add, hx, hy, map_add]
   have hF : ∀ v ∈ forms S lam K', hop S K' f v ∈ forms S lam K' := by

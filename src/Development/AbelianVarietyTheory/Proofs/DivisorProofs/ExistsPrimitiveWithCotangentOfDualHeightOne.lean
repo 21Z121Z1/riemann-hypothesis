@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RigExtMapRelFrobCompRigOfOmega
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobKerIdealLeAugIdeal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowFinrankCotangentLeFinrankFrobeniusKernelQuoti
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CartierDualHeightOneAdjoinPrimitiveEqTopStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CartierDualHeightOneAdjoinPrimitiveEqTop
 open CategoryTheory TensorProduct Coalgebra Bialgebra GlobalTheory GlobalTheory.PDiv GlobalTheory.PDivGroup
 
 namespace GlobalTheory.PDiv
@@ -12,7 +12,7 @@ theorem exists_primitive_dUnit_eq : ∀ (p : ℕ) [Fact p.Prime] (K H : Type) [F
     (∀ φ ∈ augIdeal K (CartierDual K H), φ ^ p = 0) →
     ∀ w : Cot K H, ∃ b : H, cobOne K H b = 0 ∧ dUnit K b = w := by
   intro p _ K H _ _ _ _ _ _ hnil w
-  have hgen := GlobalTheory.T.cartierDual_height_one_adjoin_primitive_eq_top p K (CartierDual K H) hnil
+  have hgen := _root_.GlobalTheory.HeightOneDual.adjoin_primitive_eq_top p K (CartierDual K H) hnil
   set e := CartierDual.bidual K H
   have hH : Algebra.adjoin K {b : H | cobOne K H b = 0} = ⊤ := by
     let f : CartierDual K (CartierDual K H) →ₐ[K] H :=

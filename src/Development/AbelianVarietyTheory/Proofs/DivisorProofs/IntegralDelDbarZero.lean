@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.LineSCShortExact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothFormsCalculusHolomorphicAtlas
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteSmoothPartitionUnityHolAtlasStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolAtlasIntegralFinSumCompactStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteSmoothPartitionUnityHolAtlas
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolAtlasIntegralFinSumCompact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralDelChartSupportedMulFormEqZero
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsTypeIsRealConst
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolAtlasDelFinsetSumStatement
@@ -52,14 +52,14 @@ theorem stokes : ∀ (M : Type) [TopologicalSpace M] [T2Space M] [SecondCountabl
     ∀ η : A.Fld, A.IsForm η → A.integral (A.del η) = 0 ∧ A.integral (A.dbar η) = 0 := by
   intro M _ _ _ _ _ _ n A η hη
   have C := _root_.GlobalTheory.formCalculus M n A
-  obtain ⟨N, c, χ, hs, hsupp, hone⟩ := GlobalTheory.T.exists_finite_smooth_partition_unity_holAtlas A
+  obtain ⟨N, c, χ, hs, hsupp, hone⟩ := _root_.GlobalTheory.exists_finite_smooth_partition_holAtlas A
   have hf : ∀ j, A.IsForm (A.fn (χ j) * η) := fun j =>
     (C.2.1 0 _ _ (HolAtlas.isForm_fn A (hs j)) hη).2.1
   have hdec := eq_sum_fn_mul A χ hone η
   constructor
-  · rw [hdec, GlobalTheory.T.holAtlas_del_finset_sum A _ hf, GlobalTheory.T.holAtlas_integral_fin_sum_compact A _ (fun j => (C.2.1 0 _ _ (hf j) (hf j)).2.2.2.1)]
+  · rw [hdec, GlobalTheory.T.holAtlas_del_finset_sum A _ hf, _root_.GlobalTheory.CxForm.IntegralSum.integral_sum A _ (fun j => (C.2.1 0 _ _ (hf j) (hf j)).2.2.2.1)]
     exact Finset.sum_eq_zero fun j _ => _root_.GlobalTheory.CxForm.LocStokes.integral_del_fn_mul_eq_zero A η (χ j) (c j) hη (hs j) (hsupp j)
-  · rw [hdec, dbar_sum A _ hf, GlobalTheory.T.holAtlas_integral_fin_sum_compact A _ (fun j => (C.2.1 0 _ _ (hf j) (hf j)).2.2.2.2.1)]
+  · rw [hdec, dbar_sum A _ hf, _root_.GlobalTheory.CxForm.IntegralSum.integral_sum A _ (fun j => (C.2.1 0 _ _ (hf j) (hf j)).2.2.2.2.1)]
     exact Finset.sum_eq_zero fun j _ => _root_.GlobalTheory.CxForm.DbarLocStokes.integral_dbar_fn_mul_eq_zero A η (χ j) (c j) hη (hs j) (hsupp j)
 
 end GlobalTheory.CxFormStokesBoth

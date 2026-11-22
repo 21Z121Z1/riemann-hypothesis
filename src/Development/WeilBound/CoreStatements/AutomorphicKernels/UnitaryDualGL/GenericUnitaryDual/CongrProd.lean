@@ -5,9 +5,12 @@ import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitaryDualGL.Gen
 import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitaryDualGL.GenericUnitaryDual.PCentred
 import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitaryDualGL.TemperedEigenvalueNorms.AddOneLeOfPrecedes
 import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.ConjDual
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContragredientProductIrreducibleStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualClassTwistNegStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentDualPrecedesIffStatement
+import Mathlib
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContragredientProductIrreducible
+import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.LSegJacquet
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualClassTwistNeg
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentDualPrecedesIff
 
 noncomputable section
 
@@ -32,9 +35,9 @@ theorem segs_symm [CharZero k] {h N : ℕ} (δ : Fin h → IrrGL k) (Δ : Fin h 
   have hδu : ∀ j, IsUnitarisable (δ j).rep := fun j => PositivityTheory.Gud.Pf.unitarisable_of_unitCC (hL j) (hU j)
   have hc : ∀ j, PositivityTheory.UdReth2.IsCentred (Δ j) := fun j => PositivityTheory.Gud.Pf.isCentred_of_unitCC (hL j) (hU j)
   obtain ⟨hd1, ⟨e1⟩⟩ := PositivityTheory.Gud.Symm.Pf.conj_side hA δ s hδu hd hi hu
-  obtain ⟨hd2, ⟨e2⟩⟩ := GlobalTheory.T.contragredient_product_irreducible hA (fun j => (δ j).nu (s j)) hd
+  obtain ⟨hd2, ⟨e2⟩⟩ := _root_.GlobalTheory.CompanionTheory.ContraProd.contra_prodIrr hA (fun j => (δ j).nu (s j)) hd
   have hfun : (fun j => Zc.dualCl ((δ j).nu (s j))) = fun j => (Zc.dualCl (δ j)).nu (((fun j => -s j) j : ℝ) : ℂ) :=
-    funext fun j => by rw [GlobalTheory.T.dual_class_twist_neg hA]; push_cast; rfl
+    funext fun j => by rw [_root_.GlobalTheory.CompanionTheory.ZcDual.dualCl_nu hA]; push_cast; rfl
   have hd3 : ∑ j, ((Zc.dualCl (δ j)).nu (((fun j => -s j) j : ℝ) : ℂ)).1 = N := by
     rw [← hd2]; exact congrArg (fun f : Fin h → IrrGL k => ∑ j, (f j).1) hfun.symm
   obtain ⟨e3⟩ := congrProd' hfun hd2 hd3
@@ -45,7 +48,7 @@ theorem segs_symm [CharZero k] {h N : ℕ} (δ : Fin h → IrrGL k) (Δ : Fin h 
     intro t ht i j hP
     have r : ∀ a, (Zc.segDual (Δ a)).nu (t a : ℂ) = Zc.segDual ((Δ a).nu ((-t a : ℝ) : ℂ)) := fun a => by
       rw [PositivityTheory.Gud.Symm.Pf.segDual_nu hA]; push_cast; rw [neg_neg]
-    rw [r, r, GlobalTheory.T.segment_dual_precedes_iff hA] at hP
+    rw [r, r, _root_.GlobalTheory.CompanionTheory.SegDualPrec.segDual_precedes hA] at hP
     have := PositivityTheory.UdReth2.add_one_le_of_precedes _ _ (hc j) (hc i) _ _ hP
     have h1 := ht i; have h2 := ht j
     rw [abs_lt] at h1 h2

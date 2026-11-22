@@ -1,24 +1,36 @@
 import CompanionTheory.AutomorphicTheory.ZuckermanCommutation.ZuckermanFunctors.DecompositionOfInjective
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.DecompositionOfTraceStatement
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.HomCategoryStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.DecompositionOfTrace
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.HomCategory
 import Mathlib
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.ExteriorPowerIntegral
 import CompanionTheory.AutomorphicTheory.ZuckermanCommutation.ZuckermanFunctors.IsSimpleFam
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.TensorPowerIntegral
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.MatrixHom
 import CompanionTheory.HarishChandraModules.BesselParameterIntegrals.SmoothCyclicVectors.SmoothCyc
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.SnTens2Statement
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.UnitaryIsoStatement
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CasimirSplittingStatement
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CasimirDiagonalSumStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.SnTens2
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.UnitaryIso
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CasimirSplitting
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CasimirDiagonalSum
+import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AdmissibleSmoothVectors.AdmissibleOfIwasawa
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CasimirScalarOfCapelliDeterminantEigenvalue
+import Development.AbelianVarietyTheory.Definitions.Jets.SideFam
+import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPrAlt
+import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeries₂.Poulsen
+import Formalism.PeriodIntegrals.DSInfCharCap
+import Formalism.PeriodIntegrals.LowCyc
+import Formalism.PeriodIntegrals.UpqRep
+import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
+import Formalism.RealPlaceAnalysis.StatementE
+import Formalism.RealPlaceAnalysis.StatementKT
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.StandardDifferential
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ChainRuleSecondOrder.HasDerivAtDOf
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.ExteriorIntegralityStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.ExteriorIntegrality
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.ExteriorDifferentialMatrixUnitFormula
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.ExteriorDifferentialSignRuleQuadratic
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.ZuckermanHypothesisStatement
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.DecompositionOfTensorFromHomLawsStatement
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.ToRawComplexStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.ZuckermanHypothesis
+import CompanionTheory.AutomorphicTheory.ZuckermanCommutation.CapelliEigenvalues.BetaAtInfinityZero
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.DecompositionOfTensorFromHomLaws
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.ToRawComplex
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CountingBound
 import CompanionTheory.AutomorphicTheory.ZuckermanCommutation.ZuckermanFunctors.AdjFromApply
 import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.OrbitDerivatives.LieAlgebraHomomorphism
@@ -31,28 +43,28 @@ namespace CompanionTheory.Zuck
 theorem zuckerman_ingredients : Steps where
   infChar := CompanionTheory.D.DSIC.discrete_series_infinitesimal_character
   decOfInj := decomposition_of_injective
-  decOfTrace := GlobalTheory.T.DecompositionOfTrace
-  homCat := GlobalTheory.T.HomCategory
+  decOfTrace := _root_.GlobalTheory.CompanionTheory.ZuckDecOfTrace.decOfTrace
+  homCat := _root_.GlobalTheory.CompanionTheory.ZuckHomCat.homCat
   okTriv := trivial_rep_admissible
   okVr := vector_rep_admissible
   okWedge := _root_.GlobalTheory.CompanionTheory.ZuckWedge.okWedge
   okTens := _root_.GlobalTheory.CompanionTheory.ZuckTens.okTens
   matHom := _root_.GlobalTheory.CompanionTheory.ZuckMatHom.matHom
-  uIso := GlobalTheory.T.UnitaryIso
+  uIso := _root_.GlobalTheory.CompanionTheory.ZuckUIso.uIso
   homLie := CompanionTheory.D.gk.FinalFormK.lie_algebra_homomorphism
-  casSplit := GlobalTheory.T.CasimirSplitting
-  casDS := GlobalTheory.T.CasimirDiagonalSum
-  wedgeInt := GlobalTheory.T.ExteriorIntegrality
+  casSplit := _root_.GlobalTheory.CompanionTheory.ZuckCasSplit.casSplit
+  casDS := _root_.GlobalTheory.CompanionTheory.CasimirDS.casDS
+  wedgeInt := _root_.GlobalTheory.CompanionTheory.WedgeEmb.wedgeInt
   wedgeQ := _root_.GlobalTheory.CompanionTheory.WedgeSplitCasimir.wedgeQ _root_.GlobalTheory.CompanionTheory.ZuckStdD.stdD _root_.GlobalTheory.CompanionTheory.WedgeDeriv.dC_wedge_single
   schur := CompanionTheory.D.gk.FinalFormK.schur'
-  adj := adj_of GlobalTheory.T.HomCategory _root_.GlobalTheory.CompanionTheory.ZuckMatHom.matHom GlobalTheory.T.tensHom'
-  multOne := multOne_of GlobalTheory.T.HomCategory _root_.GlobalTheory.CompanionTheory.ZuckMatHom.matHom GlobalTheory.T.tensHom' CompanionTheory.D.gk.FinalFormK.lie_algebra_homomorphism GlobalTheory.T.CasimirSplitting _root_.GlobalTheory.CompanionTheory.ZuckStdD.stdD
+  adj := adj_of _root_.GlobalTheory.CompanionTheory.ZuckHomCat.homCat _root_.GlobalTheory.CompanionTheory.ZuckMatHom.matHom _root_.GlobalTheory.CompanionTheory.ZuckTensHom.tensHom
+  multOne := multOne_of _root_.GlobalTheory.CompanionTheory.ZuckHomCat.homCat _root_.GlobalTheory.CompanionTheory.ZuckMatHom.matHom _root_.GlobalTheory.CompanionTheory.ZuckTensHom.tensHom CompanionTheory.D.gk.FinalFormK.lie_algebra_homomorphism _root_.GlobalTheory.CompanionTheory.ZuckCasSplit.casSplit _root_.GlobalTheory.CompanionTheory.ZuckStdD.stdD
     CompanionTheory.D.gk.FinalFormK.kerZero' trivial_rep_admissible vector_rep_admissible _root_.GlobalTheory.CompanionTheory.ZuckTens.okTens
   inj := CompanionTheory.D.gk.FinalFormK.injectivity_induction
   occ := CompanionTheory.D.gk.FinalFormK.occurrence_induction
-  zuckH := GlobalTheory.T.zuckerman_hypothesis
-  decTens := GlobalTheory.T.decomposition_of_tensor_from_hom_laws GlobalTheory.T.HomCategory _root_.GlobalTheory.CompanionTheory.ZuckMatHom.matHom GlobalTheory.T.tensHom' CompanionTheory.D.gk.FinalFormK.lie_algebra_homomorphism trivial_rep_admissible
-  toRaw := GlobalTheory.T.ToRawComplex
+  zuckH := _root_.GlobalTheory.CompanionTheory.ZuckTransport.zuckerman_hypothesis_holds
+  decTens := _root_.GlobalTheory.CompanionTheory.ZuckDecTens.decTens _root_.GlobalTheory.CompanionTheory.ZuckHomCat.homCat _root_.GlobalTheory.CompanionTheory.ZuckMatHom.matHom _root_.GlobalTheory.CompanionTheory.ZuckTensHom.tensHom CompanionTheory.D.gk.FinalFormK.lie_algebra_homomorphism trivial_rep_admissible
+  toRaw := _root_.GlobalTheory.CompanionTheory.ZuckToRaw.toRaw
   count := _root_.GlobalTheory.CompanionTheory.ZuckCount.count
 
 end CompanionTheory.Zuck

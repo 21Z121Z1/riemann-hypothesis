@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TwistedModelAdmissibleCocycles
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.OnePlusPowerAssembly
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ModelPushOfSurjective
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ModelPreimageOfInjectiveFinDimRepModelHomStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ModelPreimageOfInjectiveFinDimRepModelHom
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ModelObjAndAbc
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SenMultiplicitySubquotientLatticeLe
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SenWeightsCloseOfHeightGammaConditions
@@ -35,7 +35,7 @@ theorem ModTh.hom_chr_eq_zero : ∀ {k G : Type} [Field k] [Group G] {l n : ℕ}
     refine ⟨(y 0 / p x 0) • x, funext fun i => ?_⟩
     rw [Subsingleton.elim i 0, map_smul, Pi.smul_apply, smul_eq_mul, div_mul_cancel₀ _ hx0]
   have hT := _root_.GlobalTheory.Models.model_obj_and_abc F M M.T M.Nstd M.std_model
-  have hsub := GlobalTheory.T.model_preimage_of_injective_finDimRepModelHom F M A₁ M.T j M.Nstd hj hinj M.std_model
+  have hsub := _root_.GlobalTheory.Models.SubModel.model_pre F M A₁ M.T j M.Nstd hj hinj M.std_model
   have hq := ModTh.model_push_of_surjective F M A₁ (chr (M.ω ^ (-e))) p _ hp hsurj hsub
   have hN := _root_.GlobalTheory.Models.model_obj_and_abc F M _ _ hq
   have hχ := M.abc_Nχ_of_range e h1 h2

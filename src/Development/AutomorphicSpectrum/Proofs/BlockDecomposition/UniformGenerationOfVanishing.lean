@@ -2,7 +2,7 @@ import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KerSCShortExact
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OperatorSequenceSumEpiStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KernelSequenceCoherent
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KernelOperatorsSpanEventuallyStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KernelOperatorsSpanEventually
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformSpanEventually
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedVanishingSectionsSpan
 
@@ -20,7 +20,7 @@ theorem uniformGen_of_gradedNoeth : GradedNoeth → UniformVanishing → Uniform
   have hcs : CompactSpace X := hH.compactSpace
   have hcoh := _root_.GlobalTheory.CompanionTheory.GE.isCoherent_kerSeq hM
   obtain ⟨d', hd'⟩ := _root_.GlobalTheory.CompanionTheory.GE.Uniform.span_range_eq_top_uniform (KerSeq.kerOp T hM.comm d) (fun e => (hcoh e).1)
-    (GlobalTheory.T.kernel_operators_span_eventually hN hM)
+    (_root_.GlobalTheory.CompanionTheory.GE.KerSeq.kerSeq_gen_bounded hN hM)
   have hK : OpSeq k (KerSeq.kerSeq T d) (KerSeq.kerOp T hM.comm d) d' :=
     ⟨hcoh, KerSeq.kerOp_comm T hM.comm d, hd'⟩
   obtain ⟨n₀, hn₀⟩ := hV (A := A) H hH k _ _ d' hK

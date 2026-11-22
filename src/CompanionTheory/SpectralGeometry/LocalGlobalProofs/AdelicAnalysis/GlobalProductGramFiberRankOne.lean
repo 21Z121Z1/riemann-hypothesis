@@ -1,6 +1,6 @@
 import Mathlib
 import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.FiniteAdeleHaarPiRestrictedProductStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.FiniteAdeleHaarPiRestrictedProduct
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.FiniteAdeleHaarEqProductLocalMeasures
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.LocalGramFiberRankOneSetFormula
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.AdelicTupleProjections
@@ -372,7 +372,7 @@ theorem box_meas (lam : ∀ v : HeightOneSpectrum (𝓞 F), Measure (Fv F v))
     (S : Finset (HeightOneSpectrum (𝓞 F)))
     (V : ∀ v : HeightOneSpectrum (𝓞 F), Set (Fv F v)) (hV : ∀ v, IsOpen (V v)) :
     lf (box S V) = ∏ v ∈ S, lam v (V v) := by
-  have key := GlobalTheory.T.finite_adele_haar_pi_restricted_product F lam hlam lf hlf hlf1 Unit S
+  have key := _root_.GlobalTheory.CompanionTheory.SW.AfBox.pi_box F lam hlam lf hlf hlf1 Unit S
     (fun v => (fun f : Unit → Fv F v => f ()) ⁻¹' V v)
     (fun v => (measurable_pi_apply ()) (hV v).measurableSet)
   have e1 : {x : Unit → Af F | (∀ v ∈ S, (fun i => evalV F v (x i)) ∈

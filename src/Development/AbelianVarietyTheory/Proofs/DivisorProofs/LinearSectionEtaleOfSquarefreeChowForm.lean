@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.AevalEqZeroOfMemCon
 import ReciprocityTheory.SemistableReduction.TorusL2CauchyInequality
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEqIsoSpecComp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPtOfMemConeOfIsAlgClosed
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChowFormZeroSetExtensionFieldIffCommonConeZeroStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChowFormZeroSetExtensionFieldIffCommonConeZero
 
 set_option autoImplicit false
 
@@ -25,7 +25,7 @@ theorem spec_zero_iff {F : Type} [Field F] [NumberField F] (T : Tuple F) (hT : T
       ∃ x ∈ T.geomPts E (T.linSection E s),
         ∑ j, ξ j * T.coords (LinSys.toBase x : T.Pt (AlgebraicClosure E)).1 j = 0 := by
   rw [eval_spec]
-  obtain ⟨hA, hB⟩ := GlobalTheory.T.chowForm_zeroSet_extensionField_iff_common_cone_zero F _ _ δ _ f hf
+  obtain ⟨hA, hB⟩ := _root_.GlobalTheory.ChowZeroExt.zero_set_ext F _ _ δ _ f hf
   have hs : ∀ (u y : Fin T.N → AlgebraicClosure E) (c : AlgebraicClosure E), ∑ j, u j * y j = 0 →
       ∑ j, u j * (c • y) j = 0 := fun u y c h => by
     simp only [Pi.smul_apply, smul_eq_mul, mul_left_comm _ c, ← Finset.mul_sum]

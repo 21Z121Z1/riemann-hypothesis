@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockDiagonalMinorVanishingStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockDiagonalMinorVanishing
 open MvPolynomial MeasureTheory Filter Topology Matrix ReciprocityTheory.AnForm ReciprocityTheory.AnForm.M ReciprocityTheory.AnForm.P ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.AI.I1 ReciprocityTheory.ChartRestriction.G.AI.I2 ReciprocityTheory.ChartRestriction.G.AI.I4 GlobalTheory.CompanionTheory.Ar.PB GroundTheory.Heights₂.Heights GroundTheory.Heights₂.Heights.LowerBoundFree
 open scoped ComplexOrder Classical
 
@@ -53,7 +53,7 @@ theorem unit_comb : ∀ (L : Type) [Field L] (V : ValuationSubring L) (N j : ℕ
     apply Subtype.ext
     change ((Hv.det : V) : L) * (H.det)⁻¹ = 1
     rw [hdetc, mul_inv_cancel₀ hdet]
-  have main := GlobalTheory.T.block_diagonal_minor_vanishing V N j i hj
+  have main := _root_.GlobalTheory.CompanionTheory.Ar.PB.MinorCalc.minors_main V N j i hj
   have hJ := stepCols_ne_empty (j := j) i hj
   have hBv : IsBlockDiag j Hv := fun a b hab => Subtype.ext (hB a b hab)
   have hstep : ∀ I, ¬ IsStepRows N j i I → minorIJ Hv I (stepCols N j i) = 0 := fun I hI =>

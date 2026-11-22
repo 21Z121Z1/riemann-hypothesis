@@ -10,11 +10,12 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.T2SpaceGeneralLinea
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GpProjContinuous
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsOpenFixedOfSubgroup
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HGPClosed
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemHGPIffParabolicStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemHGPIffParabolic
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GpProjLeviFormula
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GpProjUnipotent
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GpProjUnipotentSurjectiveStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactInductionTwistedKernelStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactInductionTwistedKernel
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFiniteSupport
 
 open Matrix GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.BZMir GlobalTheory.BZMir.Leib GlobalTheory.RgGu.Leib
 open scoped TensorProduct
@@ -199,7 +200,7 @@ theorem cc_tmul (a : ρ.V) (b : τ.V) : cc ρ τ ((a : Vt (j := j) ρ) ⊗ₜ[�
   cMap_tmul _ _ _ _
 
 theorem levi_mem_HGP (p : GL (Fin (m + j)) k) (hp : p ∈ parab k (eMJ m j)) : levi k (m + j) p ∈ MirabolicParabolic k m j :=
-  (GlobalTheory.T.mem_mirabolicParabolic_iff_parabolic k m j _).2 (by rwa [GlobalTheory.CompanionTheory.BZMirAdj.mirProj_levi])
+  (_root_.GlobalTheory.CompanionTheory.GPMem.mem_mirabolicParabolic_iff_mirabolicProj_mem_parabolic k m j _).2 (by rwa [GlobalTheory.CompanionTheory.BZMirAdj.mirProj_levi])
 
 theorem hcomp (p : parab k (eMJ m j)) (w : Vt (j := j) ρ ⊗[ℂ] Zt τ m) :
     ((dpow (m + j) (-1 / 2) (p : GL (Fin (m + j)) k) : ℂˣ) : ℂ) •
@@ -348,7 +349,7 @@ theorem exE (hρ : IsSmooth ρ.ρ) (hτ : IsSmooth τ.ρ) :
   have hker : ∀ g, mirabolicProjection k (m + j) g = 1 ↔ g ∈ MirUin k (m + j) := fun g =>
     ⟨GlobalTheory.CompanionTheory.BZMirAdj.mem_of_mirProj_eq_one k _ g, GlobalTheory.CompanionTheory.BZMirAdj.mirProj_eq_one_of_mem k _ g⟩
   have hUH : MirUin k (m + j) ≤ MirabolicParabolic k m j := fun g hg => by
-    refine (GlobalTheory.T.mem_mirabolicParabolic_iff_parabolic k m j g).2 ?_
+    refine (_root_.GlobalTheory.CompanionTheory.GPMem.mem_mirabolicParabolic_iff_mirabolicProj_mem_parabolic k m j g).2 ?_
     rw [GlobalTheory.CompanionTheory.BZMirAdj.mirProj_eq_one_of_mem k _ g hg]
     exact one_mem _
   have hN : (MirUin k (m + j)).Normal := by
@@ -360,11 +361,11 @@ theorem exE (hρ : IsSmooth ρ.ρ) (hτ : IsSmooth τ.ρ) :
   exact GlobalTheory.CompanionTheory.CIndCoinv.coinv_equiv (MirabolicParabolic k m j) (MirUin k (m + j)) (parab k (eMJ m j)) (levi k (m + j))
     (mirabolicProjection k (m + j)) (_root_.GlobalTheory.CompanionTheory.MirGP.isClosed_HGP k m j) (GlobalTheory.CompanionTheory.BZMirOnto.exists_compactOpen k (m + j))
     (GlobalTheory.CompanionTheory.BZMirFun.continuous_levi k (m + j)) (GlobalTheory.CompanionTheory.BZMirFun.continuous_mirProj k (m + j))
-    (GlobalTheory.CompanionTheory.BZMirAdj.mirProj_levi k (m + j)) hker hUH (fun g hg => (GlobalTheory.T.mem_mirabolicParabolic_iff_parabolic k m j g).1 hg)
+    (GlobalTheory.CompanionTheory.BZMirAdj.mirProj_levi k (m + j)) hker hUH (fun g hg => (_root_.GlobalTheory.CompanionTheory.GPMem.mem_mirabolicParabolic_iff_mirabolicProj_mem_parabolic k m j g).1 hg)
     (fun p hp => levi_mem_HGP p hp) (GlobalTheory.SplitWeil.KO k (Fin (m + j))) GlobalTheory.SplitFlip.isCompact_KO hPK
     (dpow (m + j) (-1 / 2)) (isOpen_dpow_ker _ _) (sig ρ τ) (isSmooth_sig ρ τ hρ hτ) (sigP ρ τ)
     (cc ρ τ) (cMap_surjective _ _ (mkZ_surjective τ)) (hck ρ τ) (hcomp ρ τ)
-    (GlobalTheory.T.compact_induction_twisted_kernel _ _ hUH (GlobalTheory.CompanionTheory.BZMirOnto.exists_compactOpen k (m + j)) _ (isSmooth_sig ρ τ hρ hτ))
+    (_root_.GlobalTheory.CompanionTheory.PRep.CIndKer.mem_twKer_cInd _ _ hUH (GlobalTheory.CompanionTheory.BZMirOnto.exists_compactOpen k (m + j)) _ (isSmooth_sig ρ τ hρ hτ))
 
 theorem psiMinus_cInd_equiv_smInd (hρ : IsSmooth ρ.ρ) (hτ : IsSmooth τ.ρ) :
     Nonempty ((twist (psiMinus k (cInd (MirabolicParabolic k m j) (sig ρ τ))) (dpow (m + j) (-1 / 2))).Equiv

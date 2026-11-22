@@ -5,9 +5,9 @@ import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.La
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.BernsteinUnitaryProductIrreducible
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsUnitPowTendstoZero
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CentralCharacterNormEqPow
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetMultiplicityPosOfSocleStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetMultiplicityPosOfSocle
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormLtOneOfPowTendstoZero
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExponentLtOfPrecedesStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExponentLtOfPrecedes
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CentralCharacterExists
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProdLeRevEqProdGe
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MultisetAntitoneEnumeration
@@ -71,7 +71,7 @@ theorem card_eq_one : ∀ (k : Type) [Field k] [ValuativeRel k] [TopologicalSpac
     exact Nat.mul_pos Δ.len_pos Δ.d_pos
   choose s hs using fun Δ => _root_.GlobalTheory.CompanionTheory.CentralExp.norm_scalarBy_eq_nabs_rpow k (y Δ) (hpos Δ)
   obtain ⟨h, D, hD, hanti, hno⟩ := GlobalTheory.CompanionTheory.Multiset.exists_antitone_listing 𝔪 s Segment.Precedes
-    fun a b hab => GlobalTheory.T.exponent_lt_of_precedes_of_isLSeg k a b (y a) (y b) (s a) (s b) (hy a) (hy b) (hs a) (hs b) hab
+    fun a b hab => _root_.GlobalTheory.CompanionTheory.SegExp.exponent_lt_of_precedes k a b (y a) (y b) (s a) (s b) (hy a) (hy b) (hs a) (hs b) hab
   let x : Fin h → IrrGL k := fun i => y (D i)
   have hLF : LFactors 𝔪 x := ⟨D, ⟨hD, hno⟩, fun i => hy (D i)⟩
   have hsum : ∑ a, (x a).1 = N := by
@@ -86,7 +86,7 @@ theorem card_eq_one : ∀ (k : Type) [Field k] [ValuativeRel k] [TopologicalSpac
     exact Equiv.sum_comp Fin.revPerm fun a => (x a).1
   have hsoc := hS 𝔪 h N x hsumrev hLF π hL
   have hposrev : ∀ a, 0 < ((x ∘ Fin.rev) a).1 := fun a => hpos _
-  have hjm := GlobalTheory.T.jacquet_multiplicity_pos_of_socle k h N (x ∘ Fin.rev) hsumrev π hsm hposrev hsoc
+  have hjm := _root_.GlobalTheory.CompanionTheory.SocleFrob.jm_ne_zero_of_isSocle k h N (x ∘ Fin.rev) hsumrev π hsm hposrev hsoc
   have hex := hC N π hN hsm hirr hsq h (x ∘ Fin.rev) hsumrev hposrev hjm
   obtain ⟨t, ht⟩ := _root_.GlobalTheory.CompanionTheory.LocalFieldPow.exists_unit_pow_tendsto_zero k
   have hnabs := _root_.GlobalTheory.CompanionTheory.NabsContract.nabs_lt_one_of_tendsto_pow k t ht

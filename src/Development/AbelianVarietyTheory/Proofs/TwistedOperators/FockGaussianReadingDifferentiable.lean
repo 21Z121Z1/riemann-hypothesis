@@ -3,8 +3,10 @@ import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.StdCharacterH
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.FockVacuumAnnihilationEquationRealCoordinates
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockCreationPreservesFockVectorsTwoFrames
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockVacuumRealRestrictionGaussianEntire
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SymplecticFormFockMatrixEqNegSumImRealPlacesStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisenbergTranslateFockVacuumCauchyRiemannStatement
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SymplecticFormFockMatrixEqNegSumImRealPlaces
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisenbergTranslateFockVacuumCauchyRiemann
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ComplexEmbeddingHermitianQuadrupleSum
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links MeasureTheory IsDedekindDomain NumberField Matrix
 open scoped TensorProduct ComplexConjugate
 attribute [local instance] Formalism.BasicNotions.Host.cmStar
@@ -112,7 +114,7 @@ theorem rd_differentiable : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (θ : 
   have hM : ∀ Z, M Z = (fun τ => fockMat A B τ (Z τ) : RW T S) := fun Z => rfl
   set G : RW T S → ℂ := fun w => heisO ψ S T (iotaW σ T S w) f x with hG
   set E : VCx D.what₂.Tau S.rank T.rank → ℂ := fun Z => ((Real.exp (gq (fw D) Z / 2) : ℝ) : ℂ) with hE
-  obtain ⟨hGd, hGc⟩ := GlobalTheory.T.heisenbergTranslate_fockVacuum_cauchyRiemann D θ σ h ψ hψ S T A B f hf x
+  obtain ⟨hGd, hGc⟩ := _root_.GlobalTheory.HeisTranslCR.heis_translate_cauchy_riemann D θ σ h ψ hψ S T A B f hf x
   obtain ⟨hEd, hEc⟩ := gauss_w_cr (a := S.rank) (b := T.rank) (fw D)
   have hrd : rd ψ σ A B f x = fun Z => G (M Z) * E Z := by
     funext Z
@@ -131,7 +133,7 @@ theorem rd_differentiable : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (θ : 
   rw [hd, hd]
   have hJ : M (Complex.I • Y) = GlobalTheory.VacUnique.jO S T A.cart B.cart (M Y) := by
     rw [hM, hM, jO_fockMat]
-  rw [hJ, hGc, ← hJ, hM, hM, hM, GlobalTheory.T.symplecticForm_fockMatrix_eq_neg_sum_im_real_places, GlobalTheory.T.symplecticForm_fockMatrix_eq_neg_sum_im_real_places]
+  rw [hJ, hGc, ← hJ, hM, hM, hM, _root_.GlobalTheory.FockOmega.omO_fockMat, _root_.GlobalTheory.FockOmega.omO_fockMat]
   have h1 : ∀ τ i j, (Z τ i j * conj ((Complex.I • Y) τ i j)).im = -(Z τ i j * conj (Y τ i j)).re := by
     intro τ i j
     simp only [Pi.smul_apply, smul_eq_mul, map_mul, Complex.conj_I, Complex.mul_im, Complex.mul_re,

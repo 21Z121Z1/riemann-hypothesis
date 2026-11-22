@@ -1,7 +1,10 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LieModel
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelFiniteProjectiveBis
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SmoothGroupTangentLiftStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SmoothGroupTangentLift
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCocharLie
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
 import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatLieA
 import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatLieB
 
@@ -37,7 +40,7 @@ theorem loc_of_charts {R : Type} [CommRing R] (x : Sp R ⟶ S) {J : Type} [Finit
       unit_of_dvd ((hix g).trans h)
     obtain ⟨e, he⟩ := exists_equiv (R := R) (ptAt x g'.1) (m (ix g) _ hu') (m (ix g') _ (unit_of_dvd (hix g')))
     haveI := cmap_loc h ht
-    haveI hcr := GlobalTheory.T.localized_module_base_change R (P (ix g)) (Localization.Away g.1) (Localization.Away g'.1) (f (ix g)) t
+    haveI hcr := _root_.GlobalTheory.CompanionTheory.LocHom.isLocalizedModule_compRight_away R (P (ix g)) (Localization.Away g.1) (Localization.Away g'.1) (f (ix g)) t
       (unit_of_dvd (hix g)) (cmap h) (cmap_loc h ht)
     have hrr : r = (e : _ →ₗ[R] _) ∘ₗ LinearMap.compRight R (cmap h).toLinearMap := by
       refine LinearMap.ext fun y => pt_left_inj (m (ix g') _ (unit_of_dvd (hix g'))) ?_
@@ -96,7 +99,7 @@ theorem exists_cover [Smooth G.hom] {R : Type} [CommRing R] (x : Sp R ⟶ S) :
   have hspan : Ideal.span {f : R | SmChart G x f} = ⊤ := by
     by_contra hne
     obtain ⟨p, hp, hle⟩ := Ideal.exists_le_maximal _ hne
-    obtain ⟨f, hf, h⟩ := GlobalTheory.T.smooth_group_tangent_lift S G R x p
+    obtain ⟨f, hf, h⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Chart.exists_chart_at_point S G R x p
     exact hf (hle (Ideal.subset_span h))
   obtain ⟨s, hs, hsp⟩ := (Ideal.span_eq_top_iff_finite _).mp hspan
   refine ⟨s, inferInstance, fun i => i, ?_, fun i => hs i.2⟩

@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Definitions.Foundations.MemRingOfInR
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModQPrin
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModJTau
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmpProps
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIntegralCuspExpansionJInvariantStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIntegralCuspExpansionJInvariant
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsCuspExpansionAtInfinityProperties
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.JTLevelOne
 open scoped UpperHalfPlane MatrixGroups ModularForm Manifold BigOperators
@@ -19,7 +19,7 @@ theorem j_in_frac : ∀ (Ω : Type) [Field Ω] [Algebra ℚ Ω] [IsAlgClosure �
   have hlv := (_root_.GlobalTheory.FN.jT_level_one ε.range).1
   let a : GlobalTheory.FN.ring ε.range := ⟨jT, mem_ring_of_inR ⟨1, 1, one_pos, hlv⟩⟩
   have ha : (a : ℍ → ℂ) = jT := rfl
-  obtain ⟨h, hexp, h1, h2, h3⟩ := GlobalTheory.T.exists_integral_cuspExpansion_jInvariant Ω ε
+  obtain ⟨h, hexp, h1, h2, h3⟩ := _root_.GlobalTheory.FNExpJ.expansion_j Ω ε
   have heq : T.exp (T.io a) = h :=
     (_root_.GlobalTheory.FNExp.exp_props Ω ε).2.1 jT _ _ (T.exp_io a) hexp
   refine ⟨a, ha, fun γ => ?_, ?_, ?_, ?_⟩

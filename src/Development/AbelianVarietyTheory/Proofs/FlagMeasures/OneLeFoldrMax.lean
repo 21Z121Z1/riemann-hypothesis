@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.DegVand
 import Formalism.LocalRingCardinality.DataTies
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AmplitudeAbsolutelyConvergentOperatorNormLeStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MajorantMomentBoundBothSides
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RootMeasureEqNormalFormRootMeasureStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RootMeasureEqNormalFormRootMeasure
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CellPointBlockEndsLeadingMinors
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.BlockAnti
 import Formalism.SharpRestriction.CuspSpanNormBounds.NormalizedLocalScale
@@ -167,7 +167,7 @@ theorem abs_range : ∀ Cg cb Cu cT CT C0 C1 CMo : ℝ, ∃ C₀ : ℝ, ∀ C �
     · exact le_trans (le_max_right 1 _)
         (le_foldr_max _ _ (List.mem_map.2 ⟨l.val, (hends l.val h0).1 hl, rfl⟩))
   obtain ⟨p', μR, hroot, hquot⟩ := hνR
-  obtain ⟨hN, hnorm⟩ := GlobalTheory.T.rootMeasure_eq_normalFormRootMeasure D W.z W.z' p' γ μR θ' hTF hroot hθ'0.le (by positivity)
+  obtain ⟨hN, hnorm⟩ := _root_.GlobalTheory.Amp.RootNormal.rootMeas_normR D W.z W.z' p' γ μR θ' hTF hroot hθ'0.le (by positivity)
   have hM0 : 0 ≤ max CMo 0 := le_max_right _ _
   have hH : 1 ≤ large₂.sc.b ^ (max CMo 0 * D.R.m) := Real.one_le_rpow (by linarith) (by positivity)
   obtain ⟨hint, hbd⟩ := GlobalTheory.T.amplitude_absolutelyConvergent_operatorNorm_le D.R.k D.R.rS W.z W.z' W.π W.π' _ _ W.μG W.μW W.μW' W.νS W.νS' _ νR S.Φ S.Φ' γ

@@ -42,7 +42,7 @@ theorem key_of_fix {D : D7} {cc : Ideal (𝓞 D.host.K)} {δ : ℂ} (h : Formali
     t' ∉ lamConj ⊤ ρ (lamOf D cc δ) ∧
       wpF (lamConj ⊤ ρ (lamOf D cc δ)) t' = cj ⊤ ρ (wpF (lamOf D cc δ) t) := by
   obtain ⟨hex, -, -, -, hmul, hord, -⟩ :=
-    GlobalTheory.T.galStar_complexMultiplication_points D cc δ h ⊤ ρ hK IntermediateField.mem_top IntermediateField.mem_top
+    _root_.GlobalTheory.ConjPoint.galStar_holds D cc δ h ⊤ ρ hK IntermediateField.mem_top IntermediateField.mem_top
   obtain ⟨cc', δ', h', -, hL⟩ :=
     _root_.GlobalTheory.ConjCurve.galCurve_holds D cc δ h ⊤ ρ hK IntermediateField.mem_top IntermediateField.mem_top 1 one_pos
   rw [GlobalTheory.ThetaConj.twoTorsionCMPoint_iff] at ht ht'
@@ -91,7 +91,7 @@ theorem key_top {D : D7} {cc : Ideal (𝓞 D.host.K)} {δ : ℂ} (h : Formalism.
     (ht' : Formalism.MainNotions.GL3Theta.IsTwoTorsionPointUnkilled D (lamConj ⊤ ρ (lamOf D cc δ)) t') :
     t' ∉ lamConj ⊤ ρ (lamOf D cc δ) ∧
       wpF (lamConj ⊤ ρ (lamOf D cc δ)) t' = cj ⊤ ρ (wpF (lamOf D cc δ) t) := by
-  obtain ⟨hK, hT, -⟩ := GlobalTheory.T.cmTheta_complexConjugation_compatible D cc δ h ⊤ ρ
+  obtain ⟨hK, hT, -⟩ := _root_.GlobalTheory.ThetaConj.useBar_holds D cc δ h ⊤ ρ
     ⟨fun _ _ => IntermediateField.mem_top, IntermediateField.mem_top, IntermediateField.mem_top⟩
   rcases hK with hK | hK
   · exact key_of_fix h ρ hK ht ht'

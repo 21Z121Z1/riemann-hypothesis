@@ -48,7 +48,7 @@ theorem PositivityTheory.ThKW.weil_pair_global_character_lift : ∀ (F E : Type)
     funext x
     simp only [deltaT_apply, star_mul']
     ring
-  obtain ⟨c, hc, H⟩ := abstract hψ (GlobalTheory.T.adelicSymplecticTraceForm_alternating_swap F E σ hinv _ _ JS _ hS hT' ξ₀ hσξ)
+  obtain ⟨c, hc, H⟩ := abstract hψ (_root_.GlobalTheory.SymplSkew.symplOF_swap F E σ hinv _ _ JS _ hS hT' ξ₀ hσξ)
     (_root_.GlobalTheory.T.rational_lattice_self_dual F E σ B hB _ _ JS _ hS hT' ξ₀ hξ)
     (fun p : T × T => ωd (1, hd) (deltaT p.1.1 p.2.1)) (fun p => deltaT (ω (1, h) p.1.1) p.2.1)
     (fun p => hωd.om_pres _ _ (theta_delta hψ.2.1 p.1.2 p.2.2))

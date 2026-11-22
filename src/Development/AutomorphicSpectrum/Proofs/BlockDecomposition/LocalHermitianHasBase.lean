@@ -6,7 +6,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianValuat
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianSplitRankOne
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitOrderFgIdealProductStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MaxEvenLatticeRankOneSplit
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConjugationInvariantValuationFieldStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConjugationInvariantValuationField
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TensorFixedByInvolutionIsBase
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitLocalTensorProductSwap
 
@@ -178,7 +178,7 @@ theorem hasBase_of_split {k R : Type} [Field k] [CommRing R] (O : ValuationSubri
 theorem hasBase_place : ∀ {F E : Type} [Field F] [NumberField F] [Field E] [NumberField E] [Algebra F E] {σ : E →ₐ[F] E}, IsCMExt F E σ → ∀ (v : HeightOneSpectrum (𝓞 F)), HasBase (sigR (Fv F v) σ) (intLoc F E v) := by
   intro F E _ _ _ _ _ σ hcm v
   by_cases hF : IsField (Fv F v ⊗[F] E)
-  · obtain ⟨W, hW, hWc⟩ := GlobalTheory.T.conjugation_invariant_valuation_field hcm v hF
+  · obtain ⟨W, hW, hWc⟩ := _root_.GlobalTheory.CompanionTheory.KFin.FieldVal.exists_valuation hcm v hF
     refine hasBase_of_field (k := Fv F v) (sigR (Fv F v) σ) (intLoc F E v) W
       (fun a ha => hF.mul_inv_cancel ha) ?_ (fun a ha => _root_.GlobalTheory.CompanionTheory.KFin.sigR_fixed_eq_algebraMap hcm (Fv F v) a ha) ?_ ?_ hWc ?_ ?_
     · intro a

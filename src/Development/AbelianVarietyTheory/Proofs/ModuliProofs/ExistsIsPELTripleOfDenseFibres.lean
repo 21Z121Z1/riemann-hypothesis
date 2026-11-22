@@ -14,12 +14,13 @@ import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsPrimitiveNorma
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsGenMovePow
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.WeilIsIffOfIsGrpPullbackComm
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsPELPull
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PelStructureDescendsFieldExtensionStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PelStructureDescendsFieldExtension
+import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.FiniteHomogeneousInf
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.OActSpreadFromDenseFibresAbelianScheme
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.AdjointEndomorphismsCubeLBOfDenseFibres
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LbIsoCubeGraphOfDenseFibres
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TorsionIsometryPrimitiveRootBijectiveModN
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TateIsometryOfFiniteLevelIsometriesStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TateIsometryOfFiniteLevelIsometries
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.DeterminantConditionSpreadsOfDensePoints
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsLevelIsometryOfDenseGeometricPoints
 
@@ -79,7 +80,7 @@ theorem exists_fibre (hL : Out.Laws) (hcl : Subring.closure (Set.range a) = ⊤)
     ∃ (K : Type) (_ : Field K) (_ : CharZero K) (x : Sp K ⟶ S) (tx : TObj g k J b (x ≫ s)) (τ : SAB H (Sp K)),
       p ∈ Set.range x ∧ TMap tx t x ∧ IsPEL D a bas ρ tx τ := by
   obtain ⟨K, _, x, hx, K₀, _, β, i, j, t₀, tx, tc, hj, hs, m₁, m₂, m₃, τ, hτ⟩ := hp
-  obtain ⟨τ₀, h₀⟩ := GlobalTheory.T.pelStructure_descends_field_extension hL E H D g k J a bas o b ρ K₀ ℂ j β _ t₀ tc τ hcl
+  obtain ⟨τ₀, h₀⟩ := _root_.GlobalTheory.PELDesc.isPEL_descends hL E H D g k J a bas o b ρ K₀ ℂ j β _ t₀ tc τ hcl
     (by rw [← hj]; exact Spec.map_comp _ _) m₃ hτ
   obtain ⟨τ', h'⟩ := PELPull.isPEL_pull E H D g k J a bas o b ρ _ _ _ _ _ t₀ tx τ₀ hs.symm m₂ h₀
   have : CharZero K₀ := j.charZero
@@ -181,7 +182,7 @@ theorem exists_isPEL_of_dense : Out.Laws → Out.Laws2 → (∀ (S : Scheme.{0})
   have hcard : ∀ n, 0 < n → Nat.card {z : Over.mk x ⟶ t.A // z ^ n = 1} = n ^ Module.finrank ℤ D.La := fun n hn => by
     rw [← bas.finrank_eq, Module.finrank_fin_fun]
     exact (hL.mulN S t.pol n hn).2.2.2.2 K x (Nat.cast_ne_zero.2 hn.ne')
-  obtain ⟨I, hI, hA⟩ := GlobalTheory.T.tateIsometry_of_finiteLevel_isometries E H D K (Over.mk x ⟶ t.A) (fun c z => z ≫ r.act c)
+  obtain ⟨I, hI, hA⟩ := _root_.GlobalTheory.TateTower.tateIso_of_levels E H D K (Over.mk x ⟶ t.A) (fun c z => z ≫ r.act c)
     (fun n z z' c => Out.WeilIs t.A t.L n z z' (unitOn c)) k (β b.ζ) _ (fun i => bas (Pi.single i 1))
     (fun i => (Over.homMk x (by simp) : Over.mk x ⟶ Out.baseOver S) ≫ t.pt i) hk
     (fun n hn => Nat.finite_of_card_ne_zero (by rw [hcard n hn]; positivity))

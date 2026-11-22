@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasLabelTransp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviTensorBlockExt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviPiTensorRepresentationIsIrreducible
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalPiTensorNoBlockUnipotentFixedStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasCuspidalFactorAtBlockLeviPiTensorStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasCuspidalFactorAtBlockLeviPiTensor
 
 noncomputable section
 namespace GlobalTheory.HcIrr
@@ -146,8 +146,8 @@ theorem distinctFactors {C : LabelConv K} (O : LabelMap K C) (b : Fin r → Fin 
     (hinj : Function.Injective (fun c => labO O (lam c))) :
     GlobalTheory.IndefiniteRowSideFullHecke.BlockEmbeddingFactors.DistinctFactors (natBlocks b) (leviTensor b lam) := by
   rintro _ ⟨i, rfl⟩ _ ⟨j, rfl⟩ hne ⟨d, h, h', W, _, _, ρ, hf, hf'⟩
-  obtain ⟨e, L, hL⟩ := GlobalTheory.T.hasCuspidalFactorAtBlock_leviPiTensor K r s b lam hs (b i) d h W ρ hf
-  obtain ⟨e', L', hL'⟩ := GlobalTheory.T.hasCuspidalFactorAtBlock_leviPiTensor K r s b lam hs (b j) d h' W ρ hf'
+  obtain ⟨e, L, hL⟩ := _root_.GlobalTheory.HcIrr.Factor.factor_iso K r s b lam hs (b i) d h W ρ hf
+  obtain ⟨e', L', hL'⟩ := _root_.GlobalTheory.HcIrr.Factor.factor_iso K r s b lam hs (b j) d h' W ρ hf'
   have hlab : labO O (lam (b i)) = labO O (lam (b j)) := by
     refine labO_eq_of_readings O d e e' _ _ (L.symm.trans L') fun g v => ?_
     obtain ⟨w, rfl⟩ := L.surjective v

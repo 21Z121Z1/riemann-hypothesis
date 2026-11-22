@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PartialZetaDenomina
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeWeightTwoContinuationOfFunctionalEquation
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.OmegaFactorization
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmLatticeDerivClassInvarianceOfHeckeStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LipschitzFormulaTotallyRealPoissonStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LipschitzFormulaTotallyRealPoisson
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertEisensteinExpansionOfLipschitzHeckeZeta
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.TraceDualDifferent
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertEisensteinValueDerivativesViaJets
@@ -89,7 +89,7 @@ theorem latAlg_of_siegelKlingen : GlobalTheory.Published.SiegelKlingenDeligneRib
     exact latDisc_ne_zero Λ₀ (by rw [← hΩ]; simp)
   have hW2 := _root_.GlobalTheory.HeckeTwo.heckeWeightTwo_of_fe hPZ
   have hSt := GlobalTheory.T.cmLattice_derivClassInvariance_of_hecke hW2
-  have hEis := _root_.GlobalTheory.HilbertEis.eisExp GlobalTheory.T.lipschitz_formula_totally_real_poisson hW2 hPZ
+  have hEis := _root_.GlobalTheory.HilbertEis.eisExp _root_.GlobalTheory.LipschitzTR.lipschitz hW2 hPZ
   obtain ⟨⟨z, hz⟩, -⟩ := GlobalTheory.T.partialZetaDenominatorsCMField_of_siegelKlingenDeligneRibet hSKDR E s hs
   obtain ⟨⟨g, hg⟩, hD⟩ := (((hSt E I φ hf2 hCM).1 s hs).1 (condQ 𝔣 Q) y hc0).1
   obtain ⟨u, hu⟩ := GlobalTheory.LatAlgebraic.exists_list_count κ

@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Alternates
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 import Formalism.FrobeniusOrbits.HostCorollaries
 import Development.AutomorphicArithmetic.CyclotomicBounds.PlaceOfLetterInjective
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ComplexConjugationOrbitOneRealPlaceStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ComplexConjugationOrbitOneRealPlace
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AtMostTwoThickInWindowLongOrbit
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CyclicWordNoThreeMarkedOfAtMostOne
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.OrderOfEqMaxTwoOfSignNegImplicit
@@ -27,7 +27,7 @@ theorem inert_nothree_nonthick : ∀ {R : Ranks} (H : Host R) (τ φ : R.GG), 3 
     have hno : ∀ i : ZMod (orderOf (R.cc)), ¬ Thick H (letter τ (R.cc) i) := by
       intro i h
       apply hτ
-      have := (GlobalTheory.T.complexConjugation_orbit_one_realPlace τ).2 i
+      have := (_root_.GlobalTheory.HTW.ConjWord.conj_word_one_place τ).2 i
       unfold Thick at h ⊢
       rw [this] at h
       exact h

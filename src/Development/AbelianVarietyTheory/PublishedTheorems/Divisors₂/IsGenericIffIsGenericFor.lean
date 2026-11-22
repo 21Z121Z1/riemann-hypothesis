@@ -126,7 +126,7 @@ open GlobalTheory.CuspGeneric GlobalTheory.CuspRep.Generic in
 theorem cuspidalGeneric_holds : CuspidalGeneric := by
   intro E _ _ _ a _ P w ψ' hc' h1'
   obtain ⟨ψ, hψ⟩ := _root_.GlobalTheory.CuspGeneric.exists_stdPsi E
-  have hg : ∀ v : P.V, Good ψ (a - 1) v.1.1 := fun v => GlobalTheory.T.isMirabolicWhittakerStage_of_isCuspForm E a ψ v.1 (P.cusp _ v.2)
+  have hg : ∀ v : P.V, Good ψ (a - 1) v.1.1 := fun v => _root_.GlobalTheory.CuspGeneric.good_of_isCuspForm E a ψ v.1 (P.cusp _ v.2)
   have h0 : a - 1 < a ∨ a - 1 = 0 := by omega
   have := Submodule.nontrivial_iff_ne_bot.2 P.ne_bot
   obtain ⟨v₀, hv₀⟩ := exists_ne (0 : P.V)

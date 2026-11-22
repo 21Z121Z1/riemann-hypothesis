@@ -1,5 +1,5 @@
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.StrictDominance.JointGeneralisedEigenvectors.CasselmanStrictlyDominantExample
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CasselmanFirstPropertyStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CasselmanFirstProperty
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetProjectionHeckeHolds
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.StrictDominance.JointGeneralisedEigenvectors.IsJointGenEig
 import Mathlib
@@ -16,7 +16,7 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ApplyMemTwKerOfN
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsGenericIffIsGenericFor
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParIndJacPlacing
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwahoriUnipotentDatum
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DominantUnipotentContractionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DominantUnipotentContraction
 
 noncomputable section
 
@@ -29,7 +29,7 @@ theorem iwahori_u : IwahoriU :=
   _root_.GlobalTheory.CompanionTheory.IwUnit.iwahoriU
 
 theorem dom_u : DomU :=
-  GlobalTheory.T.dominant_unipotent_contraction
+  _root_.GlobalTheory.CompanionTheory.DomUnitary.domU
 
 end PositivityTheory.SphericalProduct
 

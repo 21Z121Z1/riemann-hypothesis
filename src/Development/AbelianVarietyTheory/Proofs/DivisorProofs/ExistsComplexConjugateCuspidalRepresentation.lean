@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Cu
 import Development.AbelianVarietyTheory.Definitions.Divisors.LineOppositeParabolicUnitaryLeviSectionEq
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsSatVecUOfIsSphericalU
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothAdelicGLComplexConjCommutesOperators
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CapelliOperatorAlgebraStableUnderComplexConjStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CapelliOperatorAlgebraStableUnderComplexConj
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCuspFormOfConjPointwise
 open NumberField IsDedekindDomain Formalism.L2.Host GlobalTheory.CuspRep GlobalTheory.ContraPair
 
@@ -39,7 +39,7 @@ theorem exists_conj_cuspSub : ∀ (E : Type) [Field E] [NumberField E] [IsTotall
     ∃ (π' : CuspSub E a) (J : π.V ≃ₗ⋆[ℂ] π'.V), ∀ o φ, J (π.op o φ) = π'.op o (J φ) := by
   intro E _ _ _ a π
   obtain ⟨C, hC, hact⟩ := _root_.GlobalTheory.smooth_conj_commutes_act E a
-  have hZ := GlobalTheory.T.capelli_operator_algebra_stable_under_complex_conj E a C hact
+  have hZ := _root_.GlobalTheory.CuspRep.ConjZalg.conj_Zalg E a C hact
   have hcusp := isCuspForm_of_conj_pointwise E a C hC hact hZ
   refine ⟨π.mapConj C hact hcusp, C.submoduleMap π.V, fun o φ => Subtype.ext ?_⟩
   exact (hact o φ.1).symm

@@ -49,7 +49,7 @@ theorem finite_adele_acts_placewise : _root_.GlobalTheory.FunPr.ThetaLocalInputs
           (∀ v, φ' v - φ v ∈ augAt ω v) ∧ ω (g, 1) (pure f φ) = pure f φ' := by
     intro n Y M χX χW ω r s r' s' hP hsph g hg f φ hφ hvac
     classical
-    obtain ⟨S₁, hS₁⟩ := GlobalTheory.T.exists_finset_adelicUnitary_preserves_lattice_almost_all σ Y hP.herm.lat g
+    obtain ⟨S₁, hS₁⟩ := _root_.GlobalTheory.LatAlmostAll.exists_finset_keeps σ Y hP.herm.lat g
     have hfin := Filter.eventually_cofinite.1 hvac
     set S : Finset (GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Pl F) := S₀ ∪ S₁ ∪ hfin.toFinset with hSdef
     obtain ⟨gS, k, hgk, hgS, hkS, hkI, hkL⟩ := _root_.GlobalTheory.PlaceCut.exists_cut σ Y g S

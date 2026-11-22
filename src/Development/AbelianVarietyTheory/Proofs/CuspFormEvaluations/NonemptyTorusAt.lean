@@ -6,7 +6,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.F
 import ReciprocityTheory.L2DbarEstimates.LeviForms.OfRealNormSqSumMul
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.FirstMinimumSqMulIInfHeightLeCard
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsGeneratorsLattice
-import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.LogThetaSumInvariantSmoothStatement
+import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.LogThetaSumInvariantSmooth
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.LeviLogThetaSum
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.TorusAtExists
 
@@ -41,7 +41,7 @@ theorem exists_weight : TStatement → ∀ (E : Type) [Field E] [NumberField E] 
       · exact ⟨0, fun h => absurd h hx⟩
     choose ps hps using h
     exact ⟨ps, hps⟩
-  obtain ⟨h1, h2⟩ := GlobalTheory.T.log_theta_sum_invariant_smooth_alt E r X hiso hw ps hps
+  obtain ⟨h1, h2⟩ := _root_.GlobalTheory.ThetaLogSum.log_theta_sum_invariant_smooth E r X hiso hw ps hps
   refine ⟨ps, h1, h2, _root_.GlobalTheory.ThetaSumLevi.levi_log_theta_sum E r X hiso hw ps hps, ?_⟩
   obtain ⟨C, A', -, hC⟩ := GlobalTheory.ThetaSumBound.growth_decay hT E r X hiso hf1 hf2 hrd hm
   refine ⟨⟨C, A', fun x hx => ?_⟩, fun η hη _ => ⟨C, A', fun x hx ξ hξ ht => ?_⟩⟩

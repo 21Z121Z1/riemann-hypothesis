@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WHyp
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFactsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFacts
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSelfDualHaarHyperbolicKernelPsiK
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SelfDualMeasureExistsUniqueFourierInversion
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
@@ -11,7 +11,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsLocallyConst
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PartialFourierPsiKPreservesTestFunctions
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HyperbolicPartialFourierTwiceEqReflection
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HyperbolicPartialFourierScaleEqTorusAction
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SelfDualMeasureEtaleHermitianEqCoordsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SelfDualMeasureEtaleHermitianEqCoords
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HyperbolicWeylActionEqFourierEtaleL
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsLocallyConstantEtaleTraceAddCharHermitianKerneStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HyperbolicPartialFourierLinearOnTest
@@ -73,7 +73,7 @@ theorem weil_hyperbolic : ∀ (F E : Type) [NontriviallyNormedField F] [Nontrivi
     rw [hW, h, h4 Φ' hΦ']
   have hetaK : ∀ s : A.Kˣ, A.etaK s = 1 := by
     intro s
-    have h1 := (GlobalTheory.T.etaleHermitianPair_structure_facts F E A).2.2.2.1 (Hyp.cc A e ((s : A.K), 1)) (hunit s)
+    have h1 := (_root_.GlobalTheory.JR.EtFacts.main F E A).2.2.2.1 (Hyp.cc A e ((s : A.K), 1)) (hunit s)
     rwa [hN, mul_one] at h1
   refine ⟨Hyp.wHyp A e ν ψ x, ⟨?_, ?_, ?_, ?_⟩, ?_⟩
   · intro g φ hφ
@@ -116,6 +116,6 @@ theorem weil_hyperbolic : ∀ (F E : Type) [NontriviallyNormedField F] [Nontrivi
     · intro y
       rw [one_mul]
       exact _root_.GlobalTheory.JR.Hyp.wHyp_wS_eq_fourB F E A ψ (x : A.K) e ν μ hT hDD (fun Φ hΦ => hTrg _ Φ hΦ) hTcc hcc (hker ψ (x : A.K))
-        (hkerlc (x : A.K)) (GlobalTheory.T.selfDualMeasure_etaleHermitian_eq_coords F E A ψ hψ x e he hse ν μ hν hμ) φ hφ y
+        (hkerlc (x : A.K)) (_root_.GlobalTheory.JR.Hyp.measure_eq_coords F E A ψ hψ x e he hse ν μ hν hμ) φ hφ y
 
 end GlobalTheory.JR

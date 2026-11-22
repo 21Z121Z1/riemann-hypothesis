@@ -7,9 +7,9 @@ import Formalism.PieriBlockIdeals.StatementLA
 import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.RamBasic
 import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.FormulaAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BranchingPairingMapExtendScalarsEmbedding
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BilinearFockPairingSqLeHermitianNormsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BilinearFockPairingSqLeHermitianNorms
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BranchingMapHermitianNormLeProdBoundsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianFockNormAdjugateSubstSymmLeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianFockNormAdjugateSubstSymmLe
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links Formalism.L2.DIV
 open IsDedekindDomain NumberField Matrix GlobalTheory.ChiGrid GlobalTheory.FunObj GlobalTheory.RowTest GlobalTheory.RowClaim GlobalTheory.TestLat GlobalTheory.SumSize
@@ -45,9 +45,9 @@ theorem inf_bound : ∀ {K ι : Type} [Field K] [CharZero K] [Fintype ι] (φ : 
   rw [_root_.GlobalTheory.BrPairF.brPairF_map_descent φ hN Λ σ u v, GlobalTheory.BrPairF.brPairF_apply]
   set u' := GlobalTheory.CoefModel.mapVV φ Λ u
   set v' := GlobalTheory.CoefModel.mapVV φ _ v
-  have h1 := GlobalTheory.T.bilinearFockPairing_sq_le_hermitianNorms σ (Formalism.L2.Col.Br.brStd hN Λ σ u') ((GlobalTheory.FunObj.funEquiv σ).symm v')
+  have h1 := _root_.GlobalTheory.FockCauchySchwarz.pairBK_sq_le σ (Formalism.L2.Col.Br.brStd hN Λ σ u') ((GlobalTheory.FunObj.funEquiv σ).symm v')
   have h2 := GlobalTheory.T.branchingMap_hermitianNorm_le_prod_bounds hN Λ σ hI hS u'
-  have h3 := GlobalTheory.T.hermitianFockNorm_adjugateSubst_symm_le σ v'
+  have h3 := _root_.GlobalTheory.FunIsom.pairK_funEquiv_symm_le σ v'
   have p2 := pairK_one_re_nonneg σ ((GlobalTheory.FunObj.funEquiv σ).symm v')
   have p3 := pairK_one_re_nonneg Λ u'
   calc _ ≤ _ := h1

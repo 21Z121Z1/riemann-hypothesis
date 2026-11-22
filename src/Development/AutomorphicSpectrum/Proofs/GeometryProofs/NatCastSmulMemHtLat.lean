@@ -13,7 +13,7 @@ import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.HtExists
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueTangentDualNumber
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsStalkFractionOfGenericStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorusPointOverFractionField
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionLiftIsClosedImmersionStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionLiftIsClosedImmersion
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SectionExtendsFromStalkPullback
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj
@@ -259,7 +259,7 @@ theorem lift_sec [IsSeparated G.hom] (p : X) [IsDomain (X.presheaf.stalk p)] {T 
       rw [Over.w]
       rfl
     exact e
-  have := GlobalTheory.T.torsion_lift_is_closed_immersion G _ T Γ' (X.fromSpecStalk p) N i h
+  have := _root_.GlobalTheory.CompanionTheory.Ar.BT.isClosedImmersion_torsion_lift G _ T Γ' (X.fromSpecStalk p) N i h
   have key : ∀ i', pullback.lift i Γ'.G.hom h.isOver ≫ pullback.fst G.hom (X.fromSpecStalk p) = i' →
       ∃ (W : G.left.Opens) (f : Γ(G.left, W)), (η[G]).left p ∈ W ∧
       (i'.app W).hom f = Γ'.G.left.presheaf.map (homOfLE (le_top : i' ⁻¹ᵁ W ≤ ⊤)).op s := by

@@ -8,12 +8,13 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExpStar
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicCharacterPadicBasicProperties
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousOrbitPadicComplex
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormUnitPowSubOne
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFontaineThetaOnAinfStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DeRhamFilQuotientXiPowerAinfStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TateInvariantsCyclotomicTwistStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFontaineThetaOnAinf
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DeRhamFilQuotientXiPowerAinf
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TateInvariantsCyclotomicTwist
+import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicTwistCocycleCoboundaryStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.H1BallCocycleLogCyclotomicStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyThetaOnBdRPlusPeriodDataStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.H1BallCocycleLogCyclotomic
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyThetaOnBdRPlusPeriodData
 import Development.AbelianVarietyTheory.CrystallinePeriods.RingBasics
 
 noncomputable section
@@ -29,7 +30,7 @@ variable (AI : LocAinf l P)
 
 theorem orbit_one (a : Ainf l) : ∀ᶠ g in 𝓝 (1 : GQ l),
     AI.actW g a - a ∈ Ideal.span {((l : ℕ) : Ainf l)} ⊔ Ideal.span {AI.ξ} := by
-  obtain ⟨θ, -, hs, he, hk, -⟩ := GlobalTheory.T.exists_fontaineTheta_on_Ainf l P AI
+  obtain ⟨θ, -, hs, he, hk, -⟩ := _root_.GlobalTheory.Cyc.exists_isTheta l P AI
   have hc := GlobalTheory.Cyc.IsActC.continuous_orbit l AI.actC ⟨AI.actC_ext, AI.actC_norm⟩ (θ a : OC l)
   have hl : 0 < ‖(l : PadicComplex l)‖ := norm_pos_iff.2 GlobalTheory.RingBasics.p_ne_zero
   have h1 := Metric.tendsto_nhds.1 (hc.tendsto 1) _ hl
@@ -249,7 +250,7 @@ include J
 theorem small_cob (u : GQ l → ℚ_[l]) (hu : Tendsto u (𝓝 1) (𝓝 1)) (hu1 : ∀ g, ‖u g‖ ≤ 1) (n k : ℕ)
     {b : P.R.BdR} (hb : b ∈ Fl P 0) :
     ∀ᶠ g in 𝓝 (1 : GQ l), Small AI n k (qB P (u g) * P.actQdR g b - b) := by
-  obtain ⟨h1, h2, -⟩ := GlobalTheory.T.deRham_fil_quotient_xi_power_ainf l P AI T J n
+  obtain ⟨h1, h2, -⟩ := _root_.GlobalTheory.BdRQuot.fil_quotient l P AI T J n
   obtain ⟨m, a, ha⟩ := h1 b hb
   have hu' : Tendsto (fun g => u g - 1) (𝓝 1) (𝓝 0) := by simpa using hu.sub_const 1
   filter_upwards [small_tendsto T hu' n (m + k), orbit AI n (m + k) a] with g h3 ⟨x, y, h4⟩
@@ -275,7 +276,7 @@ theorem small_cob (u : GQ l → ℚ_[l]) (hu : Tendsto u (𝓝 1) (𝓝 1)) (hu1
 theorem norm_of_small (i k : ℕ) {y : P.R.BdR} (hy : y ∈ Fl P 0)
     (h : Small AI (i + 1) k (tt P ^ i * y)) :
     ‖J.θ y‖ * ‖((AI.ζ 1 : OC l) : PadicComplex l) - 1‖ ^ i ≤ ‖(l : PadicComplex l)‖ ^ k := by
-  obtain ⟨-, h2, w, hw, e, hθ⟩ := GlobalTheory.T.deRham_fil_quotient_xi_power_ainf l P AI T J i
+  obtain ⟨-, h2, w, hw, e, hθ⟩ := _root_.GlobalTheory.BdRQuot.fil_quotient l P AI T J i
   obtain ⟨a, ha⟩ := h
   have h3 : tt P ^ i * y ∈ Fl P i := by simpa using (fl_pow J 0 i _).2 ⟨y, hy, rfl⟩
   have h4 : (l : P.R.BdR) ^ k * P.ιB (AI.ιA a) ∈ Fl P i := by
@@ -352,7 +353,7 @@ theorem H1_spanned_by_log_cyclotomic {f : GQ l → PadicComplex l} (hf : CocOn (
     ∃ α ∈ Ks K s, ∃ b, ∀ g ∈ Gj K s,
       f g = qC l (logZl l (χ g : ℚ_[l])) * ((α : Om l) : PadicComplex l) + (act g b - b) := by
   obtain ⟨m, hm⟩ := exists_scale K s hf.1
-  obtain ⟨_, ⟨α, hα, rfl⟩, -, x, hx⟩ := (GlobalTheory.T.cocycle_eq_log_cyclotomic_smul_add_coboundary l act χ ha hχ K s hs).1
+  obtain ⟨_, ⟨α, hα, rfl⟩, -, x, hx⟩ := (_root_.GlobalTheory.Cyc.LogClass.image_H1_logChi l act χ ha hχ K s hs).1
     (fun g => (l : PadicComplex l) ^ m * f g)
     ⟨continuousOn_const.mul hf.1, hm, fun g hg h hh => by
       simp only [hf.2.2 g hg h hh, map_mul, map_pow, map_natCast]; ring⟩
@@ -486,7 +487,7 @@ theorem eq_zero_of_cob {e : ℕ} {α : Om l} (hα : α ∈ Ks K s) {b : P.R.BdR}
       obtain ⟨y, hy, rfl⟩ := ih (by omega)
       obtain ⟨d, rfl⟩ : ∃ d, e = i + 1 + d := Nat.exists_eq_add_of_le hi
       have h0 : J.θ y = 0 := by
-        refine (GlobalTheory.T.tate_invariants_cyclotomic_twist l AI.actC P.χQ ⟨AI.actC_ext, AI.actC_norm⟩ P.χQ_cyc K s hs
+        refine (_root_.GlobalTheory.CyclotomicTowerSubgroupInclusions.invariants_twist l AI.actC P.χQ ⟨AI.actC_ext, AI.actC_norm⟩ P.χQ_cyc K s hs
           ((i : ℤ) - (i + 1 + d : ℕ)) _ fun σ hσ => ?_).1 (by omega)
         have h1 := mul_mem_deRhamPeriodFiltration_of_mem_zero (q_mem ((P.χQ σ ^ ((i : ℤ) - (i + 1 + d : ℕ)) : ℚ_[l]ˣ) : ℚ_[l])) (act_mem σ hy)
         rw [← th_tw J _ _ hy, ← sub_eq_zero, ← th_sub J h1 hy, ← fl_succ J i (sub_mem h1 hy)]
@@ -499,7 +500,7 @@ theorem eq_zero_of_cob {e : ℕ} {α : Om l} (hα : α ∈ Ks K s) {b : P.R.BdR}
       have := (fl_succ J i hy).2 h0
       exact (fl_pow J 0 (i + 1) _).1 (by simpa using this)
   obtain ⟨y, hy, rfl⟩ := key e le_rfl
-  have := (GlobalTheory.T.cocycle_eq_log_cyclotomic_smul_add_coboundary l AI.actC P.χQ ⟨AI.actC_ext, AI.actC_norm⟩ P.χQ_cyc K s hs).2 α ⟨α, hα, rfl⟩
+  have := (_root_.GlobalTheory.Cyc.LogClass.image_H1_logChi l AI.actC P.χQ ⟨AI.actC_ext, AI.actC_norm⟩ P.χQ_cyc K s hs).2 α ⟨α, hα, rfl⟩
     (J.θ y) fun σ hσ => by
       have h1 := act_mem σ hy
       rw [← J.θ_Om, ← th_q J _ (om_mem α), ← J.θ_act σ y hy, ← th_sub J h1 hy, ← sub_eq_zero,
@@ -519,7 +520,7 @@ theorem logChi_eq (LT : LocTheory) (σ : GQ l) :
 
 theorem expStar_existsUnique : ∀ (D : Formalism.BasicNotions.D7) (l : ℕ) [Fact l.Prime] (K : FinExt l) (s : ℕ), Lev l s → ∀ e : ℕ, (∀ z : GQ l → ℚ_[l], CocOn (Gj K s) (fun σ y => (((D.loc l).χQ σ ^ (-(e : ℤ)) : ℚ_[l]ˣ) : ℚ_[l]) * y) Set.univ z → ∃ α ∈ Ks K s, ExpStar D.loc (Gj K s) e z α) ∧ ∀ (z : GQ l → ℚ_[l]) (α α' : Om l), α ∈ Ks K s → α' ∈ Ks K s → ExpStar D.loc (Gj K s) e z α → ExpStar D.loc (Gj K s) e z α' → α = α' := by
   intro D l _ K s hs e
-  obtain ⟨J⟩ := GlobalTheory.T.nonempty_thetaOnBdRPlus_periodData D l
+  obtain ⟨J⟩ := _root_.GlobalTheory.ThetaTie.nonempty_thetaL D l
   constructor
   · intro z hz
     obtain ⟨α, hα, b, hb, h⟩ := exists_exp (D.locT l) J K hs hz

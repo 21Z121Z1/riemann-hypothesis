@@ -12,7 +12,8 @@ import Formalism.HermitianCurvature.HermitianCurvatureProofs.UhMeasurableSet
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MajorantLengthTailBoundOfMoments
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MajorantLengthTwoSidedMomentsLargeGap
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MajorantLengthTailBoundPrimedOfUnprimed
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AmplitudeOneSideOfGoodLocalDataStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AmplitudeOneSideOfGoodLocalData
+import Formalism.SharpRestriction.CuspSpanNormBounds.NormalizedLocalScale
 
 open BranchingSupport GlobalTheory.CellAmp GlobalTheory.Amp GlobalTheory.TypeAsm Formalism.BasicNotions Formalism.MainNotions.S Formalism.QuantumDeterminants Matrix MeasureTheory Finset
 open scoped InnerProductSpace ENNReal
@@ -60,7 +61,7 @@ theorem tailP_of_gap : GlobalTheory.GapIn.Hyp → TailP := by
     intro W' hW' A' hA'
     obtain ⟨hM, hI⟩ := hmom D large₂ C' Cl h1000 hZ τ u W' hW' A' hA' _ hq
     obtain ⟨hzW, -, -, -, -, hG, hWH, -, hN, hQ, -, -, hcont, -, -⟩ :=
-      (GlobalTheory.T.amplitude_one_side_of_good_local_data D τ u u 1 W' (lamD D τ) A' hv0 one_pos (hTrpos u) (hTrpos u) hW' hA').1
+      (_root_.GlobalTheory.AmpSides.oneSide_of_good D τ u u 1 W' (lamD D τ) A' hv0 one_pos (hTrpos u) (hTrpos u) hW' hA').1
     have hnull : W'.νS {x | Matrix.of x ∉ GG D.R.k D.R.rS} = 0 := by
       have hf := Formalism.FourierDecayAlt.P.DDSmoothness.muSof_facts hWH hN
       exact ae_iff.mp (Formalism.FourierDecayAlt.P.DDSmoothness.ae_UH_of_quot hG.2.2.1 hf.1 hf.2 hQ)

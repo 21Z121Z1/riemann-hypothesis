@@ -3,8 +3,8 @@ import Development.WeilBound.CoreStatements.AbelianHeightsDuality.GelfandKazhdan
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.CuspidalMultiplicityOne
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.NotPairedId
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothConjugateInverseMemStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalEqTwistNormalisedStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalSatakeAlmostAllStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalEqTwistNormalised
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalSatakeAlmostAll
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConjugateInverseRightAction
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.GelfandKazhdanDuality.IsCuspFormDualMap
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspFormConjugateInverseStatement
@@ -114,7 +114,7 @@ theorem dualSubC_V_eq (hJ : GlobalTheory.Published.JacquetShalikaRigidity) (hM :
   refine hM E a (dualSubC π) π ?_
   obtain ⟨s, hs⟩ := hJ E Unit Unit (fun _ => a) (fun _ => a) (fun _ => CG.mk (dualSubC π)) (fun _ => CG.mk π)
     (fun _ => ha) (fun _ => ha) (by
-      filter_upwards [GlobalTheory.T.cuspidal_satake_almost_all π] with w hw
+      filter_upwards [_root_.GlobalTheory.CompanionTheory.SatAe.eventually_exists_hasSat π] with w hw
       obtain ⟨B, hw⟩ := hw
       exact ⟨fun _ => B, fun _ => B, fun _ => PositivityTheory.PRW.SatakeDual.hasSat_dual hB hπ (dualSubC π) (fun ψ => ⟨fun ⟨φ, hφ, e⟩ => ⟨φ, hφ, e ▸ rfl⟩,
         fun ⟨φ, hφ, e⟩ => ⟨φ, hφ, Subtype.ext e.symm⟩⟩) w B hw, fun _ => hw, rfl⟩)
@@ -125,7 +125,7 @@ theorem gelfandKazhdanDual_of_multiplicityOne (hJ : GlobalTheory.Published.Jacqu
   intro E _ _ _ n π
   rcases Nat.eq_zero_or_pos n with rfl | hn
   · exact GlobalTheory.Published.InvTransposeModel.rank_zero π
-  obtain ⟨π₀, χ, h0, rfl⟩ := GlobalTheory.T.cuspidal_eq_twist_normalised π
+  obtain ⟨π₀, χ, h0, rfl⟩ := _root_.GlobalTheory.CompanionTheory.TwistNorm.exists_twist_normalised π
   exact GlobalTheory.Published.InvTransposeModel.twist (paired_of_dualSubC_eq hB h0 (dualSubC_V_eq hJ hM hB hn h0)) χ
 
 end PositivityTheory.PRW.GKD

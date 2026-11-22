@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NoTowerQ
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalFieldIntegerIffAlgebraicClosureNormStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalFieldIntegerIffAlgebraicClosureNorm
 
 noncomputable section
 
@@ -54,7 +54,7 @@ theorem detects_restrictNormal_inf : ∀ (l : ℕ) [Fact l.Prime] (L : Type) [Fi
     conv_lhs => rw [← hσ]
     exact AlgEquiv.restrictNormal_commutes (lift s) L x'
   refine ⟨(s x' - x' - (a i (lift s) : L)) / (l : L) ^ r, ?_, ?_⟩
-  · refine ((GlobalTheory.T.localFieldInteger_iff_algebraicClosureNorm l L _).1).mpr ?_
+  · refine ((_root_.GlobalTheory.PMon.Ram.mem_integer_iff_norm_le_and_valuation_lt_one_iff_norm_lt l L _).1).mpr ?_
     rw [map_div₀, map_sub, map_sub, map_intCast, map_pow, map_natCast, key, hx', norm_div, norm_pow, hnorm_l]
     rw [div_le_one (by positivity)]
     exact hN i _ hσN

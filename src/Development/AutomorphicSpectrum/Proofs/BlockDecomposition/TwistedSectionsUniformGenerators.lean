@@ -4,7 +4,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuasicoherentSu
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoherentSubobjectCoherentStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GeneratedSubsheafQuasicoherent
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GeneratedSubsheafLeOfTwistedSectionMem
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GeneratedSubsheafAddLeSupStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GeneratedSubsheafAddLeSup
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GeneratedSubsheafLeIdealPower
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoherentNoetherianMaximalSubsheafStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AmpleTwistSectionsGenerateSubsheaf
@@ -37,6 +37,6 @@ theorem exists_alg_of_twSecs : ∀ {A : Type} [CommRing A] [IsNoetherianRing A] 
   refine hn₀ (max n₀ n₁) (le_max_left _ _) _ fun x hx => ?_
   obtain ⟨b, hb, hxb⟩ := hgen (max n₀ n₁) (le_max_right _ _) e x hx
   rw [← add_sub_cancel b x]
-  exact (GlobalTheory.T.generated_subsheaf_add_le_sup hH _ b (x - b)).trans (sup_le_sup (hgenM _ b hb) (_root_.GlobalTheory.CompanionTheory.GE.TwGen.genSub_le_powSub I hH hP.1 _ _ _ hxb))
+  exact (_root_.GlobalTheory.CompanionTheory.GE.TwGen.genSub_add_le hH _ b (x - b)).trans (sup_le_sup (hgenM _ b hb) (_root_.GlobalTheory.CompanionTheory.GE.TwGen.genSub_le_powSub I hH hP.1 _ _ _ hxb))
 
 end GlobalTheory.CompanionTheory.GE.TwGen

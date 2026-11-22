@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsStratHom
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BhattScholzeIntegral
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ClosedDiscCoefficientsTopologicallyFree
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ClosedDiscToDiscInjectiveOfAdicBasis
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ClosedDiscGaugeCompletionBasicPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ClosedDiscGaugeCompletionBasicProperties
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DiscBoundedFunctionIsPowerSeries
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TopologicalBasisBasicFacts
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsClosedDiscExtensionOfPowDvd
@@ -48,7 +48,7 @@ theorem exists_toDisc_eq_of_extends_norm_le_one : ∀ (l : ℕ) [Fact l.Prime] (
       AddMonoidHomClass.continuous_of_bound _ 1 fun x => by
         show ‖cD i (R x)‖ ≤ 1 * ‖x‖
         rw [one_mul]; exact (hc3 i _).trans (hR.norm_le x)
-    have key := (GlobalTheory.T.closedDiscGaugeCompletion_basic_properties l A (s X) ρ').2.2.1 (bk.DS ρ) htor _ _ hF hG fun a => by
+    have key := (_root_.GlobalTheory.BSP.DiscBasic.disc_basic l A (s X) ρ').2.2.1 (bk.DS ρ) htor _ _ hF hG fun a => by
       show RS (cD' i (toDisc l (s X) ρ' a)) = cD i (R (toDisc l (s X) ρ' a))
       rw [hc1', hRS.ext, hR.ext, hc1]; rfl
     rw [← hRy]

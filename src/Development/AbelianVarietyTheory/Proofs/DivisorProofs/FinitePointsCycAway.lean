@@ -255,7 +255,7 @@ theorem tMap_of_hasTh (hL : Out.Laws) (hL2 : Out.Laws2) (J : Type) [Finite J]
   obtain ⟨t₀, -, h₀⟩ := H j hj o b K em v hvd
   have m := h₀ K (RingHom.id K) t h1 h2
   have m' := h₀ K (RingHom.id K) t' h1' h2'
-  refine ((GlobalTheory.T.thetaLevelPullback_id_comp_cancel o g _ J b _ _ _ _ _ _ t₀ t t').2 _ (𝟙 _) m).2 ?_
+  refine ((_root_.GlobalTheory.ZM.tmap_id_comp_cancel o g _ J b _ _ _ _ _ _ t₀ t t').2 _ (𝟙 _) m).2 ?_
   rwa [Category.id_comp]
 
 theorem exists_act {W : Matrix (Fin 8) (Fin 8) ℤ} {J : Type} {a : J → Matrix (Fin 8) (Fin 8) ℤ}

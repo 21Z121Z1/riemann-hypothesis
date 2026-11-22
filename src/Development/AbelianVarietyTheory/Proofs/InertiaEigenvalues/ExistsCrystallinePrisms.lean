@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bh
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.ConductorExponents
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NatCastNeZeroPs
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DividedPowerSeriesSubringEqGeneratorSet
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DividedTwoVariableSubringSubsetGeneratorSetStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DividedTwoVariableSubringSubsetGeneratorSet
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobSdCongr
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobMemPPSetCongr
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsAdicCompleteDividedPowerSeriesSubringPrime
@@ -39,7 +39,7 @@ theorem exists_crys_prisms : ∀ (l : ℕ) [Fact l.Prime] (a e : ℕ) [NeZero a]
   haveI hcS := _root_.GlobalTheory.CrysPrism.isAdicComplete_Sd l a e O K t
   haveI hcP := _root_.GlobalTheory.CrysPrism.PPd_isAdicComplete l a e O K t
   have hSd : ∀ F ∈ Sd t K e, F ∈ SdSet t K e := _root_.GlobalTheory.CrysPrism.sdSet_closed l a e O K t
-  have hPd : ∀ F ∈ PPd t K e, F ∈ PPSet t K e := GlobalTheory.T.dividedTwoVariableSubring_subset_generatorSet l a e O K t
+  have hPd : ∀ F ∈ PPd t K e, F ∈ PPSet t K e := _root_.GlobalTheory.CrysPrism.PPd_subset_PPSet l a e O K t
 
   let φS : ↥(Sd t K e) →+* ↥(Sd t K e) := (frobTot K a l).toRingHom.restrict (Sd t K e) (Sd t K e)
     fun F hF => Subring.subset_closure (_root_.GlobalTheory.CrysPrism.frob_sd_congr l a e O K t F (hSd F hF)).1

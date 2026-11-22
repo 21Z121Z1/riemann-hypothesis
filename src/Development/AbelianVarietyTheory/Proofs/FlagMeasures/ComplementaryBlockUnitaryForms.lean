@@ -7,12 +7,13 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMeasurableUnit
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsConjGaugeInvariant
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurePreservingWithDensity
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HaarComplexGLMatricesConjAndSingularNull
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemIsotropicFlagSelfAdjointLeviIffBlockStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemIsotropicFlagSelfAdjointLeviIffBlock
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocSizeBlocks
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FlagStabilizerMulInvLeviComponentMemUnipotentStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LeviChartMapHaarCarriedInvariant
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsRadialMapUnitaryLeviBlockProduct
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaugeMeasureMatrixAlgebraSubgroupLocalAsymptoticStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaugeMeasureMatrixAlgebraSubgroupLocalAsymptotic
+import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.SameKindIsometric
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsAlgebraIsotropicFlagSelfAdjointLevi
 
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S GlobalTheory.Count GlobalTheory.FlagMeas GlobalTheory.FlagBase GlobalTheory.LeviIso
@@ -118,7 +119,7 @@ theorem exists_leviChart : ∀ (n n₀ a : ℕ) (j : Fin a → ℕ) (ε : Fin n 
     fun z hz => hθ (R z) fun i => det_twist_ne (hp i) (hz i)
   refine ⟨θ₀ ∘ R, hθm.comp hRm, fun m => ?_, fun z z' hz hz' => ⟨?_, fun e => ?_⟩,
     fun z hz => ⟨fun i => ?_, fun g hg hg0 => ?_⟩, fun μ c hμ hc => ?_⟩
-  · rw [GlobalTheory.T.mem_isotropicFlagSelfAdjointLevi_iff_block n n₀ a j ε ε₀ B B₀ hF W hspB m]
+  · rw [_root_.GlobalTheory.LeviIso.Range.mem_flagM_iff n n₀ a j ε ε₀ B B₀ hF W hspB m]
     constructor
     · rintro ⟨x, g, hx, hm⟩
       choose y hy using fun i => twist_surj hτ (hp i) (x i)
@@ -175,6 +176,6 @@ theorem exists_leviChart : ∀ (n n₀ a : ℕ) (j : Fin a → ℕ) (ε : Fin n 
     rw [hd] at halg
     obtain ⟨𝒜, E, a1, a2, a3, a4⟩ := halg
     rw [a4] at hμ hν
-    exact (GlobalTheory.T.gaugeMeasure_matrixAlgebraSubgroup_local_asymptotics n ε 𝒜 _ E a1 a2 a3 _ hν).2.2.1 μ hμ
+    exact (_root_.GlobalTheory.GaugeSubLoc.gauge_local_asymptotics n ε 𝒜 _ E a1 a2 a3 _ hν).2.2.1 μ hμ
 
 end GlobalTheory.LeviIso.Chart

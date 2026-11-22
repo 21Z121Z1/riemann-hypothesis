@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.HermitianCurvature.StatementTBB
 import Formalism.HermitianCurvature.HerGenC
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LevelModuleFormEqIntegralOfCompactCoeff
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TopDensityBigCellEqProdLevelWeightsMulTopFormStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TopDensityBigCellEqProdLevelWeightsMulTopForm
 open Formalism.FourierDecayAlt Formalism.REAL Formalism.QuantumDeterminants Filter Topology MeasureTheory
 
 namespace GlobalTheory.LevelFormsReal
@@ -38,7 +38,7 @@ theorem levelZero_im_eq_zero : P5.ThmPActualCpt → ∀ (Wp Wq : Type) [NormedAd
     | zero =>
       intro j hj c hc
       obtain rfl : j = P.r + 1 := hj
-      exact (GlobalTheory.T.topDensity_bigCell_eq_prod_levelWeights_mul_topForm Wp Wq P p H w c hc).2.1
+      exact (_root_.GlobalTheory.TopDensity.topDensity_eq Wp Wq P p H w c hc).2.1
     | succ n ih =>
       intro j hj c hc
       rw [(_root_.GlobalTheory.LevelIntegralStep.levelForm_eq_integral hP Wp Wq P p Cb H w j _ hD hH hw (by omega) (isLocPt_ofFn c hc)).2]

@@ -2,15 +2,19 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SymplOHZeroRight
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicMatrixQuotientPeriodicIntegralContinuousPa
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaContractionIntegrandContinuousPeriodic
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HermitianLinkMapAdditiveRationalEquivariantStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaContractionIsBiSmoothStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HermitianLinkMapAdditiveRationalEquivariant
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsQuasiFam
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ThetaAbsoluteSum
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.TransvectionAction
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.WeilDatumExistence
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaContractionIsBiSmooth
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaContractionQuasiPeriodicRational
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaContractionExtendByZeroDoubleCombinationStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaContractionExtendByZeroDoubleCombination
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExtendByZeroLeftMemCoreLattice
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemHomLatticeCompletionIffSupportedMapsStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemHomLatticeCompletionIffSupportedMaps
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicPointComponentsAtPlacesLatticesVacua
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsSumFrame
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExtendByZeroRightMemCoreLatticeStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExtendByZeroRightMemCoreLattice
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes MeasureTheory Matrix
 open GlobalTheory.FinPl GlobalTheory.MixPer GlobalTheory.MixModel GlobalTheory.Unf GlobalTheory.LatPair GlobalTheory.SplitWeil GlobalTheory.SeeSaw ValuativeRel IsLocalRing
@@ -31,7 +35,7 @@ theorem contr_comb_main : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ), IsStdCh
     fun u v => pc.1 (u, v)
   have hcont : Continuous fun p : WO B.A S × WO S B'.A => contr l S vL f₁ f₂ p.1 p.2 := pc.2.1
   obtain ⟨hqL, hqR⟩ := _root_.GlobalTheory.ContrComb.contr_quasi D ρ σ B B' l S vL ψ f₁ f₂ h₁ h₂
-  have hsm := GlobalTheory.T.theta_contraction_isBiSmooth D ρ σ B B' l S vL ψ f₁ f₂ h₁ h₂
+  have hsm := _root_.GlobalTheory.ContrSmooth.contr_isBiSmooth D ρ σ B B' l S vL ψ f₁ f₂ h₁ h₂
   have hBi : IsBiTheta ψ B.A S B'.A (contr l S vL f₁ f₂) := {
     cont := hcont
     smooth := hsm
@@ -47,14 +51,14 @@ theorem contr_comb_main : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ), IsStdCh
       refine ⟨U.comap (extR (S := S) B'.o), hU.preimage (continuous_extR B'.o), fun a ha hai u => ?_⟩
       funext v
       rw [heis_right, ← extR_apply, hUf _ ha (extR_inf B'.o a hai)] }
-  refine ⟨hBi, GlobalTheory.T.theta_contraction_extendByZero_double_combination D ρ σ B B' l S vL ψ f₁ f₂ hint, ?_⟩
+  refine ⟨hBi, _root_.GlobalTheory.ContrComb.contr_comb_ext D ρ σ B B' l S vL ψ f₁ f₂ hint, ?_⟩
   intro P LA LS LA' M M' hLA hLS hLA' hM hM' hor hv₁ hv₂
   have hor1 : ∀ v, P v → ∃ LL, OrthAt B.o M LA LL v := fun v hv => (hor v hv).1
   have hor2 : ∀ v, P v → ∃ LL, OrthAt B'.o M' LA' LL v := fun v hv => (hor v hv).2
   have memL : ∀ a ∈ latO B.A S (LA : Set _) (LS : Set _) P, extL (S := S) B.o a ∈ latO B.V₀ S (M : Set _) (LS : Set _) P :=
     fun a ha => _root_.GlobalTheory.ContrComb.extL_mem_latO D B.V₀ B.A B.L S B.o P LA LS M hLA hLS hM hor1 a ha
   have memR : ∀ b ∈ latO S B'.A (LS : Set _) (LA' : Set _) P, extR (S := S) B'.o b ∈ latO S B'.V₀ (LS : Set _) (M' : Set _) P :=
-    fun b hb => GlobalTheory.T.extendByZero_right_mem_core_lattice D B'.V₀ B'.A B'.L S B'.o P LA' LS M' hLA' hLS hM' hor2 b hb
+    fun b hb => _root_.GlobalTheory.ContrComb.LatT.latO_extR D B'.V₀ B'.A B'.L S B'.o P LA' LS M' hLA' hLS hM' hor2 b hb
   refine ⟨fun v => ⟨?_, ?_, ?_⟩, fun u => ⟨?_, ?_, ?_⟩⟩
   · exact {
       quasi := fun γ u => hqL γ u v

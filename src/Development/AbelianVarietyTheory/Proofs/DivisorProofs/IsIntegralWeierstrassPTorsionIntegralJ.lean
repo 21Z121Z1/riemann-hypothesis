@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.IsTrSelf
 import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.TranslateProduct
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModDefs
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralModularFamilyValueDivPeriodPowStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSLTwoPermutedModularFamilyAlgebraClosureStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSLTwoPermutedModularFamilyAlgebraClosure
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasQExpansionOfLevelLinearOperations
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasQIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModularGroupRowVecAndConjRightActions
@@ -37,7 +37,7 @@ theorem main : ∀ (N : ℕ) [NeZero N] (τ : ℍ) (ω : ℂ), IsIntegral ℤ (j
   have hjR : IsIntegral R (jT τ) := hj.tower_top
   have hbij : ActBij (vact N) := (_root_.GlobalTheory.WpFam.Act.rightActions N).1.actBij
   have hfam := _root_.GlobalTheory.WpFam.isFam_wp_wpd N
-  have halg := GlobalTheory.T.isSLTwoPermutedModularFamily_algebra_closure (Fin 2 → ZMod N) (vact N)
+  have halg := _root_.GlobalTheory.QFam.isFam_algebra (Fin 2 → ZMod N) (vact N)
   have hlin := _root_.GlobalTheory.QFam.hasQ_linear N
   have hN : 0 < N := Nat.pos_of_ne_zero (NeZero.ne N)
   have hNx : ∀ y : Fin 2 → ZMod N, N • y = 0 := fun y => by

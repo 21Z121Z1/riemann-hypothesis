@@ -7,7 +7,10 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.BijectiveC
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RedHomAlgebraMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTranslationSqZeroPointsUnitToPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGlobalOneFormsIsBaseChangeTangentRep
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTangentRepresentationSmoothGroupSchemeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTangentRepresentationSmoothGroupScheme
+import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.IsScalarTowerOfAlgebraMapEq
+import Development.AbelianVarietyTheory.Definitions.Divisors.HopfLaurent
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuasiCompactZeroSec
 
 set_option autoImplicit false
 
@@ -141,7 +144,7 @@ theorem span_invForm_eq_top : ∀ (R : Type) [CommRing R] (A : Over (Sp R)) [Grp
       (Set.range fun w : GlobalTheory.InvForm.InvForm A ↦ evForm A.hom U w.1) = ⊤ := by
   intro R _ A _ g hA _ U
   have := hA.comm
-  obtain ⟨W, _, _, -, -, ⟨T⟩⟩ := GlobalTheory.T.exists_tangentRepresentation_smooth_groupScheme R A hA.smooth
+  obtain ⟨W, _, _, -, -, ⟨T⟩⟩ := _root_.GlobalTheory.TanRepr.exists_tanRep R A hA.smooth
   exact span_eq_top_of_tanRep T U
 
 end GlobalTheory.InvSpan

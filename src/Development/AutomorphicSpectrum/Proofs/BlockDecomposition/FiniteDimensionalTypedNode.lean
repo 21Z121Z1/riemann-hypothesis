@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFiniteDeterminingSetStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TypedFirstBlockRestrictionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFiniteDeterminingSet
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TypedFirstBlockRestriction
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TypedSecondBlockRestriction
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemProdSpanInfStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemProdSpanInf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDimensionalProdSpan
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinStable
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermAuxiliaryStatementA
@@ -59,9 +59,9 @@ end SlopeTestRemainingChoices
 theorem finiteDimensional_typed_indSpan : ∀ {E : Type} [Field E] [NumberField E] [IsTotallyComplex E] {r s : ℕ} (U₁ : Submodule ℂ (Sm E r)) (U₂ : Submodule ℂ (Sm E s)), (∀ (K : Subgroup (GL (Fin r) (Af E))) (W : Submodule ℂ (Kinf E r → ℂ)), IsOpen (K : Set (GL (Fin r) (Af E))) → FiniteDimensional ℂ W → FiniteDimensional ℂ (typed U₁ K W)) → (∀ (K : Subgroup (GL (Fin s) (Af E))) (W : Submodule ℂ (Kinf E s → ℂ)), IsOpen (K : Set (GL (Fin s) (Af E))) → FiniteDimensional ℂ W → FiniteDimensional ℂ (typed U₂ K W)) → ∀ (K : Subgroup (GL (Fin (r + s)) (Af E))) (W : Submodule ℂ (Kinf E (r + s) → ℂ)), IsOpen (K : Set (GL (Fin (r + s)) (Af E))) → FiniteDimensional ℂ W → FiniteDimensional ℂ (typed (indSpan U₁ U₂) K W) := by
   intro E _ _ _ r s U₁ U₂ h₁ h₂ K W hK hW
   obtain ⟨T, hT⟩ := GlobalTheory.CompanionTheory.CTFin.IwaAd.iwasawa_finite_cosets E r s K hK
-  obtain ⟨S, hS⟩ := GlobalTheory.T.exists_finite_determining_set W hW
+  obtain ⟨S, hS⟩ := _root_.GlobalTheory.CompanionTheory.LimV.exists_finset_separating_points W hW
   choose K₁ W₁ oK₁ fW₁ sl₁ using
-    fun i : Kinf E (r + s) × GL (Fin (r + s)) (Af E) => GlobalTheory.T.typed_first_block_restriction i.1 i.2 K W hK hW
+    fun i : Kinf E (r + s) × GL (Fin (r + s)) (Af E) => _root_.GlobalTheory.CompanionTheory.LimV.SliceL.slice_typeF i.1 i.2 K W hK hW
   choose K₂ W₂ oK₂ fW₂ sl₂ using
     fun i : Kinf E (r + s) × GL (Fin (r + s)) (Af E) => _root_.GlobalTheory.CompanionTheory.LimV.SliceR.slice_right i.1 i.2 K W hK hW
   let P : ↥S × ↥T → Submodule ℂ (GA E r × GA E s → ℂ) := fun i =>
@@ -72,7 +72,7 @@ theorem finiteDimensional_typed_indSpan : ∀ {E : Type} [Field E] [NumberField 
   have hmem : ∀ (i : ↥S × ↥T) (φ : typed (indSpan U₁ U₂) K W), sliceMap i.1.1 i.2.1 φ.1 ∈ P i := by
     intro i φ
     have hmi := memInd2_of_mem_indSpan φ.2.1
-    exact GlobalTheory.T.mem_prodSpan_inf _ _ _ _ _ (tensor_le_prodSpan U₁ U₂ (hmi.2 i.1.1 i.2.1))
+    exact _root_.GlobalTheory.CompanionTheory.LimV.Slices.mem_prodSpan_inf_of_slices _ _ _ _ _ (tensor_le_prodSpan U₁ U₂ (hmi.2 i.1.1 i.2.1))
       (fun y => sl₁ (i.1.1, i.2.1) _ φ.2.2 y) (fun x => sl₂ (i.1.1, i.2.1) _ φ.2.2 x)
   let Φ : typed (indSpan U₁ U₂) K W →ₗ[ℂ] ∀ i, P i := LinearMap.pi fun i =>
     ((sliceMap i.1.1 i.2.1).comp (Submodule.subtype _)).codRestrict (P i) (hmem i)

@@ -2,10 +2,10 @@ import Mathlib
 import Formalism.PairingDivisors.StatementA
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsFinSetSplitPlacesCoprimeConductor
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferentiableZterm
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniformiserIdeleMultiplicativeOnIdealsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniformiserIdeleMultiplicativeOnIdeals
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralResidueSystemFiniteAdelesMod
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralUnitCongruenceSubgroupRelIndexNeZero
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdelicRingClassLatticeOneEqOrderStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdelicRingClassLatticeOneEqOrder
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmRingClassOrderUnitsEqMaxRealSubfieldUnitsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteRingClassGroupOfConductorNeZero
 
@@ -41,7 +41,7 @@ open Classical in
 theorem box_euler (hu : IsUnitary χ) (hr : ∀ w, r w ≤ 1) (hχ : ∀ u ∈ congr r, finPart χ u = 1) {s : ℂ} (hs : 1 < s.re) :
     ∃ Z, QSum (congr r) ((box r).indicator (zterm χ s)) Z ∧
       HasProd (fun w => if r w = 1 then (1 - (val χ w : ℂ) * ((Ideal.absNorm w.asIdeal : ℕ) : ℂ) ^ (-s))⁻¹ else 1) Z := by
-  obtain ⟨t, t1, tmul, tv, tmod, tco, tinj, tsurj⟩ := GlobalTheory.T.exists_uniformiserIdele_multiplicative_on_ideals E
+  obtain ⟨t, t1, tmul, tv, tmod, tco, tinj, tsurj⟩ := _root_.GlobalTheory.CMVal.IdealIdele.main E
   let C : Ideal (𝓞 E) → Prop := fun I => I ≠ ⊥ ∧ ∀ w, r w ≠ 1 → ¬ w.asIdeal ∣ I
   let X : Ideal (𝓞 E) → ℂ := fun I => if C I then (finPart χ (t I) : ℂ) else 0
   have hX : ∀ I, ‖X I‖ ≤ 1 := fun I => by
@@ -400,7 +400,7 @@ theorem exists_isLatSum : (∀ (E : Type) [Field E] [NumberField E] [IsCMField E
   let A : modUnits (lattice c y) → Eˣ := fun q => Units.mk0 q.1.out (out_mem_lattice q).2
   let f : modUnits (lattice c y) → (Af E)ˣ ⧸ hatOUnits c := fun q => QuotientGroup.mk (P (A q) * y⁻¹)
   have hO : ∀ a : Eˣ, ((P a : (Af E)ˣ) : Af E) ∈ hatO c → (a : E) ∈ orderC c := fun a ha => by
-    rw [← SetLike.mem_coe, ← GlobalTheory.T.idelicRingClassLattice_one_eq_order E c hc, mem_lattice, inv_one, Units.val_one, mul_one]
+    rw [← SetLike.mem_coe, ← _root_.GlobalTheory.CMVal.HatCap.lattice_one E c hc, mem_lattice, inv_one, Units.val_one, mul_one]
     exact ha
   have hf : Function.Injective f := fun q q' h => by
     have h2 := QuotientGroup.eq.1 h

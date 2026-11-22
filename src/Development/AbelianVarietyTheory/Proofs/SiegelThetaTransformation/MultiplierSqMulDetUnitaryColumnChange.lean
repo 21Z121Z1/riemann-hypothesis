@@ -6,11 +6,11 @@ import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChart
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.CanonicalThetaExponentSymplecticInvariant
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.EqOfSiegelThetaSeriesRationalEq
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsWeilOfSymplectic
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DoubledRowTestFunctionPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DoubledRowTestFunctionProperties
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ComplexPhaseCalculusRootOfUnity
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HeisenbergVacuumProjectionRootOfUnityPhasesStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HeisenbergVacuumProjectionRootOfUnityPhases
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsRationalSymplecticUnitaryColumnsStatement
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RootOfUnityPhaseVacuumSiegelThetaTransformStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RootOfUnityPhaseVacuumSiegelThetaTransform
 
 section Siegel
 
@@ -68,8 +68,8 @@ theorem isMu_of_fixed {n g : ℕ} {τ : Matrix (Fin g) (Fin g) ℂ} (hτ : τ �
   have hsb' : IsSB φ' := by
     obtain ⟨A, ε, hv⟩ := hφ'.1
     exact hv.sb
-  obtain ⟨hpvd, -, hsbd, -, hτB⟩ := GlobalTheory.T.doubledRowTestFunction_properties n g φ
-  obtain ⟨hpvd', hned', hsbd', -, hτB'⟩ := GlobalTheory.T.doubledRowTestFunction_properties n g φ'
+  obtain ⟨hpvd, -, hsbd, -, hτB⟩ := _root_.GlobalTheory.Phase.Doubling.doubling n g φ
+  obtain ⟨hpvd', hned', hsbd', -, hτB'⟩ := _root_.GlobalTheory.Phase.Doubling.doubling n g φ'
   obtain ⟨hBs, hthS, hImB⟩ := hτB τ hτ
   obtain ⟨-, hthS', -⟩ := hτB' τ hτ
 
@@ -139,7 +139,7 @@ theorem isMu_of_fixed {n g : ℕ} {τ : Matrix (Fin g) (Fin g) ℂ} (hτ : τ �
   have heq := eq_of_thS_eq (Fin 2) (Fin n × Fin g) (dup φ') ((t ^ 2 * d) • ω (dup φ))
     (hsbd' hsb') (isSB_smul' _ hsbω) B hBs hall
   have hpvω : PV (ω (dup φ)) :=
-    GlobalTheory.T.rootOfUnityPhaseVacuum_siegelThetaTransform (Fin 2) (Fin n × Fin g) heven s hs (dup φ) (ω (dup φ)) hsbω hTω (hpvd hφ)
+    _root_.GlobalTheory.Phase.WeilPV.pv_of_transS (Fin 2) (Fin n × Fin g) heven s hs (dup φ) (ω (dup φ)) hsbω hTω (hpvd hφ)
   obtain ⟨x, hx⟩ := Function.ne_iff.mp (hned' h0)
   have hxe : dup φ' x = (t ^ 2 * d) * ω (dup φ) x := by
     rw [heq]
@@ -209,7 +209,7 @@ theorem norm_det_unitary {E : Type} [Field E] [NumberField E] [IsCMField E] {n :
 
 theorem isMu_multiplier_sq_mul_det : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (r : ℕ) (X : Data E r) (g : ℕ) (bas : (Fin g ⊕ Fin g → ℤ) ≃ₗ[ℤ] X.Λ) (idx : Fin g ≃ X.Ψ × Fin r) (n : ℕ), IsSympl X bas → Even n → ∀ w : E, IsIntegral ℤ w → w + cc w = 1 → ∀ h : Matrix (Fin n) (Fin n) E, ccT h * h = 1 → ∀ Λ ∈ Vset E n 1, ∀ Λ' ∈ Vset E n 1, ∀ L : Lt E r, SelfD X L → ∀ v : TF n g, IsVac X bas w (tens (stdL E n) L) v → ∀ x ∈ X.dom, ∀ t : ℂ, ‖t‖ = 1 → (∀ z : Fin n → Fin g → ℂ, thA X bas idx (unitv (projA X bas w (tens Λ' L) v)) x (Dict.hAct X idx h z) = t * thA X bas idx (unitv (projA X bas w (tens Λ L) v)) x z) → IsMu (t ^ 2 * ∏ i : Fin g, rowType X (idx i) h.det) := by
   intro E _ _ _ r X g bas idx n hS hn w hw hwc h hu Λ hΛ Λ' hΛ' L hL v hv x hx t ht H
-  obtain ⟨u, hu1, hU⟩ := GlobalTheory.T.heisenbergVacuum_projection_rootOfUnity_phases E r X g bas idx n hS hn w hw hwc L hL v hv
+  obtain ⟨u, hu1, hU⟩ := _root_.GlobalTheory.Phase.Proj.proj_phases E r X g bas idx n hS hn w hw hwc L hL v hv
   obtain ⟨s, hs, hsx⟩ := GlobalTheory.T.exists_rational_symplectic_unitary_columns E r X g bas idx n hS hn h hu
   obtain ⟨hτ, hfix, hdet, hvec⟩ := hsx x hx
   obtain ⟨-, hpv, -⟩ := hU Λ hΛ

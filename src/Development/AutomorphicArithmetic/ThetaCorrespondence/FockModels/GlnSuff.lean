@@ -63,7 +63,7 @@ theorem heckeWeak_of_maxExpWeak (k : Type) [Field k] [ValuativeRel k] [Topologic
   have hTw : T w = μ • w := hw.apply_eq_smul
   have hmk : (Submodule.Quotient.mk (w : V) : Jacquet π (unipRad k (stdBlocks d hd))) ≠ 0 := by
     intro h0
-    obtain ⟨r, hr⟩ := GlobalTheory.T.hecke_operator_jacquet_eigen_left k N V π hs m hm d hd hd0 hd1 T hT' w h0
+    obtain ⟨r, hr⟩ := _root_.GlobalTheory.CompanionTheory.HeckeNilp.hecke_nilpotent k N V π hs m hm d hd hd0 hd1 T hT' w h0
     rw [hw.pow_apply r] at hr
     exact (smul_ne_zero (pow_ne_zero r hμ0) hw.2) hr
   have hjac := _root_.GlobalTheory.CompanionTheory.HeckeJacquet.hecke_omega_jacquet k N V π hs m hm d hd hd0 hd1 T hT' w
@@ -73,7 +73,7 @@ theorem heckeWeak_of_maxExpWeak (k : Type) [Field k] [ValuativeRel k] [Topologic
     rw [← hjac, hTw]
     rfl
   obtain ⟨x, hx, hxd, hjm, hs0, c1, hs1⟩ :=
-    GlobalTheory.T.jacquet_quotient_eigenvector k N V π hs hi hA hF d hd hd0 hd1 μ w hmk heig
+    _root_.GlobalTheory.CompanionTheory.JacExp.exists_constituent_of_eigen k N V π hs hi hA hF d hd hd0 hd1 μ w hmk heig
   have hpos : ∀ a, 0 < (x a).1 := by
     intro a
     rw [hxd a]
@@ -244,8 +244,8 @@ theorem coeffLp_of_heckeWeak (p : ℝ) (hp : 2 < p) : ∀ (k : Type) [Field k] [
       (fun _ => (hasSum_fintype _).summable)
     intro _ _ x _
     rw [Subsingleton.elim x 1, norm_norm]
-  obtain ⟨m1, hm1, hK1⟩ := GlobalTheory.T.congruence_subgroup_basis_nhds k N _ (hs v) (by simp)
-  obtain ⟨m2, hm2, hK2⟩ := GlobalTheory.T.congruence_subgroup_basis_nhds k N _ hl (by simp [Module.End.one_eq_id])
+  obtain ⟨m1, hm1, hK1⟩ := _root_.GlobalTheory.CompanionTheory.CongruenceBasis.exists_Km_subset k N _ (hs v) (by simp)
+  obtain ⟨m2, hm2, hK2⟩ := _root_.GlobalTheory.CompanionTheory.CongruenceBasis.exists_Km_subset k N _ hl (by simp [Module.End.one_eq_id])
   have hm : 1 ≤ max m1 m2 := hm1.trans (le_max_left _ _)
   obtain ⟨m, hmm⟩ : ∃ m, m = max m1 m2 := ⟨_, rfl⟩
   rw [← hmm] at hm
@@ -255,7 +255,7 @@ theorem coeffLp_of_heckeWeak (p : ℝ) (hp : 2 < p) : ∀ (k : Type) [Field k] [
     simpa using this
   have hlK : ∀ x ∈ Zls.Km k N m, l ∘ₗ π x = l := fun x hx =>
     hK2 (_root_.GlobalTheory.CompanionTheory.CongruenceSubgroups.Km_antitone k N m2 m (hmm ▸ le_max_right _ _) hx)
-  obtain ⟨s, hsK, hcov⟩ := GlobalTheory.T.cartan_decomposition_congruence k N m hm hN
+  obtain ⟨s, hsK, hcov⟩ := _root_.GlobalTheory.CompanionTheory.Dblock.CartanCover.cartan_cover k N m hm hN
   have key : ∀ u : s, ∃ (C : ℝ) (ρ : Fin (N - 1) → ℝ), 0 ≤ C ∧ (∀ j, 0 ≤ ρ j) ∧
       (∀ j : Fin (N - 1), (Nat.card 𝓀[k] : ℝ) ^ (((j : ℕ) + 1) * (N - ((j : ℕ) + 1))) * ρ j ^ p < 1) ∧
       ∀ g : Fin (N - 1) → ℕ, ∀ x ∈ Zls.Km k N m, ∀ y ∈ Zls.Km k N m,
@@ -277,7 +277,7 @@ theorem coeffLp_of_heckeWeak (p : ℝ) (hp : 2 < p) : ∀ (k : Type) [Field k] [
     (fun _ _ => by positivity)
     (fun u g => mul_nonneg (hC0 u) (Finset.prod_nonneg fun j _ => pow_nonneg (hρ0 u j) _))
     (μ ((QuotientGroup.mk : GL (Fin N) k → AdGL k N) '' (Zls.Km k N m : Set (GL (Fin N) k))))
-    (GlobalTheory.T.congruence_subgroup_finite_volume k N μ hμ m) ?_ ?_ ?_
+    (_root_.GlobalTheory.CompanionTheory.KmVol.measure_image_Km_lt_top k N μ hμ m) ?_ ?_ ?_
   · intro x
     obtain ⟨h, rfl⟩ := QuotientGroup.mk_surjective x
     obtain ⟨u, hu', g, a, ha', b, hb, z, hz, rfl⟩ := hcov h
@@ -288,7 +288,7 @@ theorem coeffLp_of_heckeWeak (p : ℝ) (hp : 2 < p) : ∀ (k : Type) [Field k] [
     exact hbound u g a ha' b hb
   · intro u g
     obtain ⟨h1, h2⟩ := hsK u.1 u.2
-    refine (GlobalTheory.T.double_coset_volume_le k N μ hμ m hm u.1.1 u.1.2 h1 h2 g).trans_eq ?_
+    refine (_root_.GlobalTheory.CompanionTheory.KmVolume.measure_translated_doubleCoset_le k N μ hμ m hm u.1.1 u.1.2 h1 h2 g).trans_eq ?_
     rw [ENNReal.ofReal_pow (Nat.cast_nonneg _), ENNReal.ofReal_natCast]
   · intro u
     have h := GlobalTheory.CompanionTheory.Summability.summable_prod_pow_multiIndex (N - 1)

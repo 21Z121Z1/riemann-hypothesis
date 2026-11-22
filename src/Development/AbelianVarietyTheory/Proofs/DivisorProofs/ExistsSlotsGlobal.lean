@@ -2,16 +2,16 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankOfMulEqOne
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalGapNonemptyAndRecordNonempty
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsHwFonCmpTies
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WachRingFactsUnramifiedLevelOneStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WachRingFactsUnramifiedLevelOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInvariantWachModuleBasisOfNonnegJumps
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusMatrixCofactorEqQPowFrame
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusMatrixFrameAtPrimitiveRootFactor
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWachModuleMapMatrixReductionComm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WachModuleMapMatrixCompMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankReducedLetterMatrixEqRankModMaximal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsContinuousCrystallineMatrixRepOfIntertwinesDetStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatGoodOfBlockExtensionTwistStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnramifiedLocalSituationOfEmbeddingStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsContinuousCrystallineMatrixRepOfIntertwinesDet
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatGoodOfBlockExtensionTwist
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnramifiedLocalSituationOfEmbedding
 
 set_option autoImplicit false
 
@@ -134,7 +134,7 @@ theorem exists_positions {n t h R : ℕ} {r : ↥(GK K) →* GL (Fin n) ↥(OL L
       (∀ s, LatAt l ((Nψ s).P i) ((Nψ s).D i) ((Nψ s).Th i) h u (fun _ => wt s i) (OL LL).val.toRingHom jj) ∧
       (y i).Chain (y (i - 1)) l (PowerSeries.map (residue ↥(OL LL)) un) ((N.P i).map (PowerSeries.map (residue ↥(OL LL)))) ((N.D i).map (PowerSeries.map (residue ↥(OL LL)))) (fun s => ((Nψ s).P i).map (PowerSeries.map (residue ↥(OL LL))))
         (fun s => ((Nψ s).D i).map (PowerSeries.map (residue ↥(OL LL)))) rs dim := by
-  obtain ⟨γ, hγ⟩ := (GlobalTheory.T.wachRingFacts_unramified_levelOne (HW l) K LL hA).2.2.2.1 u
+  obtain ⟨γ, hγ⟩ := (_root_.GlobalTheory.WachPlace.ringFacts_of_caseA (HW l) K LL hA).2.2.2.1 u
   have hU0 : ∀ i, ∀ v ∈ Finset.univ.val.map (U i), 0 ≤ v := fun i v hv => by
     obtain ⟨a, -, rfl⟩ := Multiset.mem_map.mp hv
     exact (hU i a).1
@@ -147,10 +147,10 @@ theorem exists_positions {n t h R : ℕ} {r : ↥(GK K) →* GL (Fin n) ↥(OL L
     rw [hv]
     exact (hwt s i).1
   have hrk : ∀ k, MatGood (D.loc l) ((HW l).W K 1 LL hA.2.2).emb (x.rk k) (fun i => Finset.univ.val.map (U i)) :=
-    fun k => GlobalTheory.T.isContinuousCrystallineMatrixRep_of_intertwines_det_ne_zero (D.loc l) K LL _ n _ r (x.rk k) _ (x.a k) hr (hx.1 k).1 (hx.1 k).2.1
+    fun k => _root_.GlobalTheory.WachPlace.matGood_of_tw (D.loc l) K LL _ n _ r (x.rk k) _ (x.a k) hr (hx.1 k).1 (hx.1 k).2.1
   have hr2 : ∀ s, MatGood (D.loc l) ((HW l).W K 1 LL hA.2.2).emb (x.r2 s)
       (fun i => Finset.univ.val.map (U i) + {wt s i}) :=
-    fun s => GlobalTheory.T.matGood_of_block_extension_twist (D.loc l) (D.locA l) (D.locT l) K LL _ n _ r (ψ s) (x.r2 s) _ _ (x.B s) (x.C s) hr (hψ s)
+    fun s => _root_.GlobalTheory.WachPlace.FullRankSum.matGood_sum (D.loc l) (D.locA l) (D.locT l) K LL _ n _ r (ψ s) (x.r2 s) _ _ (x.B s) (x.C s) hr (hψ s)
       (hx.2.2 s).1 (hx.2.2 s).2.2.1 (hx.2.2 s).2.2.2.2.2.2.2.2.2.2
   have hr20 : ∀ s i, ∀ v ∈ Finset.univ.val.map (U i) + {wt s i}, 0 ≤ v := fun s i v hv => by
     rcases Multiset.mem_add.mp hv with hv | hv
@@ -291,7 +291,7 @@ theorem exists_positions_global (hBS : GlobalTheory.Published.BhattScholzeCrysta
         (fun s => (d.2.1 s).2.1.map (PowerSeries.map (residue ↥(OL LL)))) rs dim)
     (fun i₀ => by
       obtain ⟨K, hA, ι, κ, hκ, hκσ, hi₀, hMG⟩ :=
-        GlobalTheory.T.exists_unramifiedLocalSituation_of_embedding (D.loc l) (D.locA l) (D.locT l) (HW l) E Ω hl hd σ hσ LL hz hE i₀
+        _root_.GlobalTheory.PlaceLetters.exists_place (D.loc l) (D.locA l) (D.locT l) (HW l) E Ω hl hd σ hσ LL hz hE i₀
       obtain ⟨N, Nψ, y, hy⟩ := exists_positions F Cm hA (U := fun i => J (κ i)) (wt := fun s i => wt s (κ i))
         (hMG n r _ hr) (fun i a => hJ (κ i) a) (fun s => hMG 1 (ψ s) _ (hψ s)) (fun s i => hwt s (κ i))
         (hx.res ι) hu hun hζ hjj

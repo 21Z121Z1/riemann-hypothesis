@@ -4,9 +4,9 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GalLab
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGenLab
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaWeightPartValueDependsTraitLabelsClass
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightPartLeastVectorNormLeExp
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightPartUniqueLeastVectorAttainsExpStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightPartUniqueLeastVectorAttainsExp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeClassSumsOfTermsPrescribedNorms
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightPartsOverDividingThetaConstantIntegralStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightPartsOverDividingThetaConstantIntegral
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LabelsLift
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuadNonnegOfInt
 import Development.AbelianVarietyTheory.Definitions.Divisors.IdlAlongNeTopOfValOn
@@ -82,7 +82,7 @@ theorem main : ∀ (g n : ℕ) (F : SFam g n (zetaAway n)) (W : Matrix (Fin 8) (
     refine sum_mem fun j _ => ?_
     rw [mul_div_assoc]
     exact mul_mem ((D.X.M.O z₂).algebraMap_mem _)
-      (GlobalTheory.T.weightParts_over_dividing_thetaConstant_integral g n F W Z i X₁ hg hn hodd himm he8 hth hproj ε₁ hdiag D z₁ _ j z₂ hz)
+      (_root_.GlobalTheory.Poinc.GSumInt.main g n F W Z i X₁ hg hn hodd himm he8 hth hproj ε₁ hdiag D z₁ _ j z₂ hz)
   have hnorm : ∀ b κ, ‖D.X.M.val (gPt p ≫ y₀) (U κ * GSum.part D z₁ z₂ b κ)‖ =
       ‖D.X.M.val (gPt p ≫ y₀) (GSum.part D z₁ z₂ b κ)‖ := fun b κ => by
     obtain ⟨k, hk, hu⟩ := hU κ
@@ -99,7 +99,7 @@ theorem main : ∀ (g n : ℕ) (F : SFam g n (zetaAway n)) (W : Matrix (Fin 8) (
       exact_mod_cast le_of_mul_le_mul_left (h χ hχ) hsc)
     (fun ν h => by
       simp only [hnorm]
-      refine GlobalTheory.T.weightPart_unique_least_vector_attains_exp g n F W Z i X₁ hg hn hodd himm he8 hth hproj ε₁ hdiag D z₁ z₂ hz p c yy₁ hlab y₀ h₀ hy₀ yy₀
+      refine _root_.GlobalTheory.Poinc.GSumEx.main g n F W Z i X₁ hg hn hodd himm he8 hth hproj ε₁ hdiag D z₁ z₂ hz p c yy₁ hlab y₀ h₀ hy₀ yy₀
         hlab₀ hcomp₀ _ ν (ha ν) fun χ hχ hne => ?_
       exact_mod_cast lt_of_mul_lt_mul_left (h χ hχ hne) hsc.le)
   refine ⟨t, ht1, ht2, fun y h hy yy hl hc b ν κ hb δ hδ => ?_⟩

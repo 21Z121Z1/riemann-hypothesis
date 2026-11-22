@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.DiscreteSpectrumKFiniteDecomposition
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PsiHolomorphicNearPositiveMatricesAtOneStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PsiHolomorphicNearPositiveMatricesAtOne
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DifferentiableOnOfTendstoLocallyUniformlyOn
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.IndefiniteUnitaryPreservesForm
 
@@ -279,6 +279,6 @@ theorem psiAnalytic_of_psBasic (hB : PsBasic) : PsiAnalytic := by
     rw [map_smul, inner_smul_right, projJ_of_comm hc]
     exact mul_comm _ _
 
-theorem psiAnalytic : PsiAnalytic := psiAnalytic_of_psBasic GlobalTheory.T.psi_holomorphic_near_positive_matrices_at_one
+theorem psiAnalytic : PsiAnalytic := psiAnalytic_of_psBasic _root_.GlobalTheory.Dec.psBasic
 
 end GlobalTheory.Dec

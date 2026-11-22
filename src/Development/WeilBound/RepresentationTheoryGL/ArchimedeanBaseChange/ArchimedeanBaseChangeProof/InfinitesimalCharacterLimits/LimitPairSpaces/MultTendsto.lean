@@ -2,7 +2,8 @@ import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.Archim
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatNodeFunction
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinStable
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NodeFunctionLeviDecompositionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NodeFunctionLeviDecomposition
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviFactorOfUnipotentDecompStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TendstoAbsoluteCharacterOne
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatAbsoluteCharacterStatement
 
@@ -42,7 +43,7 @@ theorem mult_node {r s : ℕ} (t₁ : Tr E r) (t₂ : Tr E s) (γ : ℕ → ℂ)
     (m : GA E r × GA E s) (k : Kinf E (r + s)) {c : GL (Fin (r + s)) (Af E)} (hc : c ∈ Cint E (r + s)) :
     mult (Tr.node t₁ t₂) γ (unip u * lev (Ad E) r s m * InducedTensorMap.cf (r + s) k c) =
       mult t₁ γ m.1 * mult t₂ (fun i => γ (i + t₁.twists.length)) m.2 :=
-  GlobalTheory.T.node_function_levi_decomposition _ _ (mult_flat _ _) (mult_flat _ _) u m k c hc
+  _root_.GlobalTheory.CompanionTheory.LimV.NodeApply.nodeFn_apply _ _ (mult_flat _ _) (mult_flat _ _) u m k c hc
 
 theorem mult_ne {N : ℕ} (b : Tr E N) (γ : ℕ → ℂ) (x : GA E N) : mult b γ x ≠ 0 :=
   (mult_flat b γ).ne x

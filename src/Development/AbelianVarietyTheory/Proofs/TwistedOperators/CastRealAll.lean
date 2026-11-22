@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MeasurePreservingMulRight
 import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.StepUnfold
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsDefiniteOfAllPlus
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsPerfectPairingCoefficientSpaceTensorModelStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsPerfectPairingCoefficientSpaceTensorModel
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeylKTypeTensorEqContragredientTranslatesSpan
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HighestWeightBaseParEqNegLowestKType
 
@@ -77,7 +77,7 @@ theorem core (M : Formalism.IndefR.Mult.DSModel V S) (θ : InfFam D) (c : CoefA 
   have hε : ∀ τ, M.ε τ = Formalism.MainNotions.S.allPos V.rank := fun τ => funext fun a => hp τ a
   have m := fun τ => GlobalTheory.CompactModel.model_allPos D V S M τ (hε τ)
   haveI : ∀ τ, FiniteDimensional ℂ (M.H τ) := fun τ => (m τ).1
-  obtain ⟨E, hE⟩ := GlobalTheory.T.exists_perfectPairing_coefficientSpace_tensorModel D V S M θ c pr hθ hp hc hpr
+  obtain ⟨E, hE⟩ := _root_.GlobalTheory.CoefPairTens.pairEquiv_realAll D V S M θ c pr hθ hp hc hpr
   obtain ⟨Φ, hΦ⟩ := _root_.GlobalTheory.DualWeylTensor.main D.what₂.Tau V.rank M.H M.σ M.lam lam (fun τ => (M.enum τ).1) (fun τ => (m τ).2.2.1) (fun τ => (m τ).2.2.2)
     (fun τ i => by rw [hl τ i, hε τ])
   haveI : FiniteDimensional ℂ (⨂[ℂ] τ, M.H τ) := inferInstance

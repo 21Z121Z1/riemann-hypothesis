@@ -9,14 +9,14 @@ import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsPrimitiveRootMapOf
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIsPELTripleOfDenseFibresStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsWeilIsRoot
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIsPELOfTmap
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TangentLeDimStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TangentLeDim
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsQProjOverBaseChangeAndFiniteRestrict
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SmoothOfRelativeDimensionOfDimOfDirectionsLe
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsGrpPullbackOfIso
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ActOfGenerators
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LeRingKrullDimThetaFamilyGenericFibre
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.NonemptyThetaFamilyOverOpenClosure
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUniqueMapToThetaFamilyOpenPartStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUniqueMapToThetaFamilyOpenPart
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaClosureOpenFamilyQprojFlatReducedExt
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsGoodThetaComplexClassUnitaryFullLevelStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PelObjectFibreFromComplexCharZeroStatement
@@ -107,7 +107,7 @@ theorem moduli_of_family (hL : Out.Laws) (hL2 : Out.Laws2)
       obtain ⟨τ1, hτ1⟩ := exists_isPEL_of_tmap E H D g J a bas l.A o b ρ X _
         (sX ≫ spMap (algebraMap o (KA l))) _ tX t1 τX x hb ht1 hτX
       haveI : CharZero K' := charZero_of_hom (spMap β)
-      refine T.tangent_le_dim_alt hL hL2 hth E H D g J a w w' bas l.A o b ρ K' r (β.comp (algebraMap o (KA l))) t1 τ1
+      refine _root_.GlobalTheory.PelTangent.tangent_le_dim hL hL2 hth E H D g J a w w' bas l.A o b ρ K' r (β.comp (algebraMap o (KA l))) t1 τ1
         hw hw' hρsq hτ1 ?_
       intro lam t' h1 h2
       apply hdir lam
@@ -168,7 +168,7 @@ theorem GlobalTheory.ZM.exists_moduli_prime_power_level : Out.Laws → Out.Laws2
   obtain ⟨Mat, κ, hGood⟩ := T.isGoodThetaComplexClass_unitaryFullLevel hL hL2 hth hU E H D _ J a w w' bas hpq hbas hw hw' hgen
   obtain ⟨j₁, hj₁⟩ := hGood n hn hodd
   obtain ⟨j₂, hj₂⟩ := _root_.GlobalTheory.ZM.OpenFamily.nonempty_wFam hL hL2 _ J Mat κ n w w' hn hodd
-  obtain ⟨j₃, hj₃⟩ := T.existsUnique_map_to_thetaFamily_openPart hL hL2 _ J Mat κ n w w' hn hodd
+  obtain ⟨j₃, hj₃⟩ := _root_.GlobalTheory.ZM.UnivProp.existsUnique_map_of_wFam hL hL2 _ J Mat κ n w w' hn hodd
   refine ⟨max (max j₁ j₂) (max j₃ 1), ?_⟩
   intro l hM hA
   have hj1 : j₁ ≤ max (max j₁ j₂) (max j₃ 1) := le_max_of_le_left (le_max_left _ _)

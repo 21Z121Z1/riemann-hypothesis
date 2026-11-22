@@ -8,11 +8,11 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Irreducibl
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.StandardFunctorsFiniteLength
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsAlgebraicHeckeCharOfWeightOfIntegerExpo
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ApplyIdeleMapInfIdeleNegOne
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IdeleMapOfAlgebraMaximalRealSubfieldInjectiveStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IdeleMapNormToMaxRealInfiniteIdeleStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IdeleMapOfAlgebraMaximalRealSubfieldInjective
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IdeleMapNormToMaxRealInfiniteIdele
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IdeleMapInfDiagMaxRealSubfieldCm
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CmFieldProdEmbeddingsRegroupMaximalRealStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExponentHeckeCharCompNormConjEmbeddingStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExponentHeckeCharCompNormConjEmbedding
 
 noncomputable section
 open NumberField IsDedekindDomain Neutral.B1 Formalism.L2.Host Formalism.ConjugateSelfDual ReciprocityTheory.Gal Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.MainNotions.N
@@ -28,7 +28,7 @@ theorem isAlgPos_of_compNorm : ∀ (E : Type) [Field E] [NumberField E] [IsCMFie
   intro E _ _ _ χ h
   choose k hk using h
   have hkc : ∀ τ, k (ComplexEmbedding.conjugate τ) = k τ := fun τ => by
-    have := (hk _).symm.trans ((GlobalTheory.T.exponent_heckeChar_compNorm_conjEmbedding E χ τ).trans (hk τ))
+    have := (hk _).symm.trans ((_root_.GlobalTheory.NormExpo.expo_compNorm_conjugate E χ τ).trans (hk τ))
     exact_mod_cast this
   obtain ⟨n, hn⟩ := GlobalTheory.T.cmField_prod_embeddings_regroup_maximalReal E k hkc
   refine ⟨n, fun x hx => ?_⟩
@@ -53,7 +53,7 @@ theorem isAlgPos_of_compNorm : ∀ (E : Type) [Field E] [NumberField E] [IsCMFie
       ← Complex.ofReal_exp, show Real.log (w ((x : maximalRealSubfield E) : E)) / 2 + Real.log (w ((x : maximalRealSubfield E) : E)) / 2 =
         Real.log (w ((x : maximalRealSubfield E) : E)) by ring, Real.exp_log (e2 ▸ e1.2), ← e2]
     exact e1.1
-  have hN : ideleNorm E (infId E u) = infDiag x := GlobalTheory.T.ideleMapOfAlgebra_maximalRealSubfield_injective E (by rw [GlobalTheory.T.ideleMap_normToMaxReal_infiniteIdele, hu, ← infDiag_eq, _root_.GlobalTheory.InfDiagExt.ideleMap_infDiag])
+  have hN : ideleNorm E (infId E u) = infDiag x := _root_.GlobalTheory.IdeleMapInjective.ideleMap_injective E (by rw [_root_.GlobalTheory.GalReal.ideleMap_ideleNorm_infId, hu, ← infDiag_eq, _root_.GlobalTheory.InfDiagExt.ideleMap_infDiag])
   have e1 : ((χ.inf x : ℂˣ) : ℂ) = ((chiInf (compNorm E χ) u : ℂˣ) : ℂ) := by
     rw [HChar.inf, MonoidHom.comp_apply, ← hN]; rfl
   rw [e1, chiInf_eq_prod _ k hk]

@@ -4,9 +4,9 @@ import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ThetaA
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.TransvectionAction
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.WeilDatumExistence
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.AdjointIsotropicDecomposition
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaFunctionProductsSlicesOrthogonalDecompositiStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaFunctionProductsSlicesOrthogonalDecompositi
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsPartitionOne
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PoincareSeriesCompactSupportThetaLawStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PoincareSeriesCompactSupportThetaLaw
 
 noncomputable section
 
@@ -88,7 +88,7 @@ theorem exists_approx : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ), IsStdChar
   obtain ⟨-, a2, -, a4, -⟩ := lattice_Mx D T.rank A.rank
   obtain ⟨-, -, -, -, -, K, hK, hKc⟩ := lattice_Mx D T.rank B.rank
   have hFc : Continuous fun p : WO A T × WO B T => f ((o.resS T).symm p) := hf.cont.comp (o.continuous_resS_symm T)
-  obtain ⟨hA, hB⟩ := (GlobalTheory.T.thetaFunction_products_slices_orthogonalDecomposition D ψ hψ S A B T o).2.2.2 f hf
+  obtain ⟨hA, hB⟩ := (_root_.GlobalTheory.BoxSlice.main D ψ hψ S A B T o).2.2.2 f hf
   obtain ⟨χ, hχc, hχs, hχ0, hχ1⟩ := GlobalTheory.RatPartition.exists_partition_one D A T
   obtain ⟨n, a, π, hπ⟩ := exists_slices _ hFc (C := tsupport χ) hχs hK hε
 
@@ -103,10 +103,10 @@ theorem exists_approx : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ), IsStdChar
     simp only [law] at h
     simp only [mul_left_comm _ (ψ _)] at h
     rwa [← Finset.mul_sum, ← mul_sub, norm_mul, hn, one_mul] at h
-  have hper := fun i => GlobalTheory.T.poincareSeries_compactSupport_thetaLaw D ψ hψ A T (fun z => ((χ z * π i z : ℝ) : ℂ))
+  have hper := fun i => _root_.GlobalTheory.PoincareLaw.poincare_law D ψ hψ A T (fun z => ((χ z * π i z : ℝ) : ℂ))
     (Complex.continuous_ofReal.comp (hχc.mul (π i).continuous))
     ((HasCompactSupport.mul_right (f' := fun z => π i z) hχs).comp_left Complex.ofReal_zero)
-  have hfin := (GlobalTheory.T.poincareSeries_compactSupport_thetaLaw D ψ hψ A T (fun z => ((χ z : ℝ) : ℂ)) (Complex.continuous_ofReal.comp hχc)
+  have hfin := (_root_.GlobalTheory.PoincareLaw.poincare_law D ψ hψ A T (fun z => ((χ z : ℝ) : ℂ)) (Complex.continuous_ofReal.comp hχc)
     (hχs.comp_left Complex.ofReal_zero)).1
   refine ⟨n, _, fun i v => f ((o.resS T).symm (a i, v)), fun i => (hper i).2.1, fun i γ u => (hper i).2.2 γ u,
     fun i => hB (a i), fun w => ?_⟩

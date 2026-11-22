@@ -14,7 +14,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LieAlgebraBesselMode
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LieEntriesUnipotentBesselNCharacterization
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselBigCellCoordinatesUnique
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExpInjectiveStrictUpperTriangular
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BigCellChartDifferentialSkewAndFrobeniusStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BigCellChartDifferentialSkewAndFrobenius
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BigCellChartDifferentialSurjectiveSkew
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.VolumeImageOfSqrtTwoIsometricLinearEquivStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BigCellExponentialChartStrictDifferentiableSumma
@@ -73,7 +73,7 @@ theorem um_smul {m : ℕ} {S : Set (Matrix (Fin m) (Fin m) ℂ)} (c : ℝ) (X : 
 def dL (k r : ℕ) : EE k r →ₗ[ℝ] lieE (GG k r) where
   toFun v := ⟨(umL _).symm (dchart k r v), (_root_.GlobalTheory.CellLieAlg.lie_entries k r _).1.2 (by
     have : unrealify ((umL _).symm (dchart k r v)) = dchart k r v := (umL _).apply_symm_apply _
-    rw [this]; exact (GlobalTheory.T.bigCellChartDifferential_skew_and_frobenius k r v).1)⟩
+    rw [this]; exact (_root_.GlobalTheory.CellDens.DNorm.dchart_skew_norm k r v).1)⟩
   map_add' v v' := by
     apply Subtype.ext
     show (umL _).symm _ = (umL _).symm _ + (umL _).symm _
@@ -91,7 +91,7 @@ theorem um_dL (v : EE k r) : um (dL k r v) = dchart k r v := (umL _).apply_symm_
 
 theorem norm_dL (v : EE k r) :
     ‖dL k r v‖ ^ 2 = ‖v.1.1‖ ^ 2 + ‖v.1.2‖ ^ 2 + 2 * (∑ a, ‖v.2.1 a‖ ^ 2) + ‖v.2.2‖ ^ 2 := by
-  rw [← (GlobalTheory.T.bigCellChartDifferential_skew_and_frobenius k r v).2, ← um_dL]
+  rw [← (_root_.GlobalTheory.CellDens.DNorm.dchart_skew_norm k r v).2, ← um_dL]
   exact norm_sq_um _
 
 theorem dL_bij : Function.Bijective (dL k r) := by

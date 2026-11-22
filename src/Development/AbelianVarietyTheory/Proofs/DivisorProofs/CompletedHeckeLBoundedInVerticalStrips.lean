@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsIdealChara
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeLEntireAndNonzeroAtOneHolds
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.TsumIdealMulAbsNormCpowEqExpTsum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormWt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeLSeriesEqSumPrincipalPartialSeriesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeLSeriesEqSumPrincipalPartialSeries
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompletedHeckePartialLSeriesEntireBoundedStrips
 
 noncomputable section
@@ -28,7 +28,7 @@ theorem completedLBoundedInStrips : GlobalTheory.IndefiniteRowSideFullHecke.Comp
     by_cases ha' : a ⊔ m = ⊤
     · exact (hXn a ha ha').le
     · simp [hXz a ha']
-  obtain ⟨r, c, B, M, F, hB, hM, hper, hinv, hdec⟩ := GlobalTheory.T.heckeLSeries_eq_sum_principalPartialSeries E I φ n m X hm hX0 hXm hXn hXz hβ
+  obtain ⟨r, c, B, M, F, hB, hM, hper, hinv, hdec⟩ := _root_.GlobalTheory.HeckeStrip.heckeSeries_eq_sum_pSeries E I φ n m X hm hX0 hXm hXn hXz hβ
   choose Λ hΛd hΛb hΛe using fun k => _root_.GlobalTheory.HeckeStrip.completed_pSeries_entire_bounded E I φ hφ n hn (M k) (F k) (hM k) (hper k) (hinv k)
   have hB0 : ∀ k, ((B k : ℕ) : ℂ) ≠ 0 := fun k => by exact_mod_cast (hB k).ne'
   refine ⟨fun s => ∑ k, c k * ((B k : ℕ) : ℂ) ^ s * Λ k s, ⟨?_, fun s hs => ?_⟩, ?_⟩

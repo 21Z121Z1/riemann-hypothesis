@@ -43,7 +43,7 @@ theorem exists_rep_bound [μ.IsMulRightInvariant]
       (∀ v, Sm ρ A e v → (∀ k ∈ H, ρ k v = v) → Continuous (R v) ∧ ι v =ᵐ[μ] R v) ∧
       ∀ x, ∃ c : ℝ, ∀ v,
         ‖R v x‖ ≤ c * (L.map fun l => ‖l.foldr (fun p w => deriv (fun r : ℝ => ρ (e p r) w) 0) v‖).sum := by
-  obtain ⟨J, _, κ, l, hκ, hT⟩ := GlobalTheory.T.eq_sum_integral_cube_derivatives_alt G K ρ hiso hρ s hs N (fun i => e (qs i)) fun i => he _ (hq i)
+  obtain ⟨J, _, κ, l, hκ, hT⟩ := _root_.GlobalTheory.CubeTaylor.eq_sum_integral_cube_derivatives G K ρ hiso hρ s hs N (fun i => e (qs i)) fun i => he _ (hq i)
   choose Λ hΛ using fun j => exists_eval hloc hlin hiso hρ htr hU hH hΘ
     (isCompact_univ_pi fun _ => isCompact_Icc) hΩ hC hM (hκ j)
   let d : P → K → K := fun p w => deriv (fun r : ℝ => ρ (e p r) w) 0
@@ -106,7 +106,7 @@ theorem exists_transport (I : AutInst) (μf : Measure I.Gf) [μf.IsHaarMeasure] 
       (∀ γ, T γ ∈ I.GFset → ∀ v : I.L2 μf fund, (fun x => I.ext v (T (γ * x))) =ᵐ[μ] fun x => I.ext v (T x)) ∧
       ∀ g : ℕ, 1 ≤ g → ∃ U : Subgroup G, IsOpen (U : Set G) ∧ ∀ k ∈ U, (T k).2 ∈ I.Kg g := by
   obtain ⟨hT2, hL, hS, -, -, -, hK⟩ := _root_.GlobalTheory.CongTop.adelic_topology I
-  obtain ⟨Γ, hΓ, hc, hfin, hfd⟩ := GlobalTheory.T.rationalUnitaryPoints_discrete_fundamentalDomain I
+  obtain ⟨Γ, hΓ, hc, hfin, hfd⟩ := _root_.GlobalTheory.RatDiscrete.rational_points I
   obtain ⟨hl, hrt, -⟩ := _root_.GlobalTheory.AdelicUnimod.adelic_unimodular I μf
   obtain ⟨r1, r2, r3, r4, r5⟩ := isRightReg_props I μf fund hfund R hR
   have hD := hfd μf fund hfund

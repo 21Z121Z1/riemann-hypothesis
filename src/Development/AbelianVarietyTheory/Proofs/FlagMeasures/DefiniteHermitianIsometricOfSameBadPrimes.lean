@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ChartGen
 import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.MaxMass
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.WittExtensionTotallyDefiniteHermitianStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.WittExtensionTotallyDefiniteHermitian
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMaximalIntegralHermitianLatticeOrthonormal
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MaximalHermitianLatticeBadPrimesIffGramDetStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemHcompl
@@ -319,7 +319,7 @@ theorem cancel {W : Type} [AddCommGroup W] [Module K W] [FiniteDimensional K V] 
   have w0 : φ (0, 1) ≠ 0 := by simp
   let e1 := LinearEquiv.toSpanNonzeroSingleton K _ _ w0
   let e2 := LinearEquiv.toSpanNonzeroSingleton K _ _ u0
-  obtain ⟨g, hg, hg1⟩ := (GlobalTheory.T.witt_extension_totally_definite_hermitian K (W × K) (ext k β) hK hs hp).1 _ _ (e1.symm.trans e2) (by
+  obtain ⟨g, hg, hg1⟩ := (_root_.GlobalTheory.Mass.Witt.witt_definite K (W × K) (ext k β) hK hs hp).1 _ _ (e1.symm.trans e2) (by
     intro x y
     obtain ⟨s, rfl⟩ := e1.surjective x
     obtain ⟨t, rfl⟩ := e1.surjective y

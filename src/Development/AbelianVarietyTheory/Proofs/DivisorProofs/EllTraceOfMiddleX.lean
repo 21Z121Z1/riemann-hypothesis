@@ -19,13 +19,13 @@ import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Ra
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CuspidalNoRadicalFixed
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ConstantTermVanishing
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IrreducibleUnitaryRepEqFiniteSmoothPartTensorDis
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdmissibleRepHasTraceFiniteAdelicPureTensorFunctStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdmissibleRepHasTraceFiniteAdelicPureTensorFunct
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TestDataHaarFactorization
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PseudoCoefficientSeparation
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleCoefficientsAnalytic
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.IwahoriSubgroup
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CentralizerTensorForms
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RegularSemisimpleRationalClassKernelIntegralsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RegularSemisimpleRationalClassKernelIntegrals
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TypeHypothesisFormsAgreeStatement
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.StandardMaximalParabolic
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsRegularSemisimpleOfTestFunctionNeZero
@@ -36,7 +36,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalSpectrumFin
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeometricExpansionOfParts
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicTermsVanish
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ParabolicLeviDecomposition
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsRegularSemisimpleTorusEllipticElementRealPlaceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsRegularSemisimpleTorusEllipticElementRealPlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentralizerTorusEllipticElementRealPlace
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MeasurableEmbeddingEquiv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactRealPlaceTorusClassesSignVectors
@@ -56,7 +56,7 @@ import Formalism.LocalToGlobal.BesselHermitianTheta.TiedType
 import Formalism.FormalDegreeBessel.StatementIO
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.NotTrivialAndTwist
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SameBlockOfPosC
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MaxCompactIrreducibleHasHighestWeightAndIsoStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MaxCompactIrreducibleHasHighestWeightAndIso
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqLowKOfLeLowKSub
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntertwinerOfKFiniteVectors
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.PolarJmConjTranspose
@@ -212,7 +212,7 @@ theorem ellTrace_of_middleX : MainStatements.RegularCuspidalTrace.RegClassInt �
     GlobalTheory.AutomorphicL2Unitary.descend (GQ V) (fun x => ∑' δ : i.1, f (x⁻¹ * rat V δ * x))
   have hkint : ∀ i : ι, Integrable (k i) (autMeasure V μ) := by
     rintro ⟨_, γ, hγ, rfl⟩
-    obtain ⟨hcl, -⟩ := (GlobalTheory.T.regularSemisimple_rational_class_kernel_integrals D V γ hγ).2 f
+    obtain ⟨hcl, -⟩ := (_root_.GlobalTheory.RegClass.main D V γ hγ).2 f
     have := hInt D V μ f hcc hcuspFn γ hγ
     rw [show GlobalTheory.IndefiniteRowSideFullHecke.NonFieldTypeVanishingAlt.classKernel (GQ V) (rat V γ) f = fun x => ∑' δ : {δ | IsConj γ δ}, f (x⁻¹ * rat V δ * x)
       from funext hcl] at this
@@ -258,7 +258,7 @@ theorem ellTrace_of_middleX : MainStatements.RegularCuspidalTrace.RegClassInt �
       by_cases hA : GlobalTheory.IndefiniteRowSideFullHecke.NonFieldTypeVanishingAlt.IsNonFieldAniso D.sp.cm.sig V.gram γ.1.1
       · exact hNF.zero hodd hH hμ ⟨fa, ff, harch, hfin, rfl⟩ hA
       · exact hHZ D V lam S M T U μa μf μ fa ff hT γ hγ hirr hA
-    obtain ⟨hcl, hiff⟩ := (GlobalTheory.T.regularSemisimple_rational_class_kernel_integrals D V γ hγ).2 f
+    obtain ⟨hcl, hiff⟩ := (_root_.GlobalTheory.RegClass.main D V γ hγ).2 f
     have := ((hiff hcs.1 hcs.2 μ 0).1 hZ).2
     rw [show GlobalTheory.IndefiniteRowSideFullHecke.NonFieldTypeVanishingAlt.classKernel (GQ V) (rat V γ) f = fun x => ∑' δ : {δ | IsConj γ δ}, f (x⁻¹ * rat V δ * x)
       from funext hcl] at this
@@ -276,7 +276,7 @@ open GlobalTheory.TrMult
 attribute [local instance] Formalism.BasicNotions.Host.cmStar
 
 theorem GlobalTheory.PsCo.Plug.ellipticSideDirect : GlobalTheory.Published.CuspTraceClass → EllTraceX := fun tc =>
-  GlobalTheory.PsCo.Plug.ellTrace_of_middleX MainStatements.WeightKernel.regClassInt_holds (GlobalTheory.T.siegel_implies_regular_class_finite CompanionTheory.Prw.siegelCore_holds) (_root_.GlobalTheory.CuspidalOpAssembly.cuspidalOperators tc)
+  GlobalTheory.PsCo.Plug.ellTrace_of_middleX MainStatements.WeightKernel.regClassInt_holds (_root_.GlobalTheory.CompanionTheory.CFin.regClassFin CompanionTheory.Prw.siegelCore_holds) (_root_.GlobalTheory.CuspidalOpAssembly.cuspidalOperators tc)
     GlobalTheory.PsCo.Plug.parabolicT GlobalTheory.IwahoriEigenObj.iwahoriEigenvalues _root_.GlobalTheory.RegSSObj.regularSemisimple GlobalTheory.PsCo.Plug.nonFieldT
     (GlobalTheory.PsCo.Plug.hyperZero_of_intX MainStatements.WeightKernel.regClassInt_holds _root_.GlobalTheory.RegSSObj.regularSemisimple)
 

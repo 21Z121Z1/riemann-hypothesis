@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PlacesToAdeles
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ConjSplitLocalModelBySupportedPair
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilVacuumLocalModelIntegralMatrixPair
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LinearLawLocalModelMulClosed
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LinearLawLocalModelInvStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LinearLawLocalModelInv
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitLocalComponentsOneMulInv
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsSplitLocalSupportedScalarComponent
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsScalarPreservesIntegralMatricesSubst
@@ -44,7 +44,7 @@ theorem omLoc : ∀ (D : D7), OmLoc D := by
   have iT := _root_.GlobalTheory.LocOm.isLoc_one_mul_inv D k p T Y FT
   have l1 := enl g gk (h * z⁻¹) (hk * zk⁻¹) hg (iT.2.1 _ _ _ _ hh (iT.2.2 _ _ hz)) (hc zk hzk).1
   have l2 := enl 1 1 z⁻¹ zk⁻¹ iS.1 (iT.2.2 _ _ hz) (hc zk hzk).2
-  have l3 := _root_.GlobalTheory.LocOm.LawMul.lawLoc_mul D k S T ω μS μT Y Y' Tm _ _ _ _ _ _ _ _ l1 (GlobalTheory.T.linearLaw_localModel_inv D k S T ω μS μT Y Y' Tm _ _ _ _ l2)
+  have l3 := _root_.GlobalTheory.LocOm.LawMul.lawLoc_mul D k S T ω μS μT Y Y' Tm _ _ _ _ _ _ _ _ l1 (_root_.GlobalTheory.LocOm.lawLoc_inv D k S T ω μS μT Y Y' Tm _ _ _ _ l2)
   simp only [inv_one, mul_one, inv_inv, inv_mul_cancel_right] at l3
   exact l3 Φ Φ' hΦ'
 

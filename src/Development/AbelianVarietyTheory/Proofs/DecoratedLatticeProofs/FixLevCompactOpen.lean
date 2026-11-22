@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Idempotent
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsContinuousLocalGLEmbeddingSplitPlace
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemSupportedSubgroupOfSuppAtSplitPlaceMem
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MatrixProjEqOneOfSuppAtDistinctFinitePlace
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnitarySupportedSplitPlacesEqProdLocalPartsStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnitarySupportedSplitPlacesEqProdLocalParts
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.IndefR.Datum MeasureTheory IsDedekindDomain NumberField Matrix
 open GlobalTheory.MixModel GlobalTheory.MixPer GlobalTheory.Grow GlobalTheory.Unf GlobalTheory.SeeSaw GlobalTheory.FinPl
 open scoped TensorProduct
@@ -118,7 +118,7 @@ theorem exists_section (V : HSp D) {n : ℕ} (k : Fin n → Type) [∀ i, Field 
     exact _root_.GlobalTheory.SuppGrp.mem_grpAt_of_suppAt D (k i) (q i) V _ (hgl i (x i)).1 _ ⟨i, rfl⟩
   · rw [hmat (fun i => gl i (x i)) (fun i => (hgl i (x i)).1) i]
     exact (hgl i (x i)).2
-  · obtain ⟨h, hh, rfl⟩ := GlobalTheory.T.unitarySupported_splitPlaces_eq_prod_local_parts D V n k q hq g hg
+  · obtain ⟨h, hh, rfl⟩ := _root_.GlobalTheory.SplitDecomp.prod_of_grpAt D V n k q hq g hg
     show ((List.finRange n).map fun i => gl i (x i)).prod = _
     congr 1
     refine List.map_congr_left fun i _ => (hgu i (h i) (x i) (hh i) ((hmat h hh i).symm.trans (hx i))).symm

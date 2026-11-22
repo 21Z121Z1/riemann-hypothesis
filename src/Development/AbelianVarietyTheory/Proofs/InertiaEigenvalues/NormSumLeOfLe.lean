@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsBasisRat
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitBallFiniteUnramifiedDescentComplexPadic
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFiniteUnramifiedApproximationPadic
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NatCastMemPlaceAt
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUniformiserNormGapPadicEmbeddingStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUniformiserNormGapPadicEmbedding
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ImportsBisTer
 
 set_option autoImplicit false
@@ -161,7 +161,7 @@ theorem mem_span_locBall
     have hw0 : ‖w s0‖ = 1 := by
       rw [hw, norm_div, ← hc, div_self (by linarith)]
     have hwk : ∀ s, w s ∈ kurC (embS S iC b) := fun s => div_mem (hkur s) (mem_kurC _ c)
-    obtain ⟨ϖ, hϖ0, hϖ1, hϖ⟩ := GlobalTheory.T.exists_uniformiser_norm_gap_padic_embedding (D.ntw.l i) S.Ks (embS S iC b)
+    obtain ⟨ϖ, hϖ0, hϖ1, hϖ⟩ := _root_.GlobalTheory.UnifGap.exists_unif_norm_gap (D.ntw.l i) S.Ks (embS S iC b)
     set r := ‖embS S iC b ϖ‖ with hr
     have hcr : ‖embS S iC b c‖⁻¹ ≤ r := by
       have h1 : ‖embS S iC b c⁻¹‖ < 1 := by

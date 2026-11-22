@@ -2,7 +2,8 @@ import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula
 import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.LocalWeilOperators.StepWN
 import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.LocalWeilOperators.LocJJA
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.GlobalGaussLaws.Decomp
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FourierTransformMatrixSpaceInvolutionStatement
+import Mathlib
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FourierTransformMatrixSpaceInvolution
 
 noncomputable section
 
@@ -148,7 +149,7 @@ theorem localOperator_longWeyl_integral (hT : TAll) (hA : AuxiliaryPrimeFunction
       rcases Int.units_eq_one_or (R.sg w) with h | h <;> rw [h] <;> simp
     rw [h1, hs_def, norm_div, norm_mul, norm_mul, hunit, hunit, hζn]
     norm_num
-  obtain ⟨c, hc, hfres⟩ := GlobalTheory.T.fourier_transform_matrix_space_involution d.m d.n C₀ s ((R.sg w : ℤ) : ℝ) hC₀ hk hsn
+  obtain ⟨c, hc, hfres⟩ := _root_.GlobalTheory.CompanionTheory.Kloc.Fresnel.value_at_zero d.m d.n C₀ s ((R.sg w : ℤ) : ℝ) hC₀ hk hsn
   refine ⟨κ⁻¹ * c, mul_ne_zero (inv_ne_zero hκ) hc, fun y hy f hf => ?_⟩
   obtain ⟨y₁, y₂, h1, h2, rfl⟩ := jj_split y hy
   have hb1 : (1 : Matrix (Fin d.n) (Fin d.n) ℂ)ᴴ = 1 := Matrix.conjTranspose_one

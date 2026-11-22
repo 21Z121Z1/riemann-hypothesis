@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsArchOne
 import Development.AbelianVarietyTheory.BlockTheory.PoincareCuspForms.SmallUnipotentElements
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBalancedFrameCMUnitaryProofStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBalancedFrameCMUnitaryProof
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCuspFormNonzeroAtOneLift
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.BoundedSectionAlgebra
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.DetSubUpper
@@ -189,7 +189,7 @@ theorem independentTranslates : ∀ (E : Type) [Field E] [NumberField E] [IsCMFi
   intro E _ _ _ r U C _ _ _ _ _ M hL s hs hsle
   classical
   have hB : ∀ c : C, ∃ x ∈ (M.comp c).dom, GlobalTheory.IndefiniteRowSideFullHecke.SmallUnipotentElements.NoContraction (M.comp c) x := fun c => by
-    obtain ⟨x, hx, h1, -⟩ := GlobalTheory.T.existsBalancedFrameCMUnitary_proof E r (M.comp c)
+    obtain ⟨x, hx, h1, -⟩ := _root_.GlobalTheory.BalancedPointPf.balancedPoint E r (M.comp c)
     exact ⟨x, hx, h1⟩
   choose xb hxb hnc using hB
   have hI : ∀ c : C, ∃ u ∈ M.SS (deMul M.Ψ r M.p0 s), u c (castFrame (M.comp_Ψ c) (xb c)) ≠ 0 ∧

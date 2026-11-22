@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PowSubSuccLe
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.EventuallyExistsFiniteSubsetNonzeroLocus
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubobjectLeIffAffineSectionsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubobjectLeIffAffineSections
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuasicoherentSupSectionsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoherentSubobjectCoherentStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RestrictedSystemKilledByIdealStatement
@@ -96,7 +96,7 @@ theorem statement_of_mul_mem : ∀ {A : Type} [CommRing A] [IsNoetherianRing A] 
     have hax : a • x ∈ secs K U := by
       rw [hKdef, secs_idealSub]
       exact Submodule.smul_mem_smul ha Submodule.mem_top
-    exact (GlobalTheory.T.subobject_le_iff_affine_sections K (S e ⊔ K)).1 le_sup_right U hax
+    exact (_root_.GlobalTheory.CompanionTheory.GE.le_iff_secs_subset K (S e ⊔ K)).1 le_sup_right U hax
   obtain ⟨B, hBq, hBP, hB⟩ := h₁ E hE _ hS1 hK1 (propSupp_mono le_sup_left hP)
   have hDq : ((B ⊔ K : Subobject E) : X.Modules).IsQuasicoherent :=
     (GlobalTheory.T.quasicoherent_sup_sections hEq _ _ hBq hKq).1
@@ -109,7 +109,7 @@ theorem statement_of_mul_mem : ∀ {A : Type} [CommRing A] [IsNoetherianRing A] 
     intro n U a ha x hx
     have hle : B ⊔ K ≤ S n ⊔ K :=
       sup_le ((le_sup_left : B ≤ B ⊔ powSub I E (n + 1)).trans (hB n).le) le_sup_right
-    have hx' := (GlobalTheory.T.subobject_le_iff_affine_sections _ _).1 hle U hx
+    have hx' := (_root_.GlobalTheory.CompanionTheory.GE.le_iff_secs_subset _ _).1 hle U hx
     rw [(GlobalTheory.T.quasicoherent_sup_sections hEq _ _ (hS.qcoh n) hKq).2 U U.2] at hx'
     obtain ⟨s, hs, k, hk, rfl⟩ := hx'
     rw [smul_add]

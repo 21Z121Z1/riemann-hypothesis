@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InstPreorder
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleNbhdLocalRingToHenselisationAlgebraMapStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleNbhdLocalRingToHenselisationInjectiveOfNbhdStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PointedEtaleNeighbourhoodLocalRingIsDirectedStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleNbhdLocalRingToHenselisationAlgebraMap
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleNbhdLocalRingToHenselisationInjectiveOfNbhd
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PointedEtaleNeighbourhoodLocalRingIsDirected
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatLocalRingPointedEtaleNeighbourhood
 
 open IsLocalRing GlobalTheory.Henselisation
@@ -60,6 +60,6 @@ theorem flat_hens_of_stages (hdir : IsDirected (EtNbhd R) (· ≤ ·))
   simp only [hsmul]
 
 theorem flat_hens : ∀ (R : Type) [CommRing R] [IsLocalRing R], Module.Flat R (Hens R) :=
-  fun R _ _ => flat_hens_of_stages (GlobalTheory.T.pointedEtaleNeighbourhoodLocalRing_isDirected R) (GlobalTheory.T.etaleNbhdLocalRingToHenselisation_injective_of_nbhd R) (GlobalTheory.T.etaleNbhdLocalRingToHenselisation_algebraMap R) (_root_.GlobalTheory.Henselisation.EtNbhd.flat_B R)
+  fun R _ _ => flat_hens_of_stages (_root_.GlobalTheory.Henselisation.etNbhd_isDirected R) (_root_.GlobalTheory.Henselisation.Hens.of_injective_of_nbhd R) (_root_.GlobalTheory.Henselisation.Hens.of_algebraMap R) (_root_.GlobalTheory.Henselisation.EtNbhd.flat_B R)
 
 end GlobalTheory.Henselisation

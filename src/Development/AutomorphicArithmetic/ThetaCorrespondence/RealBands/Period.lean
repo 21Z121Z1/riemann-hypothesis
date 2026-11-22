@@ -93,7 +93,7 @@ theorem exists_cusp_form_theta_period_ne_zero : GlobalTheory.Published.HarishCha
     rw [apply_tprod_eq, key]
     show PiTensorProduct.lift.symm y v₀' (g * p.g₀) = _
     rw [← apply_tprod_eq, hyv v₀' (fun τ => (hv₀' τ).symm ▸ (hp.1.dec τ).1), hv₀f]
-    exact GlobalTheory.T.coefficientPoincareSeries_move_real_point D W.θ hθ (G.V (.core 0)) _ MP _ p.v₀ p.g₀ hp.1.real _ g
+    exact _root_.GlobalTheory.PoinConj.poin_conj D W.θ hθ (G.V (.core 0)) _ MP _ p.v₀ p.g₀ hp.1.real _ g
   have hmem : y ∈ CoreForms G W.θ 0 MP := by
     show y ∈ MultT W.θ MP (Lev.levA (G.V (.core 0)) (G.levCong (.core 0)) : Set (GA D (G.V (.core 0)))) 1
     unfold GridData.levCong

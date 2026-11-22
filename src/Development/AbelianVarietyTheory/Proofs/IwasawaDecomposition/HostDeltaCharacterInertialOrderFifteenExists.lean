@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsRati
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HostCmEmbeddingProperties
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnderEqIffConjPl
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHeckeCharTrivOnRealSubfieldInfinityType
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharFiniteOrderOfTrivialAtInfinityStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharFiniteOrderOfTrivialAtInfinity
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CompletelySplitPrimeHostPlaceProperties
 import Development.AutomorphicArithmetic.WeightCongruences.ProdResidueCharNormOneUnitEqOne
 
@@ -127,7 +127,7 @@ theorem delta_exists : ∀ (R : Ranks) (H : Formalism.BasicNotions.Host R) (p : 
         exact congrArg Units.val h1 |>.trans Units.val_one
       rw [h2]
       simp)
-  refine ⟨χ, GlobalTheory.T.heckeChar_finiteOrder_of_trivial_at_infinity H.E χ fun k => ?_, ht, htame, fun v hv => hunr v (fun h => hv (hov v h)) ?_,
+  refine ⟨χ, _root_.GlobalTheory.Mem.FinOrder.finite_order_of_inf_eq_one H.E χ fun k => ?_, ht, htame, fun v hv => hunr v (fun h => hv (hov v h)) ?_,
     fun v hv n => ?_⟩
   · apply Units.ext
     rw [hi k]

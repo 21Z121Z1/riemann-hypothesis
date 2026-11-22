@@ -150,9 +150,9 @@ theorem main : MaxMass → ∀ (K V : Type) [Field K] [NumberField K] [StarRing 
     have hXst : Stable (isom h) Y := by
       rintro g p ⟨h1, h2, h3⟩
       exact ⟨hDst g _ h1, hYst g _ h2, Submodule.map_mono h3⟩
-    have f1 := GlobalTheory.T.orbitStabilizerMass_eq_weightedSum_fibres (isom h) _ _ Y (latsDisc (R := 𝓞 K) h n) Prod.fst (fun _ _ => rfl) hXst hDst
+    have f1 := _root_.GlobalTheory.Mass.orbMass_eq_orbSum_fibre (isom h) _ _ Y (latsDisc (R := 𝓞 K) h n) Prod.fst (fun _ _ => rfl) hXst hDst
       (fun p hp => hp.1) (fun y hy => hfin y hy.1.1)
-    have f2 := GlobalTheory.T.orbitStabilizerMass_eq_weightedSum_fibres (isom h) _ _ Y (genus h M₀) Prod.snd (fun _ _ => rfl) hXst hYst
+    have f2 := _root_.GlobalTheory.Mass.orbMass_eq_orbSum_fibre (isom h) _ _ Y (genus h M₀) Prod.snd (fun _ _ => rfl) hXst hYst
       (fun p hp => hp.2.1) (fun y hy => hfin y hy.1)
     have s1 : orbMass (isom h) (latsDisc (R := 𝓞 K) h n) ≤ orbMass (isom h) Y := by
       rw [f1]

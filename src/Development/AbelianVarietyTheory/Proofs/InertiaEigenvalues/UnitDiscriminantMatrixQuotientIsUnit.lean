@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CommOfBezout
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIntegralIdempotentLiftNewtonStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIntegralIdempotentLiftNewton
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CommutingIntegralMatrixDecompose
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UltrametricNormDetOneAddSmulStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormDetLeOneOfEntriesNormLeOne
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MatrixCommutantValuationDecompositionStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MatrixCommutantValuationDecomposition
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuotientIntegralUnit
 
 open Matrix
@@ -25,7 +25,7 @@ theorem unit_split {E : Type} [NontriviallyNormedField E] [IsUltrametricDist E]
     _root_.GlobalTheory.UnitDiscAlg.Red.main E n N ϖ hN hB h0 h1 hϖ y hyN hy
   haveI : ProperSpace E := ProperSpace.of_locallyCompactSpace E
   obtain ⟨e, a', heN, ha'N, he, heI, ha'I, hea⟩ :=
-    GlobalTheory.T.exists_integral_idempotent_lift_newton E n N x a₁ ϖ h1 hxN (fun i j => (hint i j).1) (fun i j => (hint i j).2.2.1) hx
+    _root_.GlobalTheory.IdemLift.idem_lift E n N x a₁ ϖ h1 hxN (fun i j => (hint i j).1) (fun i j => (hint i j).2.2.1) hx
   have hzI : ∀ i j, ‖z i j‖ ≤ 1 := fun i j => (hint i j).2.1
   have ha₂I : ∀ i j, ‖a₂ i j‖ ≤ 1 := fun i j => (hint i j).2.2.2.1
   have ha₃I : ∀ i j, ‖a₃ i j‖ ≤ 1 := fun i j => (hint i j).2.2.2.2
@@ -80,7 +80,7 @@ theorem units_quotient : ∀ (E : Type) [NontriviallyNormedField E] [IsUltrametr
   have hcomm : ∀ x y : Matrix (Fin n) (Fin n) E, x * N = N * x → y * N = N * y → x * y = y * x :=
     fun x y hx hy => comm_of_bezout hB' hx hy
   obtain ⟨e₁, e₂, e₃, u, a₂, a₃, hN6, hI6, hu, h11, h22, h33, h12, h13, h23, hs, hc1, hc2, hc3⟩ :=
-    GlobalTheory.T.matrix_commutant_valuation_decomposition E n N ϖ h0 h1 hcomm (unit_split hN hB h0 h1 hϖ hcomm) c hc hcN
+    _root_.GlobalTheory.ValDecomp.valuation_decomp E n N ϖ h0 h1 hcomm (unit_split hN hB h0 h1 hϖ hcomm) c hc hcN
   exact _root_.GlobalTheory.UnitDiscAlg.QuotAlg.quotient_integral_unit E n N c b e₁ e₂ e₃ u a₂ a₃ ϖ h0 h1 hcomm hc hcN hbN hb hbd hN6 hI6 hu h11 h22 h33
     h12 h13 h23 hs hc1 hc2 hc3
 

@@ -5,7 +5,7 @@ import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorL
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.CompletionIsLocalRing
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.InfiniteAdelesLocalRingTotallyReal
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ExistsUnipotentInvariantCompactlySupportedWeight
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.SelfdualMeasureTransportEquivStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.SelfdualMeasureTransportEquiv
 open HeckeCharacterZeroLocus.SiegelWeilU GlobalTheory.CompanionTheory.SW NumberField IsDedekindDomain MeasureTheory Topology
 open scoped TensorProduct ENNReal NNReal Matrix Kronecker
 
@@ -342,7 +342,7 @@ theorem sd_core {d : ℕ} (b : Module.Basis (Fin d) F E) (n : ℕ) (lam : Measur
     { AddEquiv.mk' hh.toEquiv (hermVec_add R b n) with
       continuous_toFun := hh.continuous
       continuous_invFun := hh.symm.continuous }
-  have hT := GlobalTheory.T.selfdual_measure_transport_equiv (HermR R σ n) (Idx n d → R) e ν
+  have hT := _root_.GlobalTheory.CompanionTheory.SW.selfDual_transport (HermR R σ n) (Idx n d → R) e ν
     (fun x y => ψR (x ⬝ᵥ ((formB σ b n).map (algebraMap F R) *ᵥ y)))
   have hp : (fun S T : HermR R σ n => ψR (pairHerm R σ n S T)) =
       fun S T => ψR (e S ⬝ᵥ ((formB σ b n).map (algebraMap F R) *ᵥ e T)) := by

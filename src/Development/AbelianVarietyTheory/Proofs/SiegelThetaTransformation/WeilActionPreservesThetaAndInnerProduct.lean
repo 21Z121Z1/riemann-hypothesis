@@ -8,9 +8,9 @@ import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Summabl
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.EqOfSiegelThetaSeriesRationalEq
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RationalSchwartzBruhatAlgebraIntegralLinear
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IMemSiegel
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SymplecticSiegelActionMemUpperHalfSpaceAndCocyclStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SymplecticSiegelActionMemUpperHalfSpaceAndCocycl
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsWeilOfSymplectic
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.CanonicalThetaExponentSymplecticInvariantStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.CanonicalThetaExponentSymplecticInvariant
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LactMulFrame
 
 open Matrix Complex NumberField MeasureTheory GlobalTheory GlobalTheory.SW GlobalTheory.ThFr ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.FD
@@ -99,8 +99,8 @@ theorem exists_weil (hs : IsSympl X bas) (hn : Even n) {γ : GL (Fin r) E} (hγ 
   funext z
   have h3 := (hω φ hφ).2.1 _ hτ fun k => hMat X bas idx x *ᵥ z k
   have h4 := Finset.sum_congr (s₁ := Finset.univ) rfl fun (k : Fin n) _ =>
-    GlobalTheory.T.canonicalThetaExponent_symplectic_invariant _ σ hσ _ hτ (hMat X bas idx x *ᵥ z k)
-  have hd := (GlobalTheory.T.symplecticSiegelAction_mem_upperHalfSpace_and_cocycle _ σ hσ _ hτ).1
+    _root_.GlobalTheory.SW.canon_exponent_invariant _ σ hσ _ hτ (hMat X bas idx x *ᵥ z k)
+  have hd := (_root_.GlobalTheory.SiegelAction.symplectic_action _ σ hσ _ hτ).1
   rw [Finset.sum_add_distrib, ← Finset.mul_sum] at h4
   have h5 (k) : hMat X bas idx (lact γ x) *ᵥ z k =
       (hMat X bas idx x *ᵥ z k) ᵥ* (spDen σ (tauMat X bas idx x))⁻¹ := by
@@ -131,7 +131,7 @@ theorem herm_lact (hs : IsSympl X bas) {γ : GL (Fin r) E} (hγ : IsUn X γ) {x 
       (hMat X bas idx x *ᵥ u) ⬝ᵥ imInv X bas idx x *ᵥ star (hMat X bas idx x *ᵥ v) := by
   obtain ⟨σ, hσ, h⟩ := periods_lact_symplectic E r X g bas idx 0 hs Even.zero γ hγ
   obtain ⟨hx', hτ, h1, h2⟩ := h x hx
-  obtain ⟨hd, -, -, h3, -⟩ := GlobalTheory.T.symplecticSiegelAction_mem_upperHalfSpace_and_cocycle _ σ hσ _ hτ
+  obtain ⟨hd, -, -, h3, -⟩ := _root_.GlobalTheory.SiegelAction.symplectic_action _ σ hσ _ hτ
   have h4 : imInv X bas idx x = (spDen σ (tauMat X bas idx x))⁻¹ * imInv X bas idx (lact γ x) *
       ((spDen σ (tauMat X bas idx x))⁻¹)ᴴ := by
     rw [← (imInv_isSymm idx hs hx).eq, ← (imInv_isSymm idx hs hx').eq, imInv_eq, imInv_eq, ← h3, h1,

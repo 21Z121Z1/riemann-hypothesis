@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Ex
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.GreenCuspidalIff
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoeffZeroNeOfMonicIrr
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CanonListLength
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinsumCentralIdempotentOfIrrCharacterEqSimpleStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinsumCentralIdempotentOfIrrCharacterEqSimple
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsCuspidalCharacterIffIsCuspidalGLnFiniteField
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LabelDatum
@@ -39,7 +39,7 @@ theorem GlobalTheory.SerCmp.eSerC_eq_eSerO : GlobalTheory.Published.GreenCuspida
         exact ⟨V, hV, (_root_.GlobalTheory.CuspCharRep.isCusp_character_iff_isCuspidal g d V hd hV).1 (hχV ▸ hχ), hVχ⟩
     · exact _root_.GlobalTheory.SerCmp.hasLabel_of_hasLabelO g L O hcusp (_root_.GlobalTheory.HCChar.trace_hcRep_eq_hcL g) (_root_.GlobalTheory.GLq.ConstIff.constituent_hcRep_iff g) r τ f hτ
   unfold GlobalTheory.GLq.eSerC Formalism.L2.NT.eSerO
-  rw [GlobalTheory.T.finsum_centralIdempotentOfIrrCharacter_eq_simple]
+  rw [_root_.GlobalTheory.SerCmp.finsum_zOf_eq_finsum_zIdem]
   refine finsum_congr fun z => finsum_congr_Prop (propext ?_) fun _ => rfl
   constructor
   · rintro ⟨τ, hτ, hz, hl⟩

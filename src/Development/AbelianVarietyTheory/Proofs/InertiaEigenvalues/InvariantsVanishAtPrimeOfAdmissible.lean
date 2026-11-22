@@ -4,8 +4,9 @@ import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
 import Development.AbelianVarietyTheory.Definitions.Foundations.HTBasis
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExpStar
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsTauComponentFrameOfLatticeStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PrimePowSmulMemOfTwistedInvariantModLatticeStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsContinuousGaloisLatticeMatrixIntegralStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PrimePowSmulMemOfTwistedInvariantModLattice
+import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsContinuousGaloisLatticeMatrixIntegral
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPowSmulMemOL
 
 noncomputable section
@@ -157,7 +158,7 @@ theorem invariants_killed : ∀ (D : Formalism.BasicNotions.D7) (HW : HWOf D.loc
   intro D HW F h7 l _ K s LL h S E M0 h0 T τ hW hj x hx
   have hell : ell S = l := (D.loc l).PD_p K
   have hs : S.W.s = s := (HW l).W_s K s LL h
-  obtain ⟨d, M, A, hM⟩ := (GlobalTheory.T.exists_continuous_galoisLatticeMatrix_integral l K LL T).1
+  obtain ⟨d, M, A, hM⟩ := (_root_.GlobalTheory.Cyc.isMat_exists_and_props l K LL T).1
   obtain ⟨r, P, U, g, J, hJ, hfin, hFr, hHT, hPM, hb1, hb2, hint⟩ :=
     GlobalTheory.T.exists_tau_component_frame_of_lattice D HW F h7 l K s LL h T M0 h0 τ hW d M A hM
   have hact : IsActC (D.locA l).actC := ⟨(D.locA l).actC_ext, (D.locA l).actC_norm⟩
@@ -184,7 +185,7 @@ theorem invariants_killed : ∀ (D : Formalism.BasicNotions.D7) (HW : HWOf D.loc
     have := hint y ⟨0, fun a => by simp, Subsingleton.elim _ _⟩ a
     rw [norm_mul, norm_pow]
     exact mul_le_one₀ (pow_le_one₀ (norm_nonneg _) hl1) (norm_nonneg _) this
-  · have key := GlobalTheory.T.prime_pow_smul_mem_of_twistedInvariant_mod_lattice l _ _ hact hχ K m r hLev U g hFr J hHT 0 h0J (imBall P) hb1
+  · have key := _root_.GlobalTheory.FrameInv.pow_smul_mem_of_invariant_mod l _ _ hact hχ K m r hLev U g hFr J hHT 0 h0J (imBall P) hb1
       (by rintro _ ⟨z, hz, rfl⟩; exact hb2 z hz)
       (P.mulVec (fun a => algebraMap ℚ_[l] (PadicComplex l) (y a))) (by
         intro σ hσ

@@ -10,7 +10,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DomBy
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValuationRingCentreInChart
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCompCompareGeneric
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.NotIsGenericFlagSelf
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCompCompareFlagStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCompCompareFlag
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeEigenProjectorExists
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlagCoefficientRatioIntegralStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeSpanProjectionBoundStatement
@@ -154,7 +154,7 @@ theorem core (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host E) (D 
     rw [o.g_over, o₀.g_over, ← hi, spMap_comp', Category.assoc]
   have hy := _root_.GlobalTheory.CompanionTheory.Ar.OrVert.image_eq_of_domBy E H D l Xo c Y S ∅ M.Ω R.Ω M.K R.K M.ι R.ι M.y R.y o.𝔐 o₀.𝔐 i hξ W q q₀ hq hq₀
   obtain ⟨ι, hext, hspan, hpt, hW⟩ :=
-    GlobalTheory.T.hodge_comp_compare_flag E H D l Xo c Y S ∅ M.Ω R.Ω M.K R.K M.ι R.ι M.y R.y o.𝔐 o₀.𝔐 o₀.Fl i hξ
+    _root_.GlobalTheory.CompanionTheory.Ar.OrVert.LieCmp.lie_cmp E H D l Xo c Y S ∅ M.Ω R.Ω M.K R.K M.ι R.ι M.y R.y o.𝔐 o₀.𝔐 o₀.Fl i hξ
   have hsl := hext.1
   have hspanW := hW W.toSubring q q₀ hq.1 hq₀.1 hy
   have hFl : ∀ s j, o.Fl.b s j = ι (o₀.Fl.b s j) := fun s j => (hpt _ _).1 (by

@@ -27,7 +27,7 @@ import Development.AutomorphicSpectrum.Statements.GeometryStatements.CmpSt
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.NumberField
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.LocalAtPlaces
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.ComponentDataHeightIdentity
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspCorrespondenceBoundStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspCorrespondenceBound
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianPartLieSignature
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.SlopeBoundSt
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
@@ -189,7 +189,7 @@ theorem height_comparison_global_model : (Top.Given → Fl.FlatDegree → FlatSa
     linarith
   obtain ⟨t', m', MB, ρM, hfib, hact, hρ⟩ := exists_action Or.𝔐 hLin
   obtain ⟨e1, e2, e3⟩ := eig_facts A ρM hf2 hρ
-  obtain ⟨σ₀, -, hσu, -, -, -, hσc⟩ := GlobalTheory.T.cusp_correspondence_bound E H D l (Xo l) c Y S₀ Ω K J Dc.y Or.𝔐 L
+  obtain ⟨σ₀, -, hσu, -, -, -, hσc⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.LabPt.exists_labVal E H D l (Xo l) c Y S₀ Ω K J Dc.y Or.𝔐 L
     (spMap (algebraMap (𝓞 L) L) ≫ z)
   have hσ : A.σ = σ₀ := hσu A.σ hLin.2.1
   have hrk2 : ∀ s, A.Bq.rank (eigSp ρM (intLift (A.σ s))) ≤ labelRk D s := by

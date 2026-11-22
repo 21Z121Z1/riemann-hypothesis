@@ -1,5 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NoInvariantPairingSmallerFockSourceStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NoInvariantPairingSmallerFockSource
+import Formalism.SharpRestriction.Divisibility.SchurIrreducible
+import Formalism.LocalToGlobal.BesselHermitianTheta.DefsReal
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFockPolynomialIsoUnitaryPairStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteSupport
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsLocalFockIntertwinerRealPlaceOfCoverContra
@@ -32,7 +34,7 @@ theorem pairing_eq_zero : ∀ (X : ProvA), Formalism.MainNotions.SchurIrreducibl
       map_add' := fun P Q => by ext v; simp
       map_smul' := fun c P => by ext v; simp }
   have hB' : ∀ P v, B' (κ P) v = b P (j v) := fun P v => by simp [B']
-  have h0 : B' = 0 := GlobalTheory.T.no_invariant_pairing_smaller_fock_source X h5 hAR t al be ga de hd hbig i hi hip hiq B' (fun Y hY P y => by
+  have h0 : B' = 0 := _root_.GlobalTheory.NoInvPairing.no_pairing_smaller_source X h5 hAR t al be ga de hd hbig i hi hip hiq B' (fun Y hY P y => by
     obtain ⟨P, rfl⟩ := κ.surjective P
     have hY' : toFrame M' τ (plainMat e' Y) ∈ lieAt W τ := h₂.lie ▸ ⟨Y, hY, rfl⟩
     have h4 : (plainMat e' Y).trace = Y.trace := trace_reindex' e' Y

@@ -5,7 +5,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsValues
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelComplexBaseChange
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValAtComplexEmbedding
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorusOver
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianPartBaseChangeAltBis
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsAbPartBaseChange
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelBaseChangeExists
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModelBaseChange
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackCorrespondence
@@ -23,7 +23,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 import Development.AbelianVarietyTheory.PublishedTheorems.SemiabelianTori.GeometricallyConnectedSplitTorusAff
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieValuePullbackFieldExtStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieValuePullbackFieldExt
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AdaptedGramDetPositive
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsAdapted
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GramDetNeZeroOfIndep
@@ -55,7 +55,7 @@ theorem geo_height_arch : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E]
   have hgram : ∀ τ, 0 < A.gramDet e (q τ) := fun τ =>
     _root_.GlobalTheory.CompanionTheory.Ar.Cusp.gramDet_pos_of_adapted E L _ V A (lab τ) r k v (q τ) hv (hq τ).1 (hq τ).2 e
   refine ⟨hgram, ?_⟩
-  obtain ⟨P', mK, mB, h1, h2, h3⟩ := GlobalTheory.T.abPart_comp_spMap_compat E H _ 𝔐.t L ℂ (spMap (algebraMap (𝓞 L) L) ≫ z) P e
+  obtain ⟨P', mK, mB, h1, h2, h3⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.PtHt.Arch.AbPartBC.exists_abPart_baseChange E H _ 𝔐.t L ℂ (spMap (algebraMap (𝓞 L) L) ≫ z) P e
   haveI := P.tK.semi.smooth
   obtain ⟨V', _, _, MV', j, hjs, hji, hjpt, hjspan⟩ := _root_.GlobalTheory.CompanionTheory.Ar.LieBc.main L ℂ e P.tK.G P'.tK.G mK.φ mK.cart V MV
   obtain ⟨ρ', hρa, hρ⟩ := _root_.GlobalTheory.CompanionTheory.Ar.ActBC.exists_act_extends L ℂ e _ _ mK.φ mK.cart (𝓞 E) P.tK.act P'.tK.act mK.act V V' MV MV' j hjpt hjspan
@@ -94,7 +94,7 @@ theorem geo_height_arch : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E]
     _root_.GlobalTheory.CompanionTheory.Ar.Cusp.PhiBaseChange.phiNormSq_baseChange E L _ V A lab r k m h v q bL T hv hq hT hdet e V' j hjs hji ρ' hρ heig hbF (fun τ c c' =>
       hbv _ _ _ _ (hover _) (hover _))⟩, hpos, rfl⟩
   obtain ⟨v₀, hv₀, e₀⟩ := hb τ i
-  refine ⟨LieSigma.pullEps e _ ≫ v₀, GlobalTheory.T.lie_value_pullback_field_ext _ _ _ _ _ 𝔐.M _ _ _ e _ _ hv₀, ?_⟩
+  refine ⟨LieSigma.pullEps e _ ≫ v₀, _root_.GlobalTheory.CompanionTheory.Ar.LieSigma.ValBC.valAt_field_map _ _ _ _ _ 𝔐.M _ _ _ e _ _ hv₀, ?_⟩
   rw [← h1, ← Category.assoc, hjpt, Category.assoc, e₀]
   rfl
 

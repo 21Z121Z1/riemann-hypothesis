@@ -15,7 +15,7 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CaRepApply
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchwartzBruhatTensorIndicatorCharacterFacts
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsSumFrame
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnramifiedCharacterDetLatticeStabilizerEqOne
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceHermitianFramePropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceHermitianFrameProperties
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualLatticeStabilizersFixWeilVacuumOnPlaceSe
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceBaseVacuumDatumExistsUnique
 
@@ -182,7 +182,7 @@ theorem smallOne : ∀ D : D7, SmallOne D := by
     rw [← Pair.dia_lat s Q, ← Pair.smul_lat, hgs, mem_withLat.1 hQ', Pair.dia_lat]
   have hfix : ∀ Q' ∈ withLat Q.lat, omT (β.gl (gs Q'), 1) Φ₂ = Φ₂ := by
     intro Q' hQ'
-    obtain ⟨-, -, -, hfr, -, -⟩ := GlobalTheory.T.splitPlaceHermitianFrame_properties D k p S n β
+    obtain ⟨-, -, -, hfr, -, -⟩ := _root_.GlobalTheory.FrameAt.frame_facts D k p S n β
     obtain ⟨Λ', -, hΛ', hK⟩ := hfr L₂' hsd₂
     have hΛQ : Λ' = Q.lat := Submodule.ext fun x => (hΛ' x).trans (hlat x).symm
     have hk1 : InK S L₂' (· = p.v) (β.gl (gs Q')) := (hK _).2 (hΛQ ▸ hstab Q' hQ')

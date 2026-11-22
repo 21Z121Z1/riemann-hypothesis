@@ -14,7 +14,7 @@ import Formalism.LocalToGlobal.GlobalTheory.GL5.FamilyMassVolumeIdentityOfClassD
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MemRangeOfOneTmulMem
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CompletedLatticeIntegralityFacts
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertPlaceHeckeDoubleCosetsInverseRepsLabel
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AdelicUnitarySupportedAtFinitePlaceEqLocalUnitarStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AdelicUnitarySupportedAtFinitePlaceEqLocalUnitar
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.StabilisesCompletedLatticeIffLocalMatrixIntegralStatement
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsComplexConjIsometryInertCompletion
@@ -110,7 +110,7 @@ theorem GlobalTheory.InertLatMult.lattice_eq_mult : ∀ {D : D7} (V : HSp D) (P 
   obtain ⟨σ, π, hσE, hσσ, hσv, hσx, hσπ, hπ⟩ := _root_.GlobalTheory.InertConj.exists_conj_completion D.host.E v P hin
   obtain ⟨ψ, hψE, hψσ, hψO⟩ := _root_.GlobalTheory.InertCompletion.exists_ringEquiv_completion D.host.E v P hin σ hσE hσv
   obtain ⟨h, hfr, hon⟩ := GlobalTheory.PlaceComp.exists_orthonormal D.sp.cm V v
-  obtain ⟨s1, -, s3⟩ := GlobalTheory.T.adelicUnitary_supportedAtFinitePlace_eq_localUnitary _ D.host.E D.sp.cm V v _ hI
+  obtain ⟨s1, -, s3⟩ := _root_.GlobalTheory.SuppLocal.supp_local _ D.host.E D.sp.cm V v _ hI
   set e : Formalism.L2.Theta.AE D := algebraMap (AF D.host.F) (Formalism.L2.Theta.AE D) (pairA D.host.F 0 α) with he_def
   set fe := finPart D e with hfe_def
   let ψ' : (Fv D.host.F v ⊗[D.host.F] D.host.E) →+* P.adicCompletion D.host.E := ψ

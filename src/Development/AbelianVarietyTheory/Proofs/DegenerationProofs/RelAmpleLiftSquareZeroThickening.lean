@@ -11,7 +11,7 @@ import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.RelAmpleIffV
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIsAffineOpenPreimageEqOfIsNilpotent
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.MulEqZeroOfAppEqZero
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SecOnPullSurjectiveOfSurjective
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsPowSectionStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsPowSection
 
 open CategoryTheory CategoryTheory.Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.AbLaw
@@ -69,7 +69,7 @@ theorem relAmple_of_sq_zero : ∀ (A A' : Type) [CommRing A] [CommRing A'] (g : 
     β hβ _ ha
   obtain ⟨t, ht⟩ := secOn_pull_surjective_of_surjective A A' g hg _ _ X.hom X'.hom β hβ _ hH D hD
     (GlobalTheory.LB.ofSec s₀ (β ⁻¹ᵁ D))
-  obtain ⟨k, hk, σ, hσ⟩ := GlobalTheory.T.exists_pow_section' _ _ β
+  obtain ⟨k, hk, σ, hσ⟩ := _root_.GlobalTheory.SecPow.exists_pow_section _ _ β
     (SquareZero.mul_eq_zero_of_app_eq_zero A A' g hg h2 _ _ X.hom X'.hom β hβ) _ hH s₀ D (e.trans hs₀.symm) t ht
   obtain ⟨u, hu⟩ := exists_sec_lbPow_of_pw σ
   have e' : nonzeroLocus (secOfPowPow u) = D := (nonzeroLocus_secOfPowPow u).trans (hu.trans hσ)

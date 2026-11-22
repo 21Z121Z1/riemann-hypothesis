@@ -10,13 +10,13 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaIntertwines
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TwoSidedHeckePartnerInertPrime
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaLiftTransferHeckePolySplitPrimeStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaLiftTransferHeckePolySplitPrime
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FamilySplitOperatorsEqLabelOperatorsModels
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertHeckeOperatorsLiftsRationalSelfAdjointLabel
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsSphericalDoubleCosetLabelIffDecreasing
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SelfDualAntitoneListIffInertPrimeHeckeExponents
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RealizationFamilyNormalOperatorsStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.WeightCocharacterEqOfGoodPlacesStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.WeightCocharacterEqOfGoodPlaces
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix
 open Formalism.L2.Theta Formalism.L2.DIV Formalism.L2.Indef Formalism.DivisionValues Polynomial
 open Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Lev Formalism.IndefR.Mult Formalism.IndefR.Datum Formalism.IndefR.Cx
@@ -185,11 +185,11 @@ theorem parts_eq_of_labW : HoweUnram → ∀ {D : D7} {G : Type} [Group G] [Fint
     intro u cc hu hu0 hbot
     rw [hbot, Submodule.mem_bot] at hu
     exact hu0 (by rw [hu, map_zero])
-  refine GlobalTheory.T.weight_cocharacter_eq_of_good_places R.toRealDat F.lv2 hCore R.SF hSF j c c' (hne hw2 (hydef ▸ hy)) (hne hw2' (hy'def ▸ hy')) ?_ ?_
+  refine _root_.GlobalTheory.Hk3.LabDet.part_eq_of_labels R.toRealDat F.lv2 hCore R.SF hSF j c c' (hne hw2 (hydef ▸ hy)) (hne hw2' (hy'def ▸ hy')) ?_ ?_
   ·
     intro P hP hconj k hk
     obtain ⟨P0, hP0, rfl⟩ := (hOnto P hP).2 hconj
-    obtain ⟨z, hz, hpoly⟩ := GlobalTheory.T.thetaLift_transfer_heckePoly_splitPrime R.toRealDat F.lv2 hCore hSch j A3.A.μ0 ⟨P0, hP0⟩
+    obtain ⟨z, hz, hpoly⟩ := _root_.GlobalTheory.ThetaPrimeHecke.transfer_and_heckePoly R.toRealDat F.lv2 hCore hSch j A3.A.μ0 ⟨P0, hP0⟩
     have hsplit := (GlobalTheory.SplitHeckeLabel.split_ops R.toRealDat F.lv2 hCore.lev hCore.fam hCore.models).2 j A3.A.μ0 hV hVops
       ⟨P0, hP0⟩
     have heq : ∀ k', k' ≤ (Vc D j).rank →

@@ -4,7 +4,7 @@ import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagModelExistsOfGive
 import Development.AutomorphicSpectrum.Statements.TowerExistence.GoodTowerExistsX
 import Development.AutomorphicSpectrum.Statements.MetricStatements.ExistsFlagModelBaseMetric
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.RootOnFund
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.BaseMetricExistsOfGivenStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.BaseMetricExistsOfGiven
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagModelArithDimensionBoundary
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SmoothContinuous
@@ -13,7 +13,7 @@ import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverDegreeOneRealisation
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentSwapSquareSystem
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.XCSqsys
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptFlagXdegStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptFlagXdeg
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptBirationalArithVar
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CmHostRankBounds
@@ -72,7 +72,7 @@ theorem tie_of (hX : StX) (hAlg : StAlg) (hHt : StHt) (hSing : StSing) (hBase : 
   obtain ⟨⟨bW⟩, ⟨bO⟩⟩ := PB.nonempty_bases 𝔐
   obtain ⟨K, _, ι, _, Φ, _, y, M, 𝔐₁, tie, κ, v, φ, π, j, 𝔐', Fl, xdeg, e, ⟨-, -, -, -, hov, hR₁, -⟩,
     ⟨hcov₁, -, hsnc₁⟩, hv, htot, hFl⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PB.FMX.flagModelExists hG E H D l Xo c Y S Ω K₀ J₀ x₀ 𝔐 _ dg bW bO harith hcov
-  obtain ⟨BM, hBM, hcj⟩ := GlobalTheory.T.base_metric_exists_of_given hG E H D l Xo c Y S K ι Φ y M 𝔐₁ tie dg hp hq hcov₁ (hsnc₁ _ hsnc)
+  obtain ⟨BM, hBM, hcj⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PB.BMx.baseMetricExists_of_given hG E H D l Xo c Y S K ι Φ y M 𝔐₁ tie dg hp hq hcov₁ (hsnc₁ _ hsnc)
   obtain ⟨-, hne, -⟩ := GlobalTheory.CompanionTheory.Ar.Top.HostNumbers.host_numbers E H
   have hcard : 0 < Fintype.card (CMType H) := Fintype.card_pos_iff.2 hne
   have hN : antisymDegree (CMType H) (D.p + D.q) = Fintype.card (CMType H) * D.p * D.q +
@@ -96,7 +96,7 @@ theorem tie_of (hX : StX) (hAlg : StAlg) (hHt : StHt) (hSing : StSing) (hBase : 
   have FS : Nonempty (PB.FlagSys CR.Re D.p) := ⟨⟨M.j_le, hd, hU, fun τ a b hab hb =>
     (_root_.PositivityTheory.Xgp.t_c_sqsys hIn K ι Φ y (CMType H) (D.p + D.q) D.p M _ d BM FA K ι Φ y M Cv CR hv' τ a b hab hb).some⟩⟩
   obtain ⟨⟨pr, j', hov', hR', -⟩, hroots, hdy, -⟩ := id htot
-  choose sing hsd hho hsc using GlobalTheory.T.hodge_cpt_flag_xdeg E H D l Xo c _ _ Y S Φ K ι y 𝔐' Fl xdeg e hβ hroots
+  choose sing hsd hho hsc using _root_.GlobalTheory.CompanionTheory.Ar.HodgeLine.exists_hodgeLine E H D l Xo c _ _ Y S Φ K ι y 𝔐' Fl xdeg e hβ hroots
   have hrd : ∀ a, ((FA.Re.comap some).ref a).a = (Top.combLine sing (Cmp.fundOnRoot a)).a := fun a => by
     show (FA.Re.ref (some a)).a = ∑ r, _ • (sing r).a
     rw [FA.ref_some, RootFieldNumerics.Sq.sum_fundOnRoot]

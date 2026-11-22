@@ -13,7 +13,7 @@ import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsOpenCongrue
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ContinuousIdeleCharLocalFactorization
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsAdeleRingTensorEquivInfiniteProdFinite
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.InfFam
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFieldElementRelativeApproxCompletionsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFieldElementRelativeApproxCompletions
 
 set_option autoImplicit false
 noncomputable section
@@ -68,7 +68,7 @@ theorem eq_one_of_finPart (c : (AE D)ˣ →* Circle) (n : ℕ) (hn : 0 < n) (hpo
   rw [hV, map_pow, hpow]
 
 theorem exists_global_approx : ∀ (L : Type) [Field L] [NumberField L] (R : Finset (HeightOneSpectrum (𝓞 L))) (z : ∀ P : HeightOneSpectrum (𝓞 L), P.adicCompletion L), (∀ P ∈ R, z P ≠ 0) → ∃ k : Lˣ, ∀ P ∈ R, Valued.v (z P - algebraMap L (P.adicCompletion L) (k : L)) ≤ WithZero.exp (-1 : ℤ) * Valued.v (z P) :=
-  GlobalTheory.T.exists_field_element_relative_approx_completions
+  _root_.GlobalTheory.WeakApprox.exists_units_approx
 
 set_option maxHeartbeats 1000000 in
 open Formalism.L2.Host in

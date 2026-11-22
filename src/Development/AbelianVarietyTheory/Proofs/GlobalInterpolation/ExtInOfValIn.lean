@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.FormsStable
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemFormsIffExistsEquivariantExtension
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.UopIsExtStatement
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.UopIsExt
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LevelChainTransitionIsExtKernelSum
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ValueLatticeAddSubgroupSmulMoveLawsStatement
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ValueLatticeAddSubgroupSmulMoveLaws
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ValBOfInc
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LevelPrimePowSmulMemValueLatticeErase
 open Formalism.BasicNotions Classical NumberField GlobalTheory.LvT
@@ -68,7 +68,7 @@ theorem extIn_of_valIn (hC : Co.Ok) {w} (hw : OverT X w) {V} {φ : Fn X i} (hφ 
   obtain ⟨y, hy, hyc⟩ := h c
   have : Φ (M.rep c) = y := Subtype.ext ((hΦ.1 c).symm.trans hyc)
   rw [hΦ.2, this]
-  exact (GlobalTheory.T.valueLattice_addSubgroup_smul_move_laws D u X i M Co hC w hw V _).2.2.2 g y hy
+  exact (_root_.GlobalTheory.LvT.ValEq.valB_laws D u X i M Co hC w hw V _).2.2.2 g y hy
 
 theorem ExtIn.mem_Fi {w V} {φ : Fn X i} (h : ExtIn Co w V φ) : φ ∈ X.fm.Fi i := by
   obtain ⟨Φ, hΦ, -⟩ := h
@@ -86,7 +86,7 @@ theorem isExt_smul {φ : Fn X i} {Φ} (h : M.IsExt φ Φ) (a : ℂ) : M.IsExt (a
 
 theorem pow_smul_mem (hC : Co.Ok) {w} (hw : OverT X w) {V p y} (hy : y ∈ Co.valB w V p) (n : ℕ) :
     ((X.A.T : ℂ) ^ n) • y ∈ Co.valB w V p := by
-  have := (GlobalTheory.T.valueLattice_addSubgroup_smul_move_laws D u X i M Co hC w hw V p).2.2.1 ((X.A.T : D.what₂.LL) ^ n)
+  have := (_root_.GlobalTheory.LvT.ValEq.valB_laws D u X i M Co hC w hw V p).2.2.1 ((X.A.T : D.what₂.LL) ^ n)
     (pow_mem (natCast_mem _ _) n) y hy
   simpa using this
 
@@ -98,8 +98,8 @@ theorem ExtIn.pow_smul (hC : Co.Ok) {w} (hw : OverT X w) {V} {φ : Fn X i} (h : 
 theorem ExtIn.uop (hC : Co.Ok) {w} (hw : OverT X w) (hs : X.fm.seenP w = true) {V v} (hv : v ∈ V)
     {φ : Fn X i} (h : ExtIn Co w V φ) : ExtIn Co w (V.erase v) (Uop X i v φ) := by
   obtain ⟨Φ, hΦ, h⟩ := h
-  refine ⟨_, GlobalTheory.T.isExt_Uop_finsum_inc_of_isExt D u X i M v φ Φ hΦ, fun p => ?_⟩
-  have hv' := GlobalTheory.T.valueLattice_addSubgroup_smul_move_laws D u X i M Co hC w hw (V.erase v) p
+  refine ⟨_, _root_.GlobalTheory.LvT.uop_isExt D u X i M v φ Φ hΦ, fun p => ?_⟩
+  have hv' := _root_.GlobalTheory.LvT.ValEq.valB_laws D u X i M Co hC w hw (V.erase v) p
   refine finsum_mem_induction (fun y => y ∈ Co.valB w (V.erase v) p) hv'.1
     (fun y y' hy hy' => hv'.2.1 y hy y' hy') fun p₁ hp₁ => ?_
   rw [← GlobalTheory.LvT.valB_of_inc D u X i M Co w V v p p₁ hs hv hp₁]
@@ -143,7 +143,7 @@ theorem extIn_K {i : ℕ} {M : PtModel X i} {M' : PtModel X (i + 1)} {Co : M.Coo
     {φ : Fn X i} (h : ExtIn Co w ∅ φ) : ExtIn Co' w V (a • KT X i φ) := by
   obtain ⟨Φ, hΦ, h⟩ := h
   refine ⟨_, isExt_smul (GlobalTheory.LvT.isExt_KT D u X i M M' K φ Φ hK hΦ) a, fun p' => ?_⟩
-  have hv := GlobalTheory.T.valueLattice_addSubgroup_smul_move_laws D u X (i + 1) M' Co' hC' w hw V p'
+  have hv := _root_.GlobalTheory.LvT.ValEq.valB_laws D u X (i + 1) M' Co' hC' w hw V p'
   simp only [Finset.smul_sum]
   refine Finset.sum_induction _ (fun y => y ∈ Co'.valB w V p') (fun y y' hy hy' => hv.2.1 y hy y' hy') hv.1
     fun c _ => ?_

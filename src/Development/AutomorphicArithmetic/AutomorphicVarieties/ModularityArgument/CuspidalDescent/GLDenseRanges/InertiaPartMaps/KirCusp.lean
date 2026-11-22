@@ -30,7 +30,7 @@ private theorem colT_rel (hψ : StdPsi ψ) (X : Set (GA E a))
   obtain ⟨ξ, hξ⟩ : ∃ ξ : UnipotentBlockColumnIndex a (m + 1) (m + 1) → E, coefF ψ (m + 1) ξ f g₀ ≠ 0 := by
     by_contra h
     push Not at h
-    exact hΦ0 (GlobalTheory.T.periodic_eq_zero_of_fourier_coefficients_zero E _ ψ hψ _ hPer h)
+    exact hΦ0 (_root_.GlobalTheory.CuspGeneric.eq_zero_of_avg_character_eq_zero E _ ψ hψ _ hPer h)
   have hξ0 : ξ ≠ 0 := by
     rintro rfl
     apply hξ
@@ -175,7 +175,7 @@ theorem UpperTheory.V.Z.Desc.V0.kirCusp :
   intro E _ _ _ a _ P w σ hσ
   obtain ⟨f, hf0, hf⟩ := hσ
   obtain ⟨ψ, hψ⟩ := _root_.GlobalTheory.CuspGeneric.exists_stdPsi E
-  have hg : ∀ v, Good ψ (a - 1) (f v).1.1 := fun v => GlobalTheory.T.isMirabolicWhittakerStage_of_isCuspForm E a ψ (f v).1 (P.cusp _ (f v).2)
+  have hg : ∀ v, Good ψ (a - 1) (f v).1.1 := fun v => _root_.GlobalTheory.CuspGeneric.good_of_isCuspForm E a ψ (f v).1 (P.cusp _ (f v).2)
   have h0 : a - 1 < a ∨ a - 1 = 0 := by omega
   obtain ⟨v₀, hv₀⟩ : ∃ v, f v ≠ 0 := by
     by_contra h

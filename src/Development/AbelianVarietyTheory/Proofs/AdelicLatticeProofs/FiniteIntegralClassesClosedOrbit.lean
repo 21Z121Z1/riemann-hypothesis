@@ -4,8 +4,8 @@ import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsMinNorm
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MinNormTensorStabilizerConjTransposeInvariant
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsRealTranslateIsMinNormTensorInOrbit
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.TensorSLOrbitMapProperOfIsClosed
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SiegelCoverStatement
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.BorelHarishChandraStatement
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SiegelCover
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.BorelHarishChandra
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MatrixKroneckerPowerTensorActionAlgebra
 open Matrix GlobalTheory.ClassFin
 open scoped Kronecker ComplexOrder TensorProduct
@@ -70,8 +70,8 @@ theorem finite_integral_classes_closed_orbit : ∀ (ι : Type) [Fintype ι] [Dec
     · rintro ⟨y, hy, rfl⟩
       refine ⟨gC.adjugate * y, by rw [det_mul, det_adjugate, hgCd, hy, one_pow, one_mul], ?_⟩
       rw [hv, ← (hC tC).2.1, ← mul_assoc, hgCadj, one_mul]
-  obtain ⟨C, hSieg⟩ := GlobalTheory.T.exists_siegel_decomposition_mul_int_matrix_of_det_eq_one ι
-  obtain ⟨B, hB⟩ := GlobalTheory.T.nsq_act_le_of_isSiegel_of_entries_zero_or_ge ι m d v (_root_.GlobalTheory.ClassFin.orbit_proper_of_isClosed ι m d v (horb ▸ hcl))
+  obtain ⟨C, hSieg⟩ := _root_.GlobalTheory.ClassFin.siegel_cover ι
+  obtain ⟨B, hB⟩ := _root_.GlobalTheory.ClassFin.SiegelBound.borel_harishChandra ι m d v (_root_.GlobalTheory.ClassFin.orbit_proper_of_isClosed ι m d v (horb ▸ hcl))
     (_root_.GlobalTheory.ClassFin.act_conjTranspose_of_isMinVec ι m d v hmin) C (1 / D) (by positivity)
   refine ⟨(finite_bdd_denominator_vectors (κ := TIdx ι d) D hD B).toFinset, ?_⟩
   intro h hh hint

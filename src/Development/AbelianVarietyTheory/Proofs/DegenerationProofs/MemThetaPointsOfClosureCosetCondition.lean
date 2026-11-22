@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Definitions.Degenerations.HomExtSt
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsTraitSpecialisationOfMemClosureThetaPoints
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFullObjectOfThetaPointInAlgClosedSubfield
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsProperOfThetaUnitInEveryCoset
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSpecialisationWithThetaPointStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSpecialisationWithThetaPoint
 
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry NumberField
 open scoped CategoryTheory.Obj BigOperators
@@ -40,7 +40,7 @@ theorem exists_full_of_closure_of_cosets :
     _root_.GlobalTheory.CosetGood.isProper_of_unit_in_cosets h1 h2 h3 h4 h5 h6 h7 E H D C o M n j hn hodd (hnorm n hn.pos) hj
       (fun x => v' x) hth (fun x => (hS _).1 (v' x).2)
       (fun x => (hcos x).imp fun h hh => hunit _ hh)
-  obtain ⟨o', hρ', hζ', hth'⟩ := GlobalTheory.T.exists_specialisation_with_thetaPoint h1 h2 h3 h4 h5 h6 h7 E H D C hnorm o M hprop S hS κ res
+  obtain ⟨o', hρ', hζ', hth'⟩ := _root_.GlobalTheory.Ex.Specialise.exists_specialisation h1 h2 h3 h4 h5 h6 h7 E H D C hnorm o M hprop S hS κ res
     hres (n ^ j) v' hm hm3 hth (by
       obtain ⟨x, hx⟩ := hcos 0
       exact ⟨_, by rw [hv']; exact (map_ne_zero i).2 hx⟩)

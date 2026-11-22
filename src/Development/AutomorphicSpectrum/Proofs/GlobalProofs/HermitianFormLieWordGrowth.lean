@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsSmoothVec
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.NelsonExistsWordGrowthConstantStatement
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.NelsonExistsWordGrowthConstant
 open Matrix Formalism.REAL Formalism.MainNotions.S Formalism.L2.Theta GlobalTheory.LinRed GlobalTheory.FlagMeas GlobalTheory.RealInd GlobalTheory.CompanionTheory.Hypotheses₂ GlobalTheory.CompanionTheory.Hypotheses₂.HCA
 open scoped InnerProductSpace ContDiff
 
@@ -84,7 +84,7 @@ theorem nelson_inner {E : Type} [NormedAddCommGroup E] [InnerProductSpace ℂ E]
       norm_cast
     rw [e, ← n]
     exact hs i x
-  obtain ⟨C, hC, hb⟩ := GlobalTheory.T.nelson_exists_word_growth_constant X c hc A hA hskew V hV
+  obtain ⟨C, hC, hb⟩ := _root_.GlobalTheory.CompanionTheory.Hypotheses₂.HCA.Nelson.word_growth X c hc A hA hskew V hV
   refine ⟨C, hC, fun l u hu => ?_⟩
   rw [hsq, hsq]
   exact hb l u hu

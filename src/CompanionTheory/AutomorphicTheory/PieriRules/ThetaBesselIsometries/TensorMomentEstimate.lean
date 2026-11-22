@@ -11,7 +11,7 @@ import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.FrepDi
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.TensorRawOfFrep
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.ExistsKTypeNonzeroBessel
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.UhMeasurableSet
-import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.BesselSumDecompositionStatement
+import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.BesselSumDecomposition
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.IsDSOfIsDG
 
 namespace GlobalTheory
@@ -66,7 +66,7 @@ theorem kappa_dual : HypsG → ∀ (k r : ℕ) (ι κ : Type) [Fintype ι] [Deci
     hl hnz I lI hlI
   have hK : PI.KFinSmooth := hH.1.2.2.1
   obtain ⟨hbes, hS_eq, hsm⟩ :=
-    GlobalTheory.T.isBes_tensor_projection_and_ev_equivariant_smooth hK k r ι κ ρ Γ d R RI io pr ε mu muI Wp z π om hR hRI hF hT.raw hom I
+    _root_.Gp91.GlobalTheory.KapBes.main hK k r ι κ ρ Γ d R RI io pr ε mu muI Wp z π om hR hRI hF hT.raw hom I
   obtain ⟨-, -, -, -, hTKsm, -⟩ := _root_.Gp91.GlobalTheory.rep_basic_of_isDS hK k r ε mu R hR
   obtain ⟨-, -, -, hIsm, -⟩ := _root_.Gp91.GlobalTheory.rep_basic_of_isDS hK k r ε (muI I) (RI I) (hRI I)
   obtain ⟨hadj, -, hev, -⟩ := _root_.Gp91.GlobalTheory.TensAdj.tens_adj hK k r ι κ ρ Γ d R RI io pr ep ε mu muI hR hRI hF hT

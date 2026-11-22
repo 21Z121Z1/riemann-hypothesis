@@ -2,10 +2,10 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.PartFixed
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsVacFOfIsVacVec
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.VsizeNonneg
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryQuotientHeightLeOfNoShortVectorStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryQuotientHeightLeOfNoShortVector
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LeAdelicVectorSizeProductMulUnitaryQuotientHeigh
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdelicVectorSizeSeenOrthogonalSummandLe
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryAdelicHeightOrthogonalEmbeddingLePowStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryAdelicHeightOrthogonalEmbeddingLePow
 
 noncomputable section
 
@@ -118,7 +118,7 @@ theorem of_sizes (lemM1 : ∀ (D : D7) (V : HSp D), ∃ (C : ℝ) (b : ℕ), ∀
 
 theorem quotHeight_orthDec_cmp : ∀ (D : D7) (S A B : HSp D) (o : OrthDec S A B), ∃ (C : ℝ) (a : ℕ), ∀ h,
     quotHeight A h ≤ C * quotHeight S (o.emb (h, 1)) ^ a ∧ quotHeight S (o.emb (h, 1)) ≤ C * quotHeight A h ^ a :=
-  of_sizes GlobalTheory.T.unitaryQuotientHeight_le_of_no_short_vector _root_.GlobalTheory.SeenSize.le_vsize_mul_quotHeight _root_.GlobalTheory.HtOrth.Transp.vsize_seen_emb_le GlobalTheory.T.unitaryAdelicHeight_orthogonalEmbedding_le_pow
+  of_sizes _root_.GlobalTheory.HtMahler.quotHeight_le_of_no_short _root_.GlobalTheory.SeenSize.le_vsize_mul_quotHeight _root_.GlobalTheory.HtOrth.Transp.vsize_seen_emb_le _root_.GlobalTheory.EmbHeight.height_emb_le
 
 end GlobalTheory.HtOrth
 

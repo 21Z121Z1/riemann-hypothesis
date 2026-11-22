@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolEval
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchActionReadingsCompatible
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOneParameterSubgroupUnitaryOfRealPlaceLieA
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIndefiniteUnitaryLieAlgAddISmulEqStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIndefiniteUnitaryLieAlgAddISmulEq
 
 noncomputable section
 
@@ -58,7 +58,7 @@ theorem stab_comap_of_thetaSubInf : ∀ (F E : Type) [Field F] [NumberField F] [
       Module.End.one_apply, map_add, map_smul] at hmem
     exact (N.add_mem_iff_left (N.smul_mem _ hy)).1 hmem
   intro Z y hy
-  obtain ⟨A, hA, B, hB, rfl⟩ := GlobalTheory.T.exists_indefiniteUnitaryLieAlg_add_I_smul_eq _ _ Z
+  obtain ⟨A, hA, B, hB, rfl⟩ := _root_.GlobalTheory.HoweD.upq_span _ _ Z
   rw [map_add, map_smul, LinearMap.add_apply, LinearMap.smul_apply]
   exact add_mem (key A hA y hy) (Submodule.smul_mem _ _ (key B hB y hy))
 

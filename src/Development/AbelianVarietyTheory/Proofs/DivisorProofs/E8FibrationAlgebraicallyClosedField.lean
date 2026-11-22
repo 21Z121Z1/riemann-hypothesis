@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIsE8IsSharpBas
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SymplecticTorsionSystemIsGeometricBasis
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsUnconditional
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSharpBasisSharpBasis
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilPairingE8PowerDependsOnFormStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilPairingE8PowerDependsOnForm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSymplecticBasisE8FactorTorsion
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.E8ProductTorsionSectionBoundStatement
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing
@@ -58,7 +58,7 @@ theorem exists_symplectic_labels : ∀ (W : Matrix (Fin 8) (Fin 8) ℤ), IsE8 W 
     have := Scheme.ΓSpecIso_inv_naturality (CommRingCat.ofHom k₀.subtype)
     exact (congrArg (fun f => f.hom (bT.ζ : k₀)) this).symm
   obtain ⟨b, hb, hpair⟩ := _root_.GlobalTheory.Poinc.Sep.E8Fibration.FactorBasis.exists_basis W hW gQ _ hNodd K hNK z hz P' hg B pr hP
-    (GlobalTheory.T.weilPairing_e8Power_depends_on_form W hW gQ K P' B M pr hPP hP hE _ hNpos)
+    (_root_.GlobalTheory.Poinc.Sep.E8Fibration.PairVal.weilIs_of_form_eq W hW gQ K P' B M pr hPP hP hE _ hNpos)
   have := P'.isAb.comm
   obtain ⟨htor, hactc⟩ := GlobalTheory.T.e8_prod_torsion_section_bound W hW gQ P'.A B pr hP ((l ^ j) ^ 2) b hb
   have hpt : ∀ i i', Out.WeilIs P'.A P'.L ((l ^ j) ^ 2 : ℕ)

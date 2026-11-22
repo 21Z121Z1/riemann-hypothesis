@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoordEquivSymmApply
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsHermitianIsometryMatrixIffMemIsometriesStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicFrameUnitriangularIffFlagPreservedStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsometrySubOneOrthogonalLeCoordinatesStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicFrameUnitriangularIffFlagPreserved
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsometrySubOneOrthogonalLeCoordinates
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SelfDualLatticeCoordinatesImageIffPreserved
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalIsometryCoordinateMatrixRealPlace
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselModelTransportConjPlaceMatrices
@@ -22,10 +22,10 @@ theorem nO_eq_nLam_coords : ∀ (D : D7) (X : HidaSetting D) (θ : ℝ) (C : Cho
     intro n γ hγ
     constructor
     · rintro ⟨⟨h1, h2, h3⟩, h4⟩
-      exact ⟨⟨(GlobalTheory.T.isHermitianIsometryMatrix_iff_mem_isometries X n γ hγ).1 h1, (_root_.GlobalTheory.CovDomGrp.latMap_Lc_iff X n γ hγ).1 h4⟩, (GlobalTheory.T.isotropicFrame_unitriangular_iff_flag_preserved X u n γ hγ).1 h2,
-        (GlobalTheory.T.isometry_sub_one_orthogonal_le_coordinates X u n γ hγ).1 h3⟩
+      exact ⟨⟨(GlobalTheory.T.isHermitianIsometryMatrix_iff_mem_isometries X n γ hγ).1 h1, (_root_.GlobalTheory.CovDomGrp.latMap_Lc_iff X n γ hγ).1 h4⟩, (_root_.GlobalTheory.CovDomGrp.flag_iff X u n γ hγ).1 h2,
+        (_root_.GlobalTheory.CovDomGrp.orth_cond_iff_coord X u n γ hγ).1 h3⟩
     · rintro ⟨⟨h1, h4⟩, h2, h3⟩
-      exact ⟨⟨(GlobalTheory.T.isHermitianIsometryMatrix_iff_mem_isometries X n γ hγ).2 h1, (GlobalTheory.T.isotropicFrame_unitriangular_iff_flag_preserved X u n γ hγ).2 h2, (GlobalTheory.T.isometry_sub_one_orthogonal_le_coordinates X u n γ hγ).2 h3⟩,
+      exact ⟨⟨(GlobalTheory.T.isHermitianIsometryMatrix_iff_mem_isometries X n γ hγ).2 h1, (_root_.GlobalTheory.CovDomGrp.flag_iff X u n γ hγ).2 h2, (_root_.GlobalTheory.CovDomGrp.orth_cond_iff_coord X u n γ hγ).2 h3⟩,
         (_root_.GlobalTheory.CovDomGrp.latMap_Lc_iff X n γ hγ).2 h4⟩
   refine ⟨fun γ hγ => ?_, fun s hs => ?_⟩
   · obtain ⟨n, hn⟩ := exists_equiv X γ hγ.1.1

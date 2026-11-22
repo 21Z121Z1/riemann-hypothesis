@@ -1,7 +1,7 @@
 import Mathlib
 import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.CountData
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ExistsCuspReductionBound
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.MobiusActionUpperHalfPlaneStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.MobiusActionUpperHalfPlane
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.CuspRepresentativesFinite
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.UnitBalancingImaginaryParts
 open NumberField IsDedekindDomain MeasureTheory Matrix Topology GlobalTheory.CompanionTheory.SW.Core
@@ -66,7 +66,7 @@ theorem reduction : ∀ (F : Type) [Field F] [NumberField F], IsTotallyReal F �
   have hP : 0 < P := by positivity
   refine ⟨s, κ, κ * min 1 P, hκ, mul_pos hκ (lt_min one_pos hP), ?_⟩
   intro τ hτ
-  have him := (GlobalTheory.T.mobius_action_upper_half_plane F ρ τ hτ).1
+  have him := (_root_.GlobalTheory.CompanionTheory.SW.Core.Mobius.main F ρ τ hτ).1
   obtain ⟨c, d, hcd, hD⟩ := hC₁ τ hτ
   obtain ⟨l, hl0, hlN, hl⟩ := hrow c d hcd
   obtain ⟨r₁, -, k₁, -, h₁0, h₁1⟩ := hl 1

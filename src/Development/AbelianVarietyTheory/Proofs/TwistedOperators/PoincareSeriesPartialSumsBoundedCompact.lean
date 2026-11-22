@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.DepthPays
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PoincareSeriesUnitaryAbsolutelyConvergentModeratStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PoincareSeriesUnitaryAbsolutelyConvergentModerat
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CoefficientPoincareSeriesIsAutomorphic
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.L2.DIV
 open IsDedekindDomain NumberField MeasureTheory GlobalTheory.ChiGrid GlobalTheory.FunObj GlobalTheory.Grow
@@ -14,7 +14,7 @@ theorem GlobalTheory.PoinAut.partialSum_bdd : ∀ (D : D7) (θ : InfFam D), IsIn
   intro D θ hθ V S M Λ 𝔪 hΛ v hv _ c a Kc hK
   set K := congLev D.sp.cm V.gram Λ 𝔪 with hKdef
   set N := 2 * V.rank ^ 2 + 1 with hN
-  obtain ⟨C₀, A₀, hI⟩ := GlobalTheory.T.poincareSeries_unitary_absolutelyConvergent_moderateGrowth D θ hθ V Λ hΛ c
+  obtain ⟨C₀, A₀, hI⟩ := _root_.GlobalTheory.PoinCount.poincare_count D θ hθ V Λ hΛ c
   obtain ⟨C, hC, hCb⟩ := GlobalTheory.PoinAut.coefR_le_majorant D θ hθ V S M v (fun τ => (a τ : M.H τ)) N
     (fun τ => (hv τ).2 _ (a τ).2)
   obtain ⟨H, hH⟩ := hK.exists_bound_of_continuousOn (GlobalTheory.Grow.continuous_height V).continuousOn

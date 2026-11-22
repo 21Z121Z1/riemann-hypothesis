@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Degenerations.SepticCharacterInjective
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.MulqLaws
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationDataPsiQuadraticGeneratorsLinearStatement
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationWeilPairingPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationDataPsiQuadraticGeneratorsLinear
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationWeilPairingProperties
 open ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.Ex
 open scoped BigOperators
 
@@ -58,7 +58,7 @@ theorem wQ_iff {k : ℕ} (hk : Odd k) (p : N.QT k) (w : Oˣ) :
     simp only [NumD.wQ, NumB.wS, NumD.tk, this]
   rw [e, odd_root_iff, eq_div_iff_mul_eq']
   have a := tk_pow N p p
-  have b := (GlobalTheory.T.degenerationData_psi_quadratic_generators_linear O N 0 p.1.1.toAdd).1
+  have b := (_root_.GlobalTheory.PsiQuadratic.main O N 0 p.1.1.toAdd).1
   have c := (_root_.GlobalTheory.Ex.mulq_laws O N.toNumB (2 * j + 1) 0 p.1.2.b 1).2.2.1
   rw [← N.QT_pow_b p] at b
   replace a := congrArg Additive.ofMul a
@@ -87,14 +87,14 @@ theorem wQ_mul {k : ℕ} (hk : Odd k) (p p' : N.QT k) :
   obtain ⟨a₁, a₂⟩ := (wQ_iff N hk p _).1 rfl
   obtain ⟨b₁, b₂⟩ := (wQ_iff N hk p' _).1 rfl
   rw [← div_eq_iff_eq_mul', wQ_iff N hk]
-  have k₁ := (GlobalTheory.T.degenerationWeilPairing_properties O N k p p' p).2.2.2.1
+  have k₁ := (_root_.GlobalTheory.Ex.WpPairing.wp_pairing O N k p p' p).2.2.2.1
   have E := fun {u v : Oˣ} (e : u = v) => congrArg Additive.ofMul e
   constructor
   · have t₁ := tk_mul_left N p p' (p * p')
     have t₂ := tk_mul_left N p p' p
     have t₃ := tk_mul_left N p p' p'
-    have w₂ := (GlobalTheory.T.degenerationWeilPairing_properties O N k p p' p).1
-    have w₃ := (GlobalTheory.T.degenerationWeilPairing_properties O N k p p' p').1
+    have w₂ := (_root_.GlobalTheory.Ex.WpPairing.wp_pairing O N k p p' p).1
+    have w₃ := (_root_.GlobalTheory.Ex.WpPairing.wp_pairing O N k p p' p').1
     have d := dbl_mul N p.1.2.b p'.1.2.b
     have e : (p * p').1.2.b = p.1.2.b * p'.1.2.b := rfl
     rw [e] at t₁ ⊢
@@ -123,8 +123,8 @@ theorem wQ_inv {k : ℕ} (hk : Odd k) (p : N.QT k) : N.wQ p⁻¹ * N.σ p.1.2.b 
   constructor
   · have t₁ := tk_mul_left N p p⁻¹ p⁻¹
     have t₂ := tk_mul_left N p p⁻¹ p
-    have w₁ := (GlobalTheory.T.degenerationWeilPairing_properties O N k p p⁻¹ p).1
-    have w₂ := (GlobalTheory.T.degenerationWeilPairing_properties O N k 1 1 p).1
+    have w₁ := (_root_.GlobalTheory.Ex.WpPairing.wp_pairing O N k p p⁻¹ p).1
+    have w₂ := (_root_.GlobalTheory.Ex.WpPairing.wp_pairing O N k 1 1 p).1
     have s := N.σ_inv p.1.2.b
     rw [mul_inv_cancel] at t₁ t₂ w₁
     rw [mul_one, left_eq_mul] at w₂

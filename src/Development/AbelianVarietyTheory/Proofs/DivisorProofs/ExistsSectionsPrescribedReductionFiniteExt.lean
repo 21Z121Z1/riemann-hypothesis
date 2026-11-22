@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSecsOfIntFam
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraitLeadValue
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsThetaImmersionTorusExtensionProjective
 import Development.AbelianVarietyTheory.Definitions.Uniformization.SeriesFrame
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralThetaFamilyPrescribedLeadingTermStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralThetaFamilyPrescribedLeadingTerm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToProjSecPullOfSval
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusExtensionSmoothAffineSurjectiveFourierTerms
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTermNonzeroClosed
@@ -38,7 +38,7 @@ theorem secs_exists (R : Type) [CommRing R] [IsDomain R] [IsLocalRing R] (hB : B
   obtain ⟨Y⟩ : Nonempty (Ext D.toPre) := inferInstance
   obtain ⟨hsm, -, -, -, -⟩ := GlobalTheory.Mum.ext_smooth_affine_surj_terms R D.toPre Y
   obtain ⟨S, k₁, himm⟩ := _root_.GlobalTheory.Mum.ThetaImm.exists_immersion R hB D Y
-  obtain ⟨hth, hth0⟩ := GlobalTheory.T.exists_integralThetaFamily_prescribed_leadingTerm R hB D
+  obtain ⟨hth, hth0⟩ := _root_.GlobalTheory.ThFam.exists_intFam_lead R hB D
   choose k₀ hk₀ using hth
   obtain ⟨⟨j₀, hdesc⟩, hdescθ⟩ := GlobalTheory.Mum.exists_secs_of_intFam R hB D C
   have hk : k₁ + ∑ a ∈ S, k₀ a ≤ C.n ^ (max j₀ (k₁ + ∑ a ∈ S, k₀ a)) :=

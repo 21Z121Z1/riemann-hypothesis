@@ -9,7 +9,10 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelFunctorialMap
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelExistsUniqueAct
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackEquivalence
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsCocharacterLieModelStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsCocharacterLieModel
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCocharLie
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SmoothQ
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.LeftEqIffLieVecSmul
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
@@ -429,7 +432,7 @@ theorem lie_seq : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Ho
   let actk : 𝓞 E → (Gk ⟶ Gk) := fun a => (Over.pullback x).map (t.act.act a)
   obtain ⟨LG, _, _, ⟨Mk⟩⟩ := lieModel_exists (Sp k) Gk k (𝟙 _)
   obtain ⟨LB, _, _, ⟨MB⟩⟩ := lieModel_exists (Sp k) Q.tB.G k (𝟙 _)
-  obtain ⟨MT, hMT⟩ := GlobalTheory.T.exists_cocharacter_lie_model (Sp k) Q.Ch k (𝟙 _)
+  obtain ⟨MT, hMT⟩ := _root_.GlobalTheory.CompanionTheory.Ar.TorusLie.exists_lieModel_splitTorus (Sp k) Q.Ch k (𝟙 _)
   have hgp : IsGrpPullback Gk t.G x (pullback.fst t.G.hom x) := isGrpPullback_pullback t.G x
   obtain ⟨M, hM⟩ : ∃ M : LieModel t.G x LG, ∀ e, (Mk.pt e).left ≫ pullback.fst t.G.hom x = (M.pt e).left := by
     have := (LiePull.lieModel_pullback X (Sp k) t.G Gk x _ hgp k (𝟙 _) LG).2 Mk

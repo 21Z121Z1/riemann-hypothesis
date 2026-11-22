@@ -1,7 +1,7 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.HodgeWedgeFields.H1CommutesBaseChange
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HomotopyProjectorComplexBoundedStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChainHomotopyFiniteProjectorStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HomotopyProjectorComplexBounded
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChainHomotopyFiniteProjector
 
 set_option autoImplicit false
 
@@ -45,9 +45,9 @@ theorem perfNoeth : CxSt → DictSt → PerfNoethSt := by
   intro hCx hD R _ P _ _ F hN hfl hf0 hfs
   obtain ⟨hd, -⟩ := hCx R Pᵒᵖ F
   obtain ⟨e₀, e₁, e₂, e₃, -, -, -, -, h0, h1, h2⟩ := hD R Pᵒᵖ F
-  obtain ⟨e, h, B, i1, i2, i3, i4, i5⟩ := GlobalTheory.T.chain_homotopy_finite_projector P F
+  obtain ⟨e, h, B, i1, i2, i3, i4, i5⟩ := _root_.GlobalTheory.CompanionTheory.NerveNorm.exists_normalisation P F
   have := fun n ↦ flat_Cn P F hfl n
-  obtain ⟨Q, ψ, f1, f2, f3, f4⟩ := GlobalTheory.T.homotopy_projector_complex_bounded (fun n ↦ Cn F n) (dn F) hd e h B i1 i2 i3 i4 i5 hf0 hfs
+  obtain ⟨Q, ψ, f1, f2, f3, f4⟩ := _root_.GlobalTheory.CompanionTheory.PerfRetract.exists_finite_projective_model (fun n ↦ Cn F n) (dn F) hd e h B i1 i2 i3 i4 i5 hf0 hfs
   have g₀ : ∀ x, e₁ (dn F 0 x) = d0 F (e₀ x) := h0
   have g₁ : ∀ x, e₂ (dn F 1 x) = d1 F (e₁ x) := h1
   have g₂ : ∀ x, e₃ (dn F 2 x) = d2 F (e₂ x) := h2

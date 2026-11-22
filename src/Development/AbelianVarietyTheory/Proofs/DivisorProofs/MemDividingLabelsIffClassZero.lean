@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.IsActIffIsDiagEnd
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLabelsSurjectiveHomLatticeModLevel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTorsionTranslateOfClassZeroDividing
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaMemberDividingLabelClassZeroStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaMemberDividingLabelClassZero
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor
 open GlobalTheory.Toroidal GlobalTheory.LocM GlobalTheory.PolFan GlobalTheory.ZM GlobalTheory.SiegelTor GlobalTheory.TorRef GlobalTheory.PolDeg
@@ -153,7 +153,7 @@ theorem mem_HH_iff_yy_zero : ∀ (I : Type) (X₁ : GlobalTheory.GSep.GSet) (z�
     exact 𝔪.e₈.injective (h0.trans (map_zero _).symm)
   rw [ThetaSys.HH]
   exact mem_closure_iff (X₁.ρ.n) (j + X₁.ρ.k * 2) hJ hN hG htor htf h1 h2 h3 h4 _
-    (fun b hb => GlobalTheory.T.thetaMember_dividing_label_class_zero I X₁ z₁ act V ev X t δ 𝔪 b hb)
+    (fun b hb => _root_.GlobalTheory.GSep.DivInt.label_zero_of_mem_supI I X₁ z₁ act V ev X t δ 𝔪 b hb)
     (fun b hb => _root_.GlobalTheory.GSep.TorTrans.exists_translate_mem_supI I X₁ z₁ act V ev X t δ 𝔪 x₀ hx₀ b hb) a
 
 end GlobalTheory.GSep

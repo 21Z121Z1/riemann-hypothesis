@@ -2,9 +2,9 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsSmoothVector
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsArchimedeanLiftUnitaryGroupProduct
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagDomainFramesEqGramFramesUnitary
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicAdelicFormOfBoundedSectionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicAdelicFormOfBoundedSection
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicTransvectionSubgroupEqAdelesClosed
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransvectionSubgroupCocompactHaarFundamentalDomaStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransvectionSubgroupCocompactHaarFundamentalDoma
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicUnitaryTopology
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.PeriodLatticeCountable
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.LatticeSpanMembership
@@ -132,12 +132,12 @@ theorem zCusp_adel : ∀ (D : D7) (θ : InfFam D) (V : HSp D) (S : D.what₂.Tau
   subst hr
   have hθ := hG.inf
   obtain ⟨⟨hleft, ⟨U, hU, hlev⟩, hcont⟩, ⟨C, hC⟩, -, -⟩ :=
-    GlobalTheory.T.holomorphicAdelicForm_of_boundedSection D θ V S M w _ rfl Comp X la dict mu c Kf hM hG P fun k => (hP k).1
+    _root_.GlobalTheory.HolDict.BackHol.holForm_adel D θ V S M w _ rfl Comp X la dict mu c Kf hM hG P fun k => (hP k).1
   set φ := adel V dict (muPin V dict mu c) P with hφ
   obtain ⟨-, -, -, hB, hT, -, hQ⟩ := GlobalTheory.Mem.AdelicGroupTop.adelic_unitary_topology D V
   obtain ⟨L, hL1, -, hLc, hLU, hLL, -, -, -, hH⟩ := GlobalTheory.RealLift.exists_real_lift D θ V hθ
   obtain ⟨⟨eZ, -⟩, -, hZ1, hZ2, -⟩ := GlobalTheory.HolDict.TransvGroup.transvection_group D θ V hθ ξ hξ
-  obtain ⟨-, hfin, hdec⟩ := GlobalTheory.T.transvectionSubgroup_cocompact_haar_fundamentalDomain D θ V hθ ξ hξ
+  obtain ⟨-, hfin, hdec⟩ := _root_.GlobalTheory.TransvMeasure.transvection_measure D θ V hθ ξ hξ
   obtain ⟨e, he, -, -⟩ := FdDom.dom_iff_frDoms D θ V S M w _ rfl Comp X la dict mu c Kf hM hG (dict g).1
   have hcomm : ∀ a b : ZI V ξ, a * b = b * a := fun a b => by
     obtain ⟨a, rfl⟩ := eZ.surjective a

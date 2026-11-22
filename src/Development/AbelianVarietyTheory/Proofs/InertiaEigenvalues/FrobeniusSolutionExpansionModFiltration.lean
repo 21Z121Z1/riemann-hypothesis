@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Definitions.Foundations.HTBasis
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExpStar
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowMulMemLatIff
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobeniusEquationLiftAinfStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TeichmullerEpsilonRootPowSubZetaExpMemFiltrationStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TeichmullerEpsilonRootPowSubZetaExpMemFiltration
 
 noncomputable section
 
@@ -105,7 +105,7 @@ theorem expand : ∀ (l : ℕ) [Fact l.Prime] (P : LocPrime l) (AI : LocAinf l P
           ∑ j ∈ Finset.range M, qB P ((((m i * l ^ k : ℕ) : ℚ_[l]) / (l : ℚ_[l]) ^ s) ^ j /
             (j.factorial : ℚ_[l])) * tD P ^ j) ∈ FilB P (M : ℤ) := by
       refine Submodule.sum_mem _ fun k _ => Submodule.sum_mem _ fun i hi => ?_
-      refine FilB_zero_mul ?_ (GlobalTheory.T.teichmullerEpsilonRoot_pow_sub_zeta_exp_mem_filtration l P AI TT s (m i * l ^ k) M)
+      refine FilB_zero_mul ?_ (_root_.GlobalTheory.ExpImage.epsT_pow_taylor l P AI TT s (m i * l ^ k) M)
       rw [← (lifts_iter (hw i hi) k).io_eq]
       exact io_mem AI _
     have e1 : io AI (∑ k ∈ Finset.range s, H k) = ∑ k ∈ Finset.range s, ∑ i ∈ T,

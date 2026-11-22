@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CompatibleThetaRestrictions
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.AdjointIsotropicDecomposition
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.WittDecompSymplInclIsotropicInclAnisotropic
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RestrictionWittTowerIntertwinesLeviWeilRepStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RestrictionWittTowerIntertwinesLeviWeilRep
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsWittDecompositionIsotropicSplitUnipotent
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.WittDecompProjAnisotropicAnisotropicEmbedding
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WittTowerRestrictionUnipotentRadicalInvariant
@@ -73,7 +73,7 @@ theorem levi_scalars_autChar : ∀ (D : D7) (V V' W : HSp D) (r : ℕ) (C : Matr
       d.levi a₁ * (d.emb0 g₁ * d.levi a₂) * d.emb0 g₂ by simp only [mul_assoc], d.wittHyperbolic_anisotropic_commute_levi]
     simp only [mul_assoc]
   have hs1 : s 1 1 = 1 := by simp [s]
-  have hc := fun a g' => GlobalTheory.T.restriction_wittTower_intertwines_levi_weilRep D V V' W r C B hs ψ χS χT ω hω χS' χT' ω' hω' μ₀ 𝓨₀ h₀ a g' (s a g')
+  have hc := fun a g' => _root_.GlobalTheory.LeviScalar.main D V V' W r C B hs ψ χS χT ω hω χS' χT' ω' hω' μ₀ 𝓨₀ h₀ a g' (s a g')
     (hsC a g') (hsB a g') 1
   choose c hc using hc
   set R := res V V' W C B μ₀ 𝓨₀ with hR

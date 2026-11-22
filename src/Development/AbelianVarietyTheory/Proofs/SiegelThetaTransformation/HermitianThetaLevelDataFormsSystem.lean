@@ -8,10 +8,10 @@ import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.WeilAct
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RationalSchwartzBruhatAlgebraIntegralLinear
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LevelStructureProperties
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LevelTestFunctionFiniteSumEquivariantStatement
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaTestFunctionNormAndOverlapBoundStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaTestFunctionNormAndOverlapBound
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaTestFunctionOverlapEqZeroOutsideLevel
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaTestFunctionNoCoinvariantsIsotropicStatement
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdmissibleDoubledHermitianThetaFamilyStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaTestFunctionNoCoinvariantsIsotropic
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdmissibleDoubledHermitianThetaFamily
 
 open Matrix Complex NumberField MeasureTheory GlobalTheory GlobalTheory.SW GlobalTheory.ThFr ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.FD
 open scoped ComplexConjugate ComplexOrder Real Classical
@@ -139,7 +139,7 @@ theorem isSystem_level : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] 
   intro E _ _ _ r X g bas idx n hs hn2 hnE D hn M hM0 hMm v₀ hv₀ μ hμ
   obtain ⟨-, -, hgrp, hlats, hlam, -, -⟩ := _root_.GlobalTheory.SW.level_laws E r X g bas idx n hs hn2 D hn
   have T4 := GlobalTheory.T.levelTestFunction_finite_sum_equivariant E r X g bas idx n hs hn2 D hn M hM0 hMm v₀ hv₀
-  have T5 := GlobalTheory.T.thetaTestFunction_norm_and_overlap_bound E r X g bas idx n hs hn2 D hn M hM0 hMm v₀ hv₀
+  have T5 := _root_.GlobalTheory.SW.PhiNorm.phi_norm_overlap E r X g bas idx n hs hn2 D hn M hM0 hMm v₀ hv₀
   have hfinQ : Finite (𝓞 E ⧸ D.𝔪) := D.𝔪.finiteQuotientOfFreeOfNeBot D.ne_bot
   have hfinM : Finite (Matrix (Fin r) (Fin r) (𝓞 E ⧸ D.𝔪)) :=
     inferInstanceAs (Finite (Fin r → Fin r → 𝓞 E ⧸ D.𝔪))
@@ -158,8 +158,8 @@ theorem isSystem_level : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] 
       supp := fun γ hγ hγ' L hL L' hL' Λ hΛ =>
         _root_.GlobalTheory.SW.phi_overlap_eq_zero E r X g bas idx n hs hn2 D hn M hM0 hMm v₀ hv₀ γ hγ hγ' L hL L' hL' Λ hΛ
       cusp := fun ξ hξ hξ0 L hL Λ hΛ =>
-        GlobalTheory.T.thetaTestFunction_no_coinvariants_isotropic E r X g bas idx n hs hn2 D hn M hM0 hMm v₀ hv₀ ξ hξ hξ0 L hL Λ hΛ
-      adm := fun L hL L' hL' => GlobalTheory.T.admissible_doubledHermitianThetaFamily E r X g bas idx n hs hn2 D hn M hM0 hMm v₀ hv₀ L hL L' hL' }
+        _root_.GlobalTheory.SW.Coinv.phi_no_coinvariants E r X g bas idx n hs hn2 D hn M hM0 hMm v₀ hv₀ ξ hξ hξ0 L hL Λ hΛ
+      adm := fun L hL L' hL' => _root_.GlobalTheory.SW.DblAdm.adm_dbl_phi_of_isVac E r X g bas idx n hs hn2 D hn M hM0 hMm v₀ hv₀ L hL L' hL' }
   obtain ⟨hun, k, hkJ, hred⟩ := (hgrp γ).1 hγ
   have hmem := ((hlats L hL).2.2.2 γ hγ).1
   have hrel := hμ γ hγ L hL ⟨k, hkJ⟩ hred

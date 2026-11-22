@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.FormulaAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsExpansionIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCosetIndicatorExpansionOfDepthPeriodic
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsCosetExpansionExpDepth
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DepthPeriodicOfCosetIndicatorExpansionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DepthPeriodicOfCosetIndicatorExpansion
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatProductDepthPeriodicGcdStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatTensorDepthConditionsAwayFromTwist
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
@@ -39,7 +39,7 @@ theorem depthK_of_hypotheses_alt : _root_.GlobalTheory.FunPr.ThetaLocalInputs �
   obtain ⟨τm, hτm⟩ := hτK.exists_expDepth
   refine ⟨⟨τm, hτm⟩, fun w l hl hlw haw => ?_⟩
   have hk : 0 < expDepth ch.S.toGridChoice t Φ β := hτm.1
-  obtain ⟨e', he', hexp', hdk⟩ := GlobalTheory.T.depthPeriodic_of_cosetIndicatorExpansion _ t Φ β _ τm hτm
+  obtain ⟨e', he', hexp', hdk⟩ := _root_.GlobalTheory.DepthUnf.depthOK_of_isCosetExpansion _ t Φ β _ τm hτm
   have hg := GlobalTheory.T.flatProductDepthPeriodic_gcd _ t Φ β e' _ _ hdk (hdep e' he')
   obtain ⟨τg, hτg⟩ := _root_.GlobalTheory.DepthUnf.exists_cosetExpansion_of_depthOK hL _ t Φ β e' τm _ (Nat.gcd_pos_of_pos_left _ hk) he' hexp' hg
   have hle : expDepth ch.S.toGridChoice t Φ β ≤ Nat.gcd (expDepth ch.S.toGridChoice t Φ β) K := Nat.sInf_le ⟨τg, hτg⟩

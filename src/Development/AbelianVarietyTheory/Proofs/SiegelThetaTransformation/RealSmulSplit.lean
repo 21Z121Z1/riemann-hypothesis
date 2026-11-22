@@ -2,8 +2,8 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsWeakOfDatum
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsHeatZero
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HeisenbergDerivativeThetaFunctionLaws
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockPolynomialVectorLawsStatement
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockPolynomialVectorTestThetaZeroEqThetaSeriesStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockPolynomialVectorLaws
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockPolynomialVectorTestThetaZeroEqThetaSeries
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum Formalism.L2.Pj MeasureTheory IsDedekindDomain NumberField Matrix Complex
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.FD GlobalTheory GlobalTheory.ThFr GlobalTheory.Ker
@@ -230,9 +230,9 @@ theorem col_change : ∀ (D : D7) (S T : HSp D) (C : Ctx S T), ∀ h : GA D S, �
       simp
     · simp [Matrix.one_apply_ne hab]
   · intro Q Q' hQ B hB f hf
-    have hL := GlobalTheory.T.fockPolynomialVector_laws D S T C B hB
+    have hL := _root_.GlobalTheory.Ker.FockAlg.fock_vec_laws D S T C B hB
     have hQ' : Q' = sub C h Q := by
-      apply (GlobalTheory.T.fockPolynomialVector_testTheta_zero_eq_thetaSeries D S T C).1.1
+      apply (_root_.GlobalTheory.Ker.fvec_Th_zero D S T C).1.1
       have e := congrArg (fun F => F Q) (toH_sub C h)
       simp only [AlgHom.comp_apply] at e
       rw [hQ, ← e]

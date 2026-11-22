@@ -1,8 +1,9 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.HighestVectorsRegularLine
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WtRInjective
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryEuclideanModelStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsCompactLieActionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryEuclideanModel
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsCliff
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsCompactLieAction
 
 noncomputable section
 
@@ -14,8 +15,8 @@ namespace GlobalTheory.CompanionTheory.RealCountG
 
 theorem dualFam_exists : ∀ {n : ℕ} (E : KMod n), ∃ G : Fin n → Fin n → Module.End ℂ (E.V →L[ℂ] ℂ), IsDualFam E G := by
   intro n E
-  obtain ⟨e, ρ', hc, hiso, hint⟩ := GlobalTheory.T.unitary_euclidean_model E
-  obtain ⟨F, hgl, -, hder⟩ := GlobalTheory.T.exists_compact_lie_action _ ρ' hc hiso
+  obtain ⟨e, ρ', hc, hiso, hint⟩ := _root_.GlobalTheory.CompanionTheory.RealCount.dualRep_exists E
+  obtain ⟨F, hgl, -, hder⟩ := _root_.GlobalTheory.CompanionTheory.RealCount.DerivRep.derivative_of_rep _ ρ' hc hiso
   refine ⟨fun a b => e.symm.toLinearMap ∘ₗ F a b ∘ₗ e.toLinearMap, ?_, ?_⟩
   · intro a b c d
     ext1 ξ

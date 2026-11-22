@@ -105,14 +105,14 @@ theorem centre_ident (e : FamExp t.G M B ψ) {b : Fin n → ℂ} (hb : b ∈ B) 
     rw [GlobalTheory.VerticalDeriv.isDerivAt0_unique d2 d1, hΦ, hΦ, hact a x, Over.comp_left, Category.assoc, Category.assoc,
       P.m.act]
   · obtain ⟨-, -, -, A, iA, φ, g', u, Hm, χ, v', w', a', b', hφ, hAH, hv', hw', ha', hb', hc⟩ := hh x x'
-    obtain ⟨ℓ, hℓ⟩ := GlobalTheory.T.hol_unif_period_matrix_left E H R t g n M _ ψ e _ P A iA φ g' u Hm χ hb hφ hAH hP
+    obtain ⟨ℓ, hℓ⟩ := _root_.GlobalTheory.CompanionTheory.Ar.QuotLoc.exists_isAbLift E H R t g n M _ ψ e _ P A iA φ g' u Hm χ hb hφ hAH hP
     have e1 : a' = ℓ (Φ x) := DiffL.isDiff_eq_lift E H R t g n M _ ψ e _ P A iA φ g' u Hm χ ℓ hb hφ hAH hP hℓ Mz hL _ _
       v' a' (hΦ x).symm hv' ha'
     have e2 : b' = ℓ (Φ x') := DiffL.isDiff_eq_lift E H R t g n M _ ψ e _ P A iA φ g' u Hm χ ℓ hb hφ hAH hP hℓ Mz hL _ _
       w' b' (hΦ x').symm hw' hb'
     rw [hc, e1, e2, ← (key A φ g' u Hm χ ℓ hφ hAH hℓ).2]
   · obtain ⟨-, -, -, A, iA, φ, g', u, Hm, χ, v', w', a', b', hφ, hAH, -⟩ := hh 0 0
-    obtain ⟨ℓ, hℓ⟩ := GlobalTheory.T.hol_unif_period_matrix_left E H R t g n M _ ψ e _ P A iA φ g' u Hm χ hb hφ hAH hP
+    obtain ⟨ℓ, hℓ⟩ := _root_.GlobalTheory.CompanionTheory.Ar.QuotLoc.exists_isAbLift E H R t g n M _ ψ e _ P A iA φ g' u Hm χ hb hφ hAH hP
     obtain ⟨MT, hMT, hI⟩ := hI
     have k2 : ∀ x (δ : P.τ.X →+ ℤ), MV.pt x = MT.pt ((Int.castAddHom ℂ).comp δ) ≫ P.τ.i ↔
         Φ x = h fun a => (δ (β a) : ℂ) := fun x δ => by

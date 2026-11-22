@@ -5,8 +5,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LaplaceIntegralEntireBoundedInVerticalStripsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMeasurablePartitionOfUnityUnitLogTranslate
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrableWeightedHeckeThetaKernelHalfSpace
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodicBoundedGaussianSummableCmTypeStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeThetaKernelPoissonSummationStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodicBoundedGaussianSummableCmType
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeThetaKernelPoissonSummation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchFactorMulPSeriesEqIntegral
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MellinIntegralSplitFunctionalEquationStatement
 
@@ -19,8 +19,8 @@ theorem completed_pSeries_entire_bounded : ∀ (K : Type) [Field K] [NumberField
   intro K _ _ _ I _ φ hφ n hn M F hM hper hinv
   haveI : Nonempty I := ⟨hn.choose⟩
   obtain ⟨p, hpm, hp0, hpsum, R, hpR⟩ := _root_.GlobalTheory.exists_measurable_nonneg_hasSum_ulog_translates K I φ hφ
-  obtain ⟨⟨C, hC⟩, hsumm, hge⟩ := GlobalTheory.T.periodic_bounded_gaussian_summable_cmType K I φ hφ M F hM hper
-  obtain ⟨a, κ, hasumm, ⟨δ, hδ, hδa⟩, hfe⟩ := GlobalTheory.T.heckeThetaKernel_poisson_summation K I φ hφ n M F hM hper
+  obtain ⟨⟨C, hC⟩, hsumm, hge⟩ := _root_.GlobalTheory.HeckeLat.periodic_bound_summable_norm K I φ hφ M F hM hper
+  obtain ⟨a, κ, hasumm, ⟨δ, hδ, hδa⟩, hfe⟩ := _root_.GlobalTheory.HeckePoisson.theta_poisson K I φ hφ n M F hM hper
   have hp1 : ∀ y, p y ≤ 1 := fun y => by
     have h := le_hasSum (hpsum y) 1 (fun u _ => hp0 _)
     have h0 : GlobalTheory.HeckeTheta.ulog φ (1 : (𝓞 K)ˣ) = 0 := by

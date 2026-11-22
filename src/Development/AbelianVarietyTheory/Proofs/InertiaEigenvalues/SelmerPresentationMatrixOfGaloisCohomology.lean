@@ -11,7 +11,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NoGaloisInvari
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalConditionAboveLSaturatedOfSelmerSetup
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SelmerFunctorLeftExactTorsionCoefficients
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SelmerObstructionLeResidualSelmerSimpleExtension
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TorsionLeftExactFunctorKernelSquareMatrixStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TorsionLeftExactFunctorKernelSquareMatrix
 
 open NumberField IsDedekindDomain Formalism.ConjugateSelfDual ReciprocityTheory.Gal Formalism.BasicNotions Formalism.MainNotions.BlochKatoReduction Formalism.MainNotions.BlochKatoReduction.Gen GlobalTheory.TwSys GlobalTheory.SelFun GlobalTheory.Published
 
@@ -24,7 +24,7 @@ theorem oneMatrix_of_galoisCohomology :
     ∀ (D : Formalism.BasicNotions.D7) (N : NData D.R D.host D.what₂) (X : NTw D.R D.host D.what₂ D.LL0 N)
       (bkP : BKPh X), ThmS bkP := by
   intro _ hPT hCD _ hLF hLT hLE hGF hGE _ hadm D N X bkP
-  refine _root_.GlobalTheory.SelAssemble.thmS_of_selmer_functor GlobalTheory.T.torsion_left_exact_functor_kernel_square_matrix D N X bkP ?_
+  refine _root_.GlobalTheory.SelAssemble.thmS_of_selmer_functor _root_.GlobalTheory.KRep.kernelRep D N X bkP ?_
   intro i s Λ _ _ _ κ Q hS
   have hN := GlobalTheory.T.noGaloisInvariantsTorsionCoeff_of_selmerSetup D N X bkP i s Λ κ Q hS
   have hU := _root_.GlobalTheory.LocalSaturation.main hLF hLT hLE hadm D N X bkP i s Λ κ Q hS

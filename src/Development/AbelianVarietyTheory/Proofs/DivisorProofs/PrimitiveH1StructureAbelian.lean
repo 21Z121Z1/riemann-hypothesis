@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.AxesVanishingStructureSheafDegOne
 import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.IsScalarTowerOfAlgebraMapEq
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianHodgeDeRham
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GrpObjPullbackAxesCohomologyProjectionsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GrpObjPullbackAxesCohomologyProjections
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeOneFormFrameAndSquare
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianStructureCohomologyStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FgProjectiveConstantRankExtensionAndProd
@@ -24,7 +24,7 @@ theorem axesO1_of_isAbelianScheme (R : Type) [CommRing R] (A : Over (Sp R)) [Grp
   obtain ⟨-, -, hAA, hgg⟩ := _root_.GlobalTheory.AbCoh.basic_of_isAbelianScheme R A g hA hg
   have h1 := (_root_.GlobalTheory.AbCoh.oStr R A g hA hg).1
   have h2 := (_root_.GlobalTheory.AbCoh.oStr R (A ⊗ A) (g + g) hAA hgg).1
-  have hax := (GlobalTheory.T.grpObj_pullback_axes_cohomology_projections R A).1
+  have hax := (_root_.GlobalTheory.AbCoh.AxesPull.main R A).1
   let f : HO1 A.hom × HO1 A.hom →ₗ[R] HO1 (A ⊗ A).hom :=
     pO1 (fst A A) ∘ₗ LinearMap.fst R _ _ + pO1 (snd A A) ∘ₗ LinearMap.snd R _ _
   let r : HO1 (A ⊗ A).hom →ₗ[R] HO1 A.hom × HO1 A.hom :=
@@ -46,7 +46,7 @@ theorem axesO1_of_isAbelianScheme (R : Type) [CommRing R] (A : Over (Sp R)) [Grp
 theorem primO1_of_isAbelianScheme : ∀ (R : Type) [CommRing R] (A : Over (Sp R)) [GrpObj A] (g : ℕ),
     IsAbelianScheme A → SmoothOfRelativeDimension g A.hom → StructureSheafH1Primitive A := by
   intro R _ A _ g hA hg x
-  have hax := (GlobalTheory.T.grpObj_pullback_axes_cohomology_projections R A).1 x
+  have hax := (_root_.GlobalTheory.AbCoh.AxesPull.main R A).1 x
   have h := axesO1_of_isAbelianScheme R A g hA hg (pO1 μ[A] x - pO1 (fst A A) x - pO1 (snd A A) x)
     (by rw [map_sub, map_sub, hax.1, hax.2.1, hax.2.2.1, sub_self, sub_zero])
     (by rw [map_sub, map_sub, hax.2.2.2.1, hax.2.2.2.2.1, hax.2.2.2.2.2, sub_zero, sub_self])

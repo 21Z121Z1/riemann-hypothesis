@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ExistsIsFolnerUWset
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ClosedSubgroupBesselHaarFiniteCompactPosOpenStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ClosedSubgroupBesselHaarFiniteCompactPosOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsCompactNormBoundedBesselClosedSubgroup
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselModelUnitaryGroupOpNormProperties
 
@@ -228,7 +228,7 @@ theorem normInt_lt_top : ∀ (k r : ℕ) (S : Set (Mat k r)) (μ : Measure (Mt k
   have hA0 : 0 < A := lt_of_le_of_lt (Nat.cast_nonneg d) hdA
   set K := volume (Metric.ball (0 : Mt k r) 1) / volume (nbhdU k r) * μ (ballS S 2) with hKdef
   have hK : K < ⊤ := by
-    have hV : μ (ballS S 2) < ⊤ := (GlobalTheory.T.closedSubgroupBessel_haar_finite_compact_pos_open k r S μ hS hμ).1 _ (_root_.GlobalTheory.SgInf.isCompact_normBounded k r S hS 2)
+    have hV : μ (ballS S 2) < ⊤ := (_root_.GlobalTheory.SgInf.haarOn_locFinite_openPos k r S μ hS hμ).1 _ (_root_.GlobalTheory.SgInf.isCompact_normBounded k r S hS 2)
     exact ENNReal.mul_lt_top (ENNReal.div_lt_top measure_ball_lt_top.ne volume_nbhdU_ne_zero) hV
   set q : ℝ := (2 : ℝ) ^ d * (2 : ℝ) ^ (-A) with hqdef
   have hq0 : 0 ≤ q := by positivity

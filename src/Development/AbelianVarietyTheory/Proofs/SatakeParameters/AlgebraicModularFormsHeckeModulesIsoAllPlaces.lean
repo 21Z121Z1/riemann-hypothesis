@@ -4,12 +4,13 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsFiniteClas
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteDimensionalForms
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CommuteOfTrivOutside
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GraphOfFixedGraph
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteDoubleCosetsDefiniteUnitaryMaximalLevelStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteDoubleCosetsDefiniteUnitaryMaximalLevel
+import Formalism.LocalToGlobal.GaloisLevelStructure.DefsAut
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.EquivariantIsoOfTranslationStableGraph
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteAdelicUnitaryEqMulTrivOutsidePlaceAndAtPla
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemMaxCompactOfTrivOutsideLocalIntegral
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteInertHeckeSupportCosets
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertDatumLocalMemUnitaryGroupAntidiagonalStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertDatumLocalMemUnitaryGroupAntidiagonal
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertDatumLocalStdLatticeStabilizerMemMaxCompact
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsTrivOutsideInertDatumLocalEq
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertDatumLocalInjectiveOnTrivOutside
@@ -17,13 +18,13 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertHeckeOperat
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertDoubleCosetOperatorEqInertHeckeOperator
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryDoubleCosetFiniteLeftCosets
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsStableGraphOfIsoSplitPlaceComponents
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteAdelicGLInductionOverPlacesStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteAdelicGLInductionOverPlaces
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PrincipalCongruenceSplitTrivOutsideAndAtPlace
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CongruenceElementDecompose
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsDoubleCosetCommutingMapPrincipalCongruence
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeDEqSum
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsDeeperCongruenceConjIntoCongruence
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsStableGraphOfEqualAnnihilatorsStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsStableGraphOfEqualAnnihilators
 open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.N Formalism.ConjugateSelfDual ReciprocityTheory.Gal ReciprocityTheory.Aut Formalism.AUTREP Formalism.L2 Formalism.L2.Host Formalism.L2.NT NumberField IsDedekindDomain Polynomial GlobalTheory.HeightCounting GlobalTheory.RowTie GlobalTheory.SplitRead GlobalTheory.NPin
 attribute [local instance] GlobalTheory.LocalData.complRel GlobalTheory.LocalData.isLocalField
 
@@ -40,7 +41,7 @@ theorem graph_of_local' (H : PlaceSys Gv Gc J) (horb : ∀ x, ((fun k => ρ k x)
     {S₁ S₂ : Submodule ℂ V} (h₁ : Irr ρ S₁) (h₂ : Irr ρ S₂) (n₁ : fixIn ρ J S₁ ≠ ⊥) (n₂ : fixIn ρ J S₂ ≠ ⊥)
     (hfd : FiniteDimensional ℂ (fixIn ρ J S₁)) (hloc : ∀ v, ∃ X, IsGraph ρ (Gv v) S₁ S₂ X) :
     ∃ W, IsGraph ρ ⊤ S₁ S₂ W := by
-  obtain ⟨X, hX0, hXm, hX, i₁, i₂⟩ := GlobalTheory.T.exists_stable_graph_of_equal_annihilators V ι (fun v => locAlg ρ (Gv v) (Gc v) ⊓ fixAlg ρ J)
+  obtain ⟨X, hX0, hXm, hX, i₁, i₂⟩ := _root_.GlobalTheory.CommDet.stable_graph V ι (fun v => locAlg ρ (Gv v) (Gc v) ⊓ fixAlg ρ J)
     (fixIn ρ J S₁) (fixIn ρ J S₂) hfd n₁ n₂
     (fun v c hc x hx => ⟨locAlg_mem hc.1 h₁.stab hx.1, hc.2 x hx.2⟩)
     (fun v c hc x hx => ⟨locAlg_mem hc.1 h₂.stab hx.1, hc.2 x hx.2⟩)
@@ -111,7 +112,7 @@ theorem placeSys {N : ℕ} (hN : 0 < N) :
   decJ := fun v k hk => by
     obtain ⟨x, y, hx, hy, cx, cy, e⟩ := _root_.GlobalTheory.CongSplitBoth.split_cong_at_place L n N v k hk
     exact ⟨x, ⟨hx, cx⟩, y, ⟨hy, cy⟩, e⟩
-  ind := fun p h1 h2 => GlobalTheory.T.finiteAdelicGL_induction_over_places L n N hN p h1 (fun v x y hx hy => h2 v x hx y hy)
+  ind := fun p h1 h2 => _root_.GlobalTheory.PlaceInd.induction_places L n N hN p h1 (fun v x y hx hy => h2 v x hx y hy)
 
 variable {L n}
 
@@ -141,7 +142,7 @@ theorem main : ∀ (L : Type) [Field L] [NumberField L] [IsCMField L] (n : ℕ) 
     ((Submodule.ne_bot_iff _).2 ⟨g₁, ⟨hg₁, fun k hk => funext fun g => e₁ k (NG.Cong.of_mul_left L n hk) g⟩, hg₁0⟩)
     ((Submodule.ne_bot_iff _).2 ⟨g₂, ⟨hg₂, fun k hk => funext fun g => e₂ k (NG.Cong.of_mul_right L n hk) g⟩, hg₂0⟩)
     (by
-      have := GlobalTheory.AlgFormsFin.fixedForms_finite L n a.ρ (GlobalTheory.T.finite_doubleCosets_definiteUnitary_maximalLevel L n) hM
+      have := GlobalTheory.AlgFormsFin.fixedForms_finite L n a.ρ (_root_.GlobalTheory.DefiniteClassFinite.exists_finset_double_cosets_Umax L n) hM
       refine Submodule.finiteDimensional_of_le (S₂ := GlobalTheory.AlgFormsFin.fixedForms L n a.ρ (M₁ * M₂)) ?_
       rintro f ⟨hfS, hfU⟩
       exact ⟨(h₁.1.le hfS).1, fun κ hκ g => congrFun (hfU κ hκ) g⟩)
@@ -155,11 +156,11 @@ theorem main : ∀ (L : Type) [Field L] [NumberField L] [IsCMField L] (n : ℕ) 
         refine graph_of_hecke (K := GlobalTheory.InertSph.Kv L n v) (H.comm v) (H.dec v) inf_le_right (irr_of h₁) (irr_of h₂)
           (orbit_fin h₁ h₂ inf_le_left) hf₁ hf₂ n₁ n₂ (fun k hk => k₁ k hk.1 hk.2) (fun k hk => k₂ k hk.1 hk.2)
           fun x hx => ?_
-        obtain ⟨R, h, hR, hh, hA⟩ := _root_.GlobalTheory.InertDCOp.dcOp_eq_heckeFunI L n v w Dv (GlobalTheory.T.inertDatum_local_mem_unitaryGroup_antidiagonal L n v w Dv) (_root_.GlobalTheory.InertStdLat.loc_mem_KU L n v w Dv)
+        obtain ⟨R, h, hR, hh, hA⟩ := _root_.GlobalTheory.InertDCOp.dcOp_eq_heckeFunI L n v w Dv (_root_.GlobalTheory.inertLoc_mem_GU L n v w Dv) (_root_.GlobalTheory.InertStdLat.loc_mem_KU L n v w Dv)
           (_root_.GlobalTheory.InertLift.exists_trivOutside_loc_eq L n v w Dv) (_root_.GlobalTheory.InertLocInj.loc_injective L n v w Dv) x hx
         have hK : ∀ κ : GAf L n, κ ∈ Umax L n → TrivOutside {v} κ → ∃ hκ : Dv.loc κ ∈ Formalism.UG.GU Dv.σw n,
             (⟨Dv.loc κ, hκ⟩ : Formalism.UG.GU Dv.σw n) ∈ Formalism.UG.KU Dv.σw n :=
-          fun κ hκ _ => ⟨GlobalTheory.T.inertDatum_local_mem_unitaryGroup_antidiagonal L n v w Dv κ, _root_.GlobalTheory.InertStdLat.loc_mem_KU L n v w Dv κ hκ _⟩
+          fun κ hκ _ => ⟨_root_.GlobalTheory.inertLoc_mem_GU L n v w Dv κ, _root_.GlobalTheory.InertStdLat.loc_mem_KU L n v w Dv κ hκ _⟩
         have hKv : ∀ κ : GAf L n, TrivOutside {v} κ → (κ ∈ GlobalTheory.InertSph.Kv L n v ↔ κ ∈ Umax L n) :=
           fun κ hκ => ⟨fun h => h.1, fun h => ⟨h, hκ⟩⟩
         obtain ⟨γ, ⟨hγ, -⟩, -⟩ := hR.2 x ⟨1, one_mem _, 1, one_mem _, by simp⟩

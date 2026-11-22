@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CPAsIdeal
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemDeeperLevelIffReductionsSymmetricUnipotentStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PairTable
 import Formalism.LocalToGlobal.Divisibility.TiedLemmas
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ResidueConjugatePlaceHermitianFormAdjointStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ResidueConjugatePlaceHermitianFormAdjoint
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ResidueOtherInstanceFormFrameStabilizerMulVec
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ResidueOtherInstanceFormFlagPairingEqSignedDelta
@@ -90,7 +90,7 @@ theorem GlobalTheory.SeeConjChar.resT_cP_argT : ∀ {D : D7} {G : Type} [Group G
       resT (GlobalTheory.IdemSupport.cP PP) (hT X h (flagAt X h PP j) (Matrix.mulVec (finE (Yc D 0) κ).val (pairAt X h PP a))) =
         conjRes PP ((sgnD D.R.rS D.R.k a : kP PP) * ((redFn β PP (finE (Yc D 0) κ))⁻¹).val a j) := by
     intro a j
-    have c1 := GlobalTheory.T.residue_conjugatePlace_hermitianForm_adjoint X h PP κ (flagAt X h PP j) (pairAt X h PP a)
+    have c1 := _root_.GlobalTheory.SeeConjAdj.resCP_adjoint X h PP κ (flagAt X h PP j) (pairAt X h PP a)
     have c2 := _root_.GlobalTheory.SeeConjChar.resT_hT_mulVec_stab X h β PP (flagAt X h PP) (hred PP hP) _ hMinv (pairAt X h PP a) (_root_.GlobalTheory.SeeConjChar.hT_pairAt_int X h β hβ PP a) j
     refine ⟨c1.1.2 c2.1, ?_⟩
     rw [c1.2, c2.2, hredinv]

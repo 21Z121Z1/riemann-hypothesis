@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ValIrreduci
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsLocalRingOfIdem
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.DualLattice
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WeightedCountStableLatticesProductDescentGL
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LatticeCountAndGramDetSignNormClassStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LatticeCountAndGramDetSignNormClass
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaGramDetEqOneOfSelfDualLattice
 
 noncomputable section
@@ -948,7 +948,7 @@ private theorem stSum_eq_N_one_of_swap_idempotent (B : InvAlg K) {e : B.A} (hi :
   stSum_eq B hi hs B.N (B.N 1) fun x hx hf => by
     obtain ⟨u, hu⟩ := exists_norm B hi hs x hx hf
     rw [hu]
-    exact (GlobalTheory.T.latticeCount_and_gramDetSign_norm_class K B 1 u).1
+    exact (_root_.GlobalTheory.UnitLemma.NormClass.N_norm_class K B 1 u).1
 
 private theorem kapSum_eq_eta_gramDet_mul_N_one (B₁ B₂ : InvAlg K) {e : (B₁.prod B₂).A} (hi : e * e = e)
     (hs : e + (B₁.prod B₂).σ e = 1) :
@@ -958,7 +958,7 @@ private theorem kapSum_eq_eta_gramDet_mul_N_one (B₁ B₂ : InvAlg K) {e : (B�
     let u₁ : B₁.Aˣ := Units.map (MonoidHom.fst B₁.A B₂.A) u
     have h1 : x.1 = 1 * ((u₁ : B₁.A) * B₁.σ (u₁ : B₁.A)) := congrArg Prod.fst hu
     show K.eta (B₁.gramDet x.1) * (B₁.prod B₂).N x = _
-    rw [h1, (GlobalTheory.T.latticeCount_and_gramDetSign_norm_class K B₁ 1 u₁).2, hu, (GlobalTheory.T.latticeCount_and_gramDetSign_norm_class K (B₁.prod B₂) 1 u).1]
+    rw [h1, (_root_.GlobalTheory.UnitLemma.NormClass.N_norm_class K B₁ 1 u₁).2, hu, (_root_.GlobalTheory.UnitLemma.NormClass.N_norm_class K (B₁.prod B₂) 1 u).1]
 
 private theorem prod_P' (B₁ B₂ : InvAlg K) : (B₁.prod B₂).P = B₁.P * B₂.P := by
   show (LinearMap.mulLeft K.E ((B₁.g, B₂.g) : B₁.A × B₂.A)).charpoly = B₁.P * B₂.P

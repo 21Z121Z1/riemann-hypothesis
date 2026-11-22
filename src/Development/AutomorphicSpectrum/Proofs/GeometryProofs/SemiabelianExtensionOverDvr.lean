@@ -10,7 +10,7 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCocharLie
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeEvalFractionField
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModelStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelBaseChangeMap
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LieModel
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenFrameIffEigenspaceBasis
@@ -51,8 +51,8 @@ theorem tan_iff_of_generic : ∀ (V K : Type) [CommRing V] [IsDomain V] [IsDiscr
   have eσ : φ' ≫ ((Over.pullback z).obj Gx).hom = GK.hom ≫ spMap (algebraMap V K) := hp.1.lift_snd _ _ _
   have hn : IsGrpPullback GK ((Over.pullback z).obj Gx) (spMap (algebraMap V K)) φ' :=
     IsGrpPullback.cancel hp (h₁.congr rfl eφ.symm) eσ
-  obtain ⟨ET, _, _, ⟨MT⟩⟩ := GlobalTheory.T.exists_lie_model (Sp V) T V (𝟙 _)
-  obtain ⟨EG, _, _, ⟨MG⟩⟩ := GlobalTheory.T.exists_lie_model X Gx V z
+  obtain ⟨ET, _, _, ⟨MT⟩⟩ := _root_.GlobalTheory.CompanionTheory.Ar.lieModel_exists (Sp V) T V (𝟙 _)
+  obtain ⟨EG, _, _, ⟨MG⟩⟩ := _root_.GlobalTheory.CompanionTheory.Ar.lieModel_exists X Gx V z
   obtain ⟨M₀, hM₀⟩ := (GlobalTheory.CompanionTheory.Ar.LieMove.main V X z Gx ((Over.pullback z).obj Gx) _ EG hp).1 MG
   obtain ⟨f, hf⟩ := _root_.GlobalTheory.CompanionTheory.Ar.LieHomOk.hom_maps_lie V K T ((Over.pullback z).obj Gx) GK GK φ₀ φ' hT hS h₀ hn (𝟙 GK) ET EG MT M₀
   obtain ⟨g, hg⟩ := _root_.GlobalTheory.CompanionTheory.Ar.LieHomOk.hom_maps_lie V K ((Over.pullback z).obj Gx) T GK GK φ' φ₀ hS hT hn h₀ (𝟙 GK) EG ET M₀ MT

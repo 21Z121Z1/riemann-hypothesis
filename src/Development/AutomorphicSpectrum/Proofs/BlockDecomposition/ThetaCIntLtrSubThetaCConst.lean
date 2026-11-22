@@ -1,6 +1,6 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.AutomorphicKernels.EisensteinSeriesG2.HeisenbergTheta.HeisenbergThetaConstant.ThetaC
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaSubValueZeroRapidDecayStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaSubValueZeroRapidDecay
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSummableMajorantLatticeSumStatement
 open NumberField Matrix MeasureTheory Filter Topology
 open scoped NumberField.AdeleRing
@@ -96,7 +96,7 @@ theorem exists_norm_thetaCInt_sub_le (w : InfinitePlace k) {Ψ : (ι → 𝔸[k]
   have hS : Continuous fun p : normOneSubgroup k × GL ι 𝔸[k] ↦
       p.2 * (scalC (p.1 : IdeleGroup k) : GL ι 𝔸[k]) :=
     continuous_snd.mul (continuous_scalC.comp (continuous_subtype_val.comp continuous_fst))
-  obtain ⟨M, hM⟩ := GlobalTheory.T.theta_sub_value_zero_rapid_decay w hΨ ((hE.prod hC).image hS) r
+  obtain ⟨M, hM⟩ := _root_.GlobalTheory.CompanionTheory.EisThCDecay.exists_norm_thetaC_sub_le w hΨ ((hE.prod hC).image hS) r
   refine ⟨M * (normOneMeasure k).real (normOneFundamentalDomain k), fun A hA t ht ↦ ?_⟩
   rw [thetaCInt_ltr_sub_thetaCConst w hΨ A ω t, ← mul_assoc]
   refine norm_setIntegral_le_of_norm_le_const (normOneMeasure_normOneFundamentalDomain_lt_top k)

@@ -13,7 +13,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsEqMulMultOfUn
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.ClozelCohomologicalModel
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DiscreteSpectrumGLTwoOfCuspidalSpectrum
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ClozelPurity.EopV
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieCentralElementTraceStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieCentralElementTrace
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TraceOperatorEigenvalueSum
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CentralEigenExponentialStatement
 
@@ -41,7 +41,7 @@ theorem exists_twist_isNormalised : ∀ (E : Type) [Field E] [NumberField E] [Is
     field_simp
     ring
   have hlie : lie E a (oneL E a) φ = (0 : ℂ) • φ := by
-    rw [GlobalTheory.T.lie_central_element_trace E a, LinearMap.sum_apply, Finset.sum_congr rfl fun τ _ => hsum τ, ← Finset.sum_smul, hc]
+    rw [_root_.GlobalTheory.CompanionTheory.ClozelLie.lie_oneL_eq_sum_Eop E a, LinearMap.sum_apply, Finset.sum_congr rfl fun τ _ => hsum τ, ← Finset.sum_smul, hc]
   simpa using GlobalTheory.T.central_eigen_exponential E a φ 0 hlie t g
 
 end GlobalTheory.CompanionTheory.Clozel

@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.RowMinor
 import Formalism.SharpRestriction.CuspSpanNormBounds.CongruenceAtSplitFrobeniusHolds
 import Formalism.SharpRestriction.CuspSpanNormBounds.AbsoluteAmplitudeSecondOfSource
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NcardGluedMiddleLatticesEqPowPrimeSubOneStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SplitRowLatticeMiddleIffGluedLatticeStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SplitRowLatticeMiddleIffGluedLattice
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsFrameFixingIsometrySplitRowLattice
 
 noncomputable section
@@ -189,7 +189,7 @@ theorem gluingNum : ∀ (D : D7) (u : D.what₂.Word), (Tu D u).Prime → 3 ≤ 
   constructor
   · rintro ⟨⟨Λ', hΛ', rfl⟩, hc⟩
     obtain ⟨n, hn, hsp, hrow⟩ := _root_.GlobalTheory.LoopC.RowSplit.main D u F0 Λ' hB hΛ' h1
-    obtain ⟨hg, hL⟩ := (GlobalTheory.T.splitRowLattice_middle_iff_gluedLattice D u F0 _ h1 hB hrow).1 hsp
+    obtain ⟨hg, hL⟩ := (_root_.GlobalTheory.LoopC.RowGlue.main D u F0 _ h1 hB hrow).1 hsp
     have e : (Lsub Λ' (lf D F0)).comap (jz D (D.zmOf u)) =
         (Formalism.HermitianLatticesTheory.gmap n Λ' ⊓ toO (hS D) (Wb D)).comap (jz D (D.zmOf u)) := by
       rw [← Lsub_gmap D (lf D F0) Λ' n hn, hL, comap_sup_X D u F0 he _ inf_le_right]
@@ -198,8 +198,8 @@ theorem gluingNum : ∀ (D : D7) (u : D.what₂.Word), (Tu D u).Prime → 3 ≤ 
     rw [← comap_jz_inl D (D.zmOf u), ← e]
     exact hc
   · rintro ⟨L, hL, rfl⟩
-    obtain ⟨hrow, hsp, hW⟩ := (GlobalTheory.T.splitRowLattice_middle_iff_gluedLattice D u F0 Λ h1 hB hΛ).2 M L hL
-    have hL' := ((GlobalTheory.T.splitRowLattice_middle_iff_gluedLattice D u F0 _ h1 hB hrow).1 hsp).2
+    obtain ⟨hrow, hsp, hW⟩ := (_root_.GlobalTheory.LoopC.RowGlue.main D u F0 Λ h1 hB hΛ).2 M L hL
+    have hL' := ((_root_.GlobalTheory.LoopC.RowGlue.main D u F0 _ h1 hB hrow).1 hsp).2
     refine ⟨⟨_, hrow, ?_⟩, ?_⟩
     · rw [hL', hW]
       exact comap_sup_X D u F0 he L (le_Wb_of_mem D u hL)

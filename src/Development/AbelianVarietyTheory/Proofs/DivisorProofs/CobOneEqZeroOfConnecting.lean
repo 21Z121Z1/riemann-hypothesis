@@ -7,9 +7,9 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoboundaryTranslati
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemSymmetricCocyclesOfPullbackMulPStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsExtensionAdditiveFnPDivGroupStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivCocycleMemRangeCobOfPullbackMulP
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdditiveFunctionCartierDualTangentBijectiveStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdditiveFunctionCartierDualTangentBijective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OmegaBaseChangeBijectiveOfPEqZeroStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdditiveFunctionsFlatBaseChangeBijectiveStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdditiveFunctionsFlatBaseChangeBijective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrimitiveSemilinearLiftBaseChangeBijectiveStatement
 
 set_option autoImplicit false
@@ -197,7 +197,7 @@ omit [Fact p.Prime] in
 variable (G) in
 
 theorem primLie_bijective (hp : (p : R) = 0) : Function.Bijective G.primLie :=
-  (LinearEquiv.ofBijective _ (G.dual.omegaLevel_one_bijective hp)).dualMap.bijective.comp T.additiveFunctionCartierDualTangent_bijective
+  (LinearEquiv.ofBijective _ (G.dual.omegaLevel_one_bijective hp)).dualMap.bijective.comp _root_.GlobalTheory.PDiv.primTangent_bijective
 
 theorem primLie_naturality (f : G ⟶ H) (b : LinearMap.ker (cobOne R (H.A 1)))
     (b' : LinearMap.ker (cobOne R (G.A 1))) (h : b'.1 = f.app 1 b.1) :
@@ -271,7 +271,7 @@ theorem liftSemi_prim_bijective (hp : (p : R) = 0)
     (h : Module.Flat R R' ∨ Module.Projective R G.dual.omega) :
     Function.Bijective (liftSemi ((G.toBase R').app 1).prim) := by
   rcases h with h | h
-  · exact T.additiveFunctions_flatBaseChange_bijective R'
+  · exact _root_.GlobalTheory.PDiv.liftSemi_prim_baseChange_bijective R'
   · exact T.primitive_semilinearLift_baseChange_bijective R'
       (.of_equiv (LinearEquiv.ofBijective _ (G.dual.omegaLevel_one_bijective hp)))
 

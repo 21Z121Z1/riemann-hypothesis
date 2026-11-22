@@ -7,8 +7,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasProperSmoothDual
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasProperSmoothDualRepresentativeGrpPullbackIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasProperSmoothDualRepresentativeOfLocal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAbelianSchemeAndRelDimOfIsGrpPullback
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBasicOpenAffineOpenMeetingFibresGrpSchemeStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AffineOpenMeetingFibresPullbackSpecRingHomStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBasicOpenAffineOpenMeetingFibresGrpScheme
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AffineOpenMeetingFibresPullbackSpecRingHom
 
 set_option autoImplicit false
 noncomputable section
@@ -102,13 +102,13 @@ theorem local_rep (R : Type) [CommRing R] [Algebra.FiniteType ℤ R] [IsReduced 
     (hA : IsAbelianScheme A) (hg : SmoothOfRelativeDimension g A.hom)
     (hJ : ∀ J : Ideal R, J ≠ ⊥ → HasRep A g (Over.mk (spMap (Ideal.Quotient.mk J)))) (s : Sp R) :
     ∃ V : (Sp R).Opens, s ∈ V ∧ HasRep A g (Over.mk V.ι) := by
-  obtain ⟨f, hs, W, hW, hWf⟩ := GlobalTheory.T.exists_basicOpen_affineOpen_meeting_fibres_grpScheme R A s
+  obtain ⟨f, hs, W, hW, hWf⟩ := _root_.GlobalTheory.chartAroundUnit R A s
   let a := algebraMap R (Localization.Away f)
   let A' := (Over.pullback (spMap a)).obj A
   letI : GrpObj A' := Functor.grpObjObj
   have hφ : IsGrpPullback A' A (spMap a) (pullback.fst _ _) := isGrpPullback_pullback A (spMap a)
   obtain ⟨hA', hg'⟩ := GlobalTheory.AbBaseChange.isAbelianScheme_and_relDim_of_isGrpPullback a A A' _ g hφ hA hg
-  obtain ⟨V, hV, hVs⟩ := GlobalTheory.T.affineOpen_meeting_fibres_pullback_specRingHom a A W hW hWf
+  obtain ⟨V, hV, hVs⟩ := _root_.GlobalTheory.affine_preimage_pullback_meets_fibres a A W hW hWf
   haveI : @Algebra.FiniteType ℤ (Localization.Away f) _ _ (Ring.toIntAlgebra _) := by
     have h := Algebra.FiniteType.trans (inferInstance : Algebra.FiniteType ℤ R)
       (IsLocalization.finiteType_of_monoid_fg (Submonoid.powers f) (Localization.Away f))

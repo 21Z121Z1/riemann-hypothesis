@@ -6,7 +6,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.IsN
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.QkToAkU
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.SerreVanishingVeryAmple
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
-import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsSectionEqMulOfVanishingModElementStatement
+import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsSectionEqMulOfVanishingModElement
 
 open CategoryTheory CategoryTheory.Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.AbLaw
@@ -220,7 +220,7 @@ theorem GlobalTheory.Unif.exists_form_correction : ∀ (V : Type) [CommRing V] [
       (Y 0).hom ≫ thick V (IsLocalRing.maximalIdeal V) 0 := by
     rw [← Category.assoc, hj.w, Category.assoc, ← Spec.map_comp, ← CommRingCat.ofHom_comp,
       Ideal.Quotient.factor_comp_mk]
-  obtain ⟨τ₀, hτ⟩ := GlobalTheory.T.exists_section_eq_mul_of_vanishing_mod_element _ _ _ _ _ (Ideal.Quotient.mk _ (ϖ ^ (e + 1))) (Ideal.Quotient.factor_surjective _)
+  obtain ⟨τ₀, hτ⟩ := _root_.GlobalTheory.SectionKernel.exists_sec_of_vanishing _ _ _ _ _ (Ideal.Quotient.mk _ (ϖ ^ (e + 1))) (Ideal.Quotient.factor_surjective _)
     (Ideal.Quotient.factor_surjective _) (nilpotent_ker hϖ _) (ker_factor hϖ _)
     ((mem_ker_factor hϖ _ _).2 (pow_dvd_pow _ (by omega))) (mul_eq_zero_iff hϖ _) _ _ _ _ _ _ j₀ (β e) (hflat (e + 1))
     hj (hβ e) (GlobalTheory.AbLaw.pw (H (e + 1)) t) (GlobalTheory.AbLaw.pw (H 0) t) (pwIso w t) (isLB_pw (hH _).1 _) (isLB_pw (hH _).1 _)

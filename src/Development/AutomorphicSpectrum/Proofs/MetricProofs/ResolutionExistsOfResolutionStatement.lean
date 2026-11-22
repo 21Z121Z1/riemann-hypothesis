@@ -7,7 +7,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.I
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PBirationalModelExists
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsArithVarOfBlockAlgebraic
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncModelEmbeddedLogResolution
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.MultihomogeneousLiftToJoinStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.MultihomogeneousLiftToJoin
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MultihomogeneousNonvanishingOnJoin
 
 open MvPolynomial MeasureTheory ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.AI.I2 ReciprocityTheory.ChartRestriction.G.AI.I4 ReciprocityTheory.AnForm.M GlobalTheory.CompanionTheory.Ar.Cmp GlobalTheory.CompanionTheory.Ar.PB Filter Topology
@@ -92,7 +92,7 @@ theorem resExists_of_resK : ReciprocityTheory.ChartRestriction.G.Geo.ResK.ResKSt
     push Not at hcon
     exact hJP (Ideal.span_le.mpr fun f hf => hcon f (Ideal.subset_span hf) (hS f hf))
   obtain ⟨β', b', M, y', J₁, hβ', hβ'P, hzero, hy', hfield, hJ₁h, hJ₁, hsnc, hz, hG⟩ :=
-    GlobalTheory.T.multihomogeneous_lift_to_join hRes K ι Ω y e β b hP hβ hβP
+    _root_.GlobalTheory.CompanionTheory.Ar.Giv.exists_snc_model_iso hRes K ι Ω y e β b hP hβ hβP
   have hy : ∀ k, ∃ i, y ⟨k, i⟩ ≠ 0 := fun k => by
     obtain ⟨i, hi⟩ := hP.2.1.2.2 k
     exact ⟨i, coord_ne_zero y ⟨k, i⟩ hi⟩

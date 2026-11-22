@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsArchOne
 import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.GreenSeriesSt
 import Formalism.LocalToGlobal.GlobalTheory.IrreducibleOfCountSizes
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoLevelFlagDomainCuspFormRanksShiftedWeightsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoLevelFlagDomainCuspFormRanksShiftedWeights
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoLevelFlagDomainEigenspaceShare
 import Development.AbelianVarietyTheory.BlockTheory.PoincareCuspForms.SmallUnipotentElements
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefiniteCuspFormsFiniteRegularRepresentation
@@ -140,7 +140,7 @@ theorem shareW_of_modelAt (p : PtAt ex Csz) (i : Fin D.R.m) (T : ℕ) (y : ℝ) 
         unfold sOf TwoLevels.dimX
         rw [hcard]
         exact this
-      have hR := GlobalTheory.T.twoLevelFlagDomain_cuspForm_ranks_shifted_weights _ _ _ _ M (hlev ⊥ (halfUnip_bot p)) h0 hr ka T harch hsO
+      have hR := _root_.GlobalTheory.ShareRanks.ranks _ _ _ _ M (hlev ⊥ (halfUnip_bot p)) h0 hr ka T harch hsO
       have hS := (_root_.GlobalTheory.ShareEig.share_eig _ _ _ _ M ka ρ hpull _ _ hR H (hlev H hH) lam).2
       have hY : ((M.dimY : ℝ) * (M.dimY + 6) / T) ≤ y := by
         unfold TwoLevels.dimY

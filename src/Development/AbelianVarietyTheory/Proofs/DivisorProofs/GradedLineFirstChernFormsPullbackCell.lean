@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedFrameEventua
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsMetricFrOfIsMetricOn
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ChernDegreeComplex
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramLowerTriangularFactorLowerTriangularConj
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramLowerTriangularFactorPosDefPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramLowerTriangularFactorPosDefProperties
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlaggedBundleMetricSmoothUnitEtaleChart
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFlaggedBundleMetricPullGramRefinement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsHolomorphicUnitMatrixAtRationalMatrixValues
@@ -94,7 +94,7 @@ theorem grF_eq_pull : ∀ (F : Type) [Field F] (σ : F →+* ℂ) (X Y : Var F) 
   have hpd := hM.posDef _ B h1.2 r.1
   have e := hM.trans _ B h1.2 B₀ h2 r.1
   have e' := (_root_.GlobalTheory.ChernCalc.ldPart_conj_lower _ _ _ hpd tri hol.1).2 r.2
-  have hpos := ((GlobalTheory.T.gramLowerTriangularFactor_posDef_properties _ _ hpd).2.1 r.2).1
+  have hpos := ((_root_.GlobalTheory.ChernCalc.ldPart_posDef_spec _ _ hpd).2.1 r.2).1
   have eg := congrFun (_root_.GlobalTheory.FlagCell2.pullGram_cell F σ X Y ι m E E' φ f hf hR c A u H hH _ h1) r.1
   have ec : cellPot ε (fun v => H A (c.e.symm v)) r (cellMap ε f hf c u (x.ch.symm v)) =
       -Real.log (grD (pullGram E H φ f hf B (x.ch.symm v) r.1) r.2) := by

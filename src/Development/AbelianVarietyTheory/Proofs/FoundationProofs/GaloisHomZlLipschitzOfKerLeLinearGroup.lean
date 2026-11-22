@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.FinalTheorems
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicHomSmallOnDeepCongruenceSubgroups
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPrimePowMulDeepCongruenceLevelStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPrimePowMulDeepCongruenceLevel
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LipschitzPadicHomOfContractionPerLevel
 
 open NumberField IsDedekindDomain Formalism.ConjugateSelfDual ReciprocityTheory.Gal Formalism.MainNotions.N GlobalTheory.GalOfCusp UpperTheory.V UpperTheory.V.Af UpperTheory.V.HV GlobalTheory.Ord2
@@ -24,7 +24,7 @@ theorem hom_lipschitz_of_ker_le : ∀ (l : ℕ) [Fact l.Prime] (c : Coef l) (Γ 
       have h1 : (0 : ℝ) ≤ (l : ℝ)⁻¹ := by positivity
       have h2 : (l : ℝ)⁻¹ ≤ 1 := inv_le_one_of_one_le₀ (by exact_mod_cast (Fact.out : l.Prime).one_lt.le)
       exact mul_le_of_le_one_right (pow_nonneg h1 _) h2))
-    (_root_.GlobalTheory.lam_small_of_deep_congruence l Γ r lam hr hlam hker) (GlobalTheory.T.exists_prime_pow_mul_deep_congruenceLevel l c Γ r hO)
+    (_root_.GlobalTheory.lam_small_of_deep_congruence l Γ r lam hr hlam hker) (_root_.GlobalTheory.DeepLevel.exists_pow_mul_of_deep_level l c Γ r hO)
   exact ⟨C, fun m g hg => by rw [norm_natPrime_pow]; exact hC m g hg⟩
 
 end GlobalTheory.Ord2

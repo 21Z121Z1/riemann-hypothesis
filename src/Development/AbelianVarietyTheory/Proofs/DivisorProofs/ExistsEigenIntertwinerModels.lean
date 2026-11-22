@@ -6,11 +6,11 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyConstantFi
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasCompactSupportFinprodSchwartzBruhatFiniteAdel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaModelChangeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeCharactersRestrictionEta
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerGoodModelsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerGoodModels
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchActionReadingsCompatible
 import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchHeisenbergDerivativesExist
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzBruhatFiniteAdelesMemSpanRestrictedProduStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzBruhatFiniteAdelesMemSpanRestrictedProdu
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHeckeCharacterRestriction
 
 noncomputable section
@@ -167,7 +167,7 @@ theorem exists_modelChange_pol : GlobalTheory.FunPr.Hypotheses₂ → ∀ (F E :
       exact ⟨c • f, fun x => by simp [hf]⟩
     | mem Φ hΦ =>
       obtain ⟨f, g, hg, rfl⟩ := hΦ
-      replace hg := GlobalTheory.T.schwartzBruhat_finiteAdeles_mem_span_restrictedProducts F _ g hg
+      replace hg := _root_.GlobalTheory.SBSpan.mem_span_restrictedProd F _ g hg
       induction hg using Submodule.span_induction with
       | zero => exact ⟨0, fun x => by
           rw [show pureA F f 0 = 0 from funext fun _ => mul_zero _]; simp⟩
@@ -209,7 +209,7 @@ theorem exists_modelChange_pol : GlobalTheory.FunPr.Hypotheses₂ → ∀ (F E :
     (fun u hu f => actsD_iff _root_.GlobalTheory.RealLift.actsLaws M B.ψ u f _ (hD u hu f).1) (fun u hu f => actsD_iff _root_.GlobalTheory.RealLift.actsLaws M' B.ψ u f _ (hD' u hu f).1)
     _ ⟨hinj, hsurj⟩ fun u hu f => ?_
   refine SchwartzMap.ext fun x => ?_
-  have h1 := (hD u hu f).1 _ hg _ (GlobalTheory.T.eigen_intertwiner_good_models F E σ B n d n d X W X W M M' 1 1 ∅ e hM hM' hE _ (proj_adm x y'))
+  have h1 := (hD u hu f).1 _ hg _ (_root_.GlobalTheory.EvAdm.comp_mem_adm F E σ B n d n d X W X W M M' 1 1 ∅ e hM hM' hE _ (proj_adm x y'))
   have h2 := (hD' u hu (ei f)).1 _ hg' _ (proj_adm x y')
   simp only [LinearMap.comp_apply, Heisenberg₂ _ _ (mem f _ hg), hvac] at h1
   have h3 := h1.unique h2

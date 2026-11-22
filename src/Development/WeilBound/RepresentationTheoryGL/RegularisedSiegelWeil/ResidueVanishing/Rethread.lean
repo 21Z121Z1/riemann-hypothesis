@@ -56,7 +56,7 @@ theorem downNe_of_core : ResidueKilled.DM → PositivityTheory.Rg.Rsw.ResCore �
   have hu' := (Submodule.mem_inf.1 hu).2
   have huc : Continuous u := hu'.1
   have hul : ∀ γ ∈ GQ A, ∀ g, u (γ * g) = u g := hu'.2.1
-  have hKill := GlobalTheory.T.doubling_integrals_vanish_of_all_lifts_vanish D ψ A W χA χW om omhW hDef.sig hDef.pos hom homhW m hm u huc hul hNo
+  have hKill := _root_.GlobalTheory.Core.Rk.Kill.kills_of_noLift D ψ A W χA χW om omhW hDef.sig hDef.pos hom homhW m hm u huc hul hNo
   have hφθ := GlobalTheory.Core.Rk.DeltaTheta.main D ψ A B hstd _ _ hFs.1 hFs.1
   have hφK := GlobalTheory.Core.Rk.IP.delta_isKFinVec D ψ θ A B χA χW (fun _ => 1) sB t cA a omB ν 𝓕 hPair omhB homhB _ _ hFs hFs
   obtain ⟨E₁, hE₁, hE₁0⟩ := PositivityTheory.Rg.Rsw.Kplug.res_killed' (ResidueKilled.sec_of_dm hDM) hCore D ψ θ A cA a hDef hPl.two B W t hd hSigB hSigW hW0
@@ -68,7 +68,7 @@ theorem downNe_of_core : ResidueKilled.DM → PositivityTheory.Rg.Rsw.ResCore �
     ⟨fun γ hγ g => by simp only [hul γ hγ g], Complex.continuous_conj.comp huc⟩).1
   have hμ : IsHeckeChar D χW⁻¹ :=
     ⟨(hom.hecT.1.inv : Continuous fun x => (χW x)⁻¹), fun x => by rw [MonoidHom.inv_apply, hom.hecT.2 x, inv_one]⟩
-  have hcoef := GlobalTheory.T.zeta_integral_eisenstein_residue D A χW⁻¹ hμ m hm _ hEC hAn hReg _ _ hRD hRD hZF
+  have hcoef := _root_.GlobalTheory.CompanionTheory.Eis.coeffAt_neg_one_zeta D A χW⁻¹ hμ m hm _ hEC hAn hReg _ _ hRD hRD hZF
     (sZero A B) E₁ hE₁
   rw [hE₁0] at hcoef
   obtain ⟨C, hC0, hC⟩ := _root_.GlobalTheory.Core.Rk.Exh.LocalConst.integral_const D ψ θ A cA a hDef B W H o χA χW omB om omH homB hom homH β Z hPl m hm u hu

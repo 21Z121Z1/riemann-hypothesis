@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Jets.CmQuadraticFormEqAltern
 import Development.AbelianVarietyTheory.Definitions.Jets.TwoPlaces
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.KappaRowsEntriesLeSizes
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CloudSizesBetweenZeroAndTwiceB
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.RealPlaceLabelBijectiveCardEqFStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.RealPlaceLabelBijectiveCardEqF
 
 set_option autoImplicit false
 
@@ -45,7 +45,7 @@ theorem DF_kaR_le : ∀ (D : D7) (L : SizeData₂ D) (Pm : ParameterChoice' D L)
   obtain ⟨hSe, hw⟩ := _root_.GlobalTheory.RunDepth.sizes_le_two_mul D L Pm hx hkb
   have hw := (hw j hj).1
   have hrow := _root_.GlobalTheory.WeightRows.kappa_entries_le D L Pm Tp hK j hj
-  have hcard := (GlobalTheory.T.realPlaceLabel_bijective_card_eq_f D).2
+  have hcard := (_root_.GlobalTheory.RunDepth.plOf_bijective_card D).2
   have hk : 5 ≤ D.R.k := by have := D.R.m_add_three_le_k; have := D.R.two_le_m; omega
   have hmk : D.R.m ≤ D.R.k := by have := D.R.m_add_three_le_k; omega
   have hj1 := hj.1

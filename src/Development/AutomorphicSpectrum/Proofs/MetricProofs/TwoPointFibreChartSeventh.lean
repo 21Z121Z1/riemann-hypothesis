@@ -1,13 +1,14 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsFibreChartIff
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.TwoPointFibreChartFifth
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.TwoPointFibreChartFirstStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.TwoPointFibreChartFirst
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularFunctionAnalyticOnChart
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LocalHolomorphicLiftRealisation
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.RealisationBijectiveDegreeOne
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogNormNonvanishingAnalyticHarmonic
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAnalyticOrbitOffBoundary
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ValueConstantOnOrbitStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.ElementaryFactorPropertiesStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.ElementaryFactorProperties
 open MvPolynomial MeasureTheory Filter Topology Matrix ReciprocityTheory.AnForm ReciprocityTheory.AnForm.M ReciprocityTheory.AnForm.P ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.AI.I1 ReciprocityTheory.ChartRestriction.G.AI.I2 ReciprocityTheory.ChartRestriction.G.AI.I4 GlobalTheory.CompanionTheory.Ar.PB GroundTheory.Heights₂.Heights GroundTheory.Heights₂.Heights.LowerBoundFree
 open scoped ComplexOrder Classical
 open GlobalTheory.CompanionTheory.Ar.PB.WSq GlobalTheory.CompanionTheory.Ar.PB.WSq.Fib
@@ -26,7 +27,7 @@ theorem fibre_base_member : ∀ (K : Type) [Fintype K] (ι : K → Type) [∀ k,
   congr 1
   by_cases hτ : p.1 = τ
   · have hpa : p.2 ≠ a := fun e => hp (Prod.ext hτ e)
-    have hs := (GlobalTheory.T.elementary_factor_properties N j a b ca cb (z' 0) M.j_le hb hst hca hcb).2.2.2
+    have hs := (_root_.GlobalTheory.CompanionTheory.Ar.PB.WSq.Fib.Shear.shear_main N j a b ca cb (z' 0) M.j_le hb hst hca hcb).2.2.2
       (BM.G l p.1 (bp (Fin.tail z'))) (H τ (Fin.tail z')) p.2 hpa
     simp only [flagAt, if_pos hτ]
     rw [hs, hτ]

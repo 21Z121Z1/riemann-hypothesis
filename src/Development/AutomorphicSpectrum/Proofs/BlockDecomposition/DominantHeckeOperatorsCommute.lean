@@ -1,6 +1,6 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.StrictDominance.JointGeneralisedEigenvectors.IsJointGenEig
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CasselmanFirstPropertyStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CasselmanFirstProperty
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeckeCharacterExistsUnique
 import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.LocalBaseChange.TwistedIndependenceLemma.TwistedIndependence
 
@@ -23,8 +23,8 @@ theorem heckeOp_commute : ∀ (G : Type) [Group G] [TopologicalSpace G] [IsTopol
     ∀ t t' : D.T, D.IsDom t → D.IsDom t' → ∀ U U' : Module.End ℂ (fixed π D.J),
     PositivityTheory.Lbc.IsHeckeOpG π D.J (t : G) U → PositivityTheory.Lbc.IsHeckeOpG π D.J (t' : G) U' → U * U' = U' * U := by
   intro G _ _ _ D hcomm V _ _ π hπ t t' ht ht' U U' hU hU'
-  have h1 := GlobalTheory.T.casselman_first_property G D V π hπ t t' ht ht' U U' hU hU'
-  have h2 := GlobalTheory.T.casselman_first_property G D V π hπ t' t ht' ht U' U hU' hU
+  have h1 := _root_.GlobalTheory.CompanionTheory.Casselman.hecke_dominant_mul_abstract G D V π hπ t t' ht ht' U U' hU hU'
+  have h2 := _root_.GlobalTheory.CompanionTheory.Casselman.hecke_dominant_mul_abstract G D V π hπ t' t ht' ht U' U hU' hU
   have hc : (t' : G)⁻¹ * (t : G)⁻¹ * (t' : G) * (t : G) ∈ D.J := by
     have := hcomm (t' : G)⁻¹ (D.T.inv_mem t'.2) (t : G)⁻¹ (D.T.inv_mem t.2)
     simpa using this

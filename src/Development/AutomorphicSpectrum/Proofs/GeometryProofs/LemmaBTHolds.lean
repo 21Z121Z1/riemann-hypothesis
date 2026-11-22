@@ -8,7 +8,7 @@ import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.BtHopf
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueBtOrderEmbedding
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BtOrderEmbeddingOpenImmersion
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BtOrderEmbeddingIsoFinite
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BtOrderEqTopOfEtaleStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BtOrderEqTopOfEtale
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BtOrderComapHom
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BtOrderBaseChangeGeneric
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionGroupEndomorphismLift
@@ -28,7 +28,7 @@ theorem lemmaBT_holds : LemmaBT := by
   unfold GlobalTheory.CompanionTheory.Ar.BT.LemmaBT
   intro R _ _ _ _ T _ _ Γ S G _ _ x N i hi hG
   refine ⟨_root_.PositivityTheory.UnitarySelfGeneration.bt_hopf R T Γ, ?_,
-    fun hN => GlobalTheory.T.btOrder_eq_top_of_etale R T Γ
+    fun hN => _root_.GlobalTheory.CompanionTheory.Ar.BT.EtaleTop.btOrder_top_eq_top_of_etale R T Γ
       (_root_.GlobalTheory.CompanionTheory.Ar.BT.torsion_etale_of_isUnit R T Γ S G x N i hi hG hN), ?_, ?_,
     fun L _ _ M => _root_.GlobalTheory.CompanionTheory.Ar.BT.omega_isDerAtOne R T Γ S G x N i hi hG L M⟩
   · obtain ⟨j, hj, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.BT.exists_unique_emb_btOrder_top R T Γ

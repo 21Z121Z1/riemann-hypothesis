@@ -1,7 +1,12 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSmoothHermCombLine
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermRepMetricSmooth
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermRepTwistedBundleExistsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermRepTwistedBundleExists
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsPullHermPullLine
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EqOfIsometricTrivShift
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRedA
+import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Birational
+import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.IsSmoothHermConstLine
 
 set_option autoImplicit false
 
@@ -44,7 +49,7 @@ theorem isHermRep_combLine_unit {M : HermLB (mpStr ℤ m n)} {A : HermLine (Bk n
 
 theorem existsRead : ExistsRead := by
   rintro m n M ⟨c, t, e⟩
-  obtain ⟨A, hA, -⟩ := GlobalTheory.T.hermRep_twisted_bundle_exists m n M c t e
+  obtain ⟨A, hA, -⟩ := _root_.GlobalTheory.CompanionTheory.MPDict.TwLine.exists_hermLine_of_twB m n M c t e
   have hs : IsSmoothHerm A := GlobalTheory.CompanionTheory.MPDict.SmoothRep.isSmoothHerm_of_isHermRep m n M A hA
   exact ⟨combLine (fun _ : Unit => A) 1, isSmoothHerm_combLine (fun _ => hs) 1, isHermRep_combLine_unit hA,
     fun z hz => combLine_unit_h_off A hz⟩

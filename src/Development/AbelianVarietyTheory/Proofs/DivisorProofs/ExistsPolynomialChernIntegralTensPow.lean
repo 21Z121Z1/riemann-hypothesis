@@ -25,7 +25,7 @@ import ReciprocityTheory.AnalyticForms.PotentialTheory.DegreeInt
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffFubiniStudyRatioCompChart0
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ProjectiveLinePartitionContinuousCoe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernIntegralOneEqMongeAmpereIntegral
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPolynomialMongeAmpereMassAddZsmulStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPolynomialMongeAmpereMassAddZsmul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplexPointsSmoothProjVarietyCompactManifold
 
 open CategoryTheory AlgebraicGeometry TopologicalSpace Set Filter Topology MeasureTheory
@@ -52,7 +52,7 @@ theorem chernInt_tens_pow_poly : ∀ (Y : Var ℂ) (L H : LB Y.X) (φ : Weight Y
   have hΦ : IsPotential A φ.locPot := hφs.isPotential hA
   have hΨ : IsPotential A ψ.locPot := hψs.isPotential hA
 
-  obtain ⟨P, hP⟩ := GlobalTheory.T.exists_polynomial_mongeAmpereMass_add_zsmul Y.dim _ A (fun _ => φ.locPot) (fun _ => ψ.locPot)
+  obtain ⟨P, hP⟩ := _root_.GlobalTheory.MongeAmperePoly.mInt_add_zsmul_poly Y.dim _ A (fun _ => φ.locPot) (fun _ => ψ.locPot)
     (fun _ => hΦ) (fun _ => hΨ)
 
   refine ⟨P, ?_, fun m => ?_⟩

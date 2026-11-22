@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DpExpEqSumRangeOfVa
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DividedPowerFiltration
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeIsSeparatedOfAffineBase
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicPeriodsNaturalAlongCoveredMorphism
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodCompTranslationGroupHomStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodCompTranslationGroupHom
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry MonoidalCategory CartesianMonoidalCategory MonObj Filter Topology TopologicalSpace TensorProduct
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.Cris GlobalTheory.DeRham GlobalTheory.AnPer
 attribute [local instance] Over.cartesianMonoidalCategory
@@ -23,7 +23,7 @@ theorem period_fibre_eq_value : PFix := by
       w := (fibUnif u).w
       per := fun l p hp ↦ (fibUnif u).per (τ l) p hp
       hol := (fibUnif u).hol }
-  have h1 := GlobalTheory.T.period_comp_translationGroup_hom (fibUnif u) τ u' rfl _ _ (hP (m.pull c))
+  have h1 := _root_.GlobalTheory.AnPer.Reindex.isPeriod_comp (fibUnif u) τ u' rfl _ _ (hP (m.pull c))
   have h2 := GlobalTheory.AnPer.isPeriod_pull1_eq_comap u' e (GlobalTheory.abelianScheme_left_isSeparated_of_affine A hA)
     (GlobalTheory.abelianScheme_left_isSeparated_of_affine 𝒜 h𝒜) (fun _ ↦ z) analyticOnNhd_const (fun _ _ ↦ hz)
     LinearMap.id (AddMonoidHom.id Λ) (fun l _ _ ↦ (hτ l).symm) y φ m.isMor

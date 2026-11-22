@@ -3,7 +3,7 @@ import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsSplitGau
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.GapCondExample
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.BundleDegreeEqSumValuations
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LatticeBasisAdaptedToSubspaceStatement
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SubAndQuotientBundlesStatement
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SubAndQuotientBundles
 
 open GlobalTheory.CompanionTheory.Ar.Crv
 
@@ -64,7 +64,7 @@ theorem deg_eq_subDeg_add_deg_quot : ∀ (K : Type) [Field K] (C : ACurve K) (V 
   · simp [subDeg, deg, finsum_of_isEmpty]
   have hex := fun i => (hL.1 i).elim fun b hb => GlobalTheory.T.lattice_basis_adapted_to_subspace K C V i _ b (L i) W hb
   choose bW bQ b hb hbW hbQ h1 h2 using hex
-  obtain ⟨hS, hQ⟩ := GlobalTheory.T.sub_and_quotient_bundles K C V L W hL
+  obtain ⟨hS, hQ⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Crv.SubQuot.isBun_sub_quot K C V L W hL
   obtain ⟨-, eL⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Crv.DegFormula.deg_formula K C V L _ (b i₀) b hL hb
   obtain ⟨fS, eS⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Crv.DegFormula.deg_formula K C W (sub C L W) _ (bW i₀) bW hS hbW
   obtain ⟨fQ, eQ⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Crv.DegFormula.deg_formula K C (V ⧸ W) (quot C L W) _ (bQ i₀) bQ hQ hbQ

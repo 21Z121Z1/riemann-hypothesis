@@ -6,7 +6,7 @@ import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteOfFiniteFibres
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZarhinDualPolarisation.FlatFiniteFibres.FlatOfFibresFinite
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatOfFibresFinite
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KernelFiniteFlatStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KernelFiniteFlat
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FactorThroughFiniteFlat
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EpiOfFiniteFlat
 
@@ -43,7 +43,7 @@ theorem quasiInverseR_of (h1 : PolFibreIsogAny) (h5 : KilledAny) : QuasiInverseR
   have := hB.smooth
   have hfl : Flat l.left := _root_.GlobalTheory.CompanionTheory.FlatFib.flatOfFibresFinite R A B l inferInstance inferInstance inferInstance hf
     fun Ω _ _ s => (fib Ω s).2.1
-  obtain ⟨F, _, _, h, hsub, hker⟩ := GlobalTheory.T.kernel_finite_flat R A B l hA hB hm hf hfl
+  obtain ⟨F, _, _, h, hsub, hker⟩ := _root_.GlobalTheory.CompanionTheory.Ar.KerFF.kernelFinFlat R A B l hA hB hm hf hfl
   obtain ⟨n, hn, hk⟩ := h5 C v R hv A F h hsub
   obtain ⟨g, hg, e⟩ := _root_.GlobalTheory.CompanionTheory.FlatFactor.factorThroughFF R A B A l (𝟙 A ^ n) hm (qi_isMonHom_id_pow A n) hfl hs inferInstance
     fun S _ _ z hz => by

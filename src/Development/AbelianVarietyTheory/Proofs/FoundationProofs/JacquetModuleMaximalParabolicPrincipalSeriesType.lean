@@ -6,8 +6,8 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PrincipalSeriesC
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsStripClearingUpperRightPrincipalSeriesCong
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ConjBlockLowerMemPrincipalSeriesCongruence
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PrincipalSeriesTypeNotIntertwineOutside
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CompactSubgroupSmoothCharacterDatumMonotoneStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PrincipalSeriesUnipotentStripPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CompactSubgroupSmoothCharacterDatumMonotone
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PrincipalSeriesUnipotentStripProperties
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.StripsExhaustParabolicUnipotentRadical
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PrincipalSeriesTypeCharacterMul
 
@@ -41,8 +41,8 @@ theorem eig_jacquet_zero : ∀ (k : Type) [Field k] [ValuativeRel k] [Topologica
   have hz : z.val = Matrix.diagonal (fun i : Fin (r + t) => if (i : ℕ) < r then ϖ else 1) := by
     simp only [z]; rw [val_diagT]; congr 1; funext i; split_ifs <;> simp
   obtain ⟨hD, -⟩ := _root_.GlobalTheory.PsType.grp_theta_datum k (r + t) ψ hψ hord
-  obtain ⟨hSD, hSmono⟩ := GlobalTheory.T.compactSubgroupSmoothCharacterDatum_monotone k (r + t) ψ r ϖ hψ hϖ0 hϖ1 hϖmax
-  obtain ⟨h0J, hθ1, h1KO, hconj⟩ := GlobalTheory.T.principalSeriesUnipotentStrip_properties k (r + t) ψ r ϖ hϖ0 hϖ1 hϖmax hcut
+  obtain ⟨hSD, hSmono⟩ := _root_.GlobalTheory.StripGrp.strip_datum_monotone k (r + t) ψ r ϖ hψ hϖ0 hϖ1 hϖmax
+  obtain ⟨h0J, hθ1, h1KO, hconj⟩ := _root_.GlobalTheory.PsType.strip_props k (r + t) ψ r ϖ hϖ0 hϖ1 hϖmax hcut
   obtain ⟨m, hm⟩ := _root_.GlobalTheory.PsType.twKer_one_mem_aug_stage _ V π _ (strip ψ r ϖ) hSmono (_root_.GlobalTheory.PsType.strip_exhaust k r t ψ ϖ hψ hϖ0 hϖ1 hϖmax) v hv
   refine _root_.GlobalTheory.PsType.eig_eq_zero_of_mem_aug_chain (GL (Fin (r + t)) k) V π hπ (grp ψ) (strip ψ r ϖ) (theta ψ) z hD hSD hSmono
     (fun y hy => ⟨h0J y hy, hθ1 0 y hy⟩) (hconj z hz) ?_ ?_ m v hm heig

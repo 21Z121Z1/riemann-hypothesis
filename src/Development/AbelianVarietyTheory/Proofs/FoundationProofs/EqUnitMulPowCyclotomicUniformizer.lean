@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.CosetTrace
 import Development.AbelianVarietyTheory.Definitions.Foundations.NotCoboundaryConstantOne
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLevelOfMemAdjoin
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsDiscreteValuationRingCyclotomicTowerLevelStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsDiscreteValuationRingCyclotomicTowerLevel
 open GlobalTheory.AlmostEt GlobalTheory.K5
 open scoped NNReal
 
@@ -11,7 +11,7 @@ namespace GlobalTheory.K5.UnitPow
 theorem eq_unit_mul_pow : ∀ (p : ℕ) [Fact p.Prime] (Ω : Type) [Field Ω] [Algebra (O0 p) Ω], IsClo p Ω → ∀ (T : Tower p Ω), ∀ b ∈ Algebra.adjoin (O0 p) (Set.range T.ζ ∪ Set.range T.qq), b ≠ 0 → ∃ (n k : ℕ), 1 ≤ n ∧ ∃ u ∈ Algebra.adjoin (O0 p) (Set.range T.ζ ∪ Set.range T.qq), ∃ u' ∈ Algebra.adjoin (O0 p) (Set.range T.ζ ∪ Set.range T.qq), u * u' = 1 ∧ b = u * (T.ζ n - 1) ^ k := by
   intro p _ Ω _ _ hclo T b hb hb0
   obtain ⟨n, ι, w, hn, hemb, hw, hmem⟩ := _root_.GlobalTheory.K5.exists_level_of_mem_adjoin p Ω hclo T b hb
-  obtain ⟨hdom, hdvr, hirr⟩ := GlobalTheory.T.isDiscreteValuationRing_cyclotomicTowerLevel p n hn
+  obtain ⟨hdom, hdvr, hirr⟩ := _root_.GlobalTheory.K5.OnDVR.isDVR_On p n hn
   have hw0 : w ≠ 0 := by
     rintro rfl
     exact hb0 (by rw [← hw, map_zero])

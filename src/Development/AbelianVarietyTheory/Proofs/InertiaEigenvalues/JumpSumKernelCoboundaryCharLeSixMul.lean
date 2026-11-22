@@ -5,7 +5,7 @@ import GroundTheory.LocalFields.Different
 import GroundTheory.LocalFields.Integers
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CharacterModPrimePowKernelGeneratorStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegerCoboundaryAdditiveModPrimePow
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RamificationJumpSumAddTwoMulDifferentExponentLeStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RamificationJumpSumAddTwoMulDifferentExponentLe
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SqMulNotMemMaximalIdealPowThreeMul
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormalizedValuationOfPrimeOfGaloisExtension
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsTraceMemMaximalIdealPowOfDifferentExponent
@@ -45,7 +45,7 @@ theorem jumpSum_kernel_le_six_mul :
     exact _root_.GlobalTheory.PMon.Ram.sq_mul_not_mem_maxIdeal_pow F p e c hp he hordF hpc w hw (hwt.trans hz)
   have htow := differentExponent_tower F M L
   have hram := ramificationIndex_tower F M L
-  have hjs : jumpSum (wild F L) ⊤ J + 2 * differentExponent M L ≤ 2 * differentExponent F L := GlobalTheory.T.ramificationJumpSum_add_two_mul_differentExponent_le F L J
+  have hjs : jumpSum (wild F L) ⊤ J + 2 * differentExponent M L ≤ 2 * differentExponent F L := _root_.GlobalTheory.PMon.Ram.jumpSum_add_two_mul_differentExponent_fixedField_le F L J
   have key : jumpSum (wild F L) ⊤ J ≤ 2 * (ramificationIndex M L * differentExponent F M) := by omega
   have hML : ramificationIndex M L * differentExponent F M ≤ ramificationIndex M L * (ramificationIndex F M * (3 * e)) :=
     Nat.mul_le_mul_left _ hdM.le

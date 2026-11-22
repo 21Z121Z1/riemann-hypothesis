@@ -1,6 +1,12 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsEigFrames
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsEigenComponentPolynomialStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsEigenComponentPolynomial
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
+import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.IsPshLocallyIntegrableStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LogPeriodLimit
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsIsChart
+import Development.WeilBound.CoreStatements.PlurisubharmonicCones.IsotropicSubmoduleNonzeroFamily
+import Development.WeilBound.CoreStatements.PlurisubharmonicCones.RiemannLatticeEigenProjections
 open NumberField Matrix Filter Topology GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Cusp
 
 noncomputable section
@@ -18,7 +24,7 @@ theorem phi_transport {E : Type} [Field E] [NumberField E] {V V' A : Type} [AddC
   have heig : ∀ (s₀ : 𝓞 E →+* ℂ) (x : V),
       Ψ (GlobalTheory.CompanionTheory.Ar.Cusp.eigComp ρ s₀ x) = GlobalTheory.CompanionTheory.Ar.Cusp.eigComp ρ' s₀ (Ψ x) := by
     intro s₀ x
-    obtain ⟨c₀, hc₀⟩ := GlobalTheory.T.exists_eigenComponent_polynomial E s₀
+    obtain ⟨c₀, hc₀⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.EigCoef.eigComp_eq_combination E s₀
     rw [(hc₀ V ρ).1 x, (hc₀ V' ρ').1 (Ψ x), map_sum]
     refine Finset.sum_congr rfl fun a _ => ?_
     rw [map_smul, hρ]

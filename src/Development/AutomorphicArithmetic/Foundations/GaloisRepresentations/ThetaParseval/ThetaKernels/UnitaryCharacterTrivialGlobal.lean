@@ -64,7 +64,7 @@ theorem PositivityTheory.ThKW.unitary_character_trivial_global : ∀ (F E : Type
   have hfg : L.FG := Submodule.fg_span (Set.finite_range _)
   have hsp : Submodule.span E (L : Set (Fin n → E)) = ⊤ := by
     rw [Submodule.span_span_of_tower, (Pi.basisFun E (Fin n)).span_eq]
-  choose γ h k u1 u2 u3 hg hsup hk hk' using fun N : ℕ => GlobalTheory.T.exists_unitary_adelic_decomposition_split_support F E c n Jᵀ hH hcm.2.2.1 L hfg hsp
+  choose γ h k u1 u2 u3 hg hsup hk hk' using fun N : ℕ => _root_.GlobalTheory.UnRep.exists_rep_suppSplit F E c n Jᵀ hH hcm.2.2.1 L hfg hsp
     (HA.mat _ _ J x) N.factorial ((isUnA_iff _).2 (show HR (Af F) (c : E →ₐ[F] E) J from x).2) N.factorial_pos
   let k' : ℕ → HA (Af F) (c : E →ₐ[F] E) J := fun N => (⟨k N, (isUnA_iff _).1 (u3 N)⟩ : HR (Af F) (c : E →ₐ[F] E) J)
   have h1 : ∀ N, μ x = μ (k' N) := fun N => by

@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Geometrica
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsLocModelIsPrimeOf
 import Development.AbelianVarietyTheory.Definitions.Divisors.NotDominatesTopPlace
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SmoothOfRelativeDimensionDescendsEtaleCover
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapComapMaximalIdealEqOfFormallyUnramifiedStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapComapMaximalIdealEqOfFormallyUnramified
 open CategoryTheory AlgebraicGeometry TopologicalSpace
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
 open GlobalTheory GlobalTheory.Cartier GlobalTheory.TopForm GlobalTheory.Discrepancy GlobalTheory.FieldPair
@@ -134,7 +134,7 @@ theorem ord_eq_of_etTower : ∀ {K L : Type} [Field K] [Field L] (cK : ℂ →+*
   haveI : Algebra.EssFiniteType T P.ring :=
     Algebra.EssFiniteType.of_isLocalization P.ring ((IsUnit.submonoid P.ring).comap j)
   haveI : Algebra.EssFiniteType A P.ring := Algebra.EssFiniteType.comp A T P.ring
-  have hmax := GlobalTheory.T.map_comap_maximalIdeal_eq_of_formallyUnramified' A P.ring
+  have hmax := _root_.GlobalTheory.map_comap_maximalIdeal_eq_of_formallyUnramified A P.ring
   let q : Ideal T := (IsLocalRing.maximalIdeal P.ring).comap j
   let p : Ideal R := (IsLocalRing.maximalIdeal P0.ring).comap (incl P0 hP0.1)
   haveI : q.IsPrime := Ideal.comap_isPrime _ _

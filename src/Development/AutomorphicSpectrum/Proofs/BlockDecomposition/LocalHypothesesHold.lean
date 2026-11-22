@@ -1,20 +1,21 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ThetaNormCommutation.LocalComparisonSplitting.EulerFactorLevels.LocCompareSplit
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemTwCentSwTw
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalGoodReductionStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitAlmostEverywhereFactsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalGoodReduction
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ThetaNormCommutation.LocalComparisonSplitting.EulerFactorLevels.EulerFinOf
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitAlmostEverywhereFacts
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalSupportFacts
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitPlaceUnitaryLocalPointsEquivGL
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalConditionsOfEquivStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalConditionsOfEquiv
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitConditionsOfEquiv
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StabilizerIndexNeZero
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteTwistedDoubleCosets
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SwapTwistCompactPartLe
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SwapTwistCompactPartInProd
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NonsplitPlacePairEquivStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NonsplitPlacePairEquiv
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PairLocalAuxiliaryStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PairInvolutionContinuousStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RationalElementIntegralAlmostAllStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RationalElementIntegralAlmostAll
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EventuallyOfSectionPlaces
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SectionMeetsAbovePlace
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormCharpolySeparableOfElliptic
@@ -30,7 +31,7 @@ namespace GlobalTheory.CompanionTheory.LocHypProof
 
 theorem transport_loc : ∀ {G G' : Type} [Group G] [TopologicalSpace G] [Group G'] [TopologicalSpace G'] (e : G ≃ₜ* G') (θ : G →* G) (θ' : G' →* G')
   (K : Subgroup G) (K' : Subgroup G') (d : G) (f : G → ℂ) (f' : G' → ℂ), (∀ x, e (θ x) = θ' (e x)) → (∀ x, x ∈ K ↔ e x ∈ K') →
-  (∀ x, f x = f' (e x)) → LocConds θ' K' (e d) f' → LocConds θ K d f := @GlobalTheory.T.local_conditions_of_equiv
+  (∀ x, f x = f' (e x)) → LocConds θ' K' (e d) f' → LocConds θ K d f := @_root_.GlobalTheory.CompanionTheory.TransportLoc.locConds_of_equiv
 
 theorem transport_unit : ∀ {G G' : Type} [Group G] [TopologicalSpace G] [Group G'] [TopologicalSpace G'] (e : G ≃ₜ* G') (θ : G →* G) (θ' : G' →* G')
   (K : Subgroup G) (K' : Subgroup G') (d : G) (f : G → ℂ) (f' : G' → ℂ), (∀ x, e (θ x) = θ' (e x)) → (∀ x, x ∈ K ↔ e x ∈ K') →
@@ -63,7 +64,7 @@ theorem split_unit : ∀ {H : Type} [Group H] [TopologicalSpace H] [IsTopologica
 
 theorem inert_iso : CjEx → ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (a b : ℕ) (v : PlF E) (w : Above v), ¬ IsSplitAt w.1 →
   ∃ e : Yv a b v ≃ₜ* (GLw a w.1 × GLw b w.1), (∀ y, e y = evw w y) ∧
-    (∀ y, e (thv a b v y) = ((thL a w.1).prodMap (thL b w.1)) (e y)) ∧ ∀ y, y ∈ Kv a b v ↔ e y ∈ K2 a b w.1 := @GlobalTheory.T.nonsplit_place_pair_equiv
+    (∀ y, e (thv a b v y) = ((thL a w.1).prodMap (thL b w.1)) (e y)) ∧ ∀ y, y ∈ Kv a b v ↔ e y ∈ K2 a b w.1 := @_root_.GlobalTheory.CompanionTheory.LocHypInert.inert_iso
 
 theorem split_iso : CjEx → ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (a b : ℕ) (v : PlF E) (w : Above v), IsSplitAt w.1 →
   ∃ e : Yv a b v ≃ₜ* ((GLw a w.1 × GLw b w.1) × (GLw a w.1 × GLw b w.1)), (∀ y, (e y).1 = evw w y) ∧
@@ -76,7 +77,7 @@ theorem split_iso : CjEx → ∀ (E : Type) [Field E] [NumberField E] [IsCMField
 theorem sg_facts : ∀ (E : Type) [Field E] [NumberField E] (a b : ℕ) (w : Pl E),
   Continuous (sgP a b w) ∧ (∀ g, sgP a b w (sgP a b w g) = g) ∧ ∀ k ∈ K2 (E := E) a b w, sgP a b w k ∈ K2 (E := E) a b w := @GlobalTheory.T.pair_involution_continuous
 
-theorem rat_mem : ∀ (E : Type) [Field E] [NumberField E] (n : ℕ) (δ : GL (Fin n) E), ∀ᶠ w : Pl E in cofinite, ratW n w δ ∈ GlobalTheory.LFun.KGL w n := @GlobalTheory.T.rational_element_integral_almost_all
+theorem rat_mem : ∀ (E : Type) [Field E] [NumberField E] (n : ℕ) (δ : GL (Fin n) E), ∀ᶠ w : Pl E in cofinite, ratW n w δ ∈ GlobalTheory.LFun.KGL w n := @_root_.GlobalTheory.CompanionTheory.LocalHypotheses.ratW_mem_KGL_eventually
 
 theorem cofinite_sec : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (S : Set (Pl E)), IsSection S → ∀ P : PlF E → Prop,
   (∀ᶠ w : {w : Pl E // w ∈ S} in cofinite, P (w.1.under (𝓞 (maximalRealSubfield E)))) → ∀ᶠ v in cofinite, P v := @_root_.GlobalTheory.CompanionTheory.LocHypSec.eventually_cofinite_of_section
@@ -133,7 +134,7 @@ theorem locConds_inert (hC : CjEx) (hU : Unr E) {S : Set (Pl E)} (hS : IsSection
   rw [hloc]
   have s₁ := sep_locEl hC E a w.1 δ₁ he₁
   have s₂ := sep_locEl hC E b w.1 δ₂ he₂
-  have hG := GlobalTheory.T.local_good_reduction E hU a b w.1 (locEl a w.1 δ₁, locEl b w.1 δ₂) s₁ s₂
+  have hG := _root_.GlobalTheory.CompanionTheory.LocGoodProof.locGood E hU a b w.1 (locEl a w.1 δ₁, locEl b w.1 δ₂) s₁ s₂
   have hL := GlobalTheory.CompanionTheory.TwistOrbit.locSupp E hU a b w.1 (locEl a w.1 δ₁, locEl b w.1 δ₂) s₁ s₂
   obtain ⟨-, hKc⟩ := GlobalTheory.CompanionTheory.TwistOrbit.isOpen_isCompact_pair_integral_points (E := E) a b w.1
   refine ⟨hG.1, fun y => split_index _ _ (K' w.1) _ (φ₁ w.1) (GlobalTheory.CompanionTheory.TwistOrbit.continuous_thPair hU a b w.1) hKc (hKo _)
@@ -200,7 +201,7 @@ theorem locConds_split (hC : CjEx) (hU : Unr E) {S : Set (Pl E)} (hS : IsSection
     Prod.ext (norm_split E a w.1 δ₁ hs) (norm_split E b w.1 δ₂ hs)
   have s₁ := sep_locEl hC E a w.1 δ₁ he₁
   have s₂ := sep_locEl hC E b w.1 δ₂ he₂
-  have hG := GlobalTheory.T.local_good_reduction E hU a b w.1 (locEl a w.1 δ₁, locEl b w.1 δ₂) s₁ s₂
+  have hG := _root_.GlobalTheory.CompanionTheory.LocGoodProof.locGood E hU a b w.1 (locEl a w.1 δ₁, locEl b w.1 δ₂) s₁ s₂
   have hL := (GlobalTheory.CompanionTheory.TwistOrbit.locSupp E hU a b w.1 (locEl a w.1 δ₁, locEl b w.1 δ₂) s₁ s₂).1
   have hid : (thL a w.1).prodMap (thL b w.1) = MonoidHom.id _ := by
     have e₁ : thL a w.1 = MonoidHom.id _ := by rw [thL, if_pos hs]
@@ -288,7 +289,7 @@ theorem locHyp : PositivityTheory.Rg.BcB.G8.Fin.LocHyp := by
     have c₃ := rat_mem E a (GeneralLinearGroup.map (IsCMField.complexConj E).toRingEquiv.toRingHom δ₁)
     have c₄ := rat_mem E b (GeneralLinearGroup.map (IsCMField.complexConj E).toRingEquiv.toRingHom δ₂)
     filter_upwards [hinj.eventually t₁, hinj.eventually t₂, hinj.eventually c₁, hinj.eventually c₂, hinj.eventually c₃,
-      hinj.eventually c₄, GlobalTheory.T.unit_almost_everywhere_facts E hU a b S hS δ₁ δ₂ he₁ he₂] with w r₁ r₂ m₁ m₂ m₃ m₄ hy
+      hinj.eventually c₄, _root_.GlobalTheory.CompanionTheory.UnitAEPair.main E hU a b S hS δ₁ δ₂ he₁ he₂] with w r₁ r₂ m₁ m₂ m₃ m₄ hy
     have hy' := hy _ rfl
     by_cases hs : IsSplitAt w.1
     · exact unitConds_split hC hS δ₁ δ₂ _ ⟨w.1, rfl⟩ w.2 hs r₁ r₂ ⟨m₁, m₂⟩ ⟨m₃, m₄⟩ hy'.2

@@ -34,7 +34,7 @@ theorem oscillator_deriv_along_line_quadratic : _root_.GlobalTheory.FunPr.ThetaL
     (GlobalTheory.ArchUniq.Coord.isPairing_trP (F := F) (Fin n × Fin d)) A T hAc hadd h0 hA hiso hc1 (hc2 μ inferInstance)
   choose u hu hDu using fun i => _root_.GlobalTheory.HeisDerivArch.exists_heisLine_actsD_eq M ψ hψ (a i)
   choose v hv hDv using fun i => _root_.GlobalTheory.HeisDerivArch.exists_heisLine_actsD_eq M ψ hψ (b i)
-  obtain ⟨r₀, hr₀, hinj⟩ := GlobalTheory.T.exists_admissible_finiteFactor_archimedeanSchwartz (F := F) (Fin n × Fin d)
+  obtain ⟨r₀, hr₀, hinj⟩ := _root_.GlobalTheory.ArchUniq.exists_admissible_finite_factor (F := F) (Fin n × Fin d)
   refine ⟨m, u, v, c, c₀, fun i => ⟨hu i, hv i⟩, ?_⟩
   intro f g₁ g₂ h1 h2 F₁ hF y
   have eF : ∀ t, F₁ t = T t f := fun t => hinj _ _ ((hF t r₀ (hr₀ f)).symm.trans (hT t f r₀ (hr₀ f)))

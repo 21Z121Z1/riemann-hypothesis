@@ -3,8 +3,8 @@ import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.WeilSie
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaPartD
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBoundUnitary
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaIntegralContinuous
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaIntegralLocallySummableBoundStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PoissonSummationHermitianLatticeStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaIntegralLocallySummableBound
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PoissonSummationHermitianLattice
 import Development.WeilBound.CoreStatements.AutomorphicKernels.WeilSiegelFormula.WeilSiegelSchwartz.HermitianIntegrability.UntupTupOf
 import Development.WeilBound.CoreStatements.AutomorphicKernels.WeilSiegelFormula.WeilSiegelSchwartz.HermitianIntegrability.ExistsSchwartzOfIsSchwartzArch
 import Development.WeilBound.CoreStatements.AutomorphicKernels.WeilSiegelFormula.WeilSiegelSchwartz.HermitianIntegrability.ExistsIntegralEqMul
@@ -38,8 +38,8 @@ theorem hermitian_unfolding_integral (r : ℕ) (V : HSp D) (ψ : AddChar (AF D.h
   have hφ := mem_schwartzA_of_sb θ hθ Φ hΦ
   obtain ⟨𝓖, h𝓖⟩ := hlam
   have hJ : Integrable (Jt ψ V μ fun y => Φ (untup y)) lam :=
-    (GlobalTheory.T.poisson_summation_hermitian_lattice D r ψ hψ lam 𝓖 h𝓖 _ (_root_.GlobalTheory.CompanionTheory.BigCellJ.jt_continuous D r V ψ θ μ _ hψ hθ hμ hφ)
-      (GlobalTheory.T.theta_integral_locally_summable_bound D r V ψ θ μ _ hr hψ hθ hμ hφ)).1
+    (_root_.GlobalTheory.CompanionTheory.HermPoisson.poisson_herm D r ψ hψ lam 𝓖 h𝓖 _ (_root_.GlobalTheory.CompanionTheory.BigCellJ.jt_continuous D r V ψ θ μ _ hψ hθ hμ hφ)
+      (_root_.GlobalTheory.CompanionTheory.JtUnif.jt_unif D r V ψ θ μ _ hr hψ hθ hμ hφ)).1
   obtain ⟨c, hc⟩ := starN_hermE V ψ μ hμ.choose_spec.1 dx hdx
   refine integrable_of_hermE lam h𝓖.1 db hdb _ ?_
   simp only [hc]

@@ -5,7 +5,15 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Ds
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HarishChandraFinite
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasEigEigOfType
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RowTypePartLeEigensystemPartStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RowTypePartLeEigensystemPart
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
+import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinRepApply
+import Development.AbelianVarietyTheory.Definitions.Divisors.InstCMHostS
+import Formalism.LocalToGlobal.IndefiniteReal.PartsRow
+import Formalism.LocalToGlobal.IndefiniteReal.BaseLiftsPackageOfPrimitiveLinks
+import Formalism.LocalToGlobal.Divisibility.TrivialExtensionSideWellFormed
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchurConstantsExistOnChainOfCuspRapidDecay
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoreClausesOfWeakCharacterisation
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.JointEigenMemISup
@@ -99,7 +107,7 @@ theorem carries_of_hasEig : GlobalTheory.Published.WeilRepresentationUnitaryPair
   rw [hμ, ssetF_base hPins.char] at hc
   obtain ⟨b, hb⟩ := principalLevelFrame.rowRepR_occ R.θ (Y.eFT π)
   obtain ⟨U, hU, hU0⟩ := Submodule.exists_mem_ne_zero_of_ne_bot hb
-  obtain ⟨x, hx, hxU⟩ := GlobalTheory.T.rowTypePart_le_eigensystemPart (s := 1) R.toRealDat F.lv2 hCore
+  obtain ⟨x, hx, hxU⟩ := _root_.GlobalTheory.TypePart.isotE_sub_eigenpart (s := 1) R.toRealDat F.lv2 hCore
     (GlobalTheory.Hk3.schurAll_of_cuspRapidDecay hCusp R.toRealDat) R.SF hSF Y.hF Y.PY Y.PW Y.stdPsi.1 Y.stdPsi.2 _ _ c hc b U hU
   rw [← hEE] at hx
   refine carries_of_mem R c x hx (hxU ▸ hU0) (mem_iSup_eEp3 R F b (hHolds.prim.sumE b) x ?_)

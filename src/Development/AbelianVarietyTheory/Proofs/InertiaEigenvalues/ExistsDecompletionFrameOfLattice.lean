@@ -5,9 +5,9 @@ import Development.AbelianVarietyTheory.Definitions.Foundations.HTBasis
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExpStar
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoeAlgebraMapOC
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TraceAlmostOntoOfLevels
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OcTensorCoeffActionMatrixMultiplicativeStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OcTensorCoeffActionMatrixMultiplicative
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DecompletionFrameOfMatrixForm
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFontaineThetaFrobeniusInverseShiftStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFontaineThetaFrobeniusInverseShift
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.KapIdemMemInCStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OcTensorCoeffBasisCoordsMemCyclotomicLevelOfPoweStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormLtRho1OfMemIdealPower
@@ -18,9 +18,10 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPrimeEqM
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsAinfTensorLatticeSpecialisationStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SemilinearIteratePrimePowSubMemFiltration
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GammaActionSubMemSpanPowSuccStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsContinuousGaloisLatticeMatrixIntegralStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsContinuousGaloisLatticeMatrixIntegral
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachLatticeSandwichAinfStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCyclotomicTowerLevelGeneratorPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCyclotomicTowerLevelGeneratorProperties
+import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormPrimitiveRootPrimePowSubOnePadicComplexStatement
 
 noncomputable section
@@ -339,16 +340,16 @@ theorem exists_decompletion : ∀ (D : Formalism.BasicNotions.D7) (HW : HWOf D.l
   let AI := D.locA l
   have hact : IsActC AI.actC := ⟨AI.actC_ext, AI.actC_norm⟩
   have hcyc : IsCyc (D.loc l).χQ := (D.loc l).χQ_cyc
-  obtain ⟨θ, hθ⟩ := GlobalTheory.T.exists_fontaineTheta_frobeniusInverse_shift l (D.loc l) AI n
+  obtain ⟨θ, hθ⟩ := _root_.GlobalTheory.Cyc.Decomp.exists_isThetaShift l (D.loc l) AI n
   obtain ⟨Φ, hΦ1, hΦ2, hΦ3, hΦ4⟩ := GlobalTheory.T.exists_ainf_tensor_lattice_specialisation l (D.loc l) AI K LL T d f n M A o θ hM hθ
-  obtain ⟨hl1, hA1, -, -⟩ := GlobalTheory.T.ocTensorCoeffActionMatrix_multiplicative l K LL T d f M A o hM
-  obtain ⟨hM1, hM2, -, -⟩ := (GlobalTheory.T.exists_continuous_galoisLatticeMatrix_integral l K LL T).2 d M A hM
+  obtain ⟨hl1, hA1, -, -⟩ := _root_.GlobalTheory.Cyc.Decomp.lam_mul_of_isMat l K LL T d f M A o hM
+  obtain ⟨hM1, hM2, -, -⟩ := (_root_.GlobalTheory.Cyc.isMat_exists_and_props l K LL T).2 d M A hM
   obtain ⟨z, hz1, hz2, hz3⟩ := exists_lift S E T N (E.io S.W.X) M0 h0 (inclR_injective LL) hsw1 hsw2
   have hgrp := _root_.GlobalTheory.Cyc.Decomp.grp_GKs_H l (D.loc l) AI K s LL h ((HW l).W K s LL h) ((HW l).W_s K s LL h)
   have hGs : Gj K s ≤ GK K := IntermediateField.fixingSubgroup_antitone h.2.2.1
   have hms : Gj K m ≤ Gj K s :=
     IntermediateField.fixingSubgroup_antitone (AlmostTrace.Ks_mono K (by omega))
-  obtain ⟨⟨g₀, hg₀⟩, hgen⟩ := GlobalTheory.T.exists_cyclotomicTowerLevelGenerator_properties l AI.actC (D.loc l).χQ hact hcyc K s ⟨h.1, h.2.1⟩
+  obtain ⟨⟨g₀, hg₀⟩, hgen⟩ := _root_.GlobalTheory.Cyc.gen_dense l AI.actC (D.loc l).χQ hact hcyc K s ⟨h.1, h.2.1⟩
   have hg := (hgen g₀ hg₀).1 (s + n + 1)
   rw [← hm] at hg
   let φ : LetA S.O S.n →+* OCO LL := (thR LL θ).comp E.io.toRingHom

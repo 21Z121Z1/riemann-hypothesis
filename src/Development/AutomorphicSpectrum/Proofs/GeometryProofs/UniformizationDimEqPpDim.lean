@@ -13,8 +13,8 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HodgeIPIffHodg
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ThetaMultiplierNormalForm
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsThetaBasisOfFactor
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ThetaFunctionsFiniteDim
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TangentSpaceEquivHolUnifStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolUnifCompareIsogenyStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TangentSpaceEquivHolUnif
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolUnifCompareIsogeny
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelComplexBaseChange
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsDerivAt0CompLinMap
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabComp
@@ -37,7 +37,7 @@ theorem rank_eq_unif_dim : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E
   obtain ⟨Mσ, -⟩ := GlobalTheory.CompanionTheory.Ar.LieSigma.lieModel_fibre (Sp (𝓞 L)) D.t.G L (𝟙 _) D.B.carrier D.MB σ
   have hp' : IsGrpPullback A D.t.G (spMap (σ.comp (algebraMap (𝓞 L) L)) ≫ 𝟙 _) φ := by
     rwa [Category.comp_id]
-  obtain ⟨e, -⟩ := GlobalTheory.T.tangent_space_equiv_hol_unif _ D.t.G _ _ Mσ A φ M g u hp' h1 h2
+  obtain ⟨e, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.HodgeLin.exists_linearEquiv _ D.t.G _ _ Mσ A φ M g u hp' h1 h2
   have hf : Module.finrank ℂ (Fibre σ D.B.carrier) = g := by
     rw [e.finrank_eq, Module.finrank_fin_fun]
   have hr : Module.finrank ℂ (FibreSpace D.B.metric σ) = Module.finrank (𝓞 L) D.B.carrier :=

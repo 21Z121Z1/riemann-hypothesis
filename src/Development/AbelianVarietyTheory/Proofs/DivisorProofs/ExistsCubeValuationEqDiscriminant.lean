@@ -4,7 +4,7 @@ import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsDiscreteValuationRingValuationSubringAtPrime
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.AddMonoidHomEqZeroOfEventually
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGaloisStableTorsionFamilyKer
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaloisStableLatticePointsSymmetricMemStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaloisStableLatticePointsSymmetricMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeierstrassPSubTwoMulUnit
 open NumberField IsDedekindDomain WeierstrassCurve GlobalTheory GlobalTheory.Published GlobalTheory.CMModel Formalism.L2.Th1.F
 open scoped IntermediateField BigOperators Topology
@@ -27,7 +27,7 @@ theorem exists_mem_valuation_cube_eq_Δ : ∀ (p : ℕ) (F : IntermediateField �
   have hN3' : ¬ 3 ∣ N := by omega
   have hU := fun i => _root_.GlobalTheory.CMModel.weierstrassP_sub_two_mul_unit L (sqrtNegNat p) u V N hD.mul hβ hvΔ.symm hNv hNodd hN3' (T i)
     (hT i).1 (hT i).2
-  have hmem := (GlobalTheory.T.galoisStable_lattice_points_symmetric_mem F L ι T hD.g₂_mem hD.g₃_mem hst (fun i => (hT i).1)).2.2.2
+  have hmem := (_root_.GlobalTheory.CMModel.stable_sym_mem F L ι T hD.g₂_mem hD.g₃_mem hst (fun i => (hT i).1)).2.2.2
     (fun i => (hU i).1)
   have hΔmem : (latticeCurve L).Δ ∈ F := by
     rw [latticeCurve_Δ]

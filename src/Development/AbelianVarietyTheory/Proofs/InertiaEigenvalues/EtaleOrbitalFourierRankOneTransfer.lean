@@ -3,10 +3,10 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.KirillovVanishingOfLimit
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JHypMemInducedFourierWeyl
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TruncatedWhittakerJHypEqOrbitalIntegral
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WeilRepEvalZeroMemInducedStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WeilRepEvalZeroMemInduced
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TruncatedWhittakerWeilRepEventually
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFactsStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FourierTransformKProdLocallyConstantCompactSuppoStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFacts
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FourierTransformKProdLocallyConstantCompactSuppo
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology
 
 namespace GlobalTheory.JR.RankOneTransfer
@@ -79,7 +79,7 @@ theorem lam_comb : ∀ (F E : Type) [NontriviallyNormedField F] [NontriviallyNor
     μK.IsAddHaarMeasure → ∀ (a : A.K) (Φ₁ Φ₂ : SpecialLinearGroup (Fin 2) A.K → ℂ) (r : ℂ), A.InI Φ₁ → A.InI Φ₂ →
     ∀ c : F, c ≠ 0 → A.abelian₂ μK ψ a (fun g => Φ₁ g + r * Φ₂ g) c = A.abelian₂ μK ψ a Φ₁ c + r * A.abelian₂ μK ψ a Φ₂ c := by
   intro F E _ _ _ _ _ A ψ hψ μK hμ a Φ₁ Φ₂ r h₁ h₂ c hc
-  obtain ⟨-, -, -, -, -, -, -, -, -, hOKo, hOKc, -⟩ := GlobalTheory.T.etaleHermitianPair_structure_facts F E A
+  obtain ⟨-, -, -, -, -, -, -, -, -, hOKo, hOKc, -⟩ := _root_.GlobalTheory.JR.EtFacts.main F E A
   have hsm : Continuous fun z : A.K => c • z := continuous_const_smul c
   have hKc : IsCompact {z : A.K | c • z ∈ A.OK} := by
     have := (Homeomorph.smulOfNeZero c hc (α := A.K)).isCompact_preimage.2 hOKc
@@ -144,7 +144,7 @@ namespace GlobalTheory.JR.RankOneTransfer
 theorem rankOne : RankOne := by
   intro F E _ _ _ _ _ A ψ hψ m S hS γ W hW φ' φ κ hφ' hφ hmatch x hx y hy
   classical
-  obtain ⟨-, -, -, -, -, -, -, hfin, -⟩ := GlobalTheory.T.etaleHermitianPair_structure_facts F E A
+  obtain ⟨-, -, -, -, -, -, -, hfin, -⟩ := _root_.GlobalTheory.JR.EtFacts.main F E A
   have hSf := hfin S hS
   set Sf := hSf.toFinset with hSfdef
   have hmem : ∀ x', x' ∈ Sf ↔ x' ∈ S := fun x' => hSf.mem_toFinset
@@ -166,11 +166,11 @@ theorem rankOne : RankOne := by
     (∑ x' ∈ Sf, r x' * jx x' g) + κ * A.jHyp m.μK ψ φ' g
   have hφw : ∀ x' ∈ S, IsTest (φw x') := fun x' hx' => (hW x' hx').1.1 _ _ (hφ x' hx')
   have hjx : ∀ x' ∈ Sf, A.InI (jx x') := fun x' hx' =>
-    (GlobalTheory.T.weilRep_evalZero_mem_induced F E A ψ hψ x' _ _ _ (hW x' ((hmem x').1 hx')) _ (hφ x' ((hmem x').1 hx'))).1
+    (_root_.GlobalTheory.WeilSmooth.jx_mem_induced F E A ψ hψ x' _ _ _ (hW x' ((hmem x').1 hx')) _ (hφ x' ((hmem x').1 hx'))).1
   have hjw : ∀ x' ∈ Sf, A.InI (jw x') := fun x' hx' =>
-    (GlobalTheory.T.weilRep_evalZero_mem_induced F E A ψ hψ x' _ _ _ (hW x' ((hmem x').1 hx')) _ (hφw x' ((hmem x').1 hx'))).1
+    (_root_.GlobalTheory.WeilSmooth.jx_mem_induced F E A ψ hψ x' _ _ _ (hW x' ((hmem x').1 hx')) _ (hφw x' ((hmem x').1 hx'))).1
   have h14 := _root_.GlobalTheory.JR.HypJ.main F E A ψ hψ m.μK m.sdK φ' hφ'
-  have hF' : IsTest (A.fourK m.μK ψ φ') := GlobalTheory.T.fourierTransformKProd_locallyConstantCompactSupport F E A ψ hψ m.μK m.sdK φ' hφ'
+  have hF' : IsTest (A.fourK m.μK ψ φ') := _root_.GlobalTheory.FourKTest.fourK_isTest F E A ψ hψ m.μK m.sdK φ' hφ'
   have h14F := _root_.GlobalTheory.JR.HypJ.main F E A ψ hψ m.μK m.sdK _ hF'
   have hΨ : A.InI Ψ := inI_comb F E A _ _ κ (inI_sum A Sf r jx hjx) h14.1
 
@@ -206,7 +206,7 @@ theorem rankOne : RankOne := by
       by_cases hg : γ x₀ = 0
       · have h0 : φ x₀ = 0 := by
           by_contra hne0
-          exact (GlobalTheory.T.weilRep_evalZero_mem_induced F E A ψ hψ x₀ _ _ _ (hW x₀ hx₀) _ (hφ x₀ hx₀)).2 hne0 hg
+          exact (_root_.GlobalTheory.WeilSmooth.jx_mem_induced F E A ψ hψ x₀ _ _ _ (hW x₀ hx₀) _ (hφ x₀ hx₀)).2 hne0 hg
         simp [h0, Et.orbL]
       · simp only [r]
         field_simp

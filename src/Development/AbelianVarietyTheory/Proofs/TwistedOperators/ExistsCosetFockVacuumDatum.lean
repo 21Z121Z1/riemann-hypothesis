@@ -14,9 +14,9 @@ import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Ha
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HasDRepIffHasDerivAt
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DiscreteSeriesUpqExistsIffDsExists
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdjointExchangeLawsThetaHeisenbergStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CoreChainAdjointLatticeExchangeStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SelfDualLatticeChangeOfLatticeLawsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdjointExchangeLawsThetaHeisenberg
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CoreChainAdjointLatticeExchange
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SelfDualLatticeChangeOfLatticeLaws
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergCombinationCommFockPolynomialVectors
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HomLatticeCompletionSelfAnnihilatorAtPlaces
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MapFinNeg
@@ -31,7 +31,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsFockVacuumAtFi
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SumHeisenbergTranslatesLatticeVacuumNeZero
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CosetSumHeisenbergIsEigenvector
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsThetaIsLatticeVacuumFockPureTensor
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaChainUnitVacuumOtherLatticesExistsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaChainUnitVacuumOtherLatticesExists
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRepresentativesHalfQuotientPairingTrivialD
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CorePairIntegralPointPairsTriviallyHalf
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HalfVectorSymplecticOrthogonal
@@ -84,11 +84,11 @@ theorem datumEx : DatumEx := by
   intro D hq T L μ0 hL sc G W M hM i hi r r' hr hr' S S' MM MM' x₀ hx₀
   have hψ : IsStdChar D W.ψ (-1) := W.ψ_std
   have hθ : IsInfFam W.θ := W.θ_is
-  have hEx : ExchLaw D := GlobalTheory.T.adjointExchange_laws_thetaHeisenberg D
-  have hLE : LatExch := GlobalTheory.T.coreChain_adjoint_latticeExchange
+  have hEx : ExchLaw D := _root_.GlobalTheory.ExchPf.exchLaw D
+  have hLE : LatExch := _root_.GlobalTheory.LatExchPf.latExch
   have hadj := GlobalTheory.AdjLawPf.adjLaw D W.ψ hψ (G.V (.core i)) (G.V (.core (i + 1)))
   obtain ⟨e, he, -⟩ := W.cosVec_is
-  obtain ⟨f₀, hf₀⟩ := GlobalTheory.T.thetaChain_unitVacuum_otherLattices_exists D hq T L μ0 hL sc G W M hM i hi r r' S S' MM MM'
+  obtain ⟨f₀, hf₀⟩ := _root_.GlobalTheory.CoreVacRe.vacExists_reLat D hq T L μ0 hL sc G W M hM i hi r r' S S' MM MM'
   obtain ⟨R, hR1, hR2, hR3, hR4⟩ := GlobalTheory.T.exists_representatives_half_quotient_pairing_trivial_depthLattice D hq T L μ0 hL sc G W M hM i hi e he
   have hxi := _root_.GlobalTheory.CoreOnto.IntDatum.psi_int D hq T L μ0 hL sc G W M hM i hi e he x₀ hx₀
   have hhalf : ∀ z ∈ R, IsHalf e (adjO (G.V (.core i)) (G.V (.core (i + 1))) z) := fun z hz => by
@@ -146,7 +146,7 @@ theorem datumEx : DatumEx := by
     have hgl := _root_.GlobalTheory.ExchLatPf.exchLat D hq T L μ0 hL sc G W M hM hEx hLE i hi r r' hr hr' _ hfl.2
     have hth : IsThetaFunO W.ψ r.sp r'.sp (ptOf W.ψ W.θ MM MM' f φ) := by
       rw [hpt]; exact (_root_.GlobalTheory.CombTheta.comb_theta W.ψ W.θ r.sp r'.sp hψ hθ _ hfl.1 R c _ hfin).1
-    have hth' := (((GlobalTheory.T.selfDualLattice_changeOfLattice_laws D).2.2 W.ψ (G.V (.core i)) (G.V (.core (i + 1))) r r').1 _).1 hth
+    have hth' := (((_root_.GlobalTheory.ReLatPf.reLatLaw_holds D).2.2 W.ψ (G.V (.core i)) (G.V (.core (i + 1))) r r').1 _).1 hth
     have hΦth := ((hEx W.ψ (G.V (.core i)) (G.V (.core (i + 1))) hψ).1 _).1 hth'
     have hΦ := hexs (ptOf W.ψ W.θ MM MM' f₀ φ)
     rw [← hpt] at hΦ

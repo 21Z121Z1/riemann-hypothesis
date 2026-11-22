@@ -1,6 +1,6 @@
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TrMMemFramesEIff
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FundamentalDomainUnitaryAdelicExistsMeasureEq
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FrameIntegralThetaMeasureFormulaStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FrameIntegralThetaMeasureFormula
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeil.ArchimedeanSiegelWeil.PlaceIntegrals.SiegelWeilFreeOfBlockNonemptyFrames
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsTamagawaMeasureNormalization
@@ -29,7 +29,7 @@ theorem siegel_frame : ∀ (D : D7) (r : ℕ) (V : HSp D) (ψ : AddChar (AF D.ho
     _root_.GlobalTheory.CompanionTheory.WeilSiegel.Frame.exists_coord_fibres D.host.F D.host.E D.sp.cm.sig hCM V.rank V.gram hJ r
   have hS := _root_.GlobalTheory.CompanionTheory.WeilSiegel.Free.swFree_block D.host.F D.host.E D.sp.cm.sig hCM V.rank V.gram hJ r t β.1 (hermE_symm β) hNF hr hfr
     d b laminf lamv h1 h2 ν 𝓕 hν h𝓕 minf m h3 h4
-  obtain ⟨hi, he⟩ := GlobalTheory.T.frame_integral_theta_measure_formula D r V θ hθ ν hν 𝓕 h𝓕 φ hφ habs β
+  obtain ⟨hi, he⟩ := _root_.GlobalTheory.CompanionTheory.WeilSiegel.Frame.glue D r V θ hθ ν hν 𝓕 h𝓕 φ hφ habs β
   rw [he]
   exact (_root_.GlobalTheory.CompanionTheory.WhitFree.whit_eq_integral D r V ψ θ μ lam ν φ hH t β hNF d b laminf lamv minf m h1 h2 h3 h4 _ hS hi).symm
 

@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianHod
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RestrictCapFBijective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechOneCochainToPosetCochainMemCocycles
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechOneCochainToPosetCochainCoboundaryExists
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCechOneCocyclePosetOneCochainToCechCochainStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCechOneCocyclePosetOneCochainToCechCochain
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PosetOneCochainToCechCochainCoboundary
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PosetToCechCechToPosetCocycleEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechToPosetPosetToCechSubCoboundary
@@ -52,7 +52,7 @@ theorem cech_free : ∀ (A : Type) [CommRing A] [IsLocalRing A] [IsNoetherianRin
   let bP := bH.map e
   choose f hf using fun a => CatCoh.H1.mk_surjective F (bP a)
   let b : Fin g → C1 U := fun a => GlobalTheory.CechCmp.toCech B.hom U hU hinf (f a).1
-  have hb : ∀ a, IsCoc U (b a) := fun a => GlobalTheory.T.isCechOneCocycle_posetOneCochainToCechCochain I B.left A B.hom U hU hinf _ (f a).2
+  have hb : ∀ a, IsCoc U (b a) := fun a => _root_.GlobalTheory.CechCmp.isCoc_toCech I B.left A B.hom U hU hinf _ (f a).2
   have hbP : ∀ a, CatCoh.H1.mk F ⟨GlobalTheory.CechCmp.toPos B.hom U hU hinf (b a),
       _root_.GlobalTheory.CechCmp.cechOneCochainToPosetCochain_mem_cocycles I B.left A B.hom U hU hinf _ (hb a)⟩ = bP a := by
     intro a

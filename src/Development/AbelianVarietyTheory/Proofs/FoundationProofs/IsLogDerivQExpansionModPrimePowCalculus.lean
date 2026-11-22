@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.ApplyEqOfMemAdjoin
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsTopWTopWOfExists
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulOfIsPrimitiveIntegralHahnGaussStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulOfIsPrimitiveIntegralHahnGauss
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaDerivationHahnSeriesLeibnizAddConst
 open scoped MatrixGroups
 open GlobalTheory.KZ GlobalTheory.Glue GlobalTheory.K5 GlobalTheory.KummerEisensteinGalois
@@ -58,8 +58,8 @@ theorem isDl_calc : ∀ {Ω : Type} [Field Ω] [Algebra ℚ Ω] [IsAlgClosure �
       a * a2, b * b2, κ * κ2, mul_ne_zero hκ hκ2, ?_, ?_, ?_, ?_⟩
     · calc f * g * (b * b2) = (f * b) * (g * b2) := by ring
         _ = _ := by rw [hfb, hgb, map_mul]; ring
-    · rw [map_mul]; exact GlobalTheory.T.mul_of_isPrimitiveIntegral_hahn_gauss A _ _ hpa hpa2
-    · rw [map_mul]; exact GlobalTheory.T.mul_of_isPrimitiveIntegral_hahn_gauss A _ _ hpb hpb2
+    · rw [map_mul]; exact _root_.GlobalTheory.Glue.Prim.mul A _ _ hpa hpa2
+    · rw [map_mul]; exact _root_.GlobalTheory.Glue.Prim.mul A _ _ hpb hpb2
     · rw [cgA_iff] at hc hc2 ⊢
       rw [map_mul, map_mul, lei, lei]
       have key : (φ + ψ) * (X.exp a * X.exp a2) * (X.exp b * X.exp b2) -

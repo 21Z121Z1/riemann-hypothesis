@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsApprox
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralActionUnitCharacterEigen
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemIdealIntegralTensorSwapIffMemIdealSubgroupStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitDetCharIndicatorMulIntegralFrameStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardPairFirstMemberIntegralFrameEqStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitDetCharIndicatorEqOneOfCongruentOneStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemIdealIntegralTensorSwapIffMemIdealSubgroup
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitDetCharIndicatorMulIntegralFrame
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardPairFirstMemberIntegralFrameEq
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitDetCharIndicatorEqOneOfCongruentOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralUnitaryLiftIdempotentPart
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsThetaLiftIdempotentForm
 
@@ -43,7 +43,7 @@ theorem invM_mul {a : ℕ} (k : Formalism.MainNotions.StandardLatticesGL3.GA D a
 theorem valM_mul {a : ℕ} (k : Formalism.MainNotions.StandardLatticesGL3.GA D a) : valM k * invM k = 1 := Units.mul_inv _
 
 theorem int_of_hat {𝔪 : Ideal (𝓞 D.host.E)} {x : 𝔸 D} (hx : x ∈ hatId D 𝔪) : x ∈ OhE D :=
-  (toE_int_iff x).1 ((GlobalTheory.T.memIdealIntegral_tensorSwap_iff_mem_idealSubgroup 𝔪 x).2 hx).1
+  (toE_int_iff x).1 ((_root_.GlobalTheory.StdRead.IdealDict.inId_toE_iff 𝔪 x).2 hx).1
 
 theorem hat_mul_mat {𝔪 : Ideal (𝓞 D.host.E)} {a : ℕ} {A B : Matrix (Fin a) (Fin a) (𝔸 D)} (hA : ∀ i j, A i j ∈ hatId D 𝔪)
     (hB : ∀ i j, B i j ∈ OhE D) (i j : Fin a) : (A * B) i j ∈ hatId D 𝔪 := by
@@ -74,11 +74,11 @@ theorem value {e : AE D} {𝔪 : Ideal (𝓞 D.host.E)} (hG : GoodMod e 𝔪) {�
     (h : ∀ i j, (N - invM r) i j ∈ hatId D 𝔪) :
     (∃ x, IsUnitDet e (N.map (toE D)) x) ∧ starRingEnd ℂ (unitChar ν e (N.map (toE D))) = unitChar ν e (matE r) := by
   have hi := (GlobalTheory.NormSum.mem_intG r).1 hr
-  have h1 := GlobalTheory.T.unitDetCharIndicator_eq_one_of_congruent_one e 𝔪 hG ν hK (N * valM r) fun i j => by
+  have h1 := _root_.GlobalTheory.StdRead.CongOneChar.unitChar_cong e 𝔪 hG ν hK (N * valM r) fun i j => by
     rw [← invM_mul r, ← sub_mul]
     exact hat_mul_mat h (fun i j => (hi i j).1) i j
   obtain ⟨S, -, he, -⟩ := hG
-  have h2 := GlobalTheory.T.unitDetCharIndicator_mul_integralFrame ν e (GlobalTheory.PlaceDatum.idemSum_mul_self he) (StandardFirstTheta.GlobalTheory.CompanionTheory.StdFstTheta.toEAf_mem he) (N.map (toE D))
+  have h2 := _root_.GlobalTheory.StdRead.CharMul.unitChar_mul ν e (GlobalTheory.PlaceDatum.idemSum_mul_self he) (StandardFirstTheta.GlobalTheory.CompanionTheory.StdFstTheta.toEAf_mem he) (N.map (toE D))
     (Matrix.GeneralLinearGroup.map (toE D) (r : GL (Fin a) (𝔸 D))) (fun i j => (toE_int_iff _).2 (hi i j).1)
     (fun i j => (toE_int_iff _).2 (hi i j).2)
   rw [Matrix.map_mul] at h1
@@ -198,16 +198,16 @@ theorem conj_stdFst_eq_sum : ∀ {D : D7} (S T : HSp D) {a d : ℕ} (hS : S.rank
     refine if_congr (and_congr_right fun _ => ?_) rfl rfl
     rw [← coset_iff (one_sub_eps_mod hG) had (hz r hr).1 (hz r hr).2 W]
     refine forall₂_congr fun i j => ?_
-    rw [← GlobalTheory.T.memIdealIntegral_tensorSwap_iff_mem_idealSubgroup, RingHom.map_sub, RingHom.map_mul, ← hW, toE_finQ, ← finQ_incA, toE_finQ]
+    rw [← _root_.GlobalTheory.StdRead.IdealDict.inId_toE_iff, RingHom.map_sub, RingHom.map_mul, ← hW, toE_finQ, ← finQ_incA, toE_finQ]
     rfl
-  rw [GlobalTheory.T.standardPairFirstMember_integralFrame_eq S T ν e 𝔪 β hβ hβ' t,
-    GlobalTheory.T.unitDetCharIndicator_mul_integralFrame ν e (GlobalTheory.PlaceDatum.idemSum_mul_self he) (StandardFirstTheta.GlobalTheory.CompanionTheory.StdFstTheta.toEAf_mem he) _ β hβ hβ', hN]
+  rw [_root_.GlobalTheory.StdReadFrame.stdFst_frame S T ν e 𝔪 β hβ hβ' t,
+    _root_.GlobalTheory.StdRead.CharMul.unitChar_mul ν e (GlobalTheory.PlaceDatum.idemSum_mul_self he) (StandardFirstTheta.GlobalTheory.CompanionTheory.StdFstTheta.toEAf_mem he) _ β hβ hβ', hN]
   simp only [Pi.smul_apply, Finset.sum_apply, smul_eq_mul]
   rw [Finset.sum_congr rfl fun r hr => by rw [hc r hr]]
   by_cases ht : IsHalf e t
   · simp only [ht, true_and, if_true]
     rw [sum_eq hG hK had hR hU W]
-    simp only [hW, toE_int_iff, GlobalTheory.T.memIdealIntegral_tensorSwap_iff_mem_idealSubgroup]
+    simp only [hW, toE_int_iff, _root_.GlobalTheory.StdRead.IdealDict.inId_toE_iff]
     split_ifs
     · rw [map_mul, mul_comm]
     · rw [map_zero, mul_zero]

@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermi
 import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HBdNonneg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefiniteVertexClassesCardLePrincipalCongruence
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardTopVertexClassesLeClassNumberBoundNormPowStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardTopVertexClassesLeClassNumberBoundNormPow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbsNormGridModulusLeExpDepthLogNormSum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefiniteKernelNodeRankLeTotalRank
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ParameterSizeConditionsNumericBounds
@@ -108,7 +108,7 @@ theorem archimedean_class_count_bound : _root_.GlobalTheory.FunPr.ThetaLocalInpu
     rw [← Real.exp_nat_mul]; exact Real.exp_le_exp.2 key
   refine ⟨?_, fun Φ β hβ => ?_⟩
   ·
-    have h := (GlobalTheory.T.card_topVertexClasses_le_classNumberBound_norm_pow ch.G ch.S.N).trans
+    have h := (_root_.GlobalTheory.ClassCount.card_clPlus_le ch.G ch.S.N).trans
       (factor _ (_root_.GlobalTheory.DefRank.rank_le_bigN ch.G (.top 0) (by simp [DefNode])) _ (Nat.cast_nonneg _) hmod)
     refine h.trans (hMK.trans ((le_self_pow₀ (Real.one_le_exp hK00) (by omega)).trans hexp))
   ·

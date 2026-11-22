@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdelicUnitrian
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LintegralQuotientComparisonFundamentalDomains
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HaarMeasureInverseInvariant
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HaarMeasureUniformizerTranslate
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFundamentalDomainRationalUpperUnitriangulaStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFundamentalDomainRationalUpperUnitriangula
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LcscAdelicUnitaryGroup
 
 noncomputable section
@@ -98,7 +98,7 @@ theorem lintegral_tl_inv_mul : ∀ (E : Type) [Field E] [NumberField E] (n : ℕ
   set ν : Measure (NA E n) := Measure.haar with hν
   haveI : ν.IsInvInvariant := _root_.GlobalTheory.CellDec.NA_isInvInvariant E n ν
   haveI : SFinite ν := inferInstance
-  obtain ⟨D, hD, hD0, hDtop⟩ := GlobalTheory.T.exists_fundamentalDomain_rational_upperUnitriangular E n ν
+  obtain ⟨D, hD, hD0, hDtop⟩ := _root_.GlobalTheory.CellDec.exists_fundamentalDomain_NE E n ν
   set t := tl n ϖ l with ht
 
   let cM : NA E n ≃* NA E n :=

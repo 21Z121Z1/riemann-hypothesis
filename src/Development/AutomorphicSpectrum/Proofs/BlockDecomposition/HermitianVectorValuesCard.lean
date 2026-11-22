@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResAlgSplitTwo
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormFibreCardNonzeroStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormFibreCardZeroStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormFibreCardNonzero
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormFibreCardZero
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianSpaceAnisotropicUnitStatement
 
 open PositivityTheory.PfSWUS.Loc GlobalTheory.CompanionTheory.UnrDens
@@ -136,7 +136,7 @@ theorem count : ∀ (E : Type) [CommRing E] (τ : E →+* E) (q : ℕ) (ε : ℤ
     refine ⟨?_, ?_⟩
     · intro c hcf hc0
       have hn : (Nat.card {a : E // a * τ a = c * di} : ℝ) = (q : ℝ) - ε := by
-        have := GlobalTheory.T.norm_fibre_card_nonzero E τ q ε hR (c * di)
+        have := _root_.GlobalTheory.CompanionTheory.UnrDens.NormUnit.card_fibre E τ q ε hR (c * di)
           (by rw [map_mul, hcf, hdifix])
           (by
             intro h0
@@ -148,7 +148,7 @@ theorem count : ∀ (E : Type) [CommRing E] (τ : E →+* E) (q : ℕ) (ε : ℤ
       rw [key c hcf, hn, hpw, pow_succ ((ε : ℝ) / q) m]
       exact arith_unit _ _ _ _ hq0
     · have hn : (Nat.card {a : E // a * τ a = (0 : E) * di} : ℝ) = (q : ℝ) * (1 + ε) - ε := by
-        have := GlobalTheory.T.norm_fibre_card_zero E τ q ε hR
+        have := _root_.GlobalTheory.CompanionTheory.UnrDens.NormZero.card_norm_zero E τ q ε hR
         rw [zero_mul]
         exact_mod_cast this
       rw [key 0 (map_zero τ), hn, hpw, pow_succ ((ε : ℝ) / q) m]

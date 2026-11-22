@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OverExtAlgebra
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsLocalRingOfIdem
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AddValNormUnramifiedInvolutionFieldExtEqMul
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsBasisTraceInvolutionDetUnitUnramifiedStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DetTraceGramBlockMatrixStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DetTraceGramBlockMatrix
 
 noncomputable section
 
@@ -55,7 +55,7 @@ theorem eta_overExt : ∀ (K K' : UQ) (d : ℕ) (φ : K.E →+* K'.E), IsUnrExt 
         (w (e.symm i).1 * K'.c (w (e.symm j).1)) • ((x : B.A) * u (e.symm i).2 * B.σ (u (e.symm j).2)) := by
       rw [Algebra.smul_def, map_mul]; ring
     rw [this, LinearMap.map_smul, smul_eq_mul]; ring
-  rw [h2, Matrix.det_submatrix_equiv_self, GlobalTheory.T.det_trace_gram_block_eq_pow_mul_norm_det w H (fun l => K'.c (w l))]
+  rw [h2, Matrix.det_submatrix_equiv_self, _root_.GlobalTheory.det_traceGram_blockMatrix w H (fun l => K'.c (w l))]
   by_cases hH0 : H.det = 0
   · rw [hH0, Algebra.norm_zero, mul_zero]; simp [UQ.eta, val]
   have hN : Algebra.norm K.E H.det ≠ 0 := by

@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.HermSysHypOneLeLambdaZero
 import Development.AbelianVarietyTheory.Definitions.Divisors.AevalEqZeroOfMemConeIdeal
 import ReciprocityTheory.SemistableReduction.TorusL2CauchyInequality
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChowFormZeroSetExtensionFieldIffCommonConeZeroStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChowFormZeroSetExtensionFieldIffCommonConeZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubsetOfForallPtMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEqIsoSpecComp
 
@@ -71,7 +71,7 @@ theorem finite_and_inOpen : ∀ (F : Type) [Field F] [NumberField F] (T : Tuple 
     have hy := hT.alg.bpf.coords_ne_zero (LinSys.toBase x : T.Pt (AlgebraicClosure E)).1
     obtain ⟨r, hr, hc⟩ := hl _ hy fun ξ hξ => by
       rw [EtaleSection.eval_spec]
-      refine (GlobalTheory.T.chowForm_zeroSet_extensionField_iff_common_cone_zero F T.D T.N δ _ f hf).1 _ _ ξ _ hy (fun p hp => ?_)
+      refine (_root_.GlobalTheory.ChowZeroExt.zero_set_ext F T.D T.N δ _ f hf).1 _ _ ξ _ hy (fun p hp => ?_)
         ((T.toLinSys.mem_subPts_cut_baseChange_iff E s x).1 hm) hξ
       have := T.toLinSys.eval₂_coords_eq_zero (LinSys.toBase x : T.Pt (AlgebraicClosure E)).1 hp
       rwa [LinSys.baseHom_ptOver] at this

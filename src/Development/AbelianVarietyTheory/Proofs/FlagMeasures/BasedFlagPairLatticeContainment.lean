@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianLatticeLoca
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalOrbitLatticesInfFrameSpanEq
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TotallyPositiveOrthogonalOfTwoFlagExtendedSpaces
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OrthogonalDecompositionLocalNondegenerate
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CompletionLatticeInfOrthEqOrthPartStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CompletionLatticeInfOrthEqOrthPart
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsNatSmulMemOfMemSpan
 
 noncomputable section
@@ -119,7 +119,7 @@ theorem localForm_zero_right₂ (Z : LocDat D) (p : PlF D) (x : Vp D p) : LocFac
 
 theorem mem_of_loc (Z : LocDat D) (Λ : LV D) (hΛ : Submodule.IsLattice D.host.E Λ) (x : (VS D).V)
     (h : ∀ p, baseChange₂ D p x ∈ lattice₂ D Z.M p Λ) : x ∈ Λ := by
-  have := ((GlobalTheory.T.numberField_lattice_determined_by_local_lattices (GlobalTheory.HL.placesOf Z) (nV D) (LatLoc.cL Λ) (LatLoc.isLattice_map _ _ hΛ)).1
+  have := ((_root_.GlobalTheory.HL.PlacesRec.lattice_local (GlobalTheory.HL.placesOf Z) (nV D) (LatLoc.cL Λ) (LatLoc.isLattice_map _ _ hΛ)).1
     (LatLoc.cE D x)).2 (fun p => by rw [← LatLoc.baseChange_eq, ← LatLoc.localLattice_eq]; exact h p)
   obtain ⟨x', hx', he⟩ := Submodule.mem_map.1 this
   have : x' = x := (LatLoc.cE D).injective he
@@ -152,7 +152,7 @@ theorem mem_int_of_loc (Z : LocDat D) (z : D.host.E) (hz : ∀ p, (D.s.atP p).ι
     rw [eq_top_iff]; intro v _
     have : v = v 0 • (fun _ : Fin 1 => (1 : D.host.E)) := by funext i; fin_cases i; simp
     rw [this]; exact Submodule.smul_mem _ _ (Submodule.subset_span h1)
-  have key := ((GlobalTheory.T.numberField_lattice_determined_by_local_lattices (GlobalTheory.HL.placesOf Z) 1 Λ1 hL).1 (fun _ => z)).2 (fun p => by
+  have key := ((_root_.GlobalTheory.HL.PlacesRec.lattice_local (GlobalTheory.HL.placesOf Z) 1 Λ1 hL).1 (fun _ => z)).2 (fun p => by
     have hg : (GlobalTheory.HL.placesOf Z).bc p (fun _ : Fin 1 => (1 : D.host.E)) ∈ (GlobalTheory.HL.placesOf Z).lat p Λ1 :=
       Submodule.subset_span ⟨_, h1, rfl⟩
     have e : (GlobalTheory.HL.placesOf Z).bc p (fun _ : Fin 1 => z) = (⟨(D.s.atP p).ιE z, hz p⟩ : ((GlobalTheory.HL.placesOf Z).L p).O) •
@@ -364,7 +364,7 @@ theorem dual_part : ∀ (D : D7) (X : HidaSetting D) (Y : Full X) (u u' : D.what
       rw [← himg]; exact Submodule.mem_map_of_mem (Submodule.subset_span ⟨_, hvΛ i, rfl⟩)
     have hto : ∀ x ∈ U, LocFacts₂ Z.M p (h (baseChange₂ D p (i : (VS D).V))) (baseChange₂ D p x) = 0 := fun x hx => by
       rw [← hfix x hx, hun]; exact horthW _ (hvW i) x hx
-    have htK := GlobalTheory.T.completion_lattice_inf_orth_eq_orth_part D Z U hdec (hloc0 Z) Λ hΛ p _ ht hto
+    have htK := _root_.GlobalTheory.Unfold.OrthLoc.mem_localLattice_inf_orthogonal D Z U hdec (hloc0 Z) Λ hΛ p _ ht hto
     generalize h (baseChange₂ D p (i : (VS D).V)) = t at htK
     induction htK using Submodule.span_induction with
     | mem s hs =>

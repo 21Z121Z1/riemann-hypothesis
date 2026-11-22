@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.HasLevelStd
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasQIff
 import Development.AbelianVarietyTheory.Definitions.Divisors.JetAnalytic
 import Development.AbelianVarietyTheory.Definitions.Divisors.ZetaActRefl
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertEisensteinCoefficientValuationBoundStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertEisensteinCoefficientValuationBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedHilbertLatticeContainsAndCoordinateSize
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertLatticeTwistHasLevel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModularGroupRowVecAndConjRightActions
@@ -36,6 +36,6 @@ theorem main : EisExp → ∀ (F : Type) [Field F] [NumberField F] [IsTotallyRea
   have hQρ : QAll (Sz l lam ρ) N (wB N (vmul y α)) := by
     obtain ⟨a, ha, hp⟩ := hQ
     exact ⟨a, ha, fun n => hS.2.2.2.1 0 ρ _ hρ0 (hp n)⟩
-  exact GlobalTheory.T.hilbertEisenstein_coefficient_valuation_bound hE F hf s N _ hs hN hTw z hz l lam κ (wB N (vmul y α)) M b e ρ₀ ρ he hze hlM hmem hsz hρ hQρ
+  exact _root_.GlobalTheory.HilbFam.sz_hfun_coef hE F hf s N _ hs hN hTw z hz l lam κ (wB N (vmul y α)) M b e ρ₀ ρ he hze hlM hmem hsz hρ hQρ
 
 end GlobalTheory.HilbFam.SizeGL

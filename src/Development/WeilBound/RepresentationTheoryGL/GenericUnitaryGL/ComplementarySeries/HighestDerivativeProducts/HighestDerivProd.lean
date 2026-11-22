@@ -9,7 +9,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PsiGpCommutatio
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PhiGpCommutationHolds
 import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.HighestDerivativeProducts.IsSmoothCharDpowM
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PhiPgCommutationHolds
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PhiPgRankZeroHoldsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PhiPgRankZeroHolds
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeibnizOrderOfExactSequences
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HighestDerivativeOfProduct
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.BernsteinZelevinskyGL.TopAdm
@@ -24,6 +24,6 @@ namespace GlobalTheory.RgGu.Leib.Hand
 theorem leibnizOrd (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] :
     LeibnizOrd k :=
   _root_.GlobalTheory.CompanionTheory.LeibOrd.Main.leibnizOrd_of_parts k (_root_.GlobalTheory.CompanionTheory.BZRes.resSeq k) (_root_.GlobalTheory.CompanionTheory.RgGu.PsiGP.psiGP k) (_root_.GlobalTheory.CompanionTheory.LeibPhi.phiGP k) (GlobalTheory.CompanionTheory.BZPsiPG.Hand.psiPG k) (GlobalTheory.CompanionTheory.BZPhiPG.phiPG k)
-    (GlobalTheory.T.phi_pg_rank_zero_holds k)
+    (_root_.GlobalTheory.CompanionTheory.MirLevi.phiPG0_holds k)
 
 end GlobalTheory.RgGu.Leib.Hand

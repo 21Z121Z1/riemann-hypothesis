@@ -25,11 +25,11 @@ theorem stepC_of (hE1 : PositivityTheory.PfSWUS.HMass.OneVecBinary) (hM : MassCA
   haveI hBi : BorelSpace (Ainf F) := ⟨rfl⟩
   haveI hBv : ∀ v, BorelSpace (Fv F v) := fun v => ⟨rfl⟩
   have hta : algebraMap F E t ≠ 0 := by simpa using ht
-  obtain ⟨hdetb, hhermb, -, -⟩ := GlobalTheory.T.block_one_det_hermitian_gram F E σ hCM M J t
+  obtain ⟨hdetb, hhermb, -, -⟩ := _root_.GlobalTheory.CompanionTheory.SW.BlockAlg.block_alg F E σ hCM M J t
   have hJ' : IsHermND σ (blockOne (algebraMap F E t) J) :=
     ⟨hhermb hJ.1, by rw [hdetb]; exact mul_ne_zero hta hJ.2⟩
   have hdet' : (blockOne (algebraMap F E t) T).det ≠ 0 := by
-    rw [(GlobalTheory.T.block_one_det_hermitian_gram F E σ hCM M T t).1]; exact mul_ne_zero hta hdet
+    rw [(_root_.GlobalTheory.CompanionTheory.SW.BlockAlg.block_alg F E σ hCM M T t).1]; exact mul_ne_zero hta hdet
 
   obtain ⟨⟨μ₁, hμ₁⟩, hFV⟩ := _root_.GlobalTheory.CompanionTheory.SW.finVol_unitaryGroup F E σ hCM M J hJ
   obtain ⟨⟨𝓕₁, h𝓕₁⟩, -⟩ := hFV μ₁ hμ₁
@@ -50,7 +50,7 @@ theorem stepC_of (hE1 : PositivityTheory.PfSWUS.HMass.OneVecBinary) (hM : MassCA
       c v • coordK (Fv F v) b (lam v) := fun v => by
     obtain ⟨h1, h2, h3, h4, -⟩ := hLv v
     exact hcv v _ (_root_.GlobalTheory.CompanionTheory.SW.coord_measures_haar F E σ hCM (Fv F v) d b (lam v) (hlam v).1).1
-  obtain ⟨-, -, -, -, -, -, -, S₃, hS₃⟩ := GlobalTheory.T.unit_product_closure_properties F cinf 1 c (fun _ => 1) hc ⟨by simp, by simp⟩
+  obtain ⟨-, -, -, -, -, -, -, S₃, hS₃⟩ := _root_.GlobalTheory.CompanionTheory.SW.UnitProdAlg.main F cinf 1 c (fun _ => 1) hc ⟨by simp, by simp⟩
 
   let T1 : Matrix (Fin 1) (Fin 1) E := fun _ _ => algebraMap F E t
   have hT1 : ∀ a b, σ (T1 b a) = T1 a b := fun a b => by simp [T1]

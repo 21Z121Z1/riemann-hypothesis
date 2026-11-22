@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCoset
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermInvariantsIndependentOfWitnesses
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SpanToZero
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianFrameCoordinatesTransportInnerLattices
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FramePairCoordinatesTransportInnerLatticesStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FramePairCoordinatesTransportInnerLattices
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermOverFrameCoordinates
 open ValuativeRel Formalism.MainNotions.S Formalism.MainNotions.S.Loc GlobalTheory.HL
 open scoped Pointwise ENNReal Classical
@@ -97,7 +97,7 @@ theorem terms_correspond : ∀ {F : Type} [Field F] [ValuativeRel F] [Topologica
   haveI := hM.char0
   obtain ⟨hth, hN, hN', -, hpsi, -⟩ := GlobalTheory.HL.CoordUnip.transport M hM H r k P S c
   obtain ⟨-, iA, oA, sA⟩ := _root_.GlobalTheory.HL.CoordInnerFst.transport M hM H r k P S c
-  obtain ⟨-, iB, oB, sB⟩ := GlobalTheory.T.framePairCoordinates_transport_innerLattices M hM H r k P S c
+  obtain ⟨-, iB, oB, sB⟩ := _root_.GlobalTheory.HL.CoordInnerSnd.transport M hM H r k P S c
   have T1 := isTermW_iff M hM H r k P S c
   have hsurj : ∀ Λ : Submodule M.L.O S.V, ∃ Λ₀, c.lat Λ₀ = Λ := by
     intro B

@@ -14,15 +14,15 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryDiagonalFact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryLeviNormalizesUnipotentRadical
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryBlockTriangularLeviPartUnitary
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryUnipotentRadicalSplittingOfLeviPartStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryDominantDiagonalConjugationContractsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryLeviCentreDiagonalConjugationEqStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryDominantDiagonalConjugationContracts
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryLeviCentreDiagonalConjugationEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryCellSumLeviReductionOfStepsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceZeroIntegersModUniformizerCardOfCardSq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardIntegersModUniformizerEqQSq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryRankTwoRootIndexOfTraceZeroCardStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryRankThreeRootIndexOfCardsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryRankThreeRootIndexOfCards
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryFourLeviGL2RootIndexOfCardSqStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryFourLeviGL2CartanDoubleCosetsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryFourLeviGL2CartanDoubleCosets
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitarySatakeCoeffAdjacentSwapOfLeviReductionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitarySatakeCoeffLastSignChangeOfLeviReduction
 
@@ -155,11 +155,11 @@ theorem satWeyl : SatWeyl := by
   have hr : RankOne := _root_.GlobalTheory.SatakeWeyl.rankOne_of_steps _root_.GlobalTheory.SatakeWeyl.descent _root_.GlobalTheory.SatakeWeyl.cellInv_holds
     (_root_.GlobalTheory.SatakeWeyl.chainSum_of_unimod (_root_.GlobalTheory.SatakeWeyl.unimod_of_unimodFin _root_.GlobalTheory.SatakeWeyl.unimodFin) _root_.GlobalTheory.SatakeWeyl.chainIndex)
   have hl : LeviStep := GlobalTheory.T.unitaryCellSumLeviReduction_of_steps hr _root_.GlobalTheory.SatakeWeyl.embExists _root_.GlobalTheory.SatakeWeyl.embMem _root_.GlobalTheory.SatakeWeyl.embTorus _root_.GlobalTheory.SatakeWeyl.leviRad
-    (GlobalTheory.T.unitaryUnipotentRadicalSplitting_of_leviPart _root_.GlobalTheory.SatakeWeyl.leviPart) GlobalTheory.T.unitary_dominant_diagonal_conjugation_contracts GlobalTheory.T.unitary_levi_centre_diagonal_conjugation_eq
+    (GlobalTheory.T.unitaryUnipotentRadicalSplitting_of_leviPart _root_.GlobalTheory.SatakeWeyl.leviPart) _root_.GlobalTheory.SatakeWeyl.ContractProof.contract _root_.GlobalTheory.SatakeWeyl.TorusConjProof.torusConj
   have hi : IntIndex := _root_.GlobalTheory.SatakeWeyl.intIndex
   have ht : TraceZeroIndex := _root_.GlobalTheory.SatakeWeyl.traceZeroIndex_of_intIndex hi
-  exact satWeyl_of_coeff (GlobalTheory.T.unitarySatakeCoeff_adjacentSwap_of_leviReduction hl (GlobalTheory.T.unitaryFourLeviGL2RootIndex_of_cardSq hi) GlobalTheory.T.unitaryFourLeviGL2_cartan_doubleCosets)
-    (_root_.GlobalTheory.SatakeWeyl.coeffNeg_of_leviStep hl (GlobalTheory.T.unitaryRankTwoRootIndex_of_traceZeroCard ht) (GlobalTheory.T.unitaryRankThreeRootIndex_of_cards hi ht))
+  exact satWeyl_of_coeff (GlobalTheory.T.unitarySatakeCoeff_adjacentSwap_of_leviReduction hl (GlobalTheory.T.unitaryFourLeviGL2RootIndex_of_cardSq hi) _root_.GlobalTheory.SatakeWeyl.Four.cartanFour)
+    (_root_.GlobalTheory.SatakeWeyl.coeffNeg_of_leviStep hl (GlobalTheory.T.unitaryRankTwoRootIndex_of_traceZeroCard ht) (_root_.GlobalTheory.SatakeWeyl.Heis.indexThree hi ht))
 
 end GlobalTheory.SatakeWeyl
 

@@ -2,12 +2,12 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HermitianBlockInvariantsIffIsometry
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitaryOrbitalDescent
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitaryActionHermitianInvariantsTransitiveStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitaryActionHermitianInvariantsTransitive
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetRallisOrbitalIntegralsInvariantLocallyCon
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FourierMatch
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetRallisMatchOfDenseSeparable
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetRallisLinearOrbitalIntegralDescent
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFactsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFacts
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PartialFourierPreservesTestFixesUnit
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSelfDualMeasuresAndAbsKScale
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEtaleHermitianPairIsGenCompanion
@@ -31,9 +31,9 @@ theorem fourierMatchAt_of_weil (hW : WeilEt) (hR : RankOne) (hG : GammaOne) {r :
     simp only [Et.invK, ha₀']
   have hu₀ : IsUnit a₀ := (hmom a₀).2.mp (by rw [hinv]; exact ha)
   obtain ⟨⟨m⟩, -⟩ := _root_.GlobalTheory.JR.exists_meas_and_scale F E A ψ hψ
-  obtain ⟨-, -, -, -, -, -, ⟨S, -, hS⟩, -⟩ := GlobalTheory.T.etaleHermitianPair_structure_facts F E A
+  obtain ⟨-, -, -, -, -, -, ⟨S, -, hS⟩, -⟩ := _root_.GlobalTheory.JR.EtFacts.main F E A
   obtain ⟨φ', κ, hφ', hlin⟩ := _root_.GlobalTheory.JR.LinDesc.descent F E A ψ hψ m r M τ a.1 a.2.2 hτ f' hf'
-  obtain ⟨-, -, huniq, -⟩ := GlobalTheory.T.unitary_action_hermitian_invariants_transitive F E r
+  obtain ⟨-, -, huniq, -⟩ := _root_.GlobalTheory.JR.HermInv.herm_invariants F E r
   obtain ⟨-, horbU, -, -⟩ := _root_.GlobalTheory.JR.OrbLC.orbital_integrals_invariant_locally_constant F E r M
   obtain ⟨hL11a, hL11b⟩ := _root_.GlobalTheory.EtIsom.herm_iff_isom F E A r τ a.1 a.2.2 hτ
   have key : ∀ x : A.Kˣ, ∃ φx : A.L → ℂ, IsTest φx ∧

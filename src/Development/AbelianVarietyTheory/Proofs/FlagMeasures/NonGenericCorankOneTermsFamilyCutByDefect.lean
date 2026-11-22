@@ -1,6 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.FamilyGroupSumFactorsWeightAmplitude
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NonGenericTermClassesEqRowsInDoubleCosetStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NonGenericTermClassesEqRowsInDoubleCoset
+import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.NGData
+import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.TermLoc
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LocClosed
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NonGenericFamilyClassesDetermineRows
 
 noncomputable section
@@ -17,6 +20,6 @@ theorem famNG_holds : FamNG := by
   intro Cg cb Cw cT CT C0
   refine ⟨0, 0, fun C' Cl _ _ D large₂ X Y u u' hC => ?_⟩
   have hT : ConcTie X Y := hC.2.2
-  exact ⟨rfl, GlobalTheory.T.nonGeneric_term_classes_eq_rows_in_double_coset D X Y u u' hT, (GlobalTheory.NGClass.ngClass_rows D X Y u u' hT).2.1⟩
+  exact ⟨rfl, _root_.GlobalTheory.Unfold.RowCls.clsRow_ngSet D X Y u u' hT, (GlobalTheory.NGClass.ngClass_rows D X Y u u' hT).2.1⟩
 
 end GlobalTheory.SnFam

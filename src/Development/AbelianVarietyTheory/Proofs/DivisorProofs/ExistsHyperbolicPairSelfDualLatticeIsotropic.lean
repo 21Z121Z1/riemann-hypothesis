@@ -2,9 +2,9 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntegerAddConjEqOneOfFormallyUnramified
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSectionHermitianLinearFormFgModule
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsotropicDualPartnerSelfDualHermitianLattiStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsotropicDualPartnerSelfDualHermitianLatti
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfDualHermitianLatticeExistsNonzeroPairing
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitEmbeddingIntegralAndMaximalIdealStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitEmbeddingIntegralAndMaximalIdeal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsScaleFractionalIdealIntegralAvoidMaximals
 
 open scoped TensorProduct Matrix
@@ -65,7 +65,7 @@ theorem exists_pair : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Numb
     have : f z0 ∈ I₀ := Submodule.mem_map_of_mem hz0L
     rw [h, Submodule.mem_bot] at this
     exact hz0 this
-  have hT4 := fun (v : B.P) (b : Bool) => GlobalTheory.T.splitEmbedding_integral_and_maximalIdeal F E v.1 (if b then (B.τ v).comp σ else B.τ v)
+  have hT4 := fun (v : B.P) (b : Bool) => _root_.GlobalTheory.adicEmbedding_integral_place F E v.1 (if b then (B.τ v).comp σ else B.τ v)
   choose hle Q hQmax hQ using hT4
   obtain ⟨s, hs0, hsI, hsQ⟩ := _root_.GlobalTheory.exists_scale_integral_not_le_maximal E I₀ hI₀fg hI₀ne (B.P × Bool) (fun p => Q p.1 p.2) (fun p => hQmax _ _)
   set x' : Fin n → E := σ s • x with hx'def
@@ -74,7 +74,7 @@ theorem exists_pair : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Numb
   have hx'x' : form σ Y.J x' x' = 0 := by
     rw [hfx', hx'def, form_smul_left, hxx, mul_zero, mul_zero]
   obtain ⟨y₀, hy₀1, hy₀L⟩ := _root_.GlobalTheory.FormSection.exists_section F E σ n Y.J Y.L hfg x' ⟨z0, hz0L, by rw [hfx']; exact mul_ne_zero hs0 hz0⟩
-  obtain ⟨y, hyy, hx'y, hL⟩ := GlobalTheory.T.exists_isotropic_dual_partner_selfDual_hermitianLattice F E σ hσ n Y.J Y.L hY.herm hY.dual θ hθ x' y₀ hx'x' hy₀1 hy₀L
+  obtain ⟨y, hyy, hx'y, hL⟩ := _root_.GlobalTheory.TraceCorrection.exists_pair F E σ hσ n Y.J Y.L hY.herm hY.dual θ hθ x' y₀ hx'x' hy₀1 hy₀L
   have hint : ∀ z ∈ Y.L, IsIntegral ℤ (form σ Y.J z x') := fun z hz => by
     rw [hfx']; exact hsI _ (Submodule.mem_map_of_mem hz)
   have hx'L : x' ∈ Y.L := (hY.dual x').2 fun w hw => by

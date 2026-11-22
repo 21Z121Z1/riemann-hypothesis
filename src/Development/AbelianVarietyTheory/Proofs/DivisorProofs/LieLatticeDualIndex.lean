@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmulMemOfIsIntegral
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianAdjointProperties
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianAdjointMemEndLattice
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EndLatticeTraceIntegralStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EndLatticeTraceIntegral
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemEndLatticeOfTraceDualStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEndLatticeTraceOneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralOfTraceIntegralUnramified
@@ -46,7 +46,7 @@ theorem trProj_mem_dualLie (hr : r ≠ 0) {G : Matrix (Fin r) (Fin r) E} {Λ : S
     simp only [trProj, Matrix.mul_sub, Matrix.mul_smul, Matrix.mul_one, trace_sub, trace_smul, hX.1,
       smul_zero, sub_zero]
   rw [h1]
-  exact GlobalTheory.T.end_lattice_trace_integral E r G Λ _ hS (mul_mem_endLat hX.2.2 hZ.2)
+  exact _root_.GlobalTheory.LieDisc.trace_integral_main E r G Λ _ hS (mul_mem_endLat hX.2.2 hZ.2)
 
 end GlobalTheory.LieDisc
 
@@ -109,7 +109,7 @@ theorem exists_skewLat_trProj_eq (hr : r ≠ 0) (hU : Unr E) {G : Matrix (Fin r)
 
   have hb : ∀ Z ∈ endLat Λ, IsIntegral ℤ ((Y * Z).trace + c₀ * Z.trace) := by
     intro Z hZ
-    have hZt := GlobalTheory.T.end_lattice_trace_integral E r G Λ Z hS hZ
+    have hZt := _root_.GlobalTheory.LieDisc.trace_integral_main E r G Λ Z hS hZ
     have hm : Z - Z.trace • Z₁ ∈ endLat Λ := (endLat Λ).sub_mem hZ (smul_mem_endLat hZt hZ₁)
     have h0 : (Z - Z.trace • Z₁).trace = 0 := by
       rw [trace_sub, trace_smul, hZ₁1, smul_eq_mul, mul_one, sub_self]
@@ -138,7 +138,7 @@ theorem exists_skewLat_trProj_eq (hr : r ≠ 0) (hU : Unr E) {G : Matrix (Fin r)
     have e : ((Y + c • 1) * Z).trace = ((Y * Z).trace + c₀ * Z.trace) - s * t * Z.trace := by
       rw [Matrix.add_mul, trace_add, Matrix.smul_mul, Matrix.one_mul, trace_smul, smul_eq_mul, hcdef]; ring
     rw [e]
-    exact (hb Z hZ).sub ((hs.mul ht).mul (GlobalTheory.T.end_lattice_trace_integral E r G Λ Z hS hZ))
+    exact (hb Z hZ).sub ((hs.mul ht).mul (_root_.GlobalTheory.LieDisc.trace_integral_main E r G Λ Z hS hZ))
   · have hrE : (r : E) ≠ 0 := by exact_mod_cast hr
     simp only [trProj, trace_add, hY.1, trace_smul, trace_one, Fintype.card_fin, smul_eq_mul, zero_add]
     rw [mul_div_assoc, div_self hrE, mul_one, add_sub_cancel_right]
@@ -174,7 +174,7 @@ theorem trProj_mem_lieLat_iff (hr : r ≠ 0) {G : Matrix (Fin r) (Fin r) E} {Λ 
       simpa [trProj] using this
     obtain ⟨Z₁, hZ₁, hZ₁1⟩ := GlobalTheory.T.exists_end_lattice_trace_one E r G Λ (Nat.one_le_iff_ne_zero.2 hr) hS
     have hi : IsIntegral ℤ (Z.trace / r) := by
-      have := GlobalTheory.T.end_lattice_trace_integral E r G Λ _ hS (mul_mem_endLat hm hZ₁)
+      have := _root_.GlobalTheory.LieDisc.trace_integral_main E r G Λ _ hS (mul_mem_endLat hm hZ₁)
       rwa [Matrix.smul_mul, Matrix.one_mul, trace_smul, hZ₁1, smul_eq_mul, mul_one] at this
     refine ⟨Z.trace / r, ⟨hi, cc_trace_div (cc_trace_of_isSkew hS.1 hS.2.1 hZ.1)⟩, ?_⟩
     simp only [AddMonoidHom.coe_mulLeft]
@@ -212,7 +212,7 @@ theorem relIndex_lieLat_dualLie (hr : r ≠ 0) (hU : Unr E) {G : Matrix (Fin r) 
     (trProjHom G Λ).codRestrict (dualLie G Λ) fun Z => trProj_mem_dualLie hr hS Z.2
   let g : skewLat G Λ →+ imLat E :=
     (traceHom G Λ).codRestrict (imLat E) fun Z =>
-      ⟨GlobalTheory.T.end_lattice_trace_integral E r G Λ _ hS Z.2.2, cc_trace_of_isSkew hS.1 hS.2.1 Z.2.1⟩
+      ⟨_root_.GlobalTheory.LieDisc.trace_integral_main E r G Λ _ hS Z.2.2, cc_trace_of_isSkew hS.1 hS.2.1 Z.2.1⟩
   have hf : Function.Surjective f := by
     rintro ⟨Y, hY⟩
     obtain ⟨Z, hZ, e⟩ := exists_skewLat_trProj_eq hr hU hS hY

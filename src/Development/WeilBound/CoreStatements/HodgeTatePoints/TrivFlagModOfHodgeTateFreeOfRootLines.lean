@@ -13,7 +13,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeComponentInteg
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChartRingMemAfterMonomialScaling
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeChartTransitionIntegral
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CpElementDividesPrimeSq
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NumberFieldIntegersInIntegrallyClosedStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NumberFieldIntegersInIntegrallyClosed
 open CategoryTheory AlgebraicGeometry NumberField MvPolynomial GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.HT ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.NumbersDVR.Bundles
 
 namespace PositivityTheory.HtPt.Ge
@@ -46,7 +46,7 @@ theorem triv_flag_mod_of_hodge_tate_free_of_root_lines (hb : FarguesHodgeTate �
   have hint : ∀ (s : {s : ∀ k, J k // mseg y s ≠ 0}) (σ' : E →+* Ω) (a : 𝓞 E), σ' (a : E) ∈ chartRing o (mseg y) s.1 := by
     intro s σ' a
     obtain ⟨hN, hIC, hFR, -⟩ := hA s.1 s.2
-    obtain ⟨b, hb⟩ := GlobalTheory.T.number_field_integers_in_integrally_closed (chartRing o (mseg y) s.1) Ω E σ' a
+    obtain ⟨b, hb⟩ := _root_.GlobalTheory.CompanionTheory.Ar.IntEmb.ringOfIntegers_embedding_mem_range (chartRing o (mseg y) s.1) Ω E σ' a
     rw [← hb]; exact b.2
   have hcs : ∀ s : {s : ∀ k, J k // mseg y s ≠ 0}, ∃ i, (Dc s).IsDualMap σ (dd s) (𝔐.R p - 2) i ∧ (Dc s).ExactMod σ (𝔐.R p - 2) i ∧ (∀ x, (Dc s).q σ x ∈ (Dc s).omHT σ) ∧ ∀ x ∈ (Dc s).om, ((p : Ω) ^ 2) • x ∈ (Dc s).om' := by
     intro s

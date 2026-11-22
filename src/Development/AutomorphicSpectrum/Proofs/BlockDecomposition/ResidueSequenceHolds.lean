@@ -1,20 +1,20 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.LeibnizOrders.LeibnizOrd
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EGPgTrueEqLastIff
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SectionConstructedFromDoubleCosetStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SectionConstructedFromDoubleCoset
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InducedFunctionFromCompactData
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactTransversalDoubleCosetStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SupportInducedFunctionClosedStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SupportInducedFunctionClosed
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SurjectiveIntertwinerQuotientEquivStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BijectiveIntertwinerSubrepEquivStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClosedDoubleCosetCriterion
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OpenDoubleCosetCriterion
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalSectionClosedCellStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalSectionOpenCellStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalSectionOpenCell
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicClosed
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemHPGIffConjugateParabolicStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClosedCellInducingCharacterStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OpenCellInducingCharacterStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemHPGIffConjugateParabolic
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClosedCellInducingCharacter
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OpenCellInducingCharacter
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothParabolicInductionProductStatement
 
 noncomputable section
@@ -79,7 +79,7 @@ theorem exists_lift [NonarchimedeanGroup G] {Q P : Subgroup G} {x : G} (hLS : Lo
     rw [e]
     push_cast
     group
-  obtain ⟨K, hK, hKY, hWD⟩ := GlobalTheory.T.section_constructed_from_double_coset hLS σ hσ φ' hφ' _ hopen hinv C hC Y hY (fun c _ => hxY c)
+  obtain ⟨K, hK, hKY, hWD⟩ := _root_.GlobalTheory.CompanionTheory.BZRes.exists_openSubgroup_consistent hLS σ hσ φ' hφ' _ hopen hinv C hC Y hY (fun c _ => hxY c)
   obtain ⟨f, h1, h2, h3, h4⟩ := _root_.GlobalTheory.CompanionTheory.BZRes.TwoOrbit.exists_equivariant_extension σ φ' C K hWD hsupp
   refine ⟨⟨⟨f, fun h g => h1 h g⟩, ?_⟩, ?_, ?_⟩
   · refine mem_smoothPart_of_nhds ?_
@@ -182,7 +182,7 @@ theorem two_orbits [NonarchimedeanGroup G] {Q P : Subgroup G} {w : G}
     rw [this, map_zero]
   have mem2 : ∀ f : S.toSubmodule, resInd σ H₂ hH₂ τ₂ E₂ hE₂ f.1 ∈ cIndSpace H₂ τ₂ := fun f => by
     refine resInd_mem_cInd hw hP B₀ hB hB1 K₀ hK₀ hIw σ H₂ hH₂ τ₂ E₂ hE₂ f.1 {g | f.1.1.1 g ≠ 0}
-      (GlobalTheory.T.support_induced_function_closed σ f.1) ?_ ?_ (fun p hp => hp)
+      (_root_.GlobalTheory.CompanionTheory.BZRes.isClosed_support_smooth_ind σ f.1) ?_ ?_ (fun p hp => hp)
     · intro g hg
       exact (hcov g).resolve_left fun h => hg (vanish f g h)
     · intro q hq g hg
@@ -287,13 +287,13 @@ theorem core0 (i j : ℕ) (h₀ : (i + 1) + (j + 1) = i + (j + 1) + 1) (h₁ : (
   have ho := (GlobalTheory.SplitFlip.isOpen_KO (k := k) (n := Fin (i + (j + 1) + 1))).mem_nhds (one_mem _)
   have ht : 0 < j + 1 := by omega
   refine two_orbits (Q := parab k (two (stdSum h₀))) (P := Mir k (i + (j + 1))) (w := wGL k h₀)
-    (GlobalTheory.T.local_section_closed_cell k h₀ ht) (GlobalTheory.T.local_section_open_cell k h₀) (_root_.GlobalTheory.CompanionTheory.BZRes.MirClosed.isClosed_mirabolic k _)
+    (GlobalTheory.T.local_section_closed_cell k h₀ ht) (_root_.GlobalTheory.CompanionTheory.BZRes.locSec_wGL k h₀) (_root_.GlobalTheory.CompanionTheory.BZRes.MirClosed.isClosed_mirabolic k _)
     _ GlobalTheory.SplitFlip.isCompact_KO ho
     _ GlobalTheory.SplitFlip.isCompact_KO (fun g => ?_)
     (orbit_cover k h₀ ht) (isClosed_orbit k h₀ ht) (orbits_disjoint k h₀ ht)
     (sQ h₀ π₁ π₂) (GlobalTheory.T.smooth_parabolic_induction_product h₀ _ _ s₁ s₂)
-    (HGPg k h₁) (fun p => ?_) _ (tE V W) (GlobalTheory.T.closed_cell_inducing_character h₁ π₁ π₂)
-    (HPG k i (j + 1)) (GlobalTheory.T.mem_HPG_iff_conjugate_parabolic k h₀) _ (tE V W) (GlobalTheory.T.open_cell_inducing_character h₀ π₁ π₂)
+    (HGPg k h₁) (fun p => ?_) _ (tE V W) (_root_.GlobalTheory.CompanionTheory.BZRes.hgp_twist_tE h₁ π₁ π₂)
+    (HPG k i (j + 1)) (_root_.GlobalTheory.CompanionTheory.BZRes.mem_HPG_iff_conj_mem_parab k h₀) _ (tE V W) (_root_.GlobalTheory.CompanionTheory.BZRes.open_orbit_twist h₀ π₁ π₂)
   · obtain ⟨p, c, hc, e⟩ := GlobalTheory.SmGL.Stages.iwasawa_two (stdSum h₀) g
     exact ⟨p, p.2, c, hc, e⟩
   · rw [one_mul, inv_one, mul_one]

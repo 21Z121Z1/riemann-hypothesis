@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegerAddConjEqOneUnramifiedCm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemLowLat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsotropicIndefiniteSkewHermitianCm
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfDualSkewHermitianLatticeSplitsHyperbolicPlanStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfDualSkewHermitianLatticeSplitsHyperbolicPlan
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRescalePrimitiveInLatticeAtSplitPrimes
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFractionalIdealSmulMemLattice
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLatticeSublatticePullbackAlongEmbedding
@@ -120,7 +120,7 @@ theorem plane_skew : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Numbe
   obtain ⟨θ, hθ⟩ := GlobalTheory.LatVac.exists_integer_add_conj_eq_one_of_isGood σ B hB
   obtain ⟨x₀, hx₀, hxx₀⟩ := _root_.GlobalTheory.PlaneSkew.exists_isotropic_skew F E σ B hCM (n₁ + 2) Y.J r s hY.skew hY.sig hr hs (by omega)
   obtain ⟨y₀, ι, hxy₀, hyy₀, horth₀, hind₀, hsplit₀⟩ :=
-    GlobalTheory.T.selfDualSkewHermitianLattice_splits_hyperbolicPlane F E σ hCM θ hθ n₁ Y.J Y.L hY.skew hY.lat hY.dual x₀ hx₀ hxx₀
+    _root_.GlobalTheory.PlaneSkewSplit.split_global F E σ hCM θ hθ n₁ Y.J Y.L hY.skew hY.lat hY.dual x₀ hx₀ hxx₀
   have hy₀ : y₀ ≠ 0 := by
     rintro rfl
     rw [show (0 : Fin (n₁ + 2) → E) = (0 : E) • x₀ by simp, form_smul_right, map_zero, zero_mul] at hxy₀

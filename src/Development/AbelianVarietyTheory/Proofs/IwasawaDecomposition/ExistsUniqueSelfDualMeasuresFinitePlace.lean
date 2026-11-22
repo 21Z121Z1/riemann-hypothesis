@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.T2SpaceNumberFieldInfiniteAdeles
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalComponentsNontrivialAdelicCharacterStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalComponentsNontrivialAdelicCharacter
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSelfDualOfDualSubgroups
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSmallDualLattices
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.AdditiveCharConductorExists
@@ -323,7 +323,7 @@ theorem existsUnique_selfDual_finite : ∀ (F E : Type) [Field F] [NumberField F
   have hc : Continuous χ :=
     hψ.1.comp (Continuous.prodMk continuous_const (GlobalTheory.AdelicU.continuous_singleFin v))
   have hu : ∀ t, ‖χ t‖ = 1 := fun t => hψ.2.1 _
-  have hne : ∃ t, χ t ≠ 1 := (GlobalTheory.T.localComponents_nontrivial_adelic_character F ψ hψ).1 v
+  have hne : ∃ t, χ t ≠ 1 := (_root_.GlobalTheory.GaugeEx.CharLoc.char_local F ψ hψ).1 v
   refine ⟨existsUnique_of_bilin v χ hc hu hne (Fv F v) (LinearMap.mul _ _) (fun x y => mul_comm x y)
     (fun x hx => by simpa using hx 1), fun M J hJ => ?_⟩
   exact existsUnique_of_bilin v χ hc hu hne _ (bilin (Fv F v) σ J 1) (BR_symm _ h hJ) (eq_zero_of_BR _ h hJ)

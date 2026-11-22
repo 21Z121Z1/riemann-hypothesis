@@ -3,7 +3,7 @@ import Formalism.LocalToGlobal.ProjectiveLattices.BetaAtSymm
 import Formalism.LocalToGlobal.ProjectiveLattices.OneLtAbsNormReal
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.BetaAtAddLeftAndDiagEqTwoOrderStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.BetaAtAddLeftAndDiagEqTwoOrder
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.PsiCoordExistsUniqueUpToUnitLocalStatement
 open AlgebraicGeometry CategoryTheory Limits NumberField IsLocalRing
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor Formalism.L2.Pj
@@ -115,7 +115,7 @@ theorem real_pos_of_discrete {X ι : Type} [AddCommGroup X] [Fintype ι] (b : Mo
 theorem betaAt_pos : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRing R] [CharZero R] [IsDiscreteValuationRing R] (Dg : DegData R (maximalIdeal R)) (C : Type) [NormedField C] [IsUltrametricDist C] (f : R →+* C) (p : ℕ), 1 < p → (∀ a ∈ maximalIdeal R, ‖f a‖ < 1) → (∀ a, ‖f a‖ ≤ 1) → (∀ χ r, PsiCoord Dg.toPre χ r → f r ≠ 0) → ∃ (ι : Type) (_ : Fintype ι) (b : Module.Basis ι ℤ Dg.toPre.X), ∀ x : ι → ℝ, x ≠ 0 → 0 < ∑ i, ∑ k, x i * x k * betaAt Dg.toPre f p (b i) (b k) := by
   intro R _ _ _ _ _ Dg C _ _ f p hp hm hle hne
   have hic : IsIntegrallyClosed R := inferInstance
-  obtain ⟨hadd, hsq⟩ := GlobalTheory.T.betaAt_add_left_and_diag_eq_two_order R Dg C f p hic hle hne
+  obtain ⟨hadd, hsq⟩ := _root_.GlobalTheory.BetaAdd.main R Dg C f p hic hle hne
   have hco := GlobalTheory.T.psiCoord_exists_unique_up_to_unit_local R Dg hic
   obtain ⟨ϖ, hϖ⟩ := IsDiscreteValuationRing.exists_irreducible R
   have hp' : (1 : ℝ) < p := by exact_mod_cast hp

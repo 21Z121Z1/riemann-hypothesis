@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsAlgC
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGoodHermitianLineBundlePair
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGlobalGenerationAmplePairMultiples
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsShiftSmallSectionCountRegimeFromRadiusOne
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShiftSecondBundleNormPairNormBallGenerationStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShiftSecondBundleNormPairNormBallGeneration
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermPairSectionsGoodShiftSecondBundleNormPair
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSmallSectionAddMultipleAmpleAfterShift
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology
@@ -27,7 +27,7 @@ theorem exists_good_pair_twist : GlobalTheory.Published.ArCalc → AmpleHS → �
   obtain ⟨u₂, hu₂⟩ := _root_.GlobalTheory.HSNef.regime_shiftA hAC hHS k X p D hX P₀ hG.ample hG.nef.semiPos
   refine ⟨shiftA P₀ (max 0 (max u₁ u₂)), b, s, t, c₀ * (c₁ + 1), hL, ?_, ?_, ?_, ?_⟩
   · exact _root_.GlobalTheory.HSNef.good_shiftA k X p D hX P₀ b s t _ (le_max_left _ _) hG
-  · exact (GlobalTheory.T.shiftSecondBundleNormPair_norm_ball_generation k X p P₀ _).2.2 _ (hgen (c₁ + 1))
+  · exact (_root_.GlobalTheory.HSNef.shiftA_props k X p P₀ _).2.2 _ (hgen (c₁ + 1))
   · exact hu₂ _ (le_trans (le_max_right _ _) (le_max_right _ _))
   · exact hu₁ _ (le_trans (le_max_left _ _) (le_max_right _ _))
 

@@ -8,8 +8,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentVectorLiftsT
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegenerationTangentPointUniqueLift
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentRelationAdditiveScaling
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsPointOfIffThick
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusExtensionTangentCharacterValuesAdditiveStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusTangentCombinationCharacterValuesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusExtensionTangentCharacterValuesAdditive
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusTangentCombinationCharacterValues
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField MeasureTheory
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.GeometryOfNumbersTheory
 open GlobalTheory GlobalTheory.LieHt GlobalTheory.Cartier GlobalTheory.ThetaOnto GlobalTheory.MBModel GlobalTheory.KeyCl GlobalTheory.Ex GlobalTheory.MBLow GlobalTheory.SecJet
@@ -124,7 +124,7 @@ theorem main : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRing R] (D : Deg
     rw [βapp, ← bpull, (isTangent_iff y).1 h]
     exact (hz _).1)
   have xtan : ∀ j, IsTangent (x j) := fun j => (gtan _).1 (htan j)
-  have tor := GlobalTheory.T.torusTangentCombination_characterValues R D H Φ hΦ r (fun l χ => ((bX.repr χ l : ℤ) : R)) (fun l => x (Sum.inr l)) htor
+  have tor := _root_.GlobalTheory.MBLow.TorusVals.tanComb_vals R D H Φ hΦ r (fun l χ => ((bX.repr χ l : ℤ) : R)) (fun l => x (Sum.inr l)) htor
   have split : ∀ c : Fin n → R, tanComb c (fun k => x (σ k)) =
       tanComb (fun i => c (σ.symm (Sum.inl i))) (fun i => x (Sum.inl i)) *
         tanComb (fun l => c (σ.symm (Sum.inr l))) (fun l => x (Sum.inr l)) := by
@@ -174,7 +174,7 @@ theorem main : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRing R] (D : Deg
   have bw' : (Φ _ (w * (tanComb c₁ (fun i => x (Sum.inl i)))⁻¹)).b = DegPre.zeroT D (epsR R) := by
     rw [← βapp, map_mul, map_inv, hw₁, mul_inv_cancel]
     rfl
-  obtain ⟨lam, hlam⟩ := GlobalTheory.T.torusExtensionTangent_characterValues_additive R D _ ((gtan _).2 tw') bw'
+  obtain ⟨lam, hlam⟩ := _root_.GlobalTheory.MBLow.GtTanClass.main R D _ ((gtan _).2 tw') bw'
   have hl : ∀ χ, lam χ = ∑ l, lam (bX l) * ((bX.repr χ l : ℤ) : R) := by
     intro χ
     conv_lhs => rw [← bX.sum_repr χ]

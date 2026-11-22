@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Definitions.Degenerations.CompanionTheor
 import Development.AbelianVarietyTheory.Statements.SemistableTorsion.UTorsSt
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUniformisationTestOfGeometricTest
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsGeometricTestMapClassicalPoint
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SpecialFibreImageTestIndependentStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SpecialFibreImageTestIndependent
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IndepOfNestedSpecialFibreImages
 import Development.AbelianVarietyTheory.Definitions.Degenerations.IsNormalSchemeSp
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
@@ -48,7 +48,7 @@ theorem exists_test (hL : GlobalTheory.UT.LL) (o Ω : Type) [CommRing o] [Field 
   obtain ⟨τ, e, e₁, e₂⟩ := _root_.GlobalTheory.ZH.Clos.exists_core_test_of_geoTest hL o Ω S ρ M U₀ EE hB Q ex p y y₀ t c tm hS
   refine ⟨τ, fun x hx => ?_⟩
   exact (image_iff _ _ _ _ _ _ t.mod.cart.1 _ _ e e₁ e₂ x).trans
-    (GlobalTheory.T.specialFibre_image_test_independent hL o Ω S ρ M U₀ EE hB Q p y y₀ t c tm hS x hx)
+    (_root_.GlobalTheory.ZH.TestFib.image_special_fibre_iff hL o Ω S ρ M U₀ EE hB Q p y y₀ t c tm hS x hx)
 
 end GlobalTheory.ZH.CoreTests
 

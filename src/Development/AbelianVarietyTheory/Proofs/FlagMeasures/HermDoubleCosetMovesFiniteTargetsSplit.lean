@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementRe
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Cint
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NoLeak
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetMoveTermWeightCharacter
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IndexMeasureIntegralLinearPositiveNormBoundStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IndexMeasureIntegralLinearPositiveNormBound
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsFineSubgroupMovesAtLattice
 open ValuativeRel Formalism.MainNotions.S.Loc GlobalTheory.HL GlobalTheory.IdxInt MeasureTheory
 open scoped Pointwise ENNReal Classical
@@ -78,7 +78,7 @@ theorem split_by_target {W Y Z : Type} [AddCommGroup W] (A B : AddSubgroup W) (M
       exact fun h => hy ⟨w, h⟩
     rw [h]
     simp [cint]
-  obtain ⟨-, hI2, hI3, hI4⟩ := GlobalTheory.T.indexMeasureIntegral_linear_positive_norm_bound A
+  obtain ⟨-, hI2, hI3, hI4⟩ := _root_.GlobalTheory.IdxInt.Lin.main A
   refine ⟨hTfin, hnice, hTfin.subset ?_, fun y => mul_nonneg hc (hI3 _).1, ?_⟩
   · intro y hy
     change c * _ ≠ 0 at hy

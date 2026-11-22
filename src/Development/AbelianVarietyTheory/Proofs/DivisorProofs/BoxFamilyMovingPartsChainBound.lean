@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianLineBundle
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFubiniStudyOfTotallyOrderedRatFnFamily
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FubiniStudyBundleIsNefOfNonnegWeights
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankLeFubiniStudyBoxFamily
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FubiniStudySubfamilyLeShiftFubiniStudyFamilyStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FubiniStudySubfamilyLeShiftFubiniStudyFamily
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithKleimanHeightNefOfIsNef
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithSelfIntersectionMonoOfIsNef
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology
@@ -83,7 +83,7 @@ theorem levels_le_selfInter (hC : GlobalTheory.Published.ArCalc) (hA : AmpleHS) 
       push_cast
       linarith
     have hle : Le (M'.shift (fun _ => Δ) fun _ => rfl) M :=
-      GlobalTheory.T.fubiniStudy_subfamily_le_shift_fubiniStudy_family k X p M M' (J × Finset (Fin D)) (J' × Finset (Fin D)) (boxFam e x) (fun c => (n c.1 : ℝ) * Δ)
+      _root_.GlobalTheory.HSNef.le_shift_of_isFS_sub k X p M M' (J × Finset (Fin D)) (J' × Finset (Fin D)) (boxFam e x) (fun c => (n c.1 : ℝ) * Δ)
         (fun c => (n' c.1 : ℝ) * Δ) ι Δ hι hM (hbox ▸ hM') hstep
     have hnefM := _root_.GlobalTheory.HSNef.FSNef.isNef_of_isFS hC k X p D hX M _ _ _ hM hw0
     have hnefM' := _root_.GlobalTheory.HSNef.FSNef.isNef_of_isFS hC k X p D hX M' _ _ _ hM' hw0'

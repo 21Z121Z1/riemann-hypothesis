@@ -1,12 +1,13 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsFibreChartIff
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.TwoPointFibreChartFirstStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.TwoPointFibreChartFirst
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularFunctionAnalyticOnChart
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LocalHolomorphicLiftRealisation
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.RealisationBijectiveDegreeOne
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogNormNonvanishingAnalyticHarmonic
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAnalyticOrbitOffBoundary
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ValueConstantOnOrbitStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.ElementaryFactorPropertiesStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.ElementaryFactorProperties
 open MvPolynomial MeasureTheory Filter Topology Matrix ReciprocityTheory.AnForm ReciprocityTheory.AnForm.M ReciprocityTheory.AnForm.P ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.AI.I1 ReciprocityTheory.ChartRestriction.G.AI.I2 ReciprocityTheory.ChartRestriction.G.AI.I4 GlobalTheory.CompanionTheory.Ar.PB GroundTheory.Heights₂.Heights GroundTheory.Heights₂.Heights.LowerBoundFree
 open scoped ComplexOrder Classical
 open GlobalTheory.CompanionTheory.Ar.PB.WSq GlobalTheory.CompanionTheory.Ar.PB.WSq.Fib
@@ -19,7 +20,7 @@ theorem fibre_member_potential : ∀ (K : Type) [Fintype K] (ι : K → Type) [�
     have hc : Continuous (fun u : Fin (d + 1) → ℂ => (Fin.tail u : Fin d → ℂ)) :=
       continuous_pi fun i => continuous_apply _
     exact hUn.preimage hc
-  obtain ⟨zex, hzan, hzex⟩ := GlobalTheory.T.two_point_fibre_chart_first K ι Φ y Ψ N j M n d BM FA τ a ca cb X q Un Gn ΦYn ΦWn l H bp hUn hF
+  obtain ⟨zex, hzan, hzex⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PB.WSq.Fib.exact_points_holomorphic K ι Φ y Ψ N j M n d BM FA τ a ca cb X q Un Gn ΦYn ΦWn l H bp hUn hF
   have hbij := _root_.GlobalTheory.CompanionTheory.Ar.PB.WSq.Fib.realis_bijective_of_degree_one K ι (d + 1) (Option (Ψ × Fin N)) FA.S (mCoordIdeal y) FA.Re FA.deg_one FA.br_empty
   obtain ⟨Hh, hHh, hev⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PB.WSq.Fib.ref_pot_along_exact_family K ι (d + 1) (Option (Ψ × Fin N)) FA.S (mCoordIdeal y) FA.Re (some p) (d + 1)
     {u : Fin (d + 1) → ℂ | Fin.tail u ∈ Un} ΦYn zex z FA.J_top FA.deg_one FA.br_empty hV hz hzan
@@ -29,7 +30,7 @@ theorem fibre_member_potential : ∀ (K : Type) [Fintype K] (ι : K → Type) [�
   obtain ⟨x₀, hx₀⟩ := hbij.2 (ΦYn z')
   obtain ⟨h2, h3, h4⟩ := (hzex z' hz').2 x₀ hx₀
   obtain ⟨hbO, hH⟩ := hF.2.2.2.1 _ hz'
-  obtain ⟨hsb, hsd, -, -⟩ := GlobalTheory.T.elementary_factor_properties N j a b ca cb (z' 0) M.j_le hb hab hca hcb
+  obtain ⟨hsb, hsd, -, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PB.WSq.Fib.Shear.shear_main N j a b ca cb (z' 0) M.j_le hb hab hca hcb
   have hflag : IsBlockDiag j (flagAt H τ ca cb (z' 0) (Fin.tail z') p.1) ∧
       (flagAt H τ ca cb (z' 0) (Fin.tail z') p.1).det ≠ 0 := by
     unfold flagAt

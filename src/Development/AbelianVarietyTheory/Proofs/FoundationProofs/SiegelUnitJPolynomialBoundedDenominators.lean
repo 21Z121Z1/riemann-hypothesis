@@ -237,7 +237,7 @@ theorem siegel_coeff [IsAlgClosure ℚ Ω] (ε : Ω →+* ℂ) (X : Tower Ω ε)
     rw [hsg]
   rw [hsie]
   obtain ⟨k, A, hQ, hc, hz⟩ := _root_.GlobalTheory.KExp.siegel_exp Ω ε X c M a0 b0 hM hlt hadm
-  obtain ⟨k', hk'⟩ := GlobalTheory.T.smoothedSiegelUnit_qExpansion_coeffs_integral c M a0 hM hlt
+  obtain ⟨k', hk'⟩ := _root_.GlobalTheory.SiegQ.sg_expansion_int c M a0 hM hlt
   obtain ⟨A', hQ', -, -, hA', -⟩ := hk' b0 hadm
   have hAn : ∀ m, A m ∈ Subring.closure {eOm ε (1 / (M : ℚ))} := by
     intro m

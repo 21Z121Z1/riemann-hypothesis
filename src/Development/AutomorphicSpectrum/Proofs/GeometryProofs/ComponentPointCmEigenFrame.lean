@@ -10,7 +10,8 @@ import Development.AbelianVarietyTheory.Definitions.Uniformization.PointEqOfSubs
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.GagaSections
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeEvalAtLocalRingStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeEvalAtLocalRing
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.VectorsAtComplexPoint
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieOmegaLatticeVectorBundle
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenLatticeConstantRank
@@ -301,7 +302,7 @@ theorem valFam_eigFrame : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E]
   obtain ⟨ER, _, _, ⟨MR⟩⟩ := lieModel_exists Y.X Y.t.G F z
   obtain ⟨ρF, hρF, -⟩ := lieModel_exists_unique_act _ Y.t.G F z ER MR (𝓞 E) Y.t.act.act Y.t.act.hom Y.t.act.one
     Y.t.act.mul Y.t.act.add
-  obtain ⟨ev, hev1, hev2, hev3⟩ := GlobalTheory.T.lie_lattice_eval_at_local_ring Y.X Y.t.G Z.Ω ξ Z.V Z.M F z h ER MR Z.gen inferInstance
+  obtain ⟨ev, hev1, hev2, hev3⟩ := _root_.GlobalTheory.CompanionTheory.Ar.lieLat_val Y.X Y.t.G Z.Ω ξ Z.V Z.M F z h ER MR Z.gen inferInstance
   have hval : ∀ e : Z.M.lat x, Z.M.ValAt z e (MR.pt (ev e)) := fun e => (hev1 e _).2 ⟨e.2, rfl⟩
   have hEig : ∀ (s : E →+* ℂ) (e : Z.M.lat x), (e : Z.V) ∈ Z.eig s x → ∀ a : 𝓞 E,
       ρF a (ev e) = βF (tauIn c s a) • ev e := by

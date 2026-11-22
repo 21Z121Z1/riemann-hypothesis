@@ -285,7 +285,7 @@ theorem gauss_mul_integral_A_k (C : _root_.PositivityTheory.ThKW.Ctx_k σ B JS J
       by_contra hn
       exact hj (hi' j (by simpa using mem_of_coefQF_ne_zero hn))
     · exact fun hn => (hn (Finset.mem_univ _)).elim
-  have key := GlobalTheory.T.unfold_poincareSeries_lattice_fourier (IxF F nS nT → ℂ) volume _ (infRatF (tauB B)) (infRatF_injective B) Cg
+  have key := _root_.GlobalTheory.PoincareUnfold.unfold_poincare_fourier (IxF F nS nT → ℂ) volume _ (infRatF (tauB B)) (infRatF_injective B) Cg
     (fun R => (_root_.PositivityTheory.ThKW.finite_lat_k C.good hG R).subset fun c hc => ⟨((hC c).1 hc.1).1, hc.2⟩) ?_ n t
     (gaussQF σ JS JT ξ₀ B.ψ Λ w a b) ?_ ?_ ?_ _ hF
     (fun y => κ * ∑ i, coefQF σ JS JT ξ₀ B s Λ w (u i) y)

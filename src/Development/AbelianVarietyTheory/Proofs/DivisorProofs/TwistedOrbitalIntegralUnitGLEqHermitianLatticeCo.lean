@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedOrbitalInteg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalTwistContinuousInvolutionIntegralProperties
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulHomInjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGLLatticeSpannedByGLColumnsEqFullLattice
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeSpannedByGLColumnsEqIffStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeSpannedByGLColumnsEqIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedCentralizerEqMapNormOneTorus
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCompactClosureZpowersLeftMulGLIffIntegral
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedConjIntegralIffLatticeUnimodular
@@ -88,7 +88,7 @@ theorem GlobalTheory.TwOrbLat.twOrb_unit_eq_orbSum : ∀ (E : Type) [Field E] [N
       t ∈ stabLat K.O (GlobalTheory.TwLat.lat e b q) := by
     intro t q
     rw [Subgroup.mem_map_equiv, MulAut.conj_symm_apply, mem_stabLat_iff,
-      ← latOf_mul e b t q, eq_comm, GlobalTheory.T.latticeSpannedByGLColumns_eq_iff E w K e hO a B b, mul_assoc]
+      ← latOf_mul e b t q, eq_comm, _root_.GlobalTheory.TwOrbLat.lat_eq_iff E w K e hO a B b, mul_assoc]
   have hcpt : cptPart T' = (intUnits K.O B.A ⊓ B.T).map ι := by
     rw [hCent]
     unfold cptPart
@@ -170,7 +170,7 @@ theorem GlobalTheory.TwOrbLat.twOrb_unit_eq_orbSum : ∀ (E : Type) [Field E] [N
     · rintro ⟨q, hq⟩ ⟨q', hq'⟩ h
       obtain ⟨t, ht, h1⟩ := hr.eqvGen_iff.1 (Quot.eqvGen_exact h)
       simp only at h1
-      rw [← latOf_mul e b t, GlobalTheory.T.latticeSpannedByGLColumns_eq_iff E w K e hO a B b] at h1
+      rw [← latOf_mul e b t, _root_.GlobalTheory.TwOrbLat.lat_eq_iff E w K e hO a B b] at h1
       apply Subtype.ext
       simp only
       rw [← DoubleCoset.out_eq' T' Kg q, ← DoubleCoset.out_eq' T' Kg q', DoubleCoset.eq]
@@ -191,7 +191,7 @@ theorem GlobalTheory.TwOrbLat.twOrb_unit_eq_orbSum : ∀ (E : Type) [Field E] [N
         show L.1 = _
         simp only
         rw [he', mul_assoc, latOf_mul e b t,
-          ← (GlobalTheory.T.latticeSpannedByGLColumns_eq_iff E w K e hO a B b q0 (q0 * k)).2 (by simpa using hk), hq0]
+          ← (_root_.GlobalTheory.TwOrbLat.lat_eq_iff E w K e hO a B b q0 (q0 * k)).2 (by simpa using hk), hq0]
         ext y; rw [mulLat_mem_iff, mulLat_mem_iff]; simp
 
   rw [GlobalTheory.TwOrbConj.twOrb_eq, orbSum, cast_finsum]

@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsHilbertSchmidt
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConvolutionRightInvariantOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConvolutionPreservesCuspidal
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ContDiffRightConvolutionAlongOneParameterProduct
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RightDerivativeRightConvolutionEqTestFunctionStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RightDerivativeRightConvolutionEqTestFunction
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NcardRationalPointsInTranslateLeHeightPow
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormRightConvolutionLeAdelicHeightPow
 
@@ -40,7 +40,7 @@ theorem norm_convR_le (hP : GlobalTheory.Published.CuspDecayBound) {f : GA D V �
     | cons p l ih =>
       intro hl
       obtain ⟨f₁, h₁, s₁, e₁⟩ := ih fun q hq => hl q (List.mem_cons_of_mem _ hq)
-      obtain ⟨f₂, h₂, s₂, e₂⟩ := GlobalTheory.T.right_derivative_rightConvolution_eq_test_function μ θ hθ h₁ (hl p List.mem_cons_self)
+      obtain ⟨f₂, h₂, s₂, e₂⟩ := _root_.GlobalTheory.ConvRDeriv.Rder_convR μ θ hθ h₁ (hl p List.mem_cons_self)
       exact ⟨f₂, h₂, s₂.trans s₁, fun F => by simp only [List.foldr_cons, e₁ F, e₂ F]⟩
   choose! fl hfl hsl hel using hder
   have hM : ∀ l : List (D.what₂.Tau × Matrix (Fin V.rank) (Fin V.rank) ℂ), (∀ p ∈ l, p.2 ∈ lieAt V p.1) →

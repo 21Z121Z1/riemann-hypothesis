@@ -2,10 +2,12 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.RangeShape
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformFinitenessOfReproducingPolynomialAveraginStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsReproducingPolynomialValueAtOneMaxCompact
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteDimStablePolyAveragesWeightsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteDimStablePolyAveragesWeights
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.MeasurePreservingMulRight
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.Smooth
 
 namespace GlobalTheory.PsCo.Pc3
 
-theorem uFin : UFin := GlobalTheory.T.uniformFiniteness_of_reproducingPolynomial_averaging _root_.GlobalTheory.PsCo.Pc3.fock_reproducing_formula GlobalTheory.T.exists_finiteDim_stable_polyAverages_weights
+theorem uFin : UFin := GlobalTheory.T.uniformFiniteness_of_reproducingPolynomial_averaging _root_.GlobalTheory.PsCo.Pc3.fock_reproducing_formula _root_.GlobalTheory.PsCo.PolyAvg.polyAvg
 
 end GlobalTheory.PsCo.Pc3

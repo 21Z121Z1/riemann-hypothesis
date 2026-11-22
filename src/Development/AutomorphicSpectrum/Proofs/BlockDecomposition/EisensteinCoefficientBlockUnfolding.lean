@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ColJoinColLColR
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CharacterIntegralOrthogonalityStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CharacterIntegralOrthogonality
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PeriodizationIntegralUnfolding
 noncomputable section
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct
@@ -212,11 +212,11 @@ theorem integral_cells_eq : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ), IsCha
   · obtain ⟨-, hu⟩ := _root_.GlobalTheory.CompanionTheory.EisUnfold.Lattice.tsum_setIntegral_sub_rat D V.rank r μr 𝓕r hr (Core.cellZero (s := s) ψ V b a Φ)
       (Core.continuous_cellZero ψ hψ V b a hΦ) B (Core.tsum_cellZero_le ψ hψ V b ha hB)
     refine Eq.trans (tsum_congr fun p => ?_) hu
-    simp only [(GlobalTheory.T.character_integral_orthogonality D ψ hψ V s μs 𝓕s hs 0).1 rfl, mul_one, Core.cellRest_zero]
+    simp only [(_root_.GlobalTheory.CompanionTheory.EisUnfold.Orth.orthogonality D ψ hψ V s μs 𝓕s hs 0).1 rfl, mul_one, Core.cellRest_zero]
   · rintro ⟨p, q⟩ hne
     by_cases hq : q = 0
     · exact ⟨p, by rw [hq]⟩
-    · exact absurd (by simp only [(GlobalTheory.T.character_integral_orthogonality D ψ hψ V s μs 𝓕s hs q).2 hq, mul_zero]) hne
+    · exact absurd (by simp only [(_root_.GlobalTheory.CompanionTheory.EisUnfold.Orth.orthogonality D ψ hψ V s μs 𝓕s hs q).2 hq, mul_zero]) hne
 
 end GlobalTheory.CompanionTheory.EisUnfold
 

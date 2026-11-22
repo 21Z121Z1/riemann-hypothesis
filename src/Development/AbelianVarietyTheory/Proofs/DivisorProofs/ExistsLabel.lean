@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.AbByPOfCo
 import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.InvariantSubspaceMobiusInverseRecEqOfFinrankLt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalCharacterFormula
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.IsCharacterOverSubfieldRestrictClassFunctionOne
-import Development.AbelianVarietyTheory.Proofs.CharacterTheory.InvariantSubspaceMobiusInverseCharpolyLinearEquiStatement
+import Development.AbelianVarietyTheory.Proofs.CharacterTheory.InvariantSubspaceMobiusInverseCharpolyLinearEqui
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.IsPrimitiveEndClassFunctionInvariantSubspaceMobi
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.InvertibleEndomorphismInnerProductPrimitiveMobiuStatement
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.EqZeroOfNotPrimary
@@ -11,17 +11,17 @@ import Development.AbelianVarietyTheory.Proofs.CharacterTheory.StarVirtualCharac
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.VirtualCharacterInnerEqIntMulCard
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.FiniteGroupFunctionPairingEqZeroOfDistinctIrredu
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.IrreducibleOfVirtualCharacterNormOne
-import Development.AbelianVarietyTheory.Proofs.CharacterTheory.RootsCharpolyPowEqMapPowStatement
+import Development.AbelianVarietyTheory.Proofs.CharacterTheory.RootsCharpolyPowEqMapPow
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.RootPowerSumCharpolyMemVirtualCharactersGLStatement
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.RootPowerSumCharacterAdditiveAndXSubOnePow
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.InnerProductRootPowerSumEqOfFrobeniusModEqStatement
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.RegularIffNatDegreeAndExistsEllipticGL
-import Development.AbelianVarietyTheory.Proofs.CharacterTheory.GeneralLinearFunctionExtendZeroEndPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.CharacterTheory.GeneralLinearFunctionExtendZeroEndProperties
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.ExistsIntCoeffPrimitiveGLCharacterStatement
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.IsCharacterCuspidalRootSumRegularStatement
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.EqOfIsPrimitiveOfEqOnEllipticFiniteGL
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockTriangularPrimitiveCharacters
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EsymmMemVirtualCharactersOfPowerSumEigenvaluesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EsymmMemVirtualCharactersOfPowerSumEigenvalues
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NatDegreeMulEsymmRootsPow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DvdOfPeriodOfDvdSumPowersetCardStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRegularExponentOfSumSqEq
@@ -39,9 +39,9 @@ theorem esymm_mem_virt (F : Type) [Field F] [Finite F] (θ : AlgebraicClosure F 
     (hθ : ∀ x y : AlgebraicClosure F, x ≠ 0 → y ≠ 0 → θ x = θ y → x = y) (d k s : ℕ) :
     (fun x : GL (Fin d) F => (((Matrix.charpoly (x : Matrix (Fin d) (Fin d) F)).map
       (algebraMap F (AlgebraicClosure F))).roots.map fun α => θ α ^ k).esymm s) ∈ Virt ℂ ℂ (GL (Fin d) F) := by
-  refine GlobalTheory.T.esymm_mem_virtualCharacters_of_powerSum_eigenvalues _ _ _ (GlobalTheory.T.rootPowerSum_charpoly_mem_virtualCharacters_GL F θ hθ d k) (fun x j _ => ?_) s
+  refine _root_.GlobalTheory.EsymmVirt.esymm_mem_virt _ _ _ (GlobalTheory.T.rootPowerSum_charpoly_mem_virtualCharacters_GL F θ hθ d k) (fun x j _ => ?_) s
   rw [rootSum, ← Matrix.charpoly_map, ← Matrix.charpoly_map, Units.val_pow_eq_pow_val, Matrix.map_pow,
-    GlobalTheory.T.roots_charpoly_pow_eq_map_pow, Multiset.map_map, Multiset.map_map]
+    _root_.GlobalTheory.CharpolyPow.roots_charpoly_pow, Multiset.map_map, Multiset.map_map]
   congr 1
   refine Multiset.map_congr rfl fun α _ => ?_
   simp only [Function.comp, map_pow, ← pow_mul, mul_comm]
@@ -55,7 +55,7 @@ theorem exists_regular (F : Type) [Field F] [Finite F] (θ : AlgebraicClosure F 
   classical
   have h := isCharacter_of_isIrreducibleCharacter_complex hi
   have hv : χ ∈ Virt ℂ ℂ (GL (Fin d) F) := AddSubgroup.subset_closure h
-  obtain ⟨hval, -, hip, hcl⟩ := GlobalTheory.T.generalLinearFunctionExtendZeroEnd_properties F d χ
+  obtain ⟨hval, -, hip, hcl⟩ := _root_.GlobalTheory.CuspGL.extZero_spec F d χ
   have hc := hcl (_root_.GlobalTheory.isChar_restrict_conj_one ℂ ℂ _ χ h).2.1
   have hr : Module.finrank F (Fin d → F) = d := by simp
   have hg := generalLinearGroupCardComplex_finiteField_ne_zero F d
@@ -179,7 +179,7 @@ theorem cuspVal_eq_psi (ω : Fbar g →*₀ ℂ) {ι : Type} [Fintype ι] [Decid
     congr 1
     refine Finset.prod_congr rfl fun i _ => ?_
     rw [hcard]
-  · rw [_root_.GlobalTheory.CuspGL.eq_zero_of_not_primary (ZMod g) _ _ (fun e u => GlobalTheory.T.invariantSubspaceMobiusInverseCharpoly_linearEquiv_conj _ _ _ _ e u) (_root_.GlobalTheory.CuspGL.isPrimitive_psi _ _ _ hs) (by simpa using hd),
+  · rw [_root_.GlobalTheory.CuspGL.eq_zero_of_not_primary (ZMod g) _ _ (fun e u => _root_.GlobalTheory.CuspGL.psi_conj _ _ _ _ e u) (_root_.GlobalTheory.CuspGL.isPrimitive_psi _ _ _ hs) (by simpa using hd),
       mul_zero]
     rintro ⟨f, m, -, hf, -, e⟩
     exact hh ⟨f, m, hf, by rw [← e, Matrix.charpoly_toLin']⟩

@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsAuxiliaryVectorWittDec
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridLatticesCompactSelfDualSplitting
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PsiPrimitiveStandardFramesBesselLevel
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatticeColumnsOffFiniteSetStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatticeColumnsOffFiniteSet
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StandardLatticeOffS0
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatticeMembershipAdjointIff
 
@@ -25,7 +25,7 @@ theorem goodPosition_offBadPlaces_from_besselLevel : OnStd fun {D} _ _ {sc} {G} 
     sd _ ⟨by omega, Nat.zero_le _⟩ (fun j e => by cases e),
     sd (.core (2 * ρ + 1)) (show 2 * ρ + 1 ≤ D.R.m by omega) (fun j e => by cases e),
     ((I.2.1 ρ h).2.1 v).1, ((I.2.1 ρ h).2.1 v).2,
-    _root_.GlobalTheory.AscFin.primAt_std_bessel D hq T L μ0 hL sc G W M hM F hF ρ h v hv, GlobalTheory.T.besselLevel_columns_carry_latticeLines_offExceptional D hq T L μ0 hL sc G W M hM F hF ρ h v hv⟩,
+    _root_.GlobalTheory.AscFin.primAt_std_bessel D hq T L μ0 hL sc G W M hM F hF ρ h v hv, _root_.GlobalTheory.StairCols.colsAt_xZero D hq T L μ0 hL sc G W M hM F hF ρ h v hv⟩,
     _root_.GlobalTheory.AscFin.stdAt_pcBF D hq T L μ0 hL sc G W M hM F hF ρ h v hv, _root_.GlobalTheory.AscFin.incAdj_yBF_mem_latO_iff D hq T L μ0 hL sc G W M hM F hF ρ h v hv⟩
 
 end GlobalTheory.GoodPosBF

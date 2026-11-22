@@ -4,8 +4,8 @@ import Development.AbelianVarietyTheory.Definitions.Foundations.IsHilbertSchmidt
 import Development.AbelianVarietyTheory.Definitions.Divisors.T2SpaceGeneralLinearGroup
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsOpenNormalisedSubgroupSubset
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.QuotientIntegrationFormulaDiscreteSubgroupLeft
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SmoothContragredientIrreducibleAndReflexiveStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ContraAdmissibleTraceStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SmoothContragredientIrreducibleAndReflexive
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ContraAdmissibleTrace
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NonemptyEquivOfSmoothTraceEqAdmissible
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsSubquotientDetRepParInd
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TransposeInvariantOfConjInvariantDistributionGLStatement
@@ -128,7 +128,7 @@ theorem equiv_contra (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] 
       exact ⟨fun h => ⟨fun i j => h.2 j i, fun i j => h.1 j i⟩, fun h => ⟨fun i j => h.2 j i, fun i j => h.1 j i⟩⟩
     rw [e]
     exact haarVol_self isOpen_KO le_rfl
-  obtain ⟨hca, hct⟩ := GlobalTheory.T.isAdmissible_contra_and_smoothTrace_inv _ μ hb V π ha
+  obtain ⟨hca, hct⟩ := _root_.GlobalTheory.SmGL.ContraTrace.contra_admissible_trace _ μ hb V π ha
   let T : SB (GL (Fin n) k) →ₗ[ℂ] ℂ :=
     { toFun := fun φ => smoothTrace π μ φ.1
       map_add' := fun φ ψ => ha.smoothTrace_add φ.2.1 φ.2.2 ψ.2.1 ψ.2.2 isOpen_KO isCompact_KO
@@ -139,7 +139,7 @@ theorem equiv_contra (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] 
     exact smoothTrace_conj ha isOpen_KO isCompact_KO φ.2.1 φ.2.2 g
   refine _root_.GlobalTheory.CharIndep.nonempty_equiv_of_smoothTrace_eq _ μ hb V _ _ _ (isAdmissible_comp _ Φ hΦ ha) hca
     (isIrreducible_comp _ (fun g => ⟨_, hinv g⟩) hi)
-    ((GlobalTheory.T.smoothContragredient_irreducible_and_reflexive _ hb V V π π ha ha).1 hi) fun f hf hc => ?_
+    ((_root_.GlobalTheory.ContraRefl.contra_irreducible_reflexive _ hb V V π π ha ha).1 hi) fun f hf hc => ?_
   have h1 := hf.comp_continuous Φ.continuous
   have h2 := hc.comp_homeomorph Φ
   have h3 := smoothTrace_comp _ Φ hΦ hμ ha h1 h2

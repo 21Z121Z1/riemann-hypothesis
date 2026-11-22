@@ -3,7 +3,7 @@ import Development.WeilBound.CoreStatements.AutomorphicKernels.EisensteinSeriesG
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsNormTheta2TailLeOfLeOne
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LinearChangeMemSchwartzBruhatPiStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSummableMajorantLatticeSumStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaSubValueZeroRapidDecayStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaSubValueZeroRapidDecay
 import Development.WeilBound.RepresentationTheoryGL.EisensteinSeries.SiegelEisensteinHalfPlane.SchwartzBruhatMajorants.ThetaCScalCEq
 set_option maxSynthPendingDepth 1
 set_option synthInstance.maxSize 1000
@@ -277,8 +277,8 @@ theorem exists_bound (w : InfinitePlace k) {F : (ι → 𝔸[k]) → ℂ}
   have hφ' : Continuous fun u : normOneSubgroup k ↦ (scalC (u : IdeleGroup k)⁻¹ : GL ι 𝔸[k]) :=
     continuous_scalC.comp (continuous_inv.comp continuous_subtype_val)
   have hE := isCompact_closure_normOneFundamentalDomain k
-  obtain ⟨M₁, h₁⟩ := GlobalTheory.T.theta_sub_value_zero_rapid_decay w hG (hE.image hφ) r
-  obtain ⟨M₀, h₀⟩ := GlobalTheory.T.theta_sub_value_zero_rapid_decay w (adelicFourierPi_mem_schwartzBruhatPi hG) (hE.image hφ') 0
+  obtain ⟨M₁, h₁⟩ := _root_.GlobalTheory.CompanionTheory.EisThCDecay.exists_norm_thetaC_sub_le w hG (hE.image hφ) r
+  obtain ⟨M₀, h₀⟩ := _root_.GlobalTheory.CompanionTheory.EisThCDecay.exists_norm_thetaC_sub_le w (adelicFourierPi_mem_schwartzBruhatPi hG) (hE.image hφ') 0
   set N := Fintype.card ι with hN
 
   have hsr : ∀ h : GL ι 𝔸[k], Summable fun ξ : ι → k ↦ ρ ((h : Matrix ι ι 𝔸[k]) *ᵥ ratV ξ) := by

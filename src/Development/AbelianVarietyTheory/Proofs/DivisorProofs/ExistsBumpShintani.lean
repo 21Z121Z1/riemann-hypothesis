@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.IsRapidInf
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StrongMultiplicityOne
 import GroundTheory.AutomorphicForms.MultiplicityOne.Injective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdelicWhittakerEquivariantBumpMirabolic
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSphericalCuspFormWhittakerNeZeroStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSphericalCuspFormWhittakerNeZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WhittakerMulTorusIteratedFactorisation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KirillovSemilocalSmoothBumpStatement
 open NumberField IsDedekindDomain GlobalTheory.CuspRep Formalism.UG GlobalTheory.LFun Matrix
@@ -45,7 +45,7 @@ theorem exists_bump_shintani : ∀ (E : Type) [Field E] [NumberField E] [IsTotal
   obtain ⟨b, hb1, hbN, hbC, hbU, hbS⟩ := _root_.GlobalTheory.WhitBump.exists_bump E m S
   refine ⟨b, hb1, hbN, hbC, ?_⟩
   intro π α hSat
-  obtain ⟨φ, hφV, hφK, hφx⟩ := GlobalTheory.T.exists_spherical_cuspForm_whittaker_ne_zero E m S hcond π α hSat
+  obtain ⟨φ, hφV, hφK, hφx⟩ := _root_.GlobalTheory.JSW.NzSph.exists_sph_whit_ne_zero E m S hcond π α hSat
   obtain ⟨F, hFV, hFb, hFU, hFinv, hFeig⟩ := GlobalTheory.T.kirillov_semilocal_smooth_bump E m S b hbN hbC hbU hbS π φ hφV hφx
   refine ⟨F, hFV, hFU, ?_, ?_⟩
   · intro w hw k hk g

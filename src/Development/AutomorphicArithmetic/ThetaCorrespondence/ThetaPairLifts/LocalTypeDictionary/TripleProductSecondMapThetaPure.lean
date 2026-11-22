@@ -58,7 +58,7 @@ theorem secondFactorMap_theta_pure_tensor : GlobalTheory.Published.HoweDualityRe
     exact H.choose_spec _ hmem
   have hs : ∀ᶠ v in Filter.cofinite, Rf.p' v (Γ.M'.vac v) = vacIm Γ Rf v := by
     filter_upwards [Xc.T.eventually_cofinite_notMem] with v hv using (hm.fin.sph v hv).1.symm
-  have HL := GlobalTheory.T.weil_model_projection_factorisation _ _ _ Γ.M' Bs.ψ hg.hM' _ R.p' _ Rf.p' (vacIm Γ Rf) hs
+  have HL := _root_.GlobalTheory.PureLift.exists_pureLift _ _ _ Γ.M' Bs.ψ hg.hM' _ R.p' _ Rf.p' (vacIm Γ Rf) hs
   rw [h1, map_sum]
   refine Finset.sum_congr rfl fun i _ => ?_
   unfold liftPure

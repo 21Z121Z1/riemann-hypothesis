@@ -1,11 +1,11 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsLatticeFamily
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.BundleChernComparison
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ChartRingsNoetherianFractionStatement
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ChartRingsNoetherianFraction
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ModelOverPrimePermModuleLattice
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LatticeFamilyModelFacts
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LatticeFamilyModelComparison
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LatticeFamilyModelChernStatement
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LatticeFamilyModelChern
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LatticeFamilyInjectiveModel
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LatticeFactsOfNormalHolds
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LieLatticeData
@@ -92,7 +92,7 @@ theorem descend (hmod : GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHec
   intro Lie W Om OmHT hb
   obtain ⟨-, -, hpull⟩ := _root_.GlobalTheory.CompanionTheory.Ar.FamPull.main O Ω K ι x (inj_of_model hmod) p hp w χ φ D hfam K' ι' z
   obtain ⟨Lie', W', Om', OmHT', hb', hP⟩ := hpull Lie W Om OmHT hb
-  have hfn' := ((GlobalTheory.T.chart_rings_noetherian_fraction O Ω K ι x).2.2 K' ι' z).1 hfn
+  have hfn' := ((_root_.GlobalTheory.CompanionTheory.Ar.Num.ChartNoethFrac.main O Ω K ι x).2.2 K' ι' z).1 hfn
   exact _root_.GlobalTheory.CompanionTheory.Ar.Num.BiratJoin.ckRelations_descend O Ω K ι x d hmod p hfam.char.1 φ Lie W Om OmHT
     (sameGeneric_of hp hfam Lie W Om OmHT hb) K' ι' z hmod' (hfn'.trans hfn.symm)
     Lie' W' Om' OmHT' hP (h _ _ _ _ hb')
@@ -102,7 +102,7 @@ theorem stage5 (hmod : GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHeck
   _root_.GlobalTheory.CompanionTheory.Ar.Num.GoodModel.relations O Ω K ι x d hmod p hp w χ φ D hfam h1 h2
     (fun c hc => _root_.GlobalTheory.CompanionTheory.Ar.Num.lattice_facts_of_normal (D c) (chartRing O (mseg x) c) p _ _
       (charData_of (inj_of_model hmod) hp hfam c) (hfam.base c hc) hp
-      ((GlobalTheory.T.chart_rings_noetherian_fraction O Ω K ι x).1 c) ((GlobalTheory.T.chart_rings_noetherian_fraction O Ω K ι x).2.1 hfn c hc) (hN c hc) φ
+      ((_root_.GlobalTheory.CompanionTheory.Ar.Num.ChartNoethFrac.main O Ω K ι x).1 c) ((_root_.GlobalTheory.CompanionTheory.Ar.Num.ChartNoethFrac.main O Ω K ι x).2.1 hfn c hc) (hN c hc) φ
       (hfam.test c hc) (h1 c hc) (h2 c hc)) hl
 
 end GlobalTheory.CompanionTheory.Ar.Num.CkTop
@@ -119,16 +119,16 @@ theorem stage4 [CharZero O] (hmod : GroundTheory.Heights₂.Heights.IndefiniteRo
     (hl : (∀ τ i, ∃ (u : Ω) (a : _ → ℤ), u ≠ 0 ∧ IsLine O x u a fun c => (D c).xId (fun a => algebraMap O Ω (χ τ a)) i)) : ∀ (Lie W : ∀ τ, ChartBundle O (mseg x) (r τ) (Fin (r τ) → Ω)) (Om OmHT : ∀ τ, ChartBundle O (mseg x) (s τ) (Fin (s τ) → Ω)), HasBundles O x D Lie W Om OmHT → CkRelations O x d p φ Lie W Om OmHT := by
   obtain ⟨K', _, _, ι', _, z, hmod', hN⟩ := _root_.GlobalTheory.CompanionTheory.Ar.NormalJoin.main O Ω K ι x d hmod hfn
   obtain ⟨hfam', hg, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.FamPull.main O Ω K ι x (inj_of_model hmod) p hp w χ φ D hfam K' ι' z
-  have hfn' := ((GlobalTheory.T.chart_rings_noetherian_fraction O Ω K ι x).2.2 K' ι' z).1 hfn
+  have hfn' := ((_root_.GlobalTheory.CompanionTheory.Ar.Num.ChartNoethFrac.main O Ω K ι x).2.2 K' ι' z).1 hfn
   obtain ⟨h1', hg', hln⟩ := hg h1
   obtain ⟨-, hg2⟩ := hg' haf
   exact descend hmod hfn hp hfam z hmod' (stage5 hmod' hfn' hp hfam' hN h1' (hg2 h2) (hln hl))
 
 theorem stage3 [CharZero O] (hmod : GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.NumbersDVR.Bundles.IsModelOver O (mcIdeal O x) d) (hfn : fnField O x = ⊤) (hp : p.Prime) (hfam : IsLatticeFamily O x p w χ φ D) (h1 : (∀ c, mseg x c ≠ 0 → (D c).Good₁ (chartRing O (mseg x) c) p (fun τ a => algebraMap O Ω (χ τ a)))) (haf : (∀ c, mseg x c ≠ 0 → ∀ τ, mulLat (algebraMap O Ω w) (stdLat (chartRing O (mseg x) c) _) ≤ (D c).af (chartRing O (mseg x) c) p (fun a => algebraMap O Ω (χ τ a)))) (h2 : (∀ c, mseg x c ≠ 0 → (D c).Good₂ (chartRing O (mseg x) c) p (fun τ a => algebraMap O Ω (χ τ a)))) :
     ∀ (Lie W : ∀ τ, ChartBundle O (mseg x) (r τ) (Fin (r τ) → Ω)) (Om OmHT : ∀ τ, ChartBundle O (mseg x) (s τ) (Fin (s τ) → Ω)), HasBundles O x D Lie W Om OmHT → CkRelations O x d p φ Lie W Om OmHT := by
-  obtain ⟨K', _, _, ι', _, z, hmod', hl'⟩ := GlobalTheory.T.lattice_family_model_chern O Ω K ι x d hmod hfn p hp w χ φ D hfam h1
+  obtain ⟨K', _, _, ι', _, z, hmod', hl'⟩ := _root_.GlobalTheory.CompanionTheory.Ar.FamLines.main O Ω K ι x d hmod hfn p hp w χ φ D hfam h1
   obtain ⟨hfam', hg, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.FamPull.main O Ω K ι x (inj_of_model hmod) p hp w χ φ D hfam K' ι' z
-  have hfn' := ((GlobalTheory.T.chart_rings_noetherian_fraction O Ω K ι x).2.2 K' ι' z).1 hfn
+  have hfn' := ((_root_.GlobalTheory.CompanionTheory.Ar.Num.ChartNoethFrac.main O Ω K ι x).2.2 K' ι' z).1 hfn
   obtain ⟨h1', hg', hln⟩ := hg h1
   obtain ⟨haf', hg2⟩ := hg' haf
   exact descend hmod hfn hp hfam z hmod' (stage4 hmod' hfn' hp hfam' h1' haf' (hg2 h2) hl')
@@ -136,7 +136,7 @@ theorem stage3 [CharZero O] (hmod : GroundTheory.Heights₂.Heights.IndefiniteRo
 theorem stage2 [CharZero O] (hmod : GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.NumbersDVR.Bundles.IsModelOver O (mcIdeal O x) d) (hfn : fnField O x = ⊤) (hp : p.Prime) (hfam : IsLatticeFamily O x p w χ φ D) (h1 : (∀ c, mseg x c ≠ 0 → (D c).Good₁ (chartRing O (mseg x) c) p (fun τ a => algebraMap O Ω (χ τ a)))) (haf : (∀ c, mseg x c ≠ 0 → ∀ τ, mulLat (algebraMap O Ω w) (stdLat (chartRing O (mseg x) c) _) ≤ (D c).af (chartRing O (mseg x) c) p (fun a => algebraMap O Ω (χ τ a)))) : ∀ (Lie W : ∀ τ, ChartBundle O (mseg x) (r τ) (Fin (r τ) → Ω)) (Om OmHT : ∀ τ, ChartBundle O (mseg x) (s τ) (Fin (s τ) → Ω)), HasBundles O x D Lie W Om OmHT → CkRelations O x d p φ Lie W Om OmHT := by
   obtain ⟨K', _, _, ι', _, z, hmod', h2'⟩ := _root_.GlobalTheory.CompanionTheory.Ar.FamGood2.main O Ω K ι x d hmod hfn p hp w χ φ D hfam h1 haf
   obtain ⟨hfam', hg, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.FamPull.main O Ω K ι x (inj_of_model hmod) p hp w χ φ D hfam K' ι' z
-  have hfn' := ((GlobalTheory.T.chart_rings_noetherian_fraction O Ω K ι x).2.2 K' ι' z).1 hfn
+  have hfn' := ((_root_.GlobalTheory.CompanionTheory.Ar.Num.ChartNoethFrac.main O Ω K ι x).2.2 K' ι' z).1 hfn
   obtain ⟨h1', hg', hln⟩ := hg h1
   obtain ⟨haf', -⟩ := hg' haf
   exact descend hmod hfn hp hfam z hmod' (stage3 hmod' hfn' hp hfam' h1' haf' h2')
@@ -144,13 +144,13 @@ theorem stage2 [CharZero O] (hmod : GroundTheory.Heights₂.Heights.IndefiniteRo
 theorem stage1b [CharZero O] (hmod : GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.NumbersDVR.Bundles.IsModelOver O (mcIdeal O x) d) (hfn : fnField O x = ⊤) (hp : p.Prime) (hfam : IsLatticeFamily O x p w χ φ D) (h1 : (∀ c, mseg x c ≠ 0 → (D c).Good₁ (chartRing O (mseg x) c) p (fun τ a => algebraMap O Ω (χ τ a)))) (hN : NormalCharts O x) : ∀ (Lie W : ∀ τ, ChartBundle O (mseg x) (r τ) (Fin (r τ) → Ω)) (Om OmHT : ∀ τ, ChartBundle O (mseg x) (s τ) (Fin (s τ) → Ω)), HasBundles O x D Lie W Om OmHT → CkRelations O x d p φ Lie W Om OmHT :=
   stage2 hmod hfn hp hfam h1 (fun c hc τ => GlobalTheory.T.hodge_annihilator_lattice_holds (D c) (chartRing O (mseg x) c) p _ _
       (charData_of (inj_of_model hmod) hp hfam c) (hfam.base c hc) hp
-      ((GlobalTheory.T.chart_rings_noetherian_fraction O Ω K ι x).1 c) ((GlobalTheory.T.chart_rings_noetherian_fraction O Ω K ι x).2.1 hfn c hc) (hN c hc) φ
+      ((_root_.GlobalTheory.CompanionTheory.Ar.Num.ChartNoethFrac.main O Ω K ι x).1 c) ((_root_.GlobalTheory.CompanionTheory.Ar.Num.ChartNoethFrac.main O Ω K ι x).2.1 hfn c hc) (hN c hc) φ
       (hfam.test c hc) (h1 c hc) τ)
 
 theorem stage1 [CharZero O] (hmod : GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.NumbersDVR.Bundles.IsModelOver O (mcIdeal O x) d) (hfn : fnField O x = ⊤) (hp : p.Prime) (hfam : IsLatticeFamily O x p w χ φ D) (h1 : (∀ c, mseg x c ≠ 0 → (D c).Good₁ (chartRing O (mseg x) c) p (fun τ a => algebraMap O Ω (χ τ a)))) : ∀ (Lie W : ∀ τ, ChartBundle O (mseg x) (r τ) (Fin (r τ) → Ω)) (Om OmHT : ∀ τ, ChartBundle O (mseg x) (s τ) (Fin (s τ) → Ω)), HasBundles O x D Lie W Om OmHT → CkRelations O x d p φ Lie W Om OmHT := by
   obtain ⟨K', _, _, ι', _, z, hmod', hN⟩ := _root_.GlobalTheory.CompanionTheory.Ar.NormalJoin.main O Ω K ι x d hmod hfn
   obtain ⟨hfam', hg, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.FamPull.main O Ω K ι x (inj_of_model hmod) p hp w χ φ D hfam K' ι' z
-  have hfn' := ((GlobalTheory.T.chart_rings_noetherian_fraction O Ω K ι x).2.2 K' ι' z).1 hfn
+  have hfn' := ((_root_.GlobalTheory.CompanionTheory.Ar.Num.ChartNoethFrac.main O Ω K ι x).2.2 K' ι' z).1 hfn
   obtain ⟨h1', -, -⟩ := hg h1
   exact descend hmod hfn hp hfam z hmod' (stage1b hmod' hfn' hp hfam' h1' hN)
 
@@ -158,7 +158,7 @@ theorem ckRelations_of_model : ∀ (O : Type) [CommRing O] [IsDomain O] [IsDiscr
   intro O _ _ _ Ω _ _ K _ _ ι _ x _ d hmod hfn F _ _ _ n Sg _ r s p hp w χ φ D hfam
   obtain ⟨K', _, _, ι', _, z, hmod', h1'⟩ := _root_.GlobalTheory.CompanionTheory.Ar.FamGood1.main O Ω K ι x d hmod hfn p hp w χ φ D hfam
   obtain ⟨hfam', -, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.FamPull.main O Ω K ι x (inj_of_model hmod) p hp w χ φ D hfam K' ι' z
-  have hfn' := ((GlobalTheory.T.chart_rings_noetherian_fraction O Ω K ι x).2.2 K' ι' z).1 hfn
+  have hfn' := ((_root_.GlobalTheory.CompanionTheory.Ar.Num.ChartNoethFrac.main O Ω K ι x).2.2 K' ι' z).1 hfn
   exact descend hmod hfn hp hfam z hmod' (stage1 hmod' hfn' hp hfam' h1')
 
 end GlobalTheory.CompanionTheory.Ar.Num.CkTop

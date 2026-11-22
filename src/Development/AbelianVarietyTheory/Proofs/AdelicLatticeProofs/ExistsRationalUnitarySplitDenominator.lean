@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.IsHermForm
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsUnitaryCorrectionCongruentOneAtLevelStatement
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsUnitaryCorrectionCongruentOneAtLevel
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IdempotentAdelesAndSmallAdelicMatrices
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.UnitaryGroupWeakApproximationAtPrimes
 
@@ -182,7 +182,7 @@ theorem exists_rep_split_denominator : ∀ (F E : Type) [Field F] [NumberField F
   obtain ⟨d₂, hd₂, H₂⟩ := hden (g⁻¹).1
   have hN' : 0 < N * (d₁ * d₂) := by positivity
   obtain ⟨γ₀, hγ₀, hc₀⟩ := _root_.GlobalTheory.UnRep.WeakApprox.weak_approximation F E c n G hG h2 L hL hL' g _ _ hg hN' hN'
-  obtain ⟨γ, hγ, hc₁, s₁, hs₁, hs⟩ := GlobalTheory.T.exists_unitary_correction_congruent_one_at_level F E c n G hG L hL hL' γ₀ _ _ hγ₀ hN' hN'
+  obtain ⟨γ, hγ, hc₁, s₁, hs₁, hs⟩ := _root_.GlobalTheory.UnRep.Correct.exists_unitary_correction F E c n G hG L hL hL' γ₀ _ _ hγ₀ hN' hN'
   have hc := congAtA_mul L _ _ _ _ (congAtA_of_congAt (F := F) L _ _ _ hc₁) hc₀
   have hγγ : fm F (γ * γ₀⁻¹).1 * (fm F γ₀.1 * g.1) = fm F γ.1 * g.1 := by
     rw [← mul_assoc, ← fm_mul, ← Units.val_mul, inv_mul_cancel_right]

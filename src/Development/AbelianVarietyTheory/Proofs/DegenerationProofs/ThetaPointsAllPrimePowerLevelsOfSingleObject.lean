@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsComplete
 import Development.AbelianVarietyTheory.Definitions.Degenerations.CharZeroOfIsPrimitiveRoot
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.QvalAddTowerStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TwistTxNest
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusTorsionPointsCorrespondValuesStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusTorsionPointsCorrespondValues
 import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
 import Development.AbelianVarietyTheory.Definitions.Degenerations.HomExtSt
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry NumberField
@@ -24,7 +24,7 @@ theorem ser_nested {E : Type} [Field E] [NumberField E] [IsCMField E] {H : Host 
   obtain ⟨A, ρ, -, -, hρ, hv⟩ := S.val C gam u h₁ h₂ h₃ h₄
   have hR : Roots u ρ := ⟨Units.ext ((hρ 1).trans ((congrArg gam S.r_one).trans h₃.symm)), fun n k hn hk => Units.ext (by
     rw [Units.val_pow_eq_pow_val, hρ, hρ, ← map_pow, ← Units.val_pow_eq_pow_val, S.roots.2 n k hn hk])⟩
-  obtain ⟨b₁, -, b₃, -, b₅⟩ := GlobalTheory.T.torus_torsion_points_correspond_values O' a.D₀ a.even a.bimult C A.N A.ν
+  obtain ⟨b₁, -, b₃, -, b₅⟩ := _root_.GlobalTheory.Ex.GtValues.points_correspond O' a.D₀ a.even a.bimult C A.N A.ν
   obtain ⟨q₁, q₂⟩ := GlobalTheory.T.qval_add_of_tower E H D O' a.D₀ a.oa a.even a.bimult C A.I A.N A.ν A.q b₁ b₃
     (fun k => ⟨(b₅ k).1, (b₅ k).2.2⟩) A.hq
   have hrm : Odd (r * m) := hr.mul hm

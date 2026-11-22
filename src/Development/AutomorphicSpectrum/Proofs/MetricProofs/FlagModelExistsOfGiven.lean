@@ -3,15 +3,16 @@ import Development.AutomorphicSpectrum.Statements.TowerExistence.GoodTowerExists
 import Development.AutomorphicSpectrum.Statements.MetricStatements.ExistsFlagModelBaseMetric
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.RootOnFund
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ColFlags
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsTwistedGeneratorsStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsTwistedGenerators
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordTieCompEquiv
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrameViaTwistedGeneratorsStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HodgeCptIsVectorBundleRank
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HodgeCptBasesLinearIndependentSpan
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlkFProperStepInjectiveBlockDiag
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.GMatIsGenericFlagStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.DetFacGMatEqOneStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.BasePartYvEqAlgebraMapXbStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.YvEqSumMinorsGMatStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.DetFacGMatEqOne
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.BasePartYvEqAlgebraMapXb
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.YvEqSumMinorsGMat
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsNonzeroXbOfLeftInverse
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HodgeCptFrameChangeDeterminantStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HodgeCptFrameChangeRegularStatement
@@ -37,7 +38,7 @@ theorem GlobalTheory.CompanionTheory.Ar.PB.FMX.flagModelExists : GlobalTheory.Co
   have hVB := _root_.GlobalTheory.CompanionTheory.Ar.PB.FMX.LL_isVB E H D l Xo c Y S Ω K₀ J₀ x₀ 𝔐
   have hcc := _root_.GlobalTheory.CompanionTheory.Ar.PB.FMX.GenBases.cc_basis E H D l Xo c Y S Ω K₀ J₀ x₀ 𝔐 bW bO
   have hg : ∀ s, ∃ (m n : ℕ) (φ : Fin n → Module.Dual Ω (EE 𝔐)), IsTwistGen 𝔐.ξ (seg x₀) (LL 𝔐 s) m φ := fun s =>
-    GlobalTheory.T.exists_twisted_generators 𝔐.X Ω 𝔐.ξ (EE 𝔐) ((k : K₀) → J₀ k) (seg x₀) (LL 𝔐 s) _ (VV 𝔐 s) 𝔐.tie 𝔐.all (hVB s)
+    _root_.GlobalTheory.CompanionTheory.Ar.FlagBun.Twist.exists_twistGen 𝔐.X Ω 𝔐.ξ (EE 𝔐) ((k : K₀) → J₀ k) (seg x₀) (LL 𝔐 s) _ (VV 𝔐 s) 𝔐.tie 𝔐.all (hVB s)
   choose m n φ hφ using hg
   have hB : ∀ s, ∃ B : Matrix (Fin (rk (CMType H) D.p D.q s)) (Fin (n s)) Ω, B * aOf 𝔐 bW bO φ s = 1 := fun s =>
     GlobalTheory.T.frame_via_twisted_generators 𝔐.X Ω 𝔐.ξ (EE 𝔐) _ (seg x₀) (LL 𝔐 s) _ (VV 𝔐 s) (m s) (n s) (φ s) (cc 𝔐 bW bO s) 𝔐.tie (hVB s)
@@ -50,7 +51,7 @@ theorem GlobalTheory.CompanionTheory.Ar.PB.FMX.flagModelExists : GlobalTheory.Co
   have hP := _root_.GlobalTheory.CompanionTheory.Ar.PB.FMX.Blocks.blocks_main (CMType H) D.p D.q Ω K₀
   have hmod : ModelOK (aOf 𝔐 bW bO φ) x₀ m :=
     ⟨hP.1, hP.2.1, _root_.GlobalTheory.CompanionTheory.Ar.PB.FMX.BasePt.xb_block_ne _ _ _ Ω _ _ K₀ J₀ x₀ hx₀ hB,
-      GlobalTheory.T.basePart_yv_eq_algebraMap_xb _ _ _ Ω _ _ K₀ J₀ x₀, hP.2.2, GlobalTheory.T.isGenericFlag_gMat _ _ _ Ω, GlobalTheory.T.yv_eq_sum_minors_gMat _ _ _ Ω _ _ K₀ J₀ x₀,
+      _root_.GlobalTheory.CompanionTheory.Ar.PB.FMX.YBase.basePart_yv _ _ _ Ω _ _ K₀ J₀ x₀, hP.2.2, GlobalTheory.T.isGenericFlag_gMat _ _ _ Ω, _root_.GlobalTheory.CompanionTheory.Ar.PB.FMX.BlockEmbeddings.yv_step _ _ _ Ω _ _ K₀ J₀ x₀,
       GlobalTheory.T.hodgeCpt_frame_change_regular E H D l Xo c Y S Ω K₀ J₀ x₀ 𝔐 bW bO n m φ hF ht⟩
   have hT := GlobalTheory.T.hodgeCpt_frame_minor_valuation E H D l Xo c Y S Ω K₀ J₀ x₀ 𝔐 bW bO n m φ hF ht hmod
   obtain ⟨Z, ξ', f, htie, hall, hdom, hsm⟩ := GlobalTheory.T.hodgeCpt_frame_leading_term E H D l Xo c Y S Ω K₀ J₀ x₀ 𝔐 bW bO n m φ hF
@@ -85,7 +86,7 @@ theorem GlobalTheory.CompanionTheory.Ar.PB.FMX.flagModelExists : GlobalTheory.Co
   · exact HodgeOver.refl 𝔐
   · exact BasesOver.refl bW bO
   · refine ⟨⟨e.hom ≫ f, j, hov, hR, hV, hfl.1, hfl.2⟩, hroot, hdy, fun τ i => ?_⟩
-    have h1 : detFac D.p i (M.g τ) = 1 := GlobalTheory.T.detFac_gMat_eq_one (CMType H) D.p D.q Ω τ i
+    have h1 : detFac D.p i (M.g τ) = 1 := _root_.GlobalTheory.CompanionTheory.Ar.PB.FMX.DetG.detFac_gMat (CMType H) D.p D.q Ω τ i
     have h2 : M.lam (τ, i) = 1 := rfl
     rw [h1, h2]
     rcases M.blk (τ, i) with _ | b <;> simp

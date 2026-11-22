@@ -2,7 +2,7 @@ import Mathlib
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsEigFrames
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.IsPshLocallyIntegrableStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsotropicSublatticeGramDeterminantStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsotropicSublatticeGramDeterminant
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.IsotropicSubmoduleNonzeroFamily
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.EigenProjectionConjugateInner
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.LinearIndependentRealOfIntOfDiscrete
@@ -237,7 +237,7 @@ theorem neg_log_covolume_le {σ : Ψ → (𝓞 E →+* ℂ)} {m : ℕ} (hσ : Is
     exact_mod_cast Int.one_le_abs (discr_ne_zero E)
   let b := Module.finBasis ℤ I
   set n := Module.finrank ℤ I with hndef
-  obtain ⟨hn, hdet⟩ := GlobalTheory.T.isotropic_sublattice_gram_determinant E g Λ Ψ R σ I hσ hI hI0 n b
+  obtain ⟨hn, hdet⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.IsoCovol.det_re_gram_eq E g Λ Ψ R σ I hσ hI hI0 n b
   set f := Fintype.card Ψ with hf
   have hf1 : 1 ≤ f := Fintype.card_pos_iff.2 ⟨τ⟩
   have hr1 : 1 ≤ r := hv.1

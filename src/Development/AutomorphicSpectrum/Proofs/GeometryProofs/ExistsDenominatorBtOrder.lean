@@ -3,7 +3,7 @@ import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.TranslateM
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsUnitFormLocalizationEtaleNbhd
 import GroundTheory.PAdicHodge.FiniteFlat
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.DualOrder
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsDenominatorRegularStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsDenominatorRegular
 
 open CategoryTheory Limits AlgebraicGeometry MonoidalCategory CartesianMonoidalCategory MonObj TensorProduct
 open GlobalTheory.CompanionTheory.Ar.BT GroundTheory.PAdicHodge
@@ -59,7 +59,7 @@ theorem QFGroup.exists_denom [Finite T] (Γ : QFGroup R T) (f : T → FractionRi
   have key : ∀ g : Γ.G.left, ∃ d : R, d ≠ 0 ∧ ∃ U : Γ.G.left.Opens, g ∈ U ∧
       ∀ g' ∈ U, Γ.RegularAt (fun t => algebraMap R (FractionRing R) d * f t) g' := by
     intro g
-    obtain ⟨d, hd, U, hg, s, hs⟩ := GlobalTheory.T.exists_denominator_regular R T Γ f g
+    obtain ⟨d, hd, U, hg, s, hs⟩ := _root_.GlobalTheory.CompanionTheory.Ar.BT.RegDenom.exists_denom_regularAt R T Γ f g
     exact ⟨d, hd, U, hg, fun g' hg' => ⟨U, hg', s, hs⟩⟩
   choose d hd U hgU hU using key
   obtain ⟨F, hF⟩ := CompactSpace.elim_nhds_subcover (fun g => (U g : Set Γ.G.left))

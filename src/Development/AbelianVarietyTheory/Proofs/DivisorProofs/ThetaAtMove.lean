@@ -5,10 +5,10 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilDataDi
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OmPureTensorOOfFinite
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardPairFirstMemberEqProdLocalGridBases
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAwayUnitOfPowEqOne
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardPairSecondMemberEqProdLocalGridBasesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardPairSecondMemberEqProdLocalGridBases
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteUnitarySelfDualLatticeGridDoubling
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitVacuumEqSmulArrowVacuaProductStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitVacuumEqSmulProductArrowVacuaStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitVacuumEqSmulArrowVacuaProduct
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitVacuumEqSmulProductArrowVacua
 
 noncomputable section
 
@@ -85,8 +85,8 @@ theorem exists_move (hL : L.Is μ₀) (hst : ∀ t, SquareStanding G t) {W : G.W
   have mB := GlobalTheory.WeilVacMove.isVacO_om D W.ψ W.θ _ _ _ _ _ (hI.weil' μ₀) W.θ_is _ _ _ _ _ _ _ _ 1 h
     (fun τ => by rw [GlobalTheory.FiniteFock.compAt_mt_of_finite W.θ τ (one_mem _), Matrix.mul_one, Matrix.one_mul])
     (fun τ => by rw [h2, Matrix.mul_one, Matrix.one_mul]) (hmv _ _ sW₁) _ vB
-  obtain ⟨cA', hcA, kA⟩ := GlobalTheory.T.unitVacuum_eq_smul_arrowVacua_product hL W ρ i j AV AV₁ hV hV₁ Λ hΛ tA _ mA
-  obtain ⟨cB, hcB, kB⟩ := GlobalTheory.T.unitVacuum_eq_smul_product_arrow_vacua hL W ρ i j AV AV₁ hV hV₁ Λ hΛ tB _ mB
+  obtain ⟨cA', hcA, kA⟩ := _root_.GlobalTheory.TopFlip.VacRouteBig.vac_eq_smul_vacA hL W ρ i j AV AV₁ hV hV₁ Λ hΛ tA _ mA
+  obtain ⟨cB, hcB, kB⟩ := _root_.GlobalTheory.TopFlipVacB.vac_eq_smul_vacB hL W ρ i j AV AV₁ hV hV₁ Λ hΛ tB _ mB
   obtain ⟨y, hy⟩ := GlobalTheory.RecDict.exists_isDetRoot D _ h
   refine ⟨h, hh, cA', cB * (L.xi μ₀ y : ℂ)⁻¹, y, hcA, mul_ne_zero hcB (inv_ne_zero (Circle.coe_ne_zero _)), fun t => ⟨?_, ?_⟩⟩
   · have he := hI.idem t
@@ -99,7 +99,7 @@ theorem exists_move (hL : L.Is μ₀) (hst : ∀ t, SquareStanding G t) {W : G.W
     rwa [eA] at this
   · have he := hI.idem t
     have f1 := hI.snd t
-    rw [x2, x3, GlobalTheory.T.standardPairSecondMember_eq_prod_local_gridBases hL B t i j X _ he] at f1
+    rw [x2, x3, _root_.GlobalTheory.TopFlip.StdSnd.stdSnd_eq_prodB hL B t i j X _ he] at f1
     have k : X.ω' t (1, h) X.vac' = (cB * (L.xi μ₀ y : ℂ)⁻¹ * (L.xi t y : ℂ)) • vacB ρ i j := by
       refine (om_compare (hI.weil' μ₀) (hI.weil' t) hy vB.2.theta).trans ?_
       rw [kB, smul_smul]

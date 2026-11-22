@@ -5,7 +5,8 @@ import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LatNormGrL
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsCompletedStrictHens
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapStalkMap
 import Development.WeilBound.CoreStatements.HodgeTatePoints.MaBase
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DominatesOfCoordsRegularStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DominatesOfCoordsRegular
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EtaleLocalizationAtPrimeTensorOfLowHeight
 open AlgebraicGeometry CategoryTheory GlobalTheory.CompanionTheory.Ar NumberField
 
 namespace PositivityTheory.HtPt.Mb.LMorph.ChMorph
@@ -73,7 +74,7 @@ theorem existsUnique_dominates :
       (M' : PModel o' y) (i : Ω →+* Ω'), (∀ p', p' ∈ ctrSet o x i M'.ξ) →
       ∃! f : M'.X ⟶ M.X, Dominates M'.ξ M.ξ f i := by
   intro o _ Ω _ _ κ _ x M o' _ Ω' _ _ κ' _ y M' i h
-  obtain ⟨f, hf, -⟩ := GlobalTheory.T.dominates_of_coords_regular M.X Ω M.ξ o κ x M'.X Ω' M'.ξ i M.tie M'.tie.gen M'.all
+  obtain ⟨f, hf, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.CoordMap.exists_dominating_map M.X Ω M.ξ o κ x M'.X Ω' M'.ξ i M.tie M'.tie.gen M'.all
     (fun r p' => by
       obtain ⟨c, -, H⟩ := h p'
       exact H _ (Subalgebra.algebraMap_mem _ r))

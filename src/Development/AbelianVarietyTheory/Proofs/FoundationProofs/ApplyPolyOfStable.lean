@@ -8,7 +8,8 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeOperatorCom
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularTowerBAdmissibleHeckeCommute
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CuspFunctionalValueModPrimePowUniqueOddWeight
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaLatticeDiamondAction
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsInertiaFixedNearAlmostFixedCoefficientsStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsInertiaFixedNearAlmostFixedCoefficients
+import Development.AbelianVarietyTheory.Definitions.Foundations.HtCoIOfEq
 
 noncomputable section
 
@@ -35,7 +36,7 @@ theorem exists_fixed_near (c : Coef l) (y : ℂ_[l]) (C : ℝ)
       ∀ τ : Qbar l ≃ₐ[ℚ_[l]] Qbar l, (∀ b ∈ c.O, τ b = b) → (∀ z : Qbar l, ‖z‖ ≤ 1 → ‖τ z - z‖ < 1) →
         ‖τ x - x‖ ≤ C * ‖((l : ℕ) : Qbar l) ^ n‖) (δ : ℝ) (hδ : 0 < δ) :
     ∃ z : Qbar l, FixIc c z ∧ ‖(z : ℂ_[l]) - y‖ ≤ δ := by
-  obtain ⟨c₁, hc₁⟩ := GlobalTheory.T.exists_inertiaFixed_near_almostFixed_coefficients l c
+  obtain ⟨c₁, hc₁⟩ := _root_.GlobalTheory.PerFix.exists_fixed_near l c
   obtain ⟨k, hk⟩ := exists_le_l_pow l C
   have ht : Filter.Tendsto (fun n : ℕ => (l : ℝ) ^ k * (l : ℝ) ^ c₁ * ‖((l : ℕ) : Qbar l) ^ n‖) Filter.atTop (nhds 0) := by
     simp_rw [norm_pow]

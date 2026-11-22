@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GgNone
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemPerpSpan
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SpanToZero
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianFrameCoordinatesTransportInnerLattices
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FramePairCoordinatesTransportInnerLatticesStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FramePairCoordinatesTransportInnerLattices
 open ValuativeRel Formalism.MainNotions.S Formalism.MainNotions.S.Loc GlobalTheory.HL
 open scoped Pointwise ENNReal Classical
 
@@ -183,7 +183,7 @@ theorem isTermW_iff : ∀ {F : Type} [Field F] [ValuativeRel F] [TopologicalSpac
   haveI := hM.char0
   obtain ⟨hth, hN, hN', -⟩ := GlobalTheory.HL.CoordUnip.transport M hM H r k P S c
   obtain ⟨-, iA, -, sA⟩ := _root_.GlobalTheory.HL.CoordInnerFst.transport M hM H r k P S c
-  obtain ⟨-, iB, -, sB⟩ := GlobalTheory.T.framePairCoordinates_transport_innerLattices M hM H r k P S c
+  obtain ⟨-, iB, -, sB⟩ := _root_.GlobalTheory.HL.CoordInnerSnd.transport M hM H r k P S c
   have hA := (iA d.L).1 d.hL
   have hB := (iB d.L').1 d.hL'
   have eA : Λ = LocNG.img n (P.A.LamStd d.L) ↔

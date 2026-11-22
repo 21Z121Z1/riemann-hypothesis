@@ -3,7 +3,7 @@ import Development.WeilBound.ThetaLifts.LatticeBasics.HypothesesE
 import Development.WeilBound.ThetaLifts.LatticeBasics.UnfoldC
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EmbBar
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegersBoundedEmbeddingsCount
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DenominatorBoundByHeightStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DenominatorBoundByHeight
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuadraticIntegralCoefficientsBound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SummableHeightPowOfPolynomialCount
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeftInvertibleExistsNonzeroMinor
@@ -145,8 +145,8 @@ theorem denom_one (hcm : IsCMExt F E σ) {u : J → E} {f₀ : J} (hu : u f₀ =
       refine hs.subset fun v hv hv' => hv ?_
       exact le_antisymm ((hy v).trans (le_of_eq hv')) (le_max_left _ _)
     exact finprod_le_finprod' hsub hs hy
-  obtain ⟨m₁, p₁, l₁, i₁⟩ := GlobalTheory.T.denominator_bound_by_height F y₁
-  obtain ⟨m₂, p₂, l₂, i₂⟩ := GlobalTheory.T.denominator_bound_by_height F y₂
+  obtain ⟨m₁, p₁, l₁, i₁⟩ := _root_.GlobalTheory.CompanionTheory.GodementH.Den.denominator_le F y₁
+  obtain ⟨m₂, p₂, l₂, i₂⟩ := _root_.GlobalTheory.CompanionTheory.GodementH.Den.denominator_le F y₂
   refine ⟨m₁ * m₂, Nat.mul_pos p₁ p₂, ?_, ?_⟩
   · rw [sq]; push_cast
     exact mul_le_mul' (l₁.trans (hsup _ fun v => (hloc v).1)) (l₂.trans (hsup _ fun v => (hloc v).2))

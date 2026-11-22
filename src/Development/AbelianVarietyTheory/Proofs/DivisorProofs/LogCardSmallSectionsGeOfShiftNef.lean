@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EqOfIsomet
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsAlgClosedBaseChange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyLogNcardSeminormBallOneGe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSeminormBallFamilySectionBalls
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermLineBundlePairBallsFiniteStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermLineBundlePairBallsFinite
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithHilbertSamuelLogBallCountTendsto
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -18,7 +18,7 @@ theorem log_ncard_ball_one_ge_of_shift_nef : GlobalTheory.Published.ArithHilbert
   intro hHS hAC k _ X _ p D hX P b s t hG a c M α t₀ hRep hSI hNef ε hε
   exact _root_.GlobalTheory.VolBr.log_ncard_ball_one_eventually_ge X.functionField (fun m : ℕ => P.H (m * a) (m * c)) (fun m : ℕ => P.Bl (m * a) (m * c))
     (D + 1) (Nat.succ_pos D) (fun m => _root_.GlobalTheory.VolBr.Pair.isBallFam k X p P _ _)
-    (fun m R => GlobalTheory.T.hermLineBundlePair_balls_finite hHS k X p D hX P b s t hG _ _ R hAC)
+    (fun m R => _root_.GlobalTheory.VolBr.BallFinite.bl_finite hHS k X p D hX P b s t hG _ _ R hAC)
     (α / (D + 1).factorial) ((D + 1) * gdeg M D / (D + 1).factorial) t₀
     (fun t ht => _root_.GlobalTheory.VolBr.lc_tendsto_of_rep hHS hAC k X p D hX P a c M α t₀ hRep hSI hNef t ht) ε hε
 

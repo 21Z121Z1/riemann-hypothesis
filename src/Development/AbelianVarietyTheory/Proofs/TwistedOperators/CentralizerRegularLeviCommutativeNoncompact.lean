@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Cuspid
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.StandardMaximalParabolic
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CentralizerTensorForms
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCyclicOfFiniteQuotient
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRationalUnitaryScalingWittFrameStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRationalUnitaryScalingWittFrame
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CommuteOfWittFrameWeights
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsPowArchProjNotMemOfEigenvalueTwo
 
@@ -117,7 +117,7 @@ theorem cent_levi (D : D7) (V : HSp D) (Φ : WittFrame V) (P : Finset (SV (wittI
     have h2 := (GlobalTheory.Cusp.diagH_mem_parab (AF D.host.F)).1 (hl' u hu).2
     have h3 := (GlobalTheory.Cusp.diagH_mem_parab (AF D.host.F)).1 hi'.1
     have h4 := (GlobalTheory.Cusp.diagH_mem_parab (AF D.host.F)).1 hi'.2
-    obtain ⟨g, g1, g2, g3⟩ := GlobalTheory.T.exists_rationalUnitary_scaling_wittFrame D V Φ u
+    obtain ⟨g, g1, g2, g3⟩ := _root_.GlobalTheory.TrScale.exists_scale D V Φ u
     have hc : Commute g γ := _root_.GlobalTheory.Cusp.WeightCommute.commute_of_weights D V Φ u γ g 2 h1 h2 h3 h4 g1 g2 g3
     obtain ⟨x, hxu, hx0⟩ := exists_ne_zero_mem_sub Φ hu0
     obtain ⟨n, hn⟩ := _root_.GlobalTheory.Twist.exists_pow_projArch_not_mem_of_eigen_two D V g x hx0 (g1 x hxu) w _ hK

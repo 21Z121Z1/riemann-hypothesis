@@ -3,11 +3,11 @@ import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TiedAt
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TensorOneApply
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceIdempotentMulIdemSumEqZeroOfNotMem
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StandardLatticeHomCompletionStableSplitIdempoten
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchwartzBruhatHalfEqOfEqOnRationalStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PlaceModelStandardLatticeValuesAreThetaStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchwartzBruhatHalfEqOfEqOnRational
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PlaceModelStandardLatticeValuesAreTheta
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsSchwartzBruhatTensorHalfAddPlaceIdempotent
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsLocalModelTensorWithHalfFunctionStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsPlaceModelTensorIntegralIndicatorStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsLocalModelTensorWithHalfFunction
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsPlaceModelTensorIntegralIndicator
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceIntegralMatrixIndicatorMemSchwartzBruhStatement
 
 noncomputable section
@@ -45,16 +45,16 @@ theorem ratDatum_factor : ∀ (D : D7) (k : Type) [Field k] [ValuativeRel k] [To
   have hf'T : f' = T' Φ' := hθ'.2 T' hT'
   have horth : e * p.e = 0 := _root_.GlobalTheory.LocMod.OutsideOrth.mul_eq_zero D k p P PP e hPP hIdemAt hE
   have hstabp := _root_.GlobalTheory.AdForm.stdHom_map_splitIdem D S T p.e p.split
-  have hθT' := GlobalTheory.T.placeModel_standardLattice_values_are_theta D ψ hψ S T _ (e + p.e) hE' f₀ T' hf₀ hvac hT'
+  have hθT' := _root_.GlobalTheory.LocMod.StdTheta.theta_placeModel_std D ψ hψ S T _ (e + p.e) hE' f₀ T' hf₀ hvac hT'
   have hsb := _root_.GlobalTheory.LocMod.Place.isSBHalf_tensorAt D k p S T Y Y' FS FT e horth hstd hstabp Φ hΦSB
-  have hmodel := GlobalTheory.T.isLocalModel_tensorWithHalfFunction D k p ψ S T Y Y' FS FT e horth Φ hΦSB.1 f₀ T' hT' hθT' hsb
-  have hvacm := GlobalTheory.T.isPlaceModel_tensorIntegralIndicator D k p ψ S T Y Y' FS FT e horth hstd hstabp f₀ T' hT'
+  have hmodel := _root_.GlobalTheory.LocMod.TensorModel.isModel_tensor D k p ψ S T Y Y' FS FT e horth Φ hΦSB.1 f₀ T' hT' hθT' hsb
+  have hvacm := _root_.GlobalTheory.LocMod.TOneModel.isPlaceModel_tensorOne D k p ψ S T Y Y' FS FT e horth hstd hstabp f₀ T' hT'
     (fun Φ₁ h₁ => _root_.GlobalTheory.LocMod.Place.isSBHalf_tensorAt D k p S T Y Y' FS FT e horth hstd hstabp Φ₁ h₁ _ (GlobalTheory.T.splitPlaceIntegralMatrixIndicator_mem_schwartzBruhat k Y Y'))
   have hfT : f = T' (p.tensorOne FS FT Φ) := hθ.2 _ hvacm
   have hπe : p.π e = 0 := pi_eq_zero_of p horth
   have hpe2 : p.e * p.e = p.e := p.split.1
   have hid : Φ' = p.tensorAt FS FT Φ Ξk := by
-    refine GlobalTheory.T.schwartzBruhat_half_eq_of_eq_on_rational D S T _ (e + p.e) hE' Φ' _ hΦ'SB (hsb Ξk hΞk) fun γ => ?_
+    refine _root_.GlobalTheory.RatHalfDense.eq_of_rat D S T _ (e + p.e) hE' Φ' _ hΦ'SB (hsb Ξk hΞk) fun γ => ?_
     rw [hΦ'rat, hΞ']
     have hd : p.down FS FT (γ.map fun a => (e + p.e) * incA D a) = FT.γ * γ.map p.pr * FS.β := by
       unfold Place.down

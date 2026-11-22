@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Ex
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.PairwiseDisjointCell
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HeckeLPartialContinuationHolds
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IwasawaDoubledHermitianSpaceNonsplitPlace
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsUnitaryIsometryIsotropicFrameLocalRingStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsUnitaryIsometryIsotropicFrameLocalRing
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsOfFixedInt
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.StabTransitiveOfLemmas
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsTameFinitePlaceHermitianAll
@@ -110,7 +110,7 @@ theorem exists_stab (O : Subring A) {K : Type} [Field K] (V : ValuationSubring K
       _ = 0 := by rw [show cT σ h.1 * J * h.1 = J from hh, hX, Matrix.mul_zero, Matrix.zero_mul]
   obtain ⟨C, c, h1, h2, h3⟩ := key 1 (one_mem _)
   obtain ⟨C', c', h1', h2', h3'⟩ := key g⁻¹ (inv_mem hg)
-  obtain ⟨k, hk, hkC⟩ := GlobalTheory.T.exists_unitaryIsometry_isotropicFrame_localRing O s (fun x => Subtype.ext (hs x)) ⟨⟨τ, hτO⟩, Subtype.ext hτ⟩
+  obtain ⟨k, hk, hkC⟩ := _root_.GlobalTheory.WittFrame.exists_isometry_frame O s (fun x => Subtype.ext (hs x)) ⟨⟨τ, hτO⟩, Subtype.ext hτ⟩
     (fun u hu' hsu => by
       obtain ⟨b, hb⟩ := hu'.exists_right_inv
       obtain ⟨x, hx, e⟩ := hN u u.2 (congrArg Subtype.val hsu) ⟨b, b.2, congrArg Subtype.val hb⟩

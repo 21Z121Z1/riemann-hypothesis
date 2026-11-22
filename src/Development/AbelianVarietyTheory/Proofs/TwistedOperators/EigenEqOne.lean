@@ -5,9 +5,9 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AntiCols
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsComplementaryAdelicSchwartzTensorNeZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjMemAdelicSchwartzSpaceNumberFieldOfMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDiagMemDoubledVacuumLatticeStabilizerStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDiagOneNegOneConjAntidiagonalStabilizerMemStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DoubledWeilSplitPlaceVacuumEigenfunctionStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DoubledVacuumEigenvalueEqOneSplitPlaceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDiagOneNegOneConjAntidiagonalStabilizerMem
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DoubledWeilSplitPlaceVacuumEigenfunction
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DoubledVacuumEigenvalueEqOneSplitPlace
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DoubledStabilizerGeneratedDiagAntidiagSplitPlace
 
 open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.WeilM GlobalTheory.AdelicU GlobalTheory.LFun GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels
@@ -44,15 +44,15 @@ theorem eigen_eq_one : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Num
         conv_lhs => rw [← hx]
         rw [← Module.End.mul_apply, ← map_mul, inv_mul_cancel, map_one, Module.End.one_apply] }
   have hD : ∀ p ∈ GlobalTheory.DblVac.KD σ G.W v, p ∈ GlobalTheory.DblVac.PDiag σ G.W → p ∈ H := fun p hp hpd => by
-    obtain ⟨μ, hμ⟩ := GlobalTheory.T.doubledWeil_split_place_vacuum_eigenfunction F E σ B a a' G X om om' hT v hs hv hψ dd omd hdc hsp r hr p hp
-    have h1 := GlobalTheory.T.doubledVacuum_eigenvalue_eq_one_splitPlace F E σ B a a' G X om om' hT v hs hv hψ dd omd hdc hsp r hr hr0 p hp hpd μ hμ
+    obtain ⟨μ, hμ⟩ := _root_.GlobalTheory.DblVacAny.split_eigen F E σ B a a' G X om om' hT v hs hv hψ dd omd hdc hsp r hr p hp
+    have h1 := _root_.GlobalTheory.DblVacSiegelAny.eigen_eq_one_of_diag_split F E σ B a a' G X om om' hT v hs hv hψ dd omd hdc hsp r hr hr0 p hp hpd μ hμ
     show omd p S = S
     rw [hμ, h1, one_smul]
   have hA : ∀ q ∈ GlobalTheory.DblVac.KD σ G.W v, q ∈ GlobalTheory.DblVac.PAnti σ G.W → q ∈ H := fun q hq hqa => by
-    obtain ⟨w₀, hw₀, hW⟩ := GlobalTheory.T.exists_diagOneNegOne_conj_antidiagonalStabilizer_mem σ G.W v
+    obtain ⟨w₀, hw₀, hW⟩ := _root_.GlobalTheory.DblVacFlip.flipPt_conj_anti_diag σ G.W v
     obtain ⟨h1, h2⟩ := hW q hq hqa
     have hq' : omd (w₀ * q * w₀⁻¹) S = S := hD _ h1 h2
-    obtain ⟨μ, hμ⟩ := GlobalTheory.T.doubledWeil_split_place_vacuum_eigenfunction F E σ B a a' G X om om' hT v hs hv hψ dd omd hdc hsp r hr w₀ hw₀
+    obtain ⟨μ, hμ⟩ := _root_.GlobalTheory.DblVacAny.split_eigen F E σ B a a' G X om om' hT v hs hv hψ dd omd hdc hsp r hr w₀ hw₀
     have hinv : μ • omd w₀⁻¹ S = S := by
       rw [← LinearMap.map_smul, ← hμ, ← Module.End.mul_apply, ← map_mul, inv_mul_cancel, map_one,
         Module.End.one_apply]

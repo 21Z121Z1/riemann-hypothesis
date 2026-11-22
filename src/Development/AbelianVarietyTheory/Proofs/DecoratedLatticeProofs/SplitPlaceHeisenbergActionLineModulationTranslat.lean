@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HermitianL
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TraceInverseGramConjSmulEq
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.KappaSplitHalfPointMultipliesByCharacter
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.KappaConjugateHalfPointTranslatesLastColumn
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ConjugateHalfPointNegMultipliesByCharacterStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ConjugateHalfPointNegMultipliesByCharacter
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum MeasureTheory IsDedekindDomain NumberField Matrix
 open GlobalTheory.MixModel GlobalTheory.MixPer GlobalTheory.Grow GlobalTheory.Unf GlobalTheory.LatPair GlobalTheory.SplitWeil ValuativeRel IsLocalRing
@@ -157,7 +157,7 @@ theorem line_act : ∀ (D : D7) (k : Type) [Field k] [ValuativeRel k] [Topologic
       · congr 1; ext i j; simp [Matrix.add_apply, h1ar]
       · congr 1; funext j; simp [Matrix.add_apply, h1ar, sub_eq_add_neg]
   · obtain ⟨h2h, h2r⟩ := _root_.GlobalTheory.FinPl.LineAct.kappa_wCol_translate D k p n n' (σ + 1) B B'.L W₀ B'.ζ l B'.line α α₀ β hα t
-    obtain ⟨h2bh, h2bm⟩ := GlobalTheory.T.conjugateHalfPoint_neg_multiplies_by_character D k p ψ χ hχ n n'' B'.V₀ B'.A B'.L W₀ B'.o B'.ζ B'.line β γ γ₀ hγ t
+    obtain ⟨h2bh, h2bm⟩ := _root_.GlobalTheory.FinPl.LineAct.ConjModul.conj_half_modul D k p ψ χ hχ n n'' B'.V₀ B'.A B'.L W₀ B'.o B'.ζ B'.line β γ γ₀ hγ t
     refine ⟨wCol p B'.ζ β t, fun L₁ L₂ f₁ Ψ₁ a Ξ h => ?_, fun L₂' L₃ f₂ Ψ₂ b Ξ h => ?_⟩
     · refine over_trans h h2h (tensCol_sub_mem t h.2.2.2.1) fun x hx => ?_
       simp only [tensCol, GlobalTheory.FinPl.OverProof.rd_add]

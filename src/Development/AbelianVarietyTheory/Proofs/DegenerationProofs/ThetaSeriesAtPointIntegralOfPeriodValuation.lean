@@ -5,10 +5,10 @@ import Development.AbelianVarietyTheory.Definitions.Degenerations.CompanionTheor
 import Development.AbelianVarietyTheory.Statements.SemistableTorsion.UTorsSt
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IntegralDegenerationFamilyBaseChangeExtensionFie
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUnitCharts
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ValuationsTorusExtensionPointsStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ValuationsTorusExtensionPoints
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.GtAddIotaSubExist
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIntegralPointOfTorusPointValuationZeroStatement
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusCoordUnitAndSectionEqExpansionStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIntegralPointOfTorusPointValuationZero
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusCoordUnitAndSectionEqExpansion
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.UniformisedTestDimensionsAndSplitFibre
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SeriesProportionalAddIotaIff
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsTorusExtensionParameterGenericFibrePoint
@@ -103,7 +103,7 @@ theorem main : GlobalTheory.UT.LL → UTorsSt → ∀ (o Ω : Type) [CommRing o]
   obtain ⟨-, hsep, hon⟩ := _root_.GlobalTheory.ZH.AdaptedSep.basis_separates hL o Ω S ρ p y₀ u l S.N hN S.J σ cls f hB
   obtain ⟨a, rfl⟩ := hon a ha
   obtain ⟨g, hg⟩ := _root_.GlobalTheory.ZH.exists_parAt hL hT o Ω S ρ p y₀ u l a
-  obtain ⟨-, hex, huq, hadd, hι⟩ := GlobalTheory.T.valuations_torusExtension_points hL o Ω S ρ p y₀ u l
+  obtain ⟨-, hex, huq, hadd, hι⟩ := _root_.GlobalTheory.ZH.TorusVal.main hL o Ω S ρ p y₀ u l
   obtain ⟨ν, hν⟩ := hex g
   have hs : ∀ i, ∃ s : Fam u.D.toPre (PadicAlgCl p) S.N, FamOf u.D.toPre _ (f i) s := fun i => by
     obtain ⟨s, hs⟩ := hB.2.2.2.2.1 i
@@ -132,11 +132,11 @@ theorem main : GlobalTheory.UT.LL → UTorsSt → ∀ (o Ω : Type) [CommRing o]
       have := congrFun e α
       rw [Pi.add_apply, hm α] at this
       exact right_eq_add.1 this
-    obtain ⟨c, hc, hlev⟩ := GlobalTheory.T.exists_integralPoint_of_torusPoint_valuationZero hL o Ω S ρ p y₀ u g' (e0 ▸ hν')
+    obtain ⟨c, hc, hlev⟩ := _root_.GlobalTheory.GtDescent.exists_integral_point hL o Ω S ρ p y₀ u g' (e0 ▸ hν')
     obtain ⟨a', ha'⟩ := hon (gPt p ≫ c) (by rw [Category.assoc, hc])
     have hp' : u.ParAt S.N a' g :=
       (_root_.GlobalTheory.ZH.IotaShift.parAt_add_iota hL o Ω S ρ p y₀ u S.N a' g' h g m hN1 hh hg').1
-        ((GlobalTheory.T.torusCoord_unit_and_section_eq_expansion hL o Ω S ρ p y₀ u c g' a' hc ha'.symm hlev).2 S.N hN1)
+        ((_root_.GlobalTheory.ZH.IntegralSum.gtN_zero_and_parAt hL o Ω S ρ p y₀ u c g' a' hc ha'.symm hlev).2 S.N hN1)
     obtain ⟨w', hw'⟩ := CrdCalc.crd_exists (DVR.linComb_isLB _ u.U.LG.isLB _ _) σ (u.toG a')
     obtain ⟨κ', hκ', hsum'⟩ := hasSum_crd u hB.2.2.2.1 hs hp' hfr hw'
     have h₁ := CrdCalc.crd_smul (Units.mk0 κ hκ) hw

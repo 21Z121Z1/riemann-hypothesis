@@ -11,7 +11,7 @@ import Development.AbelianVarietyTheory.Statements.HyperbolicHypotheses.Hypothes
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsFramedPointBaseChangeAlgebraMap
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrameChangeExistsUniqueOfSamePoint
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FramedModuliAlgebraicLawsChartWeightIntegralityStatement
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsThetaPtStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsThetaPt
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ThetaPointsFrameRatio
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsChartHolomorphicCoordinatesNearFrame
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.DifferentiableOnExponentialFrameMatrix
@@ -95,11 +95,11 @@ theorem differentiableOn_rdU : Out.SecBaseChangeSt → Out.SecTwistSt → ∀ (E
   · rw [h0]
     exact differentiableOn_empty
   have hx₀' : T.co.symm x₀ ∈ T.co ⁻¹' (M.X k).dom := by simpa using hx₀
-  obtain ⟨y₀, -⟩ := GlobalTheory.T.exists_isThetaPt' htw E H Dw l Xo c σ g e F r M k T _ hx₀' 1 one_ne_zero
+  obtain ⟨y₀, -⟩ := _root_.GlobalTheory.FrameUnif.ThetaPtEx.exists_thetaPt htw E H Dw l Xo c σ g e F r M k T _ hx₀' 1 one_ne_zero
   have hy1 : ∀ b, ∃ y : FrPt Xo c (CAt σ), b ∈ T.co ⁻¹' (M.X k).dom → IsThetaPt T b 1 y := by
     intro b
     by_cases hb : b ∈ T.co ⁻¹' (M.X k).dom
-    · obtain ⟨y, hy⟩ := GlobalTheory.T.exists_isThetaPt' htw E H Dw l Xo c σ g e F r M k T b hb 1 one_ne_zero
+    · obtain ⟨y, hy⟩ := _root_.GlobalTheory.FrameUnif.ThetaPtEx.exists_thetaPt htw E H Dw l Xo c σ g e F r M k T b hb 1 one_ne_zero
       exact ⟨y, fun _ => hy⟩
     · exact ⟨y₀, fun h => absurd h hb⟩
   choose y hy using hy1

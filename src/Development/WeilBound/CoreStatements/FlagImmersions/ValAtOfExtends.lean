@@ -4,7 +4,11 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackCor
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelActionBaseChange
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsTransition
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenFrameIffEigenspaceBasisStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenFrameIffEigenspaceBasis
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GermSys
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeAt
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.LawsProved
 
@@ -215,7 +219,7 @@ theorem intFrames : IntFrames := by
     have hsum : ∀ cf : Fin n → V, algebraMap V L ∘ (∑ k, cf k • xV k) = ∑ k, cf k • x k := fun cf => by
       ext i; simp [Finset.sum_apply, hxe, Algebra.smul_def]
     refine ⟨σ, fun k => MT.pt (xV k), rfl, ?_, fun k => ⟨(MK.pt (x k)).left, hU _, ?_⟩⟩
-    · refine (GlobalTheory.T.eigen_frame_iff_eigenspace_basis _ V T.G (𝟙 _) _ MT _ T.act ρV σ n xV aT).2 ⟨fun k => (heig _).2 (hxe k ▸ (hmem k).2), ?_⟩
+    · refine (_root_.GlobalTheory.CompanionTheory.Ar.Flat.LieEigFrame.isEigFrame_pt_iff _ V T.G (𝟙 _) _ MT _ T.act ρV σ n xV aT).2 ⟨fun k => (heig _).2 (hxe k ▸ (hmem k).2), ?_⟩
       intro e he
       have h1 : algebraMap V L ∘ e ∈ Submodule.span V (Set.range x) := by
         rw [hspan]

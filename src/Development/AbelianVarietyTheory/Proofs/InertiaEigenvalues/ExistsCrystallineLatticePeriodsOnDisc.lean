@@ -4,11 +4,11 @@ import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bh
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFinExt
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CrystallineLatticeBasisSpanInvariantsStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsInvertibleInvariantPeriodMatrixBcris
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PeriodRingCoreCrystallineDeRhamInvariantsStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFrobeniusMatrixCrystallineModuleOverWittStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PeriodRingCoreCrystallineDeRhamInvariants
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFrobeniusMatrixCrystallineModuleOverWitt
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BcrisPeriodMatrixOverAcris
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CrysLatticeBasisMemSumDeRhamFiltrationStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsBdRPlusLatticeGeneratorsDdRStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsBdRPlusLatticeGeneratorsDdR
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsModificationOfFiltration
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CrystallineLatticeDiscPeriodDataOfAcrisPeriods
 
@@ -31,12 +31,12 @@ theorem exists_seed : ∀ (l : ℕ) [Fact l.Prime] (K : FinExt l) (bk : BK K) (�
   set ρm : ↥(GK K) → Matrix (Fin d) (Fin d) ℤ_[l] := fun g => LinearMap.toMatrix b b (actT L g) with hρm
   have hv0 := GlobalTheory.T.crystallineLattice_basis_span_invariants l K P AI T V ρ L hcrys d b
   obtain ⟨U, U', hUU', hU⟩ := _root_.GlobalTheory.Per.PerMat.exists_invertible_invariant l K P AI T d ρm hv0
-  obtain ⟨hInvB, hInvdR⟩ := GlobalTheory.T.periodRingCore_crystalline_deRham_invariants l P AI T C hC
-  obtain ⟨c₁, c₃, F, F', hFF', hF⟩ := GlobalTheory.T.exists_frobeniusMatrix_crystallineModule_over_witt l K bk C hInvB d ρm U U' hUU' hU
+  obtain ⟨hInvB, hInvdR⟩ := _root_.GlobalTheory.MemLoc.fits_inv l P AI T C hC
+  obtain ⟨c₁, c₃, F, F', hFF', hF⟩ := _root_.GlobalTheory.SeedF.frob_matrix l K bk C hInvB d ρm U U' hUU' hU
   obtain ⟨N₀, hN₀⟩ := _root_.GlobalTheory.CrisPeriods.periods_over_Acris l K P AI T C hC bk d ρm U U' hUU' hU c₁ F hF
   have hv2 := GlobalTheory.T.crysLattice_basis_mem_sum_deRham_filtration l K P AI T V ρ L hcrys d b
   obtain ⟨N, m, k, c, β, hN, hk, hUN, hUc, hβ, hUcβ⟩ :=
-    GlobalTheory.T.exists_bdRPlus_lattice_generators_ddR l K P AI T C hC hInvdR d ρm U U' hUU' hU hv2 N₀
+    _root_.GlobalTheory.BdRLatticeGens.exists_lattice_generators l K P AI T C hC hInvdR d ρm U U' hUU' hU hv2 N₀
   have hUU'ι : U.map C.ι * U'.map C.ι = 1 := by
     rw [← Matrix.map_mul, hUU', Matrix.map_one _ (map_zero _) (map_one _)]
   obtain ⟨c₂, X, X', hXX', hnp, hX, hX'⟩ :=

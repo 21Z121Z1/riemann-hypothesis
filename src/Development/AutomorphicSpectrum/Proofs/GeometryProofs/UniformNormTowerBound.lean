@@ -240,7 +240,7 @@ theorem homN_eq_of_frBor {σ : c.F →+* ℂ} (U : Unf Xo c σ r) (hσ : GoodEmb
   · push_neg at hanti
     obtain ⟨τ, i, j, hij, hlt⟩ := hanti
     have hij' : i < j := lt_of_le_of_ne hij (by rintro rfl; exact lt_irrefl _ hlt)
-    have h0 := GlobalTheory.T.integerExponentSection_eq_zero_of_increasing_flag E H Dw l Xo c _ τ i j hij' hlt f hf
+    have h0 := _root_.GlobalTheory.IncrZero.secZ_eq_zero_of_lt E H Dw l Xo c _ τ i j hij' hlt f hf
     subst h0
     simp [GlobalTheory.AllWt.homN, GlobalTheory.AllWt.ptN, Data.pnorm]
 
@@ -258,7 +258,7 @@ theorem continuousOn_homN {σ : c.F →+* ℂ} (U : Unf Xo c σ r) (hU : IsUnf U
     · push_neg at hanti
       obtain ⟨τ, i, j, hij, hlt⟩ := hanti
       have hij' : i < j := lt_of_le_of_ne hij (by rintro rfl; exact lt_irrefl _ hlt)
-      rw [GlobalTheory.T.integerExponentSection_eq_zero_of_increasing_flag E H Dw l Xo c _ τ i j hij' hlt f hf, map_zero]
+      rw [_root_.GlobalTheory.IncrZero.secZ_eq_zero_of_lt E H Dw l Xo c _ τ i j hij' hlt f hf, map_zero]
       exact continuousOn_const
   have h2 : ContinuousOn (fun y => GlobalTheory.AllWt.lieFacZ Dw x (GlobalTheory.AllWt.wtOf Dw u 0) * (‖rdU U f k y‖ *
       (U.X k).nfac (GlobalTheory.AllWt.modelWt U (GlobalTheory.AllWt.wtOf Dw u 0) k) y)) (U.X k).dom :=

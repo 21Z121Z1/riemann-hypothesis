@@ -3,8 +3,8 @@ import Development.AbelianVarietyTheory.Definitions.Foundations.PetEqRelIndexMul
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CuspFormGamma1InterGamma0SlashRatIsZeroAt
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MdifferentiableHeckeOperatorsExplicit
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeTSlashInvariant
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeUOperatorExplicitEqSumSlashStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PowSmulHeckeVOperatorExplicitEqSlashDiagStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeUOperatorExplicitEqSumSlash
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PowSmulHeckeVOperatorExplicitEqSlashDiag
 open UpperHalfPlane ModularForm CongruenceSubgroup MeasureTheory
 open scoped MatrixGroups ModularForm Manifold
 
@@ -46,7 +46,7 @@ theorem heckeT_cuspForm : ∀ (N l q : ℕ) (k : ℤ) (σ : SL(2, ℤ)), 0 < N �
     exact hinv γ hγ
   · intro c hc
     show c.IsZeroAt (GlobalTheory.Hk.heckeT k q σ ⇑f) k
-    rw [GlobalTheory.Hk.heckeT, GlobalTheory.T.heckeUOperatorExplicit_eq_sum_slash q k (⇑f) hq0, GlobalTheory.T.pow_smul_heckeVOperatorExplicit_eq_slash_diag q k _ hq0, ModularForm.SL_slash,
+    rw [GlobalTheory.Hk.heckeT, _root_.GlobalTheory.Hk.uOp_eq_sum_slash q k (⇑f) hq0, _root_.GlobalTheory.Hk.smul_vOp_eq_slash q k _ hq0, ModularForm.SL_slash,
       ← SlashAction.slash_mul]
     refine OnePoint.IsZeroAt.add (isZeroAt_sum _ _ fun j _ => ?_) ?_
     · exact _root_.GlobalTheory.Hk.cuspForm_slash_rat_isZeroAt N l k _ hN hl (by simp [Matrix.det_fin_two_of]; exact_mod_cast hq0) f c hc

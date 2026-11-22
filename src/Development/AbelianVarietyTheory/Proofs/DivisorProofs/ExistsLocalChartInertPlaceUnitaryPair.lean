@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InclRMulPtAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInertPlaceLocalFieldData
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInertPlaceOrthonormalSelfDualFrame
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInertPlaceSeesawWScalarFrameStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInertPlaceSeesawWScalarFrame
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorHermitianFormInertPointEqLocalForm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InertPlacePointSupportedAndSurjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InertPointMemTensorLatticeIffIntegralCoords
@@ -30,7 +30,7 @@ theorem exists_chart : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Num
   have h : w.under (𝓞 F) = v := (InertChart.under_eq_iff hw w).2 rfl
   obtain ⟨ϖ, σL, q, ψL, hc, hU, hodd, hpi, hpn, hψ⟩ := _root_.GlobalTheory.InertPsi.exists_field_data F E σ B hTr.base v w hw h
   obtain ⟨A, hAf, hA⟩ := _root_.GlobalTheory.InertUnitFrame.exists_frame_one F E σ B a a' G hTr.base hTr.geo v w hw h σL hc
-  obtain ⟨δ, Bm, hδ1, hδ2, hBf, hB⟩ := GlobalTheory.T.exists_frame_conjTranspose_mul_eq_smul_one F E σ B a a' G hTr.base hTr.geo v w hw h σL hc
+  obtain ⟨δ, Bm, hδ1, hδ2, hBf, hB⟩ := _root_.GlobalTheory.SkewFrameInert.exists_inertPlace_seesawW_scalar_frame F E σ B a a' G hTr.base hTr.geo v w hw h σL hc
   have hσσ : ∀ x, σL (σL x) = x := hU.1
   have hmapσσ : ∀ {k : ℕ} (M : Matrix (Fin k) (Fin k) (w.adicCompletion E)), (M.map σL).map σL = M := fun M =>
     Matrix.ext fun i j => hσσ _

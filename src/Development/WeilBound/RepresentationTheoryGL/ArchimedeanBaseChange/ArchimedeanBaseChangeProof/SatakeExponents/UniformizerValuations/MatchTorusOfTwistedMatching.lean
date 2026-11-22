@@ -38,7 +38,7 @@ theorem matchTOf2 : MatchTOf2 := by
   intro hM4 hFU hD hLin E _ _ _ hU w hw n a ha b hb ϖ hϖ J _ c x hx k hk
   obtain ⟨k, rfl⟩ : ∃ k', k = k' + 1 := ⟨k - 1, by omega⟩
   obtain ⟨J', _, c', x', hx', e1, e2⟩ := GlobalTheory.CompanionTheory.MatchPow.pow_claim hFU hD hU hw a hb hϖ c x hx k
-  have hc : Continuous (cj w) := (GlobalTheory.T.placeConjugation_properties_cmField E hU w).1
+  have hc : Continuous (cj w) := (_root_.GlobalTheory.ConjAtPlace.main E hU w).1
   have hoU := GlobalTheory.CompanionTheory.IwLevels.isOpen_iwU n w b
   have hoG := GlobalTheory.CompanionTheory.MatchPow.iwahori_pair_open a (n - a) w
   have hm := hLin E hU n a (n - a) w 1 J' (fun j => GlobalTheory.CompanionTheory.MatchPow.alpha n w b ^ k * c' j)

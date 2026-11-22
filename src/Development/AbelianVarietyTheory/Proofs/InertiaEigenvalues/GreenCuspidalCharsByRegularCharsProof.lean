@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.ArithmeticCylinders
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.GreenRegularCharacters
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCuspidalCharacterOfRegularCharacterGLn
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MonicIrreducibleInjectRegularCharacterOrbitsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MonicIrreducibleInjectRegularCharacterOrbits
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardCuspidalMultisetsTotalDegreeLe
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NcardMonicNatDegreeCoeffZeroNeZero
 
@@ -27,7 +27,7 @@ theorem family (g : ℕ) [Fact g.Prime] (e : ℕ) (he : 0 < e) (K : Type) [Field
     ∃ L : (ZMod g)[X] → Gn g e → ℂ,
       (∀ P, IsPrimeLab e P → IsCusp (L P) ∧ ∃ θ, IsRegularChar g e θ ∧ L P = τ θ) ∧
       ∀ P P', IsPrimeLab e P → IsPrimeLab e P' → L P = L P' → P = P' := by
-  obtain ⟨c, hc1, hc2⟩ := GlobalTheory.T.monicIrreducible_inject_regularCharacterOrbits g e he K hK
+  obtain ⟨c, hc1, hc2⟩ := _root_.GlobalTheory.PrimeLabOrbit.primeLab_to_regularChar g e he K hK
   refine ⟨fun P => τ (c P), fun P hP => ⟨h1 _ (hc1 P hP), c P, hc1 P hP, rfl⟩, ?_⟩
   intro P P' hP hP' h
   exact hc2 P P' hP hP' ((h2 _ _ (hc1 P hP) (hc1 P' hP')).mp h)

@@ -17,10 +17,10 @@ import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomology
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.TotPairing
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousCochainFiltrationDecomposition
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.GrCechFin
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HodgeFormCupWedgeStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HodgeFormCupWedge
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HodgeFormOneStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HodgeFormIsoOfBijective
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AffineSmoothFormsBijectiveStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AffineSmoothFormsBijective
 
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false
@@ -42,6 +42,6 @@ theorem hdg_aff_iso_onto (hA : CrystallineSemistableComparison.Onto.AffOm) (hN :
       (x : HT.Hdg q a a) (y : HT.Hdg q b b),
       e q c (HT.cupH q h h x y) = ε a b • wedgeOm K (Sec q ⊤) h (e q a x) (e q b y)) ∧
     ∀ {X : Scheme.{0}} (q : X ⟶ Spec (CommRingCat.of K)) [IsAffine X] [Smooth q], e q 0 (HT.oneH q) = oneOm K (Sec q ⊤) :=
-  asm_onto hA hN _root_.GlobalTheory.CompanionTheory.HodgeFormTop.main GlobalTheory.T.affine_smooth_forms_bijective _root_.GlobalTheory.CompanionTheory.OmNatT.pull_nat GlobalTheory.T.hodge_form_cup_wedge GlobalTheory.T.hodge_form_one
+  asm_onto hA hN _root_.GlobalTheory.CompanionTheory.HodgeFormTop.main _root_.GlobalTheory.CompanionTheory.OmGlue.om_top _root_.GlobalTheory.CompanionTheory.OmNatT.pull_nat _root_.GlobalTheory.CompanionTheory.OmCup.main GlobalTheory.T.hodge_form_one
 
 end CrystallineSemistableComparison.Om.L2

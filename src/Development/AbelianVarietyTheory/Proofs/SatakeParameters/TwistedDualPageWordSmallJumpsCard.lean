@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Alternates
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 import Formalism.FrobeniusOrbits.HostCorollaries
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TwistedDualOrbitPageWordBox
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CloudLowJumpsReflectAndCardStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CloudLowJumpsReflectAndCard
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CardSmallTwistedDualJumpsEqRankStatement
 
 open GlobalTheory.HTW Formalism.BasicNotions Formalism.FrobeniusOrbits
@@ -24,7 +24,7 @@ theorem twistedDualPageWord_small_jumps_card : ∀ {D : D7} (L : SizeData₂ D) 
       exact L.be_close _ a j
   refine ⟨fun i => ⟨fun u hu => ?_, (hcount i).le⟩, fun i => ⟨?_, hcount i⟩⟩
   · exact Multiset.mem_of_le
-      ((GlobalTheory.T.cloudLowJumps_reflect_and_card (hcAt D (letter τ φ i)) j).2 (pos ε (letter τ φ i))).2.2.2 hu
-  · exact ((GlobalTheory.T.cloudLowJumps_reflect_and_card (hcAt D (letter τ φ i)) j).2 (pos ε (letter τ φ i))).2.2.1
+      ((_root_.GlobalTheory.HTW.jR_symm_card (hcAt D (letter τ φ i)) j).2 (pos ε (letter τ φ i))).2.2.2 hu
+  · exact ((_root_.GlobalTheory.HTW.jR_symm_card (hcAt D (letter τ φ i)) j).2 (pos ε (letter τ φ i))).2.2.1
 
 end GlobalTheory.HTW

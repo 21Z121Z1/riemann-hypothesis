@@ -1,13 +1,15 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SpecStalkSpecializesComp
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SemiabelianLieLatticeEqStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SemiabelianLieLatticeEq
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelFiniteProjective
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCocharLie
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegularLocalRingFractionField
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HeightOnePrimeDvrStalk
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelDescendsBaseChangeStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelDescendsBaseChange
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelIsBaseChange
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeRangeOfStalk
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.PLatticesAgree
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.PHeightOneIntersection
@@ -26,7 +28,7 @@ theorem exists_model (h : IsCptGen ξ) (G : Over X) [GrpObj G] [IsCommMonObj G] 
     ∃ (Ep : Type) (_ : AddCommGroup Ep) (_ : Module (regAt ξ p) Ep) (Mp : LieModel G (regPt h p) Ep)
       (j : Ep →ₗ[regAt ξ p] E), IsBaseChange Ω j ∧
         ∀ e, (M.pt (j e)).left = spMap (dualMap (algebraMap (regAt ξ p) Ω)) ≫ (Mp.pt e).left := by
-  obtain ⟨Ep, i1, i2, Mp, j, hb, hj⟩ := GlobalTheory.T.lie_model_descends_base_change X G (regAt ξ p) Ω (regPt h p) E
+  obtain ⟨Ep, i1, i2, Mp, j, hb, hj⟩ := _root_.GlobalTheory.CompanionTheory.Ar.LieBaseChange.exists_isBaseChange X G (regAt ξ p) Ω (regPt h p) E
     (castPt (spMap_algebraMap_regPt h p).symm M)
   exact ⟨Ep, i1, i2, Mp, j, hb, fun e =>
     (castPt_pt_left (spMap_algebraMap_regPt h p).symm M (j e)).symm.trans (hj e)⟩
@@ -69,7 +71,7 @@ theorem lat_gen (h : IsCptGen ξ) (G : Over X) [GrpObj G] [IsCommMonObj G] [Smoo
   haveI : IsScalarTower (regAt ξ p) (regAt ξ q) Eq := ⟨fun a b c => by
     change (regIncl hs a * b) • c = regIncl hs a • (b • c)
     rw [mul_smul]⟩
-  obtain ⟨Ep, i3, i4, Mp, j, hb, hj⟩ := GlobalTheory.T.lie_model_descends_base_change X G (regAt ξ p) (regAt ξ q) (regPt h p) Eq
+  obtain ⟨Ep, i3, i4, Mp, j, hb, hj⟩ := _root_.GlobalTheory.CompanionTheory.Ar.LieBaseChange.exists_isBaseChange X G (regAt ξ p) (regAt ξ q) (regPt h p) Eq
     (castPt (spMap_regIncl_regPt h hs).symm Mq)
   let jp : Ep →ₗ[regAt ξ p] E :=
     { toFun := fun e => jq (j e)
@@ -155,7 +157,7 @@ theorem lat_eq_of_normal : ∀ (X : Scheme.{0}) (Ω : Type) [Field Ω] (ξ : Sp 
   refine GroundTheory.Heights₂.Heights.Model.LatticesAgree.proof GroundTheory.Heights₂.Heights.Model.HeightOneIntersection.proof (regAt ξ p) Ω E (M.lat p) (M'.lat p) f1 p1 f2 p2 s1 s2 ?_
   intro P hP1
   obtain ⟨q, hs, hdvr, hu, hd⟩ := _root_.GlobalTheory.CompanionTheory.Ar.LieStalk.HeightOne.exists_generisation_of_height_eq_one X Ω ξ hξ hN hnorm p P hP1
-  have hq := GlobalTheory.T.semiabelian_lie_lattice_eq X Ω ξ hξ G G' GΩ φ φ' hS hS' hP hP' E M M' hv q hdvr
+  have hq := _root_.GlobalTheory.CompanionTheory.Ar.DvrExtension.lat_eq_of_dvr X Ω ξ hξ G G' GΩ φ φ' hS hS' hP hP' E M M' hv q hdvr
   ext v
   rw [mem_localizedIn_iff hξ G M hs P hu hd, mem_localizedIn_iff hξ G' M' hs P hu hd, hq]
 

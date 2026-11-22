@@ -10,8 +10,8 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Landherr₂.ExistsNorm
 import Development.AbelianVarietyTheory.Statements.HyperbolicHypotheses.HypothesesInhabitedHyperbolic
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsEqNsmulOfDvdPairing
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsCuspPseudoBasisAdaptedLattice
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExponentMatchingIndependentOfCuspBasisStatement
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.MemPrincipalCongruenceInterCuspCentreIffStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExponentMatchingIndependentOfCuspBasis
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.MemPrincipalCongruenceInterCuspCentreIff
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.MemDualCuspCharacterLatticeIffAdaptedBasis
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CuspPairingIntIffHermitianExponentIntegral
 open NumberField ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.FD Formalism.L2.Pj Formalism.L2.PjFree
@@ -80,12 +80,12 @@ theorem expoMatch_models : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E
   intro E _ _ _ H Dw l Xo σ' g ty F r M ρ hM hA cu₀
   obtain ⟨k, cu₀⟩ := cu₀
   obtain ⟨cu, P, cc', hP, hPe, hne, hΛ⟩ := _root_.GlobalTheory.exists_cusp_pseudoBasis E r ρ (M.X k) cu₀
-  refine GlobalTheory.T.exponentMatching_independent_of_cuspBasis E r ρ l.M (M.X k) cu₀ cu P hP hPe ?_
+  refine _root_.GlobalTheory.CuspBasis.expoMatch_of_basis_change E r ρ l.M (M.X k) cu₀ cu P hP hPe ?_
   intro χ hχ
   let φ : (F.Di k).La →ₗ[𝓞 E] (Fin r → E) := (M.X k).Λ.subtype ∘ₗ (M.φ k).toLinearMap
   have hr : LinearMap.range φ = (M.X k).Λ := by
     simp only [φ, LinearMap.range_comp, LinearEquiv.range, Submodule.map_top, Submodule.range_subtype]
-  have hz := GlobalTheory.T.mem_principalCongruence_inter_cuspCentre_iff E H r ρ (M.X k) l.M (F.Di k) φ cu cc' hr
+  have hz := _root_.GlobalTheory.CuspCentre.mem_zGam_principal_iff E H r ρ (M.X k) l.M (F.Di k) φ cu cc' hr
     ⟨Subtype.val_injective.comp (M.φ k).injective,
       by rw [← LinearMap.coe_range, hr]; exact (M.X k).Λ_span,
       (M.X k).Gm_herm, (M.X k).Gm_det, hM.ef k⟩ (mem_gamma_iff hM hA k) hΛ

@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GeometricallyInt
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsUnitEv
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsWeightedRelationOfMinimalSupport
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFractionEvalSectionAffineNearPointStatement
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsGenericFunctionFieldPointStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsGenericFunctionFieldPoint
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SplitTorusWeightTestGenericPointRationalPointsStatement
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry
 open scoped CategoryTheory.Obj
@@ -126,7 +126,7 @@ theorem exists_ratio_of_weight_sums : ∀ (k : Type) [Field k] [IsAlgClosed k] (
   intro k _ _ G _ hG X _ _ _ i hi U f hU
   obtain ⟨hc, hs, -, -, hgc⟩ := hG
   have : IsIntegral G.left := isIntegral_of_smooth_of_geometricallyConnected G.hom
-  obtain ⟨F, _, g₀, hg, hinj, hσ, hsec⟩ := GlobalTheory.T.exists_generic_functionField_point G.left
+  obtain ⟨F, _, g₀, hg, hinj, hσ, hsec⟩ := _root_.GlobalTheory.SS.WtRat.exists_generic_field_point G.left
   let s : Sp F ⟶ Sp k := g₀ ≫ G.hom
   let g : Over.mk s ⟶ G := Over.homMk g₀ rfl
   let pt (t : 𝟙_ (Over (Sp k)) ⟶ splitTorus (Sp k) X) : Over.mk s ⟶ splitTorus (Sp k) X := toUnit _ ≫ t

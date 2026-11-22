@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TwistedModelAdmissibleCocycles
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.OnePlusPowerAssembly
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ModelSupStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ModelSup
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ModelObjAndAbc
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PhiGammaLatticeFamiliesShiftInclusion
 
@@ -48,7 +48,7 @@ theorem exists_largest_model : ∀ {k G : Type} [Field k] [Group G] {l n : ℕ} 
   obtain ⟨-, hl₀, hab₀, -⟩ := _root_.GlobalTheory.Models.model_obj_and_abc F M A N₀ h₀
   refine exists_greatest_of_sup_closed (fun N => M.Model A N)
     (fun i => sh (-(sg l Dt.h i : ℤ)) (N₀ i)) N₀ h₀ (fun i => ((hl₀ i).shift _).1) (fun N hN i => ?_)
-    (fun N N' => GlobalTheory.T.model_sup_alt F M A N N')
+    (fun N N' => _root_.GlobalTheory.Models.SupModel.model_sup F M A N N')
   obtain ⟨-, hl, hab, -⟩ := _root_.GlobalTheory.Models.model_obj_and_abc F M A N hN
   have h := sh_le_sh (-(sg l Dt.h i : ℤ)) (_root_.GlobalTheory.PhiGam.CloseTw.main (F.D A) Dt.h Dt.w N N₀ hl hl₀ hab hab₀ i)
   rwa [sh_sh_eq, neg_add_cancel, sh_zero_eq] at h

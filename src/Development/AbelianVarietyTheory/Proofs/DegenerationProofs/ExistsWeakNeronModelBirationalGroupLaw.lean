@@ -5,9 +5,9 @@ import Development.AbelianVarietyTheory.Definitions.Degenerations.OfDerivationFn
 import Development.AbelianVarietyTheory.Definitions.Degenerations.PlOrdSomeOfAssociated
 import Development.AbelianVarietyTheory.Statements.SemistableTorsion.SemistableFin
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GeometricallyIntegralIffGeometricallyConnectedOf
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ProdIrrAndWeakNeronStatement
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ModelMapGenericallyOpenImmersionCalculusStatement
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.GenericIsomorphismProductModelsStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ProdIrrAndWeakNeron
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ModelMapGenericallyOpenImmersionCalculus
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.GenericIsomorphismProductModels
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsAutomorphismPermutationMaxOrderMembers
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry
 open scoped CategoryTheory.Obj
@@ -116,10 +116,10 @@ theorem integral_powers {K : Type} [Field K] (A : Over (Sp K)) [GrpObj A] (hA : 
 theorem exists_birLaw : ∀ (R K : Type) [CommRing R] [IsDomain R] [IsLocalRing R] [Field K] [Algebra R K], SH R K → ∀ (A : Over (Sp K)) [GrpObj A] [IsCommMonObj A], IsAbelianScheme A → ∀ (n : ℕ) (M : Fin n → Model R A), (∀ i, (M i).Irr) → WeakNeron M → ∃ N : Model R A, BirLaw N ∧ ∃ c : ℕ, 1 ≤ c ∧ ∀ a : (𝟙_ (Over (Sp K)) ⟶ A), GenIso N N (transl (a ^ c)).hom := by
   intro R K _ _ _ _ _ hSH A _ _ hA n M hI hW
   obtain ⟨h1, h2, h3⟩ := integral_powers A hA
-  obtain ⟨hle, hcomp, hiso, hprod, hstr⟩ := GlobalTheory.T.modelMapGenericallyOpenImmersion_calculus R K hSH
+  obtain ⟨hle, hcomp, hiso, hprod, hstr⟩ := _root_.GlobalTheory.SS.GI.genIso_calculus R K hSH
   have hP : ∀ {B B' : Over (Sp K)} {X : Model R B} {Y : Model R B'}, X.Irr → Y.Irr → (X.prod Y).Irr :=
-    fun {B B' X Y} => (GlobalTheory.T.prod_irr_and_weakNeron' R K hSH B B').1 X Y
-  have hproj := GlobalTheory.T.generic_isomorphism_product_models R K hSH
+    fun {B B' X Y} => (_root_.GlobalTheory.SS.prod_irr_and_weakNeron R K hSH B B').1 X Y
+  have hproj := _root_.GlobalTheory.SS.GenProj.genIso_of_prod R K hSH
   obtain ⟨S, hne, hS1, hS2⟩ := _root_.GlobalTheory.SS.exists_permuted_members R K hSH A hA n M hI hW
   have refl : ∀ {B : Over (Sp K)} {X : Model R B}, X.Irr → GenIso X X (𝟙 B) :=
     fun {B X} h => hle B X X h X.le_refl

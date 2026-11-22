@@ -20,13 +20,13 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Glo
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SymplecticGenerators.SymplecticCharacters.OneEqSpTranslZero
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PolarizedDataFieldExtension
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ThetaFunctionArchimedeanFrame
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ThetaMultiplierQuadraticCharacterStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ThetaMultiplierQuadraticCharacter
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.GramMatrixPosDefConjugate
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LeWchartOne
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NonvanishingSectionFieldExt
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.KeyInputFromPpData
 import Development.WeilBound.CoreStatements.HodgeTatePoints.QacInt
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.KeyDegreePpDataStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.KeyDegreePpData
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeMetricFrameInner
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FundamentalDomainRiemannForm
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NormalizedDegreeGramDet
@@ -194,7 +194,7 @@ theorem is_L2_of_gram_det_pos {E : Type} [Field E] [NumberField E] [IsCMField E]
     · exact h0
     · rw [hGn, ← h0] at hG
       simp at hG
-  have h14 := GlobalTheory.T.theta_multiplier_quadratic_character E H L D σ a
+  have h14 := _root_.GlobalTheory.CompanionTheory.Ar.Sl.Unimod.frame_unimodular E H L D σ a
   have hint1 : ∀ l ∈ a.u.Λ, ∀ l' ∈ a.u.Λ, ∃ k : ℤ, (l ⬝ᵥ a.Hm.mulVec (star l')).im = k :=
     fun l hl l' hl' => h14.1 ⟨l, hl⟩ ⟨l', hl'⟩
   have hint2 : ∀ w : Fin D.g → ℂ, (∀ l ∈ a.u.Λ, ∃ k : ℤ, (w ⬝ᵥ a.Hm.mulVec (star l)).im = k) →
@@ -270,7 +270,7 @@ theorem keyDeg_of_keyBad : KeyBadSt → KeyDegSt := by
     have h13 := ((_root_.GlobalTheory.CompanionTheory.Ar.Sl.frames_main E H L' D' σ).2 a).2.2
     choose W hW using fun i => (h13 (e i)).1.exists
     exact KeyDeg.is_L2_of_gram_det_pos D' _ hk e σ (hGpos σ) a θ (Matrix.of W) hW
-      (fun Fd hFd => GlobalTheory.T.key_degree_pp_data κ h2 hArch E H L' D' x th s hgx v e hSS hKO hLB hv σ a θ
+      (fun Fd hFd => _root_.GlobalTheory.CompanionTheory.Ar.Sl.KeyDegArch.norm_key_of_frame κ h2 hArch E H L' D' x th s hgx v e hSS hKO hLB hv σ a θ
         (Matrix.of W) Fd hθ hW hFd)
   · have hf : ∀ σ : L' →+* ℂ, Real.log (Real.exp (Real.log ((2 * Real.pi) ^ (2 * D'.g) *
           ‖D'.B.gramDet σ e‖ ^ 2 / ‖σ ((κ L' x : L'ˣ) : L')‖) / 8)) =

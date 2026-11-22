@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SelfDualIffLatticeVolumeAndPlancherel
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFactsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFacts
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegralPsiKOverScaledIntegersEqVolumeIndicator
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WhittakerSwap
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ScaledIntegersKAnnihilatorSmallNearZero
@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteEtaleExi
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsNhdsOneEtaleAlgebraMulInvariant
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TruncatedSetEmptyOutsideNormCoset
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteEtaleHermitianPairNormProperties
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AbsKMultiplicativeUnitOneHaarScalingStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AbsKMultiplicativeUnitOneHaarScaling
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TruncatedIntegralEqVolMulOrbitalIntegral
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology
 
@@ -35,7 +35,7 @@ theorem u_formula (F E : Type) [NontriviallyNormedField F] [NontriviallyNormedFi
 theorem M_sub (F E : Type) [NontriviallyNormedField F] [NontriviallyNormedField E] [NormedAlgebra F E] [StarRing E]
     [Unram F E] (A : Et F E) (c : F) (hc : c ≠ 0) :
     ∃ M : AddSubgroup A.K, (M : Set A.K) = {z : A.K | c • z ∈ A.OK} ∧ IsOpen (M : Set A.K) ∧ IsCompact (M : Set A.K) := by
-  obtain ⟨-, -, -, -, -, -, -, -, -, hOo, hOc, R, hR⟩ := GlobalTheory.T.etaleHermitianPair_structure_facts F E A
+  obtain ⟨-, -, -, -, -, -, -, -, -, hOo, hOc, R, hR⟩ := _root_.GlobalTheory.JR.EtFacts.main F E A
   haveI : ContinuousSMul F A.K := IsModuleTopology.toContinuousSMul F A.K
   refine ⟨(R.toAddSubgroup).comap (DistribMulAction.toAddMonoidHom A.K c), ?_, ?_, ?_⟩
   · ext z; simp [← hR]
@@ -53,7 +53,7 @@ theorem lam_weil_eventually : ∀ (F E : Type) [NontriviallyNormedField F] [Nont
   intro F E _ _ _ _ _ A ψ hψ m x γ W hW φ hφ a ha
   haveI := m.sdK.1
   haveI := (m.sdL x).1
-  obtain ⟨-, -, hnd, -, -, -, -, -, -, hOo, -, R, hR⟩ := GlobalTheory.T.etaleHermitianPair_structure_facts F E A
+  obtain ⟨-, -, hnd, -, -, -, -, -, -, hOo, -, R, hR⟩ := _root_.GlobalTheory.JR.EtFacts.main F E A
   have key : ∀ c : F, c ≠ 0 → A.abelian₂ m.μK ψ a (fun g => W g φ 0) c =
       γ * ((m.μK {z | c • z ∈ A.OK}).toReal : ℂ) *
         ∫ y, φ y * Set.indicator {b : A.K | ∀ z : A.K, c • z ∈ A.OK → A.psiK ψ (z * b) = 1} (fun _ => (1 : ℂ))
@@ -95,7 +95,7 @@ theorem lam_weil_eventually : ∀ (F E : Type) [NontriviallyNormedField F] [Nont
       rw [hDeq]; exact h.1 hsd
     rw [← hDset, ← hMset]
     subst hay
-    rw [_root_.GlobalTheory.JR.truncated_integral_eq_vol_mul_orbL F E A (_root_.GlobalTheory.JR.Et.norm_facts F E A) (GlobalTheory.T.absK_multiplicative_unitOne_haarScaling F E A) ψ hψ m x y hy D hDo hDc φ hφ ?_]
+    rw [_root_.GlobalTheory.JR.truncated_integral_eq_vol_mul_orbL F E A (_root_.GlobalTheory.JR.Et.norm_facts F E A) (_root_.GlobalTheory.JR.Et.absK_facts F E A) ψ hψ m x y hy D hDo hDc φ hφ ?_]
     · have : (m.μK M).toReal * (m.μK D).toReal = 1 := by rw [← ENNReal.toReal_mul, hMD]; simp
       have : ((m.μK M).toReal : ℂ) * ((m.μK D).toReal : ℂ) = 1 := by exact_mod_cast this
       linear_combination (γ * A.orbL m.ν φ y) * this

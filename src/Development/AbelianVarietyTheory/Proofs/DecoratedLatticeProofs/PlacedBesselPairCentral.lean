@@ -5,7 +5,19 @@ import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary�
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.ThmSOwn
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FinitePartMemFrameStabilizerIffLocalStabilizer
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DatumLevelHyperspecialOffFinitePlaces
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualLatticeFrameChainStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualLatticeFrameChain
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsNormalFr
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.FrameTopAlt
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PairForm
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TailRd
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.NotBadPrimeBase
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ValuationEqZeroOfRootOfSUnitRatio
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ChainParSucc
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleDiscreteSeriesOfHasParam
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HasDRepIffHasDerivAt
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.WeilRepresentationUnitaryPair
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsSelfDualCoordLatticeOfSelfDualFrame
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocalFrameHermitianIdeal
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PlacedBesselTranslateVector
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsSuppVecLocEq
@@ -396,7 +408,7 @@ theorem single (W : RealPack ex) (hW : PkHyp W) (r : Fin D.R.rS) (hr : r.1 = 0) 
     rw [map_mul, (G i).sc_unit, (G i).sc_unit, one_mul] at this
     exact this.symm
   obtain ⟨σ, -, hM⟩ := hR.frame i 0 ((G i).s + 1) (Nat.zero_add _)
-  obtain ⟨hsd, hfr⟩ := GlobalTheory.T.self_dual_lattice_frame_chain W hW 0 (by omega)
+  obtain ⟨hsd, hfr⟩ := _root_.GlobalTheory.Fam.sdY_frames W hW 0 (by omega)
   have hs0 : s ≠ 0 := by rcases hs with rfl | rfl <;> simp
   have H := line_bes (G i).q hq (f.c.B 0 _ h₀) ((pk W).ΛY 0) ((pk W).βY 0) hfr hsd (f.g.b 0) _ _ _
     (fun h0 => by simpa [h0] using (G i).sc_unit 0) ((G i).bes 0 _ h₀ _ (Nat.zero_add _)) _ (G i).S.ϖ

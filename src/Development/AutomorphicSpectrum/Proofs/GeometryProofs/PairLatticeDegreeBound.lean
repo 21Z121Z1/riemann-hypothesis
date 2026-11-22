@@ -18,13 +18,13 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SegreChartBundle
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.InteriorPointPolarised
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsSegreChartFrames
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrameDomainInSegreChart
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PairSumFrameAtPointStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PairSumFrameAtPoint
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GramMatrixChangeFrame
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GramMatrixTwoFramesStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GramMatrixConjugationStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GramMatrixConjugation
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ConjugatePointSameCentre
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GlobalPairSumGramBound
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PeriodGramSmoothPuncturedStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PeriodGramSmoothPunctured
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PeriodGramComparisonBound
 
 namespace GlobalTheory.CompanionTheory.Ar
@@ -64,7 +64,7 @@ theorem exists_hermMetric_hodge : Top.Given → ∀ (E : Type) [Field E] [Number
       𝔐.M.GramAt 𝔐.t.PP.L z (fun k => ((bb i k : ↥(𝔐.Vgen a ⊔ 𝔐.Vgen b)) : 𝔐.Li)) (gr i w) ∧ (gr i w).PosDef := by
     intro i z w hw hi hd
     have hc := _root_.GlobalTheory.CompanionTheory.Ar.HodgeMetric.inChart_unitAt_of_inFrameDomain 𝔐.X Ω 𝔐.ξ K J y 𝔐.tie z w (ch i) (fr i) (𝔐.all _) hw hd
-    obtain ⟨Γ, h1, h2⟩ := GlobalTheory.T.pair_sum_frame_at_point E H D l (Xo l) c Y S Ω K J y 𝔐 a b N (bb i) z (𝔐.all _) (hpol z hi)
+    obtain ⟨Γ, h1, h2⟩ := _root_.GlobalTheory.CompanionTheory.Ar.HodgeMetric.GramEx.exists_gramAt_posDef E H D l (Xo l) c Y S Ω K J y 𝔐 a b N (bb i) z (𝔐.all _) (hpol z hi)
       (frameAt i _ hc.1 hc.2)
     have h3 : gr i w = Γ := (congrFun (hgr i) w).trans (gfn _ z w Γ hw hi h1)
     rw [h3]
@@ -131,7 +131,7 @@ theorem exists_hermMetric_hodge : Top.Given → ∀ (E : Type) [Field E] [Number
       rw [hcc.1]
       exact hi
     exact (congrFun (hgr i) _).trans (gfn _ _ _ _ (hcc.2 hz) hi'
-      (GlobalTheory.T.gramAt_conj_point_map_conj E H D l (Xo l) c Y S Ω K J y 𝔐 z N _ _ (key i z w hz hi hd).1))
+      (_root_.GlobalTheory.CompanionTheory.Ar.HodgeMetric.ConjPoint.gramAt_conj_point E H D l (Xo l) c Y S Ω K J y 𝔐 z N _ _ (key i z w hz hi hd).1))
   have hsmooth : ∀ e l₁, ∀ t ∈ Metric.ball (0 : Fin n → ℂ) 1, (χ e).γ t ∈ mcPts (mCoordIdeal y) \ Bd →
       InFrameDomain y (ch l₁) (fr l₁) ((χ e).γ t) → ∀ p q,
       ContDiffAt ℝ ((⊤ : ℕ∞) : WithTop ℕ∞) (fun t' => gr l₁ ((χ e).γ t') p q) t := by
@@ -143,7 +143,7 @@ theorem exists_hermMetric_hodge : Top.Given → ∀ (E : Type) [Field E] [Number
       exact h.1 hX.2
     have hu : HodgeMetric.uncentre t ρ π t ∈ Flat.punct n a₀ 1 := by
       rwa [HodgeMetric.uncentre_self]
-    have h1 := GlobalTheory.T.period_gram_smooth_punctured n a₀ g N Λ L U hP.2.2.1 p q _ hu
+    have h1 := _root_.GlobalTheory.CompanionTheory.Ar.HodgeMetric.GramSmooth.periodGram_contDiffAt n a₀ g N Λ L U hP.2.2.1 p q _ hu
     have h2 : ContDiffAt ℝ ((⊤ : ℕ∞) : WithTop ℕ∞)
         (fun t' => HodgeMetric.periodGram L U (HodgeMetric.uncentre t ρ π t') p q) t :=
       h1.comp t (HodgeMetric.contDiff_uncentre t ρ π).contDiffAt

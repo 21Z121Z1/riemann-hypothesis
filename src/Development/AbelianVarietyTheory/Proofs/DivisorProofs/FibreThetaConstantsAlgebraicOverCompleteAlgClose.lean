@@ -88,7 +88,7 @@ theorem theta_consts_algebraic : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLoc
     fun i => (eq_pullQk_iff hD hGF cC hB hB' _ _).1 (hp₁ i).symm
   have hQ := _root_.GlobalTheory.Mum.qkPt_algClosure_bijective R D.toPre C em (m ^ 2) hk
   choose p hp using fun i => (hQ.2 (p₁ i)).exists
-  have hGt := GlobalTheory.T.torus_torsion_points_correspond_values
+  have hGt := _root_.GlobalTheory.Ex.GtValues.points_correspond
   choose q hq using fun i => (((hGt R D.toPre D.psi_even hB C N ν).2.2.2.2 _).1 (p₁ i)).exists
   choose q' hq' using fun i => (((hGt W D'.toPre D'.psi_even hB' C N' ν').2.2.2.2 _).1 (p' i)).exists
   obtain ⟨v, hv⟩ := _root_.GlobalTheory.Mum.ThetaSer.theta_series_algebraic R hR D m hm hmR Ix p

@@ -23,7 +23,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaKernelLeftI
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TripleFrameBaseExists
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRtensOp
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockAlgebraicThetaVectorsStableFiniteAdelesLie
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilIntertwiningValueStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilIntertwiningValue
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilLocalFactorEq
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilArchimedeanFactor
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilUnramifiedFactor
@@ -43,7 +43,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfComponentTensor
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsStdCharNegOneOfStandardTraceAdelicAddChar
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsSchrodingerThetaDatumAddAdelicSchwartz
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsHeisenbergDerivativeArchimedeanDirection
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ArchimedeanPreimageRealPlaceLineStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ArchimedeanPreimageRealPlaceLine
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockVacuaTripleProportionalToNonzero
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SmallRouteDatumMemAlgebraicVectorsGridFrames
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsDatumLinear
@@ -122,7 +122,7 @@ theorem thetaLift_pure {m k d : ℕ} {Y : GlobalTheory.IndefiniteRowSideFullHeck
       q (thO Mo ψ Gm e Ψ) = liftPure Mo pr pv s Ψ := by
     obtain ⟨q, hq⟩ := GlobalTheory.TripleAssembly.Onto.exists_factor T _ (fun x hx => hinj x (hS hx)) (liftPure Mo pr pv s)
     exact ⟨q, fun Ψ hΨ => by rw [← hT Ψ (hS hΨ)]; exact hq Ψ hΨ⟩
-  have H' := GlobalTheory.T.weil_model_projection_factorisation _ Y Z Mo ψ hM P pr N pv s hs
+  have H' := _root_.GlobalTheory.PureLift.exists_pureLift _ Y Z Mo ψ hM P pr N pv s hs
   rw [thetaLift, dif_pos H, H.choose_spec _ (Submodule.subset_span ⟨f, φ, hf, h1, h2, rfl⟩), liftPure, dif_pos H']
   exact H'.choose_spec f φ h1 h2
 
@@ -199,7 +199,7 @@ theorem match_pure (hH : GlobalTheory.Published.HoweDualityReal) (hP : GlobalThe
   have sA := _root_.GlobalTheory.AlgStable.algF_isStable D Bs.ψ θ hstd hθ true W X A B β (β / α) ωA hωA
   have sB := _root_.GlobalTheory.AlgStable.algF_isStable D Bs.ψ θ hstd hθ false W₁ X A₁ B α (α / β) ωB hωB
   obtain ⟨oA, oB⟩ := _root_.GlobalTheory.TripleAssembly.Onto.map_algF_eq_top hH hP D Bs.ψ θ hstd hθ W W₁ X A A₁ B α β hT ωA ωB hωA hωB e Bs Γ Xc om om' hR tA tB R Rf hm
-  obtain ⟨iA, iB⟩ := GlobalTheory.T.mapA_mapB_invariant_under_finite_group hH hP D Bs.ψ θ hstd hθ W W₁ X A A₁ B α β hT ωA ωB hωA hωB e Bs Γ Xc om om' hR tA tB R Rf hm
+  obtain ⟨iA, iB⟩ := _root_.GlobalTheory.TripleAssembly.mapA_mapB_invFin hH hP D Bs.ψ θ hstd hθ W W₁ X A A₁ B α β hT ωA ωB hωA hωB e Bs Γ Xc om om' hR tA tB R Rf hm
   obtain ⟨lA, lB⟩ := _root_.GlobalTheory.TripleAssembly.LieInv.mapA_mapB_lie_eq_zero hH hP D Bs.ψ θ hstd hθ W W₁ X A A₁ B α β hT ωA ωB hωA hωB e Bs Γ Xc om om' hR tA tB R Rf hm
   obtain ⟨fA, fB⟩ := _root_.GlobalTheory.TripleAssembly.EqFin.mapA_mapB_equivariant_fin hH hP D Bs.ψ θ hstd hθ W W₁ X A A₁ B α β hT ωA ωB hωA hωB e Bs Γ Xc om om' hR tA tB R Rf hm
   obtain ⟨dA, dB⟩ := _root_.GlobalTheory.TripleAssembly.mapA_mapB_lieEquiv hH hP D Bs.ψ θ hstd hθ W W₁ X A A₁ B α β hT ωA ωB hωA hωB e Bs Γ Xc om om' hR tA tB R Rf hm

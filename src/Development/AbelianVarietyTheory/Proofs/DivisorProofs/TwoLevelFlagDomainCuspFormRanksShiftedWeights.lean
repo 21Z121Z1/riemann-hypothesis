@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsArchOne
 import Development.AbelianVarietyTheory.BlockTheory.PoincareCuspForms.SmallUnipotentElements
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TotallyRealDegreeAndChartDimensionEq
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCuspFormIndependentTranslatesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCuspFormIndependentTranslates
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowerRankCuspFormsDetWeightOneComponent
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNonzeroBoundedSectionShiftedWeight
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardIndependentBoundedSectionsShiftedWeightLe
@@ -295,7 +295,7 @@ theorem ranks : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (r : ℕ)
   obtain ⟨L, Fp, rfl, hg1, hg2, hg3, hg4, hA⟩ := hArch
   haveI : Fintype (⊥ : Subgroup U) := Fintype.ofFinite _
   obtain ⟨u0, hu0, hnz⟩ :=
-    GlobalTheory.T.exists_cuspForm_independent_translates E r (⊥ : Subgroup U) C (sub M ⊥) hLev (sOf M) (even_sOf M) (le_sOf M)
+    _root_.GlobalTheory.TranslatesDet.independentTranslates E r (⊥ : Subgroup U) C (sub M ⊥) hLev (sOf M) (even_sOf M) (le_sOf M)
   have hc : ∀ c, ∃ δ : ℕ, (2 ≤ M.dimY ∧ 11 * M.dimY ^ 2 ≤ T) ∧
       UpC (M.comp c).toData (M.comp_Ψ c) M.Gm M.p0 (Fp + T • L)
         (δ * (T + 2 * M.dimY + 6).choose M.dimY) ∧

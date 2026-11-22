@@ -4,7 +4,7 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHTFormOver
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.PushInvertible
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GlueApplyOfNotInFibre
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SemiabelianLieModelsAgreeStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SemiabelianLieModelsAgree
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.LatticeIntegrallyClosedTorsion
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.Imports
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TwistOkAll
@@ -70,7 +70,7 @@ theorem htOm_eq_of_dvr : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] 
   have hno : IsNoetherianRing (X.presheaf.stalk q.1) := inferInstance
   have e1 := (PositivityTheory.UnitarySelfGeneration.lattice_integrally_closed_torsion E H D l B b X Ω ξ s o t m V M n q hξ hn hf hic hno).2.2
   have e2 := (PositivityTheory.UnitarySelfGeneration.lattice_integrally_closed_torsion E H D l B b X Ω ξ s (twistObj o g a hok) t' m' V M' n q hξ hn hf' hic hno).2.2
-  have e3 := GlobalTheory.T.semiabelian_lie_models_agree X Ω ξ hξ t.G t'.G o.t.G m.φ m'.φ t.semi t'.semi m.cart m'.cart V M M' hv n q hq
+  have e3 := _root_.GlobalTheory.CompanionTheory.Ar.HtDvr.main X Ω ξ hξ t.G t'.G o.t.G m.φ m'.φ t.semi t'.semi m.cart m'.cart V M M' hv n q hq
   rw [e2, e1, e3]
 
 end GlobalTheory.CompanionTheory.Ar.OmDvrK

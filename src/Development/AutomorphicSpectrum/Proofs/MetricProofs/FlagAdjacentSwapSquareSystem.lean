@@ -7,7 +7,7 @@ import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogResolutionFubiniSt
 import Development.AutomorphicSpectrum.Statements.MetricStatements.AgreementIffGuarded
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAnalyticDimensionCount
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentRowsResolution
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentRowsAnalyticStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentRowsAnalytic
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.TwoMapPullbackEnergy
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentRowsBaseMetric
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentRowsDimension
@@ -27,7 +27,7 @@ theorem ansq_exists : Inputs → ∀ (K : Type) [Fintype K] (ι : K → Type) [�
   have hdim := _root_.GlobalTheory.CompanionTheory.Ar.PB.WSq.flagAn_dim K ι Φ y Ψ N j M n d BM FA
   obtain ⟨RW, pr, hpr, hbase, hch⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PB.WMan.fibreSquare_atlas K ι Φ y Ψ N j M n d BM.Rb τ a b k₀ ca cb hb hs hk hca hcb har hdim
   obtain ⟨q, hq, hpq, hl0, hl1, hinj, hbp⟩ :=
-    GlobalTheory.T.flag_adjacent_rows_analytic K ι Φ y Ψ N j M n d BM FA τ a b k₀ ca cb hb hs hk hca hcb har RW pr hpr hbase
+    _root_.GlobalTheory.CompanionTheory.Ar.PB.WSq.Pr.two_projections K ι Φ y Ψ N j M n d BM FA τ a b k₀ ca cb hb hs hk hca hcb har RW pr hpr hbase
   have hch' : ∀ x, ∃ (ψ : OpenPartialHomeomorph RW.X (Fin (d + 2) → ℂ)) (kb : Fin BM.Rb.A.n) (σ : Fin n ↪ Fin (d + 2)),
       IsCompatChart RW.A ψ ∧ x ∈ ψ.source ∧ (∀ x' ∈ ψ.source, pr x' ∈ (BM.Rb.A.chart kb).source ∧
         ∀ i, BM.Rb.A.chart kb (pr x') i = ψ x' (σ i)) := fun x => by

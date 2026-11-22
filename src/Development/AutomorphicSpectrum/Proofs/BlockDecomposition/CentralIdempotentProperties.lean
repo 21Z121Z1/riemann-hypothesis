@@ -1,7 +1,7 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.FiniteTypeHarishChandra.SupportExistsAll
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CentralIdempotentAction
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SeparableIrreducibleStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SeparableIrreducible
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SimpleIffIrreducible
 
 open ReciprocityTheory.Ty.Fin CategoryTheory
@@ -30,7 +30,7 @@ theorem zIdem_act (τ σ : FDRep ℂ Γ) (hτ : Simple τ) (hσ : Simple σ) :
 theorem eq_of_act (x y : MonoidAlgebra ℂ Γ)
     (h : ∀ τ : FDRep ℂ Γ, Simple τ → Representation.asAlgebraHom τ.ρ x = Representation.asAlgebraHom τ.ρ y) :
     x = y :=
-  sub_eq_zero.1 (GlobalTheory.T.separable_irreducible Γ _ fun τ hτ => by rw [map_sub, h τ hτ, sub_self])
+  sub_eq_zero.1 (_root_.GlobalTheory.CompanionTheory.FinRep.sepIrr Γ _ fun τ hτ => by rw [map_sub, h τ hτ, sub_self])
 
 theorem zIdemFacts : ReciprocityTheory.Ty.Fin.St.ZIdemFacts := by
   refine ⟨?_, ?_, ?_, ?_⟩

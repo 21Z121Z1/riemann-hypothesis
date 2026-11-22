@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernPartSingleton
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasPointClosureDimBasicProjArithAmbient
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoheightOneIffPointClosureDimProjArith
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchIntegrableOfProjArithAmbient
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedArchIntegralAdditiveAndDiagonalStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedArchIntegralAdditiveAndDiagonal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedHeightPowEqDegreeLogCardFiniteField
 
 set_option autoImplicit false
@@ -80,7 +80,7 @@ theorem exists_isArithHeight : ArchInteg → ∀ (k : Type) [CommRing k] (X : Sc
       congr 1
       funext a
       exact Fin.cases rfl (fun j => j.elim0) a
-    rw [hh _ 1 (hgi Z i 1 hd1), key, recVal, (GlobalTheory.T.mixedArchIntegral_additive_and_diagonal HI k Z (i ≫ p) hAZ (N.restr i) r hr).2 0 hd1 (N.restr i),
+    rw [hh _ 1 (hgi Z i 1 hd1), key, recVal, (_root_.GlobalTheory.MixAdd.mixArch_add_diag HI k Z (i ≫ p) hAZ (N.restr i) r hr).2 0 hd1 (N.restr i),
       GlobalTheory.ArchDimZero.main k Z (i ≫ p) hZ _ _ r hr, HermLB.curveDeg]
     refine congrArg (· - _) (finsum_congr fun z => ?_)
     by_cases hz : ((N.restr i).div hr).mult z = 0
@@ -100,7 +100,7 @@ theorem exists_isArithHeight : ArchInteg → ∀ (k : Type) [CommRing k] (X : Sc
     have e1 : (Fin.cons N (fun _ : Fin e => N) : Fin (e + 1) → HermLB p) = fun _ => N :=
       funext fun a => Fin.cases rfl (fun _ => rfl) a
     rw [e1] at key
-    rw [hh _ (e + 1) hx, key, recVal, (GlobalTheory.T.mixedArchIntegral_additive_and_diagonal HI k Z (i ≫ p) hAZ ((N.restr i).pow m) r hr).2 e hd (N.restr i)]
+    rw [hh _ (e + 1) hx, key, recVal, (_root_.GlobalTheory.MixAdd.mixArch_add_diag HI k Z (i ≫ p) hAZ ((N.restr i).pow m) r hr).2 e hd (N.restr i)]
     refine congrArg (· - _) (finsum_congr fun z => ?_)
     by_cases hz : (((N.restr i).pow m).div hr).mult z = 0
     · simp [hz]

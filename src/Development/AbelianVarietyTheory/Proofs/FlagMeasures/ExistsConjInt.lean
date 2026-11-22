@@ -5,9 +5,9 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementRe
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.HermLat
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsPrincipalIdealRingOfHenselian
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MatrixCongruentOneModUniformizerPowGroupAndOrbitStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianMatrixCongruenceContentJacobianStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianMatrixCongruenceContentJacobian
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TupleJacobianRightMulIsometry
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PrimitiveTuplesHermitianGramCosetContentStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PrimitiveTuplesHermitianGramCosetContent
 
 open ValuativeRel Formalism.MainNotions.S.Loc GlobalTheory.HL MeasureTheory
 open scoped Pointwise ENNReal Classical
@@ -137,7 +137,7 @@ theorem cont_prim_scale : ∀ {F : Type} [Field F] [ValuativeRel F] [Topological
   have hOco : IsCO (hermLat L m) O :=
     ((GlobalTheory.T.matrixCongruentOneModUniformizerPow_group_and_orbits L ϖ hϖ m i (le_of_max_le_right hi)).2.2 _ hΓ hx).1
   set B := (fun X => cT L A⁻¹ * X * A⁻¹) '' O with hBdef
-  have hBco : IsCO (hermLat L m) B := ((GlobalTheory.T.hermitianMatrix_congruence_content_jacobian L ϖ hϖ m A⁻¹ hAi).2 O hOco).1
+  have hBco : IsCO (hermLat L m) B := ((_root_.GlobalTheory.HL.HermJacobian.cont_congr L ϖ hϖ m A⁻¹ hAi).2 O hOco).1
   have hback : ∀ X : Matrix (Fin m) (Fin m) E, cT L A * (cT L A⁻¹ * X * A⁻¹) * A = X := by
     intro X
     calc _ = (cT L A * cT L A⁻¹) * X * (A⁻¹ * A) := by simp only [Matrix.mul_assoc]
@@ -149,7 +149,7 @@ theorem cont_prim_scale : ∀ {F : Type} [Field F] [ValuativeRel F] [Topological
   have hOB : (fun X => cT L A * X * A) '' B = O := by
     rw [hBdef, Set.image_image]
     simp only [hback, Set.image_id']
-  have hcO := ((GlobalTheory.T.hermitianMatrix_congruence_content_jacobian L ϖ hϖ m A hA).2 B hBco).2
+  have hcO := ((_root_.GlobalTheory.HL.HermJacobian.cont_congr L ϖ hϖ m A hA).2 B hBco).2
   rw [hOB] at hcO
   have hBint : ∀ X ∈ B, X ∈ hermLat L m := by
     rintro _ ⟨_, ⟨K, hK, rfl⟩, rfl⟩
@@ -166,7 +166,7 @@ theorem cont_prim_scale : ∀ {F : Type} [Field F] [ValuativeRel F] [Topological
     · change IsIntM L (cT L A⁻¹ * (cT L K * gramT L Hm x * K) * A⁻¹)
       rw [h1]
       exact isIntM_mul L (isIntM_mul L (fun a b => (hO.2.1 _ (hK' b a)).1) hint) hK'
-  obtain ⟨hTco, hT1, hT2⟩ := GlobalTheory.T.primitiveTuples_hermitianGram_coset_content L ϖ hϖ Hm hH Λs hΛ m hmn B hBint hBco
+  obtain ⟨hTco, hT1, hT2⟩ := _root_.GlobalTheory.HL.PrimVol.cont_primitive_tuples L ϖ hϖ Hm hH Λs hΛ m hmn B hBint hBco
   have hS : {z : Fin m → Fin n → E | IsPrimT L Hm Λs (rmul z A⁻¹) ∧ gramT L Hm z ∈ O}
       = (fun x => rmul x A) ''
         {z : Fin m → Fin n → E | IsPrimT L Hm Λs z ∧ gramT L Hm z ∈ B} := by

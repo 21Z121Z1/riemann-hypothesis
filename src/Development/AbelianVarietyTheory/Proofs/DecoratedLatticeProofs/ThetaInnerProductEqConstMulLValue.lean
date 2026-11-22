@@ -22,7 +22,7 @@ import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.HeckeCharacter
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLevelIndexMulSchwartzNormFormula
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.LocalIntegralGL
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteDatumSourceLevelCharacterLaw
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteZetaIntegralThetaLiftEqPartialLValueStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteZetaIntegralThetaLiftEqPartialLValue
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LowestKTypeCoefficientsSqIntegrable
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PrimeToHostCore
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DerivEqZeroOfEven
@@ -50,7 +50,7 @@ theorem aFormL : GlobalTheory.Published.DiscreteSeriesCover → GlobalTheory.Pub
     (_root_.GlobalTheory.SourceLaw.sourceLevelLaw GlobalTheory.SingleBlock.localIntegralSingleBlock R F hPM)
     (_root_.GlobalTheory.innerProductFormula_of_hypotheses hCusp hWS hSE R F hG.params)
     (_root_.GlobalTheory.FockCoeffImage.fockCoefficientC hHM R F hPM)
-    (GlobalTheory.T.finiteZetaIntegral_thetaLift_eq_partialLValue hCusp hBZ hUD R F)
+    (_root_.GlobalTheory.FinZeta.finiteZetaL hCusp hBZ hUD R F)
     (_root_.GlobalTheory.LevelIndex.levelIndexNormC GlobalTheory.SingleBlock.localIntegralSingleBlock R F hPM)
     (GlobalTheory.RealCoefSq.lowestKType_coefficients_sq_integrable R F hG.core)
     hG hc SF hSF

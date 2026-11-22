@@ -180,7 +180,7 @@ theorem theta_tower_norm_step_large_rank : _root_.GlobalTheory.FunPr.ThetaLocalI
         GlobalTheory.SqTower.IsStageC W i j p 0 Y ∧ Y.IsConst W.ψ W.θ c ∧
         (∀ t, y t ≠ 0 ∧ lam t = y t * Lf t (e : ℂ) * c t) ∧ ∀ t, GlobalTheory.Square.StepRatio D.what₂.embLL (Qn G t) G.pl.S0 (condExp G.pl) (fun v => Ideal.absNorm v.asIdeal) (y t) (y μ₀) := by
   intro hP hK hM
-  refine gbig_of_three (_root_.GlobalTheory.SqStepBig.theta_tower_step_norm_identity hP hK hM) _root_.GlobalTheory.SqStepArith.stepFac_ratio GlobalTheory.T.partialHeckeLFunction_square_eq_primitive ?_
+  refine gbig_of_three (_root_.GlobalTheory.SqStepBig.theta_tower_step_norm_identity hP hK hM) _root_.GlobalTheory.SqStepArith.stepFac_ratio _root_.GlobalTheory.SqStep.charL_chs_eq ?_
   intro D T Lc sc G μ₀ C x b q1 q2 q3 W S hψ hN i j p A A' WW X lam e Lf hX hF he hL
   obtain ⟨B, B', WW₁, Y, c, hY, hc, H⟩ := q1 W S hψ hN i j p A A' WW X lam e hX hF he
   have he2 := two_le_half hX he

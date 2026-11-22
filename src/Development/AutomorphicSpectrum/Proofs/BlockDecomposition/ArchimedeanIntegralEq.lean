@@ -7,20 +7,20 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSmoothHermCom
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ComplexPointLiftsToMulticone
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRed
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrableOnSourceIffOfDensity
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MulticonePointDescendsToSubvarietyStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MulticonePointDescendsToSubvariety
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PointsEqIffSameTorusOrbitStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HypersurfaceComplexPointsMeasurableNull
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothWeightPullbackIsPotential
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothWeightPullbackChartFormula
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ZeroLocusRegularFunctionNull
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DehomogenizedEvalEqRatio
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RestrictedFormNonzeroOnGenericPointStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RestrictedFormNonzeroOnGenericPoint
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ComplexPointsSecondCountableStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArithmeticVarietyGenericallyEtaleCoordinates
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFormNonvanishingOnChart
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProjectionRegularOnNonvanishingChartStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProjectionRegularOnNonvanishingChart
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BadProjectionLocusNull
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IrregularProjectionImageNullStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IrregularProjectionImageNull
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalChartSheetDecomposition
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RationalSectionLogNormOnSheet
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DensityChartIntegralFormula
@@ -57,7 +57,7 @@ theorem ae_cover {X : Scheme.{0}} [IsIntegral X] (i : X ⟶ MP ℤ m n) [IsClose
     ⟨{N}, by rintro f rfl; exact ⟨a, hN⟩, rfl⟩ (fun h => hNP (h (Ideal.subset_span rfl)))
   have h2 : volume (⋃ c ∈ T, projCoord i Ψ '' {y | y ∈ c.e.source ∧
       (∃ z, Over i y z ∧ Ψ (segre z) 0 ≠ 0) ∧ ¬ IsRegAt i Ψ c y}) = 0 :=
-    (measure_biUnion_null_iff hTc).2 fun c _ => GlobalTheory.T.irregular_projection_image_null m n X i D Ψ c
+    (measure_biUnion_null_iff hTc).2 fun c _ => _root_.GlobalTheory.CompanionTheory.MixZ.ArchEq.volume_image_crit m n X i D Ψ c
   have h3 := measure_union_null h1 h2
   refine ae_iff.2 (measure_mono_null ?_ h3)
   intro v hv
@@ -67,7 +67,7 @@ theorem ae_cover {X : Scheme.{0}} [IsIntegral X] (i : X ⟶ MP ℤ m n) [IsClose
   · refine Or.inl ⟨z, hz, ⟨hz.1, fun g hg => ?_⟩, hzv⟩
     obtain ⟨b, rfl⟩ := Ideal.mem_span_singleton'.1 hg
     simp [hNz]
-  · obtain ⟨y, hy⟩ := GlobalTheory.T.multicone_point_descends_to_subvariety m n X i z hz
+  · obtain ⟨y, hy⟩ := _root_.GlobalTheory.CompanionTheory.MPDict.UnderSub.exists_cxPt_of_mem_mcPts m n X i z hz
     obtain ⟨c₀, hc₀⟩ := hcov y z hy hNz
     have hyU : y ∈ ⋃ c ∈ T, c.e.source := by
       rw [hTU]
@@ -75,7 +75,7 @@ theorem ae_cover {X : Scheme.{0}} [IsIntegral X] (i : X ⟶ MP ℤ m n) [IsClose
     obtain ⟨c, hcT, hyc⟩ := Set.mem_iUnion₂.1 hyU
     have h0 : Ψ (segre z) 0 ≠ 0 := by simp [hzv]
     by_cases hreg : IsRegAt i Ψ c y
-    · exact absurd ⟨y, hy, GlobalTheory.T.projection_regular_on_nonvanishing_chart m n X i D Ψ N a hN c y z hyc hy hNz h0 hreg⟩ hno
+    · exact absurd ⟨y, hy, _root_.GlobalTheory.CompanionTheory.MixZ.ArchEq.PieceAt.mem_pieceSet m n X i D Ψ N a hN c y z hyc hy hNz h0 hreg⟩ hno
     · refine Or.inr (Set.mem_iUnion₂.2 ⟨c, hcT, y, ⟨hyc, ⟨z, hy, h0⟩, hreg⟩, ?_⟩)
       have hl : Over i y (liftOf i y) := by
         have hex : ∃ z, Over i y z := ⟨z, hy⟩
@@ -161,7 +161,7 @@ theorem archIntEq_of_integrable : ArchIntegrableOn → ArchIntEq := by
       · refine Or.inl ⟨hv, ?_⟩
         by_cases h0 : Ψ (ReciprocityTheory.ChartRestriction.G.Geo.segre z) 0 = 0
         · exact Or.inl ⟨z, hz, h0⟩
-        · exact Or.inr fun hreg => hvG (GlobalTheory.T.projection_regular_on_nonvanishing_chart m n X i D Ψ N _ hNh c _ z (c.e.map_target hv) hz hNz h0 hreg)
+        · exact Or.inr fun hreg => hvG (_root_.GlobalTheory.CompanionTheory.MixZ.ArchEq.PieceAt.mem_pieceSet m n X i D Ψ N _ hNh c _ z (c.e.map_target hv) hz hNz h0 hreg)
     exact measure_mono_null hsub (measure_union_null (_root_.GlobalTheory.CompanionTheory.MixZ.ArchEq.Crit.volume_chart_crit m n X i D hX Ψ hΨ c)
       ((_root_.GlobalTheory.CompanionTheory.MixZ.zeroLocus_measurable_null m n X i D N _ hNh hNP).2 c))
 

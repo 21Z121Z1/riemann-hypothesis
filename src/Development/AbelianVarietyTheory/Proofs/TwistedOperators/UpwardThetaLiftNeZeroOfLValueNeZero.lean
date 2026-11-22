@@ -50,7 +50,7 @@ theorem upNe_of_heckeForm : ∀ D : D7, GlobalTheory.Core.Rk.IP.HeckeForm D → 
   have hwitt : GlobalTheory.Cusp.wittIndex s'.V < c.t := hs'.witt
   have hfock := _root_.GlobalTheory.EvenOnto.fock_sph_vac D c hc k hk s s' hs hs' p hp
   have hunrT := (hc.unr k hk)
-  obtain ⟨-, -, hoff⟩ := GlobalTheory.T.doubledLatticeHeightFun_properties D s.V s.Λ a hs.selfDual hmaj
+  obtain ⟨-, -, hoff⟩ := _root_.GlobalTheory.Core.Rk.IP.hgtL_props D s.V s.Λ a hs.selfDual hmaj
   have hmeas : MeasurableSet (intOff c s) := (hoff c.S).1.measurableSet
   have hr1 : 1 ≤ s.V.rank := by
     rw [hs.rank]; have := hc.one_le; omega

@@ -6,8 +6,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleProductOf
 import Development.AbelianVarietyTheory.Definitions.Divisors.GenericPointAsIdeal
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.SheetUnsheet
 import Development.AutomorphicSpectrum.PublishedTheorems.Divisibility₂.PairingExists
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.SheetIsOpenEmbeddingRangeStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsAlgChartOverIntegersStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.SheetIsOpenEmbeddingRange
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsAlgChartOverIntegers
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsAlgChartFromIntegers
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ChernDensitySheetEq
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry TopologicalSpace Filter Topology MeasureTheory
@@ -27,22 +27,22 @@ theorem GlobalTheory.CompanionTheory.Ar.BaseZ.chernPart_sheet : ∀ (k : Type) [
   haveI hsct : SecondCountableTopology (CxPts t τ) := by
     haveI : Finite (k →+* ℂ) := Sheet.finite_ringHom k
     have hopen : ∀ σ' : k →+* ℂ, IsOpen (Set.range (sheet t τ : CxPts p σ' → CxPts t τ)) :=
-      fun σ' => (GlobalTheory.T.sheet_isOpenEmbedding_range k X p t τ σ').1.isOpen_range
+      fun σ' => (_root_.GlobalTheory.CompanionTheory.Ar.BaseZ.Sheet.isOpenEmbedding_and_range k X p t τ σ').1.isOpen_range
     haveI : ∀ σ' : k →+* ℂ,
         SecondCountableTopology (Set.range (sheet t τ : CxPts p σ' → CxPts t τ)) := by
       intro σ'
       haveI := hSC σ'
-      exact (GlobalTheory.T.sheet_isOpenEmbedding_range k X p t τ σ').1.isEmbedding.toHomeomorph.symm.isEmbedding.secondCountableTopology
+      exact (_root_.GlobalTheory.CompanionTheory.Ar.BaseZ.Sheet.isOpenEmbedding_and_range k X p t τ σ').1.isEmbedding.toHomeomorph.symm.isEmbedding.secondCountableTopology
     refine TopologicalSpace.secondCountableTopology_of_countable_cover hopen ?_
     exact Set.eq_univ_of_forall fun y => Set.mem_iUnion.2 ⟨emb p y, unsheet p y, sheet_unsheet p y⟩
   have hemb : Topology.IsOpenEmbedding (sheet t τ : CxPts p σ → CxPts t τ) :=
-    (GlobalTheory.T.sheet_isOpenEmbedding_range k X p t τ σ).1
+    (_root_.GlobalTheory.CompanionTheory.Ar.BaseZ.Sheet.isOpenEmbedding_and_range k X p t τ σ).1
   have hme : MeasurableEmbedding (sheet t τ : CxPts p σ → CxPts t τ) :=
     hemb.measurableEmbedding
   have key : ∀ (c : AlgChart p σ D) (A : Set (CxPts p σ)), MeasurableSet A → A ⊆ c.e.source →
       ψ.chernPart D ε (sheet t τ '' A) = (φ σ).chernPart D ε A := by
     intro c A hA hAc
-    obtain ⟨c', hc's, hc'e⟩ := GlobalTheory.T.exists_algChart_over_integers k X p t τ σ D c
+    obtain ⟨c', hc's, hc'e⟩ := _root_.GlobalTheory.CompanionTheory.Ar.BaseZ.algChart_toZ k X p t τ σ D c
     have hcomp : ∀ y ∈ c.e.source, sheet t τ y ∈ c'.e.source ∧ c'.e (sheet t τ y) = c.e y :=
       fun y hy => ⟨hc's ▸ Set.mem_image_of_mem _ hy, hc'e y hy⟩
     have hdens := _root_.GlobalTheory.CompanionTheory.Ar.ZDens.chernDens_sheet k X p t τ σ D B φ ψ hW hφ hψ c c' hcomp

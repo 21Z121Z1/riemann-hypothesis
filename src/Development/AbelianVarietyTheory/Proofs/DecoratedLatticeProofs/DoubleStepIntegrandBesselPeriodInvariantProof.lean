@@ -1,16 +1,17 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ValueDoubleUnif
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.QuasiOfFam
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BesselToJacobiFlatSchwartzEquivariantStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.JacobiToBesselFlatIntertwinesWeilActionStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatSchwartzTargetUnipotentConjBesselCharacterStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BesselToJacobiFlatSchwartzEquivariant
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.KerBF
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.JacobiToBesselFlatIntertwinesWeilAction
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatSchwartzTargetUnipotentConjBesselCharacter
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MixedModelFormulasWittSourceProof
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsQuasiFam
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ThetaAbsoluteSum
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.TransvectionAction
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.WeilDatumExistence
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MixedCoordinatesOfThetaFunctionAreThetaFunctions
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatThetaMapsConvergeThetaFunctionsStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatThetaMapsConvergeThetaFunctions
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FourierJacobiHandOffAutomorphic
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BesselToFourierJacobiHandedFamilyContinuousAutom
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.JacobiActionsMatchThroughLinkMap
@@ -21,7 +22,7 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SetIntegra
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlagUnipotentRadicalSurjectsUnitriangularCharact
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FourierBesselThetaCharIntegrandLaws
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergIntegralFourierBesselBasePointEqPairin
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FourierBesselBasePointIsUnfoldingBasePointSpecStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FourierBesselBasePointIsUnfoldingBasePointSpec
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BesselPeriodRightTranslationInvariant
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BesselLineContractionHeisenbergInvariant
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FlagUnipotentFourierJacobiGroupStructure
@@ -84,7 +85,7 @@ theorem mixT_zero_heis {S T T₀ : HSp D} {ρ : ℕ} (d : HypDec T T₀ ρ) (v :
 
 theorem fourierBessel_centralTerm_const_on_orbit {σ : ℕ} (B : BesLev D σ) {S S₀ : HSp D} (d : HypDec S S₀ (σ + 1)) (c : skewA D (σ + 1))
     (v : UX D (σ + 1)) : d.qS B.V c (x0 B ⬝ v.1.1) = d.qS B.L c (zl B) := by
-  obtain ⟨-, -, -, -, -, h⟩ := GlobalTheory.T.fourierBesselBasePoint_isUnfoldingBasePoint_spec D σ B
+  obtain ⟨-, -, -, -, -, h⟩ := _root_.GlobalTheory.Unf.FB.basePoint_spec D σ B
   obtain ⟨n, -, hn, -⟩ := (_root_.GlobalTheory.Unf.FB.uniRad_surj_psi D σ B).1 v
   rw [← h S S₀ d c, ← cenS_nC, ← cenS_nC, ← neg_inj, LinkPoint.neg_cenS_eq, LinkPoint.neg_cenS_eq, ← hn,
     GlobalTheory.MixPer.Decomp.gram_mt]
@@ -296,7 +297,7 @@ theorem handInv : ∀ D : D7, GlobalTheory.FinPl.HandInv D := by
   intro D ψ σ B J B' s₁ s₂ l vL Φ₁ Φ₂ hΦ₁ hΦ₂ φ hφ g h₁ h₂
   have hψ := s₁.weil.std
   have hD : Descent D := GlobalTheory.Desc.weil_data_descend D
-  have hth := GlobalTheory.Unf.FlatTheta.flat_isThetaFun D (GlobalTheory.T.flatThetaMaps_converge_thetaFunctions D) ψ
+  have hth := GlobalTheory.Unf.FlatTheta.flat_isThetaFun D (_root_.GlobalTheory.Unf.Flat.flatLaw D) ψ
   have hΨ₁ := s₁.weil.om_pres (g, h₁) Φ₁ hΦ₁
   have hΨ₂ := s₂.weil.om_pres (h₁, h₂) Φ₂ hΦ₂
   have hΞ₁ := hth.1 _ B J s₁ _ hΨ₁
@@ -313,7 +314,7 @@ theorem handInv : ∀ D : D7, GlobalTheory.FinPl.HandInv D := by
         (star (psiFlag ψ J.d n) * ψ (-cenS J.d B'.L (zl B') n)) • heisO ψ B.V₀ J.W₀
           ((B.o.resS J.W₀).symm (0, l.κ J.W₀ (ptS J.d B'.L (zl B') n)))
           (s₁.om₀ (1, h) (flatBF s₁ (s₁.om (g, h₁) Φ₁))) := by
-      have e := GlobalTheory.T.besselToJacobiFlatSchwartz_equivariant D ψ _ B J s₁ om' hom' _ hΨ₁ 1 n hn h
+      have e := _root_.GlobalTheory.FlatEqui.flatBF_equivariant D ψ _ B J s₁ om' hom' _ hΨ₁ 1 n hn h
       have a1 : embA B.d B.o 1 = 1 := map_one _
       have a2 : B.o.emb (1, 1) = 1 := map_one _
       rw [a1, a2, ← om_mul, one_mul, show s₁.om₀ (1, 1) = 1 from map_one _, Module.End.one_apply, opA, jacT,
@@ -322,7 +323,7 @@ theorem handInv : ∀ D : D7, GlobalTheory.FinPl.HandInv D := by
     have e2 : flatFB s₂ (s₂.om (n * J.d.emb0 h * h₁, h₂) Φ₂) =
         (psiFlag ψ J.d n * ψ (cenS J.d B'.L (zl B') n)) • heisO ψ J.W₀ B'.V₀
           ((B'.o.resT J.W₀).symm (0, ptS J.d B'.L (zl B') n)) (s₂.om₀ (h, 1) (flatFB s₂ (s₂.om (h₁, h₂) Φ₂))) := by
-      have c := GlobalTheory.T.jacobiToBesselFlat_intertwines_weilAction D hD ψ σ J B' s₂ _ hΨ₂ h 1
+      have c := _root_.GlobalTheory.Unf.FlatComm.flatFB_om D hD ψ σ J B' s₂ _ hΨ₂ h 1
       have a1 : embA B'.d B'.o 1 = 1 := map_one _
       have a2 : B'.o.emb (1, 1) = 1 := map_one _
       rw [a1, a2] at c
@@ -344,9 +345,9 @@ theorem handInv : ∀ D : D7, GlobalTheory.FinPl.HandInv D := by
     obtain ⟨i1, i2, i3, i4, i5, i6, i7⟩ := GlobalTheory.Mem.AdelicGroupTop.adelic_unitary_topology D B'.V
     have e : flatFB s₂ (s₂.om (h₁, n * embA B'.d B'.o h * h₂) Φ₂) = star (psiBes ψ B'.d 1 (vecB B'.o B'.ζ) n) •
         s₂.om₀ (1, B'.o.emb (h, 1)) (flatFB s₂ (s₂.om (h₁, h₂) Φ₂)) := by
-      have c := GlobalTheory.T.jacobiToBesselFlat_intertwines_weilAction D hD ψ σ J B' s₂ _ hΨ₂ 1 h
+      have c := _root_.GlobalTheory.Unf.FlatComm.flatFB_om D hD ψ σ J B' s₂ _ hΨ₂ 1 h
       rw [map_one] at c
-      rw [← c, ← GlobalTheory.T.flatSchwartz_targetUnipotent_conj_besselCharacter D hD ψ σ J B' s₂ _ (s₂.weil.om_pres _ _ hΨ₂) n hn, ← om_mul, ← om_mul, one_mul, one_mul]
+      rw [← c, ← _root_.GlobalTheory.Unf.FB.UnipAct.flatFB_flagN D hD ψ σ J B' s₂ _ (s₂.weil.om_pres _ _ hΨ₂) n hn, ← om_mul, ← om_mul, one_mul, one_mul]
     have hG' : IsContAut B'.V (rTrans h₂ G) :=
       ⟨fun γ hγ x => by rw [rTrans, rTrans, mul_assoc, hG.1 γ hγ], hG.2.comp (continuous_mul_const h₂)⟩
     have eG : rTrans (n * embA B'.d B'.o h * h₂) G = rTrans n (rTrans (embA B'.d B'.o h) (rTrans h₂ G)) := by

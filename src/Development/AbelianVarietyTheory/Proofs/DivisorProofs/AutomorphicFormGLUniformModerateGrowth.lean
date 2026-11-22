@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.CuspRapidDecaySiegelGL
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfMemSpanK
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AutomorphicFormEqOwnRealLieSmoothingStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AutomorphicFormEqOwnRealLieSmoothing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothingGrowthExponent
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WordEqSmoothingOfReproduced
 
@@ -16,7 +16,7 @@ theorem GlobalTheory.AutGrowth.uniform_growth_of_autForm : GlobalTheory.Publishe
   let ν : Measure (Lie E a) := Measure.addHaar
   obtain ⟨C, N, hC⟩ := hφ.growth 1
   simp only [one_mul] at hC
-  obtain ⟨α, hα, hconv⟩ := GlobalTheory.T.automorphicForm_eq_own_realLieSmoothing hP E a ν φ hφ
+  obtain ⟨α, hα, hconv⟩ := _root_.GlobalTheory.AutGrowth.SelfSmoothing.exists_smoothing_eq_self hP E a ν φ hφ
   refine ⟨N, fun l => ?_⟩
   obtain ⟨β, hβ, hw⟩ := _root_.GlobalTheory.AutGrowth.word_eq_smoothing_of_reproduced E a ν α hα φ hconv l
   obtain ⟨C', hC'⟩ := _root_.GlobalTheory.AutGrowth.smoothing_growth_exponent E a ν β hβ φ.1 C N hC

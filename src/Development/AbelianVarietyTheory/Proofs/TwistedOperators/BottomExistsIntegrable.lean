@@ -127,7 +127,7 @@ theorem exists_bottomTri {μ₀ : T} (hL : L.Is μ₀) (G : GridData L sc) (W : 
     Finset.prod_ne_zero_iff.2 fun w _ => pow_ne_zero _ w.ne_bot
   choose f hf _ using fun t => _root_.GlobalTheory.Adopt.first_standard_pair_member_has_theta_function D W.ψ W.θ A WW rA rW _ _ _ _ _ hA4 hW4 (hd (hc t).1 (hc t).2.1) (he t) (hI t) hv
   choose f' hf' _ using fun t =>
-    GlobalTheory.T.exists_thetaFunction_standardPairSecond D W.ψ W.θ A' WW rA' rW _ _ _ _ A.rank _ hB4 hW4 (hd (hc t).1 (hc t).2.1) (he t) (hI t) hv'
+    _root_.GlobalTheory.CompanionTheory.StdSndTheta.exists_theta D W.ψ W.θ A' WW rA' rW _ _ _ _ A.rank _ hB4 hW4 (hd (hc t).1 (hc t).2.1) (he t) (hI t) hv'
   obtain ⟨m, fd, hm⟩ := GlobalTheory.ConstRatio.exists_meas A
   obtain ⟨m', fd', hm'⟩ := GlobalTheory.ConstRatio.exists_meas A'
   exact ⟨A, A', WW, ⟨rA, rA', rW, ω, ω', vac, vac', e, c, f, f', m, fd, m', fd'⟩, hA1, hB1, hA3, hB3, hW3,

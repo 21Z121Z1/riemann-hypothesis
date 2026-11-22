@@ -1,11 +1,11 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Rr
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TranslatedLengthBoundedDerivativeStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TranslatedLengthBoundedDerivative
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothMonotoneCutoffExists
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralRrEqZero
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveTimeReversal
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CasimirRightLaplacianFormulaStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EnergyIdentityOfLengthFunctionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CasimirRightLaplacianFormula
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EnergyIdentityOfLengthFunction
 
 noncomputable section
 
@@ -53,7 +53,7 @@ theorem speed_pos (hL : LgFacts) (hR : RCalc) {n : ℕ} (C₁ : ℝ) (hC₁ : 0 
     (h0 : ∀ y ∈ GLs n, lg y ≤ lg (1 : Mat n) + 1 + C * t → u 0 (x * y) = 0) : u t x = 0 := by
   obtain ⟨mG, bG, μ, hμ⟩ := exists_haar n
   letI : InnerProductSpace ℝ E.V := InnerProductSpace.rclikeToReal ℂ E.V
-  obtain ⟨A, hA⟩ := GlobalTheory.T.casimir_right_laplacian_formula E
+  obtain ⟨A, hA⟩ := _root_.GlobalTheory.CompanionTheory.WaveSpd.om_section E
   obtain ⟨l1, l2, l3⟩ := hlg x hx
   have hxu : IsUnit x.det := isUnit_iff_ne_zero.2 hx
   have hxx : x⁻¹ * x = 1 := Matrix.nonsing_inv_mul _ hxu
@@ -70,7 +70,7 @@ theorem speed_pos (hL : LgFacts) (hR : RCalc) {n : ℕ} (C₁ : ℝ) (hC₁ : 0 
     have := (hL n).1 x hx _ (hmul y hy)
     rw [← mul_assoc, hxx', one_mul] at this
     linarith
-  have hv := GlobalTheory.T.energy_identity_of_length_function (W := E.V) μ (fun y => lg (x⁻¹ * y)) l1 l2 C₁ hC₁ l3 hbp χ h1 h2 h3 h5 u hu.1
+  have hv := _root_.GlobalTheory.CompanionTheory.WaveSpd.Vanish.energy_vanish (W := E.V) μ (fun y => lg (x⁻¹ * y)) l1 l2 C₁ hC₁ l3 hbp χ h1 h2 h3 h5 u hu.1
     (A.restrictScalars ℝ) (waveEq E u hu A hA) C hC (lg (1 : Mat n) + C * t) h4 ?_ ?_ t ht x hx ?_
   · exact hv
   · intro y hy hlt
@@ -83,7 +83,7 @@ theorem speed_pos (hL : LgFacts) (hR : RCalc) {n : ℕ} (C₁ : ℝ) (hC₁ : 0 
 
 theorem asmSpeed : AsmSpeed := by
   intro hL hU hR n
-  obtain ⟨C₁, hC₁, hlg⟩ := GlobalTheory.T.translated_length_bounded_derivative hL n
+  obtain ⟨C₁, hC₁, hlg⟩ := _root_.GlobalTheory.CompanionTheory.WaveSpd.lg_left_facts hL n
   obtain ⟨χ, h1, h2, h3, h4, h5⟩ := _root_.GlobalTheory.CompanionTheory.SmoothCut.exists_smooth_antitone_cut
   set C := C₁ * (1 + Fintype.card (Ix n)) with hCdef
   have hC0 : 0 ≤ C := by positivity

@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLinearModelIn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceSymplecticSelfZeroSplitSupported
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzBruhatInvariantSupportedEqSmulVacuumStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzBruhatMatricesInvariantSupportedEqSmul
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticePairingTrivialMatricesSubMemStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticePairingTrivialMatricesSubMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosureVanishingLatticeEqRowLatticeMatrices
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum Formalism.IndefR.Links
@@ -69,7 +69,7 @@ theorem vacuum_eq_smul_indicator : ∀ {D : D7} {a a' : ℕ} (Bs : GlobalTheory.
     have hm := hι.mult u hat hu0 φ₀ h0 φ₀ h0 hB x hx hx0
     by_contra h
     exact hne1 ((mul_eq_right₀ h).mp hm.symm)
-  obtain ⟨c, hc, hop, hcp⟩ := _root_.GlobalTheory.SBClosure.main Bs.v₁ _ _ (GlobalTheory.T.latticePairingTrivialMatrices_sub_mem Bs Γ X om om' hTr L₁ L₂) (ι φ₀) hfSB hf0 hinv hsupp
+  obtain ⟨c, hc, hop, hcp⟩ := _root_.GlobalTheory.SBClosure.main Bs.v₁ _ _ (_root_.GlobalTheory.VacShapeBd.bd_sub Bs Γ X om om' hTr L₁ L₂) (ι φ₀) hfSB hf0 hinv hsupp
     (GlobalTheory.T.schwartzBruhat_invariant_supported_eq_smul_vacuum Bs Γ X om om' hTr L₁ L₂ θ hθ ι hι φ₀ h0 hne hfix huniq)
   obtain ⟨P, Λ, hPΛ⟩ := _root_.GlobalTheory.VacShapeCl.closure_Sa_eq_matLat Bs Γ X om om' hTr L₁ L₂ hop hcp
   refine ⟨ι, P, Λ, c, hι, fun Y => ?_⟩

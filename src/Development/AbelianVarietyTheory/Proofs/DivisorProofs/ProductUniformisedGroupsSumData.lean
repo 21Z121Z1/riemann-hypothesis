@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSumPolAV
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsProductPrincipallyPolarisedAbelianScheme
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsProductDegenerationDataSum
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSemiAbelianTensorOverSchemeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSemiAbelianTensorOverScheme
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductDataFirstFactorAdjointPair
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductDegDataSecondFactorInclProjAdjoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductUniformisedGroupsUniformisedBySum
@@ -42,7 +42,7 @@ theorem prod_main : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRing R], Ba
   have hj₂₁ : ∀ y, q₁ (j₂ y) = 0 := fun y => congrArg Prod.fst (he (0, y))
   have hj₂₂ : ∀ y, q₂ (j₂ y) = y := fun y => congrArg Prod.snd (he (0, y))
   obtain ⟨l₁, l₂, l₃, l₄⟩ := H i₁ i₂ j₁ j₂ hi₁₁ hi₁₂ hi₂₁ hi₂₂ hj₁₁ hj₁₂ hj₂₁ hj₂₂
-  exact ⟨D, A, U, i₁, p₁, i₂, p₂, j₁, q₁, j₂, q₂, GlobalTheory.T.isSemiAbelian_tensor_over_scheme _ G₁ G₂ hG₁ hG₂, hi₁₁, hi₂₂, hj₁₁, hj₂₂,
+  exact ⟨D, A, U, i₁, p₁, i₂, p₂, j₁, q₁, j₂, q₂, _root_.GlobalTheory.SemiProd.isSemiAbelian_tensor _ G₁ G₂ hG₁ hG₂, hi₁₁, hi₂₂, hj₁₁, hj₂₂,
     _root_.GlobalTheory.MumProdAdj.adj_first_factor R _ D D₁ D₂ p₁ p₂ q₁ q₂ pD i₁ j₁ hi₁₁ hi₁₂ hj₁₁ hj₁₂,
     _root_.GlobalTheory.MumSumSnd.adj_snd R _ D D₁ D₂ p₁ p₂ q₁ q₂ pD i₂ j₂ hi₂₁ hi₂₂ hj₂₁ hj₂₂, l₁, l₂, l₃, l₄, hg₁, hg₂⟩
 

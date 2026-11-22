@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.DepthPays
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CongruenceLevelOfEmbeddingStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryLatticeCongruenceMemConjugateIdealInfStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CongruenceLevelOfEmbedding
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryLatticeCongruenceMemConjugateIdealInf
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ModulusInfConjLeSpanTypePrimesProduct
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CardNegativeSignsDiagonalFrameEqSignature
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSignatureFstUniqueSylvester
@@ -29,13 +29,13 @@ theorem bottom : All fun {D} _ {L} _ {G} _ _ => IsSelfDualC (Yc D 0) (L.ΛY 0) �
       simp [zv, Matrix.mulVec, dotProduct]
   · intro k hk hfin
     have h1 : Lev.finE (Yc D 0) k ∈ congLev D.sp.cm (Yc D 0).gram (L.ΛY 0) G.modul := by
-      refine GlobalTheory.T.congruence_level_of_embedding G.sp.dec0 (L.ΛY 0) (fun _ => 1) G.modul k ?_
+      refine _root_.GlobalTheory.LevRestrict.finE_mem_congLev G.sp.dec0 (L.ΛY 0) (fun _ => 1) G.modul k ?_
       have e : G.Λ (.core 0) = G.sp.dec0.lat (L.ΛY 0) (fun _ => 1) := G.sp.lat0
       have := hfin
       unfold GridData.levCong at this
       rw [e] at this
       exact this
-    have h2 := GlobalTheory.T.unitaryLatticeCongruence_mem_conjugateIdeal_inf (Yc D 0) (L.ΛY 0) hY.sd _ _ h1
+    have h2 := _root_.GlobalTheory.CongSelfDual.congLev_conj (Yc D 0) (L.ΛY 0) hY.sd _ _ h1
     exact Subgroup.mem_inf.2 ⟨hk, congLev_mono (_root_.GlobalTheory.ModulConj.modul_inf_conj_le G) h2⟩
   · simpa [Node.rank, rankV] using hY.rank
   · simpa [Node.rank, rankP, nRk] using hP.rank

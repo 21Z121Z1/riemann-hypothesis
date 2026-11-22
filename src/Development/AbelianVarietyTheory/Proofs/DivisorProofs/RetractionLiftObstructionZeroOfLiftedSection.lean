@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianHod
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.BijectiveCechDeRhamComparisonDegreeOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ObstructionPullbackEqZeroOfNaturalLift
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNaturalChartLiftsOfMorphism
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechPairRestrictBaseChangeBijectiveStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechPairRestrictBaseChangeBijective
 
 set_option autoImplicit false
 
@@ -80,7 +80,7 @@ theorem retractionLiftObstruction_zero_of_liftedSection_alt : ∀ (R R₀ : Type
         (Quiver.Hom.unop_inj (Subsingleton.elim _ _))).trans (mp_comp S.F _ _ b)))
     w ((extMap R₁ (pairRes f₀ t₀)).pull1 c) hob
   rw [ext_tri_res_pull1] at hvan
-  have inj := (GlobalTheory.T.cechPairRestrict_baseChange_bijective R₀ R₁ Z₀ X₀ s₀ j₀).2 X₀ f₀
+  have inj := (_root_.GlobalTheory.Obs.PairExt.pairRes_ext_bijective R₀ R₁ Z₀ X₀ s₀ j₀).2 X₀ f₀
   unfold IsExtendedPullbackDegOne
   rw [map_zero]
   exact inj (hvan.trans (map_zero _).symm)

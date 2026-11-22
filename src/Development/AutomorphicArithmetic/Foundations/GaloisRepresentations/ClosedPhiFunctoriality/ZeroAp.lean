@@ -9,7 +9,7 @@ theorem UpperTheory.Gal.ClosedPhiFromClosedTrace.zeroAp_holds :
     ZeroAp := by
   intro l _ K bk c M
   obtain ⟨htor, -, -, hphi, -⟩ := _root_.GlobalTheory.AcrisFrobE.main l K bk
-  obtain ⟨n₀, hn₀⟩ := GlobalTheory.T.primePow_dvd_tiltUniformizer_pow_acris_eventually l K bk c M
+  obtain ⟨n₀, hn₀⟩ := _root_.GlobalTheory.AcrisPow.main l K bk c M
   refine ⟨c * n₀ + M, ?_⟩
   intro d d' D F F' hdiv hcong
   have hdiv' : ∀ i j, ((algebraMap (Ainf l) (Per.Acris l)).comp bk.ev) X ∣ D i j := hdiv

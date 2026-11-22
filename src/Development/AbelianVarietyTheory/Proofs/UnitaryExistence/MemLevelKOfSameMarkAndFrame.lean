@@ -7,7 +7,7 @@ import Formalism.LocalToGlobal.ProjectiveLattices.IntAll
 import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
 import Formalism.LocalToGlobal.ProjectiveLattices.VolProofs
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CongruenceLatticeFractionalMultipleAgree
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ArchimedeanMatrixUnitaryContinuousMultiplicativeStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ArchimedeanMatrixUnitaryContinuousMultiplicative
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.PrincipalLevelEqHalfMarkingStabilizer
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicElementLatticeFullAndCompletion
 open NumberField IsDedekindDomain ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.FD Formalism.BasicNotions Formalism.MainNotions Formalism.BasicNotions.TH Formalism.L2.Theta Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.L2.Pj
@@ -43,7 +43,7 @@ theorem mem_level_of_mark_of_frame_eq : ∀ (D : D7) (H : ReciprocityTheory.Char
   obtain ⟨-, hL', hM'⟩ := hm'
   generalize γ * h = g at *
   generalize γ' * h' = g' at *
-  obtain ⟨hA, hG, -⟩ := GlobalTheory.T.archimedeanMatrix_unitary_continuous_multiplicative D V C.θ hC.inf
+  obtain ⟨hA, hG, -⟩ := _root_.GlobalTheory.Member.Arch.archM_spec D V C.θ hC.inf
   rw [hK]
   refine ⟨hG _ fun τ hτ => ?_, ?_⟩
   · have hΨ : τ ∈ (C.M.X k).Ψ := by

@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ResBound
 import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmissibleCocycleNegCharPowerMemCoboundaries
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TrivialLineAdmissibleCocyclesNotIndependentStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TrivialLineAdmissibleCocyclesNotIndependent
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DvrComplete
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteQuotientPow
 
@@ -182,7 +182,7 @@ theorem bound_gen (hs : Function.Surjective (algebraMap O k))
     obtain ⟨z, hz, hli⟩ := key
     by_contra hs0
     have h2s : 2 ≤ s := by omega
-    exact GlobalTheory.T.trivialLine_admissibleCocycles_not_independent F M h1 h2 h3 (fun a => z (Fin.castLE h2s a)) (fun a => hz _)
+    exact _root_.GlobalTheory.TopSteps.TrivLine.main F M h1 h2 h3 (fun a => z (Fin.castLE h2s a)) (fun a => hz _)
       (hli.comp _ (Fin.castLE_injective h2s))
 
 end

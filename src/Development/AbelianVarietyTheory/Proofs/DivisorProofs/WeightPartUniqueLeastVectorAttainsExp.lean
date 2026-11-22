@@ -2,8 +2,9 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WtChar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GalLab
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLabOntoAndKer
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaSetupDividingLabelPersistsDeeperLevelStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightPartAttainsBoundUniqueShortestVectorStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaSetupDividingLabelPersistsDeeperLevel
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightPartAttainsBoundUniqueShortestVector
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGenLab
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaTranslateValuesShiftByRootOfUnity
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.UnitThetaConstantsGenerateIntegralTorsion
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UTorsClosed
@@ -224,7 +225,7 @@ theorem main : ∀ (g n : ℕ) (F : SFam g n (zetaAway n)) (W : Matrix (Fin 8) (
     have hsc : 0 < c.sc := CTrait.scale_pos c
     exact mul_lt_mul_of_pos_left (by exact_mod_cast hlt) hsc
   have hk2 : 2 ≤ X₁.S.r * X₁.S.N := le_trans X₁.S.N_ge (Nat.le_mul_of_pos_left _ X₁.S.r_pos)
-  obtain ⟨hh, hhker, hkm, hnorm⟩ := GlobalTheory.T.weightPart_attains_bound_unique_shortest_vector u l hint D.m (X₁.S.r * X₁.S.N) D.sq hk2 D.dvd ν' hmin'
+  obtain ⟨hh, hhker, hkm, hnorm⟩ := _root_.GlobalTheory.UPoinc.ExactWeight.main u l hint D.m (X₁.S.r * X₁.S.N) D.sq hk2 D.dvd ν' hmin'
   rw [hker] at hhker
 
   have := isAddTorsionFree_of_free_int (X := c.T.D.toPre.X)
@@ -249,7 +250,7 @@ theorem main : ∀ (g n : ℕ) (F : SFam g n (zetaAway n)) (W : Matrix (Fin 8) (
   have hqz : D.q (y (cPt p)) = z₁ := by
     rw [← c.cen, ← h]
     rfl
-  have hx₀ := GlobalTheory.T.thetaSetup_dividingLabel_persists_deeperLevel g n F W Z i X₁ hg hn hodd himm hE8 hTI hproj ε₁ hdiag D z₁ (GSum.base X₁ z₁) hbase
+  have hx₀ := _root_.GlobalTheory.Poinc.DivDeep.main g n F W Z i X₁ hg hn hodd himm hE8 hTI hproj ε₁ hdiag D z₁ (GSum.base X₁ z₁) hbase
     (y (cPt p)) hqz
   have hth0 := norm_th_eq_delta D.X y (hth := hth) (hev := hev) (hc := hc) (fg := fg) (frac := frac) hR' y₀ hy₀ hx₀
   set x₀ := D.lab (GSum.base X₁ z₁) with hx₀def

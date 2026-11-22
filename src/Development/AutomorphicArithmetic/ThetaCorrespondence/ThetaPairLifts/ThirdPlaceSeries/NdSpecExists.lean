@@ -16,10 +16,10 @@ theorem ndSpec_exists_alt : GlobalTheory.Published.GlobalArtinReciprocity → He
   obtain ⟨hO, hc⟩ := _root_.GlobalTheory.HeckeLocN.CondConj.cond_over_conj D cf C tp hCS.off
   have hG := _root_.GlobalTheory.GenHypOut.genHyp D cf M C tp hMI hO
   have hX := _root_.GlobalTheory.SplitExConj.exists_splitPlace_conj_unif D
-  have hR := GlobalTheory.T.exists_coefficientLinear_lift_doubleCosetOperators D M C tp.tup hStd hG hMI
+  have hR := _root_.GlobalTheory.HeckeLiftN.heckeLift D M C tp.tup hStd hG hMI
   have hCm := _root_.GlobalTheory.HeckeLocCommute.hLC_commute D M C hR hStd hG hX
   choose F1 hF1 using _root_.GlobalTheory.HeckeSplitField.exists_finExt_split D M C hR (plEmb A.pl) hCm
-  choose F2 hF2 hF2' using GlobalTheory.T.exists_padicFiniteExt_containing_coeffField_and_numbers D A.pl big
+  choose F2 hF2 hF2' using _root_.GlobalTheory.HeckeLocN.exists_finExt_big D A.pl big
   choose F3 hF3 using _root_.GlobalTheory.HeckeLocN.BridgeAll.brAt_of_large D
   choose F4 hF4 using _root_.GlobalTheory.HeckeLocN.exists_twRing_of_large D C Bs.twF low (plEmb A.pl) Bs.tw hCS.choice
   obtain ⟨X, hXE, h1, h2, h3, h4⟩ : ∃ X : CoefIn D.what₂, X.E = plEmb A.pl ∧ (∀ j w, (F1 j w).1 ≤ (X.Kx j w).1) ∧
@@ -35,9 +35,9 @@ theorem ndSpec_exists_alt : GlobalTheory.Published.GlobalArtinReciprocity → He
   have hs := _root_.GlobalTheory.HeckeStdBase.heckeStd0_base D M C hR X hS hStd hG hX hCm
   have hd := _root_.GlobalTheory.FinDimVProof.finDimV_all (base M C hR X hS)
   have hML := LatticeFinitenessFree.mtLoc_holds (partCompl_of hs hd)
-  have hAct := GlobalTheory.T.heckeRing_acts_faithfully_on_localisedLattice _ hs hd hML (_root_.GlobalTheory.HeckeLocN.heckeIntTw_base D M C hR X hS tp.tup hMI hX)
-    (_root_.GlobalTheory.HeckeLocN.semisimpleTw_base D M C hR X hS hStd GlobalTheory.T.splitPlace_doubleCosetOperator_semisimple_typeSpace hG hX)
-  have hAHK := GlobalTheory.T.heckeRing_acts_on_lattice_as_operators _ hs hd hML hAct
+  have hAct := _root_.GlobalTheory.HeckeLocAct.actEx_of _ hs hd hML (_root_.GlobalTheory.HeckeLocN.heckeIntTw_base D M C hR X hS tp.tup hMI hX)
+    (_root_.GlobalTheory.HeckeLocN.semisimpleTw_base D M C hR X hS hStd _root_.GlobalTheory.HeckeNormal.tN_semisimple hG hX)
+  have hAHK := _root_.GlobalTheory.HeckeLocN.actHK_holds _ hs hd hML hAct
   have hI := osInt D (base M C hR X hS)
   have hGal := fun w (hw : TwistedAt D w) => GlobalTheory.T.twistCharacter_ramified_at_conductor_trivial_above_l D cf C tp w hArt hCheb hCS.psi hw (hVal w hw) (hCS.adm w hw)
   have htw : ∀ w v, v ∈ C.Q w → TwistedAt D w := fun w v hv => by

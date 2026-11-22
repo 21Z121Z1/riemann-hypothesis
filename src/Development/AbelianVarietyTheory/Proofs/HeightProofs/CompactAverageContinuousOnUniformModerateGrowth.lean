@@ -11,10 +11,10 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOn
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CoefBoundOfCasselmanWallach
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormSubLeOfDerivIcc
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExpSecondKindCoordinates
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.HasFDerivAtDerFamProdExpStatement
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.HasFDerivAtDerFamProdExp
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.DerFamExpandWords
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.MeasurableDerFamCompStatement
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.AvgDerFamGrowthStatement
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.AvgDerFamGrowth
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ContinuousOnAvgRightTranslates
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S Formalism.L2.Theta Matrix
 open Formalism.REAL GlobalTheory.SmoothGlob GlobalTheory.TypeSum
@@ -53,7 +53,7 @@ theorem continuousOn_and_umg_kAvg : ∀ (n : ℕ) (ε : Fin n → Bool) (f : Glo
       F (Z :: l) g = ∑ i, (c i Z : ℂ) * F (b i :: l) g := by
     intro l hl Z hZ g hg
     obtain ⟨τ, hτ0, hτ, hev⟩ := _root_.GlobalTheory.SecondKindChart.exp_eq_expProd_near_zero n ε _ b hb hli (fun Z hZ => ⟨fun i => c i Z, hsum Z hZ⟩) (fun i => c i Z)
-    have h2 := GlobalTheory.T.hasFDerivAt_derFam_mul_prod_exp_smul_zero n ε N F hFd hFg l hl _ b hb g hg
+    have h2 := _root_.GlobalTheory.TypeSum.hasFDerivAt_derFam_prodExp n ε N F hFd hFg l hl _ b hb g hg
     rw [← hτ0] at h2
     have h3 := h2.comp_hasDerivAt (0 : ℝ) hτ
     have h4 : HasDerivAt (fun t : ℝ => F l (g * NormedSpace.exp (t • Z))) (F (Z :: l) g) 0 := hFd l hl Z hZ g hg
@@ -139,7 +139,7 @@ theorem continuousOn_and_umg_kAvg : ∀ (n : ℕ) (ε : Fin n → Bool) (f : Glo
         Complex.measurable_ofReal.comp (hcc _ _ (hl _ (List.get_mem l j))).measurable
     · exact GlobalTheory.T.measurable_derFam_comp_continuous_of_mem_UJset n ε F hFd hF0c _ (hbw J) (↥(KG ε)) (fun k => z * toMK k)
         (continuous_const.matrix_mul (continuous_toMK ε)) fun k => mul_mem_UJ hz (hK k)
-  obtain ⟨hA, hB⟩ := GlobalTheory.T.avg_derFam_growth_alt n ε N F hFd hUb hMs e he
+  obtain ⟨hA, hB⟩ := _root_.GlobalTheory.KAvgDeriv.avg_derFam_growth n ε N F hFd hUb hMs e he
   refine ⟨N, _, fun y hy => ?_, hA, hB⟩
   simp only [List.map_nil]
   refine integral_congr_ae (Eventually.of_forall fun k => ?_)

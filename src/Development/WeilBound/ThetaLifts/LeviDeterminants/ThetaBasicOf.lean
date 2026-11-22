@@ -1,6 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
-import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaSumAdmissibilityStatement
+import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaSumAdmissibility
+import Development.AbelianVarietyTheory.Definitions.Divisors.HilbertNinetyQuotientHomEqIff
 import Development.WeilBound.ThetaLifts.LeviDeterminants.ThetaSumInvariantRationalUnitary
 import Development.WeilBound.ThetaLifts.LeviDeterminants.ThetaGrow
 
@@ -14,7 +15,7 @@ namespace PositivityTheory.ThKF0
 theorem thetaBasic_of (harch : ArchBd) : GlobalTheory.ThK.ThetaBasic := by
   intro F E _ _ _ _ _ σ B n d X W M χX χW om r s r' s' hP
   have hS := hP.weil.isUSplitting
-  obtain ⟨l, hl, hlt⟩ := (GlobalTheory.T.theta_distribution_nonzero_admissible F (Fin n × Fin d)).2.1
+  obtain ⟨l, hl, hlt⟩ := (_root_.GlobalTheory.CompanionTheory.ThetaAdm.theta_adm F (Fin n × Fin d)).2.1
   refine ⟨fun Φ hΦ => ⟨?_, ?_, theta_moderate_growth_of_decay harch F E σ B n d X W M χX χW om r s r' s' hP Φ hΦ⟩, ?_⟩
   · refine (hS.cont l hl Φ hΦ).congr fun x => ?_
     simp only [theta]

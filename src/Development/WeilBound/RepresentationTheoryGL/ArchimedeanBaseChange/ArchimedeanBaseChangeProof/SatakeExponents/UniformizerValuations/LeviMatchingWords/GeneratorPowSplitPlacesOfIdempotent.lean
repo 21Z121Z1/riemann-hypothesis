@@ -1,17 +1,17 @@
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.LeviMatchingWords.SplitPlaceGeneratorPowers
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatchingIdentityOfStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatchingUnitOfStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatchingIdentityOf
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatchingUnitOf
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatchingWordOf
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.LeviMatchingWords.MatchLM
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MultiplicityInertStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RegularPowerTorusStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SeparablePowerTorusStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MultiplicityInert
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RegularPowerTorus
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SeparablePowerTorus
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.AdelicHeckeBlocks.PLocComm
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatchingSecondBlockOf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PowersDiagonalAtTBlock
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexNeZeroOfSubsetCpt
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermStarStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermStar
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.LeviMatchingWords.LeviMatchingBlocks.StabilizerDilationWeightsDualIsotropicVector
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatchLeviWordsOf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalisedMatrixIntegralCompLinearEquivDet
@@ -19,12 +19,12 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ParP
 
 namespace PositivityTheory.Rg.BcB.F.MLM
 
-theorem matchLMIdOf : MatchLMIdOf := GlobalTheory.T.matching_identity_of
-theorem matchLMUnitOf : MatchLMUnitOf := GlobalTheory.T.matching_unit_of
-theorem muInert : MuInert := GlobalTheory.T.multiplicity_inert
-theorem regPowT : RegPowT := GlobalTheory.T.regular_power_torus
-theorem sepPowT : SepPowT := GlobalTheory.T.separable_power_torus
-theorem ctStar : CtStar := GlobalTheory.T.constant_term_star
+theorem matchLMIdOf : MatchLMIdOf := _root_.GlobalTheory.CompanionTheory.MatchId.matchLMIdOf
+theorem matchLMUnitOf : MatchLMUnitOf := _root_.GlobalTheory.CompanionTheory.MatchUnit.matchLMUnitOf
+theorem muInert : MuInert := _root_.GlobalTheory.CompanionTheory.MuInertPlace.muInert
+theorem regPowT : RegPowT := _root_.GlobalTheory.CompanionTheory.RegPow.regPowT
+theorem sepPowT : SepPowT := _root_.GlobalTheory.CompanionTheory.SepPow.sepPowT
+theorem ctStar : CtStar := _root_.GlobalTheory.CompanionTheory.CtAdj.ctStar
 theorem matchLMWordSOf : MatchLMWordSOf := _root_.GlobalTheory.CompanionTheory.LeviMatchingWords.matchLMWordSOf
 
 end PositivityTheory.Rg.BcB.F.MLM

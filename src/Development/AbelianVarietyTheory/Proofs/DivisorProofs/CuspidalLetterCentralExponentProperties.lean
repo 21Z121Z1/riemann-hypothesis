@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsSquareIntegrableAutomorphicSpace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIdelicAbsValueCpowCharacter
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalRepEndomorphismScalarSchurStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalRepEndomorphismScalarSchur
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitCentreDerivativeCommuteCentralEigen
 import Development.AbelianVarietyTheory.Definitions.Divisors.OfIsBaseChange
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.CuspidalMultiplicityOne
@@ -25,7 +25,7 @@ theorem zc_mapsTo {a : ℕ} (π : CuspSub E a) : ∀ φ ∈ π.V, zc E a φ ∈ 
   rw [zc_eq_act]; exact π.stable _ φ hφ
 
 theorem exists_scalar (x : Letter E) : ∃ c : ℂ, ∀ φ ∈ x.2.V, zc E x.1 φ = c • φ := by
-  obtain ⟨c, hc⟩ := GlobalTheory.T.cuspidalRep_endomorphism_scalar_schur E x.1 x.2 ((zc E x.1).restrict (zc_mapsTo x.2)) (by
+  obtain ⟨c, hc⟩ := _root_.GlobalTheory.CuspSchur.schur E x.1 x.2 ((zc E x.1).restrict (zc_mapsTo x.2)) (by
     intro o φ
     apply Subtype.ext
     have := congrArg (fun f : Module.End ℂ (Sm E x.1) => f φ.1) ((_root_.GlobalTheory.ResW.zc_comm_mem_eigen E x.1).1 o)

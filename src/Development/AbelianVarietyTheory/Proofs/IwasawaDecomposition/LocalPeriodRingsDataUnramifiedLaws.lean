@@ -4,8 +4,8 @@ import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsCris
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PeriodRingsGaloisActionLawsFrobeniusComm
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsInjectiveBcrisToBdR
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CanonicalAcrisToBdRPlusUniqueEquivariantApprox
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BdRPlusSimpleRootsSectionUniqueEquivariantStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RootOfUnityPrimeToTeichmullerLiftStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BdRPlusSimpleRootsSectionUniqueEquivariant
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RootOfUnityPrimeToTeichmullerLift
 import Development.AbelianVarietyTheory.CrystallinePeriods.RingIface
 import Development.AbelianVarietyTheory.CrystallinePeriods.CrisIncl
 import Development.AbelianVarietyTheory.CrystallinePeriods.RingBasics
@@ -83,7 +83,7 @@ theorem sigma_u (C : Core l) (g : GQ l) (c c' : ↥(MaximalUnramifiedExtension l
     Per.σB g (C.u c) = C.u c' := by
   obtain ⟨-, -, -, -, -, -, -, -, -, hD, -⟩ := ActLaws.act_laws l
   apply iota_injective C
-  rw [iota_sigma, C.ι_u, C.ι_u, hD, (GlobalTheory.T.bdRPlus_simple_roots_section_unique_equivariant l C.o C.o_sec).2.2, h]
+  rw [iota_sigma, C.ι_u, C.ι_u, hD, (_root_.GlobalTheory.MemLoc.SecUniq.main l C.o C.o_sec).2.2, h]
 
 theorem phi_u (C : Core l) (c : ↥(MaximalUnramifiedExtension l)) : Per.φB l (C.u c) = C.u (C.σ c) := by
   obtain ⟨-, -, -, -, -, -, hφ, -, hz, -⟩ := ActLaws.act_laws l
@@ -92,7 +92,7 @@ theorem phi_u (C : Core l) (c : ↥(MaximalUnramifiedExtension l)) : Per.φB l (
   · have e : Per.zB l z = Per.aB l (Per.zA l z) := GlobalTheory.RingIface.zB_eq_aB_zA l z
     simp only [RingHom.comp_apply, RingHom.coe_coe, AlgHom.commutes]
     rw [u_padicInt, e, hφ, hz]
-  · obtain ⟨⟨xb, hxb⟩, h2⟩ := GlobalTheory.T.rootOfUnity_prime_to_teichmuller_lift l C.o C.o_sec (c : Om l) m hm hlm
+  · obtain ⟨⟨xb, hxb⟩, h2⟩ := _root_.GlobalTheory.MemLoc.rootOfUnity_teichmuller l C.o C.o_sec (c : Om l) m hm hlm
       (congrArg Subtype.val hc)
     have hu : C.u c = Per.aB l (Per.tm xb) := by
       apply iota_injective C

@@ -9,9 +9,11 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DetTwoDiagBlocks
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsDetInt
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TameTwistFamilySpecializationGoodStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.VacC
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DualTypeResidueCharsUnramifiedTupleStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DualTypeResidueCharsUnramifiedTuple
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ReductionTrivialOffSupport
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitaryDetCharacterEqProdResidueGoodBaseFrameStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitaryDetCharacterEqProdResidueGoodBaseFrame
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DetCharacterProductFormula
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFinUnitIsDetRoot
 
 noncomputable section
 
@@ -40,7 +42,7 @@ theorem dualTypePlaces_isSplitNonconjugate_of_admissible {B : Base S T} {Q : Fin
 theorem char_laws (B : Base S T) (hB : B.Good) (ν : Twist D Circle) (hν : ν.Good) (hQ : B.admitted ν.Q) :
     (∀ PP ∈ allP B ν.Q, ResAt (B.mu * ν.chi) PP (resP B ν PP) ∧ ResAt (B.mu * ν.chi * B.eta⁻¹) PP (resP B ν PP)) ∧
       UnrOff (B.mu * ν.chi) (allP B ν.Q) ∧ UnrOff (B.mu * ν.chi * B.eta⁻¹) (allP B ν.Q) :=
-  GlobalTheory.T.dualType_residueChars_unramified_tuple B hB ν hν hQ
+  _root_.GlobalTheory.ExportSeries.TupleChars.tuple_chars B hB ν hν hQ
 
 theorem om_theta_move {ψ : AddChar (AF D.host.F) ℂ} {χS χT : (AE D)ˣ →* Circle} {om : GA D S × GA D T →* Module.End ℂ (WO S T → ℂ)}
     (hom : IsWeilDatumO ψ S T χS χT om) {e : AE D} {Λ : AddSubgroup (WO S T)} {f₀ Φ Φ' f f' : WO S T → ℂ}
@@ -100,7 +102,7 @@ theorem om_vec_move {B : Base S T} (hB : B.Good) (hS : S.SigOK) {ν : Twist D Ci
   have hF := hB.frame
   have hsq : (halfIdem B.G.Pg (B.de.Q ∪ ν.Q)) * (halfIdem B.G.Pg (B.de.Q ∪ ν.Q)) = halfIdem B.G.Pg (B.de.Q ∪ ν.Q) :=
     hQ.1.isOrthSum.1.idem
-  refine om_theta_move hω (fun Tm hT Ψ hΨ => GlobalTheory.T.schrodingerIntertwiner_schwartzBruhat_isTheta D _ hF.vac.1 S T _ _ hF.sdS hF.sdT _ hsq hQ.1.isOrthSum.1.infPart_eq _
+  refine om_theta_move hω (fun Tm hT Ψ hΨ => _root_.GlobalTheory.SchrTheta.isTheta_placeModel D _ hF.vac.1 S T _ _ hF.sdS hF.sdT _ hsq hQ.1.isOrthSum.1.infPart_eq _
       hF.vac.2.theta Tm hT Ψ hΨ) (Base.isThetaAt_vecAt hB hQ φ) (Base.isThetaAt_vecAt hB hQ φ')
     (_root_.GlobalTheory.StabLatInv.mem_latO_iff_actO_mem D S T _ _ _ _ hF.sdS hF.sdT hF.frS hF.frT g h sg sh) (Units.ne_zero _) (om_vac_base hB hS hν hQ hω hg hh sg sh) hD
 
@@ -485,7 +487,7 @@ theorem gen_mul_right_of_red (hB : B.Good) (hS : S.SigOK) {ψ : Twist D Circle} 
     GlobalTheory.FiniteFock.om_pureTensorO_of_finite _ _ S T _ _ ω hB.frame.vac.2.inf hω _ _ _ _ _
       (fun P' => Base.isThetaFunO_fock_vecAt hB hQ _ P') 1 (one_mem _) κ hκ _ hv P
   have hdet : detChar T ψ.chi κ = ∏ PP ∈ ψ.Q, ψ.res PP (d PP) :=
-    GlobalTheory.T.unitaryDetCharacter_eq_prod_residue_goodBaseFrame B hB ψ hψ hκ sκ
+    _root_.GlobalTheory.TwistDetStabAll.detChar_eq_prod_res B hB ψ hψ hκ sκ
   have e1 : ((detChar T ψ.chi κ : Circle) : ℂ) * (((∏ PP : ↥ψ.Q, ψ.resC PP.1 (d PP.1))⁻¹ : ℂˣ) : ℂ) = 1 := by
     rw [hdet, Finset.prod_coe_sort ψ.Q (fun PP => ψ.resC PP (d PP))]
     have : ((∏ PP ∈ ψ.Q, ψ.res PP (d PP) : Circle) : ℂ) = ((∏ PP ∈ ψ.Q, ψ.resC PP (d PP) : ℂˣ) : ℂ) := by
@@ -511,7 +513,7 @@ theorem delQ_det_of_red (hB : B.Good) {u : UnivTwist D C} {Q : Finset (Pl D.host
     Multiplicative.toAdd (detChar T (u.delQ Q) κ) =
       fun PP : ↥Q => Multiplicative.toAdd (u.kap PP.1 (GeneralLinearGroup.det (redFn B.F.βT PP.1 (Lev.finE T κ)))) := by
   have ht := GlobalTheory.T.tameTwistFamily_specialization_good D C (Multiplicative (↥Q → C)) u Q (MonoidHom.id _) hu
-  have e := GlobalTheory.T.unitaryDetCharacter_eq_prod_residue_goodBaseFrame B hB (u.spec Q (MonoidHom.id _)) ht hκ sκ
+  have e := _root_.GlobalTheory.TwistDetStabAll.detChar_eq_prod_res B hB (u.spec Q (MonoidHom.id _)) ht hκ sκ
   have e1 : (u.spec Q (MonoidHom.id _)).chi = u.delQ Q := MonoidHom.id_comp _
   rw [e1] at e
   rw [e, toAdd_prod, show (u.spec Q (MonoidHom.id _)).Q = Q from rfl, ← Finset.sum_coe_sort Q]

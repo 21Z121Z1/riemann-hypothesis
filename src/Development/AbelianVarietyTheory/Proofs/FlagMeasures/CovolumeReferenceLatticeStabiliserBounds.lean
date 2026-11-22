@@ -13,12 +13,12 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NormalFormDu
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsNormalFormStabilizerMeasure
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsFundOne
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniqueMulMemBoxTriangularLayers
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CommonStabilizerFromCoordinatesProductLawStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CommonStabilizerFromCoordinatesProductLaw
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurePreservingCommonStabilizerCoordinatesAtPl
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasureCommonStabilizerCoordsBoxImage
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RealFrameAutomorphismUnitriangularRowsCoords
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselModelMatrixSkewCoordinatesRationalAut
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RealisationMemStandardMiddleSpaceStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RealisationMemStandardMiddleSpace
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUnimodularTraceOnMiddleSpaceLift
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsFundamentalSetRowsMiddleSpace
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LayerCovolumeProductPowTwoSidedBounds
@@ -87,7 +87,7 @@ theorem CC_law (hF : ∀ v, IsFrameOf N k (σ v) ρ β (Φ v) (z v) (z' v) (g v)
         w.1 i = p.1 i + q.1 i) ∧ (p.1 = 0 → w.2.1 = p.2.1 + q.2.1) ∧ (p.1 = 0 → p.2.1 = 0 → w.2.2 = p.2.2 + q.2.2) := by
   obtain ⟨w, hw⟩ := exists_CC hF (CC p * CC q) fun v =>
     (rset_eq hF v).2.1.2.2.2.1 _ ((rset_eq hF v).1 ▸ ⟨_, rfl⟩) _ ((rset_eq hF v).1 ▸ ⟨_, rfl⟩)
-  have h := fun v => (GlobalTheory.T.commonStabilizerFromCoordinates_product_law k r N.j β).2 (atP p v) (atP q v) (atP w v) (congrFun hw v).symm
+  have h := fun v => (_root_.GlobalTheory.DegVol.RefCovMul.crd_mul k r N.j β).2 (atP p v) (atP q v) (atP w v) (congrFun hw v).symm
   refine ⟨w, hw.symm, fun i hi => funext fun v => (h v).1 i fun l hl => congrFun (hi l hl) v, fun h1 => ?_,
     fun h1 h2 => ?_⟩
   · funext a v
@@ -116,7 +116,7 @@ theorem covol_ref : ∀ (K V : Type) [Field K] [NumberField K] [StarRing K] [Add
   choose F₁ hF₁m hF₁ hF₁v using fun i : UTin β => IdealFund.exists_fund_ipow K hK ι σ hσ N.𝔡
     ((i.1.1.1.val : ℤ) - i.1.1.2.val) (fun _ => ((ρ ^ (i.1.1.2.val - i.1.1.1.val) : ℝ) : ℂ)) N.𝔡_ne (hne _)
   choose F₂ hF₂m hF₂ hF₂v using fun b : {a : Fin r // N.j ≤ a.val} => _root_.GlobalTheory.DegVol.RefCov.rowsFund K V H hK N.Wn HW k r ι σ Φ hB hσ
-    (by omega) (fun v => (hF v).1) (fun v => GlobalTheory.T.realisation_mem_standard_middle_space K V H r N k (σ v) ρ β (Φ v) (z v) (z' v) (g v) hρ0 (hF v))
+    (by omega) (fun v => (hF v).1) (fun v => _root_.GlobalTheory.DegVol.MidLift.inWb_of_mem_Wn K V H r N k (σ v) ρ β (Φ v) (z v) (z' v) (g v) hρ0 (hF v))
     L N.𝔡 (-((r : ℤ) - b.1.val)) (ρ ^ (r - b.1.val)) hU N.𝔡_ne (pow_pos hρ0 _)
   choose F₃ hF₃m hF₃ hF₃v using fun p : {p : UT r // N.j ≤ p.1.1.val} => IdealFund.exists_fund_ipow K hK ι σ hσ N.𝔡
     (-((r : ℤ) - p.1.1.1.val) - ((r : ℤ) - p.1.1.2.val))
@@ -150,7 +150,7 @@ theorem covol_ref : ∀ (K V : Type) [Field K] [NumberField K] [StarRing K] [Add
       (fun i => exu_image (hF₁ i)) (exu_pi fun i => exu_image (hF₂ i))
       (exu_prod (exu_pi fun i => exu_image (hF₃ i)) (exu_pi fun i => exu_image (hF₄ i))) q
     · exact fun p p' h => usage₂.1 (funext fun v => (rset_eq hF v).2.2 (congrFun h v))
-    · exact funext fun v => (GlobalTheory.T.commonStabilizerFromCoordinates_product_law k r N.j β).1
+    · exact funext fun v => (_root_.GlobalTheory.DegVol.RefCovMul.crd_mul k r N.j β).1
     · rintro m ⟨s, hs, hm⟩
       exact exists_CC hF m (m3 ⟨s, hs.1, hm⟩)
     · exact ⟨1, one_mem _, fun v x => Matrix.one_mulVec _⟩

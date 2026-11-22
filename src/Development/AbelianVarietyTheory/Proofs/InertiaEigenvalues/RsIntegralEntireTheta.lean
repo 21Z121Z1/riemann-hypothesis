@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLatticeAde
 import GroundTheory.AutomorphicForms.FourierWhittaker.PartialCoeffDiagonalBlockGLEqVecCoeff
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegrableOnMinAbsDetInvFundamentalDomain
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MellinTypeIntegralEntireOfRapidDecayStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SchwartzBruhatIntegrableMomentsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SchwartzBruhatIntegrableMoments
 
 noncomputable section
 
@@ -374,7 +374,7 @@ theorem continuous_colSmooth {F : (Fin m → Ad E) → ℂ} (hF : F ∈ GJMatrix
 theorem colSmooth_bound (hmn : m < n) {φ : GA E n → ℂ} (hφ : φ ∈ goodFns n) {F : (Fin m → Ad E) → ℂ}
     (hF : F ∈ GJMatrix.schwartzBruhatPi E (Fin m)) (N : ℕ) :
     ∃ C : ℝ, ∀ g, InS m g → ‖colSmooth m F φ g‖ ≤ C * (min (detAbs g) (detAbs g)⁻¹) ^ N := by
-  obtain ⟨⟨L, hL, hsupp⟩, hint⟩ := GlobalTheory.T.schwartz_bruhat_integrable_moments E m F hF
+  obtain ⟨⟨L, hL, hsupp⟩, hint⟩ := _root_.GlobalTheory.SchwartzBruhatMoments.compactSupport_and_integrable_moments E m F hF
   obtain ⟨C, hC0, hC⟩ := norm_le_of_inS hmn hφ hL N
   set k := n * Module.finrank ℚ E * N
   refine ⟨C * ∫ x, ‖F x‖ * (1 + ‖fun i => pInf E (x i)‖) ^ k ∂GJMatrix.adeleMeasurePi E, fun g hg => ?_⟩

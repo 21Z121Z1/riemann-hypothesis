@@ -1,6 +1,9 @@
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsArchimedeanSignatureFrames
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealVectorsAllPlacesOfLocalDataStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealVectorsAllPlacesOfLocalData
+import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.DepthPays
+import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ProjExists
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Adapted
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.BranchDefs
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.L2.DIV
 open IsDedekindDomain NumberField MeasureTheory GlobalTheory.ChiGrid GlobalTheory.FunObj GlobalTheory.Grow
@@ -133,12 +136,12 @@ theorem locOK_of_eigen : RealInputE → ∃ C : ℝ, 0 ≤ C ∧ Ev fun {D} _ _ 
       ((GlobalTheory.ConjDS.conjModel M₀).σ τ) (MP.ds τ) ((GlobalTheory.ConjDS.conjModel M₀).ds τ)
   set e' : Option (Fin (Yc D 0).rank) ≃ Fin (G.V (.core 0)).rank :=
     (finCongr hY).optionCongr.trans (e.trans (finCongr hN.symm)) with he'
-  obtain ⟨B, hBu, hBg, hBad, hBz, hBmem, hBemb⟩ := GlobalTheory.T.exists_signature_matrix_extension D W.θ W.θ_is (Yc D 0) (G.V (.core 0)) G.sp.dec0 τ
+  obtain ⟨B, hBu, hBg, hBad, hBz, hBmem, hBemb⟩ := _root_.GlobalTheory.PackFrame.exists_adapted_frame D W.θ W.θ_is (Yc D 0) (G.V (.core 0)) G.sp.dec0 τ
     ((GlobalTheory.ConjDS.conjModel M₀).ε τ) ((GlobalTheory.ConjDS.conjModel M₀).fr τ) (MP.ε τ) e'
     ((GlobalTheory.ConjDS.conjModel M₀).fr_unit τ) ((GlobalTheory.ConjDS.conjModel M₀).fr_gram τ) hs0 hs1
   obtain ⟨lam, hlam, hH⟩ := _root_.GlobalTheory.HaarRev.haar_rev _ (M₀.ε τ)
   obtain ⟨hreal, hmco⟩ := _root_.GlobalTheory.PackLoc.mco_frame D _ _ MP τ B g₀' v₀ hBu hBg hg₀'
-  obtain ⟨hpt, hlieX⟩ := GlobalTheory.T.conjugate_model_frame_matrix_facts_at_place D W.θ W.θ_is (Yc D 0) _ M₀ τ
+  obtain ⟨hpt, hlieX⟩ := _root_.GlobalTheory.PackLocFacts.frame_facts D W.θ W.θ_is (Yc D 0) _ M₀ τ
   have hAu := (GlobalTheory.ConjDS.conjModel M₀).fr_unit τ
   have hbig : GlobalTheory.SepReal.big C D.R.r (large₂.sc.b ^ 2) ≤ Real.exp (6 * C * ((D.R.r : ℝ) + 1) ^ 4 * Real.log large₂.sc.b) := by
     unfold GlobalTheory.SepReal.big
@@ -212,7 +215,7 @@ theorem packEx_of_eigen : RealInputE → PackEx := by
   intro D large₂ hε hx0 hS T L μ0 hL G W M hM M₀ MP
   have h := hx D large₂ hε hx0 hS T L μ0 hL G W M hM M₀ MP
   choose εA A εB B v₀ g₀ w c hOK using h
-  obtain ⟨p, hp⟩ := GlobalTheory.T.realVectors_allPlaces_of_localData W.θ W.θ_is G.sp.dec0 M₀ MP _ εA A εB B v₀ g₀ w c hOK
+  obtain ⟨p, hp⟩ := _root_.GlobalTheory.PackGlob.pack_of_loc W.θ W.θ_is G.sp.dec0 M₀ MP _ εA A εB B v₀ g₀ w c hOK
   refine ⟨p, ?_⟩
   have e : loss D (6 * C) large₂.sc.b = Fintype.card D.what₂.Tau * (6 * C * ((D.R.r : ℝ) + 1) ^ 4 * Real.log large₂.sc.b) := by
     unfold loss; ring

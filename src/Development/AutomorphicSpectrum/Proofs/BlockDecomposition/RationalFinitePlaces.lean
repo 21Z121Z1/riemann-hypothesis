@@ -1,10 +1,10 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ThetaNormCommutation.LocalComparisonSplitting.EulerFactorLevels.EulerFinOf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedGLMassFormula
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralPointsOpenCompactStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralPointsOpenCompact
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsPositiveHermitianForm
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryGroupCompactQuotientStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedCentralizerUnitaryIffStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryGroupCompactQuotient
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedCentralizerUnitaryIff
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwCentRatFComm
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteTorsionCentralizer
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteTorsionLatticeCompact
@@ -88,8 +88,8 @@ theorem factor (E : Type) [Field E] [NumberField E] [IsCMField E] (n : ℕ) (δ 
   have hs : (δ * thE E n δ).val.charpoly.Separable := hδ.2.2.1
   have hr : ∀ τ : E →+* ℂ, ∀ z ∈ ((δ * thE E n δ).val.charpoly.map τ).roots, ‖z‖ = 1 := hδ.2.2.2
   obtain ⟨H, hu, hh, hN, hp⟩ := _root_.GlobalTheory.CompanionTheory.TraceHerm.exists_posDef_herm E n _ hs hr
-  obtain ⟨⟨C₀, hC₀, hcov⟩, hfin⟩ := GlobalTheory.T.unitary_group_compact_quotient E n H hu hh hp
-  have hc := GlobalTheory.T.twisted_centralizer_unitary_iff E n δ H hs hu hN
+  obtain ⟨⟨C₀, hC₀, hcov⟩, hfin⟩ := _root_.GlobalTheory.CompanionTheory.DefiniteTransport.cocompact_discrete E n H hu hh hp
+  have hc := _root_.GlobalTheory.CompanionTheory.TwCentNorm.mem_twCent_ratF_iff E n δ H hs hu hN
   set U := UJ (conjFin (IsCMField.complexConj E).toRingEquiv) (H.map (algebraMap E (Af E))) with hU
   set Γ := (UJ (IsCMField.complexConj E).toRingEquiv.toRingHom H).map (ratF E n) with hΓ
   have hΓfin : ∀ X : Set (GL (Fin n) (Af E)), IsCompact X → ((Γ : Set (GL (Fin n) (Af E))) ∩ X).Finite := by
@@ -141,8 +141,8 @@ theorem ratFin : PositivityTheory.Rg.BcB.G8.Fin.RatFin := by
   obtain ⟨⟨C₂, hC₂, hc₂⟩, hf₂, ht₂⟩ := factor E b δ₂ h₂
   have hs₁ : (δ₁ * thE E a δ₁).val.charpoly.Separable := h₁.2.2.1
   have hs₂ : (δ₂ * thE E b δ₂).val.charpoly.Separable := h₂.2.2.1
-  have hK₁ := GlobalTheory.T.finite_kernel_compact_open E a
-  have hK₂ := GlobalTheory.T.finite_kernel_compact_open E b
+  have hK₁ := _root_.GlobalTheory.CompanionTheory.IntegralPoints.kfOC E a
+  have hK₂ := _root_.GlobalTheory.CompanionTheory.IntegralPoints.kfOC E b
   have hKc : (((Kf E a).prod (Kf E b) : Subgroup (Gf E a b)) : Set (Gf E a b)) = (Kf E a : Set _) ×ˢ (Kf E b : Set _) :=
     Subgroup.coe_prod _ _
   have hKo : IsOpen (((Kf E a).prod (Kf E b) : Subgroup (Gf E a b)) : Set (Gf E a b)) := by

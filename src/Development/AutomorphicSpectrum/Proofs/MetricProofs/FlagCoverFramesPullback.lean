@@ -36,7 +36,7 @@ theorem stepCols_ne_empty (j : ℕ) (i : Fin N) : stepCols N j i ≠ ∅ := by
 
 theorem detFac_ne_zero' {E : Type} [Field E] {j : ℕ} (hj : j ≤ N) (i : Fin N) {T : Matrix (Fin N) (Fin N) E}
     (hT : IsBlockDiag j T) (hd : T.det ≠ 0) : detFac j i T ≠ 0 := by
-  have h := ((GlobalTheory.T.block_diagonal_minor_vanishing E N j i hj).2.2.2 T T⁻¹ hT (hT.inv (isUnit_iff_ne_zero.2 hd))).2
+  have h := ((_root_.GlobalTheory.CompanionTheory.Ar.PB.MinorCalc.minors_main E N j i hj).2.2.2 T T⁻¹ hT (hT.inv (isUnit_iff_ne_zero.2 hd))).2
   rw [Matrix.mul_nonsing_inv _ (isUnit_iff_ne_zero.2 hd), detFac_one'] at h
   intro h0
   rw [h0, zero_mul] at h
@@ -83,7 +83,7 @@ theorem read_minor (M : FlagModel y Ψ N j) (F : FrameData ι Ψ N M.Ω M.blk) (
     rw [M.y_step p k hk m]
     exact this
   have hv : ∀ I, ¬ IsStepRows N j p.2 I → minorIJ h I (stepCols N j p.2) = 0 := fun I hI =>
-    ((GlobalTheory.T.block_diagonal_minor_vanishing Φ N j p.2 M.j_le).2.1 h I hb hI).resolve_right (stepCols_ne_empty j p.2)
+    ((_root_.GlobalTheory.CompanionTheory.Ar.PB.MinorCalc.minors_main Φ N j p.2 M.j_le).2.1 h I hb hI).resolve_right (stepCols_ne_empty j p.2)
   calc detFac j p.2 T * ∑ m : ι k, α (F.u' I' ⟨k, m⟩) * y ⟨k, m⟩
       = ∑ m : ι k, α (F.u' I' ⟨k, m⟩) * (detFac j p.2 T * y ⟨k, m⟩) := by
         rw [Finset.mul_sum]; exact Finset.sum_congr rfl fun m _ => by ring
@@ -136,7 +136,7 @@ theorem transPt_eq_smul_sum : ∀ (K : Type) [Fintype K] (ι : K → Type) [∀ 
     rw [div_mul_eq_mul_div, eq_div_iff hμ', mul_comm]
     exact this.symm
   have hv : ∀ I, ¬ IsStepRows N j p.2 I → minorIJ h' I (stepCols N j p.2) = 0 := fun I hI =>
-    ((GlobalTheory.T.block_diagonal_minor_vanishing Φ' N j p.2 M'.j_le).2.1 h' I hb' hI).resolve_right (stepCols_ne_empty j p.2)
+    ((_root_.GlobalTheory.CompanionTheory.Ar.PB.MinorCalc.minors_main Φ' N j p.2 M'.j_le).2.1 h' I hb' hI).resolve_right (stepCols_ne_empty j p.2)
   have hmat : h₀ = (trMat Cv F' F p.1).map α * h' := by
     have e : ((F.T p.1).map Cv.φ).map α = T := Matrix.ext fun _ _ => rfl
     rw [trMat, Matrix.map_mul, inv_map' α hdetφ, e, ← hT', hh', Matrix.mul_assoc,
@@ -144,7 +144,7 @@ theorem transPt_eq_smul_sum : ∀ (K : Type) [Fintype K] (ι : K → Type) [∀ 
   have e3 : ∀ I, minorIJ h₀ I (stepCols N j p.2) =
       ∑ I' ∈ Finset.univ.filter (IsStepRows N j p.2),
         α (minorIJ (trMat Cv F' F p.1) I I') * minorIJ h' I' (stepCols N j p.2) := fun I => by
-    rw [hmat, (GlobalTheory.T.block_diagonal_minor_vanishing Φ' N j p.2 M'.j_le).1]
+    rw [hmat, (_root_.GlobalTheory.CompanionTheory.Ar.PB.MinorCalc.minors_main Φ' N j p.2 M'.j_le).1]
     simp only [minor_map]
     refine (Finset.sum_subset (Finset.filter_subset _ _) fun I' _ hI' => ?_).symm
     rw [hv I' (by simpa using hI'), mul_zero]

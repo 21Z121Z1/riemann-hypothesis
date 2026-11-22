@@ -4,9 +4,9 @@ import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ThetaA
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.TransvectionAction
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.WeilDatumExistence
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.AdjointIsotropicDecomposition
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaFunctionProductsSlicesOrthogonalDecompositiStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilOperatorOneVariableKeepsThetaFunctionsStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilOperatorOneVariablePreservesSqNormOrthogonalStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaFunctionProductsSlicesOrthogonalDecompositi
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilOperatorOneVariableKeepsThetaFunctions
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilOperatorOneVariablePreservesSqNormOrthogonal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchurLemmaThetaFunctionsOrientedPair
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MemLatOIffExistsActO
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum MeasureTheory IsDedekindDomain NumberField Matrix
@@ -51,7 +51,7 @@ theorem opB_heisO {ψ : AddChar (AF D.host.F) ℂ} {χ χ' : (AE D)ˣ →* Circl
       heisO ψ S T ((o.resS T).symm ((o.resS T w).1, actO B T b h (o.resS T w).2)) (opB o (om (b, h)) f) := by
   funext x
   obtain ⟨⟨u, v⟩, rfl⟩ := (o.resS T).symm.surjective x
-  have hg := ((GlobalTheory.T.thetaFunction_products_slices_orthogonalDecomposition D ψ hom.std S A B T o).2.2.2 f hf).2 (u + (o.resS T w).1)
+  have hg := ((_root_.GlobalTheory.BoxSlice.main D ψ hom.std S A B T o).2.2.2 f hf).2 (u + (o.resS T w).1)
   have e : (fun v' => heisO ψ S T w f ((o.resS T).symm (u, v'))) =
       ψ (symplOH A T u (o.resS T w).1) •
         heisO ψ B T (o.resS T w).2 (fun v' => f ((o.resS T).symm (u + (o.resS T w).1, v'))) := by
@@ -71,7 +71,7 @@ theorem opA_heisO {ψ : AddChar (AF D.host.F) ℂ} {χ χ' : (AE D)ˣ →* Circl
       heisO ψ S T ((o.resS T).symm (actO A T a h (o.resS T w).1, (o.resS T w).2)) (opA o (om (a, h)) f) := by
   funext x
   obtain ⟨⟨u, v⟩, rfl⟩ := (o.resS T).symm.surjective x
-  have hg := ((GlobalTheory.T.thetaFunction_products_slices_orthogonalDecomposition D ψ hom.std S A B T o).2.2.2 f hf).1 (v + (o.resS T w).2)
+  have hg := ((_root_.GlobalTheory.BoxSlice.main D ψ hom.std S A B T o).2.2.2 f hf).1 (v + (o.resS T w).2)
   have e : (fun u' => heisO ψ S T w f ((o.resS T).symm (u', v))) =
       ψ (symplOH B T v (o.resS T w).2) •
         heisO ψ A T (o.resS T w).1 (fun u' => f ((o.resS T).symm (u', v + (o.resS T w).2))) := by
@@ -99,13 +99,13 @@ theorem GlobalTheory.WeilSumScalar.omS_eq_smul_prod : ∀ (D : D7) (ψ : AddChar
 
   have hNpres : ∀ f, IsThetaFunO ψ S T f → IsThetaFunO ψ S T (N f) := by
     intro f hf
-    have h1 : IsThetaFunO ψ S T (opB o (omB (b, h)) f) := (GlobalTheory.T.weilOperator_oneVariable_keeps_thetaFunctions D ψ S A B T o f hf).2 _ _ _ hB (b, h)
+    have h1 : IsThetaFunO ψ S T (opB o (omB (b, h)) f) := (_root_.GlobalTheory.WeilSlice.weilSlice_theta D ψ S A B T o f hf).2 _ _ _ hB (b, h)
     rw [hNapp]
-    exact (GlobalTheory.T.weilOperator_oneVariable_keeps_thetaFunctions D ψ S A B T o _ h1).1 _ _ _ hA (a, h)
+    exact (_root_.GlobalTheory.WeilSlice.weilSlice_theta D ψ S A B T o _ h1).1 _ _ _ hA (a, h)
 
   have hNheis : ∀ w f, IsThetaFunO ψ S T f → N (heisO ψ S T w f) = heisO ψ S T (actO S T (o.emb (a, b)) h w) (N f) := by
     intro w f hf
-    have h1 : IsThetaFunO ψ S T (opB o (omB (b, h)) f) := (GlobalTheory.T.weilOperator_oneVariable_keeps_thetaFunctions D ψ S A B T o f hf).2 _ _ _ hB (b, h)
+    have h1 : IsThetaFunO ψ S T (opB o (omB (b, h)) f) := (_root_.GlobalTheory.WeilSlice.weilSlice_theta D ψ S A B T o f hf).2 _ _ _ hB (b, h)
     rw [hNapp, hNapp, opB_heisO o hB b h w hf, opA_heisO o hA a h _ h1]
     congr 1
     rw [AddEquiv.apply_symm_apply, ← o.resS_actO T a b h w, AddEquiv.symm_apply_apply]
@@ -113,10 +113,10 @@ theorem GlobalTheory.WeilSumScalar.omS_eq_smul_prod : ∀ (D : D7) (ψ : AddChar
   have hNunit : ∀ (μ : Measure (WO S T)) (𝓕 : Set (WO S T)), μ.IsAddHaarMeasure → IsAddFundamentalDomain (ratL T S) 𝓕 μ →
       ∀ f, IsThetaFunO ψ S T f → ∫⁻ w in 𝓕, ‖N f w‖ₑ ^ 2 ∂μ = ∫⁻ w in 𝓕, ‖f w‖ₑ ^ 2 ∂μ := by
     intro μ 𝓕 hμ h𝓕 f hf
-    have h1 : IsThetaFunO ψ S T (opB o (omB (b, h)) f) := (GlobalTheory.T.weilOperator_oneVariable_keeps_thetaFunctions D ψ S A B T o f hf).2 _ _ _ hB (b, h)
+    have h1 : IsThetaFunO ψ S T (opB o (omB (b, h)) f) := (_root_.GlobalTheory.WeilSlice.weilSlice_theta D ψ S A B T o f hf).2 _ _ _ hB (b, h)
     rw [hNapp]
-    exact ((GlobalTheory.T.weil_operator_one_variable_preserves_sq_norm_orthogonal_sum D ψ S A B T o μ 𝓕 hμ h𝓕 _ h1).1 _ _ _ hA (a, h)).trans
-      ((GlobalTheory.T.weil_operator_one_variable_preserves_sq_norm_orthogonal_sum D ψ S A B T o μ 𝓕 hμ h𝓕 f hf).2 _ _ _ hB (b, h))
+    exact ((_root_.GlobalTheory.WeilSliceUnit.main D ψ S A B T o μ 𝓕 hμ h𝓕 _ h1).1 _ _ _ hA (a, h)).trans
+      ((_root_.GlobalTheory.WeilSliceUnit.main D ψ S A B T o μ 𝓕 hμ h𝓕 f hf).2 _ _ _ hB (b, h))
 
   have hinv : ∀ g, omS p (omS p⁻¹ g) = g := by
     intro g

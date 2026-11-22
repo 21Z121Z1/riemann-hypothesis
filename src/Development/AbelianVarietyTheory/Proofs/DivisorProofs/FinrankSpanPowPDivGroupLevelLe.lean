@@ -4,8 +4,10 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.FormalCoboundarySmu
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobKerIdealLeAugIdeal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DUnitMemRangeOfMemKerIdeal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankFrobeniusKernelQuotientLePowCotangent
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CartierDualPrimePowConvPairingStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankRigidExtensionsEqHeightAndDimAddDualStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CartierDualPrimePowConvPairing
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankRigidExtensionsEqHeightAndDimAddDual
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RigExtMapRelFrobCompRigOfOmega
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowFinrankCotangentLeFinrankFrobeniusKernelQuoti
 open CategoryTheory TensorProduct MvPowerSeries GlobalTheory GlobalTheory.PDiv GlobalTheory.PDivGroup GlobalTheory.Katz
 
 open Coalgebra Bialgebra WithConv
@@ -45,7 +47,7 @@ theorem frobKerIdeal_le_annPowIdeal (h : (p : K) = 0) (G : PDivGroup p K) (r : �
     frobKerIdeal (p ^ r) K (G.dual.A r) ≤ annPowIdeal h G r := by
   refine Ideal.span_le.2 ?_
   rintro _ ⟨χ, hχ, rfl⟩ a
-  have h1 := GlobalTheory.T.cartierDual_primePow_conv_pairing p K h G r r χ a
+  have h1 := _root_.GlobalTheory.Katz.cartier_primePow_pairing p K h G r r χ a
   have hχ' : χ.ofConv 1 = 0 := hχ
   change (χ ^ p ^ r).ofConv (a ^ p ^ r) = 0
   change (χ ^ p ^ r).ofConv (a ^ p ^ r) = χ.ofConv (mulBy K (G.A r) (p ^ r) a) ^ p ^ r at h1
@@ -91,7 +93,7 @@ theorem GlobalTheory.finrank_span_pow_le : ∀ (p : ℕ) [Fact p.Prime] (K : Typ
     rw [LinearMap.range_eq_top.2 hφ, finrank_top, Subspace.dual_finrank_eq] at this
     exact this
   have h2 := _root_.GlobalTheory.FrobKerDim.finrank_quot_frobKerIdeal_le (p ^ r) K D (pow_pos (Fact.out : p.Prime).pos r)
-  have hfin := (GlobalTheory.T.finrank_rigidExtensions_eq_height_and_dim_add_dual p K h G.dual).1
+  have hfin := (_root_.GlobalTheory.PDivGroup.finrank_rigExt_omega p K h G.dual).1
   have h3 : Module.finrank K (Cot K D) ≤ Module.finrank K G.dual.omega := by
     have := LinearMap.finrank_range_le (G.dual.omegaLevel r)
     rwa [LinearMap.range_eq_top.2 (G.dual.omegaLevel_surjective r), finrank_top] at this

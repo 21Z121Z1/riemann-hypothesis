@@ -2,7 +2,7 @@ import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.LocalBaseChange.StrictDominanceCasselman.IsStrictlyDominant
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsDominantOneAndMul
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetFixedFirstCondition
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StrictlyDominantContractsUnipotentStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StrictlyDominantContractsUnipotent
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FixedVectorZeroOfDual
 
 open GlobalTheory.PRep GlobalTheory.SmGL ValuativeRel PositivityTheory.Lbc
@@ -38,7 +38,7 @@ theorem heckeOp_nilpotent_on_ker :
     induction hu using Submodule.span_induction with
     | mem u hu =>
       obtain ⟨n, w, rfl⟩ := hu
-      obtain ⟨R, hR⟩ := GlobalTheory.T.strictly_dominant_contracts_unipotent k N h d hd J hJo hJc hJf hpos t ht (n : GL (Fin N) k) n.2
+      obtain ⟨R, hR⟩ := _root_.GlobalTheory.CompanionTheory.ExpandN.exists_pow_conj_mem_KN k N h d hd J hJo hJc hJf hpos t ht (n : GL (Fin N) k) n.2
       refine ⟨R, fun r hr l hl => ?_⟩
       obtain ⟨j, rfl⟩ := Nat.exists_eq_add_of_le hr
       have hmem : e t ^ (R + j) * (n : GL (Fin N) k) * (e t ^ (R + j))⁻¹ ∈ KN k N J d hd := by

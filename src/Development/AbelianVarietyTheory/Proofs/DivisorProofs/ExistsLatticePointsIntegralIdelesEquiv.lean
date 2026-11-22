@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.PairingDivisors.StatementA
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsFinSetSplitPlacesCoprimeConductor
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdelicRingClassLatticeOneEqOrderStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdelicRingClassLatticeOneEqOrder
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmRingClassOrderUnitsEqMaxRealSubfieldUnitsStatement
 
 noncomputable section
@@ -93,7 +93,7 @@ theorem exists_equiv : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (�
       ∀ p, ∀ y : (Af E)ˣ, (y : Af E) = algebraMap E (Af E) (p.2.1.out) * (((Quotient.out p.1 : (Af E)ˣ)⁻¹ : (Af E)ˣ) : Af E) →
         (e p).1 = QuotientGroup.mk y := by
   intro E _ _ _ 𝔣 c h𝔣 hc hc0
-  refine ⟨Equiv.ofBijective (toIdele c) ⟨toIdele_injective c (GlobalTheory.T.idelicRingClassLattice_one_eq_order E c hc0) (GlobalTheory.T.cmRingClassOrder_units_eq_maxRealSubfield_units E 𝔣 c h𝔣 hc),
+  refine ⟨Equiv.ofBijective (toIdele c) ⟨toIdele_injective c (_root_.GlobalTheory.CMVal.HatCap.lattice_one E c hc0) (GlobalTheory.T.cmRingClassOrder_units_eq_maxRealSubfield_units E 𝔣 c h𝔣 hc),
     toIdele_surjective c⟩, fun p y hy => ?_⟩
   have : y = diag (rep p.2) * p.1.out⁻¹ := Units.ext hy
   rw [this]

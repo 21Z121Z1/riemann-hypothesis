@@ -2,19 +2,19 @@ import Mathlib
 import Formalism.SharpRestriction.Divisibility.SchurIrreducible
 import Formalism.LocalToGlobal.BesselHermitianTheta.DefsReal
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ContinuousExptPY
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoverUpqClosureExpTopAndCartanStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoverUpqClosureExpTopAndCartan
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryPQCoverUnimodular
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsFockIPOfFockData
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PolarJacobianBlockDiagConjInvariantStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSvd
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsUnitaryCoverLiftBlockDiagonalStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsUnitaryCoverLiftBlockDiagonal
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SinhcAdMulVecOfAdSqEigen
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdMatSqMulVecAdSqEigenvectorMatrixUnitPStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdMatSqMulVecAdSqEigenvectorMatrixUnitP
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DetAdSqEigenvectorMatrixUnitPNeZero
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ProdSinhcRootValueOfMatrixUnitP
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasDerivAtExpTwoAddSmulSinhcAdjointStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasDerivAtExpTwoAddSmulSinhcAdjoint
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasStrictFDerivAtExpTwoUpperRightBlockElementP
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SinhcAdjointApplyMatrixUpperRightBlockElementPStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SinhcAdjointApplyMatrixUpperRightBlockElementP
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DetSinhcAdjointUpperRightCoordEqPolJStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsContinuousOnPolarLog
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsHomeomorphicActionOfCoverOnP
@@ -36,7 +36,7 @@ theorem polJ_aOf_eq_prod (p q : ℕ) (h : ℕ → ℝ) :
   set P : Matrix (PIx p q) (PIx p q) ℂ := Matrix.of fun (cd ab : PIx p q) => eigP ab.1 cd.1 with hP
   have key : S * P = P * Matrix.diagonal fun ab : PIx p q => ((shc (rootP h ab.1) : ℝ) : ℂ) := by
     ext cd ab
-    have h1 := congrFun (_root_.GlobalTheory.PolarU.sinhcAd_mulVec_of_sq_eigen p q _ _ _ (GlobalTheory.T.adMat_sq_mulVec_adSqEigenvectorMatrixUnitP p q h ab)) cd.1
+    have h1 := congrFun (_root_.GlobalTheory.PolarU.sinhcAd_mulVec_of_sq_eigen p q _ _ _ (_root_.GlobalTheory.PolarU.adMat_sq_mulVec_eigP p q h ab)) cd.1
     rw [Matrix.mul_diagonal, Matrix.mul_apply]
     simp only [Matrix.mulVec, dotProduct, Pi.smul_apply, smul_eq_mul] at h1
     rw [← Fintype.sum_subtype_add_sum_subtype (fun x : Ix p q × Ix p q => ¬ sameBlock x.1 x.2)] at h1
@@ -68,7 +68,7 @@ theorem exists_conj_aOf {p q : ℕ} (T : GrpData p q) {Y : Mat p q} (hY : Y ∈ 
     ∃ k ∈ T.Kset, ∃ h : ℕ → ℝ, Y = matG T k * aOf p q h * matG T k⁻¹ := by
   obtain ⟨B, rfl⟩ := exists_pY hY
   obtain ⟨U, hU, V, hV, h, hB⟩ := _root_.GlobalTheory.RectSVD.exists_svd p q (Matrix.of B)
-  obtain ⟨k, hk, hkm⟩ := GlobalTheory.T.exists_unitaryCover_lift_blockDiagonal p q T U hU V hV
+  obtain ⟨k, hk, hkm⟩ := _root_.GlobalTheory.PolarU.exists_lift_blocks p q T U hU V hV
   refine ⟨k, hk, h, ?_⟩
   rw [matG_inv_of_mem T hk, hkm, pY, hB]
   simp [aOf, pOf, Matrix.fromBlocks_conjTranspose, Matrix.fromBlocks_multiply, Matrix.mul_assoc]
@@ -80,7 +80,7 @@ theorem polJ_pos {p q : ℕ} (T : GrpData p q) (B : Fin p → Fin q → ℂ) : 0
 
 theorem cartan {p q : ℕ} (T : GrpData p q) (g : T.G) : ∃ k ∈ T.Kset, ∃ Y ∈ pR p q, g = k * T.expt Y := by
   by_cases h : 1 ≤ p + q
-  · exact (GlobalTheory.T.coverUpq_closure_exp_top_and_cartan p q h T).2 g
+  · exact (_root_.GlobalTheory.CoverExp.closure_expt_eq_top_and_cartan p q h T).2 g
   · have hp : p = 0 := by omega
     have hq : q = 0 := by omega
     subst hp hq
@@ -105,7 +105,7 @@ theorem haar_polar {p q : ℕ} (T : GrpData p q) :
   have hJm : Measurable fun B : Fin p → Fin q → ℂ => ENNReal.ofReal (polJ (pY B)) :=
     ENNReal.measurable_ofReal.comp hJc.measurable
   have hdet : ∀ B : Fin p → Fin q → ℂ, LinearMap.det (sP (pY B)) = polJ (pY B) :=
-    fun B => GlobalTheory.T.det_sinhcAdjointUpperRightCoord_eq_polJ p q _ (GlobalTheory.T.sinhcAdjointApplyMatrix_upperRightBlockElementP p q B)
+    fun B => GlobalTheory.T.det_sinhcAdjointUpperRightCoord_eq_polJ p q _ (_root_.GlobalTheory.PolarU.SinhcPres.sAd_pY p q B)
   have hem : Measurable fun B : Fin p → Fin q → ℂ => T.expt (pY B) := (continuous_expt_pY T).measurable
   haveI : IsLocallyFiniteMeasure
       ((volume : Measure (Fin p → Fin q → ℂ)).withDensity fun B => ENNReal.ofReal (polJ (pY B))) :=
@@ -140,8 +140,8 @@ theorem haar_polar {p q : ℕ} (T : GrpData p q) :
           refine ⟨U, hU, V, hV, ?_⟩
           have := congrArg (matG T) h
           rwa [matG_mul, matG_mul, matG_expt, matG_expt, hm] at this)
-        (fun B => by rw [hdet]; exact polJ_pos T B) (GlobalTheory.T.sinhcAdjointApplyMatrix_upperRightBlockElementP p q)
-        (fun B => _root_.GlobalTheory.PolarU.hasStrictFDerivAt_exp_two_pY p q B (GlobalTheory.T.hasDerivAt_exp_two_add_smul_sinhcAdjoint p q (pY B)))
+        (fun B => by rw [hdet]; exact polJ_pos T B) (_root_.GlobalTheory.PolarU.SinhcPres.sAd_pY p q)
+        (fun B => _root_.GlobalTheory.PolarU.hasStrictFDerivAt_exp_two_pY p q B (_root_.GlobalTheory.PolarU.hasDerivAt_exp_two_add_smul p q (pY B)))
       simpa only [hdet] using this)
   refine ⟨c, mK, hc, hprob, hK0, hleft, fun f hfm => ?_⟩
   rw [hf f hfm, lintegral_withDensity_eq_lintegral_mul _ hJm]

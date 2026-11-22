@@ -12,7 +12,7 @@ import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ToricSymbols
 import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdMinorsMemInv
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsArchimedeanUnitaryWeights
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AverageDetCharMonomialEqSumProdMinorsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AverageDetCharMonomialEqSumProdMinors
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BoundaryRealGroupAction
 
@@ -34,7 +34,7 @@ theorem GlobalTheory.RealProj.realProjection_average_monomial : ∀ {D : D7} {T 
             ∑ p, r p * X.ker' W.ψ W.θ t (GlobalTheory.NormSum.minorPol D (U p)) h x := by
   intro D T _ L μ₀ sc G W i j A A' WW X hPr hInp hL hB
   obtain ⟨m, ρ, hρm, hρs, hact⟩ := _root_.GlobalTheory.T.twist_boundary_real_action hPr hInp hL hB
-  obtain ⟨n, hn⟩ := GlobalTheory.T.average_det_char_monomial_eq_sum_prod_minors (ι := D.what₂.Tau) A'.rank WW.rank m
+  obtain ⟨n, hn⟩ := _root_.GlobalTheory.MinorFrame.AvgCore.average_monomial_eq_sum_prodMinors (ι := D.what₂.Tau) A'.rank WW.rank m
   refine ⟨n, fun κ hκ hκp t x hx h hh k => ?_⟩
   let Λ : GlobalTheory.MinorFrame.Pol D.what₂.Tau WW.rank A'.rank →ₗ[ℂ] ℂ :=
     (LinearMap.proj (R := ℂ) (φ := fun _ : WO A' WW => ℂ) 0).comp

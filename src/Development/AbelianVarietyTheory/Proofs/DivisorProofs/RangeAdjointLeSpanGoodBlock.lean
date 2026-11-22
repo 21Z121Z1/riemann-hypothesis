@@ -11,7 +11,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftsEquivariantTwi
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RangeAdjointCompositeLiftLeSpanBlockEigenspaces
 import Formalism.LocalToGlobal.IndefiniteReal.CutTuples2
 import Formalism.LocalToGlobal.Divisibility.ProjLemmas
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RangeAdjointThetaLiftLeBlockEigenspaceSpanStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RangeAdjointThetaLiftLeBlockEigenspaceSpan
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RangeAdjointThLeSpanGood
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RangeAdjointLeSpan
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpanImageInfOfLinearIndependent
@@ -41,7 +41,7 @@ theorem range_adjoint_le_span_good_block : ∀ {D : D7} {G : Type} [Group G] [Fi
     have hli := (model_form (R.B.R t).pres (R.HX t) (hC.models.HX t) (hC.models.jX t)).1
     have h3 := GlobalTheory.span_image_inf_of_linearIndependent _ (R.jX t) _ hli ((A3.A.fam.R t).ZH) ((A3.A.fam.R t).goodF A3.A.X)
     exact (le_inf h1 h2).trans h3.le
-  · have h1 := GlobalTheory.T.range_adjoint_thetaLift_le_blockEigenspaceSpan R.toRealDat F.lv2 hLI hOk2 hC hS i t
+  · have h1 := _root_.GlobalTheory.LiftAdjointBlock.range_adjoint_le R.toRealDat F.lv2 hLI hOk2 hC hS i t
     have h2 := GlobalTheory.AdjSpanLift.range_adjoint_lift_le R.toRealDat F.lv2 hOk2 hC hG.2 i t
     have hli := (model_form (R.B.L i t).pres (R.HV i t) (hC.models.HV i t) (hC.models.jV i t)).1
     have h3 := GlobalTheory.span_image_inf_of_linearIndependent _ (R.jV i t) _ hli ((A3.A.fam.L i t).ZH) ((A3.A.fam.L i t).goodF A3.A.X)

@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.UnifOfSpaceEq
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.WeightFunctionOnFrames
 import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.UnitaryHaarVolume
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartBottomLeftBlock
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartFirstColumnsEqGraphTimesTopBlockStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartFirstColumnsEqGraphTimesTopBlock
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MajorantEqOfFirstColumnsChange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartGraphCoordinatesOpNormLeOfSmall
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.FundamentalDomainExtension.UnipotentMoves.DotAddRight
@@ -20,7 +20,7 @@ theorem maj_cpt_le_two : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] 
   have ho : X.IsOrtho x := hxo
   have hZ := _root_.GlobalTheory.ChartGraph.zN_graphCoord_le E r X z hz
   have hy : X.xZ x (graphCoord X z) ∈ X.dom := OrthonormalChartBounds.xZ_mem_dom X hx ho (by linarith)
-  obtain ⟨hdet, hcol⟩ := GlobalTheory.T.chart_firstColumns_eq_graph_times_topBlock E r X x z τ
+  obtain ⟨hdet, hcol⟩ := _root_.GlobalTheory.ChartGraph.cols_graph E r X x z τ
   have heq := _root_.GlobalTheory.MajCols.maj_eq_of_cols E r X (cpt X x z) (X.xZ x (graphCoord X z)) τ (chartMatrixTopBlock X z τ)
     (by rw [hdet]; exact one_ne_zero) (Data.gramPos_det_ne X hy τ) hcol v
   obtain ⟨h1, h2⟩ := UnipMove.MajH.maj_xZ' X hx ho (ρ := 1 / 50) (by norm_num) (by norm_num) hZ τ v

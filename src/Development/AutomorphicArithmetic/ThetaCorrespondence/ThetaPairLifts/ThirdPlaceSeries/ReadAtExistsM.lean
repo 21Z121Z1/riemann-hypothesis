@@ -44,7 +44,7 @@ theorem readAt_exists_m_alt (hAF : GlobalTheory.Published.AutomorphicFormsFinite
   have hrep : ∀ Q : D.naut.AV i, ∃ τ : Irr (s.w.adicCompletion D.host.E) (D.R.r + D.R.t),
       IsLocS (n := D.R.nV) (P.H.av.S i Q) s τ.toIrrRep := by
     intro Q
-    obtain ⟨τ, hτ, -⟩ := GlobalTheory.T.splitPlaceLocalComponent_exists_unique_class D.host.E D.R.nV (P.H.av.rep i Q) s
+    obtain ⟨τ, hτ, -⟩ := _root_.GlobalTheory.LocCompSplit.main D.host.E D.R.nV (P.H.av.rep i Q) s
     exact ⟨Irr.ofIrrRep τ, hτ⟩
   choose rep hrep using hrep
   have hjr := D.nd.j_range i

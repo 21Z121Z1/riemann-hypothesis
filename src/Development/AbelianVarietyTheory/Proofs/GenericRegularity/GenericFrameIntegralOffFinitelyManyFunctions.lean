@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrameChangeCommB
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrameChangeExistsUniqueOfSamePoint
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IntegralFrameChangeIntegralInvertibleMatrix
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.NonemptyLift
-import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsModelChartGenericPointComponentStatement
+import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsModelChartGenericPointComponent
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.TieBaseChange
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsFrPtTie
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.FramedPointIntegralIntegralCellAnyModelStatement
@@ -274,7 +274,7 @@ theorem exists_finset_of_lift (hT : Out.SecTwistSt) (hbc : FrBC Xo c) {Y : Model
 
 theorem genFr_integral : ReciprocityTheory.ChartRestriction.G.Out.SecTwistSt → ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host E) (Dw : Datum H) (l : Level H) (Xo : Moduli Dw l) (c : Coeff l), FrBC Xo c → ∀ (Y : Model Xo c (algebraMap (𝓞 c.F) c.F)) (h : GenFrEx Xo c) (Z : Comp Xo c), ∃ S : Finset (Om Z), (∀ s ∈ S, s ≠ 0) ∧ ∀ (T : CDVR) (io : c.F →+* T.Fr), letI := io.toAlgebra; ∀ ψ : Om Z →ₐ[c.F] T.Fr, (∀ s ∈ S, vV T.V (ψ s) = 0) → ∀ z : FrPt Xo c T.Fr, FrMap ψ (genFr h Z) z → Integral T io z := by
   intro hT E _ _ _ H Dw l Xo c hbc Y h Z
-  obtain ⟨M, hM⟩ := GlobalTheory.T.exists_modelChart_genericPoint_component hT E H Dw l Xo c Y Z
+  obtain ⟨M, hM⟩ := _root_.GlobalTheory.GenericChart.exists_chart_genPt hT E H Dw l Xo c Y Z
   let xF : Sp (Om Z) ⟶ Xo.XF c := spMap (algebraMap (kap Z) (Om Z)) ≫ genSp Z
   have hpt : ∀ p, genSp Z p = genPt Z := fun p => Scheme.fromSpecResidueField_apply _ p
   obtain ⟨f, hf, -⟩ := GlobalTheory.ModelPoints.existsUnique_chartHom M.hU (Om Z) (xF ≫ Y.j) (by

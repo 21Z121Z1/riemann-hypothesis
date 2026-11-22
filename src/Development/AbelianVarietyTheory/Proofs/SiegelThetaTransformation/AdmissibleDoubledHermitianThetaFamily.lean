@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsSystem
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsHeatZero
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DoubledThetaTestFunctionSesquilinearHeisenbergStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DoubledThetaTestFunctionSesquilinearHeisenberg
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DoubledVacuumEqHermitianCharacter
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LevelStructureProperties
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LevelTestFunctionFiniteSumEquivariantStatement
@@ -387,19 +387,19 @@ theorem dbl_sum (hs : IsSympl X bas) (hn : Even n) {J : Type} (s t : Finset J)
     | insert a s ha ih =>
       rw [Finset.sum_insert ha]
       exact (_root_.GlobalTheory.SW.isSB_algebra_haar_linear ℚ _ _ _ _ (hχ a) ih).1
-  have z := fun (φ₁ φ₂ : TF n g) h₁ h₂ => (GlobalTheory.T.doubledThetaTestFunction_sesquilinear_heisenberg E r X g bas idx n hs hn φ₁ φ₂ h₁ h₂).2.1
+  have z := fun (φ₁ φ₂ : TF n g) h₁ h₂ => (_root_.GlobalTheory.SW.DblLin.dbl_lin E r X g bas idx n hs hn φ₁ φ₂ h₁ h₂).2.1
   induction s using Finset.induction_on with
   | empty => simpa using z 0 _ isSB_zero (sb ψ hψ t) 0 1
   | insert a s ha ih =>
     rw [Finset.sum_insert ha, Finset.sum_insert ha,
-      ((GlobalTheory.T.doubledThetaTestFunction_sesquilinear_heisenberg E r X g bas idx n hs hn _ _ (hφ a) (sb ψ hψ t)).1 _ (sb φ hφ s)).1, ih]
+      ((_root_.GlobalTheory.SW.DblLin.dbl_lin E r X g bas idx n hs hn _ _ (hφ a) (sb ψ hψ t)).1 _ (sb φ hφ s)).1, ih]
     congr 1
     clear ih
     induction t using Finset.induction_on with
     | empty => simpa using z _ 0 (hφ a) isSB_zero 1 0
     | insert b t hb ih =>
       rw [Finset.sum_insert hb, Finset.sum_insert hb,
-        ((GlobalTheory.T.doubledThetaTestFunction_sesquilinear_heisenberg E r X g bas idx n hs hn _ _ (hφ a) (hψ b)).1 _ (sb ψ hψ t)).2, ih]
+        ((_root_.GlobalTheory.SW.DblLin.dbl_lin E r X g bas idx n hs hn _ _ (hφ a) (hψ b)).1 _ (sb ψ hψ t)).2, ih]
 
 theorem fromCols_mul_dblT (y y' : Matrix (Fin n) (Fin r) E) :
     (Matrix.fromCols y y' * dblT X).toCols₁ = y - y' ∧
@@ -456,8 +456,8 @@ theorem adm_dbl_phi_of_isVac : ∀ (E : Type) [Field E] [NumberField E] [IsCMFie
       dbl_sum idx hs hev _ _ (fun k => TensVac.sb_smul _ (hb _)) fun k => TensVac.sb_smul _ (hb' _)]
     simp only [Finset.sum_apply]
     refine Finset.sum_congr rfl fun k _ => Finset.sum_congr rfl fun k' _ => ?_
-    rw [(GlobalTheory.T.doubledThetaTestFunction_sesquilinear_heisenberg E r X g bas idx n hs hev _ _ (hb _) (hb' _)).2.1,
-      (GlobalTheory.T.doubledThetaTestFunction_sesquilinear_heisenberg E r X g bas idx n hs hev _ _ sb sb').2.2, (fromCols_mul_dblT _ _).1,
+    rw [(_root_.GlobalTheory.SW.DblLin.dbl_lin E r X g bas idx n hs hev _ _ (hb _) (hb' _)).2.1,
+      (_root_.GlobalTheory.SW.DblLin.dbl_lin E r X g bas idx n hs hev _ _ sb sb').2.2, (fromCols_mul_dblT _ _).1,
       (fromCols_mul_dblT _ _).2, funext (hu Λ hΛ)]
     rfl
 

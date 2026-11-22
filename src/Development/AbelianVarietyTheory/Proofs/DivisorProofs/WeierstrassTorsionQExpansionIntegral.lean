@@ -6,7 +6,7 @@ import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModDefs
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralWeierstrassTorsionQCoefficients
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeierstrassDivisionValueQExpansion
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasQExpansionNormalizedDerivWeierstrassPTorsion
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraicValuationAtLeastBasicPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraicValuationAtLeastBasicProperties
 
 open scoped UpperHalfPlane MatrixGroups Matrix ModularForm ComplexConjugate
 open GlobalTheory.QFam GlobalTheory.WpFam GlobalTheory.LatVal ReciprocityTheory.ChartRestriction.L1 Formalism.L2.Th1.F
@@ -19,7 +19,7 @@ theorem main : ∀ (l : ℕ) [Fact l.Prime] (lam : algebraicClosure ℚ ℂ →+
   intro l hl lam N _ M x hM hx hx0
   have hpos : 0 < M := Nat.pos_of_ne_zero fun h => hM (h ▸ dvd_zero l)
   have hpow : ∀ e : ℕ, ¬ l ∣ M ^ e := fun e h => hM (hl.out.dvd_of_dvd_pow h)
-  have hsz := (GlobalTheory.T.algebraicValuationAtLeast_basic_properties l lam).1
+  have hsz := (_root_.GlobalTheory.SzRules.main l lam).1
   refine ⟨⟨cB N x, _root_.GlobalTheory.WpFam.ExpansionB.main N x hx0, fun k => hsz (M ^ 2) _ (hpow 2) ?_⟩,
     ⟨cD N x, _root_.GlobalTheory.WpFam.DerivExpansion.main N x, fun k => hsz (M ^ 3) _ (hpow 3) ?_⟩⟩
   · rw [Nat.cast_pow]

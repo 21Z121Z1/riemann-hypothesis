@@ -25,8 +25,8 @@ theorem exists_keySec_of_generic (h : GenFrEx Xo c) (b : ∀ Z : Comp Xo c, Om Z
       (((kch C.t : (Om C.Z)ˣ) : Om C.Z) * b C.Z)⁻¹ ∈ C.R) :
     ∃ ρ : KeySec Xo c, ∀ Z, evC h Z (ρ.ρ : Rul Xo c) = b Z := by
   obtain ⟨hL, -, -, hA⟩ := evLaws_genFr_atlas E H Dw l Xo c
-  obtain ⟨f, hf, hfb⟩ := GlobalTheory.T.exists_integer_exponent_section_of_chart_regular E H Dw l Xo c h (keyEx Dw) b fun C => (hb C).1
-  obtain ⟨f', hf', hfb'⟩ := GlobalTheory.T.exists_integer_exponent_section_of_chart_regular E H Dw l Xo c h (-keyEx Dw) (fun Z => (b Z)⁻¹) fun C => by
+  obtain ⟨f, hf, hfb⟩ := _root_.GlobalTheory.SecGlueInt.exists_secZ_of_regular E H Dw l Xo c h (keyEx Dw) b fun C => (hb C).1
+  obtain ⟨f', hf', hfb'⟩ := _root_.GlobalTheory.SecGlueInt.exists_secZ_of_regular E H Dw l Xo c h (-keyEx Dw) (fun Z => (b Z)⁻¹) fun C => by
     have := (hb C).2
     rw [mul_inv, ← Units.val_inv_eq_inv_val] at this
     simpa only [kch, Pi.neg_apply, zpow_neg, Finset.prod_inv_distrib] using this
@@ -108,7 +108,7 @@ theorem exists_keySec_pow_four : ∀ (κ : GlobalTheory.KeyCl.Rule), GlobalTheor
     ⟨fun k => _root_.GlobalTheory.NormFrame.frameOK_of_isNormUn hT E H Dw l Xo c σ g₀ e₀ F _ M k (T k) (un k) hσ hM hξ (hun k),
       fun k => _root_.GlobalTheory.NormUnBor.normUn_bor hT E H Dw l Xo c σ g₀ e₀ F _ M un k (T k) hσ hM hξ (hun k),
       fun k => _root_.GlobalTheory.FrameUnif.normUn_gamma hT E H Dw l Xo c σ g₀ e₀ F _ M un k (T k) hσ hM hξ (hun k),
-      fun a n han f hf k => GlobalTheory.T.differentiableOn_readings_normalised_theta_points hB hT E H Dw l Xo c σ g₀ e₀ F _ M un k (T k) (hun k) a n han f hf⟩
+      fun a n han f hf k => _root_.GlobalTheory.FrameUnif.NormUnHol.differentiableOn_rdU hB hT E H Dw l Xo c σ g₀ e₀ F _ M un k (T k) (hun k) a n han f hf⟩
   have hU₀ := isUnf_built hB E H Dw l Xo c σ g₀ e₀ F _ M un hσ hM hξ hok
   have hC : (normConst (fun j => Formalism.L2.PjFree.relab c σ (e₀ j).1) ξ₀ : ℂ) ≠ 0 := by
     rw [Complex.ofReal_ne_zero]

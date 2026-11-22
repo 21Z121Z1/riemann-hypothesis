@@ -135,7 +135,7 @@ theorem unfolded_bump_eq :
   have ev1 := GlobalTheory.T.shintani_unfoldedIntegrand_eval_torusCell E m S hψ ϖ hϖ b α α φ φ N J Φ hJ hn1 hn2 hn3 hΦt hW hW hWJ hWJ (hsh ϖ hϖ) (hsh ϖ hϖ) x
   have ev2 := GlobalTheory.T.shintani_unfoldedIntegrand_eval_torusCell E m S hψ ϖ hϖ b α' α' φ' φ' N J Φ hJ hn1 hn2 hn3 hΦt hW' hW' hWJ' hWJ' (hsh' ϖ hϖ)
     (hsh' ϖ hϖ) x
-  have hC0 : MeasurableSet (GlobalTheory.CellDec.C0 E (m + 1) S) := (GlobalTheory.T.isOpen_C0 E (m + 1) S).measurableSet
+  have hC0 : MeasurableSet (GlobalTheory.CellDec.C0 E (m + 1) S) := (_root_.GlobalTheory.CellDec.isOpen_adelicUnipotentTimesIntegralOutsideSet E (m + 1) S).measurableSet
   set I : ℂ := ∫ g in 𝓕₀, (f g : ℂ) * Complex.exp (x * t g) ∂μ with hI
   have hIC : ∫ g in 𝓕₀ ∩ GlobalTheory.CellDec.C0 E (m + 1) S, (f g : ℂ) * Complex.exp (x * t g) ∂μ = I := by
     rw [hI, Set.inter_comm, ← Measure.restrict_restrict hC0, ← integral_indicator hC0]

@@ -1,6 +1,7 @@
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.IsConst
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CrystallinePull2SumCup
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsReducedOfSmoothOverFieldStatement
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsReducedOfSmoothOverField
 
 open CategoryTheory AlgebraicGeometry Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.Cris GlobalTheory.DeRham GlobalTheory.ConjSeq GlobalTheory.UPel.HT GlobalTheory.UPel.HT.ES UpperTheory.Gal.Ord
@@ -11,7 +12,7 @@ namespace UpperTheory.Gal.Ord
 private theorem radical_quot (R B : Type) [CommRing R] [CommRing B] [Algebra R B] [Algebra.Smooth R B]
     (m : Ideal R) [m.IsMaximal] : (m.map (algebraMap R B)).IsRadical := by
   letI : Field (R ⧸ m) := Ideal.Quotient.field m
-  haveI : _root_.IsReduced ((R ⧸ m) ⊗[R] B) := GlobalTheory.T.isReduced_of_smooth_over_field' (R ⧸ m) _
+  haveI : _root_.IsReduced ((R ⧸ m) ⊗[R] B) := _root_.GlobalTheory.isReduced_of_smooth_over_field (R ⧸ m) _
   have e := Algebra.TensorProduct.quotIdealMapEquivQuotTensor B m
   haveI : _root_.IsReduced (B ⧸ m.map (algebraMap R B)) :=
     isReduced_of_injective e.toRingEquiv.toRingHom e.injective

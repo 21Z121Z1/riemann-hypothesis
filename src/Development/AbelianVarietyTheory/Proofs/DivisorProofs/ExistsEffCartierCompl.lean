@@ -15,7 +15,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Geometrica
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DenseInterior
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CrysToDRBijective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqLastAddGaps
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagSpaceComponentSmoothProjectiveConnectedStatement
+import Development.AbelianVarietyTheory.Definitions.Divisors.NonemptyCuspFrame
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverIffIsProperAndExistsIsAmpleLB
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeadWeightLineNef
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsNefPullLLStepEx
@@ -203,7 +203,7 @@ theorem exists_iso (T : TorFlag Xo c) (Z : Comp Xo c) (B : Comp Xo c → GlobalT
   have hJ : ∀ w : gen T.Y, genι T.Y w ∈ barComp T.Y Z ↔ w ∈ Set.range (j Z) :=
     barComp_iff Z B j (fun i => (hB i).1) (fun i => (hB i).2.2.2) hcov
   have hX := GlobalTheory.T.flagChartFrames_eigenFrames_localRing T.X
-  have hC := GlobalTheory.T.flagBundlePointFramesTriangular_component C
+  have hC := _root_.GlobalTheory.VarFlag.carriesTri C
 
   have hspid : spMap (RingEquiv.refl c.F).toRingHom = 𝟙 _ := Spec.map_id _
   have hCs : C.π ≫ genStr T.Y = C.Y.str := by
@@ -239,7 +239,7 @@ theorem exists_iso (T : TorFlag Xo c) (Z : Comp Xo c) (B : Comp Xo c → GlobalT
   have : CompactSpace (Y₀ T.X Z) := QuasiCompact.compactSpace_of_compactSpace (inc₀ T.X Z)
   have : IsNoetherian (Y₀ T.X Z) := {}
   have hU : ∀ (K : Type) [Field K] (z : Sp K ⟶ Y₀ T.X Z), ∃! p : Sp K ⟶ C.Y.X, Rel T.X.F C (z ≫ inc₀ T.X Z) p :=
-    GlobalTheory.T.flagModel_point_carries_unique_flagBundle_point T.X Z hX C hC (B Z) (j Z) f hπ hl hJ
+    _root_.GlobalTheory.VarFlag.uniq_rel T.X Z hX C hC (B Z) (j Z) f hπ hl hJ
   obtain ⟨h, hh, hR⟩ := _root_.GlobalTheory.FieldPointGraph.exists_hom_of_rel (Y₀ T.X Z) C.Y.X T.Y.X (inc₀ T.X Z ≫ T.X.π) (C.π ≫ genι T.Y)
     (fun K _ z w => Rel T.X.F C (z ≫ inc₀ T.X Z) w)
     (fun K _ z w hw => by rw [← Category.assoc]; exact Rel.over T.X C hw)
@@ -308,7 +308,7 @@ theorem exists_flagTor (T : TorFlag Xo c) (hF : FnAlgClosed Xo c) {σ : c.F →+
   obtain ⟨B, j, hB, hcov⟩ := _root_.GlobalTheory.GenFibreComp.exists_vars E H Dw l Xo c c.F (RingHom.id c.F) T.Y c.F (RingEquiv.refl _) hF hsm
   have key := fun i : U.Comp =>
     haveI := (hB (q i)).1
-    GlobalTheory.FlagBundle.exists_flagCpt T.Y (RingEquiv.refl _) (GlobalTheory.T.snc_toroidalGenericBoundary_of_snc_boundary T.snc) (B (q i)) (j (q i)) (hB (q i)).2.2.1
+    GlobalTheory.FlagBundle.exists_flagCpt T.Y (RingEquiv.refl _) (_root_.GlobalTheory.VarFlag.snc_genBdIdeal_of_snc_boundary T.snc) (B (q i)) (j (q i)) (hB (q i)).2.2.1
   choose C f hπ hdim hl using key
   have lift : ∀ (K : Type) [Field K] (x : Sp K ⟶ gen T.Y) (i : Comp Xo c),
       x (IsLocalRing.closedPoint K) ∈ Set.range (j i) → ∃ x' : Sp K ⟶ (B i).X, x' ≫ j i = x := fun K _ x i h => by
@@ -377,7 +377,7 @@ theorem topSelf_eq_covol (hM : GlobalTheory.Published.MumfordProportionality) (T
   obtain ⟨BD, hBD⟩ := exists_effCartier_compl T.Y.X (LogKS.interior T.Y) (LogKS.dense_interior T.Y) T.snc
   have hab : ∀ x, x ∈ BD.idealSheaf.support ↔ x ∉ abLocus T.Y.t.G := fun x => by
     rw [hBD, ← LogKS.coe_interior]; rfl
-  let T' := GlobalTheory.TorRef.selfTor T.Y (smooth_gen T.smooth) (GlobalTheory.T.snc_toroidalGenericBoundary_of_snc_boundary T.snc) hc BD (fun x hx => (hab x).1 hx)
+  let T' := GlobalTheory.TorRef.selfTor T.Y (smooth_gen T.smooth) (_root_.GlobalTheory.VarFlag.snc_genBdIdeal_of_snc_boundary T.snc) hc BD (fun x hx => (hab x).1 hx)
     (fun x hx => (hab _).2 (GlobalTheory.Toroidal.mem_genBd_iff.1 hx)) 1 one_pos
   refine ⟨q, hq, fun k => ?_⟩
   obtain ⟨h, _, h1, h2, h3⟩ := hΦ k

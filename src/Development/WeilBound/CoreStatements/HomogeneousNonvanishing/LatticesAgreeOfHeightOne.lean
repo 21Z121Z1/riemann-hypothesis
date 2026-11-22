@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.QuadraticCharacterPrescribedPlaces
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtFractionNoetherianClosedStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtFractionNoetherianClosed
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsPointLocalizationPrime
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCptGen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
@@ -17,7 +17,7 @@ theorem latagree_le (X : Scheme.{0}) (Ω : Type) [Field Ω] (ξ : Spec (CommRing
     L' p ≤ L p := by
   obtain ⟨U, hU, b, hb, hbq⟩ := hL p hp
   obtain ⟨U', hU', b', hb', hbq'⟩ := hL' p hp
-  obtain ⟨hfr, hno, hic⟩ := GlobalTheory.T.regAt_fraction_noetherian_closed X Ω ξ hξ p
+  obtain ⟨hfr, hno, hic⟩ := _root_.GlobalTheory.CompanionTheory.Ar.RegAtRing.regAt_ring X Ω ξ hξ p
   haveI := hfr
   haveI := hno inferInstance
   haveI := hic (hn p hp)

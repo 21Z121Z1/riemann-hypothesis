@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftWeightCombinato
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LambdaPrimeAllPoints
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AtPtsImp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ParameterLargeAllPointsBound
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftWeightRhoEntryValuesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftWeightRhoEntryValues
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftWeightRhoBlockConstantCentred
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftWeightRhoWindowContainsCloud
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftWeightRhoLowsDistanceBounds
@@ -31,7 +31,7 @@ theorem wts_ok_alt : _root_.GlobalTheory.BigOn.AtPtsAlt fun Fm x _ i _ => ∀ j 
   refine _root_.GlobalTheory.ExpTie.atPts_mono (_root_.GlobalTheory.ExpTie.atPts_and_alt _root_.GlobalTheory.T.isLamPrime_at_all_points _root_.GlobalTheory.T.parameter_large_at_all_points) ?_
   intro eps Fm x hx i p hp j
   obtain ⟨hF, hLg⟩ := hp
-  have hv : ∀ τ, ValsAt (Fm.L x i) j τ := fun τ => GlobalTheory.T.liftWeightRho_entryValues (Fm.L x i) j τ (hF j τ)
+  have hv : ∀ τ, ValsAt (Fm.L x i) j τ := fun τ => _root_.GlobalTheory.ExpTie.Lift.valsAt_of_isLamPrime (Fm.L x i) j τ (hF j τ)
   refine ⟨wts (Fm.L x i) j, ⟨anti _ j, what₂ _ j, fun τ => (_root_.GlobalTheory.ExpTie.Lift.block_centre (Fm.L x i) j τ (hv τ)).1, fun τ => (_root_.GlobalTheory.ExpTie.Lift.block_centre (Fm.L x i) j τ (hv τ)).2,
     fun τ => (_root_.GlobalTheory.ExpTie.Lift.window_cloud (Fm.L x i) j τ (hv τ)).1, fun τ => (_root_.GlobalTheory.ExpTie.Lift.window_cloud (Fm.L x i) j τ (hv τ)).2,
     fun τ => _root_.GlobalTheory.ExpTie.Lift.low_dist (Fm.L x i) (Fm.params x hx i) j τ (hv τ), fun τ h => GlobalTheory.T.liftWeightRho_thickPlace_centre_window (Fm.L x i) j τ (hv τ) h,

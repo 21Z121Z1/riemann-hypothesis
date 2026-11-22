@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianUno
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianHodgeDeRham
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.BijectiveCechDeRhamComparisonDegreeOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RedHomAlgebraMap
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpanInvariantOneFormsAffineOpenAbelianSchemeEqToStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpanInvariantOneFormsAffineOpenAbelianSchemeEqTo
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRetractionDifferentialsInvariantOneFormsAf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantOneFormsAbelianSchemeFiniteProjective
 
@@ -27,7 +27,7 @@ theorem isBaseChange_invForm : ∀ (R : Type) [CommRing R] (A : Over (Sp R)) [Gr
   let f := evForm A.hom U ∘ₗ (InvForm A).subtype
   let L := f.liftBaseChange (Sec A.hom U.unop.1)
   have hs : Function.Surjective L := by
-    rw [← LinearMap.range_eq_top, eq_top_iff, ← GlobalTheory.T.span_invariantOneForms_affineOpen_abelianScheme_eq_top R A g hab hdim U]
+    rw [← LinearMap.range_eq_top, eq_top_iff, ← _root_.GlobalTheory.InvSpan.span_invForm_eq_top R A g hab hdim U]
     refine Submodule.span_le.2 ?_
     rintro _ ⟨w, rfl⟩
     exact ⟨1 ⊗ₜ w, by simp [L, f]⟩

@@ -72,7 +72,7 @@ theorem kir_of : jumpWindows.S2 → jumpWindows.G0 → jumpWindows.G2a → jumpW
   have hxY' : Rt E k h x ∈ Y' := by
     have hxg : x ∈ Yg := by
       refine (hYgm x).2 ⟨?_, fun γ g => ?_⟩
-      · rw [hx]; exact GlobalTheory.T.isMirabolicWhittakerStage_of_isCuspForm E k ψ φ hcusp
+      · rw [hx]; exact _root_.GlobalTheory.CuspGeneric.good_of_isCuspForm E k ψ φ hcusp
       · rw [congrFun hx, congrFun hx]; exact hcusp.1.left γ g
     rw [hmem]
     exact ⟨⟨hYi h x (hYπ x ⟨φ, hφ, hx⟩), hYgi h x hxg⟩,

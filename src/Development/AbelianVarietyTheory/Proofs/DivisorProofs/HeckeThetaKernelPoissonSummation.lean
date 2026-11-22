@@ -6,8 +6,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EmbAApply
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.SummableLatticeExpNegPiMulNormSqDiv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FourierHarmonicMonomialMulGaussianComplex
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FourierProdSingleCoordinateFunctionsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FourierCompCoordDilationByHalfExpStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeIdealEuclideanLatticeIsZLatticeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FourierCompCoordDilationByHalfExp
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeIdealEuclideanLatticeIsZLattice
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussianHarmonicProductKernelContinuousBounded
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TsumRingEqSumIdealCosetsTsum
 
@@ -114,7 +114,7 @@ theorem poisson_coset (L : Submodule ℤ (EuclideanSpace ℂ I)) [DiscreteTopolo
   have hF : ∀ l : EuclideanSpace ℂ I, 𝓕 f l =
       (Real.exp (-∑ i, y i) : ℂ) * kappa n * gauss n (dil (-y) (fun i => l i / 2)) := by
     intro l
-    have h := GlobalTheory.T.fourier_comp_coordDilationByHalfExp I (fun w => gauss n (WithLp.ofLp w)) y l
+    have h := _root_.GlobalTheory.HeckePoisson.Dilation.fourier_comp_dil I (fun w => gauss n (WithLp.ofLp w)) y l
     rw [hf, h, fourier_gauss, mul_assoc]
     congr 3
     funext i
@@ -169,7 +169,7 @@ theorem theta_poisson : ∀ (K : Type) [Field K] [NumberField K] [NumberField.Is
         κ * (Real.exp (-∑ i, y i) : ℂ) * GlobalTheory.HeckeTheta.theta (fun v : I → ℂ => v) a n (-y) := by
   intro K _ _ _ I _ φ hφ n M F hM hF
   classical
-  obtain ⟨hd, hz⟩ := GlobalTheory.T.heckeIdealEuclideanLattice_isZLattice K I φ hφ M hM
+  obtain ⟨hd, hz⟩ := _root_.GlobalTheory.HeckePoisson.lat_isZLattice K I φ hφ M hM
   haveI : Finite (𝓞 K ⧸ M) := Ideal.finiteQuotientOfFreeOfNeBot M hM
   letI : Fintype (𝓞 K ⧸ M) := Fintype.ofFinite _
   set L := lat φ M with hL
@@ -261,7 +261,7 @@ theorem theta_poisson : ∀ (K : Type) [Field K] [NumberField K] [NumberField.Is
     · exact absurd (ha_zero v hv) hav
   ·
     intro y
-    obtain ⟨hd', hz'⟩ := GlobalTheory.T.heckeIdealEuclideanLattice_isZLattice K I φ hφ ⊤ (by simp)
+    obtain ⟨hd', hz'⟩ := _root_.GlobalTheory.HeckePoisson.lat_isZLattice K I φ hφ ⊤ (by simp)
     obtain ⟨C, b, hC0, hb, hC⟩ := gauss_dil_bound n y
     set BF : ℝ := ∑ c : 𝓞 K ⧸ M, ‖F (Quotient.out c)‖ with hBF
     have hFc : ∀ α : 𝓞 K, F α = F (Quotient.out (Ideal.Quotient.mk M α)) := by

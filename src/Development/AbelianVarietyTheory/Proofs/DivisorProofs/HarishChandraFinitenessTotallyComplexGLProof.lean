@@ -2,9 +2,9 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.CentralNilGL
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfMemWeakIn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarishChandraFiniteFormsGLSingleCharSpanMem
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarishChandraUniformSmoothingTestFunctionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarishChandraUniformSmoothingTestFunction
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalCuspFormsFixedLevelKtypes
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalFormsSpanLevelStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalFormsSpanLevel
 
 open NumberField GlobalTheory.CuspRep GlobalTheory.HCF GlobalTheory.CuspQuot MeasureTheory
 
@@ -17,8 +17,8 @@ theorem finiteDimensional_single (E : Type) [Field E] [NumberField E] [IsTotally
     (L : Subgroup (GL (Fin a) (Af E))) (hL : IsOpen (L : Set (GL (Fin a) (Af E))))
     (W : Submodule ℂ (Kinf E a → ℂ)) (hW : FiniteDimensional ℂ W) (χ : Module.End ℂ (Sm E a) → ℂ) (N : ℕ) :
     FiniteDimensional ℂ (Submodule.span ℂ (formsGL E a L W {χ} N)) := by
-  obtain ⟨n, T, hT⟩ := GlobalTheory.T.finiteDimensional_forms_span_level E a ih L hL W hW χ N
-  obtain ⟨α, hα, hrep⟩ := GlobalTheory.T.harishChandra_uniform_smoothing_test_function E a L hL W hW χ N (MeasureTheory.Measure.addHaar) inferInstance
+  obtain ⟨n, T, hT⟩ := _root_.GlobalTheory.HCFGLct.exists_ct_map E a ih L hL W hW χ N
+  obtain ⟨α, hα, hrep⟩ := _root_.GlobalTheory.HCAlphaEll.exists_alpha_smoothing E a L hL W hW χ N (MeasureTheory.Measure.addHaar) inferInstance
   have hQ := _root_.GlobalTheory.HCFCusp.finiteDimensional_cuspSpan E a L hL W hW χ N MeasureTheory.Measure.addHaar inferInstance α hα hrep
   set P := Submodule.span ℂ (formsGL E a L W {χ} N)
   set Q := Submodule.span ℂ {φ | φ ∈ formsGL E a L W {χ} N ∧ IsCuspidal φ.1}

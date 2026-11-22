@@ -12,9 +12,9 @@ import Development.AutomorphicSpectrum.Proofs.MetricProofs.BallAutomorphismInver
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ContinuousHermitianMatrixFamilyStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ContinuousFirstMinimumFamily
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.RiemannLatticeEigenProjections
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.ContinuousCuspNormFamilyStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.ContinuousCuspNormFamily
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MeasurableCuspWeightFamilyStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsometryPreservesHermitianAndActionStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsometryPreservesHermitianAndAction
 open NumberField Matrix MeasureTheory Filter Topology GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Cusp ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor GroundTheory.Heights₂.Heights.FiniteCovolume
 open scoped ENNReal InnerProductSpace
 
@@ -29,7 +29,7 @@ theorem first_minimum_cusp_weight_regular : ∀ (E : Type) [Field E] [NumberFiel
     continuousOn_iff_continuous_restrict.1 (F.hol.2 v).continuousOn
   have hH : Continuous fun x : U => (R x).Hm := GlobalTheory.T.continuous_hermitian_matrix_family E g Λ U R F.form (fun x => F.form_eq _) hP
   have hlam : Continuous fun x : U => (R x).lam1 := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.continuous_first_minimum E g Λ U R hP hH
-  have hnz : ∀ I, Continuous fun x : U => (R x).nz F.σ I := fun I => GlobalTheory.T.continuous_cusp_norm_family E g Λ Ψ U R F.σ I hP hH
+  have hnz : ∀ I, Continuous fun x : U => (R x).nz F.σ I := fun I => _root_.GlobalTheory.CompanionTheory.Ar.Cusp.NzCont.continuous_nz E g Λ Ψ U R F.σ I hP hH
   have hbdd : ∀ x : U, BddAbove {y | ∃ I, (R x).IsCusp I ∧ y = -Real.log ((R x).nz F.σ I)} := by
     intro x
     have hr : (R x).HasRank F.σ j' := fun τ => (F.sig x.1 x.2 τ).1
@@ -51,7 +51,7 @@ theorem first_minimum_cusp_weight_regular : ∀ (E : Type) [Field E] [NumberFiel
     have hf : ∀ x y, (F.R t').form (γ x) (γ y) = (F.R t).form x y := fun x y => by
       rw [F.form_eq, F.form_eq]
       exact hγ x y
-    obtain ⟨h1, h2⟩ := GlobalTheory.T.isometry_preserves_hermitian_and_action E g Λ (F.R t) (F.R t') γ φ hf hφ
+    obtain ⟨h1, h2⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.PeriodIso.isometry_and_commutes E g Λ (F.R t) (F.R t') γ φ hf hφ
     have himg : φ '' Set.range (F.R t).P = Set.range (F.R t').P := by
       ext z
       constructor

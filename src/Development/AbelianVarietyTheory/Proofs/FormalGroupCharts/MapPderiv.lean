@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.NonemptyTensorQ
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.IsAdicCompleteOfFgOfNatCastMem
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.AlgHomDualNumberExt
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.MapMaximalIdealEqKerMapResidue
-import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.DetJacobianFormalMulNEqPowMulUnitStatement
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.DetJacobianFormalMulNEqPowMulUnit
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.MvPowerSeriesMemMapCOfCoeffMem
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.MulFConstAndMap
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.IsReducedGenericFibreOfIsReduced
@@ -108,7 +108,7 @@ theorem fhSt : ∀ (p : ℕ) [Fact p.Prime], FHSt p := by
   have hfun : (fun j => MvPowerSeries.map iota (mulF F.F (p ^ m) j)) = mulF (F.mapF iota) (p ^ m) :=
     funext fun j => (hmap j).symm
   rw [hfun] at hMO
-  obtain ⟨U, hU8⟩ := GlobalTheory.T.det_jacobian_formalMulN_eq_pow_mul_unit T d F (p ^ m)
+  obtain ⟨U, hU8⟩ := _root_.GlobalTheory.MulJacobian.det_jac_mulF T d F (p ^ m)
   have h2 : Matrix.of (fun i j : Fin d => MvPowerSeries.pderiv O (e j) (mulF (F.mapF iota) (p ^ m) i)) =
       (MvPowerSeries.map iota).mapMatrix
         (Matrix.of fun i j : Fin d => MvPowerSeries.pderiv T ((0 : Fin 1), j) (mulF F.F (p ^ m) i)) := by

@@ -1,7 +1,7 @@
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.DiscreteSpectrumResidualClassification
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfCountAtOf
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DatumCountBoundLargeDataStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DatumCountBoundLargeData
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosineCountOfHyp
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.InfClassAt
 import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
@@ -15,7 +15,7 @@ section
 open GlobalTheory.SumSize GlobalTheory.RowClaim
 namespace GlobalTheory.SumCount
 theorem archimedean_sum_count_bound : _root_.GlobalTheory.FunPr.ThetaLocalInputs → DepthK → InfCountK := fun hP hD =>
-  infCountK_of GlobalTheory.T.datumCountBound_largeData (_root_.GlobalTheory.T.theta_kCoset_count_formula hP) (GlobalTheory.T.pureTensorCountBound_of_cosetDepthBound hD)
+  infCountK_of _root_.GlobalTheory.SumCount.DataCount.dataK (_root_.GlobalTheory.T.theta_kCoset_count_formula hP) (GlobalTheory.T.pureTensorCountBound_of_cosetDepthBound hD)
 end GlobalTheory.SumCount
 end
 

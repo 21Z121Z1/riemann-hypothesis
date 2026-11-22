@@ -39,7 +39,16 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexPointsIffCen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.Metric
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CmHostRankBoundsStatement
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CmHostRankBounds
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.HodgeLatticeFlagBound
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.TrivFlagOnHodge
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.PadicIntegersHenselianFiniteResidue
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.HodgeComparisonCompatibility
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.CmpSt
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.NumberField
+import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.LocalAtPlaces
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.XCBmExistsArith
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LowerBoundHeightOnBoundary
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsFiniteFrameCover
@@ -62,7 +71,7 @@ open scoped ComplexOrder
 
 theorem card_cmType_pos : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host E), 0 < Fintype.card (CMType H) := by
   intro E _ _ _ H
-  have h := (GlobalTheory.T.cm_host_rank_bounds E H).2.2
+  have h := (_root_.GlobalTheory.CompanionTheory.Ar.Top.HostNumbers.host_numbers E H).2.2
   have h2 : 0 < Module.finrank ℚ E := Module.finrank_pos
   by_contra h0
   have h3 : Fintype.card (CMType H) = 0 := by omega

@@ -4,7 +4,7 @@ import Formalism.PairingDivisors.StatementH
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsSpan
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsApprox
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLatticeOfAdelicPoint
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaSpaceSelfDualPairAtMostLineStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaSpaceSelfDualPairAtMostLine
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.VacuumUnderAdelicPairModulusOne
 
 open NumberField Classical Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.TaylorLogMetric Formalism.MainNotions.StandardLatticesGL3 GlobalTheory.NormSum
@@ -424,9 +424,9 @@ theorem om_expand : ∀ (D : D7), Inp D → ∀ (cc : Ideal (𝓞 D.host.K)) (δ
     intro N
     obtain ⟨Lt, h1, h2, -⟩ := _root_.GlobalTheory.NormSum.exists_lattice_of_adelic_point D N
     rw [← h2]; exact (h1 1).2
-  obtain ⟨-, hW, hint, -⟩ := GlobalTheory.T.theta_space_selfDual_pair_at_most_line D hI.g1 cc δ hC P.a P.d (La0 D (tor0 D cc δ) P.a P.d)
+  obtain ⟨-, hW, hint, -⟩ := _root_.GlobalTheory.ThetaLine.theta_line D hI.g1 cc δ hC P.a P.d (La0 D (tor0 D cc δ) P.a P.d)
     (Or.inr ⟨_, _, hSD0 _, hSD0 _, rfl⟩)
-  obtain ⟨-, -, -, -, -, -, hq⟩ := GlobalTheory.T.theta_space_selfDual_pair_at_most_line D hI.g1 cc δ hC P.a P.d (La D (tor0 D cc δ) L₁ L₁')
+  obtain ⟨-, -, -, -, -, -, hq⟩ := _root_.GlobalTheory.ThetaLine.theta_line D hI.g1 cc δ hC P.a P.d (La D (tor0 D cc δ) L₁ L₁')
     (Or.inr ⟨_, _, hSD _ g _ hL, hSD _ g' _ hL', rfl⟩)
   have he0 : P.e0 ∈ Th D (tor0 D cc δ) (stdL D P.a) (stdL D P.d) := P.vac.1
   have hfix : ∀ x ∈ La0 D (tor0 D cc δ) P.a P.d, Wd D (tor0 D cc δ) x P.e0 = P.e0 := by

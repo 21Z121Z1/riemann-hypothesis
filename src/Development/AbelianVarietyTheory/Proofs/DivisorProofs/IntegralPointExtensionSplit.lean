@@ -268,7 +268,7 @@ theorem induced_chars : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (
     rw [ha, MonoidHom.comp_apply, MonoidHom.comp_apply, MulEquiv.coe_toMonoidHom, ← trEquiv_gen x q hσ k hk,
       MulEquiv.symm_apply_apply, Units.coe_map]
     rfl
-  · refine fun B _ _ _ w hw => GlobalTheory.T.torsionChar_eq_of_eq_on_torsion E H X t ℂ_[p] _ q hq c c' (fun w hw => ?_) B w hw
+  · refine fun B _ _ _ w hw => _root_.GlobalTheory.CharUniq.char_unique E H X t ℂ_[p] _ q hq c c' (fun w hw => ?_) B w hw
     obtain ⟨β, hβ⟩ := hP.at_fin _ w hw
     obtain ⟨β₀, hβ₀, rfl⟩ := sect_of hA _ hβ
     have hσA : P.At (RingHom.id R) (spMap β₀ ≫ P.u.left) β₀ := ⟨hβ₀, rfl⟩

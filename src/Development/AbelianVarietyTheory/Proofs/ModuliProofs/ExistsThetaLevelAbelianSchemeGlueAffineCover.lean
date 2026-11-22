@@ -12,7 +12,7 @@ import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.PolBaseCha
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SurjectiveAppTopPullbackSndOfApp
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsGenOfInvariant
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaLevelAbelianSchemePullback
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaLevelIsoUniqueOfDenseCommonFibresStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaLevelIsoUniqueOfDenseCommonFibres
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaLevelAbelianSchemeGlueOpenCover
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -185,7 +185,7 @@ theorem unique_affine {R : Type} [CommRing R] [_root_.IsReduced R] {r : Sp R ⟶
   obtain ⟨ψ, e, w⟩ : ∃ ψ : u.A.left ⟶ u.A.left, ψ ≫ φ = φ' ∧ ψ ≫ u.A.hom = u.A.hom :=
     ⟨a.1.lift φ' u.A.hom a'.1.w, a.1.lift_fst _ _ _, a.1.lift_snd _ _ _⟩
   subst e
-  have H := (GlobalTheory.T.thetaLevel_iso_unique_of_dense_common_fibres h₁ h₂ o g N' J b m R β u u hm hd hN (fun p => subset_closure (by
+  have H := (_root_.GlobalTheory.TUniq.iso_unique_of_dense h₁ h₂ o g N' J b m R β u u hm hd hN (fun p => subset_closure (by
     obtain ⟨v, hv⟩ := GlobalTheory.tObj_pull o g _ J b _ _ _ _ ((Sp R).fromSpecResidueField p) u rfl
     exact ⟨(Sp R).residueField p, inferInstance, (Sp R).fromSpecResidueField p, v,
       ((Sp R).range_fromSpecResidueField p).ge rfl, hv, hv⟩))).2 (𝟙 _) ψ (IsMap.id u).1

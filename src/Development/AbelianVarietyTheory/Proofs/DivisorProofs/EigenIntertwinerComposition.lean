@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.HilbertNinetyQuotie
 import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOpenSubgroupsIntegers
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TranslateOpenSubgroupsFinite
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ScalingOpenSubgroupsFiniteStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ScalingOpenSubgroupsFinite
 
 open scoped TensorProduct NNReal Matrix
 open NumberField IsDedekindDomain MeasureTheory Filter Topology Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes
@@ -22,7 +22,7 @@ theorem comp_mem_adm : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Num
   classical
   obtain ⟨ei, ev, -, hvac, hpure⟩ := hev.loc
   obtain ⟨Bx, hBo, hBs, hBe, hinv⟩ := _root_.GlobalTheory.SBBox.exists_box_invariant F _ g hg
-  obtain ⟨R, hR⟩ := GlobalTheory.T.scaling_open_subgroups_finite F _ Bx hBo hBs hBe g hg.2 hinv
+  obtain ⟨R, hR⟩ := _root_.GlobalTheory.BoxCosetSum.eq_sum_finprod_box_indicator F _ Bx hBo hBs hBe g hg.2 hinv
   let φ : (Fin n × Fin d → FiniteAdeleRing (𝓞 F) F) → ∀ v : HeightOneSpectrum (𝓞 F),
       (Fin n × Fin d → v.adicCompletion F) → ℂ :=
     fun r v => Set.indicator {x : Fin n × Fin d → v.adicCompletion F | ∀ i, x i - evalV F v (r i) ∈ Bx v} 1

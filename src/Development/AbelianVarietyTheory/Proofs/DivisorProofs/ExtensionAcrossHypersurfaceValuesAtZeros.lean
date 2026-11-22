@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralNsqCanonic
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeasurableNsqExtendAndPsi
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VanishAtSimpleZeroOfWeightedSqIntegrable
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenAtlasSectionNonvanishingSetAndMemIff
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.L2ExtensionAcrossDenseNonvanishingStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.L2ExtensionAcrossDenseNonvanishing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeasureComplNonvanishingSetEqZeroOfDense
 
 open MeasureTheory Filter Topology Metric ReciprocityTheory.L2DbarEstimates ReciprocityTheory.L2DbarEstimates.Y GlobalTheory.OTY GlobalTheory.Published.L2Extension
@@ -100,7 +100,7 @@ theorem GlobalTheory.OTY.extension_values_at_zeros : ∀ (n : ℕ) (Y : Type) [T
           simp_rw [e]
           rw [lintegral_const_mul' _ _ ENNReal.ofReal_ne_top]
           exact ENNReal.mul_lt_top ENNReal.ofReal_lt_top hint
-  obtain ⟨G, hG, hGF⟩ := GlobalTheory.T.exists_isSec_extension_of_dense_nz_of_l2 n Y ι La A Λ (A.kap + E) τ F hτ hdense hF hFint
+  obtain ⟨G, hG, hGF⟩ := _root_.GlobalTheory.OTY.l2_extension_nz n Y ι La A Λ (A.kap + E) τ F hτ hdense hF hFint
   refine ⟨G, hG, hGF, ?_⟩
   intro P hP
 

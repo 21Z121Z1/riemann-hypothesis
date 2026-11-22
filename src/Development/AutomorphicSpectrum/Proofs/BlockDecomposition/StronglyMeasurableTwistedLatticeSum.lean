@@ -3,7 +3,7 @@ import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.ThetaI
 import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasWeil
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftEisensteinLevelSubgroup
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TsumMeas
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeisenbergCharacterBilinearLawsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeisenbergCharacterBilinearLaws
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CountableMatricesAndCosets
 
 noncomputable section
@@ -22,7 +22,7 @@ theorem dsum_stronglyMeasurable : ∀ {D : D7} {ρ p : ℕ} (ψ : AddChar (AF D.
   intro D ρ p ψ hψ b₀ Φ hΦ hs
   haveI := (_root_.GlobalTheory.CompanionTheory.FJE.countable_mat_cosets D ρ p).1
   haveI : BorelSpace (Mx D ρ p) := ⟨rfl⟩
-  obtain ⟨_, _, _, _, _, hc⟩ := GlobalTheory.T.heisenberg_character_bilinear_laws ψ hψ b₀
+  obtain ⟨_, _, _, _, _, hc⟩ := _root_.GlobalTheory.CompanionTheory.FJE.chv_facts ψ hψ b₀
   have hterm : ∀ ξ : Matrix (Fin ρ) (Fin p) D.host.E, Measurable fun v : Mx D ρ p × Mx D ρ p =>
       GlobalTheory.CompanionTheory.FJE.chv ψ b₀ v.2 (GlobalTheory.CompanionTheory.FJE.rt ξ) * Φ (GlobalTheory.CompanionTheory.FJE.rt ξ + v.1) := by
     intro ξ

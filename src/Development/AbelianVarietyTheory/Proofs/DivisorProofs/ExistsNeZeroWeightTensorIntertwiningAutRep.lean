@@ -22,7 +22,7 @@ theorem exists_ne_zero_wsp_intertwining : ∀ (E : Type) [Field E] [NumberField 
   let σ : ∀ v : InfinitePlace E, Representation ℂ (embU n v.embedding) (nablaSq ℂ n (lam v)) := fun v =>
     (GlobalTheory.Branching.sqRep ℂ n (lam v)).comp ((cEmb v.embedding).comp (embU n v.embedding).subtype)
   have hirr : ∀ v, (σ v).IsIrreducible := fun v => by
-    obtain ⟨e, he⟩ := GlobalTheory.T.archimedeanUnitaryPoints_equiv_unitaryGroup E n v.embedding
+    obtain ⟨e, he⟩ := _root_.GlobalTheory.EmbUnitary.exists_equiv_unitaryGroup E n v.embedding
     obtain ⟨h1, h2⟩ := (CuspRep.isIrreducible_iff _).1 (GlobalTheory.Branching.isIrreducible_smallRep_unitary n (lam v))
     refine (CuspRep.isIrreducible_iff _).2 ⟨h1, fun S hS => h2 S fun g w hw => ?_⟩
     obtain ⟨x, rfl⟩ := e.surjective g

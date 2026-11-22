@@ -10,7 +10,8 @@ import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TendstoLevelZeroForm
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LevelZeroEnergyBoundDecayingCasimirEigenfunction
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutLimE
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.NormSqLeShifted
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LatticeSumOfCompactCoefficientPositivityStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LatticeSumOfCompactCoefficientPositivity
+import Formalism.HermitianCurvature.StatementTBB
 open BpJoin Formalism.FourierDecayAlt Formalism.FourierDecayAlt.P Formalism.FourierDecayAlt.P.CutBP Formalism.FourierDecayAlt.P.CutBP2 Formalism.FourierDecayAlt.P.CutBPEq Formalism.QuantumDeterminants
 
 namespace GlobalTheory.EigenThreePlaces
@@ -80,11 +81,11 @@ theorem main : GlobalTheory.HCXi.BesselXiIntegrable → P5.ThmPActualCpt → NFT
     exact Eq.mpr (congrArg (fun F => LimEvT pm χ F Ym N) e) k
   have hI5p : ∀ ε : ℝ, 0 < ε → ∀ n : ℕ,
       TBB.BlockGrowthBound pp nnp (apx (D.cutF pp.T.base χ (fpmSh pp f Ap p₀) ε) n) Yp K N := fun ε hε n =>
-    GlobalTheory.T.latticeSum_of_compactCoefficient_positivity hP Wp Wqp (shP P up up') pp nnp _ Yp K N Cb hDDp
+    _root_.GlobalTheory.LatticeGerm.latticeSum_of_cptCoef hP Wp Wqp (shP P up up') pp nnp _ Yp K N Cb hDDp
       (cptCoef_apx (shP P up up') pp.T.base hχ (ckOn_fpmSh pp p₀ hf (ckOn_of_polyOp hAp)) hε n) hnnp
   have hI5m : ∀ ε : ℝ, 0 < ε → ∀ n : ℕ,
       TBB.BlockGrowthBound pm nnm (apx (D.cutF pm.T.base χ (fpmSh pm f Am p₀) ε) n) Ym K N := fun ε hε n =>
-    GlobalTheory.T.latticeSum_of_compactCoefficient_positivity hP Wp Wqm (shP P um um') pm nnm _ Ym K N Cb hDDm
+    _root_.GlobalTheory.LatticeGerm.latticeSum_of_cptCoef hP Wp Wqm (shP P um um') pm nnm _ Ym K N Cb hDDm
       (cptCoef_apx (shP P um um') pm.T.base hχ (ckOn_fpmSh pm p₀ hf (ckOn_of_polyOp hAm)) hε n) hnnm
   exact h P Wp Wq Wqp Wqm up up' um um' p pp pm f Ap Am ApPt AmPt b Λ A₀ n₀ p₀ d
     χ nnp nnm Yp Ym K N hb hΛ hΛb hn₀ hp₀ hzp hzp' hzm hzm' hK hKN hχ hnnp hnnm hDDp hDDm hf hfA hAp hAm

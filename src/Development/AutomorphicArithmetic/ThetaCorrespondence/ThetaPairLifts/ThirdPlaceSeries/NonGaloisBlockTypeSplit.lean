@@ -60,7 +60,7 @@ theorem block_type_split_local_alt (hP : _root_.GlobalTheory.NRows.ThetaLocalInp
       omega
     have hact := _root_.GlobalTheory.LevelType.factor_eq_det_of_isSubquotient_jac F _ Bool (b.1 i) (fr i) _ (σ i).π _ (S i) hα (hrow i) false
     obtain ⟨w, hw⟩ := typeVec_first (fun j => multiProd (gc j) fun i => (S i j).ρ) (fun j => isSmooth_parInd _ _) hcol hyρ
-    obtain ⟨φ, hφ0, hφ⟩ := GlobalTheory.T.exists_equivariantMap_of_levelTypeVector F p (Fin r) _ _ ρ w hp hw
+    obtain ⟨φ, hφ0, hφ⟩ := _root_.GlobalTheory.LevelType.exists_map_of_typeVec F p (Fin r) _ _ ρ w hp hw
     obtain ⟨v', hv', hpar⟩ := _root_.GlobalTheory.LevelType.exists_parVec_of_map F p (Fin s) (Fin r) (fun i => Fin (b.1 i false)) (gc false) _
       (fun i => (S i false).ρ) i θ χ _ ρ.ρ φ hp hθχ (fun g hg v => by
         rw [hact g hg v, MonoidHom.mul_apply,
@@ -106,8 +106,8 @@ theorem block_type_split_local_alt (hP : _root_.GlobalTheory.NRows.ThetaLocalInp
       omega
     obtain ⟨w₁, hw₁⟩ := typeVec_first (fun j => multiProd (gc j) fun i => (S i j).ρ) (fun j => isSmooth_parInd _ _) hcol hyρ
     obtain ⟨φ₁, h1⟩ := _root_.GlobalTheory.EmptySecondBlock.isSubquotient_of_empty_second_block F r (b.1 false) (fr false) _ π₁.π (S false) hm (hrow false)
-    obtain ⟨φ₂, h2⟩ := GlobalTheory.T.parabolicInduction_emptySecond_isSubquotient_first F r (fun i => b.1 i false) (gc false) (fun i => S i false) hm'
-    obtain ⟨y₁, hy₁⟩ := TypeVec.up π₁.smooth (h2.trans ((GlobalTheory.T.isSubquotientRepresentation_two_reindexings F _ _ φ₂ φ₁ _ (S false false).ρ).trans h1)) hw₁
+    obtain ⟨φ₂, h2⟩ := _root_.GlobalTheory.EmptySecondBlockProd.isSubquotient_multiProd F r (fun i => b.1 i false) (gc false) (fun i => S i false) hm'
+    obtain ⟨y₁, hy₁⟩ := TypeVec.up π₁.smooth (h2.trans ((_root_.GlobalTheory.LevelType.subquotient_reix F _ _ φ₂ φ₁ _ (S false false).ρ).trans h1)) hw₁
     exact ⟨y₁, typeVec_iff _ _ _ hy₁⟩
 end Local
 open Formalism.BasicNotions GlobalTheory.HeightCounting in

@@ -4,9 +4,9 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FunctionalCalcu
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SobolevOperatorFacts
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Lap
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SobolevSpaceComplete
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RightWordLaplacianPowerBoundStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LaplacianCasimirRelationStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LaplacianPowerCasimirBoundStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RightWordLaplacianPowerBound
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LaplacianCasimirRelation
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LaplacianPowerCasimirBound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FunctionalCalculusOnSobolevStatement
 
 noncomputable section
@@ -43,9 +43,9 @@ theorem word_est (hAE : AlgEst) (hL : LgFacts) (hU : Unimod) (hR : RCalc) (hC : 
   intro Ω T F hΩ w
   obtain ⟨-, -, -, -, hCF, -, -, -, -, -, -, -, hOF, hIb, -⟩ := hC
   choose hm hhm using hh
-  obtain ⟨C₁, hC₁⟩ := (GlobalTheory.T.right_word_laplacian_power_bound) n μ E.V hL hU hR hAE hCF hIb w
-  obtain ⟨Q, hQ⟩ := (GlobalTheory.T.laplacian_casimir_relation) n E hR hOF
-  choose Cj hCj using (GlobalTheory.T.laplacian_power_casimir_bound) n μ E Q hL hU hR hCF hQ
+  obtain ⟨C₁, hC₁⟩ := (_root_.GlobalTheory.CompanionTheory.FcSmooth.WordBd.word_bound) n μ E.V hL hU hR hAE hCF hIb w
+  obtain ⟨Q, hQ⟩ := (_root_.GlobalTheory.CompanionTheory.FcSmooth.lap_sec) n E hR hOF
+  choose Cj hCj using (_root_.GlobalTheory.CompanionTheory.LapSec.sectionBound) n μ E Q hL hU hR hCF hQ
   refine ⟨|C₁| * ∑ j ∈ range (w.length + 1), |Cj j| * ∑ i ∈ range (j + 1), ‖hm i‖, ?_⟩
   intro f f' hsec hS hcl
   have hsob : ∀ i, Sob μ (Om^[i] f') := by

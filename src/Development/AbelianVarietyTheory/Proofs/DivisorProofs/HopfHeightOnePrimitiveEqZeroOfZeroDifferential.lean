@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RigExtMapRelFrobCompRigOfOmega
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobKerIdealLeAugIdeal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowFinrankCotangentLeFinrankFrobeniusKernelQuoti
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CartierDualHeightOneAdjoinPrimitiveEqTopStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CartierDualHeightOneAdjoinPrimitiveEqTop
 open CategoryTheory TensorProduct Coalgebra Bialgebra GlobalTheory GlobalTheory.PDiv GlobalTheory.PDivGroup
 
 set_option autoImplicit false
@@ -35,7 +35,7 @@ theorem eq_zero_of_cobOne_eq_zero_of_dUnit_eq_zero : ∀ (p : ℕ) [Fact p.Prime
   have hsq : b ∈ augIdeal K H ^ 2 := by
     have := (AugCot.d_eq_zero_iff (counitAlgHom K H) b).1 hd
     simpa [hcb] using this
-  have hgen := GlobalTheory.T.cartierDual_height_one_adjoin_primitive_eq_top p K H hpow
+  have hgen := _root_.GlobalTheory.HeightOneDual.adjoin_primitive_eq_top p K H hpow
   have hall : ∀ φ : CartierDual K H, φ b = 0 := by
     intro φ
     have hφ : φ ∈ Algebra.adjoin K {φ : CartierDual K H | cobOne K (CartierDual K H) φ = 0} := by

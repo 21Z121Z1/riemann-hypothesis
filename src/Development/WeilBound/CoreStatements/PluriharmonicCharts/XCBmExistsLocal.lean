@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GlobalPairSumGramBound
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PeriodGramSmoothPuncturedStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PeriodGramSmoothPunctured
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PeriodGramComparisonBound
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GramMatrixChangeFrame
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.InteriorPointPolarised

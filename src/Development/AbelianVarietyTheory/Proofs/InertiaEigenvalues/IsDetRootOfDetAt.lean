@@ -17,7 +17,6 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ArtinMapSplitP
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ModulusUnramifiedCharDetHeckeDoubleCosetSplit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryGroupCharacterOfHeckeChar
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergCombinationCommFockPolynomialVectors
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.VacuumVectorDropAuxiliaryPlacesStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InvNatPowRpowNegHalfEvenEqPow
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.L2.DIV Formalism.IndefR Formalism.IndefR.Datum IsDedekindDomain NumberField Matrix GlobalTheory.ExportSeries
 open Formalism.L2.NTheta (IsIdemAt IsHeckeElt)
@@ -261,7 +260,7 @@ theorem xi_rel (B : Base S T) (hB : B.Good) (hbT : Lev.IsBaseFrame T B.F.βT B.F
   set f1 := B.vecAt Q fun PP y => if PP.1 = P then 1 else φ PP.1 y with hf1
   have hf1' : f1 = B.vecFam Q' (Base.univFam u' β) (a' - dQ') := by
     rw [hf1, Base.vecFam]
-    have := GlobalTheory.T.vacuumVector_drop_auxiliary_places D S T B Q Q' (fun v y => if hv : v ∈ Q' then ((Base.univFam u' β v ((a' - dQ') ⟨v, hv⟩) y : ℚ) : ℂ)
+    have := _root_.GlobalTheory.ExportSeries.vecAt_drop D S T B Q Q' (fun v y => if hv : v ∈ Q' then ((Base.univFam u' β v ((a' - dQ') ⟨v, hv⟩) y : ℚ) : ℂ)
       else 0) hB hQ hQ'
     convert this using 2
     · funext PP y

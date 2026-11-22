@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JacobiToBesselPiecesFiniteAdelicLattices
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FourierJacobiToBesselPiecesMutualAnnihilators
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JacobiToBesselPiecesMutualAnnihilatorsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JacobiToBesselPiecesMutualAnnihilators
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GenericCharacterTrivialFourierJacobiStep
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JacobiToBesselCorePieceNonzeroVacuumStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JacobiToBesselCorePieceNonzeroVacuum
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FourierJacobiToBesselLatticeSplits
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsAuxiliaryVectorWittDec
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links MeasureTheory IsDedekindDomain NumberField Matrix
@@ -20,8 +20,8 @@ theorem piecesFB_is_and_splits : OnStd fun {D} _ _ {sc} {G} W F => ∀ σ (h : 2
   intro D hq T L μ0 hL sc G W M hM F hF σ h h'
   obtain ⟨f1, f2, f3, f4⟩ := _root_.GlobalTheory.AscFin.pcFB_fin D hq T L μ0 hL sc G W M hM F hF σ h h'
   obtain ⟨g1, g2, g3⟩ := _root_.GlobalTheory.AscFin.AnnPieces.pcFB_dualA D hq T L μ0 hL sc G W M hM F hF σ h h'
-  obtain ⟨b1, b2⟩ := GlobalTheory.T.jacobi_to_bessel_pieces_mutual_annihilators D hq T L μ0 hL sc G W M hM F hF σ h h'
-  exact ⟨⟨f1, g1, f2, f3, g2, g3, b1, b2, _root_.GlobalTheory.UniStepFB.psiUni_pcFB D hq T L μ0 hL sc G W M hM F hF σ h h', f4, GlobalTheory.T.jacobi_to_bessel_core_piece_nonzero_vacuum D hq T L μ0 hL sc G W M hM F hF σ h h'⟩,
+  obtain ⟨b1, b2⟩ := _root_.GlobalTheory.AscFin.DualParts.pcFB_dual D hq T L μ0 hL sc G W M hM F hF σ h h'
+  exact ⟨⟨f1, g1, f2, f3, g2, g3, b1, b2, _root_.GlobalTheory.UniStepFB.psiUni_pcFB D hq T L μ0 hL sc G W M hM F hF σ h h', f4, _root_.GlobalTheory.AscFin.PcFBVac.pcFB_vac D hq T L μ0 hL sc G W M hM F hF σ h h'⟩,
     _root_.GlobalTheory.AscFin.SplitsFB.splits_FB D hq T L μ0 hL sc G W M hM F hF σ h h'⟩
 
 end GlobalTheory.AscFin

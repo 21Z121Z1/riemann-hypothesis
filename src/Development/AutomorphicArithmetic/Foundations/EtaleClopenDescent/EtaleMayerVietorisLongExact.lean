@@ -1,7 +1,9 @@
 import Mathlib
 import Development.EtaleCohomology.EtaleSheaves.MayerVietorisSequence
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HypercohomologyLongExactFirstOfInjectiveStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChosenInjectiveResolutionEtaleSheafPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChosenInjectiveResolutionEtaleSheafProperties
+import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
+import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HypercohomologyPullbackBiprodInlInrBijective
 
 open CategoryTheory Limits CochainComplex CochainComplex.HomComplex GlobalTheory.EtC GlobalTheory.EtC.BiprodCls
@@ -46,7 +48,7 @@ open UpperTheory.Cb.EtaleMayerVietoris in
 theorem UpperTheory.Cb.etale_mayer_vietoris_long_exact :
     LateralTheory.E.MayerVietorisSequence.LES := by
   intro R _ F
-  obtain ⟨d0, hex, hnat⟩ := GlobalTheory.T.hypercohomology_longExact_first_of_injective R (res R F) (GlobalTheory.T.chosenInjectiveResolution_etaleSheaf_properties R F).2.1
+  obtain ⟨d0, hex, hnat⟩ := GlobalTheory.T.hypercohomology_longExact_first_of_injective R (res R F) (_root_.GlobalTheory.EtC.ResBasic.res_basic R F).2.1
   refine ⟨fun a b c e w hS n => d0 _ hS n, ?_, ?_⟩
   · intro N K L M a b c e w hS n
     have hE := hex _ hS n

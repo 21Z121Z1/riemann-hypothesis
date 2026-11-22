@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsQuasiFam
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PairedThetaKernelContinuousAndRationallyInvarianStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PairedThetaKernelContinuousAndRationallyInvarian
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousIntegralCompactAutomorphicQuotientPara
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ThetaAbsoluteSum
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.TransvectionAction
@@ -19,7 +19,7 @@ theorem handFBLaw : ∀ D : D7, HandFBLaw D := by
   unfold HandFBLaw
   intro ψ σ J B s vL Y Ξ hY hΞ
 
-  obtain ⟨hc, hl, hr⟩ := GlobalTheory.T.pairedThetaKernel_continuous_and_rationally_invariant D ψ σ J B s vL Y Ξ hY hΞ
+  obtain ⟨hc, hl, hr⟩ := _root_.GlobalTheory.PairKer.pairKer_law D ψ σ J B s vL Y Ξ hY hΞ
   refine ⟨fun γ hγ g => ?_, ?_⟩
   ·
     simp only [handFB, hr γ hγ]

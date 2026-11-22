@@ -5,7 +5,7 @@ import Development.WeilBound.ThetaLifts.FrameEstimates.BlockForm
 import Development.WeilBound.ThetaLifts.FrameEstimates.SiegelAll
 import Development.WeilBound.ThetaLifts.FrameEstimates.FundamentalDomainFiniteVolume
 import Development.WeilBound.ThetaLifts.CartanFactorisation.Unimod
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdmittedFormEqAdelicThetaDistributionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdmittedFormEqAdelicThetaDistribution
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzMapBarrelledSpace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsINeZeroKind
@@ -29,7 +29,7 @@ theorem cpt (hS : GlobalTheory.Published.SiegelSetUnitary) (d : SD σ) : Cpt σ 
   · exact h F E σ d.B d.m d.A d.r d.s d.ok.good (Or.inr hA) d.ok.aniso
 
 theorem exists_lth (d : SD σ) : ∃ l ∈ (adeleClass F).adm d.κ, ∀ Φ ∈ d.sch, l Φ = thetaSum F Φ :=
-  GlobalTheory.T.exists_admitted_form_eq_adelicThetaDistribution F d.κ
+  _root_.GlobalTheory.ThetaAdmitted.exists_admitted_form_eq_adelicThetaDistribution_alt F d.κ
 
 theorem cont_S (d : SD σ) {Ψ : d.Fn} (hΨ : Ψ ∈ d.sch) : Continuous fun g : UA σ d.A.J => thetaSum F (d.S g Ψ) := by
   obtain ⟨l, hl, hlθ⟩ := exists_lth d

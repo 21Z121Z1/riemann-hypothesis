@@ -3,8 +3,9 @@ import Formalism.LocalToGlobal.IndefiniteReal.ConcretePkgSpec
 import Formalism.LocalRingCardinality.DataExtra
 import Formalism.LocalRingCardinality.DataTies
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsHolRepOfIsTau
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FockPolynomialVectorChangeOrthonormalBasesSubstStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VacuumCharacterPositiveDefiniteSourceStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FockPolynomialVectorChangeOrthonormalBasesSubst
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VacuumCharacterPositiveDefiniteSource
+import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.PureTensorLIntertwine
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.AdelicUnitaryActionAtRealPlace
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsCharFamIsVacVec
@@ -97,7 +98,7 @@ theorem om_pureTensorO_eq_fact : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (
   have htr : ∀ τ, (cart M τ).trace = (p τ : ℂ) - q τ := fun τ => by
     unfold cart
     rw [Matrix.trace_mul_cycle, f1, Matrix.one_mul, trace_Jm (hpq τ) _ (hε τ)]
-  have hvac := GlobalTheory.T.vacuum_character_positive_definite_source D ψ θ S T χS χT om hom hθ hS hT (cart M) (fun τ => isCartanInv_one (hBS τ))
+  have hvac := _root_.GlobalTheory.VacuumCharacter.vacuum_character D ψ θ S T χS χT om hom hθ hS hT (cart M) (fun τ => isCartanInv_one (hBS τ))
     (GlobalTheory.Chain.VacVec.cart_isCartanInv M) a b ha hb x₁ x₂ x₃ h₁ h₂ (fun τ => by
       rw [htr]
       have := congrArg (fun x : ℚ => (x : ℂ)) (h₃ τ)
@@ -109,7 +110,7 @@ theorem om_pureTensorO_eq_fact : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (
     (fun τ => by rw [Matrix.one_mul, Matrix.mul_one]) hc
     (fun τ => by rw [← Matrix.mul_assoc, ← Matrix.mul_assoc, b1, Matrix.one_mul])
     (fun τ => by unfold onb; rw [← Matrix.mul_assoc, ← Matrix.mul_assoc, f2, Matrix.one_mul]) f hf P).2,
-    GlobalTheory.T.fockPolynomialVector_change_orthonormalBases_subst D ψ θ S T Sp M BS hom.std hθ hBS _ _ hk hu _ (hom.om_pres _ _ hf), hvac, pureTensorO_smul]
+    _root_.GlobalTheory.FockBasis.pureTensorO_basis D ψ θ S T Sp M BS hom.std hθ hBS _ _ hk hu _ (hom.om_pres _ _ hf), hvac, pureTensorO_smul]
   unfold fact
   rw [LinearMap.smul_apply, map_smul]
   congr 1

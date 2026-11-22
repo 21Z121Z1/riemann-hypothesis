@@ -21,7 +21,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GtB
 import Development.AbelianVarietyTheory.Statements.SemistableTorsion.ArcFamSt
 import Development.AbelianVarietyTheory.Definitions.Degenerations.HomExtSt
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.FiniteHomogeneousInf
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFullLevelModelAmpleFramesStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFullLevelModelAmpleFrames
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.GoodReductionOfThetaPointUnits
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AllSixAbelianSchemeLawsHold
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifPowOf3
@@ -41,7 +41,7 @@ namespace GlobalTheory
 
 theorem topAmpExists_of_semistableReduction :
     GlobalTheory.Published.SemistableReductionSt → GlobalTheory.Models.TopAmpExists :=
-  fun S => GlobalTheory.T.exists_fullLevel_model_ample_frames _root_.GlobalTheory.homExtension_semiAbelian_dvr GlobalTheory.T.all_six_abelian_scheme_laws_hold.1 GlobalTheory.T.all_six_abelian_scheme_laws_hold.2.1 S GlobalTheory.T.uniformisationExistence_and_torsion_statements.1 GlobalTheory.T.uniformisationExistence_and_torsion_statements.2
+  fun S => _root_.GlobalTheory.Models.topAmpExists _root_.GlobalTheory.homExtension_semiAbelian_dvr GlobalTheory.T.all_six_abelian_scheme_laws_hold.1 GlobalTheory.T.all_six_abelian_scheme_laws_hold.2.1 S GlobalTheory.T.uniformisationExistence_and_torsion_statements.1 GlobalTheory.T.uniformisationExistence_and_torsion_statements.2
     (_root_.GlobalTheory.zhGeo_of_semistableReduction S)
     (_root_.GlobalTheory.ThetaCrit.good_reduction_of_theta_point GlobalTheory.T.all_six_abelian_scheme_laws_hold.1 GlobalTheory.T.all_six_abelian_scheme_laws_hold.2.1 (_root_.GlobalTheory.SS.semistablePol_of_padic S) GlobalTheory.T.uniformisationExistence_and_torsion_statements.1 GlobalTheory.T.uniformisationExistence_and_torsion_statements.2)
     _root_.GlobalTheory.Moduli.cube_of_isLB _root_.GlobalTheory.thetaUnifAV_closed

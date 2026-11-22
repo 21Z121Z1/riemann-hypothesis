@@ -474,7 +474,7 @@ theorem constTerm_iff_inst (I : AutInst) (μf : Measure I.Gf) [μf.IsHaarMeasure
   have : BorelSpace I.GA := inferInstance
   have : (Measure.pi fun v => Formalism.REAL.muG (I.ε v)).IsHaarMeasure := Measure.pi.isHaarMeasure _
   have : (I.muA μf).IsHaarMeasure := Measure.prod.instIsHaarMeasure _ _
-  obtain ⟨Γ, hΓ, hΓc, hfin, -⟩ := GlobalTheory.T.rationalUnitaryPoints_discrete_fundamentalDomain I
+  obtain ⟨Γ, hΓ, hΓc, hfin, -⟩ := _root_.GlobalTheory.RatDiscrete.rational_points I
   let T' : G' ≃ₜ I.GA := ⟨T.toEquiv, hT.1, hT.2⟩
   have : IsTopologicalGroup G' := T'.isInducing.topologicalGroup T
   obtain ⟨-, hcl, -, -, K, hK, -, hcov⟩ := _root_.GlobalTheory.UnipApprox.strong_approximation I W hW

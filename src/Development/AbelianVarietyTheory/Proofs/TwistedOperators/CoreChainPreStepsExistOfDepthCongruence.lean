@@ -15,11 +15,11 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Ha
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DiscreteSeriesUpqExistsIffDsExists
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsCosetFockVacuumDatum
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdjointExchangeLawsThetaHeisenbergStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdjointExchangeLawsThetaHeisenberg
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PolarisationTwistLatticeSelfDualSameStabilisers
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsLatticeHomOntoModuloDepthIdeal
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CoreChainRealParametersCorrespond
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SelfDualLatticeChangeOfLatticeLawsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SelfDualLatticeChangeOfLatticeLaws
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CosetSupportedCoefficientCongruenceSubgroup
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicUnitaryEqRealMulFiniteSplit
 
@@ -34,14 +34,14 @@ namespace GlobalTheory.CoreOnto.PreSteps
 
 theorem preOK (hDF : DepFixed) : PreOK := by
   intro D hQ hS T L μ0 hL sc hc G W Mv hM i hi r r' hr hr' v M M'
-  obtain ⟨hth, -, -, hbij, hmeas, hweil⟩ := GlobalTheory.T.adjointExchange_laws_thetaHeisenberg D W.ψ (G.V (.core i)) (G.V (.core (i + 1))) W.ψ_std
+  obtain ⟨hth, -, -, hbij, hmeas, hweil⟩ := _root_.GlobalTheory.ExchPf.exchLaw D W.ψ (G.V (.core i)) (G.V (.core (i + 1))) W.ψ_std
   have hom := W.om_is (.core i) (show i + 1 ≤ D.R.m by omega)
   obtain ⟨hcS, hcT⟩ := G.chr_core (i := i) (by omega)
   rw [hcS, hcT] at hom
   obtain ⟨ω, hω, hωx⟩ := hweil _ _ _ hom
   obtain ⟨x₀, hx₀⟩ := _root_.GlobalTheory.OntoModPf.ontoModEx D hQ T L μ0 hL sc G W Mv hM i hi
   obtain ⟨f, hvac, hsph, hcos⟩ := _root_.GlobalTheory.CoreOnto.datumEx D hQ T L μ0 hL sc G W Mv hM i hi r r' hr hr' _ _ (r.mod M) (r'.mod M') x₀ hx₀.1
-  have hRL := (GlobalTheory.T.selfDualLattice_changeOfLattice_laws D).2.2 W.ψ (G.V (.core i)) (G.V (.core (i + 1))) r r'
+  have hRL := (_root_.GlobalTheory.ReLatPf.reLatLaw_holds D).2.2 W.ψ (G.V (.core i)) (G.V (.core (i + 1))) r r'
   have hinj : Function.Injective (exch (G.V (.core i)) (G.V (.core (i + 1)))) := by
     intro F₁ F₂ h
     funext w

@@ -10,8 +10,9 @@ import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CuspAl
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ToricSymbols
 import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BlockActionDiagonalCoefficientSpaceSmulStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaJetMapWeightedTableScaleStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JetOperatorBideterminantBasisReprIsAlgebraicStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaJetMapWeightedTableScale
+import Formalism.LocalToGlobal.KernelLattices.ThDistC
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JetOperatorBideterminantBasisReprIsAlgebraic
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links Formalism.L2.DIV
 open IsDedekindDomain NumberField GlobalTheory.ChiGrid GlobalTheory.FunObj GlobalTheory.RowTest GlobalTheory.RowClaim
 open Formalism.L2.Host (HChar)
@@ -91,12 +92,12 @@ theorem kk_isAlgebraic : ∀ {D : D7} {Γ : Type} [Group Γ] [Fintype Γ] {Pl0 T
     intro P
     rw [hJf]
     simp only [jetOp, LinearMap.comp_apply, Submodule.subtype_apply]
-    rw [GlobalTheory.T.thetaJetMap_weighted_table_scale, GlobalTheory.T.blockAction_diagonal_coefficientSpace_smul _ _ _ (hW.2 J2 P.1 P.2), smul_smul, map_smul]
+    rw [_root_.GlobalTheory.JetScale.jetMap_weight_scale, GlobalTheory.T.blockAction_diagonal_coefficientSpace_smul _ _ _ (hW.2 J2 P.1 P.2), smul_smul, map_smul]
     rfl
   simp only [Normal.kk, Normal.kkIn, Normal.kkMap, LinearMap.toMatrix_apply, LinearMap.smul_apply, fockComp]
   rw [hop, map_smul, map_smul]
   simp only [Finsupp.smul_apply, smul_eq_mul]
-  have hR := GlobalTheory.T.jetOperator_bideterminantBasis_repr_isAlgebraic _ _ J2 (nuEnd ch.G p) hA hW.2 a b
+  have hR := _root_.GlobalTheory.JetAlg.repr_jetOp_isAlgebraic _ _ J2 (nuEnd ch.G p) hA hW.2 a b
   have e : Z.scal 1 p * ((Z.c0 p : ℂ) * ∏ τ, c τ ^ fockDeg ch.G p τ) =
       ∏ τ, opp p ((1 / period Z.δ τ) * period Z.δ τ) ^ fockDeg ch.G p τ := by
     simp only [Normal.scal, Pi.one_apply, hc, map_mul, mul_pow, Finset.prod_mul_distrib]

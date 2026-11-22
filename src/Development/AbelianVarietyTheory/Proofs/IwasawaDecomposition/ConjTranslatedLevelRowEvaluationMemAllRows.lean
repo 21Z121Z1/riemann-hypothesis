@@ -25,7 +25,7 @@ theorem GlobalTheory.Mem.SRe.conj_ev_mem_HHX : GlobalTheory.Dec.DSInfChar → Gl
     have hs : Integrable (fun g => star (Formalism.L2.SG.WuDecayPf.coefV X v g)) (Formalism.REAL.muG (X.B.I.ε v)) :=
       h1.mono (continuous_star.comp_aestronglyMeasurable h1.1) (ae_of_all _ fun g => le_of_eq (norm_star _))
     exact hs.const_mul ((X.dv v : ℝ) : ℂ)
-  have hR := GlobalTheory.T.modelIdentification_respects_real_and_finite D X h R.θ hθ hIdE
+  have hR := _root_.GlobalTheory.Core.Mi.SeeReal.realSplit_of_idE D X h R.θ hθ hIdE
   have hT : PiTensorProduct.lift S ∈ MultT R.θ (MP R) (JR R F) (chiR R F) := by
     refine (mem_multT R.θ (MP R) (JR R F) (chiR R F) _).2 ?_
     rw [LinearEquiv.symm_apply_apply]; exact hS

@@ -8,8 +8,8 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CLTateInvari
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BdRPlusIsDomainBdRIsField
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BdRPlusFiltrationEqFontaineXiPow
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CanonicalAcrisToBdRPlusUniqueEquivariantApprox
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BdRPlusSimpleRootsSectionUniqueEquivariantStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AcrisGaloisActionFontaineTEqCyclotomicStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BdRPlusSimpleRootsSectionUniqueEquivariant
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AcrisGaloisActionFontaineTEqCyclotomic
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FontaineTIsUnitBcrisAndUniformizerBdRPlus
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOfTateTwistInvariantFiniteExtension
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ThetaBdRPlusSurjectiveKerUnitsEquivariant
@@ -89,10 +89,10 @@ theorem invariants_BdR (l : ℕ) [Fact l.Prime] (C : Core l) (K : FinExt l) (b :
   obtain ⟨hfil, hreg, hcompl, -⟩ := _root_.GlobalTheory.MemLoc.filtration_eq_xi_pow l C.ε he
   obtain ⟨-, hker, hunit, -, hθ⟩ := _root_.GlobalTheory.MemLoc.thetaD_props l
   obtain ⟨-, ht1, ht2, -⟩ := _root_.GlobalTheory.MemLoc.core_t_unit_fil l C
-  obtain ⟨-, -, hoσ⟩ := GlobalTheory.T.bdRPlus_simple_roots_section_unique_equivariant l C.o C.o_sec
+  obtain ⟨-, -, hoσ⟩ := _root_.GlobalTheory.MemLoc.SecUniq.main l C.o C.o_sec
   obtain ⟨-, hjσ, -⟩ := _root_.GlobalTheory.MemLoc.crisP_unique_equivariant l C.j C.j_cris
   have hσD := (GlobalTheory.MemLoc.ActLaws.act_laws l).2.2.2.2.2.2.2.2.2.1
-  have hact := GlobalTheory.T.acrisGaloisAction_fontaine_t_eq_cyclotomic l C
+  have hact := _root_.GlobalTheory.MemLoc.TAct.t_act l C
   have htate := _root_.GlobalTheory.MemLoc.tate_twist_invariants l C K
   have hast := _root_.GlobalTheory.MemLoc.invariants_finExt l K
   generalize hx : aDp l (xi C.ε) = x at *

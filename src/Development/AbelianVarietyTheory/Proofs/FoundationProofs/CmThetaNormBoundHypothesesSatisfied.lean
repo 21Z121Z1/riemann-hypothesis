@@ -3,15 +3,15 @@ import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZ
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InducedTypeThetaGenusOnePermutes
 import Formalism.PairingDivisors.StatementH
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaTranslationIntertwinerUnitary
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AdmissibleCharactersExistStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AdmissibleCharactersExist
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ConjugateCurveDatumLatticeIsCurveLattice
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaTranslateGaloisRationalityCmPoints
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaloisDataExists
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmThetaComplexConjugationCompatibleStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmThetaComplexConjugationCompatible
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsTwoTorsionCMPointAllConjugates
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmThetaTaylorCoeffAlgebraicAndConjugate
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaTaylorCoeffsAlgebraicAtComplexMultiplicatioStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaVacuaConjugatesCmPointsStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaVacuaConjugatesCmPoints
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.VacuumNormConjCmPointsAllEmbeddings
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.WeilRepresentationVacuumSignInertPlaces
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OddnessConditionHolds
@@ -31,16 +31,16 @@ theorem inp_all : ∀ D, Inp D := fun D =>
   { g1 := (_root_.GlobalTheory.InducedType.induced_type D).1
     perm := (_root_.GlobalTheory.InducedType.induced_type D).2
     uni := _root_.GlobalTheory.theta_translation_intertwiner_unitary D
-    mu := GlobalTheory.T.admissible_characters_exist D
+    mu := _root_.GlobalTheory.TripleIntertwiner.triple_constant D
     curve := _root_.GlobalTheory.ConjCurve.galCurve_holds D
     gal := _root_.GlobalTheory.GalTheta.gal_all D
     galEx := _root_.GlobalTheory.GalExist.galEx_all D
     t0Ex := _root_.GlobalTheory.TwoTorsionPt.exists_point D
     use1 := _root_.GlobalTheory.ThetaConj.cmTheta_taylorCoeff_algebraic_and_conjugate D
     alg := GlobalTheory.T.thetaTaylorCoeffs_algebraic_at_complexMultiplication D
-    conj := GlobalTheory.T.thetaVacua_conjugates_cmPoints D
+    conj := _root_.GlobalTheory.ThetaConj.useConj_all D
     nrm := _root_.GlobalTheory.ConjNorm.useNorm_all D
-    bar := GlobalTheory.T.cmTheta_complexConjugation_compatible D
+    bar := _root_.GlobalTheory.ThetaConj.useBar_holds D
     odd3 := _root_.GlobalTheory.InertSign.vacuum_inert D
     odd4 := _root_.GlobalTheory.VacuumScalar.vacuum_scalar D
     rep := _root_.GlobalTheory.NormSum.exists_rep_trivial_at D

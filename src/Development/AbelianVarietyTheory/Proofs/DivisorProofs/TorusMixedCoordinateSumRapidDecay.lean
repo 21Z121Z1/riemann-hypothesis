@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.WittDec
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.SkewGramHalfModule
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergTranslateThetaContinuousDifferentiable
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaFunctionHeisenbergWordSupLeLevelPowStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MixedThetaSeriesRapidDecayStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MixedThetaSeriesRapidDecay
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MixedCoordinateSupportIntegralAtLevel
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SiegelConeIntegralMatrixLatticeCount
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix
@@ -88,7 +88,7 @@ theorem prod_mul_sum_mixS_le : ∀ {D : D7} (ψ : AddChar (AF D.host.F) ℂ), Is
           ENNReal.ofReal (C * (n : ℝ) ^ A * (GlobalTheory.Size.sobO (V := V) (W := X) ψ θ μ 𝓕 k Ψ).toReal) := by
   intro D ψ hψ θ hθ V X S₀ r d μ' 𝓕' hμ' c hc K₀ hK₀ hK₀c μ 𝓕 hμ τ₀ e
   obtain ⟨N, A₄, C₄, hC₄, h4⟩ := _root_.GlobalTheory.LatCount.lattice_count θ hθ X.rank r c hc
-  obtain ⟨k₂, C₂, hC₂, h2⟩ := GlobalTheory.T.mixed_theta_series_rapid_decay ψ hψ θ hθ V X S₀ r d μ' 𝓕' hμ' (N + r * e)
+  obtain ⟨k₂, C₂, hC₂, h2⟩ := _root_.GlobalTheory.MixWeight.mixS_weight_le ψ hψ θ hθ V X S₀ r d μ' 𝓕' hμ' (N + r * e)
   obtain ⟨k₁, B, C₁, hC₁, h1⟩ := GlobalTheory.T.thetaFunction_heisenbergWord_sup_le_level_pow ψ hψ θ hθ V X K₀ hK₀ hK₀c μ 𝓕 hμ
   obtain ⟨M, hM, h3⟩ := _root_.GlobalTheory.MixSupport.mixS_support_integral ψ hψ V X S₀ r d μ' 𝓕' hμ' K₀ hK₀ hK₀c
   set Wc : ℝ := ∑ k ∈ Finset.range (k₂ + 1),

@@ -5,10 +5,10 @@ import GroundTheory.HeightsAndTheta.Heights.KernelsLattice
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.StatementsBundles
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.CoordWeak
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ThetaFunctionArchimedeanFrame
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ThetaMultiplierQuadraticCharacterStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionValueUniqueBaseChangeStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsFullTorsionNumberFieldStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionValueIntegralStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ThetaMultiplierQuadraticCharacter
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionValueUniqueBaseChange
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsFullTorsionNumberField
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionValueIntegral
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.TorsionValueNormEqThetaNorm
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ThetaFunctionEvenBound
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField MeasureTheory
@@ -196,10 +196,10 @@ theorem tors_mean (D : PPData H L) (th : Out.H0 D.t.PP.L 1) (f : ∀ σ, D.Frame
       Nonempty Ix ∧ (Fintype.card Ix : ℝ) * c σ ≤ ∑ i, -Real.log ((f σ).nrm 1 (θ σ) (r i) / b σ)) :
     ∑ σ, c σ ≤ ∑ σ, Real.log (b σ) := by
   obtain ⟨m, hmall, hm1⟩ := ((Filter.eventually_all.2 h).and (Filter.eventually_ge_atTop 1)).exists
-  obtain ⟨K, _, _, _, x, hx, hu⟩ := GlobalTheory.T.exists_full_torsion_number_field E H L D m hm1
-  have hT0 := fun i => (GlobalTheory.T.torsion_value_unique_base_change E H L D 1 th K _ (x i) m hm1 (hx i))
+  obtain ⟨K, _, _, _, x, hx, hu⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Sl.TorsRat.torsion_rational E H L D m hm1
+  have hT0 := fun i => (_root_.GlobalTheory.CompanionTheory.Ar.Sl.TorsExist.torsVal_existsUnique E H L D 1 th K _ (x i) m hm1 (hx i))
   choose T hT using fun i => (hT0 i).1.exists
-  have hTint := fun i => GlobalTheory.T.torsion_value_integral E H L D th K _ (x i) m (T i) (hT i)
+  have hTint := fun i => _root_.GlobalTheory.CompanionTheory.Ar.Sl.IntTors.integral_torsVal E H L D th K _ (x i) m (T i) (hT i)
   let res : (K →+* ℂ) → (L →+* ℂ) := fun τ => τ.comp (algebraMap L K)
   have hemb : ∀ τ : K →+* ℂ, spMap τ ≫ spMap ((algebraMap L K).comp (algebraMap (𝓞 L) L)) = emb (res τ) := by
     intro τ
@@ -460,7 +460,7 @@ theorem mean_log_sup : ∃ C : ℝ, 0 ≤ C ∧ ∀ (E : Type) [Field E] [Number
   intro E _ _ _ H L _ _ D th Φ hg hΦ hth
   obtain ⟨b, hb, hmean⟩ := hth
   have hfr := _root_.GlobalTheory.CompanionTheory.Ar.Sl.frames_main E H L D
-  have hun := GlobalTheory.T.theta_multiplier_quadratic_character E H L D
+  have hun := _root_.GlobalTheory.CompanionTheory.Ar.Sl.Unimod.frame_unimodular E H L D
   have hdata : ∀ (σ : L →+* ℂ) (a : D.Frame σ), ∃ (θ : (Fin D.g → ℂ) → ℂ) (ρ : ℝ), a.IsFn th θ ∧ 0 < ρ ∧
       ρ ≤ √(2 * D.g) ∧ 0 < b σ ∧ (∀ w, a.nrm 1 θ w ≤ b σ * Real.exp (Ef D.g C₀ ρ)) ∧
       ∀ᶠ m : ℕ in Filter.atTop, ∀ (Ix : Type) [Fintype Ix] (r : Ix → Fin D.g → ℂ),

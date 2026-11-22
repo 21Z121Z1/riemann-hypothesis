@@ -3,7 +3,7 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsPowSubMe
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.RationalSections.ThmISt
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterDerived
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexPointExistsUniqueEmbeddingStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UnitSectionDivisorEqStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UnitSectionDivisorEq
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.VerticalStatementHolds
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatHermUnitSectionAvoid
 
@@ -84,7 +84,7 @@ theorem FlatHerm.inter_eq_neg_integral : ∀ (K : Type) [Fintype K] (ι : K → 
   obtain ⟨f', g', df', dg', hf', hg', hdeg, hfW, hgW, -, hun, hnorm⟩ :=
     _root_.GlobalTheory.CompanionTheory.Ar.Flat.FlatHerm.exists_rep K ι Ω F y φ A S d W hY hP hA hW.2.1 hPW
   have hunW := IsUnitSec.mono hun hPW
-  obtain ⟨c1, c2, c3⟩ := GlobalTheory.T.unit_section_divisor_eq K ι W f' g' hunW
+  obtain ⟨c1, c2, c3⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.cycles_eq_of_isUnitSec K ι W f' g' hunW
   have hvert := _root_.GlobalTheory.CompanionTheory.Ar.Flat.vertical_holds K ι I hI W n L C f' g' hW hL hC
     ⟨df', dg', hf', hg', hfW, hgW, fun k => by rw [hdeg k, hCa k, hBa k]⟩
     (fun W' _ => by rw [c1]) (fun W' _ hm => c2 W' hm) (fun z hz => by

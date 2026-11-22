@@ -2,10 +2,10 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.AxesVanishingStructureSheafDegOne
 import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.IsScalarTowerOfAlgebraMapEq
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianHodgeDeRham
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GrpObjPullbackAxesCohomologyProjectionsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GrpObjPullbackAxesCohomologyProjections
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeOneFormFrameAndSquare
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DerivativeCurvatureClosednessRelationsAdd
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCohomologyDerivativeRelationOfFrameStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCohomologyDerivativeRelationOfFrame
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CohomologyDerivativeRelationPairingWellDefined
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsConnectionOfCohomologyDerivativeRelation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CohomologyDerivativeRelationSemilinearPullback
@@ -29,7 +29,7 @@ theorem sum_dRel_eq_zero (R : Type) [CommRing R] (A : Over (Sp R)) [GrpObj A] (g
     ∑ k, l (w k) • y k = 0 := by
   obtain ⟨-, -, hA2, hs2⟩ := _root_.GlobalTheory.AbCoh.basic_of_isAbelianScheme R A g hA hs
   obtain ⟨hF2, hC2, -, -⟩ := _root_.GlobalTheory.AbCoh.basic_of_isAbelianScheme R (A ⊗ A) (g + g) hA2 hs2
-  obtain ⟨hax, hafF, -⟩ := GlobalTheory.T.grpObj_pullback_axes_cohomology_projections R A
+  obtain ⟨hax, hafF, -⟩ := _root_.GlobalTheory.AbCoh.AxesPull.main R A
   have hprim := _root_.GlobalTheory.AbCoh.primO1_of_isAbelianScheme R A g hA hs x
   set a₁ : A ⟶ A ⊗ A := lift (𝟙 A) (toUnit A ≫ η[A])
   set a₂ : A ⟶ A ⊗ A := lift (toUnit A ≫ η[A]) (𝟙 A)
@@ -57,7 +57,7 @@ theorem exists_obRel_abelian : ∀ (R : Type) [CommRing R] (A : Over (Sp R)) [Gr
       ObRel (OAff A.hom) x u v := by
   intro R _ A _ g hA hs x
   obtain ⟨hF, hC, -, -⟩ := _root_.GlobalTheory.AbCoh.basic_of_isAbelianScheme R A g hA hs
-  obtain ⟨n, y, w, hx⟩ := GlobalTheory.T.exists_cohomologyDerivativeRelation_of_frame R _ (OAff A.hom) hF x
+  obtain ⟨n, y, w, hx⟩ := _root_.GlobalTheory.AbCoh.dRel_of_frame_exists R _ (OAff A.hom) hF x
   exact _root_.GlobalTheory.AbCoh.exists_obRel_of_dRel R _ (OAff A.hom) hF hC x n y w hx
     (fun l ↦ sum_dRel_eq_zero R A g hA hs x y w hx l)
 

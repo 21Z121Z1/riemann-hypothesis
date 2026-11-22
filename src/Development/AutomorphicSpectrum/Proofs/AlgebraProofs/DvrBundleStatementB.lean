@@ -11,7 +11,7 @@ import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SameGenericBundleCha
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SameGenericFlagComparison
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ChartBundleBaseExtension
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ChartBundleBaseExtensionUnique
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ChartBundleShortExactStatement
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ChartBundleShortExact
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FlagPairBaseExtensionStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ChernClassOnFlagPair
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SubQuotientStatement
@@ -183,8 +183,8 @@ theorem descend {x : (Σ k, ι k) → Ω} {d : ℕ} {E E' : ChartBundle O (mseg 
   obtain ⟨hM, hs, h, h'⟩ := hS
   have hS' : Setup (joinCoord x z) d EB E'B i p E₁B E₁'B E₂B E₂'B :=
     ⟨hz, (_root_.GlobalTheory.CompanionTheory.Ar.Num.PullPreserve.pull_preserve O Ω K ι x N V E E' K' ι' z EB E'B p0 p0').2.1 hs,
-      GlobalTheory.T.chart_bundle_short_exact O Ω K ι x N N₁ N₂ V V₁ V₂ E i p E₁ E₂ h K' ι' z EB E₁B E₂B p0 p1 p2,
-      GlobalTheory.T.chart_bundle_short_exact O Ω K ι x N N₁ N₂ V V₁ V₂ E' i p E₁' E₂' h' K' ι' z E'B E₁'B E₂'B p0' p1' p2'⟩
+      _root_.GlobalTheory.CompanionTheory.Ar.Num.PullSubQuot.main O Ω K ι x N N₁ N₂ V V₁ V₂ E i p E₁ E₂ h K' ι' z EB E₁B E₂B p0 p1 p2,
+      _root_.GlobalTheory.CompanionTheory.Ar.Num.PullSubQuot.main O Ω K ι x N N₁ N₂ V V₁ V₂ E' i p E₁' E₂' h' K' ι' z E'B E₁'B E₂'B p0' p1' p2'⟩
   intro k hk1 hk2 q L Q hQ
   have e := H hS' k hk1 hk2 q (fun j => pullDeg (K' := K') (L j)) Q hQ
   rw [(GlobalTheory.T.same_generic_base_extension O Ω K ι x d hM N V E E' hs K' ι' z hz hb EB E'B p0 p0').1 k hk1 hk2 q L Q hQ,

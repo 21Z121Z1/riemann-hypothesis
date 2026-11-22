@@ -15,7 +15,7 @@ import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomology
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.TerminalRes
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.TotPairing
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousCochainFiltrationDecomposition
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InOpenOfThickeningMorphismStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InOpenOfThickeningMorphism
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InOpenFiniteInfIff
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CechCohomologyFullSubcategoryIso
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.GlobalSerreRelations.CechAugRowU
@@ -39,7 +39,7 @@ theorem st_single_rel (α : ι) ⦃T T' : Thick (nlFun γ p X q κ)⦄ (φ : T �
   obtain ⟨β, hQ, -⟩ := h'
   rw [Set.mem_singleton_iff] at hV
   subst hV
-  exact ⟨hQ, _, rfl, GlobalTheory.T.inOpen_of_thickening_morphism _ φ hi⟩
+  exact ⟨hQ, _, rfl, _root_.GlobalTheory.CompanionTheory.ThickPt.inU_map _ φ hi⟩
 
 theorem st_single_union : (fun T => ∃ α, St Q {U α} T) = St Q (Set.range U) := by
   funext T

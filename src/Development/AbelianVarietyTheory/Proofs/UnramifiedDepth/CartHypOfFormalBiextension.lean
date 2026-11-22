@@ -7,7 +7,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChar
 import Development.AbelianVarietyTheory.Definitions.TeichmullerDepth.HasTeich
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.CartHypOfIntegralGaugedFormalGroupLaw
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.HasGaugeAdjointLieProjectorsPairData
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.IsIntegralGaugedFormalGroupLawPairDataStatement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.IsIntegralGaugedFormalGroupLawPairData
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.HasGaugeAdjointTeichmullerEndPairPlaces
 
 open scoped BigOperators
@@ -17,7 +17,7 @@ namespace GlobalTheory
 
 theorem cartHyp_of_formalBiextension : CartFBSt := by
   intro C _ _ V O _ _ dd Y d _ I _ p
-  exact _root_.GlobalTheory.RowLaw.cartHyp_of_rlaw C V d I (Fin dd) (Y.raw p) (GlobalTheory.T.isIntegralGaugedFormalGroupLaw_pairData C V O dd Y d I p)
+  exact _root_.GlobalTheory.RowLaw.cartHyp_of_rlaw C V d I (Fin dd) (Y.raw p) (_root_.GlobalTheory.RowLawPair.rLaw_pairData C V O dd Y d I p)
     (_root_.GlobalTheory.hasProj_pairData C V O dd Y d I p) (_root_.GlobalTheory.TeichPair.hasTeich C V O dd Y d I p)
 
 end GlobalTheory

@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.CMLattices.ExistsIsThetaDegOfIsLocalModel
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.CmCurveBaseChangeCompStatement
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.CmCurveBaseChangeComp
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.OneMulConjFracOneEqInvDifferent
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField IsDedekindDomain
@@ -14,7 +14,7 @@ theorem hasPeriod_of_ellMap : Out.PolBaseChangeSt → ∀ (E : Type) [Field E] [
   intro hbc E _ _ _ H M K _ _ _ _ j ω ω' C C' φ x hm hx
   obtain ⟨n, hn, hmean⟩ := hx
   refine ⟨fun s => n (s.comp j), fun s => ⟨(hn _).1, fun r => ?_⟩, ?_⟩
-  · rw [(GlobalTheory.T.cmCurveBaseChange_comp E H _ ω C _ ω' C' _ φ hm).2.2 _ r hbc]
+  · rw [(_root_.GlobalTheory.CM.EllComp.ellMap_comp E H _ ω C _ ω' C' _ φ hm).2.2 _ r hbc]
     have e : (s.comp (algebraMap (𝓞 K) K)).comp (RingOfIntegers.mapRingHom j)
         = (s.comp j).comp (algebraMap (𝓞 M) M) := by
       ext a; rfl

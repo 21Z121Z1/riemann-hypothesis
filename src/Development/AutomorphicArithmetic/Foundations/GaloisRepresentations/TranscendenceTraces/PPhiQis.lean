@@ -1,6 +1,8 @@
 import Mathlib
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TranscendenceTraces.PhiExact
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChosenInjectiveResolutionEtaleSheafPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChosenInjectiveResolutionEtaleSheafProperties
+import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
+import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
 
 open CategoryTheory Limits AlgebraicGeometry Opposite CochainComplex GlobalTheory.EtC UpperTheory.Gal.TranscendenceTraces
 
@@ -15,7 +17,7 @@ private theorem single_key {R : Type} [CommRing R] (Φ : Shv R ⥤ Shv R) [Φ.Ad
 theorem UpperTheory.Gal.TranscendenceTraces.phiQis_of :
     PhiQis := by
   intro R _ Φ _ hΦ F
-  obtain ⟨-, -, -, hq, hι, -, -, -⟩ := GlobalTheory.T.chosenInjectiveResolution_etaleSheaf_properties R F
+  obtain ⟨-, -, -, hq, hι, -, -, -⟩ := _root_.GlobalTheory.EtC.ResBasic.res_basic R F
   haveI : Φ.PreservesHomology := (Φ.exact_tfae.out 1 2).1 hΦ
   let e := (HomologicalComplex.singleMapHomologicalComplex Φ (ComplexShape.up ℤ) 0).app F
   let φ : (HomologicalComplex.single (Shv R) (ComplexShape.up ℤ) 0 ⋙

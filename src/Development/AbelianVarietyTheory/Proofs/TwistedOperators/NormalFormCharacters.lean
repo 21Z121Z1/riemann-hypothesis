@@ -12,8 +12,9 @@ import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AlgebraicValuesFinite.A
 import Formalism.LocalToGlobal.UnitaryNorms.CharHost
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeCharUniformiserValueIsAlgebraic
 import Formalism.LocalToGlobal.UnitaryNorms.IsUnitaryNormOf
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeCharLocalValueDivUniformiserPowStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsNumberFieldValuesInEtaCharHalfTwistStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeCharLocalValueDivUniformiserPow
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsNumberFieldValuesInEtaCharHalfTwist
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnitaryRationalInfTypeSubgroupAndInfTypeUnique
 
 noncomputable section
 
@@ -130,7 +131,7 @@ theorem locIn_alg (L : Type) [Field L] [NumberField L] (χ : HChar L) (m : (L �
     (hS : ∀ v, v ∉ S → χ.UnrAt v) :
     ∃ M : IntermediateField ℚ ℂ, FiniteDimensional ℚ M ∧ ∀ w x, ((χ.loc w x : ℂˣ) : ℂ) ∈ M := by
   classical
-  obtain ⟨N, hN, hdec⟩ := GlobalTheory.T.heckeChar_local_value_div_uniformiser_pow L χ
+  obtain ⟨N, hN, hdec⟩ := _root_.GlobalTheory.HeckeLocDec.loc_div_val_pow L χ
   obtain ⟨M0, hM0, hval⟩ := unr_vals' L χ m hm
   let Z : Finset ℂ := S.image (fun w => ((χ.val w : ℂˣ) : ℂ)) ∪ (Polynomial.nthRoots N (1 : ℂ)).toFinset
   have hint : ∀ z ∈ (Z : Set ℂ), IsIntegral ℚ z := fun z hz => by
@@ -228,7 +229,7 @@ theorem charsIn_nf {D : D7} {T : Type} [Finite T] {L : LevCh D T} {μ0 : T} (hL 
       ∀ w x, ((L.C.del'.loc w x : ℂˣ) : ℂ) ∈ M := by
     obtain ⟨n, hn, h⟩ := L.C.isDel'.fin
     exact locIn_fin _ n hn h
-  obtain ⟨Me, hMe, he⟩ := GlobalTheory.T.exists_numberField_valuesIn_etaChar_halfTwist D.host L.C.eta L.C.isEta
+  obtain ⟨Me, hMe, he⟩ := _root_.GlobalTheory.EtaValsNumberField.etaVals D.host L.C.eta L.C.isEta
   choose Mmu hMmu hmu using hmu
   choose Mxi hMxi hxi using hxi
   choose Mchi hMchi hchi using hchi

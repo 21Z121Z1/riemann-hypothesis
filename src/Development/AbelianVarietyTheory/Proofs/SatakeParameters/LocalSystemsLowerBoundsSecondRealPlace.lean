@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Cobdry
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.DualOm
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PlacesOffFirstOrbits
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocalModelBoundPlaceOverSecondEmbedding
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LowTermLeSecondRealPlaceBoundsStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LowTermLeSecondRealPlaceBounds
 
 open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.G Formalism.MainNotions.FormalGroupSystem Formalism.FrobeniusOrbits GlobalTheory.TwU Classical
 
@@ -61,7 +61,7 @@ theorem sysTw_sites : ∀ (D : D7) (L : SizeData₂ D) (hT : GatTies D) (X : Ins
         (hr1 v hv).1 (hr1 v hv).2.2 j hjm
     · simp only [if_neg hp]
       exact a11 v j (lt_of_lt_of_eq hjm (hty u w hg).1.symm)
-  · refine (GlobalTheory.T.low_term_le_second_real_place_bounds D u w hg L X K ce Xe dG hF h0 hj).trans (sub_le_sub_right (le_of_eq ?_) _)
+  · refine (_root_.GlobalTheory.TwU.LowTerm.lowS_le D u w hg L X K ce Xe dG hF h0 hj).trans (sub_le_sub_right (le_of_eq ?_) _)
     refine Finset.sum_congr rfl fun j _ => ?_
     refine (hr2 (fun t => if ((D.what₂.places.resChar w : ℕ) : ℝ) ≤ L.sc.X'' D.R.n then
       FOrb D j (D.what₂.places.resChar w) (true, t) - OrbitPlaces.errF L K ce j (D.what₂.places.resChar w) (true, t) else 0) ?_).symm

@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RealPointActsO
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RealComponentEqConjInverseRationalMatrix
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FockSubstitutionPreservesHarmonicLetterPolynomiaStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FockSubstitutionHomogeneousCoeffMemAfterScaling
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpanFiniteTranslatesVacuumThetaFockVacuaStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpanFiniteTranslatesVacuumThetaFockVacua
 open NumberField Matrix Complex IsDedekindDomain
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.FD GlobalTheory GlobalTheory.ThFr GlobalTheory.Dict GlobalTheory.AdTh GlobalTheory.ClsVal
 open ReciprocityTheory.ChartRestriction.G.Geo.Tor hiding Level Host
@@ -92,7 +92,7 @@ theorem real_act_harm : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (θ : InfF
     rw [pow_add, pow_mul]
     ring
   · intro M e O₁ hM f hf
-    obtain ⟨hft, hff⟩ := GlobalTheory.T.span_finiteTranslates_vacuum_thetaFockVacua D ψ θ V W χV χW om ΛV ΛW sW f₀ hP e M O₁ hM f hf
+    obtain ⟨hft, hff⟩ := _root_.GlobalTheory.LevelSeries.trSp_theta_fock D ψ θ V W χV χW om ΛV ΛW sW f₀ hP e M O₁ hM f hf
     rw [_root_.GlobalTheory.RealFockVac.om_stdF_subst D ψ θ V W χV χW om ΛV ΛW sW f₀ hP Dw.p BW hON a ha u hu f hft hff, hk a ha f hft hff, stdF,
       GlobalTheory.FiniteFock.pureTensorO_smul, map_smul, map_smul, MvPolynomial.rename_rename, Equiv.self_comp_symm,
       MvPolynomial.rename_id_apply, smul_smul]

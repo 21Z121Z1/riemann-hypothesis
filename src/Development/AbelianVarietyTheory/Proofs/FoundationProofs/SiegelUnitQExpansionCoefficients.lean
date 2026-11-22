@@ -2,7 +2,8 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.SgC
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasQIff
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelUnitInTowerAnEqSiegelUnitOnComplex
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SmoothedSiegelUnitQExpansionCoeffsIntegralStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SmoothedSiegelUnitQExpansionCoeffsIntegral
+import Development.AbelianVarietyTheory.Definitions.Foundations.Imports
 
 open scoped UpperHalfPlane MatrixGroups
 open GlobalTheory.KZ GlobalTheory.Sieg
@@ -110,7 +111,7 @@ theorem siegel_exp : ∀ (Ω : Type) [Field Ω] [Algebra ℚ Ω] [IsAlgClosure �
   intro Ω _ _ _ ε T c M a b hM haM hadm
   classical
   set x : Fin 2 → ℚ := ![(a : ℚ) / M, (b : ℚ) / M] with hx
-  obtain ⟨k, hk⟩ := GlobalTheory.T.smoothedSiegelUnit_qExpansion_coeffs_integral c M a hM haM
+  obtain ⟨k, hk⟩ := _root_.GlobalTheory.SiegQ.sg_expansion_int c M a hM haM
   obtain ⟨A', hA', -⟩ := hk b hadm
   have hmem := _root_.GlobalTheory.KZ.SiegelMem.an_siegel_eq Ω ε T c x hadm
   set f := siegel T c x with hf

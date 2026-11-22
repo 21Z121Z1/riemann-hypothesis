@@ -11,7 +11,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InvQPowNygaard
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.XNygaardExtComesFromBaseFieldStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicCocycleMemImageOfCrystalline
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HerrCocycleOfWittTensorRelations
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HerrClassOfCocycleValuesStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HerrClassOfCocycleValues
 
 open Formalism.WeaklyAdmissibleFiltrations Formalism.BasicNotions Formalism.BasicNotions.Loc TensorProduct GlobalTheory.NL Formalism.MainNotions.DeltaInvariantLattices GlobalTheory.NL.CrystallineBase
 
@@ -77,7 +77,7 @@ private theorem descend_of_eq_K0_of_isCrys (D : Formalism.BasicNotions.D7) (HW :
   obtain ⟨z₀, hz₀, hZ₀⟩ := hall g₀
   have hyz := _root_.GlobalTheory.NL.HerrCocycleCriterion.cocyc D HW F l K s LL h T c (toTW hle T b') y z₀ g₀ hγ hb hZ₀
   exact ⟨y, z₀, hyz, hy, hz₀, c, c',
-    GlobalTheory.T.herr_class_of_cocycle_values D HW F l K s LL h T c (toTW hle T b') y z₀ hyz g₀ hγ hb hzero hZ₀, hc'cl, hcc'⟩
+    _root_.GlobalTheory.NL.HerrClassUniq.class_of_values D HW F l K s LL h T c (toTW hle T b') y z₀ hyz g₀ hγ hb hzero hZ₀, hc'cl, hcc'⟩
 
 set_option maxHeartbeats 4000000 in
 

@@ -1,6 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AlgWeightHighestWeightExistsUniqueAntitoneStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AlgebraicWeightPolyMatrixMultiplicativeStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AlgWeightHighestWeightExistsUniqueAntitone
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RingSpecNormalisedCharacterEq
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AlgebraicWeightPolyMatrixMultiplicative
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConjugateNeSelf
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EvalUnitaryCoordinateZeroOfRationalPoints
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPolynomialRepGLComplexAlgebraicWeightEvalPointStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsBorelEigenvectorOfPolynomialRepGLComplex
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPolyRep
@@ -407,7 +410,7 @@ theorem iso_of_hwAt (a a' : AlgWt L n) (lam : ι → Fin n → ℤ) (ha : ∀ τ
       exact bot_ne_top (α := Subrepresentation c.ρ)
         (Subrepresentation.toSubmodule_injective (Subsingleton.elim _ _))
     haveI := b.index_nonempty
-    obtain ⟨h1, h2⟩ := GlobalTheory.T.algebraicWeight_polyMatrix_multiplicative L n c κ b P hP'
+    obtain ⟨h1, h2⟩ := _root_.GlobalTheory.AlgWtMul.evM_mul L n c κ b P hP'
     have hone : evM P (upt (ptOf emb (1 : ι → GL (Fin n) ℂ))) = 1 := by rw [ptOf_one emb hinj hcm hall, h1]
     have hmul : ∀ g h : ι → GL (Fin n) ℂ, evM P (upt (ptOf emb (g * h))) =
         evM P (upt (ptOf emb g)) * evM P (upt (ptOf emb h)) := fun g h => by
@@ -461,8 +464,8 @@ theorem exists_equiv_VV : ∀ (L : Type) [Field L] [NumberField L] [IsCMField L]
     obtain ⟨t, h | h⟩ := hall σ
     · exact ⟨t, Or.inr (by rw [h, mtwConj, conj_conj])⟩
     · exact ⟨t, Or.inl h⟩
-  choose mu hmu using fun τ => (GlobalTheory.T.algWeight_highestWeight_exists_unique_antitone L n a (mtwConj emb τ)).1.exists
-  let lam : ι → DomWeight n := fun τ => ⟨mu τ, (GlobalTheory.T.algWeight_highestWeight_exists_unique_antitone L n a (mtwConj emb τ)).2 _ (hmu τ)⟩
+  choose mu hmu using fun τ => (_root_.GlobalTheory.AlgWtHW.hw_exists_unique_antitone L n a (mtwConj emb τ)).1.exists
+  let lam : ι → DomWeight n := fun τ => ⟨mu τ, (_root_.GlobalTheory.AlgWtHW.hw_exists_unique_antitone L n a (mtwConj emb τ)).2 _ (hmu τ)⟩
   have hirr : TenIrr (mtwConj (mtwConj emb)) lam :=
     tenIrr_of' highest_weight_fixed_exists highest_weight_fixed_line _ (mtwConj_injective _ hinj') (mtwConj_cm _ hcm') lam
   obtain ⟨T, hT⟩ := iso_of_hwAt (mtwConj emb) hinj' hcm' hall' a (tenWt (mtwConj emb) lam hirr) mu hmu

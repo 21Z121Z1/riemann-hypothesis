@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsUniqueNormalisedPullbackRationalNorm
-import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IsNormalisedPullbackSectionMulStatement
+import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IsNormalisedPullbackSectionMul
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsUniqueSymmetricTranslateOddLevel
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.NormalisedPullbackCommutesSymmetricTranslations
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.SymmetricTranslatesMultiplicationPullbackDescrip
@@ -51,10 +51,10 @@ theorem uu_eq_pull_reach : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E
     obtain ⟨P, hP, -⟩ := _root_.GlobalTheory.existsUnique_pulls E H Dw l Xo S x (α * β) (A * Bn) (n' ^ 2) (N ^ 2) hαβ hsq' G₀
     obtain ⟨Q, hQ, -⟩ := _root_.GlobalTheory.existsUnique_pulls E H Dw l Xo S x β Bn (n' ^ 2 * A) (N ^ 2) hβ hsq K₁
     obtain ⟨R, hR, -⟩ := _root_.GlobalTheory.existsUnique_pulls E H Dw l Xo S x β Bn (n' ^ 2 * A) (N ^ 2) hβ hsq hh
-    have hPN : Pulls Xo (N : 𝓞 E) s P := hN' ▸ GlobalTheory.T.isNormalisedPullbackSection_mul E H Dw l Xo S x _ _ _ _ _ s G₀ P hG₀ hP
+    have hPN : Pulls Xo (N : 𝓞 E) s P := hN' ▸ _root_.GlobalTheory.PullComp.pulls_mul E H Dw l Xo S x _ _ _ _ _ s G₀ P hG₀ hP
     have hPF : P = F₀ :=
       (_root_.GlobalTheory.existsUnique_pulls E H Dw l Xo S x (N : 𝓞 E) (N ^ 2) 1 (N ^ 2) hNN (Nat.one_mul _).symm s).unique hPN hF₀
-    have hQ' : Pulls Xo (α * β) G₁ Q := GlobalTheory.T.isNormalisedPullbackSection_mul E H Dw l Xo S x _ _ _ _ _ G₁ K₁ Q hK₁ hQ
+    have hQ' : Pulls Xo (α * β) G₁ Q := _root_.GlobalTheory.PullComp.pulls_mul E H Dw l Xo S x _ _ _ _ _ G₁ K₁ Q hK₁ hQ
     have hm₁ : Moves Xo x₁ P Q :=
       _root_.GlobalTheory.PlaceInt.moves_of_pulls E H Dw l Xo S x (α * β) (A * Bn) _ _ hαβ hsq' hoN _ x₁ rfl h₁ G₀ G₁ P Q hG₁ hP hQ'
     have hQF : Q = F₁ := (_root_.GlobalTheory.existsUnique_moves E H Dw l Xo S x (N ^ 2) hoN x₁ h₁ F₀).1.unique (hPF ▸ hm₁) hF₁

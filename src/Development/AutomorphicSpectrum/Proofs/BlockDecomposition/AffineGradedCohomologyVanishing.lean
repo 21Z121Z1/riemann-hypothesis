@@ -3,7 +3,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsChartFrom
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FilteredCohomologyRestrictionBijective
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CechRefinementCohomologyBijective
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.ZariskiEtaleLifting.ZariskiCocycleRefinement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CohomologyVanishingAlongIdealFiltrationStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CohomologyVanishingAlongIdealFiltration
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteModulesSerreClass
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.InclStd
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SerreClassOfCechSpectralSequence
@@ -13,10 +13,10 @@ import GroundTheory.ArithmeticGeometry.SchemeCohomology.CechSeparated
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AffineCoverHigherCohomologyVanishes
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.AffineVanishing
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CechVanishingFromCoverStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSmoothCoordinateCoverStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSmoothCoordinateCover
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoordinatesRestrictAffineOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartIsGoodStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartDividedPowersGradedConstantStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartDividedPowersGradedConstant
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SheafFiltrationProperty
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatBaseChangeCohomology
@@ -31,20 +31,20 @@ import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomology
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.TerminalRes
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.TotPairing
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousCochainFiltrationDecomposition
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InOpenOfThickeningMorphismStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InOpenOfThickeningMorphism
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InOpenFiniteInfIff
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.SEqOne
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StCocycle
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormCocycle
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormExistsOfCocycleStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormExistsOfCocycle
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormAdd
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormSmulStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormRestrictStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormActionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormSmul
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormRestrict
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormAction
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormFrame
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormLocalOfFrame
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormVanishOfFrame
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormVectorBundleStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormVectorBundle
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormCover
 
 set_option backward.isDefEq.respectTransparency false
@@ -167,6 +167,6 @@ namespace GlobalTheory.CompanionTheory.GrForm
 theorem gr_aff : KH.LocGr → KH.LocVan → KH.PolyTf → KH.GlobSerreSt → KH.GlobVanSt → ∀ {K : Type} [Field K] [CharZero K] {X : Scheme.{0}} (q : X ⟶ Spec (CommRingCat.of K)) [Smooth q]
     (V : X.Opens) (hV : IsAffineOpen V) (s r j : ℕ), r < s → j ≠ r → Subsingleton (HQ (KS q s {V}) r ((r : ℤ) + 1) j) := fun hL _ hP hS _ =>
   main (_root_.GlobalTheory.CompanionTheory.GrForm.van _root_.GlobalTheory.CompanionTheory.GrForm.stFrame hL hP)
-    (GlobalTheory.T.graded_form_vector_bundle (GlobalTheory.T.graded_form_exists_of_cocycle _root_.GlobalTheory.CompanionTheory.GrForm.stCocycle) _root_.GlobalTheory.CompanionTheory.GrForm.stAdd GlobalTheory.T.graded_form_smul GlobalTheory.T.graded_form_restrict GlobalTheory.T.graded_form_action (_root_.GlobalTheory.CompanionTheory.GrForm.stLoc _root_.GlobalTheory.CompanionTheory.GrForm.stFrame hL hP))
+    (_root_.GlobalTheory.CompanionTheory.GrVB.main (_root_.GlobalTheory.CompanionTheory.GrForm.exists_of_cocycle _root_.GlobalTheory.CompanionTheory.GrForm.stCocycle) _root_.GlobalTheory.CompanionTheory.GrForm.stAdd _root_.GlobalTheory.CompanionTheory.GrFormSmul.stSmul _root_.GlobalTheory.CompanionTheory.GrForm.stRes _root_.GlobalTheory.CompanionTheory.GrForm.stAct (_root_.GlobalTheory.CompanionTheory.GrForm.stLoc _root_.GlobalTheory.CompanionTheory.GrForm.stFrame hL hP))
     _root_.GlobalTheory.CompanionTheory.GrForm.AffCover.stCover hS
 end GlobalTheory.CompanionTheory.GrForm

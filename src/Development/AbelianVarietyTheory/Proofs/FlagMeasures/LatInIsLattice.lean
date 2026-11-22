@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ChartGen
 import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.MaxMass
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsShortVectorIntegralHermitianLatticeRankOneStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsShortVectorIntegralHermitianLatticeRankOne
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EncardShortVectorsLe
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsRest
 
@@ -76,7 +76,7 @@ theorem main : ∀ (K V : Type) [Field K] [NumberField K] [StarRing K] [AddCommG
     have hsub : primSp h L 1 n ⊆ (fun x : V => Submodule.span K {x}) ''
         {x : V | x ∈ L ∧ ∀ τ : K →+* ℂ, (τ (h x x)).re ≤ B} := by
       rintro U ⟨hU, hd⟩
-      obtain ⟨x, hx, hx0, hxB⟩ := GlobalTheory.T.exists_short_vector_integralHermitianLattice_rank_one K U (hRes h U) hK ⟨fun x y => hs.eq x y⟩
+      obtain ⟨x, hx, hx0, hxB⟩ := _root_.GlobalTheory.Mass.ShortVector.main K U (hRes h U) hK ⟨fun x y => hs.eq x y⟩
         (fun τ x hx => hp τ x (by simpa using hx)) hU (latIn U L)
         ⟨latIn_isLattice L hL.1 U, fun x hx y hy => hL.2 x hx y hy⟩
       rw [hd] at hxB

@@ -1,6 +1,6 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.MirabolicDerivatives.UnipotentDerivatives.DerUnipLeUnipB
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicTwistedKernelDerivativeZeroStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicTwistedKernelDerivativeZero
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedJacquetPhiMinusEquiv
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothMirabolicKernelEqZero
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedActionSmoothStatement
@@ -92,7 +92,7 @@ theorem exists_derivative_nontrivial (k : Type) [Field k] [ValuativeRel k] [Topo
       exact ⟨n, hn.trans (Nat.le_succ m), e.injective.nontrivial⟩
     · refine ⟨m + 1, le_rfl, ?_⟩
       apply nontrivial_quot_of_not_mem _ v
-      rwa [← GlobalTheory.T.mirabolic_twisted_kernel_derivative_zero k ψ (m + 1) V τ]
+      rwa [← _root_.GlobalTheory.CompanionTheory.BZMir.twKer_MirUin_eq_derUnipM k ψ (m + 1) V τ]
 
 end GlobalTheory.CompanionTheory.BZMirDer.NonZero
 

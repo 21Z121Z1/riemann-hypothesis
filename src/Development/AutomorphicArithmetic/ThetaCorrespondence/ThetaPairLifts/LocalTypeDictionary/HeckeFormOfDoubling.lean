@@ -24,7 +24,7 @@ theorem heckeForm_of_doubling' : GlobalTheory.Published.WeilRepresentationUnitar
     GlobalTheory.Published.WeilSiegelFormulaUnitary → GlobalTheory.Published.SiegelWeilUnitaryConvergent → _root_.GlobalTheory.Published.DoublingMethodLocalZetaIntegrals →
     GlobalTheory.Published.UnramifiedDoublingGL → ∀ D : D7, HeckeForm D := by
   intro p1 p2 p3 p4 p5 p6 D
-  have hU := GlobalTheory.T.unramifiedDoublingIntegral_inert_place
+  have hU := _root_.GlobalTheory.InertZeta.unramDoublingInert
   have hG : GlobalForm D := _root_.GlobalTheory.T.globalForm_of_siegel_weil p1 p2 p3 p4 p5 D
   have hPB := paramBoundOn_all_of_split_inert D (GlobalTheory.T.sphericalParameterBound_split_place D) (GlobalTheory.T.sphericalParameterBound_nonsplit_places hU D)
   have hLZ := localZetaOn_all_of_split_inert D (GlobalTheory.T.unramifiedDoublingIntegral_splitPlace_adelic p6 D) (GlobalTheory.T.unramified_doubling_integral_inert_adelic hU D (GlobalTheory.T.sphericalParameterBound_nonsplit_places hU D))

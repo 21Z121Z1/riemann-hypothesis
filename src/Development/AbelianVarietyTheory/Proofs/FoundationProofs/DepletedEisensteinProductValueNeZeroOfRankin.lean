@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoeffHeckeVOpera
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularFormCoeffSeqEqOfPosCoeffEq
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsModularFormCoeffSeqHeckeUAndDepletion
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EisensteinPeriodicWeightsIsModularForm
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoeffEisensteinSeriesTwistedHeckeUHeckeVStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoeffEisensteinSeriesTwistedHeckeUHeckeV
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoeffHeckeUVCauchyProductIdentities
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DirichletCharFiniteFourierTransformProperties
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularFormCoeffSeqLinearStructure
@@ -102,7 +102,7 @@ lemma U_FF (e N l : ℕ) (he : 1 ≤ e) (hN : 0 < N) (hl : l.Prime) (θ : Dirich
   have h1 := (_root_.GlobalTheory.depletion_mf e (N * l) l _ _ he hl (dvd_mul_left l N) hper hF).1
   have h2 := ((_root_.GlobalTheory.EisM.mf_linear e (N * l) _).2.2.1 (θ l) _ hF).1
   refine _root_.GlobalTheory.EisM.eq_of_coeff_pos_eq e (N * l) _ _ _ he (Nat.mul_pos hN hl.pos) h1 h2 (fun n hn => ?_)
-  have h3 := (GlobalTheory.T.coeffEisensteinSeriesTwisted_heckeU_heckeV e l c₀ (θ l) (ch ψ) (ch θ) hl).1 (fun x hx => ch_dvd hl ψ hx) (fun y => by simp [ch]) n hn
+  have h3 := (_root_.GlobalTheory.eis_U_V e l c₀ (θ l) (ch ψ) (ch θ) hl).1 (fun x hx => ch_dvd hl ψ hx) (fun y => by simp [ch]) n hn
   simpa [Uo] using h3
 
 lemma U_EE (e N l : ℕ) (hl : l.Prime) (θ' : DirichletCharacter ℂ N) (ψ : DirichletCharacter ℂ l) (c' : ℂ) :
@@ -110,7 +110,7 @@ lemma U_EE (e N l : ℕ) (hl : l.Prime) (θ' : DirichletCharacter ℂ N) (ψ : D
   funext n
   rcases eq_or_ne n 0 with rfl | hn
   · simp [Uo]
-  have h3 := (GlobalTheory.T.coeffEisensteinSeriesTwisted_heckeU_heckeV (e + 1) l c' 1 (fun y => ch ψ⁻¹ y * hat ⇑θ' y) (fun _ => 1) hl).1
+  have h3 := (_root_.GlobalTheory.eis_U_V (e + 1) l c' 1 (fun y => ch ψ⁻¹ y * hat ⇑θ' y) (fun _ => 1) hl).1
     (fun x hx => by simp [ch_dvd hl ψ⁻¹ hx]) (fun y => by simp) n hn
   simpa [Uo] using h3
 
@@ -212,7 +212,7 @@ lemma good_one (e N l : ℕ) (χ θ : DirichletCharacter ℂ N) (φ : DirichletC
   set et := ch θ'⁻¹ (l : ℤ) with het
   have hVpart : ∀ n, n ≠ 0 → eis (e + 1) c'' (fun x => if (l : ℤ) ∣ x then hat ⇑θ' x else 0) (fun _ => 1) n = et * (l : ℂ) ^ e * Vo l Bs n := by
     intro n hn
-    have := (GlobalTheory.T.coeffEisensteinSeriesTwisted_heckeU_heckeV (e + 1) l c'' et (hat ⇑θ') (fun _ => 1) hl).2 (by omega) (fun x => by rw [mul_comm]; exact htw l x hlZ) n hn
+    have := (_root_.GlobalTheory.eis_U_V (e + 1) l c'' et (hat ⇑θ') (fun _ => 1) hl).2 (by omega) (fun x => by rw [mul_comm]; exact htw l x hlZ) n hn
     simpa using this
 
   have hinv : (1 : DirichletCharacter ℂ l)⁻¹ = 1 := inv_one

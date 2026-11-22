@@ -6,7 +6,8 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ConstructionAtBu
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.HasPartAnd
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.JetSplitAmb
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LevelPrimeColumnValuationsAtBundlePoints
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RowFormsMatchPeriodMapOfFurtherPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RowFormsMatchPeriodMapOfFurtherProperties
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MovedReadingSameMapsBaseReadingAgrees
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ColumnChoiceWithTies
 
 set_option synthInstance.maxHeartbeats 200000
@@ -22,6 +23,6 @@ theorem row_aAtG_at_built_alt (𝒮 : Slots) (hR : 𝒮.Rx = RX) (Lk : LkT _root
   rintro K B f T w Z c ⟨⟨b, -⟩, -⟩
   refine ⟨(GlobalTheory.Svd.builtC_hasPart 𝒮).1 K B f T w Z c ⟨b⟩, fun a => ?_⟩
   have hx : RX K B f T w Z c.Wt c.O.p0 b.what₂ := hR ▸ b.rx
-  exact GlobalTheory.T.rowFormsMatchPeriodMap_of_furtherProperties K B f T w Z c.Wt c.O.p0 b.what₂ hx a
+  exact _root_.GlobalTheory.AtG.RX.rowPin_of_rx K B f T w Z c.Wt c.O.p0 b.what₂ hx a
 end GlobalTheory.Fc
 end

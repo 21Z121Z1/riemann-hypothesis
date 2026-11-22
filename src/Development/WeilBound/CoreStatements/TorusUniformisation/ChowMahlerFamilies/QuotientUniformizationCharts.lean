@@ -3,7 +3,10 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbBound
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsFormNotInCoordIdeal
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.JoinModelPointsProject
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AdjoinCoordsArithVarStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AdjoinCoordsArithVar
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsSncModel
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
+import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Proportional
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsTorusStableSncCharts
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsPeriodAtRestrict
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EmbedsGeneric
@@ -99,7 +102,7 @@ theorem exists_charts (hR : Geo.ResK.ResKStatement) [CharZero Ω] (y : (Σ k, J 
         exact hβ0 (by simp)
       simpa [evC] using hm
   obtain ⟨e, he⟩ := exists_arith hK y c hc
-  obtain ⟨M, y', I, hy', hfn, hI, -, hsnc, hbd⟩ := GlobalTheory.T.adjoin_coords_arith_var hR K J Ω y e β b he hβ hβ0
+  obtain ⟨M, y', I, hy', hfn, hI, -, hsnc, hbd⟩ := _root_.GlobalTheory.CompanionTheory.Ar.SncRes.exists_snc_model hR K J Ω y e β b he hβ hβ0
   have eL : joinVec y y' ∘ joinInl J (fun _ : Unit => Fin M) = y := rfl
   have hA : IsArithVar (mCoordIdeal (joinVec y y')) (e + 1) := by
     have hblock : ReciprocityTheory.ChartRestriction.G.AI.I1.IsBlockMap (Sum.inl : K → K ⊕ Unit) (joinInl J fun _ : Unit => Fin M) := by

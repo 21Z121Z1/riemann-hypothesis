@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.CharacterTheory.IsCharacterOverSu
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.ExistsAbelianByPrimePowerNotDvdCardFixedBy
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.IndRestrictEqCardFixedByMul
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.IsCharacterOverSubfieldRestrictClassFunctionOne
-import Development.AbelianVarietyTheory.Proofs.CharacterTheory.MemVirtualCharactersIffSubCharactersStatement
+import Development.AbelianVarietyTheory.Proofs.CharacterTheory.MemVirtualCharactersIffSubCharacters
 
 noncomputable section
 namespace GlobalTheory.BI
@@ -39,7 +39,7 @@ theorem mem_virt_of_forall_abByP (K L : Type) [Field K] [Field L] [Algebra K L] 
     intro f hf f' hf'
     rw [hS] at hf hf' ⊢
     intro χ hχ
-    obtain ⟨a, b, ha, hb, hab⟩ := (GlobalTheory.T.mem_virtualCharacters_iff_sub_characters K L G _).1 (hf' χ hχ)
+    obtain ⟨a, b, ha, hb, hab⟩ := (_root_.GlobalTheory.BI.mem_virt_iff_sub K L G _).1 (hf' χ hχ)
     have : (fun g => (((f * f') g : ℤ) : L) * χ g)
         = (fun g => (f g : L) * a g) - (fun g => (f g : L) * b g) := by
       funext g

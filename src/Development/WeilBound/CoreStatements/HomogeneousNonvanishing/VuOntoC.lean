@@ -1,7 +1,8 @@
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.VuOntoA
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.VuOntoB
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SerreHolomorphicSectionsHolds
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ToroidalFlagSmoothProjectiveStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ToroidalFlagSmoothProjective
+import Development.AbelianVarietyTheory.Definitions.Divisors.BarCompSubsetClosure
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexSectionFiniteCombination
 import Development.AbelianVarietyTheory.Definitions.Divisors.NoCommonZeroCombVal
@@ -30,7 +31,7 @@ theorem exists_comb {V : Unf Xo c σ r} (hσ : GoodEmb c σ) (hU : IsUnf V) (T :
   classical
   letI := V.fin
   obtain ⟨-, g1, g2, -⟩ := GlobalTheory.Reg.BorelGroupoid.frBor_groupoid E H D l Xo c (CAt σ)
-  obtain ⟨d, hsm, hpr⟩ := GlobalTheory.T.toroidal_flag_smooth_projective E H D l Xo c T
+  obtain ⟨d, hsm, hpr⟩ := _root_.GlobalTheory.CompanionTheory.FlagSmooth.smooth_proj_flagStr E H D l Xo c T
   let R : GlobalTheory.AnRead (flagStr T.X) σ d := GlobalTheory.AnRead.all _ _ _
   choose hk hf hR hZ using fun k => open_secZ hU T (hT k) (hP k).1.1
   have hh : ∀ k, hk k ∈ R.holSec (T.X.LL e) := fun k =>

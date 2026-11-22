@@ -7,14 +7,14 @@ import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.CmTypeValuationEmbed
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LinearIndependentEigProj
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.OrderValuationCompare
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LevelSectionsExactKernelLocusOpen
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeLatticeExtendScalarsStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeLatticeExtendScalars
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeLatticeStableUnderAction
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeLatticeEigenDecompositionLocal
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ReduceLatticeActionToResidue
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ReduceLatticeCoordsToResidue
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FractionFieldEigenBasisDescends
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TiedActionComposeResidueMap
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AdaptedBasesChangeByBlockMatricesStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AdaptedBasesChangeByBlockMatrices
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AdaptedBasisSpansEigenspace
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ResidueHodgeLatticeAdaptedBasis
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SpecializeHodgeLatticeEigenbasis
@@ -24,14 +24,14 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BasisOfSubmoduleIff
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CpIntegersValuationRingStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NumberFieldEmbeddingsIntoCpIntegral
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CpEmbeddingFactorsThroughComplex
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CmConjugationCompatComplexConjStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CmConjugationCompatComplexConj
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DvrPointEigenFrameReduction
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DvrPointComponentEigenReduction
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointComponentLocalRing
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CmIntegersRegularAtComponent
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentSpecializationLatticeBasis
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsCombTangentIffLinearSum
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenFrameIffEigenspaceBasisStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenFrameIffEigenspaceBasis
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DvrSpecializationEigenFrame
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
@@ -80,9 +80,9 @@ theorem value_at_point : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] 
     ⟨fun s => (_root_.GlobalTheory.CompanionTheory.Ar.Flat.CPoint.exists_emb_through_coeff E H l c p κ s).choose, fun s => (_root_.GlobalTheory.CompanionTheory.Ar.Flat.CPoint.exists_emb_through_coeff E H l c p κ s).choose_spec⟩
   obtain ⟨hI, hℓ₀, hnorm⟩ := GlobalTheory.T.cp_integers_valuation_ring p
   obtain ⟨hint, hcard⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.CPoint.embeddings_padicComplex E p
-  have hinv : ∀ a, H.bar (H.bar a) = a := fun a => (GlobalTheory.T.cm_conjugation_compat_complex_conj E H τ a).2
+  have hinv : ∀ a, H.bar (H.bar a) = a := fun a => (_root_.GlobalTheory.CompanionTheory.Ar.Flat.CPoint.conjugate_coe_eq_bar E H τ a).2
   have hbarF : ∀ a : 𝓞 E, inE c (ComplexEmbedding.conjugate τ) (a : E) = inE c τ (H.bar a : 𝓞 E) := fun a =>
-    Subtype.ext (GlobalTheory.T.cm_conjugation_compat_complex_conj E H τ a).1
+    Subtype.ext (_root_.GlobalTheory.CompanionTheory.Ar.Flat.CPoint.conjugate_coe_eq_bar E H τ a).1
   obtain ⟨gm, hgm0, hgm⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.det_adapted_eq_unit_mul_const E (OCp p) ℂ_[p] H.bar (κ.comp (inE c τ))
     (κ.comp (inE c (ComplexEmbedding.conjugate τ)))
     (fun s => Module.finrank Z.Ω (HT.eigSp Z.ρ (Z.inc.comp (inE c (f s))))) D.p D.q
@@ -119,10 +119,10 @@ theorem value_at_point : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] 
   have hmemK : ∀ r : regAt (Z.ξ₀ ≫ Y.j) ⟨_, h₂⟩, ψ ⟨r, hle r.2⟩ ∈ (algebraMap V K).range :=
     fun r => hVr r (hle r.2) r.2
   obtain ⟨ρC, ρHC, ev, HV, hC1, hC2, hTC, hEC, hHV1, hHV2, hFC⟩ :=
-    GlobalTheory.T.hodge_lattice_extend_scalars E Z.Ω Z.V Z.ρ 𝓗.ρH H.bar _ _ hle _ _ ℓ t (𝓗.HL ⟨_, h₂⟩) (𝓗.HL ⟨_, h₁⟩) ℂ_[p] (OCp p) (j.comp ψ)
+    _root_.GlobalTheory.CompanionTheory.Ar.Flat.CPoint.EvalExists.exists_eval E Z.Ω Z.V Z.ρ 𝓗.ρH H.bar _ _ hle _ _ ℓ t (𝓗.HL ⟨_, h₂⟩) (𝓗.HL ⟨_, h₁⟩) ℂ_[p] (OCp p) (j.comp ψ)
       𝓗.act_fst 𝓗.act_inr hLI hℓs hHx hHy hmemC
   obtain ⟨ρK, -, -, -, -, -, hTK, -, -, -, -⟩ :=
-    (GlobalTheory.T.hodge_lattice_extend_scalars E Z.Ω Z.V Z.ρ 𝓗.ρH H.bar _ _ hle _ _ ℓ t (𝓗.HL ⟨_, h₂⟩) (𝓗.HL ⟨_, h₁⟩) K V ψ
+    (_root_.GlobalTheory.CompanionTheory.Ar.Flat.CPoint.EvalExists.exists_eval E Z.Ω Z.V Z.ρ 𝓗.ρH H.bar _ _ hle _ _ ℓ t (𝓗.HL ⟨_, h₂⟩) (𝓗.HL ⟨_, h₁⟩) K V ψ
       𝓗.act_fst 𝓗.act_inr hLI hℓs hHx hHy hmemK)
 
   haveI : IsLocalRing (regAt (Z.ξ₀ ≫ Y.j) ⟨_, h₁⟩) := _root_.GlobalTheory.CompanionTheory.Ar.Flat.CPoint.isLocalRing_regAt _ _ _ Z.gen _
@@ -170,7 +170,7 @@ theorem value_at_point : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] 
       LinearIndependent K bK → Submodule.span K (Set.range bK) = HT.eigSp ρK σ₀ →
       IsEigFrame Xo.univ.t.act (under y) σi (fun i => MU.pt (bK i)) := by
     intro n σ₀ σi bK hi h1 h2
-    rw [GlobalTheory.T.eigen_frame_iff_eigenspace_basis _ _ _ _ _ MU _ _ ρK σi n bK hAU, eig_eq E K _ ρK σi σ₀ hi]
+    rw [_root_.GlobalTheory.CompanionTheory.Ar.Flat.LieEigFrame.isEigFrame_pt_iff _ _ _ _ _ MU _ _ ρK σi n bK hAU, eig_eq E K _ ρK σi σ₀ hi]
     exact (_root_.GlobalTheory.CompanionTheory.Ar.Flat.CPoint.basis_iff_unique_combinations K _ _ n bK).1 ⟨h1, h2⟩
   have hFy : IsFramed U τ βK y (fun i => MU.pt (fun k => ψ (x₁ i k))) (fun i => MU.pt (fun k => ψ (x₂ i k))) :=
     ⟨hF.1, hF.2.1, hfrK (βK.comp (inE c τ)) _ _ (fun a => rfl) hK₁ hK₁s,
@@ -183,7 +183,7 @@ theorem value_at_point : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] 
       IsEigFrame Xo.univ.t.act (under y) σi (fun i => MU.pt (bK i)) →
       LinearIndependent K bK ∧ Submodule.span K (Set.range bK) = HT.eigSp ρK σ₀ := by
     intro n σ₀ σi bK hi h
-    rw [GlobalTheory.T.eigen_frame_iff_eigenspace_basis _ _ _ _ _ MU _ _ ρK σi n bK hAU, eig_eq E K _ ρK σi σ₀ hi] at h
+    rw [_root_.GlobalTheory.CompanionTheory.Ar.Flat.LieEigFrame.isEigFrame_pt_iff _ _ _ _ _ MU _ _ ρK σi n bK hAU, eig_eq E K _ ρK σi σ₀ hi] at h
     exact (_root_.GlobalTheory.CompanionTheory.Ar.Flat.CPoint.basis_iff_unique_combinations K _ _ n bK).2 h
   obtain ⟨hvLI, hvsp⟩ := hbasK (βK.comp (inE c τ)) _ vK (fun a => rfl) hF.2.2.1
   obtain ⟨hwLI, hwsp⟩ := hbasK (βK.comp (inE c (ComplexEmbedding.conjugate τ))) _ wK (fun a => rfl) hF.2.2.2
@@ -223,7 +223,7 @@ theorem value_at_point : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] 
   have hdim : Module.finrank Z.Ω (HT.eigSp 𝓗.ρH (Z.inc.comp (inE c τ))) = D.p + D.q := by
     rw [← hu₀s, finrank_span_eq_card hu₀]; simp
   obtain ⟨huLI, huS⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.CPoint.adaptedFamily_isBasis E Z.Ω Z.V 𝓗.ρH _ D.p D.q v w u had hv hdim inferInstance
-  obtain ⟨B, hB, hBdet⟩ := GlobalTheory.T.adapted_bases_change_by_block_matrices E Z.Ω Z.V 𝓗.ρH _ D.p D.q v b₁ w b₂ u u' (Matrix.of P) (Matrix.of Q) had had' hv huS
+  obtain ⟨B, hB, hBdet⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.CPoint.exists_det_mul_eq_of_isAdapted E Z.Ω Z.V 𝓗.ρH _ D.p D.q v b₁ w b₂ u u' (Matrix.of P) (Matrix.of Q) had had' hv huS
     (fun i => (hP i).symm) (fun i => (hQ i).symm)
   set A'Ω : Matrix (Fin (D.p + D.q)) (Fin (D.p + D.q)) Z.Ω := (regAt (Z.ξ₀ ≫ Y.j) ⟨_, h₁⟩).subtype.mapMatrix A' with hA'Ω
   have hdetA' : A'Ω.det = ((A'.det : regAt (Z.ξ₀ ≫ Y.j) ⟨_, h₁⟩) : Z.Ω) := by

@@ -1,5 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NodeFunctionLeviDecompositionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NodeFunctionLeviDecomposition
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviFactorOfUnipotentDecompStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinStable
 open NumberField IsDedekindDomain Matrix MeasureTheory Filter Topology
 open GlobalTheory.CuspRep GlobalTheory.UnitaryBC GlobalTheory.SmGL GlobalTheory.DiscSpec GlobalTheory.CompanionTheory.CTFin PositivityTheory.Rg.Rs PositivityTheory.Rg.Rs.InducedTensorMap
@@ -13,7 +14,7 @@ theorem flatFn_nodeFn : ∀ {E : Type} [Field E] [NumberField E] [IsTotallyCompl
   have ap : ∀ (u : BlockIx (r + s) r → Ad E) (m : GA E r × GA E s) (k : Kinf E (r + s))
       (c : GL (Fin (r + s)) (Af E)), c ∈ KO E (r + s) →
       nodeFn e₁ e₂ (unip u * lev (Ad E) r s m * cf (r + s) k c) = e₁ m.1 * e₂ m.2 :=
-    fun u m k c hc => GlobalTheory.T.node_function_levi_decomposition e₁ e₂ h₁ h₂ u m k c hc
+    fun u m k c hc => _root_.GlobalTheory.CompanionTheory.LimV.NodeApply.nodeFn_apply e₁ e₂ h₁ h₂ u m k c hc
   have hleft : ∀ (v : BlockIx (r + s) r → Ad E) (x : GA E (r + s)),
       nodeFn e₁ e₂ (unip v * x) = nodeFn e₁ e₂ x := by
     intro v x

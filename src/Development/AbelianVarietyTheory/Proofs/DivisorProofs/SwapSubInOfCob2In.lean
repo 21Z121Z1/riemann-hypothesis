@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.EqZeroOfForallPowDvd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalGroupLawCoboundarySymmCocycleMod
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiffCoeffsInIdealSubstOfConstantCoeffZero
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEqSmulProdChooseStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEqSmulProdChoose
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffEdgesMemOfCoboundaryTwoCoeffsInIdeal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoboundaryDegreePartCocycleModIdeal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffCob1HomogLiftBinomial
@@ -279,7 +279,7 @@ theorem build {p : ℕ} [Fact p.Prime] {O : Type} [CommRing O] {θ : B →+* O} 
       obtain ⟨r, hr, e⟩ := hrel n hn a b ha hb hab hab'
       push_cast
       exact mem_NS.2 ⟨r, hr, e⟩
-    obtain ⟨g, hg⟩ := GlobalTheory.T.exists_eq_prod_choose_smul_of_choose_relation p (VJ ⧸ K) hdiv hbij d n cn hsym hr
+    obtain ⟨g, hg⟩ := _root_.GlobalTheory.SymCocycleMV.exists_eq_smul_prod_choose p (VJ ⧸ K) hdiv hbij d n cn hsym hr
     obtain ⟨q, rfl⟩ := Submodule.Quotient.mk_surjective K g
     refine ⟨q, fun _ a ha ha0 han => ?_⟩
     have h1 := hg a ha ha0 han

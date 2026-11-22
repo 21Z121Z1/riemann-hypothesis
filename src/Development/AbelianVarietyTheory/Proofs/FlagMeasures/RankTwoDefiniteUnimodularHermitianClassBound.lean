@@ -3,12 +3,12 @@ import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.SameKindIsom
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ClassNumberLeMinkowskiCount
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RootDiscrGeThreeHalvesOfIsTotallyComplex
 import Formalism.HermitianLattices.StatementMass
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DefiniteUnimodularPlaneSplitAlongVectorStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardUnimodularGluingsTwoLinesLeStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DefiniteUnimodularPlaneSplitAlongVector
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardUnimodularGluingsTwoLinesLe
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NcardRealGeneratedIdealsLe
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsShortVectorUnimodularHermitianLatticeRankT
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsGaugeAll
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardRankOneHermitianLatticeClassesLeStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardRankOneHermitianLatticeClassesLe
 
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S GlobalTheory.Count GlobalTheory.FlagMeas
 
@@ -170,8 +170,8 @@ abbrev GlueData (Y : ℝ) : Type :=
 theorem card_glueData_le (hE : Formalism.HermitianLatticesTheory.IsCMUnram E) (Y : ℝ) (hY : 1 ≤ Y) :
     ENat.card (GlueData E Y) ≤ (((realIdeals E Y).ncard * ((classNumber E * 2 ^ Formalism.HermitianLatticesTheory.fDeg E) *
       ((classNumber E * 2 ^ Formalism.HermitianLatticesTheory.fDeg E) * ⌊Y ^ 2⌋₊)) : ℕ) : ENat) := by
-  refine enat_card_sigma_le _ _ ?_ fun 𝔫 => enat_card_sigma_le _ _ (GlobalTheory.T.card_rankOne_hermitian_lattice_classes_le E hE _) fun q₁ =>
-    enat_card_sigma_le _ _ (GlobalTheory.T.card_rankOne_hermitian_lattice_classes_le E hE _) fun q₂ => ?_
+  refine enat_card_sigma_le _ _ ?_ fun 𝔫 => enat_card_sigma_le _ _ (_root_.GlobalTheory.RankOneClasses.card_classes_le E hE _) fun q₁ =>
+    enat_card_sigma_le _ _ (_root_.GlobalTheory.RankOneClasses.card_classes_le E hE _) fun q₂ => ?_
   · have hf : (realIdeals E Y).Finite := (_root_.GlobalTheory.RealIdealCount.ncard_real_ideals_le E hE Y hY).1
     rw [hf.cast_ncard_eq]
     exact le_rfl
@@ -180,7 +180,7 @@ theorem card_glueData_le (hE : Formalism.HermitianLatticesTheory.IsCMUnram E) (Y
     obtain ⟨φ⟩ : Nonempty (E →+* ℂ) := inferInstance
     have ha : (Quot.out q₁).1.1 ≠ 0 := fun h => by simpa [h] using a2 φ
     have hb : (Quot.out q₂).1.1 ≠ 0 := fun h => by simpa [h] using b2 φ
-    refine (GlobalTheory.T.card_unimodular_gluings_two_lines_le E hE _ _ _ _ 𝔫.1 a1 b1 ha hb a3 b3 a4).trans ?_
+    refine (_root_.GlobalTheory.GlueLines.card_gluings_le E hE _ _ _ _ 𝔫.1 a1 b1 ha hb a3 b3 a4).trans ?_
     exact_mod_cast Nat.le_floor 𝔫.2.2.2
 
 theorem defClassNum_le_card (hE : Formalism.HermitianLatticesTheory.IsCMUnram E) :
@@ -192,7 +192,7 @@ theorem defClassNum_le_card (hE : Formalism.HermitianLatticesTheory.IsCMUnram E)
     obtain ⟨⟨⟨J, Λ⟩, hJ, hpos, hlat, huni⟩, rfl⟩ := Quot.exists_rep c
     obtain ⟨u, hu, hu0, hub⟩ := _root_.GlobalTheory.ShortVec.exists_short_vector E hE J hJ hpos Λ hlat huni
     obtain ⟨γ, β₁, β₂, N₁, N₂, 𝔫, hγ, s₁, s₂, hp, l₁, l₂, m₁, m₂, e₁, e₂, n0, nr, nb⟩ :=
-      GlobalTheory.T.definiteUnimodularPlane_split_along_vector E hE J hJ hpos Λ hlat huni u hu hu0 _ hub
+      _root_.GlobalTheory.PlaneSplit.planeSplit E hE J hJ hpos Λ hlat huni u hu hu0 _ hub
     have h𝔫 : 𝔫 ∈ realIdeals E ((2 * Formalism.HermitianLatticesTheory.vInv E) ^ Formalism.HermitianLatticesTheory.fDeg E) :=
       ⟨n0, nr, by rwa [← pow_mul, mul_comm _ 2]⟩
     let Y₁ : Lines (Submodule.map (Algebra.linearMap (𝓞 E) E) 𝔫) := ⟨(β₁, N₁), s₁, fun φ => (hp φ).1, l₁, e₁⟩

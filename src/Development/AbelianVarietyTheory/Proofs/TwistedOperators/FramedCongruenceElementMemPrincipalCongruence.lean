@@ -8,7 +8,8 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemHyperspecialI
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PlaceIdempotentActsOnSupportedAndOff
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsSumFrame
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SubMemLatticeCompletionOfSupportedPlacesStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FrameCongruentSubOneMulVecMemIdealLatticeCompletStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FrameCongruentSubOneMulVecMemIdealLatticeComplet
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsIntegralBasisCompletion
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConjPlaceIdealMulLatticeCompletionEq
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegerOutsidePrimePowDvdMaximalIdealPow
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridModulusExactOrderWitness
@@ -89,7 +90,7 @@ theorem gl_mem_lev : All fun {D} _ _ {sc} {G} _ _ => ∀ (X : Node), IsSelfDualC
       rw [Pi.add_apply, ← add_mul, hsum]
       exact (((_root_.GlobalTheory.FinPl.placeIdem_acts D p.v ε hε).1 _).1 (hsupp _ hz i)).symm
     rw [hsplit]
-    exact add_mem (GlobalTheory.T.frameCongruent_sub_one_mulVec_mem_idealLatticeCompletion D k p (G.V X) (G.Λ X) n β hlat G.modul (G.pl.depth sc v)
+    exact add_mem (_root_.GlobalTheory.FinPl.FrameCong.sub_one_mulVec_mem D k p (G.V X) (G.Λ X) n β hlat G.modul (G.pl.depth sc v)
       ⟨m, hm, _root_.GlobalTheory.SplitPtLev.dvd_of_mem_maxIdeal_pow D k p (G.pl.w v) hid _ m hm'⟩ k₀ hk₀ y hy) (_root_.GlobalTheory.ConjPlaceLat.cA_mul_mem_latV_smul D k p (G.pl.w v) hid (G.V X) (G.Λ X) G.modul ⟨m₂, hm₂, hm₂'⟩ _ hz)
 
 end GlobalTheory.LevFrame

@@ -1,6 +1,6 @@
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GapGeSubKapBase
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FromSpecResidueFieldCompAutEqOfFixes
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCartierSectionGeneratesAtVanishesAtFinsetStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCartierSectionGeneratesAtVanishesAtFinset
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAffineFunctionWeightedTranslatesUnitAt
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField
@@ -146,7 +146,7 @@ theorem exists_invariant_isEqn : ∀ (F : Type) [Field F] [CharZero F] (X W : Sc
     rw [e]; exact hxV
   let T : Finset X := Finset.univ.image fun γ : Γ => (ρ γ).hom x
   have hT (y : X) : y ∈ T ↔ ∃ γ, (ρ γ).hom x = y := by simp [T]
-  obtain ⟨e₀, he₀, hv⟩ := GlobalTheory.T.exists_cartierSection_generatesAt_vanishesAt_finset X (q ⁻¹ᵁ V) hU D x hxU T
+  obtain ⟨e₀, he₀, hv⟩ := _root_.GlobalTheory.Cartier.CommonEqnOpen.exists_generatesAt_vanishesAt X (q ⁻¹ᵁ V) hU D x hxU T
     (fun y hy => by obtain ⟨γ, rfl⟩ := (hT y).1 hy; exact horb γ)
     (fun y hy hne hc => by
       obtain ⟨γ, rfl⟩ := (hT y).1 hy

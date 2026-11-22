@@ -5,7 +5,12 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrableOnSourceI
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsUniqueComplexPointUnder
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MultiprojectivePrimeEqPointIdeal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PointIdealMultiprojectivePrime
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SpecializesIffPointIdealLeStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SpecializesIffPointIdealLe
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsPullHermPullLine
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EqOfIsometricTrivShift
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRedA
+import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Birational
+import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.IsSmoothHermConstLine
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsLiftClosedImmersionOfDense
 set_option autoImplicit false
 open CategoryTheory AlgebraicGeometry Limits TopologicalSpace MvPolynomial MeasureTheory
@@ -107,7 +112,7 @@ theorem exists_cxPt_of_mem_mcPts : ∀ (m : ℕ) (n : Fin (m + 1) → ℕ) (X : 
   have hP : ptIdeal (i (genericPoint X)) ≤ ptIdeal (w.1 (IsLocalRing.closedPoint ℂ)) := by
     rw [ptIdeal_of_isUnder hz.1 hw]
     exact le_mCoordIdeal_of_mem_mcPts (isMultiProjPrime_ptIdeal m n _).2.1 hz
-  have hs := (GlobalTheory.T.specializes_iff_point_ideal_le m n _ _).2 hP
+  have hs := (_root_.GlobalTheory.CompanionTheory.MPDict.Spec.specializes_iff_ptIdeal_le m n _ _).2 hP
   have hr : w.1 (IsLocalRing.closedPoint ℂ) ∈ Set.range i :=
     hs.mem_closed i.isClosedEmbedding.isClosed_range ⟨_, rfl⟩
   have : Subsingleton (Sp ℂ) := inferInstanceAs (Subsingleton (PrimeSpectrum ℂ))

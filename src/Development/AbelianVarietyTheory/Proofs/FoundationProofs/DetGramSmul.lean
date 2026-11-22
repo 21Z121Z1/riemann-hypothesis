@@ -14,7 +14,8 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIntGenerat
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LinearIndependentVecMulOfSpanRat
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GramDetIndexSublatticeStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MatrixInvEntriesBoundedStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLatticeAdelicMatrixIntegralTranslateStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLatticeAdelicMatrixIntegralTranslate
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FiniteAdeleStrongApproximationModNat
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCmAdeleSplitComplexFiniteAdelesStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TotallyComplexSpanEmbeddingsAndFinrank
 
@@ -185,7 +186,7 @@ theorem red_gl (F E : Type) [Field F] [NumberField F] [Field E] [NumberField E] 
     ((isCompact_closedBall _ _).prod (hO.union (hO.image (continuous_const.mul continuous_id)))).image he, fun β => ?_⟩
   let p₁ := (RingHom.fst _ _).comp e.toRingHom
   let p₂ := (RingHom.snd _ _).comp e.toRingHom
-  obtain ⟨Λ, hΛ, H'⟩ := GlobalTheory.T.exists_lattice_adelicMatrix_integral_translate E n (bc p₂ β)
+  obtain ⟨Λ, hΛ, H'⟩ := _root_.GlobalTheory.AdelicMatLat.exists_lattice_integral E n (bc p₂ β)
   obtain ⟨δ, l, c₁, h1, h2, h3, h4⟩ := H Λ hΛ (bc p₁ β)
   replace H' := H' M δ h1 h2
   set c := (dg (halfE F E) fun i => -l i)⁻¹ * (bc (inclR (F := F) (AF F)) δ * β) with hc

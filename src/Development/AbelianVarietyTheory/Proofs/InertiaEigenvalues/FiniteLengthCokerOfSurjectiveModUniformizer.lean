@@ -7,8 +7,8 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEPowMulFrobMemRightDivisorSet
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFrobeniusSliceMemRightDivisorSet
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobMemLeftDivisorSetPhiModuleHom
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobeniusResidueSliceMemBoundedLeftDivisorSetStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneMemOfFrobeniusLinkedBoundedSeriesIdealsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobeniusResidueSliceMemBoundedLeftDivisorSet
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneMemOfFrobeniusLinkedBoundedSeriesIdeals
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CokerFiniteLengthOfPrimitiveDivisor
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CokernelTorsionFreeOfBoundedLeftInverse
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.WeaklyAdmissibleFiltrations TensorProduct PowerSeries GlobalTheory.Prism GlobalTheory.BK GlobalTheory.BKReal GlobalTheory.BKGal GlobalTheory.Per Matrix
@@ -33,7 +33,7 @@ theorem GlobalTheory.BK.Hom.finiteLength_coker_of_generic : ∀ (O K : Type) [Co
       exact ⟨hone, 0, ⟨0, fun _ j => isEmptyElim j⟩, Subsingleton.elim _ _⟩
     · obtain ⟨M₁, h₁⟩ := _root_.GlobalTheory.BK.Hom.exists_E_pow_mul_frob_mem_rdivSet O K l e a ι κ P Q F
       obtain ⟨M₂, h₂⟩ := _root_.GlobalTheory.BK.RdivSlice.exists_frobSlice_mem_rdivSet O K l e a ι κ P Q F
-      refine GlobalTheory.T.one_mem_of_frobenius_linked_boundedSeries_ideals K l e a M₁ M₂ he hl0 hlK F.rdivSet (fun τ x hx y hy => Hom.rdivSet_add F τ hx hy)
+      refine _root_.GlobalTheory.BK.GcdCore.one_mem K l e a M₁ M₂ he hl0 hlK F.rdivSet (fun τ x hx y hy => Hom.rdivSet_add F τ hx hy)
         (fun τ x hx b hb => Hom.rdivSet_mul F τ hx b hb) (fun τ x hx => hx.1) ?_ h₁ h₂
       intro τ
       obtain ⟨Y, g, hY, hg, hFY⟩ := hyp τ
@@ -46,8 +46,8 @@ theorem GlobalTheory.BK.Hom.finiteLength_coker_of_generic : ∀ (O K : Type) [Co
     · intro τ
       exact ⟨hone, 0, ⟨0, fun i _ => isEmptyElim i⟩, Subsingleton.elim _ _⟩
     · obtain ⟨M₁, h₁⟩ := _root_.GlobalTheory.BK.Hom.frob_mem_ldivSet_target O K l e a ι κ P Q F
-      obtain ⟨M₂, h₂⟩ := GlobalTheory.T.frobeniusResidueSlice_mem_boundedLeftDivisorSet O K l e a ι κ P Q F
-      refine GlobalTheory.T.one_mem_of_frobenius_linked_boundedSeries_ideals K l e a M₁ M₂ he hl0 hlK F.ldivSet (fun τ x hx y hy => Hom.ldivSet_add F τ hx hy)
+      obtain ⟨M₂, h₂⟩ := _root_.GlobalTheory.BK.SliceLdiv.frobSlice_mem_ldivSet O K l e a ι κ P Q F
+      refine _root_.GlobalTheory.BK.GcdCore.one_mem K l e a M₁ M₂ he hl0 hlK F.ldivSet (fun τ x hx y hy => Hom.ldivSet_add F τ hx hy)
         (fun τ x hx b hb => Hom.ldivSet_mul F τ hx b hb) (fun τ x hx => hx.1) ?_ h₁ h₂
       intro τ
       obtain ⟨Y, g, hY, hg, hFY⟩ := hyp τ

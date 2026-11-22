@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationPreservesSchwartz
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatMulIntegralOfIsCompact
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RankSchwartzBruhatFinitePlaceCompletionLeAleph0
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RankAlgebraicDataSchrodingerModelLeAleph0Statement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RankAlgebraicDataSchrodingerModelLeAleph0
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RankPolynomialFockSchrodingerModelLeAleph0
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
 
@@ -59,7 +59,7 @@ theorem GlobalTheory.SquareAgree.rank_polarization_pi_le_aleph0 : GlobalTheory.P
     rw [(Submodule.equivMapOfInjective S.subtype Subtype.val_injective Q).rank_eq]
     exact Submodule.rank_mono (Submodule.map_comap_le _ _)
   have hD : Module.rank ℂ (algD Γ.M Bs.ψ Bs.emb) ≤ Cardinal.aleph0 :=
-    GlobalTheory.T.rank_algebraicData_schrodingerModel_le_aleph0 Γ.M Bs.ψ Bs.emb hT.geo.hM (_root_.GlobalTheory.FockCount.rank_pol_le_aleph0 Bs Γ.M hT.base hT.geo.hV hT.geo.hW hT.geo.hM) (fun v => _root_.GlobalTheory.SBCount.rank_sb_localField_le v _)
+    _root_.GlobalTheory.AlgCountDim.rank_algD_le_aleph0 Γ.M Bs.ψ Bs.emb hT.geo.hM (_root_.GlobalTheory.FockCount.rank_pol_le_aleph0 Bs Γ.M hT.base hT.geo.hV hT.geo.hW hT.geo.hM) (fun v => _root_.GlobalTheory.SBCount.rank_sb_localField_le v _)
   calc Module.rank ℂ Pm = Module.rank ℂ (⊤ : Submodule ℂ Pm) := (rank_top ℂ Pm).symm
     _ = Module.rank ℂ ((algF ψ θ true A B).map p) := by rw [hm.mapA.onto]
     _ ≤ Module.rank ℂ (algF ψ θ true A B) := rank_map_le _ _

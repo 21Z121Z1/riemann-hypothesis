@@ -3,9 +3,9 @@ import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsLocSec
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MinorIJMap
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsValueAtOfTorus
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.TwistedAtlasCompatibility
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.TwistedMetricLogFormulaStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.TwistedMetricLogFormula
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HolomorphicFrameMetricNearPoint
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentTwoFramesOrbitStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentTwoFramesOrbit
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.EqOfOrbitNormal
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentTwistedResolution
 open MvPolynomial MeasureTheory Filter Topology Matrix ReciprocityTheory.AnForm ReciprocityTheory.AnForm.M ReciprocityTheory.AnForm.P ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.AI.I1 ReciprocityTheory.ChartRestriction.G.AI.I2 ReciprocityTheory.ChartRestriction.G.AI.I4 GlobalTheory.CompanionTheory.Ar.PB GroundTheory.Heights₂.Heights GroundTheory.Heights₂.Heights.LowerBoundFree
@@ -161,7 +161,7 @@ theorem main : ∀ (K : Type) [Fintype K] (ι : K → Type) [∀ k, Fintype (ι 
     obtain ⟨hmc, hn₀, hn₁, hbase, hG⟩ := hfacts w hwV
     obtain ⟨hF', hG', hp₀, hp₁, hB', hd', ht', he₀', he₁'⟩ := hD
     have hd := hdata w hwV h0
-    have hind := GlobalTheory.T.flag_adjacent_two_frames_orbit K ι Φ y Ψ N j M τ a b k₀ ca cb hb hj hk hca hcb F F' (z₀ w) (z₁ w) z₀' z₁'
+    have hind := _root_.GlobalTheory.CompanionTheory.Ar.PB.WSq.Sec.Indep.normRhs_indep K ι Φ y Ψ N j M τ a b k₀ ca cb hb hj hk hca hcb F F' (z₀ w) (z₁ w) z₀' z₁'
       (H τ (ψ w)) h' (ψ w i₀) t' hmc hn₀ hn₁ hbase hFr hF' hG hG' (orbit_trans ho₀ (orbit_symm hp₀))
       (orbit_trans ho₁ (orbit_symm hp₁)) hd.2.2.2.2.1 hd.2.2.2.2.2.1 hB' hd' h0 ht' hd.2.2.2.2.2.2.2.1
       hd.2.2.2.2.2.2.2.2 he₀' he₁'
@@ -175,7 +175,7 @@ theorem main : ∀ (K : Type) [Fintype K] (ι : K → Type) [∀ k, Fintype (ι 
     have hzz := mixPt_blocks (k₀ := k₀) hn₀ hn₁
     have hnorm := log_norm_sub (potA M τ a k₀) (c := fun o => c o w) (fun o => hc0 o w hwV) hlift hzz
       (hf0 w hw) h0
-    have hcombo := GlobalTheory.T.twisted_metric_log_formula K ι Φ y Ψ N j M τ a k₀ hk _ hzz
+    have hcombo := _root_.GlobalTheory.CompanionTheory.Ar.PB.WSq.Sec.log_potA K ι Φ y Ψ N j M τ a k₀ hk _ hzz
     rw [fstPt_mixPt, sndPt_mixPt hoff] at hcombo
     have e₁ : Real.log ‖(f w * ∏ o, c o w ^ aDeg M τ a k₀ o) * ψ w i₀‖ -
         Real.log ((potA M τ a k₀).h (RW.lift x w)) = _ := hnorm

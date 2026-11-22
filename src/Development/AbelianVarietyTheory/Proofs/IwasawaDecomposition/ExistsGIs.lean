@@ -20,7 +20,10 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ColumnLayerC
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsStandardColumnComparisonsTrueColumns
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StdLvPr
 import Formalism.LocalToGlobal.HermitianForms.TiedTwJSym
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFullHermitianColumnsTrueColumnsStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFullHermitianColumnsTrueColumns
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FixedVectorEqOfStandardData
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsTwIffCanonEq
+import Formalism.LocalToGlobal.HilbertRowConditions.TiedEMt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdditiveCharacterTypePrimesValuesCoefficientFiel
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.VolumesAgreeAdelicOfTrueVolumeStatement
 import Formalism.LocalToGlobal.BesselHermitianTheta.Joints
@@ -136,7 +139,7 @@ theorem columnLocalData_of_levelZero_concreteData (w : ColW B f T) (Z : w.Lt) (C
         (tauLL (w.D Z) (Gt.gat_pos u v hg ⟨a, s⟩) (algebraMap (w.D Z).host.F (w.D Z).host.E (x : (w.D Z).host.F)))) :
     Nonempty (ColumnDataSplitPrimes K w Z) := by
   obtain ⟨g, hg⟩ := exists_gTiedS_heq C.herm.base G.herm hl
-  obtain ⟨Fu, h1, h2⟩ := GlobalTheory.T.exists_fullHermitianColumns_trueColumns w.I w.ok w.pins w.l Z C g hC hV
+  obtain ⟨Fu, h1, h2⟩ := _root_.GlobalTheory.Mem.Col2.FullDt.exists_colsFullS w.I w.ok w.pins w.l Z C g hC hV
   have e : Fu.1.base.lev0 = G.herm.lev0 :=
     (congrArg (fun H : Formalism.L2.Herm.ColsHermS (w.D Z) => H.base.lev0) Fu.2).trans hl.symm
   exact ⟨⟨⟨C, hC, hL, Fu, h2, Gt, c, G, herm0_eq_to0 Fu.1 G.herm e (h1.trans hg), hf,

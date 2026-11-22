@@ -13,7 +13,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchurConstantsExist
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LiftIntegOfCuspRapidDecay
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsOpsTuple
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftAdjointPreservesHeckeEigenvectorsMatche
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalHeckeConjPlaceEqDualLabelStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalHeckeConjPlaceEqDualLabel
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.EigenvectorAdjointIntertwinerNormalOperators
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil
@@ -66,8 +66,8 @@ theorem transfer_good {D : D7} {G : Type} [Group G] [Fintype G] {Pl0 T : Type}
     exact fun h => P.ne_bot (Ideal.absNorm_eq_zero_iff.1 h)
   obtain ⟨-, g2, -, -⟩ := _root_.GlobalTheory.GoodPrimes.good_primes R F hC.lev
   have hG' := (g2 t _ hG).2.1
-  obtain ⟨u1, u2⟩ := GlobalTheory.T.splittingCharacters_unramified_offLevels R F hC.lev t _ hG
-  obtain ⟨v1, v2⟩ := GlobalTheory.T.splittingCharacters_unramified_offLevels R F hC.lev t _ hG'
+  obtain ⟨u1, u2⟩ := _root_.GlobalTheory.UnrOffLevels.unrPl_of_good R F hC.lev t _ hG
+  obtain ⟨v1, v2⟩ := _root_.GlobalTheory.UnrOffLevels.unrPl_of_good R F hC.lev t _ hG'
   have hm := D.R.two_le_m
   have hP' : conjPl (conjPl P) ≠ conjPl P := by rw [Formalism.DivisionValues.ValuationRepresentative.conjPl_conjPl]; exact hP.symm
   obtain ⟨e, he⟩ := GlobalTheory.MovedIdem.exists_isIdemAt (conjPl P) (by
@@ -92,11 +92,11 @@ theorem transfer_good {D : D7} {G : Type} [Group G] [Fintype G] {Pl0 T : Type}
   have hfix : FixAll R t P := by
     refine ⟨fun k hk => ?_, ?_, fun i => ?_⟩
     · have := unrPl_step (u2 (k + 1) (by omega) hk.le) u1
-      exact (GlobalTheory.T.thetaVacuum_heckeIdentity_splitPlace _ _ _ _ _ _ _ (hC.chain.ωY t k hk) hP this.1 this.2).1
+      exact (_root_.GlobalTheory.Hk3.SplitMatch.match_split _ _ _ _ _ _ _ (hC.chain.ωY t k hk) hP this.1 this.2).1
     · have := unrPl_step (u2 D.R.m (by omega) le_rfl) u1
-      exact (GlobalTheory.T.thetaVacuum_heckeIdentity_splitPlace _ _ _ _ _ _ _ (hC.chain.ωX t) hP this.1 this.2).1
+      exact (_root_.GlobalTheory.Hk3.SplitMatch.match_split _ _ _ _ _ _ _ (hC.chain.ωX t) hP this.1 this.2).1
     · have := u2 ((i : ℕ) + 1) (by omega) i.2
-      exact (GlobalTheory.T.thetaVacuum_heckeIdentity_splitPlace _ _ _ _ _ _ _ (hC.thP.ωP i t) hP this (unrPl_mul_inv this u1)).1
+      exact (_root_.GlobalTheory.Hk3.SplitMatch.match_split _ _ _ _ _ _ _ (hC.thP.ωP i t) hP this (unrPl_mul_inv this u1)).1
   have hσ : ((Real.sqrt q : ℝ) : ℂ) ≠ 0 :=
     Complex.ofReal_ne_zero.2 (Real.sqrt_ne_zero'.2 (Nat.cast_pos.2 (Nat.pos_of_ne_zero hq0)))
   have hs0 : ∀ i, s i ≠ 0 := fun i =>
@@ -107,7 +107,7 @@ theorem transfer_good {D : D7} {G : Type} [Group G] [Fintype G] {Pl0 T : Type}
     Finset.prod_ne_zero_iff.2 fun i _ => hs0 i, Finset.prod_ne_zero_iff.2 fun i _ => blockPoly_ne_zero _ _ _,
     fun k hk => ?_, fun a => ?_⟩
   · rw [hY 0 (Nat.zero_le _)]
-    refine GlobalTheory.T.matchE_of_chainStep_matches R F hL hC hS t _ hG hfix _ (fun j => splitC (D.R.r + j * D.R.t) (W j k)) ?_ fun j hj => ?_
+    refine _root_.GlobalTheory.Hk3.ChainE.matchE_of_chain R F hL hC hS t _ hG hfix _ (fun j => splitC (D.R.r + j * D.R.t) (W j k)) ?_ fun j hj => ?_
     · have hW := hC.chain.ωX t
       have h3 := step_match (ν := ν (D.R.m - 1)) (s := s (D.R.m - 1)) hW hP (unrPl_step (u2 D.R.m (by omega) le_rfl) u1)
         (unrPl_step (v2 D.R.m (by omega) le_rfl) v1) he h1 h2 hx (hY _ (Nat.sub_le _ _)) hX

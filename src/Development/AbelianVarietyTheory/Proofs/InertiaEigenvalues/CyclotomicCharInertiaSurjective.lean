@@ -1,6 +1,6 @@
 import Mathlib
 import ReciprocityTheory.GaloisValuations.Global
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicPrimePowAutomorphismInertialAtPrimeStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicPrimePowAutomorphismInertialAtPrime
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteGaloisInertiaLiftsAbsoluteInertiaRatStatement
 
 open Formalism.ConjugateSelfDual ReciprocityTheory.Gal NumberField Polynomial
@@ -45,7 +45,7 @@ theorem exists_mem_Ine_toZModPow (Ω : Type) [Field Ω] [Algebra ℚ Ω] [IsAlgC
   have hu : (u : ZMod (l ^ k)) = PadicInt.toZModPow k (v : ℤ_[l]) := rfl
   obtain ⟨τ, z, hz, hτz⟩ := exists_aut_pow (K := ℚ) (L := IntermediateField.adjoin ℚ {ζ})
     (cyclotomic.irreducible_rat (Nat.pos_of_neZero (l ^ k))) (ZMod.val_coe_unit_coprime u)
-  obtain ⟨hτ₁, hτ₂⟩ := GlobalTheory.T.cyclotomicPrimePow_automorphism_inertial_at_prime Ω l k A hA ζ hζ τ
+  obtain ⟨hτ₁, hτ₂⟩ := _root_.GlobalTheory.CycInertial.main Ω l k A hA ζ hζ τ
   obtain ⟨σ, hσ, hστ⟩ := GlobalTheory.T.finiteGaloisInertia_lifts_absoluteInertia_rat Ω l A hA (IntermediateField.adjoin ℚ {ζ}) τ hτ₁ hτ₂
   refine ⟨σ, hσ, ?_⟩
   have hzΩ : IsPrimitiveRoot (z : Ω) (l ^ k) := IsPrimitiveRoot.coe_submonoidClass_iff.mpr hz

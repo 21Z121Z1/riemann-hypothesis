@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaLiftPairDefinitePlaceCharacterDataStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DefiniteScalarComponentIsCuspAndCongruenceFixedAStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DefiniteScalarComponentIsCuspAndCongruenceFixedA
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ScalarComponentParametersContainString
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SatakeStringGivesSimplePoleHypothesesStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaLiftFockVectorsSphericalPrincipalFixed
@@ -55,7 +55,7 @@ theorem nonVan_of_downNe : ∀ (D : D7) (_ : DownNe D) (G : Type) [Group G] [Fin
   have hm : (R.νV i t).IsHaarMeasure := hlev.1
   have hW := hG.core.thP.ωP i t
   obtain ⟨l, P, hreal⟩ := _root_.GlobalTheory.Core.Rk.RealOcc.real_ne D G Pl0 T A Ks R F hG hP i t y hy0 (R.νV i t) hm
-  obtain ⟨hA0, hfix⟩ := GlobalTheory.T.linearForm_extV_mem_A0_and_prin_invariant D G Pl0 T A Ks R F hG hP i t cA a hdef y l
+  obtain ⟨hA0, hfix⟩ := _root_.GlobalTheory.DownLift.DefiniteComp.definiteScalarComponent_isCusp_and_congruence_fixed D G Pl0 T A Ks R F hG hP i t cA a hdef y l
   obtain ⟨B, c, hB, hHyp⟩ := GlobalTheory.T.satake_string_gives_simple_pole_hypotheses D G Pl0 T A Ks R F hG hP i t s hs
   obtain ⟨hcart, hfock, hsph, hfixΦ⟩ := _root_.GlobalTheory.ThPFock.fock_sph_prin D G Pl0 T A Ks R F hG hP i t P
   have hu0 : (fun g => l (R.extV i t y g)) ≠ 0 := by

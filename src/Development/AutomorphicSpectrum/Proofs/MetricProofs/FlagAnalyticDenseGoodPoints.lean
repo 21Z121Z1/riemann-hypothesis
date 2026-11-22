@@ -3,7 +3,7 @@ import Development.AutomorphicSpectrum.Proofs.MetricProofs.BasePartFlagPt
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BaseMetricVectorLogResolution
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagPointInMultiprojectivePoints
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsFlagPointInOrbit
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.BaseChartHolomorphicCompositionStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.BaseChartHolomorphicComposition
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BaseVectorProperties
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PlkFlagPt
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PluckerNonvanishingOrbitInvariant
@@ -51,7 +51,7 @@ theorem dens_r : ∀ (K : Type) [Fintype K] (ι : K → Type) [∀ k, Fintype (�
       (∀ u ∈ V, ∀ τ', IsBlockDiag j (hh τ' u) ∧ (hh τ' u).det ≠ 0) →
       ∀ q, AnalyticOnNhd ℂ (fun u => FC.flagPt M (BM.F l) (FC.bvec BM l (bp u)) (fun τ' => hh τ' u) q) V := by
     intro m V bp hh hV hc ha hm hhan _ q
-    have hval := GlobalTheory.T.base_chart_holomorphic_composition K ι Φ y Ψ N j M n BM l m V bp hV hc ha hm
+    have hval := _root_.GlobalTheory.CompanionTheory.Ar.PB.WSq.FC.bvec_val_analytic K ι Φ y Ψ N j M n BM l m V bp hV hc ha hm
     by_cases hk : ∀ p, M.blk p ≠ some q.1
     · simp only [FC.flagPt, dif_pos hk]
       exact hval.1 _

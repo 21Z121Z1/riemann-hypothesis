@@ -13,9 +13,9 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordDegreeBoundOfF
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsValFam
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsCombMatrixMul
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsCombIdentityMatrix
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IotaMultiChangeOfBasisDetStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IotaMultiChangeOfBasisDet
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IotaMultiNeZeroOfLinIndepStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentSpecializationTangentCombStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentSpecializationTangentComb
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Fl GlobalTheory.CompanionTheory.Ar.Flat Filter Topology Metric
 
@@ -111,14 +111,14 @@ theorem expand (Z : CptOver Y U) {F : Type} [Field F] {y : Sp F ⟶ Xo.XF c}
     rw [← hP i]
     rfl
   have hdet : t = Pm.det := by
-    have h1 := GlobalTheory.T.iota_multi_change_of_basis_det Z.Ω Z.V n c₀ Pm
+    have h1 := _root_.GlobalTheory.CompanionTheory.Ar.Lat.wedge_matrix_mul_family Z.Ω Z.V n c₀ Pm
     rw [← hb', hw] at h1
     have h2 : (t - Pm.det) • exteriorPower.ιMulti Z.Ω n c₀ = 0 := by
       rw [sub_smul, h1, sub_self]
     exact sub_eq_zero.1 ((smul_eq_zero.1 h2).resolve_right (GlobalTheory.T.iota_multi_ne_zero_of_lin_indep Z.Ω Z.V n c₀ hc.1))
   have hcomb : ∀ i, IsComb (Matrix.of A i) v₀ (v i) := fun i => by
     obtain ⟨w, hw'⟩ := exists_comb (Matrix.of A i) v₀
-    obtain ⟨w', hw₁, hw₂⟩ := GlobalTheory.T.component_specialization_tangent_comb E H D l Xo c O β Y U Z F y n c₀ v₀ (Pm i) (Matrix.of A i) w h h₀ (hA i) hw'
+    obtain ⟨w', hw₁, hw₂⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.Rep.valFam_sum_comb E H D l Xo c O β Y U Z F y n c₀ v₀ (Pm i) (Matrix.of A i) w h h₀ (hA i) hw'
     obtain ⟨v', hv₁, hv₂⟩ := h₁ i
     have e : ∑ j, Pm i j • c₀ j = b₁ i := by rw [hb']
     rw [e] at hw₁

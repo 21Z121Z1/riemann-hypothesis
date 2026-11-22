@@ -16,7 +16,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SerreClassOfCec
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedRestrictPullBijective
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CechHodgeToCohomologyIsoStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoverIntersectionGradedVanishStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoverStarIsCosieveStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoverStarIsCosieve
 
 set_option backward.isDefEq.respectTransparency false
 open CategoryTheory AlgebraicGeometry GlobalTheory.LogCris DividedPowers GlobalTheory.CechDR GlobalTheory.HodgeCoh CrystallineSemistableComparison CrystallineSemistableComparison.Pb CrystallineSemistableComparison.Om CrystallineSemistableComparison.Om.Glob GlobalTheory.CompanionTheory.CechSerre
@@ -73,14 +73,14 @@ theorem glob_site : ∀ (K : Type) [Field K] [CharZero K],
   intro K _ _
   obtain ⟨E, hE⟩ := GlobalTheory.T.cech_hodge_to_cohomology_iso K
   refine ⟨fun q _ U a j => (rho q U a (a + j)).trans
-      (E (Fk q U a) (Vk q U a) (GlobalTheory.T.cover_star_isCosieve q U a) (vk_cover q U a) a
+      (E (Fk q U a) (Vk q U a) (_root_.GlobalTheory.CompanionTheory.OmGlob.vk_cosieve q U a) (vk_cover q U a) a
         (fun n i r hr => GlobalTheory.T.cover_intersection_graded_vanish q U a n i r hr) j), ?_⟩
   intro X Y q p _ _ u hu U W τ a hG hτ j c h0 h1
   dsimp only
   rw [LinearEquiv.symm_trans_apply, LinearEquiv.symm_trans_apply]
   apply (rho q U a (a + j)).injective
   rw [LinearEquiv.apply_symm_apply, rho_pull q p u hu U W a (a + j) hG, LinearEquiv.apply_symm_apply]
-  exact hE _ _ _ _ (GlobalTheory.T.cover_star_isCosieve p W a) (vk_cover p W a) (GlobalTheory.T.cover_star_isCosieve q U a) (vk_cover q U a) a
+  exact hE _ _ _ _ (_root_.GlobalTheory.CompanionTheory.OmGlob.vk_cosieve p W a) (vk_cover p W a) (_root_.GlobalTheory.CompanionTheory.OmGlob.vk_cosieve q U a) (vk_cover q U a) a
     (fun n i r hr => GlobalTheory.T.cover_intersection_graded_vanish p W a n i r hr) (fun n i r hr => GlobalTheory.T.cover_intersection_graded_vanish q U a n i r hr)
     (morU (pullM u hu a) hG) τ hτ j c h0 h1
 

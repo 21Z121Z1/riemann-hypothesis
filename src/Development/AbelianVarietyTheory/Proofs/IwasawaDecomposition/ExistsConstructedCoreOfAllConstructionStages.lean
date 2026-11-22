@@ -13,7 +13,7 @@ import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SameFo
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.TiedColumnData
 import Formalism.LocalRingCardinality.SpanPowerMembership.TwCore
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.KerEntHyp
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ColumnLayerConditionsTrueColumnsLaterStagesStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ColumnLayerConditionsTrueColumnsLaterStages
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsGaugeOfIsCMExt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResCharConj
 
@@ -93,7 +93,7 @@ theorem stepW_core (_h2b : StandardLattice.SiegelMassRatioCM) : ∀ 𝒮 : Slots
       forced := hF
       fval := fun L hL _ _ v hv j hj => fval_off l L hL v hv j hj
       O := O
-      col := GlobalTheory.T.columnLayerConditions_trueColumns_laterStages B f T w Z l.col.toColT
+      col := _root_.GlobalTheory.Mem.Top.ColOwe.colLay_colT B f T w Z l.col.toColT
       gatNum := (l.g Z.W Z.V Z.S Z.N).2.1
       gy := hgy
       row := rowLay_of l Y hMj hk

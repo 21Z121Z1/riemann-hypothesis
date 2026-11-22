@@ -5,7 +5,7 @@ import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LatNormGrL
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsCompletedStrictHens
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ZarhinBundleKernelFirstCoordEquations
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsJoinModelDominates
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueDominatingMapStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueDominatingMap
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtChartLocalization
 
 noncomputable section
@@ -122,11 +122,11 @@ theorem coordTie_join_of_charts : ∀ (o : Type) [CommRing o] (Ω : Type) [Field
     exact ⟨l, h.1⟩
   obtain ⟨M', f, hf⟩ := _root_.GlobalTheory.CompanionTheory.Ar.join_exists o Ω κ x M Ω (RingHom.id Ω) κ' w (fun _ => rfl) hl
     (eq_top_iff.2 fun a _ => Subfield.subset_closure (Or.inl ⟨a, rfl⟩))
-  obtain ⟨g, hg, -⟩ := GlobalTheory.T.existsUnique_dominating_map o Ω (κ × κ') _ M' o Ω κ x M (RingHom.id Ω)
+  obtain ⟨g, hg, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.ChMorph.existsUnique_dominates o Ω (κ × κ') _ M' o Ω κ x M (RingHom.id Ω)
     (fun p => mem_ctrSet_join M p (hw p))
   rw [dominates_id_iff] at hf hg
-  have u1 := GlobalTheory.T.existsUnique_dominating_map o Ω κ x M o Ω κ x M (RingHom.id Ω) (mem_ctrSet_self M)
-  have u2 := GlobalTheory.T.existsUnique_dominating_map o Ω (κ × κ') _ M' o Ω (κ × κ') _ M' (RingHom.id Ω) (mem_ctrSet_self M')
+  have u1 := _root_.GlobalTheory.CompanionTheory.Ar.ChMorph.existsUnique_dominates o Ω κ x M o Ω κ x M (RingHom.id Ω) (mem_ctrSet_self M)
+  have u2 := _root_.GlobalTheory.CompanionTheory.Ar.ChMorph.existsUnique_dominates o Ω (κ × κ') _ M' o Ω (κ × κ') _ M' (RingHom.id Ω) (mem_ctrSet_self M')
   have e1 : g ≫ f = 𝟙 _ := u1.unique (dominates_id_iff.2 (by rw [← Category.assoc, hg, hf]))
     (dominates_id_iff.2 (Category.comp_id _))
   have e2 : f ≫ g = 𝟙 _ := u2.unique (dominates_id_iff.2 (by rw [← Category.assoc, hf, hg]))

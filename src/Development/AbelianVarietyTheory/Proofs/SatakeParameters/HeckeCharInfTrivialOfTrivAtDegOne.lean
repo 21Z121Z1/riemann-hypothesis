@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.DegOneIffSurj
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CharConstOnTranslatesTrivial
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsResidueClassNearRealEmbeddings
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ResidueDegreeOneOfLinearMem
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ContinuousIdeleCharLocalFactorizationStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ContinuousIdeleCharLocalFactorization
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.QuadraticExistsIntegralGeneratorCommonDenominato
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InfinitePlaceEqOfEmbeddingCompAlgebraMapEqStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ImEmbeddingNeZeroOfNotMemRangeOfTotallyRealQuadrStatement
@@ -93,7 +93,7 @@ end Loc
 theorem inf_trivial_of_trivAt_degOne : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberField E] [Algebra F E] [IsTotallyReal F] [IsTotallyComplex E] [Algebra.IsQuadraticExtension F E] (χ : Ideles E →* ℂˣ), IsHeckeChar E χ → (∀ᶠ w in Filter.cofinite, DegOne F w → TrivAt χ w) → ∀ x : (InfiniteAdeleRing E)ˣ, χ (infIdele E x) = 1 := by
   intro F E _ _ _ _ _ _ _ _ χ hχ hdeg
   classical
-  obtain ⟨hunr, hcond, hfact⟩ := GlobalTheory.T.continuous_ideleChar_local_factorization E χ hχ.1
+  obtain ⟨hunr, hcond, hfact⟩ := _root_.GlobalTheory.HeckeSplit.continuous_char_factor E χ hχ.1
   obtain ⟨θ, hθF, D, hD0, hDspan⟩ := _root_.GlobalTheory.quadratic_exists_integral_generator_common_denominator F E
   have hθ0 : (θ : E) ≠ 0 := fun h => hθF ⟨0, by rw [h, map_zero]⟩
   have hθ0' : θ ≠ 0 := fun h => hθ0 (by rw [h]; rfl)

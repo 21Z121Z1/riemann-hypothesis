@@ -7,7 +7,7 @@ import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.SelfDua
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AdelicCharacterTrivialAlmostEverywhere
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LocalAnnihilatorSelfDualVolume
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AdelicAnnihilatorBoxProduct
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.MemAnnihilatorSmallBallEventuallyStatement
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.MemAnnihilatorSmallBallEventually
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.FiniteAdeleBoxMeasureProduct
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ArchimedeanFourierApproximateIdentity
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.NormalisedFourierBumpLimit
@@ -217,9 +217,9 @@ theorem exists_test_approx : ∀ (F : Type) [Field F] [NumberField F], NumberFie
   let B : ℕ → AddSubgroup (Af F) := fun k => boxS S (Ub k)
   let B' : ℕ → AddSubgroup (Af F) := fun k => boxS S (Ua k)
   have hB : ∀ k, annF ψ (B k : Set (Af F)) = (B' k : Set (Af F)) := fun k =>
-    GlobalTheory.T.adelic_annihilator_box_product F ψ hψ S hSc (fun v => (Ub k v : Set (Fv F v))) (fun v => (Ub k v).zero_mem)
+    _root_.GlobalTheory.CompanionTheory.Hypotheses₂.OneV.Coef.Test.annF_boxA F ψ hψ S hSc (fun v => (Ub k v : Set (Fv F v))) (fun v => (Ub k v).zero_mem)
   have hB' : ∀ k, annF ψ (B' k : Set (Af F)) = (B k : Set (Af F)) := fun k => by
-    refine (GlobalTheory.T.adelic_annihilator_box_product F ψ hψ S hSc (fun v => (Ua k v : Set (Fv F v))) (fun v => (Ua k v).zero_mem)).trans ?_
+    refine (_root_.GlobalTheory.CompanionTheory.Hypotheses₂.OneV.Coef.Test.annF_boxA F ψ hψ S hSc (fun v => (Ua k v : Set (Fv F v))) (fun v => (Ua k v).zero_mem)).trans ?_
     change Coef.boxA S (fun v => annV ψ v (annV ψ v (Ub k v))) = _
     simp only [fun v => (hdual k v).1]
     rfl

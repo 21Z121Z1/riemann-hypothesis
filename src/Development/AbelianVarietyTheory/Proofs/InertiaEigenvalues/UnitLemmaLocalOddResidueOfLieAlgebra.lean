@@ -3,12 +3,12 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnitLemmaGr
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OverExtAlgebraMap
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsLocalRingOfIdem
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUnramifiedOddDegreeQuadraticLocalExt
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitLemmaResiduallyUnipotentViaCayleyStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitLemmaResiduallyUnipotentViaCayley
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedBaseChangeLatticeCountEq
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaGramDetInvAlgBaseChangeUnramifiedOdd
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SeparableCharpolyInvAlgBaseChangeUnramified
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ValResultantEqDegreeMulUnramifiedExt
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardResidueFieldAdjoinUnitaryProdStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardResidueFieldAdjoinUnitaryProd
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUnramifiedInvolutionFieldEmbedding
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CharpolyOverExtIntegralReductionPow
 
@@ -60,7 +60,7 @@ theorem unitLemma_local_of_lie : UnitLemmaLie → ∀ (K : UQ), K.Odd → ∀ B�
   have hsepP : (B₁.prod B₂).P.Separable := by rw [Orbit.prod_P]; exact hsep
   have huP := prod_unitary B₁ B₂ hu₁ hu₂
   have hiP := prod_integral B₁ B₂ hi₁ hi₂
-  obtain ⟨d, hd, hcard⟩ := GlobalTheory.T.card_residueField_adjoin_unitary_prod K hK B₁ B₂ hu₁ hu₂ hsep hi₁ hi₂ hl
+  obtain ⟨d, hd, hcard⟩ := _root_.GlobalTheory.UnitLemma.ResDeg.card_residueField_prod K hK B₁ B₂ hu₁ hu₂ hsep hi₁ hi₂ hl
   obtain ⟨K', φ, hq, hc, hv, hodd, hfin, hz⟩ := _root_.GlobalTheory.UnitLemma.UnrExt.exists_unramified_ext K d hd
   have hU : IsUnrExt K K' d φ := ⟨hq, hc, hv, hodd, hfin⟩
   obtain ⟨ψ, hψ, hσ, hO, s, hs, hres⟩ := _root_.GlobalTheory.UnitLemma.Unr.exists_unr_embedding K hK (B₁.prod B₂) huP hsepP hiP hl d hcard K' φ hU hz
@@ -107,7 +107,7 @@ theorem unitLemma_local_of_lie : UnitLemmaLie → ∀ (K : UQ), K.Odd → ∀ B�
   have hsep' : (C₁.P * C₂.P).Separable := by
     rw [hPP]
     exact _root_.GlobalTheory.UnitLemma.Unr.charpoly_overExt_separable K K' d φ hU (B₁.prod B₂) ψ hψ hσ hsepP
-  have hId := GlobalTheory.T.unitLemma_residually_unipotent_via_cayley hL K' (hodd hK) C₁ C₂ hu₁ hu₂ hsep' s hs hQ
+  have hId := _root_.GlobalTheory.UnitLemma.CayleyCase.identity_of_residually_unipotent hL K' (hodd hK) C₁ C₂ hu₁ hu₂ hsep' s hs hQ
 
   have hst : ∀ (B : InvAlg K) (ψ : K'.E →+* B.A) (hψ : ∀ e, ψ (φ e) = algebraMap K.E B.A e)
       (hσ : ∀ e, B.σ (ψ e) = ψ (K'.c e)),

@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IntegrandSZero
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.WeilRepresentationUnitaryPair
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SiegelWeilSectionIntegrableAndContinuous
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SiegelWeilSectionDegeneratePrincipalSeriesLawStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SiegelWeilSectionDegeneratePrincipalSeriesLaw
 
 noncomputable section
 
@@ -52,7 +52,7 @@ theorem swSec_mem_degPS : GlobalTheory.Published.WeilRepresentationUnitaryPair �
   intro hW D ψ A B χB omh hω ν 𝓕 hν φ hφ a hK
   have hint : ∀ f, IsThetaFunO ψ (dblSp A) B f → f ∈ intSub A B omh ν 𝓕 := fun f hf g =>
     (_root_.GlobalTheory.Core.Rk.IP.swSec_integrable_continuous D ψ A B χB omh hω ν 𝓕 hν _ (hω.om_pres (g, 1) f hf)).1
-  refine (mem_degPS A a).2 ⟨GlobalTheory.T.siegelWeilSection_degeneratePrincipalSeries_law hW D ψ A B χB omh hω ν 𝓕 hν φ hφ,
+  refine (mem_degPS A a).2 ⟨_root_.GlobalTheory.Core.Rk.SWLaw.swSec_law hW D ψ A B χB omh hω ν 𝓕 hν φ hφ,
     (_root_.GlobalTheory.Core.Rk.IP.swSec_integrable_continuous D ψ A B χB omh hω ν 𝓕 hν φ hφ).2, ?_⟩
   let S := Submodule.span ℂ {f : WO (dblSp A) B → ℂ | ∃ k ∈ Khat A a, f = omh (k, 1) φ}
   haveI : FiniteDimensional ℂ S := hK

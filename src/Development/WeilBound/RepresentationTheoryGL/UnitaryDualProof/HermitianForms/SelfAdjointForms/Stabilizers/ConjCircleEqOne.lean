@@ -50,7 +50,7 @@ theorem sum_char {ψ : AddChar k Circle} (hψ : Continuous ψ) (hψ1 : ψ ≠ 1)
   split_ifs with huA
   · rw [Finset.sum_congr rfl fun η hη => conj_circle_eq_one (hR.1 η hη u huA), Finset.sum_const, nsmul_eq_mul,
       mul_one]
-  · obtain ⟨η₀, hη₀A, hη₀u⟩ := GlobalTheory.T.exists_character_separating_lattice k ψ hψ hψ1 (m + 1) A hA.1 hA.2 u huA
+  · obtain ⟨η₀, hη₀A, hη₀u⟩ := _root_.GlobalTheory.CompanionTheory.CharacterBiduality.exists_annihilator_ne k ψ hψ hψ1 (m + 1) A hA.1 hA.2 u huA
     set F : (Fin (m + 1) → k) → ℂ := fun η => starRingEnd ℂ ((ψ (η ⬝ᵥ u) : Circle) : ℂ) with hFdef
     have hF : ∀ a, ∀ d ∈ ann ψ A', F (a + d) = F a := by
       intro a d hd

@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteAlgebrasOv
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HyperbolicPairUnitaryTransitive
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitQuadraticOrderPrincipal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedQuadraticOrderPrincipal
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalOrderQuadraticAlmostAllStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalOrderQuadraticAlmostAll
 open HeckeCharacterZeroLocus.SiegelWeilU GlobalTheory.CompanionTheory.SW NumberField IsDedekindDomain MeasureTheory Topology
 open scoped TensorProduct ENNReal NNReal Matrix
 open GlobalTheory.CompanionTheory.WeilSiegel.Frame GlobalTheory.CompanionTheory.WeilSiegel.Free GlobalTheory.CompanionTheory.WeilSiegel.HypStep GlobalTheory.CompanionTheory.WeilSiegel.HypMass
@@ -200,7 +200,7 @@ theorem eventually_primV_decomposition : ∀ (F E : Type) [Field F] [NumberField
     rw [hσ.2.2.2, hσ.2.2.2, star_star]
   have I := GlobalTheory.CompanionTheory.SW.GoodInt.rational_integral_units F E σ hσ d b
   filter_upwards [PrimMeas.eventually_measurableSet_primV F E σ hσ M J hJ d b,
-    GlobalTheory.CompanionTheory.SW.GoodRing.good_ring F E σ hσ d b, GlobalTheory.T.local_order_quadratic_almost_all F E σ hσ d b,
+    GlobalTheory.CompanionTheory.SW.GoodRing.good_ring F E σ hσ d b, _root_.GlobalTheory.CompanionTheory.SW.QuadRing.quad_ring F E σ hσ d b,
     Filter.eventually_all.2 fun i => Filter.eventually_all.2 fun j => I.1 (hypOne J i j),
     Filter.eventually_all.2 fun i => Filter.eventually_all.2 fun j => I.1 ((hypOne J)⁻¹ i j)]
     with v hmeas hring hquad hH hHi

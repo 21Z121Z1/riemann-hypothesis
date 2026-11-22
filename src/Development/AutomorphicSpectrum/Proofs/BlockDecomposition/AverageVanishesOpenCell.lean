@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AvgVanish
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocallyConstantCompactSupportUnipotent
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicDoubleCosetDecompositionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicDoubleCosetDecomposition
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicCellStructureData
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProjectionToTwistedEigenfunctionSupport
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicFourierExpansion
@@ -524,7 +524,7 @@ theorem main : ∀ (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] [I
     (p : Mir k ((i + 1) + t + 1)) (hp : p ∉ Cl k i t),
   AvgVanish (HPG k (i + 1) (t + 1)) (sigX τ σ) (MirUin k ((i + 1) + t + 1)) (mirChar k ψ ((i + 1) + t)) f p := by
   intro k _ _ _ _ i t ψ hψ τ σ hτ _ f h0 p hp
-  obtain ⟨h, hh, d, m, rfl⟩ := (GlobalTheory.T.mirabolic_double_coset_decomposition k i t).2 p hp
+  obtain ⟨h, hh, d, m, rfl⟩ := (_root_.GlobalTheory.CompanionTheory.BZPhiPG.Cells.cells k i t).2 p hp
   rw [mul_assoc _ (wEl k i t)]
   have hq : qO τ σ ψ (intO f (wEl k i t * sEmb k ((i + 1) + t) m)) = 0 := by
     have hc : i + (t + 1) = (i + 1) + t := by omega

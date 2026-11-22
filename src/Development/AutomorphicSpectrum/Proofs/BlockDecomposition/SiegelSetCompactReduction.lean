@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.WeilThetaC
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsSmoothModerateOfIsAutFunSm
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LintegralSiegelConeInvModulusLtTopWeil
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SchwartzBoundFiniteInfinite
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaSeriesSiegelBoundStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaSeriesSiegelBound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaRapidDecaySiegelSet
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AbsThetaLePowOfColProd
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct
@@ -36,9 +36,9 @@ theorem pure_le_colMajorant (D : D7) (θ : InfFam D) (hθ : IsInfFam θ) (V : HS
       ∀ y ∈ C₁, ∀ x : Mx D V.rank n,
         ‖pureT θ f g (HMul.hMul (mt V y⁻¹) x : Matrix (Fin V.rank) (Fin n) (AE D))‖ₑ ≤
           ENNReal.ofReal C * ∏ j : Fin n, colMajorant θ V.rank L N (fun i (_ : Fin 1) => x i j) := by
-  obtain ⟨C0, L, hL, h0⟩ := GlobalTheory.T.theta_series_siegel_bound D θ hθ V n f g hg C₁ hC₁ 0
+  obtain ⟨C0, L, hL, h0⟩ := _root_.GlobalTheory.CompanionTheory.WeilMaj.schwartz_translate_majorant D θ hθ V n f g hg C₁ hC₁ 0
   refine ⟨L, hL, fun N => ?_⟩
-  obtain ⟨CN, LN, -, hN⟩ := GlobalTheory.T.theta_series_siegel_bound D θ hθ V n f g hg C₁ hC₁ N
+  obtain ⟨CN, LN, -, hN⟩ := _root_.GlobalTheory.CompanionTheory.WeilMaj.schwartz_translate_majorant D θ hθ V n f g hg C₁ hC₁ N
   refine ⟨CN, fun y hy x => ?_⟩
   by_cases hall : ∀ j : Fin n, (Matrix.of fun i' (_ : Fin 1) => finPart D (x i' j)) ∈ L
   · refine (hN y hy x).trans ?_

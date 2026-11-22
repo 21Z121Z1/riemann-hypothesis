@@ -6,7 +6,8 @@ import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutLimENF
 import Formalism.HermitianCurvature.HerGenC
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ProdFinEqProdIcc
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsGridFiveApartOnCut
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WaveGridLiftGridOfLayoutNormaliserBoundStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WaveGridLiftGridOfLayoutNormaliserBound
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.OnePointBasisFundamentalDomainVolume
 open BpJoin Formalism.FourierDecayAlt Formalism.FourierDecayAlt.P Formalism.FourierDecayAlt.P.CutBP Formalism.FourierDecayAlt.P.CutBP2 Formalism.FourierDecayAlt.P.CutBPEq Formalism.QuantumDeterminants
 
 namespace GlobalTheory.GridAtPlace
@@ -42,7 +43,7 @@ theorem main : ∀ (C b c : ℝ) (P : M.Par) (Wp Wq : Type) [NormedAddCommGroup 
   have hNQ := GlobalTheory.NormaliserCutBound.main C b c P p.l0 lam (Pst lam c) Y p.hP.1 hC p.hl.1 p.hl.2.1 hc hcb hkb
     hu hu' hlam (fun s t hst _ => hgap s t (by rw [Fin.lt_def]; omega)) hint hint' hT hT'
     (fun y => ⟨(hpos y).le, le_rfl⟩) (fun y hy => (hon y hy).1)
-  exact ⟨Y, GlobalTheory.T.waveGrid_liftGrid_of_layout_normaliserBound P Wp Wq p (Pst lam c) Y _ _ 3 (3 * (P.r + 1)) hpos ⟨hsep, hcard, hon⟩ hNQ
+  exact ⟨Y, _root_.GlobalTheory.GridsFromLayout.main P Wp Wq p (Pst lam c) Y _ _ 3 (3 * (P.r + 1)) hpos ⟨hsep, hcard, hon⟩ hNQ
     (by linarith) (pow_absorb C b P.r hb3)⟩
 
 end GlobalTheory.GridAtPlace

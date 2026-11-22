@@ -29,7 +29,7 @@ theorem conjMap_mem_mult (θ : D.what₂.Tau → (Ainf D.host.F ⊗[D.host.F] D.
     (h : ∀ τ (w : M'.H τ), w ∈ M'.sm τ ↔ c τ w ∈ M.sm τ)
     {J : Set (GA D V)} {χ χ' : GA D V → ℂ} (hχ : ∀ k ∈ J, χ' k = star (χ k)) {T : MMap M} (hT : T ∈ Mult θ M J χ) :
     conjMap M M' c h T ∈ Mult θ M' J χ' := by
-  obtain ⟨T', hT', e1⟩ := (GlobalTheory.T.complexConjugation_maps_multiplicitySpace θ M M' c hc).2 J χ T hT
+  obtain ⟨T', hT', e1⟩ := (_root_.GlobalTheory.ConjMult.conj_mult θ M M' c hc).2 J χ T hT
   have : conjMap M M' c h T = T' := by
     refine MultilinearMap.ext fun v' => funext fun g => ?_
     rw [e1 v' (fun τ => ⟨c τ (v' τ), (h τ _).1 (v' τ).2⟩) (fun _ => rfl) g]
@@ -51,7 +51,7 @@ theorem rank_le (θ : D.what₂.Tau → (Ainf D.host.F ⊗[D.host.F] D.host.E �
     (he : ∀ φ : GA D V → ℂ, e' (star φ) = star (e φ)) (ha : ∀ P d, a' P d = star (a P d)) :
     Module.rank ℂ (goodPart θ M J χ e ⊓ partFull θ M J0 χ0 SF a : Submodule ℂ (MMap M)) ≤
       Module.rank ℂ (goodPart θ M' J χ' e' ⊓ partFull θ M' J0 χ0 SF a' : Submodule ℂ (MMap M')) := by
-  have h := (GlobalTheory.T.complexConjugation_maps_multiplicitySpace θ M M' c hc).1
+  have h := (_root_.GlobalTheory.ConjMult.conj_mult θ M M' c hc).1
   have key : ∀ T ∈ (goodPart θ M J χ e ⊓ partFull θ M J0 χ0 SF a : Submodule ℂ (MMap M)),
       conjMap M M' c h T ∈ (goodPart θ M' J χ' e' ⊓ partFull θ M' J0 χ0 SF a' : Submodule ℂ (MMap M')) := by
     rintro T ⟨⟨h1, h2⟩, h3⟩

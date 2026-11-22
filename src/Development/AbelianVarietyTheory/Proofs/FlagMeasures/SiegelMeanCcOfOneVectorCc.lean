@@ -303,12 +303,12 @@ theorem siegelMeanCc_of_oneVectorCc : OneVectorCc → SiegelMeanCc := by
   have hsg : ∀ (R : Type) [CommRing R] [Algebra I.F R], algebraMap I.F R (sgn I.F s) = sgn R s := fun R _ _ => by
     cases s <;> simp [sgn]
   obtain ⟨⟨ψ, hψ⟩, hB⟩ := b1 hn (sgn I.F s) (hs1 _) _ b _ _ _ _ g1 g2 g3
-    ⟨GlobalTheory.T.isSchwartzBruhat_indicator_localLatticeCompletion I.F I.E I.n I.L hL, (GlobalTheory.T.eventually_localLatticeCompletion_eq_coordinateLattice I.F I.E I.n _ b I.L hL).mono fun v hv => by rw [hv],
+    ⟨_root_.GlobalTheory.LatticeIndicator.isSB_indicator_latLoc I.F I.E I.n I.L hL, (_root_.GlobalTheory.AdelicU.Cofinite.eventually_latLoc_eq_latV I.F I.E I.n _ b I.L hL).mono fun v hv => by rw [hv],
       _root_.GlobalTheory.AdelicU.indicator_latHat_eq_finprod I.F I.E I.n I.L hL⟩ fun _ => rfl
   obtain ⟨⟨μi, hμi⟩, ⟨νi, hνi⟩, ⟨μv, hμv⟩, ⟨νv, hνv⟩, hQ⟩ := ((hB ψ hψ).2 μ hμ).2 S hS
   obtain ⟨Fi, Fl, hFi, hFl, -, hmean⟩ := hQ μi νi μv νv hμi hνi hμv hνv
-  obtain ⟨lam, m, hlam, hψi, hm, hdual, hprod⟩ := GlobalTheory.T.adelic_character_frequencies_and_conductor_product I θ hθ ψ hψ
-  obtain ⟨hE1, hE2, hE3⟩ := GlobalTheory.T.cm_euler_product_discr_unramified I I.n (by omega)
+  obtain ⟨lam, m, hlam, hψi, hm, hdual, hprod⟩ := _root_.GlobalTheory.AdeleCharConductor.real_part_and_conductors I θ hθ ψ hψ
+  obtain ⟨hE1, hE2, hE3⟩ := _root_.GlobalTheory.DensityEuler.euler_product_discr_unramified I I.n (by omega)
   obtain ⟨n1, n2, n3, -, n5, -⟩ := _root_.GlobalTheory.FlagMeas.instance_numbers I
   have hreal := _root_.GlobalTheory.GaussMean.RealDensityCc.density_at_sign I θ hθ lam _ hlam hψi μi νi hμi hνi φ D (fun v => ⟨hc v, hK v, (hφ v).2.2.2⟩) Fi hFi s
   have hloc : ∀ u, Fl u (algebraMap I.F (Fv I.F u) (sgn I.F s)) =

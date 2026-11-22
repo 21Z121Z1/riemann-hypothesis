@@ -5,11 +5,11 @@ import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.La
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.BernsteinUnitaryProductIrreducible
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsUnitPowTendstoZero
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CentralCharacterNormEqPow
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetMultiplicityPosOfSocleStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetMultiplicityPosOfSocle
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormLtOneOfPowTendstoZero
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExponentLtOfPrecedesStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExponentLtOfPrecedes
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CentralCharacterExists
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProdLeRevEqProdGeStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProdLeRevEqProdGe
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MultisetAntitoneEnumerationStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AntitoneWeightedSumZero
 open GlobalTheory.PRep GlobalTheory.SplitWeil GlobalTheory.SmGL GlobalTheory.LocGL Filter Topology
@@ -29,7 +29,7 @@ theorem exists_lFactors_unitary : ∀ (k : Type) [Field k] [ValuativeRel k] [Top
       ‖c‖ = nabs k t ^ (((y Δ).1 : ℝ) * s) := fun Δ => _root_.GlobalTheory.CompanionTheory.CentralExp.norm_scalarBy_eq_nabs_rpow k (y Δ) (hypos Δ)
   choose f hf using hs
   obtain ⟨h, Δ, hΔ, hanti, hnp⟩ := GlobalTheory.T.multiset_antitone_enumeration 𝔪 f Segment.Precedes (fun a b hab =>
-    GlobalTheory.T.exponent_lt_of_precedes_of_isLSeg k a b (y a) (y b) (f a) (f b) (hyL a) (hyL b) (hf a) (hf b) hab)
+    _root_.GlobalTheory.CompanionTheory.SegExp.exponent_lt_of_precedes k a b (y a) (y b) (f a) (f b) (hyL a) (hyL b) (hf a) (hf b) hab)
   let x : Fin h → IrrGL k := fun a => y (Δ a)
   have hLF : LFactors 𝔪 x := ⟨Δ, ⟨hΔ, hnp⟩, fun i => hyL _⟩
   have hsumdeg : ∀ {h' : ℕ} (Δ' : Fin h' → Segment k) (x' : Fin h' → IrrGL k),
@@ -45,7 +45,7 @@ theorem exists_lFactors_unitary : ∀ (k : Type) [Field k] [ValuativeRel k] [Top
     rw [← hdeg]
     exact Equiv.sum_comp Fin.revPerm (fun a => (x a).1)
   have hsoc := hSoc 𝔪 h N x hdrev hLF π hL
-  have hjm := GlobalTheory.T.jacquet_multiplicity_pos_of_socle k h N (x ∘ Fin.rev) hdrev π hsm (fun a => hypos _) hsoc
+  have hjm := _root_.GlobalTheory.CompanionTheory.SocleFrob.jm_ne_zero_of_isSocle k h N (x ∘ Fin.rev) hdrev π hsm (fun a => hypos _) hsoc
   have hW := hCas N π hN hsm hirr htemp h (x ∘ Fin.rev) hdrev (fun a => hypos _) hjm
   obtain ⟨t, ht⟩ := _root_.GlobalTheory.CompanionTheory.LocalFieldPow.exists_unit_pow_tendsto_zero k
   have ht1 : nabs k t < 1 := _root_.GlobalTheory.CompanionTheory.NabsContract.nabs_lt_one_of_tendsto_pow k t ht
@@ -77,7 +77,7 @@ theorem exists_lFactors_unitary : ∀ (k : Type) [Field k] [ValuativeRel k] [Top
     intro j
     by_cases hj : (Fin.rev j).val + 1 < h
     · have h1 := hpart (Fin.rev j) hj
-      have h2 := GlobalTheory.T.prod_le_rev_eq_prod_ge h (fun i => ‖c i‖) (Fin.rev j)
+      have h2 := _root_.GlobalTheory.CompanionTheory.FinReversal.prod_filter_le_rev h (fun i => ‖c i‖) (Fin.rev j)
       rw [Fin.rev_rev] at h2
       have h3 : ∏ i ∈ Finset.univ.filter (fun i => i ≤ Fin.rev j), ‖(c ∘ Fin.rev) i‖ =
           ∏ i ∈ Finset.univ.filter (fun i => j ≤ i), ‖c i‖ := h2

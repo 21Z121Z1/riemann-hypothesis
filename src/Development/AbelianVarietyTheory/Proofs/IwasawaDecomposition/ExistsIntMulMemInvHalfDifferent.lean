@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsMatrix
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnitaryMulIntegralAtSplitPrime
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SelfDualLatticeStandardAtRationalPrime
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPrimeOverSplitNotMemConjStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ComapSingleSpanAlgebraMapNumberFieldStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ComapSingleSpanAlgebraMapNumberField
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFiniteExtensionCapitulationComplex
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCurveLattice
 
@@ -235,7 +235,7 @@ theorem exists_dgen : ∃ cD, Th.IsDgen H (embT H) cD := by
       exact ⟨_, ⟨a, ha, rfl⟩, funext fun τ => (hl _).symm⟩
     · rintro ⟨_, ⟨a, ha, rfl⟩, rfl⟩
       exact ⟨a, ha, funext fun τ => (hl _).symm⟩
-  have h2 := @GlobalTheory.T.comap_single_span_algebraMap_numberField H.E M _ _ _ _ _ (Tau R) _ (fun a b => Classical.propDecidable (a = b)) (conjVec H) τ
+  have h2 := @_root_.GlobalTheory.comap_single_span_algebraMap H.E M _ _ _ _ _ (Tau R) _ (fun a b => Classical.propDecidable (a = b)) (conjVec H) τ
   rw [← hs τ]
   unfold Th.ellT
   rw [h1]

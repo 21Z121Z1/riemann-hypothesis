@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SumLieCoord
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemSmoothOfChartDerivativesAtIdentityStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsBoundedContinuousCuspidalAutomorphicZeroAddSmuStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemSmoothOfChartDerivativesAtIdentity
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsBoundedContinuousCuspidalAutomorphicZeroAddSmu
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.KernelOperatorIntegrableContinuousSmooth
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCuspidalArchimedeanKernelConvolutionOperator
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RapidlyDecreasingKernelMulAdjointConjCoefficient
@@ -68,9 +68,9 @@ variable (E a) in
 
 def bccSub : Submodule ℂ (GA E a → ℂ) where
   carrier := {F | IsBCC F}
-  zero_mem' := (GlobalTheory.T.isBoundedContinuousCuspidalAutomorphic_zero_add_smul E a).1
-  add_mem' {F G} hF hG := by simpa using (GlobalTheory.T.isBoundedContinuousCuspidalAutomorphic_zero_add_smul E a).2 1 F G hF hG
-  smul_mem' c F hF := by simpa using (GlobalTheory.T.isBoundedContinuousCuspidalAutomorphic_zero_add_smul E a).2 c F 0 hF (GlobalTheory.T.isBoundedContinuousCuspidalAutomorphic_zero_add_smul E a).1
+  zero_mem' := (_root_.GlobalTheory.JSW.isBCC_zero_and_add E a).1
+  add_mem' {F G} hF hG := by simpa using (_root_.GlobalTheory.JSW.isBCC_zero_and_add E a).2 1 F G hF hG
+  smul_mem' c F hF := by simpa using (_root_.GlobalTheory.JSW.isBCC_zero_and_add E a).2 c F 0 hF (_root_.GlobalTheory.JSW.isBCC_zero_and_add E a).1
 
 def dSub (π : CuspSub E a) : Submodule ℂ (Sm E a) :=
   ⨅ l : List (Lie E a), (mspanR π ⊓ bccSub E a).comap ((Sm E a).subtype ∘ₗ GlobalTheory.GLFin.word l)
@@ -151,7 +151,7 @@ theorem kerOp_mem_dSub {π : CuspSub E a} {φ : Sm E a} (hφ : φ ∈ dSub π) {
     exact ⟨fun p => kerOp ν (fun x => k x * adCoef (γ x) p) γ (lie E a (lieBasis E a p.1) φ).1,
       fun p => ⟨X, _, ν, inferInstance, _, γ, _, _root_.GlobalTheory.JSW.isRapidInf_mul_adCoef E a X ν k γ hk p, lie_mem_dSub hφ _, rfl⟩,
       hasFDerivAt_kerOp ν k γ hk φ hb hd⟩
-  have hSm : ∀ f ∈ K, f ∈ Sm E a := GlobalTheory.T.mem_smooth_of_chart_derivatives_at_identity E a K fun f hf => by
+  have hSm : ∀ f ∈ K, f ∈ Sm E a := _root_.GlobalTheory.SmOfDeriv.mem_Sm_of_hasFDerivAt E a K fun f hf => by
     obtain ⟨fs, h1, h2⟩ := hder f hf
     exact ⟨_, inferInstance, fs, fun p => lieCoord E a p.2, h1, h2⟩
   have hspan : Submodule.span ℂ K ≤ Sm E a := Submodule.span_le.2 hSm

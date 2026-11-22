@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasRigidCoords
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaCore
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeterminantConditionSpreadsFromGeometricPointStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeterminantConditionSpreadsFromGeometricPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLevelIsometryOfPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGrpPullbackSelf
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIsPELTripleOfDenseFibres
@@ -219,7 +219,7 @@ theorem exists_obj : ∀ {E : Type} [Field E] [NumberField E] [IsCMField E] {H :
   let g₀ : A →+* AlgebraicClosure K := i.comp g
   obtain ⟨hdet, I₀, hζ, hτ, hσ⟩ := geom_push oK m σ τ σc τc (AlgebraicClosure K) (spMap i) (g₀.comp (b.comp j))
     (by rw [hsK, ← Category.assoc, ← spMap_comp g i, ← spMap_comp]) (spMap g₀) (spMap_comp _ _)
-  refine ⟨GlobalTheory.T.determinantCondition_spreads_from_geometricPoint D A t.G t.act (b (j (baseKA l).ρ)) hab
+  refine ⟨_root_.GlobalTheory.SpreadOnePoint.detCond_of_point D A t.G t.act (b (j (baseKA l).ρ)) hab
     (by rw [← map_pow, ← map_pow, (baseKA l).ρ_sq, map_neg, map_neg, map_natCast, map_natCast]) hQ _ g₀ hdet k ρ, ?_⟩
   have : ConnectedSpace (Sp A) := inferInstanceAs (ConnectedSpace (PrimeSpectrum A))
   have := t.semi.smooth

@@ -3,8 +3,8 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ImportsAlt
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TiltUntiltAddEstimateLe
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UntiltFrobeniusSeriesRadiusSizeLaws
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UntiltFrobeniusLaurentSeriesAddSubLe
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TiltFrobeniusIntegerPowerLawsStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TiltUntiltToComplexPAdicBasicLawsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TiltFrobeniusIntegerPowerLaws
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TiltUntiltToComplexPAdicBasicLaws
 open Formalism.Per GlobalTheory.PSer
 open scoped Formalism.Per
 
@@ -14,7 +14,7 @@ theorem untiltFrobeniusLaurentSeries_zero (l : ℕ) [Fact l.Prime] (h j : ℕ) :
   unfold lam
   have h0 : ∀ n : ℤ, (l : ℂ_[l]) ^ (-n) * sh (pw (n * h + j) (0 : Fl l)) = 0 := by
     intro n
-    rw [(GlobalTheory.T.tiltFrobeniusIntegerPower_laws l).2.2.1, (GlobalTheory.T.tiltUntiltToComplexPAdic_basic_laws l).2.1, mul_zero]
+    rw [(_root_.GlobalTheory.PSer.PwLaws.pw_laws l).2.2.1, (_root_.GlobalTheory.PSer.Laws.sh_laws l).2.1, mul_zero]
   simp only [h0, tsum_zero]
 
 theorem norm_add_three_le {l : ℕ} [Fact l.Prime] (a b c : ℂ_[l]) (C : ℝ)
@@ -29,7 +29,7 @@ theorem untiltFrobeniusLaurentSeries_nsmul_approx (l : ℕ) [Fact l.Prime] (h j 
     mul_nonneg (norm_nonneg _) (_root_.GlobalTheory.gam_laws l h j r hh hr0 hr1).2.2.1
   induction m with
   | zero =>
-    simp only [zero_smul, Nat.cast_zero, zero_mul, sub_zero, untiltFrobeniusLaurentSeries_zero, norm_zero, (GlobalTheory.T.tiltUntiltToComplexPAdic_basic_laws l).2.1]
+    simp only [zero_smul, Nat.cast_zero, zero_mul, sub_zero, untiltFrobeniusLaurentSeries_zero, norm_zero, (_root_.GlobalTheory.PSer.Laws.sh_laws l).2.1]
     exact ⟨hr0, hC⟩
   | succ m ih =>
     obtain ⟨ih1, ih2⟩ := ih
@@ -52,7 +52,7 @@ theorem untiltFrobeniusLaurentSeries_finset_sum_approx (l : ℕ) [Fact l.Prime] 
     mul_nonneg (norm_nonneg _) (_root_.GlobalTheory.gam_laws l h j r hh hr0 hr1).2.2.1
   induction s using Finset.induction_on with
   | empty =>
-    simp only [Finset.sum_empty, untiltFrobeniusLaurentSeries_zero, sub_zero, norm_zero, (GlobalTheory.T.tiltUntiltToComplexPAdic_basic_laws l).2.1]
+    simp only [Finset.sum_empty, untiltFrobeniusLaurentSeries_zero, sub_zero, norm_zero, (_root_.GlobalTheory.PSer.Laws.sh_laws l).2.1]
     exact ⟨hr0, hC⟩
   | insert a s ha ih =>
     obtain ⟨ih1, ih2⟩ := ih

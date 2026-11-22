@@ -9,8 +9,8 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsMatrixOfIs
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MemRangeOfOneTmulMem
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CompletedLatticeIntegralityFacts
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsAdelicUnitarySplitPlaceComponent
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemHyperspecialOfSplitPlaceStabilizerStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SupportedSubgroupSplitCommutePrimeIdempotentsStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemHyperspecialOfSplitPlaceStabilizer
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SupportedSubgroupSplitCommutePrimeIdempotents
 
 namespace GlobalTheory.SplitLabel
 
@@ -129,9 +129,9 @@ theorem split_label : ∀ {D : D7} (V : HSp D) (P : HeightOneSpectrum (𝓞 D.ho
     rw [smul_mul_congr_left _ ha B, Matrix.mul_assoc, smul_mul_congr_right _ hCB B', Matrix.mul_one]
   have hs := stab_of_bases (finPart D e) hε {y | y ∈ LamHat V} {z | IntVec z} hAB
     (fun z hz => hB1 z hz) (fun y hy => hB2 y hy) (fun z hz => hB1' z hz) (fun y hy => hB2' y hy)
-  have haK : a ∈ KsphC V ∅ := GlobalTheory.T.mem_hyperspecial_of_split_place_stabilizer V e a he.1 haS hs.1 hs.2
-  obtain ⟨hf1, hf2, -⟩ := (GlobalTheory.T.supported_subgroup_split_commute_primeIdempotents V).2.2.1 P e (e + cA D e) (Or.inl ⟨he, rfl⟩)
-  obtain ⟨L, hL⟩ := ((GlobalTheory.T.supported_subgroup_split_commute_primeIdempotents V).1 _ hf1 hf2).1
+  have haK : a ∈ KsphC V ∅ := _root_.GlobalTheory.SplitStab.mem_ksph_of_split V e a he.1 haS hs.1 hs.2
+  obtain ⟨hf1, hf2, -⟩ := (_root_.GlobalTheory.IdemSupport.supported_group_and_prime_idempotents V).2.2.1 P e (e + cA D e) (Or.inl ⟨he, rfl⟩)
+  obtain ⟨L, hL⟩ := ((_root_.GlobalTheory.IdemSupport.supported_group_and_prime_idempotents V).1 _ hf1 hf2).1
   have hbS : Formalism.L2.Theta.SuppAt e V ((a * α)⁻¹ * α') :=
     (hL _).1 (L.mul_mem (L.inv_mem (L.mul_mem ((hL _).2 haS) ((hL _).2 hα))) ((hL _).2 hα'))
   have hN : finMat D.sp.cm.sig V.gram (a * α)⁻¹ *
@@ -146,7 +146,7 @@ theorem split_label : ∀ {D : D7} (V : HSp D) (P : HeightOneSpectrum (𝓞 D.ho
     (fun z hz => change_unif V P e ϖ ϖ' _ he h1 h2 h1' h2' z hz)
     (fun z hz => change_unif V P e ϖ' ϖ _ he h1' h2' h1 h2 z hz)
     (fun y hy => hB3 y hy) (fun z hz => hB4 z hz) (fun y hy => hB3' y hy) (fun z hz => hB4' z hz)
-  have hbK : (a * α)⁻¹ * α' ∈ KsphC V ∅ := GlobalTheory.T.mem_hyperspecial_of_split_place_stabilizer V e _ he.1 hbS ht.1 ht.2
+  have hbK : (a * α)⁻¹ * α' ∈ KsphC V ∅ := _root_.GlobalTheory.SplitStab.mem_ksph_of_split V e _ he.1 hbS ht.1 ht.2
   exact ⟨a, ⟨haK, haS⟩, _, ⟨hbK, hbS⟩, by rw [mul_inv_cancel_left]⟩
 
 end GlobalTheory.SplitLabel

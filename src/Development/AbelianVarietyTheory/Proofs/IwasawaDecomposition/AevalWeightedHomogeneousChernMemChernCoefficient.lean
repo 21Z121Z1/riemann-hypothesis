@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SumSumEqSumPair
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TracePowerProductRealSpanMulMem
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CoeffCharpolyRevMemTracePowerProductRealSpanStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CoeffCharpolyRevMemTracePowerProductRealSpan
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TracePowerListProductMemChernCoefficientRealSpanStatement
 
 set_option autoImplicit false
@@ -56,7 +56,7 @@ theorem aeval_chern_mem_reach {ι : Type} [Fintype ι] (m : ι → ℕ) (n : ℕ
     have hdeg : Finsupp.weight Prod.snd d = n := hR (mem_support_iff.mp hd)
     have hprod := prod_mem_trSpan m S d.support (fun x => d x * x.2)
       (fun x (A : Mat m S) => (Matrix.charpolyRev (-(A x.1))).coeff x.2 ^ d x)
-      (fun x _ => pow_mem_trSpan m S x.2 _ (GlobalTheory.T.coeff_charpolyRev_mem_tracePowerProductRealSpan m S x.1 x.2) (d x))
+      (fun x _ => pow_mem_trSpan m S x.2 _ (_root_.GlobalTheory.GoodMetric.ChernSpan.coeff_charpolyRev_mem_trSpan m S x.1 x.2) (d x))
     have hw : ∑ x ∈ d.support, d x * x.2 = n := by
       rw [← hdeg, Finsupp.weight_apply, Finsupp.sum]
       simp [smul_eq_mul]

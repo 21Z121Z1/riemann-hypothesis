@@ -6,8 +6,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtTraceChartIndepS
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContDiffOnExtTrace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DdcEqOfLocalEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DdcOfValuesEqStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernAtTwoEqStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OfValuesMulOfValuesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernAtTwoEq
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OfValuesMulOfValues
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstChernIsometricEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankTwoFlagRationalSections
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetMetricShortExactIsoIsometric
@@ -197,7 +197,7 @@ theorem ddc_omF : (hX.atlas σ).ddc (fld _ (omF hX σ h fl)) =
         wedge (chernOne (GlobalTheory.IndefiniteRowSideFullHecke.HermitianCurvatureForms.gramS (midIn (hseq hX σ h H fl) (frameAt fl x.pt) x.1.1)) x.crd)
           (chernOne (GlobalTheory.IndefiniteRowSideFullHecke.HermitianCurvatureForms.gramQ (midIn (hseq hX σ h H fl) (frameAt fl x.pt) x.1.1)) x.crd) ξ₁ η₁ ξ₂ η₂ := by
     funext ξ₁ η₁ ξ₂ η₂; exact hc ξ₁ η₁ ξ₂ η₂
-  rw [hd, ofValuesTwo_sub, ← GlobalTheory.T.chernAt_two_eq_ofValuesTwo_chernTwo, ← GlobalTheory.T.ofValues_mul_ofValues']
+  rw [hd, ofValuesTwo_sub, ← _root_.GlobalTheory.SecForm.chernAt_two_eq, ← _root_.GlobalTheory.SecForm.ofValues_mul_ofValues]
   simp only [fld, Pi.sub_apply, Pi.mul_apply, c1F_grLB_zero_eq_chernOne_subGram hX σ h H fl x, c1F_grLB_one_eq_chernOne_quotGram hX σ h H fl x]
   rfl
 

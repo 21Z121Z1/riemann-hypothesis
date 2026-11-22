@@ -1,8 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.BlockAnti
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ExistsIsFolnerUWset
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnimodularBesselSubgroupsUWNStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HcTypeWIrreducibleAndSchurAverageStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnimodularBesselSubgroupsUWN
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HcTypeWIrreducibleAndSchurAverage
 
 noncomputable section
 
@@ -171,7 +172,7 @@ theorem one_piece : ∀ (k r : ℕ) {Wp : Type} [NormedAddCommGroup Wp] [InnerPr
             unfold rmulM
             exact continuous_matrix_of.matrix_mul continuous_const
           have hinv : μN.map (conjM (Matrix.of h)) = μN :=
-            ((GlobalTheory.T.unimodular_besselSubgroups_UW_N k r z hz hT μN).2.1 hN).2 _ hh
+            ((_root_.GlobalTheory.SgInf.unimodular_S_N_UW k r z hz hT μN).2.1 hN).2 _ hh
           calc ∫⁻ n, f (lmulM (Matrix.of h * Matrix.of n) x) ∂μN
               = ∫⁻ n, f (rmulM (Matrix.of h * Matrix.of x) (conjM (Matrix.of h) n)) ∂μN :=
                 lintegral_congr fun n => congrArg f (key n)
@@ -202,7 +203,7 @@ theorem one_piece : ∀ (k r : ℕ) {Wp : Type} [NormedAddCommGroup Wp] [InnerPr
           _ = Vol * ∫⁻ h, (‖⟪w, π (Matrix.of h) (Φ (Matrix.of x))⟫_ℂ‖₊ : ℝ≥0∞) ^ 2 ∂μW :=
               lintegral_const_mul'' _ hAEM
           _ = Vol * ENNReal.ofReal (‖w‖ ^ 2 * ‖Φ (Matrix.of x)‖ ^ 2 / Module.finrank ℂ Wp) := by
-              rw [(GlobalTheory.T.hcTypeW_irreducible_and_schur_average k r z π hz hT).2 μW hU hI hW hW1 w (Φ (Matrix.of x))]
+              rw [(_root_.GlobalTheory.Amp.Schur.type_irred_and_avg k r z π hz hT).2 μW hU hI hW hW1 w (Φ (Matrix.of x))]
           _ = Vol * (Module.finrank ℂ Wp : ℝ≥0∞)⁻¹ * Q.indicator B x := by
               rw [hB, hw, ofReal_one_sq_mul_norm_sq_div _ _ hd, mul_assoc]
       · refine zero_case fun h hh n hn => ?_

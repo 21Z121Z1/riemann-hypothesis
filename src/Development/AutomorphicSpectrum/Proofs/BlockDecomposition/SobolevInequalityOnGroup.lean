@@ -2,7 +2,7 @@ import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.WaveSt
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DwCons
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PoincareValueBoundOnCube
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivativeAsRightWordsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivativeAsRightWords
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HaarChartIntegralComparison
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LengthContinuousProperSublevelStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartAndRightWordsSmoothStatement
@@ -21,7 +21,7 @@ theorem bound_on_cube (n : ℕ) (Q : Set (Idx n → ℝ)) (hQc : IsCompact Q) (h
     (L : List (Idx n)) : ∃ (W : Finset (List (Idx n))) (B : ℝ), 0 ≤ B ∧
       ∀ (V : Type) [NormedAddCommGroup V] [NormedSpace ℂ V] (f : Mat n → V), ContDiffOn ℝ ∞ f (GLs n) →
         ∀ t ∈ Q, ‖Dw L f (1 + cm t)‖ ^ 2 ≤ B * ∑ w ∈ W, ‖Rw w f (1 + cm t)‖ ^ 2 := by
-  obtain ⟨m, c, w, hc, hrep⟩ := GlobalTheory.T.derivative_as_right_words n L
+  obtain ⟨m, c, w, hc, hrep⟩ := _root_.GlobalTheory.CompanionTheory.SobGL.Expand.Dw_eq_comb n L
   obtain ⟨-, hcm, -, -⟩ := GlobalTheory.T.chart_and_right_words_smooth n
   have hK : IsCompact ((fun t => 1 + cm t) '' Q) := hQc.image (continuous_const.add hcm)
   have hKsub : (fun t => 1 + cm t) '' Q ⊆ GLs n := by

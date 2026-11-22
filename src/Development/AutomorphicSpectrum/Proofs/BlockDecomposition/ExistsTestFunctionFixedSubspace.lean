@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Cu
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.NotIsFinitePartOfBot
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsTestZero
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsNonnegTestFunctionNearOne
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TestFunctionContinuousCompactSupportStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TestFunctionContinuousCompactSupport
 open NumberField MeasureTheory Topology Matrix GlobalTheory.AutomorphicL2Unitary GlobalTheory.DiscreteSum GlobalTheory.OpTrace GlobalTheory.UnitaryBC GlobalTheory.DiscSpec GlobalTheory.CuspRep GlobalTheory.CuspRep.CuspidalL2GL GlobalTheory.CompanionTheory.SmoothRep
 open scoped ContDiff
 
@@ -47,7 +47,7 @@ theorem exists_isTest_Rop_injective : ∀ (E : Type) [Field E] [NumberField E] [
     simpa [Metric.closedBall, dist_zero_right] using h2
   obtain ⟨β₀, h0, hpos, htest, hconj, hsupp⟩ := _root_.GlobalTheory.CompanionTheory.SmoothRep.exists_bump_conjInv E a _ hN
   refine ⟨fun x => (β₀ x : ℂ), htest, hconj, fun v hv hRv => ?_⟩
-  obtain ⟨hc, hcs⟩ := GlobalTheory.T.test_function_continuous_compact_support E a U hU hUc _ htest
+  obtain ⟨hc, hcs⟩ := _root_.GlobalTheory.CompanionTheory.SmoothRep.continuous_hasCompactSupport_tst E a U hU hUc _ htest
   set f := tst U (fun x => (β₀ x : ℂ)) with hf
   set fr : GA E a → ℝ := fun g => (f g).re with hfr
   have hf_eq : ∀ g, f g = (fr g : ℂ) := by

@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaSystemHas
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ClassicalPointsAndLocalRegularity
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.MemSupIIffAndHHEqKer
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsLocalHomOfTest
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsLocalThetaSectionFibreNonzeroStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsLocalThetaSectionFibreNonzero
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SecGenericEqMulTheta
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsGenericFibreSectionOfModelSection
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsGeneratorNormalisedMulByNIsoStatement
@@ -149,7 +149,7 @@ theorem exists_theta_div : (∀ (T K : Type) [CommRing T] [IsDomain T] [IsDiscre
   haveI : Algebra.FiniteType ℤ o := ArithBase.ft (Ω := Ω)
   haveI : CharZero Ω := ArithBase.char (o := o)
   haveI : JacobsonSpace M.Z := (classical_points_and_local_regularity o Ω M U₀ ov.normal).2
-  obtain ⟨N₀, σ₀, hzN₀, hσ₀, hne₀⟩ := GlobalTheory.T.exists_localThetaSection_fibreNonzero o Ω S ρ M U₀ Q hLoc z
+  obtain ⟨N₀, σ₀, hzN₀, hσ₀, hne₀⟩ := _root_.GlobalTheory.ZH.LocThetaConv.exists_secFam_fibNe o Ω S ρ M U₀ Q hLoc z
   obtain ⟨c₀, hc₀⟩ := Q.exists_thMul h1 h2 ov N₀ σ₀ hσ₀ ⟨z, hzN₀⟩
   have hext : ∀ (z' : M.Z), ∀ b ∈ S.HH M z', ∃ (Wb : M.Z.Opens) (hb : Wb.toScheme ⟶ Q.G.left) (wb : Wb.toScheme),
       Q.ExtPt b Wb hb ∧ Wb.ι wb = z' ∧ Q.FrameUnit b Wb hb wb := by

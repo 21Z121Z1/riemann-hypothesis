@@ -9,13 +9,13 @@ import Formalism.LocalToGlobal.Divisibility.ProjLemmas
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SignAtBasePlaceEqEmbedding
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjMapMemMult
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodPartFullEqKilled
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsometryMatchingLatticesMatchesSphericalOpsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsometryMatchingLatticesMatchesSphericalOps
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLabelThetaLiftSpaceIffDual
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaLiftLevelsGoodPrimesProperties
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LevelOperatorsAtPrimeOffLevelDatumStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsSphericalOperatorsRowsNormalEigenspacesStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalOperatorsFormsOnRankSpaceNormalStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LevelOperatorsAtPrimeOffLevelDatum
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsSphericalOperatorsRowsNormalEigenspaces
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalOperatorsFormsOnRankSpaceNormal
 
 noncomputable section
 
@@ -82,7 +82,7 @@ theorem lab_dual (h : Core R F) (i : Fin D.R.m) {Q : Pl D.host.E} (hQ : Good R A
 theorem rel_of_E (h : Core R F) (hS : SchurAll R) {SF} (hSF : IsSF R SF) (i : Fin D.R.m) {c : Pl D.host.E → List ℤ → ℂ} {x : R.HE.H}
     (hx : x ∈ EEc R SF c) (h0 : x ≠ 0) {Q : Pl D.host.E} (hQ : Good R A.μ0 Q) {d : List ℤ} (hd : IsLab (Yc D 0) Q d) :
     star (c Q (dualLab d)) = c Q d := by
-  obtain ⟨o, -, hN, -, hev, -⟩ := GlobalTheory.T.exists_sphericalOperators_rows_normal_eigenspaces R F h hS SF hSF
+  obtain ⟨o, -, hN, -, hev, -⟩ := _root_.GlobalTheory.Hk3.OpsRows.exists_opsE R F h hS SF hSF
   have hdd := (lab_dual h i hQ hd).1
   have h1 := hev c Q hQ (Finsupp.single d 1) x hx
   have h2 := hev c Q hQ (Finsupp.single (dualLab d) 1) x hx
@@ -94,7 +94,7 @@ theorem unitary_relation_labels_of_W_eigenvector (h : Core R F) (hS : SchurAll R
     {c : Pl D.host.E → List ℤ → ℂ} {x : (R.HW i (sg0 D A)).H}
     (hx : x ∈ Wcc R SF i c) (h0 : x ≠ 0) {Q : Pl D.host.E} (hQ : Good R A.μ0 Q) {d : List ℤ} (hd : IsLab (Yc D 0) Q d) :
     star (c Q (dualLab d)) = c Q d := by
-  obtain ⟨o, -, hN, -, -, -, hev, -⟩ := GlobalTheory.T.sphericalOperators_forms_on_rank_space_normal R F h hS hI SF hSF i
+  obtain ⟨o, -, hN, -, -, -, hev, -⟩ := _root_.GlobalTheory.SphOpsModel.sphericalOperators_forms_on_rank_space_normal_alt R F h hS hI SF hSF i
   obtain ⟨-, hw, hwd⟩ := lab_dual h i hQ hd
   have h1 := hev c Q hQ (Finsupp.single (dualLab d) 1) x hx
   have h2 := hev c Q hQ (Finsupp.single d 1) x hx
@@ -121,7 +121,7 @@ theorem hecke_Y (h : Core R F) {SF} (hSF : IsSF R SF) {Q : Pl D.host.E} (hQ : Go
       GlobalTheory.Hk3.SphOp (Yc D 0) Q d B := by
   obtain ⟨c, hc⟩ := h.lev.βY 0 (lt_of_lt_of_le two_pos D.R.two_le_m)
   obtain ⟨-, -, hoff, -⟩ := _root_.GlobalTheory.GoodPrimes.good_primes R F h.lev
-  rw [(GlobalTheory.T.level_operators_at_prime_off_level_datum (Yc D 0) (R.βY 0) (R.ΛY 0) _ (R.dat0 R.triv) hc Q (good_Y h hQ c)
+  rw [(_root_.GlobalTheory.LevOp.level_operators (Yc D 0) (R.βY 0) (R.ΛY 0) _ (R.dat0 R.triv) hc Q (good_Y h hQ c)
     (fun PP hPP => hQ PP (Or.inl (hPP.resolve_right (Finset.notMem_empty _))))).2.1 SF d B]
   exact ⟨fun x => x.2, fun x => ⟨(hoff SF hSF Q).2 hQ, x⟩⟩
 
@@ -131,7 +131,7 @@ theorem isHeckeOpFull_iff_sphOp (h : Core R F) {SF} (hSF : IsSF R SF) (i : Fin D
       GlobalTheory.Hk3.SphOp (Wc D i) Q d B := by
   obtain ⟨c, hc⟩ := h.lev.βW i
   obtain ⟨-, -, hoff, -⟩ := _root_.GlobalTheory.GoodPrimes.good_primes R F h.lev
-  rw [(GlobalTheory.T.level_operators_at_prime_off_level_datum (Wc D i) (R.βW i) (R.ΛW i) _ (R.datWp i R.triv) hc Q (one_pow_not_mem_height_one_asIdeal c)
+  rw [(_root_.GlobalTheory.LevOp.level_operators (Wc D i) (R.βW i) (R.ΛW i) _ (R.datWp i R.triv) hc Q (one_pow_not_mem_height_one_asIdeal c)
     (fun PP hPP => hQ PP (Or.inl (hPP.resolve_right (Finset.notMem_empty _))))).2.1 SF d B]
   exact ⟨fun x => x.2, fun x => ⟨(hoff SF hSF Q).2 hQ, x⟩⟩
 
@@ -152,7 +152,7 @@ theorem hecke_trans (h : Core R F) {SF} (hSF : IsSF R SF) (i : Fin D.R.m)
   · obtain ⟨c, hc⟩ := h.lev.βY 0 (lt_of_lt_of_le two_pos D.R.two_le_m)
     obtain ⟨c', hc'⟩ := h.lev.βW i
     rw [hecke_Y h hSF hQ, isHeckeOpFull_iff_sphOp h hSF i hQ]
-    exact GlobalTheory.T.isometry_matching_lattices_matches_spherical_ops (Yc D 0) (Wc D i) (R.βY 0) (R.βW i) R.Pg j Φ (R.ΛY 0) (R.ΛW i) _ _ hc hc' hΦ Q (good_Y h hQ c) (one_pow_not_mem_height_one_asIdeal c') d B
+    exact _root_.GlobalTheory.SphTrans.sphOp_iff (Yc D 0) (Wc D i) (R.βY 0) (R.βW i) R.Pg j Φ (R.ΛY 0) (R.ΛW i) _ _ hc hc' hΦ Q (good_Y h hQ c) (one_pow_not_mem_height_one_asIdeal c') d B
   · exact ⟨fun e => absurd (good_of_hecke h hSF e) hQ, fun e => absurd (good_of_hecke h hSF e) hQ⟩
 
 section Alg
@@ -222,13 +222,13 @@ theorem count (h : Core R F) (hD : CuspDecomp D) (hM : MultEq R) (i : Fin D.R.m)
     GlobalTheory.CuspMult.CutFull.good_partFull_eq_killed R.θ (R.MW i (sg0 D A)) (R.βW i) (R.datWp i R.triv) R.eG
     (RealDat.eC (A := A) (sg0 D A)) P SF a rfl rfl (liftsW' h i)
   have e3 : RealDat.eC (A := A) (sg0 D A) = RealDat.eC (A := A) D.what₂.embLL := by rw [sign_at_base_place_eq_embedding R]
-  have hl := GlobalTheory.T.isometry_matches_parahoric_levels (Yc D 0) (Wc D i) (R.βY 0) (R.βW i) D.R.r D.R.t (r_le_Y 0) (r_le_rank_Wc i) R.Pg R.chi
+  have hl := _root_.GlobalTheory.LevTrans.levtrans (Yc D 0) (Wc D i) (R.βY 0) (R.βW i) D.R.r D.R.t (r_le_Y 0) (r_le_rank_Wc i) R.Pg R.chi
     (fun _ _ => 1) j Φ hΦ
   have e4 : killed ((finRep (R.MW i (sg0 D A))).comp Φ.toMulEquiv.toMonoidHom : Representation ℂ (GfC (Yc D 0)) _)
         (eqSet (Yc D 0) (R.βY 0) (R.dat0 R.triv) R.eG (RealDat.eC (A := A) D.what₂.embLL) P (∅ : Set Empty) Empty.elim Empty.elim Empty.elim) =
       killed (finRep (R.MW i (sg0 D A))) (eqSet (Wc D i) (R.βW i) (R.datWp i R.triv) R.eG
         (RealDat.eC (A := A) D.what₂.embLL) P (∅ : Set Empty) Empty.elim Empty.elim Empty.elim) :=
-    GlobalTheory.T.levelTypeHecke_killed_correspond_matching_iso (Yc D 0) (Wc D i) (R.βY 0) (R.βW i) D.R.r D.R.t (r_le_Y 0) (r_le_rank_Wc i) R.Pg R.chi (fun _ _ => 1) Φ R.eG _ P
+    _root_.GlobalTheory.CuspMult.EqTrans.killed_eqSet_comp (Yc D 0) (Wc D i) (R.βY 0) (R.βW i) D.R.r D.R.t (r_le_Y 0) (r_le_rank_Wc i) R.Pg R.chi (fun _ _ => 1) Φ R.eG _ P
       (∅ : Set Empty) Empty.elim Empty.elim Empty.elim _ _ hrk (fun κ => (hl κ).1) (fun κ => (hl κ).2) (fun P0 => P0.elim)
   have e5 := killed_union_comp (finRep (R.MW i (sg0 D A))) Φ.toMulEquiv e4
     (fun Q d B => Hecke₂ (Yc D 0) (levS _ (R.βY 0) (R.dat0 R.triv)) (levChi _ (R.βY 0) (R.dat0 R.triv)) SF Q d
@@ -238,7 +238,7 @@ theorem count (h : Core R F) (hD : CuspDecomp D) (hM : MultEq R) (i : Fin D.R.m)
   rw [e1] at f1 ⊢
   rw [e2, e3] at f2 ⊢
   erw [← e5] at f2 ⊢
-  refine GlobalTheory.T.finrank_killed_eq_of_equal_multiplicities _ _ _ (finRep M₀) _ _ _ _ (hD R.θ h.models.inf _ _ M₀)
+  refine _root_.GlobalTheory.RepCount.finrank_inf_killed_eq _ _ _ (finRep M₀) _ _ _ _ (hD R.θ h.models.inf _ _ M₀)
     (_root_.GlobalTheory.CuspMult.isDecomp_comp_equiv _ _ _ _ _ Φ (hD R.θ h.models.inf _ _ (R.MW i (sg0 D A)))) ?_
     (fun x hx => isOpen_stab rfl rfl (killed_le_left _ _ _ hx)) (fun x hx => isOpen_stab rfl rfl (killed_le_left _ _ _ hx)) f1 f2
   intro W _ _ σ h1 h2 h3

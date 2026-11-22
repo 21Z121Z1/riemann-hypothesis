@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.St
 import GroundTheory.AutomorphicForms.MultiplicityOne.Injective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicGLComplementarySupportsCommute
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormModerateGrowthCompact
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GlobalWhittakerCoefficientLinearArchimedeanKerneStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GlobalWhittakerCoefficientLinearArchimedeanKerne
 
 noncomputable section
 
@@ -40,7 +40,7 @@ theorem whit_rel_locSpan : ∀ (E : Type) [Field E] [NumberField E] [IsTotallyCo
   have hreg := _root_.GlobalTheory.JSW.MirSemi.locSpan_continuous_moderate E a S π φ hφ
   have hlin : ∀ F ∈ locSpan S φ.1, ∀ G ∈ locSpan S φ.1, ∀ (c' : ℂ) (g : GA E a),
       whit (fun x => F x + c' * G x) g = whit F g + c' * whit G g := fun F hF G hG =>
-    (GlobalTheory.T.globalWhittakerCoefficient_linear_archimedeanKernel E a F G (hreg F hF).1 (hreg G hG).1 (hreg F hF).2 (hreg G hG).2).1
+    (_root_.GlobalTheory.JSW.WhitAlg.whit_linear_kerInf E a F G (hreg F hF).1 (hreg G hG).1 (hreg F hF).2 (hreg G hG).2).1
   let V : Submodule ℂ (GA E a → ℂ) :=
     { carrier := {F | F ∈ locSpan S φ.1 ∧ ∀ x ∈ supS E a S, whit F (x * t) = c * whit F x}
       add_mem' := by
@@ -63,7 +63,7 @@ theorem whit_rel_locSpan : ∀ (E : Type) [Field E] [NumberField E] [IsTotallyCo
       exact hF' (x * h) (mul_mem_supS' hx hh)
     · rintro F ⟨hF, hF'⟩ X _ ν _ k γ hk
       refine ⟨kerInf_mem_locSpan hF ν hk, fun x hx => ?_⟩
-      have hker := (GlobalTheory.T.globalWhittakerCoefficient_linear_archimedeanKernel E a F F (hreg F hF).1 (hreg F hF).1 (hreg F hF).2 (hreg F hF).2).2 X ν k γ hk
+      have hker := (_root_.GlobalTheory.JSW.WhitAlg.whit_linear_kerInf E a F F (hreg F hF).1 (hreg F hF).1 (hreg F hF).2 (hreg F hF).2).2 X ν k γ hk
       rw [hker, hker, ← integral_const_mul]
       congr 1
       funext y

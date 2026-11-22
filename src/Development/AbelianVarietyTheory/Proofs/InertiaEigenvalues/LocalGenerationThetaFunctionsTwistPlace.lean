@@ -1,13 +1,13 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasShape
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaCoefficientIsSchwartzBruhatUniformSplitStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaCoefficientIsSchwartzBruhatUniformSplit
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitPlaceInvariantFormsSeparateThetaFunctionsStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsLocalTranslatesSpanPrescribedCoefficient
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemSpanTranslatesConjugateHalfTwistPlace
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaFunctionMemSpanOfCoefficientSpanStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaShapeRelationDropSplitPlaceStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ProductDatumThetaHasShapeAdjointPlaceStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalHeisenbergSpanPreservesTypeRelationsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaFunctionMemSpanOfCoefficientSpan
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaShapeRelationDropSplitPlace
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ProductDatumThetaHasShapeAdjointPlace
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalHeisenbergSpanPreservesTypeRelations
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionLiftPairStepVectorInvLevelChar
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EvalVAlgebraMapMem
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PadOneMemSecondBlockTriangular
@@ -147,13 +147,13 @@ theorem step_of_shape (R : RealDat D A Ks) (hW : R.thP_ωP) (i : Fin D.R.m) (t :
       coef R.ψ (Vc D i) (Wc D i) a ℓ f ∈ Submodule.span ℂ (translT (Vc D i) (Wc D i) a Φ)) :
     f ∈ Submodule.span ℂ (StepGen R i t (dropPl Sb v)) := by
   have hψ := (hW i t).std
-  refine GlobalTheory.T.thetaFunction_mem_span_of_coefficientSpan D R.ψ _ _ hψ a ha f hT.1 _ _ ?_ ?_ hsp
+  refine _root_.GlobalTheory.DownLift.SplitCoef.Decomp.mem_span_of_coef_mem_span D R.ψ _ _ hψ a ha f hT.1 _ _ ?_ ?_ hsp
   · rintro _ ⟨g, f', h1, -, -, rfl⟩
     exact (hW i t).om_pres _ _ h1.1
   · rintro _ ⟨g, hg, rfl⟩ x₁ hx₁
     obtain ⟨f', hf', H⟩ := _root_.GlobalTheory.DownLift.SplitCoef.exists_locSpan_coef_eq D R.ψ _ _ hψ ΛS ΛT dS dT a ha f hT.1 Φ hΦ x₁ hx₁
-    obtain ⟨p1, p2, p3⟩ := GlobalTheory.T.localHeisenbergSpan_preserves_type_relations D G Pl0 T A Ks R hW i t Sb v hv ε a hε hae f hT hC hL f' hf'
-    have p4 := GlobalTheory.T.thetaShapeRelation_drop_splitPlace D G Pl0 T A Ks R hψ i t Sb v ε a ha hε hae hth Φ f' hs
+    obtain ⟨p1, p2, p3⟩ := _root_.GlobalTheory.DownLift.PlaceTranslate.locSpan_pres D G Pl0 T A Ks R hW i t Sb v hv ε a hε hae f hT hC hL f' hf'
+    have p4 := _root_.GlobalTheory.DownLift.SplitRel.likeOff_dropPl D G Pl0 T A Ks R hψ i t Sb v ε a ha hε hae hth Φ f' hs
       (fun ℓ hℓ => ⟨_, fun x hx => (H ℓ hℓ x hx).trans (mul_comm _ _)⟩) p3
     have hg' : SuppAt a (Wc D i) g⁻¹ := suppAt_inv hg
     obtain ⟨s, hs0, E⟩ := om_form (hW i t) ha (suppAt_one a (Vc D i)) hg'
@@ -221,7 +221,7 @@ theorem step_twist : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 T : Type
   have hne : ∀ PP' ∈ R.Pg, PP' ≠ PP := fun PP' h h' => hPg PP' h (h' ▸ hov)
   have hs : HasShape R.ψ (Vc D i) (Wc D i) (cA D (es PP))
       (adjDat (Vc D i) (Wc D i) (R.βV i) (R.βW i) (es PP) (omegaQ {PP} (Wc D i).rank (R.xiR t) (-1))) (R.vP i t) := by
-    refine GlobalTheory.T.productDatumTheta_hasShape_adjoint_place D R.ψ _ _ hψ _ _ dS dT (R.βV i) (R.βW i) P e (es PP) PP he hPP' h0 _
+    refine _root_.GlobalTheory.DownLift.ProdShape.hasShape_adjDat D R.ψ _ _ hψ _ _ dS dT (R.βV i) (R.βW i) P e (es PP) PP he hPP' h0 _
       (fun y => omegaK R.Pg y * omegaQ ((R.Q t).erase PP) (Wc D i).rank (R.xiR t) (-1) y)
       (fun y y' h => GlobalTheory.PlaceVec.omegaQ_congr _ _ _ _ fun P' hP' => by rw [Finset.mem_singleton.1 hP']; exact h)
       (fun y y' h => ?_) (R.vacP i) _ hvac.2.theta ?_
@@ -242,7 +242,7 @@ theorem step_twist : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 T : Type
   obtain ⟨c, hB⟩ := hc.lev.βV i
   refine _root_.GlobalTheory.DownLift.ConjHalfGen.mem_span_translT D _ _ (R.βV i) (R.βW i) hr _ _ _ hB dS.1 dT.1 (es PP) PP h0 (R.xiR t)
     (GlobalTheory.ChainTw.RModel.xiR_ne R hc.lev t PP hPP) _
-    ((GlobalTheory.T.thetaCoefficient_isSchwartzBruhat_uniform_split D R.ψ _ _ hψ _ _ dS dT _ ha f hT.1).2.1 ℓ hℓ) fun κ k1 k2 k3 k4 _ x x' hx hx' => ?_
+    ((_root_.GlobalTheory.DownLift.SplitCoef.coef_isSBHalf_uniform D R.ψ _ _ hψ _ _ dS dT _ ha f hT.1).2.1 ℓ hℓ) fun κ k1 k2 k3 k4 _ x x' hx hx' => ?_
   have k5 : ∀ P' ∈ P, P' ≠ PP → redFn (R.βV i) P' (finE (Vc D i) κ) = 1 := fun P' h h' =>
     GlobalTheory.DiagLiftFix.redFn_eq_one_of_ne he hPP' h0 k1 k3 h h'.symm
   have hκ : κ ∈ levG (Vc D i) (R.βV i) (R.datVt i t) := by

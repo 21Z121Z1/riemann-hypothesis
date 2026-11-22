@@ -1,7 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KernelAtPrimeEqSumTorsionTranslates
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicValuationThetaKernelJetBound
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.JetsTorsionTranslatesCmThetaProductStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.JetsTorsionTranslatesCmThetaProduct
+import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
+import Formalism.PairingDivisors.StatementH
 open NumberField Classical Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.TaylorLogMetric Formalism.MainNotions.StandardLatticesGL3 GlobalTheory.NormSum
 open scoped BigOperators
 
@@ -38,7 +40,7 @@ theorem UpperTheory.WildA.cmbJet :
     contDiff_U_pullB D _ β _ (differentiable_evenTheta D ⊤ δ t0 hC) (s i) _]
   refine Bd.sum (by positivity) _ _ fun i _ => ?_
   refine (Bd.coe (hr i)).mul ?_
-  have := GlobalTheory.T.jets_torsion_translates_cm_theta_product D hI l lam ⊤ δ hC (by simp) t0 ht a b _ β hb hloc (s i) n
+  have := _root_.GlobalTheory.ProductJets.jets_translate_product D hI l lam ⊤ δ hC (by simp) t0 ht a b _ β hb hloc (s i) n
     hn (hs i) hsp _ y hy
   rw [hN] at this
   exact this

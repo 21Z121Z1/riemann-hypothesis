@@ -23,7 +23,7 @@ import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.MemNonzeroLocusVia
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.KeyInvariantBaseChange
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.KeyInvariantFromIntersectionUnique
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsL2ValFieldOrDvrSplitKernel
-import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.CmpValBaseChangeSimilitudeStatement
+import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.CmpValBaseChangeSimilitude
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.DiscriminantEqJacobianCompleteIntersectionDvrStatement
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj MeasureTheory
@@ -450,7 +450,7 @@ theorem exists_unit_kaVal (laws : Out.Laws) {O : Type} [CommRing O] [IsDomain O]
     refine ⟨b', lam, t, e, Units.mk0 _ hdl, fun j hj => ⟨?_, ?_⟩, ⟨fun i j j' => (m i j j').map f, fun i j hj i' => ?_, ?_⟩,
       Units.ext ?_⟩
     · exact (_root_.GlobalTheory.KeyBasis.main laws O x _ (hpos j hj)).2 (b j) (hb j hj).1 F f x' φ w (b' j) hx (hb' j)
-    · exact T.l2ComparisonNumber_baseChange_similitude_alt O F x x' f φ w _ _ rfl (b j) (b' j) (lam j) (hadm.2.2.2 _) hx (hb' j) (hb j hj).2
+    · exact _root_.GlobalTheory.SimilBaseChange.cmpVal_baseChange_similitude O F x x' f φ w _ _ rfl (b j) (b' j) (lam j) (hadm.2.2.2 _) hx (hb' j) (hb j hj).2
     · have h₅ : (j + 1) * n ≤ x.P.g * n := Nat.mul_le_mul_right n hj
       have h₆ : n + (k - (j + 1) * n) = k - j * n := by
         rw [Nat.add_mul, Nat.one_mul] at h₅ ⊢

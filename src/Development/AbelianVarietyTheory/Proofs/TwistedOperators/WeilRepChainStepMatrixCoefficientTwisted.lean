@@ -2,10 +2,10 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BorelParam
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IpOmOm
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LinearChangeOfVariablesLocalFieldMatrix
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParahoricDatumEigenvectorTwoBlockParahoricStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParahoricDatumEigenvectorTwoBlockParahoric
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemIntegralGLOfInParahoricDatumSupportMulBlockDi
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParahoricDatumTorusIntegrandEqIndicatorStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MeasureParahoricDatumSupportStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParahoricDatumTorusIntegrandEqIndicator
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MeasureParahoricDatumSupport
 
 open MeasureTheory ValuativeRel Matrix GlobalTheory.PRep GlobalTheory.SplitWeil GlobalTheory.SmGL GlobalTheory.Doubling GlobalTheory.GLDoubling GlobalTheory.IndefiniteRowSideFullHecke.VolumeFlatSection GlobalTheory.ZonalCellDecomposition GlobalTheory.SatakeBound
 
@@ -57,7 +57,7 @@ theorem part1 (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] [IsNona
   haveI := hν.1
   have hμ' : ∀ x, ‖((μ₀ * ξ) x : ℂ)‖ = 1 := fun x => by
     simp [MonoidHom.mul_apply, Units.val_mul, norm_mul, hξu x, hμn x]
-  have hL1 := GlobalTheory.T.parahoricDatum_eigenvector_twoBlockParahoric k A D E ξ μ₀ hξt hμu
+  have hL1 := _root_.GlobalTheory.DatumEigen.om_datum k A D E ξ μ₀ hξt hμu
   intro j hj d hd g
   have hu : (ξ d : ℂ) * starRingEnd ℂ (ξ d) = 1 := by
     rw [Complex.mul_conj, Complex.normSq_eq_norm_sq, hξu d]; simp
@@ -115,7 +115,7 @@ theorem part3 (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] [IsNona
       (μ ϖ : ℂ) ^ (∑ i, e i) * ((volAdd ν r * ((resCard k : ℝ) ^ (r * Fintype.card E))⁻¹ : ℝ) : ℂ) *
       (resCard k : ℂ) ^ (-((r + Fintype.card E : ℕ) : ℂ) / 2 * (sumAbs e : ℂ)) := by
   haveI := hν.1
-  obtain ⟨hS, hV⟩ := GlobalTheory.T.measure_parahoricDatumSupport k ν hν r D E
+  obtain ⟨hS, hV⟩ := _root_.GlobalTheory.SupportVolume.measure_support k ν hν r D E
   have q1 : 1 < Nat.card 𝓀[k] := Finite.one_lt_card
   have q0 : (0 : ℝ) < resCard k := by unfold resCard; exact_mod_cast (lt_trans one_pos q1)
   set Φ : Matrix (Fin r ⊕ E) (Fin r ⊕ D) k → ℂ := datum ξ with hΦ
@@ -133,7 +133,7 @@ theorem part3 (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] [IsNona
     ring
   have hB : ∀ x, Φ (x * m.val) * starRingEnd ℂ (Φ x) = S.indicator (fun _ => (1 : ℂ)) (x * m'.val) := by
     intro x
-    exact GlobalTheory.T.parahoricDatum_torus_integrand_eq_indicator k ϖ hϖ (Fin r) D E ξ hξu e x
+    exact _root_.GlobalTheory.TorusIntegrand.integrand k ϖ hϖ (Fin r) D E ξ hξu e x
   have hC := integral_comp_mul_mul_volM ν m' (1 : GL (Fin r ⊕ E) k) (S.indicator (fun _ => (1 : ℂ)))
   simp only [Units.val_one, Matrix.one_mul, map_one, h1, Real.one_rpow, one_mul] at hC
   have hI : ∫ x, S.indicator (fun _ => (1 : ℂ)) x ∂(volM ν (Fin r ⊕ E) (Fin r ⊕ D)) =

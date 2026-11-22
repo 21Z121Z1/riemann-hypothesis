@@ -7,8 +7,8 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LineMatrixKronec
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AbsSubOfDisjoint
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HighestWeightTensor
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SymmetrisationInjective
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DoublingIntegralJointHarmonicPosStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockSpaceContainsDiscreteSeriesTensorStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DoublingIntegralJointHarmonicPos
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockSpaceContainsDiscreteSeriesTensor
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LowestTypePositiveAndDecays
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PolarCoordinatesUnitaryPQDoubleCover
 import Formalism.SharpRestriction.Divisibility.SchurIrreducible
@@ -37,8 +37,8 @@ theorem exists_record (hD : DiscreteSeriesCover) (hH : HarishChandraModules) :
   have a7 : admQ7 := GlobalTheory.TensorHW.highestWeight_tensor
   have a8 : admQ8 := GlobalTheory.InducedPBW.pbw_induced
   have a4 : DiscreteSeriesPositivity X := GlobalTheory.SphJet.lowest_type_positive_and_decays X a3 a5 a7 a8
-  have h1 := GlobalTheory.T.doublingIntegral_jointHarmonic_pos X a1 a2 a3 a4 a5 a6 a7 a8
-  exact ⟨X, hX, h1, GlobalTheory.T.fockSpace_contains_discreteSeriesTensor X a1 a2 a3 a4 a5 a6 a7 a8 h1⟩
+  have h1 := _root_.GlobalTheory.DoublingPos.doubling_pos X a1 a2 a3 a4 a5 a6 a7 a8
+  exact ⟨X, hX, h1, _root_.GlobalTheory.FockTensor.fock_contains_tensor X a1 a2 a3 a4 a5 a6 a7 a8 h1⟩
 
 theorem itPair_of_rows (hD : DiscreteSeriesCover) (hH : HarishChandraModules) (D : D7)
     (hF : GlobalTheory.IndefiniteRowSideFullHecke.VacuumFockVectors.VacuumFock D) (hV : GlobalTheory.IndefiniteRowSideFullHecke.RaisingLoweringOperators.VacChar D)

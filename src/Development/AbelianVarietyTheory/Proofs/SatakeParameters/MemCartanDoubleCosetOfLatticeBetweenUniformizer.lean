@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RpowNegLeNormOfComponent
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsSatVecUOfIsSphericalU
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GlMapStandardLatticeEqIffMemGLintAdicStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GlMapStandardLatticeEqIffMemGLintAdic
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GlMapDiagUniformizerElementarySublatticeStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ImportsMore
 
@@ -76,8 +76,8 @@ theorem mem_doubleCoset_of_subElem : ∀ (E : Type) [Field E] [NumberField E] (w
     have := (zpow_mem_iff w hϖ 1).2 zero_le_one
     simpa using this
   obtain ⟨a, ha, k₁, hk₁, k₂, hk₂, e⟩ := Formalism.UG.Final.CartanDecomp E w n ϖ hϖO hϖ g
-  have hs₁ : glMap k₁⁻¹ L.1 = L.1 := (GlobalTheory.T.glMap_standardLattice_eq_iff_mem_GLint_adic E w n k₁⁻¹).2 (inv_mem hk₁)
-  have hs₂ : glMap k₂⁻¹ L.1 = L.1 := (GlobalTheory.T.glMap_standardLattice_eq_iff_mem_GLint_adic E w n k₂⁻¹).2 (inv_mem hk₂)
+  have hs₁ : glMap k₁⁻¹ L.1 = L.1 := (_root_.GlobalTheory.LatHecke.glMap_std_eq_iff_mem_GLint E w n k₁⁻¹).2 (inv_mem hk₁)
+  have hs₂ : glMap k₂⁻¹ L.1 = L.1 := (_root_.GlobalTheory.LatHecke.glMap_std_eq_iff_mem_GLint E w n k₂⁻¹).2 (inv_mem hk₂)
   set D : GL (Fin n) (w.adicCompletion E) := k₁⁻¹ * g * k₂⁻¹ with hDdef
   have hD : (D : Matrix (Fin n) (Fin n) (w.adicCompletion E)) = diagPow E w ϖ a := by
     rw [hDdef, Units.val_mul, Units.val_mul, e]

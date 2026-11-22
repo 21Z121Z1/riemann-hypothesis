@@ -8,8 +8,8 @@ import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.DualOrder
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BtOrderEmbeddingOpenImmersion
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelFiniteBaseChange
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LieModel
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DualLatticePointUniversalStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HomAddMulOfUnitSectionStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DualLatticePointUniversal
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HomAddMulOfUnitSection
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BtOrderValueEval
 
 noncomputable section
@@ -299,7 +299,7 @@ theorem hom_add' {S : Scheme.{0}} {R : Type} [CommRing R] (x : Spec (CommRingCat
     [AddCommGroup V] [Module R V] [Module Rᵐᵒᵖ V] [IsCentralScalar R V]
     (u : ob x P ⟶ G) (hu : zsec x ≫ u = 1) (f g : P →ₗ[R] V) :
     hom x (f + g) ≫ u = (hom x f ≫ u) * (hom x g ≫ u) :=
-  GlobalTheory.T.hom_add_mul_of_unit_section S R x G P V u hu f g
+  _root_.GlobalTheory.CompanionTheory.Ar.LieEx.ModSrc.hom_add_mod_closed S R x G P V u hu f g
 
 theorem val_of_emb {R : Type} [CommRing R] [IsDomain R] {T : Type} [CommGroup T] [Finite T] (Γ : QFGroup R T)
     {j : Γ.G.left ⟶ Spec (CommRingCat.of (Γ.btOrder ⊤))} (hj : Γ.IsEmb (Γ.btOrder ⊤) j)
@@ -401,7 +401,7 @@ theorem omega_canon : ∀ (R : Type) [CommRing R] [IsDomain R] [IsIntegrallyClos
   haveI := hop
   obtain ⟨-, hproj, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.LieProj.lie_finite_projective_baseChange S G R x L M
   haveI := hproj
-  obtain ⟨u, hu, hupin, huniv⟩ := GlobalTheory.T.dual_lattice_point_universal S G R x L M
+  obtain ⟨u, hu, hupin, huniv⟩ := _root_.GlobalTheory.CompanionTheory.Ar.BT.Tan.Univ.tangent_universal S G R x L M
   obtain ⟨θ, hsurj, hNθ, hlift⟩ := exists_theta Γ ht hj u hu huniv
   have hθN : ∀ w', θ (N • w') = 0 := fun w' => by
     have := LinearMap.congr_fun hNθ w'

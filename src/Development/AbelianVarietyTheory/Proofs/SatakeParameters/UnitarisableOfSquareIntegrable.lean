@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SmoothContragred
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsOpenNormalisedSubgroupSubset
 import Development.AbelianVarietyTheory.Definitions.Divisors.T2SpaceGeneralLinearGroup
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AlgebraMapIntertwiningMapBijectiveOfIsSmooth
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GlHomNnrealTrivialOfScalarTrivialStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GlHomNnrealTrivialOfScalarTrivial
 open GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.LocGL
 
 open MeasureTheory ComplexConjugate
@@ -30,7 +30,7 @@ theorem modularCharacterFun_eq_one (g : AdGL k N) : Measure.modularCharacterFun 
   obtain ⟨g, rfl⟩ := QuotientGroup.mk_surjective g
   let φ : GL (Fin N) k →* NNReal :=
     Measure.modularCharacter.comp (QuotientGroup.mk' (Subgroup.center (GL (Fin N) k)))
-  refine GlobalTheory.T.gl_hom_nnreal_trivial_of_scalar_trivial k (exists_ne_zero_ne_one k) N φ (fun z => ?_) g
+  refine _root_.GlobalTheory.gl_hom_nnreal_trivial_of_scalar k (exists_ne_zero_ne_one k) N φ (fun z => ?_) g
   have hz : Matrix.GeneralLinearGroup.scalar (Fin N) z ∈ Subgroup.center (GL (Fin N) k) :=
     Subgroup.mem_center_iff.2 fun h => (Matrix.GeneralLinearGroup.scalar_commute z h).symm
   show Measure.modularCharacter (QuotientGroup.mk' _ _) = 1

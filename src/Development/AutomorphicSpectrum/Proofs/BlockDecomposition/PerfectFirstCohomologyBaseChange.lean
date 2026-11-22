@@ -2,10 +2,10 @@ import Mathlib
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.HodgeWedgeFields.H1CommutesBaseChange
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatQuotientOfUniversallyInjectiveStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LinearMapZeroOfInjectiveFullRank
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalFreeKernelSplittingStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalFreeKernelSplitting
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalSplittingKernelBaseChange
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KernelFreeAtPrimesOfConstantRank
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KernelBaseChangeTowerEquivStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KernelBaseChangeTowerEquiv
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RetractBaseChangeKernelCompatible
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuasiIsomorphismDegreeOneKernel
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CochainBaseChangeEquivalences
@@ -58,7 +58,7 @@ theorem local_regular (A Q P : Type) [CommRing A] [IsLocalRing A] [AddCommGroup 
     (h3 : Module.finrank A (LinearMap.ker d) = g)
     (h4 : Module.finrank (IsLocalRing.ResidueField A) (LinearMap.ker (d.baseChange (IsLocalRing.ResidueField A))) = g) :
     ∃ r : P →ₗ[A] Q, d ∘ₗ r ∘ₗ d = d := by
-  obtain ⟨r, hidem, hfree, hfin, hrank⟩ := GlobalTheory.T.local_free_kernel_splitting A Q P d
+  obtain ⟨r, hidem, hfree, hfin, hrank⟩ := _root_.GlobalTheory.CompanionTheory.LocalSplit.exists_idempotent_of_residueField A Q P d
   refine ⟨r, ?_⟩
   have hrank' : Module.finrank A (LinearMap.ker (r ∘ₗ d)) = g := hrank.trans h4
   have hle : LinearMap.ker d ≤ LinearMap.ker (r ∘ₗ d) := fun x hx => by
@@ -101,7 +101,7 @@ theorem regular_of_fibres (R Q P : Type) [CommRing R] [AddCommGroup Q] [Module R
     Module.free_of_flat_of_isLocalRing
   refine GlobalTheory.CompanionTheory.PerfectFirstCohomology.local_regular (Localization.AtPrime p) _ _
     (d.baseChange (Localization.AtPrime p)) g h1 h2 h3 ?_
-  obtain ⟨e⟩ := GlobalTheory.T.kernel_base_change_tower_equiv R (Localization.AtPrime p)
+  obtain ⟨e⟩ := _root_.GlobalTheory.CompanionTheory.PerfectFirstCohomology.ker_baseChange_tower R (Localization.AtPrime p)
     (IsLocalRing.ResidueField (Localization.AtPrime p)) Q P d
   rw [e.finrank_eq]
   exact hfib _

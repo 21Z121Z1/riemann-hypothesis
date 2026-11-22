@@ -4,7 +4,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PointIdealMulti
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemPointIdealIffEvalCoordsZero
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PointIdealHorizontalIffCharZero
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClosureDimIffArithmeticVariety
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SpecializesIffPointIdealLeStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SpecializesIffPointIdealLe
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MultiprojectivePrimeEqPointIdeal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ComplexPointHasNonzeroLift
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermRepTensorProduct
@@ -13,7 +13,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermRepTensorPo
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermRepTrivialLineBundle
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermRepOfIsometric
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermRepMetricSmooth
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermRepTwistedBundleExistsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermRepTwistedBundleExists
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsPullHermPullLine
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EqOfIsometricTrivShift
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRedA
@@ -33,6 +33,6 @@ namespace GlobalTheory.CompanionTheory.MPDict
 
 theorem dict_ptIdeal_injective {m : ℕ} (n : Fin (m + 1) → ℕ) :
     Function.Injective (ptIdeal : MP ℤ m n → Ideal (Geo.MRing (Bk n))) := fun x y h =>
-  (((GlobalTheory.T.specializes_iff_point_ideal_le m n x y).2 h.le).antisymm ((GlobalTheory.T.specializes_iff_point_ideal_le m n y x).2 h.ge)).eq
+  (((_root_.GlobalTheory.CompanionTheory.MPDict.Spec.specializes_iff_ptIdeal_le m n x y).2 h.le).antisymm ((_root_.GlobalTheory.CompanionTheory.MPDict.Spec.specializes_iff_ptIdeal_le m n y x).2 h.ge)).eq
 
 end GlobalTheory.CompanionTheory.MPDict

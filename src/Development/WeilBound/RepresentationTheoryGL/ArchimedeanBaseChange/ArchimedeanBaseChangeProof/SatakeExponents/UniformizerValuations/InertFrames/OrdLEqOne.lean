@@ -1,5 +1,7 @@
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.FrameInert
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceConjugationPropertiesCmFieldStatement
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceConjugationPropertiesCmField
+import Development.AbelianVarietyTheory.Definitions.Divisors.GaloisRepOfPolarizedCuspidal
 
 noncomputable section
 
@@ -28,7 +30,7 @@ end UniformizerValuation
 
 theorem unifEx : UnifEx := by
   intro E _ _ _ hU w hw
-  obtain ⟨-, -, -, h4, -⟩ := GlobalTheory.T.placeConjugation_properties_cmField E hU w
+  obtain ⟨-, -, -, h4, -⟩ := _root_.GlobalTheory.ConjAtPlace.main E hU w
   obtain ⟨ϖ, q, hI, -⟩ := (h4 hw).2.1
   have hv : Valued.v ϖ = ((Multiplicative.ofAdd (-1 : ℤ) : Multiplicative ℤ) : WithZero (Multiplicative ℤ)) :=
     hI.2.2.2.1

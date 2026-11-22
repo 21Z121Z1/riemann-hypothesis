@@ -6,7 +6,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsSymmetricSqrtPrincipalSiegelFiniteEtale
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsRigidTranslatePrincipalPolarisationOrderTw
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsTwoTorsionTranslateSameLambdaBundle
-import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.SiegelFamilyComplexPointEqOfSamePeriodMatrixStatement
+import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.SiegelFamilyComplexPointEqOfSamePeriodMatrix
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsLocalPeriodMatrix
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsSeparatingPairs
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.SameCompOfIsHolTo
@@ -173,13 +173,13 @@ theorem exists_nhds_sameComp : Out.Laws → Out.Laws2 → ThetaUnifAV → ∀ (h
     (Metric.mem_ball_self hε) (fun i j => (hτd i j).mono fun b hb => (hball hb).1)
     (fun b hb => let ⟨_, _, _, H, _⟩ := hpt b (hball hb).1; ⟨H.2.1, H.2.2.1⟩) fun b hb b' hb' e =>
       hyi (hbB hb) (hbB hb') (hinj b (hball hb).2 b' (hball hb').2
-        (GlobalTheory.T.siegelFamily_complexPoint_eq_of_same_periodMatrix hL hU h k K ζ σ F hh hk ho hζ (τ b) _ _ (hys' b (hbB hb)) (hys' b' (hbB hb'))
+        (_root_.GlobalTheory.SiegelPointUnique.eq_of_ptAt hL hU h k K ζ σ F hh hk ho hζ (τ b) _ _ (hys' b (hbB hb)) (hys' b' (hbB hb'))
           (hpt b (hball hb).1) (e ▸ hpt b' (hball hb').1)))
   refine ⟨N, hτ0 ▸ hN, fun t ht p hp hpt' => ?_⟩
   have H := hpt'
   obtain ⟨_, _, _, H, _⟩ := H
   obtain ⟨b, hb, rfl⟩ := hNτ t ht H.2.1 H.2.2.1
-  rw [GlobalTheory.T.siegelFamily_complexPoint_eq_of_same_periodMatrix hL hU h k K ζ σ F hh hk ho hζ (τ b) p _ hp (hys' b (hbB hb)) hpt' (hpt b (hball hb).1)]
+  rw [_root_.GlobalTheory.SiegelPointUnique.eq_of_ptAt hL hU h k K ζ σ F hh hk ho hζ (τ b) p _ hp (hys' b (hbB hb)) hpt' (hpt b (hball hb).1)]
   exact sameComp_of_isHolTo K σ _ F.s _ (Metric.ball 0 ε) (fun b => y b ≫ π) Metric.isOpen_ball
     (convex_ball _ _).isPreconnected (fun b hb => hys' b (hbB hb))
     (LocLift.isHolTo_comp_hom (LocLift.isHolTo_mono hyh Metric.isOpen_ball hbB) π) b hb 0 (Metric.mem_ball_self hε)

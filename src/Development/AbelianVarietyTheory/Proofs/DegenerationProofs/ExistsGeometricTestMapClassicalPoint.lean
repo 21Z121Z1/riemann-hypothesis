@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFactorClassicalPointOfLargeTest
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NonemptyTestModelToClosureStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NonemptyTestModelToClosure
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ClassicalPointsAndLocalRegularity
 import Development.AbelianVarietyTheory.Definitions.Degenerations.BaseFacts
 import Development.AbelianVarietyTheory.Definitions.Degenerations.IsAffineSplitTorusLeft
@@ -19,7 +19,7 @@ theorem GlobalTheory.ZH.exists_geoTest_tMap_and_centre : GlobalTheory.UT.LL → 
   · obtain ⟨y₀, Fs, hn, hF⟩ := _root_.GlobalTheory.ZH.exists_fac_of_large_test o Ω S ρ M U₀ EE hB Q p y hy
     obtain ⟨t, ht⟩ := hgeo p y₀ hn Fs
     obtain ⟨c⟩ := hF t.u ht
-    exact ⟨y₀, t, c, GlobalTheory.T.nonempty_testModel_to_closure hL o Ω S ρ M U₀ EE hB Q p y y₀ t c hbig⟩
+    exact ⟨y₀, t, c, _root_.GlobalTheory.ZH.TestMap.nonempty_tMap hL o Ω S ρ M U₀ EE hB Q p y y₀ t c hbig⟩
   · haveI := hA.ft
     haveI := hA.char
     exact ((GlobalTheory.ZH.classical_points_and_local_regularity o Ω M U₀ hB.ov.normal).1 U₀ le_rfl hB.ov.ne z hz).1

@@ -58,7 +58,7 @@ theorem bottom_stratum_intertwining : _root_.GlobalTheory.FunPr.ThetaLocalInputs
   obtain ⟨G₀, hG₀, hR₀⟩ := reads_of_fock ea.symm ed.symm hSet hw hth hfock
   obtain ⟨hcS, hcT⟩ := bottom_finParts G hL hB
   have hTT0 : P.e0 ∈ TT D (tor0 D ⊤ δ) P.a P.d := GlobalTheory.NormSum.VacMove.vac_TT (hInp D).g1 P.crv P.vac.1
-  obtain ⟨f₀, hf₀⟩ := GlobalTheory.T.exists_adelicTheta_reads_curveThetaFunction W.ψ W.θ A WW ea.symm ed.symm ⊤ δ 1 hSet _ hTT0
+  obtain ⟨f₀, hf₀⟩ := _root_.GlobalTheory.NormExact.ReadEx.exists_reads W.ψ W.θ A WW ea.symm ed.symm ⊤ δ 1 hSet _ hTT0
   refine ⟨?_, fun h g x y hg hy => ?_⟩
   · rw [xiN_of_reads W.θ_is _ _ hδ hR₀]; exact hG₀
   · have hv := _root_.GlobalTheory.VacMoveFin.vacuum_move_reads W.ψ W.θ A WW ea.symm ed.symm ⊤ δ 1 hSet P.e0 P.W _ _ _ hw (hInp D) t0 P.pt0

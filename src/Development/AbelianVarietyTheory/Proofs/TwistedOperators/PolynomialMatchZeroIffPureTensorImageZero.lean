@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualit
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HypothesesAbsDet
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PolMatchLinear
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SumPureMemAlgD
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TmulSumEqZeroOfPureTensorFunctionZeroStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TmulSumEqZeroOfPureTensorFunctionZero
 
 open NumberField IsDedekindDomain
 open scoped TensorProduct
@@ -25,7 +25,7 @@ theorem polMatch_zero_iff_polZero : ∀ (F E : Type) [Field F] [NumberField F] [
   · rintro ⟨T, hX, m, m', f, φ, f', φ', h1, h1', hΦ, h0, he⟩
     refine ⟨T, hX, m, f, φ, h1, hΦ, ?_⟩
     rw [he]
-    exact GlobalTheory.T.tmul_sum_eq_zero_of_pureTensor_function_zero G.M'.vac (fun v => (hM.triple.geo.hM'.vac v).2.1) hM.triple.geo.hM'.std R.p' Rf.Pi Rf.p' T m' f' φ'
+    exact _root_.GlobalTheory.ThK.PureTensIndep.tmul_sum_eq_zero_of_pure G.M'.vac (fun v => (hM.triple.geo.hM'.vac v).2.1) hM.triple.geo.hM'.std R.p' Rf.Pi Rf.p' T m' f' φ'
       (fun j => (h1' j).2.2) h0.symm
   · rintro ⟨T, hX, m, f, φ, h1, hΦ, hz⟩
     refine ⟨T, hX, m, 0, f, φ, Fin.elim0, Fin.elim0, h1, fun j => j.elim0, hΦ, ?_, ?_⟩

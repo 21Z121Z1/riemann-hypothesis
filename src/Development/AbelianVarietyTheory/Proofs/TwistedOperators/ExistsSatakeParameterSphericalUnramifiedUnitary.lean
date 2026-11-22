@@ -13,7 +13,7 @@ theorem exists_hasSatU : ∀ (E : Type) [Field E] [NumberField E] (w : HeightOne
     IsUnramInv ϖ σ q → ∀ (V : Type) [AddCommGroup V] [Module ℂ V] (ρ : Representation ℂ (GU σ n) V),
     ρ.IsIrreducible → IsAdmissible ρ → GlobalTheory.LGrp.IsSpherical ρ (KU σ n) → ∃ α, HasSatU ϖ q ρ α := by
   intro E _ _ w ϖ σ q n hU V _ _ ρ hi ha hs
-  obtain ⟨ho, hc⟩ := GlobalTheory.T.isOpen_isCompact_unitaryIntegralPoints (w.adicCompletion E) ϖ σ q n hU
+  obtain ⟨ho, hc⟩ := _root_.GlobalTheory.LFun.IntPtsUnitary.isOpen_isCompact_KU (w.adicCompletion E) ϖ σ q n hU
   exact GlobalTheory.LFun.SatCompare.exists_hasSatU hU ⟨ha.1, hi⟩ (ha.2 _ ho hc) hs
 
 end GlobalTheory.LFun.ExSatU

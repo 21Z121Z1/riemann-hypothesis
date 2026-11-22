@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaKernelOrthonormalFrameInDomainPeriodLinear
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsWeakOfDatum
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsHeatZero
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaFunctionSpaceHeisenbergLawsStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaFunctionSpaceHeisenbergLaws
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HeisenbergDerivativeThetaFunctionLaws
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RealPeriodMapHomeomorphRiemannFormDensity
 
@@ -134,10 +134,10 @@ end Generic
 variable {D : D7} {S T : HSp D} (C : Ctx S T)
 
 theorem th_add {f f' : WO S T → ℂ} (hf : C.IsTh f) (hf' : C.IsTh f') : C.IsTh (f + f') := by
-  exact ((GlobalTheory.T.thetaFunction_space_heisenberg_laws D S T C).2.1 f f' hf hf').1
+  exact ((_root_.GlobalTheory.ThetaSpace.theta_space_laws D S T C).2.1 f f' hf hf').1
 
 theorem th_smul (a : ℂ) {f : WO S T → ℂ} (hf : C.IsTh f) : C.IsTh (a • f) := by
-  exact ((GlobalTheory.T.thetaFunction_space_heisenberg_laws D S T C).2.2 f hf).1 a
+  exact ((_root_.GlobalTheory.ThetaSpace.theta_space_laws D S T C).2.2 f hf).1 a
 
 theorem rho_add (u : WO S T) (f f' : WO S T → ℂ) : C.rho u (f + f') = C.rho u f + C.rho u f' := by
   unfold Ctx.rho heisO

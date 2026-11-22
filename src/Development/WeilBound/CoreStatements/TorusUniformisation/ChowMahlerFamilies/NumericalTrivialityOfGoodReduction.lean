@@ -12,7 +12,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenLinePAdicBound
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeLatticeGenericAgree
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DvrModelOfNumberFieldPlace
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelExistsUniqueEquiv
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GlobalModelPowerFreeStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GlobalModelPowerFree
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FibrePowerFreePullback
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ToFirst
 import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.AdaptedEigenbasisExists
@@ -588,7 +588,7 @@ open CategoryTheory AlgebraicGeometry NumberField GlobalTheory.CompanionTheory.A
 open PositivityTheory.Xgn.NumericalTriviality in
 theorem PositivityTheory.Xgn.numerical_triviality_of_good_reduction : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host E) (D : Datum H) (Xo : ∀ l : Level H, Moduli D l) (Yl : ∀ (p : ℕ) (W : ValuationSubring ℂ), p.Prime → (p : ℂ) ∈ W.nonunits → LocalSystem Xo p W), (∀ p W hp hW i, (Yl p W hp hW i).SplitFibres ∧ (Yl p W hp hW i).N3) → ∀ (l : Level H) (c : Coeff l) (hg : ∀ p : ℕ, p.Prime → l.GoodAt p) (Y : Model (Xo l) c (algebraMap (𝓞 c.F) c.F)), (∀ (p : ℕ) (W : ValuationSubring ℂ) (hp : p.Prime) (hW : (p : ℂ) ∈ W.nonunits) (b : 𝓞 c.F →+* c.V W), (∀ x, ((b x : c.V W) : c.F) = (x : c.F)) → ReciprocityTheory.ChartRestriction.G.Geo.Tor.Dominates Y (Yl p W hp hW ⟨l, c, hg p hp⟩) b) → ∀ (S : Finset ℕ) (Ω : Type) [Field Ω] (K : Type) [Fintype K] (J : K → Type) [∀ k, Fintype (J k)] (y : (Σ k, J k) → Ω) (𝔐 : HodgeCpt Y S y) (p : ℕ), p.Prime → p ∉ S → ¬ (p : ℤ) ∣ NumberField.discr E → ∀ (τ : CMType H) (a : ⋀[Ω]^D.p 𝔐.Li) (b : ⋀[Ω]^D.q 𝔐.Li), a ≠ 0 → b ≠ 0 → (∃ x f, IsCoeffAt (𝔐.V (.inl τ)) (𝔐.V (.inr τ)) D.p D.q a b x f) → NumTrivMod (lineLat (𝔐.V (.inl τ)) (𝔐.V (.inr τ)) D.p D.q a b) (p : Ω) := by
   intro E _ _ _ H D Xo Yl hY l c hg Y hdom S Ω _ K _ J _ y 𝔐 p hp hpS hdisc τ a b ha hb hc
-  obtain ⟨-, hFib⟩ := GlobalTheory.T.global_model_power_free E H D Xo Yl hY l c hg Y hdom
+  obtain ⟨-, hFib⟩ := _root_.GlobalTheory.CompanionTheory.Ar.GlobalFib.global_fibPF E H D Xo Yl hY l c hg Y hdom
   obtain ⟨𝓗, hz⟩ := exists_hodgeLat 𝔐 hFib p hp
   haveI : CharZero Ω := charZero_of_injective_ringHom 𝔐.cst.injective
   let σ : E →+* Ω := 𝔐.cst.comp (τ.1.codRestrict c.F.toSubfield (c.conj τ.1))

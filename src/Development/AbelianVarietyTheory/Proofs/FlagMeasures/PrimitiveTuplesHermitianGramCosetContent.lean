@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardPrimitiveTuplesH
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OrthonormalBasisAndOneOrbit
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsPrincipalIdealRingOfHenselian
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CommensurableCosetUnionContentIndependentNonneg
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RelIndexTupleLatticeHermitianLatticeUniformizerStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RelIndexTupleLatticeHermitianLatticeUniformizer
 
 open ValuativeRel Formalism.MainNotions.S.Loc GlobalTheory.HL MeasureTheory
 open scoped Pointwise ENNReal Classical
@@ -394,7 +394,7 @@ theorem cont_primitive_tuples : ∀ {F : Type} [Field F] [ValuativeRel F] [Topol
   obtain ⟨-, h2, -, -, h5, h6, h7, -⟩ := GlobalTheory.UnramOrder.order_facts L ϖ hϖ
   have hcj : ∀ x ∈ L.O, L.cj x ∈ L.O := fun x hx => (h2 x hx).1
   obtain ⟨j, hj, hjA⟩ := exists_level L ϖ hϖ A hA.1
-  obtain ⟨hT, hH⟩ := GlobalTheory.T.relIndex_tupleLattice_hermitianLattice_uniformizer L ϖ hϖ Hm hHm Λ hΛ m j
+  obtain ⟨hT, hH⟩ := _root_.GlobalTheory.HL.LatCard.relIndex_tupLat_hermLat L ϖ hϖ Hm hHm Λ hΛ m j
   obtain ⟨b, hb, hbΛ⟩ := (GlobalTheory.HL.SelfDual.orthonormal_basis_and_one_orbit L Hm hHm).1 Λ hΛ
   have hu := one_add_unit L ϖ hϖ hj
   have hq : resQ ϖ ≠ 0 := by omega

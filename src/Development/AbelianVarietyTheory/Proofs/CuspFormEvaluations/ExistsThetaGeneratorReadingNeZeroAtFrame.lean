@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Definitions.ThetaValues.FlatMemLatIffStd
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.IsotropicCoefficientSplitting
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrameMulTriangularOrthonormal
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DualHalfLevelMarkingExistsAndMatchStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DualHalfLevelMarkingExistsAndMatch
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaValueStandardLatticeEqClassicalTheta
 import Formalism.LocalToGlobal.ProjectiveLattices.CuspFree
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.AnChartAsm
@@ -97,7 +97,7 @@ theorem exists_thGen_rdU_ne_zero : Formalism.MainNotions.ModuliIntegralCharts.H1
     GlobalTheory.T.exists_analyticData_unitFrame_framedPoint E H Dw l Xo c σ r U hσ hU hr a n hdom k ⟨rmul x b, hx₀⟩ (isUnitFr_of_isOrtho ho)
   have hM0 : l.M ≠ 0 := by have := l.three_le; omega
   have hME : (l.M : E) ≠ 0 := Nat.cast_ne_zero.2 hM0
-  obtain ⟨-, -, hconj, hmul, hroots⟩ := GlobalTheory.T.dual_half_level_marking_exists_and_match E H Dw l r (U.X k) (U.X k).Λ (W.mark k) _ hsd hmk
+  obtain ⟨-, -, hconj, hmul, hroots⟩ := _root_.GlobalTheory.Dict.DualMark.dual_marking E H Dw l r (U.X k) (U.X k).Λ (W.mark k) _ hsd hmk
     (Complex.isPrimitiveRoot_exp l.M hM0)
   obtain ⟨Y, hY⟩ := hroots n l.M (Nat.pos_of_ne_zero hM0)
   have hQ0 : MvPolynomial.rename Dc.eL (MvPolynomial.map (algebraMap c.F ℂ) P) ≠ 0 := by

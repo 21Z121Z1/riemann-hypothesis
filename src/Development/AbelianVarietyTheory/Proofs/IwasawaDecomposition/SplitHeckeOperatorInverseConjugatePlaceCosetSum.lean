@@ -76,7 +76,7 @@ theorem heckeVec_Tj_inv_conj_eq_sum : ∀ (L : Type) [Field L] [NumberField L] [
       (GlobalTheory.LFun.KGL (GlobalTheory.HeckeFrob.conjSplit s).w n : Set _) (GlobalTheory.LFun.KGL (GlobalTheory.HeckeFrob.conjSplit s).w n),
       ∃! γ', γ' ∈ R.image (fun γ => invT i n (s.loc n γ)) ∧ γ'⁻¹ * g ∈ GlobalTheory.LFun.KGL (GlobalTheory.HeckeFrob.conjSplit s).w n := by
     intro g hg
-    obtain ⟨-, -, hlift⟩ := GlobalTheory.T.unitaryFiniteAdeles_splitPlace_decomposition L n s
+    obtain ⟨-, -, hlift⟩ := _root_.GlobalTheory.SplitAdelic.main L n s
     obtain ⟨x, ⟨hx, hxg⟩, -⟩ := hlift ((invT i n).symm g)
     have hgx : g = invT i n (s.loc n x) := by rw [hxg]; simp
     have hxT : x ∈ tSet L n s ϖ k := (hK x hx).2 (hgx ▸ hg)

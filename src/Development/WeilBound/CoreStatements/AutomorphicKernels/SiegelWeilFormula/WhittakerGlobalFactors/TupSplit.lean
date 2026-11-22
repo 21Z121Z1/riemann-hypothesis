@@ -1,6 +1,7 @@
 import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.WhittakerGlobalFactors.MeasurableSetUH
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ExistsStandardLocalMeasuresStatement
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.UnitProductClosurePropertiesStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ExistsStandardLocalMeasures
+import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.UnitProductClosureProperties
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdelicHaarSplitsAsArchTimesFinite
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaPartD
@@ -30,13 +31,13 @@ theorem tup_split (σ : E →ₐ[F] E) (hCM : IsCMExt F E σ) (ψ : AddChar (AF 
         ∫ X, (GlobalTheory.CompanionTheory.SW.intOff bs S).indicator (fun X => gi (projInf X) * ∏ v ∈ S, g v (projV v (projFin X))) X ∂μ =
           (∫ x, gi x ∂μi) * ∏ v ∈ S, ∫ x, g v x ∂(μv v) := by
   classical
-  obtain ⟨⟨laminf, hinf⟩, hlamex⟩ := GlobalTheory.T.exists_standard_local_measures F
+  obtain ⟨⟨laminf, hinf⟩, hlamex⟩ := _root_.GlobalTheory.CompanionTheory.SW.StdEx.exists_std F
   choose lam hlam using hlamex
   obtain ⟨lf, hlf, h1⟩ := GlobalTheory.CompanionTheory.AdeleHaar.exists_haar_integral_one F
   obtain ⟨cinf, c, hU, hci, hcv⟩ := GlobalTheory.CompanionTheory.SW.SdTuples.sdW_coord F E σ hCM M J hJ d bs laminf lam hinf hlam ψ hψ n
   have eμi : μi = cinf • GlobalTheory.CompanionTheory.SW.coordW (Ainf F) bs laminf n M := (hci μi).1 hμi
   have eμv : ∀ v, μv v = c v • GlobalTheory.CompanionTheory.SW.coordW (Fv F v) bs (lam v) n M := fun v => (hcv v (μv v)).1 (hμv v)
-  have hc0 : ∀ v, c v ≠ 0 := (GlobalTheory.T.unit_product_closure_properties F cinf cinf c c hU hU).2.1
+  have hc0 : ∀ v, c v ≠ 0 := (_root_.GlobalTheory.CompanionTheory.SW.UnitProdAlg.main F cinf cinf c c hU hU).2.1
   have hfin : {v | ¬ c v = 1}.Finite := Filter.eventually_cofinite.1 hU.1
   refine ⟨hfin.toFinset, fun S hS gi g hg => ?_⟩
 

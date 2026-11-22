@@ -14,7 +14,8 @@ import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsSymplecticBasis
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DualRestrictSurjectiveOfIsTorsionFreeQuotient
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HermitianFormPeriodMatrixNormalForm
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaHolomorphic
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.RealPartGramInSymplecticGroupStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.RealPartGramInSymplecticGroup
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.AssemblySympl
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SemicharacterThetaCharacteristic
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ThetaFunctionCanonicalMultiplier
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.EqZeroOfSemicharacterMultiplier
@@ -118,7 +119,7 @@ theorem exists_reduced (g : ℕ) [NeZero g] (Λ : Submodule ℤ (Fin g → ℂ))
   obtain ⟨h0, X0, Y0, -, hX0, hY0, -, -, -, hG0⟩ := _root_.GlobalTheory.CompanionTheory.NForm.normal_form_gram g Hm (fun α => (bs0 α : Fin g → ℂ)) hH hpos hJ0
   have hS := (SiegelCoordinates.intersectionNumber_baseChange g).1 X0 Y0 hX0 hY0
   obtain ⟨bs, ρ, hρ, hρ2, hJ, hfirst, hmin, hdet⟩ :=
-    GlobalTheory.T.real_part_gram_in_symplectic_group g Λ Hm bs0 hH hpos hJ0 (by rw [hG0]; exact hS.1) (by rw [hG0]; exact hS.2)
+    _root_.GlobalTheory.CompanionTheory.Ar.NformRed.symplectic_reduction_basis g Λ Hm bs0 hH hpos hJ0 (by rw [hG0]; exact hS.1) (by rw [hG0]; exact hS.2)
   obtain ⟨h, X, Y, hh, hX, hY, hHh, hin, hinr, -⟩ := _root_.GlobalTheory.CompanionTheory.NForm.normal_form_gram g Hm (fun α => (bs α : Fin g → ℂ)) hH hpos hJ
   have hτim : (periodMatrix X Y).map Complex.im = Y := periodMatrix_im X Y
   have hexp : ∀ x : Λ, (x : Fin g → ℂ) = ∑ α, (bs.repr x α) • (bs α : Fin g → ℂ) := fun x => by

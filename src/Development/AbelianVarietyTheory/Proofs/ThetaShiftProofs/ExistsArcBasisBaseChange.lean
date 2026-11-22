@@ -14,7 +14,7 @@ import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.LieImgIffIsLieCo
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsConstantEigenbasisTangentArc
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ConstantArcEigenbasisFlatBaseChangeStatement
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.DegenerationDataBaseChangesExistPid
-import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.TangentVectorsThetaSectionArcWitnessBaseChangeStatement
+import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.TangentVectorsThetaSectionArcWitnessBaseChange
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ConstantEigenbasisIndependentOfWitnessStatement
 
 noncomputable section
@@ -134,7 +134,7 @@ theorem exists_arcBasis_baseChange (hL : Out.Laws) (hL₂ : Out.Laws2) (hU : Out
   obtain ⟨hW, hν, -⟩ := (_root_.GlobalTheory.ArcQBC.baseChanges hL hL₂ hU hL₅ E H Dw l Xo c O β Y A A' b a f hf b' hp.1).2 a' p hp
   obtain ⟨W', hW'⟩ := hW χ W
   choose e' he' using fun τ k => (hν (e τ k)).exists
-  obtain ⟨m, -, hm, -⟩ := GlobalTheory.T.tangentVectors_thetaSection_arcWitness_baseChange hL hL₂ E H Dw l Xo c O β Y A b a χ W A' b' a' f p W' hp hW'
+  obtain ⟨m, -, hm, -⟩ := _root_.GlobalTheory.ArcBaseChange.main hL hL₂ E H Dw l Xo c O β Y A b a χ W A' b' a' f p W' hp hW'
   have hfl : ((PowerSeries.map f).comp (PowerSeries.C (R := A))).Flat := by
     refine flat_of_injective _ fun x y hxy => hf (PowerSeries.C_injective ?_)
     simpa using hxy

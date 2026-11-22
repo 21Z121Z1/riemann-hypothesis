@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DerivAtZeroReindexE
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JetFinsetLinearCombination
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAlgebraicNumbersExtensionConjVacuumNormSq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjTorsionTranslateCombinationEntireGaussianGro
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PresentationClosedUnderBoundedCombinationStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PresentationClosedUnderBoundedCombination
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianLatticeTransportPreservesSelfDual
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosetIndicatorThetaTorsionTranslates
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteSemilocalHomLatticeClassesMod
@@ -147,7 +147,7 @@ theorem block : GlobalTheory.IndefiniteRowSideFullHecke.PaddedLastEntry.BlockBou
     simp only [mul_left_comm _ κ, ← Finset.mul_sum]
     exact congrArg _ h1
   have hKQ : ∀ k, s.σ₀ k ∈ TaylorLogMetric.Qbar := fun k => (hρ' _ (hK k)).1
-  have hpres := GlobalTheory.T.presentation_closed_under_bounded_combination D (TaylorLogMetric.tor0 D cc dl) a b (s.lat L) (s.lat L') _ _ R (fun x => s.σ₀ (Ξ x)) _ _ β hβ
+  have hpres := _root_.GlobalTheory.PresSum.pres_sum D (TaylorLogMetric.tor0 D cc dl) a b (s.lat L) (s.lat L') _ _ R (fun x => s.σ₀ (Ξ x)) _ _ β hβ
     (fun x _ => _root_.GlobalTheory.ColNorms.IndPres.pres_thInd D X s cc dl B χ cD hX hs hcrv a b S L L' c x hL hL' hc)
     (fun x _ => ⟨hKQ _, fun ρ₁ => by
       have h1 := hΞ.2.2 ((ρ₁ : TaylorLogMetric.Qbar →+* ℂ).comp (s.σ₀.codRestrict TaylorLogMetric.Qbar hKQ)) x

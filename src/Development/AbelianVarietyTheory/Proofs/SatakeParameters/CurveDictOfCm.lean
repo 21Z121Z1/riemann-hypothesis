@@ -5,7 +5,7 @@ import Formalism.LocalToGlobal.TorsionIntegrality.CMGoodModels.CM4
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PadicNormTwoHundredSixteenEqOneOfFiveLe
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CurveLatticeSigmaTwoAlgebraicOfInvariantsAlgebra
 import Formalism.LocalToGlobal.InertKernelTheory.DefsSigma
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.UnramifiedWeierstrassCurveTransformCoefficientsWStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.UnramifiedWeierstrassCurveTransformCoefficientsW
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BetaModelCoefficientsInvertL
 import Formalism.LocalToGlobal.InertKernelTheory.DefsBeCob
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LogCoordinatesExponentIsCoboundary
@@ -18,7 +18,7 @@ namespace GlobalTheory.CurveDictionary
 
 theorem curveDict_of_cm : Formalism.L2.Th1.CM.CM2 → Formalism.L2.Th1.CM.CM3 → Formalism.L2.Th1.CM.CM4 →
     Formalism.L2.KerInert.Rep.CurveDict := fun hGood _ hTor =>
-  curveDict_of_inputs hGood hTor _root_.GlobalTheory.CurveSigmaAlg.secondEisensteinAlgebraic_of_invAlg GlobalTheory.T.unramifiedWeierstrassCurve_transform_coefficients_wellFormed _root_.GlobalTheory.BeCoefficients.beCoef _root_.GlobalTheory.CobExactProof.cobExact _root_.GlobalTheory.CobSimeqProof.cobSimeq
+  curveDict_of_inputs hGood hTor _root_.GlobalTheory.CurveSigmaAlg.secondEisensteinAlgebraic_of_invAlg _root_.GlobalTheory.CoefWfUnram.coefWf_phW _root_.GlobalTheory.BeCoefficients.beCoef _root_.GlobalTheory.CobExactProof.cobExact _root_.GlobalTheory.CobSimeqProof.cobSimeq
     _root_.GlobalTheory.ShortModelTie.phTie _root_.GlobalTheory.ShortModelTheta.thetaTie_holds _root_.GlobalTheory.InverseSeriesIntegral.v_integral
 
 end GlobalTheory.CurveDictionary

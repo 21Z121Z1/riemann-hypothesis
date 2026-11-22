@@ -3,7 +3,7 @@ import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GaussQ
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.PositiveMajorantGaussian
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ExistsTraceFormGramMatrixInBasis
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GlobalProductGramFiberRankOneStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GlobalProductGramFiberRankOne
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.InfiniteAdeleHaarMapEqScaledVolume
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.SymmetricInvertibleExistsPosdefCongruence
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ArchimedeanGramFiberContinuousDensity
@@ -100,7 +100,7 @@ theorem bound_hermitian : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [
   · intro a ha
     obtain ⟨I, hI, hIb⟩ := hmain a ha β hβ
     obtain ⟨c1, c2, c3⟩ := hDf a ha
-    have hprod := GlobalTheory.T.global_product_gram_fiber_rank_one F E σ hCM M J hJ d b lam hlam m hm lf hlf hlf1 a ha (Df a) c1 c2
+    have hprod := _root_.GlobalTheory.CompanionTheory.SW.EulerDens.hasProd_fibre_mass F E σ hCM M J hJ d b lam hlam m hm lf hlf hlf1 a ha (Df a) c1 c2
       (fun U hU => by
         rw [_root_.GlobalTheory.CompanionTheory.SW.BB.finDensity_coord F E σ hCM M J hJ d b B (hBR (Af F)).1 lf hlf a U]
         exact c3 U hU) β hβ

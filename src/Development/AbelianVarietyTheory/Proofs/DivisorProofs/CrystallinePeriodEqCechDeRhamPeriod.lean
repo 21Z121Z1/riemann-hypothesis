@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CrysToDRBi
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TopLePreimageOfValAtNeZero
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DifferentiableOnOfTendstoLocallyUniformlyOn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisationPreimageValueRules
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedOneFormEvaluationRulesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedOneFormEvaluationRules
 
 set_option autoImplicit false
 
@@ -220,7 +220,7 @@ theorem lift_fn (U : A.left.Opens) (ℓ : Ω[Sec (str A) U⁄ℂ] →+ (Fin g �
     (h : ∀ b ω, ℓ (b • ω) = valHom u U b • ℓ ω)
     (hD : ∀ b a, ℓ (KaehlerDifferential.D ℂ _ b) a = dw a (valHom u U b)) (a : Fin g) {p : Tot Empty g} (hp : p ∈ W u U)
     (ω : Ω[Sec (str A) U⁄ℂ]) : (ℓ ω a).fn p = evForm u.ex U p.2 ω (Pi.single a 1) := by
-  obtain ⟨-, e2, e3⟩ := GlobalTheory.T.uniformisedOneFormEvaluation_rules A g L u U p.2 hp
+  obtain ⟨-, e2, e3⟩ := _root_.GlobalTheory.CechPer.evForm_rules A g L u U p.2 hp
   have hm : ω ∈ Submodule.span (Sec (str A) U) (Set.range (KaehlerDifferential.D ℂ (Sec (str A) U))) := by
     rw [KaehlerDifferential.span_range_derivation]; trivial
   induction hm using Submodule.span_induction with

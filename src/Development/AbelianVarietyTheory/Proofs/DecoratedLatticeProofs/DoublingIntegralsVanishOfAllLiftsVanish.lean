@@ -6,7 +6,8 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Ex
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.PairwiseDisjointCell
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HeckeLPartialContinuationHolds
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntegralQuotientEqSetIntegralFundamentalDomain
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingMapThetaIdentityAnyWeilDataStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingMapThetaIdentityAnyWeilData
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IntegrandSZero
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DefiniteUnitaryQuotientCompactFundamentalDomain
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilRepAverageKillsThetaOfDenseFamily
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingMapSpanDenseHeisenbergStableStatement
@@ -66,7 +67,7 @@ theorem kills_of_noLift : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (A W : H
   intro D ψ A W χA χW om omh hsig hpos hom homh m hm u hu hui hno φ hφ h
   haveI := hm
   obtain ⟨-, X, K, hXm, hX, hK, hXK⟩ := _root_.GlobalTheory.DefFund.coCpt_and_fundamentalDomain_subset_compact D A hsig hpos m hm
-  have hTC := GlobalTheory.T.doublingMap_thetaIdentity_any_weilData D ψ A W χA χW om omh hom homh
+  have hTC := _root_.GlobalTheory.DoublingTheta.thetaClause D ψ A W χA χW om omh hom homh
   obtain ⟨C, hC⟩ := exists_bound_of_fundamentalDomain hX hK hXK hu hui
   have hχ : IsHeckeChar D χW := hom.hecT
   have hχi : IsHeckeChar D χW⁻¹ :=

@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsAdelicCorrecti
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.SelfDualAt
 import Formalism.LocalToGlobal.HermitianForms.TiedStep
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsFrameAdelicColumnLatticeLinkedReference
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AdelicColumnLatticeEqSpanPartTransportedFrameStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AdelicColumnLatticeEqSpanPartTransportedFrame
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemColumnLevelIffMemLinkedFrameLevel
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ColumnsCharacterEqLinkedFrameCharacter
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryDatumLevelPrimeSplitDegreeGramFacts
@@ -18,7 +18,7 @@ namespace GlobalTheory.St.G
 theorem levelConj_holds : ∀ (D : D7) (F : ∀ u, Formalism.L2.Forms.Forms0 D u), LevelConj D F := by
   intro D F X hK u wt ιA h0 hW hI hL
   obtain ⟨Fr, hFr⟩ := _root_.GlobalTheory.St.G.FrameLink.frame_exists D X u wt ιA hW hI
-  obtain ⟨hMq, -, -, -, -, -⟩ := GlobalTheory.T.adelicColumnLattice_eq_spanPart_transportedFrame D X u wt ιA hW hI
+  obtain ⟨hMq, -, -, -, -, -⟩ := _root_.GlobalTheory.St.G.MHat.mhat_coords D X u wt ιA hW hI
   obtain ⟨hT, hg, hTg, hf, hNk, hH, hdet⟩ := record_facts D u
   have hΛ : ∀ x, (h0⁻¹).1.1 *ᵥ x ∈ hat D.host.F (F u).cls0.lev.Lb ↔ x ∈ hat D.host.F (Mq wt) := by
     intro x

@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBase
 import Development.AbelianVarietyTheory.Definitions.Degenerations.HomExtSt
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ModuliModelUltrametricPointsStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.LiftValuationIntegralNormStatement
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusTorsionPointsCorrespondValuesStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusTorsionPointsCorrespondValues
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.FamiliesValuesCorrespond
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.TorsionIsoOfLinearUniformisationTriple
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ExistsZeroGt
@@ -97,7 +97,7 @@ theorem hasArcData_of_model (hV : HV) (h6 : Laws6) (hU : GlobalTheory.LN.UDvrSt)
   letI := H.starRing
   have hLL := hV.1
   obtain ⟨hL, hL2, hL3, hL4, hL5⟩ := hV.1
-  have hGt : BrGtSt := GlobalTheory.T.torus_torsion_points_correspond_values
+  have hGt : BrGtSt := _root_.GlobalTheory.Ex.GtValues.points_correspond
   have : IsNoetherianRing O' := by
     rcases hB with h | h
     · letI := h.1.toField; infer_instance

@@ -5,9 +5,9 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftEisenstein
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TsumMeas
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnipotentAdditiveLaw
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CentreCharacterProperties
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CentreCharacterCommutatorStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CentreCharacterCommutator
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RationalPointsHeisenbergGroup
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ShiftConjHeisenbergStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ShiftConjHeisenberg
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CentreCoefficientEquivariance
 noncomputable section
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct Topology
@@ -56,7 +56,7 @@ theorem zc_sh {D : D7} {n ρ p : ℕ} {hn : ρ + p = n} (M : Maps D hn) (m : Mea
   congr 1
   funext z
   have hc : M.sh (GlobalTheory.CompanionTheory.FJE.rt ξ) * M.nzx z 0 = M.nzx z 0 * M.sh (GlobalTheory.CompanionTheory.FJE.rt ξ) := by
-    have := GlobalTheory.T.shift_conj_heisenberg M (GlobalTheory.CompanionTheory.FJE.rt ξ) z 0
+    have := _root_.GlobalTheory.CompanionTheory.FJE.sh_mul_nzx M (GlobalTheory.CompanionTheory.FJE.rt ξ) z 0
     rwa [jc_zero, add_zero] at this
   have hr : M.sh (GlobalTheory.CompanionTheory.FJE.rt ξ) ∈ GF D n := (_root_.GlobalTheory.CompanionTheory.FJE.rat_maps_mem_GF M).1 ξ
   rw [← mul_assoc, ← hc, mul_assoc, hF _ hr]
@@ -68,7 +68,7 @@ theorem zc_at {D : D7} {n ρ p : ℕ} {hn : ρ + p = n} (M : Maps D hn) (m : Mea
       conj (GlobalTheory.CompanionTheory.FJE.chv ψ b₀ x (GlobalTheory.CompanionTheory.FJE.rt ξ)) * zc M m ψ b₀ F (M.nzx 0 x * h) := by
   set c : hermA D ρ := -GlobalTheory.CompanionTheory.FJE.jc (GlobalTheory.CompanionTheory.FJE.rt ξ) x with hc
   have h1 : M.sh (GlobalTheory.CompanionTheory.FJE.rt ξ) * M.nzx c x = M.nzx 0 x * M.sh (GlobalTheory.CompanionTheory.FJE.rt ξ) := by
-    have := GlobalTheory.T.shift_conj_heisenberg M (GlobalTheory.CompanionTheory.FJE.rt ξ) c x
+    have := _root_.GlobalTheory.CompanionTheory.FJE.sh_mul_nzx M (GlobalTheory.CompanionTheory.FJE.rt ξ) c x
     rwa [hc, neg_add_cancel] at this
   have h2 : M.nzx c x = M.nzx c 0 * M.nzx 0 x := by
     rw [GlobalTheory.CompanionTheory.NzxAdd.nzx_add, add_zero, zero_add]
@@ -76,7 +76,7 @@ theorem zc_at {D : D7} {n ρ p : ℕ} {hn : ρ + p = n} (M : Maps D hn) (m : Mea
       M.sh (GlobalTheory.CompanionTheory.FJE.rt ξ) * (M.nzx c 0 * (M.nzx 0 x * h)) := by
     rw [← mul_assoc, ← h1, h2]
     simp only [mul_assoc]
-  rw [h3, zc_sh M m ψ b₀ F hF, _root_.GlobalTheory.CompanionTheory.ZcShift.zc_shift M m ψ hψ b₀ F hF, hc, chz_neg ψ hψ, GlobalTheory.T.centre_character_commutator]
+  rw [h3, zc_sh M m ψ b₀ F hF, _root_.GlobalTheory.CompanionTheory.ZcShift.zc_shift M m ψ hψ b₀ F hF, hc, chz_neg ψ hψ, _root_.GlobalTheory.CompanionTheory.FJE.chz_jc]
 
 theorem pc_sh : ∀ {D : D7} {n ρ p : ℕ} {hn : ρ + p = n} (M : Maps D hn) (m : Meas D ρ p) (ψ : AddChar (AF D.host.F) ℂ), IsCharAF D.host.F ψ → ∀ (b₀ : HermE D ρ) (F : G D n → ℂ), LeftInv (GF D n) F → ∀ (ξ : Matrix (Fin ρ) (Fin p) D.host.E) (h : G D n), pc M m ψ b₀ F (M.sh (GlobalTheory.CompanionTheory.FJE.rt ξ) * h) = ∫ x in m.𝓕, conj (GlobalTheory.CompanionTheory.FJE.chv ψ b₀ x (GlobalTheory.CompanionTheory.FJE.rt ξ)) * zc M m ψ b₀ F (M.nzx 0 x * h) ∂m.μ := by
   intro D n ρ p hn M m ψ hψ b₀ F hF ξ h

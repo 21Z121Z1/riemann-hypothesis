@@ -16,7 +16,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteWeightedPairO
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeparableFormGroupElementFixesUniquePositiveLineStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullSumRegroup
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PadicEmbeddingValuationSubring
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrbitalIntegralTestFunctionSecond
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteCosetsAndFixedPoints
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteMarkedPairClassesDegreeOneTermNeZero
 
 noncomputable section
@@ -50,7 +50,7 @@ theorem finite_pts_reg (G : HTGroup p) (ha : G.a = 1) (v : InfinitePlace G.F) (h
     (fun P => _root_.GlobalTheory.LKCx.ClsReg.classes_finite p G ha v hv L f hf K' f' hf' β x t hx hsep hsym htr P)
   refine ((GlobalTheory.T.orbital_term_real_trivialisation p G ha v hv L f hf K' f' hf' β x t hx hsym htr).biUnion
     (fun P _ => (Y P).finite_toSet.biUnion
-      (fun y₀ _ => GlobalTheory.T.orbital_integral_test_function_second p G ha v hv L f hf K' f' hf' β x t hx hsep hsym htr y₀))).subset ?_
+      (fun y₀ _ => _root_.GlobalTheory.FinPtsSep.finite_pts_conj_fixL_sep p G ha v hv L f hf K' f' hf' β x t hx hsep hsym htr y₀))).subset ?_
   rintro q ⟨y, hy, hne⟩
   obtain ⟨y₀, hy₀, γ, rfl⟩ := hY _ y rfl ⟨Quot.out q, hy, hne⟩
   simp only [Set.mem_iUnion]

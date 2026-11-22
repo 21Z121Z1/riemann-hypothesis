@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsThetaPtStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsThetaPt
 import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.UnivFrame
 import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.NormConst
 import Formalism.LocalToGlobal.ProjectiveLattices.CuspFree
@@ -38,7 +38,7 @@ theorem exists_isNormUn : Out.SecTwistSt → ∀ (E : Type) [Field E] [NumberFie
     have hκ0 : κ ≠ 0 := by
       rintro rfl
       exact hne (by rw [← hκ]; simp)
-    obtain ⟨y, hy⟩ := GlobalTheory.T.exists_isThetaPt' hS E H Dw l Xo c σ g e F r M k T _ hb κ hκ0
+    obtain ⟨y, hy⟩ := _root_.GlobalTheory.FrameUnif.ThetaPtEx.exists_thetaPt hS E H Dw l Xo c σ g e F r M k T _ hb κ hκ0
     exact ⟨y, κ, hκ, hy⟩
   choose un hun using key
   exact ⟨un, hun⟩

@@ -4,7 +4,7 @@ import Development.AutomorphicSpectrum.Statements.GeometryStatements.ZhangDimens
 import GroundTheory.HeightsAndTheta.Heights.KernelsLattice
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.StatementsBundles
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PolarizedDataFieldExtension
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LineOfKeyDegreeStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LineOfKeyDegree
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.ShortVectorOfSubmodule
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField MeasureTheory
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi
@@ -92,7 +92,7 @@ end GlobalTheory.CompanionTheory.Ar.Sl.TopSlope
 namespace GlobalTheory.CompanionTheory.Ar.Sl.TopSlope
 
 theorem slopeBound (hS7 : LineOfLargeDegree.Statement) (hKey : KeyDegSt) : SlopeBoundSt ∧ Prov.LemmaS := by
-  obtain ⟨C, hC0, hC⟩ := GlobalTheory.T.line_of_key_degree hKey
+  obtain ⟨C, hC0, hC⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Sl.LineProof.line_of_key hKey
   have hS : SlopeBoundSt := by
     refine ⟨C + 2, by linarith, ?_⟩
     intro E _ _ _ H L _ _ t tK m princ B MB fib

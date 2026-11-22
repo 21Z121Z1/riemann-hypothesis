@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsMirClass
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MirabolicFunctionEqInducedDerivativeAddTailStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MirabolicFunctionEqInducedDerivativeAddTail
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MirabolicInductionPhiPlusInductionFromBlockUniStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DerTailStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DerTail
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsMirabolicConjInvariantTwistedTailMeanFunStatement
 
 open Polynomial Formalism.MainNotions.ArithmeticCylinders GlobalTheory.GLq GlobalTheory.GLm
@@ -122,7 +122,7 @@ theorem eq_sum_indR_der : ∀ (g : ℕ) [Fact g.Prime] (ψ : AddChar (ZMod g) �
       rw [Finset.sum_range_one]
       exact base ψ F
     · have hT := GlobalTheory.T.isMirabolicConjInvariant_twistedTailMeanFun g ψ m (m + 1) F hm (Nat.le_succ m) hF
-      rw [GlobalTheory.T.mirabolic_function_eq_induced_derivative_add_tail g ψ hψ m F hm hF p hp, Finset.sum_range_succ,
+      rw [_root_.GlobalTheory.GLm.MirStep.mir_step g ψ hψ m F hm hF p hp, Finset.sum_range_succ,
         add_comm (indR ψ m (m + 1) (der ψ m F) p)]
       congr 1
       refine (indV_sum ψ m (tail ψ m F) (Finset.range m)
@@ -130,6 +130,6 @@ theorem eq_sum_indR_der : ∀ (g : ℕ) [Fact g.Prime] (ψ : AddChar (ZMod g) �
       refine Finset.sum_congr rfl fun i hi => ?_
       rw [Finset.mem_range] at hi
       show indV ψ m (indR ψ i m (der ψ i (tail ψ m F))) p = _
-      rw [GlobalTheory.T.mirabolicInductionPhiPlus_inductionFromBlockUni g ψ i m _ hi p hp, GlobalTheory.T.der_tail_of_lt_of_le g ψ i m (m + 1) F hi (Nat.le_succ m)]
+      rw [GlobalTheory.T.mirabolicInductionPhiPlus_inductionFromBlockUni g ψ i m _ hi p hp, _root_.GlobalTheory.GLm.DerTail.der_tail g ψ i m (m + 1) F hi (Nat.le_succ m)]
 
 end GlobalTheory.GLm.MirSum

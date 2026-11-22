@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SmallPair
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceLineConditionsDualStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceLineConditionsDual
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemLineHomLatticeCompletionIffScalar
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.KappaMemLineLatticeCompletionIffScalar
 
@@ -26,6 +26,6 @@ theorem kappa_line_lat_iff : ∀ (D : D7) (k : Type) [Field k] [ValuativeRel k] 
   have h3 := star_self_pair D B'.L B'.ζ
   have h4 : (star B.ζ ⬝ᵥ HSpace.gram B.L *ᵥ B.ζ) = D.host.xi0 * star D.host.xi0 * (star B'.ζ ⬝ᵥ HSpace.gram B'.L *ᵥ B'.ζ) := l.norm
   exact forall₂_congr fun y _ => exists_congr fun d => and_congr_right fun hd => and_congr_right fun _ =>
-    GlobalTheory.T.splitPlace_lineConditions_dual D k ι p I P hP _ _ h1 h2 h3 h4 d hd
+    _root_.GlobalTheory.FinPl.ScalarDual.cond_dual D k ι p I P hP _ _ h1 h2 h3 h4 d hd
 
 end GlobalTheory.KappaLat

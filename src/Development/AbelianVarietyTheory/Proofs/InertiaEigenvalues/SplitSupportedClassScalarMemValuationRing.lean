@@ -4,10 +4,12 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SqrtPowOdd
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ValMulSqrtUnit
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsNumerator
 import ReciprocityTheory.GaloisValuations.GlobalA
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HeckeCharLocPowEqOneOnLocalUnitsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HeckeCharLocPowEqOneOnLocalUnits
+import Formalism.LocalToGlobal.UnitaryNorms.IsUnitaryNormOf
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharacterUnramifiedAeAndExistsLevel
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ValuationEmbeddingGeneratorEqOne
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ValuationSqrtAbsNormEqOne
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HeckeCharOnIdMulSqrtAbsNormInvMemSubringStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HeckeCharOnIdMulSqrtAbsNormInvMemSubring
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsElemStdLatticeSandwichSplitSupport
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsInertTop
 open NumberField Matrix Complex IsDedekindDomain
@@ -216,7 +218,7 @@ theorem val_mul_sqrt_unit (D : D7) (c : (AE D)ˣ →* Circle) (χ : Formalism.L2
   have hroot : ∀ (v : HeightOneSpectrum (𝓞 D.host.E)) (x : D.host.Eˣ), IsUnitAt v (atFin v x) →
       A.valuation ((χ.locK v x : ℂˣ) : ℂ) = 1 := by
     intro v x hx
-    obtain ⟨m, hm, hxm⟩ := GlobalTheory.T.heckeChar_loc_pow_eq_one_on_localUnits _ χ v _ hx
+    obtain ⟨m, hm, hxm⟩ := _root_.GlobalTheory.LocUnitPow.loc_pow_eq_one _ χ v _ hx
     apply val_eq_one_of_pow A hm.ne'
     rw [← Units.val_pow_eq_pow_val, show χ.locK v x = χ.loc v (atFin v x) from rfl, hxm, Units.val_one, map_one]
   have hw : ∀ τ, A.valuation (tauE D τ (k : D.host.E) / ((‖tauE D τ (k : D.host.E)‖ : ℝ) : ℂ)) = 1 := by
@@ -372,7 +374,7 @@ theorem GlobalTheory.LevelSeries.clsScal_mem_valRing : ∀ (D : D7) (ψ : AddCha
   have hNcop : Nat.Coprime (Ideal.absNorm cc) p := Nat.Coprime.coprime_dvd_left (dvd_mul_right _ _) hcop
   have hkcop : Nat.Coprime kk p :=
     (Nat.coprime_pow_left_iff two_pos _ _).1 (Nat.Coprime.coprime_dvd_left (dvd_mul_left _ _) hcop)
-  have hv' := GlobalTheory.T.heckeChar_onId_mul_sqrt_absNorm_inv_mem_subring D.host.E χ O cc c0 fun P hP => by
+  have hv' := _root_.GlobalTheory.HeckeIdealValue.inv_mem D.host.E χ O cc c0 fun P hP => by
     have hb : ((bad : ℕ) : 𝓞 D.host.E) ∉ P.asIdeal := fun hb =>
       P.isPrime.ne_top (eq_top_iff.2 (c2 ▸ sup_le hP ((Ideal.span_singleton_le_iff_mem _).2 hb)))
     have hc : GlobalTheory.IdemSupport.cP P ≠ P := fun hc => by

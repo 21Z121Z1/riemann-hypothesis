@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsLv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnipotentFrameCoordsOfMemIsotropicUnipoten
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnipotentRadicalPointWithCoordsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnipotentRadicalPointWithCoords
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentRadicalCoordinatesGroupLaw
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemRationalPointsOfUnipotentCoordsRational
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsCompactOfUnipotentCoordinatesMem
@@ -143,7 +143,7 @@ theorem cover_unipRad : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Nu
 
   obtain ⟨Y₁, hY₁, hcov₁⟩ := hrect μ
   obtain ⟨Y₂, hY₂, hY₂sk, hcov₂⟩ := hskew μ
-  have crd2 := GlobalTheory.T.exists_unipotentRadical_point_with_coords F E σ n J j m C D Z J₀ hFr
+  have crd2 := _root_.GlobalTheory.SphEis.UnipCrd.exists_unipRad_crd F E σ n J j m C D Z J₀ hFr
   have hrel : ∀ (b : Matrix (Fin j) (Fin m) (AF F ⊗[F] E)) (z : Matrix (Fin j) (Fin j) (AF F ⊗[F] E)),
       cT (sigR (AF F) σ) z = -z →
       (z - (2⁻¹ : F) • (b * plus σ J₀ b)) + cT (sigR (AF F) σ) (z - (2⁻¹ : F) • (b * plus σ J₀ b)) +

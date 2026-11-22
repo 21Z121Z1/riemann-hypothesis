@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsRatioOfWeight
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GeometricallyConnectedOfIsIsoRestrict
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermPairPowSectionMemAndNormPow
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjArithResidueCharFibreStructureStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjArithResidueCharFibreStructure
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RegularNonvanishingLocusSectionProperties
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSectionLoweringFibreDimension
 
@@ -65,7 +65,7 @@ theorem exists_gens (k : Type) [CommRing k] (X : Scheme.{0}) [IsIntegral X] (p :
     ∃ (e : ℕ) (x : Fin (D + 1) → X.functionField), Gens P D e x := by
   obtain ⟨e, x, he, hx, hc⟩ := exists_cover k X p D hX P hP (D + 1) Set.univ isClosed_univ fun ℓ => by
     rw [Set.univ_inter, Nat.cast_add_one]
-    exact ENat.WithBot.lt_add_one_iff.2 ((GlobalTheory.T.projArith_residueCharFibre_structure k X p D hX).2.2.2.1 ℓ)
+    exact ENat.WithBot.lt_add_one_iff.2 ((_root_.GlobalTheory.IntFib.fib_structure k X p D hX).2.2.2.1 ℓ)
   exact ⟨e, x, he, hx, fun z => hc z trivial⟩
 
 end GlobalTheory.HSAmp.NoethGens

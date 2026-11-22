@@ -30,7 +30,7 @@ theorem prvG5_of_admissible_cutRec : LocalFiniteness → LocalTateDuality → Lo
   intro h1 h2 h3 D hA hRb hC
   have hLGC : _root_.GlobalTheory.StringRepresentationDecomposition.LocalGlobalCompatible D := _root_.UpperTheory.GalS.lgc_of_cut'_alt D hA.1.1 hC
   have hEig : EigPd D := _root_.UpperTheory.GalS.eigPd_holds_alt D hA.1.1 hLGC hRb
-  have hH : HOneTwo D := GlobalTheory.T.hOneTwo_of_localFiniteness_tateDuality_eulerChar h1 h2 h3 D
+  have hH : HOneTwo D := _root_.GlobalTheory.HOneTwoLevel.hOneTwo_holds h1 h2 h3 D
   refine _root_.Formalism.MainNotions.SumRepresentations.galois_clause_of_sufficient_alt D hA.1.1 fun i hg r hr w hw => ⟨hLGC i r hr w hw, fun hS => ⟨hRb i hg, fun rb hrb => ?_⟩⟩
   have hS' := (D.nd.S_def i w).1 hS
   have hnr : ¬ (((rb (D.nd.gam0 i w) : GL _ _) : Matrix (Fin D.R.r) (Fin D.R.r) _).charpoly).IsRoot

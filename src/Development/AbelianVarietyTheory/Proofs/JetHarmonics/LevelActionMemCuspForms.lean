@@ -20,9 +20,9 @@ import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIsometryOfSabM
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsUnitGramFrameBorelChange
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsEqConstMulOfForallExistsNormEq
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.EqZeroOfMulEqZero
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsRationalIsometryOfTraceIsometryStatement
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NotAntiIsometryOfTriangularRelatedPeriodsStatement
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FramesDifferByIsometryAndTriangularOfPeriodsStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsRationalIsometryOfTraceIsometry
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NotAntiIsometryOfTriangularRelatedPeriods
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FramesDifferByIsometryAndTriangularOfPeriods
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIsometryTriangularPeriodsOfFramePointMove
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FramedPointMoveCalculus
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.CabsDiagEqOne
@@ -53,7 +53,7 @@ theorem exists_match (hσ : Formalism.L2.PjFree.GoodEmb c σ) (hU : Formalism.L2
       x'.1 = rmul (lact a (castFr h.psi x.1)) b ∧ (∀ τ i, ‖b τ i i‖ = 1) ∧ ∀ j, cabs (t j : CAt σ) = 1 := by
   obtain ⟨gam, A, htr, hA0, hA, hAt⟩ := _root_.GlobalTheory.LevelCusp.exists_isometry_tri_of_frMove E H Dw l Xo c σ r U hσ hU ρ ν k k' x x' y' t hm hb
   have hgen := _root_.GlobalTheory.LevelCusp.cabs_gen_eq_one_of_move E H Dw l Xo c σ r U hσ hU ρ ν k k' x x' y' t hm hb hx hx'
-  obtain ⟨a, ε, hε, hξ, hav, hlat, hiso⟩ := GlobalTheory.T.exists_rational_isometry_of_trace_isometry E r (U.X k) (U.X k') (hxi k k') gam htr
+  obtain ⟨a, ε, hε, hξ, hav, hlat, hiso⟩ := _root_.GlobalTheory.TraceIsometry.exists_gl_of_trace_isometry E r (U.X k) (U.X k') (hxi k k') gam htr
   obtain ⟨hbij, hrt, -, -⟩ := GlobalTheory.Relab.relab_good E H l c σ hσ
   obtain ⟨hrr, hty, -⟩ := hU
   have hΨ : (U.X k).Ψ = (U.X k').Ψ := Finset.ext fun τ => ((hty k).2 τ).trans ((hty k').2 τ).symm
@@ -76,7 +76,7 @@ theorem exists_match (hσ : Formalism.L2.PjFree.GoodEmb c σ) (hU : Formalism.L2
   rcases hε with rfl | rfl
   · have h : IsMatch (U.X k) (U.X k') a :=
       ⟨hΨ, hp, by rw [hξ, one_mul], fun u v => by rw [hiso, one_mul], hlat⟩
-    obtain ⟨b, hb, hxb, hu⟩ := GlobalTheory.T.frames_differ_by_isometry_and_triangular_of_periods E r _ _ a h (fun τ => Dw.mult (e.symm τ)) m1 m2 x.1 x.2 x'.1 x'.2
+    obtain ⟨b, hb, hxb, hu⟩ := _root_.GlobalTheory.PeriodBorel.borel_of_periods E r _ _ a h (fun τ => Dw.mult (e.symm τ)) m1 m2 x.1 x.2 x'.1 x'.2
       (fun τ => A (e.symm τ)) (fun τ => hA0 _) hrel
     obtain ⟨h1, h2⟩ := hu hx hx'
     refine ⟨a, h, b, hb, hxb, h1, fun j => ?_⟩
@@ -85,7 +85,7 @@ theorem exists_match (hσ : Formalism.L2.PjFree.GoodEmb c σ) (hU : Formalism.L2
     · have := h2 (e τ) i (by rw [e.symm_apply_apply]; exact i.2)
       rw [e.symm_apply_apply, hAt] at this
       exact this
-  · exact (GlobalTheory.T.not_antiIsometry_of_triangular_related_periods E r _ _ hΨ hp hr a hiso (fun τ => Dw.mult (e.symm τ)) m1 m2 x.1 x.2 x'.1 x'.2
+  · exact (_root_.GlobalTheory.AntiIsom.not_antiIsometry E r _ _ hΨ hp hr a hiso (fun τ => Dw.mult (e.symm τ)) m1 m2 x.1 x.2 x'.1 x'.2
       (fun τ => A (e.symm τ)) (fun τ => hA0 _) hrel).elim
 
 theorem laU_match {k k' : U.Comp} {a : GL (Fin r) E} (h : IsMatch (U.X k) (U.X k') a)

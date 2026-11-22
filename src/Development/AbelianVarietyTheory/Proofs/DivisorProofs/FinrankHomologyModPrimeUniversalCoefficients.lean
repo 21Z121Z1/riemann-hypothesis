@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardQuotPrimeSmulEqCardKerMulPowFinrankStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NatCardHomologyOfShortExactMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardZmodTensorEqCardQuotPrimeMultiplesStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NatCardHomologyRestrictScalarsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NatCardHomologyRestrictScalars
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShortExactMulPrimeZmodTensorComplex
 open CategoryTheory Limits
 
@@ -12,7 +12,7 @@ theorem uct_mod_p : ∀ (C : CochainComplex (ModuleCat.{0} ℤ) ℕ) (p : ℕ) [
   intro C p _ hinj hfin n
   obtain ⟨π, hz, hS⟩ := _root_.GlobalTheory.shortExact_mul_p_modP C p hinj
   have e := _root_.GlobalTheory.natCard_homology_of_shortExact_mul p C _ π hz hS n
-  rw [GlobalTheory.T.natCard_homology_restrictScalars_alt] at e
+  rw [_root_.GlobalTheory.natCard_homology_restrictScalars] at e
   haveI := hfin n
   haveI := hfin (n + 1)
   have a1 := GlobalTheory.T.card_quot_range_prime_smul_eq_card_ker_mul_pow_finrank (C.homology n) p

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOneP
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ThetaKernelLiftConvergesContinuousGrowthDeriv
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GelfandOperatorAdjointDecayingStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GelfandOperatorAdjointDecaying
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemSmoothFunctionsOfClosedRightDerivatives
 
 noncomputable section
@@ -141,7 +141,7 @@ theorem lift_adjoin (hθ : IsInfFam θ) (hκ : IsKerSys θ V W κ) (hq : IsQuot 
   | mem x hx =>
     obtain ⟨k, rfl⟩ := hx
     intro f F hF
-    obtain ⟨F', hF', e⟩ := GlobalTheory.T.gelfand_operator_adjoint_decaying D θ hθ V μ 𝓕 hq τ Z hZ k F hF
+    obtain ⟨F', hF', e⟩ := _root_.GlobalTheory.Mem.GelfParts.gelf_by_parts D θ hθ V μ 𝓕 hq τ Z hZ k F hF
     refine ⟨F', hF', funext fun h => ?_⟩
     have := e _ (isMod_ker hθ hκ f h)
     rw [ha] at this

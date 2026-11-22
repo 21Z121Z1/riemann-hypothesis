@@ -99,7 +99,7 @@ theorem exists_frame_of_rsp : ∀ (k : Type) [Field k] [CharZero k] (Y : Scheme.
     rw [key]
     exact hw
 
-  obtain ⟨e, he, hdet⟩ := GlobalTheory.T.exists_standard_basis_extension_det_ne_zero ab hab
+  obtain ⟨e, he, hdet⟩ := _root_.GlobalTheory.extend_linearIndependent_rows_by_standard_basis ab hab
   let z : Fin n → Γ(X, U) := Function.extend e z₀ x
   let c : Matrix (Fin n) (Fin n) Γ(X, U) :=
     Matrix.of (Function.extend e a (fun i => Pi.single i (1 : Γ(X, U))))

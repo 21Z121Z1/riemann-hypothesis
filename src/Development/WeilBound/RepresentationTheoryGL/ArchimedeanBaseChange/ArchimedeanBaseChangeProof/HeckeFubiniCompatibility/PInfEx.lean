@@ -61,7 +61,7 @@ theorem exists_gelf (V : Type) [AddCommGroup V] [Module ℂ V] (m : ℕ) (M : Fi
   set f : Module.Dual ℂ V := (f₀ v)⁻¹ • f₀ with hfd
   have hf : f v = 1 := by
     rw [hfd, LinearMap.smul_apply, smul_eq_mul, inv_mul_cancel₀ hf₀]
-  obtain ⟨c, hc1, hc⟩ := GlobalTheory.T.exists_monic_poly_eq_qdet (Module.End ℂ V) (m + 1) M
+  obtain ⟨c, hc1, hc⟩ := _root_.GlobalTheory.qdet_polyMap_monic (Module.End ℂ V) (m + 1) M
   set Q := GlobalTheory.CapelliNewton.polyOf (m + 1) c f v with hQd
   have hQ : ∀ u : ℂ, Q.eval u = f (Formalism.REAL.qdet M u v) := fun u => by
     rw [hQd, GlobalTheory.CapelliNewton.polyOf_eval, hc]

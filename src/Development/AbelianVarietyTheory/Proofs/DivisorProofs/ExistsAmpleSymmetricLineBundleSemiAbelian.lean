@@ -1,5 +1,5 @@
 import Development.AbelianVarietyTheory.Definitions.Divisors.SubsetSpanBy
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAffineNonzeroLocusDescendFlatBaseChangeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAffineNonzeroLocusDescendFlatBaseChange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAmpleSymmetricLineBundleGrpSchemeStatement
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAffineNonzeroLocusUnitClosedFibreSemiAb
@@ -23,7 +23,7 @@ theorem exists_ample_symmetric : ∀ (R : Type) [CommRing R] [IsRegularLocalRing
   have hcs : CompactSpace G.left := QuasiCompact.compactSpace_of_compactSpace G.hom
   have hamp : IsAmpleLB M₀ := ⟨hM, hcs, fun y => by
     obtain ⟨R', _, ρ, hρ, x', hx', hs⟩ := hpt y
-    have h := GlobalTheory.T.exists_affine_nonzeroLocus_descend_flat_baseChange R R' ρ hρ G.left G.hom inferInstance inferInstance M₀ hM x' hs
+    have h := _root_.GlobalTheory.AmplePoint.exists_affine_locus R R' ρ hρ G.left G.hom inferInstance inferInstance M₀ hM x' hs
     rwa [hx'] at h⟩
   exact GlobalTheory.T.exists_ample_symmetric_lineBundle_grpScheme (Sp R) G M₀ hamp
 

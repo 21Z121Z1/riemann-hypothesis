@@ -13,11 +13,11 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AlgebraMapInte
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NontrivialTwJacquetOfSurjective
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.BernsteinZelevinskyFiniteness
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsNontrivialDerivativeStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedJacquetIteratedPhiEquivStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedJacquetIteratedPhiEquiv
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RestrictionMirabolicTwistedKernel
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivativeZeroWhittakerKernelStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivativeZeroWhittakerKernel
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedJacquetPhiMinusEquiv
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothPhiMinusStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothPhiMinus
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothPsiMinusStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InvariantPairingMirabolicSmooth
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InvariantPairingMirabolicVanishing
@@ -45,7 +45,7 @@ theorem exists_highest (ψ : AddChar k Circle) (hc : Continuous ψ) (h1 : ψ ≠
     ∃ n, 0 < n ∧ n < N ∧ Nontrivial (TwJacquet π (derUnip k N n) (derChar k ψ N n)) ∧
       ∀ m < n, Subsingleton (TwJacquet π (derUnip k N m) (derChar k ψ N m)) := by
   have h0 : ¬ Nontrivial (TwJacquet π (derUnip k N 0) (derChar k ψ N 0)) := fun h =>
-    hg ((twJ_congr (GlobalTheory.T.derivative_zero_whittaker_kernel k ψ N V π)).1 h)
+    hg ((twJ_congr (_root_.GlobalTheory.CompanionTheory.DerWhit.twKer_derUnip_zero k ψ N V π)).1 h)
   rcases N with _ | m
   · exfalso
     refine hg ?_
@@ -74,7 +74,7 @@ theorem exists_highest (ψ : AddChar k Circle) (hc : Continuous ψ) (h1 : ψ ≠
 theorem isSmooth_iterPhi (ψ : AddChar k Circle) (n : ℕ) : ∀ (j : ℕ) (τ : MRep k (n + j)), IsSmooth τ.ρ →
     IsSmooth (iterPhi k ψ j τ).ρ
   | 0, _, h => h
-  | j + 1, τ, h => isSmooth_iterPhi ψ n j (MRep.phiM k ψ τ) (GlobalTheory.T.smooth_phi_minus k ψ _ _ τ.ρ h)
+  | j + 1, τ, h => isSmooth_iterPhi ψ n j (MRep.phiM k ψ τ) (_root_.GlobalTheory.CompanionTheory.BZMirSmooth.smPhiMinus k ψ _ _ τ.ρ h)
 
 theorem isSmooth_resM {n : ℕ} {V : Type} [AddCommGroup V] [Module ℂ V] {π : Representation ℂ (GL (Fin (n + 1)) k) V}
     (h : IsSmooth π) : IsSmooth (resM k π).ρ := isSmooth_comp h _ continuous_subtype_val
@@ -101,7 +101,7 @@ theorem phi_vanish (ψ : AddChar k Circle) (hc : Continuous ψ) (h1 : ψ ≠ 1) 
     not_subsingleton_iff_nontrivial.1 hcon
   have hT := isSmooth_iterPhi ψ (n + 1) j (resM k π) (isSmooth_resM hs)
   obtain ⟨m, hm, h⟩ := GlobalTheory.T.exists_nontrivial_derivative k ψ hc h1 n _ (phiMinus k ψ (iterPhi k ψ j (resM k π)).ρ)
-    (GlobalTheory.T.smooth_phi_minus k ψ _ _ _ hT) hnt
+    (_root_.GlobalTheory.CompanionTheory.BZMirSmooth.smPhiMinus k ψ _ _ _ hT) hnt
   obtain ⟨e₂⟩ := _root_.GlobalTheory.CompanionTheory.BZMirStep.phiMinus_twJacquet_equiv k ψ n m hm _ (iterPhi k ψ j (resM k π)).ρ
   obtain ⟨e₁⟩ := iterPhi_derUnip ψ m (n + 1) (by omega) j (resM k π)
   have h3 : Nontrivial (TwJacquet (resM k π).ρ (derUnipM k (n + 1 + j) m) (derCharM k ψ (n + 1 + j) m)) :=
@@ -113,7 +113,7 @@ theorem deriv_nontrivial (ψ : AddChar k Circle) (n j : ℕ) {V : Type} [AddComm
     [Module ℂ V] (π : Representation ℂ (GL (Fin (n + 1 + j + 1)) k) V)
     (h : Nontrivial (TwJacquet π (derUnip k (n + 1 + j + 1) (n + 1)) (derChar k ψ (n + 1 + j + 1) (n + 1)))) :
     Nontrivial (TwJacquet (iterPhi k ψ j (resM k π)).ρ (MirUin k (n + 1)) 1) := by
-  obtain ⟨e⟩ := GlobalTheory.T.twisted_jacquet_iterated_phi_equiv k ψ (n + 1) j (resM k π)
+  obtain ⟨e⟩ := _root_.GlobalTheory.CompanionTheory.BZMir.iterPhi_twJacquet_equiv k ψ (n + 1) j (resM k π)
   have h2 := (twJ_congr (_root_.GlobalTheory.CompanionTheory.BZMirDer.twKer_resM_derUnipM k ψ (n + 1 + j) (n + 1) V π)).2 h
   exact e.toEquiv.nontrivial
 
@@ -141,7 +141,7 @@ theorem pair_iter (ψ : AddChar k Circle) (hc : Continuous ψ) (h1 : ψ ≠ 1) (
   | j + 1, s, τ, τ', hs, hs', B, hB, hn, hv => by
     obtain ⟨B₁, hB₁, hn₁⟩ := _root_.GlobalTheory.CompanionTheory.MirPair.pairing_phi k ψ hc h1 (n + 1 + j) s _ _ τ.ρ τ'.ρ hs hs' B hB hn
     obtain ⟨B₂, hB₂, hn₂⟩ := pair_iter ψ hc h1 n j (s + 1) (MRep.phiM k ψ τ) (MRep.phiM k ψ⁻¹ τ')
-      (GlobalTheory.T.smooth_phi_minus k ψ _ _ _ hs) (GlobalTheory.T.smooth_phi_minus k ψ⁻¹ _ _ _ hs') B₁ hB₁ hn₁ hv
+      (_root_.GlobalTheory.CompanionTheory.BZMirSmooth.smPhiMinus k ψ _ _ _ hs) (_root_.GlobalTheory.CompanionTheory.BZMirSmooth.smPhiMinus k ψ⁻¹ _ _ _ hs') B₁ hB₁ hn₁ hv
     refine ⟨B₂, fun g w w' => ?_, hn₂⟩
     have e : s + (j + 1) = s + 1 + j := by omega
     rw [e]

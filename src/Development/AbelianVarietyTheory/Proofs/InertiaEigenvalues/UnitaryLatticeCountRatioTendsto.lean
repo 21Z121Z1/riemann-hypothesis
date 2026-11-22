@@ -3,11 +3,11 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnitLemmaGr
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LinearDescent
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SelfDualStableLatticeUnitOrbitsFinite
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FullLatticeSandwichBetweenIntegralElements
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TorusOrbitLatticeCountBoundedByRhoStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TorusOrbitLatticeCountBoundedByRho
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UUEqSumOverTorusOrbits
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TorusModIntegralUnitsStructureAndIntegrality
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteAlgebraInvolutionRhoPowEqCardBox
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TendstoRatioBoxCountsProdOneStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TendstoRatioBoxCountsProdOne
 
 open GlobalTheory.UnitLemma Polynomial Filter Topology
 
@@ -16,11 +16,11 @@ namespace GlobalTheory.UnitLemma
 theorem unitaryLimit : UnitaryLimit := by
   have L0 := _root_.GlobalTheory.UnitLemma.OrbitFinite.orbits_finite
   have S1 := _root_.GlobalTheory.UnitLemma.lattice_sandwich
-  have S2 := GlobalTheory.T.torus_orbit_lattice_count_bounded_by_rho
+  have S2 := _root_.GlobalTheory.TorusOrbitLat.orbit_count
   have S3 := _root_.GlobalTheory.UnitLemma.UU_eq_sum_orbits
   have S4 := _root_.GlobalTheory.UnitLemma.torus_mod_intUnits_structure
   have S5 := _root_.GlobalTheory.UnitLemma.rho_pow_eq_card_box
-  have S6 := GlobalTheory.T.tendsto_ratio_box_counts_prod_one
+  have S6 := _root_.GlobalTheory.ratio_box_counts_tendsto_one
 
   intro K B hB a ha x hx
   classical

@@ -2,7 +2,7 @@ import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.FriedrichsKernels.Friedrichs
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RdSkewEqConst
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CasimirOperatorFormula
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SobolevIntegrationByPartsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SobolevIntegrationByParts
 
 noncomputable section
 
@@ -199,6 +199,6 @@ theorem secBound (hI : IbpSob) : SecBound := by
   rw [sum_inner, Complex.re_sum, Finset.sum_mul]
   exact Finset.sum_le_sum fun c _ => hterm a c
 
-theorem secBound_main : SecBound := secBound GlobalTheory.T.sobolev_integration_by_parts
+theorem secBound_main : SecBound := secBound _root_.GlobalTheory.CompanionTheory.FcCalc.Ibp.ibpSob
 
 end GlobalTheory.CompanionTheory.SecBd

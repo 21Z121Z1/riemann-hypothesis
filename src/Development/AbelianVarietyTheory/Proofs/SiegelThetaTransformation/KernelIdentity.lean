@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DblZMem
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.MapConjInv
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FiniteClsAndStab
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.EisAutomorphyLinear
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DoubledHermitianTestFunctionSpecStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DoubledHermitianTestFunctionSpec
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.MaximalIsotropicDoubledGraphOrIsotropic
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.EisensteinSeriesTermUnitaryGraph
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.WeilDoubledTestFunctionZeroEqZero
@@ -63,7 +63,7 @@ theorem hasSum_eis (hb : IsSympl X bas) (hn : Even n) (h4 : 4 * r < n) {M : ℕ}
   set φ₂ := Φ L₂ Λ with hφ₂def
   have hφ₁ : IsSB φ₁ := hS.sb L₁ h₁ Λ hΛ
   have hφ₂ : IsSB φ₂ := hS.sb L₂ h₂ Λ hΛ
-  have hψ : IsSB (dbl X bas idx φ₁ φ₂) := (GlobalTheory.T.doubledHermitianTestFunction_spec E r X g bas idx n hb hn φ₁ φ₂ hφ₁ hφ₂).1
+  have hψ : IsSB (dbl X bas idx φ₁ φ₂) := (_root_.GlobalTheory.SW.DblEx.dbl_spec E r X g bas idx n hb hn φ₁ φ₂ hφ₁ hφ₂).1
   obtain ⟨hT, hZ, -⟩ := GlobalTheory.SW.dblZ_mem_Hn E r X x₁ hx₁ x₂ hx₂
   have hsum := (GlobalTheory.SW.eis_automorphy_linear E X.Ψ hT n r hn h4 _ hψ _ hZ).1
     (dblz X idx x₁ x₂ z w) (dblz' X idx x₁ x₂ z w)
@@ -296,7 +296,7 @@ theorem kernel_identity : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E]
             (dblz' X idx x₁ x₂ p.1 p.2)) := rfl
     rw [hTd p, hSd p, e, hcs, Finset.mul_sum, Finset.mul_sum, ← Finset.sum_add_distrib]
     refine Finset.sum_congr rfl fun cl _ => ?_
-    have hD := (GlobalTheory.T.doubledHermitianTestFunction_spec E r X g bas idx n hb hn _ _ (hφ L₁ h₁ cl) (hφ L₂ h₂ cl)).2.1
+    have hD := (_root_.GlobalTheory.SW.DblEx.dbl_spec E r X g bas idx n hb hn _ _ (hφ L₁ h₁ cl) (hφ L₂ h₂ cl)).2.1
       x₁ hx₁ x₂ hx₂ p.1 p.2
     have hst : star p.2 = fun k i => conj (p.2 k i) := rfl
     rw [hst, hD]

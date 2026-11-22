@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivisibleGroupLatt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHodgeSequenceFirstMapLattice
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivGroupHodgeTateFirstMapNatural
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeTateSeparatesDualLieGhostComponent
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeTateLatticeMuPInfinityFreeRankOneStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeTateLatticeMuPInfinityFreeRankOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFrobeniusHodgeTateLatticeAinf
 
 set_option autoImplicit false
@@ -94,7 +94,7 @@ theorem prismaticDieudonneHodgeAt_of_hasDatum : ∀ (p : ℕ) [Fact p.Prime] (C 
     exact (hq G _ t).trans ((hq H m _).symm.trans (congrArg (q H m) (hodgeTate_tateMap f t)))
   · obtain ⟨e, he⟩ := _root_.GlobalTheory.PDivLat.latt_const_equiv p C v O hv ε hε
     exact ⟨e, fun m => (he _).trans ((hφ1 _ _ _).trans (congrArg _ (he m).symm))⟩
-  · obtain ⟨e, he⟩ := GlobalTheory.T.hodgeTateLattice_muPInfinity_free_rank_one p C v O hv ε hε
+  · obtain ⟨e, he⟩ := _root_.GlobalTheory.MuLattice.latt_mu_equiv p C v O hv ε hε
     refine ⟨e, fun m => mul_left_cancel₀ hμ ?_⟩
     have h1 : Sandwich.mu ε * e (φ _ m) = WittVector.frobenius (Sandwich.mu ε * e m) :=
       (he _).trans ((hφ1 _ _ _).trans (congrArg _ (he m).symm))

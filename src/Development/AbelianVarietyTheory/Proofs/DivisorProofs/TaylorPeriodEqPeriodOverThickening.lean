@@ -18,7 +18,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodOverRingRestr
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodConstExt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CloseTaylorShift
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsParameterTaylorExpansionHomApplyOfParamOnly
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsParameterTaylorExpansionHomFibreDerivationStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsParameterTaylorExpansionHomFibreDerivation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSliceZeroIsTay
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TaylorRestrictionSubMemIdealMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTaylorAlgHomHolomorphicNilpotent
@@ -91,7 +91,7 @@ theorem GlobalTheory.GaussManinTaylor.taylor_period_eq_period_over_thickening : 
     rw [_root_.GlobalTheory.AnPer.isTay_apply_of_fn_eq_param N' t' _ _ (hmem0 k) (ρ k) (hρ k) _ f.fn (fun q hq ↦ Charts.fn_cst _ _ _ hq)]
     exact congrArg (· ⊗ₜ[ℂ] (1 : Hol (K₀.W k))) (hθ f).symm
   have hdw : ∀ k a h, ρ k (dw a h) = LinearMap.lTensor R (dw a).toLinearMap (ρ k h) := fun k a h ↦
-    GlobalTheory.T.isParameterTaylorExpansionHom_fibreDerivation N' t' _ _ (hmem0 k) (ρ k) (hρ k) a h
+    _root_.GlobalTheory.AnPer.isTay_dw_lTensor N' t' _ _ (hmem0 k) (ρ k) (hρ k) a h
   have hclose : ∀ l k' k (h : K₀.le l k' k), Close (M.map (Algebra.TensorProduct.includeLeft : R →ₐ[ℂ] R ⊗[ℂ] Hol (K₀.W k'))) ((ρ k').comp (Charts.sh (hka' h))) ((Algebra.TensorProduct.map (AlgHom.id ℂ R) (Charts.shA h)).toRingHom.comp (ρ k)) := by
     intro l k' k h
     have hρk := hρ k

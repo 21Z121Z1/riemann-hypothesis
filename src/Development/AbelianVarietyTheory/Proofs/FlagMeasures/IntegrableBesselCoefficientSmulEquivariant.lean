@@ -3,8 +3,8 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBess
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ExistsIsFolnerUWset
 import Formalism.FormalDegreeBessel.FinalG
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselSubgroupsClosedUnitaryWCompact
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnimodularBesselSubgroupsUWNStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.WeilFormulaBesselUnitaryIntegrableStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnimodularBesselSubgroupsUWN
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.WeilFormulaBesselUnitaryIntegrable
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselSubgroupRepTwistedIsUnitaryRep
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselFormCoeffProductFubiniIntegrable
 
@@ -153,8 +153,8 @@ theorem integrable_coef_smul : ∀ (k r : ℕ) {H : Type} [NormedAddCommGroup H]
   obtain ⟨-, hσ, -, -, hHG, -, -, -, -⟩ := hStd
   obtain ⟨hz, hT, hπ, hHS, -⟩ := hSide
   have hcl := _root_.GlobalTheory.SgInf.closedSub_groups k r z hz hT
-  have hUS : IsUnimod (Sset k r z) μS := (GlobalTheory.T.unimodular_besselSubgroups_UW_N k r z hz hT μS).1 hHS
-  obtain ⟨hνσ, hνG, hmap, -, -⟩ := GlobalTheory.T.weil_formula_besselUnitary_integrable k r (Sset k r z) μG μS ν hcl.2.2.2.1 hHG hHS hUS hq
+  have hUS : IsUnimod (Sset k r z) μS := (_root_.GlobalTheory.SgInf.unimodular_S_N_UW k r z hz hT μS).1 hHS
+  obtain ⟨hνσ, hνG, hmap, -, -⟩ := _root_.GlobalTheory.SgInf.weil_integrable k r (Sset k r z) μG μS ν hcl.2.2.2.1 hHG hHS hUS hq
   have : SigmaFinite μG := hHG.1
   have : SigmaFinite μS := hHS.1
   have : SigmaFinite ν := hνσ

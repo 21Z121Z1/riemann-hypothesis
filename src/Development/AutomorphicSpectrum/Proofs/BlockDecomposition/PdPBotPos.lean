@@ -12,7 +12,8 @@ import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomology
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousCochainFiltrationDecomposition
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsChartFromCoordinatesStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartIsGoodStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartDividedPowersGradedConstantStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartDividedPowersGradedConstant
+import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.Coords
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SheafFiltrationProperty
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.InclStd
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ScalarMultiplicationShiftsFiltration
@@ -134,8 +135,8 @@ theorem chart_tens : ∀ {O A : Type} [CommRing O] [CommRing A] [Algebra O A] {I
   have hQ' : ∀ T, TS γ q l s {V} T → InU V T := by
     rintro T ⟨-, V', rfl, h⟩
     exact h
-  have pO := (GlobalTheory.T.chart_divided_powers_graded_constant cO (GlobalTheory.T.chart_is_good cO) (TO q l s {V}) hQ hD).1
-  have pA := (GlobalTheory.T.chart_divided_powers_graded_constant cA (GlobalTheory.T.chart_is_good cA) (TS γ q l s {V}) hQ' hD').1
+  have pO := (_root_.GlobalTheory.CompanionTheory.ChartFil.chart_grConst cO (GlobalTheory.T.chart_is_good cO) (TO q l s {V}) hQ hD).1
+  have pA := (_root_.GlobalTheory.CompanionTheory.ChartFil.chart_grConst cA (GlobalTheory.T.chart_is_good cA) (TS γ q l s {V}) hQ' hD').1
   have bot1 : ∀ r : ℕ, r ≠ 0 → cO.D.pdPow r = ⊥ := fun r hr => by
     rw [pO, dividedPowerFiltration_dividedPowersBot' O hr, Ideal.map_bot]
   have mA : ∀ (r : ℕ) (z : A ⊗[O] Γ(X, V)), eA z ∈ cA.D.pdPow r ↔

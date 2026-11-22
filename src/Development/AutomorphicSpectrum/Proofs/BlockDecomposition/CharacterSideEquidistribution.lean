@@ -9,7 +9,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaSeriesVani
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaSeriesUniformBoundCompact
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanCutoffContinuousCompactSupport
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinitePlaceCutoffContinuousCompactSupport
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PureFunctionEnlargeFiniteSetStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PureFunctionEnlargeFiniteSet
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PureFunctionTranslateRayUnits
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PureFunctionThetaSeriesInvariance
 
@@ -47,7 +47,7 @@ theorem limit (hE : PositivityTheory.Rg.Mass.Equi) (hF : IsTotallyReal F) (θ : 
   have hφ := _root_.GlobalTheory.CompanionTheory.BasePsi.phiA_test F G a hG hGc
   have hψ := _root_.GlobalTheory.CompanionTheory.BasePsi.Test.psiA_isTest F S g a hgS
   have h := hE F hF θ hθ li lam hli hlam Unit T (phiA G a) (fun v => psiA S g a v) hφ.1 hφ.2 (fun v _ => hψ v)
-  rw [GlobalTheory.T.pure_function_enlarge_finite_set F li lam hli hlam S T G g a hST hT] at h
+  rw [_root_.GlobalTheory.CompanionTheory.BasePsi.Integrals.integrals_translates F li lam hli hlam S T G g a hST hT] at h
   simp only [Fintype.card_unit, mul_one] at h
   set d := Module.finrank ℚ F with hd
   have hdpos : d ≠ 0 := (Module.finrank_pos (R := ℚ) (M := F)).ne'

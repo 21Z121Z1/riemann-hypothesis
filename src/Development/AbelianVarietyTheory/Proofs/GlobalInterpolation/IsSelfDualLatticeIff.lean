@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsFieldAdicCo
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NotIsFieldAdicCompletionTensorOfSplit
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.AdditiveCharConductorExists
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IntegralClosureCompletedCMAlgebraCompactOpen
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.HermitianFormFiniteZerosOnLineCmExtStatement
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.HermitianFormFiniteZerosOnLineCmExt
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsCompactOpenUnitsSubgroupContinuousSqrtStatement
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.AddHaarMapSmulOfNormEqOneStatement
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MeasureEqZeroOfFiniteInterLinesStatement
@@ -122,7 +122,7 @@ theorem null_and_exists (hσ : IsCMExt F E σ) (hM : 1 ≤ M) (hJ : IsHermND σ 
   haveI : BorelSpace (Fv F v ⊗[F] E) := ⟨rfl⟩
   have hq := continuous_q v σ J
   have hnull : μ {X | qR (Fv F v) σ J (X 0) = 0} = 0 := by
-    obtain ⟨y, hy⟩ := GlobalTheory.T.hermitian_form_finite_zeros_on_line_cmExt F E σ hσ M hM J hJ (Fv F v)
+    obtain ⟨y, hy⟩ := _root_.GlobalTheory.HermLineZeros.finite_zeros_on_line F E σ hσ M hM J hJ (Fv F v)
     exact GlobalTheory.T.measure_eq_zero_of_finite_inter_lines' (Fv F v) _ μ _ (isClosed_eq hq continuous_const).measurableSet (fun _ => y)
       fun x => hy (x 0)
   refine ⟨hnull, ?_⟩

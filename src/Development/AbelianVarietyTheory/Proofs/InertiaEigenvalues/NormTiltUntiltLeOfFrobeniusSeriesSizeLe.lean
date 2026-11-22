@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ImportsAlt
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormHasSumEqOfDominant
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UntiltFrobeniusSeriesRadiusSizeLaws
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UntiltFrobeniusLaurentSeriesHasSumBoundFrobenius
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TiltFrobeniusIntegerPowerLawsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TiltFrobeniusIntegerPowerLaws
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUniqueMaxTermUntiltFrobeniusSeries
 open Formalism.Per GlobalTheory.PSer
 open scoped Formalism.Per
@@ -19,7 +19,7 @@ theorem norm_sh_le_of_lam_le : ∀ (l : ℕ) [Fact l.Prime] (h : ℕ) (ρ : ℝ)
   have h1 : 1 ≤ h := le_trans (by norm_num) h2
   obtain ⟨j, hj, n₀, hn₀⟩ := _root_.GlobalTheory.PSer.Uniq.exists_unique_max_term l h s h2 hs0 hs1
   obtain ⟨hsum, -, -, -⟩ := _root_.GlobalTheory.PSer.lam_hasSum_norm_le_frob l h j s x h1 hs1 le_rfl
-  have hpw := (GlobalTheory.T.tiltFrobeniusIntegerPower_laws l).2.2.2.2.2.2
+  have hpw := (_root_.GlobalTheory.PSer.PwLaws.pw_laws l).2.2.2.2.2.2
   have hterm : ∀ n : ℤ, ‖(l : ℂ_[l]) ^ (-n) * sh (pw (n * h + j) x)‖
       = ‖(l : ℂ_[l])‖ ^ (-n) * s ^ ((l : ℝ) ^ (n * h + j : ℤ)) := by
     intro n

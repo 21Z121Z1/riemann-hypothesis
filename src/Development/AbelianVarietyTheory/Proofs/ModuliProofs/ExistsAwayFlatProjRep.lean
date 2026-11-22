@@ -10,8 +10,8 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsAwayProjectiveFormsThroughPoints
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsProjCoordRepresentationHomogeneousIdealFla
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.FiniteHomogeneousInf
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIsoOfProjectiveCoordinateRepresentationStatement
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ProjectiveRepresentationPullbackCoordinatesStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIsoOfProjectiveCoordinateRepresentation
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ProjectiveRepresentationPullbackCoordinates
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
 open scoped CategoryTheory.Obj TensorProduct
@@ -66,9 +66,9 @@ theorem exists_away_flat_projRep : ∀ (R σ Hh : Type) [CommRing R] [IsNoetheri
   refine ⟨f, hf, Over.mk s, M, th, hrep, hflat fun e he => by have := hproj e he; infer_instance, ?_⟩
   intro K _ x I X s' M' th' hI hcut hrep'
   have hpb := IsPullback.of_hasPullback s (spMap x)
-  obtain ⟨th₁, hrep₁, hc₁⟩ := GlobalTheory.T.projective_representation_pullback_coordinates _ K σ x _ Z _ s _ _ M th hrep hpb
+  obtain ⟨th₁, hrep₁, hc₁⟩ := _root_.GlobalTheory.ZM.RepBC.projRep_baseChange _ K σ x _ Z _ s _ _ M th hrep hpb
   rw [hmap K x] at hrep₁
-  obtain ⟨e, he, hiso, hc⟩ := GlobalTheory.T.exists_iso_of_projectiveCoordinateRepresentation K σ I _ X _ s' _ M' _ th' th₁ hrep' hrep₁ fun T _ β v hv =>
+  obtain ⟨e, he, hiso, hc⟩ := _root_.GlobalTheory.RepUniq.exists_iso_of_projRep K σ I _ X _ s' _ M' _ th' th₁ hrep' hrep₁ fun T _ β v hv =>
     ⟨eval₂_eq_zero_of_forms_le (homogeneousComponent_mem_vanIdeal d _) (fun e he F hF h => ((hcut e he).2 F hF).2 h) β v hv,
       eval₂_eq_zero_of_forms_le hI (fun e he F hF h => ((hcut e he).2 F hF).1 h) β v hv⟩
   refine ⟨e.hom ≫ pullback.fst s (spMap x), ?_, ?_, fun T _ y w => ?_⟩

@@ -1,7 +1,9 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoDefs
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoLevFacts
 import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.SelmerDuality.PerfCard
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CardDualZmodModuleEqCardStatement
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CardDualZmodModuleEqCard
+import Formalism.GaloisCohomology.LocalTateDualityK
 
 open NumberField IsDedekindDomain Formalism.ConjugateSelfDual ReciprocityTheory.Gal Formalism.GaloisCohomology IsLocalRing UpperTheory.V UpperTheory.V.Base UpperTheory.V.X
 
@@ -100,7 +102,7 @@ theorem UpperTheory.V.X.So.dualGen :
     rw [← Nat.card_congr (QuotientAddGroup.quotientKerEquivRange Ψ).toEquiv,
       Nat.card_congr (QuotientAddGroup.quotientAddEquivOfEq hker).toEquiv]
     exact Nat.card_congr e.symm.toEquiv
-  have hcardD := GlobalTheory.T.card_dual_zmod_module_eq_card (l ^ r) M
+  have hcardD := _root_.GlobalTheory.ZModDual.card_dual_eq (l ^ r) M
   haveI : Finite (Module.Dual (ZMod (l ^ r)) M) :=
     Nat.finite_of_card_ne_zero (by rw [hcardD]; exact Nat.card_pos.ne')
   have htop : Ψ.range = ⊤ := AddSubgroup.eq_top_of_card_eq _ (by rw [hcardR, hcardD])

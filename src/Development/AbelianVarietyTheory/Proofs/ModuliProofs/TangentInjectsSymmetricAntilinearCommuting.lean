@@ -5,11 +5,11 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsGoodUniformisationKodairaSpencerStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsGoodUniformisationKodairaSpencer
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.DerivationEqZeroOfKodairaSpencerZero
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.KodairaSpencerCommutesWithEndomorphismStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.KodairaSpencerCommutesWithEndomorphism
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.KodairaSpencerMatrixLinearInDerivation
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.KodairaSpencerClassIsSymmOfLiftStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.KodairaSpencerClassIsSymmOfLift
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaLevelAbelianSchemePullback
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
@@ -25,7 +25,7 @@ theorem tangent_injects_symm_antilinear : Out.Laws → Out.Laws2 → ThetaUnifAV
     rw [IsScalarTower.algebraMap_eq o R ℂ]
     exact (Spec.map_comp (CommRingCat.ofHom (algebraMap o R)) (CommRingCat.ofHom (algebraMap R ℂ))).symm
   obtain ⟨t₀, m, hm⟩ := _root_.GlobalTheory.tObj_pull o g k J b _ _ _ _ (spMap (algebraMap R ℂ)) t hcomp
-  obtain ⟨u, Hm, χ, hG, -⟩ := GlobalTheory.T.exists_goodUniformisation_kodairaSpencer hU t₀.pol
+  obtain ⟨u, Hm, χ, hG, -⟩ := _root_.GlobalTheory.KSInh.exists_goodU_ksRel hU t₀.pol
   have hsm : Smooth t.A.hom := by
     haveI := t.dim
     exact SmoothOfRelativeDimension.smooth g _
@@ -37,8 +37,8 @@ theorem tangent_injects_symm_antilinear : Out.Laws → Out.Laws2 → ThetaUnifAV
     rw [hD] at hs
     exact _root_.GlobalTheory.KS.KerZero.derivation_eq_zero_of_ks_zero h1 h2 hU o g k J b R t _ t₀ m u Hm χ hG hm hun D s hs
   · obtain ⟨s, hs⟩ := hκ D
-    refine ⟨GlobalTheory.T.kodairaSpencer_class_isSymm_of_lift t₀.pol u Hm χ hG R _ t.A.left t.A.hom m hsm hm.1.1 _ _ s hs t.L t.isLB hm.2.1, ?_⟩
+    refine ⟨_root_.GlobalTheory.KS.isSymm_of_lift t₀.pol u Hm χ hG R _ t.A.left t.A.hom m hsm hm.1.1 _ _ s hs t.L t.isLB hm.2.1, ?_⟩
     intro f f₀ F hf hF
-    exact GlobalTheory.T.kodairaSpencer_commutes_with_endomorphism t₀.pol u Hm χ hG R _ t.A.left t.A.hom m hsm hm.1.1 _ _ s hs f.left f₀ F (Over.w f) hf hF
+    exact _root_.GlobalTheory.KS.Endo.comm_of_endo t₀.pol u Hm χ hG R _ t.A.left t.A.hom m hsm hm.1.1 _ _ s hs f.left f₀ F (Over.w f) hf hF
 
 end GlobalTheory.KS

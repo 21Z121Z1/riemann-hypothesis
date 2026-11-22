@@ -2,10 +2,10 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsGaugeAll
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TendstoOfSqueeze
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RiemannianHaarGaugeExistsPosUnique
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsAlgebrasMaxCompactAndLeviInterStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsAlgebrasMaxCompactAndLeviInter
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RiemannianHaarGaugeWholeGroup
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.SameKindIsometric
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaugeMeasureMatrixAlgebraSubgroupLocalAsymptoticStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaugeMeasureMatrixAlgebraSubgroupLocalAsymptotic
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RiemannianHaarGaugeVolumeUnitaryGroupEq
 
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S GlobalTheory.Count GlobalTheory.FlagMeas
@@ -235,7 +235,7 @@ theorem volume_maxK : ∀ (n : ℕ) (ε : Fin n → Bool) (p q : ℕ), (univ.fil
     simp only [Submodule.mem_bot] at hx
     subst hx
     simp
-  obtain ⟨A, E, hA, hE, hAE, hK⟩ := (GlobalTheory.T.exists_algebras_maxCompact_and_levi_inter n ε 0 _ _ hflag p q hp hq).1
+  obtain ⟨A, E, hA, hE, hAE, hK⟩ := (_root_.GlobalTheory.FlagMeas.CompactAlg.compact_algebras n ε 0 _ _ hflag p q hp hq).1
   have hmeasEmb : Measurable (emb e hJ) := (continuous_emb e hJ).measurable
   have hclosedK : IsClosed (maxK ε) := by
     have hcont : Continuous fun g : Formalism.REAL.UJ ε => (uMat g)ᴴ * uMat g :=
@@ -272,7 +272,7 @@ theorem volume_maxK : ∀ (n : ℕ) (ε : Fin n → Bool) (p q : ℕ), (univ.fil
       ext x
       simp only [Set.mem_preimage, Set.mem_ofPred_eq, uMat_emb, hs_blk]
   rw [hK] at hμ hμ'
-  have huniq := (GlobalTheory.T.gaugeMeasure_matrixAlgebraSubgroup_local_asymptotics n ε A _ E hA hE hAE μ hμ).2.2.1 _ hμ'
+  have huniq := (_root_.GlobalTheory.GaugeSubLoc.gauge_local_asymptotics n ε A _ E hA hE hAE μ hμ).2.2.1 _ hμ'
   rw [← huniq, Measure.map_apply hmeasEmb MeasurableSet.univ, Set.preimage_univ, ← Set.univ_prod_univ,
     Measure.prod_prod, hv₁, hv₂, ← ENNReal.ofReal_mul (volU_pos p).le]
 

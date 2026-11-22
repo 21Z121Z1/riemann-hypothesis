@@ -6,7 +6,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LogPeriodLimit
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsIsChart
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.IsotropicSubmoduleNonzeroFamily
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.RiemannLatticeEigenProjections
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsEigenComponentPolynomialStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsEigenComponentPolynomial
 
 open NumberField Matrix Filter Topology GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Cusp GroundTheory.Heights₂.Heights.LowerBoundFree GroundTheory.Heights₂.Heights.Regular
 open GlobalTheory.CompanionTheory.Ar.RiemannLimit GlobalTheory.CompanionTheory.Ar.Cusp.BoundaryLimit
@@ -171,7 +171,7 @@ theorem eigComp_mem_span (I : Submodule (𝓞 E) Λ) (s : 𝓞 E →+* ℂ) {u :
       rintro _ ⟨_, ⟨v, hv, rfl⟩, rfl⟩
       exact Submodule.subset_span ⟨a • v, I.smul_mem a hv, R.act a v⟩
     exact hle (Submodule.mem_map_of_mem hu)
-  obtain ⟨c, hc⟩ := GlobalTheory.T.exists_eigenComponent_polynomial E s
+  obtain ⟨c, hc⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.EigCoef.eigComp_eq_combination E s
   rw [(hc (Fin g → ℂ) R.B).1 u]
   exact Submodule.sum_mem _ fun a _ => Submodule.smul_mem _ _ (hst a)
 

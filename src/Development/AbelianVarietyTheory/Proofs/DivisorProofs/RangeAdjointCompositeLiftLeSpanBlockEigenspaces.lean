@@ -10,8 +10,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComapRangeAdjointLe
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaLiftLevelsGoodPrimesProperties
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FamilySplitOperatorsEqLabelOperatorsModels
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RealizationFamilyNormalOperatorsStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsSplitPrimeHeckeTransferCompositeLiftStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsSphericalOperatorsRowsNormalEigenspacesStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsSplitPrimeHeckeTransferCompositeLift
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsSphericalOperatorsRowsNormalEigenspaces
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MatchedSphericalPairsCommuteCompositeLift
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 
@@ -151,13 +151,13 @@ theorem range_adjoint_le_span : ∀ {D : D7} {G : Type} [Group G] [Fintype G] {P
     intro v
     simp only [Finset.mem_image, HeightOneSpectrum.ext_iff]
     rfl
-  have htop : ⨆ c, EEc R _ c = ⊤ := (GlobalTheory.T.exists_sphericalOperators_rows_normal_eigenspaces R F hC hS _ hSF).elim fun _ h => h.2.2.1
+  have htop : ⨆ c, EEc R _ c = ⊤ := (_root_.GlobalTheory.Hk3.OpsRows.exists_opsE R F hC hS _ hSF).elim fun _ h => h.2.2.1
   choose hX hXo _ using (GlobalTheory.T.realization_family_normal_operators R F hC.lev hC.fam hC.models).1 t
   have hsplit := (GlobalTheory.SplitHeckeLabel.split_ops R F hC.lev hC.fam hC.models).1 t hX hXo
   have hf := GlobalTheory.AdjBlock.model_form (W := R.cX.W) (ι := Bridge.ratF D.sp.X') (ρ := R.cX.coef.ρ)
     (J := (levEnv _ R.βX (R.datXt t)).J) (χ := (levEnv _ R.βX (R.datXt t)).χ) (R.B.R t).pres (R.HX t) (hC.models.HX t)
     (hC.models.jX t)
-  choose z hm hp using fun P : A.ok t => GlobalTheory.T.exists_splitPrime_heckeTransfer_compositeLift R F hI hC hS t P
+  choose z hm hp using fun P : A.ok t => _root_.GlobalTheory.Hk3.SplitChain.exists_transfer R F hI hC hS t P
   let a : (Pl D.host.E → List ℤ → ℂ) → A.ok t → ℕ → ℂ := fun c P j =>
     if IsLab (Yc D 0) (R.pl P) (splitLab (Yc D 0).rank j) then c (R.pl P) (dualLab (splitLab (Yc D 0).rank j)) else 0
   exact range_le_span_blockSum (Pl := A.ok t) (q := fun P => A.q P) (Module.Finite.of_basis (A.MtildeCSD t).basis) hf.2.1 (hOk.what₂ t).comm (hOk.what₂ t).split R.B.rankR

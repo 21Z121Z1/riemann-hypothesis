@@ -11,10 +11,11 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SumPureMemAlgD
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FinitePlaceUnitaryPointKeepsZeroMatchedData
 import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotropicHermitian
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolynomialDatumActionOfPairStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolynomialDatumActionOfPair
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolActs
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerSkewPlaneUniqueDual
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRealmapsIsomorphism
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AlgebraicDataUnitaryRelationsFinitePlacePolZeroStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AlgebraicDataUnitaryRelationsFinitePlacePolZero
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MatchedMapsKernelSum
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MatchedMapsKernelIntegral
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsAlgebraicDatumNotMatchedZero
@@ -58,7 +59,7 @@ theorem GlobalTheory.PolKer.polKernel_eq_thetaSubspace_of_match : _root_.GlobalT
   · intro γ hγ Φ hΦ Φ₁ _ hd
     exact (memK _).2 (_root_.GlobalTheory.T.lieAlgebra_preserves_polynomialKernel hP F E σ Bs a a' G Xc om om' R Rf hM γ hγ Φ Φ₁ ((memK Φ).1 hΦ) hd)
   · intro v g hg Φ hΦ
-    exact (memK _).2 (GlobalTheory.T.algebraicData_unitaryRelations_finitePlace_polZero F E σ Bs a a' G Xc om om' R Rf hM v g hg Φ hΦ)
+    exact (memK _).2 (_root_.GlobalTheory.PolKer.polZero_relV F E σ Bs a a' G Xc om om' R Rf hM v g hg Φ hΦ)
   · intro k hk Φ hΦ
     exact (memK _).2 (_root_.GlobalTheory.T.maximalCompact_invariants_polynomialKernel hP F E σ Bs a a' G Xc om om' R Rf hM k hk Φ hΦ)
   · intro γ hγ Φ hΦ Φ₁ _ hd

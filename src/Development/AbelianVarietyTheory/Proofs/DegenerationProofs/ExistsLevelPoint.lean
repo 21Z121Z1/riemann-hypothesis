@@ -3,7 +3,10 @@ import Development.AbelianVarietyTheory.Definitions.Degenerations.BaseFacts
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.GermEqZeroOfThickenings
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUnitCharts
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFiniteValues
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TestFieldFiniteOverPadicStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TestFieldFiniteOverPadic
+import Development.AbelianVarietyTheory.Definitions.Degenerations.IsAffineSplitTorusLeft
+import Development.AbelianVarietyTheory.Definitions.Degenerations.CompanionTheory
+import Development.AbelianVarietyTheory.Statements.SemistableTorsion.UTorsSt
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsAddExtension
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry
 open scoped CategoryTheory.Obj
@@ -120,7 +123,7 @@ theorem factor_wVal (e : ℕ) :
 theorem exists_omega [ArithBase o Ω] (hc : c ≫ u.G.hom = spMap u.j) : ∃ (ω : PadicAlgCl p) (ωe : ℕ → OO p), ω ≠ 0 ∧
     Tendsto (fun e => (ωe e : PadicAlgCl p)) atTop (𝓝 ω) ∧
     ∀ e, Ideal.Quotient.mk (u.lev e) (ωe e) = wVal u.U.toUnifPre e (ce e) jL jM := by
-  obtain ⟨-, -, -, K₀, hK₀, hK₀'⟩ := GlobalTheory.T.testField_finite_over_padic o Ω S ρ p y₀ u
+  obtain ⟨-, -, -, K₀, hK₀, hK₀'⟩ := _root_.GlobalTheory.ZH.FieldOfTest.fractionRing_finite_over_padic o Ω S ρ p y₀ u
   have := u.U.smooth
   obtain ⟨K, hK, hval⟩ := exists_finite_values u.j K₀ (fun x => by
     show _ ∈ (K₀ : Set (PadicAlgCl p))

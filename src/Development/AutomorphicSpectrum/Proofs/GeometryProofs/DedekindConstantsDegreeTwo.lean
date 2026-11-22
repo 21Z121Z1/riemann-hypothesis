@@ -2,7 +2,7 @@ import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsLatFlagPair
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.HeckeSectionsIsotropicCommutatorPairingPower
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsFlagIndependence
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DedekindConstantsDegreeOneStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DedekindConstantsDegreeOne
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.LocalizationModelOverPlace
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.LocalAtPlaces
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtIffChartLocalization
@@ -590,8 +590,8 @@ theorem flag_pair_of_lat : ∀ (X : Scheme.{0}) (Ω : Type) [Field Ω] (ξ : Spe
   choose e e' he he' hdeg hg0 hfg using hi
   have he0 : ∀ i, e i ≠ 0 := fun i => (he i).1
   have he0' : ∀ i, e' i ≠ 0 := fun i => (he' i).1
-  obtain ⟨B, hBl, hBf⟩ := GlobalTheory.T.dedekind_constants_degree_one X Ω ξ K J y hT d hd A hAinj hconst p hp m hpm O E r w L hvb
-  obtain ⟨B', hBl', hBf'⟩ := GlobalTheory.T.dedekind_constants_degree_one X Ω ξ K J y hT d hd A hAinj hconst p hp m hpm O E r w L' hvb'
+  obtain ⟨B, hBl, hBf⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Num.LatChart.exists_chartBundle_of_isFlagVBOn X Ω ξ K J y hT d hd A hAinj hconst p hp m hpm O E r w L hvb
+  obtain ⟨B', hBl', hBf'⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Num.LatChart.exists_chartBundle_of_isFlagVBOn X Ω ξ K J y hT d hd A hAinj hconst p hp m hpm O E r w L' hvb'
   have hfr := hBf Q.x e he0 he
   have hfr' := hBf' Q.x' e' he0' he'
   obtain ⟨-, hmod, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Num.pl_model K J Ω y A hAinj hconst d hd m O

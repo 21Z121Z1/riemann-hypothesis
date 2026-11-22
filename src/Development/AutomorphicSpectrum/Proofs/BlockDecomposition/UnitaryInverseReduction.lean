@@ -10,8 +10,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChiDeltaUConjLongSi
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryRankOneSphericalIntegrandDiagonalTorusFac
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemShellUIffDepth
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryWeylCellHaarRightTranslateInvariant
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralDiagonalConjLastSimpleReflectionCellStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryThreeRankOneSphericalVectorCellValueStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralDiagonalConjLastSimpleReflectionCell
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryThreeRankOneSphericalVectorCellValue
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralDepthPowerLastSimpleReflectionCell
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryWeylSimpleReflectionRevCommSqEqOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntertwiningLastEven
@@ -103,7 +103,7 @@ theorem spherical_cell (h : IsUnramInv ϖ σ q) (k : Fin (n / 2)) (hk : ¬ k.val
   · exact spherical_even h k hk hn y hyK hy μ hμ α hαk φ hφ hφ1
   · have hA := _root_.GlobalTheory.WeylCell.WeylUnipotentShell.integral_depth_cell L ϖ σ q h n k hk hn y hyK hy μ hμ (α k) hαk
     have hpt : ∀ u : cellU y, φ (y⁻¹ * (u : GU σ n)) = ((α k : ℂ) / (q : ℂ) ^ 2) ^ depthU k (u : GU σ n) :=
-      GlobalTheory.T.unitaryThreeRankOne_sphericalVector_cell_value L ϖ σ q h n k hk hn y hyK hy (fun i => (α i : ℂ)) φ hφ hφ1
+      _root_.GlobalTheory.WeylCell.U21HeisenbergElement.value_point L ϖ σ q h n k hk hn y hyK hy (fun i => (α i : ℂ)) φ hφ hφ1
     simp_rw [hpt]
     refine ⟨hA.1, ?_⟩
     rw [hA.2.1]
@@ -151,7 +151,7 @@ theorem scale_cell (h : IsUnramInv ϖ σ q) (k : Fin (n / 2)) (hk : ¬ k.val + 1
       chiDeltaU q (fun i => (α i : ℂ)) (y⁻¹ * t * y) * s = chiDeltaU q (fun i => (actU k α i : ℂ)) t := by
   by_cases hn : Even n
   · exact ⟨_, (conjScale' L ϖ σ q h n k hk hn y hyK hy μ hμ t ht).1, _root_.GlobalTheory.GKUnitary.chiDeltaU_conj_simpleU_long L ϖ σ q h n k hk hn y hy α t ht⟩
-  · refine ⟨_, (GlobalTheory.T.integral_diagonal_conj_lastSimpleReflectionCell L ϖ σ q h n k hk hn y hyK hy μ hμ t ht).1, ?_⟩
+  · refine ⟨_, (_root_.GlobalTheory.WeylCell.WeylUnipotentShell.integral_conj_diag_cellU_last L ϖ σ q h n k hk hn y hyK hy μ hμ t ht).1, ?_⟩
     obtain ⟨Φ, hΦ, hΦ1, -⟩ := Formalism.UG.Final.SphericalExistsU L ϖ σ q n (n / 2) h (by omega) (by omega)
       (fun i => (α i : ℂ)) fun i => (α i).ne_zero
     have e := _root_.GlobalTheory.WeylCell.U21TorusFactor.torus_factor L ϖ σ q h n k hk hn y hyK hy α Φ hΦ t ht 1 y

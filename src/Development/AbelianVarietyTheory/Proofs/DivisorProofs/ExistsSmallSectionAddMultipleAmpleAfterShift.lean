@@ -2,9 +2,9 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.SmallFam
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.SmallSecTensTriv
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsAlgClosedBaseChange
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsClearDenominatorsAmpleHermLineBundleStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsClearDenominatorsAmpleHermLineBundle
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairSectionMemBallExpOfProjArithVariety
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShiftSecondBundleNormPairNormBallGenerationStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShiftSecondBundleNormPairNormBallGeneration
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermLBLeBySmallSectionOfRep
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermLineBundlePairSectionsMulMemNormMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermPairPowSectionMemAndNormPow
@@ -32,7 +32,7 @@ theorem le_dual_pow_shift : ∀ (k : Type) [CommRing k] (X : Scheme.{0}) [IsInte
   intro k _ X _ p D hX P N s hA hs hs0
   obtain ⟨rN, hrN⟩ := exists_isRatSec N.isLB
   let Q : Pair p := ⟨N, P.A, rN, P.r', hrN, P.hr'⟩
-  obtain ⟨c₁, g, _, hg0, hg, -⟩ := GlobalTheory.T.exists_clear_denominators_ampleHermLineBundle k X p D hX Q hA 1 Empty (fun e => e.elim)
+  obtain ⟨c₁, g, _, hg0, hg, -⟩ := _root_.GlobalTheory.HSNef.Den.exists_clear_denominators k X p D hX Q hA 1 Empty (fun e => e.elim)
   refine ⟨c₁, fun c hc hc0 => ?_⟩
   have hsQ : s ∈ Q.H 0 1 := mem_regular_sections_second_bundle_indep_first P N rN hrN hs
   obtain ⟨hpow, -⟩ := NuPow.pow_mem_H_and_nu_pow k X p Q 0 1 s hsQ (c - c₁)
@@ -43,7 +43,7 @@ theorem le_dual_pow_shift : ∀ (k : Type) [CommRing k] (X : Scheme.{0}) [IsInte
   obtain ⟨w, _, hw⟩ := _root_.GlobalTheory.HSNef.bounded_norm k X p D hX Q 1 c _ hf
   have hcpos : (0 : ℝ) < c := by exact_mod_cast hc0
   refine ⟨w / c, fun u hu => ?_⟩
-  obtain ⟨-, hBl, -⟩ := GlobalTheory.T.shiftSecondBundleNormPair_norm_ball_generation k X p Q u
+  obtain ⟨-, hBl, -⟩ := _root_.GlobalTheory.HSNef.shiftA_props k X p Q u
   have hwu : w ≤ (c : ℤ) * u := by
     have := (div_le_iff₀ hcpos).1 hu
     push_cast; linarith

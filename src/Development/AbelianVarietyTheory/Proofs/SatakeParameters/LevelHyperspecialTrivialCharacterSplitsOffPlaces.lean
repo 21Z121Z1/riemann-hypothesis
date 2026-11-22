@@ -4,7 +4,7 @@ import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
 import Formalism.LocalToGlobal.IndefiniteReal.LocalNewformFunction
 import Formalism.LocalToGlobal.Columns.HeckeSp
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SupportedSubgroupSplitCommutePrimeIdempotentsStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SupportedSubgroupSplitCommutePrimeIdempotents
 
 noncomputable section
 
@@ -509,7 +509,7 @@ theorem lev_split : ∀ {D : D7} (V : HSp D) (β : GL (Fin V.rank) (Formalism.In
     unfold levChi
     rw [← Units.val_pow_eq_pow_val, h, Units.val_one]
   intro P e f hP hN hPP
-  obtain ⟨T1, -, T3, -⟩ := GlobalTheory.T.supported_subgroup_split_commute_primeIdempotents V
+  obtain ⟨T1, -, T3, -⟩ := _root_.GlobalTheory.IdemSupport.supported_group_and_prime_idempotents V
   obtain ⟨hff, hcf, hG, -⟩ := T3 P e f hP
   obtain ⟨⟨Lf, hLf⟩, hsplit, -⟩ := T1 f hff hcf
   obtain ⟨⟨Lf', hLf'⟩, -, -⟩ := T1 (1 - f) (by rw [mul_sub, mul_one, sub_mul, one_mul, hff, sub_self, sub_zero])

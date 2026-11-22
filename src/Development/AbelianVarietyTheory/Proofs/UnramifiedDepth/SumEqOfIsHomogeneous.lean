@@ -6,15 +6,15 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.Pe
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.CalcExp
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.LegendreBoundsFactorialMultiIndexCapelli
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.DetFrobeniusSubPowSupport
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.WeightNonnegExpOfWeightGeInvPrimeSubOneStatement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.WeightNonnegExpOfWeightGeInvPrimeSubOne
 import Formalism.LocalToGlobal.CharacterGerms.BiadditiveInSingleVariables
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.FactorialWeightedPairingDetPowProportionalStatement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.FactorialWeightedPairingDetPowProportional
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.DeterminantPairingQuotientValuationLowerBound
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ProdIccMulFactorial
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.LegendreAndCapelli
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.RadiiValuationDifferences
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.NewtonBoundPosAndNewtonStep
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.BlockValueOnRowsEqStatement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.BlockValueOnRowsEq
 
 section
 open ReciprocityTheory.PGsh
@@ -563,7 +563,7 @@ theorem main :
     by_contra h
     obtain ⟨q, hq⟩ := hz 0 (by simpa using h)
     simp at hq
-  have hg := GlobalTheory.T.weight_nonneg_exp_of_weight_ge_inv_prime_sub_one C v l hl hv _ _ h₁ h0 hw
+  have hg := _root_.GlobalTheory.ExpWeight.weight_exp C v l hl hv _ _ h₁ h0 hw
   have hg0 := ReciprocityTheory.ChartRestriction.G.TB.WickVanishing.constantCoeff_exp h0
   set g := PowerSeries.subst h₁ (PowerSeries.exp C) with hgdef
   set ψ := MvPolynomial.map (Int.castRingHom C) (psi l (l ^ i) E n) with hψ
@@ -843,7 +843,7 @@ theorem main : CoefficientExpansionLambda := by
     congr 1
     refine Finset.sum_congr rfl fun s hs => ?_
     have hsy : s ≤ y := Nat.lt_succ_iff.1 (Finset.mem_range.1 hs)
-    have h4 := GlobalTheory.T.factorialWeightedPairing_detPow_proportional C n0 (l ^ i * s) (l ^ i * y) (Q s) (Nat.mul_le_mul_left _ hsy) (hQh s)
+    have h4 := _root_.GlobalTheory.DetPowPairing.pairing_pow_proportional C n0 (l ^ i * s) (l ^ i * y) (Q s) (Nat.mul_le_mul_left _ hsy) (hQh s)
     rw [pair_self, pair_self] at h4
     rw [eq_div_of_mul_eq (hcap _) h4]
     ring
@@ -1072,7 +1072,7 @@ theorem biWindow_of (hP : Formalism.L2.FormalSeriesBounds.ThmP) (hV : BiValue) :
   gcongr
 
 theorem biContent_and_biWindow : BiContent ∧ BiWindow :=
-  ⟨biContent, biWindow_of GlobalTheory.OddBlock.windowBound GlobalTheory.T.blockValue_on_rows_eq⟩
+  ⟨biContent, biWindow_of GlobalTheory.OddBlock.windowBound _root_.GlobalTheory.blockValue_rows⟩
 
 end GlobalTheory.OddBlock.BlockContent
 

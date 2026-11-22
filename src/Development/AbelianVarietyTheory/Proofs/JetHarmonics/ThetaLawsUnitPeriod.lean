@@ -7,10 +7,10 @@ import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CmLatticeHeisenbergR
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsMultiplicativeChartAtSplitPrime
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsGoodReductionAlgebraicWeierstrassModel
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NormTranslatePowerCombLeCoprimeTranslation
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsNormalisedMultiplicativeChartStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsNormalisedMultiplicativeChart
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsImagQuadOrderPairAndEvenTheta
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CmEvenThetaSeriesChartCoeffIntegral
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WeilOperatorThetaTranslateShiftPrimeToQStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WeilOperatorThetaTranslateShiftPrimeToQ
 
 open PowerSeries GlobalTheory.MomOne
 open scoped ComplexConjugate BigOperators Topology
@@ -66,7 +66,7 @@ theorem thetaLaws_unit_period : ∀ (d q : ℕ) [Fact q.Prime] (δ : ℂ), d.Pri
   subst hMι
   have hL' : IsOK d M.L := by rw [hML]; exact hL
   obtain ⟨ω₀, hω₀⟩ := _root_.GlobalTheory.MomOne.SplitChart.exists_mChart d q M hd h16 hsp hL' hok a1 a2 a3 a4 a6
-  obtain ⟨a, -, hω, hgood⟩ := GlobalTheory.T.exists_normalised_multiplicativeChart d q M ω₀ hd h16 hsp hL' hω₀
+  obtain ⟨a, -, hω, hgood⟩ := _root_.GlobalTheory.MomOne.Norm.exists_normalised_chart d q M ω₀ hd h16 hsp hL' hω₀
   have hδM : δ ^ 12 = M.L.g₂ ^ 3 - 27 * M.L.g₃ ^ 2 := by rw [hML, hLd]; exact hδ
   obtain ⟨hn, -⟩ := norm_root_eq M hok δ hδM
   have hp := norm_period M (ω₀ * zc a) hω
@@ -76,7 +76,7 @@ theorem thetaLaws_unit_period : ∀ (d q : ℕ) [Fact q.Prime] (δ : ℂ), d.Pri
   have hU0 : U1 d 0 θ = θ := (_root_.GlobalTheory.MomOne.heisenbergOne d hd.pos).2.1 θ
   have h0 : PrimeTo d q 0 := ⟨1, one_pos, Nat.coprime_one_left q, 0, 0, by simp⟩
   have hB := _root_.GlobalTheory.MomOne.theta_series_integral d q M (ω₀ * zc a) θ hd h16 hsp hL' hω hθ
-  refine ⟨fun t ht => ?_, GlobalTheory.T.weilOperator_theta_translate_shift_prime_to_q d q M (ω₀ * zc a) θ hd h16 hsp hL' hω hθ hgood,
+  refine ⟨fun t ht => ?_, _root_.GlobalTheory.MomOne.TranslateLaw.main d q M (ω₀ * zc a) θ hd h16 hsp hL' hω hθ hgood,
     _root_.GlobalTheory.MomOne.TranslNorm.norm_law d q M (ω₀ * zc a) θ hd h16 hsp hL' hω hθ⟩
 
   have := _root_.GlobalTheory.MomOne.TranslNorm.norm_law d q M (ω₀ * zc a) θ hd h16 hsp hL' hω hθ 1 1 (fun _ => 1) (fun _ => 0) t 1

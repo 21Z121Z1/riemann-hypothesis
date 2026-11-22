@@ -3,14 +3,14 @@ import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CmQuad
 import Formalism.LocalToGlobal.HermitianColumns.SymAll
 import Formalism.LocalToGlobal.GroupLattices.DownNaturalLevelZero
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GlESymmApply
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinsumPairsAboveEqAffineHyperplaneStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinsumPairsAboveEqAffineHyperplane
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOfUpSumOfNorm
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelPrimeUnramifiedUniformizerStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelPrimeUnramifiedUniformizer
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsEquivariantLocalPairMapAdelic
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UpwardLevelMoveIncidenceOfPairs
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DownwardLevelMoveReachesKernelLattice
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicFormValuesNearPointSpec
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UpwardOperatorMemAdelicFormsStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UpwardOperatorMemAdelicForms
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UpwardHeckeOperatorCommuteDiamond
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UpwardOperatorPreservesRationalityStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RamifiedFormsCommensurableOfUStableInjective
@@ -112,7 +112,7 @@ theorem uop_rs (g) (hg : g ∈ AdFun T.cls0.lev (embT D)) :
     LT.Uop D u 0 v (rs T g) = rs T (upAd (T.atT.res v) (((D.mem u).A.T : ℕ) : 𝓞 D.host.E) (T.atT.eV v).1 p g) := by
   classical
   funext c
-  have hun := GlobalTheory.T.levelPrime_unramifiedUniformizer D u T.atT v
+  have hun := _root_.GlobalTheory.LevelUnram.unram D u T.atT v
   have key : ∀ w : (D.fm u).lv 0 v c, (D.fm u).fv 0 v c w = 1 → ∃ η : GA (sigD D) (gramN D 0 (Nat.zero_le _)),
       AtV (T.atT.eV v).1 η ∧ ((p (T.cls0.y c * η)).Ok (T.atT.res v) ∧ (p (T.cls0.y c * η)).IsKer (pc T.lv0 v c).L ∧
         ∃ e, (p (T.cls0.y c * η)).f e = 1 ∧ locExt (T.atT.res v) (Ld D u 0 (Nat.zero_le _) c) (T.lv0.pr v c)
@@ -125,7 +125,7 @@ theorem uop_rs (g) (hg : g ∈ AdFun T.cls0.lev (embT D)) :
     rw [pair_move hp γ _ _ η κ h2, hy]
     exact ⟨(pc_ok _ _ _).act _, _root_.GlobalTheory.LevelHecke.up_move_incidence D u T.atT 0 _ T.lv0 T.cls0 v c _ z γ.1 hw h3 h4 h5⟩
   choose! η h1 h2 h3 using key
-  have hsum := GlobalTheory.T.finsum_pairsAbove_eq_affineHyperplane _ _ _ _ _ (T.atT.res v) (((D.mem u).A.T : ℕ) : 𝓞 D.host.E) (pc T.lv0 v c)
+  have hsum := _root_.GlobalTheory.LevelHecke.AboveSum.finsum_above _ _ _ _ _ (T.atT.res v) (((D.mem u).A.T : ℕ) : 𝓞 D.host.E) (pc T.lv0 v c)
     (locExt (T.atT.res v) (Ld D u 0 (Nat.zero_le _) c) (T.lv0.pr v c)) ((D.fm u).fv 0 v c)
     (fun w => p (T.cls0.y c * η w)) (valAt (T.atT.eV v).1 p g (T.cls0.y c)) (T.atT.res_surj v) hun.1 torsionFree
     (pc_ok T.lv0 v c).sat
@@ -144,14 +144,14 @@ theorem uop_rs (g) (hg : g ∈ AdFun T.cls0.lev (embT D)) :
 theorem uop_mem (φ : LT.Fn D u 0) (hφ : φ ∈ (D.fm u).Fi 0) : LT.Uop D u 0 v φ ∈ (D.fm u).Fi 0 := by
   obtain ⟨g, hg, rfl⟩ := (mem_Fi T φ).1 hφ
   rw [uop_rs T v p hp hy g hg.1, mem_Fi T]
-  exact ⟨_, GlobalTheory.T.upwardOperator_mem_adelicForms _ _ _ _ _ _ _ _ _ T.cls0.lev (embT D) _ (T.atT.eV v).2 _ p (level_places_not_bad T.atT v) hp _ _ _ g hg, rfl⟩
+  exact ⟨_, _root_.GlobalTheory.LevelHecke.UpKeeps.upAd_mem_adForms _ _ _ _ _ _ _ _ _ T.cls0.lev (embT D) _ (T.atT.eV v).2 _ p (level_places_not_bad T.atT v) hp _ _ _ g hg, rfl⟩
 
 set_option maxHeartbeats 1000000 in
 theorem uop_rho (hok : ∀ x, (p x).Ok (T.atT.res v)) (φ : LT.Fn D u 0) (hφ : φ ∈ (D.fm u).Fi 0) (v' : (D.mem u).A.vT) (a : ((D.mem u).A.Fv v')ˣ) :
     (D.mem u).A.rhoT v' a (LT.Uop D u 0 v φ) = LT.Uop D u 0 v ((D.mem u).A.rhoT v' a φ) := by
   obtain ⟨g, hg, rfl⟩ := (mem_Fi T φ).1 hφ
   obtain ⟨k, δ, hk, hδ⟩ := exists_dia T v' a
-  have hU := GlobalTheory.T.upwardOperator_mem_adelicForms _ _ _ _ _ _ _ _ _ T.cls0.lev (embT D) _ (T.atT.eV v).2 _ p (level_places_not_bad T.atT v) hp
+  have hU := _root_.GlobalTheory.LevelHecke.UpKeeps.upAd_mem_adForms _ _ _ _ _ _ _ _ _ T.cls0.lev (embT D) _ (T.atT.eV v).2 _ p (level_places_not_bad T.atT v) hp
     (T.atT.res v) (((D.mem u).A.T : ℕ) : 𝓞 D.host.E) _ g hg
   have e1 : (D.mem u).A.rhoT v' a (rs T g) = rs T (fun x => g (x * δ)) := rhoT_eq T.val0 v' a k hk δ hδ g hg.1
   rw [e1, uop_rs T v p hp hy g hg.1,
@@ -180,10 +180,10 @@ theorem uop_inj (φ : LT.Fn D u 0) (hφ : φ ∈ (D.mem u).A.Mram) (h0 : LT.Uop 
   have h1 : φ ∈ (D.fm u).Fi 0 := by rw [(D.fm u).Fi_zero]; exact hφ.1
   have h2 : (D.mem u).A.Nm v φ = 0 := (Submodule.mem_iInf _).1 hφ.2 v
   obtain ⟨g, hg, rfl⟩ := (mem_Fi T φ).1 h1
-  have hun := GlobalTheory.T.levelPrime_unramifiedUniformizer D u T.atT v
+  have hun := _root_.GlobalTheory.LevelUnram.unram D u T.atT v
   have hb := level_places_not_bad T.atT v
   obtain ⟨hv1, hv2, hv3⟩ := _root_.GlobalTheory.LevelHecke.ValAt.valAt_spec _ _ _ _ _ _ _ _ _ T.cls0.lev (embT D) _ (T.atT.eV v).2 _ p hb hp g hg.1
-  have hU := GlobalTheory.T.upwardOperator_mem_adelicForms _ _ _ _ _ _ _ _ _ T.cls0.lev (embT D) _ (T.atT.eV v).2 _ p hb hp
+  have hU := _root_.GlobalTheory.LevelHecke.UpKeeps.upAd_mem_adForms _ _ _ _ _ _ _ _ _ T.cls0.lev (embT D) _ (T.atT.eV v).2 _ p hb hp
     (T.atT.res v) (((D.mem u).A.T : ℕ) : 𝓞 D.host.E) _ g hg
   rw [uop_rs T v p hp hy g hg.1] at h0
   have hU0 := zero_of_rs T _ hU.1 h0

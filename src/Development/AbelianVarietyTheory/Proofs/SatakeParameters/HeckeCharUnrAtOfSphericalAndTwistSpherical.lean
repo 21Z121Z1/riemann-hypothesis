@@ -2,7 +2,8 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TranslateMemTwistedJacquetKernelRamified
 import Development.AbelianVarietyTheory.Definitions.Foundations.SmoothPartStable
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsSatVecUOfIsSphericalU
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsLocalTranslationCompCommutingOperatorStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsLocalTranslationCompCommutingOperator
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExpoConjOfIsCsd
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NonemptyEquivOfRangeEq
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsWeight
@@ -77,7 +78,7 @@ theorem unrAt_of_isSpherical_twist : ∀ (E : Type) [Field E] [NumberField E] [I
     simp [Wl, Submodule.mem_iInf]
   have stab : GlobalTheory.CuspRep.IsStable (Wl.map π.V.subtype) := by
     rintro o _ ⟨v, hv, rfl⟩
-    obtain ⟨g, S, hS, ho⟩ := GlobalTheory.T.exists_localTranslation_comp_commuting_operator E a π w o
+    obtain ⟨g, S, hS, ho⟩ := _root_.GlobalTheory.LocFactor.exists_locRep_comp E a π w o
     have hv' := (memWl v).1 hv
     refine ⟨π.op o v, (memWl _).2 fun h => ?_, rfl⟩
     rw [ho, LinearMap.comp_apply, ← Module.End.mul_apply, ← map_mul]

@@ -14,7 +14,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemSkewA
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AddHaarCharLeftRightMatrixMulAdeleTensor
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AddHaarCharSkewHermitianNormScale
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsContinuousChartIsotropicUnipotentRadicalStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviConjScalarIdeleUnipotentCoordinatesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviConjScalarIdeleUnipotentCoordinates
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitSmulOfCentralParabolicLevi
 open scoped TensorProduct NNReal ENNReal Matrix
 open NumberField MeasureTheory Filter Topology Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.AdelicU GlobalTheory.SiegelSet GlobalTheory.ResLine GlobalTheory.ResidueEisenstein
@@ -41,7 +41,7 @@ theorem modulus_conj_flow : ∀ (F E : Type) [Field F] [NumberField F] [Field E]
     simp only [GlobalTheory.StdPar.levi, Subgroup.mem_iInf] at h1
     obtain ⟨B, -, e⟩ := (h1 (Fin.last r) (Finset.mem_singleton_self _)).2
     exact ⟨B.1, e⟩
-  obtain ⟨δ, hδdet, hδJ, hconj⟩ := GlobalTheory.T.leviConj_scalarIdele_unipotentCoordinates F E σ n J (r + 1) m X Y Z J₀ hF (b t) l γ hl hγ
+  obtain ⟨δ, hδdet, hδJ, hconj⟩ := _root_.GlobalTheory.ResidueEisenstein.LeviConj.crd_conj_scalar F E σ n J (r + 1) m X Y Z J₀ hF (b t) l γ hl hγ
   have habs : ((absE F E l : ℝ≥0) : ℝ) ^ (r + 1) = Real.exp t := by
     obtain ⟨β, hβ, hβt⟩ := hb.onX t
     have hL : adMat F (cT (σ : E →+* E) Y * J) * adMat F X = 1 := by

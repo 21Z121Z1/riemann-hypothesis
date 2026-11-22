@@ -9,8 +9,8 @@ import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Rationa
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IMemSiegel
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HeisenbergOperatorRationalPointLaws
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HMatMulVecPerCrd
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DoubledHermitianTestFunctionSpecStatement
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DoubledThetaTestFunctionSesquilinearHeisenbergStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DoubledHermitianTestFunctionSpec
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DoubledThetaTestFunctionSesquilinearHeisenberg
 
 open Matrix Complex NumberField MeasureTheory GlobalTheory GlobalTheory.SW GlobalTheory.ThFr ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.FD
 open scoped ComplexConjugate ComplexOrder Real Classical
@@ -253,7 +253,7 @@ theorem dbl_self_ne_zero (hs : IsSympl X bas) (hn : Even n) {φ : TF n g} (h : I
     (h0 : φ ≠ 0) : dbl X bas idx φ φ ≠ 0 := by
   intro e
   obtain ⟨x, hx⟩ := dom_nonempty X
-  have hd := (GlobalTheory.T.doubledHermitianTestFunction_spec E r X g bas idx n hs hn φ φ h h).2.1 x hx x hx
+  have hd := (_root_.GlobalTheory.SW.DblEx.dbl_spec E r X g bas idx n hs hn φ φ h h).2.1 x hx x hx
   refine h0 (eq_of_thS_eq _ _ φ 0 h isSB_zero _
     ⟨tauMat_isSymm idx hs hx, tauMat_im_posDef idx hs hx⟩ fun ζ => ?_)
   have h1 := hd (fun k => perMat X bas idx Sum.inl x *ᵥ ζ k)
@@ -275,8 +275,8 @@ open GlobalTheory.SW.DblZero in
 
 theorem GlobalTheory.SW.dbl_zero_and_norm : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (r : ℕ) (X : Data E r) (g : ℕ) (bas : (Fin g ⊕ Fin g → ℤ) ≃ₗ[ℤ] X.Λ) (idx : Fin g ≃ X.Ψ × Fin r) (n : ℕ), IsSympl X bas → Even n → ∃ a : ℂ, a ≠ 0 ∧ ∃ b : ℝ, 0 < b ∧ ∀ φ₁ φ₂ : TF n g, IsSB φ₁ → IsSB φ₂ → dbl X bas idx φ₁ φ₂ 0 = a * ip φ₁ φ₂ ∧ ip (dbl X bas idx φ₁ φ₂) (dbl X bas idx φ₁ φ₂) = b * (ip φ₁ φ₁ * ip φ₂ φ₂) := by
   intro E _ _ _ r X g bas idx n hs hn
-  have sb := fun φ ψ h k => (GlobalTheory.T.doubledHermitianTestFunction_spec E r X g bas idx n hs hn φ ψ h k).1
-  have lin := GlobalTheory.T.doubledThetaTestFunction_sesquilinear_heisenberg E r X g bas idx n hs hn
+  have sb := fun φ ψ h k => (_root_.GlobalTheory.SW.DblEx.dbl_spec E r X g bas idx n hs hn φ ψ h k).1
+  have lin := _root_.GlobalTheory.SW.DblLin.dbl_lin E r X g bas idx n hs hn
   have law := (heisG_laws E r X g bas idx n hs hn).2.2.2
   have add1 := fun φ φ' ψ h h' k => ((lin φ ψ h k).1 φ' h').1
   have add2 := fun φ ψ ψ' h k k' => ((lin φ ψ h k).1 ψ' k').2

@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobKerIdealLeAugId
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianVarietyDieudonneIntegralityFactorisationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqPowSmulOfPDivGroupTorsionTowerMapStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DieudonneFunctorBaseFunctorProperties
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DieudonneIntegralityAndFaithfulStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DieudonneIntegralityAndFaithful
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EndIsogenyAlgebraFiniteFinrankLeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EndIsogenyAlgebraInjectiveClearDenom
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsogenyFlatFinrank
@@ -104,7 +104,7 @@ theorem norm_det_eq_norm_deg : ∀ (p : ℕ) [Fact p.Prime] (T : Theory p) (k : 
       exact (TorsionTower.map_comp t t t _ _).symm.trans ((t.map_congr t e1).trans (TorsionTower.map_one t t))
     have hne : T.map (t.map t (Hom.hom g)) ≠ 0 := by
       intro h0
-      exact hg0 ((GlobalTheory.T.eq_pow_smul_of_pDivGroup_torsionTower_map p k A A G G t t g).2 ((GlobalTheory.T.dieudonne_integrality_and_faithful p T k G G _).2 h0))
+      exact hg0 ((GlobalTheory.T.eq_pow_smul_of_pDivGroup_torsionTower_map p k A A G G t t g).2 ((_root_.GlobalTheory.Dieu.Integrality.exists_pow_smul_and_faithful p T k G G _).2 h0))
     obtain ⟨m, hm⟩ : ∃ m, T.map (t.map t (Hom.hom g)) m ≠ 0 := by
       by_contra h
       push_neg at h

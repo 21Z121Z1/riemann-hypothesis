@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.SplitRep
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SemisimpleMatrixRepIsInternalIrreducible
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AbsIrrSubOfIsIrrSubMap
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MatrixSystemNonzeroSolutionDescendsStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MatrixSystemNonzeroSolutionDescends
 open Formalism.ConjugateSelfDual Formalism.MainNotions.N Polynomial
 
 namespace GlobalTheory.SplitCrit
@@ -108,7 +108,7 @@ theorem splitRep_of_models : ∀ {k Γ L : Type} [Field k] [Group Γ] [Field L] 
     ext x; simp
   have hint : ∀ g, ((ρ g : Matrix (Fin a) (Fin a) k)).map f * C = C * ((σ g : Matrix (Fin b) (Fin b) k)).map f :=
     fun g => hCint g
-  obtain ⟨X, hX0, hXint, hQX⟩ := GlobalTheory.T.exists_ne_zero_intertwiner_of_map f (fun g => (ρ g : Matrix (Fin a) (Fin a) k))
+  obtain ⟨X, hX0, hXint, hQX⟩ := _root_.GlobalTheory.matrix_system_nonzero_solution_descends f (fun g => (ρ g : Matrix (Fin a) (Fin a) k))
     (fun g => (σ g : Matrix (Fin b) (Fin b) k)) Q C hC0 hint hQC
 
   have hXW : LinearMap.range X.mulVecLin ≤ W := by

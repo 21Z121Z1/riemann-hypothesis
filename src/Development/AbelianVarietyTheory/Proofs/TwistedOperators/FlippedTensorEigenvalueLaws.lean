@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnderMemAndPlaceAbo
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationLeOneOfMem
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitThetaGridIsAdmissibleFlipTensor
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StepType
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FirstVertexWeilOrbitValueStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FirstVertexWeilOrbitValue
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links Formalism.L2.DIV
 open IsDedekindDomain NumberField MeasureTheory Matrix ValuativeRel GlobalTheory.ChiGrid GlobalTheory.FunObj GlobalTheory.SplitFlip GlobalTheory.SplitWeil GlobalTheory.StepData
 open GlobalTheory.RowTest GlobalTheory.StdFrames GlobalTheory.RowClaim
@@ -257,7 +257,7 @@ theorem core : GlobalTheory.FunPr.Hypotheses₂ → SumOKK → Big fun {D} {_Γ}
           ∏ w : locPl ch.G t, (locGrid ch.G t w).edgeFactor .one
             (Pi.mulSingle (0, D.R.m) (GlobalTheory.FirstRowTermLaw.kapAt ch.S.toGridChoice t w k)) (.ex 0 D.R.m) := by
   intro hP hS
-  obtain ⟨CF0, hsc⟩ := GlobalTheory.T.first_vertex_weil_orbit_value hP hS
+  obtain ⟨CF0, hsc⟩ := _root_.GlobalTheory.FirstRowScalar.scalar hP hS
   refine ⟨CF0, fun ε CF hC => ?_⟩
   obtain ⟨x₀, hsc⟩ := hsc ε CF hC
   refine ⟨x₀, fun D large₂ he hx Γ _ _ Pl0 T A Ks _ _ _ R F s ch hch hat => ?_⟩

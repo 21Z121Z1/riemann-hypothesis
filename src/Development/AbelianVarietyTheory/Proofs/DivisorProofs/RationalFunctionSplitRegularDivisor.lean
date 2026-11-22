@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.CentreAtOfIsAt
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsLogMult
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MayerVietorisSectionsSplit
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRationalFunctionMapsOfCartierTwistSectionsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRationalFunctionMapsOfCartierTwistSections
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.AnForm.R
 open ReciprocityTheory.ChartRestriction.G.Out (nonzeroLocus)
@@ -21,7 +21,7 @@ theorem ratsec_split_of_H1 : ∀ (Y : Scheme.{0}) [IsIntegral Y] (D : CartierDiv
     ∃ h₁ h₂ : Y.functionField, f = h₂ - h₁ ∧ (∀ y ∈ W₁, D.RegularAt y h₁) ∧
       ∀ y ∈ W₂, D.RegularAt y h₂ := by
   intro Y _ D W₁ W₂ hH f hf
-  obtain ⟨ρ, hreg, hsurj, hres⟩ := GlobalTheory.T.exists_rationalFunction_maps_of_cartierTwistSections Y D
+  obtain ⟨ρ, hreg, hsurj, hres⟩ := _root_.GlobalTheory.Cartier.exists_ratOn_twist Y D
   by_cases g1 : genericPoint Y ∈ W₁
   · by_cases g2 : genericPoint Y ∈ W₂
     · have g12 : genericPoint Y ∈ W₁ ⊓ W₂ := ⟨g1, g2⟩

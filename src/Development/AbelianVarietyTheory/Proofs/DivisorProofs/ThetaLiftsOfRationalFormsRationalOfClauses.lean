@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.TupPrim
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PbEqOfPins
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EvaluatesOfUnif
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RatOfOneMapOverL
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormalisedTupleDataOverRowFieldConditionsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormalisedTupleDataOverRowFieldConditions
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReferenceTupleLiftsSpanAllTuples
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LiftsSpanOfOnto
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneFormMapAllTuplesCoeffFieldOfClausesStatement
@@ -27,7 +27,7 @@ theorem ratG_of_clauses : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 T0 
   intro D G _ _ Pl0 T0 A T _ R F κ v₀ O ph hnV hC hoff hused hW hO hph hio h0 hQ hU hinj hcov i t x
   obtain ⟨fw⟩ := id hW
   have hpb : T.pb = R.C.P.pb := GlobalTheory.PinsFixHalf.pb_eq_of_pins T R κ v₀ O hC.lev fw.laws hO
-  have hex : PinsOverL T R κ v₀ i := GlobalTheory.T.exists_normalisedTupleData_over_rowField_conditions D G Pl0 T0 A T R F κ v₀ O i hC hoff hused hW (hO i) hQ hcov
+  have hex : PinsOverL T R κ v₀ i := _root_.GlobalTheory.PinsOverClauses.pinsOverL_of_clauses D G Pl0 T0 A T R F κ v₀ O i hC hoff hused hW (hO i) hQ hcov
   have hsp : GlobalTheory.OneMapTuples.LiftsSpan R i (v₀ i (sg0 D A)) :=
     _root_.GlobalTheory.LiftSpanClauses.liftsSpan_all_clauses D G Pl0 T0 A T R F κ v₀ O i hnV hC hoff hused hW hio (hO i) (h0 i) hQ
   have hone : OneMapOverL T R κ v₀ (ph i) i :=

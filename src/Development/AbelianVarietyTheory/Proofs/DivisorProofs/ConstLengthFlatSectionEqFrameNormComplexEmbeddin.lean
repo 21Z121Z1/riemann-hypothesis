@@ -8,7 +8,8 @@ import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsOrthonor
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsAlgebraicOfNormConst
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsHomogeneousCompIdeal
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.LawsFieldsSeparately
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieAlgebraMetricConjEmbeddingEqConjStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieAlgebraMetricConjEmbeddingEqConj
+import Development.AbelianVarietyTheory.Definitions.CMLattices.IsDiffOf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormFactorFlatLineEqGramOrthonormalFrame
 
 open AlgebraicGeometry CategoryTheory ReciprocityTheory.ChartRestriction.G.Semi NumberField IsDedekindDomain Module Formalism.BasicNotions Formalism.L2.Pj ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.FD GlobalTheory.AllWt GlobalTheory.FlatLine GlobalTheory.CompHt GlobalTheory.FlatCore
@@ -66,7 +67,7 @@ theorem cInf_eq_frame_norm : ∀ (E : Type) [Field E] [NumberField E] [IsCMField
       have : h.gram σ' v = (h.gram σ v).map (starRingEnd ℂ) := by
         ext i j
         simp only [ReciprocityTheory.GeometryOfNumbersTheory.HermFam.gram, Matrix.of_apply, Matrix.map_apply]
-        exact GlobalTheory.T.lieAlgebraMetric_conjEmbedding_eq_conj K B.pol F h hh σ (v i) (v j)
+        exact _root_.GlobalTheory.CM.LieMetricConj.form_conj K B.pol F h hh σ (v i) (v j)
       rw [this]
       change ((starRingEnd ℂ).mapMatrix (h.gram σ v)).det.re = _
       rw [← RingHom.map_det, Complex.conj_re]

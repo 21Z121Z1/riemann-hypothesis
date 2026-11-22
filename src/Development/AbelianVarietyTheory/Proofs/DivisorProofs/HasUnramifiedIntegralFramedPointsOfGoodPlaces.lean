@@ -25,7 +25,7 @@ import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ConjugationActsO
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PrincipalRootReZeroImSq
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CompactifiedModuliPartOne
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsModuliSchemePolarizedAbelianLevel
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLatticeSplitIndexPrimeToStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLatticeSplitIndexPrimeTo
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLatticeIsometryConjPointSplitUpToIndex
 import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.PermutesRefl
 import Formalism.LocalToGlobal.ProjectiveLattices.UnFree
@@ -179,7 +179,7 @@ theorem exists_fixed_point (hD : 1 ≤ Dw.p + Dw.q) {q : ℕ} (hq : q.Prime) (hq
     rw [← Spec.map_comp]; rfl
   obtain ⟨i, P, hP, hu⟩ := F.onto (x₂ ≫ prX Xo c) (by
     rw [Category.assoc, pullback.condition, ← Category.assoc, h1, hsp])
-  obtain ⟨Lp, Lm, N, hN, hs, ho, hp, hm⟩ := GlobalTheory.T.exists_lattice_split_index_prime_to E H (F.Di i) q hq hqd
+  obtain ⟨Lp, Lm, N, hN, hs, ho, hp, hm⟩ := _root_.GlobalTheory.LatSplitPrime.exists_split_prime_to E H (F.Di i) q hq hqd
   have hN0 : 0 < N := Nat.pos_of_ne_zero fun h => hN (h ▸ dvd_zero q)
   obtain ⟨P₀, hP₀, k₁, k₂⟩ := GlobalTheory.CM.FamCompare.exists_period (F.Di i) Lp Lm (fun z => ⟨N, hN0, hs z⟩) ho hp hm
     (ty := ty) (by rw [(F.sig i).1, (F.sig i).2]; exact hty)

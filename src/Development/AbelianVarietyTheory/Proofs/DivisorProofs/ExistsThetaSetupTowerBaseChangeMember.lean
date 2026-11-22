@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.LamRange
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGrpPullbackPasteFactorisation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLineBundleIsoPullbackCommSquare
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeeperThetaRingRegularAtExtensionPointStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeeperThetaRingRegularAtExtensionPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeeperThetaValueImageEqImageValue
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeeperThetaValueGaloisConjugateExtension
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBaseChangeFiniteInjectiveCompleteNormal
@@ -79,7 +79,7 @@ theorem exists_baseChange_member_of_tower : ∀ g : ℕ, 1 ≤ g → ∀ n : ℕ
   obtain ⟨D', e₈', G', _, _, A', U', ψ, hD, bc, hsemi, hψ, hw, hbc, hPU, hxe, hgen, hE, hpsi⟩ :=
     _root_.GlobalTheory.Poinc.Sep.UMem.exists_baseChange X₁ z₁ act V ev X m t δ 𝔪 V' io f hf hcn hinj hfin
   have hreg : ∀ ev₂ : 𝔗.X₂.M.Z.presheaf.stalk z₂ →+* V', 𝔗.Ext ev io ev₂ → RegAt 𝔗.X₂ z₂ ev₂ :=
-    fun ev₂ h => GlobalTheory.T.deeperThetaRing_regular_at_extension_point 𝔗 hz₂ ev io ev₂ hinj h 𝔪.reg
+    fun ev₂ h => _root_.GlobalTheory.Poinc.Sep.Tower.regAt 𝔗 hz₂ ev io ev₂ hinj h 𝔪.reg
   choose yK hyK using fun (ev₂ : 𝔗.X₂.M.Z.presheaf.stalk z₂ →+* V') (h : 𝔗.Ext ev io ev₂) =>
     exists_ringHom_val_of_regAt 𝔗.X₂ z₂ ev₂ (hreg ev₂ h)
   have hyKc : ∀ ev₂ h, (yK ev₂ h).comp 𝔗.om = f.comp 𝔪.yK := by

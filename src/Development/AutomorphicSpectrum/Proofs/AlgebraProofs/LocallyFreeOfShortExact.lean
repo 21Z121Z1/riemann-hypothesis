@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.FlagMinor
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LocallyFreeFiniteProjectiveBaseChangeStatement
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LocallyFreeFiniteProjectiveBaseChange
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LocallyFreeOfFiniteProjective
 
 open GlobalTheory.CompanionTheory.Ar.Num TensorProduct
@@ -68,8 +68,8 @@ theorem main : ∀ {o Ω : Type} [CommRing o] [Field Ω] [Algebra o Ω] (R : Sub
     { L with smul_mem' := fun a e he => hL.1 a a.2 e he }
   let M₁ : Submodule R E₁ := M.comap (i.restrictScalars R)
   let M₂ : Submodule R E₂ := M.map (q.restrictScalars R)
-  obtain ⟨hfin, hproj, hrk, hbc⟩ := GlobalTheory.T.locally_free_finite_projective_base_change R (r₁ + r₂) M hL
-  obtain ⟨hfin₂, hproj₂, hrk₂, hbc₂⟩ := GlobalTheory.T.locally_free_finite_projective_base_change R r₂ M₂ hL₂
+  obtain ⟨hfin, hproj, hrk, hbc⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Num.LocFreeProj.main R (r₁ + r₂) M hL
+  obtain ⟨hfin₂, hproj₂, hrk₂, hbc₂⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Num.LocFreeProj.main R r₂ M₂ hL₂
   have hqi : ∀ x, q (i x) = 0 := fun x => by
     rw [← LinearMap.mem_ker, ← hex]; exact LinearMap.mem_range_self i x
   let j : M₁ →ₗ[R] M := (i.restrictScalars R).restrict (fun x hx => hx)

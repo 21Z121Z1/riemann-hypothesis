@@ -14,7 +14,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBumpShintani
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsWhittakerBumpExtensionSchurComplementStatement
 import Development.AbelianVarietyTheory.Definitions.Divisors.NAInterSupSSubset
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KirillovSemilocalSmoothBump
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSphericalCuspFormWhittakerNeZeroStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSphericalCuspFormWhittakerNeZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WhittakerMulTorusIteratedFactorisation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KirillovSemilocalSmoothBumpStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BlockEmbeddingGLTorusElementZeroPaddedStatement
@@ -126,8 +126,8 @@ theorem GlobalTheory.JSW.MatchedVec.matched_vectors : ∀ (E : Type) [Field E] [
         ∀ u ∈ U, ∀ h, κ (h * finGL E (m + 1) u) = κ h) ∧
       ∃ h₀ ∈ GlobalTheory.JSW.supS E (m + 1) S, 0 < κ h₀ ∧ GlobalTheory.JSW.whit φ' h₀ ≠ 0 := by
   intro E _ _ _ m r S hcond π π' hπu hπ'u α β hα hβ
-  obtain ⟨φ', hφ'V, hφ'K, x₀, hx₀S, hx₀⟩ := GlobalTheory.T.exists_spherical_cuspForm_whittaker_ne_zero E m S hcond π' β hβ
-  obtain ⟨φ₀, hφ₀V, hφ₀K, x₁, hx₁S, hx₁⟩ := GlobalTheory.T.exists_spherical_cuspForm_whittaker_ne_zero E (m + r + 1) S hcond π α hα
+  obtain ⟨φ', hφ'V, hφ'K, x₀, hx₀S, hx₀⟩ := _root_.GlobalTheory.JSW.NzSph.exists_sph_whit_ne_zero E m S hcond π' β hβ
+  obtain ⟨φ₀, hφ₀V, hφ₀K, x₁, hx₁S, hx₁⟩ := _root_.GlobalTheory.JSW.NzSph.exists_sph_whit_ne_zero E (m + r + 1) S hcond π α hα
   obtain ⟨κ, hκc, hκ0, hκN, ⟨C, hC, hκC⟩, ⟨Uκ, hUκo, hUκ⟩, hκsm, hκx₀⟩ := GlobalTheory.Tx.exists_unipotentInvariant_compactlySupported_weight E m x₀
   have haut' : IsAutForm φ' := (π'.cusp φ' hφ'V).1
   obtain ⟨U', hU'o, hU'⟩ := exists_level φ' haut'

@@ -6,8 +6,8 @@ import Formalism.LocalToGlobal.Columns.ChainTwTopQ
 import Formalism.LocalToGlobal.Columns.DiagUnitMemAndNormalizesKOne
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PhiTopTargetTwist
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BlockExtMemTwistedK1
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PrincipalCongruenceLeTwistedK1Statement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TwistedK1BlockDecompositionStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PrincipalCongruenceLeTwistedK1
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TwistedK1BlockDecomposition
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RowTypeCharacterBlockSumOneEq
 
 noncomputable section
@@ -41,17 +41,17 @@ theorem level_congruence_eq_twisted_k1 (P : HeightOneSpectrum (𝓞 E)) (hu : ((
     levCong hN P c ⟨HQ (𝓞 E ⧸ P.asIdeal) n r b, (lamQ ξ n r b)⁻¹⟩ = kOneLevel P N r (c + 1) ξ := by
   set l : Lev (𝓞 E ⧸ P.asIdeal) K n := ⟨HQ (𝓞 E ⧸ P.asIdeal) n r b, (lamQ ξ n r b)⁻¹⟩
   have hH : (levCong hN P c l).H = twK1H P N r (c + 1) := by
-    refine le_antisymm (sup_le ?_ (GlobalTheory.T.principal_congruence_le_twisted_k1 P r (c + 1) c.succ_pos)) fun g hg => ?_
+    refine le_antisymm (sup_le ?_ (_root_.GlobalTheory.PrincipalCongruenceLevelK1.principal_congruence_le_level_k1 P r (c + 1) c.succ_pos)) fun g hg => ?_
     · rintro _ ⟨j, hj, rfl⟩
       exact _root_.GlobalTheory.TopStep.ext_mem_twisted_k1_level P hu hN r b (c + 1) hn j hj
-    · obtain ⟨j, hj, hb⟩ := GlobalTheory.T.twisted_k1_block_decomposition P hN r b c hn g hg
+    · obtain ⟨j, hj, hb⟩ := _root_.GlobalTheory.BlockDecompositionK1.exists_block_of_twisted_k1 P hN r b c hn g hg
       exact (mem_levCong hN c l g).2 ⟨j, hj, hb⟩
   refine levI_ext hH fun k h1 h2 => ?_
   obtain ⟨j, hj, hb⟩ := (mem_levCong hN c l k).1 h1
   rw [levCong_lam hN c l h1 hj hb]
   apply Units.ext
   have hjK : extI hN P j ∈ twK1H P N r (c + 1) := _root_.GlobalTheory.TopStep.ext_mem_twisted_k1_level P hu hN r b (c + 1) hn j hj
-  have hbK : (extI hN P j)⁻¹ * k ∈ twK1H P N r (c + 1) := GlobalTheory.T.principal_congruence_le_twisted_k1 P r (c + 1) c.succ_pos hb
+  have hbK : (extI hN P j)⁻¹ * k ∈ twK1H P N r (c + 1) := _root_.GlobalTheory.PrincipalCongruenceLevelK1.principal_congruence_le_level_k1 P r (c + 1) c.succ_pos hb
   have hk : (⟨k, h2⟩ : twK1H P N r (c + 1)) = ⟨_, hjK⟩ * ⟨_, hbK⟩ := Subtype.ext (mul_inv_cancel_left _ _).symm
   show _ = ((kOneCharacter P N r (c + 1) ξ).toHomUnits ⟨k, h2⟩ : K)
   rw [MonoidHom.coe_toHomUnits, hk, map_mul]

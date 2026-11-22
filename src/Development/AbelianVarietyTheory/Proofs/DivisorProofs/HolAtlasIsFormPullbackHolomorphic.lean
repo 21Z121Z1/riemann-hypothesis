@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.LineSCShortExact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContDiffOnReprPullbackComplexFormFderiv
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackComplexFormsLinearMapCompStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackComplexFormsLinearMapComp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolAtlasPullbackEqChartExpression
 
 set_option autoImplicit false
@@ -57,7 +57,7 @@ theorem compat_pullback {f : M' → M} {α : A.Fld} (hf : A.IsHolo A' f) (hα : 
   obtain ⟨i, hi⟩ := A.cover (f y)
   refine (_root_.GlobalTheory.CxForm.pullback_eq_chart M M' n n' A A' f α hf hα ⟨(j, y), hy⟩ i hi).trans (Eq.trans ?_
     (congrArg _ (_root_.GlobalTheory.CxForm.pullback_eq_chart M M' n n' A A' f α hf hα ⟨(j', y), hy'⟩ i hi).symm))
-  rw [← GlobalTheory.T.pullbackComplexFormsLinearMap_comp]
+  rw [← _root_.GlobalTheory.CxForm.pull_comp]
   show pull (fderiv ℂ (A.e i ∘ f ∘ (A'.e j).symm) (A'.e j y)) _ =
     pull ((fderiv ℂ (A.e i ∘ f ∘ (A'.e j').symm) (A'.e j' y)).comp
       (fderiv ℂ (A'.e j' ∘ (A'.e j).symm) (A'.e j y))) _

@@ -11,7 +11,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.WordFrameDualTupleGr
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselTransportIsometryFrameAdapted
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FundamentalDomainNormalisingConstants
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurePiPointsAtInfinitePlacesCMTypeImage
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurableSetTransportedRealPointsImageStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurableSetTransportedRealPointsImage
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegralUnipotentEqLatticeUnipotentCoords
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TransportRealPointsBijectiveMultiplicative
 
@@ -59,7 +59,7 @@ theorem isDomN (D : D7) (X : HidaSetting D) (Y : Formalism.L2.SG.Full.Full X) (�
     have h3 : ((Jc X).map w.embedding).det ≠ 0 := by rw [e]; exact (map_ne_zero _).2 h2
     rw [← h1, Matrix.det_mul, Matrix.det_mul] at h3
     exact isUnit_iff_ne_zero.2 (right_ne_zero_of_mul h3)
-  refine ⟨GlobalTheory.T.measurableSet_transported_real_points_image D X θ C _ hmeas, fun x hx => ?_⟩
+  refine ⟨_root_.GlobalTheory.CovDom.measurableSet_Gm_trX_image D X θ C _ hmeas, fun x hx => ?_⟩
   obtain ⟨g, rfl⟩ := hsurj x hx
   obtain ⟨s, hs, hsg⟩ := hex g
   obtain ⟨γ, hγ, hc⟩ := h8b s hs

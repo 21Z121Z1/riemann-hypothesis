@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.SharpRestriction.Divisibility.SchurIrreducible
 import Formalism.LocalToGlobal.BesselHermitianTheta.DefsReal
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.HighestWeightGeneratedWeightsBelow
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjectorOfIntegrableDiscreteSeriesCoefficientStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjectorOfIntegrableDiscreteSeriesCoefficient
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarJacLeExp
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsFockIPOfFockData
 
@@ -285,7 +285,7 @@ theorem discreteSeriesHighestVector_of_positivity : ∀ X : ProvA, DiscreteSerie
   have hi := integrable_eFun X h2 h6 lam hl h hg hh v hv
   haveI := secondCountable_grp (X.grp p q)
   refine ⟨hi, fun πU => ?_⟩
-  obtain ⟨hD1, hπ⟩ := GlobalTheory.T.projector_of_integrable_discreteSeries_coefficient p q (X.grp p q) (X.ds p q lam) v hv.2 hi
+  obtain ⟨hD1, hπ⟩ := _root_.GlobalTheory.CoefProjector.projector_of_integrable_coefficient p q (X.grp p q) (X.ds p q lam) v hv.2 hi
   obtain ⟨hsa, hPP, hio⟩ := hπ πU
   have hvv : inner ℂ ((X.ds p q lam).ι v) ((X.ds p q lam).ι v) = 1 := by
     rw [inner_self_eq_norm_sq_to_K, hv.2]; simp

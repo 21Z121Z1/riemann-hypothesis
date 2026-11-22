@@ -14,7 +14,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsAlgebraicOfNor
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HostIntegerCharacterCompConjEqConjEmbedding
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRamificationCompleteDVRValuationEqMulStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetValuationsSumZeroSameLocalLattice
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatLineWeightCharacterTriangularFrameChangeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatLineWeightCharacterTriangularFrameChange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TriangularFrameChangeBasechangeIntegralAtCompletStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralFrameSpanCompletedEigenLatticeStatement
 
@@ -62,7 +62,7 @@ theorem rho_eq_vAdd_at_prime : ∀ (E : Type) [Field E] [NumberField E] [IsCMFie
   have hval := hρ (π 𝔓) _ hmem
   have hev1 := GlobalTheory.FlagTan.evR_frBor s.sig_mem hbor
   have hev2 : evR Xo c s.sig yT = φ (evR Xo c s.sig y) := GlobalTheory.FlagTan.evR_frMap s.sig_mem.1 hyT
-  have hS4 := GlobalTheory.T.flatLineWeight_character_triangular_frameChange E H Dw τ T.Fr td
+  have hS4 := _root_.GlobalTheory.FlatChar.flatWt_char E H Dw τ T.Fr td
   have hct := GlobalTheory.ConjHostChar.conj_char E H Dw l Xo c τ K t ht
   obtain ⟨hA1, hA2⟩ := GlobalTheory.T.integralFrame_span_completed_eigenLattice E H Dw l Xo c K y B t₀ m1 m2 F τ.1 t ht u hu 𝔓 T iK hT ρV hρV yT hyT G t' n n'
     m1' m2' h1 h2 C (td none) y' hchg hlie

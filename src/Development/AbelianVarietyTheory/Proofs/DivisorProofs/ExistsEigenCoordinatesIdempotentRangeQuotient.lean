@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIdempotentsOfComaximalStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIdempotentsOfComaximal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuotientRetractPiQuotientOfSummand
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoordsRangeIdempotentOfRetract
 import Development.AbelianVarietyTheory.Definitions.Divisors.NotCompactOfMEqOne
@@ -47,7 +47,7 @@ theorem exists_eigen_coordinates_range_quot : ∀ {C : Type} [CommRing C] [IsLoc
     rw [← Module.End.mul_apply, ← hσπ c, Module.End.mul_apply])
   have hσσ : ∀ c d, σb c * σb d = σb d * σb c := fun c d => by
     rw [← map_mul, ← map_mul, mul_comm]
-  obtain ⟨e, he1, he2, he3⟩ := GlobalTheory.T.exists_eigen_idempotents_of_comaximal σb a χ hχ
+  obtain ⟨e, he1, he2, he3⟩ := _root_.GlobalTheory.eigenIdempotents_of_comaximal σb a χ hχ
   have heπ : ∀ i, πb * e i = e i * πb := fun i => he1 i πb hπσ
   have heσ : ∀ i c, σb c * e i = e i * σb c := fun i c => he1 i (σb c) (hσσ c)
   have hππ : πb * πb = πb := Submodule.linearMap_qext _ (LinearMap.ext fun x => by

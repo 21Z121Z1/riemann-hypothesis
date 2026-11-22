@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.ImageStableDe
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.RepresentationBounds
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DiagScaleApply
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.VPowLatticeLeImageAddLPowOfFiniteCokernel
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MonodromyReductionModuloHighDegreeStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MonodromyReductionModuloHighDegree
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsotypicMonodromyPolynomialsRaiseDegree
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LagrangePrimePowMemIsotypicDegreePolySpan
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MaxFrobeniusOrbitLengthDiffBoundsZmod
@@ -87,7 +87,7 @@ theorem isotypic_step : ∀ (O K : Type) [CommRing O] [NormedField K] [IsUltrame
     have : A' = H + η + 2 * (N - 1) * maxPeriod l Sig + 1 := by
       simp only [hA', hb, hρ, GlobalTheory.IndefiniteRowSideFullHecke.RepresentationBounds.rho]; ring
     rw [this]; exact hnum.1
-  have hred := GlobalTheory.T.monodromy_reduction_modulo_high_degree O K l e a
+  have hred := _root_.GlobalTheory.NModHigh.reduction O K l e a
   have hdeg := _root_.GlobalTheory.DegreeRaise.main O K l e a
   obtain ⟨α, β, hαβ⟩ := _root_.GlobalTheory.lagrange_C_rho_eq_comb_degrees l e a ha he Sig c A' N hB.card_Sig hA'l
 
@@ -226,7 +226,7 @@ theorem kills_cokerL : ∀ (O K : Type) [CommRing O] [NormedField K] [IsUltramet
   have lmemL₁ : ∀ n : ℕ, ∀ v ∈ D₁.L, (l : K) ^ n • v ∈ D₁.L := fun n v hv => by
     rw [hlpow₁]; exact D₁.L.toAddSubmonoid.nsmul_mem hv _
   have appL : ∀ v ∈ D₁.L, F.app v ∈ D₂.L := fun v hv => F.app_mem_ext le_rfl hv
-  have hred := GlobalTheory.T.monodromy_reduction_modulo_high_degree O K l e a
+  have hred := _root_.GlobalTheory.NModHigh.reduction O K l e a
 
   have a3 : ∀ x ∈ D₂.L, ∃ y ∈ D₁.L, ∃ z ∈ D₂.L,
       ((X : K⟦X⟧) ^ e) ^ A' • x = F.app y + (l : K) ^ b • z :=

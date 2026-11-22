@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Statements.CuspidalUnitaryTwists.ExistsS
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DefiniteThetaPairTermsNormsIndependentRepresenta
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DerivationDenominatorsAndHostFieldSizes
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormLeOneOfValuationLeOne
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DefiniteThetaPairNormPadicValuationBoundStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DefiniteThetaPairNormPadicValuationBound
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoordIntOfJets
 
 open NumberField Classical Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.TaylorLogMetric Formalism.MainNotions.StandardLatticesGL3 GlobalTheory.NormSum
@@ -141,7 +141,7 @@ theorem intSt_of_forall_inp : (∀ D, Inp D) → IntSt := by
       rw [hE.wt_eq hp w hw, if_pos hp, ← mul_assoc]
       refine GlobalTheory.PadicPlaceBound.neg_mul_vw_le_vw K σ z p w _ h2 hw fun lam => ?_
       rw [h3]
-      exact (GlobalTheory.T.definiteThetaPairNorm_padicValuation_bound D (hI D) S dl hLet δ t0 Q R.crv R.pt0 hQ R N B h1 p lam).2
+      exact (_root_.GlobalTheory.NormVal.norm_mem_and_le D (hI D) S dl hLet δ t0 Q R.crv R.pt0 hQ R N B h1 p lam).2
     refine ⟨hE.wt_size.1, hE.wt_size.2, fun i => ?_⟩
     have a1 := ne _ _ (hc i).1 (hn i).1
     have a2 := ne _ _ (hc i).2 (hn i).2

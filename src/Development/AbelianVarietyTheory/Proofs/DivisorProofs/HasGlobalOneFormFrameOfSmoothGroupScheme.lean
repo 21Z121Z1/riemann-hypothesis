@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasFrameOfIsBaseCha
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGlobalOneFormsIsBaseChangeTangentRep
 import Development.AbelianVarietyTheory.Definitions.Divisors.HopfLaurent
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuasiCompactZeroSec
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTangentRepresentationSmoothGroupSchemeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTangentRepresentationSmoothGroupScheme
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry KaehlerDifferential MonoidalCategory CartesianMonoidalCategory MonObj TensorProduct
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CatCoh GlobalTheory.Cris GlobalTheory.CechDR GlobalTheory.AbCoh
 attribute [local instance] Over.cartesianMonoidalCategory
@@ -16,7 +16,7 @@ namespace GlobalTheory.AbCoh
 theorem hasFrame_of_smooth_grpObj : ∀ (R : Type) [CommRing R] (A : Over (Sp R)) [GrpObj A],
     Smooth A.hom → HasFrame (OAff A.hom) := by
   intro R _ A _ hs
-  obtain ⟨W, i1, i2, hfin, hproj, ⟨t⟩⟩ := GlobalTheory.T.exists_tangentRepresentation_smooth_groupScheme R A hs
+  obtain ⟨W, i1, i2, hfin, hproj, ⟨t⟩⟩ := _root_.GlobalTheory.TanRepr.exists_tanRep R A hs
   obtain ⟨j, hj⟩ := _root_.GlobalTheory.TanForms.exists_globForm_isBaseChange R A W t
   exact GlobalTheory.AbCoh.hasFrame_of_isBaseChange R _ (OAff A.hom) W j hj
 

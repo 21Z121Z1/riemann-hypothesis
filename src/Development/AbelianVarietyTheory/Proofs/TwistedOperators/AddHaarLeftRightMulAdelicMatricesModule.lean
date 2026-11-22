@@ -5,16 +5,16 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MulVecCEApply
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HaarModulusProductFormulaTotallyReal
 import Development.AbelianVarietyTheory.Definitions.Foundations.T2SpaceTensorProductFiniteExtension
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AddEquivAddHaarCharEqOfIsOpenEmbeddingRestrict
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AddEquivAddHaarCharProdCongrStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AddEquivAddHaarCharMulVecArtinianReducedStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AddEquivAddHaarCharProdCongr
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AddEquivAddHaarCharMulVecArtinianReduced
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HaarModulusOfUnitCompletionsAtPlacesEqProdNorm
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsOpenEmbeddingFiniteAdeleOfSPartAndIntegralPartStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteIntegersTopology
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFinsetMatrixPairIntegralOutsideStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFinsetMatrixPairIntegralOutside
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsOpenEmbeddingPairOfTuplesToTupleOfPairs
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdicCompletionIntegersNormEqOneOfMulEqOneStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRestrictScalarsMatrixLeftRightMulAdeleTens
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TensorIdeleNormalizedAbsEqAdelicAbsNormStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TensorIdeleNormalizedAbsEqAdelicAbsNorm
 
 noncomputable section
 
@@ -27,7 +27,7 @@ theorem chi_Af (F : Type) [Field F] [NumberField F] {κ : Type} [Fintype κ] [De
     (M : Matrix κ κ (Af F)) (hM : IsUnit M.det) :
     (addEquivAddHaarChar (mulVecCE M hM) : ℝ) = ∏ᶠ v, ‖evalV F v M.det‖ := by
   classical
-  obtain ⟨S, hS⟩ := GlobalTheory.T.exists_finset_matrixPair_integral_outside F κ M M⁻¹
+  obtain ⟨S, hS⟩ := _root_.GlobalTheory.matrixPair_integral_cofinite F κ M M⁻¹
   obtain ⟨hOc, hOs, hOt⟩ := _root_.GlobalTheory.ModuLR.finiteIntegers_compact_secondCountable_t2 F S
   let _ : MeasurableSpace (OPart F S) := borel _
   have _ : BorelSpace (OPart F S) := ⟨rfl⟩
@@ -78,8 +78,8 @@ theorem chi_Af (F : Type) [Field F] [NumberField F] {κ : Type} [Fintype κ] [De
         change evalV F v (M i k) * evalV F v (jS F S (x.1 k, x.2 k)) = _
         rw [evalV_jS, dif_neg hv]
         rfl)
-  rw [key, GlobalTheory.T.addEquivAddHaarChar_prodCongr, addEquivAddHaarChar_eq_one_of_compactSpace (mulVecCE MO huO), mul_one,
-    GlobalTheory.T.addEquivAddHaarChar_mulVec_artinian_reduced (SPart F S)
+  rw [key, _root_.GlobalTheory.ModuLR.addEquivAddHaarChar_prodCE, addEquivAddHaarChar_eq_one_of_compactSpace (mulVecCE MO huO), mul_one,
+    _root_.GlobalTheory.ModuArtin.addEquivAddHaarChar_mulVecCE (SPart F S)
       (by show IsArtinianRing (∀ v : S, Fv F v.1); infer_instance)
       ⟨fun x ⟨n, hn⟩ => funext fun v => IsReduced.eq_zero (x v) ⟨n, congrFun hn v⟩⟩ κ _ huS,
     _root_.GlobalTheory.ModuPiLocal.modu_sPart F S _ huS, hdS,
@@ -117,8 +117,8 @@ theorem chi_AF (F : Type) [Field F] [NumberField F] [IsTotallyReal F] {κ : Type
       · change sndA F _ = _
         simp only [Matrix.mulVec, dotProduct, map_sum, map_mul]
         exact Finset.sum_congr rfl fun k _ => rfl)
-  rw [key, GlobalTheory.T.addEquivAddHaarChar_prodCongr, NNReal.coe_mul, chi_Af F _ hu₂, hd₂,
-    GlobalTheory.T.addEquivAddHaarChar_mulVec_artinian_reduced (Ainf F)
+  rw [key, _root_.GlobalTheory.ModuLR.addEquivAddHaarChar_prodCE, NNReal.coe_mul, chi_Af F _ hu₂, hd₂,
+    _root_.GlobalTheory.ModuArtin.addEquivAddHaarChar_mulVecCE (Ainf F)
       (by show IsArtinianRing (∀ v : InfinitePlace F, v.Completion); infer_instance)
       ⟨fun x ⟨n, hn⟩ => funext fun v => IsReduced.eq_zero (x v) ⟨n, congrFun hn v⟩⟩ κ _ hu₁, hd₁,
     GlobalTheory.GaugeProdFormula.modu_infinite F _ (hM.map (fstA F))]
@@ -131,7 +131,7 @@ theorem chi_lr (F E : Type) [Field F] [NumberField F] [IsTotallyReal F] [Field E
       GlobalTheory.Doubling.absE F E (Matrix.GeneralLinearGroup.det a) ^ m := by
   obtain ⟨κ, _, _, Λ, hΛ, hdet, hchar⟩ := _root_.GlobalTheory.ModuLR.exists_matrix_restrictScalars_lrCE F E m n g a
   apply NNReal.coe_injective
-  rw [hchar, chi_AF F Λ hΛ, hdet, GlobalTheory.T.tensorIdeleNormalizedAbs_eq_adelic_abs_norm F E]
+  rw [hchar, chi_AF F Λ hΛ, hdet, _root_.GlobalTheory.absE_eq_prod_norm_fstA_sndA F E]
   simp [map_mul, map_pow]
 
 theorem smul_map_lr (F E : Type) [Field F] [NumberField F] [IsTotallyReal F] [Field E] [NumberField E] [Algebra F E] (m n : ℕ)

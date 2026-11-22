@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SmallPair
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemIntegralAdelesSplitPlacesIffHalvesStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemIntegralAdelesSplitPlacesIffHalves
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.EqSecAddCsec
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceLineSimilitudeMapsSelfDualLattice
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicPointComponentsAtPlacesLatticesVacua
@@ -77,7 +77,7 @@ theorem cond_dual : ∀ (D : D7) (k : Type) [Field k] [ValuativeRel k] [Topologi
     ring
   constructor
   · intro hdc c hc hcc
-    refine (GlobalTheory.T.mem_integralAdeles_splitPlaces_iff_halves D k ι p I P hP _).2 ⟨Ideal.mul_mem_right _ _ (Ideal.mul_mem_left _ _ hc), fun i => ⟨?_, ?_⟩⟩
+    refine (_root_.GlobalTheory.FinPl.SplitHalves.mem_intAt_iff_halves D k ι p I P hP _).2 ⟨Ideal.mul_mem_right _ _ (Ideal.mul_mem_left _ _ hc), fun i => ⟨?_, ?_⟩⟩
     · rw [hX, map_mul (p i).pr, map_mul (p i).pr, map_mul (p i).pr]
       exact mul_mem (mul_mem (hU i).1 (hdc i).2) (hcc i).1
     · rw [hcX, map_mul (p i).pr, map_mul (p i).pr, map_mul (p i).pr]
@@ -96,7 +96,7 @@ theorem cond_dual : ∀ (D : D7) (k : Type) [Field k] [ValuativeRel k] [Topologi
       · rw [pr_eq_zero (p j) (hne_v i j (Ne.symm hij)) (sec_mem_idAt (p i) 1),
           pr_eq_zero (p j) (hne_v i j (Ne.symm hij)) (csec_mem_idAt (p := p i) 1), zero_mul]
         exact ⟨zero_mem _, zero_mem _⟩
-    have h1 := (((GlobalTheory.T.mem_integralAdeles_splitPlaces_iff_halves D k ι p I P hP _).1 (H _ (hsup (sec_mem_idAt (p i) 1)) hcond1)).2 i).1
+    have h1 := (((_root_.GlobalTheory.FinPl.SplitHalves.mem_intAt_iff_halves D k ι p I P hP _).1 (H _ (hsup (sec_mem_idAt (p i) 1)) hcond1)).2 i).1
     rw [hX, map_mul (p i).pr, map_mul (p i).pr, map_mul (p i).pr, (p i).pr_sec, mul_one] at h1
 
     have hh0 : (p i).pr (incA D h) ≠ 0 := by
@@ -115,7 +115,7 @@ theorem cond_dual : ∀ (D : D7) (k : Type) [Field k] [ValuativeRel k] [Topologi
       · rw [pr_eq_zero (p j) (hne_v i j (Ne.symm hij)) (sec_mem_idAt (p i) ((p i).pr (incA D h))⁻¹),
           pr_eq_zero (p j) (hne_v i j (Ne.symm hij)) (csec_mem_idAt (p := p i) ((p i).pr (incA D h))⁻¹), zero_mul]
         exact ⟨zero_mem _, zero_mem _⟩
-    have h2 := (((GlobalTheory.T.mem_integralAdeles_splitPlaces_iff_halves D k ι p I P hP _).1 (H _ (hsup (csec_mem_idAt (p := p i) ((p i).pr (incA D h))⁻¹)) hcond2)).2 i).2
+    have h2 := (((_root_.GlobalTheory.FinPl.SplitHalves.mem_intAt_iff_halves D k ι p I P hP _).1 (H _ (hsup (csec_mem_idAt (p := p i) ((p i).pr (incA D h))⁻¹)) hcond2)).2 i).2
     rw [hcX, Formalism.L2.Theta.cA_cA] at h2
     have e3 : (p i).pr (cA D (incA D D.host.xi0⁻¹) * d * ((p i).sec ((p i).pr (incA D h))⁻¹ * incA D h)) =
         (p i).pr (cA D (incA D D.host.xi0⁻¹)) * (p i).pr d := by

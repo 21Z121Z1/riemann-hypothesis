@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.MulSmulIdemMem
 import Development.AbelianVarietyTheory.Definitions.Divisors.WedgeNrmLeOfWedgeNormLe
 import Development.AbelianVarietyTheory.Definitions.Divisors.CongModRefl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsComponentIntegralFramedPointLiesOnStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTwistingSectionMulLatticeValueLeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTwistingSectionMulLatticeValueLe
 
 set_option synthInstance.maxHeartbeats 400000
 
@@ -54,7 +54,7 @@ theorem refExp_vp_add_le : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E
     rw [← EReal.sub_le_iff_le_add (Or.inl (EReal.coe_ne_bot _)) (Or.inl (EReal.coe_ne_top _))]
     refine le_iInf₂ fun f hf => ?_
     rw [EReal.sub_le_iff_le_add (Or.inl (EReal.coe_ne_bot _)) (Or.inl (EReal.coe_ne_top _))]
-    obtain ⟨g, hg, hle⟩ := GlobalTheory.T.exists_twistingSection_mul_lattice_value_le E H Dw l Xo c r U hU x G G₀ hG Z (t Z) la.1 _ hv f hf
+    obtain ⟨g, hg, hle⟩ := _root_.GlobalTheory.TwMulOne.exists_latW_val_le E H Dw l Xo c r U hU x G G₀ hG Z (t Z) la.1 _ hv f hf
     exact (iInf₂_le g hg).trans (nval_le_add_of_mul ho.1 (Int.cast_pos.2 hm) hn (ht Z la.1 la.2) hle)
   rw [add_right_comm]
   exact hd.trans (add_le_add h0 le_rfl)

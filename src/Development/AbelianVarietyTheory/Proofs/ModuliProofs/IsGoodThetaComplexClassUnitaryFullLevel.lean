@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.ModuliProofs.GoodThetaClassOfLatt
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TransportThetaLevelUniformisationCoordinates
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ImAdjointOfSpan
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.FiniteMarkedDataInGenus
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsPELObjectOfPrimitivePeriodMapUniformisedStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsPELObjectOfPrimitivePeriodMapUniformised
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsPeriodsComplexPELObject
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PelObjectClassPrimAndIsoClosed
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIsTypeFnOfRank
@@ -109,7 +109,7 @@ theorem goodClass_pelClass : Out.Laws → Out.Laws2 → (∀ (S : Scheme.{0}) (P
     · exact ConjBound.exists_action_lt E H (Di i) g ty (P i bb) (Hm i bb) (a j₁) κ ((hBh i).1 bb hb).1 (hHm i bb hb)
         (hκ j₁)
     · exact (hBu i _ ((hBh i).1 z hz)).unique ⟨hb, hh⟩ ⟨hz, LinearEquiv.refl _ _, fun _ => rfl⟩
-    · exact GlobalTheory.T.isPELObject_of_primitive_periodMap_uniformised L1 L2 hΘ hU E H D o g _ J b em w w' a bas ρ ty t (Di i) (fi i) (νi i) (P i bb) (Hm i bb)
+    · exact _root_.GlobalTheory.PeriodObject.pelClass_of_period L1 L2 hΘ hU E H D o g _ J b em w w' a bas ρ ty t (Di i) (fi i) (νi i) (P i bb) (Hm i bb)
         hpq hw hρ hty (hfam i).1 (hfam i).2 ((hBh i).1 bb hb) (hHm i bb hb) hu hp
   · obtain ⟨D', f, ν, Q, Hm', hgen, hζ, hper, hpol, hu⟩ :=
       _root_.GlobalTheory.PELPeriod.exists_period L1 L2 hΘ hU E H D o g _ J b em w w' a bas ρ ty t hw hw' hρ hty ht

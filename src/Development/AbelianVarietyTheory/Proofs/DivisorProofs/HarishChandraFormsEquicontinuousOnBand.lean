@@ -1,7 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMemBand
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarishChandraExistsReproducingTestFunctionGLStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormLeSupWiderBandGenCentralEigenformsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarishChandraExistsReproducingTestFunctionGL
+import Development.AbelianVarietyTheory.Definitions.Divisors.CentralNilGL
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormLeSupWiderBandGenCentralEigenforms
 import GroundTheory.AutomorphicForms.AdelicGLn
 
 noncomputable section
@@ -67,7 +68,7 @@ theorem equicontinuous_band : ∀ (E : Type) [Field E] [NumberField E] [IsTotall
   haveI : BorelSpace (GL (Fin a) (Cinf E)) := ⟨rfl⟩
   haveI : LocallyCompactSpace (GL (Fin a) (Cinf E)) := Units.isClosedEmbedding_embedProduct.locallyCompactSpace
   set μ : Measure (GL (Fin a) (Cinf E)) := Measure.haar
-  obtain ⟨α, hαc, hαs, hα⟩ := GlobalTheory.T.harishChandra_exists_reproducing_testFunction_GL E a L hL W hW X hX N μ inferInstance
+  obtain ⟨α, hαc, hαs, hα⟩ := _root_.GlobalTheory.HCAlphaGL.exists_alpha E a L hL W hW X hX N μ inferInstance
   have hint : ∀ (ψ : Sm E a) (g : GA E a), Integrable (fun y => ψ.1 (g * infGL E a y) * α y) μ := fun ψ g =>
     ((continuous_along ψ g).mul hαc).integrable_of_hasCompactSupport hαs.mul_left
 
@@ -123,7 +124,7 @@ theorem equicontinuous_band : ∀ (E : Type) [Field E] [NumberField E] [IsTotall
     refine ⟨?_, h1.trans ((le_max_left _ _).trans (le_max_right _ _))⟩
     rw [inv_le_comm₀ (by positivity) hp]
     exact h2.trans ((le_max_right _ _).trans (le_max_right _ _))
-  obtain ⟨C, hC⟩ := GlobalTheory.T.norm_le_sup_wider_band_genCentralEigenforms E a L hL W hW X hX N c hc1
+  obtain ⟨C, hC⟩ := _root_.GlobalTheory.HCF.norm_le_of_band_wide E a L hL W hW X hX N c hc1
   set C' := |C| + 1 with hC'
   have hC'0 : 0 < C' := by positivity
   set m := μ.real K' with hm

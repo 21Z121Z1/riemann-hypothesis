@@ -80,7 +80,7 @@ theorem classSum_princ {B : Base S T} (hB : B.Good) (hS : S.SigOK) {ψ : Twist D
   have hlaw := ((B.mem_formsC).1 hFm).2
   funext g
   rw [Base.classSum_apply, Base.classSum_apply, Finset.sum_apply, Finset.sum_apply]
-  have key := GlobalTheory.T.classSum_regroup_finerLevel_cosets (Bridge.ratF S) (ratF_injective S) hle hF hFu (fun i => finPt S (h₀ i)) hC₀.reps
+  have key := _root_.GlobalTheory.ClassRefineBridge.sum_isReps_refine (Bridge.ratF S) (ratF_injective S) hle hF hFu (fun i => finPt S (h₀ i)) hC₀.reps
     (fun i => finPt S (h i)) hC.reps
     (fun y => series B.F ω ((princ B).vecFlat ψ) (((GlobalTheory.ClassRegroup.finEquiv S).symm y : GfC S) : GA D S) (F y) g)
     (fun γ y => (hinv g).1 γ y) (fun k hk y => (hinv g).2 k hk y)

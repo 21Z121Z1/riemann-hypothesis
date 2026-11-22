@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzIntegralSuperposition
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzFamilyPhaseBoundStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzFamilyPhaseBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzFourierRepresentation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzInnerProductContinuous
 
@@ -23,8 +23,8 @@ theorem multiplier_symm : ∀ (V : Type) [NormedAddCommGroup V] [NormedSpace ℝ
   letI : MeasurableSpace V := borel V
   haveI : BorelSpace V := ⟨rfl⟩
   obtain ⟨d, A, h, hm⟩ := _root_.GlobalTheory.schwartz_eq_fourier_synthesis V m
-  obtain ⟨Φf, hΦf, cΦf, bΦf⟩ := GlobalTheory.T.schwartz_family_phase_bound V _ A f
-  obtain ⟨Φg, hΦg, cΦg, bΦg⟩ := GlobalTheory.T.schwartz_family_phase_bound V _ (-A) g
+  obtain ⟨Φf, hΦf, cΦf, bΦf⟩ := _root_.GlobalTheory.CharFamily.charMul_family V _ A f
+  obtain ⟨Φg, hΦg, cΦg, bΦg⟩ := _root_.GlobalTheory.CharFamily.charMul_family V _ (-A) g
   obtain ⟨Λ1, hΛ1⟩ := _root_.GlobalTheory.schwartz_pairing_conj_clm V μ hμ (T g)
   obtain ⟨Λ2, hΛ2⟩ := _root_.GlobalTheory.schwartz_pairing_conj_clm V μ hμ (T f)
   have hint : ∀ (Φ : EuclideanSpace ℝ (Fin d) → SchwartzMap V ℂ), Continuous Φ →

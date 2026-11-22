@@ -5,7 +5,7 @@ import Formalism.LocalToGlobal.CharacterGerms.BlockAdmissibleChart
 import Formalism.LocalToGlobal.CharacterGerms.NegMem
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartF
 import Development.AbelianVarietyTheory.Definitions.TeichmullerDepth.HasTeich
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsAdjointIntegralEndOfLadicLimitStatement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsAdjointIntegralEndOfLadicLimit
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.EqZeroOfGe
 
 open scoped BigOperators
@@ -17,7 +17,7 @@ theorem hasTeich : ∀ (C : Type) [Field C] [CharZero C] (V : VF C) (O : Type) [
   intro C _ _ V O _ _ dd Y d _ I _ p g
   obtain ⟨s, N, ζ, hs, hN, h1, h2, h3, hζ⟩ := exists_seq V Y.cpl (p.em g) (p.em_int g) (p.em_frob g)
     (fun a a' h => p.em_sep (g, a) (g, a') fun h' => h (congrArg Prod.snd h')) (p.em_unr g)
-  obtain ⟨M, M', hM, -, hl, hl'⟩ := GlobalTheory.T.exists_adjointIntegralEnd_of_ladicLimit C V O dd Y d I p s hs
+  obtain ⟨M, M', hM, -, hl, hl'⟩ := _root_.GlobalTheory.ActionLimit.exists_isEnd_of_limit C V O dd Y d I p s hs
   have key : ∀ (a : ZMod d) (z w : C), V.Ge 0 w →
       (∀ N : ℕ, ∃ n0, ∀ n ≥ n0, V.Ge N (z - p.em g a (s n) * w)) → z = ζ a * w := fun a z w hw h => by
     rw [← sub_eq_zero]

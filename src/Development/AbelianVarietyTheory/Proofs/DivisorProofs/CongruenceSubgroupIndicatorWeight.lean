@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitLemmaLieAl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSmallConjFixedOfValuationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInvolutiveAlgebraAdjoinRootSelfReciprocal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValResultantCharpolyShiftedUnitAdjoinRoot
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StableTwistedOrbitalIntegralIntegralNormCongruenStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StableTwistedOrbitalIntegralIntegralNormCongruen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedOrbitalIntegralLevelFunctionInertEqLattic
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KappaOrbitalIntegralCongruenceInertLatticeCount
 open NumberField GlobalTheory.UnitaryBC IsDedekindDomain Matrix Polynomial GlobalTheory.CuspRep Formalism.UG GlobalTheory.BCT
@@ -48,7 +48,7 @@ theorem match_principal_congruence_inert : ∀ (E : Type) [Field E] [NumberField
   obtain ⟨B₂, h21, h22, h23, h24⟩ := _root_.GlobalTheory.InvAlgConstr.exists_invAlg_adjoinRoot E w hw K e he1 t ht.1 Q₂ hm₂ hc₂
   obtain ⟨hsB, hres⟩ := _root_.GlobalTheory.UnitLemma.ShiftRes.val_resultant_shift E w K e he3 k t ht.1 htv a b Q₁ Q₂ B₁ B₂ hm₁ hm₂ hd₁ hd₂ hsep h11 h12 h13 h21 h22 h23
   have hid := _root_.GlobalTheory.UnitLemma.CongruenceCayley.identity_of_principal_congruence (GlobalTheory.T.unitLemma_lieAlgebra_unitaryGroup_of_jacquetRallis _root_.GlobalTheory.JR.unitMatch_all).1 K t ht B₁ B₂ h14 h24 hsB
-  rw [GlobalTheory.T.stableTwistedOrbitalIntegral_integralNormCongruence_product E w hw a b k Q₁ Q₂ _ hm₁ hm₂ hd₁ hd₂ hsep,
+  rw [_root_.GlobalTheory.BCT.StTwLevel.stTw2_lev E w hw a b k Q₁ Q₂ _ hm₁ hm₂ hd₁ hd₂ hsep,
     _root_.GlobalTheory.TwOrbLevel.twOrb_level_eq_stSum E hU w hw K e he1 he2 he3 hq k t ht htv a Q₁ B₁ hm₁ hd₁ hsep.of_mul_left hc₁ h11 h12 h13 h14,
     _root_.GlobalTheory.TwOrbLevel.twOrb_level_eq_stSum E hU w hw K e he1 he2 he3 hq k t ht htv b Q₂ B₂ hm₂ hd₂ hsep.of_mul_right hc₂ h21 h22 h23 h24,
     _root_.GlobalTheory.KapLat.kapOrb_congruence_eq_kapSum E hU w hw K e he1 he2 he3 hq k t ht htv n a b Q₁ Q₂ B₁ B₂ hab hm₁ hm₂ hd₁ hd₂ hsep hc₁ hc₂

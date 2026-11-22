@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAlgEquivFract
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardTranscendenceBasisOverConstEqOfAlgEquiv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EssFiniteTypeOfLocalRingOfVarietyPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocalRingOfVarietyPointTensorGraphLocalization
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GraphLocalRingRegularParamsAndDimStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GraphLocalRingRegularParamsAndDim
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TopFormsGraphLocalRingFreelyGenerated
 open CategoryTheory AlgebraicGeometry TopologicalSpace
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -50,7 +50,7 @@ theorem localRing_graph_of_injective : ∀ {K κ κ' L : Type} [Field K] [Field 
   have hκ'f : Algebra.EssFiniteType ℂ κ' := _root_.GlobalTheory.essFiniteType_of_isLocModel O' hO'
   set σ : K →ₐ[ℂ] κ' := ρ.comp e.toAlgHom with hσ
   have hQ : IsLocModel (algebraMap ℂ L) (loc L σ) := _root_.GlobalTheory.DiagLoc.isLocModel_loc σ hK hκ'f
-  obtain ⟨hm, hdim⟩ := GlobalTheory.T.graphLocalRing_regular_params_and_dim (L := L) σ n x hK hκ'f hx
+  obtain ⟨hm, hdim⟩ := _root_.GlobalTheory.DiagLoc.maximalIdeal_eq_span_and_ringKrullDim (L := L) σ n x hK hκ'f hx
   have hsum : ∀ (l : ℕ) (a : Fin l → R) (b : Fin l → κ'),
       algebraMap (K ⊗[ℂ] κ') L (∑ i, (a i : K) ⊗ₜ[ℂ] b i) =
         ∑ i, algebraMap (K ⊗[ℂ] κ') L ((a i : K) ⊗ₜ b i) := fun l a b => map_sum _ _ _

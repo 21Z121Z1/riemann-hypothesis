@@ -3,7 +3,7 @@ import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SameOrbitRefl
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsImg
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockDiagonalMinorVanishingStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockDiagonalMinorVanishing
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagModelBaseProjectionPoints
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverArithmeticFirst
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverArithmeticThird
@@ -154,12 +154,12 @@ theorem stepCols_nonempty {i : Fin N} (h : IsProperStep N j i) : (stepCols N j i
 
 theorem minor_off_step (hj : j ≤ N) {i : Fin N} (hp : IsProperStep N j i) {h : Matrix (Fin N) (Fin N) ℂ}
     (hh : IsBlockDiag j h) {I : Finset (Fin N)} (hI : ¬ IsStepRows N j i I) : minorIJ h I (stepCols N j i) = 0 :=
-  ((GlobalTheory.T.block_diagonal_minor_vanishing ℂ N j i hj).2.1 h I hh hI).resolve_right (stepCols_nonempty hp).ne_empty
+  ((_root_.GlobalTheory.CompanionTheory.Ar.PB.MinorCalc.minors_main ℂ N j i hj).2.1 h I hh hI).resolve_right (stepCols_nonempty hp).ne_empty
 
 theorem minors_of_mul (hj : j ≤ N) (i : Fin N) {T h₁ h₂ : Matrix (Fin N) (Fin N) ℂ} (hT : T.det ≠ 0)
     {C : Finset (Fin N)} {c : ℂ} (h : ∀ I, minorIJ (T * h₁) I C = c * minorIJ (T * h₂) I C) (I : Finset (Fin N)) :
     minorIJ h₁ I C = c * minorIJ h₂ I C := by
-  have cb := (GlobalTheory.T.block_diagonal_minor_vanishing ℂ N j i hj).1
+  have cb := (_root_.GlobalTheory.CompanionTheory.Ar.PB.MinorCalc.minors_main ℂ N j i hj).1
   have hu : IsUnit T.det := hT.isUnit
   calc minorIJ h₁ I C = minorIJ (T⁻¹ * (T * h₁)) I C := by rw [Matrix.nonsing_inv_mul_cancel_left _ _ hu]
     _ = ∑ I', minorIJ T⁻¹ I I' * minorIJ (T * h₁) I' C := cb _ _ _ _

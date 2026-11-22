@@ -3,8 +3,8 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.InvVolConjLevelOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasCompactSupportFlatIntegrand
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicIsNonarchimedeanLocalField
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTranslatesEqPrimFrameLat
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnfoldingTermCoefEqResidueCardZpowStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OriginDatumValueHalfIntegerPowPlaceAAStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnfoldingTermCoefEqResidueCardZpow
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OriginDatumValueHalfIntegerPowPlaceAA
 
 noncomputable section
 
@@ -198,8 +198,8 @@ theorem aaScalar_eq_pow (w : Pl D.host.E) (hψ : HasConductor (psiAt W w) (genAt
     ∃ n : ℤ, aaScalar W w = (resCard (Kw w) : ℂ) ^ ((n : ℂ) / 2) ∧
     |n| ≤ 16 * ((D.R.m : ℤ) ^ 3 * (bigN D : ℤ) ^ 2 *
       (|FractionalIdeal.count D.host.E w D.host.AA| + |FractionalIdeal.count D.host.E w D.host.AAbar|)) := by
-  obtain ⟨n1, h1, b1⟩ := GlobalTheory.T.unfoldingTerm_coef_eq_residueCard_zpow W w
-  obtain ⟨n2, h2, b2⟩ := GlobalTheory.T.originDatum_value_halfIntegerPow_placeAA W w fun a ha => hψ.eq_one ha
+  obtain ⟨n1, h1, b1⟩ := _root_.GlobalTheory.FunObj.AaCoef.aaTerm_coef_eq_zpow W w
+  obtain ⟨n2, h2, b2⟩ := _root_.GlobalTheory.OriginBox.aaTerm_datum_origin W w fun a ha => hψ.eq_one ha
   obtain ⟨n3, h3, b3⟩ := path_apow_pow w
   have hq : (resCard (Kw w) : ℂ) ≠ 0 := by
     have : 1 < resCard (Kw w) := Finite.one_lt_card; exact_mod_cast (show resCard (Kw w) ≠ 0 by omega)

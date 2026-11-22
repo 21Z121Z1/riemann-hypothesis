@@ -6,8 +6,10 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistedSelmerL
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GaloisTwistedSelmerAuxprimesOfMatrixAndBounds
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmissibleIndexBoundAllPowersOfConditions
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExportAllOfSixInputs
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CentralIdempotentOfCommStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmIntOfSupLawsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CentralIdempotentOfComm
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.HeckeSplitOne
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdmissibleIndexBoundAllPowers
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmIntOfSupLaws
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmT3OfHeckeSemisimple
 open GlobalTheory.LiftLeaf GlobalTheory.TwSys GlobalTheory.TwAll GlobalTheory.SupLaw Formalism.BasicNotions Formalism.MainNotions Formalism.ConjugateSelfDual ReciprocityTheory.Gal NumberField IsDedekindDomain
 
@@ -35,8 +37,8 @@ theorem twistTheorem_allPowers_of_selmer_supLattice :
     GlobalTheory.TwistDet.propABCD_of_rel D D.nd D.ntw D.nexp hRel (heckeLaws_of_range D hHC hOff) hGood h8
   have hAB : admissibleIndexBoundAllPowers D.nexp (BlochKatoReduction.bk0 D) N0 :=
     GlobalTheory.TwistChoiceAll.admissibleIndexBoundAllPowers_of_conditions D D.nd D.ntw (BlochKatoReduction.bk0 D) N0 hTie hP hX hACD
-  have hInt : IntegralHeckeForms.IsotypicPartsInternalDirectSum D.nexp E := GlobalTheory.T.admInt_of_sup_laws D E hG hFull hHk hU hT hComm
-  have hAlg : IntegralHeckeForms.GroupAlgebraIntegrality D.nexp := GlobalTheory.T.admALG_of_commG_var D hComm
+  have hInt : IntegralHeckeForms.IsotypicPartsInternalDirectSum D.nexp E := _root_.GlobalTheory.IntSup.admInt_of_sup D E hG hFull hHk hU hT hComm
+  have hAlg : IntegralHeckeForms.GroupAlgebraIntegrality D.nexp := _root_.GlobalTheory.IdemAlg.admALG_of_commG D hComm
   exact GlobalTheory.exportAll_of_six_inputs D E N0 hAB hInt hAlg hT4 hL3 (_root_.GlobalTheory.EigRed.admT3_of_semisimple_good D E hInt hAlg hSig hSS)
 
 end GlobalTheory.TwExportSup

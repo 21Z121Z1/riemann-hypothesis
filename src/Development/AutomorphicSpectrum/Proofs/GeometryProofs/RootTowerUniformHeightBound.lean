@@ -5,7 +5,13 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IntegralClosureHeightEqOneOfLiesOver
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatLineGenerator
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.JoinModelPointsProject
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootModelFlagCompareStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootModelFlagCompare
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
+import Development.AbelianVarietyTheory.PublishedTheorems.SemiabelianTori.GeometricallyConnectedSplitTorusAff
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplierLine
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginCompareFirst
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginCompareSecond
@@ -104,7 +110,7 @@ theorem comp_bound (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host 
       ((fun j => j.elim 1 fun r => i (o₀.e r) / o.e r : Option (RootIx D) → M.Ω) j) := by
     rintro (_ | r)
     · exact hG.1
-    · refine GlobalTheory.T.root_model_flag_compare E H D l Xo c Y S S₀ M R o.𝔐 o₀.𝔐 o.Fl o₀.Fl i o.e o₀.e ?_ ?_ o.lines o₀.lines r
+    · refine _root_.GlobalTheory.CompanionTheory.Ar.Ht.CloseGen.genUnit_join E H D l Xo c Y S S₀ M R o.𝔐 o₀.𝔐 o.Fl o₀.Fl i o.e o₀.e ?_ ?_ o.lines o₀.lines r
       · rw [o.g_over, o₀.g_over, ← hi, ← Category.assoc, ReciprocityTheory.ChartRestriction.G.Geo.Tor.spMap_comp]
       · intro s' k
         have hd : dualMap o.g = (dualMap i).comp (dualMap o₀.g) := by

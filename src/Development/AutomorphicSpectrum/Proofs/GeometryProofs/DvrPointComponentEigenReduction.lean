@@ -3,7 +3,8 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GermSys
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeAt
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValAtCompLocalHomStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValAtCompLocalHom
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CoordsAt
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Crv GlobalTheory.CompanionTheory.Ar.Conj GlobalTheory.CompanionTheory.Ar.Flat GlobalTheory.CompanionTheory.Ar.Fl
 open scoped CategoryTheory.Obj
@@ -132,7 +133,7 @@ theorem val_abs (ξ : Sp Ω ⟶ X) (hg : IsCptGen ξ) (s : X ⟶ Sp O) (inc : F 
     exact genMap_specializes ξ ⟨_, h₁⟩ ⟨_, h₂⟩ hsp s'
   · rintro a h ⟨s', rfl⟩
     have v : ValAt ξ z (genMap ξ ⟨_, h₂⟩ s') ((Scheme.stalkClosedPointTo z).hom s') := ⟨h₂, s', rfl, rfl⟩
-    have v' := GlobalTheory.T.valAt_comp_local_hom X Ω ξ V K (algebraMap V K) z _ _ v (by rw [hz]; exact h₁)
+    have v' := _root_.GlobalTheory.CompanionTheory.Ar.ChangeRing.valAt_change X Ω ξ V K (algebraMap V K) z _ _ v (by rw [hz]; exact h₁)
     rw [hz] at v'
     obtain ⟨h', e⟩ := c4 _ _ v'
     exact ⟨_, e.symm⟩

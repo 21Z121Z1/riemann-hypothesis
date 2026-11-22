@@ -10,7 +10,9 @@ import Development.AutomorphicSpectrum.Statements.GeometryStatements.ThmFlatA
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatLineGenerator
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.CardComapMulFinsumEqFinsumFibres
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.FinConstFor
-import Development.AutomorphicSpectrum.Proofs.AdelicProofs.PadicEmbeddingDiscreteValuationRingStatement
+import Development.AutomorphicSpectrum.Proofs.AdelicProofs.PadicEmbeddingDiscreteValuationRing
+import Development.AutomorphicSpectrum.Definitions.AdelicLattices.FactPrimes
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LatNormGrLatNeZeroOfSpan
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PartIHolds
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ModuliSchemesExist
 
@@ -35,7 +37,7 @@ theorem PositivityTheory.Ar2.exists_local_model_dvr : ∀ (E : Type) [Field E] [
   haveI : FiniteDimensional ℚ c.F := c.fin
   haveI : NumberField c.F := { to_charZero := inferInstance, to_finiteDimensional := c.fin }
   obtain ⟨W, hWp, hW⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.exists_valuationSubring_of_padicEmbedding c.F p κ
-  obtain ⟨V, hDVR, hVn, -, -⟩ := GlobalTheory.T.padic_embedding_discrete_valuation_ring c.F p κ
+  obtain ⟨V, hDVR, hVn, -, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Fl.ValRing.exists_dvr_of_padic_embedding c.F p κ
   have hVeq : c.V W = V := by
     ext x
     rw [← hVn x, hW x]

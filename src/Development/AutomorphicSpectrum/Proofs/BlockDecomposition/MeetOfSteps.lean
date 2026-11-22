@@ -1,7 +1,8 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.WhittakerVanishingImpliesZero
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.T2SpaceAdelicGeneralLinearGroupNumberField
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsMirabolicWhittakerStageOfIsCuspFormStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsMirabolicWhittakerStageOfIsCuspForm
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnipotentBlockColumnIndex
 
 noncomputable section
 
@@ -86,12 +87,12 @@ theorem meet_of_steps : S2 → MirabolicColumnBlock → G0 → G1 → AlmostEver
 
   have hxY : x ∈ Y := by
     refine (hY x).2 ⟨⟨?_, ?_⟩, ?_, fun w hw => (hS w hw).2.2.1 _ (hB w hw).1⟩
-    · rw [hx]; exact _root_.GlobalTheory.T.isMirabolicWhittakerStage_of_isCuspForm E a ψ φ0 (π.cusp _ hφ0)
+    · rw [hx]; exact _root_.GlobalTheory.CuspGeneric.good_of_isCuspForm E a ψ φ0 (π.cusp _ hφ0)
     · rw [hx]; exact (π.cusp _ hφ0).1.left
     · rw [hx]; exact hm φ0 hφ0
   have hxY' : x' ∈ Y' := by
     refine (hY' x').2 ⟨⟨?_, ?_⟩, ?_, fun w hw => (hS w hw).2.2.2 _ (hB w hw).2⟩
-    · rw [hx']; exact _root_.GlobalTheory.T.isMirabolicWhittakerStage_of_isCuspForm E a ψ φ0' (π'.cusp _ hφ0')
+    · rw [hx']; exact _root_.GlobalTheory.CuspGeneric.good_of_isCuspForm E a ψ φ0' (π'.cusp _ hφ0')
     · rw [hx']; exact (π'.cusp _ hφ0').1.left
     · rw [hx']; exact hm' φ0' hφ0'
   have hx0 : x ≠ 0 := fun e => h0 (Subtype.ext (by rw [← hx, e]; rfl))

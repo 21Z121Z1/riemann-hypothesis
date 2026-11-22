@@ -2,7 +2,7 @@ import Mathlib
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.GeoDefs
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AlgebraicallyIndependentCoordsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorusCoordinateIsUnitStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorusMonomialMemRangeStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorusMonomialMemRange
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NoetherNormalizationFiniteStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AlgebraicOverTorusOfIntegral
 
@@ -30,8 +30,8 @@ theorem tpow_mem_range (he : 0 < e) (S : Finset (Fin (d + 1)))
     (hS : V ≤ i ⁻¹ᵁ Proj.basicOpen (grK K N) (yS y S)) (ht : ∀ k, IsUnit (tV i y hy V hV k)) :
     ∀ m ∈ expS S, tpow (fun k => (ht k).unit) m ∈ Set.range (evV i (yS y S) V hS) := by
   first
-    | exact GlobalTheory.T.torus_monomial_mem_range ..
-    | (intros; apply GlobalTheory.T.torus_monomial_mem_range <;> assumption)
+    | exact _root_.GlobalTheory.CompanionTheory.GeoTpow.tpow_mem_range ..
+    | (intros; apply _root_.GlobalTheory.CompanionTheory.GeoTpow.tpow_mem_range <;> assumption)
 
 theorem isIntegral_torusS (he : 0 < e) (q : X ⟶ Spec (CommRingCat.of K)) (hiq : i ≫ PSpace.str K N = q)
     (hfin : Module.Finite (Algebra.adjoin K (Set.range fun k => Ideal.Quotient.mk (homIdeal i) (y k)))

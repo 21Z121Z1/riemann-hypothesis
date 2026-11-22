@@ -2,10 +2,13 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ConjScalarThm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReadingsExistRow
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaFormEigenMemSinglePartStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaFormEigenMemSinglePart
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConjugateThetaLiftMatchedHeckeCombinationStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConjugateSplittingUnramifiedHyperspecialFixStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalThetaCorrespondenceInertPlaceOfHoweStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConjugateSplittingUnramifiedHyperspecialFix
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalThetaCorrespondenceInertPlaceOfHowe
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
+import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil
+import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaVacuumHeckeIdentitySplitPlace
 import Formalism.LocalToGlobal.JointCharacters.LocEMulLocE
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CardKerSubspacesAndHeckePolyOfConvolution
@@ -138,7 +141,7 @@ theorem loc_inert (hHowe : HoweUnram) (hW : IsWeilDatumO R.ψ (Vc D i) (Wc D i) 
       (R.HW i σ).e (th y') = postOn (R.MW i σ) (hk (Wc D i) P cW) ((R.HW i σ).e (th y))) (d : List ℤ) :
     ∃ z : ℂ, ∀ u : H.H, EigF R i a (H.e u) →
       postOn (R.MW i σ) (hk (Wc D i) P (Finsupp.single d 1)) ((R.HW i σ).e (th u)) = z • (R.HW i σ).e (th u) := by
-  have hsc := GlobalTheory.T.sphericalThetaCorrespondence_inertPlace_of_howe hHowe R.ψ (Vc D i) (Wc D i) μ' (μ' * η'⁻¹) ω P hW hc hvac
+  have hsc := _root_.GlobalTheory.Hk3.CorrInert.sphCorr_of_inert hHowe R.ψ (Vc D i) (Wc D i) μ' (μ' * η'⁻¹) ω P hW hc hvac
   have hcorr := hsc.2.1
   obtain ⟨cS, hM⟩ := hcorr (Finsupp.single d 1)
   refine ⟨evC (Vc D i) P (a P) (dualC cS), fun u hu => ?_⟩
@@ -204,7 +207,7 @@ theorem lift_eig_mem_part : GlobalTheory.Hk3.HoweUnram → ∀ {D : D7} {G : Typ
   have loc : ∀ P, Good R A.μ0 P → ∀ d, RelLab (Wc D i) P d → ∃ z : ℂ, ∀ u : H.H, EigF R i a (H.e u) →
       postOn (R.MW i σ) (hk (Wc D i) P (Finsupp.single d 1)) ((R.HW i σ).e (th u)) = z • (R.HW i σ).e (th u) := by
     intro P hP d hd
-    have h38 := GlobalTheory.T.conjugateSplitting_unramified_hyperspecial_fix R F hC i σ μ' η' hyp ω hW f₀ f B hVec P hP
+    have h38 := _root_.GlobalTheory.ConjVacFix.unr_and_vacFix R F hC i σ μ' η' hyp ω hW f₀ f B hVec P hP
     obtain ⟨hu1, hu2, hvac⟩ := h38
     have step : ∀ cV cW, Match R.ψ ω P (dualC cV) cW → ∀ y y' : H.H, H.e y' = hkF (Vc D i) P cV (H.e y) →
         (R.HW i σ).e (th y') = postOn (R.MW i σ) (hk (Wc D i) P cW) ((R.HW i σ).e (th y)) :=
@@ -215,7 +218,7 @@ theorem lift_eig_mem_part : GlobalTheory.Hk3.HoweUnram → ∀ {D : D7} {G : Typ
   classical
   let b : Pl D.host.E → List ℤ → ℂ := fun P d =>
     if h : Good R A.μ0 P ∧ RelLab (Wc D i) P d then (loc P h.1 d h.2).choose else 0
-  obtain ⟨ev, hev⟩ := GlobalTheory.T.thetaForm_eigen_mem_single_part R hC.lev hC.models.HW i σ b
+  obtain ⟨ev, hev⟩ := _root_.GlobalTheory.ConjScalar.OnePart.mem_one_part R hC.lev hC.models.HW i σ b
   refine ⟨ev, fun u hu => hev (th u) fun P d hP hd => ?_⟩
   simp only [b, dif_pos (And.intro hP hd)]
   exact (loc P hP d hd).choose_spec u hu

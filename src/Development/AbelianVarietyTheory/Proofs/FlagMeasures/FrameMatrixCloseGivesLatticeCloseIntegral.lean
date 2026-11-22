@@ -10,9 +10,9 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FramesCommonStabilis
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalExtend
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsIntegralOfQuad
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitriangularCloseToOneInverseCloseStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PairingConjInverseAdjointCloseToOneStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemMaximalCompactOfIntegralStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalPairingMatrixInvMulSelfStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PairingConjInverseAdjointCloseToOne
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemMaximalCompactOfIntegral
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalPairingMatrixInvMulSelf
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GlobalFramesJointGramInvMulSelf
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsCommonDenominatorForHermitianLatticeData
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CloseOnCompletedLatticeOfCloseOnFrames
@@ -173,7 +173,7 @@ theorem loc_close (L : LocE F E) (r k : ℕ) (S : Frames L r k) (c a t e : F)
   have htO : algebraMap F E (t * e ^ 2 * a ^ r) ∈ L.O :=
     algebraMap_mem L (mul_mem (mul_mem ht (pow_mem he _)) (pow_mem ha _))
   obtain ⟨Mi, hMi1, hMi2, hMi⟩ := GlobalTheory.T.unitriangular_close_to_one_inverse_close L (r + 1) M _ htO hMlow hMdiag hcl
-  have hcl' := GlobalTheory.T.pairing_conj_inverseAdjoint_close_to_one L (r + 1) _ Zi M Mi M' _ (algebraMap F E e) htO
+  have hcl' := _root_.GlobalTheory.Sloc.CloseConj.main L (r + 1) _ Zi M Mi M' _ (algebraMap F E e) htO
     (by rw [L.cj_fix]; exact ⟨_, rfl⟩) hZi hZ hZi' hMi1 hMi2 hMi hpair
   have heu : IsUnit (algebraMap F E e) := (IsUnit.mk0 _ he0).map (algebraMap F E)
   have hM'cl : ∀ i j, ∃ o ∈ L.O, (M' - 1) i j = algebraMap F E (t * a ^ r) * o := by
@@ -210,7 +210,7 @@ theorem loc_close (L : LocE F E) (r k : ℕ) (S : Frames L r k) (c a t e : F)
     · rw [hs'.1 i j hij]; exact L.O.zero_mem
   obtain ⟨si, hsi, hsiO⟩ := int_inv L s hs.1 hs.2 hsO
   obtain ⟨si', hsi', hsi'O⟩ := int_inv L s' hs'.1 hs'.2 hs'O
-  exact GlobalTheory.T.mem_maximal_compact_of_integral L r k S h s si s' si' hh hsO hsiO hsi hs'O hsi'O hsi' hsf hsf'
+  exact _root_.GlobalTheory.HL.Frames.mem_K0_of_integral L r k S h s si s' si' hh hsO hsiO hsi hs'O hsi'O hsi' hsf hsf'
 
 end Loc2
 end GlobalTheory.HL.FrameClose
@@ -219,7 +219,7 @@ namespace GlobalTheory.HL.FrameClose
 
 theorem close_lattice : ∀ {F E : Type} [Field F] [NumberField F] [Field E] [NumberField E] [Algebra F E] {sig : E →ₐ[F] E} (A : Places F E sig), ∀ (r k : ℕ) (G : GFrames A r k), ∀ Λ : G.Lt, Submodule.IsLattice E Λ → ∃ d : ∀ p, (A.loc p).Fp, (∀ p, d p ≠ 0) ∧ {p | ¬ ∃ u : (𝒪[(A.loc p).Fp])ˣ, ((u : 𝒪[(A.loc p).Fp]) : (A.loc p).Fp) = d p}.Finite ∧ ∀ p (c0 : (A.loc p).Fp) (h : (G.S p).GLV) (M : Matrix (Fin (r + 1)) (Fin (r + 1)) (A.loc p).Ep), c0 ≠ 0 → c0 ∈ 𝒪[(A.loc p).Fp] → h ∈ (G.S p).St → (∀ j, h (A.bc p (G.f j)) = ∑ i, M i j • A.bc p (G.f i)) → (∀ i j, ∃ o ∈ (A.L p).O, (M - 1) i j = algebraMap (A.loc p).Fp (A.loc p).Ep (c0 * d p) * o) → h ∈ (G.S p).K0 ∧ ∀ x ∈ A.lat p Λ, ∃ y ∈ A.lat p Λ, h x - x = algebraMap (A.loc p).Fp (A.loc p).Ep c0 • y := by
   intro F E _ _ _ _ _ sig A r k G Λ hΛ
-  have hZinv := GlobalTheory.T.rationalPairingMatrix_inv_mul_self A r k G
+  have hZinv := _root_.GlobalTheory.HL.GFrames.Zh_inv_mul A r k G
   have hΓinv := _root_.GlobalTheory.HL.GamInv.main A r k G
   obtain ⟨D, hD0, hDv, hDpair, hDg⟩ := _root_.GlobalTheory.DenClear.den_clear
     (Sum.elim (fun ab : Fin (r + 1) × Fin (r + 1) => G.Zh ab.1 ab.2)

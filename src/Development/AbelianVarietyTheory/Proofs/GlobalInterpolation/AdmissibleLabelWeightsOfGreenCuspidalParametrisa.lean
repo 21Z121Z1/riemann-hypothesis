@@ -5,13 +5,14 @@ import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoeffZeroNeOfMonicIrr
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LabelDatum
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LemmaLSeriesWeightsOfGreenCuspidalParametrisatio
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CanonListLength
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinsumCentralIdempotentOfIrrCharacterEqSimpleStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinsumCentralIdempotentOfIrrCharacterEqSimple
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsCuspidalCharacterIffIsCuspidalGLnFiniteField
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.GreenCuspidalIff
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TraceHarishChandraInducedEqProductCharacters
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsConstituentHarishChandraRepIffPairingNeZero
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsBlocksOfCuspidalCharacterList
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraSeriesLabelExistsUniqueGLnStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraSeriesLabelExistsUniqueGLn
+import Formalism.SharpRestriction.LevelLetterCocycles.ArithmeticCylinders
 
 noncomputable section
 
@@ -237,11 +238,11 @@ theorem eSer_eq (h5 : 5 ≤ g) (hG : Green) (r : ℕ) {f : (ZMod g)[X]} (hm : f.
       (HasLabel L (fun x => τ.character x) (ext σ f) ↔ HasLabelO O τ f) := fun τ hτ => by
     refine ⟨fun h => ?_, hasLabel_of L O h1 τ f hτ⟩
     obtain ⟨f', a, b, c⟩ := exists_labelO L O τ _ hτ h
-    have e := ((GlobalTheory.T.harishChandraSeriesLabel_exists_unique_GLn g L h5 hG r).1 _ ⟨τ, hτ, fun _ => rfl⟩).unique h (hasLabel_of L O h1 τ f' hτ c)
+    have e := ((_root_.GlobalTheory.GLq.Label.label_main g L h5 hG r).1 _ ⟨τ, hτ, fun _ => rfl⟩).unique h (hasLabel_of L O h1 τ f' hτ c)
     have e' : f = f' := by rw [← ext_back hσ hm h0, e, ext_back hσ a b]
     exact e' ▸ c
   unfold eSerC Formalism.L2.NT.eSerO
-  rw [GlobalTheory.T.finsum_centralIdempotentOfIrrCharacter_eq_simple]
+  rw [_root_.GlobalTheory.SerCmp.finsum_zOf_eq_finsum_zIdem]
   refine finsum_congr fun z => finsum_congr_Prop (propext ?_) fun _ => rfl
   constructor
   · rintro ⟨τ, hτ, hz, hl⟩

@@ -105,7 +105,7 @@ theorem exists_carries (hU : IsUnf U) (hW : ∀ k, ModelW V hr (U.X k))
       simp only [hli] at e₁
       exact e₁ ▸ (φ _ _).2
   refine ⟨a, ⟨hm, (hG _).trans (hG _).symm, gam, e₁, t₁, hgam⟩, funext fun τ => ?_⟩
-  obtain ⟨hAr, -, -⟩ := GlobalTheory.T.archimedeanMatrix_unitary_continuous_multiplicative D V θ hθ
+  obtain ⟨hAr, -, -⟩ := _root_.GlobalTheory.Member.Arch.archM_spec D V θ hθ
   have h1 := hfr₁ ⟨τ.1, hm.mem τ⟩
   have h2 := hfr₂ τ
   rw [GlobalTheory.LettersCheck.isInfEmb_unique _ _ _ (hth _ ⟨τ.1, hm.mem τ⟩) (hθ τ.1)] at h1
@@ -129,7 +129,7 @@ theorem orth_and_onto (hU : IsUnf U) (hW : ∀ k, ModelW V hr (U.X k))
       ∃ u ∈ GinfC V, y = rmul (dict h).2 (realFr V hr θ x₀ u _) := by
   subst hr
   obtain ⟨γ, -, -, -, hfr⟩ := hD.2 h
-  obtain ⟨hAr, -, hL⟩ := GlobalTheory.T.archimedeanMatrix_unitary_continuous_multiplicative D V θ hθ
+  obtain ⟨hAr, -, hL⟩ := _root_.GlobalTheory.Member.Arch.archM_spec D V θ hθ
   have hG : ∀ k, (U.X k).Gm = -V.gramᵀ := fun k => (hW k).1
   have hfr' : ∀ τ, mat (dict h).2 τ = archM V (θ τ.1) (γ * h) * x₀ τ.1 := fun τ => by
     rw [hfr τ, GlobalTheory.LettersCheck.isInfEmb_unique τ.1 _ _ (hth _ τ) (hθ τ.1)]

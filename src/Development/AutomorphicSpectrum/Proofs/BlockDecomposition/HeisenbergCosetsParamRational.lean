@@ -9,11 +9,11 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SiegelEisenstei
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RowD
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SiegelParabolicQuotientIffRows
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryCellBlockNormalForm
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryBlockInvertibleCriterionStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicFactorizationRowsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryBlockInvertibleCriterion
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicFactorizationRows
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RowsProportionalOfTransform
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RowsOfWeylHeisenbergProductStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeylHeisenbergLeviRationalStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RowsOfWeylHeisenbergProduct
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeylHeisenbergLeviRational
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeisenbergCentreRationalForm
 noncomputable section
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct
@@ -129,7 +129,7 @@ theorem cell : ∀ {D : D7} {n ρ p : ℕ} (hn : ρ + p = n) (M : Maps D hn),
     rw [← hab']
     exact mat_ratOf _
   have hI := fun (l : ratHerm D ρ) (u : Cosets (P D p) (GF D p) × Matrix (Fin ρ) (Fin p) D.host.E) =>
-    GlobalTheory.T.weyl_heisenberg_levi_rational hn M l.1 (ζ l) (hζ l) u.2 (Quotient.out u.1) (a u.1) (b u.1) (cc u.1) (dd u.1) (hmat u.1)
+    _root_.GlobalTheory.CompanionTheory.ZUnf.Rat.rat_cell hn M l.1 (ζ l) (hζ l) u.2 (Quotient.out u.1) (a u.1) (b u.1) (cc u.1) (dd u.1) (hmat u.1)
   let R : ratHerm D ρ → Cosets (P D p) (GF D p) × Matrix (Fin ρ) (Fin p) D.host.E →
       Matrix (Fin (n + n)) (Fin (n + n)) D.host.E :=
     fun l u => wM hn * nM hn (ζ l) * sM hn (sg D) u.2 * eM hn (a u.1) (b u.1) (cc u.1) (dd u.1)
@@ -141,9 +141,9 @@ theorem cell : ∀ {D : D7} {n ρ p : ℕ} (hn : ρ + p = n) (M : Maps D hn),
     rw [← e]
     exact GlobalTheory.CompanionTheory.SwUnf.BigCell.ratOf_spec _
   have hRC : ∀ l u, lowerC (R l u) = rowC hn u.2 (a u.1) (cc u.1) := fun l u =>
-    (GlobalTheory.T.rows_of_weyl_heisenberg_product (sg D) hσ hn _ _ _ _ _ _).1
+    (_root_.GlobalTheory.CompanionTheory.ZUnf.LowerRows.lower_rows (sg D) hσ hn _ _ _ _ _ _).1
   have hRD : ∀ l u, GlobalTheory.CompanionTheory.RatPtsUnn.blkD (R l u) = rowD hn (sg D) (ζ l) u.2 (b u.1) (dd u.1) := fun l u =>
-    (GlobalTheory.T.rows_of_weyl_heisenberg_product (sg D) hσ hn _ _ _ _ _ _).2
+    (_root_.GlobalTheory.CompanionTheory.ZUnf.LowerRows.lower_rows (sg D) hσ hn _ _ _ _ _ _).2
   refine ⟨fun x => mk ((P D n).subgroupOf (GF D n)) (c x.1 x.2), ?_, ?_, ?_, ?_⟩
   · rintro ⟨l₁, q₁, η₁⟩ ⟨l₂, q₂, η₂⟩ h
     have hS := (mk_eq_iff_siegel GlobalTheory.CompanionTheory.RatPtsUnn.ratPtsUnn (c l₁ (q₁, η₁)) (c l₂ (q₂, η₂)) (hRs l₁ _).1
@@ -179,7 +179,7 @@ theorem cell : ∀ {D : D7} {n ρ p : ℕ} (hn : ρ + p = n) (M : Maps D hn),
       obtain ⟨T₀, a₁, b₁, Z, a₂, b₂, X, Y, a₃, b₃, W, a₄, b₄, c', d', hU, hD, hL1, hL2⟩ :=
         _root_.GlobalTheory.CompanionTheory.ZUnf.rowReduce_lowerC (sg D) hσ hn _ hspec.1 hspec.2 hker
       obtain ⟨ζ₀, η₀, T, hyD, hyU, hζ₀, hr1, hr2⟩ :=
-        GlobalTheory.T.unitary_block_invertible_criterion (sg D) hσ hn a₁ b₁ Z a₂ b₂ X Y a₃ b₃ W a₄ b₄ c' d' hU hD
+        _root_.GlobalTheory.CompanionTheory.ZUnf.NormalRow.normal_form (sg D) hσ hn a₁ b₁ Z a₂ b₂ X Y a₃ b₃ W a₄ b₄ c' d' hU hD
       generalize a₄ + a₃ * X = a' at hyD hyU hr1
       generalize b₄ + a₃ * Y = b' at hyD hyU hr2
       obtain ⟨γ, hγ, hγm⟩ := GlobalTheory.CompanionTheory.RatPtsUnn.clause2 _ hyD hyU
@@ -195,7 +195,7 @@ theorem cell : ∀ {D : D7} {n ρ p : ℕ} (hn : ρ + p = n) (M : Maps D hn),
       rw [hsb] at hsU
       have hy : blk4 a' b' c' d' = blk4 A B 0 Dd * blk4 (a q') (b q') (cc q') (dd q') := by
         rw [← hsb, ← hab', mul_assoc, Matrix.nonsing_inv_mul _ hs2.1, mul_one]
-      obtain ⟨ζ₂, η₂, T₂, hζ₂, hC, hDd⟩ := GlobalTheory.T.parabolic_factorization_rows (sg D) hσ hn a' b' c' d' (a q') (b q') (cc q') (dd q') A B Dd
+      obtain ⟨ζ₂, η₂, T₂, hζ₂, hC, hDd⟩ := _root_.GlobalTheory.CompanionTheory.ZUnf.ClassRep.exists_change_rep (sg D) hσ hn a' b' c' d' (a q') (b q') (cc q') (dd q') A B Dd
         hsU hy ζ₀ η₀ hζ₀
       let bq : HermQ D ρ := ⟨ζ₂, fun i j => congrFun (congrFun hζ₂ i) j⟩
       let l₂ : ratHerm D ρ := ⟨⟨ζ₂.map (incA D), adj_map_herm bq⟩, ⟨ζ₂, rfl⟩⟩

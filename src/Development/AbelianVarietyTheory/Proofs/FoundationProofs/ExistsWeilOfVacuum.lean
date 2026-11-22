@@ -6,9 +6,10 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InducedTypeTheta
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsAdelicWeilRepresentationModelStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AdelicWeilVacuumFixedAndTranslatesSpan
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsGoodIndexNormalizationNegativeInert
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsSplitCharacterUnitaryGroupStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsSplitCharacterUnitaryGroup
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeisenbergRelativeIndexTranslateCompletedLattice
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsWeilRepresentationHeisenbergStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsWeilRepresentationHeisenberg
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsHeisTrivial
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SumOpTransversalStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaIntertwinerEqNormalisedAdelicSum
 
@@ -26,12 +27,12 @@ theorem exists_weil_of_vacuum (D : D7) (cc : Ideal (𝓞 D.host.K)) (δ : ℂ) (
   obtain ⟨w, γ, WA, hM⟩ := GlobalTheory.T.exists_adelicWeilRepresentationModel D hg cc δ hc N N'
   obtain ⟨hT, hfix, hspan⟩ := _root_.GlobalTheory.FinWeil.Vacuum.vacuum_fixed_span D hg cc δ hc N N' w γ WA hM e0 he h0
   obtain ⟨lam, hlam, hsq⟩ := _root_.GlobalTheory.FinWeil.exists_goodNorm D
-  obtain ⟨c', hc1', hc2'⟩ := GlobalTheory.T.exists_split_character_unitary_group D N χ N'
-  obtain ⟨c, hc1, hc2⟩ := GlobalTheory.T.exists_split_character_unitary_group D N' χ' N
+  obtain ⟨c', hc1', hc2'⟩ := _root_.GlobalTheory.SplitCharacter.exists_split_character D N χ N'
+  obtain ⟨c, hc1, hc2⟩ := _root_.GlobalTheory.SplitCharacter.exists_split_character D N' χ' N
   have hidx := _root_.GlobalTheory.FinWeil.idx_map_actA D hg cc δ hc N N'
   have hM' := hM
   obtain ⟨hH, hSD, hinv, hrat, hcont⟩ := hM'
-  obtain ⟨Om, hOm1, hOm2⟩ := GlobalTheory.T.exists_weil_representation_heisenberg hH lam hlam _ hSD ⟨e0, hT⟩ (fun h => h0 (congrArg Subtype.val h)) hfix hspan
+  obtain ⟨Om, hOm1, hOm2⟩ := _root_.GlobalTheory.FinWeil.exists_weil_rep hH lam hlam _ hSD ⟨e0, hT⟩ (fun h => h0 (congrArg Subtype.val h)) hfix hspan
     (actA D N N') hinv (fun u => (hidx u.1 u.2).1)
   let O : GA D N → GA D N' → (VC D N N' → ℂ) → (VC D N N' → ℂ) := fun g g' F =>
     if h : F ∈ TTs D (tor0 D cc δ) N N' then

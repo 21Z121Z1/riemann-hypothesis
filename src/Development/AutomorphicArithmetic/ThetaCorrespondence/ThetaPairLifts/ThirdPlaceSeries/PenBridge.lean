@@ -20,8 +20,12 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CarriesLat
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemIntegralGLSplitPlaceOfCarriesLatticeCompletio
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TrueGeometryTupleFreeValue
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RelIndexPreimagePiEqProd
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemIntegralGLSplitPlaceOfCarriesLatticeCompletioStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsSelfDualStabilizerWithPrescribedSplitPlaceStatement
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HzUnit
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CosInj
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.UnitRatio
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.VacOfShape
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsSelfDualStabilizerWithPrescribedSplitPlace
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TrueGeometryTwistChainValue
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.RealPack
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.GeoAll
@@ -72,11 +76,11 @@ theorem pen_bridge_alt : ∀ {B : GlobalTheory.Mem.Base} {X : PreX B.toPre} {I :
     intro g hg i
     show _root_.GlobalTheory.PenBridge.reductionHomAtLevel J j i (_root_.GlobalTheory.PenBridge.eq_s_succ_of_succ_eq_m J hj i) g ∈ _
     rw [_root_.GlobalTheory.PenBridge.rd_at_apply, toSum0_mem_KO_iff]
-    exact GlobalTheory.T.mem_integralGL_split_place_of_carries_latticeCompletion (J.G i).q _ (_root_.GlobalTheory.PenBridge.frameAtLevel J j i (_root_.GlobalTheory.PenBridge.eq_s_succ_of_succ_eq_m J hj i)) (a.g.x j).L (_root_.GlobalTheory.PenBridge.finitePlaceCondition J) ⟨i, rfl⟩
+    exact _root_.GlobalTheory.SplitInt.mem_KO_of_moves (J.G i).q _ (_root_.GlobalTheory.PenBridge.frameAtLevel J j i (_root_.GlobalTheory.PenBridge.eq_s_succ_of_succ_eq_m J hj i)) (a.g.x j).L (_root_.GlobalTheory.PenBridge.finitePlaceCondition J) ⟨i, rfl⟩
       (_root_.GlobalTheory.PenBridge.int_in_frame_at_level J j i _) g (hMv g hg) _ ((GlobalTheory.LevIdx.eq_locHom_iff _ _ _ _ _).2 rfl)
   case onto =>
     intro x hx
-    obtain ⟨g, hg, hgx⟩ := GlobalTheory.T.exists_selfDual_stabilizer_with_prescribed_splitPlace_matrices ((I.rec7 l Z).sp.X j) (a.g.x j).L hsd (fun i => (J.G i).k) (fun i => (J.G i).q)
+    obtain ⟨g, hg, hgx⟩ := _root_.GlobalTheory.SplitOnto.exists_of_local ((I.rec7 l Z).sp.X j) (a.g.x j).L hsd (fun i => (J.G i).k) (fun i => (J.G i).q)
       _ (fun i => _root_.GlobalTheory.PenBridge.frameAtLevel J j i (_root_.GlobalTheory.PenBridge.eq_s_succ_of_succ_eq_m J hj i)) hinj (fun i => _root_.GlobalTheory.PenBridge.int_in_frame_at_level J j i _)
       (fun i => (toSum0 (J.G i).k _).symm (x i)) (fun i => by rw [← toSum0_mem_KO_iff]; simpa using hx i)
     refine ⟨g, hK g hg, funext fun i => ?_⟩

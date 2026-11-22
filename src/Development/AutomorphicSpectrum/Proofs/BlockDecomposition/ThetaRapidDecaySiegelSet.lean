@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSiegelDomainR
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeSumDecayBoundStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegerCoordinatesBound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactAdelicDenominator
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InversePointTorusScalingStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InversePointTorusScaling
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.L2.Theta Formalism.L2.Pj Formalism.IndefR.Datum MeasureTheory
 open GlobalTheory.AutomorphicL2Unitary GlobalTheory.AdelicU GlobalTheory.Doubling GlobalTheory.Cont GlobalTheory.MixModel
@@ -167,7 +167,7 @@ theorem count_main : ∀ (D : D7) (θ : InfFam D), IsInfFam θ → ∀ (V : HSp 
     · exact mul_pos hCn0 (inv_pos.2 (ht0 i))
     · exact hCn0
   have hU : ∀ ξ, 0 ≤ U ξ := fun ξ => norm_nonneg _
-  have hcoord := GlobalTheory.T.inverse_point_torus_scaling D θ hθ V Xf Yf hW t ht0 a ha
+  have hcoord := _root_.GlobalTheory.CompanionTheory.TorusCoord.torus_coords D θ hθ V Xf Yf hW t ht0 a ha
   have hent : ∀ ξ ρ j, ‖compAt θ ρ (invPt V a ξ) j 0‖ ≤ U ξ := fun ξ ρ j =>
     (norm_le_pi_norm (fun i => compAt θ ρ (invPt V a ξ) i 0) j).trans
       (norm_le_pi_norm (fun τ i => compAt θ τ (invPt V a ξ) i 0) ρ)

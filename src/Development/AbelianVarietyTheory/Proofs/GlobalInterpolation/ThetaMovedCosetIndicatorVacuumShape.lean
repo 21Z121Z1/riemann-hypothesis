@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TranslateMomentsAll
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.HeisenbergCocycleFormIntegralSelfDualStatement
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.WeylHeisenbergOperatorCalculusRationalStatement
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.HeisenbergCocycleFormIntegralSelfDual
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.WeylHeisenbergOperatorCalculusRational
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.PerLatticeFacts
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.AddSubgroupRepsExistenceCardSum
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.HermitianLatticesTheory Formalism.MainNotions Formalism.L2.DIV Formalism.L2.Col Formalism.L2.Ker Formalism.L2.Th1.H GlobalTheory.IndefiniteRowSideFullHecke.JetSumTable GlobalTheory.MomT
@@ -199,7 +199,7 @@ theorem volC_pos (hFG : A.AA.FG) (hAA : A.AA ≠ ⊥) (S : Finset (HeightOneSpec
 theorem Wx_mul {x y : HomE X.E a b} (h : ∃ n : ℤ, coc A x y = n) (F : VCx X.Tau a b → ℂ) :
     Wx A x (Wx A y F) = Wx A (x + y) F := by
   obtain ⟨n, hn⟩ := h
-  rw [(GlobalTheory.T.weylHeisenbergOperator_calculus_rational X A a b).1, hn]
+  rw [(_root_.GlobalTheory.MomT.Heis.calculus X A a b).1, hn]
   funext z
   have : Complex.exp (-(2 * (Real.pi : ℂ)) * Complex.I * (((n : ℤ) : ℝ) : ℂ)) = 1 := by
     rw [← Complex.exp_int_mul_two_pi_mul_I (-n)]
@@ -214,7 +214,7 @@ theorem Wx_sum {κ : Type} (x : HomE X.E a b) (T : Finset κ) (F : κ → VCx X.
   simp only [Wx, opU, Finset.sum_mul, Finset.mul_sum]
 
 theorem coc_neg_sub (t s : HomE X.E a b) : coc A (-t) (t - s) = coc A t s - coc A t t := by
-  have h := (GlobalTheory.T.weylHeisenbergOperator_calculus_rational X A a b).2.2.2.1
+  have h := (_root_.GlobalTheory.MomT.Heis.calculus X A a b).2.2.2.1
   have h0 : coc A 0 (t - s) = 0 := by
     have := (h 0 0 (t - s)).1
     rw [add_zero] at this
@@ -230,7 +230,7 @@ variable {S : Finset (HeightOneSpectrum (𝓞 X.E))} {N : Submodule (𝓞 X.E) (
 theorem coc_int_twO (hX : X.Ok) (hδ : A.δ ≠ 0) (hL : LaFacts (X.embC A.σ₀) A.δ A.d A.sc A.AA N N') {c : ℕ} (hc : 0 < c)
     {e : HeightOneSpectrum (𝓞 X.E) → ℤ} (he : ∀ Q, e (conjPrime₂ Q) = -e Q) {x y : HomE X.E a b}
     (hx : x ∈ twist₂ (per A N N') c e) (hy : y ∈ twist₂ (per A N N') c e) : ∃ n : ℤ, coc A x y = n := by
-  refine (GlobalTheory.T.heisenbergCocycleForm_integral_selfDual X A a b N N' hX hδ hL).2.2 x y fun Q => ⟨(c : X.E) ^ e Q, zpow_ne_zero _ (Nat.cast_ne_zero.2 hc.ne'),
+  refine (_root_.GlobalTheory.MomT.CocInt.cocycle_integral X A a b N N' hX hδ hL).2.2 x y fun Q => ⟨(c : X.E) ^ e Q, zpow_ne_zero _ (Nat.cast_ne_zero.2 hc.ne'),
     (mem_twO _ _ _ _).1 hx Q, ?_⟩
   have := (mem_twO _ _ _ _).1 hy (conjPrime₂ Q)
   rwa [he, zpow_neg, inv_inv, ← star_natCast (R := X.E) c, ← star_zpow₀] at this
@@ -259,7 +259,7 @@ theorem two_lifts (hX : X.Ok) (hδ : A.δ ≠ 0) (hL : LaFacts (X.embC A.σ₀) 
       exact sub_mem h2 h1
   · obtain ⟨n₁, h₁⟩ := coc_int_twO A hX hδ hL hD (fun Q => by rw [expS_conj hS]) ht ht
     obtain ⟨n₂, h₂⟩ : ∃ n : ℤ, coc A t s = n := by
-      refine (GlobalTheory.T.heisenbergCocycleForm_integral_selfDual X A a b N N' hX hδ hL).2.2 t s fun Q => ?_
+      refine (_root_.GlobalTheory.MomT.CocInt.cocycle_integral X A a b N N' hX hδ hL).2.2 t s fun Q => ?_
       have h1 := hs' Q
       have h2 := ht' Q
       have h3 := hs' (conjPrime₂ Q)
@@ -361,8 +361,8 @@ theorem thInd_shape : ∀ (X : Fields) (A : Amb X) (a b : ℕ) (S : Finset (Heig
     rintro _ ⟨u, hu, rfl⟩
     obtain ⟨n₁, h₁⟩ := hBB u hu y hy
     obtain ⟨n₂, h₂⟩ := hBB y hy u hu
-    exact ((GlobalTheory.T.weylHeisenbergOperator_calculus_rational X A a b).2.2.2.2.2.1 y u).2
-      ⟨n₁ - n₂, by rw [(GlobalTheory.T.weylHeisenbergOperator_calculus_rational X A a b).2.2.1, h₁, h₂]; push_cast; ring⟩
+    exact ((_root_.GlobalTheory.MomT.Heis.calculus X A a b).2.2.2.2.2.1 y u).2
+      ⟨n₁ - n₂, by rw [(_root_.GlobalTheory.MomT.Heis.calculus X A a b).2.2.1, h₁, h₂]; push_cast; ring⟩
 
   have hlift : A.IsLift S N N' c x (A.liftW S N N' c x) :=
     Classical.epsilon_spec (p := A.IsLift S N N' c x) ⟨t, ⟨cA * c, Nat.mul_pos hcA hc, ht⟩, htx⟩

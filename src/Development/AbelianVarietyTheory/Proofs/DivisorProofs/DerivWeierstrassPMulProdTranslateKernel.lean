@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.DatumOfIsIntegersLa
 import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.MulStableIntegral
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsDiscreteValuationRingValuationSubringAtPrime
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.AddMonoidHomEqZeroOfEventually
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TendstoCubeMulDerivWeierstrassPNegTwoStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TendstoCubeMulDerivWeierstrassPNegTwo
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfOddEllipticOfTendsto
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdKernelMultiplierTranslateNeg
 
@@ -63,7 +63,7 @@ theorem derivWeierstrassP_mul_prod_translate_kernel :
     simp only [e1]
     rw [neg_div, L.derivWeierstrassP_neg, L.derivWeierstrassP_neg]
     ring
-  · have c0 := GlobalTheory.T.tendsto_cube_mul_derivWeierstrassP_neg_two L
+  · have c0 := _root_.GlobalTheory.CMModel.tendsto_cube_mul_derivWeierstrassP L
     have tdiv : Filter.Tendsto (fun w : ℂ => w / α) (𝓝 0) (𝓝 0) := by
       have : Continuous (fun w : ℂ => w / α) := continuous_id.div_const α
       simpa using this.tendsto 0

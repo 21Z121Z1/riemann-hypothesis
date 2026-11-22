@@ -3,9 +3,9 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.AtBase
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsDualFamilyInSelfDualLattice
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsPrincipalIdealRingOfHenselian
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsTotallyIsotropicDualFamilyInLattice
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUnitaryFrameDualStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUnitaryFrameDual
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsInnerLatticeImageFrameQuotient
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryImageStandardLatticeEqSelfDualLatticeStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryImageStandardLatticeEqSelfDualLattice
 
 open ValuativeRel Formalism.MainNotions.S Formalism.MainNotions.S.Loc Formalism.MainNotions.S.LocNG GlobalTheory.LocOver
 open scoped Classical
@@ -18,7 +18,7 @@ theorem eq_img_lamStd : ∀ {F : Type} [Field F] [ValuativeRel F] [TopologicalSp
   have hy0 : ∀ (a : Fin r) (b : Fin (r + 1)), H.h (y a.castSucc) (Fr.f b) = if b = a.castSucc then 1 else 0 :=
     fun a b => hyf b a.castSucc
   obtain ⟨y', hy'Λ, hy'f, hy'y⟩ := _root_.GlobalTheory.IsotropicDual.isotropic_dual M hM H r Fr Λ hSD hFr (fun a : Fin r => y a.castSucc) (fun a : Fin r => hyΛ _) hy0
-  obtain ⟨n, hnU, hnf, hnes, hnX⟩ := GlobalTheory.T.exists_unitary_frame_dual' M H r Fr y' hy'f hy'y
+  obtain ⟨n, hnU, hnf, hnes, hnX⟩ := _root_.GlobalTheory.UnipFrame.exists_unitary_frame_dual M H r Fr y' hy'f hy'y
   obtain ⟨L, hLset, hLin⟩ := _root_.GlobalTheory.StdLatInner.exists_inner M hM H r Fr Λ hSD hFr y' hy'Λ hy'f
   have heΛ : ∀ a : Fin r, Fr.f a.castSucc ∈ Λ := fun a => hFr.1.1 _
   refine ⟨L, hLin, hLset, n, ?_, hnf, ?_⟩
@@ -33,6 +33,6 @@ theorem eq_img_lamStd : ∀ {F : Type} [Field F] [ValuativeRel F] [TopologicalSp
     rw [LinearMap.mem_ker, LinearMap.sub_apply, LinearMap.id_apply] at h1
     rw [show n v - v = 0 from h1]
     exact zero_mem _
-  · exact GlobalTheory.T.unitary_image_standardLattice_eq_selfDual_lattice M H r Fr Λ hSD heΛ L hLset n hnU (fun a => hnf _) (fun a => by rw [hnes]; exact hy'Λ a) hnX
+  · exact _root_.GlobalTheory.StdLatImg.eq_img_lamStd M H r Fr Λ hSD heΛ L hLset n hnU (fun a => hnf _) (fun a => by rw [hnes]; exact hy'Λ a) hnX
 
 end GlobalTheory.StdLat

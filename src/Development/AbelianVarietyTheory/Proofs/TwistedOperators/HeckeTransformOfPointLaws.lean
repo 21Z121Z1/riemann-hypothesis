@@ -14,15 +14,15 @@ import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LevelActionMemCuspFo
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsTraceEqFinsumGeometricPointsEtale
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFunctionOfSmoothLocalDescentReduced
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFiniteEtaleAlgebraPullbackAffine
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsEquivHeckeKernelSchemePointsHeckeKernelsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsEquivHeckeKernelSchemePointsHeckeKernels
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsThetaLineGeneratorZariskiLocally
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EtaleLinearHomFramedPointEigenbases
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LieDividedHomTangentImageBaseChange
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SectionValueAtMultipleOfBaseChangedGenerator
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeKernelValueSumWeightTriangularFrameStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FramesDifferByIsometryOfTriangularPeriodsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FramesDifferByIsometryOfTriangularPeriods
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRationalIsometryOfTraceSimilitudeSq
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsHeckeIsogenyFamilyPullbackCorrespondenceStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsHeckeIsogenyFamilyPullbackCorrespondence
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsEtaleCoverListingHeckeKernelScheme
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemCuspSectionsOfDominatedRationalIsometries
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSimilitudeTriangularPeriodsOfHeckePoint
@@ -145,7 +145,7 @@ theorem exists_term (hA : admitted l P p) (hT : TotalAt Xo c P p i) (Z : Corr Xo
       (C : hkKer (Xo := Xo) P p i Ω y₁), FrMap χ y y₁ → Z.toKerScheme.Carries (spMap χ.toRingHom ≫ h) y₁.x C.1 →
       χ b = term P p i f y₁ C := by
   choose bc hbc using fun (Ω : Type) [Field Ω] [Algebra c.F Ω] (χ : B →ₐ[c.F] Ω) => bc_exists χ y
-  choose e he using GlobalTheory.T.exists_equiv_heckeKernelScheme_points_heckeKernels E H Dw l Xo P p i Z.toKerScheme hA
+  choose e he using _root_.GlobalTheory.HeckeEx.exists_equiv_carries E H Dw l Xo P p i Z.toKerScheme hA
   have hw : ∀ (Ω : Type) [Field Ω] [Algebra c.F Ω] (χ : B →ₐ[c.F] Ω),
       (spMap χ.toRingHom ≫ h) ≫ Z.π₁ = (bc Ω χ).x := fun Ω _ _ χ => by
     rw [Category.assoc, hh, (hbc Ω χ).1]
@@ -168,7 +168,7 @@ theorem exists_term (hA : admitted l P p) (hT : TotalAt Xo c P p i) (Z : Corr Xo
       rw [ChgBC.spMap_comp_ring, ← IsScalarTower.algebraMap_eq]
     obtain ⟨yT, hyT⟩ := bc_exists (IsScalarTower.toAlgHom c.F B T) y
     have hx : yT.x = (spMap (algebraMap B T) ≫ h) ≫ Z.π₁ := by rw [Category.assoc, hh]; exact hyT.1
-    obtain ⟨Ψ, hΨ, hc⟩ := GlobalTheory.T.exists_heckeIsogenyFamily_pullback_correspondence E H Dw l Xo P p i Z hA T (spMap (algebraMap B T) ≫ h) yT.x
+    obtain ⟨Ψ, hΨ, hc⟩ := _root_.GlobalTheory.HeckeEx.exists_isHeckeFam_carries E H Dw l Xo P p i Z hA T (spMap (algebraMap B T) ≫ h) yT.x
       (spMap (algebraMap T' T) ≫ spMap (algebraMap B T') ≫ h ≫ Z.π₂) hx (by rw [reassoc_of% e₁, Category.assoc])
     obtain ⟨b', hb'⟩ := exists_term_of_family hA hT hf yT (by rw [reassoc_of% e₁]; exact hso T) hΨ
       (σ := fun j => Over.homMk (spMap (algebraMap T' T) ≫ σ j) (by
@@ -209,7 +209,7 @@ theorem exists_sum (hr : 1 ≤ Dw.p + Dw.q) (hA : admitted l P p) (hT : TotalAt 
   obtain ⟨b, hb⟩ := exists_term hA hT Z hf yB h (hh.trans hyB.1.symm)
   obtain ⟨v, hv⟩ := _root_.GlobalTheory.EtaleTraceGeom.exists_trace_eq_finsum R B hfin het b
   refine ⟨v, fun Ω _ _ _ φ z hz => ?_⟩
-  obtain ⟨e, he⟩ := GlobalTheory.T.exists_equiv_heckeKernelScheme_points_heckeKernels E H Dw l Xo P p i Z.toKerScheme hA Ω z.x
+  obtain ⟨e, he⟩ := _root_.GlobalTheory.HeckeEx.exists_equiv_carries E H Dw l Xo P p i Z.toKerScheme hA Ω z.x
   let k : {χ : B →+* Ω // χ.comp (algebraMap R B) = φ.toRingHom} → {w : Sp Ω ⟶ Z.Hk // w ≫ Z.π₁ = z.x} := fun χ =>
     ⟨spMap χ.1 ≫ h, by rw [Category.assoc, hh, ← Category.assoc, ChgBC.spMap_comp_ring, χ.2, hz.1]⟩
   have hk : Function.Bijective k := by
@@ -319,14 +319,14 @@ theorem exists_qmatch (hσ : Formalism.L2.PjFree.GoodEmb c σ) (hU : Formalism.L
   · have h : QMatch (U.X k) (U.X k') p a :=
       ⟨hΨ, hp, by rw [hξ, _root_.one_mul], fun u v => by rw [hiso, _root_.one_mul],
         fun v hv => hav ⟨v, hv⟩ ▸ (gam ⟨v, hv⟩).2, hlat⟩
-    obtain ⟨b, hb, hxb, hu⟩ := GlobalTheory.T.frames_differ_by_isometry_of_triangular_periods E r _ _ p a h hp0 (fun τ => Dw.mult (e.symm τ)) m1 m2 x.1 x.2 x'.1 x'.2
+    obtain ⟨b, hb, hxb, hu⟩ := _root_.GlobalTheory.PeriodBorelQ.borel_of_periods_q E r _ _ p a h hp0 (fun τ => Dw.mult (e.symm τ)) m1 m2 x.1 x.2 x'.1 x'.2
       (fun τ => A (e.symm τ)) (fun τ => hA0 _) hrel
     obtain ⟨h1, h2⟩ := hu hx hx'
     refine ⟨a, h, b, hb, hxb, h1, fun ⟨τ, i⟩ => ?_⟩
     have := h2 (e τ) i (by rw [e.symm_apply_apply]; exact i.2)
     rw [e.symm_apply_apply, hAt] at this
     exact this
-  · exact (GlobalTheory.T.not_antiIsometry_of_triangular_related_periods E r _ _ hΨ hp hr a hiso (fun τ => Dw.mult (e.symm τ)) m1 m2 x.1 x.2 x'.1 x'.2
+  · exact (_root_.GlobalTheory.AntiIsom.not_antiIsometry E r _ _ hΨ hp hr a hiso (fun τ => Dw.mult (e.symm τ)) m1 m2 x.1 x.2 x'.1 x'.2
       (fun τ => A (e.symm τ)) (fun τ => hA0 _) hrel).elim
 
 theorem laU_qmatch {k k' : U.Comp} {N : ℕ} {a : GL (Fin r) E} (h : QMatch (U.X k) (U.X k') N a)

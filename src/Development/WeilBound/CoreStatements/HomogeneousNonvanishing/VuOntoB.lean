@@ -110,11 +110,11 @@ theorem tendsto_arc_readsZ {V : Unf Xo c σ r} (hσ : GoodEmb c σ) (hU : IsUnf 
     obtain ⟨γ, -, β, -, h'⟩ := (hU.2.2.2.1 k' k _ _).1 ⟨_, g1 _ _ _ _ _ (g2 _ _ _ ht) ht'⟩
     exact (Sigma.mk.inj h').1.symm
   subst hk
-  obtain ⟨M, γ, hO, hγ⟩ := GlobalTheory.T.exists_holomorphicFrameOrbit_unipotent_order_two E r _ T₀ M₀ γ₀ xx hO₀
+  obtain ⟨M, γ, hO, hγ⟩ := _root_.GlobalTheory.ShFam.OrbitUnip.exists_isOrbit_unipotent E r _ T₀ M₀ γ₀ xx hO₀
   have hne : γ ≠ 1 := by
     rintro rfl
     obtain ⟨x₀, hx₀, x', a1, a2⟩ := _root_.GlobalTheory.ShFam.OrbitLimit.orbit_limit E r _ T₀ M xx hO
-    exact GlobalTheory.T.boundary_arc_lift_not_converges_symmetric_domain E H D l Xo c _ _ T.Y σ r V A φ x fr ψ ρ y k' T₀ xx hσ hU hb hm hL x₀ hx₀ x' a1 a2
+    exact _root_.GlobalTheory.ShFam.BdArc.Leave.lift_not_converges E H D l Xo c _ _ T.Y σ r V A φ x fr ψ ρ y k' T₀ xx hσ hU hb hm hL x₀ hx₀ x' a1 a2
   obtain ⟨ξ, c', hξ, hc', ht⟩ := _root_.GlobalTheory.orbit_unipotent_short E r _ T₀ M γ xx hO hγ hne
   obtain ⟨m, v, Lp, Lm, hlim⟩ := _root_.GlobalTheory.ShFam.PerLim.exists_periods_tendsto_span E H D l Xo c _ _ T.Y σ r V A φ x fr ψ ρ y k' T₀ M γ xx hσ hU hb.1 hm hO hL
   have hper := _root_.GlobalTheory.ShFam.PerPoly.periods_le_pow E H D l Xo c _ _ T.Y σ r V A φ x fr ψ ρ y k' T₀ M γ xx hσ hU hb.1 hm hO hL

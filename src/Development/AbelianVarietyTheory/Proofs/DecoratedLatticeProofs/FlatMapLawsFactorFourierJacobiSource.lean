@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ChLApply
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchwartzBruhatMulAddCharLinearForm
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchwartzBruhatCompAffineMatrix
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PartialReductionEvaluateEntryOfMulLawStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PartialReductionEvaluateEntryOfMulLaw
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PartialReductionIntegrateEntryOfTranslation
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PartialReductionLowerEntryMultiplicationLaw
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PartialReductionUpperFreeEntryTranslationLaw
@@ -135,7 +135,7 @@ theorem kills_evals (ψ : AddChar k Circle) (ν : Measure k) (hψ : Continuous �
     rw [heq]
     by_cases haE : a ∈ E ∪ S
     · rwa [Finset.insert_eq_of_mem haE]
-    · refine GlobalTheory.T.partialReduction_evaluate_entry_of_mul_law k ψ ν hψ hψ1 hν R Q M L w β (E ∪ S) I a haI h1 ?_
+    · refine _root_.GlobalTheory.PartRedEval.kills_insert_of_evalLaw k ψ ν hψ hψ1 hν R Q M L w β (E ∪ S) I a haI h1 ?_
       refine hlaw a (Finset.mem_insert_self _ _) (E ∪ S) Finset.subset_union_left ?_ haE
       exact Finset.union_subset_union_right (Finset.subset_insert _ _)
 

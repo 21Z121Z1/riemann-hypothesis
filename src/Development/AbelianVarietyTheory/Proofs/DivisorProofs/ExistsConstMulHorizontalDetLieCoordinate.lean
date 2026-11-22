@@ -104,7 +104,7 @@ theorem exists_const_mul_horFn : ∀ (E : Type) [Field E] [NumberField E] [IsCMF
         (fun a => by ext <;> simp [Chart.dualMapR, TrivSqZeroExt.algebraMap_eq_inl])
         (by ext <;> simp [Chart.dualMapR]) (hf₀ y) h₁ hx h₂ h₃
   have hA : Dense (ptsIn B.str e (io ⁻¹ᵁ (genBd Y).compl)) := by
-    refine (GlobalTheory.T.complexPoints_nonempty_dense_variety c.F B e).2 _ ?_
+    refine (_root_.GlobalTheory.CxPtsDense.nonempty_and_dense c.F B e).2 _ ?_
     obtain ⟨_, ⟨z, rfl⟩, hz⟩ := Y.jQ_dense.inter_open_nonempty _ io.isOpenEmbedding.isOpen_range
       (Set.range_nonempty _)
     exact ⟨z, fun hb => hb hz⟩

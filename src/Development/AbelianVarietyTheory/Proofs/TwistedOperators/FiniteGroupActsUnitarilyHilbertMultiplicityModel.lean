@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormLevChiFlagLE
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicUnitaryTopology
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HaarMapMulRightOfMemCompactSubgroup
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MultiplicityInnerProductUnitTwistedRightTranslat
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsCompactParahoricLevelAndContainsLiftsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsCompactParahoricLevelAndContainsLifts
 
 open NumberField IsDedekindDomain MeasureTheory Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S Formalism.L2.Theta Formalism.L2.DIV Formalism.IndefR.Mult Formalism.IndefR.Lev Formalism.IndefR.Datum Formalism.IndefR
 open scoped TensorProduct InnerProductSpace
@@ -24,7 +24,7 @@ theorem finiteGroup_acts_unitarily_hilbertMultiplicityModel : ∀ {D : D7} {V : 
     rintro P Q hP hQ rfl; rfl
   have hip : ipM M μ 𝓕 (e (u x)) (e (u x)) = ipM M μ 𝓕 (e x) (e x) := by
     by_cases hk : ∃ κ, IsLevelLift V β L g0 κ
-    · obtain ⟨hcpt, hlift⟩ := GlobalTheory.T.isCompact_parahoricLevel_and_contains_lifts V β L
+    · obtain ⟨hcpt, hlift⟩ := _root_.GlobalTheory.ParahoricCompact.isCompact_flag_and_lift V β L
       have hκ : hk.choose ∈ levG V β (flagL L) := hlift g0 _ hk.choose_spec
       have hκi : hk.choose⁻¹ ∈ levG V β (flagL L) := inv_mem hκ
       set a : ℂ := (levChi V β (flagL L) hk.choose)⁻¹ with ha_def

@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Hermit
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ContinuousThetaMatrixCoeffAlongSandwich
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaMatrixCoeffEqZeroUnlessCharacterTrivial
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FinitePartMemCompactOfIsotropicAnnihilator
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaMatrixCoeffRapidDecayRealFunctionalStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaMatrixCoeffRapidDecayRealFunctional
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RapidDecayAllRealCoordinatesOfFunctionals
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegrableAdelicMatrixRapidDecayCompactFinite
 
@@ -30,7 +30,7 @@ theorem integrable_coef : ∀ (D : D7) (V W : HSp D) (a b : ℕ) (P : Matrix (Fi
     by_contra h1
     exact hne (hvan _ u hu hu0 h1)
   · refine _root_.GlobalTheory.DecayCoord.decay_real_coords D V W a b P Q hP hQ θ hθ _ fun τ z m => ?_
-    obtain ⟨C, hC⟩ := GlobalTheory.T.thetaMatrixCoeff_rapid_decay_real_functional D V W ψ hψ ν 𝓕 hν h𝓕 G G' hG hG' θ hθ τ z m
+    obtain ⟨C, hC⟩ := _root_.GlobalTheory.ThetaDecay.coef_decay D V W ψ hψ ν 𝓕 hν h𝓕 G G' hG hG' θ hθ τ z m
     exact ⟨C, fun y => hC _⟩
 
 end GlobalTheory.IsoMean

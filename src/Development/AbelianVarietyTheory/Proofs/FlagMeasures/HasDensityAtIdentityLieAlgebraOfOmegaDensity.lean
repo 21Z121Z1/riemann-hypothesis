@@ -4,7 +4,7 @@ import Formalism.PeriodIntegrals.QuotInv
 import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
 import Formalism.LocalRingCardinality.DataCD
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DensityInChart
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniqueHaarDensityAtIdentityStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniqueHaarDensityAtIdentity
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HaarUpqHasOmegaDensity
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaDensityUpqUniqueAndSmul
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsOmegaLebesgueMeasure
@@ -504,7 +504,7 @@ theorem hasDens_of_omegaDensity : ∀ (n : ℕ) (ε : Fin n → Bool) (P Q : ℕ
   rw [jm_eq h1 h2]
   have hH := isHaarOnM_map e μ
   refine ⟨hH, ?_⟩
-  obtain ⟨c', -, hc', -⟩ := GlobalTheory.T.exists_unique_haarDensity_at_identity n (UH (form e)) (μ.map (emb e)) (isMatGroup_UH _ (form_sq e)) hH
+  obtain ⟨c', -, hc', -⟩ := _root_.GlobalTheory.MatHaarDensity.exists_hasDens n (UH (form e)) (μ.map (emb e)) (isMatGroup_UH _ (form_sq e)) hH
   have h3 := omegaDensity_of_hasDens e μ _ hc'
   rw [GlobalTheory.OmegaDensityScale.omegaDensity_unique h3 hc]
   exact hc'

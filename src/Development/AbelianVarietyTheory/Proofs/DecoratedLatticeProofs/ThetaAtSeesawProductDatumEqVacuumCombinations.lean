@@ -18,7 +18,7 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsThetaFun
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchwartzBruhatHalfTensorSplitPlaceSelfDual
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsPlaceModelTensorSplitPlaceLatticeIndicator
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IndicatorLocalHomLatticeMemSchwartzBruhat
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HomLatticeAtPlacesCongrLocalLatticesStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HomLatticeAtPlacesCongrLocalLattices
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MatrixSupportedSplitPlaceOfIsHalfConjSum
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsSplitPointWeilCharConductorOneOfUnits
 
@@ -418,7 +418,7 @@ theorem thetaAt_prodDat : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ), IsStdCh
       exact (hiff.1 hf₀).1
     have hbaseN : Vac ψ S T N N' (fun p => ∀ i, p ≠ (L i).q.v) f₀ := by
       refine ⟨hbase.1, ?_⟩
-      rw [GlobalTheory.T.homLatticeAtPlaces_congr_localLattices D S T N M N' M' hN hM hN' hM' _ hV]
+      rw [_root_.GlobalTheory.FinPl.LatCong.latO_congr D S T N M N' M' hN hM hN' hM' _ hV]
       exact hbase.2
     have hl : ∀ l : List (Fin n), Vac ψ S T N N' (fun p => ∀ i, p ≠ (L i).q.v)
         (l.foldr (fun i g => comb ψ S T (L i).o g) f₀) := by

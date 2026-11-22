@@ -5,7 +5,8 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwahoriContract
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwahoriAndMaximalCompactCriteria
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsDiagUnit
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsNormalisedThetaSub
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceConjugationPropertiesCmFieldStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceConjugationPropertiesCmField
+import Development.AbelianVarietyTheory.Definitions.Divisors.GaloisRepOfPolarizedCuspidal
 
 open Matrix ValuativeRel
 open GlobalTheory.CompanionTheory.TwContraction
@@ -408,7 +409,7 @@ theorem thetaGL_mem_iwGL {w : Pl E} (c : w.adicCompletion E →+* w.adicCompleti
 
 theorem contr_tw : PositivityTheory.Rg.Bc.ArchbcB.B.M4.Tw.P_contr_tw := by
   intro E _ _ _ hU w hw ϖ hϖ n y hy δ hδ
-  obtain ⟨hcont, hcc, hcv, -⟩ := GlobalTheory.T.placeConjugation_properties_cmField E hU w
+  obtain ⟨hcont, hcc, hcv, -⟩ := _root_.GlobalTheory.ConjAtPlace.main E hU w
   have hθ : GlobalTheory.BCT.thL n w = GlobalTheory.CuspRep.thetaGL n (GlobalTheory.BCT.cj w) := if_neg hw
   have hEq : (ValuativeRel.valuation (w.adicCompletion E)).IsEquiv
       (Valued.v : Valuation (w.adicCompletion E) (WithZero (Multiplicative ℤ))) := by

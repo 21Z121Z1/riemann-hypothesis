@@ -3,7 +3,7 @@ import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsEigFrames
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.IsPshLocallyIntegrableStatement
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.HolomorphicFamilySmoothHermitian
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsotropicSublatticeGramDeterminantStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsotropicSublatticeGramDeterminant
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.IsotropicSubmoduleNonzeroFamily
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.FiniteSat
 open NumberField Matrix Filter Topology GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Cusp GroundTheory.Heights₂.Heights.LowerBoundFree GroundTheory.Heights₂.Heights.Regular
@@ -130,7 +130,7 @@ theorem LevelTowerAlt.cusps_locally_finite_family : ∀ (E : Type) [Field E] [Nu
   let b := Module.finBasis ℤ I
   have hli : LinearIndependent ℤ fun i => (b i : Λ) :=
     b.linearIndependent.map' (I.subtype.toAddMonoidHom.toIntLinearMap) (LinearMap.ker_eq_bot.2 hinj)
-  obtain ⟨hm, hdet⟩ := GlobalTheory.T.isotropic_sublattice_gram_determinant E g Λ Ψ (R t) σ I hCM hI.2.2 hI.1 _ b
+  obtain ⟨hm, hdet⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.IsoCovol.det_re_gram_eq E g Λ Ψ (R t) σ I hCM hI.2.2 hI.1 _ b
   obtain ⟨⟨r, v, hv⟩, hN⟩ := _root_.LevelTowerAlt.isotropic_submodule_nonzero_family E g Λ Ψ (R t) σ I hCM hI.2.2 hI.1
   have hnz0 := (hN r v hv).2.1
   obtain ⟨hd0, hd1⟩ := det_bound (coords e fun i => (b i : Λ)) (det_ne_zero e hli) (rg (R t) e)

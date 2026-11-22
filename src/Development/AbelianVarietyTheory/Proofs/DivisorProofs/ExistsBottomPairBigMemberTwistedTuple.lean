@@ -11,7 +11,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFinsetLeftTra
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumTransversalLeftTranslateInvariant
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitBlockCosetThetaVectorMemThetaFunctions
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilFixesCosetVectorCongruentOneModIdeal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardThetaDatumEigenvectorBlockLevelStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardThetaDatumEigenvectorBlockLevel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardThetaDatumPresentationLevelNorm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbsNormEqUnderOfIdemAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeUNuInvEqOneOfCong
@@ -286,7 +286,7 @@ theorem exists_bottom_big_modT : ∀ {D : D7} {T : Type} {L : LevCh D T} {sc : C
     refine (Subgroup.relIndex_le_of_le_left hle hj0).trans (hj1.trans ?_)
     rw [hN]
     exact Nat.pow_le_pow_right hQ (by omega)
-  have heig := GlobalTheory.T.standardThetaDatum_eigenvector_blockLevel D δ t0 hc e0 vac had W _ hm hcop hnu R hR1 hR2 hfix
+  have heig := _root_.GlobalTheory.FunObj.StdDatum.CapelliMinorMembership.stdSum_eig D δ t0 hc e0 vac had W _ hm hcop hnu R hR1 hR2 hfix
   let P : Pair D ⊤ δ t0 (levQ G.pl * Qn G t) :=
     { crv := hc
       pt0 := ht

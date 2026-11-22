@@ -3,12 +3,14 @@ import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HzUnit
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleDiscreteSeriesOfHasParam
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatMapHandedFunctionVanishingPeriodInvariantStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatMapHandedFunctionVanishingPeriodInvariant
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ValueDoubleExact
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnitaryAdelicInfFinSplitPeriodsUnimodular
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergCombinationDisjointPlacesCommuteVacua
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnitaryFiniteAdelicGroupSplitFinitePlaceSetStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnitaryFiniteAdelicGroupSplitFinitePlaceSet
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TrivialAtPlaceCommSeeSawCombinationKeepsVacuum
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsLatticeStabilizerTwistAndLevelAwayStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsLatticeStabilizerTwistAndLevelAway
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeeSawDoubleStepFiniteIntegralCollapseTwistPlaceAlt
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.T2SpaceAdeleRingNumberField
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.IndefR.Datum MeasureTheory IsDedekindDomain NumberField Matrix
 open GlobalTheory.MixModel GlobalTheory.MixPer GlobalTheory.Grow GlobalTheory.Unf GlobalTheory.SeeSaw GlobalTheory.FinPl
@@ -118,7 +120,7 @@ theorem split_off (D : D7) (V : HSp D) (A B : Finset (Pl D)) (hAB : Disjoint B A
     (hz : z ∈ grpOff V (fun p => p ∉ A ∧ p ∉ B)) :
     ∃ a ∈ GinfC V, ∃ x ∈ grpAt V (· ∈ A), ∃ y ∈ grpAt V (· ∈ B), z = a * y * x := by
   obtain ⟨-, -, -, ⟨e, he⟩, -⟩ := GlobalTheory.AdelicSplit.adelic_split D V
-  obtain ⟨-, -, hf1, hf2, -, ⟨e', he'⟩, hO, hI, -⟩ := GlobalTheory.T.unitaryFiniteAdelicGroup_split_finitePlaceSet D V B
+  obtain ⟨-, -, hf1, hf2, -, ⟨e', he'⟩, hO, hI, -⟩ := _root_.GlobalTheory.FinPl.SetCut.grp_split D V B
   have h1 := he (e.symm z)
   rw [e.apply_symm_apply] at h1
   have h2 := he' (e'.symm (e.symm z).2)
@@ -147,10 +149,10 @@ theorem split_off (D : D7) (V : HSp D) (A B : Finset (Pl D)) (hAB : Disjoint B A
 
 theorem comm_at (D : D7) (V : HSp D) (A B : Finset (Pl D)) (hAB : Disjoint B A) {x y : GA D V} (hx : x ∈ grpAt V (· ∈ A))
     (hy : y ∈ grpAt V (· ∈ B)) : y * x = x * y := by
-  obtain ⟨-, -, -, -, hcm, -, hO, hI, -⟩ := GlobalTheory.T.unitaryFiniteAdelicGroup_split_finitePlaceSet D V B
+  obtain ⟨-, -, -, -, hcm, -, hO, hI, -⟩ := _root_.GlobalTheory.FinPl.SetCut.grp_split D V B
   refine hcm y hy x ?_
   have hx' : x ∈ GfC V ⊓ grpOff V (· ∈ B) :=
-    ⟨(GlobalTheory.T.unitaryFiniteAdelicGroup_split_finitePlaceSet D V A).2.2.1 hx, hO _ _ (fun p hp h => Finset.disjoint_left.1 hAB h hp) hx⟩
+    ⟨(_root_.GlobalTheory.FinPl.SetCut.grp_split D V A).2.2.1 hx, hO _ _ (fun p hp h => Finset.disjoint_left.1 hAB h hp) hx⟩
   rwa [hI] at hx'
 
 set_option maxHeartbeats 800000 in
@@ -166,8 +168,8 @@ theorem locFin : ∀ (D : D7) (c : Comm D) (v : VCom c) (t : Tup c) (w : VTup t)
     (v.b (j + 1)) hF.disjG (hv.sd (j + 1) hj1) (hv.b (j + 1)) hJG hJGc hJGo hKQ hKQc hKQo
   have hone : InK (c.V (j + 1)) (v.N (j + 1)) (offP v w) 1 := ⟨one_mem _, fun y _ => by simp [Formalism.L2.Theta.mt]⟩
 
-  have VGQ := GlobalTheory.T.unitaryFiniteAdelicGroup_split_finitePlaceSet D (c.V (j + 1)) w.Q
-  have VGG := GlobalTheory.T.unitaryFiniteAdelicGroup_split_finitePlaceSet D (c.V (j + 1)) v.gP
+  have VGQ := _root_.GlobalTheory.FinPl.SetCut.grp_split D (c.V (j + 1)) w.Q
+  have VGG := _root_.GlobalTheory.FinPl.SetCut.grp_split D (c.V (j + 1)) v.gP
   have hQG : ∀ p, p ∈ w.Q → ¬ p ∈ v.gP := fun p hp hg => Finset.disjoint_left.1 hF.disjG hp hg
   have hGQ : ∀ p, p ∈ v.gP → ¬ p ∈ w.Q := fun p hg hp => hQG p hp hg
   have hQoff : ∀ p, p ∈ w.Q → ¬ offP v w p := fun p hp h' => h'.2 hp
@@ -266,7 +268,7 @@ theorem locFin : ∀ (D : D7) (c : Comm D) (v : VCom c) (t : Tup c) (w : VTup t)
     obtain ⟨ε, hε, rfl⟩ := Finset.mem_image.1 (Finsupp.mapDomain_support hg)
     obtain ⟨-, -, hrf, -⟩ := GlobalTheory.AdelicSplit.adelic_split D (c.V (j + 1))
     have gO0 : ∀ (P P' : Pl D → Prop), (∀ p, P p → ¬ P' p) → grpAt (c.V j) P ≤ grpOff (c.V j) P' :=
-      (GlobalTheory.T.unitaryFiniteAdelicGroup_split_finitePlaceSet D (c.V j) w.Q).2.2.2.2.2.2.1
+      (_root_.GlobalTheory.FinPl.SetCut.grp_split D (c.V j) w.Q).2.2.2.2.2.2.1
     have hεG : ε ∈ grpOff _ (· ∈ v.gP) := gO0 _ _ hQG (heQ ε hε)
     have hεO : ε ∈ grpOff _ (offP v w) := gO0 _ _ hQoff (heQ ε hε)
     have omm : ∀ (a a' : GA D (c.V j)) (b b' : GA D (c.V (j + 1))) f, t.om j (a, b) (t.om j (a', b') f) = t.om j (a * a', b * b') f :=
@@ -295,7 +297,7 @@ theorem locFin : ∀ (D : D7) (c : Comm D) (v : VCom c) (t : Tup c) (w : VTup t)
     have hfix := ((hO j σ h _ _ hVO hΨ2O).1 κ hκ).1
     have hne2 : flatBF (t.sBF j (σ + 1) h) (t.om j (ε, z) (comb c.ψ _ _ (v.eG j) (comb c.ψ _ _ (w.eQ j) Ψ))) ≠ 0 := by
       intro h0
-      have hR := (GlobalTheory.T.flatMap_handedFunction_vanishing_period_invariant D c.ψ (offP v w)).1 (σ + 1) _ _ (t.sBF j (σ + 1) h) _ (W1.om_pres (ε, z) _ hVO.1) r hr hrO
+      have hR := (_root_.GlobalTheory.FlatRInv.vanish_invariant D c.ψ (offP v w)).1 (σ + 1) _ _ (t.sBF j (σ + 1) h) _ (W1.om_pres (ε, z) _ hVO.1) r hr hrO
       rw [(ht.sBF j (σ + 1) h).1] at hR
       apply hne
       have e := hR.2 h0

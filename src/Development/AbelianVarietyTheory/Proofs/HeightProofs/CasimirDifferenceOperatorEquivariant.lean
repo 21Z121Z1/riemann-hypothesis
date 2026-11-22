@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.InnerDRepSq
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.OrthonormalBasesMemUnitaryLieAlgebraStatement
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.OrthonormalBasesMemUnitaryLieAlgebra
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.SkewHermitianOrthonormalBasisTraceOrthonormal
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ReTraceHermitianOrthonormalBasisMulEqIte
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ReTraceSkewHermitianMulHermitianOrthonormalBasis
@@ -147,7 +147,7 @@ theorem casOp_equivariant : ∀ (n : ℕ) (ε : Fin n → Bool) (H : Type) [Norm
     [CompleteSpace H] (σ : Mx n → (H →L[ℂ] H)), Std ε σ → ∀ g ∈ UJset ε, ∀ v, Sm ε σ v →
       casOp σ (kB ε) (pB ε) (σ g v) = σ g (casOp σ (kB ε) (pB ε) v) := by
   intro n ε H _ _ _ σ h g hg v hv
-  obtain ⟨hk, hp⟩ := GlobalTheory.T.orthonormalBases_mem_unitaryLieAlgebra n ε
+  obtain ⟨hk, hp⟩ := _root_.GlobalTheory.TypeSum.CasBasis.bases_mem_lieSet n ε
   let Z : Fin (kList ε).length ⊕ Fin (pList ε).length → Mx n := Sum.elim (kB ε) (pB ε)
   let s : Fin (kList ε).length ⊕ Fin (pList ε).length → ℝ := Sum.elim (fun _ => -1) (fun _ => 1)
   have hs : ∀ c, s c * s c = 1 := by rintro (c | c) <;> simp [s]

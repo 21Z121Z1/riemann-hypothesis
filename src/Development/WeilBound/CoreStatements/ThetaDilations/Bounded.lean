@@ -3,11 +3,11 @@ import Development.WeilBound.CoreStatements.ThetaDilations.ProdRho
 import Mathlib
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ReductionToSiegelDomain
 import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.CountData
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ThetaFunctionModularityStatement
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ThetaFunctionAutomorphyStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ThetaFunctionModularity
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ThetaFunctionAutomorphy
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ThetaFunctionCuspExpansion
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ThetaFunctionGrowthBound
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ThetaAverageExpectedCountStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ThetaAverageExpectedCount
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ThetaAverageIntegralFormula
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ThetaSeriesSummable
 
@@ -21,11 +21,11 @@ namespace PositivityTheory.PlacePermOperatorBicommutantSpan
 set_option maxHeartbeats 400000 in
 theorem bounded : ∀ (F : Type) [Field F] [NumberField F] [MeasurableSpace (A F)] [BorelSpace (A F)] (lf : Measure (A F)), lf.IsAddHaarMeasure → lf (Oh F) = 1 → ∀ ψ : AddChar (A F) ℂ, IsStdChar F ψ → ∀ (ι : Type) [Fintype ι] [DecidableEq ι] (M : ℕ) (B : Matrix ι ι F) (ρ : InfinitePlace F → (F →+* ℝ)) (P : InfinitePlace F → Matrix ι ι ℝ), QSetup M B ρ P → 3 ≤ M → ∀ (Ω : Type) [MeasurableSpace Ω] (Pr : Measure Ω) (gf : Ω → Matrix ι ι (A F)) (gi : Ω → InfinitePlace F → Matrix ι ι ℝ), CountData M B ρ Pr gf gi → ∀ φ : (ι → A F) → ℂ, SB φ → ∃ C : ℝ, ∀ τ : InfinitePlace F → ℂ, (∀ w, 0 < (τ w).im) → wt M τ * ‖((∫ ω, theta B ρ P (gf ω) (gi ω) φ τ ∂Pr) - eis ψ lf B ρ P φ τ)‖ ≤ C := by
   intro F _ _ _ _ lf hlf h1 ψ hψ ι _ _ M B ρ P hQ hM Ω _ Pr gf gi hC φ hφ
-  have H := GlobalTheory.T.weil_representation_quadratic_datum F lf hlf h1 ψ hψ ι B hQ.2.2.1 hQ.2.2.2.1
+  have H := _root_.GlobalTheory.CompanionTheory.SW.Core.SelfDual.naQuad F lf hlf h1 ψ hψ ι B hQ.2.2.1 hQ.2.2.2.1
   have hO := hC.2.2.2.1
   obtain ⟨𝒟, h𝒟⟩ : ∃ 𝒟 : ((ι → A F) → ℂ) → (InfinitePlace F → ℂ) → ℂ, ∀ φ τ,
     𝒟 φ τ = (∫ ω, theta B ρ P (gf ω) (gi ω) φ τ ∂Pr) - eis ψ lf B ρ P φ τ := ⟨_, fun _ _ => rfl⟩
-  have hUD := fun ω => GlobalTheory.T.theta_function_modularity F ψ hψ ι M B ρ P hQ _ _ (hO ω)
+  have hUD := fun ω => _root_.GlobalTheory.CompanionTheory.SW.ThetaUD.main F ψ hψ ι M B ρ P hQ _ _ (hO ω)
   have hei := _root_.GlobalTheory.CompanionTheory.SW.Core.EiInv.ei_inv F lf hlf h1 ψ hψ ι M B ρ P hQ hM
   have heb := _root_.GlobalTheory.CompanionTheory.SW.Core.EiBound.ei_bound F lf hlf h1 ψ hψ ι M B ρ P hQ hM
   have hti := _root_.GlobalTheory.CompanionTheory.SW.Core.ThetaIntegral.main F lf hlf h1 ψ hψ ι M B ρ P hQ Ω Pr gf gi hC
@@ -35,7 +35,7 @@ theorem bounded : ∀ (F : Type) [Field F] [NumberField F] [MeasurableSpace (A F
     ⟨fun b => by simp only [h𝒟, fun ω => (hUD ω φ τ).1 b, (hei φ hφ τ hτ).1 b],
       fun a ha => by simp only [h𝒟, fun ω => (hUD ω φ τ).2.1 a ha, (hei φ hφ τ hτ).2.1 a ha],
       by simp only [h𝒟, mul_sub, ← integral_const_mul, (hei φ hφ τ hτ).2.2.1,
-        fun ω => GlobalTheory.T.theta_function_automorphy F lf hlf h1 ψ hψ ι M B ρ P hQ _ _ (hO ω) φ hφ τ hτ], hsm φ τ hφ hτ⟩
+        fun ω => _root_.GlobalTheory.CompanionTheory.SW.ThW.thetaInvariance F lf hlf h1 ψ hψ ι M B ρ P hQ _ _ (hO ω) φ hφ τ hτ], hsm φ τ hφ hτ⟩
   have hadd : ∀ τ, (∀ w, 0 < (τ w).im) → ∀ φ φ', SB φ → SB φ' → 𝒟 (φ + φ') τ = 𝒟 φ τ + 𝒟 φ' τ := by
     intro τ hτ φ φ' hφ hφ'
     obtain ⟨w₀, hw₀⟩ := Finite.exists_min fun w => (τ w).im
@@ -57,7 +57,7 @@ theorem bounded : ∀ (F : Type) [Field F] [NumberField F] [MeasurableSpace (A F
   have hwt : ∀ τ : InfinitePlace F → ℂ, 0 ≤ wt M τ := fun τ => Finset.prod_nonneg fun _ _ => by positivity
   have hS : ∀ φ, SB φ → ∃ C : ℝ, 0 ≤ C ∧ ∀ τ : InfinitePlace F → ℂ, (∀ w, t ≤ (τ w).im) →
       (∀ v w, κ * (τ w).im ≤ (τ v).im) → wt M τ * ‖𝒟 φ τ‖ ≤ C := fun φ hφ => by
-    obtain ⟨C₁, b1⟩ := GlobalTheory.T.weighted_theta_average_le_of_countData F ι M B ρ P hQ Ω Pr gf gi hC φ hφ κ t hκ ht
+    obtain ⟨C₁, b1⟩ := _root_.GlobalTheory.CompanionTheory.SW.Core.ThetaBound.theta_integral_bound F ι M B ρ P hQ Ω Pr gf gi hC φ hφ κ t hκ ht
     obtain ⟨C₂, b2⟩ := heb φ hφ t ht
     refine ⟨|C₁| + |C₂|, by positivity, fun τ h2 h3 => ?_⟩
     have hτ : ∀ w, 0 < (τ w).im := fun w => ht.trans_le (h2 w)
@@ -78,8 +78,8 @@ theorem bounded : ∀ (F : Type) [Field F] [NumberField F] [MeasurableSpace (A F
   refine ⟨∑ r ∈ S, ∑ a ∈ s, |C₀| * C r a, fun τ hτ => ?_⟩
   rw [← h𝒟]
   obtain ⟨r, hr, k, hk, h2, h3⟩ := hred τ hτ
-  have hmob := GlobalTheory.T.mobius_action_upper_half_plane F ρ τ hτ
-  obtain ⟨-, c, hc, e⟩ := horb (Matrix.SpecialLinearGroup.map (algebraMap F (A F)) k) (fun i j => ((GlobalTheory.T.mem_Oh_iff_and_nat_mul_properties F).2.2.2.2.2.2.1 (k i j)).2 (hk i j)) _ (hT1 k)
+  have hmob := _root_.GlobalTheory.CompanionTheory.SW.Core.Mobius.main F ρ τ hτ
+  obtain ⟨-, c, hc, e⟩ := horb (Matrix.SpecialLinearGroup.map (algebraMap F (A F)) k) (fun i j => ((_root_.GlobalTheory.CompanionTheory.SW.Core.AfTop.finiteAdele_topology F).2.2.2.2.2.2.1 (k i j)).2 (hk i j)) _ (hT1 k)
   have hτ' : ∀ w, 0 < (mob ρ (r * k) τ w).im := fun w => (hmob.1 _ w).2
   rw [← hT2 k φ τ hφ hτ, ← hT2 r _ _ ((hT1 k).1 φ hφ) fun w => (hmob.1 k w).2, ← hmob.2.1, e,
     map_sum_sb (hT1 r).2.2.1 (hT1 r).2.2.2.1 s c fun a => sb_ind a hL]

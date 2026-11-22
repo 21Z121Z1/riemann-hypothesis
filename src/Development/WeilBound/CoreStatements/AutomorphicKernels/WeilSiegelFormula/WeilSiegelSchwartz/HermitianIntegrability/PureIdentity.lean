@@ -8,7 +8,8 @@ import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Complet
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.InfiniteAdelesLocalRingTotallyReal
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.SiegelWeilMeasureOfRankSmallOrZero
 import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedSchwartzFunctionIntegrableStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedSchwartzFunctionIntegrable
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermInf
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.EulerFactorStandardMeasureIdentityStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EulerProductMeasureEventuallyStandard
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdelicMeasureEulerProductDecomposition
@@ -299,7 +300,7 @@ theorem coefN_sum (σ : E →ₐ[F] E) (hCM : IsCMExt F E σ) {M : ℕ} (J : Mat
     intro y
     unfold GlobalTheory.CompanionTheory.SiegelND.starN
     simp only [Finset.sum_mul]
-    exact integral_finset_sum _ fun i _ => GlobalTheory.T.twisted_schwartz_function_integrable F E σ hCM M J n ψ hψ dx hdx.1 (Φ i) (hΦ i) y
+    exact integral_finset_sum _ fun i _ => _root_.GlobalTheory.CompanionTheory.SiegelND.Integ.Phase.integrable_mul_phase F E σ hCM M J n ψ hψ dx hdx.1 (Φ i) (hΦ i) y
   have hχ : Continuous (chiT σ ψ T) := _root_.GlobalTheory.CompanionTheory.SiegelND.Coef.continuous_chiT F E σ hCM M J hJ n h2n ψ hψ T
   have hi : ∀ i, Integrable (fun y => GlobalTheory.CompanionTheory.SiegelND.starN σ J ψ dx (Φ i) y * chiT σ ψ T y) db := fun i =>
     (hInt _ (hΦ i)).mul_bdd (c := 1) hχ.aestronglyMeasurable

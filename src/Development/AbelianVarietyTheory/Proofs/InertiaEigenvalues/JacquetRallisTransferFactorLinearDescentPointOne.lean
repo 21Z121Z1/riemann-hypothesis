@@ -3,7 +3,8 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LeftMulTau
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetRallisTransferFactorKrylovDet
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FourierMatch
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedValuationParitySignCharacterKernelNorm
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFactsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFacts
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
 
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology
 
@@ -67,7 +68,7 @@ theorem omega_pt_one : ∀ (F E : Type) [NontriviallyNormedField F] [Nontriviall
       omega (act g (LinDesc.pt A hG lam 1 a)) = κ₀ * eta ((g : Matrix (Fin r) (Fin r) F).det) * A.etaK a := by
   intro F E _ _ _ _ _ A r τ p hG lam
   obtain ⟨hmul, -, -, -⟩ := _root_.GlobalTheory.EtaChar.main F E
-  have hnd := (GlobalTheory.T.etaleHermitianPair_structure_facts F E A).2.2.1
+  have hnd := (_root_.GlobalTheory.JR.EtFacts.main F E A).2.2.1
   have hT : (Algebra.traceMatrix F (bas A hG)).det ≠ 0 := by
     rw [LinearMap.BilinForm.nondegenerate_iff_det_ne_zero (bas A hG)] at hnd
     convert hnd using 2

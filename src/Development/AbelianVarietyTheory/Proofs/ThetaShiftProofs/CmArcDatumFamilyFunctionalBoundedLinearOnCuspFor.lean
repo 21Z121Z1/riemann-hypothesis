@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Definitions.ThetaValues.GamAt
 import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.QatOfBridgeAlt
 import Formalism.LocalToGlobal.ProjectiveLattices.RecConj
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.NumericalConsequencesOfPins
-import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.NormCmArcCoefficientFunctionalLeStatement
+import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.NormCmArcCoefficientFunctionalLe
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.CmValueLineLengthConjEq
 import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.ModelsAt
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.NdegLineOptionLe
@@ -106,7 +106,7 @@ theorem arch_good (hK : Known) {D : D7} {T : Core D} (h : LawsCore T) (j : ℕ) 
     unfold cutN Core.Ns
     rw [if_pos hj, goodOf, if_pos hem]
   have h0 := (recB h).supN_nonneg j ka (em.comp (algebraMap T.Q.c.F K₁)) F
-  have hb := GlobalTheory.T.norm_cmArcCoefficientFunctional_le hK _ _ _ _ (T.Q.Xo j) T.Q.c K₁ d _ _ _ s em D.R.r
+  have hb := _root_.GlobalTheory.ArchCM.norm_cfOf_le hK _ _ _ _ (T.Q.Xo j) T.Q.c K₁ d _ _ _ s em D.R.r
     (Formalism.L2.PjFree.Unf.ofPj (T.U j _)) (xiR D) ((recB h).supN j ka (em.comp (algebraMap T.Q.c.F K₁)) F)
     (wtA ka) ka.n hd (one_le_LaAt D j ka CR Tt cc) hem (h.unf j hj _ hem) (h.xiAbs j hj _ hem) (dom_wtA ka)
     (GlobalTheory.TransvPrinc.transvIn_of_hasPrinc _ _ _ _ _ _ _ _ (Formalism.L2.PjFree.Unf.ofPj (T.U j _)) _ _ (hG j hj _ hem)

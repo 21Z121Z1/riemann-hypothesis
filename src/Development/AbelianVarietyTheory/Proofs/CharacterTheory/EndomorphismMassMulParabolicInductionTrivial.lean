@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.InvariantSubspaceMobiusInverseRecEqOfFinrankLt
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.CharpolyBlockAndInvariantUnderStabilizerNilradic
-import Development.AbelianVarietyTheory.Proofs.CharacterTheory.FinsumSubspaceStabilizerMulBlockFunctionsStatement
+import Development.AbelianVarietyTheory.Proofs.CharacterTheory.FinsumSubspaceStabilizerMulBlockFunctions
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.CardSubspacesMulGeneralLinearGroupCard
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.EndomorphismMassEqOfLinearEquivInvariant
 
@@ -99,7 +99,7 @@ theorem stab_sum (F : Type) [Field F] [Finite F] (V : Type) [AddCommGroup V] [Mo
   rw [finsum_congr key, finsum_eq_sum_of_fintype, Finset.sum_comm]
   refine Finset.sum_congr rfl fun x _ => ?_
   rw [mass_eq, mass_eq, ← finsum_eq_sum_of_fintype]
-  exact GlobalTheory.T.finsum_subspaceStabilizer_mul_block_functions F V W (fun a => if LinearMap.charpoly a = x.1 then φ a else 0)
+  exact _root_.GlobalTheory.CuspGL.finsum_stabiliser_mul_blocks F V W (fun a => if LinearMap.charpoly a = x.1 then φ a else 0)
     (fun b => if LinearMap.charpoly b = x.2 then (1 : ℂ) else 0)
 
 theorem glCard_ne_zero (F : Type) [Field F] [Finite F] (n : ℕ) : glCard F n ≠ 0 := by

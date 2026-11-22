@@ -3,8 +3,8 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.IsAmbOfIsArithVar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CodimOneIntegralSubschemeDim
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarisationMixedTermOfPowers
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLinearFunctionalOfSymmetricMultiadditive
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsArithHeightEqMixedHeightDiagonalStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedArchIntegralAdditiveAndDiagonalStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsArithHeightEqMixedHeightDiagonal
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedArchIntegralAdditiveAndDiagonal
 
 set_option autoImplicit false
 
@@ -65,7 +65,7 @@ theorem arMix_of_mixHt : ArchInteg →
   have hpow : ∀ m : Option ι → ℤ, Φ (lin (fun o => (m o : ℝ)) ^ (D + 1)) =
       Φ₀.toAddMonoidHom ((∑ o, m o • (MvPolynomial.X o : MvPolynomial (Option ι) ℝ)) ^ (D + 1)) := by
     intro m
-    obtain ⟨g, hg, hg'⟩ := GlobalTheory.T.exists_arithHeight_eq_mixedHeight_diagonal hAI k X p D hX T hT (comb F' m)
+    obtain ⟨g, hg, hg'⟩ := _root_.GlobalTheory.MixHtDiag.exists_isArithHeight hAI k X p D hX T hT (comb F' m)
     have h₁ : (comb F' m).IsSelfInter (T (D + 1) (fun _ => comb F' m) (genericPoint X)) :=
       ⟨g, hg, hg' _ _ hgen⟩
     have h₂ := hΦ₀ (fun _ => m)
@@ -102,11 +102,11 @@ theorem arMix_of_mixHt : ArchInteg →
     (isometric_pull_id M) (fun _ => isometric_pull_id N) r hr
   have e₁ : (𝟙 X : X ⟶ X) (genericPoint X) = genericPoint X := by simp
   rw [e₁] at hrec
-  rw [hrec, recVal, (GlobalTheory.T.mixedArchIntegral_additive_and_diagonal hAI k X p (isAmb_of_isArithVar hX) M r hr).2 D hX.dim_eq N]
+  rw [hrec, recVal, (_root_.GlobalTheory.MixAdd.mixArch_add_diag hAI k X p (isAmb_of_isArithVar hX) M r hr).2 D hX.dim_eq N]
   refine congrArg (· - _) (finsum_congr fun z => ?_)
   by_cases hz : (M.div hr).mult z = 0
   · simp [hz]
-  obtain ⟨g, hg, hg'⟩ := GlobalTheory.T.exists_arithHeight_eq_mixedHeight_diagonal hAI k X p D hX T hT N
+  obtain ⟨g, hg, hg'⟩ := _root_.GlobalTheory.MixHtDiag.exists_isArithHeight hAI k X p D hX T hT N
   obtain rfl : h = g := hh.unique hX hg
   have e₂ : (𝟙 X : X ⟶ X) z = z := by simp
   rw [e₂, hg' z D (hasDim_of_coheight_eq_one hX (CartierDiv.coheight_eq_one_of_mult_ne_zero hz))]

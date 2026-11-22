@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LargePlaceRatioRami
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdeleCharacterQuotientNotUnramifiedAtBasePlaceId
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareMuDivChiRamifiedAtTwistPlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LargePlaceNotDvdDifferent
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AuxiliaryPlaceNotDvdDifferentBaseFieldStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AuxiliaryPlaceNotDvdDifferentBaseField
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistPlaceUnderNotDvdDifferentIdeal
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links Formalism.L2.Theta IsDedekindDomain NumberField Finset MeasureTheory
 open GlobalTheory.ChiGrid GlobalTheory.FunObj GlobalTheory.FunObj.SqNum GlobalTheory.RowTest GlobalTheory.SqTop
@@ -45,7 +45,7 @@ theorem bottom_ram : GBig fun {D} {T} {Lc} {sc} G _ _ _ _ => ∀ (W : G.Weil) (i
         · exact _root_.GlobalTheory.RamifiedIdeleBasePlace.ideleCharacterQuotient_not_unramified_at_basePlaceIdempotent G μ₀ hμ t v e he h0 i j
         · exact _root_.GlobalTheory.RamifiedOnLargePlaces.not_unramAt G μ₀ hμ t v e he h1 i j
       · rcases G.pl.mem_S0_of_sum_eq.1 hS with h0 | h1
-        · subst h0; exact GlobalTheory.T.auxiliary_place_not_dvd_different_base_field G
+        · subst h0; exact _root_.GlobalTheory.DifferentAtBasePlace.not_dvd_different G
         · exact _root_.GlobalTheory.DiffSOne.not_dvd_differentIdeal large₂ hr v h1
     · refine ⟨_root_.GlobalTheory.SplitTwistPlaces.not_nonSplitAt G μ₀ hμ t v e he PP hPP hPv, ?_, hPv ▸ _root_.GlobalTheory.TwistPlDiff.under_not_dvd_differentIdeal Lc μ₀ hμ t PP hPP⟩
       by_cases h0 : v ∈ G.pl.S0

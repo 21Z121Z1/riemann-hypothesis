@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqTopOfTranslates
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SetIntegralMulLeft
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitPlaceTransvectionActsPositivelyInvariantForStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitPlaceTransvectionActsPositivelyInvariantFor
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousMovPair
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RationalSymplecticPointsSelfAnnihilator
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StandardAdelicCharacterLocalComponentNeOne
@@ -232,7 +232,7 @@ theorem exists_eigen (hW : IsWeilDatumO ψ S T χS χT om) (hS : ∀ τ, (gramAt
     ∃ z ∈ ZI T ξ, ∃ c : ℂ, c ≠ 1 ∧ ∀ g, IsThetaFunO ψ S T g →
       ℓ (heisO ψ S T (ratW T S x) (om (1, z) g)) = c * ℓ (heisO ψ S T (ratW T S x) g) := by
   obtain ⟨e, he, z, hz, hs, b, hb, hu⟩ := exists_transv hW.std hS h x hx
-  obtain ⟨r, hr, H⟩ := GlobalTheory.T.splitPlaceTransvection_acts_positively_invariant_forms D ψ S T χS χT om hW ξ h e he z hz hs
+  obtain ⟨r, hr, H⟩ := _root_.GlobalTheory.SplitTransvection.transvection_pos D ψ S T χS χT om hW ξ h e he z hz hs
   refine ⟨z, hz, ψ (symplOH S T (along S T ξ b) (ratW T S x)) * r, fun h1 => hu ?_, fun g hg => ?_⟩
   · have h2 := congrArg norm h1
     rw [norm_mul, hW.std.1.2.1, one_mul, norm_one, Complex.norm_real, Real.norm_of_nonneg hr.le] at h2

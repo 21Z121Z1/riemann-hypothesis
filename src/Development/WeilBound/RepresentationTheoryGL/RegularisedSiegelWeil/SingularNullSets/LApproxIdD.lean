@@ -36,7 +36,7 @@ theorem approxId_of (h1 : OneD) : ApproxId := by
   have : BorelSpace (Mx D t t) := ⟨rfl⟩
   obtain ⟨eA, heA⟩ := _root_.GlobalTheory.CompanionTheory.SiegelND.Coef.TestN.hCo_continuousAddEquiv D.host.F D.host.E D.sp.cm.sig hCM (AF D.host.F) _ (Module.finBasis D.host.F D.host.E) t
   obtain ⟨-, hBd⟩ := _root_.GlobalTheory.CompanionTheory.SiegelND.Coef.TestN.coordForm_isSymm_det_ne_zero D.host.F D.host.E D.sp.cm.sig hCM _ (Module.finBasis D.host.F D.host.E) t
-  have hpair := GlobalTheory.T.hermitian_pairing_in_coordinates D.host.F D.host.E D.sp.cm.sig hCM (AF D.host.F) _ (Module.finBasis D.host.F D.host.E) t
+  have hpair := _root_.GlobalTheory.CompanionTheory.SiegelND.Coef.TestN.PairCoord.pairHerm_eq_coordForm D.host.F D.host.E D.sp.cm.sig hCM (AF D.host.F) _ (Module.finBasis D.host.F D.host.E) t
   generalize Module.finBasis D.host.F D.host.E = b at heA hBd hpair
   have hε0 : IsIdF S ((1, LIdemEx.indS S) : AF D.host.F) := ⟨rfl, fun v => rfl⟩
   obtain ⟨ε, hε, heS⟩ : ∃ ε : AF D.host.F, IsIdF S ε ∧ e = algebraMap (AF D.host.F) (AE D) ε :=

@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.HasRigidChart
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ToroidalCompactificationBis
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsRem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeatOperatorShiftDivMonomial
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralGeneratorTranslationBundleMonomialStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralGeneratorTranslationBundleMonomial
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralShiftOfGeneratorUpToConst
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry NumberField IsLocalRing
 open scoped CategoryTheory.Obj Matrix TensorProduct
@@ -98,7 +98,7 @@ theorem heat_div_monomial' (E : Type) [Field E] [NumberField E] [IsCMField E] (H
       gs (r ≫ P.D.toPre.P.A.hom) z ⊤ ((Scheme.ΓSpecIso (CommRingCat.of (ChartRing k m d))).inv.hom c) =
         GlobalTheory.HeatMod.germConstHom (r ≫ P.D.toPre.P.A.hom) z c := fun r z c =>
     (GlobalTheory.HeatTermLin.gs_constFn _ r z c).symm.trans (GlobalTheory.HeatMod.gs_constFn_eq_germConstHom _ r z c)
-  have key := GlobalTheory.T.secB_eq_everywhere_of_generic_agree_const (ChartRing k m d) P.D.toPre e (α + e • mu) σ₁u''
+  have key := _root_.GlobalTheory.SecBGenericAgree.main (ChartRing k m d) P.D.toPre e (α + e • mu) σ₁u''
     (σ₁u' - constFn P.D.toPre.P.A.hom ⊤ (2 * (e : ChartRing k m d) * ∑ i, (N i : ChartRing k m d) * q i) • σ₁u)
     (∏ i, bdParam k m d i ^ N i) hne (by
       intro z J hJ
@@ -117,7 +117,7 @@ end GlobalTheory.HeatShiftW
 
 theorem GlobalTheory.HeatShiftW.exists_int_shift : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host E) (k : Type) [Field k] [CharZero k] (m d : ℕ) (t : SAB H (Sp (ChartRing k m d))) (P : PELUnif (maximalIdeal (ChartRing k m d)) t) (gam : Fin m → LinearMap.BilinForm ℤ P.D.toPre.X), IsMonomial P.D.toPre (bdParam k m d) gam → ∀ (y : P.D.toPre.X) (N : ℕ), 1 ≤ N → ∃ (Nv : Fin m → ℕ) (w : ∀ (z : P.D.toPre.P.A.left) (J : (P.D.toPre.P.A.left ⟶ P.D.toPre.P.A.left) → P.D.toPre.P.L.ι), (P.D.toPre.P.A.left.presheaf.stalk z)ˣ) (Sh : P.D.toPre.SecB N 0 → P.D.toPre.SecB N (0 + N • y)), ∀ x : P.D.toPre.SecB N 0, (∀ (z : P.D.toPre.P.A.left) (J : (P.D.toPre.P.A.left ⟶ P.D.toPre.P.A.left) → P.D.toPre.P.L.ι), Good P.D.toPre.P.L z J → sval (Sh x) (𝟙 _) z J = sval x (lift (toUnit P.D.toPre.P.A ≫ P.D.toPre.c y) (𝟙 P.D.toPre.P.A) ≫ μ[P.D.toPre.P.A]).left z J * (w z J).val) ∧ ∃ x₁ : P.D.toPre.SecB N (0 + N • y), ShiftEq P.D.toPre N y 0 x x₁ 0 x₁ ∧ ∀ (Z : Scheme.{0}) (X : Z ⟶ P.D.toPre.P.A.left) (z : Z) (J : (Z ⟶ P.D.toPre.P.A.left) → P.D.toPre.P.L.ι), Good P.D.toPre.P.L z J → sval x₁ X z J = gs (X ≫ P.D.toPre.P.A.hom) z ⊤ ((Scheme.ΓSpecIso (CommRingCat.of (ChartRing k m d))).inv.hom (∏ i, bdParam k m d i ^ Nv i)) * sval (Sh x) X z J := by
   intro E _ _ _ H k _ _ m d t P gam hmon y N hN
-  obtain ⟨Nv, uR, huR, hu⟩ := GlobalTheory.T.exists_integralGenerator_translationBundle_monomial E H k m d t P gam hmon y N hN
+  obtain ⟨Nv, uR, huR, hu⟩ := _root_.GlobalTheory.ShiftGen.exists_integral_gen_monomial E H k m d t P gam hmon y N hN
   obtain ⟨w, Sh, hSh⟩ := _root_.GlobalTheory.IntegralShift.exists_shift_of_gen (ChartRing k m d) P.D.toPre y N (∏ i, bdParam k m d i ^ Nv i) uR huR hu
   exact ⟨Nv, w, Sh, hSh⟩
 

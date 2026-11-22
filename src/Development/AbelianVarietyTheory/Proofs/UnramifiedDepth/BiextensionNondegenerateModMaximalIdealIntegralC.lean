@@ -12,7 +12,7 @@ import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.EqOneOfTangentVec
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsPthRootTorusPointNilpotentAugmentedExt
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.AlphaPHomomorphismCubicalWeilTrivialRationalTors
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.CubicalWeilTrivialOfLocalArtinianPoints
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsIsTorusExtensionOnPointsModIdealStatement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsIsTorusExtensionOnPointsModIdeal
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.AbelianPartProjectionRespectsOrthogonality
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsFiniteExtensionSplitSpecialFibrePoint
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsTorusExtensionPointsPullbackFieldPoint
@@ -21,7 +21,7 @@ import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsFormalChart
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.UniversalChartPointsOverFieldPoint
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.FramePartialLawsNilpotentCoordinates
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.NotNondegenerateOfDegenerateSeriesDirectionStatement
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsAlgClosedResidueFieldValuedFieldStatement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsAlgClosedResidueFieldValuedField
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsRingHomValuationRingOfEmbOK
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.DegenerateDirectionOfNotNondegenerate
 
@@ -147,7 +147,7 @@ theorem nonDeg_of_polAt {V : Type} [CommRing V] [IsDomain V] [IsLocalRing V] (hV
     rw [← hf]; exact (Spec.map_comp (CommRingCat.ofHom f) (CommRingCat.ofHom β')).symm) p
   refine NonDeg.of_torExt h₁ h₂ ?_
   obtain ⟨P, -⟩ := GlobalTheory.LN.uDvrSt_holds E H W hW t' ht' hs
-  obtain ⟨τ', io', k₁, k₂⟩ := GlobalTheory.T.exists_isTorusExtensionOnPoints_mod_ideal W _ P.D.toPre t'.G (P.U.gt 0) Ω β' hβ'
+  obtain ⟨τ', io', k₁, k₂⟩ := _root_.GlobalTheory.TorExtPoints.exists_isTorExt W _ P.D.toPre t'.G (P.U.gt 0) Ω β' hβ'
   have k₃ := _root_.GlobalTheory.AlphaPair.transfer_of_unif W _ P.D P.A t'.G P.U.toUnifPre Ω β' hβ' τ' k₂ p
   have := hW.1
   have := hW.2.2
@@ -176,7 +176,7 @@ theorem ndg_at_chart : ∀ (E : Type) [Field E] [NumberField E] [NumberField.IsC
   letI := H.starRing
   letI := io.toAlgebra
   by_contra hN
-  obtain ⟨Ω, _, _, _, ρ, hρ⟩ := GlobalTheory.T.exists_algClosed_residueField_valuedField C V Y.algClosed
+  obtain ⟨Ω, _, _, _, ρ, hρ⟩ := _root_.GlobalTheory.AlphaPair.ResField.exists_residueField C V Y.algClosed
   obtain ⟨j, hj, hjm⟩ := _root_.GlobalTheory.embOK_exists_ringHom T C V ι' hι
   have : Fact V.l.Prime := ⟨V.l_prime⟩
   obtain ⟨BT, hF, -, h1, h2, -⟩ := integralChart_formalBiext E H Dw l Xo c T io y C3

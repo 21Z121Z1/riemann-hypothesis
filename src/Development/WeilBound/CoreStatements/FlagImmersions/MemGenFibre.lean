@@ -14,7 +14,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsCombTangentIffLin
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GermSys
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeAt
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenFrameIffEigenspaceBasisStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenFrameIffEigenspaceBasis
 
 open AlgebraicGeometry CategoryTheory Limits NumberField IsDedekindDomain MvPolynomial
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Flat GlobalTheory.CompanionTheory.Ar.Fl
@@ -290,14 +290,14 @@ theorem frame_vals {E : Type} [Field E] [NumberField E] [IsCMField E] {H : Host 
   have hBA : B * A = 1 := by rw [← map_mul, hTT, map_one]
   have hAB : A * B = 1 := mul_eq_one_comm.1 hBA
   let e' : Fin n → W := fun k => ∑ a, A k a • e a
-  obtain ⟨he1, he2⟩ := (GlobalTheory.T.eigen_frame_iff_eigenspace_basis _ L _ _ W Mu _ Xo.univ.t.act act σ n e hMu).1 hve
+  obtain ⟨he1, he2⟩ := (_root_.GlobalTheory.CompanionTheory.Ar.Flat.LieEigFrame.isEigFrame_pt_iff _ L _ _ W Mu _ Xo.univ.t.act act σ n e hMu).1 hve
   have hsum : ∀ cf : Fin n → L, ∑ k, cf k • e' k = ∑ a, (Matrix.vecMul cf A) a • e a := fun cf => by
     simp only [e', Finset.smul_sum, smul_smul, Matrix.vecMul, dotProduct, Finset.sum_smul]
     exact Finset.sum_comm
   have hdet : T.det * T'.det = 1 := by rw [← Matrix.det_mul, hTT, Matrix.det_one]
   have hAd : A.det = ρ T'.det := (RingHom.map_det ρ T').symm
   refine ⟨gm T.det, ρ T.det, A, fun k => Mu.pt (e' k), by rw [hAd, ← map_mul, hdet, map_one], ⟨hc, T.det, rfl, rfl⟩, ?_,
-    (GlobalTheory.T.eigen_frame_iff_eigenspace_basis _ L _ _ W Mu _ Xo.univ.t.act act σ n e' hMu).2 ⟨fun k => ?_, fun x hx => ?_⟩,
+    (_root_.GlobalTheory.CompanionTheory.Ar.Flat.LieEigFrame.isEigFrame_pt_iff _ L _ _ W Mu _ Xo.univ.t.act act σ n e' hMu).2 ⟨fun k => ?_, fun x hx => ?_⟩,
     fun k => (_root_.GlobalTheory.CompanionTheory.Ar.Flat.CPoint.isComb_lieModel_pt_iff _ L _ _ W Mu n e _ _).2 rfl, fun k => ⟨Mz.pt (e' k), hsame _, ?_⟩⟩
   · have e := GlobalTheory.alternating_map_sum_smul_eq_det_smul (exteriorPower.ιMulti Ω n (M := 𝔐.Li)) (gm.mapMatrix T) bp
     have e2 : (fun k => j (b k)) = fun a => ∑ k, (gm.mapMatrix T) a k • bp k := funext hT

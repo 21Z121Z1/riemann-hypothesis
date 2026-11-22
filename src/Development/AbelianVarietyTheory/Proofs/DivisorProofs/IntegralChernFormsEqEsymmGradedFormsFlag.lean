@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.IsMetricFrOfIsMetri
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ChernDegreeComplex
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernFormFieldDbarCohomologousTwoConnections
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralRealPolyEqOfDbarCohomologous
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullFlagGradedLineChernFormsSmoothDbarClosedStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullFlagGradedLineChernFormsSmoothDbarClosed
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGramConnectionPairGramLowerTriangularFactorStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernFormTriangularConnectionEqEsymmGraded
 open CategoryTheory AlgebraicGeometry MvPolynomial MeasureTheory Filter Topology
@@ -42,7 +42,7 @@ theorem integral_chernF_mul_grF : ∀ (F : Type) [Field F] (σ : F →+* ℂ) (X
   have hc : ∀ i, DbarCoh (atlas X σ) (Sum.elim (chernF E H) (grF E H) i) (Sum.elim ld (grF E H) i) := by
     rintro (⟨τ, j⟩ | x)
     · exact _root_.GlobalTheory.ChernCalc.dbarCoh_chernFld _ _ _ _ _ _ (GlobalTheory.T.isGramConnectionPair_gram_lower_triangular_factor F σ X ι m E H hH τ) j
-    · exact GlobalTheory.T.fullFlagGradedLineChernForms_smooth_dbarClosed F σ X ι m E H hH x
+    · exact _root_.GlobalTheory.ChernCalc.GradedForm.dbarCoh_grF F σ X ι m E H hH x
   have key := _root_.GlobalTheory.ChernCalc.integral_evalF_of_dbarCoh (CxPts X.str σ) X.dim (atlas X σ) _ _ _ hc (rename Sum.inl R * rename Sum.inr Q)
   rw [evalF_rename_mul, evalF_rename_mul] at key
   rw [key, evalF_chernRoots (atlas X σ) m ld (grF E H) (fun τ j p => _root_.GlobalTheory.ChernCalc.chernFld_ldPart_eq_esymm_grF F σ X ι m E H hH τ j p) R]

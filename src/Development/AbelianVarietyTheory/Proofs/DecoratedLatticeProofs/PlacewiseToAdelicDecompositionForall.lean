@@ -2,8 +2,8 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PlacesToAdeles
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicPointComponentsAtPlacesLatticesVacua
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsSumFrame
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualImageAdelicPointWittCoreStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LatticesAgreeAlmostEverywhereStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualImageAdelicPointWittCore
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LatticesAgreeAlmostEverywhere
 
 noncomputable section
 
@@ -102,7 +102,7 @@ theorem moves_off {S : HSp D} {L : Lat S} {P : Pl D → Prop} {b : GA D S} (hb :
   intro y hy
   rw [mulVec_off hb hy]
 
-theorem latV_eq_ae : ∀ (D : D7) (S : HSp D) (L M : Lat S), Submodule.IsLattice D.host.E L → Submodule.IsLattice D.host.E M → ∃ T : Finset (Pl D), ∀ v, v ∉ T → latV S L (· = v) = latV S M (· = v) := GlobalTheory.T.lattices_agree_almost_everywhere
+theorem latV_eq_ae : ∀ (D : D7) (S : HSp D) (L M : Lat S), Submodule.IsLattice D.host.E L → Submodule.IsLattice D.host.E M → ∃ T : Finset (Pl D), ∀ v, v ∉ T → latV S L (· = v) = latV S M (· = v) := _root_.GlobalTheory.FinPl.latV_eq_off_finite
 
 end GlobalTheory.FinPl.PlacesAdeles
 
@@ -113,7 +113,7 @@ open GlobalTheory.FinPl.PlacesAdeles in
 theorem placesToAdeles (D : D7) : PlacesToAdeles D := by
   classical
   intro S L P hL R h hyp
-  obtain ⟨M, hM, hmove⟩ := (GlobalTheory.T.selfDual_image_adelicPoint_wittCore D S L hL).1 h
+  obtain ⟨M, hM, hmove⟩ := (_root_.GlobalTheory.FinPl.GlobImage.glob D S L hL).1 h
   obtain ⟨T, hT⟩ := latV_eq_ae D S L M hL.1 hM.1
   have hfar : ∀ v, v ∉ T → Moves S h L L (· = v) := by
     intro v hv y hy

@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFactsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFacts
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetRallisInvKRegularIffIsUnit
 
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology
@@ -149,7 +149,7 @@ theorem isom_to_herm (hG : A.IsGen τ p) (lam : F) (x : A.K) (j : A.L ≃ₗ[E] 
       algebraMap F E (Algebra.trace F A.K (τ ^ (i : ℕ) * (x * A.NL y)))
     rw [mat_pow_mulVec, hj, ← trace_map A hG]
     congr 1
-    rw [map_mul, map_mul, (GlobalTheory.T.etaleHermitianPair_structure_facts F E A).1 y]
+    rw [map_mul, map_mul, (_root_.GlobalTheory.JR.EtFacts.main F E A).1 y]
     ring
 
 end GlobalTheory.EtIsom
@@ -321,7 +321,7 @@ theorem herm_to_isom (hG : A.IsGen τ p) {lam : F} {a : A.K} (ha : IsUnit a) {X 
   · rw [hj, hj]
     refine (form_eq A hG a X.1.1 hAh X.2.1 (mom_all A hG hX) φ.toLinearMap hφb _ _).trans ?_
     congr 1
-    rw [hxa, map_mul, (GlobalTheory.T.etaleHermitianPair_structure_facts F E A).1 y, star_mul']
+    rw [hxa, map_mul, (_root_.GlobalTheory.JR.EtFacts.main F E A).1 y, star_mul']
     linear_combination (algebraMap A.K A.L x * star z * z') * (star y * star ((u⁻¹ : A.Lˣ) : A.L)) * h1 +
       (algebraMap A.K A.L x * star z * z') * h2
   · rw [hj, hj, mul_assoc, hτ]

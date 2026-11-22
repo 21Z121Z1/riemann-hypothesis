@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.LatticeFrames.KerBF
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ThetaAbsoluteSum
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.TransvectionAction
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.WeilDatumExistence
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlagUnitaryOrbitActionTransitiveWithStabilizerStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlagUnitaryOrbitActionTransitiveWithStabilizer
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlagUnipotentFundamentalDomainLayersIntegral
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LintegralUnfoldSumTransitiveOrbit
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsFundamentalDomainProdOfKernelImage
@@ -39,7 +39,7 @@ theorem unfold_over_N_lift : ∀ (D : D7), Descent D → ∀ (ψ : AddChar (AF D
   haveI := vW.haar
   haveI : SFinite vN.ν := inferInstance
   haveI : SFinite vW.μ := inferInstance
-  obtain ⟨act, y₀, hy₀, hrel, htrans, hstab1, hstab2⟩ := GlobalTheory.T.flagUnitaryOrbitAction_transitive_with_stabilizer D V V₀ W ρ d x₀ hx
+  obtain ⟨act, y₀, hy₀, hrel, htrans, hstab1, hstab2⟩ := _root_.GlobalTheory.OrbAct.action_transitive_stabiliser D V V₀ W ρ d x₀ hx
   letI := act
   obtain ⟨𝓐, h𝓐, hlay⟩ := _root_.GlobalTheory.Unf.layers_integral D V V₀ ρ d vN vb vU
   haveI : Countable D.host.E := (Module.finBasis ℚ D.host.E).equivFun.injective.countable

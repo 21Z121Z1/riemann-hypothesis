@@ -8,7 +8,7 @@ import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Hermiti
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramFiberMeasuresTransitivity
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ContinuousHermScal
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.LocalLatticeCompactOpenUnitVolumeStatement
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.LocalQuadraticDensityBoundNonzeroStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.LocalQuadraticDensityBoundNonzero
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.EtaleAwayQuotientEqLocalization
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.MeasurableCoordinateMapsTensor
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.IntegralAlmostAllPlaces
@@ -209,7 +209,7 @@ theorem density_standard_lattice : ∀ (F E : Type) [Field F] [NumberField F] [F
     have h1 := (algebraMap F (Fv F v)).map_det B
     rw [h1] at hvd
     exact hvd
-  obtain ⟨D, hD1, hD⟩ := GlobalTheory.T.local_quadratic_density_bound_nonzero F v lam hlam hv2' (Fin M × Fin d)
+  obtain ⟨D, hD1, hD⟩ := _root_.GlobalTheory.CompanionTheory.SW.GBall.density_near_value F v lam hlam hv2' (Fin M × Fin d)
     (B.map (algebraMap F (Fv F v))) (hBs.map _) (fun i j => hve i j) hdet M hcard h3 s hs hs0
   rw [local_mass σ hCM M J hJ d b v (B.map (algebraMap F (Fv F v))) (fun x y => hBt (Fv F v) x y)
     lam hlam m hm s hs0 D hD]

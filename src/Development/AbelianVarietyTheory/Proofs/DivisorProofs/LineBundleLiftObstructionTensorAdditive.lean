@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsBasOpens
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CommonRefinement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLineBundleFrameOnBasisLineBundleCechTensor
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineBundleLiftObstructionRefineFinerBasisStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineBundleLiftObstructionRefineFinerBasis
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SigOneAddMul
 open CategoryTheory AlgebraicGeometry MonoidalCategory CartesianMonoidalCategory MonObj
 open scoped TensorProduct
@@ -16,8 +16,8 @@ theorem isObL_tens : ∀ (R R₀ : Type) [CommRing R] [CommRing R₀] (I : Ideal
   obtain ⟨C, _, _, G, hG, hLG⟩ := hL
   obtain ⟨C', _, _, G', hG', hLG'⟩ := hL'
   obtain ⟨D, _, _, K, H, H', ⟨θ⟩, ⟨θ'⟩, hK⟩ := GlobalTheory.LBObs.common_refinement X₀ C C' G G' hG hG'
-  have h₁ := GlobalTheory.T.lineBundleLiftObstruction_refine_finerBasis R R₀ I hI π hπ hk R₁ α X₀ s₀ S L c C D G K H θ hLG
-  have h₂ := GlobalTheory.T.lineBundleLiftObstruction_refine_finerBasis R R₀ I hI π hπ hk R₁ α X₀ s₀ S L' c' C' D G' K H' θ' hLG'
+  have h₁ := _root_.GlobalTheory.LBObs.obAt_refine R R₀ I hI π hπ hk R₁ α X₀ s₀ S L c C D G K H θ hLG
+  have h₂ := _root_.GlobalTheory.LBObs.obAt_refine R R₀ I hI π hπ hk R₁ α X₀ s₀ S L' c' C' D G' K H' θ' hLG'
   obtain ⟨u, hu, hU⟩ := h₁
   obtain ⟨u', hu', hU'⟩ := h₂
   refine ⟨D, inferInstance, inferInstance, K, hK, fun T T' a ↦ u T T' a * u' T T' a,

@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PrincipalL
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftModelHolomorphicOverReflexField
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqTopOfTranslates
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LoweringPartKillsFockProductMinors
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelFockVectorHeisenbergAverageIsotropicEqZeroStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelFockVectorHeisenbergAverageIsotropicEqZero
 
 noncomputable section
 
@@ -42,7 +42,7 @@ theorem liftIsCuspC : GlobalTheory.Published.CuspRapidDecay → ∀ {D : D7} {G 
     (J := levS _ (R.βW i) (R.datWp i R.triv)) (fun _ hk => hk.1) (GlobalTheory.DefLift.ThetaMap.level_open _ _ _)
     (fun k hk Q => GlobalTheory.PrincipalLevelFock.levW_fix_ptAt R F i t σ s P cμ cη m ω BW f₀ f c io hd Q k hk)
     (GlobalTheory.IndefiniteRowSideFullHecke.VectorLevelCharacters.principalLevelCharacter_eq_one R i)
-    (fun Q h g ξ hξ => GlobalTheory.T.levelFockVector_heisenbergAverage_isotropic_eq_zero R F i t σ s P cμ cη m ω BW f₀ f c io hd Q h g ξ hξ)
+    (fun Q h g ξ hξ => _root_.GlobalTheory.LevelSupport.sum_heisO_along_eq_zero_level R F i t σ s P cμ cη m ω BW f₀ f c io hd Q h g ξ hξ)
     hF (GlobalTheory.ThetaIntegrand.ext_invariant c hφ) hν.1.1 hν.2
   obtain ⟨Θ, hΘ, hΘv⟩ := key
   refine ⟨Θ, Submodule.subset_span hΘ, fun v g => ?_⟩

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsHolPeriods
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplexUniformisationsSamePointDifferByIsometry
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteMarkedLatticePeriodRepresentativesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteMarkedLatticePeriodRepresentatives
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BasePointAndExponentialHolomorphicInPeriods
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicMapLiftsLocallyToPeriodFamilies
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisationAtTransportIsometry
@@ -48,7 +48,7 @@ theorem unif_of_fineAt : ∀ (O : Type) [Ring O] (bar : O → O) (g : ℕ) (ρ :
     haveI := hsm
     haveI : Smooth F.s := SmoothOfRelativeDimension.smooth d F.s
     infer_instance
-  obtain ⟨n, Di, t, hmem, hall, hdist⟩ := GlobalTheory.T.exists_finite_markedLattice_period_representatives O bar g ρ Λ F N C d hN0 heta hsm hqc hF
+  obtain ⟨n, Di, t, hmem, hall, hdist⟩ := _root_.GlobalTheory.PELU.exists_finite_representatives O bar g ρ Λ F N C d hN0 heta hsm hqc hF
   have hQ : ∀ i (P : (Di i).La →+ (Fin g → ℂ)), ∃ Q, IsPeriod (Di i) ρ Q ∧ (IsPeriod (Di i) ρ P → Q = P) := by
     intro i P
     by_cases hP : IsPeriod (Di i) ρ P

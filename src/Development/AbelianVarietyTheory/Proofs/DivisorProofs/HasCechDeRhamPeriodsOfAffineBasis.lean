@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsRatioCover
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisationPreimageValueRules
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedOneFormEvaluationRulesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedOneFormEvaluationRules
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedOneFormEvaluationRestrictionEq
 
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry MonoidalCategory CartesianMonoidalCategory MonObj
@@ -14,7 +14,7 @@ theorem isPer_of_basis : ∀ (A : Over (Sp ℂ)) [GrpObj A] (g : ℕ) (L : LB A.
   intro A _ g L u c K W k q hcomp hbasis hdiff hder hper
   classical
   obtain ⟨hopen, hvd, hpp, hvp, -, hmono, -, -, hres, halg, -, -⟩ := _root_.GlobalTheory.CechPer.pre_val_rules A g L u
-  have hev := GlobalTheory.T.uniformisedOneFormEvaluation_rules A g L u
+  have hev := _root_.GlobalTheory.CechPer.evForm_rules A g L u
   have hevres := _root_.GlobalTheory.CechPer.uniformisedOneFormEvaluation_restriction_eq A g L u
   let f : ∀ (U V : A.left.affineOpens), V ≤ U → Sec (str A) V.1 := fun U V h ↦
     c.1.1 (Opposite.op U) (Opposite.op V) (homOfLE h).op

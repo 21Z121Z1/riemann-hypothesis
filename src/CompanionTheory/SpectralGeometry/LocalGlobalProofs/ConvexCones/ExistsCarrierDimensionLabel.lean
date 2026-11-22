@@ -3,7 +3,8 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsInvari
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsBaryStageStart
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NonnegSumSmulIntBilinFormToRealMemPsdCone
 import CompanionTheory.SpectralGeometry.CountingDefinitions.VoronoiMeans.VorFunEvalEqFineMean
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.CellFaceOfFaceCutStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.CellFaceOfFaceCut
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolyhedralPolarisationFaceCutIsCell
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.CellOfQuotientRadicalCone
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCellQuotientByRadicalOfMemCone
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PullLinInjective
@@ -36,7 +37,7 @@ theorem exists_isCarrierDim : ∀ (O : Type) [CommRing O] [IsDedekindDomain O] [
   refine ⟨carFun bar ψ, _root_.GlobalTheory.CompanionTheory.Ar.Fan.TwistedCarrierFunction.isTwG_carFun O bar w0 hb ψ htw, ?_⟩
   intro X _ _ _ _ hX β hβ hp
   have hfan := hψ X hX
-  have hface := GlobalTheory.T.cell_face_of_face_cut O bar hb ψ X hfan (hD X)
+  have hface := _root_.GlobalTheory.CompanionTheory.Ar.Fan.CellFaces.isCell_comp O bar hb ψ X hfan (hD X)
   rw [evalZ_carFun hβ hp]
   congr 1
   obtain ⟨m₀, γ₀, hγ₀, hin₀⟩ := exists_cell hfan hβ hp

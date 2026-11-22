@@ -4,8 +4,8 @@ import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ChainParSucc
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleDiscreteSeriesOfHasParam
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HasDRepIffHasDerivAt
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HermitianAdjointLawsStandardCharacterStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsConjWeilDatumExchangedPairStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HermitianAdjointLawsStandardCharacter
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsConjWeilDatumExchangedPair
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockVectorsConjAdjointPullbackBijection
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LowerTowerLiftsVanishOnFock
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LowerTowerLiftsVanishOfVanishOnFock
@@ -37,11 +37,11 @@ theorem liftUp_mult : GlobalTheory.Published.DiscreteSeriesCover → GlobalTheor
     GlobalTheory.T.pairThetaLift_factors_through_intertwiner D X hIn (_root_.GlobalTheory.PairLift.cuspAll_of_lowAll D X hIn (_root_.GlobalTheory.PairLift.lowAll_of_lowFock D X hIn (_root_.GlobalTheory.LowerMembersRule.lowFock D X hIn)))
   obtain ⟨χS, χT, hW, hexp⟩ := hω
   have hstd : IsStdChar D ψ (-1) := hW.std
-  have hadj : AdjLaw ψ V W := GlobalTheory.T.hermitianAdjoint_laws_standardCharacter D ψ hstd V W
+  have hadj : AdjLaw ψ V W := _root_.GlobalTheory.AdjLawPf.adjLaw D ψ hstd V W
   have h0 : adjO V W 0 = 0 := by
     have := hadj.add 0 0
     simpa using this
-  obtain ⟨ω', hW', hω'⟩ := GlobalTheory.T.exists_conj_weilDatum_exchangedPair D ψ V W χS χT ω hW
+  obtain ⟨ω', hW', hω'⟩ := _root_.GlobalTheory.WeilConj.exists_conj_weilDatum D ψ V W χS χT ω hW
   obtain ⟨j, -, hj⟩ := _root_.GlobalTheory.FockAdjoint.fock_dag D ψ θ hstd hθ V W (Fr.ofModel M) (Fr.ofModel M')
   obtain ⟨hvac', hpt⟩ := hj f (isVacF_of_isVacVec hf)
   have hω'e : IsWeilExp ψ W V (expT D k) (expS D k) ω' :=

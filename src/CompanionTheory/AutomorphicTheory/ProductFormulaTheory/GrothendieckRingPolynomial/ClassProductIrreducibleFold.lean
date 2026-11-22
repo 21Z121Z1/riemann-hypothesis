@@ -1,6 +1,9 @@
 import Mathlib
 import CompanionTheory.AutomorphicTheory.ProductFormulaTheory.GrothendieckRingPolynomial.ProdList
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductIrreducibleAppendEquivStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductIrreducibleAppendEquiv
+import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.PrincipalSeriesSupport.PrinSeriesWord
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasSupportOfIsSubquotientProdIrr
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ParabolicInductionPreservesSubquotient
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NonemptyEquivProdIrrZero
 
 noncomputable section
@@ -71,7 +74,7 @@ theorem prodIrr_append_one (hM : MulCls k) {h : ℕ} (x₀ : IrrGL k) (y : Fin h
     HasFiniteLength (prodIrr (Fin.append (fun _ : Fin 1 => x₀) y) happ) ∧
       cl0 (prodIrr (Fin.append (fun _ : Fin 1 => x₀) y) happ) = mulR (sg x₀) (cl0 (prodIrr y hy)) := by
   have hx1 : ∑ _ : Fin 1, x₀.1 = x₀.1 := by simp
-  obtain ⟨F⟩ := GlobalTheory.T.product_irreducible_append_equiv k 1 h x₀.1 (∑ a, (y a).1) (fun _ : Fin 1 => x₀) y hx1 hy happ
+  obtain ⟨F⟩ := _root_.GlobalTheory.CompanionTheory.ProdStage.prod₂_prodIrr_append k 1 h x₀.1 (∑ a, (y a).1) (fun _ : Fin 1 => x₀) y hx1 hy happ
   have H1 := prodIrr_one x₀ hx1
   have H3 := class_of_product_equiv hM (prodIrr (fun _ : Fin 1 => x₀) hx1) (prodIrr y hy) _ F H1.1 hfl
     (isSmooth_prodIrr _ _) (isSmooth_prodIrr _ _)

@@ -4,7 +4,7 @@ import Development.WeilBound.CoreStatements.SesquilinearFractions.LieNormSquareO
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsTransition
 import Development.WeilBound.CoreStatements.SesquilinearFractions.GGramComb
 import Development.WeilBound.CoreStatements.SesquilinearFractions.GGramPush
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DualBasisHermitianSumStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DualBasisHermitianSum
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieNormSqBaseChange
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -307,7 +307,7 @@ theorem hodgeGram_cmVec : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E]
   have m1 := mat_id e x (fun p p' => (r : ℂ) * kap X τ s (X.h b
     ((RingOfIntegers.basis E p.2 • a p.1 : PureType.lat hP (sgnRt H b)) : (FU.Di i).La)
     ((RingOfIntegers.basis E p'.2 • a p'.1 : PureType.lat hP (sgnRt H b)) : (FU.Di i).La))) A (fun _ _ => rfl) k k'
-  have m2 := T.dual_basis_hermitian_sum E H (FU.Di i) (X.ε b) (X.h b) (s.comp (X.β.comp (tauE c τ))) (kap X τ s) _ e0 (a k) (a k')
+  have m2 := _root_.GlobalTheory.CompanionTheory.Ar.Fl.KForm.sigma_component E H (FU.Di i) (X.ε b) (X.h b) (s.comp (X.β.comp (tauE c τ))) (kap X τ s) _ e0 (a k) (a k')
     (X.kform b) rfl
   dsimp only at m1
   have m3 : ∑ m, ∑ m', x m * kap X τ s (X.h b (RingOfIntegers.basis E m • (a k : (FU.Di i).La))

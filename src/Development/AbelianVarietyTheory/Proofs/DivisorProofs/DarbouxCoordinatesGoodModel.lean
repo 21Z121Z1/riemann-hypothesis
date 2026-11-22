@@ -17,8 +17,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VacFn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalDarbouxCoordinatesCompareStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardCharacterAlmostUnramified
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymplecticGroupGeneratedByElementaryStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilOperatorForLeviMatrixStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilOperatorForUnipotentMatrixStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilOperatorForLeviMatrix
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilOperatorForUnipotentMatrix
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilOperatorForWeylElementStatement
 
 open scoped TensorProduct NNReal Matrix
@@ -129,8 +129,8 @@ theorem GlobalTheory.SympChange.change_of_coordinates : ∀ (F E : Type) [Field 
   obtain ⟨hunr, hnt⟩ := _root_.GlobalTheory.PsiStdCond.psi_std_conductor F B.ψ hB.std
   have hgen : ∀ G ∈ gens (F := F) (κ := Fin n × Fin d), HasOp B.ψ G := by
     rintro G ((⟨A, hA, rfl⟩ | ⟨S, hS, rfl⟩) | hG)
-    · exact GlobalTheory.T.weil_operator_for_levi_matrix F B.ψ hB.std hunr hnt _ A hA
-    · exact GlobalTheory.T.weil_operator_for_unipotent_matrix F B.ψ hB.std hunr hnt _ S hS
+    · exact _root_.GlobalTheory.LeviOp.hasOp_levi F B.ψ hB.std hunr hnt _ A hA
+    · exact _root_.GlobalTheory.SympUnip.hasOp_unipM F B.ψ hB.std hunr hnt _ S hS
     · rw [Set.mem_singleton_iff.mp hG]; exact GlobalTheory.T.weil_operator_for_weyl_element F B.ψ hB.std hunr hnt _
   obtain ⟨e, ei, ev, hsurj, hmaps, hheis, hSB, hinj, hloc, hind, hpure⟩ :=
     hasOp_of_mem_closure hgen G (GlobalTheory.T.symplectic_group_generated_by_elementary F _ G hGs)

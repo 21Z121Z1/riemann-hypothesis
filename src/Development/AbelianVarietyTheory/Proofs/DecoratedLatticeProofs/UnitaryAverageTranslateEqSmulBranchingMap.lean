@@ -2,7 +2,7 @@ import Development.AbelianVarietyTheory.Definitions.LatticeFrames.EvalAtOneExtre
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SplitPart
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TopFormula
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.BrEqv
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BranchingMultiplicityOneUnitaryFamiliesStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BranchingMultiplicityOneUnitaryFamilies
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FrameValuesPolynomialDetStableHomogeneous
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.StabOrd
@@ -222,7 +222,7 @@ theorem avg_eq_mul_branch : ∀ (ι : Type) [Fintype ι] (N n : ℕ) (hN : N = n
     simp_rw [p1]
     rw [MeasureTheory.integral_mul_left_eq_self (fun k => Ψ (yk k) * Jk (k1⁻¹ * k) z) k1]
     simp_rw [p2]
-  obtain ⟨c, hc⟩ := GlobalTheory.T.branching_multiplicityOne_unitary_families ι (n + 1) n rfl G G' lam sg hI T₀ hT₀ hne T hT
+  obtain ⟨c, hc⟩ := _root_.GlobalTheory.BranchFamily.mult_one_families ι (n + 1) n rfl G G' lam sg hI T₀ hT₀ hne T hT
   refine ⟨c, fun Ψ hΨ ℓ => ?_⟩
   have := key Ψ hΨ ℓ
   rw [hc Ψ hΨ, map_smul, smul_eq_mul] at this

@@ -15,7 +15,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DefiniteSpaceF
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodProjectorConvMirabolicAvgEqZeroStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CentralIdempotentMulMirabolicDetAverageEqZero
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TraceMirabolicDetCharacterAverageVectorIndep
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TraceMirabolicDetAverageEqHarishChandraRestrictiStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TraceMirabolicDetAverageEqHarishChandraRestricti
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIrrHarishChandraInductionThetaInvDet
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DetCharacterLabelRootOfHarishChandraConstituent
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdjFormula
@@ -110,12 +110,12 @@ theorem seriesKillsAvg : SeriesKillsAvg := by
   have hinv := charLab_inv hc
   cases b
   · simp only [Bool.false_eq_true, if_false]
-    rw [(GlobalTheory.T.trace_mirabolicDetAverage_eq_harishChandraRestriction g n ψ θ).1]
+    rw [(_root_.GlobalTheory.ResTr.trace_mir g n ψ θ).1]
     by_contra hne
     obtain ⟨σ, hσ, hip⟩ := (_root_.GlobalTheory.GLq.HCFrobWeight.exists_irr_hc_thetaInv g n ψ hirr θ).1 (right_ne_zero_of_mul hne)
     exact hf' ((_root_.GlobalTheory.GLq.DetRoot.root_of_hc_det g L n ψ f hirr hlab σ hσ θ⁻¹ c⁻¹ hinv).1 hip)
   · simp only [if_true]
-    rw [(GlobalTheory.T.trace_mirabolicDetAverage_eq_harishChandraRestriction g n ψ θ).2]
+    rw [(_root_.GlobalTheory.ResTr.trace_mir g n ψ θ).2]
     by_contra hne
     obtain ⟨σ, hσ, hip⟩ := (_root_.GlobalTheory.GLq.HCFrobWeight.exists_irr_hc_thetaInv g n ψ hirr θ).2 (right_ne_zero_of_mul hne)
     exact hf' ((_root_.GlobalTheory.GLq.DetRoot.root_of_hc_det g L n ψ f hirr hlab σ hσ θ⁻¹ c⁻¹ hinv).2 hip)

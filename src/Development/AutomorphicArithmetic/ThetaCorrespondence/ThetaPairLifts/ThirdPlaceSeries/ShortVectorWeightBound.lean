@@ -67,7 +67,7 @@ theorem short_vector_weight_bound_alt : _root_.GlobalTheory.CovTop.PublishedHodg
   have s1 : 1 ≤ (Fm.L x ι).sc.b := (b₄ i).1
   have s2 : (Fm.L x ι).sc.b ≤ (Fm.parT x hx ι).PP * kap p i := (b₄ i).2.2.2.2.2.1
   have hFl := b₅ i hi Y hY
-  have hdim := (GlobalTheory.T.anchoredWeight_indefiniteLift_gaps p (Fm.params x hx ι) i hi).2.1
+  have hdim := (_root_.GlobalTheory.RecGaps.gaps p (Fm.params x hx ι) i hi).2.1
   clear b₁ b₂ b₃ b₄ b₅
   unfold zBase at hPP hwt
   have hY' : Y.Good _ (391 * (((Fm.D x ι).R.f : ℝ) * (Fm.D x ι).R.r * (Fm.L x ι).sc.L) ^ 2) := hY.1

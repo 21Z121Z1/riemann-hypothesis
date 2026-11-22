@@ -25,7 +25,7 @@ theorem continuation_through_chart : ContinuationThroughChart := by
   have hIw := GlobalTheory.Core.Rk.IP.hasIwasawa_Khat D A a ha
   have hmem := GlobalTheory.SwSecMem.swSec_mem_degPS GlobalTheory.weilRepresentationUnitaryPair D ψ A B χ omh hW ν 𝓨 hν f hf a hK
   have hχ := _root_.GlobalTheory.StdUnn.isHeckeChar_resEta_inv D χ B.rank hW.hecT hW.resT
-  have hP' := GlobalTheory.T.mem_doublingSiegelParabolic_iff_chart_mem_siegelUnn D A μ hμ κ hκ
+  have hP' := _root_.GlobalTheory.StdUnn.mem_siegel_iff_chart_mem_P D A μ hμ κ hκ
   have hG' := _root_.GlobalTheory.StdUnn.chart_mem_GF_iff D A μ hμ κ hκ
   obtain ⟨hκc, hκc'⟩ := _root_.GlobalTheory.StdUnn.chart_continuous D A μ hμ κ hκ
   have hr : 0 < absA D (aP A p) := hom_pos _ _
@@ -77,7 +77,7 @@ theorem continuation_chart_defined : KillingPolyConst := by
   have h1 : Continuous (hgt A a) := hIw.continuous_hgtH continuous_absE (isCompact_Khat A a)
   refine ⟨⟨(h1.comp (hκc'.mul continuous_const)).mul continuous_const, fun g => mul_pos (hgtH_pos _) (hom_pos _ _),
     fun q hq α hα g => ?_⟩, ?_⟩
-  · have hq' : κ.symm q ∈ siegel A := (GlobalTheory.T.mem_doublingSiegelParabolic_iff_chart_mem_siegelUnn D A μ hμ κ hκ (κ.symm q)).2 (by simpa using hq)
+  · have hq' : κ.symm q ∈ siegel A := (_root_.GlobalTheory.StdUnn.mem_siegel_iff_chart_mem_P D A μ hμ κ hκ (κ.symm q)).2 (by simpa using hq)
     have hdet : aP A ⟨κ.symm q, hq'⟩ = Matrix.GeneralLinearGroup.det α :=
       _root_.GlobalTheory.StdUnn.chart_aP_eq_det D A μ hμ κ hκ ⟨κ.symm q, hq'⟩ α (by simpa using hα)
     have e : hgt A a (κ.symm q * (κ.symm g * (p : GA D (dblSp A))⁻¹)) =

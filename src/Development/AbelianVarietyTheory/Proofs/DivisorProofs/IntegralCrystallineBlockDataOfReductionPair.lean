@@ -4,11 +4,11 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemMaximalId
 import Formalism.LocalRingCardinality.SpanPowerMembership.NDLocE
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCommonFiniteExtensionGaloisRepsCharacters
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasBlockOfOccurs
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsConjIntegralGaloisRepStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsConjIntegralGaloisRep
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankDdREqOfEquiv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormGaloisCharacterPadicAlgClosureEqOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftIntSpec
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsStableCharacterFlagOfCharpolyFactorStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsStableCharacterFlagOfCharpolyFactor
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralFlagLiftOfResidue
 
 set_option autoImplicit false
@@ -23,8 +23,8 @@ theorem integralBlock_of_blockPair : ∀ (E Ω : Type) [Field E] [NumberField E]
   intro E Ω _ _ _ _ _ l _ n t J bot hB
   obtain ⟨r, a, ρ, χ, hat, hr, hρ, hχ, hcong⟩ := hB
   obtain ⟨LL, hζ, hτ, hrL, hρL, hχL⟩ := _root_.GlobalTheory.RepFinExtJoint.finext_joint E Ω l n a t r ρ χ hr.1 hρ (fun s => (hχ s).1)
-  obtain ⟨A, hA1, hA2, hAr⟩ := GlobalTheory.T.exists_conj_integral_galoisRep E Ω l n LL r hr.1 hrL
-  obtain ⟨B, hB1, hB2, hBρ⟩ := GlobalTheory.T.exists_conj_integral_galoisRep E Ω l a LL ρ hρ hρL
+  obtain ⟨A, hA1, hA2, hAr⟩ := _root_.GlobalTheory.GalIntegral.exists_conj_integral E Ω l n LL r hr.1 hrL
+  obtain ⟨B, hB1, hB2, hBρ⟩ := _root_.GlobalTheory.GalIntegral.exists_conj_integral E Ω l a LL ρ hρ hρL
   have memLL : ∀ {m : ℕ} (X Y Z : Matrix (Fin m) (Fin m) (PadicAlgCl l)), (∀ i j, X i j ∈ LL.1) →
       (∀ i j, Y i j ∈ LL.1) → (∀ i j, Z i j ∈ LL.1) → ∀ i j, (X * Y * Z) i j ∈ LL.1 := by
     intro m X Y Z hX hY hZ i j
@@ -77,7 +77,7 @@ theorem integralBlock_of_blockPair : ∀ (E Ω : Type) [Field E] [NumberField E]
     have h := hcong g m
     rw [← e] at h
     exact h
-  obtain ⟨R, M, rs, hM0, hML, hMm, hMs, hrs, hline⟩ := GlobalTheory.integral_flag_lift_of_residue ↥(OL LL) (G E Ω) n a t r' ρ' ψ ϖ hϖ hat hc GlobalTheory.T.exists_stable_character_flag_of_charpoly_factor
+  obtain ⟨R, M, rs, hM0, hML, hMm, hMs, hrs, hline⟩ := GlobalTheory.integral_flag_lift_of_residue ↥(OL LL) (G E Ω) n a t r' ρ' ψ ϖ hϖ hat hc _root_.GlobalTheory.CharFlag.main
   refine ⟨LL, r', ψ, ϖ, R, M, rs, hζ, hτ, ?_, fun s => ?_, hϖ, hM0, hML, hMm, hMs, hrs, hline⟩
   · have : (Matrix.GeneralLinearGroup.map (GlobalTheory.WachBlock.ofOL l LL)).comp r' = (MulAut.conj A⁻¹).toMonoidHom.comp r := hr'
     rw [this]

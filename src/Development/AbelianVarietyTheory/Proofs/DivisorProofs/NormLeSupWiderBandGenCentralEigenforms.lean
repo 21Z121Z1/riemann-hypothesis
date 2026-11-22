@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemExpSolCons
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExponentialPolynomialSolutionSpaceFiniteDimensioStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExponentialPolynomialEqZeroOfEqOnIoo
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimContinuousNormLeOnIccOfDetermined
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicAbsDetMulArchimedeanExpScalarCurveStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicAbsDetMulArchimedeanExpScalarCurve
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarishChandraFiniteFormsGLSpanKilledScalarDeriva
 
 noncomputable section
@@ -85,15 +85,15 @@ theorem norm_le_of_band_wide : ∀ (E : Type) [Field E] [NumberField E] [IsTotal
   set τ : ℝ := Real.log (absDetA g) / κ
   set g1 := g * expCurve E a (-τ)
   have hdet1 : absDetA g1 = 1 := by
-    rw [GlobalTheory.T.adelicAbsDet_mul_archimedeanExpScalarCurve, ← hκ, show -τ * κ = -Real.log (absDetA g) by simp only [τ]; field_simp, Real.exp_neg,
+    rw [_root_.GlobalTheory.HCF.absDetA_mul_expCurve, ← hκ, show -τ * κ = -Real.log (absDetA g) by simp only [τ]; field_simp, Real.exp_neg,
       Real.exp_log hgpos, mul_inv_cancel₀ hgpos.ne']
   have hf := mem_expSol_of_prod Λ φ (hΛ φ hφ) g1
   have hband : ∀ x ∈ Set.Icc 0 ℓ, ‖φ.1 (g1 * expCurve E a x)‖ ≤ M := by
     intro x hx
     refine hM _ ⟨?_, ?_⟩
-    · rw [GlobalTheory.T.adelicAbsDet_mul_archimedeanExpScalarCurve, hdet1, one_mul, ← hκ]
+    · rw [_root_.GlobalTheory.HCF.absDetA_mul_expCurve, hdet1, one_mul, ← hκ]
       exact Real.one_le_exp (mul_nonneg hx.1 hκ0.le)
-    · rw [GlobalTheory.T.adelicAbsDet_mul_archimedeanExpScalarCurve, hdet1, one_mul, ← hκ]
+    · rw [_root_.GlobalTheory.HCF.absDetA_mul_expCurve, hdet1, one_mul, ← hκ]
       have : x * κ ≤ Real.log 2 := by
         have := hx.2; simp only [ℓ] at this; rwa [le_div_iff₀ hκ0] at this
       calc Real.exp (x * κ) ≤ Real.exp (Real.log 2) := Real.exp_le_exp.2 this

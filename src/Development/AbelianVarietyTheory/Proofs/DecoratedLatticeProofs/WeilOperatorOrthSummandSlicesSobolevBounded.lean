@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.EqZeroOfLinte
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsInverseChart
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsTopologicalRingAE
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaKernelModerateGrowthWithSeminorms
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaFunctionProductsSlicesOrthogonalDecompositiStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaFunctionProductsSlicesOrthogonalDecompositi
 
 noncomputable section
 
@@ -193,7 +193,7 @@ theorem isSobForm_slice {ψ : AddChar (AF D.host.F) ℂ} {θ : InfFam D} (hθ : 
     obtain ⟨K, hKs⟩ := sobO_slice_le (T := T) hψ hθ o d
     refine ⟨d, C * (ENNReal.ofReal ((height A p.1 * height T p.2) ^ e)).toNNReal * K, fun f hf => ?_⟩
     have hsl : slA o f ∈ thetaLevel ψ A T U' := by
-      refine ⟨((GlobalTheory.T.thetaFunction_products_slices_orthogonalDecomposition D ψ hψ S A B T o).2.2.2 f hf.1).1 0, fun u hu h0 => ?_⟩
+      refine ⟨((_root_.GlobalTheory.BoxSlice.main D ψ hψ S A B T o).2.2.2 f hf.1).1 0, fun u hu h0 => ?_⟩
       rw [heisO_slice, ← extA_apply, hf.2 _ hu]
       rw [extA_apply, symm_left, Matrix.map_mul, h0, Matrix.zero_mul]
     have h := hC χ χ' om hom μ 𝓕 hμ (slA o f) hsl p.1 p.2

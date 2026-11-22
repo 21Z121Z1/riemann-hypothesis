@@ -1,11 +1,11 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.HighestVectorsRegularLine
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WtRInjective
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryEuclideanModelStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsCompactLieActionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryEuclideanModel
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsCompactLieAction
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HighestWeightTensorDecomposition
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsCliff
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivativeUnitaryActionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivativeUnitaryAction
 
 noncomputable section
 
@@ -230,8 +230,8 @@ theorem exists_inv_multi : ∀ {n : ℕ} (V : Type) [NormedAddCommGroup V] [Inne
     ∀ (M : Finset (Fin n → ℤ)) (f : ∀ μ : Fin n → ℤ, hwOf G (wtR μ) →ₗ[ℂ] hwSp E1 E2 (wtR μ)),
       ∃ t ∈ invA σ E, ∀ μ ∈ M, ∀ ξ : hwOf G (wtR μ), t ξ = f μ ξ := by
   intro n V _ _ E1 E2 σ hp hσ E G hG M f
-  obtain ⟨e, ρ', hc, hi, he⟩ := GlobalTheory.T.unitary_euclidean_model E
-  obtain ⟨G', hG', hGa, hGd⟩ := GlobalTheory.T.exists_compact_lie_action _ ρ' hc hi
+  obtain ⟨e, ρ', hc, hi, he⟩ := _root_.GlobalTheory.CompanionTheory.RealCount.dualRep_exists E
+  obtain ⟨G', hG', hGa, hGd⟩ := _root_.GlobalTheory.CompanionTheory.RealCount.DerivRep.derivative_of_rep _ ρ' hc hi
   have hK : Formalism.REAL.GlRel (kF E1 E2) := by
     intro a b c d
     have h1 := hp.gl1 a b c d
@@ -257,7 +257,7 @@ theorem exists_inv_multi : ∀ {n : ℕ} (V : Type) [NormedAddCommGroup V] [Inne
     (fun μ => (hwOf G (wtR μ)).map e.toLinearMap) hHigh
     (fun μ => ((hwSp E1 E2 (wtR μ)).subtype.comp (f μ)).comp (eS μ).symm.toLinearMap)
     (fun μ x => (f μ ((eS μ).symm x)).2)
-  have hint := GlobalTheory.T.derivative_unitary_action _ V ρ' G' hGd σ (kF E1 E2) hσ hp.unitK T hT2
+  have hint := _root_.GlobalTheory.CompanionTheory.RealCount.IntegrateK.intertwines_unitary _ V ρ' G' hGd σ (kF E1 E2) hσ hp.unitK T hT2
   refine ⟨T.comp e.toLinearMap, ?_, ?_⟩
   · intro k ξ
     simp only [LinearMap.comp_apply, LinearEquiv.coe_coe]

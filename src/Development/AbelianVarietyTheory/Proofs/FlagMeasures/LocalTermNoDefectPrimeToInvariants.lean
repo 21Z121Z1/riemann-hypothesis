@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GlobSet
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FrameStandardLatticeHermitianIntegralStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FrameStandardLatticeHermitianIntegral
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsFamilyUnitriangularChangeOfMemFrameUnipotentStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PairingLeadingMinorEqOfUnitriangularChangesStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GramDetJoinedFamilyEqPmNormDifferenceStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GramDetJoinedFamilyEqPmNormDifference
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SaturatedSpanOfGramDetIsUnitIntegralLattice
 
 noncomputable section
@@ -73,7 +73,7 @@ theorem noDefect_gen (H : HermSp M V) {r : ℕ} (P : FPair H r) (hR : P.RelG (th
     obtain ⟨y0, hy0, rfl⟩ := Submodule.mem_map.mp hy
     simp only [LinearMap.restrictScalars_apply, LinearEquiv.coe_coe]
     rw [hu]
-    exact GlobalTheory.T.frameStandardLattice_hermitian_integral H P.A d.L d.hL x0 hx0 y0 hy0
+    exact _root_.GlobalTheory.LocStdInt.lamStd_integral H P.A d.L d.hL x0 hx0 y0 hy0
   have hmem : ∀ i, Sum.elim t.f t.f' i ∈ t.abelian₂ := by
     rintro (b | b)
     · simp only [Sum.elim_inl, hf]
@@ -99,7 +99,7 @@ theorem noDefect_gen (H : HermSp M V) {r : ℕ} (P : FPair H r) (hR : P.RelG (th
     · rw [hab.1, hab.2]; exact Fr.h_zz
     · apply Fr.h_iso
       tauto
-  have hdet := GlobalTheory.T.gramDet_joinedFamily_eq_pm_norm_difference H t.f t.f' t.T t.T'
+  have hdet := _root_.GlobalTheory.GramDet.det_gram_sum_elim H t.f t.f' t.T t.T'
     (by intro a b; rw [hf, hT]; exact hfr P.A n hu a b)
     (by intro a b; rw [hf', hT']; exact hfr P.B n' hu' a b)
     (by rw [hDl]; exact hR.2.1)

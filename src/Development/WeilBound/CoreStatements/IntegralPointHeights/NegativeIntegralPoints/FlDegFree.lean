@@ -33,10 +33,10 @@ import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.GenericFibreLin
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.FieldIntersectionLinearDegreeOne
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.FlagChainUnitLogIntegral
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.SymmetricFormPolynomialCoeffStatement
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.WeightMapInjectiveStatement
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.WeightGapDeltaEqAntisymmetricStatement
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RhoCoeffGapDeltaOneStatement
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RhoFactorialProductEqStatement
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.WeightMapInjective
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.WeightGapDeltaEqAntisymmetric
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RhoCoeffGapDeltaOne
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RhoFactorialProductEq
 
 noncomputable section
 
@@ -74,17 +74,17 @@ theorem coeff_formPoly_sym {σ : Type} [Fintype σ] [DecidableEq σ] (n : ℕ) (
   GlobalTheory.T.symmetric_form_polynomial_coeff σ n a hsym w₀ m hm
 
 theorem toWt_injective (Ψ : Type) (N : ℕ) :
-    Function.Injective (PB.toWt : MvPolynomial (Ψ × Fin N) ℝ →ₐ[ℝ] MvPolynomial (Ψ × Fin N) ℝ) := GlobalTheory.T.weight_map_injective Ψ N
+    Function.Injective (PB.toWt : MvPolynomial (Ψ × Fin N) ℝ →ₐ[ℝ] MvPolynomial (Ψ × Fin N) ℝ) := _root_.GlobalTheory.CompanionTheory.Ar.Top.FlDeg.toWt_leftInverse_injective Ψ N
 
 theorem toWt_gapDelta (Ψ : Type) [Fintype Ψ] [DecidableEq Ψ] (N : ℕ) :
-    PB.toWt (gapDelta Ψ N) = GroundTheory.Heights₂.Heights.antisymDelta Ψ N := GlobalTheory.T.weight_gap_delta_eq_antisymmetric Ψ N
+    PB.toWt (gapDelta Ψ N) = GroundTheory.Heights₂.Heights.antisymDelta Ψ N := _root_.GlobalTheory.CompanionTheory.Ar.Top.FlDeg.toWt_gapDelta_eq_antisymDelta Ψ N
 
 theorem coeff_gapDelta (Ψ : Type) [Fintype Ψ] [DecidableEq Ψ] (N : ℕ) : coeff (rhoM Ψ N) (gapDelta Ψ N) = 1 :=
-  GlobalTheory.T.rho_coeff_gap_delta_one Ψ N
+  _root_.GlobalTheory.CompanionTheory.Ar.Top.FlDeg.coeff_rhoM_gapDelta Ψ N
 
 theorem prod_rhoM (Ψ : Type) [Fintype Ψ] [DecidableEq Ψ] (N : ℕ) :
     ∏ p, (((rhoM Ψ N) p).factorial : ℝ) =
-      ∏ _τ : Ψ, ∏ i : Fin N, ∏ k : Fin N, (if i < k then ((k : ℝ) - (i : ℝ)) else 1) := GlobalTheory.T.rho_factorial_product_eq Ψ N
+      ∏ _τ : Ψ, ∏ i : Fin N, ∏ k : Fin N, (if i < k then ((k : ℝ) - (i : ℝ)) else 1) := _root_.GlobalTheory.CompanionTheory.Ar.Top.FlDeg.prod_rhoM_factorial Ψ N
 
 theorem fsHerm_smooth {K : Type} [Fintype K] (ι : K → Type) [∀ k, Fintype (ι k)] (a : K → ℤ) :
     IsSmoothHerm (fsHerm ι a) := by

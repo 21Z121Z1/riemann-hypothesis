@@ -7,14 +7,14 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParthasarathyRa
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HighestWeightAntitoneOfFiniteDimensionalStable
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RangeStable
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsDualLieFamily
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InvariantIntertwinesDualStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteWeightsInvariantHomStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsInvariantExtendingStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InvariantIntertwinesDual
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteWeightsInvariantHom
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsInvariantExtending
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualWeightsDominated
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HarmonicOfNormBoundStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TraceFactorTensorDecomp
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualOperatorCommutesLieStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualWeightTraceFormulaStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualOperatorCommutesLie
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualWeightTraceFormula
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HarmonicWeightsCoefficient
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedTraceWeylCharacterStatement
 
@@ -80,7 +80,7 @@ theorem dual_stable' {n : ℕ} (E : KMod n) (T : E.V →L[ℂ] E.V) (hT : ∀ k,
     (G : Fin n → Fin n → Module.End ℂ (E.V →L[ℂ] ℂ)) (hG : IsDualFam E G) (μ : Fin n → ℝ) :
     ∀ ξ ∈ hwOf G μ, (dualT E T : (E.V →L[ℂ] ℂ) →ₗ[ℂ] (E.V →L[ℂ] ℂ)) ξ ∈ hwOf G μ := by
   intro ξ hξ
-  have hc := GlobalTheory.T.dual_operator_commutes_lie E T hT G hG
+  have hc := _root_.GlobalTheory.CompanionTheory.RealCountG.DualComm.dualT_G E T hT G hG
   refine ⟨fun a => ?_, fun a b hab he => ?_⟩
   · show G a a (dualT E T ξ) = _
     rw [← hc, hξ.1 a, map_smul]
@@ -101,7 +101,7 @@ theorem diagonal_mem_unitary {n : ℕ} (z : Fin n → ℂ) (hz : ∀ a, ‖z a�
 theorem dualtr {n : ℕ} (lam : Fin n → ℤ) (hl : Antitone lam) (E : KMod n) (T : E.V →L[ℂ] E.V) (hT : IsLefK lam E T)
     (G : Fin n → Fin n → Module.End ℂ (E.V →L[ℂ] ℂ)) (hG : IsDualFam E G) :
     ∀ μ ∈ harmZ lam, trOn (hwOf G (wtR μ)) (dualT E T : (E.V →L[ℂ] ℂ) →ₗ[ℂ] (E.V →L[ℂ] ℂ)) = 2 ^ n := by
-  obtain ⟨F, hF, -, hch⟩ := GlobalTheory.T.dual_weight_trace_formula E T hT.1 G hG
+  obtain ⟨F, hF, -, hch⟩ := _root_.GlobalTheory.CompanionTheory.RealCountG.CharDec.main E T hT.1 G hG
   intro μ hμ
   refine (_root_.GlobalTheory.CompanionTheory.CoefId.coef_harm lam hl F hF (fun ν => trOn (hwOf G (wtR ν)) (dualT E T : (E.V →L[ℂ] ℂ) →ₗ[ℂ] (E.V →L[ℂ] ℂ)))
     (fun z hz hinj => ?_) μ hμ).2
@@ -114,15 +114,15 @@ theorem countG : CountG := by
   intro n lam hlam E T hT V _ _ E1 E2 σ A hc hfin
   obtain ⟨hsp, htop⟩ := _root_.GlobalTheory.CompanionTheory.RealCountG.TopeG.topeG lam hlam E T hT
   obtain ⟨G, hG⟩ := _root_.GlobalTheory.CompanionTheory.RealCountG.dualFam_exists E
-  have hint := GlobalTheory.T.invariant_intertwines_dual V σ (kF E1 E2) hc.der E G hG
+  have hint := _root_.GlobalTheory.CompanionTheory.RealCountG.Intertw.intertwines V σ (kF E1 E2) hc.der E G hG
   have hmaps : ∀ t ∈ invA σ E, ∀ (μ : Fin n → ℝ), ∀ ξ ∈ hwOf G μ, t ξ ∈ hwSp E1 E2 μ := by
     intro t ht μ ξ hξ
     refine ⟨fun a => ?_, fun a b hab he => ?_⟩
     · rw [← hint t ht, hξ.1 a, map_smul]
     · rw [← hint t ht, hξ.2 a b hab he, map_zero]
-  have hinj := GlobalTheory.T.finite_weights_invariant_hom V E1 E2 σ hc.pair hc.der E G hG hsp (harmZ lam)
+  have hinj := _root_.GlobalTheory.CompanionTheory.RealCountG.InjG.eq_zero_of_hw V E1 E2 σ hc.pair hc.der E G hG hsp (harmZ lam)
     (fun ν v hv hh hw => hw_harm lam hlam V E1 E2 σ A hc ν v hv hh (htop ν hw))
-  have hext := GlobalTheory.T.exists_invariant_extending V E1 E2 σ hc.pair hc.der E G hG (harmZ lam)
+  have hext := _root_.GlobalTheory.CompanionTheory.RealCountG.ExtMulti.exists_inv_multi V E1 E2 σ hc.pair hc.der E G hG (harmZ lam)
   have hA : ∀ μ, ∀ x ∈ hwSp E1 E2 μ, A x ∈ hwSp E1 E2 μ := hw_stable' hc.Asq hc.AE
   have hF : ∀ t ∈ invA σ E, flipA E A T t ∈ invA σ E := flip_stable' hc.Aσ E T hT.1
   have hB := dual_stable' E T hT.1 G hG

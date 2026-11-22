@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RigExtMapRelFrobCompRigOfOmega
 import Development.AbelianVarietyTheory.Definitions.Divisors.WittOnFalse
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPerfectIdempotentStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPerfectIdempotent
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivGroupIdempotentSplitFieldStatement
 
 set_option autoImplicit false
@@ -17,7 +17,7 @@ theorem exists_isConn_isEt_splitting :
       ∃ (G₀ G₁ : PDivGroup p k) (i₀ : G₀ ⟶ G) (q₀ : G ⟶ G₀) (i₁ : G₁ ⟶ G) (q₁ : G ⟶ G₁),
         G₀.IsConn ∧ G₁.IsEt ∧ i₀ ≫ q₀ = 𝟙 G₀ ∧ i₁ ≫ q₁ = 𝟙 G₁ ∧ q₀ ≫ i₀ + q₁ ≫ i₁ = 𝟙 G := by
   intro p _ k _ _ _ G
-  obtain ⟨e, he, hnil, hred⟩ := GlobalTheory.T.exists_idempotent_nilpotent_complement_of_perfect p k G
+  obtain ⟨e, he, hnil, hred⟩ := _root_.GlobalTheory.PDivGroup.exists_perfect_idempotent p k G
   have h1 : e + (𝟙 G - e) = 𝟙 G := add_sub_cancel _ _
   have h1' : (𝟙 G - e) + e = 𝟙 G := sub_add_cancel _ _
   have h2 : e ≫ (𝟙 G - e) = 0 := by rw [Preadditive.comp_sub, Category.comp_id, he, sub_self]

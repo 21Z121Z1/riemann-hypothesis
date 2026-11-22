@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightDegreeLeOfHom
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockHarmonicHomogeneousOfKType
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FischerDecompositionFockNoncompactParts
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockHarmonicsGradedCompactStable
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GlBlockFiniteDimModuleStructureStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GlBlockFiniteDimModuleStructure
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockOperatorsLieRepresentationCommute
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OmEFormAndDegree
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockPolynomialsLocallyFiniteRationalWeights
@@ -80,13 +80,13 @@ include ha hwt
 theorem exists_hw_notMem {W N : Submodule ℂ V} (hW : FiniteDimensional ℂ W) (sW : KStable a W)
     (sN : KStable a N) (h : ¬ W ≤ N) : ∃ ν u, u ∈ W ∧ IsHW a ν u ∧ u ∉ N := by
   obtain ⟨U, sU, h1, h2⟩ :=
-    (GlobalTheory.T.glBlock_finiteDim_module_structure p q V a ha W hW sW fun v _ => hwt v).1 (W ⊓ N) inf_le_left (kStable_inf sW sN)
+    (_root_.GlobalTheory.BlockReps.finite_module_structure p q V a ha W hW sW fun v _ => hwt v).1 (W ⊓ N) inf_le_left (kStable_inf sW sN)
   have hle : U ≤ W := h2 ▸ le_sup_right
   have hne : U ≠ ⊥ := by
     rintro rfl
     rw [sup_bot_eq] at h2
     exact h (h2 ▸ inf_le_right)
-  obtain ⟨ν, u, hu, hhw⟩ := (GlobalTheory.T.glBlock_finiteDim_module_structure p q V a ha U (Submodule.finiteDimensional_of_le hle) sU
+  obtain ⟨ν, u, hu, hhw⟩ := (_root_.GlobalTheory.BlockReps.finite_module_structure p q V a ha U (Submodule.finiteDimensional_of_le hle) sU
     fun v _ => hwt v).2.1 hne
   refine ⟨ν, u, hle hu, hhw, fun hN => hhw.1 ?_⟩
   have : u ∈ W ⊓ N ⊓ U := ⟨⟨hle hu, hN⟩, hu⟩
@@ -97,7 +97,7 @@ theorem hw_lift {b : Mat p q →ₗ[ℂ] Module.End ℂ V'}
     {W : Submodule ℂ V} (hW : FiniteDimensional ℂ W) (sW : KStable a W) {w : V} (hw : w ∈ W)
     (h : g w ∈ hwSub b μ) : ∃ u ∈ W, u ∈ hwSub a μ ∧ g u = g w := by
   obtain ⟨U, sU, h1, h2⟩ :=
-    (GlobalTheory.T.glBlock_finiteDim_module_structure p q V a ha W hW sW fun v _ => hwt v).1 (W ⊓ LinearMap.ker g) inf_le_left
+    (_root_.GlobalTheory.BlockReps.finite_module_structure p q V a ha W hW sW fun v _ => hwt v).1 (W ⊓ LinearMap.ker g) inf_le_left
       (kStable_inf sW (kStable_ker g hg))
   have hle : U ≤ W := h2 ▸ le_sup_right
   rw [← h2] at hw
@@ -111,7 +111,7 @@ theorem hw_sup {μ : Ix p q → ℚ} {U W : Submodule ℂ V} (hW : FiniteDimensi
     (sU : KStable a U) (sW : KStable a W) {v : V} (hv : v ∈ U ⊔ W) (h : v ∈ hwSub a μ) :
     ∃ y ∈ U, ∃ z ∈ W, y ∈ hwSub a μ ∧ z ∈ hwSub a μ ∧ y + z = v := by
   obtain ⟨U', sU', h1, h2⟩ :=
-    (GlobalTheory.T.glBlock_finiteDim_module_structure p q V a ha W hW sW fun v _ => hwt v).1 (W ⊓ U) inf_le_left (kStable_inf sW sU)
+    (_root_.GlobalTheory.BlockReps.finite_module_structure p q V a ha W hW sW fun v _ => hwt v).1 (W ⊓ U) inf_le_left (kStable_inf sW sU)
   have hle : U' ≤ W := h2 ▸ le_sup_right
   obtain ⟨y, hy, z, hz, rfl⟩ := Submodule.mem_sup.1 hv
   obtain ⟨z0, hz0, rfl⟩ : ∃ z0 ∈ W ⊓ U ⊔ U', z0 = z := ⟨z, by rw [h2]; exact hz, rfl⟩
@@ -285,7 +285,7 @@ theorem ofType_of_hw {μ : Ix p q → ℚ} {P : Pol p q r s} (h : P ∈ hwSub (f
       fun ν w hw h => absurd ((Submodule.mem_bot ℂ).1 hw) h.1⟩
     rw [Submodule.mem_bot] at hw ⊢; rw [hw, map_zero]
   · obtain ⟨W, fW, hP, sW⟩ := ((GlobalTheory.FockPolGK.pol_locFin_weights p q r s).1 P).1
-    exact ((GlobalTheory.T.glBlock_finiteDim_module_structure p q _ _ kLie1 W fW sW fun v _ => wts1 v).2.2.2 μ P hP ⟨h0, h⟩).2.1
+    exact ((_root_.GlobalTheory.BlockReps.finite_module_structure p q _ _ kLie1 W fW sW fun v _ => wts1 v).2.2.2 μ P hP ⟨h0, h⟩).2.1
 
 theorem exists_contr (hI : Intw M1 M2 f) {P : Pol p q r s} (hP : f P ≠ 0) :
     ∃ g : Pol p q r s →ₗ[ℂ] M1.V, (∀ Z v, g (fockAct1 p q r s Z v) = M1.act Z (g v)) ∧

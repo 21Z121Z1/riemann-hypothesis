@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulIncl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymmetricTwoCocycleFiniteCommGroupSchemeCobounda
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GrpPullbackId
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TripleFiberProductOverMulTwoIsPullbackStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TripleFiberProductOverMulTwoIsPullback
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBaseGlobalUnitAbelianSchemeBaseChange
 
 set_option autoImplicit false
@@ -172,7 +172,7 @@ theorem GlobalTheory.TwoTors.killsSq_of_triCocycle : ∀ (K : Type) [Field K] [I
     IsAbelianScheme A → IsFinite ((𝟙 A) ^ 2 : A ⟶ A).left → ∀ D : Γ(Triple ((𝟙 A) ^ 2 : A ⟶ A).left, ⊤)ˣ,
     TriCocycle ((𝟙 A) ^ 2 : A ⟶ A).left D → ∃ u, KillsSq ((𝟙 A) ^ 2 : A ⟶ A).left D u := by
   intro K _ _ A _ _ hA hf D hD
-  obtain ⟨c, hc⟩ := _root_.GlobalTheory.CharKer.exists_pullTop_of_isPullback A (Two A ⊗ Two A) hA (t₁ A).left (ψ A).left (GlobalTheory.T.tripleFiberProductOverMulTwo_isPullback A) D
+  obtain ⟨c, hc⟩ := _root_.GlobalTheory.CharKer.exists_pullTop_of_isPullback A (Two A ⊗ Two A) hA (t₁ A).left (ψ A).left (_root_.GlobalTheory.TwoTors.TripleProd.isPullback A) D
   have key : ∀ {T : Over (Sp K)} (a b d : T ⟶ A) (h₁ : a ≫ sq A = b ≫ sq A) (h₂ : b ≫ sq A = d ≫ sq A) p₁ p₂,
       GlobalTheory.CharKer.pullTop (tri (sq A).left a.left b.left d.left p₁ p₂) D =
         GlobalTheory.CharKer.pullTop (lift (dif a b h₁) (dif b d h₂)).left c := by

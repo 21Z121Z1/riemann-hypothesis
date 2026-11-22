@@ -32,7 +32,7 @@ theorem eta_fin {σ : E →ₐ[F] E} {B : Base F E} (hB : B.IsGood σ) {η : (AF
   have hint : ∀ t : AF F, algebraMap (AF F) (AF F ⊗[F] E) t ∈ SE F E → ∀ v : HeightOneSpectrum (𝓞 F),
       2 * t.2 v ∈ v.adicCompletionIntegers F := by
     intro t ht v
-    have := GlobalTheory.T.finrank_smul_mem_adelesFiniteMultiple_of_tensorCongruence F E 1 t (CE_one ht)
+    have := _root_.GlobalTheory.HeckeExtend.TraceCE.finrank_smul_mem_intF F E 1 t (CE_one ht)
     rw [hB.cm.2.2.1] at this
     obtain ⟨c, hc, e⟩ := this
     have e2 : evalV F v (2 • t.2) = evalV F v (1 • c) := congrArg (evalV F v) e
@@ -99,7 +99,7 @@ theorem fixed_of_mem {σ : E →ₐ[F] E} (hcm : IsCMExt F E σ) {v : HeightOneS
   have hyS : algebraMap (AF F) (AF F ⊗[F] E) (algebraMap F (AF F) y) ∈ SE F E := by
     rw [← incAF_algebraMap, hy, map_mul, map_sub σ, map_one, map_sub, map_sub, map_one]
     exact SE_mul (sub_mem hζS one_mem_SE) (sub_mem hζS' one_mem_SE)
-  have hy2 := GlobalTheory.T.finrank_smul_mem_adelesFiniteMultiple_of_tensorCongruence F E 1 _ (CE_one hyS)
+  have hy2 := _root_.GlobalTheory.HeckeExtend.TraceCE.finrank_smul_mem_intF F E 1 _ (CE_one hyS)
   rw [hcm.2.2.1, ← map_nsmul] at hy2
   obtain ⟨r, hr⟩ := _root_.GlobalTheory.HeckeExtend.exists_int_of_mem_intF F _ 1 one_pos hy2
   have hy0 : 2 • y = 0 := by

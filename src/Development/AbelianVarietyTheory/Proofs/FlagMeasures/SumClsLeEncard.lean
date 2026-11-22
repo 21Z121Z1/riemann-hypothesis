@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MassOrbitsEqTsumFibe
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BasisOfIsCompl
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SpanToLePerp
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FramesCommonStabiliserEqPairingMatrixStabiliser
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetFrameClassPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetFrameClassProperties
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CommonStabilizerStabilizersCommensurableVolumeStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianFramesPairingStabilizerBlockDiagonal
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LatticeStabilizerInfLeConjNormalisingSubgroupStatement
@@ -100,7 +100,7 @@ theorem isIntCls_smul {h : S.GLV} (hh : h ∈ S.St) {C : Set S.FrP} (hC : S.IsIn
     S.IsIntCls (h • C) := by
   obtain ⟨⟨n, hn, n', hn', rfl⟩, hI⟩ := hC
   refine ⟨⟨h * n, mul_mem hh.1 hn, h * n', mul_mem hh.2 hn', ?_⟩, ?_⟩
-  · rw [(GlobalTheory.T.hermitianDoubleCosetFrameClass_properties L r k S _ _).2.2 h]
+  · rw [(_root_.GlobalTheory.HL.FrameClass.frame_classes L r k S _ _).2.2 h]
     rfl
   · rintro _ ⟨p, hp, rfl⟩ a b
     have := hh.1.1.1 (p.2 b) (p.1 a)
@@ -121,12 +121,12 @@ theorem stab_le (g g' : Fin (r + 1) → S.V) :
     MulAction.stabilizer S.GLV (S.frameCls g g') ≤ stabL L (Submodule.span L.O (Set.range g)) := by
   intro h hh
   have h1 : h • S.frameCls g g' = S.frameCls g g' := hh
-  rw [(GlobalTheory.T.hermitianDoubleCosetFrameClass_properties L r k S _ _).2.2 h] at h1
+  rw [(_root_.GlobalTheory.HL.FrameClass.frame_classes L r k S _ _).2.2 h] at h1
   change h • Submodule.span L.O (Set.range g) = _
   rw [smul_span]
   refine le_antisymm ?_ ?_
-  · exact span_le_of_mem S (p := (_, _)) (h1 ▸ (GlobalTheory.T.hermitianDoubleCosetFrameClass_properties L r k S _ _).1)
-  · exact span_le_of_mem S (p := (g, g')) (h1.symm ▸ (GlobalTheory.T.hermitianDoubleCosetFrameClass_properties L r k S _ _).1)
+  · exact span_le_of_mem S (p := (_, _)) (h1 ▸ (_root_.GlobalTheory.HL.FrameClass.frame_classes L r k S _ _).1)
+  · exact span_le_of_mem S (p := (g, g')) (h1.symm ▸ (_root_.GlobalTheory.HL.FrameClass.frame_classes L r k S _ _).1)
 
 theorem matrix_of_mem {g : S.GLV} (hg : g ∈ S.K0) :
     ∃ s s' : Matrix (Fin (r + 1)) (Fin (r + 1)) E, IsUni s ∧ IsUni s' ∧ IsIntM L s ∧
@@ -177,7 +177,7 @@ theorem sumCls_le_encard : ∀ {F : Type} [Field F] [ValuativeRel F] [Topologica
       cases hl : sameBlock S.w.blocks i l
       · rw [hb i l hl, zero_mul]; exact zero_mem _
       · exact mul_mem (hi i l) (hub l j (sameBlock_trans _ _ _ _ hl hij))
-    · rw [(GlobalTheory.T.hermitianDoubleCosetFrameClass_properties L r k S _ _).2.2 h⁻¹, (GlobalTheory.T.hermitianDoubleCosetFrameClass_properties L r k S _ _).2.2 g]
+    · rw [(_root_.GlobalTheory.HL.FrameClass.frame_classes L r k S _ _).2.2 h⁻¹, (_root_.GlobalTheory.HL.FrameClass.frame_classes L r k S _ _).2.2 g]
       congr 1
       · funext j
         rw [e j, apply_frame g S.f s u d]

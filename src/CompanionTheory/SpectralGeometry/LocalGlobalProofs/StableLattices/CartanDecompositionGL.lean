@@ -4,7 +4,7 @@ import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.EntryMu
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.ExistsUniformizerNonarchimedean
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CartanDecompositionGlNonarchimedeanStatement
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CongruenceSubgroupIsOpen
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CongruenceSubgroupIsCompactStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CongruenceSubgroupIsCompact
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CongruenceSubgroupsNeighborhoodBasisStatement
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CongruenceSubgroupNormalInMaximalCompactStatement
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CompactSubgroupFiniteOpenCosets
@@ -31,9 +31,9 @@ theorem stCartanGL : StCartanGL := by
   have h0 : 0 ≤ r := hr0.le
   have h1 : r ≤ 1 := hr1.le
   refine ⟨GlobalTheory.CompanionTheory.CartGL.congK L n r h0 h1, fun x hx => hεU r h0 h1 hrε hx,
-    _root_.GlobalTheory.CompanionTheory.CartGL.isOpen_congK L n r h0 h1 hr0, GlobalTheory.T.congruence_subgroup_is_compact L n r h0 h1, ?_⟩
+    _root_.GlobalTheory.CompanionTheory.CartGL.isOpen_congK L n r h0 h1 hr0, _root_.GlobalTheory.CompanionTheory.CartGL.isCompact_congK L n r h0 h1, ?_⟩
   obtain ⟨d, c, hc, hcK⟩ := _root_.GlobalTheory.CompanionTheory.CosetCover.exists_finite_coset_cover (GL (Fin n) L) (GlobalTheory.CompanionTheory.CartGL.congK L n 1 zero_le_one le_rfl)
-    (GlobalTheory.CompanionTheory.CartGL.congK L n r h0 h1) (GlobalTheory.T.congruence_subgroup_is_compact L n 1 zero_le_one le_rfl) (_root_.GlobalTheory.CompanionTheory.CartGL.isOpen_congK L n r h0 h1 hr0)
+    (GlobalTheory.CompanionTheory.CartGL.congK L n r h0 h1) (_root_.GlobalTheory.CompanionTheory.CartGL.isCompact_congK L n 1 zero_le_one le_rfl) (_root_.GlobalTheory.CompanionTheory.CartGL.isOpen_congK L n r h0 h1 hr0)
   refine ⟨d, n + 2, ?_⟩
   unfold CompanionTheory.Rg.Fl.IsCartan
   refine ⟨c, GlobalTheory.CompanionTheory.CartGL.tGen p, ?_, ?_, ?_, ?_⟩

@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnitLemmaGroup
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteUnitsModSquaresOfUnramifiedQuadratic
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitsModSqFiniteOfFields
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteSqEqOneOfFiniteAlgebraStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteSqEqOneOfFiniteAlgebra
 
 open GlobalTheory.UnitLemma Polynomial
 
@@ -141,7 +141,7 @@ theorem toCl_surjective : Function.Surjective (toCl B) := by
 
 theorem finite_Cl (K : UQ) (B : InvAlg K) : Finite B.Cl := by
   have hsq := _root_.GlobalTheory.units_modSq_finite_of_fields K.E (_root_.GlobalTheory.UnitLemma.UQ.finite_units_mod_sq K) B.A
-  have hmu := GlobalTheory.T.finite_setOf_sq_eq_one_of_finite_charZero K.E B.A
+  have hmu := _root_.GlobalTheory.finite_sq_eq_one_of_finite_algebra K.E B.A
   haveI := finite_quot B hsq hmu
   exact Finite.of_surjective _ (toCl_surjective B)
 

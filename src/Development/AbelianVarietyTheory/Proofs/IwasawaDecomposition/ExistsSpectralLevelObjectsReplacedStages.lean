@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Concre
 import Formalism.LocalToGlobal.BesselHermitianTheta.MinfDensity
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsSRestRe
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LowestVectorEvaluationIdentifiesLevelRowsConj
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EvaluationGoodRowsToConjugateGoodRowsStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EvaluationGoodRowsToConjugateGoodRows
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinXSpectralRedivisionFullChoices
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ECure
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsRowIsometryConjugatedGoodRowsFinrank
@@ -27,7 +27,7 @@ theorem exists_sRest_top : GlobalTheory.Dec.DSInfChar → GlobalTheory.Published
   obtain ⟨t, ht⟩ := _root_.GlobalTheory.Mem.SRe.seeAt_exists D G' Pl0 T A Ks R F P.X P.inst P.pin hLev hGrp hPin hE0
   obtain ⟨v₀, hv, c, hc, hev⟩ :=
     _root_.GlobalTheory.Mem.SRe.evalOn_all hDS hCusp hDSU hRF D G' Pl0 T A Ks R F P.X P.inst t P.pin hGap hLev hM.inf hM.ν0 ht
-  have hg := GlobalTheory.T.evaluation_goodRows_to_conjugate_goodRows D G' Pl0 T A Ks R F P.X P.inst P.G t v₀ c hLev hM.inf hv ht hev
+  have hg := _root_.GlobalTheory.Mem.SRe.evalOn_good D G' Pl0 T A Ks R F P.X P.inst P.G t v₀ c hLev hM.inf hv ht hev
   have hle := (_root_.GlobalTheory.Mem.SRe.levCols_le_triv_and_finite hHC hCusp D G' Pl0 T A Ks R F hLev hM.inf hM.ν0).1
   obtain ⟨hfr, j, hj⟩ :=
     _root_.GlobalTheory.Mem.SRe.exists_rowJ_and_finrank_HHX D G' Pl0 T A Ks R F P.X P.inst P.G t v₀ c eE hc hv hM.HE hRange hNorm hle hev hg.1

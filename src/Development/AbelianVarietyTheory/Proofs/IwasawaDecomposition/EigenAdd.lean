@@ -56,7 +56,7 @@ theorem core_form (l : ℕ) [Fact l.Prime] (C : Core l) (b : Per.BdR l) (d : GQ 
   obtain ⟨-, ht1, ht2, -⟩ := _root_.GlobalTheory.MemLoc.core_t_unit_fil l C
   obtain ⟨-, hjσ, -⟩ := _root_.GlobalTheory.MemLoc.crisP_unique_equivariant l C.j C.j_cris
   have hσD := (GlobalTheory.MemLoc.ActLaws.act_laws l).2.2.2.2.2.2.2.2.2.1
-  have hact := GlobalTheory.T.acrisGaloisAction_fontaine_t_eq_cyclotomic l C
+  have hact := _root_.GlobalTheory.MemLoc.TAct.t_act l C
   have htate := _root_.GlobalTheory.MemLoc.tate_twist_invariants l C (botExt l)
   have hast := _root_.GlobalTheory.MemLoc.invariants_finExt l (botExt l)
   generalize hx : aDp l (xi C.ε) = x at *

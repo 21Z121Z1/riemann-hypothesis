@@ -13,9 +13,9 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenFramesAnalytic
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.WedgeEigenLineGenerator
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrameFunctionsFlatAgree
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolomorphicChartNearPoint
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentOpenStalksDomainStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentOpenStalksDomain
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValueLocallyRegularFunction
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentPointValueHolomorphicStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentPointValueHolomorphic
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Fl GlobalTheory.CompanionTheory.Ar.Flat Filter Topology Metric
 
@@ -184,8 +184,8 @@ theorem ext_frames {Y : Model Xo c β} {U : Set (Xo.XF c)} (Z : CptOver Y U) {τ
       ∃ (v : Vecs y D.p) (w : Vecs y D.q), IsFramed U τ σ y v w ∧ φ ℂ y v w = κ₀ * Φ y v w) :
     ∀ (y : Sp ℂ ⟶ Xo.XF c) (v : Vecs y D.p) (w : Vecs y D.q), IsFramed U τ σ y v w → φ ℂ y v w = κ₀ * Φ y v w := by
   intro y₀ v₀ w₀ hf
-  obtain ⟨U', hU', hdom⟩ := GlobalTheory.T.component_open_stalks_domain _ H D l Xo c O β Y U Z hO
-  obtain ⟨V₀, hV₀, c₁, c₂, vR, wR, hy₀, l₁, s₁, l₂, s₂, hfr⟩ := GlobalTheory.T.component_point_value_holomorphic _ H D l Xo c O β Y U Z τ σ y₀ hO hτ hf.1 hf.2.1
+  obtain ⟨U', hU', hdom⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.cptOver_isOpen_isDomain _ H D l Xo c O β Y U Z hO
+  obtain ⟨V₀, hV₀, c₁, c₂, vR, wR, hy₀, l₁, s₁, l₂, s₂, hfr⟩ := _root_.GlobalTheory.CompanionTheory.Ar.LocFrames.exists_local_eigenframes _ H D l Xo c O β Y U Z τ σ y₀ hO hτ hf.1 hf.2.1
   obtain ⟨α, hα⟩ := ha c₁ l₁ s₁
   obtain ⟨κ', hκ'⟩ := hb c₂ l₂ s₂
   have eU : ∀ χ : Γ(Xo.XF c, V₀) →+* ℂ, spMap χ ≫ under hV₀.fromSpec = under (spMap χ ≫ hV₀.fromSpec) :=

@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.EqZeroOfForallPowDvd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CobOneEqZeroOfConnecting
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCommFormalGroupLawMapNatMultiple
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalGroupLawNatMultipleAddMulLawsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalGroupLawNatMultipleAddMulLaws
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFormalGroupLawHomFormalGroupLawNatMultiple
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Cob1SubstEqPull2OfIsHom
 open CategoryTheory TensorProduct MvPowerSeries GlobalTheory GlobalTheory.PDiv GlobalTheory.Katz GlobalTheory.QLog GlobalTheory.PDivGroup
@@ -22,7 +22,7 @@ theorem cob1_defect_and_defect_mul_of_isLaw : ∀ (O E : Type) [CommRing O] [Com
   have hc : ∀ i, constantCoeff (up E μ i) = 0 := hL.const
   have hk : ∀ k, HasSubst (up E (nmul μ k)) := fun k =>
     hasSubst_of_constantCoeff_zero fun i => by
-      rw [hup k]; exact ((GlobalTheory.T.formalGroupLawNatMultiple_add_mul_laws E d (up E μ) hL 0 k).1 i)
+      rw [hup k]; exact ((_root_.GlobalTheory.NMul.nmul_laws E d (up E μ) hL 0 k).1 i)
   have hsub : ∀ a b : MvPowerSeries (Fin d) E, cob1 (up E μ) (a - b) = cob1 (up E μ) a - cob1 (up E μ) b :=
     fun a b => by rw [eq_sub_iff_add_eq, ← formalCoboundary_add hc, sub_add_cancel]
   refine ⟨?_, ?_⟩
@@ -33,7 +33,7 @@ theorem cob1_defect_and_defect_mul_of_isLaw : ∀ (O E : Type) [CommRing O] [Com
       rw [subst_comp_subst_apply (hk m) (hk n)]
       congr 1
       funext i
-      rw [hup, hup, hup, (GlobalTheory.T.formalGroupLawNatMultiple_add_mul_laws E d (up E μ) hL m n).2.2.1 i]
+      rw [hup, hup, hup, (_root_.GlobalTheory.NMul.nmul_laws E d (up E μ) hL m n).2.2.1 i]
     unfold defect
     rw [subst_sub (hk n), subst_smul (hk n), hcomp, smul_sub, Nat.cast_mul, mul_smul]
     abel

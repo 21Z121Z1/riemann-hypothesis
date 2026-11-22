@@ -8,8 +8,8 @@ import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.InfiniteAdelesLocalRingTotallyReal
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRing
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GaussQ
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuadraticBoxVolumeBoundStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuadraticBoxIntegralSmallBallStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuadraticBoxVolumeBound
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuadraticBoxIntegralSmallBall
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanRankOneFreeOfPlaces
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanRankOneVolumeBound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DisintegrationInjectiveOpenMap
@@ -44,11 +44,11 @@ theorem fibre_rapid_zero_eq_density : ∀ (F E : Type) [Field F] [NumberField F]
   have hreal : ∀ (A Pm : InfinitePlace F → Matrix (Fin M × Fin d) (Fin M × Fin d) ℝ) (Di : (InfinitePlace F → ℝ) → ℝ), Continuous Di → (∀ U : Set (InfinitePlace F → ℝ), MeasurableSet U → ∫⁻ x in qR0 A ⁻¹' U, ENNReal.ofReal (gaussR Pm x) = ∫⁻ y in U, ENNReal.ofReal (Di y)) → ∀ f : (InfinitePlace F → Fin M × Fin d → ℝ) → ℝ, Measurable f → (∀ x, 0 ≤ f x) → (∀ N : ℕ, ∃ C' : ℝ, ∀ x, f x * (1 + ∑ w, ‖x w‖) ^ N ≤ C') → ∀ ε : ℝ, 0 < ε → ∃ δ R : ℝ, 0 < δ ∧ 0 < R ∧ ∀ U : Set (InfinitePlace F → ℝ), MeasurableSet U → ∫⁻ x in qR0 A ⁻¹' U ∩ (coreR δ R)ᶜ, ENNReal.ofReal (f x) ≤ ENNReal.ofReal ε * volume U := by
     intro A Pm Di hDi hdens f hf hf0 hfr ε hε
     have hcard : Fintype.card (Fin M × Fin d) = M * 2 := by simp [hd]
-    obtain ⟨C, hC⟩ := GlobalTheory.T.quadratic_box_volume_bound (InfinitePlace F) (Fin M × Fin d) A Pm Di (by omega) hDi hdens
+    obtain ⟨C, hC⟩ := _root_.GlobalTheory.CompanionTheory.WeilSiegel.Inf0.RealBox.image_box_bound (InfinitePlace F) (Fin M × Fin d) A Pm Di (by omega) hDi hdens
     have hQ : Measurable (qR0 A : (InfinitePlace F → Fin M × Fin d → ℝ) → _) := by
       refine Continuous.measurable (continuous_pi fun w => continuous_const.mul ?_)
       exact (continuous_apply w).dotProduct (continuous_const.matrix_mulVec (continuous_apply w))
-    exact GlobalTheory.T.quadratic_box_integral_small_ball (InfinitePlace F) (Fin M × Fin d) _ (by omega) (qR0 A) hQ C hC f hf hf0 hfr ε hε
+    exact _root_.GlobalTheory.CompanionTheory.WeilSiegel.Inf0.RealTail.tail_small (InfinitePlace F) (Fin M × Fin d) _ (by omega) (qR0 A) hQ C hC f hf hf0 hfr ε hε
   refine _root_.GlobalTheory.CompanionTheory.FibreDensityLimit.fibre_lintegral_eq_density _ _ _ μ ν (gramR (Ainf F) σ J) g Subtype.val Subtype.val_injective hgc hgf _ m (GlobalTheory.CompanionTheory.WeilSiegel.FreeOpen.isOpen_free F E σ hCM (Ainf F) hLoc 1 M) hm φ hφc hφ0 D hDc hD ?_ _
   intro ε hε
   obtain ⟨δ, R, hδ, hR, hK, hb⟩ := _root_.GlobalTheory.CompanionTheory.SW.BB.InfTransport.smallDensity_transport F E σ hCM M J hJ hM d b ρ e hρ he heρ hen hreal μ ν hμ hν φ hφc hφ0 hφr ε hε

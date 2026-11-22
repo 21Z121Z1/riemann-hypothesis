@@ -1,7 +1,7 @@
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NotDvdCondN
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.EmbeddingMapsIntoGoodExtension
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplitsOfConjugatesMem
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocalFieldDegreeEqRamificationMulInertiaStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocalFieldDegreeEqRamificationMulInertia
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PlaceCompletionLeMaxUnramifiedAway2qd
 import Formalism.SharpRestriction.LevelLetterCocycles.QuotientHomNonvanishingBound
@@ -24,7 +24,7 @@ theorem wordBase_of_jumpIn : ∀ {D : D7} (L : SizeData₂ D) (C₀ : ℝ) (HW :
   obtain ⟨g, hg, hread⟩ := _root_.GlobalTheory.HTW.Rec.reads_orbit_invFrob D (D.loc (D.nd.l i)) (D.nbr i w hw).Kw C.LL
     ((HW (D.nd.l i)).W (D.nbr i w hw).Kw 1 C.LL hG) (Br.cEw D.nbr i w hw) κ h2 hq hd
     (D.nbr i w hw).j_dense hU
-  refine ⟨g, hg, GlobalTheory.T.localFieldDegree_eq_ramification_mul_inertia D.nbr i w hw, ?_, _root_.GlobalTheory.HTW.Rec.recWord_wordNum L C₀ (liftIdx D i) ε g _ hR hg⟩
+  refine ⟨g, hg, _root_.GlobalTheory.bridge_degW D.nbr i w hw, ?_, _root_.GlobalTheory.HTW.Rec.recWord_wordNum L C₀ (liftIdx D i) ε g _ hR hg⟩
   exact
     { unram := hU
       split := fun ft => GlobalTheory.splits_of_conjugates_mem _ _ _

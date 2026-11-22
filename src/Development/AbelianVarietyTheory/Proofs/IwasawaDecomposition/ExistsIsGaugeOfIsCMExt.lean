@@ -12,10 +12,10 @@ import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
 import Formalism.LocalRingCardinality.DataTies
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.T2SpaceNumberFieldInfiniteAdeles
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUniqueOneVectorStepHaarMeasure
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsBasisInvariantHaarFamilyAdelicUnitaryStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCoboundaryOfInvariantUnitaryStepConstantsStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsBasisInvariantHaarFamilyAdelicUnitary
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCoboundaryOfInvariantUnitaryStepConstants
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryOneVectorStepCompatibleChangeOfBasis
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryStabilizerMeasureIndependentOfPathStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryStabilizerMeasureIndependentOfPath
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NonemptyStandardLocalHaarMeasuresStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.QuadricFibreMeasureEqSmulNormalisedProduct
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUniqueStdHermitianFibreProductOfRankGeThre
@@ -117,9 +117,9 @@ theorem exists_std_family (hσ : IsCMExt F E σ) {d : ℕ} {b : Module.Basis (Fi
       ∀ M J x a B J', 2 ≤ M → StepData σ J x a B J' →
         StepRel s σ J x a B J' ((α (M + 1) J : ℝ≥0) • G.μ (M + 1) J) ((α M J' : ℝ≥0) • G.μ M J') := by
   classical
-  obtain ⟨G, hH, hB⟩ := GlobalTheory.T.exists_basisInvariant_haar_family_adelicUnitary F E σ hσ
+  obtain ⟨G, hH, hB⟩ := _root_.GlobalTheory.GaugeRef.exists_isHaar_basisInv F E σ hσ
   obtain ⟨c, hc⟩ := exists_const hσ s G hH
-  refine (GlobalTheory.T.exists_coboundary_of_invariant_unitary_step_constants F E σ hσ ℝ≥0ˣ c ?inv ?coc).elim fun α hα => ?main
+  refine (_root_.GlobalTheory.GaugeAlg.exists_coboundary F E σ hσ ℝ≥0ˣ c ?inv ?coc).elim fun α hα => ?main
   case main =>
     obtain ⟨hαinv, hαstep⟩ := hα
     refine ⟨G, α, hH, hB, hαinv, ?_⟩
@@ -152,7 +152,7 @@ theorem exists_std_family (hσ : IsCMExt F E σ) {d : ℕ} {b : Module.Basis (Fi
     haveI : (G.μ (M + 1 + 1) J).IsHaarMeasure := hH _ J h1.1
     have r1 := (hc (M + 1) J x₁ a₁ B₁ J₁ (by omega) h1).smul (c M J₁ y₁ C₁ : ℝ≥0)
     have r2 := (hc (M + 1) J x₂ a₂ B₂ J₂ (by omega) h2).smul (c M J₂ y₂ C₂ : ℝ≥0)
-    have heq := GlobalTheory.T.unitaryStabilizer_measure_independent_of_path F E σ hσ _ b s M J x₁ x₂ a₁ a₂ B₁ B₂ J₁ J₂ y₁ y₂ b₁ b₂ C₁ C₂ J₀
+    have heq := _root_.GlobalTheory.GaugeSquare.square F E σ hσ _ b s M J x₁ x₂ a₁ a₂ B₁ B₂ J₁ J₂ y₁ y₂ b₁ b₂ C₁ C₂ J₀
       (G.μ M J₀) _ _ _ _ hM h1 h1' h2 h2' hBC inferInstance (hc M J₁ y₁ b₁ C₁ J₀ hM h1') r1
       (hc M J₂ y₂ b₂ C₂ J₀ hM h2') r2
     rw [smul_smul, smul_smul] at heq

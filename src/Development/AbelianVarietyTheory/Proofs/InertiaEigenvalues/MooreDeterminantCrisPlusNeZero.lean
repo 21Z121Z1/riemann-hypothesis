@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TwistStep
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CrisPlusFrobEigenvectorRatioPadic
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BcrisPlusFrobeniusStableSubringInFilZeroStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BcrisPlusFrobeniusStableSubringInFilZero
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DeRhamPeriodRingFieldTPowFiltrationUnits
 
 open Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.WeaklyAdmissibleFiltrations GlobalTheory.Pst GlobalTheory.PMon TensorProduct
@@ -154,7 +154,7 @@ namespace GlobalTheory.PMon
 theorem moore_statement : Moore := by
   intro l _ P AI T h k hk a hPa hfa ha
   obtain ⟨hF, hinj, -⟩ := _root_.GlobalTheory.PMon.bdR_tied l P AI T
-  obtain ⟨hpφ, -, hpR, hpQ, -⟩ := GlobalTheory.T.bcrisPlus_frobeniusStable_subring_in_filZero l P AI T
+  obtain ⟨hpφ, -, hpR, hpQ, -⟩ := _root_.GlobalTheory.PMon.CrisPlus.plus_props l P AI T
   haveI : IsDomain P.R.BdR := hF.isDomain
   haveI : IsDomain P.R.B := Function.Injective.isDomain (P.ιB : P.R.B →+* P.R.BdR) hinj
   cases k with

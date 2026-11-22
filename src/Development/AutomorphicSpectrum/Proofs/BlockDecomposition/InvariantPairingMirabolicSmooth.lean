@@ -4,10 +4,10 @@ import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.Mirabol
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.MirabolicDerivatives.TwistedKernels.ExPhiPlusOnto
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.GeometricLemmaFiltration
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ShearGL
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicEvaluationLinearStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicEvaluationLinear
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicPairingConductorVanishing
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedInvariantPairingCharacterStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicPairingDepthInductionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedInvariantPairingCharacter
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicPairingDepthInduction
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicPairingConductorShift
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicPairingConductorExtension
 
@@ -36,7 +36,7 @@ theorem pairing_phi : ∀ (k : Type) [Field k] [ValuativeRel k] [TopologicalSpac
   let ν : Measure k := Measure.addHaar
   obtain ⟨c, hc⟩ := exists_hasConductor_of_continuous ψ hψ h1
   have hinv : TwInv T T' B s := hB
-  have hlin := GlobalTheory.T.mirabolic_evaluation_linear ν ψ T B hψ hT
+  have hlin := _root_.GlobalTheory.CompanionTheory.MirPair.EvLin.evVal_additive_homogeneous ν ψ T B hψ hT
   have hex := _root_.GlobalTheory.CompanionTheory.MirPair.exists_evVal ν ψ c T T' B s hψ hc hT hT' hinv
   have huniq : ∀ {v v' A A'}, EvVal ν ψ T B v v' A → EvVal ν ψ T B v v' A' → A = A' := by
     rintro v v' A A' ⟨t₀, h₀⟩ ⟨t₁, h₁⟩
@@ -50,13 +50,13 @@ theorem pairing_phi : ∀ (k : Type) [Field k] [ValuativeRel k] [TopologicalSpac
     (fun v v₁ v₂ => huniq (hf _ _) (hlin.2.2.1 _ _ _ _ _ (hf _ _) (hf _ _)))
     (fun z v v' => huniq (hf _ _) (hlin.2.2.2 _ _ _ _ (hf _ _)))
   have hB₀ : ∀ v v', B₀ v v' = f v v' := fun _ _ => rfl
-  refine GlobalTheory.T.twisted_invariant_pairing_character ψ n s V V' T T' B₀ ?_ ?_ ?_ ?_
+  refine _root_.GlobalTheory.CompanionTheory.MirPair.Descend.descend ψ n s V V' T T' B₀ ?_ ?_ ?_ ?_
   · intro y v v'
     rw [hB₀, hB₀]
-    exact huniq (hf _ _) (GlobalTheory.T.mirabolic_pairing_depth_induction ν ψ T T' B s hψ hT hinv y v v' _ (hf _ _)).1
+    exact huniq (hf _ _) (_root_.GlobalTheory.CompanionTheory.MirPair.EvVal_translate ν ψ T T' B s hψ hT hinv y v v' _ (hf _ _)).1
   · intro y v v'
     rw [hB₀, hB₀]
-    exact huniq (hf _ _) (GlobalTheory.T.mirabolic_pairing_depth_induction ν ψ T T' B s hψ hT hinv y v v' _ (hf _ _)).2
+    exact huniq (hf _ _) (_root_.GlobalTheory.CompanionTheory.MirPair.EvVal_translate ν ψ T T' B s hψ hT hinv y v v' _ (hf _ _)).2
   · intro p v v'
     rw [hB₀, hB₀]
     exact huniq (hf _ _) (_root_.GlobalTheory.CompanionTheory.MirPair.evVal_conj ν ψ c T T' B s hψ hc hT hT' hinv p v v' _ (hf _ _))

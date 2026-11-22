@@ -4,7 +4,10 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelProject
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaTransformDarbouxModelLinearInjective
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DarbouxModelAlgebraicVectorsLeAdelicSchwartz
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilFactorization
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolynomialDatumActionOfPairStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolynomialDatumActionOfPair
+import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotropicHermitian
+import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolActs
 import Development.AbelianVarietyTheory.Definitions.Divisors.PairsOfSquareTriple
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfComponentTensorAdelicFunctionEq
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsOneParamSubgroupTransposeGramLieAt
@@ -265,8 +268,8 @@ theorem GlobalTheory.TripleAssembly.LieInv.mapA_mapB_lie_eq_zero : GlobalTheory.
     rw [h.JW₁, Matrix.det_smul] at dV'
     rw [e1]
     exact right_ne_zero_of_mul dV'
-  have PA := GlobalTheory.T.polynomial_datum_action_of_pair hP _ _ D.sp.cm.sig Bs _ _ Γ.V Γ.W Γ.M _ _ om _ _ _ _ (GlobalTheory.ThK.Inhab.pairV hm.triple)
-  have PB := GlobalTheory.T.polynomial_datum_action_of_pair hP _ _ D.sp.cm.sig Bs _ _ Γ.V' Γ.W Γ.M' _ _ om' _ _ _ _ (GlobalTheory.ThK.Inhab.pairV' hm.triple)
+  have PA := _root_.GlobalTheory.PolActsPf.polActs_of_isPair hP _ _ D.sp.cm.sig Bs _ _ Γ.V Γ.W Γ.M _ _ om _ _ _ _ (GlobalTheory.ThK.Inhab.pairV hm.triple)
+  have PB := _root_.GlobalTheory.PolActsPf.polActs_of_isPair hP _ _ D.sp.cm.sig Bs _ _ Γ.V' Γ.W Γ.M' _ _ om' _ _ _ _ (GlobalTheory.ThK.Inhab.pairV' hm.triple)
   constructor
   · intro τ Y hY Φ hΦ Φ' _ hD
     obtain ⟨T, hT, hinj⟩ := GlobalTheory.ThetaTransformInj.linear_injective D Γ.M Bs.ψ (sgn true W).gram e hg.hM hstd dV dW gA

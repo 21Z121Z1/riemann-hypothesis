@@ -7,13 +7,13 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NumericalCondi
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MaxFrobeniusOrbitLengthDiffBoundsZmod
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsAlgebraMapEqRoot
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilKisinExactTripleJumpsCharactersLift
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MonodromyMemRangeOfInvariantVectorStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MonodromyMemRangeOfInvariantVector
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilKisinDescentFiniteFreeInvertPrime
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilKisinDescentMonodromyImageValuation
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilKisinDescentPowSmulMonodromyAddPhiMem
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LiftImageEulerEInvariantsQuotient
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsMemTameDescentClassEqOfPowMem
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsMonodromyEqLeadingCoeffBreuilKisinDescentStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsMonodromyEqLeadingCoeffBreuilKisinDescent
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsAdicCompleteTwistedInvariantLatticeStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsHausdorffInvariantsQuotientOfFiniteFree
 
@@ -76,7 +76,7 @@ theorem lifting_along_exact_triple : GlobalTheory.IndefiniteRowSideFullHecke.Con
     refine add_mem (D₁.desc.Y'_le_Y η hy₁) ⟨?_, fun g => ?_⟩
     · exact (mem_divE (l := l) (e := e)).2 (D₁.upper _ (D₁.phi_mem_L hm₁.1))
     · rw [D₁.desc.act_phi, hm₁.2 g]
-  obtain ⟨-, wm, hwm, hLcwm⟩ := GlobalTheory.T.monodromy_mem_range_of_invariant_vector O K l e a ι₁ η H D₁ _ hy₁Y
+  obtain ⟨-, wm, hwm, hLcwm⟩ := _root_.GlobalTheory.BK.BKDat.Mon_mem_range_Lc O K l e a ι₁ η H D₁ _ hy₁Y
   have hIm := (_root_.GlobalTheory.LcImage.image_valuation_integralImage O K l e a ι₁ η H D₁ U N htype.jumps_subset
     (fun i hi => Finset.mem_Icc.2 (hnum.range_U i hi)) hnum.card_U hnum.lt).1
   obtain ⟨w', hw', hFw'⟩ := _root_.GlobalTheory.Proof.LiftImage.lift_image O K l e a ι₀ ι₁ η H D₀ D₁ F U hIm ω
@@ -92,7 +92,7 @@ theorem lifting_along_exact_triple : GlobalTheory.IndefiniteRowSideFullHecke.Con
     hnum.lt (by omega) hL2 c₂ w' hw' (hw₀eq ▸ hw₀)
 
   have hff := (_root_.GlobalTheory.ZFin.finiteFree_and_localisation O K l e a ι₀ η H D₀).1
-  obtain ⟨y₀, hy₀, hMy₀⟩ := GlobalTheory.T.exists_monodromy_eq_leadingCoeff_breuilKisinDescent O K l e a ι₀ η H D₀ U N hjmp0 hIcc hnum.card_U
+  obtain ⟨y₀, hy₀, hMy₀⟩ := _root_.GlobalTheory.Proof.exists_monodromy_eq_leadingCoeff_breuilKisinDescent.exists_Mon_eq_Lc_cls O K l e a ι₀ η H D₀ U N hjmp0 hIcc hnum.card_U
     hnum.one_le hnum.lt hL3 hL2 (GlobalTheory.T.isAdicComplete_twistedInvariantLattice O K l e a ι₀ η H D₀)
     (_root_.GlobalTheory.InertiaEigenvalues.isHausdorff_Z_of_finiteFree O K l e a ι₀ η H D₀ hff) y hy
 

@@ -2,10 +2,10 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SubgroupCharacterIdempotentProperties
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsCharIdemOfIsSeries
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LabelDatum
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraSeriesLabelExistsUniqueGLnStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraProductListDegreeStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WhittakerDimensionHarishChandraInductionMulStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WhittakerDimensionCuspidalGreenDegreeEqOneStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraSeriesLabelExistsUniqueGLn
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraProductListDegree
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WhittakerDimensionHarishChandraInductionMul
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WhittakerDimensionCuspidalGreenDegreeEqOne
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraProductListIsCharacterAndPermInvari
 import Formalism.SharpRestriction.LevelLetterCocycles.ArithmeticCylinders
 
@@ -52,10 +52,10 @@ theorem wh_hcL (ψ : AddChar (ZMod g) ℂ) (hψ : ψ ≠ 1) (L : List (Pc g))
       exact ⟨V, hV⟩
     have c1 := isClass_of_isChar (hch p hp.1)
     have c2 := isClass_of_isChar (_root_.GlobalTheory.gl_list_product_perm_char g L L _ rfl fun q hq => hch q (hL q hq).1).1
-    rw [hcL_cons, hc, GlobalTheory.T.whittakerDimension_harishChandraInduction_mul g ψ hψ p.1 (degL L) _ (by simp [degL]) _
+    rw [hcL_cons, hc, _root_.GlobalTheory.GLq.WhMul.wh_hcT g ψ hψ p.1 (degL L) _ (by simp [degL]) _
       (fun y a b => by simp only [c1 a b]) (fun x a b => by simp only [c2 a b])]
     simp only [wh_const_mul, ih hL, mul_one]
-    exact GlobalTheory.T.whittakerDimension_cuspidal_greenDegree_eq_one g ψ hψ _ _ hp.1 hp.2
+    exact _root_.GlobalTheory.GLq.wh_cusp_eq_one g ψ hψ _ _ hp.1 hp.2
 
 theorem isGeneric_of_wh (ψ : AddChar (ZMod g) ℂ) (hψ : ψ ≠ 1) {n : ℕ} (hn : 0 < n) (V : FDRep ℂ (GG g n))
     (h : wh ψ V.character ≠ 0) : IsGeneric V.ρ := by
@@ -82,7 +82,7 @@ theorem isGeneric_of_wh (ψ : AddChar (ZMod g) ℂ) (hψ : ψ ≠ 1) {n : ℕ} (
 theorem deg_hcL (L : List (Pc g)) (n : ℕ) (hn : n = degL L)
     (h : ∀ p ∈ L, 0 < p.1 ∧ p.2 1 = ∏ i ∈ Finset.Ico 1 p.1, ((g : ℂ) ^ i - 1)) :
     hcL L n 1 * (L.map fun p => ((g : ℂ) ^ p.1 - 1)).prod = ∏ i ∈ Finset.range n, ((g : ℂ) ^ (i + 1) - 1) := by
-  have H := GlobalTheory.T.harishChandraProductList_degree g L n hn
+  have H := _root_.GlobalTheory.GLq.HcDeg.hc_degree g L n hn
   have e1 : (L.map fun p => ∏ i ∈ Finset.Icc 1 p.1, ((g : ℂ) ^ i - 1)).prod =
       (L.map fun p => ((g : ℂ) ^ p.1 - 1)).prod * (L.map fun p => p.2 1).prod := by
     rw [← List.prod_map_mul]
@@ -105,7 +105,7 @@ theorem deg_hcL (L : List (Pc g)) (n : ℕ) (hn : n = degL L)
 
 theorem exists_series : GlobalTheory.GLq.Green → ∀ (g : ℕ) [Fact g.Prime] (L : GlobalTheory.GLq.LabelDatum g) (n : ℕ), 5 ≤ g → 0 < n → ∃ τ : (ZMod g)[X] → GlobalTheory.BadShare.GG g n → ℂ, GlobalTheory.BadShare.IsSeries τ ∧ ∀ f ∈ GlobalTheory.BadShare.sqSet g n, ∀ x, (GlobalTheory.GLq.eSerC L n f).coeff x = GlobalTheory.BadShare.zc (τ f) x := by
   intro hG g _ L n hg hn
-  obtain ⟨H1, -, H3⟩ := GlobalTheory.T.harishChandraSeriesLabel_exists_unique_GLn g L hg hG n
+  obtain ⟨H1, -, H3⟩ := _root_.GlobalTheory.GLq.Label.label_main g L hg hG n
   have H4 := fun (f : (ZMod g)[X]) (hf : f ∈ sqSet g n) =>
     H3 f (mem_sqSet.1 hf).1 (mem_sqSet.1 hf).2.1 (mem_sqSet.1 hf).2.2.2 (mem_sqSet.1 hf).2.2.1
   choose! Q Q1 Q2 Q3 Q4 using H4

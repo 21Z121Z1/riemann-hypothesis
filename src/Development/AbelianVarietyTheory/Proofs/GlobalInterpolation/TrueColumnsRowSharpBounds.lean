@@ -5,8 +5,8 @@ import Formalism.SharpRestriction.GrowthBounds.WeilJacquetShalikaLaw
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SharpBoundStabilityLatticeColumnChain
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ColumnWeightTwisted
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TupleChainSharpColumnValuationOfTwisted
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.FivePointLawsTrueChainsStatement
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TwistedChainInitialLatticeCompatibleTrueColumnsStatement
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.FivePointLawsTrueChains
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TwistedChainInitialLatticeCompatibleTrueColumns
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.BasicNotions.DV Formalism.L2.DIV Formalism.L2.Ker GlobalTheory.Mem GlobalTheory.Mem.Col2 GlobalTheory.LvT GlobalTheory.LvT.Built GlobalTheory.LvT.Built.TrueLaws
 
 noncomputable section
@@ -16,7 +16,7 @@ variable {B : GlobalTheory.Mem.Base} {X : PreX B.toPre} {I : TC B X}
 
 theorem trueColumns_chain_last_step_sharp_bound (h : I.Ok) (hJ : I.JetsIn) (hS : GlobalTheory.LvT.WtSign.BaseSigns B) (l : I.Laws) (l0 : I.Law0 l)
     (Z : TC.Later B (I.cols l)) (u : (I.rec7 l Z).what₂.Word) (a : I.ι) : Conclusion5Sharp (tw (I.tw l l0 Z) u a) := by
-  obtain ⟨Bd, hch, hsp, hse, hk, hBd⟩ := GlobalTheory.T.fivePointLaws_trueChains B X I h hJ l l0 Z u a
+  obtain ⟨Bd, hch, hsp, hse, hk, hBd⟩ := _root_.GlobalTheory.LvT.Built.TrueLaws.laws_true_fam B X I h hJ l l0 Z u a
   have hT : Module.finrank ℚ Bd.E * (I.rec7 l Z).R.N (I.rec7 l Z).R.m + 1 < Bd.J.T := by
     subst hBd
     show Module.finrank ℚ B.host.E * B.R.N B.R.m + 1 < B.T u
@@ -45,7 +45,7 @@ theorem row_true : ∀ (B : GlobalTheory.Mem.Base) (X : PreX B.toPre) (I : TC B 
     rw [← own_eq I l l0 Z u] at h0
     exact (levelChainSharpColumnValuation_ownChain_iff (I.rec7 l Z) u).1 h0
   · have hTw : TupleChainSharpColumnValuation (I.tw l l0 Z) u μ :=
-      TwSharp.tupleChainSharpColumnValuation_of_twisted (I.rec7 l Z) u (I.tw l l0 Z) μ (GlobalTheory.T.twistedChain_initialLattice_compatible_trueColumns B X I h l l0 Z u μ)
+      TwSharp.tupleChainSharpColumnValuation_of_twisted (I.rec7 l Z) u (I.tw l l0 Z) μ (_root_.GlobalTheory.LvT.TrueStep0.step0Tie_trueCols B X I h l l0 Z u μ)
         (trueColumns_chain_last_step_sharp_bound h hJ hS l l0 Z u μ)
     exact GlobalTheory.Proof.ColumnWeightTwisted.colGeTw_of_tupleChainSharpColumnValuation (I.rec7 l Z) (I.tw l l0 Z) u μ hTw w hw x hx
 

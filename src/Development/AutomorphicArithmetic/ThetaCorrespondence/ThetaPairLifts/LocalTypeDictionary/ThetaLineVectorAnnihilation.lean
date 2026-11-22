@@ -37,7 +37,7 @@ theorem line_vector_annihilated : _root_.GlobalTheory.FunPr.ThetaLocalInputs →
     Φ₁D hΦ₁D hder Φ₁ hΦ₁
   have hψ : Bs.ψ = ψ := hO.psi
   have hstd : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.IsStd ψ := hψ ▸ hTr.base.std
-  obtain ⟨Y, γs, hY, hγs, hγsY, hprod⟩ := GlobalTheory.T.unitaryArchimedeanOneParam_eq_prod_cmType_lines D θ hθ W Γ.V hO.JW γ hγ
+  obtain ⟨Y, γs, hY, hγs, hγsY, hprod⟩ := _root_.GlobalTheory.ConjLineSplit.line_eq_prod D θ hθ W Γ.V hO.JW γ hγ
   obtain ⟨Ψ, hΨ, hΨd, hsum⟩ := _root_.GlobalTheory.T.line_derivative_splits hP _ _ _ Bs _ _ _ _ Γ.M _ _ om _ _ _ _
     (GlobalTheory.ThK.RealUniq.isPair_V hTr) _ γs hγs γ hγ hprod ΦD hΦD Φ₁D hder
   obtain ⟨Φ, hΦalg, hΦ⟩ := hO.algA' ΦD hΦD

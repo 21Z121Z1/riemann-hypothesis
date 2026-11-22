@@ -18,7 +18,7 @@ theorem exists_coreJ_noVol : ∀ (D : D7) (Q : Par D), Q.Pins → (∀ j, 1 ≤ 
   intro D Q hQ hpq pb hpb hMb chiW hchi
   have hM : Q.l.M = D.host.g 0 * D.host.g 1 := hQ.2.1.1
   choose iota hiota using exists_iotaAll Q hQ
-  choose Kf hKf using fun j => (GlobalTheory.T.exists_principalLevel_subgroup_open D (D.sp.W j) Q.l.M).1
+  choose Kf hKf using fun j => (_root_.GlobalTheory.Member.PrincLevel.exists_levelK_and_nhds D (D.sp.W j) Q.l.M).1
   choose U dict mu x₀ hS using fun j σ => exists_pkgAll Q hQ hpq j σ (iota j) (hiota j) (Kf j) (hKf j) (chiW j σ)
     (fun hj hσ => ⟨(hchi j hj σ hσ).1, (hchi j hj σ hσ).2.1⟩)
   have hgood := (_root_.GlobalTheory.LevelHalf.good_and_half_eq_prod D Q.H Q.l hQ.1.2.1 hM).1

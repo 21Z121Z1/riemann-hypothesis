@@ -1,6 +1,6 @@
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.TensorMomentEstimate
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.PieriTensorDecomposition
-import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.BesselSettingUniformConstantStatement
+import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.BesselSettingUniformConstant
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.DiscreteSeriesUnitarySmoothBasic
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.HaarEqSmul
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.TensorWeightedBesselGap
@@ -14,7 +14,7 @@ import Formalism.PeriodIntegrals.UpqRep
 import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
 import Development.AbelianVarietyTheory.Definitions.Jets.TauZero
 import Formalism.HermitianCurvature.StatementTBB
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselNormSqEqBigCellNormSqStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselNormSqEqBigCellNormSq
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NumericalFamilyShapeGaps
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.IsDSOfIsDG
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.CapelliKFiniteCoefficient
@@ -225,7 +225,7 @@ theorem sup_norm : HypsG → ∀ (P : M.Par) (Wp Wq : Type) [NormedAddCommGroup 
   intro hy P Wp Wq _ _ _ _ _ _ p lam b bv ga h q0 R l l' dg s J tau hN hS
   haveI := FiniteDimensional.complete ℂ Wp
   haveI := FiniteDimensional.complete ℂ Wq
-  obtain ⟨c₁, hc₁, h1⟩ := GlobalTheory.T.bessel_setting_uniform_constant hy P.k P.r Wp Wq p.T.base
+  obtain ⟨c₁, hc₁, h1⟩ := _root_.Gp91.GlobalTheory.BesselNormSq.normSq_coef hy P.k P.r Wp Wq p.T.base
   have hH : PI.BesselPeriodGGP.IsHaarOn (GG P.k P.r) p.T.base.μG := by
     haveI : IsFiniteMeasureOnCompacts p.T.base.μG := ⟨fun K hK => p.T.base.haarG.finite_compact K hK⟩
     haveI : IsLocallyFiniteMeasure p.T.base.μG := inferInstance
@@ -238,14 +238,14 @@ theorem sup_norm : HypsG → ∀ (P : M.Par) (Wp Wq : Type) [NormedAddCommGroup 
   obtain ⟨hl', -, -⟩ := hS.right ν hν
   have hP := h1 _ _ (h / 2) (R ν) (l ν) (l' ν) (dg ν) hDS (hfam ν hν).2.2.1 hgap hl hl' hfd
   have h0 : TBB.jN2 p (0 : B.Mat P.k P.r → (Wq →L[ℂ] Wp)) = 0 := by
-    rw [GlobalTheory.T.jN2_eq_normSq_base, hP 0 0 ⟨0, fun i => i.elim0, fun i => i.elim0, fun i => i.elim0, fun i => i.elim0,
+    rw [_root_.GlobalTheory.jN2_eq_normSq_base.besselNormSq_eq_bigCellNormSq, hP 0 0 ⟨0, fun i => i.elim0, fun i => i.elim0, fun i => i.elim0, fun i => i.elim0,
       fun g _ => by simp, by simp⟩]
     simp
   by_cases hnz : NzOn (R ν) (l ν) ∧ NzOn (R ν) (l' ν)
   · right
     obtain ⟨hc, hs⟩ := hS.coef ν hν hnz.1 hnz.2
     have hj : TBB.jN2 p (J ν) = ENNReal.ofReal (c₁ * dg ν) := by
-      rw [GlobalTheory.T.jN2_eq_normSq_base, hP _ _ hc, hs]
+      rw [_root_.GlobalTheory.jN2_eq_normSq_base.besselNormSq_eq_bigCellNormSq, hP _ _ hc, hs]
       congr 1
       field_simp
     obtain ⟨w, hw, -⟩ := (GlobalTheory.rep_basic_of_isDS hy.1.2.2.1 P.k P.r _ _ (R ν) hDS).2.2.2.2.2.2.2.1
@@ -369,11 +369,11 @@ theorem suppliedData_existsW : HypsG → ∀ (P : M.Par) (Wp Wq : Type) [NormedA
   obtain ⟨⟨-, -, -, -, hgap⟩, hnum⟩ := _root_.GlobalTheory.NumFam.num_fam P.k P.r lam P.u b bv ga h q0 hN
   have hg : Formalism.QuantumDeterminants.GapAtLeast (PI.BesselPeriodGGP.eps48 P.k P.r) (fun a => lam a + (ν₀ a : ℝ)) (h / 2) :=
     (hnum ν₀ h0).2.2.1
-  obtain ⟨c, -, hc⟩ := GlobalTheory.T.bessel_setting_uniform_constant hH P.k P.r Wp Wq p.T.base
+  obtain ⟨c, -, hc⟩ := _root_.Gp91.GlobalTheory.BesselNormSq.normSq_coef hH P.k P.r Wp Wq p.T.base
   have hne : s₀ ≠ 0 := by
     intro hz
     apply hj
-    rw [GlobalTheory.T.jN2_eq_normSq_base P Wp Wq p f,
+    rw [_root_.GlobalTheory.jN2_eq_normSq_base.besselNormSq_eq_bigCellNormSq P Wp Wq p f,
       hc _ _ (h / 2) (R ν₀) (l ν₀) (l' ν₀) (dg ν₀) hR0 hg hgap (hl ν₀ h0).1 (hl' ν₀ h0).1 (hl ν₀ h0).2.2 f s₀ hs₀, hz]
     simp
   obtain ⟨s, J, t, ht, hJ, -, hcoef, hzero⟩ :=
@@ -395,9 +395,9 @@ theorem coef_norm_finite_and_zeroW : HypsG → ∀ (P : M.Par) (Wp Wq : Type) [N
   have hgap : Formalism.QuantumDeterminants.GapAtLeast (PI.BesselPeriodGGP.eps48 P.k P.r) (fun a => lam a + (ν₀ a : ℝ)) (h / 2) :=
     (hν ν₀ h0).2.2.1
   obtain ⟨s, hs⟩ := hf (l ν₀) (l' ν₀)
-  obtain ⟨c, hc, hnorm⟩ := GlobalTheory.T.bessel_setting_uniform_constant hH P.k P.r Wp Wq p.T.base
+  obtain ⟨c, hc, hnorm⟩ := _root_.Gp91.GlobalTheory.BesselNormSq.normSq_coef hH P.k P.r Wp Wq p.T.base
   have hj : TBB.jN2 p f = ENNReal.ofReal (c * ‖s‖ ^ 2 / dg ν₀) := by
-    rw [GlobalTheory.T.jN2_eq_normSq_base]
+    rw [_root_.GlobalTheory.jN2_eq_normSq_base.besselNormSq_eq_bigCellNormSq]
     exact hnorm _ _ (h / 2) (R ν₀) (l ν₀) (l' ν₀) (dg ν₀) hR0 hgap hok hB hB' hfd f s hs
   have hck := (_root_.Gp91.GlobalTheory.isCoef_ckOn_inCC hH P.k P.r _ _ (h / 2) (R ν₀) Wp Wq (l ν₀) (l' ν₀) f s hR0 hgap hok hs).1
   refine ⟨by rw [hj]; exact ENNReal.ofReal_lt_top,

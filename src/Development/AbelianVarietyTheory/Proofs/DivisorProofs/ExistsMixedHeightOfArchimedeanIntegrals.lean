@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAmbOfIsArithVar
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMixedHeightByInductionSuccStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMixedHeightByInductionSucc
 open CategoryTheory AlgebraicGeometry TopologicalSpace MvPolynomial
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
 open ReciprocityTheory.ChartRestriction.G.Out (nonzeroLocus)
@@ -15,7 +15,7 @@ theorem exists_isMix_of_arch : ArchInteg → ArchRecip →
     intro m
     induction m with
     | zero => intro k _ Y q _; exact ⟨_, isMix_zero q⟩
-    | succ m ih => exact GlobalTheory.T.isMixedHeightByInduction_succ hI hR m ih
+    | succ m ih => exact _root_.GlobalTheory.MixHt.Step.isMix_succ hI hR m ih
   intro k _ Y q h m
   exact key m k Y q h
 

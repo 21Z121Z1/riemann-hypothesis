@@ -11,7 +11,8 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Ha
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
 import Formalism.LocalToGlobal.IndefiniteReal.LinksStage
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ImportsBis
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLocalGaloisDataShaLengthEqStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLocalGaloisDataShaLengthEq
+import Formalism.GaloisCohomology.Statement
 open Formalism.BasicNotions Formalism.MainNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField
 open Formalism.L2.Theta Formalism.L2.DIV Formalism.L2.Indef Formalism.L2.Rows Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Lev Formalism.IndefR.Cx Formalism.IndefR.RecTie
 open scoped TensorProduct InnerProductSpace ComplexOrder
@@ -208,7 +209,7 @@ theorem exists_bare_over {K : Ctx} (P : Pre2 K w) {rows₁ : Rows.Data B.R} (Y :
       HEq N.nd.PlG Y.PlG ∧ HEq N.naut.plGw A₁.plGw := by
   letI := P.z.alg
   obtain ⟨ldat₀, hsha₀⟩ := P.q.sha
-  have hD := fun (p : ℕ) [Fact p.Prime] => GlobalTheory.T.exists_localGaloisData_shaLength_eq (Ω' := Y.Om) p (ldat₀ p)
+  have hD := fun (p : ℕ) [Fact p.Prime] => _root_.GlobalTheory.ShaTransport.exists_lData_shaLen_eq (Ω' := Y.Om) p (ldat₀ p)
   let ldat : ∀ (p : ℕ) [Fact p.Prime], Formalism.GaloisCohomology.LData B.host.E Y.Om p := fun p _ => (hD p).choose
   have hsha : ∀ (p : ℕ) [Fact p.Prime] (e : ℕ), 0 < e → e < B.R.t → ∀ n : ℕ,
       Formalism.GaloisCohomology.shaLen (ldat p) (e : ℤ) = (n : ℕ∞) → (P.q.W (fun _ _ => 0) fun _ _ => le_rfl).shaLen p e = (n : ℚ) :=

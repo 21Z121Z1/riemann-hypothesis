@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SiegelObjectPullbackExistsAndPrincipal
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SiegelPullbackIdCompCancelStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SiegelPullbackIdCompCancel
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.IsGaloisCover
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
@@ -55,7 +55,7 @@ theorem siegPre_pull_ringChange : ∀ (h k : ℕ) (B B' : Type) [CommRing B] [Co
   · obtain ⟨c₀, h₀⟩ := (_root_.GlobalTheory.siegPre_pullback h k B ζ S S' s _ f c hf).1
     exact ⟨up j hj c₀, h₀⟩
   · exact (_root_.GlobalTheory.siegPre_pullback h k B ζ S S' s _ f c hf).2 (down j hj c') hc hp
-  · have e := (GlobalTheory.T.siegelPullback_id_comp_cancel h k B' B' B' ζ' ζ' ζ' S' S' S' s' s' s' c' c' c' (𝟙 _) (𝟙 _)).1
+  · have e := (_root_.GlobalTheory.SiegelPullComp.id_comp_cancel h k B' B' B' ζ' ζ' ζ' S' S' S' s' s' s' c' c' c' (𝟙 _) (𝟙 _)).1
     exact ⟨down j hj c', e, e⟩
 
 end GlobalTheory.SiegelRingChange

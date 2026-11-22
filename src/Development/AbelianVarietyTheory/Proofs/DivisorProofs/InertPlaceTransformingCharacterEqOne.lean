@@ -17,7 +17,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousAtPlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VacFn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfComponentTensorAdelicFunctionEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardAdelicAddCharNontrivialFinitePlace
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymplecticFormEqZeroOfLagrangianAtPlaceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLagrAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledUnitaryElementActsLocalOperatorAtPlace
 import Development.AbelianVarietyTheory.Definitions.Divisors.MatchingOfParts
 import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
@@ -27,7 +27,6 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDiagonalLagra
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzRestrictFinitePlaceMemSchwartzBruh
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzSpaceTranslateMemOfMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensFormBox
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergInvariantFormVanishesLagrangianTestStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharactersAgreeInertUnramified
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerPreservesSchwartzBruhat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicHeisenbergActsByLocalSchrodinger
@@ -36,7 +35,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitDetGramOfHerm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsComplementaryAdelicSchwartzRestFunction
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiagonalIntegralHeisenbergTranslateIntegralIndic
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyIntegralPointsIndicatorIsVacuum
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergDiagonalIntegralMemSchwartzBruhatStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergDiagonalIntegralMemSchwartzBruhat
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaTransformRationalTranslateQuasiInvariant
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LagrangianDiagonalIntegralExtendsLinearForm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchroedingerMemSchwartzBruhatFinitePlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralInjectiveSubspaceCompactOpenConstNeZero
@@ -54,7 +54,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymplecticFormEqZer
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelParabolicLeviInverseQuotientDetNorm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryScalarInertPlaceInvertibleShifts
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFieldCompletionTensorOfIsInertAt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdempotentBlockUnipotentIdentityStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdempotentBlockUnipotentIdentity
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalProductActsOfAdelicProductActsFirst
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductFunctionOnSumCoordsMemAdelicSchwartzSpace
 
@@ -195,7 +195,7 @@ theorem char_eq_one : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Numb
     haveI : BorelSpace (Fin N → Fv F v) := ⟨rfl⟩
     exact ⟨Measure.addHaar, inferInstance⟩
   obtain ⟨φ₀, hφ₀, c₁, hc₁, U, hUo, hUc, hU0, hU⟩ := _root_.GlobalTheory.InertLagInd.diagW_box_indicator F v _ B.ψ hunr h2 μ hμ
-  have hSB := GlobalTheory.T.heisenbergDiagonalIntegral_mem_schwartzBruhat F v _ _ hψc hψ1 μ hμ _ (box_mem_SB hφ₀ hφ₀) c₁ hc₁ U hUo hUc hU0 hU
+  have hSB := _root_.GlobalTheory.DiagWSB.diagW_mem_SB F v _ _ hψc hψ1 μ hμ _ (box_mem_SB hφ₀ hφ₀) c₁ hc₁ U hUo hUc hU0 hU
   obtain ⟨Λ, hΛ⟩ := _root_.GlobalTheory.InertLagChar.lagInt_linForm F v _ _ hψc μ hμ N ν hν j hj hSB
   have hΛ0 : Λ (boxFun φ₀ φ₀) ≠ 0 := by
     rw [hΛ _ (box_mem_SB hφ₀ hφ₀), lagInt]
@@ -205,7 +205,7 @@ theorem char_eq_one : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Numb
     ⟨fun t ht => by rw [← Matrix.smul_mul, (hζ y).1 t ht, Matrix.zero_mul], ζ y, rfl⟩
   have hiso : ∀ y y', (j y).1 ⬝ᵥ (j y').2 = (j y').1 ⬝ᵥ (j y).2 := by
     intro y y'
-    have h0 := GlobalTheory.T.symplecticForm_eq_zero_of_lagrangianAtPlace σ G.V'.J G.W v C hC (-1) _ _ (hlag y) (hlag y')
+    have h0 := _root_.GlobalTheory.InertVacIso.symp_eq_zero_of_lagAt σ G.V'.J G.W v C hC (-1) _ _ (hlag y) (hlag y')
     rw [G.M'.co.form] at h0
     have h1 := congrArg (evFin F v) h0
     rw [← sub_eq_zero, ← (hζ y).2, ← (hζ y').2]
@@ -221,7 +221,7 @@ theorem char_eq_one : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Numb
     show Λ (boxFun φ₁ φ₂) = Λ (boxFun φ φ₂)
     rw [hΛ _ (box_mem_SB hφ₁ hφ₂), hΛ _ (box_mem_SB hφ hφ₂), e, hu', (hζ y).2]
     exact _root_.GlobalTheory.LagIntTransl.main F v _ _ μ hμ N ν hν j hiso y φ φ₂
-  obtain ⟨φt, hφt, hline⟩ := GlobalTheory.T.heisenberg_invariant_form_vanishes_lagrangian_test F E σ a' (a + a') G.V' G.W G.M' B.ψ v hunr m C hC
+  obtain ⟨φt, hφt, hline⟩ := _root_.GlobalTheory.InertLagUniq.exists_test F E σ a' (a + a') G.V' G.W G.M' B.ψ v hunr m C hC
   have hlt : l φt ≠ 0 := fun h => by
     obtain ⟨f, hf, hne⟩ := hne; exact hne (hline l hl h f hf)
   have hprop : ∀ φ₂ ∈ SB (Fin a' × Fin (a + a') → Fv F v), ∀ φ ∈ SB (Fin a' × Fin (a + a') → Fv F v),
@@ -298,7 +298,7 @@ theorem char_eq_one : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Numb
     rw [incM, ← RingHom.mapMatrix_apply, ← RingHom.map_det]
     exact hJ.map _
   have hee : liftV v (1 : Fv F v) * liftV v (1 : Fv F v) = liftV v (1 : Fv F v) := smul_of_at (at_liftV v 1)
-  obtain ⟨p₁, p₂, t₁, t₂, hp₁, hp₂, ht₁, ht₂, hdec⟩ := GlobalTheory.T.idempotent_block_unipotent_identity (AF F) (AE F E) (cA σ) (Fin a') (incM F G.V'.J) hJA _ hee g k
+  obtain ⟨p₁, p₂, t₁, t₂, hp₁, hp₂, ht₁, ht₂, hdec⟩ := _root_.GlobalTheory.SiegelDiagDecomp.diag_decomp (AF F) (AE F E) (cA σ) (Fin a') (incM F G.V'.J) hJA _ hee g k
     (one_sub_smul_of_at hg) (one_sub_smul_of_at hk) α β (smul_of_at hα) (smul_of_at hβ) e1 e2 e3 e4 gd kd hgd hkd
   have hkk : mat k * mat k⁻¹ = 1 := Units.mul_inv k.1
   have hki : k⁻¹ ∈ UAt σ G.V' (evFin F v) := fun u hu => by

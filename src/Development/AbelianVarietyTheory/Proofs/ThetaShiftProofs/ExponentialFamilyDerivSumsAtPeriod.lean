@@ -6,7 +6,9 @@ import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.Ideal
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.HolomorphicHomDetermined
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsSumsAtHalfCurveFraction
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.EqSpMapOfInjective
-import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.TangentConstantDirectionSpecialisesDerivStatement
+import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.TangentConstantDirectionSpecialisesDeriv
+import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.ArcDictExpZeroSection
+import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IsFShiftZeroIff
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IsTangentConstantCoordsGenericFibreStatement
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArcLevelPointTangentVectorTransportIff
 
@@ -218,7 +220,7 @@ theorem deriv_sumsAt : Out.Laws → Out.Laws2 → ∀ (E : Type) [Field E] [Numb
   have := Xo.smooth
   have : Smooth Xo.s := SmoothOfRelativeDimension.smooth D.dim _
   have : IsLocallyNoetherian Xo.X := LocallyOfFiniteType.isLocallyNoetherian Xo.s
-  obtain ⟨T₀, -, h₀⟩ := T.tangent_constant_direction_specialises_deriv hL hL₂ E H D l _ _ Xo.X Xo.s Xo.univ Λ.A _ C.Φ Γ Ψ hA hΦ _ νU tU
+  obtain ⟨T₀, -, h₀⟩ := _root_.GlobalTheory.SpecTangent.spec_tangent hL hL₂ E H D l _ _ Xo.X Xo.s Xo.univ Λ.A _ C.Φ Γ Ψ hA hΦ _ νU tU
   have HP : IsPullback Y.m0.toSABMap.φ (Y.oF.t.G.hom ≫ pullback.snd _ _) (Xo.univ.t.G.hom ≫ Xo.s)
       (spMap (IntermediateField.inclusion c.le).toRingHom) :=
     Y.m0.toSABMap.cart.1.paste_vert (IsPullback.of_hasPullback _ _)

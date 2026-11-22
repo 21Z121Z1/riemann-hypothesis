@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsExtensionEtal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEtaleCompletionResidueEquiv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RingHomFiniteOfQuasiFiniteCompleteLocal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RingKrullDimLeOfIsEtaleCompletion
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InjectiveOfFiniteOfRingKrullDimLeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InjectiveOfFiniteOfRingKrullDimLe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompleteNormalGaloisCoverOfFinite
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RingEquivSubMemMaximalIdealOfPurelyInsepResidue
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing
@@ -62,7 +62,7 @@ theorem isEtaleCompletion_of_galRigid : ∀ (O R : Type) [CommRing O] [IsDomain 
     · rw [← hb1, ← Ideal.map_map, hψe.2.1]; exact h
     · refine RingHom.Finite.of_comp_finite (f := ψ) ?_
       rw [RingHom.comp_assoc, hb1]; exact hfin
-  have hbinj : Function.Injective b := GlobalTheory.T.injective_of_finite_of_ringKrullDim_le' A R b hbfin ((_root_.GlobalTheory.ringKrullDim_le_of_isEtaleCompletion O A ψ hψe).trans hdim)
+  have hbinj : Function.Injective b := _root_.GlobalTheory.FiniteMapInj.injective_of_finite_of_ringKrullDim_le A R b hbfin ((_root_.GlobalTheory.ringKrullDim_le_of_isEtaleCompletion O A ψ hψe).trans hdim)
   obtain ⟨R', _, _, _, θ, hR'cn, hθl, hθi, hθf, hfix⟩ := _root_.GlobalTheory.GalCover.exists_isCN_galois_of_finite A R b ⟨hAn, hAi, hAc, hA0⟩ hbfin hbinj
   let q := ringExpChar M
   haveI : ExpChar M q := ringExpChar.expChar M

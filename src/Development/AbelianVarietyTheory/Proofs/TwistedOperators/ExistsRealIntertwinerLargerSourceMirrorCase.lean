@@ -60,7 +60,7 @@ theorem exists_isCoverIt_swap (p q r s : ℕ) (T₀ : GrpData (p * r + q * s) (p
       (fun P x x' => by simp only [A, map_add, ContinuousLinearMap.add_apply])
       (fun c P x => by simp only [A, map_smul, map_smulₛₗ, ContinuousLinearMap.smul_apply])
   have hB : ∀ P x, B P x = A x (F.ι (sw P)) := fun _ _ => rfl
-  obtain ⟨-, hd1, hd2⟩ := GlobalTheory.T.fock_derived_actions_tensor_members p q r s T₀ T₁ T₂ F
+  obtain ⟨-, hd1, hd2⟩ := _root_.GlobalTheory.FockEmbExp.fock_derived p q r s T₀ T₁ T₂ F
   have hsym := GlobalTheory.FockSwap.swap_symmetry r s p q
   refine ⟨B, ?_, ?_, ?_, ?_, ?_⟩
   · intro P
@@ -193,7 +193,7 @@ theorem GlobalTheory.Chain.RealItLarge.itLarge : ∀ {D : D7} (V W : HSp D) (S S
     obtain ⟨be, de, hd, e1, e2⟩ := hP τ
     exact GlobalTheory.Chain.RealItLarge.exists_locIt_large hX h1 h2 hB M M' τ (al := []) (ga := []) hd e1 e2
   choose hr A hA using key
-  obtain ⟨It, I, hI⟩ := GlobalTheory.T.exists_globalFockIntertwiner_tensor_realPlaces D V W _ _ M M' aS aT A GlobalTheory.Contr.contraction.2 (GlobalTheory.T.gluing_law_holds D _ _) hA
+  obtain ⟨It, I, hI⟩ := _root_.GlobalTheory.Chain.RealIt.TensorGlob.exists_globIt D V W _ _ M M' aS aT A GlobalTheory.Contr.contraction.2 (_root_.GlobalTheory.Chain.RealIt.GlueProof.glueLaw D _ _) hA
   have hc := fun τ => _root_.GlobalTheory.vacChar_of_record D V W _ _ M M' θ ψ χS χT ω f τ _ _ hθ hω (hexp τ).1 (hexp τ).2 hf
   exact ⟨It, GlobalTheory.Chain.RealIt.isItW_of_globIt hθ hI hr (_root_.GlobalTheory.vacuumFock_all_records D V W _ _ M M' ψ θ hω.std hθ f hf).2.2.2.2
     (fun τ => (hc τ).2.1) fun τ => (hc τ).2.2⟩

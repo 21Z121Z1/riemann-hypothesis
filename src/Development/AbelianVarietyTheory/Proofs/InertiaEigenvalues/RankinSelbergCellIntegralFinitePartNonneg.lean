@@ -330,7 +330,7 @@ theorem lintegral_whit_sq_eq : ∀ (E : Type) [Field E] [NumberField E] [IsTotal
       continuous_const.matrix_vecMul Units.continuous_val
     exact ((hB.cont.enorm.measurable.pow_const 2).mul (hG.comp hv).enorm.measurable).mul
       (ENNReal.measurable_ofReal.comp hmd)
-  have e1 := GlobalTheory.T.lintegral_theta_series_unfold_mirabolic E (m + 1) (Nat.succ_pos m) μ 𝓕 𝓕P h𝓕 h𝓕P
+  have e1 := _root_.GlobalTheory.ThetaUnfold.lintegral_theta_unfold E (m + 1) (Nat.succ_pos m) μ 𝓕 𝓕P h𝓕 h𝓕P
     (fun g y => ‖F g‖ₑ ^ 2 * ‖G y‖ₑ * ENNReal.ofReal (GlobalTheory.RSnm.detAbs g ^ x))
     hmeas (fun γ g y => by simp only [hB.left, hdet])
   simp_rw [← ENNReal.tsum_mul_left, ← ENNReal.tsum_mul_right]
@@ -352,7 +352,7 @@ theorem lintegral_whit_sq_eq : ∀ (E : Type) [Field E] [NumberField E] [IsTotal
   have hgood : Good ψC (m + 1 - 1) F := GlobalTheory.CuspGeneric.good_top E m ψC F hB.cont hB.left
     fun r hr hra g => _root_.GlobalTheory.CuspGeneric.avg_blk_last_eq_zero E (m + 1) F hB.cont hB.left hB.cusp r hr hra g
   have e2 := (_root_.GlobalTheory.MirTower.unfold_mirabolic E (m + 1) μ ψC (_root_.GlobalTheory.StdCharStd.stdPsi_adelicChar E) 𝓕P 𝓕₀ h𝓕P h𝓕₀' w hwm hwl hwu).1 F hgood
-  rw [GlobalTheory.T.iteratedColumnTransform_eq_globalWhittaker E (m + 1) F (Nat.succ_pos m) hB.cont hB.left] at e2
+  rw [_root_.GlobalTheory.CuspGeneric.WhitEq.whit_eq_whittaker E (m + 1) F (Nat.succ_pos m) hB.cont hB.left] at e2
   simp_rw [mul_assoc]
   exact e2.symm
 

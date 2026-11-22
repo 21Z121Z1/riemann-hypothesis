@@ -44,7 +44,7 @@ theorem main_alt_alt : ∀ (hL : _root_.UpperTheory.Zero.LLC.RecTExists) (D : D7
       rw [hx1, mul_one] at e
       rw [e, mul_one]
   have hyK : y ∈ K := by
-    refine GlobalTheory.T.mem_subgroup_of_trivOutside_of_local_points K T y hyT fun w hw => ?_
+    refine _root_.GlobalTheory.TrivOutsideGen.mem_of_trivOutside_of_local K T y hyT fun w hw => ?_
     have hwne : w ≠ s.v := (Finset.mem_erase.1 hw).1
     have hwg : w ∈ PendOf.gPl D := hfin.mem_toFinset.1 (Finset.mem_erase.1 hw).2
     obtain ⟨kv, hkv⟩ := hwg

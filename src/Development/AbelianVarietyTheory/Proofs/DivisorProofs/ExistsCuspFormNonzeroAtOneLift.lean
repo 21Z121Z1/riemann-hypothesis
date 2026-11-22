@@ -3,12 +3,12 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsArchOne
 import Development.AbelianVarietyTheory.BlockTheory.PoincareCuspForms.SmallUnipotentElements
 import Development.AbelianVarietyTheory.Definitions.UpperBounds.FreeBallIffOfDimXEqZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUpperLevelSubgroupComponent
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UpperLevelIsUnitaryStabiliserBothLatticesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UpperLevelIsUnitaryStabiliserBothLattices
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTotallySplitPrimeUpperLevelUnipotent
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UpperLevelTrivialDefiniteNoContractionStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDetPowerSectionNeZeroDefiniteStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FreeBallNoContractionUnitaryUpperLevelStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrbitInterpolationDetWeightFreeBallIndefiniteStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UpperLevelTrivialDefiniteNoContraction
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDetPowerSectionNeZeroDefinite
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FreeBallNoContractionUnitaryUpperLevel
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrbitInterpolationDetWeightFreeBallIndefinite
 
 open NumberField Module ReciprocityTheory.ChartRestriction.G.FD ReciprocityTheory.ChartRestriction.G.AR.Inst ReciprocityTheory.ChartRestriction.G.AR.Up GlobalTheory.IndefiniteRowSideFullHecke.FrameWeightGapBounds GlobalTheory.ShareOn
 
@@ -38,16 +38,16 @@ theorem comp_interp {E : Type} [Field E] [NumberField E] [IsCMField E] {r : ℕ}
     (x : Frame X.Ψ r) (hx : x ∈ X.dom) (hNC : GlobalTheory.IndefiniteRowSideFullHecke.SmallUnipotentElements.NoContraction X x) :
     ∃ P ∈ X.SS (deMul X.Ψ r X.p0 s), P x ≠ 0 ∧ ∀ γ ∈ G, γ ∉ X.Γ → P (lact γ x) = 0 := by
   by_cases hdef : X.p0 = 0 ∨ X.p0 = r
-  · have h1 := GlobalTheory.T.upperLevel_trivial_definite_noContraction E r X G g hg hgr hL' hU hdef x hx hNC
-    obtain ⟨P, hP, hP0⟩ := GlobalTheory.T.exists_detPowerSection_ne_zero_definite E r X.toData (fun γ hγ => h1 γ (hΓG hγ)) hdef s x hx
+  · have h1 := _root_.GlobalTheory.DefiniteLevel.eq_one_of_definite E r X G g hg hgr hL' hU hdef x hx hNC
+    obtain ⟨P, hP, hP0⟩ := _root_.GlobalTheory.DefConst.exists_ne_zero E r X.toData (fun γ hγ => h1 γ (hΓG hγ)) hdef s x hx
     refine ⟨P, hP, hP0, fun γ hγ hγ' => absurd ?_ hγ'⟩
     rw [h1 γ hγ]
     exact X.Γ.one_mem
   · push_neg at hdef
     have hp0 : 0 < X.p0 := Nat.pos_of_ne_zero hdef.1
     have hp1 : X.p0 < r := lt_of_le_of_ne X.p0_le hdef.2
-    obtain ⟨x0, h0, ⟨b, hb, rfl⟩, hFB⟩ := GlobalTheory.T.freeBall_noContraction_unitaryUpperLevel E r X G g hg hgr hΓG hL' hΛ hU x hx hNC
-    obtain ⟨P, hP, hP0, hPγ⟩ := GlobalTheory.T.orbitInterpolation_detWeight_freeBall_indefinite E r X.toData hχ G x0 h0 hFB hp0 hp1 s hs hsb
+    obtain ⟨x0, h0, ⟨b, hb, rfl⟩, hFB⟩ := _root_.GlobalTheory.FreeBallAt.freeBall_at E r X G g hg hgr hΓG hL' hΛ hU x hx hNC
+    obtain ⟨P, hP, hP0, hPγ⟩ := _root_.GlobalTheory.OrbitInterpWeight.orbit_interp_deMul E r X.toData hχ G x0 h0 hFB hp0 hp1 s hs hsb
     have hx0 : x0 ∈ X.dom := IW.orth_mem_dom X.toData x0 h0
     refine ⟨P, hP, ?_, fun γ hγ hγ' => ?_⟩
     · rw [hP.1.1.2.1 x0 hx0 b hb]
@@ -86,7 +86,7 @@ theorem exists_form_one_lift : ∀ (E : Type) [Field E] [NumberField E] [IsCMFie
   have hsb' : 2 * r + 50 * r ^ 2 * ((M.comp c).Ψ.card * ((M.comp c).p0 * (r - (M.comp c).p0))) + 1 ≤ s := by
     rw [hΨ, M.comp_basePoint c]; exact hsb
   obtain ⟨P, hP, hP0, hPγ⟩ := comp_interp (M.comp c) (M.χ_one c) G g hg hgr hΓG
-    (fun β hβ => (GlobalTheory.T.upperLevel_isUnitaryStabiliser_both_lattices E r U C M c β ((hG β).1 hβ)).1) (fun β hβ => (GlobalTheory.T.upperLevel_isUnitaryStabiliser_both_lattices E r U C M c β ((hG β).1 hβ)).2)
+    (fun β hβ => (_root_.GlobalTheory.UpperStab.upper_isUStab E r U C M c β ((hG β).1 hβ)).1) (fun β hβ => (_root_.GlobalTheory.UpperStab.upper_isUStab E r U C M c β ((hG β).1 hβ)).2)
     (fun β hβ => hUn c β ((hG β).1 hβ)) s hs hsb' _ hx' hNC
   let u : C → Frame M.Ψ r → ℂ := fun c' y => if c' = c then P (castFrame hΨ.symm y) else 0
   refine ⟨u, ?_, ?_, ?_, ?_⟩

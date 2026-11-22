@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PlacesToAdeles
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.AllPositions
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilCharacterSplitPlaceExistsContinuousNontrivia
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ExistsUnitarySupportedAtPlaceOfMulEqIdem
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceLocalGroupElementsJacobiBesselStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceLocalGroupElementsJacobiBessel
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BesselFourierJacobiNormalFramesExistSplitPlace
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatMapsPreserveSchwartzBruhatAndSurjective
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ContrFactor
@@ -59,7 +59,7 @@ theorem gsupp2_std : ∀ (D : D7), OmLoc D → FlatBF D → FlatFB D → ContrLo
   have hcont : Continuous S.ψ := (hchar S.ψ hψ).1
   obtain ⟨μT, hμT⟩ := hcomp s₂.χW
   have hμS := isComp_inv p hμ
-  obtain ⟨hL1, hL2, hL3⟩ := (GlobalTheory.T.splitPlace_localGroupElements_jacobi_bessel D k p).1 B'.V _ F.G₂
+  obtain ⟨hL1, hL2, hL3⟩ := (_root_.GlobalTheory.LocGrp.local_groups D k p).1 B'.V _ F.G₂
   obtain ⟨hk, hhk⟩ := hL2 h hh
 
   let Φ₂' : SB (Matrix (GlobalTheory.StepData.XIx (Fin κ) t (j + 1 + 1) ⊕ Fin (c + 1)) (GlobalTheory.StepData.XIx (Fin κ) t (j + 1) ⊕ Fin (c + 1 + 1)) k) :=
@@ -97,7 +97,7 @@ theorem gsupp2_std : ∀ (D : D7), OmLoc D → FlatBF D → FlatFB D → ContrLo
   obtain ⟨q, hq, u, hu, hkqu⟩ := hds
   obtain ⟨r, hr⟩ := (hL1 q).exists
   obtain ⟨u', hu'⟩ := (hL1 u).exists
-  have hrB := (GlobalTheory.T.splitPlace_localGroupElements_jacobi_bessel D k p).2.2 _ (c + 1) σ B' (F.s * p.xi) F.F₂ F.G₂ F.bes' r q hq hr
+  have hrB := (_root_.GlobalTheory.LocGrp.local_groups D k p).2.2 _ (c + 1) σ B' (F.s * p.xi) F.F₂ F.G₂ F.bes' r q hq hr
   refine ⟨r, hrB, hr.1, u', u, hu', hu, ?_⟩
   have h1 := hL3 r q u' u hr hu'
   rw [← hkqu] at h1

@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.QuasiCompact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartSome
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteSectionTranslatesCoverSemiAbelian
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartIsOpenImmersionOverBaseStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartIsOpenImmersionOverBase
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothNeighbourhoodTranslatesCoverGroup
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DescentDatumCarriesTranslateChartStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDescentOfChartsPulledBackFromFlat
@@ -33,8 +33,8 @@ theorem descends_near_closed_fibre : ∀ (R : Type) [CommRing R] [IsDomain R] [I
   haveI : IsIntegrallyClosed R := hA.2.2.1
   haveI : Smooth N.U.hom := N.smooth
   obtain ⟨G, β, ψ, hψ, hcovG, hpb, hφβ⟩ := _root_.GlobalTheory.Mum.ChartDescent.exists_descent R S G'.left π G'.hom hp hs hS φ.hom.left (Over.w φ.hom)
-    N.U inferInstance (Option (Fin n)) (N.chart x) (fun j => (GlobalTheory.T.chart_isOpenImmersion_over_base S π G' N n x j).1)
-    (fun j => (GlobalTheory.T.chart_isOpenImmersion_over_base S π G' N n x j).2) (_root_.GlobalTheory.Mum.chart_cover S π G' N n x hcov)
+    N.U inferInstance (Option (Fin n)) (N.chart x) (fun j => (_root_.GlobalTheory.Mum.Near.chart_isOpenImmersion_over S π G' N n x j).1)
+    (fun j => (_root_.GlobalTheory.Mum.Near.chart_isOpenImmersion_over S π G' N n x j).2) (_root_.GlobalTheory.Mum.chart_cover S π G' N n x hcov)
     (GlobalTheory.T.descentDatum_carries_translateChart S π G' N n a x (fun i => (hx i).2) φ hφ)
   refine ⟨G, β, Over.homMk (ψ none) (hψ none).2.1, ?_, hpb, (hψ none).1, ?_, hφβ⟩
   · exact smooth_of_charts_cover _ _ _ _ ψ G.hom N.U.hom (fun j => (hψ j).1) hcovG (fun j => (hψ j).2.1) N.smooth

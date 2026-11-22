@@ -17,7 +17,6 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ArtinMapSplitP
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ModulusUnramifiedCharDetHeckeDoubleCosetSplit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryGroupCharacterOfHeckeChar
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergCombinationCommFockPolynomialVectors
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.VacuumVectorDropAuxiliaryPlacesStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InvNatPowRpowNegHalfEvenEqPow
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsDetRootOfDetAt
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GaloisSideTwistedSelmerAuxiliaryPrimes
@@ -25,7 +24,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffHeckePolyOfCom
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjPlNeOfSplit
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChosenPlacesAdmissibleGoodSetup
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmissibleConjugatePairPlacesEqSelfOfGoodChars
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UniversalCharSpreadCommutesWithRestrictionStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UniversalCharSpreadCommutesWithRestriction
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsUnivCharWithUnivChar
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnivChar
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.L2.DIV Formalism.IndefR Formalism.IndefR.Datum IsDedekindDomain NumberField Matrix GlobalTheory.ExportSeries
@@ -340,7 +339,7 @@ theorem thURel_of_tie {ρ : Setup X} (hρ : ρ.Good) {Y : NExp D.R D.host D.what
     rw [hχ, ← hc']
     congr 4
     funext v
-    exact GlobalTheory.T.universalChar_spread_commutes_with_restriction D N X Y hU i M (ρ.ch i) (hρ.ch i) Q ((Q.erase P).erase Pb) hQ'Q hA hA' hsubH c v.1 v.2
+    exact _root_.GlobalTheory.SpreadRestrict.spread_restrict D N X Y hU i M (ρ.ch i) (hρ.ch i) Q ((Q.erase P).erase Pb) hQ'Q hA hA' hsubH c v.1 v.2
   have hIcc : Finset.Icc 1 (Links.Wc D J).rank = Finset.Icc 1 D.R.r := by rw [FWT.rank_Wc]
   have hX2 : ∀ c' : ↥H' → ZMod (X.l i ^ M), ∑ c ∈ Finset.univ.filter (fun c : ↥H → ZMod (X.l i ^ M) =>
       ∀ v : ↥H', c ⟨v.1, hsubH v.1 v.2⟩ = c' v), Ξ c g =

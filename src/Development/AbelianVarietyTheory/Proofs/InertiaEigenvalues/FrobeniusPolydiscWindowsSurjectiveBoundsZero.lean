@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsWindowRa
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdditiveSystemGeneralLemmaAllOrders
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobeniusWindowSeriesTermNormLeRowBound
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormFrobeniusWindowSeriesTermMono
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WindowSummedRowPowEqAdditiveSystemPowerSumStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WindowSummedRowPowEqAdditiveSystemPowerSum
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormalizedRowCoefficientMatricesDetNormStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormalOfInvMul
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardWindowZerosEqIntegralAdditiveSystemStatement
@@ -88,13 +88,13 @@ theorem normalize {F : Type} [NormedField F] [IsUltrametricDist F] (p : ℕ) [Fa
         have := congrArg (fun v => B L *ᵥ v) H
         simpa only [Matrix.mulVec_mulVec, Matrix.mul_nonsing_inv _ hdu, Matrix.one_mulVec] using this
       have H3 := congrFun H2 r
-      rw [← GlobalTheory.T.windowSummedRow_pow_eq_additiveSystemPowerSum F p h ϖ lam π L U hL z r] at H3
+      rw [← _root_.GlobalTheory.PMonE.rowS_winPt_pow_eq_gsum_coefB F p h ϖ lam π L U hL z r] at H3
       have H4 := (iterateFrobenius_inj F p (h - (r : ℕ))).eq_iff.1 (by simpa [iterateFrobenius_def] using H3)
       exact (div_left_inj' (hc r)).1 H4
     · intro H
       have H2 : gsum (p ^ h) (L + U) B z = nb b := by
         funext r
-        rw [← GlobalTheory.T.windowSummedRow_pow_eq_additiveSystemPowerSum F p h ϖ lam π L U hL z r, H r]
+        rw [← _root_.GlobalTheory.PMonE.rowS_winPt_pow_eq_gsum_coefB F p h ϖ lam π L U hL z r, H r]
       rw [H2]
 
 theorem winThm : WinThm := by

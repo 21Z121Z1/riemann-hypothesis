@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsLv
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsSquareIntegrableIffMemL2
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicFixatorEqUnipotentRadicalMulCommonFixator
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsotropicFrameDecompositionSubgroupPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsotropicFrameDecompositionSubgroupProperties
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteCovolumeCommonAdelicFixatorOfColumns
 
 open scoped TensorProduct NNReal ENNReal Matrix
@@ -25,7 +25,7 @@ theorem semiLat_fixG : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Num
     ext x
     simp only [Subgroup.mem_subgroupOf, Subgroup.mem_inf]
     exact ⟨fun e => e.1, fun e => ⟨e, h x.2⟩⟩
-  obtain ⟨hC, -, cM, cN, hN, hP, hd, hn, -⟩ := GlobalTheory.T.isotropicFrameDecomposition_subgroup_properties F E σ n J j m C D Z J₀ H
+  obtain ⟨hC, -, cM, cN, hN, hP, hd, hn, -⟩ := _root_.GlobalTheory.SphEis.frame_facts F E σ n J j m C D Z J₀ H
   haveI := locallyCompact_unipRad H.cm H.herm hC
   obtain ⟨ν, DN, hν, hDN, h1⟩ := exists_mass_one (cocompact_unipRad H.cm H.herm hC)
   haveI : LocallyCompactSpace (fixG σ J C ⊓ fixG σ J D : Subgroup (GAd σ J)) := cM.locallyCompactSpace

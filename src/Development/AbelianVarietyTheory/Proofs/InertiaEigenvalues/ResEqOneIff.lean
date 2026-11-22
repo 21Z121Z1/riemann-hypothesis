@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ConvZero
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachInclusionInjectiveSaturatedInterStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FixedByCyclotomicKernelEtalePhiSolutionMemWachStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FixedByCyclotomicKernelEtalePhiSolutionMemWach
 
 noncomputable section
 
@@ -396,7 +396,7 @@ theorem nonempty_wEt : ∀ (l : ℕ) [Fact l.Prime] (P : LocPrime l) (AI : LocAi
   choose e he using h
   obtain ⟨h1, h2, -⟩ := GlobalTheory.T.wachInclusion_injective_saturated_inter l P AI K s LL hg Γ R I hI
   refine exists_et I (fun g h x => gRW_mul AI LL _ _ x) (fun g x => phi_gRW AI LL _ x) h1 h2
-    (fun p q A A' U hA hA' hU hφ => GlobalTheory.T.fixedByCyclotomicKernel_etalePhi_solution_mem_wach l P AI K s LL hg Γ R I hI p q A A' 0 U hA hA'
+    (fun p q A A' U hA hA' hU hφ => _root_.GlobalTheory.HWL.Rational.main l P AI K s LL hg Γ R I hI p q A A' 0 U hA hA'
       (fun i j g hgK hχ => hU i j ⟨g, hgK⟩ ((res_eq_one_iff Γ _).2 hχ)) ?_) e
     (fun T g hg => (he T).1 g ((res_eq_one_iff Γ g).1 hg)) (fun T => (he T).2)
   rw [hφ, Matrix.map_zero _ (map_zero _), add_zero]

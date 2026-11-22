@@ -25,7 +25,7 @@ theorem orbMass_stabilizer_le (K V : Type) [Field K] [NumberField K] [StarRing K
       (∑ n' ∈ Finset.Icc 1 (n * N₀), orbMass (isom (hRes h (perp h U)))
         (latsDisc (R := 𝓞 K) (hRes h (perp h U)) n')) *
       ((Ideal.absNorm (Ideal.span {T}) * n : ℕ) : ℝ≥0∞) := by
-  obtain ⟨φ, hφ⟩ := GlobalTheory.T.definite_unitary_stabilizer_subspace_prod K V h hK hs hp U
+  obtain ⟨φ, hφ⟩ := _root_.GlobalTheory.Mass.StabSplit.main K V h hK hs hp U
   have hs1 := hRes_symm h hs U
   have hp1 := hRes_pd h hp U
   have hs2 := hRes_symm h hs (perp h U)
@@ -85,7 +85,7 @@ theorem orbMass_stabilizer_le (K V : Type) [Field K] [NumberField K] [StarRing K
     exact ⟨sA _ _ h1, sB _ _ h2⟩
   have mp : Set.MapsTo (fun L : Submodule (𝓞 K) V => (latIn U L, latIn (perp h U) L)) X (A ×ˢ B) := by
     rintro L ⟨h1, h2, h3, -, h4⟩
-    obtain ⟨k1, k2, k3, -⟩ := GlobalTheory.T.primitive_hermitian_sublattice_discriminant_generators K V h hK hs hp L U 1 h1 h3
+    obtain ⟨k1, k2, k3, -⟩ := _root_.GlobalTheory.Mass.PrimDisc.main K V h hK hs hp L U 1 h1 h3
     refine ⟨⟨k1, h4⟩, (memB _).2 ⟨k2, ?_, ?_⟩⟩
     · exact Nat.one_le_iff_ne_zero.2
         (GlobalTheory.T.hermitianLatticeDiscriminantOrder_ne_zero_unimodular K (perp h U) _ hK hs2 (pd_nondeg _ hp2) _ k2).1
@@ -103,10 +103,10 @@ theorem orbMass_stabilizer_le (K V : Type) [Field K] [NumberField K] [StarRing K
     apply Subtype.ext
     apply φ.injective
     exact Prod.ext (congrArg (fun q => q.1.1) e) (congrArg (fun q => q.2.1) e)
-  have e1 := GlobalTheory.T.orbitStabilizerMass_eq_weightedSum_fibres (MulAction.stabilizer (isom h) U) _ _ X (A ×ˢ B)
+  have e1 := _root_.GlobalTheory.Mass.orbMass_eq_orbSum_fibre (MulAction.stabilizer (isom h) U) _ _ X (A ×ˢ B)
     (fun L : Submodule (𝓞 K) V => (latIn U L, latIn (perp h U) L))
     (fun γ L => Prod.ext (hφ γ L).1 (hφ γ L).2) sX sY mp fY
-  have e2 := GlobalTheory.T.orbitStabilizerMass_prod_eq_mul (MulAction.stabilizer (isom h) U) _ _ _ _ φ A B hact sA sB fA fB
+  have e2 := _root_.GlobalTheory.Mass.ProdMass.orbMass_prod (MulAction.stabilizer (isom h) U) _ _ _ _ φ A B hact sA sB fA fB
   have e3 : orbMass (isom (hRes h (perp h U))) B ≤ ∑ n' ∈ Finset.Icc 1 (n * N₀),
       orbMass (isom (hRes h (perp h U))) (latsDisc (R := 𝓞 K) (hRes h (perp h U)) n') :=
     (_root_.GlobalTheory.Mass.OrbMono.main (isom (hRes h (perp h U))) (Submodule (𝓞 K) (perp h U))).2.2.1 ℕ _ B _ _ subset_rfl
@@ -151,7 +151,7 @@ theorem main : MaxMass → ∀ (K V : Type) [Field K] [NumberField K] [StarRing 
       orbMass (isom (hRes h U)) (latsDisc (R := 𝓞 K) (hRes h U) (de ^ 2)) * ENNReal.ofReal C := by
     intro U hU
     have dU := hdim U hU
-    obtain ⟨hc, -, -, -⟩ := (GlobalTheory.T.witt_extension_totally_definite_hermitian K V h hK hs hp).2 U
+    obtain ⟨hc, -, -, -⟩ := (_root_.GlobalTheory.Mass.Witt.witt_definite K V h hK hs hp).2 U
     have dW : Module.finrank K (perp h U) = 1 := by
       have := Submodule.finrank_add_eq_of_isCompl hc
       omega

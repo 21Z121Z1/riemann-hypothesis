@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsStableGauss
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuadraticWeilFourierPreservesTestAdditive
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFactsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFacts
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedStandardAddCharConductorProperties
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FourierMatch
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SelfDualIffLatticeVolumeAndPlancherel
@@ -19,8 +19,8 @@ variable {F E : Type} [NontriviallyNormedField F] [NontriviallyNormedField E] [N
 theorem NL_add [Unram F E] (A : Et F E) (hK : IsField A.K) (hL : IsField A.L) (t u : A.L) :
     A.NL (t + u) = A.NL t + A.NL u + Algebra.trace A.K A.L (star t * u) := by
   apply algMap_inj A hK hL
-  rw [map_add, map_add, (GlobalTheory.T.etaleHermitianPair_structure_facts F E A).1, (GlobalTheory.T.etaleHermitianPair_structure_facts F E A).1, (GlobalTheory.T.etaleHermitianPair_structure_facts F E A).1,
-    (GlobalTheory.T.etaleHermitianPair_structure_facts F E A).2.1, star_add, star_mul, star_star]
+  rw [map_add, map_add, (_root_.GlobalTheory.JR.EtFacts.main F E A).1, (_root_.GlobalTheory.JR.EtFacts.main F E A).1, (_root_.GlobalTheory.JR.EtFacts.main F E A).1,
+    (_root_.GlobalTheory.JR.EtFacts.main F E A).2.1, star_add, star_mul, star_star]
   ring
 
 theorem two_trace_NL [Unram F E] (A : Et F E) (hK : IsField A.K) (hL : IsField A.L) (x : A.K) (y : A.L) :
@@ -28,7 +28,7 @@ theorem two_trace_NL [Unram F E] (A : Et F E) (hK : IsField A.K) (hL : IsField A
   rw [beta_apply]
   have h : Algebra.trace A.K A.L (star y * y) = A.NL y + A.NL y := by
     apply algMap_inj A hK hL
-    rw [(GlobalTheory.T.etaleHermitianPair_structure_facts F E A).2.1, map_add, (GlobalTheory.T.etaleHermitianPair_structure_facts F E A).1, star_mul, star_star]
+    rw [(_root_.GlobalTheory.JR.EtFacts.main F E A).2.1, map_add, (_root_.GlobalTheory.JR.EtFacts.main F E A).1, star_mul, star_star]
     ring
   rw [h, mul_add, map_add, two_mul]
 

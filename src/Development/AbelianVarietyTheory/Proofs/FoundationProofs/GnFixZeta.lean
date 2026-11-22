@@ -3,9 +3,9 @@ import Development.AbelianVarietyTheory.Definitions.Foundations.ApplyEqOfMemAdjo
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsTopWTopWOfExists
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsBasisOnZetaPowMulQPow
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CupKummerDlogModPrimePowLevelL
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GeometricLevelH1CoboundaryStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GeometricLevelH1Coboundary
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EdgeClassCupProductGeometric
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KummerCocycleValueExpansionEqLogDerivSmulStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KummerCocycleValueExpansionEqLogDerivSmul
 open scoped MatrixGroups
 open GlobalTheory.KZ GlobalTheory.Glue GlobalTheory.K5 GlobalTheory.KummerEisensteinGalois
 
@@ -162,8 +162,8 @@ theorem edge_dlog : ∀ (p : ℕ) [Fact p.Prime], p ≠ 2 → ∃ c : ℕ, ∀ (
   intro p _ hp2
   obtain ⟨c₁, h53⟩ := _root_.GlobalTheory.K5.LevelDown.cup_kummer_dlog_mod p hp2
   obtain ⟨c₂, hed⟩ := _root_.GlobalTheory.EdgeAlg.edge_class_cup p hp2 c₁
-  obtain ⟨c₃, hgeo⟩ := GlobalTheory.T.kummerCocycle_value_expansion_eq_logDeriv_smul p hp2
-  obtain ⟨c₄, h71⟩ := GlobalTheory.T.geometric_level_h1_coboundary p hp2
+  obtain ⟨c₃, hgeo⟩ := _root_.GlobalTheory.K5.GeoKummer.geo_cob p hp2
+  obtain ⟨c₄, h71⟩ := _root_.GlobalTheory.K5.Reb.h1_geometric_level_coboundary p hp2
   refine ⟨c₂ + c₃ + c₄, ?_⟩
   intro Ω _ _ hΩ T L n hnL hn1 ψ hψ ι hι u v α β α' β' hu hv r s hr hs x y lz η hx hy hlz hcup hloc
   haveI := hΩ.clo

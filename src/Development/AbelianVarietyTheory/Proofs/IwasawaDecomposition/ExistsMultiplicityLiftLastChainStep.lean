@@ -4,20 +4,21 @@ import Formalism.LocalRingCardinality.DataExtra
 import Formalism.LocalRingCardinality.DataTies
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ColLieApply
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsColumnHighestWeightPolynomialMapStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ColumnHighestRowIntertwinersProportionalStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ColumnHighestRowIntertwinersProportional
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsColStableDisjointStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsBilinearFischerPairingMatrixEntryPolynomiaStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsBilinearFischerPairingMatrixEntryPolynomia
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsDegreeBoundOfRowUnitaryInvariantPairingStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteSmoothIrreducible
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TensorProductDefiniteUnitaryLocalModelsIrreducib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DefiniteThetaIntegralIntegrableContinuous
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DefiniteThetaIntegralInvariantRealTranslate
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DefiniteUnitaryRealPointsActFockSubstitutionStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemMultTOfEquivariantStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DefiniteUnitaryRealPointsActFockSubstitution
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemMultTOfEquivariant
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MultiplicitySpaceDefiniteContinuousInvariantEqui
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ChainStepsLevelCharacterConditionsHold
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteDimensionalModel
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LastStepVectorLiftPairFlagLevelCharactersStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LastStepVectorLiftPairFlagLevelCharacters
+import Formalism.LocalToGlobal.IndefiniteReal.FWExist
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsFockVacAtOfIsThetaAt
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaKOContinuousAndRatInvariant
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OmPureTensorOOfFinite
@@ -96,7 +97,7 @@ theorem mem_of_intertwiner (hnm : n ≤ m) {π : ι → Matrix.unitaryGroup (Fin
   obtain ⟨U', h0, hle, hd, hst'⟩ := GlobalTheory.T.exists_colStable_complement_of_lt ι m n X U W hst hW (lt_of_le_of_ne hU fun e => hn (e ▸ hΦ))
   obtain ⟨Φ₁, h1, h1', a1, μ, b1⟩ := GlobalTheory.T.exists_column_highest_weight_polynomial_map ι m n X U' h0 hst'
   obtain ⟨Φ₂, h2, h2', a2, μ', b2⟩ := GlobalTheory.T.exists_column_highest_weight_polynomial_map ι m n X U hU0 hst
-  obtain ⟨r, hr⟩ := GlobalTheory.T.columnHighest_rowIntertwiners_proportional ι m n hnm X π hπ Φ₁ Φ₂ μ μ' h1' (fun τ u x => ⟨hle h1 τ u x, hU _ h2 τ u x⟩)
+  obtain ⟨r, hr⟩ := _root_.GlobalTheory.DefLift.colHighest_intertwiner_proportional ι m n hnm X π hπ Φ₁ Φ₂ μ μ' h1' (fun τ u x => ⟨hle h1 τ u x, hU _ h2 τ u x⟩)
     (fun τ k l h => ⟨a1 τ k l h, a2 τ k l h⟩) fun τ k => ⟨b1 τ k, b2 τ k⟩
   have : Φ₂ ∈ U ⊓ U' := ⟨h2, hr ▸ U'.smul_mem r h1⟩
   rw [hd] at this
@@ -106,7 +107,7 @@ theorem mem_of_invariant (hnm : n ≤ m) {π : ι → Matrix.unitaryGroup (Fin m
     (U : Submodule ℂ (Pol ι m n →ₗ[ℂ] X →ₗ[ℂ] ℂ)) (hU0 : U ≠ ⊥)
     (hU : ∀ β ∈ U, ∀ τ u P x, β (rowSub n τ u P) (π τ u x) = β P x) (hst : ∀ β ∈ U, ∀ τ g, β ∘ₗ colSub m τ g ∈ U)
     (β : Pol ι m n →ₗ[ℂ] X →ₗ[ℂ] ℂ) (hβ : ∀ τ u P x, β (rowSub n τ u P) (π τ u x) = β P x) : β ∈ U := by
-  obtain ⟨B, hB0, hBt, hBr⟩ := GlobalTheory.T.exists_bilinearFischerPairing_matrixEntryPolynomialRing ι m n
+  obtain ⟨B, hB0, hBt, hBr⟩ := _root_.GlobalTheory.DefLift.BilFischer.exists_pair ι m n
   have hinj : Function.Injective B.flip := (injective_iff_map_eq_zero _).2 fun Q h => hB0 Q fun P => LinearMap.congr_fun h P
   let Θ : (X →ₗ[ℂ] Pol ι m n) →ₗ[ℂ] (Pol ι m n →ₗ[ℂ] X →ₗ[ℂ] ℂ) :=
     { toFun := fun Φ => B.compl₂ Φ
@@ -260,7 +261,7 @@ theorem ioExists_definite {V W : HSp D} {S S' : D.what₂.Tau → SPar} (M : DSM
   have m2 := _root_.GlobalTheory.DefLift.AllPlus.finite_smooth_irreducible D W S' M' hM'
   obtain ⟨fd, inj, π, hπ, irr⟩ := _root_.GlobalTheory.DefLift.tensor_irreducible D V S M m1 hM
   obtain ⟨fd', inj', π', hπ', irr'⟩ := _root_.GlobalTheory.DefLift.tensor_irreducible D W S' M' m2 hM'
-  have hfock := GlobalTheory.T.definiteUnitary_realPoints_act_fock_substitution D ψ V W χS χT ω θ S S' M M' f hω hθ hV hW hM hM' hf hvac
+  have hfock := _root_.GlobalTheory.DefLift.FockAct.fock_act D ψ V W χS χT ω θ S S' M M' f hω hθ hV hW hM hM' hf hvac
   choose cV hcV0 hcV using fun τ => (hfock τ).1
   choose cW hcW0 hcW using fun τ => (hfock τ).2
   have hF := fun F : C => _root_.GlobalTheory.multT_cont_left_equiv D θ W S' M' π' J' χ' hM' (fun τ => (m2 τ).2.1) inj' hπ' F (hC F.2)
@@ -318,7 +319,7 @@ theorem ioExists_definite {V W : HSp D} {S S' : D.what₂.Tau → SPar} (M : DSM
           (hJ k hk).2 P
       have e2 : B (χ k • P) x F g = χ k * B P x F g := by rw [map_smul]; rfl
       rw [LinearMap.flip_apply, hLB, ← e2, hB, hB, hshift, hpe, hpe, e, pt.map_smul]
-    refine GlobalTheory.T.mem_multT_of_equivariant' D θ V S M π J χ _ hθ hV hM (fun τ => ⟨(m1 τ).1, (m1 τ).2.1⟩) fd inj hπ (fun x => ⟨?_, ?_, ?_⟩) hlev
+    refine _root_.GlobalTheory.DefLiftMult.mem_multT_of_equivariant D θ V S M π J χ _ hθ hV hM (fun τ => ⟨(m1 τ).1, (m1 τ).2.1⟩) fd inj hπ (fun x => ⟨?_, ?_, ?_⟩) hlev
       fun τ g => ?_
     · revert x
       refine hind _ (fun P x γ hγ g => ?_) (fun γ _ g => by simp) fun x y a b γ hγ g => by
@@ -388,7 +389,7 @@ theorem exists_lift_last : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 T 
     · rw [D.sp.Y_rank _ (min_le_right _ _), D.sp.X'_rank]
       exact Nat.add_le_add_left (Nat.mul_le_mul_right _ (min_le_right _ _)) _
     · exact SourceLaw.law_of_pair (R.βY (D.R.m - 1)) (R.datYt t (D.R.m - 1) R.triv) R.βX (R.datXt t)
-        (GlobalTheory.T.lastVector_lift_pair_flagLevel_characters R hL hM.inf hω hv t 1 κ 1 (SourceLaw.isLift_of_mem _ _ (R.datYt t (D.R.m - 1) R.triv) hκ)
+        (_root_.GlobalTheory.StepLaw.last_step_law R hL hM.inf hω hv t 1 κ 1 (SourceLaw.isLift_of_mem _ _ (R.datYt t (D.R.m - 1) R.triv) hκ)
           (SourceLaw.isLift_one _ _ (R.datXt t)))
   exact ⟨fun t => (h t).choose, fun t => (h t).choose_spec⟩
 

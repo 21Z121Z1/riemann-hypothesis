@@ -4,22 +4,22 @@ import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.SqNormI
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegrableOnOfRapidDec
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaKernelModerateGrowthWithSeminorms
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RankFacGen
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MixedModelTermsRationalUnipotentInvariantStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MixedModelTermsRationalUnipotentInvariant
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LintegralThetaLiftTermSumNeTop
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RationalFrameStabiliserNormalisesUnipotentRadicaStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RationalFrameStabiliserNormalisesUnipotentRadica
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicUnitaryTopology
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.NotIsCuspFunOnePlane
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsInfFamAndStdChar
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsIsotropicDualFrameOfSplitEmbeddingStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaSeriesSummableOnCovolumeDomainStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsIsotropicDualFrameOfSplitEmbedding
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaSeriesSummableOnCovolumeDomain
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MixedModelThetaSeriesModerateGrowth
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RestrictedHeisenbergTermsPermutedRationalUnitary
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AnisotropicTermsMeanZeroUnipotentRadical
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsotropicTermMeanInvariantUnipotentRadicalStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsotropicTermMeanInvariantUnipotentRadical
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnfoldingZeroMeanNormalizedSubgroup
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TsumSetIntegralFundamentalDomainEqZeroByOrbitsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TsumSetIntegralFundamentalDomainEqZeroByOrbits
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WittTowerRestrictionUnipotentRadicalInvariant
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaRestrictIsotropicQuotientWittTowerPropertieStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaRestrictIsotropicQuotientWittTowerPropertie
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.IndefR.Datum MeasureTheory NumberField Matrix
 open GlobalTheory.IndefiniteRowSideFullHecke.AdjointIsotropicDecomposition
@@ -102,7 +102,7 @@ theorem GlobalTheory.TowerCT.towerConstTermOfCompatible_holds : ∀ D : D7, Glob
   obtain ⟨hWlc, hWsc, hWt2, hWb, hWtg, -, hWcount⟩ := GlobalTheory.Mem.AdelicGroupTop.adelic_unitary_topology D W
   have hMc : ∀ a b : ℕ, Countable (Matrix (Fin a) (Fin b) D.host.E) := fun a b =>
     inferInstanceAs (Countable (Fin a → Fin b → D.host.E))
-  obtain ⟨C', h1, h2, h3⟩ := GlobalTheory.T.exists_isotropicDualFrame_of_splitEmbedding D V V' r C B hS
+  obtain ⟨C', h1, h2, h3⟩ := _root_.GlobalTheory.TwistDual.exists_isotropic_dual D V V' r C B hS
   have hstd : IsStdChar D ψ (-1) := hω.std
   obtain ⟨θ, hθ⟩ := (GlobalTheory.Ker.exists_infFam_and_stdChar D).1
   have hG := GlobalTheory.KernelSeminorm.thetaGrowth_onObjects D
@@ -123,7 +123,7 @@ theorem GlobalTheory.TowerCT.towerConstTermOfCompatible_holds : ∀ D : D7, Glob
     rfl
   have hf₁ : IsThetaFunO ψ V W (ω (g, 1) f) := hω.om_pres _ f hf
   have hfp : ∀ p : GA D V × GA D W, IsThetaFunO ψ V W (ω p f) := fun p => hω.om_pres p f hf
-  obtain ⟨hI1, hI2, -, -⟩ := (GlobalTheory.T.thetaRestrictIsotropicQuotient_wittTower_properties D V V' W r C B hS ψ hstd μ 𝓨 hY).1 _ hf₁
+  obtain ⟨hI1, hI2, -, -⟩ := (_root_.GlobalTheory.TowerRestrict.res_theta D V V' W r C B hS ψ hstd μ 𝓨 hY).1 _ hf₁
   have hvol : κ 𝓝 ≠ ⊤ := vol D V r C hS.frame κ 𝓝 hκ h𝓝
   have : IsFiniteMeasure (κ.restrict 𝓝) := isFiniteMeasure_restrict.mpr hvol
 
@@ -133,11 +133,11 @@ theorem GlobalTheory.TowerCT.towerConstTermOfCompatible_holds : ∀ D : D7, Glob
   have hsum : ∀ u, IsThetaFunO ψ V W u → HasSum (fun y => tm y u) (u 0) := by
     intro u hu
     simp only [htm]
-    exact (GlobalTheory.T.theta_series_summable_on_covolume_domain D V V' W r C C' B hS h1 h2 h3 ψ hstd μ 𝓨 hY u hu).2
+    exact (_root_.GlobalTheory.TwFour.value_zero_eq_sum_restrictions D V V' W r C C' B hS h1 h2 h3 ψ hstd μ 𝓨 hY u hu).2
   have hrat : ∀ n ∈ NI V C, n ∈ GQ V → ∀ y u, IsThetaFunO ψ V W u → tm y (ω (n, 1) u) = tm y u := by
     intro n hn hnq y u hu
     rw [htm, htm]
-    exact GlobalTheory.T.mixedModelTerms_rationalUnipotent_invariant D V V' W r C C' B hS h1 h2 h3 ψ χS χT ω hω μ 𝓨 hY n hn hnq y u hu
+    exact _root_.GlobalTheory.UnipMixed.res_heisO_unip D V V' W r C C' B hS h1 h2 h3 ψ χS χT ω hω μ 𝓨 hY n hn hnq y u hu
   have heqv : ∀ (γ : GA D W) (γ₀ : Matrix (Fin W.rank) (Fin W.rank) D.host.E), γ ∈ GQ W →
       Formalism.L2.Theta.mt W γ = γ₀.map (incA D) → ∀ y u, IsThetaFunO ψ V W u → tm (γ₀ * y) (ω (1, γ) u) = tm y u := by
     intro γ γ₀ hγ hγ₀ y u hu
@@ -153,7 +153,7 @@ theorem GlobalTheory.TowerCT.towerConstTermOfCompatible_holds : ∀ D : D7, Glob
       ∫ n in 𝓝, tm (L * m) (ω ((n : GA D V), (n' : GA D W)) u) ∂κ = ∫ n in 𝓝, tm (L * m) (ω ((n : GA D V), 1) u) ∂κ := by
     intro s L m hL hm n' u hu
     simp only [htm]
-    exact GlobalTheory.T.isotropicTermMean_invariant_unipotentRadical D V V' W r C C' B hS h1 h2 h3 ψ χS χT ω hω μ 𝓨 hY κ 𝓝 hκ h𝓝 s L m hL hm n' u hu
+    exact _root_.GlobalTheory.IsoTermMean.mean_isoTerm_invariant D V V' W r C C' B hS h1 h2 h3 ψ χS χT ω hω μ 𝓨 hY κ 𝓝 hκ h𝓝 s L m hL hm n' u hu
   obtain ⟨A, hA⟩ := _root_.GlobalTheory.MixedSeriesGrowth.mixed_series_growth D V V' W r C C' B hS h1 h2 h3 ψ χS χT ω hω μ 𝓨 hY
   obtain ⟨c, hcb⟩ := hA f hf
   have hcont : ∀ y, Continuous fun p : GA D V × GA D W => tm y (ω p f) := by
@@ -225,7 +225,7 @@ theorem GlobalTheory.TowerCT.towerConstTermOfCompatible_holds : ∀ D : D7, Glob
 
   have hvanish : ∑' y : {y : Matrix (Fin W.rank) (Fin r) D.host.E // y ≠ 0}, a y.1 = 0 := by
     letI := ratAct W r
-    refine GlobalTheory.T.tsum_setIntegral_fundamentalDomain_eq_zero_by_orbits (GA D W) ν (GQ W) {y : Matrix (Fin W.rank) (Fin r) D.host.E // y ≠ 0} 𝓕 h𝓕
+    refine _root_.GlobalTheory.OrbitUnfold.tsum_setIntegral_eq_zero (GA D W) ν (GQ W) {y : Matrix (Fin W.rank) (Fin r) D.host.E // y ≠ 0} 𝓕 h𝓕
       (fun y h => (∫ n in 𝓝, tm y.1 (ω ((n : GA D V) * g, h) f) ∂κ) * F h)
       (fun y => (hKm y.1).mul hFd.2.1.measurable) ?_ ?_ ?_
     · intro γ y h
@@ -252,12 +252,12 @@ theorem GlobalTheory.TowerCT.towerConstTermOfCompatible_holds : ∀ D : D7, Glob
           (hKm y.1) ?_ ?_ 𝓖 h𝓖 hint
         · rintro γ ⟨k, hk, rfl⟩ n hn
           have hk1 : ratM W k * y.1 = y.1 := congrArg Subtype.val (MulAction.mem_stabilizer_iff.mp hk)
-          exact (GlobalTheory.T.rationalFrameStabiliser_normalises_unipotentRadical D W s L hLf).1 k.1 k.2 (ratM W k) (ratM_spec W k) (hLy k hk1) n hn
+          exact (_root_.GlobalTheory.FrameStab.stab D W s L hLf).1 k.1 k.2 (ratM W k) (ratM_spec W k) (hLy k hk1) n hn
         · intro n hn hnq
           refine ⟨⟨n, hnq⟩, MulAction.mem_stabilizer_iff.mpr (Subtype.ext ?_), rfl⟩
           show ratM W ⟨n, hnq⟩ * y.1 = y.1
           rw [hy, ← Matrix.mul_assoc,
-            (GlobalTheory.T.rationalFrameStabiliser_normalises_unipotentRadical D W s L hLf).2 n hn (ratM W ⟨n, hnq⟩) (ratM_spec W ⟨n, hnq⟩)]
+            (_root_.GlobalTheory.FrameStab.stab D W s L hLf).2 n hn (ratM W ⟨n, hnq⟩) (ratM_spec W ⟨n, hnq⟩)]
         · intro n' hn' h
           have e1 : (fun n : NI V C => tm y.1 (ω ((n : GA D V) * g, n' * h) f)) =
               fun n : NI V C => tm (L * m) (ω ((n : GA D V), n') (ω (g, h) f)) := by

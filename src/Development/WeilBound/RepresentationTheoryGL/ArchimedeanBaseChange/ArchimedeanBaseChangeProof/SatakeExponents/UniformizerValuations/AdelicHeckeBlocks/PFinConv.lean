@@ -1,5 +1,7 @@
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.AdelRep
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralPointsOpenCompactStatement
+import Mathlib
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralPointsOpenCompact
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ThetaNormCommutation.LocalComparisonSplitting.EulerFactorLevels.EulerFinOf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharpolyNrmLTwConj
 
 noncomputable section
@@ -239,10 +241,10 @@ theorem mem_levelSub {S : Set (Pl E)} (hmul : ∀ (i : Slot S) (x y : Gf E a b),
     x ∈ levelSub hmul L ↔ ∀ i, i.cp a b x ∈ L i := Subgroup.mem_iInf
 
 theorem isOpen_maximal_pair : IsOpen (((Kf E a).prod (Kf E b) : Subgroup (Gf E a b)) : Set (Gf E a b)) := by
-  rw [Subgroup.coe_prod]; exact (GlobalTheory.T.finite_kernel_compact_open E a).1.prod (GlobalTheory.T.finite_kernel_compact_open E b).1
+  rw [Subgroup.coe_prod]; exact (_root_.GlobalTheory.CompanionTheory.IntegralPoints.kfOC E a).1.prod (_root_.GlobalTheory.CompanionTheory.IntegralPoints.kfOC E b).1
 
 theorem isCompact_maximal_pair : IsCompact (((Kf E a).prod (Kf E b) : Subgroup (Gf E a b)) : Set (Gf E a b)) := by
-  rw [Subgroup.coe_prod]; exact (GlobalTheory.T.finite_kernel_compact_open E a).2.prod (GlobalTheory.T.finite_kernel_compact_open E b).2
+  rw [Subgroup.coe_prod]; exact (_root_.GlobalTheory.CompanionTheory.IntegralPoints.kfOC E a).2.prod (_root_.GlobalTheory.CompanionTheory.IntegralPoints.kfOC E b).2
 
 theorem isOpen_levelSub {S : Set (Pl E)}
     (hmul : ∀ (i : Slot S) (x y : Gf E a b), i.cp a b (x * y) = i.cp a b x * i.cp a b y)

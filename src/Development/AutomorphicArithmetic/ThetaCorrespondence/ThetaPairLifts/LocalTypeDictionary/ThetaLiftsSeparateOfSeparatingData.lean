@@ -127,7 +127,7 @@ theorem theta_lifts_separate_of_separating_data : _root_.GlobalTheory.FunPr.Thet
   · intro u hu w x₁ y₁ hy
     show Bplus W M _ (F' (PiTensorProduct.tprod ℂ (Function.update v τ y₁))) = _ * Bplus W M _ (F' (PiTensorProduct.tprod ℂ (Function.update v τ x₁)))
     rw [hF1 u hu.1 x₁ y₁ hy]
-    exact GlobalTheory.T.besselPeriodCorankOne_rightTranslate_unipotent W M hM _ _ (hmem _) _ (_root_.GlobalTheory.FlagRealUnip.atTau_mem_NFlag D W.θ hθ _ G.besTop.e τ u hu)
+    exact _root_.GlobalTheory.BplusUnip.bplus_rTr_unip W M hM _ _ (hmem _) _ (_root_.GlobalTheory.FlagRealUnip.atTau_mem_NFlag D W.θ hθ _ G.besTop.e τ u hu)
 end GlobalTheory.SepRows.SepProof
 end
 end

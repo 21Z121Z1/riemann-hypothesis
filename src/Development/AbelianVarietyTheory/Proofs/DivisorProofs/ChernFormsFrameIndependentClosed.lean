@@ -4,8 +4,8 @@ import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DifferentiableOnOf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernFormOfGramMatrixAtHolomorphicFrameChange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernFormOfGramMatrixAtCompHolomorphic
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContDiffOnChernFormOfGramMatrixAtCoefficients
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AntiholomorphicDbarChernFormOfGramMatrixEqZeroStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicDelChernFormOfGramMatrixEqZeroStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AntiholomorphicDbarChernFormOfGramMatrixEqZero
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicDelChernFormOfGramMatrixEqZero
 
 set_option autoImplicit false
 
@@ -124,11 +124,11 @@ theorem chern_frame_closed : ∀ {M : Type} [TopologicalSpace M] {n : ℕ} (A : 
     obtain ⟨a, ha⟩ := hUc x.pt
     show delAt (A.loc P x.1.1) x.crd = 0
     rw [delAt_congr (hgerm _ a _ (hpt x a ha))]
-    exact GlobalTheory.T.holomorphicDel_chernFormOfGramMatrix_eq_zero _ _ (hop _ a) (hsm _ a) (hun _ a) j _ (hpt x a ha)
+    exact _root_.GlobalTheory.CxForm.ChernDel.delAt_chernAt _ _ (hop _ a) (hsm _ a) (hun _ a) j _ (hpt x a ha)
   · funext x
     obtain ⟨a, ha⟩ := hUc x.pt
     show dbarAt (A.loc P x.1.1) x.crd = 0
     rw [dbarAt_congr (hgerm _ a _ (hpt x a ha))]
-    exact GlobalTheory.T.antiholomorphicDbar_chernFormOfGramMatrix_eq_zero _ _ (hop _ a) (hsm _ a) (hun _ a) j _ (hpt x a ha)
+    exact _root_.GlobalTheory.CxForm.ChernDbar.dbarAt_chernAt _ _ (hop _ a) (hsm _ a) (hun _ a) j _ (hpt x a ha)
 
 end GlobalTheory.ChernFrame

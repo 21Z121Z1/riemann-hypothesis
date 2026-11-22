@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransportSymmetricLiftsThetaGroupTraitImports
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.NormalisedPullbackCommutesSymmetricTranslations
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLineBundleIsoRestrictAlongSectionStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGeneratorMovedToTraitSideStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLineBundleIsoRestrictAlongSection
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGeneratorMovedToTraitSide
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGeneratorMovedToCoverSide
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaGroupPowValueEqOfConjugateTorsionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaGroupSymmetryValueEqOfConjugateStatement
@@ -38,7 +38,7 @@ theorem GlobalTheory.ThetaMove.transport_symLift : ∀ (R : Type) [CommRing R] [
   have hTL := T.A.isLB
   have hgi : T.U.gen.inv.left ≫ T.U.gen.hom.left = 𝟙 _ := by
     rw [← Over.comp_left, Iso.inv_hom_id, Over.id_left]
-  obtain ⟨w, hw, hgw⟩ := GlobalTheory.T.exists_lineBundleIso_restrict_along_section hGL hTL hgi w₀ hw₀
+  obtain ⟨w, hw, hgw⟩ := _root_.GlobalTheory.IsoRes.exists_iso_restrict hGL hTL hgi w₀ hw₀
   have h₁ : f ≫ (snd (TFK (R := R) F) C.A.A).left ≫ C.α =
       (snd (TFK (R := W) F) T.A.A).left ≫ (T.U.gen.inv.left ≫ pullback.fst T.G.hom (jK W)) ≫ T.β := by
     rw [Category.assoc]; exact hf2
@@ -139,11 +139,11 @@ theorem GlobalTheory.ThetaMove.transport_symLift : ∀ (R : Type) [CommRing R] [
   · rintro ⟨pt, φ, hφ⟩ hs
     have e0 : pt = x := hs.pt_eq
     subst e0
-    obtain ⟨u', hu', hvu'⟩ := GlobalTheory.T.exists_generator_moved_to_trait_side hAL hPL hGL hTL wA hwA T.ℓ T.ℓ_gen w hw f (snd (TFK (R := R) F) C.A.A).left
+    obtain ⟨u', hu', hvu'⟩ := _root_.GlobalTheory.ThetaMove.exists_down_three hAL hPL hGL hTL wA hwA T.ℓ T.ℓ_gen w hw f (snd (TFK (R := R) F) C.A.A).left
       (translPt C.A.A pt).left (snd (TFK (R := W) F) T.A.A).left (translPt T.A.A x').left (translT T.A.A x').left h₁
       (hs₂ x') hs₃ ((C.n ^ j : ℕ) : ℤ) φ hφ
     obtain ⟨ν, hν, hsym⟩ := hs.sym
-    obtain ⟨ν', hν', hvν'⟩ := GlobalTheory.T.exists_generator_moved_to_trait_side hAL hPL hGL hTL wA hwA T.ℓ T.ℓ_gen w hw f (snd (TFK (R := R) F) C.A.A).left
+    obtain ⟨ν', hν', hvν'⟩ := _root_.GlobalTheory.ThetaMove.exists_down_three hAL hPL hGL hTL wA hwA T.ℓ T.ℓ_gen w hw f (snd (TFK (R := R) F) C.A.A).left
       (snd (TFK (R := R) F) C.A.A ≫ (GrpObj.inv : C.A.A ⟶ C.A.A)).left (snd (TFK (R := W) F) T.A.A).left
       (snd (TFK (R := W) F) T.A.A ≫ (GrpObj.inv : T.A.A ⟶ T.A.A)).left (negT T.A.A (TFK (R := W) F)).left h₁ hn₂ hn₃
       ((C.n ^ j : ℕ) : ℤ) ν hν

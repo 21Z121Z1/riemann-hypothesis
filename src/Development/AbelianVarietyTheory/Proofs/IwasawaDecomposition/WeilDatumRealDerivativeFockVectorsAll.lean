@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.WeilFull
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsVacFOfIsVacVec
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LieActionFockOperatorsScalarsTraceStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LieActionFockOperatorsScalarsTrace
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PderivComm
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PtYAndItYOfPair
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOfPderivStable
@@ -98,7 +98,7 @@ theorem realAllO : ∀ D : D7, Formalism.IndefR.WeilFull.RealAllO D := by
   obtain ⟨f₀, hv0, hne⟩ := _root_.GlobalTheory.Mem.VacReal.exists_isVacF_ne_zero D S T A B θ ψ hp.std hp.inf f hf f0
   obtain ⟨κS, κT, hκ⟩ := GlobalTheory.T.realLieAlgebra_acts_by_fockOperators_upToScalars D S T A B θ ψ χS χT om τ hp.inf hd
   have k0 := hκ f₀ hv0.1 (hv0.2 τ)
-  have all := GlobalTheory.T.lieAction_fockOperators_scalars_trace D S T A B θ ψ χS χT om f₀ τ αS αT hp.inf hd hαS hαT hv0
+  have all := _root_.GlobalTheory.LieScalar.lieFockAll D S T A B θ ψ χS χT om f₀ τ αS αT hp.inf hd hαS hαT hv0
   obtain ⟨z, hz⟩ := Function.ne_iff.1 hne
   have hz' : f₀ z ≠ 0 := hz
   have one : ∀ c : ℂ, ptF ψ θ A B f₀ (c • (1 : MvPolynomial _ ℂ)) z = c * f₀ z := fun c => by

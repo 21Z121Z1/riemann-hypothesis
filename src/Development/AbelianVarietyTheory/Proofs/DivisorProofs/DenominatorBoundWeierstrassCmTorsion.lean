@@ -7,7 +7,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationBoundMulti
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraicValuationBoundAtRamifiedPrime
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationBoundThreeInert
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsogenyFormulaWeierstrassPIntegral
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraicValuationAtLeastBasicPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraicValuationAtLeastBasicProperties
+import Development.AbelianVarietyTheory.Definitions.Divisors.TorsTransport
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralWeierstrassPTorsionNonrealMultiplier
 
 open scoped UpperHalfPlane MatrixGroups Matrix ModularForm ComplexConjugate
@@ -49,7 +50,7 @@ theorem main : ∀ (l : ℕ) [Fact l.Prime] (lam : algebraicClosure ℚ ℂ →+
     rw [Complex.normSq_apply]; simp [hre, him, hs]
   have hn2 : Complex.normSq (1 - w) = ((1 + d : ℕ) : ℝ) := by
     rw [Complex.normSq_apply]; simp [hre, him, hs]
-  have hsz := (GlobalTheory.T.algebraicValuationAtLeast_basic_properties l lam).1
+  have hsz := (_root_.GlobalTheory.SzRules.main l lam).1
   have hp : Sz l lam 0 (12 * (L.weierstrassP P / Ω ^ 2)) := by
     refine hsz (M ^ 2) _ (fun h => hM (hlp.dvd_of_dvd_pow h)) ?_
     have := ((_root_.GlobalTheory.WpFam.LatTorsVal.main L w Ω M hw him0 hΩ hM0).1 P hMP).1

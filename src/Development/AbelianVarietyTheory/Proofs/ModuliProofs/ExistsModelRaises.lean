@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.AuxiliaryInertO
 import Development.AbelianVarietyTheory.Statements.HeckeInFamilies.GenericMemChart
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LevelDescentCoefficientField
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsNormalModelAboveFiniteCover
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CmModelCoefficientSubringDedekindCompatibleEmbedStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CmModelCoefficientSubringDedekindCompatibleEmbed
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ObjPull
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsReducedIsNormalSchemeIsLocallyNoetherianOfSmoo
 
@@ -33,7 +33,7 @@ theorem exists_model_raises : Out.Laws → Out.Laws2 → Out.Laws3 → ∀ (E : 
         IsInc (RZ H (n * l₀.M) a).subtype (KA l₀).val.toRingHom β₀ → IsDedFrac β₀ := by
       intro a ha h1
       subst ha
-      exact (GlobalTheory.T.cmModelCoefficientSubring_dedekind_compatible_embedding E H l₀ (n * l₀.M) 0 hpos (by simp [h1])).2.2
+      exact (_root_.GlobalTheory.BaseRing.isDedFrac_RZ E H l₀ (n * l₀.M) 0 hpos (by simp [h1])).2.2
     exact aux 1 B.A_one rfl B.β B.β_inc
   have hcomp : β.comp b = k.comp B.β := by
     refine RingHom.ext fun x => Subtype.ext ?_

@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.NormSqColGrLineOfOrthogonal
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EqOfIsometricTrivShift
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockLuDecompositionExists
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchubertCellPointImmersionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchubertCellPointImmersion
 
 noncomputable section
 
@@ -78,7 +78,7 @@ theorem isOpenImmersion_cell (ι κ : Type) [Fintype ι] [Finite κ] (N : ℕ) (
     (w : ι → Equiv.Perm (Fin N)) : IsOpenImmersion (cell a l w) := by
   have : IsImmersion (cell a l w ≫ plEmb a l) := by
     rw [cell, flagPt_plEmb]
-    exact GlobalTheory.T.schubert_cell_point_immersion ι κ N a l w
+    exact _root_.GlobalTheory.FlagZ.isImmersion_plPt_cellGL ι κ N a l w
   have : IsImmersion (cell a l w) := IsImmersion.of_comp _ (plEmb a l)
   have : QuasiCompact (cell a l w) := quasiCompact_of_noetherianSpace_source _
   have : IsIso (cell a l w).imageι := (isIso_imageι_iff _).2 (schemeDominant_cell a l w)

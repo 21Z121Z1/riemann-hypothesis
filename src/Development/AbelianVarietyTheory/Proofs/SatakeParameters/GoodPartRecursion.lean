@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsobaricDiscr
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.RankOneUnitary
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplitPlaceGoodSignature
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocalParameterLawsOfWeilDeligneIdentification
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplitComponentsDeterminedByPointOfBaseChangeStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplitComponentsDeterminedByPointOfBaseChange
 
 namespace GlobalTheory.Proof.GoodComponentRecursion
 
@@ -16,6 +16,6 @@ theorem goodPartRec_of_ties : ∀ (D : D7), GlobalTheory.RowTie.WDTie D.nd D.nau
   intro D hW h1 hlift hpt hbc hsp i
   exact GlobalTheory.Proof.SplitPlaceGoodSignature.goodPart_of_lifts D.nd D.naut i h1
     (_root_.GlobalTheory.RowLaws.main _ _ _ D.nd D.naut hW).1 (hlift i) (hpt i)
-    (GlobalTheory.T.splitComponentsDeterminedByPoint_of_baseChange _ _ _ D.nd D.naut i (hbc i) (hsp i))
+    (_root_.GlobalTheory.RowTie.locOfPt_of_splitBC _ _ _ D.nd D.naut i (hbc i) (hsp i))
 
 end GlobalTheory.Proof.GoodComponentRecursion

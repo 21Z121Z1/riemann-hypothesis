@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.DegOneIffSurjective
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ContinuousIdeleCharLocalFactorizationStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ContinuousIdeleCharLocalFactorization
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.QuadraticRingOfIntegersMulMemSpanOneGen
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsWeakApproxUnitFinitePlaceStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsWeakApproxUnitFinitePlace
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsCongrModPowResidueDegreeOneFactors
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsPowValuationDivSubOneLeOfCongr
 open NumberField IsDedekindDomain HeckeValGen GlobalTheory.HeckeSplit
@@ -44,7 +44,7 @@ theorem val_coe_sub_one (E : Type) [Field E] [NumberField E] (v : HeightOneSpect
 theorem trivAt_of_degOne_cofinite : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberField E] [Algebra F E] [IsTotallyReal F] [IsTotallyComplex E] [Algebra.IsQuadraticExtension F E] (χ : Ideles E →* ℂˣ), IsHeckeChar E χ → (∀ᶠ w in Filter.cofinite, DegOne F w → TrivAt χ w) → (∀ x : (InfiniteAdeleRing E)ˣ, χ (infIdele E x) = 1) → ∀ w, TrivAt χ w := by
   intro F E _ _ _ _ _ _ _ _ χ hχ hdeg hinf w x
   classical
-  obtain ⟨hunr, hloc, hfac⟩ := GlobalTheory.T.continuous_ideleChar_local_factorization E χ hχ.1
+  obtain ⟨hunr, hloc, hfac⟩ := _root_.GlobalTheory.HeckeSplit.continuous_char_factor E χ hχ.1
   choose nf hnf using hloc
   have hU := Filter.eventually_cofinite.mp hunr
   have hX := Filter.eventually_cofinite.mp hdeg
@@ -92,7 +92,7 @@ theorem trivAt_of_degOne_cofinite : ∀ (F E : Type) [Field F] [NumberField F] [
   have hε : ε < 1 := by rw [hεdef, ← WithZero.exp_zero, WithZero.exp_lt_exp]; omega
   have hεv : ∀ v ∈ S', ε ≤ WithZero.exp (-(nf v : ℤ)) := by
     intro v hv; rw [hεdef, WithZero.exp_le_exp]; have := Finset.le_sup (f := nf) hv; omega
-  obtain ⟨y, hy0, hyw, hyv⟩ := GlobalTheory.T.exists_weak_approx_unit_finite_place E S' w x n
+  obtain ⟨y, hy0, hyw, hyv⟩ := _root_.GlobalTheory.HkFin.exists_weak_approx_unit E S' w x n
   obtain ⟨y1, y2, hy2, rfl⟩ := IsFractionRing.div_surjective (A := 𝓞 E) y
   have hy2' : y2 ≠ 0 := nonZeroDivisors.ne_zero hy2
   have hy1' : y1 ≠ 0 := by rintro rfl; simp at hy0

@@ -1,5 +1,8 @@
 import Development.AutomorphicArithmetic.CommutativeAlgebra.BconeDefs
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChosenInjectiveResolutionEtaleSheafPropertiesStatement
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChosenInjectiveResolutionEtaleSheafProperties
+import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
+import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChosenInjectiveResolutionEtaleSheafSectionsExactStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BigEtaleModuleSheafMonoEpiIffSectionsStatement
 
@@ -57,7 +60,7 @@ private lemma sgl_f {M F : Shv ℤ} (f : M ⟶ F) :
   rw [HomologicalComplex.comp_f, ← Category.assoc]
   have h : sglι M ≫ ((CochainComplex.singleFunctor (Shv ℤ) 0).map f).f 0 = f ≫ sglι F := by
     simp [sglι, CochainComplex.singleFunctor, CochainComplex.singleFunctors, HomologicalComplex.single_map_f_self]
-  rw [h, Category.assoc, (GlobalTheory.T.chosenInjectiveResolution_etaleSheaf_properties ℤ F).2.2.2.2.1]
+  rw [h, Category.assoc, (_root_.GlobalTheory.EtC.ResBasic.res_basic ℤ F).2.2.2.2.1]
 
 set_option backward.isDefEq.respectTransparency false in
 theorem UpperTheory.bijective_cl_hypercohomology_singleton_zero :
@@ -66,7 +69,7 @@ theorem UpperTheory.bijective_cl_hypercohomology_singleton_zero :
   have hz : ∀ p : ℤ, p ≠ 0 → IsZero ((sgl M).X p) := fun p hp =>
     HomologicalComplex.isZero_single_obj_X _ _ _ _ hp
   have hL : IsZero ((res ℤ F).X (-1)) := by
-    haveI := (GlobalTheory.T.chosenInjectiveResolution_etaleSheaf_properties ℤ F).2.2.1
+    haveI := (_root_.GlobalTheory.EtC.ResBasic.res_basic ℤ F).2.2.1
     exact CochainComplex.isZero_of_isStrictlyGE _ 0 (-1) (by norm_num)
   have hβ0 : ∀ β : Cochain (sgl M) (res ℤ F) (-1), β = 0 := by
     intro β
@@ -82,7 +85,7 @@ theorem UpperTheory.bijective_cl_hypercohomology_singleton_zero :
     apply Cocycle.ext
     rw [← hβ, hβ0 β, δ_zero]
     rfl
-  have hmono : Mono (resι ℤ F) := (GlobalTheory.T.chosenInjectiveResolution_etaleSheaf_properties ℤ F).2.2.2.2.2.1
+  have hmono : Mono (resι ℤ F) := (_root_.GlobalTheory.EtC.ResBasic.res_basic ℤ F).2.2.2.2.2.1
   have hsg : IsIso (sglι M) := by
     dsimp [sglι]
     infer_instance

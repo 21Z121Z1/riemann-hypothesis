@@ -5,11 +5,11 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarishChandraCapell
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermAutomorphicFormIntegral
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralFundamentalDomainUnipotent
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CapelliKilledSmoothFunctionCentreOrbitFiniteDime
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviSliceSmoothAndMatrixUnitActionStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatrixUnitOpUpperBlockLeviEqZeroStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviRestrictionVanishingPreservedByOperatorStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviSliceSmoothAndMatrixUnitAction
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatrixUnitOpUpperBlockLeviEqZero
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviRestrictionVanishingPreservedByOperator
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EopPreservesLeftUnipotentInvariance
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermCenterActionSmoothFormStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermCenterActionSmoothForm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AevalQuantumDeterminantIntertwining
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RightTranslateHarishChandraFiniteFormProperties
 
@@ -52,8 +52,8 @@ theorem sliceTwoCentre : ∀ (E : Type) [Field E] [NumberField E] [IsTotallyComp
     intro τ
     obtain ⟨q, hq0, hqK⟩ := _root_.GlobalTheory.LeviHC.CapAlg.capalg (Sm E a) a r hra (Eop τ) (glRel_Eop τ) M' K
       (fun i j f hf => _root_.GlobalTheory.CuspRep.UnipInv.Eop_unip_left E a r f hf τ i j)
-      (fun i j hi hj f hf => GlobalTheory.T.matrixUnitOp_upperBlock_levi_eq_zero E a r hra f hf τ i j hi hj)
-      (fun i j hij f hf => GlobalTheory.T.levi_restriction_vanishing_preserved_by_operator E a r hra f hf τ i j hij) (Q τ) (hQ τ)
+      (fun i j hi hj f hf => _root_.GlobalTheory.LeviGA.Eop_upper_blkGL_eq_zero E a r hra f hf τ i j hi hj)
+      (fun i j hij f hf => _root_.GlobalTheory.LeviDeriv.Eop_blkGL_eq_zero E a r hra f hf τ i j hij) (Q τ) (hQ τ)
     exact ⟨q, hq0, fun v hv hk u => (hqK v hv hk u).2⟩
   choose q hq0 hqK using hq
   obtain ⟨X', D, hX', hfin⟩ := _root_.GlobalTheory.KilledFinCentre.centre_orbit_finite E (a - r) (fun τ u => q τ (u + (((a - r : ℕ) : ℂ) - 1) / 2))
@@ -72,18 +72,18 @@ theorem sliceTwoCentre : ∀ (E : Type) [Field E] [NumberField E] [IsTotallyComp
       rw [← Polynomial.aeval_subalgebra_coe (Q τ u) (Zalg E a)
         ⟨cap (a := a) τ (u - ((a : ℂ) - 1) / 2), Algebra.subset_adjoin ⟨τ, _, rfl⟩⟩]
       exact SetLike.coe_mem _
-    have h2 := GlobalTheory.T.constant_term_center_action_smooth_form E a r μ 𝓕 hμ h𝓕 h1 _ hl ho _ hz c rfl
+    have h2 := _root_.GlobalTheory.ConstTermZalg.constTerm_zalg E a r μ 𝓕 hμ h𝓕 h1 _ hl ho _ hz c rfl
     refine Subtype.ext (h2.trans (funext fun g => ?_))
     rw [hk τ (u - ((a : ℂ) - 1) / 2)]
     simp
   have hK := hqK τ c hcM hcQ (u + (((a - r : ℕ) : ℂ) - 1) / 2)
   let T : Sm E a →ₗ[ℂ] Sm E (a - r) :=
-    { toFun := fun f => ⟨_, (GlobalTheory.T.leviSlice_smooth_and_matrixUnit_action E a r hra m₁ f).1⟩
+    { toFun := fun f => ⟨_, (_root_.GlobalTheory.LeviSliceGA.slice_smooth_Eop E a r hra m₁ f).1⟩
       map_add' := fun f f' => rfl
       map_smul' := fun c f => rfl }
   have hT : ∀ (p p' : Fin (a - r)) (f : Sm E a),
       T (Eop τ (GlobalTheory.LeviGA.blkEquiv hra (Sum.inr p)) (GlobalTheory.LeviGA.blkEquiv hra (Sum.inr p')) f) = Eop τ p p' (T f) :=
-    fun p p' f => Subtype.ext ((GlobalTheory.T.leviSlice_smooth_and_matrixUnit_action E a r hra m₁ f).2 τ p p' (T f) rfl).symm
+    fun p p' f => Subtype.ext ((_root_.GlobalTheory.LeviSliceGA.slice_smooth_Eop E a r hra m₁ f).2 τ p p' (T f) rfl).symm
   have hψc : T c = ψ := by
     refine Subtype.ext (hψ.symm ▸ funext fun m₂ => ?_)
     simp only [T, c, LinearMap.coe_mk, AddHom.coe_mk, rt_apply, mul_assoc]

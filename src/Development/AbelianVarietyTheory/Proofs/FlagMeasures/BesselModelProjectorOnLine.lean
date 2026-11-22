@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselFunctionalStandardSideStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselFunctionalStandardSide
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormIdentityBesselCoefficientQuotient
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SmoothVectorsDenseInvariantStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SmoothVectorsDenseInvariant
 
 open MeasureTheory Matrix Formalism.QuantumDeterminants Formalism.MainNotions.S GlobalTheory.SgInf
 open scoped InnerProductSpace
@@ -75,7 +75,7 @@ theorem projector_line : ∀ (k r : ℕ) {H : Type} [NormedAddCommGroup H] [Inne
   have hd : 0 < d := hStd.2.2.2.2.2.1.1
   have hS : IsHaarOn (Sset k r z) μS := hSide.2.2.2.1
   have hae := ae_mem_GG hG hS hq
-  have hstab := (GlobalTheory.T.smooth_vectors_dense_invariant k r σ w hU).1
+  have hstab := (_root_.GlobalTheory.SgInfDD.DD_stable_dense k r σ w hU).1
   obtain ⟨_, ⟨v0, hv0, hlv0⟩, hbe⟩ := hl
   refine ⟨?_, ?_, ?_⟩
   · intro u hu
@@ -128,7 +128,7 @@ theorem projector_line : ∀ (k r : ℕ) {H : Type} [NormedAddCommGroup H] [Inne
     simp only [Afun]
     rw [hbe _ (mem_DD σ w hx) _ hv, rankOneInnerOperator_apply]
   · intro W hW1 hW2 hEq hL2 y hy
-    obtain ⟨_, hconv⟩ := GlobalTheory.T.bessel_functional_standard_side k r σ w a μG d z c π μS hStd hSide ν hq W hW1 hW2 hEq hL2 y hy
+    obtain ⟨_, hconv⟩ := _root_.GlobalTheory.SgInf.KernelRe.kernel_rconv k r σ w a μG d z c π μS hStd hSide ν hq W hW1 hW2 hEq hL2 y hy
     rw [hconv]
     have h : ∀ᵐ g ∂ν, be (psiGen k r z c) π μS σ (σ y w) (σ (Matrix.of g) w) (W (Matrix.of g)) =
         ⟪l (σ (Matrix.of g) w), W (Matrix.of g)⟫_ℂ • l (σ y w) := by

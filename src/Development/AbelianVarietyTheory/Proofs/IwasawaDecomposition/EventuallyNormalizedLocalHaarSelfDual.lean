@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.T2SpaceNumberFieldInfiniteAdeles
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntegralPointsFinitePlaceTensorProperties
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalComponentsNontrivialAdelicCharacterStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalComponentsNontrivialAdelicCharacter
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUniqueSelfDualMeasuresFinitePlace
 
 noncomputable section
@@ -303,7 +303,7 @@ theorem main : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberField
   intro F E _ _ _ _ _ σ hCM d b s ψ hψ M J hJ
   haveI : IsTotallyReal F := hCM.1
   haveI : FiniteDimensional F E := Module.finite_of_finrank_pos (by rw [hCM.2.2.1]; norm_num)
-  obtain ⟨-, hloc, -⟩ := GlobalTheory.T.localComponents_nontrivial_adelic_character F ψ hψ
+  obtain ⟨-, hloc, -⟩ := _root_.GlobalTheory.GaugeEx.CharLoc.char_local F ψ hψ
   have hex := _root_.GlobalTheory.SelfDualFinite.existsUnique_selfDual_finite F E σ hCM ψ hψ
   filter_upwards [hloc, ev_dual b σ J hJ.2] with v hv hdv
   refine ⟨?_, ?_⟩

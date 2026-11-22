@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ImagQuadraticMaximal
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsSmallInPrimePow
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.UwEllipticFlow
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FormalGroupPadicMulIntegralVanishingOrder
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsUnitCoeffMulSeriesLeNormStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsUnitCoeffMulSeriesLeNorm
 
 open PowerSeries GlobalTheory.MomOne
 open scoped ComplexConjugate BigOperators Topology
@@ -58,7 +58,7 @@ theorem height_one_of_split : ∀ (d q : ℕ) [Fact q.Prime] (M : Mdl q) (F : Fo
     have hbd : Bd 1 (hat M.ι ℓ (fun z => M.u (β * z))) := by
       rw [hhat]
       exact P1 a
-    obtain ⟨n, hnN, hn1⟩ := GlobalTheory.T.exists_unit_coeff_mul_series_le_norm q M ℓ β N hchart hβ0 hlat hN hbd
+    obtain ⟨n, hnN, hn1⟩ := _root_.GlobalTheory.MomOne.MulDegree.exists_unit_coeff q M ℓ β N hchart hβ0 hlat hN hbd
     have hnlt : n < (2 * q) ^ k := by
       have hq : 0 < q ^ k := pow_pos (Fact.out : q.Prime).pos k
       have h2 : d + 3 < 2 ^ k := Nat.lt_two_pow_self

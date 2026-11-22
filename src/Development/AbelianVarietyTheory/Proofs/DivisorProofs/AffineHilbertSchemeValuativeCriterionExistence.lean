@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComapBcComp
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdealSheafDataComapIdealTopOfIsAffineStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdealSheafDataComapIdealTopOfIsAffine
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatSubschemeOfQuotientFlatAffineStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFlatIdealValuationRingPullback
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsAlt
@@ -18,7 +18,7 @@ theorem exists_flat_ideal_extension (V K : Type) [CommRing V] [IsDomain V] [Valu
     Scheme.IdealSheafData.equivOfIsAffine.apply_symm_apply J₀
   refine ⟨Scheme.IdealSheafData.ofIdealTop J₀, GlobalTheory.T.flat_subscheme_of_quotient_flat_affine V X p _ (by rw [e]; exact hf), ?_⟩
   apply Scheme.IdealSheafData.ext_of_isAffine
-  rw [GlobalTheory.T.idealSheafData_comap_ideal_top_of_isAffine, e, hJ]
+  rw [_root_.GlobalTheory.IdealSheafData.ideal_comap_top_of_isAffine, e, hJ]
 
 theorem finrank_const_of_isLocalRing (V : Type) [CommRing V] [IsLocalRing V] (Z : Scheme.{0})
     (f : Z ⟶ Spec (CommRingCat.of V)) (h1 : IsFinite f) (h2 : Flat f) (x y : Spec (CommRingCat.of V)) :

@@ -24,7 +24,7 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NotIsUnramifiedA
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NotSqMulUnit
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsNatUnramifiedOverRealOfCmSubfield
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.UnramifiedAdjoinSqrtOfNotMem
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FinrankMaximalRealEvenStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FinrankMaximalRealEven
 
 open NumberField IsDedekindDomain Neutral.B1 Formalism.L2.Host Formalism.ConjugateSelfDual ReciprocityTheory.Gal Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.MainNotions.N
 open GlobalTheory.CuspRep GlobalTheory.WeilDeligne GlobalTheory.Pst GlobalTheory.LocLanglands GlobalTheory.HeckeGal GlobalTheory.LocGL GlobalTheory.GalOfCusp
@@ -62,7 +62,7 @@ theorem exists_unram (E : Type) [Field E] [NumberField E] [IsCMField E] :
 
 theorem even_finrank (E Ω : Type) [Field E] [NumberField E] [IsCMField E] [Field Ω] [Algebra E Ω]
     (Q : GlobalTheory.RealGal.QCM E Ω) : Even (Module.finrank ℚ (maximalRealSubfield Q.K)) :=
-  GlobalTheory.T.finrank_maximal_real_even E Ω Q
+  _root_.GlobalTheory.RealGal.QCM.even_finrank_maximalRealSubfield E Ω Q
 
 end GlobalTheory.CMFam
 

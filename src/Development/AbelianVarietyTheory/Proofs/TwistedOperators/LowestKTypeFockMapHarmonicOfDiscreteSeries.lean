@@ -1,6 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.L2UnitaryRepresentationData
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LieActionFockOperatorsScalarsTraceStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LieActionFockOperatorsScalarsTrace
+import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsVacFOfIsVacVec
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeilMaximalCompactFockSubstitutionCharacter
 import Formalism.LocalToGlobal.IndefiniteReal.ConcretePkgSpec
 import Formalism.LocalRingCardinality.DataExtra
@@ -362,7 +363,7 @@ theorem ioHarm_holds (D : D7) : IoHarm D := by
   have hbase : RealDat.Delta (D := D) i ∈ N := by
     intro τ
     refine ⟨hd, fun X hX hcX => ?_⟩
-    have hLF := GlobalTheory.T.lieAction_fockOperators_scalars_trace D (Vc D i) (Wc D i) A B θ ψ χS χT ω f τ (-(D.hc τ).e i) (-(D.hc τ).e i - 1 / 2) hθ hω
+    have hLF := _root_.GlobalTheory.LieScalar.lieFockAll D (Vc D i) (Wc D i) A B θ ψ χS χT ω f τ (-(D.hc τ).e i) (-(D.hc τ).e i - 1 / 2) hθ hω
       (hχ τ).1 (hχ τ).2 ⟨hth, fun ρ => by rw [congrFun hAc ρ]; exact (hf ρ).vac⟩
     have hss : cart M' τ * cart M' τ = 1 := by
       show (M'.fr τ)⁻¹ * Formalism.REAL.Jm (M'.ε τ) * M'.fr τ * ((M'.fr τ)⁻¹ * Formalism.REAL.Jm (M'.ε τ) * M'.fr τ) = 1

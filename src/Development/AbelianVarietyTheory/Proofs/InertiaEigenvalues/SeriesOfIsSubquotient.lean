@@ -116,7 +116,7 @@ theorem ser_vanish (L : LabelDatum g) (h5 : 5 ≤ g) {k l n : ℕ} (σ : Fin k �
   refine irr_vanish σ χ α β hχ hα hβ ?_
   by_contra hne
   exact hf (Label.label_unique L h5 χ hχ _ _ hχ'
-    (GlobalTheory.T.harishChandraSeriesLabel_mul_of_constituent g L k l n χ α β f₁ f₂ hn hχ hα hβ hα' hβ' hne))
+    (_root_.GlobalTheory.GLq.LabelMul.hasLabel_mul g L k l n χ α β f₁ f₂ hn hχ hα hβ hα' hβ' hne))
 
 theorem ser_vanish' (L : LabelDatum g) (h5 : 5 ≤ g) (hA : AllLab L) {k l n : ℕ} (σ : Fin k ⊕ Fin l ≃ Fin n)
     (f f₁ f₂ : (ZMod g)[X]) (hf : f ≠ f₁ * f₂) :

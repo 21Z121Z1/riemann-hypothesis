@@ -8,13 +8,13 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BadPartDimLeSumLoca
 import Development.AbelianVarietyTheory.Definitions.Divisors.BadElt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightedIdempotentLocalShareBadTuplesLe
 import Formalism.SharpRestriction.LevelLetterCocycles.ArithmeticCylinders
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWhittakerDatumAndHalfLevelsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWhittakerDatumAndHalfLevels
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BadShareSizeBoundsAlongFamily
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefiniteCuspFormsFiniteRegularRepresentation
 import Development.AbelianVarietyTheory.BlockTheory.PoincareCuspForms.SmallUnipotentElements
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoLevelCuspFormsEmbedRegularRepresentationCopie
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoLevelFlagDomainEigenspaceShare
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoLevelFlagDomainCuspFormRanksShiftedWeightsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoLevelFlagDomainCuspFormRanksShiftedWeights
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWhittakerCharacterPair
 import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.GreenSeriesSt
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LemmaLSeriesWeightsOfGreenCuspidalParametrisatio
@@ -53,7 +53,7 @@ theorem model_bound {E : Type} [Field E] [NumberField E] [IsCMField E] {r : ℕ}
     rw [e]
     have : (0 : ℝ) ≤ Nat.card P * finrank ℂ (eig ρ P lam) := by positivity
     linarith
-  · have hR := GlobalTheory.T.twoLevelFlagDomain_cuspForm_ranks_shifted_weights E r U C M hbot h0 hr ka T hA hs
+  · have hR := _root_.GlobalTheory.ShareRanks.ranks E r U C M hbot h0 hr ka T hA hs
     obtain ⟨n, hn, hb⟩ := _root_.GlobalTheory.CuspEmb.cusp_embReg E r U C M ka ρ hρ _ _ hR H hH
     have hS := (_root_.GlobalTheory.ShareEig.share_eig E r U C M ka ρ hρ _ _ hR P hP lam).1
     refine ⟨n, hn, ?_⟩

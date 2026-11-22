@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RestrictedTensorBasePointNormSq
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsIntOv
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdelicUnitaryComponentAtPlaceLawsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdelicUnitaryComponentAtPlaceLaws
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CmAdeleIdempotentOfPlaceProperties
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilMatrixComponentAtPlaceMemCompletedLatticeStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilMatrixComponentAtPlaceMemCompletedLattice
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.EqZeroOfAeFundamentalDomain
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum MeasureTheory IsDedekindDomain NumberField Matrix GlobalTheory.IndefiniteRowSideFullHecke.RestrictedTensorSplitting GlobalTheory.PlaceTensor
@@ -16,7 +16,7 @@ variable {D : D7}
 
 theorem actO_gAt_of_wAt_eq_zero (S T : HSp D) (p : Place D) (g : GA D S) (h : GA D T) (u : WO S T)
     (hu : wAt p u = 0) : actO S T (gAt S p g) (gAt T p h) u = u := by
-  obtain ⟨hsplit, hcomm⟩ := (GlobalTheory.T.adelicUnitaryComponentAtPlace_laws D).2 S T p g h u
+  obtain ⟨hsplit, hcomm⟩ := (_root_.GlobalTheory.PlaceComponent.gAt_laws D).2 S T p g h u
   have hz : idem D p • actO S T g h u = 0 := by
     rw [← wAt_eq_smul, hcomm, hu]
     unfold actO
@@ -34,7 +34,7 @@ theorem compAt_mt_gAt {θ : InfFam D} (hθ : IsInfFam θ) (V : HSp D) (p : Place
     · have hne : τ' ≠ τ := fun e => hτ (by subst e; rfl)
       exact (hinf θ hθ τ).2 τ' hne
   unfold compAt
-  rw [((GlobalTheory.T.adelicUnitaryComponentAtPlace_laws D).1 V p g).1]
+  rw [((_root_.GlobalTheory.PlaceComponent.gAt_laws D).1 V p g).1]
   ext i j
   simp only [Matrix.map_apply, Matrix.add_apply, Matrix.smul_apply, smul_eq_mul, map_add, map_mul, map_sub,
     map_one, h0, zero_mul, zero_add, sub_zero, one_mul]
@@ -47,7 +47,7 @@ theorem isLocal_om_gAt : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (θ : Inf
   obtain ⟨hth, ⟨hdbl, hhalf⟩, hfock⟩ := hf
   have hoff : ∀ u ∈ latO S T (ΛS : Set (Fin S.rank → D.host.E)) (ΛT : Set (Fin T.rank → D.host.E))
       (fun v => Sum.inl v ≠ p), wAt p u = 0 := fun u hu =>
-    (GlobalTheory.T.weilMatrixComponentAtPlace_mem_completedLattice D S T ΛS ΛT _ u hu p).2.2 (fun _ hv => hv)
+    (_root_.GlobalTheory.LatticeLocal.wAt_mem_latO D S T ΛS ΛT _ u hu p).2.2 (fun _ hv => hv)
   refine ⟨hW.om_pres _ f hth, ⟨?_, ?_⟩, ?_⟩
   · intro u hu
     have hw2 : wAt p (2 • u) = 0 := by

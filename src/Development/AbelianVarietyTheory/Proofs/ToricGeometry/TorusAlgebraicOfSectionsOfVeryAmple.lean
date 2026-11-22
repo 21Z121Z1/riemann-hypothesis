@@ -57,7 +57,7 @@ import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TranslationFixingBu
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.MemPeriodLatticeOfExpThetaLinForm
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.AppellHumbertNormalFormOfLinearExponent
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.ReFormPosOfThetaNeZero
-import Development.AbelianVarietyTheory.Proofs.ToricGeometry.ExistsThetaSeriesApplyNeZeroOfLargeFormStatement
+import Development.AbelianVarietyTheory.Proofs.ToricGeometry.ExistsThetaSeriesApplyNeZeroOfLargeForm
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.ExistsComplementaryThetaOfLinearMap
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.ExistsTopLePreimageOfISupEqTop
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.PolarisedTorusAlgebraicOfParts
@@ -125,7 +125,7 @@ theorem polarisedTorus_algebraic :
   have f51 := @GlobalTheory.thetaBundle_kTriv f10 f13 f3 f7 f45 f46 f47 f48 f50
   have f52 := @GlobalTheory.appellHumbert_normal_form_of_linear_exponent
   have f53 := @GlobalTheory.ThetaPositivity.re_form_pos_of_theta_ne_zero
-  have f54 := @GlobalTheory.T.exists_thetaSeries_apply_ne_zero_of_large_form
+  have f54 := @_root_.GlobalTheory.ThetaLarge.exists_theta_apply_ne_zero
   have f55 := @GlobalTheory.exists_complementary_theta_of_linear_map f10 f8 f52 f53 f54
   have f56 := @GlobalTheory.exists_isMonHom_of_map_periodLattice f31 f34 f35 f55 f3
   exact @GlobalTheory.polarisedTorus_algebraic_of_parts f27 f29 f32 f37 f41 f42 f43 f44 f51 f56
@@ -252,7 +252,7 @@ theorem torusAlgebraic_of_sections_of_veryAmple :
   have f51 := @GlobalTheory.thetaBundle_kTriv f10 f13 f3 f7 f45 f46 f47 f48 f50
   have f52 := @GlobalTheory.appellHumbert_normal_form_of_linear_exponent
   have f53 := @GlobalTheory.ThetaPositivity.re_form_pos_of_theta_ne_zero
-  have f54 := @GlobalTheory.T.exists_thetaSeries_apply_ne_zero_of_large_form
+  have f54 := @_root_.GlobalTheory.ThetaLarge.exists_theta_apply_ne_zero
   have f55 := @GlobalTheory.exists_complementary_theta_of_linear_map f10 f8 f52 f53 f54
   have f56 := @GlobalTheory.exists_isMonHom_of_map_periodLattice f31 f34 f35 f55 f3
   have hτ : τ ∈ SiegelH (Fin g) := ⟨hs, hp⟩

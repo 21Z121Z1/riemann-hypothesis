@@ -3,7 +3,7 @@ import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.TranslateM
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsUnitFormLocalizationEtaleNbhd
 import GroundTheory.PAdicHodge.FiniteFlat
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.DualOrder
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsDenominatorRegularStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsDenominatorRegular
 import Development.WeilBound.CoreStatements.HodgeTatePoints.TwhopfSec
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BaseChangePointsCompat
 
@@ -124,7 +124,7 @@ end valAt
 theorem regularAt_of_baseChange : ∀ (R : Type) [CommRing R] [IsDomain R] (T : Type) [CommGroup T] [Finite T] (Γ : QFGroup R T) (R' : Type) [CommRing R'] [IsDomain R'] [Algebra R R'] (Γ' : QFGroup R' T) (F : Γ'.G.left ⟶ Γ.G.left), Γ'.IsBaseChange Γ (algebraMap R R') F → Module.Flat R R' → ∀ κ : FractionRing R →+* FractionRing R', κ.comp (algebraMap R _) = (algebraMap R' _).comp (algebraMap R R') → ∀ (f : T → FractionRing R) (g' : Γ'.G.left), Γ'.RegularAt (fun t => κ (f t)) g' → Γ.RegularAt f (F g') := by
   intro R _ _ T _ _ Γ R' _ _ _ Γ' F hbc hfl κ hκ f g' hreg
   obtain ⟨U', hgU', s', hs'⟩ := hreg
-  obtain ⟨d, hd0, U, hgU, s, hs⟩ := GlobalTheory.T.exists_denominator_regular R T Γ f (F g')
+  obtain ⟨d, hd0, U, hgU, s, hs⟩ := _root_.GlobalTheory.CompanionTheory.Ar.BT.RegDenom.exists_denom_regularAt R T Γ f (F g')
   have hφ : Flat (Spec.map (CommRingCat.ofHom (algebraMap R R'))) :=
     Flat.SpecMap_iff.mpr (RingHom.flat_algebraMap_iff.mpr hfl)
   have hF : Flat F := MorphismProperty.of_isPullback (P := @Flat) hbc.cart.flip hφ

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KuennethProductLocalGlobalStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KuennethProductLocalGlobal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KuennethMayerVietorisRight
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KuennethOfRestrictBijectiveStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RestrictSelfPullCEq
@@ -124,7 +124,7 @@ theorem kun_left : SiteLaws → MVBij → CovDesc → ZarAbs → AffOm → KunAf
     obtain ⟨α₀, h₀⟩ := id hSn
     obtain ⟨c, -⟩ := coord_res (U.c α₀) (iInf₂_le α₀ h₀) (U.inter S hSn)
     exact kun_congr _ (eV S hSn) (eW S hSn) _ _ _ _
-      (GlobalTheory.T.kuenneth_product_local_global hS hMV hCD hZ hA hKA K X X' P q q' p₁ p₂ hP _ _ ⟨c⟩
+      (_root_.GlobalTheory.CompanionTheory.KunGlue.Right.kun_right hS hMV hCD hZ hA hKA K X X' P q q' p₁ p₂ hP _ _ ⟨c⟩
         (fun T h => ((inP _ _ T).1 h).1) (fun T h => ((inP _ _ T).1 h).2))
   have e₁ : capU V ∅ = fun T => ∃ α, inU q (U.U α) T := by
     funext T

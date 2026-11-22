@@ -3,8 +3,8 @@ import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.NGData
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.TermLoc
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LocClosed
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OrbitCountRowsDoubleCosetsInnerDatumClass
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GenusFamilyCarriedByLatticeInLocalOrbitsStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SameRowDoubleCosetInnerDataOneRationalClassStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GenusFamilyCarriedByLatticeInLocalOrbits
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SameRowDoubleCosetInnerDataOneRationalClass
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalClassLatticesIffRationalClassLocalFramePStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsRowTermOfLocalCompletionsTerms
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EquivalenceComplementUnitaryOrbitLocalInnerDatumStatement
@@ -46,7 +46,7 @@ theorem weights_add_up_to_mass_of
   set φ := fun κ => (Quot.mk (GRel (Z := Z) (FP := FP) F F') (yOf κ)) with hφ
   have hwd : ∀ (t t' : TauC Y u u') (Λ Λ' : LV D) (y y' : Dat Z FP), TG F F' t Λ → TG F F' t' Λ' →
       LocOver Λ y → LocOver Λ' y' → key t = key t' → GRel F F' y y' := fun t t' Λ Λ' y y' h1 h2 h3 h4 h5 =>
-    ((hRel Λ Λ' y y' h3 h4).1).1 (GlobalTheory.T.same_row_doubleCoset_inner_data_one_rational_class D X Y u u' F F' w hw hG t t' Λ Λ' h1 h2 h5)
+    ((hRel Λ Λ' y y' h3 h4).1).1 (_root_.GlobalTheory.KeyRel.same_key_lrel D X Y u u' F F' w hw hG t t' Λ Λ' h1 h2 h5)
   have hImg : ∀ κ, InGen d (φ κ).out := by
     intro κ
     obtain ⟨t, -, Λ, h1, h2, h3, -⟩ := hyOf κ
@@ -57,7 +57,7 @@ theorem weights_add_up_to_mass_of
   by_cases ho : InGen d o.out
   · rw [if_pos ho]
     have hIG01 : InGen y₀ o.out := inGen_symm_of (hRelEqv D Z FP) hIG₀ ho
-    obtain ⟨Λ₁, hLO₁, hloc⟩ := GlobalTheory.T.genusFamily_carried_by_lattice_in_localOrbits D X Y u u' F F' w hw hG Z FP hB hR Λ₀ y₀ o.out hLO₀ hIG01
+    obtain ⟨Λ₁, hLO₁, hloc⟩ := _root_.GlobalTheory.Unfold.GlueOrbit.glue_local_orbits D X Y u u' F F' w hw hG Z FP hB hR Λ₀ y₀ o.out hLO₀ hIG01
     obtain ⟨t₁, hTG₁⟩ := _root_.GlobalTheory.RowTermReal.exists_term_of_locOver D X Y u u' F F' w hw hG Z FP hB hR Λ₁ o.out hLO₁
     have ht₁ : t₁ ∈ TS := hTS t₀ t₁ Λ₀ Λ₁ hTG₀ hTG₁ hloc ht₀
     obtain ⟨-, hcarry, hwt, hmass⟩ := _root_.GlobalTheory.OrbitCount.orbit_count D X Y u u' F F' w hw hG t₁ Λ₁ hTG₁ _ rfl

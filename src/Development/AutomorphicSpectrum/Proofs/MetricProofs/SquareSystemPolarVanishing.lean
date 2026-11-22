@@ -3,7 +3,7 @@ import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.APrime
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsFibreLocal
 import Development.AutomorphicSpectrum.Statements.MetricStatements.AgreementIffGuarded
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.AlgebraicSquareBaseIntersectionStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.AlgebraicSquareBaseIntersection
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PtsIntegralLogNormRatEqBase
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.RealisationPotentialDegreeCompatibility
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ArithmeticIntersectionMultilinearPolar
@@ -389,7 +389,7 @@ theorem first_half_at_scale : Inputs → ∀ (II : IntersectionSystem), IsFullIn
   have hpA : IsPullHerm (Q.alg.κ 0) (Q.alg.v 0) A A₀ :=
     pull_comb0 (Q.alg.block 0).1 LY LW n fun a => Q.pull0 a t
   have hbase : FromBase Q.k₀ A := fromBase_comb LY a₀ n hn fun a h => Q.base a h t
-  have hF := GlobalTheory.T.algebraic_square_base_intersection hI II hII K ι P d Q.k₀ _ Q.alg Xi X₀ X₁ hXia hsXi hp0 hp1 A A₀ hsA hbase hpA
+  have hF := _root_.GlobalTheory.CompanionTheory.Ar.PB.SqFirst.firstHalf hI II hII K ι P d Q.k₀ _ Q.alg Xi X₀ X₁ hXia hsXi hp0 hp1 A A₀ hsA hbase hpA
   refine ⟨?_, fun k hk hk2 => ?_⟩
   · have h := hpol fun _ => n
     rw [h, hF.1, zero_div]

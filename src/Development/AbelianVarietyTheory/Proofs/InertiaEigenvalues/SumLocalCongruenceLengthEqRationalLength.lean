@@ -2,19 +2,19 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.RowsExhaust
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverEta
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormalizedLengthLatticeQuotientBaseChangeEqStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LatticeProjectionBaseChangeDvrCommStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LatticeProjectionBaseChangeDvrComm
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LatticeInfSubspaceBaseChangeDvr
 import Formalism.LocalToGlobal.Columns.AlgebraMapMemMaximalIdealPowIff
 import Formalism.SharpRestriction.LevelLetterCocycles.DataN
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverAlg
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CongruenceLengthFinsetSupEqSum
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegralFormLatticeEqSumLocalisedLatticesStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegralFormLatticeEqSumLocalisedLattices
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HeckeEigenspaceSumDisjointCompl
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoeffEmbeddingIntegersResCharUnit
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteLengthLatticeProjectionQuotient
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodEigSumSupComplEigSumEqTop
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RationalFormEqSumLocalisationProjections
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FgInfSupOfIsComplStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FgInfSupOfIsCompl
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpanImageSemilinearLatticeEqStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DisjointFinsetSupOfSupIndepSup
 
@@ -163,7 +163,7 @@ theorem sum_etaLoc_eq_etaRat : ∀ (D : D7) (M : MtFam D) (T : NormalizedLocalCo
     exact Submodule.disjoint_def.1 (Submodule.orthogonal_disjoint _) _ hx hx'
   have hup : Submodule.span (T.B.Oc j w) (T.B.iV j w '' (up D (D.what₂.muTw w) j : Set _)) =
       G'.restrictScalars (T.B.Oc j w) ⊓ (Submodule.span (T.B.Oc j w) (T.B.iV j w '' (lat D (D.what₂.muTw w) j : Set _)) ⊔ B'.restrictScalars (T.B.Oc j w)) :=
-    GlobalTheory.T.latticeProjection_baseChange_dvr_comm D.what₂.LL (T.B.Oc j w) (T.B.ec j w) _ (T.B.V j w) (T.B.iV j w) _ b hb.1 hint
+    _root_.GlobalTheory.projection_span_extend_scalars D.what₂.LL (T.B.Oc j w) (T.B.ec j w) _ (T.B.V j w) (T.B.iV j w) _ b hb.1 hint
       (lat D (D.what₂.muTw w) j) U U' hc
   have hlow : Submodule.span (T.B.Oc j w) (T.B.iV j w '' (low D (D.what₂.muTw w) j : Set _)) =
       Submodule.span (T.B.Oc j w) (T.B.iV j w '' (lat D (D.what₂.muTw w) j : Set _)) ⊓ G'.restrictScalars (T.B.Oc j w) :=
@@ -174,7 +174,7 @@ theorem sum_etaLoc_eq_etaRat : ∀ (D : D7) (M : MtFam D) (T : NormalizedLocalCo
       Set.Finite.preimage hjinj.injOn (D.what₂.MtLat (D.what₂.muTw w) j).gen.finite_toSet
     exact ⟨hfs.toFinset, by rw [Set.Finite.coe_toFinset]; rfl⟩
   have hupFG : (up D (D.what₂.muTw w) j).FG :=
-    GlobalTheory.T.fg_inf_sup_of_isCompl' D.what₂.LL _ (lat D (D.what₂.muTw w) j) U U' hlatFG hc
+    _root_.GlobalTheory.fg_inf_sup_of_isCompl D.what₂.LL _ (lat D (D.what₂.muTw w) j) U U' hlatFG hc
   have hlowle : low D (D.what₂.muTw w) j ≤ up D (D.what₂.muTw w) j :=
     le_inf inf_le_right (inf_le_left.trans le_sup_left)
   have hlen := GlobalTheory.T.normalizedLength_latticeQuotient_baseChange_eq D.what₂.LL (T.B.Oc j w) (T.B.ec j w) _ (T.B.V j w) (T.B.iV j w) _ b hb.1 hint
@@ -284,7 +284,7 @@ theorem sum_etaLoc_eq_etaRat : ∀ (D : D7) (M : MtFam D) (T : NormalizedLocalCo
     ext y
     rw [Finset.sup_eq_iSup, Submodule.mem_iSup_finset_iff_exists_sum]
     change _ ↔ y ∈ latLoc T.B j w
-    rw [GlobalTheory.T.integralFormLattice_eq_sum_localised_lattices D M T j w h1 h2 hw hstd hlat y]
+    rw [_root_.GlobalTheory.LatSplit.main D M T j w h1 h2 hw hstd hlat y]
     constructor
     · rintro ⟨μ, hμ⟩
       have hch : ∀ i : {i // i ∈ D.nd.locs j w}, ∃ z ∈ D.nd.MtIn i.1, T.Psi j w i.1 i.2 z = μ i := fun i => by

@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Jets.IsSelfOf
 import Development.AbelianVarietyTheory.Definitions.Jets.TwoPlaces
 import Formalism.LocalToGlobal.CharacterGerms.RowTieLab
 import Formalism.LocalToGlobal.CharacterGerms.RowTieTop
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsMatrixStandardToHyperbolicInertPlaceStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsMatrixStandardToHyperbolicInertPlace
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CmEmbeddingsIntegralAndDistinctModMaximalStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIdempotentFrobeniusOrbitUnramified
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SeparatedEmbeddingsDirectionsTypedBasis
@@ -46,7 +46,7 @@ theorem exists_selfData : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E]
     rw [ha.conj o a, embedding_conjugate hstar]
   have hgeo := fun o => _root_.GlobalTheory.SeparatedDirections.directions_typed_basis E H Dw lv Xo c hstar T io y C3 C V ι hι k Y hY (ZMod 2) (lab.tau o) (hsep1 o)
   have := Y.algClosed
-  have hgm := fun o => GlobalTheory.T.exists_matrix_standard_to_hyperbolic_inertPlace C V Y.l_odd Y.cpl (𝓞 E) (fun a => emA3 io ι (lab.tau o a))
+  have hgm := fun o => _root_.GlobalTheory.InertHyperbolic.main C V Y.l_odd Y.cpl (𝓞 E) (fun a => emA3 io ι (lab.tau o a))
     (fun a x => hint _ x) (ha.frob o) (hsep1 o 0 1 (by decide)) (hconj o)
   choose gm hlim hhyp using hgm
   let p : ∀ o, SelfData Y 2 (lab.II Dw o) := fun o =>

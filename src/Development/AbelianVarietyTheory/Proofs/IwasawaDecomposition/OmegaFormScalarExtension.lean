@@ -4,7 +4,7 @@ import Formalism.LocalToGlobal.ProjectiveLattices.DatProofs
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.CmHostUnitAddConjEqOne
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FibExtMarked
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OrthonormalNegFirstFamilyFrameCartanMove
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeilVacuumFiniteSelfDualLatticeSplittingStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeilVacuumFiniteSelfDualLatticeSplitting
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFinUnitIsDetRoot
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsConstOrtho
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SymplecticBasesMatched
@@ -14,7 +14,7 @@ import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChart
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsHeckeCharMulInv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstRelIffTwistFactorAt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormSqGaussProd
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RealPointMovesAdelicThetaByDetCharacterStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RealPointMovesAdelicThetaByDetCharacter
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormIntegrality
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormGaloisEquivariance
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.TensorLatticeVacuaExistUnique
@@ -187,11 +187,11 @@ theorem om_vac_move {g : ℕ} {hr : T.rank = r} {ψ : AddChar (AF D.host.F) ℂ}
   rw [← hke] at hk hmov
   have e1 : g₁ = a * g₀ * k := by rw [hke, mul_inv_cancel_left]
   obtain ⟨y, hy, hyk⟩ := GlobalTheory.LatticeUnitRoot.exists_finUnit_isDetRoot D T ΛT dT k hk hmov
-  have h1 := GlobalTheory.T.weil_vacuum_finite_selfDualLattice_splitting D S T ψ θ hS.2.1 sS sT χS χT om hW hη hun (fun _ => 1) _ (isCartanInv_one hS.2.2.1) hc
+  have h1 := _root_.GlobalTheory.FinVac.om_vacuum_finite D S T ψ θ hS.2.1 sS sT χS χT om hW hη hun (fun _ => 1) _ (isCartanInv_one hS.2.2.1) hc
     ΛS ΛT dS dT f₀ hf 1 (one_mem _) k hk (isMov_one _) hmov 1 y finUnit_one hy isDetRoot_one hyk
   obtain ⟨ya, hya⟩ := hmu.1 a
   obtain ⟨y₀, hy₀⟩ := hmu.1 g₀
-  have h2 := (GlobalTheory.T.real_point_moves_adelic_theta_by_det_character D S T r g hr ψ θ X eT bas idx hS χS χT om hW hη _ h0 a ha ya hya φ hφ _ hz).2 w hw
+  have h2 := (_root_.GlobalTheory.OneMapRef.RealMove.zak_om_real D S T r g hr ψ θ X eT bas idx hS χS χT om hW hη _ h0 a ha ya hya φ hφ _ hz).2 w hw
   have h3 : om (1, g₁) f₀ = om (1, a) (om (1, g₀) (om (1, k) f₀)) := by
     rw [← Module.End.mul_apply, ← Module.End.mul_apply, ← map_mul, ← map_mul, e1]
     simp

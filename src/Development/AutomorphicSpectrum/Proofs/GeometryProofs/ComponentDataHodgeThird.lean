@@ -6,7 +6,7 @@ import Development.AutomorphicSpectrum.Statements.GeometryStatements.NineGeoU
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsPeriodAtRestrict
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.InteriorPointPolarised
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ContDiffUncentre
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PairSumFrameAtPointStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PairSumFrameAtPoint
 
 namespace GlobalTheory.CompanionTheory.Ar
 
@@ -52,7 +52,7 @@ theorem gramAt_posDef_of_isFrameAt_blocks : ∀ (E : Type) [Field E] [NumberFiel
       have : w' = w := hφi e
       subst this
       exact hw'
-  obtain ⟨G, h1, h2⟩ := GlobalTheory.T.pair_sum_frame_at_point E H D l Xo c Y S₀ Ω K J Dc.y Or.𝔐 (Or.bg τ) (Or.sm τ) Dc.N
+  obtain ⟨G, h1, h2⟩ := _root_.GlobalTheory.CompanionTheory.Ar.HodgeMetric.GramEx.exists_gramAt_posDef E H D l Xo c Y S₀ Ω K J Dc.y Or.𝔐 (Or.bg τ) (Or.sm τ) Dc.N
     (fun k => φ (b k)) z h hpol hframe
   exact ⟨G, h1, h2⟩
 

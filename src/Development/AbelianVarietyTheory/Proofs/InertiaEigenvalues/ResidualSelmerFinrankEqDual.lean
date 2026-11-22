@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemDualBlochKa
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.PoitouTateNineTermTransgressionZeroApply
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.CohDimTwoLocalOfLocalFiniteness
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ContinuousCycMod
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ResidualBlochKatoLatticeDualOrthogonalStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ResidualBlochKatoLatticeDualOrthogonal
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ResidualSelmerBaseChangeCoefficientFieldStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalCountOfSetup
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.H1MapSubgroup
@@ -224,7 +224,7 @@ theorem card_eq (hPT : PoitouTateTotallyComplex) (hLF : LocalFiniteness) (hLD : 
       rcases Finset.mem_union.1 hv with hv | hv
       · rw [hSl] at hv
         rw [cl _ v hv, cl _ v hv]
-        exact ⟨fun hy x hx => GlobalTheory.T.residualBlochKato_lattice_dual_orthogonal hLD D N X bkP i s h (IsLocalRing.ResidueField (X.O0 i)) hres ρ hρ v hv x y hx hy,
+        exact ⟨fun hy x hx => _root_.GlobalTheory.ResOrth.bkOn_orthogonal hLD D N X bkP i s h (IsLocalRing.ResidueField (X.O0 i)) hres ρ hρ v hv x y hx hy,
           _root_.GlobalTheory.ResDual.Perp.mem_bkOn_of_orthogonal D N X bkP i s h (IsLocalRing.ResidueField (X.O0 i)) hres hsurj ρ hρ v hv y⟩
       · rw [hSp] at hv
         rw [cp _ v hv, cp _ v hv]

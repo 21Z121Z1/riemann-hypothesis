@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoefficientCongruenceOfTwistedValuesStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoefficientCongruenceOfTwistedValues
 import Development.AbelianVarietyTheory.Definitions.Foundations.HTLawAt
 
 open GlobalTheory.KZ GlobalTheory.Ord2 UpperTheory.V.HV Formalism.ConjugateSelfDual PowerSeries
@@ -33,6 +33,6 @@ theorem KZ.series_eq_zero_of_vals_tendsto_zero : ∀ (l : ℕ) [Fact l.Prime] (c
   apply KZ.eq_zero_of_cg_all l
   intro k
   obtain ⟨m₁, hm⟩ := hv k
-  exact GlobalTheory.T.coefficient_congruence_of_twisted_values l c F k m₁ hO hm n
+  exact _root_.GlobalTheory.KZ.CoefVal.coeff_cg_of_values l c F k m₁ hO hm n
 
 end GlobalTheory

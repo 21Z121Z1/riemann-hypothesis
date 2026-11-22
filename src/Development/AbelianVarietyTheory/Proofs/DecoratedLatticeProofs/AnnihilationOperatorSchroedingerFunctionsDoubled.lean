@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HalfData
 import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelWeilUnitaryConvergent
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergDerivativeDiagonalHalfEqSchrodingerDerStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergDerivativeDiagonalHalfEqSchrodingerDer
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchrodingerDualHalfDerivativeLinearForm
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchrodingerFunctionLinearThetaFunctions
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoubledBasisSkewColumnMatrixGramInverse
@@ -101,7 +101,7 @@ theorem annih_sch : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ), IsStdChar D �
   obtain ⟨-, hsm, -, hsmul⟩ := _root_.GlobalTheory.StdUnn.sch_linear D ψ hψ A B ν 𝓨 hcov _ _ hd2 hd2 Complex.I
   obtain ⟨-, -, hadd, -⟩ := _root_.GlobalTheory.StdUnn.sch_linear D ψ hψ A B ν 𝓨 hcov _ _ hd1 hsm 0
   funext x
-  rw [annih, hJ, hadd, hsmul, Pi.add_apply, Pi.smul_apply, GlobalTheory.T.heisenbergDerivative_diagonalHalf_eq_schrodingerDerivative D ψ hψ θ hθ A B ν 𝓨 hcov f hf τ X x,
+  rw [annih, hJ, hadd, hsmul, Pi.add_apply, Pi.smul_apply, _root_.GlobalTheory.StdUnn.DiagDeriv.sch_dRho_diag D ψ hψ θ hθ A B ν 𝓨 hcov f hf τ X x,
     _root_.GlobalTheory.StdUnn.sch_dRho_dualHalf D ψ hψ θ hθ A B ν 𝓨 hcov f hf τ Y x]
   unfold annS linF
   congr 1

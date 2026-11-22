@@ -10,17 +10,17 @@ import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaLevelShapePrimi
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.FiniteHomogeneousInf
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsGoodThetaComplexClassE8SharpStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.E8SharpObjectFibreFromComplexCharZeroStatement
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaLevelPullbackIdCompCancelStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaLevelPullbackIdCompCancel
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.NonemptyThetaFamilyOverOpenClosure
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUniqueMapToThetaFamilyOpenPartStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUniqueMapToThetaFamilyOpenPart
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaClosureOpenFamilyQprojFlatReducedExt
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LeRingKrullDimThetaFamilyGenericFibre
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SmoothOfRelativeDimensionOfFlatDedekindTangentLe
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SiegelFamilyTangentDimensionBound
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaObjectEighthPowerPrincipalSiegel
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SiegelPullbackIffEighthPowerPullback
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SiegelPrePullbackPrincipalRingChangeStatement
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SiegelPullbackIdCompCancelStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SiegelPrePullbackPrincipalRingChange
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SiegelPullbackIdCompCancel
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.EighthPowerShapeDependsOnlyOnMatrices
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsEighthPowerPrincipalSiegelOfDenseStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PrincipalSiegelOfGenericPrincipalSpecialAmple
@@ -115,7 +115,7 @@ theorem nonempty_siegelFamily (L1 : Out.Laws) (L2 : Out.Laws2)
     refine _root_.GlobalTheory.SmoothDedekind.smoothOfRelativeDimension_of_flat_of_tangent_le o _ _ _ har.2.1 hflat hft
       (_root_.GlobalTheory.ZM.GenericDim.le_ringKrullDim_genericFibre L1 L2 g n N' J Mat κ w w' o b em _ _ F h3 hodd har good) ?_
     intro K _ _ r β x hx hlam
-    obtain ⟨p1, p2, -⟩ := GlobalTheory.T.siegelPre_pullback_principal_ringChange h (N' ^ 2) o o (b.ζ : o) (b.ζ : o) (RingHom.id o) _ _ _
+    obtain ⟨p1, p2, -⟩ := _root_.GlobalTheory.SiegelRingChange.siegPre_pull_ringChange h (N' ^ 2) o o (b.ζ : o) (b.ζ : o) (RingHom.id o) _ _ _
       (spMap ((algebraMap K (TrivSqZeroExt K (Fin r → K))).comp β)) x rfl (by rw [spMap_id, Category.comp_id, hx])
     obtain ⟨c', hc'⟩ := p1 c
     have hp' := p2 c c' hc' hc
@@ -125,11 +125,11 @@ theorem nonempty_siegelFamily (L1 : Out.Laws) (L2 : Out.Laws2)
     intro lam t'' m1 m2
     refine hlam lam ?_
     rw [← constPt_comp]
-    refine htan (DualNumber K) _ _ _ t'' ?_ (((GlobalTheory.T.thetaLevelPullback_id_comp_cancel o g _ J b _ _ _ _ _ _ F.univ t' t'').2 x _ hm).1 m1)
-      (((GlobalTheory.T.thetaLevelPullback_id_comp_cancel o g _ J b _ _ _ _ _ _ F.univ t' t'').2 x _ hm).1 m2)
+    refine htan (DualNumber K) _ _ _ t'' ?_ (((_root_.GlobalTheory.ZM.tmap_id_comp_cancel o g _ J b _ _ _ _ _ _ F.univ t' t'').2 x _ hm).1 m1)
+      (((_root_.GlobalTheory.ZM.tmap_id_comp_cancel o g _ J b _ _ _ _ _ _ F.univ t' t'').2 x _ hm).1 m2)
     rw [Category.assoc, Category.assoc, hx]
     exact dirMap_base β lam
-  obtain ⟨q1, q2, -⟩ := GlobalTheory.T.siegelPre_pullback_principal_ringChange h (N' ^ 2) o _ (b.ζ : o) _ j _ _ (F.U.ι ≫ F.Y.s)
+  obtain ⟨q1, q2, -⟩ := _root_.GlobalTheory.SiegelRingChange.siegPre_pull_ringChange h (N' ^ 2) o _ (b.ζ : o) _ j _ _ (F.U.ι ≫ F.Y.s)
     (pullback.snd (F.U.ι ≫ F.Y.s) (spMap j)) (pullback.fst _ _) hj pullback.condition
   obtain ⟨u, hupb⟩ := q1 c
   have hup := q2 c u hupb hc
@@ -156,17 +156,17 @@ theorem nonempty_siegelFamily (L1 : Out.Laws) (L2 : Out.Laws2)
       (_root_.GlobalTheory.shape_prim_pull_and_descend o g _ J b Mat κ w w' _ _ _ _ x t t' hx).1 hshape
     have hpb : SiegPB c₁ c f := (pull _ _ (restrictBase j hj c₁) t f hp₀ ht).2 hm
     refine ⟨pullback.lift f (spMap β) hf, pullback.lift_snd _ _ _, ?_⟩
-    refine ((GlobalTheory.T.siegelPullback_id_comp_cancel h _ _ _ _ _ _ _ _ _ _ _ _ _ c u c₁ _ _).2 hupb).2 ?_
+    refine ((_root_.GlobalTheory.SiegelPullComp.id_comp_cancel h _ _ _ _ _ _ _ _ _ _ _ _ _ c u c₁ _ _).2 hupb).2 ?_
     rwa [pullback.lift_fst]
   · intro K _ x c₁ m1 m2
-    have hp₁ : c₁.Principal := (GlobalTheory.T.siegelPre_pullback_principal_ringChange h (N' ^ 2) _ _ _ _ (RingHom.id _) _ _ _ _ x rfl
+    have hp₁ : c₁.Principal := (_root_.GlobalTheory.SiegelRingChange.siegPre_pull_ringChange h (N' ^ 2) _ _ _ _ (RingHom.id _) _ _ _ _ x rfl
       (by rw [spMap_id, Category.comp_id])).2.1 u c₁ m1 hup
     have hp₀ : (restrictBase j hj c₁).Principal := hp₁
     obtain ⟨t, ht⟩ := _root_.GlobalTheory.SiegelPower.exists_tObj_isSharp L1 L2 h g W J a bas hW hbas _ o b _ _ (restrictBase j hj c₁) hk hk3 hζ hp₀
     have n1 := (pull _ _ (restrictBase j hj c₁) t _ hp₀ ht).1
-      (((GlobalTheory.T.siegelPullback_id_comp_cancel h _ _ _ _ _ _ _ _ _ _ _ _ _ c u c₁ _ _).2 hupb).1 m1)
+      (((_root_.GlobalTheory.SiegelPullComp.id_comp_cancel h _ _ _ _ _ _ _ _ _ _ _ _ _ c u c₁ _ _).2 hupb).1 m1)
     have n2 := (pull _ _ (restrictBase j hj c₁) t _ hp₀ ht).1
-      (((GlobalTheory.T.siegelPullback_id_comp_cancel h _ _ _ _ _ _ _ _ _ _ _ _ _ c u c₁ _ _).2 hupb).1 m2)
+      (((_root_.GlobalTheory.SiegelPullComp.id_comp_cancel h _ _ _ _ _ _ _ _ _ _ _ _ _ c u c₁ _ _).2 hupb).1 m2)
     have e : x ≫ pullback.snd _ _ = constPt x ≫ pullback.snd _ _ := by
       rw [constPt_comp]; exact hconst K _
     refine pullback.hom_ext (htan (DualNumber K) _ _ _ t ?_ n1 n2) e
@@ -190,7 +190,7 @@ theorem exists_siegelFamily : Out.Laws → Out.Laws2 → (∀ (S : Scheme.{0}) (
   obtain ⟨Mat, κ, hcl⟩ := GlobalTheory.T.isGoodThetaComplexClass_E8Sharp L1 L2 L3 L4 h _ W _ a _ _ bas hW hbas hw hw' hu
   obtain ⟨j₁, h₁⟩ := hcl n hn hodd
   obtain ⟨j₂, h₂⟩ := _root_.GlobalTheory.ZM.OpenFamily.nonempty_wFam L1 L2 _ _ Mat κ n (.inr true) (.inr false) hn hodd
-  obtain ⟨j₃, h₃⟩ := GlobalTheory.T.existsUnique_map_to_thetaFamily_openPart L1 L2 _ _ Mat κ n (.inr true) (.inr false) hn hodd
+  obtain ⟨j₃, h₃⟩ := _root_.GlobalTheory.ZM.UnivProp.existsUnique_map_of_wFam L1 L2 _ _ Mat κ n (.inr true) (.inr false) hn hodd
   obtain ⟨m, hm⟩ : ∃ m, m = j₁ + j₂ + j₃ + 1 := ⟨_, rfl⟩
   have hn3 : 3 ≤ n := by
     have := hn.two_le

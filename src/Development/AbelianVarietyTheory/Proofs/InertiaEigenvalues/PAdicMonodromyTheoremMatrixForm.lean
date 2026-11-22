@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TwistStep
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PadicMonodromyMatrixFormOfInductionCases
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DeRhamIffFramedGaloisRepresentationStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DeRhamIffFramedGaloisRepresentation
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LubinTateTwistTotalWeightZeroProof
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WeightZeroPotentiallySemistableOfSenTheorem
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PotentiallySemistableReducibleUnramifiedSplitStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PotentiallySemistableReducibleUnramifiedSplit
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MonodromyIrreducibleElementaryWeightModification
 open Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.WeaklyAdmissibleFiltrations GlobalTheory.Pst GlobalTheory.PMon TensorProduct
 open scoped Formalism.Per
@@ -12,6 +12,6 @@ open scoped Formalism.Per
 namespace GlobalTheory.PMon
 
 theorem matThm_holds : MatThm :=
-  _root_.GlobalTheory.PMon.matThm_of_steps GlobalTheory.T.deRham_iff_framed_galois_representation _root_.GlobalTheory.PMon.twistStep _root_.GlobalTheory.PMon.senStep GlobalTheory.T.potentially_semistable_reducible_unramified_split _root_.GlobalTheory.PMon.modStep_holds
+  _root_.GlobalTheory.PMon.matThm_of_steps _root_.GlobalTheory.PMon.FrameEquiv.frameEx _root_.GlobalTheory.PMon.twistStep _root_.GlobalTheory.PMon.senStep _root_.GlobalTheory.PMon.Red.redStep _root_.GlobalTheory.PMon.modStep_holds
 
 end GlobalTheory.PMon

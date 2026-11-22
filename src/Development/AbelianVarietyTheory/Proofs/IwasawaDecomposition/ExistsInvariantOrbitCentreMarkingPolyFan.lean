@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOfIsOrbFormConst
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPrimitiveBalancedFormFracCoordsOfCellMultStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPrimitiveBalancedFormFracCoordsOfCellMult
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CarriesExistsMarkedFormInCone
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MarkedOrbitFormPrimitive
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqOfMarkedFormsInSameCellSimplicialFan
@@ -31,7 +31,7 @@ theorem centres_exists : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] 
       (_ : Module.Projective (𝓞 E) X), Module.finrank (𝓞 E) X ≤ q ∧
       ∃ (m : ℕ) (δ : Fin m → LinearMap.BilinForm ℤ X), IsMultCell H.bar φ M δ ∧ c.Carries δ
   · obtain ⟨X₀, _, _, _, _, -, m₀, δ₀, hM₀, hc₀⟩ := hex
-    obtain ⟨v, hv, hvp, hvn, t, ht, htv⟩ := GlobalTheory.T.exists_primitiveBalancedForm_fracCoords_of_cellMult H.bar φ M δ₀ hM₀ hM
+    obtain ⟨v, hv, hvp, hvn, t, ht, htv⟩ := _root_.GlobalTheory.PolFan.CentreChoice.exists_isPrim_frac H.bar φ M δ₀ hM₀ hM
     obtain ⟨h₀, hli, hpr, -⟩ := hM₀
     have hv0 : v ≠ 0 := fun h => by
       have e : (⟨v, hv⟩ : balForms H.bar X₀) = 0 := Subtype.ext h

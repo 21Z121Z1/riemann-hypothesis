@@ -6,7 +6,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import Development.WeilBound.CoreStatements.HodgeTatePoints.MbLCentre
 import Development.WeilBound.CoreStatements.HodgeTatePoints.GenfibMap
 import Development.WeilBound.CoreStatements.HodgeTatePoints.FinClosure
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IntegralClosureChartSpanStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IntegralClosureChartSpan
 import Development.WeilBound.CoreStatements.HodgeTatePoints.MbLMorph
 import Development.WeilBound.CoreStatements.HodgeTatePoints.MbLNormChart
 import Development.WeilBound.CoreStatements.HodgeTatePoints.MaBase
@@ -18,7 +18,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PrimeMemIffNotUnitL
 import Development.WeilBound.CoreStatements.HodgeTatePoints.MbLCentreUnique
 import Development.WeilBound.CoreStatements.HodgeTatePoints.MbLFracExt
 import Development.WeilBound.CoreStatements.HodgeTatePoints.MbLFiniteExt
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DominatingModelChartCompatStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DominatingModelChartCompat
 open AlgebraicGeometry CategoryTheory GlobalTheory.CompanionTheory.Ar NumberField
 
 noncomputable section
@@ -332,7 +332,7 @@ theorem exists_normalisation : ∀ (o : Type) [CommRing o] [Algebra.EssFiniteTyp
   have hinj : ∀ c, x c ≠ 0 → algebraMap Ω Ω' (x c) ≠ 0 := fun c hc => by
     simpa using hc
   have hinj' : ∀ c, algebraMap Ω Ω' (x c) ≠ 0 → x c ≠ 0 := fun c hc h => hc (by simp [h])
-  obtain ⟨d, n, z, hz1, hz2⟩ := GlobalTheory.T.integral_closure_chart_span o Ω' κ (fun k => algebraMap Ω Ω' (x k))
+  obtain ⟨d, n, z, hz1, hz2⟩ := _root_.GlobalTheory.CompanionTheory.Ar.IntClGens.exists_twisted_gens o Ω' κ (fun k => algebraMap Ω Ω' (x k))
     (fun c hc => PositivityTheory.HtPt.Mb.finite_ext M Ω' c (hinj' c hc))
   set x' : κ → Ω' := fun k => algebraMap Ω Ω' (x k) with hx'
   set y := joinCo (RingHom.id Ω') x' z with hy
@@ -377,7 +377,7 @@ theorem exists_normalisation : ∀ (o : Type) [CommRing o] [Algebra.EssFiniteTyp
       refine int_trans (chRing o x' c) (chRing o y (c, Sum.inl c)) (fun b hb => (hB c hc b).2
         (isIntegral_algebraMap (x := (⟨b, hb⟩ : chRing o x' c)))) (fun b hb => (hB c hc b).1 hb) a ha
   refine ⟨_, inferInstance, y, M', f, hf, hN, ?_, fun p => ?_⟩
-  · refine GlobalTheory.T.dominating_model_chart_compat M Ω' M' f (fun c => (c, Sum.inl c)) hf hyne
+  · refine _root_.GlobalTheory.CompanionTheory.Ar.ChartFin.isFinite_of_charts M Ω' M' f (fun c => (c, Sum.inl c)) hf hyne
       (fun c hc p' => chart_over M Ω' M' f _ hf (fun c hc a ha => (hB c hc a).2 ha) hC c hc p') fun c hc => ?_
     refine ⟨(Set.finite_range fun k => z k / x' c ^ d).toFinset, fun a => ?_⟩
     rw [Set.Finite.coe_toFinset]

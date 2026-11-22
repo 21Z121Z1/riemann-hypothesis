@@ -4,14 +4,14 @@ import Formalism.LocalRingCardinality.DataTies
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryQuotientCompactness.MaximalCompactIsCompact
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsHaarOnBesselSubgroupProdMap
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniqueHaarDensityAtIdentityStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniqueHaarDensityAtIdentity
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LintegralHilbertSchmidtNormSqBesselAmplitudeLe
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.BlockAnti
 import Formalism.PeriodIntegrals.QuotInv
 import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
 import Formalism.LocalRingCardinality.DataCD
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselModelSchurOfFormalDegreeDensity
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselDoubleCosetMeasureBigCellEqStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselDoubleCosetMeasureBigCellEq
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurableHsNormSqAmplitudeBesselUnitary
 import Formalism.SharpRestriction.CuspSpanNormBounds.NormalizedLocalScale
 import Formalism.SharpRestriction.CuspSpanNormBounds.RootMeasBig
@@ -212,7 +212,7 @@ theorem schurSt_of_big_tie : ∀ Cg cb Cu cT CT C0 C1 : ℝ, ∃ C₀ : ℝ, ∀
   have hSide' : SideIrr W.z' W.π' (muProd W.μW' W.μN) :=
     ⟨⟨hz', hTzp', hπU', _root_.GlobalTheory.SgInf.ProdHaarS.isHaarOn_prod_map _ _ _ _ _ hz' hTzp' hμW' hμNH, inferInstance⟩, hπI', hnt'⟩
 
-  obtain ⟨c, hc0, hcD, -⟩ := GlobalTheory.T.exists_unique_haarDensity_at_identity (2 * D.R.rS + D.R.k + 1) (GG D.R.k D.R.rS) W.μG
+  obtain ⟨c, hc0, hcD, -⟩ := _root_.GlobalTheory.MatHaarDensity.exists_hasDens (2 * D.R.rS + D.R.k + 1) (GG D.R.k D.R.rS) W.μG
     (PI.QuotSetU.UnitaryGroupMassFormula.unitary_hermitian_group D.R.k D.R.rS) hμG
 
   have hSch := _root_.GlobalTheory.FdegDens.schur_of_dens D.R.k D.R.rS A.σ (epsSH D.R) D.cd (D.s.cdScale _ (epsSH D.R)) P A.deg c W.μG
@@ -241,7 +241,7 @@ theorem schurSt_of_big_tie : ∀ Cg cb Cu cT CT C0 C1 : ℝ, ∃ C₀ : ℝ, ∀
   have hIso' := hBS hZ τ w' w θ (swapW W) (goodW_swap hW) (swapS A) (goodS_swap hA) hTw'
 
   have hκ : 0 < (2 * D.host.v) ^ (-((D.R.rS : ℝ) * D.R.k)) * θ := mul_pos (Real.rpow_pos_of_pos h2v _) hθ0
-  obtain ⟨hφ, hDis⟩ := GlobalTheory.T.besselDoubleCosetMeasure_bigCell_eq D.R.k D.R.rS W.z W.z' μsec W.μG W.μW W.μW' c
+  obtain ⟨hφ, hDis⟩ := _root_.GlobalTheory.DoubleCosetMeasure.isDis_bigCell D.R.k D.R.rS W.z W.z' μsec W.μG W.μW W.μW' c
     ((2 * D.host.v) ^ (-((D.R.rS : ℝ) * D.R.k)) * θ) hk1 hz hz' hTzp hTzp' hsec hc0 hκ hμG hcD hμW hμW1 hμW' hμW'1
   have hN : haarLie (Nset D.R.k D.R.rS) (ENNReal.ofReal ((2 * D.host.v) ^ (-((D.R.rS : ℝ) * D.R.k)) * θ)) = W.μN :=
     hμN.symm

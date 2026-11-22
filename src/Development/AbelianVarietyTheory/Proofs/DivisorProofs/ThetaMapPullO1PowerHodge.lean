@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Si
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniversalTripleFibrePrincipallyPolarisedDimensio
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelSemiAbelianRelDimCotangentVectorBundle
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormalizationModelFiniteExtension
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineBundleIsoPowMultipleDegreeDescendsNormalStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineBundleIsoPowMultipleDegreeDescendsNormal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaKeyFormulaNormalCoverRationalThetaConstants
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaConstantsListedFiniteGaloisExtension
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipallyPolarisedFibreExistsGeneratorStable
@@ -101,6 +101,6 @@ theorem GlobalTheory.UMin.KeyOne.lbIso_pull_O1_hodge : ∀ (E : Type) [Field E] 
   have hH := (_root_.GlobalTheory.ModelRelDim.relDim_and_isVB_omega E H Dw l Xo c Y).2.isLB_det
   have hA := pull_isLB (isLB_lbPow hO 8) io
   have hB := pull_isLB (isLB_lbPow hH (4 * (n + 1).factorial)) io
-  have key := GlobalTheory.T.lineBundleIso_pow_multiple_degree_descends_normal c.F Ω M Ω' M' π _ _ (n + 1).factorial hMn hπf hπ hA hB hdeg
+  have key := _root_.GlobalTheory.UMin.NormIso.lbIso_lbPow_of_pull c.F Ω M Ω' M' π _ _ (n + 1).factorial hMn hπf hπ hA hB hdeg
     (GlobalTheory.UMin.KeyOne.lbIso_pull_pull (isLB_lbPow hO 8) (isLB_lbPow hH _) io π hup)
   exact GlobalTheory.UMin.KeyOne.lbIso_pull_lbPow hO hH io 8 (4 * (n + 1).factorial) (n + 1).factorial key

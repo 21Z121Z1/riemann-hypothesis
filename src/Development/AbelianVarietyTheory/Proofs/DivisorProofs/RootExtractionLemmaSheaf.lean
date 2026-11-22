@@ -5,7 +5,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.Fa
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.OmBStatement
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.WtSubOneLe
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsSatFrame
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralUnimodularMatrixForDepthStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralUnimodularMatrixForDepth
 
 namespace GlobalTheory.RootTrick
 
@@ -13,7 +13,7 @@ open MvPowerSeries ReciprocityTheory.PGsh ReciprocityTheory.ChartRestriction.G.S
 
 theorem root_statement : RootStatement := by
   intro C _ _ _ v p hp hv d h m ty i G γ hγ hty n j _hn V _ _ La hdim
-  obtain ⟨x, hxi, hxd, hxk⟩ := GlobalTheory.T.exists_integral_unimodular_matrix_for_depth C v V (p ^ n) (pow_pos hp.pos n) j m
+  obtain ⟨x, hxi, hxd, hxk⟩ := _root_.GlobalTheory.powRow_matrix C v V (p ^ n) (pow_pos hp.pos n) j m
     (fun u => La (G.lc p (γ u) n)) hdim
   refine ⟨x, hxi, hxd, ?_⟩
   have h6 := fun w => pt6' C v p hp hv d m G γ (x w) hγ (hxi w)

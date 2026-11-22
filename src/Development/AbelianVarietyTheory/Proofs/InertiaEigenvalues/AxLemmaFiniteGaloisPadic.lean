@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NoTowerQ
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalFieldIntegerIffAlgebraicClosureNormStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalFieldIntegerIffAlgebraicClosureNorm
 import GroundTheory.PAdicHodge.AxLemma
 
 open Formalism.BasicNotions Formalism.BasicNotions.Loc ValuativeRel GroundTheory.LocalField GlobalTheory.PMon.Ram
@@ -26,7 +26,7 @@ theorem axIn_padic : ∀ (l : ℕ) [Fact l.Prime] (L : Type) [Field L] [Valuativ
     [IsGalois ℚ_[l] L] [Algebra L (Om l)] [IsScalarTower ℚ_[l] L (Om l)], AxIn ℚ_[l] L l := by
   intro l _ L _ _ _ _ _ _ _ _ _ _
   intro J x hx
-  have hO := GlobalTheory.T.localFieldInteger_iff_algebraicClosureNorm l L
+  have hO := _root_.GlobalTheory.PMon.Ram.mem_integer_iff_norm_le_and_valuation_lt_one_iff_norm_lt l L
   let φ : L →ₐ[ℚ_[l]] Om l := IsScalarTower.toAlgHom ℚ_[l] L (Om l)
   have hφ : ∀ y : L, φ y = algebraMap L (Om l) y := fun y => rfl
   let F : IntermediateField ℚ_[l] L := IntermediateField.fixedField J

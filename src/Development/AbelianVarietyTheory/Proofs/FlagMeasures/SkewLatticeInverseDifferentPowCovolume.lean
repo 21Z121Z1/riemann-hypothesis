@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImV
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ProdFundamentalDomainOfExtension
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AddFundamentalDomainMeasureEqOfCountable
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsFundamentalDomainSndOfTwoSmulMemStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsFundamentalDomainSndOfTwoSmulMem
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMixedSpaceReImCoordsTotallyComplex
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FractionalIdealBasisTransportMeasurePreservingStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsCmExtensionMixedSpaceRealCoords
@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AbsDiscrEqSqOfUnrami
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AbsNormInverseDifferentIdealPowEqDiscr
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemInverseDifferentIdealPowRealIffUnramifiedCm
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntegerAddConjEqOneOfFormallyUnramified
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CmExtensionConjMemInverseDifferentIdealPowStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CmExtensionConjMemInverseDifferentIdealPow
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ScaledSkewLatticeFundamentalDomainOfImaginaryPar
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CovolumeQuotientOfRealIdentity
 
@@ -74,7 +74,7 @@ theorem skew_covol_dInv : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [
     intro a y hay
     obtain ⟨x, hx, hxe⟩ := (hΛ _).1 hay
     rw [Prod.mk.injEq] at hxe
-    refine (hΛ _).2 ⟨x - σ x, Submodule.sub_mem (dInv E (2 * t) : Submodule (𝓞 E) E) hx (GlobalTheory.T.cmExtension_conj_mem_inverseDifferentIdealPow F E σ hCM _ x hx), ?_⟩
+    refine (hΛ _).2 ⟨x - σ x, Submodule.sub_mem (dInv E (2 * t) : Submodule (𝓞 E) E) hx (_root_.GlobalTheory.SnMass.VolN.conj_mem_dInv F E σ hCM _ x hx), ?_⟩
     have h1 : reV (x - σ x) = reV x - reV (σ x) := funext fun w => by simp [reV]
     have h1' : imV (x - σ x) = imV x - imV (σ x) := funext fun w => by simp [imV]
     rw [h1, h1', hre, him, ← hxe.2]
@@ -83,7 +83,7 @@ theorem skew_covol_dInv : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [
     · funext w; simp; ring
   have hsp : Submodule.span ℝ (Λ : Set ((InfinitePlace E → ℝ) × (InfinitePlace E → ℝ))) = ⊤ := by
     rw [hΛdef, Submodule.span_span_of_tower, b.span_eq]
-  obtain ⟨D2, hD2m, hD2⟩ := GlobalTheory.T.exists_fundamentalDomain_snd_of_two_smul_mem' Λ hsp h2
+  obtain ⟨D2, hD2m, hD2⟩ := _root_.GlobalTheory.exists_fundamentalDomain_snd_of_two_smul_mem Λ hsp h2
   have hprod := _root_.GlobalTheory.prod_fundamentalDomain_of_extension Λ.toAddSubgroup _ D2 hD1 hD2
   have heq := _root_.GlobalTheory.addFundamentalDomains_measure_eq ((volume : Measure (InfinitePlace E → ℝ)).prod (volume : Measure (InfinitePlace E → ℝ))) Λ _ _ ((ZSpan.fundamentalDomain_measurableSet b1).prod hD2m)
     (ZSpan.fundamentalDomain_measurableSet b) hprod (dom_of_basis b)
@@ -97,7 +97,7 @@ theorem skew_covol_dInv : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [
     · rintro ⟨x, hx, rfl⟩
       exact ⟨_, x, hx, rfl, rfl⟩
   obtain ⟨θ, hθ⟩ := _root_.GlobalTheory.exists_integer_add_conj_eq_one_of_formallyUnramified F E σ hCM hU
-  have hfin := _root_.GlobalTheory.SnMass.SkewDom.skewDom F E σ hCM (dInv E (2 * t)) (fun x hx => GlobalTheory.T.cmExtension_conj_mem_inverseDifferentIdealPow F E σ hCM _ x hx) θ hθ c hc D2 _
+  have hfin := _root_.GlobalTheory.SnMass.SkewDom.skewDom F E σ hCM (dInv E (2 * t)) (fun x hx => _root_.GlobalTheory.SnMass.VolN.conj_mem_dInv F E σ hCM _ x hx) θ hθ c hc D2 _
     hD2m (fun y => by simpa only [Set.mem_setOf_eq, hL2] using hD2 y) rfl
   have hd : (1 : ℝ) ≤ |(discr F : ℝ)| := by
     have h := Int.one_le_abs (discr_ne_zero F)

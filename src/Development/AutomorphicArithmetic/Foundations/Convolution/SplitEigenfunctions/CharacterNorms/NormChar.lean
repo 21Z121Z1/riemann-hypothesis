@@ -94,7 +94,7 @@ theorem exists_galois_quotient_of_ideleNorm_eq_one_quadratic (hE : Module.finran
     simpa [coe_smul_idele, hσd] using h2.symm
   obtain ⟨a, ha⟩ := AdeleBaseChange.exists_adeleMap_eq_sum_smul (K := ℚ) (L := E) (z : 𝔸[E])
   rw [huniv, Finset.sum_pair hc1.symm, one_smul] at ha
-  obtain ⟨e, he, hun⟩ := GlobalTheory.T.exists_idempotent_isUnit_one_add_or_sub_adele ℚ (algebraMap ℚ 𝔸[ℚ] (1 / 2) * a)
+  obtain ⟨e, he, hun⟩ := _root_.GlobalTheory.AdIdem.exists_idem_isUnit ℚ (algebraMap ℚ 𝔸[ℚ] (1 / 2) * a)
   obtain ⟨y, hy⟩ : ∃ y : E, c y ≠ y := by
     by_contra h
     push Not at h

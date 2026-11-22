@@ -1,15 +1,15 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AvgVanish
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocallyConstantCompactSupportUnipotentStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicDoubleCosetDecompositionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocallyConstantCompactSupportUnipotent
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicDoubleCosetDecomposition
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicCompactModParabolic
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsOpenRightInvarianceLocalCoefficient
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicProjShiftedEmbeddingStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicProjShiftedEmbedding
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnipotentCommuteShiftedEmbedding
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoinvariantUnipotentActionTrivial
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoinvariantLeviActionModulus
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ModulusMirabolicBlockFactor
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralLinearChangeModulusStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralLinearChangeModulus
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalConstancyTwistedTranslate
 
 open Matrix GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.BZMir GlobalTheory.BZMir.Leib GlobalTheory.RgGu.Leib GlobalTheory.CompanionTheory.BZPhiPG
@@ -28,7 +28,7 @@ theorem smooth_eC {i t : ℕ} (ψ : AddChar k Circle) (τ : MRep k (i + 1)) (σ 
 theorem conj_data {i t : ℕ} (h : MirabolicParabolic k (i + 1) t) :
     ∃ η : HPG k (i + 1) (t + 1), (η : Mir k ((i + 1) + t + 1)) = sEmb k ((i + 1) + t) (h : Mir k ((i + 1) + t)) ∧
       pgProj k (i + 1) (t + 1) η = (levi k (i + 1) (gpProj k (i + 1) t h).1,
-        (((gpProj k (i + 1) t h).2 : Mir k t) : GL (Fin (t + 1)) k)) := GlobalTheory.T.parabolic_proj_shifted_embedding k i t h
+        (((gpProj k (i + 1) t h).2 : Mir k t) : GL (Fin (t + 1)) k)) := _root_.GlobalTheory.CompanionTheory.BZPhiPG.HpgEmb.sEmb_HGP_mem_HPG k i t h
 
 theorem conj_d {i t : ℕ} (h : MirabolicParabolic k (i + 1) t) (d : Fin (t + 1) → k) :
     ∃ u : HPG k (i + 1) (t + 1), (pgProj k (i + 1) (t + 1) u).1 ∈ MirUin k (i + 1) ∧ (pgProj k (i + 1) (t + 1) u).2 = 1 ∧
@@ -56,7 +56,7 @@ theorem dpowM_hgp {i t : ℕ} (s : ℝ) (h : MirabolicParabolic k (i + 1) t) :
 theorem smInt_scale {t : ℕ} {W : Type} [AddCommGroup W] [Module ℂ W] (A : GL (Fin t) k) (φ : (Fin t → k) → W)
     (l : IsLocallyConstant φ) (c : HasCompactSupport φ) :
     @GlobalTheory.CompanionTheory.Rodier.smInt _ _ (borel _) _ _ (muD k t) (fun d => φ ((A⁻¹ : GL (Fin t) k).val *ᵥ d)) =
-      ((dpow t 1 A : ℂˣ) : ℂ) • @GlobalTheory.CompanionTheory.Rodier.smInt _ _ (borel _) _ _ (muD k t) φ := GlobalTheory.T.integral_linear_change_modulus k t W A φ l c
+      ((dpow t 1 A : ℂˣ) : ℂ) • @GlobalTheory.CompanionTheory.Rodier.smInt _ _ (borel _) _ _ (muD k t) φ := _root_.GlobalTheory.CompanionTheory.BZPhiPG.Scale.smInt_mulVec k t W A φ l c
 
 theorem integrand_lc {i t : ℕ} (ψ : AddChar k Circle) (hψ : Continuous ψ) {τ : MRep k (i + 1)} {σ : GRep k (t + 1)}
     (f : XS τ σ) (y : Mir k ((i + 1) + t + 1)) :

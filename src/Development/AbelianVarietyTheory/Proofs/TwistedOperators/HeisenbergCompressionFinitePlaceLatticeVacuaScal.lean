@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.OneEqSumPlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisThetaLaws
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CmAdeleIdempotentOfPlaceProperties
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaInnerProductHermitian
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilMatrixComponentAtPlaceMemCompletedLatticeStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilMatrixComponentAtPlaceMemCompletedLattice
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum MeasureTheory IsDedekindDomain NumberField Matrix GlobalTheory.IndefiniteRowSideFullHecke.RestrictedTensorSplitting GlobalTheory.PlaceTensor
 open scoped TensorProduct ComplexOrder
@@ -105,12 +105,12 @@ theorem compress_fin : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (S T : HSp 
   have hιx : ι • x = x := by rw [hx, smul_smul, hιι]
   have hloc : ∀ u ∈ latO S T ΛS ΛT (fun _ => True), ι • u ∈ latO S T ΛS ΛT (fun u => u = v) := by
     intro u hu
-    have h := ((GlobalTheory.T.weilMatrixComponentAtPlace_mem_completedLattice D S T ΛS ΛT (fun _ => True) u hu) (.inl v)).1
+    have h := ((_root_.GlobalTheory.LatticeLocal.wAt_mem_latO D S T ΛS ΛT (fun _ => True) u hu) (.inl v)).1
     rw [wAt_eq_smul, ← hι] at h
     exact latO_mono (fun v' h' => Sum.inl.inj h'.2) h
   have hloc' : ∀ u ∈ latO S T ΛS ΛT (fun u => u = v), ι • u ∈ latO S T ΛS ΛT (fun u => u = v) := by
     intro u hu
-    have h := ((GlobalTheory.T.weilMatrixComponentAtPlace_mem_completedLattice D S T ΛS ΛT (fun u => u = v) u hu) (.inl v)).1
+    have h := ((_root_.GlobalTheory.LatticeLocal.wAt_mem_latO D S T ΛS ΛT (fun u => u = v) u hu) (.inl v)).1
     rw [wAt_eq_smul, ← hι] at h
     exact latO_mono (fun v' h' => h'.1) h
   have hpair : ∀ a, symplO S T (ι • a) x = symplO S T a x := by
@@ -118,7 +118,7 @@ theorem compress_fin : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (S T : HSp 
     rw [symplO_smul, hcι, hιx]
   by_cases hA : ∀ l ∈ latO S T ΛS ΛT (fun u => u = v), ψ (symplO S T l x) = 1
   · have hxg : x ∈ latO S T ΛS ΛT (fun _ => True) := by
-      refine ((GlobalTheory.T.self_dual_lattice_pairing_dual D ψ S T ΛS ΛT hψ hS hT).1 x ?_).2 ?_
+      refine ((_root_.GlobalTheory.LatVac.latO_selfDual_approx_sign D ψ S T ΛS ΛT hψ hS hT).1 x ?_).2 ?_
       · rw [hx]
         ext i j
         simp [Matrix.map_apply, Matrix.smul_apply, map_mul, hinf]

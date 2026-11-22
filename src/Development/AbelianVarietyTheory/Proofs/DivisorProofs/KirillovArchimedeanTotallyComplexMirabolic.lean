@@ -12,7 +12,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanUnipoten
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanTruncatedRowUnipotentInvariantNonzero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanSectionMatrixInvertibleLevelReductionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsArchimedeanModerateGrowthMatrixSmoothingIntegrStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsArchimedeanMatrixSmoothingNeZeroAtOneStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsArchimedeanMatrixSmoothingNeZeroAtOne
 
 noncomputable section
 
@@ -216,7 +216,7 @@ theorem exists_levRepInf (r : ℕ) :
   | zero => exact fun _ W₀ _ h => ⟨_, h, levRepInf_zero n⟩
   | succ r ih =>
     intro hr W₀ hW h
-    obtain ⟨α, hα, hαc, hαs, hα1⟩ := GlobalTheory.T.exists_archimedeanMatrixSmoothing_ne_zero_at_one E n W₀ hW.1 h
+    obtain ⟨α, hα, hαc, hαs, hα1⟩ := _root_.GlobalTheory.JSW.MirCinf.exists_smoothMatInf_ne_zero_at_one E n W₀ hW.1 h
     obtain ⟨lam, h1, h2⟩ := ih (by omega) _ (GlobalTheory.T.isArchimedeanModerateGrowth_matrixSmoothingIntegral E n α hα.continuous hαc hαs W₀ hW) hα1
     exact ⟨_, h1, levRepInf_succ ⟨r, by omega⟩ hr h2 hα hαc hαs⟩
 

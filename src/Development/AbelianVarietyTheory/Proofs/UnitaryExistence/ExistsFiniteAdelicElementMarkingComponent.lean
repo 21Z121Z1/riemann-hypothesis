@@ -14,7 +14,7 @@ import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsMemberDict
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CompletedLatticeEqAdelicCompletionAndGram
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicElementLatticeFullAndCompletion
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicUnitaryLatticeSelfDualTraceForm
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicUnitaryEqRealMulFiniteSplitStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicUnitaryEqRealMulFiniteSplit
 
 open NumberField IsDedekindDomain ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.FD Formalism.BasicNotions Formalism.MainNotions Formalism.BasicNotions.TH Formalism.L2.Theta Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.L2.Pj
 open scoped TensorProduct Matrix Topology
@@ -160,7 +160,7 @@ theorem exists_finite_mark : ∀ (D : D7) (H : ReciprocityTheory.ChartRestrictio
     (fun x y => by
       rw [hherm, hC.base.ef k x y, hGm, hxi, neg_neg, mul_neg, map_neg])
     h1 h2 h3
-  obtain ⟨h, hh, rfl⟩ := (GlobalTheory.T.adelicUnitary_eq_real_mul_finite_split D V).2.2.2.1 g hg3
+  obtain ⟨h, hh, rfl⟩ := (_root_.GlobalTheory.UnitarySplit.real_finite_split D V).2.2.2.1 g hg3
   obtain ⟨-, -, hlat, hhat, -⟩ := _root_.GlobalTheory.Member.latG_lattice_and_completion D V h
   have hcap := (GlobalTheory.AdLat.hat_rational_points_and_approx D.host.F D.host.E V.rank (C.M.X k).Λ (C.M.X k).Λ_fg
     (C.M.X k).Λ_span).1

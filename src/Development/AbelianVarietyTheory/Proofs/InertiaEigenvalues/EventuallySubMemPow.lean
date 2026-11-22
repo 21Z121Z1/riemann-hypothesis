@@ -172,7 +172,7 @@ def fixNear : Subring (Per.Acris l) where
 theorem algebraMap_mem_fixNear (s : Per.Acris0 l) :
     algebraMap (Per.Acris0 l) (Per.Acris l) s ∈ fixNear l := by
   obtain ⟨e, he⟩ := GlobalTheory.MemLoc.exists_isEps_for_inj l
-  have hx : Per.θ l (GlobalTheory.MemLoc.xi e) = 0 := (GlobalTheory.T.fontaineTheta_eq_zero_iff_fontaineXiElement_dvd l e he _).2 dvd_rfl
+  have hx : Per.θ l (GlobalTheory.MemLoc.xi e) = 0 := (_root_.GlobalTheory.MemLoc.theta_eq_zero_iff_xi_dvd l e he _).2 dvd_rfl
   obtain ⟨s, hs⟩ := s
   have key : ∀ y ∈ Submodule.span (Per.Ainf l) {y : Per.AinfP l | ∃ n : ℕ,
       ((n.factorial : ℕ) : Per.AinfP l) * y = algebraMap (Per.Ainf l) (Per.AinfP l) (GlobalTheory.MemLoc.xi e) ^ n},

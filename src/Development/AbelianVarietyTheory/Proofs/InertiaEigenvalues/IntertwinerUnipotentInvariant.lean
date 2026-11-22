@@ -4,10 +4,10 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LabelDatum
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsCharLab
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CentralIdempotentOfIrrCharacterOrthogonalCentral
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GroupAlgebraTraceIdempotentAndIrreducibleDegree
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraFrobeniusReciprocityStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraSeriesLabelExistsUniqueGLnStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraFrobeniusReciprocity
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraSeriesLabelExistsUniqueGLn
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraSeriesCentralIdempotentLaws
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraSeriesLabelMulOfConstituentStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraSeriesLabelMulOfConstituent
 
 noncomputable section
 
@@ -267,7 +267,7 @@ theorem irr_vanish (σ : Fin k ⊕ Fin l ≃ Fin n) (χ : Gn g n → ℂ) (α : 
   refine eq_zero_of_idem _ hi ?_
   rw [(_root_.GlobalTheory.GLq.trIdem _ _ χ).2.2]
   refine mul_eq_zero_of_right _ ?_
-  rw [hc, GlobalTheory.T.harishChandra_frobenius_reciprocity g k l n hn χ _ (isClass_of_isIrr hχ), ip, mul_eq_zero] at h
+  rw [hc, _root_.GlobalTheory.GLq.FrobRecHC.hcT_adjoint g k l n hn χ _ (isClass_of_isIrr hχ), ip, mul_eq_zero] at h
   have h' := h.resolve_left (inv_ne_zero (Nat.cast_ne_zero.2 Fintype.card_ne_zero))
   rw [Fintype.sum_prod_type] at h'
   rw [map_zOf, map_zOf, mul_assoc, Finset.sum_mul_sum, Finset.mul_sum, tr_sum]
@@ -311,8 +311,8 @@ theorem ser_vanish (L : LabelDatum g) (h5 : 5 ≤ g) (hG : Green) (σ : Fin k �
   rintro χ ⟨hχ, hχ'⟩
   refine irr_vanish σ χ α β hχ hα hβ ?_
   by_contra hne
-  exact hf (((GlobalTheory.T.harishChandraSeriesLabel_exists_unique_GLn g L h5 hG n).1 χ hχ).unique hχ'
-    (GlobalTheory.T.harishChandraSeriesLabel_mul_of_constituent g L k l n χ α β f₁ f₂ hn hχ hα hβ hα' hβ' hne))
+  exact hf (((_root_.GlobalTheory.GLq.Label.label_main g L h5 hG n).1 χ hχ).unique hχ'
+    (_root_.GlobalTheory.GLq.LabelMul.hasLabel_mul g L k l n χ α β f₁ f₂ hn hχ hα hβ hα' hβ' hne))
 
 open MonoidAlgebra in
 theorem ser_vanish' (L : LabelDatum g) (h5 : 5 ≤ g) (hG : Green) (σ : Fin k ⊕ Fin l ≃ Fin n)

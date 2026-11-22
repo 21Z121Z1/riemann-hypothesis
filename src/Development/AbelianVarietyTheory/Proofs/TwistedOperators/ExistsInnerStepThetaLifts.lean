@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IoYStOfIoPair
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasInfExpOfOrder
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ChainParOfNodeGap
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsThetaLiftMultiplicitySpacesOfHyp
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ChainStepsLevelCharacterConditionsHoldStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ChainStepsLevelCharacterConditionsHold
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsInnerStepIntertwinersThetaChain
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.L2.Theta Formalism.L2.DIV Formalism.L2.Indef Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Cx
@@ -28,7 +28,7 @@ theorem ex_ioY_holds : GlobalTheory.Published.DiscreteSeriesCover → GlobalTheo
   have hI : R.chain_ItY := fun t k hk => (hW.ItY k hk).1 (hE k hk) t
   have hS : GlobalTheory.Chain.StepsOK R :=
     GlobalTheory.Chain.StepVac.stepsOK D G Pl0 T A Ks R hL hθ hW.ωY hW.ωX hW.vY hW.vX
-  have hLw : GlobalTheory.Chain.LawsOK R := GlobalTheory.T.chainSteps_levelCharacter_conditions_hold D G Pl0 T A Ks R hL hθ hW.ωY hW.ωX hW.vY hW.vX
+  have hLw : GlobalTheory.Chain.LawsOK R := _root_.GlobalTheory.Chain.SourceLaw.lawsOK D G Pl0 T A Ks R hL hθ hW.ωY hW.ωX hW.vY hW.vX
   have hY := GlobalTheory.Chain.ioYSt_of_ioPair D G Pl0 T A Ks R (_root_.GlobalTheory.Chain.IoLift.ioPair_onObjects hDS hHC hCR hCW D)
     (GlobalTheory.Chain.ParOfNodeGap.chainPar_of_nodeGap D hH.nodeGap) hθ hS hLw hM.νY hM.νY' hI
   exact fun t k hk => hY t k hk

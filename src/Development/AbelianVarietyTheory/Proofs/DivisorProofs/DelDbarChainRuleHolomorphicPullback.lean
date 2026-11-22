@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.LineSCShortExact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContDiffOnCoefficientsComplexFormMul
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DelOperatorAtDbarOperatorAtLinearLocalStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DelOperatorAtDbarOperatorAtLinearLocal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DelOperatorAtDbarOperatorAtLeibnizOfCommute
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DelOperatorDbarOperatorPullbackConstantFormHolomStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DelOperatorDbarOperatorPullbackConstantFormHolom
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WirtingerDerivsCompHolomorphicPullbackDz
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContDiffOnReprPullbackComplexFormFderiv
 open GlobalTheory GlobalTheory.CxForm GlobalTheory.GoodMetric
@@ -63,12 +63,12 @@ theorem delAt_dbarAt_pull_comp (m n : ℕ) (τ : V m → V n) (U : Set (V m)) (�
     funext x
     conv_lhs => rw [← (bas n).sum_repr (β (τ x))]
     simp only [map_sum, map_smul, Algebra.smul_def, map_mul, AlgHom.commutes]
-  have hsum := (GlobalTheory.T.delOperatorAt_dbarOperatorAt_linear_local m v).2.2.1 (Finset (Fin (n + n))) Finset.univ
+  have hsum := (_root_.GlobalTheory.CxForm.delAt_dbarAt_linear_local m v).2.2.1 (Finset (Fin (n + n))) Finset.univ
     (fun S x => algebraMap ℂ (Alt m) ((bas n).repr (β (τ x)) S) * pull (fderiv ℂ τ x) (bas n S))
     (fun S _ => hprod S)
   have hL := fun S => _root_.GlobalTheory.CxForm.FormMul.leibniz_of_comm m (fun x => algebraMap ℂ (Alt m) ((bas n).repr (β (τ x)) S))
     (fun x => pull (fderiv ℂ τ x) (bas n S)) v (algebraMap ℂ (Alt m) ((bas n).repr (β (τ v)) S)) (hA S) (hPd S)
-  have hcl := fun S => GlobalTheory.T.delOperator_dbarOperator_pullback_constantForm_holomorphic m n τ U (bas n S) hU hτ v hv
+  have hcl := fun S => _root_.GlobalTheory.CxForm.PullDelClosed.delAt_dbarAt_pull_fderiv m n τ U (bas n S) hU hτ v hv
   have hch := fun S => _root_.GlobalTheory.LineForm.del_dbar_comp_holo_pull m n τ (fun y => (bas n).repr (β y) S) v hτv (hβ S)
   have hfun := fun S => delAt_dbarAt_algebraMap (fun x => (bas n).repr (β (τ x)) S) v
   rw [hexp]

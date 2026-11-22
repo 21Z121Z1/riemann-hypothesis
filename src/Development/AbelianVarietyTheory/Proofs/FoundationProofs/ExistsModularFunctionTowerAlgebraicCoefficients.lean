@@ -13,7 +13,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularFunctionF
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularFunctionFractionFieldAnSlGerm
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularFunctionFractionFieldBoundedDenominators
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsJInvariantInModularFunctionFractionField
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FractionFieldExistsGammaLevelStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FractionFieldExistsGammaLevel
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemModularFunctionFractionFieldOfQExpansions
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ShimuraReciprocityModularFunctionFractionField
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularFunctionFractionFieldSaturation
@@ -38,7 +38,7 @@ theorem tower_exists : ∀ (Ω : Type) [Field Ω] [Algebra ℚ Ω] [IsAlgClosure
             gal := T.gal, gal_exp := T.gal_exp,
             an := T.an, an_c := (_root_.GlobalTheory.FN.frac_const_and_quot Ω ε T).1, an_sl := _root_.GlobalTheory.FN.an_sl_germ Ω ε T, an_mero := (_root_.GlobalTheory.FN.frac_const_and_quot Ω ε T).2,
             an_exp := fun f => (_root_.GlobalTheory.FN.frac_exp_converges Ω ε T f).2,
-            level := GlobalTheory.T.fractionField_exists_gamma_level Ω ε T, exp_upper := GlobalTheory.T.modularFunctionFractionField_exp_upperTriangular Ω ε T, recip := _root_.GlobalTheory.FNRecip.main Ω ε T,
+            level := _root_.GlobalTheory.FN.frac_exists_level Ω ε T, exp_upper := GlobalTheory.T.modularFunctionFractionField_exp_upperTriangular Ω ε T, recip := _root_.GlobalTheory.FNRecip.main Ω ε T,
             jK := T.io a, j_inv := hinv, j_exp := ⟨h1, h2, h3⟩,
             j_hol := ⟨up jT, by rw [T.an_io, ha]; rfl, hhol⟩,
             alg_j := _root_.GlobalTheory.FN.frac_isAlgebraic_adjoin_j Ω ε T a ha, bdd := _root_.GlobalTheory.FN.frac_bdd_den Ω ε T, sat := _root_.GlobalTheory.fn_sat Ω ε T,

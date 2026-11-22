@@ -3,8 +3,9 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolActs
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolynomialDatumActionOfPairStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisenbergLineDerivativeFiniteSpanStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolynomialDatumActionOfPair
+import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotropicHermitian
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisenbergLineDerivativeFiniteSpan
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockVacuaSpanFiniteDimensional
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CompactUnitaryMovesHeisenbergDerivative
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GaussianCompactActionEigen
@@ -25,7 +26,7 @@ theorem fock_space_kFinite : _root_.GlobalTheory.FunPr.ThetaLocalInputs → ∀ 
         GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Acts (GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.evI F) (om (k, 1)) f f₁ → f₁ ∈ S := by
   intro hPr F E _ _ _ _ _ σ B n d X W M χX χW om r s r' s' hP f hf
   have hPA := _root_.GlobalTheory.T.dualPair_preserves_polarization hPr F E σ B n d X W M χX χW om r s r' s' hP
-  obtain ⟨m, L, hD⟩ := GlobalTheory.T.heisenbergLine_derivative_finite_span F E σ n d X W M B.ψ hP.base.std
+  obtain ⟨m, L, hD⟩ := _root_.GlobalTheory.HeisDerivSpan.heisLine_deriv_finite_span F E σ n d X W M B.ψ hP.base.std
   choose! Dfun hDiff hDspan using hD
   have hK := hPA.2.1
   simp only [GlobalTheory.RealActs.OpOn] at hK

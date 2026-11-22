@@ -1,7 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsLatMeasurableConst
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TranslatedLatticeAtInfinityFullCovolumeDualStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LeftQuotientCovolumeWithDensityDetNormSqStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TranslatedLatticeAtInfinityFullCovolumeDual
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LeftQuotientCovolumeWithDensityDetNormSq
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsGaugeAll
 
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S GlobalTheory.Count GlobalTheory.FlagMeas GlobalTheory.FlagBase
 
@@ -91,7 +92,7 @@ theorem latMean_covAt : ∀ (E : Type) [Field E] [NumberField E], IsTotallyCompl
   unfold latMean glVol
   rw [← ENNReal.tsum_mul_right]
   refine tsum_congr fun c => ?_
-  obtain ⟨κ, hκ, hL⟩ := (GlobalTheory.T.translatedLatticeAtInfinity_full_covolume_dual E hE j).1 (Quot.out c).1 (Quot.out c).2
+  obtain ⟨κ, hκ, hL⟩ := (_root_.GlobalTheory.LatFacts.lattice_facts E hE j).1 (Quot.out c).1 (Quot.out c).2
   have hF : Measurable fun t : ℝ => w (κ / t) := hw.comp (measurable_const.div measurable_id)
   have hd : (haarGL E j).withDensity (fun g => w (covAt E j (latAt E j (Quot.out c).1 g)))
       = (haarGL E j).withDensity (fun g => w (κ / detNorm E j g)) := by
@@ -99,7 +100,7 @@ theorem latMean_covAt : ∀ (E : Type) [Field E] [NumberField E], IsTotallyCompl
     filter_upwards [GlobalTheory.FlagBase.MeanCov.ae_detNorm_pos E j hj] with g hg
     rw [(hL g hg).2.1]
   rw [hd]
-  refine (GlobalTheory.T.leftQuotientCovolume_withDensity_detNormSq E hE j hj _ (Quot.out c).2 (fun t => w (κ / t)) hF).trans ?_
+  refine (_root_.GlobalTheory.DetSlab.covol_withDensity_detNorm E hE j hj _ (Quot.out c).2 (fun t => w (κ / t)) hF).trans ?_
   congr 1
   exact GlobalTheory.FlagBase.MeanCov.lintegral_div_inv κ hκ w
 

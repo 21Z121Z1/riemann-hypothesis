@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Jets.IsSelfOf
 import Development.AbelianVarietyTheory.Definitions.Jets.TwoPlaces
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.NuLocCLeNuPlEBaseChange
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.JetAt0ProdRename
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.BiextensionNondegenerateModMaximalIdealIntegralCStatement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.BiextensionNondegenerateModMaximalIdealIntegralC
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.RowLawFormalStatementsSelfConjugate
 import Formalism.LocalToGlobal.CharacterGerms.NondegenerateCharts
 import Formalism.LocalToGlobal.CharacterGerms.RowTieSelf
@@ -39,7 +39,7 @@ theorem supplyC_selfConj : (∀ (p : ℕ) [Fact p.Prime], ReciprocityTheory.Char
   intro hUp E _ _ _ H Dw lv Xo c _ hstar T io y C3 C _ _ V ι hι k Y hY halg Orb _ lab ha hsurj hr hj a hdom nW ν hν
   obtain ⟨p, hp, hsep, hrk⟩ := _root_.GlobalTheory.RowAt.exists_selfData E H Dw lv Xo c hstar T io y C3 C V ι hι k Y hY Orb lab ha
   obtain ⟨hCart, hAx, hG0, hC, hR1⟩ := _root_.GlobalTheory.RowLaw.formal_statements_selfConj
-  have hndg : NDG Y := GlobalTheory.T.biextension_nondegenerate_mod_maximalIdeal_integral_chart E H Dw lv Xo c hstar T io y C3 C V ι hι k Y hY
+  have hndg : NDG Y := _root_.GlobalTheory.AlphaPair.ndg_at_chart E H Dw lv Xo c hstar T io y C3 C V ι hι k Y hY
   have Hy : ∀ o, (Y.rawSelf (p o)).Hyps V := fun o =>
     { charZero := inferInstance
       algClosed := Y.algClosed

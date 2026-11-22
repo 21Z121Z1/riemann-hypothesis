@@ -1,11 +1,12 @@
 import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.Complementary
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductTransposeInverseDualReverseStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductTransposeInverseDualReverse
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LanglandsSocleOfOrderFree
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalLanglandsOfIrreducibleAdmissible
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.ZelevinskyCosocles.GKLocal
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualClassTwistNegStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualClassTwistNeg
+import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.LSegJacquet
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.BernsteinZelevinskyGL.TopAdm
 import CompanionTheory.AutomorphicTheory.HeckeStandardModules.EqZeroOfCompAt
 
@@ -80,7 +81,7 @@ theorem herm_ofB (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] [IsN
   change (prodIrr (yy x s) hd).IsIrreducible at hirr
 
   obtain ⟨E5⟩ := theta_contra hGK (prodIrr (yy x s) hd) (isSmooth_prodIrr _ _) hirr
-  obtain ⟨hd', ⟨E4⟩⟩ := GlobalTheory.T.product_transpose_inverse_dual_reverse hA hGK (yy x s) hd
+  obtain ⟨hd', ⟨E4⟩⟩ := _root_.GlobalTheory.CompanionTheory.ThetaProd.prodIrr_comp_thetaW hA hGK (yy x s) hd
 
   let c : Fin 2 → ℝ := ![-s, s]
   have hM : ∑ _a : Fin 2, x.1 = N := by
@@ -127,10 +128,10 @@ theorem herm_ofB (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] [IsN
     rw [keyσ _ (hχ a)]
     fin_cases a
     · show (dualCl x).tw (absPow k ((-s : ℝ) : ℂ)) _ = dualCl (x.nu (s : ℂ))
-      rw [GlobalTheory.T.dual_class_twist_neg hA x (s : ℂ)]
+      rw [_root_.GlobalTheory.CompanionTheory.ZcDual.dualCl_nu hA x (s : ℂ)]
       simp only [IrrGL.nu, e0]
     · show (dualCl x).tw (absPow k ((s : ℝ) : ℂ)) _ = dualCl (x.nu (-(s : ℂ)))
-      rw [GlobalTheory.T.dual_class_twist_neg hA x (-(s : ℂ)), neg_neg]
+      rw [_root_.GlobalTheory.CompanionTheory.ZcDual.dualCl_nu hA x (-(s : ℂ)), neg_neg]
       rfl
   obtain ⟨E0⟩ := congrProd fπ.symm hd hM
   obtain ⟨E3⟩ := congrProd fσ hM hd'

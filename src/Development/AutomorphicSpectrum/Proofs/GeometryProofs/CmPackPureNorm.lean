@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCMFrame
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DifferentTwistedGeneratorExistsStatement
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DifferentTwistedGeneratorExists
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.EigenLocalBasisLogNorm
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsTransition
 import Development.WeilBound.CoreStatements.SesquilinearFractions.DOkBasis
@@ -11,7 +11,9 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CmPackProductFrame
 import Development.WeilBound.CoreStatements.SesquilinearFractions.GIntFrame
 import Development.WeilBound.CoreStatements.SesquilinearFractions.CmLieModelAction
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PeriodsSpanPureDecomposition
-import Development.AutomorphicSpectrum.Proofs.AdelicProofs.PadicEmbeddingDiscreteValuationRingStatement
+import Development.AutomorphicSpectrum.Proofs.AdelicProofs.PadicEmbeddingDiscreteValuationRing
+import Development.AutomorphicSpectrum.Definitions.AdelicLattices.FactPrimes
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LatNormGrLatNeZeroOfSpan
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Rt0ConjNegNeZero
 
 noncomputable section
@@ -160,7 +162,7 @@ theorem half {D : Datum H} {l : Level H} {Xo : Moduli D l} {c : Coeff l} {K : Ty
 
 theorem intFrames_fin : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host E) (D : Datum H) (l : Level H) (Xo : Moduli D l) (c : Coeff l) (g : ℕ) (ty : Fin g → (E →+* ℂ)) (FU : FamilyUnif Xo (algebraMap (KA l) ℂ) ty) (i : Fin FU.n) (Z : ∀ b : Bool, Curve0 H (sgnRt H b)) (P : (FU.Di i).La →+ (Fin g → ℂ)) (hP : IsPeriod (FU.Di i) ty P) (X : CMPack Z c FU i hP) (x : Fin D.p ⊕ Fin D.q → (FU.Di i).La) (hx : IsPure hP x) (τ : E →+* ℂ) (ℓ : Nat.Primes) (j : X.K →+* ℂ_[ℓ]) (v : Vecs X.y D.p) (w : Vecs X.y D.q), IsTypeFn H D.p D.q ty → τ (H.rt : E) = H.rt0 → IsLocBasis (𝓞 E) ℓ x → X.IsCMFrame τ hx v w → ∃ (V : Subring X.K) (_ : IsDiscreteValuationRing V) (_ : IsFractionRing V X.K) (T : SAB H (Sp V)) (m'' : SABMap X.t T (spMap (algebraMap V X.K))) (δ δ' : X.K) (v' : Vecs X.y D.p) (w' : Vecs X.y D.q), (∀ a : X.K, ‖j a‖ ≤ 1 ↔ a ∈ (algebraMap V X.K).range) ∧ δ ≠ 0 ∧ δ' ≠ 0 ∧ Real.log ‖j δ‖ = logIdeal ((j.comp (X.β.comp (tauE c τ))).comp (algebraMap (𝓞 E) E)) (differentIdeal ℤ (𝓞 E)) - Real.log ‖j (X.β (tauE c τ (H.rt : E)))‖ ∧ Real.log ‖j δ'‖ = Real.log ‖j δ‖ ∧ (∀ a, IsComb ((δ • (1 : Matrix (Fin D.p) (Fin D.p) X.K)) a) v (v' a)) ∧ (∀ a, IsComb ((δ' • (1 : Matrix (Fin D.q) (Fin D.q) X.K)) a) w (w' a)) ∧ IsFramed (Set.range X.y) τ X.β X.y v' w' ∧ IsIntFrame X.m m'' (X.β.comp (tauIn c τ)) v' ∧ IsIntFrame X.m m'' (X.β.comp (tauIn c (ComplexEmbedding.conjugate τ))) w' := by
   intro E _ _ _ H D l Xo c g ty FU i Z P hP X x hx τ ℓ j v w hty hτ hloc hfr
-  obtain ⟨Vs, hdvr, hVj, hOK, hunit⟩ := GlobalTheory.T.padic_embedding_discrete_valuation_ring X.K ℓ j
+  obtain ⟨Vs, hdvr, hVj, hOK, hunit⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Fl.ValRing.exists_dvr_of_padic_embedding X.K ℓ j
   let V : Subring X.K := Vs.toSubring
   haveI : IsDiscreteValuationRing V := hdvr
   haveI : IsFractionRing V X.K := (inferInstance : IsFractionRing Vs X.K)
@@ -168,7 +170,7 @@ theorem intFrames_fin : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (
   have hOK' : ∀ s : 𝓞 X.K, (s : X.K) ∈ V := hOK
   obtain ⟨f, b, hf, hb⟩ := _root_.PositivityTheory.Xgf.exists_local_basis_cm_order E H ℓ ℓ.prop
   obtain ⟨M, ρ, lam, hact, hIm, hsm, hadd, hrt, hCM⟩ := _root_.PositivityTheory.Xgf.cm_lie_model_action E H D l Xo c g ty FU i Z P hP X
-  obtain ⟨δ₀, hδ₀, hδ₀'⟩ := GlobalTheory.T.different_twisted_generator_exists E H ℓ
+  obtain ⟨δ₀, hδ₀, hδ₀'⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Fl.RelDiff.exists_local_generator E H ℓ
   let σ : E →+* X.K := X.β.comp (tauE c τ)
   let σ' : E →+* X.K := X.β.comp (tauE c (ComplexEmbedding.conjugate τ))
   have hσc : ∀ a, ((σ a : X.K) : ℂ) = τ a := fun _ => rfl

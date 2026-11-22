@@ -151,7 +151,7 @@ theorem exists_twSec_keyPow : ∀ (E : Type) [Field E] [NumberField E] [IsCMFiel
     (Fintype.equivFin _).symm
   obtain ⟨K, hKmem, hKval⟩ := _root_.GlobalTheory.KeyFourth.exists_unit_secZ_keyRule κ k₁ k₂ k₆ E H Dw l Xo c _ e hpq
   have hσ0 := goodEmb_goodOf c c.F.val.toRingHom
-  obtain ⟨ρ, -⟩ := GlobalTheory.T.exists_keySection_fourthRoot_perComponent κ k₁ k₂ k₆ k₄ E H Dw l Xo c _ e _ r (U _) K hσ0 (hU _ hσ0) hF hpq hKmem hKval
+  obtain ⟨ρ, -⟩ := _root_.GlobalTheory.KeyRoot.exists_keySec_pow_four κ k₁ k₂ k₆ k₄ E H Dw l Xo c _ e _ r (U _) K hσ0 (hU _ hσ0) hF hpq hKmem hKval
   have hkr : GlobalTheory.IndefiniteRowSideFullHecke.FibreFramesOnModels.IsKeyRule κ := by
     refine ⟨?_, k₂, k₃, k₄, ?_⟩
     · simpa only [GlobalTheory.KeyCl.Homog, mul_one] using k₁

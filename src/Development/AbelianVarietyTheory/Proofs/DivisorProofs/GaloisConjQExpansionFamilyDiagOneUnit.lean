@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.HasQIff
 import Development.AbelianVarietyTheory.Definitions.Divisors.JetAnalytic
 import Development.AbelianVarietyTheory.Definitions.Divisors.ZetaActRefl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertEisensteinJetGaloisConjCoefficients
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertLatticeTwistByMatrixModNMulStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertLatticeTwistByMatrixModNMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QConjTorsion
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModularGroupRowVecAndConjRightActions
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertLatticeTwistHasLevel
@@ -47,7 +47,7 @@ theorem qConj_family : EisExp → ∀ (F : Type) [Field F] [NumberField F] [IsTo
     rw [← ch_one, hg 1, mul_one, ch, Int.cast_natCast]
   have h := _root_.GlobalTheory.HilbFam.qConj_hfun_twist hE F hf s N (twist N L (α : Matrix (Fin 2) (Fin 2) (ZMod N))) hs (NeZero.pos N)
     (GlobalTheory.HilbFam.hasLevel_twist_of_hasLevel F N L _ hL) z hz g _ κ κ' _ _ hcop hz1 hκ hq
-  rw [diag_eq, GlobalTheory.T.hilbertLatticeTwistByMatrixModN_mul F N L _ _ hL.2, ← Units.val_mul] at h
+  rw [diag_eq, _root_.GlobalTheory.HilbFam.TwistMul.twist_twist F N L _ _ hL.2, ← Units.val_mul] at h
   exact h
 
 end GlobalTheory.HilbFam.GalFamily

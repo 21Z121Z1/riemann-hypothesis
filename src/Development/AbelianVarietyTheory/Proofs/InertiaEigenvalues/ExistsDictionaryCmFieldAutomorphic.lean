@@ -7,8 +7,8 @@ import Formalism.SharpRestriction.LevelLetterCocycles.SphericalInertData
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousMapPFin
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DefiniteUnitaryClassSetFinite
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpanRepMatrixEqTopOfAbsIrreducible
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsAdelicExtensionOfAlgebraicWeightDefiniteUnStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFinitePartMulDefiniteUnitaryInfinitePointStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsAdelicExtensionOfAlgebraicWeightDefiniteUn
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFinitePartMulDefiniteUnitaryInfinitePoint
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUnitaryRationalMatrixOfFirstPresentationPo
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsOpenNhdOneInUnitaryPrincipalCongruence
 open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.N Formalism.ConjugateSelfDual ReciprocityTheory.Gal ReciprocityTheory.Aut Formalism.AUTREP Formalism.L2 Formalism.L2.Host GlobalTheory.HeightCounting NumberField IsDedekindDomain GlobalTheory.CuspRep GlobalTheory.UnitaryBC GlobalTheory.FormDict GlobalTheory.DefiniteBC
@@ -156,7 +156,7 @@ theorem isAutFormU_phi (hfin : ∀ k ∈ finU L n, R k = 1)
     change lam (R g⁻¹ (f (fy F g0))) = lam (R g⁻¹ (f (fy F g)))
     rw [e, hOf _ hg]
   · intro γ hγ g
-    obtain ⟨γQ, γ₀, h1, h2, h3⟩ := GlobalTheory.T.exists_finite_part_mul_definite_unitary_infinite_point L n F γ hγ
+    obtain ⟨γQ, γ₀, h1, h2, h3⟩ := _root_.GlobalTheory.RatFinPart.exists_gq_mul_infU L n F γ hγ
     have hy : fy F γ = γQ := by
       have := fy_mul F (γ * (F.j γQ)⁻¹) (F.j γQ)
       rw [inv_mul_cancel_right, fy_inf F h3, fy_j, one_mul] at this
@@ -338,7 +338,7 @@ theorem exists_dict : ∀ (L : Type) [Field L] [NumberField L] [IsCMField L] (n 
     ∃ U, Dict F π U := by
   intro L _ _ _ n F π
   haveI : FiniteDimensional ℂ π.W := π.alg.1
-  obtain ⟨R, hfin, hrat, hcont⟩ := GlobalTheory.T.exists_adelic_extension_of_algebraicWeight_definiteUnitary L n π.toAlgWt
+  obtain ⟨R, hfin, hrat, hcont⟩ := _root_.GlobalTheory.WeightRealExt.exists_extension L n π.toAlgWt
   exact ⟨_, dict_span F π.ρ R π.irr π.S π.irrS hfin hrat hcont⟩
 
 end GlobalTheory.FormDictEx

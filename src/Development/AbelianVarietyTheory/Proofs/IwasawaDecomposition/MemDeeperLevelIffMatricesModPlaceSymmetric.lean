@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SymAllowed
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DimPartsAtIffBadAndOff
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InModIffForallPlaceMemSpanModuloStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InModIffForallPlaceMemSpanModulo
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SymmetricFrameMatrixMemUnipotentIffColumnSpan
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SymmetricPositionColumnCondIffCongruenceConjStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SymmetricPositionColumnCondIffCongruenceConj
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.L2.Theta Formalism.IndefR.Mult Formalism.IndefR.Links Formalism.IndefR.Lev Formalism.IndefR.AutomorphicEvaluation Formalism.L2.DIV Formalism.L2.SG.RowDict Formalism.L2.SG.RowsJoinPinned Formalism.L2.SG.RowLevelMatch Formalism.L2.SG.HidaSetting Formalism.L2.SG.PoincareInHH.PoincareSetting Formalism.L2.SG.ConcreteSettingExists MeasureTheory NumberField IsDedekindDomain GlobalTheory.Mem GlobalTheory.Mem.SRe
 open scoped TensorProduct Matrix
 attribute [local instance] Formalism.BasicNotions.Host.cmStar
@@ -27,9 +27,9 @@ theorem membership_iff_unipSym : ∀ (D : D7) (X : HidaSetting D) (h : X.B.I = F
     · exact (X.vectorsInLattice.2.2 j).1
   have hK : K2cong X.B.I X.B.g X.e0 X.z0 X.bw k ↔
       ∀ w : HeightOneSpectrum (𝓞 D.host.E), ((X.B.g : ℕ) : 𝓞 D.host.E) ∈ w.asIdeal → CondAt X w k := by
-    have e1 := fun a => GlobalTheory.T.inMod_iff_forall_place_memSpanModulo D X h hE _ (hS1 a) _ (hLf _ (X.vectorsInLattice.1 a).1)
-    have e2 := GlobalTheory.T.inMod_iff_forall_place_memSpanModulo D X h hE _ hS2 _ (hLf _ X.vectorsInLattice.2.1)
-    have e3 := fun i => GlobalTheory.T.inMod_iff_forall_place_memSpanModulo D X h hE _ (hS3 i) _ (hLf _ (X.vectorsInLattice.2.2 i).1)
+    have e1 := fun a => _root_.GlobalTheory.Mem.GroupLoc.Crt.inMod_iff_forall_modW D X h hE _ (hS1 a) _ (hLf _ (X.vectorsInLattice.1 a).1)
+    have e2 := _root_.GlobalTheory.Mem.GroupLoc.Crt.inMod_iff_forall_modW D X h hE _ hS2 _ (hLf _ X.vectorsInLattice.2.1)
+    have e3 := fun i => _root_.GlobalTheory.Mem.GroupLoc.Crt.inMod_iff_forall_modW D X h hE _ (hS3 i) _ (hLf _ (X.vectorsInLattice.2.2 i).1)
     constructor
     · rintro ⟨h1, h2, h3⟩ w hw
       exact ⟨fun a => (e1 a).1 (h1 a) w hw, e2.1 h2 w hw, fun i => (e3 i).1 (h3 i) w hw⟩
@@ -62,6 +62,6 @@ theorem membership_iff_unipSym : ∀ (D : D7) (X : HidaSetting D) (h : X.B.I = F
         · exact (H ⟨1, v⟩).1
         · exact (H ⟨1, v⟩).2
   rw [hK2, hK, hP]
-  exact forall_congr' fun kv => (GlobalTheory.T.symmetricPositionColumnCond_iff_congruence_conj D X h hE hg k hk kv).symm.trans (_root_.GlobalTheory.Mem.GroupLoc.mem_unipSym_iff_colCond D X h hE hg k hk kv (Ns kv) (hNs kv)).symm
+  exact forall_congr' fun kv => (_root_.GlobalTheory.Mem.GroupLoc.Dual.colCond_iff_condAt D X h hE hg k hk kv).symm.trans (_root_.GlobalTheory.Mem.GroupLoc.mem_unipSym_iff_colCond D X h hE hg k hk kv (Ns kv) (hNs kv)).symm
 
 end GlobalTheory.Mem.GroupLoc

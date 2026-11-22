@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Centra
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ParabolicLeviDecomposition
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.IwahoriSubgroup
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StabUpTo
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SiegelCompactTranslateBoundStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SiegelCompactTranslateBound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RegularSemisimpleFlagStabilizer
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsWittComplementFrame
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FrameStabilizerFlagCriterion
@@ -18,7 +18,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactArchimed
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorusArchimedeanFrameConjugation
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MinimalParabolicArchimedeanStabilizes
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanMatrixPreservesForm
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanRationalEmbeddingMapStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanRationalEmbeddingMap
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactFiniteRationalDenominator
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BoundedIntegralMatricesFinite
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RationalPointsEqEmbedding
@@ -297,7 +297,7 @@ theorem arch_bound (h : IsCMExt F E σ) (hJ : IsHermND σ J) (hW : IsWittFrame �
       _ = _ := by simp only [Matrix.mul_assoc]
   have cone' : cd 1 = 1 := by simp only [hcd, Matrix.mul_one, hlc]
   have hD : (Qi * δ.1.1 * frm X Z Y).map φ = cd (am p) * cd (am a) * cd (am y) * cd (am a⁻¹) * cd (am p⁻¹) := by
-    have e : δ.1.1.map φ = am (ratEmb σ J δ) := (GlobalTheory.T.archimedean_rational_embedding_map F E σ n J δ w τ).symm
+    have e : δ.1.1.map φ = am (ratEmb σ J δ) := (_root_.GlobalTheory.CompanionTheory.CFin.archMat_projArch_ratEmb F E σ n J δ w τ).symm
     rw [Matrix.map_mul, Matrix.map_mul, e, hδ, amul, amul, amul, amul, ← hQic, ← hQc]
     change cd _ = _
     rw [cmul, cmul, cmul, cmul]
@@ -366,7 +366,7 @@ theorem classes_finite (hS : PositivityTheory.ThKR.SiegelCore) (h : IsCMExt F E 
     (continuous_fst.mul continuous_snd).mul continuous_fst.inv
   set C₁ : Set (GAd σ J) := (fun q : GAd σ J × GAd σ J => q.1 * q.2 * q.1⁻¹) '' ((K : Set (GAd σ J)) ×ˢ C) with hC₁d
   have hC₁ : IsCompact C₁ := (hK.prod hC).image hcont
-  obtain ⟨t0, ht0⟩ := GlobalTheory.T.siegel_compact_translate_bound F E σ h n J hJ r X Y hW Ω hΩ hΩP K hK c hc C hC
+  obtain ⟨t0, ht0⟩ := _root_.GlobalTheory.CompanionTheory.FlagKey.flag_key F E σ h n J hJ r X Y hW Ω hΩ hΩP K hK c hc C hC
   obtain ⟨R, -, hR⟩ := _root_.GlobalTheory.CompanionTheory.CFin.Ratio.ratio_bounded r m c (max t0 1) hc (le_max_right _ _)
   obtain ⟨B, hB⟩ := arch_bound (Z := Z) h hJ hW xz yz hl hr hΩ hΩP hC₁ R
   set 𝒞 : Set (GFin σ J) := projFin σ J '' ((fun q : GAd σ J × GAd σ J => q.1 * q.2 * q.1⁻¹) '' (Ω ×ˢ C₁)) with h𝒞d

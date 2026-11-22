@@ -3,7 +3,8 @@ import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.RealLow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinRepApply
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasTypeVec
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.GreenCuspidalIff
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTameCharactersSeriesIdempotentsTameLabelleStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTameCharactersSeriesIdempotentsTameLabelle
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DimPartsAtIffBadAndOff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffEqMapDomain
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodStableOfIrr
 open MeasureTheory Set Filter NumberField IsDedekindDomain
@@ -24,7 +25,7 @@ theorem goodStable_of_given : GlobalTheory.Published.GreenCuspidal → ∀ {D : 
     {A : FamIn D.what₂.LL G Pl0 T D.R.m} {Ks : Type} [Field Ks] [NumberField Ks] [Algebra Ks D.what₂.LL] (R : RealDat D A Ks)
     (F : Face D A), Given R F → Formalism.L2.DIV.GoodStable A.X := by
   intro hGC D G _ _ Pl0 T A Ks _ _ _ R F h
-  obtain ⟨om, hT⟩ := GlobalTheory.T.exists_tameCharacters_seriesIdempotentsTameLabelled R F h
+  obtain ⟨om, hT⟩ := _root_.GlobalTheory.TameTieOfGood.exists_tameTie_of_given R F h
   exact GlobalTheory.GoodStableDual.goodStable_of_irr R F h.irr h.core.grp om
     (GlobalTheory.GoodIdemTie.idemTie_of_tameTie hGC D om hT)
 

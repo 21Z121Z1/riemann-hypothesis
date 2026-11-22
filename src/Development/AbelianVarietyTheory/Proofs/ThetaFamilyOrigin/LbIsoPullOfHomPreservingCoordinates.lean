@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.IsIntegralOfIsA
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsChartUnit
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LineBundleTrivialIsoDescendField
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ClsLinCombSingle
-import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.LbIsoOfAssociatedGermsFlatStatement
+import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.LbIsoOfAssociatedGermsFlat
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry
 open scoped CategoryTheory.Obj
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory GlobalTheory.ZH
@@ -60,7 +60,7 @@ theorem lbIso_pull : Out.Laws → ∀ (K : Type) [Field K] [IsAlgClosed K] (P P'
   have hw := CrdIso.exists_chart_unit (H := lbPow P.L N) (H' := (lbPow P'.L N).pull φ.left) (s := s)
     (s' := fun j => secPull _ φ.left (s' j)) hs (fun F _ y v hv => crd_pull _ _ _ _ _ (hcrd F y v hv))
   have key : LBIso (lbPow P.L 1) ((lbPow P'.L 1).pull φ.left) := by
-    refine GlobalTheory.T.lbIso_of_associated_germs_flat _ _ (Out.mulA P.A m).left _ _ θ (secPull _ φ.left θ') h1 (pull_isLB h1' _) hθ fun y => ?_
+    refine _root_.GlobalTheory.AssocDescent.lbIso_of_associated _ _ (Out.mulA P.A m).left _ _ θ (secPull _ φ.left θ') h1 (pull_isLB h1' _) hθ fun y => ?_
     obtain ⟨k, hk⟩ := exists_chart hN y
     obtain ⟨k', hk'⟩ := exists_chart hN' (φ.left y)
     obtain ⟨l, hl⟩ := exists_chart h1 ((Out.mulA P.A m).left y)

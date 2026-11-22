@@ -25,7 +25,7 @@ theorem globalForm_of_siegelWeil' : GlobalTheory.Published.WeilRepresentationUni
   intro hW hC hWS hSW hDM D A L hL
   have hsw := _root_.GlobalTheory.Core.Rk.IP.siegelWeilAll_of_hypotheses hW hWS hSW D
   have h0 := _root_.GlobalTheory.T.globalFormAt_frameLat_of_siegelWeil hW hC hDM D hsw A
-  exact GlobalTheory.T.global_doubling_zeta_form_selfDual_lattice_transfer D A (frameLat A) L (frameLat_isSelfDualC A) hL h0
+  exact _root_.GlobalTheory.Core.Rk.GlobMove.globalFormAt_move D A (frameLat A) L (frameLat_isSelfDualC A) hL h0
 end GlobalTheory.Core.Rk.IP
 end
 

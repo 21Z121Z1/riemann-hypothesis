@@ -57,8 +57,8 @@ theorem coefIn_translate : ∀ (D : D7) (cc : Ideal (𝓞 D.host.K)) (δ : ℂ),
   intro D cc δ hc N N' L L' hL hL' e he hq x hx
   have hG : StandardLatticesGL3.admG1 D := (GlobalTheory.InducedType.induced_type D).1
   obtain ⟨-, -, -, -, hfg, -, -⟩ :=
-    GlobalTheory.T.theta_space_selfDual_pair_at_most_line D hG cc δ hc N N' (La D (tor0 D cc δ) L L') (Or.inr ⟨L, L', hL, hL', rfl⟩)
-  obtain ⟨m, r, B, hB⟩ := GlobalTheory.T.exists_orthonormal_frame_var D N N'
+    _root_.GlobalTheory.ThetaLine.theta_line D hG cc δ hc N N' (La D (tor0 D cc δ) L L') (Or.inr ⟨L, L', hL, hL', rfl⟩)
+  obtain ⟨m, r, B, hB⟩ := _root_.GlobalTheory.FourCopies.exists_onB_four D N N'
   obtain ⟨R, hR, hRA⟩ := _root_.GlobalTheory.PadCommensurable.nsmul_pad_mem D hG cc δ hc N N' m r L L' B hB hfg
   have hee : IsTr D (tor0 D cc δ) (La D (tor0 D cc δ) L L') e e := by
     have := IsTr.single D (tor0 D cc δ) (A := La D (tor0 D cc δ) L L') e 1 0 1 one_pos (by simp)

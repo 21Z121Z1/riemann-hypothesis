@@ -4,7 +4,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootHeightDifferenc
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LineHeightInvariantScaling
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HeightOfZeroDimVariety
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.JoinModelPointsProject
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DominantWeightGapShiftStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DominantWeightGapShift
 
 noncomputable section
 
@@ -175,7 +175,7 @@ theorem i5_of_hasRef_of_refLower : ∀ (Ψ : Type) [Fintype Ψ] [DecidableEq Ψ]
     exact Finset.single_le_sum (f := Cf) (fun c _ => by linarith [hCf1 c]) (Finset.mem_univ c)
   have hC₁1 : 1 ≤ C₁ := le_trans (hCf1 (Classical.arbitrary T.Comp)) (hCfle _)
   intro c₀ hc₀
-  obtain ⟨θ₁, hθ₁, -, hθ⟩ := GlobalTheory.T.dominant_weight_gap_shift Ψ N T.j T.nu c₀ T.j_pos T.j_lt hc₀
+  obtain ⟨θ₁, hθ₁, -, hθ⟩ := _root_.GlobalTheory.CompanionTheory.Ar.WtShift.sub_small_dominant Ψ N T.j T.nu c₀ T.j_pos T.j_lt hc₀
   obtain ⟨G, hGdef⟩ : ∃ G : ℝ, G = (Fintype.card Ψ * N : ℝ) * 2 := ⟨_, rfl⟩
   have hG0 : 0 ≤ G := by rw [hGdef]; positivity
   obtain ⟨D, hDdef⟩ : ∃ D : ℝ, D = C₁ + |C| * (G + 2) + 1 := ⟨_, rfl⟩

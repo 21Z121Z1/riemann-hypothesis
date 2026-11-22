@@ -17,7 +17,8 @@ import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NormalisedFam
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BaseFieldsPrimesOk
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValuedCompAtDetIdl
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevOkTwists
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TameCharacterValuesEqHeckeCharLocalValuesStatement
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TameCharacterValuesEqHeckeCharLocalValues
+import Formalism.LocalToGlobal.KernelLattices.ThDistC
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LocalCharEqHeckeCharLocalComponentOfValues
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IntAtOfLocTop
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.OrdSubEqOrdDet
@@ -170,7 +171,7 @@ theorem map_muAtT (hX : X.Ok) (hPr : Pr.Ok) (hsel : IsSel X sel) (hg : ∀ k, Pr
   classical
   have hlp := GlobalTheory.ColPeriod.levelPrimes X Pr sel S mu hX hPr hsel P
   have hta := GlobalTheory.Mem.ReadTwist.tameAt h fun v => Subgroup.mem_iInf.1 mu.2.1.2 v
-  have hq := (GlobalTheory.T.tame_character_values_eq_heckeChar_local_values X.F X.E X.K σ _ ξ h hta P.1).2 hlp.1.2
+  have hq := (_root_.GlobalTheory.TwistVal.main X.F X.E X.K σ _ ξ h hta P.1).2 hlp.1.2
   have hm : ∀ x, (((m0 j * ξ)⁻¹.locK P.1 x : ℂˣ) : ℂ) = (((m0 j).locK P.1 x : ℂˣ) : ℂ)⁻¹ * ((ξ.locK P.1 x : ℂˣ) : ℂ)⁻¹ := fun x => by
     rw [← mul_inv, ← Units.val_mul, ← Units.val_inv_eq_inv_val]
     rfl
@@ -224,7 +225,7 @@ theorem map_muInvDet (hX : X.Ok) (hPr : Pr.Ok) (hsel : IsSel X sel) (hg : ∀ k,
       exacts [h1 (Finset.mem_union_right _ (e ▸ h3)), h2 (Finset.mem_union_right _ (e ▸ h3))]
     refine ⟨((ht.mu0 j).unr w hg').mul hun, ?_⟩
     rw [mUof, dif_pos j.2, Units.val_mul, Units.val_inv_eq_inv_val, Units.val_inv_eq_inv_val, map_mul, map_inv₀, map_inv₀,
-      ht.muVal j w hg', (GlobalTheory.T.tame_character_values_eq_heckeChar_local_values X.F X.E X.K σ _ ξ h hta w).1 hun, Formalism.L2.Host.HChar.val_mul, Units.val_mul, mul_inv]
+      ht.muVal j w hg', (_root_.GlobalTheory.TwistVal.main X.F X.E X.K σ _ ξ h hta w).1 hun, Formalism.L2.Host.HChar.val_mul, Units.val_mul, mul_inv]
 
 end Scalar
 

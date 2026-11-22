@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsRatioCover
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisationPreimageValueRules
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedOneFormEvaluationRulesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedOneFormEvaluationRules
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedOneFormEvaluationLinearPullback
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasCechDeRhamPeriodsOfAffineBasis
 
@@ -98,7 +98,7 @@ theorem isPer_pull : ∀ (A : Over (Sp ℂ)) [GrpObj A] (g : ℕ) (L : LB A.left
       (d1.hasFDerivAt.comp z Mc.hasFDerivAt).sub d2.hasFDerivAt
     have e1 := congrArg (evForm u'.ex p.1.1.1 z) (hω p)
     rw [map_sub, hE] at e1
-    have e2 := ((GlobalTheory.T.uniformisedOneFormEvaluation_rules A' g' L' u' _ z hz).2.2 (b (Opposite.op p))).symm.trans e1
+    have e2 := ((_root_.GlobalTheory.CechPer.evForm_rules A' g' L' u' _ z hz).2.2 (b (Opposite.op p))).symm.trans e1
     rw [d3.fderiv, hw p.1.2 _ hz']
     exact (congrArg (fun t => _ - t) e2).trans (sub_sub_cancel _ _)
   · intro p l z hz

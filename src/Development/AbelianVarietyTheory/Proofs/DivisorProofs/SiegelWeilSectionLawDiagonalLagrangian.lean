@@ -42,7 +42,7 @@ theorem two_isUnit (F E : Type) [Field F] [NumberField F] [Field E] [NumberField
 theorem char_det_one (F E : Type) [Field F] [NumberField F] [Field E] [NumberField E] [Algebra F E] (n : ℕ)
     (α : GL (Fin n) (AF F ⊗[F] E) →* Circle) (a : GL (Fin n) (AF F ⊗[F] E))
     (ha : Matrix.GeneralLinearGroup.det a = 1) : α a = 1 :=
-  MonoidHom.mem_ker.mp (GlobalTheory.T.special_linear_generated_by_transvections (AF F ⊗[F] E) (_root_.GlobalTheory.StableRange.adeles_tensor_stableRange_one F E) n α.ker
+  MonoidHom.mem_ker.mp (_root_.GlobalTheory.GLGen.mem_of_det_eq_one (AF F ⊗[F] E) (_root_.GlobalTheory.StableRange.adeles_tensor_stableRange_one F E) n α.ker
     (fun i j hij t u hu => MonoidHom.mem_ker.mpr (GlobalTheory.glChar_transvection (two_isUnit F E) α i j hij t u hu)) a ha)
 
 theorem lagr_law : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberField E] [Algebra F E] (σ : E →ₐ[F] E) (B : Base F E),

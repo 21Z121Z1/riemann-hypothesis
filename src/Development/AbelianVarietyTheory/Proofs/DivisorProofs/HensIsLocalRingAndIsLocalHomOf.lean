@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InstPreorder
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PointedEtaleNeighbourhoodLocalRingIsDirectedStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleNbhdLocalRingTransitionMapIsLocalHomInjectiStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PointedEtaleNeighbourhoodLocalRingIsDirected
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleNbhdLocalRingTransitionMapIsLocalHomInjecti
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PointedEtaleNbhdTransitionMapDirectedSystem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BijectiveResidueCompEtaleHenselian
 
@@ -20,13 +20,13 @@ theorem directedSystem_trans :
   map_self := fun i x => (_root_.GlobalTheory.Henselisation.trans_system R).1 i x
   map_map := fun {k j i} hij hjk x => (_root_.GlobalTheory.Henselisation.trans_system R).2 i j k hij hjk x
 
-theorem directed : IsDirected (EtNbhd R) (· ≤ ·) := GlobalTheory.T.pointedEtaleNeighbourhoodLocalRing_isDirected R
+theorem directed : IsDirected (EtNbhd R) (· ≤ ·) := _root_.GlobalTheory.Henselisation.etNbhd_isDirected R
 
 theorem of_injective (i : EtNbhd R) : Function.Injective (Hens.of i) := by
   haveI := directedSystem_trans (R := R)
   haveI := directed (R := R)
   exact Ring.DirectLimit.of_injective (G := fun i : EtNbhd R => i.B)
-    (fun i j h => EtNbhd.trans h) (fun i j h => (GlobalTheory.T.etaleNbhdLocalRingTransitionMap_isLocalHom_injective R i j h).2) i
+    (fun i j h => EtNbhd.trans h) (fun i j h => (_root_.GlobalTheory.Henselisation.EtNbhd.trans_isLocalHom_injective R i j h).2) i
 
 theorem exists_of (z : Hens R) : ∃ (i : EtNbhd R) (x : i.B), Hens.of i x = z := by
   haveI := directed (R := R)
@@ -67,7 +67,7 @@ theorem isLocalHom_of (i : EtNbhd R) : IsLocalHom (Hens.of i) := by
   have h1 : EtNbhd.trans hik x * EtNbhd.trans hjk y = 1 := by
     apply of_injective k
     rw [map_mul, of_trans, of_trans, map_one, hy, ← hu, Units.mul_inv]
-  haveI := (GlobalTheory.T.etaleNbhdLocalRingTransitionMap_isLocalHom_injective R i k hik).1
+  haveI := (_root_.GlobalTheory.Henselisation.EtNbhd.trans_isLocalHom_injective R i k hik).1
   exact isUnit_of_map_unit (EtNbhd.trans hik) x (IsUnit.of_mul_eq_one _ h1)
 
 end LocalLimit

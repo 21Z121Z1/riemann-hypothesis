@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocallyCompactSe
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.MuCardLeTwo
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryGroupMeasureDecomposition
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeMeasureUnitaryDetOneFactorNearIdentity
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RiemannianHaarFrameBallLeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RiemannianHaarFrameBallLe
 open NumberField IsDedekindDomain MeasureTheory Matrix GlobalTheory.AdLat GlobalTheory.UCls GlobalTheory.SUVol ReciprocityTheory.ChartRestriction.G.FD ReciprocityTheory.ChartRestriction.G.AR.Up GlobalTheory.CovTop.VolUp
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.L2.Theta Formalism.MainNotions.StandardLattice Formalism.IndefR.Lev Formalism.IndefR.Datum GlobalTheory.AdelicScalar
 open scoped ENNReal
@@ -124,7 +124,7 @@ theorem massLow : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (r : �
 
   have hplace := fun ρ => _root_.GlobalTheory.CovTop.VolLow.OneMeasure.le_measure_sMat_near (p ρ) (q ρ) (a₀ ρ) (m ρ) (hm ρ)
   choose εp hεp hbp using hplace
-  obtain ⟨εu, hεu, hbu⟩ := GlobalTheory.T.riemannianHaar_frameBall_le E r κ p q Ψ G x σ A e hr hI
+  obtain ⟨εu, hεu, hbu⟩ := _root_.GlobalTheory.CovTop.VolUp.UpBall.riemHaar_frBall_le E r κ p q Ψ G x σ A e hr hI
   set δ := Finset.univ.inf' ⟨ρ₀, Finset.mem_univ _⟩ εp with hδdef
   have hδ : 0 < δ := (Finset.lt_inf'_iff _).2 fun ρ _ => hεp ρ
   set ε := min δ εu / 2 with hεdef

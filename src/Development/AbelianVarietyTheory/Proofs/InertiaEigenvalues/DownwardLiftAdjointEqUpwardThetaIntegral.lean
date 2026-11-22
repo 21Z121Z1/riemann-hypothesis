@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdjointFormula
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PeterssonIntegralFormula
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InnerProductIntegralFormula
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdjointPairingUnfoldingDownwardLift
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UpwardVectorLiftMemRangeCoefficientExtensionStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UpwardVectorLiftMemRangeCoefficientExtension
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix
 open Formalism.L2.Theta Formalism.L2.DIV Formalism.L2.Indef
@@ -34,6 +34,6 @@ theorem adjFormula_holds : GlobalTheory.Published.CuspRapidDecay → ∀ (D : D7
     (fun u => R.thF i t u (fun ρ => v ρ)) (R.extV i t)
     (fun k y h => upLift (R.ωP i t) (R.νW i) (R.fdW i) (jointVec R i t v (b k)) (val R i v y) h) P c hPx.1 hcx.1 hPx.2
     hval (val_zero R i v) hK0 hcx.2 (fun y u => _root_.GlobalTheory.AdjUnfold.integral_val_thF_eq hP D G Pl0 T A Ks R F hL hF i t v n b y u)
-    (fun y => GlobalTheory.T.upwardVectorLift_mem_range_coefficientExtension hP D G Pl0 T A Ks R F hL hF i t v n b y)
+    (fun y => _root_.GlobalTheory.AdjRange.upVec_mem_range hP D G Pl0 T A Ks R F hL hF i t v n b y)
 
 end GlobalTheory.AdjUp

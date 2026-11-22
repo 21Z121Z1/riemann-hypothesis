@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsRootOfIsAlgClosed
 import Development.AbelianVarietyTheory.Definitions.Foundations.EeProd
 import Development.AbelianVarietyTheory.Definitions.Foundations.ApplyEqOfMemAdjoin
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsLogDerivQExpansionUpperTriangularActionStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsLogDerivQExpansionUpperTriangularAction
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaBasisLinearCombination
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsCuspFunctionalValueModPrimePowDiamondIndepende
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeLetterPreservesBasisSet
@@ -410,7 +410,7 @@ theorem isDl_hq [IsAlgClosed Ω] (X : Tower Ω ε) (A : ValuationSubring Ω) (l 
   rw [hq, Finset.smul_sum]
   refine isDl_prod _ _ _ fun k _ => ?_
   have hd : (0 : ℤ) < (!![1, (k : ℤ); 0, (q : ℤ)] : Matrix (Fin 2) (Fin 2) ℤ).det := by simp [Matrix.det_fin_two, hq0]
-  have := GlobalTheory.T.isLogDerivQExpansion_upperTriangular_action Ω ε X A 0 l n (toGQ !![1, (k : ℤ); 0, (q : ℤ)]) (by simp [ent_toGQ _ hd])
+  have := _root_.GlobalTheory.DlUp.isDl_sl_upper Ω ε X A 0 l n (toGQ !![1, (k : ℤ); 0, (q : ℤ)]) (by simp [ent_toGQ _ hd])
     (by simp [ent_toGQ _ hd]) (by simp [ent_toGQ _ hd, hq0]) (by simpa [ent_toGQ _ hd] using hqA) f φ h
   rw [HahnSeries.C_mul_eq_smul] at this
   simpa [ent_toGQ _ hd] using this
@@ -419,7 +419,7 @@ theorem isDl_vq [IsAlgClosed Ω] (X : Tower Ω ε) (A : ValuationSubring Ω) (l 
     (hq0 : 0 < q) {f : X.K} {φ : HahnSeries ℚ Ω} (h : IsDl X A l n 1 f φ) :
     IsDl X A l n 1 (X.sl (toGQ !![(q : ℤ), 0; 0, 1]) f) ((q : Ω) • vq q φ) := by
   have hd : (0 : ℤ) < (!![(q : ℤ), 0; 0, 1] : Matrix (Fin 2) (Fin 2) ℤ).det := by simp [Matrix.det_fin_two, hq0]
-  have := GlobalTheory.T.isLogDerivQExpansion_upperTriangular_action Ω ε X A 0 l n (toGQ !![(q : ℤ), 0; 0, 1]) (by simp [ent_toGQ _ hd])
+  have := _root_.GlobalTheory.DlUp.isDl_sl_upper Ω ε X A 0 l n (toGQ !![(q : ℤ), 0; 0, 1]) (by simp [ent_toGQ _ hd])
     (by simp [ent_toGQ _ hd, hq0]) (by simp [ent_toGQ _ hd]) (by simp [ent_toGQ _ hd]) f φ h
   rw [HahnSeries.C_mul_eq_smul] at this
   rw [← sub_vq (ε := ε)]

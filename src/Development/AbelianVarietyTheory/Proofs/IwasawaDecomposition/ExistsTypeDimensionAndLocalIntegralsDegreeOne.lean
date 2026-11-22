@@ -6,8 +6,8 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsNrm
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAddHaarCompletionIntegralMatricesVolOne
 import Development.AbelianVarietyTheory.Definitions.Divisors.T2SpaceGeneralLinearGroup
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsOpenIsCompactParahoricGLCompletion
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BlockUpperTriangularGLMulDetInvStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ParahoricTypeRCMulInvMemStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BlockUpperTriangularGLMulDetInv
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ParahoricTypeRCMulInvMem
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ParahoricCharacterMulOfTame
 open MeasureTheory Matrix NumberField IsDedekindDomain Formalism.BasicNotions Formalism.DoubleCosetMeasures Formalism.L2.Host Formalism.L2.DIV Formalism.L2.DIV.QLoc GlobalTheory.Mem.HD
 
@@ -21,28 +21,28 @@ variable {F : Type} [Field F] {r c : ℕ}
 theorem bDA_mul {p q : GL (Fin (r + c)) F} (hp : bDA (p : Matrix (Fin (r + c)) (Fin (r + c)) F) = 0)
     (hq : bDA (q : Matrix (Fin (r + c)) (Fin (r + c)) F) = 0) :
     bDA ((p * q : GL (Fin (r + c)) F) : Matrix (Fin (r + c)) (Fin (r + c)) F) = 0 :=
-  (GlobalTheory.T.blockUpperTriangular_GL_mul_det_inv F r c p q hp hq).1
+  (_root_.GlobalTheory.HQStepBlocks.main F r c p q hp hq).1
 
 theorem bAA_mul {p q : GL (Fin (r + c)) F} (hp : bDA (p : Matrix (Fin (r + c)) (Fin (r + c)) F) = 0)
     (hq : bDA (q : Matrix (Fin (r + c)) (Fin (r + c)) F) = 0) :
     bAA ((p * q : GL (Fin (r + c)) F) : Matrix (Fin (r + c)) (Fin (r + c)) F) =
       bAA (p : Matrix (Fin (r + c)) (Fin (r + c)) F) * bAA (q : Matrix (Fin (r + c)) (Fin (r + c)) F) :=
-  (GlobalTheory.T.blockUpperTriangular_GL_mul_det_inv F r c p q hp hq).2.1
+  (_root_.GlobalTheory.HQStepBlocks.main F r c p q hp hq).2.1
 
 theorem bDD_mul {p q : GL (Fin (r + c)) F} (hp : bDA (p : Matrix (Fin (r + c)) (Fin (r + c)) F) = 0)
     (hq : bDA (q : Matrix (Fin (r + c)) (Fin (r + c)) F) = 0) :
     bDD ((p * q : GL (Fin (r + c)) F) : Matrix (Fin (r + c)) (Fin (r + c)) F) =
       bDD (p : Matrix (Fin (r + c)) (Fin (r + c)) F) * bDD (q : Matrix (Fin (r + c)) (Fin (r + c)) F) :=
-  (GlobalTheory.T.blockUpperTriangular_GL_mul_det_inv F r c p q hp hq).2.2.1
+  (_root_.GlobalTheory.HQStepBlocks.main F r c p q hp hq).2.2.1
 
 theorem det_blocks {p : GL (Fin (r + c)) F} (hp : bDA (p : Matrix (Fin (r + c)) (Fin (r + c)) F) = 0) :
     (p : Matrix (Fin (r + c)) (Fin (r + c)) F).det =
       (bAA (p : Matrix (Fin (r + c)) (Fin (r + c)) F)).det * (bDD (p : Matrix (Fin (r + c)) (Fin (r + c)) F)).det :=
-  (GlobalTheory.T.blockUpperTriangular_GL_mul_det_inv F r c p p hp hp).2.2.2.1
+  (_root_.GlobalTheory.HQStepBlocks.main F r c p p hp hp).2.2.2.1
 
 theorem bDA_inv {p : GL (Fin (r + c)) F} (hp : bDA (p : Matrix (Fin (r + c)) (Fin (r + c)) F) = 0) :
     bDA ((p⁻¹ : GL (Fin (r + c)) F) : Matrix (Fin (r + c)) (Fin (r + c)) F) = 0 :=
-  (GlobalTheory.T.blockUpperTriangular_GL_mul_det_inv F r c p p hp hp).2.2.2.2
+  (_root_.GlobalTheory.HQStepBlocks.main F r c p p hp hp).2.2.2.2
 
 theorem detA_ne {p : GL (Fin (r + c)) F} (hp : bDA (p : Matrix (Fin (r + c)) (Fin (r + c)) F) = 0) :
     (bAA (p : Matrix (Fin (r + c)) (Fin (r + c)) F)).det ≠ 0 := fun h =>
@@ -320,7 +320,7 @@ theorem exists_typeVec (P : HeightOneSpectrum (𝓞 L)) (δ : (P.adicCompletion 
     ∃ f ∈ typeSp (OP P) (piP P : P.adicCompletion L) nrm δ r c ρ, ∃ U : Set (GL (Fin (r + c)) (P.adicCompletion L)),
       IsOpen U ∧ parJ (OP P) (piP P : P.adicCompletion L) r c ⊆ U ∧
       ∀ k ∈ GLint (OP P) (r + c), ‖f k‖ = U.indicator 1 k := by
-  have hgrp := GlobalTheory.T.parahoricTypeRC_mul_inv_mem (P.adicCompletion L) (OP P) (piP P : P.adicCompletion L) (piP_mem P) r c
+  have hgrp := _root_.GlobalTheory.ParGroup.parJ_mul_inv (P.adicCompletion L) (OP P) (piP P : P.adicCompletion L) (piP_mem P) r c
   have hlam := _root_.GlobalTheory.Mem.LamMul.lamJ_mul L P δ hδ r c
   have hfix : ∀ q : GL (Fin (r + c)) (P.adicCompletion L), q ∈ parJ (OP P) (piP P : P.adicCompletion L) r c →
       bDA (q : Matrix (Fin (r + c)) (Fin (r + c)) (P.adicCompletion L)) = 0 →

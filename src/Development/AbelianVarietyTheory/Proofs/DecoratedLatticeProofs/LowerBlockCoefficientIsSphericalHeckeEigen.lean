@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Unramified
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsFinsetRepsMaximalIdealMatrixModMul
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LowerUnipotentDiagDoubleCosetRepresentatives
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ParahoricBiTransformingLowerUnipotentDiagValue
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CardFilterLowerHeckeRepsEqRelIndexPowStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CardFilterLowerHeckeRepsEqRelIndexPow
 
 noncomputable section
 
@@ -138,7 +138,7 @@ theorem coeff_isEigen : ∀ (k : Type) [Field k] [ValuativeRel k] [TopologicalSp
         rw [eq_mul_inv_iff_mul_eq]
         calc m * κc g * w * κ'c g = m * (κc g * w * κ'c g) := by group
           _ = m * g := by rw [← hgκ g hg]
-      have hcnt := (GlobalTheory.T.card_filter_lowerHecke_reps_eq_relIndex_pow k A D ϖ hϖ s m g (m * κc g * w) (hdec g hg) ⟨_, inv_mem (hκ'c g hg), hy⟩ (N g)
+      have hcnt := (_root_.GlobalTheory.LowerHeckeCount.card_filter_eq k A D ϖ hϖ s m g (m * κc g * w) (hdec g hg) ⟨_, inv_mem (hκ'c g hg), hy⟩ (N g)
         (hN g hg)).1
       have e1 : ∀ ν : Matrix D A k, E m * (lowU ν * E (κc g) * mtor ϖ (indic s)) = lowU (m.1 * ν) * E (m * κc g * w) := by
         intro ν
@@ -170,7 +170,7 @@ theorem coeff_isEigen : ∀ (k : Type) [Field k] [ValuativeRel k] [TopologicalSp
         rw [eq_mul_inv_iff_mul_eq]
         calc m * κc g * w * κ'c g = m * (κc g * w * κ'c g) := by group
           _ = m * g := by rw [← hgκ g hg]
-      exact_mod_cast (GlobalTheory.T.card_filter_lowerHecke_reps_eq_relIndex_pow k A D ϖ hϖ s m g (m * κc g * w) (hdec g hg) ⟨_, inv_mem (hκ'c g hg), hy⟩ (N g) (hN g hg)).2
+      exact_mod_cast (_root_.GlobalTheory.LowerHeckeCount.card_filter_eq k A D ϖ hϖ s m g (m * κc g * w) (hdec g hg) ⟨_, inv_mem (hκ'c g hg), hy⟩ (N g) (hN g hg)).2
     have hdg : ∀ g ∈ R, (ξ (GeneralLinearGroup.det (m * g)) : ℂ) = ξ (GeneralLinearGroup.det m) *
         (ξ (GeneralLinearGroup.det (κc g)) * ((ξ ϖ : ℂ) ^ s.card * ξ (GeneralLinearGroup.det (κ'c g)))) := by
       intro g hg

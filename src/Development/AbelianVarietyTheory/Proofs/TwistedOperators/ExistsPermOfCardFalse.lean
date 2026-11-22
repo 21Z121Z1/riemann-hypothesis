@@ -4,7 +4,7 @@ import Formalism.LocalToGlobal.IndefiniteReal.LinksLemmas
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsFrameOfHasSignature
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SignatureConjugationInvariant
 import Development.AbelianVarietyTheory.Definitions.Foundations.UnitarySixTwoHarishChandraParameter
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridParameterRegularCardEqRankFormulaStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridParameterRegularCardEqRankFormula
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridParamRegularCardMinusCount
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.NodeYPredEqChainVertexAtRowZeroLast
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CardWeightSetGridEqGridRowSpaceRank
@@ -151,7 +151,7 @@ namespace GlobalTheory.GridJoin
 theorem parV_counts (D : D7) (hH : HostHyp D) (τ : D.what₂.Tau) {i j : ℕ} (h1 : 1 ≤ i) (h2 : i ≤ D.R.m) (h3 : j ≤ D.R.m) :
     SignedHC.IsRegular (GlobalTheory.Grid.parV D i j τ) ∧ (GlobalTheory.Grid.parV D i j τ).card = GlobalTheory.Grid.rkV D i j ∧
       SignedHC.nMinus (GlobalTheory.Grid.parV D i j τ) = (D.R.m - j) / 2 := by
-  obtain ⟨hr, hc⟩ := GlobalTheory.T.gridParameter_regular_card_eq_rankFormula D hH τ i j h1 h2 h3
+  obtain ⟨hr, hc⟩ := _root_.GlobalTheory.GridParDCount.parD_regular_card D hH τ i j h1 h2 h3
   obtain ⟨a, b, c⟩ := dualPar_shift_counts (if Odd (i + j) then -(1 / 2) else 0) hr
   exact ⟨a, b.trans hc, c.trans (GlobalTheory.SignedHC.Model.nMinus_parD _ i j)⟩
 

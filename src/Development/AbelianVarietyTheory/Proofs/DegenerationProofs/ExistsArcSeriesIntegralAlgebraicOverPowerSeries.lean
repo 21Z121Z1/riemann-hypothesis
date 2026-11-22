@@ -2,9 +2,9 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
 import Development.AbelianVarietyTheory.Definitions.Degenerations.HomExtSt
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSums
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusTorsionPointsCorrespondValuesStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusTorsionPointsCorrespondValues
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.FamiliesValuesCorrespond
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorsionPairingValuesOfFamiliesValuesStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorsionPairingValuesOfFamiliesValues
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AbelianPartValuesOfExpansionLaws
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ArcTorsionValuesNormsIntegralPositive
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AbelianPartValuesTorsionPairingSeparationIntegra
@@ -96,8 +96,8 @@ theorem exists_series : HV → Laws6 → GlobalTheory.LN.UDvrSt → GlobalTheory
   intro hHV _ _ _ _ _ _ E _ _ _ H D l Xo c W₀ Y O' _ _ _ b ϖ a hB K _ _ _ _ _ _ hK
   have hL : Laws := hHV.1.1
   have hL2 : Laws2 := hHV.1.2.1
-  have gt := GlobalTheory.T.torus_torsion_points_correspond_values
-  have wp := GlobalTheory.T.torsionPairing_values_of_familiesValues gt (_root_.GlobalTheory.Ex.brFam hL hL2)
+  have gt := _root_.GlobalTheory.Ex.GtValues.points_correspond
+  have wp := _root_.GlobalTheory.WeilValues.weil_eq_values gt (_root_.GlobalTheory.Ex.brFam hL hL2)
   obtain ⟨_, _⟩ := base_local hB
   let F := AlgebraicClosure (FractionRing O')
   obtain ⟨S₀, hS₀⟩ := _root_.GlobalTheory.LN.exists_valuationSubring_isIntegral O' ϖ hB F

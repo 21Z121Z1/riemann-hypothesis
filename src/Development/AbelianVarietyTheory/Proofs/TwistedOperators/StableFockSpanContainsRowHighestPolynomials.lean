@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormRat
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RealSmulSplit
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRealPointStandardSourceUnitaryComponents
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionRealPointFockVectorsScalarColumnAction
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockPolynomialVectorInjectiveNonzeroVacuumStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockPolynomialVectorInjectiveNonzeroVacuum
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ReversedMinorProductMemHarmonicRowHighestStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HarmonicColumnOperatorEndMemOfUnitaryStable
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.SumSmulMemOfSumZpowSmulMem
@@ -143,7 +143,7 @@ theorem fockSpan_rowHighest : ∀ (D : D7) (S T : HSp D) (C : Ctx S T) (om : GA 
   have hptne : pt (Formalism.IndefR.Datum.delta (fun _ => C.X.p0) (fun _ => C.q0) ap am) ≠ 0 := by
     rw [← hQ₀pt]
     intro h
-    have := GlobalTheory.T.fockPolynomialVector_injective_nonzeroVacuum D S T C _ hB f hf hFB hf0 (h.trans hfv0.symm)
+    have := _root_.GlobalTheory.FockPolyInj.fvec_injective D S T C _ hB f hf hFB hf0 (h.trans hfv0.symm)
     exact hQ₀ne (by rw [this, map_zero])
   refine ⟨c, c', Q₀, hQ₀mem, hQ₀pt, hptne, ?_⟩
 

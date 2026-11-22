@@ -8,7 +8,8 @@ import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsHomogeneou
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsHomOfVeryAmpleBy
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.HomEqOfPullSections
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsHomOfThickenings
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalAlgebraisationMorphismsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalAlgebraisationMorphisms
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.FormalAlgebraisation
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.AbLaw GlobalTheory.FormalAlg GlobalTheory.Degen.FormalEmb
 
@@ -38,7 +39,7 @@ theorem exists_lb_of_generated_system_proper : ∀ (R : Type) [CommRing R] [IsNo
       (by rw [Category.assoc, hc', hc', c₁]) ((isGen_iff _).2 (T.pgen_comp (hH (e + 1)).1 hw' hv)) (hw e)
       (fun j => Rel.comp T (hH (e + 1)).1 (hr (e + 1) j) (hs e j)) (hr e)
   haveI hPp : IsProper f := GlobalTheory.AbLaw.isProper_of_isProjBy R P f ⟨O, hO, n, t, hva⟩
-  obtain ⟨g, hg, -⟩ := GlobalTheory.T.formalAlgebraisation_morphisms' R I hcI X (Over.mk f) hX (inferInstanceAs (IsSeparated f))
+  obtain ⟨g, hg, -⟩ := _root_.GlobalTheory.FormalAlgMorphisms.formalAlgebraisation_morphisms R I hcI X (Over.mk f) hX (inferInstanceAs (IsSeparated f))
     (inferInstanceAs (LocallyOfFiniteType f)) (inferInstanceAs (QuasiCompact f)) Y β b hb hbb
     c hc' hcc
   have hM : (O.pull g.left).IsLB := LB.isLB_pull hO _

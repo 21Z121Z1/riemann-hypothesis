@@ -1,7 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitKOfIsAlgClosed
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTangentPresentationPrime
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TorsionCharEqOfEqOnTorsionStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TorsionCharEqOfEqOnTorsion
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFlagFrame
 open AlgebraicGeometry CategoryTheory Limits NumberField IsDedekindDomain
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor Formalism.BasicNotions Formalism.L2.Pj
 open GlobalTheory GlobalTheory.ArInt GlobalTheory.ShFam.Pad GlobalTheory.TrueGeo GlobalTheory.Cartier GlobalTheory.ProjVar GlobalTheory.Mean4O GlobalTheory.LineNorm GlobalTheory.CoverNorm GlobalTheory.VertForm GlobalTheory.HtGen
@@ -63,7 +64,7 @@ theorem dlog_regular_of_chart : ∀ (E : Type) [Field E] [NumberField E] [IsCMFi
   obtain ⟨b, hb⟩ := P.ex_gl (mult_kap χ')
   obtain ⟨c', hc'⟩ := ex_char hP hb
   refine dlog_congr (c' := c') (fun i => GlobalTheory.FactorDepth.isTanAtG_map t (ψ.comp φ) (he i))
-    (GlobalTheory.T.torsionChar_eq_of_eq_on_torsion E H X t ℂ_[p] _ _ hq c c' fun w hw => ?_) (hh _ (ψ.comp φ) P b hP hb c' hc')
+    (_root_.GlobalTheory.CharUniq.char_unique E H X t ℂ_[p] _ _ hq c c' fun w hw => ?_) (hh _ (ψ.comp φ) P b hP hb c' hc')
   obtain ⟨β, hβ⟩ := hP.at_fin _ w hw
   refine Units.ext ((hc' _ w β hβ).symm ▸ ?_)
   have hun : IsUnit (φ P.f) := IsUnit.of_map ψ _ hβ.unit

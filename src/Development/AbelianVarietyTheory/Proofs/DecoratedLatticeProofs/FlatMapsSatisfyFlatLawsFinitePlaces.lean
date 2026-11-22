@@ -1,17 +1,19 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PlacesToAdeles
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatThetaMapsPreserveThetaFunctionsStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatThetaMapsConvergeThetaFunctionsStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatThetaMapsPreserveThetaFunctions
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatThetaMapsConvergeThetaFunctions
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergOperatorThetaFunctionalMixedSourceMode
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsQuasiFam
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ThetaAbsoluteSum
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.TransvectionAction
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.WeilDatumExistence
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergThetaMixedModelTargetOfMixedModelStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergThetaMixedModelTargetOfMixedModel
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MixedCoordinatesOfThetaFunctionAreThetaFunctions
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BesselToJacobiFlatSchwartzEquivariantStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.JacobiToBesselFlatIntertwinesWeilActionStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatSchwartzTargetUnipotentConjBesselCharacterStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BesselToJacobiFlatSchwartzEquivariant
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.KerBF
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.JacobiToBesselFlatIntertwinesWeilAction
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.QuasiOfFam
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatSchwartzTargetUnipotentConjBesselCharacter
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilDatumDescendsToWittCore
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.AdjointIsotropicDecomposition
 
@@ -73,7 +75,7 @@ theorem flatAt_iso (hψ : IsStdChar D ψ (-1)) (f : WO V W → ℂ) (hf : IsThet
     intro u
     rw [(_root_.GlobalTheory.HeisMixSource.heis_mixS D ψ hψ V V₀ W ρ dV vS f hf).2.2.1 (x ⬝ u.1.1) (dW.incX V₀ ξ)]
     have hg := (_root_.GlobalTheory.MixValues.mixed_values D ψ hψ).1 V V₀ W ρ dV vS.μ vS.𝓕 vS.covol f hf (x ⬝ u.1.1)
-    exact (GlobalTheory.T.heisenbergThetaMixedModelTarget_of_mixedModel D ψ hψ V₀ W W₀ σ dW vT.μ vT.𝓕 vT.covol _ hg).1 ξ y
+    exact (_root_.GlobalTheory.HeisTarget.main D ψ hψ V₀ W W₀ σ dW vT.μ vT.𝓕 vT.covol _ hg).1 ξ y
   funext w
   simp only [flatAt, flatFun, evalAt, key, Pi.smul_apply, smul_eq_mul]
   rw [← integral_const_mul]
@@ -88,7 +90,7 @@ theorem flatAt_core (hψ : IsStdChar D ψ (-1)) (f : WO V W → ℂ) (hf : IsThe
     intro u
     rw [(_root_.GlobalTheory.HeisMixSource.heis_mixS D ψ hψ V V₀ W ρ dV vS f hf).2.2.1 (x ⬝ u.1.1) (dW.inc0 V₀ w₀)]
     have hg := (_root_.GlobalTheory.MixValues.mixed_values D ψ hψ).1 V V₀ W ρ dV vS.μ vS.𝓕 vS.covol f hf (x ⬝ u.1.1)
-    exact (GlobalTheory.T.heisenbergThetaMixedModelTarget_of_mixedModel D ψ hψ V₀ W W₀ σ dW vT.μ vT.𝓕 vT.covol _ hg).2.1 w₀ y
+    exact (_root_.GlobalTheory.HeisTarget.main D ψ hψ V₀ W W₀ σ dW vT.μ vT.𝓕 vT.covol _ hg).2.1 w₀ y
   funext w
   simp only [flatAt, flatFun, evalAt, key, heisO]
   rw [← integral_const_mul]
@@ -103,7 +105,7 @@ namespace GlobalTheory.FlatLawsDuality
 theorem flatBF_equiv : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (ρ : ℕ) (B : BesLev D ρ) (J : JacLev D ρ) (s : StepBF ψ B J) (f : WO B.V J.W → ℂ), IsThetaFunO ψ B.V J.W f → ∀ n ∈ flagN J.d, ∀ h : GA D J.W₀, flatBF s (s.om (1, n * J.d.emb0 h) f) = star (psiFlag ψ J.d n) • opA ψ J.d B.o B.ζ s.om₀ n h (flatBF s f) := by
   intro D ψ ρ B J s f hf n hn h
   obtain ⟨om', hom'⟩ := (_root_.GlobalTheory.Desc.weil_data_descend D ψ B.V J.W s.χV s.χW s.om s.weil).1 B.V₀ ρ B.d
-  have e := GlobalTheory.T.besselToJacobiFlatSchwartz_equivariant D ψ ρ B J s om' hom' f hf 1 n hn h
+  have e := _root_.GlobalTheory.FlatEqui.flatBF_equivariant D ψ ρ B J s om' hom' f hf 1 n hn h
   have e1 : embA B.d B.o 1 = 1 := map_one _
   have e2 : B.o.emb (1, 1) = 1 := map_one _
   rw [e1, e2] at e
@@ -115,9 +117,9 @@ theorem flatFB_equiv : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (σ : ℕ) 
   have h1 : IsThetaFunO ψ J.W B.V (s.om (1, embA B.d B.o h) f) := s.weil.om_pres _ _ hf
   have e : s.om (1, n * embA B.d B.o h) f = s.om (1, n) (s.om (1, embA B.d B.o h) f) := by
     rw [← Module.End.mul_apply, ← map_mul, Prod.mk_mul_mk, one_mul]
-  have c := GlobalTheory.T.jacobiToBesselFlat_intertwines_weilAction D hD ψ σ J B s f hf 1 h
+  have c := _root_.GlobalTheory.Unf.FlatComm.flatFB_om D hD ψ σ J B s f hf 1 h
   rw [map_one] at c
-  rw [e, GlobalTheory.T.flatSchwartz_targetUnipotent_conj_besselCharacter D hD ψ σ J B s _ h1 n hn, c]
+  rw [e, _root_.GlobalTheory.Unf.FB.UnipAct.flatFB_flagN D hD ψ σ J B s _ h1 n hn, c]
 
 theorem flatLaws_all (D : D7) : GlobalTheory.FinPl.FlatLaws D := by
   intro ψ P
@@ -125,7 +127,7 @@ theorem flatLaws_all (D : D7) : GlobalTheory.FinPl.FlatLaws D := by
   · have hψ : IsStdChar D ψ (-1) := s.weil.std
     exact
       { Heisenberg₂ :=
-          { theta := fun f hf => (GlobalTheory.T.flatThetaMaps_preserve_thetaFunctions D (GlobalTheory.T.flatThetaMaps_converge_thetaFunctions D) ψ).1 ρ B J s f hf
+          { theta := fun f hf => (_root_.GlobalTheory.Unf.FlatTheta.flat_isThetaFun D (_root_.GlobalTheory.Unf.Flat.flatLaw D) ψ).1 ρ B J s f hf
             dual := fun f hf a _ ha => flatAt_dual B.d J.d s.vS s.vT s.vU.ν _ _ hψ f hf a ha
             iso := fun f hf ξ _ => flatAt_iso B.d J.d s.vS s.vT s.vU.ν _ _ hψ f hf ξ
             core := fun f hf w _ => flatAt_core B.d J.d s.vS s.vT s.vU.ν _ _ hψ f hf w }
@@ -133,7 +135,7 @@ theorem flatLaws_all (D : D7) : GlobalTheory.FinPl.FlatLaws D := by
   · have hψ : IsStdChar D ψ (-1) := s.weil.std
     exact
       { Heisenberg₂ :=
-          { theta := fun f hf => (GlobalTheory.T.flatThetaMaps_preserve_thetaFunctions D (GlobalTheory.T.flatThetaMaps_converge_thetaFunctions D) ψ).2 σ J B s f hf
+          { theta := fun f hf => (_root_.GlobalTheory.Unf.FlatTheta.flat_isThetaFun D (_root_.GlobalTheory.Unf.Flat.flatLaw D) ψ).2 σ J B s f hf
             dual := fun f hf a _ ha => flatAt_dual J.d B.d s.vS s.vT s.vU.ν _ _ hψ f hf a ha
             iso := fun f hf ξ _ => flatAt_iso J.d B.d s.vS s.vT s.vU.ν _ _ hψ f hf ξ
             core := fun f hf w _ => flatAt_core J.d B.d s.vS s.vT s.vU.ν _ _ hψ f hf w }

@@ -6,7 +6,7 @@ import Development.AutomorphicArithmetic.CommutativeAlgebra.PsiCommDifferentialO
 import Development.AutomorphicArithmetic.CommutativeAlgebra.CohomologyClassInLSurjectiveAndInjective
 import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsCocycleProductEqPullAddCup
 import Development.AutomorphicArithmetic.CommutativeAlgebra.ExteriorCupCocycleExistsOfPairing
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChosenInjectiveResolutionEtaleSheafPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChosenInjectiveResolutionEtaleSheafProperties
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleLocalPropertyCalculusRulesStatement
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchClsCocycleSec
@@ -155,7 +155,7 @@ private theorem UpperTheory.Kun.main (q : ℕ) [NeZero q] (E : Spc) (hE : Inv q 
       pull _ (prod.snd : sch.obj (Gq q) ⨯ E ⟶ E) _ _ p.1 +
         cup q (pull _ (prod.snd : sch.obj (Gq q) ⨯ E ⟶ E) _ _ p.2) (pull _ (prod.fst : sch.obj (Gq q) ⨯ E ⟶ _) _ _ (kappa q)) := by
   obtain ⟨κ, hκ⟩ := (kappa q).mk_surjective
-  have hr := fun i : ℤ => GlobalTheory.T.chosenInjectiveResolution_etaleSheaf_properties (ZMod q) (tw q i)
+  have hr := fun i : ℤ => _root_.GlobalTheory.EtC.ResBasic.res_basic (ZMod q) (tw q i)
   haveI := (hr (j + 1)).2.2.1
   haveI := (hr j).2.2.1
   have hmono := GlobalTheory.T.etaleLocal_property_calculus_rules.2.1

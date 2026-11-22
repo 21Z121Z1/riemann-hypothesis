@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsBiThetaI
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilOperatorCommutesSuperpositionSlicesSourceStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilDatumPreservesThetaFundamentalDomainPairing
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.EqZeroOfOrthogonalAllThetaFunctions
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsJointlySmoothBiThetaWeilRepSecondVariableStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsJointlySmoothBiThetaWeilRepSecondVariable
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.CovolOneIntegralAdd
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.EqZeroOfLintegralEqZero
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.IndefR.Datum MeasureTheory IsDedekindDomain NumberField Matrix
@@ -61,7 +61,7 @@ theorem comm : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (A S A' : HSp D) (�
   have : BorelSpace (WO A' S) := ⟨rfl⟩
 
   have hC1 : IsBiTheta ψ A S A' fun u v => oma p (fun u' => C u' v) u := isBiTheta_left hA hC p
-  have hC2 : IsBiTheta ψ A S A' fun u v => omb q (C u) v := GlobalTheory.T.isBiTheta_weilRep_second_variable D ψ A S A' χS' χA' omb hB C hC q
+  have hC2 : IsBiTheta ψ A S A' fun u v => omb q (C u) v := _root_.GlobalTheory.BiActRight.isBiTheta_act_right D ψ A S A' χS' χA' omb hB C hC q
   have hC3 : IsBiTheta ψ A S A' fun u v => oma p (fun u' => omb q (C u') v) u := isBiTheta_left hA hC2 p
   have hL := hB.om_pres q _ (slice_right hC1 u)
   have hR := slice_right hC3 u

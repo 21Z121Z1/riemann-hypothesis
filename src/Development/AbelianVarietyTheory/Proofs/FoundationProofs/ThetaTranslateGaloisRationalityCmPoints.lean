@@ -4,12 +4,12 @@ import Formalism.PairingDivisors.StatementH
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DifferentiableComb
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InducedTypeThetaGenusOnePermutes
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaloisConjTorsionTranslatesOddThetaProduct
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalStarComplexMultiplicationPointsStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaSpaceSelfDualPairAtMostLineStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalStarComplexMultiplicationPoints
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaSpaceSelfDualPairAtMostLine
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIntegerMapEqHalfOneAddSqrt
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TaylorCoeffConjugateSeries
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsComplexEndomorphismEqOnCountableStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ImaginaryQuadraticFieldStructureStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ImaginaryQuadraticFieldStructure
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TaylorConjugateTangentSpacePadZeroColumns
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SignedTranslationAddSelfDualLatticeStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsNonzeroThetaOfFiniteLevelAverage
@@ -60,7 +60,7 @@ theorem exists_restriction (D : D7) (cc : Ideal (𝓞 D.host.K)) (δ : ℂ) (hc 
       G = fun z => G₁ (pad D m z) := by
   have hG : admG1 D := (_root_.GlobalTheory.InducedType.induced_type D).1
   obtain ⟨hline, -, hint, hdual, hfg, -, hq⟩ :=
-    GlobalTheory.T.theta_space_selfDual_pair_at_most_line D hG cc δ hc N N' (La D (tor0 D cc δ) L L') (Or.inr ⟨L, L', hL, hL', rfl⟩)
+    _root_.GlobalTheory.ThetaLine.theta_line D hG cc δ hc N N' (La D (tor0 D cc δ) L L') (Or.inr ⟨L, L', hL, hL', rfl⟩)
   obtain ⟨hS, t, ht2, ht0, ht4⟩ := _root_.GlobalTheory.OddThetaTranslate.translate_level_four D hG cc δ hc (N + m) N' r b hb
   obtain ⟨R, hR, hRA⟩ := _root_.GlobalTheory.PadCommensurable.nsmul_pad_mem D hG cc δ hc N N' m r L L' b hb hfg
   set S := pullB D (tor0 D cc δ) b (sgStar (lamOf D cc δ)) with hSdef
@@ -96,11 +96,11 @@ theorem gal_top (D : D7) (cc : Ideal (𝓞 D.host.K)) (δ : ℂ) (hc : Crv D cc 
         U D (torConj D (tor0 D cc δ) ⊤ σ) x' (fnConj D ⊤ σ (comb D (tor0 D cc δ) c t e₀)) ∧
       cj ⊤ σ (wdPh D (tor0 D cc δ) x) = wdPh D (torConj D (tor0 D cc δ) ⊤ σ) x' := by
   have hG : admG1 D := (_root_.GlobalTheory.InducedType.induced_type D).1
-  have hSt : galStar D := GlobalTheory.T.galStar_complexMultiplication_points D
+  have hSt : galStar D := _root_.GlobalTheory.ConjPoint.galStar_holds D
   have hD : DataIn D (tor0 D cc δ) ⊤ := ⟨fun _ _ => trivial, trivial, trivial⟩
   obtain ⟨-, -, hint, -, hfg, -, hq⟩ :=
-    GlobalTheory.T.theta_space_selfDual_pair_at_most_line D hG cc δ hc N N' (La D (tor0 D cc δ) L L') (Or.inr ⟨L, L', hL, hL', rfl⟩)
-  obtain ⟨m, r, B, hB⟩ := GlobalTheory.T.exists_orthonormal_frame_var D N N'
+    _root_.GlobalTheory.ThetaLine.theta_line D hG cc δ hc N N' (La D (tor0 D cc δ) L L') (Or.inr ⟨L, L', hL, hL', rfl⟩)
+  obtain ⟨m, r, B, hB⟩ := _root_.GlobalTheory.FourCopies.exists_onB_four D N N'
   obtain ⟨G₁, ⟨k₁, c₁, t₁, m₁, hm₁, ht₁, rfl⟩, hGG⟩ :=
     exists_restriction D cc δ hc L L' hL hL' B hB e₀ _ he ⟨k, c, t, m₀, hm, ht, rfl⟩
   obtain ⟨R, hR, hRA⟩ := _root_.GlobalTheory.PadCommensurable.nsmul_pad_mem D hG cc δ hc N N' m r L L' B hB hfg
@@ -249,7 +249,7 @@ theorem gal_all : ∀ D : D7, gal D := by
     refine ⟨h3, ?_⟩
     unfold Wd
     rw [fnConj_mul D M ρ _ hw _ hd hU, h1, h3]
-  · obtain ⟨-, -, -, -, -, -, hq⟩ := GlobalTheory.T.theta_space_selfDual_pair_at_most_line D (_root_.GlobalTheory.InducedType.induced_type D).1 cc δ hc N N' (La D (tor0 D cc δ) L L')
+  · obtain ⟨-, -, -, -, -, -, hq⟩ := _root_.GlobalTheory.ThetaLine.theta_line D (_root_.GlobalTheory.InducedType.induced_type D).1 cc δ hc N N' (La D (tor0 D cc δ) L L')
       (Or.inr ⟨L, L', hL, hL', rfl⟩)
     obtain ⟨m, hmq⟩ := hq _ hj
     have hpq : (p : ℝ) ^ (2 * j) * qH D (tor0 D cc δ) x = (m : ℝ) := by

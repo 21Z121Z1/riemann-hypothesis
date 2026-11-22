@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.SelfDualAt
 import Formalism.LocalToGlobal.HermitianForms.TiedStep
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StandardAdditiveCharacterLocalNeOneSplitPrimeStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CmFieldSplitCompletelyPlaceStructureStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CmFieldSplitCompletelyPlaceStructure
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalIntegersIffSplitAtTypePrime
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AdelicLatticeFrameComponentLocalFrameStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalFrameIdempotentFactorCases
@@ -26,7 +26,7 @@ theorem GlobalTheory.St.G.frame_local_basis_unitriangular : ∀ (F E : Type) [Fi
       simp only [AdFrame.locChi, supSum, lamJ, Finset.univ_eq_empty, Finset.sum_empty, mul_zero, map_zero,
         Finset.range_zero, Finset.prod_empty, mul_one, AddChar.map_zero_eq_one]
       exact Fr.psi_int 0 (zero_mem _)
-  · obtain ⟨-, hsplitv⟩ := GlobalTheory.T.cmField_splitCompletely_place_structure F E cm (gp i) (hpr i) (hspl i)
+  · obtain ⟨-, hsplitv⟩ := _root_.GlobalTheory.St.G.SplitPrime.split_place F E cm (gp i) (hpr i) (hspl i)
     obtain ⟨-, hmax, -⟩ := hsplitv v hv
     obtain ⟨hmaxg, hgv, q, hq, hgq⟩ := _root_.GlobalTheory.St.G.TypePrimeProduct.uniformiser_prod F gp hpr hne i v hv hmax
     have hint := _root_.GlobalTheory.St.G.intV_iff_sp F E cm gp G hpr hspl i v hv

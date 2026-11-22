@@ -3,7 +3,7 @@ import Development.AutomorphicSpectrum.Proofs.GlobalProofs.MemFormsOnOfMemSpan
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.RationalUnipotentLeParabolic
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ConstantTermModerateGrowthInherited
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ConstantTermParabolicKFinite
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ConstantTermSmoothModerateGrowthStatement
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ConstantTermSmoothModerateGrowth
 import Development.WeilBound.RepresentationTheoryGL.ConstantTermFiniteness.CuspidalConstantTerms.FiniteDimensionalOfParts
 import GroundTheory.PAdicHodge.NormalizedTrace
 
@@ -58,7 +58,7 @@ theorem constAlong_mem_formsOn [∀ τ, FiniteDimensional ℂ (W τ)] (hθ : IsI
     refine MeasureTheory.integral_congr_ae (.of_forall fun x => ?_)
     change φ (_ * (g * u)) = φ (_ * g)
     rw [← mul_assoc, h2 u hu hu']
-  · have g1 := GlobalTheory.T.constant_term_smooth_moderate_growth D θ hθ V m X Y hW T φ a hleft m1.smooth m2 τ k
+  · have g1 := _root_.GlobalTheory.CompanionTheory.Hypotheses₂.ConstGelf.isConstAlong_gelf D θ hθ V m X Y hW T φ a hleft m1.smooth m2 τ k
     rw [h4 τ k] at g1
     have g2 : IsConstAlong D.sp.cm.sig V.gram X T (c τ k • φ) (c τ k • a) := fun μ 𝓕 b1 b2 b3 g => by
       simp only [Pi.smul_apply, smul_eq_mul]

@@ -1,5 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsIdemSumSubOfSubsetAndOrthogonalStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsIdemSumSubOfSubsetAndOrthogonal
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SmulMemLatOIdem
 import Development.AbelianVarietyTheory.Definitions.Divisors.MoveArgsOneTranspose
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemCompletedHomLatticeIffIntegralOnUnitHalfStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RankCol
@@ -22,7 +23,7 @@ theorem prodHalf_topFn_eq_givenFn : ∀ {D : D7} {T : Type} {L : LevCh D T} {sc 
     rcases Finset.mem_union.1 hw with h | h
     · exact Finset.mem_union_left _ (levelChainTypePlaces_subset_chosenPlaces G hL t h)
     · exact Finset.mem_union_right _ h
-  obtain ⟨he₁, -⟩ := GlobalTheory.T.isIdemSum_sub_of_subset_and_orthogonal he he' hsub
+  obtain ⟨he₁, -⟩ := _root_.GlobalTheory.IdemSubDiff.isIdemSum_sdiff he he' hsub
   have h1 := GlobalTheory.PlaceDatum.idemSum_mul_self he'
   have h2 := GlobalTheory.PlaceDatum.idemSum_mul_self he₁
   obtain ⟨-, c1, c0⟩ := GlobalTheory.FunObj.Comparison₂.cpt_idemSum he'

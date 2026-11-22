@@ -5,7 +5,8 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsWeil
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousCoordSymm
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharacterInfinityExponentGroupLaws
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeilDatumTwistHeckeCharacters
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumUniqueOnThetaFunctionsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumUniqueOnThetaFunctions
+import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnitaryOnTheta
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum GlobalTheory.Mem.Th GlobalTheory.WeilParts MeasureTheory IsDedekindDomain NumberField Matrix
 open scoped TensorProduct
@@ -38,7 +39,7 @@ theorem twist_both {ψ : AddChar (AF D.host.F) ℂ} (hψ : IsStdChar D ψ (-1)) 
   have hΦ : IsThetaFunO ψ V W fun x => Φ.1 (toTWsmall V W x) := by
     simp only [← he]
     exact (hth ψ _).2 (mem_ThS.1 Φ.2)
-  have k := GlobalTheory.T.weilDatum_unique_on_thetaFunctions D ψ hψ V W _ _ o' o'' hd' hd'' (g, h) _ hΦ
+  have k := _root_.GlobalTheory.WeilUniq.weilDatum_unique D ψ hψ V W _ _ o' o'' hd' hd'' (g, h) _ hΦ
   rw [ht', hv g h x y hx hy, LinearMap.smul_apply, ht] at k
   have k2 := congrFun k (e.symm w)
   simp only [← he, e.apply_symm_apply, Pi.smul_apply] at k2

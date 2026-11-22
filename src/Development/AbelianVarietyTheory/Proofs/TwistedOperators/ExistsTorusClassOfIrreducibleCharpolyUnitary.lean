@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsHasCls
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryRationalDiagonalHomBijectiveStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryRationalDiagonalHomBijective
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CharpolyUnitaryEqConjugateReciprocalStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsAdjoinRootLinearEquivOfCharpolyEqStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsUnitaryTorusTraceFormOfHermitianStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsUnitaryTorusTraceFormOfHermitian
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsNormClassOfRationalIsometryTraceForm
 
 open MeasureTheory Set Filter Polynomial NumberField IsDedekindDomain
@@ -25,7 +25,7 @@ theorem sig_sig {F E : Type} [Field F] [NumberField F] [Field E] [NumberField E]
 
 theorem exists_cls_of_irreducible : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberField E] [Algebra F E] (σ : E →ₐ[F] E), IsCMExt F E σ → ∀ (n : ℕ) (J : Matrix (Fin n) (Fin n) E), IsHermND σ J → Function.Bijective (diagH σ J F) ∧ ∀ γ : GRat σ J, Irreducible γ.1.1.charpoly → ∃ P : PPol σ n, γ.1.1.charpoly = P.1 ∧ ∃ q, HasCls P F J (diagH σ J F γ) q := by
   intro F E _ _ _ _ _ σ hσ n J hJ
-  refine ⟨GlobalTheory.T.unitaryRationalDiagonalHom_bijective F E σ n J, ?_⟩
+  refine ⟨_root_.GlobalTheory.TwistRatBij.diagH_bijective F E σ n J, ?_⟩
   intro γ hirr
   have hm : Formalism.UG.cT (σ : E →+* E) γ.1.1 * J * γ.1.1 = J := γ.2
   have hs := GlobalTheory.T.charpoly_unitary_eq_conjugateReciprocal F E σ n J hJ.2 γ
@@ -41,7 +41,7 @@ theorem exists_cls_of_irreducible : ∀ (F E : Type) [Field F] [NumberField F] [
   let P : PPol σ n := ⟨γ.1.1.charpoly, hP⟩
   refine ⟨P, rfl, ?_⟩
   obtain ⟨φ, hφ⟩ := GlobalTheory.T.exists_adjoinRoot_linearEquiv_of_charpoly_eq F E σ n P γ.1.1 rfl
-  obtain ⟨x, hx0, hxs, hxf⟩ := GlobalTheory.T.exists_unitaryTorus_traceForm_of_hermitian F E σ (sig_sig hσ) n P J hJ γ.1.1 hm φ hφ
+  obtain ⟨x, hx0, hxs, hxf⟩ := _root_.GlobalTheory.TrEll.HermTrace.exists_trace_form F E σ (sig_sig hσ) n P J hJ γ.1.1 hm φ hφ
   exact _root_.GlobalTheory.RatCls.hasCls_of_ratIsom F E σ n P J φ x hx0 hxs hxf γ hφ
 
 end GlobalTheory.TrEll.RatEll

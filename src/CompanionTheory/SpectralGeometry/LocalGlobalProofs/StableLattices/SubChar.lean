@@ -7,11 +7,11 @@ import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.SumOfLe
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.StandardBlocksLevelSum
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CenterActionCommutesLeviDifference
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.LeviActionPreservesSupportDegreeStatement
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.LeviActionCommutesWithTotalBoundaryStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.LeviActionCommutesWithTotalBoundary
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.LeviActionIsGlRepresentation
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.HighestWeightClassBoundaryAndWeightStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.HighestWeightClassBoundaryAndWeight
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.FreeAlgebraActionOnSubquotientStatement
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.LevelWeightSumBoundStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.LevelWeightSumBound
 
 noncomputable section
 
@@ -171,7 +171,7 @@ theorem L_lF : ∀ (n : ℕ) (lev : Fin n → ℕ) (V : Type) [AddCommGroup V] [
   intro n lev V _ _ E hm hE x hx
   refine ⟨fun p q hpq => ?_, fun p q r v h1 h2 => _root_.GlobalTheory.CompanionTheory.RgCOBlock.lF_glRel n lev V E hm hE x hx p q r v h1 h2⟩
   obtain ⟨a, b⟩ := GlobalTheory.T.levi_action_preserves_support_degree n lev V E hm x hx p q hpq
-  exact ⟨a, b, GlobalTheory.T.levi_action_commutes_with_total_boundary n lev V E hm hE x hx p q hpq⟩
+  exact ⟨a, b, _root_.GlobalTheory.CompanionTheory.RgCOBlock.LeviBd.lF_bd n lev V E hm hE x hx p q hpq⟩
 
 theorem coBlock : InjU → GenCOU → COBlock := by
   intro hI hG n
@@ -272,7 +272,7 @@ theorem coBlock : InjU → GenCOU → COBlock := by
       ext A
       simp
   set t : Cn n V := Pi.single (omU ε lev) u with ht
-  obtain ⟨tc, tw⟩ := GlobalTheory.T.highest_weight_class_boundary_and_weight n ε lev V E γ u hmono hu
+  obtain ⟨tc, tw⟩ := _root_.GlobalTheory.CompanionTheory.RgCOBlock.TopU.top_cycle_weight n ε lev V E γ u hmono hu
   have tsup : SuppIn (inU lev) t := by
     intro A hA i hi
     have : A = omU ε lev := by
@@ -307,7 +307,7 @@ theorem coBlock : InjU → GenCOU → COBlock := by
   refine ⟨σ, fun c => ?_⟩
   by_cases hc : c < M
   · have e := hσ ⟨c, hc⟩
-    have hb := GlobalTheory.T.level_weight_sum_bound n M ε lev ⟨c, hc⟩ h
+    have hb := _root_.GlobalTheory.CompanionTheory.RgCOBlock.norm_cluster_sum_le n M ε lev ⟨c, hc⟩ h
     simp only at e hb
     rw [e, (hP _).2.2]
     refine le_of_eq_of_le ?_ hb

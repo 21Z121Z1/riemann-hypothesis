@@ -3,15 +3,15 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.IsSmoothVector
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocallyIntegrableRep
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundedAutomorphicHasRepresentative
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalSobolevInequalityAdelicUnitary
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NcardRationalPointsTranslatedCompactLePowStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NcardRationalPointsTranslatedCompactLePow
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicUnitaryTopology
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepresentativeParametricIntegralContinuousFamily
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsContinuousRepresentativeAverage
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFixedAverageApproxOfSubgroupFixed
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEvaluationExtensionClosureRepresentativesStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqSumIntegralCubeDerivativesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqSumIntegralCubeDerivatives
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothAlongCurveProductsStableStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FundamentalDomainL2BoundStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FundamentalDomainL2Bound
 
 noncomputable section
 
@@ -182,7 +182,7 @@ theorem exists_smooth_rep [μ.IsMulRightInvariant]
       ∀ p ∈ A, Sm ρ A e (deriv (fun r : ℝ => ρ (e p r) v) 0) ∧
         (∀ k ∈ H, ρ k (deriv (fun r : ℝ => ρ (e p r) v) 0) = deriv (fun r : ℝ => ρ (e p r) v) 0) ∧
         ∀ x, HasDerivAt (fun t : ℝ => R v (x * e p t)) (R (deriv (fun r : ℝ => ρ (e p r) v) 0) x) 0 := by
-  obtain ⟨J, _, κ, l, hκ, hT⟩ := GlobalTheory.T.eq_sum_integral_cube_derivatives_alt G K ρ hiso hρ s hs N (fun i => e (qs i)) fun i => he _ (hq i)
+  obtain ⟨J, _, κ, l, hκ, hT⟩ := _root_.GlobalTheory.CubeTaylor.eq_sum_integral_cube_derivatives G K ρ hiso hρ s hs N (fun i => e (qs i)) fun i => he _ (hq i)
   choose Λ hΛ using fun j => exists_eval hloc hlin hiso hρ htr hU hH hΘ
     (isCompact_univ_pi fun _ => isCompact_Icc) hΩ hC hM (hκ j)
   let d : P → K → K := fun p w => deriv (fun r : ℝ => ρ (e p r) w) 0
@@ -273,9 +273,9 @@ theorem exists_smooth_repr : ∀ (D : D7) (θ : InfFam D) (V : HSp D), IsInfFam 
     (H := U ⊓ GfC V) (U := U) (A := {p : D.what₂.Tau × Mt V.rank | p.2 ∈ lieAt V p.1})
     (e := fun p => oneP θ V p.1 p.2) (qs := fun i => (τs i, Xs i))
     (fun C hC => by
-      obtain ⟨m, hm⟩ := GlobalTheory.T.ncard_rationalPoints_translatedCompact_le_pow D θ V hθ C hC
+      obtain ⟨m, hm⟩ := _root_.GlobalTheory.RatCount.ncard_rational_le D θ V hθ C hC
       obtain ⟨c, hc⟩ := hm 1
-      refine GlobalTheory.T.fundamental_domain_L2_bound (GA D V) μ (GQ V) 𝓕 hp.fd C hC (c * normInf θ V 1 ^ m) fun y => ?_
+      refine _root_.GlobalTheory.QuotLocInt.integrableOn_compact (GA D V) μ (GQ V) 𝓕 hp.fd C hC (c * normInf θ V 1 ^ m) fun y => ?_
       simpa using hc 1 (one_mem _) y)
     (fun a v w => hlin v w _ _ a (Filter.Eventually.of_forall fun _ => rfl) (Filter.Eventually.of_forall fun _ => rfl))
     hr.iso hr.cont hr.val hU

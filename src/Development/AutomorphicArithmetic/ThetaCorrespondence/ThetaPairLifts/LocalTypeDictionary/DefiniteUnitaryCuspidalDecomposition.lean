@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspidalListedTopForms
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FinCoefMultT
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsAutFunSmRealProd
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsDualFrameSpanUnitaryRepresentationStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsDualFrameSpanUnitaryRepresentation
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesModelAdjointEqInvFiniteDimensional
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteDimensionalModel
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.DiscreteSeriesHermitianUniqueOfClassification
@@ -18,7 +18,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsSmoothAuto
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContDiffDerivSnoc
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOnAtTau
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ModelTypeFormExpandsAlongDualFrame
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExpandPiOfExpandEachStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExpandPiOfExpandEach
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SumProdUpdateRegroup
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
 
@@ -53,7 +53,7 @@ theorem cusp_forms_decompose_definite_unitary : _root_.GlobalTheory.FunPr.ThetaL
       (∀ i, ∀ h ∈ Formalism.QuantumDeterminants.UH (gramAt D N.V τ), B i ∘ₗ (N.M.rep τ h : N.M.H τ →ₗ[ℂ] N.M.H τ) =
         ∑ j, LinearMap.trace ℂ (N.M.H τ) ((N.M.rep τ (k j) : N.M.H τ →ₗ[ℂ] N.M.H τ) ∘ₗ
           (B i ∘ₗ (N.M.rep τ h : N.M.H τ →ₗ[ℂ] N.M.H τ))) • B j) :=
-    fun τ => GlobalTheory.T.exists_dual_frame_span_unitary_representation (Formalism.QuantumDeterminants.UH (gramAt D N.V τ)) (fun g => (N.M.rep τ g : N.M.H τ →ₗ[ℂ] N.M.H τ))
+    fun τ => _root_.GlobalTheory.DualFrameSpan.dual_frame (Formalism.QuantumDeterminants.UH (gramAt D N.V τ)) (fun g => (N.M.rep τ g : N.M.H τ →ₗ[ℂ] N.M.H τ))
       (hmulK τ) (hρ τ) (fun g hg => ⟨g⁻¹, (_root_.GlobalTheory.RepAdj.rep_adjoint_eq_inv N.M τ hg).1, (_root_.GlobalTheory.RepAdj.rep_adjoint_eq_inv N.M τ hg).2⟩)
   choose m k B hk hB1 hB2 using hframe
   have hexp : ∀ τ x, ∀ g ∈ Formalism.QuantumDeterminants.UH (gramAt D N.V τ), φ (x * atTau θ N.V τ g) =
@@ -147,7 +147,7 @@ theorem cusp_forms_decompose_definite_unitary : _root_.GlobalTheory.FunPr.ThetaL
     have h1 : φ x = F x (fun _ => 1) := by
       show φ x = φ (x * realProd θ N.V _)
       rw [realProd_one hθ, mul_one]
-    have h2 := GlobalTheory.T.eq_sum_prod_of_expansion_in_each_coordinate (X := fun _ => Matrix (Fin N.V.rank) (Fin N.V.rank) ℂ)
+    have h2 := _root_.GlobalTheory.expand_pi_of_expand_each (X := fun _ => Matrix (Fin N.V.rank) (Fin N.V.rank) ℂ)
       (fun τ => Formalism.QuantumDeterminants.UH (gramAt D N.V τ)) m k hk
       (fun τ j g => LinearMap.trace ℂ (N.M.H τ) ((N.M.rep τ g : N.M.H τ →ₗ[ℂ] N.M.H τ) ∘ₗ B τ j)) (F x)
       (fun τ₀ g hg => hFexp x τ₀ g hg) (fun _ => 1) (fun τ => GlobalTheory.PointAtPlaceHom.one_mem_UH _)

@@ -69,7 +69,7 @@ theorem recognition_core : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRing
   have huW : IsUnit (n : W) := by simpa using hu.map φ
   have h1 : ‖(n : C)‖ = 1 := (isUnit_iff_norm hC n).1 huW
   have hnC : (n : C) ≠ 0 := fun h => by rw [h, norm_zero] at h1; exact zero_ne_one h1
-  obtain ⟨N₁, ν₁, -⟩ := GlobalTheory.T.exists_integral_degeneration_values hL W DW.toPre DW.psi_even hBW C ⊤ fun _ => trivial
+  obtain ⟨N₁, ν₁, -⟩ := _root_.GlobalTheory.ValuesExist.exists_integral_values hL W DW.toPre DW.psi_even hBW C ⊤ fun _ => trivial
   obtain ⟨N, ν, q₀, -, hIν, hq₀, -⟩ := exists_integral hW DW hC ν₁
   have hT := GlobalTheory.ValuesTorsion.tors_of_integral hL hL₂ (_root_.GlobalTheory.ThetaInValues.brUth_of_laws hL) W DW.toPre DW.psi_even hBW C hO N ν hIν n hn
     ho h1
@@ -79,7 +79,7 @@ theorem recognition_core : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRing
   have h0 : ∃ q : N.QT ((n ^ 1) ^ 2), N.tx (n ^ 1) q ≠ 0 := by
     obtain ⟨h, -, -, hh⟩ := (_root_.GlobalTheory.tx_coset_criterion C N q₀ hq₀ n _ hn ho h1 hT 1 le_rfl).2.2 1
     exact ⟨_, hh⟩
-  obtain ⟨N', ν', -⟩ := GlobalTheory.T.exists_integral_degeneration_values hL W D'.toPre D'.psi_even D'.tau_bimult C ⊤ fun _ => trivial
+  obtain ⟨N', ν', -⟩ := _root_.GlobalTheory.ValuesExist.exists_integral_values hL W D'.toPre D'.psi_even D'.tau_bimult C ⊤ fun _ => trivial
 
   have galW : ∀ k, (∃ j, k = n ^ j) → ∀ (σ : C ≃ₐ[FractionRing W] C) (p pσ : QkPt DW.toPre C k),
       QkExt (σ : C →+* C) p pσ → (fW k pσ).left = spMap (σ : C →+* C) ≫ (fW k p).left := by
@@ -133,7 +133,7 @@ theorem recognition_core : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRing
     have Θ := htheta j v hv
     have hCR : CExt R (maximalIdeal R) C :=
       ⟨fun r => (cC r).symm ▸ hC.1 _, fun r hr => (cC r).symm ▸ hC.2 _ (map_nonunit φ r hr)⟩
-    obtain ⟨N₀, ν₀, -⟩ := GlobalTheory.T.exists_integral_degeneration_values hL R D.toPre D.psi_even hB C ⊤ fun _ => trivial
+    obtain ⟨N₀, ν₀, -⟩ := _root_.GlobalTheory.ValuesExist.exists_integral_values hL R D.toPre D.psi_even hB C ⊤ fun _ => trivial
     obtain ⟨J, hJX, hJ⟩ := GlobalTheory.Mum.OneTraitTheta.exists_values_iso hL hWp cC ν₀ ν
     choose q₀ hq₀ using fun i : QkPt D.toPre (Kb R) ((n ^ j) ^ 2) =>
       exists_val D.psi_even hB ν₀ (qkExt hB em.toRingHom em.comp_algebraMap i)
@@ -141,7 +141,7 @@ theorem recognition_core : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRing
       (fun i => (qkExt_iff hB _ em.comp_algebraMap _ _).2 rfl) hq₀
     choose pp hpp using fun i => G''.onto _ hk (fW _ (tr hWp cC em hBW i)) (GW.pow _ hk _)
     choose qq hqq using fun i => exists_val D'.psi_even D'.tau_bimult ν' (pp i)
-    have Q := _root_.GlobalTheory.Ex.ThetaSeries.theta_const_eq_series hV GlobalTheory.T.torus_torsion_points_correspond_values (_root_.GlobalTheory.Ex.brFam hL hL₂) W _ hW rfl D' A' G' hG' U' C hC N' ν' (n ^ j) hm _ pp qq
+    have Q := _root_.GlobalTheory.Ex.ThetaSeries.theta_const_eq_series hV _root_.GlobalTheory.Ex.GtValues.points_correspond (_root_.GlobalTheory.Ex.brFam hL hL₂) W _ hW rfl D' A' G' hG' U' C hC N' ν' (n ^ j) hm _ pp qq
       (fun i => fW _ (tr hWp cC em hBW i)) (fun i => (hf' _ hk _ _).2 (hpp i).symm) hqq
     obtain ⟨c₃, hc₃⟩ := theta_prop hfib cC em hm (x := lab _) (x' := fun i => fW _ (tr hWp cC em hBW i))
       (fun i => by rw [hfW _ hk]; exact (hε _ _).1 rfl) (fun i => GW.pow _ hk _) Θ Q

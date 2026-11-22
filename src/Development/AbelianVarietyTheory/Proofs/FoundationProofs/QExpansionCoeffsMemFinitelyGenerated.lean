@@ -7,7 +7,7 @@ import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModBasic
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EisensteinDeltaQExpansionIntegrality
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasQIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasQExpansionOfLevelCoeffAndFunctionUnique
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QExpansionCoeffsInSubringRingClosedStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QExpansionCoeffsInSubringRingClosed
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EisensteinAlgebraicPowerSeriesCoeffClosure
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntegralOverJInvariantOfHasSomeLevelOver
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PolynomialRelationPassesToQExpansions
@@ -61,7 +61,7 @@ theorem sum_clearCoeff_eq_zero (n M w : ℕ) (c : Fin n → Polynomial ℂ) (hM 
 theorem qall_clearCoeff (R : Subring ℂ) (N : ℕ) (hN : 0 < N) (n M w : ℕ) (c : Fin n → Polynomial ℂ)
     (hc : ∀ (i : Fin n) (k : ℕ), k ≤ M → (c i).coeff k ∈ R) (i : ℕ) :
     QAll (· ∈ R) N (clearCoeff n M w c i) := by
-  obtain ⟨hcst, -, -, hmul, hpow, hsum⟩ := GlobalTheory.T.qExpansionCoeffsInSubring_ring_closed R N hN
+  obtain ⟨hcst, -, -, hmul, hpow, hsum⟩ := _root_.GlobalTheory.QFam.QAllSubring.ring_closed R N hN
   have hDD : QAll (· ∈ R) N DD := ((_root_.GlobalTheory.QFam.eis_q N hN DD (Or.inr (Or.inr rfl))).2.1) R
   have hE : QAll (· ∈ R) N ⇑E₄ := ((_root_.GlobalTheory.QFam.eis_q N hN ⇑E₄ (Or.inl rfl)).2.1) R
   by_cases h : i < n

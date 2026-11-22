@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.PrimitiveStructureSheafDegTwoVanish
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AxesVanishingDegreeOneExtension
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AxesO1OfProjectiveRankCupStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeUnobstructedOfConstantDimensionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeUnobstructedOfConstantDimension
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeGlobalFormsPrimitiveOfFramesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrimitiveDegreeTwoExtensionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdditiveClassDegreeTwoStructureSheafVanishStatement
@@ -31,7 +31,7 @@ theorem abelianUnobstructed_of_struct (hO : GlobalTheory.AbCoh.OStr)
     intro R _ A _ g hA hg
     obtain ⟨h1, h2, -, -⟩ := hO R A g hA hg
     exact ⟨h1, h2⟩
-  exact GlobalTheory.T.abelianSchemeUnobstructed_of_constantDimension (_root_.GlobalTheory.Obs.unobDim_of_formSt (GlobalTheory.T.abelianSchemeGlobalFormsPrimitive_of_frames hF) (GlobalTheory.T.primitive_degree_two_extension (GlobalTheory.T.additiveClassDegreeTwo_structureSheaf_vanish hS))
+  exact _root_.GlobalTheory.DimRed.abelianUnobstructed_of_unobDim (_root_.GlobalTheory.Obs.unobDim_of_formSt (GlobalTheory.T.abelianSchemeGlobalFormsPrimitive_of_frames hF) (GlobalTheory.T.primitive_degree_two_extension (GlobalTheory.T.additiveClassDegreeTwo_structureSheaf_vanish hS))
     (_root_.GlobalTheory.Obs.axesE1_of_axesO1 (GlobalTheory.T.axesO1_of_projective_rank_cup hS)))
 
 end GlobalTheory

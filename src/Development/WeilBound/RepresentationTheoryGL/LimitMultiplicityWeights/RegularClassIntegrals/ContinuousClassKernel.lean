@@ -12,7 +12,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KernelLocallyFin
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableDescendOfCover
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SiegelCompactTranslateBound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsIsoFrameFirstCols
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteLatticePointsInSiegelSetBoundStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteLatticePointsInSiegelSetBound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RegularSemisimpleConjugateUnipotentTranslate
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemParabolicOfFlagPreserving
 import Development.WeilBound.RepresentationTheoryGL.LimitMultiplicityWeights.RegularClassIntegrals.DecayFinal
@@ -255,7 +255,7 @@ theorem class_bound {X Y : Matrix (Fin V.rank) (Fin r) D.host.E} (hW : IsWittFra
   have hWc : IsCompact W := hC₀.mul hK
   set C₁ : Set (GA D V) := W * tsupport f * W⁻¹ with hC₁
   have hC₁c : IsCompact C₁ := (hWc.mul hS).mul hWc.inv
-  obtain ⟨A₁, B₁, hcnt⟩ := GlobalTheory.T.finite_lattice_points_in_siegel_set_bound D V r X Y hW c hc C₁ hC₁c
+  obtain ⟨A₁, B₁, hcnt⟩ := _root_.GlobalTheory.CompanionTheory.TorusCount.torus_count D V r X Y hW c hc C₁ hC₁c
   have hdec := fun j : Fin r => MainStatements.WeightKernel.Dec.decay_holds D V r X Y hW c hc j f hf
     (hcusp _ (IsoFlag.proper_single _)) (W⁻¹ * C₁) W (hWc.inv.mul hC₁c) hWc
   choose A hA using hdec

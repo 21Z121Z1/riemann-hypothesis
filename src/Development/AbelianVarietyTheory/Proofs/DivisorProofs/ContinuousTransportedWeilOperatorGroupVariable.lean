@@ -1,12 +1,13 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUSplittingInl
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ImportsBis
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledUnitaryPartnerDiagStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledUnitaryPartnerDiag
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsContOnOfLocal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalFiniteDimFinitePartsWeilOperators
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilOperatorArchimedeanSliceSchwartzSeminormBoun
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaTransformTransportedWeilContinuous
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSummableMajorantAdelicSchwartzLocallyUnifoStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSummableMajorantAdelicSchwartzLocallyUnifo
+import Development.AbelianVarietyTheory.Definitions.Divisors.HilbertNinetyQuotientHomEqIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousAtCharSeriesCoefZero
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.L2.Theta
@@ -64,7 +65,7 @@ theorem continuous_transport_apply : ∀ (D : D7) (ψ : AddChar (AF D.host.F) �
     rw [hslice p hpN i v]
     exact h1.trans ((le_abs_self _).trans
       (Finset.single_le_sum (f := fun i => |C i|) (fun _ _ => abs_nonneg _) (Finset.mem_univ i)))
-  obtain ⟨M, hM, hMb⟩ := GlobalTheory.T.exists_summableMajorant_adelicSchwartz_locallyUniform D.host.F κ (fun p => om p Φ) p0 m g f hg
+  obtain ⟨M, hM, hMb⟩ := _root_.GlobalTheory.SchwartzMajorant.exists_summable_majorant D.host.F κ (fun p => om p Φ) p0 m g f hg
     (Filter.eventually_of_mem hN fun p hp => hfe p hp) hbd z
   let e : (κ → D.host.F) → AddChar (κ → AF D.host.F) ℂ := fun a =>
     ψ.compAddMonoidHom (AddMonoidHom.mk' (fun y => (fun i => algebraMap D.host.F (AF D.host.F) (a i)) ⬝ᵥ y)

@@ -11,10 +11,12 @@ import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.GagaSection
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatZeroFromResolutionAndGagaStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatFirstFromResolutionAndGagaStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatFirstFromResolutionAndGaga
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.CardComapMulFinsumEqFinsumFibres
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.KroneckerCharacterPeriodFormula
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatGenFrameComplexCompatStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatGenFrameComplexCompat
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsConstMul
 
 noncomputable section
 
@@ -95,10 +97,10 @@ theorem exists_norms (hG : Top.Given) (hFD : FlatDegree) (hP : PeriodOf) (hχ : 
   obtain ⟨⟨hI, -⟩, -, -, -, hRes, -, -, hGa, -⟩ := hG
   have hpq : 1 ≤ D.p + D.q := by omega
   obtain ⟨φ, hl, hf, -⟩ := GlobalTheory.T.flat_zero_from_resolution_and_gaga hRes hGa E H D l (Xo l) c _ _ Y U Z τ.1 (int_frac c.F) hpq τ.2 hZ
-  obtain ⟨hinf, hfg⟩ := GlobalTheory.T.flat_first_from_resolution_and_gaga hRes hGa E H D l (Xo l) c _ _ Y U Z τ.1 φ (int_frac c.F) hpq τ.2 hZ hl hf
+  obtain ⟨hinf, hfg⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.FlatFirstTheorem.flat_first_of_resolution_gaga hRes hGa E H D l (Xo l) c _ _ Y U Z τ.1 φ (int_frac c.F) hpq τ.2 hZ hl hf
   have hφ : IsFlatGen U τ.1 φ FU i := hfg g ty FU i hty fun P y hPer hu hy => (hper y hy).2 ⟨P, hPer, hu⟩
   obtain ⟨φ', N', hφ', hN', -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.thmFlatA_of_resK_gaga_partI hRes hGa hI E H D Xo l c U τ.1 g ty FU i hpq τ.2 hg hty hU hUi hper
-  obtain ⟨a, ha, he⟩ := GlobalTheory.T.flat_gen_frame_complex_compat E H D l (Xo l) c U τ.1 φ' φ g ty FU i hty hφ' hφ fun y hy hr => (hper y hy).1 hr
+  obtain ⟨a, ha, he⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.flatGen_unique E H D l (Xo l) c U τ.1 φ' φ g ty FU i hty hφ' hφ fun y hy hr => (hper y hy).1 hr
   have hfin : ∀ (p : Nat.Primes) (κ : c.F →+* ℂ_[p]), ∃ t, HasFinNorm U τ.1 φ p κ t := fun p κ =>
     ⟨_, TopA.hasFinNorm_of_eq hl ha he (hN'.2 p κ)⟩
   choose t ht ht' using hinf

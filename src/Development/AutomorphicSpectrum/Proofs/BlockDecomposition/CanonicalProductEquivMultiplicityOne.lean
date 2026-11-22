@@ -1,13 +1,17 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.ZelevinskyCosocles.LUnlinkedComm
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContragredientProductIrreducibleStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContragredientProductIrreducible
+import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.LSegJacquet
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetMultiplicityOfEquiv
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductIrreducibleFiniteLength
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentProductJacquetShuffleCount
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetMultiplicityTransitiveLe
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CanonicalShuffleCountProductStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductIrreducibleAppendEquivStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductIrreducibleAppendEquiv
+import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.PrincipalSeriesSupport.PrinSeriesWord
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasSupportOfIsSubquotientProdIrr
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ParabolicInductionPreservesSubquotient
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivProdIrrTw
 
 noncomputable section
@@ -156,8 +160,8 @@ theorem append_equiv {p q p' q' r t : ℕ} (y' : Fin p → IrrGL k) (y'' : Fin q
     (e₂ : Nonempty ((prodIrr y'' hy'').Equiv (prodIrr w hw))) (hd : ∑ a, (Fin.append y' y'' a).1 = r + t)
     (hz : ∑ a, (Fin.append z' w a).1 = r + t) :
     Nonempty ((prodIrr (Fin.append y' y'') hd).Equiv (prodIrr (Fin.append z' w) hz)) :=
-  ⟨(GlobalTheory.T.product_irreducible_append_equiv k p q r t y' y'' hy' hy'' hd).some.symm.trans
-    ((ae2 y' y'' z' w hy' hy'' hz' hw e₁ e₂).some.trans (GlobalTheory.T.product_irreducible_append_equiv k p' q' r t z' w hz' hw hz).some)⟩
+  ⟨(_root_.GlobalTheory.CompanionTheory.ProdStage.prod₂_prodIrr_append k p q r t y' y'' hy' hy'' hd).some.symm.trans
+    ((ae2 y' y'' z' w hy' hy'' hz' hw e₁ e₂).some.trans (_root_.GlobalTheory.CompanionTheory.ProdStage.prod₂_prodIrr_append k p' q' r t z' w hz' hw hz).some)⟩
 
 def blockCl {q : ℕ} (y'' : Fin q → IrrGL k) (hirr : (prodIrr y'' rfl).IsIrreducible) : IrrGL k :=
   IrrGL.of (prodIrr y'' rfl) (isSmooth_prodIrr _ _) hirr

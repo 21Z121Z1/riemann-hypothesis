@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatMulIntegra
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaTransformRationalTranslateQuasiInvariant
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchroedingerPreservesAdelicSchwartz
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerGoodModels
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ScaledLatticeTranslationInvariantStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ScaledLatticeTranslationInvariant
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ScaledLatticeFourierInvariant
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenScaledInt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteAdeleApproxScaled
@@ -83,7 +83,7 @@ theorem box_eq (ψ : AddChar (AF F) ℂ) (hψ : IsStd ψ) (L : ((κ → AF F) �
     {a : F} (ha : a ≠ 0) (T : SchwartzMap (κ → mixedEmbedding.mixedSpace F) ℂ →L[ℂ] ℂ)
     (hT : ∀ f : SchwartzMap (κ → mixedEmbedding.mixedSpace F) ℂ, L (pureA F f (boxInd F κ a)) = T f) :
     ∃ c : ℂ, ∀ f : SchwartzMap (κ → mixedEmbedding.mixedSpace F) ℂ, L (pureA F f (boxInd F κ a)) = c * thetaSum F (pureA F f (boxInd F κ a)) := by
-  obtain ⟨c, hc⟩ := GlobalTheory.T.scaled_lattice_translation_invariant F κ a ha T (fun ξ hξ f f' hf => by
+  obtain ⟨c, hc⟩ := _root_.GlobalTheory.LatUniq.main_lat F κ a ha T (fun ξ hξ f f' hf => by
       rw [← hT, ← hT]
       have e := pure_shift f f' ξ (boxInd F κ a) (boxInd F κ a) hf (fun y => by
         simp only [Set.indicator_apply, SetLike.mem_coe, AddSubgroup.add_mem_cancel_right _ hξ])

@@ -18,7 +18,7 @@ import Development.AutomorphicSpectrum.Proofs.MetricProofs.FirstMinimumAndCuspWe
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncChartLocalNormalForm
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterBridgeB
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspVolumeMiddle
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentDataIntersectionBoundStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentDataIntersectionBound
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField Matrix Filter Topology
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi
@@ -102,7 +102,7 @@ theorem point_formula (Or : CptOrigin Y S₀ Dc Hd) {z : Sp ℂ ⟶ Or.𝔐.X} {
     (hfib : FibreLatVec Or.𝔐.t z R (fun i => x i.1 i.2) v) :
     phMu Hd w = Real.log (‖valAt Dc.y d.u w‖ * ∏ k, ‖w ⟨k, d.c k⟩‖ ^ Hd.aMu k) +
       ((Fintype.card (CMType H) : ℝ) * (((Dc.N - Dc.j : ℕ) : ℝ) * Real.log Real.pi) + R.logDet x) / 2 := by
-  obtain ⟨-, hP⟩ := GlobalTheory.T.component_data_intersection_bound hG E H D Xo l c Y II K J Ω W Dc Hd S₀ Or z w co
+  obtain ⟨-, hP⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.PhMuFree.phMu_small hG E H D Xo l c Y II K J Ω W Dc Hd S₀ Or z w co
   obtain ⟨-, hP2⟩ := hP d
   obtain ⟨-, -, hform⟩ := hP2 s hs
   let Γ : CMType H → Matrix (Fin (Dc.N - Dc.j)) (Fin (Dc.N - Dc.j)) ℂ := fun τ =>
@@ -244,7 +244,7 @@ theorem corrW_lower_near : Top.Given → ∀ (E : Type) [Field E] [NumberField E
   obtain ⟨δ₁, hδ₁, hlim⟩ := hlim ε hε
   obtain ⟨V, T, hV, hV0, hT, hT0, hVT⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.chart_torus_open K J II (CMType H) Ω W Dc a t₀ ht₀
   have hv0 : valAt Dc.y d.u w ≠ 0 :=
-    (((GlobalTheory.T.component_data_intersection_bound hG E H D Xo l c Y II K J Ω W Dc Hd S₀ Or z w hz).2 d).2 s hs).2.1
+    (((_root_.GlobalTheory.CompanionTheory.Ar.Cusp.PhMuFree.phMu_small hG E H D Xo l c Y II K J Ω W Dc Hd S₀ Or z w hz).2 d).2 s hs).2.1
   have c1 : Tendsto (torusSmul (fun k => (cw k)⁻¹)) (𝓝 w) (𝓝 ((Dc.chart a).γ t₀)) := by
     rw [hγ]
     refine Continuous.tendsto ?_ _

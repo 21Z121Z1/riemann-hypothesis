@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAmbOfIsArithVar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLinearFunctionalOfSymmetricMultiadditive
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasPointClosureDimBasicProjArithAmbient
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsArithHeightEqMixedHeightDiagonalStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsArithHeightEqMixedHeightDiagonal
 open CategoryTheory AlgebraicGeometry TopologicalSpace MvPolynomial
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
 open ReciprocityTheory.ChartRestriction.G.Out (nonzeroLocus)
@@ -21,7 +21,7 @@ theorem arFormExists_of_isMix : ArchInteg → (∀ (k : Type) [CommRing k] (Y : 
     (fun M e => hT.symm (D + 1) M e _ le_rfl hg)
     (fun A B M => hT.add D A B M _ le_rfl hg) ι L
   refine ⟨Φ, fun n => ?_, hΦ0⟩
-  obtain ⟨h, hh, hx⟩ := GlobalTheory.T.exists_arithHeight_eq_mixedHeight_diagonal hA k X p D hX T hT (comb L n)
+  obtain ⟨h, hh, hx⟩ := _root_.GlobalTheory.MixHtDiag.exists_isArithHeight hA k X p D hX T hT (comb L n)
   refine ⟨h, hh, ?_⟩
   rw [hx _ _ hg, ← Fin.prod_const (D + 1) (lin fun i => (n i : ℝ)), hΦ (fun _ => n)]
 

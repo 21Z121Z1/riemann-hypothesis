@@ -5,10 +5,10 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ActAApply
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsExtensionOfDense
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AdelicHermitianCharacterPairingProperties
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CompletedStandardAdelicLatticeSelfDualStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CompletedStandardAdelicLatticePropertiesStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsFiniteAdeleExtendedCharacterOfCurveStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AdmissibleAtOfIrreducibleTameStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.WeilOperatorRationalTranslateMemThetaFunctionsStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CompletedStandardAdelicLatticeProperties
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsFiniteAdeleExtendedCharacterOfCurve
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AdmissibleAtOfIrreducibleTame
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.WeilOperatorRationalTranslateMemThetaFunctions
 
 noncomputable section
 
@@ -66,12 +66,12 @@ theorem mul_nsmul_left {X : Type} [AddCommGroup X] (f : X → ℂ) (h0 : f 0 = 1
 
 theorem exists_isModel (D : D7) (hD : admG1 D) (cc : Ideal (𝓞 D.host.K)) (δ : ℂ) (hc : Crv D cc δ) (N N' : ℕ) :
     ∃ w γ WA, GlobalTheory.FinWeil.IsModel D cc δ N N' w γ WA := by
-  obtain ⟨ψ, hψ⟩ := GlobalTheory.T.exists_finiteAdeleExtendedCharacter_of_curve D hD cc δ hc
-  obtain ⟨w, hw, hwd⟩ := GlobalTheory.T.theta_point_additive_form D hD cc δ hc
+  obtain ⟨ψ, hψ⟩ := _root_.GlobalTheory.FinWeil.AdelicChar.exists_psi D hD cc δ hc
+  obtain ⟨w, hw, hwd⟩ := _root_.GlobalTheory.FinWeil.WdCocycle.wd_cocycle D hD cc δ hc
   obtain ⟨hinv, halt, hadj, hl, hr⟩ := _root_.GlobalTheory.FinWeil.gamA_alg D hD cc δ hc ψ hψ N N'
   have hsd := GlobalTheory.T.completedStandardAdelicLattice_selfDual D hD cc δ hc ψ hψ N N'
-  obtain ⟨hrat, -, hdense, hden, -, -⟩ := GlobalTheory.T.completedStandardAdelicLattice_properties D hD cc δ hc N N'
-  have htt := GlobalTheory.T.weilOperator_rationalTranslate_mem_thetaFunctions D hD cc δ hc N N'
+  obtain ⟨hrat, -, hdense, hden, -, -⟩ := _root_.GlobalTheory.CompletedLattice.completed_lattice D hD cc δ hc N N'
+  have htt := _root_.GlobalTheory.FinWeil.RatTransl.wd_mem_TT D hD cc δ hc N N'
   let W₀ : Matrix (Fin N') (Fin N) D.host.E → TTs D (tor0 D cc δ) N N' →ₗ[ℂ] TTs D (tor0 D cc δ) N N' := fun z =>
     { toFun := fun F => ⟨Wd D (tor0 D cc δ) (pt D (tor0 D cc δ) δ z) F, htt z F F.2⟩
       map_add' := fun F G => Subtype.ext (wd_add _ _ _)

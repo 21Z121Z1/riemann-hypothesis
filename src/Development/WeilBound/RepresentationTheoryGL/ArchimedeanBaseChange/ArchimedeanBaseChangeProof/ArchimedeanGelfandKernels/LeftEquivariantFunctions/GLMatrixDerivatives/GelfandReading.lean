@@ -1,5 +1,7 @@
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.LeftEquivariantFunctions.GLMatrixDerivatives.FrameDer
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PositiveConeStructureStatement
+import Mathlib
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PositiveConeStructure
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.LeftEquivariantFunctions.SymZeroCommFrame
 
 noncomputable section
 
@@ -62,7 +64,7 @@ theorem frameDer_of (hHb : HbFacts) : FrameDer := by
   intro n Z _ _ σ F hσ hσ2 hF hFk v hv x hx hxv X hX
   rw [show ((2 : ℂ) • (x * X * xᴴ)) = (2 : ℕ) • (x * X * xᴴ) by rw [two_smul, two_nsmul]]
   obtain ⟨-, -, hcoords, hcoords', -, -, -, -⟩ := hHb n
-  have hopen : IsOpen (cone n) := (GlobalTheory.T.positive_cone_structure n).1
+  have hopen : IsOpen (cone n) := (_root_.GlobalTheory.CompanionTheory.ConeHaar.coneSt n).1
   have hexp : ∀ t : ℝ, (x + t • (x * X)) * (x + t • (x * X))ᴴ =
       x * xᴴ + t • ((2 : ℕ) • (x * X * xᴴ)) + t ^ 2 • ((x * X) * (x * X)ᴴ) := by
     intro t

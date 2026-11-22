@@ -16,11 +16,11 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.B
 import Development.AbelianVarietyTheory.PublishedTheorems.SemiabelianTori.GeometricallyConnectedSplitTorusAff
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NumberFieldPointIntegralModel
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PrincipalHermitianFibre
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsAbelianPartExtensionStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsAbelianPartExtension
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieMetricHeightBound
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianPartLieSignature
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieSignatureNumberFieldStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspCorrespondenceBoundStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieSignatureNumberField
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspCorrespondenceBound
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptAwayFromPrimes
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValuesOfFrame
@@ -41,11 +41,11 @@ theorem integral_point_extends_compact : Top.Given → ∀ (E : Type) [Field E] 
   obtain ⟨h⟩ := _root_.GlobalTheory.CompanionTheory.Ar.MetricAny.exists_lieMetric 𝔐.X Ω K J y 𝔐.ξ inferInstance 𝔐.all 𝔐.tie 𝔐.t.G 𝔐.Li 𝔐.M
   obtain ⟨K₀, -, hQ⟩ := _root_.GlobalTheory.CompanionTheory.Ar.QuotUnif.main hG.2.2.2.2.1 E H D l Xo c Y S Ω K J y 𝔐 h hpq
   obtain ⟨z₀, hz₀⟩ := _root_.GlobalTheory.CompanionTheory.Ar.algebraicPoint_extends_to_integers 𝔐.X Ω K J y 𝔐.ξ inferInstance 𝔐.all 𝔐.tie L₀ w hw
-  obtain ⟨L₁, _, _, e₁, ⟨P₁⟩⟩ := GlobalTheory.T.exists_abelian_part_extension E H 𝔐.X 𝔐.t L₀ (spMap (algebraMap (𝓞 L₀) L₀) ≫ z₀)
+  obtain ⟨L₁, _, _, e₁, ⟨P₁⟩⟩ := _root_.GlobalTheory.CompanionTheory.Ar.abPart_exists E H 𝔐.X 𝔐.t L₀ (spMap (algebraMap (𝓞 L₀) L₀) ≫ z₀)
   obtain ⟨σ₁⟩ : Nonempty (L₁ →+* ℂ) := inferInstance
   obtain ⟨P₁c, _, mBc, _, _⟩ := _root_.GlobalTheory.CompanionTheory.Ar.AbPartFieldChange.exists_baseChange E H 𝔐.X 𝔐.t L₁ ℂ _ P₁ σ₁
   have hpr : IsPrincipal P₁.tB := (_root_.GlobalTheory.CompanionTheory.Ar.isPrincipal_iff_of_sabMap_field E H L₁ ℂ σ₁ P₁.tB P₁c.tB mBc).1 (hQ _ P₁c).1
-  obtain ⟨L, _, _, e₂, t', tK, ⟨m₁⟩, ⟨mP⟩⟩ := GlobalTheory.T.lie_signature_number_field hG.1.2.1 hG.1.1 E H L₁ P₁.tB hpr
+  obtain ⟨L, _, _, e₂, t', tK, ⟨m₁⟩, ⟨mP⟩⟩ := _root_.GlobalTheory.CompanionTheory.Ar.SabModel.exists_sab_model hG.1.2.1 hG.1.1 E H L₁ P₁.tB hpr
     (_root_.GlobalTheory.CompanionTheory.Ar.AbPartConst.lieMult_constant_along_cmType E H D l Xo c Y S Ω K J y 𝔐 L₁ _ P₁)
   let z : Sp (𝓞 L) ⟶ 𝔐.X := spMap (RingOfIntegers.mapRingHom (e₂.comp e₁)) ≫ z₀
   have hz : spMap (algebraMap (𝓞 L) L) ≫ z = spMap e₂ ≫ (spMap e₁ ≫ spMap (algebraMap (𝓞 L₀) L₀) ≫ z₀) := by
@@ -72,7 +72,7 @@ theorem integral_point_extends_compact : Top.Given → ∀ (E : Type) [Field E] 
     rw [← Category.id_comp (spMap (algebraMap (𝓞 L) L))]
     exact ⟨n''⟩
   obtain ⟨B, MB, hB⟩ := _root_.GlobalTheory.CompanionTheory.Ar.HodgeFibre.exists_hermitianBundle E H L t' P.tB m' hP
-  obtain ⟨σ, hlab, -, hbij, hinj, hcard, -⟩ := GlobalTheory.T.cusp_correspondence_bound E H D l Xo c Y S Ω K J y 𝔐 L
+  obtain ⟨σ, hlab, -, hbij, hinj, hcard, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.LabPt.exists_labVal E H D l Xo c Y S Ω K J y 𝔐 L
     (spMap (algebraMap (𝓞 L) L) ≫ z)
   obtain ⟨V, _, _, _, _, MV, A, rfl, hact, hΛ, hI, ⟨MB', hB', hf⟩, hrk⟩ :=
     Lin.exists_lin 𝔐.t z P t' m' hP B MB hB σ hbij hinj

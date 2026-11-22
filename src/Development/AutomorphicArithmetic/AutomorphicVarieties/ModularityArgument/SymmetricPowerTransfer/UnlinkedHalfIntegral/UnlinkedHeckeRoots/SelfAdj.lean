@@ -6,13 +6,13 @@ import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GlobalRankinSelbergBasicFacts
 import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.VerticalStrips.UnramifiedEulerProductIntegral
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CongruenceSubgroupCosetDecompositionStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeckeCosetRepresentativesStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeckeCosetRepresentatives
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FundamentalDomainDescription
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FundamentalDomainInvarianceOfDescriptionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FundamentalDomainInvarianceOfDescription
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FundamentalDomainIntegralCentralInvariance
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CentralCharacterIntegralProperties
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NewformLiftExistence
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NewformLiftConductorStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NewformLiftConductor
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NewformLiftLevelStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NewformLiftLevelCharacter
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NewformLiftLocalType
@@ -38,12 +38,12 @@ theorem selfAdj : SelfAdj := by
   obtain ⟨hF, hEig⟩ := hE
   obtain ⟨ω, hω⟩ := _root_.GlobalTheory.CompanionTheory.RankinSelbergQ.f0 hB N χ
   obtain ⟨hsign, φ, hL⟩ := GlobalTheory.T.newform_lift_level hB k N χ g.f g.a hF hEig.2.1 ω hω
-  have hOmL := GlobalTheory.T.newform_lift_conductor hB k N χ hχ hsign ω hω
-  have hHk := _root_.GlobalTheory.CompanionTheory.RankinHecke.hecke_types_of_lift hB GlobalTheory.T.hecke_coset_representatives GlobalTheory.T.congruence_subgroup_coset_decomposition (GlobalTheory.T.newform_lift_conductor hB) (GlobalTheory.T.newform_lift_level hB)
+  have hOmL := _root_.GlobalTheory.CompanionTheory.NewformLiftConductor.f0b hB k N χ hχ hsign ω hω
+  have hHk := _root_.GlobalTheory.CompanionTheory.RankinHecke.hecke_types_of_lift hB _root_.GlobalTheory.CompanionTheory.HeckeCosets.heckeSum_invariant GlobalTheory.T.congruence_subgroup_coset_decomposition (_root_.GlobalTheory.CompanionTheory.NewformLiftConductor.f0b hB) (GlobalTheory.T.newform_lift_level hB)
     (_root_.GlobalTheory.CompanionTheory.RankinSelberg.LiftLevel.lift_local_invariance hB) (_root_.GlobalTheory.CompanionTheory.RSq.f3a hB) k N hk χ hχ g.f g.a hF hEig ω φ hω hL
   have hW := _root_.GlobalTheory.CompanionTheory.RsWhittaker.whittaker_of_lift k N hk χ hχ g.f g.a hF hEig ω φ hω hL
   have hb := _root_.GlobalTheory.CompanionTheory.NewformLiftDecay.main hB k N hk χ hχ g.f g.a hF hEig ω φ hω hL
-  obtain ⟨μ, 𝓕, mK, 𝓓, hS⟩ := GlobalTheory.T.fundamental_domain_invariance_of_description _root_.GlobalTheory.CompanionTheory.RankinSelberg.IdeleDomain.exists_idele_fundamentalDomain
+  obtain ⟨μ, 𝓕, mK, 𝓓, hS⟩ := _root_.GlobalTheory.CompanionTheory.RSGlobal.setup_of_ideleDomain _root_.GlobalTheory.CompanionTheory.RankinSelberg.IdeleDomain.exists_idele_fundamentalDomain
   have hG1 := _root_.GlobalTheory.CompanionTheory.FundamentalDomainCentralCharacter.fundamental_domain_integral_central_vanishing _root_.GlobalTheory.CompanionTheory.RS.rankinSelberg_measure_facts
   obtain ⟨v, hv⟩ := hB.2.2.1 p hp
   have hnd : ¬pOf v ∣ N := by rwa [hv]

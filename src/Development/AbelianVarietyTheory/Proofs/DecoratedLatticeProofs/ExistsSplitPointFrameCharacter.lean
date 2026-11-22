@@ -2,9 +2,9 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsSumFrame
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsRingEquivPadicOfResidueCardUniformizer
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsPadicCoordinatesOfDegreeOneSplitPlace
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsGLEmbeddingUnitaryAdelicSplitPlaceBasisStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsGLEmbeddingUnitaryAdelicSplitPlaceBasis
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsAdelicTraceCharacterSplitSectionNeOne
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceCharacterConductorIntegersStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceCharacterConductorIntegers
 
 noncomputable section
 
@@ -46,12 +46,12 @@ theorem exists_splitPt_frame_char : ∀ (D : D7), (∀ (k : Type) [Field k] [Val
   · intro k _ _ _ _ p
     refine ⟨?_, ?_⟩
     · intro S n _ _ b b' h1 h2
-      obtain ⟨gl, hs, hm⟩ := GlobalTheory.T.exists_GL_embedding_unitaryAdelic_splitPlace_basis D k p S n b b' h1 h2
+      obtain ⟨gl, hs, hm⟩ := _root_.GlobalTheory.GlEmbed.exists_gl D k p S n b b' h1 h2
       exact ⟨⟨b, b', h1, h2, gl, hs, hm⟩, rfl⟩
     · intro ψ hψ
       obtain ⟨χ, hχ, hc⟩ := exists_char D k p ψ hψ
       obtain ⟨a, ha⟩ := _root_.GlobalTheory.FinPl.CharNontriv.exists_psiE_sec_ne_one D k p ψ hψ
-      refine ⟨χ, hχ, hc, ?_, fun hu => GlobalTheory.T.splitPlaceCharacter_conductor_integers D k p ψ χ hψ hχ hu⟩
+      refine ⟨χ, hχ, hc, ?_, fun hu => _root_.GlobalTheory.SplitCharCond.hasConductor_one D k p ψ χ hψ hχ hu⟩
       intro h1
       apply ha
       rw [← hχ a, h1]

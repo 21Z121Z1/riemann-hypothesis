@@ -3,14 +3,14 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MultCellsAmo
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsBaryStageStart
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOfToRealRel
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsSmoothAdmissibleFanOfCellMultOneCMField
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BalancedFormCellMultiplicityPosStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BalancedFormCellMultiplicityPos
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLinFormCutFaceOfCellInCone
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLinFormCutFaceOfFaceOfCone
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InRealConeGeneratorsOfLinFormEqZeroStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqSubfamilyOfFaceSimplicialConePrimitive
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NatCardTorsionQuotSpanDvdOfRangeSubset
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LinearIndependentConsBalancedFormOfCoordNeZero
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CellMultiplicityPositiveConeStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CellMultiplicityPositiveCone
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsRescalePrimitiveLinearIndependentCell
 open NumberField ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.Toroidal GlobalTheory.LocM GlobalTheory.TorRef GlobalTheory.PolFan
 
@@ -181,7 +181,7 @@ theorem GlobalTheory.PolFan.cellMult_lt_of_star_new : ∀ (E : Type) [Field E] [
   set ρ's : Fin (m₀ - 1 + 1) → balForms H.bar X := Fin.cons βs (fun k => δs (eJ k)) with hρ'sdef
   have hliρ' : LinearIndependent ℤ ρ's := _root_.GlobalTheory.PolFan.linearIndependent_cons_of_coord_ne_zero H.bar δs βs c j eJ hliδs hcβ hcj.ne' (fun hh => (heJ j).1 hh rfl)
   have hmultρ' : (cellMult H.bar ρ's : ℝ) = c j * cellMult H.bar δs :=
-    GlobalTheory.T.cell_multiplicity_positive_cone H.bar δs βs c j eJ hliδs hcβ hcj heJ (GlobalTheory.T.balancedFormCellMultiplicity_pos H.bar δs)
+    _root_.GlobalTheory.PolFan.ConsMult.cellMult_cons_eq H.bar δs βs c j eJ hliδs hcβ hcj heJ (_root_.GlobalTheory.PolFan.cellMult_pos H.bar δs)
   have hrange : Set.range (fun i => (⟨γ' i, hγ'.mem i⟩ : balForms H.bar X)) ⊆ Set.range ρ's := by
     rintro _ ⟨k, rfl⟩
     have e := hs' k
@@ -196,8 +196,8 @@ theorem GlobalTheory.PolFan.cellMult_lt_of_star_new : ∀ (E : Type) [Field E] [
       rw [e, hl, hρs, hr]
   have hdvd : cellMult H.bar (fun i => (⟨γ' i, hγ'.mem i⟩ : balForms H.bar X)) ∣ cellMult H.bar ρ's :=
     _root_.GlobalTheory.natCard_torsion_quot_span_dvd_of_range_subset (balForms H.bar X) ρ's _ hliρ' hrange
-  have hle := Nat.le_of_dvd (GlobalTheory.T.balancedFormCellMultiplicity_pos H.bar ρ's) hdvd
-  have hδpos := GlobalTheory.T.balancedFormCellMultiplicity_pos H.bar δs
+  have hle := Nat.le_of_dvd (_root_.GlobalTheory.PolFan.cellMult_pos H.bar ρ's) hdvd
+  have hδpos := _root_.GlobalTheory.PolFan.cellMult_pos H.bar δs
   have hlt : (cellMult H.bar ρ's : ℝ) < cellMult H.bar δs := by
     rw [hmultρ']; exact mul_lt_of_lt_one_left (by exact_mod_cast hδpos) (hclt j)
   have hlt' : cellMult H.bar ρ's < cellMult H.bar δs := by exact_mod_cast hlt

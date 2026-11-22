@@ -6,10 +6,10 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RationalPointsIn
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLatticeOfAdelicPoint
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulVSubRight
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaSpanRationalTranslatesVacuum
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OmEqPullOfVacuumStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OmEqPullOfVacuum
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsNormOneScalarAvoidingMatrixEigenvalues
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.WeilOperatorVacuumExactConstantEvenRankStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaPullbackFirstGroupRationalPointEqSmulStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.WeilOperatorVacuumExactConstantEvenRank
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaPullbackFirstGroupRationalPointEqSmul
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaPullbackSecondGroupRationalPointEqDetSmul
 open NumberField Classical Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.TaylorLogMetric Formalism.MainNotions.StandardLatticesGL3 GlobalTheory.NormSum
 open scoped BigOperators
@@ -133,10 +133,10 @@ theorem isPull_row (hc : Crv D cc δ) (hN : Even N) (hN' : Even N')
     obtain ⟨Lt, hLt, -⟩ := GlobalTheory.NormSum.exists_lattice_of_adelic_point D N
     have hu := det_norm ((GlobalTheory.NormSum.mem_ratG_intG D N).2.2.2.1 g γ h)
     obtain ⟨b, hb⟩ := exists_root D _ hu
-    refine GlobalTheory.T.om_eq_mul_pull_of_om_eq_on_vacuum D cc δ hc N N' e0 he (_root_.GlobalTheory.ThetaSpan.theta_span D cc δ hc N N' e0 he W.nz) W g 1 γ 1 _ h
+    refine _root_.GlobalTheory.NormSum.RatExtend.om_eq_pull_of_vacuum D cc δ hc N N' e0 he (_root_.GlobalTheory.ThetaSpan.theta_span D cc δ hc N N' e0 he W.nz) W g 1 γ 1 _ h
       (isRat_one D N') ?_
-    rw [GlobalTheory.T.weilOperator_vacuum_exact_constant_evenRank D cc δ hc N N' hN hN' e0 he W g 1 _ 1 (Lt g) (stdL D N') (det_root h b hb) (by simp)
-      (hLt g).1 (moves_one D N'), GlobalTheory.T.thetaPullback_firstGroup_rationalPoint_eq_smul D cc δ hc N N' hN hN' e0 he g γ (Lt g) h hdet (hLt g).1]
+    rw [_root_.GlobalTheory.VacuumExact.vacuum_exact D cc δ hc N N' hN hN' e0 he W g 1 _ 1 (Lt g) (stdL D N') (det_root h b hb) (by simp)
+      (hLt g).1 (moves_one D N'), _root_.GlobalTheory.RatRow.pull_eq_smul_iop D cc δ hc N N' hN hN' e0 he g γ (Lt g) h hdet (hLt g).1]
     funext z
     rw [map_one, one_zpow, one_mul, char_value W.chV' W.ep' γ.det b hb (fun τ => a τ + ((N' / 2 : ℕ) : ℤ))
       (fun τ => by have := ha τ; obtain ⟨k, hk⟩ := hN'; omega), Pi.smul_apply, smul_eq_mul, ← mul_assoc,
@@ -158,9 +158,9 @@ theorem isPull_col (hc : Crv D cc δ) (hN : Even N) (hN' : Even N')
     obtain ⟨Lt, hLt, -⟩ := GlobalTheory.NormSum.exists_lattice_of_adelic_point D N'
     have hu := det_norm ((GlobalTheory.NormSum.mem_ratG_intG D N').2.2.2.1 g γ h)
     obtain ⟨b, hb⟩ := exists_root D _ hu
-    refine GlobalTheory.T.om_eq_mul_pull_of_om_eq_on_vacuum D cc δ hc N N' e0 he (_root_.GlobalTheory.ThetaSpan.theta_span D cc δ hc N N' e0 he W.nz) W 1 g 1 γ _
+    refine _root_.GlobalTheory.NormSum.RatExtend.om_eq_pull_of_vacuum D cc δ hc N N' e0 he (_root_.GlobalTheory.ThetaSpan.theta_span D cc δ hc N N' e0 he W.nz) W 1 g 1 γ _
       (isRat_one D N) h ?_
-    rw [GlobalTheory.T.weilOperator_vacuum_exact_constant_evenRank D cc δ hc N N' hN hN' e0 he W 1 g 1 _ (stdL D N) (Lt g) (by simp) (det_root h b hb)
+    rw [_root_.GlobalTheory.VacuumExact.vacuum_exact D cc δ hc N N' hN hN' e0 he W 1 g 1 _ (stdL D N) (Lt g) (by simp) (det_root h b hb)
       (moves_one D N) (hLt g).1, _root_.GlobalTheory.RatEqui.pull_right_eq_det_smul D cc δ hc N N' hN hN' e0 he g γ (Lt g) h hdet (hLt g).1]
     funext z
     rw [map_one, one_zpow, mul_one, char_value W.chV W.ep γ.det b hb (fun τ => a τ - ((N / 2 : ℕ) : ℤ))

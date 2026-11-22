@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsStratHom
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BhattScholzeIntegral
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ClosedDiscGaugeCompletionBasicPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ClosedDiscGaugeCompletionBasicProperties
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.WeaklyAdmissibleFiltrations TensorProduct PowerSeries GlobalTheory.Prism GlobalTheory.BKReal GlobalTheory.Per GlobalTheory.BSP
 open scoped Formalism.Per NNReal
 
@@ -30,7 +30,7 @@ theorem l_mul_inv : (l : Pk) * sI = 1 := by
 omit [CharP k l] [PerfectRing k l] in
 
 theorem norm_l_mul (y : Pk) : ‖(l : Pk) * y‖ = ‖y‖ / l := by
-  have h := (GlobalTheory.T.closedDiscGaugeCompletion_basic_properties l (WittVector l k) 0 1).2.1 (ofPre l 0 1 y)
+  have h := (_root_.GlobalTheory.BSP.DiscBasic.disc_basic l (WittVector l k) 0 1).2.1 (ofPre l 0 1 y)
   rw [← map_natCast (ofPre l (0 : WittVector l k) 1) l, ← map_mul, norm_ofPre, norm_ofPre] at h
   exact h
 

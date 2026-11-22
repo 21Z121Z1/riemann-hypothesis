@@ -1,5 +1,6 @@
 import Development.AbelianVarietyTheory.Definitions.Divisors.BsLApply
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BearsFlagUnitriangularIffMemCellStatement
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BearsFlagUnitriangularIffMemCell
 open CategoryTheory AlgebraicGeometry MvPolynomial MeasureTheory Filter Topology
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
 open ReciprocityTheory.L2DbarEstimates (V)
@@ -24,7 +25,7 @@ theorem exists_inCell_genericPoint : ∀ (F : Type) [Field F] (X Y : Var F) (ι 
     have h1 := congrArg (fun g : Sp X.Fn ⟶ X.X => g (IsLocalRing.closedPoint X.Fn)) hpf
     simp only [Scheme.Hom.comp_apply] at h1
     exact h1.trans hcp
-  obtain ⟨u, hu, -⟩ := (GlobalTheory.T.bearsFlag_unitriangular_iff_mem_cell F X Y ι m E E' φ f hR A X.Fn p (hfp ▸ hgX) 0).1 hpb
+  obtain ⟨u, hu, -⟩ := (_root_.GlobalTheory.FlagCell2.BearsCell.bears_iff F X Y ι m E E' φ f hR A X.Fn p (hfp ▸ hgX) 0).1 hpb
   refine ⟨u, Fr.mem_of_specializes (hfp ▸ hgX) ((genericPoint_specializes _).map f.continuous), Fr.mem_genericPoint hu⟩
 
 end GlobalTheory.FlagCell2.GenericCell

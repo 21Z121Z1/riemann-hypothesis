@@ -2,11 +2,11 @@ import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.MultiplicationKernelIdentity
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PreEig
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelLengthFiltrationInterKerCofactorLinearFactor
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HerbrandDeterminantIdentityOfRelativeLengthStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HerbrandDeterminantIdentityOfRelativeLength
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HerbrandLengthIdentitiesOfRelativeLength
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasLatticeRelativeLengthMapIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdjoinRootProdLinearFactorsLatticeFacts
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteEigenFiltrationPiecesAddValIntStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteEigenFiltrationPiecesAddValInt
 
 open GlobalTheory.IndefiniteRowSideFullHecke.MultiplicationKernelIdentity GlobalTheory.HermitianPreEigenvalues Polynomial Module
 
@@ -40,7 +40,7 @@ theorem core : ∀ (C : Type) [Field C] (v : AddValuation C (WithTop ℝ)) (S : 
   obtain ⟨r, hr, hR⟩ := _root_.GlobalTheory.HerbCore.relLen_lin_filKer C v S a ha N Fil hF τ
   obtain ⟨hd, hcP, hkerc, hsat, hAX, hHc, hcH, hprojX, hHX, hFX, htf, g, hg⟩ :=
     _root_.GlobalTheory.herbrand_lattice_facts C v S a ha N Fil hF τ
-  obtain ⟨fF, fX, fK, fH, -, -, -⟩ := GlobalTheory.T.finite_eigenFiltration_pieces_addValInt C v S a ha N Fil hF τ
+  obtain ⟨fF, fX, fK, fH, -, -, -⟩ := _root_.GlobalTheory.HerbFin.finite_main C v S a ha N Fil hF τ
   have tfO : ∀ (c : Int0 v) (x : Fin N → Int0 v), c ≠ 0 → c • x = 0 → x = 0 := by
     intro c x hc h
     funext i
@@ -79,7 +79,7 @@ theorem core : ∀ (C : Type) [Field C] (v : AddValuation C (WithTop ℝ)) (S : 
 theorem herbrandDet : HerbrandDet := by
   intro C _ v S _ _ a ha N Fil hF τ
   obtain ⟨r, hr, hR⟩ := core C v S a ha N Fil hF τ
-  exact ⟨GlobalTheory.T.herbrand_determinant_identity_of_relativeLength C v S a ha N Fil hF τ r hr hR, kerId C v S a ha N Fil hF τ,
+  exact ⟨_root_.GlobalTheory.HerbDet.detIdentity_of_relLen C v S a ha N Fil hF τ r hr hR, kerId C v S a ha N Fil hF τ,
     _root_.GlobalTheory.HerbLen.lengthIdentities_of_relLen C v S a ha N Fil hF τ r hr hR⟩
 
 end GlobalTheory.HerbrandAlg

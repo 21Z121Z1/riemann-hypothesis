@@ -4,7 +4,7 @@ import Formalism.LocalToGlobal.ProjectiveLattices.UnFree
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.PermutesPeriodSpacesIdOfFixesCmCurveTorsion
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsComplexLinearOfPureTypes
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.MarkingAtConjugateSplitPointTransportedTwisted
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsPeriodSpacePermOfComplexAutStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsPeriodSpacePermOfComplexAut
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsSplitPeriodAnyLevel
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
@@ -53,7 +53,7 @@ theorem conj_point_eq_of_isSplit {E : Type} [Field E] [NumberField E] [IsCMField
 
 theorem permutes_id_of_fixesCurve : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host E) (D : Datum H) (l : Level H) (Xo : Moduli D l) (σ : KA l →+* ℂ) (g : ℕ) (ty : Fin g → (E →+* ℂ)) (F : FamilyUnif Xo σ ty), 1 ≤ D.p + D.q → σ (baseKA l).ρ = H.rt0 → IsTypeFn H D.p D.q ty → (∀ x : KA l, σ x = (x : ℂ)) → (D.p = 0 ∨ D.q = 0 ∨ (3 ≤ D.p + D.q ∧ (∃ D₁ : Datum H, D₁.p = 1 ∧ D₁.q = 0))) → ∀ τ : ℂ ≃+* ℂ, (∀ x : KA l, τ (x : ℂ) = x) → FixesCurve H τ l.M' → ConjugationPermutesPeriods F τ id := by
   intro E _ _ _ H D l Xo σ g ty F hpq hσ hty hσx hsig τ hτ hC
-  obtain ⟨π, hπ⟩ := GlobalTheory.T.exists_periodSpace_perm_of_complexAut E H D l Xo σ g ty F hpq hσ hty hσx τ hτ
+  obtain ⟨π, hπ⟩ := _root_.GlobalTheory.ConjPermutesAnyLevel.exists_perm E H D l Xo σ g ty F hpq hσ hty hσx τ hτ
   have hτσ : (τ : ℂ →+* ℂ).comp σ = σ := RingHom.ext fun x => by
     show τ (σ x) = σ x
     rw [hσx, hτ]

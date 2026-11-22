@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnimodMod
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothConeFaceOfInteriorCommonPointStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothConeFaceOfInteriorCommonPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsometryEqReflOfCongrModGeThree
 
 open IsLocalRing GlobalTheory.Toroidal GlobalTheory.LocM GlobalTheory.PolFan GlobalTheory.Poinc
@@ -40,7 +40,7 @@ theorem leadingTerm_unique : ∀ (O : Type) [CommRing O] (bar : O → O) (φ : I
       rw [Finset.mul_sum]; exact Finset.sum_congr rfl fun j _ => by push_cast; ring
     rw [e1, e2, ← h1, ← h2]; ring
   have hγe : IsCone bar φ fun j => pull e.toLinearMap (γ j) := hγ.pull_equiv e
-  choose σ hσ using GlobalTheory.T.smoothCone_face_of_interior_common_point O bar φ X hF r r _ γ hγe hγ (fun j => k' * c j) (fun j => k * c' j)
+  choose σ hσ using _root_.GlobalTheory.Poinc.intCone_face O bar φ X hF r r _ γ hγe hγ (fun j => k' * c j) (fun j => k * c' j)
     (fun j => Nat.mul_pos hk' (hc j)) hsum
   have hσinj : Function.Injective σ := fun i j hij => hγe.injective (by simp only [hσ, hij])
   let σe := Equiv.ofBijective σ (Finite.injective_iff_bijective.1 hσinj)

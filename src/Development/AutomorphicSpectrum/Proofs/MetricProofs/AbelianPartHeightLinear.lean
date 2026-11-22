@@ -1,6 +1,7 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsAdapted
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.NormalizedDegreeOrthogonalSumStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.NormalizedDegreeOrthogonalSum
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsOrthFull
 import GroundTheory.HeightsAndTheta.Heights.Slopes.PCanonicalFiltration
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.DegreeTopEqArithDegree
 import GroundTheory.HeightsAndTheta.Heights.CountingLowerBound.PInteriorDichotomy

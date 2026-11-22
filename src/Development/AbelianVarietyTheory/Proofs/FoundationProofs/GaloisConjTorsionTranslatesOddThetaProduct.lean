@@ -7,8 +7,8 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OddThetaFunction
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InducedTypeThetaGenusOnePermutes
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.WeilPairingGaloisEquivariantCmTorsion
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ConjugateCurveDatumLatticeIsCurveLattice
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalStarComplexMultiplicationPointsStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaloisConjTaylorThetaTranslateStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalStarComplexMultiplicationPoints
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaloisConjTaylorThetaTranslate
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmQuadraticPhaseEquivariantEmbeddings
 
 open NumberField Classical Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.TaylorLogMetric Formalism.MainNotions.StandardLatticesGL3 GlobalTheory.NormSum
@@ -128,7 +128,7 @@ theorem exists_adp (hc : Crv D cc δ) (hK : FixK D ⊤ (topHom s)) {t : ℂ} {m 
     (ht : (m : ℂ) * t ∈ lamOf D cc δ) {n : ℕ} (hn : 0 < n) :
     ∃ t', Adp1 ⊤ (topHom s) (lamOf D cc δ) n t t' := by
   have hn' : (n : ℂ) ≠ 0 := by exact_mod_cast hn.ne'
-  obtain ⟨u, hu⟩ := (GlobalTheory.T.galStar_complexMultiplication_points D cc δ hc ⊤ _ hK trivial trivial).1 (t / n)
+  obtain ⟨u, hu⟩ := (_root_.GlobalTheory.ConjPoint.galStar_holds D cc δ hc ⊤ _ hK trivial trivial).1 (t / n)
     ⟨m * n, by positivity, by
       rw [show ((m * n : ℕ) : ℂ) * (t / n) = m * t by push_cast; field_simp]; exact ht⟩
     (Or.inr ⟨trivial, trivial⟩)
@@ -138,7 +138,7 @@ theorem adp_add (hc : Crv D cc δ) (hK : FixK D ⊤ (topHom s)) {n : ℕ} {x x' 
     (hx : Adp1 ⊤ (topHom s) (lamOf D cc δ) n x x') (ht : Adp1 ⊤ (topHom s) (lamOf D cc δ) n t t') :
     Adp1 ⊤ (topHom s) (lamOf D cc δ) n (x + t) (x' + t') := by
   rw [Adp1, add_div, add_div]
-  exact (GlobalTheory.T.galStar_complexMultiplication_points D cc δ hc ⊤ _ hK trivial trivial).2.2.2.1 _ _ _ _ hx ht
+  exact (_root_.GlobalTheory.ConjPoint.galStar_holds D cc δ hc ⊤ _ hK trivial trivial).2.2.2.1 _ _ _ _ hx ht
 
 theorem adp_half (hc : Crv D cc δ) (hK : FixK D ⊤ (topHom s)) {n : ℕ} {x x' : ℂ}
     (hx : Adp1 ⊤ (topHom s) (lamOf D cc δ) (2 * n) x x') :
@@ -153,7 +153,7 @@ theorem adp_mem (hc : Crv D cc δ) (hK : FixK D ⊤ (topHom s)) {n m : ℕ} (hn 
     (hx : Adp1 ⊤ (topHom s) (lamOf D cc δ) n x x') (hm : (m : ℂ) * x ∈ lamOf D cc δ) :
     (m : ℂ) * x' ∈ lamConj ⊤ (topHom s) (lamOf D cc δ) := by
   have hn' : (n : ℂ) ≠ 0 := by exact_mod_cast hn.ne'
-  have h := (GlobalTheory.T.galStar_complexMultiplication_points D cc δ hc ⊤ _ hK trivial trivial).2.2.2.2.2.1 (m * n) _ _ hx
+  have h := (_root_.GlobalTheory.ConjPoint.galStar_holds D cc δ hc ⊤ _ hK trivial trivial).2.2.2.2.2.1 (m * n) _ _ hx
   have e : ∀ y : ℂ, ((m * n : ℕ) : ℂ) * (y / n) = m * y := fun y => by
     push_cast; field_simp
   rw [e, e] at h
@@ -178,7 +178,7 @@ theorem coef_translate (hc : Crv D cc δ) (hK : FixK D ⊤ (topHom s)) {m : ℕ}
       coef1 (U1 (lamConj ⊤ (topHom s) (lamOf D cc δ)) t'
         (sgStar (lamConj ⊤ (topHom s) (lamOf D cc δ)))) n := by
   rw [← cj_topHom]
-  refine GlobalTheory.T.galois_conj_taylor_thetaTranslate D cc δ hc ⊤ _ hK trivial trivial t t' (2 * m) (by positivity) ?_ ha
+  refine _root_.GlobalTheory.JetConj.galois_translate_sgStar D cc δ hc ⊤ _ hK trivial trivial t t' (2 * m) (by positivity) ?_ ha
     (fun _ => trivial) n
   rwa [show ((2 * m : ℕ) : ℂ) * (t / 2) = m * t by push_cast; ring]
 
@@ -191,7 +191,7 @@ theorem coef_translate₂ (hc : Crv D cc δ) (hK : FixK D ⊤ (topHom s)) {m : �
         (sgStar (lamConj ⊤ (topHom s) (lamOf D cc δ))))) n := by
   have hm' : (m : ℂ) ≠ 0 := by exact_mod_cast hm.ne'
   obtain ⟨y, hy⟩ := exists_adp hc hK hm hx (n := 2 * (2 * m)) (by positivity)
-  have hμ := ((GlobalTheory.T.galStar_complexMultiplication_points D cc δ hc ⊤ _ hK trivial trivial).2.1 _ _ _ (adp_half hc hK hy)).1 hxa
+  have hμ := ((_root_.GlobalTheory.ConjPoint.galStar_holds D cc δ hc ⊤ _ hK trivial trivial).2.1 _ _ _ (adp_half hc hK hy)).1 hxa
   have hsh := (sgStar_conj_law hc hK).2.doubleTranslate_shift_lattice_mod_two_mul (adp_mem hc hK (by positivity) hxa hx)
     (adp_mem hc hK (by positivity) ha ht) hμ
   rw [show x' + 2 * m * (y / ((2 * m : ℕ) : ℂ) - x' / ((2 * m : ℕ) : ℂ)) = y by

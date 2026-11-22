@@ -4,7 +4,7 @@ import Formalism.LocalRingCardinality.DataExtra
 import Formalism.LocalRingCardinality.DataTies
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqTopOfTranslates
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundedHolomorphicFormEqMultiplicitySpaceValueStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundedHolomorphicFormEqMultiplicitySpaceValue
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCuspFunOfTransvectionConstantTermsZero
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsSmoothVector
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaIntegrandIntegrable
@@ -17,16 +17,16 @@ import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Vector
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocallyCompactSecondCountableBorelCountable
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HolomorphicDiscreteSeriesLowestKTypeSmoothIrredu
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BoundedOfSmoothCuspidalUniformModerate
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HolomorphicTypeAtExtremalOfKEquivariantLoweringKStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HolomorphicTypeAtExtremalOfKEquivariantLoweringK
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DefiniteThetaLiftContinuousInvariantHasDerivAt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ThetaLiftDefiniteSmoothModerateGrowthAnnihilated
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ThetaLiftDefiniteConstantTermEqZero
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LowestKTypeValuesKilledByLoweringPartStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LowestKTypeValuesKilledByLoweringPart
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FormsModelHolomorphicIntegralExtremalWeight
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FockVectorMixedLaplacianKilledLoweringKilled
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MixedLaplacianKillsProductOfMinorsStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeilFiniteVectorFixedPrincipalLevelCoeffSpaceStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FockVectorsKilledHeisenbergAverageIsotropicStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MixedLaplacianKillsProductOfMinors
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeilFiniteVectorFixedPrincipalLevelCoeffSpace
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FockVectorsKilledHeisenbergAverageIsotropic
 
 noncomputable section
 
@@ -97,9 +97,9 @@ theorem exists_extension (hP : GlobalTheory.Published.CuspRapidDecay) {θ : InfF
     have hμ : (Measure.haar : Measure (GA D V)).IsHaarMeasure := inferInstance
     obtain ⟨hr, 𝓕, h𝓕⟩ := GlobalTheory.Mem.AdelicGroupFund.rightInvariant_and_exists_fundamentalDomain D V _ hμ
     exact ⟨_, 𝓕, hμ, hr, h𝓕, (GlobalTheory.Mem.QuotVol.quot_volume_ne_zero_ne_top D V _ 𝓕 ⟨hμ, h𝓕⟩).2⟩
-  obtain ⟨T, hT, hTe⟩ := GlobalTheory.T.boundedHolomorphicForm_eq_multiplicitySpace_value D θ V S M w v hθ hM hw hv hfin J χ (U e) hJ
+  obtain ⟨T, hT, hTe⟩ := _root_.GlobalTheory.BackForm.exists_multMap D θ V S M w v hθ hM hw hv hfin J χ (U e) hJ
     ⟨ha e, _root_.GlobalTheory.CuspDecay.bounded_of_smooth_unifModGrowth hP D θ V hθ _ (ha e) (hs e) (hg e) (_root_.GlobalTheory.TransvCusp.isCuspFun_of_zCusp D θ V hθ _ (ha e) (hz e)), hl e,
-      GlobalTheory.T.holomorphicType_at_extremal_of_kEquivariant_loweringKilled D θ V S M w hθ hM hw h1 h2 U hs hk hh e hv⟩ (hz e)
+      _root_.GlobalTheory.KMapHol.holAd_of_kEquiv D θ V S M w hθ hM hw h1 h2 U hs hk hh e hv⟩ (hz e)
   exact ⟨T, hT, restrictsTo_of_eq h1 h2 hT hk e he hTe⟩
 
 open Classical in
@@ -156,7 +156,7 @@ theorem exists_member (hP : GlobalTheory.Published.CuspRapidDecay) {ψ : AddChar
       funext g
       simp only [hU, lift, rTr, hmul, LinearMap.comp_apply, hio.2.1 τ k hk v u hu])
     fun τ Z hZ v => (hs v).2.2 τ Z fun x h =>
-      GlobalTheory.T.lowestKType_values_killed_by_loweringPart D ψ S T χS χT om hom θ hθ Sp M h1 h2 c hc pt hpt Δ io hio hΔ τ Z hZ v x h
+      _root_.GlobalTheory.DefLift.LowerKill.values_killed D ψ S T χS χT om hom θ hθ Sp M h1 h2 c hc pt hpt Δ io hio hΔ τ Z hZ v x h
 
 theorem level_open (V : HSp D) (β : GL (Fin V.rank) (Lev.EAf D)) (L : LevDat D.host.E ℂ V.rank) :
     ∃ U : Subgroup (GA D V), IsOpen (U : Set (GA D V)) ∧ ∀ k ∈ U, k ∈ GfC V → k ∈ levS V β L := by
@@ -201,14 +201,14 @@ theorem firesAt (hP : GlobalTheory.Published.CuspRapidDecay) (R : RealDat D A Ks
   have hΔ := fun τ => _root_.GlobalTheory.FockKill.rderC_theta_eq_zero D R.ψ (Vc D i) (Wc D i) _ _ (R.ωP i t) (hω i t) R.θ hm.inf (D.sp.V_sig _) (D.sp.W_sig _)
     (R.BV i) (hm.BV i) _ (R.MW i (sg0 D A)) (fun τ => ((Wc D i).sig (tauE D τ)).1) (hm.order i) (R.vP i t) (hth i t)
     (GlobalTheory.DatumFock.isFockVacAt_thPVec _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ (hv i t) (hth i t)) (RealDat.Delta i) τ
-    (GlobalTheory.T.mixed_laplacian_kills_product_of_minors D _ _ _ _ _ _ hpq τ)
+    (_root_.GlobalTheory.MinorHarmonic.laplacian_delta D _ _ _ _ _ _ hpq τ)
   have key := exists_member hP (hω i t) hm.inf hpos hM hw (hm.cV i)
     (pureTensorO R.ψ R.θ (Vc D i) (Wc D i) (fun _ => 1) (cart (R.MW i (sg0 D A))) (R.BV i) (onb (R.MW i (sg0 D A)))
       (R.vP i t)) (hp i t) (hio i t) hΔ (J := levS _ (R.βW i) (R.datWp i R.triv)) (fun _ hk => hk.1)
     (level_open _ _ _) (fun k hk P => by
       rw [GlobalTheory.OrientedHeis.om_fin_pureTensorO R.ψ _ _ _ _ _ (hω i t) R.θ hm.inf 1 (one_mem _) k hk.1 _ _ _ _ _ P (hth i t),
-        GlobalTheory.T.weilFiniteVector_fixed_principalLevel_coeffSpace D G Pl0 T A Ks R h0 hω hv hth i t k hk])
-    (GlobalTheory.IndefiniteRowSideFullHecke.VectorLevelCharacters.principalLevelCharacter_eq_one R i) (GlobalTheory.T.fock_vectors_killed_heisenberg_average_isotropic D G Pl0 T A Ks R h0 hm.inf hω hv hp i t)
+        _root_.GlobalTheory.DefLift.Level.om_level_vP D G Pl0 T A Ks R h0 hω hv hth i t k hk])
+    (GlobalTheory.IndefiniteRowSideFullHecke.VectorLevelCharacters.principalLevelCharacter_eq_one R i) (_root_.GlobalTheory.ThetaSupport.sum_heisO_along_eq_zero D G Pl0 T A Ks R h0 hm.inf hω hv hp i t)
     (GlobalTheory.ThetaIntegrand.ext_continuous (R.cV i) (hm.cV i) _ _ hx) (GlobalTheory.ThetaIntegrand.ext_invariant (R.cV i) hx)
     (hm.νV i t).1.1 (hm.νV i t).2
   obtain ⟨Θ, hΘ, hΘv⟩ := key

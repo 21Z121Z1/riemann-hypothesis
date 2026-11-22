@@ -8,8 +8,15 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelValueLift
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsCompactSphere
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SemiabelianFiniteCoverTorusStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorusInjectiveOnOpenStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsCocharacterLieModelStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorusInjectiveOnOpen
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.SlopeBoundSt
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsCocharacterLieModel
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CharValMultiplicative
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCocharLie
@@ -142,7 +149,7 @@ theorem gram_bound (X : Scheme.{0}) (Ω : Type) [Field Ω] (K : Type) [Fintype K
         (star w ⬝ᵥ (RootHt.gramAt h zX v *ᵥ w)).re ≤ C * ∑ a, ‖w a‖ ^ 2 := by
   set ρ : Z' ⟶ X := f ≫ XQ.fst X with hρ
   have hM : ∀ zc : Sp ℂ ⟶ Z', ∃ Mz : LieModel (splitTorus Z' Xc) zc (Xc →+ ℂ), IsCocharLie Mz :=
-    fun zc => GlobalTheory.T.exists_cocharacter_lie_model Z' Xc ℂ zc
+    fun zc => _root_.GlobalTheory.CompanionTheory.Ar.TorusLie.exists_lieModel_splitTorus Z' Xc ℂ zc
   choose Mz hMz using hM
   have hv : ∀ (zc : Sp ℂ ⟶ Z') (Mz' : LieModel (splitTorus Z' Xc) zc (Xc →+ ℂ)) (a : Fin r),
       ∃ v : epsAt (zc ≫ ρ) ⟶ G, v.left = (Mz'.pt ((Int.castAddHom ℂ).comp (β a)) ≫ u).left ≫ Φ := by
@@ -228,7 +235,7 @@ theorem stratum_good : GlobalTheory.Published.SemiAbelianHomExtension → ∀ (X
     obtain ⟨p, hp⟩ := hU
     obtain ⟨q, rfl⟩ := hπs.surj p
     exact ⟨q, hp⟩
-  have hinj0 := GlobalTheory.T.torus_injective_on_open Z' G' Xc u (π ⁻¹ᵁ U) hU' (fun k _ x hx A _ g t ht => (hpt k x hx).1 A g t ht)
+  have hinj0 := _root_.GlobalTheory.CompanionTheory.Ar.StratLie.lie_injective Z' G' Xc u (π ⁻¹ᵁ U) hU' (fun k _ x hx A _ g t ht => (hpt k x hx).1 A g t ht)
   obtain ⟨C, hC, hb⟩ := gram_bound X Ω K J y ξ hall hT G Li M h Z' f hff G' _ hP Xc u
     (fun zc Mz hMz δ hδ => hinj0 ℂ zc Mz hMz δ hδ) r β
   refine ⟨U, C, hU, hC, ?_⟩
@@ -264,7 +271,7 @@ theorem stratum_good : GlobalTheory.Published.SemiAbelianHomExtension → ∀ (X
     show (spMap σ' ≫ x) ≫ f ≫ XQ.fst X = spMap c ≫ z
     rw [CategoryTheory.Category.assoc, hxρ, ← e1]
     simp only [CategoryTheory.Category.assoc]
-  obtain ⟨Mz, hMz⟩ := GlobalTheory.T.exists_cocharacter_lie_model Z' Xc ℂ zc
+  obtain ⟨Mz, hMz⟩ := _root_.GlobalTheory.CompanionTheory.Ar.TorusLie.exists_lieModel_splitTorus Z' Xc ℂ zc
   let v : Fin r → (epsAt zX ⟶ G) := fun a => LieTangent.epsBase c rfl ≫ MB.pt (ε a)
   have hv : ∀ a, (v a).left = (Mz.pt ((Int.castAddHom ℂ).comp (β a)) ≫ u).left ≫ (φ' ≫ pullback.fst G.hom io) := by
     intro a

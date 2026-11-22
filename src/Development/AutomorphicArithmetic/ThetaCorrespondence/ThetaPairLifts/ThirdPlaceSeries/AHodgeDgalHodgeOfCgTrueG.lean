@@ -44,7 +44,7 @@ theorem galHodge0_of_cgTrue (sw : _root_.UpperTheory.One.M.TrivialCondition) (hL
   set ν := GlobalTheory.HeckeGal.Model.absPow D.host.E s
   have inf₁ : ∀ τ, (CG.mk (π₀.twist ν)).infChar τ = (D.naut.infG π τ).map (· + (s : ℂ)) := fun τ => by
     have h1 := (ParLaws.hasInfChar_infChar (CG.mk π₀) τ).twist ν
-    rw [(GlobalTheory.T.heckeChar_exponent_of_infinityType _ ν).2.1 s hν τ] at h1
+    rw [(_root_.GlobalTheory.CuspRep.InfType.expo_of_infType _ ν).2.1 s hν τ] at h1
     rw [C.inf, CGu.infChar, ← hmk]
     exact h1.infChar_eq
   have hreg : (CG.mk (π₀.twist ν)).IsRegAlg := (GlobalTheory.CuspRep.CG.isRegAlg_iff _).2 fun τ => by
@@ -133,7 +133,7 @@ theorem galHodge0_of_cgTrue (sw : _root_.UpperTheory.One.M.TrivialCondition) (hL
         linear_combination hm2
       · obtain ⟨n, hn⟩ := hξ τ
         refine ⟨-n, ?_⟩
-        rw [expo_mul, expo_inv, hn, (GlobalTheory.T.heckeChar_exponent_of_infinityType _ ν).2.1 s hν τ]
+        rw [expo_mul, expo_inv, hn, (_root_.GlobalTheory.CuspRep.InfType.expo_of_infType _ ν).2.1 s hν τ]
         push_cast
         ring
     have hD : ∀ S : Set (HeightOneSpectrum (𝓞 D.host.E)), S.Finite → Dense {g : Formalism.ConjugateSelfDual.G D.host.E D.nd.Om | ∃ w ∉ S,

@@ -13,7 +13,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LatInIsLattice
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CyclicDiscriminantLatticesFormOneGenus
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsOrthonormalLatticeOfUnimodularLandherr
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StdLatIsOrthoLatticeAndMassProperties
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MaximalHermitianLatticeMassRatioStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MaximalHermitianLatticeMassRatio
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MassRowLatticeOrthogonalSplitPrimeStatement
 
 open NumberField Matrix GlobalTheory.Mass Formalism.HermitianLatticesTheory Formalism.BasicNotions Formalism.MainNotions.S
@@ -184,7 +184,7 @@ theorem main : ∀ c₀ : ℝ, 0 < c₀ → ∃ C₀ : ℝ, ∀ C : ℝ, C₀ �
   have hN : 1 ≤ Cnt.NT D u := one_le_pow₀ (by exact_mod_cast hTp.one_le)
   have hU := GlobalTheory.Mass.StdMass.main _ hK
   by_cases hmid : s ≤ D.R.k - 2
-  · have H := GlobalTheory.Mass.PrimMean.main GlobalTheory.T.maximalHermitianLattice_massRatio _ _ h hK hs hPD (_root_.GlobalTheory.Mass.exists_orthoLattice_of_unimodular _ hK) (D.R.k - s) s (by omega)
+  · have H := GlobalTheory.Mass.PrimMean.main _root_.GlobalTheory.Mass.MaxFormula.main _ _ h hK hs hPD (_root_.GlobalTheory.Mass.exists_orthoLattice_of_unimodular _ hK) (D.R.k - s) s (by omega)
       (by omega) (by omega) _ _ _ (hU (D.R.k - s)).1 (hU (D.R.k - s)).2.1 _ _ _ (hU s).1 (hU s).2.1 (de ^ 2) _ hde2
       (Nat.one_le_pow _ _ hTp.pos) _ hst hmem
     refine H.trans (ENNReal.ofReal_le_ofReal ?_)

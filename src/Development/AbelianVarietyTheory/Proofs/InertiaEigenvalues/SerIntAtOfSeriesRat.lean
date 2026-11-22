@@ -18,7 +18,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsNumerato
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.TwistSeries
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.RationalRayLevels
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.VacuumPairUniformLevelBound
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCentralFlipThetaTranslateHalfLevelStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCentralFlipThetaTranslateHalfLevel
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsLevelSeriesTranslateBoundedDenominator
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RealRationalPointActsHarmonicSubstitution
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsLevelPointsTranslateMeanOfIntegralCombinat
@@ -26,10 +26,10 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFormsThe
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitSupportedClassScalarMemValuationRing
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ReferenceTupleSecondSplittingCharacter
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UniformisedCoverIsDictionaryFrameCompatible
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoreConstantsEqVacuumIdentityUpToPhaseStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoreConstantsEqVacuumIdentityUpToPhase
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.VacuumIdentityConstantsCoverOfDominantPins
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarmonicMapExtremalVectorEqPhaseSmulLetters
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemIntegralFormsOfRationalAndLocalSpansStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemIntegralFormsOfRationalAndLocalSpans
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistDeterminantMulIntegralFormsRayClassCover
 
 open NumberField Matrix Complex IsDedekindDomain
@@ -163,7 +163,7 @@ theorem series_bound {D : D7} {ψ : AddChar (AF D.host.F) ℂ} {θ : InfFam D} {
             ∑ k, β k * ((lieFac Dw (xiR D) wa : ℂ) * (cc (dict g).1 * mu g * rdU U (f k) (dict g).1 (dict g).2)) := by
   subst hr
   obtain ⟨K, hK⟩ := _root_.GlobalTheory.LevelFourier.smul_mem_trSp D ψ θ V W χV χW om ΛV ΛW sW f₀ hP
-  obtain ⟨Z, cf, hZ, hflip⟩ := GlobalTheory.T.exists_centralFlip_thetaTranslate_halfLevel D ψ θ V W χV χW om ΛV ΛW sW f₀ hP hodd χ M₀ l hχ hl hM₀
+  obtain ⟨Z, cf, hZ, hflip⟩ := _root_.GlobalTheory.LevelSeries.exists_flip_theta D ψ θ V W χV χW om ΛV ΛW sW f₀ hP hodd χ M₀ l hχ hl hM₀
   choose cm hcm using fun z : Z => _root_.GlobalTheory.LevelSeries.exists_move_denomAt D ψ θ V W χV χW om ΛV ΛW sW f₀ hP l hl (s * z) (mul_mem hs (hZ z z.2))
   obtain ⟨ca, hca⟩ := _root_.GlobalTheory.LevelSeries.ArchAct.real_act_harm D ψ θ V W χV χW om ΛV ΛW sW f₀ hP H Dw BW lt wa hpq hΨ hB hlt l (Finset.univ.sup cm)
   obtain ⟨c₃, hc₃⟩ := GlobalTheory.ConstBound.const_dvd _ H Dw V.rank (degA Dw wa) M₀ l hl hM₀
@@ -307,7 +307,7 @@ theorem serIntAt_record : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 T0 
         (D.host.ccK_coprime _ (by simp [D.host.g_level k])).symm
     rw [hMg]
     exact (this 0).mul_left (this 1)
-  obtain ⟨ph, hph, hbase⟩ := GlobalTheory.T.coreConstants_eq_vacuumIdentity_up_to_phase D G Pl0 T0 A T R F κ v₀ hL hLev hG hFam hMod hTh hTie i hstd hV hFP
+  obtain ⟨ph, hph, hbase⟩ := _root_.GlobalTheory.LevelSeries.PinBase.baseCc_of_framePin D G Pl0 T0 A T R F κ v₀ hL hLev hG hFam hMod hTh hTie i hstd hV hFP
   obtain ⟨ka, hka, J, hJH, hJk, hJ⟩ := _root_.GlobalTheory.SerIntLetters.io_eq_phase_smul_harmLetters D G Pl0 T0 A T R F κ v₀ hL hLev hG hFam hMod hTh hTie i hstd u hu c0 hc0 lt hlt
   have hph0 : ph ≠ 0 := fun h => by simp [h] at hph
   have hka0 : ka ≠ 0 := fun h => by simp [h] at hka
@@ -368,7 +368,7 @@ theorem serIntAt_record : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 T0 
     · rintro _ rfl
       exact (_root_.GlobalTheory.TowVal.bddAll_one_iff_valSet_nonneg _ _ _ _ _ _ _ _).1 (hfs k).2.2.2
   have hint : Fn ∈ C.intForms (wtA (κ i)) (κ i).n S := by
-    refine GlobalTheory.T.mem_integralForms_of_rational_and_local_spans D T hL _ hj T.σ₀ T.toCore.good_σ₀ C hU (hpin _ (dom_wtA (κ i))).1 _ _ (dom_wtA (κ i)) S Fn ?_ fun la hla => ?_
+    refine _root_.GlobalTheory.LevelSeries.SpanInt.mem_intForms_of_spans D T hL _ hj T.σ₀ T.toCore.good_σ₀ C hU (hpin _ (dom_wtA (κ i))).1 _ _ (dom_wtA (κ i)) S Fn ?_ fun la hla => ?_
     · obtain ⟨la, hla⟩ := exists_place_over C.d.c₂.F hl
       exact Submodule.span_mono (C.intForms_subset _ _ _)
         (key la _ hla (valRing_range _ _) fun x => let ⟨a, ha, _⟩ := hΦ x; ⟨a, ha⟩)

@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormMulApplyLe
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegralSumIndicatorTranslate
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GeneralLinearHaarIsMulRightInvariantUnramified
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetRallisTransferFactorKrylovDet
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BorderedConjugationDiagOneLiftBlockMatrixStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BorderedConjugationDiagOneLiftBlockMatrix
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitIndicatorGLBlockLiftBlockMatrixWithLastBasis
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitIndicatorGLBlockGlBorderedConjugationActionI
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetRallisTransferFactorGlBorderedConjugation
@@ -12,7 +12,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormSubLeMaxUl
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasCompactSupportJacquetRallisOrbitalIntegrand
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetRallisBorderedMatrixNormalFormInvariants
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FourierMatch
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsClosedEmbeddingDiagOneGeneralLinearEmbeddingStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsClosedEmbeddingDiagOneGeneralLinearEmbedding
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegralGLSetIsOpenAndIsCompact
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PreimageDiagOneGeneralLinearEmbeddingIntegralGLS
 
@@ -51,7 +51,7 @@ theorem orbG_lift : ∀ (F E : Type) [NontriviallyNormedField F] [NontriviallyNo
   haveI := gl_unimodular F E (r + 1) M
   haveI := gl_unimodular F E r M'
   obtain ⟨hO, hC⟩ := _root_.GlobalTheory.JR.GLift.glO_isOpen_isCompact F (r + 1)
-  have hemb := GlobalTheory.T.isClosedEmbedding_diagOneGeneralLinearEmbedding F r
+  have hemb := _root_.GlobalTheory.JR.Step.EmbClosed.isClosedEmbedding_emb F r
   have key := GlobalTheory.CosetIntegral.integral_eq_of_coset_support (GL (Fin (r + 1)) F) (GL (Fin r) F)
     (GlobalTheory.JR.Step.emb r F) hemb M.μG M'.μG (glOSub (r + 1) F) hO hC M.volG
     (by rw [coe_glOSub, _root_.GlobalTheory.JR.GLift.emb_preimage_glO F r]; exact M'.volG)
@@ -62,7 +62,7 @@ theorem orbG_lift : ∀ (F E : Type) [NontriviallyNormedField F] [NontriviallyNo
     ((_root_.GlobalTheory.JR.orbG_integrand_hasCompactSupport F (r + 1) _ hΔ).comp_isClosedEmbedding hemb)
   unfold orbG
   rw [key]
-  simp only [GlobalTheory.T.borderedConjugation_diagOne_liftBlockMatrix, _root_.GlobalTheory.JR.UnitGLift.unitG_lift F r _ μ l hμ.le, omega_lift, mul_assoc]
+  simp only [_root_.GlobalTheory.JR.Step.ActEmbLift.act_emb_lift, _root_.GlobalTheory.JR.UnitGLift.unitG_lift F r _ μ l hμ.le, omega_lift, mul_assoc]
   exact integral_const_mul _ _
 
 end GlobalTheory.JR.GLift

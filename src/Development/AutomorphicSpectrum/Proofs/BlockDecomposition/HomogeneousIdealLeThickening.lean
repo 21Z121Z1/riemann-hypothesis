@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.VanIdealHomog
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemVanishingIdealIffKillsFormStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartVanishingKillsFormMulPowStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemVanishingIdealIffKillsForm
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartVanishingKillsFormMulPow
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsPullbackOfKernelSupStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThickeningSectionHomogeneousFormStatement
 
@@ -56,8 +56,8 @@ theorem ker_le_sup_chart {Y : Scheme.{0}} (I : Ideal R) (e : ℕ)
   intro s hs
   obtain ⟨n, a, ha, rfl⟩ := exists_eq_formOn k s
   rw [Scheme.Hom.ker_apply] at hs
-  obtain ⟨m, h, hK⟩ := GlobalTheory.T.chart_vanishing_kills_form_mul_pow φ n a ha k hs
-  obtain ⟨m', hm'⟩ := hge _ ((GlobalTheory.T.mem_vanishing_ideal_iff_kills_form φ _ _ h).2 hK) k
+  obtain ⟨m, h, hK⟩ := _root_.GlobalTheory.CompanionTheory.GE.exists_killsForm_X_pow_mul φ n a ha k hs
+  obtain ⟨m', hm'⟩ := hge _ ((_root_.GlobalTheory.CompanionTheory.GE.mem_vanIdeal_iff_killsForm φ _ _ h).2 hK) k
   obtain ⟨u, hu, v, hv, huv⟩ := Submodule.mem_sup.1 hm'
   have hb : (X k ^ m' * (X k ^ m * a) : MvPolynomial (Fin (N + 1)) R).IsHomogeneous (m' + (m + n)) :=
     (isHomogeneous_X_pow k m').mul h
@@ -105,7 +105,7 @@ theorem exists_closed_of_homogIdeal : ∀ (R : Type) [CommRing R] [IsNoetherianR
   have hfac : ∀ e, ∃ ψ : Cs e ⟶ GlobalTheory.ProjSpace.VPlus (homogOf J hJ),
       ψ ≫ GlobalTheory.ProjSpace.vPlusι (homogOf J hJ) = i e ≫ thickι R I N e := fun e =>
     (GlobalTheory.ProjSpace.exists_comp_vPlusι_iff (homogOf J hJ) _).2 fun k n f hf hfJ =>
-      (GlobalTheory.T.mem_vanishing_ideal_iff_kills_form _ n f hf).1 (hle e hfJ) k
+      (_root_.GlobalTheory.CompanionTheory.GE.mem_vanIdeal_iff_killsForm _ n f hf).1 (hle e hfJ) k
   choose b hb using hfac
   refine ⟨GlobalTheory.ProjSpace.VPlus (homogOf J hJ), GlobalTheory.ProjSpace.vPlusι (homogOf J hJ), b, inferInstance,
     fun e => ?_, fun e => ?_⟩

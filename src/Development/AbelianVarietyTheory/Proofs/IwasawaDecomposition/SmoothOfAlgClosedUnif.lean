@@ -10,20 +10,21 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValRSpMapFro
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsAffineSpaceCoveredMorphismStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ProjectiveBundlePointsOfRationalModel
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AffineSpaceCoveredSmoothOfRelativeDimensionAddStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GeometricallyIntegralStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GeometricallyIntegral
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PreservesRadicalPrincipalIdealsOfAffineSpaceCoveStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLatticeDualBasisQuotientFrameBlockStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAdaptedFrameFamilyLongerFlagGenericLineStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUniqueProjectiveBundleFlagRefinementStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFlagRefinementBundleComp
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsVarietyFlagRefinementBundleOfGoodModelStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsReducedCartierDivisorOfSncClosedStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsReducedEffectiveCartierDivisorPullbackStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsReducedCartierDivisorOfSncClosed
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsReducedEffectiveCartierDivisorPullback
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLieEigenpartsFrameFamilyOverVariety
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TautologicalFamilyRefinementCompatibleLieAlgebra
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsGradedLineDivisorsFullFlag
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFramedPointOverOfLieEigenspaceFrameStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EigenFrameBasePointLiftsUniqueFlagSpaceStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EigenFrameBasePointLiftsUniqueFlagSpace
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsVarietiesComponentsSmoothGenericFibre
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FlagSpaceDimensionEqSumChoose
 
@@ -51,7 +52,7 @@ theorem step {F Ω : Type} [Field F] [Field Ω] [Algebra F Ω] (M : RatModel F �
   rw [hc] at hA
   have hp := _root_.GlobalTheory.FlagBundle.projPoints_of_projBundle F Ω Ω' M M' φ f _ EE s hP
   obtain ⟨S', hS'⟩ := GlobalTheory.T.exists_adaptedFrameFamily_longerFlag_genericLine F Ω Ω' M M' φ f ι m k k' S τ hk A₀ EE s h1 h2 hA₀ hE hp
-  refine ⟨Ω', _, _, M', φ, f, S', ⟨hpr, GlobalTheory.T.affineSpaceCovered_smoothOfRelativeDimension_add F Ω Ω' M M' φ f _ d hA hM.2.1, GlobalTheory.T.geometricallyIntegral_of_affCover F Ω Ω' M M' φ f _ hA hM.2.2⟩,
+  refine ⟨Ω', _, _, M', φ, f, S', ⟨hpr, GlobalTheory.T.affineSpaceCovered_smoothOfRelativeDimension_add F Ω Ω' M M' φ f _ d hA hM.2.1, _root_.GlobalTheory.FlagBundle.AffCover.geometricallyIntegral F Ω Ω' M M' φ f _ hA hM.2.2⟩,
     fun τ' => ?_, hP.hom, fun z' A' hA' => ?_, GlobalTheory.T.preservesRadicalPrincipalIdeals_of_affineSpaceCovered F Ω Ω' M M' φ f _ hA,
     GlobalTheory.T.existsUnique_projectiveBundle_flagRefinement F Ω Ω' M M' φ f ι m k k' S S' τ hk A₀ EE s h1 h2 hA₀ hE hp hS'⟩
   · by_cases h : τ' = τ
@@ -122,8 +123,8 @@ theorem exists_flagCpt (hS : ReciprocityTheory.AnForm.R.FinalTheorems.Snc (genBd
   obtain ⟨g₀, A₁, hT', hC⟩ := _root_.GlobalTheory.ShFam.TieUp.main E H Dw l Xo c O β Z F e B Y j f₀ S A₀ _ S' φ f hT hR
   obtain ⟨gr, hgr⟩ := _root_.GlobalTheory.ShFam.GradedDiv.exists_gr E H Dw l Xo c O β Z F e Y (f ≫ j) g₀ S' A₁ hT'
   have hgen := genericPoint_mem Z j
-  obtain ⟨D, hD1, hD2, hD3⟩ := GlobalTheory.T.exists_reduced_cartierDivisor_of_snc_closed (gen Z) B.X j (genBd Z) hS fun h => h hgen
-  obtain ⟨D', hD1', hD2', hD3'⟩ := GlobalTheory.T.exists_reduced_effective_cartierDivisor_pullback F B Y φ f D hR.hom hR.rad hD1 hD3
+  obtain ⟨D, hD1, hD2, hD3⟩ := _root_.GlobalTheory.BoundaryDivisor.exists_reduced_cartierDiv (gen Z) B.X j (genBd Z) hS fun h => h hgen
+  obtain ⟨D', hD1', hD2', hD3'⟩ := _root_.GlobalTheory.FlagBundle.DivPull.exists_reduced_pullback F B Y φ f D hR.hom hR.rad hD1 hD3
   have hstr : (f ≫ j) ≫ genStr Z ≫ spMap e.toRingHom = Y.str := by
     rw [Category.assoc, hj]; exact hR.hom.inducedModelMorphism_comp_structureMap
   have hrange : Set.range (genericPt Y ≫ f ≫ j) ⊆ Set.range Z.jQ := by
@@ -150,7 +151,7 @@ theorem exists_flagCpt (hS : ReciprocityTheory.AnForm.R.FinalTheorems.Snc (genBd
       gr_spec := hgr, bd := D', bd_eff := hD1', bd_red := hD3'
       bd_supp := fun y => (hD2' y).trans ((hD2 _).trans (by rw [Scheme.Hom.comp_apply])) }
   exact ⟨C, f, rfl, by simpa using hd,
-    GlobalTheory.T.eigenFrameBasePoint_lifts_unique_flagSpace E H Dw l Xo c O β Z F e C B j f₀ S A₀ S' A₁ φ f hj rfl hT hT' hC hR⟩
+    _root_.GlobalTheory.ShFam.flagex_lifts E H Dw l Xo c O β Z F e C B j f₀ S A₀ S' A₁ φ f hj rfl hT hT' hC hR⟩
 
 end Component
 

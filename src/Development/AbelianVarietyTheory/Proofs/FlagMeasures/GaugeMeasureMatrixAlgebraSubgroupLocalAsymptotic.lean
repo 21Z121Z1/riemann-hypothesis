@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InvSubOneMem
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsRiemannianHaarOnSubgroupSigmaFiniteUnique
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TendstoRescaledIntegralOfDensityOne
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitarySubgroupChartAlmostIsometricNearOneStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitarySubgroupChartSurjectiveNearOriginStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitarySubgroupChartSurjectiveNearOrigin
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S GlobalTheory.Count GlobalTheory.FlagMeas
 open Filter Topology Metric
 
@@ -166,7 +166,7 @@ theorem gauge_local_asymptotics : ∀ (n : ℕ) (ε : Fin n → Bool) (A : Submo
   obtain ⟨a1, a2, a3⟩ := _root_.GlobalTheory.GaugeSubHaar.isGaugeSub_haar n ε (algSub ε A hA) (isClosed_algSub A hA) d μ hμ
   refine ⟨a1, a2, a3, ?_⟩
   have hlip := GlobalTheory.T.unitarySubgroupChart_almost_isometric_near_one n ε A d E hA hE hV
-  have hsurj := GlobalTheory.T.unitarySubgroupChart_surjective_near_origin n ε A d E hA hE hV
+  have hsurj := _root_.GlobalTheory.GaugeSubChartSurj.chart_surj n ε A d E hA hE hV
   simp only [GlobalTheory.GaugeConst.sqrt_hs] at hlip hsurj
   set ψ : Formalism.REAL.UJ ε → EuclideanSpace ℝ (Fin d) :=
     fun g => WithLp.toLp 2 (fun i => (((uMat g - 1) * (E i)ᴴ).trace).re) with hψdef

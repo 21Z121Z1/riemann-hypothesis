@@ -3,9 +3,9 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 import Formalism.LocalToGlobal.IndefiniteReal.DatumF
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntFOneMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCongruenceKernelIdeleCharacterTrivialAtInfStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankSmulMemAdelesFiniteMultipleOfTensorCongruStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankSmulMemAdelesFiniteMultipleOfTensorCongru
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenIntegralTensorAdeleMultiples
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemTensorCongruenceOfSupportedAtInfinityStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemTensorCongruenceOfSupportedAtInfinity
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegerOfAlgebraMapMemAdelesFiniteMultiple
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NatLeFourOfDvdOfEmbeddingsLeFour
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmExtensionConjugationInvolutiveFixedField
@@ -64,7 +64,7 @@ theorem key (σ : E →ₐ[F] E) (hcm : IsCMExt F E σ) (M : ℕ) (hM : 0 < M)
   have h2 : Module.finrank F E = 2 := hcm.2.2.1
   have htr : ∀ (N : ℕ) (x : AF F), algebraMap (AF F) (AF F ⊗[F] E) x ∈ CE F E (2 * (2 * N)) → x ∈ intF F N := by
     intro N x hx
-    have := GlobalTheory.T.finrank_smul_mem_adelesFiniteMultiple_of_tensorCongruence F E _ x hx
+    have := _root_.GlobalTheory.HeckeExtend.TraceCE.finrank_smul_mem_intF F E _ x hx
     rw [h2] at this
     exact intF_le (intF_half this)
   have hcongF : ∀ b : (AF F)ˣ, idFF F E b ∈ WE F E (8 * M) → lam b = 1 := by
@@ -210,7 +210,7 @@ theorem exists_extend_hecke : ∀ (F E : Type) [Field F] [NumberField F] [Field 
     filter_upwards [hVo.mem_nhds (one_mem V)] with z hz
     exact (hV1 z hz).symm
   · have hN' := hN
-    refine ⟨GlobalTheory.T.mem_tensorCongruence_of_supported_at_infinity F E _ hN' _ hz, GlobalTheory.T.mem_tensorCongruence_of_supported_at_infinity F E _ hN' _ ?_⟩
+    refine ⟨_root_.GlobalTheory.HeckeExtend.AtInf.mem_CE_of_atInf F E _ hN' _ hz, _root_.GlobalTheory.HeckeExtend.AtInf.mem_CE_of_atInf F E _ hN' _ ?_⟩
     intro u hu
     have e : ((z⁻¹ : (AF F ⊗[F] E)ˣ) : AF F ⊗[F] E) - 1 = -(((z⁻¹ : (AF F ⊗[F] E)ˣ) : AF F ⊗[F] E) * ((z : AF F ⊗[F] E) - 1)) := by
       rw [mul_sub, Units.inv_mul, mul_one, neg_sub]

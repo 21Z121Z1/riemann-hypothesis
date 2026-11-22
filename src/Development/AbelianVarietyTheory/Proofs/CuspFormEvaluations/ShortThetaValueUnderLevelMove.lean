@@ -8,7 +8,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Sec
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsFramedPointBaseChangeAlgHom
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.FramedPointBaseChangeLaws
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsIsUUOver
-import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.HarmonicValuesInvariantUniversalEndomorphismStatement
+import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.HarmonicValuesInvariantUniversalEndomorphism
 
 set_option autoImplicit false
 
@@ -174,7 +174,7 @@ theorem shortValAt_move : Laws → ChartIndepSt2 → ∀ (E : Type) [Field E] [N
     refine (finsum_comp_equiv (Equiv.piCongrRight fun _ : Fin n => σq.symm)).symm.trans
       (finsum_congr fun q => ?_)
     refine congrArg₂ (· * ·) rfl (Finset.sum_congr rfl fun i _ => ?_)
-    exact GlobalTheory.T.harmonic_values_invariant_universal_endomorphism hLaw hCI E H Dw l Xo c nab hnab S' ρ ν y₁ y₁' pm ω hx hf hs hω hu n a P hP N
+    exact _root_.GlobalTheory.ChartPush.nab_harmonic_invariant hLaw hCI E H Dw l Xo c nab hnab S' ρ ν y₁ y₁' pm ω hx hf hs hω hu n a P hP N
       (F q i) (F' (fun b => σq.symm (q b)) i) (hFF q i)
 
 end GlobalTheory.ShortValMove

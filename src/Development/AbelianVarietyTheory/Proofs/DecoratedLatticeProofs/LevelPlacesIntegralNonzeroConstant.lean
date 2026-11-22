@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Pa
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HeckeLPartialContinuationHolds
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilCoefficientExternalProductEqMulOrthogonalSum
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PrincipalCongruenceRealPointsIntegrationHeightOnStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PrincipalCongruenceRealPointsIntegrationHeightOn
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DefiniteUnitaryQuotientCompactFundamentalDomain
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilDatumThetaJointlyContinuous
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SiegelWeilSectionIntegrableAndContinuous
@@ -85,7 +85,7 @@ theorem integral_const : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (θ : Inf
   obtain ⟨νW, 𝓕W, hνW⟩ := GlobalTheory.MixModel.exists_isCovolOne D W.rank A.rank
   obtain ⟨νH, 𝓕H, hνH⟩ := GlobalTheory.MixModel.exists_isCovolOne D H.rank A.rank
   have hΦ : IsThetaFunO ψ A W Φ := hOcc.fock.1
-  obtain ⟨hPm, hPsub, hPh, mR, hmR, hint⟩ := GlobalTheory.T.principalCongruence_realPoints_integration_heightOne D θ A cA a hD β Z hZ.frame m hm
+  obtain ⟨hPm, hPsub, hPh, mR, hmR, hint⟩ := _root_.GlobalTheory.Core.Rk.PrinMeas.prinInf_props D θ A cA a hD β Z hZ.frame m hm
   set F : GA D A → ℂ := fun g => wcoef omW νW 𝓕W Φ Φ g * wcoef omH νH 𝓕H f f g * rcoef m u u g with hFdef
   have hFc : Continuous F := ((continuous_wcoef hW hνW hΦ hΦ).mul (continuous_wcoef hH hνH hf hf)).mul
     (continuous_rcoef hD.sig hD.pos hm hu)

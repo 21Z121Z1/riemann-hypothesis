@@ -2,7 +2,7 @@ import Mathlib
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsLatticeFamily
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.BundleChernComparison
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LocallyFreeFiniteProjectiveBaseChange
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ChartRingsNoetherianFractionStatement
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ChartRingsNoetherianFraction
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LatticeFamilyInjectiveModelFacts
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LineLatticeFamilyModel
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LatticeGoodBaseChange
@@ -82,7 +82,7 @@ theorem main : ∀ (O : Type) [CommRing O] [IsDomain O] [IsDiscreteValuationRing
   refine ⟨K', i1, i2, ι', i3, z, hz, fun τ i => ?_⟩
   obtain ⟨a, ha⟩ := hl (τ, i)
   refine ⟨1, a, one_ne_zero, fun c hc v => ?_⟩
-  obtain ⟨hc', hle⟩ := ((GlobalTheory.T.chart_rings_noetherian_fraction O Ω K ι x).2.2 K' ι' z).2 c hc
+  obtain ⟨hc', hle⟩ := ((_root_.GlobalTheory.CompanionTheory.Ar.Num.ChartNoethFrac.main O Ω K ι x).2.2 K' ι' z).2 c hc
   have h := (((hbc _ hc').2 Ω (chartRing O (mseg (joinCoord x z)) c) fun a ha => hle ha).2 τ).2.2 i
   rw [← ha c hc v]
   simp only [Algebra.algebraMap_self, RingHom.id_apply, Set.image_id'] at h

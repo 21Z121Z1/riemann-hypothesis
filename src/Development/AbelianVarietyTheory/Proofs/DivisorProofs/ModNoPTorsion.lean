@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.WittOnFalse
 import Development.AbelianVarietyTheory.Definitions.Divisors.FormalCoboundarySmul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MvPowerSeriesReductionModPrimeRules
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReductionCommutesFormalGroupLawCoboundariesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReductionCommutesFormalGroupLawCoboundaries
 open CategoryTheory TensorProduct MvPowerSeries GlobalTheory GlobalTheory.PDiv GlobalTheory.PDivGroup GlobalTheory.Katz
 
 namespace GlobalTheory.Katz
@@ -11,7 +11,7 @@ theorem mod_noPTorsion : ∀ (p : ℕ) [Fact p.Prime] (k : Type) [Field k] [Char
   intro p _ k _ _ _ d μ h hb m hm
   obtain ⟨R1, R2, -, -, -, R6, ZariskiNoetherianInduction⟩ := _root_.GlobalTheory.Katz.red_rules p k (Fin d)
   obtain ⟨-, R2', -, -, -, R6', R7'⟩ := _root_.GlobalTheory.Katz.red_rules p k (Fin d ⊕ Fin d)
-  obtain ⟨-, C1, -, -⟩ := GlobalTheory.T.reduction_commutes_formalGroupLawCoboundaries p k d μ h.const
+  obtain ⟨-, C1, -, -⟩ := _root_.GlobalTheory.Katz.red_coboundaries p k d μ h.const
   induction m using Submodule.Quotient.induction_on with
   | H x =>
   obtain ⟨f, hf⟩ := x

@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFlagFrame
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntOIsLocalRing
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TorsionCharEqOfEqOnTorsionStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TorsionCharEqOfEqOnTorsion
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsDlogUniqueModuloPStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLocalFiniteTorsionSplittingStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLocalFiniteTorsionSplitting
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TorsionCharacterCocycleDescent
 
 set_option autoImplicit false
@@ -187,7 +187,7 @@ theorem Val.map {κ : (Sp (FractionRing A) ⟶ t.G.left) → Aˣ} {S S' : Type} 
 
 theorem ex_full [IsLocallyNoetherian X] [IsDomain A] [IsIntegrallyClosed A] [CharZero A] (hq : q ≠ 0)
     (hs : SplitTors t x₀ q) (𝔮 : Ideal A) (h𝔮 : 𝔮.IsPrime) : ∃ P : FP t x₀ q, P.Full 𝔮 := by
-  obtain ⟨f, B, _, _, u, hf, hu, h⟩ := GlobalTheory.T.exists_local_finite_torsion_splitting E H X t A x₀ q hq hs 𝔮 h𝔮
+  obtain ⟨f, B, _, _, u, hf, hu, h⟩ := _root_.GlobalTheory.SplitFinitePart.exists_finite_part E H X t A x₀ q hq hs 𝔮 h𝔮
   have hf0 : f ≠ 0 := fun h0 => hf (by rw [h0]; exact 𝔮.zero_mem)
   let P : FP t x₀ q := { f := f, B := B, u := u, ne := hf0, fin := hu }
   refine ⟨P, hf, fun k _ φ hφ y hy w hw => ?_⟩
@@ -686,7 +686,7 @@ theorem hodgeTate_map : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (
     obtain ⟨b, hb⟩ := P.ex_gl (mult_kap χ)
     obtain ⟨c', hc'⟩ := ex_char hP hb
     refine ⟨ε χ, dlog_congr (c' := c') (fun i => GlobalTheory.FactorDepth.isTanAtG_map t x (he.1 i))
-      (GlobalTheory.T.torsionChar_eq_of_eq_on_torsion E H X t C _ _ hq.ne_zero c c' fun w hw => ?_) ?_⟩
+      (_root_.GlobalTheory.CharUniq.char_unique E H X t C _ _ hq.ne_zero c c' fun w hw => ?_) ?_⟩
     · obtain ⟨β, hβ⟩ := hP.at_fin _ w hw
       exact Units.ext ((hχ b hb w β hβ).trans (hc' _ w β hβ).symm)
     · simp only [Equiv.symm_apply_apply]

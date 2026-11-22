@@ -4,8 +4,11 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
 import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.LocalBaseChange.ElementaryCosets.CosetMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalConjugationInvolutiveValuationPreserving
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsNormalisedThetaSub
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwahoriAndMaximalCompactCriteriaStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DiagonalTorusCommutativeStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwahoriAndMaximalCompactCriteria
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceConjugationPropertiesCmField
+import Development.AbelianVarietyTheory.Definitions.Divisors.GaloisRepOfPolarizedCuspidal
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IwahoriProjSurjective
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DiagonalTorusCommutative
 
 noncomputable section
 
@@ -131,7 +134,7 @@ theorem v_sign_cj (w : Pl E) (m : ℕ) (x : w.adicCompletion E) :
 
 theorem thL_mem_iwGL (w : Pl E) (hw : ¬ IsSplitAt w) (n : ℕ) {g : GLw n w} (hg : g ∈ iwGL n w) :
     thL n w g ∈ iwGL n w := by
-  have hE := fun x : GLw n w => (GlobalTheory.T.iwahori_and_maximal_compact_criteria E w n x).1
+  have hE := fun x : GLw n w => (_root_.GlobalTheory.CompanionTheory.IwEntries.iwGL_KGL_entries E w n x).1
   obtain ⟨g1, g2, -⟩ := (hE g).1 hg
   obtain ⟨-, -, h3⟩ := (hE g⁻¹).1 (inv_mem hg)
   refine (hE _).2 ⟨fun i j => ?_, fun i j => ?_, fun i j hij => ?_⟩
@@ -162,7 +165,7 @@ theorem thL_mem_Nlo (w : Pl E) (hw : ¬ IsSplitAt w) (n : ℕ) {g : GLw n w}
 
 theorem thL_mem_Tor (w : Pl E) (hw : ¬ IsSplitAt w) (n : ℕ) {g : GLw n w}
     (hg : g ∈ PositivityTheory.Lbc.Tor (w.adicCompletion E) n) : thL n w g ∈ PositivityTheory.Lbc.Tor (w.adicCompletion E) n := by
-  have hT := fun x : GLw n w => (GlobalTheory.T.diagonal_torus_commutative (k := w.adicCompletion E) n).2 x
+  have hT := fun x : GLw n w => (_root_.GlobalTheory.CompanionTheory.LbElem.TorComm.tor_comm_and_mem_iff (k := w.adicCompletion E) n).2 x
   have h0 := (hT g⁻¹).1 (inv_mem hg)
   refine (hT _).2 fun i j hij => ?_
   show (thL n w g).val i j = 0

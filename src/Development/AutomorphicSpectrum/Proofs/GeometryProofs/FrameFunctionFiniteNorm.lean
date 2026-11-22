@@ -10,7 +10,7 @@ import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatLineGen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatZeroFromResolutionAndGagaStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FiniteConstantAllHolds
 import Development.WeilBound.CoreStatements.LocalModelCharts.ExistsLocalModelDvr
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IrreducibleComponentClopenStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IrreducibleComponentClopen
 import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.LineFunctionModelRatio
 
 noncomputable section
@@ -23,7 +23,7 @@ open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.S
 theorem finGood : Geo.ResK.ResKStatement → GagaSections → ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host E) (D : Datum H) (l : Level H) (Xo : Moduli D l) (c : Coeff l) (O : Type) [CommRing O] (β : O →+* c.F) (Y : Model Xo c β) (U : Set (Xo.XF c)) (Z : CptOver Y U) (τ : E →+* ℂ) (φ : FrameFn Xo c) (p : Nat.Primes) (κ : c.F →+* ℂ_[p]), FracBase β → 1 ≤ D.p + D.q → τ (H.rt : E) = H.rt0 → U ∈ irreducibleComponents (Xo.XF c) → Z.IsGeom → FlatOnModel Z τ φ → l.GoodAt p → ∃ t : ℝ, HasFinNorm U τ φ p κ t := by
   intro hRes hGaga E _ _ _ H D l Xo c O _ β Y U Z τ φ p κ hβ hpq hrt hU hZ hφ hgood
   obtain ⟨O', _, _, _, β', Y', hβ', hκ, hsplit, hN3⟩ := _root_.PositivityTheory.Ar2.exists_local_model_dvr E H D l Xo c p κ hpq hgood
-  obtain ⟨-, hne, hgeom⟩ := GlobalTheory.T.irreducible_component_clopen E H D l Xo c U hU
+  obtain ⟨-, hne, hgeom⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Br.cptOver_any E H D l Xo c U hU
   obtain ⟨Z'⟩ := hne O' β' Y' hβ'
   have hZ' : Z'.IsGeom := hgeom O β Y O' β' Y' Z Z' hβ hβ' hZ
   obtain ⟨φ', hline', hflat', -⟩ := GlobalTheory.T.flat_zero_from_resolution_and_gaga hRes hGaga E H D l Xo c O' β' Y' U Z' τ hβ' hpq hrt hZ'

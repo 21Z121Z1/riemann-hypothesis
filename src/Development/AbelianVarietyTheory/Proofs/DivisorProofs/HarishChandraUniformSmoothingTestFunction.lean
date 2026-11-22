@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CasKOp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfMemWeakIn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemZalgCommuteLieAction
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartLeftInvariantLaplacianOpPowEqIterateStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartLeftInvariantLaplacianOpPowEqIterate
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEllipticReproducingTestFunctionLaplacian
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CasimirGlFactorEmbeddingMemCapelliAlgebraStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPolyMaximalCompactCasimirKillsKTypeStatement
@@ -38,7 +38,7 @@ theorem reproduce_of_lap : ∀ (E : Type) [Field E] [NumberField E] [IsTotallyCo
     rw [e0] at e
     rw [← e, polyF, Finset.sum_apply]
     refine Finset.sum_congr rfl fun k _ => ?_
-    rw [Pi.smul_apply, smul_eq_mul, GlobalTheory.T.chart_leftInvariantLaplacianOp_pow_eq_iterate E a φ x k y hy])
+    rw [Pi.smul_apply, smul_eq_mul, _root_.GlobalTheory.HCAlpha.chart_lapOp_pow E a φ x k y hy])
   rw [smoothing, h1]
   have := chart_val φ.1 x 1
   simpa using this

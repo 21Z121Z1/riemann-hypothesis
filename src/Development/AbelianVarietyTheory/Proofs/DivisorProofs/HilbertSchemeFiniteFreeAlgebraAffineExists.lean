@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAffineHilbert
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AffineHilbertRepresentingUniversalSubschemeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AffineHilbertSchemeRepresentingQcQsFiniteTypeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AffineHilbertSchemeValuativeCriterionExistenceStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AffineHilbertValuativeCriterionUniquenessStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AffineHilbertValuativeCriterionUniqueness
 
 open AlgebraicGeometry CategoryTheory CategoryTheory.Limits Opposite
 
@@ -60,6 +60,6 @@ theorem hilbertScheme_exists : ∀ (A B : Type) [CommRing A] [CommRing B] [Algeb
   obtain ⟨q1, q2, q3⟩ := GlobalTheory.T.affineHilbertScheme_representing_qc_qs_finiteType A B r F.reprX R
   refine ⟨F.reprX, (R.homEquiv (𝟙 _)).1, U, u, ?_, h1, h2, h3, h4, h5⟩
   rw [IsProper.eq_valuativeCriterion, ValuativeCriterion.eq]
-  exact ⟨⟨⟨⟨GlobalTheory.T.affineHilbertScheme_valuativeCriterion_existence A B r F.reprX R, GlobalTheory.T.affineHilbert_valuativeCriterion_uniqueness A B r F.reprX R⟩, q1⟩, q2⟩, q3⟩
+  exact ⟨⟨⟨⟨GlobalTheory.T.affineHilbertScheme_valuativeCriterion_existence A B r F.reprX R, _root_.GlobalTheory.HilbAff.valuativeCriterion_uniqueness A B r F.reprX R⟩, q1⟩, q2⟩, q3⟩
 
 end GlobalTheory.HilbAff

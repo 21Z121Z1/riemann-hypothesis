@@ -4,12 +4,12 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedOrbitalInteg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrbitalIntegralEqWeightedLatticeOrbitCount
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexCentralizerStabilizerEqLatticeStabilizer
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackOfTranslatedStandardLatticeMulIntegralGL
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackLatticeEqIffSameIntegralGLCosetStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackLatticeEqIffSameIntegralGLCoset
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeIntegralHermitianCompletion
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryCommutingEqMulNormOneTorusStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryCommutingEqMulNormOneTorus
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackLatticeMulEqMulLeftImage
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryCommutingOfMemNormOneTorus
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackLatticeSelfDualOfUnitaryStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackLatticeSelfDualOfUnitary
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackLatticeStableIffPrincipalCongruence
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjMemPrincipalCongruenceSubgroupIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemCompactPartCentralizerIffTorusIntegralUnits
@@ -34,14 +34,14 @@ theorem twOrb_congruence_eq_N : ∀ (E : Type) [Field E] [NumberField E] [IsCMFi
   have h1 : ∀ g kk : UL n w, kk ∈ KL n w → M (g * kk) = M g := fun g kk hk =>
     _root_.GlobalTheory.KapOrb.pullLat_mul_of_mem_KGL E w K B n ψ g.1 kk.1 (Subgroup.mem_subgroupOf.1 hk)
   have h2 : ∀ g g' : UL n w, M g = M g' → g⁻¹ * g' ∈ KL n w := fun g g' hgg =>
-    Subgroup.mem_subgroupOf.2 (by simpa using GlobalTheory.T.pullbackLattice_eq_iff_same_integralGL_coset E w K e hBr B n ψ hψ1 g.1 g'.1 hgg)
+    Subgroup.mem_subgroupOf.2 (by simpa using _root_.GlobalTheory.KapOrb.PullInj.main E w K e hBr B n ψ hψ1 g.1 g'.1 hgg)
   have h3 : ∀ L ∈ B.X x, ∃ g, M g = L := by
     intro L hL
     obtain ⟨hlat, -, hsd⟩ := hL
     obtain ⟨g, hg, hgL⟩ := _root_.GlobalTheory.KapOrb.SelfDualPull.exists_unitary_pullLat_eq E w hw K e hBr B x n ψ hψ1 hψ3 L hlat hsd
     exact ⟨⟨g, hg⟩, hgL⟩
   have hT : ∀ h ∈ twCent (MonoidHom.id (UL n w)) δ, τ h ∈ B.T ∧ ∀ y, ψ ((τ h : B.A) * y) = h.1.val *ᵥ ψ y :=
-    fun h hh => GlobalTheory.T.unitary_commuting_eq_mul_normOneTorus E w hw K e B Q u x n γ ψ hF hψ h.1 h.2 (hcomm h hh)
+    fun h hh => _root_.GlobalTheory.KapTorus.torusOf_mem_of_mem_UL_commute E w hw K e B Q u x n γ ψ hF hψ h.1 h.2 (hcomm h hh)
   have h4 : ∀ h ∈ twCent (MonoidHom.id (UL n w)) δ, τ h ∈ B.T ∧
       ∀ g, M (h * g) = GlobalTheory.UnitLemma.mulLat K.O (τ h : B.A) (M g) :=
     fun h hh => ⟨(hT h hh).1, fun g => _root_.GlobalTheory.KapOrb.pullLat_mul_eq_mulLat E w K B n ψ h.1 g.1 _ (hT h hh).2⟩
@@ -53,7 +53,7 @@ theorem twOrb_congruence_eq_N : ∀ (E : Type) [Field E] [NumberField E] [IsCMFi
     exact Subtype.ext hc
   have hiff : ∀ g : UL n w, M g ∈ B.X x ↔ g.1⁻¹ * γ * g.1 ∈ congSet w n k := by
     intro g
-    obtain ⟨hlat, hsd⟩ := GlobalTheory.T.pullbackLattice_selfDual_of_unitary E w hw K e hBr B x n ψ hψ1 hψ3 g.1 g.2
+    obtain ⟨hlat, hsd⟩ := _root_.GlobalTheory.KapOrb.SDual.pullLat_selfDual E w hw K e hBr B x n ψ hψ1 hψ3 g.1 g.2
     rw [← _root_.GlobalTheory.KapCong.pullLat_stable_iff_cong E w hw K e hBr k t ht htk B u x n γ ψ hψ hu hγ g.1 g.2]
     exact ⟨fun h => h.2.1, fun h => ⟨hlat, h, hsd⟩⟩
   have h6 : ∀ g : UL n w, avg (fun kk : KL n w => (({g : UL n w | g.1 ∈ congSet w n k} : Set (UL n w)).indicator 1)

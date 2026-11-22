@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FourierMatch
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetRallisBorderedMatrixNormalFormInvariants
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetRallisOrbitInvariantMapProper
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitaryActionHermitianInvariantsTransitiveStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitaryActionHermitianInvariantsTransitive
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InvariantImageOpenClosedLocalSections
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetRallisTransferFactorKrylovDet
 
@@ -113,7 +113,7 @@ theorem isTest_orbU_integrand (F E : Type) [NontriviallyNormedField F] [Nontrivi
       AddMonoidHomClass.continuous_of_bound (starAddEquiv : E ≃+ E) 1
         (fun x => by rw [starAddEquiv_apply, Unram.norm_star (F := F), one_mul])
     exact this⟩
-  obtain ⟨-, -, hL5c, -⟩ := GlobalTheory.T.unitary_action_hermitian_invariants_transitive F E r
+  obtain ⟨-, -, hL5c, -⟩ := _root_.GlobalTheory.JR.HermInv.herm_invariants F E r
   obtain ⟨-, hL5iv⟩ := _root_.GlobalTheory.JR.image_openClosed_section F E r a ha
   obtain ⟨Ω, s, -, -, haΩ, -, hs, hprop⟩ := hL5iv ⟨X, hX⟩
   obtain ⟨g₀, hg₀, -⟩ := hL5c (s a) X a ha (hs a haΩ).2 hX

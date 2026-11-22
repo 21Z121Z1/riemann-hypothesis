@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.BlockTheory.PoincareCuspForms.SmallUnipo
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EmbedsInRegularRepresentationCopiesOfFreePermute
 import Development.AbelianVarietyTheory.Definitions.Divisors.BadElt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardMulFinrankCharacterSpaceOfFreePermutedSumman
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBalancedFrameCMUnitaryProofStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBalancedFrameCMUnitaryProof
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmallUnipotentUnitaryElementIsOneProof
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryMatrixMajorantOperatorNormLeDefinite
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUpperArithmeticGroupUnipotentUnitaryStatement
@@ -38,7 +38,7 @@ theorem share_definite : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] 
   refine ⟨hfin, fun H hH => ?_⟩
   haveI : FiniteDimensional ℂ (M.cusp ka) := hfin
   have hfree : ∀ (h : H) (c : C), h • c = c → h = 1 :=
-    free_of_definite E (GlobalTheory.T.existsBalancedFrameCMUnitary_proof E) (_root_.GlobalTheory.SmallElement.smallElement E) r H C (sub M H) hdef hH
+    free_of_definite E (_root_.GlobalTheory.BalancedPointPf.balancedPoint E) (_root_.GlobalTheory.SmallElement.smallElement E) r H C (sub M H) hdef hH
   obtain ⟨A, hA, hAρ⟩ := _root_.GlobalTheory.ShareOn.cusp_decomp E r U C M ka ρ hρ
   have hAρH : ∀ (h : H) (x : C), ∀ v ∈ A x, ρ h v ∈ A (h • x) := fun h x v hv => hAρ h x v hv
   exact ⟨_root_.GlobalTheory.BadCount.embReg_of_free_permuted_summands ℂ U (M.cusp ka) C ρ H hfree A hA hAρH,

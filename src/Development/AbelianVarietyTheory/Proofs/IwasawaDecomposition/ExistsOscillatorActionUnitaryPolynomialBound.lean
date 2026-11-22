@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOscillatorAct
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergSmoothOfWeakDerivativeClosedSet
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.PolarConjTranspose
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.CommuteGelfandInvariantMatrixUnitsOfGlRel
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasDerivAtOscillatorIntegralSymplecticPathStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasDerivAtOscillatorIntegralSymplecticPath
 
 noncomputable section
 
@@ -59,7 +59,7 @@ theorem hasDerivAt_osc (hJ : ∀ x, J (J x) = -x) (h : IsHeis (omJ J) ρ)
     (hX : HasDerivAt (fun t => k (γ t)) X 0) (hcγ : DifferentiableAt ℝ (fun t => c (γ t)) 0)
     {κ : Type} [Fintype κ] (a : κ → ℂ) (p q : κ → V) (hq : IsQuadOf (omJ J) X a p q) :
     ∃ lam : ℂ, ∀ f, Sm ρ f → HasDerivAt (fun t => osc h hk c (γ t) f) (quad ρ a p q f + lam • f) 0 := by
-  obtain ⟨l, hl⟩ := GlobalTheory.T.hasDerivAt_oscillatorIntegral_symplecticPath V B J ρ hJ h (fun t => k (γ t)) X (by simp only [hγ, map_one]) hX
+  obtain ⟨l, hl⟩ := _root_.GlobalTheory.Mem.Lift.OscDeriv.hasDerivAt_osc V B J ρ hJ h (fun t => k (γ t)) X (by simp only [hγ, map_one]) hX
     (fun t => hk (γ t)) κ a p q hq
   refine ⟨l + deriv (fun t => c (γ t)) 0, fun f hf => ?_⟩
   have h1 := hcγ.hasDerivAt.fun_smul (hl f hf)

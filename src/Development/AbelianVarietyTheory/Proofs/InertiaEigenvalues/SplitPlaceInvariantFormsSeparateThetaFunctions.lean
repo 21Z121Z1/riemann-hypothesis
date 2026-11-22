@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasShape
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsRepsLatticeQuotientConjugateHalfOrthogonalStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaCoefficientIsSchwartzBruhatUniformSplitStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsRepsLatticeQuotientConjugateHalfOrthogonal
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaCoefficientIsSchwartzBruhatUniformSplit
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsInvariantForm
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InfPartOneSubEInfSmul
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SelfDualLatticePairingDual
@@ -192,9 +192,9 @@ theorem invForms_separate (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (S T : HSp D
   have hS := GlobalTheory.PlaceModel.isSelfDualC_latFrame S
   have hT := GlobalTheory.PlaceModel.isSelfDualC_latFrame T
   have ha' := isSplitIdem_conj ha
-  obtain ⟨k, hk, hfix, -⟩ := (GlobalTheory.T.thetaCoefficient_isSchwartzBruhat_uniform_split D ψ S T hψ _ _ hS hT a ha f hf).1
-  obtain ⟨Y, -, hY, hYu, -⟩ := GlobalTheory.T.exists_reps_latticeQuotient_conjugateHalf_orthogonal D ψ S T hψ _ _ hS hT a ha.1 (infPart_splitIdem ha) k hk
-  obtain ⟨X, hXne, hX, -, hXo⟩ := GlobalTheory.T.exists_reps_latticeQuotient_conjugateHalf_orthogonal D ψ S T hψ _ _ hS hT (cA D a) ha'.1 (infPart_splitIdem ha') k hk
+  obtain ⟨k, hk, hfix, -⟩ := (_root_.GlobalTheory.DownLift.SplitCoef.coef_isSBHalf_uniform D ψ S T hψ _ _ hS hT a ha f hf).1
+  obtain ⟨Y, -, hY, hYu, -⟩ := _root_.GlobalTheory.DownLift.GenQuot.reps_orth D ψ S T hψ _ _ hS hT a ha.1 (infPart_splitIdem ha) k hk
+  obtain ⟨X, hXne, hX, -, hXo⟩ := _root_.GlobalTheory.DownLift.GenQuot.reps_orth D ψ S T hψ _ _ hS hT (cA D a) ha'.1 (infPart_splitIdem ha') k hk
   rw [GlobalTheory.DualPairCheck.cA_cA] at hX
   have hdual : ∀ u : WO S T, u.map (infPart D) = 0 →
       (u ∈ latH S T (GlobalTheory.PlaceModel.latFrame S) (GlobalTheory.PlaceModel.latFrame T) ↔

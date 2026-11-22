@@ -9,8 +9,8 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DivisorsAtInvDua
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CompletedLatticeIntegralityFacts
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsCompletedLatticeBasisAtPrime
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsAdelicUnitarySplitPlaceComponent
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SupportedSubgroupSplitCommutePrimeIdempotentsStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InvolutionSphericalHeckeAntiStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SupportedSubgroupSplitCommutePrimeIdempotents
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InvolutionSphericalHeckeAnti
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Formalism.L2.Theta Formalism.L2.NTheta Formalism.IndefR.Mult
 open scoped TensorProduct
@@ -128,7 +128,7 @@ theorem exists_model {D : D7} (V : HSp D) (P : HeightOneSpectrum (𝓞 D.host.E)
   have idem : ∀ y : Fin V.rank → Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes.Af D.host.F ⊗[D.host.F] D.host.E,
       (fun a => finPart D e * (finPart D e * y a)) = fun a => finPart D e * y a := fun y =>
     funext fun a => by rw [← mul_assoc, hε]
-  refine ⟨α, ⟨((GlobalTheory.T.supported_subgroup_split_commute_primeIdempotents V).2.2.1 P e (e + cA D e) (Or.inl ⟨he, rfl⟩)).2.2.1 α hs, hs, fun y hy => ?_,
+  refine ⟨α, ⟨((_root_.GlobalTheory.IdemSupport.supported_group_and_prime_idempotents V).2.2.1 P e (e + cA D e) (Or.inl ⟨he, rfl⟩)).2.2.1 α hs, hs, fun y hy => ?_,
     fun y hy => ?_, 1, 1, ?_, ?_, ?_, ?_⟩, ?_, B, hB1, hB2, fun y hy => ?_, fun z hz => ?_⟩
   · obtain ⟨z, hz, h⟩ := hB2 y hy
     rw [conj_diag_mulVec hC2 d hα h]
@@ -171,7 +171,7 @@ theorem divAt_inv_of_isHeckeElt : ∀ {D : D7} (V : HSp D) (P : HeightOneSpectru
   have h0 : (ϖ : D.host.E) ≠ 0 := fun h => h2 (by
     rw [show ϖ = 0 from Subtype.ext h]; exact zero_mem _)
   obtain ⟨α₀, hH, hD⟩ := exists_model V P e ϖ k he h0 hk
-  obtain ⟨a, ha, b, hb, rfl⟩ := (((GlobalTheory.T.involution_spherical_hecke_anti V P e he).2.2 ϖ h1 h2).2 k α₀ hH).2 ϖ α h1 h2 hα
+  obtain ⟨a, ha, b, hb, rfl⟩ := (((_root_.GlobalTheory.SplitPlace.split_local V P e he).2.2 ϖ h1 h2).2 k α₀ hH).2 ϖ α h1 h2 hα
   rw [← dualLab_label]
   exact (_root_.GlobalTheory.DivDual.divAt_inv_and_mul V e _ _ _ he.1.1 h0 ((_root_.GlobalTheory.DivDual.divAt_inv_and_mul V e _ _ _ he.1.1 h0 hD).2 a ha.1 b hb.1)).1
 

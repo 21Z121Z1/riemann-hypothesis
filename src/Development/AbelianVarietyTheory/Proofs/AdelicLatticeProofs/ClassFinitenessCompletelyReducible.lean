@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.AdelicPair
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.RatZariskiClosurePointsIsGroupStatement
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.RatZariskiClosurePointsIsGroup
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.RatMemRatZariskiClosurePoints
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsFiniteAdeleLikePairElementary
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsTensorStabiliserClosedSLOrbit
@@ -33,7 +33,7 @@ theorem cf_of_ss : ∀ (ι : Type) [Fintype ι] [DecidableEq ι] (Γ : Set (Matr
   classical
   obtain ⟨m, d, t, hfix, hstab, hcl⟩ := _root_.GlobalTheory.ClassFin.exists_tensor_stabiliser_closed_orbit ι Γ hΓ hss
   obtain ⟨Φ, hΦ⟩ := _root_.GlobalTheory.ClassFin.exists_mvPolynomial_ev_eq_act ι m d t
-  obtain ⟨-, hmul, hadj, hdet⟩ := GlobalTheory.T.ratZariskiClosurePoints_isGroup ι Γ hΓ.toIsPre R
+  obtain ⟨-, hmul, hadj, hdet⟩ := _root_.GlobalTheory.ClassFin.pts_group ι Γ hΓ.toIsPre R
   obtain ⟨hrat, hratR⟩ := _root_.GlobalTheory.ClassFin.RatPts.rat_mem_pts ι Γ
   obtain ⟨D, hD, hDt⟩ := (adelicPair_elementary R R₀ hA).2.1 (TIdx ι d) (fun k => algebraMap ℚ R (t k))
   obtain ⟨Z, hZ⟩ := _root_.GlobalTheory.ClassFin.finite_integral_classes_closed_orbit ι m d t hcl D hD

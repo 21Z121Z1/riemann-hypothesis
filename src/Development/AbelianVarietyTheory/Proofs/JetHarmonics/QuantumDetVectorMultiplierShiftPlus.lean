@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CapelliLeftComatrix
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CapelliDetMulVectorTypeStatement
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.QminorPolyMapStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.QminorPolyMap
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.QminorIntertwiningApply
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsEigenSplitOfResolventIdentity
 open Formalism.REAL Finset
@@ -33,7 +33,7 @@ theorem qdet_vector_multiplier_shift_plus : ∀ (V W : Type) [AddCommGroup V] [M
   let X : ℂ → Module.End ℂ (Fin (m + 1) → W) := fun u => M (fun a k =>
     ((-1 : ℂ) ^ ((a : ℕ) + (k : ℕ))) • qminor E' (Fin.succAbove a) (Fin.succAbove k) (u - 1))
   choose c hc using fun a k : Fin (m + 1) =>
-    GlobalTheory.T.exists_qminor_sub_eq_polynomial (Module.End ℂ W) (m + 1) m E' (Fin.succAbove a) (Fin.succAbove k) 1
+    _root_.GlobalTheory.qminor_polyMap (Module.End ℂ W) (m + 1) m E' (Fin.succAbove a) (Fin.succAbove k) 1
   have hXc : ∀ u, X u = ∑ i ∈ Finset.range (m + 1), u ^ i •
       M (fun a k => ((-1 : ℂ) ^ ((a : ℕ) + (k : ℕ))) • c a k i) := by
     intro u

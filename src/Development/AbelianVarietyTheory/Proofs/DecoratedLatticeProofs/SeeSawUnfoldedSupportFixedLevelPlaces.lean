@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Ad
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeeSawFixedLevelElementEqProdLocalParts
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.OrderedProdLocalPartsSeparatesPlace
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeeSawFixedLevelCombinationEqSinglePlaceOnVacuumStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeeSawFixedLevelCombinationEqSinglePlaceOnVacuum
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TrivialAtPlaceCommSeeSawCombinationKeepsVacuum
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeesawFirstFlatMapSupportAtLevelPlaceStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeeSawFlatMapContractionSupportAtLevelPlaceStatement
@@ -27,7 +27,7 @@ theorem gsupp_of_local : ∀ (D : D7) (c : Comm D) (v : VCom c) (n : ℕ) (G : F
   · obtain ⟨xs, hxs, rfl⟩ := _root_.GlobalTheory.LevelCut.grpAt_eq_prod_local hc hv G hG (j + 1) x hx
     have hb : ∀ i, j + 1 + (2 * σ + 1 + 1) = (G i).s + 1 := fun i => by have := (G i).hs; omega
     refine _root_.GlobalTheory.SeeSaw.prod_local_cells G hG (j + 1) hj (jacGrp (c.jac j (σ + 1) h).d) (fun _ => 2 * σ + 1 + 1) hb xs (fun i => ?_)
-    obtain ⟨F, hF, hcomb⟩ := GlobalTheory.T.seeSaw_fixedLevel_combination_eq_single_place_on_vacuum hc hv G hG j hj Ψ₁ hΨ₁ i
+    obtain ⟨F, hF, hcomb⟩ := _root_.GlobalTheory.GSuppComb.comb_eq_at_place hc hv G hG j hj Ψ₁ hΨ₁ i
     obtain ⟨y, hy, hprod⟩ := _root_.GlobalTheory.SeeSaw.SepProd.prod_sep G hG (j + 1) xs hxs i
     have hw : IsWeilDatumO c.ψ (c.V j) (c.V (j + 1)) (t.sBF j (σ + 1) h).χV (t.sBF j (σ + 1) h).χW (t.om j) := by
       have := (t.sBF j (σ + 1) h).weil
@@ -44,8 +44,8 @@ theorem gsupp_of_local : ∀ (D : D7) (c : Comm D) (v : VCom c) (n : ℕ) (G : F
     have hb : ∀ i, j + 1 + 1 + (2 * σ + 1) = (G i).s + 1 := fun i => by have := (G i).hs; omega
     refine _root_.GlobalTheory.SeeSaw.prod_local_cells G hG (j + 1 + 1) (by omega) (besGrp (c.bes (j + 1 + 1) σ (idx_step h)).d (c.bes (j + 1 + 1) σ (idx_step h)).o)
       (fun _ => 2 * σ + 1) hb xs (fun i => ?_)
-    obtain ⟨F₁, hF₁, hcomb₁⟩ := GlobalTheory.T.seeSaw_fixedLevel_combination_eq_single_place_on_vacuum hc hv G hG j hj Ψ₁ hΨ₁ i
-    obtain ⟨F₂, hF₂, hcomb₂⟩ := GlobalTheory.T.seeSaw_fixedLevel_combination_eq_single_place_on_vacuum hc hv G hG (j + 1) hj2 Ψ₂ hΨ₂ i
+    obtain ⟨F₁, hF₁, hcomb₁⟩ := _root_.GlobalTheory.GSuppComb.comb_eq_at_place hc hv G hG j hj Ψ₁ hΨ₁ i
+    obtain ⟨F₂, hF₂, hcomb₂⟩ := _root_.GlobalTheory.GSuppComb.comb_eq_at_place hc hv G hG (j + 1) hj2 Ψ₂ hΨ₂ i
     obtain ⟨y, hy, hprod⟩ := _root_.GlobalTheory.SeeSaw.SepProd.prod_sep G hG (j + 1 + 1) xs hxs i
     have hw : IsWeilDatumO c.ψ (c.V (j + 1)) (c.V (j + 1 + 1)) (t.sFB j σ h).χV (t.sFB j σ h).χW (t.om (j + 1)) := by
       have := (t.sFB j σ h).weil

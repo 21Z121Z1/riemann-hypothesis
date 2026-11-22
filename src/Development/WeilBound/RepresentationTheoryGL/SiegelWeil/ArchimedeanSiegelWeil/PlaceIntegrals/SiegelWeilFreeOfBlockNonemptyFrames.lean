@@ -8,7 +8,7 @@ import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.SiegelW
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.SiegelWeilMeasureOfCongruentTarget
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.BlockOneDetHermitianGram
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SiegelWeilFreeOfCongruentForm
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SiegelWeilFreeOfCongruentMatrixStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SiegelWeilFreeOfCongruentMatrix
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SiegelWeilFreeExtendByScalarBlock
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeil.ArchimedeanSiegelWeil.PlaceIntegrals.ZeroBlockCoefficientRankIncrease
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SiegelWeilFreeZeroRankOneOfThreeLe
@@ -524,7 +524,7 @@ theorem swFree_singular : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [
         simp
       have hfr₁ := frames_tail_aniso σ J₁ T₁ _ hta _ hX₂ hfirst
       have hSW := ih M₁ J₁ hJ₁ T₁ hT₁ hd₁ (by omega) ⟨_, hfr₁⟩
-      refine GlobalTheory.T.siegelWeilFree_of_congruent_matrix F E σ hCM (M₁ + 1) J hJ (n + 1) T hT g _ hT' hb ?_
+      refine _root_.GlobalTheory.CompanionTheory.WeilSiegel.Free.Scale.sw_free_scale F E σ hCM (M₁ + 1) J hJ (n + 1) T hT g _ hT' hb ?_
       exact _root_.GlobalTheory.CompanionTheory.WeilSiegel.Free.Iso.swFree_of_isometry F E σ hCM (M₁ + 1) J hJ g' _ hb' (n + 1) _ hT'
         (_root_.GlobalTheory.CompanionTheory.WeilSiegel.Free.Aniso.aniso_step F E σ hCM M₁ J₁ hJ₁ t ht n (by omega) T₁ hT₁ hT' ⟨_, hfr₁⟩ hSW)
 

@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Definitions.Degenerations.OfDerivationFn
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsUniqueFactorCompletedStalkOfMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMorphismOfSectionRatiosVeryAmple
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulOfMulAtDominantPairCommGroup
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMonHomExtensionOpenPartFieldStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMonHomExtensionOpenPartField
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdditiveActionThickeningEndosCompletePoint
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.GenericIsoAgreesOnCompletePoints
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StalkGenerizationGermCompat
@@ -173,7 +173,7 @@ theorem exists_generic_hom : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRi
     exact (hratK x 4 _ _).comp _
   have hadd := _root_.GlobalTheory.Mum.mul_of_isDominant_pair (FractionRing R) (F.obj G) hA V j f hj (F.obj Y) _ _ _ _ hdom (hpt x₁) (hpt x₂)
     (by rw [← Functor.map_mul, ← Functor.map_mul, ← hΦ]; exact hpt (x₁ * x₂))
-  obtain ⟨φ, hφ, hjφ⟩ := GlobalTheory.T.exists_monHom_extension_openPart_field (FractionRing R) (F.obj G) (F.obj G) V hA hA j f hj hV hadd
+  obtain ⟨φ, hφ, hjφ⟩ := _root_.GlobalTheory.GenericHomField.exists_monHom_extension_of_field (FractionRing R) (F.obj G) (F.obj G) V hA hA j f hj hV hadd
   refine ⟨φ, hφ, fun k s₁ s₂ => ?_⟩
   let Z : Over (Sp (FractionRing R)) := Over.mk (pullback.fst (F.map x₁).left j.left ≫ (F.obj Y).hom)
   let w : Z ⟶ F.obj Y := Over.homMk (pullback.fst (F.map x₁).left j.left) rfl

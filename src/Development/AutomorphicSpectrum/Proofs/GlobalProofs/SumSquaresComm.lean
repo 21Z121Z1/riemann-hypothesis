@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DifferentiableAt
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LieAlgebraOfLinearGroupClosed
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.SmoothVectorsInvariantSubspace
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DerivedActionOfSmoothVector
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DerivedActionAdditiveStatement
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DerivedActionAdditive
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DerivedActionConjugation
 
 noncomputable section
@@ -29,7 +29,7 @@ theorem dRep_realSum {n : ℕ} {G : Set (Matrix (Fin n) (Fin n) ℂ)} {H : Type}
     rw [Finset.sum_insert hx, Finset.sum_insert hx]
     have h1 := hsm (c x) _ (ha x)
     refine ⟨hadd _ _ h1 ih.1, ?_⟩
-    rw [(GlobalTheory.T.derived_action_additive hG hrep hu hu h1 ih.1).1, ih.2, GlobalTheory.GKLie.dRep_smul]
+    rw [(_root_.GlobalTheory.CompanionTheory.Hypotheses₂.HCA.SmoothLin.dRep_linear hG hrep hu hu h1 ih.1).1, ih.2, GlobalTheory.GKLie.dRep_smul]
 
 theorem dRep_vecSum {n : ℕ} {G : Set (Matrix (Fin n) (Fin n) ℂ)} {H : Type} [NormedAddCommGroup H]
     [InnerProductSpace ℂ H] {π : Matrix (Fin n) (Fin n) ℂ → (H →L[ℂ] H)} (hG : IsLinRed G)
@@ -49,8 +49,8 @@ theorem dRep_vecSum {n : ℕ} {G : Set (Matrix (Fin n) (Fin n) ℂ)} {H : Type} 
       rw [← Complex.coe_smul]
       exact hsm _ _ (hu x)
     refine ⟨hadd _ _ h1 ih.1, ?_⟩
-    rw [(GlobalTheory.T.derived_action_additive hG hrep h1 ih.1 hX hX).2.1, ih.2, ← Complex.coe_smul,
-      (GlobalTheory.T.derived_action_additive hG hrep (hu x) (hu x) hX hX).2.2, Complex.coe_smul]
+    rw [(_root_.GlobalTheory.CompanionTheory.Hypotheses₂.HCA.SmoothLin.dRep_linear hG hrep h1 ih.1 hX hX).2.1, ih.2, ← Complex.coe_smul,
+      (_root_.GlobalTheory.CompanionTheory.Hypotheses₂.HCA.SmoothLin.dRep_linear hG hrep (hu x) (hu x) hX hX).2.2, Complex.coe_smul]
 
 theorem sumSquares_comm {n : ℕ} {G : Set (Matrix (Fin n) (Fin n) ℂ)} {H : Type} [NormedAddCommGroup H]
     [InnerProductSpace ℂ H] {π : Matrix (Fin n) (Fin n) ℂ → (H →L[ℂ] H)} (hG : IsLinRed G)

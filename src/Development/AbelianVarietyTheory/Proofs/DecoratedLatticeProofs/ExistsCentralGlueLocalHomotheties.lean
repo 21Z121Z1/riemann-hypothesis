@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.NormOneAtOne
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsCentralUnitaryScalarOfNormOneIdeleStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualImageAdelicPointWittCoreStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsCentralUnitaryScalarOfNormOneIdele
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualImageAdelicPointWittCore
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicPointComponentsAtPlacesLatticesVacua
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsSumFrame
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LatticesAgreeAlmostEverywhere
@@ -126,8 +126,8 @@ theorem glue : ∀ (D : D7) (V A : HSp D) (e : GA D A →* GA D V) (g : GA D V) 
   intro D V A e g L M hL hM he hloc
   classical
   choose a c ha hc hs using hloc
-  choose z hz hzm using fun v => GlobalTheory.T.exists_centralUnitary_scalar_of_normOneIdele D V v (c v) (hc v)
-  obtain ⟨M', hM'sd, hgM'⟩ := (GlobalTheory.T.selfDual_image_adelicPoint_wittCore D V L hL).1 g
+  choose z hz hzm using fun v => _root_.GlobalTheory.Core.Mi.LatMatch.exists_cenAt_scalar D V v (c v) (hc v)
+  obtain ⟨M', hM'sd, hgM'⟩ := (_root_.GlobalTheory.FinPl.GlobImage.glob D V L hL).1 g
   obtain ⟨T, hT⟩ := GlobalTheory.FinPl.latV_eq_off_finite D V M' M hM'sd.1 hM.1
   have hoff : ∀ v ∉ T, Moves V g L M (· = v) := fun v hv y hy => by
     rw [hgM' _ y hy, hT v hv]

@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.RealLow
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IntegrandSZero
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ThetaSourceAction
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MultiplicityMapValueKFiniteMemCuspForms
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LowestKTypeMemDiscreteSeriesKFiniteVectorsStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LowestKTypeMemDiscreteSeriesKFiniteVectors
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBoundUnitary
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsBesPosOfBesselTied
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix
@@ -36,6 +36,6 @@ theorem main : ∀ {D : D7} {G : Type} [Group G] [Fintype G] {Pl0 T : Type} {A :
   · simp only [Ranks.r] at *; omega
   · rw [hV, hW]; rfl
   · intro U hU v
-    exact hA0 _ _ U hU (fun ρ => v ρ) (fun τ => GlobalTheory.T.lowestKType_mem_discreteSeriesKFiniteVectors D (Wc D i) _ (R.MW i σ) τ (v τ))
+    exact hA0 _ _ U hU (fun ρ => v ρ) (fun τ => _root_.GlobalTheory.LowKFin.lowT_mem_kfin D (Wc D i) _ (R.MW i σ) τ (v τ))
 
 end GlobalTheory.PairSetting

@@ -22,7 +22,7 @@ theorem unitaryRead_true_alt (sw : _root_.UpperTheory.One.M.TrivialCondition) : 
   intro hL D T A hA j h1 h2 π
   obtain ⟨π₀, rfl⟩ := A.surj j h1 h2 π
   obtain ⟨F⟩ := _root_.GlobalTheory.FinIsoProof.finIso_nonempty D.host.E D.R.nV
-  obtain ⟨U, hU⟩ := GlobalTheory.T.exists_dictionary_cm_field_automorphic D.host.E D.R.nV F π₀
+  obtain ⟨U, hU⟩ := _root_.GlobalTheory.FormDictEx.exists_dict D.host.E D.R.nV F π₀
   refine ⟨U, hU.1, ?_, ?_, ?_⟩
   · intro w hw σ hσ
     obtain ⟨s, rfl⟩ := exists_splitPlace_w D w hw
@@ -57,7 +57,7 @@ theorem unitaryRead_true_alt (sw : _root_.UpperTheory.One.M.TrivialCondition) : 
       exact (hα' i).symm
   · intro τ
     obtain ⟨b, hb, -⟩ := GlobalTheory.algWt_contragredient _ _ π₀.toAlgWt
-    obtain ⟨lam, hl, hhw⟩ := GlobalTheory.T.algebraicWeight_agrees_under_modularForm_dictionary _ _ F π₀ U hU b hb τ
+    obtain ⟨lam, hl, hhw⟩ := _root_.GlobalTheory.WeightDict.weight_agree _ _ F π₀ U hU b hb τ
     refine ⟨lam, hl, ?_⟩
     rw [A.wt j h1 h2 π₀ b hb, A.infW j h1 h2 b τ lam.w hhw, infOf_eq_infOfWeight]
 theorem cusp_read_rec_t : ∀ (hL : _root_.UpperTheory.Zero.LLC.RecTExists) (D : D7) (T : GlobalTheory.RowTie.WDTie D.nd D.naut),

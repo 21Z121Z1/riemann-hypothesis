@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermi
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RealMetaplecticRepresentation
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsHasDerivAtZeroOfMapAddMul
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TendstoSlopeMetaplecticLiftSchwartz
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchwartzUnitaryIntertwinerScalarStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchwartzUnitaryIntertwinerScalar
 
 open scoped Matrix
 
@@ -91,7 +91,7 @@ theorem main_nonempty (hP : GlobalTheory.FunPr.Hypotheses₂) (l : Type) [Fintyp
     rw [← hγpr t, Matrix.mulVec_mulVec, e', Matrix.one_mulVec]
   have hU : ∀ t, ∃ a : ℂ, ‖a‖ = 1 ∧ ∀ h, (T t ∘ₗ (omS (γ (-t)) : Sch l →ₗ[ℂ] Sch l)) h = a • h := by
     intro t
-    refine GlobalTheory.T.schwartz_unitary_intertwiner_scalar hP l _ (fun w h h₁ hh => ?_) (fun h => ?_)
+    refine _root_.GlobalTheory.RealWeil.SchurSchwartz.schur_schwartz hP l _ (fun w h h₁ hh => ?_) (fun h => ?_)
     · simp only [LinearMap.comp_apply, ContinuousLinearMap.coe_coe]
       rw [hTrho t _ _ _ (intertwine_fun l _ (om (γ (-t))) (omS (γ (-t))) (h3 _) (h4 _) w h h₁ hh), hmat]
     · simp only [LinearMap.comp_apply, ContinuousLinearMap.coe_coe]

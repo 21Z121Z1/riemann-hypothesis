@@ -1,7 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.ApplyEqOfMemAdjoin
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsTopWTopWOfExists
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SlTwoInvariantHolomorphicMemAdjoinJInvariantStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SlTwoInvariantHolomorphicMemAdjoinJInvariant
+import Development.AbelianVarietyTheory.Definitions.Foundations.EigenOfTwoStep
 
 open scoped MatrixGroups
 open GlobalTheory.KZ GlobalTheory.Glue GlobalTheory.K5 GlobalTheory.KummerEisensteinGalois
@@ -232,7 +233,7 @@ theorem mem_adjoin_of_sl_inv : ∀ {Ω : Type} [Field Ω] [Algebra ℚ Ω] [IsAl
     (p.map (X.an.comp (algebraMap (Algebra.adjoin Ω {X.jK}) X.K))) (hpm.map _)
     (fun i => by rw [coeff_map]; exact holRep X hj (p.coeff i).2)
     (by rw [eval_map, ← Polynomial.hom_eval₂, hpe, map_zero])
-  have hgR : g ∈ Algebra.adjoin Ω {X.jK} := GlobalTheory.T.slTwo_invariant_holomorphic_mem_adjoin_jInvariant ε X ε.injective hj g hginv ⟨φ, hφ, hgφ⟩
+  have hgR : g ∈ Algebra.adjoin Ω {X.jK} := _root_.GlobalTheory.KZ.LevelOne.mem_adjoin_j ε X ε.injective hj g hginv ⟨φ, hφ, hgφ⟩
   have hle := IntermediateField.algebra_adjoin_le_adjoin Ω ({X.jK} : Set X.K)
   have hyL : (y : X.K) ∈ IntermediateField.adjoin Ω {X.jK} := hle y.2
   have hgL : g ∈ IntermediateField.adjoin Ω {X.jK} := hle hgR

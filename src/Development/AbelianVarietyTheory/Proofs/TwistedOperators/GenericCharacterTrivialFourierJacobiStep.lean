@@ -17,10 +17,10 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MulFractio
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IdVLeOfLoc
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridLatticesCompactSelfDualSplitting
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StandardFramesSuccessiveLevels
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralAdeleSmulDepthLatticeGridRowMemLatOStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ScaledLatticeCompletionSupportedInvIdealSmulStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralAdeleSmulDepthLatticeGridRowMemLatO
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ScaledLatticeCompletionSupportedInvIdealSmul
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DepthLatticeRowMulVecMemModulusScaledCompletion
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IdealMembershipOffModulusStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IdealMembershipOffModulus
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links MeasureTheory IsDedekindDomain NumberField Matrix
 open GlobalTheory.MixModel GlobalTheory.MixPer GlobalTheory.Grow GlobalTheory.Unf GlobalTheory.ChiGrid GlobalTheory.FunObj GlobalTheory.SepRows GlobalTheory.Asc
 open scoped TensorProduct
@@ -62,7 +62,7 @@ theorem lineW (F : GlobalTheory.Asc.Frames G) (hF : Std F) (σ : ℕ) (h' : 2 * 
     ((F.dB σ h').pX *ᵥ y) p ∈ idV (FractionalIdeal.spanSingleton _ (((-D.host.xi0) ^ (p.1 + 1))⁻¹) *
       stairId (G.pl.stA sc) (G.pl.stAbar sc) (2 * σ + 2 - 1) (Fin.castLE (by omega) p) * I) v := by
   obtain ⟨_hc, he, -⟩ := hF.hB σ h'
-  obtain ⟨hsupp, hsm⟩ := GlobalTheory.T.scaledLatticeCompletion_supported_invIdeal_smul _ _ I v y hy
+  obtain ⟨hsupp, hsm⟩ := _root_.GlobalTheory.LatMulAt.latMul_inv_smul _ _ I v y hy
   have hc : ((F.dB σ h').pX *ᵥ y) p ∈ idAt D (· = v) := by
     simp only [Matrix.mulVec, dotProduct]
     exact Ideal.sum_mem _ fun k _ => Ideal.mul_mem_left _ _ (hsupp k)
@@ -155,7 +155,7 @@ theorem unipotent_character_trivial_at_S0 : OnStd fun {D} _ _ {sc} {G} W F => �
     show (xFB F σ h' ⬝ u.1.1 - xFB F σ h') ⬝ (F.dJ (σ + 1) h).pX = _
     rw [Matrix.mul_sub, Matrix.mul_one]
 
-  have hloc := GlobalTheory.T.integralAdele_smul_depthLatticeGridRow_mem_latO D hq T L μ0 hL sc G W M hM (2 * σ + 2) (by omega) v _ (idem_mem_intAt (· = v)) _ hrow
+  have hloc := _root_.GlobalTheory.RowInt.smul_mem_latO_at D hq T L μ0 hL sc G W M hM (2 * σ + 2) (by omega) v _ (idem_mem_intAt (· = v)) _ hrow
   have sdV : IsSelfDualC (G.V (.grid (2 * σ + 2 + 1) 0)) (G.Λ (.grid (2 * σ + 2 + 1) 0)) :=
     (G.isV (X := .grid (2 * σ + 2 + 1) 0) ⟨by omega, by omega⟩ fun j e => by cases e).sd
   have sdW : IsSelfDualC (G.V (.grid (2 * σ + 2) 0)) (G.Λ (.grid (2 * σ + 2) 0)) :=
@@ -210,7 +210,7 @@ theorem unipotent_character_trivial_at_S0 : OnStd fun {D} _ _ {sc} {G} W F => �
       mul_inv_cancel₀ hN0, mul_one]
   rw [q1] at hs1
   rw [q2] at hs2
-  have hdI := GlobalTheory.T.ideal_membership_off_modulus D hq T L μ0 hL sc G W M hM v hv e he s hs hs1 hs2
+  have hdI := _root_.GlobalTheory.DepthIdeal.mem_dI_of_half D hq T L μ0 hL sc G W M hM v hv e he s hs hs1 hs2
   have h6 := (f5 s hs).1 hdI (idem D (· = v)) (idem_mem_intAt _)
   rwa [hsdef, mul_assoc, mul_comm (N i j), ← mul_assoc, idem_mul_self] at h6
 
@@ -226,7 +226,7 @@ theorem unipotent_character_trivial_off_S0 : OnStd fun {D} _ _ {sc} {G} W F => �
   intro D hq T L μ0 hL sc G W M hM F hF σ h h' u hA v hv i j hij
   obtain ⟨hgood, -⟩ := _root_.GlobalTheory.AscFin.GoodFB.goodAt_stdAt_fb D hq T L μ0 hL sc G W M hM F hF σ h h' v hv
   have hrow : (F.dJ (σ + 1) h).extX _ (xFB F σ h' ⬝ u.1.1 - xFB F σ h') ∈ latRow G (2 * σ + 2) := hA
-  have hloc := GlobalTheory.T.integralAdele_smul_depthLatticeGridRow_mem_latO D hq T L μ0 hL sc G W M hM (2 * σ + 2) (by omega) v _ (idem_mem_intAt (· = v)) _ hrow
+  have hloc := _root_.GlobalTheory.RowInt.smul_mem_latO_at D hq T L μ0 hL sc G W M hM (2 * σ + 2) (by omega) v _ (idem_mem_intAt (· = v)) _ hrow
   have sdV : IsSelfDualC (G.V (.grid (2 * σ + 2 + 1) 0)) (G.Λ (.grid (2 * σ + 2 + 1) 0)) :=
     (G.isV (X := .grid (2 * σ + 2 + 1) 0) ⟨by omega, by omega⟩ fun j e => by cases e).sd
   have sdW : IsSelfDualC (G.V (.grid (2 * σ + 2) 0)) (G.Λ (.grid (2 * σ + 2) 0)) :=

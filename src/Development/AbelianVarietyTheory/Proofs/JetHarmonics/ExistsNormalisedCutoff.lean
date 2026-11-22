@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Jets.SideFam
 import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
 import Formalism.PeriodIntegrals.QuotSetU
 import Formalism.PeriodIntegrals.QuotInv
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MatGroupHaarUniqueFiniteCompactOpenPosStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MatGroupHaarUniqueFiniteCompactOpenPos
 open BranchingSupport Formalism.FourierDecayAlt Formalism.FourierDecayAlt.ThreeDimData Matrix MeasureTheory Finset
 open scoped InnerProductSpace ENNReal
 
@@ -65,7 +65,7 @@ lemma exists_bound {m : ℕ} {G S : Set (Matrix (Fin m) (Fin m) ℂ)} {μ : Meas
       continuous_mulM.continuousAt (continuousAt_fst.prodMk h1)
   have hKS : IsCompact (K ∩ {x | Matrix.of x ∈ S}) := hKc.inter_right (isClosed_of hS.1)
   refine ⟨μ (K ∩ {x | Matrix.of x ∈ S}),
-    (GlobalTheory.T.matGroupHaar_unique_finite_compact_openPos m S μ hS hμ).2.1 _ hKS (fun x hx => hx.2), fun x => ?_⟩
+    (_root_.GlobalTheory.MatHaar.haar_unique_locFinite_openPos m S μ hS hμ).2.1 _ hKS (fun x hx => hx.2), fun x => ?_⟩
   have hae : ∀ᵐ s ∂μ, Matrix.of s ∈ S := hμ.2.2.1
   have hA : MeasurableSet ((fun s => mulM s x) ⁻¹' piece G j) :=
     (hC.isClosed.preimage (continuous_mulM_left x)).measurableSet
@@ -95,7 +95,7 @@ lemma exists_pos {m : ℕ} {G S : Set (Matrix (Fin m) (Fin m) ℂ)} {μ : Measur
     Metric.isOpen_ball.preimage (continuous_mulM_left x)
   have h1 : mulM (Matrix.of.symm (1 : Matrix (Fin m) (Fin m) ℂ)) x = x :=
     Matrix.one_mul (Matrix.of x)
-  have := (GlobalTheory.T.matGroupHaar_unique_finite_compact_openPos m S μ hS hμ).2.2 _ hU
+  have := (_root_.GlobalTheory.MatHaar.haar_unique_locFinite_openPos m S μ hS hμ).2.2 _ hU
     ⟨Matrix.of.symm (1 : Matrix (Fin m) (Fin m) ℂ), by
       rw [Set.mem_preimage, h1]; simpa using hj, hS.2.1⟩
   refine this.trans_le (measure_mono_ae ?_)

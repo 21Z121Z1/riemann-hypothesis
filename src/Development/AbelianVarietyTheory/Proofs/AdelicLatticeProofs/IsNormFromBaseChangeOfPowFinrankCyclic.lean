@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.MemPowSub
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.AlgebraMapNormTensorEqProdConjugatesStatement
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.AlgebraMapNormTensorEqProdConjugates
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.TensorExistsOfGaloisFixed
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Hilbert90BaseChange
 open NumberField IsDedekindDomain Polynomial GlobalTheory.QNorm GlobalTheory.CNorm
@@ -139,7 +139,7 @@ theorem tnorm_of_tnorm_pow : ∀ (F M E K : Type) [Field F] [CharZero F] [Field 
     (algebraMap K _ (algebraMap F K a)⁻¹) (by rw [← map_mul, mul_inv_cancel₀ haK, map_one])
     (S.commutes _) (S.commutes _)
     (by
-      have := GlobalTheory.T.algebraMap_norm_tensor_eq_prod_galois_conjugates F E K x
+      have := _root_.GlobalTheory.CNorm.algebraMap_norm_tensor_eq_prod_conjugates F E K x
       rw [hx, prod_cyc σ hσ, hcard, map_pow, map_pow] at this
       rw [this]
       exact Finset.prod_congr rfl fun i _ => (map_pow_iter σ i x).symm)
@@ -181,7 +181,7 @@ theorem tnorm_of_tnorm_pow : ∀ (F M E K : Type) [Field F] [CharZero F] [Field 
   refine ⟨z, ?_⟩
   apply (algebraMap K (K ⊗[F] M)).injective
   apply hinj
-  rw [GlobalTheory.T.algebraMap_norm_tensor_eq_prod_galois_conjugates F M K z, prod_cyc σ' hσ', IsGalois.card_aut_eq_finrank, ι.commutes, ← hw',
+  rw [_root_.GlobalTheory.CNorm.algebraMap_norm_tensor_eq_prod_conjugates F M K z, prod_cyc σ' hσ', IsGalois.card_aut_eq_finrank, ι.commutes, ← hw',
     map_prod]
   refine Finset.prod_congr rfl fun i _ => ?_
   rw [map_pow_iter]

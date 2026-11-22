@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SgRevNeZero
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.OddTwistedFrameDetFunctionMulUpperTriangularStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.OddTwistedFrameDetFunctionMulDetPowPolynomialStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.OddTwistedFrameDetFunctionMulUpperTriangular
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.OddTwistedFrameDetFunctionMulDetPowPolynomial
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.SharpPoly
 
 noncomputable section
@@ -18,10 +18,10 @@ theorem twPoly_main : ∀ {p : ℕ} [Fact p.Prime] (X : Sys p) (D : D7) (pos : (
     have h0 : zT X D pos f = f := funext fun τ => Subsingleton.elim _ _
     rw [h0]
     simp [Matrix.det_fin_zero]
-  · obtain ⟨K, P, hP⟩ := GlobalTheory.T.oddTwistedFrameDetFunction_mul_det_pow_polynomial X D pos hn ν c hc Q hQ
+  · obtain ⟨K, P, hP⟩ := _root_.GlobalTheory.TwV.DelA.twF_mul_det_poly X D pos hn ν c hc Q hQ
     obtain ⟨R, hR⟩ := Formalism.L2.KerInert.SharpPolyP.sp_main
       (fun τ r => if IsOddPos (pos.symm τ).2 then (c τ - (ν τ (Fin.rev r) : ℤ)).toNat else ν τ r)
-      (twF X D pos c Q) (fun x β hx hβ => GlobalTheory.T.oddTwistedFrameDetFunction_mul_upper_triangular X D pos ν c hc Q hQ x β hx hβ) _ K P rfl hP
+      (twF X D pos c Q) (fun x β hx hβ => _root_.GlobalTheory.TwV.DelA.twF_mul_bor X D pos ν c hc Q hQ x β hx hβ) _ K P rfl hP
     refine ⟨R, fun f hf => ?_⟩
     have hz : ∀ τ, (zT X D pos f τ).det ≠ 0 := by
       intro τ

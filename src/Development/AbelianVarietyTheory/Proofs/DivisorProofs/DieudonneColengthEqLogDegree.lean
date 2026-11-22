@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobKerIdealLeAugId
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WittModuleLengthComposition
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueKernelOrderPPowerDegreeIsogeny
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasKernelOrderPPowerDegreeCompLeAdd
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivisibleGroupIsogenyBasicPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivisibleGroupIsogenyBasicProperties
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KernelDegreeLeDieudonneColength
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsogenousPDivGroupFinrankOmegaDual
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DieudonneFunctorBaseFunctorProperties
@@ -21,7 +21,7 @@ theorem length_quot_range_map_eq_of_hasLogDeg : ∀ (p : ℕ) [Fact p.Prime] (T 
   have hq' : IsIsog q := ⟨n, g, hqg, hgq⟩
   have hg : IsIsog g := ⟨n, q, hgq, hqg⟩
   obtain ⟨e', he', -⟩ := _root_.GlobalTheory.Dieu.existsUnique_hasLogDeg p k H G g hg
-  have hpG := ((GlobalTheory.T.pDivisibleGroup_isogeny_basic_properties p k G).1 n).2
+  have hpG := ((_root_.GlobalTheory.Dieu.isog_basics p k G).1 n).2
   rw [← hqg] at hpG
   have hle : n * G.height ≤ e + e' := _root_.GlobalTheory.Dieu.hasLogDeg_comp_le p k G H G q g e e' _ he he' hpG
   have h1 := _root_.GlobalTheory.Dieu.le_length_coker_of_hasLogDeg p T k G H q e hq' he

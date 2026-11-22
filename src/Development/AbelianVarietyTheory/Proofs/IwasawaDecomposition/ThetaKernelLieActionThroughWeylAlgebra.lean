@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOneP
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasDerivAtWeilRepRealOneParamAdelicPointStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasDerivAtWeilRepRealOneParamAdelicPoint
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCcrOperatorsThetaFunctions
 
 noncomputable section
@@ -107,7 +107,7 @@ theorem weyl_action : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ), IsStdChar D
       (∀ k l, HasDerivAt (fun t => mM θ S T (γ t) k l) (X k l) 0) → ∃ lam : ℂ, ∀ (f : thetaSub ψ S T) p,
       HasDerivAt (fun t => om (p * γ t) f.1 0) (om p ((∑ k, ∑ l, X k l • (x k * d l)) f + lam • f).1 0) 0 := by
     intro γ h1 h2 h3 X h4
-    obtain ⟨lam, hl⟩ := GlobalTheory.T.hasDerivAt_weilRep_realOneParam_adelicPoint D θ σ h ψ hψ S T om hw hc γ h1 h2 h3 X h4
+    obtain ⟨lam, hl⟩ := _root_.GlobalTheory.Mem.LiftGen.hasDerivAt_om D θ σ h ψ hψ S T om hw hc γ h1 h2 h3 X h4
     refine ⟨lam, fun f p => ?_⟩
     have e := coe_toB hψ f.1 f.2
     have h5 := hl (toB hψ f.1 f.2) (e.symm ▸ f.2) p 0

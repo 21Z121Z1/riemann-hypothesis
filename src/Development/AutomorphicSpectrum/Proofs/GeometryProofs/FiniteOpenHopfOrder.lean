@@ -3,7 +3,7 @@ import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.TranslateM
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsUnitFormLocalizationEtaleNbhd
 import GroundTheory.PAdicHodge.FiniteFlat
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.DualOrder
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsDenominatorRegularStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsDenominatorRegular
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegularFunctionIffSection
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SectionEqZeroOfValues
 
@@ -303,7 +303,7 @@ theorem exists_den [Finite T] (Γ : QFGroup R T) {U : Γ.G.left.Opens} (hc : IsC
     · have := regularAt_mul Γ d (h' g hg)
       simpa [mul_assoc, mul_comm, mul_left_comm] using this
   · intro g _
-    obtain ⟨d, hd, V, hg, s, hs⟩ := GlobalTheory.T.exists_denominator_regular R T Γ f g
+    obtain ⟨d, hd, V, hg, s, hs⟩ := _root_.GlobalTheory.CompanionTheory.Ar.BT.RegDenom.exists_denom_regularAt R T Γ f g
     refine ⟨V, mem_nhdsWithin_of_mem_nhds (V.isOpen.mem_nhds hg), d, hd, fun g' hg' => ⟨V, hg', s, hs⟩⟩
 
 end GlobalTheory.CompanionTheory.Ar.BT.SubOrder

@@ -80,7 +80,7 @@ theorem archimedean_real_line_invariance : _root_.GlobalTheory.FunPr.ThetaLocalI
     simp only [g, e, LinearMap.toMatrix'_comp]
   · intro t
     have hsym : ∀ w w', GlobalTheory.RealWeil.sympl (ψt t w) (ψt t w') = GlobalTheory.RealWeil.sympl w w' := fun w w' => by
-      rw [hψt, hψt, hφ, GlobalTheory.T.unitary_archimedean_coordinate_action_symplectic, ← hφ, LinearEquiv.apply_symm_apply, LinearEquiv.apply_symm_apply]
+      rw [hψt, hψt, hφ, _root_.GlobalTheory.ArchLine.omega_archAct, ← hφ, LinearEquiv.apply_symm_apply, LinearEquiv.apply_symm_apply]
     obtain ⟨Mx, hMx⟩ := symplMatrix (Fin N) (ψt t) hsym
     have e : g t = Mx := Matrix.toLin'.injective (LinearMap.ext fun w => by
       rw [Matrix.toLin'_apply, Matrix.toLin'_apply, hg, hMx])

@@ -11,7 +11,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapPowerSeriesFamil
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantCoeffSubstOfForallConstantCoeffZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualBasisCoordMemMaximalIdealOfForallApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsQuasiLogarithmBasisReductionThickening
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuasiLogarithmTangentVectorsBasisDualLieStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuasiLogarithmTangentVectorsBasisDualLie
 open MvPowerSeries GlobalTheory GlobalTheory.Katz GlobalTheory.QLog GlobalTheory.PDivGroup GlobalTheory.Sandwich GlobalTheory.IndefiniteRowSideFullHecke.EpsilonPairingZeta GlobalTheory.PDivLat
 
 set_option autoImplicit false
@@ -219,7 +219,7 @@ theorem defect_level_one_nonunit : ∀ (p : ℕ) [Fact p.Prime] (C : Type) [Fiel
     obtain ⟨b, hb, hbα⟩ := (hadapt i).1 α
     rw [he', ← map_formalGroupLawCoboundaryOne_square F.θ Θ hΘ μ' c.μ hμ' hmap, coeff_map, hbα, hΘ, RingHom.mem_ker.1 hb,
       map_zero, map_zero]
-  obtain ⟨lb, hlb⟩ := GlobalTheory.T.quasiLogarithm_tangentVectors_basis_dual_lie p C v O hv G d c C hE k e'
+  obtain ⟨lb, hlb⟩ := _root_.GlobalTheory.LieBasisChange.lie_basis p C v O hv G d c C hE k e'
     (_root_.GlobalTheory.ReduceBasis.isBasis_map p C v O hv ε hε F G d c μ' hlift hmap k e hbasis Θ hΘ) hlog
   set b : Fin k → O := fun j => F.θ (w (Sum.inr j)) with hb
   set f := comb (Sum.elim 0 b) e' with hf

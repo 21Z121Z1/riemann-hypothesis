@@ -4,8 +4,8 @@ import Development.AbelianVarietyTheory.Definitions.Foundations.IsHermND
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementReferenceCompactSubgroup
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.HermLat
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InvVolMulPosLeConj
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LatticeStabilizerCommensurableUnramifiedHermitiaStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsometriesFixingSubspaceLeQuasiReflectionClosureStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LatticeStabilizerCommensurableUnramifiedHermitia
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsometriesFixingSubspaceLeQuasiReflectionClosure
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HaarInvVolumeConjModularCharacter
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.QuasiReflectionStabilizesLattice
 
@@ -54,16 +54,16 @@ variable [IsNonarchimedeanLocalField F] [CharZero F]
 theorem inf_stab_smul (L : LocE F E) {n : ℕ} (H : Subgroup ((Fin n → E) ≃ₗ[E] (Fin n → E)))
     {Λ : Submodule L.O (Fin n → E)} (hΛ : IsLat L Λ) {h} (hh : h ∈ H) :
     H ⊓ stabL L (h • Λ) = MulAut.conj h • (H ⊓ stabL L Λ) := by
-  rw [((GlobalTheory.T.latticeStabilizer_commensurable_unramified_hermitian L Λ Λ hΛ hΛ H).2 h).2, Subgroup.smul_inf, conj_self hh]
+  rw [((_root_.GlobalTheory.LatComm.stab_commensurable L Λ Λ hΛ hΛ H).2 h).2, Subgroup.smul_inf, conj_self hh]
 
 theorem comm_conj (L : LocE F E) {n : ℕ} (H : Subgroup ((Fin n → E) ≃ₗ[E] (Fin n → E)))
     {Λ : Submodule L.O (Fin n → E)} (hΛ : IsLat L Λ) : ∀ h ∈ H,
     (H ⊓ stabL L Λ).relIndex (MulAut.conj h • (H ⊓ stabL L Λ)) ≠ 0 ∧
       (MulAut.conj h • (H ⊓ stabL L Λ)).relIndex (H ⊓ stabL L Λ) ≠ 0 := by
   intro h hh
-  have hl := ((GlobalTheory.T.latticeStabilizer_commensurable_unramified_hermitian L Λ Λ hΛ hΛ H).2 h).1
+  have hl := ((_root_.GlobalTheory.LatComm.stab_commensurable L Λ Λ hΛ hΛ H).2 h).1
   rw [← inf_stab_smul L H hΛ hh]
-  exact ⟨(GlobalTheory.T.latticeStabilizer_commensurable_unramified_hermitian L _ _ hl hΛ H).1, (GlobalTheory.T.latticeStabilizer_commensurable_unramified_hermitian L _ _ hΛ hl H).1⟩
+  exact ⟨(_root_.GlobalTheory.LatComm.stab_commensurable L _ _ hl hΛ H).1, (_root_.GlobalTheory.LatComm.stab_commensurable L _ _ hΛ hl H).1⟩
 
 theorem invVol_self {G : Type} [Group G] (K : Subgroup G) : invVol K K = 1 := by
   simp [invVol]
@@ -79,11 +79,11 @@ theorem delta_indep (L : LocE F E) {n : ℕ} (H : Subgroup ((Fin n → E) ≃ₗ
     {Λ0 Λ : Submodule L.O (Fin n → E)} (h0 : IsLat L Λ0) (hΛ : IsLat L Λ) {g} (hg : g ∈ H)
     (h1 : invVol (H ⊓ stabL L Λ) (MulAut.conj g • (H ⊓ stabL L Λ)) = 1) :
     invVol (H ⊓ stabL L Λ0) (MulAut.conj g • (H ⊓ stabL L Λ0)) = 1 := by
-  have a := (GlobalTheory.T.latticeStabilizer_commensurable_unramified_hermitian L _ _ hΛ h0 H).1
-  have b := (GlobalTheory.T.latticeStabilizer_commensurable_unramified_hermitian L _ _ h0 hΛ H).1
-  have hl := ((GlobalTheory.T.latticeStabilizer_commensurable_unramified_hermitian L Λ Λ hΛ hΛ H).2 g).1
-  have c := (GlobalTheory.T.latticeStabilizer_commensurable_unramified_hermitian L _ _ hl h0 H).1
-  have d := (GlobalTheory.T.latticeStabilizer_commensurable_unramified_hermitian L _ _ h0 hl H).1
+  have a := (_root_.GlobalTheory.LatComm.stab_commensurable L _ _ hΛ h0 H).1
+  have b := (_root_.GlobalTheory.LatComm.stab_commensurable L _ _ h0 hΛ H).1
+  have hl := ((_root_.GlobalTheory.LatComm.stab_commensurable L Λ Λ hΛ hΛ H).2 g).1
+  have c := (_root_.GlobalTheory.LatComm.stab_commensurable L _ _ hl h0 H).1
+  have d := (_root_.GlobalTheory.LatComm.stab_commensurable L _ _ h0 hl H).1
   rw [inf_stab_smul L H hΛ hg] at c d
   have e1 := ((_root_.GlobalTheory.HL.invVol_conj_modular H _ inf_le_left (comm_conj L H h0)).2.2.2 _ a b g hg).1
   have e2 := (GlobalTheory.HL.invVol_mul_pos_le_conj _ _ _ a b c d).1
@@ -93,7 +93,7 @@ theorem delta_indep (L : LocE F E) {n : ℕ} (H : Subgroup ((Fin n → E) ≃ₗ
 
 theorem unimodular : ∀ {F : Type} [Field F] [ValuativeRel F] [TopologicalSpace F] [IsNonarchimedeanLocalField F] [CharZero F] {E : Type} [CommRing E] [Algebra F E] [TopologicalSpace E] (L : LocE F E), ∀ {n : ℕ} (Hm : Matrix (Fin n) (Fin n) E), IsHermND L Hm → ∀ (m : ℕ) (x : Fin m → Fin n → E), IsUnit (gramT L Hm x).det → ∀ Λ0 Λ : Submodule L.O (Fin n → E), IsLat L Λ0 → IsLat L Λ → ∀ h ∈ fixG L Hm (Submodule.span E (Set.range x)), invVol (fixG L Hm (Submodule.span E (Set.range x)) ⊓ stabL L Λ0) (fixG L Hm (Submodule.span E (Set.range x)) ⊓ stabL L (h • Λ)) = invVol (fixG L Hm (Submodule.span E (Set.range x)) ⊓ stabL L Λ0) (fixG L Hm (Submodule.span E (Set.range x)) ⊓ stabL L Λ) := by
   intro F _ _ _ _ _ E _ _ _ L n Hm hH m x hx Λ0 Λ h0 hΛ h hh
-  have hgen := GlobalTheory.T.isometriesFixingSubspace_le_quasiReflection_closure L Hm hH m x hx
+  have hgen := _root_.GlobalTheory.HL.QReflGen.fixG_le_closure L Hm hH m x hx
   have hq := _root_.GlobalTheory.QRefl.qrefl_inverted L Hm hH m x hx
   have hmem := fun a ha g hg => qrefl_mem L hH.1 (Submodule.span E (Set.range x)) (a := a) ha (g := g) hg
   set H := fixG L Hm (Submodule.span E (Set.range x)) with hHdef
@@ -123,8 +123,8 @@ theorem unimodular : ∀ {F : Type} [Field F] [ValuativeRel F] [TopologicalSpace
       refine ⟨H.inv_mem ha.1, ?_⟩
       have := delta_inv L H h0 ha.1
       rwa [ha.2, one_mul] at this
-  have a := (GlobalTheory.T.latticeStabilizer_commensurable_unramified_hermitian L _ _ hΛ h0 H).1
-  have b := (GlobalTheory.T.latticeStabilizer_commensurable_unramified_hermitian L _ _ h0 hΛ H).1
+  have a := (_root_.GlobalTheory.LatComm.stab_commensurable L _ _ hΛ h0 H).1
+  have b := (_root_.GlobalTheory.LatComm.stab_commensurable L _ _ h0 hΛ H).1
   rw [inf_stab_smul L H hΛ hh,
     ((_root_.GlobalTheory.HL.invVol_conj_modular H _ inf_le_left (comm_conj L H h0)).2.2.2 _ a b h hh).1, (key h (hgen hh)).2, one_mul]
 

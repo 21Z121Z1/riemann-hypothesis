@@ -6,7 +6,9 @@ import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.RealPtExHolds
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousKapSymm
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ArchimedeanUnitaryElementLiftStatement
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.UnitaryElementPrescribedBlocks
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ExtendByZeroApplyOfNeStatement
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ExtendByZeroApplyOfNe
+import Formalism.RealPlaceAnalysis.SmoothOnGVIff
+import Formalism.FormalDegreeBessel.StatementG
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ExistsOrthogonalHermitianSubspaceStatement
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Matrix
 open scoped TensorProduct
@@ -32,7 +34,7 @@ theorem eichler_frame : ∀ {n m : ℕ} (ε : Fin n → Bool) (G Q : Matrix (Fin
   have h2 : Q⁻¹ * Q = 1 := Matrix.nonsing_inv_mul Q hd
   have ex : ∀ z : Matrix (Fin n) (Fin m) ℂ, xᴴ * G * z = (Q * x)ᴴ * Formalism.REAL.Jm ε * (Q * z) := fun z => by
     rw [← hG, Matrix.conjTranspose_mul]; simp only [Matrix.mul_assoc]
-  obtain ⟨u, w, hu, hw, hux, hN, hJ⟩ := GlobalTheory.T.unitary_element_prescribed_blocks ε (Q * x) (Q * y) A (by rw [← ex, hxx]) (by rw [← ex, hxy])
+  obtain ⟨u, w, hu, hw, hux, hN, hJ⟩ := _root_.GlobalTheory.CompanionTheory.EichlerTransf.eichler_transformation ε (Q * x) (Q * y) A (by rw [← ex, hxx]) (by rw [← ex, hxy])
   refine ⟨u * Q, Q⁻¹ * w, fun i v hi => ?_, fun v i hi => ?_, fun i j hj => ?_, ?_⟩
   · simp [Matrix.mul_apply, hu i _ hi]
   · simp [Matrix.mul_apply, hw _ i hi]

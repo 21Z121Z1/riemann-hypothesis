@@ -4,7 +4,6 @@ import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.TermLoc
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LocClosed
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NumberFieldLatticeDeterminedByLocalLattices
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianLatticeLocalGlobalPrinciple
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianLatticeLocalGlobalPrincipleStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryComplementMovesLocalTermsWithDataStatement
 
 noncomputable section
@@ -68,7 +67,7 @@ theorem glue_local_orbits : ∀ (D : D7) (X : HidaSetting D) (Y : Full X) (u u' 
         (GlobalTheory.T.unitaryComplement_moves_local_terms_with_data (Z.M p) (Z.agree p).1 (locH Z p) D.R.rS D.R.k (FP p) (finrank_loc p) (hR p) g hg
           (y p) (y' p) τ hτ1 hm).1, by rw [← hτ2]⟩
   choose h hU h1 τ hτ1 hτ2 using key
-  obtain ⟨Λ', hΛ', hp⟩ := (GlobalTheory.T.hermitianLattice_local_global_principle D Z).2 Λ hΛ (fun p => LocNG.img (h p) (lattice₂ D Z.M p Λ))
+  obtain ⟨Λ', hΛ', hp⟩ := (_root_.GlobalTheory.Unfold.LatLoc.lattices_local_global D Z).2 Λ hΛ (fun p => LocNG.img (h p) (lattice₂ D Z.M p Λ))
     (fun p => img_lattice _ _ (localLattice_fg_and_span_eq_top Z Λ hΛ p))
     (hfin.subset fun p hp hc => hp (by simp only [h1 p hc, img_one]))
   exact ⟨Λ', ⟨hΛ', fun p => ⟨τ p, hτ1 p, (hτ2 p).trans (hp p).symm⟩⟩, fun p => ⟨h p, hU p, (hp p).symm⟩⟩

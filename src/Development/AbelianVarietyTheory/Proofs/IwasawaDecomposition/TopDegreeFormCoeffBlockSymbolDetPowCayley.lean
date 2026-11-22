@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BlockSymAppl
 import ReciprocityTheory.DualLattices.DetPolyMulCayleyOmegaPow
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BlockGraph
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TopDegreeFormCoeffRenameCayleyBlockSymbolEmbeddi
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CayleyOperatorPowEqSignedSumPartialDerivsStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CayleyOperatorPowEqSignedSumPartialDerivs
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConstantCoeffCayleyOperatorPowDeterminantPow
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CoeffComposedPartialDerivListOfNodupStatement
 
@@ -78,7 +78,7 @@ theorem GlobalTheory.topCoeff_blockSym_det_pow : ∀ (p q : ℕ) (h1 : Fintype.c
     GlobalTheory.GoodMetric.topCoeff ((GlobalTheory.DomainDens.blockSym h1 ()).det ^ q) =
       ∏ i ∈ Finset.range p, (((q + i).factorial : ℂ) / i.factorial) := by
   intro p q h1
-  rw [det_pow_eq, _root_.GlobalTheory.CayleyBlock.topCoeff_rename_blockEmb, ← _root_.GlobalTheory.constantCoeff_cayOp_pow_cayDet_pow, GlobalTheory.T.cayleyOperator_pow_eq_signed_sum_partialDerivs, LinearMap.sum_apply]
+  rw [det_pow_eq, _root_.GlobalTheory.CayleyBlock.topCoeff_rename_blockEmb, ← _root_.GlobalTheory.constantCoeff_cayOp_pow_cayDet_pow, _root_.GlobalTheory.CayleyBlock.cayOp_pow_eq_sum, LinearMap.sum_apply]
   have key : ∀ τ : Fin q → Equiv.Perm (Fin p), (sgnProd τ : ℂ) * coeff (blockGraph τ) (sumMap p q (cayDet p ℂ ^ q)) =
       constantCoeff (sgnProd τ • dList (smallList τ) (cayDet p ℂ ^ q)) := by
     intro τ

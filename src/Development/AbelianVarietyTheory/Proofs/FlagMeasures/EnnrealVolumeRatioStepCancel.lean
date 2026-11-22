@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NegLogProdLValEtaLeA
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsGaugeAll
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaussianSumStabiliserUnfolding
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LeftQuotientCovolumeEqFundamentalDomainInter
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaussianQuadricDensityExistsPosContinuousStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaussianQuadricDensityExistsPosContinuous
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AutInstDegreeRootDiscriminantRank
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUnitVectorOrthogonalInstanceRankThree
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MassRatioRankFactor
@@ -96,7 +96,7 @@ theorem volumeStep_of_siegelMean : SiegelMean → VolumeStep := by
       omega
     rwa [hI, Finset.prod_singleton] at this
   have hd : 0 < ∏ v, gaussDens (I.ε v) (sgn ℝ s) := by
-    refine Finset.prod_pos fun v _ => (GlobalTheory.T.gaussianQuadricDensity_exists_pos_continuous I.n (I.ε v)).2.2 s ?_
+    refine Finset.prod_pos fun v _ => (_root_.GlobalTheory.GaussMean.Density.gaussDens_spec I.n (I.ε v)).2.2 s ?_
     obtain ⟨hp, hq⟩ := hPQ v
     cases s
     · have : 0 < I.qAt v := by

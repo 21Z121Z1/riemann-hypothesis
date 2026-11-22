@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Howe
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemIntMat
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FixedMemOfOrbitHeight
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LatticeModelVacuumTranslateClassesIndependent
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MatrixLatticeIndexIntegralTranslationInvarianceStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MatrixLatticeIndexIntegralTranslationInvariance
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsIntGramOfFixed
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsConjugateModelExtremalDualParameter
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.UnramifiedLocalDualPairSwapHermitianAdjoint
@@ -116,7 +116,7 @@ theorem step (hP : GlobalTheory.Hk3.LocPair ϖ σ q δ JS JT ψ ρ ω) (s : M) (
   obtain ⟨l, hl, hg⟩ := _root_.GlobalTheory.Hk3.HoweDuality.exists_int_gram_of_fixed L ϖ σ q δ n n' JS JT ψ M ρ ω hP s hs0 hs hspan x hfix
   obtain ⟨v, hv, u, hu, h1, h2⟩ := _root_.GlobalTheory.Hk3.HoweG.gramClass_orbit_mod_lower L ϖ σ q δ n n' JS JT ψ M ρ ω hP s hs0 hs hspan (x - l) hg
   have hidx : latIdx (x - l) = latIdx x := by
-    rw [sub_eq_add_neg]; exact (GlobalTheory.T.matrixLatticeIndex_integral_translation_invariance L n' n x).1 _ (neg_mem hl)
+    rw [sub_eq_add_neg]; exact (_root_.GlobalTheory.Hk3.HoweDuality.latIdx_invariance L n' n x).1 _ (neg_mem hl)
   refine ⟨v, hv, u, by rwa [hidx] at hu, ?_, h2⟩
   refine Submodule.span_le.2 ?_ h1
   rintro _ ⟨h, hh, rfl⟩
@@ -162,7 +162,7 @@ theorem fixed_mem_span (hP : GlobalTheory.Hk3.LocPair ϖ σ q δ JS JT ψ ρ ω)
     intro x
     have hu : -Quotient.out (QuotientAddGroup.mk x : Matrix (Fin n') (Fin n) L ⧸ intMat L n' n) + x ∈ intMat L n' n :=
       QuotientAddGroup.eq.1 (QuotientAddGroup.out_eq' _)
-    have := (GlobalTheory.T.matrixLatticeIndex_integral_translation_invariance L n' n (Quotient.out (QuotientAddGroup.mk x : Matrix (Fin n') (Fin n) L ⧸ intMat L n' n))).1 _ hu
+    have := (_root_.GlobalTheory.Hk3.HoweDuality.latIdx_invariance L n' n (Quotient.out (QuotientAddGroup.mk x : Matrix (Fin n') (Fin n) L ⧸ intMat L n' n))).1 _ hu
     rw [add_neg_cancel_left] at this
     exact this.symm
   have hmemV : ∀ x, ρ x s ∈ V (QuotientAddGroup.mk x) := fun x => Submodule.subset_span ⟨x, rfl, rfl⟩
@@ -194,7 +194,7 @@ theorem fixed_mem_span (hP : GlobalTheory.Hk3.LocPair ϖ σ q δ JS JT ψ ρ ω)
     induction c using QuotientAddGroup.induction_on with
     | H x =>
       rw [hsmul, hμmk, hμmk]
-      exact (GlobalTheory.T.matrixLatticeIndex_integral_translation_invariance L n' n x).2 _ (Subgroup.mem_comap.1 k.2)
+      exact (_root_.GlobalTheory.Hk3.HoweDuality.latIdx_invariance L n' n x).2 _ (Subgroup.mem_comap.1 k.2)
   have hS : ∀ v ∈ S, ∀ k, π k v = v := by
     intro v hv k
     have hle : S ≤ LinearMap.eqLocus (π k) LinearMap.id := by

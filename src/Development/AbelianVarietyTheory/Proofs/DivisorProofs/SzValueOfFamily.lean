@@ -4,11 +4,11 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.TorsTransport
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModQPrin
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModJTau
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralModularFamilyValueDivPeriodPowStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSLTwoPermutedModularFamilyAlgebraClosureStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSLTwoPermutedModularFamilyAlgebraClosure
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QExpansionValuationBoundRingClosure
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraicValuationAtLeastAtEmbeddingRingOps
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraicValuationAtLeastOfForallRatGt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegrallyClosedPadicIntegralSubringStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegrallyClosedPadicIntegralSubring
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAlgebraicOfRationalValuation
 
 open scoped UpperHalfPlane MatrixGroups ModularForm Manifold BigOperators
@@ -27,9 +27,9 @@ theorem sz_value_of_family (l : ℕ) [Fact l.Prime] (lam : algebraicClosure ℚ 
     Sz l lam r (f i τ₀ / Ω ^ w) := by
   refine _root_.GlobalTheory.QFam.sz_of_forall_rat_gt l lam r _ fun q hrq => ?_
   obtain ⟨c, hc0, hc, hc'⟩ := _root_.GlobalTheory.QFam.exists_sz_scale l lam q
-  obtain ⟨R, hR, hcl⟩ := GlobalTheory.T.exists_integrallyClosed_padicIntegralSubring l lam
+  obtain ⟨R, hR, hcl⟩ := _root_.GlobalTheory.QFam.exists_szRing l lam
   obtain ⟨hconst, hmono, -, hmul, -⟩ := _root_.GlobalTheory.QFam.QSz.qAll_sz_ring l lam N hN
-  have hfam : IsFam act w fun i τ => c * f i τ := (GlobalTheory.T.isSLTwoPermutedModularFamily_algebra_closure ι act).2.2.1 w c f hf
+  have hfam : IsFam act w fun i τ => c * f i τ := (_root_.GlobalTheory.QFam.isFam_algebra ι act).2.2.1 w c f hf
   have hq' : ∀ i, QAll (· ∈ R) N fun τ => c * f i τ := fun i => by
     obtain ⟨a, ha, ha'⟩ := hmono _ 0 _ (by linarith) (hmul _ _ _ _ (hconst _ c hc) (hq i))
     exact ⟨a, ha, fun n => (hR _).2 (ha' n)⟩

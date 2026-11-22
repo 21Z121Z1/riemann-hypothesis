@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ValLast
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsJointlySmoothBiThetaWeilRepFirstVariable
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsJointlySmoothBiThetaWeilRepSecondVariableStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilActionsBiThetaTwoVariablesCommuteStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousIteratedWeilActionBiThetaStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsJointlySmoothBiThetaWeilRepSecondVariable
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilActionsBiThetaTwoVariablesCommute
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousIteratedWeilActionBiTheta
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleDiscreteSeriesOfHasParam
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
@@ -16,7 +16,7 @@ namespace GlobalTheory.SeeSaw
 
 theorem biAct_all : ∀ D : D7, BiAct D := by
   intro D ψ A S A' χA χS χS' χA' oma omb ha hb C hC
-  exact ⟨_root_.GlobalTheory.BiTransfer.isBiTheta_act_left D ψ A S A' χA χS oma ha C hC, GlobalTheory.T.isBiTheta_weilRep_second_variable D ψ A S A' χS' χA' omb hb C hC,
-    GlobalTheory.T.weilActions_biTheta_twoVariables_commute D ψ A S A' χA χS χS' χA' oma omb ha hb C hC, GlobalTheory.T.continuous_iteratedWeilAction_biTheta D ψ A S A' χA χS χS' χA' oma omb ha hb C hC⟩
+  exact ⟨_root_.GlobalTheory.BiTransfer.isBiTheta_act_left D ψ A S A' χA χS oma ha C hC, _root_.GlobalTheory.BiActRight.isBiTheta_act_right D ψ A S A' χS' χA' omb hb C hC,
+    _root_.GlobalTheory.SeeSawComm.comm D ψ A S A' χA χS χS' χA' oma omb ha hb C hC, _root_.GlobalTheory.BiActCont.continuous_biAct D ψ A S A' χA χS χS' χA' oma omb ha hb C hC⟩
 
 end GlobalTheory.SeeSaw

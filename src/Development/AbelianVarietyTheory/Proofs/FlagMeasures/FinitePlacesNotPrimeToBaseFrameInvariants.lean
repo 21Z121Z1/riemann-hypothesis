@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.AtBase
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.NGData
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.LocFacts
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NonzeroCmElementLocalUnitAlmostAllStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NonzeroCmElementLocalUnitAlmostAll
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FrameFactorsLocalUnitsAlmostAll
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalModelsUnsplitAlmostAll
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalisedBaseFramesLeadingMinorEq
@@ -55,11 +55,11 @@ theorem GlobalTheory.PrimeAlmostAll.primeTo_finite : ∀ (D : D7) (Z : LocDat D)
       (⋃ a : Fin (D.R.rS + 1), {p : PlF D | ¬ LocNG.IsUnitO (Z.M p) (frFac Z.δ p a)}) ∪
       {p : PlF D | ¬ LocNG.IsUnitO (Z.M p) ((D.s.atP p).ιE (Gval F00 F'0))} ∪
       ⋃ l : Fin (D.R.rS + 2), {p : PlF D | xs l ≠ 0 ∧ ¬ LocNG.IsUnitO (Z.M p) ((D.s.atP p).ιE (xs l))}).Finite := by
-    refine (((_root_.GlobalTheory.LocSplitFinite.split_finite D Z).union (Set.finite_iUnion fun a => _root_.GlobalTheory.FrameFactorUnit.frFac_isUnitO_finite D Z a)).union (GlobalTheory.T.nonzero_cm_element_local_unit_almost_all D Z _ hG)).union
+    refine (((_root_.GlobalTheory.LocSplitFinite.split_finite D Z).union (Set.finite_iUnion fun a => _root_.GlobalTheory.FrameFactorUnit.frFac_isUnitO_finite D Z a)).union (_root_.GlobalTheory.UnitAlmostAll.unit_almost_all D Z _ hG)).union
       (Set.finite_iUnion fun l => ?_)
     by_cases h : xs l = 0
     · simp [h]
-    · exact (GlobalTheory.T.nonzero_cm_element_local_unit_almost_all D Z _ h).subset (fun p hp => hp.2)
+    · exact (_root_.GlobalTheory.UnitAlmostAll.unit_almost_all D Z _ h).subset (fun p hp => hp.2)
   refine hfin.subset ?_
   intro p hp
   by_contra hgood

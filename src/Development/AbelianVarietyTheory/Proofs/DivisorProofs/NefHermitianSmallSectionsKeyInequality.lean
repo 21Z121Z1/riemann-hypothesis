@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFubiniStudyOf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FubiniStudyBundleIsNefOfNonnegWeights
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FubiniStudyLeShiftOfSmallSections
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeometricDegreePullBirationalModel
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermLBLeBySmallSectionTensorIsometricTransShiftStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermLBLeBySmallSectionTensorIsometricTransShift
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBirationalModelTotallyOrderedFamily
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithSelfIntersectionMonoOfIsNef
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianLineBundleIsNefPullback
@@ -57,7 +57,7 @@ theorem key_ineq : GlobalTheory.Published.ArCalc → AmpleHS → SemiPull → �
   set B' := B.pull π rfl with hB'
   have hsmall : SmallFam B' f w := _root_.GlobalTheory.HSNef.smallFam_pull k X Y p q π rfl φ hmod B _ (boxFam e x) w hsm
   have hle : Le M (B'.shift (fun _ => s) fun _ => rfl) := _root_.GlobalTheory.HSNef.le_shift_of_isFS k Y q M B' _ f w hM hsmall
-  have hle' := (GlobalTheory.T.hermLBLeBySmallSection_tensor_isometric_trans_shift k Y q (B'.shift (fun _ => s) fun _ => rfl) M M).2.2.2 Δ hle
+  have hle' := (_root_.GlobalTheory.HSNef.le_tens_isometric_trans_shift k Y q (B'.shift (fun _ => s) fun _ => rfl) M M).2.2.2 Δ hle
 
   have hs0 : 0 ≤ s := by
     rw [hs]

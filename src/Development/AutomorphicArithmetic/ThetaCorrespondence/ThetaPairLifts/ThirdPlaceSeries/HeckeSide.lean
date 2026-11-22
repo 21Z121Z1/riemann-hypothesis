@@ -72,7 +72,7 @@ theorem locPol_eq_alt : ∀ (hL : _root_.UpperTheory.Zero.LLC.RecTExists) (D : D
   intro hL D π s w ϖ hcw hu J hJ f hf hf0 hfix c hc x hx
   have hw := conjSplit_w D s w hcw
   subst hw
-  obtain ⟨σc, hσc, huniq⟩ := GlobalTheory.T.splitPlaceLocalComponent_exists_unique_class D.host.E D.R.nV π (conjSplit s)
+  obtain ⟨σc, hσc, huniq⟩ := _root_.GlobalTheory.LocCompSplit.main D.host.E D.R.nV π (conjSplit s)
   obtain ⟨s', σ', h', hσ', hxe⟩ := hx
   have hh := huniq π s' h' σ' (NG.AutRep.iso_equivalence.refl π) hσ'
   have hxc : x = GlobalTheory.LocLanglands.cls σc := eq_of_heq (hxe.symm.trans (cls_heq h' σ' σc hh))

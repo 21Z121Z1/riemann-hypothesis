@@ -5,7 +5,8 @@ import Formalism.GradedWeylDivisibility.DualWeylDominanceOf
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormalizedFockFormPureTensorProperties
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIntertwinerOfSameHarishChandraParamUnitary
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHarishChandraTypeDualWeylModuleFockNormStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHarishChandraTypeDualWeylModuleFockNorm
+import Formalism.LocalRingCardinality.DataCoeff
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ConjCoefficientsWeylModuleRowActNormFock
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InvariantPosDefFormEqSmulInnerOfIrreducible
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DelSqIrreducibleUnitary
@@ -209,7 +210,7 @@ theorem exists_conj_weyl : ∀ (k n : ℕ) (h : k = n) (lam : DomWeight n) (u : 
     rw [hu i]
     simp
   obtain ⟨hnt, hfd, hrep, hK⟩ := hπ
-  obtain ⟨H, iN, iI, π0, e, hπ0, he_inj, he_mem, he_eq⟩ := GlobalTheory.T.exists_harishChandraType_dualWeylModuleFockNorm k lam
+  obtain ⟨H, iN, iI, π0, e, hπ0, he_inj, he_mem, he_eq⟩ := _root_.GlobalTheory.NablaType.exists_isHCTypeU_nablaSq k lam
   have hπ0' : IsHCTypeU k u π0 := by
     rw [hufun]
     exact hπ0

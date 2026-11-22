@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LocalSchro
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ExistsUnitarySupportedAtPlaceOfMulEqIdem
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PlacesToAdeles
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisOFinsetSum
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergCombAwayFromPlaceKeepsVacuumStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergCombAwayFromPlaceKeepsVacuum
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.OtherPlacesConvolutionFiniteAwayOrthogonal
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum MeasureTheory IsDedekindDomain NumberField Matrix
 open GlobalTheory.MixModel GlobalTheory.MixPer GlobalTheory.Grow GlobalTheory.Unf GlobalTheory.SplitWeil GlobalTheory.RootEx GlobalTheory.StepData GlobalTheory.SeeSaw GlobalTheory.LocMod GlobalTheory.QPl ValuativeRel
@@ -184,7 +184,7 @@ theorem innerVal_iter2 : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ), IsStdCha
   set E := conv (List.ofFn fun i : Fin r => (Q i.succ).e₀.mapDomain (Q i.succ).gl₀) with hEdef
   set f₁' := comb ψ _ _ (aconv (List.ofFn fun i : Fin r => (Q i.succ).D₁)) f₁ with hf₁'
   set f₂' := comb ψ _ _ (aconv (List.ofFn fun i : Fin r => (Q i.succ).D₂)) f₂ with hf₂'
-  have hvac : (Q 0).Vac f₁' f₂' := GlobalTheory.T.heisenbergComb_awayFromPlace_keeps_vacuum D ψ hψ σ S (Q 0) _ _ fc₁ fc₂ aw₁ aw₂ f₁ f₂ t1 t2 (hv 0)
+  have hvac : (Q 0).Vac f₁' f₂' := _root_.GlobalTheory.VacAway.vac_comb D ψ hψ σ S (Q 0) _ _ fc₁ fc₂ aw₁ aw₂ f₁ f₂ t1 t2 (hv 0)
 
   let Gf : GA D S.B.V → GL ((Q 0).n₁ ⊕ Fin ((Q 0).c + 1 + 1)) (Q 0).k → GL ((Q 0).n₂ ⊕ Fin ((Q 0).c + 1)) (Q 0).k → ℂ :=
     fun a' x₀ y₀ => GlobalTheory.PosOne.comb (Q 0).e₀ fun a => S.val c₁ c₂ (comb ψ _ _ (Q 0).D₁ f₁') (comb ψ _ _ (Q 0).D₂ f₂') φ f

@@ -6,10 +6,10 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FourierTransform
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSchwartzBruhatConvolutionLocalFieldPower
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ContrFactor
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.AllPositions
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntegralLastFactorSliceMemSchwartzBruhatStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsCutoffOfAddCharTranslationInvariantFunctioStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntegralLastFactorSliceMemSchwartzBruhat
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsCutoffOfAddCharTranslationInvariantFunctio
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsIntegralScaledBoxPiSupersetOfIsCompact
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchwartzBruhatFunctionalZeroOfFibreIntegralZero
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsIntegralScaledBoxPiSupersetOfIsCompactStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsFinsetIntegralScaledBoxPiCosetReps
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SumIntegralScaledBoxPiCosetRepsShiftInvariant
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntegralBoxInvariantEqMeasureRealMulSumReps
@@ -40,7 +40,7 @@ theorem kernel : ∀ (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] 
     refine ⟨s, fun t ht y => ?_⟩
     have := hs ht y
     simpa [sub_eq_add_neg] using this
-  obtain ⟨Φ', hΦ', hl⟩ := GlobalTheory.T.exists_cutoff_of_addChar_translation_invariant_functional k ψ hψc hψ1 I₀ I₁ I₂ M l h1 D s
+  obtain ⟨Φ', hΦ', hl⟩ := _root_.GlobalTheory.CharCutoff.exists_cutoff_of_char_invariant k ψ hψc hψ1 I₀ I₁ I₂ M l h1 D s
   have hz : ∀ x₀ x₁, ∫ a, Φ'.1 (x₀, x₁, a) ∂(Measure.pi fun _ => ν) = 0 := by
     intro x₀ x₁
     simp_rw [hΦ']
@@ -103,8 +103,8 @@ theorem coinvariants : ∀ (k : Type) [Field k] [ValuativeRel k] [TopologicalSpa
     simp only [Set.indicator_of_mem h0, one_mul]
     rw [integral_const_mul, integral_indicator_const _ (isOpen_box _).measurableSet]
     rw [← hvol, Complex.real_smul, mul_inv_cancel₀ (by exact_mod_cast hvol0), mul_one]
-  refine ⟨l ∘ₗ σ, fun Φ => ⟨⟨_, GlobalTheory.T.integral_last_factor_slice_mem_schwartzBruhat k ν I₀ I₁ I₂ Φ⟩, fun x => rfl, ?_⟩, ?_⟩
-  · set Ψ : SB (I₀ → k) := ⟨_, GlobalTheory.T.integral_last_factor_slice_mem_schwartzBruhat k ν I₀ I₁ I₂ Φ⟩
+  refine ⟨l ∘ₗ σ, fun Φ => ⟨⟨_, _root_.GlobalTheory.SliceIntegral.integral_slice_mem_SB k ν I₀ I₁ I₂ Φ⟩, fun x => rfl, ?_⟩, ?_⟩
+  · set Ψ : SB (I₀ → k) := ⟨_, _root_.GlobalTheory.SliceIntegral.integral_slice_mem_SB k ν I₀ I₁ I₂ Φ⟩
     have hk := kernel k ψ ν hψc hψ1 hν I₀ I₁ I₂ M l h1 h2 (Φ - σ Ψ) (fun x₀ => by
       simp only [Submodule.coe_sub, Pi.sub_apply]
       rw [integral_sub (hInt Φ x₀) (hInt (σ Ψ) x₀), hσi]

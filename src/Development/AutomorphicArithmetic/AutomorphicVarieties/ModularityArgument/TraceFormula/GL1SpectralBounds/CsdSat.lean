@@ -32,6 +32,6 @@ theorem UpperTheory.V.Z.Tf.GOne.csdSat :
   have hc : π.IsCsd := GlobalTheory.CsdBack.isCsd_of_paired CuspFormAutomorphicBounds.automorphicFormsFiniteGL E n π
     (PositivityTheory.JMult1.gelfandKazhdanDual_of_rigidity PositivityTheory.AdelicQuotientData.jacquetShalikaRigidity
       GlobalTheory.CompanionTheory.CuspFinGL.cuspFormsBoundedGL E n π) h
-  filter_upwards [GlobalTheory.T.cuspidal_satake_almost_all π] with w hw
+  filter_upwards [_root_.GlobalTheory.CompanionTheory.SatAe.eventually_exists_hasSat π] with w hw
   obtain ⟨B, hB⟩ := hw
   exact ⟨B, hB, fun u hu => (UpperTheory.satake_parameters_complex_conjugate E u).1 n π hc B (conj_eq hu ▸ hB)⟩

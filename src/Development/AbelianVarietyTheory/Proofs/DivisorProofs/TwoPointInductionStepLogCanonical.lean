@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsAlgC
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.PointSeparationPair
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSmallAmpleThroughOff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NotLcAtAddOfIsNkltCentre
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNonKltCentreOfNotKltAfterAddingStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNonKltCentreOfNotKltAfterAdding
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLcCutPointOfNotLcOtherStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LcCutTwoClosedPointsOneCentreStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTopologicalKrullDimClosurePointLe
@@ -90,7 +90,7 @@ theorem twoPoint_step : GlobalTheory.Published.Principalisation → GlobalTheory
     exact hz0 (topologicalKrullDim_closure_closedPt_le_zero hx)
   have hDq : IsQCart D := hD.isQCart
 
-  obtain ⟨w, hwz, hw⟩ := GlobalTheory.T.exists_nonKltCentre_of_not_klt_after_adding X p n hp hn Δ D z hDq (hklt z) hkz
+  obtain ⟨w, hwz, hw⟩ := _root_.GlobalTheory.PairStep.Centre.exists_isNkltCentre X p n hp hn Δ D z hDq (hklt z) hkz
   have hwx : w ⤳ x := hwz.trans hzx
   have hwne : w ≠ x := by
     rintro rfl
@@ -107,7 +107,7 @@ theorem twoPoint_step : GlobalTheory.Published.Principalisation → GlobalTheory
   have hwN := hbig w (i + 1) (Or.inl hwx) he1' hdw
   by_cases hlx' : LcAt p n (Δ + D) x'
   ·
-    obtain ⟨w', hw'x', hw'⟩ := GlobalTheory.T.exists_nonKltCentre_of_not_klt_after_adding X p n hp hn Δ D x' hDq (hklt x') hnk
+    obtain ⟨w', hw'x', hw'⟩ := _root_.GlobalTheory.PairStep.Centre.exists_isNkltCentre X p n hp hn Δ D x' hDq (hklt x') hnk
     by_cases hw'x : w' ⤳ x
     ·
       have hkw' : ¬ KltAt p n (Δ + D) w' :=

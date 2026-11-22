@@ -11,7 +11,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDeRhamSheafIffAlt
 import Development.AbelianVarietyTheory.Definitions.Divisors.TorsionTowersOfDivisibleGroup
 import Development.AbelianVarietyTheory.Definitions.Divisors.ComparisonMemCechHodgeFiltration
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RangeRelativeFrobeniusPrimitiveDeRhamEqConjugate
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRelativeFrobeniusGrpSchemeCharPStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRelativeFrobeniusGrpSchemeCharP
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeFirstDeRhamStructure
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstDeRhamHomologyProjectiveOverTensorIntegers
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankFirstDeRhamHomologyHodgeFiltrationOfField
@@ -78,7 +78,7 @@ private theorem frob_of_mem (hk : (p : k) = 0) (A : Over (Sp k)) [GrpObj A] (hA 
   letI : Algebra k k := (frobR p k hk).toAlgebra
   obtain ⟨g, hg⟩ := GlobalTheory.AbVarRelDim.exists_relDim k A hA
   have hπ := isGrpPullback_pullback A (spMap (frobR p k hk))
-  obtain ⟨F, hFm, hF⟩ := GlobalTheory.T.exists_relativeFrobenius_grpScheme_charP p k hk A _ _ hπ
+  obtain ⟨F, hFm, hF⟩ := _root_.GlobalTheory.RelFrobGrp.main p k hk A _ _ hπ
   have hker := (_root_.GlobalTheory.ConjSeq.range_primPull_relFrob GlobalTheory.abelianDeRham.2.2.1 p k hk A _ _ hπ F hF g hA hg).2
   let m := GlobalTheory.Published.AbelianDeRham.bcMor hπ
   have e : primPull (dp0 k) (𝟙 _) F (m.pull c) = frobDR p k hk A c :=

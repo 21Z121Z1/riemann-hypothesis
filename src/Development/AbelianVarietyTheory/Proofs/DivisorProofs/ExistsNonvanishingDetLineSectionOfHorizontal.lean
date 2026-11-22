@@ -123,7 +123,7 @@ theorem exists_section_of_horFn : ∀ (E : Type) [Field E] [NumberField E] [IsCM
     exact UnitAt.inv ⟨_, hu hz, rfl⟩
   let Dv : B.Dv := show cartierGroup B.X from ⟨fun z => germOf z (ε z)⁻¹, fun y => ⟨W y, hy y, (δ y)⁻¹, fun z hz => hg hz⟩⟩
   have hD (y : B.X) (z : B.X) (hz : z ∈ W y) : Dv.IsEqn z (δ y)⁻¹ := hg hz
-  obtain ⟨hne, hd⟩ := GlobalTheory.T.complexPoints_nonempty_dense_variety c.F B e
+  obtain ⟨hne, hd⟩ := _root_.GlobalTheory.CxPtsDense.nonempty_and_dense c.F B e
   have hA := hd (io ⁻¹ᵁ (genBd Y).compl) (by
     obtain ⟨_, ⟨z, rfl⟩, hz⟩ := Y.jQ_dense.inter_open_nonempty _ io.isOpenEmbedding.isOpen_range
       ⟨_, genericPoint B.X, rfl⟩

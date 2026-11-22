@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RealPlaceBlockWe
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ModelPartitionSizeExtensionFirstLastRows
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ModelPolynomialOddDegreeOfRealisesFramePoly
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SubstitutedValueAtComplexPointOddBlocks
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NumeratorDivDenominatorAtComplexPointStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NumeratorDivDenominatorAtComplexPoint
 open Formalism.BasicNotions NumberField IsDedekindDomain Formalism.MainNotions.G Formalism.MainNotions.FormalGroupSystem Formalism.L2.G.Pend Formalism.MainNotions Formalism.L2.Ker Formalism.L2.PairingIndexBounds.F Formalism.L2.KerInert Formalism.UG Formalism.L2.G.Cmp Formalism.L2.Forms Formalism.L2.KerInert.SecondKernelProjection Formalism.L2.KerInert.QuadraticBaseChangeGL3 Formalism.L2.KerInert.SecondKernelDifference Formalism.L2.KerInert.SecondKernelHermitian GlobalTheory.TwV.DelA
 attribute [local instance] Formalism.BasicNotions.Host.cmStar
 
@@ -63,7 +63,7 @@ theorem leftSide_at_point : ∀ {p : ℕ} [Fact p.Prime] (X : Sys p) (D : D7) (p
   intro p _ X D pos Kc _ _ ι j hN ν hν Q hQ Gc G hR hG d f' hf' hdf
   have hodd := _root_.GlobalTheory.TwV.DelA.oddDeg_of_realises X D pos Kc ι j hN ν hν Q hQ Gc G hR hG
   have hsub := _root_.GlobalTheory.TwV.DelA.evD_subD X D pos Kc ι j hN Gc G hG hodd d f' hf' hdf
-  have hnum := GlobalTheory.T.numerator_div_denominator_at_complex_point X D pos Kc ι j hN d f' hf' hdf
+  have hnum := _root_.GlobalTheory.TwV.DelA.evD_numD_denD X D pos Kc ι j hN d f' hf' hdf
   have hex := _root_.GlobalTheory.TwV.DelA.eT_last_pair X D pos j
   have hnn := (_root_.GlobalTheory.TwV.DelA.size_first_last_rows X D pos j hN ν hν).2.2.2.2
   have hR' := hR ⟨dfr X D hN d f', fun τ => (hdf τ).isUnit⟩

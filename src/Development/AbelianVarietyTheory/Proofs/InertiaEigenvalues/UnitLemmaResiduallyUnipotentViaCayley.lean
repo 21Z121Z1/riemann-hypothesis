@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnitLemmaGroup
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsLocalRingOfIdem
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardStableLattices
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdjoinEqTopAndIsReducedOfCharpolySeparableStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdjoinEqTopAndIsReducedOfCharpolySeparable
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CharpolyMulLeftSeparableOfAdjoinEqTop
 
 noncomputable section
@@ -147,7 +147,7 @@ theorem val_res_eq {O E A₁ A₂ : Type} [CommRing O] [IsDomain O] [IsDiscreteV
 theorem separable_of_adjoin {E A : Type} [Field E] [CharZero E] [CommRing A] [Algebra E A] [Module.Finite E A]
     (g Y : A) (h₁ : Y ∈ Algebra.adjoin E ({g} : Set A)) (h₂ : g ∈ Algebra.adjoin E ({Y} : Set A))
     (hg : (LinearMap.mulLeft E g).charpoly.Separable) : (LinearMap.mulLeft E Y).charpoly.Separable := by
-  obtain ⟨ht, hr⟩ := GlobalTheory.T.adjoin_eq_top_and_isReduced_of_charpoly_separable E A g hg
+  obtain ⟨ht, hr⟩ := _root_.GlobalTheory.SepGen.adjoin_eq_top_and_isReduced E A g hg
   refine _root_.GlobalTheory.charpoly_mulLeft_separable_of_adjoin_eq_top E A Y (eq_top_iff.2 ?_) hr
   rw [← ht]
   exact Algebra.adjoin_le (Set.singleton_subset_iff.2 h₂)

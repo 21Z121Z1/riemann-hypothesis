@@ -3,8 +3,8 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubPairRight
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformFirstCohomologyKernelsExistStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThickeningVeryAmpleOpensExist
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThickeningAffinePreimage
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IdealPowerAnnihilatesSectionsStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormalLiftVeryAmpleSectionsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IdealPowerAnnihilatesSections
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormalLiftVeryAmpleSections
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThickeningRestrictionCompatibleOpens
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThickeningCechCoverCompatible
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThickeningCechRestrictionCommutes
@@ -12,7 +12,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormalLiftSecti
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThickeningTwistedSectionTransition
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormalLiftSectionsNonvanishingStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormalLiftClosedEmbeddingStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormalLiftProjectiveEmbeddingCompatibleStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormalLiftProjectiveEmbeddingCompatible
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory GlobalTheory.AbLaw PositivityTheory.FormalThickening
 open GlobalTheory.ProjSpace GlobalTheory.QCoh.Qcqs GlobalTheory.Cartier GlobalTheory.CompanionTheory.FormalAlg GlobalTheory.CompanionTheory.FormalAlg.Lift
 
@@ -35,7 +35,7 @@ theorem exists_uniform_lift : ∀ (R : Type) [CommRing R] [IsNoetherianRing R] (
   subst hρ
   obtain ⟨D, hD0, hDβ, hDm, hDi, hDc, hDa⟩ :=
     _root_.GlobalTheory.CompanionTheory.FormalAlg.Lift.exists_basicOpens_of_tower R _ Y β hβ (pw (N 0) (d : ℤ)) m s (isLB_pw (hN 0).1 _) hs
-  obtain ⟨sh, hsh0, hshp, hshu⟩ := GlobalTheory.T.formal_lift_very_ample_sections R _ Y β hβ N v hN d m s hs D hD0 hDβ hDm hDi hDc hDa
+  obtain ⟨sh, hsh0, hshp, hshu⟩ := _root_.GlobalTheory.CompanionTheory.FormalAlg.Lift.exists_lifts_tower R _ Y β hβ N v hN d m s hs D hD0 hDβ hDm hDi hDc hDa
   have hc : ∀ e S, OperatorsCommute (ι := Fin (m + 1)) (R := R)
       (A := fun t => Tm _ Y N D (d : ℤ) e t S) fun j t => mulT _ Y N D (d : ℤ) e t S (sh e j S) :=
     fun e S i j t a => mulT_comm _ Y N D (d : ℤ) e t S (sh e i S) (sh e j S) a
@@ -72,7 +72,7 @@ theorem exists_uniform_lift : ∀ (R : Type) [CommRing R] [IsNoetherianRing R] (
       (hDβ e S) (hDa (e + 1) S hS)
   have h_kill : ∀ e t (S : Finset (Fin (m + 1))), S.Nonempty →
       Ideal.span (Set.range ρ) ^ (e + 1) • (⊤ : Submodule R (Tm _ Y N D (d : ℤ) e t S)) = ⊥ :=
-    fun e t S _ => GlobalTheory.T.ideal_power_annihilates_sections R _ Y e _ _
+    fun e t S _ => _root_.GlobalTheory.CompanionTheory.FormalAlg.Lift.pow_smul_top_secOnR R _ Y e _ _
   have h_bij : ∀ i e t (S : Finset (Fin (m + 1))), i ∈ S → Function.Bijective (mulT _ Y N D (d : ℤ) e t S (sh e i S)) := by
     intro i e t S hi
     obtain ⟨y, hy⟩ := hshu e i S hi
@@ -92,7 +92,7 @@ theorem exists_uniform_lift : ∀ (R : Type) [CommRing R] [IsNoetherianRing R] (
     h_kill h_bij hloc.1 hloc.2 h_one h_fin
   refine ⟨t₀.toNat, fun t ht D' hD' e σ => ?_⟩
   subst hD'
-  exact GlobalTheory.T.formal_lift_projective_embedding_compatible R _ Y β hβ N v hN d m s hs D hD0 hDβ hDm hDi hDc hDa (t : ℤ) e
+  exact _root_.GlobalTheory.CompanionTheory.FormalAlg.Lift.lift_of_cech_pairs R _ Y β hβ N v hN d m s hs D hD0 hDβ hDm hDi hDc hDa (t : ℤ) e
     (fun c hc0 hcoc => ht₀ t (by omega) e c hc0 hcoc) σ
 
 end GlobalTheory.CompanionTheory.FormalAlg.Lift

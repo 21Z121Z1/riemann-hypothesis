@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Transv
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.WeilDatumExistence
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilRepresentationRationalTranslateSubstitution
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BesselToFourierJacobiHandedFamilyContinuousAutom
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PairedThetaKernelContinuousAndRationallyInvarianStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PairedThetaKernelContinuousAndRationallyInvarian
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FourierJacobiHandOffAutomorphic
 
 noncomputable section
@@ -108,7 +108,7 @@ theorem integrableOn_pair {Y : GA D J.W₀ → WO J.W₀ B.L → ℂ} {F : WO J.
 
 theorem contAut_pairKer {Y : GA D J.W₀ → WO J.W₀ B.L → ℂ} {Ξ : WO J.W₀ B.V₀ → ℂ} (hY : IsQuasiFam ψ J.W₀ B.L Y)
     (hΞ : IsThetaFunO ψ J.W₀ B.V₀ Ξ) (h₁ : GA D B.A) : IsContAut J.W₀ fun h₀ => pairKer s vL Y Ξ h₀ h₁ :=
-  have H := GlobalTheory.T.pairedThetaKernel_continuous_and_rationally_invariant D ψ σ J B s vL Y Ξ hY hΞ
+  have H := _root_.GlobalTheory.PairKer.pairKer_law D ψ σ J B s vL Y Ξ hY hΞ
   ⟨fun γ hγ h₀ => H.2.1 γ hγ h₀ h₁, H.1.comp (continuous_id.prodMk continuous_const)⟩
 
 theorem handFB_left {Y Y' : GA D J.W₀ → WO J.W₀ B.L → ℂ} {Ξ : WO J.W₀ B.V₀ → ℂ} (hY : IsQuasiFam ψ J.W₀ B.L Y)

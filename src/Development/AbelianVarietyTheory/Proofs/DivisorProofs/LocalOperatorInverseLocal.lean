@@ -2,7 +2,8 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotropicHermitian
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjLinApply
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzBijectionRightInverseStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzBijectionRightInverse
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzMapBarrelledSpace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfComponentTensorAdelicFunctionEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RestrictedTensorLocalOperators
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFactorPureTensorComponentAtPlace
@@ -42,7 +43,7 @@ theorem isLocOp_inv : ∀ {F : Type} [Field F] [NumberField F] {κ : Type} [Fint
   obtain ⟨ei, ev, hSB, hstd, hloc⟩ := he
   have hne : ∀ v, ev v (stdInd F κ v) ≠ 0 := fun v h =>
     (stdInd_mem_SB_ne v).2 (_root_.GlobalTheory.EvKer.ker_trivial e ei ev hSB hstd hloc hbij.injOn v _ (stdInd_mem_SB_ne v).1 h)
-  obtain ⟨S, hS⟩ := GlobalTheory.T.schwartz_bijection_right_inverse _ _ ei (_root_.GlobalTheory.ArchBij.bijective_arch e ei ev hSB hstd hloc hbij hne)
+  obtain ⟨S, hS⟩ := _root_.GlobalTheory.FrechetOpenMapping.schwartz_exists_inverse _ _ ei (_root_.GlobalTheory.ArchBij.bijective_arch e ei ev hSB hstd hloc hbij hne)
 
   have hbv : ∀ v, Function.Bijective ((ev v).restrict (p := SB (κ → Fv F v)) (q := SB (κ → Fv F v)) (hSB v)) := by
     intro v

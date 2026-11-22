@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdjointLiftRangeLeGoodBlockEigenspacesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdjointLiftRangeLeGoodBlockEigenspaces
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseLevelGoodFormsDimsAgreePartwise
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelRowsEqPrincipalRowsOfType
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseLevelWFormsEqPrincipalForms
@@ -30,7 +30,7 @@ theorem primRows3_of_parts : GlobalTheory.Published.CuspRapidDecay → HoweUnram
       hecke := hHk
       gUnit := hGU
       gEquiv := hGE
-      block := GlobalTheory.T.adjointLift_range_le_goodBlock_eigenspaces hCusp R F hLift hOk hC hEx hGE
+      block := _root_.GlobalTheory.Hk3.inBlock_of_cuspRapidDecay hCusp R F hLift hOk hC hEx hGE
       rowTest := hRT
       liftTest := hLT
       liftTestB := hLTB

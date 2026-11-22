@@ -10,7 +10,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ConstantCoeffEv
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AllUniformizationLawsHold
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.IntegralFramedPointDiagonalBiextensionIsoCompati
-import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.AdjointSeriesFramesPullbackStatement
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.AdjointSeriesFramesPullback
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.FrameAdjointnessSeriesOfPullback
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.IsFrameGCoefficientRingBaseChange
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsFramesCoefficientRingBaseChange
@@ -78,7 +78,7 @@ theorem isFrame_pull_iff {E : Type} [Field E] [NumberField E] [IsCMField E] {H :
   constructor
   · intro h
     refine ⟨he', ?_, ?_, p3.1 h.sy, fun a =>
-      GlobalTheory.T.adjointSeries_frames_pullback E H X0 t S x0 t' mp w hw d x x' hx e e' he he' tie act ad a hact ha (h.ad a)⟩
+      _root_.GlobalTheory.FrameAdjDown.adjoint_series_pull_back E H X0 t S x0 t' mp w hw d x x' hx e e' he he' tie act ad a hact ha (h.ad a)⟩
     · first | exact (p1 hF hl).1 h.ph1 | exact p1.1 fun _ _ => h.ph1
     · first | exact (p2 hF hl).1 h.ph2 | exact p2.1 fun _ _ => h.ph2
   · intro h

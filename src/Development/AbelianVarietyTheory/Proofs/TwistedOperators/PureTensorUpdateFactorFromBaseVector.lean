@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RestrictedTensorBasePointNormSq
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsIntOv
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocalFactorFinitePlaceHeisenbergSumBaseVector
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocalFactorRealPlaceEqHeisenbergIntegralBaseStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocalFactorRealPlaceEqHeisenbergIntegralBase
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CmAdeleIdempotentOfPlaceProperties
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisenbergOperatorPureTensorPlaceByPlaceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisThetaLaws
@@ -35,7 +35,7 @@ theorem change_factor : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (θ : InfF
   have hop : IsLocOp ψ S T μ 𝓕 f₀ q (x' q) := by
     rcases q with v | τ
     · exact _root_.GlobalTheory.PlaceTensorFin.isLocOp_of_isLocal_fin D ψ θ S T sS sT ΛS ΛT f₀ μ 𝓕 hB hμ v _ hloc
-    · exact GlobalTheory.T.localFactorRealPlace_eq_heisenbergIntegral_base D ψ θ S T sS sT ΛS ΛT f₀ μ 𝓕 hB hμ τ _ hloc
+    · exact _root_.GlobalTheory.RealLocOp.isLocOp_real D ψ θ S T sS sT ΛS ΛT f₀ μ 𝓕 hB hμ τ _ hloc
   obtain ⟨L, hL, himg, hx'L⟩ := hop
   have hfpure := hf
   obtain ⟨hres, hfth, hprod⟩ := hf

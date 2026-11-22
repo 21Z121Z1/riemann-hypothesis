@@ -4,12 +4,12 @@ import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.Archim
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IwahoriTraceOfBorelCasselman
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsLocallyConstantOrbit
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeckeEigenFinite
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TensorHeckeStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TensorHecke
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TensorEigen
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TensorEigenRealStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TensorEigenReal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContractionFixed
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubEigenTailHecke
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetCountTailStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetCountTail
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorusExponentTail
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StandardBlocksExponent
@@ -154,7 +154,7 @@ theorem rExpRead_of (h0 : PExp.HkEFin) (h1 : PExp.TensHk) (h2 : PExp.TensEig) (h
     exact (hA Pb y hy _).symm.trans (hBu ⟨y, hy⟩)
 
 theorem rExpRead : RExpRead :=
-  rExpRead_of _root_.GlobalTheory.CompanionTheory.HeckeEnd.hkE_fin GlobalTheory.T.tensor_hecke _root_.GlobalTheory.CompanionTheory.TensContr.tensEig GlobalTheory.T.tensor_eigen_real _root_.GlobalTheory.CompanionTheory.RepTensor.contrFix _root_.GlobalTheory.CompanionTheory.SubEigIrr.subEig GlobalTheory.T.coset_count_tail
+  rExpRead_of _root_.GlobalTheory.CompanionTheory.HeckeEnd.hkE_fin _root_.GlobalTheory.CompanionTheory.TensHkSum.tensHk _root_.GlobalTheory.CompanionTheory.TensContr.tensEig _root_.GlobalTheory.CompanionTheory.TensEigSecond.tensEigR _root_.GlobalTheory.CompanionTheory.RepTensor.contrFix _root_.GlobalTheory.CompanionTheory.SubEigIrr.subEig _root_.GlobalTheory.CompanionTheory.IwahoriCount.cosetCount
     _root_.GlobalTheory.CompanionTheory.TorusExpU.torusExp _root_.GlobalTheory.CompanionTheory.DlBridgeAt.dlBridge _root_.GlobalTheory.CompanionTheory.ExpProd.expToSat
 
 end PositivityTheory.Rg.BcB.F.Tail

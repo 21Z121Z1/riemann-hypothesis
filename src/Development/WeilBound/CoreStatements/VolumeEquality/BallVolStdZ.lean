@@ -12,10 +12,10 @@ import Development.AutomorphicSpectrum.Proofs.MetricProofs.AdaptedFrameOfEquival
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.AdaptedFrameChangeUnitary
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsTranslatedRiemannLatticeStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HolomorphicAdaptedFrameOnBall
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.BallMobiusMulStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.BallMobiusZeroEqIffUnitaryStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.BallMobiusMul
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.BallMobiusZeroEqIffUnitary
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BallMobiusTransitive
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.BallMobiusHolomorphicPotentialChangeStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.BallMobiusHolomorphicPotentialChange
 
 noncomputable section
 
@@ -106,7 +106,7 @@ theorem stdZ : StdZ := by
     intro t ht
     obtain ⟨A, hA⟩ := had t ht
     rw [hZeq t ht A hA]
-    exact (GlobalTheory.T.ball_mobius_holomorphic_potential_change Ψ j j' n F.q _ fun τ => stdZ_sgU C τ (hA0.unit τ) (hA.unit τ)).2.1 h0
+    exact (_root_.GlobalTheory.CompanionTheory.Ar.Cusp.Dict.Moeb.moebBall_props Ψ j j' n F.q _ fun τ => stdZ_sgU C τ (hA0.unit τ) (hA.unit τ)).2.1 h0
   have hinj : Set.InjOn Z (ballDom F.q) := by
     intro t ht t' ht' h
     obtain ⟨A, hA⟩ := had t ht
@@ -117,7 +117,7 @@ theorem stdZ : StdZ := by
       rw [Matrix.mul_assoc, ← Matrix.mul_assoc (A τ), (_root_.GlobalTheory.CompanionTheory.Ar.Cusp.Dict.cinv_facts E Ψ j j' n g Λ F C τ (A τ) (hA.unit τ)).2.1,
         Matrix.one_mul]
     rw [e] at h
-    have h1 := (GlobalTheory.T.ball_mobius_zero_eq_iff_unitary Ψ j j' n F.q _ _ (fun τ => stdZ_sgU C τ (hA0.unit τ) (hA.unit τ))
+    have h1 := (_root_.GlobalTheory.CompanionTheory.Ar.Cusp.Dict.Stab.moebBall_zero_iff Ψ j j' n F.q _ _ (fun τ => stdZ_sgU C τ (hA0.unit τ) (hA.unit τ))
       (fun τ => stdZ_sgU C τ (hA.unit τ) (hA'.unit τ))).1 h
     have h2 := (_root_.GlobalTheory.CompanionTheory.Ar.Cusp.Dict.Change.isAdapted_iff_unitary E Ψ j j' n g Λ F C (F.R t) A A' (F.form_eq t) hA hA'.unit).2 h1
     have h3 := GlobalTheory.T.adapted_frame_determines_lattice E Ψ j j' n g Λ F C (F.R t) (F.R t') A' (F.form_eq t) (F.form_eq t') h2 hA'
@@ -166,7 +166,7 @@ theorem stdZ : StdZ := by
       moebBall F.q (fun τ => C.cinv (A0 τ) τ * (a τ * A τ)) 0 := by
     have hU : ∀ τ, IsSgU (rho (fun τ => embOf (F.σ τ)) A0 (fun τ => C.cinv (A0 τ) τ) γ τ) := fun τ =>
       ((f0 τ).2.2.2.2.1 _ _ (hai τ) (hu τ)).2.2.1
-    rw [hZeq t ht A hA, ← GlobalTheory.T.ball_mobius_mul Ψ j j' n F.q _ _ hU (fun τ => stdZ_sgU C τ (hA0.unit τ) (hA.unit τ)) 0 h0]
+    rw [hZeq t ht A hA, ← _root_.GlobalTheory.CompanionTheory.Ar.Cusp.Dict.MoebAct.moebBall_mul Ψ j j' n F.q _ _ hU (fun τ => stdZ_sgU C τ (hA0.unit τ) (hA.unit τ)) 0 h0]
     congr 1
     funext τ
     show C.cinv (A0 τ) τ * (a τ * A0 τ) * (C.cinv (A0 τ) τ * A τ) = _

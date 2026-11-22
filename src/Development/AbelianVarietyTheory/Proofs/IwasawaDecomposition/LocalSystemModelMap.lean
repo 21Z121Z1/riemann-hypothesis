@@ -1,11 +1,11 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GrNormPush
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFrameComposeRingHomBaseChange
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TransitionUniqueAndPointsStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TransitionUniqueAndPoints
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnitSectionOfLocalValues
 import Development.AbelianVarietyTheory.Statements.HeightBoundStatement.HTBoundSt
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LineModel
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsTangentOfUniqueIntegralLiftStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsTangentOfUniqueIntegralLift
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TangentFamilyOfUniqueLiftPrime
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FrameCombinationCoeffUnique
 import Development.AbelianVarietyTheory.Counterexamples.ModuliSurvey.DominatesLiftUnique
@@ -128,7 +128,7 @@ theorem lnStep_push {g : X' ⟶ X} (mu : SABMap t' t g) {C : Type} [Nontrivially
     lnStep t' (spMap (intO C).subtype ≫ xO) u p b st =
       lnStep (Dw := Dw) t (spMap (intO C).subtype ≫ xO ≫ g) (fun τ i => u τ i ≫ mu.φ) p b st := by
   have key := fun {m : ℕ} {v : Fin m → (Sp (DualNumber C) ⟶ t'.G.left)} =>
-    grNorm_push (v := v) mu (Category.assoc _ _ _) (GlobalTheory.T.isTangent_of_unique_integral_lift E H X X' t t' g mu C p b xO hO)
+    grNorm_push (v := v) mu (Category.assoc _ _ _) (_root_.GlobalTheory.ShFam.LatPush.lat_push E H X X' t t' g mu C p b xO hO)
   rcases st with ⟨τ, k⟩ | k
   · simp only [lnStep, key (hu τ)]
   · simp only [lnStep, key (v := fun i => u ((letters Dw).get i).1 ((letters Dw).get i).2) fun i => hu _ _]

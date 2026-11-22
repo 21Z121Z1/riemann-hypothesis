@@ -5,7 +5,8 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsRational
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFundamentalDomainMassOneCocompactLattice
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsFundamentalDomainIUnion
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEqColGenMulBlkU
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ParsevalContinuousPeriodicAdelicRationalQuotientStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ParsevalContinuousPeriodicAdelicRationalQuotient
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnipotentBlockColumnIndex
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SetLIntegralAverageAbelianQuotient
 
 noncomputable section
@@ -243,7 +244,7 @@ theorem lintegral_step (hψ : StdPsi ψ) {m : ℕ} (hm : m + 1 < a) {𝓕 𝓕' 
   have hwγ : ∀ ξ, w (ratGL E a (γ ξ) * g) = w g := fun ξ => hwΓ _ (fun i k hi _ => (hγ ξ).1 i k (Or.inl hi)) g
   simp only [hwU (m + 1) (Nat.lt_succ_self m), hc, hwγ]
   rw [lintegral_mul_const _ (hper.1.measurable.enorm.pow_const 2), ENNReal.tsum_mul_right,
-    ← GlobalTheory.T.parseval_continuous_periodic_adelicRationalQuotient E _ ψ hψ _ hper ν D hν hD hνD]
+    ← _root_.GlobalTheory.AdelicParseval.tsum_enorm_avg_sq E _ ψ hψ _ hper ν D hν hD hνD]
   congr 1
   refine (tsum_subtype_eq_of_support_subset (f := fun ξ => ‖coefF ψ (m + 1) ξ f g‖ₑ ^ 2) (s := {ξ | ξ ≠ 0}) ?_).symm
   rintro ξ hξ rfl

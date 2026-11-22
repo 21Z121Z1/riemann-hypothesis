@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementRe
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Cint
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NoLeak
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetMoveTermWeightCharacter
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IndexMeasureIntegralTransportAndChangeStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IndexMeasureIntegralTransportAndChange
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianFramesReferenceSubgroupsRelIndexEq
 
 noncomputable section
@@ -85,7 +85,7 @@ end
 theorem kern_symm : ∀ {F : Type} [Field F] [ValuativeRel F] [TopologicalSpace F] [IsNonarchimedeanLocalField F] [CharZero F] {E : Type} [CommRing E] [Algebra F E] [TopologicalSpace E] (L : LocE F E), ∀ (r k : ℕ) (S : Frames L r k), ∀ (j : Fin r) (β βJ : ℕ) (d : S.Datum) (Λ : Submodule L.O S.V), S.IsTerm d Λ → S.InFF β (j + 1) βJ d Λ → ∀ Λ', S.IsTerm d Λ' → S.InFF β (j + 1) βJ d Λ' → S.kern β (j + 1) βJ d Λ Λ' = S.kern β (j + 1) βJ d Λ' Λ := by
   intro F _ _ _ _ _ E _ _ _ L r k S j β βJ d Λ hT hF Λ' hT' hF'
   obtain ⟨hr, hne⟩ := _root_.GlobalTheory.RefVol.main L r k S j β βJ d Λ hT hF Λ' hT' hF'
-  obtain ⟨hmap, hchg⟩ := @GlobalTheory.T.indexMeasureIntegral_transport_and_change S.MW _ S.MW _
+  obtain ⟨hmap, hchg⟩ := @_root_.GlobalTheory.IdxInt.Transport.cint_map_and_change S.MW _ S.MW _
   have e1 := (hmap (flipMv (S.V × S.V) S.V E) (S.refA (j + 1) Λ)
     (ind (S.MvTo (j + 1) d Λ' Λ))).2
   rw [refA_map_flip] at e1

@@ -2,7 +2,9 @@ import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.Radic
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CrystallinePull2SumCup
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusPullbackDeRhamMapExists
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeFirstDeRhamStructure
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorRelDimAndDiagonalIsLineBundleStatement
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorRelDimAndDiagonalIsLineBundle
+import Development.AbelianVarietyTheory.Definitions.Divisors.Uniformised
 
 open CategoryTheory AlgebraicGeometry Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.Cris GlobalTheory.DeRham GlobalTheory.ConjSeq GlobalTheory.UPel.HT GlobalTheory.UPel.HT.ES UpperTheory.Gal.Ord
@@ -177,7 +179,7 @@ theorem UpperTheory.Gal.Ord.desc :
   haveI := o₀.act.hom ((algebraMap (𝓞 D.F) D.O) π.g)
   haveI := o'.act.hom ((algebraMap (𝓞 D.F) D.O) π.ε)
   haveI := o'.act.hom ((algebraMap (𝓞 D.F) D.O) π.g)
-  have hd := GlobalTheory.T.harrisTaylor_relDim_and_diagonal_isLineBundle p D R b N _ s o
+  have hd := _root_.GlobalTheory.HTDim.relDim_and_isLB p D R b N _ s o
   have h1 : NOo hκ o π :=
     no_down p hκ hk m₀.cart D.g o.ab hd.1 (o.act.act ((algebraMap (𝓞 D.F) D.O) π.ε))
       (o.act.act ((algebraMap (𝓞 D.F) D.O) π.g)) (o₀.act.act ((algebraMap (𝓞 D.F) D.O) π.ε))

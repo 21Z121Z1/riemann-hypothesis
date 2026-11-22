@@ -6,7 +6,7 @@ import Formalism.LocalToGlobal.ProjectiveLattices.ThProps
 import Formalism.LocalToGlobal.ProjectiveLattices.FreeBridge
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelActionMemCuspFormsOfActionLawsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLevelActionCuspFormRepresentationStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteGroupRightActionComponentsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteGroupRightActionComponents
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryCocycleCoboundaryOfTrivialOnStabilisers
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResidualCharacterDetValuesMemCoeffField
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RightTranslationLiftEqLevelMoveUnitConst
@@ -156,7 +156,7 @@ theorem exists_equivariant_constants : ∀ {D : D7} {G : Type} [Group G] [Fintyp
   obtain ⟨ρ, hρ⟩ := GlobalTheory.T.exists_level_action_cusp_form_representation T κ i (O i).lev2 hT.laws hact hkeep
   have hex : ∀ g, ∃ k, Lev.IsLevelLift (Wc D i) (R.βW i) (R.datWp i R.triv) (R.eG g) k :=
     fun g => ((hO i).2.lift.lev g).imp fun _ h => h.1
-  obtain ⟨mv, hmv1, hmv, -, hcp⟩ := GlobalTheory.T.exists_finiteGroup_rightAction_components T R κ v₀ hI hT hpb i σ hσ hV hex
+  obtain ⟨mv, hmv1, hmv, -, hcp⟩ := _root_.GlobalTheory.CompAct.exists_action_components T R κ v₀ hI hT hpb i σ hσ hV hex
   choose y hy using _root_.GlobalTheory.ChiDetValues.chiC_mem_coeff T R κ v₀ hI hT i
   obtain ⟨z, hz1, hz⟩ := _root_.GlobalTheory.DictMove.rdU_actLev_eq T R κ v₀ O hI hT hpb hO i σ hσ hV
   have hst := _root_.GlobalTheory.StabMove.phiAt_actLev_of_comp_eq T R κ v₀ O hI hT hpb hO i σ hσ hV

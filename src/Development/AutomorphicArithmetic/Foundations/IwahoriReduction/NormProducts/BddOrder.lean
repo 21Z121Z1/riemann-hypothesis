@@ -192,7 +192,7 @@ theorem UpperTheory.Kd.K4.jan :
       ∀ τ ∈ Hs, analyticOrderAt (fun s => φ s - φ τ) τ ≤ E := by
   intro Ω _ _ _ ε X
   obtain ⟨φ, hφ, hd⟩ := X.j_hol
-  have hinv := GlobalTheory.T.modularTower_function_slTwoInt_invariant X X.jK φ hd.continuousOn hφ X.j_inv
+  have hinv := _root_.GlobalTheory.KZ.InvFun.fun_inv X X.jK φ hd.continuousOn hφ X.j_inv
   obtain ⟨t, ht, h⟩ := near_one X φ hφ hd.continuousOn
   have hne := deriv_ne φ hd t ht h
   have han := hd.analyticOnNhd SiegelModel.isOpen_Hs

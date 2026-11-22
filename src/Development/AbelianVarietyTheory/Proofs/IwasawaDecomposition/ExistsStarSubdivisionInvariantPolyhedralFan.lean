@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StarDepthToFunNonneg
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StarSubdivisionDepthHostFixingAutInvariantStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StarSubdivisionDepthHostFixingAutInvariant
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsStarSubdivisionFunctionIntegralStrictlyCon
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StarSubdivisionFunctionLinearOnCells
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StarSubdivisionCellMemStarConeOrCentreless
@@ -48,6 +48,6 @@ theorem exists_starSubdivision : ∀ (E : Type) [Field E] [NumberField E] [IsCMF
     have hD' : (0 : ℝ) < D := by exact_mod_cast hD
     positivity
   exact ⟨starFun H.bar ψ w K D, _root_.GlobalTheory.PolFan.StarFan.isPolyFan_star E H q ψ w _ hψ hW hstar hint hpos,
-    isTwInv_starFun H htψ (GlobalTheory.T.starSubdivisionDepth_hostFixingAut_invariant E H ψ w htψ htw) K D, _root_.GlobalTheory.PolFan.subordinate_of_isStarOf _ H.bar q ψ w _ hstar, hstar⟩
+    isTwInv_starFun H htψ (_root_.GlobalTheory.PolFan.isTwInv_starDepth E H ψ w htψ htw) K D, _root_.GlobalTheory.PolFan.subordinate_of_isStarOf _ H.bar q ψ w _ hstar, hstar⟩
 
 end GlobalTheory.PolFan

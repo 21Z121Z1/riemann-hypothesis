@@ -61,7 +61,7 @@ theorem exists_sqOf_of_dim (hL : Out.Laws) (h k : ℕ) (o : Type) [CommRing o] (
     (pull_isLB hM _) iM
   have hd₁ : SmoothOfRelativeDimension h c₁.A.hom :=
     (smoothOfRelativeDimension_isStableUnderBaseChange _).of_isPullback (g₁.comp g').1 hd
-  obtain ⟨P, φ, hP⟩ := GlobalTheory.T.exists_principalPolarization_symmetric_squareRoot hL h k o ζ R₁ _ c₁ M hc₁ hd₁ hM
+  obtain ⟨P, φ, hP⟩ := _root_.GlobalTheory.SymRoot.exists_polAV_sqOf hL h k o ζ R₁ _ c₁ M hc₁ hd₁ hM
     (_root_.GlobalTheory.LamOfDouble.lam_iso_of_pull_two hL h k o ζ R₁ _ c₁ M hc₁ hM iM') sM
   obtain ⟨ψ, hψ'⟩ := sqOf_of_pb hP (pb_comp m' m₁)
   letI : Algebra R R₁ := ((algebraMap R' R₁).comp (algebraMap R R')).toAlgebra

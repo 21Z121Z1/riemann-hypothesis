@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.ImageStableDegreeBounds
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MonodromyReductionModuloHighDegreeStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MonodromyReductionModuloHighDegree
 open PowerSeries GlobalTheory.BK
 
 namespace GlobalTheory.DegreeRaise
@@ -218,6 +218,6 @@ end Main
 theorem main : ∀ (O K : Type) [CommRing O] [NormedField K] [IsUltrametricDist K] [CompleteSpace K] [Algebra O K]
     [IsUnitBall O K] (l e a : ℕ) [Fact l.Prime] [NormedAlgebra ℚ_[l] K] [NeZero e] [NeZero a]
     [TameDescentExponentData K l e a], GlobalTheory.IndefiniteRowSideFullHecke.ImageStableDegreeBounds.Degrees O K l e a :=
-  fun O K _ _ _ _ _ _ l e a _ _ _ _ _ => degrees_of_reduction (GlobalTheory.T.monodromy_reduction_modulo_high_degree O K l e a)
+  fun O K _ _ _ _ _ _ l e a _ _ _ _ _ => degrees_of_reduction (_root_.GlobalTheory.NModHigh.reduction O K l e a)
 
 end GlobalTheory.DegreeRaise

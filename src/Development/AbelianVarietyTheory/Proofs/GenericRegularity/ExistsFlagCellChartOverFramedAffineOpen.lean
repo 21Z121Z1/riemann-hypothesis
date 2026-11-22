@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Definitions.RegularCharts.ModelAt
 import Formalism.LocalToGlobal.ProjectiveLattices.FrameCharts
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
-import Development.AbelianVarietyTheory.Proofs.GenericRegularity.IsTriangularReframeExistsAndUniqueStatement
+import Development.AbelianVarietyTheory.Proofs.GenericRegularity.IsTriangularReframeExistsAndUnique
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.TriangularReframeCompBaseChangeBorel
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.FrameBorelGroupoidProperties
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsFlagCoordinatesCellChangeBirational
@@ -226,7 +226,7 @@ theorem reframe_cancel {S : Type} [CommRing S] [Algebra c.F S]
     {g b : ∀ τ : E →+* ℂ, Matrix (Fin (Dw.mult τ)) (Fin (Dw.mult τ)) S} {y y' y'' : FrPt Xo c S}
     (hg : ∀ τ, IsUnit (g τ).det) (h : Reframe g y y') (h' : Reframe (fun τ => g τ * b τ) y y'') :
     Reframe b y' y'' := by
-  obtain ⟨b', ⟨_, hb'⟩, _⟩ := (GlobalTheory.T.isTriangularReframe_exists_and_unique E H Dw l Xo c S y').2 y'' (h'.1.trans h.1.symm)
+  obtain ⟨b', ⟨_, hb'⟩, _⟩ := (_root_.GlobalTheory.Reg.ReframeEx.reframe_exists_unique E H Dw l Xo c S y').2 y'' (h'.1.trans h.1.symm)
   have e := reframe_unique ((_root_.GlobalTheory.Reg.reframe_calculus E H Dw l Xo c S).1 _ _ _ _ _ h hb') h'
   have : b' = b := funext fun τ => ((Matrix.isUnit_iff_isUnit_det _).2 (hg τ)).mul_left_cancel (e τ)
   exact this ▸ hb'
@@ -335,7 +335,7 @@ theorem open_chart (h₀ : FrMap (cst q) yA y₀) (hy : Reframe (cellM σ fun v 
   obtain ⟨z₁, hz₁⟩ := bc _ _ f₁ yA
   have hx₁ : w₁.x = z₁.x := by
     rw [hw₁.1, hz₁.1, hA, ← Category.assoc, hf₁, Category.assoc, hW1]; rfl
-  obtain ⟨G, ⟨_, hG⟩, _⟩ := (GlobalTheory.T.isTriangularReframe_exists_and_unique E H Dw l Xo c S₁ z₁).2 w₁ hx₁
+  obtain ⟨G, ⟨_, hG⟩, _⟩ := (_root_.GlobalTheory.Reg.ReframeEx.reframe_exists_unique E H Dw l Xo c S₁ z₁).2 w₁ hx₁
   have base : ∀ (S' : Type) [CommRing S'] [Algebra c.F S'] (ν : S₁ →ₐ[c.F] S') (z' w' : FrPt Xo c S'),
       FrMap (ν.comp f₁) yA z' → FrMap (ν.comp i₁) w w' → Reframe (fun τ => (G τ).map ν) z' w' :=
     fun S' _ _ ν z' w' h1 h2 => (_root_.GlobalTheory.Reg.reframe_calculus E H Dw l Xo c S₁).2.1 S' ν _ _ _ _ _ hG
@@ -390,13 +390,13 @@ theorem exists_fChart_cell : ∀ (E : Type) [Field E] [NumberField E] [IsCMField
   haveI : Infinite (kap Z) := Infinite.of_injective _ (algebraMap c.F (kap Z)).injective
   obtain ⟨hgx, y₀, hy₀, hgu⟩ := isGenFr_genFr h Z
   obtain ⟨zκ, hzκ⟩ := bc _ _ f yA
-  obtain ⟨G, ⟨hGu, hG⟩, _⟩ := (GlobalTheory.T.isTriangularReframe_exists_and_unique E H Dw l Xo c _ zκ).2 y₀ (by
+  obtain ⟨G, ⟨hGu, hG⟩, _⟩ := (_root_.GlobalTheory.Reg.ReframeEx.reframe_exists_unique E H Dw l Xo c _ zκ).2 y₀ (by
     rw [hy₀, hzκ.1, hA, ← Category.assoc, hf]; rfl)
   obtain ⟨e, b, hb, he⟩ := _root_.GlobalTheory.Reg.cell_change_birational (kap Z) (E →+* ℂ) Dw.mult G σ hGu
   obtain ⟨θ, hθ, hθC, hθX, hθf⟩ := exists_poly_embed (V := FlagVar Dw) f hfi hfr e
   let q : MvPolynomial (FlagVar Dw) A ≃ₐ[c.F] θ.range := AlgEquiv.ofInjective θ hθ
   obtain ⟨u₀, hu₀⟩ := bc _ _ (cst q) yA
-  obtain ⟨u, hu⟩ := (GlobalTheory.T.isTriangularReframe_exists_and_unique E H Dw l Xo c _ u₀).1 _ (isUnit_det_cellM σ fun v => q (MvPolynomial.X v))
+  obtain ⟨u, hu⟩ := (_root_.GlobalTheory.Reg.ReframeEx.reframe_exists_unique E H Dw l Xo c _ u₀).1 _ (isUnit_det_cellM σ fun v => q (MvPolynomial.X v))
   obtain ⟨yg, hyg⟩ := bc _ _ θ.range.val u
   let k : kap Z →ₐ[c.F] Om Z := IsScalarTower.toAlgHom c.F (kap Z) (Om Z)
   obtain ⟨zΩ, hzΩ⟩ := bc _ _ k zκ

@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Statements.SemistableTorsion.UTorsSt
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIntegralNthRootTestModelPoint
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.GtAddIotaSubExist
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsTorusExtensionPointOfIntegralModelPoint
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusCoordUnitAndSectionEqExpansionStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusCoordUnitAndSectionEqExpansion
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaTestPowerIntegral
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaParameterOfThetaParameterMulDegree
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUnitCarries
@@ -31,7 +31,7 @@ theorem exists_parAt : GlobalTheory.UT.LL → UTorsSt → ∀ (o Ω : Type) [Com
   obtain ⟨k, hk, hint⟩ := _root_.GlobalTheory.ZH.exists_int_pow hL o Ω S ρ p y₀ u a
   obtain ⟨a₁, ⟨c, hc, hca⟩, hpow⟩ := _root_.GlobalTheory.IntDiv.exists_integral_root hL o Ω S ρ p y₀ u (a ^ k) k hk hint
   obtain ⟨g₁, hg₁⟩ := _root_.GlobalTheory.IntegralGt.exists_lev hL o Ω S ρ p y₀ u c hc
-  have hpar := (GlobalTheory.T.torusCoord_unit_and_section_eq_expansion hL o Ω S ρ p y₀ u c g₁ a₁ hc hca hg₁).2
+  have hpar := (_root_.GlobalTheory.ZH.IntegralSum.gtN_zero_and_parAt hL o Ω S ρ p y₀ u c g₁ a₁ hc hca hg₁).2
   have hNk : 1 ≤ S.N * k := Nat.mul_pos (by omega) hk
   obtain ⟨f, hf, hsurj, -⟩ := hT u.V u.complete u.A u.G u.D u.U (PadicAlgCl p) (S.N * k) hNk
   haveI : IsMonHom u.U.gen.hom := u.U.gen_hom

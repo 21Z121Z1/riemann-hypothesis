@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.TorsTransport
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsEqOfNatCastMulMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsContinuousBijectiveAbelianizationOfAlgEqui
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdeleClassIdentityComponentIffArtinKernelStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdeleClassIdentityComponentIffArtinKernel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFrobAtRestrictFiniteAbelianSubextensionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InertiaRestrictFiniteAbelianUnramifiedEqOneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUniformiserAtIffAdicCompletionIsUnifAtStatement
@@ -58,7 +58,7 @@ theorem exists_globalArtinMap {K : Type} [Field K] [NumberField K] [IsTotallyCom
     exact ⟨QuotientGroup.mk x⁻¹, by rw [hArt, map_inv art, inv_inv]⟩
   · ext c
     obtain ⟨s, rfl⟩ := QuotientGroup.mk_surjective c
-    rw [SetLike.mem_coe, MonoidHom.mem_ker, hArt, GlobalTheory.T.ideleClass_identityComponent_iff_artin_kernel ha,
+    rw [SetLike.mem_coe, MonoidHom.mem_ker, hArt, _root_.GlobalTheory.ArtinKernel.idele_class_mem_identity_component_iff ha,
       ← map_one φ, hφb.1.eq_iff, inv_eq_one]
   · intro L h v hv a hsupp
     obtain ⟨x, hx, rfl⟩ := _root_.GlobalTheory.Div.SuppIdele.supported_eq_localIdele hsupp

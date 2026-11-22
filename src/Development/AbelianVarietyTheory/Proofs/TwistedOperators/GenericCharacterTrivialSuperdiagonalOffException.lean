@@ -3,10 +3,10 @@ import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsAuxil
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FinitePartTraceCharacterIdempotentInverseDiffere
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemHomLatticeCompletionIffSupportedMaps
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicPointComponentsAtPlacesLatticesVacua
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HermitianPairingSelfDualCompletionIntegralAtPlacStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HermitianPairingSelfDualCompletionIntegralAtPlac
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AuxiliaryWittIsotropicCoordinateEqPairing
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsUnitMemSpanStaircaseIdealProducts
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdeleIdempotentMulIntegralOfUnitFactorStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdeleIdempotentMulIntegralOfUnitFactor
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdeleIdempotentSmulMemLatticeCompletionAtPlace
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links MeasureTheory IsDedekindDomain NumberField Matrix
 open GlobalTheory.MixModel GlobalTheory.MixPer GlobalTheory.Grow GlobalTheory.Unf GlobalTheory.ChiGrid GlobalTheory.FunObj GlobalTheory.SepRows GlobalTheory.Asc
@@ -153,7 +153,7 @@ theorem uni_off : OnStd fun {D} _ _ {sc} {G} W F => ∀ ρ (h : 2 * ρ + 2 ≤ D
     rw [hyy] at hMy'
     have z1 := (hA _ _ _).1 hMy'
     have z2 := (hA _ _ _).1 hwv
-    have hP := GlobalTheory.T.hermitianPairing_selfDual_completion_integral_at_place D _ _ sdW v _ _ z1 z2
+    have hP := _root_.GlobalTheory.LatPairInt.pairing_mem_at D _ _ sdW v _ _ z1 z2
     have hw' : ∀ k, cA D ((((α⁻¹ : (AE D)ˣ) : AE D) • w) k) = cA D ((α⁻¹ : (AE D)ˣ) : AE D) * idem D (· = v) *
         incA D (D.host.conj (a * c')) * cA D (incA D (aJ k q)) := by
       intro k
@@ -193,7 +193,7 @@ theorem uni_off : OnStd fun {D} _ _ {sc} {G} W F => ∀ ρ (h : 2 * ρ + 2 ≤ D
       rw [this]; exact GlobalTheory.IdeleAA.intAt_mul (idem_incA_mem v o) hx
   obtain ⟨u, hu, hus⟩ := _root_.GlobalTheory.StairUnit.exists_unit_mem_span G ρ p q (by simp [hp, hqdef]; omega) v hv
   have hz : idem D (· = v) * (((α⁻¹ : (AE D)ˣ) : AE D) * cA D ((α⁻¹ : (AE D)ˣ) : AE D) * g) ∈ intAt D (· = v) := by
-    refine GlobalTheory.T.adeleIdempotent_mul_integral_of_unit_factor D v u hu _ ?_
+    refine _root_.GlobalTheory.UnitAtPl.idem_mul_mem_of_unit D v u hu _ ?_
     have := hspan _ hus
     simp only [hΦ] at this
     convert this using 1; ring

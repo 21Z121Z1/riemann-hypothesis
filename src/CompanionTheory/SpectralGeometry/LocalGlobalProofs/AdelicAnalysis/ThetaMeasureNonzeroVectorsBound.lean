@@ -6,7 +6,7 @@ import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.AdelicB
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.RationalGramAdelicCompactFinite
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.SmallBoxGramScalarZero
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.CountingRationalVectorsBoxBound
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.CountingVectorsBoundedLargeRadiusStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.CountingVectorsBoundedLargeRadius
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ThetaMeasureIntegralFormula
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRing
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.AdelesLocallyCompactSecondCountable
@@ -52,7 +52,7 @@ theorem mean_count_box : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [N
   obtain ⟨r₀, hr₀, hsmall⟩ := _root_.GlobalTheory.CompanionTheory.SW.SmallQ.small_length F E σ hCM M J hJ d b N hN
   have hr₁ : 0 < min r₀ 1 := lt_min hr₀ one_pos
   obtain ⟨C₁, hC₁⟩ := _root_.GlobalTheory.CompanionTheory.SW.mean_isotropic_box F E σ hCM M J hJ hM μ 𝓕 hμ h𝓕 d b N hN
-  obtain ⟨C₂, hC₂⟩ := GlobalTheory.T.counting_vectors_bounded_large_radius F E σ hCM M J hJ hM μ 𝓕 hμ h𝓕 d b N (min r₀ 1) hN hr₁
+  obtain ⟨C₂, hC₂⟩ := _root_.GlobalTheory.CompanionTheory.SW.CntLarge.cnt_large F E σ hCM M J hJ hM μ 𝓕 hμ h𝓕 d b N (min r₀ 1) hN hr₁
   refine ⟨((μ 𝓕)⁻¹).toReal * (|C₁| + |C₂|), fun r hr => ?_⟩
   change thetaMeas σ J μ 𝓕 {X : Fin 1 → Fin M → E | X ≠ 0} (box b N r) ≤ _
   have hmeas : MeasurableSet (box b N r : Set (Fin 1 → Fin M → AF F ⊗[F] E)) :=

@@ -11,7 +11,8 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SmoothContragred
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ParabolicInductionTensorProductHasFiniteLength
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchurAdmissibleAlt
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CuspLaws
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalCompactFixedVectorsPiTensorSmooStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalCompactFixedVectorsPiTensorSmoo
+import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsUnitarisableOfCharIff
 open GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.SplitWeil GlobalTheory.LocGL GlobalTheory.LocLanglands GlobalTheory.JHMult
 open scoped TensorProduct
 
@@ -33,7 +34,7 @@ theorem finiteDimensional_fixed_piTensor {α : Type} [Finite α] {Γ X : α → 
     (K : ∀ a, Subgroup (Γ a)) (hK : ∀ a, IsCompact (K a : Set (Γ a)))
     (hf : ∀ a, FiniteDimensional ℂ (fixed (ρ a) (K a))) :
     FiniteDimensional ℂ (fixed (piTensor ρ) (Subgroup.pi Set.univ K)) :=
-  GlobalTheory.T.finiteDimensional_compact_fixed_vectors_piTensor_smooth ρ hρ K hK hf
+  _root_.GlobalTheory.PiTensorFixed.finiteDimensional_fixed_piTensor ρ hρ K hK hf
 
 end Fixed
 

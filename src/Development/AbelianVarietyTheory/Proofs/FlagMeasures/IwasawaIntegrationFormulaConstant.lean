@@ -1,16 +1,16 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurableSetHsBall
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsAlgebrasMaxCompactAndLeviInterStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsAlgebraIsotropicFlagSelfAdjointLeviStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsAlgebrasMaxCompactAndLeviInter
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsAlgebraIsotropicFlagSelfAdjointLevi
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsNilpotentAlgebraIsotropicFlagUnipotentRadi
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.SameKindIsometric
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RiemannianHaarGaugeWholeGroup
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsRiemannianHaarUnitaryJSubgroupOfAlgebraStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaugeMeasureMatrixAlgebraSubgroupLocalAsymptoticStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.VolumeUnitaryMaximalCompactEqProdStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsRiemannianHaarUnitaryJSubgroupOfAlgebra
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaugeMeasureMatrixAlgebraSubgroupLocalAsymptotic
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.VolumeUnitaryMaximalCompactEqProd
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.VolumeMaximalCompactInterIsotropicFlagLevi
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsGaugeAll
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IwasawaLieAlgebrasRelativePositionStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IwasawaLieAlgebrasRelativePosition
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IwasawaGaugeDefiniteAndUnitBodyVolume
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicFlagDimensionCount
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalisedIwasawaIntegralSmallBallAsymptotics
@@ -103,7 +103,7 @@ private theorem map_mul_right_eq_of_isGaugeSub {n : ℕ} {ε : Fin n → Bool} (
     (μ : Measure (Formalism.REAL.UJ ε)) (hμ : IsGaugeSub {g | uMat g - 1 ∈ A} d μ)
     (l : Formalism.REAL.UJ ε) (hl : uMat l - 1 ∈ A) (hu : (uMat l)ᴴ * uMat l = 1) :
     μ.map (fun g => g * l) = μ := by
-  have huniq := (GlobalTheory.T.gaugeMeasure_matrixAlgebraSubgroup_local_asymptotics n ε A d E hA hE hAE μ hμ).2.2.1
+  have huniq := (_root_.GlobalTheory.GaugeSubLoc.gauge_local_asymptotics n ε A d E hA hE hAE μ hμ).2.2.1
   have hcut : IsCut ε {g | uMat g - 1 ∈ A} E := ⟨A, hA, hE, hAE, rfl⟩
   obtain ⟨H, hH, -⟩ := hcut.subgroup
   have hlH : l ∈ H := by rw [← SetLike.mem_coe, hH]; exact hl
@@ -160,30 +160,30 @@ theorem iwasawa_constant : ∀ (n : ℕ) (ε : Fin n → Bool) (p q : ℕ), (uni
   intro n ε p q hp hq a j hj W hW μN μM μK hN hM hK0 hK1 hKinv c κ hc hform
   obtain ⟨hpq, hn2, hdK⟩ := _root_.GlobalTheory.IwConst.flag_dims n ε a j W hW p q hp hq
   obtain ⟨AN, EN, hAN, hEN, hAEN, hNset⟩ := _root_.GlobalTheory.RadicalAlg.exists_algebra_flagN n ε a j W hW
-  obtain ⟨AM, EM, hAM, hEM, hAEM, hMset⟩ := GlobalTheory.T.exists_algebra_isotropicFlagSelfAdjointLevi n ε a j W hW
+  obtain ⟨AM, EM, hAM, hEM, hAEM, hMset⟩ := _root_.GlobalTheory.LeviAlgebra.exists_levi_algebra n ε a j W hW
   obtain ⟨⟨AK, EK, hAK, hEK, hAEK, hKset⟩, ⟨AL, EL, hAL, hEL, hAEL, hLset⟩⟩ :=
-    GlobalTheory.T.exists_algebras_maxCompact_and_levi_inter n ε a j W hW p q hp hq
+    _root_.GlobalTheory.FlagMeas.CompactAlg.compact_algebras n ε a j W hW p q hp hq
   have cN : IsCut ε (flagN ε W) EN := ⟨AN, hAN, hEN, hAEN, hNset⟩
   have cM : IsCut ε (flagM ε W) EM := ⟨AM, hAM, hEM, hAEM, hMset⟩
   have cK : IsCut ε (maxK ε) EK := ⟨AK, hAK, hEK, hAEK, hKset⟩
   have cL : IsCut ε (maxK ε ∩ flagM ε W) EL := ⟨AL, hAL, hEL, hAEL, hLset⟩
-  have hrel := GlobalTheory.T.iwasawa_lieAlgebras_relative_position n ε a j W hW _ _ _ _ EN EM EK EL cN cM cK cL
+  have hrel := _root_.GlobalTheory.IwConst.LiePos.lieRel n ε a j W hW _ _ _ _ EN EM EK EL cN cM cK cL
   obtain ⟨hnd, hvol⟩ := _root_.GlobalTheory.IwConst.gau_definite_and_volume n _ _ _ _ EN EM EK EL cN.isON cM.isON cK.isON cL.isON hrel hdK
 
   have hN' : IsGaugeSub {g | uMat g - 1 ∈ AN} (dimN n j) μN := by rw [← hNset]; exact hN
   have hM' : IsGaugeSub {g | uMat g - 1 ∈ AM} ((n - 2 * ∑ i, j i) ^ 2 + 2 * ∑ i, j i ^ 2) μM := by
     rw [← hMset]; exact hM
-  have : SigmaFinite μN := (GlobalTheory.T.gaugeMeasure_matrixAlgebraSubgroup_local_asymptotics n ε AN _ EN hAN hEN hAEN μN hN').1
-  have : SigmaFinite μM := (GlobalTheory.T.gaugeMeasure_matrixAlgebraSubgroup_local_asymptotics n ε AM _ EM hAM hEM hAEM μM hM').1
-  obtain ⟨νL, hνσ, hνL⟩ := GlobalTheory.T.exists_riemannianHaar_unitaryJSubgroupOfAlgebra n ε AL _ EL hAL hEL hAEL
+  have : SigmaFinite μN := (_root_.GlobalTheory.GaugeSubLoc.gauge_local_asymptotics n ε AN _ EN hAN hEN hAEN μN hN').1
+  have : SigmaFinite μM := (_root_.GlobalTheory.GaugeSubLoc.gauge_local_asymptotics n ε AM _ EM hAM hEM hAEM μM hM').1
+  obtain ⟨νL, hνσ, hνL⟩ := _root_.GlobalTheory.GaugeSubExists.exists_isGaugeSub n ε AL _ EL hAL hEL hAEL
   have := hνσ
   have hνL' : IsGaugeSub (maxK ε ∩ flagM ε W) ((p - ∑ i, j i) ^ 2 + (q - ∑ i, j i) ^ 2 + ∑ i, j i ^ 2) νL := by
     rw [hLset]; exact hνL
-  have : IsFiniteMeasureOnCompacts νL := (GlobalTheory.T.gaugeMeasure_matrixAlgebraSubgroup_local_asymptotics n ε AL _ EL hAL hEL hAEL νL hνL).2.1
-  obtain ⟨μ0, hμ0σ, hμ0⟩ := GlobalTheory.T.exists_riemannianHaar_unitaryJSubgroupOfAlgebra n ε AK _ EK hAK hEK hAEK
+  have : IsFiniteMeasureOnCompacts νL := (_root_.GlobalTheory.GaugeSubLoc.gauge_local_asymptotics n ε AL _ EL hAL hEL hAEL νL hνL).2.1
+  obtain ⟨μ0, hμ0σ, hμ0⟩ := _root_.GlobalTheory.GaugeSubExists.exists_isGaugeSub n ε AK _ EK hAK hEK hAEK
   have := hμ0σ
   have hμ0' : IsGaugeSub (maxK ε) (p ^ 2 + q ^ 2) μ0 := by rw [hKset]; exact hμ0
-  have hVK := GlobalTheory.T.volume_unitaryMaximalCompact_eq_prod n ε p q hp hq μ0 hμ0'
+  have hVK := _root_.GlobalTheory.VolMaxK.volume_maxK n ε p q hp hq μ0 hμ0'
   have hVL := _root_.GlobalTheory.FlagMeas.LeviCompact.volume_maxK_inter_flagM n ε p q hp hq a j W hW νL hνL'
 
   have rK : ∀ l ∈ maxK ε, μ0.map (fun g => g * l) = μ0 := fun l hl =>

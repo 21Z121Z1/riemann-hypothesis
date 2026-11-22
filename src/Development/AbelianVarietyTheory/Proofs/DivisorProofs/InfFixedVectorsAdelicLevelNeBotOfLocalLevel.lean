@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteAdelicUnitaryPointCutToFibreUnionStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemOpenNhdOneOfIntegralEqOneOnFinsetStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteAdelicUnitaryPointCutToFibreUnion
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemOpenNhdOneOfIntegralEqOneOnFinset
 
 noncomputable section
 
@@ -77,7 +77,7 @@ theorem local_fixed (S : Set (Pl E)) (hS : IsSection S) (K' : ∀ w : Pl E, Subg
   | insert t B _ ih =>
     intro h hfin hK h1
     obtain ⟨wt, ⟨hwtS, hwt⟩, _⟩ := hS t
-    obtain ⟨x, hxfin, hx⟩ := GlobalTheory.T.exists_finiteAdelicUnitaryPoint_cut_to_fibreUnion E n (fib {t}) (fib_closed {t}) h hfin
+    obtain ⟨x, hxfin, hx⟩ := _root_.GlobalTheory.FibreCut.exists_cut E n (fib {t}) (fib_closed {t}) h hfin
     have hxloc : x ∈ locU n wt := by
       refine Subgroup.mem_inf.2 ⟨hxfin, Subgroup.mem_iInf.2 fun u => Subgroup.mem_iInf.2 fun hu => ?_⟩
       rw [MonoidHom.mem_ker, hx u, if_neg]
@@ -125,10 +125,10 @@ theorem inf_fixed_globLev_ne_bot : ∀ (E : Type) [Field E] [NumberField E] [IsC
       rw [Subgroup.mem_comap] at h1
       obtain ⟨k, hk, e⟩ := Subgroup.mem_map.1 h1
       exact ⟨k, hk, e⟩
-    obtain ⟨T, hT⟩ := GlobalTheory.T.mem_open_nhd_one_of_integral_eq_one_on_finset E n _ hlev (by simp)
+    obtain ⟨T, hT⟩ := _root_.GlobalTheory.FixLevOpen.mem_of_isOpen_of_eq_one_on_finset E n _ hlev (by simp)
     have hbad := Filter.eventually_cofinite.1 (integral_eventually (g : UA E n))
     let B : Finset (Pl E) := T ∪ hbad.toFinset
-    obtain ⟨x, hxfin, hx⟩ := GlobalTheory.T.exists_finiteAdelicUnitaryPoint_cut_to_fibreUnion E n (fib B) (fib_closed B) (g : UA E n) g.2
+    obtain ⟨x, hxfin, hx⟩ := _root_.GlobalTheory.FibreCut.exists_cut E n (fib B) (fib_closed B) (g : UA E n) g.2
     have hxS : x ∈ stabU φ := by
       refine local_fixed S hS K' φ hφfix B x hxfin ?_ ?_
       · intro w hw

@@ -4,7 +4,7 @@ import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.VolPin
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.JacobianCoordinates
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.AmpWinLoc
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.NinfGClosed
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsBruhatFunctionLocalBesselIntegralEqL2MassStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsBruhatFunctionLocalBesselIntegralEqL2Mass
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnipotentHaarEqConstSmulPiLocalMeasures
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SubgroupHaarEqConstSmulPiLocalMeasures
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnipotentSubgroupHaarProductEqPiLocalImage
@@ -66,7 +66,7 @@ theorem l2prod : ∀ (D : D7) (X : HidaSetting D) (Y : Full X) (θ : ℝ) (C : C
           l2SG (C.nuS u τ) (phiOf hB u τ)) ∧
         SigmaFinite (QPK.mulMap (muNl C τ w) (muHl C u τ w)) := by
       rintro τ _ rfl
-      obtain ⟨β, h1, h2, h3⟩ := GlobalTheory.T.exists_bruhatFunction_localBesselIntegral_eq_L2Mass D X θ C hB u τ
+      obtain ⟨β, h1, h2, h3⟩ := _root_.GlobalTheory.SlocTie.loc_main D X θ C hB u τ
       exact ⟨β, h1, h2, h3, (invOn_mulMap C u τ).1⟩
     exact h (X.pl v) v (X.pl.symm_apply_apply v)
   choose β hβm hβ1 hβl hsf using key

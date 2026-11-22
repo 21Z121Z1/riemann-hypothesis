@@ -18,24 +18,25 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.Metric
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsProperIntegralModel
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DominatesOfCoordsRegularStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DominatesOfCoordsRegular
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EtaleLocalizationAtPrimeTensorOfLowHeight
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericFibreProjectiveEmbedding
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointGenericFibreStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointGenericFibre
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointMemDenseOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointLiftAlongIso
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SmoothSchemeStalksDomainsStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ClosedInProductProjective
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EveryComponentInSomeChart
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordsGenerateFunctionField
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordChartsMatchRegularStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordChartsMatchRegular
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CharZeroIffNonzeroUnitsStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegularRingDeterminesComponent
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegularRingsEqualImagesEqual
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CharZeroCentreOfComplex
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordsSingleBlockSegreStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SmoothOpenImmersionRangeStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncPatchAtEachComponentStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncPatchAtEachComponent
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsSncModelOfPatches
 
 noncomputable section
@@ -58,7 +59,7 @@ theorem exists_model_of_res (hRes : ResK.ResKStatement)
       ∀ (z : Spec (CommRingCat.of ℂ) ⟶ X) w, CoordsAt ξ (fun p : (Σ _ : Unit, Fin (N + 1)) => x p.2) z w →
         (w ∈ mcPts bd ↔ f (centre z) ∉ Ab) := by
   obtain ⟨hred, hln, M, i, hi, his⟩ := _root_.GlobalTheory.CompanionTheory.Ar.SncBase.genericFibre_reduced_noetherian_closed F P s hp hn
-  obtain ⟨b, ξF, hF1, hF2, hFg⟩ := GlobalTheory.T.generic_point_generic_fibre F P s Ω ξ₀ hξ₀
+  obtain ⟨b, ξF, hF1, hF2, hFg⟩ := _root_.GlobalTheory.CompanionTheory.Ar.GenFibre.exists_point F P s Ω ξ₀ hξ₀
   have hmem := _root_.GlobalTheory.CompanionTheory.Ar.SncBase.genPt_mem_of_dense_open _ Ω ξF U hFg hd
   have hin : ResK.IsResInput M i U e := ⟨hi, hred, hd, by rw [his]; exact hU⟩
   obtain ⟨r, X', j, f', hj, hfj, hsm, hiso, hdense, hsnc⟩ := hRes F M e _ i U hin
@@ -97,12 +98,12 @@ theorem exists_model_of_res (hRes : ResK.ResKStatement)
     have e1 : ((∏ a, x2 (q1 a)) * x2 q2 * u c') / ((∏ a, x2 (q1 a)) * x2 q2 * u q3) = u c' / u q3 := by
       field_simp [hne.1.1, hne.1.2, hne.2]
     simpa [e1] using this
-  obtain ⟨f, hf, -⟩ := GlobalTheory.T.dominates_of_coords_regular P Ω ξ₀ (𝓞 F) _ u X Ω ξ (RingHom.id Ω) hu htX.gen hirr hreg hchart
+  obtain ⟨f, hf, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.CoordMap.exists_dominating_map P Ω ξ₀ (𝓞 F) _ u X Ω ξ (RingHom.id Ω) hu htX.gen hirr hreg hchart
   have hf' : ξ ≫ f = ξ₀ := by
     have : ξ ≫ f = _ := hf
     rw [this]; simp
   obtain ⟨N, x, hx⟩ := _root_.GlobalTheory.CompanionTheory.Ar.coordTie_int_of_finite X Ω ξ (𝓞 F) _ _ htX
-  obtain ⟨R1, R2⟩ := GlobalTheory.T.coord_charts_match_regular (𝓞 F) F Ω X X' ξ ξ' _ _ htX ht
+  obtain ⟨R1, R2⟩ := _root_.GlobalTheory.CompanionTheory.Ar.SncBase.FracPts.regAt_frac (𝓞 F) F Ω X X' ξ ξ' _ _ htX ht
   have hchar := GlobalTheory.T.char_zero_iff_nonzero_units F Ω X ξ _ _ htX
   have hFreg : ∀ (a : F) (p' : Cpt ξ'), algebraMap F Ω a ∈ regAt ξ' p' := by
     intro a p'
@@ -144,7 +145,7 @@ theorem exists_model_of_res (hRes : ResK.ResKStatement)
     · rintro ⟨p', hp', rfl⟩
       obtain ⟨p, h⟩ := R1 p'
       exact ⟨p, ⟨hunit p p' h, (hgen p p' h).2 hp'⟩, h⟩
-  have hpatch := GlobalTheory.T.snc_patch_at_each_component F X' _ e T Ω ξ' hξ' hξs hsm hsnc (_root_.GlobalTheory.CompanionTheory.Ar.SncBase.eq_of_regAt_eq_of_coordTie X' Ω ξ' F _ _ ht)
+  have hpatch := _root_.GlobalTheory.CompanionTheory.Ar.SncBase.Patch.exists_patch F X' _ e T Ω ξ' hξ' hξs hsm hsnc (_root_.GlobalTheory.CompanionTheory.Ar.SncBase.eq_of_regAt_eq_of_coordTie X' Ω ξ' F _ _ ht)
   obtain ⟨bd, hm, hc⟩ := _root_.GlobalTheory.CompanionTheory.Ar.SncBase.exists_isSncModel_of_patches Ω X ξ N x e B hx (fun p hp => hp.1) (by
     intro p hp0
     obtain ⟨p', h⟩ := R2 p ((hchar p).1 hp0)

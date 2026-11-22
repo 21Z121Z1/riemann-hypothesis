@@ -10,14 +10,14 @@ import Development.AbelianVarietyTheory.Proofs.ModuliProofs.GoodPullback
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CmModelCoefficientSubringDedekindCompatibleEmbed
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsDominantPullbackFstOfFlatOfInjective
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsActionModelOfExt
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CoprimeLevelStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CoprimeLevel
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LevelChangeExtendsBaseModel
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFiniteEtaleSurjectiveLevelMapStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ModuliLevelQuotientByFiniteGroupStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PushforwardPolarisationBundleInvertibleOnModel
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsQuotientModelByTameFiniteGroup
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CmModelCoefficientInclusionsEtaleOpenImmersionStatement
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IterateEqIdOfTrivialOnFixedFibreStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CmModelCoefficientInclusionsEtaleOpenImmersion
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IterateEqIdOfTrivialOnFixedFibre
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.FiniteOrderAutomorphismFixingLevelTrivialOnFixed
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsCompactModelAboveFullLevel
 
@@ -112,9 +112,9 @@ theorem exists_baseModel : (∀ (T K : Type) [CommRing T] [IsDomain T] [IsDiscre
   rw [hA] at R₀
   obtain ⟨⟨β, hβ⟩, ft₀, ded₀⟩ := R₀
   obtain ⟨⟨β₁, hβ₁⟩, ft₁, ded₁⟩ := GlobalTheory.BaseRing.isDedFrac_RZ E H l₁ (n * l₀.M) J hS hdiv
-  obtain ⟨⟨b, hb⟩, hb2⟩ := GlobalTheory.T.cmModelCoefficient_inclusions_etale_openImmersion E H (n * l₀.M) (n * l₀.M) 1 (n ^ J) J hS hN dvd_rfl (one_dvd _)
+  obtain ⟨⟨b, hb⟩, hb2⟩ := _root_.GlobalTheory.BaseRing.inclusion_RZ E H (n * l₀.M) (n * l₀.M) 1 (n ^ J) J hS hN dvd_rfl (one_dvd _)
   obtain ⟨bfin, -, -⟩ := (hb2 b hb).1 rfl hdiv
-  obtain ⟨⟨b', hb'⟩, hb2'⟩ := GlobalTheory.T.cmModelCoefficient_inclusions_etale_openImmersion E H n (n * l₀.M) (n ^ J) (n ^ J) J hS hN (dvd_mul_right _ _) dvd_rfl
+  obtain ⟨⟨b', hb'⟩, hb2'⟩ := _root_.GlobalTheory.BaseRing.inclusion_RZ E H n (n * l₀.M) (n ^ J) (n ^ J) J hS hN (dvd_mul_right _ _) dvd_rfl
   obtain ⟨bop, brange⟩ := (hb2' b' hb').2 rfl
   obtain ⟨C₁, q, hq, qm, qfin, qj, qφ, qp⟩ := _root_.GlobalTheory.Models.Top.exists_cpt_above E H D Xo n (n ^ J) T l₁ h₁ (n * l₀.M) J β₁ b' hS
     (dvd_mul_right _ _) hdiv hβ₁ hb'
@@ -154,7 +154,7 @@ theorem exists_baseModel : (∀ (T K : Type) [CommRing T] [IsDomain T] [IsDiscre
     intro κ _ _ x
     refine card_stab_ne_zero ρ x (J := J) hnp (fun ω hx => ?_) ?_
     · obtain ⟨h1, -, h3, g, σ, -, -, h6⟩ := hω ω
-      have := GlobalTheory.T.iterate_eq_id_of_trivial_on_fixed_fibre L1 L2 L3 E H D l₁ (Xo l₁) (n * l₀.M) β₁ C₁ (ρ₀ ω) (ν₀ ω) (ρ ω) (mu ω) hβ₁ hS ⟨J, hdiv⟩
+      have := _root_.GlobalTheory.StabTame.iterate_eq_id_of_fixes_fibre L1 L2 L3 E H D l₁ (Xo l₁) (n * l₀.M) β₁ C₁ (ρ₀ ω) (ν₀ ω) (ρ ω) (mu ω) hβ₁ hS ⟨J, hdiv⟩
         (hact ω).2.1 (hφ ω) (hover κ x ω hx) (by rw [h1]; exact h3) g (by rw [h1]; exact h6) κ x hx (htriv κ x ω hx)
       apply inj
       rw [map_pow, map_one]
@@ -172,7 +172,7 @@ theorem exists_baseModel : (∀ (T K : Type) [CommRing T] [IsDomain T] [IsDiscre
     b k r ν ρ₀ τ₀ ρ τ mu (ded₁ β₁ hβ₁) (ded₀ β hβ) hcomm bfin hr quot (Xo l₁).univ.proper
     (fun g => ⟨(hact g).1, (hact g).2.1, (hact g).2.2, (hω g).2.1⟩) qp hcard
     (fun κ _ _ x g hx => by rw [← (hact g).1]; exact htriv κ x g hx) good₁ push
-  have hcop : (n ^ J).Coprime l₁.M := ((GlobalTheory.T.exists_two_inert_odd_primes_coprime_level E H).2 n hn l₁).pow_left J
+  have hcop : (n ^ J).Coprime l₁.M := ((_root_.GlobalTheory.Models.exists_two_auxiliary_inert_odd_primes_coprime_level E H).2 n hn l₁).pow_left J
   exact ⟨⟨hA, β, hβ, C, good,
     _root_.GlobalTheory.Models.extendsAut_of_above hext L1 L2 L3 E H D Xo n (n ^ J) T hD l₀ l₁ h₁ _ _ β β₁ C C₁ b r ν above b' q hq (ded₀ β hβ)
       (ded₁ β₁ hβ₁) ft₀ bfin qfin qj hA rfl rfl hcop lev rsurj ⟨k, hk, hr, hcomm⟩,

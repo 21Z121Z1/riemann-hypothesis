@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsAdjoinSpli
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalHeckeConjPlaceEqDualLabelStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalHeckeConjPlaceEqDualLabel
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalLabelOperatorsOnHyperspecialFixedVector
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaLiftLevelsGoodPrimesProperties
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LevelOperatorsAtPrimeOffLevelDatum
@@ -55,7 +55,7 @@ theorem scalar_of_split {V : HSp D} {M : Type} [AddCommGroup M] [Module ℂ M] (
     rintro x ⟨k, hk, rfl | rfl⟩
     · exact ⟨a (splitLab V.rank k), fun u hu => ha u hu k hk⟩
     · refine ⟨b (splitLab V.rank k), fun u hu => ?_⟩
-      have hc := (GlobalTheory.T.sphericalHecke_conjPlace_eq_dualLabel V P).2.2 (Finsupp.single (splitLab V.rank k) 1) M π u (fu u hu)
+      have hc := (_root_.GlobalTheory.SphConj.sph_conj V P).2.2 (Finsupp.single (splitLab V.rank k) 1) M π u (fu u hu)
       rw [GlobalTheory.Hk3.dualC, Finsupp.mapDomain_single] at hc
       rw [← hc]
       exact hb u hu k hk

@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousMapPFin
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsLocCompAndIsLocLoc
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsNormalisedThetaSub
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DefiniteUnitaryAdmissibleFiniteMultiplicityStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DefiniteUnitaryAdmissibleFiniteMultiplicity
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsContinuousRetractionOntoUnitaryLocalPointsStatement
 
 noncomputable section
@@ -91,7 +91,7 @@ theorem exists_admissible_comp : ∀ (E : Type) [Field E] [NumberField E] [IsCMF
       IsCompAlong π.V (locU n w) (MonoidHom.id _) σ.ρ := by
   intro E _ _ _ n π w
   obtain ⟨r, hr, hrx, hrc⟩ := GlobalTheory.T.exists_continuous_retraction_onto_unitaryLocalPoints E n w
-  have hadm := (GlobalTheory.T.definiteUnitary_admissible_finiteMultiplicity E n π).1
+  have hadm := (_root_.GlobalTheory.DefU.admitted.admissible_finiteMult E n π).1
   let ρ : Representation ℂ (locU n w) π.V := π.rep.comp (locU n w).subtype
   let ρf : Representation ℂ (finU E n) π.V := π.rep.comp (finU E n).subtype
   have hρ : IsSmooth ρ := isSmooth_loc π w

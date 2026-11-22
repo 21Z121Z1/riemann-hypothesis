@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselFormConvergesEquivariantHermitianStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SmoothVectorsDenseInvariantStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselFormConvergesEquivariantHermitian
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SmoothVectorsDenseInvariant
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselSubgroupRepTwistedIsUnitaryRep
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsUnimodularBesselModelUnitaryGroup
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselMatrixCoeffExtendsBoundedEquivariant
@@ -81,7 +81,7 @@ theorem GlobalTheory.SgInf.exists_besselExt : ∀ (k r : ℕ) {H : Type} [Normed
   have hrep : IsURepOn (GG k r) σ := hStd.2.1
   have hHaar : IsHaarOn (GG k r) μG := hStd.2.2.2.2.1
   have hUni : IsUnimod (GG k r) μG := _root_.GlobalTheory.SgInf.isUnimod_GG k r μG hHaar
-  have hDDi := GlobalTheory.T.smooth_vectors_dense_invariant k r σ w hrep
+  have hDDi := _root_.GlobalTheory.SgInfDD.DD_stable_dense k r σ w hrep
   have hPi := _root_.GlobalTheory.SgInf.PiUnitary.piS_unitary k r z c π hSide.1 hSide.2.1 hSide.2.2.1
   obtain ⟨C, Ws, hWs, hreg⟩ := _root_.GlobalTheory.SgInf.reg_main k r σ μG T hrep hHaar hadd hsmul hloc hR
   classical
@@ -136,7 +136,7 @@ theorem GlobalTheory.SgInf.exists_besselExt : ∀ (k r : ℕ) {H : Type} [Normed
   · intro u hu
     have hsu := hDDsm u hu
     have hcont : ContinuousOn (Afun (psiGen k r z c) π μS σ u v ξ) (GG k r) := by
-      have hD1 := GlobalTheory.T.besselForm_converges_equivariant_hermitian k r σ w a μG d z c π μS hStd hSide (DD σ w) hDDi.1 hStd.2.2.2.2.2.2.2.1 u hu v hv
+      have hD1 := _root_.GlobalTheory.SgInf.BeForm.be_converges_equivariant_hermitian_continuous k r σ w a μG d z c π μS hStd hSide (DD σ w) hDDi.1 hStd.2.2.2.2.2.2.2.1 u hu v hv
       exact (ContinuousLinearMap.apply ℂ Wp ξ).continuous.comp_continuousOn hD1.2.2.2
     have := GlobalTheory.T.besselModel_eqOn_of_continuousOn_ae_eq k r μG (F u) _ hHaar (hF u hsu).1 hcont
       (by rw [← hTD u hu]; exact (hF u hsu).2.1) 1 one_memG

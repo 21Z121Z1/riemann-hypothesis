@@ -11,7 +11,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LaurentDegener
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FinrankKerMapLeOfFirstOrderKernelExt
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUnitCoeffOfNotXPowDvdLineStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TameLocalRelationDualNumberCocycleStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousAndResidualTrivComplexConjStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousAndResidualTrivComplexConj
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RelaxedResidualSelmerMemUnrelaxedStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MatrixComputesTwistedSelmerResidualTransfer
 
@@ -129,7 +129,7 @@ theorem core (hT : TameQuotient) (hG : GalHyp bkP i s) (hF : FirstHalf i s) (hR 
       Module.finrank K (LinearMap.ker (Ψ.map fun p => p.coeff 0).mulVecLin) ≤ 2 * D.R.r * R + e := by
   classical
   obtain ⟨hAux, ⟨z, L, -, -, hSt⟩, hPa⟩ := id hP
-  obtain ⟨hcont, hcj⟩ := GlobalTheory.T.continuous_and_residualTriv_complexConj D N X
+  obtain ⟨hcont, hcj⟩ := _root_.GlobalTheory.ResConjTriv.continuous_cConj_and_resTriv D N X
   have hcj := hcj i s hG.2.2.1
   have hφ' : ∀ a, φ' a = cConj X (φ a) := fun a => AlgEquiv.ext (hPa a).2.2
   let k := IsLocalRing.ResidueField (X.O0 i)

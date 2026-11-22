@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSectionOfChg
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPreconnectedComplexPointsOpenVarietyStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPreconnectedComplexPointsOpenVariety
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLocallyHolomorphicPeriodsFamily
 
 set_option autoImplicit false
@@ -88,6 +88,6 @@ theorem index_eq : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : R
     exact Fu.disj _ _ Q' R hQ' hR (hQu'.trans (by rw [hwx, hxu]))
   obtain ⟨z, hz, rfl⟩ := hpt i P y hy hU hP hu
   obtain ⟨z', hz', rfl⟩ := hpt i' P' y' hy' hU' hP' hu'
-  exact (GlobalTheory.T.isPreconnected_complexPoints_open_variety c.F B e W).constant hcont hz hz'
+  exact (_root_.GlobalTheory.CxConn.isPreconnected_ptsIn c.F B e W).constant hcont hz hz'
 
 end GlobalTheory.DetLine.SameIndex

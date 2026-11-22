@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsStratifi
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsLocalizedFractionSemilinearTransition
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSemilinearBaseChangeLocalizedOfTorsionBoundedStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilKisinHomEisensteinSpanAndNonZeroDivisor
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFrobeniusOnStratifiedValueStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFrobeniusOnStratifiedValue
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.StratifiedValueFrobeniusCommTransition
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LinearizedFrobeniusInvertibleUpToPow
 
@@ -80,7 +80,7 @@ theorem exists_crys : ∃ (M : FCrys l ↥(OL K)) (V : ∀ B, Eval S B (M.M B)),
   choose tr trbc htr using fun (B B' : Obj l ↥(OL K)) (k : Hom B B') =>
     _root_.GlobalTheory.BSP.eval_transition l K bk d S B B' (N B) (N B') (V B) (V B') k
   choose Ψ hΨ using fun (B : Obj l ↥(OL K)) (t : ↥B.I) =>
-    GlobalTheory.T.exists_frobenius_on_stratifiedValue l K bk d S B (N B) (V B) t t.2
+    _root_.GlobalTheory.BSP.FrobValue.psi_exists l K bk d S B (N B) (V B) t t.2
   let M : FCrys l ↥(OL K) :=
     { M := N
       acg := acg

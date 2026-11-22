@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.ImageStableDegreeBounds
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilRingModHighDegreePropertyStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilRingModHighDegreeProperty
 
 noncomputable section
 
@@ -536,7 +536,7 @@ theorem reduction : ∀ (O K : Type) [CommRing O] [NormedField K] [IsUltrametric
     [Algebra O K] [IsUnitBall O K] (l e a : ℕ) [Fact l.Prime] [NormedAlgebra ℚ_[l] K] [NeZero e]
     [NeZero a] [TameDescentExponentData K l e a], GlobalTheory.IndefiniteRowSideFullHecke.ImageStableDegreeBounds.Reduction O K l e a := by
   intro O K _ _ _ _ _ _ l e a _ _ _ _ _
-  have hR : RingModHigh O K l e := GlobalTheory.T.breuilRing_mod_high_degree_property O K l e a
+  have hR : RingModHigh O K l e := _root_.GlobalTheory.BK.ringModHigh O K l e a
   refine ⟨hR, fun ι _ _ η H D => ⟨modHigh_top_dat hR D, fun ζ x => D.desc.act_conn _ x,
     fun c => modHigh_isotypic hR D c⟩, fun ι κ _ _ _ _ η H B₁ B₂ F => ⟨fun x hx =>
       ⟨F.app_mem_ext (A_le_S l e) hx, F.app_conn x⟩, imageStable_top_hom hR F,

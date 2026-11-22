@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.ApplyEqOfMemAdjoin
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsTopWTopWOfExists
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsGaloisInvariantValuationIntegersEqIntegral
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ResidueLinearDisjointnessCoeffLtOneStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ResidueLinearDisjointnessCoeffLtOne
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIntegralBasisOfIntegralAlgebraicElements
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RamifiedDivisibilityOfUnramifiedDivisibility
 open scoped MatrixGroups NNReal
@@ -145,7 +145,7 @@ theorem GlobalTheory.Glue.ev_cong_iff_and_unit : ∀ (p : ℕ) [Fact p.Prime], �
     have LeviInductionForms : ∀ b : Fin F → Lau p, v (∑ j, κ j * ψ (algebraMap (Lau p) (O0 p) (b j))) < 1 →
         ∀ j, (p : Lau p) ∣ b j := by
       intro b hb j
-      have hr := GlobalTheory.T.residue_linear_disjointness_coeff_lt_one p Ω hC v hv hp1 T n ψ hψ F κ b (fun j => hκ j) hb
+      have hr := _root_.GlobalTheory.K5.ResDisj.coeff_lt_one p Ω hC v hv hp1 T n ψ hψ F κ b (fun j => hκ j) hb
       rw [← pow_one (p : Lau p), GlobalTheory.K5.Basic.natCast_pow_dvd_iff]
       intro r
       by_contra hnd
@@ -185,7 +185,7 @@ theorem GlobalTheory.Glue.ev_cong_iff_and_unit : ∀ (p : ℕ) [Fact p.Prime], �
       exact (inv_le_one₀ (pos_iff_ne_zero.2 h0)).1 h1
     have hx1 : v x = 1 := by
       refine le_antisymm hxv (not_lt.1 fun hlt => ?_)
-      have h3 := GlobalTheory.T.residue_linear_disjointness_coeff_lt_one p Ω hC v hv hp1 T n ψ hψ d e a he (by rwa [← hx]) r
+      have h3 := _root_.GlobalTheory.K5.ResDisj.coeff_lt_one p Ω hC v hv hp1 T n ψ hψ d e a he (by rwa [← hx]) r
       rw [← hc r, hcr] at h3
       exact lt_irrefl _ h3
     have hx0 : x ≠ 0 := by

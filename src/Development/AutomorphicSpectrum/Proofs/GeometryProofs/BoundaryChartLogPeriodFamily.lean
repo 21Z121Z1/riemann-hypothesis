@@ -5,9 +5,11 @@ import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.NineGeoU
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DifferentiableOnStarStar
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLogPeriodFamily
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeGramComplexConjugateStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FamilyExponentialConjugateStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LogPeriodsConjugateExistsStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeGramComplexConjugate
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeGram
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FamilyExponentialConjugate
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LogPeriodsConjugateExists
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ConjugateRootZeroThird
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField Matrix Filter Topology
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi
@@ -101,7 +103,7 @@ theorem isRiem_of_chart {Xo : Moduli D l} {σ : KA l →+* ℂ} {n a : ℕ} (C :
   have key := h m u v' (Γ.map (starRingEnd ℂ)) hv'
   constructor
   · intro hG i j
-    have h1 := key.1 (GlobalTheory.T.hodge_gram_complex_conjugate _ _ _ _ _ _ _ _ _ hx (fun _ => rfl) hG) i j
+    have h1 := key.1 (_root_.GlobalTheory.CompanionTheory.Ar.GramConj.isHodgeGram_conj _ _ _ _ _ _ _ _ _ hx (fun _ => rfl) hG) i j
     have h2 : (starRingEnd ℂ) (Γ i j) = _ := h1.trans (hform' i j)
     have h3 := congrArg (starRingEnd ℂ) h2
     simpa only [Complex.conj_conj] using h3
@@ -109,7 +111,7 @@ theorem isRiem_of_chart {Xo : Moduli D l} {σ : KA l →+* ℂ} {n a : ℕ} (C :
     have h1 : Fl.IsHodgeGram C.t.G C.t.PP.L (spMap (conjPts C.ψ (star z))) v' (Γ.map (starRingEnd ℂ)) := by
       refine key.2 fun i j => ?_
       exact (congrArg (starRingEnd ℂ) (hE i j)).trans (hform' i j).symm
-    have h2 := GlobalTheory.T.hodge_gram_complex_conjugate _ _ _ _ _ _ _ _ _ hx' hback h1
+    have h2 := _root_.GlobalTheory.CompanionTheory.Ar.GramConj.isHodgeGram_conj _ _ _ _ _ _ _ _ _ hx' hback h1
     have h3 : (Γ.map (starRingEnd ℂ)).map (starRingEnd ℂ) = Γ := by
       ext i j
       simp
@@ -240,8 +242,8 @@ theorem exists_logPeriods_famExp_isRiem : ∀ (E : Type) [Field E] [NumberField 
     rw [h3, map_neg, rt0_conj_neg_ne_zero, neg_neg]
   obtain ⟨ρ, Λ, iΛ, L', e', hρ0, hρ1, hper, hriem⟩ :=
     exists_log_periods_of_root E H D l Xo ((starRingEnd ℂ).comp σ) n a (chart C) hpq hσ'
-  obtain ⟨L, hLP, hLH⟩ := GlobalTheory.T.log_periods_conjugate_exists n a C.g Λ L'
-  obtain ⟨e, hper'⟩ := GlobalTheory.T.family_exponential_conjugate C.R C.t.G C.g n C.M ρ C.ψ e'
+  obtain ⟨L, hLP, hLH⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.LogPer.exists_conj_logPeriods n a C.g Λ L'
+  obtain ⟨e, hper'⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.ConjExp.exists_famExp_of_conj C.R C.t.G C.g n C.M ρ C.ψ e'
   refine ⟨ρ, Λ, iΛ, L, e, hρ0, hρ1, fun w hw p => ?_, fun z hz => ?_⟩
   · have hw' : star w ∈ logCover L'.a_le := (star_mem_logCover _).2 hw
     rw [hper', star_real_smul, star_expCover]

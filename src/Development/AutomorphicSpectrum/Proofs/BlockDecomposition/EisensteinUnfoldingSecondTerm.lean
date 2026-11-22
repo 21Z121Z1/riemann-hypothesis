@@ -1,19 +1,19 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ColJoinColLColR
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeilActionBlockMatrixComponentsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeilActionBlockMatrixComponents
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BlockWeilActionThetaUnfoldingStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SchwartzLatticeSumBounded
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsSchwartzBruhatAdelicMatrixOfMemAdelicSchwartz
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchwartzBruhatAdelicMatrixContinuousLeMajorantStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchwartzBruhatAdelicMatrixContinuousLeMajorant
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsSummableBoundSchwartzMajorantRationalTrans
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.SchwartzBruhatMixedFamilies
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.RealSizeNonneg
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HeckeFormNSOfHeckeForm
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CovolumeOneColumnJoinProductStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CovolumeOneColumnJoinProduct
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinHermitianIntegralUnfolding
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeSumPartialFourierUnfoldingStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeSumPartialFourierUnfolding
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinCoefficientBlockUnfolding
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CharacterIntegralOrthogonalityStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CharacterIntegralOrthogonality
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PeriodizationIntegralUnfolding
 noncomputable section
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct
@@ -46,7 +46,7 @@ theorem unfold2 : Unfold2 := by
       ∑' pq : Matrix (Fin V.rank) (Fin r) D.host.E × Matrix (Fin V.rank) (Fin s) D.host.E,
         cellTerm ψ V b.1 a Φ pq.1 pq.2 y₁ y₂ := by
     intro y₁ y₂
-    obtain ⟨hx, hy⟩ := GlobalTheory.T.weil_action_block_matrix_components D V.rank r s b.1 a y₁ y₂
+    obtain ⟨hx, hy⟩ := _root_.GlobalTheory.CompanionTheory.EisUnfold.Parts.parts D V.rank r s b.1 a y₁ y₂
     rw [hT]
     dsimp only
     rw [← e.tsum_eq]
@@ -56,8 +56,8 @@ theorem unfold2 : Unfold2 := by
     obtain ⟨g, rfl⟩ := mem_ratMx.1 hγ
     rw [← colJoin_colL_colR g, ← colJoin_colL_colR y, rat_colJoin, ← colJoin_add, hform, hform,
       add_comm (rat (colL g)), add_comm (rat (colR g))]
-    exact GlobalTheory.T.lattice_sum_shift_invariant D ψ hψ V r s b.1 a Φ (colL g) (colR g) (colL y) (colR y)
-  have hE := GlobalTheory.T.covolume_one_column_join_product D V.rank r s μr 𝓕r μs 𝓕s hμr hμs
+    exact _root_.GlobalTheory.CompanionTheory.EisUnfold.Period.tsum_cellTerm_add_rat D ψ hψ V r s b.1 a Φ (colL g) (colR g) (colL y) (colR y)
+  have hE := _root_.GlobalTheory.CompanionTheory.EisUnfold.ProdCovol.isCovolOne_colJoin D V.rank r s μr 𝓕r μs 𝓕s hμr hμs
   show ∫ y in 𝓕, T y ∂μ = _
   rw [covolOne_integral_eq hE hμ T hper]
   obtain ⟨i1, i2, i3, i4, i5, -⟩ := lattice_Mx D V.rank r

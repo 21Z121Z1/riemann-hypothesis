@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdempotentMu
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitProjAdeleComponentChartProperties
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitIdempotentPrimeProjectionCorrespondence
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DegreeOnePrimeReductionSplitPlaceDictionary
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitIdempotentBaseFunctionIdentityStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitIdempotentBaseFunctionIdentity
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaFunctionSplitProductDatumIsPureTensor
 
 noncomputable section
@@ -355,7 +355,7 @@ theorem thetaVecLocal : ∀ D : D7, ThetaVecLocal D := by
   refine ⟨?_, fun x hx => ?_⟩
   · choose g hg using fun PP : ↥(Pg ∪ Q) => GlobalTheory.PlaceVec.exists_isThetaAt (base_std hB) hS hT (ha PP.1 PP.2).1.1
       (GlobalTheory.SplitScalar.infPart_splitIdem (ha PP.1 PP.2).1)
-      (GlobalTheory.T.split_idempotent_base_function_identity D ψ θ S T sS sT ΛS ΛT f₀ hB _ _ (ha PP.1 PP.2).1 (ha PP.1 PP.2).2).1 (hSB PP.1 PP.2)
+      (_root_.GlobalTheory.PlaceModelOnto.placeModel_onto_local D ψ θ S T sS sT ΛS ΛT f₀ hB _ _ (ha PP.1 PP.2).1 (ha PP.1 PP.2).2).1 (hSB PP.1 PP.2)
     have hi : Function.Injective fun PP : ↥(Pg ∪ Q) => (Sum.inl (v PP.1) : Place D) := fun i j h =>
       Subtype.ext (hinj (Finset.mem_coe.2 i.2) (Finset.mem_coe.2 j.2) (Sum.inl_injective h))
     have key : ∀ (w : FinPl D) (φ : SplitProj D w) (e : AE D), IsIdemOf φ e → ∀ PP ∈ Pg ∪ Q, IsProjAt φ PP →

@@ -11,7 +11,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIntertwine
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsWeilRepresentationHeisenberg
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SpanHeisenbergTranslatesVacuumEqTop
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeilRepresentationOfLatticeVacua
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantFormNormalizedHeisenbergIntertwinerStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantFormNormalizedHeisenbergIntertwiner
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantFormNormalizedHeisenbergIntertwinerEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntertwinerFixesOfLocalVacuumStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSplitPlacesSelectingAdelicIdempotent
@@ -26,12 +26,12 @@ import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsOpenNsmulCo
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ThetaNormSqSumHeisenbergTranslatesDistinctChars
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.EventuallyFinEqOne
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ActAApply
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryGroupCharacterOfHeckeCharStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryGroupCharacterOfHeckeChar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompletedHomLatticeFinitelyGenerated
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompletedHomLatticeMultipleMemOpenLevelStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyUnitaryPairKeepsCompletedLatticeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompletedHomLatticeMultipleMemOpenLevel
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyUnitaryPairKeepsCompletedLattice
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHeisenbergInvariantMeanSquareForm
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InertPrimeNotDvdRelIndexSplitPlaceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InertPrimeNotDvdRelIndexSplitPlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymplecticFormUnitaryPairAction
 
 noncomputable section
@@ -72,7 +72,7 @@ theorem exists_isLatRep (hψ : IsStdChar D ψ (-1)) (hS : IsSelfDualC S ΛS) (hT
   obtain ⟨w, hw⟩ := exists_w D
   have H := isHeis_opF hψ.1 S T hw
   have hA := selfDual_latF (GlobalTheory.LatVac.latO_selfDual_approx_sign D ψ S T ΛS ΛT hψ hS hT).1
-  obtain ⟨hlev, hmov⟩ := GlobalTheory.T.completedHomLattice_multiple_mem_open_level D S T ΛS ΛT hS hT (_root_.GlobalTheory.LatFinGen.latO_finitely_generated D S T ΛS ΛT hS hT)
+  obtain ⟨hlev, hmov⟩ := _root_.GlobalTheory.LatLevel.level_of_generators D S T ΛS ΛT hS hT (_root_.GlobalTheory.LatFinGen.latO_finitely_generated D S T ΛS ΛT hS hT)
   have hspan := _root_.GlobalTheory.FinWeil.span_translates_vacua H _ hA (smooth_theta hψ.1 hS hT hw hA hlev)
   have hidx : ∀ p, idx (latF S T ΛS ΛT) ((latF S T ΛS ΛT).map (rhoF S T p)) ≠ 0 := fun p => by
     obtain ⟨N, hN, h⟩ := hmov p.1 p.2
@@ -123,8 +123,8 @@ theorem eventually_fix (hS : IsSelfDualC S ΛS) (hT : IsSelfDualC T ΛT) (f : th
     ∀ᶠ p in 𝓝 (1 : GA D S × GA D T), Om p f = f := by
   have H := isHeis_opF hψ S T h.hw
   have hgen := _root_.GlobalTheory.LatFinGen.latO_finitely_generated D S T ΛS ΛT hS hT
-  obtain ⟨hlev, -⟩ := GlobalTheory.T.completedHomLattice_multiple_mem_open_level D S T ΛS ΛT hS hT hgen
-  obtain ⟨h1, h2⟩ := GlobalTheory.T.eventually_unitaryPair_keeps_completedLattice D S T ΛS ΛT hS hT hgen
+  obtain ⟨hlev, -⟩ := _root_.GlobalTheory.LatLevel.level_of_generators D S T ΛS ΛT hS hT hgen
+  obtain ⟨h1, h2⟩ := _root_.GlobalTheory.LatNhds.eventually_actO D S T ΛS ΛT hS hT hgen
   have hf : f ∈ Submodule.span ℂ
       {m | ∃ x e, Fixes (opF hψ S T w) (latF S T ΛS ΛT) e ∧ m = opF hψ S T w x e} := by
     rw [h.span]; trivial
@@ -160,7 +160,7 @@ theorem unit (hlam : GoodNorm (sgO D) lam) (μ : Measure (WO S T)) (𝓕 : Set (
     (h𝓕 : IsAddFundamentalDomain (ratL T S) 𝓕 μ) (p : GA D S × GA D T) (f : thetaSub ψ S T) :
     ∫⁻ u in 𝓕, ‖(Om p f : WO S T → ℂ) u‖ₑ ^ 2 ∂μ = ∫⁻ u in 𝓕, ‖(f : WO S T → ℂ) u‖ₑ ^ 2 ∂μ := by
   obtain ⟨B, hB, hB'⟩ := _root_.GlobalTheory.ThetaMeanSquareForm.exists_invariant_form D ψ S T hψ (thetaSub ψ S T) (fun _ hf => hf) μ 𝓕 hμ h𝓕
-  rw [hB', hB', GlobalTheory.T.invariantForm_normalizedHeisenbergIntertwiner (isHeis_opF hψ S T h.hw) (fun x y => hψ.2.1 _) lam hlam _ h.sd h.span (rhoF S T p)
+  rw [hB', hB', _root_.GlobalTheory.FinWeil.invForm_intertwiner (isHeis_opF hψ S T h.hw) (fun x y => hψ.2.1 _) lam hlam _ h.sd h.span (rhoF S T p)
     (gamF_rhoF p) (h.sd' p) (h.fin p) (Om p) (h.op p) (h.vac p) B]
   intro x u v
   have h1 : ∀ u : thetaSub ψ S T, opF hψ S T w x u =
@@ -193,7 +193,7 @@ theorem split
   have hi := h.fin (g, k)
   have hl := hsq _ hi (by
     rw [idx_latF_eq] at hi ⊢
-    refine GlobalTheory.T.inertPrime_not_dvd_relIndex_splitPlace D S T e he _ _ (GlobalTheory.LatticeStable.smul_mem_latO D S T _ _ _) ?_ ?_ ?_ hi
+    refine _root_.GlobalTheory.SplitIndex.not_dvd_relIndex D S T e he _ _ (GlobalTheory.LatticeStable.smul_mem_latO D S T _ _ _) ?_ ?_ ?_ hi
     · rintro a ha _ ⟨_, ⟨x, hx, rfl⟩, rfl⟩
       exact ⟨_, ⟨a • x, GlobalTheory.LatticeStable.smul_mem_latO D S T _ _ _ a ha _ hx, rfl⟩, actO_smul g k a x⟩
     · rintro _ ⟨x, -, rfl⟩
@@ -274,8 +274,8 @@ theorem exists_isFinWeil (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (hψ : IsStdC
   obtain ⟨lam, hlam, hsq⟩ := exists_goodNorm D
   obtain ⟨w, Om, h⟩ := exists_isLatRep hψ hS hT hlam
   obtain ⟨ε, hε⟩ := _root_.GlobalTheory.HalfIdem.exists_half_idem D
-  obtain ⟨c, c1, c2, c3, c4⟩ := GlobalTheory.T.exists_unitaryGroup_character_of_heckeChar D ε hε S χT _ hχT hrT
-  obtain ⟨d, d1, d2, d3, d4⟩ := GlobalTheory.T.exists_unitaryGroup_character_of_heckeChar D ε hε T χS _ hχS hrS
+  obtain ⟨c, c1, c2, c3, c4⟩ := _root_.GlobalTheory.SplitDetCharacter.exists_character D ε hε S χT _ hχT hrT
+  obtain ⟨d, d1, d2, d3, d4⟩ := _root_.GlobalTheory.SplitDetCharacter.exists_character D ε hε T χS _ hχS hrS
   let z : GA D S × GA D T → Circle := fun p => (c p.1)⁻¹ * d p.2
   have z1 : z 1 = 1 := by simp [z]
   have z2 : ∀ p q, z (p * q) = z p * z q := fun p q => by

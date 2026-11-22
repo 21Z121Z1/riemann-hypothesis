@@ -14,11 +14,11 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LiftWeightInfi
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ResidueCharacterArtinTameGaloisEqTameValueStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LevelCharactersTypePlacesEqLocalComponents
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BaseDataTypeCharacterEqLocalComponent
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsStandardFrameKeepsMatricesStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsStandardFrameKeepsMatrices
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrameKeepsMatricesMatchesRationalPoints
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsWeightEmbeddingHarmonicPolynomialsLattices
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AlgebraicFormsLevelGroupEqTwistLevel
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AlgebraicLevelCharacterEqTwistLevelCharacterStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AlgebraicLevelCharacterEqTwistLevelCharacter
 
 noncomputable section
 
@@ -186,7 +186,7 @@ theorem levMatch (hA : GlobalTheory.Published.GlobalArtinReciprocity) : ∀ (D :
       (ρ.eG i j b g ⟨NX.pG D kv, h⟩).val a c = is kv ((g kv).val (Fin.cast (FWT.rank_Wc j) a) (Fin.cast (FWT.rank_Wc j) c)) :=
     fun g kv h a c => (hp.grp i j b g _ h (hp.Pg i j b ▸ h) a c).trans (his kv g _ _ _)
   refine ⟨_root_.GlobalTheory.MtLev.levMem D i j b k Q ψ _ _ _ _ _ _ _ hF (PV j) (hPV j) hβ hPg hinj hQ hD is _ hgrp (hlv.U_eq i j b) Bs.exp.U_eq,
-    GlobalTheory.T.algebraicLevelCharacter_eq_twistLevelCharacter D i j b k Q ψ _ _ _ _ _ _ _ hF (PV j) (hPV j) hβ hPg hinj hQ hD is _ hgrp (hlv.U_eq i j b) Bs.exp.U_eq ?_
+    _root_.GlobalTheory.LevChiRead.levChi_read D i j b k Q ψ _ _ _ _ _ _ _ hF (PV j) (hPV j) hβ hPg hinj hQ hD is _ hgrp (hlv.U_eq i j b) Bs.exp.U_eq ?_
       (ρ.e i b) (ρ.ek i b k) (ek_toKk hρ i b k) (Bs.exp.psiU_gen i b) (hlv.psiU_eq i j b) ?_ ?_ ?_⟩
   · rw [← hQ, ← hD]
     exact ha.2.symm
@@ -284,7 +284,7 @@ theorem exists_reading : GlobalTheory.Published.GlobalArtinReciprocity → ∀ (
   choose r hr using cell
   exact ⟨r, fun i j b k Q ψ hT => (hr i j b k Q ψ hT).1, fun i j b k Q ψ _ hT => (hr i j b k Q ψ hT).2⟩
 
-theorem exists_idFrame : ∀ (D : D7) (hF : D.host.F = maximalRealSubfield D.host.E) (j : Fin D.R.m), FWT.VStd D j → ∃ P : principalLevelFrame.RowPsi (Vc D j) D.R.nV, IdFrame hF P ∧ GlobalTheory.Mem.R3.StdFrame hF P := GlobalTheory.T.exists_standard_frameKeepsMatrices
+theorem exists_idFrame : ∀ (D : D7) (hF : D.host.F = maximalRealSubfield D.host.E) (j : Fin D.R.m), FWT.VStd D j → ∃ P : principalLevelFrame.RowPsi (Vc D j) D.R.nV, IdFrame hF P ∧ GlobalTheory.Mem.R3.StdFrame hF P := _root_.GlobalTheory.MtRead.IdFrameStd.exists_idFrame
 
 end GlobalTheory.MtRead
 end

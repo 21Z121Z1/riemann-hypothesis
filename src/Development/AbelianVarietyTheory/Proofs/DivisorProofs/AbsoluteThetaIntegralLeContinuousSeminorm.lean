@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.WeilThetaC
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.WeilEisensteinSiegelConvergence
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.WeilSiegelFormula
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsArchEquivEq
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzCoordinatesInInfiniteFamilyStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzCoordinatesInInfiniteFamily
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzMapBarrelledSpace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeasurableThetaSumOfSchrodinger
 open scoped TensorProduct ENNReal Matrix Classical
@@ -97,7 +97,7 @@ theorem absThetaInt_le_contSeminorm : GlobalTheory.Published.WeilThetaConvergenc
   have hcont : ∀ φ : WeilM.schA D.host.F (Fin B.rank × Fin A.rank × Fin d), Continuous (φ.1 ∘ coord ε) :=
     fun φ => (GlobalTheory.ThetaTransformMeas.continuous_of_mem_schA D.host.F φ.2).comp (continuous_coord ε)
   have hfin : ∀ φ : WeilM.schA D.host.F (Fin B.rank × Fin A.rank × Fin d), absThetaInt B m (φ.1 ∘ coord ε) ≠ ⊤ :=
-    fun φ => (hP D A.rank B hA hw θ hθ m hm ⟨_, GlobalTheory.T.schwartz_coordinates_in_infinite_family D θ hθ B.rank A.rank d ε φ⟩).ne
+    fun φ => (hP D A.rank B hA hw θ hθ m hm ⟨_, _root_.GlobalTheory.SchwartzCoord.mem_schwartzA_comp_coord D θ hθ B.rank A.rank d ε φ⟩).ne
   let ν : Seminorm ℂ (WeilM.schA D.host.F (Fin B.rank × Fin A.rank × Fin d)) :=
     Seminorm.of (fun φ => (absThetaInt B m (φ.1 ∘ coord ε)).toReal)
       (fun φ ψ => by

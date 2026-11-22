@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PullLinInjective
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NonnegSumSmulIntBilinFormToRealMemPsdCone
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolyhedralPolarisationFaceCutIsCellStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolyhedralPolarisationFaceCutIsCell
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCellQuotientByRadicalOfMemCone
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CellOfQuotientCellRadicalPullback
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CarrierDimInvFunHostFixingAutInvariant
@@ -31,7 +31,7 @@ theorem GlobalTheory.PolFan.CarDim.exists_isCarrierDim : ∀ (E : Type) [Field E
   refine ⟨carFun H.bar ψ, _root_.GlobalTheory.PolFan.CarDim.isTwInv_carFun E H ψ htw, ?_⟩
   intro X _ _ _ _ hX β hβ hp
   have hfan := hψ X hX
-  have hface := GlobalTheory.T.polyhedralPolarisation_face_cut_isCell E H ψ X hfan (hD X)
+  have hface := _root_.GlobalTheory.PolFan.FaceCutCell.isCell_comp E H ψ X hfan (hD X)
   rw [evalZ_carFun hβ hp]
   congr 1
   obtain ⟨m₀, γ₀, hγ₀, hin₀⟩ := exists_cell hfan hβ hp

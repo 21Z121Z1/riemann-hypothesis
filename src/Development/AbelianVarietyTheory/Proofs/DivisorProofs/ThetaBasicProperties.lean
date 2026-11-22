@@ -1,7 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotropicHermitian
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdmissibleFormAdelicThetaSumStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdmissibleFormAdelicThetaSum
+import Development.AbelianVarietyTheory.Definitions.Divisors.HilbertNinetyQuotientHomEqIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaSumInvariantRationalUnitary
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaModerateGrowthHeight
 
@@ -15,7 +16,7 @@ namespace GlobalTheory.ThKBasic
 theorem thetaBasic : GlobalTheory.FunPr.Hypotheses₂ → GlobalTheory.ThK.ThetaBasic := by
   intro hKP F E _ _ _ _ _ σ B n d X W M χX χW om r s r' s' hP
   have hS := hP.weil.isUSplitting
-  obtain ⟨l, hl, hlt⟩ := GlobalTheory.T.exists_admissibleForm_adelicThetaSum F (Fin n × Fin d)
+  obtain ⟨l, hl, hlt⟩ := _root_.GlobalTheory.WeilM.exists_adm_eq_thetaSum_of_locallyCompact F (Fin n × Fin d)
   refine ⟨fun Φ hΦ => ⟨?_, ?_, _root_.GlobalTheory.ThetaModGrowthPair.theta_modGrowth hKP F E σ B n d X W M χX χW om r s r' s' hP Φ hΦ⟩, ?_⟩
   · refine (hS.cont l hl Φ hΦ).congr fun x => ?_
     simp only [theta]

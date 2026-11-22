@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.UnipotentAdelicQuotients.SWXSDefs
 import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.MatrixTransvectionDiagonalDecompositionStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.MatrixTransvectionDiagonalDecomposition
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HaarInvariantUnderTransvection
 open MeasureTheory Topology Matrix
 open scoped ENNReal NNReal
@@ -79,7 +79,7 @@ theorem map_mulVec_eq_smul : ∀ (K : Type) [CommRing K] [TopologicalSpace K] [I
     (A : Matrix ι ι K), IsUnit A.det → ∀ c : ℝ≥0,
       lam.map (fun y => A.det * y) = c • lam → μ.map (fun x => A *ᵥ x) = c • μ := by
   intro K _ _ _ _ _ _ _ _ _ _ ι _ _ μ _ lam _ A hA c hc
-  obtain ⟨L, L', D, hAeq⟩ := GlobalTheory.T.matrix_transvection_diagonal_decomposition K ι A
+  obtain ⟨L, L', D, hAeq⟩ := _root_.GlobalTheory.CompanionTheory.SW.artinian_reduced_list_transvec_mul_diagonal_mul_list_transvec K ι A
   have hdet : A.det = ∏ i, D i := by
     rw [hAeq, Matrix.det_mul, Matrix.det_mul, det_transvections, det_transvections,
       Matrix.det_diagonal, one_mul, mul_one]

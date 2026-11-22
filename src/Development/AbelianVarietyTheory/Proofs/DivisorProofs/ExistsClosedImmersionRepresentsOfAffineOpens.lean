@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WhiskerLeftLeftIsPullbackSndStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WhiskerLeftLeftIsPullbackSnd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFactorClosedImmersionOfLocallyOnSource
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGlueClosedImmersionsOpenCover
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteFlatSurjectiveClosedSubschemeOfOpenCover
@@ -28,7 +28,7 @@ theorem exists_closedImmersion_represents_of_affineOpens : ∀ (S : Scheme.{0}) 
   have hpb : ∀ V : T.left.affineOpens,
       IsPullback (U ◁ (Over.homMk V.1.ι rfl : Over.mk (V.1.ι ≫ T.hom) ⟶ T)).left
         (snd U (Over.mk (V.1.ι ≫ T.hom))).left (snd U T).left V.1.ι :=
-    fun V => _root_.GlobalTheory.T.isPullback_whiskerLeft_left_snd S U T _ _
+    fun V => _root_.GlobalTheory.whiskerLeft_left_isPullback_snd S U T _ _
   have hoi : ∀ V : T.left.affineOpens,
       IsOpenImmersion (U ◁ (Over.homMk V.1.ι rfl : Over.mk (V.1.ι ≫ T.hom) ⟶ T)).left :=
     fun V => MorphismProperty.of_isPullback (P := @IsOpenImmersion) (hpb V).flip inferInstance

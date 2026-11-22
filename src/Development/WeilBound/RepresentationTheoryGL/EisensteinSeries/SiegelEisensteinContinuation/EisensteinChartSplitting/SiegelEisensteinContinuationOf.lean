@@ -23,7 +23,7 @@ import Development.WeilBound.RepresentationTheoryGL.EisensteinResidues.Anisotrop
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StandardSectionExists
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartSectionExists
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ScalarSectionExists
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DivisibilityStatementStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DivisibilityStatement
 import Development.WeilBound.RepresentationTheoryGL.EisensteinSeries.SiegelEisensteinContinuation.EisensteinChartSplitting.PositiveSumGrowth.AbsAPos
 
 namespace PositivityTheory.RgEis.Sp
@@ -32,6 +32,6 @@ open ResidueKilled.Tr
 
 theorem siegelEisensteinContinuation_of (hD : Dict) (hI : DictInf) (hL : SecLaw) (hW : WallLaw) (hG : CMGood)
     (hT : GrpTop) (hB : BdetLaw) (hE : ExtLaw) (hP : ParLaw) (hS : SgAll) : GlobalTheory.Published.SiegelEisensteinContinuation :=
-  ResidueKilled.Tr.tTop hG hT hB hE hP hS (_root_.GlobalTheory.CompanionTheory.TChartProof.tChart hD hI _root_.GlobalTheory.CompanionTheory.StdChart.tStd) (_root_.GlobalTheory.CompanionTheory.ScalWall.tScal hL hW) GlobalTheory.T.divisibility_statement
+  ResidueKilled.Tr.tTop hG hT hB hE hP hS (_root_.GlobalTheory.CompanionTheory.TChartProof.tChart hD hI _root_.GlobalTheory.CompanionTheory.StdChart.tStd) (_root_.GlobalTheory.CompanionTheory.ScalWall.tScal hL hW) _root_.GlobalTheory.CompanionTheory.DivMult.div_multiplier
 
 end PositivityTheory.RgEis.Sp

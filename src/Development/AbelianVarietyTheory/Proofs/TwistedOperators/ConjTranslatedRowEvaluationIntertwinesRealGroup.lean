@@ -38,7 +38,7 @@ private lemma ae_comp_of_map_eq (B : RowsAut) (φ : B.I.GA → B.I.GA)
 private lemma ext_ae_eq_of_leftInvariant (B : RowsAut) (f : B.I.GA → ℂ) (hf : ∀ γ ∈ B.I.GFset, ∀ y, f (γ * y) = f y)
     (F : B.I.L2 B.μf B.fund) (hF : (F : B.I.GA → ℂ) =ᵐ[(B.I.muA B.μf).restrict B.fund] f) :
     B.I.ext F =ᵐ[B.I.muA B.μf] f := by
-  obtain ⟨Γ, hΓ, hcount, -, -⟩ := GlobalTheory.T.rationalUnitaryPoints_discrete_fundamentalDomain B.I
+  obtain ⟨Γ, hΓ, hcount, -, -⟩ := _root_.GlobalTheory.RatDiscrete.rational_points B.I
   have hc0 : (Γ : Set B.I.GA).Countable := Set.countable_coe_iff.mp hcount
   have hc : B.I.GFset.Countable := by rw [← hΓ]; exact hc0
   have h0 : ∀ᵐ z ∂(B.I.muA B.μf), z ∈ B.fund → (F : B.I.GA → ℂ) z = f z :=

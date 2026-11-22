@@ -5,7 +5,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelCharacterConju
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLiftOfMemLevel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlacesApart
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftMemLevelOfDatumFlagCharacter
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftIntertwinesLiftsSmoothVectorsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftIntertwinesLiftsSmoothVectors
+import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
 open NumberField IsDedekindDomain MeasureTheory Formalism.BasicNotions Formalism.MainNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S Formalism.L2.Theta Formalism.L2.DIV Formalism.L2.Indef Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.IndefR.Lev Formalism.IndefR.Datum Formalism.IndefR
 attribute [local instance] Formalism.BasicNotions.Host.cmStar
 
@@ -50,7 +51,7 @@ theorem thF_mem_conj {D : D7} {G : Type} [Group G] [Fintype G] {Pl0 T : Type} {A
     refine Eq.trans ?_ (congrArg (fun w => (levChi (Vc D i) (R.βV i) (flagL (R.datVt i t)) κ)⁻¹ • w) (e1 h).symm)
     refine (congrArg (fun a : ℂ => a • R.extV i t y h) hnum).trans ?_
     exact mul_smul _ _ _
-  have key := GlobalTheory.T.thetaLift_intertwines_lifts_smoothVectors R hIs hMod hTh i t g0.1 κ k' hl hl' y _ hsh v g
+  have key := _root_.GlobalTheory.ThetaShiftSmooth.thF_shift_all R hIs hMod hTh i t g0.1 κ k' hl hl' y _ hsh v g
   have hcc : levChi (Wc D i) (R.βW i) (R.datWp i P.conj) k' = (((P.chi g1 : ℂˣ) : ℂ))⁻¹ := by
     rw [hc']
     change (((P.chi⁻¹) g1 : ℂˣ) : ℂ) = _

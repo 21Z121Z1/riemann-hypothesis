@@ -28,7 +28,7 @@ import ReciprocityTheory.AnalyticForms.PotentialTheory.DegreeInt
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffFubiniStudyRatioCompChart0
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ProjectiveLinePartitionContinuousCoe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernMatLinearCombination
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarisationDetStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarisationDet
 
 open CategoryTheory AlgebraicGeometry TopologicalSpace Set Filter Topology MeasureTheory
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -45,7 +45,7 @@ theorem pol_chernDens_comb : ∀ (k : Type) [CommRing k] (X : Scheme.{0}) (p : X
       D.factorial / Real.pi ^ D * (∑ j, (n j : ℂ) • H j).det.re := by
     rw [← MixDens.chernMat_comb k X p σ D (Fin D) L n c y hy]
     rfl
-  have key := GlobalTheory.T.sum_neg_one_pow_card_det_sum_eq_sum_perm_det D H
+  have key := _root_.GlobalTheory.PolDet.polarisation_det D H
   simp only [FibreProj.pol, hc, dens, MLine.ofHerm]
   have e2 : (∑ τ : Equiv.Perm (Fin D), (Matrix.of fun j l => c.hess ((L (τ l)).φ σ) (pick ((L (τ l)).φ σ).isLB y) y j l).det)
       = ∑ τ : Equiv.Perm (Fin D), (Matrix.of fun j l => H (τ l) j l).det := rfl

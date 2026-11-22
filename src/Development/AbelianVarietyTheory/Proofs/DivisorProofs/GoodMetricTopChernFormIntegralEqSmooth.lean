@@ -2,13 +2,13 @@ import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.GoodTopChernForm
 import Development.AbelianVarietyTheory.Definitions.Divisors.EndValuedForm11Coeffs
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasTopFormChartIntegralCongrOn
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasTopFormChartIntegralZeroStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasTopFormChartIntegralZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralFiniteSumTopForms
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousMulTopChernFormIsTopDegree
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransgressionCorrectionIsTopDegreeForm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGoodPatchOfComplexPointOpenPart
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPoincareGoodPatchOutsideOpen
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSmoothPartitionOfUnityComplexPointsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSmoothPartitionOfUnityComplexPoints
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransgressionTopChernFormGoodPatch
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumTransgressionDensitiesPartitionUnityEqZero
 
@@ -27,7 +27,7 @@ theorem goodTopChernForm : GlobalTheory.Published.GoodTopChernForm := by
     · exact _root_.GlobalTheory.GoodTop.exists_goodPatch_of_mem E O H hH y hy
     · exact _root_.GlobalTheory.GoodTop.exists_goodPatch E O H hG y hy
   choose e S A W c hyW hP using hp
-  obtain ⟨s, ρ, hρ, hsupp, hsum⟩ := GlobalTheory.T.exists_smooth_partition_of_unity_complexPoints W fun y => (hP y).isOpen.mem_nhds (hyW y)
+  obtain ⟨s, ρ, hρ, hsupp, hsum⟩ := _root_.GlobalTheory.GoodTop.exists_cInf_partition W fun y => (hP y).isOpen.mem_nhds (hyW y)
   choose a b ha hb hab using fun i : s => _root_.GlobalTheory.GoodTop.hasInt_patch_transgression E O H H₀ hH hH₀ (hP i) (hρ i) (hsupp i)
   have hd : ∀ i j : AlgChart X.str σ X.dim,
       DifferentiableOn ℂ (j.e ∘ i.e.symm) (i.e.target ∩ i.e.symm ⁻¹' j.e.source) := fun i j => i.holo_trans j
@@ -46,7 +46,7 @@ theorem goodTopChernForm : GlobalTheory.Published.GoodTopChernForm := by
     _root_.GlobalTheory.GoodTop.hasInt_congr_on _ (hm O) (fun i y _ hy => _root_.GlobalTheory.GoodTop.sum_corrDens_eq_zero E O H H₀ ρ hρ hsum i y hy)
       (_root_.GlobalTheory.GoodTop.hasInt_sum _ hd hcov (hm O) (fun i => _root_.GlobalTheory.GoodTop.isTopForm_corrDens E O H H₀ hH hH₀ (hρ i)) hab)
   have e₂ : ∑ i, b i = t := h₂.2.symm.trans ht.2
-  have e₃ : ∑ i, (a i - b i) = 0 := h₃.2.symm.trans (GlobalTheory.T.hasTopFormChartIntegral_zero _ _).2
+  have e₃ : ∑ i, (a i - b i) = 0 := h₃.2.symm.trans (_root_.GlobalTheory.GoodTop.hasInt_zero _ _).2
   rw [Finset.sum_sub_distrib, sub_eq_zero, e₂] at e₃
   exact e₃ ▸ h₁
 

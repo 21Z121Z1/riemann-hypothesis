@@ -4,11 +4,11 @@ import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasWeil
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftEisensteinLevelSubgroup
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TsumMeas
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StronglyMeasurableTwistedLatticeSum
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeisenbergCharacterBilinearLawsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeisenbergCharacterBilinearLaws
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralEqFundamentalDomainLatticeSumStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PartialCoefficientHeisenbergExpansion
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ShAdd
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SchwartzLatticeSumBoundedAltBis
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PeriodisationBound
 
 noncomputable section
 
@@ -73,10 +73,10 @@ theorem fj_fold_mean : ∀ {D : D7} {n ρ p : ℕ} {hn : ρ + p = n} (M : Maps D
   haveI : Countable D.host.E := (Module.finBasis ℚ D.host.E).equivFun.toEquiv.injective.countable
   haveI : Countable (Matrix (Fin ρ) (Fin p) D.host.E) :=
     inferInstanceAs (Countable (Fin ρ → Fin p → D.host.E))
-  obtain ⟨-, -, hnorm, -, -, hcont⟩ := GlobalTheory.T.heisenberg_character_bilinear_laws (ρ := ρ) (p := p) ψ hψ b₀
+  obtain ⟨-, -, hnorm, -, -, hcont⟩ := _root_.GlobalTheory.CompanionTheory.FJE.chv_facts (ρ := ρ) (p := p) ψ hψ b₀
   have hφc : Continuous φ := GlobalTheory.RegSch.CentreWeilComm.continuous_of_mem hθ ⟨φ, hφ⟩
   have hφi : Integrable φ m.μ := GlobalTheory.RegSch.CentreWeilComm.integrable_of_mem hθ m.μ ⟨φ, hφ⟩
-  obtain ⟨B₂, hB₂⟩ := GlobalTheory.T.exists_bound_lattice_sum_norm_schwartzA θ hθ φ hφ
+  obtain ⟨B₂, hB₂⟩ := _root_.GlobalTheory.CompanionTheory.FJE.periodisation_bound θ hθ φ hφ
   have hD := _root_.GlobalTheory.CompanionTheory.FJE.dsum_stronglyMeasurable ψ hψ b₀ φ hφc.stronglyMeasurable (fun y => (hB₂ y).1)
   set Z : Mx D ρ p × Mx D ρ p → ℂ := fun v => zc M m ψ b₀ F (M.nzx 0 v.2 * (M.sh v.1 * g)) with hZdef
   have hpcm : StronglyMeasurable fun y => pc M m ψ b₀ F (M.sh y * g) :=

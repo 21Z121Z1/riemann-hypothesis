@@ -83,7 +83,7 @@ theorem move_main_alt : ∀ {D : D7} {L : SizeData₂ D} {hT : GatTies D} {Gi : 
             (hInt PP h j _ (hsj PP h))
         · push_neg at hex
           exact hAgree w (fun i => (hex i).symm)
-      have hEq := GlobalTheory.T.latticeCompletion_eq_of_local_agreement (Yc D j) Lt (N j) P hLt.1 (hN j hj).1 hloc
+      have hEq := _root_.GlobalTheory.FinPl.LocAgree.latV_eq_of_local (Yc D j) Lt (N j) P hLt.1 (hN j hj).1 hloc
       have := hMv P
       unfold GlobalTheory.FinPl.Moves at this ⊢
       rwa [← hEq]

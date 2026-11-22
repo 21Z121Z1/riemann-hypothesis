@@ -76,7 +76,7 @@ theorem exists_level {B : Base} {X : PreX B.toPre} (I : TC B X) (l : I.Laws) (u 
   have hpt : TC.PtOf (y' * (y'⁻¹ * (ratAd B.host.F γ⁻¹ * w)) * k (chOf ((I.stp u a i).cl b d)))
       ((I.stp u a i).act b (1, κ) ((I.stp u a i).rep ((I.stp u a i).cl b d))).1.1 := by
     rw [hk, mul_inv_cancel_left, mul_assoc]
-    exact GlobalTheory.T.isPointOf_rational_unitary_adelic_mul _ _ _ _ _ _ _ γ⁻¹ _ _ hw
+    exact _root_.GlobalTheory.Mem.Col2.RatMove.isPtOf_ratAd _ _ _ _ _ _ _ γ⁻¹ _ _ hw
   have hx := (hlev _ _ hpt).2 ⟨(1, κ), map_one (Formalism.L2.Col.ufGL _ _), rfl, by
     refine Eq.trans ?_ hco
     refine (congrArg (fun q : (I.stp u a i).D b => cosetIn q) hk).trans ?_

@@ -6,10 +6,11 @@ import Formalism.LocalToGlobal.KernelLattices.InterlaceAll
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.JetsInIffStepField
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HermitianChartComplexRationalIntegralFormsStatement
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.DiagramFitsSourceRank
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsMemberStepChartsStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsMemberStepCharts
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TupleChainMiddleStageChartsJoinedMemberStatement
 import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLocGen
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsChartsReadingStepZeroStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsChartsReadingStepZero
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DualLatticeLocalBasisIffUnimodularCompanion
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ComplexValueDetShiftMulRatSpan
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FormsLatticeAtClassIffTwistedPolynomial
@@ -27,8 +28,8 @@ theorem charts_read_step {B : Base} {X : PreX B.toPre} (I : TC B X) (hOk : I.Ok)
         (fun c => latCrd (I.rec7 l Z) i hi (I.latAt u a i c.1))), I.ReadsK l Z u a i hi chOf K := by
   classical
   rcases Nat.eq_zero_or_pos i with rfl | h1
-  · exact GlobalTheory.T.exists_charts_reading_step_zero I hOk hPins l Z u a
-  · obtain ⟨Ch0, _, chOf0, K0, hK0, -⟩ := GlobalTheory.T.exists_memberStep_charts I hOk hPins l Z u i hi
+  · exact _root_.GlobalTheory.Mem.Col2.TC.Chart0.charts_zero I hOk hPins l Z u a
+  · obtain ⟨Ch0, _, chOf0, K0, hK0, -⟩ := _root_.GlobalTheory.Mem.Col2.MemChart.exists_charts I hOk hPins l Z u i hi
     obtain ⟨Ch, _, chOf, K, -, hK, -⟩ := GlobalTheory.T.tupleChain_middleStage_charts_joined_member I hOk hPins l Z u a ((I.Q a).image fun P => P.under (𝓞 B.host.F)) i hi
       Ch0 chOf0 K0 h1 him (fun v => Finset.mem_image) hK0
     exact ⟨_, Ch, chOf, K, hK⟩

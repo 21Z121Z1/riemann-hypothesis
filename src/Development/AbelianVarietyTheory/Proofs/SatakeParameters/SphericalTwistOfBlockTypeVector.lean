@@ -6,13 +6,13 @@ import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Unli
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.DepthZeroJacquetInjective
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParabolicProductTwoRepsEquivTwoBlockInduction
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsIrreducibleIffOfLinearEquiv
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.JacquetModuleImageNeZeroOfBlockTypeVectorStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.JacquetModuleImageNeZeroOfBlockTypeVector
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsIrreducibleSubquotientCommonEigenvector
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LeviRepParabolicChar
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsLeviBlockEigenvectorAtIdentity
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InSupportMulUnramifiedCharOfIntegralEigenvector
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CharInCuspidalSupportOfJacquetSubquotientFactor
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsSphericalTwistOfJacquetConstituentEmptyBlockStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsSphericalTwistOfJacquetConstituentEmptyBlock
 open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.N Formalism.ConjugateSelfDual ReciprocityTheory.Gal ReciprocityTheory.Aut Formalism.AUTREP Formalism.L2 Formalism.L2.Host Formalism.L2.NT NumberField IsDedekindDomain Polynomial GlobalTheory.HeightCounting GlobalTheory.RowTie GlobalTheory.SplitRead GlobalTheory.NPin
 attribute [local instance] GlobalTheory.LocalData.complRel GlobalTheory.LocalData.isLocalField
 open GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.SplitWeil
@@ -33,7 +33,7 @@ theorem sph_of_isBlockVec : GlobalTheory.Published.BernsteinZelevinskyFiniteness
       have := Ψ.toIntertwiningMap.isIntertwining _ _ h v
       rw [hblk h hh h1 h2 u hu, map_smul] at this
       exact this.symm
-  obtain ⟨hx0, hx⟩ := GlobalTheory.T.jacquetModule_image_ne_zero_of_blockTypeVector hDZ k r t χ _ _ (Ψ v) hsm hirr hχt hv' hblk'
+  obtain ⟨hx0, hx⟩ := _root_.GlobalTheory.JacBlockTwo.jacquet_ne_zero_of_isBlockVec_two hDZ k r t χ _ _ (Ψ v) hsm hirr hχt hv' hblk'
   obtain ⟨Y, _, _, τ, hτ, hsub, y, hy0, hy⟩ := _root_.GlobalTheory.EigenSubquot.exists_irreducible_subquotient_eigen _ _ (jac (two (stdSum (rfl : r + t = r + t)))
     (multiProd (two (stdSum (rfl : r + t = r + t))) (Exponents.twoRep π₁.π π₂.π)))
     {h | ∃ g ∈ KO k (Fin t), h = Pi.mulSingle true g}
@@ -61,7 +61,7 @@ theorem sph_of_isBlockVec : GlobalTheory.Published.BernsteinZelevinskyFiniteness
       have h2 := b.2.2 true
       simp [Fintype.sum_bool] at h1 h2
       omega
-    exact GlobalTheory.T.isSpherical_twist_of_jacquet_constituent_empty_block k t _ π₂.π (b.1 true) (f true) (s true) χ z' π₂.smooth π₂.irr hc (hrow true) hz'0 hz'
+    exact _root_.GlobalTheory.EmptyFirstBlock.isSpherical_twist_of_empty_block k t _ π₂.π (b.1 true) (f true) (s true) χ z' π₂.smooth π₂.irr hc (hrow true) hz'0 hz'
   · obtain ⟨z', hz'0, hz'⟩ := _root_.GlobalTheory.EigenFactor.exists_eig_factor k Bool (fun i => Fin (b.1 i true)) _ (fun i => (s i true).ρ) _
       (piTensor fun i => (s i true).ρ) false χ w (fun i => (s i true).smooth) hχ (IsSubquotient.refl _) hw0 (hw false)
     obtain ⟨α, hα⟩ := _root_.GlobalTheory.SphSupport.inSupport_mul_unrChar_of_KO_eigen hBZ hG hDZ k _ _ (s false true).ρ χ z' (s false true).smooth (s false true).irr hχ

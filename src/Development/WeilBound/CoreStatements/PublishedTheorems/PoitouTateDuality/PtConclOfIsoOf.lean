@@ -2,7 +2,7 @@ import Mathlib
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.GelfandSpectralNormalisation.NormalisedInvariants.PTConclAt
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NineTermExactIff
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GaloisGroupTransportIsomorphism
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RingIsomorphismTransportsPlacesStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RingIsomorphismTransportsPlaces
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TotallyComplexOfRingEquiv
 import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.PtfsHyp
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RingEquivTransportsDecomposition
@@ -10,7 +10,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InertiaQuotient
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RingEquivCyclotomicCharacter
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RingEquivTransportsInertiaStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RingEquivTransportsResidueStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PoitouTateSequenceTransportStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PoitouTateSequenceTransport
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TateShafarevichTransportStatement
 
 noncomputable section
@@ -23,7 +23,7 @@ theorem ptConcl_of_iso_of (hL : PositivityTheory.PTN.LocHyp) : ∀ (F Ω F' Ω' 
   intro F Ω F' Ω' _ _ _ _ _ _ _ _ _ _ e E hE hPT
   intro l _ r hl hr ζ hζ inv hinv S hS Av hAv μ hμ M _ _ _ _ _ ρ hρ
   obtain ⟨Φ, hΦ⟩ := _root_.GlobalTheory.CompanionTheory.PTIso.exists_galContinuousMulEquiv F Ω F' Ω' e E hE
-  obtain ⟨eO, eV, heO, hV, hV2, hN⟩ := GlobalTheory.T.ring_isomorphism_transports_places F F' e
+  obtain ⟨eO, eV, heO, hV, hV2, hN⟩ := _root_.GlobalTheory.CompanionTheory.PTIso.Places.exists_places_of_ringEquiv F F' e
   have hloc := hL F Ω F' Ω' e E hE Φ hΦ
   have hpl := _root_.GlobalTheory.CompanionTheory.PTIso.isPlaceOver_transfer_fieldIso F Ω F' Ω' e E hE eO eV heO hV
   have hcyc := _root_.GlobalTheory.CompanionTheory.PTIso.cycMod_intrinsic F Ω F' Ω' e E hE Φ hΦ l r
@@ -89,7 +89,7 @@ theorem ptConcl_of_iso_of (hL : PositivityTheory.PTN.LocHyp) : ∀ (F Ω F' Ω' 
   have hρc : ∀ g m, ρ' (Ψ g) m = ρ g m := fun g m => by simp [ρ']
   refine ⟨?_, ?_⟩
   · refine (nineTermExact_iff S Av μ _ ρ hρ).2 ?_
-    refine GlobalTheory.T.poitou_tate_sequence_transport (locFam S Av) (continuous_locFam S Av) (locFam S' Av') (continuous_locFam S' Av')
+    refine _root_.GlobalTheory.CompanionTheory.PTIso.NineTransfer.nineG_of_iso (locFam S Av) (continuous_locFam S Av) (locFam S' Av') (continuous_locFam S' Av')
       μ μ' ρ ρ' Ψ eI eD hcomp hχ hρc _ _ hρ hρ' ?_ ((nineTermExact_iff S' Av' μ' _ ρ' hρ').1 h9)
     intro v z z' hz
     refine (hinv' _ _ (hAv'' v)).2 (cocycles2Map _ _ LinearMap.id continuous_id (locFam_apply_eq S Av μ hμ v) z)

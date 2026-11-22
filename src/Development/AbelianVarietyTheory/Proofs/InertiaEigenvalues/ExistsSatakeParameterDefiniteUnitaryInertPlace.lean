@@ -247,7 +247,7 @@ theorem exists_hasSatAt : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E]
       Set.ext fun g => Subtype.ext_iff
     rw [h2]
     exact h1
-  obtain ⟨hKo, hKc⟩ := GlobalTheory.T.isOpen_isCompact_unitaryIntegralPoints _ ϖ s q n hU
+  obtain ⟨hKo, hKc⟩ := _root_.GlobalTheory.LFun.IntPtsUnitary.isOpen_isCompact_KU _ ϖ s q n hU
   have hKb : ∀ k ∈ KU s n, k.1 ∈ GlobalTheory.LFun.KGL w n := fun k hk => (Subgroup.mem_subgroupOf.1 hk).2
   have hφ' : (⟨φ, hφ⟩ : π) ∈ fixed (pull π hπ.stable j) (KU s n) := mem_fix.2 fun k hk => Subtype.ext
     (hφK _ (hjl k) (by

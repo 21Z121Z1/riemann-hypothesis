@@ -72,7 +72,7 @@ theorem galRul_eq_cmul_complex (V : HSp D) (r : ℕ) (σ : c.F →+* ℂ) (C : C
   have hg : σ (IntermediateField.inclusion c.le (baseKA l).ρ) = H.rt0 := hC.good
   have hrt : τ H.rt0 = H.rt0 := by
     conv_lhs => rw [← hg, hτ, hta.base, hg]
-  obtain ⟨π, hπ⟩ := GlobalTheory.T.exists_perm_periodSpaces_complexAut D.host.E H Dw l Xo _ _ _ C.F hC.pos hC.good
+  obtain ⟨π, hπ⟩ := _root_.GlobalTheory.ConjPermutes.exists_perm D.host.E H Dw l Xo _ _ _ C.F hC.pos hC.good
     ((GlobalTheory.Relab.relab_good D.host.E H l c σ hC.good).2.2.2 Dw C.g C.e) hC.lA τ hrt
   obtain ⟨κ, ⟨u, hu⟩, hκ⟩ := _root_.GlobalTheory.DetTranslate.conj_translates_det D H Dw l Xo c σ V r C hC hsig τ hrt hcur π hπ xi hx1 hx2
   have hcu := hconj u

@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfMemSpanK
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsChiDetSplitCentre
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DiscreteSpectrumOfResidual
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalOfCommutingFiniteAlgebraJointEi
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalEigenIntertwinersStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalEigenIntertwiners
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentreCompMemKinfEquivariantAutomorphicMapsStatement
 
 noncomputable section
@@ -124,7 +124,7 @@ theorem finiteDimensional_mapsJ : GlobalTheory.Published.AutomorphicFormsFiniteG
       rw [LinearMap.mem_ker, LinearMap.sub_apply, sub_eq_zero, Module.algebraMap_end_apply] at h
       exact congrArg Subtype.val h
     have hN : FiniteDimensional ℂ N :=
-      GlobalTheory.T.finiteDimensional_eigen_intertwiners hP E a L hL (spanK E a φ) (spanK_stable φ) hφ.kfin
+      _root_.GlobalTheory.AutGrowth.finiteDimensional_capEigen_maps hP E a L hL (spanK E a φ) (spanK_stable φ) hφ.kfin
         (fun τ u => c (postZ φ L (cap τ u) (hcap τ u))) N hNle hNe
     exact LinearEquiv.finiteDimensional
       (Submodule.equivMapOfInjective (mapsJ φ L).subtype Subtype.val_injective J).symm

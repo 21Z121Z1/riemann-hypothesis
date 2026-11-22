@@ -176,7 +176,7 @@ theorem vac_moved (W : G.Weil) (ρ : RealMatch W) (t : T) (j : ℕ) (hj : j < D.
   have hth := fun Q => GlobalTheory.DownFock.isThetaFunO_fock_down ρ t D.R.m j le_rfl hj he hf Q
   have h0 : Vac W.ψ _ _ (G.Λ (.grid D.R.m j)) (G.Λ (.grid D.R.m (j + 1))) (· ∉ Sf) (W.fock (.mu t D.R.m j) f Q) :=
     ⟨hth Q, GlobalTheory.FockSph.isLatVac_pureTensorO_off W.θ_is _ _ (ρ.vT_is t D.R.m j le_rfl hj) he hf.2 Sf hS hth Q⟩
-  exact (GlobalTheory.T.latticeVacuum_iff_placewise D W.ψ _ _ _ _ _ (W.om_is (.mu t D.R.m j) ⟨le_rfl, hj⟩) _ _ (sd_row G j hj.le) (sd_row G (j + 1) hj)
+  exact (_root_.GlobalTheory.VacLoc.vac_loc D W.ψ _ _ _ _ _ (W.om_is (.mu t D.R.m j) ⟨le_rfl, hj⟩) _ _ (sd_row G j hj.le) (sd_row G (j + 1) hj)
     (· ∉ Sf) (fun v _ => tame v) _).2.2 h0 b b' N N' hN hN' (moves_of_le (fun _ _ => trivial) hb)
     (moves_of_le (fun _ _ => trivial) hb')
 

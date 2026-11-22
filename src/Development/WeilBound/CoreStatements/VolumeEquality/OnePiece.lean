@@ -1,6 +1,8 @@
 import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifEx2
 import Development.WeilBound.CoreStatements.VolumeEquality.OnePieceB
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointGenericFibreStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointGenericFibre
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsSncPatchRat
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EmbedsGeneric
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericOfSmoothSurjective
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LevelSectionsExactKernelLocusOpen
@@ -82,7 +84,7 @@ theorem onePiece : OnePiece := by
   obtain ⟨i, hi⟩ := exists_factor ξ₁ hξ₀ (hpt ▸ specializes_rfl)
   haveI : CharZero Ω₂ := (RingHom.charZero_iff cst.injective).1 inferInstance
   haveI : CharZero Ω₀ := (g.comp i).charZero
-  obtain ⟨b, ξF, hF1, hF2, hFg⟩ := GlobalTheory.T.generic_point_generic_fibre c.F Y.X Y.s Ω₀ ξ₀ hξ₀
+  obtain ⟨b, ξF, hF1, hF2, hFg⟩ := _root_.GlobalTheory.CompanionTheory.Ar.GenFibre.exists_point c.F Y.X Y.s Ω₀ ξ₀ hξ₀
   letI : Algebra c.F Ω₀ := b.toAlgebra
   have hb : (g.comp i).comp b = cst := by
     refine ext_int (spMap_inj ?_)

@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CardTorsionO
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.DimEqAddFinrankOfKernel
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExpFLinear
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.TorusTorsionToAbelianTorsionThetaActionStatement
-import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsFourierJacobiExpansionOverFieldStatement
+import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsFourierJacobiExpansionOverField
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.FourierJacobiExpansionOverFieldInjective
 
 open CategoryTheory CategoryTheory.Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry
@@ -35,7 +35,7 @@ theorem exists_expansion (hL : Laws) (hL₂ : Laws2) : AllPre fun {V} _ _ _ {D} 
         (∀ (v : SecA A F k) (s : Raw D F k), U.ExpF F k v.sec s ↔ s = fun α => (S α v).sec) ∧
         ∀ v, (∀ α, S α v = 0) → v = 0 := by
   intro V _ _ _ hV D A G _ _ U F _ _ k hk
-  choose x hx using GlobalTheory.T.exists_fourierJacobi_expansion_over_field hL hL₂ V hV D A G U F k hk
+  choose x hx using _root_.GlobalTheory.UU.ExpTotal.expF_total hL hL₂ V hV D A G U F k hk
   have uq := _root_.GlobalTheory.UU.ExpFUniq.main V hV D A G U F k
   have lin := ExpLin.expF_linear V hV D A G U F k
   let S₀ : ∀ α, SecA A F k → CompMod D F k α := fun α v => SecMod.mk _ (x v.sec α)

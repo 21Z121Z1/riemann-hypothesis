@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.RedSurjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KerEqRangeOfRangeEqKer
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobKerIdealLeAugIdeal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DieudonneBaseChangeBasisStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DieudonneBaseChangeBasis
 open CategoryTheory TensorProduct Coalgebra Bialgebra GlobalTheory GlobalTheory.PDiv GlobalTheory.PDivGroup GlobalTheory.Dieu
 
 namespace GlobalTheory
@@ -12,7 +12,7 @@ theorem semiHom_dual_transpose : ∀ (p : ℕ) [Fact p.Prime] (B : Base p (fun _
   haveI := B.free G.dual hd
   haveI := B.finite G.dual hd
   let b := Module.Free.chooseBasis (WittVector p k) (B.M G.dual hd)
-  obtain ⟨b', hb'⟩ := GlobalTheory.T.dieudonne_baseChange_basis p (fun _ _ G => G.IsConn) B k k' G.dual hd hb _ b
+  obtain ⟨b', hb'⟩ := _root_.GlobalTheory.Dieu.Base.smap_toBase_basis p (fun _ _ G => G.IsConn) B k k' G.dual hd hb _ b
   let lb : Module.Dual (WittVector p k') (B.M (G.dual.baseChange k') hb) :=
     b'.constr (WittVector p k') (fun i => WittVector.map (algebraMap k k') (l (b i)))
   have h1 : ∀ x, lb (B.smap hb hd (G.dual.toBase k') x) = WittVector.map (algebraMap k k') (l x) := by

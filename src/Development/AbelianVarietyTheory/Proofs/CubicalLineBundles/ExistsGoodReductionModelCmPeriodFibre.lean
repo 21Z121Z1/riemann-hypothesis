@@ -6,12 +6,12 @@ import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.CmCurveBaseCha
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsConjAction
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.EllPullExistsOAct
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.EllMapCancelAndSabMapCancel
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsCmCurveHomFamilyToFibreAtPeriodStatement
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsCmCurveHomFamilyToFibreAtPeriod
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.CmFamilyExtendsOverDedekindDomain
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.CmFamilyDescendsToNumberField
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsUniqueCmHermitianLatticeFormStatement
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsUniqueCmHermitianLatticeForm
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsPatOfObj
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.PrincipalTripleExtendsOfCurveHomomorphismsStatement
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.PrincipalTripleExtendsOfCurveHomomorphisms
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsPullback
 import Development.AbelianVarietyTheory.Definitions.CMLattices.IsDiffOf
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsPureVectorsPeriodsSpan
@@ -148,12 +148,12 @@ theorem exists_model : CMCurve → CMPoint → ThetaUnifAV → Out.Laws → Out.
       linear_combination -this
     · exact this
   choose ε hε using fun b => exists_sign (H := H) (hρ b) (by split_ifs <;> simp [H.sqrt_neg_disc_sq])
-  choose h hh _ using fun b => GlobalTheory.T.exists_unique_cmHermitianLatticeForm E H (FU.Di i) (ε b)
+  choose h hh _ using fun b => _root_.GlobalTheory.CM.exists_kForm E H (FU.Di i) (ε b)
   have fam : ∀ b : Bool, ∃ ψ : PureType.lat hP (if b then H.rt0 else -H.rt0) → (C'.P.A ⟶ T'.t.G),
       IsFam (twist C' b) T' (fun x y => h b x y) _ ψ ∧
       ∀ a (z : ℂ), (u₀.ex (fun _ => c * z) ≫ ψ a).left ≫ n.φ = (FU.ex i Pe (z • Pe a)).left := fun b => by
     rw [← hρ b]
-    exact GlobalTheory.T.exists_cmCurve_homFamily_to_fibre_at_period hU hL E H D l Xo g ty FU i Pe hP _ (twist C' b) u₀ c T' n (ε b) _ hu₀ hc hΛ (hε b) (hh b)
+    exact _root_.GlobalTheory.CM.exists_isFam_complex hU hL E H D l Xo g ty FU i Pe hP _ (twist C' b) u₀ c T' n (ε b) _ hu₀ hc hΛ (hε b) (hh b)
   choose ψ' hψ' hex using fam
   choose k₁ hk₁ hle hdesc using fun b => _root_.GlobalTheory.CM.isFam_descends_to_numberField hU hL E H k₀ _ (twist C₀ b) (FU.Di i) _ T _ _ (twist C' b) φ T'
     mT' (ψ' b) (ellMap_twist c' b) (hψ' b)
@@ -191,7 +191,7 @@ theorem exists_model : CMCurve → CMPoint → ThetaUnifAV → Out.Laws → Out.
     exact Category.id_comp _
 
   obtain ⟨bb, a, hspan⟩ := exists_pure_span Z (N := T₂.g) (by rw [hg, (FU.sig i).1, (FU.sig i).2])
-  obtain ⟨B, m', -⟩ := GlobalTheory.T.principal_triple_extends_of_curve_homomorphisms hU hL hL₂ hX hK E H (𝓞 K₁) K₁ (algebraMap K₁ ℂ) C₁.P C₂.P φ₁₂ T₂
+  obtain ⟨B, m', -⟩ := _root_.GlobalTheory.CM.CurveFamily.exists_extension hU hL hL₂ hX hK E H (𝓞 K₁) K₁ (algebraMap K₁ ℂ) C₁.P C₂.P φ₁₂ T₂
     (fun j => ψ₂ (bb j) (a j)) c₁₂.2.1 C₁.dim (fun j => ((hψ₂ (bb j)).1 (a j)).1)
     (ontoAt_of_exp m.cart _ hy (FU.ex i Pe) (FU.ex_add i Pe hP) (FU.ex_onto i Pe hP) _ hspan _ fun j z =>
       ⟨Over.homMk _ (hpt fun _ => c * z), by

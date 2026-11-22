@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.OrderedConst
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LeadingPrincipalMinorMulModConductor
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PrincipalSeriesCongruenceSubgroupMulClosedStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PrincipalSeriesCongruenceSubgroupMulClosed
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsTrivialOnUnitsModConductorUnitCharacterValuePr
 
 open GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.SplitWeil ValuativeRel GlobalTheory.PsType
@@ -18,7 +18,7 @@ theorem theta_mul : ∀ (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace 
   by_cases ht : Triv (ψ m / nxt ψ m) 1
   · rw [hevtriv _ _ ht, hevtriv _ _ ht, hevtriv _ _ ht, one_mul]
   · obtain ⟨hv, hc⟩ := _root_.GlobalTheory.PsType.minor_mul_mod k n ψ hψ m ht
-    have hab := GlobalTheory.T.principalSeriesCongruenceSubgroup_mul_closed k n ψ hψ a ha b hb
+    have hab := _root_.GlobalTheory.PsType.grp_mul_closed k n ψ hψ a ha b hb
     have va := hv a ha
     have vb := hv b hb
     have vab := hv (a * b) hab

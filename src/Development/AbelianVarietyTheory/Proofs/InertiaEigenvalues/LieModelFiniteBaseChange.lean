@@ -23,7 +23,8 @@ import GroundTheory.AutomorphicForms.MultiplicityOne.Injective
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CuspFormSmoothSpanNormLeShortRationalVectorStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CuspFormRapidKernelSmoothSpanSmoothCuspidalBoundStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SummableNonzeroRationalVectorLeShortestVector
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegrableOnAbsDetRpowLeOneFundamentalDomainStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegrableOnAbsDetRpowLeOneFundamentalDomain
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdeleModuleDetDiagUnitsPosIdele
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SchwartzBruhatIntegrableMoments
 import GroundTheory.GlobalFields.TateThesis.GlobalZetaFinite
 
@@ -125,7 +126,7 @@ theorem lintegral_low_ne_top : ∀ (E : Type) [Field E] [NumberField E] [IsTotal
   intro E _ _ _ m π' hπ φ' hφ G hG μ _ 𝓕 h𝓕 x hx
   obtain ⟨C, hC⟩ := exists_bound hπ hφ hG
   have hi : IntegrableOn (fun g : GA E (m + 1) => GlobalTheory.RSnm.detAbs g ^ (x - 1))
-      (𝓕 ∩ {g | GlobalTheory.RSnm.detAbs g ≤ 1}) μ := GlobalTheory.T.integrableOn_absDet_rpow_le_one_fundamentalDomain E (m + 1) m.succ_pos μ 𝓕 h𝓕 (x - 1) (by linarith)
+      (𝓕 ∩ {g | GlobalTheory.RSnm.detAbs g ≤ 1}) μ := _root_.GlobalTheory.RSThetaLow.integrableOn_absDet_rpow_low E (m + 1) m.succ_pos μ 𝓕 h𝓕 (x - 1) (by linarith)
   refine ne_top_of_le_ne_top (hi.const_mul C).2.ne (lintegral_mono fun g => ?_)
   have hδ := GlobalTheory.RSnm.detAbs_pos g
   refine (mul_le_mul_left (hC g) _).trans ?_

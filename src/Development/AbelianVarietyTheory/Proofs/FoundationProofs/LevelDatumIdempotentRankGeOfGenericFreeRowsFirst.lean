@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.StandardFiveNontrivial
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SubgroupCharacterIdempotentPropertiesStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LevelDatumSubgroupCharacterPropertiesStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RankLevelDatumIdempotentEqOfSameShapeStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.WhittakerTranslatesCornerLinearIndependentStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SubgroupCharacterIdempotentProperties
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LevelDatumSubgroupCharacterProperties
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RankLevelDatumIdempotentEqOfSameShape
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.WhittakerTranslatesCornerLinearIndependent
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MonomialEqOfUpperUnipotentDoubleCoset
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsRelevantBruhatCellsLevelDatum
 
@@ -141,7 +141,7 @@ theorem avg_eigen {L : Lev g N} (hL : L.sharp = false) {x : M} (hx : ∀ u, IsUp
     {k : ℕ} {w : GG g N} (hw : InBlock k w) {j : GG g N} (hj : IsUp g N j)
     (hk : ∀ a b : Fin N, (a : ℕ) < k → (b : ℕ) = k → j.val a b = 0) :
     ρ j (avg ρ L k x w) = L.chi j • avg ρ L k x w := by
-  obtain ⟨h1, hm, -, hc, -⟩ := GlobalTheory.T.levelDatum_submonoid_chi_mul_unipotent g N L
+  obtain ⟨h1, hm, -, hc, -⟩ := _root_.GlobalTheory.BadShare.LevGroup.lev_group g N L
   simp only [mem_iff_isUp hL] at h1 hm hc
   have hi := inv_mem_of_mul_mem _ h1 hm
   obtain ⟨u, hu, hub, hn⟩ := exists_block hj hk
@@ -205,7 +205,7 @@ theorem avg_independent [FiniteDimensional ℂ M] {L : Lev g N} (hL : L.sharp = 
     simp [ite_smul, mul_smul]
   have key : ∑ u' ∈ blockUp g N k, φ (w₀ * u') * L.chi u' = 0 := by
     refine Eq.trans (Finset.sum_congr ?_ fun _ _ => rfl)
-      (GlobalTheory.T.whittaker_translates_corner_linearIndependent g N M ρ L hL x hx0 hx k hk φ hφ hsum w₀)
+      (_root_.GlobalTheory.BadShare.Indep.translates_independent g N M ρ L hL x hx0 hx k hk φ hφ hsum w₀)
     ext u
     simp only [mem_blockUp, Finset.mem_filter, Finset.mem_univ, true_and, InBlock]
   have h2 : ∀ u' ∈ blockUp g N k, φ (w₀ * u') * L.chi u' =
@@ -227,7 +227,7 @@ theorem avg_independent [FiniteDimensional ℂ M] {L : Lev g N} (hL : L.sharp = 
   rw [Finset.sum_congr rfl h2, ← Finset.mul_sum, ← Nat.cast_sum, mul_eq_zero] at key
   refine key.resolve_right ?_
   have h1 : (1 : GG g N) ∈ blockUp g N k :=
-    mem_blockUp.2 ⟨(mem_iff_isUp hL 1).1 (GlobalTheory.T.levelDatum_submonoid_chi_mul_unipotent g N L).1, inBlock_one k⟩
+    mem_blockUp.2 ⟨(mem_iff_isUp hL 1).1 (_root_.GlobalTheory.BadShare.LevGroup.lev_group g N L).1, inBlock_one k⟩
   rw [Nat.cast_eq_zero, Finset.sum_eq_zero_iff]
   intro h
   have := h 1 h1
@@ -237,8 +237,8 @@ theorem avg_independent [FiniteDimensional ℂ M] {L : Lev g N} (hL : L.sharp = 
 theorem card_le_rk [FiniteDimensional ℂ M] (L : Lev g N) {ι : Type} [Fintype ι] (x : ι → M)
     (hx : LinearIndependent ℂ x) (he : ∀ i u, L.Mem u → ρ u (x i) = L.chi u • x i) :
     Fintype.card ι ≤ rk ρ L.e := by
-  obtain ⟨h1, hm, hc1, hc, -⟩ := GlobalTheory.T.levelDatum_submonoid_chi_mul_unipotent g N L
-  exact (GlobalTheory.T.subgroupCharacterIdempotent_properties (GG g N) M ρ L.Mem L.chi h1 hm hc1 hc).2.2.2 _ (x ∘ (Fintype.equivFin ι).symm)
+  obtain ⟨h1, hm, hc1, hc, -⟩ := _root_.GlobalTheory.BadShare.LevGroup.lev_group g N L
+  exact (_root_.GlobalTheory.BadShare.EpsProj.eps_spec (GG g N) M ρ L.Mem L.chi h1 hm hc1 hc).2.2.2 _ (x ∘ (Fintype.equivFin ι).symm)
     (hx.comp _ (Fintype.equivFin ι).symm.injective) fun i => he _
 
 theorem exists_unit_coeff [FiniteDimensional ℂ M] (hρ : IsGeneric ρ) :
@@ -250,11 +250,11 @@ theorem exists_unit_coeff [FiniteDimensional ℂ M] (hρ : IsGeneric ρ) :
   refine ⟨L₁, hL₁, fun _ => rfl, ?_⟩
   have h1 := card_le_rk ρ L (fun _ : Unit => x) (linearIndependent_unique_iff.2 hx0)
     fun _ u hu => hx u hu.1
-  rw [GlobalTheory.T.rank_levelDatum_idempotent_eq_of_same_shape g N M ρ L L₁ rfl rfl rfl, Fintype.card_unit] at h1
+  rw [_root_.GlobalTheory.BadShare.CoDiag.rk_e_eq g N M ρ L L₁ rfl rfl rfl, Fintype.card_unit] at h1
   obtain ⟨⟨y, hy⟩, hy0⟩ := Module.finrank_pos_iff_exists_ne_zero.1 h1
-  obtain ⟨h1, hm, hc1, hc, -⟩ := GlobalTheory.T.levelDatum_submonoid_chi_mul_unipotent g N L₁
+  obtain ⟨h1, hm, hc1, hc, -⟩ := _root_.GlobalTheory.BadShare.LevGroup.lev_group g N L₁
   refine ⟨y, fun h => hy0 (Subtype.ext h), fun u hu => ?_⟩
-  exact ((GlobalTheory.T.subgroupCharacterIdempotent_properties (GG g N) M ρ L₁.Mem L₁.chi h1 hm hc1 hc).2.2.1 y).1 hy u ((mem_iff_isUp hL₁ u).2 hu)
+  exact ((_root_.GlobalTheory.BadShare.EpsProj.eps_spec (GG g N) M ρ L₁.Mem L₁.chi h1 hm hc1 hc).2.2.1 y).1 hy u ((mem_iff_isUp hL₁ u).2 hu)
 
 end GlobalTheory.BadShare.FirstRows
 
@@ -286,7 +286,7 @@ theorem rk_ge_of_isGeneric_of_s_eq_zero : ∀ (g : ℕ) [Fact g.Prime] (N : ℕ)
       · rw [if_neg (fun h => (e1.1 h).2 h2), hmem u hu a b (by omega) (by omega), mul_zero]
       · rw [if_pos (e1.2 ⟨h1, h2⟩)]
     · rw [if_neg (fun h => h1 (e1.1 h).1), if_neg (fun h => h1 (e2.1 h))]
-  rw [GlobalTheory.T.rank_levelDatum_idempotent_eq_of_same_shape g N M ρ L L' rfl rfl rfl]
+  rw [_root_.GlobalTheory.BadShare.CoDiag.rk_e_eq g N M ρ L L' rfl rfl rfl]
   have hg0 : (0 : ℝ) < g := Nat.cast_pos.2 hg.out.pos
   rcases Nat.eq_zero_or_pos L.k with hk | hk
   · have h1 := card_le_rk ρ L' (fun _ : Unit => x) (linearIndependent_unique_iff.2 hx0)

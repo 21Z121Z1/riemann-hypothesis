@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSymmetricPola
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSymmetricDataComparePolarisedUpToFunctionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymmetricTwoCocycleFreeAbelianIsCoboundary
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RefinesPolarisedDataRescaleCoboundary
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHomEvenDefectBimultiplicativePeriodsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHomEvenDefectBimultiplicativePeriods
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBaseChangeRawDegenerationDataInjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RefinesPolarisedDataBaseChangeSymmetric
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvenDefectDegenerationDataBaseChange
@@ -32,7 +32,7 @@ theorem GlobalTheory.PolDeg.refine_monomial_of_polarised : ∀ (R : Type) [CommR
   have hD₁ : Half Q ρ₁ (rescale D g) e (fun _ _ => 1) :=
     _root_.GlobalTheory.PolDeg.half_rescale R R₁ Q ρ₁ D e f (fun _ _ => 1) g hD (fun a b => by rw [hg a b, _root_.mul_one])
   have hb₁ : (rescale D g).TauBimult := _root_.GlobalTheory.PolDeg.tauBimult_of_half R R₁ Q ρ₁ (rescale D g) e hinj₁ hD₁
-  obtain ⟨h, hhom, hev⟩ := GlobalTheory.T.exists_hom_evenDefect_bimultiplicative_periods R₁ (rescale D g) hb₁
+  obtain ⟨h, hhom, hev⟩ := _root_.GlobalTheory.DefectHom.exists_evenDefect_hom R₁ (rescale D g) hb₁
   obtain ⟨R₂, _, _, _, σ, gam, r, et, hCN₂, hinj₂, hfin₂, hloc₂, hgam, hr, hη, hη2⟩ :=
     _root_.GlobalTheory.RootHom.exists_sqrt_hom R₁ (rescale D g).X h m (fun i => ρ₁ (t i)) hCN₁ hhom
   haveI : IsNoetherianRing R₂ := hCN₂.1

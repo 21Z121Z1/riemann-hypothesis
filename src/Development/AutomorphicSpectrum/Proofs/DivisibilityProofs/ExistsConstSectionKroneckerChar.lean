@@ -8,15 +8,18 @@ import Formalism.LocalToGlobal.ProjectiveLattices.CompHt
 import Development.AbelianVarietyTheory.Definitions.Divisors.HtValOnSubset
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsNumberFieldPoint
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatZeroFromResolutionAndGagaStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatFirstFromResolutionAndGagaStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatFirstFromResolutionAndGaga
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.CardComapMulFinsumEqFinsumFibres
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.KroneckerCharacterFrameBound
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IrreducibleComponentClopenStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IrreducibleComponentClopen
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.UnfSectionNormBoundAtHeight
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.FlatOnModelExistsRulSections
 import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.LineFunctionPlaceValuation
-import Development.AutomorphicSpectrum.Proofs.AdelicProofs.LocalValuationLogNormsExistenceStatement
+import Development.AutomorphicSpectrum.Proofs.AdelicProofs.LocalValuationLogNormsExistence
+import Development.AutomorphicSpectrum.Definitions.AdelicLattices.FactPrimes
+import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsFlatSecRankZero
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrameFunctionFiniteNorm
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FiniteNormLocalBoundStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FiniteNormLocalBound
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GeometricComponentAlgClosed
 import Development.WeilBound.CoreStatements.LocalModelCharts.ExistsLocalModelDvr
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField IsDedekindDomain
@@ -48,11 +51,11 @@ theorem exists_constSec : Geo.ResK.ResKStatement → GagaSections → ∀ (E : T
   obtain ⟨κ⟩ := exists_padic_emb c.F (⟨2, Nat.prime_two⟩ : Nat.Primes)
   obtain ⟨O, _, _, _, β, Y, hβ, -, -, -⟩ :=
     _root_.PositivityTheory.Ar2.exists_local_model_dvr E H D l Xo c ⟨2, Nat.prime_two⟩ κ hpos (hL.good 2 Nat.prime_two)
-  obtain ⟨hclopen, hcpt, -⟩ := GlobalTheory.T.irreducible_component_clopen E H D l Xo c (Z : Set (Xo.XF c)) Z.2
+  obtain ⟨hclopen, hcpt, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Br.cptOver_any E H D l Xo c (Z : Set (Xo.XF c)) Z.2
   obtain ⟨Z'⟩ := hcpt O β Y hβ
   have hgeom : Z'.IsGeom := _root_.GlobalTheory.CompanionTheory.Ar.Br.isGeom_of_fnAlgClosed E H D l Xo c O β Y Z Z' hβ hL.geo
   obtain ⟨φ, hline, hflat, -⟩ := GlobalTheory.T.flat_zero_from_resolution_and_gaga hR hG E H D l Xo c O β Y Z Z' τ.1 hβ hpos τ.2 hgeom
-  obtain ⟨hnorm, -⟩ := GlobalTheory.T.flat_first_from_resolution_and_gaga hR hG E H D l Xo c O β Y Z Z' τ.1 φ hβ hpos τ.2 hgeom hline hflat
+  obtain ⟨hnorm, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.FlatFirstTheorem.flat_first_of_resolution_gaga hR hG E H D l Xo c O β Y Z Z' τ.1 φ hβ hpos τ.2 hgeom hline hflat
   choose t ht ht' using fun σ => hnorm (Formalism.L2.Pj.goodOf c σ)
   have hInf : ∀ σ, HasInfNorm (Z : Set (Xo.XF c)) τ.1 φ σ (t σ) := fun σ => by
     rcases goodOf_or c σ with h | h
@@ -62,8 +65,8 @@ theorem exists_constSec : Geo.ResK.ResKStatement → GagaSections → ∀ (E : T
       rwa [h] at this
   have hFinEx : ∀ (p : Nat.Primes) (κ : c.F →+* ℂ_[p]), ∃ t, HasFinNorm (Z : Set (Xo.XF c)) τ.1 φ p κ t :=
     fun p κ => _root_.GlobalTheory.CompanionTheory.Ar.Br.FinGood.finGood hR hG E H D l Xo c O β Y Z Z' τ.1 φ p κ hβ hpos τ.2 Z.2 hgeom hflat (hL.good p p.2)
-  obtain ⟨ρ, hρ⟩ := GlobalTheory.T.finite_norm_local_bound E H D l Xo c Z τ.1 φ hFinEx
-  obtain ⟨hex, ⟨N, hNinf, hNfin⟩, hdict⟩ := GlobalTheory.T.local_valuation_log_norms_existence c.F (fun σ => Real.exp (t σ)) ρ
+  obtain ⟨ρ, hρ⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Br.FinPlace.exists_rho E H D l Xo c Z τ.1 φ hFinEx
+  obtain ⟨hex, ⟨N, hNinf, hNfin⟩, hdict⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Br.Dd.deg_dict c.F (fun σ => Real.exp (t σ)) ρ
   have hinfN : ∀ s, HasInfNorm (Z : Set (Xo.XF c)) τ.1 φ s (N.inf s) := fun s => by
     rw [hNinf s, Real.log_exp]
     exact hInf s

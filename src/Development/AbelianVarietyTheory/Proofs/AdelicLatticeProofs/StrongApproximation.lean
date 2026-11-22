@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsLatticeRat
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsAnisotropicOrthogonalBasisHermitian
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.UnitaryGroupWeakApproximationAtPrimes
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.UnitaryTransvectionSubmonoidAdjustIntegralAway
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.TransvectionIdentitiesUnitaryStatement
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.TransvectionIdentitiesUnitary
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.UnitaryEqQuasiReflectionMulTransvections
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.UnitaryTransvectionSubmonoidNormalDetOne
 
@@ -289,7 +289,7 @@ theorem strong_approximation : ∀ (F E : Type) [Field F] [NumberField F] [Field
   obtain ⟨hnorm, hnormal⟩ := _root_.GlobalTheory.UTrans.tvGen_normal E n (c : E →+* E) G hG
   have hu1 : u * c u = 1 := (hnorm γ hU).1
   obtain ⟨m, hm, hme⟩ := (_root_.GlobalTheory.UTrans.isU_eq_tv_mul_tvGen F E c n G hG hiso γ hU).1 x hx
-  have hmul := (GlobalTheory.T.transvection_identities_unitary E n (c : E →+* E) G hG.invol hG.herm).2.2.1 x
+  have hmul := (_root_.GlobalTheory.UTrans.Calc.calculus E n (c : E →+* E) G hG.invol hG.herm).2.2.1 x
   have hm' : m = tv (c : E →+* E) G x ((c u - 1) / h) * γ := by
     have h0 : (c u - 1) / h + (u - 1) / h + (c u - 1) / h * ((u - 1) / h) * h = 0 := by
       field_simp

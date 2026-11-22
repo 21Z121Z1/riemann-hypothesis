@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsSumFrame
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicPointComponentsAtPlacesLatticesVacua
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.OneCosetBesselToFourierJacobi
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PlacewiseToAdelicDecompositionForall
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LatticeVacuumIffPlacewiseStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LatticeVacuumIffPlacewise
 
 noncomputable section
 
@@ -85,9 +85,9 @@ theorem suppFirst_holds (D : D7) : SuppFirst D := by
     have htameP : ∀ w, P w → Tame D w := fun w hw => (hgood w hw).tame
     have htame1 : ∀ w : Pl D, w = v → Tame D w := fun w hw => hw ▸ htameP v hv
     have hΦv : Vac ψ B.V J.W LV LW (· = v) Φ :=
-      ((GlobalTheory.T.latticeVacuum_iff_placewise D ψ B.V J.W s.χV s.χW s.om s.weil LV LW hsdV hsdW P htameP Φ).1.mp hΦ).2 v hv
+      ((_root_.GlobalTheory.VacLoc.vac_loc D ψ B.V J.W s.χV s.χW s.om s.weil LV LW hsdV hsdW P htameP Φ).1.mp hΦ).2 v hv
     have hf : Vac ψ B.V J.W LV LW (· = v) (s.om (g, y) Φ) :=
-      (GlobalTheory.T.latticeVacuum_iff_placewise D ψ B.V J.W s.χV s.χW s.om s.weil LV LW hsdV hsdW (· = v) htame1 Φ).2.1 hΦv g
+      (_root_.GlobalTheory.VacLoc.vac_loc D ψ B.V J.W s.χV s.χW s.om s.weil LV LW hsdV hsdW (· = v) htame1 Φ).2.1 hΦv g
         (grpOff_le_at B.V hv hg) y hy
     refine (_root_.GlobalTheory.FinPl.oneCosetBF D ψ ρ B J s LV LV₀ LW LW₀ v (hgood v hv) (hunr v hv) (flatBF s)
       ((_root_.GlobalTheory.FinPl.flatLaws_all D ψ (· = v)).1 ρ B J s) _ hf).2 x hx ?_
@@ -99,9 +99,9 @@ theorem suppFirst_holds (D : D7) : SuppFirst D := by
     by_cases hP : ∃ v, P v
     · obtain ⟨v₀, hv₀⟩ := hP
       have htameP : ∀ w, P w → Tame D w := fun w hw => (hgood w hw).tame
-      have hvacP := GlobalTheory.T.latticeVacuum_iff_placewise D ψ B.V J.W s.χV s.χW s.om s.weil LV LW (hgood v₀ hv₀).sdV hsdW P htameP
+      have hvacP := _root_.GlobalTheory.VacLoc.vac_loc D ψ B.V J.W s.χV s.χW s.om s.weil LV LW (hgood v₀ hv₀).sdV hsdW P htameP
       have hf : Vac ψ B.V J.W LV LW P (s.om (g, h) Φ) := (hvacP Φ).2.1 hΦ g hg h hh
-      refine ((GlobalTheory.T.latticeVacuum_iff_placewise D ψ B.V₀ J.W₀ s.χV s.χW s.om₀ s.weil₀ LV₀ LW₀ (hgood v₀ hv₀).sdV₀ (hgood v₀ hv₀).sdW₀ P
+      refine ((_root_.GlobalTheory.VacLoc.vac_loc D ψ B.V₀ J.W₀ s.χV s.χW s.om₀ s.weil₀ LV₀ LW₀ (hgood v₀ hv₀).sdV₀ (hgood v₀ hv₀).sdW₀ P
         htameP _).1.mpr ⟨?_, ?_⟩)
       · exact ((_root_.GlobalTheory.FinPl.flatLaws_all D ψ P).1 ρ B J s).Heisenberg₂.theta _ hf.1
       · intro v hv

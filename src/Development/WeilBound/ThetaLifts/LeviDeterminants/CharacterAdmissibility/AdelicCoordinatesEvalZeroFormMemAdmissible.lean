@@ -111,7 +111,7 @@ theorem box_adm (κ κ' : Type) [Fintype κ] [Fintype κ'] : ∀ φ₂ ∈ schA 
     rfl
 
 theorem axB (hψ : IsStd ψ) : AxB (adeleClass F) ψ where
-  schr κ _ := (GlobalTheory.T.theta_distribution_heisenberg_invariant F κ ψ hψ.1 (isStd_ne_one hψ) hψ.2.1).1
+  schr κ _ := (_root_.GlobalTheory.CompanionTheory.AdelicHeis.schr_mem_and_thetaSum F κ ψ hψ.1 (isStd_ne_one hψ) hψ.2.1).1
   ne κ _ := by
     obtain ⟨φ, h, h0⟩ := GlobalTheory.SchANonzero.exists_mem_schA_ne_zero F κ
     exact ⟨φ, h, fun e => h0 (congrFun e 0)⟩

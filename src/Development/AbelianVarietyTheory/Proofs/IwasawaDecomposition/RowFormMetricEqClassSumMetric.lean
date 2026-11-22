@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LowerTieTwAt
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsOfStarEq
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousCoeffBlockAct
 import Formalism.LocalToGlobal.Columns.CoefModAt
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PairingComplexFormsConstOnRowClassesStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PairingComplexFormsConstOnRowClasses
 
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions Formalism.L2.Col Formalism.L2.DIV GlobalTheory.Mem GlobalTheory.Mem.Col2 GlobalTheory.Mem.Df
 attribute [local instance] GlobalTheory.Mem.Col2.starE
@@ -45,7 +45,7 @@ theorem ipMt_eq_cSum : ∀ {B : Base} {X : PreX B.toPre} (I : TC B X), I.Ok → 
     (rowS I a).outSec.spec _
   obtain ⟨g, hg⟩ := ((rowS I a).cls_eq_iff _ _).1 hcls
   have hcard := GlobalTheory.PeriodOnStep.card_stab (X := B.fields) (Pr := B.primes X) (R := B.R) B.wts I.Ch I.sel (I.tup a) I.Ps hd c
-  have hpair := GlobalTheory.T.pairing_complexForms_const_on_row_classes I hX a F' G' _ _ hcls
+  have hpair := _root_.GlobalTheory.Mem.Df.pairB_conj_cls_eq I hX a F' G' _ _ hcls
   unfold cTerm
   rw [hpair, ← hg, @card_stabilizer_eq_of_smul (rowS I a).G (rowS I a).D _ (rowS I a).actD g _, ← hcard]
   exact congrArg₂ (fun x y => (((Nat.card ((stepX I.Ch I.sel (I.tup a) I.Ps).Stab c) : ℕ) : ℂ))⁻¹ *

@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPowDivPrim
 import Development.AbelianVarietyTheory.Definitions.Foundations.NotCoboundaryConstantOne
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GeometricFixedMemClosureFiniteAlgZpStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TowerParameterNotPowModMaximalIdealAdjoinAlgebra
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ResidueTowerPowersLinearIndependentStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ResidueTowerPowersLinearIndependent
 open GlobalTheory.K5
 
 namespace GlobalTheory.K5.Orth
@@ -191,7 +191,7 @@ theorem orth : ∀ (p : ℕ) [Fact p.Prime] (Ω : Type) [Field Ω] [Algebra (O0 
     refine ⟨m0, hm0, ?_⟩
     rw [hsum, mul_pow, mul_div_right_comm]
     exact hlsm.mul (hint.pow m0)
-  have := GlobalTheory.T.residue_tower_powers_linearIndependent p Ω h E hrange (_root_.GlobalTheory.K5.NotPow.not_pow_mod_max p Ω h S' hS'alg) T N (fun j => l * c j)
+  have := _root_.GlobalTheory.K5.ResidueIndep.residue_indep p Ω h E hrange (_root_.GlobalTheory.K5.NotPow.not_pow_mod_max p Ω h S' hS'alg) T N (fun j => l * c j)
     (fun j hj => ⟨E.mul_mem hlE (hcE j hj), hlint j hj⟩) hsmall j0 hj0
   exact hj0ns this
 

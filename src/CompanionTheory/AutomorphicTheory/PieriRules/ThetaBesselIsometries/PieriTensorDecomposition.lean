@@ -7,7 +7,7 @@ import Formalism.PeriodIntegrals.LowCyc
 import Formalism.PeriodIntegrals.UpqRep
 import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NumericalFamilyShapeGaps
-import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.TensorDecompositionInjectiveParametersStatement
+import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.TensorDecompositionInjectiveParameters
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsFRepDualStandardUnitaryRepStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsFRepDualStandardUnitaryRep
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsFRepExteriorPowerStandardRepStatement
@@ -85,7 +85,7 @@ theorem tens_exists : HypsG → ∀ (k r : ℕ) (lam : Fin (2 * r + k + 1) → �
         split_ifs <;> push_cast <;> ring
       rwa [e] at h2
     obtain ⟨io, pr, hT⟩ := (hZ k r _ lam q0 R hF ν).1 l hl
-    exact GlobalTheory.T.tensor_decomposition_injective_parameters hH k r _ _ _ _ l _ _ io pr _ _ _ hR hI (addSet_inj _) (GlobalTheory.T.isFRep_exteriorPower_standardRep k r l) hT
+    exact _root_.Gp91.GlobalTheory.TensOrth.tensH_of_raw hH k r _ _ _ _ l _ _ io pr _ _ _ hR hI (addSet_inj _) (GlobalTheory.T.isFRep_exteriorPower_standardRep k r l) hT
   · intro hl
     have h0 : n1 ν ≤ q0 := by omega
     have hR := hF ν h0
@@ -104,6 +104,6 @@ theorem tens_exists : HypsG → ∀ (k r : ℕ) (lam : Fin (2 * r + k + 1) → �
         split_ifs <;> push_cast <;> ring
       rwa [e] at h2
     obtain ⟨io, pr, hT⟩ := (hZ k r _ lam q0 R hF ν).2 hl
-    exact GlobalTheory.T.tensor_decomposition_injective_parameters hH k r _ _ _ _ 1 _ _ io pr _ _ _ hR hI (sub_single_inj _) (GlobalTheory.T.isFRep_dual_standard_unitaryRep k r) hT
+    exact _root_.Gp91.GlobalTheory.TensOrth.tensH_of_raw hH k r _ _ _ _ 1 _ _ io pr _ _ _ hR hI (sub_single_inj _) (GlobalTheory.T.isFRep_dual_standard_unitaryRep k r) hT
 
 end GlobalTheory.TensExists

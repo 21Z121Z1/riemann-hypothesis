@@ -1,7 +1,7 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.WaveSt
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsMultOfFintype
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GelfandOperatorAdjointStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GelfandOperatorAdjoint
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveCptBoundedTime
 
 noncomputable section
@@ -326,7 +326,7 @@ theorem Om_symm (hL : LgFacts) (hR : RCalc) {f h : Mat n → V} (hf : ContDiffOn
     ∫ y : G n, ⟪Om f y.val, h y.val⟫_ℂ ∂μ = ∫ y : G n, ⟪f y.val, Om h y.val⟫_ℂ ∂μ := by
   have I : ∀ s : Bool, ∫ y : G n, ⟪gel s 2 f y.val, h y.val⟫_ℂ ∂μ = ∫ y : G n, ⟪f y.val, gel (!s) 2 h y.val⟫_ℂ ∂μ := by
     intro s
-    have := GlobalTheory.T.gelfand_operator_adjoint hL hR n μ V s 2 f h hf hh cf ch
+    have := _root_.GlobalTheory.CompanionTheory.WaveMult.Ibp.ibp_gel hL hR n μ V s 2 f h hf hh cf ch
     rw [gelT_eq_gel] at this
     simpa using this
   obtain ⟨Rf, hRf⟩ := cf

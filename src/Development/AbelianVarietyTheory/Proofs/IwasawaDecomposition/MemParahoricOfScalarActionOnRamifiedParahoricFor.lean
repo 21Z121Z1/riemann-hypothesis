@@ -158,7 +158,7 @@ theorem mem_para_of_eig : ∀ (L : Type) [Field L] [NumberField L] [IsCMField L]
   have hdP : (Pmat h.val i0 j0 t).det = a := by rw [det_P, hth]
   let Gg := Matrix.GeneralLinearGroup.mkOfDetNeZero (Gmat h.val i0 j0 t) (by rw [hdG]; exact ha0)
   have hGg : Gg.val = Gmat h.val i0 j0 t := rfl
-  obtain ⟨g, ⟨hgT, hgl⟩, -⟩ := (GlobalTheory.T.unitaryFiniteAdeles_splitPlace_decomposition L n s).2.2 Gg
+  obtain ⟨g, ⟨hgT, hgl⟩, -⟩ := (_root_.GlobalTheory.SplitAdelic.main L n s).2.2 Gg
   set p := κ⁻¹ * g * κ with hp
   have hpT : TrivOutside {s.v} p :=
     GlobalTheory.HeckeScalarSph.triv_mul (GlobalTheory.HeckeScalarSph.triv_mul (GlobalTheory.HeckeScalarSph.triv_inv hκT) hgT) hκT

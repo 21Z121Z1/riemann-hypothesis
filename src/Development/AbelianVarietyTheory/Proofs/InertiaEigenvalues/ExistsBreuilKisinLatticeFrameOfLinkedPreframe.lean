@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TrivIsCr
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NormLeOneOfMemOL
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AinfPrincipalIdealSaturatedClosedStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AinfPrincipalIdealSaturatedClosed
 import Formalism.SharpRestriction.LevelLetterCocycles.LocCoh
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TwistStep
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AcrisTorsionFreeComplete
@@ -19,7 +19,7 @@ theorem frame_of_links : ∀ (l : ℕ) [Fact l.Prime] (K : FinExt l) (bk : BK K)
       (Ti * zW (ρ g).val * P.T.map (galW l (g : GQ l))) i j
         = inclW l (1 * a) := by
     intro g i j
-    refine GlobalTheory.T.ainf_principal_ideal_saturated_closed l 1 (by simp) r _ ?_
+    refine _root_.GlobalTheory.AinfSat.mem_ideal_of_saturated l 1 (by simp) r _ ?_
     intro n
     obtain ⟨m, hnm, R, G, hc, hd⟩ := hL n
     obtain ⟨σ, hσ⟩ : ∃ σ : WCb l →+* WCb l, ∀ x, σ x = galW l (g : GQ l) x := ⟨((galW l (g : GQ l)).toRingEquiv : WCb l →+* WCb l), fun _ => rfl⟩

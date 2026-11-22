@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.SiegelKlingenDeligneRibet
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AbelContinuation
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.CongSubgroup
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.SimplicialConeTilingStatement
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.SimplicialConeTiling
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ShintaniConeDecomposition
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.UniqueReducedOrbitRepresentative
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.PlaceApply
@@ -76,7 +76,7 @@ theorem exists_coneDomain : ∀ (F : Type) [Field F] [NumberField F] [IsTotallyR
     rw [sign_pos hp] at h
     exact sign_eq_one_iff.mp h.symm
   have htile : Tile ((posCone F : ConvexCone ℚ F) : Set F) (fun _ => True) E := by
-    refine GlobalTheory.T.cone_tiling_by_sign_regions (posCone F) b hbpos Λ hΛ E (fun x hx => hx.1) ?_
+    refine _root_.GlobalTheory.CompanionTheory.Hypotheses₂.Shintani.Cones.SignTiles.tile_of_signs (posCone F) b hbpos Λ hΛ E (fun x hx => hx.1) ?_
     intro x y hx hy hs hxE
     refine ⟨hy, fun g' hg' hyD => ?_⟩
     refine hxE.2 g' hg' ?_

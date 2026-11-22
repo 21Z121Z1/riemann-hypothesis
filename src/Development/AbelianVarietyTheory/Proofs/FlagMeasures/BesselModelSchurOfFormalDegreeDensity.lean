@@ -6,7 +6,7 @@ import Formalism.LocalRingCardinality.DataCD
 import Formalism.FormalDegreeBessel.FinalG
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsHaarOnIffGroupsUnitaryUnipotent
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HaarDensityConjUnitaryHermitianGroups
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HasDensityAtIdentityLieAlgebraOfOmegaDensityStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HasDensityAtIdentityLieAlgebraOfOmegaDensity
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HasDensityAtIdentityUnitaryGroupProbability
 
 open MeasureTheory Matrix Filter Topology Formalism.QuantumDeterminants Formalism.MainNotions.S GlobalTheory.SgInf GlobalTheory.Amp
@@ -76,7 +76,7 @@ theorem cd_dens {n p q : ℕ} (ε : Fin n → Bool) (e : Fin p ⊕ Fin q ≃ Fin
       (ENNReal.ofReal (volUn n)⁻¹) := by
   subst hpq
   obtain ⟨c0, -, -, hc1, hc2⟩ := cd.trick p q
-  have hK := GlobalTheory.T.hasDensityAtIdentityLieAlgebra_of_omegaDensity (p + q) (fun _ => true) (p + q) 0 (Equiv.sumEmpty _ _) (fun _ => rfl)
+  have hK := _root_.GlobalTheory.OmegaFrobenius.hasDens_of_omegaDensity (p + q) (fun _ => true) (p + q) 0 (Equiv.sumEmpty _ _) (fun _ => rfl)
     (fun j => j.elim0) (cd.cd (p + q) 0) c0 (cd.haar _ _) hc2
   have hJ : Formalism.REAL.Jm (fun _ : Fin (p + q) => true) = 1 := by
     unfold Formalism.REAL.Jm
@@ -90,7 +90,7 @@ theorem cd_dens {n p q : ℕ} (ε : Fin n → Bool) (e : Fin p ⊕ Fin q ≃ Fin
     exact measure_univ
   have hc0 : c0 = ENNReal.ofReal (volUn (p + q))⁻¹ :=
     hasDens_unique hK.2 (_root_.GlobalTheory.UnitaryVolume.hasDens_unitary (p + q) _ hK.1 hprob)
-  have hM := GlobalTheory.T.hasDensityAtIdentityLieAlgebra_of_omegaDensity (p + q) ε p q e h1 h2 (cd.cd p q) c0 (cd.haar p q) hc1
+  have hM := _root_.GlobalTheory.OmegaFrobenius.hasDens_of_omegaDensity (p + q) ε p q e h1 h2 (cd.cd p q) c0 (cd.haar p q) hc1
   rw [hc0] at hM
   exact hM
 

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsHalfIdem
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussianPoincareSeriesThetaVacuumStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnfoldPoincareSeriesLatticeFourierStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussianPoincareSeriesThetaVacuum
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnfoldPoincareSeriesLatticeFourier
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ApplyAddInfRat
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.HomSymplecticHalfFormAlgebraicLawsContinuous
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.FiniteRationalPointsCompletedLattice
@@ -367,7 +367,7 @@ theorem gauss_mul_integral : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (hψ 
   haveI : (volume : Measure (Fin S.rank → ℂ)).IsAddHaarMeasure := Measure.pi.isAddHaarMeasure _
   haveI : (volume : Measure (Fin T.rank → Fin S.rank → ℂ)).IsAddHaarMeasure := Measure.pi.isAddHaarMeasure _
   haveI : (volume : Measure (RW T S)).IsAddHaarMeasure := Measure.pi.isAddHaarMeasure _
-  have key := GlobalTheory.T.unfold_poincareSeries_lattice_fourier (RW T S) volume _ (infRat S T) (infRat_injective S T) C
+  have key := _root_.GlobalTheory.PoincareUnfold.unfold_poincare_fourier (RW T S) volume _ (infRat S T) (infRat_injective S T) C
     (fun R => (finite_latQ dS dT R).subset fun c hc => ⟨hc.1.1, hc.2⟩) ?_ n t (gaussQ ψ S T ΛS ΛT w a b) ?_ ?_ ?_ _ hF
     (fun y => κ * ∑ i, coefQ ψ S T sS sT ΛS ΛT w (u i) y) (fun y => -omO S T (infRat S T y)) ?_ ?_ ?_ ?_ ?_
   · obtain ⟨r, hr, e⟩ := key
@@ -439,7 +439,7 @@ theorem gauss_mul_integral : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (hψ 
     obtain ⟨z, hz⟩ := (GlobalTheory.RatSelfDual.psi_fin_iff hψ S T y c).1 h2
     exact ⟨-z, by rw [LinearMap.neg_apply, hz, Int.cast_neg]⟩
   · intro v
-    obtain ⟨hf, hfix, hvac⟩ := GlobalTheory.T.gaussian_poincare_series_theta_vacuum D ψ hψ θ σ hσ S T sS sT hS hT ΛS ΛT dS dT w hw (-v)
+    obtain ⟨hf, hfix, hvac⟩ := _root_.GlobalTheory.GaussSeriesVacuum.series_theta_vacuum D ψ hψ θ σ hσ S T sS sT hS hT ΛS ΛT dS dT w hw (-v)
     have e := hκ ⟨_, hf⟩ hfix hvac (iotaW σ T S v)
     rw [(sumOp_eq_sum_transversal H _ _ hB _ hfix _ u huB huT).1, Submodule.coe_sum, Finset.sum_apply] at e
     simp only [coe_opF, right_side hψ hσ halt, left_side hg hh hψ hσ halt sS sT _ _ hw hb] at e

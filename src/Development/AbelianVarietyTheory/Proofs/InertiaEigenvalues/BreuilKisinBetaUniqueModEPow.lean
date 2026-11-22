@@ -4,7 +4,7 @@ import Formalism.SharpRestriction.LevelLetterCocycles.LocCoh
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TwistStep
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AcrisTorsionFreeComplete
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DeRhamPotSemistable
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EisensteinImagePowIdealAinfPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EisensteinImagePowIdealAinfProperties
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGaloisElemCyclotomicPeriodNotRootOfUnity
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AinfDivisibilityBreuilKisinFacts
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ThetaBdRPlusSurjectiveKerUnitsEquivariant
@@ -76,7 +76,7 @@ theorem step {d : ℕ} (g : ↥(GK K)) (w : Ainf l)
       rw [sub_mul, one_mul]; exact h1
     exact (mul_eq_zero.1 h5).resolve_left (sub_ne_zero.2 (hwi i hi))
   rw [theta_eq_zero_iff] at h4
-  have h6 := (GlobalTheory.T.eisensteinImage_pow_ideal_ainf_properties l K bk 1).2.1 (δ' a b) (by rwa [pow_one])
+  have h6 := (_root_.GlobalTheory.AinfEPow.ePow_facts l K bk 1).2.1 (δ' a b) (by rwa [pow_one])
   rw [hδ' a b, pow_succ]
   exact mul_dvd_mul_left _ (by rwa [pow_one] at h6)
 

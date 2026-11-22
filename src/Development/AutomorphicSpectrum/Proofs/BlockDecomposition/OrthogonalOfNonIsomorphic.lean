@@ -9,8 +9,8 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HaarRightInvari
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralEqL2Inner
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RightTranslateIsometryStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieSkewAdjointBis
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RepresentationUnitaryAverageStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsInvariantProjectionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RepresentationUnitaryAverage
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsInvariantProjection
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFiniteDimCompactStable
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsOpenCompactSubgroupLeStatement
 
@@ -67,7 +67,7 @@ theorem exists_repr (μ : Measure (GA E N)) [μ.IsHaarMeasure] [μ.IsMulRightInv
   letI : MeasurableSpace (Kinf E N) := borel _
   haveI : BorelSpace (Kinf E N) := ⟨rfl⟩
   haveI : CompactSpace (Kinf E N) := GlobalTheory.KinfCompactness.compactSpace_Kinf E N
-  have key := GlobalTheory.T.representation_unitary_average (Measure.haar : Measure (Kinf E N)) (cptRep E N) (l2Map μ) (fixS V L) (fixS V' L)
+  have key := _root_.GlobalTheory.CompanionTheory.FinDiscRepr.representing_vector (Measure.haar : Measure (Kinf E N)) (cptRep E N) (l2Map μ) (fixS V L) (fixS V' L)
     (fun g : GA E N => (LinearMap.proj g).comp (Sm E N).subtype)
     (fun k a ha b hb => hunit k hV' hV a ha.1 b hb.1)
     (fun k a ha b hb => hunit k hV' hV' a ha.1 b hb.1)
@@ -85,7 +85,7 @@ theorem exists_repr (μ : Measure (GA E N)) [μ.IsHaarMeasure] [μ.IsMulRightInv
   have hfx : ∀ u ∈ L, finRep E N u x = x := fun u hu => hLS hu
   obtain ⟨y, hy, hyz⟩ := key x ⟨hx, hfx⟩
   refine ⟨y, hy.1, fun z hz => ?_⟩
-  obtain ⟨z', hz', hfix, e⟩ := GlobalTheory.T.exists_invariant_projection E N μ V' hV' L hLc z hz
+  obtain ⟨z', hz', hfix, e⟩ := _root_.GlobalTheory.CompanionTheory.FinDiscAvg.exists_avg E N μ V' hV' L hLc z hz
   rw [e x (mem_l2_of_discrete μ hV hx) hfx, e y (mem_l2_of_discrete μ hV' hy.1) hy.2]
   exact hyz z' ⟨hz', hfix⟩
 

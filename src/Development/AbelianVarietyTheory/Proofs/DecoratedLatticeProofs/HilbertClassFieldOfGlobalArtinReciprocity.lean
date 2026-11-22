@@ -12,7 +12,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFinset
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsIdeleClassGroupHomOpenKernel
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertiaElementEqOneOrLiesAboveFinitePlace
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsNormNearNegOneAtRealPlaceStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.InfIdeleNegOneNotMemClosurePrincipalIdentityCompStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.InfIdeleNegOneNotMemClosurePrincipalIdentityComp
 
 noncomputable section
 
@@ -131,7 +131,7 @@ theorem isReal_of_conj (j : Ω →+* ℂ) (c : G E Ω) (hc : ∀ x, j (c x) = st
 theorem art_sign_eq (ha : IsGlobalArtin art) (j : Ω →+* ℂ) (c : G E Ω) (hc : ∀ x, j (c x) = starRingEnd ℂ (j x)) :
     art (infIdele E (InfinitePlace.mk (j.comp (algebraMap E Ω))) (-1)) = GlobalTheory.HeckeGal.toAb E Ω c := by
   have hg1 : art (infIdele E (InfinitePlace.mk (j.comp (algebraMap E Ω))) (-1)) ≠ 1 := fun h =>
-    GlobalTheory.T.infIdele_neg_one_not_mem_closure_principal_identityComponent E _ (isReal_of_conj j c hc) (ha.ker ▸ h)
+    _root_.GlobalTheory.RealSignIdele.infIdele_neg_one_not_mem E _ (isReal_of_conj j c hc) (ha.ker ▸ h)
   have hmem := fun U hU => art_sign_mem ha U hU j c hc
   generalize art (infIdele E (InfinitePlace.mk (j.comp (algebraMap E Ω))) (-1)) = g at hg1 hmem
   have hcc : c * c = 1 := AlgEquiv.ext fun x => j.injective (by

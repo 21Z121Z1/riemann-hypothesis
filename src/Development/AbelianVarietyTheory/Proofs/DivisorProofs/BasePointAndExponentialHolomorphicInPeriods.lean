@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.ModuliProofs.NotInjOnOfFderivEqZe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothBaseDimEqPeriodSpaceDim
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplexUniformisationExpUniqueFullLevelMarking
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicMapLiftsLocallyToPeriodFamilies
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PerCoordExistsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PerCoordExists
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisationAtTransportIsometry
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.PELU
@@ -51,7 +51,7 @@ theorem isHolTo_point_and_exp : ∀ (O : Type) [Ring O] (bar : O → O) (g : ℕ
   have loc : ∀ b₀ ∈ B, ∃ B' : Set (Fin m → ℂ), b₀ ∈ B' ∧ B' ⊆ B ∧ IsHolTo B' y ∧
       IsHolTo (B' ×ˢ Set.univ) (fun bz : (Fin m → ℂ) × (Fin g → ℂ) => (e bz.1 bz.2).left) := by
     intro b₀ hb₀
-    obtain ⟨d', hd'⟩ := GlobalTheory.T.exists_perCoord O bar g ρ D'
+    obtain ⟨d', hd'⟩ := _root_.GlobalTheory.PerCoordU.perCoord_exists O bar g ρ D'
     have hdd : d = d' := _root_.GlobalTheory.DimEq.dim_eq O bar g ρ Λ F N C d d' D' t hN0 heta hsm hqc hfine hC ⟨_, hP.1 b₀ hb₀⟩ hd'
     subst hdd
     obtain ⟨C₀, y₁, -, -, -, -, hC₀, h0, hy0, hover, hhol, hinj, -⟩ :=

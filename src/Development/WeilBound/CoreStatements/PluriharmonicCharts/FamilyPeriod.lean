@@ -5,7 +5,7 @@ import Development.WeilBound.CoreStatements.PluriharmonicCharts.DerivZero
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.XCBmExistsSumframe
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.InteriorPointPolarised
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ContDiffUncentre
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PairSumFrameAtPointStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PairSumFrameAtPoint
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GramMatrixChangeFrame
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DifferentiableOnOfTendstoLocallyUniformlyOn
 
@@ -60,7 +60,7 @@ theorem family_period (hN : N1c) (tie : FlagTie M 𝔐) (hpq : 1 ≤ D.p + D.q)
   have hb0 : (0 : Fin n → ℂ) ∈ Metric.ball (0 : Fin n → ℂ) 1 := Metric.mem_ball_self one_pos
   have hpos : ∀ τ, (Γ τ 0).PosDef := fun τ => by
     have hpol := _root_.GlobalTheory.CompanionTheory.Ar.HodgeMetric.polarisedAt_of_interior E H D l (Xo l) c Y S M.Ω _ _ M.x 𝔐 _ (hi 0 hb0)
-    obtain ⟨Γ', h1, h2⟩ := GlobalTheory.T.pair_sum_frame_at_point E H D l (Xo l) c Y S M.Ω _ _ M.x 𝔐 (.inl τ) (.inr τ) (D.p + D.q)
+    obtain ⟨Γ', h1, h2⟩ := _root_.GlobalTheory.CompanionTheory.Ar.HodgeMetric.GramEx.exists_gramAt_posDef E H D l (Xo l) c Y S M.Ω _ _ M.x 𝔐 (.inl τ) (.inr τ) (D.p + D.q)
       (gbS tie F τ) _ (𝔐.all _) hpol (hfr τ)
     have h3 := hΓ τ 0 h0
     rw [smul_zero] at h3

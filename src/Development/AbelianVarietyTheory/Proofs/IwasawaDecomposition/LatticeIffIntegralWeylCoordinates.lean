@@ -12,7 +12,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EvalTwSubK
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.TiedRec
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AutomorphicFormFnInvIffTwistedSubstitutionMem
 import Formalism.LocalToGlobal.HermitianForms.IsLocBasis
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeylLatticeDualInvariantUnitStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeylLatticeDualInvariantUnit
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DetPowerProductMulMemDelWShiftIff
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntegralSpanIffPadicWeylDualLattice
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TwistedEmbeddingMatrixSubstitutionMemRatSpan
@@ -73,7 +73,7 @@ theorem lattice_iff_weyl : ∀ {B : Base} {X : PreX B.toPre} (I : TC B X), I.Ok 
   rw [← hR]
   refine (_root_.GlobalTheory.IntSpanCmp.intSpan_iff_delW _ Pl w _ R hRat').trans ?_
   rw [hsrc, hν]
-  refine Iff.trans ?_ (GlobalTheory.T.weyl_lattice_dual_invariant_unit _ _ _ _ g c0 (fun y => (∏ τ, (y τ).det ^ k τ) * polFun (MvPolynomial.map (Pl.iL w) R) y) hc0 hg1 hg2).symm
+  refine Iff.trans ?_ (_root_.GlobalTheory.WeylTensorSubst.subst_mem_iff _ _ _ _ g c0 (fun y => (∏ τ, (y τ).det ^ k τ) * polFun (MvPolynomial.map (Pl.iL w) R) y) hc0 hg1 hg2).symm
   exact (_root_.GlobalTheory.DetShiftWeyl.detPow_mul_mem_delW_iff _ _ _ _ k _).symm
 
 end GlobalTheory.IntegralityCompare

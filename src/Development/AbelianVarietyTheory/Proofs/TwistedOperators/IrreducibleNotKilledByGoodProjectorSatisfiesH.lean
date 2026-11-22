@@ -7,7 +7,8 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.HasTypeVec
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.GreenCuspidalIff
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MonotoneTwoBlockIndicator
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffEqMapDomain
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTameCharactersSeriesIdempotentsTameLabelleStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTameCharactersSeriesIdempotentsTameLabelle
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DimPartsAtIffBadAndOff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChiIdemMulLvlIdemBaseNeZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComapRangeAdjointLeBlockSum
 open MeasureTheory Set Filter NumberField IsDedekindDomain
@@ -166,7 +167,7 @@ theorem hypH_of_goodProj : GlobalTheory.Published.GreenCuspidal → ∀ {D : D7}
   intro hG D G _ _ Pl0 T A Ks _ _ _ R F hR W _ _ _ τ hτ hx a h0 ha
   classical
   obtain ⟨x, hx0, hx⟩ := hx
-  obtain ⟨om, hT⟩ := GlobalTheory.T.exists_tameCharacters_seriesIdempotentsTameLabelled R F hR
+  obtain ⟨om, hT⟩ := _root_.GlobalTheory.TameTieOfGood.exists_tameTie_of_given R F hR
   have hI := GlobalTheory.GoodIdemTie.idemTie_of_tameTie hG D om hT
   obtain ⟨χ, hχ, hτχ⟩ := exists_char_of_fixed D.what₂.embLL A.X hR.irr (τ.comp R.eG.toMonoidHom)
     (GlobalTheory.FinGL.Transport.isIrreducible_comp τ _ R.eG.surjective hτ) x hx0 hx

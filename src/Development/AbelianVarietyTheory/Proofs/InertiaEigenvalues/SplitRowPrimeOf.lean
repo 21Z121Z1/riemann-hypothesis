@@ -1,7 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.DecompositionInvariantsCondition
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TorsionExponentCondition
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSplitPlacesDeclarationSplitRowPrimeStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSplitPlacesDeclarationSplitRowPrime
+import Formalism.SharpRestriction.LevelLetterCocycles.EmbeddingTypes
+import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.SplitPlaceTypes
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitPrimeImpliesPlacesSplit
 
 open NumberField IsDedekindDomain Formalism Formalism.ConjugateSelfDual ReciprocityTheory.Gal Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.MainNotions Formalism.MainNotions.N Formalism.WeaklyAdmissibleFiltrations Module
@@ -29,7 +31,7 @@ theorem main : ∀ (D : D7) (L : SizeData₂ D) (HW : HWOf D.loc) (R : KillingCo
       ∀ v ∈ placesOver D.host.E (D.nd.l i), v.asIdeal.ramificationIdx ℤ = 1 := by
   intro D L HW R X h hJ i _ hg hr hs
   have hsp := splitRowPrime_of (L := L) (X := X) i hg hr hs
-  refine ⟨GlobalTheory.HubX.Check.decl h hJ i hg hr hs ((GlobalTheory.T.exists_splitPlacesDeclaration_splitRowPrime D i hJ.choose hsp).1), ?_⟩
+  refine ⟨GlobalTheory.HubX.Check.decl h hJ i hg hr hs ((_root_.GlobalTheory.SplitDecl.main D i hJ.choose hsp).1), ?_⟩
   intro v hv
   exact (GlobalTheory.SplitPlaces.placesSplit D.host (D.nd.l i) hsp v hv).1
 

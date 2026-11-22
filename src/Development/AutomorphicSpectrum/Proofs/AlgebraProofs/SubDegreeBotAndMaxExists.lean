@@ -3,7 +3,7 @@ import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsSplitGau
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.GapCondExample
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.BundleDegreeEqSumValuations
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DegreeMonoLatticeLe
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SubAndQuotientBundlesStatement
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SubAndQuotientBundles
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SubDegreeNonposTrivialLattice
 
 noncomputable section
@@ -155,9 +155,9 @@ theorem subDeg_bdd [FiniteDimensional K V] (L : C.I → AddSubgroup V) (h : IsBu
     have := (WithZero.log_le_log one_ne_zero h1).2 (hc2 i)
     simpa using this
   refine ⟨(Module.finrank K V : ℤ) * S, fun W => ?_⟩
-  have hW := (GlobalTheory.T.sub_and_quotient_bundles K C V _ W h0).1
+  have hW := (_root_.GlobalTheory.CompanionTheory.Ar.Crv.SubQuot.isBun_sub_quot K C V _ W h0).1
   have e1 := _root_.GlobalTheory.CompanionTheory.Ar.Crv.deg_le_deg_of_le K C W (sub C L W) (scale C (sub C (fun i => latOf C i b) W) c)
-    (GlobalTheory.T.sub_and_quotient_bundles K C V _ W h).1 (isBun_scale C c hc hW) (fun i x hx => hc3 i x hx)
+    (_root_.GlobalTheory.CompanionTheory.Ar.Crv.SubQuot.isBun_sub_quot K C V _ W h).1 (isBun_scale C c hc hW) (fun i x hx => hc3 i x hx)
   have e2 := deg_scale C c hc hW
   have e3 := _root_.GlobalTheory.CompanionTheory.Ar.Crv.subDeg_le_zero_of_trivial K C V _ b (fun i => latOf C i b) W (fun i => isLatOf_latOf C i b)
   have e4 : (Module.finrank K W : ℤ) * S ≤ (Module.finrank K V : ℤ) * S :=

@@ -13,7 +13,7 @@ import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffAtOfIsPotential
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LocDensAddOfFunContinuousOn
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LocalDensityInclusionExclusion
 import ReciprocityTheory.AnalyticForms.LeviForms.ConvExpandStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularChartDataPropertiesStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularChartDataProperties
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MixedEnergyUniformBound
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MixedIntegralRegularizedConvergence
 open MvPolynomial MeasureTheory Filter Topology ReciprocityTheory.AnForm ReciprocityTheory.AnForm.M ReciprocityTheory.ChartRestriction.G.Geo GroundTheory.Heights₂.Heights.LowerBoundFree
@@ -154,7 +154,7 @@ theorem mIntegrable_of_logBound {e : ℕ} {X : Type} [TopologicalSpace X] [Compa
   intro j K hK hKc
   letI : MeasurableSpace X := borel X
   haveI : BorelSpace X := ⟨rfl⟩
-  obtain ⟨-, hnull, -, -⟩ := GlobalTheory.T.regular_chart_data_properties e X A R
+  obtain ⟨-, hnull, -, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Giv.regData_open_part e X A R
   have hKm := hKc.measurableSet
   have hD : IntegrableOn (locDens A Φ j) K := ((locDensCont A Φ hΦ j).mono hK).integrableOn_compact hKc
   have hTl := (hT (Real.exp 1) le_rfl).1 j K hK hKc
@@ -213,7 +213,7 @@ open GlobalTheory.CompanionTheory.Ar.Giv.Conv GroundTheory.Heights₂.Heights.An
 
 theorem mixed_integral_tendsto_of_C2_off_divisor : ∀ (e : ℕ) (X : Type) [TopologicalSpace X] [CompactSpace X] [T2Space X] (A : FinHolAtlas e X) (R : GroundTheory.Heights₂.Heights.Regular.RegChartData A) (Θ : LocPot X), IsPotential A Θ → IsPosPot A Θ → ∀ (P : Fin e → LocPot X) (f : Fin e → X → ℝ) (fT : Fin e → ℝ → X → ℝ) (G : X → ℝ) (GT : ℝ → X → ℝ) (C : ℝ), (∀ i, IsPotential A (P i)) → (∀ i, A.SmoothOn R.Yo (f i)) → (∀ᶠ t in 𝓝[>] (0 : ℝ), ∀ i, A.Smooth (fT i t) ∧ IsPsh A (P i + LocPot.ofFun (fT i t) + Θ) ∧ ∀ x ∈ R.Yo, |fT i t x| ≤ C + C * Real.log (R.r x) ∧ fT i t x ≤ C) → (∀ i, ∀ j, ∀ K' ⊆ (A.chart j).target ∩ (A.chart j).symm ⁻¹' R.Yo, IsCompact K' → TendstoUniformlyOn (fun t => fT i t ∘ (A.chart j).symm) (f i ∘ (A.chart j).symm) (𝓝[>] 0) K' ∧ TendstoUniformlyOn (fun t => fderiv ℝ (fT i t ∘ (A.chart j).symm)) (fderiv ℝ (f i ∘ (A.chart j).symm)) (𝓝[>] 0) K' ∧ TendstoUniformlyOn (fun t => fderiv ℝ (fderiv ℝ (fT i t ∘ (A.chart j).symm))) (fderiv ℝ (fderiv ℝ (f i ∘ (A.chart j).symm))) (𝓝[>] 0) K') → (∀ᶠ t in 𝓝[>] (0 : ℝ), @Measurable X ℝ (borel X) _ (R.Yo.indicator (GT t)) ∧ ∀ x ∈ R.Yo, |GT t x| ≤ C + C * Real.log (R.r x)) → (∀ K' ⊆ R.Yo, IsCompact K' → TendstoUniformlyOn GT G (𝓝[>] 0) K') → MIntegrable A (fun i => P i + LocPot.ofFun (f i)) G ∧ (∀ᶠ t in 𝓝[>] (0 : ℝ), MIntegrable A (fun i => P i + LocPot.ofFun (fT i t)) (GT t)) ∧ Tendsto (fun t => mInt A (fun i => P i + LocPot.ofFun (fT i t)) (GT t)) (𝓝[>] 0) (𝓝 (mInt A (fun i => P i + LocPot.ofFun (f i)) G)) := by
   intro e X _ _ _ A R Θ hΘ hΘp P f fT G GT C hP hf hfT hC hGT hGc
-  obtain ⟨hYo, hnull, -, -⟩ := GlobalTheory.T.regular_chart_data_properties e X A R
+  obtain ⟨hYo, hnull, -, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Giv.regData_open_part e X A R
   have hz : A.Smooth (0 : X → ℝ) := fun j => contDiffOn_const
   choose CE hCE using fun T => position_tail e X A R Θ hΘ hΘp P C hP T
   have hth : ∀ (T : Finset (Fin e)) i, IsPotential A (if i ∈ T then P i else LocPot.ofFun 0) := by

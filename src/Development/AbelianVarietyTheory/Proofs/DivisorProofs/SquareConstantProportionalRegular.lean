@@ -8,13 +8,13 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsNatDatumSquareFli
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdmissibleFormConvergentThetaIntegral
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaDistributionRationalPointsInvariantTriple
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationLocalityTensorModelVW
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StrongApproximationSplitPlaceSkewHermitianUnitarStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDetOneMulBlockUnitaryDecompositionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StrongApproximationSplitPlaceSkewHermitianUnitar
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDetOneMulBlockUnitaryDecomposition
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsThetaTripleOfSquareGridLatticeCompatible
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BigRouteKernelEqConstMulTheta
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SetIntegralConjugateScaledUnitaryGroupEq
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGaussianDatumFlippedFiniteTensorBigRouteStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealPolynomialVectorReachedByRealDatumStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGaussianDatumFlippedFiniteTensorBigRoute
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealPolynomialVectorReachedByRealDatum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareFlipReachesLocalQuotientClasses
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RatInOfUnit
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
@@ -30,7 +30,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TripleFrameBaseE
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRtensOp
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockAlgebraicThetaVectorsStableFiniteAdelesLie
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawFramesWeilEquivalence
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilIntertwiningValueStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilIntertwiningValue
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilLocalFactorEq
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilArchimedeanFactor
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilUnramifiedFactor
@@ -144,9 +144,9 @@ theorem exists_integral_ne_zero (hSA : GlobalTheory.Published.StrongApproxSU) (h
   have hv0 := (hti.2.2.1 _).2 ⟨_, hw0, rfl⟩
   have hd : 0 < (spW G i j).rank + (spW₁ G i j).rank := by have := hT.geo.aBig; omega
   obtain ⟨f, hf, h0⟩ := exists_I_ne_zero_at hm hc hco hla hl (_root_.GlobalTheory.RatInvTheta.thetaSum_rat_inv Bs Γ X om om' hT 1 (one_mem _)) hv0
-    (_root_.GlobalTheory.WeilLocalityVW.locality Bs Γ X om om' hT _) (GlobalTheory.T.strongApproximation_splitPlace_skewHermitian_unitary hSA Bs Γ X om om' hT ⟨_, hT.chars.sub hv0⟩)
+    (_root_.GlobalTheory.WeilLocalityVW.locality Bs Γ X om om' hT _) (_root_.GlobalTheory.SplitApprox.strongApprox_split hSA Bs Γ X om om' hT ⟨_, hT.chars.sub hv0⟩)
     (H := Set.range (blkU _ _ e h.JWW)) fun x => by
-      obtain ⟨s, g, h1, h2⟩ := GlobalTheory.T.exists_detOne_mul_blockUnitary_decomposition _ _ e h.JWW hd x
+      obtain ⟨s, g, h1, h2⟩ := _root_.GlobalTheory.DetDecomp.exists_detOne_mul_blkU _ _ e h.JWW hd x
       exact ⟨s, _, ⟨g, rfl⟩, h1, h2⟩
   obtain ⟨φ, hφ, hP, _, ⟨g, rfl⟩, hne⟩ := exists_I_ne_zero_kind hm hc hco (H := Set.range (blkU _ _ e h.JWW))
     (by rintro _ ⟨x, rfl⟩ _ ⟨y, rfl⟩; exact ⟨x * y, (blkU_mul _ _ e h.JWW x y).symm⟩)
@@ -170,9 +170,9 @@ theorem exists_integral_ne_zero (hSA : GlobalTheory.Published.StrongApproxSU) (h
     have e : ((D.host.QS * D.host.q * D.host.d * Ideal.absNorm D.host.ccK : ℕ) : 𝓞 D.host.E) =
         (D.host.d : 𝓞 D.host.E) * ((D.host.QS * D.host.q * Ideal.absNorm D.host.ccK : ℕ) : 𝓞 D.host.E) := by push_cast; ring
     rw [e]; exact Ideal.mul_mem_left _ _ hmem)) n Φ hnat
-  obtain ⟨f₀, h1, h2, h3⟩ := GlobalTheory.T.exists_gaussianDatum_flippedFiniteTensor_bigRoute hL W B ρ t i j M hst e Bs Γ X om om' h hT hti n Φ τ τ' hnat hF φ hφ
+  obtain ⟨f₀, h1, h2, h3⟩ := _root_.GlobalTheory.BigDat.exists_gauss_datum hL W B ρ t i j M hst e Bs Γ X om om' h hT hti n Φ τ τ' hnat hF φ hφ
     fun w hw => (H w hw).2.2
-  obtain ⟨a, ha⟩ := GlobalTheory.T.realPolynomialVector_reached_by_realDatum hL W B ρ t i j M e Bs Γ X om om' h hT n Φ τ τ' hF φ hφ f₀ h1 h2 h3 f hf
+  obtain ⟨a, ha⟩ := _root_.GlobalTheory.BigNZ.DatReal.datum_real hL W B ρ t i j M e Bs Γ X om om' h hT n Φ τ τ' hF φ hφ f₀ h1 h2 h3 f hf
   obtain ⟨b', hb'⟩ := ρ.onto_big i j (toTens a)
   obtain ⟨b, rfl⟩ := toTens_surjective b'
   have hΘ : IsMatched B t ρ i j (tensT W a τ) (tensT W b τ') := ⟨a, b, τ, τ', n, Φ, hb', hnat, hF, rfl, rfl⟩
@@ -321,9 +321,9 @@ theorem thetaInt_eq_zero (hSA : GlobalTheory.Published.StrongApproxSU) (hK : Glo
   have k₀ := hI _ _ (hPf 1 φ₀ one_ne_zero p₀ _ (by rw [one_smul]; exact isDatum_of_isDatumA d₀)) y
   rw [inv_one, one_smul] at k₀
   refine k₀.trans (I_eq_zero hT hla hl (_root_.GlobalTheory.RatInvTheta.thetaSum_rat_inv Bs Γ X om om' hT 1 (one_mem _)) hv0
-    (_root_.GlobalTheory.WeilLocalityVW.locality Bs Γ X om om' hT _) (GlobalTheory.T.strongApproximation_splitPlace_skewHermitian_unitary hSA Bs Γ X om om' hT ⟨_, hT.chars.sub hv0⟩)
+    (_root_.GlobalTheory.WeilLocalityVW.locality Bs Γ X om om' hT _) (_root_.GlobalTheory.SplitApprox.strongApprox_split hSA Bs Γ X om om' hT ⟨_, hT.chars.sub hv0⟩)
     (H := Set.range (blkU _ _ e h.JWW)) (fun x => by
-      obtain ⟨s, g, h1, h2⟩ := GlobalTheory.T.exists_detOne_mul_blockUnitary_decomposition _ _ e h.JWW hd x
+      obtain ⟨s, g, h1, h2⟩ := _root_.GlobalTheory.DetDecomp.exists_detOne_mul_blkU _ _ e h.JWW hd x
       exact ⟨s, _, ⟨g, rfl⟩, h1, h2⟩) (fun φ₁ p₁ g₀ hg₀ => ?_) p₀ _)
   by_contra hne₁
   obtain ⟨φ, hφ, hQ, _, ⟨g, rfl⟩, hne⟩ := exists_I_ne_zero_kind hm hc hco (H := Set.range (blkU _ _ e h.JWW))
@@ -348,7 +348,7 @@ theorem thetaInt_eq_zero (hSA : GlobalTheory.Published.StrongApproxSU) (hK : Glo
     have e : ((D.host.QS * D.host.q * D.host.d * Ideal.absNorm D.host.ccK : ℕ) : 𝓞 D.host.E) =
         (D.host.d : 𝓞 D.host.E) * ((D.host.QS * D.host.q * Ideal.absNorm D.host.ccK : ℕ) : 𝓞 D.host.E) := by push_cast; ring
     rw [e]; exact Ideal.mul_mem_left _ _ hmem)) n Φ hnat
-  obtain ⟨f', h1, h2, h3⟩ := GlobalTheory.T.exists_gaussianDatum_flippedFiniteTensor_bigRoute hL W B ρ t i j M hst e Bs Γ X om om' h hT hti n Φ τ τ' hnat hF φ hφ
+  obtain ⟨f', h1, h2, h3⟩ := _root_.GlobalTheory.BigDat.exists_gauss_datum hL W B ρ t i j M hst e Bs Γ X om om' h hT hti n Φ τ τ' hnat hF φ hφ
     fun w hw => (H w hw).2.2
   obtain ⟨s, rfl⟩ := _root_.GlobalTheory.GaussLine.gauss_eq_smul Bs Γ X om om' hT f₀ f1 f2 f' h2
   have hs : s ≠ 0 := by rintro rfl; exact h1 (zero_smul _ _)
@@ -358,7 +358,7 @@ theorem thetaInt_eq_zero (hSA : GlobalTheory.Published.StrongApproxSU) (hK : Glo
   obtain ⟨b, rfl⟩ := toTens_surjective b'
   have hΘ : IsMatched B t ρ i j (tensT W a τ) (tensT W b τ') := ⟨a, b, τ, τ', n, Φ, hb', hnat, hF, rfl, rfl⟩
   have z := h0 M hM a rfl n Φ τ τ' hnat hF g.1 g.2
-  simp only [GlobalTheory.T.thetaGridRouteKernel_eq_detCharacters_mul_thetaKernel hL W t i j ωA hωA B ρ _ _ hΘ] at z
+  simp only [_root_.GlobalTheory.SquareDict.ExactBig.kerBig_eq hL W t i j ωA hωA B ρ _ _ hΘ] at z
   rw [integral_const_mul, mul_eq_zero, mul_eq_zero] at z
   rcases z with (z | z) | z
   · exact Circle.coe_ne_zero _ z

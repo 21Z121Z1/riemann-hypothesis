@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.IntegrableComplexContinuousBoundedSupport
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MatrixUnitDerivativeDiscreteSeriesMatrixCoeffStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MatrixUnitDerivativeDiscreteSeriesMatrixCoeff
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CoverFactoringRepresentationUnitaryGroupDictiona
 import Formalism.SharpRestriction.Divisibility.SchurIrreducible
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
@@ -46,8 +46,8 @@ theorem casimir_eq_gelfVal_of_hasInfChar : ∀ (p q n : ℕ) (e : Ix p q ≃ Fin
         inner ℂ (R.ι u) (R.ι (R.HK.act (Eab a b) (R.HK.act (Eab b a) v))) := by
       intro a b
       rw [Formalism.REAL.lie_derivative_congr (e a) (e b)
-        (fun x hx => GlobalTheory.T.matrixUnitDerivative_discreteSeriesMatrixCoeff p q n e ε T R σ hb hf b a v (R.ι u) x hx) h1,
-        GlobalTheory.T.matrixUnitDerivative_discreteSeriesMatrixCoeff p q n e ε T R σ hb hf a b _ (R.ι u) 1 h1, hσ1]
+        (fun x hx => _root_.GlobalTheory.CoeffEab.eab_coeff p q n e ε T R σ hb hf b a v (R.ι u) x hx) h1,
+        _root_.GlobalTheory.CoeffEab.eab_coeff p q n e ε T R σ hb hf a b _ (R.ι u) 1 h1, hσ1]
       rfl
     have h3 : ∀ a : Ix p q, (∑ b : Fin n, Formalism.REAL.Eab ε (e a) b (Formalism.REAL.Eab ε b (e a)
           (fun g => inner ℂ (R.ι u) (σ g (R.ι v)))) 1) =

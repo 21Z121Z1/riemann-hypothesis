@@ -1,12 +1,13 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ThetaNormCommutation.LocalComparisonSplitting.EulerFactorLevels.EulerFinOf
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedOrbitalIntegralEqSumSmallerLevelStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedOrbitalIntegralEqSumSmallerLevel
+import Development.AbelianVarietyTheory.Definitions.Divisors.GaloisRepOfPolarizedCuspidal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedOrbitalIntegralTwistedConjInvariant
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PLocPrjGOfNotMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousInvolutiveLocalTransposeInverse
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalSupportFacts
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeckeIntegralFiniteSum
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDiagonalDoubleCosetsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDiagonalDoubleCosets
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactPartDiagonalMap
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsCompactConjugacyTransversal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeckeConvolutionSupport
@@ -184,7 +185,7 @@ theorem core [T2Space H] (K L : Subgroup H) (N : H) (f₁ f₂ : H → ℂ)
   have hL2o : IsOpen ((L.prod L : Subgroup (H × H)) : Set (H × H)) := by
     rw [Subgroup.coe_prod]; exact hLo.prod hLo
   have hfin := finite_pairs L hLo hprop h₁.1 h₂.1 (N := N)
-  obtain ⟨A1, A2⟩ := GlobalTheory.T.twistedOrbitalIntegral_eq_sum_smallerLevel (H × H) sw (K.prod K) hK2o hK2c (fun k hk => ⟨hk.2, hk.1⟩) (L.prod L)
+  obtain ⟨A1, A2⟩ := _root_.GlobalTheory.BCT.OrbLev.twOrb_eq_sum_smallerLevel (H × H) sw (K.prod K) hK2o hK2c (fun k hk => ⟨hk.2, hk.1⟩) (L.prod L)
     ⟨hL2o, Subgroup.prod_mono hLK hLK, fun k hk => ⟨hk.2, hk.1⟩⟩ (N, 1) f
     (hecke_tensor L f₁ f₂ h₁ h₂ f hf)
     (by
@@ -196,10 +197,10 @@ theorem core [T2Space H] (K L : Subgroup H) (N : H) (f₁ f₂ : H → ℂ)
       simpa only [hfF] using hfin)
   have hcvf : cv = fun y => hint K fun z => f₁ z * f₂ (z⁻¹ * y) := funext hcv
   have hconv := _root_.GlobalTheory.CompanionTheory.ConvHecke.conv_isHecke H K L f₁ f₂ hLK hidx h₁ h₂
-  obtain ⟨B1, B2⟩ := GlobalTheory.T.twistedOrbitalIntegral_eq_sum_smallerLevel H (MonoidHom.id H) K hKo hKc (fun k hk => hk) L
+  obtain ⟨B1, B2⟩ := _root_.GlobalTheory.BCT.OrbLev.twOrb_eq_sum_smallerLevel H (MonoidHom.id H) K hKo hKc (fun k hk => hk) L
     ⟨hLo, hLK, fun k hk => hk⟩ N cv (hcvf ▸ hconv.1) (fun x => ⟨hZK x, hZL x⟩)
     (finite_single L hLo hprop h₁.1 h₂.1 cv fun y hy => hconv.2 y (by rwa [← hcv]))
-  have hcount := GlobalTheory.T.finite_diagonal_double_cosets H (twCent (MonoidHom.id H) N) L (cptPart (twCent (MonoidHom.id H) N))
+  have hcount := _root_.GlobalTheory.CompanionTheory.OrbitCount.orbit_count H (twCent (MonoidHom.id H) N) L (cptPart (twCent (MonoidHom.id H) N))
     (FF N f₁ f₂) (fun x => ⟨hle x, hZL x⟩)
     (fun t ht c hc => by
       rw [hG.1 t ht c (hCZ hc), mul_inv_cancel_right]

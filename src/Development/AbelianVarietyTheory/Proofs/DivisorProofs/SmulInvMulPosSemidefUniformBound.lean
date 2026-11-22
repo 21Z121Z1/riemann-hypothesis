@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightedLeastSquaresBoundStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightedLeastSquaresBound
 
 open scoped ComplexOrder Matrix
 
@@ -15,7 +15,7 @@ theorem wls_fintype {ι : Type} [Fintype ι] [DecidableEq ι] {g : ℕ} (L : Mat
   let e : Fin (Fintype.card ι) ≃ ι := (Fintype.equivFin ι).symm
   have hr : (L.submatrix e (Equiv.refl (Fin g))).rank = g := by
     rw [Matrix.rank_submatrix]; exact hL
-  obtain ⟨K, hK⟩ := GlobalTheory.T.exists_norm_weighted_least_squares_le _ g _ hr
+  obtain ⟨K, hK⟩ := _root_.GlobalTheory.WeightedLS.weighted_least_squares_bound _ g _ hr
   refine ⟨K, fun D b hD => ?_⟩
   have h := hK (D ∘ e) (b ∘ e) (fun k => hD _)
   have h1 : (L.submatrix e (Equiv.refl (Fin g))).transpose * Matrix.diagonal (D ∘ e) *

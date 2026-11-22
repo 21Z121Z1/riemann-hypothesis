@@ -2,7 +2,9 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsOneComb
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ExistsDoubleDescentRanksOneThreeFive
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsDoubleStep
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsHeisenbergCombinationSplitPlaceDatumStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsHeisenbergCombinationSplitPlaceDatum
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCombAt
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.AllPositions
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExchangeToPositionOneUniformInLevel
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ToOneSucc
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LocalZetaIntegralOpenSubgroup
@@ -234,7 +236,7 @@ theorem exists_isCombAt {D : D7} {ψ : AddChar (AF D.host.F) ℂ} (hψ : IsStdCh
     (FS : GlobalTheory.LocMod.Frame k S.rank n') (FT : GlobalTheory.LocMod.Frame k T.rank n) {Ξ : Matrix n n' k → ℂ} (hΞ : Ξ ∈ SB (Matrix n n' k)) :
     ∃ d, p.IsCombAt ψ FS FT d Ξ := by
   obtain ⟨O, hO, z⟩ := PinModel.exists_isOne (k := k) (Y := n) (Y' := n')
-  obtain ⟨d, h1, h2⟩ := GlobalTheory.T.exists_heisenberg_combination_split_place_datum D k p n n' S T FS FT ψ hψ O ⟨Ξ, hΞ⟩ (by rintro rfl; exact zero_ne_one z)
+  obtain ⟨d, h1, h2⟩ := _root_.GlobalTheory.LocComb.exists_comb D k p n n' S T FS FT ψ hψ O ⟨Ξ, hΞ⟩ (by rintro rfl; exact zero_ne_one z)
   refine ⟨d, h1, fun Tm hT Φ₀ Φ h₀ h => ?_⟩
   rw [show Φ = ⟨Ξ, hΞ⟩ from Subtype.ext h, show Φ₀ = O from Subtype.ext (h₀.trans hO.symm)]
   exact h2 Tm hT

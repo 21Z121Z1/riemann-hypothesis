@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.SameIdIff
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsCrystalPairing
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResidueFieldMapSurjectiveOfMonoStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResidueFieldMapSurjectiveOfMono
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsStalkRetractionOfSmallLifting
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatOfLocalRetractionsModMaximalIdealPowStatement
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry MonoidalCategory CartesianMonoidalCategory MonObj
@@ -30,7 +30,7 @@ theorem isOpenImmersion_of_lift : ∀ {X Y : Scheme.{0}} (f : X ⟶ Y) [IsLocall
   haveI : IsLocallyNoetherian X := LocallyOfFiniteType.isLocallyNoetherian f
   have : Flat f := by
     refine (Flat.iff_flat_stalkMap f).2 fun x => ?_
-    have hres := GlobalTheory.T.residueFieldMap_surjective_of_mono' f x
+    have hres := _root_.GlobalTheory.residueFieldMap_surjective_of_mono f x
     refine GlobalTheory.T.flat_of_local_retractions_mod_maximalIdeal_pow (f.stalkMap x).hom (fun n => _root_.GlobalTheory.SmallLift.exists_retraction f hlift x hres n) ?_
     intro n g₁ g₂ h₁ h₂ h
     have := stalk_hom_ext_of_mono f x

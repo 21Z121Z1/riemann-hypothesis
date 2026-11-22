@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsRatioCover
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisationPreimageValueRules
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedOneFormEvaluationRulesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedOneFormEvaluationRules
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedOneFormEvaluationRestrictionEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsClosedAlgebraicFormFderivUniformisedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KaehlerOneFormEqZeroOfUniformisedValues
@@ -56,7 +56,7 @@ theorem exists_isPer_of_quasiPeriodic : ∀ (A : Over (Sp ℂ)) [GrpObj A] (g : 
     have hle : V.1 ≤ U.1 := leOfHom φ.unop
     have hz' : z ∈ pre u.ex U.1 := hmono _ _ hle hz
     have e1 := _root_.GlobalTheory.CechPer.uniformisedOneFormEvaluation_restriction_eq A g L u U V φ (ω U) z hz
-    have e2 := (GlobalTheory.T.uniformisedOneFormEvaluation_rules A g L u V.1 z hz).2.2 (f U V φ)
+    have e2 := (_root_.GlobalTheory.CechPer.evForm_rules A g L u V.1 z hz).2.2 (f U V φ)
     have heq : k V =ᶠ[nhds z] k U + val u.ex V.1 (f U V φ) := by
       filter_upwards [(hopen _).mem_nhds hz] with w hw
       have := hf U V φ w hw

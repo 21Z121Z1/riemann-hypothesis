@@ -6,8 +6,8 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NoLeak
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetKernelBoundByWeight
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Cint
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermDoubleCosetMovesFiniteTargetsSplit
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FrameMovesKernelCommonStabilizerSmulEqStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetKernelRowSumNearOneStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FrameMovesKernelCommonStabilizerSmulEq
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetKernelRowSumNearOne
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermDoubleCosetMoveKernelSymm
 
 open ValuativeRel Formalism.MainNotions.S.Loc GlobalTheory.HL MeasureTheory
@@ -22,10 +22,10 @@ theorem exists_symm_invariant_kernel : ∀ {F : Type} [Field F] [ValuativeRel F]
   subst hPe
   refine ⟨fun x y => S.kern β (j + 1) βJ d x y, ?_, ?_⟩
   · intro h hh x y hx _
-    exact GlobalTheory.T.frameMovesKernel_commonStabilizer_smul_eq L r k S d x hx.1 β (j + 1) βJ y h hh
+    exact _root_.GlobalTheory.HL.kern_smul_eq L r k S d x hx.1 β (j + 1) βJ y h hh
   · intro x hx
     have base := _root_.GlobalTheory.HL.moves_split_by_target L r k S j β βJ d x hx.1 hx.2
-    refine ⟨?_, ?_, GlobalTheory.T.hermitianDoubleCoset_kernel_row_sum_near_one L r k S hk j β βJ d x hx.1 hx.2,
+    refine ⟨?_, ?_, _root_.GlobalTheory.HL.kern_row_sum L r k S hk j β βJ d x hx.1 hx.2,
       _root_.GlobalTheory.HL.KernelWeight.kernel_weight L r k S hk j β βJ d x hx.1 hx.2⟩
     · exact base.2.2.1.subset fun y hy => hy.2
     · intro y hy

@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CompactCom
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsStandardUnitaryChartDoubledSpace
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsHeckeCharRestrictionEtaInv
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StandardUnitaryChartMemRationalIff
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemDoublingSiegelParabolicIffChartMemSiegelUnnStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemDoublingSiegelParabolicIffChartMemSiegelUnn
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CosetSumAlongMulEquivSubgroups
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchroedingerFunctionFockVectorPolynomialGaussian
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsPolynomialFockThetaVectorWeilOperatorCartan
@@ -61,7 +61,7 @@ theorem sw_doubled_of_std : GlobalTheory.Published.SiegelWeilUnitarySchrodinger 
     rw [_root_.GlobalTheory.StdUnn.thetaKO_eq_tsum_sch D ψ A B χB omh hWe mW 𝓨 hcov f hf.1 g h, theta, hact g]
   have hmean : ∀ g : GA D (dblSp A), GlobalTheory.ThetaMean.thetaMean omh ν f g = thetaInt omS ν Φ (κ (g * p)) := fun g => by
     rw [thetaInt, hth g]; rfl
-  have hP' := GlobalTheory.T.mem_doublingSiegelParabolic_iff_chart_mem_siegelUnn D A m0 hm0 κ hκ
+  have hP' := _root_.GlobalTheory.StdUnn.mem_siegel_iff_chart_mem_P D A m0 hm0 κ hκ
   have hG' := _root_.GlobalTheory.StdUnn.chart_mem_GF_iff D A m0 hm0 κ hκ
   have Heisenberg₂ := fun (z : ℂ) (hz : (A.rank : ℝ) / 2 < z.re) =>
     _root_.GlobalTheory.StdUnn.cosetSum_along_mulEquiv _ _ κ (siegel A) (GQ (dblSp A)) (P D A.rank) (GF D A.rank) hP' hG'

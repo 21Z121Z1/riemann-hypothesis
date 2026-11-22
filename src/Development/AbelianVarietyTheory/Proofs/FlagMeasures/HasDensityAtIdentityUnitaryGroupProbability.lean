@@ -5,7 +5,7 @@ import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
 import Formalism.LocalRingCardinality.DataCD
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MatGroupHaarUniqueFiniteCompactOpenPos
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IntegralConjInnerMulInnerOfIsEmptyEquiv
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniqueHaarDensityAtIdentityStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniqueHaarDensityAtIdentity
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HaarVolumeThinTubeUnitaryProductAsymptotic
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HaarUnitaryLastDiagonalEntryLaw
 
@@ -251,7 +251,7 @@ theorem hasDens_unitary : ∀ (j : ℕ) (μ : Measure (PI.MtM j)), PI.IsHaarOnM 
     · have : volUn (0 + 1) = 2 * Real.pi := by simp [volUn]
       rw [this]; exact hasDens_one μ hμ h
     obtain ⟨μ₀, hμ₀, h₀⟩ := exists_prob_haar (isMatGroup_UH_one k) (isCompact_UH_one k)
-    obtain ⟨c, hc, hd, -⟩ := GlobalTheory.T.exists_unique_haarDensity_at_identity _ _ μ (isMatGroup_UH_one (k + 1)) hμ
+    obtain ⟨c, hc, hd, -⟩ := _root_.GlobalTheory.MatHaarDensity.exists_hasDens _ _ μ (isMatGroup_UH_one (k + 1)) hμ
     have hD : (Matrix.diagonal fun j : Fin (k + 1) => if j = Fin.last k then ((1 : ℝ) : ℂ) else 1) = 1 := by
       simp
     have hv := volUn_pos k

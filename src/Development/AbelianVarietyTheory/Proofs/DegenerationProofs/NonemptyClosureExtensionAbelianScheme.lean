@@ -3,7 +3,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Cha
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUnitCharts
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ImmByOfSpans
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsNeZeroOfLe
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSectionExtendingTorsionPointsSupportStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSectionExtendingTorsionPointsSupport
 import Development.AbelianVarietyTheory.Definitions.Degenerations.BaseFacts
 import Development.AbelianVarietyTheory.Definitions.Degenerations.IsAffineSplitTorusLeft
 import Development.AbelianVarietyTheory.Definitions.Degenerations.CompanionTheory
@@ -153,7 +153,7 @@ theorem nonempty_ext : GlobalTheory.UT.LL → ∀ (o Ω : Type) [CommRing o] [Fi
   have : Nonempty U₀.toScheme := hB.ov.ne.to_subtype
   obtain ⟨t, ht⟩ := exists_lift M.pt M.gen U₀.ι
   obtain ⟨e, he, he'⟩ := exists_section_of_local M.pt M.gen (Q.G.ι ≫ Q.P.hom) (t ≫ ε ≫ a) fun z => by
-    obtain ⟨W, h, hz, hh, H⟩ := GlobalTheory.T.exists_section_extending_torsionPoints_support hL o Ω S ρ M U₀ EE hB Q z 0 (zero_mem _)
+    obtain ⟨W, h, hz, hh, H⟩ := _root_.GlobalTheory.ZH.TorsionSection.exists_section hL o Ω S ρ M U₀ EE hB Q z 0 (zero_mem _)
     refine ⟨W, h, hz, hh, fun x hx => ?_⟩
     rw [← cancel_mono Q.G.ι, Category.assoc, H Ω x (t ≫ ε) ?_ ?_]
     · simp only [Category.assoc, ha]

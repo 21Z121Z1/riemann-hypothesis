@@ -11,7 +11,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSquareZeroLif
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeFiltrationLiftEqComapSystemFiltrationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSchemePresentingSquareZeroSmoothLiftSystemStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodForSquareZeroLiftClassificationOfAbelianSche
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMorphismLiftSystemPresentsOfHomStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMorphismLiftSystemPresentsOfHom
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareZeroLiftSystemFiltrationInfEqAndFull
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemLiftSystemFiltrationSupIffHodgeFiltration
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSmoothLiftOfSquareZeroLiftSystemPresents
@@ -62,7 +62,7 @@ theorem abelianSchemeLifts_of_hodgeDeRham (hC : CrystallineSmoothLift) (hH : Abe
     have hK : T.K hI = S.K hI := ad3 _ _ (core1 T).1 (core1 S).1
       ((fil Y j k hY T Q).symm.trans (e.symm.trans (fil X i h hX S P)))
     have hT : T.Full hI := (_root_.GlobalTheory.LiftSys.K_inf_eq_and_full R R₀ I hI π hπ hk A₀.left A₀.hom hG.const S' T).2 hF'
-    obtain ⟨f, hf, hij⟩ := GlobalTheory.T.exists_morphism_liftSystemPresents_of_hom R R₀ I hI π hπ hk A₀.left A₀.hom T S X.left X.hom i Y.left Y.hom j h Q P
+    obtain ⟨f, hf, hij⟩ := _root_.GlobalTheory.LiftSys.Glue.presents_hom R R₀ I hI π hπ hk A₀.left A₀.hom T S X.left X.hom i Y.left Y.hom j h Q P
       (_root_.GlobalTheory.LiftSys.sysHom_of_K_eq R R₀ I hI π hπ hk A₀.left A₀.hom hG hR T S hT hK)
     haveI := hX
     have hn : IsNilpotent (RingHom.ker π) := ⟨2, by rw [hk]; exact hI⟩

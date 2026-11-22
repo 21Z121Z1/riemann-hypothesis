@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Ex
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HasFiniteLengthOfIsIrreducible
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.DepthZeroJacquetInjective
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IwahoriProjSurjective
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSubquotientJacquetModuleOfSupercuspidalSupStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSubquotientJacquetModuleOfSupercuspidalSup
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetProUnipotentRadicalFixedVectorsLift
 
 noncomputable section
@@ -64,7 +64,7 @@ theorem isCompact_leviKOne {k : Type} [Field k] [ValuativeRel k] [TopologicalSpa
 theorem depthZeroInduction : GlobalTheory.Published.GeometricLemma → GlobalTheory.Published.BernsteinZelevinskyFiniteness →
     GlobalTheory.Published.ZelevinskyPolynomialRing → GlobalTheory.Published.DepthZeroInduction := by
   intro hG hBZ hZ k _ _ _ _ _ x s hs hfix
-  obtain ⟨r, u, e, hu, hsq⟩ := GlobalTheory.T.exists_subquotient_jacquetModule_of_supercuspidalSupport hG hBZ hZ k x s hs
+  obtain ⟨r, u, e, hu, hsq⟩ := _root_.GlobalTheory.CuspQuot.exists_isSubquotient_jac_of_hasSupport hG hBZ hZ k x s hs
   have hxs : IsSmooth x.rep := x.2.rep.smooth
   have h1 : fixed (piTensor fun a => (u a).rep) (leviKOne k fun a => Fin (u a).1) ≠ ⊥ :=
     fixed_piTensor_ne_bot _ _ fun a => hfix _ (hu a)

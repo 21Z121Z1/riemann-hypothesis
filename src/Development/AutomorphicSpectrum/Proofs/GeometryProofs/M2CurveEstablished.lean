@@ -8,7 +8,8 @@ import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DegreeInvariantLinea
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.EigenFlagSlopeBound
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsSplitGaussChars
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.GapCondExample
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CurveLieEigenDegreeStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CurveLieEigenDegree
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ToFirst
 
 noncomputable section
 
@@ -63,7 +64,7 @@ theorem m2Curve_holds : CurveSemiAbelianConjecture := by
   intro E _ _ _ H X0 t hpow k K _ _ _ p _ _ hp C z Y hne hk hfib V _ _ _ M r hact T _ χ hsplit hχ
     j q w W L hj hq hW0 hL0 hWj hLq hgap
   letI := H.starRing
-  obtain ⟨d, D, e, hlie, her⟩ := GlobalTheory.T.curve_lie_eigen_degree E H (fun _ => rfl) X0 t hpow K p C z Y hne hfib V M r hact
+  obtain ⟨d, D, e, hlie, her⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Conj.TopH2.lieLat_conjData E H (fun _ => rfl) X0 t hpow K p C z Y hne hfib V M r hact
   let f : V →ₗ[K] (Fin d → K) := e
   have key := _root_.GlobalTheory.CompanionTheory.Ar.Crv.LmuDeg.lmuNum_nonneg_of_conjData K C p (𝓞 E) k (T ⊕ T) T χ d D Sum.inl Sum.inr j q w
     (fun τ i => (W τ i).map f) (fun τ i => (L τ i).map f) hp hsplit hk

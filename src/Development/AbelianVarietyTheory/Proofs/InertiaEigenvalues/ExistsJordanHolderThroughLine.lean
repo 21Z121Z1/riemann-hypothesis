@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSimplePi
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ModelObjAndAbc
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ModelPushOfSurjective
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SenMultiplicityAdditiveExactSequence
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ModelPreimageOfInjectiveFinDimRepModelHomStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ModelPreimageOfInjectiveFinDimRepModelHom
 
 open GlobalTheory.PhiGam GlobalTheory.AdmLoc GlobalTheory.Models
 open scoped LaurentSeries PowerSeries
@@ -73,8 +73,8 @@ theorem GlobalTheory.Models.ModTh.exists_jordanHolder_through_line : ∀ {k G : 
   intro k G _ _ l n _ _ _ R F r Dt M B A₁ χ j p N hN hj hji hp hps
   obtain ⟨K, f, hf, hfi, hfe⟩ := exists_ker A₁ (chr χ) p hp
   obtain ⟨Q, q, hq, hqs, hqe⟩ := exists_coker A₁ B j hj
-  have hA := GlobalTheory.T.model_preimage_of_injective_finDimRepModelHom F M A₁ B j N hj hji hN
-  have hK := GlobalTheory.T.model_preimage_of_injective_finDimRepModelHom F M K A₁ f _ hf hfi hA
+  have hA := _root_.GlobalTheory.Models.SubModel.model_pre F M A₁ B j N hj hji hN
+  have hK := _root_.GlobalTheory.Models.SubModel.model_pre F M K A₁ f _ hf hfi hA
   have hL := GlobalTheory.Models.ModTh.model_push_of_surjective F M A₁ (chr χ) p _ hp hps hA
   have hQ := GlobalTheory.Models.ModTh.model_push_of_surjective F M B Q q _ hq hqs hN
   obtain ⟨s, C, L, c1, c2, c3, c4⟩ := _root_.GlobalTheory.Models.ModTh.exists_simple_pieces F M K _ hK

@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsSmoothVec
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AnalyticVectorExponentialSeriesStatement
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AnalyticVectorExponentialSeries
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DerivedActionOfSmoothVector
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DerivedActionAdditiveStatement
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DerivedActionAdditive
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LieAlgebraOfLinearGroupClosed
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DifferentiableAtOrbit
 
@@ -40,7 +40,7 @@ theorem iterate_real_smul (hG : IsLinRed G) (hrep : Formalism.QuantumDeterminant
   | succ m ih =>
     have hsm := iterate_smooth hG hrep hs hX m
     rw [Function.iterate_succ_apply', ih, Function.iterate_succ_apply', GlobalTheory.GKLie.dRep_smul,
-      (GlobalTheory.T.derived_action_additive hG hrep hsm hsm hX hX).2.2, ← Complex.coe_smul, smul_smul, pow_succ']
+      (_root_.GlobalTheory.CompanionTheory.Hypotheses₂.HCA.SmoothLin.dRep_linear hG hrep hsm hsm hX hX).2.2, ← Complex.coe_smul, smul_smul, pow_succ']
 
 theorem analytic_coeff : ∀ {n : ℕ} {G : Set (Matrix (Fin n) (Fin n) ℂ)} {H : Type} [NormedAddCommGroup H]
     [InnerProductSpace ℂ H] [CompleteSpace H] {π : Matrix (Fin n) (Fin n) ℂ → (H →L[ℂ] H)} (hG : IsLinRed G)
@@ -48,7 +48,7 @@ theorem analytic_coeff : ∀ {n : ℕ} {G : Set (Matrix (Fin n) (Fin n) ℂ)} {H
     {X : Matrix (Fin n) (Fin n) ℂ} (hX : X ∈ HCSS.lieOf G) (w : H),
     AnalyticOnNhd ℝ (fun t : ℝ => ⟪w, π (NormedSpace.exp (t • X)) v⟫_ℂ) Set.univ := by
   intro n G H _ _ _ π hG hU v hs hw X hX w t₀ _
-  obtain ⟨r, hr, hsum⟩ := GlobalTheory.T.analytic_vector_exponential_series hG hU.1 hU.2.2 hs hw
+  obtain ⟨r, hr, hsum⟩ := _root_.GlobalTheory.CompanionTheory.Hypotheses₂.HCA.hasSum_orbit_of_wordBound hG hU.1 hU.2.2 hs hw
   have hrep := hU.1
   let L : H →L[ℂ] ℂ := (innerSL ℂ w).comp (π (NormedSpace.exp (t₀ • X)))
   let a : ℕ → ℂ := fun m => ((m.factorial : ℂ)⁻¹) * L ((dRep π X)^[m] v)

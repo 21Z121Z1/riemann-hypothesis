@@ -6,7 +6,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OpenFns
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnipotentRadicalDecompositionNormal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OpenCellUnipotentUniquenessClosed
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OpenCellFunctionCompactSupportUnipotent
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothVectorCompactUnipotentFixerStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothVectorCompactUnipotentFixer
 
 open GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.LocGL GlobalTheory.BZMir.Leib GlobalTheory.CompanionTheory.Rodier
 open scoped TensorProduct
@@ -39,7 +39,7 @@ theorem openJ : ∀ (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] [
   have hLB : unipL k d hd ≤ unipB k (Fin N) := inf_le_left
   have surj : Function.Surjective J := by
     intro v
-    obtain ⟨L₀, hL₀U, hc, hO, hθ, f, hf, h1, h2⟩ := GlobalTheory.T.exists_bump_section_on_compact_unipotent k ψ hψ h N d hd ρ hρ v
+    obtain ⟨L₀, hL₀U, hc, hO, hθ, f, hf, h1, h2⟩ := _root_.GlobalTheory.CompanionTheory.Rodier.OpenBump.exists_openFns_bump k ψ hψ h N d hd ρ hρ v
     obtain ⟨hpos, hJ⟩ := hV L₀ hL₀U hc hO
     have e := hJ ⟨f, hf⟩ v (fun u hb hu => by
       show f.1.1 (pm k (wOpen d hd) * u) = _

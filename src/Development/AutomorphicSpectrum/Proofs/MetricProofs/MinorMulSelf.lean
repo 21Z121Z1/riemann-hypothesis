@@ -8,7 +8,7 @@ import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockMapFrameRestrict
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FrameDataLocalResolutionOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PMatStepColsEntry
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MinorIJLowerUniSwap
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsLowerUniBlockDiagFactorizationStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsLowerUniBlockDiagFactorization
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentArithmeticHeight
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentChartSeventh
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsValueAtOfTorus
@@ -159,7 +159,7 @@ theorem main : ∀ (K : Type) [Fintype K] (ι : K → Type) [∀ k, Fintype (ι 
     rw [(M.blk_none p).2 hn] at hk
     exact absurd hk (by simp)
   have hjN := M.j_le
-  have hdec := fun τ => GlobalTheory.T.exists_lowerUni_blockDiag_factorization N j (fun i => keep (τ, i)) ((h τ)⁻¹ * H τ) hjN
+  have hdec := fun τ => _root_.GlobalTheory.CompanionTheory.Ar.PB.BigCellLU.exists_lu N j (fun i => keep (τ, i)) ((h τ)⁻¹ * H τ) hjN
     (((hh τ).1.inv (hh τ).2.isUnit).mul (hH τ).1)
     (by
       rw [Matrix.det_mul]

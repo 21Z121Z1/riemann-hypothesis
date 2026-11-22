@@ -8,10 +8,10 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsPrincipalIdealRing
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OrthonormalBasisAndOneOrbit
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsEquivOfRetractions
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DualInterSelfDualHermitianLatticeSubspace
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIsometryNearIdentityCloseTuplesStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIsometryNearIdentityCloseTuples
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CongruenceSubgroupLatticeStabilizer
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MatrixCongruentOneModUniformizerPowGroupAndOrbitStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ThickOrbitSelfDualUnramifiedLatticeStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ThickOrbitSelfDualUnramifiedLattice
 
 open ValuativeRel Formalism.MainNotions.S.Loc GlobalTheory.HL MeasureTheory
 open scoped Pointwise ENNReal Classical
@@ -381,7 +381,7 @@ theorem trace_partition : ∀ {F : Type} [Field F] [ValuativeRel F] [Topological
       IsPrimT L Hm Λs (rmul (fun a => g⁻¹ (x a)) A⁻¹)) := by
     intro g hg
     rw [← span_rmul_inv x hA, trace_iff hH (isSD_smul hg hΛs) hxp, isPrimT_smul_iff hg, map_rmul]
-  obtain ⟨N, hN⟩ := GlobalTheory.T.exists_isometry_near_identity_close_tuples L ϖ hϖ Hm hH Λs hΛs m _ hxp 1
+  obtain ⟨N, hN⟩ := _root_.GlobalTheory.HL.CloseTuples.exists_isometry_close L ϖ hϖ Hm hH Λs hΛs m _ hxp 1
   obtain ⟨β, hβ, f, hf⟩ := exists_finite_classes L hϖ hΛs.1.1 N
   obtain ⟨s, hs, hs'⟩ := exists_reps
     {g | g ∈ isomG L Hm ∧ IsPrimT L Hm Λs (rmul (fun a => g⁻¹ (x a)) A⁻¹)} (Rel K x) (rel_equiv K x)
@@ -401,7 +401,7 @@ theorem trace_partition : ∀ {F : Type} [Field F] [ValuativeRel F] [Topological
     exact ⟨g, ⟨hg, (rel_iff Λs x (hs g hg).1 hg0).2 hr⟩,
       fun g' hg' => hu g' ⟨hg'.1, (rel_iff Λs x (hs g' hg'.1).1 hg0).1 hg'.2⟩⟩
   obtain ⟨e, he⟩ := exists_pow_smul_int L hϖ A
-  obtain ⟨i1, hi1, h1⟩ := GlobalTheory.T.thick_orbit_selfDual_unramified_lattice L ϖ hϖ Hm hH Λs hΛs Λs hΛs m _ hx 1 e
+  obtain ⟨i1, hi1, h1⟩ := _root_.GlobalTheory.ThickOrbit.main L ϖ hϖ Hm hH Λs hΛs Λs hΛs m _ hx 1 e
   obtain ⟨i2, h2⟩ := exists_conj_int L hϖ hA
   refine ⟨max i1 i2, fun i hi => ?_⟩
   have hi1' : i1 ≤ i := le_of_max_le_left hi

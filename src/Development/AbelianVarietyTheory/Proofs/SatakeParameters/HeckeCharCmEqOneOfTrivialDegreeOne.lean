@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.DegOneIffSurjective
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ContinuousIdeleCharLocalFactorizationStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ContinuousIdeleCharLocalFactorization
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeCharInfTrivialOfTrivAtDegOne
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeCharTrivialAtPlaceOfDegOneCofiniteTrivial
 
@@ -16,7 +16,7 @@ theorem heckeChar_eq_one_of_degOne : ∀ (F E : Type) [Field F] [NumberField F] 
   have hinf := _root_.GlobalTheory.HeckeInfTriv.inf_trivial_of_trivAt_degOne F E χ hχ hdeg
   have hfin := _root_.GlobalTheory.HeckeFin.trivAt_of_degOne_cofinite F E χ hχ hdeg hinf
   ext1 x
-  have hfact := (GlobalTheory.T.continuous_ideleChar_local_factorization E χ hχ.1).2.2 x ∅ (fun v _ => hfin v _)
+  have hfact := (_root_.GlobalTheory.HeckeSplit.continuous_char_factor E χ hχ.1).2.2 x ∅ (fun v _ => hfin v _)
   rw [hfact, hinf]
   simp
 

@@ -12,7 +12,7 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DcOpCommOfCommut
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DivisorsAtInvDualLabelAndStabilizerMul
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalLabelOperatorsOnHyperspecialFixedVector
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalHeckeCombinationsCommuteFixedVectors
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalHeckeConjPlaceEqDualLabelStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalHeckeConjPlaceEqDualLabel
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix
 open Formalism.L2.Theta Formalism.L2.DIV Formalism.L2.Indef Formalism.DivisionValues Polynomial
@@ -239,8 +239,8 @@ theorem opOf_comm {V : HSp D} {M : Type} [AddCommGroup M] [Module ℂ M] (π : G
       exact (commute_of_suppF V h (supp_rep d hP γ hγ) (supp_rep d' hP' γ' hγ')).map π
     exact LinearMap.congr_fun this.eq u
   · rw [h]; exact _root_.GlobalTheory.SphLabelComm.label_ops_comm V P c c' M π u hu
-  · rw [eq_conj_of_isConjPl h, (GlobalTheory.T.sphericalHecke_conjPlace_eq_dualLabel V P).2.2 c' M π u hu,
-      (GlobalTheory.T.sphericalHecke_conjPlace_eq_dualLabel V P).2.2 c' M π _ ((_root_.GlobalTheory.SphLabelOps.label_operators V P).2.1 c M π u hu)]
+  · rw [eq_conj_of_isConjPl h, (_root_.GlobalTheory.SphConj.sph_conj V P).2.2 c' M π u hu,
+      (_root_.GlobalTheory.SphConj.sph_conj V P).2.2 c' M π _ ((_root_.GlobalTheory.SphLabelOps.label_operators V P).2.1 c M π u hu)]
     exact _root_.GlobalTheory.SphLabelComm.label_ops_comm V P c _ M π u hu
 
 theorem pairwise_dualLab {d : List ℤ} (h : d.Pairwise fun a b => b ≤ a) : (dualLab d).Pairwise fun a b => b ≤ a := by

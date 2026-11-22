@@ -24,7 +24,7 @@ section Local
 variable {S T : Type} [CommRing S] [Algebra c.F S] [CommRing T] [Algebra c.F T]
 
 theorem exists_frMap (φ : S →ₐ[c.F] T) (y : FrPt Xo c S) : ∃ z, FrMap φ y z :=
-  GlobalTheory.T.exists_framedPoint_baseChange_algebraMap GlobalTheory.lawsFieldsSeparately.2.1 E H Dw l Xo c S T φ y
+  _root_.GlobalTheory.Frames.FramedBaseChange.exists_frMap GlobalTheory.lawsFieldsSeparately.2.1 E H Dw l Xo c S T φ y
 
 theorem frMap_unique {φ : S →ₐ[c.F] T} {y : FrPt Xo c S} {z z' : FrPt Xo c T} (h : FrMap φ y z) (h' : FrMap φ y z') :
     z = z' := (frMap_unique_refl_iff E H Dw l Xo c S T φ y).1 z z' h h'

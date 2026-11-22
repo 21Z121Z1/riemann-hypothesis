@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.FirstCohom
 import Development.AbelianVarietyTheory.Definitions.Degenerations.OfDerivationFnOn
 import Development.AbelianVarietyTheory.Definitions.Degenerations.PlOrdSomeOfAssociated
 import Development.AbelianVarietyTheory.Statements.SemistableTorsion.SemistableFin
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ModelMapGenericallyOpenImmersionCalculusStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ModelMapGenericallyOpenImmersionCalculus
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsGrpObjOfStrictBirationalLaw
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsWeakNeronModelBirationalGroupLaw
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsStrictModelOfBirational
@@ -24,7 +24,7 @@ theorem exists_neutral_group_model : ∀ (R K : Type) [CommRing R] [IsDomain R] 
   obtain ⟨N, hN, c, hc, hT⟩ := _root_.GlobalTheory.SS.NeutralModel.exists_birLaw R K hS A hA n M hI hW
   obtain ⟨N', hN', hle⟩ := _root_.GlobalTheory.SS.exists_strict_le R K hS A hA N hN
   obtain ⟨G, inst, hG, he, hs⟩ := _root_.GlobalTheory.SS.exists_grpObj_of_strict R K hS A hA N' hN'
-  obtain ⟨b1, b2, b3, -, -⟩ := GlobalTheory.T.modelMapGenericallyOpenImmersion_calculus R K hS
+  obtain ⟨b1, b2, b3, -, -⟩ := _root_.GlobalTheory.SS.GI.genIso_calculus R K hS
   refine ⟨G, inst, hG, he, c, hc, fun a => hs (a ^ c) ?_⟩
   have e1 : GenIso N' N (𝟙 A) := b1 A N' N hN'.1.1 hle
   have e2 : GenIso N N' (𝟙 A) := (b3 A A N' N (Iso.refl A)).1 e1

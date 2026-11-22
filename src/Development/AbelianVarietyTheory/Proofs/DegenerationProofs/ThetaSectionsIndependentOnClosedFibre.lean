@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.KbIsAlgClosedA
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.HomGenericPoint
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsReducedAlgebraOfSmoothOfIsNoetherianRing
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsGeometricTestMapClassicalPoint
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TestModelMapsIntoOpenPartStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TestModelMapsIntoOpenPart
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry
 open scoped CategoryTheory.Obj
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -65,7 +65,7 @@ theorem indep_on_closed_fibre : GlobalTheory.UT.LL → ∀ (o Ω : Type) [CommRi
   obtain ⟨hT, hC⟩ := _root_.GlobalTheory.ZH.exists_geoTest_tMap_and_centre L o Ω S ρ M U₀ EE hB Q hBig hGeo
   obtain ⟨p, hp, y, hy, hyU⟩ := hC z hcl
   obtain ⟨y₀, t, c, ⟨tm⟩⟩ := hT p y hyU
-  have hG := GlobalTheory.T.testModel_maps_into_openPart L o Ω S ρ M U₀ EE hB Q p y y₀ t c tm hBig
+  have hG := _root_.GlobalTheory.ZH.TestInOpen.top_le_preimage_G L o Ω S ρ M U₀ EE hB Q p y y₀ t c tm hBig
   haveI : IsAlgClosed (kb p) := (GlobalTheory.ZJ.kb_isAlgClosed_and_conj p).1
   have hx : (rPt p ≫ y) (IsLocalRing.closedPoint (kb p)) = z := by
     exact (Scheme.Hom.comp_apply _ _ _).trans

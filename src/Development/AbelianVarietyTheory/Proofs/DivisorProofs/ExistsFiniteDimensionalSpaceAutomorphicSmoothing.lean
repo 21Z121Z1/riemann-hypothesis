@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfMemSpanK
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemZalgCommuteCompactRep
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentreEnvelopingAlgebraCommuteRealLieSmoothingStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieDerivativeRealLieSmoothingEqDensityStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentreEnvelopingAlgebraCommuteRealLieSmoothing
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieDerivativeRealLieSmoothingEqDensity
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealLieSmoothingMemSlowlyIncreasing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalCentreAnnihilatorCompatibleMaps
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealLieSmoothingMemSmoothAdelicFunctionsStatement
@@ -148,7 +148,7 @@ theorem smoothMap_mem (hα : IsTest (invSet E a) α) (hK : KInv α) (hφ : IsAut
         obtain ⟨β, hβ, e⟩ := ih
         refine ⟨dens X β, isTest_dens X hβ, funext fun g => ?_⟩
         rw [List.map_cons, List.prod_cons, Module.End.mul_apply, lie_apply, e]
-        exact GlobalTheory.T.lieDerivative_realLieSmoothing_eq_density E a ν β hβ w.1.1 w.1.2 X g
+        exact _root_.GlobalTheory.AutGrowth.lieD_smoothing_eq_dens E a ν β hβ w.1.1 w.1.2 X g
     rw [e]
     exact _root_.GlobalTheory.AutGrowth.smoothing_mem_growth E a ν β hβ w.1.1 (growth_mem hφ w.2)
   · show smoothing ν α w.1.1 (ratGL E a γ * g) = smoothing ν α w.1.1 g
@@ -161,7 +161,7 @@ theorem smoothMap_mem (hα : IsTest (invSet E a) α) (hK : KInv α) (hφ : IsAut
     rw [← chart_rt_fin, hw]
   · show (z ⟨smoothing ν α w.1.1, GlobalTheory.T.realLieSmoothing_mem_smoothAdelicFunctions E a ν α hα w.1.1 w.1.2⟩) = 0
     apply Subtype.ext
-    rw [GlobalTheory.T.centreEnvelopingAlgebra_commute_realLieSmoothing E a ν α hα w.1 _ z hz, killed_mem hz h0 w.2]
+    rw [_root_.GlobalTheory.CentreSmooth.zalg_smoothing E a ν α hα w.1 _ z hz, killed_mem hz h0 w.2]
     funext g
     simp [smoothing, chart]
 

@@ -15,7 +15,7 @@ import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.RelabelEmbedding
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.HasseNormTheoremQuadraticExtension
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CompletedLatticeEqAdelicCompletionAndGram
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FinitePartPreservesFormDetNormOne
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.RationalPointsAdelicUnitaryEqUnitaryStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.RationalPointsAdelicUnitaryEqUnitary
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicElementLatticeFullAndCompletion
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicUnitaryLatticeSelfDualTraceForm
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicUnitaryLatticeRationalTranslateInvariance
@@ -172,7 +172,7 @@ theorem GlobalTheory.Member.exists_mark : ∀ (D : D7) (H : ReciprocityTheory.Ch
         simp [Algebra.smul_def]; ring
       rw [this, map_smul, ht]
       simp)
-  obtain ⟨hQ, -, hex, -, hfin⟩ := GlobalTheory.T.rational_points_adelicUnitary_eq_unitary D V
+  obtain ⟨hQ, -, hex, -, hfin⟩ := _root_.GlobalTheory.Member.RatElt.rational_elements D V
   obtain ⟨γ, hγ⟩ := hex γ' hu
   obtain ⟨hmv, -⟩ := (_root_.GlobalTheory.Member.latG_move D V).1 γ γ' h hγ
   obtain ⟨-, -, -, hhat1, hhat2, -⟩ := _root_.GlobalTheory.Member.latG_lattice_and_completion D V (γ * h)

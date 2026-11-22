@@ -13,7 +13,7 @@ import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsNormalised
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.NormalisedFramedPointTriangularFrameWeightRule
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.NormalisedFramedPointArithmeticGroupInvariantSig
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.NormalisedPointsSatisfySingleFrame
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.DifferentiableOnReadingsNormalisedThetaPointsStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.DifferentiableOnReadingsNormalisedThetaPoints
 
 open NumberField ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.FD Formalism.L2.Pj Formalism.L2.PjFree
 open AlgebraicGeometry CategoryTheory Limits ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.Frames GlobalTheory.FrameUnif
@@ -30,6 +30,6 @@ theorem exists_framesOK : Out.SecBaseChangeSt → Out.SecTwistSt → ∀ (E : Ty
     fun k => _root_.GlobalTheory.NormFrame.frameOK_of_isNormUn hT E H Dw l Xo c σ g e F r M k (T k) (un k) hσ hM hξ (hun k),
     fun k => _root_.GlobalTheory.NormUnBor.normUn_bor hT E H Dw l Xo c σ g e F r M un k (T k) hσ hM hξ (hun k),
     fun k => _root_.GlobalTheory.FrameUnif.normUn_gamma hT E H Dw l Xo c σ g e F r M un k (T k) hσ hM hξ (hun k),
-    fun a n han f hf k => GlobalTheory.T.differentiableOn_readings_normalised_theta_points hB hT E H Dw l Xo c σ g e F r M un k (T k) (hun k) a n han f hf⟩
+    fun a n han f hf k => _root_.GlobalTheory.FrameUnif.NormUnHol.differentiableOn_rdU hB hT E H Dw l Xo c σ g e F r M un k (T k) (hun k) a n han f hf⟩
 
 end GlobalTheory.FrameUnif

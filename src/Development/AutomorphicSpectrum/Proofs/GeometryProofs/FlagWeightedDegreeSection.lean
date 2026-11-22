@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsPullWedge
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptInteriorFlag
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PairSumFrameAtPointStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PairSumFrameAtPoint
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.InteriorPointPolarised
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ContDiffUncentre
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GramMatrixTwoFrames
@@ -268,7 +268,7 @@ theorem exists_gram [NumberField c.F] {Y : Model Xo c (algebraMap (𝓞 c.F) c.F
       show (x : 𝔐.Li) ∈ 𝔐.V s ⟨centre z, hgen⟩ ⊔ 𝔐.V s ⟨centre z, hgen⟩
       rw [sup_idem, hb.2, ← hspan]
       exact ⟨x, hx, rfl⟩
-  obtain ⟨Γ, h1, h2⟩ := GlobalTheory.T.pair_sum_frame_at_point E H D l Xo c Y S Ω K J y 𝔐 s s _ bb z hgen hpol hfr
+  obtain ⟨Γ, h1, h2⟩ := _root_.GlobalTheory.CompanionTheory.Ar.HodgeMetric.GramEx.exists_gramAt_posDef E H D l Xo c Y S Ω K J y 𝔐 s s _ bb z hgen hpol hfr
   exact ⟨Γ, h1, h2⟩
 
 theorem exists_flag_frame [NumberField c.F] {Y : Model Xo c (algebraMap (𝓞 c.F) c.F)} {𝔐 : HodgeCpt Y S y} (Fl : 𝔐.Flag)

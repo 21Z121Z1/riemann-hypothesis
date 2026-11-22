@@ -2,7 +2,7 @@ import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.Archim
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeckeIntegralFiniteSum
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ThetaNormCommutation.LocalComparisonSplitting.EulerFactorLevels.EulerFinOf
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwahoriHeckeSumAdditiveStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwahoriHeckeSumAdditive
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteSupportConvolutionTriple
 import Development.AbelianVarietyTheory.Definitions.Foundations.SmoothPartStable
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsUnitarisableOfCharIff
@@ -11,8 +11,11 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinsumCosetSmul
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeckeSumInvariant
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwahoriDoubleCosetFinite
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdmissibleParabolicInductionStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDimensionalFixedTensorStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdmissibleParabolicInduction
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BaseChangeDefiniteUnitary
+import Development.WeilBound.CoreStatements.AutomorphicKernels.BernsteinUnitaryProducts.IrreducibleAdmissibleReps.AdmissibleParabolicInduction.IrrAdm
+import Development.WeilBound.CoreStatements.AutomorphicKernels.BernsteinUnitaryProducts.IrreducibleAdmissibleReps.AdmissibleParabolicInduction.AdmProd
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDimensionalFixedTensor
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsJointEigenvectorNonzero
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MultiplicativeCharacterOnCone
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProdRelIndexNeZero
@@ -198,9 +201,9 @@ theorem core (w : Pl E) (ϖ : (w.adicCompletion E)ˣ) (hϖ : ordL (ϖ : w.adicCo
       (dcos b w (tdiag ϖ (y + y')))
       (fun f hf => by rcases hf with rfl | rfl | rfl <;> exact ⟨(hIa _).1, dcos_inv a w _⟩)
       (fun f hf => by rcases hf with rfl | rfl | rfl <;> exact ⟨(hIb _).1, dcos_inv b w _⟩)
-      (fun v hv => GlobalTheory.T.iwahori_hecke_sum_additive E w a ϖ hϖ x x' (gap_anti hx) (gap_anti hx') _
+      (fun v hv => _root_.GlobalTheory.CompanionTheory.IwHeckeMul.main E w a ϖ hϖ x x' (gap_anti hx) (gap_anti hx') _
         (ρ.comp (MonoidHom.inl _ _)) v hv)
-      (fun v hv => GlobalTheory.T.iwahori_hecke_sum_additive E w b ϖ hϖ y y' (gap_anti hy) (gap_anti hy') _
+      (fun v hv => _root_.GlobalTheory.CompanionTheory.IwHeckeMul.main E w b ϖ hϖ y y' (gap_anti hy) (gap_anti hy') _
         (ρ.comp (MonoidHom.inr _ _)) v hv)
       v ((mem_fixed_iff' _ _ _).1 v.2)
   have hcomm : ∀ i i' : {p : (Fin a → ℤ) × (Fin b → ℤ) // Gap p.1 ∧ Gap p.2},
@@ -337,9 +340,9 @@ theorem rReadT : RReadT := by
   have hv0 : L j' G ∈ GlobalTheory.PRep.fixed (pairAt Pa Pb w) (I2 a b w) :=
     (mem_fixed_iff' _ _ _).2 fun k hk => (hLeq j' k G hGS hsmG).symm.trans (congrArg (L j') (hGI' k hk))
   haveI hfd : FiniteDimensional ℂ (GlobalTheory.PRep.fixed (pairAt Pa Pb w) (I2 a b w)) :=
-    GlobalTheory.T.finiteDimensional_fixed_tensor _ _ _ _ (lp Pa w) (lp Pb w) (iwGL a w) (iwGL b w)
-      ((GlobalTheory.T.admissible_parabolic_induction (w.adicCompletion E) _ Pa.h (fun i => Pa.σ i w)).2 _ (hIa 1).2.1 (hIa 1).2.2.1)
-      ((GlobalTheory.T.admissible_parabolic_induction (w.adicCompletion E) _ Pb.h (fun i => Pb.σ i w)).2 _ (hIb 1).2.1 (hIb 1).2.2.1)
+    _root_.GlobalTheory.CompanionTheory.ExtTensorFixed.finiteDimensional_fixed_extTensor _ _ _ _ (lp Pa w) (lp Pb w) (iwGL a w) (iwGL b w)
+      ((_root_.GlobalTheory.CompanionTheory.ProdAdm.isAdmissible_multiProd_smIrr (w.adicCompletion E) _ Pa.h (fun i => Pa.σ i w)).2 _ (hIa 1).2.1 (hIa 1).2.2.1)
+      ((_root_.GlobalTheory.CompanionTheory.ProdAdm.isAdmissible_multiProd_smIrr (w.adicCompletion E) _ Pb.h (fun i => Pb.σ i w)).2 _ (hIb 1).2.1 (hIb 1).2.2.1)
   exact core w ϖ hϖ (pairAt Pa Pb w) J c x y hgap m hm κ u hu (L j' G) hv0 fun h => hj' (hLm.trans h)
 
 end PositivityTheory.Rg.BcB.F.Tail

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.DifferentialFormsCech.CoverRefinementHodge.BridgeLApply
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.GrCechFin
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CechFormsAddSmulStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CechFormsAddSmul
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormsToCechBijective
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormsToCechSmulStatement
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.DifferentialFormsCech.CechDifferentialPullback.FormCochPullPf
@@ -130,7 +130,7 @@ theorem hdg_iso_of_ing (hG : type_of% (@CrystallineSemistableComparison.Om.Glob.
 
 theorem formToCO_bijective_i : type_of% (@CrystallineSemistableComparison.Om.Cech.formToCO_bijective _) := _root_.GlobalTheory.CompanionTheory.OmCech.formToCO_bijective
 theorem formToCO_smul_i : type_of% (@CrystallineSemistableComparison.Om.Cech.formToCO_smul _) := GlobalTheory.T.forms_to_cech_smul
-theorem cechOmAdd_smul_i : type_of% (@CrystallineSemistableComparison.Om.Cech.cechOmAdd_smul _) := GlobalTheory.T.cech_forms_add_smul
+theorem cechOmAdd_smul_i : type_of% (@CrystallineSemistableComparison.Om.Cech.cechOmAdd_smul _) := _root_.GlobalTheory.CompanionTheory.OmCech.cechOmAdd_smul
 theorem formCoch_pull_i : type_of% (@CrystallineSemistableComparison.Om.Cech.formCoch_pull _) := CrystallineSemistableComparison.Om.Cech.formCoch_pull_pf
 
 end CrystallineSemistableComparison.Om.Nt2F

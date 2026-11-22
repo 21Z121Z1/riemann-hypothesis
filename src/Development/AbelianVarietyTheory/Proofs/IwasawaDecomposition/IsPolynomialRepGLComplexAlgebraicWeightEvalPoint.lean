@@ -1,6 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConjugateNeSelf
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AlgebraicWeightPolyMatrixMultiplicativeStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AlgebraicWeightPolyMatrixMultiplicative
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EvalUnitaryCoordinateZeroOfRationalPoints
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SpanRationalPointOrbitAlgebraicWeight
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPolyRep
 
@@ -51,7 +52,7 @@ theorem isPolyRep_evPt (L : Type) [Field L] [NumberField L] [IsCMField L] (n : �
     [Fintype ι] [DecidableEq ι] (b : Module.Basis ι ℂ a.W)
     (P : ι → ι → MvPolynomial ((L →+* ℂ) × Fin n × Fin n) ℂ) (h : Agrees a b P) (τ : L →+* ℂ) :
     IsPolyRep (fun B => evM P (evPt τ B)) := by
-  obtain ⟨h1, hm⟩ := GlobalTheory.T.algebraicWeight_polyMatrix_multiplicative L n a ι b P h
+  obtain ⟨h1, hm⟩ := _root_.GlobalTheory.AlgWtMul.evM_mul L n a ι b P h
   refine ⟨?_, ?_, ?_⟩
   · show evM P (evPt τ 1) = 1
     rw [evPt_eq_upt, tauPt_one]

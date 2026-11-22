@@ -10,15 +10,15 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RowD
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FundamentalDomainUnfoldingTwoSums
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinTermsUniformlySummable
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeisenbergCentreRationalForm
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NondegenerateCentreCharacterCellStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NondegenerateCentreCharacterCell
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeisenbergCosetsParamRational
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SiegelParabolicQuotientIffRows
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryCellBlockNormalForm
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryBlockInvertibleCriterionStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicFactorizationRowsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryBlockInvertibleCriterion
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicFactorizationRows
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RowsProportionalOfTransform
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RowsOfWeylHeisenbergProductStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeylHeisenbergLeviRationalStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RowsOfWeylHeisenbergProduct
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeylHeisenbergLeviRational
 noncomputable section
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.L2.Theta Formalism.L2.Pj Formalism.IndefR.Datum MeasureTheory
@@ -123,7 +123,7 @@ theorem unfold_on {hn : ρ + p = n} (M : Maps D hn) (m : Meas D ρ p) {ψ : AddC
       exact hub _ _ ⟨(γ + b, g), ⟨hb, hg⟩, rfl⟩)
     e he hfib (fun l l' u => hτe l l' u (hrat l').1) hF0
     (fun y hy => by
-      obtain ⟨ν, hν1, hν⟩ := GlobalTheory.T.nondegenerate_centre_character_cell hn hψ b₀ hb₀ y hy
+      obtain ⟨ν, hν1, hν⟩ := _root_.GlobalTheory.CompanionTheory.ZUnf.SmallZ.small hn hψ b₀ hb₀ y hy
       refine ⟨ν, ?_, fun q hq b => ?_⟩
       · intro h
         apply hν1

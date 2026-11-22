@@ -8,12 +8,12 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RankinSelbergSi
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousOfTrivialInteger
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RankinSelbergFunctionalEquation
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CongruenceSubgroupCosetDecompositionStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeckeCosetRepresentativesStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeckeCosetRepresentatives
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedRankinSelbergLocalFactor
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedWhittakerNewformStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedWhittakerNewform
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GlobalRankinSelbergBasicFacts
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FundamentalDomainDescription
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FundamentalDomainInvarianceOfDescriptionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FundamentalDomainInvarianceOfDescription
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FundamentalDomainIntegralCentralInvariance
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CentralCharacterIntegralProperties
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnfoldingBottomRowOrbits
@@ -34,7 +34,7 @@ import GroundTheory.GlobalFields.TateThesis.FiniteOrderParams
 import GroundTheory.GlobalFields.TateThesis.HeckeTheorem
 import GroundTheory.GlobalFields.TateThesis.Nonvanishing
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NewformLiftExistence
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NewformLiftConductorStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NewformLiftConductor
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NewformLiftLevelStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NewformLiftLevelCharacter
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NewformLiftLocalType
@@ -71,13 +71,13 @@ theorem UpperTheory.V.Z.Sym.Unl.badAbs :
     UpperTheory.V.Z.Sym.Unl.BadAbs := by
   intro k N _ hk χ hχ g p hp hpN
   have b0 : Ad3.R.B0 := @_root_.GlobalTheory.CompanionTheory.RankinQ.b0
-  have c0 : Ad3.R.C0 := @GlobalTheory.T.hecke_coset_representatives
+  have c0 : Ad3.R.C0 := @_root_.GlobalTheory.CompanionTheory.HeckeCosets.heckeSum_invariant
   have c1 : Ad3.R.C1 := @GlobalTheory.T.congruence_subgroup_coset_decomposition
-  have u2 : Ad3.R.U2 := @GlobalTheory.T.unramified_whittaker_newform
-  have g0 : Ad3.R.G0 := @GlobalTheory.T.fundamental_domain_invariance_of_description (@_root_.GlobalTheory.CompanionTheory.RankinSelberg.IdeleDomain.exists_idele_fundamentalDomain)
+  have u2 : Ad3.R.U2 := @_root_.GlobalTheory.CompanionTheory.RankinSelberg.unipotent_conj_moves_char
+  have g0 : Ad3.R.G0 := @_root_.GlobalTheory.CompanionTheory.RSGlobal.setup_of_ideleDomain (@_root_.GlobalTheory.CompanionTheory.RankinSelberg.IdeleDomain.exists_idele_fundamentalDomain)
   have g1 : Ad3.R.G1 := @_root_.GlobalTheory.CompanionTheory.FundamentalDomainCentralCharacter.fundamental_domain_integral_central_vanishing (@_root_.GlobalTheory.CompanionTheory.RS.rankinSelberg_measure_facts)
   have f0 : Ad3.R.F0 := @_root_.GlobalTheory.CompanionTheory.RankinSelbergQ.f0 b0
-  have f0b : Ad3.R.F0b := @GlobalTheory.T.newform_lift_conductor b0
+  have f0b : Ad3.R.F0b := @_root_.GlobalTheory.CompanionTheory.NewformLiftConductor.f0b b0
   have f1 : Ad3.R.F1 := @GlobalTheory.T.newform_lift_level b0
   have f1b : Ad3.R.AutomorphicLevelEquivariance := @_root_.GlobalTheory.CompanionTheory.RankinSelberg.LiftLevel.lift_local_invariance b0
   have f2 : Ad3.R.F2 := @_root_.GlobalTheory.CompanionTheory.RsWhittaker.whittaker_of_lift

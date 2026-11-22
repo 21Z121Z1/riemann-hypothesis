@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFlagFrame
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsModelRefinementGeneratingStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsModelRefinementGenerating
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RegularOfValuationBoundedAtPointsStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ModelFunctionFieldCompatibility
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RingKrullDimLeOfIsAlgebraic
@@ -196,7 +196,7 @@ theorem fromModel_of_locMax : ∀ (F : Type) [Field F] [NumberField F] (Y : Var 
   intro F _ _ Y M Δ t φ ht h
   classical
   choose V d n s hz hs hφ using h
-  choose N π V' hπ _ hz' hle hN using fun z => GlobalTheory.T.exists_model_refinement_generating F Y M Δ t (V z) (d z) (n z) (s z) z ht (hz z) (hs z)
+  choose N π V' hπ _ hz' hle hN using fun z => _root_.GlobalTheory.InvertIdeal.main F Y M Δ t (V z) (d z) (n z) (s z) z ht (hz z) (hs z)
   have : IsProper M.p := CommonModel.isProper_of_isProjOver M.ar.isProjOver
   have : CompactSpace M.X := QuasiCompact.compactSpace_of_compactSpace M.p
   obtain ⟨S, hS⟩ := CompactSpace.elim_nhds_subcover (fun z => (V' z : Set M.X))

@@ -1,7 +1,7 @@
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PointPoly
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsNegSqZero
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChernFormPolyCoeffTopOfNegHermitianSquareStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TopDegreeFormCoeffProdDetHermitianSquarePowNonneStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TopDegreeFormCoeffProdDetHermitianSquarePowNonne
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsNegHermitianSquareCurvatureBoundedDomainHodgeGStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsNegHermitianSquareCurvatureOfHolomorphicFrameCStatement
 import Mathlib
@@ -31,7 +31,7 @@ theorem chernTop_pointPoly_nonneg {E : Type} [Field E] [NumberField E] [IsCMFiel
     simp only [map_pow, map_neg, map_one]
     rw [← mul_assoc, ← mul_pow, neg_one_mul, neg_neg, one_pow, one_mul]
   have h0 : 0 ≤ topCoeff (aeval (fun x : (E →+* ℂ) × ℕ => chernPoly (fun u => G u x.1) v x.2) (pointPoly H Dw)) := by
-    rw [key]; exact GlobalTheory.T.topDegreeFormCoeff_prod_det_hermitianSquare_pow_nonneg _ _ _ T
+    rw [key]; exact _root_.GlobalTheory.PointFormSign.topCoeff_prod_det_sqPoly_pow_nonneg _ _ _ T
   have hre : 0 ≤ (topCoeff (aeval (fun x : (E →+* ℂ) × ℕ => chernPoly (fun u => G u x.1) v x.2) (pointPoly H Dw))).re :=
     (Complex.nonneg_iff.1 h0).1
   unfold chernTop

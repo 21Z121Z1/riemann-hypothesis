@@ -10,7 +10,9 @@ import Development.AutomorphicArithmetic.CommutativeAlgebra.HomAcyclicMappingCon
 import Development.AutomorphicArithmetic.CommutativeAlgebra.TotalHomPresheafIsSheafInjectiveOfHomAcyclic
 import Development.AutomorphicArithmetic.CommutativeAlgebra.TotalHomComplexIsKInjectiveOfBoundedInjective
 import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsCohomologyClassToDerivedHomBijectiveOfKInj
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChosenInjectiveResolutionEtaleSheafPropertiesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChosenInjectiveResolutionEtaleSheafProperties
+import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
+import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC CochainComplex CochainComplex.HomComplex
 open LateralTheory.E.EtaleTopologySheaves LateralTheory.E.LeafGhostCut UpperTheory.Et.Loc
 
@@ -94,7 +96,7 @@ private def bW {B Y W : Scheme.{0}} (p : Y ⟶ B) (ι : W ⟶ B) : gYW p ι ⟶ 
 theorem UpperTheory.leafLocalization_of_injective_slice_of_restriction_injective :
     LateralTheory.KummerTheory.InjSlice → LateralTheory.EWeil.AcycPf.RestrInj → LateralTheory.E.LeafConsPf.LeafLoc := by
   intro hS hR q _ i B W Y0 Y1 Y2 ι _ p g1 g2
-  obtain ⟨-, hinj, hGE, -⟩ := GlobalTheory.T.chosenInjectiveResolution_etaleSheaf_properties (ZMod q) (tw q i)
+  obtain ⟨-, hinj, hGE, -⟩ := _root_.GlobalTheory.EtC.ResBasic.res_basic (ZMod q) (tw q i)
   have key : ∀ {G₁ G₂ : B.Etale ⥤ Scheme.{0}} (F : G₁ ⟶ G₂), Good (G₁ ⋙ yoneda ⋙ free (ZMod q)) →
       Good (G₂ ⋙ yoneda ⋙ free (ZMod q)) →
       ∃ h, (TC (coneF F q) (res (ZMod q) (tw q i)) h).IsKInjective := by

@@ -1,8 +1,8 @@
 import Mathlib
 import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.CountData
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.DenominatorPowerSummableStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.DenominatorPowerSummable
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.FourierCoefficientGrowthBound
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ArchimedeanGaussianFourierStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ArchimedeanGaussianFourier
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.EisensteinLatticeSumBound
 
 open NumberField IsDedekindDomain MeasureTheory Matrix Topology GlobalTheory.CompanionTheory.SW.Core
@@ -84,7 +84,7 @@ theorem ei_bound : ∀ (F : Type) [Field F] [NumberField F] [MeasurableSpace (A 
   obtain ⟨C1, hC1⟩ := _root_.GlobalTheory.CompanionTheory.SW.Core.norm_fstar_le_den F lf hlf hO ψ hψ ι M B ρ P hQ φ hφ
   obtain ⟨C2, hC2⟩ := _root_.GlobalTheory.CompanionTheory.SW.LatSum.lattice_sum F hTR ρ hρ M (by omega) t ht
   obtain ⟨Q, out, hinj, hsep, hbij⟩ := exists_decomp F
-  obtain ⟨hd1, hd2, hd3⟩ := GlobalTheory.T.denominator_power_summable F M hM 1 one_pos
+  obtain ⟨hd1, hd2, hd3⟩ := _root_.GlobalTheory.CompanionTheory.SW.DenSum.summable_den F M hM 1 one_pos
   let a : Q → ℝ := fun q => ((den (out q) : ℝ) ^ M)⁻¹
   have ha0 : ∀ q, 0 ≤ a q := fun q => by positivity
   have ha : Summable a := by
@@ -96,7 +96,7 @@ theorem ei_bound : ∀ (F : Type) [Field F] [NumberField F] [MeasurableSpace (A 
       ‖eiTerm ψ lf B ρ P φ τ b‖ ≤
         |C1| * ((den b : ℝ) ^ M)⁻¹ * (∏ w, ‖τ w + (ρ w b : ℝ)‖ ^ M)⁻¹ := by
     intro τ hτ b
-    have hc := (GlobalTheory.T.archimedean_gaussian_fourier F ι M B ρ P hQ (fun w => τ w + (ρ w b : ℝ))
+    have hc := (_root_.GlobalTheory.CompanionTheory.SW.GaussFou.gauss_fourier F ι M B ρ P hQ (fun w => τ w + (ρ w b : ℝ))
       (fun w => by simpa using hτ w)).2.1
     unfold eiTerm
     rw [norm_mul, hc]

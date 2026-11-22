@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ColMapVUpdateLas
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RowMapVUpdateLast
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsMultilinearColumnRowKernelPairing
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MultilinearSumEqOfFunctionProductSumsEq
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ProductFunctionTotalTensorInvariantLastArrowsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ProductFunctionTotalTensorInvariantLastArrows
 import Development.AbelianVarietyTheory.Definitions.Divisors.FrameSignSimple
 
 noncomputable section
@@ -84,7 +84,7 @@ theorem pairPts_last_invariant (S : GridChoice W U) {t : T} {Φ : G.Datum} {β :
     rw [e1, e2]
   rw [lhs, rhs]
   refine GlobalTheory.funProd_multilinear_sum_eq M τ _ _ _ _ fun w v => ?_
-  have key := GlobalTheory.T.productFunction_totalTensor_invariant_lastArrows S hL hde hc ht hβ hτ hv k hk w v
+  have key := _root_.GlobalTheory.LastVertexTensor.productFn_invariant S hL hde hc ht hβ hτ hv k hk w v
   simp only [Finsupp.sum] at key ⊢
   refine (Finset.sum_congr rfl fun d hd => ?_).trans (key.trans (Finset.sum_congr rfl fun d hd => ?_))
   · simp only [coe_toTh W _ (thc d hd _), coe_toTh W _ (thr d hd _)]

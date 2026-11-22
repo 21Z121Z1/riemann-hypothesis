@@ -41,7 +41,7 @@ theorem moved_datum_eq_alt : ∀ (D : D7) (L : SizeData₂ D) (hT : GatTies D) (
     rw [hcomb]; exact hV.1
   refine ⟨M, M', o', hM, hM', ho', vac_true_mono _ hvac, ?_, ?_, κ, hκ, ?_⟩
   · rw [hcomb]; exact vac_true_mono _ hV
-  · intro hne; rw [hcomb]; exact GlobalTheory.T.foldr_splitPlaceSecondCombinations_vacuum_ne_zero D f.c.ψ hstd _ _ M M' hM hM' n Lp hinj _ hvac hne
+  · intro hne; rw [hcomb]; exact _root_.GlobalTheory.VacComb.foldr_comb_ne_zero D f.c.ψ hstd _ _ M M' hM hM' n Lp hinj _ hvac hne
   · intro d hd
     obtain ⟨F, hFt, hFat, hFeq⟩ := hdat d hd
     rw [hFeq]

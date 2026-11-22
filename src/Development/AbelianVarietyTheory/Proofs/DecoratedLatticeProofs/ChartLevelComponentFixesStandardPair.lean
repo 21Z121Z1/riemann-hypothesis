@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TwTransAlt
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPointsLieOverDistinctPlaces
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceMatrixEqOfAgreeWithFramedGLStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceMatrixEqOfAgreeWithFramedGL
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.GeneratorMemSplitPrimeLevelPrimeMemPlace
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ChartLevelColumnSubOneMemBaseLatticeStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPointBaseLatticeCoordsIntegralLastInPrimeStatement
@@ -100,7 +100,7 @@ theorem GlobalTheory.AdForm.comp_fixes_stdPair : ∀ {B : Base} {X : PreX B.toPr
     rw [hMdef, hM'def, ← Matrix.map_mul, ← hmt, inv_mul_cancel]
     simp only [Formalism.L2.Theta.mt, map_one, Units.val_one]
     exact Matrix.map_one _ (map_zero _) (map_one _)
-  have hM := GlobalTheory.T.splitPlace_matrix_eq_of_agree_with_framedGL (I.rec7 l Z) k (p i) _ _ (β j i) κ g hg
+  have hM := _root_.GlobalTheory.AdForm.OffPlace.map_pr_of_off (I.rec7 l Z) k (p i) _ _ (β j i) κ g hg
   rw [← hMdef] at hM
   rcases Nat.eq_zero_or_pos ((I.rec7 l Z).sp.X j).rank with h0 | hpos
   · have : g = 1 := by

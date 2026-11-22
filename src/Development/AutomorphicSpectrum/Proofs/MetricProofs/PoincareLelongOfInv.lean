@@ -19,10 +19,10 @@ import Development.AutomorphicSpectrum.Proofs.MetricProofs.RingKrullDimTwistSucc
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.TwistIsMultiHomogIdealStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MultAtTwistQuadEqStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HorizontalDivSuppTwistStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.TwLineSmoothConjInvariantGlueStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.TwLineSmoothConjInvariantGlue
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PtsIntegralConjLineEq
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.FibreTwistEqUnionEmbeddingsStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.TwistHeightIntegralDecompositionStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.FibreTwistEqUnionEmbeddings
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.TwistHeightIntegralDecomposition
 
 noncomputable section
 namespace GlobalTheory.CompanionTheory.Ar.Tw.Main
@@ -126,7 +126,7 @@ theorem twist_integral (hI : PtsIntegrableStatement) (hD : PtsIndepStatement)
   classical
   have hQ' : IsArithVar (twist p Q) (e + 1) := isArithVar_twist hQ hR
   have hKne : Nonempty K := hQ.1
-  have hF := fun B : HermLine ι => GlobalTheory.T.twLine_smooth_conjInvariant_glue K ι p B hp
+  have hF := fun B : HermLine ι => _root_.GlobalTheory.CompanionTheory.Ar.Tw.Lines.twLine_main K ι p B hp
   have hL' : ∀ j, IsSmoothHerm (twLine p (L j)) := fun j => (hF _).1 (hL j)
   have hA' : IsSmoothHerm (twLine p A) := (hF _).1 hA
   have hLc : ∀ j, IsSmoothHerm (conjLine (L j)) := fun j => (hF _).2.1 (hL j)
@@ -154,9 +154,9 @@ theorem twist_integral (hI : PtsIntegrableStatement) (hD : PtsIndepStatement)
     rw [dif_pos hex]
     exact hD K' ι' P e _ Φ M B t h1 hex.choose_spec h2 h3 h4 h5
   rw [atOf hQ' hΨ hL' hA' hs', atOf hQ gp hL hA hs, atOf hQ gm hLc hAc hsc]
-  have sp := GlobalTheory.T.twist_height_integral_decomposition K ι p Q e Ψ (fun j => twLine p (L j)) (twLine p A) L A s (vPlus p) hp hQ hQ' hΨ hL' hA' hs'
+  have sp := _root_.GlobalTheory.CompanionTheory.Ar.Tw.SheetD.density_twist K ι p Q e Ψ (fun j => twLine p (L j)) (twLine p A) L A s (vPlus p) hp hQ hQ' hΨ hL' hA' hs'
     (Or.inl rfl) (fun j z hz => (hF _).2.2.2.1 z hz.1) (fun z hz => (hF _).2.2.2.1 z hz.1)
-  have sm := GlobalTheory.T.twist_height_integral_decomposition K ι p Q e Ψ (fun j => twLine p (L j)) (twLine p A) (fun j => conjLine (L j)) (conjLine A) s
+  have sm := _root_.GlobalTheory.CompanionTheory.Ar.Tw.SheetD.density_twist K ι p Q e Ψ (fun j => twLine p (L j)) (twLine p A) (fun j => conjLine (L j)) (conjLine A) s
     (vMinus p) hp hQ hQ' hΨ hL' hA' hs' (Or.inr rfl) (fun j z hz => (hF _).2.2.2.2 z hz.1)
     (fun z hz => (hF _).2.2.2.2 z hz.1)
   have hae : ∀ᵐ y, (∑ᶠ w ∈ fibre (twist p Q) Ψ y, sheetDensity (twist p Q) Ψ (pot fun j => twLine p (L j)) (logNorm (twLine p A) (inc s)) y w) =
@@ -188,7 +188,7 @@ theorem twist_integral (hI : PtsIntegrableStatement) (hD : PtsIndepStatement)
       rw [hz, map_zero] at h
       have := congrFun h 0
       simp at this
-    rw [GlobalTheory.T.fibre_twist_eq_union_embeddings K ι p Q e Ψ y hp hKne hQ.2.1.2.1, finsum_mem_union hdis (fpl.image _) (fmi.image _),
+    rw [_root_.GlobalTheory.CompanionTheory.Ar.Tw.Fib.fibre_twist K ι p Q e Ψ y hp hKne hQ.2.1.2.1, finsum_mem_union hdis (fpl.image _) (fmi.image _),
       finsum_mem_image (embL_inj v1p).injOn, finsum_mem_image (embL_inj v1m).injOn]
     simp only [hpl, hmi]
   unfold ptsIntegralAt
@@ -280,7 +280,7 @@ theorem poincareLelong_of_inv :
   have hp0 : p ≠ 0 := hp.ne_zero
   have hRP : NoRoot p P := hpS P (Set.mem_insert _ _)
   have hRW : ∀ W ∈ H, NoRoot p W := fun W h => hpS W (Set.mem_insert_of_mem _ h)
-  have hF := fun C : HermLine ι => GlobalTheory.T.twLine_smooth_conjInvariant_glue K ι p C hp0
+  have hF := fun C : HermLine ι => _root_.GlobalTheory.CompanionTheory.Ar.Tw.Lines.twLine_main K ι p C hp0
   have hP' : IsArithVar (twist p P) (n + 2) := isArithVar_twist hP hRP
   have hInv' := hInv (Option K) (Tb ι) (twist p P) n (fun j => twLine p (L j)) (twLine p A) (twLine p B)
     (inc s) hP' (fun j => (hF _).1 (hL j)) ((hF _).1 hA) ((hF _).1 hB)

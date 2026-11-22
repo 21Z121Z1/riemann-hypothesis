@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.T2SpaceNumberFieldInfiniteAdeles
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNontrivialAdeleCharTrivialOnTotallyReal
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNeZeroAdeleCharEqCompMulTotallyRealStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNeZeroAdeleCharEqCompMulTotallyReal
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.VectorTupleProductMeasureTwoSidedAction
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousDistribHaarCharUnits
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsNiceLocalFieldProductRingInfiniteAdelesComplet
@@ -260,7 +260,7 @@ theorem selfDual_const : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [N
   · exact finprod_induction (fun x : ℝ≥0 => x ≠ 0) one_ne_zero (fun _ _ => mul_ne_zero)
       fun v => div_ne_zero (hr0 v) (ht0 v)
   intro ψ J hψ hJ μi νi μv νv hμi hνi hμv hνv
-  obtain ⟨a, ha, hψa⟩ := GlobalTheory.T.exists_ne_zero_adele_char_eq_comp_mul_totally_real F ψ0 ψ hψ0 hψ
+  obtain ⟨a, ha, hψa⟩ := _root_.GlobalTheory.AdeleCharTwist.exists_mul_eq F ψ0 ψ hψ0 hψ
   have hJ' := herm_smul σ J hJ a ha
   obtain ⟨hNi, hNv⟩ := GlobalTheory.GaugeEx.nice_ainf_fv F
   obtain ⟨hB, hB1⟩ := GlobalTheory.GaugeProdFormula.prod_modu_eq_one F a ha

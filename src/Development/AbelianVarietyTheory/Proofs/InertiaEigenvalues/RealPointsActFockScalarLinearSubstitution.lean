@@ -59,7 +59,7 @@ theorem om_ptP_subst : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 T : Ty
     rw [Units.val_one, RingHom.map_one, mul_one]
     exact (Matrix.det_one).symm
   obtain ⟨c, hc⟩ : ∃ c : ℂ, R.ωP i t (u, 1) (R.vP i t) = c • R.vP i t :=
-    ⟨_, GlobalTheory.T.weilDatum_realPlaces_fockVacuum_character D R.ψ hW.std (Vc D i) (Wc D i) R.θ hθ _ _ (R.ωP i t) _ hη hW (fun _ => 1)
+    ⟨_, _root_.GlobalTheory.WeilVacChar.vacuum_character D R.ψ hW.std (Vc D i) (Wc D i) R.θ hθ _ _ (R.ωP i t) _ hη hW (fun _ => 1)
       (cart (R.MW i (sg0 D A))) hS hT u hu 1 (one_mem _) (fun τ => by rw [one_mul, mul_one])
       (fun τ => by rw [one, one_mul, mul_one]) x 1 hx hy _ hf hv⟩
   refine ⟨c, U, fun P => ?_⟩

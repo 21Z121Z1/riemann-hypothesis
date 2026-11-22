@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlkLat
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.FourthTensorThetaEqKernel
 import Formalism.LocalToGlobal.GlobalTheory.GL3.PStdOK
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosetRefinement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrthonormalBasisBlockVacuumLatticeBasisFamilyStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrthonormalBasisBlockVacuumLatticeBasisFamily
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockVacuumLatticeBasisCoordinateEqCoordinateEqu
 import Formalism.LocalToGlobal.InertKernelTheory.StatementAlg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockVacuumLatticeEqComapStandardLattice
@@ -38,7 +38,7 @@ theorem thetaVectorUpToUnits_thZero_of_even : ∀ (D : D7) (cc : Ideal (𝓞 D.h
   obtain rfl : N = n * 2 := by omega
   obtain rfl : N' = n' * 2 := by omega
   have hS : B.StdOK := Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SO.stdOK B hcc hδ
-  refine ⟨bas B n n', B.kappa ^ (n' * n), GlobalTheory.T.orthonormalBasis_blockVacuumLatticeBasisFamily D cc δ B n n', _root_.GlobalTheory.KappaPowMod.kappa_pow_mod1All D cc δ B _, ?_⟩
+  refine ⟨bas B n n', B.kappa ^ (n' * n), _root_.GlobalTheory.BaseVacuum.onB_bas D cc δ B n n', _root_.GlobalTheory.KappaPowMod.kappa_pow_mod1All D cc δ B _, ?_⟩
   funext z
   obtain ⟨hsc', hF0', hidx', hprod⟩ := _root_.GlobalTheory.BaseVacuum.prod_blk_inter B.L B.ω₀ B.cq (Fin n' × Fin n) (Fin 4 × D.what₂.Tau)
     (imgLat (B.gC : (Fin 4 × D.what₂.Tau → ℂ) →ₗ[ℂ] (Fin 4 × D.what₂.Tau → ℂ)) (pow4 B.lamM)) hS.betaSemi

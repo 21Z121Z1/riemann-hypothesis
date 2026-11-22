@@ -10,8 +10,8 @@ import Formalism.RealPlaceAnalysis.StatementE
 import Formalism.RealPlaceAnalysis.StatementKT
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.CayleyExistsAndAny
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DominantRootSums
-import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.KStableFiniteDimSmoothCompactRootStableStatement
-import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.TorusWeightEigenAndRootShiftStatement
+import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.KStableFiniteDimSmoothCompactRootStable
+import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.TorusWeightEigenAndRootShift
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.IsDSOfIsDG
 
 namespace GlobalTheory
@@ -36,7 +36,7 @@ theorem exists_lowest_vector : PI.KFinSmooth → ∀ (k r : ℕ) (ε : Fin (2 * 
   have hD := (GlobalTheory.CayleyChoice.cayley_exists_and_any k r).2 ε mu R hR Q hQ
   obtain ⟨-, -, -, -, -, ⟨S, hfin, hst, -, ⟨v, hvS, hv0, hvw⟩, hmax⟩, -⟩ := hD
   rw [lowK_eq] at hvw hmax
-  obtain ⟨hS1, hS2⟩ := GlobalTheory.T.KStable_finiteDim_smooth_compactRoot_stable hK k r ε mu R hR Q hQ S hfin hst
+  obtain ⟨hS1, hS2⟩ := _root_.Gp91.GlobalTheory.CompactStable.kStable_smooth_and_stable hK k r ε mu R hR Q hQ S hfin hst
   have hn : ‖v‖ ≠ 0 := norm_ne_zero_iff.2 hv0
   set u : R.H := ((‖v‖⁻¹ : ℝ) : ℂ) • v with hu
   have huS : u ∈ S := S.smul_mem _ hvS
@@ -46,7 +46,7 @@ theorem exists_lowest_vector : PI.KFinSmooth → ∀ (k r : ℕ) (ε : Fin (2 * 
     simp only at this ⊢
     rw [hu, map_smul, this, smul_comm]
   let w : R.smSub := ⟨u, (hS1 u huS).2⟩
-  obtain ⟨hw1, hw2⟩ := GlobalTheory.T.torusWeight_eigen_and_rootShift hK k r ε mu R hR Q E hQ hE (Formalism.QuantumDeterminants.lowK ε mu) w huw
+  obtain ⟨hw1, hw2⟩ := _root_.Gp91.GlobalTheory.TorusWeight.torus_weight_action hK k r ε mu R hR Q E hQ hE (Formalism.QuantumDeterminants.lowK ε mu) w huw
   refine ⟨w, ?_, (hS1 u huS).1, ⟨hw1, ?_⟩, ?_⟩
   · show ‖u‖ = 1
     rw [hu, norm_smul, Complex.norm_real, norm_inv, norm_norm, inv_mul_cancel₀ hn]

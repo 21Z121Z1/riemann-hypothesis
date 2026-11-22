@@ -213,8 +213,8 @@ theorem thInd_index : ∀ (X : Fields) (A : Amb X) (a b : ℕ) (S : Finset (Heig
     rintro _ ⟨u, hu, rfl⟩
     obtain ⟨n₁, h₁⟩ := hBB u hu y hy
     obtain ⟨n₂, h₂⟩ := hBB y hy u hu
-    exact ((GlobalTheory.T.weylHeisenbergOperator_calculus_rational X A a b).2.2.2.2.2.1 y u).2
-      ⟨n₁ - n₂, by rw [(GlobalTheory.T.weylHeisenbergOperator_calculus_rational X A a b).2.2.1, h₁, h₂]; push_cast; ring⟩
+    exact ((_root_.GlobalTheory.MomT.Heis.calculus X A a b).2.2.2.2.2.1 y u).2
+      ⟨n₁ - n₂, by rw [(_root_.GlobalTheory.MomT.Heis.calculus X A a b).2.2.1, h₁, h₂]; push_cast; ring⟩
 
   have hlift : A.IsLift S N N' c x (A.liftW S N N' c x) :=
     Classical.epsilon_spec (p := A.IsLift S N N' c x) ⟨t, ⟨cA * c, Nat.mul_pos hcA hc, ht⟩, htx⟩

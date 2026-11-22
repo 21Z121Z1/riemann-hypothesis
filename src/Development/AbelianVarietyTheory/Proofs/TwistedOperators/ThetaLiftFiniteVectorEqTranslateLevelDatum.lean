@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThPDatumEq
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftLevelDatumSumOfTranslates
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PlaceModelIndicatorThetaFockLatticeVacuumStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PlaceModelIndicatorThetaFockLatticeVacuum
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaKernelFiniteVectorNeZero
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HermitianThetaLevelGroupStabilizesSelfDualLattic
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.CompletedTensorLatticeLatticeVacuumTransport
@@ -32,7 +32,7 @@ theorem thP_vec_eq_translate : ∀ (D : D7) (S T : HSp D) (C : Ctx S T) (om : GA
     _root_.GlobalTheory.LiftLevel.lift_level_datum D S T C hn ΛT hsd hAA βS βT hβS hβT Pg Q ξ hPg hodd e he
   obtain ⟨⟨Tm, hTm⟩, hall⟩ := hθ
   have hfT : f = Tm (thPDatum S T βS βT Pg Q ξ e) := hall Tm hTm
-  obtain ⟨hSB, hTh, hFock, hLat⟩ := GlobalTheory.T.placeModel_indicator_theta_fock_latticeVacuum D S T C B hB ΛT hsd (Pg ∪ Q) e he f₀ hvac Tm hTm L hA hB' hC
+  obtain ⟨hSB, hTh, hFock, hLat⟩ := _root_.GlobalTheory.IndVac.indL_theta_fock_latVac D S T C B hB ΛT hsd (Pg ∪ Q) e he f₀ hvac Tm hTm L hA hB' hC
   have hLat'' := hLat _ hD
   haveI := Fintype.ofFinite (LvCls C Lv)
   set f'' := Tm (indL L) with hf''

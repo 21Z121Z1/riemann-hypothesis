@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.MinSt5OfMinSt4
 import Development.AbelianVarietyTheory.Definitions.Divisors.FromBase
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsProperToroidalModelStructureMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TautologicalChartGaloisRigidStalk
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuasiFiniteTautologicalChartOfSeparationStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuasiFiniteTautologicalChartOfSeparation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RingKrullDimStalkLeTautologicalChartRing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsEtaleCompletionOfQuasiFiniteGaloisRigid
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteTypeCycAway
@@ -81,7 +81,7 @@ theorem isEtaleCompletion_tautChart : GlobalTheory.Poinc.Sep.SepSt → ∀ g : �
   haveI : Algebra.EssFiniteType ℤ (S.presheaf.stalk (ξ (closedPoint C.R))) :=
     essFiniteType_int_stalk n S (π ≫ z) _
   haveI : IsNoetherianRing C.R := C.compl.1
-  obtain ⟨hqf, hfin⟩ := GlobalTheory.T.quasiFinite_tautologicalChart_of_separation hSep g hg φ hφ hns n hn ho F Z z i OZ d S π j BD hM
+  obtain ⟨hqf, hfin⟩ := _root_.GlobalTheory.QFChart.quasiFinite_tautChart hSep g hg φ hφ hns n hn ho F Z z i OZ d S π j BD hM
     ⟨J, h₁, h₂, h₃, hNB, hP, h₄⟩ C G₁ y α₁ ξ hF hy
   have hdim := _root_.GlobalTheory.TChart.ChartDim.ringKrullDim_stalk_le_chart g hg φ hφ hns n hn ho F Z z i OZ d S π j BD hM
     ⟨J, h₁, h₂, h₃, hNB, hP, h₄⟩ C G₁ y α₁ ξ hF hy hfin

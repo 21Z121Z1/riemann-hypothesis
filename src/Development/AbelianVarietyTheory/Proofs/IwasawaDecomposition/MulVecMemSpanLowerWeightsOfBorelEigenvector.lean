@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPolyRep
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LowerTransvectionMulVecMemSpanWeightVectorsDomin
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LowerTriangularGLComplexInduction
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLUDecompositionOfLeadingMinorsNeZero
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteShiftsVanishingLeadingMinorStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteShiftsVanishingLeadingMinor
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolyRepMulVecMemOfCofiniteScalarShift
 open Matrix Formalism.L2.NG ReciprocityTheory.Aut Formalism.AUTREP NumberField GlobalTheory.AlgWtHW
 
@@ -48,7 +48,7 @@ theorem mulVec_mem_sle_of_isBEig : ∀ (n : ℕ) (ι : Type) [Fintype ι] [Decid
     rw [hΦ.mul, ← mulVec_mulVec, hv.2 U hU, mulVec_smul]
     exact Submodule.smul_mem _ _ (hstab L hL v hvS)
 
-  refine _root_.GlobalTheory.AlgWtHW.mulVec_mem_of_cofinite_shift Φ hΦ _ v B _ (GlobalTheory.T.finite_shifts_vanishing_leading_minor B.val) ?_
+  refine _root_.GlobalTheory.AlgWtHW.mulVec_mem_of_cofinite_shift Φ hΦ _ v B _ (_root_.GlobalTheory.shift_minors_vanish_finite B.val) ?_
   intro s hs C hC
   apply hbig
   rw [hC]

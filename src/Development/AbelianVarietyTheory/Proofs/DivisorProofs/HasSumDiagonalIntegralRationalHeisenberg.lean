@@ -5,7 +5,7 @@ import GroundTheory.AutomorphicForms.GL2.GJMatrixAdelic
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardTraceAdelicAddCharApplyEqAdelicChar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralDiagonalCoordsEqPosMulAdeleHaar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzRestrictTranslatedDiagonalMemStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SummablePartialFourierAdelicSchwartzRationalPairStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SummablePartialFourierAdelicSchwartzRationalPair
 open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.WeilM GlobalTheory.AdelicU GlobalTheory.LFun GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels
 open scoped Matrix TensorProduct
 open scoped FourierTransform
@@ -36,7 +36,7 @@ theorem schA_le (ι : Type) [Fintype ι] : schA F ι ≤ schwartzBruhatPi F ι :
 theorem summable_four {φ : (κ ⊕ κ → AF F) → ℂ} (hφ : φ ∈ schA F (κ ⊕ κ)) :
     Summable fun uv : (κ → F) × (κ → F) => ‖adelicFourierPi F
       (fun t : κ → AF F => φ (Sum.elim (t + fun i => algebraMap F (AF F) (uv.1 i)) t))
-      (fun i => algebraMap F (AF F) (uv.2 i))‖ := GlobalTheory.T.summable_partialFourier_adelicSchwartz_rationalPairs F κ φ hφ
+      (fun i => algebraMap F (AF F) (uv.2 i))‖ := _root_.GlobalTheory.PartialFourierSum.summable_partial_fourier F κ φ hφ
 
 abbrev rv (u : κ → F) : κ → AF F := fun i => algebraMap F (AF F) (u i)
 

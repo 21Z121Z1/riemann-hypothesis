@@ -3,7 +3,7 @@ import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.IsSigmaCompactConeIn
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FibreCountRotationInvariant
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.IsScaleStable
 import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.TXgzChowMahlerE0reduce
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.MeasurableFibreCountOverStatement
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.MeasurableFibreCountOver
 
 set_option maxSynthPendingDepth 1
 open GroundTheory.Heights₂.Heights MeasureTheory MvPolynomial Matrix GlobalTheory.CompanionTheory.Ar.Short.Crofton
@@ -38,7 +38,7 @@ private theorem ae_fibre_encard_eq {n e : ℕ} (S : Set (EuclideanSpace ℂ (Fin
     measurable_id.prodMk measurable_const
   have hmeasc := Measurable.comp
     (g := fun p : (Fin (e + 1) → Fin n → ℂ) × EuclideanSpace ℂ (Fin (e + 1)) => cntOver S p.1 p.2)
-    (f := fun π : Fin (e + 1) → Fin n → ℂ => (π, firstCoordVec (e + 1))) (GlobalTheory.T.measurable_fibre_count_over n (e + 1) S hsc) hp
+    (f := fun π : Fin (e + 1) → Fin n → ℂ => (π, firstCoordVec (e + 1))) (_root_.GlobalTheory.CompanionTheory.Ar.Short.Crofton.measurable_cntOver n (e + 1) S hsc) hp
   have hmg : Measurable (matGauss : (Fin (e + 1) → Fin n → ℂ) → ℝ≥0∞) := by
     unfold matGauss
     fun_prop

@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoMulInvOf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairAMulEqZeroIffSnd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzFixedBySchroedingerOpenFiniteSubgr
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousAdelicThetaTransformSymplecticOfDecay
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicRapidDecayOfMemAdelicSchwartzSpaceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicRapidDecayOfMemAdelicSchwartzSpace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasDerivAtHeisenbergOperatorThetaTransformRealLi
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasDerivAtOfContinuousRealToComplexExponentialStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BicharDerivContDiffStatement
@@ -214,7 +214,7 @@ theorem isThetaFunOF_thV : ∀ (F E : Type) [Field F] [NumberField F] [Field E] 
   have hψ : IsCharAF F B.ψ := hstd.1
   obtain ⟨hc, -, hfin, hinf⟩ := coordF nT nS N e
   have hcont : ∀ Φ ∈ GlobalTheory.WeilM.schA F (Fin N), Continuous (thV B.ψ Φ) := fun Φ hΦ =>
-    _root_.GlobalTheory.ThetaTransform.continuous_thV F N B.ψ hR hψ Φ (GlobalTheory.T.adelicRapidDecay_of_mem_adelicSchwartzSpace F N Φ hΦ)
+    _root_.GlobalTheory.ThetaTransform.continuous_thV F N B.ψ hR hψ Φ (_root_.GlobalTheory.SchwartzDecay.decay_of_mem_schA F N Φ hΦ)
   refine ⟨fun γ w => ?_, ?_, (hcont Φ hΦ).comp hc, ?_⟩
   · obtain ⟨y, z, h⟩ := hrat γ
     simp only [Function.comp_apply, map_add, symplOHF_eq he, h]

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DedekindFiniteTypeIdealCodimensionStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DedekindFiniteTypeIdealCodimension
 open Polynomial
 
 namespace GlobalTheory
@@ -7,7 +7,7 @@ namespace GlobalTheory
 theorem classGroup_nthPower_of_codim_one_mod : ∀ (k A : Type) [Field k] [IsAlgClosed k] [CharZero k] [CommRing A] [IsDedekindDomain A] [Algebra k A] [Algebra.FiniteType k A] (N : ℕ), 1 ≤ N → (∀ P₀ : Ideal A, P₀.IsMaximal → ∀ h₀ : P₀ ∈ nonZeroDivisors (Ideal A), ∃ a : A, a ≠ 0 ∧ ∀ P : Ideal A, P.IsMaximal → a ∉ P → ∀ h : P ∈ nonZeroDivisors (Ideal A), ∃ d : ClassGroup A, ClassGroup.mk0 ⟨P, h⟩ = ClassGroup.mk0 ⟨P₀, h₀⟩ * d ^ N) → (∃ f : A, f ≠ 0 ∧ Module.finrank k (A ⧸ Ideal.span {f}) % N = 1 % N) → ∀ c : ClassGroup A, ∃ d, c = d ^ N := by
   intro k A _ _ _ _ _ _ _ N _hN hyp hf c
   obtain ⟨f, hf0, hfm⟩ := hf
-  obtain ⟨_hfin, hmax, hadd, _hle⟩ := GlobalTheory.T.dedekind_finiteType_ideal_codimension k A
+  obtain ⟨_hfin, hmax, hadd, _hle⟩ := _root_.GlobalTheory.DedekindCodim.dedekind_finiteType_codim k A
   have nz : ∀ I : Ideal A, I ≠ ⊥ → I ∈ nonZeroDivisors (Ideal A) := fun I hI =>
     mem_nonZeroDivisors_of_ne_zero hI
   obtain ⟨I, rfl⟩ := ClassGroup.mk0_surjective c

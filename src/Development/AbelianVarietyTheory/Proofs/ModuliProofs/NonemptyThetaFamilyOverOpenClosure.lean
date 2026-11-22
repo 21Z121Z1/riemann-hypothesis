@@ -16,7 +16,7 @@ import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaPointsVanishing
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HasThetaConstantsIffOfThetaLevelPullback
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaConstantsUniqueUpToUnit
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaLevelAbelianSchemePullback
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaLevelIsoUniqueOfDenseCommonFibresStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaLevelIsoUniqueOfDenseCommonFibres
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SecCoordBcScaleUnique
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SectionCoordinateVectorExistsLocally
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsSectionCoordinateVectorOfLocallyOnRingStatement
@@ -344,7 +344,7 @@ theorem chart_compat (h₁ : Out.Laws) (h₂ : Out.Laws2) {m : ℕ} (hm : 2 ≤ 
     refine ⟨q, hqV, K, inferInstance, spMap y, cast tK hbK, ⟨pt, hpt⟩, ?_, ?_⟩
     · rw [tmap_cast_left]; exact h3
     · rw [tmap_cast_left]; exact h4
-  have hfin := (GlobalTheory.T.thetaLevel_iso_unique_of_dense_common_fibres h₁ h₂ _ _ _ _ b m T β u u' hm hd ho hD).1
+  have hfin := (_root_.GlobalTheory.TUniq.iso_unique_of_dense h₁ h₂ _ _ _ _ b m T β u u' hm hd ho hD).1
   have := TMap.comp hfin hu'
   rwa [Category.id_comp] at this
 

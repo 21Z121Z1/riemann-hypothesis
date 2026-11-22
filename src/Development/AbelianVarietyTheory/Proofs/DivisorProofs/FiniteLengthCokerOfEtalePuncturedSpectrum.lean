@@ -2,7 +2,7 @@ import Mathlib
 import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.ModDepthGE
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraTraceMapOfCokernelKilledByScalarStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SurjectiveOfTraceOfSmulMemRangeStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalizationTensorMapInjectiveCokerKilledStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalizationTensorMapInjectiveCokerKilled
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSmulMemRangeOfSurjectiveLocalizedMapStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmulMemOfMaximalIdealPowOfLocallySurjective
 open IsLocalRing TensorProduct
@@ -18,7 +18,7 @@ theorem main : ∀ (R : Type) [CommRing R] [IsLocalRing R] [IsNoetherianRing R] 
     let S := Localization.AtPrime p
     haveI : Module.Free S (S ⊗[R] A) := Module.free_of_flat_of_isLocalRing
     haveI : Module.Free S (S ⊗[R] B) := Module.free_of_flat_of_isLocalRing
-    obtain ⟨h1, h2, h3⟩ := GlobalTheory.T.localization_tensor_map_injective_coker_killed R A B p ψ hψ s hs hsb
+    obtain ⟨h1, h2, h3⟩ := _root_.GlobalTheory.localization_map_injective_coker_killed R A B p ψ hψ s hs hsb
     have htr := GlobalTheory.T.algebra_trace_map_of_cokernel_killed_by_scalar S _ _ _ h1 _ h2 h3
     exact GlobalTheory.T.exists_smul_mem_range_of_surjective_localized_map R A B p ψ (GlobalTheory.T.surjective_of_injective_of_trace_eq_of_smul_mem_range S _ _ _ h1 _ h2 h3 htr))
   exact ⟨k, fun x hx b => hk x hx b⟩

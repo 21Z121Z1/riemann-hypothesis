@@ -52,7 +52,7 @@ theorem topLev_of_clauses (R : RealDat D A Ks) (F : Face D A) (hl : R.toLevCh.Is
       (GlobalTheory.ChainEquiv.meas_chain hM.νY hM.νY' t _ hm).2
       (hS t _ hm) R.ItX (hc.ItX t).ne _ (GlobalTheory.ChainEquiv.range_left R.cX R.prX (R.HX t) _ _ (hM.HX t).2.1) R.βX (R.datXt t) _
       (hM.νX t).1.1 _ (hM.νX t).2 (R.ioX t) (hc.ioX t) (p : G0 R.Pg D.R.r) κ hκ (p : G0 R.Pg D.R.r) κ' hκ' _
-      (GlobalTheory.T.lastVector_lift_pair_flagLevel_characters R hl hM.inf hc.ωX hc.vX t (p : G0 R.Pg D.R.r) κ κ' hκ hκ') y _ hF v g
+      (_root_.GlobalTheory.StepLaw.last_step_law R hl hM.inf hc.ωX hc.vX t (p : G0 R.Pg D.R.r) κ κ' hκ hκ') y _ hF v g
     have e := (R.ioX t).map_smul (((R.levR F b).chi p : ℂˣ) : ℂ) y
     exact (congrArg (fun U : R.CC t (D.R.m - 1) => (U : SmT (R.MY (D.R.m - 1)) →ₗ[ℂ] (GA D (Yc D (D.R.m - 1)) → ℂ)) v g)
       e).symm.trans key

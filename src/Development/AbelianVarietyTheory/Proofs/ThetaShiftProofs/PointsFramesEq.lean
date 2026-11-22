@@ -3,7 +3,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IdealPart
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsArcGenericFibrePointsBaseChangeStatement
-import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.PointFamiliesEqOfValuesLevelsUniversalFamilyStatement
+import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.PointFamiliesEqOfValuesLevelsUniversalFamily
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsFormalConvergence
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ThetaSumShift
 import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.ArcDictExpZeroSection
@@ -71,7 +71,7 @@ theorem points_frames_eq (L₁ : Out.Laws) (L₂ : Out.Laws2) {E : Type} [Field 
       RingHom.ext fun a => hfg _ (Conv.convLaurent.algebraMap_mem (σ a))
     rw [Category.assoc, Category.assoc, hy]
     simp only [spMap, ← Spec.map_comp, ← CommRingCat.ofHom_comp, e]
-  obtain ⟨e₁, e₂⟩ := GlobalTheory.T.pointFamilies_eq_of_values_levels_universalFamily L₁ L₂ E H D l Xo F A.V _ _ φ _ _ Θ₁ Θ₂ hs
+  obtain ⟨e₁, e₂⟩ := _root_.GlobalTheory.FamilyUnique.points_frames_eq L₁ L₂ E H D l Xo F A.V _ _ φ _ _ Θ₁ Θ₂ hs
     (fun v => lev _ _ _ (levA v)) (fun v hv => lev _ _ _ (levM v hv)) v
   refine ⟨(x₁ v).1.symm.trans (e₁.trans (x₂ v).1), fun j hj => ?_⟩
   rw [← (x₁ v).2 j hj, ← (x₂ v).2 j hj]

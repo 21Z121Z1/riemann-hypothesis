@@ -3,7 +3,7 @@ import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.
 import GroundTheory.GlobalFields.TateThesis.RootNumberLocalPlace
 import GroundTheory.LocalFields.LocalFourier
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.LocalFieldSelfdualMeasureExists
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.DiscriminantDifferentProductFormulaStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.DiscriminantDifferentProductFormula
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ArchimedeanSelfdualMeasureDiscriminantScaledStatement
 open HeckeCharacterZeroLocus.SiegelWeilU GlobalTheory.CompanionTheory.SW NumberField IsDedekindDomain MeasureTheory Topology
 open scoped TensorProduct ENNReal NNReal Matrix
@@ -50,7 +50,7 @@ theorem selfDual_std : ∀ (F : Type) [Field F] [NumberField F], IsTotallyReal F
       apply adelicChar_ne_one (K := F)
       ext x
       exact h x
-  · exact GlobalTheory.T.discriminant_different_product_formula F
+  · exact _root_.GlobalTheory.CompanionTheory.SW.SelfDual.sqrt_discr_mul_finprod_different F
   · rw [smul_eq_selfDualMeasure F v (lam v) (hlam v)]
     simp only [psiV_std]
     exact _root_.GlobalTheory.CompanionTheory.SW.selfDual_selfDualMeasure _ _ (continuous_localAdelicChar v) (localAdelicChar_ne_one v)

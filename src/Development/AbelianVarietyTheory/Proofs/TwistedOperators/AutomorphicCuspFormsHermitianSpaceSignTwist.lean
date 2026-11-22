@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CartFrSgn
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SignedUnitaryGroupCompatStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SignedUnitaryGroupCompat
 
 noncomputable section
 
@@ -253,7 +253,7 @@ theorem GlobalTheory.sgn_fun_cusp : ∀ (D : D7) (θ : InfFam D), IsInfFam θ �
   intro D θ hθ ε V φ
   cases ε
   · exact ⟨Iff.rfl, Iff.rfl⟩
-  · have hL := GlobalTheory.T.signedUnitaryGroup_compat D θ hθ true V
+  · have hL := _root_.GlobalTheory.SgnIdent.sgnLaw_holds D θ hθ true V
     exact ⟨isAutFunSm_sgn_true hL φ, isCuspFun_sgn_true hL φ⟩
 
 end

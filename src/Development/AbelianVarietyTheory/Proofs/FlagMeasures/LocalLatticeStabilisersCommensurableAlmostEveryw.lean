@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemH0sub
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsHermND
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianTermStabilizerCommensurable
 import Formalism.SharpRestriction.CuspSpanNormBounds.IsTermOver
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DatumStabilizerPreservesTermLatticeGoodPlaceStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DatumStabilizerPreservesTermLatticeGoodPlace
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FinitePlacesNotPrimeToBaseFrameInvariants
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.AtBase
 open scoped Classical ENNReal
@@ -66,7 +66,7 @@ theorem local_stabilisers : ∀ (D : D7) (X : HidaSetting D) (Y : Full X) (u u' 
       obtain ⟨h1, h2, h3, h4⟩ := hB p
       exact ⟨h1, h2, h3, h4⟩
     refine (_root_.GlobalTheory.PrimeAlmostAll.primeTo_finite D Z u u' F F' hG FP hAt).subset fun p hp hpr => hp ?_
-    have h2 := GlobalTheory.T.datumStabilizer_preserves_termLattice_goodPlace (Z.M p) (hOK p) (locH Z p) D.R.rS D.R.k (FP p) (finrank_Vp_eq D p)
+    have h2 := _root_.GlobalTheory.HL.StabLat.stab_le_aut (Z.M p) (hOK p) (locH Z p) D.R.rS D.R.k (FP p) (finrank_Vp_eq D p)
       (hRel p) hpr (d0 p) (τ0 p) (hτ0 p)
     rw [hA p, hstab p]
     exact congrArg _ (le_antisymm (hc p).1 (le_inf (hle p (d0 p)) h2))

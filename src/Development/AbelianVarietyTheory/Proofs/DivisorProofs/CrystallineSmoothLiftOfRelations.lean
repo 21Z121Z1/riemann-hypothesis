@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.DivPowerCompatTwoFo
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonemptySmoothLiftAffineThickenings
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrystallineCechDeRhamRelationsTotalDetectZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothLiftComparisonRelationsAddSmul
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComparisonRelationsRespectCupStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComparisonRelationsRespectCup
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrystallineDeRhamRelationNaturalSmoothLiftMorphism
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothLiftDegreeOneComparisonRelation
 
@@ -64,7 +64,7 @@ theorem crystallineSmoothLift_of_relations : GlobalTheory.Published.CrystallineS
   have r2 : ∀ D c, (Λ D).Rel2 c (e₂ D c) := fun D c ↦ (he₂ D c _).1 rfl
   refine ⟨e₁, e₂, ?_, ?_, ?_⟩
   · intro D a b
-    exact (he₂ D _ _).2 (GlobalTheory.T.comparison_relations_respect_cup D (Λ D) a b _ _ (r1 D a) (r1 D b))
+    exact (he₂ D _ _).2 (_root_.GlobalTheory.PDForm.Lift.lift_rel2_cup D (Λ D) a b _ _ (r1 D a) (r1 D b))
   · intro D m c
     exact (he₁ D _ _).2 (_root_.GlobalTheory.PDForm.CrysCmp.lift_rel1_pull1_cmp1 D (Λ D) m c)
   · intro D D' σ φ φ₀ h m hc

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsStratHom
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BhattScholzeIntegral
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AinfUnitBoundedTeichmullerFlatDenominatorsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AinfUnitBoundedTeichmullerFlatDenominators
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilKisinMemIdealPowOfXPowMulMem
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.WeaklyAdmissibleFiltrations TensorProduct PowerSeries GlobalTheory.Prism GlobalTheory.BKReal GlobalTheory.Per GlobalTheory.BSP
 open scoped Formalism.Per NNReal
@@ -40,7 +40,7 @@ theorem GlobalTheory.NullOverS.null_of_mul_null : ∀ (l : ℕ) [Fact l.Prime] (
   obtain ⟨n, hn⟩ := _root_.GlobalTheory.BSP.BK.mem_J_pow_of_X_pow_mul_mem l K bk N
   have hdet : IsUnit (inclW l Y.det) := by
     rw [RingHom.map_det]; exact (Matrix.isUnit_iff_isUnit_det _).1 hY
-  obtain ⟨m, t, q, hq⟩ := GlobalTheory.T.ainf_unit_bounded_teichmullerFlat_denominators l K bk Y.det hdet n
+  obtain ⟨m, t, q, hq⟩ := _root_.GlobalTheory.BSP.BddDen.main l K bk Y.det hdet n
   obtain ⟨n', hn'⟩ := hn m
   refine (Set.finite_iUnion fun c : Fin d => hσ n' c b).subset ?_
   intro i hi

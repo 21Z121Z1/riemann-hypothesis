@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.EndValuedForm11Coeffs
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TopFormIntegralAdd
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasTopFormChartIntegralZeroStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasTopFormChartIntegralZero
 
 open MeasureTheory Filter Topology GlobalTheory GlobalTheory.Cartier GlobalTheory.ProjVar GlobalTheory.CxPts GlobalTheory.ChartGlue GlobalTheory.FlagBundle GlobalTheory.HermFrame GlobalTheory.GoodMetric GlobalTheory.GoodTop
 open ReciprocityTheory.L2DbarEstimates (V)
@@ -24,7 +24,7 @@ private theorem isTopForm_hasInt_finset_sum {n : ℕ} {Y κ : Type} [Topological
   induction s using Finset.induction_on with
   | empty =>
     simp only [Finset.sum_empty]
-    exact ⟨⟨fun _ _ _ _ _ _ => by simp, fun _ => aemeasurable_const⟩, GlobalTheory.T.hasTopFormChartIntegral_zero e S⟩
+    exact ⟨⟨fun _ _ _ _ _ _ => by simp, fun _ => aemeasurable_const⟩, _root_.GlobalTheory.GoodTop.hasInt_zero e S⟩
   | insert a s ha ih =>
     simp only [Finset.sum_insert ha]
     obtain ⟨hF, hI⟩ := ih

@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsLatFamilyCongr
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ArithVarietyModelPrimeBoundStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ArithVarietyModelPrimeBound
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HermitianPairingTorsionFree
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ArithVarietyPrimeHodgeBound
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ArithVarietyPrimeHodgeFinal
@@ -257,7 +257,7 @@ theorem seqfam_holds : GlobalTheory.CompanionTheory.Ar.HT.FarguesHodgeTate → �
   have hp : p.Prime := Fact.out
   have hR : 4 ≤ 𝔐.R p := 𝔐.R_ge p hpS
   obtain ⟨-, -, -, -, hemb, -, ⟨hp0, ⟨u0, hu0, hwu⟩, hpnu⟩, hCp⟩ := hOrb
-  have hlat := fun t => GlobalTheory.T.arith_variety_model_prime_bound hFH E H D l Xo c O₀ β Y S Ω K J y 𝔐 d hvar hpq p hpS hfree hp2 hdisc b hb A m hpm O w hCp t
+  have hlat := fun t => _root_.GlobalTheory.CompanionTheory.Ar.Num.FamLat.lat_main hFH E H D l Xo c O₀ β Y S Ω K J y 𝔐 d hvar hpq p hpS hfree hp2 hdisc b hb A m hpm O w hCp t
 
   have hw0 : algebraMap O Ω w ≠ 0 := by
     have h := hCp

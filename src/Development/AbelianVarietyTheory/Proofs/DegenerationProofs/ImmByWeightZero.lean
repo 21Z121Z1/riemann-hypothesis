@@ -5,9 +5,9 @@ import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.EqOfWeightEq
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.CoeffSymmSum
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsBasisUniqueMinAndSumsSeparated
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsClosedImmersionBySectionsOfSpan
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsClosedImmersionAbelianPartBundleStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsClosedImmersionAbelianPartBundle
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsPureWeightSectionNeZeroAt
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.PureSectionRatiosGenerateFunctionsStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.PureSectionRatiosGenerateFunctions
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry
 open scoped CategoryTheory.Obj
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.ZH
@@ -154,7 +154,7 @@ theorem immBy_weight_zero : Out.Laws → Out.Laws2 → (∀ (k : Type) [Field k]
     (by omega) hB.lll hB.sep
   have hp : ∀ i : {i // cls i = 0}, Φ.Pure 0 (F i.1) := fun i => pure_of_alone hG h0 i.2
   choose τ hτ₁ hτ₂ hτ₃ using fun i => (FibPre.pure_zero k Φ).2 _ (hp i)
-  obtain ⟨m, t, ht⟩ := GlobalTheory.T.exists_closedImmersion_abelianPart_bundle hL hL2 k Φ N h4 π
+  obtain ⟨m, t, ht⟩ := _root_.GlobalTheory.VeryAmpleMove.exists_immBy_abelianPart hL hL2 k Φ N h4 π
   have := Φ.E.isAbelian.proper
   obtain ⟨hcov, hloc⟩ := _root_.GlobalTheory.ZH.SpanImm.immBy_of_span k _ Φ.E.B.hom Φ.N₀ Φ.isLB _ _ t τ ht fun n => by
     obtain ⟨φ, hφ, hφ'⟩ := (FibPre.pure_zero k Φ).1 (t n)
@@ -180,7 +180,7 @@ theorem immBy_weight_zero : Out.Laws → Out.Laws2 → (∀ (k : Type) [Field k]
     rw [hτ₃ ⟨i, hi⟩]
     choose r hr hr' using fun j => hu (F j)
     refine ⟨haff.preimage _, r, hr, ?_⟩
-    refine GlobalTheory.T.pureSection_ratios_generate_functions k Φ _ e (F i) _ haff (hp ⟨i, hi⟩) hle (GlobalTheory.ZH.FibPre.exists_pure_ne_zero_at hL hL2 k Φ N h4 π) _
+    refine _root_.GlobalTheory.ZH.WtGen.ratios_generate k Φ _ e (F i) _ haff (hp ⟨i, hi⟩) hle (GlobalTheory.ZH.FibPre.exists_pure_ne_zero_at hL hL2 k Φ N h4 π) _
       (fun a => ?_) fun n φ y hφ hy => ?_
     · have ha : a ∈ Subring.closure _ := hgen.ge (Subring.mem_top a)
       refine Subring.mem_comap.1 (Subring.closure_le.2 ?_ ha)

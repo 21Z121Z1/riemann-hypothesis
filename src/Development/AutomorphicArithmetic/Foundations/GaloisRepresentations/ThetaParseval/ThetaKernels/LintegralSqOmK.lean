@@ -29,7 +29,7 @@ theorem lintegral_sq_Om_k : ∀ (F E : Type) [Field F] [NumberField F] [Field E]
   have hn : ∀ a, ‖B.ψ a‖ = 1 := GlobalTheory.StdCharWeilDatum.norm_psi hB.std
   obtain ⟨Bf, hB1, hB2⟩ := _root_.GlobalTheory.T.theta_subspace_haar_integral F E σ B hB nS nT JS JT hS hT ξ₀ hξ0 hξ
     (GlobalTheory.WeilPartsF.thetaSubF σ JS JT ξ₀ B.ψ) (fun _ hf => hf) μ 𝓕 hμ h𝓕
-  rw [hB2, hB2, GlobalTheory.T.invariantForm_normalizedHeisenbergIntertwiner (isHeis_opFF hσ hS hT hξ hc h.hw) (fun x y => hn _) lam h.good _ h.sd h.span
+  rw [hB2, hB2, _root_.GlobalTheory.FinWeil.invForm_intertwiner (isHeis_opFF hσ hS hT hξ hc h.hw) (fun x y => hn _) lam h.good _ h.sd h.span
     (rhoFF σ JS JT p) (gamFF_rhoFF hS ξ₀ B.ψ p) (h.sd' p) (h.fin p) (Om p) (h.op p) (h.vac p) Bf]
   intro x u v
   have h1 : ∀ u : GlobalTheory.WeilPartsF.thetaSubF σ JS JT ξ₀ B.ψ, opFF hc w x u =

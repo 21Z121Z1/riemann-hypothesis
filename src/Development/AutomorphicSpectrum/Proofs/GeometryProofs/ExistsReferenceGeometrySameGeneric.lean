@@ -12,9 +12,9 @@ import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.Metric
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentGenericCharZero
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EmbedsGenericOfCharZeroStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EmbedsGenericOfCharZero
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncModelReindexedCoords
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexCoordsReindexedStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexCoordsReindexed
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsCoordsForComponent
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordsWithConstantsMapStatement
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
@@ -193,7 +193,7 @@ theorem exists_refGeo : ReciprocityTheory.ChartRestriction.G.Geo.ResK.ResKStatem
   · exact _root_.GlobalTheory.CompanionTheory.Ar.SncRefine.isSncModel_refine X 𝔐.X Ω ξ 𝔐.ξ g K J y (K' ⊕ Unit) (segJ J') (segY y') (fun k => Sum.inl (bk k)) bx _ bd
       hall 𝔐.all htie tie₂ hξ hy₂ hreg hinj hsnc
   · intro z w hw
-    have hw₁ := GlobalTheory.T.complex_coords_reindexed X 𝔐.X Ω ξ 𝔐.ξ g K J y (K' ⊕ Unit) (segJ J') (segY y') (fun k => Sum.inl (bk k)) bx z w
+    have hw₁ := _root_.GlobalTheory.CompanionTheory.Ar.CoordsDown.coordsAt_down X 𝔐.X Ω ξ 𝔐.ξ g K J y (K' ⊕ Unit) (segJ J') (segY y') (fun k => Sum.inl (bk k)) bx z w
       hall 𝔐.all 𝔐.tie.gen hξ hy₂ hreg hw
     have hne : ∀ k, ∃ i, w ⟨k, i⟩ ≠ 0 := fun k => (hw.1 k).imp fun _ h => h.ne_zero
     have hne' : ∀ k, ∃ i, w (v ⟨k, i⟩) ≠ 0 := fun k => (hw₁.1 k).imp fun _ h => h.ne_zero
@@ -205,6 +205,6 @@ theorem exists_refGeo : ReciprocityTheory.ChartRestriction.G.Geo.ResK.ResKStatem
       rfl
     rw [hc]
     exact not_congr hab
-  · exact GlobalTheory.T.embeds_generic_of_char_zero 𝔐.X Ω 𝔐.ξ _ _ 𝔐.tie
+  · exact _root_.GlobalTheory.CompanionTheory.Ar.EmbedsOfTie.embedsGeneric_of_coordTie 𝔐.X Ω 𝔐.ξ _ _ 𝔐.tie
 
 end GlobalTheory.CompanionTheory.Ar

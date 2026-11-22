@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.CharZeroFunctionField
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianLineBundleIsNefShiftMonotone
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmallSectionsTwistedPowerEncardEqBallStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmallSectionsTwistedPowerEncardEqBall
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.SmallSecTensTriv
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.VolGe
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EqOfIsometricTrivShift
@@ -21,7 +21,7 @@ theorem lc_tendsto_of_rep : GlobalTheory.Published.ArithHilbertSamuel → Global
   have h2 := hT.div_const ((D + 1).factorial : ℝ)
   have e (m : ℕ) : P.lc (m * a) (m * b) (Real.exp (t * m)) =
       Real.log ((((M.shift (fun _ => t) fun _ => rfl).pow m).smallSec.ncard : ℝ)) := by
-    rw [Pair.lc, Set.ncard_def, Set.ncard_def, (GlobalTheory.T.smallSections_twistedPower_encard_eq_ball k X p P a b M hRep t m).1]
+    rw [Pair.lc, Set.ncard_def, Set.ncard_def, (_root_.GlobalTheory.VolBr.SmallBall.main k X p P a b M hRep t m).1]
   convert h2 using 1
   · funext m
     rw [e]

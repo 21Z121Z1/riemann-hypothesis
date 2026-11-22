@@ -12,7 +12,9 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DetIdLatGmap
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.VacuumEntireAndNormalizedJetsAlgebraic
 import Formalism.LocalToGlobal.KernelLattices.ThDistC
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinAlgJetSet
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormalisedFamilySatisfiesEquivarianceLawsStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormalisedFamilySatisfiesEquivarianceLaws
+import Formalism.LocalToGlobal.KernelLattices.LateralTheory
+import Formalism.SharpRestriction.GlobalSchurBounds.StandardLatticesGL3
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsWeilOThZeroTriv
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsMovesOfSelfDual
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SpanRangeEmb4EqTop
@@ -212,7 +214,7 @@ theorem finAlg_step (hL : StagesInhab.HasLetters B.toPre) {I : ColIn B X} (h : I
     rw [hA]
     exact ⟨h0.1, h0.2.1, fun P hP => (bad P hP).1, fun P hP => GlobalTheory.PeriodIdealUnit.locP_AA_eq_one _ _ _ _ _ _ _ _ P
       (bad P hP).2.1 (bad P hP).2.2.1 (by rw [Ideal.absNorm_top]; exact Nat.coprime_one_left _), h0.2.2.2.2⟩
-  have hE := GlobalTheory.T.normalisedFamily_satisfies_equivarianceLaws _ _ _ (I.J.toRec B C W V S N G) _ hcc hδ hχ
+  have hE := _root_.GlobalTheory.Mem.NatEqui.eqP _ _ _ (I.J.toRec B C W V S N G) _ hcc hδ hχ
   have hJ := _root_.GlobalTheory.Mem.Col2.JetAlgebraic.esmooth_jetAlg _ _ (seamOf B C W V S N G) _ _ (I.J.toRec B C W V S N G) I.chi I.J.cD _ _ hX hs hcc hδ hχ hi hj
   rw [← hA] at hJ
   refine JetFin.finAlg_jetSet _ _ _ _ _ _ _ hX hM hJ.1 (IndEq.thIndEq_of_vacEq _ _ _ _ _ _ hX hLa hne hM ?_) ?_ (hJ.2 _ _)

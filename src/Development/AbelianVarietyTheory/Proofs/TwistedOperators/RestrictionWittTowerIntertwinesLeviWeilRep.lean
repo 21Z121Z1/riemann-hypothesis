@@ -2,8 +2,8 @@ import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CompatibleThetaRestrictions
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.AdjointIsotropicDecomposition
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.CovolOneIntegralAdd
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LeviElementScalesRestrictionNormSqAbsDetStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaRestrictionDownWittTowerSurjectiveStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LeviElementScalesRestrictionNormSqAbsDet
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaRestrictionDownWittTowerSurjective
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaRestrictIsotropicQuotientWittTowerPropertie
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchurLemmaThetaFunctionsOrientedPair
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaFunctionEqZeroOfMeanSquareZero
@@ -140,7 +140,7 @@ theorem main : ∀ (D : D7) (V V' W : HSp D) (r : ℕ) (C : Matrix (Fin V.rank) 
     have hf0 : res V V' W C B μ 𝓨 f = 0 := hf
     have hθ : IsThetaFunO ψ V' W (res V V' W C B μ 𝓨 (ω (m, h) f)) :=
       (hres.1 _ (hω.om_pres (m, h) f f.2)).2.1
-    have hsq := GlobalTheory.T.leviElement_scales_restrictionNormSq_absDet D V V' W r C B hs ψ χS χT ω hω μ 𝓨 hcv μ' 𝓕' hcv'.1 hcv'.2.1 a g' m hC hB h f f.2
+    have hsq := _root_.GlobalTheory.LeviNorm.norm_levi D V V' W r C B hs ψ χS χT ω hω μ 𝓨 hcv μ' 𝓕' hcv'.1 hcv'.2.1 a g' m hC hB h f f.2
     rw [hf0] at hsq
     simp only [Pi.zero_apply, enorm_zero, ne_eq, OfNat.ofNat_ne_zero, not_false_eq_true, zero_pow,
       MeasureTheory.lintegral_const, zero_mul, mul_zero] at hsq
@@ -173,12 +173,12 @@ theorem main : ∀ (D : D7) (V V' W : HSp D) (r : ℕ) (C : Matrix (Fin V.rank) 
     fun f hf => (hres.1 _ (hω.om_pres (m, h) f hf)).2.1
   have hM1 : ∀ f', IsThetaFunO ψ V' W f' → IsThetaFunO ψ V' W (M f') := by
     intro f' hf'
-    obtain ⟨f, hf, rfl⟩ := GlobalTheory.T.theta_restriction_down_witt_tower_surjective D V V' W r C B hs ψ hψ μ 𝓨 hcv f' hf'
+    obtain ⟨f, hf, rfl⟩ := _root_.GlobalTheory.TowerSurj.res_surjective D V V' W r C B hs ψ hψ μ 𝓨 hcv f' hf'
     rw [hMres f hf]
     exact GlobalTheory.OrientedHeis.theta_smul _ (hω'.om_pres _ _ (hθω f hf))
   have hM2 : ∀ x f', IsThetaFunO ψ V' W f' → M (heisO ψ V' W x f') = heisO ψ V' W x (M f') := by
     intro x f' hf'
-    obtain ⟨f, hf, rfl⟩ := GlobalTheory.T.theta_restriction_down_witt_tower_surjective D V V' W r C B hs ψ hψ μ 𝓨 hcv f' hf'
+    obtain ⟨f, hf, rfl⟩ := _root_.GlobalTheory.TowerSurj.res_surjective D V V' W r C B hs ψ hψ μ 𝓨 hcv f' hf'
     have hx : heisO ψ V' W x (res V V' W C B μ 𝓨 f) =
         res V V' W C B μ 𝓨 (heisO ψ V W (midPart V V' W B x) f) :=
       (GlobalTheory.TowerRestrict.res_heis_mid hs μ 𝓨 f x).symm
@@ -188,7 +188,7 @@ theorem main : ∀ (D : D7) (V V' W : HSp D) (r : ℕ) (C : Matrix (Fin V.rank) 
       IsAddFundamentalDomain (ratL W V') 𝓕₀ μ₀ → ∀ f', IsThetaFunO ψ V' W f' →
       ∫⁻ w in 𝓕₀, ‖M f' w‖ₑ ^ 2 ∂μ₀ = ∫⁻ w in 𝓕₀, ‖f' w‖ₑ ^ 2 ∂μ₀ := by
     intro μ₀ 𝓕₀ hH hF f' hf'
-    obtain ⟨f, hf, rfl⟩ := GlobalTheory.T.theta_restriction_down_witt_tower_surjective D V V' W r C B hs ψ hψ μ 𝓨 hcv f' hf'
+    obtain ⟨f, hf, rfl⟩ := _root_.GlobalTheory.TowerSurj.res_surjective D V V' W r C B hs ψ hψ μ 𝓨 hcv f' hf'
     rw [hMres f hf]
     have hpt : ∀ w, ‖(d⁻¹ • ω' (g'⁻¹, h⁻¹) (res V V' W C B μ 𝓨 (ω (m, h) f))) w‖ₑ ^ 2 =
         ‖d⁻¹‖ₑ ^ 2 * ‖ω' (g'⁻¹, h⁻¹) (res V V' W C B μ 𝓨 (ω (m, h) f)) w‖ₑ ^ 2 := by
@@ -197,7 +197,7 @@ theorem main : ∀ (D : D7) (V V' W : HSp D) (r : ℕ) (C : Matrix (Fin V.rank) 
     simp only [hpt]
     rw [lintegral_const_mul' _ _ (ENNReal.pow_ne_top enorm_ne_top),
       hω'.om_unit μ₀ 𝓕₀ hH hF _ _ (hθω f hf),
-      GlobalTheory.T.leviElement_scales_restrictionNormSq_absDet D V V' W r C B hs ψ χS χT ω hω μ 𝓨 hcv μ₀ 𝓕₀ hH hF a g' m hC hB h f hf,
+      _root_.GlobalTheory.LeviNorm.norm_levi D V V' W r C B hs ψ χS χT ω hω μ 𝓨 hcv μ₀ 𝓕₀ hH hF a g' m hC hB h f hf,
       ← mul_assoc, enorm_inv_detPow_sq, one_mul]
   obtain ⟨c₀, hc₀, hM⟩ := GlobalTheory.ThetaSchur.schur D ψ hψ V' W M hM1 hM2 hM3
   have hinv : ∀ X, ω' (g', h) (ω' (g'⁻¹, h⁻¹) X) = X := by

@@ -12,7 +12,7 @@ import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.SquareI
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.PropsCos
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.BernsteinUnitaryProductIrreducible
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TemperedLanglandsFactorsSquareIntegrable
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LanglandsSocleOfOrderFreeStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LanglandsSocleOfOrderFree
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalLanglandsOfIrreducibleAdmissible
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.ZelevinskyCosocles.GKLocal
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
@@ -34,7 +34,7 @@ theorem temperedProduct (hG : GlobalTheory.Published.GeometricLemma) (hBZ : Glob
   constructor
   · intro ht
     have hO : Zc.LOrderFree k := orderfree hC hM k
-    have hSo : Zc.LSocleGL k := GlobalTheory.T.langlands_socle_of_order_free hA (_root_.GlobalTheory.CompanionTheory.GKLocalProof.gkLocal hA) hO
+    have hSo : Zc.LSocleGL k := _root_.GlobalTheory.CompanionTheory.LSocle.lSocleGL hA (_root_.GlobalTheory.CompanionTheory.GKLocalProof.gkLocal hA) hO
     have hL : Zc.LSegExists k := fun Δ => _root_.GlobalTheory.CompanionTheory.LkSegExists.exists_isLSeg hA Δ
     obtain ⟨𝔪, h𝔪⟩ := hE k (IrrGL.of π hs hi)
     have h𝔪' : IsL 𝔪 π := h𝔪.of_equiv (IrrGL.equivOf π hs hi).symm

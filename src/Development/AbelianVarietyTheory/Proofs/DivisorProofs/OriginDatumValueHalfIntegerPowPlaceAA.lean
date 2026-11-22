@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.InvVolConjLevelOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeasurableSetSetOfLe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndicatorMoveArgsOriginEqBoxIndicatorStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnfoldingCharacterPhaseOriginValuationLeBoxStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbsOriginBoxValueExponentLeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbsOriginBoxValueExponentLe
 
 noncomputable section
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links
@@ -167,7 +167,7 @@ theorem aaTerm_datum_origin : ∀ {D : D7} {T : Type} {L : LevCh D T} {sc : Cons
   have key := flatTensor_moved_box_apow (bareGrid w) one_le_sLen (psiAt W w) (unitVol w) (isUnitVol_unitVol w) (unifAt w)
     _ _ hψ' _ (aaElt_elt_col w) (aaElt_elt_off w)
   refine ⟨expo (bareGrid w) (FractionalIdeal.count D.host.E w D.host.AA) (FractionalIdeal.count D.host.E w D.host.AAbar),
-    ?_, GlobalTheory.T.abs_originBoxValueExponent_le (bareGrid w) one_le_sLen _ _ (bigN D) (rank_le_bigN w)⟩
+    ?_, _root_.GlobalTheory.OriginBox.abs_expo_le (bareGrid w) one_le_sLen _ _ (bigN D) (rank_le_bigN w)⟩
   change flatTensor _ _ _ _ 0 0 = _
   rw [aaVac, genAt] at *
   rw [key, IsUnif.apow_eq (isUnif_unifAt w)]

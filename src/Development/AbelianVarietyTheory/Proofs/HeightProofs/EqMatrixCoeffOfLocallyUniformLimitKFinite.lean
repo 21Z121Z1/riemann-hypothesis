@@ -10,11 +10,11 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OneAddHsConj
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOnAtTau
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CoefBoundOfCasselmanWallach
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.NotMemOfMulExp
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.ContinuousOnRightDerivativeFamilyModerateGrowthStatement
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.ContinuousOnRightDerivativeFamilyModerateGrowth
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.CoeffSumSmoothRightDerivWords
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.RightDerivativeRelationOfLocallyUniformLimitStatement
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsMapsOfRelations
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsSobolevContinuousFormOfModerateGrowthMapStatement
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsSobolevContinuousFormOfModerateGrowthMap
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.CoeffWordModerateGrowthBound
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S Formalism.L2.Theta Matrix
 open Formalism.REAL GlobalTheory.SmoothGlob GlobalTheory.TypeSum
@@ -34,7 +34,7 @@ theorem GlobalTheory.TypeSum.CoefClos.eq_coef_of_closure : GlobalTheory.Publishe
       ∀ y ∈ UJset ε, h y = ∑ a, L a (σ y (w a)) := by
   intro hHC hCW n ε H _ _ _ σ hstd d w hw h hcont humg happ
   obtain ⟨N, Φ, hΦ0, hΦD, hΦG⟩ := humg
-  have hCh : CSm ε h := ⟨Φ, hΦ0, hΦD, GlobalTheory.T.continuousOn_rightDerivativeFamily_moderateGrowth n ε N Φ hΦD hΦG⟩
+  have hCh : CSm ε h := ⟨Φ, hΦ0, hΦD, _root_.GlobalTheory.TypeSum.DerFamCont.continuousOn_of_isDerFam n ε N Φ hΦD hΦG⟩
   set h0 : Mx n → ℂ := (UJset ε).indicator h with hh0def
   have hh0 : ∀ g ∈ UJset ε, h g = h0 g := fun g hg => (Set.indicator_of_mem hg h).symm
   have hm0 : h0 ∈ Smo ε := ⟨fun g hg => Set.indicator_of_notMem hg h, hCh.congr hh0⟩
@@ -66,7 +66,7 @@ theorem GlobalTheory.TypeSum.CoefClos.eq_coef_of_closure : GlobalTheory.Publishe
   have hD : ∀ a, ∃ L : H →ₗ[ℂ] ℂ, Sobolev₂ (lieSet ε) σ L ∧ ∀ v, IsKFin ε σ v → ∀ y ∈ UJset ε,
       ((Smo ε).subtype ∘ₗ T a) v y = L (σ y v) := by
     intro a
-    refine GlobalTheory.T.exists_sobolevContinuous_form_of_moderateGrowthMap hCW n ε H σ hstd N ((Smo ε).subtype ∘ₗ T a) (fun v hv => ?_) (fun v hv k hk g hg => ?_)
+    refine _root_.GlobalTheory.TypeSum.GrowthForm.exists_form hCW n ε H σ hstd N ((Smo ε).subtype ∘ₗ T a) (fun v hv => ?_) (fun v hv k hk g hg => ?_)
       (fun v hv X hX g hg => ?_)
     · obtain ⟨m, c, u, e⟩ := hT3 a v hv
       have hb := fun i => _root_.GlobalTheory.TypeSum.CoefClos.wordF_growth n ε N h Φ hΦ0 hΦD hΦG (u i)

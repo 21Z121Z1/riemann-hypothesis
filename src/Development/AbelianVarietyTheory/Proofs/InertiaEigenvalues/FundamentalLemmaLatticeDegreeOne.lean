@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MooreDetermina
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIndependentFrobSolutionsCrisProof
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSecondKindMatrixMooreDetNeZero
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MooreDeterminantCrisPlusNeZero
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BcrisPlusFrobeniusStableSubringInFilZeroStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BcrisPlusFrobeniusStableSubringInFilZero
 
 noncomputable section
 
@@ -254,7 +254,7 @@ theorem flAt_one : FLAt 1 := by
     exact one_not_mem h1
   obtain ⟨b, hb_plus, hb_phi, hb_ind, hb_sum⟩ := _root_.GlobalTheory.PMon.exI_main l P AI T h hh μ hμ0 hμu
   have hb_det := _root_.GlobalTheory.PMon.moore_statement l P AI T h h le_rfl b hb_plus hb_phi hb_ind
-  have hb_fil : ∀ (i : ℕ) j, ev P i (b j) ∈ Fil P 0 := fun i j => (GlobalTheory.T.bcrisPlus_frobeniusStable_subring_in_filZero l P AI T).2.1 _ (hb_plus j) i
+  have hb_fil : ∀ (i : ℕ) j, ev P i (b j) ∈ Fil P 0 := fun i j => (_root_.GlobalTheory.PMon.CrisPlus.plus_props l P AI T).2.1 _ (hb_plus j) i
   have hdetιb : P.ιB (Matrix.of fun i j : Fin h => P.φB^[i] (b j)).det ∈ Fil P 1 := by
     obtain ⟨k, hk⟩ := hμu
     change (P.ιB : P.R.B →+* P.R.BdR) _ ∈ _

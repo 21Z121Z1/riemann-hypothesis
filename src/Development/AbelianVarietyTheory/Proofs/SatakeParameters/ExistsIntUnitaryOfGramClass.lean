@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DvdPowZeroIff
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsElementaryDivisorsIntegralPreimageLattice
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LatticeKernelLeOfMatrixLatticeIndexEq
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ElementaryDivisorColumnsIndependentModUniformize
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GramClassElementaryDivisorColumnsCongrStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GramClassElementaryDivisorColumnsCongr
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IntegralWittTheoremModUniformizerPow
 
 noncomputable section
@@ -69,7 +69,7 @@ theorem exists_intUnitary_of_gramClass : ∀ (L : Type) [Field L] [Valued L (Wit
   have hzy : ∀ j r, zy j r ∈ Formalism.UG.intL L := fun j => (hyV _ (hej_int j)).mpr (hej_dvd j)
   have hix : GlobalTheory.Hk3.IntWitt.IndepMod ϖ zx := _root_.GlobalTheory.columns_indepMod L ϖ hvϖ n n' x Vm a hxV
   have hiy : GlobalTheory.Hk3.IntWitt.IndepMod ϖ zy := _root_.GlobalTheory.columns_indepMod L ϖ hvϖ n n' y Vm a hyV
-  have hgr := GlobalTheory.T.gramClass_elementaryDivisor_columns_congr L ϖ σ q hU n n' JT x y Vm a hVint hxV hGr
+  have hgr := _root_.GlobalTheory.Hk3.IntWitt.gram_class_columns L ϖ σ q hU n n' JT x y Vm a hVint hxV hGr
   obtain ⟨h, hh, hcong⟩ := _root_.GlobalTheory.Hk3.IntWittMod.witt_mod_pow L ϖ σ q hU hq n' JT hJT hT {j : Fin n // 0 < a j} (fun j => a j) zx zy
     (fun j => j.2) hzx hzy hix hiy (fun i j => hgr i j)
   refine ⟨h, hh, ?_⟩

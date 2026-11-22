@@ -175,8 +175,8 @@ theorem om_fock_top_of_mat {μ0 : T} (hL : L.Is μ0) (W : G.Weil) {U : Set T} (S
   obtain ⟨hf, hv⟩ := _root_.GlobalTheory.RowReal.movedVec_theta_fockVac W S t (.top t j) hp d hd
   have hc := _root_.GlobalTheory.RowReal.om_ptTop_movedVec hL W S g t j d hd
   have key := _root_.GlobalTheory.RowReal.om_fock_compact_all W (.top t j) j.2 (fun _ => (G.V (.top (j : ℕ))).rank) (fun _ => (G.V (.top ((j : ℕ) + 1))).rank)
-    (fun _ => le_rfl) (fun _ => le_rfl) (fun ρ => (GlobalTheory.T.definiteNode_cartan_orthonormalBasis_allPlaces hL W _ hX ρ).1) (fun ρ => (GlobalTheory.T.definiteNode_cartan_orthonormalBasis_allPlaces hL W _ hY ρ).1)
-    (fun ρ => (GlobalTheory.T.definiteNode_cartan_orthonormalBasis_allPlaces hL W _ hX ρ).2.1) (fun ρ => (GlobalTheory.T.definiteNode_cartan_orthonormalBasis_allPlaces hL W _ hY ρ).2.1) _ hf hv
+    (fun _ => le_rfl) (fun _ => le_rfl) (fun ρ => (_root_.GlobalTheory.RowReal.defNode_cart_onb_all hL W _ hX ρ).1) (fun ρ => (_root_.GlobalTheory.RowReal.defNode_cart_onb_all hL W _ hY ρ).1)
+    (fun ρ => (_root_.GlobalTheory.RowReal.defNode_cart_onb_all hL W _ hX ρ).2.1) (fun ρ => (_root_.GlobalTheory.RowReal.defNode_cart_onb_all hL W _ hY ρ).2.1) _ hf hv
     (fun τ => (u τ).1.submatrix (Fin.cast (rank_top G (j := j) j.2.le)) (Fin.cast (rank_top G (j := j) j.2.le)))
     (fun τ => (v τ).1.submatrix (Fin.cast (rank_top G (j := (j : ℕ) + 1) j.2)) (Fin.cast (rank_top G (j := (j : ℕ) + 1) j.2)))
     (fun ρ => isKMat_cast _ _ (Or.inl rfl)) (fun ρ => isKMat_cast _ _ (Or.inl rfl))

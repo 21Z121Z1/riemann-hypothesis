@@ -2,8 +2,8 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnitLemmaGroup
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LinearDescent
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DltEqZero
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteStableLatticesDifferenceTermNeZeroStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SignedInvolutionStableLatticeSumMulFixedUnitStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteStableLatticesDifferenceTermNeZero
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SignedInvolutionStableLatticeSumMulFixedUnit
 open GlobalTheory.UnitLemma GlobalTheory.UnitLemma.Desc Polynomial Filter Topology
 
 namespace GlobalTheory.UnitLemma.Desc
@@ -97,7 +97,7 @@ theorem HH_eq_alternating_GG : ∀ (K : UQ) (B : InvAlg K) (ι : Type) [Fintype 
       rw [mul_finsum_mem]
     · intro p hp
       rw [Finset.mem_product, Finset.mem_powerset, Finset.mem_powerset] at hp
-      refine (GlobalTheory.T.finite_stableLattices_differenceTerm_ne_zero K B ι e π S hL.2 hF ∅ ∅ (Finset.empty_subset _) (Finset.empty_subset _) _ _
+      refine (_root_.GlobalTheory.UnitLemma.Desc.finite_term_ne_zero K B ι e π S hL.2 hF ∅ ∅ (Finset.empty_subset _) (Finset.empty_subset _) _ _
         ((hPlus p.1 (hp.1.trans hI)).1.mul hu) ((hPlus p.2 (hp.2.trans Finset.sdiff_subset)).1.mul isUnit_one)).subset ?_
       rintro M ⟨hM, hne⟩
       refine ⟨hM, fun h => hne ?_⟩
@@ -120,7 +120,7 @@ theorem HH_eq_alternating_GG : ∀ (K : UQ) (B : InvAlg K) (ι : Type) [Fintype 
         · exact absurd hx (Finset.mem_sdiff.1 (hp.2 h)).2
       · intro h; exact ⟨Or.inl h, hp.1 h⟩
     have hy := hPlus p.2 (hp.2.trans Finset.sdiff_subset)
-    have hm := GlobalTheory.T.signedInvolutionStableLatticeSum_mul_fixed_unit K B ι π ∅ ∅ ((∏ j ∈ p.1, π j) * u) 1 (∏ j ∈ p.2, π j) hL hy
+    have hm := _root_.GlobalTheory.UnitLemma.Move.HH_mul_unit K B ι π ∅ ∅ ((∏ j ∈ p.1, π j) * u) 1 (∏ j ∈ p.2, π j) hL hy
     have hsq := eta_sq (K := K) (Algebra.norm K.E (∏ j ∈ p.2, π j))
     have hm' : HH B π ∅ ∅ ((∏ j ∈ p.1, π j) * u) ((∏ j ∈ p.2, π j) * 1) =
         K.eta (Algebra.norm K.E (∏ j ∈ p.2, π j)) *

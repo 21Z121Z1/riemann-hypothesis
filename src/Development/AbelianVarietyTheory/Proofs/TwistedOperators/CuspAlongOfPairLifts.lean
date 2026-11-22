@@ -6,12 +6,12 @@ import Formalism.SharpRestriction.Divisibility.SchurIrreducible
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsFockIPOfFockData
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowestKTypesJointShapeBlockInUnitaryS
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealThetaRuleExchangePairMembersStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SignedUnitaryGroupCompatStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SignedUnitaryGroupCompat
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesModelConjugateTransfer
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockVectorFrameChangeSameCartan
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HermitianAdjointLawsStandardCharacterStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HermitianAdjointLawsStandardCharacter
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsNegatedSpaceDiscreteSeriesModelTransport
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsConjWeilDatumExchangedPairStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsConjWeilDatumExchangedPair
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockVectorsConjAdjointPullbackBijection
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealThetaIntertwinerAdjointIsRealThetaIntertwine
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LowerTowerLiftsVanishOnFock
@@ -21,7 +21,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PairThetaLiftFac
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ContragredientThetaParamsAddBlockArrow
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ContragredientThetaParamsRemoveBlockArrow
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ContragredientThetaParamsColumnArrows
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ContragredientThetaParamsLastRowArrowsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ContragredientThetaParamsLastRowArrows
 
 noncomputable section
 
@@ -105,7 +105,7 @@ theorem LiftsM.transport (hθ : IsInfFam θ) (hσ : IdOrConj σ) (hA : ModelTr �
     (H : ∀ ν₁ 𝓕₁, ν₁.IsHaarMeasure → IsFundamentalDomain (GQ (sgn εA A)) 𝓕₁ ν₁ → LiftsM θ MA₁ MB₁ ν₁ 𝓕₁ K₁ It₁) :
     LiftsM θ MA MB ν 𝓕 K It := by
   intro F hF
-  obtain ⟨ν₁, a, b, c⟩ := (GlobalTheory.T.signedUnitaryGroup_compat D θ hθ εA A).meas ν 𝓕 hν h𝓕
+  obtain ⟨ν₁, a, b, c⟩ := (_root_.GlobalTheory.SgnIdent.sgnLaw_holds D θ hθ εA A).meas ν 𝓕 hν h𝓕
   obtain ⟨F₁, hF₁, e₁⟩ := hA.mult F hF
   obtain ⟨F₂, hF₂, e₂⟩ := H ν₁ _ a b F₁ hF₁
   obtain ⟨F', hF', e'⟩ := hB.mult' F₂ hF₂
@@ -129,8 +129,8 @@ theorem IsIntwF.transport (hθ : IsInfFam θ) (hσ : IdOrConj σ) (hA : ModelTr 
     (hpt : ∀ p, pt₁ (j p) = fun y => ρ (pt p (α y)))
     {It₁ : PolF D (sgn εA A).rank (sgn εB B).rank →ₗ[ℂ] SmT MA₁ →ₗ[ℂ] SmT MB₁}
     (hI : ∀ p v, κB (It₁ (j p) v) = It p (κA v)) : IsItW θ MB₁ MA₁ ω₁ pt₁ It₁ := by
-  have lA := GlobalTheory.T.signedUnitaryGroup_compat D θ hθ εA A
-  have lB := GlobalTheory.T.signedUnitaryGroup_compat D θ hθ εB B
+  have lA := _root_.GlobalTheory.SgnIdent.sgnLaw_holds D θ hθ εA A
+  have lB := _root_.GlobalTheory.SgnIdent.sgnLaw_holds D θ hθ εB B
   have inj : ∀ {f f' : Z → ℂ}, ((fun y => ρ (f (α y))) = fun y => ρ (f' (α y))) → f = f' := fun {f f'} h => by
     funext z
     obtain ⟨y, rfl⟩ := hα z
@@ -204,7 +204,7 @@ theorem exists_conj_neg (hθ : IsInfFam θ) {V : HSp D} {S : D.what₂.Tau → S
       ModelTr (starRingEnd ℂ) true θ M₁ M κ := by
   obtain ⟨N, κ, h⟩ := _root_.GlobalTheory.negModel_tr D θ hθ V S M
   obtain ⟨M₁, κ', h'⟩ := _root_.GlobalTheory.ConjModelTr.exists_conjModelTr D θ hθ (sgn true V) _ N
-  have l := GlobalTheory.T.signedUnitaryGroup_compat D θ hθ true V
+  have l := _root_.GlobalTheory.SgnIdent.sgnLaw_holds D θ hθ true V
   refine ⟨M₁, κ'.trans κ, fun c x => ?_, fun τ => (h'.cart τ).trans (h.cart τ), fun τ g hg x y => ?_, fun τ Y hY x y => ?_,
     fun w => ?_, fun v => ?_, fun F hF => ?_, fun F hF => ?_⟩
   · exact (congrArg κ (h'.smul c x)).trans (h.smul _ _)
@@ -307,8 +307,8 @@ theorem lifts_toTarget {X : ProvA} (hP : PairLifts D X) (hθ : IsInfFam θ)
     (hS.cart τ).trans (cart_frSgn ε (Fr.ofModel S.M) τ).symm
   have cT : ∀ τ, (Fr.ofModel MT).cart τ = (Fr.ofModel T.M).cart τ := hT.cart
   have hs := ha.weil.std
-  have L := GlobalTheory.T.hermitianAdjoint_laws_standardCharacter D ψ hs (sgn ε S.V) T.V
-  obtain ⟨ω', hW', hω'⟩ := GlobalTheory.T.exists_conj_weilDatum_exchangedPair D ψ _ _ _ _ _ ha.weil
+  have L := _root_.GlobalTheory.AdjLawPf.adjLaw D ψ hs (sgn ε S.V) T.V
+  obtain ⟨ω', hW', hω'⟩ := _root_.GlobalTheory.WeilConj.exists_conj_weilDatum D ψ _ _ _ _ _ ha.weil
   obtain ⟨j₀, hj₀, hj₀'⟩ := _root_.GlobalTheory.FockAdjoint.fock_dag D ψ θ hs hθ (sgn ε S.V) T.V (frSgn ε (Fr.ofModel S.M)) (Fr.ofModel T.M)
   obtain ⟨j, hj⟩ := _root_.GlobalTheory.FrameChange.ptF_frame_change D ψ θ hs hθ T.V (sgn ε S.V) _ _ _ _ cT cS
   have z : adjO (sgn ε S.V) T.V 0 = 0 := by
@@ -451,7 +451,7 @@ theorem cuspAlong_of_pairLifts {X : ProvA} (h3 : Formalism.MainNotions.SchurIrre
   · obtain ⟨M₁, κ, h⟩ := _root_.GlobalTheory.ConjModelTr.exists_conjModelTr D _ hθ _ _ (G.Xp j).M
     obtain ⟨M₂, κ', h'⟩ := _root_.GlobalTheory.ConjModelTr.exists_conjModelTr D _ hθ _ _ (G.Xp (j + 1)).M
     exact lifts_toTarget hP hθ h h'
-      (fun τ => rp (by rw [par_Xp hG hj, par_Xp hG hj.le]; exact GlobalTheory.T.contragredientThetaParams_lastRowArrows D hS j τ hj))
+      (fun τ => rp (by rw [par_Xp hG hj, par_Xp hG hj.le]; exact _root_.GlobalTheory.TopPair.pairPar_top D hS j τ hj))
       (hG.arrows.col t j hj) (fun τ => ⟨exp_mu hR t hj τ, exp_mu hR t hj τ⟩) hf (haar_Xp hG hj.le)
 
 end Grid

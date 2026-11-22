@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardLatticeTran
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndexStandardInfSkewThetaLatticeEqAbsNormPow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewIdealLatticePointRationalNormKills
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAddCharThetaCommutatorPhaseSkewLattice
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StabilizerCongruentOfCommutatorPhaseEqStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StabilizerCongruentOfCommutatorPhaseEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardPrincipalCongruenceTransversalLeAbsNormPow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumNormSqLeOfRootOfUnityAddCharCombination
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.ModelLatIn
@@ -98,7 +98,7 @@ theorem distinct (D : D7) (δ : ℂ) (hc : Crv D ⊤ δ) (𝔪 : Ideal (𝓞 D.h
         (z.map (inc D) - (unitBlock D o a d).map (inc D) * M) (σ i) j := by
     intro z M i j
     simp only [Matrix.sub_apply, Matrix.mul_apply, Matrix.map_apply, Matrix.submatrix_apply, id, hσ]
-  refine GlobalTheory.T.stabilizer_congruent_of_commutatorPhase_eq D δ hc 𝔪 h𝔪 hco hb (by omega) r r' hr hr' (x.submatrix σ id) (x'.submatrix σ id)
+  refine _root_.GlobalTheory.FunObj.StdDatum.PhaseCong.cong_of_kap_eq D δ hc 𝔪 h𝔪 hco hb (by omega) r r' hr hr' (x.submatrix σ id) (x'.submatrix σ id)
     (la_perm D _ _ _ σ _ hx) (la_perm D _ _ _ σ _ hx') (fun i j => by rw [key]; exact h1 _ _)
     (fun i j => by rw [key]; exact h2 _ _) fun y hy => ?_
   exact (kap_perm D _ σ (pt D (tor0 D ⊤ δ) δ x) y).trans

@@ -9,7 +9,7 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegularRingDetermin
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UnitAtOfMulRight
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChartPrimeGivesComponent
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentGivesChartPrime
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalizationsEqualBasicOpensStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalizationsEqualBasicOpens
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SmoothAdjoinInverse
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.KaehlerBasisAdjoinInverse
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncPatchBoundaryUnitsStatement
@@ -90,7 +90,7 @@ theorem exists_patch {N : ℕ} {x : Fin (N + 1) → Ω} {e : ℕ} {B : Set (Cpt 
       IsSncPatch (Pts ξ) (regAt ξ '' B) e (invAdj (chartQ x c) h) z n := by
   obtain ⟨A, z, n, q, hA, hq, hl⟩ := hP p hp
   obtain ⟨I, hI, hu, hIl⟩ := _root_.GlobalTheory.CompanionTheory.Ar.SncBase.Mdl.exists_prime_chartQ Ω X ξ _ x c hT p hp hc
-  obtain ⟨g, h, hg, hh, he⟩ := GlobalTheory.T.localizations_equal_basic_opens Ω A (chartQ x c) q I (regAt ξ p) hA.fg (chartQ_fg x c) hq hI hl hIl
+  obtain ⟨g, h, hg, hh, he⟩ := _root_.GlobalTheory.CompanionTheory.Ar.SncBase.CommonLoc.exists_common_loc Ω A (chartQ x c) q I (regAt ξ p) hA.fg (chartQ_fg x c) hq hI hl hIl
   have hg0 : (g : Ω) ≠ 0 := fun h0 => hg (by
     have : g = 0 := Subtype.ext h0
     rw [this]; exact q.zero_mem)

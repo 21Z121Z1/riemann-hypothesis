@@ -30,11 +30,11 @@ theorem exists_unit_secZ_keyRule : ∀ (κ : GlobalTheory.KeyCl.Rule), GlobalThe
   intro κ h₁ h₂ h₃ E _ _ _ H Dw l Xo c g e hpq
   obtain ⟨hL, -, h, hA⟩ := evLaws_genFr_atlas E H Dw l Xo c
   obtain ⟨v, hv⟩ := exists_chart_units h₁ h₂ h₃ e hpq h
-  obtain ⟨f, hf, hfb⟩ := GlobalTheory.T.exists_integer_exponent_section_of_chart_regular E H Dw l Xo c h ((4 : ℤ) • keyEx Dw) (fun Z => (v Z : Om Z)) fun C => by
+  obtain ⟨f, hf, hfb⟩ := _root_.GlobalTheory.SecGlueInt.exists_secZ_of_regular E H Dw l Xo c h ((4 : ℤ) • keyEx Dw) (fun Z => (v Z : Om Z)) fun C => by
     obtain ⟨-, u, -, -, huv⟩ := hv C
     rw [prod_zpow_four_smul_keyEx, ← Units.val_mul, ← huv]
     exact (u : C.R).2
-  obtain ⟨f', hf', hfb'⟩ := GlobalTheory.T.exists_integer_exponent_section_of_chart_regular E H Dw l Xo c h (-((4 : ℤ) • keyEx Dw))
+  obtain ⟨f', hf', hfb'⟩ := _root_.GlobalTheory.SecGlueInt.exists_secZ_of_regular E H Dw l Xo c h (-((4 : ℤ) • keyEx Dw))
       (fun Z => (((v Z)⁻¹ : (Om Z)ˣ) : Om Z)) fun C => by
     obtain ⟨-, u, -, -, huv⟩ := hv C
     have hm : Units.map (C.R.val : C.R →* Om C.Z) u = kch C.t ^ 4 * v C.Z := Units.ext huv

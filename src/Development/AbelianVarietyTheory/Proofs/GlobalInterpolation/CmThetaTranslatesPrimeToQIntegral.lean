@@ -8,8 +8,8 @@ import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LatticeJetsAr
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.CmBaseFieldIntegersAndCurveIdealFacts
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DiscOneScaleRatioIdealRingAlgebraicUnit
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.EvenThetaFunctionCmLatticeIntegralSplitPrime
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TranslatePrimeToOrderPreservesThetaIntegralityStatement
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.EvenThetaIteratedDerivZeroAlgebraicStatement
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TranslatePrimeToOrderPreservesThetaIntegrality
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.EvenThetaIteratedDerivZeroAlgebraic
 
 noncomputable section
 
@@ -194,7 +194,7 @@ theorem eOne_algJets (hc : IsCurveIdeal D cc) (hδ : IsDiscriminantTwelfthRootOf
   have hj := jet_one (contDiff_base_even_theta_kernel B) k (fun j => δ₀⁻¹ • ys j)
   show iteratedFDeriv ℂ k (fun z : Fin 1 → ℂ => B.th0 (z 0)) 0 (fun j => δ₀⁻¹ • ys j) ∈ Qbar
   rw [hj]
-  refine mul_mem (prod_mem fun j _ => ?_) (GlobalTheory.T.iteratedDeriv_th0_zero_mem_Qbar D cc δ B hc hδ k)
+  refine mul_mem (prod_mem fun j _ => ?_) (_root_.GlobalTheory.ThetaZeroAlg.evenTheta_iteratedDeriv_zero_algebraic D cc δ B hc hδ k)
   simpa using hdir j
 
 end Main
@@ -221,7 +221,7 @@ theorem latInt_opU_of_coprime : ∀ (D : D7) (cc : Ideal (𝓞 D.host.K)) (δ : 
       (fun x hx => ⟨1, Nat.coprime_one_left q, by
         rw [one_smul]; exact (GlobalTheory.FourthRootStd.mem_iff B _).1 hx⟩)
       (_root_.GlobalTheory.MomN.latInt_th0_of_split_prime D cc δ B hc hδ q hq2 hj hcop ι δ₀ θ Ω hPer)
-  have hres := GlobalTheory.T.translate_primeToOrder_preserves_theta_integrality q ι δ₀ θ Ω 1 (setupOne D.host.d B.L) (eOne B) (fun _ => s) hPer hOk
+  have hres := _root_.GlobalTheory.MomTrans.latInt_translate q ι δ₀ θ Ω 1 (setupOne D.host.d B.L) (eOne B) (fun _ => s) hPer hOk
     (Or.inr ⟨hq2, hj⟩) (eOne_theta B) (eOne_algJets B hc hδ hd0) hprime hLat
   have hU : JMB.opU (setupOne D.host.d B.L).Hm (fun _ => s) (eOne B)
       = fun z : Fin 1 → ℂ => Formalism.L2.Th1.F.opU B.L s B.th0 (z 0) := by

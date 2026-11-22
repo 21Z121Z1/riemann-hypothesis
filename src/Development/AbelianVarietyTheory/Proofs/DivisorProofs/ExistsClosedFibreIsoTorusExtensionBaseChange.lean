@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPullPt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCocycleUnit
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.BCTools
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGrpPullbackThickeningOfCarriesTorusCoordinatesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGrpPullbackThickeningOfCarriesTorusCoordinates
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusExtensionPointOfThickeningEqTransport
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -25,7 +25,7 @@ theorem closedFibre_iso : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRing 
   let κ : ResidueField R →+* ResidueField W := ResidueField.map T.φ
   have hκ : κ.comp (residue R) = (residue W).comp T.φ := RingHom.ext fun r => ResidueField.map_residue T.φ r
   obtain ⟨φ₀, hφ₀⟩ := GlobalTheory.FormalModel.exists_carries T.hD Y.rep (T.U.gt 0)
-  have gA := GlobalTheory.T.isGrpPullback_thickening_of_carries_torusCoordinates T.hD T.U.toUnifPre Y hφ₀
+  have gA := _root_.GlobalTheory.FormalModel.isGrpPullback_of_carries T.hD T.U.toUnifPre Y hφ₀
   have hle : maximalIdeal W ^ (0 + 1) ≤ RingHom.ker (residue W) := by
     rw [zero_add, pow_one, ker_residue]
   let c : W ⧸ maximalIdeal W ^ (0 + 1) →+* ResidueField W :=

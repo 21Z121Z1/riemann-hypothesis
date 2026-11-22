@@ -1,7 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Jets.DepthNumbersThresholdEq
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsCutIntoBoundedGroupsFinset
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.MonomialBlockSupplyBothTypingsStatement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.MonomialBlockSupplyBothTypings
+import Formalism.LocalToGlobal.CharacterGerms.ContentLargeFromSupplies
+import Formalism.LocalToGlobal.CharacterGerms.ContentZeroAt
+import Formalism.LocalToGlobal.CharacterGerms.LatticeInclusionFormsInjective
 
 open Formalism.L2.FormalSeriesBounds Formalism.IncomingBounds Formalism.UnitaryBoundIntegral Formalism.L2.DIV
 open scoped BigOperators

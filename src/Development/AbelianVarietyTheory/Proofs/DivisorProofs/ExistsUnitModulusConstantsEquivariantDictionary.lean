@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFrameConstantsOfCharacterisationCore
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelActionEquivariantAtFrameConstantsOfClausesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelActionEquivariantAtFrameConstantsOfClauses
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMapRowOfSerOfCore
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCuspFormClassSumNormalisedData
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdelicLiftEqGeometricClassSumAllTuples
@@ -21,7 +21,7 @@ theorem exists_ccIs_equivAt_serOf_oneMapRow_core : Formalism.MainNotions.ModuliI
   intro hC D G _ _ Pl0 T0 A T _ R F κ v₀ hR hT hI i Tp tup O hP
   obtain ⟨cc, hcc⟩ := _root_.GlobalTheory.AdTh.CcExCore.exists_ccIs_core hC D G Pl0 T0 A T R F κ v₀ hR hT i Tp tup O hP
   obtain ⟨u, hu, hS⟩ := _root_.GlobalTheory.AdTh.SerCore.exists_serOf_core hC D G Pl0 T0 A T R F κ v₀ hR hT hI i Tp tup O hP cc hcc
-  exact ⟨cc, hcc, u, hu, GlobalTheory.T.levelAction_equivariant_at_frameConstants_of_clauses hC D G Pl0 T0 A T R F κ v₀ hR hT i Tp tup O hP cc hcc u, hS,
+  exact ⟨cc, hcc, u, hu, _root_.GlobalTheory.FrameConstMoveCore.equivAt_of_ccIs_core hC D G Pl0 T0 A T R F κ v₀ hR hT i Tp tup O hP cc hcc u, hS,
     GlobalTheory.AdTh.oneMapRow_of_serOf_core D G Pl0 T0 A T R F κ v₀ hR hT i Tp tup O hP (u • cc) hS
       (_root_.GlobalTheory.ClassSumRule.exists_cusp_isThClsD_core hC D G Pl0 T0 A T R F κ v₀ hR hT i Tp tup O hP)⟩
 

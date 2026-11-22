@@ -16,9 +16,9 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FockPolynomial
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FockTargetGlActionCompactPreservesJointHarmonics
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsKHwMap
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsIrreducibleOfAnisotropicFormHighestWeightStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FockInnerProductPosDefCompactMatrixUnitAdjointStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FockInnerProductPosDefCompactMatrixUnitAdjoint
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FockTargetMatrixUnitCompactTotalDegreeLeStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitaryRepresentativesExistVectorStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitaryRepresentativesExistVector
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsHighestWeightKTypeMap
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSourceHighestWeightFockStableSubspace
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JointHarmonicHighestWeightMultiplicityOne
@@ -48,7 +48,7 @@ theorem lowestKType_irreducible : ∀ (D : D7) (n m : ℕ) (w : GlobalTheory.Exp
   obtain ⟨s, hsS, hs0⟩ := Submodule.exists_mem_ne_zero_of_ne_bot hS0
   have hseq := hSeq s hsS
   have hsinj := hinj s hseq hs0
-  choose A hA using fun τ a b => GlobalTheory.T.unitary_representatives_exist_vector D n m w BS K r hU2 W ρ s hsinj hseq τ a b
+  choose A hA using fun τ a b => _root_.GlobalTheory.UnitaryToGl.exists_transport_sop D n m w BS K r hU2 W ρ s hsinj hseq τ a b
   have hV0 : LinearMap.range s ≠ ⊥ := by rwa [Ne, LinearMap.range_eq_bot]
   have hVst : ∀ P ∈ LinearMap.range s, ∀ (τ : D.what₂.Tau) (a b : Fin n),
       GlobalTheory.LowestKType.sop w τ a b P ∈ LinearMap.range s := by
@@ -80,7 +80,7 @@ theorem lowestKType_irreducible : ∀ (D : D7) (n m : ℕ) (w : GlobalTheory.Exp
     LinearMap.llcomp ℂ W (PolF D m n) (PolF D m n) (GlobalTheory.LowestKType.kop w j.1.1 j.1.2.1 j.1.2.2)
   have hE : ∀ j ψ, E j ψ = GlobalTheory.LowestKType.kop w j.1.1 j.1.2.1 j.1.2.2 ∘ₗ ψ := fun _ _ => rfl
   let st : J → J := fun j => ⟨(j.1.1, j.1.2.2, j.1.2.1), Iff.symm j.2⟩
-  obtain ⟨B, hBpos, hBani, hBadj⟩ := GlobalTheory.T.fockInnerProduct_posDef_compact_matrixUnit_adjoint D n m
+  obtain ⟨B, hBpos, hBani, hBadj⟩ := _root_.GlobalTheory.LowestKType.fockForm_kop_adjoint D n m
   let e := Module.finBasis ℂ W
   let BM : (W →ₗ[ℂ] PolF D m n) →ₗ⋆[ℂ] (W →ₗ[ℂ] PolF D m n) →ₗ[ℂ] ℂ :=
     LinearMap.mk₂'ₛₗ (starRingEnd ℂ) (RingHom.id ℂ) (fun ψ χ => ∑ i, B (ψ (e i)) (χ (e i)))

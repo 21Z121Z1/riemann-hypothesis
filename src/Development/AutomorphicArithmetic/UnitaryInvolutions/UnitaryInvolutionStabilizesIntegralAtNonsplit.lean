@@ -31,7 +31,7 @@ theorem UpperTheory.unitary_involution_stabilizes_integral_at_nonsplit :
   obtain ⟨k, _, _, _, c, ϖ, ω, hG, hc, hcϖ, hϖ, hcomp, hsep, hfin, hω⟩ := UpperTheory.exists_local_quadratic_galois_data_at_nonsplit_place E hU w hw
   have core := UpperTheory.twistedConj_of_charpoly_mul_galConj_eq_of_separable k (Ov E w) c hG
     (UpperTheory.normIn_of_free_algebra_of_complete_quadratic k (Ov E w) c ϖ ω hG hcϖ hϖ hcomp hsep hfin hω) n
-  have hconj := ((GlobalTheory.T.placeConjugation_properties_cmField E hU w).2.2.2.1 hw).1
+  have hconj := ((_root_.GlobalTheory.ConjAtPlace.main E hU w).2.2.2.1 hw).1
   obtain ⟨ι, hιdef⟩ : ∃ ι : GL (Fin n) (Ov E w) →* GLw n w, ι = Formalism.UG.bc (Ov E w).subtype := ⟨_, rfl⟩
   have hιv : ∀ a, (ι a).val = a.val.map (Ov E w).subtype := fun a => by rw [hιdef]; rfl
   have hinj : Function.Injective ι := fun a b e =>

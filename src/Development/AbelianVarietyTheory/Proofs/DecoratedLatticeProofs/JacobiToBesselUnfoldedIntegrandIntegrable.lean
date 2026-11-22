@@ -9,8 +9,8 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PairedFlat
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnfoldedTermBasePointEqFlatMapPairing
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnfoldedBesselJacobiIntegralAbsLe
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RationalUnitarySubgroupCountableDiscreteFundDoma
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FourierBesselBasePointIsUnfoldingBasePointSpecStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicMatrixQuotientPeriodicIntegralContinuousPaStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FourierBesselBasePointIsUnfoldingBasePointSpec
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicMatrixQuotientPeriodicIntegralContinuousPa
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnfoldingLevelsAndStepsHaarMeasuresExist
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsQuasiFam
 
@@ -33,7 +33,7 @@ theorem quasiFam_bdd_on_compact {D : D7} {ψ : AddChar (AF D.host.F) ℂ} (hψ :
     have hq := hY.quasi p γ' x
     have h1 : (incA D).toAddMonoidHom.mapMatrix γ' = ratW L S γ' := rfl
     simp only [hKf, h1, hq, norm_mul, hψ.1.2.1, one_mul]
-  obtain ⟨-, -, hloc, -⟩ := GlobalTheory.T.adelicMatrixQuotient_periodicIntegral_continuous_param D L.rank S.rank v (GA D S) Kf hc hper
+  obtain ⟨-, -, hloc, -⟩ := _root_.GlobalTheory.Unf.ParCont.parCont D L.rank S.rank v (GA D S) Kf hc hper
   choose C hC using hloc
   obtain ⟨t, -, hcov⟩ := hK.elim_nhds_subcover (fun p => {q | ∀ x, ‖Kf x q‖ ≤ C p}) (fun p _ => hC p)
   refine ⟨∑ p ∈ t, |C p|, fun h hh w => ?_⟩
@@ -47,7 +47,7 @@ theorem unfolded_integrable : ∀ (D : D7), Descent D → ∀ (ψ : AddChar (AF 
   haveI := J.v0.haar
   haveI := s.vW.haar
   obtain ⟨hcont, hinv, -⟩ := _root_.GlobalTheory.Unf.FB.TFlatFam.main D hD ψ σ J B s vL Y Φ hY hΦ
-  obtain ⟨x₀, hx₀, hbase, hR, -, -⟩ := GlobalTheory.T.fourierBesselBasePoint_isUnfoldingBasePoint_spec D σ B
+  obtain ⟨x₀, hx₀, hbase, hR, -, -⟩ := _root_.GlobalTheory.Unf.FB.basePoint_spec D σ B
   obtain ⟨om', hom'⟩ := (hD ψ J.W B.V s.χV s.χW s.om s.weil).1 J.W₀ (σ + 1) J.d
   obtain ⟨-, -, hvb, -⟩ := _root_.GlobalTheory.Unf.VolExist.measures_exist D
   obtain ⟨vb⟩ := hvb (σ + 1) J.W₀.rank

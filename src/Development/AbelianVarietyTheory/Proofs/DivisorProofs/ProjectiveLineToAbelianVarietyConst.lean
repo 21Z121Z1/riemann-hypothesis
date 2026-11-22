@@ -7,7 +7,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FibreLineOverSurjection
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AffineLineMorphismConstantOfConstOnNonzero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PuncturedLineOpenCofinite
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjectiveLineChartFamiliesAgreeOnOverlapStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjectiveLineChartFamiliesAgreeOnOverlap
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry
 open scoped CategoryTheory.Obj CategoryTheory.MonObj Pointwise
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -31,7 +31,7 @@ theorem projLine_map_const : ∀ (k : Type) [Field k] [IsAlgClosed k] (B : Over 
   have hti : t * ti = 1 := IsLocalization.Away.mul_invSelf (X : Polynomial k)
   let g₀ := famMap B f₀ h0 L t
   let g₁ := famMap B f₁ h1 L ti
-  have hc := GlobalTheory.T.projectiveLine_chart_families_agree_on_overlap B f₀ f₁ h0 h1 h01 L t ti hti
+  have hc := _root_.GlobalTheory.LineConst.famMap_loc_eq B f₀ f₁ h0 h1 h01 L t ti hti
   let V : Set (Sp L) := {τ | ∀ x : Sp (Polynomial L), spMap (algebraMap L (Polynomial L)) x = τ → g₀ x ∈ W ∧ g₁ x ∈ W}
   have hV : IsOpen V := GlobalTheory.T.isOpen_setOf_fibre_charts_mem L _ g₀ g₁ hc W
 
@@ -97,7 +97,7 @@ theorem projLine_map_const : ∀ (k : Type) [Field k] [IsAlgClosed k] (B : Over 
     obtain ⟨χ, hχt, hχV⟩ := hcF hc0
     obtain ⟨hA, hB'⟩ := hW₀ χ hχV
     have hu : χ t * χ ti = 1 := by rw [← map_mul, hti, map_one]
-    have hcmp := GlobalTheory.T.projectiveLine_chart_families_agree_on_overlap B f₀ f₁ h0 h1 h01 k (χ t) (χ ti) hu
+    have hcmp := _root_.GlobalTheory.LineConst.famMap_loc_eq B f₀ f₁ h0 h1 h01 k (χ t) (χ ti) hu
     have key := GlobalTheory.T.eq_spMap_comp_eval_zero_of_chart_comp_eq k B.left W hW _ _ hA hB' hcmp
     have := scale_inv_of_famMap B f₀ h0 (χ t) key
     simpa [t, hχt] using this

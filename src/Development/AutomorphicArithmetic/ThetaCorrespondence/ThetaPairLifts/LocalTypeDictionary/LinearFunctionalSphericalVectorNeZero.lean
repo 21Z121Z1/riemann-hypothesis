@@ -52,7 +52,7 @@ theorem linearFunctional_sphericalVector : _root_.GlobalTheory.FunPr.ThetaLocalI
     have hmem : x ∈ latAtV X W v := by
       refine (GlobalTheory.LatSelfDualAll.latAtV_selfDual F E σ B n d X W r s r' s' hPair.base hPair.herm hPair.skew v x hx).2
         fun γ hγ => ?_
-      obtain ⟨γ₁, hγ₁, γ₂, hγ₂, rfl, h₁, h₂⟩ := GlobalTheory.T.tensorLatticeAtFinitePlace_eq_sum_splitPlace_parts hcm X W v t γ hγ
+      obtain ⟨γ₁, hγ₁, γ₂, hγ₂, rfl, h₁, h₂⟩ := _root_.GlobalTheory.LatSplit.latAtV_decomp hcm X W v t γ hγ
       rw [symp_add_right, symp_eq_zero_of_comp hcm t hx hx0 h₁, zero_add]
       exact hψ γ₂ hγ₂ h₂
     exact GlobalTheory.T.splitPlace_tensorLattice_component_integral X W v t b c hb hc x hmem

@@ -136,7 +136,7 @@ theorem GlobalTheory.ThPFock.fock_sph_prin : ∀ (D : D7) (G : Type) [Group G] [
   · intro κ hκ
     have hl := is_lift_of_mem_principal_congruence R i t hκ
     have hv : R.ωP i t (κ, 1) (R.vP i t) = (1 : ℂ) • R.vP i t := by
-      rw [GlobalTheory.T.weilAction_liftPair_stepVector_invLevelChar R hC.lev hC.models.inf hC.thP.ωP hC.thP.vP i t 1 κ 1 hl (is_lift_one_principal_level R i),
+      rw [_root_.GlobalTheory.VecInv.omega_lifts_vP R hC.lev hC.models.inf hC.thP.ωP hC.thP.vP i t 1 κ 1 hl (is_lift_one_principal_level R i),
         levChi_flag_of_mem_prin R i t hκ, inv_one]
     have := GlobalTheory.FiniteFock.om_pureTensorO_of_finite R.ψ R.θ (Vc D i) (Wc D i) _ _ (R.ωP i t) hθ
       (hC.thP.ωP i t) _ _ _ _ _ hpt κ hl.1 1 (Subgroup.one_mem _) 1 hv P

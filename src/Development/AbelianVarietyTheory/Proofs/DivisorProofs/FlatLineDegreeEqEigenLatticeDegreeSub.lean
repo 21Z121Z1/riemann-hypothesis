@@ -3,7 +3,8 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.HtValOnSubset
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RamificationWeightedLogNormSum
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.DegOfLatRankEqZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameCoord
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicLineDegreeInvariantFiniteExtensionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicLineDegreeInvariantFiniteExtension
+import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsFlatSecRankZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatSectionNeZeroAtNumberFieldPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HostIntegerCharacterCompConjEqConjEmbedding
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFrameCoordsBasisEigenLatticeSpan
@@ -29,7 +30,7 @@ theorem lineDeg_eq_deg_eigLat_sub : ∀ (E : Type) [Field E] [NumberField E] [Is
   have hlat := _root_.GlobalTheory.LatDetDeg.lineDeg_det_line K h _ _ (GlobalTheory.CM.DegBound.eigLat_fg F _ _) (GlobalTheory.CM.DegBound.eigLat_fg F _ _) u u' hui hus hui'
     hus' _ (_root_.GlobalTheory.FlatPointNe.evR_sig_ne_zero E H Dw l Xo c r U x hL Z τ s K y hy) (fun 𝔓 => (ε 𝔓 : ℝ) * ρ (π 𝔓)) hfin
   have harch := _root_.GlobalTheory.PtDegArch.cInf_eq_frame_norm E H Dw l Xo c r U x hL Z τ s K y hy B t₀ m1 m2 F h hh u u' hu hu'
-  obtain ⟨hf, hd⟩ := GlobalTheory.T.adelicLine_degree_invariant_finite_extension c.F K π ε hπ s.cInf ρ hlat.1
+  obtain ⟨hf, hd⟩ := _root_.GlobalTheory.FlatLine.lineDeg_descent c.F K π ε hπ s.cInf ρ hlat.1
   refine ⟨hf, hd.trans ?_⟩
   rw [← hlat.2]
   congr 1

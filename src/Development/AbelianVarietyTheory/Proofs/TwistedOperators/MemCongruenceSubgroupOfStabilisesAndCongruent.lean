@@ -85,7 +85,7 @@ theorem cong_assemble : ∀ (D : D7) (V : HSp D) (Λ : Submodule (𝓞 D.host.E)
   have hcomp : ∀ PP ∈ Z, GlobalTheory.AdelicU.proj D.sp.cm.sig V.gram (PP.under (𝓞 D.host.F)) k =
       GlobalTheory.AdelicU.proj D.sp.cm.sig V.gram (PP.under (𝓞 D.host.F)) g := fun PP hP => by
     rw [← GlobalTheory.SuppLevO.proj_finPartG V g]
-    exact _root_.GlobalTheory.CompIdem.projV_eq_of_idem V _ _ k _ (GlobalTheory.T.adeleTensorComponent_idempotentSum_add_conj_eq_one Z e hZe PP hP) hmt
+    exact _root_.GlobalTheory.CompIdem.projV_eq_of_idem V _ _ k _ (_root_.GlobalTheory.CompFinIdemSum.compFin_add_cA_eq_one Z e hZe PP hP) hmt
   have hkloc := (_root_.GlobalTheory.ChainOnto.LStab.finE_mem_St_iff_stabLoc D V β Λ hfr k).1 hSt
   have hgSt : Lev.finE V g ∈ Formalism.L2.DIV.St β := by
     refine (_root_.GlobalTheory.ChainOnto.LStab.finE_mem_St_iff_stabLoc D V β Λ hfr g).2 fun v => ?_

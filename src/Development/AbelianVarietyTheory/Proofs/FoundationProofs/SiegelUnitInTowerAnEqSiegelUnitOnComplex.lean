@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelFunctionHo
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelFunctionTransformationStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SmoothedSiegelUnitIndexAddIntVector
 import Development.AbelianVarietyTheory.Definitions.Foundations.Imports
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SmoothedSiegelUnitQExpansionCoeffsIntegralStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SmoothedSiegelUnitQExpansionCoeffsIntegral
 
 noncomputable section
 
@@ -102,7 +102,7 @@ theorem exp_int {Ω : Type} [Field Ω] [Algebra ℚ Ω] [IsAlgClosed Ω] (ε : �
     · rw [hyx]; push_cast; rw [hm1]; ring
   have hper : ∀ τ : ℍ, sg c y τ = sg c x' τ := fun τ => by
     rw [hyx]; exact _root_.GlobalTheory.Sieg.Per.sg_add_int c x' n τ hadm
-  obtain ⟨k, hk⟩ := GlobalTheory.T.smoothedSiegelUnit_qExpansion_coeffs_integral c M a0 hM hlt
+  obtain ⟨k, hk⟩ := _root_.GlobalTheory.SiegQ.sg_expansion_int c M a0 hM hlt
   obtain ⟨A, hQ, -, hA, -, -⟩ := hk a1 hadm
   have hε : ∀ j, ε (Function.invFun ε (A j)) = A j := fun j =>
     Function.invFun_eq (mem_range_of_isIntegral ε (isIntegral_of_mem_adjoin hM (hA j)))

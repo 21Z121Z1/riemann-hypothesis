@@ -1,7 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsHeatZero
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HermitianWeilActionUnitaryGroupTestFunctions
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SchwartzBruhatInvariantIntegralMatrixMulStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SchwartzBruhatInvariantIntegralMatrixMul
+import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IMemSiegel
 
 open Matrix Complex NumberField GlobalTheory.SW Filter Topology
 open ReciprocityTheory.ChartRestriction.G.FD (cc herm)
@@ -128,7 +129,7 @@ theorem GlobalTheory.SW.weil_comp_unitary : ∀ (E : Type) [Field E] [NumberFiel
     exact right_ne_zero_of_mul_eq_one h1
   have hSB : ∀ ψ : Matrix (Fin n) (Fin N) E → ℂ, IsSB ψ →
       IsSB (fun x : Matrix (Fin n) (Fin N) E => ψ (h * x)) :=
-    fun ψ hψ => ((GlobalTheory.T.schwartzBruhatInvariantIntegral_matrix_mul E (Fin n) (Fin N) ψ hψ).2 h hdet).1
+    fun ψ hψ => ((_root_.GlobalTheory.SW.LinChange.haar_mul E (Fin n) (Fin N) ψ hψ).2 h hdet).1
   have hw : ∀ γ ∈ UU E N, weil Ψ γ (fun x => φ (h * x)) = fun x => weil Ψ γ φ (h * x) := by
     intro γ hγ
     obtain ⟨h1, h2, -⟩ := _root_.GlobalTheory.SW.weil_action E Ψ hΨ n N hn γ hγ φ hφ

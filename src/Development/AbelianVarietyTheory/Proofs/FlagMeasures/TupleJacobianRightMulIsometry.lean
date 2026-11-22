@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsPrincipalIdealRing
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsEqZpowMulUnit
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OrthonormalBasisAndOneOrbit
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RelVolMul
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RelativeLatticeVolumeOfDetValuationStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RelativeLatticeVolumeOfDetValuation
 
 open ValuativeRel Formalism.MainNotions.S.Loc GlobalTheory.HL MeasureTheory
 open scoped Pointwise ENNReal Classical
@@ -122,7 +122,7 @@ theorem cont_linearEquiv [IsNonarchimedeanLocalField F] [CharZero F] (L : LocE F
   obtain ⟨c, hc, hN⟩ := exists_int_basis L
   obtain ⟨B, hB⟩ := exists_lat_basis L Hm hH Λ hΛ
   have := L.free
-  have h := GlobalTheory.T.relative_lattice_volume_of_det_valuation ϖ hϖ (Pi.basis fun _ : Fin m => c.smulTower B) (φ.restrictScalars F) a u
+  have h := _root_.GlobalTheory.HL.LatDet.relVol_map ϖ hϖ (Pi.basis fun _ : Fin m => c.smulTower B) (φ.restrictScalars F) a u
     (by
       apply GlobalTheory.UnramOrder.algebraMap_inj L
       rw [← hd, ← hN, ← LinearMap.det_restrictScalars]

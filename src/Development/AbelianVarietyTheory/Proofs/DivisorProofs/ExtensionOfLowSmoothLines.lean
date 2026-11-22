@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.GenReads
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaVectorTorusAction
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaVectorFockVacuumStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaVectorFockVacuum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaVectorNeZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PureTensorOInjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaPairCharactersAtLevel
@@ -161,7 +161,7 @@ theorem ioExt : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 T0 : Type) (A
   intro D G _ _ Pl0 T0 A Ks _ _ _ R F hR hV hM i
   obtain ⟨hs, hl⟩ := hM i
   obtain ⟨-, hK, v, w, hv1, hw1, hio⟩ := hR.thP.ioP i A.μ0
-  obtain ⟨hth, hvac, hcW, hcV, hbW⟩ := GlobalTheory.T.theta_vector_fock_vacuum D G Pl0 T0 A Ks R F hR i A.μ0 (hV i)
+  obtain ⟨hth, hvac, hcW, hcV, hbW⟩ := _root_.GlobalTheory.AdTh.VecFock.vec_fock D G Pl0 T0 A Ks R F hR i A.μ0 (hV i)
   have hP := (GlobalTheory.AdTh.RecPair.isPair_record D G Pl0 T0 A Ks R F hR i A.μ0 (hV i)).1
   have hinj := GlobalTheory.FockVecInj.pureTensorO_injective D R.ψ R.θ (Vc D i) (Wc D i) hP.weil.std hP.inf (fun _ => 1) (R.BV i)
     (cart (R.MW i (sg0 D A))) (onb (R.MW i (sg0 D A))) (fun _ => (Vc D i).rank) (fun τ => ((Wc D i).sig (tauE D τ)).1)

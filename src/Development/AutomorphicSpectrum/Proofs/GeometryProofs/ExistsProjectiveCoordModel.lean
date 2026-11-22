@@ -17,8 +17,9 @@ import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NormalIsoOfIntegral
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordOverIntOfFiniteOrder
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CoordsAt
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordsSingleBlockSegreStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncPointsTransferDominatingStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtFractionNoetherianClosedStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncPointsTransferDominating
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtFractionNoetherianClosed
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsDomainAndIsIntegrallyClosedAtPrimeOfSmoothOfCo
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.SncBase GlobalTheory.CompanionTheory.Ar.GeoModel
@@ -71,12 +72,12 @@ theorem GlobalTheory.CompanionTheory.Ar.GeoModel.NormPatch.exists_normal_model :
     intro q hq
     have hc : Char0 ξ q := fun r hr hf => hf (hq r hr.pos)
     obtain ⟨A, z, n, P, hp, hP, hloc⟩ := hsnc q hc
-    haveI := (GlobalTheory.T.regAt_fraction_noetherian_closed X Ω ξ htie.gen q).1
+    haveI := (_root_.GlobalTheory.CompanionTheory.Ar.RegAtRing.regAt_ring X Ω ξ htie.gen q).1
     exact _root_.GlobalTheory.CompanionTheory.Ar.NormAt.isoAt_of_integrallyClosed X Ω ξ M'.X M'.ξ f q (hat q)
       (fun a ha => mem_of_isIntegral_of_isLocAt _ A hp.smooth P hP hloc a ha)
   obtain ⟨N', x', hx'⟩ := _root_.GlobalTheory.CompanionTheory.Ar.coordTie_int_of_finite M'.X Ω M'.ξ ℤ κ' y M'.tie
   have hone := GlobalTheory.T.coords_single_block_segre M'.X Ω M'.ξ N' x' hx'
-  have hsnc' := GlobalTheory.T.snc_points_transfer_dominating Ω (Fin (N + 1)) _ x _ X M'.X ξ M'.ξ f e Ab hall M'.all htie hone hdom' hiso hsnc
+  have hsnc' := _root_.GlobalTheory.CompanionTheory.Ar.PatchIso.sncPts_of_isoAt Ω (Fin (N + 1)) _ x _ X M'.X ξ M'.ξ f e Ab hall M'.all htie hone hdom' hiso hsnc
   exact ⟨Unit, inferInstance, fun _ => Fin (N' + 1), fun _ => inferInstance, fun p => x' p.2,
     { X := M'.X, ξ := M'.ξ, s := M'.s, hover := M'.hover, all := M'.all, tie := hone }, f,
     inferInstance, hdom', hnorm, hsnc'⟩

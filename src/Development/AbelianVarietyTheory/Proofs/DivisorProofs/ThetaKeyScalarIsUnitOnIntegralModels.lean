@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPreimmersionFlatV
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationSubringDedekindOpenImmersion
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArcPropertyLocalisationBaseChangeOfModel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitFibresLocalisedModelBaseChange
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitThetaKeyRuleOpenModelChartStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitThetaKeyRuleOpenModelChart
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitThetaKeyScalarGoodReductionChart
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGeneratingFrameUnitChangeToChartStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatFibrePowerAndExternalTensorSectionNonzeroCloStatement
@@ -79,7 +79,7 @@ theorem exists_chart_unit {W : ValuationSubring c.F} (Y : Model Xo c W.subtype) 
   have hj : IsOpenImmersion Y.j := by unfold Model.j; infer_instance
   obtain ⟨-, -, -, -, -, hdom, -⟩ := GlobalTheory.genericPart_dense_proOpen W c.F Y.X _ Y.s Y.jQ Y.flat Y.proj Y.jQ_open Y.jQ_dense
   have hdense : Dense (Set.range Y.j) := hdom.denseRange
-  obtain ⟨W₀, f₀, hW, hf⟩ := GlobalTheory.T.exists_unit_thetaKeyRule_open_model_chart E H D l Xo c _ _ Y inferInstance hj hpq κ hκ M
+  obtain ⟨W₀, f₀, hW, hf⟩ := _root_.GlobalTheory.KeyOpenModel.exists_unit_open E H D l Xo c _ _ Y inferInstance hj hpq κ hκ M
   have hcF : Countable c.F := by
     have := c.fin
     have := Algebra.IsAlgebraic.cardinalMk_le_max ℚ c.F

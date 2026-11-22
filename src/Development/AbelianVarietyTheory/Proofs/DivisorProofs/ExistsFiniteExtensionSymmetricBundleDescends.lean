@@ -12,7 +12,7 @@ import Development.AbelianVarietyTheory.Definitions.Degenerations.MorAlgSt
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsAbelianSchemeThick
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTwoTorsionRigidTranslateSameMumfordBundle
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteExtTwoTorsionPointAbelianVariety
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBaseChangePolarisationTranslateTwoTorsionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBaseChangePolarisationTranslateTwoTorsion
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -130,7 +130,7 @@ theorem exists_finite_ext : ∀ (K Ω : Type) [Field K] [CharZero K] [Field Ω] 
     LBIso.trans (DVR.linComb_isLB _ A'.isLB _ _) (pull_isLB hΛA _) (DVR.linComb_isLB _ hLB _ _) hΛ e₁.symm
   obtain ⟨x, hx2, hxL⟩ := _root_.GlobalTheory.SymPrincipalTranslate.exists_two_torsion_rigTransl Ω P A'.L A'.isLB A'.rigid A'.sym hΛ'
   obtain ⟨K', _, io, l, y, hfin, hcomp, hy2, hy⟩ := _root_.GlobalTheory.TwoTorsionDescent.exists_finite_ext_of_sq_eq_one K Ω ga A A'.A α hα x hx2
-  obtain ⟨A₁, α₁, α₁₂, t, hα₁, hsq₁, hΛ₁, ht, hL₁⟩ := GlobalTheory.T.exists_baseChange_polarisation_translate_two_torsion K K' io A y hy2
+  obtain ⟨A₁, α₁, α₁₂, t, hα₁, hsq₁, hΛ₁, ht, hL₁⟩ := _root_.GlobalTheory.BaseTransl.exists_baseChange_translate K K' io A y hy2
   have hid : spMap (RingHom.id Ω) = 𝟙 _ := Spec.map_id _
   have w : (pullback.fst A'.A.hom (spMap (RingHom.id Ω)) ≫ α) ≫ A.A.hom =
       (pullback.snd A'.A.hom (spMap (RingHom.id Ω)) ≫ spMap l) ≫ spMap io := by

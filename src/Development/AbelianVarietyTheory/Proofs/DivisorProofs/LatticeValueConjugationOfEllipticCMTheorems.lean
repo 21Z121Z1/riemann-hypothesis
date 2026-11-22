@@ -11,7 +11,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeWeightTwoConti
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.OmegaFactorization
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertEisensteinExpansionOfLipschitzHeckeZeta
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.TraceDualDifferent
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LipschitzFormulaTotallyRealPoissonStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LipschitzFormulaTotallyRealPoisson
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PartialZetaDenominatorsCMFieldOfSiegelKlingenDelStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertEisensteinValueDerivativesViaJets
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasLevelStd
@@ -217,7 +217,7 @@ theorem latConj : GlobalTheory.Published.SiegelKlingenDeligneRibet → GlobalThe
   have hW2 := _root_.GlobalTheory.HeckeTwo.heckeWeightTwo_of_fe hPZ
   have hS := GlobalTheory.T.cmLattice_derivClassInvariance_of_hecke hW2
   have hZ := GlobalTheory.T.partialZetaDenominatorsCMField_of_siegelKlingenDeligneRibet hSK
-  have hE := _root_.GlobalTheory.HilbertEis.eisExp GlobalTheory.T.lipschitz_formula_totally_real_poisson hW2 hPZ
+  have hE := _root_.GlobalTheory.HilbertEis.eisExp _root_.GlobalTheory.LipschitzTR.lipschitz hW2 hPZ
   intro K _ _ d δ ι hK2 hd hδ g t Λ₀ Λ₁ Ω₀ Ω₁ _ hTT E _ _ _ _ I _ φ s 𝔣 Q hD κ κ' hκ y S S' hSS hSS'
   obtain ⟨hU, hφ, hφK, hs, hb, hQ⟩ := hD
   have hf : 2 ≤ Module.finrank ℚ (FR E) := GlobalTheory.LatConjOne.two_le_finrank_of_unramFin E hU

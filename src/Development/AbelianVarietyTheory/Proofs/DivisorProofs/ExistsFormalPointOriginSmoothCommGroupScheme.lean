@@ -15,10 +15,10 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsStalkDerivati
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantVectorFieldsCommuteOfCommGroupScheme
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantVectorFieldApplyConstantEqZeroStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDerivationOfVectorFieldLiftNearUnit
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GroupSchemeStalkEvalAtOriginOriginStalkConstantsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GroupSchemeStalkEvalAtOriginOriginStalkConstants
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GermOriginConstantSectionEqOriginStalkConstants
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothCommGroupLocalCoordinatesAtOrigin
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpecMapFromSpecStalkOriginCompStructureEqStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpecMapFromSpecStalkOriginCompStructureEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpMapFromSpecStalkTopLeIff
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry NumberField IsLocalRing
 open scoped CategoryTheory.Obj Matrix TensorProduct
@@ -54,7 +54,7 @@ theorem exists_formalPoint : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRi
   obtain ⟨T, hT⟩ := _root_.GlobalTheory.FormalOrigin.taylor_isRingHom _ R n (evO G) δ
   have hTC : ∀ r, T (constO G r) = MvPowerSeries.C r := by
     intro r
-    rw [hT, _root_.GlobalTheory.FormalOrigin.taylor_const _ R n (evO G) δ _ (fun i => hconst i r), GlobalTheory.T.groupSchemeStalkEvalAtOrigin_originStalkConstants]
+    rw [hT, _root_.GlobalTheory.FormalOrigin.taylor_const _ R n (evO G) δ _ (fun i => hconst i r), _root_.GlobalTheory.FormalOrigin.evO_constO]
   have hT0 : ∀ s, MvPowerSeries.constantCoeff (T s) = evO G s := by
     intro s
     rw [← MvPowerSeries.coeff_zero_eq_constantCoeff_apply, hT]
@@ -65,7 +65,7 @@ theorem exists_formalPoint : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRi
   have : IsLocalHom T := ⟨fun s hs => by
     have h1 : IsUnit (evO G s) := by rw [← hT0]; exact (MvPowerSeries.isUnit_iff_constantCoeff).1 hs
     exact (isUnit_map_iff (evO G) s).1 h1⟩
-  obtain ⟨dΩ, hdΩC, hdΩ⟩ := _root_.GlobalTheory.FormalOrigin.Extend.derivation_extends R _ (constO G) (evO G) (GlobalTheory.T.groupSchemeStalkEvalAtOrigin_originStalkConstants R G) n δ z hz0 hz1 hm hconst dA D' hdc
+  obtain ⟨dΩ, hdΩC, hdΩ⟩ := _root_.GlobalTheory.FormalOrigin.Extend.derivation_extends R _ (constO G) (evO G) (_root_.GlobalTheory.FormalOrigin.evO_constO R G) n δ z hz0 hz1 hm hconst dA D' hdc
   have hval : ∀ (O : G.left.Opens) (hO : origin G ∈ O) (f : Γ(G.left, O)),
       valR (spMap T ≫ G.left.fromSpecStalk (origin G)) O f = T ((G.left.presheaf.germ O (origin G) hO).hom f) :=
     fun O hO f => GlobalTheory.FlagBundle.valR_spMap_fromSpecStalk T hO f
@@ -75,7 +75,7 @@ theorem exists_formalPoint : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRi
     spMap T ≫ G.left.fromSpecStalk (origin G), fun a => intDer (MvPowerSeries.pderiv R a), intDer dΩ,
     _root_.GlobalTheory.PowerSeriesComplete.isAdicComplete_map_C R _ ‹_› n, ?_, (_root_.GlobalTheory.spMap_fromSpecStalk_top_le_iff G.left (origin G) _ T inferInstance W).2 hx0W, fun r => ?_, fun a r => ?_,
     fun a O f hO => ?_, fun O f hOW hO => ?_, fun O f hO hf => ?_⟩
-  · rw [Category.assoc, GlobalTheory.T.spec_map_fromSpecStalk_origin_comp_structure_eq R G _ T]
+  · rw [Category.assoc, _root_.GlobalTheory.FormalOrigin.spMap_fromSpecStalk_origin_hom R G _ T]
     congr 1
     exact RingHom.ext hTC
   · rw [← hD']; exact hdΩC r
@@ -88,7 +88,7 @@ theorem exists_formalPoint : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRi
     exact (hdΩ _).symm
   · have h := htop O hO
     rw [hval O h, hT] at hf
-    have h0 := _root_.GlobalTheory.TaylorInj.taylor_injective R _ (constO G) (evO G) (GlobalTheory.T.groupSchemeStalkEvalAtOrigin_originStalkConstants R G) n δ z hz0 hz1 hm _ hf
+    have h0 := _root_.GlobalTheory.TaylorInj.taylor_injective R _ (constO G) (evO G) (_root_.GlobalTheory.FormalOrigin.evO_constO R G) n δ z hz0 hz1 hm _ hf
     exact germ_injective_of_isIntegral G.left (origin G) h (h0.trans (map_zero _).symm)
 
 end GlobalTheory.FormalOrigin

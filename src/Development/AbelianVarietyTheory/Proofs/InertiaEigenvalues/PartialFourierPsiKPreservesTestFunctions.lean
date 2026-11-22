@@ -2,7 +2,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WHyp
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SelfDualMeasureExistsUniqueFourierInversion
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFactsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFacts
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology
 
 namespace GlobalTheory.JR.Hyp.PtTest
@@ -60,7 +60,7 @@ theorem GlobalTheory.JR.Hyp.pt_isTest : ∀ (F E : Type) [NontriviallyNormedFiel
     refine ⟨fun u b => ?_⟩
     simp only [RingHom.id_apply, hβapp]
     ring_nf
-  have htr := (GlobalTheory.T.etaleHermitianPair_structure_facts F E A).2.2.1
+  have htr := (_root_.GlobalTheory.JR.EtFacts.main F E A).2.2.1
   have hsepL : ∀ u : A.K, (∀ b, β u b = 0) → u = 0 := fun u hu => by
     have h1 : (x : A.K) * u = 0 := htr.1 _ fun b => by simpa [hβapp] using hu b
     simpa using congrArg (fun t => ((x⁻¹ : A.Kˣ) : A.K) * t) h1

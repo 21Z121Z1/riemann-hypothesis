@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemRatPairIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContDiffTsumOfLocallySummableBoundsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanStandardCharEqExpRealLinear
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormIteratedFDerivCexpPhaseLe
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzShiftIteratedFDerivBoundStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzShiftIteratedFDerivBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SummableRationalSchwartzBruhatMulPolynomialDecay
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DarbouxCoordsRealFamilyArchimedeanLinear
 
@@ -28,7 +28,7 @@ theorem norm_iteratedFDeriv_exp_mul_schwartz_le {V E : Type} [NormedAddCommGroup
     ∃ C : ℝ, ∀ y t, ‖t‖ ≤ R →
       ‖iteratedFDeriv ℝ n (fun t => Complex.exp (B y t + h t) * f (y + a + p t)) t‖ ≤ C * ((1 + ‖y‖) ^ M)⁻¹ := by
   choose C1 hC1 using fun j => _root_.GlobalTheory.norm_iteratedFDeriv_cexp_phase_le B h hh hre j R
-  choose C2 hC2 using fun j => GlobalTheory.T.schwartz_iteratedFDeriv_shift_le_inv_pow_of_norm_le f a p j (M + n) R
+  choose C2 hC2 using fun j => _root_.GlobalTheory.schwartz_shift_iteratedFDeriv_bound f a p j (M + n) R
   refine ⟨∑ j ∈ Finset.range (n + 1), (n.choose j : ℝ) * |C1 j| * |C2 (n - j)|, fun y t ht => ?_⟩
   have hy : 0 < 1 + ‖y‖ := by positivity
   have hy1 : 1 ≤ 1 + ‖y‖ := by linarith [norm_nonneg y]

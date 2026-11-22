@@ -152,7 +152,7 @@ theorem scalar_of_split' {V : HSp D} {M : Type} [AddCommGroup M] [Module ℂ M] 
   obtain ⟨l, h1⟩ := GlobalTheory.ConjScalar.OnePart.adjoin_scalar _ S (by
     rintro y ⟨k, hk, rfl | rfl⟩
     · exact ha k hk
-    · have hc := (GlobalTheory.T.sphericalHecke_conjPlace_eq_dualLabel V P).2.2 (Finsupp.single (splitLab V.rank k) 1) M π
+    · have hc := (_root_.GlobalTheory.SphConj.sph_conj V P).2.2 (Finsupp.single (splitLab V.rank k) 1) M π
       have hd : dualC (Finsupp.single (splitLab V.rank k) 1) = Finsupp.single (dualLab (splitLab V.rank k)) 1 := by
         unfold dualC
         rw [Finsupp.mapDomain_single]
@@ -182,8 +182,8 @@ theorem downEig : GlobalTheory.Hk3.HoweUnram → ∀ (D : D7) (G : Type) [Group 
   have hWr : (Wc D i).rank = D.R.r := D.sp.W_rank _ (Nat.le_add_left _ _) i.2
   have unr : ∀ P, Good R t P → UnrPl P (Formalism.IndefR.Lift.chrTh (R.toLevCh.mu t) R.eta ((i : ℕ) + 1)).1 ∧
       UnrPl P (Formalism.IndefR.Lift.chrTh (R.toLevCh.mu t) R.eta ((i : ℕ) + 1)).2 := fun P hP =>
-    GlobalTheory.FixAllGood.unrPl_chrTh ((GlobalTheory.T.splittingCharacters_unramified_offLevels R F hC.lev t P hP).2 ((i : ℕ) + 1) (by omega) i.2)
-      (GlobalTheory.T.splittingCharacters_unramified_offLevels R F hC.lev t P hP).1
+    GlobalTheory.FixAllGood.unrPl_chrTh ((_root_.GlobalTheory.UnrOffLevels.unrPl_of_good R F hC.lev t P hP).2 ((i : ℕ) + 1) (by omega) i.2)
+      (_root_.GlobalTheory.UnrOffLevels.unrPl_of_good R F hC.lev t P hP).1
 
   have eigV : ∀ P, Good R t P → ∀ cV y, IsEigV R i t h s y →
       (R.HV i t).e (evC (Vc D i) P (s P) cV • y) = hkF (Vc D i) P cV ((R.HV i t).e y) := by

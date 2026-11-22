@@ -7,8 +7,8 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChar
 import Development.AbelianVarietyTheory.Definitions.TeichmullerDepth.HasTeich
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.AddCurveStableOfIntegralGaugedFormalGroupLawStatement
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.IntegralGaugeBilinearTermOfTypeNeStatement
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.FrobeniusMemTypicalCurveSetStatement
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ShiftedSumMemTypicalCurveSetStatement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.FrobeniusMemTypicalCurveSet
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ShiftedSumMemTypicalCurveSet
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsPureTypicalCurveWithIntegralTangent
 
 open scoped BigOperators
@@ -28,8 +28,8 @@ theorem cartHyp_of_rlaw : ∀ (C : Type) [Field C] (V : VF C) (d : ℕ) [NeZero 
       neg := X.neg_mem V g hL.odd
       teich := X.teich_mem V g
       Vm := X.V_mem V g
-      Fm := GlobalTheory.T.frobenius_mem_typicalCurveSet C V d I κ X hL g
-      sumV := GlobalTheory.T.shiftedSum_mem_typicalCurveSet C V d I κ X hL g
+      Fm := _root_.GlobalTheory.RowLaw.FrobCurve.frob_mem_tySet C V d I κ X hL g
+      sumV := _root_.GlobalTheory.RowLaw.ShiftSum.sumV_mem_tySet C V d I κ X hL g
       t2 := X.val_nonneg_leading_coeff_of_mem_tySet V g hL.lin hh ?_ (GlobalTheory.T.integral_gaugeBilinearTerm_of_type_ne C V d I κ X hL g (hT g))
       t3 := X.const_mem_type_set_of_nonneg hlg0 hh V g
       t4 := _root_.GlobalTheory.RowLaw.exists_pure_typical C V d I κ X hL hP g (hT g) }

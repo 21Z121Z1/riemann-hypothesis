@@ -12,8 +12,8 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StarEqHost
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsOrthDec
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TransportedFrameGramOrth
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CoCptXZero
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemFlagUnipotentRadicalIffSecondModelStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RangeBesselAnisotropicEmbeddingEqSecondModelSubgStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemFlagUnipotentRadicalIffSecondModel
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RangeBesselAnisotropicEmbeddingEqSecondModelSubg
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsHypDec
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CexpTwoPiINegInvNatSmulAddStar
 
@@ -96,8 +96,8 @@ theorem exists_sBes_scaled_dual : ∀ (D : D7) (X : Formalism.L2.SG.HidaSetting.
     show d₀.i₀ *ᵥ (o.iB *ᵥ ((μ * t⁻¹) • zeta L)) = _
     rw [Matrix.mulVec_smul, Matrix.mulVec_smul, ← vecB, hz₀, smul_smul, inv_mul_cancel_right₀ ht]
   refine ⟨SBes.mk V₀ L d o ζ hline (GlobalTheory.Unf.DefCpt.coCpt_X_zero D) vA
-    (GlobalTheory.Unf.Inhab.nonempty_volN d).some (GlobalTheory.T.mem_flagUnipotentRadical_iff_secondModel D X h u μ lam hμ hl0 hE V₀ d hde1)
-    (GlobalTheory.T.range_besselAnisotropicEmbedding_eq_secondModelSubgroup D X h u μ lam hμ hl0 hE V₀ L d o ζ hline hde1 hde1' hz)
+    (GlobalTheory.Unf.Inhab.nonempty_volN d).some (_root_.GlobalTheory.Core.SBesFlagTie.mem_flagN_iff D X h u μ lam hμ hl0 hE V₀ d hde1)
+    (_root_.GlobalTheory.Core.SBesLevi.range_embA_eq_H D X h u μ lam hμ hl0 hE V₀ L d o ζ hline hde1 hde1' hz)
     (hP μ hμ V₀ L d o ζ hde1 hde1' hz), ?_, rfl, ?_, ?_, ?_⟩
   · intro k j
     show (d₀.i₀ * o.iA) k j = _

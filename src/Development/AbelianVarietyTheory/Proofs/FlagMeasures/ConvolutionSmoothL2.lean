@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RightRegularRepUnita
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RightConvolutionOperatorAeEqIntegralAdelic
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.HermitianFormUnitaryOneOne
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TruncatedLeastLatticeSizeLipschitzProperties
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SmoothContinuousConvolutionRealPointsUnitaryStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SmoothContinuousConvolutionRealPointsUnitary
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalL2BoundHeight
 
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S Formalism.REAL Formalism.QuantumDeterminants GlobalTheory.Count GlobalTheory.Dec
@@ -235,7 +235,7 @@ theorem convolutionSmoothL2 : ConvolutionSmoothL2 := by
       funext z
       exact conv_eq_partial (muInf B.I) B.μf a e (B.I.ext y) z b (hmain (z, b)).1
     rw [e1]
-    refine GlobalTheory.T.smooth_continuous_convolution_realPointsUnitary B.I a _ ha hac ?_
+    refine _root_.GlobalTheory.SmoothConv.smooth_convolution B.I a _ ha hac ?_
     refine locallyIntegrable_partial (muInf B.I) B.μf (B.I.Kg g) hKm e hei.1 ‖c‖ heM he0
       (fun p => B.I.ext y ((1, b) * p)) fun V hV => ?_
     obtain ⟨C', -, hb'⟩ := hloc V hV

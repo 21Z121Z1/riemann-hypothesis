@@ -14,7 +14,11 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatMapFou
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LineContractionSplitPlaceLocalModel
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilDatumLocalModelFormula
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatMapsSatisfyFlatLawsFinitePlaces
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatThetaMapsConvergeThetaFunctionsStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatThetaMapsConvergeThetaFunctions
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsQuasiFam
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ThetaAbsoluteSum
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.TransvectionAction
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.WeilDatumExistence
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntegralIndicatorGivesLocalVacuumSplitPlace
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCombAt
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.AllPositions
@@ -42,8 +46,8 @@ theorem one_place : ∀ (D : D7) (c : Comm D) (v : VCom c) (G : GLoc v), c.Is �
   intro D c v G hc hv j σ h
   have hs := G.hs
   have H : j + 1 + 1 + 2 * σ = G.s := by omega
-  obtain ⟨C, hC, key⟩ := GlobalTheory.LocMod.GValProof.gval_of_laws D (_root_.GlobalTheory.FlatBFLoc.flatBF_of_laws D (GlobalTheory.T.flatThetaMaps_converge_thetaFunctions D) (_root_.GlobalTheory.FinPl.flatLaws_all D) (_root_.GlobalTheory.LocOm.omLoc D))
-    (_root_.GlobalTheory.LocMod.flatFB_holds D (GlobalTheory.T.flatThetaMaps_converge_thetaFunctions D) (_root_.GlobalTheory.FinPl.flatLaws_all D) (_root_.GlobalTheory.LocOm.omLoc D)) (_root_.GlobalTheory.ContrLocProof.contrLoc D GlobalTheory.LocFlat.contrFactor)
+  obtain ⟨C, hC, key⟩ := GlobalTheory.LocMod.GValProof.gval_of_laws D (_root_.GlobalTheory.FlatBFLoc.flatBF_of_laws D (_root_.GlobalTheory.Unf.Flat.flatLaw D) (_root_.GlobalTheory.FinPl.flatLaws_all D) (_root_.GlobalTheory.LocOm.omLoc D))
+    (_root_.GlobalTheory.LocMod.flatFB_holds D (_root_.GlobalTheory.Unf.Flat.flatLaw D) (_root_.GlobalTheory.FinPl.flatLaws_all D) (_root_.GlobalTheory.LocOm.omLoc D)) (_root_.GlobalTheory.ContrLocProof.contrLoc D GlobalTheory.LocFlat.contrFactor)
     (GlobalTheory.LocFlat.symCollapse_of_allPositions GlobalTheory.SymChain.allPositions_holds) G.k G.ν G.unitVol (GlobalTheory.LocMod.ofSplit G.q) G.s D.R.k
     G.S (Fin D.R.t) c.ψ G.char j (2 * σ) H
   refine ⟨C, hC, fun s₁ s₂ f₁ f₂ h₁ h₂ => ?_⟩

@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HeckeFunctionalEquationAbs
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.CompletedLStripBounds
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormHeckeLFunctionLeZetaThreeHalvesPowStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormHeckeLFunctionLeZetaThreeHalvesPow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormCompletedHeckeLCMOneLePhragmenLindelof
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPrimitiveHeckeLFunctionInvOfTrivialOnMaxReal
 import Formalism.PairingDivisors.StatementA
@@ -86,7 +86,7 @@ theorem lBound_of : GlobalTheory.Published.HeckeFunctionalEquationAbs → Global
     have h4 : Real.log (‖riemannZeta (3 / 2)‖ ^ n) ≤ c * n := by
       rw [Real.log_pow]; nlinarith [(Nat.cast_nonneg n : (0:ℝ) ≤ n)]
     linarith
-  · have h := GlobalTheory.T.norm_heckeLFunction_le_zeta_three_halves_pow D.host.E χ Λ s hχ.1 hΛ (by
+  · have h := _root_.GlobalTheory.HeckeLBound.norm_heckeL_le D.host.E χ Λ s hχ.1 hΛ (by
       simp only [Complex.natCast_re]; have : (2 : ℝ) ≤ s := by exact_mod_cast h2
       linarith)
     have h4 : Real.log ‖Λ s‖ ≤ c * n := by

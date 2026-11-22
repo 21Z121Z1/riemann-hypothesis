@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.CharacterTheory.CharpolyBlockAndI
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.FinsumMobiusInverseCharpolyInvariantLe
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.InvariantSubspaceMobiusInverseCharpolyLinearEqui
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MobiusInversionAffineFinrankSubspacesStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSurjectivePiAdjoinRootKerEqRangeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSurjectivePiAdjoinRootKerEqRange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AevalApplyMem
 
 open Polynomial GlobalTheory.CuspGL GlobalTheory.BI
@@ -116,7 +116,7 @@ theorem psi_primary : ∀ (F : Type) [Field F] [Finite F] (V : Type) [AddCommGro
   haveI : Fact (Irreducible f) := ⟨hi⟩
   have he : 0 < f.natDegree := hi.natDegree_pos
   have he' : (f.natDegree : ℂ) ≠ 0 := by exact_mod_cast he.ne'
-  obtain ⟨t', π, hsurj, hπ, hker, ht'⟩ := GlobalTheory.T.exists_surjective_pi_adjoinRoot_ker_eq_range' F V g f
+  obtain ⟨t', π, hsurj, hπ, hker, ht'⟩ := _root_.GlobalTheory.exists_surjective_pi_adjoinRoot_ker_eq_range F V g f
   obtain rfl : t' = t := Nat.eq_of_mul_eq_mul_left he (ht'.symm.trans ht)
   haveI : Module.Finite F (AdjoinRoot f) := (AdjoinRoot.powerBasis hi.ne_zero).finite
   have hK : Module.finrank F (AdjoinRoot f) = f.natDegree := (AdjoinRoot.powerBasis hi.ne_zero).finrank

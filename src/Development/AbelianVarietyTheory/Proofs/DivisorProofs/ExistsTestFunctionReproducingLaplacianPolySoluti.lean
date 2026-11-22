@@ -5,7 +5,8 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.GlRes
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsExpLieAlgebraComplexUnits
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSmoothConvolutionEqDerivativeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LaplacianPolynomialKernelOfPolynomialLaplacianStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHaarGLRealPointsDensityDetInvStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHaarGLRealPointsDensityDetInv
+import Development.AbelianVarietyTheory.Definitions.Divisors.CentralNilGL
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTestFunctionLieAlgebraPullbackDetStatement
 
 noncomputable section
@@ -55,7 +56,7 @@ theorem exists_test_reproducing : ∀ (E : Type) [Field E] [NumberField E] [IsTo
   intro E _ _ _ a ν hν p hp
   obtain ⟨d, b, P, hP, hsol, -⟩ := GlobalTheory.T.laplacianPolynomialKernel_of_polynomial_laplacian E a p hp
   borelize ↥(GlobalTheory.HCA.glG E a)
-  obtain ⟨μ, hμ, hint⟩ := GlobalTheory.T.exists_haar_GL_realPoints_density_det_inv E a ν hν
+  obtain ⟨μ, hμ, hint⟩ := _root_.GlobalTheory.GLHaar.glHaar E a ν hν
   haveI : CompleteSpace (Matrix (Fin a) (Fin a) (Cinf E)) := FiniteDimensional.complete ℝ _
   obtain ⟨α₀, hs, -, hc, hα₀⟩ := @GlobalTheory.T.exists_smooth_convolution_eq_derivative (Matrix (Fin a) (Fin a) (Cinf E)) _ _ _ _ (GlobalTheory.HCA.glG E a)
     (GlobalTheory.HCA.glL E a) (GlobalTheory.HCA.glH E a) d b P hP _ ⟨rfl⟩ μ hμ []

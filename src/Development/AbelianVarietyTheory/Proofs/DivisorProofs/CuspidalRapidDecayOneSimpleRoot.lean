@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsConjFiniteUnipotentMemOpenSubgroupStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalNormLeOfAlternatingSumScaledUnipFD
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReproducingIdentityExtendsHarishChandraSpan
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitOneAddOfSqStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitOneAddOfSq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormToLMapPInfLe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeightLeOfIsCompact
 open NumberField MeasureTheory GlobalTheory.CuspRep GlobalTheory.HCF Topology GroundTheory.Automorphic.Reduction
@@ -34,7 +34,7 @@ theorem diffInt : ∀ (E : Type) [Field E] [NumberField E] (a : ℕ) (β : Lie E
     ∀ F : ℝ, 0 ≤ F → (∀ w ∈ Q, ‖f w‖ ≤ F) →
     ∀ Y : Fin m → Matrix (Fin a) (Fin a) (Cinf E), (∀ i j, Y i * Y j = 0) → (∀ i, ‖toL (Y i)‖ ≤ R) →
     ‖∑ ε : Fin m → Bool, (GroundTheory.Automorphic.altSign ε : ℂ) *
-        ∫ w, f (toL ((1 + GroundTheory.Automorphic.altPoint Y ε) * Matrix.of w)) * β w‖ ≤ c * F * ∏ i, ‖toL (Y i)‖ := GlobalTheory.T.norm_signed_sum_integral_le
+        ∫ w, f (toL ((1 + GroundTheory.Automorphic.altPoint Y ε) * Matrix.of w)) * β w‖ ≤ c * F * ∏ i, ‖toL (Y i)‖ := _root_.GlobalTheory.AltConv.norm_sum_altSign_integral_le
 
 theorem normTransfer : ∀ (E : Type) [Field E] [NumberField E] [IsTotallyComplex E] (a : ℕ), ∃ c : ℝ, 0 ≤ c ∧
     ∀ M : Matrix (Fin a) (Fin a) (Ad E),

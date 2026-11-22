@@ -2,7 +2,8 @@ import Development.WeilBound.RepresentationTheoryGL.TubeMeasures.DisjointTubes.T
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EquivalenceGeneratedTorusRel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticGroupConjRationalPrincipalCongruence
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipalCongruenceConjMemArithmeticGroup
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetEqOneUnitaryPrincipalCongruenceLevelThreeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetEqOneUnitaryPrincipalCongruenceLevelThree
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Signature
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsInvertibleUnitaryAdelicMatrixOfRationalUnitary
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InstMeasurableSpaceRealSU
 import Mathlib
@@ -150,7 +151,7 @@ theorem tube_disj (D : D7) (V : HSp D) (θ : InfFam D) (A : Frames V) (rp : GA D
       exact (X k).Λ.add_mem hx (nsmul_mem hy M)
   have hΓ : δ0 ∈ (X k).Γ := (hXΓ k δ0).2 ⟨⟨by rw [hXG k]; exact hherm, hstab⟩, hcong⟩
   have hd1 : (δ0 : Matrix (Fin V.rank) (Fin V.rank) D.host.E).det = 1 :=
-    GlobalTheory.T.det_eq_one_unitary_principal_congruence_level_three D.host.E V.rank M (X k) hM (hXΓ k) δ0 hΓ
+    _root_.GlobalTheory.UnitaryCongruenceDet.det_eq_one D.host.E V.rank M (X k) hM (hXΓ k) δ0 hΓ
 
   have hmemSU : embGL Ψ V.rank δ0 ∈ realSU Ψ Gm := embGL_mem_realSU Ψ Gm δ0 hd1 (by rw [hGm]; exact hherm)
   have hin : (⟨embGL Ψ V.rank δ0, hmemSU⟩ : realSU Ψ Gm) ∈ inReal Ψ Gm (X k).Γ :=

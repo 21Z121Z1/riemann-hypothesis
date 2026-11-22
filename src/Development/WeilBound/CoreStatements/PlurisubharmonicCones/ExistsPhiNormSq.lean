@@ -17,9 +17,9 @@ theorem limit_strong : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (n
   intro E _ _ _ n a g Λ _ _ Ψ _ L σ m b hσ hb
   classical
   obtain ⟨bas, A, T0, B, c, ρ, h⟩ := exists_isChart L.toLogPeriods
-  obtain ⟨Pr, hPr⟩ := GlobalTheory.T.exists_isKerProj' g (∑ j, B j)
+  obtain ⟨Pr, hPr⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.BoundaryLimit.exists_isKerProj g (∑ j, B j)
   obtain ⟨hsat, hs, hinj, hspan⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.BoundaryLimit.noMonodromy_lattice n a g Λ L.toLogPeriods bas A T0 B c ρ h
-  obtain ⟨hext, hlim⟩ := GlobalTheory.T.mem_chartW_of_continuous_period n a g Λ L.toLogPeriods bas A T0 B c ρ h
+  obtain ⟨hext, hlim⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.CentrePeriods.periods_at_centre n a g Λ L.toLogPeriods bas A T0 B c ρ h
   obtain ⟨hHerm, hIm, hKill, hPos⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.BoundaryLimit.LimitForm.limit_form n a g Λ L.toLogPeriods bas A T0 B c ρ Pr h hPr
   obtain ⟨hQc, ρ', hρ', hrep⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.BoundaryLimit.QuotientForm.quotient_form_rep n a g Λ L.toLogPeriods bas A T0 B c ρ Pr h hPr
   have h0ball : (0 : Fin n → ℂ) ∈ Metric.ball (0 : Fin n → ℂ) 1 := Metric.mem_ball_self one_pos
@@ -142,7 +142,7 @@ theorem eig_indep {E : Type} [Field E] [NumberField E] {g r : ℕ} {Λ : Type} [
     (hli : LinearIndependent (𝓞 E) y) (s : 𝓞 E →+* ℂ) {x₀ : Fin g → ℂ} (hx₀ : x₀ ∈ eigSp ρ s) (h0 : x₀ ≠ 0) :
     LinearIndependent ℂ fun a => eigComp ρ s (per (y a)) := by
   classical
-  obtain ⟨c, hc⟩ := GlobalTheory.T.exists_eigenComponent_polynomial E s
+  obtain ⟨c, hc⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.EigCoef.eigComp_eq_combination E s
   obtain ⟨hc1, -, hc3⟩ := hc _ ρ
   let e := RingOfIntegers.basis E
   let γ : Module.Free.ChooseBasisIndex ℤ (𝓞 E) → ℂ := fun k => ∑ x ∈ c.support, c x * (e.repr x k : ℂ)
@@ -325,7 +325,7 @@ theorem lower_centre {E : Type} [Field E] [NumberField E] [IsCMField E] {n a g :
   have h0 : (0 : Fin n → ℂ) ∈ Metric.ball (0 : Fin n → ℂ) 1 := Metric.mem_ball_self one_pos
   obtain ⟨ν, hν'⟩ := exists_phiNormSq (L.B 0) (fun x y => y ⬝ᵥ Hb *ᵥ star x) _ 1 σ (fun τ i => b τ i 0) _
     (oFamily_image per (L.B 0) hIW hinj hact y' hy hli' hidx) (fun τ => (hb.2 0 h0 τ).1) (fun τ => (hb.2 0 h0 τ).2)
-    (fun τ a => ((GlobalTheory.T.exists_eigenComponent_polynomial E (σ τ)).choose_spec _ (L.B 0)).2.1 _)
+    (fun τ a => ((_root_.GlobalTheory.CompanionTheory.Ar.Cusp.EigCoef.eigComp_eq_combination E (σ τ)).choose_spec _ (L.B 0)).2.1 _)
     fun τ => eig_indep per (L.B 0) M u hinj hact hM hu y' hy hli' (σ τ) (x₀ := b τ ⟨0, hm⟩ 0)
       (by rw [← (hb.2 0 h0 τ).2]; exact Submodule.subset_span ⟨_, rfl⟩) ((hb.2 0 h0 τ).1.ne_zero ⟨0, hm⟩)
   obtain ⟨δ, hδ, h⟩ := (hν ν hν').2 1 one_pos

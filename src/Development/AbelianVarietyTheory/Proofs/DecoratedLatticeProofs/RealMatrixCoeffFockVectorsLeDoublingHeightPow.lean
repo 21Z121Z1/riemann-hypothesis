@@ -7,11 +7,11 @@ import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IntegrandSZero
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SiegelWeilSectionDoublingEqMatrixCoefficient
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsWeilDatumHermitianSpaceDoubled
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingSiegelWeilSectionMemDegeneratePrincipalSStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingMapThetaIdentityAnyWeilDataStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingSiegelWeilSectionMemDegeneratePrincipalS
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingMapThetaIdentityAnyWeilData
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicIwasawaDoubledGroupSelfDualLattice
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingSeesawTensorMapPolynomialFockVectorStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoubledCartanInvolutionCommuteMaximalCompactStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingSeesawTensorMapPolynomialFockVector
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoubledCartanInvolutionCommuteMaximalCompact
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FockVectorFiniteUnderCompactCommutingCartan
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsEtaTildeUnramified
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeilDatumOfSplittingCharacters
@@ -55,16 +55,16 @@ theorem tw_bound : ∀ (D : D7) (V W : HSp D) (S S' : D.what₂.Tau → SPar) (M
   have hpr : GlobalTheory.Published.WeilRepresentationUnitaryPair := fun D ψ S T χS χT hψ hS hT rS rT =>
     GlobalTheory.WeilExist.exists_isWeilDatumO D ψ hψ S T χS χT (GlobalTheory.WeilParts.exists_isEtaTilde_unramified D) hS hT rS rT
   obtain ⟨omh, homh⟩ := _root_.GlobalTheory.Core.Rk.exists_doubled_weilDatum hpr D ψ V W χS χT ω hω
-  have hth := GlobalTheory.T.doublingMap_thetaIdentity_any_weilData D ψ V W χS χT ω omh hω homh
+  have hth := _root_.GlobalTheory.DoublingTheta.thetaClause D ψ V W χS χT ω omh hω homh
   have hco := _root_.GlobalTheory.Core.Rk.coefClause_of_thetaClause D ψ V W χS χT ω omh hω hth m X hm
   have h1 := _root_.GlobalTheory.FockVecOfVac.fock_of_vac D V W S S' M M' θ ψ hω.std hθ f hf P
   have h2 := _root_.GlobalTheory.FockVecOfVac.fock_of_vac D V W S S' M M' θ ψ hω.std hθ f hf Q
   have hS := fun τ => GlobalTheory.FrameEquiv.isCartanInv_cart_model M τ
   have hT := fun τ => GlobalTheory.FrameEquiv.isCartanInv_cart_model M' τ
-  have hc := GlobalTheory.T.doubled_cartanInvolution_commute_maximalCompact D θ V (cart M) a hθ hS hmaj
-  have hb := GlobalTheory.T.doublingSeesawTensorMap_polynomial_fock_vector D ψ θ V W (cart M) (cart M') hω.std hθ _ _ h1 h2
+  have hc := _root_.GlobalTheory.Core.Rk.IP.Cartan.cartan_dbl D θ V (cart M) a hθ hS hmaj
+  have hb := _root_.GlobalTheory.Core.Rk.FockBox.isFockVec_delta D ψ θ V W (cart M) (cart M') hω.std hθ _ _ h1 h2
   have hk := _root_.GlobalTheory.Core.Rk.IP.isKFinVec_of_isFockVec D ψ θ (dblSp V) W 1 χT omh _ (cart M') homh hθ hc.1 hT (Khat V a) (isCompact_Khat V a) hc.2 _ hb
-  have hmem := GlobalTheory.T.doublingSiegelWeilSection_mem_degeneratePrincipalSeries hpr D ψ V W χT omh homh m X hm _ (hth _ _ h1.1 h2.1).1 a hk
+  have hmem := _root_.GlobalTheory.SwSecMem.swSec_mem_degPS hpr D ψ V W χT omh homh m X hm _ (hth _ _ h1.1 h2.1).1 a hk
   have hI := _root_.GlobalTheory.Core.Rk.IP.hasIwasawa_KAd_selfDual D V (frameLat V) a (GlobalTheory.WeilAtPlace.isSelfDualC_frameLat V) ha
   haveI := GlobalTheory.Doubling.t2Space_adeleRing' (F := D.host.F)
   obtain ⟨C, hC⟩ := GlobalTheory.Doubling.HasIwasawa.exists_norm_le continuous_absE (isCompact_Khat V a) hI hmem

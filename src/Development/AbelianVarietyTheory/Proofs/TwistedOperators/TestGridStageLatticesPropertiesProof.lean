@@ -16,7 +16,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Di
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PolarisationTwistLatticeSelfDualSameStabilisers
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CongruenceSubgroupLevelMemberClauses
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SelfDualLatticeChangeOfLatticeLawsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SelfDualLatticeChangeOfLatticeLaws
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.WittIdxOfParallelSig
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.L2.DIV
 open IsDedekindDomain NumberField MeasureTheory GlobalTheory.ChiGrid GlobalTheory.FunObj GlobalTheory.Grow
@@ -48,7 +48,7 @@ theorem stageOK : StageOK := by
   have hV := node_isV G hL (X := .core i) hi
   have hsd : IsSelfDualC (G.V (.core i)) (G.Λ (.core i)) := hV.sd
   obtain ⟨hsd', hstab, hcong⟩ := _root_.GlobalTheory.ScaleSelfDual.scaleLat_twist_selfDual D (G.V (.core i)) (G.Λ (.core i)) hsd i
-  have hRL := GlobalTheory.T.selfDualLattice_changeOfLattice_laws D
+  have hRL := _root_.GlobalTheory.ReLatPf.reLatLaw_holds D
   refine ⟨?_, ?_⟩
   · obtain ⟨r, hr⟩ := hRL.1 _ _ hsd'
     exact ⟨r, hr⟩

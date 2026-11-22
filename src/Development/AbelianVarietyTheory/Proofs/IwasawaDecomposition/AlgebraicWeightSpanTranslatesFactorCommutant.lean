@@ -1,6 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConjugateNeSelf
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AlgebraicWeightPolyMatrixMultiplicativeStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AlgebraicWeightPolyMatrixMultiplicative
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EvalUnitaryCoordinateZeroOfRationalPoints
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SpanRationalPointOrbitAlgebraicWeight
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPolyRep
 open Matrix Formalism.L2.NG ReciprocityTheory.Aut Formalism.AUTREP NumberField GlobalTheory.AlgWtHW
@@ -13,7 +14,7 @@ theorem span_tau_commutant : ∀ (L : Type) [Field L] [NumberField L] [IsCMField
   have hS := _root_.GlobalTheory.AlgWtHW.span_ratPt_orbit L n a ι b P hA v hv w
   refine Submodule.span_mono ?_ hS
   rintro x ⟨γ₀, hγ, rfl⟩
-  obtain ⟨_, hmul⟩ := GlobalTheory.T.algebraicWeight_polyMatrix_multiplicative L n a ι b P hA
+  obtain ⟨_, hmul⟩ := _root_.GlobalTheory.AlgWtMul.evM_mul L n a ι b P hA
   set B : GL (Fin n) ℂ := Matrix.GeneralLinearGroup.map τ γ₀ with hBdef
   have hBv : B.val = γ₀.val.map τ := rfl
   set R : (L →+* ℂ) → Matrix (Fin n) (Fin n) ℂ := fun σ =>

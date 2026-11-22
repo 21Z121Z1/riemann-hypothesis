@@ -4,11 +4,11 @@ import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Howe
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CardKerSubspacesAndHeckePolyOfConvolution
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PeterssonFormProportionalClassSumAllLevelsStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PeterssonFormProportionalClassSumAllLevels
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaLiftLevelsGoodPrimesProperties
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaVacuaMatchingConjugatePrimeStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaVacuumHeckeIdentitySplitPlaceStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplittingCharactersUnramifiedOffLevelsStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaVacuaMatchingConjugatePrime
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaVacuumHeckeIdentitySplitPlace
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplittingCharactersUnramifiedOffLevels
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryGroupCharacterOfHeckeChar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaAtOfIsEtaConj
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinPartConjMem
@@ -189,11 +189,11 @@ theorem step_match {ψ : AddChar (AF D.host.F) ℂ} {S T : HSp D} {χS χT : (AE
   subst hS hT
   rw [← absNorm_conjPl] at hq
   have hP' : conjPl (conjPl P) ≠ conjPl P := by rw [Formalism.DivisionValues.ValuationRepresentative.conjPl_conjPl]; exact hP.symm
-  have hv := (GlobalTheory.T.thetaVacuum_heckeIdentity_splitPlace ψ S T χS χT om P hW hP u.1 u.2).1
-  have hm := ((GlobalTheory.T.thetaVacuum_heckeIdentity_splitPlace ψ S T χS χT om (conjPl P) hW hP' u'.1 u'.2).2 e ϖ x t he h1 h2 hx).1 hr
+  have hv := (_root_.GlobalTheory.Hk3.SplitMatch.match_split ψ S T χS χT om P hW hP u.1 u.2).1
+  have hm := ((_root_.GlobalTheory.Hk3.SplitMatch.match_split ψ S T χS χT om (conjPl P) hW hP' u'.1 u'.2).2 e ϖ x t he h1 h2 hx).1 hr
   rw [splitC_sum, dualC_splitC]
   refine match_sum _ _ _ _ fun l hl => ?_
-  have h3 := (((GlobalTheory.T.thetaVacua_matching_conjugatePrime ψ S T χS χT om P hW).2 hv).2 _ _).1 (hm l (Nat.lt_succ_iff.1 (Finset.mem_range.1 hl)))
+  have h3 := (((_root_.GlobalTheory.Hk3.ConjMatch.match_conj ψ S T χS χT om P hW).2 hv).2 _ _).1 (hm l (Nat.lt_succ_iff.1 (Finset.mem_range.1 hl)))
   rw [dualC_dualC, ← hq, ← hν] at h3
   convert h3 using 2
   funext j
@@ -302,8 +302,8 @@ theorem exists_transfer : ∀ {D : D7} {G : Type} [Group G] [Fintype G] {Pl0 T :
   obtain ⟨-, g2, -, g4⟩ := _root_.GlobalTheory.GoodPrimes.good_primes R F hC.lev
   obtain ⟨hG, hP, hq⟩ := g4 hC.fam t P P.2
   have hG' := (g2 t _ hG).2.1
-  obtain ⟨u1, u2⟩ := GlobalTheory.T.splittingCharacters_unramified_offLevels R F hC.lev t _ hG
-  obtain ⟨v1, v2⟩ := GlobalTheory.T.splittingCharacters_unramified_offLevels R F hC.lev t _ hG'
+  obtain ⟨u1, u2⟩ := _root_.GlobalTheory.UnrOffLevels.unrPl_of_good R F hC.lev t _ hG
+  obtain ⟨v1, v2⟩ := _root_.GlobalTheory.UnrOffLevels.unrPl_of_good R F hC.lev t _ hG'
   have hm := D.R.two_le_m
   have hP' : conjPl (conjPl (R.pl P)) ≠ conjPl (R.pl P) := by rw [Formalism.DivisionValues.ValuationRepresentative.conjPl_conjPl]; exact hP.symm
   obtain ⟨e, he⟩ := GlobalTheory.MovedIdem.exists_isIdemAt (conjPl (R.pl P)) (by
@@ -328,14 +328,14 @@ theorem exists_transfer : ∀ {D : D7} {G : Type} [Group G] [Fintype G] {Pl0 T :
   have hfix : FixAll R t (R.pl P) := by
     refine ⟨fun k hk => ?_, ?_, fun i => ?_⟩
     · have := unrPl_step (u2 (k + 1) (by omega) hk.le) u1
-      exact (GlobalTheory.T.thetaVacuum_heckeIdentity_splitPlace _ _ _ _ _ _ _ (hC.chain.ωY t k hk) hP this.1 this.2).1
+      exact (_root_.GlobalTheory.Hk3.SplitMatch.match_split _ _ _ _ _ _ _ (hC.chain.ωY t k hk) hP this.1 this.2).1
     · have := unrPl_step (u2 D.R.m (by omega) le_rfl) u1
-      exact (GlobalTheory.T.thetaVacuum_heckeIdentity_splitPlace _ _ _ _ _ _ _ (hC.chain.ωX t) hP this.1 this.2).1
+      exact (_root_.GlobalTheory.Hk3.SplitMatch.match_split _ _ _ _ _ _ _ (hC.chain.ωX t) hP this.1 this.2).1
     · have := u2 ((i : ℕ) + 1) (by omega) i.2
-      exact (GlobalTheory.T.thetaVacuum_heckeIdentity_splitPlace _ _ _ _ _ _ _ (hC.thP.ωP i t) hP this (unrPl_mul_inv this u1)).1
+      exact (_root_.GlobalTheory.Hk3.SplitMatch.match_split _ _ _ _ _ _ _ (hC.thP.ωP i t) hP this (unrPl_mul_inv this u1)).1
   refine ⟨W 0, fun k hk => ?_, fun a => ?_⟩
   · rw [hY 0 (Nat.zero_le _)]
-    refine GlobalTheory.T.matchE_of_chainStep_matches R F hL hC hS t _ hG hfix _ (fun j => splitC (D.R.r + j * D.R.t) (W j k)) ?_ fun j hj => ?_
+    refine _root_.GlobalTheory.Hk3.ChainE.matchE_of_chain R F hL hC hS t _ hG hfix _ (fun j => splitC (D.R.r + j * D.R.t) (W j k)) ?_ fun j hj => ?_
     · have hW := hC.chain.ωX t
       have h3 := step_match (ν := ν (D.R.m - 1)) (s := s (D.R.m - 1)) hW hP (unrPl_step (u2 D.R.m (by omega) le_rfl) u1)
         (unrPl_step (v2 D.R.m (by omega) le_rfl) v1) he h1 h2 hx (hY _ (Nat.sub_le _ _)) hX

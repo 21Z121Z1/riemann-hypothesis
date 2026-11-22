@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepresentsHermitian
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmallSectionsTwistedPowerEncardEqBall
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteSmallSecHermitianLineBundleArithVariety
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EncardSmallSectionsLeOfHermLBLeBySmallSection
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermLBLeBySmallSectionTensorIsometricTransShiftStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermLBLeBySmallSectionTensorIsometricTransShift
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmallSectionsLowerBoundAmpleMinusTwist
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGoodHermPairAdaptedTwist
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology
@@ -35,7 +35,7 @@ theorem main : GlobalTheory.Published.ArCalc → AmpleHS → ∀ (k : Type) [Com
     simpa using this
   have hE := SmallBall.encard_eq_Bl P hRep ((P.L.pow m).tens ((P.A.pow c).dual)).smallSec 1 zero_le_one fun u => by
     simp only [HermLB.smallSec, Set.mem_setOf_eq, one_pow]
-  have hle := _root_.GlobalTheory.HSNef.LeCard.encard_smallSec_le k X p _ _ ((GlobalTheory.T.hermLBLeBySmallSection_tensor_isometric_trans_shift k X p _ _ (P.L.pow m)).1 hLe)
+  have hle := _root_.GlobalTheory.HSNef.LeCard.encard_smallSec_le k X p _ _ ((_root_.GlobalTheory.HSNef.le_tens_isometric_trans_shift k X p _ _ (P.L.pow m)).1 hLe)
   have hfin := _root_.GlobalTheory.SmallFin.smallSec_finite k X p D hX ((P.L.pow m).tens N)
   have hBle : (P.Bl m (-c) 1).encard ≤ ((P.L.pow m).tens N).smallSec.encard := hE ▸ hle
   have hBfin : (P.Bl m (-c) 1).Finite :=

@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.WittOnFalse
 import Development.AbelianVarietyTheory.Definitions.Divisors.FormalCoboundarySmul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobKerIdealLeAugIdeal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMapOfAddFormalGroupLawEvalPoints
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRigidifiedExtensionOfSeriesPairStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRigidifiedExtensionOfSeriesPair
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RigidifiedExtensionPresentationOfSeriesPairs
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfFormalGroupLawCoboundaryOneEqZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowerSeriesEvalAtNilpotentXEqCoordinate
@@ -26,7 +26,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniquePowerSe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemilinearPDivGroupHomChartConstantCoeffSubst
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConnectedPDivGroupChartSemilinearHomIsFormalGrouStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RigidifiedExtensionPresentationNaturalSemilinearStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapFormalGroupLawQuasiLogarithmsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapFormalGroupLawQuasiLogarithms
 
 open CategoryTheory TensorProduct MvPowerSeries GlobalTheory GlobalTheory.PDiv GlobalTheory.PDivGroup GlobalTheory.Katz
 
@@ -48,7 +48,7 @@ theorem semiPull_exists {k k' : Type} [Field k] [CharP k p] [PerfectRing k p] [F
       g.1 = subst (fun j => Katz.lift p (φ j)) (MvPowerSeries.map (frMap p σ) f.1) ∧
       m (Submodule.Quotient.mk f) = Submodule.Quotient.mk g := by
   have hσμ := GlobalTheory.T.isCommFormalGroupLaw_map k k' σ d μ hμ
-  have hB := GlobalTheory.T.map_formalGroupLawQuasiLogarithms p k k' σ d μ hμ hσμ
+  have hB := _root_.GlobalTheory.Katz.quasiLog_map p k k' σ d μ hμ hσμ
   obtain ⟨m1, hm1⟩ := GlobalTheory.Katz.ModHom.map_exists p k' e d ν _ hν hσμ φ hφ
   let L0 : quasiLog p hμ →ₛₗ[WittVector.map (p := p) σ] quasiLog p hσμ :=
     { toFun := fun f => ⟨MvPowerSeries.map (frMap p σ) f.1, (hB f.1 f.2).1⟩
@@ -131,7 +131,7 @@ theorem chartPull_comp {k k' k'' : Type} [Field k] [CharP k p] [PerfectRing k p]
   rw [hmu', hms, hmt]
   refine mk_eq_mk_of_sub gu gt ?_
   have hσμ := GlobalTheory.T.isCommFormalGroupLaw_map k k'' (τ.comp σ) d μ hμ
-  have hF := (GlobalTheory.T.map_formalGroupLawQuasiLogarithms p k k'' (τ.comp σ) d μ hμ hσμ f.1 f.2).1
+  have hF := (_root_.GlobalTheory.Katz.quasiLog_map p k k'' (τ.comp σ) d μ hμ hσμ f.1 f.2).1
   have key := (GlobalTheory.Katz.PullQuasiLog.main p k'' e d (fun i => MvPowerSeries.map (τ.comp σ) (μ i)) hσμ _ hF).2.1
     e' φt ψ (h3t.1) hψ0
   rw [hgu, hgt, hgs, map_subst_lift p τ φs h3s.1, MvPowerSeries.map_map, ← frMap_comp]
@@ -205,7 +205,7 @@ theorem chartPull_red {k k' : Type} [Field k] [CharP k p] [PerfectRing k p] [Fie
   obtain ⟨t, w, ht, hw⟩ := hD.1 f.1 f.2
   have hcoc := hD.2 f.1 f.2 t ht
   have hσμ := GlobalTheory.T.isCommFormalGroupLaw_map k k' σ d μ hμ
-  have hB := GlobalTheory.T.map_formalGroupLawQuasiLogarithms p k k' σ d μ hμ hσμ f.1 f.2
+  have hB := _root_.GlobalTheory.Katz.quasiLog_map p k k' σ d μ hμ hσμ f.1 f.2
   have hP := GlobalTheory.KatzPull.quasiLog_pull p k' e d ν _ hν hσμ φ hhom _ hB.1
   rw [hmg, hr f t w ht hw, hr' g (pull2 φ (MvPowerSeries.map σ t)) (pullLin φ (fun i => σ (w i)))
     (by rw [hg]; exact hP.2.1 _ (hB.2.2.1 t ht)) (by rw [hg]; exact hP.2.2 _ (hB.2.2.2 w hw))]
@@ -269,7 +269,7 @@ theorem exists_base_isConn_katz : ∀ (p : ℕ) [Fact p.Prime],
   have hlaw : ∀ (k : Type) [Field k] [CharP k p] [PerfectRing k p] (G : PDivGroup p k) (hG : G.IsConn),
       IsLaw (μ k G hG) := fun k _ _ _ G hG => _root_.GlobalTheory.Katz.Chart.isLaw_of_isLawOf p k _ G _ _ (hc k G hG)
   choose ρ hρ using fun (k : Type) [Field k] [CharP k p] [PerfectRing k p] (G : PDivGroup p k)
-    (hG : G.IsConn) => GlobalTheory.T.exists_rigidifiedExtension_of_series_pair p k (d k G hG) G (c k G hG)
+    (hG : G.IsConn) => _root_.GlobalTheory.Katz.exists_rigMap p k (d k G hG) G (c k G hG)
   choose r hr hsurj hker using fun (k : Type) [Field k] [CharP k p] [PerfectRing k p] (G : PDivGroup p k)
     (hG : G.IsConn) => GlobalTheory.Katz.reductionMap p k (d k G hG) (μ k G hG) (hlaw k G hG) G.RigExt (ρ k G hG)
       (_root_.GlobalTheory.Katz.isRigOf_rigMk p k _ G _ _ _ (hc k G hG) (hρ k G hG))

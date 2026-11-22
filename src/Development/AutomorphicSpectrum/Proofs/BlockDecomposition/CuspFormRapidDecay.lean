@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GoodConstOfAniso
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GoodFunctionLineDerivativeStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GoodFunctionLineDerivative
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SiegelSetUniformSmoothBound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalConstantTermSmall
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SiegelDomainOpenSubgroupBound
@@ -26,7 +26,7 @@ theorem decay_step {F E : Type} [Field F] [NumberField F] [Field E] [NumberField
   obtain ⟨q, b, Ω₀, Cv, δ₁, hb, hΩ₀, hδ₁, hCv, hmv⟩ := _root_.GlobalTheory.CompanionTheory.RapidDecay.Mean.mean_value F E σ h n J hJ
   have hCm' : IsCompact ((fun x : GAd σ J × GAd σ J => x.1 * x.2) '' (Cm ×ˢ Ω₀)) :=
     (hCm.prod hΩ₀).image (by fun_prop)
-  choose B hB using fun i => hm _ (GlobalTheory.T.good_function_line_derivative F E σ h n J hJ U A ψ (b i) hψ (hb i)) _ hCm'
+  choose B hB using fun i => hm _ (_root_.GlobalTheory.CompanionTheory.RapidDecay.good_lineDer F E σ h n J hJ U A ψ (b i) hψ (hb i)) _ hCm'
   obtain ⟨B₀, hB₀⟩ := hm ψ hψ Cm hCm
   obtain ⟨M, hM0, hM⟩ := _root_.GlobalTheory.CompanionTheory.RapidDecay.near_cusp F E σ h n J hJ r X Y hW Ω Cm c U hΩ hΩP hCm hc hU
   set R₀ := max 1 (M / δ₁) with hR₀

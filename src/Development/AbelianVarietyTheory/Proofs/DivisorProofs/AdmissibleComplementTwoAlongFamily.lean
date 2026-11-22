@@ -5,11 +5,11 @@ import Formalism.SharpRestriction.GlobalSchurBounds.ProductFirstZerothParts
 import Formalism.LocalRingCardinality.IntCastDvdOfDvdIntegers
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdmissibleDegreeCountAlongFamily
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TypePrimeValuationSumEqLogGapFamily
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OffDiagonalRamifiedBoundAlongFamilyStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OffDiagonalRamifiedBoundAlongFamily
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNonnegConstDiscriminantTermLeBudgetFamilyA
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InertPrimesLossLogSumAdmissible
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdmissibleOffTypeFamilyBoundStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TypePrimeSizesLeBudgetFamilyStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdmissibleOffTypeFamilyBound
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TypePrimeSizesLeBudgetFamily
 
 open Formalism.BasicNotions Formalism.BasicNotions.DV Formalism.MainNotions NumberField Classical
 
@@ -19,10 +19,10 @@ theorem familySecondComplementInputs_of_tuSize_of_dGamSize : ∀ {eps : ℝ} (Fm
     Formalism.MainNotions.WeightDegreeSizes.FamilySecondComplementInputs Fm := by
   intro eps Fm h0 h1 hT hG
   obtain ⟨Cdeg, xd, -, hdeg⟩ := _root_.GlobalTheory.AdmissibleDegree.admissibleDegreeCount_along_family Fm h0 h1
-  obtain ⟨Cg, xg, hCg, hsz⟩ := GlobalTheory.T.typePrime_sizes_le_budget_family Fm h0 h1 hG Cdeg
-  obtain ⟨CT, xT, -, hoT⟩ := GlobalTheory.T.admissible_off_type_family_bound Fm h0 h1 hT
+  obtain ⟨Cg, xg, hCg, hsz⟩ := _root_.GlobalTheory.TypeSize.typePrimeSizeBound_of_eps_lt_one_div_fiftyTwo Fm h0 h1 hG Cdeg
+  obtain ⟨CT, xT, -, hoT⟩ := _root_.GlobalTheory.LevelBudget.admissible_off_type_level_budget Fm h0 h1 hT
   obtain ⟨CG, xG, -, hoG⟩ := _root_.GlobalTheory.exists_nonneg_const_discriminant_term_le_budget_family Fm h0 h1 hT hG
-  obtain ⟨Cd, xD, -, hoD⟩ := GlobalTheory.T.offDiagonalRamified_bound_along_family' Fm h0 h1
+  obtain ⟨Cd, xD, -, hoD⟩ := _root_.GlobalTheory.RamifiedOffD.offDiagonalRamified_bound_along_family Fm h0 h1
   obtain ⟨CI, xI, -, hoI⟩ := _root_.GlobalTheory.InertLossAdm.inertPrimes_loss_log_sum_admissible Fm h0 h1
   refine ⟨Cdeg, Cg, CT, CG, Cd, CI, max xd (max xg (max xT (max xG (max xD xI)))), hCg, ?_⟩
   intro x hx0 hx i

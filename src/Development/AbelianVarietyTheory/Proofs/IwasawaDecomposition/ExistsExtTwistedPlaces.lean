@@ -10,7 +10,9 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Ds
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HarishChandraFinite
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
 import Formalism.LocalToGlobal.IndefiniteReal.LinksStage
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsGIsStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsGIs
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.TiedColumnData
+import Formalism.SharpRestriction.GlobalSchurBounds.ThickPlacesCorollaryOfAnyTranslate
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NonzeroForcedContentPlacesAgreeOverEnlargement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AuxiliaryPlacesEqUnionThreeParts
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.PlacesOverConjPrimes
@@ -82,7 +84,7 @@ namespace GlobalTheory.Mem.R3.Rw.Second
 theorem exists_ext_twisted_places : GlobalTheory.Published.GreenCuspidal → DatExt → StepW Pinned fun K B' f' T' w' => ∀ (B : Base) (f : Fr B.toPre) (T : TwDat B) (w : ColW B f T), Enl B B' → HEq f' f → Pinned K B f T w → HEq w'.px w.px → T'.pl = T.pl → ∀ (Z : w.Lt) (hX : B.fields.Ok) (Wt : Set B.places.Pl) (z : Dat (w.st Z) w.I hX T Wt), GrpTrue Z.N f → GrpAt (w.st Z) w.I → DV.KapDef (w.D Z) → Fine z → HoldsL z.R z.F → Wt = z.W1 (F0K K.s (w.D Z)) → (∀ v ∈ Wt, B.places.resChar v ∈ T.pl) → (∀ (Z' : w'.Lt) v', (∀ v, Below (w.D Z) (w'.D Z') v v' → v ∉ Wt) → T'.psi v' = 1) → ∃ (Z' : w'.Lt) (hX' : B'.fields.Ok) (z' : Dat (w'.st Z') w'.I hX' T' {v | B'.places.resChar v ∈ T'.pl}), GIs2 K w' Z'.G ∧ GrpTrue Z'.N f' ∧ GrpAt (w'.st Z') w'.I ∧ DV.KapDef (w'.D Z') ∧ Fine z' ∧ (∀ v ∈ z'.W1 (F0K K.s (w'.D Z')), B'.places.resChar v ∈ T'.pl) ∧ (∀ v, v ∉ z'.W1 (F0K K.s (w'.D Z')) → T'.psi v = 1) ∧ Ext z z' ∧ ∀ v v', Below (w.D Z) (w'.D Z') v v' → (v ∈ Wt ↔ v' ∈ z'.W1 (F0K K.s (w'.D Z'))) := by
   intro hG hDE
   have hP : StepW Pinned Pinned := StepW.of_all fun _ _ _ _ _ _ _ h => h
-  refine ((hP.and hDE).and GlobalTheory.T.exists_GJStage_GIs2_pinned).trans (StepW.of_all fun K B' f' T' w' hO' _ H => ?_)
+  refine ((hP.and hDE).and _root_.GlobalTheory.Mem.Top.Bl.TrueLocal.exists_trueVolumeStage_columnChoiceStep).trans (StepW.of_all fun K B' f' T' w' hO' _ H => ?_)
   obtain ⟨⟨⟨pin'⟩, hDE'⟩, G, hG2⟩ := H
   intro B f T w hE hf hPin hpx hpl Z hX Wt z hGT hGA hKap hFine hHL hWt hsub hpsi
   obtain ⟨Z', rfl, hGT', hGA', hKap'⟩ := exists_lt_of_stage hG w' hO' pin'.hX G

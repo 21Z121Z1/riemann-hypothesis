@@ -3,7 +3,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusOfSpec
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedOrbitalIntegralSummandGoodPlaceIndicator
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsOrthonormalBasisUnimodularHermitianLocalRi
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsWittBasis
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedQuadraticNormsTraceUniformizerFactsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedQuadraticNormsTraceUniformizerFacts
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnitLemmaGroup
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeEqIntegralCoords
 open NumberField GlobalTheory.UnitaryBC IsDedekindDomain Matrix Polynomial GlobalTheory.CuspRep Formalism.UG GlobalTheory.BCT GlobalTheory.KapLat GlobalTheory.KapOrb
 open scoped Classical
@@ -26,7 +27,7 @@ theorem exists_orthonormal_of_selfDual : ∀ (K : GlobalTheory.UnitLemma.UQ) (V 
   obtain ⟨b, hb⟩ := exists_basis_of_lattice K V L hfg hsp
   have inj : Function.Injective (algebraMap K.O K.E) := IsFractionRing.injective _ _
   obtain ⟨s, hs⟩ := GlobalTheory.UnitLemma.Witt.exists_conj K
-  obtain ⟨hN, ⟨t, ht⟩, -⟩ := GlobalTheory.T.unramifiedQuadratic_norms_trace_uniformizer_facts K
+  obtain ⟨hN, ⟨t, ht⟩, -⟩ := _root_.GlobalTheory.UnitLemma.UnramNorm.unram_quadratic_facts K
   have hadd2 : ∀ y z z', h y (z + z') = h y z + h y z' := by
     intro y z z'
     rw [hsym, hadd, map_add, ← hsym, ← hsym]

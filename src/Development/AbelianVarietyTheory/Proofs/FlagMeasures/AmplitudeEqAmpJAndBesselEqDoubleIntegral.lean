@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
 import Formalism.FormalDegreeBessel.FinalG
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselSubgroupRepTwistedIsUnitaryRep
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnimodularBesselSubgroupsUWNStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnimodularBesselSubgroupsUWN
 open MeasureTheory Matrix Formalism.QuantumDeterminants Formalism.MainNotions.S GlobalTheory.SgInf
 open scoped InnerProductSpace
 
@@ -244,9 +244,9 @@ theorem part2 {H : Type*} [NormedAddCommGroup H] [InnerProductSpace ℂ H]
     filter_upwards [a1, a2, a3, a4] with p h1 h2 h3 h4
     exact ⟨h1, h2, h3, h4⟩
 
-  have hWi : μW.map invM = μW := ((GlobalTheory.T.unimodular_besselSubgroups_UW_N k r z hz hT μW).2.2 hμW).1.2
-  have hW'i : μW'.map invM = μW' := ((GlobalTheory.T.unimodular_besselSubgroups_UW_N k r z' hz' hT' μW').2.2 hμW').1.2
-  have hNi : μN.map invM = μN := ((GlobalTheory.T.unimodular_besselSubgroups_UW_N k r z hz hT μN).2.1 hμN).1.2
+  have hWi : μW.map invM = μW := ((_root_.GlobalTheory.SgInf.unimodular_S_N_UW k r z hz hT μW).2.2 hμW).1.2
+  have hW'i : μW'.map invM = μW' := ((_root_.GlobalTheory.SgInf.unimodular_S_N_UW k r z' hz' hT' μW').2.2 hμW').1.2
+  have hNi : μN.map invM = μN := ((_root_.GlobalTheory.SgInf.unimodular_S_N_UW k r z hz hT μN).2.1 hμN).1.2
   have hinv4 : ((μW.prod μN).prod (μW'.prod μN)).map inv4 = (μW.prod μN).prod (μW'.prod μN) := by
     unfold inv4
     rw [← Measure.map_prod_map _ _ (measurable_invM.prodMap measurable_invM)

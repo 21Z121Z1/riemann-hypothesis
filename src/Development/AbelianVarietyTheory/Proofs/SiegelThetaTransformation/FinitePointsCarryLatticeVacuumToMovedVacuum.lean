@@ -4,10 +4,10 @@ import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsHeatZero
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DoubledHermitianTestFunctionZeroAndNorm
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaKernelOrthonormalFrameInDomainPeriodLinear
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaFunctionFundamentalDomainInnerProductBasic
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdelicZakThetaExistsUniqueStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdelicZakThetaExistsUnique
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LatticeVacuaTensorCorrespondLine
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.CompletedTensorLatticeLatticeVacuumTransportStatement
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockPolynomialVectorTestThetaZeroEqThetaSeriesStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.CompletedTensorLatticeLatticeVacuumTransport
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockPolynomialVectorTestThetaZeroEqThetaSeries
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.WeakWeilRepCarriesDerivativesVacuaFockVectors
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.InnerProductTranslatedVacuaEqGaussianKernel
 
@@ -34,7 +34,7 @@ theorem ipO_Th_self_eq (D : D7) (S T : HSp D) (C : Ctx S T) (μ : Measure (WO S 
       a * SW.ip φ φ * (gaussR C.X C.bas C.idx x (C.zOf x 0) * conj (gaussR C.X C.bas C.idx x (C.zOf x 0)) *
         kZero C.X C.idx x x (C.zOf x 0) (fun k i => conj (C.zOf x 0 k i))) := by
     intro φ hφ
-    have hT : C.IsTh (C.Th x φ) := (GlobalTheory.T.adelicZakTheta_exists_unique D S T C x hx φ hφ).1.1
+    have hT : C.IsTh (C.Th x φ) := (_root_.GlobalTheory.Ker.ZakEx.isZak_Th D S T C x hx φ hφ).1.1
     rw [← ((hip _ hT).2.2.2 _ hT).2.2.2.2.1 0,
       _root_.GlobalTheory.Ker.GaussKer.ipO_rho_Th D S T C μ 𝓕 hμ x hx x hx φ φ hφ hφ 0 0 hR hR, (hab φ φ hφ hφ).1]
   rw [key v hv, key v' hv', h]
@@ -46,17 +46,17 @@ theorem om_Th_vac : ∀ (D : D7) (S T : HSp D) (C : Ctx S T), ∀ om : GA D S ×
   have hfix : C.mvB g B = B := (hBB.2.2.2.2.2 g).2.2.1 hg
   set f := C.Th (C.xB B) v with hf
   set f' := C.Th (C.xB B) v' with hf'
-  have hfT : C.IsTh f := (GlobalTheory.T.adelicZakTheta_exists_unique D S T C _ hx v hv.1).1.1
-  have hfT' : C.IsTh f' := (GlobalTheory.T.adelicZakTheta_exists_unique D S T C _ hx v' hv'.1).1.1
+  have hfT : C.IsTh f := (_root_.GlobalTheory.Ker.ZakEx.isZak_Th D S T C _ hx v hv.1).1.1
+  have hfT' : C.IsTh f' := (_root_.GlobalTheory.Ker.ZakEx.isZak_Th D S T C _ hx v' hv'.1).1.1
 
   have hLat : IsLatVac (heisO C.ψ S T) (hatA S T (tens Λ L)) f :=
     ((_root_.GlobalTheory.Ker.latVac_th_line D S T C w hwi hw1 hw2 M Λ hΛ L hL).1 _ hx v hv.1).2 hv.2.2
   have hLat' : IsLatVac (heisO C.ψ S T) (hatA S T (tens Λ' L')) (om (h, g) f) :=
-    (GlobalTheory.T.completedTensorLattice_lattice_vacuum_transport D S T C h g Λ Λ' L L' hmS hmT).2 om hom f hfT hLat
+    (_root_.GlobalTheory.TensLatMove.hatA_move D S T C h g Λ Λ' L L' hmS hmT).2 om hom f hfT hLat
   have hTh : C.IsTh (om (h, g) f) := hom.om_pres (h, g) f hfT
   have hFock : C.IsFock B (om (h, g) f) := by
     have h1 := ((_root_.GlobalTheory.Ker.WeakMove.om_move D S T C om hom h g f hfT).2 B hB).1
-      ((GlobalTheory.T.fockPolynomialVector_testTheta_zero_eq_thetaSeries D S T C).2 B hB v hv.1).1
+      ((_root_.GlobalTheory.Ker.fvec_Th_zero D S T C).2 B hB v hv.1).1
     rwa [hfix] at h1
   obtain ⟨t, ht⟩ :=
     (_root_.GlobalTheory.Ker.latVac_th_line D S T C w hwi hw1 hw2 M Λ' hΛ' L' hL').2 B hB v' hv' _ hTh hFock hLat'

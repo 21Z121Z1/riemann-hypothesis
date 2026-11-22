@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.WeightSpaceValuesIntegralTorsionBoundShortestVecStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.WeightSpaceValuesIntegralTorsionBoundShortestVec
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ValueAtOrigin
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsPrimGenerator
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.GtOntoDivisibleKernel
@@ -94,7 +94,7 @@ theorem exists_norm_FF_eq : Laws → Laws2 → UTorsSt → ∀ (o Ω : Type) [Co
   have hle : S.perp l.yy.ker ≤ l.yy.ker :=
     l.isoFree.1.trans ((thetaSys_FF_mem_finite_perp_proj o Ω S).2.2.1 _).le
   refine _root_.GlobalTheory.thetaSys_exists_norm_FF_eq o Ω S p y₀ hint _ (l.wt α) _
-    (fun t i => GlobalTheory.T.weightSpace_values_integralTorsion_bound_shortestVector hL hL2 hU o Ω S ρ p y₀ u l hint α hα t (hle t.2) i) ?_
+    (fun t i => _root_.GlobalTheory.ZH.WeightBound.main hL hL2 hU o Ω S ρ p y₀ u l hint α hα t (hle t.2) i) ?_
   obtain ⟨w₀, hw₀⟩ := (EvalZero.value_at_origin hLL u.V _ hadm u.D u.A u.G u.semi u.U (PadicAlgCl p)).2.1 rig hs.1
   obtain ⟨th', ϑ, hϑ, hprim, hgen⟩ := exists_prim_generator hLL hT hVR hTW hUU u.V u.complete ϖ hϖ u.D Q hnorm.2.1
     (PadicAlgCl p) v hv u.A u.G u.semi u.U w₀ hw₀.1

@@ -59,7 +59,7 @@ theorem datum_top_alt : ∀ (D : D7) (L : SizeData₂ D) (hT : GatTies D) (Gi : 
   · rw [ho'eq]; exact vac_mono' _ hNvac
   · intro hne
     rw [ho'eq]
-    exact GlobalTheory.T.seesawCombinations_composite_ne_zero_of_vacuum D f.c.ψ hψ _ _ M f.g.LT hM hLT n Lp hinj g₀ hg0 hne
+    exact _root_.GlobalTheory.CombNonzero.main D f.c.ψ hψ _ _ M f.g.LT hM hLT n Lp hinj g₀ hg0 hne
   · intro d hd
     obtain ⟨F, hF, hFt, heq⟩ := hdat d hd
     rw [heq, hkey F hF hFt]

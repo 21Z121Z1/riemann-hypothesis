@@ -1,5 +1,5 @@
 import Mathlib
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.MatrixInductionTransvectionDiagonalStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.MatrixInductionTransvectionDiagonal
 
 open NumberField IsDedekindDomain MeasureTheory Topology
 open scoped TensorProduct ENNReal NNReal Matrix
@@ -110,7 +110,7 @@ theorem transpose_transvection (i j : ι) (c : R) :
 
 theorem scale_transpose (hsr : ∀ a b : R, IsCoprime a b → ∃ t, IsUnit (a + t * b))
     (A : Matrix ι ι R) (hA : IsUnit A.det) : scale Aᵀ = scale A := by
-  refine GlobalTheory.T.matrix_induction_transvection_diagonal R hsr ι (fun A => scale Aᵀ = scale A) ?_ ?_ ?_ A hA
+  refine _root_.GlobalTheory.CompanionTheory.Adelic.StableRangeOne.matrix_induction R hsr ι (fun A => scale Aᵀ = scale A) ?_ ?_ ?_ A hA
   · intro i j c hij
     simp only [transpose_transvection]
     rw [scale_transvection hij, scale_transvection hij.symm]

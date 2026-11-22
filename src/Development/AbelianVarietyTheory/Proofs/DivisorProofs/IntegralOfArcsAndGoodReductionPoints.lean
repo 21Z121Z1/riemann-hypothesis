@@ -113,7 +113,7 @@ theorem integral_of_arcs_of_good : ∀ (E : Type) [Field E] [NumberField E] [IsC
       have := hy ⟨IsLocalRing.closedPoint T.V, rfl⟩
       change (spMap i ≫ z) (IsLocalRing.closedPoint T.V) ∈ _ at this
       erw [Scheme.Hom.comp_apply, e] at this; exact this)
-  obtain ⟨T', g, ϖ, a, hg, hgf, hϖ, hA⟩ := GlobalTheory.T.exists_arcData_of_badReduction_finiteExtension E H Dw l Xo c V Y h3 hS T io' b y' zT hbio hy' hzT' hzT hbad
+  obtain ⟨T', g, ϖ, a, hg, hgf, hϖ, hA⟩ := _root_.GlobalTheory.ArcOfPoint.exists_arcIn_of_bad_reduction E H Dw l Xo c V Y h3 hS T io' b y' zT hbio hy' hzT' hzT hbad
   have hcpl : IsAdicComplete (Ideal.span {ϖ}) T'.V := hϖ.maximalIdeal_eq ▸ T'.cpl
   obtain ⟨χ₀, hχ, hsp⟩ := h4 T'.V (g.comp b) ϖ a (Or.inr ⟨inferInstance, hϖ, hcpl⟩)
   obtain ⟨hover₀, hab₀, hopen, hW⟩ := (hχ χ₀).1 rfl

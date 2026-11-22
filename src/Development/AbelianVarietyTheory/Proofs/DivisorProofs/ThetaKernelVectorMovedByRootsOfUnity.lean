@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionLiftPa
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LevelCharactersRamificationLevelPlaces
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TameHeckeCharSplitSupportedEqProdResidue
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsDetInt
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeCharTrivialOnIdempotentIntegralUnitsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeCharTrivialOnIdempotentIntegralUnits
 
 set_option autoImplicit false
 
@@ -59,9 +59,9 @@ theorem unrOff_ker {T0 : Type} {L : LevCh D T0} {μ0 : T0} (hL : L.Is μ0) {ξ :
     {P : Finset (Pl D.host.E)} {e : AE D} (hP : ∀ PP, PP ∈ P ↔ PP ∈ L.Pg ∨ PP ∈ Q) (he : IsIdemSum e P) :
     GlobalTheory.VecInv.UnrOff (e + cA D e) (L.mu0 ((j : ℕ) + 1) * χ) ∧ GlobalTheory.VecInv.UnrOff (e + cA D e) L.eta := by
   obtain ⟨-, -, -, h4⟩ := ramif_ker hL hpl hram j
-  refine ⟨GlobalTheory.VecInv.UnrOff.mul (GlobalTheory.T.heckeChar_trivial_on_idempotentIntegralUnits D _ _ P e (hL.mu0 j) he fun PP' h1 h2 =>
+  refine ⟨GlobalTheory.VecInv.UnrOff.mul (_root_.GlobalTheory.ChrOff.unrOff_of_unrAt D _ _ P e (hL.mu0 j) he fun PP' h1 h2 =>
       h4 PP' (fun h => h1 ((hP _).2 (Or.inl h))) fun PP h => h2 PP ((hP _).2 (Or.inl h)))
-    (GlobalTheory.T.heckeChar_trivial_on_idempotentIntegralUnits D _ _ P e hchr he fun PP' h1 h2 => ?_), GlobalTheory.T.heckeChar_trivial_on_idempotentIntegralUnits D _ _ P e hL.eta he fun PP' _ _ => L.C.isEta.unr PP'⟩
+    (_root_.GlobalTheory.ChrOff.unrOff_of_unrAt D _ _ P e hchr he fun PP' h1 h2 => ?_), _root_.GlobalTheory.ChrOff.unrOff_of_unrAt D _ _ P e hL.eta he fun PP' _ _ => L.C.isEta.unr PP'⟩
   by_contra hn
   rcases (hram PP').1 hn with h | ⟨PP, h, h'⟩
   · exact h1 ((hP _).2 (Or.inr h))

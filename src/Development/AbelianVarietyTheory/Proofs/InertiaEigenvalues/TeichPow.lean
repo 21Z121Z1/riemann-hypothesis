@@ -38,7 +38,7 @@ theorem γ₀_X_eq {K : FinExt l} {s : ℕ} {LL : FinExt l} {Γ : GamS P K s LL}
     exact this
   have hact := (GlobalTheory.Cyc.act_unique l ↥(OL LL) hl0 hlu (R.γ₀ (Γ.resΓ g)) R.φ₀ c h0
     (R.γ₀_comm _) (R.γ₀_X _).1 ((R.γ₀_X _).2.trans hlin)).2
-  rw [hact, (GlobalTheory.T.cyclotomicPowerSeriesAlgHom_action_laws l ↥(OL LL)).1, GlobalTheory.Cyc.cyc]
+  rw [hact, (_root_.GlobalTheory.Cyc.act_laws l ↥(OL LL)).1, GlobalTheory.Cyc.cyc]
 
 set_option maxHeartbeats 1000000 in
 

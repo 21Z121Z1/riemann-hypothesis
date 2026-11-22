@@ -1,9 +1,9 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.ZariskiEtaleLifting.MapUSharp
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.AcrisKummerUnits.ValuationOfValuationModSquare
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PeriodRingBaseChangeFromUniversalStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PeriodRingBaseChangeFromUniversal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousFunctionsPeriodRingSeparation
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousAlgebraUniversalPropertyStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousAlgebraUniversalProperty
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsLocallyConstantToZModPow
 
 set_option backward.isDefEq.respectTransparency false
@@ -58,19 +58,19 @@ def gam (P : PAlg l ⥤ Type) : Xi P ⟶ Xi P where
     rw [← Functor.map_comp_apply, toCont_shift]⟩
   naturality T T' φ := Subtype.ext (contMap_shift φ.1)
 
-def eta₀ (ε : Eps l) : (((base l).cont ℤ_[l]).A)ˣ := (GlobalTheory.T.continuous_algebra_universal_property ε).choose
+def eta₀ (ε : Eps l) : (((base l).cont ℤ_[l]).A)ˣ := (_root_.GlobalTheory.CompanionTheory.ContUniv.main ε).choose
 
 theorem eta₀_sharp (ε : Eps l) : ((base l).cont ℤ_[l]).sharp (eta₀ ε) = 1 :=
-  (GlobalTheory.T.continuous_algebra_universal_property ε).choose_spec.1
+  (_root_.GlobalTheory.CompanionTheory.ContUniv.main ε).choose_spec.1
 
 theorem eta₀_shift (ε : Eps l) :
     PAlg.Hom.f (contShift (base l)) (eta₀ ε) = ((base l).cont ℤ_[l]).s (ε.e 0) * eta₀ ε :=
-  (GlobalTheory.T.continuous_algebra_universal_property ε).choose_spec.2.1
+  (_root_.GlobalTheory.CompanionTheory.ContUniv.main ε).choose_spec.2.1
 
 theorem eta₀_univ (ε : Eps l) (A t : PAlg l) (ht : t.IsTest) (φ : A ⟶ t) (u : (t.A)ˣ) (hu : t.sharp u = 1) :
     ∃! ψ : A.cont ℤ_[l] ⟶ t, A.toCont ℤ_[l] ≫ ψ = φ ∧
       PAlg.Hom.f ψ (PAlg.Hom.f (contMap A.fromBase ℤ_[l]) (eta₀ ε)) = u :=
-  (GlobalTheory.T.continuous_algebra_universal_property ε).choose_spec.2.2 A t ht φ u hu
+  (_root_.GlobalTheory.CompanionTheory.ContUniv.main ε).choose_spec.2.2 A t ht φ u hu
 
 def eta (ε : Eps l) (A : PAlg l) : ((A.cont ℤ_[l]).A)ˣ :=
   Units.map (PAlg.Hom.f (contMap A.fromBase ℤ_[l])).toMonoidHom (eta₀ ε)
@@ -182,7 +182,7 @@ variable {O : Type} [CommRing O] (F : Fn O) (κ : O →+* OC l) (ε : Eps l) (k 
 theorem mem_step (r : ℕ) (T : (F.pt κ).Elements) (x : T.1.Acr n) :
     x ∈ (((flt F κ ε k n ρ hρ).comap (gE F κ k n)).S r).S T ↔
       x ∈ (fil (DD k (base l) n) (ρ r)).map (mapAcr T.1.fromBase n) := by
-  rw [← (GlobalTheory.T.period_ring_base_change_from_universal T.1 n).2.2.2.2.1 k (ρ r)]
+  rw [← (_root_.GlobalTheory.CompanionTheory.AcrMod.acr_modp T.1 n).2.2.2.2.1 k (ρ r)]
   rfl
 
 theorem step_fixed (T : (F.pt κ).Elements) (r : ℕ) (x : (T.1.cont ℤ_[l]).Acr n)

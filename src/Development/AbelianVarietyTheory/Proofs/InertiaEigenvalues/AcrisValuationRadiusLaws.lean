@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsGauss
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsGaussGCTarget
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ISupMonomialHolderLogConvexStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CocyclePartialSumIterateSuccStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ISupMonomialHolderLogConvex
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CocyclePartialSumIterateSucc
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GaussNormAcrisRadiusPosDefinite
 
 noncomputable section
@@ -27,7 +27,7 @@ lemma vrlaw_rad (r : ℝ) (h0 : 0 < r) (h1 : r ≤ 1) :
 lemma vrlaw_gC_zero (ρ : ℝ) (h0 : (l : ℝ)⁻¹ ≤ ρ) (h1 : ρ < 1) : gC l ρ 0 = 0 := by
   have hG := isGauss_gC_target l ρ h0 h1
   have hm := hG.2.2.2.1 0 (l : Formalism.Per.Acris l)
-  rw [zero_mul, (GlobalTheory.T.gaussNormAcris_basic_values l ρ h0 h1).2.1] at hm
+  rw [zero_mul, (_root_.GlobalTheory.PMon.Gauss.gC_basic_values l ρ h0 h1).2.1] at hm
   have : gC l ρ 0 * (1 - ρ) = 0 := by linarith
   rcases mul_eq_zero.1 this with h | h
   · exact h
@@ -60,7 +60,7 @@ theorem vr_laws : ∀ (l : ℕ) [Fact l.Prime] (r : ℝ), 0 < r → r ≤ 1 →
       rw [hρ, ← Real.rpow_mul hl0.le]
       congr 1
       ring
-    have hF := GlobalTheory.T.gaussNormAcris_frobenius_eq_pow_root_radius l ρ hρ0 hρ1 x
+    have hF := _root_.GlobalTheory.PMon.Gauss.gC_phi l ρ hρ0 hρ1 x
     rw [he] at hF
     have hxp : 0 < gC l ((l : ℝ) ^ (-(r / l))) x := _root_.GlobalTheory.PMon.Gauss.gC_pos_target l x hx _ hσ0 hσ1
     refine ⟨?_, ?_⟩
@@ -76,7 +76,7 @@ theorem vr_laws : ∀ (l : ℕ) [Fact l.Prime] (r : ℝ), 0 < r → r ≤ 1 →
       induction m with
       | zero => simp
       | succ m ih =>
-        rw [pow_succ', mul_assoc, hG.2.2.2.1, ih, (GlobalTheory.T.gaussNormAcris_basic_values l ρ hρ0 hρ1).2.1]
+        rw [pow_succ', mul_assoc, hG.2.2.2.1, ih, (_root_.GlobalTheory.PMon.Gauss.gC_basic_values l ρ hρ0 hρ1).2.1]
         ring
     simp only [vr]
     rw [← hρ, hpow n, Real.logb_mul (pow_pos (by rw [hρ]; exact Real.rpow_pos_of_pos hl0 _) n).ne' (hpos x hx).ne', Real.logb_pow,

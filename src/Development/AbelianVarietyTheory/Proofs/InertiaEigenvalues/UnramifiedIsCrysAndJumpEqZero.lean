@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormSubLtOneOf
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsBasisOfSubmodule
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Hilbert90MatrixCoboundaryCharPFiniteLevelStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsWittVectorTraceOneFiniteLevel
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsInvariantMatrixLiftOfAdicCompleteStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsInvariantMatrixLiftOfAdicComplete
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCrysOfSplitStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PeriodDataComparisonStatement
 
@@ -122,7 +122,7 @@ theorem exists_witt_matrix
       change (c.comp (zlW p R)) ((M g - 1) i j) = 0
       rw [hz, map_mul, pow_one, map_natCast, CharP.cast_eq_zero, zero_mul])
   have hct : ∀ y : R, c (WittVector.teichmuller p y) = y := fun y => rfl
-  obtain ⟨W, hW, hWg⟩ := GlobalTheory.T.exists_invariant_matrix_lift_of_adic_complete G (WittVector p R) p WittVector.isAdicCompleteIdealSpanP
+  obtain ⟨W, hW, hWg⟩ := _root_.GlobalTheory.InvariantLift.exists_invariant_lift G (WittVector p R) p WittVector.isAdicCompleteIdealSpanP
     (fun g => WittVector.map (ρ g).toRingHom) (wittMap_mul ρ) (fun g => map_natCast _ _) r
     ((zlW p R).mapMatrix.toMonoidHom.comp M) (fun g h i j => map_zlW p _ _)
     {N | ∃ m, 0 < m ∧ N = fixer ρ p m}

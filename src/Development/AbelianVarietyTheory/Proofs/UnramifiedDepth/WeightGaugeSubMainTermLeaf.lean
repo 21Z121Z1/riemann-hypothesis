@@ -5,8 +5,8 @@ import Formalism.LocalToGlobal.CharacterGerms.CoeffIterateZero
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.TwoMulChainStartIndexAddOneOfOdd
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.FactorizationLeFourFifteenths
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.WeightSubstNonneg
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.CoeffLeafGaugeSubMainTermEqZeroOnFirstAxisStatement
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.PderivLeafGaugeEqPairingAddIntegralStatement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.CoeffLeafGaugeSubMainTermEqZeroOnFirstAxis
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.PderivLeafGaugeEqPairingAddIntegral
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.HPullWUpGTwoGroupEmbeddingEqRename
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.LinearSubstCoordinateWeightNonnegRadius
 
@@ -118,7 +118,7 @@ theorem weight_gauge_sub_main : ∀ (C : Type) [Field C] (V : VF C) (d : ℕ) [N
   · intro α hα
     by_contra hn
     push Not at hn
-    exact hα (GlobalTheory.T.coeff_leafGauge_sub_mainTerm_eq_zero_on_first_axis C V d I J X g a i _ _ e v' _ α hn)
+    exact hα (_root_.GlobalTheory.MainTerm.Axis.coeff_hM_sub_mainM_eq_zero C V d I J X g a i _ _ e v' _ α hn)
   · intro b
     set ρ : Fin N ⊕ Fin M → ℝ := Sum.elim (fun _ => 1 / ((V.l : ℝ) ^ 2 - 1) + 3 / (8 * (V.l : ℝ) ^ i))
       (fun _ => 1 / ((V.l : ℝ) - 1)) with hρ
@@ -130,7 +130,7 @@ theorem weight_gauge_sub_main : ∀ (C : Type) [Field C] (V : VF C) (d : ℕ) [N
       have := hF μ
       rw [le_add_coe_iff, radius_one _ _ hl0, zero_sub] at this
       exact this
-    obtain ⟨γ, hγ, hd⟩ := GlobalTheory.T.pderiv_leafGauge_eq_pairing_add_integral C V d I J X hA g a i hi hid S t ht (Fin N) (Fin M) e v' he hv hv' b
+    obtain ⟨γ, hγ, hd⟩ := _root_.GlobalTheory.GaugeDeriv.pderiv_hM C V d I J X hA g a i hi hid S t ht (Fin N) (Fin M) e v' he hv hv' b
     have hE : MvPowerSeries.pderiv C (Sum.inr b)
         (X.hM g a i e v' - mainM V i (fun b c => ∑ κ : J g, ∑ k : I (1 - g), Φt c κ * X.pair g κ k * v' b k)) =
         MvPowerSeries.subst (fun w : WV I => hPullW (upG w.1 (t w.1 w.2)) (fun c => toW g (e c))

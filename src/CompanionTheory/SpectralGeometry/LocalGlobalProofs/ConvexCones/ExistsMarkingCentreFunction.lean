@@ -3,7 +3,8 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MarkedFormIn
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsBaryStageStart
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOfToRealRel
 import CompanionTheory.SpectralGeometry.CountingDefinitions.VoronoiMeans.VorFunEvalEqFineMean
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.MarkingValueGaloisInvariantStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.MarkingValueGaloisInvariant
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MarkedFormIndicatorValueInvariantHostFixingAut
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolFanMarkedFormUniqueInCell
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MarkValEqZeroOrOne
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.CarrierLabelMarkedFaceBound
@@ -28,7 +29,7 @@ theorem exists_markFun_props_gen : ∀ (O : Type) [CommRing O] [IsDedekindDomain
     split_ifs at h with h'
     · exact h'
     · norm_num at h
-  refine ⟨w, fun σ hσ n B => by rw [hw, hw]; exact GlobalTheory.T.marking_value_galois_invariant O bar w0 hb ψ lab i htψ htlab σ hσ n B, ?_⟩
+  refine ⟨w, fun σ hσ n B => by rw [hw, hw]; exact _root_.GlobalTheory.CompanionTheory.Ar.Fan.TwistedForm.markVal_twist O bar w0 hb ψ lab i htψ htlab σ hσ n B, ?_⟩
   intro X _ _ _ _ hX
   refine ⟨fun β _ _ => ?_, fun β _ _ h1 => (mk β h1).2.2.1, fun β _ _ h1 => (mk β h1).2.2.2.1,
     fun m v hv hle β _ _ β' _ _ h1 h1' hc hc' =>

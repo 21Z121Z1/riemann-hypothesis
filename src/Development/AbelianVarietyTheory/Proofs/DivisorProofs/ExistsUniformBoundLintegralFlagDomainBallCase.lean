@@ -4,14 +4,14 @@ import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.ExistsMixedProj
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.DminCptEq
 import Development.AbelianVarietyTheory.BlockTheory.PoincareCuspForms.ExhaustionFrames
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NmatEqLowMat
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralExpRhoEqSetLIntegralUnitBallDomainStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralExpRhoEqSetLIntegralUnitBallDomain
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitBallLeadingGramMinorLowerBoundFirst
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.IsOrth
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitBallLeadingGramMinorLowerBoundLast
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ColumnGramDeterminantDiagonalBlockUnitLowerPos
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ColumnGramDeterminantUnitLowerBlockLastEqOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetOneSubOffDiagonalBlockGramLeOneBall
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OfRealGramDeterminantBoundLeProdCutoffStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OfRealGramDeterminantBoundLeProdCutoff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralProdChartCoordinatesEqProd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeasurableCutoffGramBoundMixedBlockStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralCutoffGramBoundMixedBlockTwoLtTop
@@ -123,13 +123,13 @@ theorem lintegral_lt_top (X : Data E r) (x0 : Base X) (h1 : 0 < X.p0) (h2 : X.p0
   have hm : Measurable fun z : V (nd X) => ∏ τ, hB X.p0 (zOf X z τ) := by
     refine Finset.measurable_prod _ fun τ _ => (GlobalTheory.T.measurable_cutoffGramBoundMixedBlock r X.p0).comp ?_
     exact measurable_pi_lambda _ fun p => (EuclideanSpace.proj (𝕜 := ℂ) _).continuous.measurable
-  rw [GlobalTheory.T.lintegral_expRho_eq_setLIntegral_unitBallDomain E r X x0 s]
+  rw [_root_.GlobalTheory.IntBall.lintegral_exp_muF_eq_setLIntegral_Om E r X x0 s]
   calc ∫⁻ z in Om X, ENNReal.ofReal (density X x0 z) * ENNReal.ofReal (Real.exp (-(s * rho X z)))
       ≤ ∫⁻ z in Om X, ∏ τ, hB X.p0 (zOf X z τ) := by
         refine setLIntegral_mono hm fun z hz => ?_
         rw [← ENNReal.ofReal_mul (by unfold density; positivity)]
         exact (ENNReal.ofReal_le_ofReal (density_mul_exp_le X h1 h2 h3 x0 hz hs)).trans
-          (GlobalTheory.T.ofReal_gramDeterminantBound_le_prod_cutoff E r X z hz)
+          (_root_.GlobalTheory.IntBall.Cutoff.ofReal_bnd_le E r X z hz)
     _ ≤ ∫⁻ z, ∏ τ, hB X.p0 (zOf X z τ) := setLIntegral_le_lintegral _ _
     _ = ∏ _τ : X.Ψ, ∫⁻ w, hB X.p0 w := _root_.GlobalTheory.IntBall.lintegral_prod_zOf E r X _ (GlobalTheory.T.measurable_cutoffGramBoundMixedBlock r X.p0)
     _ < ⊤ := ENNReal.prod_lt_top fun _ _ => block_fin h1 h2 h3

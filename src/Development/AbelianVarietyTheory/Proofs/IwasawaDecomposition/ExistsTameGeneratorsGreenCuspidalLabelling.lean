@@ -10,8 +10,8 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCouple
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BaseChangeNonempty
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GoodTupleConditionOfIdempotentZero
 import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.LevGapSplit
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CuspParamOfGreenParametrisationStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsEquivariantLabelMapTwistCuspidalLabelStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CuspParamOfGreenParametrisation
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsEquivariantLabelMapTwistCuspidalLabel
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GreenSeriesIdempotentEqClassFunctionIdempotent
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InertiaTwoPlacesOverSamePrimeTrivialMeetStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TameInertiaRepresentativeResidueStatement
@@ -93,8 +93,8 @@ theorem exists_tame_generators_cuspidal_labelling : GlobalTheory.Published.Green
             ∀ f, D.ntypes.eSer k f = eSerO O D.R.r f := by
       intro k
       haveI : Fact (D.host.g k).Prime := ⟨D.host.g_prime k⟩
-      obtain ⟨O, hO1, hO2, hO3⟩ := GlobalTheory.T.exists_equivariant_labelMap_twist_cuspidalLabel (ZMod (D.host.g k)) _
-        (GlobalTheory.T.cuspParam_of_greenParametrisation hG (D.host.g k) (D.ntypes.teichC k) (D.ntypes.teichC_inj k)
+      obtain ⟨O, hO1, hO2, hO3⟩ := _root_.GlobalTheory.CuspTwist.exists_labelMap_twist_cuspLabel (ZMod (D.host.g k)) _
+        (_root_.GlobalTheory.GreenParam.cuspParam_of_green hG (D.host.g k) (D.ntypes.teichC k) (D.ntypes.teichC_inj k)
           (GlobalTheory.Mem.TypePl.labDat (D.host.g k)).gen (isGenSys_gen _))
       have hr : 1 ≤ D.R.r := by unfold Ranks.r; have := D.R.two_le_m; omega
       exact ⟨O, hO1, hO2, fun f => (hT.ser k f).trans

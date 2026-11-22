@@ -1,16 +1,16 @@
 import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BaseChangeDefiniteUnitary
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemOfFiniteDimensionalSpanRightTranslates
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.CompactSpaceDefiniteUnitaryInfinitePointsStatement
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.UnitaryCoordinateAlgebraDenseStatement
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.CompactSpaceDefiniteUnitaryInfinitePoints
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.UnitaryCoordinateAlgebraDense
 open NumberField IsDedekindDomain Matrix GlobalTheory.CuspRep GlobalTheory.UnitaryBC
 
 namespace GlobalTheory.UnitaryBC
 
 theorem rightFinite_mem_poly : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (n : ℕ) (f : infU E n → ℂ), Continuous f → FiniteDimensional ℂ (Submodule.span ℂ (Set.range fun k : infU E n => fun x : infU E n => f (x * k))) → f ∈ Algebra.adjoin ℂ {f : infU E n → ℂ | ∃ (τ : E →+* ℂ) (i j : Fin n), f = fun x => (cEmb τ x.1).val i j} := by
   intro E _ _ _ n f hf hfin
-  haveI := GlobalTheory.T.compactSpace_definiteUnitaryInfinitePoints E n
-  obtain ⟨hc, hs, hsep, hinv, hcop⟩ := GlobalTheory.T.unitary_coordinate_algebra_dense E n
+  haveI := _root_.GlobalTheory.InfUCompact.compactSpace_infU E n
+  obtain ⟨hc, hs, hsep, hinv, hcop⟩ := _root_.GlobalTheory.PolyRealU.poly_infU E n
   haveI : T2Space (infU E n) := ⟨fun x y hxy => by
     obtain ⟨p, hp, hne⟩ := hsep x y hxy
     exact separated_by_continuous (hc p hp) hne⟩

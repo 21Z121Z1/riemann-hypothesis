@@ -3,15 +3,15 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RevPosRevPos
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsTestFunctionOfFockVacuumThetaFunction
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsWeakOfDatum
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsHeatZero
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaFunctionSpaceHeisenbergLawsStatement
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockPolynomialVectorTestThetaZeroEqThetaSeriesStatement
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockPolynomialVectorLawsStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaFunctionSpaceHeisenbergLaws
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockPolynomialVectorTestThetaZeroEqThetaSeries
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockPolynomialVectorLaws
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.WeakWeilRepCarriesDerivativesVacuaFockVectors
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaKernelOrthonormalFrameInDomainPeriodLinear
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdelicZakThetaExistsUniqueStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdelicZakThetaExistsUnique
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaKernelTestFunctionMapLinearInjectiveEquivar
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RealPointsClassicalModelRealVectorSpaceStatement
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SymplecticCharacterRealFinitePointsMatchStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RealPointsClassicalModelRealVectorSpace
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SymplecticCharacterRealFinitePointsMatch
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RealPeriodMapHomeomorphRiemannFormDensityStatement
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaSeriesTestFunctionHolomorphicWeight
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsSystem
@@ -33,7 +33,7 @@ variable {D : D7} {S T : HSp D}
 
 theorem eq_zero_of_rho_finW_zero (C : Ctx S T) {F : WO S T → ℂ} (hF : C.IsTh F)
     (h0 : ∀ y : Matrix (Fin S.rank) (Fin T.rank) D.host.E, C.rho (finW S T y) F 0 = 0) : F = 0 := by
-  obtain ⟨h0th, hlin, hfl⟩ := GlobalTheory.T.thetaFunction_space_heisenberg_laws D S T C
+  obtain ⟨h0th, hlin, hfl⟩ := _root_.GlobalTheory.ThetaSpace.theta_space_laws D S T C
   have key := (hfl F hF).2.2.2.1
   have r0 : IsRealPt (0 : WO S T) := by
     ext i j
@@ -43,8 +43,8 @@ theorem eq_zero_of_rho_finW_zero (C : Ctx S T) {F : WO S T → ℂ} (hF : C.IsTh
     have e := key y 0 r0
     rw [h0 y, zero_sub] at e
     exact (mul_eq_zero.1 e.symm).resolve_left (Complex.exp_ne_zero _)
-  obtain ⟨R, hRc, -, hadd, -, hR2, -, hfin, -⟩ := GlobalTheory.T.realPoints_classicalModel_realVectorSpace D S T C
-  have hrat := (GlobalTheory.T.symplecticCharacter_real_finite_points_match D S T C).2.2.2.2.2.2.2
+  obtain ⟨R, hRc, -, hadd, -, hR2, -, hfin, -⟩ := _root_.GlobalTheory.KerReal.real_points D S T C
+  have hrat := (_root_.GlobalTheory.FormMatch.forms_match D S T C).2.2.2.2.2.2.2
   obtain ⟨B, hB⟩ := (_root_.GlobalTheory.Ker.onBasis_frame_period D S T C).1
   have hdom := ((_root_.GlobalTheory.Ker.onBasis_frame_period D S T C).2 B hB).2.1
   have hd := (GlobalTheory.T.realPeriodMap_homeomorph_riemannForm_density D.host.E T.rank C.X C.g C.q0 C.hr C.bas C.idx S.rank C.sympl C.even _ hdom).2.2.2.1
@@ -84,20 +84,20 @@ theorem fvec_Th_rmul (C : Ctx S T) {B B' : C.Bas} (hB : C.IsB B) (hB' : C.IsB B'
     (c : C.X.Ψ → Fin C.q0 → ℕ) (c' : C.X.Ψ → Fin C.X.p0 → ℕ) (Q : MvPolynomial (FVar D T.rank S.rank) ℂ)
     (hQ : C.toH Q ∈ Harm.rowHighest ℂ c c') (φ : TF S.rank C.g) (hφ : SW.IsSB φ) :
     C.fvec B' (C.Th (C.xB B') φ) Q = bchar (wtOf C.X C.hr c c' S.rank) b • C.fvec B (C.Th (C.xB B) φ) Q := by
-  obtain ⟨h0th, hlin, hfl⟩ := GlobalTheory.T.thetaFunction_space_heisenberg_laws D S T C
+  obtain ⟨h0th, hlin, hfl⟩ := _root_.GlobalTheory.ThetaSpace.theta_space_laws D S T C
   have hdom := ((_root_.GlobalTheory.Ker.onBasis_frame_period D S T C).2 B hB).2.1
   have hdom' := ((_root_.GlobalTheory.Ker.onBasis_frame_period D S T C).2 B' hB').2.1
   have hth : ∀ x ∈ C.X.dom, ∀ ψ : TF S.rank C.g, SW.IsSB ψ → C.IsTh (C.Th x ψ) :=
-    fun x hx ψ hψ => (GlobalTheory.T.adelicZakTheta_exists_unique D S T C x hx ψ hψ).1.1
+    fun x hx ψ hψ => (_root_.GlobalTheory.Ker.ZakEx.isZak_Th D S T C x hx ψ hψ).1.1
   have hhe : ∀ (y : Matrix (Fin S.rank) (Fin T.rank) D.host.E) (ψ : TF S.rank C.g), SW.IsSB ψ →
       SW.IsSB (heisG C.X C.bas y ψ) := fun y ψ h =>
     ((GlobalTheory.SW.heisG_laws D.host.E T.rank C.X C.g C.bas C.idx S.rank C.sympl C.even).2.2.2 y ψ h).1
   have hw := (_root_.GlobalTheory.SW.theta_holomorphic_weight D.host.E T.rank C.X C.g C.q0 C.hr C.bas C.idx S.rank C.sympl C.even c c')
   set la := bchar (wtOf C.X C.hr c c' S.rank) b
   have t1 : C.IsTh (C.fvec B' (C.Th (C.xB B') φ) Q) :=
-    (GlobalTheory.T.fockPolynomialVector_laws D S T C B' hB' (fun _ => 1) _ (hth _ hdom' φ hφ) Q).1
+    (_root_.GlobalTheory.Ker.FockAlg.fock_vec_laws D S T C B' hB' (fun _ => 1) _ (hth _ hdom' φ hφ) Q).1
   have t2 : C.IsTh (C.fvec B (C.Th (C.xB B) φ) Q) :=
-    (GlobalTheory.T.fockPolynomialVector_laws D S T C B hB (fun _ => 1) _ (hth _ hdom φ hφ) Q).1
+    (_root_.GlobalTheory.Ker.FockAlg.fock_vec_laws D S T C B hB (fun _ => 1) _ (hth _ hdom φ hφ) Q).1
   have tG : C.IsTh (C.fvec B' (C.Th (C.xB B') φ) Q + (-la) • C.fvec B (C.Th (C.xB B) φ) Q) :=
     ((hlin _ _ t1 ((hfl _ t2).1 (-la))).1)
 
@@ -105,10 +105,10 @@ theorem fvec_Th_rmul (C : Ctx S T) {B B' : C.Bas} (hB : C.IsB B) (hB' : C.IsB B'
       C.rho (finW S T y) (C.fvec B₀ (C.Th (C.xB B₀) φ) Q) 0 =
         thP C.X C.hr C.bas C.idx (heisG C.X C.bas (-y) φ) (C.toH Q) (C.xB B₀) := by
     intro B₀ hB₀ hd₀ y
-    have e1 := (GlobalTheory.T.fockPolynomialVector_laws D S T C B₀ hB₀ (fun _ => 1) _ (hth _ hd₀ φ hφ) Q).2.2.2.2.2 (finW S T y)
-      ((GlobalTheory.T.symplecticCharacter_real_finite_points_match D S T C).2.2.2.2.2.2.2 y).2.1
+    have e1 := (_root_.GlobalTheory.Ker.FockAlg.fock_vec_laws D S T C B₀ hB₀ (fun _ => 1) _ (hth _ hd₀ φ hφ) Q).2.2.2.2.2 (finW S T y)
+      ((_root_.GlobalTheory.FormMatch.forms_match D S T C).2.2.2.2.2.2.2 y).2.1
     rw [← e1, ((_root_.GlobalTheory.Ker.Ctx.th_laws D S T C _ hd₀ φ hφ).2.2.1 y)]
-    exact ((GlobalTheory.T.fockPolynomialVector_testTheta_zero_eq_thetaSeries D S T C).2 B₀ hB₀ _ (hhe (-y) φ hφ)).2 Q
+    exact ((_root_.GlobalTheory.Ker.fvec_Th_zero D S T C).2 B₀ hB₀ _ (hhe (-y) φ hφ)).2 Q
   have hG := eq_zero_of_rho_finW_zero C tG fun y => by
     rw [rho_add_smul, Pi.add_apply, Pi.smul_apply, val B' hB' hdom' y, val B hB hdom y, hx,
       (hw _ (hhe (-y) φ hφ) _ hQ).2.1 _ hdom b hb, smul_eq_mul]
@@ -283,14 +283,14 @@ theorem torAt_fvec : ∀ (D : D7) (S T : HSp D) (C : Ctx S T) (om : GA D S × GA
   obtain ⟨φ, hφ, rfl⟩ := _root_.GlobalTheory.Ker.exists_test_of_fock D S T C B hB f hf hF
   have hB' : C.IsB (C.mvB (torAt C.θ T B ρ t) B) := (((_root_.GlobalTheory.Ker.onBasis_frame_period D S T C).2 B hB).2.2.2.2.2 _).1
   have hdom' := ((_root_.GlobalTheory.Ker.onBasis_frame_period D S T C).2 _ hB').2.1
-  have hth' : C.IsTh (C.Th (C.xB (C.mvB (torAt C.θ T B ρ t) B)) φ) := (GlobalTheory.T.adelicZakTheta_exists_unique D S T C _ hdom' φ hφ).1.1
+  have hth' : C.IsTh (C.Th (C.xB (C.mvB (torAt C.θ T B ρ t) B)) φ) := (_root_.GlobalTheory.Ker.ZakEx.isZak_Th D S T C _ hdom' φ hφ).1.1
   have e1 := ((_root_.GlobalTheory.Ker.WeakMove.om_move D S T C om hom 1 (torAt C.θ T B ρ t) _ hf).2 B hB).2 Q
   have h1 : (fun τ => compAt C.θ τ (mt S (1 : GA D S))) = fun _ => 1 :=
     funext fun τ => GlobalTheory.PointAtPlaceHom.infMat_one S (C.θ τ)
   rw [h1] at e1
   have e2 : om (1, torAt C.θ T B ρ t) (C.fvec B (C.Th (C.xB B) φ) Q) =
       C.fvec (C.mvB (torAt C.θ T B ρ t) B) (om (1, torAt C.θ T B ρ t) (C.Th (C.xB B) φ)) Q := e1
-  rw [e2, hz φ hφ, (GlobalTheory.T.fockPolynomialVector_laws D S T C _ hB' (fun _ => 1) _ hth' Q).2.2.2.2.1,
+  rw [e2, hz φ hφ, (_root_.GlobalTheory.Ker.FockAlg.fock_vec_laws D S T C _ hB' (fun _ => 1) _ hth' Q).2.2.2.2.1,
     fvec_Th_rmul C hB hB' (bT_mem C ρ t) (xB_mvB_torAt C hB ρ t) c c' Q hQ φ hφ, smul_smul,
     detPow_torAt C hB ρ t m, bchar_bT, scalar_eq t (m ρ) (ThFr.wtOf C.X C.hr c c' S.rank (C.m.e ρ))]
 

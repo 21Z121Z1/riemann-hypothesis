@@ -1,7 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.SameKindIsometric
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CanonicalFlagExistsUniqueSemistable
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CanonicalLatticeFlagIsotropicSelfDualStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CanonicalLatticeFlagIsotropicSelfDual
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LayerProd
+import Formalism.HarderNarasimhan.ShiftInvariance
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FlagExplicitConstantLeExpNegHalf
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicFlagProbabilityBoundOfVolumeRatio
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LintegralFlagSizeDensityLeOne
@@ -66,7 +68,7 @@ theorem mem_typeSet (I : AutInst) (p q : ℕ) (hs : HasSig I p q) (x : I.GA) (hx
     have := (h3 i).2.1; simp only [hjdef]; omega
   have htel := telescope a (fun i => Formalism.HN.rkK (S i)) j hj2
   obtain ⟨v⟩ : Nonempty (InfinitePlace I.F) := inferInstance
-  have hr := (GlobalTheory.T.canonicalLatticeFlag_isotropic_selfDual I x).2.1 v
+  have hr := (_root_.GlobalTheory.FlagIso.flag_isotropic I x).2.1 v
   have hq : rkR (I.ε v) ≤ q := by
     rw [← (hs v).2]; exact min_le_right _ _
   have hle : ∑ i, j i ≤ q := by

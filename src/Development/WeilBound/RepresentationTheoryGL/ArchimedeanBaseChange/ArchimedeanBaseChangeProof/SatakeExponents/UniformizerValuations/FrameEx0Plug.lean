@@ -13,18 +13,19 @@ import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SectionExistsAlt
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.IsPairLevel
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MuCharacterExists
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformizerExistsStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitPlaceExistsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformizerExists
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitPlaceExists
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactLevelExists
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LevelExistsBisStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LevelExistsBis
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.SetupEig
 
 namespace PositivityTheory.Rg.BcB.F.Ex0
 
 open PositivityTheory.Rg.BcB.F
 
 theorem frameEx0_plug (h2 : PositivityTheory.Rg.Bc.ArchbcB.B.M2) (h3 : PositivityTheory.Rg.Bc.ArchbcB.B.M3) : FrameEx0 :=
-  frameEx0_of Rig.weightEx Rig.unrAE_holds (_root_.GlobalTheory.CompanionTheory.MuOpen.muEx_of_exists Fok.Mu3.muExists) _root_.GlobalTheory.CompanionTheory.SecThrough.secEx GlobalTheory.T.uniformizer_exists GlobalTheory.T.level_exists_bis
-    GlobalTheory.T.split_place_exists (badEx2_of h2 h3) _root_.GlobalTheory.CompanionTheory.KExLevel.kEx PositivityTheory.Rg.BcB.G8.translation_existence_holds F0.chainEx_holds F0.archEx_holds F0.wEx_holds
+  frameEx0_of Rig.weightEx Rig.unrAE_holds (_root_.GlobalTheory.CompanionTheory.MuOpen.muEx_of_exists Fok.Mu3.muExists) _root_.GlobalTheory.CompanionTheory.SecThrough.secEx _root_.GlobalTheory.CompanionTheory.UnifFix.unifEx _root_.GlobalTheory.CompanionTheory.LevelU.levelEx
+    _root_.GlobalTheory.CompanionTheory.SplitLevel.splitEx (badEx2_of h2 h3) _root_.GlobalTheory.CompanionTheory.KExLevel.kEx PositivityTheory.Rg.BcB.G8.translation_existence_holds F0.chainEx_holds F0.archEx_holds F0.wEx_holds
 
 theorem frameEx0 : FrameEx0 := frameEx0_plug PositivityTheory.HtPt.Bc.CongruenceInertMatching.matchCongInert PositivityTheory.HtPt.Bc.SplitMuMatching.matchCtMuSplit
 

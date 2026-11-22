@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapsAtExpLeB
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsoRefinementsSamePolarisedStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsoRefinementsSamePolarised
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTranslateOfMumfordBundleMatch
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOrderTwoPointTorusExtensionTranslateStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOrderTwoPointTorusExtensionTranslate
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -14,10 +14,10 @@ namespace GlobalTheory.MumCmp
 
 theorem exists_twist_of_samePol : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRing R], Base R → ∀ (D₀ D : DegData R (maximalIdeal R)), SamePol D₀.toPre D.toPre → ∃ g : GtPt D.toPre (𝟙_ (Over (Sp R))), (∃ z : GtPt D.toPre (𝟙_ (Over (Sp R))), z.IsZero ∧ GtPt.IsAdd g g z) ∧ GlobalTheory.MumCmp.IsTwist D₀.toPre D.toPre g := by
   intro R _ _ _ hR D₀ D hS
-  obtain ⟨β, xe, hβ, hc, wΛ, hwΛ, hτ⟩ := GlobalTheory.T.exists_iso_refinements_same_polarised R D₀.toPre D.toPre hS
+  obtain ⟨β, xe, hβ, hc, wΛ, hwΛ, hτ⟩ := _root_.GlobalTheory.MumCmp.SamePolIso.exists_iso R D₀.toPre D.toPre hS
   haveI : IsNoetherianRing R := hR.1.1
   obtain ⟨b, hb, w, hw⟩ := _root_.GlobalTheory.MumCmp.exists_translate_of_lam R D₀.toPre D.toPre β hβ ⟨wΛ, hwΛ⟩
-  obtain ⟨g, -, h2, ht⟩ := GlobalTheory.T.exists_order_two_point_torus_extension_translate R hR D₀ D β xe hβ hc wΛ hwΛ hτ b hb w hw
+  obtain ⟨g, -, h2, ht⟩ := _root_.GlobalTheory.MumCmp.Point.exists_point R hR D₀ D β xe hβ hc wΛ hwΛ hτ b hb w hw
   exact ⟨g, h2, ht⟩
 
 end GlobalTheory.MumCmp

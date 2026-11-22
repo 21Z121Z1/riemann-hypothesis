@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSmallDualLattices
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFactsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFacts
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology
 
 namespace GlobalTheory.JR.DualScaledIntegers
@@ -10,7 +10,7 @@ theorem exists_open_compact_annihilator : ∀ (F E : Type) [NontriviallyNormedFi
   intro F E _ _ _ _ U A ψ hψ c hc
   have := U.ultraF
   have := U.lcF
-  obtain ⟨-, -, hnd, -, -, -, -, -, -, hop, hcp, R, hR⟩ := GlobalTheory.T.etaleHermitianPair_structure_facts F E A
+  obtain ⟨-, -, hnd, -, -, -, -, -, -, hop, hcp, R, hR⟩ := _root_.GlobalTheory.JR.EtFacts.main F E A
   haveI : ContinuousSMul F A.K := IsModuleTopology.toContinuousSMul F A.K
   let D : AddSubgroup A.K :=
     { carrier := {b : A.K | ∀ z : A.K, c • z ∈ A.OK → A.psiK ψ (z * b) = 1}

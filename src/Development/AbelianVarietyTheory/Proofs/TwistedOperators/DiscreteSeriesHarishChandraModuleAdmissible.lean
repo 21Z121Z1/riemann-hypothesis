@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Ha
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaModelsAreCoverDiscreteSeriesOfHarishChandra
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.BarMatrix
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsUniformRealThetaIntertwinerChainStepStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesIntegrableCoefficientProjectorStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesIntegrableCoefficientProjector
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LowestTypePositiveAndDecays
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PolarCoordinatesUnitaryPQDoubleCover
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HighestWeightTensor
@@ -21,28 +21,28 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowestKTypesJointSh
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockVectorsAdaptedBasisUnitarySubstitution
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFockPolynomialIsoGradedIsometry
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockVectorsAtOneRealPlaceOverVacuum
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LieAlgebrasAtPlaceActFockVectorsByFockOperatorsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LieAlgebrasAtPlaceActFockVectorsByFockOperators
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockVectorsRealPlaceActAsFockPolynomials
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealPlaceGroupsActUnitarilyWeaklyOnThetaStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealPlaceGroupsActUnitarilyWeaklyOnTheta
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSignCompatibleNumberingDecreasingEnumeratiStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesModelParamShiftedWeightOfCoverDisc
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsKFiniteIsometryDiscreteSeriesModelDetCover
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesModelIsometryUnitHighestVectorIffStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesModelIsometryUnitHighestVectorIff
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaCorrespondenceModelsOfCoversRealPlace
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockJointHarmonicVectorsIffPolynomials
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaCorrespondencePairingLawOfTensorLawStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaCorrespondencePairingLawOfTensorLaw
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaCorrespondenceTensorLawBothOrdersOfCovers
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ZetaIntegralModelOfCover
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockVectorsMatrixCoefficientsEqFockRepresentatio
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SignCompatibleNumberingOfWittTowerLower
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplittingHeckeCharExistsArchimedeanExponentStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplittingHeckeCharExistsArchimedeanExponent
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NoThetaMapModelsOfNoPairingCovers
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NoInvariantThetaPairingOfNoTensorIntertwinerStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NoInvariantThetaPairingOfNoTensorIntertwiner
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NoThetaTensorIntertwinerLowerTowerMembers
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaChainStepCentredBlockParameters
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DefiniteSourcePairCentredBlockParameters
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealThetaIntertwinersProportionalOfHarishChandra
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LowestKTypeFockMapExistsOfDiscreteSeriesStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LowestKTypeFockMapExistsOfDiscreteSeries
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormSumWordCombinationCoefficientsLe
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LowestKTypeFockMapHarmonicOfDiscreteSeries
 
@@ -220,7 +220,7 @@ theorem exists_real {ψ : AddChar (AF D.host.F) ℂ} {θ : InfFam D} {S T : HSp 
   have hψ : IsStdChar D ψ (-1) := hω.std
   obtain ⟨ς, hςg, -, hςpt⟩ := _root_.GlobalTheory.ArchRec.BasisChange.ptAt_basis D ψ θ S T τ hψ hf.inf sS frS εS sT frT εT fS fT BS BT hf.onS hf.onT
   obtain ⟨κ₀, hκp, hκg, hκip⟩ := _root_.GlobalTheory.ArchRec.SignedRename.exists_isPolyIso_graded_isometry p q r s S.rank T.rank εS εT e e' he he'
-  have hL := GlobalTheory.T.lieAlgebrasAtPlace_act_fockVectors_by_fockOperators D ψ θ S T χS χT ω τ hf.inf hω aS aT hS hT sS frS εS sT frT εT fS fT f hf.theta hf.vac
+  have hL := _root_.GlobalTheory.ArchRec.LieAtPlace.lieAt_of_vacAt D ψ θ S T χS χT ω τ hf.inf hω aS aT hS hT sS frS εS sT frT εT fS fT f hf.theta hf.vac
   obtain ⟨hth, hrest⟩ := _root_.GlobalTheory.OnePlaceFock.fock_at_one_place D ψ θ S T τ hψ hf.inf sS frS εS sT frT εT fS fT f hf.theta hf.vac
   obtain ⟨hinj, hfis⟩ := hrest hf.ne
   let L : LPol T.rank S.rank →ₗ[ℂ] (WO S T → ℂ) :=
@@ -231,7 +231,7 @@ theorem exists_real {ψ : AddChar (AF D.host.F) ℂ} {θ : InfFam D} {S T : HSp 
   refine ⟨ς.trans κ₀, hςg.trans hκg, hs1.comp ς hσ, hs2.comp ς hσ, ?_⟩
   rintro ip ⟨μ, 𝓕, hμ, h𝓕, rfl⟩
   obtain ⟨N, hN⟩ := hfis μ 𝓕 hμ h𝓕
-  obtain ⟨Θ, hΘ1, hΘ2⟩ := GlobalTheory.T.realPlaceGroups_act_unitarily_weakly_on_theta D ψ θ S T χS χT ω τ hf.inf hω frS εS frT εT aS aT L hth hL μ 𝓕 hμ h𝓕
+  obtain ⟨Θ, hΘ1, hΘ2⟩ := _root_.GlobalTheory.ThetaL2InnerProduct.exists_l2_unitary_theta_of_fundamentalDomain D ψ θ S T χS χT ω τ hf.inf hω frS εS frT εT aS aT L hth hL μ 𝓕 hμ h𝓕
   refine ⟨N, Θ, ⟨hN.1, fun P Q => ?_⟩, hΘ1.comp ς hσ, hΘ2.comp ς hσ⟩
   rw [hσ P, hσ Q, hN.2, LinearEquiv.trans_apply, LinearEquiv.trans_apply, hκip]
   rfl
@@ -264,7 +264,7 @@ theorem exists_ktie {X : ProvA} (h : Good D X) {V : HSp D} {S : D.what₂.Tau �
         hU.grp, hU.kfin⟩
     · obtain ⟨m, hm, hU⟩ := _root_.GlobalTheory.ArchRec.Direct.directBridge D h.br X V S M τ p q l₁ l₂ c hn h₁ h₂ hp hpar (by rw [hS]; rfl)
       exact ⟨m, hm, hU e he.1 true⟩
-  have hhi := GlobalTheory.T.discreteSeriesModelIsometry_unit_highestVector_iff D V S M τ p q _ (X.ds p q (ofBlocks l₁ l₂)) _ c br cj e m U hp he hm hU hfin
+  have hhi := _root_.GlobalTheory.ArchRec.HighTie.highestUnit_iff D V S M τ p q _ (X.ds p q (ofBlocks l₁ l₂)) _ c br cj e m U hp he hm hU hfin
   obtain ⟨u, hu⟩ := _root_.GlobalTheory.ArchRec.KFiniteTie.exists_kTie D V S M τ p q _ (X.ds p q (ofBlocks l₁ l₂)) _ c br cj e m U hp he hm hU hhi
   exact ⟨⟨m, hm⟩, e, u, hu⟩
 
@@ -289,7 +289,7 @@ theorem lift_up (h : Good D X) (h1 : Formalism.MainNotions.SchurIrreducible.Arch
   have hJ := _root_.GlobalTheory.ArchRec.JointTransfer.isJoint_iff_cJoint _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ hM hN hR.s₁ hR.s₂ hR.gr
   obtain ⟨hU, hD, hLn⟩ := h3.1 t al be ga de hd
   have hT := (_root_.GlobalTheory.ArchRec.TensLawOf.tensLaw_of X _ _ _ _ _ _ (h1.1 t al be ga de hd) hU hD hLn).1
-  have hPL := GlobalTheory.T.thetaCorrespondence_pairingLaw_of_tensorLaw _ _ _ _ _ _ _ _ _ _ _ _ _ (isGK_fock _ _ _ _).1 (isGK_fock _ _ _ _).2 (discreteSeries_harishChandraModule_admissible h.hc (rank_pos hd.1).1 _)
+  have hPL := _root_.GlobalTheory.ArchRec.PairOfTens.pairLaw_of_tensLaw _ _ _ _ _ _ _ _ _ _ _ _ _ (isGK_fock _ _ _ _).1 (isGK_fock _ _ _ _).2 (discreteSeries_harishChandraModule_admissible h.hc (rank_pos hd.1).1 _)
     (h.ds _ _ _ hM.par).1 hT
   exact _root_.GlobalTheory.ArchRec.Lift.liftLaw_of_pairLaw _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ hM hN hR.s₁ hR.s₂ hJ hPL
 
@@ -302,7 +302,7 @@ theorem lift_down (h : Good D X) (h1 : Formalism.MainNotions.SchurIrreducible.Ar
   have hJ := _root_.GlobalTheory.ArchRec.JointTransfer.isJoint_iff_cJoint _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ hN hM hR.s₂ hR.s₁ hR.gr
   obtain ⟨hU, hD, hLn⟩ := h3.1 t al be ga de hd
   have hT := (_root_.GlobalTheory.ArchRec.TensLawOf.tensLaw_of X _ _ _ _ _ _ (h1.1 t al be ga de hd) hU hD hLn).2
-  have hPL := GlobalTheory.T.thetaCorrespondence_pairingLaw_of_tensorLaw _ _ _ _ _ _ _ _ _ _ _ _ _ (isGK_fock _ _ _ _).2 (isGK_fock _ _ _ _).1 (discreteSeries_harishChandraModule_admissible h.hc (rank_pos hd.1).2 _)
+  have hPL := _root_.GlobalTheory.ArchRec.PairOfTens.pairLaw_of_tensLaw _ _ _ _ _ _ _ _ _ _ _ _ _ (isGK_fock _ _ _ _).2 (isGK_fock _ _ _ _).1 (discreteSeries_harishChandraModule_admissible h.hc (rank_pos hd.1).2 _)
     (h.ds _ _ _ hN.par).1 hT
   refine ⟨_root_.GlobalTheory.ArchRec.Lift.liftLaw_of_pairLaw _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ hN hM hR.s₂ hR.s₁ hJ hPL, fun ip hip => ?_⟩
   obtain ⟨m, hm⟩ := hm
@@ -313,7 +313,7 @@ theorem lift_down (h : Good D X) (h1 : Formalism.MainNotions.SchurIrreducible.Ar
   obtain ⟨-, -, hgap⟩ := hd.2
   have hq7 : Formalism.MainNotions.SchurIrreducible.admQ7 := GlobalTheory.TensorHW.highestWeight_tensor
   have hds2 := GlobalTheory.SphJet.lowest_type_positive_and_decays X h.ds h.hc hq7 GlobalTheory.InducedPBW.pbw_induced
-  have hds3 := GlobalTheory.T.discreteSeries_integrableCoefficient_projector X hds2 (_root_.GlobalTheory.PolarU.polar_coordinates X)
+  have hds3 := _root_.GlobalTheory.DSProj.discreteSeriesHighestVector_of_positivity X hds2 (_root_.GlobalTheory.PolarU.polar_coordinates X)
   refine (hds3 _ _ _ hM.par _ hgap ?_ v hv).1
   unfold Formalism.MainNotions.SchurIrreducible.rangeOfSeventhSum
   rw [show al.length + be.length + (ga.length + de.length) = al.length + be.length + ga.length + de.length by omega]
@@ -344,7 +344,7 @@ theorem noLowerTarget {T : HSp D} {p q r s : ℕ} {lam : Ix p q → ℚ} {aT : �
   obtain ⟨εT, fT⟩ := frame_of_adapted hf.onT
   obtain ⟨hir, his, e', he'⟩ := _root_.GlobalTheory.WittSign.signCompat_of_isWittLower D T T' i τ (MT.fr τ) (MT.ε τ) BT⁻¹ εT r s e₀ hW (MT.fr_gram τ)
     (MT.fr_unit τ) fT.2.1 fT.1 he₀
-  obtain ⟨aS, haS⟩ := GlobalTheory.T.splittingHeckeChar_exists_archimedeanExponent D θ χS _ τ hf.inf hω.hecS hω.resS
+  obtain ⟨aS, haS⟩ := _root_.GlobalTheory.SplitCharExp.exists_hasInfExp D θ χS _ τ hf.inf hω.hecS hω.resS
   obtain ⟨κ, hR⟩ := exists_real hω haS hχT (isFrameOf_model MS τ) fT hf hu.ord.1 he'
   exact _root_.GlobalTheory.ArchRec.NoLiftTransfer.noLift_of_pairNo _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ hu hR.s₁ (hno i hi hir his)
 
@@ -359,7 +359,7 @@ theorem noLowerSource {T : HSp D} {p q r s : ℕ} {lam : Ix r s → ℚ} {aS : �
   obtain ⟨εS, fS⟩ := frame_of_adapted hf.onS
   obtain ⟨hip, hiq, e, he⟩ := _root_.GlobalTheory.WittSign.signCompat_of_isWittLower D V S' i τ (MS.fr τ) (MS.ε τ) BS⁻¹ εS p q e₀ hW (MS.fr_gram τ)
     (MS.fr_unit τ) fS.2.1 fS.1 he₀
-  obtain ⟨aT, haT⟩ := GlobalTheory.T.splittingHeckeChar_exists_archimedeanExponent D θ χT _ τ hf.inf hω.hecT hω.resT
+  obtain ⟨aT, haT⟩ := _root_.GlobalTheory.SplitCharExp.exists_hasInfExp D θ χT _ τ hf.inf hω.hecT hω.resT
   obtain ⟨κ, hR⟩ := exists_real hω hχS haT fS (isFrameOf_model MT τ) hf he hu.ord.1
   exact _root_.GlobalTheory.ArchRec.NoLiftTransfer.noLift_of_pairNo _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ hu hR.s₂ (hno i hi hip hiq)
 
@@ -367,14 +367,14 @@ theorem pairNo_small (h : Good D X) (hd : HypA t al be ga de) (i : ℕ) (hi : 1 
     (h2 : i ≤ ga.length + be.length) :
     PairNo (fockAct1 _ _ (al.length + de.length + t - i) (ga.length + be.length - i)) (X.ds _ _ (lamA al be ga de)) := by
   have hT := (_root_.GlobalTheory.LowerTower.no_map_lower X h.ds h.hc t al be ga de hd i hi).1 h1 h2
-  exact GlobalTheory.T.no_invariant_theta_pairing_of_no_tensor_intertwiner _ _ _ _ _ _ _ _ _ (isGK_fock _ _ _ _).1 (isGK_fock _ _ _ _).2 (_root_.GlobalTheory.FockAlg.fock_lie_and_commute _ _ _ _).2.2.2
+  exact _root_.GlobalTheory.ArchRec.PairVanish.pairNo_of_tensNo _ _ _ _ _ _ _ _ _ (isGK_fock _ _ _ _).1 (isGK_fock _ _ _ _).2 (_root_.GlobalTheory.FockAlg.fock_lie_and_commute _ _ _ _).2.2.2
     (discreteSeries_harishChandraModule_admissible h.hc (rank_pos hd).1 _) hT
 
 theorem pairNo_large (h : Good D X) (hd : HypA t al be ga de) (hf : ∀ x ∈ al ++ be ++ ga ++ de, ((t : ℚ) + 3) / 2 ≤ |x|)
     (i : ℕ) (hi : 1 ≤ i) (h1 : i ≤ al.length + be.length) (h2 : i ≤ ga.length + de.length) :
     PairNo (fockAct2 (al.length + be.length - i) (ga.length + de.length - i) _ _) (X.ds _ _ (lamA' t al be ga de)) := by
   have hT := (_root_.GlobalTheory.LowerTower.no_map_lower X h.ds h.hc t al be ga de hd i hi).2 hf h1 h2
-  exact GlobalTheory.T.no_invariant_theta_pairing_of_no_tensor_intertwiner _ _ _ _ _ _ _ _ _ (isGK_fock _ _ _ _).2 (isGK_fock _ _ _ _).1
+  exact _root_.GlobalTheory.ArchRec.PairVanish.pairNo_of_tensNo _ _ _ _ _ _ _ _ _ (isGK_fock _ _ _ _).2 (isGK_fock _ _ _ _).1
     (fun Y Z => ((_root_.GlobalTheory.FockAlg.fock_lie_and_commute _ _ _ _).2.2.2 Z Y).symm) (discreteSeries_harishChandraModule_admissible h.hc (rank_pos hd).2 _) hT
 
 theorem PairNo.swap {p q r s : ℕ} {T : GrpData r s} {R : DSRep T} (h : PairNo (fockAct2 p q r s) R) :
@@ -509,7 +509,7 @@ theorem archOnRecord_of_cover (hDS : GlobalTheory.Published.DiscreteSeriesCover)
   have hG : Good D Y := ⟨hpar, hds, hq5, _root_.GlobalTheory.CoverModel.modelsAreCoverSeries_all hDS hHC D⟩
   exact ⟨⟨chainLower hG, pairLower hG⟩, fun hg => ⟨chainTop hG hy1 hy3 hg, pairTop hG hy1 hy3 hg,
     itLaw (GlobalTheory.T.exists_uniformRealThetaIntertwiner_chainStep hDS hHC D) (_root_.GlobalTheory.ArchRec.itLine_of_hypotheses hDS hHC D) hg,
-    ioLaw (GlobalTheory.T.lowestKTypeFockMap_exists_of_discreteSeries hDS hHC D) (_root_.GlobalTheory.ArchRec.IoPhase.ioUniq_of_discreteSeriesCover hDS hHC D) (_root_.GlobalTheory.ArchRec.IoHarmPf.ioHarm hDS hHC D)⟩⟩
+    ioLaw (_root_.GlobalTheory.ArchRec.IoMap.ioEx_of_discreteSeriesCover hDS hHC D) (_root_.GlobalTheory.ArchRec.IoPhase.ioUniq_of_discreteSeriesCover hDS hHC D) (_root_.GlobalTheory.ArchRec.IoHarmPf.ioHarm hDS hHC D)⟩⟩
 
 theorem archOnRecord (hDS : GlobalTheory.Published.DiscreteSeriesCover) (hHC : GlobalTheory.Published.HarishChandraModules) (D : D7) :
     ArchOnRecord D := by

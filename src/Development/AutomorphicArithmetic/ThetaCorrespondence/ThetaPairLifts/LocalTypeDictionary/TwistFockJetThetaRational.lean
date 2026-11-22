@@ -200,7 +200,7 @@ private theorem vac_scalar {ψ : AddChar (AF D.host.F) ℂ} {θ : InfFam D} (hθ
   obtain ⟨e, he⟩ := detPlus_def (m := T.rank) hs
   obtain ⟨a, ha⟩ := sq_exp hθ hW.hecT hW.resT e2 T.rank
   obtain ⟨b, hb⟩ := sq_exp hθ hW.hecS hW.resS e2 S.rank
-  refine ⟨_, GlobalTheory.T.weilDatum_realPlaces_fockVacuum_character D ψ hW.std S T θ hθ χS χT om η ⟨e1, e4, e3, e2⟩ hW (fun _ => s) (fun _ => 1) hS hT g hg h hh
+  refine ⟨_, _root_.GlobalTheory.WeilVacChar.vacuum_character D ψ hW.std S T θ hθ χS χT om η ⟨e1, e4, e3, e2⟩ hW (fun _ => s) (fun _ => 1) hS hT g hg h hh
     (fun τ => by rcases hs with rfl | rfl <;> simp) (fun τ => by rw [one_mul, mul_one]) x y hx hy f hf hv,
     fun F _ lam h1 h2 => ?_⟩
   have inv : ∀ τ, (compAt θ τ (Formalism.L2.Theta.mt S g⁻¹)).det = ((compAt θ τ (Formalism.L2.Theta.mt S g)).det)⁻¹ := fun τ => by
@@ -317,8 +317,8 @@ private theorem jets_subst {ψ : AddChar (AF D.host.F) ℂ} {θ : InfFam D} {S T
       a * ((k.prod fun v n => period δ v.1 ^ n) * Formalism.MainNotions.GL3Theta.applyAt0 D (MvPolynomial.monomial k 1)
         fun z => c⁻¹ * Θ (Formalism.L2.KerInert.tPull D (tor0 D cc δ) U.1 U'.1 z)) := by
   have hθ := hf.2.inf
-  obtain ⟨Φ, hΦ, hr⟩ := GlobalTheory.T.fockVacuum_real_restriction_gaussian_entire ψ θ S T frS frT _ _ hS hT f hf
-  obtain ⟨Φ', hΦ', hr'⟩ := GlobalTheory.T.fockVacuum_real_restriction_gaussian_entire ψ θ S T frS frT _ _ hS hT f' hf'
+  obtain ⟨Φ, hΦ, hr⟩ := _root_.GlobalTheory.FockPos.vacuum_real_entire ψ θ S T frS frT _ _ hS hT f hf
+  obtain ⟨Φ', hΦ', hr'⟩ := _root_.GlobalTheory.FockPos.vacuum_real_entire ψ θ S T frS frT _ _ hS hT f' hf'
   have hs : (((Real.sqrt (2 * Real.pi * Formalism.L2.Pj.xiR D) : ℝ) : ℂ)⁻¹) ≠ 0 := by
     have hx : 0 < Formalism.L2.Pj.xiR D := norm_pos_iff.2 ((_root_.map_ne_zero _).2 (GlobalTheory.DualPairCompare.embedding_xi_zero_ne_zero D))
     exact inv_ne_zero (Complex.ofReal_ne_zero.2 (Real.sqrt_pos.2 (mul_pos Real.two_pi_pos hx)).ne')
@@ -501,7 +501,7 @@ theorem fock_jetTheta_rational : _root_.GlobalTheory.FunPr.ThetaLocalInputs → 
       refine inv_eq_of_mul_eq_one_left ?_
       rw [Complex.mul_conj', m2]; simp
     refine ⟨c, m1, fun q _ => m3 _ _ q, fun k => ?_⟩
-    have key := jets_subst _ _ hS hT (GlobalTheory.T.isVacuum_conj_of_negHermitianSpace _ _ _ _ (fun _ => 1) _ _ _ _ hv) (GlobalTheory.T.isVacuum_conj_of_negHermitianSpace _ _ _ _ (fun _ => 1) _ _ _ _ hv') U' U
+    have key := jets_subst _ _ hS hT (_root_.GlobalTheory.VacConj.isVacO_conj_negSp _ _ _ _ (fun _ => 1) _ _ _ _ hv) (_root_.GlobalTheory.VacConj.isVacO_conj_negSp _ _ _ _ (fun _ => 1) _ _ _ _ hv') U' U
       ((_root_.map_ne_zero (starRingEnd ℂ)).2 hc0) g4 h3 (fun w => by rw [← map_mul]; exact congrArg _ (hc w)) D.host.ccK ch.S.Z.δ
       (starRingEnd ℂ (ch.S.Z.c0 (.chi i D.R.m) : ℂ)) hΘ (fun k => by
         have e := congrArg (starRingEnd ℂ) ((hj _ k 0).symm.trans (hJ k))

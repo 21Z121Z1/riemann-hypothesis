@@ -5,7 +5,8 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RangeLeRangeOf
 import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.NonemptyAlgHomOfIsRayOfDvd
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsApplyEqOfNormal
 import Formalism.LocalToGlobal.ProjectiveLattices.ExistsParameterConditions
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RayClassFieldInfModulusEqSupStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RayClassFieldInfModulusEqSup
+import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.RayPrincipalIdeals
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsUnramifiedAtOfIsUnramifiedInGaloisExtensionStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPrimitiveRootInRayClassFieldNatModulus
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.SmulCommClassGalIntegers
@@ -42,7 +43,7 @@ theorem sup_fieldRange_eq_top {K H H₁ H₂ : Type} [Field K] [NumberField K] [
     (hb : 𝔟 ≠ ⊥) {q : ℕ} (hq : q.Prime) (hq2 : q ≠ 2) (hqa : 𝔞 ≤ Ideal.span {(q : 𝓞 K)})
     (hqb : 𝔟 ≤ Ideal.span {(q : 𝓞 K)}) (h : IsRay H (𝔞 ⊓ 𝔟)) (h₁ : IsRay H₁ 𝔞) (h₂ : IsRay H₂ 𝔟)
     (f₁ : H₁ →ₐ[K] H) (f₂ : H₂ →ₐ[K] H) : f₁.fieldRange ⊔ f₂.fieldRange = ⊤ :=
-  GlobalTheory.T.rayClassField_inf_modulus_eq_sup hU ha hb hq hq2 hqa hqb h h₁ h₂ f₁ f₂
+  _root_.GlobalTheory.RayCompositum.fieldRange_sup_eq_top hU ha hb hq hq2 hqa hqb h h₁ h₂ f₁ f₂
 
 theorem hostK_facts (D : D7) : IsGalois ℚ D.host.K ∧ ∀ u : (𝓞 D.host.K)ˣ, u = 1 ∨ u = -1 :=
   _root_.GlobalTheory.HostQuadUnits.main D

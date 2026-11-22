@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HeckeTateF
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeValueIntegralityRamifiedOfExpansion
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeWeightTwoContinuationOfFunctionalEquation
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.OmegaFactorization
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LipschitzFormulaTotallyRealPoissonStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LipschitzFormulaTotallyRealPoisson
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertEisensteinExpansionOfLipschitzHeckeZeta
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.TraceDualDifferent
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeformedLatticeSumDerivativesEqEisensteinJets
@@ -252,6 +252,6 @@ theorem core (hjsz : EisExp → ∀ (F : Type) [Field F] [NumberField F] [IsTota
     nlinarith
 
 theorem jetInt : GlobalTheory.Published.SiegelKlingenDeligneRibet → GlobalTheory.Published.PartialZetaFunctionalEquation → GlobalTheory.Published.HilbertClassFieldJ → GlobalTheory.Published.EllipticMainTheoremCM → GlobalTheory.LatJet.JetInt := fun _ hPZ _ _ =>
-  core GlobalTheory.HilbFam.sz_jet_conj (_root_.GlobalTheory.HilbertEis.eisExp GlobalTheory.T.lipschitz_formula_totally_real_poisson (_root_.GlobalTheory.HeckeTwo.heckeWeightTwo_of_fe hPZ) hPZ)
+  core GlobalTheory.HilbFam.sz_jet_conj (_root_.GlobalTheory.HilbertEis.eisExp _root_.GlobalTheory.LipschitzTR.lipschitz (_root_.GlobalTheory.HeckeTwo.heckeWeightTwo_of_fe hPZ) hPZ)
 
 end GlobalTheory.JetIntElliptic

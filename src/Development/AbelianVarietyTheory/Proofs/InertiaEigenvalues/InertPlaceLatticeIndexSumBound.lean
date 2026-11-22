@@ -9,7 +9,8 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUniqueIsCo
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsPrimeIdemOfInert
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsSphericalDoubleCosetLabelIffDecreasing
 import ReciprocityTheory.ResidueCardinality.ArtinOntoB
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.StdLatticeMapEqIffMemGLintValuationSubringStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.StdLatticeMapEqIffMemGLintValuationSubring
+import Formalism.SatakeDualWeyl.Statement
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SelfDualLatticeIndexEqLocalUnitaryIndexAtInert
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix
@@ -87,7 +88,7 @@ theorem indexSum_inert : ∀ (D : D7) (W : HSp D) (n : ℕ), 2 * W.rank + 5 ≤ 
         Submodule.span O (Set.range (Pi.basisFun K (Fin W.rank))) := by
     intro x hx he
     obtain ⟨g, hg, rfl⟩ := Finset.mem_image.1 hx
-    have h1 := (GlobalTheory.T.stdLattice_map_eq_iff_mem_GLint_valuationSubring K O W.rank _).1 he
+    have h1 := (_root_.GlobalTheory.GLintLattice.stdLattice_map_eq_iff_mem_GLint K O W.rank _).1 he
     have h2 := (hGC.2.2.2 (H g)).2 h1
     rw [hH g hg] at h2
     exact (hC g hg).2 h2
@@ -109,7 +110,7 @@ theorem indexSum_inert : ∀ (D : D7) (W : HSp D) (n : ℕ), 2 * W.rank + 5 ≤ 
       rw [Subgroup.coe_mul, Subgroup.coe_inv, hcomp, Submodule.map_comp, ← he, ← Submodule.map_comp, ← hcomp, inv_mul_cancel]
       ext y
       simp
-    have h1 := (GlobalTheory.T.stdLattice_map_eq_iff_mem_GLint_valuationSubring K O W.rank _).1 hm
+    have h1 := (_root_.GlobalTheory.GLintLattice.stdLattice_map_eq_iff_mem_GLint K O W.rank _).1 hm
     have h2 := (hGC.2.2.2 _).2 h1
     rw [map_mul, map_inv, hH g hg, hH g' hg'] at h2
     rw [hdist g hg g' hg' h2]

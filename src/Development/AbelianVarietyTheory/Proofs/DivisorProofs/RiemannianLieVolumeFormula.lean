@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.TamagawaSp
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.WeightFunctionOnFrames
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RiemannianVolumeLieBasisStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormCmTypeProductSqStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormTraceFormDetIndexStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormTraceFormDetIndex
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieLatticeDualIndex
 open NumberField IsDedekindDomain MeasureTheory Matrix GlobalTheory.AdLat GlobalTheory.UCls GlobalTheory.SUVol ReciprocityTheory.ChartRestriction.G.FD ReciprocityTheory.ChartRestriction.G.AR.Inst ReciprocityTheory.ChartRestriction.G.AR.Up
 open scoped ENNReal
@@ -16,7 +16,7 @@ theorem riemLie_eq_sqrt_index_smul_formLie : ∀ (E : Type) [Field E] [NumberFie
   congr 1
   congr 1
   have h1 := GlobalTheory.T.norm_cm_type_product_sq E X.Ψ X.cmType (Matrix.of fun i j => Matrix.trace (e i * e j)).det
-  have h2 := GlobalTheory.T.norm_trace_form_det_index E r X.Gm Λ e hr hΛ he hli
+  have h2 := _root_.GlobalTheory.LieIndex.abs_norm_gram_eq_index E r X.Gm Λ e hr hΛ he hli
   have h3 := _root_.GlobalTheory.lieLat_relIndex_dual E r X.Gm Λ hr hU hΛ
   rw [h3] at h2
   rw [h2] at h1

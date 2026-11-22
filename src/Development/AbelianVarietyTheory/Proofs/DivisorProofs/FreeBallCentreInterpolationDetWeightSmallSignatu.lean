@@ -16,8 +16,8 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.Uppe
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.ArakelovInstances.PointwiseNormInvarianceHolds
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.KronHolPsiStatementHolds
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.MeasInvStatementPf
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniformBoundLintegralFlagDomainBallCaseStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrbitSumExpPotentialUniformBoundStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniformBoundLintegralFlagDomainBallCase
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrbitSumExpPotentialUniformBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PoinConvBdd
 
 open NumberField Module ReciprocityTheory.ChartRestriction.G.FD ReciprocityTheory.ChartRestriction.G.AR.Inst ReciprocityTheory.ChartRestriction.G.AR.Up GlobalTheory.IndefiniteRowSideFullHecke.FrameWeightGapBounds GlobalTheory.ShareOn
@@ -35,7 +35,7 @@ theorem sum_bound {r : ℕ} (X : Data E r) (x0 : Frame X.Ψ r) (h0 : IsOrth X x0
     ∃ C : ℝ≥0∞, C < ⊤ ∧ ∀ x, IsOrth X x →
       ∑' γ : X.Γ, ENNReal.ofReal (Real.exp (-(s * GlobalTheory.Up.rhX X x0 (lact γ.1 x)))) ≤ C := by
   have hr : (2 : ℝ) ≤ r := by exact_mod_cast (show 2 ≤ r by omega)
-  exact GlobalTheory.T.orbitSum_exp_potential_uniform_bound E r X x0 h0 hPD s (by linarith) (GlobalTheory.T.exists_uniform_bound_lintegral_flagDomain_ball_case E r X hp0 hp1 hq s hs)
+  exact _root_.GlobalTheory.OrbitSum.orbitSum_le E r X x0 h0 hPD s (by linarith) (_root_.GlobalTheory.IntBall.intBall E r X hp0 hp1 hq s hs)
 
 theorem kappa_exists {r : ℕ} (X : Data E r) (x0 : Frame X.Ψ r) (h0 : IsOrth X x0) (hPD : PropDisc X)
     (hp0 : 0 < X.p0) (hp1 : X.p0 < r) (hq : X.p0 * (r - X.p0) ≤ 3) {bb : ℝ}

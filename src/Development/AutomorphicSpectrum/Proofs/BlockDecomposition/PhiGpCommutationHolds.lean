@@ -3,20 +3,20 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsCIndValue
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuotientMapIntertwinesRestriction
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetKernelSpanTwistedCharacterStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuotientMapInducedSurjectiveIntertwinerStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicUnipotentLeParabolicStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicUnipotentLeParabolic
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicProjUnipotentCharacterCompat
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsUnipotentLiftParabolicProj
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemParabolicIffMemEmbeddedStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemParabolicIffMemEmbedded
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicProjEmbeddingCompat
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicDoubleCosetDichotomy
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsClosedParabolicMulEmbeddedMirabolicStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EmbeddedSmallNeighbourhoodFactorStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EmbeddedSmallNeighbourhoodFactor
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousParabolicProj
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousMirabolicEmbedding
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicUnipotentNormal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactInductionTwistEquiv
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactInductionCongrEquivStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivativeFunctorTwistEquivStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactInductionCongrEquiv
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivativeFunctorTwistEquiv
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ModulusParabolicProjFactor
 
 open Matrix GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.BZMir GlobalTheory.BZMir.Leib GlobalTheory.RgGu.Leib Topology
@@ -125,7 +125,7 @@ theorem phiMinus_prodGP (ψ : AddChar k Circle) (hψ1 : ψ ≠ 1) {m j : ℕ}
   have hsm : IsSmooth ((extTensor a b).comp (gpProj k m (j + 1))) := by
     intro w
     exact (isSmooth_extTensor ha hb w).preimage (_root_.GlobalTheory.CompanionTheory.LeibPhi.continuous_gpProj_phi k m (j + 1))
-  have hUH : MirUin k (m + (j + 1)) ≤ MirabolicParabolic k m (j + 1) := GlobalTheory.T.mirabolic_unipotent_le_parabolic k m (j + 1)
+  have hUH : MirUin k (m + (j + 1)) ≤ MirabolicParabolic k m (j + 1) := _root_.GlobalTheory.CompanionTheory.LeibPhi.mirUin_le_HGP k m (j + 1)
   let q : V ⊗[ℂ] W →ₗ[ℂ] V ⊗[ℂ] (TwJacquet b (MirUin k (j + 1)) (mirChar k ψ j)) :=
     LinearMap.lTensor V (twKer b (MirUin k (j + 1)) (mirChar k ψ j)).mkQ
   have hqs : Function.Surjective q := LinearMap.lTensor_surjective _ (Submodule.mkQ_surjective _)
@@ -206,9 +206,9 @@ theorem phiMinus_prodGP (ψ : AddChar k Circle) (hψ1 : ψ ≠ 1) {m j : ℕ}
             exact Submodule.subset_span ⟨⟨_, hv⟩, w, rfl⟩
           rw [this, TensorProduct.tmul_zero]
   refine coinv_cInd (MirabolicParabolic k m (j + 1)) (MirUin k (m + (j + 1))) hUH (_root_.GlobalTheory.CompanionTheory.LeibPhi.UNorm.mirUin_normal k _) (mirChar k ψ (m + j))
-    (embedding₂ k (m + j)) (_root_.GlobalTheory.CompanionTheory.LeibPhi.continuous_iotaM k _) (levi_stab ψ (m + j)) (MirabolicParabolic k m j) (GlobalTheory.T.mem_parabolic_iff_mem_embedded k m j)
+    (embedding₂ k (m + j)) (_root_.GlobalTheory.CompanionTheory.LeibPhi.continuous_iotaM k _) (levi_stab ψ (m + j)) (MirabolicParabolic k m j) (_root_.GlobalTheory.CompanionTheory.LeibPhi.mem_mirabolicParabolic_iff_iotaM_mem k m j)
     ((extTensor a b).comp (gpProj k m (j + 1))) hsm ((extTensor a (phiMinus k ψ b)).comp (gpProj k m j)) q
-    hqs hq hker ?_ (GlobalTheory.T.isClosed_parabolic_mul_embedded_mirabolic k m j) (GlobalTheory.T.embedded_small_neighbourhood_factor k m j) (GlobalTheory.CompanionTheory.BZMirOnto.exists_compactOpen k _) ?_
+    hqs hq hker ?_ (GlobalTheory.T.isClosed_parabolic_mul_embedded_mirabolic k m j) (_root_.GlobalTheory.CompanionTheory.LeibPhi.Emb.iotaM_descent k m j) (GlobalTheory.CompanionTheory.BZMirOnto.exists_compactOpen k _) ?_
   · intro g
     rcases _root_.GlobalTheory.CompanionTheory.LeibPhi.Dich.dichotomy k ψ hψ1 m j g with h | ⟨u, hx, h1, h2⟩
     · exact Or.inl h
@@ -256,7 +256,7 @@ theorem prodGP_congr {m j : ℕ} {V V' W W' : Type} [AddCommGroup V] [Module ℂ
     {a : Representation ℂ (GL (Fin m) k) V} {a' : Representation ℂ (GL (Fin m) k) V'}
     {c : Representation ℂ (Mir k j) W} {c' : Representation ℂ (Mir k j) W'} (e : a.Equiv a') (f : c.Equiv c') :
     Nonempty ((prodGP a c).Equiv (prodGP a' c')) :=
-  GlobalTheory.T.compactInduction_congr_equiv (MirabolicParabolic k m j) _ _ (extEquiv e f (gpProj k m j))
+  _root_.GlobalTheory.CompanionTheory.CIndCongr.nonempty_equiv_cInd (MirabolicParabolic k m j) _ _ (extEquiv e f (gpProj k m j))
 
 theorem tw_rep {m j : ℕ} {V W : Type} [AddCommGroup V] [Module ℂ V] [AddCommGroup W] [Module ℂ W]
     (a : Representation ℂ (GL (Fin m) k) V) (c : Representation ℂ (Mir k j) W) (r : ℝ) :
@@ -304,7 +304,7 @@ theorem main_twisted (ψ : AddChar k Circle) (hψ1 : ψ ≠ 1) {m j : ℕ} {V W 
   obtain ⟨A2⟩ := A2
   have A4 : twist (twist ρ (dpow (k := k) m s₀)) (dpow m r) = twist ρ (dpow m s₁) := by
     rw [twist_twist, ← dpow_add, hs]
-  have E3 := GlobalTheory.T.derivative_functor_twist_equiv k ψ j W τ t
+  have E3 := _root_.GlobalTheory.CompanionTheory.LeibPhiTw.phiMinus_twist_equiv k ψ j W τ t
   obtain ⟨E3⟩ := E3
   have A5 : (twist (twist (phiMinus k ψ τ) (dpowM j t)) (dpowM j r)) =
       twist (twist (phiMinus k ψ τ) (dpowM j r)) (dpowM j t) := by

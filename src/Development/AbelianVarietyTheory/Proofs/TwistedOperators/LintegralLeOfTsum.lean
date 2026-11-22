@@ -9,7 +9,9 @@ import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.WeilDa
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MixedModelFormulasWittSourceProof
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilDatumDescendsToWittCore
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.AdjointIsotropicDecomposition
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilMixedCoordinatesContinuousBoundedSupNormStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilMixedCoordinatesContinuousBoundedSupNorm
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.RealSizeNonneg
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.UnifModGrowthOfIsUnifModerate
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MixedThetaSeriesTermsLawsUnipotentRational
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsMulRightInvariantOfFundamentalDomain
 
@@ -54,7 +56,7 @@ theorem uni_bound (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (V V₀ W W₀ : HSp
   obtain ⟨C, A, hC⟩ := _root_.GlobalTheory.MixedAbsGrowth.mixed_abs_growth D ψ V W s.χV s.χW s.om s.weil V₀ ρ dV s.vS Φ hΦ
   obtain ⟨om', hW'⟩ := (_root_.GlobalTheory.Desc.weil_data_descend D ψ V W s.χV s.χW s.om s.weil).1 V₀ ρ dV
   have hMS := _root_.GlobalTheory.MixSourceFormulas.mixed_source D ψ V V₀ W ρ dV s.χV s.χW s.om om' s.weil hW' s.vS.μ s.vS.𝓕 s.vS.covol
-  have hmix := (GlobalTheory.T.weilMixedCoordinates_continuous_bounded_supNorm D ψ V V₀ W W₀ ρ σ dV dW s.vS s.vT s.χV s.χW s.om s.weil Φ hΦ).1
+  have hmix := (_root_.GlobalTheory.MixCont.mixed_coords_continuous D ψ V V₀ W W₀ ρ σ dV dW s.vS s.vT s.χV s.χW s.om s.weil Φ hΦ).1
   obtain ⟨K, hK, hcov⟩ := GlobalTheory.UnitU.cocompact D ρ
   obtain ⟨c, hc⟩ := exists_height_le_of_isCompact V (hK.image (dV.continuous_levi.comp continuous_subtype_val))
   have hc'1 : 1 ≤ max c 1 := le_max_right _ _
@@ -113,7 +115,7 @@ theorem flat_sup_growth : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (V V₀ 
   refine ⟨C, A, fun g h y w => ?_⟩
   have hn : ∀ a, ‖ψ a‖ = 1 := s.weil.std.1.2.1
   have hne : ∀ a, ‖ψ a‖ₑ = 1 := fun a => by rw [← ofReal_norm, hn, ENNReal.ofReal_one]
-  have hmix := (GlobalTheory.T.weilMixedCoordinates_continuous_bounded_supNorm D ψ V V₀ W W₀ ρ σ dV dW s.vS s.vT s.χV s.χW s.om s.weil Φ hΦ).1
+  have hmix := (_root_.GlobalTheory.MixCont.mixed_coords_continuous D ψ V V₀ W W₀ ρ σ dV dW s.vS s.vT s.χV s.χW s.om s.weil Φ hΦ).1
   have hT := s.vT.covol
   obtain ⟨i1, i2, i3⟩ := GlobalTheory.UnitU.topology D ρ
   obtain ⟨j1, j2, j3, j4, -⟩ := lattice_Mx D σ V₀.rank

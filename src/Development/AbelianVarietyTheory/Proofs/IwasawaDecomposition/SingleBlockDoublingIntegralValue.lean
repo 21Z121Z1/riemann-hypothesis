@@ -5,12 +5,12 @@ import Formalism.DoubleCosetMeasures.LowerUnipotentOrbits.IsClosedLowUni
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerVolume.TopoAF
 import ReciprocityTheory.GeneralLinearIntegers.AlgebraMapIntMemOint
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsNrm
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsLocalAtCompletionIntegersChosenUniformiserStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsLocalAtCompletionIntegersChosenUniformiser
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CardResidueRingCompletionChosenUniformiser
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHaarGLCompletionIntegersVolOne
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAddHaarCompletionIntegralMatricesVolOneStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CardGLFiniteFieldEqPowMulProdStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CardGLFiniteFieldEqPowMulProd
 
 open MeasureTheory Matrix NumberField IsDedekindDomain Formalism.BasicNotions Formalism.DoubleCosetMeasures Formalism.L2.Host Formalism.L2.DIV Formalism.L2.DIV.QLoc GlobalTheory.Mem.HD
 open scoped ComplexConjugate
@@ -325,15 +325,15 @@ theorem vol_Jset (r : ℕ) [MeasurableSpace (P.adicCompletion L)] [BorelSpace (P
     (ν₁ : Measure (Matrix (Fin r) (Fin r) (P.adicCompletion L))) [ν₁.IsAddLeftInvariant]
     (h1 : ν₁ (intMat (OP P) r r) = 1) :
     (ν₁ (Jset (GLint (OP P) r))).toReal = Formalism.MainNotions.ZetaProductPairs.qE (qP P : ℝ) 1 r := by
-  haveI := isMaximal_span (piP_mem P) (GlobalTheory.T.isLocalAt_completionIntegers_chosenUniformiser L P)
+  haveI := isMaximal_span (piP_mem P) (_root_.GlobalTheory.Mem.HD.isLocalAt_adicCompletionIntegers_uniformizer L P)
   letI : Field (kF (OP P) _ (piP_mem P)) := Ideal.Quotient.field _
   letI : Fintype (kF (OP P) _ (piP_mem P)) := @Fintype.ofFinite _ (finite_kF P)
   have hc : Nat.card (kF (OP P) _ (piP_mem P)) = qP P := _root_.GlobalTheory.ResidueCardUnif.card_kF_piP L P (piP_mem P)
   have h := Formalism.DoubleCosetMeasures.Final.volJadd (P.adicCompletion L) (OP P) (isOpen_OP P) _ (piP_mem P) (Units.ne_zero _)
-    (GlobalTheory.T.isLocalAt_completionIntegers_chosenUniformiser L P) (finite_kF P) r ν₁ (GLint (OP P) r) (fun g hg => hg.1) le_rfl
-  rw [Formalism.DoubleCosetMeasures.Final.glRed (P.adicCompletion L) (OP P) _ (piP_mem P) (Units.ne_zero _) (GlobalTheory.T.isLocalAt_completionIntegers_chosenUniformiser L P)
+    (_root_.GlobalTheory.Mem.HD.isLocalAt_adicCompletionIntegers_uniformizer L P) (finite_kF P) r ν₁ (GLint (OP P) r) (fun g hg => hg.1) le_rfl
+  rw [Formalism.DoubleCosetMeasures.Final.glRed (P.adicCompletion L) (OP P) _ (piP_mem P) (Units.ne_zero _) (_root_.GlobalTheory.Mem.HD.isLocalAt_adicCompletionIntegers_uniformizer L P)
     (finite_kF P) r, h1, mul_one, hc] at h
-  have hG := GlobalTheory.T.card_GL_finiteField_eq_pow_mul_prod (kF (OP P) _ (piP_mem P)) r
+  have hG := _root_.GlobalTheory.Mem.card_GL_eq_pow_mul_qE (kF (OP P) _ (piP_mem P)) r
   rw [Fintype.card_eq_nat_card, hc] at hG
   have h' := congrArg ENNReal.toReal h
   rw [ENNReal.toReal_mul, ENNReal.toReal_pow, ENNReal.toReal_natCast, ENNReal.toReal_natCast, hG] at h'

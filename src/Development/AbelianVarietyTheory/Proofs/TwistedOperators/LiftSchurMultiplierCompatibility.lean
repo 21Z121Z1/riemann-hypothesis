@@ -19,8 +19,8 @@ import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
 import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
 import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsCompactParahoricLevelAndContainsLifts
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StepVectorLiftPairFlagLevelRealizedChainStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LastStepVectorLiftPairFlagLevelCharactersStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StepVectorLiftPairFlagLevelRealizedChain
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LastStepVectorLiftPairFlagLevelCharacters
 
 open NumberField IsDedekindDomain MeasureTheory Formalism.BasicNotions Formalism.MainNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S Formalism.L2.Theta Formalism.L2.DIV Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.IndefR.Lev Formalism.IndefR.Datum Formalism.L2.Pj Formalism.IndefR.FWT Formalism.IndefR
 open scoped TensorProduct
@@ -271,7 +271,7 @@ theorem rel_dnFrom (hl : R.toLevCh.Is A.μ0) (hi : R.models_inf) (hY : R.models_
       (R.ItY k) (hc.ItY t k hn).ne (R.CC t (k + 1)) (fun U w => (multT_value _ _ _ _ _ U.2 w).1)
       (R.βY (k + 1)) (R.datYt t (k + 1) R.triv) _ (meas_chain hY hY' t (k + 1) hn).1 _ (meas_chain hY hY' t (k + 1) hn).2
       (R.ioY t k) (hc.ioY t k (by omega)) g0 κ hκ g0 κ' hκ' _
-      (GlobalTheory.T.stepVector_lift_pair_flagLevel_realized_chain R hl hi hc.ωY hc.vY t k hn g0 κ κ' hκ hκ') F F' (hF κ' hκ') v g
+      (_root_.GlobalTheory.StepVecLaw.stepVec_lifts R hl hi hc.ωY hc.vY t k hn g0 κ κ' hκ hκ') F F' (hF κ' hκ') v g
 
 theorem rel_ioX (hl : R.toLevCh.Is A.μ0) (hi : R.models_inf) (hY : R.models_νY) (hY' : R.models_νY') (hc : R.IsChain)
     (hX : R.models_νX) (hcX : R.models_cX) (hHX : R.models_HX)
@@ -287,7 +287,7 @@ theorem rel_ioX (hl : R.toLevCh.Is A.μ0) (hi : R.models_inf) (hY : R.models_νY
       (R.βY (D.R.m - 1)) (R.datYt t (D.R.m - 1) R.triv) rfl _ (meas_chain hY hY' t _ hm).1 _ (meas_chain hY hY' t _ hm).2
       (hS t _ hm) R.ItX (hc.ItX t).ne _ (range_left R.cX R.prX (R.HX t) _ _ (hHX t).2.1) R.βX (R.datXt t) _
       (hX t).1.1 _ (hX t).2 (R.ioX t) (hc.ioX t) g0 κ hκ g0 κ' hκ' _
-      (GlobalTheory.T.lastVector_lift_pair_flagLevel_characters R hl hi hc.ωX hc.vX t g0 κ κ' hκ hκ') _ _
+      (_root_.GlobalTheory.StepLaw.last_step_law R hl hi hc.ωX hc.vX t g0 κ κ' hκ hκ') _ _
       (toMap_shift R.cX hcX R.prX _ _ κ' hκ'.1 _ hy) v g
 
 theorem hasType_of_mem (t : T0) (U : R.CC t 0) (v : SmT (R.MY 0)) :

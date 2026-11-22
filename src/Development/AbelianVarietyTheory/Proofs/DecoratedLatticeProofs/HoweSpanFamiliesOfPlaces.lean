@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.EvalAtOneExtremalMul
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FockSubstitutionIdentitiesStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FockSubstitutionIdentities
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HoweDualityUnitarySubstitutionSpanUnit
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemSpanTprodOfCommuteAtEachPlace
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsPiTensorMvPolynomialEquivBlocksStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsPiTensorMvPolynomialEquivBlocks
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeylDeterminantTwistTensorFiniteDimensionalStabl
 open MvPolynomial Formalism.BasicNotions Formalism.L2.Forms Formalism.L2.Ker GlobalTheory.KJInf MeasureTheory
 open scoped TensorProduct
@@ -46,7 +46,7 @@ theorem tenU (ι σ : Type) [Fintype ι] [DecidableEq ι] :
         LinearMap.range (e.toLinearMap ∘ₗ PiTensorProduct.map fun τ => (U τ).subtype) =
           Submodule.span ℂ {p | ∃ f : ι → MvPolynomial (Unit × σ) ℂ, (∀ τ, f τ ∈ U τ) ∧
             p = ∏ τ, rename (fun x : Unit × σ => (τ, x.2)) (f τ)} := by
-  obtain ⟨e0, h1, h2⟩ := GlobalTheory.T.exists_piTensorMvPolynomialEquiv_blocks ι (Unit × σ)
+  obtain ⟨e0, h1, h2⟩ := _root_.GlobalTheory.BlockPoly.exists_blockEquiv ι (Unit × σ)
   let r : MvPolynomial (ι × Unit × σ) ℂ ≃ₐ[ℂ] MvPolynomial (ι × σ) ℂ :=
     renameEquiv ℂ (Equiv.prodCongr (Equiv.refl ι) (Equiv.uniqueProd σ Unit))
   have hr : ∀ τ (p : MvPolynomial (Unit × σ) ℂ), r (rename (Prod.mk τ) p) = rename (fun x : Unit × σ => (τ, x.2)) p := by
@@ -125,7 +125,7 @@ theorem lftMap [Fintype ι] [DecidableEq ι] (eY : PiTensorProduct ℂ (fun _ : 
   apply Finset.prod_congr rfl; intro σ _
   by_cases h : σ = τ
   · subst h; simp [LinearMap.restrict_apply]; rfl
-  · simp [Function.update_of_ne h, (GlobalTheory.T.fockSubstitution_identities Unit a a le_rfl).2.2.2.2.1]
+  · simp [Function.update_of_ne h, (_root_.GlobalTheory.KJInf.substIdentities Unit a a le_rfl).2.2.2.2.1]
 
 theorem mvZMap [Fintype ι] [DecidableEq ι] (hab : a ≤ b) (eZ : PiTensorProduct ℂ (fun _ : ι => FP Unit a b) ≃ₗ[ℂ] FP ι a b)
     (hZ1 : ∀ f, eZ (PiTensorProduct.tprod ℂ f) = ∏ τ, jZ a b τ (f τ)) (τ : ι) (k : Matrix (Fin a) (Fin a) ℂ) :
@@ -138,7 +138,7 @@ theorem mvZMap [Fintype ι] [DecidableEq ι] (hab : a ≤ b) (eZ : PiTensorProdu
   apply Finset.prod_congr rfl; intro σ _
   by_cases h : σ = τ
   · subst h; simp
-  · simp [Function.update_of_ne h, (GlobalTheory.T.fockSubstitution_identities Unit a b hab).2.2.1]
+  · simp [Function.update_of_ne h, (_root_.GlobalTheory.KJInf.substIdentities Unit a b hab).2.2.1]
 
 def RepMaps {A B : Type} [AddCommGroup A] [Module ℂ A] [AddCommGroup B] [Module ℂ B] [Fintype ι] (hab : a ≤ b)
     (Φ : A →ₗ[ℂ] PY ι a) (eZ : B ≃ₗ[ℂ] FP ι a b) : Submodule ℂ (A →ₗ[ℂ] B) where

@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NatCastMemOfP
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemHomLat
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsUniqueIdeleOfLinearEquivQuotientLocal
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.EqZeroOfForallLeExp
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemPowHeightOneIdealIffDvdEmbeddingStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemPowHeightOneIdealIffDvdEmbedding
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SurjectiveAlgebraMapAdicCompletionCompleteDvr
 
 open Formalism.BasicNotions NumberField IsDedekindDomain Formalism.MainNotions Formalism.MainNotions.G Formalism.MainNotions.FormalGroupSystem Formalism.L2.G.Pend Matrix GlobalTheory.VolAt
@@ -27,7 +27,7 @@ theorem completion_ringEquiv_of_dense : ∀ {E : Type} [Field E] [NumberField E]
       intro k
       rw [HeightOneSpectrum.intValuation_le_pow_iff_mem, HeightOneSpectrum.intValuation_le_pow_iff_mem,
         asIdeal_eq_span hp v, Ideal.span_singleton_pow, Ideal.mem_span_singleton]
-      exact GlobalTheory.T.mem_pow_heightOneIdeal_iff_dvd_embedding P p hp ρ h1 h2 x y k hy
+      exact _root_.GlobalTheory.ordIdeal_of_embedding P p hp ρ h1 h2 x y k hy
     exact le_antisymm (le_of_forall_le_exp (P.intValuation_le_one x) fun k hk => (key k).1 hk)
       (le_of_forall_le_exp (v.intValuation_le_one y) fun k hk => (key k).2 hk)
   have hval : ∀ x : E, v.valuation Qq (ρ x) = P.valuation E x := by

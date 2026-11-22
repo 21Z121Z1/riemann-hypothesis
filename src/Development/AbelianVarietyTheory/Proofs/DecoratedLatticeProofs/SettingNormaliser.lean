@@ -217,7 +217,7 @@ theorem inst_normaliser (D : D7) (hρ : 1 ≤ D.R.rS) (I : AutInst) (hI : I = in
     unfold Ranks.r Ranks.rS
     omega
   have hk : 2 ≤ D.R.k := by have := D.R.m_add_three_le_k; omega
-  obtain ⟨hs1, hs2⟩ := GlobalTheory.T.flagVec_mem_Lf_and_inMod (instOf D) _ e0 f0 z0 bw bwd ew hF hn'
+  obtain ⟨hs1, hs2⟩ := _root_.GlobalTheory.FlagBasis.flagVec_mem_and_span (instOf D) _ e0 f0 z0 bw bwd ew hF hn'
   obtain ⟨β₀, hβ₀⟩ := _root_.GlobalTheory.LiftFrameMod.exists_isLiftFrame D _ hg _ hs1 hs2
   have hN : ∀ s : Formalism.L2.Herm.intAf D.host.F D.host.E,
       (∀ PP ∈ Pg, resS D.host.F PP s = 0 ∧ resS D.host.F PP (sigInt (instOf D) s) = 0) →

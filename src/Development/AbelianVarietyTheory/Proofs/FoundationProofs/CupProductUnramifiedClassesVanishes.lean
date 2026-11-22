@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.FinalTheorems
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CupProductCoboundaryMod
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TwoCocycleModPowCoboundaryOfFrobeniusSplitStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OpenSubgroupCochainInvarianceStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OpenSubgroupCochainInvariance
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsFrobeniusPowInvMulMemOpenSubgroupStatement
 
 open NumberField IsDedekindDomain Formalism.ConjugateSelfDual ReciprocityTheory.Gal Formalism.MainNotions.N GlobalTheory.GalOfCusp UpperTheory.V UpperTheory.V.Af UpperTheory.V.HV GlobalTheory.Ord2
@@ -164,7 +164,7 @@ theorem cup_unr_cob_of_vanish [IsAlgClosure ℚ Ω] (c : Coef l) (n : ℕ) (W : 
       funext p; simp only [cup, om, Matrix.mulVec, dotProduct, Fin.sum_univ_two]
     rw [e]
     exact ((h1' 0).mul (h3' 1)).sub ((h1' 1).mul (h3' 0))
-  obtain ⟨K, hIK, hKD, hKo, hepsK, hbiK⟩ := GlobalTheory.T.open_subgroup_cochain_invariance l Ω n D I (cup W a b) (isClosed_Dec B) hID hcont hepsI hbiI
+  obtain ⟨K, hIK, hKD, hKo, hepsK, hbiK⟩ := _root_.GlobalTheory.Ord2.OpenInv.open_inv l Ω n D I (cup W a b) (isClosed_Dec B) hID hcont hepsI hbiI
   obtain ⟨φ, m, hm, hφm, hd⟩ := GlobalTheory.T.exists_frobenius_pow_inv_mul_mem_open_subgroup Ω q B K hB hIK hKo
   obtain ⟨d, hdo, hdK⟩ := hd (l ^ n) (pow_pos (Fact.out : l.Prime).pos n)
   exact GlobalTheory.T.cob2_of_cocycle_cong_of_invariant l Ω c n D K φ m d (cup W a b) hm hφm hdo hdK hepsK hξint

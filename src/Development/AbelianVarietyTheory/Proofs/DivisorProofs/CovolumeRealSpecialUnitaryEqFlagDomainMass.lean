@@ -4,7 +4,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.Uppe
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.KaUnfoldPfB
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.QuadraticCoefficientForms
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.ContinuousOnRmul
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHaarSpecialUnitaryLyingOverFlagDomainStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHaarSpecialUnitaryLyingOverFlagDomain
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RiemannianHaarSpecialUnitaryEqSmulHaarStatement
 
 open NumberField IsDedekindDomain MeasureTheory Matrix GlobalTheory.AdLat GlobalTheory.UCls GlobalTheory.SUVol ReciprocityTheory.ChartRestriction.G.FD ReciprocityTheory.ChartRestriction.G.AR.Inst ReciprocityTheory.ChartRestriction.G.AR.Up
@@ -131,7 +131,7 @@ theorem covolume_realSU : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E]
   obtain ⟨C, hC⟩ : ∃ C : ℝ≥0∞, C = ENNReal.ofReal (((2 : ℝ) ^ (r * (r - 1) / 2) * (2 * Real.pi) ^ (r - 1) *
       Real.sqrt r) ^ fdeg E) := ⟨_, rfl⟩
   rw [← hC]
-  obtain ⟨ν, hν, hνφ⟩ := GlobalTheory.T.exists_haar_specialUnitary_lying_over_flagDomain E r X x hr hx
+  obtain ⟨ν, hν, hνφ⟩ := _root_.GlobalTheory.SUHaarOver.exists_haar_lying_over E r X x hr hx
   have hμ : riemHaar X.Ψ X.Gm x = C • ν := by rw [hC]; exact GlobalTheory.T.riemannianHaar_specialUnitary_eq_smul_haar E r X x ν hr hx hν hνφ
   have KF : ∀ φ : Frame X.Ψ r → ℝ≥0∞, Measurable φ → (∀ y ∈ X.dom, ∀ b ∈ Bor X.Ψ r, φ (rmul y b) = φ y) →
       ∫⁻ g, φ (frOf X x g) ∂riemHaar X.Ψ X.Gm x = C * ∫⁻ z, φ (cpt X x z) ∂muF X x := by

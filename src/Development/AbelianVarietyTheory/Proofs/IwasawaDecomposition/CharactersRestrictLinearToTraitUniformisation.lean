@@ -28,7 +28,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTorsio
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConjEqAddKummerTorusTorsionPoint
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsInertiaMovesTameRoot
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TameInertiaFixedDvdValuationOrder
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnitTauCoordinateAddNsmulFirstVariableStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnitTauCoordinateAddNsmulFirstVariable
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTraitNonlocalTorusExtension
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExtendSplitTorusHomOverDvr
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UniformisationTorusMonoAndFactor
@@ -191,7 +191,7 @@ theorem dvd_ord_sub {E : Type} [Field E] [NumberField E] [IsCMField E] {H : Host
   have dv := _root_.GlobalTheory.Member.TameDivOrd.tame_fixed_dvd_ord W F ϖ hϖ k O φ σ π hkO hφ eφ hσ hπ hζ (s / s') (Units.map gK.toMonoidHom x / x'')
     (by rw [map_div₀, sσ, sσ', hτ, mul_div_mul_left _ _ (Units.ne_zero _)])
     (by rw [map_div₀, div_pow, sv, sv', Units.val_div_eq_div_val, map_div₀, map_div₀, hF]; rfl)
-  obtain ⟨u, hu⟩ := GlobalTheory.T.exists_unit_tauCoordinate_add_nsmul_first_variable W _ hB' _ z _ k x' xz x'' hx' hxz (hz ▸ hx'')
+  obtain ⟨u, hu⟩ := _root_.GlobalTheory.TauShift.main W _ hB' _ z _ k x' xz x'' hx' hxz (hz ▸ hx'')
   rw [val_div, hu, (ord_vw W).map_mul, (ord_vw W).map_unit, (ord_vw W).map_mul, val_pow, zero_add, nsmul_eq_mul,
     ← sub_sub] at dv
   exact (dvd_sub_left (dvd_mul_right _ _)).1 dv

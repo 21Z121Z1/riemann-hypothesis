@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemKilled
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealLieSmoothingMemSmoothAdelicFunctionsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieDerivativeRealLieSmoothingEqDensityStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieDerivativeRealLieSmoothingEqDensity
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealLieSmoothingMemSlowlyIncreasing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfMemSpanK
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentreEnvelopingAlgebraCommuteRealLieSmoothingStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentreEnvelopingAlgebraCommuteRealLieSmoothing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothingRightTranslateMaxCompactStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FundamentalDomainMeasureFinite
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteDimensionalSpaceAutomorphicSmoothing
@@ -62,7 +62,7 @@ theorem smoothing_mem_space : ∀ (E : Type) [Field E] [NumberField E] [IsTotall
       exact Algebra.adjoin_mono (s := {cap (a := b) τ u}) (by rintro _ rfl; exact ⟨τ, u, rfl⟩)
         (Polynomial.aeval_mem_adjoin_singleton ℂ _)
     apply Subtype.ext
-    rw [GlobalTheory.T.centreEnvelopingAlgebra_commute_realLieSmoothing E b ν α hα ψ h _ hz, (GlobalTheory.CapKilled.mem_killed.1 hq) τ u]
+    rw [_root_.GlobalTheory.CentreSmooth.zalg_smoothing E b ν α hα ψ h _ hz, (GlobalTheory.CapKilled.mem_killed.1 hq) τ u]
     funext g
     simp [smoothing, chart]
   · obtain ⟨β, hβ, e⟩ : ∃ β, IsTest (invSet E b) β ∧
@@ -73,7 +73,7 @@ theorem smoothing_mem_space : ∀ (E : Type) [Field E] [NumberField E] [IsTotall
         obtain ⟨β, hβ, e⟩ := ih
         refine ⟨dens X β, isTest_dens X hβ, funext fun g => ?_⟩
         rw [List.map_cons, List.prod_cons, Module.End.mul_apply, lie_apply, e]
-        exact GlobalTheory.T.lieDerivative_realLieSmoothing_eq_density E b ν β hβ ψ.1 ψ.2 X g
+        exact _root_.GlobalTheory.AutGrowth.lieD_smoothing_eq_dens E b ν β hβ ψ.1 ψ.2 X g
     rw [e]
     exact _root_.GlobalTheory.AutGrowth.smoothing_mem_growth E b ν β hβ ψ.1 hg
 

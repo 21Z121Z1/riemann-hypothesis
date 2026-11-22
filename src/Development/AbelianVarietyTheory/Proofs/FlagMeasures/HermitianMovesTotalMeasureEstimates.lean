@@ -5,10 +5,10 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementRe
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Cint
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NoLeak
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SpanToLePerp
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermExponentsNonnegAndDefectGroupBoundStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermExponentsNonnegAndDefectGroupBound
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FrameMoveCharacterNeOne
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IndexMeasureIntegralProdFubiniStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IndexMeasureIntegralLinearPositiveNormBoundStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IndexMeasureIntegralLinearPositiveNormBound
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IndexIntegrableShareTopLevelVectors
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EichlerMoveScalarFibreMeasureOne
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermIntegralNearOneBound
@@ -61,7 +61,7 @@ theorem triple (A₁ : AddSubgroup W₁) (A₂ : AddSubgroup W₂) (A₃ : AddSu
       · by_cases hz : Z u
         · have e : (fun t => ind M (b, u, t) * g b u) = fun t => g b u * ind (R u) t := by
             funext t; simp [ind, hM, hb, hq]
-          have := ((GlobalTheory.T.indexMeasureIntegral_linear_positive_norm_bound A₃).2.1 (g b u) _ (nice_of_ne _ _ (by rw [h1 u hz]; simp))).2
+          have := ((_root_.GlobalTheory.IdxInt.Lin.main A₃).2.1 (g b u) _ (nice_of_ne _ _ (by rw [h1 u hz]; simp))).2
           simp only
           rw [e, this, h1 u hz]
           simp [ind, hq, hz]
@@ -93,13 +93,13 @@ theorem triple (A₁ : AddSubgroup W₁) (A₂ : AddSubgroup W₂) (A₃ : AddSu
 
 theorem cint_ind_mul (A : AddSubgroup W) (φ : W → ℂ) (h : Nice A φ) (c : ℂ) :
     cint A (fun w => φ w * c) = cint A φ * c := by
-  simpa [mul_comm] using ((GlobalTheory.T.indexMeasureIntegral_linear_positive_norm_bound A).2.1 c φ h).2
+  simpa [mul_comm] using ((_root_.GlobalTheory.IdxInt.Lin.main A).2.1 c φ h).2
 
 theorem norm_le (A : AddSubgroup W) (P : W → Prop) (h : Nice A (ind P)) (φ : W → ℂ)
     (hφ : Nice A (fun w => ind P w * φ w)) (m : ℝ) (hm : ∀ w, P w → ‖φ w‖ ≤ m) :
     ‖cint A (fun w => ind P w * φ w)‖ ≤ m * (cint A (ind P)).re := by
-  obtain ⟨e1, e2⟩ := (GlobalTheory.T.indexMeasureIntegral_linear_positive_norm_bound A).2.1 (m : ℂ) _ h
-  have := ((GlobalTheory.T.indexMeasureIntegral_linear_positive_norm_bound A).1 _ _ hφ e1).2.2 fun w => by
+  obtain ⟨e1, e2⟩ := (_root_.GlobalTheory.IdxInt.Lin.main A).2.1 (m : ℂ) _ h
+  have := ((_root_.GlobalTheory.IdxInt.Lin.main A).1 _ _ hφ e1).2.2 fun w => by
     by_cases hw : P w
     · simpa [ind, hw] using hm w hw
     · simp [ind, hw]
@@ -171,7 +171,7 @@ theorem total_moves : ∀ {F : Type} [Field F] [ValuativeRel F] [TopologicalSpac
   obtain ⟨B, hB, hinv⟩ := _root_.GlobalTheory.MoveFine.main L r k S j β βJ d Λ hT hF
   obtain ⟨hβJ, hβ, nB, cB⟩ := _root_.GlobalTheory.TopLevelShare.main L r k S j β βJ d Λ hT hF
   obtain ⟨u1, u2, u3⟩ := _root_.GlobalTheory.HL.FibU.shares L r k S hk (j + 1) d Λ hT
-  have hTf := _root_.GlobalTheory.MoveFibre.fibre_scalar L r k S (GlobalTheory.T.term_exponents_nonneg_and_defect_group_bound L r k S d Λ hT).1
+  have hTf := _root_.GlobalTheory.MoveFibre.fibre_scalar L r k S (_root_.GlobalTheory.HL.Defect.exponents_and_defect L r k S d Λ hT).1
   have tri := triple (S.refB (j + 1) Λ) (S.refU (j + 1) Λ) S.refT _ _ S.InZ _ (S.Mv (j + 1) d Λ)
     (mv_iff S (j + 1) d Λ) (fun u => (hTf u).1) (fun u => (hTf u).2)
   have hβ' : (β : ℝ) ≠ 0 := by positivity

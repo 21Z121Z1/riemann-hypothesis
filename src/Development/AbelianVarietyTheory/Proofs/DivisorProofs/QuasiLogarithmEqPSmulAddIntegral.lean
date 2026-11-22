@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.WittOnFalse
 import Development.AbelianVarietyTheory.Definitions.Divisors.FormalCoboundarySmul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KatzQuasiIntegralCriterion
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MvPowerSeriesReductionModPrimeRules
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReductionCommutesFormalGroupLawCoboundariesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReductionCommutesFormalGroupLawCoboundaries
 open CategoryTheory TensorProduct MvPowerSeries GlobalTheory GlobalTheory.PDiv GlobalTheory.PDivGroup GlobalTheory.Katz
 
 set_option autoImplicit false
@@ -40,7 +40,7 @@ theorem quasiLog_eq_p_smul_add_int : ∀ (p : ℕ) [Fact p.Prime] (k : Type) [Fi
   obtain ⟨R1, -, R3, R4, -, R6, ZariskiNoetherianInduction⟩ := _root_.GlobalTheory.Katz.red_rules p k (Fin d)
   obtain ⟨-, R1', -, -⟩ := _root_.GlobalTheory.Katz.red_rules p k (Fin d ⊕ Fin d)
   have hL : ∀ i, constantCoeff (Katz.lift p (μ i)) = 0 := fun i => constantCoeff_lift p (h.const i)
-  obtain ⟨-, C2, -, -⟩ := GlobalTheory.T.reduction_commutes_formalGroupLawCoboundaries p k d μ h.const
+  obtain ⟨-, C2, -, -⟩ := _root_.GlobalTheory.Katz.red_coboundaries p k d μ h.const
   obtain ⟨hcb, hlb⟩ := C2 (Katz.lift p b) b (R3 b)
   set f' := f - Katz.lift p b with hf'
 

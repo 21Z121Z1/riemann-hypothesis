@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralNormSqEqTo
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SmulEqZeroOfInf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergSmoothOfWeakDerivativeClosedSet
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousFourierGau
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOscillatorActionUnitaryGroupHermitianStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOscillatorActionUnitaryGroupHermitian
 
 noncomputable section
 
@@ -264,7 +264,7 @@ theorem exists_isInfWeil : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ), IsStdC
   intro D ψ hψ θ hθ S T
   obtain ⟨σ, h⟩ := GlobalTheory.RealLineAt.exists_inverse_chart hθ
   obtain ⟨Ω, ⟨hadd, hsmul, hsm, hone, hmul, hheis, hcomm, hunit⟩, htriv, hcont, hvac⟩ :=
-    GlobalTheory.T.exists_oscillatorAction_unitaryGroup_hermitian (Ix S T) (HM S T) HM_herm HM_det (BB ψ S T) (rhoV hψ σ S T) (isHeis_rhoB h hψ) (GA D S × GA D T)
+    _root_.GlobalTheory.RealWeil.UnitaryOsc.exists_osc (Ix S T) (HM S T) HM_herm HM_det (BB ψ S T) (rhoV hψ σ S T) (isHeis_rhoB h hψ) (GA D S × GA D T)
       (mM θ S T) (mM_unitary hθ)
   have sm := sm_of_theta (S := S) (T := T) h hψ
   have hfin : ∀ p {u : WO S T}, u.map (infPart D) = 0 → ∀ F, GlobalTheory.RealWeil.Sm (rhoV hψ σ S T) F →

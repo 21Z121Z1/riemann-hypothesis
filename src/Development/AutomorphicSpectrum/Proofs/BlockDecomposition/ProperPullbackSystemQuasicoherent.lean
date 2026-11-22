@@ -9,7 +9,8 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IdealPowerSubob
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.CokernelCoherent
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.PullbackCoherent
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjectiveCohomology.QcohLocal
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubobjectLeIffAffineSectionsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubobjectLeIffAffineSections
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PowSubSuccLe
 
 set_option autoImplicit false
 
@@ -114,6 +115,6 @@ theorem shift : ∀ {A : Type} [CommRing A] [IsNoetherianRing A] (I : Ideal A) {
     exact TopologicalSpace.Opens.mem_iSup.2 ⟨⟨U, hU⟩, hxU⟩
   · intro i
     refine subset_trans ?_ (hc' i.1 e)
-    exact (GlobalTheory.T.subobject_le_iff_affine_sections _ _).1 (anti (Nat.add_le_add_left (Finset.le_sup i.2) e)) i.1
+    exact (_root_.GlobalTheory.CompanionTheory.GE.le_iff_secs_subset _ _).1 (anti (Nat.add_le_add_left (Finset.le_sup i.2) e)) i.1
 
 end GlobalTheory.CompanionTheory.GE.Shift

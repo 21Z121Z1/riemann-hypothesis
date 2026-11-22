@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AdelicLatticeFrameLo
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DiagonalTorusTransitiveGenericCharacters
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SplitPlaceLatticeComponentsStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsLocallySelfDualOfHermitianLatticeOfLevel
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CmFieldSplitCompletelyPlaceStructureStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CmFieldSplitCompletelyPlaceStructure
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StepLevelTLat
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemLevelOfPreservesFirstComponentsSplit
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SplitIntLoc
@@ -94,7 +94,7 @@ theorem gmatch_local : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Num
   have hSD := _root_.GlobalTheory.St.G.selfDualAt_of_tLat F E cm n J hJ hdet T f S.Lb hTL v hTv
   have hLat : IsLat S.Lb := ⟨S.Lb_fin, S.Lb_span⟩
   obtain ⟨fr', ψ', hψ', hfr', hK⟩ := _root_.GlobalTheory.St.G.frame_local_basis_unitriangular F E cm n J hJ hdet k t gp G S.Lb Fr hk hgp hne hspl hLat i v hv hSD
-  have hcard := ((GlobalTheory.T.cmField_splitCompletely_place_structure F E cm (gp i) (hgp i) (hspl i)).2 v hv).1
+  have hcard := ((_root_.GlobalTheory.St.G.SplitPrime.split_place F E cm (gp i) (hgp i) (hspl i)).2 v hv).1
   haveI : Finite (kv F v) := Nat.finite_of_card_ne_zero (by rw [hcard]; exact (hgp i).ne_zero)
   obtain ⟨d, hd⟩ := _root_.GlobalTheory.St.G.Torus.torus_transitive (kv F v) n t (G.psi0 i v hv) ψ' (G.chiB i v hv) (fun _ => 1) (G.psi_zero_nontrivial_character i v hv) hψ'
   obtain ⟨D, hDint, hDred⟩ := GlobalTheory.St.G.Match.diag_lift F v n d

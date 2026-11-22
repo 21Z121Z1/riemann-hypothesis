@@ -23,7 +23,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CocompactFibrationS
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockEmbeddingUnipotentMemFlagUnipotentRadical
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockEmbeddingRationalGLMemRationalPoints
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousUnitaryGLBlockEmbeddingPolynomialEntri
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBlockProjectionFlagUnipotentRadicalStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBlockProjectionFlagUnipotentRadical
 import Development.WeilBound.RepresentationTheoryGL.ConstantTermFiniteness.CuspidalConstantTerms.IntegralSectionEqConstTermOn
 
 open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.AdelicU GlobalTheory.SmGL GlobalTheory.PRep GlobalTheory.SplitWeil GlobalTheory.LeviBlockExponent GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels
@@ -99,7 +99,7 @@ theorem isCuspidal_comp_blockEmb : ∀ (F E : Type) [Field F] [NumberField F] [F
     rw [hU₀, eS] at hu ⊢
     exact conj_mem_unipFlag hJ hσσ hCS _ (GlobalTheory.ConstTrans.unip_le_parFlag F E σ hσ n J hJ r X Y hW (insert k S) S mS
       (Finset.subset_insert _ _) hmS hmS' hp) hu
-  obtain ⟨π, hπc, hπm, hπs, hπk, hπr⟩ := GlobalTheory.T.exists_blockProjection_flagUnipotentRadical F E σ hσ n J hJ r X Y hW S l d h ι hι hS hk hl r' hr0 hr1 k hkv
+  obtain ⟨π, hπc, hπm, hπs, hπk, hπr⟩ := _root_.GlobalTheory.BlockForms.Proj.exists_blockProj F E σ hσ n J hJ r X Y hW S l d h ι hι hS hk hl r' hr0 hr1 k hkv
   have hrat := _root_.GlobalTheory.CuspBlockRat.blockEmb_ratGL_mem_ratPts F E σ hσ n J hJ r X Y hW l d h ι hι
   have hιc := _root_.GlobalTheory.BlockForms.isBlockEmb_continuous F E σ hσ n J hJ r X Y hW l d h ι hι
   have hsN := _root_.GlobalTheory.BlockForms.CuspUnip.blockEmb_unip_mem F E σ hσ n J hJ r X Y hW S l d h ι hι hS hk hl r' hr0 hr1 k hkv

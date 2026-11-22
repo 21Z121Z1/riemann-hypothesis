@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Ex
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.DiscreteSpectrumKFiniteDecomposition
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ConsequencesOfDsClass
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HasDiscreteSeriesKTypesOfHasParamCover
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsParamCoverDiscreteSeriesStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsParamCoverDiscreteSeries
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CoverDiscreteSeriesUnitarilyEquivOfSameParam
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HarishChandraModulesIndefiniteUnitaryGroup
 import Formalism.SharpRestriction.Divisibility.SchurIrreducible
@@ -34,7 +34,7 @@ theorem discreteSeriesCover_of_classification :
   intro p q hn T
   choose D hD using fun lam : {lam : Ix p q → ℚ // IsParam lam} => hC p q T lam.1 lam.2
   refine ⟨D, fun lam => _root_.GlobalTheory.CoverDS.hasTypes_of_hasParam_of_group hM hK hI p q hn T (D lam) lam.1 lam.2 (hD lam), fun R => ?_⟩
-  obtain ⟨lam, hl, hR⟩ := GlobalTheory.T.exists_param_coverDiscreteSeries hX p q hn T R
+  obtain ⟨lam, hl, hR⟩ := _root_.GlobalTheory.CoverExhaust.exists_param hX p q hn T R
   exact ⟨⟨lam, hl⟩, _root_.GlobalTheory.CoverDS.unitEquiv_of_dsUnique hU p q hn T R (D ⟨lam, hl⟩) lam hl hR (hD _)⟩
 
 end GlobalTheory.CoverDS

@@ -2,8 +2,8 @@ import Mathlib
 import Formalism.FormalDegreeBessel.FinalG
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselSubgroupsClosedUnitaryWCompact
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselRootDilationNormalizesContractsUnipotentStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ClosedSubgroupBesselHaarFiniteCompactPosOpenStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselRootDilationNormalizesContractsUnipotent
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ClosedSubgroupBesselHaarFiniteCompactPosOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ClosedSubgroupBesselUnitaryHaarUnique
 
 noncomputable section
@@ -186,8 +186,8 @@ theorem tendsto_AA (S H : Set (Mat k r)) (μ : Measure (Mt k r)) {L : ℝ} (hL :
 theorem exists_isFolner : ∀ (k r : ℕ) (z : Fin (2 * r + k + 1) → ℂ) (μS : Measure (Mt k r)), inWb k r z → 0 < Tz k r z → IsHaarOn (Sset k r z) μS → ∃ Om : ℕ → Set (Mt k r), IsFolner (Sset k r z) μS Om := by
   intro k r z μ hz hT hμ
   obtain ⟨-, hN, hH, hS, hHc⟩ := _root_.GlobalTheory.SgInf.closedSub_groups k r z hz hT
-  obtain ⟨hd1, hd2⟩ := GlobalTheory.T.besselRootDilation_normalizes_contracts_unipotent k r z hz
-  obtain ⟨hfin, hpos⟩ := GlobalTheory.T.closedSubgroupBessel_haar_finite_compact_pos_open k r _ μ hS hμ
+  obtain ⟨hd1, hd2⟩ := _root_.GlobalTheory.SgInf.Dilation.main k r z hz
+  obtain ⟨hfin, hpos⟩ := _root_.GlobalTheory.SgInf.haarOn_locFinite_openPos k r _ μ hS hμ
   obtain ⟨M, hM0, hM⟩ := exists_bound hHc
   set a : ℕ → Mat k r := fun j => dil k r ((j : ℝ) + 1) with ha
   have hτ : ∀ j : ℕ, (0 : ℝ) < (j : ℝ) + 1 := fun j => by positivity

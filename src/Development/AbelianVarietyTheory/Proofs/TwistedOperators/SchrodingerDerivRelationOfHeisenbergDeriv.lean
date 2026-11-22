@@ -33,9 +33,9 @@ theorem hasDerivAt_heisV_of {F : Type} [Field F] [NumberField F] {N : ℕ} [Inve
   have hM0 : M 0 = 0 := map_zero M
   set ω : Set (Fin N → AF F) := (fun s : ℝ => w.1 + (M s).1) '' Set.Icc (-1) 1 with hω
   have hωc : IsCompact ω := isCompact_Icc.image (continuous_const.add (continuous_fst.comp hM.1))
-  obtain ⟨C, c, hcs, hc0, hcb⟩ := GlobalTheory.ThetaDeriv.decay_majorant hF (GlobalTheory.T.adelicRapidDecay_of_mem_adelicSchwartzSpace F N Φ' hΦ'm) ω hωc
+  obtain ⟨C, c, hcs, hc0, hcb⟩ := GlobalTheory.ThetaDeriv.decay_majorant hF (_root_.GlobalTheory.SchwartzDecay.decay_of_mem_schA F N Φ' hΦ'm) ω hωc
   obtain ⟨C₀, c₀, hcs₀, hc0₀, hcb₀⟩ :=
-    GlobalTheory.ThetaDeriv.decay_majorant hF (GlobalTheory.T.adelicRapidDecay_of_mem_adelicSchwartzSpace F N Φ hΦ) {w.1} isCompact_singleton
+    GlobalTheory.ThetaDeriv.decay_majorant hF (_root_.GlobalTheory.SchwartzDecay.decay_of_mem_schA F N Φ hΦ) {w.1} isCompact_singleton
   set ph : (Fin N → F) → ℂ := fun ξ => ψ (GlobalTheory.SWQ.rat ξ ⬝ᵥ w.2 + ⅟(2 : AF F) * (w.1 ⬝ᵥ w.2)) with hph
   have e : (fun t : ℝ => heisV ψ (M t) (thV ψ Φ) w) =
       fun t => ∑' ξ : Fin N → F, ph ξ * GlobalTheory.WeilM.schr ψ (M t) Φ (GlobalTheory.SWQ.rat ξ + w.1) := by
@@ -93,8 +93,8 @@ theorem GlobalTheory.LineDerivTransfer.schr_deriv_of_heisO_deriv : ∀ (D : D7) 
   have he : ∀ w w', symplO S T w w' = symV (e w) (e w') := fun w w' => by
     rw [symplO_eq_symp rfl hB, co.form]
     simp only [e, symV, numCoord_apply, comp_equiv_dotProduct_comp_equiv]
-  obtain ⟨-, -, hfin, -⟩ := GlobalTheory.T.adelicLinearCoordinates_continuous_keep_parts D T.rank S.rank _ e
-  have hc : Continuous e := (GlobalTheory.T.adelicLinearCoordinates_continuous_keep_parts D T.rank S.rank _ e).1
+  obtain ⟨-, -, hfin, -⟩ := _root_.GlobalTheory.AdelicCoord.coord D T.rank S.rank _ e
+  have hc : Continuous e := (_root_.GlobalTheory.AdelicCoord.coord D T.rank S.rank _ e).1
   have hΦσ := comp_mem_schA σ hΦ
   have key : ∀ L : ℝ →+ WO S T, Continuous L → (∀ t, (L t).map (finPart D) = 0) →
       ∃ Φ' ∈ GlobalTheory.WeilM.schA D.host.F (Fin (Fintype.card κ)),

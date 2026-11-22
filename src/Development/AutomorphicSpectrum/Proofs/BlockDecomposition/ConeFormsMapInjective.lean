@@ -2,7 +2,7 @@ import Mathlib
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.HodgeSurjectivity.NLeA
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AlgebraMapConeRing
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsMulPowEqIncl
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KaehlerFreeConeRingStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KaehlerFreeConeRing
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsAlgHomOfIsBaseChange
 open CrystallineSemistableComparison.Onto GlobalTheory.CompanionTheory.SurjectionOntoH4
 
@@ -63,7 +63,7 @@ theorem omMap_incl_injective : ∀ {K : Type} [Field K] {n d : ℕ} (S : Finset 
     Algebra.FormallyEtale.of_isLocalization (Submonoid.powers (mon K (allE n d) (allE_mem S)))
   have hb := KaehlerDifferential.isBaseChange_of_formallyEtale K (R0 K n d S) (Lr K n d)
   have hE := GlobalTheory.TopForm.isBaseChange_exteriorPower hb a
-  haveI : Module.Free (R0 K n d S) Ω[R0 K n d S⁄K] := GlobalTheory.T.kaehler_free_cone_ring S
+  haveI : Module.Free (R0 K n d S) Ω[R0 K n d S⁄K] := _root_.GlobalTheory.CompanionTheory.SurjectionOntoH4.FreeOm.free_om S
   have hinj := injective_of_isBaseChange hE (Away.incl_injective le_top)
   have heq : ∀ ω, omMap (K := K) (incl (le_top : (cone S : AddSubmonoid (Gam n d)) ≤ ⊤)) a ω =
       exteriorPowerMapOver (Lr K n d) a (KaehlerDifferential.map K K (R0 K n d S) (Lr K n d)) ω := by

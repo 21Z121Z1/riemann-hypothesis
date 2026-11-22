@@ -5,7 +5,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TopLePreimageOfValAtNeZero
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUniqueUniformisingVectorVerticalTangentStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUniqueUniformisingVectorVerticalTangent
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFibreCoords
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.InvariantVectorFieldAbelianVarietyAlgebraic
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUniqueSectionOfLocallyRegular
@@ -196,7 +196,7 @@ theorem locDer_regular_coeff : ∀ (P₀ : Out.PolAV (Sp ℂ)) (u : HolUnif P₀
   have hq : ∀ z, (u.ex z).left ≫ P₀.A.hom = 𝟙 _ := fun z => by simp [Over.w (u.ex z)]
   have hw : ∀ z, ⊤ ≤ ((u.ex z).left ≫ m) ⁻¹ᵁ W₀ → ∃ w : Fin P₀.g → ℂ, ∀ W f, z ∈ dom u m W →
       ptOf W₀ d (u.ex z).left W f = fderiv ℂ (fn u m W f) z w := fun z hz =>
-    (GlobalTheory.T.existsUnique_uniformising_vector_vertical_tangent P₀ u Hm χ hG R x₀ X p m hsm hpb z _ (ptDer_ptOf hd _ hz)
+    (_root_.GlobalTheory.KS.VertFamily.existsUnique_vector P₀ u Hm χ hG R x₀ X p m hsm hpb z _ (ptDer_ptOf hd _ hz)
       (fun r => ptOf_const hd _ (hq z) hz r)).exists
   let wf : (Fin P₀.g → ℂ) → Fin P₀.g → ℂ := fun z =>
     if hz : ⊤ ≤ ((u.ex z).left ≫ m) ⁻¹ᵁ W₀ then (hw z hz).choose else 0

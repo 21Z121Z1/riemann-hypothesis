@@ -6,11 +6,11 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ContinuousSetInt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOfIsOpenStab
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsTestZero
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CenterEnvelopingCommutesLie
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RightTranslationLieConjugateStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryExponentialPathExistsStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TestFunctionContinuousCompactSupportStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RightTranslationLieConjugate
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryExponentialPathExists
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TestFunctionContinuousCompactSupport
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TestFunctionDerivativeIsTestStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CenterCommutesOneParameterFlowStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CenterCommutesOneParameterFlow
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConvolutionRightInvariantOpenCompact
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConvolutionMaximalCompactEquivariant
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalConvolutionSplitCentreInvariantStatement
@@ -18,7 +18,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KFiniteIrreduci
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalKTypeFinite
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsIsOpenIsCompact
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConvolutionSmoothLieDerivative
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsTestFunctionFixedSubspaceStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsTestFunctionFixedSubspace
 open NumberField MeasureTheory Topology Matrix GlobalTheory.AutomorphicL2Unitary GlobalTheory.DiscreteSum GlobalTheory.OpTrace GlobalTheory.UnitaryBC GlobalTheory.DiscSpec GlobalTheory.CuspRep GlobalTheory.CuspRep.CuspidalL2GL
 open scoped ContDiff
 
@@ -33,7 +33,7 @@ variable (μ : Measure (GA E a)) [μ.IsHaarMeasure] [μ.IsMulRightInvariant]
 omit μ in
 theorem continuous_tst {U : Subgroup (GL (Fin a) (Af E))} (hUo : IsOpen (U : Set (GL (Fin a) (Af E))))
     (hUc : IsCompact (U : Set (GL (Fin a) (Af E)))) {β : Lie E a → ℂ} (hβ : IsTest β) :
-    Continuous (tst U β) ∧ HasCompactSupport (tst U β) := GlobalTheory.T.test_function_continuous_compact_support E a U hUo hUc β hβ
+    Continuous (tst U β) ∧ HasCompactSupport (tst U β) := _root_.GlobalTheory.CompanionTheory.SmoothRep.continuous_hasCompactSupport_tst E a U hUo hUc β hβ
 
 theorem cv_mem_Sm {U : Subgroup (GL (Fin a) (Af E))} (hUo : IsOpen (U : Set (GL (Fin a) (Af E))))
     (hUc : IsCompact (U : Set (GL (Fin a) (Af E)))) {β : Lie E a → ℂ} (hβ : IsTest β) {Fl : GA E a → ℂ}
@@ -65,7 +65,7 @@ theorem exists_injective (U : Subgroup (GL (Fin a) (Af E))) (hUo : IsOpen (U : S
     (hUc : IsCompact (U : Set (GL (Fin a) (Af E)))) (X : Submodule ℂ (L2 (latticeGL E a) μ)) [hX' : FiniteDimensional ℂ X]
     (hX : ∀ u ∈ U, ∀ v ∈ X, R (latticeGL E a) μ (finGL E a u) v = v) :
     ∃ β : Lie E a → ℂ, IsTest β ∧ ConjInv β ∧ ∀ v ∈ X, Rop (latticeGL E a) μ (tst U β) v = 0 → v = 0 :=
-  GlobalTheory.T.exists_test_function_fixed_subspace E a μ U hUo hUc X hX' hX
+  _root_.GlobalTheory.CompanionTheory.SmoothRep.Inj.exists_isTest_Rop_injective E a μ U hUo hUc X hX' hX
 
 theorem exists_typeSpace (H : Submodule ℂ (L2 (latticeGL E a) μ)) (hH : H ≤ L2cusp μ)
     (hI : IsIrredSubrep (R (latticeGL E a) μ) H) (F : L2 (latticeGL E a) μ) (hFH : F ∈ H) (hF : IsKFinL2 μ F) :
@@ -84,8 +84,8 @@ omit μ in
 
 theorem Zalg_comm_cptRep {z : Module.End ℂ (Sm E a)} (hz : z ∈ Zalg E a) (k : Kinf E a) :
     z * cptRep E a k = cptRep E a k * z := by
-  obtain ⟨c, Y, h0, h1, hd, hi⟩ := GlobalTheory.T.unitary_exponential_path_exists E a k
-  have h := GlobalTheory.T.center_commutes_one_parameter_flow E a (GlobalTheory.T.right_translation_lie_conjugate E a) z hz (_root_.GlobalTheory.CompanionTheory.SmoothRep.Zalg_comm_lie E a z hz) c Y h0 hd hi
+  obtain ⟨c, Y, h0, h1, hd, hi⟩ := _root_.GlobalTheory.CompanionTheory.SmoothRep.KCurve.exists_curve E a k
+  have h := _root_.GlobalTheory.CompanionTheory.SmoothRep.Flow.zalg_comm_rt_curve E a (_root_.GlobalTheory.CompanionTheory.SmoothRep.rt_infGL_mul_lie E a) z hz (_root_.GlobalTheory.CompanionTheory.SmoothRep.Zalg_comm_lie E a z hz) c Y h0 hd hi
   rw [h1] at h
   exact h
 

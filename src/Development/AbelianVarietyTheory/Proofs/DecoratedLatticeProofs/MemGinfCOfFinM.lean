@@ -1,5 +1,6 @@
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PinColL
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPointOfRationalUnitaryAdelicMulStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPointOfRationalUnitaryAdelicMul
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValuedLtOfMem
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousPf
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MoveCompactLevelInvariant
 import Mathlib
@@ -142,7 +143,7 @@ theorem top_lev_chi : ∀ {B : GlobalTheory.Mem.Base} {X : PreX B.toPre} (I : TC
   have hTop := hA.top (A.chOf B.R.m ((I.perIn u a).tilC c))
   have h1 := hTop ((I.stX a).rep c).1.1 (K.y c).1 g (hRP.pt c) hg
   have hmv := (I.stp u a B.R.m).mv_smul (I.perIn u a).b0 ((I.perIn u a).tilPt c)
-  have h2 := GlobalTheory.T.isPointOf_rational_unitary_adelic_mul _ _ B.sp.cm _ _ _ _ ((I.stp u a B.R.m).mv (I.perIn u a).b0 ((I.perIn u a).tilPt c)).1⁻¹ _ _ h1
+  have h2 := _root_.GlobalTheory.Mem.Col2.RatMove.isPtOf_ratAd _ _ B.sp.cm _ _ _ _ ((I.stp u a B.R.m).mv (I.perIn u a).b0 ((I.perIn u a).tilPt c)).1⁻¹ _ _ h1
   set g₀ := (I.stp u a B.R.m).mv (I.perIn u a).b0 ((I.perIn u a).tilPt c) with hg₀
   let κ' : (I.stp u a B.R.m).G (I.perIn u a).b0 := ((1 : Formalism.L2.Col.UF B.fields.E (B.R.N B.R.m)), g₀.2)
   have hgam1 : (I.stp u a B.R.m).gam (I.perIn u a).b0 κ' = 1 := by

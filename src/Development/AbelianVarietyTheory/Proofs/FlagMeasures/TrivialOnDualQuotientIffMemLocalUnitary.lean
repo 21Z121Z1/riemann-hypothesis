@@ -5,7 +5,7 @@ import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SplitIntLoc
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemDualSetOfMemSpan
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DualOfDualFrames
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StepLevelTLat
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CmFieldSplitCompletelyPlaceStructureStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CmFieldSplitCompletelyPlaceStructure
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianLatticeLevelLocalDualQuotientLengthOne
 
 open Formalism.BasicNotions Formalism.UG Formalism.L2.Forms NumberField IsDedekindDomain Matrix GlobalTheory.St.G
@@ -185,7 +185,7 @@ theorem trivial_iff_mem_Uloc : ∀ (F E : Type) [Field F] [NumberField F] [Field
   intro F E _ _ _ _ _ _ cm n J hJ hdet T f bad S hT hsp hdeg v hv y hy
   obtain ⟨-, d, hd, hgen⟩ := _root_.GlobalTheory.St.G.tLat_local_index F E cm n J hJ hdet T f S.Lb hT hsp hdeg
     (stepLevel_tLat F E n cm.sig J T f bad S) v hv
-  obtain ⟨-, hmax, sp, hsig, hdiag⟩ := (GlobalTheory.T.cmField_splitCompletely_place_structure F E cm T hT hsp).2 v hv
+  obtain ⟨-, hmax, sp, hsig, hdiag⟩ := (_root_.GlobalTheory.St.G.SplitPrime.split_place F E cm T hT hsp).2 v hv
   have hint : ∀ x, x ∈ intV E v ↔
       (sp x).1 ∈ v.adicCompletionIntegers F ∧ (sp x).2 ∈ v.adicCompletionIntegers F :=
     split_integral_local F E v sp hdiag

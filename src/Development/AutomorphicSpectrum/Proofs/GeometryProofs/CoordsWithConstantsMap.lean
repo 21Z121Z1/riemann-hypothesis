@@ -17,10 +17,10 @@ import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.Met
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelDominantHodge
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordsAddedProjectiveStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexCoordsAddedStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordsAddedProjective
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexCoordsAdded
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncModelAddedCoords
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackActionRingStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackActionRing
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TensorEquivOfBasisExtension
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericFlagUnderEquivStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlagBundleUnderEquiv
@@ -81,7 +81,7 @@ theorem GlobalTheory.CompanionTheory.Ar.exists_flagStep : ∀ (E : Type) [Field 
     by_contra hne
     have h1 := hj₃ 1 (fun _ => e) (LinearIndependent.of_subsingleton (0 : Fin 1) hne)
     exact h1.ne_zero (0 : Fin 1) he
-  have hint := GlobalTheory.T.lie_model_pullback_action_ring E H X X' t t' f' m₁ Ω₀ Ω' ξ ξ' (algebraMap Ω₀ Ω') Li Li' M M' ρ ρ' j' hdom hact hact' hj₁
+  have hint := _root_.GlobalTheory.CompanionTheory.Ar.FlagStep.lieMap_act_pull E H X X' t t' f' m₁ Ω₀ Ω' ξ ξ' (algebraMap Ω₀ Ω') Li Li' M M' ρ ρ' j' hdom hact hact' hj₁
   have hjΦ : Φ.toLinearMap.toAddMonoidHom.comp (TensorProduct.mk Ω₀ Ω' Li 1).toAddMonoidHom = j' :=
     AddMonoidHom.ext hΦ
   let cst' : c.F →+* Ω' := (algebraMap Ω₀ Ω').comp cst
@@ -100,7 +100,7 @@ theorem GlobalTheory.CompanionTheory.Ar.exists_flagStep : ∀ (E : Type) [Field 
     rw [← hjΦ]
     exact hgf'
   have hg'' : IsCptGen ξ' := hg'
-  have tie₁ := GlobalTheory.T.coords_added_projective X X' Ω₀ Ω' ξ ξ' f' K J y N x' hall htie htie' hdom
+  have tie₁ := _root_.GlobalTheory.CompanionTheory.Ar.FlagStep.TieBlocks.tie_blocks X X' Ω₀ Ω' ξ ξ' f' K J y N x' hall htie htie' hdom
   have snc₁ := _root_.GlobalTheory.CompanionTheory.Ar.SncPull.isSncModel_pull X X' Ω₀ Ω' ξ ξ' f' K J y N x' D.dim bd _ _ hall hall' htie tie₁ hdom hsm halg htop hsnc
   rw [_root_.GlobalTheory.CompanionTheory.Ar.FlagStep.dim_add_card_strictLower E H D l c] at snc₁
   refine ⟨Ω', inferInstance, inferInstance, inferInstance, Unit ⊕ K, inferInstance, addJ J N, inferInstance,
@@ -139,7 +139,7 @@ theorem GlobalTheory.CompanionTheory.Ar.exists_flagStep : ∀ (E : Type) [Field 
     exact _root_.GlobalTheory.CompanionTheory.Ar.FlagStep.eigLat_isFlagVBOn_of_pull_char0 E H l c X X' t t' f' Ω₀ Ω' ξ ξ' cst Li Li' M M' ρ ρ' L j' (labelRk D) (fun s k => Φ (b₁ s k)) hg hg'
       hdom hact hact' hi₀ hi₁ hLeq hj₅ heig' hfl' s
   · intro z w hw
-    have hw₁ := GlobalTheory.T.complex_coords_added X X' Ω₀ Ω' ξ ξ' f' K J y N x' z w hall htie hg'' hall' hdom hw
+    have hw₁ := _root_.GlobalTheory.CompanionTheory.Ar.FlagStep.CoordsRestrict.coordsAt_restrict X X' Ω₀ Ω' ξ ξ' f' K J y N x' z w hall htie hg'' hall' hdom hw
     have hne : ∀ k, ∃ i, w ⟨k, i⟩ ≠ 0 := fun k => (hw.1 k).imp fun _ h => h.ne_zero
     have hne' : ∀ k, ∃ i, w (addV J N ⟨k, i⟩) ≠ 0 := fun k => (hw₁.1 k).imp fun _ h => h.ne_zero
     rw [EigBase.mem_mcPts_rename (addV J N) bd w hne hne']

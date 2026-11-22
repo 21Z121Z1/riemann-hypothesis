@@ -1,6 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IpLEqZeroOfMemSpan
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaugeMeasureMatrixAlgebraSubgroupLocalAsymptoticStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaugeMeasureMatrixAlgebraSubgroupLocalAsymptotic
+import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.SameKindIsometric
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurePreservingTriangularShearStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TendstoVolumeSublevelDivPowStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.VolumeProductOverGradingLayers
@@ -97,7 +98,7 @@ theorem measurePreserving_coord {m : ℕ} {A : ℕ → Submodule ℝ (Matrix (Fi
       rw [Measure.map_apply hσc.measurable
         (isClosed_le continuous_hs_sub_one.sqrt continuous_const).measurableSet]
       rfl
-  have heq := (GlobalTheory.T.gaugeMeasure_matrixAlgebraSubgroup_local_asymptotics n ε (A 0) d E hmul0 hE hsp0 ν hν).2.2.1 _ hμ
+  have heq := (_root_.GlobalTheory.GaugeSubLoc.gauge_local_asymptotics n ε (A 0) d E hmul0 hE hsp0 ν hν).2.2.1 _ hμ
   refine ⟨(continuous_coord E).measurable, ?_⟩
   rw [← heq, Measure.map_map (continuous_coord E).measurable hσc.measurable]
   have : (fun (g : UJ ε) (i : Fin d) => ipL (E i) (uMat g - 1)) ∘ σ = id := by

@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsEquivStdSymp
 import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.ExistsStarNormLEOfIsCMField
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsThetaPtDownStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsThetaPtDown
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsLevelOfFull
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsTateIsoMoveStatement
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsLimitPointTateIsoSequenceStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsLimitPointTateIsoSequence
 import Development.AbelianVarietyTheory.Definitions.Degenerations.CharZeroOfIsPrimitiveRoot
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry NumberField
 open scoped CategoryTheory.Obj BigOperators
@@ -53,7 +53,7 @@ theorem theta_down (hL : Laws) {K : Type} [Field K] [IsAlgClosed K] (o : Full D 
   have e : ∀ a, o.I.ev ((r * m) ^ 2) (r • a) ^ r = o.I.ev (m ^ 2) a := fun a => by
     rw [ev_nsmul, ← pow_mul, ← o.I.tower (m ^ 2) (r * r) (by positivity) (by positivity)]
     congr 2; ring
-  have h₁ := GlobalTheory.T.isThetaPt_pow_of_isThetaPt_mul hL K o.P r m D.La _ _ (fun a => by
+  have h₁ := _root_.GlobalTheory.ThetaNest.isThetaPt_down hL K o.P r m D.La _ _ (fun a => by
     rw [e]; exact (o.I.onto _ (by positivity) _).2 ⟨a, rfl⟩) (isThetaPt_comp h fun a => r • a)
   have h₂ := isThetaPt_mul (fnOf ((c⁻¹ : Kˣ) : K)) ((c⁻¹).isUnit.map _) h₁
   simp only [e] at h₂
@@ -143,7 +143,7 @@ theorem exists_full_all (hL : Laws) (h₁ : ThetaPtDeterminesSt) (h₂ : EndDete
   choose φ hφ hact using fun j => hJ (J + 2) (by omega) K (o j) (o 0) _
     ((ze' j _ (by omega)).trans (ze' 0 _ le_rfl).symm) (th j _ (by omega)) (th 0 _ le_rfl)
   choose I hIζ _ hI using fun j => GlobalTheory.T.exists_tateIso_of_isPolIso hL E H D K (o j) (o 0) (φ j) (hφ j) (hact j)
-  obtain ⟨I', hI'⟩ := GlobalTheory.T.exists_limitPoint_tateIso_sequence E H D K _ _ _ I
+  obtain ⟨I', hI'⟩ := _root_.GlobalTheory.Ex.TateLimit.exists_limit E H D K _ _ _ I
   refine ⟨{ o 0 with I := I' }, hρ 0, fun i => ⟨?_, ?_⟩⟩
   · obtain ⟨j, hj, -, e⟩ := hI' _ (hp i) i
     exact e.trans ((congrFun (hIζ j) _).trans (ze j i (by omega)))

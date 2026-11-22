@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Geometrica
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineBundlePowSectionsRationalFunctionsLoci
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedSubsetFiniteFibresIsAffineFiniteInt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAmplePowerLiftOfNonvanishingOnClosed
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNowhereZeroSectionLineBundlePowFiniteIntStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNowhereZeroSectionLineBundlePowFiniteInt
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology MeasureTheory
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
 open GlobalTheory GlobalTheory.ArInt GlobalTheory.CxPts GlobalTheory.Cartier GlobalTheory.VolBr GlobalTheory.HSAmp
@@ -18,7 +18,7 @@ theorem exists_pow_section_nonvanishing_on_closed : ∀ (k : Type) [CommRing k] 
   haveI := hAff
   haveI := ReducedSubgroup.isReduced_subscheme_vanishingIdeal Z
   let i := (Scheme.IdealSheafData.vanishingIdeal Z).subschemeι
-  obtain ⟨n, s, hn, hs⟩ := GlobalTheory.T.exists_nowhereZero_section_lineBundle_pow_finite_int _ hFin (P.L.B.pull i) (LB.isLB_pull hA.isLB i)
+  obtain ⟨n, s, hn, hs⟩ := _root_.GlobalTheory.PowNowhereZero.main _ hFin (P.L.B.pull i) (LB.isLB_pull hA.isLB i)
   obtain ⟨N, u, hN, hu⟩ := _root_.GlobalTheory.LiftAmple.exists_sec_nonzero_on_closed k X p D hX P.L.B hA _ i n s hn hs
   obtain ⟨f, hf, hfu⟩ := (_root_.GlobalTheory.HSAmp.pow_sec_dict k X p P N).1 u
   refine ⟨N, hN, f, hf, ?_⟩

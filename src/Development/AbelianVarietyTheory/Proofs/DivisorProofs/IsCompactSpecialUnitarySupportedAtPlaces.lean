@@ -1,9 +1,11 @@
 import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.NotIsCompactUnivFv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousPlaceExtensionByZeroTensorOfPlaceStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryEquationBaseChangeAlgHomStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdempotentAdeleOfPlacesMulEqSumComponentsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsClosedSpecialUnitarySupportedAtPlacesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryEquationBaseChangeAlgHom
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModerateGrowthOfHasCompactSupport
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosureDivMem
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdempotentAdeleOfPlacesMulEqSumComponents
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsClosedSpecialUnitarySupportedAtPlaces
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCompactSpecialUnitarySupportedAtPlacesTer
 import GroundTheory.GlobalFields.LocalAtPlace
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousSingleV
@@ -55,7 +57,7 @@ theorem isCompact_SUSupp_of_bounded : ∀ (F E : Type) [Field F] [NumberField F]
   have hX : IsCompact X :=
     ((((Set.toFinite _).isCompact).image (continuous_id.mul continuous_const)).add
       (hsum _ _ fun w _ => (hC₁ w).image (GlobalTheory.T.continuous_placeExtensionByZero_tensor_of_place _))).add (hsum _ _ fun v _ => (hC₂ v).image (GlobalTheory.T.continuous_placeExtensionByZero_tensor_of_place _))
-  refine GlobalTheory.T.isCompact_specialUnitarySupportedAtPlaces σ J ε X hX (GlobalTheory.T.isClosed_specialUnitarySupportedAtPlaces σ J ε) fun g hg i j => ?_
+  refine GlobalTheory.T.isCompact_specialUnitarySupportedAtPlaces σ J ε X hX (_root_.GlobalTheory.SUSuppClosed.isClosed_SUSupp σ J ε) fun g hg i j => ?_
   have hu : Formalism.UG.cT (sigR (AF F) σ) ((HA.mat (AF F) σ J g).1 : Matrix (Fin M) (Fin M) (AF F ⊗[F] E)) *
       JR (AF F) J * ((HA.mat (AF F) σ J g).1 : Matrix (Fin M) (Fin M) (AF F ⊗[F] E)) = JR (AF F) J := by
     let g' : HR (AF F) σ J := g
@@ -66,15 +68,15 @@ theorem isCompact_SUSupp_of_bounded : ∀ (F E : Type) [Field F] [NumberField F]
     have := hg.2 i j
     simpa only [Matrix.sub_apply] using this
   have hdec : a = δ * (1 - e) + e * a := by linear_combination (-1 : AF F ⊗[F] E) * hfix
-  rw [hdec, GlobalTheory.T.idempotentAdeleOfPlaces_mul_eq_sum_components S₁ S₂ ε hε a, ← add_assoc]
+  rw [hdec, _root_.GlobalTheory.PlaceIdemSum.idem_mul_eq_sum S₁ S₂ ε hε a, ← add_assoc]
   refine Set.add_mem_add (Set.add_mem_add ⟨δ, ?_, rfl⟩ (Set.finsetSum_mem_finsetSum _ _ _ fun w hw => ⟨_, ?_, rfl⟩))
     (Set.finsetSum_mem_finsetSum _ _ _ fun v hv => ⟨_, ?_, rfl⟩)
   · rw [hδ, Matrix.one_apply]
     split_ifs
     · exact Or.inr rfl
     · exact Or.inl rfl
-  · exact hC₁' w hw _ (GlobalTheory.T.unitaryEquation_baseChange_algHom σ J _ _ hu) i j
-  · exact hC₂' v hv _ (GlobalTheory.T.unitaryEquation_baseChange_algHom σ J _ _ hu) i j
+  · exact hC₁' w hw _ (_root_.GlobalTheory.unitaryEq_baseChange σ J _ _ hu) i j
+  · exact hC₂' v hv _ (_root_.GlobalTheory.unitaryEq_baseChange σ J _ _ hu) i j
 
 end GlobalTheory.SUSuppCompact
 

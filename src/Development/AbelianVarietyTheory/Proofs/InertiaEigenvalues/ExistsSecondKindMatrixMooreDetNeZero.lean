@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TwistStep
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DeRhamPeriodRingFieldTPowFiltrationUnits
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsNonzeroFrobVectorResidueZeroProof
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MooreDeterminantCrisPlusNeZero
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BcrisPlusFrobeniusStableSubringInFilZeroStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BcrisPlusFrobeniusStableSubringInFilZero
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqZeroOfFrobeniusPeriodicMemDeRhamFilZero
 open Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.WeaklyAdmissibleFiltrations GlobalTheory.Pst GlobalTheory.PMon TensorProduct
 open scoped Formalism.Per
@@ -198,7 +198,7 @@ theorem span_props {AI : LocAinf l P} (T : LocTied l P AI) (h : ℕ) (a : Fin h 
     (haP : ∀ j, Plus T (a j)) (haφ : ∀ j, P.φB^[h] (a j) = (l : P.R.B) * a j) (x : P.R.B)
     (hx : x ∈ Submodule.span ℚ_[l] (Set.range a)) :
     Plus T x ∧ P.φB^[h] x = (l : P.R.B) * x := by
-  have hp := GlobalTheory.T.bcrisPlus_frobeniusStable_subring_in_filZero l P AI T
+  have hp := _root_.GlobalTheory.PMon.CrisPlus.plus_props l P AI T
   induction hx using Submodule.span_induction with
   | mem x hx =>
     obtain ⟨j, rfl⟩ := hx
@@ -228,7 +228,7 @@ theorem dep_false {AI : LocAinf l P} (T : LocTied l P AI) (h : ℕ) (hh : 2 ≤ 
     (haφ : ∀ j, P.φB^[h] (a j) = (l : P.R.B) * a j)
     (hs : ∀ i : Fin h, ∑ j, lam j * ev P i (a j) ∈ Fil P 1) (hli : ¬ LinearIndependent ℚ_[l] a) : False := by
   have hB := _root_.GlobalTheory.PMon.bdR_tied l P AI T
-  have hp := GlobalTheory.T.bcrisPlus_frobeniusStable_subring_in_filZero l P AI T
+  have hp := _root_.GlobalTheory.PMon.CrisPlus.plus_props l P AI T
   let V := Submodule.span ℚ_[l] (Set.range a)
   haveI : FiniteDimensional ℚ_[l] V := FiniteDimensional.span_of_finite ℚ_[l] (Set.finite_range a)
   let k := Module.finrank ℚ_[l] V
@@ -335,7 +335,7 @@ namespace GlobalTheory.SecondKind
 theorem exists_secondKind : ∀ (l : ℕ) [Fact l.Prime] (P : LocPrime l) (AI : LocAinf l P) (T : LocTied l P AI) (h : ℕ), 2 ≤ h → ∀ lam : Fin h → P.R.BdR, (∀ j, lam j ∈ Fil P 0) → (∀ c : Fin h → ℚ_[l], ∑ j, c j • lam j ∈ Fil P 1 → c = 0) → ∃ a : Fin h → P.R.B, (∀ j, P.φB^[h] (a j) = (l : P.R.B) * a j) ∧ (∀ (i : ℕ) j, ev P i (a j) ∈ Fil P 0) ∧ (∀ i : Fin h, ∑ j, lam j * ev P i (a j) ∈ Fil P 1) ∧ (Matrix.of fun i j : Fin h => P.φB^[i] (a j)).det ≠ 0 := by
   intro l _ P AI T h hh lam hlam hind
   obtain ⟨a, ha0, haP, haφ, hs⟩ := _root_.GlobalTheory.PMon.exII_holds l P AI T h hh lam hlam hind
-  refine ⟨a, haφ, fun i j => (GlobalTheory.T.bcrisPlus_frobeniusStable_subring_in_filZero l P AI T).2.1 _ (haP j) i, hs, ?_⟩
+  refine ⟨a, haφ, fun i j => (_root_.GlobalTheory.PMon.CrisPlus.plus_props l P AI T).2.1 _ (haP j) i, hs, ?_⟩
   by_cases hli : LinearIndependent ℚ_[l] a
   · exact _root_.GlobalTheory.PMon.moore_statement l P AI T h h le_rfl a haP haφ hli
   · exact (dep_false P T h hh lam hlam hind a ha0 haP haφ hs hli).elim

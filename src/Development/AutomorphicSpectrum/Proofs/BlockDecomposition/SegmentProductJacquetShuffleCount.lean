@@ -1,8 +1,9 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.ZelevinskyCosocles.LUnlinkedComm
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContragredientProductIrreducibleStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentRepJacquetWordMultiplicityStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContragredientProductIrreducible
+import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.LSegJacquet
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentRepJacquetWordMultiplicity
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalCellMultiplicityZeroOfSplitColumnStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalCellMultiplicityOfColouringStatement
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.GeometricLemma
@@ -99,7 +100,7 @@ theorem GlobalTheory.CompanionTheory.FineProd.jmL_prodIrr : ∀ {k : Type} [Fiel
     · obtain ⟨c, hcS, hbc⟩ := hb
       rw [GlobalTheory.T.cuspidal_cell_multiplicity_of_colouring x W b.1 (hr b) (hc b) c (fun i j => by rw [hbc]; rfl)]
       refine Finset.prod_eq_one fun i _ => ?_
-      refine ((GlobalTheory.T.segment_rep_jacquet_word_multiplicity hA hJ (Γ i) (x i).rep (hΓ i) (sub W c i) fun w hw => ?_).1
+      refine ((_root_.GlobalTheory.CompanionTheory.FineL.jmL_cusp_word hA hJ (Γ i) (x i).rep (hΓ i) (sub W c i) fun w hw => ?_).1
         ((Finset.mem_filter.1 hcS).2 i))
       obtain ⟨p, -, rfl⟩ := List.mem_map.1 hw
       exact hW _ (List.get_mem _ _)
@@ -133,7 +134,7 @@ theorem GlobalTheory.CompanionTheory.FineProd.jmL_prodIrr : ∀ {k : Type} [Fiel
         obtain ⟨i, hi⟩ := hex2
         rw [GlobalTheory.T.cuspidal_cell_multiplicity_of_colouring x W b.1 (hr b) (hc b) c (fun i j => by rw [hbc]; rfl)]
         refine Finset.prod_eq_zero (Finset.mem_univ i) ?_
-        refine (GlobalTheory.T.segment_rep_jacquet_word_multiplicity hA hJ (Γ i) (x i).rep (hΓ i) (sub W c i) (fun w hw => ?_)).2 hi
+        refine (_root_.GlobalTheory.CompanionTheory.FineL.jmL_cusp_word hA hJ (Γ i) (x i).rep (hΓ i) (sub W c i) (fun w hw => ?_)).2 hi
         obtain ⟨p, -, rfl⟩ := List.mem_map.1 hw
         exact hW _ (List.get_mem _ _)
   rw [jmL, dif_pos hWd]

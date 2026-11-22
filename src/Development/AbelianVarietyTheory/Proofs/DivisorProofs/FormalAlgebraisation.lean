@@ -1,11 +1,11 @@
 import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.FormalAlgebraisation
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalAlgebraisationMorphismsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalAlgebraisationMorphisms
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraisationProperFormalSchemeAmpleBundle
 
 namespace GlobalTheory
 
 theorem formalAlgebraisation : GlobalTheory.Published.FormalAlgebraisation :=
-  ⟨GlobalTheory.T.formalAlgebraisation_morphisms', _root_.GlobalTheory.FormalAlg.formalAlgebraisation_schemes⟩
+  ⟨_root_.GlobalTheory.FormalAlgMorphisms.formalAlgebraisation_morphisms, _root_.GlobalTheory.FormalAlg.formalAlgebraisation_schemes⟩
 
 end GlobalTheory

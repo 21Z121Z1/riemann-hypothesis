@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsRead
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ContinuousCharactersLocallyConstantNonarchLocalF
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.KernelReductionExtendEvaluatedIntegrated
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatFactorReductionKernelAllNonFreeUnreadEntriesStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatFactorReductionKernelAllNonFreeUnreadEntries
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatFactorReductionKernelIntegratesFreeEntries
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PartialReductionEqZeroOfFlatMapColumnZero
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsFactorThroughFlatMapFourierJacobiColumn
@@ -118,7 +118,7 @@ theorem GlobalTheory.FlatFactor.flCol_factor : ∀ (k : Type) [Field k] [Valuati
         rw [← mul_assoc, hm, ch_add_mat, show -ch E + (ch t + ch E) = ch t by ring]
       rw [hT, map_smul, h3, smul_smul, ← Circle.coe_mul, ← AddChar.map_add_eq_mul, neg_add_cancel,
         AddChar.map_zero_eq_one, Circle.coe_one, one_smul]
-  have hS2 := GlobalTheory.T.flatFactorReduction_kernel_all_nonFreeUnread_entries k ψ ν hψc hψ1 hν n n' c ρ M L' hc hTw hS1
+  have hS2 := _root_.GlobalTheory.FlatFactor.LowStage.kerRed_evAll k ψ ν hψc hψ1 hν n n' c ρ M L' hc hTw hS1
   have hS3 := _root_.GlobalTheory.FlatFactor.UpStage.kerRed_itFree k ψ ν hψc hψ1 hν n n' c ρ M L' hc hTw hS2
   refine _root_.GlobalTheory.LocFlat.flCol_factor k ψ ν hψc hν n n' c (ρ + 1) (by omega) (by omega) M L ?_
   intro Φ hΦ

@@ -6,8 +6,8 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TruncSum
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteProductDifferenceBoundStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TailSumOverPlacesSmall
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MultipliableLocalFactors
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalFactorSandwichApproxStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EulerProductConvergenceBoundStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalFactorSandwichApprox
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EulerProductConvergenceBound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TruncatedSumLimit
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalHaarMeasureSingleton
 
@@ -69,7 +69,7 @@ theorem truncSum_tendsto (hE : Equi) (hC : CountBd) (F : Type) [Field F] [Number
     intro v
     by_cases hv : v ∈ S
     · exact ⟨g v, g v, fun _ => ⟨rfl, rfl⟩, fun h => absurd hv h⟩
-    · obtain ⟨a, b, h⟩ := GlobalTheory.T.local_factor_sandwich_approx F v (lam v) C (g v) (hlam v) (hg0 v) (hgo v hv) e he
+    · obtain ⟨a, b, h⟩ := _root_.GlobalTheory.CompanionTheory.Mass.MeanV.Sandwich.exists_sandwich F v (lam v) C (g v) (hlam v) (hg0 v) (hgo v hv) e he
       exact ⟨a, b, fun h' => absurd h' hv, fun _ => h⟩
   choose lo up hS hO using hex
   have hcl : ∀ v ∈ T, Continuous (lo v) ∧ HasCompactSupport (lo v) := by
@@ -187,7 +187,7 @@ theorem err_bound (hC : CountBd) (F : Type) [Field F] [NumberField F] (hF : IsTo
     ∃ T₀ : Finset (HeightOneSpectrum (𝓞 F)), S ⊆ T₀ ∧ ∀ T, T₀ ⊆ T → ∀ δ : ℝ, 0 < δ →
       |fullSum θ G g δ - truncSum θ G T g δ| ≤ η := by
   obtain ⟨N, hN, hNx⟩ := _root_.GlobalTheory.CompanionTheory.Mass.MeanV.exists_common_denominator F S (fun v => tsupport (g v)) (fun v hv => (hgS v hv).2)
-  obtain ⟨C', hC'0, hcount⟩ := GlobalTheory.T.euler_product_convergence_bound hC F hF θ hθ (tsupport G) hGc N hN
+  obtain ⟨C', hC'0, hcount⟩ := _root_.GlobalTheory.CompanionTheory.Mass.SumDev.sum_bounded_prod hC F hF θ hθ (tsupport G) hGc N hN
   obtain ⟨MG, hMG⟩ := hGc.exists_bound_of_continuous hG
   have hmex : ∀ v, ∃ m : ℝ, 0 ≤ m ∧ (v ∈ S → ∀ s, g v s ≤ m) := by
     intro v

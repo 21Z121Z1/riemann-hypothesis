@@ -3,13 +3,13 @@ import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsSmoothVec
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LieAlgebraOfLinearGroupClosed
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.SmoothVectorsInvariantSubspace
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DerivedActionOfSmoothVector
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DerivedActionAdditiveStatement
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DerivedActionCommutatorStatement
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DerivedActionAdditive
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DerivedActionCommutator
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.HermitianFormLieWordGrowth
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.NelsonExistsWordGrowthConstantStatement
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.NelsonExistsWordGrowthConstant
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.SmoothVectorHermitianFormGrowth
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LinearIndependentCoefficientNormBoundStatement
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LieBasisCoordinateGrowthBoundStatement
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LinearIndependentCoefficientNormBound
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LieBasisCoordinateGrowthBound
 
 noncomputable section
 
@@ -52,7 +52,7 @@ theorem dRep_sum {n : ℕ} {G : Set (Matrix (Fin n) (Fin n) ℂ)} {H : Type} [No
       rw [Finset.sum_insert hi, Finset.sum_insert hi]
       have hri := hl.2.1 (r i) _ (hb i)
       refine ⟨hl.1 _ _ hri ih.1, ?_⟩
-      rw [(GlobalTheory.T.derived_action_additive hG hrep hw hw hri ih.1).1, ih.2, dRep_real_smul hG hrep hw (hb i)]
+      rw [(_root_.GlobalTheory.CompanionTheory.Hypotheses₂.HCA.SmoothLin.dRep_linear hG hrep hw hw hri ih.1).1, ih.2, dRep_real_smul hG hrep hw (hb i)]
   exact (key Finset.univ).2
 
 theorem word_bound_of_delta : ∀ {n : ℕ} {G : Set (Matrix (Fin n) (Fin n) ℂ)} {H : Type} [NormedAddCommGroup H] [InnerProductSpace ℂ H] [CompleteSpace H] {π : Matrix (Fin n) (Fin n) ℂ → (H →L[ℂ] H)} (hG : IsLinRed G) (hrep : Formalism.QuantumDeterminants.IsCRepOn G π) (hc : ∀ v, ContinuousOn (fun g => π g v) G) (hQ : AlmostIsom G π) {d : ℕ} (b : Fin d → Matrix (Fin n) (Fin n) ℂ) (hb : ∀ i, b i ∈ HCSS.lieOf G) (hli : LinearIndependent ℝ b) (hsp : ∀ X ∈ HCSS.lieOf G, ∃ r : Fin d → ℝ, X = ∑ i, r i • b i) (Y : Submodule ℂ H) [FiniteDimensional ℂ Y] (hYs : ∀ y ∈ Y, IsSmoothVec G π y) (hYd : ∀ y ∈ Y, ∑ i, dRep π (b i) (dRep π (b i) y) ∈ Y), ∀ v ∈ Y, WordBound G π v := by
@@ -67,15 +67,15 @@ theorem word_bound_of_delta : ∀ {n : ℕ} {G : Set (Matrix (Fin n) (Fin n) ℂ
       smul_mem' := fun c x hx => hssmul c x hx }
   let Xf : Fin d → Module.End ℂ S := fun i =>
     { toFun := fun x => ⟨dRep π (b i) x, (_root_.GlobalTheory.CompanionTheory.Hypotheses₂.HCA.hasDerivAt_dRep_and_isSmoothVec hG hrep x.2 (hb i)).2⟩
-      map_add' := fun x y => Subtype.ext (GlobalTheory.T.derived_action_additive hG hrep x.2 y.2 (hb i) (hb i)).2.1
-      map_smul' := fun c x => Subtype.ext ((GlobalTheory.T.derived_action_additive hG hrep x.2 x.2 (hb i) (hb i)).2.2 c) }
+      map_add' := fun x y => Subtype.ext (_root_.GlobalTheory.CompanionTheory.Hypotheses₂.HCA.SmoothLin.dRep_linear hG hrep x.2 y.2 (hb i) (hb i)).2.1
+      map_smul' := fun c x => Subtype.ext ((_root_.GlobalTheory.CompanionTheory.Hypotheses₂.HCA.SmoothLin.dRep_linear hG hrep x.2 x.2 (hb i) (hb i)).2.2 c) }
   have hXc : ∀ i (x : S), ((Xf i x : S) : H) = dRep π (b i) x := fun _ _ => rfl
   have hlie := _root_.GlobalTheory.CompanionTheory.Hypotheses₂.HCA.lieOf_isLieSubalgebra hG
   choose r hr using fun (p : Fin d × Fin d) => hsp _ (hlie.2.2.1 (b p.1) (b p.2) (hb p.1) (hb p.2))
   have hcomm : ∀ i j, Xf i * Xf j - Xf j * Xf i = ∑ l, ((r (i, j) l : ℝ) : ℂ) • Xf l := by
     intro i j
     ext u
-    have h1 := GlobalTheory.T.derived_action_commutator hG hrep u.2 (hb i) (hb j)
+    have h1 := _root_.GlobalTheory.CompanionTheory.Hypotheses₂.HCA.Bracket.smooth_bracket hG hrep u.2 (hb i) (hb j)
     rw [show b i * b j - b j * b i = _ from hr (i, j), dRep_sum hG hrep b hb _ u.2] at h1
     simp only [LinearMap.sub_apply, Module.End.mul_apply, LinearMap.sum_apply, LinearMap.smul_apply,
       Submodule.coe_sub, Submodule.coe_sum, Submodule.coe_smul, hXc]
@@ -124,7 +124,7 @@ theorem word_bound_of_delta : ∀ {n : ℕ} {G : Set (Matrix (Fin n) (Fin n) ℂ
   let K : ℝ := Real.sqrt (Q v v).re / Real.sqrt m
   have hK : 0 ≤ K := by positivity
   have hsm : 0 < Real.sqrt m := Real.sqrt_pos.2 hm
-  refine GlobalTheory.T.lie_basis_coordinate_growth_bound hG hrep b hb hsp _ (GlobalTheory.T.linearIndependent_coefficient_norm_bound b hli).choose_spec.1 (GlobalTheory.T.linearIndependent_coefficient_norm_bound b hli).choose_spec.2
+  refine _root_.GlobalTheory.CompanionTheory.Hypotheses₂.HCA.WordExpand.wordBound_of_basis hG hrep b hb hsp _ (_root_.GlobalTheory.CompanionTheory.Hypotheses₂.HCA.Coord.sum_abs_coord_le_mnorm b hli).choose_spec.1 (_root_.GlobalTheory.CompanionTheory.Hypotheses₂.HCA.Coord.sum_abs_coord_le_mnorm b hli).choose_spec.2
     (fun r w hw => dRep_sum hG hrep b hb r hw) hvs (C * (K + 1)) (by positivity) ?_
   intro l
   have h1 := hN l vS hvV

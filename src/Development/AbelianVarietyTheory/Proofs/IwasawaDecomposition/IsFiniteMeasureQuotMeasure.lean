@@ -5,10 +5,10 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsMulRightInvari
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.DefClassNum
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IdeleClassFiniteness.BorelGL
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IdeleClassFiniteness.LatticeIdealNonzero
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAdelicGLHomeomorphInfiniteFiniteStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAdelicGLHomeomorphInfiniteFinite
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IwasawaDecompositionFiniteAdelesGL
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StrongApproximationUpperUnitriangularFiniteAdeleStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsCompactIntegralGLFiniteAdelesStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StrongApproximationUpperUnitriangularFiniteAdele
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsCompactIntegralGLFiniteAdeles
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLatticeStabilizerConjFiniteAdeleGLIntegral
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFiniteMeasureReductionDomainInfinityStatement
 
@@ -57,13 +57,13 @@ theorem isFiniteMeasure_quotMeasure (μ : Measure (GA E a)) [μ.IsHaarMeasure] :
   haveI : BorelSpace (GL (Fin a) (Af E)) := ⟨rfl⟩
   obtain ⟨_, _⟩ := lcsc_GL (Cinf E) a
   obtain ⟨_, _⟩ := lcsc_GL (Af E) a
-  obtain ⟨e, he⟩ := GlobalTheory.T.exists_adelicGL_homeomorph_infinite_finite E a
-  obtain ⟨S, hS⟩ := PIW.ClassFinD.borelKGL_of _root_.GlobalTheory.IwasawaFinAd.iwasawaAf GlobalTheory.T.strongApproximation_upperUnitriangular_finiteAdeles PIW.ClassFinD.idele_class_finite E a
+  obtain ⟨e, he⟩ := _root_.GlobalTheory.CuspRep.GASplit.exists_split E a
+  obtain ⟨S, hS⟩ := PIW.ClassFinD.borelKGL_of _root_.GlobalTheory.IwasawaFinAd.iwasawaAf _root_.GlobalTheory.UnipApproxGL.unipApprox PIW.ClassFinD.idele_class_finite E a
   choose Λ hΛ hΛK using fun s => _root_.GlobalTheory.StabLat.exists_lattice_stab_conj E a s
   choose Ω hΩ hcov using fun s => GlobalTheory.T.exists_finite_measure_reduction_domain_infinity E a (Λ s) (hΛ s) (Measure.haar : Measure (GL (Fin a) (Cinf E)))
   refine ⟨?_⟩
   rw [quotMeasure_univ (isFundamentalDomain_stdDom (latticeGL E a) μ)]
-  refine GlobalTheory.Mem.VolFin.measure_lt_top_of_cover e (latticeGL E a) μ S (PIW.ClassFinD.KGL E a) (GlobalTheory.T.isCompact_integralGL_finiteAdeles E a) Ω hΩ
+  refine GlobalTheory.Mem.VolFin.measure_lt_top_of_cover e (latticeGL E a) μ S (PIW.ClassFinD.KGL E a) (_root_.GlobalTheory.isCompact_KGL E a) Ω hΩ
     (fun g => ?_) _ (isFundamentalDomain_stdDom _ μ)
   obtain ⟨γ, s, hs, k, hk, hx⟩ := hS (GeneralLinearGroup.map (pFin E) g)
   obtain ⟨η, hη, n, hn⟩ := hcov s (GeneralLinearGroup.map (pInf E) (ratGL E a γ⁻¹ * g))

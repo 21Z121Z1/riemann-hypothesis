@@ -10,8 +10,8 @@ import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.LintegralFibSum
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterBridgeI
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MixedDensityNonnegOffNullSet
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LocDensDivJacN
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.VolumeModelCritChartEqZeroStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.ChartIntegralPotentialLocallyFiniteStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.VolumeModelCritChartEqZero
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.ChartIntegralPotentialLocallyFinite
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SmoothLocalPotentialLift
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FiniteFibresOfAnalyticLocalDiffeoStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MeasurableFibreCountOfLocalDiffeo
@@ -25,7 +25,7 @@ theorem push_chart_integrals : ∀ (K : Type) [Fintype K] (ι : K → Type) [∀
   have hS : ∀ j, volume ((M.atlas.chart j).target ∩ (M.atlas.chart j).symm ⁻¹' modelBad M Q (Yᶜ ∪ Z)) = 0 := by
     intro j
     rw [modelBad, Set.preimage_union, Set.inter_union_distrib_left]
-    exact measure_union_null (hnull j) (GlobalTheory.T.volume_modelCrit_chart_eq_zero K ι P n M Q j hP hQ)
+    exact measure_union_null (hnull j) (_root_.GlobalTheory.CompanionTheory.Ar.Giv.Push.Crit.modelCrit_null K ι P n M Q j hP hQ)
   have hq := modelQ_good_of_notMem M Q (Yᶜ ∪ Z)
   have hfin : ∀ y, (modelQ M Q ⁻¹' {y} \ modelBad M Q (Yᶜ ∪ Z)).Finite := fun y =>
     (ModelFibreFinite.proof K ι P n M Q hP hQ y).subset (Set.sdiff_subset_sdiff_right Set.subset_union_right)
@@ -52,7 +52,7 @@ theorem push_chart_integrals : ∀ (K : Type) [Fintype K] (ι : K → Type) [∀
     rw [MeasOff.restrict_target_eq M.atlas hYnull j]
     exact ((_root_.GlobalTheory.CompanionTheory.Ar.Giv.Push.DCont.locDens_continuousOn_of_sections K ι P n M Y c B Φ j hY hΦs hΦt).aestronglyMeasurable
       (MeasOff.isOpen_ov M.atlas hY j).measurableSet)
-  have hae := GlobalTheory.T.chart_integral_potential_locally_finite K ι P n M Q Y Z N c B Φ g G₀ hP hQ hY hnull hN hΦs hΦt hg
+  have hae := _root_.GlobalTheory.CompanionTheory.Ar.Giv.Push.fibre_term_ae K ι P n M Q Y Z N c B Φ g G₀ hP hQ hY hnull hN hΦs hΦt hg
   have e1 : ∀ᵐ y, ∑ᶠ w ∈ fibre P Q y, sheetDensity P Q (fun i z => c i * Real.log ((B i).h z)) g y w =
       ∑ᶠ x ∈ modelQ M Q ⁻¹' {y} \ modelBad M Q (Yᶜ ∪ Z), G₀ x * pushDens M.atlas Φ (modelQ M Q) x := by
     filter_upwards [hae] with y ⟨W, hW, hf, ht⟩

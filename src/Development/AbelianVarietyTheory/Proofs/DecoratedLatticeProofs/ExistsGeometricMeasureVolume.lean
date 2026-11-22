@@ -1,6 +1,6 @@
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.FrameTopAlt
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsHaarAdelicUnitaryProductRealFinite
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicUnitaryRealMulFiniteDecompositionStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicUnitaryRealMulFiniteDecomposition
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsBoxFinitePosProductHaarUnitaryGroups
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsHaarFinitePointsFourierJacobiBessel
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MapWittEmbeddingZeroRankIsHaarMeasure
@@ -34,7 +34,7 @@ theorem common_measure : ∀ (D : D7) (V : HSp D) (T : Type) (K : T → Subgroup
   intro D V T K good hgood μf hμf ν hν
   haveI : SecondCountableTopology (GA D V) := (GlobalTheory.Mem.AdelicGroupTop.adelic_unitary_topology D V).2.1
   obtain ⟨μR, μi, hR, hprod⟩ := _root_.GlobalTheory.AdelicHaarProd.haar_prod D V μf hμf
-  obtain ⟨hdec, hfin⟩ := GlobalTheory.T.adelicUnitary_real_mul_finite_decomposition D V
+  obtain ⟨hdec, hfin⟩ := _root_.GlobalTheory.AdelicSplitParts.split_parts D V
   rcases isEmpty_or_nonempty T with hT | ⟨⟨t₀⟩⟩
   · exact ⟨μR, hR, fun t => isEmptyElim t⟩
   obtain ⟨⟨θ, hθ⟩, hθall⟩ := (hν t₀).2

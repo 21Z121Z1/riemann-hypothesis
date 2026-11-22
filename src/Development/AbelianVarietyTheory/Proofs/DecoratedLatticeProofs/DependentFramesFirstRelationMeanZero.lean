@@ -5,16 +5,16 @@ import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Transv
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.WeilDatumExistence
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TransvectionLemmaOfWittCoreDescent
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsQuasiFam
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlagSubgroupsClosedNormalCocompactStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlagSubgroupsClosedNormalCocompact
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntegralTsumNormalEigenfunctionsEqZero
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MixedThetaSeriesTermsLawsUnipotentRational
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaTermSeriesSummableModerateGrowthUniform
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DependentFrameFirstColumnRelationStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DependentFrameFirstColumnRelation
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsotropicUnipotentRadicalsRationalCocompact
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicUnitaryTopology
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RationalFlagUnipotentIsotropicBlockUnitriangular
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.GramMatrixOfColumnsUnitriangularConjEq
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TransvectionTrivialAfterFlagUnipotentFixingStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TransvectionTrivialAfterFlagUnipotentFixing
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum MeasureTheory IsDedekindDomain NumberField Matrix
 open GlobalTheory.MixModel GlobalTheory.MixPer GlobalTheory.Grow
 open scoped TensorProduct
@@ -34,7 +34,7 @@ theorem dep_frames_mean_zero : ∀ (D : D7), Descent D → ∀ (ψ : AddChar (AF
   have : Countable (Matrix (Fin W.rank) (Fin ρ) D.host.E) :=
     inferInstanceAs (Countable (Fin W.rank → Fin ρ → D.host.E))
   obtain ⟨hLC, hSC, -, -, -, hDisc, hCnt⟩ := GlobalTheory.Mem.AdelicGroupTop.adelic_unitary_topology D V
-  have h56 := GlobalTheory.T.flag_subgroups_closed_normal_cocompact' D V V₀ ρ d
+  have h56 := _root_.GlobalTheory.Unf.FlagSub.flag_subgroups_closed_normal_cocompact D V V₀ ρ d
   haveI : LocallyCompactSpace (flagN d) := h56.1.locallyCompactSpace
   haveI : SecondCountableTopology (flagN d) := TopologicalSpace.Subtype.secondCountableTopology _
   haveI : vN.ν.IsHaarMeasure := vN.unit.1
@@ -80,7 +80,7 @@ theorem dep_frames_mean_zero : ∀ (D : D7), Descent D → ∀ (ψ : AddChar (AF
       (∀ i k, k < i → u i k = 0) → ∀ x, Pj x ↔ Pj (x * u) := by
     intro u u' huu' hu'u hdiag htri x
     have hG := _root_.GlobalTheory.Unf.gramQ_unitri D W ρ x₀ hB u hdiag htri
-    refine and_congr ⟨fun h => by rw [gramQ_mul, h, hG], fun h => ?_⟩ ((GlobalTheory.T.dependent_frame_first_column_relation D.host.E W.rank ρ x).2.2 j u hdiag htri)
+    refine and_congr ⟨fun h => by rw [gramQ_mul, h, hG], fun h => ?_⟩ ((_root_.GlobalTheory.DepFrame.dependent_frame_first_relation D.host.E W.rank ρ x).2.2 j u hdiag htri)
     rw [gramQ_mul, ← hG] at h
     have h' := congrArg (fun M => u'ᴴ * M * u') h
     have e1 : ∀ M : Matrix (Fin ρ) (Fin ρ) D.host.E, u'ᴴ * (uᴴ * M * u) * u' = M := by
@@ -179,7 +179,7 @@ theorem dep_frames_mean_zero : ∀ (D : D7), Descent D → ∀ (ψ : AddChar (AF
       have hm' : m.1 ∈ Nfix d j := Subgroup.mem_subgroupOf.1 hm
       show Th (m.1 * u * n.1) * term ψ d W vS (om (m.1 * u * n.1, 1) Ψ) y.1 =
         a * (Th (m.1 * n.1) * term ψ d W vS (om (m.1 * n.1, 1) Ψ) y.1)
-      rw [hTu m.1 m.2 n.1 n.2, GlobalTheory.T.transvection_trivial_after_flagUnipotentFixing D hDesc ψ V V₀ W ρ d χV χW om hw vS Ψ hΨ j c s0.2.1 v u hform htr y.1 sy.2.2
+      rw [hTu m.1 m.2 n.1 n.2, _root_.GlobalTheory.Unf.transv_trivial_after_Nfix D hDesc ψ V V₀ W ρ d χV χW om hw vS Ψ hΨ j c s0.2.1 v u hform htr y.1 sy.2.2
         m.1 hm' n.1, mul_assoc]
     · push_neg at hc
       exact ⟨1, one_mem _, 0, zero_ne_one, fun x hx => absurd hx (hc x)⟩

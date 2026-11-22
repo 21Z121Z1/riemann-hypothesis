@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.Uniformised
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorRelDimAndDiagonalIsLineBundleStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorRelDimAndDiagonalIsLineBundle
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHarrisTaylorModuliObjectPullback
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsComplexUniformisationHarrisTaylorStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHarrisTaylorObjectOfPeriodStatement
@@ -35,7 +35,7 @@ theorem Model.fineAt_univ : ∀ (p : ℕ) [Fact p.Prime] (D : Datum p) (R : Type
   refine ⟨?_, ?_, ?_⟩
   · intro y hy
     obtain ⟨o, ⟨m⟩⟩ := _root_.GlobalTheory.HTPullEvery.exists_objMap p D R b N M.X (Sp ℂ) M.s (spMap σ) y hy M.univ
-    obtain ⟨h', hL'⟩ := GlobalTheory.T.harrisTaylor_relDim_and_diagonal_isLineBundle p D R b N (Sp ℂ) (spMap σ) o
+    obtain ⟨h', hL'⟩ := _root_.GlobalTheory.HTDim.relDim_and_isLB p D R b N (Sp ℂ) (spMap σ) o
     obtain ⟨D', t, Q, e, hC, hU⟩ := GlobalTheory.T.exists_complexUniformisation_harrisTaylor p D R b N σ ρ o h' hL' hN hNp hty
     obtain ⟨e2, he2⟩ := (tr o y m hy h' hL' D' t Q).1 e hU
     exact ⟨D', t, Q, e2, hC, he2⟩
@@ -49,8 +49,8 @@ theorem Model.fineAt_univ : ∀ (p : ℕ) [Fact p.Prime] (D : Datum p) (R : Type
     have hy' : y' ≫ M.s = spMap σ := hU'.1
     obtain ⟨o1, ⟨m1⟩⟩ := _root_.GlobalTheory.HTPullEvery.exists_objMap p D R b N M.X (Sp ℂ) M.s (spMap σ) y hy M.univ
     obtain ⟨o2, ⟨m2⟩⟩ := _root_.GlobalTheory.HTPullEvery.exists_objMap p D R b N M.X (Sp ℂ) M.s (spMap σ) y' hy' M.univ
-    obtain ⟨h1, hL1⟩ := GlobalTheory.T.harrisTaylor_relDim_and_diagonal_isLineBundle p D R b N (Sp ℂ) (spMap σ) o1
-    obtain ⟨h2, hL2⟩ := GlobalTheory.T.harrisTaylor_relDim_and_diagonal_isLineBundle p D R b N (Sp ℂ) (spMap σ) o2
+    obtain ⟨h1, hL1⟩ := _root_.GlobalTheory.HTDim.relDim_and_isLB p D R b N (Sp ℂ) (spMap σ) o1
+    obtain ⟨h2, hL2⟩ := _root_.GlobalTheory.HTDim.relDim_and_isLB p D R b N (Sp ℂ) (spMap σ) o2
     obtain ⟨e1, he1⟩ := (tr o1 y m1 hy h1 hL1 D' t Q).2 e hU
     obtain ⟨e2, he2⟩ := (tr o2 y' m2 hy' h2 hL2 D'' t' Q').2 e' hU'
     obtain ⟨m12⟩ := _root_.GlobalTheory.HTIso.nonempty_objMap_of_markedIsom p D R b N σ ρ o1 o2 h1 hL1 h2 hL2 D' D'' t t' Q Q' e1 e2 w u hN he1 he2 hw hQ

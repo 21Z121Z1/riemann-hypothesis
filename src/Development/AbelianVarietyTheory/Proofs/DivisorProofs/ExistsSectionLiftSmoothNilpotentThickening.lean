@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.PrimitiveCrystalHodgeLiftClasses
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothSectionLiftNilpotentOfSqZero
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSmoothSectionLiftBasicOpenAffineStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSmoothSectionLiftBasicOpenAffine
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGlobalLiftOfChartLocalLiftsSquareZero
 
 open CategoryTheory AlgebraicGeometry MonoidalCategory CartesianMonoidalCategory MonObj DividedPowers
@@ -22,7 +22,7 @@ theorem exists_section_lift : ∀ (R R₀ : Type) [CommRing R] [CommRing R₀] (
   have hg₀ : g₀ ≫ X.hom = spMap π := by
     simp only [g₀, Category.assoc]; rw [hpb.w, ← Category.assoc, he₀, Category.id_comp]
   let J : Set R := {h | ∃ V : X.left.Opens, IsAffineOpen V ∧ LiftIn π X g₀ h V}
-  have hS2 := GlobalTheory.T.exists_smooth_section_lift_basicOpen_affine R R₀ π hπ hnil X hsm g₀ hg₀
+  have hS2 := _root_.GlobalTheory.SecLift.exists_liftIn R R₀ π hπ hnil X hsm g₀ hg₀
   have hspan : Ideal.span J = ⊤ := by
     by_contra hne
     obtain ⟨N, hN, hJN⟩ := Ideal.exists_le_maximal _ hne
