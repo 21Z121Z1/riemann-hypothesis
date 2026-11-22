@@ -213,7 +213,7 @@ noncomputable section
 
 namespace GlobalTheory.CompanionTheory.WeakHolo
 
-open Metric Set Filter _root_.Topology Complex Real
+open _root_.Metric Set Filter _root_.Topology Complex Real
 
 theorem taylor_two {f : ℂ → ℂ} {U : Set ℂ} (hU : IsOpen U) (hf : DifferentiableOn ℂ f U) {s₀ : ℂ} {r M : ℝ}
     (hr : 0 < r) (hb : closedBall s₀ (3 * r) ⊆ U) (hM : ∀ z ∈ closedBall s₀ (3 * r), ‖f z‖ ≤ M) {η : ℂ}
