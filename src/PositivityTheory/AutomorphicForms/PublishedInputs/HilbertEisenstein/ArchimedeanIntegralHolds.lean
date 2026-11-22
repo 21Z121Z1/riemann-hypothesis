@@ -1,4 +1,4 @@
-import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.ArchInt
+import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Bundle0006
 import GroundTheory.GlobalFields.TateThesis.EulerFactorsArch
 import GroundTheory.GlobalFields.TateThesis.HeckeCharRayClass
 

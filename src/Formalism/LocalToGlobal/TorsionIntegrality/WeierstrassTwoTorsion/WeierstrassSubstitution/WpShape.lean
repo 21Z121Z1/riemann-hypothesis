@@ -1,7 +1,7 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.StatementI
-import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.StatementT
+import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.Bundle0003
+import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.Bundle0001
 import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.WeierstrassSubstitution.Laurent
-import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.WeierstrassSubstitution.CurveSer
+import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.WeierstrassSubstitution.Bundle0002
 
 open PowerSeries
 

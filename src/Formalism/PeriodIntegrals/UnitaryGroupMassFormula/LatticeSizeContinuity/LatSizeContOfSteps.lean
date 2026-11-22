@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.LatSizeCont
+import Formalism.PeriodIntegrals.Bundle0027
 
 noncomputable section
 

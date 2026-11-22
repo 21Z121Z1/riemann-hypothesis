@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasTemperateGrowthProdMkConst
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzSliceSeminormLeStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasFderivAtSchwartzOperatorFirstStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0058
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0239
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0296
 
 noncomputable section
 

@@ -1,8 +1,7 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.KAcyclicHomology
-import Development.AutomorphicArithmetic.AutomorphicVarieties.TensorHomCubes.GrpHComp
-import Development.AutomorphicArithmetic.AutomorphicVarieties.TensorHomCubes.DedekindSR
+import Development.AutomorphicArithmetic.AutomorphicVarieties.TensorHomCubes.Bundle0001
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.KArith
-import Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.TensSurj
+import Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.Bundle0003
 import Mathlib.RingTheory.Flat.TorsionFree
 import Mathlib.NumberTheory.Padics.PadicIntegers
 import Mathlib.GroupTheory.Perm.Fin

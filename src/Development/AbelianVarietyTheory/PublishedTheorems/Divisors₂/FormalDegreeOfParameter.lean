@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SignatureFrame
-import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.EigenfunctionFiniteCoefficients
+import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.Bundle0001
 
 open MeasureTheory Formalism.BasicNotions Formalism.MainNotions.S Formalism.REAL Formalism.QuantumDeterminants GlobalTheory.Dec GlobalTheory.DSId GlobalTheory.IndefiniteRowSideFullHecke.SignatureFrame
 

@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAPRPhaseCut
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0125
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAPRDatumConst
 
 open Formalism.REAL Formalism.QuantumDeterminants Formalism.FourierDecayAlt Formalism.FourierDecayAlt.Q NumberField

@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.MatchingOfParts
-import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0044
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0054
 import Development.AbelianVarietyTheory.Definitions.Divisors.RankEqCardIffExistsFrameMatrixFirstColumnBlock
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RowsInSpanOfRankNormalFormStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubMemTwistSpan
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1438
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1392
 open ValuativeRel Matrix
 
 noncomputable section

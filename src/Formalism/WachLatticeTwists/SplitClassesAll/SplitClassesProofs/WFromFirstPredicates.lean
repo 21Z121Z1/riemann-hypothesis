@@ -1,9 +1,8 @@
 import Formalism.WachLatticeTwists.SplitClassesAll.HZeroFromWInputsStatement
-import Formalism.WachLatticeTwists.SplitClassesAll.SplitClassesProofs.HZeroFromWFull
+import Formalism.WachLatticeTwists.SplitClassesAll.SplitClassesProofs.Bundle0001
 import Formalism.WachLatticeTwists.CharacterSplitJumps.CharacterJumpProofs.TheoremNFiveTopSplitTb
-import Formalism.WachLatticeTwists.DenseTopActions.DenseTopActionProofs.QPowInj
-import Formalism.WachLatticeTwists.WachProductBases.WachProductProofs.FreeMembershipHeightOne
-import Formalism.WachLatticeTwists.DenseTopActions.DenseTopActionProofs.Imports
+import Formalism.WachLatticeTwists.DenseTopActions.DenseTopActionProofs.Bundle0001
+import Formalism.WachLatticeTwists.WachProductBases.WachProductProofs.Bundle0001
 
 open Finset Classical
 

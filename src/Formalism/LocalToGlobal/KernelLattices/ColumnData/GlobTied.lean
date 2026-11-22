@@ -1,10 +1,10 @@
 import Mathlib
 import Formalism.LocalToGlobal.Columns.WordFin
-import Formalism.LocalToGlobal.Columns.ReferenceKernelEquivOfLastComponent
+import Formalism.LocalToGlobal.Columns.Bundle0045
 import Formalism.LocalToGlobal.Columns.ChainInst
-import Formalism.LocalToGlobal.Columns.RecLevelSym
+import Formalism.LocalToGlobal.Columns.Bundle0013
 import Formalism.LocalToGlobal.KernelLattices.ColInst
-import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.KerEquivStmt
+import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.Bundle0003
 
 open NumberField IsDedekindDomain
 

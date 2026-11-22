@@ -2,7 +2,7 @@ import Formalism.SharpRestriction.GrowthBounds.SourceCleaning
 import Formalism.PolynomialDimension.DetMulEqSumAdjugate
 import Formalism.SubspaceCounting.ChoiceOfTopsRefined
 import Formalism.GrowthSums.LemmaATwoFactList
-import Formalism.PolynomialDimension.FinalNum
+import Formalism.PolynomialDimension.Bundle0004
 
 noncomputable section
 

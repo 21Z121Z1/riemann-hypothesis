@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.GlobalFields.TateThesis.AdeleScaling
+import GroundTheory.GlobalFields.TateThesis.Bundle0006
 import GroundTheory.AutomorphicForms.ReductionIwasawa
-import GroundTheory.AutomorphicForms.NormDetDiagUnitsPosRealToUnits
+import GroundTheory.AutomorphicForms.Bundle0019
 import GroundTheory.AutomorphicForms.ReductionMeasure
 
 namespace GroundTheory.Automorphic.Adele2

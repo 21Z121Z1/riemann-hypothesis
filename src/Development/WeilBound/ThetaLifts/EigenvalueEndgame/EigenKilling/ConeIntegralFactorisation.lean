@@ -1,6 +1,6 @@
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.PlaneRemovalConfiguration
-import Development.WeilBound.ThetaLifts.SmallCones.ThetaKernelGeneralIdentity
-import Development.WeilBound.ThetaLifts.FrameEstimates.HodgeTateFromSandwich
+import Development.WeilBound.ThetaLifts.SmallCones.Bundle0003
+import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0003
 import Development.WeilBound.ThetaLifts.LocalTheory.UnramifiedDeterminedBySpherical
 
 noncomputable section

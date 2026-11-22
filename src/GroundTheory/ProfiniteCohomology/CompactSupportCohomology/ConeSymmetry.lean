@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.ConePairing
+import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.Bundle0002
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.ProfCoh

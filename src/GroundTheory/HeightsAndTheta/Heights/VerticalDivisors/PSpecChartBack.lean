@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PSpecChartIso
+import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Bundle0012
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Vertical

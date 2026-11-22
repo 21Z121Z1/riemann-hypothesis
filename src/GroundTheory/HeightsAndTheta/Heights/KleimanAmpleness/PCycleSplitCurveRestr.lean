@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.CycleSplitCurveRestrSt
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PPrimeFiltrationPoint
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ExistsMemSupport
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0011
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0005
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0020
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Kleiman

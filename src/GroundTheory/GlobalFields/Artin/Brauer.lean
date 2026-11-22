@@ -1,8 +1,8 @@
 import Mathlib
 import GroundTheory.GlobalFields.Artin.Induction
-import GroundTheory.GlobalFields.Artin.OneDimL
+import GroundTheory.GlobalFields.Artin.Bundle0005
 import GroundTheory.GlobalFields.AnalyticClassNumber.HeckeContinued
-import GroundTheory.LocalFields.BrauerInduction
+import GroundTheory.LocalFields.Bundle0009
 set_option maxSynthPendingDepth 1
 
 noncomputable section

@@ -1,6 +1,6 @@
-import Formalism.LocalToGlobal.ProjectiveLattices.CoreProofs
-import Formalism.LocalToGlobal.ProjectiveLattices.IntAllFree
-import Formalism.LocalToGlobal.ProjectiveLattices.ExistsOfValILeOne
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0012
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0003
 
 noncomputable section
 

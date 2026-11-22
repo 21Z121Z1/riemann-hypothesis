@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsAdicCompleteAndCardQuotientAdicCompletionInteg
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0025
 
 open NumberField IsDedekindDomain
 open Formalism.UG (GLint)

@@ -1,4 +1,4 @@
-import Formalism.ThetaLogCoordinates.FockResolutionOnto.StatementE
+import Formalism.ThetaLogCoordinates.FockResolutionOnto.Bundle0002
 import Formalism.ThetaLogCoordinates.TraceIsometryWeights.StatementG
 
 namespace Formalism.InvariantFactorPaths.L4

@@ -1,6 +1,6 @@
-import ReciprocityTheory.DualLattices.BlockOneMulMulBlockOne
-import ReciprocityTheory.DualLattices.ProdDvdOfIso
-import ReciprocityTheory.DualLattices.ExistsSmulMemOfMemSpan
+import ReciprocityTheory.DualLattices.Bundle0014
+import ReciprocityTheory.DualLattices.Bundle0016
+import ReciprocityTheory.DualLattices.Bundle0006
 
 noncomputable section
 

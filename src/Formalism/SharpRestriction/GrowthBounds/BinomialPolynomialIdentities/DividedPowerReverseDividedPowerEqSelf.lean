@@ -1,6 +1,6 @@
-import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.ContragredientIrreducibleGeneratedByHighestWeigh
-import Formalism.SharpRestriction.GrowthBounds.RootWeights.WeightEntriesBetweenExtremeHighest
-import Formalism.SharpRestriction.GrowthBounds.RootWeights.DeltaIntegralEnvelopingStable
+import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.Bundle0003
+import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0023
+import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0020
 
 noncomputable section
 

@@ -1,6 +1,6 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.LeftEquivariantFunctions.SymZeroCommFrame
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.QuotientIntegrationFormulaDiscreteSubgroupLeft
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0127
 
 open MeasureTheory Matrix Topology Filter
 open scoped NNReal ENNReal Pointwise

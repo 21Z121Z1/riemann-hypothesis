@@ -2,8 +2,8 @@ import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.LocalNewformFunction
 import Development.AbelianVarietyTheory.Definitions.Foundations.T2SpaceAdeleRing
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsLatticeFrameIsMajorantFrame
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsArchEquivEq
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBasisAdaptedToCartanInvolution
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0316
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0022
 
 noncomputable section
 

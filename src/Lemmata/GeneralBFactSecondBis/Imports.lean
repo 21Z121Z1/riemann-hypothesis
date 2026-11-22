@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.CyclotomicNorms.StatementT
+import Formalism.CyclotomicNorms.Bundle0002
 import Formalism.GaloisIrreducibility.NoSolvableTransitive
 
 namespace Bl.general_b_fact_second_bis

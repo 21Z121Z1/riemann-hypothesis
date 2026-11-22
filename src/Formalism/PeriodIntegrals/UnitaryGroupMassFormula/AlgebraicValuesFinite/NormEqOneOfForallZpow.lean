@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.EqOneOfForallZpow
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0015
 
 noncomputable section
 

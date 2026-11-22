@@ -1,6 +1,6 @@
-import Development.WeilBound.CoreStatements.VolumeEquality.DegPushMuLinkA
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DetLatticeFlagTensorStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IntersectionDatumDegreeSumStatement
+import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0011
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0201
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0299
 
 noncomputable section
 

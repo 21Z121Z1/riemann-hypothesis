@@ -1,8 +1,8 @@
 import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.VaceigenDual
-import Development.WeilBound.CoreStatements.LocalThetaKernels.IwasFrame
+import Development.WeilBound.CoreStatements.LocalThetaKernels.Bundle0001
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDualFamilyOfIsLattice
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsSubConjNotMem
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DisjointSpanPerpLat
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0024
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0019
 
 noncomputable section
 

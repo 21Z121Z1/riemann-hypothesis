@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.LocalToGlobal.Columns.StdLatUnimodular
 import Formalism.LocalToGlobal.Columns.GenericUnipotentCharacter
-import Formalism.LocalToGlobal.Columns.CoefCol
+import Formalism.LocalToGlobal.Columns.Bundle0003
 import Formalism.LocalToGlobal.Columns.DecorationStabilizerTrivialUnipotent
-import Formalism.LocalToGlobal.Columns.RowFormsNZp
+import Formalism.LocalToGlobal.Columns.Bundle0001
 import Formalism.LocalToGlobal.Columns.RowFormsNZa
 
 open NumberField IsDedekindDomain Module Matrix

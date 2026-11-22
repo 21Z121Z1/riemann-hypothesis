@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.KeyFormula.DegProd
-import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.DiscrEqJacobianOfIntegralPointsStatement
+import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0009
 open GlobalTheory.KeyKa
 
 namespace GlobalTheory.DiscrJacobianBlocks

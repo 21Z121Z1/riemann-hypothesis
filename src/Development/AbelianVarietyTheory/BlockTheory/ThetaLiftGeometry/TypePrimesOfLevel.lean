@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalRingCardinality.DataKerI
-import Formalism.SharpRestriction.ElevenLe
+import Formalism.SharpRestriction.Bundle0001
 import Formalism.LocalToGlobal.Columns.DecorationStabilizerTrivialUnipotent
 
 noncomputable section

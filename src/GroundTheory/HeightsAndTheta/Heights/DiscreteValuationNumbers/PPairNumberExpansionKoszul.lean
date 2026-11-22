@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PFlagIndependenceAlgebra
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PMixedDiffLinear
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.OfSteps
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0008
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0044
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.NumbersDVR

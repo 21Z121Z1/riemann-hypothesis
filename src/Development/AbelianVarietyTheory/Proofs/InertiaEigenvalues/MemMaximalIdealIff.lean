@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GeneralAdmissibleOfIrreducibilityStmt
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CharpolySmulOfProd
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChebotarevDegreeOne
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TeichmullerRoots
-import Development.AbelianVarietyTheory.Proofs.CharacterTheory.CharpolyBlockAndInvariantUnderStabilizerNilradic
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0311
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0191
+import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0003
 
 noncomputable section
 

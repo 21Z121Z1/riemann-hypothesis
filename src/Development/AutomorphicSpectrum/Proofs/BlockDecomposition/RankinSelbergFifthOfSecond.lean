@@ -1,6 +1,6 @@
 import Mathlib
 import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.VerticalStrips.UnramifiedEulerProductIntegral
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralCompSymm
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1999
 
 noncomputable section
 

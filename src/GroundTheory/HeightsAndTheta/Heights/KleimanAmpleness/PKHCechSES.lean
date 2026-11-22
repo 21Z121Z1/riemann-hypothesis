@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PKHCechMapDeg
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0081
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Kleiman

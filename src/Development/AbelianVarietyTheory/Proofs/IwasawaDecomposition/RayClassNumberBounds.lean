@@ -1,9 +1,9 @@
 import Mathlib
-import Formalism.GL3MeanSquares.PrimeCountAsymptoticInProgressions
-import Formalism.SharpRestriction.InertJacobiLevels.AsmIface
-import Formalism.CyclotomicNorms.StatementI
-import Development.AbelianVarietyTheory.Definitions.Foundations.RayPrimes
-import Development.AbelianVarietyTheory.Definitions.Foundations.NormOneSevenOneTwo
+import Formalism.GL3MeanSquares.Bundle0001
+import Formalism.SharpRestriction.InertJacobiLevels.Bundle0007
+import Formalism.CyclotomicNorms.Bundle0001
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0009
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0011
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIntegralOfMemRayI
 
 noncomputable section

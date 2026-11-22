@@ -1,5 +1,5 @@
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.SignatureSplitting.RightOfFd
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ConjugateSubgroup
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0087
 
 noncomputable section
 

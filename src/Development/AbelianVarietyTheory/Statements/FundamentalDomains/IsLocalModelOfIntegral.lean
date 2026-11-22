@@ -1,10 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Statements.FundamentalDomains.KeyFormulaPowOfKeyFormula
 import Development.AbelianVarietyTheory.Statements.ThetaLevelCharacters.MemThetaLevelCharDimZero
-import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.IsDiffSumSmulOfIsLieComb
-import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.DualNumberRingHomExt
-import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsKeyPBRing
-import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.IsLieBasisIffIsUnitDet
+import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0014
+import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0018
+import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0036
 
 noncomputable section
 

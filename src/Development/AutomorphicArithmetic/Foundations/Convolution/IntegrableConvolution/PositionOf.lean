@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.TensSmooth
+import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0004
 import GroundTheory.AutomorphicForms.L2LocalComponents.ArchBump
 
 noncomputable section

@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CrossDiagonalMatching.Common
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CrossDiagonalMatching.Bundle0001
 import Formalism.LocalToGlobal.GlobalTheory.UnramifiedDiagonal.DiaFun
 
 noncomputable section

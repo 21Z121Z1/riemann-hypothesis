@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.SameKindIsometric
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SqSumEqSumSqAddTwoMulSumLt
+import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0014
 
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S GlobalTheory.Count GlobalTheory.FlagMeas
 

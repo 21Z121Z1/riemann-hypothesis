@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.SandwichMaps
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FontaineAinfLocalDomainXiAdicOrderStatement
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0003
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0432
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmulMemRange
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharmatrixBlockDiagonal
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0129
 open WittVector Ideal Matrix GlobalTheory.Sandwich GlobalTheory.IndefiniteRowSideFullHecke.SandwichMaps
 
 namespace GlobalTheory.IotaDet

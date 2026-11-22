@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsAttachedHodge
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0476
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousConjFin
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HostCmEmbeddingProperties
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnderEqIffConjPl
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DenseRangeUnits
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0101
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0104
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0107
 
 noncomputable section
 

@@ -1,4 +1,4 @@
-import Formalism.GaloisCohomology.StatementAlg
+import Formalism.GaloisCohomology.Bundle0001
 
 namespace Formalism.GaloisCohomology
 

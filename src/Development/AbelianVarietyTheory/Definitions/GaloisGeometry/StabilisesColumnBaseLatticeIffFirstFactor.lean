@@ -1,17 +1,15 @@
 import Mathlib
-import Formalism.LocalToGlobal.GroupLattices.LevelCharts.ClsSEqIffExistsLevCSmul
+import Formalism.LocalToGlobal.GroupLattices.LevelCharts.Bundle0006
 import Formalism.LocalToGlobal.GroupLattices.LevelCharts.FiniteClassSetOfFiniteIndex
 import Formalism.LocalToGlobal.GroupLattices.LevelCharts.SplitStab
-import Formalism.LocalToGlobal.GroupLattices.LevelCharts.SplitIntPI
-import Formalism.LocalToGlobal.GroupLattices.LevelCharts.SelfDualPI
+import Formalism.LocalToGlobal.GroupLattices.LevelCharts.Bundle0001
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsScale
 import Formalism.SharpRestriction.GrowthBounds.ChartComparison.PStabEq
-import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.LocalClassDataOfTrivialStabilizers
-import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TiePtOneRec
-import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.RecAct
-import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.TiedCls
-import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.CompInjLocJ
-import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.CompanionOfBaseTied
+import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.Bundle0002
+import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0004
+import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0009
+import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.Bundle0004
+import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.Bundle0003
 import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.GramLevelZeroEqReindex
 
 noncomputable section

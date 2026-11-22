@@ -1,5 +1,5 @@
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.ContDiffOfContDiffOnZeroOff
-import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.LogInt
+import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0002
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.GreenCoord
 import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
 

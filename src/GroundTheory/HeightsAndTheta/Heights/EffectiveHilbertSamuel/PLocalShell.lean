@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.StatementsLocalShell
-import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.StatementsShellPolar
+import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.Bundle0001
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.EffectiveHS

@@ -1,10 +1,10 @@
 import Mathlib
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.WeightFunctionOnFrames
-import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.MajLactRmul
-import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.EventuallyComparable
-import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.ExistsIntMulIntegral
-import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.RmulOneFrame
-import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.FirstMinimumInvariantContinuousPos
+import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.Bundle0018
+import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.Bundle0009
+import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.Bundle0010
+import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.Bundle0011
+import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.Bundle0016
 
 open NumberField ReciprocityTheory.ChartRestriction.G.FD ReciprocityTheory.ChartRestriction.G.AR.Inst ReciprocityTheory.ChartRestriction.G.AR.Up ReciprocityTheory.L2DbarEstimates MeasureTheory Topology
 open scoped ContDiff ENNReal Matrix

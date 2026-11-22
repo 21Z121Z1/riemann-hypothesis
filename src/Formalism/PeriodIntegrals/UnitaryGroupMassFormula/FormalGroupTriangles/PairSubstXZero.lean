@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.FglTriFactor
+import Formalism.PeriodIntegrals.Bundle0003
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalGroupTriangles.CoeffSubstUpdZero
 
 noncomputable section

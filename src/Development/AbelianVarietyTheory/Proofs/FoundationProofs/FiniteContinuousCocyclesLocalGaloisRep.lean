@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.BlochKatoPhases
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.SelmerRankVanishing
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsDiscreteValuationRingIntegralClosurePadicInt
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FixingSubgroupEquivBicontinuous
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0235
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsQuasiRegularSeqOfIsFreeGen
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0040
 
 set_option autoImplicit false
 

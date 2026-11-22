@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.CuspSpanNormBounds.CayleyDegreeNondegeneracy.PrimitiveMeanOverWords
-import Formalism.SharpRestriction.CuspSpanNormBounds.AutLzFiniteOfLoop
+import Formalism.SharpRestriction.CuspSpanNormBounds.CayleyDegreeNondegeneracy.Bundle0003
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0008
 
 noncomputable section
 

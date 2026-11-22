@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.GlobalFields.TateThesis.SchwartzBruhatFinite
-import GroundTheory.GlobalFields.TateThesis.AdeleScaling
+import GroundTheory.GlobalFields.TateThesis.Bundle0006
 
 namespace GroundTheory.Global
 

@@ -1,11 +1,10 @@
 import Mathlib
 import Formalism.BranchSandwichDivisors.StatementW
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ProdFactorialSupportSubSingle
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LFocksLemmas
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LFockbLemmas
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LBidetMinor
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LBidetLemmas
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.DualWeylNonDom
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0004
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0002
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0001
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0004
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0003
 
 open MvPolynomial Formalism.GradedWeylDivisibility Formalism.REAL
 

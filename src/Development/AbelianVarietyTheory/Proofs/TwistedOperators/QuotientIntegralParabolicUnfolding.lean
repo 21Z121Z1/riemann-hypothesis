@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.SimpleSum
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsMulLeftInvariantVolGL
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnipotentRadicalBasic
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RootExchangeUnipotentHaarAndModulusStatement
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0006
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0041
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0029
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0046
 open MeasureTheory ValuativeRel Matrix GlobalTheory.SplitWeil GlobalTheory.RootEx
 
 noncomputable section

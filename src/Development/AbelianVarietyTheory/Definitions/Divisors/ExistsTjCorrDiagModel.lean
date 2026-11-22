@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompEqOneOfTransl
-import Development.AbelianVarietyTheory.Definitions.Divisors.ToRepFam
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSiegelObjectLoweredLevel
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0597
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0012
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2279
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsPrimitiveNormalisation
 
 noncomputable section

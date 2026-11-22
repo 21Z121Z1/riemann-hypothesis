@@ -1,6 +1,6 @@
 import Mathlib
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Signature
-import ReciprocityTheory.SemistableReduction.TorsionNonvanishStatement
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0001
+import ReciprocityTheory.SemistableReduction.Bundle0003
 import Development.AbelianVarietyTheory.PublishedTheorems.AdelicLattices₂.ExistsFiniteRepresentatives
 
 namespace GlobalTheory

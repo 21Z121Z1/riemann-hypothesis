@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.MatrixExponentialEntries
-import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ProjExists
+import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0001
 
 noncomputable section
 

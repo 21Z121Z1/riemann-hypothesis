@@ -1,5 +1,4 @@
-import Formalism.LocalToGlobal.Divisibility.JetBounds.Statement
-import Formalism.LocalToGlobal.Divisibility.JetBounds.MinorProductsLattice
+import Formalism.LocalToGlobal.Divisibility.JetBounds.Bundle0001
 import Formalism.GaussJetBounds.FinalB
 
 open Module NumberField IsDedekindDomain

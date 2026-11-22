@@ -1,6 +1,5 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.HarishChandraCentre.MemCenterOfCommuteE
-import GroundTheory.AutomorphicForms.HarishChandraCentre.RepBase
+import GroundTheory.AutomorphicForms.HarishChandraCentre.Bundle0001
 
 namespace GroundTheory.Automorphic.HarishChandra
 

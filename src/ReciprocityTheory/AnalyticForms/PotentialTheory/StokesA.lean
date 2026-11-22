@@ -1,5 +1,5 @@
-import ReciprocityTheory.AnalyticForms.PotentialTheory.PotentialContDiffAt
-import ReciprocityTheory.AnalyticForms.PotentialTheory.Partition
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0008
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0004
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PartsSt
 
 namespace ReciprocityTheory.AnForm.M

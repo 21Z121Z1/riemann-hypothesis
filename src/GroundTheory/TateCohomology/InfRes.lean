@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.TateCohomology.DeltaMap
+import GroundTheory.TateCohomology.Bundle0001
 import GroundTheory.TateCohomology.CoindOne
 set_option maxSynthPendingDepth 1
 

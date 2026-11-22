@@ -1,4 +1,4 @@
-import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.InPow
+import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.Bundle0001
 
 noncomputable section
 

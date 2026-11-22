@@ -1,12 +1,11 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.SemiposAtOfPositive
-import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsModelOf
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecZEqZeroOfGenVal
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0076
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0072
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2513
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1581
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsRatSecOfPull
-import Development.AbelianVarietyTheory.Definitions.Divisors.NotIsChowFormIntLineZero
-import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.WeightSectionsHeightEstimate
-import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.WeightSectionsCdvrEstimate
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0057
+import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.Bundle0004
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions Formalism.L2.Pj Formalism.BasicNotions.TH Formalism.L2.Theta ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.FD GlobalTheory.AllWt GlobalTheory.CompHt GlobalTheory.CovTop GlobalTheory.CovHt GlobalTheory.Mean4 GlobalTheory.Mean4O
 open scoped ENNReal Classical
 

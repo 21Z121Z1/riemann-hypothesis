@@ -1,5 +1,5 @@
 import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.WhitGenOf
-import Development.WeilBound.ThetaLifts.LatticeBasics.EulerHalf
+import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0011
 
 noncomputable section
 

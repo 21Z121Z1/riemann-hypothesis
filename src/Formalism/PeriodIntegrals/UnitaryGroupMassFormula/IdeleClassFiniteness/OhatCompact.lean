@@ -1,4 +1,4 @@
-import Formalism.UnipotentAdelicQuotients.ClassNumberFinite
+import Formalism.UnipotentAdelicQuotients.Bundle0001
 
 noncomputable section
 

@@ -1,6 +1,5 @@
-import Formalism.LocalToGlobal.GroupLattices.FockModels.FlatModels.MemNablaLTwLetter
-import Formalism.LocalToGlobal.GroupLattices.FockModels.FlatModels.MatQTwDet
-import Formalism.LocalToGlobal.GroupLattices.FockModels.FlatModels.EdgeLatOfG
+import Formalism.LocalToGlobal.GroupLattices.FockModels.FlatModels.Bundle0002
+import Formalism.LocalToGlobal.GroupLattices.FockModels.FlatModels.Bundle0001
 
 open MvPolynomial
 

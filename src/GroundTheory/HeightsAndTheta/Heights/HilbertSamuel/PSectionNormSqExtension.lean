@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSectionNormSqExtension
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSectionNormSqLevi
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0084
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0005
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.SectionNormSquares.Pointwise
 set_option maxSynthPendingDepth 1
 

@@ -1,7 +1,7 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.WeilGroupCharacters.ContinuousResP
 import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.InertiaRamification.ComplY
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormEmbeddingIntegerLeOne
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsContinuousExtensionAdicCompletion
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0043
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0042
 
 noncomputable section
 

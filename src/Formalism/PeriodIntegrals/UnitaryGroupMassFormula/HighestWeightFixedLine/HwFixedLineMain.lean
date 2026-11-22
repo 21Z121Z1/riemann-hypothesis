@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.PeriodIntegrals.HwFixedLine
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.HwIrred
+import Formalism.PeriodIntegrals.Bundle0029
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0025
 
 noncomputable section
 

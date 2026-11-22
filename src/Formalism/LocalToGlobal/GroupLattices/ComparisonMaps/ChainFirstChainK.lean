@@ -1,4 +1,4 @@
-import Formalism.LocalRingCardinality.DataKerP
+import Formalism.LocalRingCardinality.Bundle0005
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.IsComplRatCompl
 
 open Formalism.MainNotions.G Formalism.BasicNotions NumberField

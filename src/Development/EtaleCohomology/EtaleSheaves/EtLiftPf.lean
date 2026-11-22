@@ -1,4 +1,4 @@
-import Development.EtaleCohomology.EtaleSheaves.EtaleDegreeZeroCohomologyEquivLocallyConstantFun
+import Development.EtaleCohomology.EtaleSheaves.Bundle0004
 
 noncomputable section
 open MvPolynomial

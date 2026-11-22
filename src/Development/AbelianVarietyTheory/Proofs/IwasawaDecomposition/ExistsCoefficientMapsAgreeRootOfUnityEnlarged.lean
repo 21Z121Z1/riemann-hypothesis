@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsOmPinsLev
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0547
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsIntegralOfLine
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BaseWeightEqForcedLiftWeight
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReferenceTupleLiftFormsPassToCoeffEnlargement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TameCharactersTypePrimesEqOfExtension
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.StarMulSelfOfPair
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0406
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0520
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0521
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0827
 
 open Formalism.BasicNotions Formalism.MainNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField
 open Formalism.L2.Theta Formalism.L2.DIV Formalism.L2.Indef Formalism.L2.Rows Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Lev Formalism.IndefR.Cx Formalism.IndefR.RecTie

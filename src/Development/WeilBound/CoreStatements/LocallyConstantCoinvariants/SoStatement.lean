@@ -1,4 +1,4 @@
-import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.CompFinLiftE
+import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0004
 
 noncomputable section
 

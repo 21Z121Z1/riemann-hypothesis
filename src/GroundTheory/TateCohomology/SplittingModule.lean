@@ -1,7 +1,6 @@
 import Mathlib
-import GroundTheory.TateCohomology.PullbackExtension
-import GroundTheory.TateCohomology.AugTrivial
-import GroundTheory.TateCohomology.DeltaMap
+import GroundTheory.TateCohomology.Bundle0008
+import GroundTheory.TateCohomology.Bundle0001
 import GroundTheory.TateCohomology.DimensionShift
 import GroundTheory.TateCohomology.TateConnecting
 set_option maxSynthPendingDepth 1

@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.TateCohomology.CupCochains
 import GroundTheory.ProfiniteCohomology.ContinuousCochains
-import GroundTheory.ProfiniteCohomology.Bridge
+import GroundTheory.ProfiniteCohomology.Bundle0003
 set_option maxSynthPendingDepth 1
 
 noncomputable section

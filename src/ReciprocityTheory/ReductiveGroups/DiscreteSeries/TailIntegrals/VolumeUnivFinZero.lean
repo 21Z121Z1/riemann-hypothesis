@@ -1,4 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.GaugeSplittingAlgebra
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.Bundle0002
 
 noncomputable section
 open MeasureTheory Module

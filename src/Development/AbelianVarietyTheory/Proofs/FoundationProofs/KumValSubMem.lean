@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.HTPresNuOfPolys
-import Development.AbelianVarietyTheory.Definitions.Foundations.ZetaSysUOfHalves
-import Development.AbelianVarietyTheory.Definitions.Foundations.HtCoLOfEq
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0021
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0018
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0020
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UniqTrue
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RecipConj
 open NumberField IsDedekindDomain Formalism.ConjugateSelfDual ReciprocityTheory.Gal Formalism.MainNotions.N GlobalTheory.GalOfCusp UpperTheory.V UpperTheory.V.Af UpperTheory.V.HV GlobalTheory.Ord2 GlobalTheory.KZ PowerSeries

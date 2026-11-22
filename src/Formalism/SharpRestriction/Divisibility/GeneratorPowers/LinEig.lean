@@ -1,8 +1,8 @@
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpTie
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0005
 import Formalism.FormalGroupWitt.FormalGroupWittProofs.SolveV
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.ChartChg
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.Bundle0003
 import Formalism.LocalToGlobal.ProjectiveLattices.SatLeaves
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DegreeOneStatement
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0012
 
 set_option autoImplicit false
 

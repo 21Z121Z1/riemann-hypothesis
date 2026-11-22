@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.GLnLattice
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MulLeftCancelOfDetNeZero
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0049
 
 noncomputable section
 

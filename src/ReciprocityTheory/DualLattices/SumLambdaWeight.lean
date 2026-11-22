@@ -1,5 +1,5 @@
-import ReciprocityTheory.DualLattices.TensorSpan
-import ReciprocityTheory.DualLattices.VIntCastLtOneOfDvd
+import ReciprocityTheory.DualLattices.Bundle0003
+import ReciprocityTheory.DualLattices.Bundle0004
 
 noncomputable section
 

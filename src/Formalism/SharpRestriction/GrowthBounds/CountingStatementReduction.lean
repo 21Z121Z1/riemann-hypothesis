@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.GrowthBounds.FlipOneThree
-import Formalism.MahlerMeasure.CoarseLevelSlackInequalities
+import Formalism.MahlerMeasure.Bundle0007
 import Formalism.PolynomialDimension.FinalM
 import Formalism.ThetaLogCoordinates.TraceIsometryWeights.DischargeHeightBound
 import Formalism.ThetaLogCoordinates.PartnerMeanCoordinates.LatticeTheoremEps28Valid

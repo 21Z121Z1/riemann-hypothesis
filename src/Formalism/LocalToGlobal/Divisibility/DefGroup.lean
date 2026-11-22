@@ -1,7 +1,7 @@
 import Formalism.LocalToGlobal.HermitianColumns.InLocalDiscriminantKernel
 import Formalism.SatakeDualWeyl.DefsCS
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlob
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsApprox
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0010
 import Formalism.LocalRingCardinality.SpanPowerMembership.Spaces
 
 noncomputable section

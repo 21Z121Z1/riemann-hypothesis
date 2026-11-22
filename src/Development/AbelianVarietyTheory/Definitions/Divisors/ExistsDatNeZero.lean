@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsUniquePairsToTower
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFormPrimNeZero
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0030
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0717
 
 set_option autoImplicit false
 

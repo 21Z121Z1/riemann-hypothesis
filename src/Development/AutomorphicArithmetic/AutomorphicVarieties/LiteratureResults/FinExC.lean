@@ -1,5 +1,5 @@
-import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.ClozelConjCOf
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Brauer
+import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.Bundle0001
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0047
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsLocCompAndIsLocLoc
 
 noncomputable section

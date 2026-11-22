@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocCO
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1667
 import Development.AbelianVarietyTheory.Definitions.Divisors.BplusOfEquivariant
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HighestWeightBelow
 

@@ -1,13 +1,12 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsParPinsCanon
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0120
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.HeckeCharacterFamilyConductorStatement
-import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.CoeSelfDualLatticeInFrameCoordinatesEq
-import Formalism.LocalToGlobal.ProjectiveLattices.ParCanon
+import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Bundle0001
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0041
 import Formalism.LocalToGlobal.ProjectiveLattices.ExistsParameterConditions
-import Formalism.LocalToGlobal.ProjectiveLattices.ValSetAlgSubset
-import Formalism.LocalToGlobal.ProjectiveLattices.IntAll
-import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
-import Formalism.LocalToGlobal.ProjectiveLattices.VolProofs
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0026
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0023
 open NumberField IsDedekindDomain ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.FD Formalism.BasicNotions Formalism.MainNotions Formalism.BasicNotions.TH Formalism.L2.Theta Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.L2.Pj
 open scoped TensorProduct Matrix Topology
 attribute [local instance] Formalism.BasicNotions.Host.cmStar

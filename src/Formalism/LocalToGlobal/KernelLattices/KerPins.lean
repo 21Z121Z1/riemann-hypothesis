@@ -1,6 +1,6 @@
 import Formalism.LocalToGlobal.ClassRec
-import Formalism.LocalToGlobal.KernelLattices.KerChTie
-import Formalism.LocalToGlobal.KernelLattices.AdaptedEnt
+import Formalism.LocalToGlobal.KernelLattices.Bundle0003
+import Formalism.LocalToGlobal.KernelLattices.Bundle0004
 import Formalism.LocalToGlobal.KernelLattices.TopPin
 
 noncomputable section

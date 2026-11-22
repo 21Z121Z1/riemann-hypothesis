@@ -1,6 +1,6 @@
-import Formalism.SharpRestriction.Divisibility.HookProducts.AbsPhFSubLeOfLe
+import Formalism.SharpRestriction.Divisibility.HookProducts.Bundle0004
 import Formalism.SharpRestriction.ParConsts
-import Formalism.SharpRestriction.ElevenLe
+import Formalism.SharpRestriction.Bundle0001
 
 noncomputable section
 

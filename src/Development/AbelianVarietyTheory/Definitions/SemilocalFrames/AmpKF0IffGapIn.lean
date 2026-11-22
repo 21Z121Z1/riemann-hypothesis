@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.AmpKFIff
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.UniqGapOfUniq
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DecLowAndDecInfAndKFinSmooth
-import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.AmpOrbClosed
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0180
+import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.Bundle0062
 
 open MeasureTheory Matrix
 open scoped InnerProductSpace ENNReal NNReal

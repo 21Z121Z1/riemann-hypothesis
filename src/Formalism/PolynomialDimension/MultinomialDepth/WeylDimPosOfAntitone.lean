@@ -1,4 +1,4 @@
-import Formalism.PolynomialDimension.DigitClassSize
+import Formalism.PolynomialDimension.Bundle0002
 
 open scoped BigOperators
 open Finset

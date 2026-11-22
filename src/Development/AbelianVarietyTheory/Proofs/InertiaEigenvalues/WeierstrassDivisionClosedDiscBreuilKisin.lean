@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsStratHom
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BhattScholzeIntegral
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ClosedDiscGaugeCompletionZeroOnePropertiesStatement
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0005
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0434
 
 noncomputable section
 

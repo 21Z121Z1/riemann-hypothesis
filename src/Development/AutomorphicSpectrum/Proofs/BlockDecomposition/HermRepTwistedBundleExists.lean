@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsPullHermPullLine
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0523
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EqOfIsometricTrivShift
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRedA
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0011
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Birational
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.IsSmoothHermConstLine
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsUniqueComplexPointUnder
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0537
 
 set_option autoImplicit false
 noncomputable section

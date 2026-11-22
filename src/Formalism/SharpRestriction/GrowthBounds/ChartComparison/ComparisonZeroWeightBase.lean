@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.SpanImageEq
-import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.SpanImageOfSurj
+import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0009
 import Formalism.SharpRestriction.GrowthBounds.WeilJacquetShalikaLaw
 
 open Formalism.MainNotions.G Formalism.BasicNotions NumberField

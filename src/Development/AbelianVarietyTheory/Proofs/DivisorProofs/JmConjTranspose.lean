@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAdaptedFrame
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2012
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanPolynomialTensorWeight
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaximalCompactOneParameterLinesOfLieLines
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorIrreducibleModules
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TprodMemTensSpan
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1393
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1131
 
 noncomputable section
 

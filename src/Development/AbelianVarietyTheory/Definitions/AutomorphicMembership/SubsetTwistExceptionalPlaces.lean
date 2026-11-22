@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonemptyAllIff
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0019
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StableIffCarrierEq
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsIsScalar
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NotTeichTrivOfIsDelta
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0029
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0014
 import Formalism.LocalToGlobal.IndefiniteReal.DoubleCosetOperators.NHkRow
 
 noncomputable section

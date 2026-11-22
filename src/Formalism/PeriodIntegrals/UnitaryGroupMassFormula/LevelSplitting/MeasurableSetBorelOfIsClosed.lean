@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelSplitting.CompVInvMulVec
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelSplitting.Bundle0002
 
 noncomputable section
 

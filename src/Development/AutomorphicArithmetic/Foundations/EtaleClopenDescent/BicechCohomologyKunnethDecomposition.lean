@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.BicechC
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechAndTotalDifferentialAdditiveSquareZero
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0007
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0199
 
 set_option autoImplicit false
 

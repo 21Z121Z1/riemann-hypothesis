@@ -1,8 +1,8 @@
 import Formalism.LocalToGlobal.IndefiniteReal.TrISepWith
 import Formalism.LocalToGlobal.IndefiniteReal.FWExist
 import Formalism.LocalToGlobal.IndefiniteReal.OneMapT
-import Formalism.LocalToGlobal.IndefiniteReal.OneMapEq
-import Formalism.LocalToGlobal.IndefiniteReal.RhoGeo
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0027
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0028
 
 noncomputable section
 

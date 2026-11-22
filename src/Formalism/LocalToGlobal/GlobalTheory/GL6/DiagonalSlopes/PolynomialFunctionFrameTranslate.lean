@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.MetricDisjointSupportOrthogonal
+import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.Bundle0003
 import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.CharacterFiniteLevelZeroOfForms
 import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.PSplitT
 import Formalism.LocalToGlobal.GlobalTheory.GL6.LatticeInclusionFamilyOf

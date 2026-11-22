@@ -3,7 +3,7 @@ import Formalism.LocalToGlobal.Columns.RhoEqOfSmulEq
 import Formalism.LocalToGlobal.Columns.GenericUnipotentCharacter
 import Formalism.LocalToGlobal.Columns.AbelianHostFieldConditions
 import Formalism.LocalToGlobal.Columns.StdLatUnimodular
-import Formalism.LocalToGlobal.Columns.CoefCol
+import Formalism.LocalToGlobal.Columns.Bundle0003
 
 open NumberField IsDedekindDomain Module
 

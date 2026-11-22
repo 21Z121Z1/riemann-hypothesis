@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LayerProd
-import Formalism.HermitianLattices.StatementMass
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0004
+import Formalism.HermitianLattices.Bundle0003
 
 open MeasureTheory NumberField Matrix Finset
 

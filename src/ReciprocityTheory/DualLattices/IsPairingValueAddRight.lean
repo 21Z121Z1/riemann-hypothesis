@@ -1,6 +1,6 @@
-import ReciprocityTheory.DualLattices.SeriesState
+import ReciprocityTheory.DualLattices.Bundle0007
 import ReciprocityTheory.DualLattices.InstAddCommMonoidFibreFst
-import ReciprocityTheory.DualLattices.NsmulFstAddSnd
+import ReciprocityTheory.DualLattices.Bundle0012
 
 noncomputable section
 

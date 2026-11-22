@@ -1,6 +1,6 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.LocalSystemQuotients.FlatL
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MapHCompEqSmul
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0106
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MkOfMemB
 
 set_option autoImplicit false

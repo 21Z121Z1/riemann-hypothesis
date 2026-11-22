@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.ReductionHeight
-import GroundTheory.AutomorphicForms.ReductionIdele
+import GroundTheory.AutomorphicForms.Bundle0016
 import GroundTheory.GlobalFields.Adele.Discrete
 import GroundTheory.GlobalFields.Adele.Compact
 import GroundTheory.GlobalFields.IdeleGroups.Restricted

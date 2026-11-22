@@ -1,7 +1,7 @@
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocalGaloisRepInducedMatches
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DpstRankLeDimension
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DeRhamRepresentationTensorComparison
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PadicHodgePropertiesConjInvariant
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0149
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0068
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0527
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0515
 
 noncomputable section
 

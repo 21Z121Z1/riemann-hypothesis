@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.SubstitutionXFirstEmbedding
+import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.Bundle0006
 
 noncomputable section
 

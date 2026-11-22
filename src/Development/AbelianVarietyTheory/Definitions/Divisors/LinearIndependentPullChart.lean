@@ -2,8 +2,8 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.SecondCountableTopologyOfIsProjOver
 import Development.AbelianVarietyTheory.Definitions.Divisors.QuasiRegularAlongOfEtale
 import Development.AbelianVarietyTheory.Definitions.Divisors.LinearIndependentBasisCoords
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndepBaseChange
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonemptyHomologyEquiv
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0944
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0951
 
 set_option autoImplicit false
 

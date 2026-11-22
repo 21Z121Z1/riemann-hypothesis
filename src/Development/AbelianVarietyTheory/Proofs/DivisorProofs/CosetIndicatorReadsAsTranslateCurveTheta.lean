@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsApprox
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1848
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdealIndicatorReadsNormPowMulIntertwinedVacuum
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaTranslationIntertwinerUnitaryStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0285
 
 open NumberField IsDedekindDomain
 open scoped Classical Pointwise

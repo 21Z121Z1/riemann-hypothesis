@@ -1,7 +1,7 @@
 import Formalism.SharpRestriction.MuTuOfTuSize
-import Formalism.SharpRestriction.GlobalSchurBounds.MainIn
-import Formalism.SharpRestriction.LevelLetterCocycles.AlignN
-import Formalism.LocalRingCardinality.MinkMEqMinkowskiNumber
+import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0003
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0014
+import Formalism.LocalRingCardinality.Bundle0006
 
 noncomputable section
 

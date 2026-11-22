@@ -1,6 +1,5 @@
 import Formalism.LocalToGlobal.GenusGluing.GenusApproximation.FactsW
-import Formalism.LocalToGlobal.GenusGluing.GenusApproximation.GenusApproximationProofs.IdempotentCalculationHolds
-import Formalism.LocalToGlobal.GenusGluing.GenusApproximation.GenusApproximationProofs.GlueSmulSame
+import Formalism.LocalToGlobal.GenusGluing.GenusApproximation.GenusApproximationProofs.Bundle0001
 
 noncomputable section
 

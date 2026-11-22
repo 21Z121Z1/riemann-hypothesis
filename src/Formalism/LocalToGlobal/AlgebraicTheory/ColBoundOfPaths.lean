@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.LogDerivativeJetsIntegral
-import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.JetsInOfOneVariable
+import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.Bundle0002
 import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.UnitKer
 import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.EtPower
 import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.EtJets
@@ -8,7 +8,7 @@ import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.TensorFourt
 import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.ScalarConst
 import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.DvdOfNormIntCastLt
 import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.ColumnBoundOfPaths
-import Formalism.LocalToGlobal.AlgebraicTheory.StatementPl
+import Formalism.LocalToGlobal.AlgebraicTheory.Bundle0003
 import ReciprocityTheory.ReductiveGroups.LatticeEmbeddings.IotaPlace
 
 namespace Formalism.L2.AlgTh

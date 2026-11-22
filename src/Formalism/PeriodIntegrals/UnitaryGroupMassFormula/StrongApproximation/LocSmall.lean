@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.StrongApproxE
+import Formalism.PeriodIntegrals.Bundle0021
 
 noncomputable section
 

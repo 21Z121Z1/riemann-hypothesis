@@ -1,5 +1,4 @@
-import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.IdealValuations.ConjCount
-import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.IdealValuations.Residue
+import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.IdealValuations.Bundle0001
 
 open NumberField NumberField.IsCMField NumberField.Units IsDedekindDomain
 open scoped nonZeroDivisors

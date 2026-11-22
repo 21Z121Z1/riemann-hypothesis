@@ -1,10 +1,10 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
-import Development.AbelianVarietyTheory.Definitions.Foundations.HTBasis
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormPrimitiveRootPrimePowSubOnePadicComplex
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0011
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0136
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TateDecompositionCompletedCyclotomicIntegers
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsTateOperatorLevelComplement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormPowSubOneLe
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0035
 
 open Formalism.BasicNotions Formalism.BasicNotions.Loc GlobalTheory.Cyc
 

@@ -1,6 +1,5 @@
 import Mathlib
-import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ArakelovSingularities.MetricLoc
-import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ArakelovSingularities.MetricPart
+import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ArakelovSingularities.Bundle0001
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NontrivialIsomClassInt
 import Development.AbelianVarietyTheory.Definitions.Divisors.FirstChernIntegralEqDegree
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ArakelovSingularities.MetricConj

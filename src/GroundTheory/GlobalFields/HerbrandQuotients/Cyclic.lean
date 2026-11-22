@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.TateCohomology.HerbrandAbstract
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CyclicSubtraction
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0011
 
 namespace GroundTheory.Global
 

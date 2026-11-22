@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicWeilRepSchrodingerModelUnique
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ProductMap
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2043
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0054
 
 open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.WeilM GlobalTheory.AdelicU GlobalTheory.LFun GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels
 open scoped Matrix TensorProduct

@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FockTranslateSchwartzMajorant
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IkedaPartialFourierIntegralMemAdelicSchwartz
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.GaussianIsSchwartzFunction
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TamePartRight
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0596
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0242
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0225
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1488
 
 noncomputable section
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct Topology

@@ -1,4 +1,4 @@
-import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0009
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry GlobalTheory.EtC

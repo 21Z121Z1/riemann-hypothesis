@@ -1,4 +1,4 @@
-import Development.AutomorphicArithmetic.AutomorphicVarieties.StickelbergerElements.SamePrimesMulPow
+import Development.AutomorphicArithmetic.AutomorphicVarieties.StickelbergerElements.Bundle0001
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.StickelbergerTheorem.StickelbergerAt
 import Development.AutomorphicArithmetic.AutomorphicVarieties.StmtFields
 import Mathlib.RingTheory.Ideal.Norm.RelNorm

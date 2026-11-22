@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteInvolutionFixedUnitEqMulConj
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0004
 open scoped Classical
 
 private lemma normStep_algebra {T : Type} [CommRing T] (z zb u P a b bb v : T)

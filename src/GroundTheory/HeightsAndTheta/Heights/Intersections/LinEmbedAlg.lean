@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.Intersections.LinEmbedSt
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0010
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.CurvePt
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.MemMinimalPrimesOfMemDivSuppDivSupp
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PSpecialMultAt
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0009
 set_option maxSynthPendingDepth 1
 
 noncomputable section

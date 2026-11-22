@@ -1,8 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.ConvolutionSmoothL2
-import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.PointwiseKernelBound
-import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.FarTermsLatticeBound
-import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.CuspidalFrames
+import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.Bundle0001
+import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.Bundle0003
+import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.Bundle0002
 
 open MeasureTheory NumberField Finset
 

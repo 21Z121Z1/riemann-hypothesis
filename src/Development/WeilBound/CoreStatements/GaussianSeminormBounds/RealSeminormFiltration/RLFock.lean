@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFockMap
-import Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.RLActs
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsBoundPolyMulExp
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1041
+import Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.Bundle0008
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0016
 
 noncomputable section
 

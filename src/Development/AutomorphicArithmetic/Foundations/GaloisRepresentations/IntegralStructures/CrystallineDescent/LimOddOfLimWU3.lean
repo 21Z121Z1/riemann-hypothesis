@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsRegAlgTwistOfHalfIntegral
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.HasLevelOffOf
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0028
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0027
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.AllCoreOf
-import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.InertiaQuadraticRamification.ThreeApartOf
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.InertiaQuadraticRamification.Bundle0005
 
 noncomputable section
 

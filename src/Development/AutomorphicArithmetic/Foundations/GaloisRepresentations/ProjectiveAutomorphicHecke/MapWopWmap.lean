@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.TraceDefinitePairsEqAutomorphicTrace
+import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0001
 
 noncomputable section
 

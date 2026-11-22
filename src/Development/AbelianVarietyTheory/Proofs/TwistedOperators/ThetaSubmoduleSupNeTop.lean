@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HypothesesAbsDet
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsSubAug
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaSubmoduleChainBoundedStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EventuallyCompSideMulEq
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0054
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0026
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0429
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0023
 
 noncomputable section
 

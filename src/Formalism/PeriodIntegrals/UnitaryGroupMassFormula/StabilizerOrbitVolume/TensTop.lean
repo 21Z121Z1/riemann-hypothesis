@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.VolFromSW
+import Formalism.PeriodIntegrals.Bundle0025
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicLocalCompactness.T2SpaceTensorProductFiniteExtension
 
 noncomputable section

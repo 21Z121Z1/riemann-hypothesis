@@ -1,6 +1,6 @@
 import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.ProductThetaMem
 import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.TaylorMvLinear
-import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.StatementN
+import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.Bundle0002
 
 noncomputable section
 open scoped BigOperators ComplexConjugate

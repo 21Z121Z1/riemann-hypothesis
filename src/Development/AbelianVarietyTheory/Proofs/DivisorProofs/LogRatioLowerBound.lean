@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeasAtOf
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HostBoundHolds
-import Development.AbelianVarietyTheory.Definitions.Divisors.QuoIff
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightBoundHolds
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FundamentalDomainVolumeLowerStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2208
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2204
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0068
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2365
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3248
 
 set_option synthInstance.maxHeartbeats 400000
 

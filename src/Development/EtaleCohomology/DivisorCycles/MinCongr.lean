@@ -1,4 +1,4 @@
-import Development.EtaleCohomology.DivisorCycles.CycleCount
+import Development.EtaleCohomology.DivisorCycles.Bundle0001
 
 open Matrix PositivityTheory.AutomorphicGaloisHodgeTate.Div
 

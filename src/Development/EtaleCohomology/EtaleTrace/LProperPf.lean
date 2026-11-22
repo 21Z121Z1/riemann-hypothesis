@@ -1,4 +1,4 @@
-import Development.EtaleCohomology.EtaleTrace.LPdCut
+import Development.EtaleCohomology.EtaleTrace.Bundle0007
 
 noncomputable section
 open CategoryTheory AlgebraicGeometry

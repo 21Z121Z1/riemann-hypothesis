@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreGTCCurvPolyCut
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0113
 
 open Formalism.REAL Formalism.QuantumDeterminants Formalism.FourierDecayAlt
 

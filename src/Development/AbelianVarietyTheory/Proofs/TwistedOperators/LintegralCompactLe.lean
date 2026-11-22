@@ -2,10 +2,10 @@ import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
 import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
 import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
-import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.EqZeroOfLintegralEqZero
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0078
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralNormSqEqToL2
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SobolevIteratedOneParameterSubgroups
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0020
 
 noncomputable section
 

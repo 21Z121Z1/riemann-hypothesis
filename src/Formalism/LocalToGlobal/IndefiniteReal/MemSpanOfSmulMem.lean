@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteReal.AllPartsTransfer
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0002
 
 open Module NumberField IsDedekindDomain
 

@@ -1,7 +1,7 @@
-import Formalism.QuotientMetricDivisors.TheoremDivIneqRows
+import Formalism.QuotientMetricDivisors.Bundle0005
 import Formalism.LogFactorialIndices.SignedSubspaceIndex.SumInterlacedBoundFails
 import Formalism.LogFactorialIndices.SubspaceIndexSigned
-import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.TheoremDivIneq
+import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0006
 
 open Finset
 

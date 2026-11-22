@@ -4,8 +4,8 @@ import GroundTheory.PAdicHodge.UntiltApprox
 import GroundTheory.PAdicHodge.UntiltGalois
 import GroundTheory.PAdicHodge.UntiltGaloisCorr
 import GroundTheory.PAdicHodge.CompletedAlgClosure
-import GroundTheory.PAdicHodge.PerfectoidCharP
-import GroundTheory.PAdicHodge.PerfectoidCriterion
+import GroundTheory.PAdicHodge.Bundle0003
+import GroundTheory.PAdicHodge.Bundle0004
 import GroundTheory.PAdicHodge.TiltAlgClosed
 set_option maxSynthPendingDepth 1
 

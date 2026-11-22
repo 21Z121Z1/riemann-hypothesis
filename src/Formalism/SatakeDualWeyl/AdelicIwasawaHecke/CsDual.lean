@@ -1,6 +1,6 @@
 import Formalism.SatakeDualWeyl.DefsCS
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AdelstabL
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bridge
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0009
 
 noncomputable section
 

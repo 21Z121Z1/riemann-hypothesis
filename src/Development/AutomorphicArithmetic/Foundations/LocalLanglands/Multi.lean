@@ -4,7 +4,7 @@ import Development.WeilBound.CoreStatements.AutomorphicKernels.GrothendieckRingP
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.PublishedTheoremStatements.ProvedMore
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.PublishedTheoremStatements.BridgesMore
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.BernsteinZelevinskyGL.TopAdm
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsContractNeZero
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0640
 
 namespace UpperTheory.Zero.LLC.Pr
 

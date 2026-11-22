@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.ProjectiveLattices.FnTrdegOf
-import Formalism.LocalToGlobal.ProjectiveLattices.KapTrdegPfB
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0016
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0005
 
 noncomputable section
 

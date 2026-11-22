@@ -1,9 +1,9 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.CurveLocInst
-import Formalism.LocalToGlobal.ProjectiveLattices.LocRingPf
-import Formalism.LocalToGlobal.ProjectiveLattices.RealPtPf
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0049
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0047
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0045
 import Formalism.LocalToGlobal.ProjectiveLattices.PtOfSPf
-import Formalism.LocalToGlobal.ProjectiveLattices.SecPtRed
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0035
 
 set_option synthInstance.maxHeartbeats 400000
 set_option maxHeartbeats 4000000

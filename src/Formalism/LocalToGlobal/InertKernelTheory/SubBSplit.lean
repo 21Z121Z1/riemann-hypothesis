@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.InertKernelTheory.DelPolOfTies
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0017
 
 noncomputable section
 

@@ -1,6 +1,6 @@
-import Formalism.HermitianCurvature.StatementQr
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.LemmaDDeterminantIdentity
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QmMove
+import Formalism.HermitianCurvature.Bundle0004
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0059
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0019
 
 open Finset
 

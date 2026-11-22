@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrysActApply
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QActMSubAlgebraMap
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2264
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0096
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSimpleRingOfIsSemisimpleRing
 import GroundTheory.Brauer.BaseChangeCSA
 

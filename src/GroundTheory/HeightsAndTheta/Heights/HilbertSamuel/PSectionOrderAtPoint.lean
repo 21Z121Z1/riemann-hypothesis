@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSectionOrderAtPoint
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PLocalRep
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals.MemMCoordIdealOfAevalEqZero
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0043
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0035
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals.Bundle0001
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.MemDivSuppOfDivCycleNeZero
 set_option maxSynthPendingDepth 1
 

@@ -1,11 +1,11 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ToXQFst
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocRatio
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieOmegaLatticeVectorBundle
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegularFunctionalSpecializes
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0077
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0109
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0156
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0166
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexPointsClosureCoords
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackEquivalence
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsCocharacterLieModel
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0027
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0132
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField TensorProduct Filter Topology Matrix
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CompanionTheory.Ar
 open GlobalTheory.CompanionTheory.Ar.TorusUnif

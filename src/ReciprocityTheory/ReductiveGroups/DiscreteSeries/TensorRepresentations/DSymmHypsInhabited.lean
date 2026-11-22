@@ -1,6 +1,6 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.InhabCAR
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.Bundle0003
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.CARUnit
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.FockTA
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.Bundle0006
 
 noncomputable section
 

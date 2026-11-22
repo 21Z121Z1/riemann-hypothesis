@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.DegPolynomialIsHomogeneous
-import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.FlagIntegralRealTransferOfSyzygy
-import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.StaircaseIsHomogeneous
+import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Bundle0016
+import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Bundle0022
+import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Bundle0021
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.RestTerms

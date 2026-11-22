@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HasDerivAtOfContinuousHom
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WirtingerCombinationNeZero
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0014
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0026
 
 namespace PositivityTheory.Rg.Cz
 

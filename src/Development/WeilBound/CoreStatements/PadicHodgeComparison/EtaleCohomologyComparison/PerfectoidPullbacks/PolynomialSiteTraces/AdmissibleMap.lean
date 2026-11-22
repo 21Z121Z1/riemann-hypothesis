@@ -1,8 +1,8 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.InclStd
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.DividedPowerAlgebras.ExistsDividedPowersAug
-import Development.WeilBound.CoreStatements.AbelianHeightsDuality.DividedPowerAlgebras.FilIsSubDPIdeal
-import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsStdOfInjective
+import Development.WeilBound.CoreStatements.AbelianHeightsDuality.DividedPowerAlgebras.Bundle0002
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0023
 
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false

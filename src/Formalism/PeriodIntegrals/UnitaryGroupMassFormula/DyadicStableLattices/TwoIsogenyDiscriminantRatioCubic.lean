@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DyadicStableLattices.DeuringScale
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DyadicStableLattices.Bundle0001
 
 noncomputable section
 open Filter Topology

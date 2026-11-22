@@ -1,5 +1,5 @@
-import Development.WeilBound.ThetaLifts.LatticeBasics.ThConstMatch
-import Development.WeilBound.ThetaLifts.LatticeBasics.ThConstAn
+import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0027
+import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0010
 import Development.WeilBound.ThetaLifts.FrameEstimates.SquareIntegrableWeilRange
 import Development.WeilBound.ThetaLifts.CartanFactorisation.CartanConj
 

@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGermTop
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0297
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.TopCore
 
 namespace Formalism.FourierDecayAlt.P.CutBP.GT

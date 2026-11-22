@@ -1,9 +1,9 @@
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.GuDefs
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0009
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.BcPolar
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PartsConj
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharpolyScaledInverse
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoeDualRep
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CyclotomicBarContinuous
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0891
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0004
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0011
 
 open NumberField IsDedekindDomain Neutral.B1 Formalism.L2.Host Formalism.ConjugateSelfDual ReciprocityTheory.Gal Formalism.MainNotions.N Polynomial GlobalTheory.CuspRep GlobalTheory.HeckeGal
 open GlobalTheory.GalOfCusp UpperTheory.V UpperTheory.V.Af UpperTheory.V.Af.Bc UpperTheory.V.Af.Gu UpperTheory.V.Published GlobalTheory.MonoConj

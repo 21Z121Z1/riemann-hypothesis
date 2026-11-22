@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.PlaceAdaptation.AdaptStd
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExpansionBijectiveOverFields
-import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsIntOfVgeZero
-import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SecLinOfSecScal
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.ConstBFMul
+import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0026
+import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0021
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0010
 
 set_option autoImplicit false
 

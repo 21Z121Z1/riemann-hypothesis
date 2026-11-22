@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.ClosedOfOrthogonalBasis
-import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.CommCondition
+import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0018
 
 noncomputable section
 

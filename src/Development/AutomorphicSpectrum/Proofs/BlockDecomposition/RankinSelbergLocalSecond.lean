@@ -1,6 +1,6 @@
 import Mathlib
 import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.VerticalStrips.UnramifiedEulerProductIntegral
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerLocalTateIntegral
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0611
 
 noncomputable section
 

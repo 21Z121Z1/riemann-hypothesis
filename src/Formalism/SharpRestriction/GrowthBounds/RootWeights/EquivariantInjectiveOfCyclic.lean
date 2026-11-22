@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.RootWeights.EquivariantKillsCyclicOfZero
+import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0023
 
 noncomputable section
 

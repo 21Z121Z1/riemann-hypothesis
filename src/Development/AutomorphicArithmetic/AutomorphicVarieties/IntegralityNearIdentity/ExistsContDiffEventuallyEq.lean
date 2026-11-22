@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicArithmetic.AutomorphicVarieties.IntegralityNearIdentity.EqOneOfNear
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ConjugateOfRoots
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.WeightedSumBis
+import Development.AutomorphicArithmetic.AutomorphicVarieties.IntegralityNearIdentity.Bundle0001
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0009
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0068
 
 open scoped ContDiff
 

@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.PairingIndexBounds.RowActionCoefficients.AdmissibleInterpolation.AdmissibleGeneralLatticeTuple
-import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.InvarianceIffAdditiveMapsExist
+import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.Bundle0002
 
 noncomputable section
 

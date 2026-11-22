@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.SelfDualUnimodular.LocalLatticeDictionary.SelfDualRestr
+import Formalism.SelfDualUnimodular.LocalLatticeDictionary.Bundle0002
 
 noncomputable section
 

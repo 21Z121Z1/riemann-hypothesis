@@ -1,5 +1,5 @@
 import Mathlib
-import Development.WeilBound.CoreStatements.AbelianHeightsDuality.DividedPowerAlgebras.CompAdd
+import Development.WeilBound.CoreStatements.AbelianHeightsDuality.DividedPowerAlgebras.Bundle0002
 
 set_option autoImplicit false
 

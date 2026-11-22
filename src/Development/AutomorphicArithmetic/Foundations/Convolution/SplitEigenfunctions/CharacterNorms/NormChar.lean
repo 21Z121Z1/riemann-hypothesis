@@ -2,7 +2,7 @@ import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunct
 import GroundTheory.GlobalFields.ExistenceTheorem.ExistsIsAbelianGaloisRangeIdeleClassNormEqOfFini
 import GroundTheory.GlobalFields.HasseNorm
 import GroundTheory.GlobalFields.IdeleGroups.GaloisOnAdeles.Action
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Hilbert90AdeleRingTensorQuadratic
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0010
 
 noncomputable section
 

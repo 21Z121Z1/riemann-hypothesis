@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GramFormPhiStatement
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PhiCMinima
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0024
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0026
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.ReducedBasis
 
 set_option autoImplicit false

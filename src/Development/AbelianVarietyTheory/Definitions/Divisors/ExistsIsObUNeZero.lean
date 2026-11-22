@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsBasOpens
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0031
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsOb1NeZero
 
 set_option autoImplicit false

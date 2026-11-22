@@ -10,12 +10,12 @@ import Formalism.SharpRestriction.ParConsts
 import Formalism.SharpRestriction.GrowthBounds.WeilJacquetShalikaLaw
 import Formalism.SharpRestriction.GlobalSchurBounds.ProductFirstZerothParts
 import Formalism.SharpRestriction.CuspSpanNormBounds.CayleySignature
-import Formalism.SharpRestriction.ElevenLe
+import Formalism.SharpRestriction.Bundle0001
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-import Formalism.LocalRingCardinality.DataBu
+import Formalism.LocalRingCardinality.Bundle0001
 import Formalism.LocalRingCardinality.DataDIV
-import Formalism.LocalRingCardinality.DataDIVDefs
-import Formalism.LocalRingCardinality.DataErr
+import Formalism.LocalRingCardinality.Bundle0003
+import Formalism.LocalRingCardinality.Bundle0004
 import Formalism.LocalRingCardinality.DataForced
 import Formalism.LocalRingCardinality.DataParams₂
 import Formalism.LocalRingCardinality.PrincipalHermitianLattice

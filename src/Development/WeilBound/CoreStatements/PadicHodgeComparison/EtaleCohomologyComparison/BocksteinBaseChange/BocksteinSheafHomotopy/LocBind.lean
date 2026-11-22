@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0008
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.KummerCupProducts.IsKumCoc
 
 set_option backward.isDefEq.respectTransparency false

@@ -1,4 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRedC
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0014
 import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialPullbackStatement
 
 noncomputable section

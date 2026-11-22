@@ -1,7 +1,6 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.Statements
-import GroundTheory.HeightsAndTheta.Heights.IntegralModels.ChartGlueLoc
-import GroundTheory.HeightsAndTheta.Heights.IntegralModels.ChartGlueSat
+import GroundTheory.HeightsAndTheta.Heights.IntegralModels.Bundle0002
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Model

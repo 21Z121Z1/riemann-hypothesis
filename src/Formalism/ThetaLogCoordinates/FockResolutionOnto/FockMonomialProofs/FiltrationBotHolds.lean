@@ -1,6 +1,6 @@
-import Formalism.ThetaLogCoordinates.FockResolutionOnto.StatementB
+import Formalism.ThetaLogCoordinates.FockResolutionOnto.Bundle0001
 import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.MulEarlyLettersHolds
-import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.InitPartZeroXMul
+import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.Bundle0002
 
 namespace Formalism.InvariantFactorPaths.L4
 

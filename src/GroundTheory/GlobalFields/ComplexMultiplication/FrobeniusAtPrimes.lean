@@ -1,8 +1,7 @@
 import Mathlib
 import GroundTheory.GlobalFields.ComplexMultiplication.FrobeniusAtPrimesIsogeny
-import GroundTheory.GlobalFields.ComplexMultiplication.FrobeniusAtPrimesLocal
-import GroundTheory.GlobalFields.ComplexMultiplication.BadPrimesFinite
-import GroundTheory.GlobalFields.ComplexMultiplication.AlgebraicityDescent
+import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0017
+import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0003
 
 namespace GroundTheory.Global
 namespace Elliptic

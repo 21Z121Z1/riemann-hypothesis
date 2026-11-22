@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsProbabilityMeasureMuPart
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.BeSumStatementIffDefectSumBound
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0004
 import Formalism.LocalToGlobal.ProjectiveLattices.CompSplitPfB
-import Formalism.LocalToGlobal.ProjectiveLattices.CompSplitPfD
-import Formalism.LocalToGlobal.ProjectiveLattices.CompHt
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0012
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0015
 import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.FinitePlaceArcs.BeSumPf
 
 noncomputable section

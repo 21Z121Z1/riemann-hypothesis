@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.SemiposAtOfPositive
-import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsModelOf
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImageDegreePositiveStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsNefShiftedFubiniStudyOfShortGeneratorsStatement
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0076
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0072
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2513
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2927
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3166
 import Development.WeilBound.CoreStatements.NefModelVolumes.SelfInterBound
 
 set_option autoImplicit false

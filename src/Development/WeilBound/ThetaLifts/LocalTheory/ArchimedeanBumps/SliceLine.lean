@@ -1,8 +1,8 @@
 import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.TracePiReal
 import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.SliceAn
 import Development.WeilBound.ThetaLifts.SmallCones.ExpAlg
-import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.PlaneAd
-import Development.WeilBound.ThetaLifts.CartanFactorisation.TensOfEval
+import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.Bundle0001
+import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0006
 
 noncomputable section
 

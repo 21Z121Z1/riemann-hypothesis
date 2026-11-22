@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ExistsIntSmulIsAdicIntegralInTensorBasis
-import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.EqZeroOfIsIsoSub
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0002
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0004
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.Bundle0001
 
 noncomputable section
 

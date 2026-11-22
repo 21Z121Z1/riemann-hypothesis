@@ -1,7 +1,7 @@
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ConjEMemHostFIff
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.FrameFacts
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.SplitK
-import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.ExistsOpenNormalOrderOf
+import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Bundle0003
 
 open NumberField IntermediateField Ideal
 open scoped Pointwise

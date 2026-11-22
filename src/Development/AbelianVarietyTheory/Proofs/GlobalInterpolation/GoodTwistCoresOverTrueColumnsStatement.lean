@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.GoodTwistCoresOverTrueColumns
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0183
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.AndLeft
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ThetaChr
-import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.EventuallyAllScaleContextsAndOfBoth
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0043
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0005
 open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.Inhab Formalism.L2.Host GlobalTheory.EX GlobalTheory.EX.OB GlobalTheory.Mem GlobalTheory.Mem.Col2 GlobalTheory.Mem.Top GlobalTheory.Mem.Top.Bl GlobalTheory.Fc GlobalTheory.Fc.Cv NumberField
 attribute [local instance] Formalism.BasicNotions.Host.cmStar
 set_option maxHeartbeats 1000000 in

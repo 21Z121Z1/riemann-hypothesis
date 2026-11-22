@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ProjectionSurjective
-import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ExistsHasProjectiveDimensionLEOfResidueField
+import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0004
 import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.LocDim
 import ReciprocityTheory.CommutativeAlgebra.MaximalIdealSquares.RingKrullDimQuotientSpanSingletonAddOne
 

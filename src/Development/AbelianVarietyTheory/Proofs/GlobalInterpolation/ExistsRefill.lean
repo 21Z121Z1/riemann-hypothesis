@@ -1,10 +1,10 @@
 import Mathlib
-import Formalism.SharpRestriction.InertJacobiLevels.AsmIface
+import Formalism.SharpRestriction.InertJacobiLevels.Bundle0007
 import Formalism.LocalToGlobal.GlobalTheory.IsResidueClassZero
 import Formalism.SharpRestriction.GrowthBounds.SmallOrderPrimes
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.PairRowIffQdRows
-import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.DisjointExceptional
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0002
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0003
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound
 
 noncomputable section

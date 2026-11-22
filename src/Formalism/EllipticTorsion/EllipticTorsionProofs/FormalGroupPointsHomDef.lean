@@ -1,6 +1,6 @@
-import Formalism.EllipticTorsion.FormalGroupPointsParametrisation
+import Formalism.EllipticTorsion.Bundle0004
 import Formalism.EllipticTorsion.EllipticTorsionProofs.ExistsUnitFactor
-import Formalism.EllipticTorsion.EllipticTorsionProofs.WPoint
+import Formalism.EllipticTorsion.EllipticTorsionProofs.Bundle0001
 import Formalism.EllipticTorsion.EllipticTorsionProofs.WSubst
 import Formalism.EllipticTorsion.EllipticTorsionProofs.WChord
 import Formalism.EllipticTorsion.EllipticTorsionProofs.NDeriv

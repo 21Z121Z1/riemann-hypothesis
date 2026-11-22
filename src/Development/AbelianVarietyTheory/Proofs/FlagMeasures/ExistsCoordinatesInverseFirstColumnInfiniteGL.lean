@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsLatMeasurableConst
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CovolEqOfAedisjoint
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurePreservingCons
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LintegralPiProdTwo
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0200
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S GlobalTheory.Count GlobalTheory.FlagMeas GlobalTheory.FlagBase GlobalTheory.OrbitTerm
 
 noncomputable section

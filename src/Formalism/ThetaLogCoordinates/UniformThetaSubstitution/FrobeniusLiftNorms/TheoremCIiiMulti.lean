@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.HeckeOneLift
+import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0001
 import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FrobeniusLiftNorms.GaussElementarySymmetric
 
 noncomputable section

@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.LamRange
 import Development.AbelianVarietyTheory.Statements.SemistableTorsion.ImmersedBy
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SepAtBIff
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasTraitsP
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3485
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3504
 
 noncomputable section
 

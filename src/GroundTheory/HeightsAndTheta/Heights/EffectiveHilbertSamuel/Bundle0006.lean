@@ -1,0 +1,62 @@
+import Mathlib
+import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.InhabitantsExtDelta
+
+-- bundled from GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.StatementsBergmanComplete
+section
+set_option maxSynthPendingDepth 1
+
+namespace GroundTheory.Heights₂.Heights.EffectiveHS
+
+open MeasureTheory Set Filter Topology ReciprocityTheory.AnForm ReciprocityTheory.AnForm.M
+  GroundTheory.Heights₂.Heights.HilbertSamuel
+open scoped ENNReal
+
+noncomputable section
+
+def BergmanComplete.Statement : Prop :=
+  ∀ (D : ℕ) (U : Type) [TopologicalSpace U] (A : FinHolAtlas D U)
+    (L₂ L : HolLineBundle A) (m : ℕ) (ψ : Fin A.n → U → ℝ),
+    (∀ k, ContinuousOn (ψ k ∘ (A.chart k).symm) (A.chart k).target) →
+    (∀ k l, ∀ x ∈ (A.chart k).source ∩ (A.chart l).source,
+      ψ k x = ψ l x + Real.log (‖L₂.g k l x * L.g k l x ^ m‖ ^ 2)) →
+    ∀ G : ℕ → Fin A.n → U → ℂ, (∀ n, G n ∈ topSections A L₂ L m) →
+    (∀ n, topNormSq A ψ (G n) < ⊤) →
+    Tendsto (fun p : ℕ × ℕ => topNormSq A ψ (G p.1 - G p.2)) atTop (𝓝 0) →
+    ∃ F ∈ topSections A L₂ L m, topNormSq A ψ F < ⊤ ∧
+      Tendsto (fun n => topNormSq A ψ (G n - F)) atTop (𝓝 0)
+
+end
+
+end GroundTheory.Heights₂.Heights.EffectiveHS
+end
+
+-- bundled from GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.StatementsTopDensityChart
+section
+set_option maxSynthPendingDepth 1
+
+namespace GroundTheory.Heights₂.Heights.EffectiveHS
+
+open MeasureTheory Set Filter Topology ReciprocityTheory.AnForm ReciprocityTheory.AnForm.M
+  GroundTheory.Heights₂.Heights.HilbertSamuel
+open scoped ENNReal
+
+noncomputable section
+
+open ExtInhabitants
+
+def TopDensityChart.Statement : Prop :=
+  ∀ (D : ℕ) (U : Type) [TopologicalSpace U] (A : FinHolAtlas D U)
+    (L₂ L : HolLineBundle A) (m : ℕ) (ψ : Fin A.n → U → ℝ) (G : Fin A.n → U → ℂ),
+    (∀ k l, ∀ x ∈ (A.chart k).source ∩ (A.chart l).source,
+      ψ k x = ψ l x + Real.log (‖L₂.g k l x * L.g k l x ^ m‖ ^ 2)) →
+    (∀ k l, ∀ x ∈ (A.chart k).source ∩ (A.chart l).source,
+      G k x = jac A k l x * L₂.g k l x * L.g k l x ^ m * G l x) →
+    ∀ (c : Fin A.n) (B : Set (Fin D → ℂ)), MeasurableSet B → B ⊆ (A.chart c).target →
+      ∫⁻ y in B, ENNReal.ofReal (2 ^ D * ‖G c ((A.chart c).symm y)‖ ^ 2 *
+        Real.exp (-ψ c ((A.chart c).symm y))) ≤ topNormSq A ψ G
+
+end
+
+end GroundTheory.Heights₂.Heights.EffectiveHS
+end
+

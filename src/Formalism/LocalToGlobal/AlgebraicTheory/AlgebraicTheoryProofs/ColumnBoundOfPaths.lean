@@ -1,6 +1,5 @@
-import Formalism.LocalToGlobal.AlgebraicTheory.StatementStep
-import Formalism.LocalToGlobal.Divisibility.JetBounds.JetBoundsProofs.ValuationOfEntryBounds
-import Formalism.LocalToGlobal.Divisibility.JetBounds.JetBoundsProofs.NormEqOneOfNotMem
+import Formalism.LocalToGlobal.AlgebraicTheory.Bundle0001
+import Formalism.LocalToGlobal.Divisibility.JetBounds.JetBoundsProofs.Bundle0001
 import Formalism.LocalToGlobal.ExponentGrids.ExponentGridsProofs.PairBoundsBalanceCondition
 
 open Module NumberField IsDedekindDomain

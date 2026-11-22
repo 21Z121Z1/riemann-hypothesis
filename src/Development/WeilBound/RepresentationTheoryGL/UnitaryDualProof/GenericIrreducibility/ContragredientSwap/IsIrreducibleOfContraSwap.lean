@@ -1,5 +1,5 @@
 import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.GenericIrreducibility.CentralProd2
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CuspidalPairIrreducibleProduct
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0225
 
 noncomputable section
 

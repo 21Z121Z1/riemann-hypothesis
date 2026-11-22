@@ -1,8 +1,8 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteReal.CutTuples2
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0004
 import Formalism.LocalToGlobal.IndefiniteReal.CxLemmas
-import Formalism.LocalToGlobal.IndefiniteReal.CutPassage
-import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ValBasic
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0006
+import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0003
 
 open Module NumberField IsDedekindDomain
 open scoped Matrix ComplexOrder InnerProductSpace

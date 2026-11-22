@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PieriBlockIdeals.Statement
+import Formalism.PieriBlockIdeals.Bundle0001
 
 noncomputable section
 

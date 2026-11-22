@@ -1,8 +1,8 @@
 import Formalism.LocalRingCardinality.SpanPowerMembership.HaarDensityNeZero
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HaarScaling.MapEqSelfOfIterate
-import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.UnimodGA
+import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0008
 import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
-import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.MinfLev
+import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0003
 import Formalism.LocalToGlobal.IndefiniteReal.HaarTransfer.MinfUniqueP
 
 noncomputable section

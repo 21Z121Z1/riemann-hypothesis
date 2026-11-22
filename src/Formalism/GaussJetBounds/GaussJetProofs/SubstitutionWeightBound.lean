@@ -1,5 +1,5 @@
-import Formalism.GaussJetBounds.GenLogInverse
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.WtGeProd
+import Formalism.GaussJetBounds.Bundle0001
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0068
 
 noncomputable section
 open scoped BigOperators

@@ -1,6 +1,6 @@
 import Development.WeilBound.CoreStatements.AutomorphicKernels.LocalLanglandsExistence.KernelCond
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RecTransportFieldIso
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Mono0OfLpDimEqOne
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0051
 
 noncomputable section
 

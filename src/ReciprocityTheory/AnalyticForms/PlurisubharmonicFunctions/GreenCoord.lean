@@ -1,5 +1,5 @@
-import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.LeviOneEqLaplacianThm
-import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.LogInt
+import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0004
+import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0002
 
 open MeasureTheory
 open scoped Laplacian Pointwise

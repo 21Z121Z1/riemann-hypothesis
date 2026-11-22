@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RingSpecNormalisedCharacterEq
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.BlockSplitAll
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsobaricDiscreteSelfDualStrongMultiplicityOne
-import Formalism.LocalToGlobal.IndefiniteReal.ConjSubConjSub
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0015
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0006
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0023
 
 noncomputable section
 

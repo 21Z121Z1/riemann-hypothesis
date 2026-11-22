@@ -1,10 +1,10 @@
 import Mathlib
-import Formalism.HermitianLattices.GenusCovolBound
-import Formalism.HermitianLattices.HermitianLatticesProofs.GenusScale
-import Formalism.HermitianLattices.HermitianLatticesProofs.LocDual
+import Formalism.HermitianLattices.Bundle0002
+import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0004
+import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0003
 import Formalism.HermitianLattices.HermitianLatticesProofs.DualLattice
-import Formalism.HermitianLattices.HermitianLatticesProofs.IsomAct
-import Formalism.FockGram.FockGramProofs.CovolGram
+import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0001
+import Formalism.FockGram.FockGramProofs.Bundle0001
 
 open Module NumberField
 

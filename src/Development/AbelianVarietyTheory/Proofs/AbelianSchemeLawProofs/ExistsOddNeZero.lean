@@ -1,7 +1,7 @@
 import Mathlib
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
-import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.MulPullOfCubeOfSymm
-import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.HasEnoughRootsOfUnityGlobalSections
+import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0015
+import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0005
 
 set_option autoImplicit false
 

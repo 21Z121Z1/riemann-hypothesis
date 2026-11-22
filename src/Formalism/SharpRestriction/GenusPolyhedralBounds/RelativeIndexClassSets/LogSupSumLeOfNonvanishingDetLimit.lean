@@ -1,12 +1,12 @@
 import Mathlib
 import Formalism.LocalRingCardinality.DataArith
-import Formalism.FilteredPoleLength.LocalDescentLevels.InvFromBlocksApplyZero
-import Formalism.PeriodIntegrals.Transference
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.TransferenceMinima
+import Formalism.FilteredPoleLength.LocalDescentLevels.Bundle0005
+import Formalism.PeriodIntegrals.Bundle0010
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0020
 import Formalism.SharpRestriction.Divisibility.WeightAlgebra
-import Formalism.LogFactorialIndices.SignedSubspaceIndex.IdxBase
+import Formalism.LogFactorialIndices.SignedSubspaceIndex.Bundle0001
 import Formalism.LogFactorialIndices.SignedSubspaceIndex.IdxDet
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.PairedCharacterCondition
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0052
 
 noncomputable section
 

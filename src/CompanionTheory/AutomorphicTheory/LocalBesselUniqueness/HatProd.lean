@@ -1,5 +1,5 @@
 import CompanionTheory.AutomorphicTheory.LocalBesselUniqueness.OpLocal
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.BigCellHermitian
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0047
 
 open Formalism.REAL Formalism.QuantumDeterminants Formalism.FourierDecayAlt
 

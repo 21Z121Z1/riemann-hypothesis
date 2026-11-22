@@ -1,8 +1,8 @@
-import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
 import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
-import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.TameAtOne
-import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.PlaceS
-import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.IdemUniq
+import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0006
+import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0003
+import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0010
 import Formalism.LocalToGlobal.Divisibility.DefGroupLemmas
 import Mathlib.NumberTheory.NumberField.ClassNumber
 

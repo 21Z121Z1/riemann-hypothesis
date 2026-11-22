@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RTwist
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CapCommuteRtInfGL
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasInfCharInfCharOfCommute
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0125
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0128
 
 noncomputable section
 

@@ -1,6 +1,5 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.ChordSecondLogDeriv
-import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.PhNormClosed
-import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.JetExpShape
+import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.Bundle0001
+import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.Bundle0002
 
 noncomputable section
 open scoped BigOperators

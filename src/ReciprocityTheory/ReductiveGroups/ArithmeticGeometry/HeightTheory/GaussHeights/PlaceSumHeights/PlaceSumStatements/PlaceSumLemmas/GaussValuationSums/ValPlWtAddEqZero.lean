@@ -1,5 +1,5 @@
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.TheoremA
-import ReciprocityTheory.SemistableReduction.AlgAll
+import ReciprocityTheory.SemistableReduction.Bundle0023
 
 namespace PI.HtPlacesSumWork
 

@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.SmoothPartStable
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.EqOneOfPowClose
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0001
 
 noncomputable section
 

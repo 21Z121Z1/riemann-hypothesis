@@ -1,7 +1,7 @@
 import Mathlib
 import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.MixedModelPlanes.Imports
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenScaledInt
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IdeleCongruenceUnitCriterion
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1456
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0031
 
 open scoped TensorProduct NNReal Matrix
 open NumberField IsDedekindDomain MeasureTheory Filter Topology Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes

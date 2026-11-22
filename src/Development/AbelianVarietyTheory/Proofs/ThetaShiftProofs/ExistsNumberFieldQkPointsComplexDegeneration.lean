@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.ModelsAt
-import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsIsPullQk
+import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0014
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsGtExtOfTorsion
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.PsiEvenTauBimultDescendOfInjective
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsPullDegCancelTowerOfFields
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0069
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0075
 
 noncomputable section
 

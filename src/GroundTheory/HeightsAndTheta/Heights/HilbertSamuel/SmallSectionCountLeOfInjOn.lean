@@ -1,9 +1,9 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsArith
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsLocalRep
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsConstantShift
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0025
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0023
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PThmAExpand
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.EqSumMultihomogeneousComponents
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.Bundle0006
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

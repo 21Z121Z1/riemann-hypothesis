@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.ProfiniteCohomology.MackeyFormula.Homotopy
 import GroundTheory.ProfiniteCohomology.MackeyFormula.ConeHomotopy
-import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.HomologyMapPiLiftPiHomologyIsoHom
+import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.Bundle0001
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.ProfCoh

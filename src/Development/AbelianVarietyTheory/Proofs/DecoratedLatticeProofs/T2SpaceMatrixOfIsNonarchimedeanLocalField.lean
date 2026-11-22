@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PlacesToAdeles
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0014
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.IndicatorFunctionIdentity
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LinearChangeOfVariablesLocalFieldMatrix
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AddCharConductorAndHaarIntegersExist
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0033
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0023
 
 noncomputable section
 

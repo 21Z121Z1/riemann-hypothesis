@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.SectionOfLineBundleOne
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0014
 
 open NumberField ReciprocityTheory.ChartRestriction.G.Geo.Tor Formalism.L2.Pj
 

@@ -1,9 +1,7 @@
-import Development.WeilBound.ThetaLifts.TowerModels.TowerCodimensionTwoOf
-import Development.WeilBound.ThetaLifts.TowerModels.LeviEx
-import Development.WeilBound.ThetaLifts.TowerModels.PlaneSkew
-import Development.WeilBound.ThetaLifts.TowerModels.StabEx
-import Development.WeilBound.ThetaLifts.TowerModels.ModelEx
-import Development.WeilBound.ThetaLifts.TowerModels.WeilExOf
+import Development.WeilBound.ThetaLifts.TowerModels.Bundle0004
+import Development.WeilBound.ThetaLifts.TowerModels.Bundle0005
+import Development.WeilBound.ThetaLifts.TowerModels.Bundle0007
+import Development.WeilBound.ThetaLifts.TowerModels.Bundle0006
 
 noncomputable section
 

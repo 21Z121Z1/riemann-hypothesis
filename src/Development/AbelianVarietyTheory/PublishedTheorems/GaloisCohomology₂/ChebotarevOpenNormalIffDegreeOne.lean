@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GaloisSideTwistedSelmerAuxiliaryPrimes
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ChebotarevDegreeOneIffCheb
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0009
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0004
 
 noncomputable section
 

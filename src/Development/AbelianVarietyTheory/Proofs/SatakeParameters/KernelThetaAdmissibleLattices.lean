@@ -1,13 +1,13 @@
 import Mathlib
 import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.FdOfCharts
-import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.InvarianceRepresentativesLaw
+import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.Bundle0003
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NatCastMemOfPlace
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepComb
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.IntPull
 import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.FinalEq
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.AlternatingFormStandardHermitian
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThDistC
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ImportsLast
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0240
 
 noncomputable section
 

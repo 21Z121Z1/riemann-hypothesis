@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.StdBases
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.BeData
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0009
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0010
 import Formalism.LocalRingCardinality.CoeNeZeroOfNotMem
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.StatementB
-import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.BiextensionHypothesesOfLevelOne
+import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0003
 import Formalism.SharpRestriction.Divisibility.JetPolynomialLogs.OneLetterJetKernel
 
 noncomputable section

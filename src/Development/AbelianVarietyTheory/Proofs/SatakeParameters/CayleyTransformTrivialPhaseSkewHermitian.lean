@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemIntMat
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MulSelfEqOneIffOfLinearOrderedCommGroupWithZero
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MatrixLatticeIndexIntegralTranslationInvariance
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0125
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0127
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0135
 
 noncomputable section
 

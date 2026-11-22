@@ -1,4 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.L2BoundedOnSmooth
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.Bundle0013
 import Mathlib.Analysis.InnerProductSpace.TensorProduct
 
 noncomputable section

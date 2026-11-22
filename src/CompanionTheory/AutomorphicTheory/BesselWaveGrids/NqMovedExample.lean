@@ -1,4 +1,4 @@
-import CompanionTheory.AutomorphicTheory.BesselWaveGrids.NQText
+import CompanionTheory.AutomorphicTheory.BesselWaveGrids.Bundle0002
 
 namespace CompanionTheory.WaveGrid
 

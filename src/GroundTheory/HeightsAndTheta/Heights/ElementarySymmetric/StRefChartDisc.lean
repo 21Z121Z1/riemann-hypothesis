@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.StProjChartHolo
+import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.Bundle0029
 set_option maxSynthPendingDepth 1
 
 noncomputable section

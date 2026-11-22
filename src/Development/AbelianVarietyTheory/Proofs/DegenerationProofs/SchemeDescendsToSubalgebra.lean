@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Definitions.Degenerations.OfDerivationFn
 import Development.AbelianVarietyTheory.Definitions.Degenerations.PlOrdSomeOfAssociated
 import Development.AbelianVarietyTheory.Statements.SemistableTorsion.SemistableFin
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.MorphismsSpreadOutToFgSubalgebra
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.GlueModelsOverSubfield
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0028
 
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry
 open scoped CategoryTheory.Obj

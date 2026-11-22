@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.Covolume
-import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.GramLieEqConjTransposeMul
+import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.Bundle0005
 set_option maxSynthPendingDepth 1
 
 noncomputable section

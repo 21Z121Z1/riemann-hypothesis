@@ -1,8 +1,8 @@
-import Development.WeilBound.ThetaLifts.LocalTheory.UnramifiedMultiplicityOneProportional
+import Development.WeilBound.ThetaLifts.LocalTheory.Bundle0001
 import Development.WeilBound.ThetaLifts.LocalTheory.UnramifiedCohomology.MemLatWIff
-import Development.WeilBound.ThetaLifts.TowerModels.LeviAd
+import Development.WeilBound.ThetaLifts.TowerModels.Bundle0003
 import Development.WeilBound.CoreStatements.LocalThetaKernels.Locrep
-import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Vaceigen
+import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Bundle0005
 
 noncomputable section
 

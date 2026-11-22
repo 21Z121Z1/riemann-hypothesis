@@ -1,7 +1,7 @@
 import Development.WeilBound.CoreStatements.AutomorphicKernels.EisensteinSeriesG2.SiegelGrowthForms.SiegelMult
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinHalfHoldsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0651
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalFactorisationHolomorphic
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0017
 
 noncomputable section
 

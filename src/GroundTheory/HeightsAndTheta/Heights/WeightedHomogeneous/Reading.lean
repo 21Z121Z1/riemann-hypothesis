@@ -2,7 +2,7 @@ import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Objects
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Examples
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightObjects
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.KleimanNefness.TargetSt
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.KleimanNefness.Bundle0002
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

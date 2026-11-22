@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.AlgebraicTheory.StatementNorm
+import Formalism.LocalToGlobal.AlgebraicTheory.Bundle0002
 import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.QuadraticSemicharacterIdentityReformulated2
 import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.QuadraticSemicharactersFactTer
 

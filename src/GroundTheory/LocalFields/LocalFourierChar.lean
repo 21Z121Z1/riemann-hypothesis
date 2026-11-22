@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.LocalFields.LocalFourierHaar
-import GroundTheory.GlobalFields.TateThesis.NoSmallSubgroups
+import GroundTheory.GlobalFields.TateThesis.Bundle0002
 
 noncomputable section
 

@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsOmPinsEnl
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormalisedDataCoefficientMapInjective
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0580
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0556
 
 noncomputable section
 

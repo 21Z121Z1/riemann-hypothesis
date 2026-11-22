@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.GlobalTheory.GL3.PUnitBasis
-import Formalism.LocalToGlobal.GlobalTheory.GL3.IsometryLinkageTrivialLevel
+import Formalism.LocalToGlobal.GlobalTheory.GL3.Bundle0002
 
 noncomputable section
 

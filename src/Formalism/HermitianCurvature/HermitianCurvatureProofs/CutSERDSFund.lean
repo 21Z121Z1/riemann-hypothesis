@@ -1,6 +1,6 @@
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSERDSIpInt
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreGTRadAdj
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJASAPairLACHaarPos
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0211
 
 open MeasureTheory Filter Topology
 open scoped ContDiff

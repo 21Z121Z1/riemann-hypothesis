@@ -6,7 +6,7 @@ import Development.WeilBound.CoreStatements.PeriodRingComparison.PadicPeriodAlge
 import Development.WeilBound.CoreStatements.PeriodRingComparison.ThetaKernelDeRham.KerThetaEqSpanSymmTBdR
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Action
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.DeRhamMap
-import Development.WeilBound.CoreStatements.CrystallinePeriodRings.PhiGalCris
+import Development.WeilBound.CoreStatements.CrystallinePeriodRings.Bundle0001
 
 noncomputable section
 

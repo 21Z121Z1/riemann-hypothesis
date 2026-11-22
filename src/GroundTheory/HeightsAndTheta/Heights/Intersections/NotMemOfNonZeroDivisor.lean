@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.Intersections.ExistsFunFieldMulEq
-import GroundTheory.HeightsAndTheta.Heights.Intersections.ArithVarZero
-import GroundTheory.HeightsAndTheta.Heights.Intersections.NotIsHorizontalOfDimOne
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0013
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0033
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0029
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Inter

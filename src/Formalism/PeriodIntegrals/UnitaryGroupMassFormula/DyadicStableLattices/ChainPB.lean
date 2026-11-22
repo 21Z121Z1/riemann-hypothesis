@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.GoodTwo
+import Formalism.PeriodIntegrals.Bundle0024
 import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.MulStableIntegral
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DyadicStableLattices.ChainPA
 

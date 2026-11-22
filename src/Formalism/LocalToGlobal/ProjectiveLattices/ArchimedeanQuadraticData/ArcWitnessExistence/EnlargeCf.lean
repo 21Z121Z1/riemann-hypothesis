@@ -1,6 +1,6 @@
-import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.ArcLineFunctions.FunDef
-import Formalism.LocalToGlobal.ProjectiveLattices.AxHSupA
-import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
+import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.ArcLineFunctions.Bundle0001
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0044
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
 
 noncomputable section
 

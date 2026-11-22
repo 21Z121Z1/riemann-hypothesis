@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasDivPlace
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGDatumOneOneOne
-import Development.AbelianVarietyTheory.Definitions.Divisors.HxiTZeroComb
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0031
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsTjCorrDiagModel
-import Development.AbelianVarietyTheory.Definitions.Divisors.CompactBIffCompact
-import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicWittLattices.BcMapFst
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0012
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicWittLattices.Bundle0002
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GeometricFlagBases.IsGrRefl
 
 set_option autoImplicit false

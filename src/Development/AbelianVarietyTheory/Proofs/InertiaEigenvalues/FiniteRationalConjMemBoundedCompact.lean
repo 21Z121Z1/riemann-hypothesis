@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsWildInertiaCyclotomicElement
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GaloisSideTwistedSelmerAuxiliaryPrimes
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0009
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SemisimpleOfInjective
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverStd
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlob

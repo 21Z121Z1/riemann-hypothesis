@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.GlobalFields.SemilocalAlgebras.Galois
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FixedUnitsFinitelyManyNorms
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0054
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsRootSelectionUnitaryRankOne
 
 noncomputable section

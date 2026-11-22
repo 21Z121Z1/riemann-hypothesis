@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.FrobeniusLocalPairs.LiftFactorization
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HaarIntegralNormalizedOpenCompactEqIntegralDiv
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevOpMemFixed
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1266
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1197
 
 noncomputable section
 

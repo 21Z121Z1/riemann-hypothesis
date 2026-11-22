@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FieldValuesMemFixedField
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.OmPinsTr
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0019
 
 noncomputable section
 

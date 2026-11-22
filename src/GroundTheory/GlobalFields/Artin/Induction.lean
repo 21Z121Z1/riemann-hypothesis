@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.GlobalFields.Artin.InductionLocal
+import GroundTheory.GlobalFields.Artin.Bundle0004
 set_option maxSynthPendingDepth 1
 
 noncomputable section

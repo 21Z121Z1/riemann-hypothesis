@@ -1,7 +1,7 @@
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.AmpRelAtPt
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.AmpRootJac
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.AmpRootHaar
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.AmpOrbQuot
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0033
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0035
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0038
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0036
 import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusCoefficientMemLp.AmpRootCut
 import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeCSB
 

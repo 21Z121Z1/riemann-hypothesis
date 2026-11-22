@@ -1,8 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogDerivativeBound
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NegSumLogDerivNonneg
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogDerivDirichletLFunctionLocalZeroSum
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NegReLogDerivPrincipalLFunctionLe
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0006
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0015
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0027
 
 open Complex DirichletCharacter ArithmeticFunction MeasureTheory
 open scoped ComplexConjugate

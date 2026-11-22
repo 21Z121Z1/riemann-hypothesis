@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ModelOverModPLatticeEigenSplit
-import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsLatticeFamily
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0006
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.BundleChernComparison
 open MvPolynomial GlobalTheory.CompanionTheory.Ar.Num GroundTheory.Heights₂.Heights.NumbersDVR
 open ReciprocityTheory.ChartRestriction.G.Geo (ChartBundle chartRing)

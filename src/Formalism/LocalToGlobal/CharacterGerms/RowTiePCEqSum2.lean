@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.CharacterGerms.RowTiePCEqOf
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0025
 
 noncomputable section
 

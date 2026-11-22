@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.KernelsLattice
-import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.DetIneq
+import GroundTheory.HeightsAndTheta.Heights.Bundle0001
+import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.Bundle0001
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

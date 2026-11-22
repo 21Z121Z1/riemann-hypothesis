@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LaurentConstEqOfTendsto
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0771
 
 noncomputable section
 

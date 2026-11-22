@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.TateCohomology.TateTheorem
-import GroundTheory.TateCohomology.TateCupUnit
+import GroundTheory.TateCohomology.Bundle0011
 set_option maxSynthPendingDepth 1
 
 open CategoryTheory MonoidalCategory Limits Rep

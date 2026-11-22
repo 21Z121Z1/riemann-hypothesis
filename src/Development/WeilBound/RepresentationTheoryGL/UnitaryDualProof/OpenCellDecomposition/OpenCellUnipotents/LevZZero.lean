@@ -1,6 +1,6 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.BernsteinExponentBounds.IsInvForm
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OpenFns
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0369
 
 noncomputable section
 

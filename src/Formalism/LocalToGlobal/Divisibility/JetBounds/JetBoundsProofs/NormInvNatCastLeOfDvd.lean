@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.Divisibility.JetBounds.Statement
+import Formalism.LocalToGlobal.Divisibility.JetBounds.Bundle0001
 
 open Module NumberField IsDedekindDomain
 open scoped BigOperators

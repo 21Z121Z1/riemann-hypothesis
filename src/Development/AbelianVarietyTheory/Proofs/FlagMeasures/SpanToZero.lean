@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.IsTermOver
-import Development.AbelianVarietyTheory.Definitions.Foundations.IsHermND
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementReferenceCompactSubgroup
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GgNone
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0001
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0002
 
 open ValuativeRel Formalism.MainNotions.S Formalism.MainNotions.S.Loc GlobalTheory.HL
 open scoped Pointwise ENNReal Classical

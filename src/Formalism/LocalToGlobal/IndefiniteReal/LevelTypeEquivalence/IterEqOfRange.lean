@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.IterSymmR
-import Formalism.FlagUnipotentLattices.KappaAssemblyOf
+import Formalism.FlagUnipotentLattices.Bundle0010
 
 namespace Formalism.IndefR.Eqv
 

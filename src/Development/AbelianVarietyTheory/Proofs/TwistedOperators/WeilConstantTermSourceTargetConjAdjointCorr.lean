@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CompatibleThetaRestrictions
-import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.AdjointIsotropicDecomposition
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CartFrSgn
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0026
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0027
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0265
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.CovolOneIntegralAdd
 
 noncomputable section

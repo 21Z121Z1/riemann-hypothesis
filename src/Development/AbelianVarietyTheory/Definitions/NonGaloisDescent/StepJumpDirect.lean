@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.LevelLetterCocycles.CongruenceSingleEndomorphism
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GlobalCore
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0012
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0007
 
 noncomputable section
 

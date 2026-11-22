@@ -1,9 +1,9 @@
-import Formalism.SharpRestriction.GlobalSchurBounds.IntegralityOfRationalityLocal
+import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0005
 import Formalism.LocalToGlobal.GroupLattices.Joint0
 import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.CharacterFiniteLevelZeroOfForms
 import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLocInd
-import Formalism.LocalToGlobal.GlobalTheory.GL6.DiamondPreservesRationalFormZero
-import Formalism.LocalToGlobal.GlobalTheory.GL6.CongruenceNoKernelOfHeckeRamified
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0002
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0003
 
 noncomputable section
 

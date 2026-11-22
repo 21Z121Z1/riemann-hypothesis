@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsAdapted
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.NormalizedDegreeOrthogonalSumStatement
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0006
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0032
 import GroundTheory.HeightsAndTheta.Heights.Slopes.PCanonicalFiltration
-import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.DegreeTopEqArithDegree
-import GroundTheory.HeightsAndTheta.Heights.CountingLowerBound.PInteriorDichotomy
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ClearDenominatorsLattice
+import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0004
+import GroundTheory.HeightsAndTheta.Heights.CountingLowerBound.Bundle0001
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0006
 
 noncomputable section
 

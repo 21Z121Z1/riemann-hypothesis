@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GaugeUnfold
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
 import Formalism.LocalToGlobal.GlobalTheory.GL5.Statement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SumPlacesEqTrace
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.EventuallyFinEqOne
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0073
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsUniqueIdeleOfLinearEquivQuotientLocal
 
 open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes

@@ -1,13 +1,11 @@
 import Formalism.SharpRestriction.FamCore
-import Formalism.SharpRestriction.ElevenLe
+import Formalism.SharpRestriction.Bundle0001
 import Formalism.LocalRingCardinality.DataParams
 import Formalism.LocalRingCardinality.DataDIV
-import Formalism.LocalRingCardinality.DataTies
-import Formalism.LocalRingCardinality.DataParamsT
-import Formalism.LocalRingCardinality.KernelPlaceMeanBound
-import Formalism.LocalRingCardinality.DataExtra
-import Formalism.LocalRingCardinality.DataDIVDefs
-import Formalism.LocalRingCardinality.DataGatTies
+import Formalism.LocalRingCardinality.Bundle0003
+import Formalism.LocalRingCardinality.Bundle0006
+import Formalism.LocalRingCardinality.Bundle0007
+import Formalism.LocalRingCardinality.Bundle0001
 import Formalism.SharpRestriction.GrowthBounds.IsResidueClassZero
 
 noncomputable section

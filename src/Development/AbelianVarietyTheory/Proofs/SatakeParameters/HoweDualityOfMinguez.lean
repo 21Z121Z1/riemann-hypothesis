@@ -1,9 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HypothesesAbsDet
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweDualityGL
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.OmQuotientTransposeInverseStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.OmQuotientTwistDetStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.OmQuotientTrivialRankZeroStatement
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0024
 
 noncomputable section
 

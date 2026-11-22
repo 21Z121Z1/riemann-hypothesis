@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.AlgebraMapMemInvariants
-import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.PpLeHLD
+import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.Bundle0007
+import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.Bundle0015
 import Formalism.SharpRestriction.LevelLetterCocycles.RelayGeneralCaseOfAdmissible
 import Formalism.SharpRestriction.LevelLetterCocycles.JumpsLetOfWin
 

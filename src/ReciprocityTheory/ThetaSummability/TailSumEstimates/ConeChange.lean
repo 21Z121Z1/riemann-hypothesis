@@ -1,4 +1,4 @@
-import ReciprocityTheory.ThetaSummability.TailSumEstimates.ConeDefs
+import ReciprocityTheory.ThetaSummability.TailSumEstimates.Bundle0001
 
 namespace ReciprocityTheory.ThetaSummability.Est
 

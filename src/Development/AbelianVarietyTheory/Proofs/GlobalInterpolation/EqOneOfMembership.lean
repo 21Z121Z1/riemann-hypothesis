@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.SharpRestriction.GlobalSchurBounds.ThickPlacesCorollaryOfAnyTranslate
-import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.TrivialColumnStabiliser
+import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0012
 
 noncomputable section
 

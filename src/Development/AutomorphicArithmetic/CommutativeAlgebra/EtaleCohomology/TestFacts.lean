@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.ZeroPull
-import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.SplitRules
+import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.Bundle0002
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.AcrisKummerUnits.GalOCOkToOC
 
 set_option backward.isDefEq.respectTransparency false

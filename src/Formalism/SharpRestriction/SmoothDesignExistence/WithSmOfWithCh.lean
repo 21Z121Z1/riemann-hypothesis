@@ -1,8 +1,8 @@
 import Formalism.SharpRestriction.DesignExistsOfChoices
 import Formalism.SharpRestriction.GlobalSchurBounds.AlgebraicJets
-import Formalism.SharpRestriction.Divisibility.PrinLevClass
-import Formalism.SharpRestriction.LevelLetterCocycles.AlignN
-import Formalism.SharpRestriction.AdmissibleParameterJoins.DGamMink
+import Formalism.SharpRestriction.Divisibility.Bundle0001
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0014
+import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0004
 import Formalism.SharpRestriction.SmoothDesignExistence.DesignExistsDes
 
 noncomputable section

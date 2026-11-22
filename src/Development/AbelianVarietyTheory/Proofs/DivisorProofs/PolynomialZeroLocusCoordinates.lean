@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.UnipotentAdelicQuotients.ClassNumberFinite
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormGroupToPadicPointsDegreeOneEqUnitaryPoints
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TC
+import Formalism.UnipotentAdelicQuotients.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1074
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0190
 
 noncomputable section
 

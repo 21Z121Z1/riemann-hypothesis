@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.ScGapBig
+import Formalism.PeriodIntegrals.Bundle0010
 
 namespace PI.UnitaryGroupMassFormula.ScGapBig
 

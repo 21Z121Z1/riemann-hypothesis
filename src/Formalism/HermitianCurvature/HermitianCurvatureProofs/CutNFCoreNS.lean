@@ -1,5 +1,5 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutNFCoreN
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutNFHatProdKBStmt
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0316
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0313
 
 namespace Formalism.FourierDecayAlt.P.CutBP
 

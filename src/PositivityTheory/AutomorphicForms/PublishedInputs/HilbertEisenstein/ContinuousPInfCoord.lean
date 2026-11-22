@@ -1,9 +1,9 @@
 import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.SSmooth
 import GroundTheory.GlobalFields.TateThesis.TateThetaDecay
-import GroundTheory.GlobalFields.TateThesis.AdelePoissonUniform
+import GroundTheory.GlobalFields.TateThesis.Bundle0009
 import GroundTheory.GlobalFields.TateThesis.GlobalZetaFinite
-import GroundTheory.GlobalFields.TateThesis.EulerFactorsInfinite
-import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.ClosedOneU
+import GroundTheory.GlobalFields.TateThesis.Bundle0008
+import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.Bundle0011
 
 noncomputable section
 

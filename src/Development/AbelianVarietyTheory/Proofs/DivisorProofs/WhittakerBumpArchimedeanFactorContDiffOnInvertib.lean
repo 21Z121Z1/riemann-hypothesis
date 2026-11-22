@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SuperDiagEqSdM
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermAutomorphicFormIntegral
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0887
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0961
 
 noncomputable section
 

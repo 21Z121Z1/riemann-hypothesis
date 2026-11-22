@@ -1,5 +1,4 @@
-import Formalism.SharpRestriction.LevelLetterCocycles.LocalFormOfThreeInputs
-import Formalism.SharpRestriction.LevelLetterCocycles.FinrankMaxUnramifiedSubfieldPadicFinExtPos
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0013
 
 noncomputable section
 

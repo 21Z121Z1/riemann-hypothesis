@@ -1,4 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.Resolvent
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.Bundle0004
 
 noncomputable section
 

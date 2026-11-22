@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.GlobalTheoremInputs
-import Development.AutomorphicArithmetic.CharacterBoxes.ExistsPageN
+import Formalism.SharpRestriction.Bundle0002
+import Development.AutomorphicArithmetic.CharacterBoxes.Bundle0001
 
 noncomputable section
 

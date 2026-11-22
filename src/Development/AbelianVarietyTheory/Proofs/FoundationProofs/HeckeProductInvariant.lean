@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.EigenOfTwoStep
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0009
 open scoped MatrixGroups TensorProduct
 open Matrix GlobalTheory.KZ
 

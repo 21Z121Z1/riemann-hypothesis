@@ -1,5 +1,5 @@
-import Formalism.CyclotomicNorms.StatementI
-import Formalism.GaloisIrreducibility.GaloisIrreducibilityProofs.PowerPCycle
+import Formalism.CyclotomicNorms.Bundle0001
+import Formalism.GaloisIrreducibility.GaloisIrreducibilityProofs.Bundle0001
 
 open Finset Module
 

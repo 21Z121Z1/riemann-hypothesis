@@ -1,4 +1,4 @@
-import Formalism.GaussJetBounds.StatementJ
+import Formalism.GaussJetBounds.Bundle0004
 import Formalism.GaussJetBounds.GaussJetProofs.ThmAOp
 
 noncomputable section

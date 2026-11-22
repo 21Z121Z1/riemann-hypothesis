@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.ProjectiveLattices.PetersonNormSubspace
-import Formalism.LocalToGlobal.ProjectiveLattices.CompOrd
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0012
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.TheoremA
 
 noncomputable section

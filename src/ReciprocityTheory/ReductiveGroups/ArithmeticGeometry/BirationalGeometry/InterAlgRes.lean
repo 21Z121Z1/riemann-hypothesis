@@ -1,7 +1,7 @@
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterPC
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.ExistsAtlas
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0011
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0009
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.SNCstep
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.Immersion
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0010
 
 noncomputable section
 

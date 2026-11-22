@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.ColMeas
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LangXRoot
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0009
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0030
 
 open GlobalTheory.Col PowerSeries
 

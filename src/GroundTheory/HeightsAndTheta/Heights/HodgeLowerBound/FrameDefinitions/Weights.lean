@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.HasCoverByOne
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.EqZeroOfIsIsoSub
-import GroundTheory.HeightsAndTheta.Heights.Regularisation.BoundedStatements
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.Bundle0001
+import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0002
 set_option maxSynthPendingDepth 1
 
 noncomputable section

@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.GL2Classical.Smooth
-import GroundTheory.AutomorphicForms.HarishChandraCentre
+import GroundTheory.AutomorphicForms.Bundle0015
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.SmoothKZ
 
 open NumberField Matrix

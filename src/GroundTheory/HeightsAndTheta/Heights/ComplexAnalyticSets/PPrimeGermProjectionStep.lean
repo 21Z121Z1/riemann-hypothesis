@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StPrimeGermProjectionStep
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StGermGeneralCoordinates
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0097
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0056
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.ComplexSets

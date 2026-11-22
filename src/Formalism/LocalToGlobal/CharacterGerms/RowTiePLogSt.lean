@@ -1,6 +1,6 @@
-import Formalism.LocalToGlobal.CharacterGerms.RowTiePLogExSt
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0013
 import Formalism.LocalToGlobal.CharacterGerms.RowTiePGerm
-import Formalism.LocalToGlobal.CharacterGerms.PoincEx
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0001
 
 set_option autoImplicit false
 

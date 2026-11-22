@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.CharacterGerms.Interface
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0005
 
 noncomputable section
 open scoped BigOperators

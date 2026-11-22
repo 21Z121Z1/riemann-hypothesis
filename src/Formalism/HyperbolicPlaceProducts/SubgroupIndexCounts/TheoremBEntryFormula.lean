@@ -1,5 +1,5 @@
-import Formalism.HyperbolicPlaceProducts.DetIndexProductHyperbolicInequality
-import Formalism.HyperbolicPlaceProducts.SubgroupIndexCounts.ArithmeticLatticeHypothesis
+import Formalism.HyperbolicPlaceProducts.Bundle0001
+import Formalism.HyperbolicPlaceProducts.SubgroupIndexCounts.Bundle0001
 
 namespace Formalism.SLP.GlobalBoundRefinements.P
 open Formalism.SLP.GlobalBoundRefinements

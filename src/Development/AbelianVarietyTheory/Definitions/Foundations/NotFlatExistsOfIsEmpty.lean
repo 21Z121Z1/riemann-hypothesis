@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsFlatSecRankZero
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsNumberFieldPoint
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIsUnf
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0363
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0114
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.MemRangeOfIsAlgebraicRatFun
 
 noncomputable section

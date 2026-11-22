@@ -1,9 +1,8 @@
 import Mathlib
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.HostFacts
-import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.BadPrimesPeriodBound
-import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.ColumnAvoidanceConditions
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BaseFieldsDefiniteLaws
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ChainCompatibleTwistTransport
+import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.Bundle0007
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0105
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0089
 
 noncomputable section
 

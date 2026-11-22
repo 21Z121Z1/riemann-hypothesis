@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0003
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MemPtsOverOfMemMcPts
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.OneMemChartLatNm
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0076
 open MvPolynomial ReciprocityTheory.ChartRestriction.G.Geo GlobalTheory.CompanionTheory.Ar
 
 noncomputable section

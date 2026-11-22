@@ -1,12 +1,12 @@
 import Mathlib
-import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0001
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshRegMax
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.PChartLeviThGe
-import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.StLemmaEWeight
+import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Bundle0016
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.PLemmaETailLog
-import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.PKaehlerBound
-import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.PLogNormHolo
-import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.EnergyStep
+import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Bundle0004
+import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Bundle0011
+import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Bundle0012
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.AnalyticLimit

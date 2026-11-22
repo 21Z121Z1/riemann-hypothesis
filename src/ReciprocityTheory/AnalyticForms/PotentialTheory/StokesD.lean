@@ -1,5 +1,5 @@
 import ReciprocityTheory.AnalyticForms.PotentialTheory.StokesC
-import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffAtOfIsPotential
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0002
 
 namespace ReciprocityTheory.AnForm.M
 

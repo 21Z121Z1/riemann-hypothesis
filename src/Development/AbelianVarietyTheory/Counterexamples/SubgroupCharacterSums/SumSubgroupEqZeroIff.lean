@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.UnipotentAdelicQuotients.CuspEllipticValues
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CentralIdempotentIrreducibleCharacterProps
+import Formalism.UnipotentAdelicQuotients.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0168
 
 noncomputable section
 open CategoryTheory CuspElliptic

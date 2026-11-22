@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.InertJacobiLevels.TiesCore
+import Formalism.SharpRestriction.InertJacobiLevels.Bundle0002
 import Formalism.SharpRestriction.InertJacobiLevels.TieTTwValsOfMem
 
 noncomputable section

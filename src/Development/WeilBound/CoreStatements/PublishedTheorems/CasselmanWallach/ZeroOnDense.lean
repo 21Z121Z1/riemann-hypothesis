@@ -1,5 +1,5 @@
 import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.SmoothSeminormAndSobolevBounds
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CasselmanWallachOfHyp
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0246
 
 open MeasureTheory Matrix Formalism.REAL Formalism.MainNotions.S Formalism.L2.Theta GlobalTheory.SmoothGlob GlobalTheory.LowTypeDetermined GlobalTheory.TypeSum
 open scoped InnerProductSpace

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MinkowskiLinearForms
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0004
 
 namespace GlobalTheory.HermClass
 

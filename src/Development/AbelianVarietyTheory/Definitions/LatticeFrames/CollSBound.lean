@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.RowsPtAt
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0010
 
 noncomputable section
 open scoped Classical

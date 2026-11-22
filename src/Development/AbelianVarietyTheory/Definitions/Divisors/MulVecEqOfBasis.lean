@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.TieTest
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0070
 
 noncomputable section
 

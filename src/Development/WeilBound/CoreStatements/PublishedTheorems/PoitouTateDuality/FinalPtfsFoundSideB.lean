@@ -1,5 +1,5 @@
 import Mathlib
-import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.FinalPtfsFoundSideA
+import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.Bundle0009
 
 noncomputable section
 

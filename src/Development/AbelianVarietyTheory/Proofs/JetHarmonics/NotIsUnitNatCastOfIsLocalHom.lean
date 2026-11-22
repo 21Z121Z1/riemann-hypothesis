@@ -1,6 +1,6 @@
 import Mathlib
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartFH
-import Development.AbelianVarietyTheory.BlockTheory.JetGauges.OriginChartMultiplication
+import Development.AbelianVarietyTheory.BlockTheory.JetGauges.Bundle0007
 
 set_option autoImplicit false
 

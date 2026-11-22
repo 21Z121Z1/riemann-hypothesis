@@ -1,4 +1,4 @@
-import Formalism.PieriBlockIdeals.PieriColumnMinors.RowGenDerivative
+import Formalism.PieriBlockIdeals.PieriColumnMinors.Bundle0008
 
 open MvPolynomial
 

@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.GoodChi
-import Development.AbelianVarietyTheory.Proofs.CharacterTheory.FrobeniusTorusMinpolyDegreeRootPowerSum
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0007
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CentralBinomLePowCardPrimesBetween
 
 noncomputable section

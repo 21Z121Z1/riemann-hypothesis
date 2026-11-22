@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.SiegelToroidalIntegral
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0011
 import Development.AbelianVarietyTheory.Statements.SemistableTorsion.ImmersedBy
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0001
 
 noncomputable section
 

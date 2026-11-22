@@ -1,8 +1,8 @@
 import Mathlib
 import ReciprocityTheory.AnalyticForms.MaIntEmpty
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Statements
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Characterised
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.MahlerSectionBasic
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0002
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0007
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.ComplexSets

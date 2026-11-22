@@ -1,5 +1,5 @@
 import Formalism.WindowSums.Statement
-import Formalism.WindowSums.AnnihilatorPolynomials.DistinctTerms
+import Formalism.WindowSums.AnnihilatorPolynomials.Bundle0001
 
 noncomputable section
 

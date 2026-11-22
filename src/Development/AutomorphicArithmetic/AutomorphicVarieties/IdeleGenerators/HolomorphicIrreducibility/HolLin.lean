@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.WeightChange
-import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.HeckeOperatorsCommuteOnAutomorphicForms
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.PrincipalCongruenceAntitone
+import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.Bundle0064
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0089
 
 open NumberField IsDedekindDomain Neutral.B1 Formalism.L2.Host GlobalTheory.CuspRep UpperTheory.V.Af
 

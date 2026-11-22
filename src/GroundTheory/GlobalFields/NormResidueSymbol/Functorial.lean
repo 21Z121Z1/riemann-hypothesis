@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.GlobalFields.NormResidueSymbol.FunctorialFinite
-import GroundTheory.GlobalFields.NormResidueSymbol.FunctorialInfinite
+import GroundTheory.GlobalFields.NormResidueSymbol.Bundle0001
 
 namespace GroundTheory.Global
 

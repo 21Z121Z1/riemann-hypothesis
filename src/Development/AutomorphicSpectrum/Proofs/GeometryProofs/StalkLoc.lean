@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeTateWeilOpenChart
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapFromSpecStalk
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SectionExtendsFromStalkPullbackStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionLiftIsClosedImmersionStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SectionEqZeroOfValuesStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0025
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0015
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0019
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0026
 
 noncomputable section
 

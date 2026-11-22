@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.LocalRingCardinality.PrincipalHermitianLattice
-import Formalism.LocalRingCardinality.DataKap
+import Formalism.LocalRingCardinality.Bundle0004
 import Formalism.SharpRestriction.ParConsts
 import Formalism.SharpRestriction.LevelLetterCocycles.ArithmeticCylinders
-import Formalism.CyclotomicNorms.NonsquarefreeBounds.NonsquarefreeMonicBoundHolds
+import Formalism.CyclotomicNorms.NonsquarefreeBounds.Bundle0001
 
 noncomputable section
 

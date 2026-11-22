@@ -1,8 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TwistStep
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FiltrationZeroMembership
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DeRhamExtensionPotentiallySemistableStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DeRhamBlockTriangularDiagonalBlocksStatement
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0011
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0796
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0375
 
 noncomputable section
 

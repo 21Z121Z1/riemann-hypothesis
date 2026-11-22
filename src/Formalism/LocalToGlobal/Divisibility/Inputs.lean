@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.Divisibility.RowLat
-import Formalism.QuotientMetricDivisors.DivIntoDualShift
+import Formalism.QuotientMetricDivisors.Bundle0002
 import Formalism.QuotientMetricDivisors.ScalarLiftLowerBoundFull
 import Formalism.ThetaSupremumBounds.DivIneqExplicit6
 import Formalism.ThetaSupremumBounds.StatementCB

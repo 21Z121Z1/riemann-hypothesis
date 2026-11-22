@@ -1,6 +1,6 @@
 import Formalism.LagrangeIdealLifts.Statement
-import Formalism.WindowSums.AnnihilatorPolynomials.ValProd
-import Formalism.WindowSums.AnnihilatorPolynomials.ZpowVal
+import Formalism.WindowSums.AnnihilatorPolynomials.Bundle0001
+import Formalism.WindowSums.AnnihilatorPolynomials.Bundle0002
 
 noncomputable section
 

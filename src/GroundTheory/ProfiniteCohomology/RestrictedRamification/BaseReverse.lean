@@ -1,8 +1,8 @@
 import Mathlib
 import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.CompactCupEqCompactCupRight
 import GroundTheory.ProfiniteCohomology.PoincarePairs.IsDiscreteRepResHomCoindRes
-import GroundTheory.TateCohomology.CupGraded
-import GroundTheory.ProfiniteCohomology.Bridge
+import GroundTheory.TateCohomology.Bundle0007
+import GroundTheory.ProfiniteCohomology.Bundle0003
 import GroundTheory.ProfiniteCohomology.PoincarePairs.ConeProduct
 set_option maxSynthPendingDepth 1
 

@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.TieTwRecOf
+import Formalism.LocalToGlobal.Bundle0003
 import Formalism.SharpRestriction.Divisibility.HookProducts.HhOfInputs
 import Formalism.LocalToGlobal.Divisibility.DivisibilityRemainder.SharpFunctions.MidExp
 import Formalism.LocalToGlobal.Divisibility.DivisibilityRemainder.SharpFunctions.PointB

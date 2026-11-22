@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CurveDVRSpecialization.SelfTwistEigenvalues.CurveDVR
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsRingEquivPowerSeriesOfComplete
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0021
 open Polynomial Matrix
 
 private theorem UpperTheory.V.Pr.T.curveNorm_coeffField {A : Type} [CommRing A] [IsLocalRing A]

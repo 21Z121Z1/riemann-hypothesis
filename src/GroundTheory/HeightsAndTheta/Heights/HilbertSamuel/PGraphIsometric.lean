@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Cartier
-import GroundTheory.HeightsAndTheta.Heights.HeightComparison.IsMultiHomogIdealIff
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PChangeOfModel
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0002
+import GroundTheory.HeightsAndTheta.Heights.HeightComparison.Bundle0003
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0077
 set_option maxSynthPendingDepth 1
 
 noncomputable section

@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsAuxiliaryVectorWittDec
-import GroundTheory.GlobalFields.Adele.IntegersLattice
+import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0006
+import GroundTheory.GlobalFields.Adele.Bundle0001
 import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.LevGapTop
 
 noncomputable section

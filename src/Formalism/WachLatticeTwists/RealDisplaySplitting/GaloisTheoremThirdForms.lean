@@ -1,5 +1,5 @@
 import Formalism.WachLatticeTwists.RealDisplaySplitting.RealDisplayProofs.GaloisTheoremWithGenerator
-import Formalism.WachLatticeTwists.RealDisplaySplitting.RealDisplayProofs.TheoremFiveArbitraryGroup
+import Formalism.WachLatticeTwists.RealDisplaySplitting.RealDisplayProofs.Bundle0002
 import Formalism.WachLatticeTwists.RealDisplaySplitting.RealDisplayProofs.GaloisThirdWithGenerator
 
 variable [hT2Core : Fact ReciprocityTheory.ChartRestriction.T2.Core]

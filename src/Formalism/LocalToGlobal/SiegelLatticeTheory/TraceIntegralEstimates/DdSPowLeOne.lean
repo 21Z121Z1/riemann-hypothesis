@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.SiegelLatticeTheory.TraceIntegralEstimates.LatSpanLeSpan
+import Formalism.LocalToGlobal.SiegelLatticeTheory.TraceIntegralEstimates.Bundle0010
 
 noncomputable section
 

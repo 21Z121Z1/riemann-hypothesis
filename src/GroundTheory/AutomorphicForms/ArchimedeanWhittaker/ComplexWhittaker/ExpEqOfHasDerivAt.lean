@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.ArchimedeanWhittaker
+import GroundTheory.AutomorphicForms.Bundle0023
 import GroundTheory.AutomorphicForms.RealGroupsIwasawa
 
 namespace GroundTheory.Automorphic.ArchWhittakerC

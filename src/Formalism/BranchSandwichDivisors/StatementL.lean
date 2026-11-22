@@ -1,6 +1,5 @@
 import Mathlib
-import Formalism.HarderNarasimhan.QuotRealize
-import Formalism.HarderNarasimhan.StatementMod
+import Formalism.HarderNarasimhan.Bundle0002
 import Formalism.QuotientMetricDivisors.Statement
 
 open Module NumberField IsDedekindDomain

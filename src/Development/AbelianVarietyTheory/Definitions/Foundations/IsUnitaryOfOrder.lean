@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.UnitaryNorms.MemFIffReal
-import Development.AbelianVarietyTheory.Definitions.Foundations.ValuedAlgebraMapEqOne
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0002
 
 noncomputable section
 section

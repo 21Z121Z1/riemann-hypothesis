@@ -1,5 +1,4 @@
-import Formalism.LatticeTheta.LatticeThetaProofs.InnerDualVecBasis
-import Formalism.LatticeTheta.LatticeThetaProofs.FundamentalDomainEqPreimage
+import Formalism.LatticeTheta.LatticeThetaProofs.Bundle0002
 
 open MeasureTheory Set Complex
 open scoped RealInnerProductSpace

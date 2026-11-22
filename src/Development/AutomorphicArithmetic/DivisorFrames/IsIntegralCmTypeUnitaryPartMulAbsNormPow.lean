@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.UnitaryNorms.CharProd
+import Formalism.LocalToGlobal.UnitaryNorms.Bundle0002
 
 open NumberField IsDedekindDomain
 

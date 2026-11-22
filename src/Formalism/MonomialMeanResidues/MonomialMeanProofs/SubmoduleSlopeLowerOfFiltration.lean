@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.MonomialMeanResidues.FilteredDegree
 import Formalism.HarderNarasimhan.ShiftInvariance
 import Formalism.MeanHeightDescent.AverageDegreeBounds.GoodBadCut
-import Formalism.MeanHeightDescent.AverageDegreeBounds.SpanMuMin
+import Formalism.MeanHeightDescent.AverageDegreeBounds.Bundle0003
 
 open Module NumberField Finset
 

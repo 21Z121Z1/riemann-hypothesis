@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Purity
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0705
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIrreducibleFixed
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.ClozelPurity
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0005
 
 open NumberField GlobalTheory.CuspRep
 

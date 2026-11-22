@@ -1,12 +1,11 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.LocDefs
-import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.GeAlgTop
-import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.EptInt
-import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.PtInSmul
-import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.XvanExt
-import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.LocVanP
+import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.Bundle0002
+import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.Bundle0012
+import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.Bundle0004
+import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.Bundle0010
 import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.LMemMax
-import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.OrdFlag
-import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.NormO
+import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.Bundle0003
+import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.Bundle0006
 open NumberField IsDedekindDomain Formalism.ConjugateSelfDual ReciprocityTheory.Gal IsLocalRing UpperTheory.V UpperTheory.V.Base UpperTheory.V.Alg UpperTheory.V.HV UpperTheory.V.GradeZeroInterpolatingElement
 
 private theorem mem_max_iff {l : ℕ} [Fact l.Prime] (c : Coef l) (b : c.O) :

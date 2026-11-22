@@ -1,5 +1,5 @@
-import ReciprocityTheory.DualLattices.UnramifiedCokernelLowerBoundStatement
-import ReciprocityTheory.DualLattices.MapSmulOneMulVec
+import ReciprocityTheory.DualLattices.Bundle0017
+import ReciprocityTheory.DualLattices.Bundle0006
 
 noncomputable section
 

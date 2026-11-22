@@ -2,7 +2,7 @@ import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalys
 import GroundTheory.AutomorphicForms.ReductionCore
 import GroundTheory.AutomorphicForms.ReductionMeasure
 import GroundTheory.AutomorphicForms.HaarSK
-import GroundTheory.HeightsAndTheta.Theta.FundDomain
+import GroundTheory.HeightsAndTheta.Theta.Bundle0001
 
 noncomputable section
 

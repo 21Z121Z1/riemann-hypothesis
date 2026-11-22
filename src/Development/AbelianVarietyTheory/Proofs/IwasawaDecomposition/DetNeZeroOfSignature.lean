@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.GqPtOfNeZeroIff
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsColReduced
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0587
 
 noncomputable section
 

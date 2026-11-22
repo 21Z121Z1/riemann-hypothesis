@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.LUnH
-import Development.AbelianVarietyTheory.Definitions.Foundations.HahnPowOrderLeadingCoeff
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SpecialLinearGroupIntMapZmodSurjective
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0087
 
 open GlobalTheory.KZ GlobalTheory.K4 UpperTheory.Kd.K4 Polynomial
 open scoped Matrix MatrixGroups

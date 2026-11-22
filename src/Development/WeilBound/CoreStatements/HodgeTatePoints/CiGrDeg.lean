@@ -1,8 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Statements.GeometryStatements.CurveSemiAbelianConjecture
-import Development.AutomorphicSpectrum.Statements.GeometryStatements.SeparableFormGroupElementFixesUniquePositiveLine
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0006
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Proportional
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GrIsGenAt
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0026
 import Development.WeilBound.CoreStatements.HodgeTatePoints.CiEigVal
 import Development.WeilBound.CoreStatements.HodgeTatePoints.CiGrAlg
 

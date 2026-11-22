@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.ExponentGrids.SecondComplementColumnExponents
 import Formalism.SizeWindowBrackets.SlopesFromSizeAndCount
-import Formalism.LocalRingCardinality.DataErr
+import Formalism.LocalRingCardinality.Bundle0004
 import Formalism.LocalToGlobal.GlobalTheory.IsResidueClassZero
 
 open Module NumberField IsDedekindDomain Finset

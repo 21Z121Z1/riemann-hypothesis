@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.IsSelfDualE
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0013
 
 open NumberField
 open Formalism.BasicNotions Formalism.L2.DIV

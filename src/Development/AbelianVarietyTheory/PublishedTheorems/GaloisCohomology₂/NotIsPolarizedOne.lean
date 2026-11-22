@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.GaloisRepOfPolarizedCuspidal
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Mono0OfLpDimEqOne
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPadicAlgClRingEquivComplexCompEqOfCountabl
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0009
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0051
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0024
 
 noncomputable section
 

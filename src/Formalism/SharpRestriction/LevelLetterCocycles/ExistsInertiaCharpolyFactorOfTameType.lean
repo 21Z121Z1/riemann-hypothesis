@@ -1,6 +1,6 @@
 import Formalism.SharpRestriction.LevelLetterCocycles.SumRepresentations
 import Formalism.PadicSubsetSums.StableGradedCounts.CardLtAddCardGtAddCardEq
-import Formalism.PadicSubsetSums.StableGradedCounts.ContinuousCoeffCharpolyRev
+import Formalism.PadicSubsetSums.StableGradedCounts.Bundle0001
 
 noncomputable section
 

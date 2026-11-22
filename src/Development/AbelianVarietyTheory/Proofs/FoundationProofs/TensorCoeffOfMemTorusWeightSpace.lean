@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsLeftCoactionIffIsCoactionComm
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0009
 
 open TensorProduct Coalgebra AddMonoidAlgebra DirectSum
 

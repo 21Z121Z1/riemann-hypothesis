@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Gramlow
-import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Grampsd
+import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Bundle0001
 
 open Matrix
 open scoped ComplexOrder

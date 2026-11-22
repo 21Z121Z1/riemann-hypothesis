@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LatticeRigidity.HeightMinimum.PackingCountGeometricMean
+import Formalism.LatticeRigidity.HeightMinimum.Bundle0001
 
 open Matrix
 open scoped ENNReal

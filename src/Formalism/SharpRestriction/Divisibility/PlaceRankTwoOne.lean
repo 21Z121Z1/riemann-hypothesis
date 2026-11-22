@@ -2,8 +2,8 @@ import Mathlib
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 import Formalism.LocalRingCardinality.DataParams₂
 import Formalism.LocalRingCardinality.DataDIV
-import Formalism.LocalRingCardinality.DataDIVDefs
-import Formalism.LocalRingCardinality.DataKap
+import Formalism.LocalRingCardinality.Bundle0003
+import Formalism.LocalRingCardinality.Bundle0004
 import Formalism.SharpRestriction.ParamsHeightRankConstant
 
 noncomputable section

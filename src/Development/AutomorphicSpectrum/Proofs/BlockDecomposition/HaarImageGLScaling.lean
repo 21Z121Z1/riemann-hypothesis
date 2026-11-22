@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdjOne
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HaarModulusProductFormulaTotallyReal
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0773
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0193
 import GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.AdicFrames.SwmConeHaar
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerVolume.TensTop
 noncomputable section

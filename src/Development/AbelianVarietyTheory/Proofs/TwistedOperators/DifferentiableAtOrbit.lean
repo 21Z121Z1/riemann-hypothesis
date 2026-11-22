@@ -1,10 +1,10 @@
 import Mathlib
-import Formalism.PeriodIntegrals.DSInfCharCap
+import Formalism.PeriodIntegrals.Bundle0022
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.PseudoCoefficientSeparation
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
-import Formalism.RealPlaceAnalysis.StatementE
-import Formalism.RealPlaceAnalysis.StatementB
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DRepAddAndBracket
+import Formalism.RealPlaceAnalysis.Bundle0003
+import Formalism.RealPlaceAnalysis.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0987
 
 noncomputable section
 

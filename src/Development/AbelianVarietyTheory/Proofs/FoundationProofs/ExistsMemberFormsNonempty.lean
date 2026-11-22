@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalRingCardinality.SpanPowerMembership.FmZeroHLatEmpty
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsColumnChainNonempty
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0182
 open Formalism.BasicNotions NumberField
 
 noncomputable section

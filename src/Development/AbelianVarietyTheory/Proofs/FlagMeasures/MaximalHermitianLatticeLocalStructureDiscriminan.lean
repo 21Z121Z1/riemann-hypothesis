@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ChartGen
 import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.MaxMass
-import Formalism.HermitianLattices.HermitianLatticesProofs.LocDual
+import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0003
 import Formalism.HermitianLattices.HermitianLatticesProofs.DualLattice
 import Formalism.HermitianLattices.HermitianLatticesProofs.UnimodUnramUnique
 open NumberField Matrix GlobalTheory.Mass Formalism.HermitianLatticesTheory

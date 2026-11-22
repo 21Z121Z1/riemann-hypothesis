@@ -1,9 +1,9 @@
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.RedStatus
 import Mathlib
-import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModJInt
-import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModJUnram
-import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.FgClose
-import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.TorStatus
+import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0015
+import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0027
+import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0034
+import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0030
 
 namespace ReciprocityTheory.ChartRestriction.L1
 

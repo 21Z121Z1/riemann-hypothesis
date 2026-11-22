@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.AdmissibleHarmonicLattice
+import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.Bundle0003
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsPowLeHalfPart
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.FiniteResidueFieldAdicCompletionIntegers
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsForallAbvSubLt
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0002
 
 set_option autoImplicit false
 

@@ -1,13 +1,13 @@
 import Mathlib
 import Formalism.SharpRestriction.Divisibility.SchurIrreducible
-import Formalism.LocalToGlobal.BesselHermitianTheta.DefsReal
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0001
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PderivEqZeroOfColOp
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ColumnDegrees
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DerivationProdPow
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsEqMulMinorPoly
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RowColWeightsAgree
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FnShapeOfJointShape
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LengthAddLeOfDisjoint
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0086
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0090
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0088
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0089
 
 noncomputable section
 

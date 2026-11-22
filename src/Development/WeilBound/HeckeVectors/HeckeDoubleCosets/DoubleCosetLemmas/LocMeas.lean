@@ -1,9 +1,9 @@
-import Development.WeilBound.HeckeVectors.HeckeDoubleCosets.DoubleCosetLemmas.ExtendedCharacterCongrOfTame
+import Development.WeilBound.HeckeVectors.HeckeDoubleCosets.DoubleCosetLemmas.Bundle0001
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsNrm
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0389
 import GroundTheory.GlobalFields.KummerTheory.LocalIndexAtPlace
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LocalFieldTopologyNormBallsStatement
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.MatrixHaarRightTranslateStatement
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0010
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0015
 
 noncomputable section
 

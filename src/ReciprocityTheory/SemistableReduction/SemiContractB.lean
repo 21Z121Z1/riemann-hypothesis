@@ -1,5 +1,5 @@
-import ReciprocityTheory.SemistableReduction.LatSemiSt
-import ReciprocityTheory.SemistableReduction.SemiContractA
+import ReciprocityTheory.SemistableReduction.Bundle0008
+import ReciprocityTheory.SemistableReduction.Bundle0003
 
 namespace ReciprocityTheory.MultiplicativeHeights
 

@@ -1,5 +1,4 @@
-import Formalism.LocalToGlobal.NumberFieldFamilies.ThetaCS
-import Formalism.LocalToGlobal.NumberFieldFamilies.ThetaCT
+import Formalism.LocalToGlobal.NumberFieldFamilies.Bundle0002
 
 noncomputable section
 

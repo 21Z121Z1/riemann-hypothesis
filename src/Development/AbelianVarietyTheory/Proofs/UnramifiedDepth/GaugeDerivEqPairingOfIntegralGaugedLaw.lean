@@ -1,10 +1,9 @@
 import Mathlib
-import Formalism.LocalToGlobal.CharacterGerms.NondegenerateCharts
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0013
 import Formalism.LocalToGlobal.CharacterGerms.RowTieSelf
-import Formalism.LocalToGlobal.CharacterGerms.BlockAdmissibleChart
-import Formalism.LocalToGlobal.CharacterGerms.NegMem
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0011
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartF
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.LogChain
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.Bundle0007
 import Development.AbelianVarietyTheory.Definitions.TeichmullerDepth.HasTeich
 
 noncomputable section

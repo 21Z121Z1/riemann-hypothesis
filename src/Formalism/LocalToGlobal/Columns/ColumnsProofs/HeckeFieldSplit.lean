@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.Columns.ColumnsProofs.HFSCoef
-import Formalism.LocalToGlobal.Columns.PathCountSymmetricHolds
+import Formalism.LocalToGlobal.Columns.Bundle0012
 import Formalism.LocalToGlobal.Divisibility.LiftLatInst
 
 open Module NumberField IsDedekindDomain Polynomial

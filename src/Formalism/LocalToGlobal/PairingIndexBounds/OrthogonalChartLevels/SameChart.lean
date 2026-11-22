@@ -1,7 +1,7 @@
 import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.UnitOfBr
 import Formalism.LocalToGlobal.HermitianColumns.ZeroPointScaledByCharacter
-import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.PosCompatOfBase
-import Formalism.LocalToGlobal.InertKernelTheory.DefsRepRec
+import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.Bundle0004
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0013
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.Divisibility.ColPins
+import Formalism.LocalToGlobal.Divisibility.Bundle0004
 import Formalism.LocalToGlobal.Divisibility.HeckeCSDICommTrRep
 
 open Module NumberField IsDedekindDomain

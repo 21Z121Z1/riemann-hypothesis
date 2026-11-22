@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicArithmetic.CMTraceForms.Places
+import Development.AutomorphicArithmetic.CMTraceForms.Bundle0002
 
 open NumberField TensorProduct
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Pdiv.AvDefs Formalism.L2.Pj UpperTheory.Depth

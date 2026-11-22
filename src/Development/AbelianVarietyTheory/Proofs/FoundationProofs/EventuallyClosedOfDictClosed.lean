@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.WeightDictionaryLifting
-import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.JumpDictionary
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SecondTwistSmallIffExactlyAtAndFinClause
+import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.Bundle0010
+import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.Bundle0009
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0053
 
 noncomputable section
 

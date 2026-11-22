@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothReal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramSchmidtFlagDomainOrthonormalFramesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0978
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1037
 
 noncomputable section
 

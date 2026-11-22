@@ -1,6 +1,6 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.SignedActionTensor
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.IsKUnitaryOfIsInfUnitary
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.LayerBasic
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.Bundle0004
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.Bundle0002
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.Bundle0001
 
 noncomputable section
 

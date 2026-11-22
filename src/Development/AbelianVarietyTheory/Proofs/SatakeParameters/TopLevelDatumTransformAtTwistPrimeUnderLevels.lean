@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.XiTopEqProd
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0278
 import Formalism.LocalToGlobal.Columns.XtPhiTopGCongr
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.TopLawQ
 import Formalism.LocalToGlobal.Columns.ChainTopLawTw

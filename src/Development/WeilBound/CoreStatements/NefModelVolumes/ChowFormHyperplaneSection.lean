@@ -1,6 +1,4 @@
-import Development.WeilBound.CoreStatements.NefModelVolumes.ChowFormOfIntegralVersion
-import Development.WeilBound.CoreStatements.NefModelVolumes.HyperplaneSectionDivCycle
-import Development.WeilBound.CoreStatements.NefModelVolumes.ChowFormUniqueUpToConstant
+import Development.WeilBound.CoreStatements.NefModelVolumes.Bundle0001
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Assembly
 
 open MvPolynomial

@@ -2,9 +2,9 @@ import Mathlib
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.PoincareConstantEq
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.LocWSOf
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.Vanish
-import Formalism.PeriodIntegrals.BesselMapUniq
-import Formalism.LocalRingCardinality.DataTies
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsFundOne
+import Formalism.PeriodIntegrals.Bundle0022
+import Formalism.LocalRingCardinality.Bundle0003
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
 
 noncomputable section
 open scoped Classical ENNReal

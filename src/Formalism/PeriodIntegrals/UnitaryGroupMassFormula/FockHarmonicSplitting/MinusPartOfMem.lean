@@ -1,6 +1,6 @@
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FockHarmonicSplitting.FockCore
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FockHarmonicSplitting.ConjTransposeOneKronecker
-import Formalism.PeriodIntegrals.FockDegreeTwoParts
+import Formalism.PeriodIntegrals.Bundle0018
 
 noncomputable section
 

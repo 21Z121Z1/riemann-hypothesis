@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.ChartRank.HypLift
+import Formalism.SharpRestriction.GrowthBounds.ChartRank.Bundle0002
 
 noncomputable section
 

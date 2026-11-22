@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ETExSt
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ETPointStatement
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0032
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0024
 
 set_option autoImplicit false
 

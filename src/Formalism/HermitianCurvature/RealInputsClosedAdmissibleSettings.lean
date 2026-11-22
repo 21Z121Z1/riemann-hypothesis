@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.StatementKB
+import Formalism.HermitianCurvature.Bundle0006
 import Formalism.HermitianCurvature.PositionExpansionTopCoefficients
 import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
 

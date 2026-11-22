@@ -1,5 +1,5 @@
 import Formalism.LocalRingCardinality.SpanPowerMembership.RankRecordRowDimensionZero
-import Formalism.LocalRingCardinality.DataKap
+import Formalism.LocalRingCardinality.Bundle0004
 
 noncomputable section
 

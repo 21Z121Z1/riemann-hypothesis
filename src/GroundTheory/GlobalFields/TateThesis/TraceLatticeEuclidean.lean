@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.GlobalFields.TateThesis.TraceDualLattice
+import GroundTheory.GlobalFields.TateThesis.Bundle0005
 import GroundTheory.GlobalFields.TateThesis.LatticePoissonBasic
 
 namespace GroundTheory.Global

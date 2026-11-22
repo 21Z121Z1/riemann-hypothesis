@@ -2,8 +2,8 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.CMLattices.LamLetters
 import Development.AbelianVarietyTheory.Definitions.CMLattices.ExistsIsThetaDegOfIsLocalModel
 import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.UnivFrame
-import Formalism.LocalToGlobal.ProjectiveLattices.VAtVNeBot
-import Formalism.LocalToGlobal.CMDeterminantIdeals.StatementS
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
+import Formalism.LocalToGlobal.CMDeterminantIdeals.Bundle0002
 
 set_option autoImplicit false
 

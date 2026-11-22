@@ -1,4 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.OneParam
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Bundle0001
 import Formalism.RealPlaceAnalysis.QuotientSettingHolds
 
 noncomputable section

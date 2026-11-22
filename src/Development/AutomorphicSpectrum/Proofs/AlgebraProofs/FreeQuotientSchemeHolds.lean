@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AutomorphicSpectrum.PublishedTheorems.Algebra₂.RegularHypothesesAndConclusion
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.HasAffineChartId
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.QuotientOfAffineChartCoverStatement
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FreeActionAffineChartStatement
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.OrbitAffineNeighbourhoodStatement
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0055
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0062
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0058
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0069
 
 noncomputable section
 

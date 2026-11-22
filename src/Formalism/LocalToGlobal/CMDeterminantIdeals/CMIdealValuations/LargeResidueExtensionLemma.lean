@@ -1,6 +1,5 @@
-import Formalism.LocalToGlobal.CMDeterminantIdeals.StatementS
-import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ExistsEvalNeZeroOfTotalDegreeLt
-import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ExistsMonicIrreducibleCardGt
+import Formalism.LocalToGlobal.CMDeterminantIdeals.Bundle0002
+import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.Bundle0001
 
 noncomputable section
 

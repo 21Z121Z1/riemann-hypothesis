@@ -1,5 +1,5 @@
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.CoefWeightedG
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.CoefLocGap
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0010
 
 noncomputable section
 

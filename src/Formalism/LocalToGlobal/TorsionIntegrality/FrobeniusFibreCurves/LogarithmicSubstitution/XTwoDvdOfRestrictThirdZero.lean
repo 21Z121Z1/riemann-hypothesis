@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.StatementD
+import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.Bundle0002
 import Formalism.FormalGroupLog.FormalGroupLogProofs.ChainRule
 
 noncomputable section

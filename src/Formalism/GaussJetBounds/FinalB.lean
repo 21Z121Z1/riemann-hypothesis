@@ -1,9 +1,8 @@
 import Formalism.GaussJetBounds.GaussJetProofs.ConstantCoeffQuadSer
-import Formalism.GaussJetBounds.GaussJetProofs.MfactEqProdUniv
+import Formalism.GaussJetBounds.GaussJetProofs.Bundle0003
 import Formalism.GaussJetBounds.GaussJetProofs.OneRow
 import Formalism.GaussJetBounds.GaussJetProofs.FirstRowMinorDegreeLeOne
-import Formalism.GaussJetBounds.GaussJetProofs.IntegralOperatorsOnJets
-import Formalism.GaussJetBounds.GaussJetProofs.GaussB
+import Formalism.GaussJetBounds.GaussJetProofs.Bundle0007
 
 universe u
 

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.PrimesInProgressionNonempty
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.PrimesAPIntervalOfPrimesRel
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.PrimesInProgressionsRelativeErrorStatement
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0039
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0131
 
 namespace UpperTheory.Lit
 

@@ -5,7 +5,7 @@ import Formalism.WachLatticeTwists.CharacterSplitJumps.Statement
 import ReciprocityTheory.Hypotheses.GalCohDefs
 import ReciprocityTheory.ReductiveGroups.TraceFormulas.LatDefs
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LevRepZApply
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteCardTorsionLevelFractionRingQuot
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0153
 open ReciprocityTheory.Gal
 
 noncomputable section

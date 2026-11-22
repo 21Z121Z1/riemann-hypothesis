@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.QuotientHomNonvanishingBound
 import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
-import Formalism.WeaklyAdmissibleFiltrations.StatementTor
+import Formalism.WeaklyAdmissibleFiltrations.Bundle0001
 import ReciprocityTheory.BasicDefinitions.AdRep
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.PowerSeriesOneAddConstMulXMulInv
 

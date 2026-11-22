@@ -1,0 +1,344 @@
+import Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaRigidity.ColumnConjugationMeasure
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0125
+
+-- bundled from Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaRigidity.ThetaDecayingFunction
+section
+noncomputable section
+
+open NumberField IsDedekindDomain MeasureTheory Matrix Topology Filter
+open GlobalTheory.CuspGeneric GlobalTheory.CuspRep GlobalTheory.UnitaryBC GlobalTheory.DiscSpec PositivityTheory.jumpWindows PositivityTheory.RgJS
+open GroundTheory.Automorphic GroundTheory.Automorphic.FourierWhittaker GroundTheory.Automorphic.Reduction GroundTheory.Automorphic.Spherical
+open scoped ENNReal ComplexConjugate
+
+attribute [local instance] GlobalTheory.LocalData.complRel GlobalTheory.LocalData.isLocalField
+
+namespace PositivityTheory.AdelicQuotientData
+
+namespace ThetaDecayingFunction
+
+theorem key {x C1 D : ℝ} {a k : ℕ} (ha : a ≠ 0) (hx : 0 < x) (hC : 0 < C1) (hD : 0 < D) :
+    ((D ^ ((k : ℝ)⁻¹) * (x / C1) ^ ((a : ℝ)⁻¹)) ^ a)⁻¹ * x = C1 * D ^ (-(a : ℝ) / k) := by
+  rw [mul_pow, ← Real.rpow_mul_natCast hD.le, Real.rpow_inv_natCast_pow (div_nonneg hx.le hC.le) ha,
+    show -(a : ℝ) / k = -((k : ℝ)⁻¹ * a) by ring, Real.rpow_neg hD.le]
+  have : 0 < D ^ ((k : ℝ)⁻¹ * a) := Real.rpow_pos_of_pos hD _
+  field_simp
+
+theorem le_height {x C1 D h : ℝ} {a k : ℕ} (ha : a ≠ 0) (hx : 0 < x) (hC : 0 < C1) (hD : 0 < D)
+    (ht : 0 < h / D ^ ((k : ℝ)⁻¹)) (hb : x ≤ C1 * (h / D ^ ((k : ℝ)⁻¹)) ^ a) :
+    D ^ ((k : ℝ)⁻¹) * (x / C1) ^ ((a : ℝ)⁻¹) ≤ h := by
+  have hDk : 0 < D ^ ((k : ℝ)⁻¹) := Real.rpow_pos_of_pos hD _
+  have h1 : (x / C1) ^ ((a : ℝ)⁻¹) ≤ h / D ^ ((k : ℝ)⁻¹) := by
+    rw [← pow_le_pow_iff_left₀ (Real.rpow_nonneg (div_nonneg hx.le hC.le) _) ht.le ha,
+      Real.rpow_inv_natCast_pow (div_nonneg hx.le hC.le) ha, div_le_iff₀' hC]
+    exact hb
+  calc _ ≤ D ^ ((k : ℝ)⁻¹) * (h / D ^ ((k : ℝ)⁻¹)) := mul_le_mul_of_nonneg_left h1 hDk.le
+    _ = h := by field_simp
+
+variable {E : Type} [Field E] [NumberField E] [IsTotallyComplex E] {k : ℕ}
+
+theorem part1 (hD : D0) (hH : H0) (hG : ThetaSeriesBound) (hk : 1 ≤ k) (φ : GA E k → ℂ) (hφ : Dec φ)
+    (Cf : Set (Fin k → Af E)) (hCf : IsCompact Cf) (a : ℕ) (hka : k ≤ a) :
+    ∃ (M : ℕ) (C : ℝ), ∀ g : GA E k, (∑' ξ : {ξ : Fin k → E // ξ ≠ 0}, ENNReal.ofReal (Cf.indicator
+      (fun _ => ((1 + ‖fun i => pInf E (((fun i => algebraMap E (Ad E) (ξ.1 i)) ᵥ* g.val) i)‖) ^ M)⁻¹)
+      fun i => pFin E (((fun i => algebraMap E (Ad E) (ξ.1 i)) ᵥ* g.val) i))) * ‖φ g‖ₑ ≤
+        ENNReal.ofReal (C * Dt g ^ (-(a : ℝ) / k)) := by
+  obtain ⟨M, C, hMC⟩ := hG E k Cf hCf a hka
+  obtain ⟨C1, hC1⟩ := hφ a
+  refine ⟨M, C * C1, fun g => ?_⟩
+  have hDg : 0 < Dt g := (hD E k).1 g
+  by_cases h0 : φ g = 0
+  · simp [h0]
+  have hx : 0 < ‖φ g‖ := norm_pos_iff.2 h0
+  have hne : (fun _ : Fin k => (1 : E)) ≠ 0 := by
+    intro h
+    have := congrFun h ⟨0, hk⟩
+    simp at this
+  have hC1p : 0 < C1 := by
+    have h1 := hC1 g _ hne
+    have h2 := (hH E k).1 g _ hne
+    by_contra hc
+    replace hc := not_lt.1 hc
+    have : C1 * ht g (fun _ => 1) ^ a ≤ 0 := mul_nonpos_of_nonpos_of_nonneg hc (pow_nonneg h2.le _)
+    linarith
+  have ha : a ≠ 0 := by omega
+  have hr : 0 < Dt g ^ ((k : ℝ)⁻¹) * (‖φ g‖ / C1) ^ ((a : ℝ)⁻¹) :=
+    mul_pos (Real.rpow_pos_of_pos hDg _) (Real.rpow_pos_of_pos (div_pos hx hC1p) _)
+  have hbound := hMC g _ hr fun ξ hξ => le_height ha hx hC1p hDg ((hH E k).1 g ξ hξ) (hC1 g ξ hξ)
+  calc _ ≤ ENNReal.ofReal (C * ((Dt g ^ ((k : ℝ)⁻¹) * (‖φ g‖ / C1) ^ ((a : ℝ)⁻¹)) ^ a)⁻¹) * ‖φ g‖ₑ := by
+        gcongr
+    _ = ENNReal.ofReal (C * ((Dt g ^ ((k : ℝ)⁻¹) * (‖φ g‖ / C1) ^ ((a : ℝ)⁻¹)) ^ a)⁻¹ * ‖φ g‖) := by
+        rw [ENNReal.ofReal_mul' (norm_nonneg _), ofReal_norm]
+    _ = _ := by rw [mul_assoc, key ha hx hC1p hDg, mul_assoc]
+
+theorem ind_le {C₀ : Set (Fin k → Ad E)} {R : ℝ} (hR : ∀ y ∈ C₀, ‖fun i => pInf E (y i)‖ ≤ R) (M : ℕ)
+    (y : Fin k → Ad E) :
+    C₀.indicator (fun _ => (1 : ℝ≥0∞)) y ≤ ENNReal.ofReal ((1 + max R 0) ^ M) *
+      ENNReal.ofReal (((fun y : Fin k → Ad E => fun i => pFin E (y i)) '' C₀).indicator
+        (fun _ => ((1 + ‖fun i => pInf E (y i)‖) ^ M)⁻¹) fun i => pFin E (y i)) := by
+  by_cases hy : y ∈ C₀
+  · rw [Set.indicator_of_mem hy, Set.indicator_of_mem (Set.mem_image_of_mem _ hy),
+      ← ENNReal.ofReal_mul (by positivity), ENNReal.one_le_ofReal, ← div_eq_mul_inv,
+      one_le_div (by positivity)]
+    exact pow_le_pow_left₀ (by positivity) (by linarith [hR y hy, le_max_left R 0]) M
+  · rw [Set.indicator_of_notMem hy]
+    exact bot_le
+
+theorem part2 (hD : D0) (hN : N0) (hH : H0) (hG : ThetaSeriesBound) (hk : 1 ≤ k) (φ : GA E k → ℂ) (hφ : Dec φ)
+    (C₀ : Set (Fin k → Ad E)) (hC₀ : IsCompact C₀) (a : ℕ) (hka : k ≤ a) :
+    ∃ C : ℝ, ∀ g : GA E k,
+      (∑' ξ : RowT E k k, C₀.indicator (fun _ => (1 : ℝ≥0∞)) (lastRow (ratGL E k (gam ξ) * g))) * ‖φ g‖ₑ ≤
+        ENNReal.ofReal (C * Dt g ^ (-(a : ℝ) / k)) := by
+  have hcF : Continuous fun y : Fin k → Ad E => fun i => pFin E (y i) :=
+    continuous_pi fun i => (GlobalTheory.CuspRep.ContAut.continuous_pFin E).comp (continuous_apply i)
+  have hcI : Continuous fun y : Fin k → Ad E => fun i => pInf E (y i) :=
+    continuous_pi fun i => (GlobalTheory.CuspRep.ContAut.continuous_pInf E).comp (continuous_apply i)
+  obtain ⟨R, hR⟩ := hC₀.exists_bound_of_continuousOn hcI.continuousOn
+  obtain ⟨M, C', hC'⟩ := part1 hD hH hG hk φ hφ _ (hC₀.image hcF) a hka
+  obtain ⟨-, -, -, -, -, -, -, -, -, hlast⟩ := hN E k k hk le_rfl
+  let e : {ξ : Fin k → E // ξ ≠ 0} ≃ RowT E k k :=
+    { toFun := fun ξ => ⟨ξ.1, ξ.2, fun i hi => absurd i.2 (by omega)⟩
+      invFun := fun ξ => ⟨ξ.1, ξ.2.1⟩
+      left_inv := fun _ => rfl
+      right_inv := fun _ => rfl }
+  have hK : (0 : ℝ) ≤ (1 + max R 0) ^ M := by positivity
+  refine ⟨(1 + max R 0) ^ M * C', fun g => ?_⟩
+  rw [← e.tsum_eq]
+  calc _ = (∑' ξ : {ξ : Fin k → E // ξ ≠ 0}, C₀.indicator (fun _ => (1 : ℝ≥0∞))
+          ((fun i => algebraMap E (Ad E) (ξ.1 i)) ᵥ* g.val)) * ‖φ g‖ₑ := by
+        congr 1
+        exact tsum_congr fun ξ => by rw [hlast]; rfl
+    _ ≤ (∑' ξ : {ξ : Fin k → E // ξ ≠ 0}, ENNReal.ofReal ((1 + max R 0) ^ M) * ENNReal.ofReal (
+          ((fun y : Fin k → Ad E => fun i => pFin E (y i)) '' C₀).indicator
+          (fun _ => ((1 + ‖fun i => pInf E (((fun i => algebraMap E (Ad E) (ξ.1 i)) ᵥ* g.val) i)‖) ^ M)⁻¹)
+          fun i => pFin E (((fun i => algebraMap E (Ad E) (ξ.1 i)) ᵥ* g.val) i))) * ‖φ g‖ₑ :=
+        by
+        gcongr with ξ
+        exact ind_le hR M _
+    _ = ENNReal.ofReal ((1 + max R 0) ^ M) * ((∑' ξ : {ξ : Fin k → E // ξ ≠ 0}, ENNReal.ofReal (
+          ((fun y : Fin k → Ad E => fun i => pFin E (y i)) '' C₀).indicator
+          (fun _ => ((1 + ‖fun i => pInf E (((fun i => algebraMap E (Ad E) (ξ.1 i)) ᵥ* g.val) i)‖) ^ M)⁻¹)
+          fun i => pFin E (((fun i => algebraMap E (Ad E) (ξ.1 i)) ᵥ* g.val) i))) * ‖φ g‖ₑ) := by
+        rw [ENNReal.tsum_mul_left, mul_assoc]
+    _ ≤ ENNReal.ofReal ((1 + max R 0) ^ M) * ENNReal.ofReal (C' * Dt g ^ (-(a : ℝ) / k)) :=
+        by
+        gcongr
+        exact hC' g
+    _ = _ := by rw [← ENNReal.ofReal_mul hK, mul_assoc]
+
+end ThetaDecayingFunction
+
+theorem theta_decaying_of_bound : D0 → N0 → H0 → ThetaSeriesBound → ThetaDecaying := by
+  intro hD hN hH hG E _ _ _ k hk φ hφ
+  exact ⟨fun Cf hCf a hka => ThetaDecayingFunction.part1 hD hH hG hk φ hφ Cf hCf a hka,
+    fun C₀ hC₀ a hka => ThetaDecayingFunction.part2 hD hN hH hG hk φ hφ C₀ hC₀ a hka⟩
+
+end PositivityTheory.AdelicQuotientData
+
+end
+end
+
+-- bundled from Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaRigidity.TorusPowerExponential
+section
+noncomputable section
+
+open NumberField IsDedekindDomain MeasureTheory Matrix Topology Filter
+open GlobalTheory.CuspGeneric GlobalTheory.CuspRep GlobalTheory.UnitaryBC GlobalTheory.DiscSpec PositivityTheory.jumpWindows PositivityTheory.RgJS
+open GroundTheory.Automorphic GroundTheory.Automorphic.FourierWhittaker GroundTheory.Automorphic.Reduction GroundTheory.Automorphic.Spherical
+open scoped ENNReal ComplexConjugate
+
+attribute [local instance] GlobalTheory.LocalData.complRel GlobalTheory.LocalData.isLocalField
+
+namespace PositivityTheory.AdelicQuotientData
+
+namespace TorusPowerExponential
+
+section Loc
+
+variable (F : Type) [Field F] [ValuativeRel F] [TopologicalSpace F] [IsNonarchimedeanLocalField F] (n : ℕ)
+
+theorem torusPow_add (x y : Fin n → ℤ) :
+    Iwasawa.torusPow F n (x + y) = Iwasawa.torusPow F n x * Iwasawa.torusPow F n y := by
+  simp only [Iwasawa.torusPow, ← map_mul]
+  congr 1
+  funext i
+  simp [_root_.zpow_add]
+
+theorem conj_mem (x : Fin n → ℤ) {u : GL (Fin n) F} (hu : u ∈ Iwasawa.unipotent F n) :
+    Iwasawa.torusPow F n x * u * (Iwasawa.torusPow F n x)⁻¹ ∈ Iwasawa.unipotent F n :=
+  Iwasawa.diagGL_mul_mul_inv_mem_unipotent F n hu _
+
+theorem exp_torus_mul (x : Fin n → ℤ) (h : GL (Fin n) F) :
+    Iwasawa.iwasawaExponent F n (Iwasawa.torusPow F n x * h) = x + Iwasawa.iwasawaExponent F n h := by
+  obtain ⟨u, hu, κ, hκ, e⟩ := Iwasawa.exists_eq_mul_torusPow_iwasawaExponent F n h
+  have key : Iwasawa.torusPow F n x * h = (Iwasawa.torusPow F n x * u * (Iwasawa.torusPow F n x)⁻¹) *
+      Iwasawa.torusPow F n (x + Iwasawa.iwasawaExponent F n h) * κ := by
+    rw [torusPow_add]
+    conv_lhs => rw [e]
+    group
+  rw [key, Iwasawa.iwasawaExponent_eq F n (conj_mem F n x hu) hκ]
+
+theorem torusPow_zero : Iwasawa.torusPow F n 0 = 1 := by
+  simpa using torusPow_add F n 0 0
+
+end Loc
+
+section Glob
+
+variable {E : Type} [Field E] [NumberField E] {k : ℕ}
+
+theorem countable_pl : Countable (Pl E) := by
+  classical
+  haveI : Countable (𝓞 E) := (RingOfIntegers.basis E).repr.toEquiv.injective.countable
+  let f : Pl E → Finset (𝓞 E) := fun v ↦ (IsNoetherian.noetherian v.asIdeal).choose
+  refine Function.Injective.countable (f := f) fun v w h ↦ ?_
+  have hv := (IsNoetherian.noetherian v.asIdeal).choose_spec
+  have hw := (IsNoetherian.noetherian w.asIdeal).choose_spec
+  ext1
+  rw [← hv, ← hw]
+  exact congrArg (fun s : Finset (𝓞 E) ↦ Submodule.span (𝓞 E) (s : Set (𝓞 E))) h
+
+def A (S : Finset (Pl E)) (l : Off E S →₀ (Fin k → ℤ)) : Set (GA E k) :=
+  {g | ∀ w : Off E S, Iwasawa.iwasawaExponent _ k (cLoc w.1 g) = l w}
+
+theorem A_zero (S : Finset (Pl E)) : A (k := k) S 0 = G0 S := by
+  ext g
+  simp only [A, G0, Set.mem_setOf_eq, Finsupp.coe_zero, Pi.zero_apply]
+  exact ⟨fun h w hw => h ⟨w, hw⟩, fun h w => h w.1 w.2⟩
+
+theorem A_cover (S : Finset (Pl E))
+    (hfin : ∀ g : GA E k, {w | Iwasawa.iwasawaExponent _ k (cLoc w g) ≠ 0}.Finite) (g : GA E k) :
+    ∃ l, g ∈ A S l :=
+  ⟨Finsupp.ofSupportFinite (fun w : Off E S => Iwasawa.iwasawaExponent _ k (cLoc w.1 g))
+    ((hfin g).preimage Subtype.val_injective.injOn), fun w => rfl⟩
+
+theorem A_disj (S : Finset (Pl E)) : Pairwise (Function.onFun Disjoint (A (k := k) S)) := by
+  intro l l' hne
+  exact Set.disjoint_left.2 fun g h h' => hne (Finsupp.ext fun w => (h w).symm.trans (h' w))
+
+theorem A_closed (S : Finset (Pl E))
+    (hcl : ∀ (w : Pl E) (l : Fin k → ℤ), IsClopen {g : GA E k | Iwasawa.iwasawaExponent _ k (cLoc w g) = l})
+    (l : Off E S →₀ (Fin k → ℤ)) : IsClosed (A S l) := by
+  have : A S l = ⋂ w : Off E S, {g : GA E k | Iwasawa.iwasawaExponent _ k (cLoc w.1 g) = l w} := by
+    ext; simp [A]
+  rw [this]
+  exact isClosed_iInter fun w => (hcl w.1 (l w)).isClosed
+
+theorem cLoc_unip (u : GA E k) (hu : UU 0 u) (w : Pl E) : cLoc w u ∈ Iwasawa.unipotent _ k := by
+  refine ⟨fun i c hci => ?_, fun i => ?_⟩
+  · change ((pLoc E w).comp (pFin E)) (u.val i c) = 0
+    rw [hu.1 i c hci, map_zero]
+  · change ((pLoc E w).comp (pFin E)) (u.val i i) = 1
+    rw [hu.2.1 i, map_one]
+
+theorem A_mul (S : Finset (Pl E)) (l : Off E S →₀ (Fin k → ℤ)) (u g : GA E k) (hu : UU 0 u) :
+    u * g ∈ A S l ↔ g ∈ A S l := by
+  have h := fun w : Pl E => Iwasawa.iwasawaExponent_mul_of_mem_unipotent _ k (cLoc_unip u hu w) (cLoc w g)
+  simp only [A, Set.mem_setOf_eq, map_mul, h]
+
+theorem A_tr (S : Finset (Pl E))
+    (hloc : ∀ (w : Pl E) (u : GL (Fin k) (w.adicCompletion E)), cLoc w (fl k w u : GA E k) = u)
+    (hoff : ∀ (w v : Pl E) (u : GL (Fin k) (w.adicCompletion E)), v ≠ w → cLoc v (fl k w u : GA E k) = 1)
+    (l : Off E S →₀ (Fin k → ℤ)) (w : Off E S) (hw : l w = 0) (x : Fin k → ℤ) (g : GA E k) :
+    fl k w.1 (Iwasawa.torusPow _ k x) * g ∈ A S (Finsupp.single w x + l) ↔ g ∈ A S l := by
+  simp only [A, Set.mem_setOf_eq, map_mul]
+  have key : ∀ v : Off E S, (Iwasawa.iwasawaExponent _ k (cLoc v.1 (fl k w.1 (Iwasawa.torusPow _ k x)) *
+      cLoc v.1 g) = (Finsupp.single w x + l) v ↔ Iwasawa.iwasawaExponent _ k (cLoc v.1 g) = l v) := by
+    intro v
+    by_cases hv : v = w
+    · subst hv
+      rw [hloc, exp_torus_mul, Finsupp.add_apply, Finsupp.single_eq_same, hw, add_zero]
+      constructor
+      · intro h; simpa using h
+      · intro h; rw [h, add_zero]
+    · have e1 : (Finsupp.single w x + l) v = l v := by simp [Finsupp.single_apply, Ne.symm hv]
+      rw [hoff w.1 v.1 _ (fun h => hv (Subtype.ext h)), one_mul, e1]
+  exact forall_congr' key
+
+theorem Phi_tr (S : Finset (Pl E)) (Φ : GA E k → ℂ) (a : Off E S → (Fin k → ℤ) → ℂ) (hlaw : LawOff S Φ a)
+    (ha0 : ∀ w, a w 0 = 1)
+    (hcomm : ∀ (w : Pl E) (g : GA E k), cLoc w g = 1 → ∀ u, g * fl k w u = fl k w u * g)
+    (hdec : ∀ (w : Pl E) (g : GA E k), ∃ g' : GA E k, cLoc w g' = 1 ∧ g = g' * fl k w (cLoc w g))
+    (w : Off E S) (x : Fin k → ℤ) (g : GA E k) (hg : Iwasawa.iwasawaExponent _ k (cLoc w.1 g) = 0) :
+    Φ (fl k w.1 (Iwasawa.torusPow _ k x) * g) = a w x * Φ g := by
+  obtain ⟨g', h1, hg'⟩ := hdec w.1 g
+  obtain ⟨u, hu, κ, hκ, e⟩ := Iwasawa.exists_eq_mul_torusPow_iwasawaExponent _ k (cLoc w.1 g)
+  rw [hg] at e
+  have h0 : Φ g = Φ g' := by
+    rw [hg', e, hlaw w g' h1 u hu κ hκ 0, ha0, mul_one]
+  have h2 : fl k w.1 (Iwasawa.torusPow _ k x) * g = g' * fl k w.1
+      ((Iwasawa.torusPow _ k x * u * (Iwasawa.torusPow _ k x)⁻¹) * Iwasawa.torusPow _ k x * κ) := by
+    conv_lhs => rw [hg', e]
+    rw [← mul_assoc, ← hcomm w.1 g' h1, mul_assoc, ← map_mul, torusPow_zero, mul_one]
+    congr 2
+    group
+  rw [h2, hlaw w g' h1 _ (conj_mem _ k x hu) κ hκ x, h0, mul_comm]
+
+end Glob
+
+end TorusPowerExponential
+
+theorem torus_exponential_of_open : jumpWindows.G0 → C0 → C1 → C2 := by
+  intro hG hC0 hC1 E _ _ _ k μ _ hk β hβ S Φ a hΦm hΦu hlaw ha0 hint
+  obtain ⟨-, -, -, hloc, hoff, -, -, hcomm, -⟩ := hG E k
+  obtain ⟨-, -, -, -, hfin, hcl, hdec⟩ := hC0 E k S
+  haveI := TorusPowerExponential.countable_pl (E := E)
+  have hmeas : ∀ l, MeasurableSet (TorusPowerExponential.A (k := k) S l) := fun l => (TorusPowerExponential.A_closed S hcl l).measurableSet
+  let c : Off E S → (Fin k → ℤ) → ℂ := fun w x => (nq w : ℂ) ^ rhoPair x * a w x
+  have hc0 : ∀ w, c w 0 = 1 := fun w => by simp [c, rhoPair, ha0]
+  have hstep : ∀ (f : Off E S →₀ (Fin k → ℤ)) (w : Off E S) (x : Fin k → ℤ), f w = 0 →
+      ∫ g in TorusPowerExponential.A S (Finsupp.single w x + f), Φ g ∂μ.withDensity β =
+        c w x * ∫ g in TorusPowerExponential.A S f, Φ g ∂μ.withDensity β := by
+    intro f w x hw
+    have hUU : ∀ u, UU 0 u → ∀ g, (TorusPowerExponential.A S (Finsupp.single w x + f)).indicator Φ (u * g) =
+        (TorusPowerExponential.A S (Finsupp.single w x + f)).indicator Φ g := by
+      intro u hu g
+      by_cases hg : g ∈ TorusPowerExponential.A S (Finsupp.single w x + f)
+      · rw [Set.indicator_of_mem ((TorusPowerExponential.A_mul S _ u g hu).2 hg), Set.indicator_of_mem hg, hΦu u hu g]
+      · rw [Set.indicator_of_notMem (mt (TorusPowerExponential.A_mul S _ u g hu).1 hg), Set.indicator_of_notMem hg]
+    obtain ⟨-, hE⟩ := hC1 E k μ hk β hβ w.1 x ((TorusPowerExponential.A S (Finsupp.single w x + f)).indicator Φ)
+      (hΦm.indicator (hmeas _))
+      hUU
+      (hint.indicator (hmeas _))
+    rw [← integral_indicator (hmeas _), hE, ← integral_indicator (hmeas _)]
+    have hpt : ∀ g, (TorusPowerExponential.A S (Finsupp.single w x + f)).indicator Φ
+        (fl k w.1 (Iwasawa.torusPow (w.1.adicCompletion E) k x) * g) =
+        a w x * (TorusPowerExponential.A S f).indicator Φ g := by
+      intro g
+      by_cases hg : g ∈ TorusPowerExponential.A S f
+      · rw [Set.indicator_of_mem ((TorusPowerExponential.A_tr S hloc hoff f w hw x g).2 hg), Set.indicator_of_mem hg,
+          TorusPowerExponential.Phi_tr S Φ a hlaw ha0 hcomm (fun w g => (hdec w g).imp fun g' h => ⟨h.1, h.2.1⟩) w x g
+            ((hg w).trans hw)]
+      · rw [Set.indicator_of_notMem (fun h => hg ((TorusPowerExponential.A_tr S hloc hoff f w hw x g).1 h)),
+          Set.indicator_of_notMem hg, mul_zero]
+    simp only [hpt, c, nq]
+    rw [integral_const_mul, mul_assoc]
+  have hclaim : ∀ l : Off E S →₀ (Fin k → ℤ), ∫ g in TorusPowerExponential.A S l, Φ g ∂μ.withDensity β =
+      (∏ w ∈ l.support, c w (l w)) * ∫ g in G0 S, Φ g ∂μ.withDensity β := by
+    intro l
+    induction l using Finsupp.induction with
+    | zero => simp [TorusPowerExponential.A_zero]
+    | single_add w x f hwf hx ih =>
+      have hfw : f w = 0 := Finsupp.notMem_support_iff.1 hwf
+      change _ = Finsupp.prod (Finsupp.single w x + f) c * _
+      change _ = Finsupp.prod f c * _ at ih
+      have hdisj : Disjoint (Finsupp.single w x).support f.support := by
+        refine Finset.disjoint_left.2 fun v hv hv' => hwf ?_
+        rw [Finsupp.support_single_ne_zero _ hx, Finset.mem_singleton] at hv
+        exact hv ▸ hv'
+      rw [Finsupp.prod_add_index_of_disjoint hdisj, Finsupp.prod_single_index (hc0 w), hstep f w x hfw, ih]
+      simp only [c]
+      ring
+  have hU : ⋃ l, TorusPowerExponential.A (k := k) S l = Set.univ := Set.iUnion_eq_univ_iff.2 (TorusPowerExponential.A_cover S hfin)
+  have hs := hasSum_integral_iUnion hmeas (TorusPowerExponential.A_disj S) hint.integrableOn
+  rw [hU, setIntegral_univ] at hs
+  have hfun : (fun l => ∫ g in TorusPowerExponential.A S l, Φ g ∂μ.withDensity β) =
+      fun l : Off E S →₀ (Fin k → ℤ) => (∏ w ∈ l.support, c w (l w)) * ∫ g in G0 S, Φ g ∂μ.withDensity β :=
+    funext hclaim
+  rw [hfun] at hs
+  exact hs
+
+end PositivityTheory.AdelicQuotientData
+
+end
+end
+

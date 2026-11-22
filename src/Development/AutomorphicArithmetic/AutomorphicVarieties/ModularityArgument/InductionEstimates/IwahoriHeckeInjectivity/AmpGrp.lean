@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.ClosedProperAlt
+import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0001
 
 noncomputable section
 

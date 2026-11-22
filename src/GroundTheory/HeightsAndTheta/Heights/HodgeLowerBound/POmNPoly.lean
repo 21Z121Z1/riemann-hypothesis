@@ -1,9 +1,9 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsOmNPoly
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsOmNVbInt
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.POmNPolyPencil
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRedF
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0025
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0030
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0007
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0017
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0007
 set_option maxSynthPendingDepth 1
 
 noncomputable section

@@ -1,9 +1,9 @@
-import Development.WeilBound.CoreStatements.CentralCharts.SmoothOnOfTame
+import Development.WeilBound.CoreStatements.CentralCharts.Bundle0001
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagModelAnalyticDataExists
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SmoothContinuous
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.SingularPotentialLogGrowthPshStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.AdaptedAtlasSmoothPotentialLocalStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AdaptedAtlasSncSectionStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0026
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0049
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0285
 
 noncomputable section
 

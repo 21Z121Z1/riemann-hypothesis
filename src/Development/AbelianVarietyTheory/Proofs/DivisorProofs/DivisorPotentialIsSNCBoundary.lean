@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPotentialPullback
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsSncCoordinatesComplexPointSmoothVariety
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2415
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0703
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsHolToOfOpenImmersion
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.H0NeBotOfHorizontalFunction
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsLinearEquivLift
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.WMultA
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0671
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0022
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0010
 
 set_option autoImplicit false
 

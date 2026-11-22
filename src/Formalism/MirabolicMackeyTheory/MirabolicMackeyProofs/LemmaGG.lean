@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.MirabolicMackeyTheory.StatementL
-import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.OrthogonalityOfMackey
-import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ValBasic
+import Formalism.MirabolicMackeyTheory.Bundle0001
+import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.Bundle0001
+import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0003
 import Formalism.HermitianLattices.HermitianLatticesProofs.IndexBasic
 import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.IdxRules
 

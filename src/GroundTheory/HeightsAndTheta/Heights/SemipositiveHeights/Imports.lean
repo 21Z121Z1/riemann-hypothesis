@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.InverseDerivativeContinuity
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0100
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.ForSecondHalf

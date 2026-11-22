@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.PolarisationModuleIndex
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0010
 
 noncomputable section
 

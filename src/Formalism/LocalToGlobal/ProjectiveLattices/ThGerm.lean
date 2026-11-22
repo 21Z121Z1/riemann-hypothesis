@@ -1,6 +1,6 @@
-import Formalism.LocalToGlobal.ProjectiveLattices.IsThRule
-import Formalism.LocalToGlobal.ProjectiveLattices.SubConstMemOrig
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CocycleRightZeroThd
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0004
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0001
 
 set_option autoImplicit false
 

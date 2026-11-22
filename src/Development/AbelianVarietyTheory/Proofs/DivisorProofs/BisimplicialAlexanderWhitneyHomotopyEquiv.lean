@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasTotalBiChains
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AwOCommDStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiagonalDifferentialEval
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TotalDifferentialEval
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0367
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0370
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0395
 open CategoryTheory Limits Opposite AlgebraicTopology GlobalTheory.EZ
 universe u v
 

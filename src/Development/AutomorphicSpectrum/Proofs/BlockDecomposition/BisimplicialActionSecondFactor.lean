@@ -1,6 +1,6 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.AutomorphicKernels.AbelianDeRham.AbelianHodgeDeRham.H1DimGeAbelianDim
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DnCompDn
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0138
 
 set_option autoImplicit false
 

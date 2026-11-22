@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ReductionSurjectiveOfIsNilpotent
-import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.FirstJetEqProdTangent
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0012
 
 set_option autoImplicit false
 

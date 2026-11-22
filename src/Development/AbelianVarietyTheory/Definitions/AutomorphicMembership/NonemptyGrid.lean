@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SettingsFormsExistList
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SettingsFormsExistOfGrid
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0045
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0046
 
 noncomputable section
 

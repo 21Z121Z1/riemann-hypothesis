@@ -1,6 +1,6 @@
-import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.FuncSt
-import Formalism.LocalToGlobal.IndefiniteReal.DatumLemmas
-import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasWeil
+import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0003
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0012
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
 import Formalism.LocalToGlobal.IndefiniteReal.PHeisFC
 
 noncomputable section

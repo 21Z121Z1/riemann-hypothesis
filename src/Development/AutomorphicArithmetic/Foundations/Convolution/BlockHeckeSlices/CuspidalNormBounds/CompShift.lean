@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.DatCons
 import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.SliceShift
-import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.CompBound
+import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.Bundle0006
 
 noncomputable section
 

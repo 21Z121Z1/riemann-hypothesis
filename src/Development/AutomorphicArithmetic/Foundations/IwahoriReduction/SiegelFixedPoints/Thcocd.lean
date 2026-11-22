@@ -1,11 +1,10 @@
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsZetaTW
-import Development.AbelianVarietyTheory.Definitions.Foundations.EeProd
-import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsEqSubOfMemCob
-import Development.AbelianVarietyTheory.Definitions.Foundations.IsLamOfLSmulIff
-import Development.AbelianVarietyTheory.Definitions.Foundations.PieceEqPieceT
-import Development.AbelianVarietyTheory.Definitions.Foundations.AdmissibleHodgeTateZetaClassParams
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0009
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0018
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0021
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0004
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0023
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.Imports
-import Development.AbelianVarietyTheory.Definitions.Foundations.KumValUnique
 
 open scoped MatrixGroups Matrix
 open NumberField IsDedekindDomain Formalism.ConjugateSelfDual ReciprocityTheory.Gal Formalism.MainNotions.N GlobalTheory.GalOfCusp UpperTheory.V UpperTheory.V.Af UpperTheory.V.HV GlobalTheory.KZ GlobalTheory.Ord2 GlobalTheory.K4

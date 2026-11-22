@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.ProjectiveLattices.IsChartIff
-import Formalism.LocalToGlobal.ProjectiveLattices.VAtVNeBot
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
 
 set_option autoImplicit false
 

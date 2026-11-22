@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.FormalGroupWitt.ShiftSOneLetter
+import Formalism.FormalGroupWitt.Bundle0001
 
 noncomputable section
 

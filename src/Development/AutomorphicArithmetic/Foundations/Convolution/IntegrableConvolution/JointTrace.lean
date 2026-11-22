@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.TrDefs
-import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.CutIrr
-import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.AlgTrace
+import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0001
+import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0002
+import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0005
 
 noncomputable section
 

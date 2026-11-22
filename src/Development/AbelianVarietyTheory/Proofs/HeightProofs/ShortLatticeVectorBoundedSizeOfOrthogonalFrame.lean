@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsLieDataCircle
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0003
 import Development.AbelianVarietyTheory.PublishedTheorems.AdelicLattices₂.ExistsIntMulIsIntegralOfTrace
 
 open GlobalTheory.SmoothForms GlobalTheory.HermClass Module Submodule NumberField Matrix

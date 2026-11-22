@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteAlgebrasOverHenselianAndComplete
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BijectiveBaseChangeResidueFieldOfFiniteEtale
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0046
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0197
 
 open IsLocalRing TensorProduct
 

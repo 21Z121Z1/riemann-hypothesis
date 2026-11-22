@@ -4,7 +4,7 @@ import Formalism.SharpRestriction.LevelLetterCocycles.LiftingTheory
 import Formalism.SharpRestriction.LevelLetterCocycles.DecompositionData
 import Formalism.SharpRestriction.LevelLetterCocycles.TableLineDegreeTwo
 import Formalism.SharpRestriction.LevelLetterCocycles.CrystallineMapLemmas
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FontaineBoundsCrystallineDeRhamAll
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0471
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.MainNotions Formalism.MainNotions.N Formalism.WeaklyAdmissibleFiltrations Module TensorProduct
 
 namespace GlobalTheory.CompanionTheory.Fontaine

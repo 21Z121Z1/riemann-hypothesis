@@ -1,6 +1,6 @@
 import Development.WeilBound.ThetaLifts.LeviDeterminants.ContinuousOfMem
-import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaDistributionNonzeroAdmissible
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardTraceAdelicAddCharLocalComponentNeOne
+import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0007
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1803
 
 noncomputable section
 

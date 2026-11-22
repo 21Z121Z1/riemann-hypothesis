@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsGoodPoly
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0009
 set_option backward.isDefEq.respectTransparency false
 
 namespace GlobalTheory.CompanionTheory.TraceJac

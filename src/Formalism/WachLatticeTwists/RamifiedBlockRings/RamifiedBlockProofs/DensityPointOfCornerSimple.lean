@@ -1,6 +1,6 @@
 import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.FinrankRangeEq
-import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.IdemFactor
-import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.IdempotentImageSurjective
+import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.Bundle0004
+import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.Bundle0001
 
 open Finset Classical
 

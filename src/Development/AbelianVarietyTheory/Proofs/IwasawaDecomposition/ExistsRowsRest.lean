@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NuInRange
-import Formalism.LocalRingCardinality.DataExtra
-import Formalism.LocalRingCardinality.DataTies
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0003
+import Formalism.LocalRingCardinality.Bundle0007
+import Formalism.LocalRingCardinality.Bundle0003
 import Formalism.LocalRingCardinality.Lemmas
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InnerProductPositiveDefinite
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0102
 
 noncomputable section
 

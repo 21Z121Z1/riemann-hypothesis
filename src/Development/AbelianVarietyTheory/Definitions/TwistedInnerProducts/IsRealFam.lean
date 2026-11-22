@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TopOrthEmb
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealLineOfPeriodsOnLine
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsBiSmooth
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0658
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0513
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0021
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CombAtSingleZero
 
 noncomputable section

@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.GKModules.RightRegular
+import GroundTheory.AutomorphicForms.GKModules.Bundle0001
 
 namespace GroundTheory.Automorphic
 

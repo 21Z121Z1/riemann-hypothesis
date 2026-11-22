@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.ArithmeticCylinders
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LabelDatum
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0006
 
 section
 open GlobalTheory.GLq Formalism.MainNotions.ArithmeticCylinders Polynomial

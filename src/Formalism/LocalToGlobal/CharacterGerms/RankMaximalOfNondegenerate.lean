@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.CharacterGerms.NondegenerateCharts
-import Formalism.LocalToGlobal.CharacterGerms.RowTieCartFB
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0013
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0018
 
 set_option autoImplicit false
 

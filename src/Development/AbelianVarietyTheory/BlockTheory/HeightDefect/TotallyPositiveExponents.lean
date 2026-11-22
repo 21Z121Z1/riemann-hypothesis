@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 import Formalism.LocalRingCardinality.DataDIV
 import Formalism.SharpRestriction.Divisibility.ModuliIntegralCharts
-import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.ThetaWeightHeightConstants
+import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.Bundle0005
 
 noncomputable section
 

@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndicatorIntMMemSB
-import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaActionExistsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FromBlocksSubOne
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FinPartIdemMulMemIff
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1116
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0054
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2048
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2058
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0327
 open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.WeilM GlobalTheory.AdelicU GlobalTheory.LFun GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels GlobalTheory.ThK GlobalTheory.KSplit
 attribute [local instance] GlobalTheory.LocalData.complRel GlobalTheory.LocalData.isLocalField
 

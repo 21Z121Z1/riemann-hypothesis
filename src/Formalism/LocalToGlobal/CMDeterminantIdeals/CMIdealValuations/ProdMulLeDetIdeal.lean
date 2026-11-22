@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.CMDeterminantIdeals.StatementA
+import Formalism.LocalToGlobal.CMDeterminantIdeals.Bundle0001
 
 noncomputable section
 

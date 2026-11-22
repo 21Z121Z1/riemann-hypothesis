@@ -1,16 +1,16 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.UnderTie
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0025
 import Formalism.LocalToGlobal.Columns.XtPhiTopGCongr
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsSpan
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsApprox
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0010
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlob
 import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.ToLEInvApply
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.AdelicLatticeCompletionLocalGlobal
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0079
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemStabGLAdeleIff
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MulVecMemLocLatIffOfFrame
-import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SplittingProjection
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0068
+import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0012
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AfsplitB
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ImportsTer
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0005
 open NumberField IsDedekindDomain Matrix Formalism.BasicNotions Formalism.UG Formalism.L2.Col Formalism.L2.PairingIndexBounds.F Formalism.MainNotions.G.KAat Formalism.L2.Forms Formalism.L2.Ker Formalism.MainNotions Formalism.L2.DIV Formalism.MainNotions.G GlobalTheory.TwU GlobalTheory.TwV
 attribute [local instance] Formalism.BasicNotions.Host.cmStar
 

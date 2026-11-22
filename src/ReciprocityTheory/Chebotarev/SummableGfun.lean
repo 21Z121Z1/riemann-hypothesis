@@ -1,5 +1,4 @@
-import ReciprocityTheory.Chebotarev.KHoldA
-import ReciprocityTheory.Chebotarev.CTrick
+import ReciprocityTheory.Chebotarev.Bundle0009
 import ReciprocityTheory.Chebotarev.PowerSeriesDiagonalLinear
 
 open NumberField NumberField.Units Filter Topology Set

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.SamePartIffOfNeZero
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemMonicSquarefreeUnitConstPolysIffMonicSquarefrStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SquarefreeLabelTorusCardBoundsAndMulStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0082
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0086
 
 open Polynomial Classical UniqueFactorizationMonoid
 namespace GlobalTheory.BadShare

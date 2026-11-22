@@ -1,4 +1,4 @@
-import ReciprocityTheory.Chebotarev.Ucoord
+import ReciprocityTheory.Chebotarev.Bundle0004
 
 open NumberField NumberField.mixedEmbedding NumberField.Units NumberField.Units.dirichletUnitTheorem
 

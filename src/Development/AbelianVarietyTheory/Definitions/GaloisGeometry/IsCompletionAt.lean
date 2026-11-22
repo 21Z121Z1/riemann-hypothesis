@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsRankOneIdem
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0024
 import Development.AbelianVarietyTheory.Statements.EllipticCurveLevels.RangeOnLieUnitEOne
 import Development.AbelianVarietyTheory.Definitions.Divisors.TorsionTowersOfDivisibleGroup
 

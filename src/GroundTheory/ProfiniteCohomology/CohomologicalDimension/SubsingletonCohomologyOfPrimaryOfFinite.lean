@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.ProfiniteCohomology.CohomologicalDimension.PrimaryComponentCohomologyEqBotOfScdpLt
 import GroundTheory.ProfiniteCohomology.CoinducedModules.CohomologyCoindCokernelIsoHom
-import GroundTheory.ProfiniteCohomology.ColimitUnion
+import GroundTheory.ProfiniteCohomology.Bundle0004
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.ProfCoh

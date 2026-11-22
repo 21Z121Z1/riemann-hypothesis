@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.FoldMult
+import Formalism.PeriodIntegrals.Bundle0018
 
 open MeasureTheory
 open scoped ENNReal NNReal

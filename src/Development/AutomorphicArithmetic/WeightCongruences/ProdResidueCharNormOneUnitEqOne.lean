@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicArithmetic.WeightCongruences.ProdNegOneZpow
+import Development.AutomorphicArithmetic.WeightCongruences.Bundle0001
 
 open NumberField IsDedekindDomain
 open scoped Pointwise

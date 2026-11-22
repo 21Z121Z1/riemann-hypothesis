@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.UnderTie
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0025
 
 noncomputable section
 

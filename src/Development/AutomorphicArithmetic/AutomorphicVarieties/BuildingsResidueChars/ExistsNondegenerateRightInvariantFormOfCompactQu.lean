@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.FdomExistsAll
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.FiniteCovolumeUnimodular
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EqZeroOfAeFundamentalDomainOfLeftInvariant
+import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0001
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0003
 
 open MeasureTheory in
 theorem UpperTheory.exists_nondegenerate_right_invariant_form_of_compact_quotient :

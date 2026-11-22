@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LabelsCharOne
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0724
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalCharacterFormula
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraSeriesLabelExistsUniqueGLn
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BlockParabolicUnitriangularSubgroupsGLnPrimeFiel
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TypeCharacterConjugateInverse
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0119
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0932
 
 noncomputable section
 

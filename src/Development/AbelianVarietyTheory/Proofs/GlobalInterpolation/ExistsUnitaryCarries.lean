@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalRingCardinality.CoeNeZeroOfNotMem
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.StrongApproximationUnitaryCongruence
-import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.StandardDeterminantUnit
+import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0009
 
 open NumberField IsDedekindDomain Matrix Filter Topology
 

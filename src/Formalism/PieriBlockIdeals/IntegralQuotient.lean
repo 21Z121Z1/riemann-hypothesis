@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PieriBlockIdeals.StatementLD
+import Formalism.PieriBlockIdeals.Bundle0004
 
 open Polynomial
 

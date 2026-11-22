@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsCliff
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SpinGlRelationsAdjointStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LoweringWordsSpanStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0400
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0436
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0496
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.VeryAmpleZColumnsSt
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.TwistAlg
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ZColumnsCechPartition
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0036
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0010
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0037
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Kleiman

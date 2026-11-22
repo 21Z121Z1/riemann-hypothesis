@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeNGLQ
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0001
 
 noncomputable section
 

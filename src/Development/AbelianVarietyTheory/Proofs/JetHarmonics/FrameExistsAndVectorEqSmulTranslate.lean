@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.DifferentialOperatorBracket
-import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsUnitaryWFrameToFrame
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0088
+import Formalism.RealPlaceAnalysis.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0077
 open Matrix Formalism.QuantumDeterminants Formalism.FourierDecayAlt.Q Formalism.FourierDecayAlt.Qr
 open Formalism.REAL (qdet GlRel IsHW)
 

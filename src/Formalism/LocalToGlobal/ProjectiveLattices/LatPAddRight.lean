@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.ProjectiveLattices.BetaAddRight
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0022
 
 noncomputable section
 

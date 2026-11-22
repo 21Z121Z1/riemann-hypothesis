@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.SatakeDualWeyl.Statement
-import Formalism.RankGapBounds.TheoremALocOfLemmaA
-import Formalism.PieriBlockIdeals.Statement
+import Formalism.RankGapBounds.Bundle0003
+import Formalism.PieriBlockIdeals.Bundle0001
 
 noncomputable section
 

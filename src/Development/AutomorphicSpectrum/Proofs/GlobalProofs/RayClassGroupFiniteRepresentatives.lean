@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.SiegelKlingenDeligneRibet
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AbelContinuation
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0007
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0021
 import Formalism.LocalToGlobal.GlobalTheory.GL2.TotallyComplexOfNoReal
 
 set_option autoImplicit false

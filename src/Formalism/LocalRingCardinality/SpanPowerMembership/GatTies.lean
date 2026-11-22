@@ -1,4 +1,4 @@
-import Formalism.LocalRingCardinality.DataGatTies
+import Formalism.LocalRingCardinality.Bundle0001
 import Formalism.LocalRingCardinality.HostCls
 import Formalism.FrobeniusOrbits.HostCorollaries
 import Formalism.LocalRingCardinality.SpanPowerMembership.GatSetting

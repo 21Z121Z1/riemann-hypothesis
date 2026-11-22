@@ -1,8 +1,8 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.MirabolicDerivatives.SegmentCuspLines.ProdIrrFiniteLength
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductIrreducibleFiniteLengthStatement
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.BernsteinZelevinskyFiniteness
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0663
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0044
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0003
 
 noncomputable section
 

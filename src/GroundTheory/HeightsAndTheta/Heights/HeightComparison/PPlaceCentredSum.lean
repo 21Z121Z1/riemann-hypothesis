@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightPlaceCentredSum
+import GroundTheory.HeightsAndTheta.Heights.HeightComparison.Bundle0007
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.SharpRestriction.Divisibility.ModuliIntegralCharts
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.TraceFormDualSystem
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FunctionalValuesNonempty
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0092
 
 noncomputable section
 open NumberField Formalism.MainNotions.ModuliIntegralCharts

@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.MinpolyIrreducibleNatDegreeOfRankOne
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0044
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToVInjective
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinsumDoubleCosetEqFinsumOrbit
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FixLineConjIff
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianPositivityInvariant
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0995
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1035
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1074
 open Matrix NumberField GlobalTheory.LKTrip GlobalTheory.LKRes GlobalTheory.LKMid GlobalTheory.LKCount GlobalTheory.LKCx
 open scoped TensorProduct Classical
 

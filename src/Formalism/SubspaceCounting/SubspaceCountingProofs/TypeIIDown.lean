@@ -1,6 +1,5 @@
-import Formalism.SubspaceCounting.StatementB
-import Formalism.SubspaceCounting.SubspaceCountingProofs.QVandermonde
-import Formalism.SubspaceCounting.SubspaceCountingProofs.SubspaceCount
+import Formalism.SubspaceCounting.Bundle0001
+import Formalism.SubspaceCounting.SubspaceCountingProofs.Bundle0001
 
 namespace Formalism.G0
 

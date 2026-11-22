@@ -1,15 +1,9 @@
 import Formalism.CMTypeGalois.CMTypeFrobenius.MQGalois
 import Formalism.CMTypeGalois.CMTypeFrobenius.MQKummer
-import Formalism.CMTypeGalois.CMTypeFrobenius.MQFrob
-import Formalism.CMTypeGalois.CMTypeFrobenius.KroneckerMeaning
-import Formalism.CMTypeGalois.CMTypeFrobenius.TypesA
-import Formalism.CMTypeGalois.CMTypeFrobenius.TypesB
+import Formalism.CMTypeGalois.CMTypeFrobenius.Bundle0003
+import Formalism.CMTypeGalois.CMTypeFrobenius.Bundle0001
 import Mathlib
-import Formalism.CMTypeGalois.CMTypeFrobenius.HostFrob
-import Formalism.CMTypeGalois.CMTypeFrobenius.HostConj
-import Formalism.CMTypeGalois.CMTypeFrobenius.HostInertia
-import Formalism.CMTypeGalois.CMTypeFrobenius.HostMu
-import Formalism.CMTypeGalois.CMTypeFrobenius.HostEmb
+import Formalism.CMTypeGalois.CMTypeFrobenius.Bundle0002
 
 open NumberField Ideal
 

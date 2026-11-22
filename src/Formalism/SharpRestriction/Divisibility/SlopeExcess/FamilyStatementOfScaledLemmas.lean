@@ -1,6 +1,6 @@
 import Formalism.SharpRestriction.Divisibility.PrimeDegreeVariant
 import Formalism.HarderNarasimhan.ShiftInvariance
-import Formalism.SharpRestriction.Divisibility.ChainOperators.ClosedPartStatementHolds
+import Formalism.SharpRestriction.Divisibility.ChainOperators.Bundle0001
 
 noncomputable section
 

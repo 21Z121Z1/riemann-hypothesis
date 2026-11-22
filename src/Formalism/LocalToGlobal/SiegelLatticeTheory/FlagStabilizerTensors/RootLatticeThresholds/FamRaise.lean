@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.SharpRestriction.ParConsts
-import Formalism.SharpRestriction.CuspSpanNormBounds.LeSCSCl
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0010
 
 noncomputable section
 

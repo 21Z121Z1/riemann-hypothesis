@@ -1,5 +1,5 @@
 import Mathlib
-import Development.EtaleCohomology.EtaleSheaves.LeafGhostRelCut
+import Development.EtaleCohomology.EtaleSheaves.Bundle0024
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC

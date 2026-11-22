@@ -1,7 +1,7 @@
-import ReciprocityTheory.AnalyticForms.PotentialTheory.ProdProofA
-import ReciprocityTheory.AnalyticForms.PotentialTheory.IntegrableOnTargetOfTsupport
-import ReciprocityTheory.AnalyticForms.PotentialTheory.Partition
-import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffAtOfIsPotential
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0007
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0006
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0004
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0002
 
 namespace ReciprocityTheory.AnForm.M
 

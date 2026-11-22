@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.StepUnfold
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousReGLSymm
+import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1710
 
 noncomputable section
 

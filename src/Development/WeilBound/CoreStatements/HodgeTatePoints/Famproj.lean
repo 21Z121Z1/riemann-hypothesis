@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IntegralClosureHeightEqOneOfLiesOver
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0010
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.IsPolLatticePlane
-import Development.AutomorphicSpectrum.Statements.AlgebraStatements.HodgeTateNormComparison
+import Development.AutomorphicSpectrum.Statements.AlgebraStatements.Bundle0003
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Birational
-import Development.WeilBound.CoreStatements.HodgeTatePoints.Hcptgen
-import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatLev
+import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0053
+import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0055
 import Development.WeilBound.CoreStatements.HodgeTatePoints.FamprojAlg
 
 noncomputable section

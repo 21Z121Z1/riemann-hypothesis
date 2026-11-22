@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.NormOnePow
+import Formalism.PeriodIntegrals.Bundle0007
 
 open NumberField nonZeroDivisors
 

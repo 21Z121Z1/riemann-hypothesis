@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.DataN
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ColRepSemisimple
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEigenvectorOfTraceEqAddCharacter
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0170
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0117
 
 noncomputable section
 

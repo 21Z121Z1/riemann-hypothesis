@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.FiniteInterClosedBallOfSeparated
+import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.Bundle0003
 
 open Metric MeasureTheory Module Set Real
 

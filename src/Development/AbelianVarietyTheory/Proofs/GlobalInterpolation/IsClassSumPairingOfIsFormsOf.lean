@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsFormsOfToH
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CoefActionReprMemSubfield
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0124
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0054
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CardStabilizerForgetFr
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SpanMapNabKDelK
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TensorMapDescent
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0096
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0057
 import Formalism.LocalToGlobal.Columns.PolyFnLemmas
 
 noncomputable section

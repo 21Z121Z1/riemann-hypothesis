@@ -1,4 +1,4 @@
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.PolarizedGaloisRepPublished
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0006
 
 namespace PositivityTheory.Lit1.GRPP
 

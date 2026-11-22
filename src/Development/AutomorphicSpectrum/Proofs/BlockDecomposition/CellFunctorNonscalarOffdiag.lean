@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsSubquotientDetRepParInd
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CellFunctorScalarUniformizer
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CentralExponentBoundOver
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0935
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0037
 open GlobalTheory.PRep GlobalTheory.SmGL Matrix GlobalTheory.CellScalarTwo
 open scoped TensorProduct
 

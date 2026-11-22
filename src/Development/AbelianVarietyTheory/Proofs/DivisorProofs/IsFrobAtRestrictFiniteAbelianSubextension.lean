@@ -1,6 +1,6 @@
-import Development.AbelianVarietyTheory.Definitions.Divisors.TorsTransport
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0017
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsEqOfNatCastMulMem
-import ReciprocityTheory.ClassFieldTheory.GlobalClassField.IsFrobAtMulOfMemInertiaGroup
+import ReciprocityTheory.ClassFieldTheory.GlobalClassField.Bundle0001
 import ReciprocityTheory.GaloisValuations.Global
 open NumberField IsDedekindDomain GlobalTheory.CMVal GlobalTheory.LatVal Neutral.B1
 open scoped nonZeroDivisors

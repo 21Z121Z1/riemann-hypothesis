@@ -1,6 +1,6 @@
 import Formalism.HermitianCurvature.StatementFr
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.PositionInsertionDiagonalCompat
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.TransferMatrixFactorization
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0021
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0027
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.QuasiDeterminantFromEntries
 
 open Matrix Formalism.YangianSpanCharacter.T Formalism.YangianSpanCharacter.Y Formalism.FourierDecayAlt.R Formalism.FourierDecayAlt.Wd Formalism.FourierDecayAlt.Fr

@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.GradientAtPoint
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0001
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StNormalModelPlace
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.JacobianSmoothness.SmoothOfRegular
 set_option maxSynthPendingDepth 1

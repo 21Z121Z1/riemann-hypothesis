@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.PlaceDualBSt
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsFurtherLast
+import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0004
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0082
 
 noncomputable section
 

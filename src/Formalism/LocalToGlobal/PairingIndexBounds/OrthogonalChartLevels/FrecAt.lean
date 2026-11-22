@@ -1,6 +1,5 @@
-import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.BasesAt
+import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.Bundle0001
 import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.GramLevelZeroEqReindex
-import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.CmpJInPosEqGat
 
 noncomputable section
 

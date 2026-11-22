@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.StatementX
-import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.CMQuasiPeriodConst
-import Formalism.EllipticTorsion.FormalGroupPointsTorsionFree
+import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.Bundle0003
+import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.Bundle0003
+import Formalism.EllipticTorsion.Bundle0003
 import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.StatementI
 
 noncomputable section

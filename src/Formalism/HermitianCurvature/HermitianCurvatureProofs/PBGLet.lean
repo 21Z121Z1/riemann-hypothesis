@@ -1,6 +1,6 @@
 import Formalism.HermitianCurvature.StatementD
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LieDecompositionLocal
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.LeadingTermIdentity
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0134
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.GBasic
 
 open Matrix Finset

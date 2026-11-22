@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGDatumOneOneOne
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsReducedTensorIntNumberField
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0024
 
 noncomputable section
 namespace GlobalTheory.UPel.HT.Gen

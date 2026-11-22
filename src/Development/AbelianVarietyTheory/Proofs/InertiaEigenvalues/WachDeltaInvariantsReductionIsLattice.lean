@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.JSmul
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0007
 import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GammaActionReductionStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0314
 
 noncomputable section
 namespace GlobalTheory.Present.RedLat

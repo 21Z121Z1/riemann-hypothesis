@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGivenStageEqOne
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlacesApart
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0976
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemHatMxHomLatIff
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IterPrincipalSpec
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0324
 
 noncomputable section
 

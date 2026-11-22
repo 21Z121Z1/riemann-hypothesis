@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CharpolyEqOfIsNilpotentSub
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValuationApplyOfWild
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCongOfCongOnFixed
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0084
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0046
 
 noncomputable section
 

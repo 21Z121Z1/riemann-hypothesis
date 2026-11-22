@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalRingCardinality.DataHost
-import Development.AutomorphicArithmetic.WeightCongruences.ProdNegOneZpow
-import Development.AutomorphicArithmetic.WeightCongruences.ExistsShiftWeightCongruenceLtTorsionOrder
+import Development.AutomorphicArithmetic.WeightCongruences.Bundle0001
+import Development.AutomorphicArithmetic.WeightCongruences.Bundle0002
 import Development.AutomorphicArithmetic.WeightCongruences.ProdCmTypeEqNormAndWeightCongruenceOne
 
 open NumberField Formalism.BasicNotions

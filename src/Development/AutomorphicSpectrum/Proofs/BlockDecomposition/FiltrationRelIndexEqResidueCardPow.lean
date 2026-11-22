@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DiagPairs
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeasureCballZpow
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0442
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1307
 
 noncomputable section
 

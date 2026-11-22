@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.FramedTwoCoboundaries
-import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.HhGroup
-import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.HhSmall
+import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.Bundle0006
+import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.Bundle0007
 open IsLocalRing MvPowerSeries UpperTheory.V.Alg
 
 section Co

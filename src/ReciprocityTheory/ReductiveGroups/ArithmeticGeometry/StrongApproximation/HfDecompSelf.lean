@@ -1,6 +1,6 @@
 import Mathlib
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.StrongApproximation.ReachableFixingAddSmulSecond
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.StrongApproximation.ExistsMaxOfNotCoprime
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.StrongApproximation.Bundle0001
 
 namespace ReciprocityTheory.ChartRestriction.G.SA
 

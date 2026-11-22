@@ -1,11 +1,11 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.RowMinor
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0011
 import Formalism.SharpRestriction.CuspSpanNormBounds.CongruenceAtSplitFrobeniusHolds
 import Formalism.SharpRestriction.CuspSpanNormBounds.AbsoluteAmplitudeSecondOfSource
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CyclicDiscriminantLatticesFormOneGenus
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemOfPerpPerp
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsForallHomEq
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniquePlace
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0194
 
 noncomputable section
 

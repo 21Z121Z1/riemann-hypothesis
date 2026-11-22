@@ -1,7 +1,6 @@
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.WeylForU
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.ModelIso
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.PolyCoef
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.UnitaryDense
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0021
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0027
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0012
 import Formalism.PeriodIntegrals.AdmissibleModel.WeylDim
 
 theorem nablaDim_closed : PI.NablaDim := fun n nu h => Formalism.L2.G.Model.weyl_dualWeyl ℂ n nu h

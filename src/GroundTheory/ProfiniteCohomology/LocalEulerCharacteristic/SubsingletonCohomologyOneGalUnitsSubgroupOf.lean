@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.ConjAction
+import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Bundle0003
 import GroundTheory.ProfiniteCohomology.ClassFormations.Corestriction
 import GroundTheory.ProfiniteCohomology.LocalClassFormationAlt
 import GroundTheory.ProfiniteCohomology.GaloisCohomology.Kummer

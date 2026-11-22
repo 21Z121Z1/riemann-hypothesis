@@ -1,6 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExponentialFamilyPeriods
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeGram
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0009
 
 noncomputable section
 

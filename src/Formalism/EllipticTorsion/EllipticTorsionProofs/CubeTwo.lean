@@ -1,9 +1,8 @@
-import Formalism.EllipticTorsion.CoeffRing
+import Formalism.EllipticTorsion.Bundle0002
 import Formalism.EllipticTorsion.EllipticTorsionProofs.WChord
 import Formalism.EllipticTorsion.EllipticTorsionProofs.ExistsUnitFactor
 import Formalism.EllipticTorsion.EllipticTorsionProofs.WSubst
-import Formalism.EllipticTorsion.EllipticTorsionProofs.WSeries
-import Formalism.EllipticTorsion.EllipticTorsionProofs.WPoint
+import Formalism.EllipticTorsion.EllipticTorsionProofs.Bundle0001
 import Formalism.EllipticTorsion.EllipticTorsionProofs.FormalGroupPointsHomDef
 import Formalism.EllipticTorsion.EllipticTorsionProofs.JetsTwo
 

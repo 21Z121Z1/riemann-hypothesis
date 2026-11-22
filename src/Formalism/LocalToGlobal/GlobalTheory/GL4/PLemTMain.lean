@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.GlobalTheory.GL4.PLemTSpan
+import Formalism.LocalToGlobal.GlobalTheory.GL4.Bundle0002
 
 noncomputable section
 

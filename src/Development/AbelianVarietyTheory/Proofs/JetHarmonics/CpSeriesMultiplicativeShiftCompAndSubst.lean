@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Jets.CmLatticeCommutatorPairingPowEqOneOfGoodLift
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CpSeriesCoeffNormBoundedRingLaws
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ConstantCoeffShiftS
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0099
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0011
 
 noncomputable section
 open PowerSeries GlobalTheory.MomOne

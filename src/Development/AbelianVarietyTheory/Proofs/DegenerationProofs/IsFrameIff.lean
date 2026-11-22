@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
-import Development.AbelianVarietyTheory.Definitions.Degenerations.HomExtSt
+import Development.AbelianVarietyTheory.Definitions.Degenerations.Bundle0001
 import Development.AbelianVarietyTheory.Definitions.Degenerations.IsBasisB
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.LinearIndependentOfIsExtension
 

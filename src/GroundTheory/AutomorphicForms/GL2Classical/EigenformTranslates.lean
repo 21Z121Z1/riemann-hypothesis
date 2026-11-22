@@ -3,7 +3,7 @@ import GroundTheory.AutomorphicForms.GL2Classical.TranslateSpanLeCuspForms
 import GroundTheory.AutomorphicForms.GL2Classical.Automorphic
 import GroundTheory.AutomorphicForms.GL2Classical.EigenQExpansion
 import GroundTheory.AutomorphicForms.GL2Classical.CuspFormsFiniteDim
-import GroundTheory.AutomorphicForms.GL2Classical.UnitaryEigenSpan
+import GroundTheory.AutomorphicForms.GL2Classical.Bundle0001
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.CuspFormsDecay
 
 open NumberField Matrix CongruenceSubgroup ModularForm Complex Filter

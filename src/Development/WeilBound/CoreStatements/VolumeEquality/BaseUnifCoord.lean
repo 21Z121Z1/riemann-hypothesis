@@ -1,5 +1,5 @@
 import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifDefsB
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.VerticalDerivativeInCoordinates
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0032
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DifferentiableOnOfTendstoLocallyUniformlyOn
 
 noncomputable section

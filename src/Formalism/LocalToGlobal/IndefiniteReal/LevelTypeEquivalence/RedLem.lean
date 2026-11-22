@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.RedTheta
-import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.CharLem
+import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0005
+import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0003
 
 noncomputable section
 

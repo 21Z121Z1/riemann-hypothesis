@@ -1,7 +1,7 @@
 import Formalism.LocalToGlobal.LatticeGeometry.RealizationNorms.SumUliftFinsetFinTwoExpand
 import Formalism.LocalToGlobal.LatticeGeometry.RealizationNorms.TransferenceGivesSecondBound
-import Formalism.LocalToGlobal.LatticeGeometry.CmTypeMeetsConjugatePair
-import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.CardTrivialFirstComponent
+import Formalism.LocalToGlobal.LatticeGeometry.Bundle0001
+import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Bundle0002
 
 open NumberField NumberField.InfinitePlace Module Matrix Formalism.BasicNotions
 

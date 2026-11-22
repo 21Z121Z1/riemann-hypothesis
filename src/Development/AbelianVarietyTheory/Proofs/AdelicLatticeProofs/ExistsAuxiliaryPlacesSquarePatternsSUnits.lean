@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.SqSubLeNormSub
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsPlaceIsSquareAndNotIsSquare
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.RelIndexSquaresSUnitsNumberFieldStatement
+import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0053
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0039
 open NumberField IsDedekindDomain GlobalTheory.QNorm
 open scoped WithZero
 

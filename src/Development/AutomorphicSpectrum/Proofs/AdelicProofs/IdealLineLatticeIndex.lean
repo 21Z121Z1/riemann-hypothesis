@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.KernelsLattice
-import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.PIdealIndexPlaces
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SchwartzBilinear.IntegerSmulEqAlgebraMapSmul
+import GroundTheory.HeightsAndTheta.Heights.Bundle0001
+import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Bundle0017
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SchwartzBilinear.Bundle0002
 
 open NumberField GroundTheory.Heights₂.Heights
 open scoped nonZeroDivisors

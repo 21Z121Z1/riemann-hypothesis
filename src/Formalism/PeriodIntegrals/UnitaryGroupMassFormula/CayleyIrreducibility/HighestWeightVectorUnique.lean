@@ -1,10 +1,10 @@
 import Mathlib
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CayleyIrreducibility.DivClosedOf
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.HWLine
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.WeylLeDual
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.SumIcoTsubTelescope
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.RowDivStable
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LHwrowLemmas
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0011
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0006
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0009
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0007
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0001
 
 noncomputable section
 

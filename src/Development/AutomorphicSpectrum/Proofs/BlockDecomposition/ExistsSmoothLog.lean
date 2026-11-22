@@ -1,4 +1,4 @@
-import Formalism.UnipotentAdelicQuotients.SmComplete
+import Formalism.UnipotentAdelicQuotients.Bundle0002
 import CompanionTheory.HarishChandraModules.BesselParameterIntegrals.ContDiffOnExpPartialHomeomorphSymm
 open SmoothVectors Filter Topology
 open scoped ContDiff Matrix.Norms.Elementwise

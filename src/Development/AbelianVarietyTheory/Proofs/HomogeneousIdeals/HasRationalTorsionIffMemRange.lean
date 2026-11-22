@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsLineOfAddAddEqZero
+import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0002
 
 namespace GlobalTheory
 

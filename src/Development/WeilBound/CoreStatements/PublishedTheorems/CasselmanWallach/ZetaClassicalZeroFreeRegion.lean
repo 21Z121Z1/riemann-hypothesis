@@ -1,4 +1,4 @@
-import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.ExistsNormingFunctional
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.Bundle0010
 
 noncomputable section
 

@@ -1,7 +1,6 @@
-import Formalism.SharpRestriction.GrowthBounds.PowerSeriesFrobeniusCongruence
-import Formalism.SharpRestriction.GrowthBounds.CoeffIdentityPlainChartOfThree
+import Formalism.SharpRestriction.GrowthBounds.Bundle0003
 import Formalism.LocalToGlobal.CharacterGerms.TripleSubstSecondCoordinate
-import Formalism.LocalToGlobal.CharacterGerms.RowTieCartAdd
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0019
 
 noncomputable section
 

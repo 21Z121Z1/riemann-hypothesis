@@ -1,6 +1,6 @@
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.HeckeActMem
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0001
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Heckebasic
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.EvalFg
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0015
 
 open Formalism.UG Formalism.UG.P
 

@@ -1,5 +1,5 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSEJSliceCut
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.FsvMulFsvNeg
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0283
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0036
 
 open MeasureTheory Filter Topology
 open scoped ComplexConjugate ContDiff

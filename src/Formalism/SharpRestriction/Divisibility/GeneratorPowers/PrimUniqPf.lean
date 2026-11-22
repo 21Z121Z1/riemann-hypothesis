@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PrimUniqSt
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermFunPf
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0004
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.LBTransport
 
 set_option autoImplicit false

@@ -1,4 +1,4 @@
-import Development.EtaleCohomology.EtaleSheaves.ConeExcision
+import Development.EtaleCohomology.EtaleSheaves.Bundle0006
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry Opposite CochainComplex GlobalTheory.EtC

@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.IsChartIff
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
 import Formalism.SharpRestriction.Divisibility.AbelianOpenPart.IsOpenPart
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CmHostRootComplexEqPmSqrt
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsProbabilityMeasureMuPart

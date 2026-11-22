@@ -1,6 +1,6 @@
 import Formalism.LocalToGlobal.GlobalTheory.GL5.DiscreteSeriesOfFormalDegree
 import Formalism.LocalRingCardinality.SpanPowerMembership.Spaces
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CardinalityOfBand
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0005
 
 noncomputable section
 

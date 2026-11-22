@@ -2,7 +2,7 @@ import Mathlib
 import GroundTheory.AutomorphicForms.QuotientMeasure
 import GroundTheory.AutomorphicForms.CompactFormulaUnitary
 import GroundTheory.AutomorphicForms.AdelicUnitaryGroups
-import GroundTheory.AutomorphicForms.AdelicUnitaryGroups.Lattice
+import GroundTheory.AutomorphicForms.AdelicUnitaryGroups.Bundle0001
 import GroundTheory.GlobalFields.TateThesis.AdelicCharLocal
 import GroundTheory.HeightsAndTheta.Theta.GaussianExample
 

@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrystallineDeRhamAbelianStructureOfStatements
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrystallineSmoothLiftOfRelations
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3288
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3364
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.AbelianHodgeDeRham.Bridge
 
 namespace AbelianDeRhamStructureFromPages.Adrs

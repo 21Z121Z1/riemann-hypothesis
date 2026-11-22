@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsChartLatQCech
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0069
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGenOnFibres
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PZeroCocycleSection
 set_option maxSynthPendingDepth 1

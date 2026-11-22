@@ -1,6 +1,6 @@
 import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.BrBase
 import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.AddMemSupportOfMemSupportCoefOut
-import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.Monomial
+import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.Bundle0002
 
 noncomputable section
 

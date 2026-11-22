@@ -1,4 +1,4 @@
-import Formalism.SatakeDualWeyl.StatementE
+import Formalism.SatakeDualWeyl.Bundle0001
 
 noncomputable section
 

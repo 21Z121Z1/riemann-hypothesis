@@ -1,5 +1,5 @@
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.HtDefs
-import ReciprocityTheory.SemistableReduction.AlgAll
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Bundle0008
+import ReciprocityTheory.SemistableReduction.Bundle0023
 
 namespace ReciprocityTheory.ChartRestriction.G.T0
 

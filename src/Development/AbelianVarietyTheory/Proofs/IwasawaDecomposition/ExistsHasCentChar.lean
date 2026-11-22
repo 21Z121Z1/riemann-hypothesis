@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsUnitaryOfCharIff
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.QdetTopThreeOrders
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0019
 
 noncomputable section
 

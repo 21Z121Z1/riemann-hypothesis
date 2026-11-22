@@ -1,9 +1,8 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteReal.LiftCoordinatesInGoodPartOfDefinite
-import Formalism.LocalToGlobal.IndefiniteReal.CxPass
-import Formalism.LocalToGlobal.IndefiniteReal.MemRangeAdjointOfKerStable
-import Formalism.LocalToGlobal.IndefiniteReal.EqZeroOfMemRangeAdjoint
-import Formalism.LocalToGlobal.IndefiniteReal.EqZeroOfRangeAdjoint
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0012
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0011
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0005
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0007
 import Formalism.LocalToGlobal.Divisibility.ProjLemmas
 
 open Module NumberField IsDedekindDomain

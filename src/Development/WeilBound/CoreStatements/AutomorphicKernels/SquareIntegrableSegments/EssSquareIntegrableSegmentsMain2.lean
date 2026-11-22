@@ -1,7 +1,7 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.AutomorphicKernels.SquareIntegrableSegments.EssSquareIntegrableSegmentsOfLit
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LanglandsSocleOfOrderFreeStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalLanglandsOfIrreducibleAdmissibleStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0689
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0401
 
 noncomputable section
 

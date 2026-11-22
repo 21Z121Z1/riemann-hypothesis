@@ -1,5 +1,5 @@
-import Formalism.UnipotentAdelicQuotients.StdAdditiveCharExists
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.StdCharTR
+import Formalism.UnipotentAdelicQuotients.Bundle0002
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0018
 
 open NumberField
 

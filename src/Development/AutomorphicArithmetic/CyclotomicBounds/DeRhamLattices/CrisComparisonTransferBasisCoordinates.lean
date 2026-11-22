@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ZAEqAlgebraMapPt
-import Development.AutomorphicArithmetic.CyclotomicBounds.DeRhamLattices.CrisComparisonToBSmulEqDeRhamAct
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0488
+import Development.AutomorphicArithmetic.CyclotomicBounds.DeRhamLattices.Bundle0005
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.WeaklyAdmissibleFiltrations TensorProduct PowerSeries GlobalTheory.Prism GlobalTheory.BK GlobalTheory.BKReal GlobalTheory.BKGal GlobalTheory.Per Matrix
 open scoped Formalism.Per
 set_option maxHeartbeats 2000000

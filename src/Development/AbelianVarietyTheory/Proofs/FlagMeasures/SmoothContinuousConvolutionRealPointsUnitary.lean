@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.HermitianFor
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.DiscreteSpectrumKFiniteDecomposition
 import Formalism.HarderNarasimhan.ShiftInvariance
 import Formalism.RealPlaceAnalysis.FinalF
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsContDiffExtensionOfIsClosed
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0056
 
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S Formalism.REAL Formalism.QuantumDeterminants GlobalTheory.Count GlobalTheory.Dec
 open scoped InnerProductSpace ComplexOrder ContDiff Topology

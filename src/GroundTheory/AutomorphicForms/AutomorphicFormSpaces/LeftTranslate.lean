@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.GKModules.GKModule
-import GroundTheory.AutomorphicForms.GKModules.Garding
+import GroundTheory.AutomorphicForms.GKModules.Bundle0001
 import GroundTheory.AutomorphicForms.GKModules.Casimir
 
 namespace GroundTheory.Automorphic

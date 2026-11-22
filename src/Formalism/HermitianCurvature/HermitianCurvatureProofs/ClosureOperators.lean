@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.CapelliDeterminantAndBranching
+import Formalism.HermitianCurvature.Bundle0005
 
 open Matrix Finset
 

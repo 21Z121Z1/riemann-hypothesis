@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrimeMapPrimeMap
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0276
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrdNonnegOfIsIntegral
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FixedEqRepMulNormMulFixedUnit
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteFixedUnitsModFixedSquares
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0295
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0291
 open NumberField IsDedekindDomain GlobalTheory.FixNormCls GlobalTheory.LocalDivisor
 open scoped TensorProduct Classical
 

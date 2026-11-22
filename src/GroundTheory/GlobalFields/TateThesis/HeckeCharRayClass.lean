@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.GlobalFields.TateThesis.HeckeChar
-import GroundTheory.GlobalFields.TateThesis.ArchCharsUnitary
+import GroundTheory.GlobalFields.TateThesis.Bundle0004
 import GroundTheory.GlobalFields.IdeleGroups.UnitBound
 
 open Topology Filter NumberField IsDedekindDomain Function Complex

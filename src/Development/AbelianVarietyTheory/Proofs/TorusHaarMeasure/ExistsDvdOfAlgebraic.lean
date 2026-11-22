@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.PolyImgSuccAbove
+import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.Bundle0006
 
 noncomputable section
 

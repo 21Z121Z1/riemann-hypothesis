@@ -1,7 +1,7 @@
 import Formalism.CharacterColumnKernels.CharacterColumnKernelEqualityForm
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.BlockRhoFull
-import Formalism.CharacterColumnKernels.IdempotentNormalForms.LengthKerSmulLe
-import Formalism.CharacterColumnKernels.IdempotentNormalForms.BlockChiOneTriv
+import Formalism.CharacterColumnKernels.IdempotentNormalForms.Bundle0007
+import Formalism.CharacterColumnKernels.IdempotentNormalForms.Bundle0008
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.ColKerChiOne
 
 open Finset Classical

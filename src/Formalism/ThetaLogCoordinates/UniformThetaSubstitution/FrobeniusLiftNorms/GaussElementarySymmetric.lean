@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.StatementC
-import Formalism.SubspaceCounting.SubspaceCountingProofs.QVandermonde
+import Formalism.SubspaceCounting.SubspaceCountingProofs.Bundle0001
 import Formalism.ArtinHasse.ArtinHasseProofs.SymmSeries
 
 noncomputable section

@@ -1,5 +1,5 @@
 import Formalism.WachLatticeTwists.HodgeTateChains.H2KilledByTateDuality
-import Formalism.WachLatticeTwists.CoprimeLiftBounds.StatBridgeChiOne
+import Formalism.WachLatticeTwists.CoprimeLiftBounds.Bundle0001
 import Formalism.WachLatticeTwists.LatticeDualFibres.Statement
 
 open Finset Classical

@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutMP2
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0052
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.CapelliHighestWeightConjugated
 import CompanionTheory.HarishChandraModules.NonemptyRepresentations.ExpEntry
 

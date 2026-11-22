@@ -1,6 +1,6 @@
-import Formalism.PeriodIntegrals.QmDefs
-import Formalism.PeriodIntegrals.QmMove
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ShiftedGeneratorEqIteSmulAdd
+import Formalism.PeriodIntegrals.Bundle0021
+import Formalism.PeriodIntegrals.Bundle0023
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0005
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.GeneratorCommutatorQuantumDet
 
 open Finset Formalism.REAL

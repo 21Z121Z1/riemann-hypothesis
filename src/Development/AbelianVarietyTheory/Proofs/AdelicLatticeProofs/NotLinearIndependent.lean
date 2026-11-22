@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.ExistsEquivOfSumEq
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LevelOneThetaEqSmulOfSelfDualLattice
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.DifferentiableExpMulOfAnnihilatedStatement
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsRatBilinForm
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0006
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0003
 
 open Matrix
 

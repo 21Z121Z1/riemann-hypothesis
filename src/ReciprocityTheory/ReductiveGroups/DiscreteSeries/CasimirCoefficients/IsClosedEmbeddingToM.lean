@@ -1,5 +1,5 @@
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DefsRep
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IsClosedEmbeddingToM
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0040
 
 noncomputable section
 

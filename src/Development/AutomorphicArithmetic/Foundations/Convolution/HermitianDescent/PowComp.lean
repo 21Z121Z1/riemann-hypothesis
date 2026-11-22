@@ -1,7 +1,7 @@
 import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.NormAlmostAll
-import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.NmPoly
-import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.SeparableOfMap
-import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.NmCent
+import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.Bundle0001
+import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.Bundle0003
+import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.Bundle0002
 
 open Matrix Polynomial NumberField IsDedekindDomain
 open scoped TensorProduct

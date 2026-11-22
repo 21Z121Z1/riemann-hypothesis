@@ -1,9 +1,9 @@
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.LUnH
-import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.CountSpanEqZero
+import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.Bundle0002
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.RelOfComap
-import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.ExistsOfFixed
-import Development.AbelianVarietyTheory.Definitions.Foundations.HahnPowOrderLeadingCoeff
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteDimensionalLevStatement
+import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.Bundle0001
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0212
 open GlobalTheory.KZ GlobalTheory.K4 UpperTheory.Kd.K4 Polynomial
 open scoped Matrix MatrixGroups
 

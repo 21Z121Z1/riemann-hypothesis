@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsBisAltAlt
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PTwinEqBundleLocal
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0007
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0001
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Kleiman.TranslateEq

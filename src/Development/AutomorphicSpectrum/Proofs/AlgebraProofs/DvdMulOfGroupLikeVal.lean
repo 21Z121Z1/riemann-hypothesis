@@ -3,7 +3,7 @@ import Development.AutomorphicSpectrum.Statements.GeometryStatements.IsPolLattic
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DUnitMemRangeOfMemKerIdeal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConvEqOneOfForallPairing
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DerivationDivisibleOfCocomm
-import ReciprocityTheory.DualLattices.BlockOneMulMulBlockOne
+import ReciprocityTheory.DualLattices.Bundle0014
 
 noncomputable section
 

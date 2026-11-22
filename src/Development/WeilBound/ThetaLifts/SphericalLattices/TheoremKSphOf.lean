@@ -1,7 +1,7 @@
 import Development.WeilBound.ThetaLifts.SphericalLattices.SphericalClosure.CloseSph
 import Development.WeilBound.ThetaLifts.Reductions.FiniteClosure.RamifiedMultiplicityOne
-import Development.WeilBound.ThetaLifts.SphericalLattices.ExistsFixedSum
-import Development.WeilBound.ThetaLifts.SphericalLattices.FinInert
+import Development.WeilBound.ThetaLifts.SphericalLattices.Bundle0010
+import Development.WeilBound.ThetaLifts.SphericalLattices.Bundle0003
 
 namespace PositivityTheory.Sph
 

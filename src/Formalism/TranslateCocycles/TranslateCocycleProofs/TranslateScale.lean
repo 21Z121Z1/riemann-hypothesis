@@ -1,4 +1,4 @@
-import Formalism.TranslateCocycles.Statement
+import Formalism.TranslateCocycles.Bundle0001
 
 noncomputable section
 namespace Formalism.CG

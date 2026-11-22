@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SmithMat
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0008
 
 noncomputable section
 

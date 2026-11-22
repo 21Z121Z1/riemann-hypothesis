@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.LocalToGlobal.UnitaryNorms.IsUnitaryNormOf
-import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
-import Development.AbelianVarietyTheory.Definitions.Foundations.SmoothPartStable
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TwConj
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOfValuedEq
+import Formalism.RealPlaceAnalysis.Bundle0004
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0002
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0107
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsOpenKerFinIdele
 
 noncomputable section

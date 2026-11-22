@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GPowPf
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PowerRosatiTauBalAction
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0021
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0166
 import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.PremisesMetRankOne
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.InhTate
 

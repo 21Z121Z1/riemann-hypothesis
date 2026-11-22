@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.PAdicHodge.FWCyclotomicNorm
 import GroundTheory.PAdicHodge.FontaineWintenberger
-import GroundTheory.PAdicHodge.PerfectoidCriterion
+import GroundTheory.PAdicHodge.Bundle0004
 set_option maxSynthPendingDepth 1
 
 noncomputable section

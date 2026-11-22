@@ -1,8 +1,7 @@
 import Mathlib
-import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Interface
-import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.RedModel
-import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.NormWeierstrassCoeffSmallJ
-import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Norm1728EqOneOfFiveLe
+import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0002
+import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0034
+import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0035
 
 noncomputable section
 open scoped BigOperators Classical

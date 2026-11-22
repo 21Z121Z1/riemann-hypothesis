@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsIvDOfDefinite
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.EqZeroOfApplySelf
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0038
 
 noncomputable section
 

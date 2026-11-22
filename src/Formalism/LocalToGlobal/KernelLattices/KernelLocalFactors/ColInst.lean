@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.KernelLattices.ColInst
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThDistC
-import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.StdOK
+import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.Bundle0002
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.PeriodLatticeFinitelyGenerated
 import Formalism.LocalToGlobal.Columns.CyclotomicIsCyclotomicExtension
 

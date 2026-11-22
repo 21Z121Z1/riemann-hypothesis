@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.SharpRestriction.LevelLetterCocycles.UsedLocalConclusion
-import Formalism.SharpRestriction.LevelLetterCocycles.GammaSemisimpleLocalOfConsequences
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0006
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0005
 import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 import Formalism.SharpRestriction.LevelLetterCocycles.LiftingTheory
 import Formalism.SharpRestriction.LevelLetterCocycles.DeltaInvariantLattices

@@ -1,12 +1,10 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.MetricsProjectionFormulaNef
-import GroundTheory.HeightsAndTheta.Heights.Intersections.IsMultiProjPrimeImageZ
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.ProjDeg
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.ProjContract
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PFnDegRelDeg
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.GeoNum
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.ExistsUnique
-import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PContractRelDimLe
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0034
+import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0013
+import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0007
+import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0014
+import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0009
 import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.FieldNumbersProjectionFormulaDegree
 
 noncomputable section

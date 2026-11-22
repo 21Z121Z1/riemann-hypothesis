@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.BlockSplitAll
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsobaricDiscreteSelfDualStrongMultiplicityOne
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0015
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0006
 import Formalism.LocalToGlobal.GaloisLevelStructure.TiedHecke
-import Formalism.LocalToGlobal.GaloisLevelStructure.Checks
+import Formalism.LocalToGlobal.GaloisLevelStructure.Bundle0001
 
 namespace GlobalTheory.TypeOrthogonality
 

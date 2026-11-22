@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicArithmetic.AutomorphicVarieties.PartsSign
+import Development.AutomorphicArithmetic.AutomorphicVarieties.Bundle0001
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.ConjStableShaFam
 
 noncomputable section

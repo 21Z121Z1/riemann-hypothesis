@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivConstClosedPts
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OriginIdeal
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0203
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0235
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNoetherianNormalLocalApprox
 open IsLocalRing Polynomial
 

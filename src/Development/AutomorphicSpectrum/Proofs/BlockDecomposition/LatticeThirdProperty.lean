@@ -1,6 +1,6 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.IntegralUnitBaseChange.Development
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedExtensionIntegralBasis
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0076
 
 open Matrix PositivityTheory.Rg.Tf.Loc
 

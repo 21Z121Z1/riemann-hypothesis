@@ -2,9 +2,9 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NotBaseCondFalse
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StdLvPr
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.HostPins
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0020
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsHalfPtIff
-import Formalism.LocalToGlobal.HermitianForms.ExtraSym
+import Formalism.LocalToGlobal.HermitianForms.Bundle0007
 import Formalism.LocalToGlobal.GroupLattices.StdSubAtOfRing
 import Formalism.LocalToGlobal.GroupLattices.Joint0
 

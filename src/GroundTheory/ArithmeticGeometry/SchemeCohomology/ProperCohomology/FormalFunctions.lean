@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.FormalVanish
-import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.FormalCompare
+import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.Bundle0011
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.HasExtInstances
 set_option maxSynthPendingDepth 1
 

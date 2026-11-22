@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.SumMemLaSet
+import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0006
 
 noncomputable section
 

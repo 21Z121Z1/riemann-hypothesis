@@ -1,4 +1,4 @@
-import Formalism.SmithDeterminants.DefsDVR
+import Formalism.SmithDeterminants.Bundle0002
 
 namespace Formalism.A
 

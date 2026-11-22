@@ -1,6 +1,6 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.AutomorphicKernels.MoriwakiBigness.HilbertSamuelApplications.SelfIntersectionLeOfBoundedInjectionUse
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.HilbertSamuelG3StarOfStatements
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0165
 open MvPolynomial ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.ArakelovGeometry Filter Topology NumberField
 
 namespace GlobalTheory.CompanionTheory.Ar.Giv

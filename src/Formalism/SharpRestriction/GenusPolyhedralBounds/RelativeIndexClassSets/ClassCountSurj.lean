@@ -1,8 +1,8 @@
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsAsmHformSmulRight
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0010
 import Formalism.HermitianLattices.FinalNeighbourConstruct
 import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.ClassCountStmt
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IntegerDenominator
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0037
 
 noncomputable section
 

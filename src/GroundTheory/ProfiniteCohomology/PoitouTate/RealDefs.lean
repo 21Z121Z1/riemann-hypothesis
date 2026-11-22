@@ -2,7 +2,7 @@ import Mathlib
 import GroundTheory.ProfiniteCohomology.PoitouTate.PtCompactDualMapEqZeroOfPtCompactToGlobalEqZero
 import GroundTheory.ProfiniteCohomology.RealPlaces.DevissageNatural
 import GroundTheory.ProfiniteCohomology.RealPlaces.LocalDualityDefs
-import GroundTheory.ProfiniteCohomology.RealPlaces.NormHomotopy
+import GroundTheory.ProfiniteCohomology.RealPlaces.Bundle0001
 import GroundTheory.ProfiniteCohomology.InflationRestriction.DegreeOne
 set_option maxSynthPendingDepth 1
 

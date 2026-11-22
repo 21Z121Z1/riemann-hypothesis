@@ -1,6 +1,6 @@
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsCuspFormPeriodNeZero
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PeriodNonvanishingOfArchimedeanInputs
-import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.ExistsMultTEqPoin
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0802
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0805
+import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Bundle0005
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.L2.DIV
 open IsDedekindDomain NumberField MeasureTheory GlobalTheory.ChiGrid GlobalTheory.FunObj GlobalTheory.Grow
 open GlobalTheory.IndefiniteRowSideFullHecke.LevelPlusSubgroup (coefPlus Cols SizeRows)

@@ -1,6 +1,6 @@
 import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.ContDiffOnOfContDiffAtOne
 import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.LibSmoothDec
-import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.FiniteSupportOfHyp
+import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Bundle0002
 
 noncomputable section
 

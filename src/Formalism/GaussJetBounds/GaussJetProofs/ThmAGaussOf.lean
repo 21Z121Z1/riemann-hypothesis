@@ -1,7 +1,7 @@
-import Formalism.GaussJetBounds.FrameJetEval
-import Formalism.GaussJetBounds.GaussJetProofs.Generic
+import Formalism.GaussJetBounds.Bundle0006
+import Formalism.GaussJetBounds.GaussJetProofs.Bundle0007
 import Formalism.GaussJetBounds.GaussJetProofs.GField
-import Formalism.GaussJetBounds.GaussJetProofs.ConstantCoeffEvenDerivativeEqZero
+import Formalism.GaussJetBounds.GaussJetProofs.Bundle0003
 
 noncomputable section
 open scoped BigOperators

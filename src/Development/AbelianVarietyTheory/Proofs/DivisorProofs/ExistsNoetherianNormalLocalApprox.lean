@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteIntegralClosureOfEssFiniteTypeIntDomain
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0073
 open IsLocalRing
 
 namespace GlobalTheory.NormalApprox

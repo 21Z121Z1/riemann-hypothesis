@@ -1,8 +1,7 @@
 import Mathlib
 import GroundTheory.GlobalFields.AnalyticClassNumber.Quadratic
 import GroundTheory.GlobalFields.AnalyticClassNumber.QuadraticConductor
-import GroundTheory.HeightsAndTheta.Heights.QuadraticFields.SqfDiscr
-import GroundTheory.HeightsAndTheta.Heights.QuadraticFields.SqfZetaFactor
+import GroundTheory.HeightsAndTheta.Heights.QuadraticFields.Bundle0001
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Rows

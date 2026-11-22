@@ -1,4 +1,4 @@
-import Formalism.CyclotomicNorms.StatementT
+import Formalism.CyclotomicNorms.Bundle0002
 import Formalism.GaloisIrreducibility.NoSolvableTransitive
 import Lemmata.GeneralBFactSecondBis.Imports
 

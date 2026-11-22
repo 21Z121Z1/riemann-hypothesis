@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSegreDimGe
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0014
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.JacobianSmoothness.RingKrullDimLeRingKrullDimQuotientAddOne
 set_option maxSynthPendingDepth 1
 

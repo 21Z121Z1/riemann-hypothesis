@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SquarePairLocal.IntAtOfDivAtZero
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SquarePairLocal.Bundle0001
 
 noncomputable section
 open NumberField Matrix

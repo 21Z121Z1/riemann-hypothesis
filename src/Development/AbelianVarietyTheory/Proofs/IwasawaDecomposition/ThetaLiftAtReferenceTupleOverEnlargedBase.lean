@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqCjOneSmul
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0738
 
 noncomputable section
 

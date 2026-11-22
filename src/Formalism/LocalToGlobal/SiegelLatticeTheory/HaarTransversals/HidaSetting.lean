@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.SharpRestriction.CuspSpanNormBounds.DstarEq
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0004
 import Formalism.SharpRestriction.CuspSpanNormBounds.IsPrimitiveSub
 import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.ProjRows
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.Measures

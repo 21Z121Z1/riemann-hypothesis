@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.ThetaValues.LeCovCoeff
-import Formalism.LocalToGlobal.ProjectiveLattices.ThClassPinsRec
-import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.MemOfForallLocP
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TensorMapDescent
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.FFVMap
+import Development.AbelianVarietyTheory.Definitions.ThetaValues.Bundle0002
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0034
+import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0044
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0057
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0002
 
 open NumberField MvPolynomial ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo.Tor Formalism.L2.Pj Formalism.BasicNotions Formalism.L2.DIV GlobalTheory.FieldBC
 

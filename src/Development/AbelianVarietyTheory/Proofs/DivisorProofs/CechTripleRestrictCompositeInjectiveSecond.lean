@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ComparisonMemCechHodgeFiltration
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueIsPullForm
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairResBijectiveTwo
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0469
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0581
 
 set_option autoImplicit false
 noncomputable section

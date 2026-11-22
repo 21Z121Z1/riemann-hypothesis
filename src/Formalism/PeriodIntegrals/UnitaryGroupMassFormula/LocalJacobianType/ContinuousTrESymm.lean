@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.LocJacTyp
+import Formalism.PeriodIntegrals.Bundle0019
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HaarFibreUniqueness.SdExCore
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HaarFibreUniqueness.SdExChar
 

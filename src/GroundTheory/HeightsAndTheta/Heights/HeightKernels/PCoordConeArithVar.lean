@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsGrassHeight
-import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.StatementsIntDim
-import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.PConeTrdeg
-import GroundTheory.HeightsAndTheta.Heights.HeightComparison.IsMultiHomogIdealIff
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0017
+import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Bundle0001
+import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Bundle0012
+import GroundTheory.HeightsAndTheta.Heights.HeightComparison.Bundle0003
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

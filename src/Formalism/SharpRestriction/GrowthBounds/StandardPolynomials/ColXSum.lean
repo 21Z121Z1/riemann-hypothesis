@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.ColsS
-import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.ColXCnt
+import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.Bundle0010
+import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.Bundle0005
 import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.ColXSeg
 
 noncomputable section

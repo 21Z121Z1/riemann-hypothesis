@@ -1,5 +1,4 @@
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TwistedEisensteinCoset.Development
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TwistedEisensteinCoset.UnitCongruentToInteger
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TwistedEisensteinCoset.Bundle0001
 
 open NumberField IsDedekindDomain Module
 

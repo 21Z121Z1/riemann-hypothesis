@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.CharacterGerms.PderivTripleMultiplicationMaximal
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0038
 
 set_option autoImplicit false
 

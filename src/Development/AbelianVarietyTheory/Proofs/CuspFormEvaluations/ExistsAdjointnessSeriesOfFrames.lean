@@ -1,8 +1,8 @@
 import Mathlib
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermCut
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0005
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermBGen
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermBPrim
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermBSer
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0021
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0019
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 
 set_option autoImplicit false

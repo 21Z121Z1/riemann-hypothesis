@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.PairingDivisors.StatementA
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsFinSetSplitPlacesCoprimeConductor
+import Formalism.PairingDivisors.Bundle0001
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0014
 open NumberField IsDedekindDomain GlobalTheory.CMVal
 
 noncomputable section

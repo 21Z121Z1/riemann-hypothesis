@@ -1,4 +1,4 @@
-import Development.EtaleCohomology.EtaleSheaves.DescentInduction
+import Development.EtaleCohomology.EtaleSheaves.Bundle0007
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC

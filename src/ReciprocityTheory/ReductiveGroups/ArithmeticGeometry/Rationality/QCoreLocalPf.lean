@@ -1,6 +1,6 @@
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.QCoreH
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.QuotShiftPf
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.FreeQuotPf
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.Bundle0004
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.Bundle0003
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.Bundle0002
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.LocalLengthAverage
 
 namespace ReciprocityTheory.ChartRestriction.G.FreeQuotientRank

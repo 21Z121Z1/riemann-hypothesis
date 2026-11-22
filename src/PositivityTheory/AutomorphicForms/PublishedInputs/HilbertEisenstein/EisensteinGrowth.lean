@@ -1,5 +1,5 @@
-import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.AbsPInfModuleSection
-import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.PFinInvModuleSectionMul
+import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Bundle0006
+import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Bundle0008
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ChowForms.Imports
+import GroundTheory.HeightsAndTheta.Heights.ChowForms.Bundle0003
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

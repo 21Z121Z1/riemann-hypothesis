@@ -1,9 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CombAtSingleZero
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCombAt
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsRatDatum
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsTransportAdelicCorrection
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsScaleWithBoundedGamma
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0029
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0020
 
 set_option genSizeOfSpec false
 set_option genInjectivity false

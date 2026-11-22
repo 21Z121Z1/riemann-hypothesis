@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ParamsEx
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0024
 
 noncomputable section
 

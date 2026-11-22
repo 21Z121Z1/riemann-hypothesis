@@ -1,8 +1,8 @@
 import Mathlib
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.MdiscSt
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsChartCutoffEnergy
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0012
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PChartHessCompare
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PHermFormCompare
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0004
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

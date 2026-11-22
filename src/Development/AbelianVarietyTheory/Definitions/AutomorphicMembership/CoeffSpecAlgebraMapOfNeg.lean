@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CoefSetNonemptyOfNonneg
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CoeffPowLSOfNotDvd
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFrameBaseChangeRingHom
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CohenStructureFiniteOverNormalCompleteSubring
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0680
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0572
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0013
 
 set_option maxHeartbeats 800000
 

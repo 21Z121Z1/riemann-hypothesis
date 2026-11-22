@@ -1,6 +1,6 @@
 import Mathlib
-import Development.WeilBound.CoreStatements.AutomorphicKernels.MoriwakiBigness.HilbertSamuelApplications.InputsOfUse
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.GrassmannHeightZ2OfStatements
+import Development.WeilBound.CoreStatements.AutomorphicKernels.MoriwakiBigness.HilbertSamuelApplications.Bundle0001
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0176
 open MvPolynomial ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.AI.I1 ReciprocityTheory.ChartRestriction.G.AI.I4
 
 namespace GlobalTheory.CompanionTheory.Ar.Giv

@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.CuspidalAdmissible
-import GroundTheory.AutomorphicForms.AdmissibleInduction
+import GroundTheory.AutomorphicForms.Bundle0016
 
 noncomputable section
 

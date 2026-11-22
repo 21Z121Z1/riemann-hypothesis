@@ -1,6 +1,6 @@
 import Development.WeilBound.CoreStatements.PublishedTheorems.GlobalEulerCharacteristic.GaloisCohomologyRatios.Places
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.MemShaSubmoduleCohomologyAddEquivOfEquivIff
-import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.CoprimeRegular
+import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Bundle0001
 
 open NumberField IsDedekindDomain CategoryTheory GroundTheory.ProfCoh GroundTheory.Global
 

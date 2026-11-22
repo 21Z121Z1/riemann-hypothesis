@@ -1,8 +1,7 @@
 import Development.AutomorphicArithmetic.Foundations.Convolution.NormCharacterPowers.SumSatUnit
-import Development.AutomorphicArithmetic.Foundations.Convolution.NormCharacterPowers.Decomp
-import Development.AutomorphicArithmetic.Foundations.Convolution.NormCharacterPowers.PartBOfDecomposition
+import Development.AutomorphicArithmetic.Foundations.Convolution.NormCharacterPowers.Bundle0002
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.SymmetricAdjointFrobenius.QuadOf
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GlobalArtinReciprocityHolds
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0349
 
 noncomputable section
 

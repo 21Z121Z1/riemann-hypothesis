@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.EllipticTorsion.FormalGroupPointsTorsionFree
+import Formalism.EllipticTorsion.Bundle0003
 
 noncomputable section
 

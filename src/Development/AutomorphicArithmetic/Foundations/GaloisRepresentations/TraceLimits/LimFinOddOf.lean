@@ -1,9 +1,9 @@
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TraceLimits.ExistsTraceLimit
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TraceLimits.SlopeTestRemainingChoices
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LimWUOfSeeds
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AutomorphicLevelAwayNonsplit
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalOperatorsExist
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ClosedAtL
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0348
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0342
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0215
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0265
 open NumberField IsDedekindDomain Neutral.B1 Formalism.L2.Host Formalism.ConjugateSelfDual ReciprocityTheory.Gal Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.MainNotions.N
 open GlobalTheory.CuspRep GlobalTheory.WeilDeligne GlobalTheory.Pst GlobalTheory.LocLanglands GlobalTheory.HeckeGal GlobalTheory.LocGL GlobalTheory.GalOfCusp
 attribute [local instance] GlobalTheory.LocalData.complRel GlobalTheory.LocalData.isLocalField

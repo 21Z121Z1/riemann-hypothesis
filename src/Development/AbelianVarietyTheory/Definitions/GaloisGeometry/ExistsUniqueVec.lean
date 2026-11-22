@@ -1,13 +1,12 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ThetaMod
-import Formalism.LocalToGlobal.IndefiniteReal.IsMultMapUnivZero
-import Formalism.LocalToGlobal.IndefiniteReal.ThetaFireRow
-import Formalism.LocalToGlobal.IndefiniteReal.TensCastR
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0025
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0026
 import Formalism.LocalToGlobal.IndefiniteReal.LinksStage
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ParamsEx
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsThetaPToLiftReal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResInjLToLiftReal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaAdjointAtLiftEqLowestKTypeRestriction
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0024
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0946
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0953
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1934
 
 noncomputable section
 

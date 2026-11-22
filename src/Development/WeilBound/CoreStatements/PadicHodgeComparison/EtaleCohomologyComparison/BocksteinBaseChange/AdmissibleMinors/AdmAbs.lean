@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsTailAlt
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0034
 
 noncomputable section
 

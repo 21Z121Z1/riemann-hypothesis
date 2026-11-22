@@ -1,7 +1,7 @@
-import Development.WeilBound.ThetaLifts.LatticeBasics.ExistsIsHeckeLOfCompleted
-import Development.WeilBound.ThetaLifts.LatticeBasics.ConstOfGood
+import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0019
+import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0008
 import Development.WeilBound.ThetaLifts.Reductions.WeightConstants.Bridge
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeLEntireAndNonzeroAtOneHolds
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0105
 
 noncomputable section
 

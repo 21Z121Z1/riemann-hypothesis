@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorusOver
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCocharLieLieModel
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0078
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0008
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField TensorProduct Matrix
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CompanionTheory.Ar
 

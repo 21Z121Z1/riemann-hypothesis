@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteReal.CxToPkgFamIn
-import Formalism.LocalToGlobal.IndefiniteReal.MemRangeAdjointOfKerStable
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0010
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0005
 import Formalism.LocalToGlobal.Divisibility.RowLatLemmas
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MapPowSub
 

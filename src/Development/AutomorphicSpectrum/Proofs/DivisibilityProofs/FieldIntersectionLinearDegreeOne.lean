@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.IsChainFirst
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0019
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.InhDivCycleOfSuppEmpty
 
 noncomputable section

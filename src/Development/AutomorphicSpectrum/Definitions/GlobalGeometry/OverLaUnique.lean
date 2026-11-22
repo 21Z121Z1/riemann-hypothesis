@@ -3,7 +3,7 @@ import Formalism.LocalToGlobal.ProjectiveLattices.PlaceBelow
 import Formalism.SharpRestriction.Divisibility.ModuliIntegralCharts
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.WchartLePreimage
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.ValNeBot
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
 
 noncomputable section
 

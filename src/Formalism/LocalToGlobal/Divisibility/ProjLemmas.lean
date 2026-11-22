@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.Divisibility.GoodPartHermitianSpec
-import Formalism.LocalToGlobal.Divisibility.ClassSumLemmas
-import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ClassSumDualGeOfFamily
+import Formalism.LocalToGlobal.Divisibility.Bundle0001
+import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0006
 
 open Module NumberField IsDedekindDomain
 open scoped Matrix ComplexOrder

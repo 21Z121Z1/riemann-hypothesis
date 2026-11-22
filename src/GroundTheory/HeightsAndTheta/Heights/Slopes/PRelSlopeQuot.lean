@@ -1,7 +1,6 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.Slopes
-import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.PExactSequence
-import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.PChainSum
+import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.Bundle0005
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

@@ -1,9 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.CMModuli.FlatIsoUnitGenerator
-import Development.AbelianVarietyTheory.BlockTheory.CMModuli.FlatTorsionIsomorphism
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TorusExtensionOverCompleteLocalDvr
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsFiniteFlatTorsionOfIsGt
-import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsUnconditional
+import Development.AbelianVarietyTheory.BlockTheory.CMModuli.Bundle0007
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0102
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0059
+import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0029
 
 set_option autoImplicit false
 

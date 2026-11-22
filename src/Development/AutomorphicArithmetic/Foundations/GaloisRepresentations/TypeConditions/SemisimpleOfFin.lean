@@ -1,5 +1,5 @@
 import Mathlib
-import Development.DiscreteGroups.GlobalIrreducibility.DzTame
+import Development.DiscreteGroups.GlobalIrreducibility.Bundle0013
 import Formalism.SharpRestriction.LevelLetterCocycles.QuotientHomNonvanishingBound
 
 noncomputable section

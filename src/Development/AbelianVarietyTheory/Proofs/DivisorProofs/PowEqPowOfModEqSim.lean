@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompPowPts
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorObjectMapsComposeCancel
-import Development.AbelianVarietyTheory.Definitions.Divisors.NonemptyIso
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0425
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1571
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0074
 
 noncomputable section
 

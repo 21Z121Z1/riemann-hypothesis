@@ -1,9 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.StatementsBergmanComplete
-import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.StatementsTopDensityChart
-import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.StatementsLocUnifAnalytic
+import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.Bundle0006
+import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.Bundle0001
 import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.PExtension
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPolydiscSubmean
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0054
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.EffectiveHS

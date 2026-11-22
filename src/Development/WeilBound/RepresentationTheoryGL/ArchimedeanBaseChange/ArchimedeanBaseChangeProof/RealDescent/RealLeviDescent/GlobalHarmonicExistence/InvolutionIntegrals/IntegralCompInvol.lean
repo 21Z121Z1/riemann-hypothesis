@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsThetaInvolution
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0795
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ContinuousMapGL
 
 noncomputable section

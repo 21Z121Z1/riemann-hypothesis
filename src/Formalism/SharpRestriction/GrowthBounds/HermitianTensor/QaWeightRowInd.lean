@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.CoeffSumMonomialLinear
+import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.Bundle0003
 
 noncomputable section
 

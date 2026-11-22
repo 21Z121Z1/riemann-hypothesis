@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicClassFiniteness.DictRing
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.IntAdCpctOpen
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0003
 
 noncomputable section
 

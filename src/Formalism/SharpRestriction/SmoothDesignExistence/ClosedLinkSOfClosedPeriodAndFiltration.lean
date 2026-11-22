@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.CuspSpanNormBounds.StandingHypothesesHoldFamily
-import Formalism.SharpRestriction.SmoothDesignExistence.PlaceDegreeData
+import Formalism.SharpRestriction.SmoothDesignExistence.Bundle0001
 
 noncomputable section
 

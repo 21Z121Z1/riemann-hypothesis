@@ -1,7 +1,7 @@
 import Development.WeilBound.RepresentationTheoryGL.JacquetShalikaBounds.AbsoluteRigidity.CauchyLoc
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspRapidDecaySiegelGL
-import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.CuspDiscreteDecompositionGL
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SubsingletonRankZero
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0616
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0009
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0011
 
 noncomputable section
 

@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.HeightFunctions.ConclOfInputs4
 import Development.AbelianVarietyTheory.Definitions.HeightFunctions.XiValIffXiAt
 import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.TheoremZeroOfInputs
-import Formalism.LocalToGlobal.ProjectiveLattices.VolProofs
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0023
 
 set_option autoImplicit false
 

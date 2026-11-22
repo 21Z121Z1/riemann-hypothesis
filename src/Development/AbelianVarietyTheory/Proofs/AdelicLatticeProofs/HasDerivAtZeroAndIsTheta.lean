@@ -1,9 +1,9 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsInverseChart
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.SymplecticRealPartVanish
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.SmoothIffRealCoordinatesAndRealLines
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.ContinuousOfHeisenbergLevelAndSmooth
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0068
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0034
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0032
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0028
 
 noncomputable section
 

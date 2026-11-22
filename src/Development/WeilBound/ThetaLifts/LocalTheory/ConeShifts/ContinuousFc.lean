@@ -1,8 +1,8 @@
 import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.ExtendByZeroOnSubsetApplyCoe
 import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.FubTate
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.OrdLEqNegLog
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.NormCmExtensionSplitPlaceEqZpow
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IntegralFiniteAdeleCompactClosedMultiples
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0091
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0093
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0074
 
 noncomputable section
 

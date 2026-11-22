@@ -1,4 +1,4 @@
-import Formalism.MahlerMeasure.LevelSum
+import Formalism.MahlerMeasure.Bundle0001
 
 namespace Formalism.GM
 

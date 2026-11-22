@@ -1,7 +1,7 @@
-import Formalism.PeriodIntegrals.DSInfCharCap
-import Formalism.PeriodIntegrals.IsLowUnitH
-import Formalism.RealPlaceAnalysis.StatementA
-import Formalism.RealPlaceAnalysis.StatementE
+import Formalism.PeriodIntegrals.Bundle0022
+import Formalism.PeriodIntegrals.Bundle0015
+import Formalism.RealPlaceAnalysis.Bundle0001
+import Formalism.RealPlaceAnalysis.Bundle0003
 
 open Matrix Finset
 open scoped InnerProductSpace

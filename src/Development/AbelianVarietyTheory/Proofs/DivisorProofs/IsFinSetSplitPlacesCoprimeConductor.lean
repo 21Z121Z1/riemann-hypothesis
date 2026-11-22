@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousOfVal
-import Formalism.LocalToGlobal.ProjectiveLattices.UnramBridgeHolds
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0004
 
 noncomputable section
 

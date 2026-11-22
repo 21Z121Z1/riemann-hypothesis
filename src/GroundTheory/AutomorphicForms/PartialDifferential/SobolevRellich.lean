@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.PartialDifferential.SobolevInterpolation
-import GroundTheory.AutomorphicForms.HilbertSchmidtKernel
-import GroundTheory.AutomorphicForms.HilbertSchmidtCompact
+import GroundTheory.AutomorphicForms.Bundle0006
+import GroundTheory.AutomorphicForms.Bundle0005
 
 namespace GroundTheory.Automorphic.Sobolev
 

@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsRationalDblCoord
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TsumEnormTermMulLeft
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0016
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1015
 
 noncomputable section
 

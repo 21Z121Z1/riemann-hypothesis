@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCptGen
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0001
 
 open AlgebraicGeometry CategoryTheory
 

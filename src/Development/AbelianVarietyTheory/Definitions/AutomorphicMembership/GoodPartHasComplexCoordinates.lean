@@ -3,11 +3,10 @@ import Formalism.LocalToGlobal.IndefiniteReal.PartsOrth
 import Formalism.LocalToGlobal.IndefiniteReal.LinksDefs
 import Formalism.LocalToGlobal.Divisibility.RowSideTie
 import Formalism.LocalToGlobal.IndefiniteReal.IsometricPeriodsOfHypotheses
-import Formalism.LocalToGlobal.IndefiniteReal.LiftCoordinatesInGoodPartOfDefinite
-import Formalism.LocalToGlobal.IndefiniteReal.EqZeroOfMemRangeAdjoint
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0012
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0007
 import Formalism.SharpRestriction.Divisibility.PrimeDegreeVariant
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RangeOpEqSpanOfFormsTie
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RangeGoodProjectorEqRangeGoodCoordinates
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0645
 
 noncomputable section
 

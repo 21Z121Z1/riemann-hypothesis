@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.RepresentationBounds
+import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0006
 
 noncomputable section
 

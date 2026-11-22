@@ -1,8 +1,8 @@
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.LimWU4OfLimWU3
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SatWDCharPolChars
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ApartOfNotMem
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsUniqueSplitPlaceComponentDefiniteUnitary
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipalSeriesSatakeParameters
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0029
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0286
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0293
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0257
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1085
 open NumberField IsDedekindDomain Neutral.B1 Formalism.L2.Host Formalism.ConjugateSelfDual ReciprocityTheory.Gal Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.MainNotions.N
 open GlobalTheory.CuspRep GlobalTheory.WeilDeligne GlobalTheory.Pst GlobalTheory.LocLanglands GlobalTheory.HeckeGal GlobalTheory.LocGL GlobalTheory.GalOfCusp
 attribute [local instance] GlobalTheory.LocalData.complRel GlobalTheory.LocalData.isLocalField

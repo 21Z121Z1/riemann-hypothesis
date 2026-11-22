@@ -1,4 +1,4 @@
-import ReciprocityTheory.SemistableReduction.AevalIsWeightedHomogeneous
+import ReciprocityTheory.SemistableReduction.Bundle0004
 
 noncomputable section
 

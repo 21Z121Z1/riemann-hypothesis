@@ -1,4 +1,4 @@
-import Development.WeilBound.ThetaLifts.SphericalLattices.IndexComapOfCover
+import Development.WeilBound.ThetaLifts.SphericalLattices.Bundle0006
 
 noncomputable section
 

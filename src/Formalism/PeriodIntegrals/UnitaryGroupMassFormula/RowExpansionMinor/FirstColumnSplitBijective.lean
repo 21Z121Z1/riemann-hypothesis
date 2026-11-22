@@ -1,5 +1,4 @@
-import Formalism.PeriodIntegrals.QmRowExp
-import Formalism.PeriodIntegrals.QmRowForm
+import Formalism.PeriodIntegrals.Bundle0023
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.GeneratorCommutatorQuantumDet
 
 open Finset

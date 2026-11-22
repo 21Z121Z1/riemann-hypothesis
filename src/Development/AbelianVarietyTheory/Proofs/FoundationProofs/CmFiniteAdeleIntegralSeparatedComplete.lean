@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 import Formalism.PairingDivisors.StatementH
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Levelaf
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IntegralFiniteAdeleCompleteSeparated
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0008
 
 open NumberField IsDedekindDomain
 open scoped TensorProduct

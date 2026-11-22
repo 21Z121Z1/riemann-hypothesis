@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GlobalSchurBounds.TheoremThreeUnderScaleOfGeneral
+import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0005
 
 noncomputable section
 

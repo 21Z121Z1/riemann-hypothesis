@@ -1,5 +1,5 @@
 import Formalism.HermitianCurvature.StatementQ
-import Formalism.FormalDegreeBessel.FinalG
+import Formalism.FormalDegreeBessel.Bundle0002
 
 open Matrix Filter Topology
 

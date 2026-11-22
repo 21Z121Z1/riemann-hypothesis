@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.GammaLaurentFactors.MatchIndOf
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.NotIsTemperedGLDetRepTwo
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Reps
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0056
 
 noncomputable section
 

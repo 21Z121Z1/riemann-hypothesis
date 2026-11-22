@@ -1,8 +1,7 @@
 import Formalism.LocalToGlobal.CharacterGerms.RowTieUpFBrS
 import Formalism.LocalToGlobal.CharacterGerms.RowTieUpFBrRP
-import Formalism.LocalToGlobal.CharacterGerms.RowTieUpFBrEF
-import Formalism.LocalToGlobal.CharacterGerms.RowTieUpFBrPlB
-import Formalism.LocalToGlobal.CharacterGerms.RowTiePEmbIntSt
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0044
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0013
 
 set_option autoImplicit false
 

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.GalMapMul
-import Development.AbelianVarietyTheory.BlockTheory.CMModuli.ProjectiveSpaceOverSpec
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsIndEtaleOfForallFinset
+import Development.AbelianVarietyTheory.BlockTheory.CMModuli.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0006
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry Opposite CochainComplex CochainComplex.HomComplex Simplicial TensorProduct

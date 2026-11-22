@@ -1,8 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OneMemGoodCT
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDimCoefficientsFiniteDetermining
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CapCommuteRtInfGL
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CommuteCapOfCommuteEop
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0363
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0367
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0125
 
 noncomputable section
 

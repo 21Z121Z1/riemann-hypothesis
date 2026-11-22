@@ -1,7 +1,7 @@
 import Mathlib
 import Development.WeilBound.ThetaLifts.Reductions.SiegelCore
-import Development.AbelianVarietyTheory.Proofs.CharacterTheory.InvariantSubspaceMobiusInverseCharpolyOfIrreduci
-import Formalism.GaloisIrreducibility.GaloisIrreducibilityProofs.RestrictRoots
+import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0007
+import Formalism.GaloisIrreducibility.GaloisIrreducibilityProofs.Bundle0002
 open NumberField MeasureTheory Matrix Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.AdelicU GlobalTheory.SiegelSet
 open Formalism.UG (cT)
 open scoped TensorProduct NNReal ENNReal

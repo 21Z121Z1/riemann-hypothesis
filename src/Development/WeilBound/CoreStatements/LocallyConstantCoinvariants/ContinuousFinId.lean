@@ -1,7 +1,7 @@
-import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfFree
+import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0001
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RamificationIdxEqOneOfIsSquare
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DenseRangeUnits
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.AdditiveCharConductorExists
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0107
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0010
 
 noncomputable section
 

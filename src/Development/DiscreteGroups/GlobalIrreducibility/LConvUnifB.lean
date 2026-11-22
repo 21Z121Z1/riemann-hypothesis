@@ -1,6 +1,6 @@
 import Mathlib
-import Development.DiscreteGroups.GlobalIrreducibility.LConvCut
-import Development.DiscreteGroups.GlobalIrreducibility.LConvUnifA
+import Development.DiscreteGroups.GlobalIrreducibility.Bundle0013
+import Development.DiscreteGroups.GlobalIrreducibility.Bundle0008
 import GroundTheory.AutomorphicForms.JacquetAdmissible
 import GroundTheory.AutomorphicForms.Cartan
 import GroundTheory.AutomorphicForms.IwahoriFactorization

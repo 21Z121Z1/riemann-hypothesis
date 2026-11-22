@@ -1,4 +1,4 @@
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ShapeMemBounded
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0694
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.FiniteDiscreteFamilies.FinCut
 
 namespace PositivityTheory.Rg.BcB.F.F5

@@ -1,6 +1,6 @@
 import Mathlib
 import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.DiscreteSeriesExhaustion.HeckeAlgebraActions.BackStable
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.QuantumDeterminantEquality
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0007
 
 noncomputable section
 

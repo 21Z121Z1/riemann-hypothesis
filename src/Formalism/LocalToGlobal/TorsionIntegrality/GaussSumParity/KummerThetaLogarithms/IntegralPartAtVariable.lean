@@ -1,7 +1,7 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.BiextensionHypothesesOfLevelOne
+import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0003
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.KummerThetaLogarithms.CoboundaryCommutesHomomorphism
-import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.StatementC
-import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FinalS
+import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0001
+import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0005
 
 noncomputable section
 open scoped BigOperators

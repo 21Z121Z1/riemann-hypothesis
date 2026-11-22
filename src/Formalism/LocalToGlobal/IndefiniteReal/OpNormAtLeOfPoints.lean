@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteReal.TraceOfDiag
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0003
 
 open Module NumberField Matrix
 

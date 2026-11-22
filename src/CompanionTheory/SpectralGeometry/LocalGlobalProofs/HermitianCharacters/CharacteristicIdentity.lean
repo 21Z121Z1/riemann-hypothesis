@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.FlagUnipotentLattices.QDetNegTranspose
-import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
+import Formalism.FlagUnipotentLattices.Bundle0005
+import Formalism.RealPlaceAnalysis.Bundle0004
 open Finset TensorProduct Formalism.HermitianLatticeCounting.S8
 
 noncomputable section

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.TwGXi
+import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.Bundle0003
 open NumberField TensorProduct
 
 namespace PositivityTheory.UnitarySelfGeneration

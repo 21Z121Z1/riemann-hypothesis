@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.ProjectiveLattices.ModelDef
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0009
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 
 noncomputable section

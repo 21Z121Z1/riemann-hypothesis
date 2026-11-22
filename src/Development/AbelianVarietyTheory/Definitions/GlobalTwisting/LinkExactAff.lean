@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.SubClosed
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0001
 
 noncomputable section
 

@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.IndefiniteReal.WeakCharacterisationWithError
-import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.BaseSt
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0028
+import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0002
 
 noncomputable section
 

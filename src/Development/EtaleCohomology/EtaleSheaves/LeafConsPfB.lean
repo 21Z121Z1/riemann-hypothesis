@@ -1,5 +1,4 @@
-import Development.EtaleCohomology.EtaleSheaves.LeafConsPf
-import Development.EtaleCohomology.EtaleSheaves.LeafConsPfA
+import Development.EtaleCohomology.EtaleSheaves.Bundle0047
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC

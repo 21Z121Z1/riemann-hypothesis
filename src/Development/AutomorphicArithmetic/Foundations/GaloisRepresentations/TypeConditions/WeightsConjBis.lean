@@ -1,4 +1,4 @@
-import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.WeightsConjAlt
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.Bundle0006
 
 noncomputable section
 

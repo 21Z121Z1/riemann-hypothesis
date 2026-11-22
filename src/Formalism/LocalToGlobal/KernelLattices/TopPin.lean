@@ -1,7 +1,7 @@
 import Formalism.LocalToGlobal.KernelLattices.FirstKernelLawReading
-import Formalism.LocalToGlobal.KernelLattices.ThDatRead
+import Formalism.LocalToGlobal.KernelLattices.Bundle0003
 import Formalism.LocalToGlobal.Columns.ChainInstY
-import Formalism.LocalToGlobal.Columns.ChainTwFrA
+import Formalism.LocalToGlobal.Columns.Bundle0063
 
 open NumberField IsDedekindDomain
 

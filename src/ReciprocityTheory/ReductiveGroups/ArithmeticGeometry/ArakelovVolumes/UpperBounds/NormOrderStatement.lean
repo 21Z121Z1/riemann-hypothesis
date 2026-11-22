@@ -1,5 +1,5 @@
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.LaTIsPrime
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.FiniteGenOfWeakAxioms
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Bundle0014
 
 namespace ReciprocityTheory.ChartRestriction.G.AR.Up
 

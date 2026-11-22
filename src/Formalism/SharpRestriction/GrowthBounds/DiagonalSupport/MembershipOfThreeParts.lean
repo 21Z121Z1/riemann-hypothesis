@@ -1,9 +1,7 @@
-import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.DecIdentity
+import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.Bundle0009
 import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.ProjectionMemPartialSpan
-import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.ImportsAlt
-import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.MembAlgF
-import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.MembDegF
-import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.MembLabF
+import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.Bundle0006
+import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.Bundle0011
 
 noncomputable section
 

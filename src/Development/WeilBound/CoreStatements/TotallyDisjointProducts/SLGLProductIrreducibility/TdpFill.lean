@@ -1,4 +1,4 @@
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.TotallyDisjointProductIrreducibleOfPolynomialRin
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0063
 
 theorem PositivityTheory.SlGl.totallyDisjointProductIrreducible_of_parts :
     GlobalTheory.Published.GeometricLemma → GlobalTheory.Published.SegmentRepresentation →

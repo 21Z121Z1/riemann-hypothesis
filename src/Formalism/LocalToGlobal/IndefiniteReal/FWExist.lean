@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.IndefiniteReal.FWTie
-import Formalism.LocalToGlobal.IndefiniteReal.ConcretePkgSpec
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0026
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0023
 
 noncomputable section
 

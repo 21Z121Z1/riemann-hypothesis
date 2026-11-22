@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CIndVerb
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0031
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IntegralChartDirectionsAreEigenvectors
-import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.BalancedPairs
+import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.Bundle0001
 
 set_option autoImplicit false
 

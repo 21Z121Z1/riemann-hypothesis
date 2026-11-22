@@ -1,4 +1,4 @@
-import Formalism.CharacterColumnKernels.Statement
+import Formalism.CharacterColumnKernels.Bundle0001
 
 open Finset Polynomial
 

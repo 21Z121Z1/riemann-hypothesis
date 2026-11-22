@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LengthEqLengthInvariantsOfTorsionLevels
-import Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.CardKill
+import Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.Bundle0004
 
 open scoped TensorProduct
 open GlobalTheory.TateLimit

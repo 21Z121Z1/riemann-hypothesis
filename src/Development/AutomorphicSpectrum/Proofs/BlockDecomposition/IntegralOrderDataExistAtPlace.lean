@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EMatMulNegCol
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.FibreMassEq
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IntegralClosureCompletedCMAlgebraCompactOpen
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.DictionaryStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0563
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0041
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0118
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0066
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.SpectralNormIntegrality.SpecInt
 
 noncomputable section

@@ -1,7 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.IsChainFirst
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.IsBlockMapDrop
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.AlgebraicIndependentLinearForms
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0019
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0020
 
 noncomputable section
 

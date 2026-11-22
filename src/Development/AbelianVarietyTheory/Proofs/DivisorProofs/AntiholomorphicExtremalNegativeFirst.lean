@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothReal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtremalVectorAnnihilatedStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0978
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1264
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HolomorphicDiscreteSeries
 
 noncomputable section

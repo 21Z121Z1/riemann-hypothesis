@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.EigenfunctionFiniteCoefficients
+import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.Bundle0001
 import Formalism.RealPlaceAnalysis.FinalF
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryGroupStructuresPermConjInvariantStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0181
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TraceTransposePow
 
 open MeasureTheory Matrix Finset Formalism.MainNotions.S Formalism.REAL Formalism.QuantumDeterminants GlobalTheory.Count GlobalTheory.Dec GlobalTheory.DSId

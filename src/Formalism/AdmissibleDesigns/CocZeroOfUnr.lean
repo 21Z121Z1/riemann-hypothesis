@@ -1,4 +1,4 @@
-import Formalism.AdmissibleDesigns.BlockTwistedCyclotomic
+import Formalism.AdmissibleDesigns.Bundle0003
 import ReciprocityTheory.GaloisValuations.ArithOfA
 
 variable [hT2Core : Fact ReciprocityTheory.ChartRestriction.T2.Core]

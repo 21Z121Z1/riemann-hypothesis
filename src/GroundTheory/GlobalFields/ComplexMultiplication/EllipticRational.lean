@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.GlobalFields.ComplexMultiplication.EllipticFunctions
-import GroundTheory.GlobalFields.ComplexMultiplication.EllipticConstant
+import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0002
 
 open Complex Filter Topology Set Polynomial
 open scoped PeriodPair

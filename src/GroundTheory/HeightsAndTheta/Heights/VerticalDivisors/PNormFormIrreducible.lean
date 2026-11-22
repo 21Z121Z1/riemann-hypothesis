@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.StatementsChowNorm
+import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Bundle0009
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Vertical

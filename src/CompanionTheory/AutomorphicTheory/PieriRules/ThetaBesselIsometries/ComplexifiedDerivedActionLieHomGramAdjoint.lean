@@ -1,8 +1,8 @@
 import Mathlib
 import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Imports
 import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
-import Formalism.RealPlaceAnalysis.StatementE
-import Formalism.RealPlaceAnalysis.StatementKT
+import Formalism.RealPlaceAnalysis.Bundle0003
+import Formalism.RealPlaceAnalysis.Bundle0002
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.GBasic
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.DerivedActionDiscreteSeriesProperties
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.DerivedActionBracket

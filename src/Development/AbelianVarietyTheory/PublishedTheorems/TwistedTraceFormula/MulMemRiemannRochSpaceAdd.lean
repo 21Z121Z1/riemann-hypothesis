@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.LinearIndependentE
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsHyperbolicCompletion
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0011
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0001
 
 noncomputable section
 

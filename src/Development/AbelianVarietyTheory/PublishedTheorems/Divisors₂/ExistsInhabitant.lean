@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.LeviCentreFiniteUnitary
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0023
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsNotIsConstTerm
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsValEq
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsLevi
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1543
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1472
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.SiegelKlingenDeligneRibet
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AbelContinuation
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.CongSubgroup
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0007
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0021
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0022
 
 open NumberField NumberField.Units NumberField.Units.dirichletUnitTheorem GlobalTheory.CompanionTheory.Hypotheses₂.Shintani GlobalTheory.CompanionTheory.Hypotheses₂.Shintani.Cones
 

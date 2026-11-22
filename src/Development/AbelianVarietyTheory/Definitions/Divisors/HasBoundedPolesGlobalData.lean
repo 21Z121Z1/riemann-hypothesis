@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.LineBundleGlobalSec
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsHeightIffOfDegreeEq
 import Development.AbelianVarietyTheory.Definitions.Divisors.LinearIndependentPullChart
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GeometricallyIntegralIffGeometricallyConnectedOf
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAffineOpenPreimageOfIsPullback
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0827
 
 set_option autoImplicit false
 

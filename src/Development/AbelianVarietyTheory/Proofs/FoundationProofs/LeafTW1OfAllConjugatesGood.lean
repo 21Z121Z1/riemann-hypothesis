@@ -1,12 +1,12 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.ThetaSeriesTies
-import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.PlaceBelowAllPowers
+import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0010
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GoodPartMemBasisSeries
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LenRBaseChangeSubquotient
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LengthCommensurableOfIsLatIn
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0252
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0253
 import Formalism.LocalToGlobal.Columns.LocWLemmas
 import Formalism.SharpRestriction.LevelLetterCocycles.TwGood
-import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.RamBasic
+import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.Bundle0003
 import Formalism.LocalToGlobal.Divisibility.LiftLatLemmas
 
 set_option autoImplicit false

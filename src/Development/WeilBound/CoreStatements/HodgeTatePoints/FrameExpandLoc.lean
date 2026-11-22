@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LeadMinor
-import Development.WeilBound.CoreStatements.HodgeTatePoints.CoefMemDual
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0006
+import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0021
 
 open Module NumberField GlobalTheory.CompanionTheory.Ar.HT TensorProduct Filter
 

@@ -1,9 +1,9 @@
-import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.AdDecomp
+import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.Bundle0001
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitLocF
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0279
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemClosureHeckeSplitCongruenceOfFinPartOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumTwistByHeckeCharactersTrivialBase
-import Development.WeilBound.ThetaLifts.LatticeBasics.ConstIdele
+import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0004
 
 noncomputable section
 

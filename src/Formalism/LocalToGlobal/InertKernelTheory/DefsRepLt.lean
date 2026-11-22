@@ -1,8 +1,8 @@
-import Formalism.LocalToGlobal.InertKernelTheory.DefsRep
-import Formalism.LocalToGlobal.InertKernelTheory.DefsRepFrame
-import Formalism.LocalToGlobal.InertKernelTheory.FrameLatMap
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0011
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0012
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0014
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepTwLat
-import Formalism.LocalToGlobal.InertKernelTheory.ScalG
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0015
 
 noncomputable section
 

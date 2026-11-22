@@ -1,4 +1,4 @@
-import Formalism.FilteredPoleLength.ReducedBasisBounds.ReductionQuotient
+import Formalism.FilteredPoleLength.ReducedBasisBounds.Bundle0002
 import Formalism.LogFactorialIndices.SignedSubspaceIndex.IdxDet
 
 noncomputable section

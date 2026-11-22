@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnipMinSubsetMinParOne
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CvecSurjective
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModerateGrowthOfHasCompactSupport
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0529
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0520
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0322
 
 set_option linter.unusedSectionVars false
 set_option maxSynthPendingDepth 1

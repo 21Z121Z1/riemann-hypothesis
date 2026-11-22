@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Statements
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.IsClosedUnitaryOfComplex
-import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StDualIndexFinite
+import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0004
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.FiniteCovolume.HermitianSpaceComparison

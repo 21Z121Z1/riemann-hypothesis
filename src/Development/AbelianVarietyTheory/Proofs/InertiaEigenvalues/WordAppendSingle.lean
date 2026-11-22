@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DecaysOfMemSmoothSpan
-import Development.AbelianVarietyTheory.Definitions.Divisors.MemMspan
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0027
 
 noncomputable section
 

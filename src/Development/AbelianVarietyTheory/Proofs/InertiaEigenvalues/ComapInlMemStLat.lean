@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnitLemmaGroup
-import ReciprocityTheory.DualLattices.ExistsSmulMemOfMemSpan
+import ReciprocityTheory.DualLattices.Bundle0006
 
 noncomputable section
 

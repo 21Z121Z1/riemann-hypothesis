@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.LocalRingCardinality.Params
 import Formalism.GradedWeylDivisibility.StatementA
-import Formalism.GradedWeylDivisibility.StatementB
-import Formalism.SatakeDualWeyl.StatementW
+import Formalism.GradedWeylDivisibility.Bundle0001
+import Formalism.SatakeDualWeyl.Bundle0003
 
 namespace Formalism.BasicNotions
 

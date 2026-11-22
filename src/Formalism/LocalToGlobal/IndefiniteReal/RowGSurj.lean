@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteReal.InBlock
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0018
 import Formalism.LocalToGlobal.IndefiniteReal.CxPassSand
 
 open Module NumberField IsDedekindDomain

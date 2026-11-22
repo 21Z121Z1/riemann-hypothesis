@@ -1,9 +1,9 @@
 import Mathlib
-import Formalism.LocalToGlobal.Columns.TiedUpDnLoc
+import Formalism.LocalToGlobal.Columns.Bundle0030
 import Formalism.LocalToGlobal.Columns.HeckeSpCount
-import Formalism.LocalToGlobal.Columns.TiedUpDnA
+import Formalism.LocalToGlobal.Columns.Bundle0032
 import Formalism.LocalToGlobal.Columns.CoefficientsModP.LatticeBasisExistsHolds
-import Formalism.LocalToGlobal.Columns.MtHeckeKv
+import Formalism.LocalToGlobal.Columns.Bundle0031
 
 open NumberField IsDedekindDomain Module Matrix
 open scoped TensorProduct

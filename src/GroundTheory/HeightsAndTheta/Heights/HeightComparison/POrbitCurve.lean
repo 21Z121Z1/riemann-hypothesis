@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightOrbitCurve
+import GroundTheory.HeightsAndTheta.Heights.HeightComparison.Bundle0004
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.JacobianSmoothness.RingKrullDimLeRingKrullDimQuotientAddOne
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.IntToRat
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0006
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

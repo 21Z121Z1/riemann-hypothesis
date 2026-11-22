@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.SecondBranchOfRationality
-import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.RatStab
+import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.Bundle0003
 
 namespace Formalism.L2.GlobalTheoryTheory.LemB
 

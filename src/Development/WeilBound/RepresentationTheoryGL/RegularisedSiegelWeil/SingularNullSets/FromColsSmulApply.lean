@@ -1,5 +1,5 @@
 import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.SingularNullSets.WeakApproximationFinitePlace
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SchwartzBoundFiniteInfiniteStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0498
 
 noncomputable section
 

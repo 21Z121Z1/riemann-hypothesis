@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.TrivFlagMod
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0005
 
 namespace GlobalTheory.CompanionTheory.Ar.Num.QuotModel
 

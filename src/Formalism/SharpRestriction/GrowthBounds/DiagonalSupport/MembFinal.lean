@@ -1,7 +1,7 @@
 import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.MembershipOfThreeParts
 import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.MembVB
 import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.MembDd
-import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.MembXXb
+import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.Bundle0011
 
 noncomputable section
 

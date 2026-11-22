@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.FlatTensorVacuum
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsKOOfDet
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0316
 
 open MeasureTheory ValuativeRel Matrix
 open scoped NNReal ENNReal Pointwise

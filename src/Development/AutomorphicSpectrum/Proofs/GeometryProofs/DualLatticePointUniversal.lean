@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DerRingInjective
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelFiniteBaseChangeStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelBaseChangeMapStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0016
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0151
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0156
 
 noncomputable section
 

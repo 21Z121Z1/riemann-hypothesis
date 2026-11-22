@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.StatementV
+import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.Bundle0002
 import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.ShiftPtsInt
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.BiextensionRelation
 

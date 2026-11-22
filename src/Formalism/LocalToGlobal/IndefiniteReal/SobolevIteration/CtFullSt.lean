@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.FuncSt
-import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.BaseSt
+import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0003
+import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0002
 import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
 
 noncomputable section

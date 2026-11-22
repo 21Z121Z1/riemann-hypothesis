@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.CutEffectiveDivisorStatement
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.OfSteps
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0074
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0044
 
 namespace GlobalTheory.CompanionTheory.CommAlg.VerticalDivisors
 

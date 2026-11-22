@@ -1,7 +1,7 @@
-import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.AlgebraMapAEEqZero
-import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.RestrictedBlockMemBlockTriangular
+import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0012
+import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0008
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.InfPartOfSplitIdem
-import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.SplitOrInertP
+import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0016
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.PlaceFinal
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.LatSelf
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.SplitLinF

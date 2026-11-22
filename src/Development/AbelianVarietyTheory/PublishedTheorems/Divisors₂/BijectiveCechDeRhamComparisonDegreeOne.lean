@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ComparisonMemCechHodgeFiltration
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsCrystalPairing
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0029
 
 set_option autoImplicit false
 

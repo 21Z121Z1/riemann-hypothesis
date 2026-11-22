@@ -1,5 +1,5 @@
-import Development.WeilBound.ThetaLifts.SphericalLattices.LocCommSt
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HaarInvVolumeConjModularCharacterStatement
+import Development.WeilBound.ThetaLifts.SphericalLattices.Bundle0005
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0037
 
 noncomputable section
 

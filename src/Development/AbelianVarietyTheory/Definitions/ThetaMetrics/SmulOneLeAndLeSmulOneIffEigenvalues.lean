@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.StarInvMulVecDotProductMulVecInvMulVec
-import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.MulConjTransposeEqOneOfOrthonormal
+import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.Bundle0008
+import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.Bundle0004
 
 open Matrix Set Filter
 open scoped ComplexOrder MatrixOrder Kronecker Topology

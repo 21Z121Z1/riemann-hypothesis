@@ -1,7 +1,7 @@
 import Development.WeilBound.CoreStatements.VolumeEquality.OnePieceA
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.FiniteImageOfLocallyConstantOnHolomorphicFamilie
-import Development.AbelianVarietyTheory.Proofs.GenericRegularity.LinearDisjointAlgebraicClosure
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenPtSpecializesOfSpecializes
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0088
+import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0046
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0034
 
 noncomputable section
 

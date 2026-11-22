@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Elementary
+import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Bundle0001
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

@@ -1,5 +1,5 @@
 import Mathlib
-import ReciprocityTheory.DualLattices.VEqZeroOfPowEqOne
+import ReciprocityTheory.DualLattices.Bundle0004
 
 namespace ReciprocityTheory.ChartRestriction.G.Sh
 

@@ -1,5 +1,5 @@
-import Formalism.HermitianCurvature.StatementQr
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.LemmaDDeterminantIdentity
+import Formalism.HermitianCurvature.Bundle0004
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0059
 
 open Matrix Finset
 open scoped ContDiff

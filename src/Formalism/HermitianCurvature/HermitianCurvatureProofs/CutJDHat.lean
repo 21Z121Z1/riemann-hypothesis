@@ -1,5 +1,5 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJD
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGaugeCut
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0057
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0056
 
 open Formalism.FourierDecayAlt
 

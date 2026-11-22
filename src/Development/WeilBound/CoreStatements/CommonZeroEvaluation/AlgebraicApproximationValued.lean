@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.ProjectiveLattices.OneLtAbsNormReal
-import Development.WeilBound.CoreStatements.CommonZeroEvaluation.ExistsRootAdicComplete
-import Development.WeilBound.CoreStatements.CommonZeroEvaluation.IsAlgebraicStd
+import Development.WeilBound.CoreStatements.CommonZeroEvaluation.Bundle0001
+import Development.WeilBound.CoreStatements.CommonZeroEvaluation.Bundle0002
 
 open Formalism.L2.Pj
 

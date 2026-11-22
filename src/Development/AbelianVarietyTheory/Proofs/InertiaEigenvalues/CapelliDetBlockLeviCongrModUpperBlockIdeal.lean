@@ -1,8 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.DiscreteSpectrumResidual
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CapCommuteRtInfGL
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.QuantumDetHighestWeightHolds
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ShiftedGeneratorEqIteSmulAdd
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0125
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0005
 open NumberField IsDedekindDomain Formalism.L2.Host
 open GlobalTheory.CuspRep GlobalTheory.UnitaryBC GlobalTheory.SmGL GlobalTheory.DiscSpec
 

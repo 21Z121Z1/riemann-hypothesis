@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBergman
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsChartBergman
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsComplexTaylor
-import ReciprocityTheory.AnalyticForms.PotentialTheory.HessCIsHermitian
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0040
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0012
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0004
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0003
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PinColL
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0033
 
 set_option genSizeOfSpec false
 set_option genInjectivity false

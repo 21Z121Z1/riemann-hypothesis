@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.Columns.GoodXgFin
+import Formalism.LocalToGlobal.Columns.Bundle0002
 
 noncomputable section
 

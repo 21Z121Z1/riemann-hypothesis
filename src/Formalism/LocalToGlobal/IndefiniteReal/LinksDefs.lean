@@ -1,14 +1,14 @@
-import Formalism.LocalToGlobal.IndefiniteReal.CxToPkgFamIn
-import Formalism.LocalToGlobal.IndefiniteReal.CutTuples2
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0010
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0004
 import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
 import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
-import Formalism.LocalToGlobal.IndefiniteReal.BridgeTie
-import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0008
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
 import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
 import Formalism.LocalToGlobal.IndefiniteReal.GramCEqTranspose
 import Formalism.LocalToGlobal.HeckeThetaElements.DefsWt
 import Formalism.LocalToGlobal.JointCharacters.LocEMulLocE
-import Formalism.LocalToGlobal.UnitaryNorms.CharTied
+import Formalism.LocalToGlobal.UnitaryNorms.Bundle0006
 
 noncomputable section
 

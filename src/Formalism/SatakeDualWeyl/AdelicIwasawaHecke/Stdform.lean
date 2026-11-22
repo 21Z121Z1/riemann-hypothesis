@@ -1,6 +1,5 @@
-import Formalism.SatakeDualWeyl.StatementC
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SignatureExists
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SignatureConjugationInvariant
+import Formalism.SatakeDualWeyl.Bundle0001
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0003
 
 noncomputable section
 

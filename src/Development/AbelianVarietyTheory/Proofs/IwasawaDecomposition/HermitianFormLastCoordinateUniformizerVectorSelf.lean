@@ -1,11 +1,11 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrueColumnSpacesStandardInFrameCoordsStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrueColumnsPeriodMapDatumOkAndOverLevelPrime
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExtMCastSuccLast
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValDetSubOneLt
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0292
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0271
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0263
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0160
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValuedLtOfMem
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteOrbitsOfFiniteFibres
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0135
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions Formalism.L2.Col Formalism.L2.DIV Formalism.L2.Ker Formalism.UG Formalism.L2.Forms GlobalTheory.Mem GlobalTheory.Mem.Chr GlobalTheory.Mem.Col2 GlobalTheory.Mem.Col2.TC Matrix
 attribute [local instance] GlobalTheory.Mem.Col2.starE Formalism.BasicNotions.Host.cmStar
 

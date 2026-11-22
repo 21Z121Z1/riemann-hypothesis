@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NoTowerQ
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RamificationJumpSumComapInjective
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GaloisGroupFixedFieldBaseChangeLocalFieldStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WildJumpSumLeOfCoboundaryDetectsStatement
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0012
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0341
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0358
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0488
 
 open Formalism.BasicNotions Formalism.BasicNotions.Loc ValuativeRel GroundTheory.LocalField GlobalTheory.PMon.Ram
 

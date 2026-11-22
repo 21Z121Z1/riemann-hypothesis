@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsNormalFormStabilizerMeasure
-import Formalism.FormalDegreeBessel.FinalG
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0009
+import Formalism.FormalDegreeBessel.Bundle0002
 import Formalism.FlagUnipotentLattices.MinkowskiFactorialBounds.MinkowskiNumberDvdFactorial
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.UHMulInv
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.Bundle0008
 
 noncomputable section
 

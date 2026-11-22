@@ -1,4 +1,4 @@
-import Formalism.ThetaLogCoordinates.PartnerMeanCoordinates.PartnerMeanProofs.TheoremMCKap7
+import Formalism.ThetaLogCoordinates.PartnerMeanCoordinates.PartnerMeanProofs.Bundle0001
 import Formalism.ThetaLogCoordinates.PartnerMeanCoordinates.PartnerMeanProofs.GramHypothesisOfLogBound
 import Formalism.ThetaLogCoordinates.PartnerMeanCoordinates.StatementB
 

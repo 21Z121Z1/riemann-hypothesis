@@ -1,7 +1,7 @@
 import ReciprocityTheory.DualLattices.DotSingle
-import ReciprocityTheory.DualLattices.EmbeddingSeparatingGroupStatement
+import ReciprocityTheory.DualLattices.Bundle0022
 import ReciprocityTheory.DualLattices.UnramifiedCokernelLengthOfLengthEigenLengthProduct
-import ReciprocityTheory.DualLattices.EigenLengthProductStatementHolds
+import ReciprocityTheory.DualLattices.Bundle0020
 
 noncomputable section
 

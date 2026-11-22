@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.CntLocalParts
+import Formalism.PeriodIntegrals.Bundle0032
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountPositivity.LeadingMinorFullEqProd
 
 noncomputable section

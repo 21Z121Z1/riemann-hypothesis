@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.BoundedHalfModels.ModelXiOfParts
+import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.BoundedHalfModels.Bundle0001
 import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.BoundedHalfModels.MovesComposeOfParts
 import Formalism.LocalToGlobal.GlobalTheory.GL3.PThIndep
 import Formalism.LocalToGlobal.GlobalTheory.GL3.PSelfDual

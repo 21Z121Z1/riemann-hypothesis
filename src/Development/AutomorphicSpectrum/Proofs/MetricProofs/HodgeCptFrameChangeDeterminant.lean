@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ColFlags
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrameCoeffsRegularInChart
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordsJoinBlocksStatement
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DetT
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0032
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0088
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0013
 
 noncomputable section
 

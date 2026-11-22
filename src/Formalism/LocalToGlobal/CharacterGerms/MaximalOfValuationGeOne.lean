@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.CharacterGerms.FirstStepSecondHalfCondition
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0022
 import Formalism.LocalToGlobal.CharacterGerms.RowTiePGerm
 
 set_option autoImplicit false

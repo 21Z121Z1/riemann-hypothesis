@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Assembly
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0054
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

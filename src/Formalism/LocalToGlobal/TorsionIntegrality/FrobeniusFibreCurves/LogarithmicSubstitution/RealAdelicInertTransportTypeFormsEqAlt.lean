@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.FinalA
-import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.StatementD
+import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.Bundle0002
 
 noncomputable section
 

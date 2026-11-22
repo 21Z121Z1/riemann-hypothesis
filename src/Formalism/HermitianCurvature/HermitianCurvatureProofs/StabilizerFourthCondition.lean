@@ -1,5 +1,5 @@
 import Formalism.HermitianCurvature.FiniteOrderIntersectionInSmooth
-import Formalism.FormalDegreeBessel.FinalG
+import Formalism.FormalDegreeBessel.Bundle0002
 
 open Matrix Formalism.FourierDecayAlt Formalism.QuantumDeterminants
 open scoped ComplexConjugate

@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.ShortNorms.SmallOneOf
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NormPrimesImagQuadShortIntervalLowerBoundStatement
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.PrimesInProgressionsRelativeErrorStatement
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0115
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0131
 
 theorem UpperTheory.T3.shortNorm : UpperTheory.T3.ShortNorm := GlobalTheory.T.normPrimesImagQuad_short_interval_lower_bound
 

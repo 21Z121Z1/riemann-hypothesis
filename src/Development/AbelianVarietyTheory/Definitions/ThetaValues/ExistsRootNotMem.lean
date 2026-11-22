@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.ThClassPins
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0038
 
 set_option autoImplicit false
 

@@ -1,7 +1,7 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.AutomorphyLifting.AbsCentral
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.RecTExists
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.LevelIso
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalLanglandsOfHyp
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0008
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0824
 
 noncomputable section
 

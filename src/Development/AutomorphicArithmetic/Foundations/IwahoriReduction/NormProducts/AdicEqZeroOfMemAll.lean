@@ -1,5 +1,5 @@
-import Development.AbelianVarietyTheory.Definitions.Foundations.ShCocOn
-import Development.AbelianVarietyTheory.Definitions.Foundations.Letter
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0002
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0004
 open GlobalTheory.KZ
 open scoped Topology
 

@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.MatsushimaLattice
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsUnitaryRepR
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0016
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0133
 
 noncomputable section
 

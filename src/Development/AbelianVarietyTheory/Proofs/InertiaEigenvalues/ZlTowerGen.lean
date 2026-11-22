@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.SharpRestriction.LevelLetterCocycles.UsedLocalConclusion
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NotFullBot
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0006
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0003
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsWeakTopologyWittTiltTensor
 
 noncomputable section

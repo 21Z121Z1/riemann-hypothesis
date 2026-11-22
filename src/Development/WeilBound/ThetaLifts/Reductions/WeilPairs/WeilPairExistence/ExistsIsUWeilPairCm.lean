@@ -7,7 +7,7 @@ import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.Transp
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.WeilDatumTransportCmPreservesAdmissibleFormsImpo
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.IsUnitaryOnWeilDatumTransportAdelicSchwartz2
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.ContinuousTransportWeilDatumCmExtensionImports
-import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.TargetDoubling
+import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0010
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairExistence.ExistsDblTarget
 
 open scoped TensorProduct Matrix

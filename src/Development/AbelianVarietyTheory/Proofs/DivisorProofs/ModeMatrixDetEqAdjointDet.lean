@@ -1,5 +1,5 @@
-import Development.AbelianVarietyTheory.Definitions.Divisors.DatumEquiv
-import Development.AbelianVarietyTheory.Definitions.Divisors.VdmSplit
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0049
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0050
 
 section
 open GlobalTheory.PsCo.PcEG

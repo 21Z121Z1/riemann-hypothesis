@@ -1,4 +1,4 @@
-import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutEtaB
+import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0008
 
 noncomputable section
 

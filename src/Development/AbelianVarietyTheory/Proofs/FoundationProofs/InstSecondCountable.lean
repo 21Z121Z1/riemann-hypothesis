@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.BesselHermitianTheta.AllTied
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.BlockOrderedSquareIntegrable
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0025
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Matrix MeasureTheory
 open scoped ComplexOrder

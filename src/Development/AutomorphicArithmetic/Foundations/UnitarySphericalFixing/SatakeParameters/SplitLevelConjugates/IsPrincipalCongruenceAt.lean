@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.Foundations.UnitarySphericalFixing.SatakeParameters.GoodAUIso
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SphericalInertiaOfIsotypic
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.StandardFrameNonsplitMaxCompactInLevel
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle1003
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0994
 
 noncomputable section
 

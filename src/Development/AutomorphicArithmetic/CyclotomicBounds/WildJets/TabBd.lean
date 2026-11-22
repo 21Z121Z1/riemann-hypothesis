@@ -1,9 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KernelAtPrimeEqSumTorsionTranslates
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicValuationThetaKernelJetBound
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.JetsTorsionTranslatesCmThetaProductStatement
-import Development.AutomorphicArithmetic.CyclotomicBounds.WildJets.CmbIop
-import Development.AutomorphicArithmetic.CyclotomicBounds.WildJets.CmbJet
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0358
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0357
+import Development.AutomorphicArithmetic.CyclotomicBounds.WildJets.Bundle0001
 open NumberField Classical Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.TaylorLogMetric Formalism.MainNotions.StandardLatticesGL3 GlobalTheory.NormSum
 open scoped BigOperators
 

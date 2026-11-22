@@ -1,4 +1,4 @@
-import Development.AbelianVarietyTheory.Definitions.Foundations.IsTopWTopWOfExists
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0004
 
 open GlobalTheory.K4
 

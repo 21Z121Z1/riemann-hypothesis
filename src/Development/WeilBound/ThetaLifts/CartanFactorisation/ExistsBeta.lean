@@ -1,7 +1,7 @@
 import Development.WeilBound.ThetaLifts.CartanFactorisation.RadOfZero
-import Development.WeilBound.ThetaLifts.CartanFactorisation.AdmDef
-import Development.WeilBound.ThetaLifts.CartanFactorisation.IntegrableOnRight
-import Development.WeilBound.ThetaLifts.CartanFactorisation.Unimod
+import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0002
+import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0001
+import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0004
 import Development.WeilBound.ThetaLifts.ConeHypotheses.PureEqPureA
 
 noncomputable section

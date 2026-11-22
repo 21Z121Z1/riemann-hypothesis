@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TensorIrreducibleOfCountableDimensionIrreducibleStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRtensOp
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0409
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0372
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix
 open Formalism.L2.Theta Formalism.L2.DIV Formalism.L2.Indef Formalism.DivisionValues

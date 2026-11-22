@@ -4,11 +4,11 @@ import Formalism.SharpRestriction.CuspSpanNormBounds.PExtra
 import Formalism.SharpRestriction.CuspSpanNormBounds.AmplitudeAndVolumeBounds
 import Formalism.SharpRestriction.CuspSpanNormBounds.BranchingAndRankConstants
 import Formalism.SharpRestriction.CuspSpanNormBounds.MassAndBranchingHypotheses
-import Formalism.SharpRestriction.CuspSpanNormBounds.SBridge
-import Formalism.LocalRingCardinality.DataTies
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0008
+import Formalism.LocalRingCardinality.Bundle0003
 import Development.AbelianVarietyTheory.Statements.DiscreteSeriesShifts.ThmBpDS
 import Development.AbelianVarietyTheory.Definitions.Jets.SideFam
-import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.FormalDegreeCompactDualIff
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0003
 open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.S
 open Formalism.QuantumDeterminants Formalism.MainNotions.S.ThB MeasureTheory Matrix
 

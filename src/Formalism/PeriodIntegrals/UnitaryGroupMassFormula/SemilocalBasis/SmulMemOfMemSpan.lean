@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.LocBasisSemi
+import Formalism.PeriodIntegrals.Bundle0006
 
 open NumberField
 

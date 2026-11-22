@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.RealPlaceAnalysis.SmoothOnGVIff
-import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.PseudoCoefficientUpqTrivial
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0007
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.DiscreteSeriesCharacter
-import Development.AbelianVarietyTheory.Definitions.Divisors.TCoefMInMMul
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0002
 
 section
 

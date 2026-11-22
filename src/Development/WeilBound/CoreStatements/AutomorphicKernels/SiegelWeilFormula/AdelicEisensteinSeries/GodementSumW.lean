@@ -1,7 +1,7 @@
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsCompactStandardMaximal
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeightContinuousPos
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0471
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0508
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinSeriesConvergent
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinHeckeFunctional
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0463
 
 noncomputable section
 

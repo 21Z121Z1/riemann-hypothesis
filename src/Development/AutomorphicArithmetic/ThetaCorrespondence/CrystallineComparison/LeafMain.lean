@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.JOCZero
-import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.JOCBounded
+import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.Bundle0004
 
 noncomputable section
 

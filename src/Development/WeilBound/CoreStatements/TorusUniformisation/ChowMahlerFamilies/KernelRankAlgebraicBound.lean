@@ -1,5 +1,5 @@
 import Mathlib
-import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.JordanBasisNilpotent
+import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.Bundle0001
 open NumberField
 
 namespace PositivityTheory.Xgn.KernelRankAlgebraic

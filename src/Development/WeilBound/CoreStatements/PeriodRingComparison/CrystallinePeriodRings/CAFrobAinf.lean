@@ -1,7 +1,7 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.PeriodRingComparison.CrystallinePeriodRings.AcrisNAlgebraMapAinf
 import Development.WeilBound.CoreStatements.PeriodRingComparison.AinfAlgebraMaps.CAAlgebraMapGOC
-import Development.WeilBound.CoreStatements.CrystallinePeriodRings.FrobAinfMapFrobenius
+import Development.WeilBound.CoreStatements.CrystallinePeriodRings.Bundle0001
 
 noncomputable section
 open GroundTheory.PAdicHodge

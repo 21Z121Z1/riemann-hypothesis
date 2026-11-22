@@ -1,6 +1,6 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.UniformGaussModelConditionEquivalent
-import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.ThetaInZIsThetaLog
-import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.OneLetterGaussEvery
+import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.Bundle0005
+import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0001
+import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0004
 import Formalism.GaussJetBounds.OneLetterGaussJets.StatementG
 
 noncomputable section

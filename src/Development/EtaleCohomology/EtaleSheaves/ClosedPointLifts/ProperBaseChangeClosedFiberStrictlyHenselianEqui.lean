@@ -1,4 +1,4 @@
-import Development.EtaleCohomology.EtaleSheaves.SecondDegreeKilling
+import Development.EtaleCohomology.EtaleSheaves.Bundle0060
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC

@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.SliceShift
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOfIsOpenStab
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0125
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.CuspFormsSiegel
 
 noncomputable section

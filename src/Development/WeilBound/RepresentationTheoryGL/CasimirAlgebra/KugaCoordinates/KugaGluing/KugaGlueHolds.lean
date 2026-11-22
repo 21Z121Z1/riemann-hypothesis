@@ -1,8 +1,7 @@
-import Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.KugaCoordinates.KugaGluing.KgCxDmatConj
-import Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.KugaCoordinates.KugaGluing.KgCasDiff
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompactCurveDerivative
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorCompactActionDerivative
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactDerivativeSeparatingDual
+import Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.KugaCoordinates.KugaGluing.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1178
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1209
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1173
 
 noncomputable section
 

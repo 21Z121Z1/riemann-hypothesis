@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.CharacterGerms.SelfConjugateRowData
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0015
 
 set_option autoImplicit false
 

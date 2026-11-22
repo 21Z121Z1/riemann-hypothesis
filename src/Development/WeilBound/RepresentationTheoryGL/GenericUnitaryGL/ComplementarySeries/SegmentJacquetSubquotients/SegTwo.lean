@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.SegmentRepresentationIff
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0008
 
 noncomputable section
 

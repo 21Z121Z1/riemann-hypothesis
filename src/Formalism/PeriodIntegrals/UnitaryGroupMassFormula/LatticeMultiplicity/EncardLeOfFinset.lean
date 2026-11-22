@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.LatCountG
+import Formalism.PeriodIntegrals.Bundle0028
 
 open Matrix
 open scoped ENNReal

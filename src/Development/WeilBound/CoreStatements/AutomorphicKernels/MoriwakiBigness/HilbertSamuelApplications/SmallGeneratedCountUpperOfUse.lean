@@ -1,9 +1,9 @@
 import Mathlib
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.MoriwakiSt
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.Bundle0003
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsArith
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsArithKleiman
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PtsIntegralCurveConst
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PCurvePointsFinite
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0022
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0092
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0086
 
 namespace PositivityTheory.MbHsUse
 

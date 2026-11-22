@@ -1,9 +1,9 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Statements
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StLinearNoetherNormalization
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StNormalLocallyIrreducible
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StHolomorphicIsolatedFibreOpen
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StNormalOpenMapping
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0023
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0024
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0006
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0034
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.ComplexSets

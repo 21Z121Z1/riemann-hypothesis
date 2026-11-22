@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.HarderNarasimhan.StatementMod
+import Formalism.HarderNarasimhan.Bundle0002
 
 open Module NumberField
 

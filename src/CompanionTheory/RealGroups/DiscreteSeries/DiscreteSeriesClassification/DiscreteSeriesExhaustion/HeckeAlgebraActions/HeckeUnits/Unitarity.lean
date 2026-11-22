@@ -1,5 +1,5 @@
 import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.DiscreteSeriesExhaustion.HeckeAlgebraActions.HeckeUnitTensors.OmegaProjectionScalarCharacter
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.HeckeDualityFactsStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0039
 
 noncomputable section
 

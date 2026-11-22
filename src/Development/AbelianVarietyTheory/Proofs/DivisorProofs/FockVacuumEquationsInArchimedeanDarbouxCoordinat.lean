@@ -1,8 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFockMap
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TrPairApply
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAtEvIPiInfEq
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfAtOfPiInf
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1041
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1392
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1447
 
 noncomputable section
 

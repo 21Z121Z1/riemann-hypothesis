@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnitLemmaGroup
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LinearDescent
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DltEqZero
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CharpolyLeftMulBasis
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SgnLatSpanBasis
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CharpolyDvdPowOfAevalEqZero
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0075
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0005
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0091
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0115
 
 open GlobalTheory.UnitLemma GlobalTheory.UnitLemma.Desc Polynomial Filter Topology
 

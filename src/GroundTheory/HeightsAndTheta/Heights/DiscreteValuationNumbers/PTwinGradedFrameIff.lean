@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.ImportsTerBis
-import GroundTheory.HeightsAndTheta.Heights.IntegralModels.ChartGlueSat
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0014
+import GroundTheory.HeightsAndTheta.Heights.IntegralModels.Bundle0002
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.NumbersDVR

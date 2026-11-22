@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.InertKernelTheory.OneCopyTh1S
-import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.MMModel
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0010
+import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.Bundle0002
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.SigmaAlg
 import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.AnalyticIdentityTheorems.LatticeOnly
 

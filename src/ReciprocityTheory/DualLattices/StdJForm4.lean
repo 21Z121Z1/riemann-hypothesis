@@ -1,4 +1,4 @@
-import ReciprocityTheory.DualLattices.InvolutionPermApplyZero
+import ReciprocityTheory.DualLattices.Bundle0030
 
 noncomputable section
 

@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.RecTTransport
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RootsCharpolySmulMatrix
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CharpolyDualTamePart
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0041
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0119
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.ValLeOneOfIsIntegral
 
 noncomputable section

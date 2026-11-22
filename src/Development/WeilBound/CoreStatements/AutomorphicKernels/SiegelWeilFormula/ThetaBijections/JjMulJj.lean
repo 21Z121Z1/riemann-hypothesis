@@ -1,7 +1,7 @@
 import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.ThetaBijections.SymplecticFormCoordinates
 import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.ThetaBijections.IsOpAdm
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharacterInvariantAdelicFormEqMulEvalZeroStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdelicSchwartzThetaDistributionSumNeZero
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2027
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1066
 
 noncomputable section
 

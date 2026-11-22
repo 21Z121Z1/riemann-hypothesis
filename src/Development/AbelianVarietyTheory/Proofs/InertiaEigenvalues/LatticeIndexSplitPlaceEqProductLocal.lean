@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdjFormula
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsIntOv
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemHyperspecialIffGIntOfSuppAtSplit
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GramMulInv
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0019
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0103
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0143
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0148
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.L2.NTheta IsDedekindDomain NumberField Matrix GlobalTheory.SplitHecke GlobalTheory.RawLift
 open scoped TensorProduct
 attribute [local instance] Formalism.BasicNotions.Host.cmStar

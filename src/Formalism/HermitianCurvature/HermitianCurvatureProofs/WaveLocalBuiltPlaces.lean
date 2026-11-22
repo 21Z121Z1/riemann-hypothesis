@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.BlockKWave
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0226
 
 namespace Formalism.FourierDecayAlt.P.PBL
 

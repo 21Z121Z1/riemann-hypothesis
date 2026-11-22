@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.MoyPrasadJacquetIsoTrivial
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0003
 
 noncomputable section
 

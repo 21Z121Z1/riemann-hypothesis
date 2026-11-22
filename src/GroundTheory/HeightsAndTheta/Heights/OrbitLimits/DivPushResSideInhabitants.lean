@@ -1,11 +1,10 @@
 import Mathlib
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffFubiniStudyRatioCompChart0
-import ReciprocityTheory.AnalyticForms.PotentialTheory.IntegrableOnTargetOfTsupport
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0006
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.KerEqBotOfCoord
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsPushForwardOpen
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsProjRegular
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsProjRegularFibre
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsProjRegularDens
+import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0003
+import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0019
+import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0024
 set_option maxSynthPendingDepth 1
 
 noncomputable section

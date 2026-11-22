@@ -1,4 +1,4 @@
-import ReciprocityTheory.AnalyticForms.PotentialTheory.StokesB
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0010
 
 namespace ReciprocityTheory.AnForm.M
 

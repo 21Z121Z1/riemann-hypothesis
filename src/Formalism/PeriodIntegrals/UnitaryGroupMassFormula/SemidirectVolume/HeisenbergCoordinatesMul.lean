@@ -1,8 +1,6 @@
 import Mathlib
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SemidirectVolume.ModDefs
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SemidirectVolume.ReflectionFixesNormal
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SemidirectVolume.ModUni
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SemidirectVolume.ModComp
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SemidirectVolume.Bundle0008
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SemidirectVolume.Bundle0001
 
 noncomputable section
 

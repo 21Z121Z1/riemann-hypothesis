@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.IsHermForm
+import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.Bundle0002
 import Development.AbelianVarietyTheory.BlockTheory.AdelicCMFields.SupportedAtSplit
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.NefEffectiveCones.ExistsNsmulMulVecMemHat
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsAdeleRingTensorEquivInfiniteProdFinite
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.UJClassFin
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0005
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0030
 
 open NumberField IsDedekindDomain GlobalTheory.AdLat GlobalTheory.UnRep
 open scoped TensorProduct Matrix ComplexOrder MatrixOrder

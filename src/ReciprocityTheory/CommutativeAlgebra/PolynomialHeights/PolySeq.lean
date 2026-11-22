@@ -1,5 +1,4 @@
-import ReciprocityTheory.CommutativeAlgebra.PolynomialHeights.PolyStep
-import ReciprocityTheory.CommutativeAlgebra.PolynomialHeights.PolyMax
+import ReciprocityTheory.CommutativeAlgebra.PolynomialHeights.Bundle0001
 
 namespace ReciprocityTheory.CA
 

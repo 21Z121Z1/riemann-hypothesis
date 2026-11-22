@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Degenerations.NotAllMatchRankZero
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.MulqLawsStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0039
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationDataTorsionStructureAlgClosed
 open ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.Ex
 open scoped BigOperators

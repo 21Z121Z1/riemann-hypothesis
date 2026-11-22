@@ -1,10 +1,10 @@
-import Formalism.SharpRestriction.GlobalSchurBounds.SlopeMaxOpenOfHookTwoLeV
-import Formalism.LocalRingCardinality.PosOfIsomEmb
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.TransferenceMinima
-import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.UpperSlopeOfMaximalConstant
-import Formalism.LocalToGlobal.GlobalTheory.GL4.PShortFrame
-import Formalism.LocalToGlobal.GlobalTheory.GL4.PCoord
-import Formalism.LocalToGlobal.GlobalTheory.GL4.BranchingIntegralNormalised
+import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0003
+import Formalism.LocalRingCardinality.Bundle0005
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0020
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.Bundle0006
+import Formalism.LocalToGlobal.GlobalTheory.GL4.Bundle0016
+import Formalism.LocalToGlobal.GlobalTheory.GL4.Bundle0014
+import Formalism.LocalToGlobal.GlobalTheory.GL4.Bundle0013
 import Formalism.LocalToGlobal.GlobalTheory.HLatOpsP
 
 noncomputable section

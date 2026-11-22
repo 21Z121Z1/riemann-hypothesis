@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsSncPatchRat
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0018
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EmbedsGeneric
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncChartOfSmoothCoords
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtIsLocalRingIsFractionRingStalk
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0147
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0015
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.SncBase
 

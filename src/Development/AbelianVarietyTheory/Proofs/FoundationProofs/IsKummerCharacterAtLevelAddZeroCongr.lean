@@ -1,8 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.IsRootOne
-import Development.AbelianVarietyTheory.Definitions.Foundations.EigenOfTwoStep
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TowerUnitClassModPrimePowPropertiesStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UpperHalfPlaneHolomorphicGermPropertiesStatement
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0009
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0109
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0129
 
 noncomputable section
 

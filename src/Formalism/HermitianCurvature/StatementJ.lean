@@ -1,5 +1,5 @@
-import Formalism.LatticeRigidity.StatementC
-import Formalism.HermitianCurvature.StatementK
+import Formalism.LatticeRigidity.Bundle0001
+import Formalism.HermitianCurvature.Bundle0002
 import Formalism.HermitianCurvature.StatementTA
 import Formalism.HermitianCurvature.StatementTB
 import Formalism.HermitianCurvature.LevelRecursionCondNeeded

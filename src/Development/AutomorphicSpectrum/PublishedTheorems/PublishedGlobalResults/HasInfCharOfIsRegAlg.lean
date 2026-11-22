@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicSpectrum.PublishedTheorems.PublishedGlobalResults.RegularAlgebraicPurity
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.IsCohomologicalRankOne
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsEqMulMultOfUnits
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0006
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0002
 
 noncomputable section
 

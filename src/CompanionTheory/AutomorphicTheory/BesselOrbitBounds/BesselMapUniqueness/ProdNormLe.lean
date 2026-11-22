@@ -1,4 +1,4 @@
-import CompanionTheory.AutomorphicTheory.BesselOrbitBounds.BesselMapUniqueness.ContinuousOnOrbit
+import CompanionTheory.AutomorphicTheory.BesselOrbitBounds.BesselMapUniqueness.Bundle0001
 
 open Matrix MeasureTheory Formalism.QuantumDeterminants CompanionTheory.D.Upq.Sm
 open scoped ContDiff InnerProductSpace ComplexConjugate

@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FormsOver
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ToroidalBoundaryMetricData
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsMoebZero
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PtEqOfPtOfFrameEq
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0564
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0566
 
 set_option autoImplicit false
 

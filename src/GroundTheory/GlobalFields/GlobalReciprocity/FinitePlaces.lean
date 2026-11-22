@@ -3,7 +3,7 @@ import GroundTheory.GlobalFields.GlobalReciprocity.Layers
 import GroundTheory.GlobalFields.GlobalReciprocity.NormSquare
 import GroundTheory.GlobalFields.GlobalReciprocity.LocalSurjective
 import GroundTheory.GlobalFields.GlobalReciprocity.DegreeLift
-import GroundTheory.PowerSubgroups.CountableNeighbourhoods.PowInvariant
+import GroundTheory.PowerSubgroups.CountableNeighbourhoods.Bundle0001
 
 namespace GroundTheory.Global
 

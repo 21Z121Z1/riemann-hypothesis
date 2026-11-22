@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.LatticeGeometry.LevPrPrime
+import Formalism.LocalToGlobal.LatticeGeometry.Bundle0003
 import Formalism.LocalToGlobal.LatticeGeometry.ViewsB
 import Formalism.SharpRestriction.Divisibility.WeightAlgebra
 

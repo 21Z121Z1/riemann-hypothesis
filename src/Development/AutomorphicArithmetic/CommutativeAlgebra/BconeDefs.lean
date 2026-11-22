@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.CupPullbacks.ConstCompSingle
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleMemIffPointsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0372
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RestrPreservesHomology
 
 noncomputable section

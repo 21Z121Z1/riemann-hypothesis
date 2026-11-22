@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.QuotientMetricDivisors.ProdFormula
+import Formalism.QuotientMetricDivisors.Bundle0001
 
 open Module NumberField IsDedekindDomain Finset
 open Formalism.DivisionValues (vw lw conjPl)

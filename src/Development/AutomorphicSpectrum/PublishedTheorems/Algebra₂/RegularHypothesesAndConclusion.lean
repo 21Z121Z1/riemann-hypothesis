@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.IsAffineHomOfFlatQuotientOfAffineKernel
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.RingHomFlatCodescendsAlongFaithfullyFlat
+import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0018
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0012
 
 noncomputable section
 

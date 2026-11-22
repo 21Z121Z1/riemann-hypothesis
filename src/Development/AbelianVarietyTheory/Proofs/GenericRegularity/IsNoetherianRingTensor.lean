@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.GenericRegularity.IsIntegrallyClosedQuotientOfMemMinimalPrimes
+import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0005
 
 open scoped TensorProduct
 

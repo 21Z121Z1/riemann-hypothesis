@@ -1,6 +1,6 @@
 import Formalism.SatakeDualWeyl.Statement
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.GlintPrincRelIndexNeZero
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Stabstd
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0002
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0004
 
 noncomputable section
 namespace Formalism.UG.P

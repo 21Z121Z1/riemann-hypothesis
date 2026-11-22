@@ -1,6 +1,5 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.HomologicalStability.KStability
-import Development.AutomorphicArithmetic.AutomorphicVarieties.TensorHomCubes.DedekindSR
-import Development.AutomorphicArithmetic.AutomorphicVarieties.TensorHomCubes.GrpHComp
+import Development.AutomorphicArithmetic.AutomorphicVarieties.TensorHomCubes.Bundle0001
 
 noncomputable section
 

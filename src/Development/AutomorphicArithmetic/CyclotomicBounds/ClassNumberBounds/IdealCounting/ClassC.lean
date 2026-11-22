@@ -1,5 +1,4 @@
-import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.IdealCounting.ClassA
-import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.IdealCounting.ClassB
+import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.IdealCounting.Bundle0001
 
 namespace KStar.IdealCounting
 

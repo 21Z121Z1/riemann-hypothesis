@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.InterPolyProdSum
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CoBear
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0259
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsValuationSubringDominatingSubring
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverCompOfIsClosedImmersion
 

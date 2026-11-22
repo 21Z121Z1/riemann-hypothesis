@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.LogGaussNormSupportFinite
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0003
 import GroundTheory.HeightsAndTheta.Heights.HermitianDual
 import GroundTheory.HeightsAndTheta.Heights.ArithDegree
 set_option maxSynthPendingDepth 1

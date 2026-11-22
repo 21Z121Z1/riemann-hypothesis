@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.AnalyticChartsRealizationCompPointEq
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GaussManinPeriods
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0007
 
 set_option autoImplicit false
 

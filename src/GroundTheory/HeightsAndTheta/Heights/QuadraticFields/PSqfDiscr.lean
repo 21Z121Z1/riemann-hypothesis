@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.QuadraticFields.SqfDiscr
+import GroundTheory.HeightsAndTheta.Heights.QuadraticFields.Bundle0001
 import GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.MirabolicInduction.EqOneOrNegOneOfMemTorsion
 set_option maxSynthPendingDepth 1
 

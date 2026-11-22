@@ -1,5 +1,5 @@
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.EisensteinGrowthForms.LocFinType
-import Development.WeilBound.ThetaLifts.LatticeBasics.HypothesesE
+import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0008
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LFunctionSideEquidistribution
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0853
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.BaseOneSide.PsiSide
 open PositivityTheory.Rg.Base1
 set_option maxHeartbeats 1000000 in

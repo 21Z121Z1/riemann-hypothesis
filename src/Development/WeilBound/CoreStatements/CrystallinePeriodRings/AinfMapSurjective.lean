@@ -1,5 +1,5 @@
 import Mathlib
-import Development.WeilBound.CoreStatements.CrystallinePeriodRings.FrobAinfMapFrobenius
+import Development.WeilBound.CoreStatements.CrystallinePeriodRings.Bundle0001
 
 noncomputable section
 

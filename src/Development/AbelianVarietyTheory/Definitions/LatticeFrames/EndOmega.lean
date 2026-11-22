@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.TorsionIntegrality.CMGoodModels.CM4
-import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.StatementK
-import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.IsotropicVanish
+import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.Bundle0004
+import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.Bundle0001
 import Formalism.FormalGroupLog.Statement
 
 noncomputable section

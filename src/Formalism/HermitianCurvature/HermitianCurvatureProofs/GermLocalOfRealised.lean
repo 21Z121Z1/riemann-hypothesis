@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.GermLocTail
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0109
 
 namespace Formalism.FourierDecayAlt.P.GermRealisation
 

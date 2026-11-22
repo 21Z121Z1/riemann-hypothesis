@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.GlobalFields.Artin.ConductorInflation
-import GroundTheory.GlobalFields.Artin.GammaInduction
+import GroundTheory.GlobalFields.Artin.Bundle0003
 import GroundTheory.GlobalFields.Artin.Places
 import GroundTheory.GlobalFields.Artin.RelativeDiscriminantLocal
 import GroundTheory.GlobalFields.Artin.PlacesFrobenius

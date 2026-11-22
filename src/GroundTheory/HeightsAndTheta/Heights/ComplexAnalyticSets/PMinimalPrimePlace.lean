@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StMinimalPrimePlace
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.CurveNormalisationFiniteLemmas
-import GroundTheory.HeightsAndTheta.Heights.ChowForms.PChartLocalOrder
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0096
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0131
+import GroundTheory.HeightsAndTheta.Heights.ChowForms.Bundle0009
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

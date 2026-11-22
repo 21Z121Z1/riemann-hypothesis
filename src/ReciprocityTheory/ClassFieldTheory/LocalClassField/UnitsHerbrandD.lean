@@ -1,5 +1,5 @@
 import Mathlib
-import ReciprocityTheory.ClassFieldTheory.LocalClassField.UnitsHerbrandC
+import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0002
 
 namespace ReciprocityTheory.DiscreteGroups.LocalClassField.UnitsFilt
 

@@ -1,8 +1,5 @@
-import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.DecayTraceClassAlt
-import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.EigSplit
-import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.EigSummands
-import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.SummandsSpan
-import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.TwistUnitary
+import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.Bundle0001
+import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.Bundle0002
 
 open MeasureTheory NumberField GroundTheory.Automorphic GroundTheory.Automorphic.Reduction GroundTheory.Automorphic.RightCosetSpace
 open GroundTheory.Automorphic.AutomorphicForm GroundTheory.Automorphic.CuspidalSpectrum PositivityTheory.Rg.Tf.Core UpperTheory.ConvolutionTheory.C

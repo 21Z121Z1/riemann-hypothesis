@@ -3,10 +3,10 @@ import Formalism.HermitianCurvature.BesselNonvanishingReduction
 import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
 import Formalism.RealPlaceAnalysis.QuotientSettingHolds
 import Formalism.RealPlaceAnalysis.FinalF
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CompactExponentialSurjective
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0007
 import Formalism.PeriodIntegrals.UpqRep
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsWtOnIffOfTorus
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SetIntegralDifferentiability
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0058
 
 open Matrix MeasureTheory Finset
 open scoped InnerProductSpace ContDiff Topology

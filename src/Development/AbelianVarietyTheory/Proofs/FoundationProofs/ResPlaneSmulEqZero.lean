@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PowMulMemAdd
-import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoLevFacts
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0379
+import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.Bundle0003
 set_option synthInstance.maxHeartbeats 400000
 set_option maxHeartbeats 1000000
 

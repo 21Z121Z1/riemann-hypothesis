@@ -1,6 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.VolHomog
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.VolGe
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0013
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EqOfIsometricTrivShift
 
 set_option autoImplicit false

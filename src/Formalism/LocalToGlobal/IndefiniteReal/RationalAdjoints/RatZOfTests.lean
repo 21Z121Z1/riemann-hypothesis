@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteReal.CutTuples2
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0004
 
 open Module NumberField
 open scoped InnerProductSpace

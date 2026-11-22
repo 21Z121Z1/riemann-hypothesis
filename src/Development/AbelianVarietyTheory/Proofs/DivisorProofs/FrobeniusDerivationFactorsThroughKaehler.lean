@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsFlatLift
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0003
 open GlobalTheory GlobalTheory.DI
 
 namespace GlobalTheory.DI.FrobDeriv

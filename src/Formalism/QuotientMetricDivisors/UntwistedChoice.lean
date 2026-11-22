@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.QuotientMetricDivisors.BoundsChain
+import Formalism.QuotientMetricDivisors.Bundle0004
 import Formalism.QuotientMetricDivisors.StatementK
 import Formalism.QuotientMetricDivisors.RatHermLcvTwist
 

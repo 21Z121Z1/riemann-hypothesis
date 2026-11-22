@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.CuspDiscreteDecompositionGL
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalKTypeFiniteStatement
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsIsOpenIsCompact
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0009
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0732
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0073
 
 noncomputable section
 

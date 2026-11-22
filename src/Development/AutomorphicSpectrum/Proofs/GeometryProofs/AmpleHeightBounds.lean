@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ArchimedeanValueBoundStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HeightLowerBoundChartNormStatement
-import ReciprocityTheory.SemistableReduction.LogNormCoeffSubLeBlockSphereLogMean
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0012
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0079
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0100
+import ReciprocityTheory.SemistableReduction.Bundle0019
 
 noncomputable section
 

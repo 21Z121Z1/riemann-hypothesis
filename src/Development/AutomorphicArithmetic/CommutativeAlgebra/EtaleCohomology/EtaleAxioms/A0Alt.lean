@@ -1,5 +1,5 @@
 import Mathlib
-import Development.EtaleCohomology.EtaleSheaves.EtaleCohomologyThirdStatementHolds
+import Development.EtaleCohomology.EtaleSheaves.Bundle0017
 
 namespace UpperTheory.Et.D3
 

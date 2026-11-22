@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Statements.GeometryStatements.NineGeoU
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0007
 
 noncomputable section
 

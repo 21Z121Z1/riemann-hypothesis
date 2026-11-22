@@ -4,10 +4,10 @@ import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.Con
 import Formalism.LocalRingCardinality.Params
 import Formalism.LocalRingCardinality.DataHost
 import Formalism.FrobeniusOrbits.Statement
-import Formalism.SharpRestriction.CuspSpanNormBounds.Point
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0001
 import Formalism.HermitianLattices.StatementLat
 import Formalism.HarderNarasimhan.Statement
-import Formalism.FrobeniusOrbits.HostThickExists
+import Formalism.FrobeniusOrbits.Bundle0002
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ZsmulGeneratorEqZeroOfProjection
 import Formalism.LocalRingCardinality.DataSpaces
 import Formalism.WeaklyAdmissibleFiltrations.Statement
@@ -15,15 +15,15 @@ import Formalism.LocalRingCardinality.DataRows
 import Formalism.SatakeDualWeyl.Statement
 import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 import Formalism.HarderNarasimhan.StatementPl
-import Formalism.HermitianLattices.StatementMass
+import Formalism.HermitianLattices.Bundle0003
 import Formalism.LocalRingCardinality.DataArith
 import Formalism.SharpRestriction.CuspSpanNormBounds.PsiEDef
 import Formalism.LatticeSlopes.Statement
-import Formalism.FockGram.StatementHerm
+import Formalism.FockGram.Bundle0001
 import Formalism.ThetaLiftIndependence.Statement
 import Formalism.SharpRestriction.CuspSpanNormBounds.DataS
 import Formalism.LocalRingCardinality.DataKernels
-import Formalism.HermitianLattices.StatementMaj
+import Formalism.HermitianLattices.Bundle0002
 import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.IntegralSquareRoots.HenselQuad
 import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.IntegralSquareRoots.SecondConstantOfGaussSum
 

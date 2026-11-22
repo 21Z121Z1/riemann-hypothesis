@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.GalUnitary
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.BcDefs
-import Development.AutomorphicArithmetic.AutomorphicVarieties.PartsSign
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0008
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0006
+import Development.AutomorphicArithmetic.AutomorphicVarieties.Bundle0001
 
 open NumberField IsDedekindDomain Neutral.B1 Formalism.L2.Host Formalism.ConjugateSelfDual ReciprocityTheory.Gal Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.MainNotions.N GlobalTheory.CuspRep GlobalTheory.HeckeGal GlobalTheory.GalOfCusp GlobalTheory.UnitaryBC UpperTheory.V UpperTheory.V.Af
 

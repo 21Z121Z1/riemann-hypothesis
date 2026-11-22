@@ -1,4 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.LabApply
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.Bundle0010
 
 open Matrix MeasureTheory
 open scoped InnerProductSpace ENNReal ComplexConjugate

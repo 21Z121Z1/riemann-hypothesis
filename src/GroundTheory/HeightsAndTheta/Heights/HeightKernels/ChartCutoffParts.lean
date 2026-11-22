@@ -1,9 +1,9 @@
 import Mathlib
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.HessCRestrictThm
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PartsAlg
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsChartCutoffEnergy
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PChartEnergyCocycle
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PChartEnergySwap
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0012
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0051
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0022
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

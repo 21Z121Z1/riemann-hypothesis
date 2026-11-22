@@ -1,7 +1,7 @@
 import Formalism.LocalRingCardinality.SpanPowerMembership.CodeRecordDiscriminantLevel
-import Formalism.LocalRingCardinality.SpanPowerMembership.NZColH
-import Formalism.LocalRingCardinality.SpanPowerMembership.NZRowD
-import Formalism.LocalRingCardinality.SpanPowerMembership.NZTypeH
+import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0011
+import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0010
+import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0008
 
 noncomputable section
 

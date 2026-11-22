@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.PAdicHodge.BCrisEigenFixed
-import GroundTheory.PAdicHodge.BCrisEigenChar
+import GroundTheory.PAdicHodge.Bundle0010
 import GroundTheory.PAdicHodge.BCrisEigenMaps
 set_option maxSynthPendingDepth 1
 

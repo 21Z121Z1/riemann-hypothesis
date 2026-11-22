@@ -1,7 +1,7 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.AutomorphicKernels.GrothendieckRingPolynomial.ProdList
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductIrreducibleAppendEquivStatement
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NonemptyEquivProdIrrZero
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0512
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0022
 
 noncomputable section
 

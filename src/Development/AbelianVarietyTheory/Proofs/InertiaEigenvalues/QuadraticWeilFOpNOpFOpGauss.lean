@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsStableGauss
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0085
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyMeasAndReps
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuadraticStarStructure
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SelfDualMeasureExistsUniqueFourierInversion
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0090
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0126
 
 open GlobalTheory.JR GlobalTheory.JR.WeilQuad Matrix MeasureTheory Filter Topology
 open scoped Pointwise

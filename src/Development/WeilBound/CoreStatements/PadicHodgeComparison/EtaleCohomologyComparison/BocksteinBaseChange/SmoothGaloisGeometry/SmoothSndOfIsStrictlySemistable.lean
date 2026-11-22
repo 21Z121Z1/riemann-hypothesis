@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsStrictlySemistableAlt
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsStrictlySemistableModel
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0002
 
 noncomputable section
 

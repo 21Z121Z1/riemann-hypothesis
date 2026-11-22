@@ -1,12 +1,12 @@
 import Mathlib
-import ReciprocityTheory.DualLattices.CotangentSurjective
+import ReciprocityTheory.DualLattices.Bundle0005
 import ReciprocityTheory.DualLattices.MemDualLat
-import ReciprocityTheory.DualLattices.IsUnitDetOfSpanEq
+import ReciprocityTheory.DualLattices.Bundle0002
 import ReciprocityTheory.DualLattices.PowMemCarrier
-import ReciprocityTheory.DualLattices.HasLenCokerDet
-import ReciprocityTheory.DualLattices.MemOfSumSingleEqZero
-import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsTight
-import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.StepOrderRes
+import ReciprocityTheory.DualLattices.Bundle0022
+import ReciprocityTheory.DualLattices.Bundle0018
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0003
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0004
 
 noncomputable section
 

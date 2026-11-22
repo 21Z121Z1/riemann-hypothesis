@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.TwistedProofs.LinActOneOneApply
-import Development.AutomorphicSpectrum.Proofs.TwistedProofs.ACo
+import Development.AutomorphicSpectrum.Proofs.TwistedProofs.Bundle0006
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CardInversePrimeRepsIntegralRightMulHecke
 import Development.AbelianVarietyTheory.Definitions.Foundations.GLintEqKOAndPrincEqKOne

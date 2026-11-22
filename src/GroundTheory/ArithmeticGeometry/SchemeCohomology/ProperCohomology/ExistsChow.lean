@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ChowMulti
+import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.Bundle0005
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ChowSegre
 set_option maxSynthPendingDepth 1
 

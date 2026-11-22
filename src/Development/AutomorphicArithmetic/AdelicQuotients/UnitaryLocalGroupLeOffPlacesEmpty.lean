@@ -1,9 +1,9 @@
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SchurStep
-import Development.WeilBound.ThetaLifts.LatticeBasics.EulerProd
-import Development.WeilBound.ThetaLifts.LatticeBasics.BadFactor
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockScaledIntegralOfLocal
-import Development.AutomorphicSpectrum.Proofs.TwistedProofs.ExtensionEmbeddingEvInfRealAd
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BcCompFinAwayPtOfNotMem
+import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0011
+import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0028
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1495
+import Development.AutomorphicSpectrum.Proofs.TwistedProofs.Bundle0008
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3239
 
 open scoped TensorProduct NNReal Matrix
 open NumberField IsDedekindDomain MeasureTheory Filter Topology Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes

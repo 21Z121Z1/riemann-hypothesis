@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.IntegralModels.StatementsPullInjLoc
-import GroundTheory.HeightsAndTheta.Heights.IntegralModels.StatementsLocSectionsInj
+import GroundTheory.HeightsAndTheta.Heights.IntegralModels.Bundle0012
+import GroundTheory.HeightsAndTheta.Heights.IntegralModels.Bundle0006
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.PPullbackBasis
-import GroundTheory.HeightsAndTheta.Heights.IntegralModels.PGenericPullInj
+import GroundTheory.HeightsAndTheta.Heights.IntegralModels.Bundle0016
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Model

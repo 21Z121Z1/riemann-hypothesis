@@ -1,10 +1,8 @@
 import Formalism.HermitianLattices.HermitianLatticesProofs.ClassSetAssembly
 import Formalism.HermitianLattices.HermitianLatticesProofs.TraceReal
 import Formalism.HermitianLattices.HermitianLatticesProofs.GenusCovolBound
-import Formalism.HermitianLattices.HermitianLatticesProofs.ShortVectors
-import Formalism.HermitianLattices.HermitianLatticesProofs.GenusScale
-import Formalism.HermitianLattices.HermitianLatticesProofs.FinIntermediate
-import Formalism.HermitianLattices.HermitianLatticesProofs.IsomOfTrace
+import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0002
+import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0004
 
 namespace Formalism.HermitianLatticesTheory
 

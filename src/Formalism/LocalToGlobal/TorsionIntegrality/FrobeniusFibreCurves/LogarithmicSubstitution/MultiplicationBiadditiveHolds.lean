@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.FinalB
-import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.StatementC
+import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.Bundle0001
 
 noncomputable section
 

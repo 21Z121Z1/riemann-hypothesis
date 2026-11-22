@@ -1,13 +1,12 @@
 import Mathlib
 import Formalism.LocalToGlobal.ProjectiveLattices.ThShort
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CIndBC
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermCut
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0005
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.JetSubstPCompJetBC
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.LBPull
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermDVal
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermBPrim
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0015
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0014
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0021
 
 set_option autoImplicit false
 

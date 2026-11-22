@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.ArithmeticCylinders
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LabelDatum
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardLeCardMulCardSupport
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardProperSubfieldElementsLt
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIrreducibleCharpolyMemRootsBar
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0006
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0119
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0120
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0121
 open GlobalTheory.GLq Formalism.MainNotions.ArithmeticCylinders Polynomial
 open scoped Classical
 

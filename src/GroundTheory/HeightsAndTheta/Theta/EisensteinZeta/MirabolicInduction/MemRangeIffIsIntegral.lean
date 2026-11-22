@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.HermitianSpaces
+import GroundTheory.AutomorphicForms.Bundle0005
 import GroundTheory.HeightsAndTheta.Heights.HermitianLattice
-import GroundTheory.AutomorphicForms.HermitianDisc
+import GroundTheory.AutomorphicForms.Bundle0012
 import GroundTheory.HeightsAndTheta.Theta.CMDatum
 import GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.DedekindZetaSeries.ChainWittIndexHypothesesMet
 set_option maxSynthPendingDepth 1

@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicWittLattices.TransCancel
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoprimeNsmulEndomorphismPreservesCompletioStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3568
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.InvMemLatMonoidOfMemAwaySupp
 
 open UpperTheory.Gal.G3

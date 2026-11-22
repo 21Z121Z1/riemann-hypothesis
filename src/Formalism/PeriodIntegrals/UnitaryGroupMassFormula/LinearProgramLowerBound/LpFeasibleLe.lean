@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.LpLower
+import Formalism.PeriodIntegrals.Bundle0006
 
 namespace PI
 

@@ -3,7 +3,7 @@ import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.WittEmbeddingsCompati
 import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.DetOfColSpanEq
 import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.WeightUpdateAtPlace
 import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.SubstZOfXCoordZA
-import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.XiOfSpec
+import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.Bundle0001
 import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.DetYtMatNeZero
 
 noncomputable section

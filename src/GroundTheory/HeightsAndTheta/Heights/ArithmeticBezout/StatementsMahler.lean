@@ -1,6 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.MahlerSectionBasic
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.ContinuousHermNormGroup
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0007
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

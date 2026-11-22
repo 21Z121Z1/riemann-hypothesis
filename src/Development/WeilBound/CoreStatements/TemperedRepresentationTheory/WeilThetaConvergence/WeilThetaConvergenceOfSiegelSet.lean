@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaConvergenceOfSiegelSetStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0785
 import Development.WeilBound.ThetaLifts.Reductions.SiegelOfCore
 
 namespace GlobalTheory.CompanionTheory.WTC

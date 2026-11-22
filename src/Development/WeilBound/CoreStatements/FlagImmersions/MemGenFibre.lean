@@ -1,8 +1,8 @@
-import Development.WeilBound.CoreStatements.FlagImmersions.FibSandwich
+import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0014
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CmTypeExteriorLatticeComparison
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UniversalLieModelPullbackStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsCombTangentIffLinearSumStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenFrameIffEigenspaceBasisStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0204
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0101
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0099
 
 open AlgebraicGeometry CategoryTheory Limits NumberField IsDedekindDomain MvPolynomial
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Flat GlobalTheory.CompanionTheory.Ar.Fl

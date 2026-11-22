@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.ExistsGaugeMeasureForEachRank
+import Formalism.PeriodIntegrals.Bundle0002
 
 noncomputable section
 

@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsJoinDivCycle
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PPolynomialLocalizedLength
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0019
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0041
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PExistsUniqueRelabel
 set_option maxSynthPendingDepth 1
 

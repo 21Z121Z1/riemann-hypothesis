@@ -1,11 +1,11 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.HeightFunctions.ConclOfInputs4
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.NoCommonZeroSt
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0015
 import Formalism.LocalToGlobal.ProjectiveLattices.DepthTie
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.N0LeNs
 import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.NusOffLevel
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DegreeWeightKappaLePageBound
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MulRowsScaledWeightLeKappaRows
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0139
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0132
 
 set_option autoImplicit false
 

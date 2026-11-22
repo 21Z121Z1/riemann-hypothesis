@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsRealisesNeOne
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Langlands
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsTateEpsTateEpsAndNeZero
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalFieldTwoVocabulariesDictionary
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0024
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0808
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0825
 import GroundTheory.LocalFields.LocalZetaGauss
 open NumberField IsDedekindDomain ValuativeRel Formalism.ConjugateSelfDual ReciprocityTheory.Gal GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.SplitWeil GlobalTheory.LocGL GlobalTheory.WeilDeligne GlobalTheory.LocLanglands GlobalTheory.DelEps GlobalTheory.DelGlob
 open GroundTheory.Global (HeckeCharacter localAdelicChar)

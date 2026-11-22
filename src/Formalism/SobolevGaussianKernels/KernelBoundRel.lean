@@ -1,11 +1,7 @@
-import Formalism.SobolevGaussianKernels.GaussianKernelBounds.EichlerEquivalenceHolds
+import Formalism.SobolevGaussianKernels.GaussianKernelBounds.Bundle0001
 import Mathlib
-import Formalism.SobolevGaussianKernels.StatementCS
-import Formalism.SobolevGaussianKernels.GaussianKernelBounds.LfProd
+import Formalism.SobolevGaussianKernels.Bundle0001
 import Formalism.SobolevGaussianKernels.GaussianKernelBounds.NeighbourhoodHilbertSchmidtHolds
-import Formalism.SobolevGaussianKernels.StatementMV
-import Formalism.SobolevGaussianKernels.GaussianKernelBounds.HasDerivAtSphereChartLast
-import Formalism.SobolevGaussianKernels.StatementNC
 
 namespace Formalism.SL.Final
 

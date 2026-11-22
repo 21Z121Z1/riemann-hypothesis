@@ -1,7 +1,6 @@
-import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.CoefficientSpans
-import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.FinStmt
-import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.IdealStmt
-import Development.WeilBound.ThetaLifts.LeviDeterminants.ActsEx
+import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.Bundle0004
+import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.Bundle0001
+import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0007
 
 noncomputable section
 

@@ -1,9 +1,9 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StLineNormalForm
-import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PIdealClassesFinite
-import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PLineCoeffsFG
-import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PLinePairOrbitsFinite
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsCommonMultiple
+import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0016
+import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0007
+import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0008
+import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0018
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0018
 
 namespace GroundTheory.Heights₂.Heights.FiniteCovolume
 

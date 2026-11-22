@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.LetterShift
-import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FinalS
+import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0005
 
 noncomputable section
 open scoped BigOperators

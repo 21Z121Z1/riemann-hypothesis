@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UltraSumLe
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0042
 
 namespace GlobalTheory.WittGauss
 open WittVector

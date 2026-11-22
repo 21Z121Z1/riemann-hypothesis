@@ -1,6 +1,6 @@
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpTie
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0005
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBIdJet
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpChartJetA
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0011
 
 set_option autoImplicit false
 

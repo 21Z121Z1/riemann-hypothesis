@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.WwMinorExpand
+import Formalism.PeriodIntegrals.Bundle0013
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MonomialFrameSpan.DetSubmatrixFun
 
 open Finset

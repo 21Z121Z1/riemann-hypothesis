@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.ThetaSeriesTies
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsRepIsLevAct
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0177
 
 set_option autoImplicit false
 

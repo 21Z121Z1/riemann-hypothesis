@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.InstBorelGL
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.CartanDecompositionGeneralLinearStatement
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.MemIntegralGLIffIntegralUnitDetStatement
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.MatrixAdditiveHaarNormalizedStatement
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0010
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0008
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0013
 open MeasureTheory Matrix GlobalTheory.CompanionTheory.QL
 open scoped ComplexConjugate ValuativeRel
 

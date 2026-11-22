@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.InertKernelTheory.StatementIota
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0001
 import ReciprocityTheory.ReductiveGroups.LatticeEmbeddings.IotaPlaceB
 
 noncomputable section

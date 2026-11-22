@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.EdgeLatticeAdaptedBasis
-import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.RestCloudOfX
+import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.Bundle0003
+import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.Bundle0009
 
 noncomputable section
 

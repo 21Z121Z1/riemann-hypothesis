@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.UnipotentAdelicQuotients.SiegelWeilUnitaryConvergent
+import Formalism.UnipotentAdelicQuotients.Bundle0003
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.GoodReductionCondition
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.RowCountsOfLinkedTies
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0182
 open Formalism.BasicNotions Formalism.MainNotions GlobalTheory.EX GlobalTheory.EX.OB GlobalTheory.Mem GlobalTheory.Mem.Top GlobalTheory.Fc
 
 namespace GlobalTheory.CountRowByName

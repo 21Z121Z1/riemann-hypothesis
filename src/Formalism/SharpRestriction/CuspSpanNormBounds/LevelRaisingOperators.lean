@@ -1,10 +1,10 @@
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.WRWeyl
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RuleGD
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RuleSS
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.RuleInv
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0006
 import Formalism.FormalDegreeBessel.FinalIO
-import Formalism.FormalDegreeBessel.FinalBF
-import Formalism.SharpRestriction.CuspSpanNormBounds.ChoiceOfModulusAndDiscriminant
+import Formalism.FormalDegreeBessel.Bundle0002
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0009
 import Formalism.SharpRestriction.CuspSpanNormBounds.RadialRules
 
 open scoped ContDiff Topology

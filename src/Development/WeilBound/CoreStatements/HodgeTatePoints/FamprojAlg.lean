@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LeadMinor
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0006
 
 noncomputable section
 

@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.ProjectiveLattices.CoreProofs
-import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
 import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.FinitePlaceArcs.FinAtOfStatement
 
 noncomputable section

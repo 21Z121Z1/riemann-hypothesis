@@ -1,8 +1,8 @@
 import Mathlib
-import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.CechDefs
+import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.Bundle0004
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.TotPairing
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DvMemOf
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConeZigzagCompat
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0122
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0129
 
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false

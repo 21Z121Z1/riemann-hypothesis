@@ -1,4 +1,4 @@
-import Formalism.GelfandTransference.EnergyIdentity
+import Formalism.GelfandTransference.Bundle0001
 import Formalism.NormUnitaryBounds.NormUnitary
 import Formalism.NormUnitaryBounds.DetPolynomialWeights.ShortIndependentVectorsOfDualMinimum
 import Formalism.LatticeTheta.ThetaShiftInversion

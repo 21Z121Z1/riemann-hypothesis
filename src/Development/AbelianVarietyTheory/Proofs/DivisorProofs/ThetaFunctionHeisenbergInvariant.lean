@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfPartFPlaceIdem
-import GroundTheory.GlobalFields.TateThesis.NoSmallSubgroups
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1117
+import GroundTheory.GlobalFields.TateThesis.Bundle0002
 open scoped TensorProduct Matrix
 open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes
 open GlobalTheory.WeilM GlobalTheory.LFun GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels

@@ -1,7 +1,6 @@
 import Mathlib
 import GroundTheory.GlobalFields.AnalyticClassNumber.DirichletHeckeCorrespondence
-import GroundTheory.GlobalFields.Artin.OneDimL
-import GroundTheory.GlobalFields.Artin.OneDimExistence
+import GroundTheory.GlobalFields.Artin.Bundle0005
 import GroundTheory.GlobalFields.Artin.AbelianHecke
 import GroundTheory.GlobalFields.Artin.Regular
 import GroundTheory.GlobalFields.AnalyticClassNumber.ClassNumberFormula

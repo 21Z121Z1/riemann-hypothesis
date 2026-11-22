@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.MeanHeightDescent.CombinedAverageDegreeBound
+import Formalism.MeanHeightDescent.Bundle0001
 
 open Finset
 

@@ -1,5 +1,5 @@
-import Development.EtaleCohomology.EtaleSheaves.DescIntPf
-import Development.EtaleCohomology.TateTwists.EtaleCechConerveImageIsoCechNerveOfPreservesWidePushouts
+import Development.EtaleCohomology.EtaleSheaves.Bundle0019
+import Development.EtaleCohomology.TateTwists.Bundle0013
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC LateralTheory.E.t_E3Cut LateralTheory.E.StalkCut LateralTheory.E.DescIntPf

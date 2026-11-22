@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CocycleProductThree
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0022
 
 set_option autoImplicit false
 

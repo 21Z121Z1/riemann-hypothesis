@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LatticeElementaryDivisors
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IrreducibleOfValued
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0027
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0013
 
 noncomputable section
 

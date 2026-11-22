@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceSzNonneg
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1833
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteCoefficientBound
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FlatIntegrandFlippedTensorLocallyConstantCompact
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralUnfoldingVariablesMemFieldRange
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicScalarBase
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0575
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0501
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0959
 
 open MeasureTheory ValuativeRel Matrix
 

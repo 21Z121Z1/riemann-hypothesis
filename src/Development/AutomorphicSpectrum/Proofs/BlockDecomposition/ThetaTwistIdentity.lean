@@ -1,9 +1,9 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.ThetaIdempotents.HeckeEta
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinCovariance
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaSumInvariantWeylInvolution
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousHalfTr
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BlockMatrixInjective
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0761
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0772
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0728
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0773
 
 noncomputable section
 

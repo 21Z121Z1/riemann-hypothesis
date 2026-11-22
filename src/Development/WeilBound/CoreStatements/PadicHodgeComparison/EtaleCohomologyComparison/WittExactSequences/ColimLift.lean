@@ -1,6 +1,6 @@
 import Mathlib
-import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.WittExactSequences.IsCompl
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsLiftOfSurjKer
+import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.WittExactSequences.Bundle0001
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0009
 
 set_option autoImplicit false
 

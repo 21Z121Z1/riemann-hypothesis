@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NontrivialOfNeBot
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeightEqOfFinitePartNeBot
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DefiniteUnitaryClassSetFiniteStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIrreducibleSubrepFixedOfUnitary
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0359
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0347
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0274
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0054
 
 open NumberField IsDedekindDomain Matrix GlobalTheory.CuspRep GlobalTheory.PRep GlobalTheory.UnitaryBC Formalism.UG Formalism.BasicNotions GlobalTheory.DefU
 

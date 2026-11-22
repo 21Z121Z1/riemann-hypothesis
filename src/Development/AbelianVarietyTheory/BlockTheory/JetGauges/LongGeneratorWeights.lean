@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.RecPJThAllNeBot
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.SupBoundPageRows
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0038
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0003
 import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.AdmissibleModuleIffLatticeQuotients
 
 set_option autoImplicit false

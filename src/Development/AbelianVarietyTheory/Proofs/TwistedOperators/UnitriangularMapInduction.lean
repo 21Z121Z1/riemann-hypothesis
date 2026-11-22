@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.AdjointRadical
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0001
 
 open MeasureTheory Matrix
 open scoped Pointwise

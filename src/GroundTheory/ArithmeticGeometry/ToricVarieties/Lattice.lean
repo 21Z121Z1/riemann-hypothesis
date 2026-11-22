@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.ArithmeticGeometry.ToricVarieties.ExistsDualNegOfNotMemHullFinset
+import GroundTheory.ArithmeticGeometry.ToricVarieties.Bundle0001
 
 namespace GroundTheory.Arith.Toric
 

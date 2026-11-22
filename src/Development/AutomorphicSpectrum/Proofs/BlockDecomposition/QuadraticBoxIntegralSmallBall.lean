@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoreR
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0005
 open MeasureTheory Topology GlobalTheory.CompanionTheory.WeilSiegel.Inf0
 open scoped ENNReal NNReal Matrix
 

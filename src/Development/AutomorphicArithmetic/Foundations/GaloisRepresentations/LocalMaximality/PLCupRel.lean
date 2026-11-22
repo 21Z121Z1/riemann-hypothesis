@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.LiftFactorization
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechDeltaCupProduct
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0200
 
 open KaehlerDifferential GlobalTheory.CechDR GlobalTheory.PD GlobalTheory.WH GlobalTheory.W1 UpperTheory.Gal.productCup_of_system
 open scoped TensorProduct

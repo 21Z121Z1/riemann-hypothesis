@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.InstCMHostS
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicUnitaryEqRealMulFiniteSplit
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsReframeVStdOfPosDef
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0035
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0074
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0317
 
 noncomputable section
 

@@ -1,6 +1,6 @@
 import Mathlib
 import CompanionTheory.RealGroups.UnitaryAdmissibility.ArchimedeanUnitaryDual.InhabitedFinite
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.HeckeOperatorsSpanAndFaithful
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0008
 
 open CompanionTheory.Rg.Fl
 

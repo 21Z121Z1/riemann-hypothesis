@@ -1,4 +1,4 @@
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0014
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact

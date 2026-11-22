@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.OneMapT
 import Development.AbelianVarietyTheory.Definitions.Divisors.InvVolConjLevelOne
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsTestLatUnique
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0047
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsNotRelZero
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.LevelPlusSubgroup
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0032
 
 noncomputable section
 

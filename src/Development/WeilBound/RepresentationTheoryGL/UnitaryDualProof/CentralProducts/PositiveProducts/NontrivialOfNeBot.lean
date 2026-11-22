@@ -1,6 +1,6 @@
 import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.CentralProducts.TopProdD
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeibnizOrderOfExactSequences
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSmoothIterPhi
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0725
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NonemptyEquivMultiProdOne
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.BernsteinZelevinskyGL.TopAdm
 

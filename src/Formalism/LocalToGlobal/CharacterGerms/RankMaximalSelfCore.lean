@@ -1,8 +1,8 @@
 import Formalism.LocalToGlobal.CharacterGerms.UncurryLinearCombination
 import Formalism.LocalToGlobal.CharacterGerms.ConstantZeroFirstThenZero
 import Formalism.LocalToGlobal.CharacterGerms.ConstantZeroDoubleMultiplicationPair
-import Formalism.LocalToGlobal.CharacterGerms.RowTiePAddCvSelf
-import Formalism.LocalToGlobal.CharacterGerms.RowTieSelfCuts
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0027
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0019
 
 set_option autoImplicit false
 

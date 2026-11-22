@@ -1,4 +1,4 @@
-import Development.AbelianVarietyTheory.Definitions.Foundations.IsDCReps
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0001
 open GlobalTheory.HeckeFamilyMatrices Polynomial UpperHalfPlane
 open scoped MatrixGroups ModularForm
 open scoped Manifold

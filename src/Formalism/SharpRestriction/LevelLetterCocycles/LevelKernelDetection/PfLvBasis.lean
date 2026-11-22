@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.LevelLetterCocycles.FinalLevelsOf
-import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.PfLvBasisCmp
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0028
+import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.Bundle0003
 
 noncomputable section
 

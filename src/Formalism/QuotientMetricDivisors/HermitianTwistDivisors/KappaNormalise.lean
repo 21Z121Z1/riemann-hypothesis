@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.QuotientMetricDivisors.PassageScaleFree
+import Formalism.QuotientMetricDivisors.Bundle0005
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.DualMu
-import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.TheoremDivIneq
+import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0006
 import Formalism.HarderNarasimhan.ShiftInvariance
 
 open Module NumberField IsDedekindDomain

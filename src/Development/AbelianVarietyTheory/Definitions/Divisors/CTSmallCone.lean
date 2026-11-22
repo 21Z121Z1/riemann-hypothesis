@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.MatchingOfParts
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0044
 import Development.AbelianVarietyTheory.Definitions.Foundations.T2SpaceAdeleRing
 
 noncomputable section

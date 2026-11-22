@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.IndexUBound
+import Formalism.PeriodIntegrals.Bundle0004
 
 namespace PI.UnitaryGroupMassFormula.IndexUBound
 

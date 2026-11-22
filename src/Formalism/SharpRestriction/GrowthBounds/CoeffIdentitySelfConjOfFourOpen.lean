@@ -1,8 +1,8 @@
-import Formalism.SharpRestriction.GrowthBounds.SumRescaleTySTwo
+import Formalism.SharpRestriction.GrowthBounds.Bundle0004
 import Formalism.SharpRestriction.GrowthBounds.ConstantCoeffUnshiftLogarithm
 import Formalism.SharpRestriction.GrowthBounds.R1sExpLowHolds
-import Formalism.LocalToGlobal.CharacterGerms.FrobPowSmul
-import Formalism.LocalToGlobal.CharacterGerms.MmMulSeries
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0034
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0035
 
 noncomputable section
 

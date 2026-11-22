@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ActWOneApply
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0590
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HaarFundamentalDomainOrthogonalSum
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinsetFinTwoEqCases
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdeleQuotientCompactRepresentatives
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1133
 
 noncomputable section
 

@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.Imports
-import Development.AbelianVarietyTheory.Definitions.Divisors.HasQIff
-import Development.AbelianVarietyTheory.Definitions.Foundations.MultipliableAndSgNeZero
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelFunctionHolomorphic
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0003
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0002
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0005
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0055
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.HasQExpansionModularForm
 
 noncomputable section

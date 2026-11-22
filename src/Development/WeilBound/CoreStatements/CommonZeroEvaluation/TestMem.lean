@@ -1,8 +1,8 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.GenSpecDesc
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.FrMapComp
-import Development.AbelianVarietyTheory.Proofs.GenericRegularity.FrameBorelGroupoidProperties
-import Development.AbelianVarietyTheory.Proofs.GenericRegularity.EvaluationLawsGenericFramesAtlasHold
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0051
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0008
+import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0021
+import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0037
 open NumberField
 open Formalism.L2.Pj ReciprocityTheory.ChartRestriction.G.Geo.Tor
 

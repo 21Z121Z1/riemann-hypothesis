@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.GlobalFields.Adele.Approximation
-import GroundTheory.GlobalFields.Adele.IntegersLattice
+import GroundTheory.GlobalFields.Adele.Bundle0001
 
 namespace GroundTheory.Global
 

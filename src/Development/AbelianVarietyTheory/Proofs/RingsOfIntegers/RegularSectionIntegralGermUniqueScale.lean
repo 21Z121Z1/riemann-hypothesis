@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.PlaceAdaptation.AdaptStd
-import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.FrameTieHolds
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermDPf
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermDVal
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermFunPf
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.SectionScalarValuation
+import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0034
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0017
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0014
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0007
 
 set_option autoImplicit false
 noncomputable section

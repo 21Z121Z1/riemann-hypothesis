@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.GlobalTheory.GL5.FamilyMassVolumeIdentityOfClassDecomp
-import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.LatticeTensorUnfolding
-import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.InfiniteCoordinateUnfold
+import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0011
+import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0010
 
 noncomputable section
 

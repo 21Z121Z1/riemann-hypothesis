@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ColFlags
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.GenUIsGenFam
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0018
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StalkSpecializesBijective
 
 open AlgebraicGeometry CategoryTheory NumberField Matrix

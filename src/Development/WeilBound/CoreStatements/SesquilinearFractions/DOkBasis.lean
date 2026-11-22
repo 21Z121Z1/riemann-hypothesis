@@ -1,5 +1,5 @@
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsTransition
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.IntegersOfCmFieldConjStructure
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0024
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor

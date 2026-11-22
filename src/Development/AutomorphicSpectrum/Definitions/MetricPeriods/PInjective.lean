@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0004
 
 noncomputable section
 

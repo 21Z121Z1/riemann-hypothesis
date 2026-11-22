@@ -1,5 +1,5 @@
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.MetAndHolds
-import Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.ArtEx
+import Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.Bundle0001
 
 noncomputable section
 

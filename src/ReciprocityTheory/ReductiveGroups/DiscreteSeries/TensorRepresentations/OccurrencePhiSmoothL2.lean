@@ -1,4 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.OccurrencePhiKEquivariant
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.Bundle0013
 
 noncomputable section
 

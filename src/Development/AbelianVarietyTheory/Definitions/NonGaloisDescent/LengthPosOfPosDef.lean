@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
-import Formalism.LocalRingCardinality.PosOfIsomEmb
-import Development.AbelianVarietyTheory.Definitions.Divisors.OfChar
+import Formalism.LocalRingCardinality.Bundle0005
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0033
 
 noncomputable section
 

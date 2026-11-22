@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitLoc
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsFinsetNormOne
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0138
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0012
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.FiniteAdeleSndAlgebraMap
-import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.SplitChar
+import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0017
 
 noncomputable section
 

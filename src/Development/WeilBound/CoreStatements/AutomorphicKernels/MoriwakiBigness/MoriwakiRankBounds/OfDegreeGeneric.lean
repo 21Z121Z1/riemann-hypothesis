@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.TendstoFinrankVeryAmple
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PBigIffGenDeg
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSemiposTwist
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PNefOnGenericOfSemipos
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PChartLatRank
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0076
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0107
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0022
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0063
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSectionLatticeFinite
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.AssemblyBase
 import Development.WeilBound.CoreStatements.AutomorphicKernels.MoriwakiBigness.MoriwakiRankBounds.Development

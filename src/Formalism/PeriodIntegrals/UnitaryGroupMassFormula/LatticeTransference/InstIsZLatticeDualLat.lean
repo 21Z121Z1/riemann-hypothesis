@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeTransference.DualTransport
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeTransference.Bundle0001
 import Formalism.LatticeTheta.ThetaShiftInversion
 
 open Module

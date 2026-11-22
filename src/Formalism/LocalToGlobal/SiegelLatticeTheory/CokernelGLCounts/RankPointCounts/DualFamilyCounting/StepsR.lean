@@ -1,9 +1,9 @@
 import Mathlib
-import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.DualFamilyCounting.JordanExists
+import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.DualFamilyCounting.Bundle0015
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.CntLocal
-import Formalism.SharpRestriction.CuspSpanNormBounds.CntPartners
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0007
 import Formalism.SharpRestriction.CuspSpanNormBounds.FlagEEqHyperbolic
-import Formalism.GL3MeanSquares.GenusMeanAsymptotics.UnimodularClassRepresentatives.LValEtaEqLValEtaF
+import Formalism.GL3MeanSquares.GenusMeanAsymptotics.UnimodularClassRepresentatives.Bundle0011
 
 open NumberField Module Formalism.MainNotions.S Formalism.MainNotions.S.Lat Formalism.MainNotions.S.LocalSplitGroups Formalism.L2.SG.CntLocal
 open Classical ValuativeRel

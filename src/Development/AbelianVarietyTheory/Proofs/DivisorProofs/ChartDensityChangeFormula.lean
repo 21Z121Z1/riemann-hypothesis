@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.ChartMeasApplyOfSubset
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0012
 
 set_option autoImplicit false
 

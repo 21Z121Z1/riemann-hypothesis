@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.CMDeterminantIdeals.LambdaLowerBound
-import ReciprocityTheory.SemistableReduction.LemmaH
+import ReciprocityTheory.SemistableReduction.Bundle0009
 import Development.AbelianVarietyTheory.Statements.FundamentalDomains.KeyFormulaPowOfKeyFormula
 open NumberField IsDedekindDomain MeasureTheory IsLocalRing Matrix
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor Formalism.L2.LamCM

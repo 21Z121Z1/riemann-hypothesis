@@ -3,7 +3,7 @@ import GroundTheory.GlobalFields.AnalyticClassNumber.QuadraticLegendre
 import GroundTheory.GlobalFields.AnalyticClassNumber.QuadraticDirichletConductor
 import GroundTheory.GlobalFields.AnalyticClassNumber.QuadraticHurwitzZero
 import GroundTheory.GlobalFields.Artin.ConductorInduction
-import GroundTheory.GlobalFields.Artin.ConductorOneDim
+import GroundTheory.GlobalFields.Artin.Bundle0005
 set_option maxSynthPendingDepth 1
 
 noncomputable section

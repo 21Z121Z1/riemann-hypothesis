@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.PrimitiveCrystalHodgeLiftClasses
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianLifting
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0009
 
 set_option autoImplicit false
 

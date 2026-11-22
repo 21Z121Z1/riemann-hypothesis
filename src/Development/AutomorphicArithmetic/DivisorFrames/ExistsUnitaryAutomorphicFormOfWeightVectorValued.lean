@@ -1,13 +1,11 @@
 import Mathlib
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsAdmissibleEquivariantFormsRep
-import Development.AutomorphicArithmetic.DivisorFrames.SpanHighestWeightRepUnitaryGroupRealPointsImageE
-import Development.AutomorphicArithmetic.DivisorFrames.HasWeightAtOfNeZeroIntertwining
-import Development.AutomorphicArithmetic.DivisorFrames.ExistsInvariantNondegeneratePairingWeightRepNabl
-import Development.AutomorphicArithmetic.DivisorFrames.FiniteDimensionalNablaTAndContinuousWtOp
-import Development.AutomorphicArithmetic.DivisorFrames.IsAutFormUOfVectorValuedInvariant
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSystemOf
+import Development.AutomorphicArithmetic.DivisorFrames.Bundle0004
+import Development.AutomorphicArithmetic.DivisorFrames.Bundle0016
+import Development.AutomorphicArithmetic.DivisorFrames.Bundle0015
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2095
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSemilinearActionDualWeylTensor
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeightEqOfFinitePartNeBot
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0347
 open NumberField IsDedekindDomain GlobalTheory.CuspRep GlobalTheory.PRep GlobalTheory.UnitaryBC Formalism.BasicNotions GlobalTheory.DefU GlobalTheory.FrameAut Formalism.CohomologicalDescent.DepthNonnegative
 
 private theorem cont_cEmb {E : Type} [Field E] [NumberField E] [IsCMField E] {n : ℕ} (τ : E →+* ℂ) :

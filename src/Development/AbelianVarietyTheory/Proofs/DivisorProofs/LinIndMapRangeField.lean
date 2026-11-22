@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasBlockOfOccurs
 import Formalism.GradedWeylDivisibility.FinalD
 import Formalism.GradedWeylDivisibility.DualWeylDominanceOf
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LDlatLemmas
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0012
 import Formalism.SatakeDualWeyl.DualWeylRepApply
 import Formalism.PieriBlockIdeals.PieriColumnMinors.RealLocalDeltaNabla
 

@@ -1,8 +1,8 @@
 import Mathlib
-import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.UnramifiedWhittaker.CProps
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SeriesEqDens
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeVolumeUnramifiedStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LevelCharactersUnramifiedStatement
+import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.UnramifiedWhittaker.Bundle0002
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0115
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0709
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0702
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Mathlib
-import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.HermitianCellMeasures.CellDefs
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EqZeroOfComps
-import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.IntegralSquareRoots.NormOne
+import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.HermitianCellMeasures.Bundle0001
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0620
+import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.IntegralSquareRoots.Bundle0001
 
 noncomputable section
 

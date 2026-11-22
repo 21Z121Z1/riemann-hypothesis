@@ -1,5 +1,5 @@
-import Development.WeilBound.ThetaLifts.LeviDeterminants.EvStmt
-import Development.WeilBound.ThetaLifts.LeviDeterminants.EvChange
+import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0002
+import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0005
 import Development.WeilBound.ThetaLifts.LeviDeterminants.LagrangianUniqueness.GeoLeaves
 
 noncomputable section

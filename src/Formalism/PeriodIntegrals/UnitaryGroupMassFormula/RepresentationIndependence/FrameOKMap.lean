@@ -1,5 +1,5 @@
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RepresentationIndependence.IsFixedConvMap
-import Formalism.PeriodIntegrals.RepsIndep
+import Formalism.PeriodIntegrals.Bundle0034
 
 noncomputable section
 

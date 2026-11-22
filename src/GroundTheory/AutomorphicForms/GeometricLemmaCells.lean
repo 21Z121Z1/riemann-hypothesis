@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.FiniteBruhat
-import GroundTheory.AutomorphicForms.InductionParabolicGroups
+import GroundTheory.AutomorphicForms.Bundle0013
 set_option maxSynthPendingDepth 1
 
 noncomputable section

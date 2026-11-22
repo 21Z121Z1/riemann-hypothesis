@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.ProfiniteCohomology.ProcyclicDefs
+import GroundTheory.ProfiniteCohomology.Bundle0001
 import GroundTheory.ProfiniteCohomology.ContinuousCochains.Functoriality
 import GroundTheory.ProfiniteCohomology.CoinducedModules.CohomologyCoindCokernelIsoHom
 import GroundTheory.ProfiniteCohomology.CohomologicalDimension.PrimaryComponentCohomologyEqBotOfScdpLt

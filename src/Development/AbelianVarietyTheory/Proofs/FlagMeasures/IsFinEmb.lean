@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GaugeUnfold
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsFrameOfHasSignature
 
 open MeasureTheory NumberField Matrix Finset

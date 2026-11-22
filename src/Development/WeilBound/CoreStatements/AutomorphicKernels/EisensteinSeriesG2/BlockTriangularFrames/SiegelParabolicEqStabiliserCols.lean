@@ -1,4 +1,4 @@
-import Development.WeilBound.ThetaLifts.LatticeBasics.HypothesesE
+import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0008
 
 set_option linter.unusedSectionVars false
 

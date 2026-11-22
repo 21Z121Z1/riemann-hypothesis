@@ -1,5 +1,5 @@
-import Formalism.AdmissibleDesigns.BkLocCol
-import Formalism.AdmissibleDesigns.InvariantsMapEquivariant
+import Formalism.AdmissibleDesigns.Bundle0004
+import Formalism.AdmissibleDesigns.Bundle0008
 import Formalism.AdmissibleDesigns.RankReductionIdempotentOne
 import Formalism.AdmissibleDesigns.CoboundaryMemFiniteClasses
 import Formalism.AdmissibleDesigns.FgTopContinuousLinearMap

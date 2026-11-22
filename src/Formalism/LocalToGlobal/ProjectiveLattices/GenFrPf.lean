@@ -1,6 +1,6 @@
 import Formalism.LocalToGlobal.ProjectiveLattices.IsGenFrGenFr
-import Formalism.LocalToGlobal.ProjectiveLattices.GenFrPfB
-import Formalism.LocalToGlobal.ProjectiveLattices.GenFrPfS
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0021
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0025
 
 set_option autoImplicit false
 

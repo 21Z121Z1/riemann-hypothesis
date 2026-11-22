@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.JetGauges.ThetaSpanAdjoint
+import Development.AbelianVarietyTheory.BlockTheory.JetGauges.Bundle0009
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsAdelicUnitaryTranslateStandardLattice
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsTautologicalMarking
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0037
 
 set_option autoImplicit false
 

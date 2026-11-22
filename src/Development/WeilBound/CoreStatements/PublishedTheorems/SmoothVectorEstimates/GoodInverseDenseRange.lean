@@ -1,5 +1,5 @@
 import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.WhittakerVanishingImpliesZero
-import GroundTheory.GlobalFields.Adele.WeakApprox
+import GroundTheory.GlobalFields.Adele.Bundle0001
 
 noncomputable section
 

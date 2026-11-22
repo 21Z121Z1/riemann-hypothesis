@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.CoeffIdentitySelfConjOfTwo
+import Formalism.SharpRestriction.GrowthBounds.Bundle0005
 
 noncomputable section
 

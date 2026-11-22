@@ -1,8 +1,8 @@
 import Mathlib
 import Development.WeilBound.ThetaLifts.FrameEstimates.SquareIntegrableWeilRange
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FinPartIdemMulMemIff
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyConstantAddChar
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalComponentsNontrivialAdelicCharacter
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0327
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0227
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0241
 
 open NumberField IsDedekindDomain MeasureTheory Matrix Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.WeilM GlobalTheory.AdelicU Filter Topology
 open GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels (pure tens SInf evI At Rest Acts piW IsStd)

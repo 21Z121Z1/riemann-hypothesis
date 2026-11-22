@@ -2,7 +2,7 @@ import Mathlib
 import GroundTheory.ProfiniteCohomology.PoitouTate.RealLocal
 import GroundTheory.ProfiniteCohomology.PoitouTate.RealCup
 import GroundTheory.ProfiniteCohomology.PoitouTate.PoitouTateNineTermGs
-import GroundTheory.ProfiniteCohomology.Colimit
+import GroundTheory.ProfiniteCohomology.Bundle0005
 set_option maxSynthPendingDepth 1
 
 noncomputable section

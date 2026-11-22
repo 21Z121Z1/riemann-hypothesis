@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PairInfApply
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0176
 open MeasureTheory
 
 noncomputable section

@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
-import Formalism.LocalToGlobal.BesselHermitianTheta.TiedType
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
-import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.IsKStableOnKFiniteVectors
+import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0021
 
 noncomputable section
 

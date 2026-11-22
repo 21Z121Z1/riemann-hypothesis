@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AutomorphicArithmetic.LocalEmbeddings.StageGeoDefs
-import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
-import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.OffSmall
-import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.FunKit
+import Development.AutomorphicArithmetic.LocalEmbeddings.Bundle0002
+import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0004
+import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.Bundle0004
+import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.Bundle0001
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links Formalism.L2.Theta IsDedekindDomain NumberField
 open GlobalTheory.ChiGrid GlobalTheory.FunObj GlobalTheory.FunObj.SqNum GlobalTheory.RowTest GlobalTheory.SqTop

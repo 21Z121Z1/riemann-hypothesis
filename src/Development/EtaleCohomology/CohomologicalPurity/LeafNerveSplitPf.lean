@@ -1,4 +1,4 @@
-import Development.EtaleCohomology.CohomologicalPurity.LeafTailNervePf
+import Development.EtaleCohomology.CohomologicalPurity.Bundle0025
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC

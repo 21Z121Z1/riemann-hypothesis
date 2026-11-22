@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.ConjAction
+import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Bundle0003
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.ProfCoh

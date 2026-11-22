@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ColInst
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ColRecCEvBijective
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NuRowSuccEqWt
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0511
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0108
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaDistributionUnfolded
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OrdSubDetSubStdL
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0151
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.H90USurjective
 
 noncomputable section

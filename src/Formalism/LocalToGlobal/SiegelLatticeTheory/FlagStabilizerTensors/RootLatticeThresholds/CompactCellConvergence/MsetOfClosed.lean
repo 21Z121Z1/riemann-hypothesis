@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusCoefficientMemLp.SigmaFiniteAmplitudes.RStabInv
+import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusCoefficientMemLp.SigmaFiniteAmplitudes.Bundle0001
 import Formalism.PeriodIntegrals.ContinuousExpLie
 
 open MeasureTheory Matrix

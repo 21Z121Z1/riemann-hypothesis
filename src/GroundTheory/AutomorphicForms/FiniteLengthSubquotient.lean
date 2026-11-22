@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.FiniteLengthLattice
+import GroundTheory.AutomorphicForms.Bundle0002
 import GroundTheory.AutomorphicForms.JacquetAdmissible
 set_option maxSynthPendingDepth 1
 

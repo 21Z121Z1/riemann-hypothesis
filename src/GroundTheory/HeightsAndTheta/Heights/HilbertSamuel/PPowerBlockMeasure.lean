@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsPowerBlockMeasure
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsPowerBlockPointNorm
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsPowerBlockOldPartSurj
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsPrimeZariskiDense
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0074
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0083
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0082
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0009
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

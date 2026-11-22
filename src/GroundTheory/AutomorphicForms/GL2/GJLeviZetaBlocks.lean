@@ -1,7 +1,6 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.GL2.GJZetaDefs
+import GroundTheory.AutomorphicForms.GL2.Bundle0002
 import GroundTheory.AutomorphicForms.GL2.ExistsEqPowMulOfValuationLe
-import GroundTheory.AutomorphicForms.GL2.GJLeviSupport
 import GroundTheory.AutomorphicForms.LeviStagesProduct
 import GroundTheory.LocalFields.ExistsUnitFiltrationUnitsLeRangeNormUnits
 set_option maxSynthPendingDepth 1

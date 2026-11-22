@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.PeriodIntegrals.SqfLab
-import Formalism.PeriodIntegrals.SqfDivDeg
+import Formalism.PeriodIntegrals.Bundle0010
+import Formalism.PeriodIntegrals.Bundle0015
 
 open Polynomial
 

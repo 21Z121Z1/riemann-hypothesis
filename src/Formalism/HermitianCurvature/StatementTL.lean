@@ -1,5 +1,5 @@
 import Formalism.HermitianCurvature.RealInputsClosedAdmissibleSettings
-import Formalism.HermitianCurvature.FrameExists2
+import Formalism.HermitianCurvature.Bundle0006
 
 namespace Formalism.FourierDecayAlt.TL
 

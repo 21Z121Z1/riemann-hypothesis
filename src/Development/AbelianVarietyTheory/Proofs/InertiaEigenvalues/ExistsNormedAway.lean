@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ConvZero
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0004
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowMulMemLatIff
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodOfComplete
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0250
 
 namespace GlobalTheory.AwayNorm
 

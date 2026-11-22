@@ -1,5 +1,5 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.PsiCStarMul
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.SliceContOn
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0171
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0188
 
 open Matrix MeasureTheory Formalism.REAL Formalism.QuantumDeterminants Formalism.FourierDecayAlt Formalism.FourierDecayAlt.U
 

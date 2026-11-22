@@ -1,4 +1,4 @@
-import Formalism.FormalDegreeBessel.HolDimLowK
+import Formalism.FormalDegreeBessel.Bundle0002
 import Formalism.FormalDegreeBessel.FinalDS
 
 open Finset

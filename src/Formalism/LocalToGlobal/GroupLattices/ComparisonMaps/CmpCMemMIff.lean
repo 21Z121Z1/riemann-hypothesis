@@ -1,6 +1,6 @@
-import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.CmpCMemFunMod
+import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0004
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.RecThm
-import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.SpanImageOfSurj
+import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0009
 
 noncomputable section
 

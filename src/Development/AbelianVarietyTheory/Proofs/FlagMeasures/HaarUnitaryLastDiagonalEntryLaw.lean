@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.BlockAnti
-import Formalism.PeriodIntegrals.QuotInv
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0007
+import Formalism.PeriodIntegrals.Bundle0008
 import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
 import Formalism.LocalRingCardinality.DataCD
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUnitaryMulVecEqOfFormEq
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0006
 
 open MeasureTheory Matrix Filter Topology Formalism.QuantumDeterminants Formalism.MainNotions.S GlobalTheory.SgInf GlobalTheory.Amp
 open scoped InnerProductSpace ENNReal

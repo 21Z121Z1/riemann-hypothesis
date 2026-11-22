@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Langlands
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.DepthZeroTypeInertia
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0024
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0014
 
 noncomputable section
 

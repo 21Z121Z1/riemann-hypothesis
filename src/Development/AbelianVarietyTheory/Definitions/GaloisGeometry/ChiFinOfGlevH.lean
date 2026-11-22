@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.MemberChainFormsLevelPrimeEqMember
-import Formalism.LocalToGlobal.HermitianForms.DefsGH
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.GlintPrincRelIndexNeZero
-import Formalism.LocalToGlobal.GroupLattices.LevelCharts.FinIdx
-import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.NatActRVtupR
+import Formalism.LocalToGlobal.HermitianForms.Bundle0003
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0002
+import Formalism.LocalToGlobal.GroupLattices.LevelCharts.Bundle0006
+import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0003
 
 noncomputable section
 

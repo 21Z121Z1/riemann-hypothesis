@@ -1,4 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.ExponentConditionNeg
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.Bundle0005
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.RhoMulStar
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.RhoSqNonneg
 

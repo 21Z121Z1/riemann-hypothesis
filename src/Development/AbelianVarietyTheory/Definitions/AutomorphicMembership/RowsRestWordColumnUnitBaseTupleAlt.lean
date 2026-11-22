@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StableIffCarrierEq
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.AssembleLattice
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SemilinearBasisImageIndepOfBasis
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0103
 import Formalism.LocalRingCardinality.DataIdx
 
 noncomputable section

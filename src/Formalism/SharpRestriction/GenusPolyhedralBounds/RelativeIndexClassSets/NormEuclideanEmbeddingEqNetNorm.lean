@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.WeightedPrimeSumBound
-import Formalism.LocalToGlobal.ProjectiveLattices.ExtendedPointBaseChange
+import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0006
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0022
 
 noncomputable section
 

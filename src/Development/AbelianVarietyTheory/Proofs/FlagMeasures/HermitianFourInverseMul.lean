@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.FractionFieldToGenericStalkAlgebraMapEq
-import Development.AbelianVarietyTheory.Definitions.Foundations.IsHermND
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsIntegralIff
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementReferenceCompactSubgroup
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0001
 
 noncomputable section
 open ValuativeRel Formalism.MainNotions.S.Loc

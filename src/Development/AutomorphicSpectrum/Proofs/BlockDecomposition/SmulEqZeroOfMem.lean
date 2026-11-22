@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubPairRight
-import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ExistsHomLocBijectiveGrSum
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0289
+import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0017
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFinsetSum
 
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory GlobalTheory.AbLaw PositivityTheory.FormalThickening

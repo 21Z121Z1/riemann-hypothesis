@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.PointsPropertyOfD7
-import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.LemmaOneEightOfPolarisation
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.Bundle0004
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.Bundle0002
 
 noncomputable section
 

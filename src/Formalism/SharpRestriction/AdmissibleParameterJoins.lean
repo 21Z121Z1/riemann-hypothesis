@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GlobalTheoremInputs
+import Formalism.SharpRestriction.Bundle0002
 
 namespace Formalism.MainNotions
 

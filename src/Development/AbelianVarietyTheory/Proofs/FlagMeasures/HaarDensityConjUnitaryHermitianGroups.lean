@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.BlockAnti
-import Formalism.PeriodIntegrals.QuotInv
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0007
+import Formalism.PeriodIntegrals.Bundle0008
 import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
 import Formalism.LocalRingCardinality.DataCD
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ClosedMatrixSubgroupTheoremStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DensityInChartStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0149
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0223
 
 noncomputable section
 

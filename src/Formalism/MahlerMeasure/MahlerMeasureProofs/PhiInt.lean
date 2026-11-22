@@ -1,4 +1,4 @@
-import Formalism.MahlerMeasure.IsIntegral
+import Formalism.MahlerMeasure.Bundle0003
 
 namespace Formalism.GM.M.PhiIntegrality
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.CoPtMu
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
 
 noncomputable section
 

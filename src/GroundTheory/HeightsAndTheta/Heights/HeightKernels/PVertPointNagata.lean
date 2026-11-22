@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsVertPointNagata
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PVertPointMultChart
-import GroundTheory.HeightsAndTheta.Heights.Intersections.PLocRingPow
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0052
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0026
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

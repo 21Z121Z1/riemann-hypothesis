@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormDwLeSobNorm
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLocalLog
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsClosedDerivativeFamiliesModerateGrowthStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0237
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0247
 
 noncomputable section
 

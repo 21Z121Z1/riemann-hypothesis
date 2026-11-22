@@ -1,8 +1,8 @@
 import Mathlib
-import ReciprocityTheory.DualLattices.CotangentSurjective
-import ReciprocityTheory.DualLattices.CyclicRecursionStatement
+import ReciprocityTheory.DualLattices.Bundle0005
+import ReciprocityTheory.DualLattices.Bundle0001
 import Development.AbelianVarietyTheory.Definitions.Divisors.XiMulNu
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FontaineAinfLocalDomainXiAdicOrderStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0432
 
 open ReciprocityTheory.PGsh.Up GlobalTheory.Sandwich Matrix
 

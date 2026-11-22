@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.WeierUnif
+import Formalism.PeriodIntegrals.Bundle0016
 
 noncomputable section
 

@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.StatementD
-import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.OrthogonalGaussModels.ThmBGaussOrthOf
+import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.Bundle0004
+import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.OrthogonalGaussModels.Bundle0002
 
 noncomputable section
 open scoped BigOperators

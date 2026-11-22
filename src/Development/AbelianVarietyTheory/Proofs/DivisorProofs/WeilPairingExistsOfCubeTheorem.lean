@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasLatticesComplete
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsUniquePairsToTower
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CubeTheorem
-import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CubWeilOneLeft
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3398
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0030
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0011
+import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0038
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.WeilIsValueEq
 
 set_option autoImplicit false

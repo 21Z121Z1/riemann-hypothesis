@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PerpEqPerpNb
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0089
 
 open scoped BigOperators
 

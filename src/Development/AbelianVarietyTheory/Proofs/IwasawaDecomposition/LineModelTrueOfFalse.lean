@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasPRatio
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0617
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MultiplicationLatticeSecond
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalSystemModelMap
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsSMulRegularNatCast
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsProperToroidalModelStructureMap
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RatioAgreeOnOverlapStatement
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0038
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0620
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0748
 
 local macro "opens_le_auto" : tactic => `(tactic| (refine SetLike.le_def.2 fun z hz => ?_; simp only [TopologicalSpace.Opens.mem_inf] at hz ⊢; tauto))
 

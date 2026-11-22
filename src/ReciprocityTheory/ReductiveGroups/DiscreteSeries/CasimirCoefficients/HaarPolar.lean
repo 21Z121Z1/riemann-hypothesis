@@ -1,8 +1,7 @@
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.IsClosedKset
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.KFacts
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.IntMuCD
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.JacBound
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.PolarHaar
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0006
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0014
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.ThetaCoefficientMapEq
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IsCplAtSelf
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0003
 
 noncomputable section
 

@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullRankSB
-import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.BernsteinUnitaryProductIrreducible
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0296
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0001
 
 noncomputable section
 

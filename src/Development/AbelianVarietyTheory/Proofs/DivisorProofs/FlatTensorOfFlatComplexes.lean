@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
-import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocForallFinset
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0009
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0008
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0356
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry Opposite CochainComplex CochainComplex.HomComplex GlobalTheory.EtC

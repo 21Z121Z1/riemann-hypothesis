@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdMinorsMemInv
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.CBinet
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0570
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.Bundle0002
 open Classical
 
 noncomputable section

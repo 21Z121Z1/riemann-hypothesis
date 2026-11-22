@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsHeckeMapLevRefl
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ForgetIsHeckeOne
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelPosOfCoprime
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3700
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0414
 
 set_option autoImplicit false
 

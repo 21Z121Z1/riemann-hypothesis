@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.RootWeights.CyclicSubmoduleIsSubrepresentation
+import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0005
 
 noncomputable section
 

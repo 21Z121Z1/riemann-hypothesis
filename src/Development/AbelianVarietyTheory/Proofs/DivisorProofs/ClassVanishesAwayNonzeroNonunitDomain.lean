@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AwayHomCompAlgebraMap
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCohomologyTwistedFilteredColimitContinuityStatement
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0009
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0715
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC GlobalTheory.AffineCurveNbhd

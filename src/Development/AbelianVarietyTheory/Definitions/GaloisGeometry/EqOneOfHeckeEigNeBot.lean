@@ -1,11 +1,11 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGDatumOneOneOne
-import Development.AbelianVarietyTheory.Definitions.Divisors.HxiTZeroComb
-import Development.AbelianVarietyTheory.Definitions.Divisors.NontrivialOfArtinQE
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsHeckeMap
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0031
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0034
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0020
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.OmegaPullOmegaTraceOfSecTraceOne
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsGHeckeMapForget
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.OmegaPullId
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0032
 
 noncomputable section
 

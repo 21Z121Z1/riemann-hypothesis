@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.ArithmeticCylinders
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LabelDatum
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MackeyFormulaHarishChandraRestrictionInductionStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraRestrictionTwoBlockCuspidalEqZeroStatement
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0006
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0319
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0568
 
 noncomputable section
 

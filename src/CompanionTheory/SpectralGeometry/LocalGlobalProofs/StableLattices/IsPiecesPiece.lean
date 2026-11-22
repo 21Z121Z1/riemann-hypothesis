@@ -1,6 +1,6 @@
 import Mathlib
 import CompanionTheory.RealGroups.UnitaryAdmissibility.ArchimedeanUnitaryDual.StSandwich
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.IsCongIdealTwoTorsion
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0002
 
 open CompanionTheory.Rg.FlB
 

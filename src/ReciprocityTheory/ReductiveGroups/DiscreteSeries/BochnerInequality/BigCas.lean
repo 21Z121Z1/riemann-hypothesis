@@ -1,5 +1,5 @@
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.BigRep
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.BigCasA
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.Bundle0002
 
 noncomputable section
 

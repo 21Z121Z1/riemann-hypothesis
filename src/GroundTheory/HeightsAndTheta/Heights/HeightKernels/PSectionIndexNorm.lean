@@ -1,8 +1,8 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsPointVertRSteps
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsInvertibleIdealIndex
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualLineIndex
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PLinesLineDegree
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0005
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0046
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0024
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.FieldChange
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSectionBounded
 set_option maxSynthPendingDepth 1

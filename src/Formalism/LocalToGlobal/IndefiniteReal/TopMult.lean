@@ -1,8 +1,8 @@
 import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
-import Formalism.LocalToGlobal.IndefiniteReal.IsMultMapUnivZero
-import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.GinfCSecondCountable
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0025
+import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0005
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.ContinuousSplitInv
-import Formalism.LocalToGlobal.BesselHermitianTheta.TiedDef
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0005
 
 noncomputable section
 

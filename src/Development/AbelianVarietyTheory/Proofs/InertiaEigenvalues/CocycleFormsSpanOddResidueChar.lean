@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsDualDualRep
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TameInertiaElementActsByScalar
-import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.CyclotomicTotient.SkolemNoether
-import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.UnramifiedNoJump
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0011
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0291
+import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.CyclotomicTotient.Bundle0001
+import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0009
 
 noncomputable section
 

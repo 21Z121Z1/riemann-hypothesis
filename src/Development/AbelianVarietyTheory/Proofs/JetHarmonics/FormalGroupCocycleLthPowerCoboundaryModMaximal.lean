@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Jets.IsSelfOf
+import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0004
 import Development.AbelianVarietyTheory.Definitions.Jets.TwoPlaces
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.GaugeBiadditiveSymmAdjointIntegralEnd
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.PderivCoeffOptionEquivLeft
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0043
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsNotMemForallMem
 
 set_option autoImplicit false

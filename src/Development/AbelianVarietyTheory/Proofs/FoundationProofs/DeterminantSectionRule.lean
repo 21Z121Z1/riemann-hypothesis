@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FibreIff
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0368
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.LieCombBaseChange
 
 set_option autoImplicit false

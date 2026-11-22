@@ -1,6 +1,5 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.NormDetDiagUnitsPosRealToUnits
-import GroundTheory.AutomorphicForms.ReductionSplitting
+import GroundTheory.AutomorphicForms.Bundle0019
 import GroundTheory.AutomorphicForms.ReductionMeasure
 import GroundTheory.AutomorphicForms.ReductionLocalVolume
 

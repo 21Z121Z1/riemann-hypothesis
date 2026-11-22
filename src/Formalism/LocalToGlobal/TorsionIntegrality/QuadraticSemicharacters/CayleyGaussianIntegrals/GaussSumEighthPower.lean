@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.UnitaryConstant
+import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.Bundle0001
 
 noncomputable section
 open scoped BigOperators

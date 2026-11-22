@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.RangeShape
-import Development.AbelianVarietyTheory.Definitions.Divisors.HasTypeVec
-import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ConstantTermVanishing
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0053
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0026
 
 section
 noncomputable section

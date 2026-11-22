@@ -1,6 +1,6 @@
 import Formalism.WachLatticeTwists.HodgeTateChains.FrobeniusPowerCongruence
-import Formalism.WachLatticeTwists.HodgeTateChains.HodgeTateFiltrations.H2KilledByTateDuality
-import Formalism.WachLatticeTwists.HodgeTateChains.HodgeTateFiltrations.FiltPow
+import Formalism.WachLatticeTwists.HodgeTateChains.HodgeTateFiltrations.Bundle0003
+import Formalism.WachLatticeTwists.HodgeTateChains.HodgeTateFiltrations.Bundle0002
 
 noncomputable section
 

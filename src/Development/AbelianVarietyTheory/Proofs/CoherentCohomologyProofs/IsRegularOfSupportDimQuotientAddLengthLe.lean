@@ -1,7 +1,7 @@
 import Mathlib
 import ReciprocityTheory.CommutativeAlgebra.ChainConnInDim
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.IsWeaklyRegularIffIsQuasiRegularSeqOfIsLocalRing
-import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ExistsIsRegularQuotSMulTop
+import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0002
 
 open RingTheory.Sequence IsLocalRing TensorProduct
 

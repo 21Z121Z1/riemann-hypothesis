@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceOpen
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0282
 open NumberField IsDedekindDomain GlobalTheory.QSA
 open scoped Quaternion Topology RestrictedProduct
 

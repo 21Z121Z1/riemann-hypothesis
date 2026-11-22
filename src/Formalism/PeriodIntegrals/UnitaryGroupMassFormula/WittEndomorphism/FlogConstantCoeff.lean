@@ -1,9 +1,8 @@
-import Formalism.PeriodIntegrals.W2pair
-import Formalism.PeriodIntegrals.WfRing
-import Formalism.PeriodIntegrals.WfSubst
-import Formalism.PeriodIntegrals.InvSerSub
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExponentialIntegrality.StepIII
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExponentialIntegrality.RootsOfUnityRingLeWittIntegers
+import Formalism.PeriodIntegrals.Bundle0016
+import Formalism.PeriodIntegrals.Bundle0017
+import Formalism.PeriodIntegrals.Bundle0015
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExponentialIntegrality.Bundle0002
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExponentialIntegrality.Bundle0001
 
 noncomputable section
 

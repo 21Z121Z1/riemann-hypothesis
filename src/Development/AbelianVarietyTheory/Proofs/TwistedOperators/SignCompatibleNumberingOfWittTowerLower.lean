@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.L2UnitaryRepresentationData
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsFundamentalDomainOfHaar
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSignatureFromBlocks
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FrameExistsSignCompat
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0200
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsTopologicalRingAE
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.S Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Datum

@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.LevGap
-import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GapAtLeast
+import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.Bundle0001
 import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.ClassCountStmt
 
 noncomputable section

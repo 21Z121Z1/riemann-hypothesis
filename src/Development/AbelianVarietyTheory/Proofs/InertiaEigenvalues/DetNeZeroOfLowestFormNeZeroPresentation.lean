@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.VecPairApply
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DetMemSpanAdjugate
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0345
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0007
 
 open Matrix GlobalTheory.NewPrime
 

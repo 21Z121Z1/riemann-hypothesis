@@ -1,8 +1,7 @@
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.HodgeSurjectivity.TowerRallisLemma
-import Development.WeilBound.CoreStatements.PadicHodgeComparison.HodgeSurjectivity.CupSurjectivity.OntoLA
-import Development.WeilBound.CoreStatements.PadicHodgeComparison.HodgeSurjectivity.CupSurjectivity.SumCoordBasisDual
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormalProjectiveModel
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsPrimitiveCl
+import Development.WeilBound.CoreStatements.PadicHodgeComparison.HodgeSurjectivity.CupSurjectivity.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1031
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0188
 
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false

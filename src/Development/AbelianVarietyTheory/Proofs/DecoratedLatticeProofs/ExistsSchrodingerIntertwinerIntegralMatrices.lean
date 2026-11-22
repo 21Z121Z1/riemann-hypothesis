@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.MatrixMeasurableSpace
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.LinearIndependentWave
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MatrixIntegersModNatFinite
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsNeZeroOfEventually
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0008
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0007
 open ValuativeRel GlobalTheory.SplitWeil Matrix
 
 noncomputable section

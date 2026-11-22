@@ -1,13 +1,12 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.BudgetAt
-import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
-import Development.AbelianVarietyTheory.Definitions.Divisors.EightDvdNCol
-import Development.AbelianVarietyTheory.Definitions.Divisors.QuoIff
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0077
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0072
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0068
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightAbsEntrySumNonneg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumAbsExOfLe
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImageHeightAddLogNonneg
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2508
 import Development.WeilBound.CoreStatements.NefModelVolumes.VolLLe
-import Formalism.LocalRingCardinality.HeightBoundGeFourthPowerRank
+import Formalism.LocalRingCardinality.Bundle0005
 import Formalism.FrobeniusOrbits.RealSubfieldLeCompositum
 
 set_option autoImplicit false

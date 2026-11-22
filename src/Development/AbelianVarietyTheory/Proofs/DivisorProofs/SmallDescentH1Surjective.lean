@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsKSValueOneOfRetraction
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDPMorphismOfComp
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0670
 
 set_option autoImplicit false
 

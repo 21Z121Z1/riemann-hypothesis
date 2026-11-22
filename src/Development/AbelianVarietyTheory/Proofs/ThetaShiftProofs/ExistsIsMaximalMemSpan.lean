@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsIsLZBasis
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.HyperbolicFlagDataBasePoint
-import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IntegerRingSmulMemSubmodule
+import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0011
 
 namespace GlobalTheory.MaxCusp
 

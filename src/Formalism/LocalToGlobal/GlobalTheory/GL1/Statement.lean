@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 import Formalism.SharpRestriction.ParConsts
 import Formalism.SharpRestriction.GlobalSchurBounds.CMFieldLemmas
-import Formalism.SatakeDualWeyl.StatementC
+import Formalism.SatakeDualWeyl.Bundle0001
 
 noncomputable section
 

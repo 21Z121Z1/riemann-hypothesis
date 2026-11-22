@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.InertKernelTheory.DefsRepDict
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0012
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.MMRead
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.FormalExponentialAgree
 import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.BinomialSeriesCoefficients.CoeffPowEqZeroOfCc

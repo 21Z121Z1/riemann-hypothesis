@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RationalRootsDef
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RecExGOfRecAtG
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SpreadLamOfLe
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ToMapSurj
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0394
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0388
 
 noncomputable section
 

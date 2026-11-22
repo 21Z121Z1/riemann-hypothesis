@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.StatementH
-import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.PhNormFromDatum
+import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.Bundle0004
 
 noncomputable section
 open scoped BigOperators

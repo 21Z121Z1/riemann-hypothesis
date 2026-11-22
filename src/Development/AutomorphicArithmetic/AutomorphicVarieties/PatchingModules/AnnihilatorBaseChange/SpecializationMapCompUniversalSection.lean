@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.PatchedSupportCompletions
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.UltraDefs
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0010
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.IsWeaklyRegularIffIsQuasiRegularSeqOfIsLocalRing
 
 noncomputable section

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0003
 
 noncomputable section
 

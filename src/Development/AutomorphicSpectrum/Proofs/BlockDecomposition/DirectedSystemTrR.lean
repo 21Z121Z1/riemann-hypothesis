@@ -1,4 +1,4 @@
-import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.WittExactSequences.IsCompl
+import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.WittExactSequences.Bundle0001
 open TensorProduct CrystallineSemistableComparison.D
 open scoped LaurentPolynomial
 

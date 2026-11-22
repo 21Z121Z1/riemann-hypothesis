@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.CuspidalMultiplicityOneTotallyComplex
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.CmBridge
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.IsNormalisedOfIsDiscrete
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0007
 import PositivityTheory.AutomorphicForms.PublishedInputs.CyclicBaseChangeLifts.SplitLift
 import GroundTheory.AutomorphicForms.L2LocalComponents
 

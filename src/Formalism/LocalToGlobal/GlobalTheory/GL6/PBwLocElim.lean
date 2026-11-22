@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.GlobalTheory.GL6.LatticeInclusionOfDecompGlob
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0006
 
 noncomputable section
 

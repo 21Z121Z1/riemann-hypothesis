@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.PeriodIntegrals.IdealLattice
-import Formalism.PeriodIntegrals.AreaLat
+import Formalism.PeriodIntegrals.Bundle0015
+import Formalism.PeriodIntegrals.Bundle0014
 
 open NumberField
 

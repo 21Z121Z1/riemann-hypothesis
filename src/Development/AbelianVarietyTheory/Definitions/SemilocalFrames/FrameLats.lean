@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.InFrameStabilizer
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0001
 
 noncomputable section
 

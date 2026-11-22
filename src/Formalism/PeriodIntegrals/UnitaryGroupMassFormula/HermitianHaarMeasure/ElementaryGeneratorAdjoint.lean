@@ -1,7 +1,7 @@
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HermitianHaarMeasure.Development
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.UnitaryWeylNormalHolds
-import Formalism.FormalDegreeBessel.FinalG
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CartanInvolutionConjTransposeMul
+import Formalism.FormalDegreeBessel.Bundle0002
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0002
 
 open Matrix Finset MeasureTheory Filter Topology
 open scoped ContDiff

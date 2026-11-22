@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.GlobalTheory.SmallShareWeightExists
-import Formalism.SharpRestriction.GlobalSchurBounds.WeightVectorSmallSharesEight
+import Formalism.LocalToGlobal.GlobalTheory.Bundle0004
+import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0003
 import Formalism.LocalToGlobal.GlobalTheory.PowFourLtCeilThresholdPrime
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.DiscriminantSettingSatisfied
 

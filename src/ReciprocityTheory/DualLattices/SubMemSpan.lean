@@ -1,4 +1,4 @@
-import ReciprocityTheory.DualLattices.LinPairStatement
+import ReciprocityTheory.DualLattices.Bundle0015
 import ReciprocityTheory.DualLattices.IsPairingValueAddRight
 
 noncomputable section

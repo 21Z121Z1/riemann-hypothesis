@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.TraceFormulaSpectral
-import GroundTheory.AutomorphicForms.UnitaryRepresentations.ExistsEqAlgebraMapOfIsSelfAdjoint
+import GroundTheory.AutomorphicForms.Bundle0013
+import GroundTheory.AutomorphicForms.UnitaryRepresentations.Bundle0001
 
 open ContinuousLinearMap
 open scoped InnerProductSpace

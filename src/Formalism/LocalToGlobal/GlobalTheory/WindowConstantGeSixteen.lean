@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.GlobalTheory.VandNHcSeqEq
+import Formalism.LocalToGlobal.GlobalTheory.Bundle0002
 
 open NumberField IsDedekindDomain Module
 

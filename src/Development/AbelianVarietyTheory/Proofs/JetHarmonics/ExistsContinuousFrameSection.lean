@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.HermitianCurvature.StatementTBB
+import Formalism.HermitianCurvature.Bundle0007
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.UnipotentCoordinatesMeasurePreserving
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.DensityConstantOfParts
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0125
 
 open Matrix Formalism.REAL Formalism.QuantumDeterminants Formalism.FourierDecayAlt Formalism.FourierDecayAlt.P Formalism.FourierDecayAlt.P.Dx2.DF
 open scoped ComplexConjugate

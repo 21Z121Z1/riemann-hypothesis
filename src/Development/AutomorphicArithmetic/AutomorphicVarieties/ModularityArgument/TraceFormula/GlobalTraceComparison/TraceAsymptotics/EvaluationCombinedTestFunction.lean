@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.SplitLineAlt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StableTwistedOrbitalProduct
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1364
 
 noncomputable section
 

@@ -1,5 +1,5 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutNFDomS
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutNFLeibMain
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0320
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0316
 
 namespace CompanionTheory.NFCpt
 

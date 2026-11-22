@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.Foundations.Convolution.WeightRankUnits.DeltaProdAlt
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EllipticLocalIdentity
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0536
 
 open NumberField IsDedekindDomain Matrix Polynomial Filter GlobalTheory.CuspRep GlobalTheory.PRep Formalism.UG Formalism.BasicNotions GlobalTheory.UnitaryBC Formalism.L2.Host GlobalTheory.BCT
 open scoped Classical TensorProduct

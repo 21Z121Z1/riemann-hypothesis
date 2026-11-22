@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-import Formalism.SharpRestriction.LevelLetterCocycles.UsedLocalConclusion
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NotFullBot
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitSumTensorDualOfCrys
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0006
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0003
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0626
 
 open Formalism.WeaklyAdmissibleFiltrations Formalism.BasicNotions Formalism.BasicNotions.Loc TensorProduct GlobalTheory.NL Formalism.MainNotions.DeltaInvariantLattices GlobalTheory.WachTensor
 

@@ -1,5 +1,5 @@
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsFundOne
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.BlockAnti
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0007
 import Formalism.FlagUnipotentLattices.MemOfOrthogonalAnisotropic
 import Formalism.FormalDegreeBessel.StatementG
 import Formalism.SharpRestriction.CuspSpanNormBounds.FractionFieldToGenericStalkAlgebraMapEq

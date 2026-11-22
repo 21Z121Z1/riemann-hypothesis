@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PairVEqZeroOfMemLieSpan
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0039
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsFiniteQCHomModOfExact
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.EpsZeroCompOfIsTanAtG
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIsoToBidualOfLocalFrames
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AppLESecEpsZeroEpsFn
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentSurjective
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1273
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1319
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1284
 
 set_option autoImplicit false
 

@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsSmoothVector
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.SmoothInExponentialCoordsIffFirstSecondKind
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.HasSmoothLogNearOneOfIsUnitaryLieExpData
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0005
 
 noncomputable section
 

@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.StatementK
+import Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.Bundle0001
 import Formalism.GaussJetBounds.FinalB
 import Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.PairedSquareJets.Hurwitz
 import Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.PairedSquareJets.HurwitzB

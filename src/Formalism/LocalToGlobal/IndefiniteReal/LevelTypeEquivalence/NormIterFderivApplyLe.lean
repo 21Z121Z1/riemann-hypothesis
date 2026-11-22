@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.SobSym
+import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0001
 
 namespace Formalism.IndefR.Eqv
 

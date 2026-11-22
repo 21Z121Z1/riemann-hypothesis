@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTransportF
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdeleJoinZero
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1573
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1558
 
 open scoped TensorProduct Matrix
 open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes

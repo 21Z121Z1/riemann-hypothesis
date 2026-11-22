@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsArith
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsResChiBounds
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.CNormSt
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0027
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.Bundle0015
 import ReciprocityTheory.GeometryOfNumbers.SphericalMonomials.ChiPSt
 set_option maxSynthPendingDepth 1
 

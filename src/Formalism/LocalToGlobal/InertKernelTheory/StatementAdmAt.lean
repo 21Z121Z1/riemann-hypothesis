@@ -1,7 +1,7 @@
-import Formalism.LocalToGlobal.InertKernelTheory.ScalG
-import Formalism.LocalToGlobal.InertKernelTheory.SecondKernelCoupledLastLift
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0015
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0016
 import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.FrecAt
-import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.InvarianceRepresentativesLaw
+import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.Bundle0003
 
 noncomputable section
 

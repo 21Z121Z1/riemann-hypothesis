@@ -1,5 +1,4 @@
-import ReciprocityTheory.Chebotarev.SplitA
-import ReciprocityTheory.Chebotarev.SplitD
+import ReciprocityTheory.Chebotarev.Bundle0005
 
 open NumberField
 

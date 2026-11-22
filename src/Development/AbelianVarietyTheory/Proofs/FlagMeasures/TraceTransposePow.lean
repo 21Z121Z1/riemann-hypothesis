@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ScalarOfMultOne
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0147
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SmoothAddSmul
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.CommuteGelfandInvariantMatrixUnitsOfGlRel
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0008
 
 open MeasureTheory Matrix Finset Formalism.MainNotions.S Formalism.REAL Formalism.QuantumDeterminants GlobalTheory.Count GlobalTheory.Dec
 open scoped InnerProductSpace ComplexOrder

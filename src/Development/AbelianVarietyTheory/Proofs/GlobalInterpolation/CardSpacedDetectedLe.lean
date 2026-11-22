@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.HybridLargeSieve
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.EnormSqLeLintegralDisc
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0052
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0011
 open Complex DirichletCharacter ArithmeticFunction MeasureTheory Filter Topology
 
 namespace GlobalTheory.SpacedDetected

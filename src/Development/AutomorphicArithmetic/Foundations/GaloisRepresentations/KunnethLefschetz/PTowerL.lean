@@ -1,8 +1,8 @@
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.KunnethLefschetz.BasisOne
 import Development.EtaleCohomology.EtaleTrace.LRingPf
-import Development.EtaleCohomology.EtaleTrace.LPdCut
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistCupUnitAndPrimitiveRootClassesStatement
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ProjTrans
+import Development.EtaleCohomology.EtaleTrace.Bundle0007
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0628
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0054
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry GlobalTheory.EtC LateralTheory.EtaleTrace LateralTheory.EtaleTrace.LRingPf

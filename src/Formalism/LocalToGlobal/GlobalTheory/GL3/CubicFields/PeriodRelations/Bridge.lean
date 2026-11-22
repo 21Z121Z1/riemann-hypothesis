@@ -2,10 +2,10 @@ import Mathlib
 import Formalism.SharpRestriction.GlobalSchurBounds.TaylorLogMetric
 import Formalism.LocalToGlobal.GlobalTheory.GL3.Statement
 import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.EpsteinZeta.AreaLatIOfDiscr
-import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.EisensteinSeries.DslopePhiCDifferentiableAt
+import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.EisensteinSeries.Bundle0001
 import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.EisensteinSeries.RemLipTermB
 import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.DifferentIdeal.CoeIdealDifferentNeZero
-import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.DifferentIdeal.AbsNormInvMulDifferent
+import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.DifferentIdeal.Bundle0001
 
 noncomputable section
 

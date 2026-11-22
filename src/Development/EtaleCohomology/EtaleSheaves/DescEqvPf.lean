@@ -1,5 +1,5 @@
-import Development.EtaleCohomology.EtaleSheaves.ClsBiprodEqZero
-import Development.EtaleCohomology.EtaleSheaves.LeafCover2Of
+import Development.EtaleCohomology.EtaleSheaves.Bundle0032
+import Development.EtaleCohomology.EtaleSheaves.Bundle0010
 import Development.EtaleCohomology.EtaleSheaves.LeafKunEmptyPf
 
 noncomputable section

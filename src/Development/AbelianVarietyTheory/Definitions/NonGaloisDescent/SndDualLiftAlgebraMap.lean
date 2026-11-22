@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NormPowLeNormFactorial
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DerivationMemPow
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0006
 
 noncomputable section
 

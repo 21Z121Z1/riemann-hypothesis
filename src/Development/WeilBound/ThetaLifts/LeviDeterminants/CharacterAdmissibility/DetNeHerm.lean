@@ -3,8 +3,8 @@ import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.
 import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.ExistsDoubledUnitaryBlock
 import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.AdelInt
 import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.ExistsAdaptedIndexHermitian
-import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.PlaneAd
-import Development.WeilBound.ThetaLifts.LeviDeterminants.DoubledUnitaryCharacterTrivialOfSiegel
+import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.Bundle0001
+import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0004
 
 noncomputable section
 

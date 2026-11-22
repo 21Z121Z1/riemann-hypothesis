@@ -1,7 +1,7 @@
 import Mathlib
 import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Imports
 import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
-import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.DiscreteSeriesUnitarySmoothBasicStatement
+import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.Bundle0002
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ContinuousMulMt
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.IsDSOfIsDG
 

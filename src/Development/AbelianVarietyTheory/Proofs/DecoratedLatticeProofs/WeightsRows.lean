@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ColHeightSharpWith
-import Development.AbelianVarietyTheory.Definitions.Divisors.FactorBounds
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharacterSumLocalConstantNinth
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0006
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0026
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0796
 
 namespace GlobalTheory.Core.Ht2.StepRowsS
 

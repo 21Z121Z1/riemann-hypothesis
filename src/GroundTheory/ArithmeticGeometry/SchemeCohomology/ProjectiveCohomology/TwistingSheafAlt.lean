@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjectiveCohomology.TwistingSheafCore
-import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjectiveCohomology.IsQuasicoherentTensorOfInvertible
+import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjectiveCohomology.Bundle0001
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Arith.SchemeCoh

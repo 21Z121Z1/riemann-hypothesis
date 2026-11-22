@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ContrFactor
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0002
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsEmbXMul
 open MeasureTheory ValuativeRel Matrix GlobalTheory.SplitWeil GlobalTheory.RootEx GlobalTheory.StepData
 set_option linter.unusedSectionVars false

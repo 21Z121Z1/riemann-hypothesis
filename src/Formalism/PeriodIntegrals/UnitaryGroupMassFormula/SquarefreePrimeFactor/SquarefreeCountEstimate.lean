@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SquarefreePrimeFactor.MonicDegFnNatDegree
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SquarefreePrimeFactor.Bundle0001
 
 open Polynomial
 

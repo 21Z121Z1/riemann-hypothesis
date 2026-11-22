@@ -1,5 +1,4 @@
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZeroWindow.FinsumMemLeFinsumMem
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZeroWindow.Jensen
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZeroWindow.Bundle0001
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZeroWindow.RightOne
 
 namespace PI.ZW

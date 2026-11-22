@@ -1,8 +1,8 @@
 import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.PureSt
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.IndicatorMem
-import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfActs
+import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0003
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfDictAd
-import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfDictMod
+import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0002
 
 noncomputable section
 

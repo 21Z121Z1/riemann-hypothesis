@@ -1,4 +1,4 @@
-import Formalism.CharacterColumnKernels.StatementG
+import Formalism.CharacterColumnKernels.Bundle0002
 import Formalism.CharacterColumnKernels.StatementX
 
 open Finset Classical

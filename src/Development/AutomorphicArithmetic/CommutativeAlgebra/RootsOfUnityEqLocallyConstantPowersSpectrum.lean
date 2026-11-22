@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.GoodRoot
+import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.Bundle0001
 
 noncomputable section
 open IsLocalRing UpperTheory.Et

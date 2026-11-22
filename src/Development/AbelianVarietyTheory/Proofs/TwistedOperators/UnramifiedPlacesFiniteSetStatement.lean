@@ -1,11 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnramifiedPlacesFiniteSet
-import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolMatchFiniteSetVacuum
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaEqB
-import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityUnitary
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityReal
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0808
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1163
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0261
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0054
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0013
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix
 open Formalism.L2.Theta Formalism.L2.DIV Formalism.L2.Indef Formalism.DivisionValues

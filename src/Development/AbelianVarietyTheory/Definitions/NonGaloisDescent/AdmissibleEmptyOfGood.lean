@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsPlaceModelPlaceMap
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaPureTensorO
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsEtaTildeUnramified
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsThetaFunNeZero
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsSelfDualAdelicFrameLevelOne
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCharOfTrace
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1090
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0964
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0252
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0238
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0189
 
 noncomputable section
 

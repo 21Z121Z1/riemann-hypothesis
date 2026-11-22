@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.Divisibility.ClassSumLemmas
+import Formalism.LocalToGlobal.Divisibility.Bundle0001
 
 open Module NumberField IsDedekindDomain
 open scoped Matrix ComplexOrder

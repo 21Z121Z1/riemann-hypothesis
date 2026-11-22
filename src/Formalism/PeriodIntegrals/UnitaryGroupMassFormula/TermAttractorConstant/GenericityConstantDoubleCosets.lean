@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TermAttractorConstant.GeneratorMemLocalLatticeBackward
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TermAttractorConstant.RelevanceConstantDoubleCosets
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TermAttractorConstant.Bundle0002
 
 noncomputable section
 

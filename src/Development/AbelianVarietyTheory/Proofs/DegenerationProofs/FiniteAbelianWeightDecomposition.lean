@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.CharSumInv
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0001
 
 open Module
 open TensorProduct

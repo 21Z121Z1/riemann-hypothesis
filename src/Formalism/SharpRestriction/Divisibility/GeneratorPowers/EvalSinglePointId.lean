@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CIndFrFix
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpTiePf
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.JetSubstPSTrunc
 

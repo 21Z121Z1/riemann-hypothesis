@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.LocalToGlobal.UnitaryNorms.CharTied
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PlacesBelowSplitCoprimeConductorOfAdmissible
+import Formalism.LocalToGlobal.UnitaryNorms.Bundle0006
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0198
 
 noncomputable section
 

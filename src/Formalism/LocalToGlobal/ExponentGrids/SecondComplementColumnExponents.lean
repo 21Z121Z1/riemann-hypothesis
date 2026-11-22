@@ -1,7 +1,6 @@
 import Mathlib
-import Formalism.QuotientMetricDivisors.Complement2Normaliser
-import Formalism.TranslateCocycles.Statement
-import Formalism.TranslateCocycles.StatementHC
+import Formalism.QuotientMetricDivisors.Bundle0002
+import Formalism.TranslateCocycles.Bundle0001
 import Formalism.TranslateCocycles.StatementNet
 
 open Module NumberField IsDedekindDomain Finset

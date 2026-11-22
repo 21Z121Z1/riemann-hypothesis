@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.IndefiniteReal.ExistsChosenExtremalVector
-import Formalism.LocalToGlobal.ProjectiveLattices.FamilyUniformisationBasePointOrthogonalBis
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0032
 
 noncomputable section
 

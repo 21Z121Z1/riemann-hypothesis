@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUniqueZpowMulAppLE
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0064
 
 open CategoryTheory Limits AlgebraicGeometry TopologicalSpace Opposite
 

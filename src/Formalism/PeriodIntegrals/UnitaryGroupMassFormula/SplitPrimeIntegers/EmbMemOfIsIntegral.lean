@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.SplitIntLoc
+import Formalism.PeriodIntegrals.Bundle0010
 
 open NumberField IsDedekindDomain IsDedekindDomain.HeightOneSpectrum
 open scoped TensorProduct

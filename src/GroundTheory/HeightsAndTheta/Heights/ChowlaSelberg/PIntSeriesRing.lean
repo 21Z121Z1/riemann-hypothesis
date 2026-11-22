@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.IntSeries
-import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.IntSeriesRing
+import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.Bundle0001
+import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.Bundle0002
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.ChowlaSelberg

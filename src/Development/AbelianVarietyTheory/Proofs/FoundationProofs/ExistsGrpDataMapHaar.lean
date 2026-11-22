@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.LocalToGlobal.BesselHermitianTheta.AllTied
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.NotTrivialAndTwist
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.BlockOrderedSquareIntegrable
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.HaarUpqEqOfOmegaDensity
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0025
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0026
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.L2.Theta MeasureTheory Matrix
 open scoped NNReal

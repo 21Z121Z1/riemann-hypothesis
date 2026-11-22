@@ -1,4 +1,4 @@
-import Development.EtaleCohomology.CohomologicalPurity.LeafExcSheafCut
+import Development.EtaleCohomology.CohomologicalPurity.Bundle0006
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry Opposite

@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.OrderCyclic
 import GroundTheory.TateCohomology.InfRes
-import GroundTheory.LocalFields.RamificationStructure
+import GroundTheory.LocalFields.Bundle0007
 import GroundTheory.LocalFields.IntermediateField
 set_option maxSynthPendingDepth 1
 

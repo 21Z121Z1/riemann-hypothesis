@@ -1,4 +1,4 @@
-import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.InitPartZeroXMul
+import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.Bundle0002
 
 namespace Formalism.InvariantFactorPaths.L4
 

@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsNontrivialDerivative
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalIsGeneric
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0465
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0506
 
 open GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.LocGL GlobalTheory.BZMir
 

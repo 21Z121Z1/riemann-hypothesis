@@ -1,6 +1,5 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.StatementK
-import Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.StatementV
-import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.StatementN
+import Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.Bundle0001
+import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.Bundle0002
 
 noncomputable section
 open scoped BigOperators

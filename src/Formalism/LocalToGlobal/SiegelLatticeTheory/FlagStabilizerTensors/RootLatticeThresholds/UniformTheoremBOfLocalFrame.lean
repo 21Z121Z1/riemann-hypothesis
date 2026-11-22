@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.BesselExpansion
-import Formalism.SharpRestriction.CuspSpanNormBounds.OnePlaceExpansion
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0017
 
 noncomputable section
 

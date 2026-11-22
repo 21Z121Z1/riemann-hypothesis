@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsLastRest
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0053
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ExistsSumEqOneOfMulEqOne
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PGraphClosedLocal
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0023
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PAmpleAffineGen
 
 namespace PositivityTheory.HtPt.KtwS.SectionsOverLocalization

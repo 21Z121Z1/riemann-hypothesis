@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.DistinguishedUnitIdeals.CoprimeProd
-import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.GroundTheory
+import Formalism.DistinguishedUnitIdeals.Bundle0001
+import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.Bundle0001
 
 noncomputable section
 

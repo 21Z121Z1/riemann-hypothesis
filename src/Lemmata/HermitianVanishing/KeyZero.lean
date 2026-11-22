@@ -1,11 +1,10 @@
 import Mathlib
-import Formalism.QuotientMetricDivisors.ClassSumDualLe
-import Formalism.QuotientMetricDivisors.ProdFormula
-import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ValBasic
-import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ProdFormula
-import Formalism.HermitianLattices.HermitianLatticesProofs.LocDual
+import Formalism.QuotientMetricDivisors.Bundle0001
+import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0003
+import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0002
+import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0003
 import Formalism.HermitianLattices.HermitianLatticesProofs.DualLattice
-import Formalism.HermitianLattices.HermitianLatticesProofs.DualBasic
+import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0001
 import Formalism.HermitianLattices.HermitianLatticesProofs.LocBasic
 
 namespace Bl.HermitianVanishing

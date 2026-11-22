@@ -1,5 +1,5 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutNFApxDom
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutNFApxDomThQ
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0307
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0071
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.DominatedL2OperatorBoundHolds
 
 namespace Formalism.FourierDecayAlt.P.CutBP

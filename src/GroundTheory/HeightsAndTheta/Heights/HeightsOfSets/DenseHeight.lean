@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.FiniteSupportHeight
+import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0002
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

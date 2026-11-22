@@ -5,7 +5,7 @@ import Formalism.LocalRingCardinality.DataDIV
 import Formalism.DegreeFormula.FlagDegFormula
 import Formalism.SharpRestriction.Divisibility.LatticeTransfer
 import Formalism.SharpRestriction.Divisibility.WeightThresholdDefs
-import Formalism.SharpRestriction.Divisibility.PrinLevClass
+import Formalism.SharpRestriction.Divisibility.Bundle0001
 import Formalism.SharpRestriction.ParamsHeightRankConstant
 
 noncomputable section

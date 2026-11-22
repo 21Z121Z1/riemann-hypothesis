@@ -1,8 +1,8 @@
 import Mathlib
 import GroundTheory.GlobalFields.TateThesis.AdelicCharLocal
-import GroundTheory.GlobalFields.TateThesis.TracePairing
-import GroundTheory.GlobalFields.TateThesis.ArchChars
-import GroundTheory.GlobalFields.TateThesis.NoSmallSubgroups
+import GroundTheory.GlobalFields.TateThesis.Bundle0003
+import GroundTheory.GlobalFields.TateThesis.Bundle0001
+import GroundTheory.GlobalFields.TateThesis.Bundle0002
 import GroundTheory.GlobalFields.Adele.IdeleBasis
 import GroundTheory.GlobalFields.Adele.Compact
 

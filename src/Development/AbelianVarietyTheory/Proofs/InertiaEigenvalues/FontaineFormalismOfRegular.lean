@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FontaineFormalismTensorEquiv
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.OneSubPhiOntoOfFilZero
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFinExt
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BdRPlusIsDomainBdRIsField
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LinearIndepOnOfFixed
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0280
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0074
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0031
 
 noncomputable section
 

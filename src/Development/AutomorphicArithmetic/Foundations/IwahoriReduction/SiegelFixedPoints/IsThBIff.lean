@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsZetaTW
-import Development.AbelianVarietyTheory.Definitions.Foundations.ApplyEqOfMemAdjoin
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0011
 
 noncomputable section
 

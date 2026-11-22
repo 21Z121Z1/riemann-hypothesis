@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NormalFormDualOrthogonalLast
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsNormalFormStabilizerMeasure
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsFundOne
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsFundIpow
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsSmulMemOfMemSpanFraction
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0009
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0190
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0015
 open NumberField MeasureTheory Matrix Formalism.HermitianLatticeCounting.S6 GlobalTheory.HermLat GlobalTheory.DegCnt Formalism.QuantumDeterminants Formalism.MainNotions.S GlobalTheory.SgInf GlobalTheory.Amp GlobalTheory.DegVol
 open scoped Pointwise ENNReal Classical nonZeroDivisors
 

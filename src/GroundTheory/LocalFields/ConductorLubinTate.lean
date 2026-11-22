@@ -1,12 +1,12 @@
 import Mathlib
-import GroundTheory.LocalFields.ConductorFormalGroup
+import GroundTheory.LocalFields.Bundle0011
 import GroundTheory.LocalFields.LubinTatePrimitive
 import GroundTheory.LocalFields.LubinTateTowerMaps
 import GroundTheory.LocalFields.LubinTateLimitGalois
 import GroundTheory.LocalFields.SeparableClosureValuation
-import GroundTheory.LocalFields.Monogenic
+import GroundTheory.LocalFields.Bundle0006
 import GroundTheory.LocalFields.Different
-import GroundTheory.LocalFields.UpperNumbering
+import GroundTheory.LocalFields.Bundle0010
 
 noncomputable section
 

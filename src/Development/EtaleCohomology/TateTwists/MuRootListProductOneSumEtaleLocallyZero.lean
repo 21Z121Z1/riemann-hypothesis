@@ -1,7 +1,6 @@
-import Development.EtaleCohomology.TateTwists.ExistsEtaleMonoMuTwistQuotientOfRootListsLocally
-import Development.EtaleCohomology.TateTwists.EtaleTorsionCohomologyPrimaryLocalization
-import Development.EtaleCohomology.TateTwists.EtaleTorsionCohomologyPrimaryPartBasic
-import Development.EtaleCohomology.TateTwists.EtaleTorsionCohomologyLocalizationBasic
+import Development.EtaleCohomology.TateTwists.Bundle0029
+import Development.EtaleCohomology.TateTwists.Bundle0016
+import Development.EtaleCohomology.TateTwists.Bundle0015
 
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC
 

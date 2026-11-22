@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.GlobalFields.Artin.Induction
-import GroundTheory.GlobalFields.Artin.SeriesEuler
+import GroundTheory.GlobalFields.Artin.Bundle0004
 set_option maxSynthPendingDepth 1
 
 noncomputable section

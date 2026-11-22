@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsTailExtra
-import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.IntNumRelabel
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0058
+import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0009
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Kleiman.SectionsOverLocalization

@@ -1,4 +1,4 @@
-import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.IsCondAt
+import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.Bundle0001
 
 noncomputable section
 

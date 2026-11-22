@@ -1,9 +1,7 @@
-import Formalism.PadicSubsetSums.CentralIdempotents.FactorOverLocalSubalgebraMonic
-import Formalism.PadicSubsetSums.StableGradedCounts.ZReuse
-import Formalism.PadicSubsetSums.StableGradedCounts.ZCircleCharExtends
-import Formalism.PadicSubsetSums.StableGradedCounts.FactorOverLocalSubalgebra
-import Formalism.PadicSubsetSums.StableGradedCounts.CharpolyFactorAnnihilator
-import Formalism.PadicSubsetSums.StableGradedCounts.ZGoodCuspidal
+import Formalism.PadicSubsetSums.CentralIdempotents.Bundle0001
+import Formalism.PadicSubsetSums.StableGradedCounts.Bundle0010
+import Formalism.PadicSubsetSums.StableGradedCounts.Bundle0002
+import Formalism.PadicSubsetSums.StableGradedCounts.Bundle0001
 import Formalism.PadicSubsetSums.StableGradedCounts.ZBrauerNesbitt
 
 open Polynomial Filter Topology

@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.LocalRingCardinality.DataCD
 import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes
-import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.PerpendicularEmbedding
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ContinuousMatrixEntryAbsSum
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UpqLocallyCompactGroup
+import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0019
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0065
 
 noncomputable section
 

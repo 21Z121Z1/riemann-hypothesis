@@ -1,4 +1,4 @@
-import ReciprocityTheory.DualLattices.DetIntegralNonneg
+import ReciprocityTheory.DualLattices.Bundle0034
 
 noncomputable section
 

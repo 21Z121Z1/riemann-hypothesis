@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.UnfoldingConstantsPos
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0004
 
 noncomputable section
 

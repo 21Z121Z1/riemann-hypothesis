@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicArithmetic.CharacterBoxes.ExS
+import Development.AutomorphicArithmetic.CharacterBoxes.Bundle0004
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.DRS
-import Formalism.LocalToGlobal.TieTwRecOf
+import Formalism.LocalToGlobal.Bundle0003
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.JoinSISel
 
 noncomputable section

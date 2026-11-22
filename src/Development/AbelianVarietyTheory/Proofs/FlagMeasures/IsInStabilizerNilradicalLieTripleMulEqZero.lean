@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LayerProd
-import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.CenteredPerpendicularSets
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoveringRadiiIff
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0004
+import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0119
 
 open GlobalTheory.Count Formalism.MainNotions.S Formalism.REAL Matrix NumberField Finset
 

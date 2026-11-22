@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.LocalToGlobal.Columns.CoefCol
+import Formalism.LocalToGlobal.Columns.Bundle0003
 import Formalism.LocalToGlobal.Divisibility.CoefModLemmas
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bridge
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0009
 import Formalism.LocalToGlobal.Columns.BaseLemmas
 
 open NumberField IsDedekindDomain Module

@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.LocalToGlobal.GlobalTheory.GL3.PHfTrace
 import Formalism.FrobeniusOrbits.HostCorollaries
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.DiscrB
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CanonicalTranslateJets
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0082
 
 noncomputable section
 

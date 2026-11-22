@@ -1,10 +1,10 @@
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-import Formalism.LocalRingCardinality.DataLevelD
-import Formalism.LocalRingCardinality.DataTies
+import Formalism.LocalRingCardinality.Bundle0001
+import Formalism.LocalRingCardinality.Bundle0003
 import Formalism.SharpRestriction.ParConsts
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
 import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes
-import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GapAtLeast
+import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.Bundle0001
 
 noncomputable section
 

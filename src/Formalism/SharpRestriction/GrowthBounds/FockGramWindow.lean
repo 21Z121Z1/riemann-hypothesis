@@ -1,7 +1,7 @@
 import Formalism.SharpRestriction.GrowthBounds.FockGramWindow.InitialPointNumericBound
 import Formalism.SharpRestriction.GrowthBounds.FockGramWindow.WinLvl
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.LatMin
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.DiagRank
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0004
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0002
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Development.AutomorphicArithmetic.ThetaCorrespondence.CuspidalSupport.DualRClosed
 import Development.AutomorphicArithmetic.ThetaCorrespondence.CuspidalSupport.FillOdd
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Brauer
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalLanglandsOfHyp
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0047
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0824
 
 namespace UpperTheory.Lit.Car
 

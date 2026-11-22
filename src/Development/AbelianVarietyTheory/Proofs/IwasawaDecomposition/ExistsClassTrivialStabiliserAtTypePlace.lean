@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReadsHecke
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0749
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitPlaceHeckeOperatorScalarOnSpherical
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteRationalConjMemBoundedCompact
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GSplit
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0011
 
 noncomputable section
 

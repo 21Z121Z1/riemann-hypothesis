@@ -1,4 +1,4 @@
-import Formalism.SizeWindowBrackets.QuotientSlopeBoundsWith
+import Formalism.SizeWindowBrackets.Bundle0002
 import Formalism.SizeWindowBrackets.GrowthBoundGivesRiemannHypothesis
 
 open Real

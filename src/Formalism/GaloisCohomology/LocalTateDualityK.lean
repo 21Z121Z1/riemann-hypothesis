@@ -1,5 +1,5 @@
 import Formalism.GaloisCohomology.Statement
-import Formalism.GaloisCohomology.StatementLoc
+import Formalism.GaloisCohomology.Bundle0001
 
 noncomputable section
 

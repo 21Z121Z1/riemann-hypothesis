@@ -1,7 +1,7 @@
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.LocIsotypic
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsIdempotentElemCharIdem
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0006
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0650
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasSatakeGLOfIsSatVecGL
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.HasFixedVector
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0088
 
 noncomputable section
 

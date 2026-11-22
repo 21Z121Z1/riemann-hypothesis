@@ -1,5 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.CoefIntVG
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.CoefIntCpt
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0001
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.CoefDec
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.HaarMirror
 import Formalism.SharpRestriction.CuspSpanNormBounds.GlobAut

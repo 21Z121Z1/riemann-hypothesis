@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsSmoothVector
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
 
 noncomputable section
 

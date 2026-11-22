@@ -1,9 +1,9 @@
 import Mathlib
-import Formalism.SatakeDualWeyl.StatementC
+import Formalism.SatakeDualWeyl.Bundle0001
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Levelv
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Levelaf
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsApprox
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.InclusionInjective
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0010
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0002
 import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.ClassCountConv
 
 noncomputable section WacPartAbs

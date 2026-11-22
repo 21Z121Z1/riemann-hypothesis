@@ -5,7 +5,7 @@ import Formalism.SharpRestriction.CuspSpanNormBounds.LocalModelPeriodLattices
 import Formalism.LocalToGlobal.SiegelLatticeTheory.PtEquivApply
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.CntLocal
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.PairVal
-import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.Corank
+import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.Bundle0001
 import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleLayerExistsGenerators
 
 noncomputable section

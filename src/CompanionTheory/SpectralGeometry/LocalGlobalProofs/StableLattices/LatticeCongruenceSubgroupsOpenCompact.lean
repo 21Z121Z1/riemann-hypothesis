@@ -1,7 +1,7 @@
 import Mathlib
 import CompanionTheory.RealGroups.UnitaryAdmissibility.ArchimedeanUnitaryDual.StSandwich
 import CompanionTheory.RealGroups.UnitaryAdmissibility.ArchimedeanUnitaryDual.InhabitedFinite
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsTerLast
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0035
 
 noncomputable section
 

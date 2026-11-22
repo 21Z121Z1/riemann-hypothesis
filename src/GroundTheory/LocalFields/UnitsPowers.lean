@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.LocalFields.UnitsBasic
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsRootOfAdicComplete
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0020
 
 namespace GroundTheory.LocalField
 

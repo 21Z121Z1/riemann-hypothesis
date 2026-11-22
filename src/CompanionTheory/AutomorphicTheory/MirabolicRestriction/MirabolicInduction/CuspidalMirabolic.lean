@@ -1,6 +1,6 @@
 import CompanionTheory.AutomorphicTheory.MirabolicRestriction.MirabolicInduction.CuspidalRestrictsToInduced
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsIrreducibleTransportRep
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0026
 
 namespace CompanionTheory.Mirab
 

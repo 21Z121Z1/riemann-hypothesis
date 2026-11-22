@@ -1,6 +1,6 @@
 import Formalism.LocalToGlobal.KernelLattices.KerStd
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.IsAdmissibleFlagPairOfUnitriangularLeftAutomorph
-import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.StdOK
+import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.Bundle0002
 import Formalism.LocalToGlobal.GlobalTheory.GL3.LinkThetaStatementFamily
 
 noncomputable section

@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.DefiniteClassNumber.Places
-import GroundTheory.AutomorphicForms.AdelicUnitaryGroups.LatticeCompact
+import GroundTheory.AutomorphicForms.AdelicUnitaryGroups.Bundle0002
 import GroundTheory.AutomorphicForms.StrongApproximationSLDense
 import GroundTheory.GlobalFields.Adele.Topology
 

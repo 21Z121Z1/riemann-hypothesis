@@ -1,5 +1,5 @@
 import Mathlib
-import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.RowsStackRight
+import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0006
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.Imports
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.ImportsAlt
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairExistence.ExistsIsWeilDatumOF
@@ -8,8 +8,8 @@ import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.Transp
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.WeilDatumTransportCmPreservesAdmissibleFormsImpo
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.IsUnitaryOnWeilDatumTransportAdelicSchwartz2
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.ContinuousTransportWeilDatumCmExtensionImports
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumDoubledTargetSiegelRuleStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledTargetWeilTransportRestrictFirstFactorStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2776
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2167
 
 open scoped TensorProduct Matrix
 open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes

@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.BaseCoefCrys
+import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.Bundle0002
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CoefficientBaseChange.InvBaseChange
 
 open TensorProduct

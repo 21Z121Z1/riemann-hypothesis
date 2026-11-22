@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.ChartComparison.LocGoodLocJ
+import Formalism.SharpRestriction.GrowthBounds.ChartComparison.Bundle0001
 
 noncomputable section
 

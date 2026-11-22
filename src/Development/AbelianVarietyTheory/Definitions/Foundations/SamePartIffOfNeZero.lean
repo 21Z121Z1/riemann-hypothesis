@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.CyclotomicNorms.StatementT
+import Formalism.CyclotomicNorms.Bundle0002
 
 noncomputable section
 open Polynomial Classical

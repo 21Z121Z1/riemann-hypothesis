@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.Columns.OcbBEntEntB
+import Formalism.LocalToGlobal.Columns.Bundle0040
 
 open NumberField IsDedekindDomain Module
 

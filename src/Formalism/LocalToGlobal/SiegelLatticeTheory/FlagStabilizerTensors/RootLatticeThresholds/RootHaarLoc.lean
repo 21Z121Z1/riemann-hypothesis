@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.BigCellDensity
-import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusCoefficientMemLp.SigmaFiniteAmplitudes.RStabInv
+import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusCoefficientMemLp.SigmaFiniteAmplitudes.Bundle0001
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.ReverseCauchySchwarzHolds
-import Formalism.FormalDegreeBessel.FinalG
+import Formalism.FormalDegreeBessel.Bundle0002
 
 noncomputable section
 

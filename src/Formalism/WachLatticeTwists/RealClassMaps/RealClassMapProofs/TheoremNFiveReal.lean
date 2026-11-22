@@ -1,6 +1,6 @@
 import Formalism.WachLatticeTwists.RealClassMaps.RealClassMapTheorem
 import Formalism.WachLatticeTwists.RealClassMaps.RealClassMapProofs.RowChiReal
-import Formalism.WachLatticeTwists.SplitClassesAll.SplitClassesProofs.TheoremNFiveSplitRankForm
+import Formalism.WachLatticeTwists.SplitClassesAll.SplitClassesProofs.Bundle0001
 
 variable [hT2Core : Fact ReciprocityTheory.ChartRestriction.T2.Core]
 

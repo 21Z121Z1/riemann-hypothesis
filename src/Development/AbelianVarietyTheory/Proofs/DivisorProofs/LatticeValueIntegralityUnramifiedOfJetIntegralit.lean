@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.JetAnalytic
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowerIntegralValuationLowerBoundIffForallEmbeddiStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NotDvdDiscrIffRamificationIdx
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0604
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0166
 
 noncomputable section
 

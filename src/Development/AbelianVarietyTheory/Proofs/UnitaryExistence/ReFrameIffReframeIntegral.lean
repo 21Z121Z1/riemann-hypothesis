@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.LocalToGlobal.ProjectiveLattices.IntAllProofFree
-import Formalism.LocalToGlobal.ProjectiveLattices.IntFrames
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0018
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.WtFieldPfA
-import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.GeneralizedScalarsNumberField
+import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.Bundle0003
 
 set_option synthInstance.maxHeartbeats 400000
 

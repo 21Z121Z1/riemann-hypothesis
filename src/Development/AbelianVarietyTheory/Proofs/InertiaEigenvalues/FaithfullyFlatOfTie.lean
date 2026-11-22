@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExactOfTieLattice
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobeniusSubOneWittTensorLatticeSurjectiveFixed
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0245
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0266
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsAlgClosedTiltFieldAndValuationRing
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSubOfMemSpan
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0020
 
 noncomputable section
 

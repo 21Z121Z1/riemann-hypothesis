@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.UnderTie
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.XiEntryInvariant
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0025
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0139
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsOfStarEq
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsPowEqSpan
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0273
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.DetIntOfLevel
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions Formalism.L2.Col Formalism.L2.Ker Formalism.L2.DIV GlobalTheory.TwU GlobalTheory.TwV
 

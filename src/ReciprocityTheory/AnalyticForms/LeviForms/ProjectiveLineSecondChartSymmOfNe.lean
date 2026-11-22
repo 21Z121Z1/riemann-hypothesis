@@ -1,6 +1,6 @@
 import ReciprocityTheory.AnalyticForms.LeviForms.IsRegFamilyInhabitStatement
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffFubiniStudyRatioCompChart0
-import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0001
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshRegMax
 
 namespace ReciprocityTheory.AnForm.P

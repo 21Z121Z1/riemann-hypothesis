@@ -1,4 +1,4 @@
-import Formalism.SizeWindowBrackets.CutFailsForRSubmodule
+import Formalism.SizeWindowBrackets.Bundle0001
 import Formalism.SizeWindowBrackets.SlopesHypothesisFinitePlaces
 import Formalism.SizeWindowBrackets.Chain2aCoreNoAnalytic
 

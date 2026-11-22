@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.DegreeFormula.FlagDegFormula
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsHeightIffOfDegreeEq
 import Development.AbelianVarietyTheory.Definitions.Divisors.IrreducibleOfIrreducibleMap
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinSubstLinSubst
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0949
 
 set_option autoImplicit false
 

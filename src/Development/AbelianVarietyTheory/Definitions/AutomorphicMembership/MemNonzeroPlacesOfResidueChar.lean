@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonzeroPlacesOverPrimes
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StepColWPinned
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0535
 import Formalism.LocalRingCardinality.CoeNeZeroOfNotMem
 
 noncomputable section

@@ -1,5 +1,5 @@
-import Formalism.SizeWindowBrackets.ClaimGaFree
-import Formalism.SizeWindowBrackets.QuotientSlopeBoundsWith
+import Formalism.SizeWindowBrackets.Bundle0001
+import Formalism.SizeWindowBrackets.Bundle0002
 import Formalism.SizeWindowBrackets.FrameTraceRatioFinEquiv
 import Formalism.SizeWindowBrackets.SlopesHypothesisFinitePlaces
 

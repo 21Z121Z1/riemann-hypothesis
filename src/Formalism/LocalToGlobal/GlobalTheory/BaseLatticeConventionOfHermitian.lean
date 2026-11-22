@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.GlobalTheory.MemCompanion
-import Formalism.LocalToGlobal.GlobalTheory.BaseLatticeConventionOfFlags
+import Formalism.LocalToGlobal.GlobalTheory.Bundle0001
 import Formalism.LocalToGlobal.HermitianColumns.ColsHerm
 
 noncomputable section

@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelStructures.ConjugateLevelLeMaximalCompact
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelStructures.Bundle0001
 
 noncomputable section
 

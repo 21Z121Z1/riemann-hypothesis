@@ -1,6 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.RallisCoinvariants
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DegeneratePrincipalSeriesUnitary
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0002
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyConstantLinOm
 
 noncomputable section

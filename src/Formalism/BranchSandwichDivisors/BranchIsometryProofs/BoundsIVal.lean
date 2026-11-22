@@ -1,5 +1,5 @@
 import Formalism.BranchSandwichDivisors.StatementL
-import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ReductionLemmaFirst
+import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0002
 
 open Module NumberField IsDedekindDomain
 open scoped Matrix ComplexOrder

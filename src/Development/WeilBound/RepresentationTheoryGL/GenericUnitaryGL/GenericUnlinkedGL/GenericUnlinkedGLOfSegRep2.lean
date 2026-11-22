@@ -3,7 +3,7 @@ import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.GenericUnli
 import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.GenericUnlinkedGL.TopAll
 import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.GenericUnlinkedGL.Realize
 import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.NuPairInjectivity.NuPair
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentJacquetAll
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0785
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.BernsteinZelevinskyGL.TopAdm
 
 namespace GlobalTheory.RgGu

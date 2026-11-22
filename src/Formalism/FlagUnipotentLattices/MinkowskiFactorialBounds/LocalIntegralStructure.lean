@@ -1,5 +1,5 @@
 import Formalism.FlagUnipotentLattices.DetIndexProductHyperbolicInequality
-import Formalism.FlagUnipotentLattices.DetIndexProductPlacesInequalitySq
+import Formalism.FlagUnipotentLattices.Bundle0001
 import Formalism.HyperbolicPlaceProducts.SecondLevelArithmeticNorm
 import Formalism.HyperbolicPlaceProducts.ArithmeticCountRevised
 

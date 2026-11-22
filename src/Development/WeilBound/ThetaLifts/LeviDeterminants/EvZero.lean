@@ -1,4 +1,4 @@
 import Development.WeilBound.ThetaLifts.LeviDeterminants.EvCone
-import Development.WeilBound.ThetaLifts.LeviDeterminants.ExistsAdaptedModelSkewPlane
+import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0011
 
 theorem PositivityTheory.ThKF0.evZero : GlobalTheory.ThK.EvZero := PositivityTheory.ThKF0.evZero_of_adapted PositivityTheory.ThKF0.exists_adapted_model_evaluation

@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CharAbove
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DenseRangeUnits
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharacterUnramifiedAeAndExistsLevel
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0012
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0107
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0101
 
 noncomputable section
 

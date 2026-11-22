@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.BergmanObjects
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0007
 import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.PDivision
 set_option maxSynthPendingDepth 1
 

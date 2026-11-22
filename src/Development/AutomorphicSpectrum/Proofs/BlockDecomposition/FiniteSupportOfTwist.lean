@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralOfTwistConjugatePlace
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0625
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasSatakeGLOfIsSatVecGL
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalTwistContinuousInvolutionIntegralProperties
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1412
 
 noncomputable section
 

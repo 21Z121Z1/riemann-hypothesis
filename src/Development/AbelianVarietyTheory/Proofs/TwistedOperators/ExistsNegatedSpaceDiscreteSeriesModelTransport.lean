@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CartFrSgn
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsDiscreteSeriesNegSignatureOfIsDiscreteSeriesStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AutomorphicCuspFormsHermitianSpaceSignTwistStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SignedUnitaryGroupCompatStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0265
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0321
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0348
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0326
 
 noncomputable section
 

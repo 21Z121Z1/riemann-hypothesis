@@ -1,7 +1,7 @@
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBIdLB
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0010
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBIdJet
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CocycleRightZeroThd
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermCut
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0001
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0005
 
 set_option autoImplicit false
 

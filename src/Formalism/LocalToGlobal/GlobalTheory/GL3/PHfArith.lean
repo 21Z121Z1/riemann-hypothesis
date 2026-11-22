@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.GlobalTheory.GL3.PHfTrace
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.SplitK
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IntegralClosureCriterionSecond
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0082
 
 noncomputable section
 

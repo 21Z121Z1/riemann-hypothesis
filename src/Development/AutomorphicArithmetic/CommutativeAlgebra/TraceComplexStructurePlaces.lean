@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.ComplexUniformizationSigOne
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankJointEigenspaceAddConjEqMul
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0966
 import Development.AutomorphicArithmetic.RealSpanData.RealData
 import Development.AutomorphicArithmetic.RealSpanData.JSpan
 import Development.AutomorphicArithmetic.CommutativeAlgebra.TraceActionEqSumPlaces

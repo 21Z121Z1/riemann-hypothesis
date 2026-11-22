@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsPullWedge
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FiniteTypeOverIntegersModel
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0075
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0081
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValuativeLiftExistsUnique
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueSection
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProperPullbackLineBundle
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0031
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0064
 open AlgebraicGeometry CategoryTheory Limits NumberField IsDedekindDomain MvPolynomial
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Flat GlobalTheory.CompanionTheory.Ar.Fl
 open scoped ComplexOrder

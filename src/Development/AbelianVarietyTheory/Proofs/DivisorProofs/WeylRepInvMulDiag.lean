@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GindikinKarpelevich
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0017
 
 open GlobalTheory.SplitWeil GlobalTheory.SmGL GlobalTheory.WeylCell
 

@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsPairingSingleNe
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsSymmetricElementaryDivisorsUnitary
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0149
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0336
 
 noncomputable section
 

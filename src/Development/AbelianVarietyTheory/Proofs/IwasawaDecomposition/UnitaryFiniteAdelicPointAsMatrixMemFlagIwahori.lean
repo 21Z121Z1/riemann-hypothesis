@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReadsDeco
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DecoRawMulLevelIwahoriReduction
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0404
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0457
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.EventuallyCongOne
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RTupQEqOneIff
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0413
 open Formalism.BasicNotions Formalism.MainNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix Formalism.L2.Theta Formalism.L2.DIV Formalism.L2.Indef Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.IndefR.Datum Formalism.IndefR.Cx
 open scoped TensorProduct InnerProductSpace
 attribute [local instance] Formalism.BasicNotions.Host.cmStar

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FcIndepDetNeZeroOfRank
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0002
 open Matrix
 open scoped ComplexOrder
 

@@ -1,5 +1,5 @@
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LevelIntegrandAestronglyMeasurable
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.LiftMemMatrixAlgebra
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0038
 
 open MeasureTheory
 open scoped ComplexConjugate ComplexOrder

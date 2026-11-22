@@ -1,4 +1,4 @@
-import Formalism.PieriBlockIdeals.TailInequalityEventually
+import Formalism.PieriBlockIdeals.Bundle0007
 import Formalism.PieriBlockIdeals.PieriColumnMinors.ParameterBounds
 import Formalism.PieriBlockIdeals.PieriColumnMinors.CorollaryOfParamsSevenLinkage
 

@@ -1,4 +1,4 @@
-import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AnalyticIntertwiners.NilpotentOfPowerTraces
+import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AnalyticIntertwiners.Bundle0002
 
 open Matrix Topology Filter
 open scoped InnerProductSpace NNReal ENNReal

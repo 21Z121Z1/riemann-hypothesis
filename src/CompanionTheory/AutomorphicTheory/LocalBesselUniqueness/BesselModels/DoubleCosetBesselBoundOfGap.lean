@@ -1,5 +1,5 @@
 import CompanionTheory.AutomorphicTheory.LocalBesselUniqueness.BesselModels.Inputs
-import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.BesselOfWPf
+import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.Bundle0062
 
 open MeasureTheory Matrix Finset
 open scoped InnerProductSpace

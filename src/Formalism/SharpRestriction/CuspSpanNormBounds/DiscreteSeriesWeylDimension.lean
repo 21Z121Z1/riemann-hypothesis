@@ -1,6 +1,6 @@
 import Formalism.SharpRestriction.CuspSpanNormBounds.StandingHypothesesHoldFamily
 import Formalism.SharpRestriction.CuspSpanNormBounds.NonemptyParameterModels.NumericSettingWithGapSatisfiable
-import Formalism.SharpRestriction.CuspSpanNormBounds.AutLzFiniteOfLoop
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0008
 import Formalism.SharpRestriction.AdmissibleParameterJoins.SfromGLx
 import Mathlib
 import Formalism.FormalDegreeBessel.FinalDS

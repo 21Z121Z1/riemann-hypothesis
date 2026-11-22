@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.EndOmega
-import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.TranslateProduct
-import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.StatementC
-import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.StatementK
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnramifiedSubfieldCriterionStatement
+import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.Bundle0002
+import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.Bundle0002
+import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0051
 
 open PowerSeries GlobalTheory.Honda Formalism.L2.Th1.CM NumberField
 

@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.SharpRestriction.Divisibility.SchurIrreducible
-import Formalism.LocalToGlobal.BesselHermitianTheta.DefsReal
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SymbolCongr
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0105
 
 open Formalism.BasicNotions.TH Formalism.MainNotions.SchurIrreducible GlobalTheory.InducedPBW
 

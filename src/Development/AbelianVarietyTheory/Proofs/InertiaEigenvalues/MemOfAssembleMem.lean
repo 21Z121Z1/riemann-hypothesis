@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.OnePlusPowerAssembly
+import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0001
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicExistsIff
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ZpowSmulMem
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CompOneAddPowMul
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0006
 
 noncomputable section
 namespace GlobalTheory.PsiShiftProof

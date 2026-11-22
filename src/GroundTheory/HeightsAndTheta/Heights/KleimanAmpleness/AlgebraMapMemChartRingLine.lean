@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Statements
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0003
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Statements
 set_option maxSynthPendingDepth 1
 

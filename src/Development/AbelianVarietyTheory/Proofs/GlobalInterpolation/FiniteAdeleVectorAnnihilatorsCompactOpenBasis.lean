@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.DecayZero
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalComponentsNontrivialAdelicCharacter
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsPosNatMemOpenAdeleSubgroup
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0241
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0029
 import Formalism.LocalToGlobal.Columns.RecLevelTop
-import GroundTheory.GlobalFields.TateThesis.NoSmallSubgroups
+import GroundTheory.GlobalFields.TateThesis.Bundle0002
 open NumberField IsDedekindDomain MeasureTheory Topology Filter Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.GaugeEx GlobalTheory.SWQ
 open scoped TensorProduct NNReal ENNReal
 

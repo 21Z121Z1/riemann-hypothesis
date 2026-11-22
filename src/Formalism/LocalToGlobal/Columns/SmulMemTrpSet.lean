@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.Columns.ScaledRamifiedLattice
-import Formalism.LogVandermondeBounds.FinrankFiberSumZero
-import Formalism.LogVandermondeBounds.GaussOperatorProductFormula
+import Formalism.LogVandermondeBounds.Bundle0001
+import Formalism.LogVandermondeBounds.Bundle0002
 
 open NumberField IsDedekindDomain Module
 

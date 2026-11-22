@@ -1,6 +1,6 @@
-import Formalism.SharpRestriction.InertJacobiLevels.ExtraNum
+import Formalism.SharpRestriction.InertJacobiLevels.Bundle0001
 import Formalism.ThetaLiftIndependence.Statement
-import Formalism.HermitianLattices.StatementMass
+import Formalism.HermitianLattices.Bundle0003
 
 noncomputable section
 

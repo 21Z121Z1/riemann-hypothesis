@@ -1,5 +1,5 @@
 import Formalism.PieriBlockIdeals.CapelliCentralEnveloping
-import Formalism.PieriBlockIdeals.LemmaWAssembled
+import Formalism.PieriBlockIdeals.Bundle0003
 
 noncomputable section
 

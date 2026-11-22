@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.AssocSetApplyOfPointwise
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsRankOneIdem
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0003
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0024
 
 noncomputable section
 

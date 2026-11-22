@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.Columns.BrzColLatOneLattice
+import Formalism.LocalToGlobal.Columns.Bundle0017
 
 open NumberField IsDedekindDomain Module
 open scoped Matrix ComplexOrder

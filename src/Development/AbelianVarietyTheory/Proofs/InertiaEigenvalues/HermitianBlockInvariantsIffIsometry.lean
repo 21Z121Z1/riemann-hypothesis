@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairStructureFactsStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetRallisInvKRegularIffIsUnitStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0143
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0136
 
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology
 

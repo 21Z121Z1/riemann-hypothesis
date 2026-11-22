@@ -1,7 +1,7 @@
 import Mathlib
 import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialOfFun
 import GroundTheory.HeightsAndTheta.Heights.ProjTopology
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.SectionL2NormSq
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0009
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.EffectiveHS

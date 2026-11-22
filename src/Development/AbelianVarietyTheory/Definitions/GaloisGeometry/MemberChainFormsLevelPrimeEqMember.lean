@@ -1,15 +1,14 @@
 import Mathlib
 import Formalism.SharpRestriction.GrowthBounds.BaseLevels.LevelsGEmpty
 import Formalism.SharpRestriction.GrowthBounds.ChartComparison.MemAll
-import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.ClsChartedLabAt
-import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.CompInjLocJ
+import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.Bundle0003
 import Formalism.SharpRestriction.GrowthBounds.TwistedLevelAgreement.StepInTwK
-import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.TiedCls
-import Formalism.LocalToGlobal.HermitianForms.BothLemmas
-import Formalism.LocalToGlobal.HermitianForms.BothSym
-import Formalism.LocalToGlobal.HermitianForms.ExtraSym
-import Formalism.SharpRestriction.GrowthBounds.ChartComparison.LocTiesOf
-import Formalism.LocalToGlobal.InertKernelTheory.ProjRSurj
+import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.Bundle0004
+import Formalism.LocalToGlobal.HermitianForms.Bundle0005
+import Formalism.LocalToGlobal.HermitianForms.Bundle0006
+import Formalism.LocalToGlobal.HermitianForms.Bundle0007
+import Formalism.SharpRestriction.GrowthBounds.ChartComparison.Bundle0002
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0017
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ExistsMidLevIff
 
 noncomputable section

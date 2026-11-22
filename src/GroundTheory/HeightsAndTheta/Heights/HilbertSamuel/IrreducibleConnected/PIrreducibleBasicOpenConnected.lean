@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.IrreducibleConnected.StatementsBasicOpen
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.IrreducibleConnected.StatementsUnbranched
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.IrreducibleConnected.Bundle0001
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.IrreducibleConnected.Bundle0002
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.IrreducibleConnected.BasicOpenSteps
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PLinearNoetherNormalization
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0134
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

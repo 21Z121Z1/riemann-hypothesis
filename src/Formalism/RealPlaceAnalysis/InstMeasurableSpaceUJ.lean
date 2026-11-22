@@ -1,4 +1,4 @@
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.KoszulLowersPower
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0003
 
 open MeasureTheory
 

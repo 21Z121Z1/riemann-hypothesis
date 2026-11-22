@@ -1,8 +1,8 @@
 import Mathlib
 import ReciprocityTheory.Hypotheses.GalCoh
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ExistsCoprimePowOfMemIneKer
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CardDualZmodModuleEqCard
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistedDualEvalBidualApply
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0019
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0275
 
 noncomputable section
 

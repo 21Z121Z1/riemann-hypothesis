@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerVolume.DensInfTR
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FundamentalDomainUnitaryAdelicExistsMeasureEq
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteVolumeAdelicUnitaryQuotient
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0203
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0222
 
 noncomputable section
 

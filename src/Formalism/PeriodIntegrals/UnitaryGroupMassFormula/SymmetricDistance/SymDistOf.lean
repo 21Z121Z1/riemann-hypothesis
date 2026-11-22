@@ -1,7 +1,7 @@
-import Formalism.PeriodIntegrals.SymDist
-import Formalism.PeriodIntegrals.ExpTri
+import Formalism.PeriodIntegrals.Bundle0016
+import Formalism.PeriodIntegrals.Bundle0003
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.IndefiniteUnitaryPreservesForm
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ComplexificationHolds
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0001
 
 open Matrix
 

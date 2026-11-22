@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.GL3MeanSquares.ModelCocycleExponent
+import Formalism.GL3MeanSquares.Bundle0002
 
 namespace Formalism.HermitianLattices.ModelCocycles
 

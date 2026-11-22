@@ -3,7 +3,7 @@ import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 import Formalism.LocalRingCardinality.DataParams₂
 import Formalism.LocalRingCardinality.DataJet
 import Formalism.LocalRingCardinality.DataForced
-import Formalism.LocalRingCardinality.DataDIVDefs
+import Formalism.LocalRingCardinality.Bundle0003
 import Formalism.SharpRestriction.GrowthBounds.IsResidueClassZero
 
 noncomputable section

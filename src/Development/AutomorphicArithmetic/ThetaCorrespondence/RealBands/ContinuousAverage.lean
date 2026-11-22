@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.DecaysZero
-import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Weight
-import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.IsCompactBall
+import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Bundle0004
+import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Bundle0003
 
 open MeasureTheory Filter Matrix Formalism.REAL Formalism.MainNotions.S GlobalTheory.FlagMeas GlobalTheory.RealInd UpperTheory.Lit.Cusp
 open GlobalTheory.Dec (IsHaarSub IsIsoC NW IsSqIntIrr)

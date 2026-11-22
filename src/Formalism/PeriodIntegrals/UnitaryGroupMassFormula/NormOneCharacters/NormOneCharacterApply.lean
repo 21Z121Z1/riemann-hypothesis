@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.PeriodIntegrals.ChiExCM
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.CharExtend
+import Formalism.PeriodIntegrals.Bundle0001
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0002
 
 namespace PI.UnitaryGroupMassFormula.ChiExCM
 

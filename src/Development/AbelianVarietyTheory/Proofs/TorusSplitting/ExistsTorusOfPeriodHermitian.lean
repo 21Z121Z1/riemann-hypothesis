@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TorusSections.IsTorusOf
-import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
-import Formalism.LocalToGlobal.ProjectiveLattices.NormsFree
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.IsOrth
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0009
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.TorusAtExistsOfParts
-import Development.AbelianVarietyTheory.Proofs.TorusSplitting.ConjEqNegOfSqEqNegNat
+import Development.AbelianVarietyTheory.Proofs.TorusSplitting.Bundle0007
 
 set_option autoImplicit false
 

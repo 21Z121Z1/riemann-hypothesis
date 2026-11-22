@@ -1,4 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.FromHCA
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Bundle0006
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
 
 noncomputable section

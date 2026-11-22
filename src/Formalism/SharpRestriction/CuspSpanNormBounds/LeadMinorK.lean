@@ -1,7 +1,6 @@
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
-import Formalism.SharpRestriction.CuspSpanNormBounds.LocalDataRealPlace
-import Formalism.SharpRestriction.CuspSpanNormBounds.RootMeasBig
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0004
 
 open MeasureTheory Matrix Finset
 open scoped InnerProductSpace

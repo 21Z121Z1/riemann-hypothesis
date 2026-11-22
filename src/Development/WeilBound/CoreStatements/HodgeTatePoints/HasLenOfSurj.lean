@@ -1,10 +1,9 @@
-import ReciprocityTheory.DualLattices.CotangentSurjective
-import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsTight
-import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.StepOrderRes
-import ReciprocityTheory.DualLattices.CharTableIsUnit
+import ReciprocityTheory.DualLattices.Bundle0005
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0003
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0004
 import ReciprocityTheory.DualLattices.SqIdeal
 import ReciprocityTheory.DualLattices.PowMemCarrier
-import Development.WeilBound.CoreStatements.HodgeTatePoints.RiEasy
+import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0013
 
 open ReciprocityTheory.PGsh.L2 ReciprocityTheory.PGsh.Up GlobalTheory.CompanionTheory.Ar.GR
 open scoped Matrix

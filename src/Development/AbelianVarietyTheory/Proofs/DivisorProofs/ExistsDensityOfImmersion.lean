@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsCompactDualHaar
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0001
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NonemptyCompactDualHaar
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousMatExp
-import ReciprocityTheory.GeometryOfNumbers.PluriharmonicAnalysis.LogDetSt
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0063
+import ReciprocityTheory.GeometryOfNumbers.PluriharmonicAnalysis.Bundle0001
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Formalism.FrobeniusBaseCase.FrobeniusBaseCaseProofs.ChainI
-import Formalism.FrobeniusBaseCase.FrobeniusBaseCaseProofs.BaseCaseKOneHolds
+import Formalism.FrobeniusBaseCase.FrobeniusBaseCaseProofs.Bundle0001
 
 open MvPowerSeries
 

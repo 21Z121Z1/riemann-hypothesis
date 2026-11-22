@@ -1,4 +1,4 @@
-import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.LsProps
+import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.Bundle0005
 import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.IwasawaCompletion.ExistsIwasawaLeft
 
 noncomputable section

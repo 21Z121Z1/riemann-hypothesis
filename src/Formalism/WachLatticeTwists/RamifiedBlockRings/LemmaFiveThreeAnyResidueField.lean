@@ -1,5 +1,5 @@
 import Formalism.WachLatticeTwists.RamifiedBlockRings.ChainFromPrimitiveData
-import Formalism.WachLatticeTwists.RamifiedBlockRings.RightIdealImageOfSurjective
+import Formalism.WachLatticeTwists.RamifiedBlockRings.Bundle0001
 
 open Finset Classical
 

@@ -1,11 +1,11 @@
-import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.SExpDefs
+import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Bundle0004
 import GroundTheory.GlobalFields.TateThesis.TateThetaDecay
-import GroundTheory.GlobalFields.TateThesis.TateTheta
+import GroundTheory.GlobalFields.TateThesis.Bundle0011
 import GroundTheory.GlobalFields.TateThesis.AdelePoisson
-import GroundTheory.GlobalFields.TateThesis.EulerFactorsInfinite
+import GroundTheory.GlobalFields.TateThesis.Bundle0008
 import GroundTheory.GlobalFields.IdeleGroups.ClassGroup
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsOpenIdeleSubgroupContainsCongruenceUnits
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0049
 
 noncomputable section
 

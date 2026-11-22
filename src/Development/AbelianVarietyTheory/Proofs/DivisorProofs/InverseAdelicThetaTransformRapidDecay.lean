@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoMulInvOf
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrandPeriodic
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0887
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0900
 
 open NumberField IsDedekindDomain MeasureTheory Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.SWQ GlobalTheory.ThetaTransform
 open scoped Matrix Classical

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.KeyFormula.DegProd
-import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.SubmatrixMulOfSupport
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.HDiscAA
+import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0007
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Bundle0011
 open GlobalTheory.KeyKa
 
 namespace GlobalTheory.KeyKa

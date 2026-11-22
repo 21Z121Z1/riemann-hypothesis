@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.CharacterBoxes.TwistForm
-import Development.AutomorphicArithmetic.CharacterBoxes.RealSplit
+import Development.AutomorphicArithmetic.CharacterBoxes.Bundle0003
 
 open Formalism.HC UpperTheory.Top
 

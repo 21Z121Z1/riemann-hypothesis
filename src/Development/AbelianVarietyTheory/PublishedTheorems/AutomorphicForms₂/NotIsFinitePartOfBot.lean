@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.CuspDiscreteDecompositionGL
-import Development.AbelianVarietyTheory.Definitions.Foundations.MemL2AutomorphicCharacter
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0009
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0016
 
 noncomputable section
 

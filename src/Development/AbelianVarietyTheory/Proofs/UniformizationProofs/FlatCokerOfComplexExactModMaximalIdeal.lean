@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.FlatCokerOfInjectiveModMaximalIdealStatement
+import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0004
 
 open CategoryTheory CategoryTheory.Limits TensorProduct
 

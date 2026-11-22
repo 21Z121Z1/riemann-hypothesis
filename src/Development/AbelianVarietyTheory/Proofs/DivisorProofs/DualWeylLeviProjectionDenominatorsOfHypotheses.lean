@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NablaSchur
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0605
 import Formalism.GradedWeylDivisibility.DualWeylDominanceOf
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.ClosedEqNabla
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0011
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.StandardWeylLatticesFockDual
 
 open MvPolynomial Formalism.GradedWeylDivisibility TensorProduct

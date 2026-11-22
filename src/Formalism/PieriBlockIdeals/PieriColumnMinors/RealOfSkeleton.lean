@@ -1,5 +1,4 @@
-import Formalism.PieriBlockIdeals.PieriColumnMinors.LrjTransposeLift
-import Formalism.PieriBlockIdeals.PieriColumnMinors.LriEVPowCoe
+import Formalism.PieriBlockIdeals.PieriColumnMinors.Bundle0010
 import Formalism.PieriBlockIdeals.PieriColumnMinors.LrfcApplyWordAppendSingle
 
 open MvPolynomial

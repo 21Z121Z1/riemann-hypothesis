@@ -1,6 +1,6 @@
 import Mathlib
-import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ExistsTeichmullerRepModPrime
-import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.KurNewton
+import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0008
+import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0003
 
 noncomputable section
 

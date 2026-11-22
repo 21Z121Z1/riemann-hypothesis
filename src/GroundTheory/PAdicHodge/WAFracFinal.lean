@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.PAdicHodge.WAFracLemmaO
 import GroundTheory.PAdicHodge.WAFracHelp
-import GroundTheory.PAdicHodge.WAFracAlg
+import GroundTheory.PAdicHodge.Bundle0002
 import GroundTheory.PAdicHodge.WAKummer
 set_option maxSynthPendingDepth 1
 

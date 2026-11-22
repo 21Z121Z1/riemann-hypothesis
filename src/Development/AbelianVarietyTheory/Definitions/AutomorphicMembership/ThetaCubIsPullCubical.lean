@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PullRigIsSymmetric
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0012
 import Development.AbelianVarietyTheory.Definitions.Foundations.MemUnitaryGroupIffIsIsometry
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.KTrivOfUnimodular
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsLeftInverse
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0019
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0029
 
 noncomputable section
 

@@ -1,6 +1,6 @@
-import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.Beyond44OfRestRawTail
-import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.TestFlat
-import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.SegFormZeroRight
+import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.Bundle0004
+import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.Bundle0006
+import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.Bundle0001
 
 noncomputable section
 

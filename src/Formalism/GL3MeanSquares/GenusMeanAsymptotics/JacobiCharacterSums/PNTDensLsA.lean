@@ -1,4 +1,4 @@
-import Formalism.LFunctionBounds.LFunctionBoundsProofs.LFunctionEqGOfOneLt
+import Formalism.LFunctionBounds.LFunctionBoundsProofs.Bundle0001
 
 open Complex Filter Topology
 

@@ -1,6 +1,6 @@
 import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.ExpNegGlue
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableOnFundamentalDomain
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsLeftInvariantOfIsAutForm
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0367
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0494
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.ApplyEqOfMemAdjoin
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsGaloisInvariantValuationIntegersEqIntegral
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsEqExpOfRat
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0011
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0113
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0076
 
 noncomputable section
 

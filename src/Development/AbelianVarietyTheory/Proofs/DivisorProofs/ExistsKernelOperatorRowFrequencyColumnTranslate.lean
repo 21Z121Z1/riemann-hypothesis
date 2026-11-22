@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OnMatInfOfIsUnit
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsKerOpRowFreqColGL
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentLowerRowsLeviSetClosedSubgroup
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsArchimedeanRapidKernelOperatorFinsetSum
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0904
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0857
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0853
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0924
 open NumberField GlobalTheory.CuspRep GlobalTheory.JSW GlobalTheory.JSW.MirCinf MeasureTheory
 open scoped FourierTransform ContDiff
 

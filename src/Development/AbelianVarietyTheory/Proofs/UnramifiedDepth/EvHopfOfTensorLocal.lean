@@ -1,5 +1,5 @@
 import Mathlib
-import ReciprocityTheory.DualLattices.EvHopfStatement
+import ReciprocityTheory.DualLattices.Bundle0029
 
 noncomputable section
 

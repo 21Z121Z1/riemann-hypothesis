@@ -1,7 +1,7 @@
 import Formalism.SharpRestriction.GrowthBounds.WeilJacquetShalikaLaw
 import Formalism.SharpRestriction.Divisibility.LocalQuadraticParts
 import Formalism.LocalToGlobal.Divisibility.TiedLemmas
-import Formalism.LocalToGlobal.Divisibility.JetBounds.Statement
+import Formalism.LocalToGlobal.Divisibility.JetBounds.Bundle0001
 
 open Module NumberField IsDedekindDomain
 open Formalism.BasicNotions Formalism.BasicNotions.DV Formalism.MainNotions.G Formalism.MainNotions.WeilJacquetShalikaLaw Formalism.L2.DIV Formalism.L2.Indef

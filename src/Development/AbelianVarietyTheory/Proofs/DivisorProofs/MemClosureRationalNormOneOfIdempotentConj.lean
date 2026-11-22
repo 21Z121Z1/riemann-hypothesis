@@ -2,9 +2,9 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.OneMemH0WeightZero
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.NotIsCompactUnivFv
 import GroundTheory.GlobalFields.IdeleGroups.IdeleNorms
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosureNormOneProductsSubgroupPropertiesStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousAtInvS
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousLocAdele
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0797
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0776
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0892
 open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.QSA GlobalTheory.Published
 open Matrix
 open scoped Quaternion Topology TensorProduct

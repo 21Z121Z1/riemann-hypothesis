@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.PeriodIntegrals.ClassNumImQ
+import Formalism.PeriodIntegrals.Bundle0002
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.QuadraticDedekindZeta.Development
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.ClassNumImQInt
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0010
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.QuadraticInvariants.QuadPolyIrreducible
 
 open NumberField

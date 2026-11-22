@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.GlobalFields.TateThesis.GaussianComplex
+import GroundTheory.GlobalFields.TateThesis.Bundle0003
 
 namespace GroundTheory.Global
 

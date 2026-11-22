@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.PeriodIntegrals.Minkowski
+import Formalism.PeriodIntegrals.Bundle0006
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MinkowskiBound.PowerSumStep
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MinkowskiBound.Assemble
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MinkowskiBound.Bundle0001
 
 namespace PI.Mk
 

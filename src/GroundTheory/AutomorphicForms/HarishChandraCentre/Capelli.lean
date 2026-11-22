@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.HarishChandraCentre.MemCenterOfCommuteE
+import GroundTheory.AutomorphicForms.HarishChandraCentre.Bundle0001
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.EMulSubMulCapelliMatrixPow
 
 namespace GroundTheory.Automorphic.HarishChandra

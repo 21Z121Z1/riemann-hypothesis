@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.GlobalFields.Adele.Approximation
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.InfiniteTraceAlgebraMap
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0036
 
 namespace GroundTheory.Global
 

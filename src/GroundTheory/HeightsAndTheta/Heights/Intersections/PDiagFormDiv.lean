@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsDiagFormDiv
-import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsChartFormsRational
-import GroundTheory.HeightsAndTheta.Heights.Intersections.PMobiusAlgIndep
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0032
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0014
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0019
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Inter

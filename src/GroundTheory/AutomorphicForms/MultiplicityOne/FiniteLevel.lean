@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.MultiplicityOne.ContinuousWhittakerOneRconvIntertwiner
-import GroundTheory.AutomorphicForms.UnitaryRepresentations.ExistsEqAlgebraMapOfIsSelfAdjoint
+import GroundTheory.AutomorphicForms.UnitaryRepresentations.Bundle0001
 
 open MeasureTheory Set Filter Topology Function
 open NumberField IsDedekindDomain

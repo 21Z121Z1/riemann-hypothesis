@@ -2,7 +2,7 @@ import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.ExampleSatisfiesCo
 import Formalism.SharpRestriction.Divisibility.WeightAlgebra
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeIndexDeterminant.NegLogValuation
 import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.ThreeForms
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsBasisOfPid
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0017
 
 open Module NumberField IsDedekindDomain
 

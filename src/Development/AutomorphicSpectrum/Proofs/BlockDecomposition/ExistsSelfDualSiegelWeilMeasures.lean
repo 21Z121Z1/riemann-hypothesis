@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaPartD
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBoundUnitary
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SecondOnCommonRangeOfSecond
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousHermPart
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0515
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0915
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0430
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0505
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.L2.Theta Formalism.L2.Pj Formalism.IndefR.Datum MeasureTheory
 open GlobalTheory.AutomorphicL2Unitary GlobalTheory.AdelicU GlobalTheory.Doubling GlobalTheory.Cont GlobalTheory.MixModel GlobalTheory.StdUnn PositivityTheory.GramSchwartzFunctions PositivityTheory.GramSchwartzFunctions.BC GlobalTheory.CompanionTheory.SiegelND

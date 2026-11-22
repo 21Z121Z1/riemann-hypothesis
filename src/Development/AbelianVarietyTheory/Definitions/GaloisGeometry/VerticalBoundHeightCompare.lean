@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.KaehlerOneFormsToExtensionDeRhamMulSelf
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.FracZeroOfPos
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0005
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0013
 
 set_option autoImplicit false
 

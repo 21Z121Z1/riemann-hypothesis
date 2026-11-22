@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.RegularAlgebraicPurity
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RegularAlgebraicPurityOfClozel
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0005
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0176
 
 namespace GlobalTheory.CompanionTheory.Published.Rd
 

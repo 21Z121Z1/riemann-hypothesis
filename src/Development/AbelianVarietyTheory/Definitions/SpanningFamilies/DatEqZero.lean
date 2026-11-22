@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsBaseClassLevelAdapted
-import Formalism.LocalToGlobal.ProjectiveLattices.ThClass
+import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.Bundle0001
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0030
 
 open AlgebraicGeometry CategoryTheory NumberField Matrix Complex
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.FD GlobalTheory GlobalTheory.ThFr

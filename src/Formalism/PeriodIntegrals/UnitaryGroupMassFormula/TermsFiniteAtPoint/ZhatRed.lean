@@ -1,8 +1,8 @@
 import Mathlib
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TermsFiniteAtPoint.CarrierRow
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TermsFiniteAtPoint.Bundle0001
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RelativeEquivalence.DCRelEquivAllHolds
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.TermAttrConst
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.TermCarrierStable
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0043
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0038
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.Saturated
 
 noncomputable section

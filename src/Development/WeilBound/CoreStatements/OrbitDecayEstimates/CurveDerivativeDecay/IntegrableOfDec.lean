@@ -2,7 +2,7 @@ import Development.WeilBound.CoreStatements.OrbitDecayEstimates.CurveDerivativeD
 import Development.WeilBound.CoreStatements.OrbitDecayEstimates.CurveDerivativeDecay.OneLeHsG
 import Formalism.SharpRestriction.CuspSpanNormBounds.GlobAut
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.CoefDec
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.SigZeroDecay
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.Bundle0014
 
 noncomputable section
 

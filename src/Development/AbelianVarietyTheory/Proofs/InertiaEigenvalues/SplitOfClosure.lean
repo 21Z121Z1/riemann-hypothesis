@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CentralIdemCoeff
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0006
 
 noncomputable section
 

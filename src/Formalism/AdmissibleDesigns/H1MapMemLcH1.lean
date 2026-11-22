@@ -1,5 +1,5 @@
-import Formalism.AdmissibleDesigns.BlockTwistedCyclotomic
-import Formalism.AdmissibleDesigns.SmulEval
+import Formalism.AdmissibleDesigns.Bundle0003
+import Formalism.AdmissibleDesigns.Bundle0005
 
 variable [hT2Core : Fact ReciprocityTheory.ChartRestriction.T2.Core]
 

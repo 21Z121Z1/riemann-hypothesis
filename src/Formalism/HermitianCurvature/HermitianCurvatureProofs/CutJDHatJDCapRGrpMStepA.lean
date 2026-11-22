@@ -1,7 +1,7 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDCapRGrpMRad
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0159
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.QxChain
-import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.HermitianInvariantCellAction
+import Formalism.RealPlaceAnalysis.Bundle0004
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0213
 
 open Formalism.REAL Formalism.QuantumDeterminants Formalism.FourierDecayAlt Formalism.FourierDecayAlt.Q
 

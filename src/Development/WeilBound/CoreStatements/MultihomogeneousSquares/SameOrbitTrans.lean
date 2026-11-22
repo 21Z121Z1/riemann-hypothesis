@@ -1,7 +1,7 @@
-import Development.WeilBound.CoreStatements.MultihomogeneousSquares.SingSt
-import Development.WeilBound.CoreStatements.FlagImmersions.SumFundOnRoot
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MemAbLocusIff
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexPointsIffCentresStatement
+import Development.WeilBound.CoreStatements.MultihomogeneousSquares.Bundle0001
+import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0010
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0121
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0056
 
 noncomputable section
 

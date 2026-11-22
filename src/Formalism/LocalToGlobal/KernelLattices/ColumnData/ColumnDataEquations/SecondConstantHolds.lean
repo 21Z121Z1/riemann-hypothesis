@@ -1,6 +1,6 @@
 import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.IntegralSquareRoots.HenselQuad
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.JFinal
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.StarSqrtNeg
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0086
 
 noncomputable section
 open NumberField Formalism.BasicNotions Classical

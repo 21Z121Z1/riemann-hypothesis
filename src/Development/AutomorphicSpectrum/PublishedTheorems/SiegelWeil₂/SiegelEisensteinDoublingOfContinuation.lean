@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelEisensteinSimplePoleOfDoublingMethod
+import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.Bundle0002
 
 noncomputable section
 

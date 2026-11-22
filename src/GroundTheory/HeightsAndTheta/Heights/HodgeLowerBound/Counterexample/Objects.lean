@@ -2,7 +2,7 @@ import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.IsFrameOverLine
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.PermFinTwoUniv
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.IsSmoothHermConstLine
-import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.PCurveDivVertical
+import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0004
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsAntisym
 set_option maxSynthPendingDepth 1
 

@@ -1,8 +1,7 @@
 import Development.WeilBound.CoreStatements.AutomorphicKernels.EisensteinSeriesG2.G2RootData.PlRegion
 import Mathlib
 import Development.WeilBound.CoreStatements.AutomorphicKernels.EisensteinSeriesG2.TubeDomainExtension.TubeExtendsFarCone
-import Development.WeilBound.CoreStatements.AutomorphicKernels.EisensteinSeriesG2.G2HaarMeasure.IsHaarMeasureDoubledGroup
-import Development.WeilBound.CoreStatements.AutomorphicKernels.EisensteinSeriesG2.G2HaarMeasure.ContinuousInFrame
+import Development.WeilBound.CoreStatements.AutomorphicKernels.EisensteinSeriesG2.G2HaarMeasure.Bundle0001
 
 noncomputable section
 

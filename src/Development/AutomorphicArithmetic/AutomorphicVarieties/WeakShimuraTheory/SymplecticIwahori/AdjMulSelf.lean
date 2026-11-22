@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.SymplecticIwahori.OfMap
-import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.SgnMulSelf
+import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.Bundle0004
 
 open UpperTheory.V.GradeZeroInterpolatingElement
 

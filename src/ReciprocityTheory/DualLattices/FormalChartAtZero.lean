@@ -1,6 +1,6 @@
-import ReciprocityTheory.DualLattices.CotangentSurjective
-import ReciprocityTheory.DualLattices.HtLinStatement
-import ReciprocityTheory.DualLattices.StThmAFull
+import ReciprocityTheory.DualLattices.Bundle0005
+import ReciprocityTheory.DualLattices.Bundle0022
+import ReciprocityTheory.DualLattices.Bundle0023
 
 noncomputable section
 

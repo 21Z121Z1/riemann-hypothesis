@@ -1,5 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.RowGenCoeffZero
-import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.ThetaInjHd
+import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.Bundle0002
 
 noncomputable section
 

@@ -1,4 +1,4 @@
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TwistedMuPartInBaseChange
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0061
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.StringRepresentations.PartFrobEigNormO
 open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.N Formalism.ConjugateSelfDual ReciprocityTheory.Gal NumberField IsDedekindDomain Polynomial
 noncomputable section

@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.RatBasisLinearIndependentInt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDividedPowersOfCompOnGeneratorsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0752
 open DividedPowers GlobalTheory.Cris GlobalTheory.PDA
 
 set_option autoImplicit false

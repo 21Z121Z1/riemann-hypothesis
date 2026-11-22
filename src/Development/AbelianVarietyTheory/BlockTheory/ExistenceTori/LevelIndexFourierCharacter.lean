@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.ThProps
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 
 set_option autoImplicit false
 

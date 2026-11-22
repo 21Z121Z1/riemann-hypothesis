@@ -1,13 +1,13 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FixedVectorEqOfStandardData
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsTwIffCanonEq
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0014
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0027
 import Formalism.LocalToGlobal.KernelLattices.TopPin
-import Formalism.LocalToGlobal.KernelLattices.InterlaceAll
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.JetsInIffStepField
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HermitianChartComplexRationalIntegralFormsStatement
+import Formalism.LocalToGlobal.KernelLattices.Bundle0001
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0008
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0450
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.DiagramFitsSourceRank
-import Formalism.UnipotentAdelicQuotients.WeylLatDual
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FormsSharpAtOfValTied
+import Formalism.UnipotentAdelicQuotients.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0268
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions Formalism.L2.Col Formalism.L2.DIV Formalism.L2.Ker Formalism.UG Formalism.L2.Forms GlobalTheory.Mem GlobalTheory.Mem.Chr GlobalTheory.Mem.Col2 GlobalTheory.Mem.Col2.TC Matrix
 attribute [local instance] GlobalTheory.Mem.Col2.starE Formalism.BasicNotions.Host.cmStar
 

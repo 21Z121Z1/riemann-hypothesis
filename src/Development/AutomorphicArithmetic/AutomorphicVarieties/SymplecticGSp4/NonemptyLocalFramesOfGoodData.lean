@@ -1,7 +1,7 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.ExDefs
 import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.Descend
-import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.LocCondQ
-import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.FramedOrigin
+import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.Bundle0010
+import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.Bundle0006
 open NumberField IsDedekindDomain Formalism.ConjugateSelfDual ReciprocityTheory.Gal IsLocalRing UpperTheory.V UpperTheory.V.Base UpperTheory.V.Alg UpperTheory.V.HV UpperTheory.V.GradeZeroInterpolatingElement
 
 namespace UpperTheory.V.GradeZeroInterpolatingElement.SymplecticFrames

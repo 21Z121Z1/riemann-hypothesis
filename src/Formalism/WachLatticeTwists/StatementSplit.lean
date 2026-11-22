@@ -1,4 +1,4 @@
-import Formalism.WachLatticeTwists.Statement
+import Formalism.WachLatticeTwists.Bundle0001
 import Formalism.CharacterColumnKernels.CharacterColumnKernelEqualityForm
 
 open Finset Classical

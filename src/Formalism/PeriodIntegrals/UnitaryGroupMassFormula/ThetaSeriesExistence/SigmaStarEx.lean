@@ -1,11 +1,9 @@
 import Mathlib
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaSeriesExistence.ThetaDerivNe
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaSeriesExistence.Development
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaSeriesExistence.ThetaA
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaSeriesExistence.ThetaNz
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaSeriesExistence.Reduce
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaSeriesExistence.Bundle0002
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaSeriesExistence.Bundle0001
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaSeriesExistence.GenEqOf
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaSeriesExistence.LatExt
 
 namespace PI.SSE
 

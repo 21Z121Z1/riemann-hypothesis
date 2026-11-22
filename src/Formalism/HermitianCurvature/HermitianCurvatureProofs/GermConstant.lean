@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.PtSizeToStd
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0262
 
 namespace Formalism.FourierDecayAlt.P.FormNormSumIdentities
 

@@ -1,4 +1,4 @@
-import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.EvalIdBracketCanonical
+import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.Bundle0014
 import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.QnEvalMap
 
 open MvPolynomial

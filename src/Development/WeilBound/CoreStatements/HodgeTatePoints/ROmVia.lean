@@ -1,9 +1,9 @@
 import Mathlib
-import ReciprocityTheory.DualLattices.CotangentSurjective
-import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsTight
-import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.StepOrderRes
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FundamentalIdealFrobeniusPowersStatement
-import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.XXgrROm
+import ReciprocityTheory.DualLattices.Bundle0005
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0003
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0004
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0044
+import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.Bundle0022
 
 open ReciprocityTheory.PGsh.L2 ReciprocityTheory.PGsh.Up GlobalTheory.CompanionTheory.Ar.GR
 open scoped Matrix

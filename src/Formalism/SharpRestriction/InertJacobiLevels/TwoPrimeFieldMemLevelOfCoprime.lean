@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.InertJacobiLevels.PrimeSupply
+import Formalism.SharpRestriction.InertJacobiLevels.Bundle0004
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 import Formalism.CyclotomicNorms.IrreducibilityOfGoodTuple
 

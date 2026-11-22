@@ -1,7 +1,7 @@
 import Mathlib
-import Development.EtaleCohomology.EtaleSheaves.GeoProof
-import Development.EtaleCohomology.KummerTheory.FinSHen
-import Development.EtaleCohomology.KummerTheory.FinCont
+import Development.EtaleCohomology.EtaleSheaves.Bundle0082
+import Development.EtaleCohomology.KummerTheory.Bundle0013
+import Development.EtaleCohomology.KummerTheory.Bundle0016
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC

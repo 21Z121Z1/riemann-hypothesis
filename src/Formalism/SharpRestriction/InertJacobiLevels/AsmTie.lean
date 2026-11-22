@@ -1,6 +1,5 @@
-import Formalism.SharpRestriction.InertJacobiLevels.SecondTorsionCardPos
-import Formalism.SharpRestriction.InertJacobiLevels.AsmErr
-import Formalism.SharpRestriction.InertJacobiLevels.AsmKap
+import Formalism.SharpRestriction.InertJacobiLevels.Bundle0011
+import Formalism.SharpRestriction.InertJacobiLevels.Bundle0010
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.MulCMemSec
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0024
 
 namespace GlobalTheory.CompanionTheory.Ar.ThA
 

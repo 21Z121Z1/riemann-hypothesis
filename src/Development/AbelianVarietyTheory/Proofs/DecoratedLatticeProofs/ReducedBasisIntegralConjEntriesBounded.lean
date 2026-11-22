@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.AdelicPair
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnipotentUpperInvUpperTriangularBounded
+import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0009
 open Matrix GlobalTheory.ClassFin
 
 namespace GlobalTheory.ReducedBasisBound

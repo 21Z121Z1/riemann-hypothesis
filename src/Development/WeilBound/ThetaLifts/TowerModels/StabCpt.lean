@@ -1,5 +1,5 @@
-import Development.WeilBound.ThetaLifts.TowerModels.ExistsHaarOfIsCompact
-import Development.WeilBound.ThetaLifts.TowerModels.LeviAd
+import Development.WeilBound.ThetaLifts.TowerModels.Bundle0002
+import Development.WeilBound.ThetaLifts.TowerModels.Bundle0003
 
 noncomputable section
 

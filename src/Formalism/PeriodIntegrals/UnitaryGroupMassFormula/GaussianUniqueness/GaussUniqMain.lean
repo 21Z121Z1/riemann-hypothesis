@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.LongWeylElementSquare
+import Formalism.PeriodIntegrals.Bundle0007
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GaussianUniqueness.MulMApply
 
 noncomputable section

@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.RealPlaceAnalysis.SmoothOnGVIff
 import Formalism.RealPlaceAnalysis.StatementU
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CompactExponentialSurjective
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0007
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CompactCasimirHighestWeight
-import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.OrbitStepSpace
+import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.Bundle0003
 
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S Formalism.REAL Formalism.QuantumDeterminants
 open scoped InnerProductSpace ContDiff

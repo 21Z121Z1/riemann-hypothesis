@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.GlobalTheory.GL3.IsometryLinkageAtSplitPrime
-import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.RecursiveLatticeMembership.MemLamOfIff
+import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.RecursiveLatticeMembership.Bundle0001
 
 noncomputable section
 

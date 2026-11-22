@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsSubquotientDetRepParInd
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0049
 
 noncomputable section
 

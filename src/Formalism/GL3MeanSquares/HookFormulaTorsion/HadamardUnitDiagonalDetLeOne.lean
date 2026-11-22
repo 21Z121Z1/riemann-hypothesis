@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.GL3MeanSquares.InverseNormLeOfIntegerInner
+import Formalism.GL3MeanSquares.Bundle0001
 
 namespace Formalism.HermitianLattices.LatticeEstimates
 

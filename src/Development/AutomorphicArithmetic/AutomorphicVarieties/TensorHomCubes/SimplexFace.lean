@@ -1,4 +1,4 @@
-import Development.AutomorphicArithmetic.AutomorphicVarieties.TensorHomCubes.IsAcyclicSpace
+import Development.AutomorphicArithmetic.AutomorphicVarieties.TensorHomCubes.Bundle0001
 
 noncomputable section
 

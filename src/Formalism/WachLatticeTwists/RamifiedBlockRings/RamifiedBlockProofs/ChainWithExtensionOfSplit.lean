@@ -1,5 +1,5 @@
 import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.CompositeOfChainHolds
-import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.SplitExt
+import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.Bundle0002
 
 open Finset Classical
 

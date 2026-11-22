@@ -1,4 +1,4 @@
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.AtBase
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0012
 
 noncomputable section
 

@@ -1,5 +1,4 @@
-import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.IwasawaCompletion.AwayPartMulIotaWPart
-import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.IwasawaCompletion.ExistsUpperUnitaryComplex
+import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.IwasawaCompletion.Bundle0001
 
 noncomputable section
 

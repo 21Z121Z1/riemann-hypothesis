@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.OmStable
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.NonemptyLinearEquivOfPiFinPowFinite
-import Development.AutomorphicSpectrum.PublishedTheorems.Algebra₂.FarguesHodgeTate
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0004
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0007
+import Development.AutomorphicSpectrum.PublishedTheorems.Algebra₂.Bundle0001
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SemiabelianSchemes.AbelianSchemeQuotients.IsAbelianScheme
 
 noncomputable section

@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.TensFactor
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.EigBasic
-import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.LocEmb
-import GroundTheory.AutomorphicForms.CuspidalDiscreteness.FixedOpen
+import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.Bundle0002
+import GroundTheory.AutomorphicForms.CuspidalDiscreteness.Bundle0002
 
 noncomputable section
 

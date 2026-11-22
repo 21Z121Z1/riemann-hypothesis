@@ -1,7 +1,7 @@
 import Mathlib
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshExtB
 import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
-import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.DeterminantCauchySchwarz
+import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0001
 
 open Metric Real Filter Topology Matrix ReciprocityTheory.AnForm.A ReciprocityTheory.AnForm.A.PlurisubharmonicExtension
 open scoped ComplexOrder

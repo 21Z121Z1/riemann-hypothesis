@@ -1,8 +1,8 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.GenericPointSectionHypotheses
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.StatementsFibreRestrKer
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PFibreSectionsFlat
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PRestrQuotTorsionFree
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0028
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0031
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0041
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Kleiman

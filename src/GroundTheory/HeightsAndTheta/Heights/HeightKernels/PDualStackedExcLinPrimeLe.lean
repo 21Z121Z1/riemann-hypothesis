@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualStackedExcResidue
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualCotangentKer
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0045
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0046
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualStackedExcGeoFirst
 set_option maxSynthPendingDepth 1
 

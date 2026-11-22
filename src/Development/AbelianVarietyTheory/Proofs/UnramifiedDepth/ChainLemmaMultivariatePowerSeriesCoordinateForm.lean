@@ -1,9 +1,9 @@
 import Mathlib
 import ReciprocityTheory.DualLattices.DetPolyMulCayleyOmegaPow
-import ReciprocityTheory.DualLattices.VEqZeroOfPowEqOne
+import ReciprocityTheory.DualLattices.Bundle0004
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.PeriodValuation
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.PsWeightCalculus
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.WeightedOrderGePrimePowOfSumPurePowersAdd
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0006
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0007
 
 open ReciprocityTheory.PGsh MvPowerSeries
 

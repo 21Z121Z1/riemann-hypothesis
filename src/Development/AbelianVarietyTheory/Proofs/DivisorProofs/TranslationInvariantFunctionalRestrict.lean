@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TrPApply
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1489
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormIteratedFDerivRemCompLe
 
 noncomputable section

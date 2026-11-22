@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferentiableRisingS
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemIntegersOfMemHatO
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteRingClassGroupOfConductorNeZero
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0503
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0473
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0858
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdicCompactDensity.ExistsNatLocal
 
 noncomputable section

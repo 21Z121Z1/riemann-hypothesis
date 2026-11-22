@@ -1,11 +1,11 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TorusSections.IsTorusOf
-import Formalism.LocalToGlobal.ProjectiveLattices.EtArch
-import Formalism.LocalToGlobal.ProjectiveLattices.FreeBridge
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0040
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0027
 import Formalism.LocalToGlobal.ProjectiveLattices.HostSize
-import Formalism.LocalToGlobal.ProjectiveLattices.CompHt
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.SupBoundPageRows
-import Formalism.LocalToGlobal.ProjectiveLattices.PhiSetPullSub
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0015
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0003
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0029
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.PhiCLeNormalizedValuationProductFormAlgebraicStatement
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions Formalism.L2.Pj ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.EtaForm GlobalTheory.EtaAn
 

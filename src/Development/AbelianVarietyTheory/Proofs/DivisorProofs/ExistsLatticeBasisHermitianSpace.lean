@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FactorResIEqResS
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CompletedLatticeEqAdelicCompletionAndGram
-import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IsPrincipalIdealRingLoc
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0874
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0074
+import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0036
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsRootNear
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NatMulIntegral
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0085
 
 set_option autoImplicit false
 

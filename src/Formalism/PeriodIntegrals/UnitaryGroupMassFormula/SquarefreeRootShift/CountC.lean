@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SquarefreeRootShift.CountB
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SquarefreeRootShift.Bundle0002
 
 open Polynomial
 

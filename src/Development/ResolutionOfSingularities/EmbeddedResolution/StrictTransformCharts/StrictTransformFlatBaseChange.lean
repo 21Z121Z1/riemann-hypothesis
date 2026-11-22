@@ -5,7 +5,7 @@ import Development.ResolutionOfSingularities.Foundations.Blowup.StrictTransform
 import Development.ResolutionOfSingularities.Foundations.Schemes.IdealSheafData
 import Development.ResolutionOfSingularities.Foundations.BlowupUniversalProperty
 import Development.ResolutionOfSingularities.EmbeddedResolution.ResolutionOfSingularities
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SaturationByPowers
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0056
 universe u
 
 open CategoryTheory AlgebraicGeometry CategoryTheory.Limits

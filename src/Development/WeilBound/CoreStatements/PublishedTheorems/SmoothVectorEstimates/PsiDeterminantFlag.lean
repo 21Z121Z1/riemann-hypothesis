@@ -1,5 +1,5 @@
 import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.WhittakerVanishingImpliesZero
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalGLLocalComponentsEventuallySatakeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1347
 import Development.WeilBound.CoreStatements.PublishedTheorems.FiniteGLInvariants.AffineLieInvariants.Imports
 
 open GlobalTheory.CuspRep

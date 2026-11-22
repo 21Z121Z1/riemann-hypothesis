@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CurveV
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2574
 import Formalism.DegreeFormula.PointDegree.PowSum
 
 open MvPolynomial Formalism.DegreeFormula GlobalTheory.FlagPoly GlobalTheory.CovTestDR

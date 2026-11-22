@@ -2,8 +2,8 @@ import Mathlib
 import Formalism.LocalToGlobal.ProjectiveLattices.RosatiLatticeNorms.LamPtClauses
 import Formalism.LocalToGlobal.ProjectiveLattices.HostSize
 import Development.AbelianVarietyTheory.BlockTheory.EvidentLattices.LatticeLetterSources
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.RigidifiedSectionCorrespondenceExistsUniqueNonva
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LatticeEqSpanHostIdealSmul
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0068
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0050
 
 noncomputable section
 

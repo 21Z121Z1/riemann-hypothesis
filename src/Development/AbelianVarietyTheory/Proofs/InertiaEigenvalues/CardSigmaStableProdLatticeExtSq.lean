@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnitLemmaGroup
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LinearDescent
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0002
 open GlobalTheory.UnitLemma Polynomial
 
 noncomputable section

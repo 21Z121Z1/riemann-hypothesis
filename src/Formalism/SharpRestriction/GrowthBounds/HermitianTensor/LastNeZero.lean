@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.LamPolySmulRight
+import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.Bundle0002
 
 noncomputable section
 

@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.ProjectiveLattices.UnifGam
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0047
 
 noncomputable section
 

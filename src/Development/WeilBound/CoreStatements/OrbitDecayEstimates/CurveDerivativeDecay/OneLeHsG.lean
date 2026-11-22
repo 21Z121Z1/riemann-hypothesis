@@ -1,4 +1,4 @@
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.FrobeniusBoundOfMulNearOne
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0006
 
 open MeasureTheory Matrix Topology Metric Formalism.REAL
 open scoped ENNReal

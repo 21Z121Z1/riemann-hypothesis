@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsorsTrivial
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OriginIdeal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosureFiniteEtale
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PointAtZero
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodIffEtaleAt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsZModTorsorFiniteProjectiveBaseChange
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0192
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0235
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0249
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0304
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0318
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0269
 
 open IsLocalRing Polynomial
 open scoped TensorProduct

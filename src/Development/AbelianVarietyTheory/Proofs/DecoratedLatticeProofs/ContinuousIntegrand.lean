@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsQuasiFam
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0012
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.WeilRepresentationContinuous
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InfPartOneSubEInfSmul
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicUnitaryTopology
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0126
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0214
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.EncardSmulMemLeEncardSmulInterNonempty
 
 noncomputable section

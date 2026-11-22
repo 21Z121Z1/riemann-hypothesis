@@ -1,11 +1,7 @@
-import Formalism.LatticeTheta.LatticeThetaProofs.Assembly
-import Formalism.LatticeTheta.LatticeThetaProofs.LatticeSummableDecay
-import Formalism.LatticeTheta.LatticeThetaProofs.Periodization
+import Formalism.LatticeTheta.LatticeThetaProofs.Bundle0002
 import Formalism.LatticeTheta.LatticeThetaProofs.UnfoldCoeff
 import Formalism.LatticeTheta.LatticeThetaProofs.LatticeFourierSeries
-import Formalism.LatticeTheta.LatticeThetaProofs.GaussSchwartz
-import Formalism.LatticeTheta.LatticeThetaProofs.DualLattice
-import Formalism.LatticeTheta.LatticeThetaProofs.CovolumeDual
+import Formalism.LatticeTheta.LatticeThetaProofs.Bundle0001
 
 namespace Formalism.H
 

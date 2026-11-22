@@ -1,7 +1,7 @@
-import Formalism.SharpRestriction.LevelLetterCocycles.UpPositionHypothesis
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0029
 import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.UnivLinkPfA
-import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.U3upPfFilCAnti
-import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.FramePfPt
+import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.Bundle0008
+import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.Bundle0006
 
 noncomputable section
 

@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.FrobeniusContraction.Statement
-import Formalism.FrobeniusContraction.HighestWeightResidueAvoids
+import Formalism.FrobeniusContraction.Bundle0001
+import Formalism.FrobeniusContraction.Bundle0002
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.PeriodIntegrals.UpqRep
 import Formalism.FormalDegreeBessel.StatementG
-import Formalism.FormalDegreeBessel.FinalG
+import Formalism.FormalDegreeBessel.Bundle0002
 
 open Matrix
 open Formalism.QuantumDeterminants (inWb Tz UWset eI esI wI bvec)

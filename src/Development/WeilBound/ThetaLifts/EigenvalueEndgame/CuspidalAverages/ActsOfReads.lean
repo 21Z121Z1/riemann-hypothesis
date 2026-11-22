@@ -1,7 +1,7 @@
-import Development.WeilBound.ThetaLifts.EigenvalueEndgame.CuspidalAverages.ExistsCond
+import Development.WeilBound.ThetaLifts.EigenvalueEndgame.CuspidalAverages.Bundle0001
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.TowerCodimensionTwo
 import Development.WeilBound.ThetaLifts.CartanFactorisation.ExistsBeta
-import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfDict
+import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0004
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsEffAddNsmulDiv
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsVBAndClsDetOfShortExact
-import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.IsAffineHomFromSpecResidueField
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1080
+import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0014
 
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsLevMeas
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0019
 
 noncomputable section
 

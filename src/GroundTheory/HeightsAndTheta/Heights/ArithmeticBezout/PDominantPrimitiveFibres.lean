@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StDominantPrimitiveFibres
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PDominantFibreBound
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PPrimitiveElementFibres
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0003
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0027
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0031
 set_option maxSynthPendingDepth 1
 
 noncomputable section

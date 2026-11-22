@@ -1,6 +1,6 @@
-import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.LagrangianDecomposition.LdExOfLeaves
-import Development.WeilBound.ThetaLifts.LatticeBasics.FrameA
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroConjNegOfCmExtensionStatement
+import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.LagrangianDecomposition.Bundle0001
+import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0020
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1143
 
 noncomputable section
 

@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.CharacterGerms.ConstantCoeffTripleSubstitution
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0043
 
 noncomputable section
 

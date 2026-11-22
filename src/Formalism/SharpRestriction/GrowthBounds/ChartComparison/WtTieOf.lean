@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.GrowthBounds.ChartComparison.StepIn
-import Formalism.LocalRingCardinality.DataGatTies
+import Formalism.LocalRingCardinality.Bundle0001
 
 noncomputable section
 

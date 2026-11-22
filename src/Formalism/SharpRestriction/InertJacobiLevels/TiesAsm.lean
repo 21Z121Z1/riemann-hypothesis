@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.InertJacobiLevels.TiesView
-import Formalism.SharpRestriction.InertJacobiLevels.LambdaRealEqShiftedWeight
+import Formalism.SharpRestriction.InertJacobiLevels.Bundle0006
 
 noncomputable section
 

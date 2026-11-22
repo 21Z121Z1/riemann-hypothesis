@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.SplitDoublingNBlock
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankMirabolicWhittakerEigenspaceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0601
 
 noncomputable section
 

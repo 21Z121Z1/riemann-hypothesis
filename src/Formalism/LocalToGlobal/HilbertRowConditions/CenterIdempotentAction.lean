@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.Divisibility.RowSideTie
-import Formalism.LocalRingCardinality.DataExtra
+import Formalism.LocalRingCardinality.Bundle0007
 
 noncomputable section
 

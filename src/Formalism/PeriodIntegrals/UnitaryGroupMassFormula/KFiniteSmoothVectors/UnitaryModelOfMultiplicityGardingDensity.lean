@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.PeriodIntegrals.UpqRep
-import Formalism.PeriodIntegrals.KFinSmooth
-import Formalism.PeriodIntegrals.HCMult
+import Formalism.PeriodIntegrals.Bundle0015
+import Formalism.PeriodIntegrals.Bundle0014
 
 open MeasureTheory Matrix Topology
 open scoped InnerProductSpace ContDiff

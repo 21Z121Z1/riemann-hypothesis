@@ -1,7 +1,7 @@
 import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.Reduction
 import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.QuadraticSemicharacterIdentityReformulated2
 import Formalism.LocalToGlobal.GlobalTheory.GL3.DeterminantNormOneOfUnitDisc
-import Formalism.LocalRingCardinality.SpanPowerMembership.RelDet
+import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0006
 import Formalism.SharpRestriction.GlobalSchurBounds.StandardIntegralLatticeExists
 
 noncomputable section

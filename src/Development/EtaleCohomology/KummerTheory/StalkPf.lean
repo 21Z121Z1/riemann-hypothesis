@@ -1,4 +1,4 @@
-import Development.EtaleCohomology.KummerTheory.InjSlice
+import Development.EtaleCohomology.KummerTheory.Bundle0001
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry Opposite CochainComplex CochainComplex.HomComplex GlobalTheory.EtC

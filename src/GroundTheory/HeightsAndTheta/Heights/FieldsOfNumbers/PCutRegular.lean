@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Statements
-import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PHilbExactDivide
-import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PIntNumAdd
+import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0006
+import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0004
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.JacobianSmoothness.RingKrullDimLeRingKrullDimQuotientAddOne
 set_option maxSynthPendingDepth 1
 

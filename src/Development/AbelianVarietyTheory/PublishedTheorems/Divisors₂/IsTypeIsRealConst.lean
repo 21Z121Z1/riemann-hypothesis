@@ -1,7 +1,7 @@
 import Mathlib
 import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialOfFun
 import Development.AbelianVarietyTheory.Definitions.Divisors.DiagValExtTraceNonneg
-import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.InterPolyProdSum
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TopologicalKrullDimEqSucc
 
 set_option autoImplicit false

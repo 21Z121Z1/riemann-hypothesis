@@ -1,10 +1,10 @@
 import Mathlib
-import Formalism.PeriodIntegrals.DSInfCharCap
-import Formalism.PeriodIntegrals.IsLowUnitH
+import Formalism.PeriodIntegrals.Bundle0022
+import Formalism.PeriodIntegrals.Bundle0015
 import Formalism.RealPlaceAnalysis.StatementU
 import Formalism.RealPlaceAnalysis.QuotientSettingHolds
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.QdetTopThreeOrders
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirAlgebra.RhoEqRhoCAddRhoN
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0019
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirAlgebra.Bundle0001
 open Finset
 
 namespace GlobalTheory.CompanionTheory.Inh.CapelliCasimir

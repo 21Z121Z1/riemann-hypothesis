@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RevPosRevPos
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsArchimedeanLiftUnitaryGroupProduct
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.CircleHomEqZpow
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CharEqOneOfDetEqOne
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealIsotropicOrOneClass
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0165
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0991
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0050
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0027
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.IndefR.FWT Formalism.L2.Pj
 open MeasureTheory IsDedekindDomain NumberField Matrix Complex
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.FD GlobalTheory GlobalTheory.ThFr GlobalTheory.Ker GlobalTheory.AdSpan

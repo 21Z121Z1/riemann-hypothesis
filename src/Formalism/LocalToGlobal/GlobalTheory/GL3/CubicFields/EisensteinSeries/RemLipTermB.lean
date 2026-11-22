@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.EisensteinSeries.RemLipTermA
+import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.EisensteinSeries.Bundle0001
 
 noncomputable section
 

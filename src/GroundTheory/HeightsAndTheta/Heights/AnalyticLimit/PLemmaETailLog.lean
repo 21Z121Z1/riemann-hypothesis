@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.StLemmaETailLog
-import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.StLemmaETailMass
+import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Bundle0002
+import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Bundle0004
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.StTailLogOfMass
 set_option maxSynthPendingDepth 1
 

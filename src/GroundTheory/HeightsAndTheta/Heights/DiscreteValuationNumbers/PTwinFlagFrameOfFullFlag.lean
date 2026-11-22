@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.ImportsBisMore
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0030
 set_option maxSynthPendingDepth 1
 
 noncomputable section

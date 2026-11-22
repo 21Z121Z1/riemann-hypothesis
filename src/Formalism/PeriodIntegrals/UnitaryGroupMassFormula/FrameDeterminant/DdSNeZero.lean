@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FrameDeterminant.FrameB
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FrameDeterminant.DetOfFrame
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FrameDeterminant.Bundle0001
 
 noncomputable section
 

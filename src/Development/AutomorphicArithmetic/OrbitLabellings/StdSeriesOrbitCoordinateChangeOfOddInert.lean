@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicArithmetic.OrbitLabellings.ColDefs
+import Development.AutomorphicArithmetic.OrbitLabellings.Bundle0001
 import Development.AutomorphicArithmetic.OrbitLabellings.ExistsFrobeniusEquivariantLocalBasisCoordinates
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.StdBases
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0009
 import Formalism.LocalRingCardinality.DataForced
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.SingleLetterBiextensionRelation
 

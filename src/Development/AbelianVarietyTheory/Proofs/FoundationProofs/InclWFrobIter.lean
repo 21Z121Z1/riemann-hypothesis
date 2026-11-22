@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
-import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.SelmerWindowSums
+import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.Bundle0005
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 import Formalism.GaloisCohomology.LocalTateDualityK
 import Formalism.SharpRestriction.LevelLetterCocycles.LocCoh

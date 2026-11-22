@@ -1,6 +1,6 @@
-import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.ContinuousPInfApply
+import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Bundle0001
 import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.ContinuousPInfCoord
-import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.IdeleModuleSectionMul
+import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Bundle0003
 
 noncomputable section
 

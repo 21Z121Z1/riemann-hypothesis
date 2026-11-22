@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.RealGroupsIwasawa
-import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.CarrierEnergyPfLoc
+import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.Bundle0016
 
 open Matrix
 open scoped ComplexOrder InnerProductSpace

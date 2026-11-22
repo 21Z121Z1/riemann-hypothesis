@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Degenerations.ArithBase
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SpanEqSpanMinor
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsAdaptedBasisTestLattice
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0057
 
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry
 open scoped CategoryTheory.Obj

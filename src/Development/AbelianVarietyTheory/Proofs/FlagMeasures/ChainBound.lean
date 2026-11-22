@@ -1,13 +1,13 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ActSingleNeZero
-import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.EigenfunctionFiniteCoefficients
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0008
+import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.Bundle0001
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.FirstSlotSliceSlotMixedCasimirZero
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.IsCompactInvariantOrthogonalInf
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0004
 import Formalism.RealPlaceAnalysis.FinalF
-import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
+import Formalism.RealPlaceAnalysis.Bundle0004
 import Formalism.RealPlaceAnalysis.QuotientSettingHolds
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.QuadraticInequalityBoundHolds
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.WeightLeOfMemWtSpan
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0168
 
 open MeasureTheory Matrix Finset Formalism.MainNotions.S Formalism.REAL Formalism.QuantumDeterminants GlobalTheory.Count GlobalTheory.Dec GlobalTheory.DSId GlobalTheory.Jet
 open scoped InnerProductSpace ComplexOrder

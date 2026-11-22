@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LocClosed
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0013
 
 noncomputable section
 

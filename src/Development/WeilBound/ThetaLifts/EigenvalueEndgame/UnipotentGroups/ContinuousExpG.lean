@@ -1,8 +1,8 @@
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.UnipotentGroups.UnipUGood
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.UnipotentGroups.KerCocompact
-import Development.WeilBound.ThetaLifts.CartanFactorisation.Unimod
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryAdelicGroupTopology
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsCompactAdeleRingModNumberField
+import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1057
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0040
 
 noncomputable section
 

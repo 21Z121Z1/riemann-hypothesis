@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.SettingBlocks
-import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirReductionTheory.OneParameterDerivatives.BesselNVG
+import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirReductionTheory.OneParameterDerivatives.Bundle0001
 import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeLitG
 import Formalism.SharpRestriction.CuspSpanNormBounds.DiscreteSeriesWeylDimension
 import Formalism.HermitianCurvature.BesselNonvanishingReduction
@@ -7,7 +7,7 @@ import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.CoefLoc
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.BesselVectors.Closed
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.BesselVectors.DecLow
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.FinalClosed
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.HWExists
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Bundle0006
 
 namespace Formalism.L2.SG.OwnFacts
 

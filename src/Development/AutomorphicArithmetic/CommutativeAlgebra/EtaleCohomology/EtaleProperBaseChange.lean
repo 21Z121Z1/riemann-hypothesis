@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.LocallyExactCech
+import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.Bundle0001
 import Development.AbelianVarietyTheory.Definitions.Divisors.PullHlComp
 
 noncomputable section

@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ObjectsAlt
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.TwistAlg
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.AmpleRingFiniteSt
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0054
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0010
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0003
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Kleiman.SectionsOverLocalization

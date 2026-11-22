@@ -1,9 +1,9 @@
 import Mathlib
-import GroundTheory.ProfiniteCohomology.LocalClassFormation.OrderInfRes
+import GroundTheory.ProfiniteCohomology.LocalClassFormation.Bundle0001
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.OrderScalars
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.UnramifiedRes
-import GroundTheory.LocalFields.UnramifiedExistence
-import GroundTheory.LocalFields.FiniteExtension
+import GroundTheory.LocalFields.Bundle0007
+import GroundTheory.LocalFields.Bundle0002
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.ProfCoh

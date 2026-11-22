@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.GL2.GJGlobalUnfold
 import GroundTheory.AutomorphicForms.GL2.GJGlobalMean
-import GroundTheory.AutomorphicForms.GL2.GJGlobalRank
+import GroundTheory.AutomorphicForms.GL2.Bundle0001
 import GroundTheory.AutomorphicForms.GL2.GJGlobalMellin
 
 open MeasureTheory Set Filter NumberField ComplexConjugate

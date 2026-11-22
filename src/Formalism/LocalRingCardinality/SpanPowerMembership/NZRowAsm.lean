@@ -2,7 +2,7 @@ import Formalism.LocalRingCardinality.SpanPowerMembership.NZRowZ
 import Formalism.LocalRingCardinality.SpanPowerMembership.ThetaFamilyAdmissibleThree
 import Formalism.SharpRestriction.InertJacobiLevels.ExtraEnt
 import Formalism.SharpRestriction.InertJacobiLevels.ExtraNew
-import Formalism.SharpRestriction.InertJacobiLevels.GaugeExists
+import Formalism.SharpRestriction.InertJacobiLevels.Bundle0005
 
 noncomputable section
 

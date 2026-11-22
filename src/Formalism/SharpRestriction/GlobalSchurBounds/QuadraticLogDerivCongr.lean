@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GlobalTheoremInputs
+import Formalism.SharpRestriction.Bundle0002
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.GaloisMapComplexConjugation
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.JointDModelAppliesUnitLattice

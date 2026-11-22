@@ -1,7 +1,7 @@
 import CompanionTheory.RealGroups.FormalDegrees.ArchimedeanFormalDegrees.MomB
 import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.InConeRefl
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.ProdSubLtEqFactorial
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.PolarJmConjTranspose
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.Bundle0001
 
 noncomputable section
 

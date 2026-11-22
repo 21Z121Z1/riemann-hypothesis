@@ -1,10 +1,10 @@
 import Mathlib
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-import Formalism.SharpRestriction.LevelLetterCocycles.ChainRows
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BlochKatoRightExact
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0018
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0647
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsComponentEquiv
-import Development.AutomorphicSpectrum.Proofs.NonGaloisProofs.LinearRelationExactSequenceDimStatement
+import Development.AutomorphicSpectrum.Proofs.NonGaloisProofs.Bundle0002
 
 noncomputable section
 

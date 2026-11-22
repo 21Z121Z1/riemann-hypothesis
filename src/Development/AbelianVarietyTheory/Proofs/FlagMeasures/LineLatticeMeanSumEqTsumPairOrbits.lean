@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsLatMeasurableConst
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurePreservingMulLeft
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsSmallEqZero
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurableTranslatedLatticeFunctionsStatement
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0179
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0193
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0225
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LatticeNonzeroVectorPairNormalForms
 
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S GlobalTheory.Count GlobalTheory.FlagMeas GlobalTheory.FlagBase

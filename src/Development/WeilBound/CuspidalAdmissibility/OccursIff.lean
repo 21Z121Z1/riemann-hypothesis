@@ -1,6 +1,5 @@
 import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.SummandFactor
-import Development.WeilBound.CuspidalAdmissibility.OccPair
-import Development.WeilBound.CuspidalAdmissibility.OccTrace
+import Development.WeilBound.CuspidalAdmissibility.Bundle0001
 import Development.WeilBound.CuspidalAdmissibility.CuspProjectionOrthogonality
 
 noncomputable section

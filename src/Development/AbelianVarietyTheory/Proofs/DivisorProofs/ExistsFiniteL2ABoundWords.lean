@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUSplittingInl
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ImportsBis
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledUnitaryPartnerDiagStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsContOnOfLocal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdeleJoinZero
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1549
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0273
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1983
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0226
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1558
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergWordL2Bound
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.L2.Theta

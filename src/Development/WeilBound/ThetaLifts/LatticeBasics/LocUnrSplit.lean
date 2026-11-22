@@ -1,8 +1,8 @@
-import Development.WeilBound.ThetaLifts.LatticeBasics.LocUnr
+import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0018
 import Development.WeilBound.ThetaLifts.LatticeBasics.LocUnrSplitA
 import Development.WeilBound.ThetaLifts.LatticeBasics.LocUnrSplitL
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormSatakeLeOfUnitarySphericalGL
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormUniformiserEqInvAbsNorm
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0256
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0152
 
 noncomputable section
 

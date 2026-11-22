@@ -1,13 +1,13 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.PerCEmb
-import Development.AbelianVarietyTheory.Definitions.Divisors.MarkAd
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CplxOfFrame
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinTensAlgebraMap
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjAGphiEqSum
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaReadingLinearInjectiveAtOrthonormalFrame
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HxTranslateExponent
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0029
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0040
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0913
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0919
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0928
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1617
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0944
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenMapTranspose
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.OmVacuumEqSplitFacSmulSum
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0082
 
 open NumberField Matrix Complex MeasureTheory IsDedekindDomain
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.FD GlobalTheory GlobalTheory.ThFr GlobalTheory.Dict GlobalTheory.AdTh

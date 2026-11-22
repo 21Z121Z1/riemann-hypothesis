@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.LocalToGlobal.Columns.FiniteSumNonzeroLargeDepth
 import Formalism.LocalToGlobal.Columns.BaseLemmas
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNatCongrOfAbsNormPrime
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCharactersPrescribedValues
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0099
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0097
 
 open NumberField IsDedekindDomain Formalism.L2.Col
 open Formalism.L2.Host (HChar atFin IsUnitAt)

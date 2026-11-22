@@ -1,17 +1,7 @@
-import Development.EtaleCohomology.DivisorCycles.Imports
-import Development.EtaleCohomology.DivisorCycles.FinSpecLie
-import Development.EtaleCohomology.DivisorCycles.FinDegAll
+import Development.EtaleCohomology.DivisorCycles.Bundle0008
+import Development.EtaleCohomology.DivisorCycles.Bundle0003
+import Development.EtaleCohomology.DivisorCycles.Bundle0007
 import Development.EtaleCohomology.DivisorCycles.FinStruct
-import Development.EtaleCohomology.DivisorCycles.FinKey
-import Development.EtaleCohomology.DivisorCycles.FinBigCorner
-import Development.EtaleCohomology.DivisorCycles.FinSemis
-import Development.EtaleCohomology.DivisorCycles.FinMatUnits
-import Development.EtaleCohomology.DivisorCycles.FinRep
-import Development.EtaleCohomology.DivisorCycles.FinDenseAlg
-import Development.EtaleCohomology.DivisorCycles.FinFinSub
-import Development.EtaleCohomology.DivisorCycles.FinFinDense
-import Development.EtaleCohomology.DivisorCycles.FinFinPoly
-import Development.EtaleCohomology.DivisorCycles.FinFinEmbed
 
 open Matrix PositivityTheory.AutomorphicGaloisHodgeTate.Div
 namespace LateralTheory.DivDb

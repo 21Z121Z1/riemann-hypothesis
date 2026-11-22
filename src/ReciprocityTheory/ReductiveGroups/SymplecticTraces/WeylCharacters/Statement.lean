@@ -1,5 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.Branch
-import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.BlockCombStatement
+import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.Bundle0001
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.PsiExistsStatement
 import Formalism.LocalRingCardinality.DataCoeff
 

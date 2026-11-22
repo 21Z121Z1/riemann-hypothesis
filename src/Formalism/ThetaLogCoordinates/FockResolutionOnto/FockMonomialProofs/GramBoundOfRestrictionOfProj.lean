@@ -1,5 +1,5 @@
-import Formalism.ThetaLogCoordinates.FockResolutionOnto.StatementC
-import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.PartnerDeterminantHolds
+import Formalism.ThetaLogCoordinates.FockResolutionOnto.Bundle0001
+import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.Bundle0002
 import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.FiltrationBotHolds
 import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.RestrictionMinMaxIntHolds
 

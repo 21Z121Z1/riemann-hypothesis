@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsSMulRegularNatCast
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0038
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtOmPHtEval
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsHTLatOf
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FlgOfFlagClSpec
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0045
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0807
 
 set_option autoImplicit false
 

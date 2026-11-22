@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EquivOfISupRange
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0126
 open GlobalTheory.CuspRep
 
 private theorem iSup_range_of_jointly_injective {R M S N I : Type} [Ring R] [AddCommGroup M] [Module R M]

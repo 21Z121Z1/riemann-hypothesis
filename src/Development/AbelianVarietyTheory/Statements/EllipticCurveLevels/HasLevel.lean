@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Statements.EllipticCurveLevels.ClosedAtLConclusionOfMem
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.RestrictsSelf
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0020
 
 noncomputable section
 

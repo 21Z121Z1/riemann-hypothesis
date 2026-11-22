@@ -1,9 +1,9 @@
 import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
-import Formalism.LocalToGlobal.IndefiniteReal.WeilFull
-import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.TwoSplitIdem
-import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.StepVecThetaLem
-import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.BaseSt
-import Formalism.LocalToGlobal.IndefiniteReal.PeterssonHilbertSpace
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0020
+import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0003
+import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0005
+import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0002
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0021
 
 noncomputable section
 

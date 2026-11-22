@@ -1,4 +1,4 @@
-import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.QsMnTranspose
+import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.Bundle0002
 
 noncomputable section
 

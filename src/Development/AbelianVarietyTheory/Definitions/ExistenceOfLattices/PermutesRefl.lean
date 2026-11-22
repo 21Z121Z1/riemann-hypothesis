@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Statements.PrincipalLattices.FiniteDimensionalBase
-import Formalism.LocalToGlobal.ProjectiveLattices.CompHt
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0015
 
 noncomputable section
 

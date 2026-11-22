@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.QuotientMetricDivisors.TheoremDivIneqRows
+import Formalism.QuotientMetricDivisors.Bundle0005
 
 open Finset
 

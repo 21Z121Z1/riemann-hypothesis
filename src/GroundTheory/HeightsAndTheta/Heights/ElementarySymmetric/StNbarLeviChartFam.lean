@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.StNbarChartSemiposFam
+import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.Bundle0026
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StNbarLeviChart
 set_option maxSynthPendingDepth 1
 

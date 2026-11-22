@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.ProjectiveLattices.RowDeg
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0002
 
 set_option autoImplicit false
 

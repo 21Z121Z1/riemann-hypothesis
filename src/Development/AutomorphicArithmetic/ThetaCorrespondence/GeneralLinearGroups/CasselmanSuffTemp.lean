@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NonemptyEquivMultiProdOne
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsTemperedCoeff
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0017
 
 noncomputable section
 

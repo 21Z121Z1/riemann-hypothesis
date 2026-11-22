@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.RhsWLim
+import Formalism.PeriodIntegrals.Bundle0009
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeightedLimitGauge.VolumeLieE
 
 set_option linter.unusedVariables false

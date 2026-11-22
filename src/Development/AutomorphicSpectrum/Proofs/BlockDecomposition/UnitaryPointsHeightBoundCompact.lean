@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CvecSurjective
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0520
 
 set_option maxSynthPendingDepth 1
 

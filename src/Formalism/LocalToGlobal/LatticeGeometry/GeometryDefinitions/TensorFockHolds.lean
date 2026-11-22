@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.LatticeGeometry.GeometryDefinitions.KroneckerProductDet
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ProdFactorialSupportSubSingle
+import Formalism.LocalToGlobal.LatticeGeometry.GeometryDefinitions.Bundle0001
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0004
 
 open Matrix MvPolynomial
 open scoped Kronecker

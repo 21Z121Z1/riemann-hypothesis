@@ -1,4 +1,4 @@
-import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.LatDefs
+import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.Bundle0003
 import Formalism.ThetaLogCoordinates.FockResolutionOnto.MulEarlyModP
 import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.Vanish
 import Formalism.ThetaLogCoordinates.TraceIsometryWeights.DischargeHeightBound

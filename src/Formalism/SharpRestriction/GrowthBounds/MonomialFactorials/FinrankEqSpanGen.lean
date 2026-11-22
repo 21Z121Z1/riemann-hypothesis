@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.BlockBoundOfDualFamilies
+import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0008
 import Lemmata.GeneralBFactLeftTerForm.Imports
 
 noncomputable section

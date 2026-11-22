@@ -1,12 +1,12 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotropicHermitian
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMaxThOne
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOfMemSpanImage
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToGAdMat
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1456
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1106
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1462
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMulRightInvariantHaarAdelicUnitaryGroupHermiti
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewHermitianTwistToHermitian
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryAdelicGroupTopology
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1461
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1057
 
 noncomputable section
 

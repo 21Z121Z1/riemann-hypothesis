@@ -1,10 +1,10 @@
 import Mathlib
 import Formalism.LocalToGlobal.Divisibility.MemberDIV
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChKerCCongr
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0523
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.IsLinked
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.TwArgs
-import Formalism.LocalToGlobal.IndefiniteReal.NonzeroIndexPlaceIndepConstants
-import BuildAid.D3
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0030
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0036
+import BuildAid.Bundle0001
 
 noncomputable section
 

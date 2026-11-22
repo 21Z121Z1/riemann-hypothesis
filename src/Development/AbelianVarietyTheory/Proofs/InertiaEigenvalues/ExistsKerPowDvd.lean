@@ -5,9 +5,8 @@ import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AcrisTorsio
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUniqueIsEval
 import Development.AbelianVarietyTheory.CrystallinePeriods.RingIface
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsCrisP
-import Development.AbelianVarietyTheory.CrystallinePeriods.CrisMaps
+import Development.AbelianVarietyTheory.CrystallinePeriods.Bundle0001
 import Development.AbelianVarietyTheory.CrystallinePeriods.CrisMapsLoc
-import Development.AbelianVarietyTheory.CrystallinePeriods.RingBasics
 
 noncomputable section
 

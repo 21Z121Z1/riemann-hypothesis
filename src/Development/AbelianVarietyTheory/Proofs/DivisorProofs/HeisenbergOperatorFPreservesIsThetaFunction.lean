@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfPartFPlaceIdem
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsOpenNsmulAdelicCompletionOfVectorSet
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasDerivAtOfContinuousRealToComplexExponential
-import GroundTheory.GlobalFields.TateThesis.NoSmallSubgroups
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1117
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0008
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0156
+import GroundTheory.GlobalFields.TateThesis.Bundle0002
 
 noncomputable section
 

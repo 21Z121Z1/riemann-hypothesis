@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.GroupStructureDefs
-import GroundTheory.LocalFields.RamificationStructure
-import GroundTheory.LocalFields.UnramifiedRootsOfUnity
+import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Bundle0001
+import GroundTheory.LocalFields.Bundle0007
+import GroundTheory.LocalFields.Bundle0005
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.ProfCoh

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.HeckeCharEqOfLAdicRealisation
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0008
 
 noncomputable section
 

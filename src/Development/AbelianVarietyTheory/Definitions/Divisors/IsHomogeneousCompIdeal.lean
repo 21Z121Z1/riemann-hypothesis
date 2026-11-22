@@ -1,9 +1,9 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.CurveComp
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0042
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsProbabilityMeasureMuPart
 import Development.AbelianVarietyTheory.Definitions.Divisors.AevalEqZeroOfMemConeIdeal
-import Development.AbelianVarietyTheory.Proofs.GenericRegularity.GenFrExAndGenFromTest
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.EqualVolumeMeanCorrection
+import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0037
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0019
 
 set_option autoImplicit false
 

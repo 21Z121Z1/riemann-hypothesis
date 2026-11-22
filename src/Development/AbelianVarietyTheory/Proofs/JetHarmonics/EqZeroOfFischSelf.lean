@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.RowDeg
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0002
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.InvariantOperatorValueTriangularChange
 
 set_option autoImplicit false

@@ -1,6 +1,6 @@
 import Mathlib
 import CompanionTheory.ThickeningEstimates.LieGroupReduction.SiegelCore
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsLevi
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0088
 open NumberField IsDedekindDomain Matrix Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.AdelicU GlobalTheory.SiegelSet CompanionTheory.ThKR GlobalTheory.CompanionTheory.KFin
 open Formalism.UG (cT)
 open scoped TensorProduct

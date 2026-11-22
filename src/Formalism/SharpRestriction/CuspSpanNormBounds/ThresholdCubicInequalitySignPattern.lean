@@ -13,9 +13,9 @@ import Formalism.SharpRestriction.CuspSpanNormBounds.CayleySignature
 import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusProjectedBounds
 import Formalism.SharpRestriction.CuspSpanNormBounds.AdmissibleBoundsFromSource
 import Formalism.SharpRestriction.CuspSpanNormBounds.PExtra
-import Formalism.SharpRestriction.CuspSpanNormBounds.SBridge
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0008
 import Formalism.YangianSpanCharacter.YangianRelationFirst
-import Formalism.FormalDegreeBessel.FinalG
+import Formalism.FormalDegreeBessel.Bundle0002
 import Formalism.FormalDegreeBessel.FinalDS
 import Formalism.FormalDegreeBessel.FinalIO
 import Formalism.RealPlaceAnalysis.FinalF

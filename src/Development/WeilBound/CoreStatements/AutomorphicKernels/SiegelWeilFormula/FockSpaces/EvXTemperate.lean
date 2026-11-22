@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.GlobalFields.TateThesis.GaussianSchwartz
+import GroundTheory.GlobalFields.TateThesis.Bundle0002
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.NullSec
 
 noncomputable section

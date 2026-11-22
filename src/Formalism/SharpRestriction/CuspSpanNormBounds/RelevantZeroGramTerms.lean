@@ -4,7 +4,7 @@ import Formalism.RealPlaceAnalysis.InstMeasurableSpaceUJ
 import Formalism.FormalDegreeBessel.StatementDS
 import Formalism.FormalDegreeBessel.StatementRP
 import Formalism.SharpRestriction.CuspSpanNormBounds.DataS
-import Formalism.SharpRestriction.CuspSpanNormBounds.Point
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0001
 
 open MeasureTheory Matrix Finset
 open scoped InnerProductSpace ContDiff

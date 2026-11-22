@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.Columns.WmLemmas
-import Formalism.FlagUnipotentLattices.IdealCountLeWAsm
+import Formalism.LocalToGlobal.Columns.Bundle0010
+import Formalism.FlagUnipotentLattices.Bundle0007
 import Lemmata.GeneralBFactRightMore.Imports
 
 noncomputable section

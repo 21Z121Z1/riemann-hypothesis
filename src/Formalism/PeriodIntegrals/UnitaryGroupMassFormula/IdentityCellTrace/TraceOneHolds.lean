@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IdentityCellTrace.TermIdIffInSOf
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.CMTraceOnto
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0002
 
 noncomputable section
 

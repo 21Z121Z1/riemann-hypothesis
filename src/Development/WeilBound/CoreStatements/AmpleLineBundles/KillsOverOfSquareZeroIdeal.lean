@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCocharLie
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0003
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
 import Development.WeilBound.CoreStatements.AmpleLineBundles.SquareZeroDeformationAdditivity
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCocharLieLieModel
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0008
 
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry NumberField
 open scoped CategoryTheory.Obj

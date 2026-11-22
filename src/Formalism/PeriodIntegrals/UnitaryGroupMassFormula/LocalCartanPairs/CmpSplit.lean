@@ -1,5 +1,4 @@
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalCartanPairs.CmpPair
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalCartanPairs.SplOff
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalCartanPairs.Bundle0002
 
 namespace PI.SqPair.LCP
 

@@ -1,6 +1,6 @@
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.AParamSt
-import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.LintegralImageEqLintegralNormSqDetMul
-import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
+import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0004
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0001
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PartsAlg
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.MdiscSt
 

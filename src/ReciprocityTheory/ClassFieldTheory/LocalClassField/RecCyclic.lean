@@ -1,10 +1,10 @@
 import Mathlib
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecPairDefs
-import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecPair
-import ReciprocityTheory.ClassFieldTheory.LocalClassField.NormOpen
-import ReciprocityTheory.ClassFieldTheory.LocalClassField.CyclicBr
-import ReciprocityTheory.ClassFieldTheory.LocalClassField.EqZeroOfMemBrKerOfCoprime
-import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecCyclicB
+import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0018
+import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0014
+import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0012
+import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0010
+import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0020
 
 namespace ReciprocityTheory.DiscreteGroups.LocalClassField
 

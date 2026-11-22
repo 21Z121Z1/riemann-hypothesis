@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.GL2.GJZetaDefs
-import GroundTheory.AutomorphicForms.HaarCosets
+import GroundTheory.AutomorphicForms.GL2.Bundle0002
+import GroundTheory.AutomorphicForms.Bundle0008
 set_option maxSynthPendingDepth 1
 
 noncomputable section

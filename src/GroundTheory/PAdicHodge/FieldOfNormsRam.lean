@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.PAdicHodge.FieldOfNormsTower
-import GroundTheory.LocalFields.DifferentGalois
-import GroundTheory.LocalFields.RamificationStructure
+import GroundTheory.LocalFields.Bundle0010
+import GroundTheory.LocalFields.Bundle0007
 import GroundTheory.PAdicHodge.FieldOfNormsUpper
 set_option maxSynthPendingDepth 1
 

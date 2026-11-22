@@ -1,5 +1,5 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDRInvDefs
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdjointInverseTranslate.DetTransposeApply
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0164
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdjointInverseTranslate.Bundle0002
 
 open Formalism.REAL Formalism.QuantumDeterminants Formalism.FourierDecayAlt
 

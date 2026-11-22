@@ -1,7 +1,6 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.VAtVNeBot
-import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
-import Formalism.LocalToGlobal.ProjectiveLattices.CoreProofs
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
 
 set_option synthInstance.maxHeartbeats 400000
 

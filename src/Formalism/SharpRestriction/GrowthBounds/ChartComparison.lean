@@ -1,8 +1,7 @@
 import Formalism.SharpRestriction.GrowthBounds.ChartComparison.KerLabelsMu
 import Formalism.SharpRestriction.GrowthBounds.ChartComparison.CmpJMemSpan
-import Formalism.SharpRestriction.GrowthBounds.ChartComparison.IntAtJIffN
-import Formalism.SharpRestriction.GrowthBounds.ChartComparison.HtupWLeHtupJ
-import Formalism.SharpRestriction.GrowthBounds.ChartComparison.TwPinned
+import Formalism.SharpRestriction.GrowthBounds.ChartComparison.Bundle0001
+import Formalism.SharpRestriction.GrowthBounds.ChartComparison.Bundle0002
 
 noncomputable section
 

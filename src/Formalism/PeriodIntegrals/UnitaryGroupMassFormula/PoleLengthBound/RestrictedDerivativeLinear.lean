@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PoleLengthBound.Vanish
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PoleLengthBound.Bundle0002
 
 noncomputable section
 

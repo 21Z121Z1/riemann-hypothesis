@@ -1,5 +1,5 @@
 import Formalism.FilteredPoleLength.LocalDescentLevels.LocalStepClosedOf
-import Formalism.FilteredPoleLength.LocalDescentLevels.LeadingTermLength
+import Formalism.FilteredPoleLength.LocalDescentLevels.Bundle0006
 
 namespace Formalism.LatticeBaseChangeAlt
 

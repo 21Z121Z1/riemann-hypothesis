@@ -1,5 +1,5 @@
-import Formalism.IncomingBounds.LevelTail
-import Formalism.IncomingBounds.FrobOrbitPeriod
+import Formalism.IncomingBounds.Bundle0002
+import Formalism.IncomingBounds.Bundle0001
 
 noncomputable section
 open scoped BigOperators

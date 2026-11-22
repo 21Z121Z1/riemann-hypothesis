@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.CharacterGerms.FirstVanishingAt
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0026
 
 set_option autoImplicit false
 

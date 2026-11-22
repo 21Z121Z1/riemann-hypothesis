@@ -1,14 +1,8 @@
-import Formalism.LogSumExpBounds.StatementE
-import Formalism.LogSumExpBounds.CharacterSumPhase.LogSumExpBoundHolds
-import Formalism.LogSumExpBounds.CharacterSumPhase.NuclearNormBoundHolds
-import Formalism.LogSumExpBounds.CharacterSumPhase.RankLeOfSupport
-import Formalism.LogSumExpBounds.CharacterSumPhase.WeightedOffDiagonalHolds
-import Formalism.LogSumExpBounds.CharacterSumPhase.KappaModulusHolds
+import Formalism.LogSumExpBounds.Bundle0001
+import Formalism.LogSumExpBounds.CharacterSumPhase.Bundle0002
+import Formalism.LogSumExpBounds.CharacterSumPhase.Bundle0001
 import Formalism.LogSumExpBounds.CharacterSumPhase.DetMulDiagonalMulEqSum
 import Formalism.LogSumExpBounds.CharacterSumPhase.DescEquivLiftEquiv
-import Formalism.LogSumExpBounds.CharacterSumPhase.LatSum
-import Formalism.LogSumExpBounds.CharacterSumPhase.DecayAsm
-import Formalism.LogSumExpBounds.CharacterSumPhase.ZLiftAsm
 
 namespace Formalism.NuclearRankWeightBounds.Top
 

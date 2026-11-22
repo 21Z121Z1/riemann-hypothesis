@@ -1,8 +1,7 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.ThProps
-import Formalism.LocalToGlobal.ProjectiveLattices.CuspFree
-import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.JetRangeLevelFactor
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MinorsDisjointColumnsHarmonic
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
+import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0018
 
 set_option autoImplicit false
 

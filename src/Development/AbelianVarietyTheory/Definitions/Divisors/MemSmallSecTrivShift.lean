@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsClosedImmersionGenericPoint
-import Development.AbelianVarietyTheory.Definitions.Divisors.VolumeBallOne
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0039
 
 set_option autoImplicit false
 

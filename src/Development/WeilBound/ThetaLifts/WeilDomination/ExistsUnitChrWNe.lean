@@ -1,5 +1,5 @@
 import Development.WeilBound.ThetaLifts.WeilDomination.FacNeGauss
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsSplitChartOne
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0327
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RamificationIdxEqOneOfIsSquare
 
 noncomputable section

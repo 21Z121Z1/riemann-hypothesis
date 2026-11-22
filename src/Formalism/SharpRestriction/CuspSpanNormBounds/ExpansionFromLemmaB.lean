@@ -1,6 +1,6 @@
 import Formalism.SharpRestriction.CuspSpanNormBounds.TheoremBConstants
 import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeCSchur
-import Formalism.SharpRestriction.CuspSpanNormBounds.UnimodularSchurMeasures.FramedTwoCoboundaries
+import Formalism.SharpRestriction.CuspSpanNormBounds.UnimodularSchurMeasures.Bundle0006
 import Formalism.SharpRestriction.CuspSpanNormBounds.UnimodularSchurMeasures.OrderedAtRanksOfPositionElement
 import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeCSB
 

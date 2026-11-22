@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsZModTorsorIff
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0300
 open CategoryTheory Limits TensorProduct
 
 noncomputable section

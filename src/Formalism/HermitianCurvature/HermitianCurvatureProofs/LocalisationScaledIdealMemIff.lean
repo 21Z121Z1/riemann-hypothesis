@@ -1,7 +1,7 @@
 import Formalism.HermitianCurvature.PrimeToDifferent
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.DualIdealInclusion
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.FirstEmbeddingOne
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.DualVolumePowerIdentity
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0002
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0014
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0003
 
 namespace Formalism.FourierDecayAlt.P.S6x2
 

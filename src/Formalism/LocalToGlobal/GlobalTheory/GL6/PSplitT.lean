@@ -1,6 +1,6 @@
-import Formalism.LocalToGlobal.GlobalTheory.GL6.AdmissibleOfSplitAndRoundTrips
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0004
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-import Formalism.LocalRingCardinality.IntCastDvdOfDvdIntegers
+import Formalism.LocalRingCardinality.Bundle0001
 
 noncomputable section
 

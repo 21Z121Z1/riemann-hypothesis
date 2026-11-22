@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.FunctionField.PlaceDefs
 import GroundTheory.FunctionField.PlaceBasic
-import GroundTheory.FunctionField.Approximation
+import GroundTheory.FunctionField.Bundle0001
 import GroundTheory.FunctionField.Divisor
 import GroundTheory.FunctionField.DivisorDegree
 import GroundTheory.FunctionField.Repartition

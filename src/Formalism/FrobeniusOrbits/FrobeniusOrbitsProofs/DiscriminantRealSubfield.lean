@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.FrobeniusOrbits.DiscrMaximalRealCyclotomic
+import Formalism.FrobeniusOrbits.Bundle0001
 
 open NumberField IntermediateField Polynomial
 

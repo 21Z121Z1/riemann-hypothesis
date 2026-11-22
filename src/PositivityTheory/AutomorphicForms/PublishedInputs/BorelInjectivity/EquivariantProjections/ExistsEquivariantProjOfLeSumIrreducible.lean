@@ -1,4 +1,4 @@
-import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.BasicForm
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0001
 open GlobalTheory.BorelCoh CategoryTheory
 open scoped ContDiff Matrix
 

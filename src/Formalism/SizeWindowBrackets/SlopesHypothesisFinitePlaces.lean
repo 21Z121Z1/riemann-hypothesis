@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.HarderNarasimhan.StatementPl
-import Formalism.SizeWindowBrackets.RealSlopeBoundsSplit
+import Formalism.SizeWindowBrackets.Bundle0001
 
 open Module NumberField
 

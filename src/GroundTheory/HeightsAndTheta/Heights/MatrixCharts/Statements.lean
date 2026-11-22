@@ -1,5 +1,5 @@
 import Mathlib
-import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.IsPshLocallyIntegrableStatement
+import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0001
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.GaXiSplit
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0150
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RegularisedPairingViaPhase
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HermitianFormFactor
 

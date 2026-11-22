@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.RestrLenRestrictSt
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.RestrictionLocal
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PPrimeFiltrationPoint
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0024
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0017
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0005
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PPrimeFiltrationRestrict
 set_option maxSynthPendingDepth 1
 

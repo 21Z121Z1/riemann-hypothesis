@@ -1,7 +1,7 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.Classical
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.MSplitDefs
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.TopNilDefs
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.HkDefs
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0004
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0005
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0003
 
 noncomputable section
 

@@ -1,15 +1,15 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0004
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.PInjective
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsSymplecticBasisLagrangianBetween
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SymplecticUnipotentShape
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0005
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0004
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SiegelOfRiemann
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.FromBlocksMapIntCastMemSymplecticGroup
 import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
-import GroundTheory.HeightsAndTheta.Heights.Regularisation.Assembly
+import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0008
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.PRiemannExtensionSlices
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.PPuncturedExpOrder
-import GroundTheory.HeightsAndTheta.Heights.Regularisation.PLogCoverDescent
+import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0005
 
 open Filter Topology Matrix Metric GroundTheory.Heights₂.Heights.Regular
 

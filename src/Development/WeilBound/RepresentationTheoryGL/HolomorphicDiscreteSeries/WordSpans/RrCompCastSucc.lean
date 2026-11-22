@@ -1,6 +1,6 @@
 import Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.WordSpans.WordSpan
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QmRowExp
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QmColExp
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0019
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0016
 
 noncomputable section
 

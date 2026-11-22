@@ -1,5 +1,5 @@
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicFourierRealisesWeylElementStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharacterInvariantAdelicFormEqMulEvalZeroStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1918
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2027
 import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.DarbouxCharts.TChart
 
 noncomputable section

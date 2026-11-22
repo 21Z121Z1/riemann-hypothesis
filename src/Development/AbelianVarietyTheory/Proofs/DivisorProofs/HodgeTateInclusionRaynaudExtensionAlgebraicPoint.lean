@@ -2,9 +2,9 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsLatBasisHtLatIffSpanEq
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CharAtOfMultiplicativeSeries
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsCharactersBoundedMinorsOfHodgeTateChartBou
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsOpenOfRangeGenericSubset
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.HodgeTateInclusionChartCharacters
-import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.AddOfPtPt
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0117
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0084
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0015
 
 set_option autoImplicit false
 

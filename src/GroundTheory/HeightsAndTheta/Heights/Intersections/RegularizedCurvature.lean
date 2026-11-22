@@ -1,8 +1,8 @@
 import Mathlib
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.ADensStC
-import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
-import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.LeviOneEqLaplacianThm
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0007
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.Bundle0011
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0001
+import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0004
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ArithModel
 set_option maxSynthPendingDepth 1
 

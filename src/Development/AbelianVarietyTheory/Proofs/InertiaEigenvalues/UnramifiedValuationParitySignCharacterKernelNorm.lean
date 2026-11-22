@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FourierMatch
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsMulStarEqOfNormOneUnramifiedQuadraticStatement
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0099
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology
 
 namespace GlobalTheory.EtaChar

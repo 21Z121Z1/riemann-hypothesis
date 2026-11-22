@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.LinIndepOneDelta
+import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0001
 
 noncomputable section
 

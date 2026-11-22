@@ -1,4 +1,4 @@
-import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.FinIdemSmulOfReal
+import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0011
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutLatA
 
 noncomputable section

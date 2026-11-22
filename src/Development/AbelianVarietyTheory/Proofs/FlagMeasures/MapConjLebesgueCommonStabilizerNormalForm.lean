@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsNormalFormStabilizerMeasure
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0009
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicLeviEmbeddingHomomorphismProperties
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicStabilizerRadicalStructure
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ContinuousUpperOff
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0134
 
 noncomputable section
 

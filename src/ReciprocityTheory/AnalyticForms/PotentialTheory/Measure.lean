@@ -1,6 +1,6 @@
 import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialPullbackStatement
-import ReciprocityTheory.AnalyticForms.PotentialTheory.LocDens
-import ReciprocityTheory.AnalyticForms.PotentialTheory.Partition
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0005
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0004
 
 namespace ReciprocityTheory.AnForm.M
 

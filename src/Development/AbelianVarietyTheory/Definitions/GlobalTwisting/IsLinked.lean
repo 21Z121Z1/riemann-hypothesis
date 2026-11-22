@@ -1,13 +1,13 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ThetaChr
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0043
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ColumnCompatibleSelection
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ToSTiesRPin
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0026
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DivisionPairOfAdelicFormsFaceColumnsData
 import Formalism.LocalToGlobal.CarriedPlMap
 import Formalism.LocalToGlobal.SelSideN
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.TwArgs
-import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.DivRows3GIff
-import Formalism.LocalToGlobal.Divisibility.ColPins
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0030
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0006
+import Formalism.LocalToGlobal.Divisibility.Bundle0004
 
 noncomputable section
 

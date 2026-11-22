@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.CechDoubleSt
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PCechDSq
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0030
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0005
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PCechDoubleStair
 set_option maxSynthPendingDepth 1
 

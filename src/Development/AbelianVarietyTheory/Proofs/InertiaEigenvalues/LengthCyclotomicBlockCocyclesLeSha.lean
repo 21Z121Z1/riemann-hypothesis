@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LenCob
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ActDEqOfEqOne
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0008
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0242
 
 noncomputable section
 

@@ -1,6 +1,6 @@
-import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.CMemPolyT
+import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.Bundle0004
 import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.Normal
-import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.BurnsideMat
+import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.Bundle0003
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.SpacedProductLowerBound
 
 open Finset Classical

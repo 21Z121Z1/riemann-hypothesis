@@ -1,11 +1,10 @@
 import Mathlib
-import Formalism.LocalToGlobal.CharacterGerms.NondegenerateCharts
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0013
 import Formalism.LocalToGlobal.CharacterGerms.RowTieSelf
-import Formalism.LocalToGlobal.CharacterGerms.BlockAdmissibleChart
-import Formalism.LocalToGlobal.CharacterGerms.NegMem
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0011
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartF
 import Development.AbelianVarietyTheory.Definitions.TeichmullerDepth.HasTeich
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.EqOfMapEqOfPowEqOne
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0001
 open scoped BigOperators
 open NumberField Formalism.IncomingBounds Formalism.L2.FormalSeriesBounds Formalism.L2.Pj GlobalTheory.RowLaw ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Geo.Tor.Germ
 

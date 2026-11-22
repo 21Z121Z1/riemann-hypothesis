@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.CoeffMemOfMemMaxPow
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0010
 
 noncomputable section
 

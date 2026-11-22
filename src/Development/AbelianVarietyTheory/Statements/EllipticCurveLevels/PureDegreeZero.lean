@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsWeight
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.PolarizedGaloisRepNarrow7
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0019
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0021
 
 noncomputable section
 

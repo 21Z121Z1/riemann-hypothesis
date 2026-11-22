@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.UnitaryNorms.AdjoinCycZeta
-import Formalism.LocalToGlobal.UnitaryNorms.IotaABijective
+import Formalism.LocalToGlobal.UnitaryNorms.Bundle0003
 import Formalism.QuotientMetricDivisors.RatHermLcvTwist
 
 open NumberField IntermediateField

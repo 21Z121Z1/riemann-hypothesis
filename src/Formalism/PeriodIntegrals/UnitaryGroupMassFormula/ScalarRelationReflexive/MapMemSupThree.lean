@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.PeriodIntegrals.ScalRelRepFree
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BetaUniqueness.Lemmas
+import Formalism.PeriodIntegrals.Bundle0031
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BetaUniqueness.Bundle0001
 
 noncomputable section
 

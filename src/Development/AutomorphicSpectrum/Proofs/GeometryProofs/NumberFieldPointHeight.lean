@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LineHeightInvariantScaling
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0012
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0104
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightAssemblyFinal
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PCurveRatSectionSum
-import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PFlZArithVar
+import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0045
+import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.Bundle0024
 import GroundTheory.HeightsAndTheta.Heights.Antisymmetric.PNefOnFibresRelabel
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Reading
 

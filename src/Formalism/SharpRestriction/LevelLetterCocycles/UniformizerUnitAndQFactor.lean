@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.SharpRestriction.LevelLetterCocycles.DualLemmaOfDeterminant
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0030
 
 noncomputable section
 

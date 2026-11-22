@@ -1,7 +1,6 @@
 import Mathlib
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalLatticeIsomorphism.NormOneP
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalLatticeIsomorphism.Bundle0001
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalLatticeIsomorphism.NormOneA
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalLatticeIsomorphism.IndBasic
 
 noncomputable section
 open scoped BigOperators

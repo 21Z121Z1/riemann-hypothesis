@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsFormsAlgebraicIndependentSmulSubSumMem
-import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsDomainAndIsIntegrallyClosedAtPrimeOfSmoothOfCo
-import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.SubalgebraEqBotOfIsIntegralOfIsIntegrallyClosed
+import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0003
+import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0004
 
 namespace GlobalTheory
 

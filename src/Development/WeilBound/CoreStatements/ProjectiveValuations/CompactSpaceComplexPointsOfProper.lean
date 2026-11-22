@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SerreHolomorphicSectionsHolds
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CompactSpacePts
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1281
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0177
 import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.GagaSections
 import Development.WeilBound.CoreStatements.ProjectiveValuations.CompactSpaceOfIsProper
 open CategoryTheory AlgebraicGeometry TopologicalSpace Set

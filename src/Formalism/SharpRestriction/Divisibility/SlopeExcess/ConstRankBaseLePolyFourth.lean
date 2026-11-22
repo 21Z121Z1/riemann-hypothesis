@@ -1,9 +1,9 @@
-import Formalism.SharpRestriction.ElevenLe
-import Formalism.LocalRingCardinality.KernelPlaceMeanBound
+import Formalism.SharpRestriction.Bundle0001
+import Formalism.LocalRingCardinality.Bundle0006
 import Formalism.LocalRingCardinality.DataParams
 import Formalism.SharpRestriction.ParConsts
 import Formalism.SharpRestriction.ParamsHeightRankConstant
-import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.FourMulQLeCondN
+import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.Bundle0001
 
 noncomputable section
 

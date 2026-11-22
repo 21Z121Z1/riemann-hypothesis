@@ -1,9 +1,8 @@
-import Formalism.LocalToGlobal.InertKernelTheory.DefsBasis
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0008
 import Formalism.FrobeniusOrbits.RealSubfieldLeCompositum
-import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.OrderOfSignGroupDvdTwo
-import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.CardTrivialFirstComponent
-import Formalism.LocalToGlobal.GlobalTheory.GL3.IsometryLinkageTrivialLevel
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IntRing
+import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Bundle0002
+import Formalism.LocalToGlobal.GlobalTheory.GL3.Bundle0002
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0037
 
 noncomputable section
 

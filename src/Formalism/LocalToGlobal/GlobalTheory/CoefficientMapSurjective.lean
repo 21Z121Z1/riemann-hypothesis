@@ -1,7 +1,7 @@
-import Formalism.LocalToGlobal.GlobalTheory.ColValOfTiedSOfRest
+import Formalism.LocalToGlobal.GlobalTheory.Bundle0007
 import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.RankConditionsOfLayerTwo
-import Formalism.LocalToGlobal.Columns.TiedValRat
-import Formalism.LocalToGlobal.GlobalTheory.GL4.PColStd
+import Formalism.LocalToGlobal.Columns.Bundle0028
+import Formalism.LocalToGlobal.GlobalTheory.GL4.Bundle0016
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Mathlib
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffFubiniStudyRatioCompChart0
 import ReciprocityTheory.AnalyticForms.PotentialTheory.PushAFinsumInter
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AnalyticLogResolution
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0247
 
 namespace GlobalTheory
 

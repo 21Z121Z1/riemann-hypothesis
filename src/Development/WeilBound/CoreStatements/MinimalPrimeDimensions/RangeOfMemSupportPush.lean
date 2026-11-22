@@ -1,5 +1,5 @@
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntersectionNumberEqGenericRankMulProjCurve
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPowVanishingIdealLeAnnihilator
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0266
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0229
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverCompOfIsClosedImmersion
 
 set_option autoImplicit false

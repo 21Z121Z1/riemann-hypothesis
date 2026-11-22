@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairTAdjTLeft
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeTateKernelAtPoint
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfForallDual
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2203
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1652
 
 set_option autoImplicit false
 

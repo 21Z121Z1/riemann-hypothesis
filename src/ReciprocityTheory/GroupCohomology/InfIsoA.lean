@@ -1,10 +1,10 @@
-import ReciprocityTheory.GroupCohomology.CardLenStatement
-import ReciprocityTheory.GroupCohomology.DEqZeroOfMemB
+import ReciprocityTheory.GroupCohomology.Bundle0004
+import ReciprocityTheory.GroupCohomology.Bundle0003
 import ReciprocityTheory.GroupCohomology.ConnNatHolds
 import ReciprocityTheory.GroupCohomology.PairHomFCoeOfId
 import ReciprocityTheory.GroupCohomology.InfRes
 import ReciprocityTheory.GroupCohomology.Shapiro
-import ReciprocityTheory.GroupCohomology.FiniteLevel
+import ReciprocityTheory.GroupCohomology.Bundle0008
 
 namespace ReciprocityTheory.Coh
 

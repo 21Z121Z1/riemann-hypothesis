@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.InfClassAt
-import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.DictAt
-import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
+import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0005
+import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0006
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0054
 import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOneOfConjMemOfPow
 import Formalism.LocalToGlobal.Columns.CoefColLemmas

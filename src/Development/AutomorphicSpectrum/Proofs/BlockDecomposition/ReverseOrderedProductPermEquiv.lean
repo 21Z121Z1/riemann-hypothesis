@@ -1,7 +1,7 @@
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.ZelevinskyCosocles.LUnlinkedComm
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContragredientProductIrreducibleStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductIrreducibleAppendEquiv
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0003
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0592
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0499
 
 open GlobalTheory.PRep GlobalTheory.SplitWeil GlobalTheory.SmGL GlobalTheory.LocGL GlobalTheory.JHMult Zc Zc.Cos
 

@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalRestriction
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalInvariants
-import GroundTheory.ProfiniteCohomology.LocalClassFormation.CupSymbolNorm
+import GroundTheory.ProfiniteCohomology.LocalClassFormation.Bundle0001
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.ProfCoh

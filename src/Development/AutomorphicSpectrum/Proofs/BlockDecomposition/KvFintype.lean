@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SectionEigenfunctionMaximalCompact
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0760
 
 noncomputable section
 

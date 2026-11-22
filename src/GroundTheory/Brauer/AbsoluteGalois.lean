@@ -2,7 +2,7 @@ import Mathlib
 import GroundTheory.Brauer.CrossedProductIso
 import GroundTheory.Brauer.Inflation
 import GroundTheory.Brauer.Splitting
-import GroundTheory.ProfiniteCohomology.Colimit
+import GroundTheory.ProfiniteCohomology.Bundle0005
 import GroundTheory.ProfiniteCohomology.GaloisCohomology.UnitsInflationCochainsFHomApply
 import GroundTheory.ProfiniteCohomology.GaloisCohomology.IsZeroGroupCohomologyQuotientToInvariantsGalAdd
 set_option maxSynthPendingDepth 1

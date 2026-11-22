@@ -1,6 +1,6 @@
 import Development.WeilBound.ThetaLifts.CartanFactorisation.FockSecondActionMatrixUnitEq
 import Development.WeilBound.ThetaLifts.Reductions.LocalPoly
-import Development.WeilBound.ThetaLifts.Reductions.TensJoin
+import Development.WeilBound.ThetaLifts.Reductions.Bundle0002
 import Development.WeilBound.ThetaLifts.Reductions.JoinDef
 
 noncomputable section

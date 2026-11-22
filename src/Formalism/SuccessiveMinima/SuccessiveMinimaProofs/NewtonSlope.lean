@@ -1,4 +1,4 @@
-import Formalism.SuccessiveMinima.StatementNP
+import Formalism.SuccessiveMinima.Bundle0001
 
 namespace Formalism.FN
 open Filter Topology

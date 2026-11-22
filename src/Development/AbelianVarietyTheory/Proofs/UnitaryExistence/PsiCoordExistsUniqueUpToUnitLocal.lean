@@ -3,7 +3,7 @@ import Formalism.LocalToGlobal.ProjectiveLattices.BetaAtSymm
 import Formalism.LocalToGlobal.ProjectiveLattices.OneLtAbsNormReal
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ValPsiZero
+import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0015
 
 noncomputable section
 

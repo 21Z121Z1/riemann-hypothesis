@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.FrobeniusOrbits.HostOrbitsPlaces
+import Formalism.FrobeniusOrbits.Bundle0001
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.CoprimeTwoPow
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Galois
 

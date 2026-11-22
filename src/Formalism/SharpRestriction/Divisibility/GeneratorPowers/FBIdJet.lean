@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermDJet
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0008
 
 set_option autoImplicit false
 

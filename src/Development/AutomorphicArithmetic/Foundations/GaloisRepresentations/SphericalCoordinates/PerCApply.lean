@@ -1,7 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealMapOneInjective
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsGaloisCover
-import Development.AbelianVarietyTheory.Definitions.Divisors.HxiTZeroComb
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0884
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0031
 
 noncomputable section
 

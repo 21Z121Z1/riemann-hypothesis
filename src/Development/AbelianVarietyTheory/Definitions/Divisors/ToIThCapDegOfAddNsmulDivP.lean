@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsIsoGenResMapSmulHom
-import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.LengthQuotientMaximalIdealPowSmulTop
+import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0005
 import Formalism.LocalRingCardinality.DataDIV
 
 set_option autoImplicit false

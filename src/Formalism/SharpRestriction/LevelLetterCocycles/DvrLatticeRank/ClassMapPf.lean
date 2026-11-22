@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.LevelLetterCocycles.SecondPropositionFree
-import Formalism.SharpRestriction.LevelLetterCocycles.MapCompZero
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0031
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0020
 import Formalism.SharpRestriction.LevelLetterCocycles.BaseChangePreservesUnitaryOf
 import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.FrobPiNPf
 

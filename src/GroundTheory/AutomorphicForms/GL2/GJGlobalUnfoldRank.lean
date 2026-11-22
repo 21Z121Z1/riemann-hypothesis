@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.PowerSubgroups.CountableNeighbourhoods.SingleMemInitialCoordSubspace
+import GroundTheory.PowerSubgroups.CountableNeighbourhoods.Bundle0002
 
 open Function Module
 

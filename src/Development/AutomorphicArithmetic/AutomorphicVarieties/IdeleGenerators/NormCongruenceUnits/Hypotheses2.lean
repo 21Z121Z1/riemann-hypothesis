@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.BaseChangeUnits.LiftC
-import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.ShapeFacts
+import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.Bundle0001
 
 namespace UpperTheory.V.Sd
 

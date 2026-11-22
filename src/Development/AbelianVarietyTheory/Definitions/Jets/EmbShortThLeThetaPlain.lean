@@ -1,8 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.ExampleSatisfiesConditionsAtFive
-import Formalism.LocalToGlobal.ProjectiveLattices.RecPJThAllNeBot
-import Formalism.LocalToGlobal.ProjectiveLattices.LiftLaSpec
-import Formalism.LocalToGlobal.ProjectiveLattices.ThClassPins
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0038
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
 import Formalism.SharpRestriction.Divisibility.AbelianOpenPart.OEOsInjective
 
 set_option autoImplicit false

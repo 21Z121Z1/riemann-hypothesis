@@ -1,7 +1,5 @@
-import Formalism.YangianSpanCharacter.StatementF
-import Formalism.YangianSpanCharacter.ModHypYangian
-import Formalism.HermitianCurvature.StatementR
-import Formalism.HermitianCurvature.StatementI
+import Formalism.YangianSpanCharacter.Bundle0003
+import Formalism.HermitianCurvature.Bundle0001
 import Formalism.HermitianCurvature.StatementWd
 
 namespace Formalism.FourierDecayAlt.Fr

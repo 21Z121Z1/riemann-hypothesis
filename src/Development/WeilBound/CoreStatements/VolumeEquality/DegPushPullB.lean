@@ -1,8 +1,8 @@
-import Development.WeilBound.CoreStatements.VolumeEquality.DegPushDim
-import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Assembly
+import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0008
+import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0013
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PDivPushForward
-import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PContractRelDimLe
-import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.NumericalSegre
+import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0009
+import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.Bundle0004
 
 noncomputable section
 

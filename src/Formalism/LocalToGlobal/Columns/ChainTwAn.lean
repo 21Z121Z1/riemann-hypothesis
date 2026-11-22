@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.Columns.ChainTwCst
+import Formalism.LocalToGlobal.Columns.Bundle0054
 
 open NumberField IsDedekindDomain Module
 

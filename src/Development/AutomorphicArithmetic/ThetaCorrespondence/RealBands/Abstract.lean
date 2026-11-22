@@ -1,12 +1,8 @@
 import Mathlib
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.IsBand
-import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.ConvEig
-import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.ConvAssoc
-import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.BandCc
+import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Bundle0001
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.KillsOfIdem
-import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.BandKill
-import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Unfold
-import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.EqZeroOfTest
+import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Bundle0002
 
 open MeasureTheory Filter UpperTheory.Lit.Cusp
 open scoped Topology

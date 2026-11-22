@@ -7,8 +7,8 @@ import Formalism.HermitianCurvature.HermitianCurvatureProofs.ComponentFamilySett
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.UnipotentCoordinatesMeasurePreserving
 import Development.AbelianVarietyTheory.Definitions.Jets.WigMap
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.IntegrableUnipotentNormRpowNeg
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FormSubRight
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsPolyDegStar
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0084
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0072
 
 open Matrix Formalism.QuantumDeterminants Formalism.FourierDecayAlt.Q
 

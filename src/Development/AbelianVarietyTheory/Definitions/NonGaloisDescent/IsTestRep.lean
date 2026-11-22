@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FourierMatch
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0001
 
 open Matrix MeasureTheory Filter Topology
 

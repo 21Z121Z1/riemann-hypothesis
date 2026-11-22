@@ -1,9 +1,9 @@
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFockMap
-import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockHarmonicHomogeneousOfKType
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1041
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0054
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0738
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MinFirst
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockMinimalKTypeSecondMember
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockDualPairSwapSymmetryStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0806
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0578
 open scoped TensorProduct GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels
 
 open Formalism.BasicNotions.TH MvPolynomial

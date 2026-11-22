@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsPosHermFormV
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InducedTypeThetaGenusOnePermutes
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LatticeCovolumePosAndSelfDual
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPeriodPairIdealCurveLattice
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0240
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0239
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0241
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0237
 open NumberField Classical Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.TaylorLogMetric Formalism.MainNotions.StandardLatticesGL3 MeasureTheory
 open scoped BigOperators
 

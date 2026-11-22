@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteReal.AutomorphicEvaluation
-import Formalism.LocalToGlobal.IndefiniteReal.RationalEmbedding
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0030
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0010
 import Formalism.LocalToGlobal.IndefiniteReal.LinksDefs
 
 noncomputable section

@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.ExistsXPowMul
+import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.Bundle0009
 
 noncomputable section
 open Classical

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsRingEquivOfIsTranscendenceBasis
+import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0002
 
 open CategoryTheory AlgebraicGeometry
 

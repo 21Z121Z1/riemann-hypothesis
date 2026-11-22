@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.StdBases
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.BeData
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0009
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0010
 import Formalism.LocalRingCardinality.CoeNeZeroOfNotMem
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.StatementB
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.OrbitValuationBounds.SummableTruncatedGeometric

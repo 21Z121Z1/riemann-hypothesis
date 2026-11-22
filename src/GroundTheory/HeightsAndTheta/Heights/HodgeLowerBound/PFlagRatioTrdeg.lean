@@ -1,7 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsFlagRatioTrdeg
-import GroundTheory.HeightsAndTheta.Heights.Intersections.PFlagPivotAlgIndep
-import GroundTheory.HeightsAndTheta.Heights.Intersections.PFlagPivotIdentity
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0017
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0035
 set_option maxSynthPendingDepth 1
 
 noncomputable section

@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.JPMemAwayP
-import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.RepTie
+import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.Bundle0004
 
 noncomputable section
 

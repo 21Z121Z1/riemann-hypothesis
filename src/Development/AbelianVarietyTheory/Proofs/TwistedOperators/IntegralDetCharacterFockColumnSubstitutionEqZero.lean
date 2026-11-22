@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdMinorsMemInv
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0570
 open Classical MeasureTheory
 
 noncomputable section

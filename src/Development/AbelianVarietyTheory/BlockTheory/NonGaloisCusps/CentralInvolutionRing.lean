@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.OneMapT
 import Formalism.LocalToGlobal.IndefiniteReal.FWExist
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0014
 import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.PermutesRefl
 
 noncomputable section

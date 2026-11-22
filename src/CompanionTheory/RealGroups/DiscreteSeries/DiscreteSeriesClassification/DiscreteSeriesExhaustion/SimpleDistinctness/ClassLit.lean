@@ -1,5 +1,5 @@
 import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.KTypesAbove
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DiscreteSeriesDetSqrtCoverOfUnitaryClassificatioStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0349
 
 namespace CompanionTheory.RgExh.Fin
 

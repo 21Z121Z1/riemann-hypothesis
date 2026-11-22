@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.UpNonzero
-import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.IteratedLiftChains
+import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Bundle0002
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0020
 
 noncomputable section
 

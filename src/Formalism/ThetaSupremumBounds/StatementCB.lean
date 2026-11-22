@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.QuotientMetricDivisors.HeightBoundExactNorms
+import Formalism.QuotientMetricDivisors.Bundle0003
 import Formalism.ThetaSupremumBounds.DivIneqExplicit6
 
 open Finset NumberField

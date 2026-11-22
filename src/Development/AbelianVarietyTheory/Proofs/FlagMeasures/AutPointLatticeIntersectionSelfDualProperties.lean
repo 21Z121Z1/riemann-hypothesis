@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LayerProd
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LamXEquivariant
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0004
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0005
 import Formalism.HarderNarasimhan.ShiftInvariance
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlob
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsSpan

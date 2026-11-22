@@ -1,6 +1,6 @@
 import Development.WeilBound.RepresentationTheoryGL.LimitMultiplicityWeights.RegularClassIntegrals.ClosedGraph
 import Mathlib.LinearAlgebra.Lagrange
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsSideTer
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0034
 
 open MeasureTheory Set GlobalTheory.AutomorphicL2Unitary GlobalTheory.Orb Matrix Polynomial
 open scoped ContDiff ComplexConjugate

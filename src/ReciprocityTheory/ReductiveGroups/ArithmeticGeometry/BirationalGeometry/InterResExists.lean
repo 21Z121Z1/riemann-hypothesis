@@ -1,8 +1,8 @@
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterAlgRes
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterMinor
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0021
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.SchemeRes
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.ConeChart
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjLogResCOfCR
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0015
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0013
 
 noncomputable section
 

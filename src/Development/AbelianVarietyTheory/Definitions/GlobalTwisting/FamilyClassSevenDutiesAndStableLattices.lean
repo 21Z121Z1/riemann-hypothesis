@@ -1,11 +1,11 @@
 import Mathlib
-import Formalism.SharpRestriction.InertJacobiLevels.AsmIface
+import Formalism.SharpRestriction.InertJacobiLevels.Bundle0007
 import Formalism.LocalToGlobal.GlobalTheory.IsResidueClassZero
 import Formalism.SharpRestriction.GrowthBounds.SmallOrderPrimes
 import Formalism.SharpRestriction.Divisibility.LocalQuadraticParts
 import Formalism.SharpRestriction.LevelLetterCocycles.TwGood
-import Formalism.LocalRingCardinality.DataAmbForm
-import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.DisjointExceptional
+import Formalism.LocalRingCardinality.Bundle0002
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0003
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.AuxiliaryPrimeMemAvoidedPrimes
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.SetUnipotentTranslate
 

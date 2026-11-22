@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Jets.DepthNumbersThresholdEq
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.CharacterBlocksAttainBound
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.MonomialBlockSupplyBothTypingsStatement
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0042
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0050
 
 open Formalism.L2.FormalSeriesBounds GlobalTheory.GoodDepth
 open scoped BigOperators

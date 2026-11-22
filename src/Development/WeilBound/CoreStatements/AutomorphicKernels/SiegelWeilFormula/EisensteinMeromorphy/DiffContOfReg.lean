@@ -1,4 +1,4 @@
-import Development.WeilBound.ThetaLifts.LatticeBasics.RegOfBound
+import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0013
 import Development.AbelianVarietyTheory.Definitions.Foundations.EventuallyEqOfIsPreconnected
 
 noncomputable section

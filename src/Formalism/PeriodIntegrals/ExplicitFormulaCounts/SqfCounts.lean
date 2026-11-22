@@ -1,12 +1,10 @@
 import Formalism.SharpRestriction.LevelLetterCocycles.StmtLocFOfCountsAll
-import Formalism.PeriodIntegrals.SqfRootsInj
-import Formalism.PeriodIntegrals.SqfRootShift
-import Formalism.PeriodIntegrals.SqfDivDeg
-import Formalism.PeriodIntegrals.SqfPrimeFactor
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SqfRootsInj
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SqfRootShift
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SqfDivDeg
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.PrimesDyadicRS
+import Formalism.PeriodIntegrals.Bundle0016
+import Formalism.PeriodIntegrals.Bundle0015
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0018
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0017
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0014
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0016
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SquarefreePrimeFactor.SqfPrimeFactorOf
 
 noncomputable section

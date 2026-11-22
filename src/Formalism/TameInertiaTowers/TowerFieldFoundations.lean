@@ -1,6 +1,6 @@
 import Formalism.TameInertiaTowers.FinalGroup
 import Formalism.TameInertiaTowers.CentralOrderTwo.Galois
-import Formalism.TameInertiaTowers.CentralOrderTwo.ConjEqInvOfPowEqOne
+import Formalism.TameInertiaTowers.CentralOrderTwo.Bundle0002
 import Formalism.TameInertiaTowers.CentralOrderTwo.DecompositionSubgroupIndex
 import Formalism.TameInertiaTowers.CentralOrderTwo.OddEqOneOfSubOneMem
 

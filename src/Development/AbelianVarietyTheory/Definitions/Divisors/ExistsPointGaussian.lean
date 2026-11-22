@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.HodgeTateLatticePointFinrankTateModule
-import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsPowPolAVPowPolOf
-import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsMatrixOrderActionOnPower
+import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0097
+import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0084
 
 set_option autoImplicit false
 

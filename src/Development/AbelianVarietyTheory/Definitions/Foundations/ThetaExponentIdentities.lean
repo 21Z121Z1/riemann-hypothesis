@@ -2,8 +2,8 @@ import Mathlib
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.SlopeBoundOfConditionsWithErrorForFrames
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.DescentConstants
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsHomogeneousCompIdeal
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WeightExponentsEmbeddingsDegree
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AMiEqAMinusQ
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0144
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0272
 import Formalism.LocalToGlobal.ProjectiveLattices.ExistsParameterConditions
 
 set_option autoImplicit false

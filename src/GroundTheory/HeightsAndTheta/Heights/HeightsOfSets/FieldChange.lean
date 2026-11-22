@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.FiniteSupportHeight
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CardEmbeddingsRestrict
+import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0002
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0005
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

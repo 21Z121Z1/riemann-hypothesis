@@ -5,9 +5,9 @@ import GroundTheory.HeightsAndTheta.Heights.Antisymmetric.Statements
 import ReciprocityTheory.AnalyticForms.LeviForms.Energy
 import ReciprocityTheory.AnalyticForms.LeviForms.TailBoundA
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ProjectiveLineFubiniStudyFacts
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.LoglogQuotNonneg
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.FixedMemberBase
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.SingularWeightMonotoneRegularizationStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0019
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0081
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0022
 open MvPolynomial MeasureTheory Filter Topology Matrix ReciprocityTheory.AnForm ReciprocityTheory.AnForm.M ReciprocityTheory.AnForm.P GlobalTheory.CompanionTheory.Ar.PB GroundTheory.Heights₂.Heights
 open scoped ComplexOrder
 

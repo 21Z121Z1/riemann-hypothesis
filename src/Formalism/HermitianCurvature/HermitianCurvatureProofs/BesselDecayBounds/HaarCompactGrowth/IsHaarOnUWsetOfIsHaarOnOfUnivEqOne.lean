@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselDecayBounds.BesselUnitNorm.BesselNormSteps.BesselLine.ConvMeas
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselDecayBounds.BesselUnitNorm.BesselNormSteps.BesselLine.Bundle0002
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselDecayBounds.BesselUnitNorm.BesselNormSteps.BesselLine.ConvPi
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselDecayBounds.HaarCompactGrowth.ExpUpper
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselDecayBounds.BesselIntegrability.LieNUpper
@@ -8,8 +8,8 @@ import Formalism.HermitianCurvature.HermitianCurvatureProofs.OppositeWeylSubgrou
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ConjugationInvarianceEverySetting
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.UnipotentHeisenbergDecomposition
 import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeLemma3
-import Formalism.PeriodIntegrals.BesselPeriodGGP
-import Formalism.PeriodIntegrals.IsLowUnitH
+import Formalism.PeriodIntegrals.Bundle0022
+import Formalism.PeriodIntegrals.Bundle0015
 
 open MeasureTheory Matrix
 open scoped ENNReal NNReal

@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.LocallyProfinite
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.StabilizerOf
+import GroundTheory.AutomorphicForms.Bundle0002
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0061
 
 noncomputable section
 

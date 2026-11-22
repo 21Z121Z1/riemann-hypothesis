@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.SelfDualAt
-import Formalism.LocalToGlobal.HermitianForms.TiedStep
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SelfDualLoc
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemAdelicSpanOfLatticeIffForallPlaceStatement
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0006
+import Formalism.LocalToGlobal.HermitianForms.Bundle0002
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0014
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0144
 
 open Formalism.BasicNotions Formalism.UG Formalism.L2.Forms NumberField IsDedekindDomain Matrix GlobalTheory.St.G
 open scoped TensorProduct

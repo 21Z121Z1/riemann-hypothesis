@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.FirstIn
+import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.Bundle0001
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
-import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HasFiniteLengthOfIsIrreducible
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0001
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsIrreducibleOfClsGLEqSingle
 
 open Filter Topology GlobalTheory.PRep GlobalTheory.SplitWeil GlobalTheory.SmGL GlobalTheory.LocGL GlobalTheory.JHMult UpperTheory.Lit.Cas UpperTheory.Lit.Red

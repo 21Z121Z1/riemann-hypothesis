@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.TayInvPow
+import Formalism.PeriodIntegrals.Bundle0010
 
 namespace PI.UnitaryGroupMassFormula.TayInvPow
 

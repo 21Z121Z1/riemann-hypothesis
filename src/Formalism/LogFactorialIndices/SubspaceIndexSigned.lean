@@ -1,6 +1,5 @@
 import Mathlib
-import Formalism.LogFactorialIndices.StatementSize
-import Formalism.LogFactorialIndices.StatementIdx
+import Formalism.LogFactorialIndices.Bundle0001
 
 noncomputable section
 

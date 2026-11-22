@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LeviSmoothLocalization.WinUpDown
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.CyclicStrongAtCusp
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0026
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.EtaleCoordinates
+import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.Bundle0001
 namespace FunctorialResolution.EmbeddedResolution
 namespace EtaleCoordinates
 

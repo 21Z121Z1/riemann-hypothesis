@@ -1,8 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.GaloisLevelStructure.DefsAut
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsIntegerUnitSplitPlaceConjugatePrimeStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CmFieldAdeleSplitPlaceSupportIntegralStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeDoubleCosetAdicCompletionInvMulIntegralStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0021
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0023
 
 open NumberField IsDedekindDomain ReciprocityTheory.Aut
 

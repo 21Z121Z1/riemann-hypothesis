@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.FunctionField.PlaceDefs
 import GroundTheory.FunctionField.PlaceBasic
-import GroundTheory.FunctionField.Approximation
+import GroundTheory.FunctionField.Bundle0001
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.FunctionField

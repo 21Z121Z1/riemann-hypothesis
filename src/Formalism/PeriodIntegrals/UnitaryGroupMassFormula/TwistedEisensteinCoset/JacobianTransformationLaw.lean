@@ -1,5 +1,5 @@
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TwistedEisensteinCoset.IsUnitRedP
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TwistedNormLattice.UniformContinuityGaloisGroup
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TwistedEisensteinCoset.Bundle0002
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TwistedNormLattice.Bundle0001
 
 open NumberField IsDedekindDomain Module
 

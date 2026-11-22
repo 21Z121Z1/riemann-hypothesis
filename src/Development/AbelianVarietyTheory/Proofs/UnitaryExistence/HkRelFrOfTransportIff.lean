@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.HeckeFr
-import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.FibrePushforward
-import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsReducedAlgebraOfSmoothOfIsNoetherianRing
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
+import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0008
 
 noncomputable section
 

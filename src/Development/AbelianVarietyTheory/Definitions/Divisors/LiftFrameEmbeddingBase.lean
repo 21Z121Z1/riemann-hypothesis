@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.SumExpSt
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0069
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasBlockOfOccurs
-import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsLevFnPow
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueDualWeylWeightProjector
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0017
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1145
 
 set_option autoImplicit false
 

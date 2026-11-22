@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.LocalToGlobal.UnitaryNorms.CharProd
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsPowLocKMulInf
+import Formalism.LocalToGlobal.UnitaryNorms.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0090
 
 open NumberField IsDedekindDomain
 

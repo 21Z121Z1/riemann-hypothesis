@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.LogVandermondeBounds.LogRatioUpperBound
-import Formalism.HermitianLattices.StatementMass
+import Formalism.LogVandermondeBounds.Bundle0002
+import Formalism.HermitianLattices.Bundle0003
 
 namespace Formalism.HermitianLattices.GenusMassVolumes
 

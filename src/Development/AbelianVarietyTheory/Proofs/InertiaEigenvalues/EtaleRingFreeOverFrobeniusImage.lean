@@ -3,9 +3,9 @@ import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
 import Formalism.SharpRestriction.LevelLetterCocycles.LocCoh
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PhiFree
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegersCompleteDVR
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RingsCyclotomic
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0270
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0206
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0323
 
 noncomputable section
 

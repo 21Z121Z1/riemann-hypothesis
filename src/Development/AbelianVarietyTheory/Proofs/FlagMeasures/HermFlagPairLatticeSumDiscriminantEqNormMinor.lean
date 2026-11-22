@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NormalFormDu
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LeOfLatMod
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsStarStableIdealAbsorbingMinors
 import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.ExistsSmulMemOfMemSpanLattice
-import ReciprocityTheory.SemistableReduction.SemiDegCA
+import ReciprocityTheory.SemistableReduction.Bundle0002
 
 open NumberField Formalism.HermitianLatticeCounting.S6 GlobalTheory.HermLat GlobalTheory.DegCnt
 open scoped Pointwise ENNReal Classical nonZeroDivisors

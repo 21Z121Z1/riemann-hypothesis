@@ -1,9 +1,8 @@
 import Mathlib
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ProjectiveLineFubiniStudyFacts
-import ReciprocityTheory.AnalyticForms.PotentialTheory.HessCEqZeroOfEventuallyEqZero
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0003
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Objects
-import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.StDivisorNull
-import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.StProductBounds
+import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Bundle0002
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.AnalyticLimit

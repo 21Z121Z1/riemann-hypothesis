@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.FiniteIntertwining
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsIrreducibleSmallRepUnitary
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsNeZeroMapEqZeroOfWeightNe
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntertwiningGlOfUnitary
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0229
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0222
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0228
 
 open MvPolynomial Formalism.BasicNotions Formalism.GradedWeylDivisibility GlobalTheory.Branching
 open scoped DirectSum TensorProduct Kronecker Matrix

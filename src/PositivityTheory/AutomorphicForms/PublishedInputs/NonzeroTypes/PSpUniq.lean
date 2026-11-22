@@ -1,5 +1,5 @@
-import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.NonzeroBasicTwistOfSpecialForm
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InSupportOfIsSubquotient
+import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.Bundle0011
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0053
 
 noncomputable section
 

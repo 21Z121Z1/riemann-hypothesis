@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConvPowSubNsmulMemAugIdealSq
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FundamentalSequenceContinuityAll
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNotMemSmulEqZeroOfSubmodule
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0012
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0055
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0036
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj
 open scoped CategoryTheory.Obj TensorProduct
 

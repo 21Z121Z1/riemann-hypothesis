@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.SqPair
+import Formalism.PeriodIntegrals.Bundle0019
 
 noncomputable section
 open NumberField Matrix

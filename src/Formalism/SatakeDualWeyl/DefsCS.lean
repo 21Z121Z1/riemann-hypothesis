@@ -1,7 +1,7 @@
-import Formalism.SatakeDualWeyl.StatementC
-import Formalism.SatakeDualWeyl.StatementB
+import Formalism.SatakeDualWeyl.Bundle0001
+import Formalism.SatakeDualWeyl.Bundle0003
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Levelaf
-import Formalism.HermitianLattices.DefsCS
+import Formalism.HermitianLattices.Bundle0001
 
 noncomputable section
 

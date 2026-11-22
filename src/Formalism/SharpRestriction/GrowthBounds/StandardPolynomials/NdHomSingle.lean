@@ -1,5 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.StdPolyEq
-import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.TopOddNeEndAny
+import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.Bundle0015
 import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.MonomialSumEqProdTensor
 
 noncomputable section

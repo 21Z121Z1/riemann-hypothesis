@@ -1,4 +1,4 @@
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IwasawaIsotropicStabiliserSplitPlace
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0188
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IwasawaIsotropicStabilizerInertPlace
 
 noncomputable section

@@ -1,7 +1,7 @@
 import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.SplitAsm
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsSplitChartOne
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0327
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RamificationIdxEqOneOfIsSquare
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GSEqZeroOfLt
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1453
 
 noncomputable section
 

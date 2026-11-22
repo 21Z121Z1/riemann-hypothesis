@@ -1,7 +1,7 @@
 import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.SInfEx
-import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.SSatEx
-import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.SSatUnit
-import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.DefsObj
+import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0006
+import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0003
+import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0001
 import Development.AutomorphicArithmetic.Foundations.Convolution.ASmooth
 
 open MeasureTheory NumberField IsDedekindDomain

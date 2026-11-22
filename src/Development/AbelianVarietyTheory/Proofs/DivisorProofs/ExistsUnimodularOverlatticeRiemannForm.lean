@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HilbertKodairaSpencer
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAHOfIsFactorAH
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0030
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2411
 
 set_option autoImplicit false
 

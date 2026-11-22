@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsCharLab
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0007
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.PadicIntGLSmulMemPrincipalCongruenceFixed
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.InjPrimeTo
-import Development.AbelianVarietyTheory.Definitions.Foundations.SmoothPartStable
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DetCharacterIrreducibleLabel
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0008
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0260
 
 noncomputable section
 

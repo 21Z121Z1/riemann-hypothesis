@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.StatementGK
+import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0006
 import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.KernelFromKOne
-import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FrobeniusLiftNorms.WModel
+import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FrobeniusLiftNorms.Bundle0001
 
 noncomputable section
 

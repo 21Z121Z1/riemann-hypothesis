@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.ArithDegree
 import GroundTheory.HeightsAndTheta.Heights.HermitianSum
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StdCoordMapInjective
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0031
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.Kernels

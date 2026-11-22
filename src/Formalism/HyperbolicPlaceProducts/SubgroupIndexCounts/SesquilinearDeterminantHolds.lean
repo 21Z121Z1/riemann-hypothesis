@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.HyperbolicPlaceProducts.Statement
+import Formalism.HyperbolicPlaceProducts.Bundle0001
 import Formalism.GelfandTransference.HadamardGelfand.Hadamard
 
 open Matrix Finset ComplexConjugate

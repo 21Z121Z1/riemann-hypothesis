@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.LocallyProfinite
-import GroundTheory.AutomorphicForms.LocallyConstantCompact
+import GroundTheory.AutomorphicForms.Bundle0002
+import GroundTheory.AutomorphicForms.Bundle0006
 
 namespace GroundTheory.Automorphic
 

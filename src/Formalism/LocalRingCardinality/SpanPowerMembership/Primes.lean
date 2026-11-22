@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.CyclotomicNorms.StatementI
+import Formalism.CyclotomicNorms.Bundle0001
 
 namespace Formalism.BasicNotions.Examples₂
 

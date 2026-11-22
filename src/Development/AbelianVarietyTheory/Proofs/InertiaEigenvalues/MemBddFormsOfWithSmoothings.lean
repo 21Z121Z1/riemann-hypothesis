@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieDerivativeL2InnerProduct
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFiniteMeasureQuotMeasure
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1307
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0356
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAddHaarMeasureVolumeLie
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieDerivativeRealLieSmoothingEqDensity
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealLieSmoothingMemSmoothAdelicFunctions
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1435
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1438
 
 open NumberField MeasureTheory Matrix GlobalTheory.AutomorphicL2Unitary GlobalTheory.UnitaryBC GlobalTheory.CuspRep GlobalTheory.CuspRep.CuspidalL2GL Neutral.B1 ReciprocityTheory.Neutral.Bridge.HCFR Formalism.L2.Host Filter Topology
 open scoped ComplexConjugate

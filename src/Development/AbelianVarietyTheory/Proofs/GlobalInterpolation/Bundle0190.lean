@@ -1,0 +1,23 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0047
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Imports
+import CompanionTheory.EightfoldTheory.VariationTheory.AutomorphicForms.RealStructures.Imports
+import CompanionTheory.EightfoldTheory.VariationTheory.AutomorphicForms.ImportsBis
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0024
+import CompanionTheory.EightfoldTheory.VariationTheory.AutomorphicForms.AdTransfer
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0187
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0189
+import PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.Bundle0010
+import CompanionTheory.EightfoldTheory.VariationTheory.TwistedTheory.SemisimpleRestrictionToNormalSubgroup
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0188
+
+-- bundled from Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.AttachedRepConjugationTrace
+section
+
+end
+
+-- bundled from Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.AttachedRepsAgreeOnIntersection
+section
+
+end
+

@@ -1,6 +1,6 @@
 import PositivityTheory.AutomorphicForms.PublishedInputs.CyclicBaseChange.IsGalAd
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.GelfandKazhdanReal
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Brauer
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0047
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.IncomingBounds.IncomingBound
+import Formalism.IncomingBounds.Bundle0001
 
 open scoped BigOperators
 open Formalism.IncomingBounds

@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Objects
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0001
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.IsSemipositiveOn
 set_option maxSynthPendingDepth 1
 

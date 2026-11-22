@@ -1,14 +1,12 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.PolQuasiInverse
-import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.OneCompPrj
-import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.IsLBZb
-import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.FibLam
-import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.KLiftSqToBase
+import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.Bundle0004
+import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.Bundle0010
+import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.Bundle0011
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.FibAmple
-import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.ExistsQuat
+import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.Bundle0001
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.RelAmpleOfCls
-import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.QiDefs
-import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.QiIsMonHomIdPow
+import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.Bundle0005
 
 set_option autoImplicit false
 

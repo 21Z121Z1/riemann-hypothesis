@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IdealEqBotOfFlatQuotientOfMapMaximalIdeal
-import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.FlatOfIsFiniteOfFlatGeometricFibres
+import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0006
 
 open TensorProduct LinearMap
 

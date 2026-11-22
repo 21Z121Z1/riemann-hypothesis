@@ -1,10 +1,10 @@
 import Mathlib
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.ExistsRosatiGen
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ETPointStatement
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0024
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.SpansOverField
-import Development.AbelianVarietyTheory.BlockTheory.JetGauges.BalancedHermitianSpace
+import Development.AbelianVarietyTheory.BlockTheory.JetGauges.Bundle0001
 import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.PremisesInhabited
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumPosOfTensorPos
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0005
 
 set_option autoImplicit false
 

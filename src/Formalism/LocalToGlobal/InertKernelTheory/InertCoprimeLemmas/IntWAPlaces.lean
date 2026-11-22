@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.PeriodIntegrals.UnimodGenus
-import Formalism.PeriodIntegrals.UnitaryApproxFin
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.UnitaryApproxFin
+import Formalism.PeriodIntegrals.Bundle0011
+import Formalism.PeriodIntegrals.Bundle0016
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0018
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.IntWeak
 
 noncomputable section

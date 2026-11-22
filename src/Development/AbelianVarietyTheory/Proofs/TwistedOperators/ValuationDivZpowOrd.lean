@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LeviEmbMulSingle
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0042
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Cartan
 
 noncomputable section

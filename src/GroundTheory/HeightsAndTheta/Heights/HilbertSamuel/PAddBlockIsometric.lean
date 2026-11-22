@@ -1,9 +1,9 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsAddBlockIsometric
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSectionPointValue
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0072
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0069
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsSemilocRing
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.LiftOldChartMonomialMemPrimeCompl
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.ImageCoord
+import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0007
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

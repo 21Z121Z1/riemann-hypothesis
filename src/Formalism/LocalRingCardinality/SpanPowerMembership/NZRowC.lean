@@ -1,5 +1,5 @@
-import Formalism.LocalRingCardinality.DataBu
-import Formalism.LocalRingCardinality.SpanPowerMembership.NZRowA
+import Formalism.LocalRingCardinality.Bundle0001
+import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0005
 
 noncomputable section
 

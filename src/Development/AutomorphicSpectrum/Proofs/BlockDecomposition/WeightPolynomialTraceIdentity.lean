@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsCliff
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CPoly
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MonomialCoefficientComparison
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0400
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0408
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0043
 open Matrix Finset
 open scoped InnerProductSpace ComplexConjugate
 open PositivityTheory.RgBcC PositivityTheory.RgBcC.Real PositivityTheory.RgBcC.RealD GlobalTheory.CompanionTheory.RealCount GlobalTheory.CompanionTheory.RealCount.Tope

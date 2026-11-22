@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LieLatticeData
-import Development.AutomorphicSpectrum.Statements.AlgebraStatements.PolarisedFlagStatement
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.HopfOrderLatticeBaseStatement
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HasFinColengthOfHasLen
-import ReciprocityTheory.DualLattices.HasLenCokerDet
-import ReciprocityTheory.DualLattices.MemAugIdeal
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0002
+import Development.AutomorphicSpectrum.Statements.AlgebraStatements.Bundle0001
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0029
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0125
+import ReciprocityTheory.DualLattices.Bundle0022
+import ReciprocityTheory.DualLattices.Bundle0012
 open GlobalTheory.CompanionTheory.Ar.Num GlobalTheory.CompanionTheory.Ar.GR ReciprocityTheory.PGsh.L2 ReciprocityTheory.PGsh.Up
 
 noncomputable section

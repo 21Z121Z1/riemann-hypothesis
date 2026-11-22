@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.BesselHermitianTheta.TiedWeil
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CmDataIsCMExtAndGramIsHermND
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0125
 
 noncomputable section
 

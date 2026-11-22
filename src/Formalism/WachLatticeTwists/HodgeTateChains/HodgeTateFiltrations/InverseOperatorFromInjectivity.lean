@@ -1,4 +1,4 @@
-import Formalism.WachLatticeTwists.HodgeTateChains.HodgeTateFiltrations.MinimalExponentAttained
+import Formalism.WachLatticeTwists.HodgeTateChains.HodgeTateFiltrations.Bundle0001
 import Formalism.GaloisCohomology.GaloisCohomologyProofs.DevTorsion
 
 noncomputable section

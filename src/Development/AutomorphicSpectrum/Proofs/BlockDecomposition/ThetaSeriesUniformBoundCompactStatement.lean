@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaSeriesUniformBoundCompact
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThPr
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PureAdelicFunctionFormulaStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BoundedDenominatorsCompactIdeleSetStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0848
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0835
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0844
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0843
 open HeckeCharacterZeroLocus.SiegelWeilU GlobalTheory.CompanionTheory.SW NumberField IsDedekindDomain MeasureTheory Topology Filter GroundTheory.Global PositivityTheory.Rg.Base1 GlobalTheory.CompanionTheory.BasePsi
 open scoped ENNReal NNReal Classical
 set_option maxHeartbeats 1000000 in

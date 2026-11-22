@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Jets.CmQuadraticFormEqAlternatingForm
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GaugeUniqC
+import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0004
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0014
 
 set_option autoImplicit false
 

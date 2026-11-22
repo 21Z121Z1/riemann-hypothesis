@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.RootWeights.NontrivialIsotypicWeightZeroKilled
+import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0003
 
 noncomputable section
 

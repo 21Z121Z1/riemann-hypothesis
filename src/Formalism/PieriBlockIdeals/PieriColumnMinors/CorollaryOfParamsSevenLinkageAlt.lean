@@ -1,6 +1,6 @@
-import Formalism.PieriBlockIdeals.StatementTop
+import Formalism.PieriBlockIdeals.Bundle0007
 import Formalism.PieriBlockIdeals.PieriColumnMinors.CorollaryOfParamsSevenLinkage
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.PrimeCount
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0012
 
 namespace Formalism.CohomologicalDescent.Top
 

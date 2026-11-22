@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.SiegelKlingenDeligneRibet
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AbelContinuation
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.CongSubgroup
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ComboNotMemSpan
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0007
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0021
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0022
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0024
 
 set_option autoImplicit false
 

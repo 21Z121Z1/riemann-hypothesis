@@ -1,5 +1,5 @@
 import Mathlib
-import Development.DiscreteGroups.GlobalIrreducibility.ExistsFunctionalNe
+import Development.DiscreteGroups.GlobalIrreducibility.Bundle0042
 
 noncomputable section
 

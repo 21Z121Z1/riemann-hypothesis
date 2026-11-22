@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.CuspSpanNormBounds.TrD
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0012
 
 open MeasureTheory Matrix Finset
 

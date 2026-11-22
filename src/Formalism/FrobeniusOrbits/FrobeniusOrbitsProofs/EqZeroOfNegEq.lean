@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.FrobeniusOrbits.HostThickExists
+import Formalism.FrobeniusOrbits.Bundle0002
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Galois
 
 open NumberField IntermediateField Polynomial

@@ -1,10 +1,10 @@
-import Development.WeilBound.CoreStatements.FlagImmersions.FibSandwich
+import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0014
 import Development.WeilBound.CoreStatements.VolumeEquality.PrimeIdealOfFromSpec
 import Development.WeilBound.CoreStatements.VolumeEquality.ChartMeetsPoint
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsFormNotInCoordIdeal
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DvrModelOfNumberFieldPlace
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueValuationRingLift
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValAtCompLocalHom
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0002
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0020
 
 noncomputable section
 

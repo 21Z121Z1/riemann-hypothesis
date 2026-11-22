@@ -1,4 +1,4 @@
-import Formalism.MahlerMeasure.IsFrozenInv
+import Formalism.MahlerMeasure.Bundle0003
 
 namespace Formalism.GM.FrozenVariableLemmas
 

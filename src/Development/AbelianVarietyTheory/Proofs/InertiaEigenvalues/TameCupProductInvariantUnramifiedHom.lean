@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.VecPairApply
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0345
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ExistsCoprimePowOfMemIneKer
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TamePairing
 

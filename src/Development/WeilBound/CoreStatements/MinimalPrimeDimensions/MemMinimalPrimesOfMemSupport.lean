@@ -1,5 +1,5 @@
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Assembly
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PConeMeetNull
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0012
 
 set_option autoImplicit false
 

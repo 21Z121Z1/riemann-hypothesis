@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.OddLogRelation
+import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0001
 import Formalism.GaussJetBounds.GaussJetProofs.LogarithmWeightComparison
-import Formalism.FormalGroupWitt.FormalGroupWittProofs.IntegralSubstVector
+import Formalism.FormalGroupWitt.FormalGroupWittProofs.Bundle0002
 import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FrobeniusLiftNorms.TopsChoicePartA
 
 noncomputable section

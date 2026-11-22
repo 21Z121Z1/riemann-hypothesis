@@ -1,5 +1,5 @@
-import Formalism.LatticeRigidity.StatementC
-import Formalism.YangianSpanCharacter.StatementT
+import Formalism.LatticeRigidity.Bundle0001
+import Formalism.YangianSpanCharacter.Bundle0001
 import Formalism.LatticeTheta.Statement
 
 namespace Formalism.FourierDecayAlt.F7

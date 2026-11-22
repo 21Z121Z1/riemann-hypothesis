@@ -1,5 +1,5 @@
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.HeckeActMem
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0001
 import Formalism.SharpRestriction.LevelLetterCocycles.LatticeVariant
 import Formalism.LocalToGlobal.BesselHermitianTheta.IsAutFunDef
 import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply

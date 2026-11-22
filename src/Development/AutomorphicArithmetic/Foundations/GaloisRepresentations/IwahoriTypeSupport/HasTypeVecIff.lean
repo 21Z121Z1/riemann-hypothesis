@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NonemptyEquivMultiProdOne
-import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.GIface
+import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.Bundle0001
 
 noncomputable section
 

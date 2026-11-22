@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.GaloisRepOfPolarizedCuspidal
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0009
 
 noncomputable section
 

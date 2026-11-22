@@ -1,5 +1,5 @@
 import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.IntegralMem
-import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.BlkUInvVal
+import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.Bundle0003
 
 noncomputable section
 

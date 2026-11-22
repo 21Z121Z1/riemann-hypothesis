@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.PhiCubeOfFactor
+import Formalism.PeriodIntegrals.Bundle0008
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalGroupCommon.CoeffSingleLg
 
 noncomputable section

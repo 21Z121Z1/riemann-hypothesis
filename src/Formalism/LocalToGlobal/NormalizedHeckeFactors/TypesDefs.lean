@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.LocalToGlobal.UnitaryNorms.RealCyclotomicTwoPower
-import Formalism.CyclotomicNorms.StatementT
+import Formalism.LocalToGlobal.UnitaryNorms.Bundle0002
+import Formalism.CyclotomicNorms.Bundle0002
 
 noncomputable section
 

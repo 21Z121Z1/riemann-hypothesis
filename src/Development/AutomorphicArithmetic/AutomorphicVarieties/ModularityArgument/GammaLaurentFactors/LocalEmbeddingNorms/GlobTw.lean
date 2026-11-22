@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.GammaLaurentFactors.MatchIndOf
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsHcharPrescribedTrivial
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0806
 import GroundTheory.GlobalFields.SemilocalAlgebras.LocalDegree
 
 noncomputable section

@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.BiextensionHypothesesOfLevelOne
-import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.StatementK
+import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0003
+import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0001
 
 noncomputable section
 open scoped BigOperators

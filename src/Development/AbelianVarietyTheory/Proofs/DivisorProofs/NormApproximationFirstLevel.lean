@@ -1,10 +1,10 @@
 import Mathlib
-import Formalism.SatakeDualWeyl.StatementF
+import Formalism.SatakeDualWeyl.Bundle0001
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AevalRootEqZeroIff
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitOneAddPiOMul
-import GroundTheory.LocalFields.FilteredSurj
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMulInvolEqOfFixed
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsReducedAdjoinRootOfSeparable
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0229
+import GroundTheory.LocalFields.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0034
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0047
 open Polynomial Matrix Formalism.UG
 
 namespace GlobalTheory.NormEq

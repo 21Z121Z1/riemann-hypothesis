@@ -1,6 +1,6 @@
 import Formalism.LocalToGlobal.Divisibility.Numbers
-import Formalism.LocalRingCardinality.DataErr
-import Formalism.LocalRingCardinality.DataMink
+import Formalism.LocalRingCardinality.Bundle0004
+import Formalism.LocalRingCardinality.Bundle0001
 import Formalism.SharpRestriction.GrowthBounds.DefsInst
 import Formalism.SizeWindowBrackets.GaloisToProductIsIso
 import Formalism.SizeWindowBrackets.Chain2aCoreNoAnalytic

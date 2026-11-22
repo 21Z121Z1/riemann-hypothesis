@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.RingAFacts
+import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0002
 
 noncomputable section
 open scoped BigOperators

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.EigenfunctionFiniteCoefficients
+import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.Bundle0001
 import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeLocGrowthA
 
 open MeasureTheory Matrix Finset Formalism.MainNotions.S Formalism.REAL Formalism.QuantumDeterminants GlobalTheory.Dec GlobalTheory.DSId

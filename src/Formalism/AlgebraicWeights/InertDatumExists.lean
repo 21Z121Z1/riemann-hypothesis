@@ -1,5 +1,5 @@
 import Formalism.AlgebraicWeights.IsAlgWeight
-import Formalism.SatakeDualWeyl.StatementG
+import Formalism.SatakeDualWeyl.Bundle0002
 
 noncomputable section
 

@@ -1,4 +1,4 @@
-import ReciprocityTheory.DualLattices.ExistsReductionOfCoordinateCombination
+import ReciprocityTheory.DualLattices.Bundle0031
 
 noncomputable section
 

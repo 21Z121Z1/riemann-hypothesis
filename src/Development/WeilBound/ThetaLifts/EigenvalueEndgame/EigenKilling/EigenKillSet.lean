@@ -1,8 +1,8 @@
-import Development.WeilBound.ThetaLifts.SmallCones.SoDefs
+import Development.WeilBound.ThetaLifts.SmallCones.Bundle0002
 import Development.WeilBound.ThetaLifts.SmallCones.ExpAlg
 import Development.WeilBound.ThetaLifts.SmallCones.FourierUniq
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.SoStatement
-import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfDict
+import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0004
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfSurj
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.EigenKilling.ConeIntegralFactorisation
 

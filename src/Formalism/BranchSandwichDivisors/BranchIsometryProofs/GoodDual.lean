@@ -1,5 +1,5 @@
 import Formalism.BranchSandwichDivisors.StatementL
-import Formalism.HermitianLattices.HermitianLatticesProofs.DualBasic
+import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0001
 import Formalism.HermitianLattices.HermitianLatticesProofs.DualLattice
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.RatHerm
 

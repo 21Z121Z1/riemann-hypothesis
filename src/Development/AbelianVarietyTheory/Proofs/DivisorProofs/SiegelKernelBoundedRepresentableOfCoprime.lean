@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsQProjOverCompImmersion
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsZarhinTrickFamilySiegelKernelKilledStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3443
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3683
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRepPrincipalSiegelAdjointOrderActionStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelFamilyIdempotentImageOpenLocusStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3678
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.WwMain
+import Formalism.PeriodIntegrals.Bundle0013
 
 open MvPolynomial Finset
 

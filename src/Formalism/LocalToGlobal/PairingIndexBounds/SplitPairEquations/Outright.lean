@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.EqPAll
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SplitPairGen
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0034
 
 namespace Formalism.L2.PairingIndexBounds.Eq.SqG
 

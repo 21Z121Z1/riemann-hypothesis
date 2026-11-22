@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.SharpRestriction.LevelLetterCocycles.GammaSemisimpleLocalOfConsequences
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0005
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 import Formalism.LagrangeIdealLifts.Statement
 import Formalism.SharpRestriction.LevelLetterCocycles.DeltaInvariantLattices

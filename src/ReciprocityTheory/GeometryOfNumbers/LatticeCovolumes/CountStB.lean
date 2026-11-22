@@ -1,5 +1,5 @@
 import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.ArakelovDegreeEqDegreeOfFamily
-import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.CountStA
+import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.Bundle0003
 
 namespace ReciprocityTheory.GeometryOfNumbersTheory
 

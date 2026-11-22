@@ -1,10 +1,9 @@
 import Mathlib
-import GroundTheory.ProfiniteCohomology.CohomologicalDimension.CdpOpenSubgroupLe
-import GroundTheory.ProfiniteCohomology.CohomologicalDimension.NotDvdSuperIndexBotOfIsProPGroup
+import GroundTheory.ProfiniteCohomology.CohomologicalDimension.Bundle0001
 import GroundTheory.ProfiniteCohomology.ClassFormationDefs
-import GroundTheory.ProfiniteCohomology.FilteredHomology
-import GroundTheory.ProfiniteCohomology.Factor
-import GroundTheory.ProfiniteCohomology.Colimit
+import GroundTheory.ProfiniteCohomology.Bundle0001
+import GroundTheory.ProfiniteCohomology.Bundle0002
+import GroundTheory.ProfiniteCohomology.Bundle0005
 import GroundTheory.ProfiniteCohomology.OfNatRelIndexSupAntitone
 set_option maxSynthPendingDepth 1
 

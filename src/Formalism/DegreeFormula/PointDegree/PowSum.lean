@@ -1,5 +1,5 @@
 import Formalism.DegreeFormula.FlagDegFormula
-import Formalism.DegreeFormula.PointDegree.PermExpInj
+import Formalism.DegreeFormula.PointDegree.Bundle0001
 
 open MvPolynomial
 

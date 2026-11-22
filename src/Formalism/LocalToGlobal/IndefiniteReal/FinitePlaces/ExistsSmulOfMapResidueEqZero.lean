@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.SubspaceCounting.ChoiceOfTopsRefined
 import Formalism.SatakeDualWeyl.Statement
-import Formalism.SatakeDualWeyl.StatementE
+import Formalism.SatakeDualWeyl.Bundle0001
 import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.LevGapLoc
 
 noncomputable section

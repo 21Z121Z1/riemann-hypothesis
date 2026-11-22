@@ -1,4 +1,4 @@
-import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.NonzeroBasicTwistOfSpecialForm
+import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.Bundle0011
 
 noncomputable section
 

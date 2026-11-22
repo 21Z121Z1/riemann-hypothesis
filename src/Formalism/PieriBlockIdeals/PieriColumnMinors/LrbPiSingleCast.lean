@@ -1,7 +1,7 @@
 import Formalism.GradedWeylDivisibility.FinalD
 import Formalism.GradedWeylDivisibility.StatementE
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.FockQHW
-import Formalism.PieriBlockIdeals.StatementLD
+import Formalism.PieriBlockIdeals.Bundle0004
 import Formalism.PieriBlockIdeals.PieriColumnMinors.DividedPowerZeroZeroVector
 
 open MvPolynomial

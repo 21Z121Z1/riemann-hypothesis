@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.ArithmeticGeometry.SchemeCohomology.RegularUFDSerre
+import GroundTheory.ArithmeticGeometry.SchemeCohomology.Bundle0002
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Arith.SchemeCoh

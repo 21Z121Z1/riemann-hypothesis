@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.CharacterGerms.ValuationEqPairOfBiadditiveCross
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0044
 
 noncomputable section
 

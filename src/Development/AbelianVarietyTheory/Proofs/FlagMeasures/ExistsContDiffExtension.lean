@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.RealPlaceAnalysis.SmoothOnGVIff
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContDiffSetIntegralNat
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0178
 
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S Formalism.REAL Formalism.QuantumDeterminants
 open scoped InnerProductSpace ContDiff Topology Manifold

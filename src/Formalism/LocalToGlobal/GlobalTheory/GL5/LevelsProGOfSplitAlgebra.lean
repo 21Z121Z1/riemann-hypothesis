@@ -1,9 +1,7 @@
 import Mathlib
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.GlintPrincRelIndexNeZero
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SplitUnitaryGroupIso
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Transport
-import Formalism.LocalToGlobal.GroupLattices.TrivialTransfer.ProGTransfer
-import Formalism.LocalToGlobal.GroupLattices.TrivialTransfer.OneAddPowOfSq
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0002
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0003
+import Formalism.LocalToGlobal.GroupLattices.TrivialTransfer.Bundle0001
 import Formalism.LocalToGlobal.GroupLattices.TrivialTransfer.SmallOrderPrimeLogSumBound
 import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.GramDetIsUnit
 import Formalism.LocalToGlobal.GlobalTheory.GL5.Statement

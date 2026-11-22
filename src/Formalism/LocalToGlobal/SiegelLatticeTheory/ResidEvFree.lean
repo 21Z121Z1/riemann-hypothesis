@@ -1,6 +1,6 @@
 import Formalism.SharpRestriction.SmoothDesignExistence.ClosedLinkSOfClosedPeriodAndFiltration
 import Formalism.SharpRestriction.CuspSpanNormBounds.StandingHypothesesHoldFamily
-import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.CMFieldLemmas
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.Bundle0007
 import Formalism.SharpRestriction.AdmissibleParameterJoins.SfromGLu
 import Formalism.LocalToGlobal.GlobalTheory.GL2.ModEqOfNormOneMod
 

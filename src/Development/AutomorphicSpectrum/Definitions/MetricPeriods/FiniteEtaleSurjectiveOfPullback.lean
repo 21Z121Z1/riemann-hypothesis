@@ -2,8 +2,7 @@ import Mathlib
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsCoordsAtOfCoordTie
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatRestrictComapSpan
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsVBOnDualAndBidual
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0022
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PCoordConeArithVar
 
 noncomputable section

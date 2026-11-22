@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.CuspSpanNormBounds.PlaceDegreeData
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ModularCharacterEqOneOnExpHermitian
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0006
 
 noncomputable section
 

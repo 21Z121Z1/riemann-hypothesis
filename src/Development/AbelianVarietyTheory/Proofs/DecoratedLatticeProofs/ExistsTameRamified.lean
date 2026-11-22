@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsSumFrame
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0012
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.PowClassNumberIntegral
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsOpenCongruenceIdelesAndRealFiniteParts
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0074
 
 noncomputable section
 

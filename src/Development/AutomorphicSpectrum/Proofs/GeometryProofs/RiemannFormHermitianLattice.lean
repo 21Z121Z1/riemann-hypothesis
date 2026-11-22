@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsAdaptedUnimodular
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0002
 
 open Filter Topology Matrix
 

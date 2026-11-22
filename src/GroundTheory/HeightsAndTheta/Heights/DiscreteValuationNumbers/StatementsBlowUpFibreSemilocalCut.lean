@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsBlowUpFibreDegreeCut
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0043
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.LiftFormNotMemBlowUpOf
 set_option maxSynthPendingDepth 1
 

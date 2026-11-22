@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.Columns.RowFormsRank
+import Formalism.LocalToGlobal.Columns.Bundle0008
 import Formalism.LocalToGlobal.Columns.RowFormsNZs
 import Formalism.LocalToGlobal.Columns.RowFormsNZc
 import Formalism.LocalToGlobal.Columns.RowFormsNZw

@@ -1,8 +1,8 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.cut_GCore_GenTransferKapCut
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0079
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.DiagonalTransferAction
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SettingConstruction
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.NFRadRedLocSec
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.NFRadRedA
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0059
 
 open Matrix Finset
 open scoped ComplexOrder InnerProductSpace

@@ -1,7 +1,7 @@
-import Formalism.MirabolicMackeyTheory.LocalConditionsWeighted
+import Formalism.MirabolicMackeyTheory.Bundle0002
 import Formalism.MirabolicMackeyTheory.MirabolicIsMackey
 import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.LocalConditionsGlobalForm
-import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ValBasic
+import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0003
 
 open Module NumberField IsDedekindDomain
 

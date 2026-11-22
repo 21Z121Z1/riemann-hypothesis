@@ -1,8 +1,7 @@
 import Development.AutomorphicArithmetic.MeanSquareBounds.PrimeSetTwoBounds
 import Development.AutomorphicArithmetic.CharacterBoxes.PairGood
 import Development.AutomorphicArithmetic.MeanSquareBounds.Thin
-import Development.AutomorphicArithmetic.MeanSquareBounds.realCond
-import Development.AutomorphicArithmetic.MeanSquareBounds.SmallZeros
+import Development.AutomorphicArithmetic.MeanSquareBounds.Bundle0001
 
 open Finset Formalism.HermitianLattices.ZeroFreeRegionGL2 Formalism.HermitianLattices.Ext.LogarithmicIntegralBounds
 

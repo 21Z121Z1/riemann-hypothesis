@@ -1,5 +1,4 @@
-import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.ExistsIsRegularAppendOfModDepthGE
-import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.AssDim
+import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.Bundle0002
 
 namespace ReciprocityTheory.CA
 

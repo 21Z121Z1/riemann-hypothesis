@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.ExistsPowSmulMemBall
-import Formalism.PeriodIntegrals.BallQuotLen
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.EfRankSum
+import Formalism.PeriodIntegrals.Bundle0014
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0010
 
 namespace PI.UnitaryGroupMassFormula.BallQuotLen
 

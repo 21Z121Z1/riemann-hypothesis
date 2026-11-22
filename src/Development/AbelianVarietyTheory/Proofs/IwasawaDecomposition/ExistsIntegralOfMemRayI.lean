@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonemptyRayDataOfNeZero
-import Development.AbelianVarietyTheory.Definitions.Foundations.RayPrimes
-import Development.AbelianVarietyTheory.Definitions.Foundations.NormOneSevenOneTwo
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0009
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0011
 
 noncomputable section
 

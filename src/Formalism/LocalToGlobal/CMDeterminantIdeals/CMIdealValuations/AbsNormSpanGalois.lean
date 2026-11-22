@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.CMDeterminantIdeals.CoeffMemOfLoc
-import Formalism.LocalToGlobal.CMDeterminantIdeals.StatementA
+import Formalism.LocalToGlobal.CMDeterminantIdeals.Bundle0001
 import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.OneLeAbsNormOfLeOne
 
 noncomputable section

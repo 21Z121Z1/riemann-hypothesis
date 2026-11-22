@@ -2,8 +2,7 @@ import Formalism.HermitianCurvature.StatementQ
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RegularisedPairingViaPhase
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.UnitaryWeylNormalHolds
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.GBasic
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CartanInvolutionConjTransposeMul
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ComplexifiedDerivativeCommutator
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0002
 
 open Matrix Finset Filter Topology
 open scoped ContDiff

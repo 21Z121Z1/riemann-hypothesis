@@ -1,4 +1,4 @@
-import Formalism.FrobeniusBaseCase.CoeffOfFirstMultiplier
+import Formalism.FrobeniusBaseCase.Bundle0001
 import Formalism.FrobeniusBaseCase.FrobeniusBaseCaseProofs.SecondWayHolds
 
 open MvPowerSeries

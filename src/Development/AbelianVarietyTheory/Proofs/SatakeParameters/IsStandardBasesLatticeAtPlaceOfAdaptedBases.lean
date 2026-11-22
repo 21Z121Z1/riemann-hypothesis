@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.StdBases
-import Formalism.LocalToGlobal.KernelLattices.AdaptedEnt
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsRBasisOfLocBasis
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormTauEmbPosPlConjEq
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PartnerPlaceInvolutiveNormConjEqStatement
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0009
+import Formalism.LocalToGlobal.KernelLattices.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0082
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0092
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0100
 open NumberField Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.G Formalism.MainNotions.TaylorLogMetric GlobalTheory.KerStd Classical
 
 noncomputable section

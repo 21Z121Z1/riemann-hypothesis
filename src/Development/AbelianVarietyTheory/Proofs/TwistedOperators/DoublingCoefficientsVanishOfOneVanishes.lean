@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.SharpRestriction.Divisibility.SchurIrreducible
-import Formalism.LocalToGlobal.BesselHermitianTheta.DefsReal
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EqOneOfSmulHaarEq
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0295
 
 open Formalism.BasicNotions.TH Formalism.MainNotions.SchurIrreducible MeasureTheory
 

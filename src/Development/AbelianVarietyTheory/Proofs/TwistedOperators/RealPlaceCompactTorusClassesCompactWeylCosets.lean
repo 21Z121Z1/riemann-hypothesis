@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsHasCls
+import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0005
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.DiscreteSeriesCharacter
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CompactUnitaryTorusRealPlaceTensorEqComplexPowStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0289
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MeasurableEmbeddingEquiv
 
 open MeasureTheory Set Filter Polynomial NumberField IsDedekindDomain

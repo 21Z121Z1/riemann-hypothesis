@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.MultiAt
-import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.BernsteinExponentBounds.ThmBChar0
+import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.BernsteinExponentBounds.Bundle0001
 
 open GlobalTheory.PRep GlobalTheory.SmGL NumberField IsDedekindDomain
 

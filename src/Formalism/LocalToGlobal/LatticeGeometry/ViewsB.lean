@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.LatticeGeometry.ShimuraSheafOfIndefiniteSubspace
-import Formalism.SharpRestriction.Divisibility.IntegralModelsLocalData
+import Formalism.LocalToGlobal.LatticeGeometry.Bundle0003
+import Formalism.SharpRestriction.Divisibility.Bundle0001
 import Formalism.SharpRestriction.Divisibility.BoundaryLocalData
 import Formalism.SharpRestriction.Divisibility.WeightThresholdDefs
 

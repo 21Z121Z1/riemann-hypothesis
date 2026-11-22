@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.ScalDeg
+import Formalism.PeriodIntegrals.Bundle0010
 
 noncomputable section
 

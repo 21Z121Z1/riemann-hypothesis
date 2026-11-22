@@ -1,7 +1,7 @@
 import Formalism.GaussJetBounds.OneLetterGaussJets.StatementJ
-import Formalism.GaussJetBounds.OneLetterGaussJets.StatementF
+import Formalism.GaussJetBounds.OneLetterGaussJets.Bundle0002
 import Formalism.GaussJetBounds.GaussJetProofs.FrameA
-import Formalism.GaussJetBounds.GaussJetProofs.Generic
+import Formalism.GaussJetBounds.GaussJetProofs.Bundle0007
 
 noncomputable section
 open scoped BigOperators

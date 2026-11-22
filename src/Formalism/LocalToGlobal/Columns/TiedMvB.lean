@@ -1,6 +1,6 @@
 import Formalism.LocalToGlobal.Columns.TiedUpDn
-import Formalism.LocalToGlobal.Columns.LocalLevelIsKOneAtT
-import Formalism.LocalToGlobal.Columns.TiedMvA
+import Formalism.LocalToGlobal.Columns.Bundle0024
+import Formalism.LocalToGlobal.Columns.Bundle0022
 
 open NumberField IsDedekindDomain Module Matrix
 open scoped TensorProduct

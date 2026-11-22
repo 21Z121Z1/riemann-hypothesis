@@ -1,4 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.OccDAdjA
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.Bundle0010
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.OccDTensKStable
 
 noncomputable section

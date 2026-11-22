@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecPullA
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpecFunctionsEqOfRestrictionsOnPairsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0439
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0474
 
 set_option autoImplicit false
 

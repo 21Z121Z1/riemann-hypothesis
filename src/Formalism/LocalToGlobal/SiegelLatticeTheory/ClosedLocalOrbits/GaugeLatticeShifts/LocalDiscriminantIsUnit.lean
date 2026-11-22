@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.TermLoc
 import Formalism.LocalToGlobal.SiegelLatticeTheory.SiegelMassRatios.GramJoint
-import Formalism.LocalRingCardinality.IntCastDvdOfDvdIntegers
+import Formalism.LocalRingCardinality.Bundle0001
 import Formalism.LocalToGlobal.SiegelLatticeTheory.EFSymmCont
 
 noncomputable section

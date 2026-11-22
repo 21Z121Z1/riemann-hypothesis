@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsGramChiDerivative
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0059
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PIntegralOfBergman
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PMetricChange
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.HasDerivAtDet
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0067
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0015
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

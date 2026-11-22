@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-import Development.WeilBound.ThetaLifts.TowerModels.TwistedSums.ExistsIntAddConjEqOneOfBaseGood
+import Development.WeilBound.ThetaLifts.TowerModels.TwistedSums.Bundle0001
 
 open Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes
 open IsDedekindDomain NumberField MeasureTheory Matrix

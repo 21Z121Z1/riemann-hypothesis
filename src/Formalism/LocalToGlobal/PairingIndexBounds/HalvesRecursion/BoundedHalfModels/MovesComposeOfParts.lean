@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.BoundedHalfModels.SplitElementExistsHolds
+import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.BoundedHalfModels.Bundle0001
 import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.ModelXiAll
 
 noncomputable section

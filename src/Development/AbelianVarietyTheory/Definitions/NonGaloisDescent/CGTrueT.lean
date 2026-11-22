@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CGTrue
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsRecTLocRecT
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0015
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0056
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StFibreDiscriminantHolomorphic
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0021
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PRiemannExtensionAnalytic
 set_option maxSynthPendingDepth 1
 

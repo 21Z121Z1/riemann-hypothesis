@@ -2,7 +2,7 @@ import Mathlib
 import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.VerticalStrips.UnramifiedEulerProductIntegral
 import GroundTheory.GlobalFields.TateThesis.HeckeTheorem
 import GroundTheory.GlobalFields.TateThesis.Nonvanishing
-import GroundTheory.GlobalFields.TateThesis.FiniteOrderParams
+import GroundTheory.GlobalFields.TateThesis.Bundle0006
 
 set_option maxSynthPendingDepth 1
 

@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJABddSSnChain
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0033
 
 namespace Formalism.FourierDecayAlt.P.CutMP.JA.SSn.ChainPf
 

@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.HermitianLocalSplit
-import GroundTheory.GlobalFields.Adele.WeakApprox
+import GroundTheory.GlobalFields.Adele.Bundle0001
 import GroundTheory.GlobalFields.Adele.BaseChange.FiniteMap
 import GroundTheory.GlobalFields.LocalFieldAtPlace
 

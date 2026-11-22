@@ -1,6 +1,6 @@
-import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.BFDefs
-import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.FinrankTensor
-import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.ExtendedStatementOfParts
+import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.Bundle0004
+import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0004
+import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0003
 
 noncomputable section
 

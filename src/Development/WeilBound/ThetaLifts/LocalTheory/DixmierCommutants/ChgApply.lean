@@ -1,5 +1,5 @@
 import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.VaceigenDual
-import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfDict
+import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0004
 
 set_option linter.unusedSectionVars false
 

@@ -1,6 +1,6 @@
 import Mathlib
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
-import Development.AbelianVarietyTheory.BlockTheory.CMModuli.PeriodMapPresentation
+import Development.AbelianVarietyTheory.BlockTheory.CMModuli.Bundle0005
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.ExistsEquivOfSumEq
 
 noncomputable section

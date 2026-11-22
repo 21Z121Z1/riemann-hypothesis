@@ -1,5 +1,5 @@
 import CompanionTheory.AutomorphicTheory.ZuckermanCommutation.ZuckermanFunctors.IsSimpleFam
-import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.IsFRepDualStandardUnitaryRep
+import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Bundle0001
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HighestWeightUniqueness.HpkMulMulHpkApply
 
 open Matrix Finset

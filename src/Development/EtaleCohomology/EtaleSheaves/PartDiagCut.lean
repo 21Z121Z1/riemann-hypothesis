@@ -1,4 +1,4 @@
-import Development.EtaleCohomology.EtaleSheaves.HensCut
+import Development.EtaleCohomology.EtaleSheaves.Bundle0020
 
 noncomputable section
 open CategoryTheory Limits GlobalTheory.EtC

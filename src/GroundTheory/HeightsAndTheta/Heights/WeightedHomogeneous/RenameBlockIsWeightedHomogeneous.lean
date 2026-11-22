@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Statements
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.SectionInjectivityHypothesesProjectiveLine
-import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.OneBlockIdealEqComapProjIdeal
+import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Bundle0003
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.Close

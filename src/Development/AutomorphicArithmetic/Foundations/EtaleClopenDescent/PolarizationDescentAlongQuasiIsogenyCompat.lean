@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsQuasiInv
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowCompMonHomOverSchemeGrpObj
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdditiveOfTrivAxes
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatSurjectiveQcPow
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsAdditiveOfUniversal
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2394
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3021
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2973
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3642
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0010
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.UPel.HT GlobalTheory.UPel.HT.Hecke GlobalTheory.UPel.HT.ES

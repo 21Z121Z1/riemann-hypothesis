@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.MemEurOfTeichmullerSeries
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GeomSumOneAddPrime
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0284
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsInvariantBasis
 
 noncomputable section

@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.PeriodIntegrals.IdxCalc
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ElementDenominator
+import Formalism.PeriodIntegrals.Bundle0028
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0015
 
 noncomputable section
 

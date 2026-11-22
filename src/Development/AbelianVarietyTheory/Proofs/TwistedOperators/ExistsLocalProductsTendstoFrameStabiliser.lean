@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TameOnOne
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0129
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SupportedSubgroupSplitCommutePrimeIdempotents
 
 noncomputable section

@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
 import Development.AbelianVarietyTheory.Definitions.Foundations.ClassMassEqSumOfBijective
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCompactAdele
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CompletedLatticeStabilizerCompactOpen
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CmDataIsCMExtAndGramIsHermND
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0321
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0188
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0125
 
 noncomputable section
 

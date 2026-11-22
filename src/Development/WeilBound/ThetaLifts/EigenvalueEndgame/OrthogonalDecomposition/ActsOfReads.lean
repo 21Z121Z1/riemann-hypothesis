@@ -1,7 +1,7 @@
-import Development.WeilBound.ThetaLifts.LatticeBasics.ThConstLoc
+import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0010
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.IndicatorMem
-import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfActs
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfComponentTensorAdelicFunctionEq
+import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0003
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1876
 
 noncomputable section
 

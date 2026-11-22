@@ -1,5 +1,5 @@
 import Formalism.WachLatticeTwists.RealDisplaySplitting.RealDisplayProofs.RealizationAllFormsHolds
-import Formalism.WachLatticeTwists.SplitClassesAll.SplitClassesProofs.TheoremNFiveSplitRankForm
+import Formalism.WachLatticeTwists.SplitClassesAll.SplitClassesProofs.Bundle0001
 
 open Finset Classical
 

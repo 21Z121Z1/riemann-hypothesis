@@ -1,5 +1,5 @@
 import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.IdealB
-import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.IdealStmt
+import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.Bundle0001
 
 noncomputable section
 

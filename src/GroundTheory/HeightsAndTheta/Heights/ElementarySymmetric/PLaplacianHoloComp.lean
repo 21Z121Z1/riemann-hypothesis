@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.StatementsLaplacianHoloComp
+import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.Bundle0001
 set_option maxSynthPendingDepth 1
 
 noncomputable section

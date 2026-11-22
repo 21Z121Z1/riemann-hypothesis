@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitKOfIsAlgClosed
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2668
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTangentPresentationPrime
 
 set_option autoImplicit false

@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.IsoDualPair
+import Formalism.PeriodIntegrals.Bundle0005
 
 noncomputable section
 

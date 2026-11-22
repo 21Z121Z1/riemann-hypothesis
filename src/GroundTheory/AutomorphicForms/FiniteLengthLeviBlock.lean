@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.GeometricLemma
-import GroundTheory.AutomorphicForms.CuspidalSplitting
+import GroundTheory.AutomorphicForms.Bundle0020
+import GroundTheory.AutomorphicForms.Bundle0022
 set_option maxSynthPendingDepth 1
 
 noncomputable section

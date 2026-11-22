@@ -1,5 +1,5 @@
-import Formalism.HermitianCurvature.StatementTBB
-import Formalism.FormalDegreeBessel.FinalG
+import Formalism.HermitianCurvature.Bundle0007
+import Formalism.FormalDegreeBessel.Bundle0002
 
 namespace Formalism.FourierDecayAlt.P.TBBx2
 

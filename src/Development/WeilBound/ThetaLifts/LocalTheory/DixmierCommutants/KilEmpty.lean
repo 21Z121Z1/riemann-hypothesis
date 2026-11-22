@@ -1,6 +1,6 @@
 import Development.WeilBound.ThetaLifts.LocalTheory.DixmierCommutants.ExistsInvar
 import Development.WeilBound.ThetaLifts.LocalTheory.DixmierCommutants.SlopeTestRemainingChoices
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilObjectsInhabited
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0284
 
 noncomputable section
 

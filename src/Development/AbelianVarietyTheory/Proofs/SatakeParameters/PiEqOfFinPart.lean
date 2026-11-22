@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0014
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
@@ -7,7 +7,7 @@ import Formalism.SharpRestriction.Divisibility.KudlaSiegelWeil
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertPlaceHeckeDoubleCosetsInverseRepsLabel
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SupportedSubgroupSplitCommutePrimeIdempotents
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemHomLatticeIffIntegralMatrixSplitChart
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnramifiedConjugatePlaceUniformiser
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1057
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsFinWeil
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsDeltaPsi
 

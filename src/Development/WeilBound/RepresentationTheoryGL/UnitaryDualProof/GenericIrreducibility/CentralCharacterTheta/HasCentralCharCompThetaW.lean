@@ -1,6 +1,6 @@
 import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.GenericIrreducibility.CentralProd2
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StdQuotGenericOfStdSubGeneric
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CentralCharacterEqProdSupercuspidalSupport
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0695
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0677
 
 noncomputable section
 

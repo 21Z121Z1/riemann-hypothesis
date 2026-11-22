@@ -1,6 +1,6 @@
 import Mathlib
 import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Imports
-import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.ImportsBisTer
+import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Bundle0003
 
 open Matrix MeasureTheory Finset
 open scoped InnerProductSpace ENNReal

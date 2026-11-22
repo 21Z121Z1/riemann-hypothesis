@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsEtPlace
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0019
 
 namespace UpperTheory.SubgroupJ
 

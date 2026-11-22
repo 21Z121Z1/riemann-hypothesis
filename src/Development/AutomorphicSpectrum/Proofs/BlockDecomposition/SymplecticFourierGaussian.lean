@@ -1,10 +1,10 @@
 import Mathlib
 import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.VerticalStrips.UnramifiedEulerProductIntegral
 import GroundTheory.AutomorphicForms.GL2.GJMatrixLocal
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OneDim
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0633
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormMixedToEuclideanConjSqRat
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoeAbsNormUnitsPrimeIdealUnit
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalFourierCosetIndValBall
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0647
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0660
 
 noncomputable section
 

@@ -1,6 +1,6 @@
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeColumns.OneSubMulOneAdd
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeColumns.LevelClauseAdaptedBasis
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeIndices.SecondCoordsMulGL
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeIndices.Bundle0025
 
 noncomputable section
 

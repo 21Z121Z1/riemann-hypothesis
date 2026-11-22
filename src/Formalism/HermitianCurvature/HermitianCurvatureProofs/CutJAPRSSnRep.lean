@@ -1,5 +1,5 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAPRFinal
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJASSnRepDone
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0322
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0323
 
 namespace Formalism.FourierDecayAlt.P.CutMP
 

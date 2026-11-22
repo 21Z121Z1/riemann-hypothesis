@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.TensorProductTheorem.Existence
-import GroundTheory.AutomorphicForms.TensorProductTheorem.OuterTensor
+import GroundTheory.AutomorphicForms.TensorProductTheorem.Bundle0002
 
 noncomputable section
 

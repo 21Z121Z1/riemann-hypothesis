@@ -1,5 +1,5 @@
 import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.SliceMain
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFockMap
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1041
 
 noncomputable section
 

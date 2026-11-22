@@ -1,8 +1,8 @@
 import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.EisensteinMeromorphy.DiffContOfReg
 import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.EisensteinMeromorphy.HgtMulRight
-import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.EisensteinMeromorphy.MeromorphicOnOfWeak
-import Development.WeilBound.ThetaLifts.LatticeBasics.EisCont
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinHeckeFunctionalStatement
+import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.EisensteinMeromorphy.Bundle0001
+import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0016
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0489
 
 noncomputable section
 

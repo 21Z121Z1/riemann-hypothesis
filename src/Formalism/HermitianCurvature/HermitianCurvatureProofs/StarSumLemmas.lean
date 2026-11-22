@@ -1,6 +1,6 @@
-import Formalism.HermitianCurvature.CapelliDeterminantAndBranching
+import Formalism.HermitianCurvature.Bundle0005
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.QuantumMinorExpansion
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.QuantumMinorCommutation
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0067
 
 open Finset Polynomial
 

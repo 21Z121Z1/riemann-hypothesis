@@ -1,13 +1,13 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.SmoothPartStable
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0002
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.ContinuousTorusCharacter
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.Distinct
-import Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.OrdinaryHeckeCharacters.IwMemMul
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Brauer
+import Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.OrdinaryHeckeCharacters.Bundle0001
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0047
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IwahoriTraceOfBorelCasselman
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.FixedSubgroup
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CongruenceSubgroupEventually
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DiagonalConjugateMem
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0024
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0009
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0013
 
 private theorem unif_lt (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k]
     [IsNonarchimedeanLocalField k] :

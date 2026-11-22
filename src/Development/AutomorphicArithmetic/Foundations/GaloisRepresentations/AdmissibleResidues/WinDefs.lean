@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AdmissibleResidues.SumThree
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Classifies
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.CountSys
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0006
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.CrystallineBaseChange.CqStmt
 
 noncomputable section

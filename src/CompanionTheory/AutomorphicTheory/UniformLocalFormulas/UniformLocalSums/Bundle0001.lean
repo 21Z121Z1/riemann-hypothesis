@@ -1,0 +1,13 @@
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0240
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0242
+
+-- bundled from CompanionTheory.AutomorphicTheory.UniformLocalFormulas.UniformLocalSums.IntegralEqOfQuotientMeasuresBesselUnitaryImports
+section
+
+end
+
+-- bundled from CompanionTheory.AutomorphicTheory.UniformLocalFormulas.UniformLocalSums.UnipotentRadicalInterConjugateClosedUnimodularIm
+section
+
+end
+

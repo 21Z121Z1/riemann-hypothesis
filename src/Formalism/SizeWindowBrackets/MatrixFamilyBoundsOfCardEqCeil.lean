@@ -1,4 +1,4 @@
-import Formalism.SizeWindowBrackets.TraceSquareAndDiagBounds
+import Formalism.SizeWindowBrackets.Bundle0001
 import Formalism.SizeWindowBrackets.FrameTraceRatioFinEquiv
 
 open Matrix Module NumberField

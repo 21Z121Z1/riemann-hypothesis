@@ -1,5 +1,5 @@
 import CompanionTheory.HarishChandraModules.BesselParameterIntegrals.BesselOrbitConvolutions.BesselNonvanishingReduction
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.AeSS
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0170
 import CompanionTheory.HarishChandraModules.BesselParameterIntegrals.BesselOrbitConvolutions.PhiReg
 
 noncomputable section

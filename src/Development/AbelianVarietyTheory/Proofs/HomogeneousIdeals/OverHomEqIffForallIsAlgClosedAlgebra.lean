@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.ShimuraVarieties.OpensRangeChartYSupOpensRangeChartZ
-import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.AddXYZOrChordXYZOrOriginXYZNeZero
+import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0006
 
 open AlgebraicGeometry CategoryTheory Limits
 

@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.Intersections.StTorusInvLevi
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0007
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals.FubiniLevi
-import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0001
 set_option maxSynthPendingDepth 1
 
 noncomputable section

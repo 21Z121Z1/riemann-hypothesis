@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.FrecAt
-import Formalism.LocalToGlobal.InertKernelTheory.DefsRepRec
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0013
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.FunctionField.PlaceAbove
+import GroundTheory.FunctionField.Bundle0001
 
 namespace GroundTheory.FunctionField
 

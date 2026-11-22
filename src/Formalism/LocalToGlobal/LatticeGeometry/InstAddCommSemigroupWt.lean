@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.LocalToGlobal.LatticeGeometry.DegFlLApply
-import Formalism.LocalToGlobal.LatticeGeometry.ArVolEqOfNef
+import Formalism.LocalToGlobal.LatticeGeometry.Bundle0001
+import Formalism.LocalToGlobal.LatticeGeometry.Bundle0002
 import Formalism.SharpRestriction.Divisibility.WeightAlgebra
 
 noncomputable section

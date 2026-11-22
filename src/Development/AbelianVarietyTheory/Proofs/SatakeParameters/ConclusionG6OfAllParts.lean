@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.HeckeCharEqOfLAdicRealisation
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsHeckeGaloisQOfIsHeckeGalois
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0008
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0091
 
 noncomputable section
 

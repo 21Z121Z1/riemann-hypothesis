@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCompactPreimageNormCentralizerHermitianStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0151
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology Polynomial
 
 noncomputable section

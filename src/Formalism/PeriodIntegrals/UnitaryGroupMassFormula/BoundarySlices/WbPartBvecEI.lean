@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.BordSlice
+import Formalism.PeriodIntegrals.Bundle0022
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.GBasic
 
 open Matrix

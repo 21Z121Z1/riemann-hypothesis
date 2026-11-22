@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSupBoundCount
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSupBoundBlock
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0029
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0071
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

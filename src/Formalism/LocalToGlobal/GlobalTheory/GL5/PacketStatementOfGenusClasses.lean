@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.GlobalTheory.ConcTop
+import Formalism.LocalToGlobal.GlobalTheory.Bundle0003
 import Formalism.LocalToGlobal.GlobalTheory.GL5.PNamed
 import Formalism.LocalToGlobal.GlobalTheory.GL5.PClassItems
 import Formalism.LocalToGlobal.GlobalTheory.GL5.LocalEndomorphismContinuous

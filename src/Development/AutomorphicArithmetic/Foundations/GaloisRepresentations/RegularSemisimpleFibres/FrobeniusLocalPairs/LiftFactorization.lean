@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.OrbitalIntegrals.GeoTransport
 import Development.AbelianVarietyTheory.Definitions.Divisors.SimpleTwistedTraceFormulaStable
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsLevelProjLevelProj
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0021
 
 noncomputable section
 

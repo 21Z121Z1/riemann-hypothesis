@@ -1,12 +1,11 @@
 import Mathlib
-import Formalism.LocalToGlobal.CharacterGerms.NondegenerateCharts
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0013
 import Formalism.LocalToGlobal.CharacterGerms.RowTieSelf
-import Formalism.LocalToGlobal.CharacterGerms.BlockAdmissibleChart
-import Formalism.LocalToGlobal.CharacterGerms.NegMem
-import Formalism.LocalToGlobal.CharacterGerms.RowTieAxes
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0011
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0009
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartF
 import Development.AbelianVarietyTheory.Definitions.TeichmullerDepth.HasTeich
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.IntSOfMulEqOne
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0043
 
 noncomputable section
 

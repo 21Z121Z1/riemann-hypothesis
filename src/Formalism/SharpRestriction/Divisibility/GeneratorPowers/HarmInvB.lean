@@ -1,8 +1,8 @@
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CIndFrFix
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpOfPf
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.HarmInvA
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.CalcAdd
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.KillAdd
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0011
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.Bundle0001
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.Bundle0003
 
 set_option autoImplicit false
 

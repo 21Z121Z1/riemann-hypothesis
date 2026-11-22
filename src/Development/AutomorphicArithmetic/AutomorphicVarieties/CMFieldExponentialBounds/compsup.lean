@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicArithmetic.AutomorphicVarieties.PrimeSetBoundDataOfPrimitiveChar
+import Development.AutomorphicArithmetic.AutomorphicVarieties.Bundle0001
 import Development.AutomorphicArithmetic.QuadraticCharacters.GaussRoot
 
 open NumberField Formalism.HC UpperTheory.Top UpperTheory.V

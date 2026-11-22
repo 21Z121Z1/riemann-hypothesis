@@ -1,6 +1,6 @@
-import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.ExistsLeftInvOfIndep
+import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.Bundle0005
 import Formalism.LocalToGlobal.GlobalTheory.VolumeCarry.VolumeTheoremTwoOfRationalFrames
-import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.GEqBase
+import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0006
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.GrowthMod
 
 noncomputable section

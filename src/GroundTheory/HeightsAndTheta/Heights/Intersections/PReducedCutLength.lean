@@ -1,9 +1,9 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsReducedCut
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.OrdModEqLengthQuotSup
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PDivCycleMul
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.LengthLocalizedModuleQuotient
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.LocalMultRadical
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0002
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0019
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0011
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0029
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0003
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Inter

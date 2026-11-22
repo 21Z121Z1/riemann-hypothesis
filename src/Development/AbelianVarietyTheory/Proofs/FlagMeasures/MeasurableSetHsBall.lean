@@ -1,8 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.SameKindIsometric
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InvSubOneMem
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsRiemannianHaarOnSubgroupMapMulRightUnitary
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicFlagLeviMaxCompactClosedSubgroups
+import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0276
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0142
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S GlobalTheory.Count GlobalTheory.FlagMeas
 
 noncomputable section

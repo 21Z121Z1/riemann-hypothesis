@@ -1,9 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.IsTopWTopWOfExists
-import Development.AbelianVarietyTheory.Definitions.Foundations.Mdl
-import Development.AbelianVarietyTheory.Definitions.Foundations.HahnPowOrderLeadingCoeff
-import Development.AbelianVarietyTheory.Definitions.Foundations.CthFac
-import Development.AbelianVarietyTheory.Definitions.Foundations.SgC
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0004
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0001
 
 noncomputable section
 

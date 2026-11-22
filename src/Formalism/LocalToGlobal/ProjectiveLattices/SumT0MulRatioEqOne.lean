@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.ProjectiveLattices.PowMapMemOfPowMulMem
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0003
 import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.RestrictionEqZeroIffMemVanishingFiltration
 
 set_option autoImplicit false

@@ -1,10 +1,9 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Statements.GeometryStatements.CurveSemiAbelianConjecture
-import Development.AutomorphicSpectrum.Statements.GeometryStatements.SeparableFormGroupElementFixesUniquePositiveLine
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0006
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Proportional
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.EigenProjectorsSplitActionStatement
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0010
 import Development.WeilBound.CoreStatements.HodgeTatePoints.LieValAtBase
-import Development.WeilBound.CoreStatements.HodgeTatePoints.EigFrob
+import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0009
 
 set_option backward.isDefEq.respectTransparency false
 

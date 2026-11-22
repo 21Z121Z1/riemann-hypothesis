@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryDensity.EvalBindTorusSubst
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryDensity.Bundle0002
 
 open Matrix MvPolynomial
 open scoped ComplexOrder

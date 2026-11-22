@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0008
 
 noncomputable section
 open CategoryTheory Limits CochainComplex CochainComplex.HomComplex

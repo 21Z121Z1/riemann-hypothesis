@@ -1,6 +1,6 @@
 import Formalism.HermitianCurvature.StatementHeads
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.PBGLift
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.PBGFormJ
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0223
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0176
 
 open Matrix Finset
 open scoped ComplexConjugate

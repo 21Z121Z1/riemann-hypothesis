@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.PsiEDef
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIrreducible
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NegOneNormFromCmFieldFiniteAdeles
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0093
 
 noncomputable section
 open ValuativeRel IsDedekindDomain NumberField Formalism.MainNotions.S.Loc MeasureTheory

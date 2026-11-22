@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.DistinguishedUnitIdeals.FrobeniusDiffBijective
+import Formalism.DistinguishedUnitIdeals.Bundle0002
 import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.RhoMapFunctorial
-import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.GroundTheory
+import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.Bundle0001
 
 noncomputable section
 

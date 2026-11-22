@@ -1,9 +1,8 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ArakelovCycleHeights.QpSndStr
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ArakelovSingularities.Bridge
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.ArFormExistsOfInt
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.ArMixOfBaseInt
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.HeightProjectionOfInt
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0055
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0053
 
 set_option autoImplicit false
 

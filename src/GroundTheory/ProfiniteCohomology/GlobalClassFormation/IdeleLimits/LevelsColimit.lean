@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleLimits.Levels
-import GroundTheory.ProfiniteCohomology.FilteredHomology
-import GroundTheory.ProfiniteCohomology.Factor
+import GroundTheory.ProfiniteCohomology.Bundle0001
+import GroundTheory.ProfiniteCohomology.Bundle0002
 import GroundTheory.ProfiniteCohomology.InflationRestriction.DegreeOne
 set_option maxSynthPendingDepth 1
 

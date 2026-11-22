@@ -1,6 +1,6 @@
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
-import Formalism.PeriodIntegrals.DSInfCharCap
-import Formalism.LocalToGlobal.BesselHermitianTheta.TiedType
+import Formalism.PeriodIntegrals.Bundle0022
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
 
 noncomputable section
 

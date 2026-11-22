@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.HodgeBundleWeights.TamagawaNumberSpecialUnitary
-import Development.AbelianVarietyTheory.Definitions.Divisors.P22
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0071
 
 section
 namespace GlobalTheory.CovTop

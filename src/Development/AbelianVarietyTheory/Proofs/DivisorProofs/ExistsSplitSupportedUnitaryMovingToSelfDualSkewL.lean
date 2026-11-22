@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosetVecEq
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.WeilOperatorRationalTranslateMemThetaFunctions
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIdeleGenerator
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsHalfIdem
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1681
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0287
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0252
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0264
 open scoped Pointwise
 open Formalism.BasicNotions Formalism.IndefR.Links IsDedekindDomain NumberField
 open Formalism.MainNotions Formalism.MainNotions.TaylorLogMetric Formalism.MainNotions.StandardLatticesGL3

@@ -1,12 +1,10 @@
 import Formalism.HarderNarasimhan.StatementPl
 import Formalism.LatticeSlopes.ExistsSaturatedSlopeEqMuMax
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SlopeIneq
-import Formalism.HarderNarasimhan.HarderNarasimhanProofs.TwistFinrankEq
+import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0004
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DiscreteSpanOfLinIndep
-import Formalism.HarderNarasimhan.HarderNarasimhanProofs.RescaleCovol
-import Formalism.HarderNarasimhan.HarderNarasimhanProofs.ShiftInvariance
+import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0003
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.HNSlopes
-import Formalism.HarderNarasimhan.HarderNarasimhanProofs.MuChar
 
 open Module NumberField
 

@@ -1,6 +1,6 @@
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsClosedImmersionGenericPoint
 import Development.AbelianVarietyTheory.Definitions.Divisors.AevalEqZeroOfMemConeIdeal
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsHomOpenPart
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0079
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Statements
 
 set_option autoImplicit false

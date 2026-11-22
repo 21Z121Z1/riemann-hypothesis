@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GoodConstOfAniso
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0468
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CocompactOfMemIffAdelic
-import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.CondStd
+import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.Bundle0005
 
 noncomputable section
 

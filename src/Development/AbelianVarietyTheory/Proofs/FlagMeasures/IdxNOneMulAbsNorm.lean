@@ -1,11 +1,11 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.RowMinor
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0011
 import Formalism.SharpRestriction.CuspSpanNormBounds.CongruenceAtSplitFrobeniusHolds
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniquePlace
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsLatticeLatIn
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0194
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0215
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemOfPerpPerp
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DiscriminantOrderCommonFixedLatticeEmbeddedData
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DetFromBlocksSingle
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0090
 
 open NumberField Module Matrix Formalism.BasicNotions Formalism.MainNotions.S Formalism.MainNotions.S.Lat Formalism.MainNotions.S.Cnt GlobalTheory.LoopC
 open scoped ENNReal Classical

@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsHalfIdem
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CharacterAtInertComponent
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1104
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0294
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnramifiedHeckeCharHalfExponentRestrictQua
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIdeleAt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHeckeCharacterOfUnitaryTensorIdeles
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0916
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0894
 
 noncomputable section
 

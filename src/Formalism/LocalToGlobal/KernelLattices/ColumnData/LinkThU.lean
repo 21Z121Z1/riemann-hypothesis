@@ -1,7 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.KernelLattices.ColumnData
-import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.OrderOfSignGroupDvdTwo
-import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.CardTrivialFirstComponent
+import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Bundle0002
 
 noncomputable section
 

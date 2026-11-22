@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbBound
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPushAlongMap
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsCompactSphere
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0106
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0005
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0114
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0002
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField TensorProduct Filter Topology Matrix
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.QuotUnif Metric

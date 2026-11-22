@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.QuotientMetricDivisors.Statement
 import Formalism.QuotientMetricDivisors.RatHermLcvTwist
-import Formalism.QuotientMetricDivisors.ClassSumDualLe
+import Formalism.QuotientMetricDivisors.Bundle0001
 import Formalism.LocalRingCardinality.DataArith
 
 open Module NumberField IsDedekindDomain

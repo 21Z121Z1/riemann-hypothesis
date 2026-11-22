@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.CosetTrace
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AlmostPurityMovesIntegersOfNeOneStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FixedFieldAlmostEtaleOfMovesIntegersStatement
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0143
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0078
 open GlobalTheory.AlmostEt
 open scoped NNReal
 

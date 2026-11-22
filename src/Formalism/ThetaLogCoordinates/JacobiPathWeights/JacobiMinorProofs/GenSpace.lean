@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.ThetaLogCoordinates.JacobiPathWeights.GenSpaceFacts
+import Formalism.ThetaLogCoordinates.JacobiPathWeights.Bundle0003
 import Formalism.ThetaLogCoordinates.JacobiPathWeights.JacobiMinorProofs.ExistsSuppOfEvalNe
 
 noncomputable section

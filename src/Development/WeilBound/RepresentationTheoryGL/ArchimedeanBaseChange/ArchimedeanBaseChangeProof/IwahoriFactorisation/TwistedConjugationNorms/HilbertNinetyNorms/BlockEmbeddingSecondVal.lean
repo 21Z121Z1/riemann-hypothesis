@@ -1,7 +1,7 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.OneCoset
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalConjugationInvolutiveValuationPreservingStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryRankOneSphericalIntegrandDiagonalTorusFac
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1274
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1317
 
 noncomputable section
 

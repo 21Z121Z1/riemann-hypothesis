@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
 import Development.WeilBound.CoreStatements.CrystallinePeriodRings.MaximalIdealEqSpanT
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NonemptyThetaDeRhamFilZeroConcretePeriod
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0104
 
 noncomputable section
 

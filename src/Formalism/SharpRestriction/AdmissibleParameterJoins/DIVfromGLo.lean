@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.AdmissibleParameterJoins.DIVfromGLm
+import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0007
 import Formalism.SharpRestriction.GlobalSchurBounds.AlcoveOf
 
 noncomputable section

@@ -1,4 +1,0 @@
-import Formalism.PeriodIntegrals.HwFixedLine
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HighestWeightFixedVectors.HwFixedExMain
-
-theorem highest_weight_fixed_exists : PI.HwFix.HwFixedEx := PI.HwFix.UnitaryGroupMassFormula.hwFixedEx_main

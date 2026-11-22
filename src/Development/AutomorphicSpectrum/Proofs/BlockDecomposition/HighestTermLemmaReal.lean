@@ -1,7 +1,7 @@
 import Mathlib
-import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.ExpansionTerms
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RealCompression
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SignAntisymmetric
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.Bundle0001
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0392
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0437
 
 noncomputable section
 

@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.RowsExhaust
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.SplitRep
-import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.ResidualConstruction
-import Formalism.SharpRestriction.LevelLetterCocycles.TypePrimeCongruences
-import Formalism.AdmissibleDesigns.RestrictedSevenEightOfFull
-import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.CoefficientCompatibilityOf
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0009
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0006
+import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0014
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0010
+import Formalism.AdmissibleDesigns.Bundle0001
+import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.Bundle0004
 
 noncomputable section
 

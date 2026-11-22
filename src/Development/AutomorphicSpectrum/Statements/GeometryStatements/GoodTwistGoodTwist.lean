@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.L2DefiniteCuspForms
-import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0026
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0003
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ConjEmbRtOfNe
 
 noncomputable section

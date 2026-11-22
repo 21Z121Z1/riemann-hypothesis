@@ -1,8 +1,8 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
-import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.StarPurelyImaginaryEqNeg
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsOpenNsmulAdelicCompletionOfVectorSet
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsInverseChart
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
+import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.Bundle0003
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0008
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0068
 
 noncomputable section
 

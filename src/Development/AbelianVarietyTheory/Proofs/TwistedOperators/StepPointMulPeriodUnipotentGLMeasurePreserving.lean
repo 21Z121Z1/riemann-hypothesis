@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ValuationGdetKapAt
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SecondCountableLocal
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0586
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0043
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralCompBlocks
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicIsNonarchimedeanLocalField
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links Formalism.L2.DIV

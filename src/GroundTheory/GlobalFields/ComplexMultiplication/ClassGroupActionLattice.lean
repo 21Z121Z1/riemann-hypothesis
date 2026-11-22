@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.GlobalFields.ComplexMultiplication.ClassGroupActionIso
+import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0010
 
 open NumberField Module
 open scoped nonZeroDivisors

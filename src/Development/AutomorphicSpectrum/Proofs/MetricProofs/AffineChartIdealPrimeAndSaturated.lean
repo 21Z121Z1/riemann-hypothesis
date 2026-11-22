@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.FiniteMinimalPrimes
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.ChPrime
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0090
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0096
 
 noncomputable section
 

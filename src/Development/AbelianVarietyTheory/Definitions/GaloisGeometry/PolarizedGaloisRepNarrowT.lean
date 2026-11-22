@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.PolarizedGaloisRepNarrow7
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0021
 import CompanionTheory.EightfoldTheory.ZeroLevelTheory.LocalLanglands.Imports
 
 noncomputable section

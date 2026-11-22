@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.EventuallyInFrameDomain
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0010
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals.Example
 set_option maxSynthPendingDepth 1
 

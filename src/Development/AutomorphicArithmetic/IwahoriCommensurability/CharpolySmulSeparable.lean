@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CharpolySmul
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0006
 
 open Polynomial
 

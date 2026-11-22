@@ -1,5 +1,5 @@
 import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.BoxCancel
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryDoubledBlockDiagOneStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1071
 
 noncomputable section
 

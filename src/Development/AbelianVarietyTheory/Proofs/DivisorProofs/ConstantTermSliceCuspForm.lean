@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.CentralNilGL
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlkEquivInl
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0024
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0764
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlkGLOneCorner
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.T2SpaceAdelicGeneralLinearGroupNumberField
 open NumberField MeasureTheory GlobalTheory.CuspRep

@@ -1,5 +1,5 @@
-import Formalism.EllipticTorsion.VeluIntegralModel
-import Formalism.EllipticTorsion.EllipticTorsionProofs.WPoint
+import Formalism.EllipticTorsion.Bundle0003
+import Formalism.EllipticTorsion.EllipticTorsionProofs.Bundle0001
 import Formalism.EllipticTorsion.EllipticTorsionProofs.FormalGroupPointsParamDef
 
 open PowerSeries

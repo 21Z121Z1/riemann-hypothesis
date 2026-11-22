@@ -2,7 +2,7 @@ import Formalism.AdmissibleDesigns.FiniteClassesContinuousLattice
 import Formalism.AdmissibleDesigns.ExistsWildInertiaCyclotomicGenerator
 import Formalism.AdmissibleDesigns.CoboundaryMemFiniteClasses
 import Formalism.AdmissibleDesigns.FgTopContinuousLinearMap
-import ReciprocityTheory.ReductiveGroups.TraceFormulas.GlobAlgGoodO
+import ReciprocityTheory.ReductiveGroups.TraceFormulas.Bundle0001
 
 variable [hT2Core : Fact ReciprocityTheory.ChartRestriction.T2.Core]
 

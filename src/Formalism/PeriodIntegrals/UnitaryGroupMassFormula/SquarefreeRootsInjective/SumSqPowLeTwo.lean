@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SquarefreeRootsInjective.CardLeSumOfCover
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SquarefreeRootsInjective.Bundle0002
 
 open Polynomial
 

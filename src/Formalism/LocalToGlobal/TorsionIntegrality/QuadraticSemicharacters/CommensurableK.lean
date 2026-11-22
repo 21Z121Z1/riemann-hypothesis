@@ -1,5 +1,4 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.QuadraticSemicharactersFactAltForm
-import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.InterIntegral
+import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.Bundle0003
 
 noncomputable section
 open scoped BigOperators ComplexConjugate

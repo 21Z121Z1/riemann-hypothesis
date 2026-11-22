@@ -1,13 +1,13 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Jets.ColValMonomial
+import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0002
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsFormalBiextMap
-import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.DofIterSmulDir
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MapDofIterate
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BilinPartEigenMemRange
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NabValColumnsCongr
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CoeffProdLeadingMinors
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumProdNabValLeadingMinors
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumProdNabValLeadingMinorsOfColumnJets
+import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0003
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0017
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0020
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0031
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0016
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0026
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0029
 
 set_option autoImplicit false
 

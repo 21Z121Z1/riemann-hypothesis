@@ -1,5 +1,5 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.ModelDer
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.InhabA
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Bundle0003
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.Bundle0003
 
 noncomputable section
 

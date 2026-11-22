@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ZetaValueIdeals
-import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.FunDen
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsValCharTwist
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ClassC0PrimeNotExceptional
+import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0004
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0003
+import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.Bundle0002
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0062
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0342
 import Formalism.SharpRestriction.AdmissibleParameterJoins.SfromGLu
 
 noncomputable section

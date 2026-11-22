@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.CharacterGerms.MemVarsProdAll
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0006
 
 noncomputable section
 

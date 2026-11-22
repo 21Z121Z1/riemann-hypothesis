@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.SiegelMeanCc
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaussianQuadricDensityExistsPosContinuous
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0012
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0176
 
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S GlobalTheory.Count GlobalTheory.FlagMeas GlobalTheory.GaussMean
 

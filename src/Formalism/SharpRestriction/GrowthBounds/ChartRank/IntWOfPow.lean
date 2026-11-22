@@ -1,5 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.ChartRank.HypTwA
-import Formalism.SharpRestriction.GrowthBounds.ChartRank.HypVin
+import Formalism.SharpRestriction.GrowthBounds.ChartRank.Bundle0001
 
 noncomputable section
 

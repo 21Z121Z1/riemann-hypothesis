@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TrueColumnsRowSharpBounds
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0172
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MoveStep
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.EFirstGeOfULastNonpos
 import Formalism.SharpRestriction.GrowthBounds.WeilJacquetShalikaLaw

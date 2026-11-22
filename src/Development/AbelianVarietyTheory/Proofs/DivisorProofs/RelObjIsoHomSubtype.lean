@@ -1,4 +1,4 @@
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFinSubRange
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2737
 open AlgebraicGeometry CategoryTheory Limits
 open AlgebraicGeometry.Scheme AlgebraicGeometry.Scheme.AffineZariskiSite
 

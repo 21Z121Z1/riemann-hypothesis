@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.UnipotentAdelicQuotients.FinOrdValGen
+import Formalism.UnipotentAdelicQuotients.Bundle0001
 import GroundTheory.GlobalFields.TateThesis.HeckeChar
 import GroundTheory.GlobalFields.TateThesis.HeckeCharRayClass
 import GroundTheory.GlobalFields.Adele.WeakApproxUnits

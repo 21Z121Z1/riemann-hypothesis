@@ -1,11 +1,11 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.OnePlaceKF
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0009
 import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
 import Formalism.SharpRestriction.CuspSpanNormBounds.LeadMinorK
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SmoothMapsClosure
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.UnitaryGroupMatGroupUnimodular
-import Formalism.PeriodIntegrals.QuotSetU
-import Formalism.PeriodIntegrals.QuotInv
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0059
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0060
+import Formalism.PeriodIntegrals.Bundle0015
+import Formalism.PeriodIntegrals.Bundle0008
 open BranchingSupport GlobalTheory.CellAmp Formalism.BasicNotions Formalism.MainNotions.S Formalism.QuantumDeterminants Matrix MeasureTheory Finset
 open scoped InnerProductSpace ENNReal
 

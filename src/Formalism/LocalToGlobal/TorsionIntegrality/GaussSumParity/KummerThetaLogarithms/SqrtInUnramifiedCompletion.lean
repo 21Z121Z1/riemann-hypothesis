@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.BiextensionRelation
-import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.HomotheticLatticeIntegralS2
+import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0004
 
 noncomputable section
 open scoped BigOperators

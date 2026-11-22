@@ -1,4 +1,4 @@
-import Formalism.PieriBlockIdeals.StatementTop
+import Formalism.PieriBlockIdeals.Bundle0007
 import Formalism.PieriBlockIdeals.StatementJoint
 
 open Module NumberField IsDedekindDomain

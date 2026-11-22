@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Jets.PowerSeriesHasSumAt
+import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0001
 
 noncomputable section
 

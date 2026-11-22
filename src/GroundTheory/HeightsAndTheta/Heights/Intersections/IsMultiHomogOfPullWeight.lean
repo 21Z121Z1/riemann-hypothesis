@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.Intersections.ImportsFurtherRest
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0043
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PBlockRatioAlg
-import GroundTheory.HeightsAndTheta.Heights.Intersections.PLocRingPow
-import GroundTheory.HeightsAndTheta.Heights.Intersections.PProjBundleMultiHomogGrad
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0026
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0001
 set_option maxSynthPendingDepth 1
 
 noncomputable section

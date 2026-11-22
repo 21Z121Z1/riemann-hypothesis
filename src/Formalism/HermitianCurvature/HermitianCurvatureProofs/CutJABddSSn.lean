@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJABddOp
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0069
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJABStar
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHat
 

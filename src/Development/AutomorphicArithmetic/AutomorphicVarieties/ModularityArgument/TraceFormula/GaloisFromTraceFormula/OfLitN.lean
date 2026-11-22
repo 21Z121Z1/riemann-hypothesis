@@ -1,7 +1,7 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GaloisFromTraceFormula.DescWeak
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.StringRepresentations.OfTempered
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Brauer
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalLanglandsOfHyp
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0047
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0824
 
 namespace UpperTheory.V.Z.Tf.GaloisFromTraceFormula
 

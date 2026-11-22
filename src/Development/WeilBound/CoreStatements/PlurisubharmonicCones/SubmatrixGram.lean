@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PGramDetSandwich
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.LoewnerDetBound
+import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.Bundle0005
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0001
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.IsFrameOverLine
 
 open Matrix Filter Topology Asymptotics

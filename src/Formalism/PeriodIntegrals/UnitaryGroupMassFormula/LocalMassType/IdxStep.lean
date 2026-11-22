@@ -1,5 +1,5 @@
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.IdxGrp
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.IdxAbs
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.Bundle0004
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.Bundle0001
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassOrder.IsTopRingTens
 
 noncomputable section

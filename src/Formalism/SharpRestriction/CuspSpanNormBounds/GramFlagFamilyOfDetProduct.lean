@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.CuspSpanNormBounds.GramProductLeHeightBoundTwo
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0022
 
 noncomputable section
 

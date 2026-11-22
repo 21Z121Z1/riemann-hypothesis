@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.GoodLatCM
+import Formalism.PeriodIntegrals.Bundle0018
 
 open NumberField
 

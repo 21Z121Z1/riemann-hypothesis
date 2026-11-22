@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.GaussIntegral
+import Formalism.PeriodIntegrals.Bundle0004
 
 open ValuativeRel MeasureTheory
 

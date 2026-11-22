@@ -1,10 +1,9 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.SubOfNonNil
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HkMemFixed
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinsumOutTranslate
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSmulEqOnFinset
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IrreducibleHomFixedVectorsStatement
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IrreducibleSmoothAdmissibleGL
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0094
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0010
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0105
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0018
 
 open MeasureTheory GlobalTheory.SmGL GlobalTheory.PRep PositivityTheory.Rg.BcN.F2
 

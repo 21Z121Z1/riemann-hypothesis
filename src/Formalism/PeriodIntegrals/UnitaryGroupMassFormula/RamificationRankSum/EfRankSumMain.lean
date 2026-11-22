@@ -1,5 +1,4 @@
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RamificationRankSum.Lattice
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RamificationRankSum.Points
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RamificationRankSum.Bundle0001
 
 namespace PI.UnitaryGroupMassFormula.EfRankSum
 

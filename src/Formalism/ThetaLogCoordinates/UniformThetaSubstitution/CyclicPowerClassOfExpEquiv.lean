@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.OddLogRelation
+import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0001
 
 noncomputable section
 

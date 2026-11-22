@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Statements.GeometryStatements.CompactConjugacyDomainLocal
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0005
 
 noncomputable section
 

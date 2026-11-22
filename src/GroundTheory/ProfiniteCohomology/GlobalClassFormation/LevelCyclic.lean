@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LevelDefs
 import GroundTheory.GlobalFields.SecondInequality.Cyclic
-import GroundTheory.TateCohomology.HerbrandTate
+import GroundTheory.TateCohomology.Bundle0004
 import GroundTheory.TateCohomology.Herbrand
 set_option maxSynthPendingDepth 1
 

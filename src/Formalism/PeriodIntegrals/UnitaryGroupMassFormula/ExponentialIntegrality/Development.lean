@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.ExpIntW
+import Formalism.PeriodIntegrals.Bundle0003
 
 noncomputable section
 

@@ -1,6 +1,6 @@
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.ExistsPerpHermitianReduction
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0036
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.MajPos
-import ReciprocityTheory.SemistableReduction.LatAll
+import ReciprocityTheory.SemistableReduction.Bundle0029
 
 namespace ReciprocityTheory.ChartRestriction.G.FD.IsotropicIndexSums
 

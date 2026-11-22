@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HessRelFnB
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2409
 
 set_option autoImplicit false
 

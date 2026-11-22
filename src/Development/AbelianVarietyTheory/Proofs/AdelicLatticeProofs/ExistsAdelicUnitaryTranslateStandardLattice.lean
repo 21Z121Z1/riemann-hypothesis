@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.IsHermForm
-import Formalism.LocalToGlobal.ProjectiveLattices.ThClass
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicCompletionRationalPointsAndApproximation
+import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.Bundle0002
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0030
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0017
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsUnitaryOfSelfDual
 
 set_option autoImplicit false

@@ -1,10 +1,10 @@
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpTie
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermDPf
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0005
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0017
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBIdJet
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBIdLB
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0010
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.LBCorr
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.HarmonicValueIntegral
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CPfSym
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.Bundle0014
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0003
 
 set_option autoImplicit false
 

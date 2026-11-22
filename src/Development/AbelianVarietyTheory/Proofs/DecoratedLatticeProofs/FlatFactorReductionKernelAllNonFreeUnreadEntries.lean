@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsRead
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.KernelReductionExtendEvaluatedIntegrated
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LinearMapKillingPartialEvalIntegralKernelTransla
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0023
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0037
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0033
 
 open MeasureTheory ValuativeRel Matrix GlobalTheory.SplitWeil GlobalTheory.RootEx GlobalTheory.StepData
 

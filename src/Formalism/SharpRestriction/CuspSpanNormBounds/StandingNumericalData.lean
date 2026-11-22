@@ -1,6 +1,6 @@
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
-import Formalism.SharpRestriction.CuspSpanNormBounds.SArith
-import Formalism.SharpRestriction.CuspSpanNormBounds.LocalDataRealPlace
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0001
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0004
 import Formalism.LocalRingCardinality.DataParams₂
 
 noncomputable section

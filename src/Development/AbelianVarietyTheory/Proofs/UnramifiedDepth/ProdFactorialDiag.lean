@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.CharacterGerms.BiadditiveInSingleVariables
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.LegendreAndCapelli
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0010
 open Formalism.L2.FormalSeriesBounds Formalism.IncomingBounds
 
 noncomputable section

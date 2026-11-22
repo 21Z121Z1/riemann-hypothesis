@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.InfUniv
-import Development.AbelianVarietyTheory.Definitions.Divisors.KottwitzDimSignatureOneOne
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankMapEqOfKerEq
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0058
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0059
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1602
 
 open Module GlobalTheory.UPel.Sm GlobalTheory.UPel.Sm.Model GlobalTheory.UPel.Sm.KSCount
 

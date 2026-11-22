@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SignatureConjugationInvariant
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0003
 import Formalism.LocalRingCardinality.DataSpaces
 
 noncomputable section

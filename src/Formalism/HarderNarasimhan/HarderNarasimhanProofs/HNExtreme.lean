@@ -1,13 +1,12 @@
-import Formalism.HarderNarasimhan.DegSupermodZ
+import Formalism.HarderNarasimhan.Bundle0001
 import Formalism.LatticeSlopes.ExistsSaturatedSlopeEqMuMax
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.HNSlopes
-import Formalism.HarderNarasimhan.HarderNarasimhanProofs.HNStep
-import Formalism.HarderNarasimhan.HarderNarasimhanProofs.MuChar
+import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0001
+import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0004
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SatBasic
-import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DegSupermod
-import Formalism.HarderNarasimhan.HarderNarasimhanProofs.RatioMax
+import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0002
+import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0003
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.FinSup
-import Formalism.HarderNarasimhan.HarderNarasimhanProofs.ExistsSmulMemOfFinrankEq
 import Lemmata.GeneralBFactLeftForm.Imports
 
 open Module Submodule

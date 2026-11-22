@@ -1,7 +1,7 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.GelfandKazhdanDuality.IsCuspFormDualMap
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothConjugateInverseMem
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartStarInvT
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0481
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0374
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsNormalisedThetaSub
 
 noncomputable section

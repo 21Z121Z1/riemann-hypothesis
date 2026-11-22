@@ -1,4 +1,4 @@
-import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.SqIntCritOfFinTr
+import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.Bundle0001
 import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.DiagonalInfinityValues.InfGLValDiag
 
 namespace PositivityTheory.Rg.Rs

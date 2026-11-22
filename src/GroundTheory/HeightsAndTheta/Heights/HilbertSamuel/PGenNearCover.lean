@@ -1,6 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsGenNearCover
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsGradedSubmodules
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0092
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.CycDim
 set_option maxSynthPendingDepth 1
 

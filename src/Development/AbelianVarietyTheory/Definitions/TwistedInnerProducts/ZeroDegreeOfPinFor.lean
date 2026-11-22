@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.HeckePin
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFamilyIffRationalHecke
-import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.ExistsIsHeckeSetting
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0159
+import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.Bundle0001
 
 set_option autoImplicit false
 

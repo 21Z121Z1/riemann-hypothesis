@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.ResidualConstruction
+import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0014
 
 noncomputable section
 

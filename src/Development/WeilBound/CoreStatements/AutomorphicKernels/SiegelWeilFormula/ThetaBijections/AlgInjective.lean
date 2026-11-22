@@ -1,4 +1,4 @@
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymplecticChangeOfGoodModelsIntertwines
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1971
 
 noncomputable section
 

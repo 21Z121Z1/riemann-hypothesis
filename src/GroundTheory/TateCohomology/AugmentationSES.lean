@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.TateCohomology.InducedNorm
+import GroundTheory.TateCohomology.Bundle0003
 import GroundTheory.TateCohomology.DimensionShift
 import GroundTheory.TateCohomology.TateConnecting
 set_option maxSynthPendingDepth 1

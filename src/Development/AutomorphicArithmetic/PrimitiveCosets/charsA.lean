@@ -1,7 +1,5 @@
 import Development.AutomorphicArithmetic.PrimitiveCosets.CoreAtH
-import Development.AutomorphicArithmetic.PrimitiveCosets.PrimRead
-import Development.AutomorphicArithmetic.PrimitiveCosets.CardPsiA
-import Development.AutomorphicArithmetic.PrimitiveCosets.TopsSum
+import Development.AutomorphicArithmetic.PrimitiveCosets.Bundle0001
 
 open UpperTheory.Comparison₂ Deduction.CH Formalism Formalism.HC Formalism.D5 Formalism.RankGapBounds.WeightedMeanData Formalism.LFunctionChainParameters.WeightedSlopeBounds Formalism.LFunctionChainParameters.characterSumData Formalism.LFunctionChainParameters.ThickSetMeanBounds Formalism.LFunctionChainParameters.LErr
   Formalism.LFunctionChainParameters.LChain Formalism.LFunctionChainParameters.LHost

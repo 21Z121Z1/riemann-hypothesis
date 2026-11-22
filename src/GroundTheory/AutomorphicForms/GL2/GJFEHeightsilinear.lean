@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.GL2.GJFEBlockKernel
-import GroundTheory.AutomorphicForms.SmoothRepContragredient
+import GroundTheory.AutomorphicForms.Bundle0009
 import GroundTheory.AutomorphicForms.CompactModCentre
 
 noncomputable section

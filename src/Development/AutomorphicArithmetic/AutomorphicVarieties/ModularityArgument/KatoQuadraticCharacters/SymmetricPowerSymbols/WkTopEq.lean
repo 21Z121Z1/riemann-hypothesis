@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsPrimitiveRootTopZeta
-import Development.AbelianVarietyTheory.Definitions.Foundations.Letter
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0004
 
 noncomputable section
 

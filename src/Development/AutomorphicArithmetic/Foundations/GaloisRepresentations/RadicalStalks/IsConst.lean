@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsTjCorrDiagModel
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrysActApply
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDeRhamSheafIffAlt
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2264
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2413
 
 noncomputable section
 

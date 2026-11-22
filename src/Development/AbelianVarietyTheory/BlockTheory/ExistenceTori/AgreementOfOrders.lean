@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.CompHt
-import Formalism.LocalToGlobal.ProjectiveLattices.RegularityR2Quotient
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0015
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0026
 
 noncomputable section
 

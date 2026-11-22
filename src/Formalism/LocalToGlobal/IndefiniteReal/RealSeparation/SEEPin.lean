@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.IndefiniteReal.SEEofApply
-import Formalism.LocalToGlobal.IndefiniteReal.EvalTieTOne
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0031
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0032
 import Formalism.LocalToGlobal.IndefiniteReal.LinksDefs
 
 noncomputable section

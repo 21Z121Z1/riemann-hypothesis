@@ -1,4 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.Phi2
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.Bundle0012
 
 noncomputable section
 

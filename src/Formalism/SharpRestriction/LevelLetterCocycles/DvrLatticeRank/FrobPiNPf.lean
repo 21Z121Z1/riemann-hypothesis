@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.LevelLetterCocycles.DeltaInvariantUniformizer
-import Formalism.SharpRestriction.LevelLetterCocycles.MapCompZero
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0025
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0020
 import Formalism.SharpRestriction.LevelLetterCocycles.BaseChangePreservesUnitaryOf
 
 noncomputable section

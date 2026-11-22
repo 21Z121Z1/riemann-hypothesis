@@ -1,6 +1,5 @@
 import Mathlib
-import Development.AutomorphicArithmetic.TwistedTraces.ListOfFnProdEqMulUpdateOneOfPairwiseCommute
-import Development.AutomorphicArithmetic.TwistedTraces.LinearFormEqMulTraceOfTwistedInvariant
+import Development.AutomorphicArithmetic.TwistedTraces.Bundle0001
 open scoped BigOperators
 
 theorem UpperTheory.exists_scalar_of_twisted_intertwiner_commuting_algebras :

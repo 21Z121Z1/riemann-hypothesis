@@ -1,6 +1,6 @@
 import Formalism.JumpKernelCokernel.LemmaDJoint
-import Formalism.JumpKernelCokernel.JumpShiftProofs.ThickB
-import Formalism.JumpKernelCokernel.JumpShiftProofs.ExpRowD
+import Formalism.JumpKernelCokernel.JumpShiftProofs.Bundle0002
+import Formalism.JumpKernelCokernel.JumpShiftProofs.Bundle0003
 
 namespace Formalism.KernelCokernelLengths.RowDegreeJointLemmas
 

@@ -1,5 +1,5 @@
-import Development.AbelianVarietyTheory.Definitions.Foundations.PetIPSmulRight
-import Development.AbelianVarietyTheory.Definitions.Foundations.RepL
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0004
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
 import CompanionTheory.EightfoldTheory.VariationTheory.AutomorphicForms.Newform
 open UpperHalfPlane Complex MeasureTheory CongruenceSubgroup GlobalTheory.EisM UpperTheory.V.Af Filter Topology
 open scoped MatrixGroups Real ComplexConjugate Manifold ModularForm

@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OrbitThickSt
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFrPtOfEigFrame
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsLocalHomOfAlgebraic
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0572
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0570
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0582
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MonoSpMapRingOfIntegers
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUniqueRuleOfRegular
 

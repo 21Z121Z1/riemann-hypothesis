@@ -1,8 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.OneBlockPnPt
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.MemMIdealOverIff
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0055
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0063
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ChartRingOverOneBlockEqChartRing
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PPointDegreePos
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Kleiman.SectionsOverLocalization

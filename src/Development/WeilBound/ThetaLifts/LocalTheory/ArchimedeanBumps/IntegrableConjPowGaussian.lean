@@ -1,4 +1,4 @@
-import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.ExistsDensity
+import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.Bundle0001
 import GroundTheory.GlobalFields.TateThesis.GaussianComplexFourier
 
 noncomputable section

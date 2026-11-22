@@ -1,16 +1,15 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.RegXInst
-import Formalism.LocalToGlobal.ProjectiveLattices.CurveLocInst
-import Formalism.LocalToGlobal.ProjectiveLattices.LocRingPf
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0041
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0049
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0047
 import Formalism.LocalToGlobal.ProjectiveLattices.TieInst
-import Formalism.LocalToGlobal.ProjectiveLattices.RealPtPf
-import Formalism.LocalToGlobal.ProjectiveLattices.HtXfer
-import Formalism.LocalToGlobal.ProjectiveLattices.CompTie
-import Formalism.LocalToGlobal.ProjectiveLattices.AxHInst
-import Formalism.LocalToGlobal.ProjectiveLattices.SupNDataOfNonneg
-import Formalism.LocalToGlobal.ProjectiveLattices.CombAlgOfCombBound
-import Formalism.LocalToGlobal.ProjectiveLattices.ProdInLatPf
-import Development.AbelianVarietyTheory.Proofs.GenericRegularity.LawBddDataOf
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0045
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0032
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0027
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0040
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0043
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0039
+import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0017
 
 set_option synthInstance.maxHeartbeats 400000
 set_option maxHeartbeats 1000000

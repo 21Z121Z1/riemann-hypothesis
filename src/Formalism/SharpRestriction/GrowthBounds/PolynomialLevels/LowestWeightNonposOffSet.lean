@@ -1,7 +1,7 @@
 import Formalism.SharpRestriction.GrowthBounds.PolynomialLevels.TlNonempty
 import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.PreChainLe
 import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.MembDd
-import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.MemSupportSumMonomial
+import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.Bundle0002
 
 noncomputable section
 

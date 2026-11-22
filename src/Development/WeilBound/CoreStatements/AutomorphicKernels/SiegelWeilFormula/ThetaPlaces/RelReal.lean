@@ -1,7 +1,7 @@
-import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.WhittakerCovolume.IsPureTIff
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCompactAdele
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeCharacterUnramifiedExponent
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsStdCharNegOneOfStandardTraceAdelicAddChar
+import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.WhittakerCovolume.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0321
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1962
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1759
 
 noncomputable section
 

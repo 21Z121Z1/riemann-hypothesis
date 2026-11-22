@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.CharacterGerms.RankMaximalOfNondegenerateOfUnitSeriesIntegral
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0025
 import Formalism.LocalToGlobal.CharacterGerms.RowTiePGerm
 
 set_option autoImplicit false

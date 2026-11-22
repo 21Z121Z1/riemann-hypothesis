@@ -1,4 +1,4 @@
-import Formalism.ThetaLogCoordinates.DualWeylCoordinates.FiltrationTheoremOfClauses
+import Formalism.ThetaLogCoordinates.DualWeylCoordinates.Bundle0002
 import Formalism.GradedWeylDivisibility.FinalB
 
 noncomputable section

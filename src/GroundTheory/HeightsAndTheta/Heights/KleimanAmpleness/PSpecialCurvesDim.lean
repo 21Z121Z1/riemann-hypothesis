@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsTailLast
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.TrdegEqOfLeOfIsAlgebraic
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PModelGenericPoint
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0058
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0051
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0060
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Kleiman.SectionsOverLocalization

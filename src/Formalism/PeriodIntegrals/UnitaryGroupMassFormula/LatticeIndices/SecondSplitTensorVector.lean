@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeIndices.StRedCore
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeIndices.Bundle0002
 
 noncomputable section
 

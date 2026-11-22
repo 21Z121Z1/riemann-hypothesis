@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.GaussDegenerate
+import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.Bundle0002
 import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.QuadraticSemicharacterIdentityReformulated2
 
 noncomputable section

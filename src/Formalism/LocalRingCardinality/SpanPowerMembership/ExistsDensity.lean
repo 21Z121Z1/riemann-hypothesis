@@ -1,5 +1,5 @@
 import Formalism.LocalRingCardinality.SpanPowerMembership.LeOfEventuallyDown
-import Formalism.LocalRingCardinality.SpanPowerMembership.HasStrictFDerivAtExpZero
+import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0001
 
 noncomputable section
 

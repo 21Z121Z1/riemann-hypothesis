@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.LocalToGlobal.UnitaryNorms.CharExVal
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharacterFiniteIdeleValueMemField
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnitaryRationalInfTypeSubgroupAndInfTypeUnique
+import Formalism.LocalToGlobal.UnitaryNorms.Bundle0009
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0386
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0100
 
 noncomputable section
 

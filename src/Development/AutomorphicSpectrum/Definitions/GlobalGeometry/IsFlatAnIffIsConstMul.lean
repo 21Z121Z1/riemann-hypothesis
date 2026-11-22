@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsConstMul
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsLineGenOn
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0010
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0003
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
 
 noncomputable section
 

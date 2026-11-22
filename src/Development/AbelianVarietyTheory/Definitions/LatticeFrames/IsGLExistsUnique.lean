@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.EntryAgree
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RanksFourToFrame
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0079
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ResiduesOfCompletionAtPrimeWithUniformizer
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicIsNonarchimedeanLocalField
 

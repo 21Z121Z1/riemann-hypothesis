@@ -1,8 +1,8 @@
 import Mathlib
-import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.IsDerAt0
-import Development.WeilBound.CoreStatements.HodgeTatePoints.FormMemLin
-import ReciprocityTheory.DualLattices.PrimeHopfOrderOfAddEquiv
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.RelatedPairsOrbitalTermEq
+import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.Bundle0020
+import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0007
+import ReciprocityTheory.DualLattices.Bundle0016
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0016
 
 open NumberField ReciprocityTheory.PGsh.L2 ReciprocityTheory.PGsh.Up GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.GR GlobalTheory.CompanionTheory.Ar.Num.FamEx
 open PositivityTheory.Xgn.TestGroupPoint

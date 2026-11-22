@@ -1,6 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.StatementsShareBound
-import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.PShareCore
+import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.Bundle0002
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.EffectiveHS

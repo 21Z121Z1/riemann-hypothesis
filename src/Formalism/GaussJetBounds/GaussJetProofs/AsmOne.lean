@@ -1,4 +1,4 @@
-import Formalism.GaussJetBounds.GaussJetProofs.AsmRDotAddRight
+import Formalism.GaussJetBounds.GaussJetProofs.Bundle0002
 
 noncomputable section
 open scoped BigOperators

@@ -1,5 +1,5 @@
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.KTypeLemma.QuotientHighestWeightTensorStandard
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.SchPhiOneApply
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.Bundle0005
 import Mathlib
 
 noncomputable section

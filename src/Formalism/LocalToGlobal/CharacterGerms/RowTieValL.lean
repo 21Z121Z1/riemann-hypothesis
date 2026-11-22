@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.CharacterGerms.ValuationEqSelfOfUnitGerm
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0040
 
 noncomputable section
 

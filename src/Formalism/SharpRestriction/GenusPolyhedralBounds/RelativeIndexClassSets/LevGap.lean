@@ -7,9 +7,9 @@ import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.L
 import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.LevGapTop
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsSpan
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlob
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsApprox
-import Formalism.SharpRestriction.InertJacobiLevels.TrivialDatumMultiplicitySpaceSubsingleton
-import Formalism.LocalRingCardinality.DataMink
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0010
+import Formalism.SharpRestriction.InertJacobiLevels.Bundle0008
+import Formalism.LocalRingCardinality.Bundle0001
 
 noncomputable section
 

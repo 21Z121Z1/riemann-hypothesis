@@ -1,7 +1,7 @@
 import CompanionTheory.AutomorphicTheory.PadicUnitaryWeights.DixmierMalliavin.DecompDirection
-import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.IsClosedEmbeddingOfLocallyCompact
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ClosedMatrixSubgroupTheorem
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GlueSmoothOfCompactSupportStatement
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0006
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0133
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0230
 
 namespace CompanionTheory.DM
 

@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FixedVectorEqOfStandardData
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0014
 import Formalism.SharpRestriction.Divisibility.StatementFT.PeriodPointConditions
 import Formalism.SharpRestriction.GlobalSchurBounds.ProductFirstZerothParts
-import Formalism.LocalToGlobal.KernelLattices.InterlaceAll
+import Formalism.LocalToGlobal.KernelLattices.Bundle0001
 
 noncomputable section
 

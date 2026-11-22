@@ -1,4 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.BeIntegrable
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.Bundle0016
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.MultiplicityDescent.JToSetting
 
 noncomputable section

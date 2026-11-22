@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSecEq
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0028
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSectionBounded
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PUpperNormalisation
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.AssemblyBase
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0073
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0052
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

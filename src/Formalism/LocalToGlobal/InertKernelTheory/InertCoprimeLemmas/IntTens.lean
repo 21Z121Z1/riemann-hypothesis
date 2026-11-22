@@ -1,7 +1,7 @@
-import Formalism.LocalToGlobal.InertKernelTheory.DefsInt
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0007
 import Formalism.LocalToGlobal.InertKernelTheory.DefsIntTens
-import Formalism.LocalToGlobal.GlobalTheory.GL3.ThirdClauseIntegralCombination
-import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.KerJet
+import Formalism.LocalToGlobal.GlobalTheory.GL3.Bundle0002
+import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.Bundle0001
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThDistC
 import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.QuadraticSemicharacterIdentityReformulated2
 

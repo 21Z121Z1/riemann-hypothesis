@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.HeightFunctions.RunsAlong
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.SingleIndexPlacesAreTwisted
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RatInEig
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsIsScalar
-import Formalism.LocalToGlobal.IndefiniteReal.WeakCharacterisationWithError
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0030
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0029
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0028
 
 set_option autoImplicit false
 

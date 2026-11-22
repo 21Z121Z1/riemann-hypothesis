@@ -1,9 +1,9 @@
 import Mathlib
-import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.FinXClosed
+import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.Bundle0048
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.STiesR
 import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.FundamentalDomainCusps.AutomorphicFormsFiniteDimensional
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.WuDecayOfGap
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.MiPinnedWithFinIff
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0476
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0013
 
 noncomputable section
 

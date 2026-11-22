@@ -1,6 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.LocProdFormula
-import Formalism.PeriodIntegrals.ProdFormulaE
+import Formalism.PeriodIntegrals.Bundle0021
 
 namespace PI.LocProdFormulaW
 

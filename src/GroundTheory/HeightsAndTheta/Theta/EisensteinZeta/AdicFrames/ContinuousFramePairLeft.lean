@@ -1,8 +1,7 @@
 import Mathlib
 
-import GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.AdicFrames.Imports
-import GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.AdicFrames.ContinuousOnChartProjM
-import GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.AdicFrames.FramePairAddRight
+import GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.AdicFrames.Bundle0001
+import GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.AdicFrames.Bundle0002
 import GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.AdicFrames.InstSecondCountableTopologyFrameSp
 
 set_option linter.unusedSectionVars false

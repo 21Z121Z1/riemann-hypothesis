@@ -1,9 +1,9 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.GammaLaurentFactors.MatchIndOf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationDetEqOne
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EquivOfISupRange
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasSatakeOfIsLocComp
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFixedIff
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.StrongMultiplicityOne.EigOfSat
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0126
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1231
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0127
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.StrongMultiplicityOne.Bundle0002
 
 attribute [local instance] GlobalTheory.LocalData.complRel GlobalTheory.LocalData.isLocalField
 attribute [-instance] Formalism.DoubleCosetMeasures.instMeasGL

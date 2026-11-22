@@ -1,6 +1,6 @@
 import Development.WeilBound.ThetaLifts.SmallCones.ThetaUniq
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.AdelicCharacterRationalDual
-import Development.AutomorphicSpectrum.Proofs.MembershipProofs.HeisenbergCommutingOperatorScalar
+import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0011
 
 noncomputable section
 

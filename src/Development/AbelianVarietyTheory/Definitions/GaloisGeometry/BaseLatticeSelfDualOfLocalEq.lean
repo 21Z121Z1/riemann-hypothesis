@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.MemberChainFormsLevelPrimeEqMember
-import Formalism.LocalToGlobal.GroupLattices.LevelCharts.SplitIntPI
-import Formalism.LocalToGlobal.HermitianColumns.SymAll
-import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.IntSplitOf
+import Formalism.LocalToGlobal.GroupLattices.LevelCharts.Bundle0001
+import Formalism.LocalToGlobal.HermitianColumns.Bundle0004
+import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0001
 
 noncomputable section
 

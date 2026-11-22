@@ -1,9 +1,8 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.SlCTendsto
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ConjEmbRtOfNe
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GenOver
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ChartSpec
-import Development.AbelianVarietyTheory.Definitions.ThetaValues.Generic
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0013
+import Development.AbelianVarietyTheory.Definitions.ThetaValues.Bundle0003
 
 noncomputable section
 

@@ -1,12 +1,12 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.RowMinor
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.OfRoots
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0011
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0004
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GramUnipotentStabilizerBruhatCellConjRoot
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CovolumeCongruenceStabiliser
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoveringOHolds
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniquePlace
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CongruenceStabUFromIntegralUnipotentIsometryStatement
-import Formalism.FlagUnipotentLattices.CardSubgroupsOfIndexLe
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0080
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0194
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0346
+import Formalism.FlagUnipotentLattices.Bundle0006
 open NumberField Module Matrix Formalism.BasicNotions Formalism.MainNotions.S Formalism.MainNotions.S.Lat Formalism.MainNotions.S.Cnt GlobalTheory.LoopC
 open scoped ENNReal Classical
 attribute [local instance] Formalism.BasicNotions.Host.cmStar

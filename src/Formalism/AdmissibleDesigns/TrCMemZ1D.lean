@@ -1,4 +1,4 @@
-import Formalism.AdmissibleDesigns.SelfGood
+import Formalism.AdmissibleDesigns.Bundle0002
 
 variable [hT2Core : Fact ReciprocityTheory.ChartRestriction.T2.Core]
 

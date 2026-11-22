@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ZerosDisc
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsBoundRight
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IteratedDerivLogDerivDirichletLViaNearbyZerosStatement
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TuranSecondMainTheoremPowerSumsUnitCoefficientsStatement
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0031
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0021
 open Complex DirichletCharacter ArithmeticFunction MeasureTheory Filter Topology GlobalTheory.Lin
 open scoped Classical
 

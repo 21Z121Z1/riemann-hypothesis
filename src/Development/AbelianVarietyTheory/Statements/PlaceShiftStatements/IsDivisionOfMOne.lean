@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.IwSemistable
+import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0002
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDatumAOne
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.IsStrictlySemistableBase
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0005
 
 noncomputable section
 open CategoryTheory AlgebraicGeometry

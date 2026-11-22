@@ -1,6 +1,6 @@
 import Mathlib
 import Development.ResolutionOfSingularities.Foundations.Blowup.BlowupBasic
-import Development.ResolutionOfSingularities.Foundations.Blowup.BlowupIsoOffCenter
+import Development.ResolutionOfSingularities.Foundations.Blowup.Bundle0001
 import Development.ResolutionOfSingularities.Foundations.Blowup.BlowupProperties
 import Development.ResolutionOfSingularities.EmbeddedResolution.IteratedBlowups.ClopenRestriction
 import Development.ResolutionOfSingularities.EmbeddedResolution.IteratedBlowups.NoetherianBlowup

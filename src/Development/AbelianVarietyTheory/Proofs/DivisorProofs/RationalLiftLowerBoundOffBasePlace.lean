@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowFormOfEmb
-import Development.AbelianVarietyTheory.Definitions.Divisors.FormalDegreeUpperC
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2050
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0045
 import Development.AbelianVarietyTheory.Definitions.Divisors.RealisedChainTorusEq
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipalLevelEigenpartsAndConjugateCharactersStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1278
 
 set_option autoImplicit false
 

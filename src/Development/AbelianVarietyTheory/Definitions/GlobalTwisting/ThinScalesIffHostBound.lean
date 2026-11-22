@@ -1,12 +1,12 @@
 import Mathlib
-import Formalism.SharpRestriction.InertJacobiLevels.AsmIface
+import Formalism.SharpRestriction.InertJacobiLevels.Bundle0007
 import Formalism.LocalToGlobal.GlobalTheory.IsResidueClassZero
 import Formalism.SharpRestriction.GrowthBounds.SmallOrderPrimes
-import Formalism.CyclotomicNorms.StatementI
-import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.PairRowIffQdRows
-import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.DisjointExceptional
-import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.Analytic
-import Development.AutomorphicArithmetic.PrimeDiscriminants.Scales
+import Formalism.CyclotomicNorms.Bundle0001
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0002
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0003
+import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.Bundle0001
+import Development.AutomorphicArithmetic.PrimeDiscriminants.Bundle0004
 
 noncomputable section
 

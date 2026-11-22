@@ -1,5 +1,5 @@
 import Mathlib
-import Development.EtaleCohomology.EtaleSheaves.AwSpec
+import Development.EtaleCohomology.EtaleSheaves.Bundle0088
 
 namespace UpperTheory.Et.D2
 

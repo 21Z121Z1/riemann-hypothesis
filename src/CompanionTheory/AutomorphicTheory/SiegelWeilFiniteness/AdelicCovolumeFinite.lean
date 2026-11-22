@@ -1,17 +1,12 @@
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.MainOf
-import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PTorusEmbedding
-import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PLineEigenvalue
-import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PTorusModulus
-import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PSemidirectHaar
-import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PUnipotentCoordProper
-import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PUnipotentHorizontal
-import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PUnipotentCentral
+import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0024
+import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0022
+import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0023
+import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0025
+import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0027
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PUnitsInvHaar
-import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PComplementArchCocompact
-import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PImaginaryLatticeCocompact
+import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0021
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PRadicalTorusModulus
-import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PRationalUnipotent
-import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PUnipRadicalOfRational
 
 namespace CompanionTheory.SWFin
 

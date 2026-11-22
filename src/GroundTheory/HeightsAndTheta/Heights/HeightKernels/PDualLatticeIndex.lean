@@ -1,11 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualLatticeIndex
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PLinesIsLattice
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PLinesGenIndexTrans
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PLinesLatticeBasis
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PLinesGenIndexDet
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PLinesIdealLatticeFG
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.BoxBounds
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0036
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0024
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0023
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0004
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

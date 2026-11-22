@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.KernelLattices.LateralTheory
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulVSubRight
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0244
 import Formalism.LocalToGlobal.GlobalTheory.GL3.PStdChar
 import Formalism.LocalToGlobal.GlobalTheory.GL3.PThIndep
 import Formalism.LocalToGlobal.GlobalTheory.GL3.DeterminantNormOneOfUnitDisc

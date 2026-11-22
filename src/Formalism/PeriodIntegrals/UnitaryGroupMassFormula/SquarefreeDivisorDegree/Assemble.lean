@@ -1,5 +1,4 @@
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SquarefreeDivisorDegree.SqfDivDegOf
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SquarefreeDivisorDegree.FibreNonempty
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SquarefreeDivisorDegree.Bundle0001
 
 namespace PI.SqfDivDeg.W
 

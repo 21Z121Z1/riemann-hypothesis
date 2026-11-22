@@ -1,8 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Dchart
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnipotentRadicalBlockUnitriangularFlagStatement
-import Formalism.FormalDegreeBessel.FinalG
-import Formalism.FormalDegreeBessel.FinalBF
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0133
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0203
+import Formalism.FormalDegreeBessel.Bundle0002
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CompactGroupHaarExists
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.OppositeWeylSubgroupClosed
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LongWeylElement

@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.IsExpSmulA
-import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.ZpowNeOneOfClose
+import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.Bundle0012
+import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.Bundle0002
 
 noncomputable section
 open Classical

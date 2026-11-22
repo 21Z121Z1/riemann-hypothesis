@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NodeAgree
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ReLatSelf
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0135
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0219
 
 noncomputable section
 

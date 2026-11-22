@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.AestronglyMeasurableQuotMeasureIffLift
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsBruhatFunctionOfClosedEmbedding
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsIsQuotientMeasureOfBruhatFunction
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0014
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0055
 
 open MeasureTheory Set GlobalTheory.AutomorphicL2Unitary
 open scoped ENNReal NNReal Topology Pointwise

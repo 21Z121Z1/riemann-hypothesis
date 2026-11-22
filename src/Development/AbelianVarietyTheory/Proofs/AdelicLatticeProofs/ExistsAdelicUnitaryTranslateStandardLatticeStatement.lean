@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsAdelicUnitaryTranslateStandardLattice
-import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.IsHermForm
-import Formalism.LocalToGlobal.ProjectiveLattices.ThClass
+import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.Bundle0002
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0030
 open NumberField IsDedekindDomain GlobalTheory.AdLat GlobalTheory.UnRep ReciprocityTheory.ChartRestriction.G.Geo.Tor Formalism.L2.Pj
 open scoped TensorProduct Matrix
 set_option maxHeartbeats 1000000 in

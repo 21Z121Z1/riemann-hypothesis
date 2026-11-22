@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.LevGapFacts
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.ClassSet
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0014
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Afsplit
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Stdform
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Levelaf

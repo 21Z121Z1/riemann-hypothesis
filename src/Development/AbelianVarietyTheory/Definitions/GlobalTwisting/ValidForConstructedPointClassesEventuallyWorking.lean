@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RationalRootsDef
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.FamilyClassSevenDutiesAndStableLattices
 import Formalism.SharpRestriction.SmoothDesignExistence.DGamSmooth
-import Development.AutomorphicArithmetic.PrimeDiscriminants.Scales
+import Development.AutomorphicArithmetic.PrimeDiscriminants.Bundle0004
 
 noncomputable section
 

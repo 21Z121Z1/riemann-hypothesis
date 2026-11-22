@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.ProjectiveLattices.SatLeaves
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ChartTransportSt
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FrTanAlg
 
 set_option autoImplicit false

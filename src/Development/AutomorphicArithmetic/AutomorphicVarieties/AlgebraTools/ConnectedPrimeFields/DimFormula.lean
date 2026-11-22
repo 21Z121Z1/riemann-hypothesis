@@ -1,7 +1,7 @@
 import Mathlib
 import ReciprocityTheory.CommutativeAlgebra.ChainConnInDim
 import ReciprocityTheory.CommutativeAlgebra.SaturatedChains.IsSaturatedChain
-import ReciprocityTheory.CommutativeAlgebra.SaturatedChains.Integral
+import ReciprocityTheory.CommutativeAlgebra.SaturatedChains.Bundle0001
 import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.LocDim
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.ConnectedPrimeFields.IsWeaklyRegularPairModOneLeft
 

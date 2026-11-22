@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasLatticesComplete
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankEqOfRankAtStalk
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3398
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2918
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CobOneEqZeroOfConnecting
 
 set_option autoImplicit false

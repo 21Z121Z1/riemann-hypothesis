@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.GL3MeanSquares.ZeroDensityBox
-import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.TailFinal
-import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.CountFinal
+import Formalism.GL3MeanSquares.Bundle0004
+import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.Bundle0013
+import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.Bundle0010
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.MinSt3
+import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0007
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsThetaCompact
 
 noncomputable section

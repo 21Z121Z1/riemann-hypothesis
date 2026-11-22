@@ -1,4 +1,4 @@
-import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.ContinuousAtOfClosedRel
+import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.Bundle0005
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.GMonomial
 import ReciprocityTheory.AnalyticForms.LeviForms.IsRegFamilyInhabitStatement
 

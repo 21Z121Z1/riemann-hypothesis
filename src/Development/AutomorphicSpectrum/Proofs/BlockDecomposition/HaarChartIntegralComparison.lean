@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DwCons
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0203
 import GroundTheory.AutomorphicForms.RealGroupsHaar
 open MeasureTheory Matrix Finset
 open scoped ContDiff

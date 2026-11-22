@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ValHalfInf
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0331
 
 noncomputable section
 

@@ -1,4 +1,4 @@
-import Formalism.EllipticTorsion.IsoExpand
+import Formalism.EllipticTorsion.Bundle0001
 
 open Finset
 

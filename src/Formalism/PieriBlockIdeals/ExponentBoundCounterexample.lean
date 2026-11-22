@@ -1,8 +1,7 @@
 import Mathlib
-import Formalism.PieriBlockIdeals.Statement
-import Formalism.PieriBlockIdeals.StatementW
-import Formalism.RankGapBounds.CloudMinFalse
-import Formalism.PieriBlockIdeals.StatementLA
+import Formalism.PieriBlockIdeals.Bundle0001
+import Formalism.RankGapBounds.Bundle0001
+import Formalism.PieriBlockIdeals.Bundle0004
 
 open MvPolynomial CategoryTheory TensorProduct
 

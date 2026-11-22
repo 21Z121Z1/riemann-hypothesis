@@ -1,5 +1,5 @@
 import Formalism.LandauZeroFreeBounds.NoZeroComplexOf
-import Formalism.LFunctionBounds.LFunctionBoundsProofs.LPartialSum
+import Formalism.LFunctionBounds.LFunctionBoundsProofs.Bundle0002
 
 open Complex Finset
 

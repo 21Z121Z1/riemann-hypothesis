@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.Regularisation.BoundedStatements
+import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0002
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshRegMax
 set_option maxSynthPendingDepth 1
 

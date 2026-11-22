@@ -1,4 +1,4 @@
-import Formalism.ThetaLogCoordinates.FockResolutionOnto.StatementB
+import Formalism.ThetaLogCoordinates.FockResolutionOnto.Bundle0001
 import Formalism.PolynomialDimension.MultinomialDepth.PartnerM
 
 namespace Formalism.InvariantFactorPaths.L4

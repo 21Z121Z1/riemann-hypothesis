@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CharpolySmulOfProd
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TripleAtt
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoeffProdOneSubCMulX
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ForallFieldIffForallSubgroup
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0007
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0375
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0189
 
 noncomputable section
 

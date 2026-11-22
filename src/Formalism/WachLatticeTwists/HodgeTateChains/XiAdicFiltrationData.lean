@@ -1,5 +1,5 @@
-import Formalism.WachLatticeTwists.HodgeTateChains.InvariantsCohomologyData
-import Formalism.CharacterColumnKernels.Statement
+import Formalism.WachLatticeTwists.HodgeTateChains.Bundle0001
+import Formalism.CharacterColumnKernels.Bundle0001
 
 noncomputable section
 

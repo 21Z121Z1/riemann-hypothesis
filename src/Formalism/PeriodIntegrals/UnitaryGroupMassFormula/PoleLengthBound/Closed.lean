@@ -1,7 +1,6 @@
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PoleLengthBound.ColDeriv
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PoleLengthBound.UnitCols
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BaseLengthBound.TaylorHasse
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BaseLengthBound.Column
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PoleLengthBound.Bundle0003
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BaseLengthBound.Bundle0004
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BaseLengthBound.Bundle0002
 
 noncomputable section
 

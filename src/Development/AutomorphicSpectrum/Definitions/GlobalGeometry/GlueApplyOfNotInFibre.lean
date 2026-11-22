@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsGenOfIsVBOne
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StalkClosedPointToToStalk
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0003
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0020
 
 noncomputable section
 

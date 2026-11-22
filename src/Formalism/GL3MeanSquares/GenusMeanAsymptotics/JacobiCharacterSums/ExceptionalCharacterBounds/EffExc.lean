@@ -1,5 +1,5 @@
 import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.ExceptionalCharacterBounds.LfunctionOneLowerBound
-import Formalism.LandauZeroFreeBounds.ExceptionalZeroBounds.LDerivNearOne
+import Formalism.LandauZeroFreeBounds.ExceptionalZeroBounds.Bundle0006
 
 open Formalism.ZeroFreeDirichlet
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.QuasiOfFam
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0014
 
 noncomputable section
 

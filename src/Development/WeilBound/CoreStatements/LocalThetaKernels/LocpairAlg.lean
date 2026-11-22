@@ -1,4 +1,4 @@
-import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.LocalDef
+import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Bundle0003
 import Development.WeilBound.CoreStatements.LocalThetaKernels.Locrep
 
 noncomputable section

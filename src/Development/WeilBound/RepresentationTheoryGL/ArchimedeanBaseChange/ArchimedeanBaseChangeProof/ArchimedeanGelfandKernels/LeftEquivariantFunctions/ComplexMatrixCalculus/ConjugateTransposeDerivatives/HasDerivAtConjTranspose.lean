@@ -1,5 +1,5 @@
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.LeftEquivariantFunctions.ComplexMatrixCalculus.ConjugateTransposeDerivatives.CfSandwich
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContDiffAdjugateEntry
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0460
 
 noncomputable section
 

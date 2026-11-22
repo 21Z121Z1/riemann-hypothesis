@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.HilbertNinetyQuotientHomEqIff
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaSumAdmissibility
-import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaDistributionNonzeroAdmissible
+import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0007
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaDistributionHeisenbergInvariant
 import GroundTheory.GlobalFields.Adele.Compact
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsFurtherExtra
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0032
 
 open Matrix NumberField IsDedekindDomain GlobalTheory.WeilM MeasureTheory
 open scoped TensorProduct Pointwise Classical

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GenWeil
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0007
 import Development.AbelianVarietyTheory.Counterexamples.AbelianLawCounterexamples.ExistsTwoTorsionWeilDegenerate
 import Development.AbelianVarietyTheory.Counterexamples.AbelianLawCounterexamples.ExistsDimOne
 import Development.AbelianVarietyTheory.Counterexamples.AbelianLawCounterexamples.WeilIsUniqueOfLocal

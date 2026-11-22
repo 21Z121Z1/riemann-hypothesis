@@ -1,6 +1,4 @@
-import Formalism.PolynomialDimension.MultinomialDepth.ExistsNonzeroExchangedMinorHolds
-import Formalism.PolynomialDimension.MultinomialDepth.FrobeniusDetVanishingHolds
-import Formalism.PolynomialDimension.MultinomialDepth.FockGaussComparisonHolds
+import Formalism.PolynomialDimension.MultinomialDepth.Bundle0001
 
 namespace Formalism.CountingSumsFrames.Top
 

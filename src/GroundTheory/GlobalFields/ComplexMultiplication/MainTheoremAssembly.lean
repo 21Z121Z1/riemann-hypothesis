@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.GlobalFields.ComplexMultiplication.MainTheoremLattice
+import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0018
 import GroundTheory.GlobalFields.ComplexMultiplication.MainTheoremFrobenius
 import GroundTheory.GlobalFields.ComplexMultiplication.MainTheoremIdeles
 import GroundTheory.GlobalFields.ComplexMultiplication.AnalyticUniformizationClassification

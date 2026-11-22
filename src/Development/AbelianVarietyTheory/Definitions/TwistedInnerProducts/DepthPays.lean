@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.OffQOfSizeRows
-import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsVacFOfIsVacVec
-import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.KTypeExtension
+import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0004
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0027
 
 noncomputable section
 

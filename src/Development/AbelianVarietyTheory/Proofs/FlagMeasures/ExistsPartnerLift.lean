@@ -1,11 +1,11 @@
 import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.CongruenceAtSplitFrobeniusHolds
 import Formalism.SharpRestriction.CuspSpanNormBounds.AbsoluteAmplitudeSecondOfSource
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.RowMinor
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0011
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemOfPerpPerp
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DefiniteLatticeDiscriminantModuleCardDetSq
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniquePlace
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardLeOfSpan
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0223
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0194
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0113
 
 open NumberField Module IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.S Formalism.MainNotions.S.Lat
 open scoped Classical

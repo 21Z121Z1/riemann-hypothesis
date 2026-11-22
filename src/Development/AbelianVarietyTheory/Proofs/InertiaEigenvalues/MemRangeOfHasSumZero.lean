@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormLtOneOfNotIsUnit
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LubinTateAction
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0793
 import Development.AbelianVarietyTheory.Statements.WeilDeligneCrystalline.ExistsNotInduces
 import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.IsAdicCompleteOfLe
 import Development.AbelianVarietyTheory.CrystallinePeriods.RingIface
-import Development.AbelianVarietyTheory.CrystallinePeriods.RingBasics
+import Development.AbelianVarietyTheory.CrystallinePeriods.Bundle0001
 
 noncomputable section
 

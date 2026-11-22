@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LeviRep
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsRepresent
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0021
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0003
 
 open GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.SplitWeil GlobalTheory.GodementJacquet MeasureTheory
 open scoped Pointwise

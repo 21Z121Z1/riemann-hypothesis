@@ -1,4 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.LocalQuotientRank
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.Bundle0005
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.LocalLengthFraction
 
 namespace ReciprocityTheory.ChartRestriction.G.FreeQuotientRank.LocalLengthAverage

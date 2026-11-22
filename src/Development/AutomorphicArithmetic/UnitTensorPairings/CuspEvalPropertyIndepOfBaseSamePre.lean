@@ -1,11 +1,11 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsBaseEnlargementFixedCoefFieldOfCoeffEnlargemen
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0034
 import Formalism.LocalToGlobal.IndefiniteReal.LinksStage
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAdelicCoreTransportEnlargedCoefficientBase
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BaseChangeEquivCrdOver
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ModelSame
-import Formalism.LocalToGlobal.IndefiniteReal.FWTie
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReadingEqZero
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0524
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0530
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0550
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0026
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0553
 open Formalism.BasicNotions Formalism.MainNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField
 open Formalism.L2.Theta Formalism.L2.DIV Formalism.L2.Indef Formalism.L2.Rows Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Lev Formalism.IndefR.Cx Formalism.IndefR.RecTie
 open scoped TensorProduct InnerProductSpace ComplexOrder

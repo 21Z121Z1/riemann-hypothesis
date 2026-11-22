@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.HermitianCurvature.BesselNonvanishingReduction
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DecLowAndKFinDecayOfGapOfDecAll
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0154
 
 namespace GlobalTheory.DecTransport
 

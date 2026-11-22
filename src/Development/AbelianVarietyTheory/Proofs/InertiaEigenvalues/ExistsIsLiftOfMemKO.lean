@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTypeGroupBlockLift
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsCharLab
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsContractNeZero
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0029
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0007
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0640
 
 noncomputable section
 

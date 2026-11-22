@@ -1,9 +1,9 @@
 import Mathlib
-import Development.EtaleCohomology.EtaleSheaves.H0TwistOverClosedField
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChainsCechNerveQuasiIsoOfSurjectiveStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCohomologyEquivalenceBasicPropertiesStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechLevelRepresentableStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCechNerveBaseChangeIsPullbackStatement
+import Development.EtaleCohomology.EtaleSheaves.Bundle0005
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0399
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0481
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0368
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0371
 
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC LateralTheory.E.E4
 

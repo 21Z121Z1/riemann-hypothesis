@@ -2,9 +2,9 @@ import Mathlib
 import GroundTheory.AutomorphicForms.FiniteBruhat
 import GroundTheory.AutomorphicForms.Iwasawa
 import GroundTheory.AutomorphicForms.GLnLocal
-import GroundTheory.AutomorphicForms.LocallyProfinite
+import GroundTheory.AutomorphicForms.Bundle0002
 import GroundTheory.AutomorphicForms.MeasuresModulus
-import GroundTheory.PowerSubgroups.CountableNeighbourhoods.NormZpow
+import GroundTheory.PowerSubgroups.CountableNeighbourhoods.Bundle0001
 
 namespace GroundTheory.Automorphic
 

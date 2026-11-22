@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.ComapMaximalIdealParDVR
-import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.StatementsChowNorm
-import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.StatementsSecIdealOfPrime
-import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.StatementsGenSecKer
+import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Bundle0005
+import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Bundle0009
+import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Bundle0007
+import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Bundle0011
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.Statements
 set_option maxSynthPendingDepth 1
 

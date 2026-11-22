@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsPointedOfIsHkIsog
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.EmbeddingSectionsSpanGeometricFibre
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0099
 
 set_option autoImplicit false
 

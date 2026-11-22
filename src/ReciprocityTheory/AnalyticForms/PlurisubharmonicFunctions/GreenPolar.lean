@@ -1,4 +1,4 @@
-import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.GreenSt
+import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0001
 
 open MeasureTheory Set Filter Topology InnerProductSpace intervalIntegral
 open scoped Laplacian

@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.LocalToGlobal.ProjectiveLattices.SpMapAlgHomId
-import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ThetaTranslateRangeGap
-import Development.AbelianVarietyTheory.Definitions.Divisors.MarkAd
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdjointIntertwines
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MultValueLeftContLevel
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0016
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0040
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0959
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0124
 
 set_option autoImplicit false
 

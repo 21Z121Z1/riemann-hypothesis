@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.NpDescOfValRat
-import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.TiedRec
+import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0006
+import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0007
 import Formalism.SharpRestriction.GrowthBounds.PlaneCountTheoremWithConstants
 
 namespace Formalism.L2.G.Cmp

@@ -1,4 +1,4 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HasFiniteLengthOfIsIrreducible
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0001
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.GlobalTheory.ParabolicInductionFiniteLength
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.BernsteinZelevinskyFiniteness
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0044

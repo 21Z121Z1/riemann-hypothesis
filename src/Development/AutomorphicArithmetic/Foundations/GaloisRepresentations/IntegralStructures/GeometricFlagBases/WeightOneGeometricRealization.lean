@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GeometricFlagBases.GeometricRealizationOfWeightOne
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LefschetzFixedPointFiniteEtaleCorrespondence
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0410
 
 namespace UpperTheory.Gal.Int.Geo
 

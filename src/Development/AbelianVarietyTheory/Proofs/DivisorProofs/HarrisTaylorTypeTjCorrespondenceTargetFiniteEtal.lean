@@ -1,9 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInvExp
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGenOfValEq
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorTypeTjIsogeniesRepresentableStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjDualPartsKilledOfPerfectPairingStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeTorsionPointLocallyConstantGeomPoinStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3652
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3671
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0131
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3353
 
 noncomputable section
 

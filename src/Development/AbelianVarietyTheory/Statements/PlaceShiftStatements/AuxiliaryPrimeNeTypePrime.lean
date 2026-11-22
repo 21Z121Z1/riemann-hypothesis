@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
+import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0004
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.SetAtOfSizeAt
 import Development.AbelianVarietyTheory.Definitions.Divisors.NonemptyGridDataIff
 

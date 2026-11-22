@@ -1,8 +1,8 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.Statements
 import GroundTheory.GlobalFields.ComplexMultiplication.AlgebraicityGalois
-import GroundTheory.GlobalFields.ComplexMultiplication.AlgebraicityDescent
-import GroundTheory.GlobalFields.ComplexMultiplication.JInvariantSurjective
+import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0017
+import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0004
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.ChowlaSelberg

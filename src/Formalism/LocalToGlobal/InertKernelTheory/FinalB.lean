@@ -4,14 +4,12 @@ import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.IntPull
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.IntStd
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.IntBasis
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.IntTens
-import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.ThFourIntOf
+import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.Bundle0001
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.UnitSubstOfLoc
-import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.MMFour
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.IntUnit
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.DegreeLeOfCoeffProdNe
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.TestVectorMemSchwartzBruhat
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.JetsModel
-import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.JetsOrth
 
 namespace Formalism.L2.KerInert
 

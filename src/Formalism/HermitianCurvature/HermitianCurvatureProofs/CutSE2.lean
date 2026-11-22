@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.TheoremPCompactOfSquareDensity
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0268
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LevelOneSquareIntegrableGeneral
 
 open MeasureTheory Filter Topology

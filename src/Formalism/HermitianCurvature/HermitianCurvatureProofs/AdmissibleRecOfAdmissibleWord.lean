@@ -1,5 +1,5 @@
 import Formalism.HermitianCurvature.StatementFr
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.Interlace
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0004
 
 open Matrix Formalism.YangianSpanCharacter.T Formalism.YangianSpanCharacter.Y Formalism.FourierDecayAlt.R Formalism.FourierDecayAlt.Wd Formalism.FourierDecayAlt.Fr
 open Finset Formalism.FourierDecayAlt.I Formalism.FourierDecayAlt.P.Interlace

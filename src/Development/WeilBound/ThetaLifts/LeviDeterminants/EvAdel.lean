@@ -1,4 +1,4 @@
-import Development.WeilBound.ThetaLifts.LeviDeterminants.ModelChangeOf
+import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0011
 import Development.WeilBound.ThetaLifts.LeviDeterminants.MapEqOfSmul
 
 noncomputable section

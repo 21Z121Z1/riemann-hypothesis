@@ -1,5 +1,5 @@
-import Development.WeilBound.ThetaLifts.SphericalLattices.SphSplitOf
-import Development.WeilBound.ThetaLifts.SphericalLattices.BelowIffRows
+import Development.WeilBound.ThetaLifts.SphericalLattices.Bundle0012
+import Development.WeilBound.ThetaLifts.SphericalLattices.Bundle0003
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KCoinvOfNarrow
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.BernsteinNarrowness.BernsteinClosure.RamifiedMultiplicityOne
 

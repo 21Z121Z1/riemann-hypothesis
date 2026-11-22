@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsFiltrationHilbSum
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PFiltrationStepHilb
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PGradedPieceQuot
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0009
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0006
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0007
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

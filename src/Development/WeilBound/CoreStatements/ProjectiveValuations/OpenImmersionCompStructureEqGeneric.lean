@@ -1,4 +1,4 @@
-import Development.WeilBound.CoreStatements.ProjectiveValuations.ExistsChartFrBor
+import Development.WeilBound.CoreStatements.ProjectiveValuations.Bundle0002
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsFramesOfHolPeriods
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.PoinStatementPfD
 

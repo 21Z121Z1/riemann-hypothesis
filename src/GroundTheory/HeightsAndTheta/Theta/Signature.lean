@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.HermitianSpaces
+import GroundTheory.AutomorphicForms.Bundle0005
 import GroundTheory.HeightsAndTheta.Theta.CMDatum
-import GroundTheory.HeightsAndTheta.Theta.Inertia
+import GroundTheory.HeightsAndTheta.Theta.Bundle0001
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Theta

@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjLinApply
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzBruhatInvariantUnderIntegralLattice
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1444
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1485
 import GroundTheory.GlobalFields.TateThesis.AdelicCharDual
 import GroundTheory.GlobalFields.LocalAtPlace
 

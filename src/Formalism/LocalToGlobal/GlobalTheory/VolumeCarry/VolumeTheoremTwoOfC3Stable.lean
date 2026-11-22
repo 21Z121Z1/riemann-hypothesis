@@ -1,8 +1,8 @@
-import Formalism.SharpRestriction.GlobalSchurBounds.MassRatioUnfoldedOfTheoremTwo
+import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0005
 import Formalism.LocalToGlobal.GlobalTheory.GL5.PNamed
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GramFibrationFormulas.SiegelWeilFiniteVolumeCase
-import Formalism.SharpRestriction.CuspSpanNormBounds.MassRatioBoundPower
-import Formalism.SharpRestriction.GlobalSchurBounds.LocalCountingBounds
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0002
+import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0001
 
 noncomputable section
 

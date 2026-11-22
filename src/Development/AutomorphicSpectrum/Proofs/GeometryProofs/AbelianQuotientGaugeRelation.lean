@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SqMap
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianQuotientGermSubstitutionStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0096
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0192
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FrRatio
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PsJetTwistedSeriesOfLeOne
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField

@@ -3,7 +3,7 @@ import Formalism.PieriBlockIdeals.PieriColumnMinors.WeightBounds
 import Formalism.PieriBlockIdeals.PieriColumnMinors.LargeParameterEstimates
 import Formalism.PieriBlockIdeals.PieriColumnMinors.CorollaryOfParamsSevenLinkageAlt
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.AuxStatement14
-import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.RamBasic
+import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.Bundle0003
 import Formalism.PieriBlockIdeals.PieriColumnMinors.ProdInitialMinorsMemDetSpan
 
 noncomputable section

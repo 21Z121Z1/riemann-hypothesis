@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.IsTwistedDualOfGaloisRep
+import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.Bundle0008
 
 noncomputable section
 

@@ -1,5 +1,4 @@
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BaseLengthBound.Assembly
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BaseLengthBound.TaylorHasse
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BaseLengthBound.Bundle0004
 
 noncomputable section
 

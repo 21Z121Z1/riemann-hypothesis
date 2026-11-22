@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.LocalToGlobal.BesselHermitianTheta.TiedBessel
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.BesselDatum
-import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.BesselPeriodPositionOneEqZero
+import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.Bundle0006
 
 noncomputable section
 

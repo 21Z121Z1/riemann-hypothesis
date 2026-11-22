@@ -1,7 +1,7 @@
 import Formalism.HermitianCurvature.StatementWd
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.FirstEmbeddingOne
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.PositionInsertionDiagonalCompat
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.SecondEmbedMulFirstEmbedApply
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0014
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0021
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0022
 
 namespace Formalism.FourierDecayAlt.P.Wd4
 

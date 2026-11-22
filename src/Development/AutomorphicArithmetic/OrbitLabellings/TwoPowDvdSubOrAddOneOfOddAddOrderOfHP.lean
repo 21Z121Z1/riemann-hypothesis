@@ -2,8 +2,8 @@ import Mathlib
 import Formalism.SharpRestriction.GrowthBounds.IsResidueClassZero
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.FrameFacts
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.HostFacts
-import Development.AutomorphicArithmetic.OrbitLabellings.GalEArithFrobEqIotaHP
-import Development.AutomorphicArithmetic.FrobeniusLocalisation.FrobHOrder
+import Development.AutomorphicArithmetic.OrbitLabellings.Bundle0002
+import Development.AutomorphicArithmetic.FrobeniusLocalisation.Bundle0004
 
 open UpperTheory.HF
 

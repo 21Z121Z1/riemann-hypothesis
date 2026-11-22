@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.GlobalTheory.GL3.IntegralityIffAwayAtD
+import Formalism.LocalToGlobal.GlobalTheory.GL3.Bundle0001
 import Formalism.LocalToGlobal.GlobalTheory.GL3.DeterminantNormOneOfUnitDisc
 import Formalism.SharpRestriction.GlobalSchurBounds.StandardIntegralLatticeExists
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCoType
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0001
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PowDvdOfHermMatEq
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SatakeMat
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SatakeComb

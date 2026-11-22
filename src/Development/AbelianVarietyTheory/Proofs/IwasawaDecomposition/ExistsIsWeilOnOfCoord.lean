@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.LocalToGlobal.BesselHermitianTheta.AllTied
-import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.AdelicDataRowMeasureScaleTrivialTuple
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SumEqTraceOriented
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsOpenKer
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0186
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0219
 
 noncomputable section
 

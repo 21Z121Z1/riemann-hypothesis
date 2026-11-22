@@ -1,7 +1,6 @@
-import ReciprocityTheory.GroupCohomology.CupConnRightStatement
-import ReciprocityTheory.GroupCohomology.HomogExistsStatement
-import ReciprocityTheory.GroupCohomology.DEqZeroOfMemB
-import ReciprocityTheory.GroupCohomology.HomogIso
+import ReciprocityTheory.GroupCohomology.Bundle0002
+import ReciprocityTheory.GroupCohomology.Bundle0003
+import ReciprocityTheory.GroupCohomology.Bundle0004
 import ReciprocityTheory.GroupCohomology.PrismOpZeroEval
 
 namespace ReciprocityTheory.Coh

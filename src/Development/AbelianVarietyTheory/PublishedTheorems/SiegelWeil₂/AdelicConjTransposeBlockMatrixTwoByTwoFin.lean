@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelWeilUnitarySchrodinger
-import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.AllHypothesesInhabited
+import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.Bundle0004
 
 noncomputable section
 

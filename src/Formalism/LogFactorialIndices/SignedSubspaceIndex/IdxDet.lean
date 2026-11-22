@@ -1,4 +1,4 @@
-import Formalism.LogFactorialIndices.StatementIdx
+import Formalism.LogFactorialIndices.Bundle0001
 import Lemmata.DiscreteValuationQuotients.LenQuotSpan
 import Lemmata.GeneralBFactSecondExtra.Key
 

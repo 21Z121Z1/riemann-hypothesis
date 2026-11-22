@@ -1,8 +1,7 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.ShaFamMono
-import Development.AutomorphicArithmetic.AutomorphicVarieties.PartsSign
-import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.SelFam
+import Development.AutomorphicArithmetic.AutomorphicVarieties.Bundle0001
+import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.Bundle0002
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.LocUnr
-import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.PlacesQ
 
 open NumberField IsDedekindDomain Formalism.ConjugateSelfDual ReciprocityTheory.Gal Formalism.GaloisCohomology UpperTheory.V UpperTheory.V.Base UpperTheory.V.Chr
 

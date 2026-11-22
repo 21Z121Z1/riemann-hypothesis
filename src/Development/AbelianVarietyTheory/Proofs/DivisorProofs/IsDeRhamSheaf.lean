@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.PoincareDeRhamDuality
-import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0029
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0072
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ZeroSectionBase
 
 set_option autoImplicit false

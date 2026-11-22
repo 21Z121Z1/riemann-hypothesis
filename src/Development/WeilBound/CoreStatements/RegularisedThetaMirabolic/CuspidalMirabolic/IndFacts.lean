@@ -1,8 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.BlockTriangularOfSubOne
 import Formalism.MirabolicMackeyTheory.MirabolicIsMackey
-import Development.WeilBound.CoreStatements.RegularisedThetaMirabolic.CuspidalMirabolic.IndIrr
-import Development.WeilBound.CoreStatements.RegularisedThetaMirabolic.CuspidalMirabolic.IndDim
+import Development.WeilBound.CoreStatements.RegularisedThetaMirabolic.CuspidalMirabolic.Bundle0001
 
 noncomputable section
 

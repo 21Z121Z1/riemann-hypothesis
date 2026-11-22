@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStructure
 import GroundTheory.AutomorphicForms.GKModules.Casimir
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DcAevalIntertwineAlt
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0012
 
 open NumberField IsDedekindDomain Topology Filter Set
 open scoped NumberField.AdeleRing

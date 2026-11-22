@@ -1,6 +1,6 @@
 import Development.WeilBound.ThetaLifts.FrameEstimates.SquareIntegrableWeilRange
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationPreservesSchwartz
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHaarAdelicVectorsBoundsPureTensorsSlices
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1897
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1598
 
 noncomputable section
 

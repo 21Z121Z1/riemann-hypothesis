@@ -1,5 +1,5 @@
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ShiftAtRExistsEq
-import CompanionTheory.AutomorphicTheory.BesselWaveGrids.FourLeOfFive
+import CompanionTheory.AutomorphicTheory.BesselWaveGrids.Bundle0003
 import CompanionTheory.AutomorphicTheory.BesselWaveGrids.PStarTie
 
 namespace CompanionTheory.WaveGrid

@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.TensorProductTheorem.CoeToRepresentationApply
-import GroundTheory.AutomorphicForms.TensorProductTheorem.KProjApplyEqSelfIff
+import GroundTheory.AutomorphicForms.TensorProductTheorem.Bundle0003
+import GroundTheory.AutomorphicForms.TensorProductTheorem.Bundle0005
 import GroundTheory.AutomorphicForms.TensorProductTheorem.TwoFactorUnique
-import GroundTheory.AutomorphicForms.TensorProductTheorem.Window
+import GroundTheory.AutomorphicForms.TensorProductTheorem.Bundle0002
 
 noncomputable section
 

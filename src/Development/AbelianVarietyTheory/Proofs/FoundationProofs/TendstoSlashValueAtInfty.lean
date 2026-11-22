@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.IsDCReps
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeOperatorsOnHalfPlaneFunctionsAgreeExplicit
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeTOperatorExplicitModularFormStatement
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0028
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0115
 open GlobalTheory.HeckeFamilyMatrices Polynomial UpperHalfPlane Filter Topology
 open scoped MatrixGroups ModularForm
 open scoped Manifold

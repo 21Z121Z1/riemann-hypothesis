@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.CuspidalSplittingSums
+import GroundTheory.AutomorphicForms.Bundle0018
 set_option maxSynthPendingDepth 1
 
 noncomputable section

@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.KillKcolTau
+import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0006
 
 noncomputable section
 

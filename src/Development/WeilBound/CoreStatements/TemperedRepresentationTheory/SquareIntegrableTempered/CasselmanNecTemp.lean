@@ -1,6 +1,6 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.LSegJacquet
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsTemperedCoeff
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0017
 
 noncomputable section
 

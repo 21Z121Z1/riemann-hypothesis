@@ -1,4 +1,4 @@
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GreenCuspidalCharsByRegularCharsProofStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0660
 
 namespace PositivityTheory.Stage1.PM
 

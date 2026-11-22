@@ -2,9 +2,9 @@ import Mathlib
 import Formalism.LocalToGlobal.KernelLattices.ColInst
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ColInst
 import Formalism.LocalToGlobal.Columns.ChainInstY
-import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.KerEquivFr
-import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.KerEquivGen
-import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.KerEquivStmt
+import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.Bundle0002
+import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.Bundle0001
+import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.Bundle0003
 
 open NumberField IsDedekindDomain
 

@@ -1,4 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.TraceFormulaC
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.Bundle0014
 
 noncomputable section
 

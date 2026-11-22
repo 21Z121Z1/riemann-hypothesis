@@ -1,6 +1,6 @@
 import Formalism.LocalToGlobal.GroupLattices.PerfectRings.GoodRingWittExtension
-import Formalism.LocalToGlobal.GroupLattices.PerfectRings.IsLocalRingOfComplete
-import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.StdSubPlacesConst
+import Formalism.LocalToGlobal.GroupLattices.PerfectRings.Bundle0001
+import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.Bundle0001
 
 noncomputable section
 

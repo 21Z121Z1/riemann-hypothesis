@@ -1,5 +1,5 @@
-import Formalism.PeriodIntegrals.HaarDefs
-import Formalism.FormalDegreeBessel.FinalG
+import Formalism.PeriodIntegrals.Bundle0020
+import Formalism.FormalDegreeBessel.Bundle0002
 
 open MeasureTheory Matrix Finset
 open scoped InnerProductSpace ContDiff

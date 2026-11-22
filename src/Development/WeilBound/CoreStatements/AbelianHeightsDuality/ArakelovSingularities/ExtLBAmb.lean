@@ -1,5 +1,5 @@
 import Mathlib
-import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ArakelovSingularities.ExistsTwistMap
+import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ArakelovSingularities.Bundle0003
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ArakelovSingularities.IsClosedImmersionLift
 
 set_option autoImplicit false

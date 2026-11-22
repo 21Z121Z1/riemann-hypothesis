@@ -1,5 +1,5 @@
 import Formalism.HermitianCurvature.StatementFr
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.PositionInsertionDiagonalCompat
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0021
 
 open Matrix Formalism.YangianSpanCharacter.T Formalism.YangianSpanCharacter.Y Formalism.FourierDecayAlt.R Formalism.FourierDecayAlt.Wd Formalism.FourierDecayAlt.Fr
 

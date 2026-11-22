@@ -1,10 +1,10 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsBlockRatioAlg
-import GroundTheory.HeightsAndTheta.Heights.Intersections.AvoidRing
-import GroundTheory.HeightsAndTheta.Heights.Intersections.IsHorizontalImageZ
-import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.PConeTrdeg
-import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.PIntDomainDim
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PBirationalModelExists
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0042
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0006
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0037
+import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Bundle0012
+import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Bundle0018
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0063
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PCoordConeArithVar
 set_option maxSynthPendingDepth 1
 

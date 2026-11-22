@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.FormalGroupWitt.FormalGroupWittProofs.SolveV
-import Formalism.FormalGroupWitt.FormalGroupWittProofs.EqSingleOfDegreeEqOne
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Cobdry
+import Formalism.FormalGroupWitt.FormalGroupWittProofs.Bundle0002
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0009
 import Formalism.LocalRingCardinality.DataJet
 
 noncomputable section

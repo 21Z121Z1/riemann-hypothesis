@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.PlaceAdaptation.AdaptStd
-import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsUniqueSymmetricTranslateOddLevel
+import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0052
 
 set_option autoImplicit false
 

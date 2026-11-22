@@ -1,8 +1,8 @@
-import Formalism.HarderNarasimhan.DegSupermodZ
+import Formalism.HarderNarasimhan.Bundle0001
 import Formalism.LatticeSlopes.ExistsSaturatedSlopeEqMuMax
-import Formalism.LatticeSlopes.LatticeSlopesProofs.DiscreteTopologyOfLe
-import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DegSupermod
-import Formalism.HarderNarasimhan.HarderNarasimhanProofs.MuChar
+import Formalism.LatticeSlopes.LatticeSlopesProofs.Bundle0001
+import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0002
+import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0004
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SatBasic
 
 open Module Submodule

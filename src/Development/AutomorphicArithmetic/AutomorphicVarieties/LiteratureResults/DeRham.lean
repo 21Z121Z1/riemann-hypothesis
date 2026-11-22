@@ -1,4 +1,4 @@
-import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.IsRelCochain
+import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.Bundle0001
 
 noncomputable section
 

@@ -1,5 +1,5 @@
-import Development.WeilBound.CoreStatements.PlurisubharmonicCones.ProdSqrtLead
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DetLatticeFlagTensorStatement
+import Development.WeilBound.CoreStatements.PlurisubharmonicCones.Bundle0017
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0201
 
 open AlgebraicGeometry CategoryTheory Limits NumberField Matrix
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi

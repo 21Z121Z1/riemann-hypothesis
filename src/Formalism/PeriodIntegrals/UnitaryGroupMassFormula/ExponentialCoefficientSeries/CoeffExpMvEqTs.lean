@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.SimeqPdInt
+import Formalism.PeriodIntegrals.Bundle0010
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CubeFormalIdentities.CoeffPowMulPowEqZero
 
 noncomputable section

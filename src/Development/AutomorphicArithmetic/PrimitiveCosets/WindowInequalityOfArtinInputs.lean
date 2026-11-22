@@ -1,5 +1,4 @@
-import Development.AutomorphicArithmetic.PrimitiveCosets.CoreGm
-import Development.AutomorphicArithmetic.PrimitiveCosets.Imports
+import Development.AutomorphicArithmetic.PrimitiveCosets.Bundle0003
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.TopWin
 
 noncomputable section

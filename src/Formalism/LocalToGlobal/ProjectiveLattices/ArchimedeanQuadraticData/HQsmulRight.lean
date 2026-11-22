@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.RhoDotSelf
-import ReciprocityTheory.SemistableReduction.TorsionNonvanishStatement
+import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.Bundle0001
+import ReciprocityTheory.SemistableReduction.Bundle0003
 
 set_option autoImplicit false
 

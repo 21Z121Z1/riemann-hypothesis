@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IsFramedPointChangedByLetters
-import Formalism.LocalToGlobal.ProjectiveLattices.PtFree
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.FinCoreSt
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.QuotSt
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.Bundle0002
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.Bundle0001
 
 noncomputable section
 

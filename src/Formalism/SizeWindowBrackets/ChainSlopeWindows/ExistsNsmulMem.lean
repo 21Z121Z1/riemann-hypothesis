@@ -1,10 +1,10 @@
 import Formalism.SizeWindowBrackets.SlopesHypothesisFinitePlaces
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DiscreteSpanOfLinIndep
-import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SizeMu
+import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0005
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.HtGram
-import Formalism.HarderNarasimhan.HarderNarasimhanProofs.MuChar
+import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0004
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DualPl
-import Formalism.SizeWindowBrackets.ChainSlopeWindows.WeightedMeanLemmaNeedsDegree
+import Formalism.SizeWindowBrackets.ChainSlopeWindows.Bundle0001
 
 open Module NumberField
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeIndices.TensTopRing
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeIndices.Bundle0007
 import ReciprocityTheory.GeneralLinearIntegers.AlgebraMapIntMemOint
 
 noncomputable section

@@ -2,7 +2,7 @@ import Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.We
 import Development.WeilBound.CoreStatements.BranchingTraces.BranchingComatrices.OneLeDiff
 import Development.WeilBound.CoreStatements.BranchingTraces.FormTSingle
 import Development.WeilBound.CoreStatements.BranchingTraces.ExistsIntertwiner
-import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.ColSq
+import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.Bundle0003
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.ExceptionalGroupG2.HarishChandraMultiplicityBound
 
 noncomputable section

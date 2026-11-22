@@ -4,7 +4,7 @@ import Formalism.LocalRingCardinality.DataLatDefs
 import Formalism.LocalRingCardinality.Lemmas
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IndexAtLevelIffOuterClausesAnd
 import Formalism.LocalToGlobal.Columns.PolyFnLemmas
-import Formalism.LocalToGlobal.HermitianForms.FramesLemmas
+import Formalism.LocalToGlobal.HermitianForms.Bundle0003
 import Formalism.LocalToGlobal.GlobalTheory.GL6.BwAValIntegralNonneg
 
 noncomputable section

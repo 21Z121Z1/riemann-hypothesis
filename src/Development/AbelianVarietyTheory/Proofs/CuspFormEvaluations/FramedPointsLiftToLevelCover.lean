@@ -1,13 +1,12 @@
 import Mathlib
 import Formalism.LocalToGlobal.ProjectiveLattices.ThShort
-import Formalism.LocalToGlobal.ProjectiveLattices.IsLevMove
-import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CIndBC
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0005
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.DivCalc
-import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IsoEqOfMapsAlongSection
-import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.IsLocallyNoetherian
+import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0013
+import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0032
 
 set_option autoImplicit false
 

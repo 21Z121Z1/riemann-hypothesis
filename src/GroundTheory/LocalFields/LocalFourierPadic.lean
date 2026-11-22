@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.LocalFields.LocalFourierTrace
+import GroundTheory.LocalFields.Bundle0011
 
 noncomputable section
 

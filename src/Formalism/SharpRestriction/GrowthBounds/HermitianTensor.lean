@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.ModelIdentificationHolds
-import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.PbSmithLam
+import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.Bundle0006
 import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.TauP
 
 namespace Formalism.MainNotions.flipOneThree.Pf

@@ -1,9 +1,9 @@
 import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.NumbersDVRFlagBundleLineBase
-import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.NumbersDVRC3ResidualContractionComponent
-import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Assembly
-import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PPFDegree
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PHsymmShift
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.RingKrullDimQuotComapRename
+import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.Bundle0002
+import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0013
+import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0011
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0055
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0053
 set_option maxSynthPendingDepth 1
 
 theorem GroundTheory.Heights₂.Heights.AutoClose.FieldNumbers_ProjectionFormulaDegree.{u} : GroundTheory.Heights₂.Heights.FieldNumbers.ProjectionFormulaDegree.Statement.{u} :=

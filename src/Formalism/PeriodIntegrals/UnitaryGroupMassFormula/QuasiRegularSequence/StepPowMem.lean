@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.RegSeqQuasiReg
+import Formalism.PeriodIntegrals.Bundle0009
 
 universe u
 

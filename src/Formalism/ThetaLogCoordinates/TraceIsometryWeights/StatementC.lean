@@ -1,4 +1,4 @@
-import Formalism.MahlerMeasure.StatementT
+import Formalism.MahlerMeasure.Bundle0006
 
 namespace Formalism.InvariantFactorPaths.PW
 

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsRootSelectionUnitaryRankOne
 import GroundTheory.Brauer.TensorSimple
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsRootCharpolyOfIsRootMinpoly
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0069
 
 open Matrix NumberField GlobalTheory.LKTrip GlobalTheory.LKRes GlobalTheory.LKMid GlobalTheory.LKCount Polynomial
 open scoped TensorProduct Classical

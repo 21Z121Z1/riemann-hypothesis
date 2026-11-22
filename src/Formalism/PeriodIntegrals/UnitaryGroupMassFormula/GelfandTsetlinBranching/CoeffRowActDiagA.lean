@@ -1,8 +1,8 @@
 import Mathlib
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GelfandTsetlinBranching.ExtremalFacts
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GelfandTsetlinBranching.Bundle0001
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GelfandTsetlinBranching.ExtremalFactsProofA
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LHwlineLemmas
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DetEmbUnitriA
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0012
 
 noncomputable section
 

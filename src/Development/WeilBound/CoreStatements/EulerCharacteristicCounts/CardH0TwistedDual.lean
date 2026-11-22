@@ -1,10 +1,10 @@
 import Mathlib
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-import Formalism.SharpRestriction.LevelLetterCocycles.ChainRows
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0018
 import Development.AutomorphicSpectrum.Definitions.NonGaloisLines.TopLine
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardCocyclesMulInvariantsDiscrete
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CardDualZmodModuleEqCard
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0242
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0019
 open NumberField IsDedekindDomain Formalism Formalism.ConjugateSelfDual Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.MainNotions Formalism.MainNotions.N Formalism.WeaklyAdmissibleFiltrations Module GlobalTheory.CompanionTheory.LocDual
 
 namespace PositivityTheory.LocalTateOrthogonality.Bk

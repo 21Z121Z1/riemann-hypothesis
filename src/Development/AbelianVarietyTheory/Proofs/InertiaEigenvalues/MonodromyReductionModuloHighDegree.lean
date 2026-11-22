@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.ImageStableDegreeBounds
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilRingModHighDegreePropertyStatement
+import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0006
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0191
 
 noncomputable section
 

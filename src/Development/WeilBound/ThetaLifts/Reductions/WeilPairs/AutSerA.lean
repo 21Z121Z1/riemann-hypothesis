@@ -1,7 +1,7 @@
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutLat
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.HermitianFormRealCoordinateMatrixHermitianDetNeZ
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussianPoincareSeriesThetaVacuum
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardTraceAddCharIsStandardCharOfAdmissibleCM
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1129
 
 noncomputable section
 

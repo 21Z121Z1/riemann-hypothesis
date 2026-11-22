@@ -1,7 +1,6 @@
 import Mathlib
-import Formalism.PeriodIntegrals.IsLowUnitH
-import Formalism.PeriodIntegrals.LowCyc
-import Formalism.PeriodIntegrals.KFinSmooth
+import Formalism.PeriodIntegrals.Bundle0015
+import Formalism.PeriodIntegrals.Bundle0018
 
 open Matrix
 

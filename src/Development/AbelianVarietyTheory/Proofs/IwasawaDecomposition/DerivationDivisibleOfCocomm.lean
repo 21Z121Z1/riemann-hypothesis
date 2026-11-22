@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.SharpRestriction.Divisibility.AbelianOpenPart.IsOpenPart
 import Development.AbelianVarietyTheory.Definitions.ShimuraVarieties.MemPrimitiveTensorsIffIsPrimitiveElem
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsIntegralOfDivisibleCharactersStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormSmulLeOneOfPrimitiveBoundedPowersStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0118
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0027
 
 noncomputable section
 

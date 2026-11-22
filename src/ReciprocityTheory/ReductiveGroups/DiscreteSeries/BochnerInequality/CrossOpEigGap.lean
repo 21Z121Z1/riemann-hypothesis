@@ -1,4 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.InnerCrossOpEigEqZero
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.Bundle0004
 
 noncomputable section
 

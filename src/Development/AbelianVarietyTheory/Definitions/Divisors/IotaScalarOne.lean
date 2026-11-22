@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.SandwichMaps
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0003
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.PartialDifferential.AnalyticHypoBasic
+import GroundTheory.AutomorphicForms.PartialDifferential.Bundle0002
 import GroundTheory.AutomorphicForms.PartialDifferential.AnalyticHypoCutoff
 
 namespace GroundTheory.Automorphic.Sobolev

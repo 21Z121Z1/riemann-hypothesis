@@ -1,9 +1,9 @@
 import Mathlib
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.CurveDivisors
-import GroundTheory.ArithmeticGeometry.SchemeCohomology.CurveProper
+import GroundTheory.ArithmeticGeometry.SchemeCohomology.Bundle0007
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.WeilDivisorTensor
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.WeilDivisorInvertible
-import GroundTheory.ArithmeticGeometry.SchemeCohomology.WeilDivisorPicard
+import GroundTheory.ArithmeticGeometry.SchemeCohomology.Bundle0006
 import GroundTheory.FunctionField.DivisorDegree
 import GroundTheory.FunctionField.WeilDifferential
 

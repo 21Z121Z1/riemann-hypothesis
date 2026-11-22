@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.GlobalSchurBounds.StandardLatticesGL3
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsCommonDenominator
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0003
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes NumberField Matrix
 attribute [local instance] Formalism.BasicNotions.Host.cmStar
 

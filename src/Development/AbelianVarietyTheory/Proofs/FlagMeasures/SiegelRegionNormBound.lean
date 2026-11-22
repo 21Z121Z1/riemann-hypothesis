@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormLowerLe
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0116
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.ExistsLowerUnitriangularMulUpperTriangular
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LeadingMinorInvariant
-import Formalism.FormalDegreeBessel.FinalG
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBisMore
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0052
+import Formalism.FormalDegreeBessel.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0001
 
 open MeasureTheory Matrix Formalism.QuantumDeterminants Formalism.MainNotions.S GlobalTheory.SgInf GlobalTheory.LeadingMinorInv
 open scoped InnerProductSpace

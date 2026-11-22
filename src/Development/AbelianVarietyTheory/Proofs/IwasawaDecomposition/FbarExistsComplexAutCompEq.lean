@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.EmbeddingMemCoefficientField
-import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsRingEquivOfIsTranscendenceBasis
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0008
+import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0002
 open Polynomial
 
 noncomputable section

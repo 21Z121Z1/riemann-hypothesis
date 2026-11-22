@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StRiemannExtensionAnalytic
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.OsgoodSeparate
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0009
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0038
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.ComplexSets

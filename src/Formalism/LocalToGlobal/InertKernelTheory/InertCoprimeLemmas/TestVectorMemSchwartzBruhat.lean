@@ -1,6 +1,6 @@
-import Formalism.LocalToGlobal.InertKernelTheory.StatementJets
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0007
 import Formalism.LocalToGlobal.GlobalTheory.GL3.NormNatCoprime
-import Formalism.LocalToGlobal.GlobalTheory.GL3.ThirdClauseIntegralCombination
+import Formalism.LocalToGlobal.GlobalTheory.GL3.Bundle0002
 import Formalism.LocalToGlobal.GlobalTheory.GL3.PLinkThU
 import Formalism.FormalGroupLog.FormalGroupLogProofs.ChainRule
 

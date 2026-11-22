@@ -1,5 +1,5 @@
-import ReciprocityTheory.ReducedBases.LatticeReduction
-import ReciprocityTheory.ReducedBases.TBInjective
+import ReciprocityTheory.ReducedBases.Bundle0003
+import ReciprocityTheory.ReducedBases.Bundle0002
 
 noncomputable section
 

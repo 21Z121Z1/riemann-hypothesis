@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SelfDualOne
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LatticeModelVacuumTranslateClassesIndependent
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MulSelfEqOneIffOfLinearOrderedCommGroupWithZero
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0149
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0142
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0127
 open Matrix
 
 namespace GlobalTheory.Hk3.HoweG

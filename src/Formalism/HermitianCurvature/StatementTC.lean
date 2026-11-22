@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.HermitianCurvature.StatementK
+import Formalism.HermitianCurvature.Bundle0002
 import Formalism.HermitianCurvature.StatementTA
 import Formalism.HermitianCurvature.StatementTB
 import Formalism.HermitianCurvature.MemParahoricTimesPrincipalCongruenceIff

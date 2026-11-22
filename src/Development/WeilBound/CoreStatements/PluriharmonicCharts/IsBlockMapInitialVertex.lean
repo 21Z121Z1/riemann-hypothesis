@@ -1,8 +1,8 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.MCoordIdealLeOfHomog
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverTransferIdealEq
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.PullbackPullback
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PFnFieldTrdeg
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0083
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0035
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0022
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PDiagFormDiv
 open MvPolynomial Matrix ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.AI.I1 ReciprocityTheory.ChartRestriction.G.AI.I4 GlobalTheory.CompanionTheory.Ar.PB GroundTheory.Heights₂.Heights GroundTheory.Heights₂.Heights.LowerBoundFree
 open scoped Classical

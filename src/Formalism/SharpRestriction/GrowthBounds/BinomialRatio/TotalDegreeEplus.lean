@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.ExtendedStatementOfParts
-import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.KeptFin
+import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0003
+import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0001
 
 noncomputable section
 

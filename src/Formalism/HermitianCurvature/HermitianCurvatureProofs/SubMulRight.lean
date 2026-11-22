@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.ExistsHaarStabilizer
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0104
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.InverseSplitting
 
 namespace Formalism.FourierDecayAlt.P.StabilizerDisintegration.UC

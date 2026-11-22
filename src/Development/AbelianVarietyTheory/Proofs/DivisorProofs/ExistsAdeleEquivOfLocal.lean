@@ -1,6 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.AdelicScalarMultiplier
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.IdeleNormTraceForm
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0001
 
 open NumberField IsDedekindDomain TensorProduct
 

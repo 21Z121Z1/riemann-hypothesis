@@ -1,5 +1,5 @@
 import Mathlib
-import Development.ResolutionOfSingularities.EmbeddedResolution.AlgebraicPreliminaries.SpanSingletonProduct
+import Development.ResolutionOfSingularities.EmbeddedResolution.AlgebraicPreliminaries.Bundle0002
 namespace IsRegularLocalRing
 
 open IsLocalRing

@@ -1,5 +1,5 @@
 import Development.WeilBound.CoreStatements.SesquilinearFractions.DBlock
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsLocalBasisStatement
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0069
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor

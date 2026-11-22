@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.UnitaryGroupScheme
+import GroundTheory.AutomorphicForms.Bundle0010
 
 namespace GroundTheory.Automorphic
 

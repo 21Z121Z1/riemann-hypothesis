@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.SqLLaw
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.WeightThresholdDefs
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0086
 
 noncomputable section
 open NumberField Formalism.BasicNotions Classical

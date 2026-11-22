@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LFunctionPositiveConductorFourEight
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0002
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.RayPrincipalIdeals
 
 noncomputable section

@@ -1,5 +1,5 @@
-import Development.EtaleCohomology.DivisorCycles.CycleCount
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.PowEig
+import Development.EtaleCohomology.DivisorCycles.Bundle0001
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0053
 
 open Matrix Polynomial
 namespace LateralTheory.DivDb.CycleCount₂

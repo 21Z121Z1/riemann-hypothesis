@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.LogVandermondeBounds.EvenOddPowerQuotientEqualityCases
-import Formalism.FormalGroupWitt.ShiftSOneLetter
+import Formalism.LogVandermondeBounds.Bundle0001
+import Formalism.FormalGroupWitt.Bundle0001
 
 noncomputable section
 

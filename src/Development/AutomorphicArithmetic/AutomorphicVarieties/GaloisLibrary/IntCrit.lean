@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPadicAlgClRingEquivComplexCompEqOfCountabl
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MkLeContinuumOfDenseRange
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0024
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0014
 
 noncomputable section
 

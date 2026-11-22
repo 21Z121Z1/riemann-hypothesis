@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.GoodChi
-import Formalism.LocalToGlobal.Columns.ToHLat
-import Formalism.LocalRingCardinality.DataAmbForm
-import Formalism.LocalRingCardinality.DataKap
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0004
+import Formalism.LocalToGlobal.Columns.Bundle0010
+import Formalism.LocalRingCardinality.Bundle0002
+import Formalism.LocalRingCardinality.Bundle0004
 
 noncomputable section
 

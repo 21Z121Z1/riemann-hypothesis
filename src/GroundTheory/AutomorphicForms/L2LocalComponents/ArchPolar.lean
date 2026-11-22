@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableCartan
-import GroundTheory.AutomorphicForms.RealGroupsPolar
+import GroundTheory.AutomorphicForms.Bundle0007
 
 open NumberField NumberField.mixedEmbedding NumberField.InfinitePlace Matrix
 open scoped NumberField.AdeleRing

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.SecondCountableAndT2LocalField
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0006
 
 open MeasureTheory ValuativeRel Matrix Topology
 open scoped NNReal ENNReal Pointwise

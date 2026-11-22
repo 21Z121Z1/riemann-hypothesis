@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.HomGMonomial
+import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.Bundle0012
 
 noncomputable section
 

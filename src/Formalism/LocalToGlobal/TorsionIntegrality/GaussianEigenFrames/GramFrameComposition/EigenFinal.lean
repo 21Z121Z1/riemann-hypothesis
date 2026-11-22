@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.GaussianEigenFrames.StatementJ
+import Formalism.LocalToGlobal.TorsionIntegrality.GaussianEigenFrames.Bundle0002
 
 noncomputable section
 open scoped BigOperators

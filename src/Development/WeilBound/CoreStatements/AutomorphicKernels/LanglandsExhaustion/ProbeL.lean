@@ -1,4 +1,4 @@
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSegmentRepresentation
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0745
 import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsExhaustion.IrreducibleAdmissibleGL
 
 open GlobalTheory.PRep GlobalTheory.SplitWeil GlobalTheory.SmGL GlobalTheory.LocGL in

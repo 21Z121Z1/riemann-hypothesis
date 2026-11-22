@@ -3,7 +3,7 @@ import Formalism.LocalRingCardinality.Params
 import Formalism.LocalRingCardinality.DataHost
 import Formalism.LocalRingCardinality.DataRows
 import Formalism.GaloisCohomology.Statement
-import Formalism.CyclotomicNorms.StatementT
+import Formalism.CyclotomicNorms.Bundle0002
 import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 
 noncomputable section

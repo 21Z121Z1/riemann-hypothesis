@@ -1,5 +1,5 @@
 import Formalism.NormUnitaryBounds.Statement
-import Formalism.NormUnitaryBounds.DetPolynomialWeights.ShearCoefficients
+import Formalism.NormUnitaryBounds.DetPolynomialWeights.Bundle0002
 
 open MvPolynomial
 

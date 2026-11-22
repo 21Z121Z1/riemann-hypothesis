@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.FrameOfAdmissibleWord
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0029
 
 namespace Formalism.FourierDecayAlt.P.NormalFormRelations
 

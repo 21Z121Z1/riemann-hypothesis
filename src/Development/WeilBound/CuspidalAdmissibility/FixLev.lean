@@ -1,4 +1,4 @@
-import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.OfinProd
+import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.Bundle0003
 
 noncomputable section
 

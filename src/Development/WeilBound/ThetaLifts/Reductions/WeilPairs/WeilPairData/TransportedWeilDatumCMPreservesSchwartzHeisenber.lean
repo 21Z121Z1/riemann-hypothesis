@@ -1,1 +1,1 @@
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransportedWeilDatumCMPreservesSchwartzHeisenberStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1991

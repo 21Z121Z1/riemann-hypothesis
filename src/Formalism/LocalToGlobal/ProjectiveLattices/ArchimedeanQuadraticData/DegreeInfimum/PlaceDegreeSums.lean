@@ -1,5 +1,5 @@
 import Mathlib
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.GlobSt
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.Bundle0002
 
 noncomputable section
 

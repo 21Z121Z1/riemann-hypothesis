@@ -1,9 +1,9 @@
 import Mathlib
-import Formalism.GL3MeanSquares.PrimeCountAsymptoticInProgressions
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PrimePowerVonMangoldtSumBound
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SumVonMangoldtDivSqIocLe
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SumVonMangoldtDivSqTail
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SumDivSubLeTwoLogOfPartialSums
+import Formalism.GL3MeanSquares.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0069
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0087
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0088
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0071
 
 open Finset ArithmeticFunction
 

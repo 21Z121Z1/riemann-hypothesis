@@ -1,6 +1,6 @@
 import Development.WeilBound.RepresentationTheoryGL.JacquetShalikaBounds.AbsoluteRigidity.CauchyLoc
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsChiDetSplitCentre
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalEqTwistNormalised
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1351
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0562
 
 noncomputable section
 

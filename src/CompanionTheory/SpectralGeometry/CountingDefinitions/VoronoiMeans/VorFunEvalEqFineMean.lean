@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsEqAddOfRedVEq
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsStrictIff
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0673
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFinRepsProjectiveFinrankLeNumberField
 
 set_option autoImplicit false

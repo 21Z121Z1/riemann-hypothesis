@@ -1,7 +1,7 @@
 import Mathlib
-import Development.EtaleCohomology.EtaleSheaves.LeafInclPiecePf
-import Development.AutomorphicArithmetic.CommutativeAlgebra.LimitOfCofilteredAffineBaseChangeSquares
-import Development.AutomorphicArithmetic.CommutativeAlgebra.LimitCompactOfCofilteredCartesianAffineTransitio
+import Development.EtaleCohomology.EtaleSheaves.Bundle0082
+import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0001
+import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0002
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry Opposite LateralTheory.E.E4 LateralTheory.E.LeafDescendVCut LateralTheory.E.LeafDescendFPPf

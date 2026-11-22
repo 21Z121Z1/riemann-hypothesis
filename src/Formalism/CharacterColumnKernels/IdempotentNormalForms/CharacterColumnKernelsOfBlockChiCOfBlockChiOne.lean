@@ -1,5 +1,5 @@
 import Formalism.CharacterColumnKernels.CharacterColumnKernelEqualityForm
-import Formalism.CharacterColumnKernels.IdempotentNormalForms.GlobalColumn
+import Formalism.CharacterColumnKernels.IdempotentNormalForms.Bundle0007
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.BlockRhoFull
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.BlockChiOneFullOf
 

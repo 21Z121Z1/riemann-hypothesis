@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RpowNegLeNormOfComponent
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.EsymmInvMulEsymmCard
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RelIndexGlMapStandardLatticeOfIntegralStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CardQuotMatrixRangeDvrEqResiduePowCorankStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0039
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0040
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0049
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0045
 
 noncomputable section
 

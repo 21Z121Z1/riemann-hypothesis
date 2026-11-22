@@ -1,7 +1,7 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.GLinkQuot
-import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.H2GaloisQuotientEq
-import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.H2RightExactModL
-import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.LocEuler
+import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.Bundle0004
+import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.Bundle0001
+import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.Bundle0002
 
 open NumberField IsDedekindDomain Formalism.ConjugateSelfDual ReciprocityTheory.Gal Module UpperTheory.V UpperTheory.V.Fr UpperTheory.V.GC
 

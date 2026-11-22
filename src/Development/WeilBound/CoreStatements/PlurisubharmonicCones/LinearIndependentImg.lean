@@ -1,7 +1,7 @@
-import Development.WeilBound.CoreStatements.PlurisubharmonicCones.ExistsSmulMemEig
+import Development.WeilBound.CoreStatements.PlurisubharmonicCones.Bundle0004
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogIndexOfOrthogonalFamily
 import GroundTheory.HeightsAndTheta.Heights.ArithDegreeIdeal
-import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.PLocalChange
+import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.Bundle0008
 
 noncomputable section
 

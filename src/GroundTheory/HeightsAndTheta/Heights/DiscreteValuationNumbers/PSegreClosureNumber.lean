@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsSegreFlagClosure
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0037
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PFlagIndependenceAlgebra
 set_option maxSynthPendingDepth 1
 

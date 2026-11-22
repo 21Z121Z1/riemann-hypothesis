@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.CyclicStrongAtCusp
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasString
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0026
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1150
 import Formalism.SharpRestriction.LevelLetterCocycles.SumRepresentations
 
 noncomputable section

@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.LocalFields.DifferentGalois
+import GroundTheory.LocalFields.Bundle0010
 
 noncomputable section
 

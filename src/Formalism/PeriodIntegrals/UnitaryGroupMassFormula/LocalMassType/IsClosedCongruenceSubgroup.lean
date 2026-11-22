@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.UnitaryLocalMassIdentity
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.Bundle0002
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassOrder.ContinuousHRRight
 
 noncomputable section

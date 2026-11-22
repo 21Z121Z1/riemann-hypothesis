@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.IsLamFROfIsLamF
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0023
 
 noncomputable section
 

@@ -2,7 +2,7 @@ import Formalism.PeriodIntegrals.HermitianGenusExtension.SemilocalHermitianLatti
 import Formalism.PeriodIntegrals.HermitianGenusExtension.SemilocalHermitianLattices.IsHermSemilocalLocRing
 import Formalism.PeriodIntegrals.HermitianGenusExtension.SemilocalHermitianLattices.UnimodularOfMemGenusOrtho
 import Formalism.HermitianLattices.HermitianLatticesProofs.TraceReal
-import Formalism.HermitianLattices.HermitianLatticesProofs.IsomAct
+import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0001
 
 open NumberField Module
 

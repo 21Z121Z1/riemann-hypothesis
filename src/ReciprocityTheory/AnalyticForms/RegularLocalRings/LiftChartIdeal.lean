@@ -1,5 +1,5 @@
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjBCompl
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.EvalValChartCoord
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0013
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0011
 
 namespace ReciprocityTheory.AnForm.R
 

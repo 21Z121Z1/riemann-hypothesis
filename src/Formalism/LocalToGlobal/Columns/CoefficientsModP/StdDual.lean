@@ -1,6 +1,6 @@
 import Formalism.LocalToGlobal.Columns.CoefModB
 import Formalism.LocalToGlobal.Columns.CoefficientsModP.NablaIndependenceHolds
-import Formalism.LocalToGlobal.Columns.CoefficientsModP.NablaRoundFreeHolds
+import Formalism.LocalToGlobal.Columns.CoefficientsModP.Bundle0001
 import Formalism.GradedWeylDivisibility.StatementE
 
 open MvPolynomial NumberField IsDedekindDomain

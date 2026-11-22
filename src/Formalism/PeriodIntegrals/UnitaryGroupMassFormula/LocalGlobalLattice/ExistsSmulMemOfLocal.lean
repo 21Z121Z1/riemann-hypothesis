@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.LatLocGlob
+import Formalism.PeriodIntegrals.Bundle0006
 import Lemmata.GeneralBFactThirdBisAlt.Imports
 
 noncomputable section

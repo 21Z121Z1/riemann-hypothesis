@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.SelfDualBridge
+import Formalism.PeriodIntegrals.Bundle0019
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HaarFibreUniqueness.Development
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HaarFibreUniqueness.SdExAbs
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HaarFibreUniqueness.AdditiveCharacterNontrivial

@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.WaveOperatorLeL2Subspace
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0282
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.DecayPairEstimate
 
 open MeasureTheory Filter Topology

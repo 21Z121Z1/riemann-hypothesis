@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.ArithmeticGeometry.SchemeCohomology.WeilDivisor
+import GroundTheory.ArithmeticGeometry.SchemeCohomology.Bundle0001
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Arith.SchemeCoh

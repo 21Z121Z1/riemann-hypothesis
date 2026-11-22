@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.TopDegreeComparison
+import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0018
 
 noncomputable section
 

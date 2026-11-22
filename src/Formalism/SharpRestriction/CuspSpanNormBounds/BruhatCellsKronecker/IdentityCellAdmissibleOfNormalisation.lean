@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.IdentityCellAdmissibleOfLift
+import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.Bundle0008
 import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.IdLift
 
 noncomputable section

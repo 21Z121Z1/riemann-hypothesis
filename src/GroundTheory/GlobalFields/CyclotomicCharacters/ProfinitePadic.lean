@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.GlobalFields.CyclotomicCharacters.Character
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ContinuousToZModPow
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0008
 
 open scoped GroundTheory.LocalField.Abstract
 

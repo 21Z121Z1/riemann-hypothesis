@@ -1,8 +1,8 @@
-import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.IsInertiaInfiniteCyclotomic
+import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0008
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.KisinCrTrivial
-import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.RtConj
+import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0039
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.RtChart
-import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.UnivEx
+import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0010
 open Formalism.BasicNotions Formalism.BasicNotions.Loc ReciprocityTheory.Gal Module UpperTheory.V.Loc UpperTheory.V.U3 UpperTheory.V.Alg UpperTheory.V.Published IsLocalRing Polynomial
 
 section Series

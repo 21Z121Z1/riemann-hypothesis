@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.CharacterGerms.LatticeInclusionFormsInjective
-import Formalism.FrobeniusBaseCase.FrobeniusBaseCaseProofs.HasUniqueFixedPoint
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0006
+import Formalism.FrobeniusBaseCase.FrobeniusBaseCaseProofs.Bundle0001
 
 noncomputable section
 

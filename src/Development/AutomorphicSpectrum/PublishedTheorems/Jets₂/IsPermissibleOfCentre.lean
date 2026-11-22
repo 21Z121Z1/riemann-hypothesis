@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleCoefficientsAnalytic
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0009
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsAdmOnOfFiniteDimensional
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdmissibleUnitaryKFinite
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0288
 
 noncomputable section
 

@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.FunctionalLowerBoundOfConditionsNumeric
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FpTiedIffExistsLeafFP
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0601
 
 open Module NumberField IsDedekindDomain
 open scoped Matrix nonZeroDivisors

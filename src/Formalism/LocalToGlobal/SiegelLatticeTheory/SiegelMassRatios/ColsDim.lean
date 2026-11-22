@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.SatakeDualWeyl.Statement
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.RationalPointsLeHolds
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0003
 import Formalism.LocalToGlobal.SiegelLatticeTheory.SiegelMassRatios.ClassAct
 
 noncomputable section

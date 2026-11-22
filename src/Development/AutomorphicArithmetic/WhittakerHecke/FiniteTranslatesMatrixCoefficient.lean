@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ShiftMap
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0058
 
 theorem UpperTheory.finite_translates_matrix_coefficient :
     ∀ (G H : Type) [Group G] [TopologicalSpace G] [IsTopologicalGroup G] [Group H] [TopologicalSpace H] [IsTopologicalGroup H]

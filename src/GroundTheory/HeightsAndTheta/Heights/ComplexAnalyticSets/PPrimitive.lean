@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StPrimitiveDiscriminant
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StGenericPrimitive
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StDiscrAdjoin
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StFunctionFieldDegree
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0025
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0005
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0021
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0033
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.ComplexSets

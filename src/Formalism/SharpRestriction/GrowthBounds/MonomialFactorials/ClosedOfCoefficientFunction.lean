@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.SymmetryFinitenessWindowLevelDimOnAdmissible
-import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.RestDecompProved
+import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0011
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.GTScale
+import Formalism.PeriodIntegrals.Bundle0028
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Wlocal
 
 noncomputable section

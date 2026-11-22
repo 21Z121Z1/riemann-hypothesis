@@ -2,7 +2,7 @@ import Mathlib
 import GroundTheory.GlobalFields.TateThesis.EulerFactorsFourierFinite
 import GroundTheory.GlobalFields.TateThesis.AdelicCharLocal
 import GroundTheory.GlobalFields.KummerTheory.LocalIndexAtPlace
-import GroundTheory.GlobalFields.Artin.ConductorOneDim
+import GroundTheory.GlobalFields.Artin.Bundle0005
 import GroundTheory.AutomorphicForms.GL2.FiniteAdeleDecomp
 import GroundTheory.LocalFields.LocalZeta
 

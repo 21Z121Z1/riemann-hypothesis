@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.CuspSpanNormBounds.MassRatioBound
-import Formalism.GL3MeanSquares.GenusMeanAsymptotics.UnimodularClassRepresentatives.EulerFacMulConjInvSplit
+import Formalism.GL3MeanSquares.GenusMeanAsymptotics.UnimodularClassRepresentatives.Bundle0009
 
 noncomputable section
 

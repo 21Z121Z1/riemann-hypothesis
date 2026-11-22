@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExponentAndTwistData
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LatticeInIsotypicSupStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BaseChangeInfLatticeEqSubspaceStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TwistedLatticeFinitelyGeneratedSpanning
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0386
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0021
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0361
 
 noncomputable section
 

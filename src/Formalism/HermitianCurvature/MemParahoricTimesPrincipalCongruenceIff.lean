@@ -1,5 +1,5 @@
 import Formalism.DoubleCosetMeasures.Statement
-import Formalism.HermitianCurvature.StatementK
+import Formalism.HermitianCurvature.Bundle0002
 
 namespace Formalism.FourierDecayAlt.S3
 

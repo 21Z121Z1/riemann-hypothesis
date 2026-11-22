@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.SeparableMatrixStability.MapEta
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.SeparableMatrixStability.PlProps
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.ProBurnside
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0036
 
 open IsLocalRing Matrix Filter UpperTheory.V.Alg UpperTheory.V.W UpperTheory.V.AlgebraTools UpperTheory.V.Pa
 

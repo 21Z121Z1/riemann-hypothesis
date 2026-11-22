@@ -1,7 +1,7 @@
 import CompanionTheory.ThickeningEstimates.LieGroupReduction.SiegelCore
 import CompanionTheory.ThickeningEstimates.LieGroupReduction.SiegelAbs
 import CompanionTheory.ThickeningEstimates.LieGroupReduction.SiegelMod
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AddHaarLeftRightMulAdelicMatricesModule
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0263
 import CompanionTheory.ThickeningEstimates.SiegelDomainEstimates.LeHeightOfIsTorusElt
 
 set_option linter.unusedSectionVars false

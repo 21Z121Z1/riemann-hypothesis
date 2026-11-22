@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.LocalRingCardinality.Params
 import Formalism.LocalRingCardinality.DataCoeff
 import Formalism.LocalRingCardinality.SpanPowerMembership.FmZeroHLatEmpty
-import Formalism.LocalToGlobal.UnitaryNorms.RealCyclotomicTwoPower
+import Formalism.LocalToGlobal.UnitaryNorms.Bundle0002
 import Formalism.LocalToGlobal.UnitaryNorms.AdjoinCycZeta
 import Formalism.LocalToGlobal.Divisibility.ConjugationAtDistinguishedPlace
 import Formalism.LocalToGlobal.Divisibility.Tuples

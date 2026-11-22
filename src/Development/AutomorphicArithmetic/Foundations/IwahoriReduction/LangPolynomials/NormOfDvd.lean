@@ -1,6 +1,6 @@
-import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.ResidueFieldTeichmullerLiftExists
-import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.FrobEx
-import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.FixAbs
+import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.Bundle0007
+import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.Bundle0002
+import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.Bundle0001
 
 noncomputable section
 

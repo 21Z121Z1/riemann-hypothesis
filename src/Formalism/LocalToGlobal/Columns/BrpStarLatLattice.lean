@@ -1,8 +1,8 @@
 import Mathlib
-import Formalism.LocalToGlobal.Columns.SummandSlopeOfThreeLemmas
+import Formalism.LocalToGlobal.Columns.Bundle0019
 import Formalism.LocalToGlobal.Columns.BzdConjTTranspose
 import Formalism.LocalToGlobal.Columns.SliceIntegralDeltaNeBot
-import Formalism.LocalToGlobal.Columns.CoefficientsModP
+import Formalism.LocalToGlobal.Columns.Bundle0014
 import Formalism.LocalToGlobal.Columns.DecoFin
 import Formalism.MonomialMeanResidues.ZerosPerVariable
 import Formalism.LocalToGlobal.GlobalTheory.HLatOpsP

@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.IndefiniteReal.BridgeCol
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0009
 import Formalism.LocalToGlobal.Columns.RowFormsAdelic
 
 open NumberField

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsSubquotientDetRepParInd
 import Development.AbelianVarietyTheory.Definitions.Divisors.T2SpaceGeneralLinearGroup
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.TwistedKernelFixed
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0067
 
 noncomputable section
 

@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.JDomBoundOfNnMaj
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0036
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.BetaSesquilinearity
 
 open Matrix MeasureTheory Filter Topology

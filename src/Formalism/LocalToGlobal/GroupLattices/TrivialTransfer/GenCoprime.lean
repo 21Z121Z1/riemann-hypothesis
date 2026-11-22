@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.GroupLattices.TrivialTransfer.OneAddPowOfSq
+import Formalism.LocalToGlobal.GroupLattices.TrivialTransfer.Bundle0001
 import Formalism.LocalToGlobal.GroupLattices.TrivialTransfer.FiniteStabAtOfLocal
 
 noncomputable section

@@ -1,4 +1,4 @@
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.NeZeroOfSpanEqMaximalIdeal
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0017
 
 namespace ReciprocityTheory.AnForm.R
 

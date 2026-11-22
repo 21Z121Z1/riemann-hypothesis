@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PhiCMinSt
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.TransferenceMinima
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0001
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0020
 
 set_option autoImplicit false
 

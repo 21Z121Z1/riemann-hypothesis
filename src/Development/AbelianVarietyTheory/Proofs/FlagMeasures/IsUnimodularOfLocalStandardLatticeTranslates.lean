@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.NGData
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.TermLoc
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LocClosed
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianLatticeLocalGlobalPrinciple
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0013
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0291
 
 noncomputable section
 

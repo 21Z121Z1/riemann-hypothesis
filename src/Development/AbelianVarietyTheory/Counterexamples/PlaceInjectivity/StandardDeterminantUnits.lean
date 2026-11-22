@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.StandardDeterminantUnit
+import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0009
 
 open NumberField IsDedekindDomain
 

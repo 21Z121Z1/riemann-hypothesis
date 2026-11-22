@@ -1,9 +1,6 @@
-import Formalism.DirichletDensity.DirichletDensityProofs.QuadDiscr
-import Formalism.DirichletDensity.DirichletDensityProofs.MQDiscr
-import Formalism.DirichletDensity.DirichletDensityProofs.APLogDensity
+import Formalism.DirichletDensity.DirichletDensityProofs.Bundle0001
+import Formalism.DirichletDensity.DirichletDensityProofs.Bundle0002
 import Formalism.DirichletDensity.DirichletDensityProofs.LogToDir
-import Formalism.DirichletDensity.DirichletDensityProofs.HostDensityArith
-import Formalism.DirichletDensity.DirichletDensityProofs.HostDensity
 
 namespace Formalism.HF.Final
 

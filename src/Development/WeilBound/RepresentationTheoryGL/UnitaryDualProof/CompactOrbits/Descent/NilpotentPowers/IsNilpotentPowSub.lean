@@ -1,5 +1,5 @@
 import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.CompactOrbits.Descent.SliceVan
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsRestSide
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0033
 
 noncomputable section
 

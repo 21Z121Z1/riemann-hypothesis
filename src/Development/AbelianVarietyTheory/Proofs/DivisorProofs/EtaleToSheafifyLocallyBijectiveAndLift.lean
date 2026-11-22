@@ -1,5 +1,5 @@
-import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
-import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0009
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0008
 open CategoryTheory Limits AlgebraicGeometry Opposite CochainComplex CochainComplex.HomComplex GlobalTheory.EtC
 
 namespace GlobalTheory.EtC.ShfLoc

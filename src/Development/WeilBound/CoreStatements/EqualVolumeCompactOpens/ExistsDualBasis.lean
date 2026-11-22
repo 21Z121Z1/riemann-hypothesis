@@ -1,5 +1,5 @@
 import GroundTheory.GlobalFields.Adele.Compact
-import Development.WeilBound.CoreStatements.EqualVolumeCompactOpens.DiagMulVecTmul
+import Development.WeilBound.CoreStatements.EqualVolumeCompactOpens.Bundle0002
 
 noncomputable section
 

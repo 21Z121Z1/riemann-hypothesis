@@ -5,8 +5,8 @@ import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeightDualExistence.Inc
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeightDualExistence.AlgDualCore
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GelfandTsetlinBranching.ExtremalFactsProofA
 import Formalism.LocalToGlobal.Columns.CoefModB
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.AlgWtDualUniq
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.AlgWtHwUnq
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0021
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0024
 
 open NumberField IsDedekindDomain ReciprocityTheory.Aut Formalism.AUTREP MvPolynomial
 

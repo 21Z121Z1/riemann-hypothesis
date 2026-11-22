@@ -1,5 +1,5 @@
 import Formalism.FrobeniusBaseCase.FrobeniusBaseCaseProofs.CoeffFrobOfNotDvd
-import Formalism.FrobeniusBaseCase.FrobeniusBaseCaseProofs.HasUniqueFixedPoint
+import Formalism.FrobeniusBaseCase.FrobeniusBaseCaseProofs.Bundle0001
 
 open MvPowerSeries
 

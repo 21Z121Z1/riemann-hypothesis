@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.ResidueCharacters.TwistedPlaces
-import Formalism.SharpRestriction.GlobalTheoremInputs
+import Formalism.SharpRestriction.Bundle0002
 
 noncomputable section
 

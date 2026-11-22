@@ -1,7 +1,7 @@
-import Development.WeilBound.CoreStatements.MultihomogeneousSquares.SingSt
+import Development.WeilBound.CoreStatements.MultihomogeneousSquares.Bundle0001
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptFiniteExtension
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GramMatrixTwoFrames
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MemAbLocusIff
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0254
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0121
 
 set_option backward.isDefEq.respectTransparency false
 

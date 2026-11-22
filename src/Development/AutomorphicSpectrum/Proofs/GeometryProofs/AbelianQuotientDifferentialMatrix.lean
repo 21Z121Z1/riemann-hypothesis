@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SqMap
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0096
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.LinEig
 
 noncomputable section

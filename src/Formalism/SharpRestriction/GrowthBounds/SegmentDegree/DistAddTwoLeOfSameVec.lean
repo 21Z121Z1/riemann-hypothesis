@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.FourHundredSixteenLeA
-import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.TypicalPathOrdersSmall
+import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0008
 
 noncomputable section
 

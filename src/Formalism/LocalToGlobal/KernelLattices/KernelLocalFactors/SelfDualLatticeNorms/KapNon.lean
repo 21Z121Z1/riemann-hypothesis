@@ -3,8 +3,8 @@ import Formalism.LocalToGlobal.KernelLattices.KerStd
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.BaseEx
 import Formalism.LocalToGlobal.GlobalTheory.GL3.NormNatCoprime
 import Formalism.LocalToGlobal.GlobalTheory.GL3.PStdOK
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitDeterminantRoot.NsmulRelIdxMem
-import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.AnalyticIdentityTheorems.QuasiPeriodConstUniqueOf
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitDeterminantRoot.Bundle0001
+import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.AnalyticIdentityTheorems.Bundle0004
 
 noncomputable section
 open scoped BigOperators ComplexConjugate

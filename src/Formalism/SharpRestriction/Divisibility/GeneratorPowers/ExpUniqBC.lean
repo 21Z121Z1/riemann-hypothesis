@@ -1,6 +1,6 @@
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpUniqTan
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpUniqSt
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.UniversalCharts.UnivChartLoc
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0008
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0004
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.UniversalCharts.Bundle0002
 
 set_option autoImplicit false
 

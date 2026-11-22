@@ -1,7 +1,7 @@
 import PositivityTheory.AutomorphicForms.PublishedInputs.CyclicBaseChange.SConjSpaceC
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ContinuousMapGL
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAdelicGLHomeomorphInfiniteFinite
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CapelliOperatorAlgebraStableUnderComplexConj
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0276
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1320
 
 noncomputable section
 

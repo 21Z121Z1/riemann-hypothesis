@@ -1,10 +1,10 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.Intersections.StResExists
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0044
 import GroundTheory.HeightsAndTheta.Heights.Intersections.JacMinorC
-import GroundTheory.HeightsAndTheta.Heights.HeightComparison.IsMultiHomogIdealIff
+import GroundTheory.HeightsAndTheta.Heights.HeightComparison.Bundle0003
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.SchemeRes
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.ConeChart
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjLogResCOfCR
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0015
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0013
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.IfaceInh
 set_option maxSynthPendingDepth 1
 

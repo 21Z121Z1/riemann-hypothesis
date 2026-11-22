@@ -1,9 +1,9 @@
 import Formalism.LocalToGlobal.Divisibility.RecBridgeSel
 import Formalism.LocalToGlobal.HilbertRowConditions.ColumnsFunctionAtSubspaces
 import Formalism.LocalToGlobal.IndefiniteReal.TrISepWith
-import Formalism.LocalToGlobal.IndefiniteReal.RealTP
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0035
 import Formalism.LocalToGlobal.GroupLattices.BrTied3Hold
-import Formalism.LocalToGlobal.Divisibility.ConstantGeTwentyEightAlt
+import Formalism.LocalToGlobal.Divisibility.Bundle0004
 
 noncomputable section
 

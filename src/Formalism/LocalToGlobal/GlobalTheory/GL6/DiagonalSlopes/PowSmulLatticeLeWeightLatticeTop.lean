@@ -1,8 +1,8 @@
-import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLcInt
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0007
 import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.CharacterFiniteLevelZeroOfForms
-import Formalism.LocalToGlobal.GlobalTheory.GL6.RamifiedLatticePropsOfModel
-import Formalism.LocalToGlobal.GlobalTheory.GL6.SecondBranchInclLengthOfLengths
-import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLocGlob
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0005
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0010
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0008
 
 noncomputable section
 

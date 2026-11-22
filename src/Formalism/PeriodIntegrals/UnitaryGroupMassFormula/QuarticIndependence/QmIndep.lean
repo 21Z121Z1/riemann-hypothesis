@@ -1,6 +1,5 @@
-import Formalism.PeriodIntegrals.RTTIndependence
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.QuarticIndependence.IndepC
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.QuarticIndependence.IndepPoly
+import Formalism.PeriodIntegrals.Bundle0021
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.QuarticIndependence.Bundle0001
 
 namespace PI.QmIndepW
 

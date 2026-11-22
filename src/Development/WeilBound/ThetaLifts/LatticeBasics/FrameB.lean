@@ -1,5 +1,5 @@
 import Mathlib
-import Development.WeilBound.ThetaLifts.LatticeBasics.FrameA
+import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0020
 import Development.WeilBound.ThetaLifts.LatticeBasics.HgtFin
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardAddCharSymplecticLocalLatticeEqOne
 

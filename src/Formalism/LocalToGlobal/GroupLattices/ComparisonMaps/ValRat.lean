@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.MapNatActR
-import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.CastGLApply
+import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.Bundle0001
 
 noncomputable section
 

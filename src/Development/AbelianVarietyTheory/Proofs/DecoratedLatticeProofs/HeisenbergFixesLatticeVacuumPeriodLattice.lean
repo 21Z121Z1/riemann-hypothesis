@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SplitPart
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0030
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntSubIsLattice
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinTensAlgebraMap
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0919
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links Formalism.L2.Forms Formalism.L2.Ker Formalism.UG
 open NumberField IsDedekindDomain Matrix MeasureTheory GlobalTheory.Mem GlobalTheory.Mem.Col2 GlobalTheory.MixPer GlobalTheory.Core.Rk GlobalTheory.AdForm
 open scoped TensorProduct Classical

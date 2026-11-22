@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsAuxiliaryVectorWittDec
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FlagUnipotentBesselCharacterLaws
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsWeilDatumAnisotropicKernelPair
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BesPerHaarScale
+import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0006
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0186
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0649
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0654
 
 noncomputable section
 

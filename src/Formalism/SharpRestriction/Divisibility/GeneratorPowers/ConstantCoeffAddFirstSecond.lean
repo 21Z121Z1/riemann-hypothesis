@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ConstantCoeffAddSecondThird
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.MulGenScaleRight
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0015
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.JetSubstPSTrunc
 
 set_option autoImplicit false

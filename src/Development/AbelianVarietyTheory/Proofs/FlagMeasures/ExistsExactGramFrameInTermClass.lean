@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.RowMinor
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegralOfUnimodular
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LinearFormsBoundedRepresentatives
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EncardBiUnionLe
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0011
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0264
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0352
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0189
 
 noncomputable section
 

@@ -1,11 +1,11 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsTjCorrDiagModel
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsEtLevOver
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0640
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EpsZeroPtEpsScalePt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardTorsionBySetPowOfDivisibleNumberField
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowEqOfIsAlgClosed
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RemainderTermSummable
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeCardKernelEqNormPowStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0007
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3645
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3661
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3675
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.UPel.HT GlobalTheory.UPel.HT.Hecke GlobalTheory.UPel.HT.ES
 

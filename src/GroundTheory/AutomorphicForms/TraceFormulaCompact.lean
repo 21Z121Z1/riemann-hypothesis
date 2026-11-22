@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.DiscreteDecomposition
-import GroundTheory.AutomorphicForms.TraceFormulaSpectral
+import GroundTheory.AutomorphicForms.Bundle0014
+import GroundTheory.AutomorphicForms.Bundle0013
 import GroundTheory.AutomorphicForms.TraceFormulaMultiplicity
 import GroundTheory.AutomorphicForms.TraceFormulaGeometric
 import GroundTheory.AutomorphicForms.TraceFormulaCentralizer

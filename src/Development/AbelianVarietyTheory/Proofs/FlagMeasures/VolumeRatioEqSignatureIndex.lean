@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.HidaSetting
-import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GapAtLeast
+import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.Bundle0001
 import Formalism.FrobeniusOrbits.RealSubfieldLeCompositum
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.VolRatioRows
 

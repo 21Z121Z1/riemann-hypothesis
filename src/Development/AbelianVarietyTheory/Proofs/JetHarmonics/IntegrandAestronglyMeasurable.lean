@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.NormDiagonalEntryDilationGeneratorLeOne
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.DilationScalesHeisenbergMeasure
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HermitianFormFactor
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.SettingExistence
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0059
 
 open Matrix MeasureTheory Filter Topology
 open scoped ComplexConjugate ENNReal

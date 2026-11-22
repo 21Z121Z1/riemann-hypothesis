@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.LocalToGlobal.Divisibility.LiftLatInst
 import Formalism.LocalToGlobal.Divisibility.LiftLatLemmas
-import Formalism.LocalToGlobal.Columns.RowFormsRat
-import Formalism.LocalToGlobal.Columns.WmLemmas
-import Formalism.LocalToGlobal.Columns.AnisotropicOfPositiveDefinite
+import Formalism.LocalToGlobal.Columns.Bundle0018
+import Formalism.LocalToGlobal.Columns.Bundle0010
+import Formalism.LocalToGlobal.Columns.Bundle0020
 import Formalism.LocalToGlobal.Divisibility.DivisionHeightBoundStatement
 
 open Module NumberField IsDedekindDomain

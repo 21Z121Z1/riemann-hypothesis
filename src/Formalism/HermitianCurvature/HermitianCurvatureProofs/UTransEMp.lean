@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.LowerCoordinateProd
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0143
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.MulVecBvecApply
 
 open Matrix MeasureTheory Formalism.REAL Formalism.QuantumDeterminants Formalism.FourierDecayAlt Formalism.FourierDecayAlt.U

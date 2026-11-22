@@ -1,6 +1,6 @@
-import Development.WeilBound.CoreStatements.SesquilinearFractions.GLieIntA
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelExistsUniqueSemilinearStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelIsBaseChangeStatement
+import Development.WeilBound.CoreStatements.SesquilinearFractions.Bundle0003
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0043
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0160
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
 open GlobalTheory GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Fl

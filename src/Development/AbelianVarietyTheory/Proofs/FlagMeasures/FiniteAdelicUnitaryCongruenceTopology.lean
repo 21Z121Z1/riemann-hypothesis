@@ -2,8 +2,8 @@ import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.GlobAut
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AdelstabL
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IntegralFiniteAdeleCompleteSeparated
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsCompactAdeleRingModNumberField
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0008
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0040
 
 open MeasureTheory Formalism.MainNotions.S NumberField
 open scoped InnerProductSpace

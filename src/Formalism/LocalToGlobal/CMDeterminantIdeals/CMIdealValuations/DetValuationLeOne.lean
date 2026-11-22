@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.CMDeterminantIdeals.CmNumbersLink
+import Formalism.LocalToGlobal.CMDeterminantIdeals.Bundle0002
 import Formalism.LocalToGlobal.CMDeterminantIdeals.HadamardLoc0
 
 noncomputable section

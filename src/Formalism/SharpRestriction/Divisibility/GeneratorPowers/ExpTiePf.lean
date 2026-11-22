@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpTieGerm
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CIndBCNab
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0016
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBIdJet
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.CalcExp
 

@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.GlobalTheory.GL6.AdelicFunctionRightTranslateDiamond
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0002
 
 noncomputable section
 

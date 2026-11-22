@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.GL3MeanSquares.IntegralMultipleNormLowerBound
-import Formalism.GL3MeanSquares.HookFormulaTorsion.SeparatedSetPackingBound
+import Formalism.GL3MeanSquares.HookFormulaTorsion.Bundle0002
 
 namespace Formalism.HermitianLattices.ExplicitEstimates
 

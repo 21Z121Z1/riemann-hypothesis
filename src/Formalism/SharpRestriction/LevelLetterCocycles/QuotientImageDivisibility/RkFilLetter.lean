@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.CrystallineLiftingInputs
-import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.RkDcrisLSumZero
+import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.Bundle0004
 
 set_option linter.unusedVariables false
 

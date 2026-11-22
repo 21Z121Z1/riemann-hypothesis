@@ -1,5 +1,5 @@
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjDehom
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.FromSpecResidueFieldAppTopIso
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0001
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.StalkLoc
 
 namespace ReciprocityTheory.AnForm.R

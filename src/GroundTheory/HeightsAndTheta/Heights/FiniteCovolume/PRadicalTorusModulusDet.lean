@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PRadicalTorusModulusCoords
+import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0026
 
 namespace GroundTheory.Heights₂.Heights.FiniteCovolume
 

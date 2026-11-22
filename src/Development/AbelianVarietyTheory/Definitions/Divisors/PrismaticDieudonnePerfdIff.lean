@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.PrismaticDieudonnePerfd
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.InjectiveOfSmulMemRange
-import Development.AbelianVarietyTheory.Definitions.Divisors.PadicActionConstInjective
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0010
 
 set_option autoImplicit false
 

@@ -1,9 +1,9 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsGeneratedEffectiveSection
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.OfSteps
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PVocabDivCycle
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.DivCycleEqZeroOfFormNotMem
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Cartier
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0072
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0044
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0016
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0017
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0002
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

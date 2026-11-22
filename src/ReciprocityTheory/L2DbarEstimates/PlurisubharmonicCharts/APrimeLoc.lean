@@ -1,5 +1,5 @@
-import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.APrimeA
-import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.APrimeB
+import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.Bundle0001
+import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.Bundle0005
 
 namespace ReciprocityTheory.L2DbarEstimates.Y
 

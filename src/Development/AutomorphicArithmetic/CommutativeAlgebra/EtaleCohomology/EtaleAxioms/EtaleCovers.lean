@@ -1,5 +1,5 @@
 import Mathlib
-import Development.EtaleCohomology.EtaleSheaves.CoverIntegralClosure
+import Development.EtaleCohomology.EtaleSheaves.Bundle0007
 
 namespace UpperTheory.Et.EtaleCovers
 

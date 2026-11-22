@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ScalarCommutation.AuxiliaryPrimeFunction
 import GroundTheory.AutomorphicForms.AffineBruhat
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IwahoriSubgroupDefinitionsAgree
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0401
 open Formalism.UG GroundTheory.Automorphic GroundTheory.Automorphic.GLnLocal Matrix
 
 namespace UpperTheory.affineWeylIwahoriData

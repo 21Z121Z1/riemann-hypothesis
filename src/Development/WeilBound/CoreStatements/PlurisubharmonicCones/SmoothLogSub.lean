@@ -1,8 +1,8 @@
-import Development.WeilBound.CoreStatements.PlurisubharmonicCones.LevelFree
-import Development.WeilBound.CoreStatements.PlurisubharmonicCones.LeviShift
+import Development.WeilBound.CoreStatements.PlurisubharmonicCones.Bundle0014
+import Development.WeilBound.CoreStatements.PlurisubharmonicCones.Bundle0009
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.OneSlot
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.ArithIntersectionMultilinearAllStatement
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.HermitianCombinationSmoothConjStatement
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0018
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0011
 
 open Filter Topology ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.AnForm.M ReciprocityTheory.AnForm.P GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Cmp
 

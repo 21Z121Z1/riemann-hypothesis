@@ -1,5 +1,5 @@
-import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.SingularNullSets.LApproxIdA
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ArchimedeanHaarScalingNormStatement
+import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.SingularNullSets.Bundle0004
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0073
 
 noncomputable section
 

@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.SimpleTwistedTraceFormulaStable
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramDetChangeOfBasesStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceConjugationPropertiesCmFieldStatement
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0049
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0156
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1388
 
 noncomputable section
 

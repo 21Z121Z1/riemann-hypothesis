@@ -1,8 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.RegularAlteration
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0025
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DemaillyRegularisation
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.MatrixLemma
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbsoluteSiegel
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0010
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.PrismaticDieudonnePerfd
 
 namespace GlobalTheory.CovHt

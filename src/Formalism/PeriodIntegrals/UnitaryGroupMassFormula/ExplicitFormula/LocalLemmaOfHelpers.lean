@@ -1,11 +1,9 @@
 import Mathlib
-import Formalism.PeriodIntegrals.DiscIn
-import Formalism.PeriodIntegrals.ZerosWindowIn
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExplicitFormula.Assemble
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExplicitFormula.PerronGlue
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExplicitFormula.LocalProofs
+import Formalism.PeriodIntegrals.Bundle0002
+import Formalism.PeriodIntegrals.Bundle0013
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExplicitFormula.Bundle0008
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExplicitFormula.Bundle0006
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExplicitFormula.LogWindowLe
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExplicitFormula.LGrowthFinal
 
 noncomputable section
 

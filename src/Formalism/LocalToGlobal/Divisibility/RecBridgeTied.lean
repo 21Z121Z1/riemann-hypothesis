@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.Divisibility.LinkDIVL2R3Rec
+import Formalism.LocalToGlobal.Divisibility.Bundle0003
 import Formalism.LocalToGlobal.Divisibility.RecBridge
 import Formalism.LocalToGlobal.HilbertRowConditions.ColumnsFunctionAtSubspaces
 

@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.InertKernelTheory.DefsInt
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0007
 import Formalism.LocalToGlobal.GlobalTheory.GL3.PIopIso
 import Formalism.LocalToGlobal.GlobalTheory.GL3.PHfGen
 import Formalism.LocalToGlobal.GlobalTheory.GL3.PThIndep

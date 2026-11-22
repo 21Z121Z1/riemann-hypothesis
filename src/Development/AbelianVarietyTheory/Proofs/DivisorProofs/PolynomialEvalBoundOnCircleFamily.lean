@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsRootMapMinpolyIffExistsRingHomExtensionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0228
 
 namespace GlobalTheory
 

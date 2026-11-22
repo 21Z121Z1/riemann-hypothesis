@@ -1,6 +1,6 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutLimE
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0295
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ThmBpAtEqOfShiftR
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutNFHatProdKBStmt
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0313
 
 namespace CompanionTheory.WaveGrid
 

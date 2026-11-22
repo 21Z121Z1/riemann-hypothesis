@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FullToGlIsSelfAdjoint
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsMulStarEqOfNormOneUnramifiedQuadraticStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjTransposeVecMulVecSelf
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0059
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0099
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0050
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology
 
 noncomputable section

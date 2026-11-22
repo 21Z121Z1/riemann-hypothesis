@@ -1,6 +1,6 @@
 import Formalism.GradedWeylDivisibility.FinalD
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LClosedeqLemmas
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LRowdivLemmas
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0010
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0002
 
 open MvPolynomial
 

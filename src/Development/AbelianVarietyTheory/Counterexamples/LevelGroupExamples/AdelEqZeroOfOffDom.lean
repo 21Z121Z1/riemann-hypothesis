@@ -1,8 +1,8 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.CoreExists
-import Formalism.LocalToGlobal.ProjectiveLattices.ReadQuot
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0031
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0038
 import Development.AbelianVarietyTheory.Counterexamples.UpperHalfSurvey.MemSSgtOfZeroOnDom
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ReadingLinearIndependentAndInjective
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0096
 
 noncomputable section
 namespace GlobalTheory.OneEmbeddingProbe

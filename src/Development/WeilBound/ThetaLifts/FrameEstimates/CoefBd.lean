@@ -1,8 +1,8 @@
 import Mathlib
 import Development.WeilBound.ThetaLifts.FrameEstimates.ContinuousMixedSymm
-import Development.WeilBound.ThetaLifts.FrameEstimates.FinBound
-import Development.WeilBound.ThetaLifts.FrameEstimates.LatCpt
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsOpenNsmulAdelicCompletionOfVectorSet
+import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0002
+import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0008
 
 open NumberField IsDedekindDomain MeasureTheory Matrix Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.WeilM GlobalTheory.AdelicU Filter Topology
 open GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels GlobalTheory.ThK NumberField.mixedEmbedding

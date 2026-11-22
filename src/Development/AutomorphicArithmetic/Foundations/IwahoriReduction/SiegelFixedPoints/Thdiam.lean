@@ -1,9 +1,9 @@
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsZetaTW
-import Development.AbelianVarietyTheory.Definitions.Foundations.EeProd
-import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsEqSubOfMemCob
-import Development.AbelianVarietyTheory.Definitions.Foundations.IsLamOfLSmulIff
-import Development.AbelianVarietyTheory.Definitions.Foundations.PieceEqPieceT
-import Development.AbelianVarietyTheory.Definitions.Foundations.AdmissibleHodgeTateZetaClassParams
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0009
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0018
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0021
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0004
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0023
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.Thcocd
 
 open scoped MatrixGroups Matrix

@@ -1,10 +1,10 @@
 import Formalism.LocalToGlobal.GlobalTheory.SuppSat
-import Formalism.SharpRestriction.AdmissibleParameterJoins.GandSaa
-import Formalism.SharpRestriction.AdmissibleParameterJoins.GandSk
+import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0005
+import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0003
 import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.GenericFramesLetters
 import Formalism.SharpRestriction.GrowthBounds.SmallOrderPrimes
 import Formalism.LocalRingCardinality.HostCls
-import Development.AutomorphicArithmetic.OrbitLabellings.EvenAddOrderOfHPOfPowLe
+import Development.AutomorphicArithmetic.OrbitLabellings.Bundle0002
 
 noncomputable section
 

@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTranspOfMovesAt
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2139
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTransporterMovesFrameReadsInverse
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniqueUpToTargetGroup
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsHolToOfOpenImmersion
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FrameActionUpperTriangularBlockExists
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0571
 
 set_option autoImplicit false
 

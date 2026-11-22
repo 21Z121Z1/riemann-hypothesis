@@ -1,5 +1,5 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreGTRRotCut
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreGTCHolPhaseRel
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0163
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0150
 
 open Formalism.REAL Formalism.QuantumDeterminants Formalism.FourierDecayAlt
 

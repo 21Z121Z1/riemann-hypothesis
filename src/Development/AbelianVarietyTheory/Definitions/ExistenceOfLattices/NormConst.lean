@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.ProjectiveLattices.UnFree
-import Formalism.LocalToGlobal.ProjectiveLattices.UnifDom
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0006
 
 noncomputable section
 

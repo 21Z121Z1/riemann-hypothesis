@@ -1,4 +1,4 @@
-import Development.WeilBound.ThetaLifts.LocalTheory.ToralCohomology.ParZero
+import Development.WeilBound.ThetaLifts.LocalTheory.ToralCohomology.Bundle0001
 import Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.CoreLM
 
 noncomputable section

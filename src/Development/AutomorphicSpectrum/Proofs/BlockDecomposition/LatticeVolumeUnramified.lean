@@ -1,7 +1,7 @@
 import Mathlib
-import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.UnramifiedWhittaker.CProps
+import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.UnramifiedWhittaker.Bundle0002
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdicIntegersCompact.IsCompactAdicCompletionIntegers
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SelfDualVol
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0694
 
 noncomputable section
 

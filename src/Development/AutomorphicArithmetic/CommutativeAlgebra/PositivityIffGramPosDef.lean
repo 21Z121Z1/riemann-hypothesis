@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.ComplexUniformizationSigOne
 import Development.AutomorphicArithmetic.RealSpanData.RealData
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BijectiveRealTensorToProdMatrixAlgebrasInfPlaces
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SimilitudePairGramInvCongruent
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.PzIffPos
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0982
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1012
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0055
 
 set_option autoImplicit false
 

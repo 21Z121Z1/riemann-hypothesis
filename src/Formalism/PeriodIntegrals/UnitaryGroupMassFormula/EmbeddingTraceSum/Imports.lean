@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.EmbTraceSum
+import Formalism.PeriodIntegrals.Bundle0002
 
 namespace PI.EmbTraceSumWork
 

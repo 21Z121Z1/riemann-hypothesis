@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.ProfiniteCohomology.CupProducts.Functoriality
-import GroundTheory.ProfiniteCohomology.ColimitDefs
-import GroundTheory.TateCohomology.CupProduct
+import GroundTheory.ProfiniteCohomology.Bundle0004
+import GroundTheory.TateCohomology.Bundle0003
 set_option maxSynthPendingDepth 1
 
 noncomputable section

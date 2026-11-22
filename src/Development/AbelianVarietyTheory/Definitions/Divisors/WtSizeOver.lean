@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.GenTyL
-import Development.AbelianVarietyTheory.Definitions.Divisors.OverPair
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0055
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0053
 
 noncomputable section
 

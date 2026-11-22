@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsPowerBlockPointNorm
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSectionPointValue
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsLocalRep
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0083
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0061
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0025
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

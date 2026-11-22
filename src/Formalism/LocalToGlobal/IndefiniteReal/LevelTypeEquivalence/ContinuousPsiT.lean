@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.FatouOm
+import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0015
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.ContinuousSplitInv
 
 noncomputable section

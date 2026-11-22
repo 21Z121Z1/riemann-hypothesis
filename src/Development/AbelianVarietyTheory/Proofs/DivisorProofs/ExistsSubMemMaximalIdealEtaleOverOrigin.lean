@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OriginIdeal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalStageTensorPolynomialOrigin
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0235
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0257
 open IsLocalRing Polynomial
 open scoped TensorProduct
 

@@ -1,6 +1,6 @@
 import CompanionTheory.AutomorphicTheory.ProductFormulaTheory.GrothendieckRingPolynomial.ProdList
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MultiProdCompCongr
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ParabolicInductionTwoBlocksEmptyProductLeftStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0199
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0222
 
 noncomputable section
 

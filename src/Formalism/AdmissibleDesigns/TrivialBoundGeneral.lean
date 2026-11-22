@@ -1,4 +1,4 @@
-import Formalism.AdmissibleDesigns.KoEquivSmul
+import Formalism.AdmissibleDesigns.Bundle0008
 
 variable [hT2Core : Fact ReciprocityTheory.ChartRestriction.T2.Core]
 

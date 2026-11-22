@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemTChartSource
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VolumeImageComplPtsIn
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleFibreEmbeddingsCard
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2678
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0020
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteAffineNeighbourhoodExists
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralMultipleExtension
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2328
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinsumLifts
 
 set_option autoImplicit false

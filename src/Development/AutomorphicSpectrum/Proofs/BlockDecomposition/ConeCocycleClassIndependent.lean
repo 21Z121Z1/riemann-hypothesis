@@ -1,7 +1,7 @@
 import Mathlib
-import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.Precomp
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TruncatedLogMultiplicative
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConeLiftRatioMemIdeal
+import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.Bundle0006
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0163
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0155
 
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false

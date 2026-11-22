@@ -1,6 +1,6 @@
 import Mathlib
 import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.EigenspaceCyclicDensity.LowKMultOneP
-import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
+import Formalism.RealPlaceAnalysis.Bundle0004
 
 open Finset
 open scoped InnerProductSpace

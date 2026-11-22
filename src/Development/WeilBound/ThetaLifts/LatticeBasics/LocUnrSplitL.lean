@@ -1,10 +1,9 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IntegrandEqOnPiece
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LocalFieldUniformizerNormProperties
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.GeneralLinearIntegralCompactOpen
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.MemIntegralGLIffIntegralUnitDet
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.GeneralLinearUnimodularHaar
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IwasawaDecompositionUpperTriangular
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0021
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0004
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0003
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0006
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0010
 
 open MeasureTheory Matrix GlobalTheory.CompanionTheory.QL
 

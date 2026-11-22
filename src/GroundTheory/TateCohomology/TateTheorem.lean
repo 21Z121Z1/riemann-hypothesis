@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.TateCohomology.SplittingCohTrivial
-import GroundTheory.TateCohomology.TateDeltaZero
+import GroundTheory.TateCohomology.Bundle0007
 import GroundTheory.TateCohomology.TateSubgroupMaps
 set_option maxSynthPendingDepth 1
 

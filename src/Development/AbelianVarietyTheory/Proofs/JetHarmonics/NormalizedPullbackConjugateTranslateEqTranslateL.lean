@@ -3,10 +3,10 @@ import Development.AbelianVarietyTheory.Definitions.Jets.ExistsSecTieFOfTies
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBCPf
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartF
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-import Formalism.LocalToGlobal.ProjectiveLattices.ConjNeSelfOfCM
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0019
 import Formalism.LocalToGlobal.ProjectiveLattices.BetaAtSymm
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsTranslatedNormalisedPullbackSection
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0168
 
 set_option autoImplicit false
 

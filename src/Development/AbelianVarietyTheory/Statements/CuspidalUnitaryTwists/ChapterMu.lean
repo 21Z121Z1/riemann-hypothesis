@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.PetIPSmulRight
-import Development.AbelianVarietyTheory.Definitions.Foundations.RepL
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0004
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
 import Development.AbelianVarietyTheory.Statements.CuspidalUnitaryTwists.Chapter
 import CompanionTheory.EightfoldTheory.VariationTheory.AutomorphicForms.Newform
 

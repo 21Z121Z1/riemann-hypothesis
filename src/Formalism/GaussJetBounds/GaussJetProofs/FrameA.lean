@@ -1,6 +1,6 @@
-import Formalism.GaussJetBounds.GenLogInverse
-import Formalism.GaussJetBounds.StatementK
-import Formalism.GaussJetBounds.GaussJetProofs.NormDetLeOneOfEntries
+import Formalism.GaussJetBounds.Bundle0001
+import Formalism.GaussJetBounds.Bundle0005
+import Formalism.GaussJetBounds.GaussJetProofs.Bundle0001
 import Formalism.GaussJetBounds.GaussJetProofs.ConstantCoeffAevalLinP
 
 noncomputable section

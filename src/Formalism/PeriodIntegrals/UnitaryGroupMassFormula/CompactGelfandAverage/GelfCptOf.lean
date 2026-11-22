@@ -1,9 +1,7 @@
 import Mathlib
-import Formalism.PeriodIntegrals.UMultOne
+import Formalism.PeriodIntegrals.Bundle0011
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CompactGelfandAverage.AvgStep
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CompactGelfandAverage.GelfCptOfSteps
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CompactGelfandAverage.MulIntMatMul
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CompactGelfandAverage.IntegrableOfContinuousCpt
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CompactGelfandAverage.Bundle0001
 
 namespace PI.UnitaryGroupMassFormula.GelfCpt
 

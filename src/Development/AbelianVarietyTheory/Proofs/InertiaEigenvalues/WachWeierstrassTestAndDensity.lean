@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NotFullBot
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ProdPrimePowDvd
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegersCompleteDVR
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0003
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0125
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0206
 open Formalism.WeaklyAdmissibleFiltrations Formalism.BasicNotions Formalism.BasicNotions.Loc TensorProduct GlobalTheory.NL
 
 namespace GlobalTheory.NL.WDiv

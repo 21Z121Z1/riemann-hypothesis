@@ -2,8 +2,7 @@ import Mathlib
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.LocGram
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDualFamilyOfIsLattice
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUniqueIsConjAt
-import Development.AutomorphicSpectrum.Proofs.MembershipProofs.CharacterAugmentationSubspaceQuotientActionTop
-import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ExistsBasisCols
+import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0005
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IwasawaDoubledHermitianSpaceRealPlace
 
 noncomputable section

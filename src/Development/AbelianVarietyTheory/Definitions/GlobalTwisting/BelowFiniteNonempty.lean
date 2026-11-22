@@ -1,9 +1,7 @@
 import Mathlib
-import Formalism.LocalToGlobal.Columns.CoefCol
+import Formalism.LocalToGlobal.Columns.Bundle0003
 import Formalism.LocalToGlobal.Columns.DecoFin
-import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.IndexExponentDegree
-import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.JetSumTable
-import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.CharacterValuation
+import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0014
 
 noncomputable section
 

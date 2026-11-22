@@ -1,5 +1,5 @@
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MemOfAevalEqZero
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsPlaceWeightConjInvariantStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0072
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HodgeIPIffHodgeFormConj
 
 set_option linter.unusedSectionVars false

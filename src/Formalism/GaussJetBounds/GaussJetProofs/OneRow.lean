@@ -1,7 +1,7 @@
-import Formalism.GaussJetBounds.GenLogInverse
-import Formalism.GaussJetBounds.StatementN
+import Formalism.GaussJetBounds.Bundle0001
+import Formalism.GaussJetBounds.Bundle0004
 import Formalism.GaussJetBounds.MonoShapeTop
-import Formalism.GaussJetBounds.GaussJetProofs.NormDetLeOneOfEntries
+import Formalism.GaussJetBounds.GaussJetProofs.Bundle0001
 import Formalism.GaussJetBounds.GaussJetProofs.ThmAOp
 
 noncomputable section

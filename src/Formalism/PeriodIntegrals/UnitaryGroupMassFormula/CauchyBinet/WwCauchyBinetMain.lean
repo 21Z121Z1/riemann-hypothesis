@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.WwCauchyBinet
+import Formalism.PeriodIntegrals.Bundle0013
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IsometryDerivative.ExistsOePerm
 
 open Matrix Finset

@@ -1,5 +1,5 @@
 import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialPullbackStatement
-import ReciprocityTheory.AnalyticForms.PotentialTheory.PotentialContDiffAt
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0008
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PartsSt
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.HessCRestrictThm
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PartsAlg

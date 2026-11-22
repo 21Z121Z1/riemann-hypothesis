@@ -1,5 +1,5 @@
-import Formalism.LocalRingCardinality.DataKerP
-import Formalism.LocalRingCardinality.DataDIVDefs
+import Formalism.LocalRingCardinality.Bundle0005
+import Formalism.LocalRingCardinality.Bundle0003
 import Formalism.LocalRingCardinality.DataForced
 
 open Formalism.MainNotions.G NumberField

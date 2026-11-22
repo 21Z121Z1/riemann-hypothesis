@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.FlagPairDefi
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ChartGen
 import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.MaxMass
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NormalFormDualOrthogonalLast
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LValEtaBoundsStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0097
 import Formalism.HermitianLattices.HermitianLatticesProofs.MassTelescope
 open NumberField Formalism.HermitianLatticeCounting.S6 GlobalTheory.HermLat GlobalTheory.DegCnt
 open scoped Pointwise ENNReal Classical

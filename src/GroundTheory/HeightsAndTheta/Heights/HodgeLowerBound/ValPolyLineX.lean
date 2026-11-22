@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.VarMapInjective
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.Values
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0009
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.Bundle0001
 set_option maxSynthPendingDepth 1
 
 noncomputable section

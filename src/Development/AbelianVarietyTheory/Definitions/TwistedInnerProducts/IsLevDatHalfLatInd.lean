@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CompIntField
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0019
 
 set_option autoImplicit false
 

@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.TranslateMemIndOrder
-import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.DualOrder
-import Development.WeilBound.CoreStatements.HodgeTatePoints.TwhopfInd
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0002
+import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0005
 
 open GlobalTheory.CompanionTheory.Ar.BT TensorProduct
 

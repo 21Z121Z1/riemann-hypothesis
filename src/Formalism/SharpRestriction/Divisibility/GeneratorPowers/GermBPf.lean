@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermBPrim
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0021
 
 set_option autoImplicit false
 

@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.MeanHeightDescent.StatementF
-import Formalism.MeanHeightDescent.AverageDegreeBounds.CovolumeAssemblyHolds
+import Formalism.MeanHeightDescent.AverageDegreeBounds.Bundle0002
 import Formalism.MeanHeightDescent.AverageDegreeBounds.SumComponents
 
 open Finset Module NumberField

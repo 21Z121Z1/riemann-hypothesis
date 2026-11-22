@@ -1,7 +1,7 @@
-import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.LocalDiamondOfSplitIdempotent
+import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.Bundle0002
 import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.CharacterFiniteLevelZeroOfForms
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-import Formalism.LocalRingCardinality.IntCastDvdOfDvdIntegers
+import Formalism.LocalRingCardinality.Bundle0001
 
 noncomputable section
 

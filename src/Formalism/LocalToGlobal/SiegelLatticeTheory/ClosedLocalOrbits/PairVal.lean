@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.TermDef
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.CntLocal
-import Formalism.LocalRingCardinality.DataTies
-import Formalism.SharpRestriction.CuspSpanNormBounds.CntPartners
+import Formalism.LocalRingCardinality.Bundle0003
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0007
 import Formalism.HermitianCurvature.StatementPB
 import Formalism.SharpRestriction.CuspSpanNormBounds.NonemptyParameterModels.TermTiesEmptyOfLargeIndex
 import Formalism.SharpRestriction.CuspSpanNormBounds.FrameFixingOrbitRelation

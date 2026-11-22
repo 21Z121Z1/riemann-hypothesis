@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.GrowthBounds.RootWeights.WeightComponentsMemInvariant
-import Formalism.SharpRestriction.GrowthBounds.RootWeights.HighestWeightDominantHolds
+import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0014
+import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0010
 
 noncomputable section
 

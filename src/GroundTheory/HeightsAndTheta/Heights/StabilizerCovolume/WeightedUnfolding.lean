@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.WeightedScaling
+import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.Bundle0002
 set_option maxSynthPendingDepth 1
 
 noncomputable section

@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsExcisionNbhdSelf
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0009
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0066
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC
 
 noncomputable section

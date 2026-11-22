@@ -1,5 +1,5 @@
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AfsplitB
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Stabstd
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0004
 
 noncomputable section
 open Matrix TensorProduct NumberField IsDedekindDomain

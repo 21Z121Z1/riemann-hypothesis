@@ -1,7 +1,7 @@
 import Mathlib
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.FourierCoeffIntSt
-import Development.AbelianVarietyTheory.BlockTheory.JetGauges.PerfectPairings
-import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.FormalGroupLawCompMulNZero
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.Bundle0002
+import Development.AbelianVarietyTheory.BlockTheory.JetGauges.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0004
 import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.EqZeroOrSingleOfDegreeLtTwo
 
 set_option autoImplicit false

@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsOrbitProd
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FieldCompatibleIffWdRel
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0025
 
 noncomputable section
 

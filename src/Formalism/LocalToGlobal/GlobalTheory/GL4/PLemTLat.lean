@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.GlobalTheory.GL4.PLemTEmb
-import Formalism.LocalToGlobal.GlobalTheory.GL4.PLemTNorm
+import Formalism.LocalToGlobal.GlobalTheory.GL4.Bundle0001
 import Formalism.LocalToGlobal.GlobalTheory.GL4.PLemTGeo
 
 noncomputable section

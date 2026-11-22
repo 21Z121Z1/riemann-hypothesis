@@ -1,13 +1,13 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsCurveVertIndexSteps
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.CurveCountObjects
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PLiftBirationalAmple
+import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0046
+import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0042
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0079
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSectionLatticeFinite
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.AssemblyBase
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSectionBounded
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PCoordConeArithVar
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PCurveCharts
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PFnFieldTrdeg
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0038
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0022
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Targets

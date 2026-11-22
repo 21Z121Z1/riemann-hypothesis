@@ -1,4 +1,4 @@
-import ReciprocityTheory.AnalyticForms.AnalyticCharts.OsgoodA
+import ReciprocityTheory.AnalyticForms.AnalyticCharts.Bundle0001
 
 noncomputable section
 

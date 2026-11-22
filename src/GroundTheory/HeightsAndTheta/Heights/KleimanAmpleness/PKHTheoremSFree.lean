@@ -1,11 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.KHFreeEmbedSt
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.KHFreeDecompSt
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.KHFreeIndepSt
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.KHCombContractSt
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.KHCombCyclicSt
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.KHFreeBadFiniteSt
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.CechHcSubsingletonOfBij
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0030
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0094
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Kleiman

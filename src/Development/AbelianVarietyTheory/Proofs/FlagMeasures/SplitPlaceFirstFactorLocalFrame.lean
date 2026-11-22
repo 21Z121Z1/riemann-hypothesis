@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.SelfDualAt
-import Formalism.LocalToGlobal.HermitianForms.TiedStep
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SplitPlaceLatticeComponentsStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegralExtensionFiniteAdelesBasicPropertiesStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FirstComponentsBasisLocalLatticeSplitStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianLocalLevelUnitriangularIffStatement
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0006
+import Formalism.LocalToGlobal.HermitianForms.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0264
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0317
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0135
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0267
 open Formalism.BasicNotions Formalism.UG Formalism.L2.Forms NumberField IsDedekindDomain Matrix GlobalTheory.St.G
 open scoped TensorProduct
 

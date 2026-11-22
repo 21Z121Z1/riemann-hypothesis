@@ -1,7 +1,7 @@
 import Formalism.LocalToGlobal.GlobalTheory.ExistsUnitaryOneDetEq
 import Formalism.LocalToGlobal.HermitianColumns.InLocalDiscriminantKernel
 import Formalism.HermitianLattices.HermitianLatticesProofs.DualLattice
-import Formalism.HermitianLattices.HermitianLatticesProofs.DualBasic
+import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0001
 import Formalism.HermitianLattices.HermitianLatticesProofs.MajDual
 
 noncomputable section

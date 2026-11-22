@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.OneLeftSpMap
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ImplicitFunctionHolomorphicStatement
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AnChart
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0136
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0017
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0001
 
 noncomputable section
 

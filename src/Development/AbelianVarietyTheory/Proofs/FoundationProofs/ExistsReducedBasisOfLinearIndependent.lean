@@ -1,6 +1,6 @@
 import Mathlib
 import ReciprocityTheory.ReducedBases.ExistsRedOf
-import ReciprocityTheory.ReducedBases.PrefixProdGeOne
+import ReciprocityTheory.ReducedBases.Bundle0003
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.IntegralModuleBases.NormGsoSqLeTwoPowMulOfValEqAdd
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsBimultiplicativeOfSecondQuotConst
 

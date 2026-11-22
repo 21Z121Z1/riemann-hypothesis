@@ -1,6 +1,6 @@
-import Formalism.SizeWindowBrackets.QuotientSlopeBoundsWith
+import Formalism.SizeWindowBrackets.Bundle0002
 import Formalism.RankGapBounds.RankGapProofs.WeightedMeanData
-import Formalism.RankGapBounds.RankGapProofs.UniformMeanTopLine
+import Formalism.RankGapBounds.RankGapProofs.Bundle0002
 
 open Real
 

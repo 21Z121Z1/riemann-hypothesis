@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.DistinguishedUnitIdeals.IsCocycle
+import Formalism.DistinguishedUnitIdeals.Bundle0001
 
 noncomputable section
 

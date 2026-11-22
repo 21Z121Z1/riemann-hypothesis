@@ -1,7 +1,7 @@
 import CompanionTheory.AutomorphicTheory.NumberFieldModels.HsVecProjLe
-import CompanionTheory.AutomorphicTheory.NumberFieldModels.ModelPt
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutNFCoreN
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutNFHatProdKBStmt
+import CompanionTheory.AutomorphicTheory.NumberFieldModels.Bundle0001
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0316
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0313
 
 open Formalism.QuantumDeterminants Formalism.FourierDecayAlt Formalism.FourierDecayAlt.P Formalism.FourierDecayAlt.P.CutBP Formalism.FourierDecayAlt.P.CutMP.Gauge
 

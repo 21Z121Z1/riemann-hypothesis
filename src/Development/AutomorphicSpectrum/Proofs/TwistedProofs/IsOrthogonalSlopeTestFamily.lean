@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.ParallelStatements.FiniteSums.BesselPeriodFreeData
-import Formalism.LocalToGlobal.IndefiniteReal.AutomorphicFormsHyp
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0011
 
 noncomputable section
 

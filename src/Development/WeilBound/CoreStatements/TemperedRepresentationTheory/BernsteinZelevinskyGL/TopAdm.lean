@@ -1,5 +1,5 @@
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IrreducibleSmoothAdmissibleGL
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0003
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0018
 
 namespace PositivityTheory.Tls2.BZGL
 

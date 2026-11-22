@@ -1,14 +1,13 @@
 import Formalism.AdmissibleDesigns.StatementOneBChangedOfOpen
-import Formalism.AdmissibleDesigns.HRhoFull
-import Formalism.AdmissibleDesigns.FirstCharacterIndexNeZero
-import Formalism.AdmissibleDesigns.PhiWRhoT
+import Formalism.AdmissibleDesigns.Bundle0016
+import Formalism.AdmissibleDesigns.Bundle0014
 import Formalism.AdmissibleDesigns.RowTieInOf
-import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.BaseLin
-import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.BlochKatoAnnihilatorAboveL
-import Development.AutomorphicArithmetic.ResidueCharacters.LenLeTorsion
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachHypothesisCrystallineLattices
-import Formalism.AdmissibleDesigns.AdmG5OfAdm51AdmG5
-import Formalism.SharpRestriction.LevelLetterCocycles.QpowOfTw
+import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.Bundle0001
+import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.Bundle0007
+import Development.AutomorphicArithmetic.ResidueCharacters.Bundle0005
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0293
+import Formalism.AdmissibleDesigns.Bundle0001
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0004
 import Formalism.SharpRestriction.LevelLetterCocycles.WildPro
 
 variable [hT2Core : Fact ReciprocityTheory.ChartRestriction.T2.Core] [hH0Fin : Fact Formalism.MainNotions.N.K.H0.FinCore]

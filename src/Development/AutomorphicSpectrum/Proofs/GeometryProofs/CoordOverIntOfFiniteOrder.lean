@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CoordsAt
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapStalkSpecializes
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtFractionNoetherianClosed
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0002
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0012
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0027
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj GlobalTheory.CompanionTheory.Ar
 

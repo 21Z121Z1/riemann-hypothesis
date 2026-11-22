@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.VectorVanishesBigCell
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0136
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SymmetricScalarBlockMatrixMul
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.DirectionsInParabolic
 

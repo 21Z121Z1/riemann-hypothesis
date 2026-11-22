@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.PeriodIntegrals.UpqRep
-import Formalism.PeriodIntegrals.IsLowUnitH
+import Formalism.PeriodIntegrals.Bundle0015
 import Formalism.PeriodIntegrals.ZuckTensor
-import Formalism.PeriodIntegrals.DSExist
+import Formalism.PeriodIntegrals.Bundle0014
 
 open MeasureTheory Matrix Finset
 open scoped InnerProductSpace

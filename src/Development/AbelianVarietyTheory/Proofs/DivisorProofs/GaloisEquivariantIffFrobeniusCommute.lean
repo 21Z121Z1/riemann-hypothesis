@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsDimEqOne
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusTateGaloisActionStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinitePointsFixedFrobeniusPowerStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TlLevSurjKer
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateModuleFreeFinrankTwoMulDim
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3247
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3069
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3318
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3331
 
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry
 open scoped CategoryTheory.Obj CategoryTheory.MonObj TensorProduct

@@ -1,6 +1,6 @@
 import Mathlib
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.TwoWeightEqOneAddRoot
-import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.ProIsoAt
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
 
 noncomputable section
 

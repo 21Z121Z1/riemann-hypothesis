@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.BurnsideEnd
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0005
 
 namespace KStar.Schema
 

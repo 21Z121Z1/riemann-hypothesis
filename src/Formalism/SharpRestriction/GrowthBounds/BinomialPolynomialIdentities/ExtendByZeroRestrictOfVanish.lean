@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.PeBnOfLt
+import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.Bundle0002
 
 noncomputable section
 

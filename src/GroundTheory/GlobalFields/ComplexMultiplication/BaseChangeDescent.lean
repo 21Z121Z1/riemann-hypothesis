@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.GlobalFields.ComplexMultiplication.BaseChangeDegree
+import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0009
 
 namespace GroundTheory.Global
 

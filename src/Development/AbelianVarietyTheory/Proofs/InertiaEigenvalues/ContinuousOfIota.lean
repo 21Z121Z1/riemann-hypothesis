@@ -2,8 +2,8 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NotMemPlacesOverOfNe
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormEqOneOfCompact
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CuspidalStrongMultiplicityOneOfAnalytic
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CharpolyFactorizationSemisimple
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplitPlaceGoodSignature
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0081
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0034
 
 noncomputable section
 

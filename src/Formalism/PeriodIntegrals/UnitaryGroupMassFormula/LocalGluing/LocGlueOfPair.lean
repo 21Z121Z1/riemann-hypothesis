@@ -1,5 +1,4 @@
-import Formalism.PeriodIntegrals.LocHerm
-import Formalism.PeriodIntegrals.AlgebraMapMemO
+import Formalism.PeriodIntegrals.Bundle0020
 
 noncomputable section
 

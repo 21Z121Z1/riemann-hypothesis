@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LineModel
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0037
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverCompOfIsClosedImmersion
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntOIsLocalRing
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0571
 
 noncomputable section
 

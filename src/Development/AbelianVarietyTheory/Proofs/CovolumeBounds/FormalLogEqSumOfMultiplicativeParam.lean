@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.NatCastMulCoeffOfPderivEq
-import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.FormalExpMulFormalExpNeg
+import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.Bundle0006
 
 namespace GlobalTheory.FormalCalc
 

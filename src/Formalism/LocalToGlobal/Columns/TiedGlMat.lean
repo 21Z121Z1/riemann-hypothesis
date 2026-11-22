@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.Columns.GenericUnipotentCharacter
-import Formalism.LocalToGlobal.HermitianForms.PsiZeroNontrivialCharacter
+import Formalism.LocalToGlobal.HermitianForms.Bundle0001
 
 open Matrix
 

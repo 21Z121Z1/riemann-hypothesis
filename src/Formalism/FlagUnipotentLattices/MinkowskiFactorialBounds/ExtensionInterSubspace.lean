@@ -1,5 +1,5 @@
 import Formalism.FlagUnipotentLattices.MinkowskiFactorialBounds.CoefficientLeOperatorNorm
-import Formalism.LatticeRigidity.HeightMinimum.PowFinrankEqZeroOfTracePow
+import Formalism.LatticeRigidity.HeightMinimum.Bundle0002
 import Formalism.LogSumExpBounds.IsoTransfer
 import Formalism.GelfandTransference.HadamardGelfand.Transference
 import Formalism.HarderNarasimhan.ShiftInvariance

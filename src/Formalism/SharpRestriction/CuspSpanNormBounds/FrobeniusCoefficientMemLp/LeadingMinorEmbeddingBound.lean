@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusCoefficientMemLp.LeadMinorEZhatOMNorm
-import Formalism.SharpRestriction.CuspSpanNormBounds.GramProductLeHeightBoundTwo
+import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusCoefficientMemLp.Bundle0007
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0022
 import Formalism.SharpRestriction.CuspSpanNormBounds.CongruenceAtSplitFrobeniusHolds
 
 set_option linter.unusedVariables false

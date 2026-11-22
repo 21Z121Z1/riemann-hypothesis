@@ -1,7 +1,6 @@
-import Formalism.WachLatticeTwists.CoprimeLiftBounds.StatBridgeChiOne
-import Formalism.WachLatticeTwists.CoprimeLiftBounds.CoprimeLiftProofs.KeyMul
-import Formalism.WachLatticeTwists.CoprimeLiftBounds.CoprimeLiftProofs.LiftBound
-import Formalism.WachLatticeTwists.CoprimeLiftBounds.CoprimeLiftProofs.YGenCongr
+import Formalism.WachLatticeTwists.CoprimeLiftBounds.Bundle0001
+import Formalism.WachLatticeTwists.CoprimeLiftBounds.CoprimeLiftProofs.Bundle0003
+import Formalism.WachLatticeTwists.CoprimeLiftBounds.CoprimeLiftProofs.Bundle0002
 
 open Finset Classical
 

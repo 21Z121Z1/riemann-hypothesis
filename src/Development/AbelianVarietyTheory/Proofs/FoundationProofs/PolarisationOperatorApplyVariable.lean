@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.BottomMinor
+import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.Bundle0002
 
 open MvPolynomial Matrix Finset
 

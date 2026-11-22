@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsSegreFlagCutChartSection
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0058
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PSegreFlagCutForms
 set_option maxSynthPendingDepth 1
 

@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.GlobalFields.TateThesis.SchwartzBruhatDual
+import GroundTheory.GlobalFields.TateThesis.Bundle0008
 
 namespace GroundTheory.Global
 

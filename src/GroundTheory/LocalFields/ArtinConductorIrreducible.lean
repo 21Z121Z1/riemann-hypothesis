@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.LocalFields.ArtinConductorInduced
-import GroundTheory.LocalFields.BrauerInductionInduced
+import GroundTheory.LocalFields.Bundle0012
+import GroundTheory.LocalFields.Bundle0002
 
 noncomputable section
 

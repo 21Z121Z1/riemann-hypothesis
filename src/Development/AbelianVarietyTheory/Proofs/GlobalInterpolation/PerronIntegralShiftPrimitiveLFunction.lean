@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsBoundRight
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogDerivLFunctionNearZero
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0021
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.AnalyticAtDslope
 open Complex DirichletCharacter ArithmeticFunction MeasureTheory Filter Topology
 

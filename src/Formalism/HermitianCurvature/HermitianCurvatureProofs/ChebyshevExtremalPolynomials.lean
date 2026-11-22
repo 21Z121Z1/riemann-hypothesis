@@ -1,5 +1,5 @@
 import Formalism.HermitianCurvature.LevelRecursionCondNeeded
-import Formalism.LatticeRigidity.HeightMinimum.ChebyshevLeadingCoeffHolds
+import Formalism.LatticeRigidity.HeightMinimum.Bundle0001
 import Mathlib
 
 namespace Formalism.FourierDecayAlt.P.ChebyshevExtremalPolynomials

@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.GelfandTransference.Statement
-import Formalism.GelfandTransference.GelfandCentral
+import Formalism.GelfandTransference.Bundle0001
 import Formalism.GelfandTransference.HadamardGelfand.Gelfand
 
 open Finset

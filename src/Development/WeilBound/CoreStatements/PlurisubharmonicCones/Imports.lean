@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptFieldExtension
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCompComparisonLeft
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0292
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0177
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.HcptPull

@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.LocalToGlobal.Divisibility.LinkDefN
-import Formalism.LocalToGlobal.Divisibility.LinkDIVL2R3Rec
+import Formalism.LocalToGlobal.Divisibility.Bundle0002
+import Formalism.LocalToGlobal.Divisibility.Bundle0003
 import Formalism.LocalToGlobal.Divisibility.DivisionCompatibleToSub2Indef2
 import Formalism.LocalToGlobal.Divisibility.RecBridgeTied
 

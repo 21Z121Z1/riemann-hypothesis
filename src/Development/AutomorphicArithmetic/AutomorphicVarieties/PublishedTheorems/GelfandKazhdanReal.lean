@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.HasCohomology
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0004
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.CongruenceNumberRankThree
 
 noncomputable section

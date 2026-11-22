@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StPolynomialRootPredicateFactor
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PAnalyticRootBranch
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0008
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0061
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PRiemannExtensionAnalytic
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PManifoldZerosComplementConnected
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0044
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.ComplexSets

@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.RowMinor
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.OfRoots
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DetFromBlocksSingle
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniquePlace
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0011
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0090
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0194
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StandardBaseFlagComplementIntegralLattice
 
 open NumberField Module Matrix Formalism.BasicNotions Formalism.MainNotions.S Formalism.MainNotions.S.Lat Formalism.MainNotions.S.Cnt GlobalTheory.LoopC

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsTamagawa
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0026
 
 noncomputable section
 

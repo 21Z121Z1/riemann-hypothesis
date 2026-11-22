@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdMinorsMemInv
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockSFockColumnSubstitutionUnitaryStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0570
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0139
 open Classical MeasureTheory
 
 noncomputable section

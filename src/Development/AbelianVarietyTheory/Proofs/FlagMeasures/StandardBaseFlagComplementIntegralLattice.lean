@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.RowMinor
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsLocalizedModuleSubtype
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsLatticeLatIn
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBoundUnitary
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0011
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0093
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0215
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0915
 import Formalism.SharpRestriction.CuspSpanNormBounds.AbsoluteAmplitudeSecondOfSource
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 import Formalism.FrobeniusOrbits.HostCorollaries

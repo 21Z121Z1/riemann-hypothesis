@@ -1,5 +1,5 @@
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.GenIdeal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCoordinateNearGenericPoint
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1564
 
 set_option autoImplicit false
 

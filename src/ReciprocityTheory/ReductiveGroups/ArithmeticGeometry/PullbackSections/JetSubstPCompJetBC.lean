@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CIndBC
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0005
 
 set_option autoImplicit false
 

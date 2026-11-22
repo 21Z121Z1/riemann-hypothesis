@@ -1,8 +1,7 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.Statements
-import GroundTheory.HeightsAndTheta.Heights.Regularisation.StatementsTruncPsh
-import GroundTheory.HeightsAndTheta.Heights.Regularisation.GlueCharts
-import GroundTheory.HeightsAndTheta.Heights.Regularisation.PChartComparison
+import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0003
+import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0004
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Regular

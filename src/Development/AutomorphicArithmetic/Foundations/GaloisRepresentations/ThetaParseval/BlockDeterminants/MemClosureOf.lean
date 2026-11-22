@@ -1,9 +1,9 @@
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SchurStep
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ContinuousInfiniteAdeleMap
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsSplitChartSplitChart
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductOfLocalLevelsUnitaryIsOpenIsCompactIsLeve
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdeleEqZeroOfComp
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BcCompFinAwayPtOfNotMem
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0331
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1243
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2150
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3239
 
 noncomputable section
 

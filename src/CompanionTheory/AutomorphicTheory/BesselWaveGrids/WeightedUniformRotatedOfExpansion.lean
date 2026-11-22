@@ -1,5 +1,5 @@
-import CompanionTheory.AutomorphicTheory.BesselWaveGrids.TiedNum
-import CompanionTheory.AutomorphicTheory.BesselWaveGrids.NormalizedMeasureScaling
+import CompanionTheory.AutomorphicTheory.BesselWaveGrids.Bundle0005
+import CompanionTheory.AutomorphicTheory.BesselWaveGrids.Bundle0004
 import CompanionTheory.AutomorphicTheory.BesselWaveGrids.PowFourLeRpowNineHalves
 import Formalism.SharpRestriction.CuspSpanNormBounds.TheoremBConstants
 import Formalism.SharpRestriction.CuspSpanNormBounds.RatioInvLeFrameFactor

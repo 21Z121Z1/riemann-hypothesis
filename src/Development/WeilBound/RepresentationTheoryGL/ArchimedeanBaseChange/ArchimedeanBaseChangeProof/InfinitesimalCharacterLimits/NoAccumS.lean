@@ -1,6 +1,6 @@
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.NoAccum
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.LieSumDecompositions.GrowPHolds
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RankPosOfLeaves
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0607
 
 noncomputable section
 

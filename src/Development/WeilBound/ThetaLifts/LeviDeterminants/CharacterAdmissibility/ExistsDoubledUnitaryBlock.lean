@@ -1,5 +1,5 @@
 import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.BoxCancel
-import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.DoublingGramFromBlocks
+import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.Bundle0001
 
 noncomputable section
 

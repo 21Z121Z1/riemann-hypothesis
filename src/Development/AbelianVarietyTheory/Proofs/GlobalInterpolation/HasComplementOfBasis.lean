@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.UnitVectorOrthogonal
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.UnramifiedOfIsCMUnram
+import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0005
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0159
 import Formalism.LocalRingCardinality.SpanPowerMembership.Spaces
-import Development.AbelianVarietyTheory.PublishedTheorems.Landherr₂.LandherrStIffLandherr
+import Development.AbelianVarietyTheory.PublishedTheorems.Landherr₂.Bundle0001
 
 noncomputable section
 

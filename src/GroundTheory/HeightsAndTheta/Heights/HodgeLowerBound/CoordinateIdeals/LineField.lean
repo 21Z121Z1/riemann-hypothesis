@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals.MemMCoordIdealOfAevalEqZero
-import GroundTheory.HeightsAndTheta.Heights.Intersections.Statements
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals.Bundle0001
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0007
 set_option maxSynthPendingDepth 1
 
 noncomputable section

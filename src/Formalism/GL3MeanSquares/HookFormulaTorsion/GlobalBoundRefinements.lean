@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.GL3MeanSquares.InvNormSqConjRatioPowIdentities
+import Formalism.GL3MeanSquares.Bundle0003
 import Formalism.GL3MeanSquares.HookFormulaTorsion.PrimesInProgressionCountLowerBound
 import Formalism.GL3MeanSquares.HookFormulaTorsion.HadamardUnitDiagonalDetLeOne
 import Formalism.GL3MeanSquares.HookFormulaTorsion.SumWeightsOverPrimeLeHalfDegree

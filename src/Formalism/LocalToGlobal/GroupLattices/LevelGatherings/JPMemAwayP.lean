@@ -1,6 +1,5 @@
 import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.ComplSmulMapENe
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SplitUnitaryGroupIso
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Transport
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0003
 
 noncomputable section
 

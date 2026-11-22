@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.GlobalFields.ComplexMultiplication.AlgebraicityGalois
-import GroundTheory.GlobalFields.ComplexMultiplication.DualDescent
+import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0011
 
 namespace GroundTheory.Global
 namespace Elliptic

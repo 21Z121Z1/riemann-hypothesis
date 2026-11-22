@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.BesselHermitianTheta.IsAutFunDef
-import Formalism.LocalRingCardinality.DataTies
+import Formalism.LocalRingCardinality.Bundle0003
 
 noncomputable section
 

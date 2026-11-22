@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.RankDefs
-import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.OtherStart
+import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0003
 import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.CoarseDegreeAlternative
 
 noncomputable section

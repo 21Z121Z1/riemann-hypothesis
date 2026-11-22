@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ResSymMeasure
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsResolutionSup
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0028
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.CSandwichStB
 set_option maxSynthPendingDepth 1
 

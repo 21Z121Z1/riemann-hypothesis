@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.XiPluckerCover
+import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.Bundle0011
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PRFormula
-import GroundTheory.HeightsAndTheta.Heights.Intersections.PPFFibreSum
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0045
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Inter

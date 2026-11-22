@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousFourierGau
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralGauTwistedConv
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowMulNormGauLe
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0012
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0163
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0180
 
 noncomputable section
 

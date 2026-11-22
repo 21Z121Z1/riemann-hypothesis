@@ -1,5 +1,5 @@
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SizeAbsorption.PrimeWeightedRemainderBound
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.PrimeLogOverP
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0008
 import Development.AutomorphicArithmetic.OrbitLabellings.SumLogMulMaxZeroLeOfOddAddOrderOf
 
 noncomputable section

@@ -1,10 +1,10 @@
 import Mathlib
-import Formalism.HermitianCurvature.StatementTBB
+import Formalism.HermitianCurvature.Bundle0007
 import Formalism.HermitianCurvature.StatementU
 import Formalism.HermitianCurvature.LetterProductDoubleDegreeCount
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutBPEqDecay
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CapelliEigenSumLinearCombinationStatement
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PolynomialSmulCapelliEigenfunctionSum
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0307
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0156
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0187
 
 open Formalism.FourierDecayAlt Formalism.REAL Formalism.QuantumDeterminants Finset
 

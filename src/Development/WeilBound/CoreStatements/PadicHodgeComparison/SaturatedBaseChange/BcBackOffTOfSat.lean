@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsIntegralOpW
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsUnitarisableTrivChar
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpehShapeIffOfDiscreteSpectrum
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivOfIsSubquotient
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.DualIsConjOfIsCsd
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0052
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0023
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0751
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0678
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0012
 
 noncomputable section
 

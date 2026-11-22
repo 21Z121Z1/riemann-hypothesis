@@ -1,8 +1,8 @@
 import Formalism.LocalToGlobal.GlobalTheory.GL4.Statement
-import Formalism.LocalToGlobal.GlobalTheory.GL4.PLinks
+import Formalism.LocalToGlobal.GlobalTheory.GL4.Bundle0003
 import Formalism.BranchSandwichDivisors.BranchIsometryProofs.Numeric
 import Formalism.BranchSandwichDivisors.BranchIsometryProofs.Interlace
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LFockbLemmas
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0001
 
 noncomputable section
 

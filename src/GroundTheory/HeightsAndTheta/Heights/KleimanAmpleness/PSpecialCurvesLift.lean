@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsLastAlt
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.MemMIdealOverIff
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0057
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0063
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PTwinRestrictionPoints
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PPrimeFiltrationPoint
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0005
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ChartRingOverOneBlockEqChartRing
 set_option maxSynthPendingDepth 1
 

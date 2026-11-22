@@ -1,5 +1,5 @@
 import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.ThetaIdempotents.MapsExist
-import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RegularisedSiegelWeilFirstTerm
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0012
 
 noncomputable section
 

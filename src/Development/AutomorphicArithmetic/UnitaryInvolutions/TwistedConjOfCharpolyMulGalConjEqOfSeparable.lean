@@ -1,9 +1,6 @@
 import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.UniformExportStatement
-import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.ModelEx
-import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.ReflectCpInv
-import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.TBase
-import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.TClass
-import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.ThInvVal
+import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.Bundle0004
+import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.Bundle0005
 open Matrix Polynomial
 open scoped TensorProduct
 

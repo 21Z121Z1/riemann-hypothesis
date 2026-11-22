@@ -1,4 +1,4 @@
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InfinitePartActDiscreteSeriesHomFactorwise
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0337
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.FlatHermitianReps.IrredSt
 
 open MeasureTheory Set Filter NumberField IsDedekindDomain

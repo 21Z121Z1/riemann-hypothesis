@@ -1,8 +1,8 @@
 import Development.WeilBound.ThetaLifts.LocalTheory.StandardValuations.SplitProd
 import Development.WeilBound.ThetaLifts.LocalTheory.IsArchimedeanLocalEquivariantMap
-import Development.WeilBound.ThetaLifts.CartanFactorisation.TensOfEval
+import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0006
 import Development.WeilBound.ThetaLifts.LocalTheory.StandardValuations.ValIffNorm
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsStdCharNegOneOfStandardTraceAdelicAddChar
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1759
 
 set_option linter.unusedSectionVars false
 

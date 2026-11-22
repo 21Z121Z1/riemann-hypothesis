@@ -1,6 +1,6 @@
 import Development.WeilBound.ThetaLifts.SmallCones.FourierUniq
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyConstantFinprodSchwartzBruhatFiniteAdel
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasCompactSupportFinprodSchwartzBruhatFiniteAdel
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1726
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1721
 
 set_option linter.unusedSectionVars false
 

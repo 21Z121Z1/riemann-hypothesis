@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StandardCosocleGL
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0007
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivProdIrrTw
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MultiProdCompCongr
-import BuildAid.D3
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0199
+import BuildAid.Bundle0001
 
 noncomputable section
 

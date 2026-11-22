@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.EpsteinZeta.DedekindFactorK
-import Formalism.DirichletDensity.DirichletDensityProofs.QuadDiscr
+import Formalism.DirichletDensity.DirichletDensityProofs.Bundle0001
 
 noncomputable section
 

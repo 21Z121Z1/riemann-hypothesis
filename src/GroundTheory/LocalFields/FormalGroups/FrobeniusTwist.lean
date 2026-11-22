@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsLimitOfApprox
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0019
 
 namespace GroundTheory.LocalField.FormalGroup
 

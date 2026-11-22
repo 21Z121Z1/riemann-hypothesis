@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.SharpRestriction.GlobalSchurBounds.StatementFormalValuationAllFields
+import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0004
 
 noncomputable section
 

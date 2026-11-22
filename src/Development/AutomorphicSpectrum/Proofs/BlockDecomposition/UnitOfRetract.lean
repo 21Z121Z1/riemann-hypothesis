@@ -1,7 +1,6 @@
 import Mathlib
-import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.HermitianCellMeasures.CellDefs
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EvFinSSOneNot
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EqZeroOfComps
+import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.HermitianCellMeasures.Bundle0001
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0620
 
 noncomputable section
 

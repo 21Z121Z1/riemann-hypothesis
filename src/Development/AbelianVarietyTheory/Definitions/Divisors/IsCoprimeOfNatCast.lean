@@ -1,11 +1,11 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.LiftLaSpec
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
 import Formalism.LocalToGlobal.ProjectiveLattices.PartitionExtendByZeroAntitone
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GSplit
-import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.LevelCarrying
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0011
+import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.Bundle0012
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.LevelCuspCharacters
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ActLevIffLevelActionOver
-import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.CardLatticeQuotientHalfLevel
+import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0045
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsRightActFunPull
 
 set_option autoImplicit false

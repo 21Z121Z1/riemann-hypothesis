@@ -1,6 +1,4 @@
-import Formalism.HermitianCurvature.Statement
-import Formalism.HermitianCurvature.StatementI
-import Formalism.HermitianCurvature.StatementL
+import Formalism.HermitianCurvature.Bundle0001
 import Formalism.HermitianCurvature.StatementW
 
 namespace Formalism.FourierDecayAlt.S6

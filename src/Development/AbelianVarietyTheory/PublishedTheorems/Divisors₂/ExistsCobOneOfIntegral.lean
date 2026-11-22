@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.PrismaticDieudonneAt
-import ReciprocityTheory.DualLattices.ExistsPrimitiveRoot
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0005
+import ReciprocityTheory.DualLattices.Bundle0005
 
 noncomputable section
 

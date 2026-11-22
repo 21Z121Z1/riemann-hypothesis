@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.LengthBoundOfHypotheses
-import Formalism.SharpRestriction.LevelLetterCocycles.SemisimpleLetterIffForallMem
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0021
 import Formalism.SharpRestriction.LevelLetterCocycles.LatticeMembershipPolynomialGamma
 
 noncomputable section

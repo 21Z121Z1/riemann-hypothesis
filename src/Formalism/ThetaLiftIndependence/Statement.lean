@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.HermitianLattices.StatementLat
-import Formalism.HermitianLattices.StatementTheta
+import Formalism.HermitianLattices.Bundle0001
 import Formalism.SatakeDualWeyl.Statement
 
 noncomputable section

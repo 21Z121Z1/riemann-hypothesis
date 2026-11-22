@@ -1,6 +1,6 @@
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 import Formalism.LocalRingCardinality.DataLatDefs
-import Formalism.LocalRingCardinality.DataErr
+import Formalism.LocalRingCardinality.Bundle0004
 import Formalism.SharpRestriction.ParConsts
 import Formalism.SharpRestriction.ParamsHeightRankConstant
 import Formalism.SharpRestriction.GlobalSchurBounds.TaylorLogMetric

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.UnitaryRationalPointsCountableDiscreteFundDomain
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0127
 
 noncomputable section
 

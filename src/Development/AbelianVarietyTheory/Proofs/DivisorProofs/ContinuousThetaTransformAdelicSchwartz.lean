@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUSplittingInl
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ImportsBis
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemRatPairIff
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1549
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0273
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1577
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatMulIntegralOfIsCompact
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntegrableOfRapidDecay
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0226
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.L2.Theta
 open IsDedekindDomain NumberField MeasureTheory

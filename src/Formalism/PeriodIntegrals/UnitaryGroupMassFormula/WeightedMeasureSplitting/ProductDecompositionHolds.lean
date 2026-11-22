@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeightedMeasureSplitting.ContSplit
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.LevelKSplit
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0032
 
 noncomputable section
 

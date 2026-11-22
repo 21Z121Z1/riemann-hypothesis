@@ -1,4 +1,4 @@
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilThetaConvergenceOfSiegelSet
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2149
 import Development.WeilBound.ThetaLifts.Reductions.SiegelOfCore
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.PublishedTheoremStatements.SiegelSetUnitaryHolds
 

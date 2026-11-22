@@ -1,5 +1,5 @@
 import Formalism.FormalGroupWitt.FormalGroupWittProofs.FunctionalEquationHomVector
-import Formalism.FormalGroupWitt.FormalGroupWittProofs.EqSingleOfDegreeEqOne
+import Formalism.FormalGroupWitt.FormalGroupWittProofs.Bundle0002
 import Formalism.FormalGroupLog.FormalGroupLogProofs.ChainRule
 import Formalism.FormalGroupLog.FormalGroupLogProofs.ConstantCoeffSubstOfZero
 

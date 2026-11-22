@@ -2,17 +2,16 @@ import Mathlib
 import Formalism.LocalToGlobal.Divisibility.ConstantGeTwentyEight
 import Formalism.LocalToGlobal.Divisibility.RowSideTie
 import Formalism.LocalToGlobal.Divisibility.NumbersLink
-import Formalism.SharpRestriction.GlobalTheoremInputs
+import Formalism.SharpRestriction.Bundle0002
 import Formalism.SharpRestriction.AdmissibleParameterJoins
 import Formalism.SharpRestriction.Divisibility.LocalQuadraticParts
 import Formalism.SharpRestriction.Divisibility.WeightDegreeSizes
 import Formalism.SharpRestriction.Divisibility.ClosedSizeLink.DivisionAdmissibleFamilyOfData
-import Formalism.LocalToGlobal.GroupLattices.JointServices.ValIntNonneg
-import Formalism.LocalToGlobal.GroupLattices.JointServices.ShiftIdealSgFl
+import Formalism.LocalToGlobal.GroupLattices.JointServices.Bundle0001
 import Formalism.LocalToGlobal.GroupLattices.ServJointF
 import Formalism.LocalToGlobal.Divisibility.LinkDIVL2R3Col
-import Formalism.SharpRestriction.Divisibility.HookProducts.RBTieOp
-import Formalism.SharpRestriction.Divisibility.HookProducts.RBTieMu
+import Formalism.SharpRestriction.Divisibility.HookProducts.Bundle0002
+import Formalism.SharpRestriction.Divisibility.HookProducts.Bundle0003
 
 open Module NumberField IsDedekindDomain
 

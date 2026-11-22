@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsL2OnDiagonalOfIsL2Metric
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianAmpleAcyclic
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0028
 
 set_option autoImplicit false
 

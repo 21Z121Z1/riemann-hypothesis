@@ -1,0 +1,126 @@
+import Mathlib
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0002
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0004
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.SpecFirstDetFormNeZero
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.DefiniteFormStabilizerFiniteAwayFromP
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DvdOfForallEmultiplicityLe
+import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PChowHeightRecQ
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0033
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Assembly
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Assembly
+import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Assembly
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0043
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0042
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0037
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0036
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0008
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0041
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0040
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0025
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0038
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0039
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0046
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0007
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0012
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PConeChartIntegrable
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0023
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0024
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0030
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0048
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0033
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0015
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PIncidenceZeroLocus
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PConeMapAreaOne
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0015
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0029
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0045
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0030
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0009
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0014
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0020
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PDominantPrimitiveFibres
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0011
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0047
+import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Bundle0003
+import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Bundle0010
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0005
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0026
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0004
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0028
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.InhabitedChartFracSeparable
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.KleimanNefness.Bundle0002
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.GenericPointSectionHypotheses
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.IsFieldSubalgebraSelf
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0025
+import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.OfRemaining
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0048
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0061
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0059
+
+-- bundled from Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ChartResidueDegreeAlgClosedClosed
+section
+open GroundTheory.Heights₂.Heights
+
+theorem GlobalTheory.CompanionTheory.Ar.Short.ChowClosing.Auto.ObjectsChow_ChowDegreeClosedPoint : GroundTheory.Heights₂.Heights.ObjectsChow.ChowDegreeClosedPoint.Statement :=
+  @GroundTheory.Heights₂.Heights.ObjectsChow.ChowDegreeClosedPoint.proof GroundTheory.Heights₂.Heights.ObjectsChow.ClosedPointChartField.proof GroundTheory.Heights₂.Heights.ObjectsChow.ClosedPointConeCoord.proof
+
+theorem GlobalTheory.CompanionTheory.Ar.Short.ChowClosing.Auto.NormOfDividedFormSep : GroundTheory.Heights₂.Heights.NormOfDividedFormSep.Statement :=
+  @GroundTheory.Heights₂.Heights.NormOfDividedFormSep.proof GroundTheory.Heights₂.Heights.NormFormEval.full GroundTheory.Heights₂.Heights.NormFormDvd.full GroundTheory.Heights₂.Heights.PrimeMapFractionRing.full
+
+theorem GlobalTheory.CompanionTheory.Ar.Short.ChowClosing.Auto.ChartFreeParAlgIndep : GroundTheory.Heights₂.Heights.ChartFreeParAlgIndep.Statement :=
+  @GroundTheory.Heights₂.Heights.ChartFreeParAlgIndep.proof GroundTheory.Heights₂.Heights.ChartParAlgebraic.proof
+
+theorem GlobalTheory.CompanionTheory.Ar.Short.ChowClosing.Auto.ChartPointSeparable : GroundTheory.Heights₂.Heights.ChartPointSeparable.Statement :=
+  @GroundTheory.Heights₂.Heights.ChartPointSeparable.proof GlobalTheory.CompanionTheory.Ar.Short.ChowClosing.Auto.ChartFreeParAlgIndep
+
+theorem GlobalTheory.CompanionTheory.Ar.Short.ChowClosing.Auto.ChartFracSeparable : GroundTheory.Heights₂.Heights.ChartFracSeparable.Statement :=
+  @GroundTheory.Heights₂.Heights.ChartFracSeparable.proof GlobalTheory.CompanionTheory.Ar.Short.ChowClosing.Auto.ChartPointSeparable
+
+theorem GlobalTheory.CompanionTheory.Ar.Short.ChowClosing.Auto.ChartNormAlgClosed : GroundTheory.Heights₂.Heights.ChartNormAlgClosed.Statement :=
+  @GroundTheory.Heights₂.Heights.ChartNormAlgClosed.proof GroundTheory.Heights₂.Heights.IncIdealBelow.full GroundTheory.Heights₂.Heights.SpecFirstMemIncIdeal.full GroundTheory.Heights₂.Heights.LocalizationPrimeDVR.full GroundTheory.Heights₂.Heights.ChartFinite.full GroundTheory.Heights₂.Heights.ChartFracSeparableInhabited.chartLocDomain GroundTheory.Heights₂.Heights.ChartFirstGroupPrime.full GroundTheory.Heights₂.Heights.ChartFirstGroupDvd.full GlobalTheory.CompanionTheory.Ar.Short.ChowClosing.Auto.NormOfDividedFormSep GlobalTheory.CompanionTheory.Ar.Short.ChowClosing.Auto.ChartFracSeparable
+
+theorem GlobalTheory.CompanionTheory.Ar.Short.ChowClosing.Auto.LocalSectionLengthSum : GroundTheory.Heights₂.Heights.LocalSectionLengthSum.Statement :=
+  @GroundTheory.Heights₂.Heights.LocalSectionLengthSum.proof GroundTheory.Heights₂.Heights.PiQuotCokerFiniteLength.proof
+
+theorem GlobalTheory.CompanionTheory.Ar.Short.ChowClosing.Auto.SectionLengthSum : GroundTheory.Heights₂.Heights.SectionLengthSum.Statement :=
+  @GroundTheory.Heights₂.Heights.SectionLengthSum.proof GlobalTheory.CompanionTheory.Ar.Short.ChowClosing.Auto.LocalSectionLengthSum
+
+namespace GlobalTheory.CompanionTheory.Ar.Short.ChowClosing
+
+theorem chartResidueDegreeAlgClosed_closed : ChartResidueDegreeAlgClosed.Statement :=
+  ChartResidueDegreeAlgClosed.proof ChowFormBirationalAlgClosed.proof ChartFinite.full ChartKernel.full
+    SectionPerfect.coneDimOfChowForm_full ConeDimComponent.proof_closed
+    SectionPerfect.chowFormExists_full IncidenceGeneric.full ChartLocalOrder.full
+
+theorem chartLengthAlgClosed_closed : ChartLengthAlgClosed.Statement :=
+  ChartLengthAlgClosed.proof SpecFirstMemIncIdeal.full ChartFinite.full LengthFiniteAlgebra.full
+    ChartMaxIdeals.full ChartLocalOrder.full chartResidueDegreeAlgClosed_closed
+
+theorem chartChoiceAlgClosed_closed : ChartChoiceAlgClosed.Statement :=
+  ChartChoiceAlgClosed.proof SectionPerfect.incIdealPrime_full chowFormMultiHomog
+
+theorem sectionCycleReduced_closed : SectionCycleReduced.Statement :=
+  sectionCycleReduced_of SectionComponents.proof_closed GlobalTheory.CompanionTheory.Ar.Short.ChowClosing.Auto.SectionLengthSum
+
+end GlobalTheory.CompanionTheory.Ar.Short.ChowClosing
+
+namespace GlobalTheory.CompanionTheory.Ar.Short
+
+end GlobalTheory.CompanionTheory.Ar.Short
+end
+
+-- bundled from Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SiuInequalityIntegralHolds
+section
+open MvPolynomial ReciprocityTheory.ChartRestriction.G.ArakelovGeometry.KH GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.Kleiman2
+
+namespace GlobalTheory.CompanionTheory.Ar.Giv
+
+theorem siuZ : SiuZStatement := by
+  have hR4 := GlobalTheory.CompanionTheory.Relay.kleiman_genericPointSectionInput
+  obtain ⟨-, hVA, hSC⟩ := GlobalTheory.CompanionTheory.Relay.kleiman_input_nef_ample_section_count hR4
+  exact GroundTheory.Heights₂.Heights.ForSecondHalf.SiuZB.of_kodaira (GlobalTheory.CompanionTheory.Relay.kodaira_generic_of_ample_section_count hVA hSC)
+
+end GlobalTheory.CompanionTheory.Ar.Giv
+end
+

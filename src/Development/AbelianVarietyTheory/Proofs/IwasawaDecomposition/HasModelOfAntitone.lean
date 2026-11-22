@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.CdScaleTieIff
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0014
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.RhoCompactTwiceEqOfSignBlockOrdered
 
 noncomputable section

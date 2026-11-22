@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.UniformGaussModelCondition
-import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.OneLetterGaussEvery
+import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.Bundle0003
+import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0004
 import Formalism.GaussJetBounds.OneLetterGaussJets.StatementG
 
 noncomputable section

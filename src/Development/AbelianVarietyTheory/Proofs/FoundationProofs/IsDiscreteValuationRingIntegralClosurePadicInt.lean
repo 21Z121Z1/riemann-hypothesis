@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PrimeEqBotOrMaximalIdealOfIsFieldAway
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.FiniteAlgebraLocalCompletion
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.IntToRatA
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0014
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Bundle0005
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0004
 
 namespace GlobalTheory
 

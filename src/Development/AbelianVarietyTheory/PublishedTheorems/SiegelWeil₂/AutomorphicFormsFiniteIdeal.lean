@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.LocalToGlobal.BesselHermitianTheta.TiedSmooth
-import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.WordDerivatives
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0002
+import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.Bundle0006
 
 noncomputable section
 

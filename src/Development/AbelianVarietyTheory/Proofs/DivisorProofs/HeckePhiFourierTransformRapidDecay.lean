@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KFacDifferentiable
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0167
 
 noncomputable section
 

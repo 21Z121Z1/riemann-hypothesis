@@ -1,10 +1,7 @@
 import Mathlib
-import Formalism.ResultantValuation.KoszulSecondDifferential
-import Formalism.ResultantValuation.BoundedCubic
-import Formalism.CyclotomicNorms.StatementA
-import Formalism.CyclotomicNorms.DiscardKernel
-import Formalism.CyclotomicNorms.StatementTW
-import Formalism.CyclotomicNorms.TWAbsUniform
+import Formalism.ResultantValuation.Bundle0001
+import Formalism.CyclotomicNorms.Bundle0001
+import Formalism.CyclotomicNorms.Bundle0002
 
 open Finset Polynomial Formalism.CyclotomicNorms Formalism.ResultantValuation
 

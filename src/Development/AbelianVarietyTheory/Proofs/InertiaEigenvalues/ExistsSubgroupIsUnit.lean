@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AutomorphicArithmetic.CyclotomicBounds.ZmodTwoQuadraticNeZero
+import Development.AutomorphicArithmetic.CyclotomicBounds.Bundle0002
 import Formalism.LocalRingCardinality.HostCls
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GaloisSideTwistedSelmerAuxiliaryPrimes
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsPlaceOverMoveValCc
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0009
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0286
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IndexSpanMatrixEqValDet
 
 noncomputable section

@@ -1,10 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Jets.IsSelfOf
+import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0004
 import Development.AbelianVarietyTheory.Definitions.Jets.TwoPlaces
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.PderivCoeffOptionEquivLeft
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.IntSOfMulEqOne
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0043
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsNotMemForallMem
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CmEmbeddingsIntegralAndDistinctModMaximal
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0127
 
 set_option autoImplicit false
 

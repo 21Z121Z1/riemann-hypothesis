@@ -1,6 +1,6 @@
 import Mathlib
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bdy
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.OrderedCreationCommutesPastLevi
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0044
 
 open Finset Polynomial
 open Formalism.REAL (GlRel KHighest IsWeight qdet Tm qminor)

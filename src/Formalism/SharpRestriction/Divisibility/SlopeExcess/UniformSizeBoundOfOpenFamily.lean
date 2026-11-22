@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.SharpRestriction.Divisibility.AdmissibleRank.NormDecompositionCondOfJetConsequence
-import Formalism.SharpRestriction.AdmissibleParameterJoins.DIVfromGLbud
+import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0010
 import Formalism.SharpRestriction.CuspSpanNormBounds.StandingHypothesesHoldFamily
 
 noncomputable section

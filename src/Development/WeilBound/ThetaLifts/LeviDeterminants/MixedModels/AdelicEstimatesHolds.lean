@@ -1,5 +1,5 @@
 import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.MCGlue
-import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.MCReal
+import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.Bundle0002
 import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.TraceNondeg
 import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.MCPure
 import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.FiniteAdelicEstimatesHolds

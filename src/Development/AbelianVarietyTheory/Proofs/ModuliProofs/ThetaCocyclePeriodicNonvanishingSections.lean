@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SetIntegralFderivEqZeroOfLatticePeriodic
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CauchyRiemannIffDifferentiableOnComplex
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PeriodicCechCocycleSmoothCoboundaryStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0003
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0007
 open Complex Matrix
 open scoped ContDiff BigOperators Real
 open Filter Topology

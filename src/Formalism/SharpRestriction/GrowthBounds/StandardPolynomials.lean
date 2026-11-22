@@ -1,7 +1,6 @@
 import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity
-import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.RestAssumptionsOfThreeInterfaces
-import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.RestTCore
-import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.ColTop
+import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.Bundle0010
+import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.Bundle0014
 import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.ColumnPolynomialCovectorZero
 
 noncomputable section

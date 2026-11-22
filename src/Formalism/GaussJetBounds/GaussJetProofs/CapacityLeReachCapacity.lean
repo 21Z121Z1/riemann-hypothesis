@@ -1,5 +1,4 @@
-import Formalism.GaussJetBounds.GenLogInverse
-import Formalism.GaussJetBounds.StatementA
+import Formalism.GaussJetBounds.Bundle0001
 import Formalism.IncomingBounds.FlowDegreeBounds.PadicValFactorialRatioProd
 
 noncomputable section

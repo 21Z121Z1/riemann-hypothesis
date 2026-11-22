@@ -1,7 +1,7 @@
-import Development.EtaleCohomology.EtaleSheaves.LeafExtendCut
-import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsDomainAndIsIntegrallyClosedAtPrimeOfSmoothOfCo
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KrullDimSmoothSurjectiveTotal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AffineSpaceSmoothNormal
+import Development.EtaleCohomology.EtaleSheaves.Bundle0048
+import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0003
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2640
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0124
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry Opposite LateralTheory.E.E4

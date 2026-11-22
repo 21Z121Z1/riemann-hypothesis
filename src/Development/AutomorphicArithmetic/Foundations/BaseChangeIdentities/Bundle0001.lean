@@ -1,0 +1,20 @@
+import Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.FillPre
+import Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.NarrowSwap
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.FinalAllB
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.FrameReading.PJEigB
+import Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.FrameMatching.HeckeEigenvalueFiniteness.FrameEx
+
+-- bundled from Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.BaseChangeNB
+section
+open PositivityTheory.Rg.BcB PositivityTheory.Rg.BcB.F in
+theorem UpperTheory.BaseChangeIdentities.baseChangeNB : PositivityTheory.Rg.BcN.BaseChangeIsobaricN :=
+  Plug2B.bci_of (UpperTheory.HeckeLevelFrameExistence.frameEx_of_fin UpperTheory.BaseChangeIdentities.uSide (FX.candFin_of_jEigFin Tail.JB.jEigFin))
+    UpperTheory.BaseChangeIdentities.FrameWordIdentity.frameBound FinalAllB.frameRead_holdsB
+end
+
+-- bundled from Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.DefiniteNHolds
+section
+theorem UpperTheory.BaseChangeIdentities.baseChangeN : PositivityTheory.Rg.BcN.BaseChangeIsobaricN :=
+  UpperTheory.BaseChangeIdentities.baseChangeN_of UpperTheory.HeckeLevelFrameExistence.candFin
+end
+

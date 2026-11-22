@@ -1,4 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.LowFock
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.Bundle0007
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.BlockAnti
 
 noncomputable section

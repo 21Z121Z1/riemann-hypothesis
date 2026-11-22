@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.ExistsChosenExtremalVector
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExtremalNegativeSets
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemUJsetOfKset
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsKStableOfMemLowKSub
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0312
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0108
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0135
 
 noncomputable section
 

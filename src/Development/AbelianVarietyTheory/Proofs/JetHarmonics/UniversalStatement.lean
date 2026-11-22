@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Jets.JetsOnCopiesCompatibleF
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBCPf
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.SaturationChartsHolds
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SurjectiveOfKerLeMapSupSq
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0006
 
 set_option autoImplicit false
 noncomputable section

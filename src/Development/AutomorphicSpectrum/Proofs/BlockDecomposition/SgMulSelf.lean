@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PairStructureOnLine
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0417
 import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.EigenspaceCyclicDensity.CreationOperators.KoszulDifferentialAnticommutator
 
 open Finset

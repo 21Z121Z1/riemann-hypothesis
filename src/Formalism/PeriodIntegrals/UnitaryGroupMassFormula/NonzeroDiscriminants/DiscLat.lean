@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.DiscrNe
+import Formalism.PeriodIntegrals.Bundle0014
 
 open ModularForm EisensteinSeries UpperHalfPlane
 

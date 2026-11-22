@@ -1,19 +1,9 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.FubiniStudyInvariance.Statements
-import GroundTheory.HeightsAndTheta.Heights.FubiniStudyInvariance.PLinChange
-import GroundTheory.HeightsAndTheta.Heights.FubiniStudyInvariance.PRadial
+import GroundTheory.HeightsAndTheta.Heights.FubiniStudyInvariance.Bundle0001
+import GroundTheory.HeightsAndTheta.Heights.FubiniStudyInvariance.Bundle0002
 import GroundTheory.HeightsAndTheta.Heights.FubiniStudyInvariance.PAmbChart
-import GroundTheory.HeightsAndTheta.Heights.FubiniStudyInvariance.PAmbEq
-import GroundTheory.HeightsAndTheta.Heights.FubiniStudyInvariance.PChartIndep
-import GroundTheory.HeightsAndTheta.Heights.FubiniStudyInvariance.PAmbUnitary
 import GroundTheory.HeightsAndTheta.Heights.FubiniStudyInvariance.PUnitaryInv
-import GroundTheory.HeightsAndTheta.Heights.FubiniStudyInvariance.PFormIntegral
-import GroundTheory.HeightsAndTheta.Heights.FubiniStudyInvariance.PPairMk
-import GroundTheory.HeightsAndTheta.Heights.FubiniStudyInvariance.PInnerSelf
-import GroundTheory.HeightsAndTheta.Heights.FubiniStudyInvariance.L2Inner
-import GroundTheory.HeightsAndTheta.Heights.FubiniStudyInvariance.DiagUnitary
-import GroundTheory.HeightsAndTheta.Heights.FubiniStudyInvariance.PParseval
-import GroundTheory.HeightsAndTheta.Heights.FubiniStudyInvariance.PDefinite
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

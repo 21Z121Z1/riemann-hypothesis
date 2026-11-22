@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericLuDecompositionUnique
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LuFactorsGenerateSameField
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AlgIndepOfSameAdjoin
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericFlagTriangularChange
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0005
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0007
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0001
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0025
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TowerComponentsCompatibleLaws
 
 open scoped Matrix

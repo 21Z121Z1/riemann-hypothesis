@@ -2,7 +2,7 @@ import Formalism.SharpRestriction.CuspSpanNormBounds.FlagEEqHyperbolic
 import Formalism.SharpRestriction.CuspSpanNormBounds.LocalGroupInFamilyNontrivial
 import Formalism.SharpRestriction.CuspSpanNormBounds.UniformConstantsAndStatements
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleClassGroupCardPos
+import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0007
 
 noncomputable section
 

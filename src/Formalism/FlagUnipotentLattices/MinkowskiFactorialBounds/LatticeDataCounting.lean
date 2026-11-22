@@ -1,4 +1,4 @@
-import Formalism.FlagUnipotentLattices.OmSumLong
+import Formalism.FlagUnipotentLattices.Bundle0003
 import Formalism.FlagUnipotentLattices.MinkowskiFactorialBounds.ColonCountWeighted
 import Formalism.HyperbolicPlaceProducts.SecondLevelArithmeticNorm
 

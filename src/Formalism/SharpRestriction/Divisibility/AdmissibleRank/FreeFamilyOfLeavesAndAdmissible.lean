@@ -1,7 +1,6 @@
 import Mathlib
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.ParahoricIdxZ
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.DatumConjInv
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.DatumBlockEigen
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0021
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0013
 import Formalism.DoubleCosetMeasures.LowerUnipotentOrbits.LemmaU
 import Formalism.PeriodIntegrals.ExplicitFormulaCounts.UMultOne
 import Formalism.SharpRestriction.AdmissibleParameterJoins.FamilyAuxiliaryPrimeSize

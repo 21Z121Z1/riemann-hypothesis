@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.RestrictedBoundsWeakenFromSevenToSix
-import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.MemLevelsIff
+import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0012
 
 noncomputable section
 

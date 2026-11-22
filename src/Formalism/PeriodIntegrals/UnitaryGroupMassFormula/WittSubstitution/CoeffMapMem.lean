@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.PeriodIntegrals.WfSubst
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExponentialIntegrality.InvNatMemWf
+import Formalism.PeriodIntegrals.Bundle0017
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExponentialIntegrality.Bundle0002
 
 noncomputable section
 

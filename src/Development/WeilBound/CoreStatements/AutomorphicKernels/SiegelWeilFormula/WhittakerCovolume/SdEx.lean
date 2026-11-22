@@ -1,6 +1,6 @@
-import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.WhittakerCovolume.RelAlg
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSelfdualMeasureHermitianAdelesStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSelfdualMeasureHermitianTuplesStatement
+import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.WhittakerCovolume.Bundle0002
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0699
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0700
 
 namespace PositivityTheory.SiegelWeilFormula.KWhit
 

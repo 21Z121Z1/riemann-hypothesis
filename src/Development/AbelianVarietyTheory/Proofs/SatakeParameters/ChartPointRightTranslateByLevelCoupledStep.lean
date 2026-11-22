@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.UnderTie
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0025
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SmulCompSmul
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LatAdXMulLev
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AbsNormEqOfSplitFactor
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0284
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0106
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.XiAtCongInvariant
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IntegralDivUniformizerOfRedZero
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0066
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions Formalism.L2.Col Formalism.L2.Ker Formalism.L2.DIV GlobalTheory.TwU GlobalTheory.TwV
 open GlobalTheory.TopStep Formalism.L2.Forms Formalism.UG
 

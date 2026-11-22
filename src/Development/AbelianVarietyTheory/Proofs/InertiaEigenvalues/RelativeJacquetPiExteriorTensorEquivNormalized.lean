@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSubquotientOfEquiv
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0105
 
 open GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.JacStages
 

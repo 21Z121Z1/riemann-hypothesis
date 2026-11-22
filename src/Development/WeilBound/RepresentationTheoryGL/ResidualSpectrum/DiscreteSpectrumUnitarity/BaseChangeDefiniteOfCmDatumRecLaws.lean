@@ -1,5 +1,5 @@
 import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.DiscreteSpectrumUnitarity.BcSpeh
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BaseChangeOfHyp
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0847
 
 noncomputable section
 

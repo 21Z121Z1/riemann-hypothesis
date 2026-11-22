@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.RestValBdG
+import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.Bundle0007
 
 noncomputable section
 

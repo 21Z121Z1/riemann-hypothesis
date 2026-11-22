@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.SelfDualAt
-import Formalism.LocalToGlobal.HermitianForms.TiedStep
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0006
+import Formalism.LocalToGlobal.HermitianForms.Bundle0002
 import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.LevGapLoc
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Tjcosets
 

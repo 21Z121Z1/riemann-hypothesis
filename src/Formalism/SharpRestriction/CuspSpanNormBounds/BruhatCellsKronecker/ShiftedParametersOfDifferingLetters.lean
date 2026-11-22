@@ -1,7 +1,7 @@
 import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.OwnEvIntro
 import Formalism.SharpRestriction.CuspSpanNormBounds.ThresholdCubicInequalitySignPattern
 import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.NcardPrimesOverOfSplitsCompl
-import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.PrimeIdealNormRpowSumLe
+import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.Bundle0002
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDRStepB
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDACapTodaVRules
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDACapTodaVGrp
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDACapTodaVCoef
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0260
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0259
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0228
 
 open Matrix
 open scoped ContDiff ComplexConjugate

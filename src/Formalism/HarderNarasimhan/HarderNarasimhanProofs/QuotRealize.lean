@@ -1,4 +1,4 @@
-import Formalism.HarderNarasimhan.QuotRealize
+import Formalism.HarderNarasimhan.Bundle0002
 import Formalism.LatticeSlopes.ExistsSaturatedSlopeEqMuMax
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DiscreteSpanOfLinIndep
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.PlaceSplit

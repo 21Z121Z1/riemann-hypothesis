@@ -1,5 +1,5 @@
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairExistence.WeilEx
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.WeilRepresentationExists
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0013
 
 namespace UpperTheory.Lit
 

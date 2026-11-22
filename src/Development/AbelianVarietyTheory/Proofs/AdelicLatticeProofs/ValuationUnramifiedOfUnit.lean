@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.SqSubLeNormSub
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.HeightOneSpectrumPlacesOverFiniteSet
+import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0010
 open NumberField IsDedekindDomain GlobalTheory.QNorm
 open scoped WithZero
 

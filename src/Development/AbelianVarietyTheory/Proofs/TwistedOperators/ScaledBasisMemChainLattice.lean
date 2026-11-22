@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ExponentTerms
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormalizedAbsCharacterization
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnipotentRadicalBasic
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0003
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0026
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0029
 
 open MeasureTheory ValuativeRel Matrix
 open scoped Pointwise

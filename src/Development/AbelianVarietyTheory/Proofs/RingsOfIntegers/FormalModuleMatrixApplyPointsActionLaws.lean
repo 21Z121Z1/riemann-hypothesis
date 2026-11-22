@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.PlaceAdaptation.AdaptStd
-import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.MvPowerSeriesSubstConstTermsLocalAlgHomSpecStatement
-import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.MaximalIdealFormalPointsFormModuleStatement
+import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0040
+import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0042
 
 set_option autoImplicit false
 noncomputable section

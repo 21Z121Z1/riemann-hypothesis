@@ -1,5 +1,5 @@
-import Development.DiscreteGroups.GlobalIrreducibility.LConvCut
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WhittakerFunctionalTorusValuationBound
+import Development.DiscreteGroups.GlobalIrreducibility.Bundle0013
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0319
 
 noncomputable section
 

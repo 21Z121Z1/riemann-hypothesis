@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DifferentiableAtOfSmooth
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0203
 
 noncomputable section
 

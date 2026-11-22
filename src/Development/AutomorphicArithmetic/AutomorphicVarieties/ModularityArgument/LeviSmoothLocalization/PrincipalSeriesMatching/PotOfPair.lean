@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LeviSmoothLocalization.PotOfPair
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LeviSmoothLocalization.PrincipalSeriesMatching.PotOfFlag
-import Development.AutomorphicArithmetic.AutomorphicVarieties.QuadraticExtensions.IneConj
+import Development.AutomorphicArithmetic.AutomorphicVarieties.QuadraticExtensions.Bundle0002
 
 open NumberField IsDedekindDomain Formalism.ConjugateSelfDual ReciprocityTheory.Gal GlobalTheory.GalOfCusp UpperTheory.V UpperTheory.V.Z.ImaginaryQuadraticEtaCharacter UpperTheory.V.Af
 open scoped Pointwise

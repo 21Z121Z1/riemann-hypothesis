@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.GlobalTheory.GL1.CompactFixesLattice.MemClosureOfMemSS
-import Formalism.LocalToGlobal.GlobalTheory.GL1.CompactFixesLattice.Imports
+import Formalism.LocalToGlobal.GlobalTheory.GL1.CompactFixesLattice.Bundle0001
 
 noncomputable section
 

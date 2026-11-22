@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NotIsPrimZero
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0674
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.ThetaValues.FlatMemLatIffStdLat
-import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.NsmulApplyMemOfMemTensorLat
-import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.IntegrableOnFundamentalDomainOfContinuous
+import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0010
+import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0003
 
 namespace GlobalTheory.TensorLat
 

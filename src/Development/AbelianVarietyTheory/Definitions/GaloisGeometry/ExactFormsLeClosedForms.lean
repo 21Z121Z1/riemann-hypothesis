@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.DifferentiableAtDirD
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsConjFsBasisOfUnitary
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0946
 
 set_option autoImplicit false
 

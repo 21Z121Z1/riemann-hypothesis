@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsCurveVertPointLengthSteps
+import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0048
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsVertPointNagata
 set_option maxSynthPendingDepth 1
 

@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.LeviCartan
-import GroundTheory.AutomorphicForms.SmoothRepSchur
+import GroundTheory.AutomorphicForms.Bundle0017
+import GroundTheory.AutomorphicForms.Bundle0010
 import GroundTheory.AutomorphicForms.MeasuresModulus
 
 noncomputable section

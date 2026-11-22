@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.FrobeniusOrbits.HostDiffSupport
+import Formalism.FrobeniusOrbits.Bundle0001
 import Formalism.FrobeniusOrbits.RealSubfieldLeCompositum
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Inertia
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Decomp

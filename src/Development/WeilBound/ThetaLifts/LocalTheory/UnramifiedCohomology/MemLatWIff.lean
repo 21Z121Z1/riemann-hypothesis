@@ -1,8 +1,8 @@
 import Development.WeilBound.ThetaLifts.LocalTheory.UnramifiedCohomology.MemLineStab
 import Development.WeilBound.ThetaLifts.LocalTheory.UnramifiedCohomology.ExistsSelfDual
 import Development.WeilBound.CoreStatements.LocalThetaKernels.IwasMain
-import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Inertof
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntegerAddConjEqOneOfFormallyUnramified
+import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0315
 import Development.AbelianVarietyTheory.Definitions.Foundations.EqPlaceIdemOfIsPrimeIdem
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 

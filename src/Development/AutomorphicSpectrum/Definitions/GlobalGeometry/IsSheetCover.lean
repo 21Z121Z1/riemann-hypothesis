@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsFundSet
-import Development.AutomorphicSpectrum.Statements.GeometryStatements.NineGeoU
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0005
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0007
 
 noncomputable section
 

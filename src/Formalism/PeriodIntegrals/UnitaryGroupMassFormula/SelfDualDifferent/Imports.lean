@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.SelfDualOfDiff
+import Formalism.PeriodIntegrals.Bundle0015
 
 noncomputable section
 open NumberField

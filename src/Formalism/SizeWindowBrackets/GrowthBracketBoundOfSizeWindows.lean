@@ -1,7 +1,7 @@
 import Formalism.SizeWindowBrackets.GaloisToProductIsIso
 import Formalism.SizeWindowBrackets.GrowthBoundGivesRiemannHypothesis
 import Formalism.SizeWindowBrackets.SecondKindBucket
-import Formalism.SizeWindowBrackets.SlopeExcessBoundExponentZero
+import Formalism.SizeWindowBrackets.Bundle0002
 import Formalism.SizeWindowBrackets.ErrorFormsWeakWindowsFalse
 
 open Finset

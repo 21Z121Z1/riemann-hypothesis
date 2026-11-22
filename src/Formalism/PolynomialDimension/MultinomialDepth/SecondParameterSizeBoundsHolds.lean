@@ -1,4 +1,4 @@
-import Formalism.PolynomialDimension.StatementNum
+import Formalism.PolynomialDimension.Bundle0002
 
 noncomputable section
 

@@ -1,10 +1,9 @@
 import Mathlib
 import Development.WeilBound.ThetaLifts.Reductions.SiegelCore
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SiegelWeilLagrangianTermsAbsTsumLeHeightPoly
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusElementActsOnFrameColumns
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusElementArchimedeanMatrixForm
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelSetArchimedeanNormBound
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSiegelDomainReduction
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1489
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1486
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1523
 
 open NumberField MeasureTheory Matrix Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.AdelicU GlobalTheory.SiegelSet PositivityTheory.ThKR
 open Formalism.UG (cT bc)

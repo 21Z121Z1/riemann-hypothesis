@@ -1,5 +1,4 @@
-import Formalism.PeriodIntegrals.HasseJidPow
-import Formalism.PeriodIntegrals.HassePresH
+import Formalism.PeriodIntegrals.Bundle0034
 
 noncomputable section
 

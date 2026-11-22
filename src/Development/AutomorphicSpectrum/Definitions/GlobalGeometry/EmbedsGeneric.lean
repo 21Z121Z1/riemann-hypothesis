@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.SplitComps
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsSncModel
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0011
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0008
 
 noncomputable section
 

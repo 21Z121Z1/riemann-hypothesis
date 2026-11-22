@@ -1,9 +1,9 @@
 import Mathlib
-import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.IsDerAt0
-import Development.WeilBound.CoreStatements.HodgeTatePoints.ExtTensor
-import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatBcTors
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueTangentDualNumberStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsDenominatorRegular
+import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.Bundle0020
+import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0006
+import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0010
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0022
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0017
 
 open CategoryTheory Limits AlgebraicGeometry MonoidalCategory CartesianMonoidalCategory MonObj TensorProduct NumberField
 open GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.BT GlobalTheory.CompanionTheory.Ar.Num.FamEx

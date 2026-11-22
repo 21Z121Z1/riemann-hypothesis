@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.CupSymbolUnramified
-import GroundTheory.ProfiniteCohomology.LocalClassFormation.CupSymbolNorm
+import GroundTheory.ProfiniteCohomology.LocalClassFormation.Bundle0001
 import GroundTheory.LocalFields.LocalArtinBaseChange
 set_option maxSynthPendingDepth 1
 

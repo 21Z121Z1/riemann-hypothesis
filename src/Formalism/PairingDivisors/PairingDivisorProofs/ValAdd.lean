@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PairingDivisors.StatementA
+import Formalism.PairingDivisors.Bundle0001
 import Formalism.PairingDivisors.StatementN
 import Formalism.PairingDivisors.PairingDivisorProofs.Height
 

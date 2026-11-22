@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.NormBoundOfTorsionCharacter
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.GlintPrincRelIndexNeZero
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0002
 
 noncomputable section
 

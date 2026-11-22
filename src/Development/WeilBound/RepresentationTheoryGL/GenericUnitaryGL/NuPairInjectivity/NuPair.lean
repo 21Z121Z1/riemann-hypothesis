@@ -1,9 +1,9 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.NuPairInjectivity.DerivSub
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.BernsteinZelevinskyGL.TopAdm
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NuPairOfDerivativesJacquetStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JmThetaHoldsStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivativeJacquetHoldsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0775
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0524
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0520
 
 namespace GlobalTheory.RgGu.Nup2
 

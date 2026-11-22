@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HilbertKodairaSpencer
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitObj
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueDetGen
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0030
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2446
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2813
 
 set_option autoImplicit false
 

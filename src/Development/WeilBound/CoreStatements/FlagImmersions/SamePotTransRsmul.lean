@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LogResolutionPotentialPullback
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0129
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LogResolutionReindexed
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ArithVarietyReindexed
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogResolutionFunctorialHolomorphicStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0044
 
 noncomputable section
 

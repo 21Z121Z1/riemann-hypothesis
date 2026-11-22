@@ -1,7 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsThetaMeanSquareNorm
-import Development.AbelianVarietyTheory.Definitions.Divisors.ExtAlong
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsPow8F
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0011
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0036
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField MeasureTheory
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.GeometryOfNumbersTheory

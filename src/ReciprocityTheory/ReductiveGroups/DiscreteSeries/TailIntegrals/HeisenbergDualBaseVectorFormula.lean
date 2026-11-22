@@ -1,4 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.HermMatrixMulVecFirst
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.Bundle0007
 
 noncomputable section
 

@@ -1,6 +1,6 @@
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WittEndomorphism.FlogConstantCoeff
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.WfRing
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.WfSubst
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0012
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0014
 
 namespace PI.WfEndProof
 

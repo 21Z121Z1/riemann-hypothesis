@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.IntegralityFromMetricOfOrthogonalityWindow
-import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.BePhiAddLeft
+import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0014
 
 noncomputable section
 

@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.RecAct
-import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.FramesTr
+import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0009
+import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0003
 
 noncomputable section
 

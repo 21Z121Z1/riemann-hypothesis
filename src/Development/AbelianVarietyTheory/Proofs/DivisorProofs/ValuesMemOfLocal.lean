@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaximalIdealEqJointEigen
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0233
 
 set_option autoImplicit false
 noncomputable section

@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.IsSatFrame
-import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.FormalGroupLawLogarithm
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0011
 import Development.AbelianVarietyTheory.Definitions.Jets.TwoPlaces
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NonemptyClosedValuedExtensionOfCDVR
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ChartLocalDepthLeOfValuedExtensionBound
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ProdDetMemHaO
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0120
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0116
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0015
 import Formalism.LocalToGlobal.ProjectiveLattices.PlaceBelow
 import Formalism.LocalToGlobal.ProjectiveLattices.SatLeaves
 import Formalism.LocalToGlobal.ProjectiveLattices.CompSplitPfB

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.FlagMinor
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
 
 namespace GlobalTheory.CompanionTheory.Ar.Num
 

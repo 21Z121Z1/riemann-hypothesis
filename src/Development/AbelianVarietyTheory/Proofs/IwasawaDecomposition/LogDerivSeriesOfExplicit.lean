@@ -1,13 +1,10 @@
 import Mathlib
-import Formalism.GL3MeanSquares.PrimeCountAsymptoticInProgressions
-import Formalism.SharpRestriction.InertJacobiLevels.AsmIface
-import Formalism.CyclotomicNorms.StatementI
-import Development.AbelianVarietyTheory.Definitions.Foundations.RayPrimes
-import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExplZeta
-import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExplChi
-import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.LogDerOne
-import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ZeroCount
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Psi0ZeroFreeRegionBoundStatement
+import Formalism.GL3MeanSquares.Bundle0001
+import Formalism.SharpRestriction.InertJacobiLevels.Bundle0007
+import Formalism.CyclotomicNorms.Bundle0001
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0009
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0158
 
 open Finset ArithmeticFunction Filter Topology
 

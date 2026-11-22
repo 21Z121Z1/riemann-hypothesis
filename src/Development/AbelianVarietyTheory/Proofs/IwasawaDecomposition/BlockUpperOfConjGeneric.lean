@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BlockUpperOfGenericCharacter
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0001
 
 namespace GlobalTheory
 namespace GenericCharBlockConj

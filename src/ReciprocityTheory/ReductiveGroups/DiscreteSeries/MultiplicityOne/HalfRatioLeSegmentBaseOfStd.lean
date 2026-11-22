@@ -1,5 +1,5 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.MinorsOnOfDD
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.StCut1p
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.Bundle0012
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.Bundle0006
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.UnitaryGroupStructuralFacts
 
 noncomputable section

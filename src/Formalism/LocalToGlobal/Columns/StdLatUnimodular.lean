@@ -1,8 +1,7 @@
 import Mathlib
 import Formalism.HermitianLattices.StatementLat
-import Formalism.HermitianLattices.DualOrthSum
-import Formalism.HermitianLattices.NeighbourConstruct
-import Formalism.SatakeDualWeyl.StatementB
+import Formalism.HermitianLattices.Bundle0001
+import Formalism.SatakeDualWeyl.Bundle0003
 import Formalism.LocalToGlobal.Columns.AbelianHostFieldConditions
 
 open NumberField IsDedekindDomain Module

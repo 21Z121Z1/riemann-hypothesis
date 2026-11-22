@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsHodgeFlagMinorTrdeg
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0017
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PFlagRatioTrdeg
 set_option maxSynthPendingDepth 1
 

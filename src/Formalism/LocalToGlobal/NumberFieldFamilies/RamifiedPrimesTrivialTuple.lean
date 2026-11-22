@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.UnitaryNorms.CharDiv
+import Formalism.LocalToGlobal.UnitaryNorms.Bundle0007
 import Formalism.LocalToGlobal.UnitaryNorms.UnrAEPf
 
 noncomputable section

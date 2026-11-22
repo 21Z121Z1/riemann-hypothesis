@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncChartPoint
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsSncModel
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0004
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0008
 open MvPolynomial ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.AI.I2 ReciprocityTheory.ChartRestriction.G.AI.I4 ReciprocityTheory.AnForm.M ReciprocityTheory.AnForm.P GlobalTheory.CompanionTheory.Ar.Cmp GlobalTheory.CompanionTheory.Ar.PB GlobalTheory.CompanionTheory.Ar.SncRes
 
 noncomputable section

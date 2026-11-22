@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CabsGenEqOneOfNormPin
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1588
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.FramedPointsLiftToLevelCover
 
 noncomputable section

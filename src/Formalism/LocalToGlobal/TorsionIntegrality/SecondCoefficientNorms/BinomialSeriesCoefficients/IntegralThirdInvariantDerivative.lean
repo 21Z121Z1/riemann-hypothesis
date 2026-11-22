@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.ThirdJetIntegral
-import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.BinomialSeriesCoefficients.SigmaConstantAgrees
+import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.Bundle0003
+import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.BinomialSeriesCoefficients.Bundle0002
 
 noncomputable section
 open scoped BigOperators

@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.LocalToGlobal.KernelLattices.ColumnData
-import Formalism.LocalToGlobal.KernelLattices.ColumnData.IsometryLinkageAtSplitPrime
+import Formalism.LocalToGlobal.KernelLattices.ColumnData.Bundle0003
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.BaseExP
-import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.RecursiveLatticeMembership.MemLamOfIff
+import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.RecursiveLatticeMembership.Bundle0001
 
 noncomputable section
 

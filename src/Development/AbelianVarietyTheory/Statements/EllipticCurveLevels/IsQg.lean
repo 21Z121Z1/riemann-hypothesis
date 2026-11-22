@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.CharacterLevelCondition
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0027
 
 noncomputable section
 

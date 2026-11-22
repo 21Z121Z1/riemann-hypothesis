@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EllipticCharpolySelfReciprocal
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqZeroOfTraceMulOfSeparableGenerated
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0049
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1447
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0116
 open NumberField IsDedekindDomain Matrix Polynomial Filter Formalism.UG GlobalTheory.BCT
 open scoped Classical
 

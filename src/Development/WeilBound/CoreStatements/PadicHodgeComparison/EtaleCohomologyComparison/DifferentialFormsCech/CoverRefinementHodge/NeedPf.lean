@@ -1,9 +1,9 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.DifferentialFormsCech.CoverRefinementHodge.CovRefine
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSmoothCoordinateCover
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FunctorId
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.OmegaPullId
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CovOfLocal
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0139
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0185
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0032
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0079
 
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false

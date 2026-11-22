@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Definitions.ThetaValues.PolyDerivSmulLet
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.MemIffConjugateNotMem
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.DetOfTriangular
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.DifferentiableOnLeftInverse
-import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.MajLactRmul
+import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.Bundle0018
 
 open NumberField Matrix Complex
 open scoped ComplexConjugate

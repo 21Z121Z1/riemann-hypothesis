@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TwTrans
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0032
 
 noncomputable section
 

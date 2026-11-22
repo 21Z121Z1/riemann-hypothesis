@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.HilbertNinetyQuotientHomEqIff
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsLocallyConstantSplitOm
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LcscAdelicUnitaryGroup
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0007
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0067
 
 noncomputable section
 

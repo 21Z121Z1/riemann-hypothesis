@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.KernelIndexForm
+import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.Bundle0002
 import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.XiConn
 import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.DvdOfNormIntCastLt
 

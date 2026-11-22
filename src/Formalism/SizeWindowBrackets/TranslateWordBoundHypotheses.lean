@@ -1,6 +1,6 @@
 import Formalism.SizeWindowBrackets.SlopeHypothesesRounded
 import Formalism.SizeWindowBrackets.ErrorFormsWeakWindowsFalse
-import Formalism.LogVandermondeBounds.LogRatioUpperBound
+import Formalism.LogVandermondeBounds.Bundle0002
 
 open Real
 

@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.InertKernelTheory.ScalG
-import Formalism.LocalToGlobal.InertKernelTheory.FrameInt
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0015
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0013
 import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.FrecAt
 import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.SameChart
 

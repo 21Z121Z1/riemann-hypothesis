@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.ZetaPair
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0002
 
 noncomputable section
 

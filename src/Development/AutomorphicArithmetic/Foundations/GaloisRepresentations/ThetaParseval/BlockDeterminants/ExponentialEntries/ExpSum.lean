@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.BlockDeterminants.ExponentialEntries.RightSub
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFockMap
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyFinitePiTensorSumOfFactorOperators
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1041
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1382
 
 open scoped TensorProduct Matrix
 open Formalism.BasicNotions Formalism.BasicNotions.TH GlobalTheory.RealLift UpperTheory.TP.RP

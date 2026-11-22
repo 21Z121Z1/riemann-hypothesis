@@ -1,4 +1,4 @@
-import Formalism.CyclotomicNorms.DiscardKernel
+import Formalism.CyclotomicNorms.Bundle0001
 
 open Finset
 

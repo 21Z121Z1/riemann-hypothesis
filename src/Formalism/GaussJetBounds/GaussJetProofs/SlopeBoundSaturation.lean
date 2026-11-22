@@ -1,5 +1,5 @@
-import Formalism.GaussJetBounds.GenLogInverse
-import Formalism.GaussJetBounds.StatementS
+import Formalism.GaussJetBounds.Bundle0001
+import Formalism.GaussJetBounds.Bundle0006
 import Formalism.GradedWeylDivisibility.FinalD
 
 noncomputable section

@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.SphericalIntegral
-import GroundTheory.AutomorphicForms.SatakeSymmetric
+import GroundTheory.AutomorphicForms.Bundle0007
 import GroundTheory.LocalFields.LocalFourierHaar
 
 noncomputable section

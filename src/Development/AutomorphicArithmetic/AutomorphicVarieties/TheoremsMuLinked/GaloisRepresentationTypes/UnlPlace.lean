@@ -1,5 +1,5 @@
-import Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.AutP
-import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.LevBasis
+import Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.Bundle0001
+import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.Bundle0014
 
 attribute [-instance] UpperTheory.V.Pr.IsCD.toIsDomain UpperTheory.V.Pr.IsCD.toIsDiscreteValuationRing
 

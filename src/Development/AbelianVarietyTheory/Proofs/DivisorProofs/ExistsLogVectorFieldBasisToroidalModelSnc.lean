@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.HasDefect
-import Development.AbelianVarietyTheory.Definitions.Divisors.HasRigidChart
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0073
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0089
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ToroidalCompactificationBis
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RegularSequenceExtendCoords
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2538
 
 set_option autoImplicit false
 

@@ -1,5 +1,5 @@
-import ReciprocityTheory.GeometryOfNumbers.PluriharmonicAnalysis.MorseGenStA
-import ReciprocityTheory.GeometryOfNumbers.PluriharmonicAnalysis.MorseNormSt
+import ReciprocityTheory.GeometryOfNumbers.PluriharmonicAnalysis.Bundle0001
+import ReciprocityTheory.GeometryOfNumbers.PluriharmonicAnalysis.Bundle0003
 import ReciprocityTheory.GeometryOfNumbers.PluriharmonicAnalysis.TaylorLeviSt
 
 namespace ReciprocityTheory.GeometryOfNumbersTheory

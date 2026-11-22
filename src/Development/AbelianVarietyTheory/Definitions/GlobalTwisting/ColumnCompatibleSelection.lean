@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ValidForConstructedPointClassesEventuallyWorking
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.SquareIntegrableColumnsCompatible
-import Formalism.LocalToGlobal.ThresholdSelection
+import Formalism.LocalToGlobal.Bundle0002
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.STiesR
 import Formalism.LocalToGlobal.IndefiniteReal.RealTB
 import Formalism.LocalToGlobal.Divisibility.NumericScaleExponentEqExtended

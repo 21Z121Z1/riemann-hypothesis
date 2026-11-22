@@ -1,6 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TransferIndices.BlockMain
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TransferIndices.SumIndexFormula
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TransferIndices.Bundle0006
 
 noncomputable section
 

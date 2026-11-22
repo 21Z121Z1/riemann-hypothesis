@@ -1,11 +1,11 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StVarWirtinger
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StDiscriminantSheetCover
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSheetComass
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0060
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0056
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0105
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSheetAreaCompare
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSheetImageAreaSet
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PNullSmaller
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PBadSetSmaller
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0093
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0030
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0011
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

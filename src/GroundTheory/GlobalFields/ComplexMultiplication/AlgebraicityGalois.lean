@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.GlobalFields.ComplexMultiplication.AlgebraicityClass
+import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0016
 
 open NumberField Module WeierstrassCurve IntermediateField
 open scoped nonZeroDivisors

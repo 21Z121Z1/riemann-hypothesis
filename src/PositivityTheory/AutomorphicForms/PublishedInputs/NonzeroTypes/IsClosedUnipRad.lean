@@ -1,4 +1,4 @@
-import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.NonzeroLeviEigenvectorExists
+import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.Bundle0004
 import Development.AbelianVarietyTheory.Definitions.Divisors.T2SpaceGeneralLinearGroup
 
 noncomputable section

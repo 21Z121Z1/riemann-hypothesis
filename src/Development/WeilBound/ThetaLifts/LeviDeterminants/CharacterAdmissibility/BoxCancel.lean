@@ -1,4 +1,4 @@
-import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.SchrodingerApplyZeroOfFst
+import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.Bundle0001
 
 noncomputable section
 

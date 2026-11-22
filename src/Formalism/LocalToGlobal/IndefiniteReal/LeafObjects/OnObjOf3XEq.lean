@@ -2,7 +2,7 @@ import Formalism.LocalToGlobal.IndefiniteReal.LeafObjects.MirabolicInclusion
 import Formalism.LocalToGlobal.IndefiniteReal.LeafObjects.FunObj
 import Formalism.LocalToGlobal.IndefiniteReal.ZeroPartEigenvalueConvention
 import Formalism.LocalToGlobal.ProjectiveLattices.PlaceBelow
-import Formalism.LocalToGlobal.ProjectiveLattices.FamilyUniformisationBasePointOrthogonalBis
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0032
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.SlopeBoundSingleLiftOfDefinitions
 
 open Module NumberField IsDedekindDomain

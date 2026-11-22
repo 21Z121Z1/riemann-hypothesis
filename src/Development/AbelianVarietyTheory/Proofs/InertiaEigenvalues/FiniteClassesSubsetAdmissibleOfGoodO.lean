@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ResBound
 import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteLengthOfSmulEqZero
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteQuotientPow
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0201
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0235
 
 noncomputable section
 

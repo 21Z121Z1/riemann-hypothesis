@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.EigenLatDifferent
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ProjSumSumEmbeddingsEqTrace
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DifferentGeneratorDualIntegral
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CapelliComplements.GeneralBFactThird
+import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.Bundle0004
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0015
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0013
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CapelliComplements.Bundle0002
 
 noncomputable section
 

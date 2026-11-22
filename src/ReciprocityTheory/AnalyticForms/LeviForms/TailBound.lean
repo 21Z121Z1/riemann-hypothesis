@@ -1,9 +1,9 @@
 import ReciprocityTheory.AnalyticForms.LeviForms.TailCut
 import ReciprocityTheory.AnalyticForms.PotentialTheory.PLLocalStatement
 import ReciprocityTheory.AnalyticForms.PotentialTheory.Stokes
-import ReciprocityTheory.AnalyticForms.PotentialTheory.PotentialContDiffAt
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0008
 import ReciprocityTheory.AnalyticForms.PotentialTheory.SNCAtlas
-import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShift
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0006
 import ReciprocityTheory.AnalyticForms.LeviForms.TailBoundB
 
 namespace ReciprocityTheory.AnForm.P

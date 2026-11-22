@@ -1,5 +1,5 @@
 import Formalism.CharacterColumnKernels.StatementN
-import Formalism.CharacterColumnKernels.IdempotentNormalForms.LenCokerOfDetNeZero
+import Formalism.CharacterColumnKernels.IdempotentNormalForms.Bundle0002
 
 open Module IsDiscreteValuationRing
 

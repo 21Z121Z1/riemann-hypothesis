@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.MatrixMeasurableSpace
-import Development.AbelianVarietyTheory.Definitions.Foundations.SmoothPartStable
-import Formalism.SatakeDualWeyl.StatementF
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0002
+import Formalism.SatakeDualWeyl.Bundle0001
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsSubquotientDetRepParInd
 import Development.AbelianVarietyTheory.Definitions.Divisors.EqOfHasValueAtInfinite
 

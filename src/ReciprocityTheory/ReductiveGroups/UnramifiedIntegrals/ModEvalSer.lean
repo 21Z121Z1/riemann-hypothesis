@@ -1,6 +1,6 @@
 import Mathlib
-import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModDefs
-import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.CoeffRescaleExpandOfNotDvd
+import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0002
+import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0006
 
 noncomputable section
 open scoped BigOperators Classical UpperHalfPlane MatrixGroups CongruenceSubgroup Manifold

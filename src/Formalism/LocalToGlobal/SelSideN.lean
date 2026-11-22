@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.SelSide
+import Formalism.LocalToGlobal.Bundle0002
 import Formalism.LocalToGlobal.IndefiniteReal.DoubleCosetOperators.TwistedCharacterValue
 
 noncomputable section

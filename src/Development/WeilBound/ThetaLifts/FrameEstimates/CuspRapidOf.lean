@@ -1,7 +1,7 @@
-import Development.WeilBound.ThetaLifts.FrameEstimates.TowerRallisLemma
-import Development.WeilBound.ThetaLifts.FrameEstimates.LatMeas
+import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0006
+import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0004
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsSmoothModerateOfIsAutFunSm
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NonarchimedeanGroupOfIsCompactIsOpen
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0331
 
 noncomputable section
 

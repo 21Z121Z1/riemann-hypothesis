@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ValLast
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ThetaIdentityOfMapsAll
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0023
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0015
 
 set_option genSizeOfSpec false
 set_option genInjectivity false

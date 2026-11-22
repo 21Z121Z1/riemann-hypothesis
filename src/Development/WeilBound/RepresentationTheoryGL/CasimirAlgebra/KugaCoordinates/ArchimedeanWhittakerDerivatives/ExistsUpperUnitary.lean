@@ -1,6 +1,6 @@
 import Mathlib
-import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AdmissibleSmoothVectors.IwaChol
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsUpperMulUnitaryComplex
+import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AdmissibleSmoothVectors.Bundle0001
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0034
 
 namespace PositivityTheory.Rg.Cz
 

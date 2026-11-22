@@ -1,8 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.QuadraticFormIdeleValuesMemNhdsOne
-import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.SqSubLeNormSub
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.HigherUnitsLeSquaresHigherUnits
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0019
+import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0011
 open NumberField IsDedekindDomain
 open scoped Topology
 set_option maxHeartbeats 1000000 in

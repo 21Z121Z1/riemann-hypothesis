@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsOrbitProd
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsLevelProjLevelProj
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0021
 
 noncomputable section
 

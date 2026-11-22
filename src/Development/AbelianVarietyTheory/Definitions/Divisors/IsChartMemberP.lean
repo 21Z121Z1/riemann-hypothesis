@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsChartMember
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0075
 
 noncomputable section
 

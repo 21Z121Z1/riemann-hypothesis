@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.TsumIdealEqSumClassGroup
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IdealSumPeriodicDilate
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsSmoothHomogeneousHasSumUnitSmul
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0005
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0048
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0023
 
 open NumberField IsDedekindDomain NumberField.mixedEmbedding MeasureTheory Complex Classical
 open scoped ContDiff nonZeroDivisors

@@ -1,0 +1,28 @@
+import Mathlib
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0068
+import CompanionTheory.RealGroups.UnitaryAdmissibility.ArchimedeanUnitaryDual.StDefinite
+import CompanionTheory.AutomorphicTheory.TemperedLocalSpectra.ZelevinskyClassification.Imports
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0003
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.GlobalTheory.ParabolicInductionFiniteLength
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0175
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JhMultSubAddQuot
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0201
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0362
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0237
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0694
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0049
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0584
+
+-- bundled from CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.FactorizationStatementStatement
+section
+open CompanionTheory.Rg.Fl
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.FactorizationStatement : StFactor := by
+  first | exact @GlobalTheory.CompanionTheory.RgFl.stFactor | exact GlobalTheory.CompanionTheory.RgFl.stFactor | (intros; apply GlobalTheory.CompanionTheory.RgFl.stFactor <;> assumption)
+end
+
+-- bundled from CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.SocleOfMultiplicityOne
+section
+
+end
+

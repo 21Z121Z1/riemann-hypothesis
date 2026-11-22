@@ -1,5 +1,5 @@
 import Development.EtaleCohomology.EtaleDuality.PointClasses
-import Development.EtaleCohomology.KummerTheory.AdicDegPf
+import Development.EtaleCohomology.KummerTheory.Bundle0002
 
 noncomputable section
 open GlobalTheory.EtC

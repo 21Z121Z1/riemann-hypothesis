@@ -1,12 +1,11 @@
 import Mathlib
 import Formalism.QuotientMetricDivisors.StatementK
 import Formalism.QuotientMetricDivisors.RatHermLcvTwist
-import Formalism.QuotientMetricDivisors.EigenRatHermLcv
-import Formalism.QuotientMetricDivisors.ClassSumDualLe
-import Formalism.QuotientMetricDivisors.ClassSumDualGeF
+import Formalism.QuotientMetricDivisors.Bundle0004
+import Formalism.QuotientMetricDivisors.Bundle0001
+import Formalism.QuotientMetricDivisors.Bundle0002
 import Formalism.QuotientMetricDivisors.UntwistedChoice
-import Formalism.QuotientMetricDivisors.HeightBoundExactNorms
-import Formalism.QuotientMetricDivisors.Complement2Normaliser
+import Formalism.QuotientMetricDivisors.Bundle0003
 import Formalism.QuotientMetricDivisors.ScalarLiftLowerBoundRows
 
 open Module NumberField IsDedekindDomain

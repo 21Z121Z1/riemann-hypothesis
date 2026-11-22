@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.AestronglyMeasurableQuotMeasureIffLift
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.IntegrableOnFundamentalDomainOfCocompact
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0002
 
 open MeasureTheory Set GlobalTheory.AutomorphicL2Unitary
 open scoped ENNReal Pointwise

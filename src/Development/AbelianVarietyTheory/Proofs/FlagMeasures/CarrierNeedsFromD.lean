@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSETopFinal
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0317
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.TransferSmoothAtBuiltPlace
 import Formalism.HermitianCurvature.JcRadialModuleFormOfParts
 

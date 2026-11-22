@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.SharpRestriction.Divisibility.SchurIrreducible
-import Development.AbelianVarietyTheory.Definitions.Foundations.IsFockIPOfFockData
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0012
 
 noncomputable section
 namespace GlobalTheory.FiltrationEquivalenceRelation

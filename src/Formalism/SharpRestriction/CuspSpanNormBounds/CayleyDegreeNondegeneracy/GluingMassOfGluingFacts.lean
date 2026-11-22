@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.CuspSpanNormBounds.CayleyDegreeNondegeneracy.CardOrbitMulCardStabilizer
+import Formalism.SharpRestriction.CuspSpanNormBounds.CayleyDegreeNondegeneracy.Bundle0006
 import Formalism.ThetaLiftIndependence.ThetaOrbitSums.LatLiftIndep
 import Formalism.HermitianLattices.FinalNeighbourConstruct
 

@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.GalUnitary
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.GuDefs
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0008
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0009
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.CrystallineBaseChange.CqStmt
 
 namespace GlobalTheory.ConjAut

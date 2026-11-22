@@ -1,11 +1,11 @@
 import Mathlib
-import ReciprocityTheory.DualLattices.CotangentSurjective
-import ReciprocityTheory.DualLattices.EigenLengthProductStatementHolds
-import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsTight
-import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.StepOrderRes
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ComapFgOfValuationRing
+import ReciprocityTheory.DualLattices.Bundle0005
+import ReciprocityTheory.DualLattices.Bundle0020
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0003
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0004
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0001
 import Development.WeilBound.CoreStatements.HodgeTatePoints.RbProj
-import Development.WeilBound.CoreStatements.HodgeTatePoints.RbTriang
+import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0008
 
 open ReciprocityTheory.PGsh.L2 ReciprocityTheory.PGsh.Up GlobalTheory.CompanionTheory.Ar.GR
 open scoped Matrix

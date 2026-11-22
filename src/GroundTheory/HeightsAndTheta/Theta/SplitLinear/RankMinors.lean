@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsRowsLinearIndependent
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0020
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Theta

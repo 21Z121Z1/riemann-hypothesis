@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.SharpRestriction.Divisibility.LiftErrorLocal
 import Formalism.SharpRestriction.Divisibility.LocalNonemptiness.LiftErrorLocal
 import Formalism.LocalRingCardinality.Lemmas
-import Formalism.LocalRingCardinality.DataParamsT
+import Formalism.LocalRingCardinality.Bundle0003
 
 noncomputable section
 

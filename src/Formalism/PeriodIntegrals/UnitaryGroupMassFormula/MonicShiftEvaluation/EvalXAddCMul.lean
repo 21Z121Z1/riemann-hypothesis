@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.HermitianCurvature.StatementQ
-import Formalism.FormalDegreeBessel.FinalWR
+import Formalism.FormalDegreeBessel.Bundle0001
 
 open Polynomial
 

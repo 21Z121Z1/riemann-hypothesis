@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUSplittingInl
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ImportsBis
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1549
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0273
 import Development.AbelianVarietyTheory.Definitions.Foundations.T2SpaceAdeleRing
 
 noncomputable section

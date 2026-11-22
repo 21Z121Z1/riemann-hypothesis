@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LogDivSqrtLeFourExp
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.BadRowsShareBoundTwoPrimesStatement
-import Formalism.SharpRestriction.ElevenLe
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0068
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0210
+import Formalism.SharpRestriction.Bundle0001
 import Formalism.LocalRingCardinality.DataParams
 
 noncomputable section

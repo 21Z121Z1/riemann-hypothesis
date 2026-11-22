@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.BdIntEqZeroOfPrimitive
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.CompletedLFunctionNeZeroOfReNonpos
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0002
 
 open Complex DirichletCharacter ArithmeticFunction MeasureTheory Filter Topology
 

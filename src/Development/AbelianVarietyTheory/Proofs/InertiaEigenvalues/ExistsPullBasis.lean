@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.OnePlusPowerAssembly
+import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0001
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemOfAssembleMem
 
 noncomputable section

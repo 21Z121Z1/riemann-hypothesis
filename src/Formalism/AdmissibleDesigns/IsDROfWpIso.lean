@@ -1,6 +1,5 @@
-import Formalism.AdmissibleDesigns.MultVZeroOfSubsingleton
-import Formalism.AdmissibleDesigns.LocCont
-import Formalism.AdmissibleDesigns.MsContW
+import Formalism.AdmissibleDesigns.Bundle0005
+import Formalism.AdmissibleDesigns.Bundle0006
 
 variable [hT2Core : Fact ReciprocityTheory.ChartRestriction.T2.Core]
 

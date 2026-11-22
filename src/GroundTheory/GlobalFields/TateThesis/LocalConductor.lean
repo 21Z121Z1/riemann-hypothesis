@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.GlobalFields.TateThesis.NoSmallSubgroups
+import GroundTheory.GlobalFields.TateThesis.Bundle0002
 
 namespace GroundTheory.Global
 

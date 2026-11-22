@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SignatureExists
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0003
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IntegralConjInnerMulInnerOfIsEmptyEquiv
 import Development.AbelianVarietyTheory.Definitions.Foundations.HermitianSpaceBaseLatticeEqFrameLattice
 

@@ -1,5 +1,5 @@
 import Formalism.ZeroFreeRegion.SmallHeightLogDeriv
-import Formalism.ZeroFreeRegion.ZetaLogDerivativeBounds.LdrMid
+import Formalism.ZeroFreeRegion.ZetaLogDerivativeBounds.Bundle0006
 
 open Complex
 

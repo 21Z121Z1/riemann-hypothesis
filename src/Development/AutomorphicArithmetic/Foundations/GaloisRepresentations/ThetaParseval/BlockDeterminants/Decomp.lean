@@ -1,9 +1,9 @@
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SchurStep
-import Development.WeilBound.ThetaLifts.LatticeBasics.CommuteTheta
-import Development.WeilBound.ThetaLifts.LatticeBasics.EulerProd
-import Development.WeilBound.ThetaLifts.TowerModels.StabEx
+import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0017
+import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0011
+import Development.WeilBound.ThetaLifts.TowerModels.Bundle0006
 import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.TracePiReal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdeleEqZeroOfComp
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2150
 
 noncomputable section
 

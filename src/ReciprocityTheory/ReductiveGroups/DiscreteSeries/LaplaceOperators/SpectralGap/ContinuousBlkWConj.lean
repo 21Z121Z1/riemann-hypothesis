@@ -1,6 +1,6 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.SpectralGap.BesselIntegralSquareIntegrable
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.UHMulInv
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MulVecFixOfSupp
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.SpectralGap.Bundle0001
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.Bundle0008
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0049
 
 noncomputable section
 

@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepAdmRec
-import Formalism.LocalToGlobal.InertKernelTheory.ScalG
+import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.Bundle0006
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0015
 import Formalism.LocalToGlobal.InertKernelTheory.DefsRepLt
 import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.FrecAt
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension

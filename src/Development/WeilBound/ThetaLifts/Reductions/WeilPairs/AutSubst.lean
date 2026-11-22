@@ -1,5 +1,5 @@
-import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutDef
-import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutSubstA
+import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0003
+import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0015
 
 noncomputable section
 

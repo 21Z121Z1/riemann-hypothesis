@@ -1,9 +1,9 @@
 import Mathlib
-import GroundTheory.ProfiniteCohomology.CharactersDefs
-import GroundTheory.ProfiniteCohomology.Colimit
+import GroundTheory.ProfiniteCohomology.Bundle0002
+import GroundTheory.ProfiniteCohomology.Bundle0005
 import GroundTheory.ProfiniteCohomology.ContinuousCochains.LongExactSequence
 import GroundTheory.ProfiniteCohomology.CupProducts
-import GroundTheory.TateCohomology.Characters
+import GroundTheory.TateCohomology.Bundle0006
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.ProfCoh

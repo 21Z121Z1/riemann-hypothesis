@@ -1,3 +1,3 @@
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DiscreteSeriesUnitarySmoothBasicStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0076
 import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Imports
 import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr

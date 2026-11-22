@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.TraceDefinitePairsEqAutomorphicTrace
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteClassesFixedGammaIrr
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DpairEigenRootNormSq
+import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1328
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1065
 open Matrix NumberField GlobalTheory.LKTrip GlobalTheory.LKRes GlobalTheory.LKMid GlobalTheory.LKCount GlobalTheory.LKCx
 open scoped TensorProduct Classical
 

@@ -1,10 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SplittingProjection
-import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.OverPlaceIntegralForm
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsGlobalUniformizerResidueRepresentatives
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SplitUnitaryGroupIso
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Transport
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Stabstd
+import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0012
+import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0011
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0021
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0003
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0004
 
 noncomputable section
 

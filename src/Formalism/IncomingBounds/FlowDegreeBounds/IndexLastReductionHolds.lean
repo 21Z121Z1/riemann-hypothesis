@@ -1,4 +1,4 @@
-import Formalism.IncomingBounds.IndexLastStep
+import Formalism.IncomingBounds.Bundle0002
 import Formalism.LogFactorialIndices.SignedSubspaceIndex.SubspaceLatticeIndexSigned
 
 noncomputable section

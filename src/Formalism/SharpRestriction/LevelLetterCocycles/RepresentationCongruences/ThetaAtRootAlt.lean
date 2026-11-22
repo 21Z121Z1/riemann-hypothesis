@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.ExistsGLLatBasisOfIsSplitEquiv
+import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.Bundle0001
 
 noncomputable section
 

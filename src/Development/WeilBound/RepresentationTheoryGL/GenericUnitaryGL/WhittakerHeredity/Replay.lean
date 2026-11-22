@@ -1,5 +1,5 @@
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.MirabolicDerivatives.LeibnizDerivatives.GenericProdIff
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerHeredity
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0735
 open GlobalTheory.BZMir.Leib
 
 namespace PositivityTheory.rg.gu.hered2

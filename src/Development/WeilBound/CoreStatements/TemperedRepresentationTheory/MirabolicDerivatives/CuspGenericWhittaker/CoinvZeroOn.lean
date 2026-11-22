@@ -1,6 +1,6 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.MirabolicDerivatives.ColMatMulGlEmbMat
-import GroundTheory.AutomorphicForms.LocallyConstantCompact
+import GroundTheory.AutomorphicForms.Bundle0006
 import GroundTheory.AutomorphicForms.WhittakerGroups
 import GroundTheory.AutomorphicForms.WhittakerCells
 

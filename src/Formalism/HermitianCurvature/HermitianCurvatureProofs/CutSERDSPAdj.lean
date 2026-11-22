@@ -1,6 +1,6 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSERDSCoordAdj
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0288
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSERDSIpInt
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CsliceContDiffAt
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0175
 
 open MeasureTheory Filter Topology
 open scoped ComplexConjugate

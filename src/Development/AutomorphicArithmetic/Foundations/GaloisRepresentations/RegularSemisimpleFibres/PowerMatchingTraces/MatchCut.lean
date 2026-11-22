@@ -1,4 +1,4 @@
-import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.TwistFactor
+import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.Bundle0006
 import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.SplitStable
 
 noncomputable section

@@ -1,10 +1,10 @@
-import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutDef
-import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.ContinuousTheta
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StdCharHalfSymplecticFormRealCoordinatesStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicHomActionRealCoordinatesEqStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HalvedSymplecticFormFiniteRealOrthogonalStatement
-import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.LatRepC
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardTraceAddCharIsStandardCharOfAdmissibleCM
+import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0003
+import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1673
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1213
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1231
+import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0006
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1129
 
 noncomputable section
 

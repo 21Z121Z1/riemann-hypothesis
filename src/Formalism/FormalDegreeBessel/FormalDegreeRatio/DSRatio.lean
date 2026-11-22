@@ -1,5 +1,5 @@
 import Formalism.FormalDegreeBessel.StatementDS
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.QuantumDetHighestWeightHolds
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0005
 
 open Finset Formalism.REAL
 

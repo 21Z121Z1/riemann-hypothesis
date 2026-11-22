@@ -1,5 +1,5 @@
 import Formalism.LocalRingCardinality.DataParams₂
-import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleRanksRankComplement
+import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0004
 
 noncomputable section
 

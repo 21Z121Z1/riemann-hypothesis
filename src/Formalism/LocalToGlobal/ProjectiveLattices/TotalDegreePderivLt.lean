@@ -1,6 +1,6 @@
-import Formalism.LocalToGlobal.ProjectiveLattices.PowMapMemOfPowMulMem
-import ReciprocityTheory.SemistableReduction.AlgAll
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DerAeval
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0003
+import ReciprocityTheory.SemistableReduction.Bundle0023
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0069
 
 set_option autoImplicit false
 

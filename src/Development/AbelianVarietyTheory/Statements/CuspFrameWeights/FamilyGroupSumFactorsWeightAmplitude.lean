@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.FamDefs
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LocOf
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0014
 
 noncomputable section
 

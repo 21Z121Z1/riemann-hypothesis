@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GeometricFlagBases.IsGrRefl
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.ZetaCharacterDivisibility.InsideRefl
-import Development.AbelianVarietyTheory.Definitions.Divisors.GenOf
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0055
 
 noncomputable section
 

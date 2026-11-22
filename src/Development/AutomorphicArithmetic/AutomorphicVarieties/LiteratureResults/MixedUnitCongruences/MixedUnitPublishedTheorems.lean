@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.WeightChange
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.AbelianUnitPowers.Hypotheses2
-import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.OneUseOf
+import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.Bundle0003
 
 namespace UpperTheory.V.Sd
 

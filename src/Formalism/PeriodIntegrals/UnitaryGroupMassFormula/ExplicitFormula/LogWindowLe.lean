@@ -1,5 +1,5 @@
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExplicitFormula.NormSubCtrSq
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExplicitFormula.ExplicitFormulaFromGluing
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExplicitFormula.Bundle0003
 
 noncomputable section
 

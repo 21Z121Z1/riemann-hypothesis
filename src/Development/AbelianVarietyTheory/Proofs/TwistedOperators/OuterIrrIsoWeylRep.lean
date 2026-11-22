@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NonemptyInvFunEquiv
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsPiTensorMvPolynomialProdEquivStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0112
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0119
 
 noncomputable section
 

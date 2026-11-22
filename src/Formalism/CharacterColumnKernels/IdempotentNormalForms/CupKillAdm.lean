@@ -1,4 +1,4 @@
-import Formalism.CharacterColumnKernels.StatGlobalModule
+import Formalism.CharacterColumnKernels.Bundle0004
 
 namespace Formalism.NG
 open Module

@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
-import Development.AbelianVarietyTheory.Definitions.Foundations.HTBasis
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegersEqSumZetaPowStatement
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0011
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0194
 
 open Formalism.BasicNotions Formalism.BasicNotions.Loc GlobalTheory.Cyc
 open scoped Pointwise

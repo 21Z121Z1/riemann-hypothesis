@@ -1,6 +1,6 @@
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.WCoreG
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.MemSecondProjectionIff
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.SaturatedSplitLattice
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.Bundle0005
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.IdxStep
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.IsClosedCongruenceSubgroup
 

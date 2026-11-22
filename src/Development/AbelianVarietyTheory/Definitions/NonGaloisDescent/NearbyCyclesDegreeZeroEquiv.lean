@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsMatrixForm
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.CohomZeroEquivContinuous
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.YonedaAddNaturalityLeft
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0012
 
 noncomputable section
 

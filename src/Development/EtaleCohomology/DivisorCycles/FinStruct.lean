@@ -1,19 +1,11 @@
-import Development.EtaleCohomology.DivisorCycles.ChainPf
-import Development.EtaleCohomology.DivisorCycles.TangentFieldExtension
-import Development.EtaleCohomology.DivisorCycles.ExpVanPf
-import Development.EtaleCohomology.DivisorCycles.DegPoly2
-import Development.EtaleCohomology.DivisorCycles.TangentDegree
-import Development.EtaleCohomology.DivisorCycles.ProjPf
-import Development.EtaleCohomology.DivisorCycles.TanLiePf
-import Development.EtaleCohomology.DivisorCycles.GradePf
-import Development.EtaleCohomology.DivisorCycles.CycSpecQzkPf
-import Development.EtaleCohomology.DivisorCycles.FixScalOf
-import Development.EtaleCohomology.DivisorCycles.CycleCountPf
-import Development.EtaleCohomology.DivisorCycles.DiagScalar2
-import Development.EtaleCohomology.DivisorCycles.AlgStruct2
-import Development.EtaleCohomology.DivisorCycles.CoeMulInv
-import Development.EtaleCohomology.DivisorCycles.SemisPf
-import Development.EtaleCohomology.DivisorCycles.StructPf
+import Development.EtaleCohomology.DivisorCycles.Bundle0002
+import Development.EtaleCohomology.DivisorCycles.Bundle0001
+import Development.EtaleCohomology.DivisorCycles.Bundle0004
+import Development.EtaleCohomology.DivisorCycles.Bundle0003
+import Development.EtaleCohomology.DivisorCycles.Bundle0006
+import Development.EtaleCohomology.DivisorCycles.Bundle0005
+import Development.EtaleCohomology.DivisorCycles.Bundle0007
+import Development.EtaleCohomology.DivisorCycles.Bundle0008
 
 namespace LateralTheory.Fin.Struct
 theorem etale_divisibility_chain_of_key : LateralTheory.DivDb.Chain := by

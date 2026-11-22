@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.FormalModule
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0001
 
 noncomputable section
 

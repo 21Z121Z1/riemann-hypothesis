@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.OrthSubrepresentation
-import Development.AbelianVarietyTheory.Proofs.CharacterTheory.CharacterCosetSumEqZeroOfSubgroupSum
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBlockParabolicSubgroupLeviProjectionStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinsumMemEq
+import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0003
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0253
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0216
 
 open Polynomial GlobalTheory.CuspGL GlobalTheory.BI GlobalTheory.Shin SemidirectProduct Matrix
 open scoped Classical

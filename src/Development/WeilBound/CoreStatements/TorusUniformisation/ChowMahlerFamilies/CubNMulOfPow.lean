@@ -1,5 +1,5 @@
 import Mathlib
-import Development.WeilBound.CoreStatements.HodgeTatePoints.WeilfunCore
+import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0053
 
 noncomputable section
 

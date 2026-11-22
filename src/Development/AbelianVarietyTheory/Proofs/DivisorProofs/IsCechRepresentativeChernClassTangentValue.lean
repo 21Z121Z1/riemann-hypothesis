@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualMapCompDualMap
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoboundarySndTr
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantFormAbelianVarietyTranslateValue
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogChernCocycleContractionInvariantFieldTrivialiStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2699
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2736
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2645
 
 set_option autoImplicit false
 

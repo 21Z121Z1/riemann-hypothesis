@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
-import Development.AbelianVarietyTheory.Definitions.Foundations.HTBasis
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormMemCyclotomicLayerPrimeRpowStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormPrimitiveRootPrimePowSubOnePadicComplexStatement
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0011
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0177
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0146
 
 open Formalism.BasicNotions Formalism.BasicNotions.Loc GlobalTheory.Cyc Polynomial
 

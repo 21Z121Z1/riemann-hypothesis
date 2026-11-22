@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsMirClass
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BlockParabolicUnitriangularSubgroupsGLnPrimeFielStatement
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0005
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0132
 
 noncomputable section
 

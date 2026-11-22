@@ -1,6 +1,6 @@
 import GroundTheory.GlobalFields.Adele.Topology
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.StrongApproximation.SAOpenStatement
-import Development.AutomorphicSpectrum.Proofs.AdelicProofs.RelIndexNeZeroOfIsCompactOfRelOpen
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.StrongApproximation.Bundle0001
+import Development.AutomorphicSpectrum.Proofs.AdelicProofs.Bundle0001
 import Development.WeilBound.CoreStatements.EqualVolumeCompactOpens.Master
 
 noncomputable section

@@ -1,4 +1,4 @@
-import Formalism.FrobeniusContraction.EulerC
+import Formalism.FrobeniusContraction.Bundle0002
 
 noncomputable section
 

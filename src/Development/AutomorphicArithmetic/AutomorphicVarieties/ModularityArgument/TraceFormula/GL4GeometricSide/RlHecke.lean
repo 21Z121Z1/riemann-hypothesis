@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GL4GeometricSide.InnerEq
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsIntegralEqSum
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsThetaInvolution
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0700
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0795
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ContinuousMapGL
 
 noncomputable section

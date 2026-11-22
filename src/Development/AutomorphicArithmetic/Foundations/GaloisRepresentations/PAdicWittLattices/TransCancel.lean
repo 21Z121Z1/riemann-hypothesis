@@ -1,6 +1,6 @@
-import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicWittLattices.SplitsBasic
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicWittLattices.Bundle0004
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GeometricFlagBases.IntegOfMem
-import Development.AutomorphicArithmetic.CommutativeAlgebra.LevDefs
+import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0047
 
 set_option autoImplicit false
 

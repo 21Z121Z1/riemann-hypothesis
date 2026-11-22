@@ -1,8 +1,7 @@
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.SymSum
-import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.Match
+import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.Bundle0001
 import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.ElemMatch
-import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.DefBridge
-import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.UnrQ
+import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.Bundle0005
 
 open MeasureTheory GroundTheory.Automorphic GroundTheory.Automorphic.Spherical GroundTheory.Automorphic.GLnLocal GroundTheory.Automorphic.Iwasawa UpperTheory.ConvolutionTheory.H
 

@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.RestrictsSelf
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.IsLAdicCharOfUnique
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0020
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0007
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.IsLocCompTrivIff
 
 noncomputable section

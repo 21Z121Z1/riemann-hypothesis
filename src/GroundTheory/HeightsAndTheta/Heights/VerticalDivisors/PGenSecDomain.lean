@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.StatementsChowNorm
-import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.ComapMaximalIdealParDVR
+import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Bundle0009
+import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Bundle0005
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.Statements
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.StatementsSectionOrder
 set_option maxSynthPendingDepth 1

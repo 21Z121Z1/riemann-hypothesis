@@ -1,7 +1,5 @@
 import Formalism.LandauZeroFreeBounds.LogDerivRegionChiOf
-import Formalism.LandauZeroFreeBounds.ExceptionalZeroBounds.SumVonMangoldtNotCoprimeLe
-import Formalism.LandauZeroFreeBounds.ExceptionalZeroBounds.AbsZeroTermSecondDifferenceLe
-import Formalism.LandauZeroFreeBounds.ExceptionalZeroBounds.LeOfSecondDifferenceBound
+import Formalism.LandauZeroFreeBounds.ExceptionalZeroBounds.Bundle0001
 
 open Complex Finset ArithmeticFunction
 

@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LatticeFactsAt
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteDivLatticeQuotient
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0106
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0064
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.RedPEqZeroOfDiv
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ChainWideTwistTransport
 

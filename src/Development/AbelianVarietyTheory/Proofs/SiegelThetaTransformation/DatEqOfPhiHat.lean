@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.DatEqZero
-import Formalism.LocalToGlobal.ProjectiveLattices.CuspFree
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsQuotEquiv
 
 open AlgebraicGeometry CategoryTheory NumberField Matrix Complex

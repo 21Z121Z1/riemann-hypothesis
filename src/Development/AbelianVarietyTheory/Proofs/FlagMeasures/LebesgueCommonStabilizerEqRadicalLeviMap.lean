@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NormalFormDualOrthogonalLast
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsNormalFormStabilizerMeasure
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsFundOne
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UEmbMulPEl
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0009
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0166
 
 noncomputable section
 

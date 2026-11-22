@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.PeriodIntegrals.LatDefs
-import Formalism.PeriodIntegrals.SigmaStarEx
+import Formalism.PeriodIntegrals.Bundle0006
+import Formalism.PeriodIntegrals.Bundle0015
 
 noncomputable section
 

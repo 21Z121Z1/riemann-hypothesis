@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsLatMeasurableConst
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GaussDensDefinite
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0011
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CovolEqOfAedisjoint
 
 open MeasureTheory NumberField Matrix Finset

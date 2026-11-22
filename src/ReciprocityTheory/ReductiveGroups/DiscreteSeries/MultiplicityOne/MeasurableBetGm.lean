@@ -1,6 +1,6 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.CutFold
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.Bundle0001
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.JBeEquivB
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.StSInt
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.Bundle0006
 
 noncomputable section
 

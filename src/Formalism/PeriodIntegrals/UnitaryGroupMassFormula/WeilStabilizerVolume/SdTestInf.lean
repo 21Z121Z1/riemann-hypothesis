@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeilStabilizerVolume.SdUniq
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeilStabilizerVolume.DensInfAll
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.RealCharacter
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeilStabilizerVolume.Bundle0025
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0055
 
 noncomputable section
 

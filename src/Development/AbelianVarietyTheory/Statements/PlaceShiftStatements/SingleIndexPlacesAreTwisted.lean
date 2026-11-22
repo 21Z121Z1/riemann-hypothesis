@@ -1,13 +1,13 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.TupleReadBaseTupleEqFamily
-import Development.AbelianVarietyTheory.Definitions.Divisors.ScalOf
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0066
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TraceLatticeLeThetaLatticeAtPlace
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LeafTW1OfAllConjugatesGood
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsIsScalar
-import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.RationalRayLevels
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0029
+import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0016
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DimPartsAtIffBadAndOff
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CoverFieldOfContainsRayField
-import Formalism.LocalToGlobal.UnitaryNorms.CharGal
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0626
+import Formalism.LocalToGlobal.UnitaryNorms.Bundle0007
 
 set_option autoImplicit false
 

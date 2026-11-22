@@ -1,7 +1,6 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.LinkedRig
-import Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.Number
-import Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.AutP
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.IsoOfFrob
+import Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.Bundle0001
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0005
 
 noncomputable section
 

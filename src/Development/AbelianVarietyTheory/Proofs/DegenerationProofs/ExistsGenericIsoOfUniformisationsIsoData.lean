@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NonemptyPullbackGeneric
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExpandsGOfGenericRel
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsGenericRel
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0157
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0101
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0128
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.QkToAkDescendsAlongBaseChange
 
 open CategoryTheory CategoryTheory.Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry NumberField

@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.AdelicCompactOpens.IntAdelesCompactOpen
+import Formalism.LocalToGlobal.AdelicCompactOpens.Bundle0001
 
 namespace PI.IntAdCpctOpenWork
 

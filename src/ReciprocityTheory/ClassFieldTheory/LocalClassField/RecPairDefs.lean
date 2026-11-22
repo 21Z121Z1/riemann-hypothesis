@@ -1,7 +1,7 @@
 import Mathlib
-import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecDefs
+import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0005
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.QZDefs
-import ReciprocityTheory.ClassFieldTheory.LocalClassField.Brauer
+import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0016
 
 namespace ReciprocityTheory.DiscreteGroups.LocalClassField
 

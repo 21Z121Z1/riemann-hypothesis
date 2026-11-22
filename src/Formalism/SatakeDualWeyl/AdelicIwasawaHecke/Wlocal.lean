@@ -1,4 +1,4 @@
-import Formalism.SatakeDualWeyl.StatementW
+import Formalism.SatakeDualWeyl.Bundle0003
 import Formalism.GradedWeylDivisibility.DualWeylDominanceOf
 
 open MvPolynomial

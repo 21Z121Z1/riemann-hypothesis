@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.KappaEndpoints
-import Formalism.FlagUnipotentLattices.GlobalAssemblyDoubled
+import Formalism.FlagUnipotentLattices.Bundle0005
 
 noncomputable section
 

@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HilbertKodairaSpencer
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAHOfIsFactorAH
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.DifferentiableOnProdOfForall
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0030
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2411
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0017
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUniqueThetaCharAtPoint
-import Development.AbelianVarietyTheory.Proofs.ToricGeometry.RiemannFormBijectiveOfWeilNondeg
+import Development.AbelianVarietyTheory.Proofs.ToricGeometry.Bundle0015
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.LBPull
 
 set_option autoImplicit false

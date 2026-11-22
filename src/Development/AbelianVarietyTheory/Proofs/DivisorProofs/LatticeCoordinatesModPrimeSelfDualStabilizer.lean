@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.MemLevEigenIffTransl
-import Development.AbelianVarietyTheory.Definitions.Divisors.CongModRefl
-import Formalism.LocalToGlobal.IndefiniteReal.RhoGeo
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0057
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0028
 import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulVecMemOfFrame
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemHomLatticeIffIntegralMatrixSplitChart

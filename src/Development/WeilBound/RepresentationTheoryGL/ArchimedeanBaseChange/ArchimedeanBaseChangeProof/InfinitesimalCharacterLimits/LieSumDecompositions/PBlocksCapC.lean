@@ -1,6 +1,6 @@
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.LieSumDecompositions.PBlocksCapB
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsExpand
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermFiniteOfSmaller
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1541
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0761
 
 noncomputable section
 

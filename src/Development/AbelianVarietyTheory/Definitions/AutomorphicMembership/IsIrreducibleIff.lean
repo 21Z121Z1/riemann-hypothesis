@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicArithmetic.IntegralCasts.Imports
-import Development.AbelianVarietyTheory.Definitions.Foundations.SmoothPartStable
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0002
 
 noncomputable section
 

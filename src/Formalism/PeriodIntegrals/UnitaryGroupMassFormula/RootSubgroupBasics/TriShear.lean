@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RootSubgroupBasics.TriDefs
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RootSubgroupBasics.Bundle0001
 
 open MeasureTheory
 

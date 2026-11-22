@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.PAdicHodge.SemilinearResidue
+import GroundTheory.PAdicHodge.Bundle0002
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.PAdicHodge

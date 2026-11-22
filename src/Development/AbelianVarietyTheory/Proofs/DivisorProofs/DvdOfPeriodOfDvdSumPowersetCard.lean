@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardDvdSumOfInvariantOfCardStabilizerDvd
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0005
 
 open Pointwise
 

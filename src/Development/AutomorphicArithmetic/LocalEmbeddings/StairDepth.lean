@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumOKEx
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatTensorDependsBelowAndSmallTranslationInvaria
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatTensorVanishesUnlessLastRowBounded
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1823
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1790
 
 noncomputable section
 

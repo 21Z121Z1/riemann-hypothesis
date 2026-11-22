@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.RelatedPairsOrbitalTermEq
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ProjSumSumEmbeddingsEqTrace
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DifferentGeneratorDualIntegral
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapGermEqGenMapGerm
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0003
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0016
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0015
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0013
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0012
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj GlobalTheory.CompanionTheory.Ar
 
 noncomputable section

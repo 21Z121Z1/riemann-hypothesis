@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HodgePeriodGram
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0006
 import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
 open Matrix Complex Filter Topology
 open scoped ComplexOrder ContDiff

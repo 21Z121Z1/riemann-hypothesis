@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.TaIntOfRename
+import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.Bundle0006
 
 noncomputable section
 

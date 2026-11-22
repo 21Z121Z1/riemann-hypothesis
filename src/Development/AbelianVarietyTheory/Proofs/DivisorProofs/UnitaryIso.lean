@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjectiveBundleFormulaOfUnitOnEtalePoints
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TrivV
-import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CotDComp
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsZeroChains
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0359
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0395
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0008
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0400
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0323
 open CategoryTheory Limits AlgebraicGeometry Opposite CochainComplex CochainComplex.HomComplex GlobalTheory.EtC GlobalTheory.EtC.CupSpec
 
 noncomputable section

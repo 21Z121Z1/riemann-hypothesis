@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReindexDblIncM
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeltaTApply
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchurLemmaHeisenbergCommutingThetaOperator
-import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.SymplOHFNegNeg
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1613
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1623
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1892
+import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0003
 
 noncomputable section
 

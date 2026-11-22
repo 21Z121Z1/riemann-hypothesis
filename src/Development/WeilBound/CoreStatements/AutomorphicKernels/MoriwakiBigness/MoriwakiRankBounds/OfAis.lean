@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.DegreeOfIsIntersectionSystem
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.DegreeGenericOfDegree
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0029
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0063
 import Development.WeilBound.CoreStatements.AutomorphicKernels.MoriwakiBigness.MoriwakiRankBounds.OfDegreeGeneric
 import Development.WeilBound.CoreStatements.AutomorphicKernels.MoriwakiBigness.MoriwakiRankBounds.OfUpper
 

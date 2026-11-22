@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RowSubst
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2123
 
 set_option autoImplicit false
 

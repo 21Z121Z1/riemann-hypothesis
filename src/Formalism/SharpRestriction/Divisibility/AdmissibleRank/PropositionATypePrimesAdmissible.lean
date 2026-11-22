@@ -4,10 +4,10 @@ import Formalism.SharpRestriction.Divisibility.ThetaNormsAndLinks
 import Formalism.SharpRestriction.Divisibility.FamilyThetaDenominatorValues
 import Formalism.SharpRestriction.Divisibility.BoundaryLocalData
 import Formalism.SharpRestriction.Divisibility.AdmissibleRank.NoBoundaryComponentOfAbelianAtGenericPoints
-import Formalism.SharpRestriction.Divisibility.ChainOperators.CutDivD
-import Formalism.SharpRestriction.Divisibility.ChainOperators.CutKapD
+import Formalism.SharpRestriction.Divisibility.ChainOperators.Bundle0003
+import Formalism.SharpRestriction.Divisibility.ChainOperators.Bundle0001
 import Formalism.SharpRestriction.Divisibility.ChainOperators.RankInputBounds
-import Formalism.SharpRestriction.Divisibility.ChainOperators.GeometricGenericity
+import Formalism.SharpRestriction.Divisibility.ChainOperators.Bundle0002
 import Formalism.SharpRestriction.Divisibility.IsotypicCorollary
 
 noncomputable section

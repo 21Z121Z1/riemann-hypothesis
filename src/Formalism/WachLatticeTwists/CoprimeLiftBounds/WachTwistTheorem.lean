@@ -1,4 +1,4 @@
-import Formalism.WachLatticeTwists.CoprimeLiftBounds.StatBridgeChiOne
+import Formalism.WachLatticeTwists.CoprimeLiftBounds.Bundle0001
 
 open Finset Classical
 

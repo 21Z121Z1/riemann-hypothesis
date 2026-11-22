@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsPowMemOfMulMemPow
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0019
 
 namespace GlobalTheory
 

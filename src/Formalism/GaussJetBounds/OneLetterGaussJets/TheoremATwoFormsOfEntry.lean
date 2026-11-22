@@ -1,11 +1,11 @@
 import Formalism.GaussJetBounds.OneLetterGaussJets.OneLetterGaussProofs.CapLeOddShiftBound
-import Formalism.GaussJetBounds.GaussJetProofs.WeightsAddOverOrbitsLogLoss
+import Formalism.GaussJetBounds.GaussJetProofs.Bundle0006
 import Formalism.GaussJetBounds.OneLetterGaussJets.OneLetterGaussProofs.TheoremAMonomialOfLemmas
 import Formalism.GaussJetBounds.OneLetterGaussJets.OneLetterGaussProofs.ThmAGen7Of
 import Formalism.GaussJetBounds.OneLetterGaussJets.OneLetterGaussProofs.ThmAGeneric7Of
 import Formalism.GaussJetBounds.OneLetterGaussJets.OneLetterGaussProofs.TwoFormsOfTheoremA
 import Formalism.GaussJetBounds.OneLetterGaussJets.MinWeightSumAddCostAbsBound
-import Formalism.GaussJetBounds.GaussJetProofs.IntegralOperatorsOnJets
+import Formalism.GaussJetBounds.GaussJetProofs.Bundle0007
 
 universe u v w
 

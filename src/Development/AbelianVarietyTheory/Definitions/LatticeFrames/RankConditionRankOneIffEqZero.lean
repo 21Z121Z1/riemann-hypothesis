@@ -4,8 +4,8 @@ import Formalism.SharpRestriction.FamCore
 import Formalism.LocalRingCardinality.SpanPowerMembership
 import Formalism.LocalRingCardinality.SpanPowerMembership.NZRowGat
 import Formalism.LocalRingCardinality.SpanPowerMembership.NZRowW
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NonemptyRecordOfLocStage
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DvdOfEqMulIntegral
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0185
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0085
 
 noncomputable section
 

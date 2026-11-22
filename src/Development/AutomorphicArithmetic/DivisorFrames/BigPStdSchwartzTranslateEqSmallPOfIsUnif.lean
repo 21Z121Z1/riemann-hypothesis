@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicArithmetic.LocalEmbeddings.FinMatchDefs
-import Development.AutomorphicArithmetic.DivisorFrames.ShellSumEqConstOfTwistEqIndicatorDoubleCoset
+import Development.AutomorphicArithmetic.LocalEmbeddings.Bundle0001
+import Development.AutomorphicArithmetic.DivisorFrames.Bundle0009
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardPairFrameBlocksDetAndNegTranspose
 
 namespace UpperTheory.StandardFormChange

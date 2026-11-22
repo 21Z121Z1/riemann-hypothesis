@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.PhMeasCore
+import Formalism.PeriodIntegrals.Bundle0007
 
 open MeasureTheory Matrix Filter Topology
 open scoped InnerProductSpace ContDiff

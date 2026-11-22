@@ -1,6 +1,6 @@
-import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.CTZeroCut
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SatakeParametersOfTwist
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SubsingletonRankZero
+import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0954
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0011
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.IndefiniteReal.DoubleCosetOperators.ImaginaryGeneratorMulDenominator
-import Formalism.LocalToGlobal.Columns.MemWmPerp
+import Formalism.LocalToGlobal.Columns.Bundle0001
 import Formalism.LocalToGlobal.Columns.GenericUnipotentCharacter
 
 noncomputable section

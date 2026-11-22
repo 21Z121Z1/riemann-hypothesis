@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.PairingDivisors.StatementA
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsFinSetSplitPlacesCoprimeConductor
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValIotaLeOfMem
+import Formalism.PairingDivisors.Bundle0001
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0014
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0498
 
 noncomputable section
 

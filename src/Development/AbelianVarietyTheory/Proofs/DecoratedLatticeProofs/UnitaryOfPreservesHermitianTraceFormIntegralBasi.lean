@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsRealCoord
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0009
 
 noncomputable section
 

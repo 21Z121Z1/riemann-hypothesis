@@ -1,10 +1,10 @@
-import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.SplitEig
-import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.UILaws
+import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.Bundle0003
+import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.Bundle0006
 import GroundTheory.AutomorphicForms.CompactAbelianCharacters
 import GroundTheory.GlobalFields.IdeleGroups.GaloisOnAdeles.Action
 import GroundTheory.GlobalFields.TateThesis.IdeleMeasureQuotient
 import CompanionTheory.AutomorphicTheory.UnitriangularMeasure.AdeleCoordinateMeasure.EllipticTorusNorm
-import Development.AutomorphicArithmetic.AdelicQuotients.CentralSectionBaseChange
+import Development.AutomorphicArithmetic.AdelicQuotients.Bundle0009
 
 open NumberField IsDedekindDomain MeasureTheory Matrix Topology Filter
 open Neutral.B1 Formalism.L2.Host Formalism.ConjugateSelfDual GlobalTheory.CuspRep GlobalTheory.GalOfCusp UpperTheory.V UpperTheory.V.Af UpperTheory.V.Published GroundTheory.Global GroundTheory.Automorphic.GJMatrix

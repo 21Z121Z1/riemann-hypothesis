@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBlockImageChi
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PBlockImageTop
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0040
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0076
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PResChiIndex
 set_option maxSynthPendingDepth 1
 

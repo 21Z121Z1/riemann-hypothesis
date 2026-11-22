@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.RayPrimes
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0009
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonemptyRayDataOfNeZero
 
 noncomputable section

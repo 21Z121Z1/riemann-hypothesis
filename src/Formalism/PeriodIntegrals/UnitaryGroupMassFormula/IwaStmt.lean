@@ -1,7 +1,7 @@
-import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirVolumeRatios.VolumeClassRepresentatives.WittLeviObjects
+import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirVolumeRatios.VolumeClassRepresentatives.Bundle0001
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirVolumeRatios.VolumeClassRepresentatives.ChangeOfVariables
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirVolumeRatios.DetNorm
-import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirVolumeRatios.DensityConstant
+import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirVolumeRatios.Bundle0001
 
 noncomputable section
 

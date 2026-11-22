@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SchurStep
 import Development.WeilBound.CoreStatements.LocalThetaKernels.Locrep
-import Development.WeilBound.CoreStatements.LocalThetaKernels.IwasAd
+import Development.WeilBound.CoreStatements.LocalThetaKernels.Bundle0001
 
 noncomputable section
 

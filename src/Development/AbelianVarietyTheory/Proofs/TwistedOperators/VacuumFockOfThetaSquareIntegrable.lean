@@ -1,7 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.VacuumFockVectors
-import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.HermitianSymplecticScalars
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaSquareIntegrable
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0025
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0207
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PureTensorOInjective
 
 noncomputable section

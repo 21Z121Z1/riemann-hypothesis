@@ -2,9 +2,9 @@ import Mathlib
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.KeyBadSt
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsThetaMeanSquareNorm
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.ZhangDimensionPushDownGrassmannianHeightBounds
-import GroundTheory.HeightsAndTheta.Heights.KernelsLattice
+import GroundTheory.HeightsAndTheta.Heights.Bundle0001
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.StatementsBundles
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LeWchartOne
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0105
 import Development.WeilBound.CoreStatements.HodgeTatePoints.LieMultComp
 
 noncomputable section

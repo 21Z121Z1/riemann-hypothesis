@@ -1,7 +1,7 @@
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ShapeOf
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0182
 import Development.AutomorphicArithmetic.CharacterBoxes.ShapeWin
 import Development.AutomorphicArithmetic.CharacterBoxes.SupplyChi
-import Development.AutomorphicArithmetic.CharacterBoxes.Imprimitive
+import Development.AutomorphicArithmetic.CharacterBoxes.Bundle0001
 
 open Formalism.BasicNotions Formalism.MainNotions GlobalTheory.Fc
 

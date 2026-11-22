@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.LocalPublishedTheorems
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsNumberFieldAdjoinEq
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0152
 
 open Formalism.BasicNotions Formalism.BasicNotions.Loc NumberField
 

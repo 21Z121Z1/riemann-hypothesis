@@ -1,6 +1,6 @@
 import Formalism.SizeWindowBrackets.Chain2aCoreNoAnalytic
-import Formalism.LogFactorialIndices.StatementSize
-import Formalism.HarderNarasimhan.QuotRealize
+import Formalism.LogFactorialIndices.Bundle0001
+import Formalism.HarderNarasimhan.Bundle0002
 
 open Module NumberField IsDedekindDomain
 open Formalism.HN

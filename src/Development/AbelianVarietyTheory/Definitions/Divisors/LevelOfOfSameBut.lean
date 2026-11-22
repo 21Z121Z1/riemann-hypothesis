@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.SingleIn
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsRatScalarMulIff
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ToUnitsCompToCircle
 import Formalism.LocalToGlobal.IndefiniteReal.OneMapT
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VStdOfOrthonormalSpan
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0980
 
 set_option autoImplicit false
 

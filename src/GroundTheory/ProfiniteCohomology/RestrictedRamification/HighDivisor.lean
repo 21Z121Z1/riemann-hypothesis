@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.ProfiniteCohomology.Shapiro
-import GroundTheory.ProfiniteCohomology.ColimitUnion
+import GroundTheory.ProfiniteCohomology.Bundle0004
 import GroundTheory.ProfiniteCohomology.CohomologicalDimension.Closed
 import GroundTheory.ProfiniteCohomology.CohomologicalDimension.SubsingletonCohomologyOfPrimaryOfFinite
 import GroundTheory.ProfiniteCohomology.ClassFormations.IsIsoCohomologyMapAlongResSubgroupOfHom

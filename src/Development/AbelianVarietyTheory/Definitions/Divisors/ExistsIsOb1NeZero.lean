@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.PrimitiveStructureSheafDegTwoVanish
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0024
 
 set_option autoImplicit false
 

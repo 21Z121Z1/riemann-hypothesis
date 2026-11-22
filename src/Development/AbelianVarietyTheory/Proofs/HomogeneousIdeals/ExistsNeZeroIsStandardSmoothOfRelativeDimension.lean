@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsApplyEqZeroAndEqOne
-import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.HasAlgebraicChartsOfIsStandardSmooth
+import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0007
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.RingKrullDimQuotientEqOfMemMinimalPrimes
-import ReciprocityTheory.SemistableReduction.AeBlockSphereEvalNeZero
+import ReciprocityTheory.SemistableReduction.Bundle0004
 
 namespace GlobalTheory.AffinePoints
 

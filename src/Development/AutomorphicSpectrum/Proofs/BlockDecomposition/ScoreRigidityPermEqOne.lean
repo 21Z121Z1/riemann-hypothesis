@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TZero
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0024
 
 open Finset GlobalTheory.CompanionTheory.CoefId
 

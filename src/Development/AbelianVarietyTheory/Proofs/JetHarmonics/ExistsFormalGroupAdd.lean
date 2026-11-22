@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Jets.CmLatticeCommutatorPairingPowEqOneOfGoodLift
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.UwEllipticFlow
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CpTransportedTaylorSeriesInChartRingHomLaws
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0011
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.NodalSeriesPeriods
-import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.NatCastMulCoeffOfPderivEq
+import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.Bundle0004
 
 noncomputable section
 

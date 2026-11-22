@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
-import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.TensorLatticeUnitPart
-import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.UnitDualParts
+import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0003
+import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0004
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.CrystallineSubrepresentation
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegersCompleteDVR
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0206
 
 noncomputable section
 

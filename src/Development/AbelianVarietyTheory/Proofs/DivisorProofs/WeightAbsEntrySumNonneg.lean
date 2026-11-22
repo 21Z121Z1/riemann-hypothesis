@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.SemiposAtOfPositive
-import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecZEqZeroOfGenVal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEltPrescribedValuationsBalancedArchimedeanStatement
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0076
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0072
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1581
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2590
 
 set_option autoImplicit false
 set_option synthInstance.maxHeartbeats 400000

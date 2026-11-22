@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.LatticeNormalFormUnipotent
+import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0008
 
 noncomputable section
 

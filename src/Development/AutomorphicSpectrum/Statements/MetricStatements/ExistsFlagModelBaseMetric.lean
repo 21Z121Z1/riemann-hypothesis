@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.FiniteEtaleSurjectiveOfPullback
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsSncModel
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0008
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GlueApplyOfNotInFibre
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFinsetOfMemNhds
 

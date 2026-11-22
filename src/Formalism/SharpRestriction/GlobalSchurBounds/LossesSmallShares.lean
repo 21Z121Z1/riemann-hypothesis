@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.GlobalSchurBounds.PrvFOfFamilyTheoremTiesEventualIncidenceTransport
-import Formalism.SharpRestriction.GlobalSchurBounds.WeightVectorSmallSharesSeven
+import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0002
 
 noncomputable section
 

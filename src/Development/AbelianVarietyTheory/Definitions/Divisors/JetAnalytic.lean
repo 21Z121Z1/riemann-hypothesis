@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.TorsTransport
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HilbertKodairaSpencer
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0017
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0030
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.OmegaFactorization
 
 set_option autoImplicit false

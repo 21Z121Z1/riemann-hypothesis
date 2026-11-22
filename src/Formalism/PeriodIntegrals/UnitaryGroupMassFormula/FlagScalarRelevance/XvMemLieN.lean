@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FlagScalarRelevance.CNeZeroOfSame
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FlagScalarRelevance.Bundle0001
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FlagScalarRelevance.DualExists
 
 noncomputable section

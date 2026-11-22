@@ -1,4 +1,4 @@
-import Development.WeilBound.ThetaLifts.LeviDeterminants.GrowLine
+import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0003
 import Development.WeilBound.ThetaLifts.LeviDeterminants.GrowSplit
 
 noncomputable section

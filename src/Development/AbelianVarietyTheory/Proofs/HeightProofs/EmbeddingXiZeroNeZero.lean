@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasWeil
-import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasSign
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0001
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.WeilIdempotents
-import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.StarPurelyImaginaryEqNeg
+import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.Bundle0003
 
 noncomputable section
 

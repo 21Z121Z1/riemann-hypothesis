@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.LocalDensities.StatementsClosedPointGenericFibre
+import GroundTheory.HeightsAndTheta.Heights.LocalDensities.Bundle0002
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterDivSuppAB
 set_option maxSynthPendingDepth 1
 

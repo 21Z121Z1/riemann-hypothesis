@@ -1,12 +1,12 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.MapBaseTiedSel
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0069
 import Development.AbelianVarietyTheory.Definitions.Divisors.CovolXOfCovol
-import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.EventuallyAllScaleContextsAndOfBoth
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0005
 import Development.AbelianVarietyTheory.Definitions.HeightFunctions.OntoAlong
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.RowETiesB
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.EventuallyConstructedPointHostSizeParametersNumericaStatement
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.MoreOfTiesB
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.PathCoreConditionsOfParametersFreeConditionsStatement
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0109
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0097
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0103
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0104
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions Formalism.L2.Pj Formalism.L2.DIV Formalism.IndefR Formalism.IndefR.Links GlobalTheory.FinalJoin2 GlobalTheory.AtMember GlobalTheory.EX GlobalTheory.EX.OB GlobalTheory.Mem GlobalTheory.Mem.Top GlobalTheory.Mem.Top.Bl GlobalTheory.Fc GlobalTheory.BigTop GlobalTheory.BigOn GlobalTheory.Plug GlobalTheory.PlugPt
 attribute [local instance] Formalism.BasicNotions.Host.cmStar
 

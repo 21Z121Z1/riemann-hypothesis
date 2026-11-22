@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.EpsZeroCompOfIsTanAtG
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsCommonModOfIsDiag
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StepHoldsLocalTangentFramesStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0630
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0661
 
 set_option autoImplicit false
 

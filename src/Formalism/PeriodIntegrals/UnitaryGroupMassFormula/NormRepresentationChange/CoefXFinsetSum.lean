@@ -1,10 +1,10 @@
 import Mathlib
-import Formalism.PeriodIntegrals.PairValDefs
-import Formalism.PeriodIntegrals.NormRepChange
+import Formalism.PeriodIntegrals.Bundle0032
+import Formalism.PeriodIntegrals.Bundle0033
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormRepresentationChange.Development
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormRepresentationChange.NlamFrameMem
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormRepresentationChange.Bundle0001
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormRepresentationChange.CoefXOfMemXS
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormRepresentationChange.CoefXOfMemSpanO
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormRepresentationChange.Bundle0002
 
 noncomputable section
 

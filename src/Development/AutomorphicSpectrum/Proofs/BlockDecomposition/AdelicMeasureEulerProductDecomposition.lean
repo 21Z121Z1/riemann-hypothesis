@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsUnitHermOfDet
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0524
 import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ExistsLocalApproximateIdentity
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0065
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.SelfDualTransport
 
 noncomputable section

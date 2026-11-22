@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.QQMemAdjAlgCpt
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0156
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.ReverseCauchySchwarzHolds
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.GNonneg
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.QuotientMetricDivisors.EigenRatHermLcv
+import Formalism.QuotientMetricDivisors.Bundle0004
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ConjugateWeightLatticeOfGeneral
 
 open Module NumberField IsDedekindDomain

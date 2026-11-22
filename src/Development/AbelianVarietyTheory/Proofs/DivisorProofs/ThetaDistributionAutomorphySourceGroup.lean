@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnitaryOnTheta
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsInverseChart
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0029
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0068
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDualGOfGQ
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaDistributionInvariantRationalTargetStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1392
 
 noncomputable section
 

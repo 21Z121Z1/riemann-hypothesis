@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SumTruncConv
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NormRiemannZetaSubPartialSumLeStatement
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0013
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0021
 open Complex DirichletCharacter ArithmeticFunction MeasureTheory Filter Topology
 
 namespace GlobalTheory.ZeroDetect

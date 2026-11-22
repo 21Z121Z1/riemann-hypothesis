@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameCoord
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1719
 import Development.AbelianVarietyTheory.Definitions.CMLattices.IntegralOf
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LieLetterIntegralInIntegralEigenbasis
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0053
 
 set_option autoImplicit false
 

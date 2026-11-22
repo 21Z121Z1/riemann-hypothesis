@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Statements
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PPrimeFiltrationPoint
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0003
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0005
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Kleiman

@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.PointShiftSt
-import Development.AbelianVarietyTheory.Statements.PrincipalLattices.DimPosOfHasType
+import Development.AbelianVarietyTheory.Statements.PrincipalLattices.Bundle0001
 
 set_option autoImplicit false
 

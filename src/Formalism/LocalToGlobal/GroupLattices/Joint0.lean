@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.GroupLattices.DownNaturalLevelZero
-import Formalism.LocalToGlobal.HermitianForms.BothSym
+import Formalism.LocalToGlobal.HermitianForms.Bundle0006
 
 noncomputable section
 

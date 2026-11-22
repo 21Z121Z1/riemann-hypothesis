@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.UniformizerUnitAndQFactor
-import Formalism.SharpRestriction.LevelLetterCocycles.GCoordProp
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0034
 
 noncomputable section
 

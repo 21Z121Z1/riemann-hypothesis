@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSheetFormCompare
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0086
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PTubeFormCompare
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PlaneIdealTwoOne
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0085
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.BergmanProjective
 set_option maxSynthPendingDepth 1
 

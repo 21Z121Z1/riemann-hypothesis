@@ -1,12 +1,12 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StChartSection
+import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0018
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PSegreChartDim
-import GroundTheory.HeightsAndTheta.Heights.Intersections.IsSmoothMetricOfIsSmoothHerm
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.ConeChart
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.BaseChangeC
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.IntToRat
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0045
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0015
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0005
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0006
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.KleimanNefness.AlgDim
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterBridgeB
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0010
 set_option maxSynthPendingDepth 1
 
 noncomputable section

@@ -1,8 +1,8 @@
-import Formalism.PieriBlockIdeals.StatementLA
+import Formalism.PieriBlockIdeals.Bundle0004
 import Formalism.GradedWeylDivisibility.FinalC
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LDlatLemmas
-import Formalism.PieriBlockIdeals.PieriColumnMinors.PadicValIntProdElevenMultiples
-import Formalism.PieriBlockIdeals.PieriColumnMinors.JointExactExponentStopHigh
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0012
+import Formalism.PieriBlockIdeals.PieriColumnMinors.Bundle0001
+import Formalism.PieriBlockIdeals.PieriColumnMinors.Bundle0004
 
 open MvPolynomial
 

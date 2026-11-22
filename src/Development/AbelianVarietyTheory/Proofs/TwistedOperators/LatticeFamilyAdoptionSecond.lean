@@ -1,15 +1,14 @@
 import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.RealTB
-import Formalism.LocalToGlobal.IndefiniteReal.RealPins
-import Formalism.LocalToGlobal.IndefiniteReal.RealRec
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0035
 import Formalism.LocalToGlobal.IndefiniteReal.DoubleCosetOperators.NMjT
-import Formalism.LocalRingCardinality.DataNChTie
-import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.SemilinearExtensionBases
+import Formalism.LocalRingCardinality.Bundle0002
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0002
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.FractionalBaseInclusion
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsBasisTensor
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FractionFieldEmbeddingCompat
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0024
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0087
 import Formalism.LocalRingCardinality.DataIdx
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ImportsFurther
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0008
 
 namespace GroupAverageFixedPoints
 section

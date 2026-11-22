@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJASSnGeomUBLTools
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0247
 
 open Formalism.FourierDecayAlt
 

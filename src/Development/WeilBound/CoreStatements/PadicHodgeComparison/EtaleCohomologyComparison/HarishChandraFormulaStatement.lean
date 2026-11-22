@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.PullHlComp
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsStrictlySemistable
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsCompletedStrictHens
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0001
 import GroundTheory.PAdicHodge.PerfectoidField
 
 noncomputable section

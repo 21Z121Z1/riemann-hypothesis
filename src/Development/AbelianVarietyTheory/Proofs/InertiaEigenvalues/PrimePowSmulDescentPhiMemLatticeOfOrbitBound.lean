@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsAlgebraMapEqRoot
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSmulMemMMOfEqLphiUAdd
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowSmulPhiMemMM
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0173
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0177
 
 noncomputable section
 

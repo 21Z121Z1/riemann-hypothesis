@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TieTrF
+import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0002
 
 noncomputable section
 

@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.MemSupportSumMonomial
+import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.Bundle0002
 
 noncomputable section
 

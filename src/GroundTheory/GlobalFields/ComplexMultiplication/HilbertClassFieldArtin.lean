@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.GlobalFields.ComplexMultiplication.HilbertClassFieldModels
+import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0018
 import GroundTheory.GlobalFields.ClassFieldConsequences.HilbertClassField
 import GroundTheory.GlobalFields.TateThesis.Chebotarev
-import GroundTheory.GlobalFields.Artin.InflationTower
+import GroundTheory.GlobalFields.Artin.Bundle0002
 import GroundTheory.GlobalFields.Artin.OneDim
 import GroundTheory.GlobalFields.CompletionAtPlace.Inertia
 

@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.StatementG
+import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.Bundle0002
 import Formalism.EllipticTorsion.FormalGroupPointsNoTorsion
 
 open PowerSeries

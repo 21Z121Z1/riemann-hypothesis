@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.FlagBundles.Statements
-import GroundTheory.HeightsAndTheta.Heights.FlagBundles.StatementsSphereLongitude
+import GroundTheory.HeightsAndTheta.Heights.FlagBundles.Bundle0003
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.FlagBundles

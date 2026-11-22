@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.CharZeroFunctionField
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RingKrullDimRingOfIntegers
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfIntersectionLowerHeight
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0043
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0333
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1088
 
 set_option autoImplicit false
 

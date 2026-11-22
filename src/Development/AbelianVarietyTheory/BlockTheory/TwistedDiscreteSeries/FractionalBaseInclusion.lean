@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalRingCardinality.DataNChTie
+import Formalism.LocalRingCardinality.Bundle0002
 
 noncomputable section
 

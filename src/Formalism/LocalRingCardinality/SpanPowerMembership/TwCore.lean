@@ -1,4 +1,4 @@
-import Formalism.LocalRingCardinality.SpanPowerMembership.NStageTrivialCharacterCoeffEq
+import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0010
 
 noncomputable section
 

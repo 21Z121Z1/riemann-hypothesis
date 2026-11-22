@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
 import Formalism.LocalToGlobal.IndefiniteReal.ThPinsR
-import Formalism.LocalToGlobal.ProjectiveLattices.ThClassPins
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0038
 
 set_option autoImplicit false
 

@@ -1,4 +1,4 @@
-import Development.WeilBound.ThetaLifts.SphericalLattices.HoweDefs
+import Development.WeilBound.ThetaLifts.SphericalLattices.Bundle0008
 import Development.WeilBound.ThetaLifts.DoubleEigenvalues.DblEigenW
 
 noncomputable section

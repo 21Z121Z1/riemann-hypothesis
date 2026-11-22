@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EisensteinFunctionalEquation
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0023
 
 noncomputable section
 

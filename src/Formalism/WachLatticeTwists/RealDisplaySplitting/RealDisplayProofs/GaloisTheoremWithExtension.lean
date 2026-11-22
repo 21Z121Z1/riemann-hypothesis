@@ -1,5 +1,5 @@
-import Formalism.WachLatticeTwists.RealDisplaySplitting.RealDisplayProofs.RealDisplayAllWAOf
-import Formalism.WachLatticeTwists.RealDisplaySplitting.RealDisplayProofs.IdempotentRankOneAtPoint
+import Formalism.WachLatticeTwists.RealDisplaySplitting.RealDisplayProofs.Bundle0002
+import Formalism.WachLatticeTwists.RealDisplaySplitting.RealDisplayProofs.Bundle0001
 
 variable [hT2Core : Fact ReciprocityTheory.ChartRestriction.T2.Core]
 

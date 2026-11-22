@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.SectionOfLineBundleOne
-import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IrreducibleDetOfIsRelPrime
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0014
+import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0001
 
 open MvPolynomial
 

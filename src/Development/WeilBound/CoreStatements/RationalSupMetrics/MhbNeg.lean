@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.MetricPeriods.SectionInputs
-import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.PConeTrdeg
-import GroundTheory.HeightsAndTheta.Heights.HeightComparison.IsMultiHomogIdealIff
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0004
+import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Bundle0012
+import GroundTheory.HeightsAndTheta.Heights.HeightComparison.Bundle0003
 
 noncomputable section
 

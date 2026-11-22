@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.KerIso
+import Formalism.PeriodIntegrals.Bundle0006
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DeterminantKernelFiniteness.ExistsNatMulMemFracFam
 
 noncomputable section

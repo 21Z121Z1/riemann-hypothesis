@@ -9,8 +9,8 @@ import Formalism.SharpRestriction.CuspSpanNormBounds.CayleySignature
 import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusProjectedBounds
 import Formalism.SharpRestriction.CuspSpanNormBounds.AdmissibleBoundsFromSource
 import Formalism.SharpRestriction.CuspSpanNormBounds.CongruenceAtSplitFrobeniusHolds
-import Formalism.SharpRestriction.CuspSpanNormBounds.SBridge
-import Formalism.SharpRestriction.CuspSpanNormBounds.LeSCSCl
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0008
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0010
 
 noncomputable section
 

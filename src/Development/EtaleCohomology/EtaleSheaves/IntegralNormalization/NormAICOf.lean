@@ -1,5 +1,4 @@
-import Development.EtaleCohomology.EtaleSheaves.IntegralNormalization.OpenPf
-import Development.EtaleCohomology.EtaleSheaves.IntegralNormalization.AlgClosedOfAic
+import Development.EtaleCohomology.EtaleSheaves.IntegralNormalization.Bundle0001
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry LateralTheory.E.t_E2Cut

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankOfMulEqOne
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantCoeffExpSub
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CompletionLinesOfLatticeAtLevels
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0654
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0576
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachLatticeExpansionAtLowLevelPoints
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LatticeAtLevelsIffUpToLevel
 

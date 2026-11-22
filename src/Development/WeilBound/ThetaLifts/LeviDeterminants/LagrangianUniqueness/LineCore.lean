@@ -1,7 +1,7 @@
 import Development.WeilBound.ThetaLifts.LeviDeterminants.LagrangianUniqueness.RealTest
 import Development.WeilBound.ThetaLifts.LeviDeterminants.LagrangianUniqueness.Imports
 import Development.WeilBound.ThetaLifts.LeviDeterminants.LagrangianUniqueness.LagAlg
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationPreservesSchwartz
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1897
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.AdelicCharacterRationalDual
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaDistributionHeisenbergInvariantStatement
 

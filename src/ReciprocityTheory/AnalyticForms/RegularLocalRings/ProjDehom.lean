@@ -1,6 +1,6 @@
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.SegreIdealIsHomogeneous
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.FromSpecResidueFieldAppTopIso
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjDehomA
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0001
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0009
 
 namespace ReciprocityTheory.AnForm.R
 

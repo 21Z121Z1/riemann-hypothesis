@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsFlagBundleRankOne
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.RegularAlteration
-import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OfSwap2
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SwapSumSwap
-import Development.AbelianVarietyTheory.Definitions.Divisors.LineSCShortExact
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0077
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0025
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0072
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2651
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2764
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0083
 
 set_option autoImplicit false
 

@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.KLettersDegEven
+import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0007
 
 noncomputable section
 

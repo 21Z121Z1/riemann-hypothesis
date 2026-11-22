@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.UnitaryNorms.CharExGen
+import Formalism.LocalToGlobal.UnitaryNorms.Bundle0001
 
 open NumberField IsDedekindDomain Neutral.B1 ReciprocityTheory.Neutral.Bridge.HCFR
 

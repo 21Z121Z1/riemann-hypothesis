@@ -1,10 +1,9 @@
 import Mathlib
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.DecaysZero
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Abstract
-import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.ConvCoef
+import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Bundle0003
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.ContinuousAverage
-import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.InvMemFlagN
-import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.FlagNW
+import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Bundle0004
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.SchurOrthogonalityIndefiniteUnitaryGroupStatement
 
 open MeasureTheory Filter Matrix Formalism.REAL Formalism.MainNotions.S GlobalTheory.FlagMeas GlobalTheory.RealInd UpperTheory.Lit.Cusp

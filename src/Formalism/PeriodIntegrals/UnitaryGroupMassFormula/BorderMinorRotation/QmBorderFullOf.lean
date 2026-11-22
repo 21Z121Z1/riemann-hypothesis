@@ -1,5 +1,4 @@
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BorderMinorRotation.SkipOneEqSuccAbove
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BorderMinorRotation.SkipTwoSuccAboveComp
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BorderMinorRotation.Bundle0001
 
 namespace PI
 

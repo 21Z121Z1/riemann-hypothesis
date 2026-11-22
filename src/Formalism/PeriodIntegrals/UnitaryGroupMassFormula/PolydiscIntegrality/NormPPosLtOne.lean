@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.PolydiscInt
+import Formalism.PeriodIntegrals.Bundle0007
 
 namespace PI.PolydiscIntegrality₂
 

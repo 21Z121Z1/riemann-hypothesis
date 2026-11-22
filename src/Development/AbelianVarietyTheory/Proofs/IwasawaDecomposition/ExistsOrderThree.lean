@@ -4,8 +4,8 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalStarComplexMu
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LatticeDeterminedByInvariants
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.HasRationalTorsionIffMemRange
 import Formalism.LocalToGlobal.GlobalTheory.LinkTiesTh
-import Formalism.LocalToGlobal.GlobalTheory.NormSqLatticeFunctionEq
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HalfPeriodThetaDifferentiableAndSignedTranslateI
+import Formalism.LocalToGlobal.GlobalTheory.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0255
 
 noncomputable section
 

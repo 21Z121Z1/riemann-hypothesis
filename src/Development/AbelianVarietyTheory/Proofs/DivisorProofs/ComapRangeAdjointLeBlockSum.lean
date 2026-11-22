@@ -1,8 +1,8 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteReal.ConcretePkgSpec
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0023
 import Formalism.LocalToGlobal.Divisibility.ProjLemmas
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ClassPresBasic
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormalFamilyOrthogonalDecomposition
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0074
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0077
 
 noncomputable section
 

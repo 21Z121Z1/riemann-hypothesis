@@ -1,5 +1,5 @@
-import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.InePolCoeffZero
-import Development.AutomorphicArithmetic.Foundations.UnitarySphericalFixing.SatakeParameters.ExistsCgTrueCharSide
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.Bundle0007
+import Development.AutomorphicArithmetic.Foundations.UnitarySphericalFixing.SatakeParameters.Bundle0001
 
 noncomputable section
 

@@ -1,7 +1,6 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.TailInt
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.PolynomialGrowthIntegrals
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.SlowWeightBound
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.PlanarKernelBound
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.Bundle0001
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.Bundle0003
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.Bundle0002
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.OscillatoryBound
 
 namespace ReciprocityTheory.ChartRestriction.DS.Xi

@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LayerProd
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0004
 import Formalism.HarderNarasimhan.ShiftInvariance
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CanonicalLatticeFiltrationSizePropertiesStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NearTrivialPointwise
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0170
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0126
 
 open GlobalTheory.Count Formalism.MainNotions.S Formalism.HN Formalism.REAL Matrix NumberField MeasureTheory Finset
 

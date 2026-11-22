@@ -1,7 +1,7 @@
 import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.ExpNegGlue
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExpoConjOfIsCsd
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdeleModuleDetDiagUnitsPosIdele
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermModerateGrowth
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0375
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1445
 
 noncomputable section
 

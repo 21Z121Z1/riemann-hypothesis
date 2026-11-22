@@ -7,7 +7,7 @@ import GroundTheory.ProfiniteCohomology.LocalClassFormation.FiniteVanishing.Kumm
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.FiniteVanishing.Vanishing
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.OrderScalars
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Scalars
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.COneH2UnitsSubsingleton
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0399
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TsenAlgebraicExtensionRatFunc
 set_option maxSynthPendingDepth 1
 

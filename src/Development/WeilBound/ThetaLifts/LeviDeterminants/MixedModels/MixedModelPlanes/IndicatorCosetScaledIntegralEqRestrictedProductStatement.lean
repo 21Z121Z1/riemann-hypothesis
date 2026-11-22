@@ -1,6 +1,5 @@
 import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.MixedModelPlanes.Imports
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndicatorCosetScaledIntegralEqRestrictedProduct
-import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1476
 import Mathlib
 
 open scoped TensorProduct NNReal Matrix

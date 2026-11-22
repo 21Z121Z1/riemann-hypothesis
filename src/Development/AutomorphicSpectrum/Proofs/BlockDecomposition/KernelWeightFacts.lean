@@ -1,6 +1,6 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.FriedrichsKernels.CalcSteps
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ZOpMemCE
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0227
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryMemGLs
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LengthFunctionFactsHold
 

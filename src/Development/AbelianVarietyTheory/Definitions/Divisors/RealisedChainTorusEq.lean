@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NotOntoOfCharAlone
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TypePartBase
-import Development.AbelianVarietyTheory.Definitions.Jets.CmQuadraticFormEqAlternatingForm
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1015
+import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0004
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LeafDataOfOnTieOfIntegral
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.ONPage
 

@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.ThickFrames
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.WordTens
-import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.MatchInf
-import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.ArchBasic
+import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0009
+import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0005
 
 open MeasureTheory MeasureTheory.Measure NumberField
 open GroundTheory.Automorphic GroundTheory.Automorphic.AutomorphicForm UpperTheory.ConvolutionTheory UpperTheory.ConvolutionTheory.L1 UpperTheory.ConvolutionTheory.C PositivityTheory.Rg.Tf.Geo

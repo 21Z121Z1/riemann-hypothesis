@@ -1,7 +1,7 @@
 import Mathlib
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.WeylGroupActions.TypeExponentsConsecutiveGap
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ShiftAtRExistsEq
-import Formalism.HermitianCurvature.FrameExists2
+import Formalism.HermitianCurvature.Bundle0006
 import Development.AbelianVarietyTheory.Definitions.Jets.WigMap
 open Formalism.FourierDecayAlt Formalism.REAL Formalism.QuantumDeterminants Formalism.FourierDecayAlt.Q Formalism.FourierDecayAlt.P.CutBP2 Formalism.FourierDecayAlt.P.CutBPEq Matrix
 set_option maxHeartbeats 1000000 in

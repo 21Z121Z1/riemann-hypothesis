@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsIncidenceZeroLocus
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0022
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

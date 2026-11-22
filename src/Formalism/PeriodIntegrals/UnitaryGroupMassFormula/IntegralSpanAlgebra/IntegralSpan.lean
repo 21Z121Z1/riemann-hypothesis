@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.UMultOne
+import Formalism.PeriodIntegrals.Bundle0011
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IntegralSpanAlgebra.Burnside
 
 noncomputable section

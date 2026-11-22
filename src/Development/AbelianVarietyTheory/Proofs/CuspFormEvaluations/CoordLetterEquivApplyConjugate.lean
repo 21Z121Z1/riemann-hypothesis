@@ -2,7 +2,7 @@ import Mathlib
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.FlagBasis
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.GCauchyStatement
 import Development.AbelianVarietyTheory.Definitions.ThetaValues.ExistsMemRowHighestTotalDegreeEqTwo
-import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ConjEmbRt
+import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0009
 
 open MvPolynomial NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.NotCoboundaryConstantOne
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CompletedLaurentIsDVRStatementStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsBasisOnZetaPowMulQPowStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0092
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0043
 
 noncomputable section
 

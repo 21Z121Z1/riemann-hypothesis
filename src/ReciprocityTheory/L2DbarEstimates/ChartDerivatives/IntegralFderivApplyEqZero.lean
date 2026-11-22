@@ -1,5 +1,5 @@
-import ReciprocityTheory.L2DbarEstimates.ChartDerivatives.MeasurableSetImageOfIsLocalHomeomorph
-import ReciprocityTheory.L2DbarEstimates.ChartDerivatives.ExistsChartPartition
+import ReciprocityTheory.L2DbarEstimates.ChartDerivatives.Bundle0001
+import ReciprocityTheory.L2DbarEstimates.ChartDerivatives.Bundle0002
 
 namespace ReciprocityTheory.L2DbarEstimates
 

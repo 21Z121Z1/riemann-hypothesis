@@ -1,5 +1,5 @@
 import CompanionTheory.AutomorphicTheory.UniformLocalFormulas.UniformRestrictionOfEnergy
-import CompanionTheory.AutomorphicTheory.UniformLocalFormulas.CovarianceFormula
+import CompanionTheory.AutomorphicTheory.UniformLocalFormulas.Bundle0001
 import CompanionTheory.AutomorphicTheory.UniformLocalFormulas.RankOneTermInvariant
 
 namespace Formalism.MainStatements.RowRest

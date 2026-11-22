@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.ThetaLogCoordinates.JacobiPathWeights.ValuationProductsComponents
+import Formalism.ThetaLogCoordinates.JacobiPathWeights.Bundle0003
 import Formalism.ThetaLogCoordinates.JacobiPathWeights.JacobiMinorProofs.ActFormContract
 import Formalism.ThetaLogCoordinates.JacobiPathWeights.JacobiMinorProofs.LeIffLtColHeight
 import Formalism.ThetaLogCoordinates.JacobiPathWeights.JacobiMinorProofs.PathProductHighestWeight

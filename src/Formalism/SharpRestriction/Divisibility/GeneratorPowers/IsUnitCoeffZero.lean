@@ -1,6 +1,6 @@
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FormalGroupLinearSecond
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.LogLowOrderOne
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.BalOf
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0018
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ConstantCoeffAddFirstSecond
 
 set_option autoImplicit false

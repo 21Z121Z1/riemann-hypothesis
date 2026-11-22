@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ConvZero
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TiltWittEqZeroOfPrimeMulEqZero
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsContinuousGaloisLatticeMatrixIntegral
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicActionOnRootTower
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0307
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0232
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0244
 
 open Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.WeaklyAdmissibleFiltrations TensorProduct GlobalTheory.HWL
 

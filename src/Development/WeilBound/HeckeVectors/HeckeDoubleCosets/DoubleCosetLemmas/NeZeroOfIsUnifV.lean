@@ -1,4 +1,4 @@
-import Development.WeilBound.HeckeVectors.HeckeDoubleCosets.DoubleCosetLemmas.ExtendedCharacterCongrOfTame
+import Development.WeilBound.HeckeVectors.HeckeDoubleCosets.DoubleCosetLemmas.Bundle0001
 
 noncomputable section
 

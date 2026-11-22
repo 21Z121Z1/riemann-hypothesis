@@ -1,5 +1,5 @@
 import Mathlib
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HarmonicValueSplitOfExtension
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0016
 import Development.AbelianVarietyTheory.BlockTheory.GoodPlaces.ThetaValueRamifiedExtension
 
 set_option autoImplicit false

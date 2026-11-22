@@ -1,5 +1,5 @@
 import Mathlib
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.FundamentalDomainPointBound
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0003
 import ReciprocityTheory.L2DbarEstimates.IsLocalHomeomorph
 
 namespace GlobalTheory.IndefiniteRowSideFullHecke.UnitriangularCharts

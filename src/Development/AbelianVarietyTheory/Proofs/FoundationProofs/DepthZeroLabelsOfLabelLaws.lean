@@ -1,12 +1,12 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.ArithmeticCylinders
-import Formalism.LocalRingCardinality.DataTies
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GSplit
+import Formalism.LocalRingCardinality.Bundle0003
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0011
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.TameGeneratorProjectors
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ListFormLabels
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ValuationPowApplyDivSubOneLt
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSplitPlOfNotIsConjPl
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SubMemMaximalIdealIff
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0203
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0142
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0250
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0256
 
 noncomputable section
 

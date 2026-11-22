@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.FixedSubgroup
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0024
 
 noncomputable section
 

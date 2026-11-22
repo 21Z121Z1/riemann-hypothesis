@@ -1,8 +1,7 @@
 import Formalism.PieriBlockIdeals.StatementDown
 import Formalism.PieriBlockIdeals.PieriColumnMinors.WeightBounds
-import Formalism.PieriBlockIdeals.PieriColumnMinors.ColumnsPieriSkeleton
+import Formalism.PieriBlockIdeals.PieriColumnMinors.Bundle0009
 import Formalism.PieriBlockIdeals.PieriColumnMinors.RealOfSkeleton
-import Formalism.PieriBlockIdeals.PieriColumnMinors.IrreducibleGeneration
 
 namespace Formalism.CohomologicalDescent.Down
 

@@ -1,0 +1,500 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvTranspose
+import Development.AbelianVarietyTheory.Definitions.Divisors.IsProjOverWeierstrass
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.MumfordConstruction
+import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2672
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorDataPsiIsEven
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaSeriesTermsRescaleByGeneratorMultiple
+import Development.AbelianVarietyTheory.Definitions.Uniformization.TXFrame
+
+-- bundled from Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorActionCompatibleWithDegeneration
+section
+open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField
+open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor
+open scoped CategoryTheory.Obj
+attribute [local instance] Over.cartesianMonoidalCategory
+open GlobalTheory.Mum
+
+namespace GlobalTheory.Mum
+
+def precompHom {C : Type*} [Category C] [CartesianMonoidalCategory C] {M X Y : C} [MonObj M] (f : X ⟶ Y) :
+    (Y ⟶ M) →* (X ⟶ M) where
+  toFun g := f ≫ g
+  map_one' := MonObj.comp_one f
+  map_mul' g₁ g₂ := MonObj.comp_mul f g₁ g₂
+
+def degCHom {R : Type} [CommRing R] [IsDomain R] (D : DegPre R) :
+    D.X →+ Additive (𝟙_ (Over (Spec (CommRingCat.of R))) ⟶ D.P.A) where
+  toFun x := Additive.ofMul (D.c x)
+  map_zero' := by
+    have h : D.c (0 + 0) = D.c 0 * D.c 0 := D.c_add 0 0
+    rw [add_zero] at h
+    have h1 : D.c 0 = 1 := by simpa using h.symm
+    rw [h1]; rfl
+  map_add' x y := by rw [D.c_add]; rfl
+
+theorem degC_sum_zsmul {R : Type} [CommRing R] [IsDomain R] (D : DegPre R) {r : ℕ} (n : Fin r → ℤ) (x : Fin r → D.X) :
+    D.c (∑ j, n j • x j) = ∏ j, D.c (x j) ^ n j := by
+  have h := congrArg Additive.toMul (map_sum (degCHom D) (fun j => n j • x j) Finset.univ)
+  rw [toMul_sum] at h
+  refine h.trans ?_
+  refine Finset.prod_congr rfl fun j _ => ?_
+  rw [map_zsmul, toMul_zsmul]
+  rfl
+
+theorem Tens.c_smul : ∀ (R : Type) [CommRing R] [IsDomain R] (D D' : DegPre R) {r : ℕ} (W : Matrix (Fin r) (Fin r) ℤ)
+    (T : Tens D D' W) (s : SymUnit r), letI := T.mod s; ∀ (a : TensO s) (y : D'.X),
+    D'.c (a • y) = D'.c y ≫ T.act (TensO.mat s a) := by
+  intro R _ _ D D' r W T s
+  letI := T.mod s
+  intro a y
+  refine Fan.IsLimit.hom_ext T.lim _ _ fun i => ?_
+  show D'.c (a • y) ≫ T.pr i = (D'.c y ≫ T.act (TensO.mat s a)) ≫ T.pr i
+  rw [T.c_pr, Category.assoc, T.act_pr, Tens.xe_smul, degC_sum_zsmul D]
+  have h := map_prod (precompHom (M := D.P.A) (D'.c y)) (fun j => T.pr j ^ TensO.mat s a i j) Finset.univ
+  refine Eq.trans ?_ h.symm
+  refine Finset.prod_congr rfl fun j _ => ?_
+  rw [map_zpow]
+  show _ = (D'.c y ≫ T.pr j) ^ _
+  rw [T.c_pr]
+
+end GlobalTheory.Mum
+end
+
+-- bundled from Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorDataCubicalStructureValues
+section
+open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField
+open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor
+open scoped CategoryTheory.Obj
+attribute [local instance] Over.cartesianMonoidalCategory
+open GlobalTheory.Mum
+open GlobalTheory.Ex GlobalTheory.Mum.TensTor
+
+noncomputable section
+
+namespace GlobalTheory.Mum.TensCube
+
+variable {R : Type} [CommRing R] [IsDomain R] {D D' : DegPre R} {r : ℕ} {W : Matrix (Fin r) (Fin r) ℤ}
+
+def tensHom (T : Tens D D' W) (k : (Fin r × Fin r) × Fin 4) : D'.P.A ⟶ D.P.A :=
+  ![T.pr k.1.1 * T.pr k.1.2, T.pr k.1.1, T.pr k.1.2, 1] k.2
+
+theorem tensφ_eq (T : Tens D D' W) (k : (Fin r × Fin r) × Fin 4) : tensφ T.pr k = (tensHom T k).left := by
+  obtain ⟨⟨i, j⟩, m⟩ := k
+  fin_cases m <;> rfl
+
+theorem tensHom_mul (T : Tens D D' W) (k : (Fin r × Fin r) × Fin 4) {Z : Over (Spec (CommRingCat.of R))}
+    (a b : Z ⟶ D'.P.A) : (a * b) ≫ tensHom T k = (a ≫ tensHom T k) * (b ≫ tensHom T k) := by
+  obtain ⟨⟨i, j⟩, m⟩ := k
+  haveI := T.pr_hom i
+  haveI := T.pr_hom j
+  fin_cases m
+  · show (a * b) ≫ (T.pr i * T.pr j) = (a ≫ (T.pr i * T.pr j)) * (b ≫ (T.pr i * T.pr j))
+    rw [MonObj.comp_mul, MonObj.comp_mul, MonObj.comp_mul, MonObj.mul_comp, MonObj.mul_comp]
+    exact mul_mul_mul_comm _ _ _ _
+  · show (a * b) ≫ T.pr i = (a ≫ T.pr i) * (b ≫ T.pr i)
+    exact MonObj.mul_comp _ _ _
+  · show (a * b) ≫ T.pr j = (a ≫ T.pr j) * (b ≫ T.pr j)
+    exact MonObj.mul_comp _ _ _
+  · show (a * b) ≫ (1 : D'.P.A ⟶ D.P.A) = (a ≫ 1) * (b ≫ 1)
+    rw [MonObj.comp_one, MonObj.comp_one, MonObj.comp_one, _root_.mul_one]
+
+def tensHomH (T : Tens D D' W) (k : (Fin r × Fin r) × Fin 4) (Z : Over (Spec (CommRingCat.of R))) :
+    (Z ⟶ D'.P.A) →* (Z ⟶ D.P.A) :=
+  MonoidHom.mk' (· ≫ tensHom T k) (tensHom_mul T k)
+
+def cubeρ (T : Tens D D' W) (k : (Fin r × Fin r) × Fin 4) : (G3 D'.P.A).left ⟶ (G3 D.P.A).left :=
+  (lift (x3 D'.P.A 0 ≫ tensHom T k) (lift (x3 D'.P.A 1 ≫ tensHom T k) (x3 D'.P.A 2 ≫ tensHom T k))).left
+
+theorem cube_comm (T : Tens D D' W) (k : (Fin r × Fin r) × Fin 4) (I : thK) :
+    thφ D'.P.A (x3 D'.P.A) I ≫ tensφ T.pr k = cubeρ T k ≫ thφ D.P.A (x3 D.P.A) I := by
+  rw [tensφ_eq]
+  show (psum D'.P.A (x3 D'.P.A) I.down).left ≫ (tensHom T k).left = _ ≫ (psum D.P.A (x3 D.P.A) I.down).left
+  rw [cubeρ, ← Over.comp_left, ← Over.comp_left]
+  congr 1
+  show tensHomH T k _ (psum D'.P.A (x3 D'.P.A) I.down) = preHom _ (psum D.P.A (x3 D.P.A) I.down)
+  rw [psum_hom, psum_hom]
+  congr 1
+  funext n
+  fin_cases n <;> simp [x3, tensHomH, preHom]
+
+end GlobalTheory.Mum.TensCube
+
+namespace GlobalTheory.Mum.TensCube
+
+variable {R : Type} [CommRing R] [IsDomain R] {D D' : DegPre R} {r : ℕ} {W : Matrix (Fin r) (Fin r) ℤ}
+
+theorem one_tensHom (T : Tens D D' W) (k : (Fin r × Fin r) × Fin 4) {Z : Over (Spec (CommRingCat.of R))} :
+    (1 : Z ⟶ D'.P.A) ≫ tensHom T k = 1 := map_one (tensHomH T k Z)
+
+theorem lift_cubeρ (T : Tens D D' W) (k : (Fin r × Fin r) × Fin 4) {Z : Over (Spec (CommRingCat.of R))}
+    (a b c : Z ⟶ D'.P.A) : (lift a (lift b c)).left ≫ cubeρ T k =
+      (lift (a ≫ tensHom T k) (lift (b ≫ tensHom T k) (c ≫ tensHom T k))).left := by
+  rw [cubeρ, ← Over.comp_left]
+  congr 1
+  simp [x3]
+
+theorem cube_tens (hG : GlobalFnsSt) (T : Tens D D' W) {Z : Scheme.{0}} (q : Z ⟶ (G3 D'.P.A).left) (z : Z)
+    {J J'} (hJ : Good D.P.L z J) (hJ' : Good D'.P.L z J') :
+    (∏ a : thK.{0}, GlobalTheory.TensEven.bwE T.w (q ≫ thφ D'.P.A (x3 D'.P.A) a) z
+        (fun i => J ((q ≫ thφ D'.P.A (x3 D'.P.A) a) ≫ tensφ T.pr i)) (J' (q ≫ thφ D'.P.A (x3 D'.P.A) a)) ^ thε a) *
+      val (L := D'.P.L) (φ := thφ D'.P.A (x3 D'.P.A)) (ε := thε) D'.cub.t q z J' =
+      ∏ k, val (L := D.P.L) (φ := thφ D.P.A (x3 D.P.A)) (ε := thε) D.cub.t (q ≫ cubeρ T k) z J ^ tensε W k := by
+  have hA := D'.P.isAb
+  have he : (lift 1 (lift 1 1) : 𝟙_ (Over (Spec (CommRingCat.of R))) ⟶ G3 D'.P.A).left ≫
+      (snd D'.P.A (D'.P.A ⊗ D'.P.A)).left ≫ (snd D'.P.A D'.P.A).left ≫ D'.P.A.hom = 𝟙 _ := by
+    rw [Over.w, Over.w]; exact Over.w _
+  refine GlobalTheory.TensEven.box_uniqueE (pr := tensφ T.pr) (εp := tensε W) D.P.isLB D'.P.isLB T.w T.w_gen
+    (φ' := thφ D'.P.A (x3 D'.P.A)) (φ := thφ D.P.A (x3 D.P.A)) (ε := thε) (ρ := cubeρ T)
+    (fun k I => cube_comm T k I) D'.cub.isGen D.cub.isGen _ _ he
+    (surj_comp (surj_snd hG hA _) (surj_comp (surj_snd hG hA _) (hG _ _ hA).2)) (fun y I I' hI hI' => ?_) Z q z J J' hJ hJ'
+  have p := prod_cub (1 : 𝟙_ (Over (Spec (CommRingCat.of R))) ⟶ D'.P.A) 1 1
+    (fun ψ => GlobalTheory.TensEven.bwE T.w ψ y (fun i => I (ψ ≫ tensφ T.pr i)) (I' ψ))
+  simp only [_root_.mul_one, mul_inv_cancel, inv_mul_cancel] at p
+  have c' : val (L := D'.P.L) (φ := thφ D'.P.A (x3 D'.P.A)) (ε := thε) D'.cub.t
+      (lift 1 (lift 1 1) : 𝟙_ (Over (Spec (CommRingCat.of R))) ⟶ G3 D'.P.A).left y I' = 1 :=
+    (isCub_cubV D'.cub hI').face 1 1
+  have c : ∀ k, val (L := D.P.L) (φ := thφ D.P.A (x3 D.P.A)) (ε := thε) D.cub.t
+      ((lift 1 (lift 1 1) : 𝟙_ (Over (Spec (CommRingCat.of R))) ⟶ G3 D'.P.A).left ≫ cubeρ T k) y I = 1 := fun k => by
+    rw [lift_cubeρ, one_tensHom]
+    exact (isCub_cubV D.cub hI).face 1 1
+  refine (congrArg₂ (· * ·) p c').trans ?_
+  simp only [c, one_zpow, Finset.prod_const_one]
+  group
+
+end GlobalTheory.Mum.TensCube
+
+namespace GlobalTheory.Mum.TensCube
+
+theorem alg {U : Type} [CommGroup U] (Θ P hxyu hxy hxu hyu hx hy hu h1 : U)
+    (key : hxyu * hxy⁻¹ * hxu⁻¹ * hyu⁻¹ * hx * hy * hu * h1⁻¹ * Θ = P) :
+    Θ * hxyu * hx * hy * hu = P * hxy * hxu * hyu * h1 := by
+  subst key
+  apply Additive.ofMul.injective
+  simp only [ofMul_mul, ofMul_inv]
+  abel
+
+theorem theta_tens : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRing R], Base R → ∀ (D D' : DegData R (maximalIdeal R)) {r : ℕ} (W : Matrix (Fin r) (Fin r) ℤ) (T : Tens D.toPre D'.toPre W) (F : Type) [Field F] [IsAlgClosed F] [Algebra (FractionRing R) F] (N N' : NumD F) (ν : NumOf D.toPre F N) (ν' : NumOf D'.toPre F N'), ∀ x y u, (N'.θ x y u : F) * wv T ν ν' (x * y * u) * wv T ν ν' x * wv T ν ν' y * wv T ν ν' u =
+    ((∏ i, ∏ j, (N.θ (cmp T ν ν' x i * cmp T ν ν' x j) (cmp T ν ν' y i * cmp T ν ν' y j) (cmp T ν ν' u i * cmp T ν ν' u j) /
+        (N.θ (cmp T ν ν' x i) (cmp T ν ν' y i) (cmp T ν ν' u i) * N.θ (cmp T ν ν' x j) (cmp T ν ν' y j) (cmp T ν ν' u j))) ^ W i j : Fˣ) : F) *
+      wv T ν ν' (x * y) * wv T ν ν' (x * u) * wv T ν ν' (y * u) * wv T ν ν' 1 := by
+  intro R _ _ _ _ D D' r W T F _ _ _ N N' ν ν' x y u
+  obtain ⟨z⟩ : Nonempty (Sp F) := inferInstanceAs (Nonempty (PrimeSpectrum F))
+  have hJ : Good D.toPre.P.L z ν.J := fun ψ => ν.good ψ trivial
+  have hJ' : Good D'.toPre.P.L z ν'.J := fun ψ => ν'.good ψ trivial
+  let h : ((TF (R := R) F).left ⟶ D'.toPre.P.A.left) → ((Sp F).presheaf.stalk z)ˣ := fun ψ =>
+    GlobalTheory.TensEven.bwE T.w ψ z (fun i => ν.J (ψ ≫ tensφ T.pr i)) (ν'.J ψ)
+  let τ : Fˣ →* ((Sp F).presheaf.stalk z)ˣ := Units.map (toStk z).toMonoidHom
+  have vw : ∀ a, toStk z (wv T ν ν' a) = (h (ν'.eA a).left).val := fun a =>
+    toStk_valF (ν'.eA a).left (LB.wchart D.toPre.P.L (tensφ T.pr) (fun k => ν.J ((ν'.eA a).left ≫ tensφ T.pr k)) ⊓
+      D'.toPre.P.L.U (ν'.J (ν'.eA a).left)) z ⟨hJ.mem (tensφ T.pr) _, hJ' _⟩ _
+  have vθ' : toStk z (N'.θ x y u : F) =
+      (cubV D'.toPre.cub (T := TF (R := R) F) z ν'.J (ν'.eA x) (ν'.eA y) (ν'.eA u)).val :=
+    (congrArg (toStk z) (ν'.θ_eq x y u)).trans (toStk_valF _ _ z (hJ'.mem _ _) _)
+  have tθ : ∀ a b c, τ (N.θ a b c) = cubV D.toPre.cub (T := TF (R := R) F) z ν.J (ν.eA a) (ν.eA b) (ν.eA c) := fun a b c =>
+    Units.ext ((Units.coe_map _ _).trans ((congrArg (toStk z) (ν.θ_eq a b c)).trans (toStk_valF _ _ z (hJ.mem _ _) _)))
+  have ecmp : ∀ a j, ν.eA (cmp T ν ν' a j) = ν'.eA a ≫ T.pr j := fun a j => ν.eA.apply_symm_apply _
+  have key := cube_tens GlobalTheory.globalFns_holds T (Z := Sp F) (lift (ν'.eA x) (lift (ν'.eA y) (ν'.eA u))).left z hJ hJ'
+  have key' := (congrArg₂ (· * ·) (prod_cub (ν'.eA x) (ν'.eA y) (ν'.eA u) h) rfl).symm.trans key
+  have c1 := (isCub_cubV D.toPre.cub hJ).face (1 : TF (R := R) F ⟶ D.toPre.P.A) 1
+  have hP : τ (∏ i, ∏ j, (N.θ (cmp T ν ν' x i * cmp T ν ν' x j) (cmp T ν ν' y i * cmp T ν ν' y j)
+      (cmp T ν ν' u i * cmp T ν ν' u j) / (N.θ (cmp T ν ν' x i) (cmp T ν ν' y i) (cmp T ν ν' u i) *
+        N.θ (cmp T ν ν' x j) (cmp T ν ν' y j) (cmp T ν ν' u j))) ^ W i j) =
+      ∏ k, val (L := D.toPre.P.L) (φ := thφ D.toPre.P.A (x3 D.toPre.P.A)) (ε := thε) D.toPre.cub.t
+        ((lift (ν'.eA x) (lift (ν'.eA y) (ν'.eA u))).left ≫ cubeρ T k) z ν.J ^ tensε W k := by
+    rw [Fintype.prod_prod_type, Fintype.prod_prod_type, map_prod]
+    refine Finset.prod_congr rfl fun i _ => ?_
+    rw [map_prod]
+    refine Finset.prod_congr rfl fun j _ => ?_
+    rw [Fin.prod_univ_four]
+    simp only [lift_cubeρ]
+    haveI := T.pr_hom i
+    haveI := T.pr_hom j
+    have m0 : ∀ a, ν'.eA a ≫ tensHom T ((i, j), 0) = ν.eA (cmp T ν ν' a i * cmp T ν ν' a j) := fun a => by
+      rw [map_mul, ecmp, ecmp]; exact MonObj.comp_mul _ _ _
+    have m1 : ∀ a, ν'.eA a ≫ tensHom T ((i, j), 1) = ν.eA (cmp T ν ν' a i) := fun a => (ecmp a i).symm
+    have m2 : ∀ a, ν'.eA a ≫ tensHom T ((i, j), 2) = ν.eA (cmp T ν ν' a j) := fun a => (ecmp a j).symm
+    have m3 : ∀ a, ν'.eA a ≫ tensHom T ((i, j), 3) = 1 := fun a => MonObj.comp_one _
+    change _ = cubV D.toPre.cub (T := TF (R := R) F) z ν.J _ _ _ ^ _ * cubV D.toPre.cub (T := TF (R := R) F) z ν.J _ _ _ ^ _ *
+      cubV D.toPre.cub (T := TF (R := R) F) z ν.J _ _ _ ^ _ * cubV D.toPre.cub (T := TF (R := R) F) z ν.J _ _ _ ^ _
+    rw [m0, m0, m0, m1, m1, m1, m2, m2, m2, m3, m3, m3, c1, ← tθ, ← tθ, ← tθ, map_zpow, map_div, map_mul]
+    simp only [tensε, Oε, Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.cons_val_two, Matrix.cons_val_three,
+      Matrix.head_cons, Matrix.tail_cons, one_zpow, _root_.mul_one, zpow_mul]
+    apply Additive.ofMul.injective
+    simp only [ofMul_mul, ofMul_inv, ofMul_zpow, ofMul_div, ofMul_one]
+    module
+  rw [← hP] at key'
+  apply (toStk z).injective
+  have eq1 : toStk z (((∏ i, ∏ j, (N.θ (cmp T ν ν' x i * cmp T ν ν' x j) (cmp T ν ν' y i * cmp T ν ν' y j)
+      (cmp T ν ν' u i * cmp T ν ν' u j) / (N.θ (cmp T ν ν' x i) (cmp T ν ν' y i) (cmp T ν ν' u i) *
+        N.θ (cmp T ν ν' x j) (cmp T ν ν' y j) (cmp T ν ν' u j))) ^ W i j : Fˣ) : F)) = (τ _).val :=
+    (Units.coe_map _ _).symm
+  simp only [map_mul, vw, vθ', eq1, map_one]
+  simp only [← Units.val_mul]
+  congr 1
+  refine alg _ _ _ _ _ _ _ _ _ _ ?_
+  exact key'
+
+end GlobalTheory.Mum.TensCube
+end
+end
+
+-- bundled from Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorDataPsiValuesThroughBundleIso
+section
+open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField
+open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor
+open scoped CategoryTheory.Obj
+attribute [local instance] Over.cartesianMonoidalCategory
+open GlobalTheory.Mum
+open GlobalTheory.Ex GlobalTheory.Mum.TensTor
+
+noncomputable section
+namespace GlobalTheory.Mum.TensTor.PsiVal
+
+open ReciprocityTheory.ChartRestriction.G.Geo.Tor
+
+theorem stalk_gm {Z Y : Scheme.{0}} (f : Z ⟶ Y) {X : Scheme.{0}} (r : Y ⟶ X) (z : Z) (U : X.Opens) (h : r (f z) ∈ U)
+    (a : Γ(X, U)ˣ) : (f.stalkMap z).hom (gm r (f z) U a).val = (gm (f ≫ r) z U a).val := by
+  rw [gm_val r (f z) U h, gm_val (f ≫ r) z U h]
+  have := Scheme.Hom.germ_stalkMap_apply f (r ⁻¹ᵁ U) z h ((r.app U).hom a.val)
+  rw [this]
+  rfl
+
+theorem stalk_val {Z Y X : Scheme.{0}} {L : LB X} {K : Type} [Fintype K] {φ : K → (Y ⟶ X)} {ε : K → ℤ}
+    (t : LB.Gen (LB.LinComb L φ ε)) (f : Z ⟶ Y) (z : Z) (J : (Z ⟶ X) → L.ι)
+    (h : f z ∈ LB.wchart L φ (fun k => J (f ≫ φ k))) :
+    (f.stalkMap z).hom (val t (𝟙 Y) (f z) (fun ψ => J (f ≫ ψ))).val = (val t f z J).val := by
+  rw [val_of t (𝟙 Y) (f z) _ (fun k => J (f ≫ φ k)) (fun k => by simp only [Category.id_comp])]
+  refine (stalk_gm f (𝟙 Y) z _ h _).trans ?_
+  rw [Category.comp_id]
+  rfl
+
+theorem toStk_vF {F : Type} [Field F] {Y X : Scheme.{0}} {L : LB X} {K : Type} [Fintype K] {φ : K → (Y ⟶ X)} {ε : K → ℤ}
+    (t : LB.Gen (LB.LinComb L φ ε)) (r : Sp F ⟶ Y) (z : Sp F) (J : (Sp F ⟶ X) → L.ι) (hJ : Good L z J) :
+    toStk z (vF t r J) = (val t r z J).val :=
+  toStk_valF r _ z (hJ.mem φ r) _
+
+theorem toUnit_left {S : Scheme.{0}} (X : Over S) : (toUnit X).left = X.hom := by
+  simpa using Over.w (toUnit X)
+
+theorem stalkU {Z Y X : Scheme.{0}} {L : LB X} {K : Type} [Fintype K] {φ : K → (Y ⟶ X)} {ε : K → ℤ}
+    (t : LB.Gen (LB.LinComb L φ ε)) (f : Z ⟶ Y) (z : Z) (J : (Z ⟶ X) → L.ι) (hJ : Good L z J) :
+    Units.map (f.stalkMap z).hom.toMonoidHom (val t (𝟙 Y) (f z) (fun ψ => J (f ≫ ψ))) = val t f z J :=
+  Units.ext (stalk_val t f z J (hJ.mem φ f))
+
+variable {R : Type} [CommRing R] [IsDomain R] {D D' : DegPre R} {r : ℕ} {W : Matrix (Fin r) (Fin r) ℤ}
+  {F : Type} [Field F] [Algebra (FractionRing R) F] {N N' : NumD F}
+
+theorem good_of (ν : NumOf D F N) (z : Sp F) : Good D.P.L z ν.J := fun ψ => (top_le_iff_mem ψ _ z).1 (ν.good ψ)
+
+theorem goodK_of (ν : NumOf D F N) (z : Sp F) : Good D.P.L (jFK (R := R) F z) (fun ψ => ν.J (jFK (R := R) F ≫ ψ)) :=
+  fun ψ => (top_le_iff_mem (jFK (R := R) F ≫ ψ) _ z).1 (ν.good _)
+
+theorem wv_toStk (T : Tens D D' W) (ν : NumOf D F N) (ν' : NumOf D' F N') (x : N'.A) (z : Sp F)
+    (p : Sp F ⟶ D'.P.A.left) (hp : (ν'.eA x).left = p) :
+    toStk z (wv T ν ν' x) = (gm p z _ (T.w.s (fun k => ν.J (p ≫ tensφ T.pr k), ν'.J p))).val := by
+  subst hp
+  exact toStk_valF _ _ z (show (ν'.eA x).left z ∈ LB.wchart D.P.L (tensφ T.pr) (fun k => ν.J ((ν'.eA x).left ≫ tensφ T.pr k)) ⊓
+    D'.P.L.U (ν'.J (ν'.eA x).left) from ⟨(good_of ν z).mem _ _, good_of ν' z _⟩) _
+
+example : True := trivial
+
+theorem rig_val (ν : NumOf D F N) (z : Sp F) :
+    val (LB.pullGen D.P.L _ _ D.rig (toUnit (TK R)).left) (jFK (R := R) F) z ν.J = val D.rig (jFK (R := R) F ≫ jK R) z ν.J := by
+  rw [val_pull (good_of ν z), toUnit_left]
+  rfl
+
+theorem psi_m (ν : NumOf D F N) (z : Sp F) (χ : N.X) :
+    Units.map (toStk z).toMonoidHom (N.ψ χ) = val (D.psi (ν.eX χ)) (jFK (R := R) F) z ν.J * val D.rig (jFK (R := R) F ≫ jK R) z ν.J := by
+  apply Units.ext
+  change toStk z (N.ψ χ : F) = _
+  rw [ν.ψ_eq χ, map_mul, toStk_vF _ _ z _ (good_of ν z), toStk_vF _ _ z _ (good_of ν z)]
+  rfl
+
+theorem tau_m (ν : NumOf D F N) (z : Sp F) (a b : N.X) :
+    val (D.tau (ν.eX a) (ν.eX b)) (jFK (R := R) F) z ν.J = Units.map (toStk z).toMonoidHom (N.τ a b) := by
+  have hG := good_of ν z
+  unfold DegPre.tau DegPre.rigK
+  rw [val_mul hG, val_mul hG, val_mul hG, val_inv, val_inv, val_inv, rig_val ν z]
+  rw [NumD.τ, map_div, map_div, psi_m ν z, psi_m ν z, psi_m ν z, map_add]
+  apply Additive.ofMul.injective
+  simp only [ofMul_mul, ofMul_div, ofMul_inv]
+  abel
+
+theorem pt_eq (ν' : NumOf D' F N') (χ : N'.X) : (ν'.eA (N'.c χ)).left = jFK (R := R) F ≫ D'.xK (ν'.eX χ) := by
+  rw [ν'.c_eq]
+  simp only [DegPre.cF, DegPre.xK, ptK, Over.comp_left, toUnit_left]
+  rfl
+
+theorem w_stalk (T : Tens D D' W) (ν : NumOf D F N) (ν' : NumOf D' F N') (z : Sp F) (y : D'.X) :
+    Units.map (Scheme.Hom.stalkMap (jFK (R := R) F) z).hom.toMonoidHom
+      (gm (D'.xK y) (jFK (R := R) F z) _ (T.w.s (fun k => ν.J (jFK (R := R) F ≫ D'.xK y ≫ tensφ T.pr k),
+        ν'.J (jFK (R := R) F ≫ D'.xK y)))) =
+    gm (jFK (R := R) F ≫ D'.xK y) z _ (T.w.s (fun k => ν.J ((jFK (R := R) F ≫ D'.xK y) ≫ tensφ T.pr k),
+        ν'.J (jFK (R := R) F ≫ D'.xK y))) := by
+  have e : (fun k => ν.J ((jFK (R := R) F ≫ D'.xK y) ≫ tensφ T.pr k)) =
+      (fun k => ν.J (jFK (R := R) F ≫ D'.xK y ≫ tensφ T.pr k)) := funext fun k => by rw [Category.assoc]
+  rw [e]
+  apply Units.ext
+  refine stalk_gm (jFK (R := R) F) (D'.xK y) z _ ?_ _
+  exact (show (jFK (R := R) F ≫ D'.xK y) z ∈ LB.wchart D.P.L (tensφ T.pr) (fun k => ν.J (jFK (R := R) F ≫ D'.xK y ≫ tensφ T.pr k)) ⊓
+    D'.P.L.U (ν'.J (jFK (R := R) F ≫ D'.xK y)) from ⟨Set.mem_iInter.2 fun k => by
+      have := good_of ν z ((jFK (R := R) F ≫ D'.xK y) ≫ tensφ T.pr k)
+      rwa [Category.assoc] at this, good_of ν' z _⟩)
+
+theorem psi_stk (T : Tens D D' W) (ν : NumOf D F N) (ν' : NumOf D' F N') (z : Sp F) (χ' : N'.X) :
+    toStk z (N'.ψ χ' : F) = toStk z (wv T ν ν' (N'.c χ')) *
+      toStk z ((∏ i, ∏ j, N.τ (chi T ν ν' χ' i) (chi T ν ν' χ' j) ^ W i j : Fˣ) : F) *
+      (val D'.rig (jFK (R := R) F ≫ jK R) z ν'.J).val := by
+  have key := T.psi (ν'.eX χ') (jFK (R := R) F z) (fun ψ => ν.J (jFK (R := R) F ≫ ψ)) (fun ψ => ν'.J (jFK (R := R) F ≫ ψ))
+    (goodK_of ν z) (goodK_of ν' z)
+  have key2 := congrArg (Units.map (Scheme.Hom.stalkMap (jFK (R := R) F) z).hom.toMonoidHom) key
+  rw [map_mul, stalkU _ _ z _ (good_of ν' z), w_stalk] at key2
+  simp only [map_prod, map_zpow, stalkU _ _ z ν.J (good_of ν z)] at key2
+  have hL : toStk z (N'.ψ χ' : F) = (Units.map (toStk z).toMonoidHom (N'.ψ χ')).val := rfl
+  have hP : toStk z ((∏ i, ∏ j, N.τ (chi T ν ν' χ' i) (chi T ν ν' χ' j) ^ W i j : Fˣ) : F) =
+      (∏ i, ∏ j, val (D.tau (T.xe (ν'.eX χ') i) (T.xe (ν'.eX χ') j)) (jFK (R := R) F) z ν.J ^ W i j).val := by
+    change (Units.map (toStk z).toMonoidHom _).val = _
+    congr 1
+    rw [map_prod]
+    refine Finset.prod_congr rfl fun i _ => ?_
+    rw [map_prod]
+    refine Finset.prod_congr rfl fun j _ => ?_
+    rw [map_zpow, ← tau_m ν z, show ν.eX (chi T ν ν' χ' i) = T.xe (ν'.eX χ') i from ν.eX.apply_symm_apply _,
+      show ν.eX (chi T ν ν' χ' j) = T.xe (ν'.eX χ') j from ν.eX.apply_symm_apply _]
+  rw [hL, psi_m ν' z χ', hP, wv_toStk T ν ν' _ z _ (pt_eq ν' χ'), key2]
+  simp only [Units.val_mul]
+  try ring
+
+theorem psi_main (T : Tens D D' W) (ν : NumOf D F N) (ν' : NumOf D' F N') (χ' : N'.X) :
+    (N'.ψ χ' : F) * wv T ν ν' 1 = wv T ν ν' (N'.c χ') * ((∏ i, ∏ j, N.τ (chi T ν ν' χ' i) (chi T ν ν' χ' j) ^ W i j : Fˣ) : F) := by
+  obtain ⟨z⟩ : Nonempty (Sp F) := ⟨(default : PrimeSpectrum F)⟩
+  have h0 := psi_stk T ν ν' z 0
+  have hc : chi T ν ν' 0 = 0 := funext fun i => by
+    show ν.eX.symm (T.xe (ν'.eX 0) i) = 0
+    rw [map_zero, map_zero, Pi.zero_apply, map_zero]
+  have hp : (∏ i, ∏ j, N.τ (chi T ν ν' 0 i) (chi T ν ν' 0 j) ^ W i j : Fˣ) = 1 := by
+    rw [hc]
+    exact Finset.prod_eq_one fun i _ => Finset.prod_eq_one fun j _ => by
+      rw [Pi.zero_apply, NumD.τ_zero_left, one_zpow]
+  rw [NumD.ψ_zero, NumD.c_zero, hp, Units.val_one, map_one, _root_.mul_one] at h0
+  apply (toStk z).injective
+  rw [map_mul, map_mul, psi_stk T ν ν' z χ']
+  linear_combination (-(toStk z (wv T ν ν' (N'.c χ')) *
+      toStk z ((∏ i, ∏ j, N.τ (chi T ν ν' χ' i) (chi T ν ν' χ' j) ^ W i j : Fˣ) : F))) * h0
+
+end GlobalTheory.Mum.TensTor.PsiVal
+
+open GlobalTheory.Mum.TensTor.PsiVal in
+
+theorem GlobalTheory.Mum.TensTor.tensFacts_psi : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRing R], Base R → ∀ (D D' : DegData R (maximalIdeal R)) {r : ℕ} (W : Matrix (Fin r) (Fin r) ℤ) (T : Tens D.toPre D'.toPre W) (F : Type) [Field F] [IsAlgClosed F] [Algebra (FractionRing R) F] (N N' : NumD F) (ν : NumOf D.toPre F N) (ν' : NumOf D'.toPre F N'), ∀ χ', (N'.ψ χ' : F) * wv T ν ν' 1 = wv T ν ν' (N'.c χ') * ((∏ i, ∏ j, N.τ (chi T ν ν' χ' i) (chi T ν ν' χ' j) ^ W i j : Fˣ) : F) := by
+  intro R _ _ _ _ D D' r W T F _ _ _ N N' ν ν' χ'
+  exact psi_main T ν ν' χ'
+end
+end
+
+-- bundled from Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorTorusValueCorrespondencePeriod
+section
+open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField
+open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor
+open scoped CategoryTheory.Obj
+attribute [local instance] Over.cartesianMonoidalCategory
+open GlobalTheory.Mum
+open GlobalTheory.Ex GlobalTheory.Mum.TensTor
+
+namespace GlobalTheory.Mum.TensTor
+
+theorem gtRelV_io : ∀ (F : Type) [Field F] (N N' : NumD F) {r : ℕ} (W : Matrix (Fin r) (Fin r) ℤ) (φ : N'.A → Fin r → N.A) (e : N'.X → Fin r → N.X) (wv : N'.A → F), TensFacts W φ e wv → ∀ y' : N'.X, GtRelV W φ e wv (N'.io y') (fun j => N.io (e y' j)) := by
+  intro F _ N N' r W φ e wv hT y'
+  obtain ⟨-, -, he_add, -, hc, hw0, -, hψ⟩ := hT
+  refine ⟨fun j => hc y' j, fun χ' => ?_⟩
+  simp only [NumD.io_s, NumD.io_b]
+  let U : N'.A → Fˣ := fun x => Units.mk0 (wv x) (hw0 x)
+  have hU : ∀ x, wv x = (U x : F) := fun x => rfl
+  let P : N'.X → Fˣ := fun a => ∏ i, ∏ j, N.τ (e a i) (e a j) ^ W i j
+  have hψ' : ∀ a, N'.ψ a * U 1 = U (N'.c a) * P a := fun a => Units.ext (by
+    simp only [Units.val_mul, U, Units.val_mk0, P]; exact hψ a)
+  have key : ∀ i j, N.τ (e y' j) (e χ' i) * N.τ (e y' i) (e χ' j) /
+      (N.θ (N.c (e χ' j)) (N.c (e y' j)) (N.c (e χ' i)) * N.θ (N.c (e χ' j)) (N.c (e y' j)) (N.c (e y' i)) *
+        N.θ (N.c (e χ' i)) (N.c (e y' i)) (N.c (e χ' j) * N.c (e y' j))) =
+      N.τ (e (y' + χ') i) (e (y' + χ') j) / N.τ (e y' i) (e y' j) / N.τ (e χ' i) (e χ' j) := by
+    intro i j
+    rw [he_add y' χ' i, he_add y' χ' j, add_comm (e y' i), add_comm (e y' j)]
+    have h1 := N.τ_add_left (e χ' i) (e y' i) (e χ' j + e y' j)
+    rw [N.c_add] at h1
+    have h2 := N.τ_add_right (e χ' i) (e χ' j) (e y' j)
+    have h3 := N.τ_add_right (e y' i) (e χ' j) (e y' j)
+    have h4 := N.τ_symm (e y' j) (e χ' i)
+    replace h1 := congrArg Additive.ofMul h1
+    replace h2 := congrArg Additive.ofMul h2
+    replace h3 := congrArg Additive.ofMul h3
+    replace h4 := congrArg Additive.ofMul h4
+    apply Additive.ofMul.injective
+    simp only [ofMul_mul, ofMul_div] at h1 h2 h3 h4 ⊢
+    linear_combination (norm := abel) h4 - h1 - h2 - h3
+  have hQ : (∏ i, ∏ j, (N.τ (e y' j) (e χ' i) * N.τ (e y' i) (e χ' j) /
+      (N.θ (N.c (e χ' j)) (N.c (e y' j)) (N.c (e χ' i)) * N.θ (N.c (e χ' j)) (N.c (e y' j)) (N.c (e y' i)) *
+        N.θ (N.c (e χ' i)) (N.c (e y' i)) (N.c (e χ' j) * N.c (e y' j)))) ^ W i j : Fˣ) =
+      P (y' + χ') / P y' / P χ' := by
+    simp only [key, div_zpow, Finset.prod_div_distrib, P]
+  rw [hQ, hU, hU, hU, hU]
+  have hS := hψ' (y' + χ')
+  rw [N'.c_add y' χ', mul_comm (N'.c y')] at hS
+  have hy := hψ' y'
+  have hx := hψ' χ'
+  have E : N'.τ y' χ' * U (N'.c χ') * U (N'.c y') = P (y' + χ') / P y' / P χ' * U (N'.c χ' * N'.c y') * U 1 := by
+    simp only [NumD.τ]
+    replace hS := congrArg Additive.ofMul hS
+    replace hy := congrArg Additive.ofMul hy
+    replace hx := congrArg Additive.ofMul hx
+    apply Additive.ofMul.injective
+    simp only [ofMul_mul, ofMul_div] at hS hy hx ⊢
+    linear_combination (norm := abel) hS - hy - hx
+  have := congrArg Units.val E
+  simpa only [Units.val_mul] using this
+
+end GlobalTheory.Mum.TensTor
+end
+
+-- bundled from Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorTorusValueCorrespondenceUniquePoint
+section
+open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField
+open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor
+open scoped CategoryTheory.Obj
+attribute [local instance] Over.cartesianMonoidalCategory
+open GlobalTheory.Mum
+open GlobalTheory.Ex GlobalTheory.Mum.TensTor
+
+namespace GlobalTheory.Mum.TensTor
+
+theorem gtRelV_unique : ∀ (F : Type) [Field F] (N N' : NumD F) {r : ℕ} (W : Matrix (Fin r) (Fin r) ℤ) (φ : N'.A → Fin r → N.A) (e : N'.X → Fin r → N.X) (wv : N'.A → F), TensFacts W φ e wv → ∀ (v' u' : N'.Gt) (vs : Fin r → N.Gt), GtRelV W φ e wv v' vs → GtRelV W φ e wv u' vs → v' = u' := by
+  intro F _ N N' r W φ e wv hT v' u' vs hv hu
+  obtain ⟨-, hφ, -, -, -, hw, -⟩ := hT
+  obtain ⟨hv1, hv2⟩ := hv
+  obtain ⟨hu1, hu2⟩ := hu
+  have hb : v'.b = u'.b := hφ.1 (funext fun j => (hv1 j).trans (hu1 j).symm)
+  refine NumD.Gt.ext hb (funext fun χ' => ?_)
+  have h1 := hv2 χ'
+  have h2 := hu2 χ'
+  rw [← hb] at h2
+  have hne : wv (N'.c χ') * wv v'.b ≠ 0 := mul_ne_zero (hw _) (hw _)
+  apply Units.ext
+  apply mul_right_cancel₀ hne
+  rw [← _root_.mul_assoc, ← _root_.mul_assoc, h1, h2]
+
+end GlobalTheory.Mum.TensTor
+end
+
+-- bundled from Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaSeriesTermsRescaleByGeneratorMultipleStatement
+section
+open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField
+open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor
+open scoped CategoryTheory.Obj
+attribute [local instance] Over.cartesianMonoidalCategory
+open GlobalTheory.Mum
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.thetaSeries_terms_rescale_by_generator_multiple : ∀ (R : Type) [CommRing R] [IsDomain R] (D : DegPre R), D.PsiEven → D.TauBimult → ∀ (F : Type) [Field F] [Algebra (FractionRing R) F] (N : GlobalTheory.Ex.NumD F) (ν : GlobalTheory.Ex.NumOf D F N) (th : H0 D.P.L 1) (r : R), (∀ j, ν.th.f j = resTop _ (scal D.P.A.hom r) * th.f j) → (∀ s : H0 D.P.L 1, ∃ r' : R, ∀ j, s.f j = resTop _ (scal D.P.A.hom r') * th.f j) → ∃ (N' : GlobalTheory.Ex.NumD F) (ν' : GlobalTheory.Ex.NumOf D F N') (e : N'.X ≃+ N.X), ν'.th = th ∧ ∀ (m : ℕ) (p : QkPt D F (m ^ 2)) (q : N.QT (m ^ 2)) (q' : N'.QT (m ^ 2)), ν.QPt p q → ν'.QPt p q' → ∀ χ, N.txT m q (e χ) = algebraMap (FractionRing R) F (algebraMap R _ r) * N'.txT m q' χ := by
+  first | exact @GlobalTheory.Mum.Rescale.txT_rescale | exact GlobalTheory.Mum.Rescale.txT_rescale | (intros; apply GlobalTheory.Mum.Rescale.txT_rescale <;> assumption)
+end
+

@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.LineOppositeParabolicUnitaryLeviSectionEq
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIdealWeight
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DistribHaarCharTransport
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.VectorTupleProductMeasureTwoSidedAction
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RelIndexMulMeasure
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0376
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0075
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0198
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0045
 
 open MeasureTheory GlobalTheory.PRep GlobalTheory.LGrp Formalism.UG Matrix GlobalTheory.BorelUMod
 open scoped NNReal Pointwise

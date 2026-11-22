@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsOfLayers
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegersCompleteDVR
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TiltWittEqZeroOfPrimeMulEqZero
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0206
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0307
 
 namespace GlobalTheory.IoInj
 

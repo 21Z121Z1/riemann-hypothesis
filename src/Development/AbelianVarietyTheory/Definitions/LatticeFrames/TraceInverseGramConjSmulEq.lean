@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CmHostImaginaryGeneratorNeZero
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0270
 
 noncomputable section
 

@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.EdgeLatRS
+import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.Bundle0012
 
 noncomputable section
 

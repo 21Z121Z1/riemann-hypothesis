@@ -1,6 +1,5 @@
 import Mathlib
-import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Torsfree
-import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Cardsep
+import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Bundle0001
 
 open Matrix
 open scoped ComplexOrder

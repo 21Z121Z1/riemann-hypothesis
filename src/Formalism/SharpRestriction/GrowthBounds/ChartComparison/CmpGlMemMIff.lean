@@ -1,6 +1,6 @@
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.CmpCMemMIff
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.CompFintype
-import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.IsUnitDetBlockPreimage
+import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0005
 
 noncomputable section
 

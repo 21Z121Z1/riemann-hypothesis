@@ -1,11 +1,11 @@
 import Mathlib
-import Formalism.PeriodIntegrals.DSInfCharCap
+import Formalism.PeriodIntegrals.Bundle0022
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.PseudoCoefficientSeparation
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
-import Formalism.RealPlaceAnalysis.StatementE
-import Formalism.RealPlaceAnalysis.StatementB
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CompactUnitaryFiniteInvariantSubspaceStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MaxCompactIrreducibleHasHighestWeightAndIsoStatement
+import Formalism.RealPlaceAnalysis.Bundle0003
+import Formalism.RealPlaceAnalysis.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0078
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0303
 open MeasureTheory Matrix Formalism.REAL Formalism.MainNotions.S Formalism.L2.Theta GlobalTheory.FlagMeas GlobalTheory.GKModule GlobalTheory.RealInd GlobalTheory.OpTrace
 open GlobalTheory.SmoothGlob (lieSet)
 open GlobalTheory.Dec (IsHaarSub HasInfChar UEquiv gelfVal)

@@ -1,7 +1,7 @@
-import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.ExtCut
-import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.HoloWeak
-import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.MollifyEqConvolution
-import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.ExtWeakA
+import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.Bundle0004
+import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.Bundle0003
+import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.Bundle0005
+import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.Bundle0002
 
 namespace ReciprocityTheory.L2DbarEstimates.C
 

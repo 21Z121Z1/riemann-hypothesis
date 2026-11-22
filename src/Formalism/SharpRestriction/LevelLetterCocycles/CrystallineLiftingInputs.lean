@@ -4,7 +4,7 @@ import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 import Formalism.SharpRestriction.LevelLetterCocycles.LiftingTheory
 import Formalism.SharpRestriction.LevelLetterCocycles.DeltaInvariantLattices
 import Formalism.SharpRestriction.LevelLetterCocycles.RamifiedCoefficientChains
-import Formalism.SharpRestriction.LevelLetterCocycles.HerrCohomologyExtensions
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0008
 
 noncomputable section
 

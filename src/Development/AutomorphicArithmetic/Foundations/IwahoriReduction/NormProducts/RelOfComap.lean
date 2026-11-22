@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.LUnH
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TsenTheoremStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ClassGroupAffineCurveDivisibleCharZeroStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.C1FieldNormSurjectiveStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0178
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0192
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0073
 
 open GlobalTheory.KZ GlobalTheory.K4 UpperTheory.Kd.K4 Polynomial UniqueFactorizationMonoid
 open scoped Matrix MatrixGroups

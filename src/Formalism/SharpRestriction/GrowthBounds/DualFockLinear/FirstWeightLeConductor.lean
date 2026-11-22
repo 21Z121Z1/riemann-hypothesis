@@ -1,6 +1,6 @@
 import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.JetMatrixAlgebra
-import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.WspanLeOpCl
-import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.FockRAddRight
+import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.Bundle0011
+import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.Bundle0008
 
 open MvPolynomial
 

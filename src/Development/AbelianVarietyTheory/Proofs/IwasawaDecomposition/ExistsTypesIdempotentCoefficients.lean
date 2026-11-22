@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.GoodChi
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCharpoly
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0108
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GoodTupleConditionOfIdempotentZero
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsTameGenAtOfValuationSubring
 

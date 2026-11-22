@@ -1,8 +1,8 @@
 import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
-import Formalism.LocalToGlobal.IndefiniteReal.HaarTransfer.SchurClosable
+import Formalism.LocalToGlobal.IndefiniteReal.HaarTransfer.Bundle0001
 import Formalism.LocalToGlobal.IndefiniteReal.SmExpSmulContDiff
 import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeCSchur
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SchurClosable
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0005
 
 noncomputable section
 

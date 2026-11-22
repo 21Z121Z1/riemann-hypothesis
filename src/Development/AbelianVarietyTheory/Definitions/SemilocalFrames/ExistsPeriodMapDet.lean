@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.PrCloudAddPrNode
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.BaseVectorTEqOne
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
-import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.MulConjTransposeEqOneOfOrthonormal
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0015
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.Bundle0004
 
 open Matrix MeasureTheory Finset Formalism.QuantumDeterminants Formalism.MainNotions.S
 open scoped InnerProductSpace ENNReal

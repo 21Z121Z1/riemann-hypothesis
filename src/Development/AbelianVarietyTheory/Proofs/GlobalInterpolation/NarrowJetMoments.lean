@@ -1,10 +1,10 @@
 import Mathlib
 import Formalism.LocalToGlobal.Columns.FiniteSumNonzeroLargeDepth
 import Formalism.LocalToGlobal.KernelLattices.ThDistC
-import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.ConjReal
-import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.JetSumTable
-import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.StandardKernelAtTorus
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemDivsOfMem
+import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Bundle0001
+import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0014
+import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0015
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0676
 
 open NumberField IsDedekindDomain
 

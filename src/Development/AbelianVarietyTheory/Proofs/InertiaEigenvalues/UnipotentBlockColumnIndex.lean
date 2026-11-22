@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExpoConjOfIsCsd
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.MeanSquareAddFundamentalDomainOfCocompact
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsCompactAdeleRingModNumberField
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsNhdsZeroPrincipalEqZero
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LcscAdelicUnitaryGroup
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0003
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0040
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0067
 
 noncomputable section
 

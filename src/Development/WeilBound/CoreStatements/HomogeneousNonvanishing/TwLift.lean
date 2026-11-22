@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.ProIsoAt
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
 open NumberField TensorProduct GlobalTheory.CompanionTheory.Ar
 
 namespace PositivityTheory.UnitarySelfGeneration

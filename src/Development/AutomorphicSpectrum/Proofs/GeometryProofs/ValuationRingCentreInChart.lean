@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DomBy
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0011
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GlueApplyOfNotInFibre
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChartPrimeExistsUniquePointStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtChartLocalizationStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0046
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0050
 
 noncomputable section
 

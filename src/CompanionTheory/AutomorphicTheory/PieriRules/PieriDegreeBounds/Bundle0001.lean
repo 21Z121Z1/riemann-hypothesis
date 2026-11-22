@@ -1,0 +1,29 @@
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0047
+import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Imports
+import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
+import Formalism.FormalDegreeBessel.FormalDegreeRatio.GBasic
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0050
+import Formalism.FormalDegreeBessel.FormalDegreeRatio.GroupFactorizationHolds
+import Formalism.FlagUnipotentLattices.MinkowskiFactorialBounds.IntegrableOnIoiTruncatedPowerMoment
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0049
+
+-- bundled from CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.ImportsMore
+section
+
+end
+
+-- bundled from CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.ImportsTer
+section
+
+end
+
+-- bundled from CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.IsFRepDualStandardUnitaryRep
+section
+
+end
+
+-- bundled from CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.NumericalFamilyShapeGaps
+section
+
+end
+

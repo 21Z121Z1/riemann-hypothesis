@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.RefLinked
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
+import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Bundle0001
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0007
 import Development.WeilBound.CoreStatements.FlagImmersions.RealTowerPlurisubharmonicPotential
 import Development.WeilBound.CoreStatements.FlagImmersions.PshSumPotentialsSmallParameter
 

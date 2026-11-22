@@ -1,6 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.LocalDualIndex
-import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.LocalDensityEuler
+import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0004
 import Formalism.GL3MeanSquares.HookFormulaTorsion.SumWeightsOverPrimeLeHalfDegree
 
 noncomputable section

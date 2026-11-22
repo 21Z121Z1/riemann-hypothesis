@@ -1,13 +1,13 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.PaddedWittNormSquare
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ColumnInclusionRenaming
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferentiableOfUnitCoord
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0018
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0610
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0777
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsMulOfApprox
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NormLeOfCoord
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0076
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DualWeylEqSpanColProd
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExtremalRowWeight
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0284
 import Formalism.ThetaSupremumBounds.LiftOperatorBoundOfFockJet
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockSubstLe
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0898
 
 open MvPolynomial Formalism.GradedWeylDivisibility Formalism.BasicNotions Formalism.L2.DIV Formalism.L2.Ker
 open Formalism.REAL (fockF)

@@ -1,8 +1,8 @@
 import Mathlib
-import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsExhaustion.MidDefs
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductIrreducibleAppendEquivStatement
+import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsExhaustion.Bundle0001
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0512
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ParabolicInductionInStagesProductOfProducts
-import BuildAid.D4
+import BuildAid.Bundle0001
 
 noncomputable section
 

@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.PeriodIntegrals.TransferenceCoverRad
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.TransferenceCover
+import Formalism.PeriodIntegrals.Bundle0011
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0020
 
 open scoped InnerProductSpace
 

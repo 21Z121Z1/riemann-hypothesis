@@ -1,9 +1,9 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsVertPointLengthSteps
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSmallSectionsNonzero
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.CharacterNondegenerate
-import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.PCurveDivVertical
-import GroundTheory.HeightsAndTheta.Heights.Intersections.AvoidRing
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0021
+import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0004
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0006
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

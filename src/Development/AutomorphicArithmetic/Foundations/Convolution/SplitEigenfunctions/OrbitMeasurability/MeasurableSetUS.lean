@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.OrbitMeasurability.PerCont
-import Development.AutomorphicArithmetic.WhittakerHecke.IsCompactIntegralIdeleUnitsAndAbsEqOne
+import Development.AutomorphicArithmetic.WhittakerHecke.Bundle0012
 
 noncomputable section
 

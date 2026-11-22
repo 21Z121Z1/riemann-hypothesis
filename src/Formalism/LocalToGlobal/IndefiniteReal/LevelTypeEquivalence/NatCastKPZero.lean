@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.LevelA
-import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.LevelASt
+import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0014
+import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0003
 
 noncomputable section
 

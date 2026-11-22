@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.RegPolOfRepOf
-import Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.CyclicBaseChangeC
+import Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.Bundle0001
 
 noncomputable section
 

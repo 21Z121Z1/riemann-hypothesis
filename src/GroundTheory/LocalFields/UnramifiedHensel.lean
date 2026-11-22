@@ -2,7 +2,7 @@ import Mathlib
 import GroundTheory.LocalFields.Interface
 import GroundTheory.LocalFields.Integers
 import GroundTheory.LocalFields.IntermediateField
-import GroundTheory.LocalFields.UnramifiedDefs
+import GroundTheory.LocalFields.Bundle0005
 import GroundTheory.LocalFields.UnitsPowers
 
 noncomputable section

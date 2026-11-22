@@ -1,1 +1,1 @@
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeilTransportAdelicSchwartzCmExtensionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1751

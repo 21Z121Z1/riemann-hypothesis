@@ -1,8 +1,6 @@
-import Formalism.LocalToGlobal.GlobalTheory.GL6.ValuationClassTranslateMem
-import Formalism.LocalToGlobal.GlobalTheory.GL6.CoordMapInjective
-import Formalism.LocalToGlobal.GlobalTheory.GL6.RamifiedLatticePropsOfModel
-import Formalism.LocalToGlobal.GlobalTheory.GL6.DiamondCommDistinctPlaces
-import Formalism.LocalToGlobal.GlobalTheory.GL6.AdmissibleOfSplitAndRoundTrips
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0005
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0001
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0004
 
 noncomputable section
 

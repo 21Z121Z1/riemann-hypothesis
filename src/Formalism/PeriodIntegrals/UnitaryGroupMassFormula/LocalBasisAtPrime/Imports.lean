@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.LocBasisPlace
+import Formalism.PeriodIntegrals.Bundle0006
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalBasisAtPrime.SpanClear
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalBasisAtPrime.MemPrimeComplIff
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.GaloisRepOfPolarizedPair
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0005
 
 noncomputable section
 

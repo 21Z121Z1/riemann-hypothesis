@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCoType
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0001
 import Formalism.LocalToGlobal.Columns.HeckeSp
 
 noncomputable section

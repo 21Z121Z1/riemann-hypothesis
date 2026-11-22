@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.HaarCosets
+import GroundTheory.AutomorphicForms.Bundle0008
 import GroundTheory.AutomorphicForms.SmoothRep
 
 noncomputable section

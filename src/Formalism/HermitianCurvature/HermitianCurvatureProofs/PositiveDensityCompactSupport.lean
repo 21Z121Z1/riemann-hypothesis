@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.StatementJCCpt
+import Formalism.HermitianCurvature.Bundle0005
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PositiveDensityModerateGrowth
 
 open Formalism.FourierDecayAlt Formalism.REAL Formalism.QuantumDeterminants Formalism.FourierDecayAlt.B Matrix

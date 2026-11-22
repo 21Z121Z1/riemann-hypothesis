@@ -1,7 +1,7 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.MirabolicDerivatives.UnipotentDerivatives.DerUnipLeUnipB
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhitKerLeComapMap
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StdMaxParabolicRadicalLeBlockUnipotentRadical
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0457
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0179
 
 open Matrix GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.LocGL GlobalTheory.BZMir GlobalTheory.CompanionTheory.BZNuPair
 

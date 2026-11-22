@@ -1,8 +1,8 @@
 import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.PureSt
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IdeleCongruenceUnitCriterion
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsStdCharNegOneOfStandardTraceAdelicAddChar
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0031
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1759
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.ExistsNhdsInvariant
-import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaDistributionNonzeroAdmissible
+import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0007
 
 noncomputable section
 

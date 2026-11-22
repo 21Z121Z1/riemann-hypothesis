@@ -1,6 +1,6 @@
-import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLcInt
-import Formalism.LocalToGlobal.GlobalTheory.GL6.RamifiedLatticePropsOfModel
-import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLocGlob
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0007
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0005
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0008
 
 noncomputable section
 

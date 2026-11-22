@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 import Formalism.LocalToGlobal.GlobalTheory.GL5.FamilyMassVolumeIdentityOfClassDecomp
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsCompactLatticeStabilizerBoundedReal
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicUnitaryEqRealMulFiniteSplit
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0050
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0074
 
 noncomputable section
 

@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsGaugeAll
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ExistsIsSatFlagOne
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0007
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0008
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OrthogonalCanonicalFiltrationStepsAutPoint
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AutPointMajorantFramesGiveMajorants
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0118
 
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S GlobalTheory.Count GlobalTheory.FlagMeas
 

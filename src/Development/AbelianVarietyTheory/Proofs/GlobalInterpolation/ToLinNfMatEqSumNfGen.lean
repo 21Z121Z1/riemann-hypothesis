@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.IdxMatNF
-import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SandwichNormalForm
+import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0008
 
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.HermitianLatticesTheory Formalism.L2.DIV Formalism.L2.Col
 

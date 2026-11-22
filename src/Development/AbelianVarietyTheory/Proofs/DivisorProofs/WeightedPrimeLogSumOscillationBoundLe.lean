@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.ESmall
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumPrimeLogDivPredLeLogAdd
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumPrimesInvPredLeLoglogStatement
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0070
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0006
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0240
 
 open GlobalTheory.RefSum GlobalTheory.CovTop GlobalTheory.BigTop
 

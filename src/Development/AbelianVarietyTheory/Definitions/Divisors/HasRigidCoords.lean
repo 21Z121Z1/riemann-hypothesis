@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.FromBaseAlt
 import Development.AbelianVarietyTheory.Definitions.Divisors.GalRigidOfSurjective
-import Development.AbelianVarietyTheory.Definitions.Divisors.EvenDefect
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiltGraded
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0073
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3439
 
 noncomputable section
 

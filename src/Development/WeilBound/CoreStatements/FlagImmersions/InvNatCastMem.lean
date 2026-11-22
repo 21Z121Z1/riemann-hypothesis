@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DualMapComp
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DiscriminantEigenProjector
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0056
 
 noncomputable section
 

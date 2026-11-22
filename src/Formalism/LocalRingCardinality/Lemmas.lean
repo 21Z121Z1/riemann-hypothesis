@@ -1,8 +1,8 @@
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-import Formalism.LocalRingCardinality.DataDIVDefs
+import Formalism.LocalRingCardinality.Bundle0003
 import Formalism.LocalRingCardinality.DataLatDefs
-import Formalism.LocalRingCardinality.DataKap
-import Formalism.LocalRingCardinality.DataExtra
+import Formalism.LocalRingCardinality.Bundle0004
+import Formalism.LocalRingCardinality.Bundle0007
 import Formalism.LocalRingCardinality.DataParams
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Rerealize

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.ResolutionOfSingularities.EmbeddedResolution.AlgebraicPreliminaries.CoproductBaseChange
+import Development.ResolutionOfSingularities.EmbeddedResolution.AlgebraicPreliminaries.Bundle0001
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry
 
 universe u

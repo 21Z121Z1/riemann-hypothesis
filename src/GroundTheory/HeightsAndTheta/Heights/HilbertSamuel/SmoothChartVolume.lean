@@ -1,6 +1,6 @@
 import Mathlib
 import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialOfFun
-import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.LintegralImageEqLintegralNormSqDetMul
+import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0004
 import GroundTheory.HeightsAndTheta.Heights.LocalDensities.PChartPartitionExists
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ArithRes
 set_option maxSynthPendingDepth 1

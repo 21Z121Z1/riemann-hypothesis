@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.OppositeCellIntegration
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0010
 import GroundTheory.AutomorphicForms.DixmierMalliavinHaar
 import GroundTheory.AutomorphicForms.AdelicDixmierMalliavinLie
 noncomputable section

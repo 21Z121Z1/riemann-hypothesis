@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsAdelicSplit
+import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0004
 import GroundTheory.HeightsAndTheta.Theta.RealPlace
 
 namespace GroundTheory.Heights₂.Heights.FiniteCovolume

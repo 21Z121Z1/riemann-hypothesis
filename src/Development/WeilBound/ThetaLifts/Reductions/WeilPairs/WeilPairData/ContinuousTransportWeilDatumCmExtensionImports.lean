@@ -1,1 +1,1 @@
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousTransportWeilDatumCmExtensionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2190

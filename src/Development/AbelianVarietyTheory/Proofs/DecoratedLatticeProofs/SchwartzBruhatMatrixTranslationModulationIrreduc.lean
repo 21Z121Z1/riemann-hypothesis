@@ -1,8 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.MatrixMeasurableSpace
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsNeZeroOfEventually
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MatrixIntegersModNatFinite
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MatrixIntegralOfAddCharTraceDual
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0007
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0008
 open ValuativeRel GlobalTheory.SplitWeil Matrix
 open scoped Topology
 

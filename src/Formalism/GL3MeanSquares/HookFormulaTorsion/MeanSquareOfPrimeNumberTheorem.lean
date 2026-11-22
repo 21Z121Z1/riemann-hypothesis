@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.GL3MeanSquares.PrimePairOfPrimeNumberTheoremInProgressions
-import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.MSqFinal
+import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.Bundle0015
 import Formalism.GL3MeanSquares.HookFormulaTorsion.PrimePairOfBoxAndWeakMeanSquareHypotheses
 import Formalism.GL3MeanSquares.HookFormulaTorsion.BoxCountOfZeroDensity
 import Formalism.GL3MeanSquares.HookFormulaTorsion.BoxCountAllStatement

@@ -1,4 +1,4 @@
-import Formalism.SuccessiveMinima.DefsMink
+import Formalism.SuccessiveMinima.Bundle0002
 
 open MeasureTheory Module Metric Set
 open scoped Pointwise

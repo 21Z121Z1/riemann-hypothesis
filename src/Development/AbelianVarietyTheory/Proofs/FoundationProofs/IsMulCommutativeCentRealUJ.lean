@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsAuxiliaryPlaceNotMemFinset
-import Development.AbelianVarietyTheory.Definitions.Foundations.SecondCountableAndT2LocalField
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0006
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LeftMulMatrixTransfer
 import Formalism.RealPlaceAnalysis.InstMeasurableSpaceUJ
 

@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.CongruenceOddLevel.NotApartOfOverPair
-import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.CongruenceOddLevel.ExistsEllType
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LinearIndependentSimulEigen
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.CongruenceOddLevel.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0249
 
 open GlobalTheory.Cong GlobalTheory.CongL GlobalTheory.CongW
 

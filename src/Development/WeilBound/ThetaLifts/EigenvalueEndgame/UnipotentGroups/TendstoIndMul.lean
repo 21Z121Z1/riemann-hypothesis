@@ -1,5 +1,5 @@
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.UnipotentGroups.ContinuousExpG
-import Development.WeilBound.ThetaLifts.FrameEstimates.TowerRallisLemma
+import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0006
 import Development.WeilBound.ThetaLifts.SmallCones.ThetaUniq
 import Development.WeilBound.ThetaLifts.ConeHypotheses.PureEqPureA
 import Development.WeilBound.ThetaLifts.CartanFactorisation.CartanConj

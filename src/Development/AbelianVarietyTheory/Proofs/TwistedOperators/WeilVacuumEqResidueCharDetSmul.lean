@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TameOnOne
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemCompletedHomLatticeIffFrameStabiliserActionStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsEqMulOfResSNeOne
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.OmVacuumEqSplitFacSmulSum
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexNeZeroOfFinite
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0129
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0135
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0138
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0082
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1051
 
 noncomputable section
 

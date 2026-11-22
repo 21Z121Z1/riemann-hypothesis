@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.GL3MeanSquares.InvariantSeriesBidegreeOneOne
-import Formalism.LogVandermondeBounds.LogVandermondeProofs.TaylorLogMetric
+import Formalism.LogVandermondeBounds.LogVandermondeProofs.Bundle0002
 
 namespace Formalism.HermitianLattices.IntegralLatticeDensity
 

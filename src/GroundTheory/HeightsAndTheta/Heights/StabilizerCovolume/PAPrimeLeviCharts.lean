@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.StAPrimeLeviCharts
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StProjHoloLocal
-import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
+import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.Bundle0010
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0034
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0001
 set_option maxSynthPendingDepth 1
 
 noncomputable section

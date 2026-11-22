@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.LocalToGlobal.Columns.FiniteSumNonzeroLargeDepth
 import Formalism.LocalToGlobal.Columns.NonDeg
 import Formalism.LocalToGlobal.Columns.CyclotomicIsCyclotomicExtension
-import Formalism.LocalToGlobal.Columns.AtTOwedC
+import Formalism.LocalToGlobal.Columns.Bundle0007
 
 open NumberField IsDedekindDomain Module
 

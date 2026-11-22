@@ -1,9 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.VacuumPhaseSubTraceMemIntegers
-import Mathlib
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SelfDualOne
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LatticeModelVacuumTranslateClassesIndependent
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Gam0
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0165
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0149
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0142
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0152
 open Matrix
 set_option maxHeartbeats 1000000 in
 theorem _root_.GlobalTheory.T.vacuumPhase_sub_trace_mem_integers : ∀ (L : Type) [Field L] [Valued L (WithZero (Multiplicative ℤ))] (σ : L →+* L) (δ : L), (∀ x, Valued.v (σ x) = Valued.v x) → δ ∈ Formalism.UG.intL L →

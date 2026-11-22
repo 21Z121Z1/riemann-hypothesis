@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.JGenSpecializes
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClosedPointGeometricFibresFinite
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0311
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0321
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsValuationSubringLiftOfSpecialFibre
 import ReciprocityTheory.GaloisValuations.GlobalB
 

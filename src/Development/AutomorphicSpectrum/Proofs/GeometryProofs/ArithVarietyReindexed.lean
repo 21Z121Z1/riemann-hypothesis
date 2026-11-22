@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsSmoothHermTrivLine
-import GroundTheory.HeightsAndTheta.Heights.Intersections.PtsOverPt
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PGenFibreChartDeg
-import GroundTheory.HeightsAndTheta.Heights.Intersections.PChartScalingIndep
-import GroundTheory.HeightsAndTheta.Heights.Intersections.PAdjoinIndepRelfinrank
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ExistsPowOfMemCellSec
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0114
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0044
+import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0039
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0010
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0003
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0070
 
 noncomputable section
 

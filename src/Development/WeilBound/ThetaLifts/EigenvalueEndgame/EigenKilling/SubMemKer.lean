@@ -1,6 +1,6 @@
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.EigenKilling.ConeIntegralFactorisation
 import Development.WeilBound.ThetaLifts.ConeHypotheses.PureEqPureA
-import Development.WeilBound.ThetaLifts.CartanFactorisation.IntegrableOnRight
+import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0001
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.SoStatement
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.ContinuousFinId
 

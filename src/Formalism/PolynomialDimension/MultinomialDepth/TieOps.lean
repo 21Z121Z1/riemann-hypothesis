@@ -1,7 +1,7 @@
 import Formalism.PolynomialDimension.MultinomialDepth.PartnerM
 import Formalism.MahlerMeasure.MahlerMeasureProofs.WeightSpaceDimensionMonotone
 import Formalism.MahlerMeasure.MahlerMeasureProofs.GamInt
-import Formalism.MahlerMeasure.MahlerMeasureProofs.LieMat
+import Formalism.MahlerMeasure.MahlerMeasureProofs.Bundle0003
 
 namespace Formalism.CountingSumsFrames.TO
 

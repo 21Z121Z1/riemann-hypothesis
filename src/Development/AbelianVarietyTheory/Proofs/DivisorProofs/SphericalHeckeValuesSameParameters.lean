@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaloisOfPolarized
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ElementaryDivisorsMulMinusculeTopTermStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0921
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0141
 
 noncomputable section
 

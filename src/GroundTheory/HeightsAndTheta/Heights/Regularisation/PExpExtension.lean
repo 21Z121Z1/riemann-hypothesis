@@ -1,8 +1,7 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.Statements
-import GroundTheory.HeightsAndTheta.Heights.Regularisation.StRiemannSlices
-import GroundTheory.HeightsAndTheta.Heights.Regularisation.StPuncturedExpOrder
-import GroundTheory.HeightsAndTheta.Heights.Regularisation.StLogCoverDescent
+import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0001
+import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0003
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Regular

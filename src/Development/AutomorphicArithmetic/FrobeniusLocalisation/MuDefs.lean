@@ -1,7 +1,7 @@
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.HostFacts
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.PrimePairSizeCondition
-import Development.AutomorphicArithmetic.PrimeDiscriminants.ExistsPrimitiveRootTorsionOrder
-import Development.AutomorphicArithmetic.WeightCongruences.ProdNegOneZpow
+import Development.AutomorphicArithmetic.PrimeDiscriminants.Bundle0001
+import Development.AutomorphicArithmetic.WeightCongruences.Bundle0001
 
 open NumberField
 

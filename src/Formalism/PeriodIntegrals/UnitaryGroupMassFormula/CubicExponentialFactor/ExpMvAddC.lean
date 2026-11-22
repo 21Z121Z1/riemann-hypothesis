@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.CubicExponentialFactor
+import Formalism.PeriodIntegrals.Bundle0002
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalGroupCommon.CoeffSingleLg
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CubicExponentialFactor.NormAddLeOne
 

@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.LocalToGlobal.CharacterGerms.RestNonneg
 import Development.AutomorphicArithmetic.OrbitLabellings.RowDefs
 import Formalism.LocalToGlobal.CharacterGerms.ValuationChoiceHypothesis
-import Formalism.LocalToGlobal.ProjectiveLattices.DepRun
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0037
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.DepthTie
 
 set_option autoImplicit false

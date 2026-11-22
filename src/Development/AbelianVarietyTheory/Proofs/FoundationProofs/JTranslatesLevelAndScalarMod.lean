@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DiagMod
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsSlTwoIntSmulOfFixesJK
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemTranslationInvariantSubfieldIffExponents
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0075
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0095
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0104
 
 open scoped MatrixGroups TensorProduct
 open Matrix GlobalTheory.KZ GlobalTheory.KZ.ES

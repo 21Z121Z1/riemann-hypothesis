@@ -1,8 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PolyRep
-import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.GoodTopChernForm
-import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ChernWeilNumbers
-import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.AntisymmFibrePointTwo
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0014
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0010
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0008
 
 set_option autoImplicit false
 

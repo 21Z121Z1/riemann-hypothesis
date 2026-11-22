@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.RecTTransport
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ApplyMemTwKerOfNormalizer
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSatakeParameterOfIsSubquotientOfInjective
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0730
 import GroundTheory.AutomorphicForms.CompactModCentre
 import GroundTheory.AutomorphicForms.Cartan
 

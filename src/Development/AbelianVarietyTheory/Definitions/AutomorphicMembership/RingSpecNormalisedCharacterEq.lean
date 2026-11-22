@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.GaloisLevelStructure.TiedLevel
+import Formalism.LocalToGlobal.GaloisLevelStructure.Bundle0001
 import Formalism.LocalToGlobal.GaloisLevelStructure.DefsAutLoc
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.HeckeStdTwOfStd
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.TwoPowS0EqTwoPartModulus
@@ -8,8 +8,8 @@ import Formalism.LocalToGlobal.IndefiniteReal.DoubleCosetOperators.Objects
 import Formalism.LocalToGlobal.IndefiniteReal.DoubleCosetOperators.TwistedCharacterValue
 import Formalism.LocalToGlobal.GaloisLevelStructure.DefsRowLoc
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LocAutHodgeTateWeightsLevelZeroDef
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CGTrue
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ConcreteTwistFrameExtraExcludedOverSmallPrimes
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0015
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0007
 
 noncomputable section
 

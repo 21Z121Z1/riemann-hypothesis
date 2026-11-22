@@ -1,6 +1,6 @@
 import Development.WeilBound.CoreStatements.LocalThetaKernels.Locpair
-import Development.WeilBound.CoreStatements.LocalThetaKernels.LocpairUnit
-import Development.WeilBound.ThetaLifts.CartanFactorisation.MaxDef
+import Development.WeilBound.CoreStatements.LocalThetaKernels.Bundle0003
+import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0004
 
 noncomputable section
 

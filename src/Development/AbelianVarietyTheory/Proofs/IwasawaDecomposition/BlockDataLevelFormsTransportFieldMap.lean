@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BlockBaseChange
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0078
 import Formalism.LocalToGlobal.Divisibility.ProjLemmas
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ImportsExtra
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0012
 
 noncomputable section
 

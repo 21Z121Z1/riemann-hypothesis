@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.GrowthBounds.ScaleEdges
-import Formalism.LocalToGlobal.GroupLattices.FockModels.WeylDim
+import Formalism.SharpRestriction.GrowthBounds.Bundle0005
+import Formalism.LocalToGlobal.GroupLattices.FockModels.Bundle0002
 
 noncomputable section
 

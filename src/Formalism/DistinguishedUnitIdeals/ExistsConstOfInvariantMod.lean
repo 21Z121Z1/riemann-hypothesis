@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.DistinguishedUnitIdeals.ArcLiftOfLocalizationData
-import Formalism.DistinguishedUnitIdeals.UnivPart
+import Formalism.DistinguishedUnitIdeals.Bundle0001
 
 noncomputable section
 

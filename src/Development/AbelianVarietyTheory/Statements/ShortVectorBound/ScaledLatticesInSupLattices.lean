@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AutomorphicArithmetic.PrimeDiscriminants.SlopeTestRemainingChoices
 import Development.AbelianVarietyTheory.Definitions.PlaceAdaptation.AdaptStd
-import Development.AbelianVarietyTheory.Definitions.ThetaValues.SWEqSOf
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.PlaceBoundOddRamifiedOfCharts
+import Development.AbelianVarietyTheory.Definitions.ThetaValues.Bundle0002
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0008
 
 set_option autoImplicit false
 noncomputable section

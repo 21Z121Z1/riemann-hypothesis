@@ -1,9 +1,8 @@
 import Mathlib
 import GroundTheory.ProfiniteCohomology.CohomologicalDimension.Subgroup
-import GroundTheory.ProfiniteCohomology.CohomologicalDimension.NotDvdSuperIndexBotOfIsProPGroup
-import GroundTheory.ProfiniteCohomology.CohomologicalDimension.CdpOpenSubgroupLe
+import GroundTheory.ProfiniteCohomology.CohomologicalDimension.Bundle0001
 import GroundTheory.ProfiniteCohomology.CohomologicalDimension.Closed
-import GroundTheory.ProfiniteCohomology.NotDvdSuperIndexIffMap
+import GroundTheory.ProfiniteCohomology.Bundle0003
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.FiniteVanishing.Vanishing
 set_option maxSynthPendingDepth 1
 

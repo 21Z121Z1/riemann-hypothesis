@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBergmanDensChartSum
-import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.LintegralImageEqLintegralNormSqDetMul
-import ReciprocityTheory.AnalyticForms.PotentialTheory.LocDens
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0023
+import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0004
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0005
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NuInRange
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0003
 
 noncomputable section
 

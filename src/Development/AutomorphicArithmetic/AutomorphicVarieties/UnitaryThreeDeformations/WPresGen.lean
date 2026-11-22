@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.ResMapBijective
-import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.MvPowerSeriesEvalOfPowMem
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0003
 
 noncomputable section
 

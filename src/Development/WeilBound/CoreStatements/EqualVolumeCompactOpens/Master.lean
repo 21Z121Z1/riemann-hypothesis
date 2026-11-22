@@ -1,7 +1,5 @@
-import Development.AutomorphicSpectrum.Proofs.AdelicProofs.RelIndexInfEqOfMemMul
-import Development.AutomorphicSpectrum.Proofs.AdelicProofs.RelIndexRatioCocycle
-import Development.AutomorphicSpectrum.Proofs.AdelicProofs.EqOneOfPowEqLeExponent
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsIsFundamentalDomainOfRelIndexNeZero
+import Development.AutomorphicSpectrum.Proofs.AdelicProofs.Bundle0001
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0001
 import Development.WeilBound.CoreStatements.EqualVolumeCompactOpens.IsIsotropicHermitianSetting
 
 namespace PositivityTheory.EqVol

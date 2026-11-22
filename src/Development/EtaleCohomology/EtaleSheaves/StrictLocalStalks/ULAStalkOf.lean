@@ -1,5 +1,4 @@
-import Development.EtaleCohomology.EtaleSheaves.StrictLocalStalks.PolyPO
-import Development.EtaleCohomology.EtaleSheaves.StrictLocalStalks.FracOf
+import Development.EtaleCohomology.EtaleSheaves.StrictLocalStalks.Bundle0001
 
 open LateralTheory.E.t_E3Cut
 

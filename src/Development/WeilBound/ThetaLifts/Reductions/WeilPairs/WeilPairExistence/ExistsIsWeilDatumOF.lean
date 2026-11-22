@@ -1,11 +1,11 @@
 import Mathlib
-import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.LatH
+import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0003
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 import Formalism.LocalToGlobal.IndefiniteReal.DatumF
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.FixedOfMem
-import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.LatRep
+import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0012
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.IsScalarOneOfComm
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumTwistByHeckeCharactersTrivialBaseStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1895
 open scoped TensorProduct Matrix
 open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes
 open GlobalTheory.WeilM GlobalTheory.LFun GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels

@@ -1,5 +1,5 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreGTKLineCut
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.IrreducibleCapelliModules
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0097
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0077
 
 open Formalism.REAL Formalism.QuantumDeterminants Formalism.FourierDecayAlt
 

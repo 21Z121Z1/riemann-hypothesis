@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.Objects
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.WeightsNormal
-import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.IsPshLocallyIntegrableStatement
+import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0001
 set_option maxSynthPendingDepth 1
 
 noncomputable section

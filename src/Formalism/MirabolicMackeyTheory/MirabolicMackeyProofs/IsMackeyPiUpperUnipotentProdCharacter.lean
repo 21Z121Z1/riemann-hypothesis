@@ -1,6 +1,5 @@
-import Formalism.MirabolicMackeyTheory.StatementL
-import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.OnLocal
-import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.Mirabolic
+import Formalism.MirabolicMackeyTheory.Bundle0001
+import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.Bundle0001
 import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.LemmaGG
 
 open Module NumberField IsDedekindDomain

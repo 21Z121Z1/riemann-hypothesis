@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.IndefiniteReal.ThPinsR
-import Formalism.LocalToGlobal.ProjectiveLattices.ThClassPins
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0038
 
 noncomputable section
 

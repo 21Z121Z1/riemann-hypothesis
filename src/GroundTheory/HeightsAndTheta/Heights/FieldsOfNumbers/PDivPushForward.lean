@@ -1,9 +1,9 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.StatementsDivPushForward
-import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.StatementsContractRelDimLe
-import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.StatementsDivPushForwardLocal
-import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PDivCycleSupport
-import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PPFDegree
+import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0008
+import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0007
+import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0013
+import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0012
+import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0011
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.FieldNumbers

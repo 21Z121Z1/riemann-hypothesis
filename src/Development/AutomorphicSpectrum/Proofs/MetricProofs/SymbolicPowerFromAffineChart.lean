@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.FiniteMinimalPrimes
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.ChPrime
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.AffineChartIdealPrimeAndSaturatedStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0090
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0096
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0113
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.CycDim
 
 noncomputable section

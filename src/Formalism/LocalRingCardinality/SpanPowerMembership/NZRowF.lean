@@ -1,4 +1,4 @@
-import Formalism.LocalRingCardinality.DataTies
+import Formalism.LocalRingCardinality.Bundle0003
 import Formalism.LocalRingCardinality.SpanPowerMembership.NZRowE
 
 noncomputable section

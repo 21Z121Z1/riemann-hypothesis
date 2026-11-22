@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.PlaceAt
-import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.LatLevel
+import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0009
+import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0011
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.LatSelf
 
 noncomputable section

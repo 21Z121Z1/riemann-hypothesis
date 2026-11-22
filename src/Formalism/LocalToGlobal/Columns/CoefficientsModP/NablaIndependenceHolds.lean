@@ -3,7 +3,7 @@ import Formalism.LocalToGlobal.Columns.PolyFnLemmas
 import Formalism.LocalToGlobal.Columns.LocWLemmas
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 import Formalism.LocalToGlobal.Columns.CoefficientsModP.LatticeBasisExistsHolds
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpanLocalIff
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0343
 
 open MvPolynomial NumberField IsDedekindDomain
 open scoped Matrix Pointwise

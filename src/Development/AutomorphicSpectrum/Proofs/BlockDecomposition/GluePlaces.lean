@@ -2,8 +2,8 @@ import Mathlib
 import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.KFiniteVectors.KFiniteThetaLifts.RationalPrimesBelowPlaces
 import GroundTheory.GlobalFields.AnalyticClassNumber.Quadratic
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsRealisesNeOne
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferentiableCpowDiscr
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DifferentIdealRat
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0988
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0560
 import GroundTheory.GlobalFields.ClassFieldConsequences.TrivialModulus
 
 noncomputable section

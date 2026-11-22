@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonemptyRayDataOfNeZero
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RayClassPartialZetaContinuationStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0055
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RayLSeriesEulerProduct
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RayLNonvanishingAtOneStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0058
 
 open NumberField IsDedekindDomain GlobalTheory.Mem Complex
 open scoped ComplexOrder

@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.IsThBIff
-import Development.AbelianVarietyTheory.Definitions.Foundations.IsLamOfLSmulIff
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0021
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.ConstInt
 
 open scoped MatrixGroups Matrix

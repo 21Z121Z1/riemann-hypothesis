@@ -1,7 +1,7 @@
 import CompanionTheory.AutomorphicTheory.RankOneEstimates.RankOne
-import Formalism.SharpRestriction.CuspSpanNormBounds.IsPtRepTrDat
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0015
 import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusCoefficientMemLp.SigmaFiniteAmplitudes.SigmaFiniteOfUnfold
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselNeZeroOfCyclicOrbit
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0042
 
 open MeasureTheory Matrix Formalism.QuantumDeterminants Formalism.MainNotions.S Formalism.MainNotions.FrameBoundFromBesselTorus Formalism.FourierDecayAlt.P
 open scoped InnerProductSpace ENNReal

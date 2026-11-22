@@ -1,13 +1,13 @@
 import Mathlib
-import Formalism.UnipotentAdelicQuotients.SiegelWeilUnitaryConvergent
+import Formalism.UnipotentAdelicQuotients.Bundle0003
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.AllRows
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LoopRowOfFiniteDim
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OffK0Closed
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RanksFramesOfSiegelWeil
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowsFinDimLink
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowPositivityOfSiegelWeil
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryHyperplaneVolumeRatioSiegelWeil
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SwxsOfSiegelWeil
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0466
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0374
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0488
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0439
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0413
 open Formalism.BasicNotions Formalism.MainNotions GlobalTheory.EX GlobalTheory.EX.OB GlobalTheory.Mem GlobalTheory.Mem.Top GlobalTheory.Fc GlobalTheory.Cp
 
 namespace GlobalTheory.LocalRows

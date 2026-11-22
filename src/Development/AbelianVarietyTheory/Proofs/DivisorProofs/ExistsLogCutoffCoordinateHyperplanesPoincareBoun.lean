@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.EndValuedForm11Coeffs
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLogCutoffBoundedPoincareGradient
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0046
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1143
 
 set_option autoImplicit false
 

@@ -1,5 +1,5 @@
 import Development.WeilBound.RepresentationTheoryGL.LimitMultiplicityWeights.RegularClassIntegrals.ArchUnimod
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicTermsVanish
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1962
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCyclicOfFiniteQuotient
 
 open MeasureTheory Set Filter NumberField IsDedekindDomain

@@ -1,6 +1,6 @@
 import Formalism.HermitianCurvature.StatementG
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PhaseFunctionCriticalPoints
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.AdditiveCharacterPsi
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0002
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.AffineChangeOfVariables
 
 open Matrix MeasureTheory Filter Topology

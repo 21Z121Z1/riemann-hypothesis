@@ -1,7 +1,7 @@
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpTie
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0005
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.ExpLaw
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.PderivSecondEvFirstPointEqZero
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.ActLin
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.Bundle0008
 
 set_option autoImplicit false
 

@@ -1,6 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.OnePlusPowerAssembly
-import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.KernelCharacterDelta
+import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0001
 
 noncomputable section
 namespace GlobalTheory.PsiLemmaCompare

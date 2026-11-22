@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IntMIffInt
-import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsBaseClassLevelAdapted
-import Development.AbelianVarietyTheory.BlockTheory.JetGauges.ThetaSpanAdjoint
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
+import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.Bundle0001
+import Development.AbelianVarietyTheory.BlockTheory.JetGauges.Bundle0009
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIndexIdeal
 
 set_option autoImplicit false

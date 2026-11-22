@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.ClsStab
-import Formalism.LocalRingCardinality.DataLevelD
+import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0008
+import Formalism.LocalRingCardinality.Bundle0001
 import Formalism.LocalToGlobal.GroupLattices.TrivialTransfer.GenCoprime
 import Formalism.LocalToGlobal.GroupLattices.LevelCharts.FiniteClassSetOfFiniteIndex
 import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.GramDetIsUnit

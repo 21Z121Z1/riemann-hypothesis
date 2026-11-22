@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.MeanSquareBounds.PrimeSetTwoBounds
 import Development.AutomorphicArithmetic.MeanSquareBounds.PairShare
-import Development.AutomorphicArithmetic.MeanSquareBounds.RowsOfMem
+import Development.AutomorphicArithmetic.MeanSquareBounds.Bundle0001
 
 open Finset Formalism.HermitianLattices.ZeroFreeRegionGL2 Formalism.HermitianLattices.Ext.LogarithmicIntegralBounds
 

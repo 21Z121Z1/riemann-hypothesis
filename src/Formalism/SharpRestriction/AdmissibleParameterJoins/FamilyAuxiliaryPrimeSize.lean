@@ -1,6 +1,6 @@
 import Formalism.SharpRestriction.Divisibility.AbsolutelyIrreducibleSpan
 import Formalism.GL3MeanSquares.GenusMeanAsymptotics.LogEightBound.ProgTwo
-import Formalism.SharpRestriction.ElevenLe
+import Formalism.SharpRestriction.Bundle0001
 import Formalism.SharpRestriction.ParConsts
 
 noncomputable section

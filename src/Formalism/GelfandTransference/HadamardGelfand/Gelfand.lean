@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.GelfandTransference.GelfandCentral
+import Formalism.GelfandTransference.Bundle0001
 
 open Finset
 

@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.FinrankRow
+import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.Bundle0002
 
 noncomputable section
 open NumberField Formalism.BasicNotions Classical Matrix

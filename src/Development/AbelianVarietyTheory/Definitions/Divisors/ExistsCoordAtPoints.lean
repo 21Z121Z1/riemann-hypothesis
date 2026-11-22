@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.IntegralBound
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VecHeightSmulAlgebraMap
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteFinrankLineBundleSectionsFiniteEtale
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryOfFrameNormConj
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0052
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1015
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1035
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1109
 
 set_option autoImplicit false
 

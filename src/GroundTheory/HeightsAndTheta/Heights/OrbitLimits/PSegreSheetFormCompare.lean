@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StSegreSheetFormCompare
+import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0023
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSheetFormCompare
 set_option maxSynthPendingDepth 1
 

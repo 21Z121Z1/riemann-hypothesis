@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.MacdonaldSpherical
+import GroundTheory.AutomorphicForms.Bundle0022
 import GroundTheory.AutomorphicForms.MacdonaldNormalization
 
 noncomputable section

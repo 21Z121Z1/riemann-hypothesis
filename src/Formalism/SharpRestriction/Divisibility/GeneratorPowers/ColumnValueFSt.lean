@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FramedFamilyStatement
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermCut
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0020
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0005
 
 set_option autoImplicit false
 

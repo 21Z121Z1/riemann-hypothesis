@@ -1,6 +1,6 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.AutomorphicKernels.MoriwakiBigness.HilbertSamuelApplications.SmallGeneratedCountUpperOfUse
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.HsLinksOfMoriwaki
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0073
 
 namespace GlobalTheory.CompanionTheory.Ar.Giv
 

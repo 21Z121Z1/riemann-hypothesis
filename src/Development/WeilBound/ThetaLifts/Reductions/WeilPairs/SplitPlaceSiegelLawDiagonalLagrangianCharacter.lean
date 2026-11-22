@@ -1,8 +1,8 @@
 import Mathlib
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.ImportsAlt
-import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.WeilDatumDoubledTargetSiegelRuleImports
-import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.SplitPlaceSiegelLawDiagonalLagrangianCharacterIm
-import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.CAFInvol
+import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.Bundle0002
+import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0003
+import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0005
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.ExistsForm
 open scoped TensorProduct Matrix
 open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes MeasureTheory

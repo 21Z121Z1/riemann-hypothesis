@@ -1,4 +1,4 @@
-import Formalism.CyclotomicNorms.StatementTW
+import Formalism.CyclotomicNorms.Bundle0001
 
 open Polynomial Matrix
 

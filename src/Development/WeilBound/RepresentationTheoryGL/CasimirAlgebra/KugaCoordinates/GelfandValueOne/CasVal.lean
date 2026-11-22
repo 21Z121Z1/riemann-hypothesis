@@ -1,6 +1,6 @@
 import Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.KugaCoordinates.IsStarRep
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GelfandInvariantsCentralCharacter
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GelfValTwoEqCvalR
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1230
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0138
 
 open Finset Formalism.REAL
 

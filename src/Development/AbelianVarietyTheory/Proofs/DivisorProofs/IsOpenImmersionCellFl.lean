@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StalkStepMono
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchubertCellOpenImmersion
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2669
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1207
 
 noncomputable section
 

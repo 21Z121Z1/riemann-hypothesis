@@ -1,6 +1,6 @@
 import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.GROWCountStatement
 import ReciprocityTheory.L2DbarEstimates.ChartDerivatives.ChartSymmEventuallyEq
-import ReciprocityTheory.L2DbarEstimates.LeviForms.LogNormSq
+import ReciprocityTheory.L2DbarEstimates.LeviForms.Bundle0002
 
 namespace ReciprocityTheory.L2DbarEstimates.Y
 

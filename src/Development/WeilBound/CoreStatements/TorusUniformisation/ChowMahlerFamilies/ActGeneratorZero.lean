@@ -1,4 +1,4 @@
-import Development.WeilBound.CoreStatements.HodgeTatePoints.CdUniv
+import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0054
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBIdAd
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermBPf
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FrRatio

@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.QuotientKernel
-import GroundTheory.AutomorphicForms.KernelTraceComp
-import GroundTheory.AutomorphicForms.LocallyConstantCompact
+import GroundTheory.AutomorphicForms.Bundle0014
+import GroundTheory.AutomorphicForms.Bundle0006
 
 open MeasureTheory Topology Filter Set Function
 open scoped ENNReal Pointwise

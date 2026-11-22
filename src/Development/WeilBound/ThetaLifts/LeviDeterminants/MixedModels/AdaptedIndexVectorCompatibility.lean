@@ -1,6 +1,6 @@
 import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.PlaneC
-import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Vaceigen
-import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfActs
+import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Bundle0005
+import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0003
 
 noncomputable section
 

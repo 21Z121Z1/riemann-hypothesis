@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.HermitianDisc
+import GroundTheory.AutomorphicForms.Bundle0012
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Objects
 
 namespace GroundTheory.Heights₂.Heights.FiniteCovolume.GaussianPlane

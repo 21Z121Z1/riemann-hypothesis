@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.ThClass
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0030
 import Formalism.LocalToGlobal.Divisibility.CoefMod
 
 set_option autoImplicit false

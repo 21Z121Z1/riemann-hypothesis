@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NablaSchur
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CommutatorPowOfCommutatorEqSmul
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0605
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0006
 
 open GlobalTheory.LeviCut
 

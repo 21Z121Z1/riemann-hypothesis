@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.IndepPhiCmp
+import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.Bundle0015
 import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.IndepOfSpan
 
 noncomputable section

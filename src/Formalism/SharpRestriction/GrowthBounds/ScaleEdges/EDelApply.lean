@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.SPbound
+import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.Bundle0006
 
 noncomputable section
 

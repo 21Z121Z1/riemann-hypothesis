@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemMaxCompactOfTrivOutsideLocalIntegral
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0357
 open NumberField ReciprocityTheory.Aut IsDedekindDomain TensorProduct
 
 noncomputable section

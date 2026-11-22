@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.AlgebraicTheory.StatementC
+import Formalism.LocalToGlobal.AlgebraicTheory.Bundle0001
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussianEigenFrames.GramFrameComposition.IntOpTwoFreeOf
 
 noncomputable section

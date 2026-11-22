@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ThetaChr
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0043
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.CountsIrreducibilityConstants
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ReciprocityKernelServiceStatement
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.RowHServOfKerServ
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0177
 open Formalism.BasicNotions Formalism.MainNotions GlobalTheory.EX GlobalTheory.EX.OB GlobalTheory.Mem GlobalTheory.Mem.Top GlobalTheory.Mem.Top.Bl GlobalTheory.Fc
 
 namespace GlobalTheory

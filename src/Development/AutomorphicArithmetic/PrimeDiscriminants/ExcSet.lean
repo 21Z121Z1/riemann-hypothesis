@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.SharpRestriction.Divisibility.JumpSets
 import Formalism.PieriBlockIdeals.PieriColumnMinors.ParameterBounds
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumExponentLogLeOfCut
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0792
 
 open Formalism.BasicNotions Formalism.CohomologicalDescent Formalism.CohomologicalDescent.LogSmallConstantBounds Formalism.CohomologicalDescent.ShortWeightBounds
 

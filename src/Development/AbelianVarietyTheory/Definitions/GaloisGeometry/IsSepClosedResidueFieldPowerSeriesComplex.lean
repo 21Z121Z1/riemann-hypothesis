@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsMatrixForm
-import Development.AbelianVarietyTheory.BlockTheory.CMModuli.ProjectiveSpaceOverSpec
+import Development.AbelianVarietyTheory.BlockTheory.CMModuli.Bundle0001
 
 noncomputable section
 

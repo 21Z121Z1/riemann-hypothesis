@@ -1,9 +1,7 @@
-import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.ContinuousTo
+import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.Bundle0001
 import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.MetaplecticUnipotentBlockSecondDiag
-import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.MapOfRealMul
-import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.HasFDerivAtOfCurves
-import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.MetaplecticGroupT2Space
-import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.HasFDerivAtOrb
+import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.Bundle0003
+import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.Bundle0002
 
 open PositivityTheory.ThKR.Mp in
 theorem PositivityTheory.ThKR.realMetaplecticRepresentation_holds : GlobalTheory.Published.RealMetaplecticRepresentation :=

@@ -1,10 +1,9 @@
 import Mathlib
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MixedFieldContraction.ContractMixedFieldStatement
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterBridgeB
-import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsChartRankAdjoin
-import GroundTheory.HeightsAndTheta.Heights.Intersections.PtsOver
-import GroundTheory.HeightsAndTheta.Heights.Intersections.ImportsFurtherTer
-import GroundTheory.HeightsAndTheta.Heights.Intersections.ImportsFurtherMore
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0010
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0007
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0042
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0040
 set_option maxSynthPendingDepth 1
 
 noncomputable section

@@ -1,7 +1,6 @@
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PhiCMinR
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0024
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PhiCMinI
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PhiCMinC
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PhiCMinE
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0002
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PhiCMinF
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PhiCTie
 

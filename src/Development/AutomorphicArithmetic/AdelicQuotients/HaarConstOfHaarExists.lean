@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.Foundations.Convolution.LocalGroupAnalysis.SplitEquiv
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.HaarConstOfHaarExists
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0075
 open UpperTheory.ConvolutionTheory.G UpperTheory.ConvolutionTheory.T4
 open MeasureTheory Topology
 

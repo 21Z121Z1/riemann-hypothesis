@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResAlgSplitTwo
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResidueAlgebraUnramified
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CardFibreGramDifferential
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedQuotientCard
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0049
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0072
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0090
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0075
 
 open PositivityTheory.PfSWUS.Loc
 

@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.AxHLAM
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0036
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.FrameNormRestrictedDensity
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ConjCmHostRootNeSelf
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0167
 
 set_option autoImplicit false
 

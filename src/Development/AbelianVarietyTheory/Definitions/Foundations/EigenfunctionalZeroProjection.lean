@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.IsLamOfLSmulIff
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0021
 
 noncomputable section
 

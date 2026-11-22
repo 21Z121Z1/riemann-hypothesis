@@ -1,8 +1,6 @@
 import ReciprocityTheory.SemistableReduction.SemiDegZA
-import ReciprocityTheory.SemistableReduction.SemiDegA
-import ReciprocityTheory.SemistableReduction.SemiDegB
-import ReciprocityTheory.SemistableReduction.SemiDegC
-import ReciprocityTheory.SemistableReduction.SemiDegD
+import ReciprocityTheory.SemistableReduction.Bundle0025
+import ReciprocityTheory.SemistableReduction.Bundle0024
 
 namespace ReciprocityTheory.MultiplicativeHeights
 

@@ -1,7 +1,6 @@
 import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.SmoothSeminormAndSobolevBounds
-import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.CasselmanWallachAdm
-import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.CasselmanWallachLift
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsClosedImageOfSobolevLower
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0002
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0570
 
 noncomputable section
 

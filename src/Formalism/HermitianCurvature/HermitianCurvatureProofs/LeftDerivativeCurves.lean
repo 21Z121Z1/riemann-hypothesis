@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.StatementQr
+import Formalism.HermitianCurvature.Bundle0004
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RestrictionIrrelevantDoubleLevelOperator
 
 open Matrix Finset Filter Topology

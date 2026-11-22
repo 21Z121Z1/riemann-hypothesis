@@ -1,6 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.CuspValueComparison
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.TameCharacterTorusValues
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0015
 
 noncomputable section
 

@@ -1,6 +1,6 @@
 import Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaRigidity.ColumnConjugationMeasure
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspRapidDecaySiegelGL
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdeleModuleDetDiagUnitsPosIdele
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0616
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0375
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SiegelConj
 
 noncomputable section

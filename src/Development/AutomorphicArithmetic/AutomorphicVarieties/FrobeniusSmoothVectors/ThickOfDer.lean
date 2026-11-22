@@ -1,9 +1,9 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.Integral
-import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.Imports
-import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.LocRho
+import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.Bundle0001
+import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.Bundle0027
 import Mathlib.RingTheory.MvPowerSeries.Derivative
 import Mathlib.LinearAlgebra.Matrix.ToLinearEquiv
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SpanOfVariable
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0060
 
 open IsLocalRing Matrix UpperTheory.V.Alg UpperTheory.V.U3 UpperTheory.V.Fr
 

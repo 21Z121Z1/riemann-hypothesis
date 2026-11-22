@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InfOfMulFinOf
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0510
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralEqVolMulSum
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralEqFinClSumAvg
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsOpenLevelFixingThetaFunction
-import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.StmtTransInvHolds
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0524
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0374
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.Bundle0012
 
 noncomputable section
 

@@ -1,8 +1,8 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.EisensteinSeries.SiegelEisensteinContinuation.IsEpCont
 import GroundTheory.GlobalFields.TateThesis.TateMain
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousAdeleWeight
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsExtra
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0187
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0031
 set_option maxSynthPendingDepth 1
 
 namespace GlobalTheory.CompanionTheory.EpConvB

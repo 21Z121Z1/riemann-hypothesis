@@ -1,4 +1,4 @@
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCohomologyCoefficientRingInvarianceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0586
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TranscendenceTraces.IsolateSpecHolds
 
 namespace UpperTheory.Gal.TranscendenceTraces

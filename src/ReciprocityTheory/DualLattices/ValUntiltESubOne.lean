@@ -1,5 +1,5 @@
 import Mathlib
-import ReciprocityTheory.DualLattices.CyclicRecursionStatement
+import ReciprocityTheory.DualLattices.Bundle0001
 
 noncomputable section
 

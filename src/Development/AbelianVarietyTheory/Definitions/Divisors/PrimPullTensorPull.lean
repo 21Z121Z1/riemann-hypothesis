@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.Subsingleton
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0059
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsKSValueOneOfRetraction
-import Development.AbelianVarietyTheory.Definitions.Divisors.ChainComp
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0001
 
 set_option autoImplicit false
 

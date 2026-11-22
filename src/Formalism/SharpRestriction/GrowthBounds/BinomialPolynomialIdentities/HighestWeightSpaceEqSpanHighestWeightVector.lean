@@ -1,6 +1,6 @@
-import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.DualWeightVectorApplyEqZeroOfNeNeg
+import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.Bundle0004
 import Formalism.SharpRestriction.GrowthBounds.ProjectionOfIsotypicDecomposition
-import Formalism.SharpRestriction.GrowthBounds.RootWeights.WeightConditionFromIntegralForm
+import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0024
 
 noncomputable section
 

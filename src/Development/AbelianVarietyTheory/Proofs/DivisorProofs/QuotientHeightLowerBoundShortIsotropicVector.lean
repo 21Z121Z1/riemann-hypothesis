@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsSmoothVector
-import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.UnitaryLatticeDenominatorHeightBoundProof
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.NormInfSubmultiplicativeLeAdelicHeight
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.AtPlaceIffEqAtTau
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0043
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0041
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0042
 
 noncomputable section
 

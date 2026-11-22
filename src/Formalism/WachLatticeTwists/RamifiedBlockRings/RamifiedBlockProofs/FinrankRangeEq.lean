@@ -1,6 +1,6 @@
 import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.RankDiagIte
-import Formalism.WachLatticeTwists.RamifiedBlockRings.RightIdealImageOfSurjective
-import Formalism.TruncatedSeriesCounting.TruncatedSeriesProofs.BridgeDet
+import Formalism.WachLatticeTwists.RamifiedBlockRings.Bundle0001
+import Formalism.TruncatedSeriesCounting.TruncatedSeriesProofs.Bundle0006
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.IsUnitDetOfConst
 
 open Finset Classical

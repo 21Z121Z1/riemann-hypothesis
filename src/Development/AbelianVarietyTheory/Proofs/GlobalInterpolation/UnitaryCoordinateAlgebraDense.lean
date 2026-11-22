@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BaseChangeDefiniteUnitary
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SplitsAlgebraMap
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ContinuousOfMem
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0007
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0125
 open NumberField IsDedekindDomain Matrix GlobalTheory.CuspRep GlobalTheory.UnitaryBC
 
 namespace GlobalTheory.PolyRealU

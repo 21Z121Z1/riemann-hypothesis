@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicArithmetic.CyclotomicBounds.ZmodTwoQuadraticNeZero
-import Development.AutomorphicArithmetic.PrimeDiscriminants.InertGen
+import Development.AutomorphicArithmetic.CyclotomicBounds.Bundle0002
+import Development.AutomorphicArithmetic.PrimeDiscriminants.Bundle0003
 
 namespace UpperTheory.Small
 

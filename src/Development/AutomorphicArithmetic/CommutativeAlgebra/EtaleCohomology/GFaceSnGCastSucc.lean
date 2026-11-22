@@ -1,5 +1,5 @@
-import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.VanishOfExact
-import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.FaceSnocCastSucc
+import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.Bundle0004
+import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.Bundle0002
 
 set_option backward.isDefEq.respectTransparency false
 

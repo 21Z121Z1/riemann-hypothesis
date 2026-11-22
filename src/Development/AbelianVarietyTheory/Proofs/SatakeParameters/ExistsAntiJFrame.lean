@@ -1,8 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.InertPlaceSetting
-import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.SphericalThetaInertPlaces
+import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.Bundle0008
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertPlaceHeckeDoubleCosetsInverseRepsLabel
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryDivisorDualLabel
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0909
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IwahoriTypeSupport.TorusScalar
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsJLeviMulJPlus
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IwahoriNeBotOfSpherical
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0641
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0283
 open GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.SplitWeil GlobalTheory.LocGL ValuativeRel Matrix UpperTheory.Gal.TypesAndIwahori
 
 theorem UpperTheory.Gal.TypesAndIwahori.jacOfType :

@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.BesselHermitianTheta.IsAutFunDef
-import Formalism.LocalRingCardinality.DataTies
-import Development.AutomorphicArithmetic.WeightCongruences.ProdNegOneZpow
+import Formalism.LocalRingCardinality.Bundle0003
+import Development.AutomorphicArithmetic.WeightCongruences.Bundle0001
 
 noncomputable section
 

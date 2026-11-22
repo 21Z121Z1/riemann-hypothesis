@@ -1,9 +1,9 @@
 import Mathlib
 import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StTubeDeepAreaCount
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StIsolatedPointsCount
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0086
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0023
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSheetAreaCompare
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PAreaMultiplicityWeight
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0007
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

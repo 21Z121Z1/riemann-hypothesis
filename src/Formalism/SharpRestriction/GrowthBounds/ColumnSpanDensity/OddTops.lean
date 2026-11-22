@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.SegStartSpec
+import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.Bundle0007
 
 noncomputable section
 

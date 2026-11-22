@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsDehomCharpolyForms
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPullFormsGeneric
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0077
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0099
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

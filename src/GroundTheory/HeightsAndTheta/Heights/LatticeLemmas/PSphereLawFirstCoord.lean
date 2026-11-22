@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.StatementsSphereLaw
+import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.Bundle0002
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.SphereMeanSlice
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.SphereMean
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0021
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

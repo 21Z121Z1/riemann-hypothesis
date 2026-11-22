@@ -1,7 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.BlockValue
-import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.StatementsCoinv
-import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.StatementsTop
+import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Bundle0003
+import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Bundle0002
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

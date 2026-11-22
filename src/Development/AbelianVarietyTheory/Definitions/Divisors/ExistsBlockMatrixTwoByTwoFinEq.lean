@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsClosedHermN
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1758
 import Development.AbelianVarietyTheory.Definitions.Foundations.T2SpaceAdeleRing
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IwasawaDecompositionUnitary
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0370
 
 noncomputable section
 

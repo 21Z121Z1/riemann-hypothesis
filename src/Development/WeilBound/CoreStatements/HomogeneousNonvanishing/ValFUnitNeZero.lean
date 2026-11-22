@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsClosedImmersionOfCoordinateDivisibility
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0089
 
 set_option autoImplicit false
 

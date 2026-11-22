@@ -1,9 +1,9 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.IsArithVarBotDualBlocksUnit
-import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.PCoordCurveDegree
-import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.PCurveComplexPoint
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0029
+import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0005
+import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0004
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PCoordConeArithVar
-import GroundTheory.HeightsAndTheta.Heights.Intersections.FlagBundleSt
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0021
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.POneBlockPoints
 set_option maxSynthPendingDepth 1
 

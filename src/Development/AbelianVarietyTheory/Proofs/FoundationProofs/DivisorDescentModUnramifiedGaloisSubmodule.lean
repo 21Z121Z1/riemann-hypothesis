@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsUniqueIdeleOfLinearEquivQuotientLocal
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.WithZeroEqOfLeExpIff
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0018
 
 open IsDedekindDomain
 open scoped nonZeroDivisors

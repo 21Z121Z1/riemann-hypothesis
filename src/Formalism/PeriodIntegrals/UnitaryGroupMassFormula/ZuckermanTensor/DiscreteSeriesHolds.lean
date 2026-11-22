@@ -1,13 +1,11 @@
 import Mathlib
 import Formalism.PeriodIntegrals.ZuckTensor
-import Formalism.PeriodIntegrals.DSExist
+import Formalism.PeriodIntegrals.Bundle0014
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZuckermanTensor.ZuckDualOf
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZuckermanTensor.DualDefs
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZuckermanTensor.DualChoice
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZuckermanTensor.DualTop
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZuckermanTensor.RevNum
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZuckermanTensor.Bundle0001
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZuckermanTensor.ConjRep
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZuckermanTensor.SquareIntegrableConj
 
 namespace PI.ZuckTensorWork
 open PI.ZuckTensor

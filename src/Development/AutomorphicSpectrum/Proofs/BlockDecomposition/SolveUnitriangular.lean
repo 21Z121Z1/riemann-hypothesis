@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsUdlOfIsUnit
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0010
 
 namespace GlobalTheory.CompanionTheory.KmCover
 

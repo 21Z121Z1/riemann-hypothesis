@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IoInjective
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0064
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.SkewOfCommute
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.QuadraticGelfandInvariantEqNegSumSqDefinite
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0196
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta MeasureTheory Matrix
 open scoped TensorProduct Topology InnerProductSpace
 attribute [local instance] Formalism.BasicNotions.Host.cmStar

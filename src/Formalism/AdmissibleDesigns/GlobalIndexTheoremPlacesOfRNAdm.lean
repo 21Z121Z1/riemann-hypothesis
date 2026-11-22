@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.LevelLetterCocycles.RingDataOfIdempotents
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0040
 import Formalism.AdmissibleDesigns.InvariantsEqBotIff
 
 noncomputable section

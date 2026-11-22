@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnitLemmaGroup
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LinearDescent
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DltEqZero
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DiscrMulMemOfIsIntegral
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0075
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0032
 
 noncomputable section
 

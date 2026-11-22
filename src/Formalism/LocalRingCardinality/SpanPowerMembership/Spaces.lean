@@ -1,5 +1,5 @@
 import Formalism.LocalRingCardinality.DataSpaces
-import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleRanksRankComplement
+import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0004
 import Formalism.FockGram.SymGramPosSemidef
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Stdform
 

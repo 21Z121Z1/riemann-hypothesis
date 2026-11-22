@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasLenOfLatLen
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryLeviNormalizesUnipotentRadical
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryBlockTriangularLeviPartUnitary
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0532
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0531
 
 noncomputable section
 

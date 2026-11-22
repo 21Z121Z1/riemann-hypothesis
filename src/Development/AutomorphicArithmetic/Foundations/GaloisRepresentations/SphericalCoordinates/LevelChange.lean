@@ -1,8 +1,8 @@
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalCoordinates.IsCoordA
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ConjMemOfMemHeckeLevel
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0001
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsGPull
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsHeckeMap
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0014
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0020
 
 noncomputable section
 

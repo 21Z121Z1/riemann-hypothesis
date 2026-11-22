@@ -1,6 +1,6 @@
-import Formalism.LocalToGlobal.GlobalTheory.UnramifiedTrace.MulLatSupSpan
+import Formalism.LocalToGlobal.GlobalTheory.UnramifiedTrace.Bundle0003
 import Formalism.LocalToGlobal.GlobalTheory.GL6.BwAValIntegralNonneg
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CrossDiagonalMatching.DnkLkLocP
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CrossDiagonalMatching.Bundle0002
 
 noncomputable section
 

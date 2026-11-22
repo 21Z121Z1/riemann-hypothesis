@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.Intersections.StSemilocResidueFrac
-import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsSemilocFinite
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0060
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0046
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsSemilocMaxIdeals
 import GroundTheory.HeightsAndTheta.Heights.Intersections.NotIsUnitOfNumMem
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PSemilocRankFrac

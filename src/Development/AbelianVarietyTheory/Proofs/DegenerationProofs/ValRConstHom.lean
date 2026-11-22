@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.EqOfValHomEq
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0019
 import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.AppLESurjective
-import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsSecKIsUnit
+import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0024
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IsExtensionPullOver
 
 noncomputable section

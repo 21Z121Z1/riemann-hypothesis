@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.InjectiveOfSmulMemRange
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.PrismaticDieudonnePerfd
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.SettingInhabited
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeAtOfPrismaticDieudonneAt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FontaineAinfLocalDomainXiAdicOrder
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0006
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0412
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0409
 
 set_option autoImplicit false
 

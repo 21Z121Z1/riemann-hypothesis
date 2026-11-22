@@ -1,6 +1,6 @@
 import Mathlib
-import Development.WeilBound.ThetaLifts.SchwartzMoments.MulLPowApply
-import Development.WeilBound.ThetaLifts.SchwartzMoments.JetApply
+import Development.WeilBound.ThetaLifts.SchwartzMoments.Bundle0002
+import Development.WeilBound.ThetaLifts.SchwartzMoments.Bundle0001
 import Development.WeilBound.ThetaLifts.SchwartzMoments.DenseC
 import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.DictIrr
 

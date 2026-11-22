@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.LocalFields.ArtinConductorDiscriminant
+import GroundTheory.LocalFields.Bundle0016
 
 noncomputable section
 

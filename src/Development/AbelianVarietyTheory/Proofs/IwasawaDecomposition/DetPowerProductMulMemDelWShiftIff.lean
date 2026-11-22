@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.UnipotentAdelicQuotients.WeylLatDual
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolFunApply
+import Formalism.UnipotentAdelicQuotients.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0016
 
 noncomputable section
 

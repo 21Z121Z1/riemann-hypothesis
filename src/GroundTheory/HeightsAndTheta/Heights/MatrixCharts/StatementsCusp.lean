@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.Statements
-import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.HermValueIsLeast
-import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.Period
+import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.Bundle0001
+import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.Bundle0002
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

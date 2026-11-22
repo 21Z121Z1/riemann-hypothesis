@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.GlobalFields.TateThesis.PrimeZetaPole
-import GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.DedekindZetaSeries.ZetaSevenHalves
+import GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.DedekindZetaSeries.Bundle0001
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Theta

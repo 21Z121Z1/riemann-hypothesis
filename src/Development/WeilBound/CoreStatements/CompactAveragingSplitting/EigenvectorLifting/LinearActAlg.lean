@@ -1,5 +1,5 @@
 import Development.AbelianVarietyTheory.Definitions.Divisors.HilbertNinetyQuotientHomEqIff
-import Development.AutomorphicSpectrum.Proofs.MembershipProofs.LagrangianStabilizerCharacterTrivial
+import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0006
 
 noncomputable section
 

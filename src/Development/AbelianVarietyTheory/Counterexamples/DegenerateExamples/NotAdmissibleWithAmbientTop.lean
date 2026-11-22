@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 import Formalism.SharpRestriction.LevelLetterCocycles.QuotientHomNonvanishingBound
 import Formalism.SharpRestriction.LevelLetterCocycles.ArithmeticCylinders
-import Formalism.CyclotomicNorms.NonsquarefreeBounds.NonsquarefreeMonicBoundHolds
+import Formalism.CyclotomicNorms.NonsquarefreeBounds.Bundle0001
 import Development.AbelianVarietyTheory.Counterexamples.DegenerateExamples.NotFiniteIntegralClosure
 
 noncomputable section

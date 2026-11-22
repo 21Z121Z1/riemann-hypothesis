@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoefHomGenHomMonomial
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JointRowWeightAntitoneOfMaxPotential
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2116
 
 set_option autoImplicit false
 

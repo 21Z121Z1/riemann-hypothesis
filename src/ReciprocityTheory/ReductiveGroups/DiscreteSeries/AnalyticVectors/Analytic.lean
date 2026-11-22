@@ -1,7 +1,6 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.Unitary
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.Bundle0002
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.Taylor
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.Series
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.Growth
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.NcBound
 
 noncomputable section

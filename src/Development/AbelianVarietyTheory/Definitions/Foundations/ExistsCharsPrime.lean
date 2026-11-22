@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Foundations.FacWithCsNonneg
 import Development.AbelianVarietyTheory.Definitions.Divisors.MemLevEigenIffTransl
 import Development.AbelianVarietyTheory.Definitions.Divisors.NormNegCmConstantEqAtAllEmbeddings
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HalfLatticeTypes
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsCoeffTypeNormsPrincipal
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0034
 
 set_option autoImplicit false
 

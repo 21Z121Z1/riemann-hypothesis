@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousConjNilSymm
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SecondCountableNilrad
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0322
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0344
 
 noncomputable section
 

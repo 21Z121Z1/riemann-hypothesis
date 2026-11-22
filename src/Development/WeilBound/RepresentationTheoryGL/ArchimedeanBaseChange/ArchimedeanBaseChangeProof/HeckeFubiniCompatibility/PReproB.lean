@@ -3,7 +3,7 @@ import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.Archim
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryMemGLs
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.L1NormSectionBound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveSolutionExistence
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RightDerivativeCalculusHolds
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0353
 
 noncomputable section
 

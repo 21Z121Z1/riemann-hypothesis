@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.DenseChart
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Objects
-import GroundTheory.HeightsAndTheta.Heights.KernelsLattice
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0001
+import GroundTheory.HeightsAndTheta.Heights.Bundle0001
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

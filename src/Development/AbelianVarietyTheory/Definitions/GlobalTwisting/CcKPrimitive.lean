@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.FrobeniusOrbits.HostThickExists
+import Formalism.FrobeniusOrbits.Bundle0002
 
 open NumberField IntermediateField
 open scoped Pointwise

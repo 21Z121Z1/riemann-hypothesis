@@ -1,6 +1,6 @@
 import CompanionTheory.AutomorphicTheory.BesselWaveGrids.WaveBallEstimateWeightedDualAlt
 import CompanionTheory.AutomorphicTheory.BesselWaveGrids.PowFourLeRpowNineHalves
-import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.NumericalFamilyShapeGaps
+import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Bundle0001
 
 namespace CompanionTheory.WaveGrid.WEnd
 

@@ -1,8 +1,7 @@
 import Mathlib
 import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.VerticalStrips.UnramifiedEulerProductIntegral
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerRightTranslation
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerWellDefined
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerLinearity
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0613
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0612
 
 noncomputable section
 

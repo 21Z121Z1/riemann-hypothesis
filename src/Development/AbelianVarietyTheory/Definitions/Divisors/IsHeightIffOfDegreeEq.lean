@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.PointHeight
-import Development.AbelianVarietyTheory.Definitions.Divisors.BlockSphereMeanLinForm
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0003
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0016
 import Development.AbelianVarietyTheory.Definitions.Divisors.MemSubPtsCutBaseChangeIff
-import Development.AbelianVarietyTheory.Definitions.Divisors.SmoothOfRelativeDimensionPspace
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0035
 import Development.AbelianVarietyTheory.Definitions.Divisors.IrreducibleOfIrreducibleMap
 
 set_option autoImplicit false

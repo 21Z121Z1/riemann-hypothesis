@@ -1,7 +1,7 @@
-import Formalism.SharpRestriction.LevelLetterCocycles.LargeLevelLemmas
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0005
 import Formalism.SharpRestriction.LevelLetterCocycles.EndomorphismIndexBound
 import Formalism.TruncatedSeriesCounting.TruncatedSeriesProofs.LemmaDetPoly
-import Formalism.TruncatedSeriesCounting.TruncatedSeriesProofs.BridgeDet
+import Formalism.TruncatedSeriesCounting.TruncatedSeriesProofs.Bundle0006
 
 noncomputable section
 

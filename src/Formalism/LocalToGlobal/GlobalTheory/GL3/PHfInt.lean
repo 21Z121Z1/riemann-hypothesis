@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.GlobalTheory.GL3.PHfArith
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.OrdUnimod
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsMonicAevalEqZero
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0016
 
 noncomputable section
 

@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.IsHermND
-import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.HermitianLattices
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
+import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.Bundle0002
 
 noncomputable section
 open ValuativeRel Formalism.MainNotions.S.Loc

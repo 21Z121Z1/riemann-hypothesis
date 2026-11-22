@@ -1,4 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.InductiveHeisenbergInputs
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.Bundle0006
 
 noncomputable section
 

@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.DistinguishedUnitIdeals.BridgeLevelOf
 import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.Graded
 import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.Partners
-import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.UnivPart
+import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.Bundle0002
 
 noncomputable section
 

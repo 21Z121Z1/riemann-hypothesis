@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.EmbPerm
+import Formalism.PeriodIntegrals.Bundle0002
 
 namespace PI.EmbPermWork
 

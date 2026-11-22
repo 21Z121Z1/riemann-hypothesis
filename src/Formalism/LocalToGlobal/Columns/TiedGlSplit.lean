@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.Columns.TiedGlPl
+import Formalism.LocalToGlobal.Columns.Bundle0022
 import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.LevGapLoc
 
 open NumberField IsDedekindDomain Matrix

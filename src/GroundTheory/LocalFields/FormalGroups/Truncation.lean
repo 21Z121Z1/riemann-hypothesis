@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsUniqueFixedPoint
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0021
 
 namespace GroundTheory.LocalField.FormalGroup
 

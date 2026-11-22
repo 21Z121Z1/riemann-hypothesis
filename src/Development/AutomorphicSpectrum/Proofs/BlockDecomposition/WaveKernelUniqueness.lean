@@ -2,7 +2,7 @@ import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.WaveSt
 import Development.AutomorphicSpectrum.Proofs.JetProofs.ContinuousIteratedFDerivPartial
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IntegralConjInnerMulInnerOfIsEmptyEquiv
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HaarRightInvariantCompact
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0216
 
 noncomputable section
 

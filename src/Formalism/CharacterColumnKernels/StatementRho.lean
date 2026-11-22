@@ -1,4 +1,4 @@
-import Formalism.CharacterColumnKernels.StatGlobalModule
+import Formalism.CharacterColumnKernels.Bundle0004
 import Formalism.CharacterColumnKernels.StatementMF
 
 open Finset

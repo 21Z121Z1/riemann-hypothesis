@@ -1,6 +1,6 @@
 import Mathlib
-import ReciprocityTheory.DualLattices.Imports
-import ReciprocityTheory.DualLattices.CyclicRecursion
+import ReciprocityTheory.DualLattices.Bundle0015
+import ReciprocityTheory.DualLattices.Bundle0005
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ValuationCoeEqNorm
 
 open WittVector Ideal ReciprocityTheory.PGsh

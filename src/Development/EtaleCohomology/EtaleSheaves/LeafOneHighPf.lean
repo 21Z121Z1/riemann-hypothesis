@@ -1,5 +1,5 @@
-import Development.EtaleCohomology.EtaleSheaves.PullInjOfIso
-import Development.EtaleCohomology.EtaleSheaves.LeafKillCut
+import Development.EtaleCohomology.EtaleSheaves.Bundle0013
+import Development.EtaleCohomology.EtaleSheaves.Bundle0011
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC

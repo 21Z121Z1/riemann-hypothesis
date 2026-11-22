@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.InertDensity.FinrankInfKerAddOne
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.InertDensity.Bundle0001
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.InertDensity.ExistsTraceNeZero
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.InertDensity.ValMain
 

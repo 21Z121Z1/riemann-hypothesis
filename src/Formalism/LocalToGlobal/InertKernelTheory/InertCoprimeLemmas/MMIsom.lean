@@ -1,7 +1,7 @@
 import Formalism.LocalToGlobal.InertKernelTheory.DefsMMIsom
-import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.ReBase
+import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.Bundle0005
 import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.FinalFree
-import Formalism.LocalToGlobal.InertKernelTheory.DefsFrONB
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0011
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.UnitSubstOfLoc
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.TestVectorMemSchwartzBruhat
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.AlgTrans

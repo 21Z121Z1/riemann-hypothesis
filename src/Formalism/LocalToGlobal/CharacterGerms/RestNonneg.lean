@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.CharacterGerms.ContentZeroAt
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0006
 
 noncomputable section
 open scoped BigOperators

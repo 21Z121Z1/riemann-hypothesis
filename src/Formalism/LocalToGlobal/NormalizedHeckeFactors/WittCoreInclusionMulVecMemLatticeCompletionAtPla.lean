@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.NormalizedHeckeFactors.TwDefs
+import Formalism.LocalToGlobal.NormalizedHeckeFactors.Bundle0002
 import Formalism.LocalRingCardinality.DataNChoice
 import Formalism.LocalRingCardinality.DataIdx
 import Formalism.LocalToGlobal.GaloisLevelStructure.TiedGal

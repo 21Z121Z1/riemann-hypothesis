@@ -1,6 +1,6 @@
 import Development.AbelianVarietyTheory.Definitions.Divisors.IndEtOfForallFinset
-import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
-import Development.EtaleCohomology.TateTwists.OfRingsLocalSections
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0009
+import Development.EtaleCohomology.TateTwists.Bundle0005
 
 open CategoryTheory Limits AlgebraicGeometry Opposite CochainComplex CochainComplex.HomComplex Simplicial TensorProduct GlobalTheory.EtC
 

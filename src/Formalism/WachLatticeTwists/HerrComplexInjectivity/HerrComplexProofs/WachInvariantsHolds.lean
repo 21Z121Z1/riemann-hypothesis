@@ -1,4 +1,4 @@
-import Formalism.WachLatticeTwists.HerrComplexInjectivity.StatInvWach
+import Formalism.WachLatticeTwists.HerrComplexInjectivity.Bundle0002
 import Formalism.WachLatticeTwists.WachProductBases.WachConsequencesFurther
 
 noncomputable section

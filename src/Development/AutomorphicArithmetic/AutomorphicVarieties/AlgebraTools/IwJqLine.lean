@@ -1,12 +1,12 @@
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.HeckePairTop
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TameParahoricRepSplitsAsProduct
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0018
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0201
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwJqEmbed
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwJqMult
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwJqInj
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0035
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwJqTheta
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwThetaEx
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwMemIwC
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwHeckePairIwC
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0033
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0022
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0025
 open ValuativeRel Matrix GlobalTheory.SmGL GlobalTheory.SplitWeil UpperTheory.V.Hi UpperTheory.V.AlgebraTools GlobalTheory.PRep
 
 private theorem jqLine_eig {T W : Type} [CommGroup T] [AddCommGroup W] [Module ℂ W] [FiniteDimensional ℂ W]

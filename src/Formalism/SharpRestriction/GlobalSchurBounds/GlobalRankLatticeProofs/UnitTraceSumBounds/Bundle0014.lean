@@ -1,0 +1,93 @@
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.RankConditionsOfLayerTwo
+import Formalism.LocalToGlobal.ClassS
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.Bundle0004
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.Bundle0010
+import Mathlib
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.IntegralityOfCommutation
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.TheoremThreeHypothesesOfMultiplicity
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.QuadraticDedekindZeta.CoefIdOf
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.QuadraticDedekindZeta.GenBase
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.QuadraticDedekindZeta.LocOdd
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.Bundle0011
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.Bundle0012
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.Bundle0007
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.FirstGeometricConditionOfProperties
+import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.Outright
+import Formalism.LocalToGlobal.PairingIndexBounds.LatticeNormPowers.CloseUnitNorms.XiMove
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.FamilyLogGammaSmallHolds
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.AdditionIdentityOfSigmaFormulaUnit
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.Bundle0013
+import Formalism.SharpRestriction.GlobalSchurBounds.PropositionTwoFiveFamilyOfAdmitted
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.Bundle0006
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GaloisTorsionConjugacy.Bundle0003
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.Bundle0005
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CongruenceGainBound.OrthogonalSplitPolarizationVanishes
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CongruenceGainBound.Bundle0001
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CongruenceGainBound.Bundle0002
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CongruenceGainBound.HitsOf
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LeafCoefficientValuation.Development
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RamificationBound.CtNonneg
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RamificationBound.AlgebraMapMemFil
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.Bundle0009
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.TheoremOfCubeOfAdditionFormulas
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PairCountNoncommuting.OtherFalse
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HalfIntegerGap.IntGap
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExponentialMinorRays.DetOfOffdiag
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DoubleSumSwap.SumSwap
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExponentialMinorLower.RealStep
+import Formalism.GL3MeanSquares.UnitaryConjugateDiagonalMoments
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeSupremumLine.EqSupLatOfCovBy
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TorsionFreeGenerators.Bundle0001
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DeterminantIdentity.Bundle0001
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DeterminantIdentity.SmulMemOfMemSpan
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0030
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FrameTransport.FrameTransportOf
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FrameTransport.InstIsModTopTens
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.Bundle0003
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.InertUnitProduct.MemQbar
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaExistence.NormHfLe
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IntegralSymplectic.AbsSympl
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CMLatticeAreaFormula.AreaFormula
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormTransitivityGroup.AddLeftInvariantVolumeSingle
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountableBasisPullback.CountableOfBasis
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeilLatticeAction.NegOneZpowOddMul
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormOneInverseMembership.UnitBallK
+import Formalism.PeriodIntegrals.Bundle0016
+import Formalism.SharpRestriction.GlobalSchurBounds.StandardIntegralLatticeExists
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormOneCharacters.NormOneCharacterApply
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.Bundle0001
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.FrameTransportCM
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.Bundle0002
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnimodularOrthogonal.LocalOrthogonalMatrixOddPrime
+
+-- bundled from Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.ClosedRankTiesFC2S
+section
+noncomputable section
+
+namespace Formalism.MainNotions.Ext.Lw
+
+open NumberField IsDedekindDomain Matrix Formalism.UG Formalism.L2.Forms Formalism.BasicNotions
+open scoped TensorProduct
+
+theorem rankTiesF_of_C2S {eps : ℝ} (Fm : FamP eps) (h : Formalism.L2.LinkedFamiliesLevelClass Fm) : RankTiesF Fm := by
+  obtain ⟨x0, h⟩ := h
+  refine rank_conditions_of_lowest_space Fm ⟨max x0 (Fm.x1 + 1), fun x hx i u => ?_⟩
+  have e1 : Fm.x1 < x := by
+    have := (le_max_right x0 (Fm.x1 + 1)).trans hx
+    linarith
+  obtain ⟨T⟩ := h x e1 ((le_max_left _ _).trans hx) i
+  exact mu0Tie_of_sym T.cols u
+
+theorem closed_rankTiesF_C2S : Closed Formalism.L2.LinkedFamiliesLevelClass fun Fm _ => RankTiesF Fm :=
+  ⟨1, one_pos, fun _ _ _ => ⟨⟨0, fun _ => 0, fun _ => 0, fun _ => 0⟩, fun Fm _ hC _ => rankTiesF_of_C2S Fm hC⟩⟩
+
+end Formalism.MainNotions.Ext.Lw
+
+end
+end
+
+-- bundled from Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.Imports
+section
+
+end
+

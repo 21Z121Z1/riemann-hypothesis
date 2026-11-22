@@ -5,7 +5,7 @@ import Formalism.PieriBlockIdeals.LemmaWFromLattice
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 import Formalism.LocalRingCardinality.SpanPowerMembership.NDLocE
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DvrComplete
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0244
 
 set_option autoImplicit false
 

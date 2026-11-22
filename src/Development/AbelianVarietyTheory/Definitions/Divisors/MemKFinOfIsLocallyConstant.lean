@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsBlockMatrixTwoByTwoFinEq
-import Development.AbelianVarietyTheory.Definitions.Divisors.SecMapApply
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0004
 import Development.AbelianVarietyTheory.Definitions.Divisors.AdelicAdmissibleSmul
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatAtVAtStable
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GlobalUnitScalingHaarProductFormula
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1728
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0034
 
 noncomputable section
 

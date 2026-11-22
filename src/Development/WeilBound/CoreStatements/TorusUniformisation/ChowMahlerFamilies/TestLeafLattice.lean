@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FromNAdd
-import Development.AutomorphicSpectrum.Statements.AlgebraStatements.PolarisedFlagStatement
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SymplecticPeriodMatrixIntegrality
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.PolarisedAugmentationTheorem
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0081
+import Development.AutomorphicSpectrum.Statements.AlgebraStatements.Bundle0001
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0007
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0039
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsAddEquiv
 open AlgebraicGeometry CategoryTheory NumberField MvPolynomial ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Num GlobalTheory.CompanionTheory.Ar.Top
 open GroundTheory.Heights₂.Heights.NumbersDVR (pointIdeal segreVec IsFlagFrame IsFlagPair SameGenericFibre IsModelOver divCycle)

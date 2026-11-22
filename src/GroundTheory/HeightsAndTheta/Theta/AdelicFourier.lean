@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Theta.AdelicFourierCoord
-import GroundTheory.GlobalFields.TateThesis.GaussianSchwartz
+import GroundTheory.GlobalFields.TateThesis.Bundle0002
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Theta

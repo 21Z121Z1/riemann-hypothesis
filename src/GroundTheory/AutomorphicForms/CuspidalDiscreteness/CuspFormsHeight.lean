@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.CuspFormsDiff
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.ExistsNormRconvLeSiegel
-import GroundTheory.AutomorphicForms.NormDetDiagUnitsPosRealToUnits
+import GroundTheory.AutomorphicForms.Bundle0019
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces
 
 open NumberField IsDedekindDomain Topology Filter Set MeasureTheory

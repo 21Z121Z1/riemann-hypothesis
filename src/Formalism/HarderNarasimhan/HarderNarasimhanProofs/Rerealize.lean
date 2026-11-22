@@ -1,9 +1,9 @@
-import Formalism.HarderNarasimhan.QuotRealize
+import Formalism.HarderNarasimhan.Bundle0002
 import Formalism.LatticeSlopes.ExistsSaturatedSlopeEqMuMax
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DiscreteSpanOfLinIndep
-import Formalism.HarderNarasimhan.HarderNarasimhanProofs.ExistsSmulMemOfFinrankEq
+import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0001
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SatBasic
-import Formalism.HarderNarasimhan.HarderNarasimhanProofs.ShiftInvariance
+import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0003
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SlopeIneqMean
 
 open Module NumberField

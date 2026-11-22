@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsPolynomialEqMapEvalRootsOfPermInvariant
+import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0003
 
 noncomputable section
 open Polynomial

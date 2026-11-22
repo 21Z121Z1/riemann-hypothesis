@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.GramCEqTranspose
-import Formalism.LocalToGlobal.ProjectiveLattices.BaseEmbeddingInclusion
-import Formalism.LocalToGlobal.ProjectiveLattices.FamilyUniformisationBasePointOrthogonalBis
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0024
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0032
 import Formalism.LocalToGlobal.Divisibility.DefGroup
 import Formalism.SharpRestriction.Divisibility.AbelianOpenPart.KaSmallNonpos
 

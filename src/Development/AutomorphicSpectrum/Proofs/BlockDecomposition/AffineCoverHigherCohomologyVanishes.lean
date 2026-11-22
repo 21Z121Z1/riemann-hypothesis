@@ -1,9 +1,9 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.Coords
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.Imports
-import GroundTheory.ArithmeticGeometry.SchemeCohomology.CechSeparated
+import GroundTheory.ArithmeticGeometry.SchemeCohomology.Bundle0005
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.AffineVanishing
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIsoToBidualOfLocalFrames
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1273
 
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false

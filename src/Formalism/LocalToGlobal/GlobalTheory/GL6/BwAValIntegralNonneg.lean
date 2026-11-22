@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.GlobalTheory.GL6.LatticeInclusionOfSubIntegral
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0003
 import Formalism.GradedWeylDivisibility.FinalD
 
 noncomputable section

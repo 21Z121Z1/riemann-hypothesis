@@ -1,4 +1,4 @@
-import Development.WeilBound.CoreStatements.SesquilinearFractions.CoefZeroOfPer
+import Development.WeilBound.CoreStatements.SesquilinearFractions.Bundle0011
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
 open Matrix GlobalTheory GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Fl

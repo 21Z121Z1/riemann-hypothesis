@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.MarkedSumIrr
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SimilitudePairGramInvCongruent
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelatedPairsSamePolarization
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0042
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1012
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1009
 
 noncomputable section
 

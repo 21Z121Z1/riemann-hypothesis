@@ -1,5 +1,5 @@
 import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.PlaneC
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRationalDarbouxCoordinatesTensorHermitian
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1749
 
 noncomputable section
 

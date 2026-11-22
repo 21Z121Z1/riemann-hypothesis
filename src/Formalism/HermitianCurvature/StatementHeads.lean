@@ -8,11 +8,11 @@ import Formalism.HermitianCurvature.OperatorsCommuteTranslations
 import Formalism.HermitianCurvature.StatementQ
 import Formalism.HermitianCurvature.StatementD
 import Formalism.HermitianCurvature.StatementWd
-import Formalism.HermitianCurvature.StatementR
+import Formalism.HermitianCurvature.Bundle0001
 import Formalism.HermitianCurvature.StatementFr
 import Formalism.FormalDegreeBessel.StatementG
 import Formalism.FormalDegreeBessel.StatementRP
-import Formalism.FormalDegreeBessel.StatementBF
+import Formalism.FormalDegreeBessel.Bundle0001
 
 noncomputable section
 

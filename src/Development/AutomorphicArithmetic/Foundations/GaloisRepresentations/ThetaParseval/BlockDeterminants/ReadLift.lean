@@ -1,8 +1,8 @@
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SchurStep
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AutRepDefiniteUnitarySpannedBySplitComponent
-import Development.WeilBound.ThetaLifts.LatticeBasics.LocUnrInert
-import Development.WeilBound.ThetaLifts.CartanFactorisation.TensOfEval
-import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.ActsRhoFin
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0264
+import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0025
+import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0006
+import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.Bundle0002
 
 noncomputable section
 

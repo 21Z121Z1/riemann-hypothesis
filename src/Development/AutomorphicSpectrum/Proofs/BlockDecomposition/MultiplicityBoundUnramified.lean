@@ -1,6 +1,6 @@
 import Mathlib
-import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.UnramifiedWhittaker.CProps
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CardHermitianMatricesModPow
+import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.UnramifiedWhittaker.Bundle0002
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0090
 
 open PositivityTheory.PfSWUS.Loc
 

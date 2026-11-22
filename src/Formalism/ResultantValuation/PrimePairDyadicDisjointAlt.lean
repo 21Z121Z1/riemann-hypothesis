@@ -1,4 +1,4 @@
-import Formalism.ResultantValuation.PrimePairDisjointBB
+import Formalism.ResultantValuation.Bundle0002
 
 noncomputable section
 

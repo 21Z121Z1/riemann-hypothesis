@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.RootWeights.EBeta
+import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0001
 
 noncomputable section
 

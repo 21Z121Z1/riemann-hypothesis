@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GmHomAt
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0027
 
 set_option autoImplicit false
 

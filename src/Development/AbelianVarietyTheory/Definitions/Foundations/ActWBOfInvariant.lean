@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.CycMOfNot
-import Development.AbelianVarietyTheory.Definitions.Foundations.IsScalarTowerMdlOm
-import Development.AbelianVarietyTheory.Definitions.Foundations.LiftSLMapMulInvMem
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SlMulToRingEquiv
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0019
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0386
 
 noncomputable section
 

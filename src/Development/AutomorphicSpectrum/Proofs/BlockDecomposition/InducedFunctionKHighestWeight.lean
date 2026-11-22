@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OrderedCechToCatCochainsOneApplyValueAtSubset
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EuOfDifferentiableAt
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InducedFunctionAtOne
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0742
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0463
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0747
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Formalism.WachLatticeTwists.WachProductBases.Statement
-import Formalism.LagrangeIdealLifts.CocyclePolynomialDivision.CompsOfMemMap
+import Formalism.LagrangeIdealLifts.CocyclePolynomialDivision.Bundle0001
 
 noncomputable section
 

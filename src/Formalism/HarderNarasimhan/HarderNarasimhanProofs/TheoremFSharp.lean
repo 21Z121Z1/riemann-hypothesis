@@ -1,6 +1,6 @@
-import Formalism.HarderNarasimhan.StatementFrameF
+import Formalism.HarderNarasimhan.Bundle0002
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.FrameHermSharpB
-import Formalism.HarderNarasimhan.HarderNarasimhanProofs.FrameLinearAlgebraFirst
+import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0002
 
 open Module NumberField Finset Formalism.CorankShareLayerCake.FR
 

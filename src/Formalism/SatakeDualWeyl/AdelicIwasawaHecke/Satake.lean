@@ -1,8 +1,8 @@
-import Formalism.SatakeDualWeyl.StatementE
+import Formalism.SatakeDualWeyl.Bundle0001
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SatakeComb
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SatakeMat
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SatakeRes
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.HeckeActMem
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0006
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0001
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCoinductionAugmentationCompDEqZero
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleSheafShortComplexExactIffLocallyStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FreeHomSectionsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0427
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0382
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry Opposite CochainComplex CochainComplex.HomComplex GlobalTheory.EtC

@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ModularCharacterEqOneOnExpHermitian
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0006
 open Formalism.MainNotions.S Matrix MeasureTheory
 
 namespace GlobalTheory

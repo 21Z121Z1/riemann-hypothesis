@@ -1,11 +1,11 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSmallSectionMixed
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.BirationalYPt
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PShiftNefBig
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPerturbSemipos
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PBirationalModelExists
-import GroundTheory.HeightsAndTheta.Heights.Intersections.NotIsHorizontalOfDimOne
-import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.PConeTrdeg
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0029
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0031
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0110
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0107
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0063
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0029
+import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Bundle0012
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

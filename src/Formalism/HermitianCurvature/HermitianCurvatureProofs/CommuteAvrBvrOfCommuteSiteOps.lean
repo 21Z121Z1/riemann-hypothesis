@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.FnComm
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0077
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RuleGD
 
 namespace Formalism.FourierDecayAlt.TL

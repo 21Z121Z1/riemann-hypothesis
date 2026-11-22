@@ -1,4 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.SplitA
+import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.Bundle0002
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.ContinuousRepresentations.DerivExistsAllPosStatement
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.HasDerivAtRealOfComplex
 import Mathlib.Analysis.InnerProductSpace.TensorProduct

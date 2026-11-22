@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.Foundations.UnitarySphericalFixing.SatakeParameters.AbsCentral
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.Multi
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ToralAndGoodOfIsSpherical
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0794
 
 noncomputable section
 

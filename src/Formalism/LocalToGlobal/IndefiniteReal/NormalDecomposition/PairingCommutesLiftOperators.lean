@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.NormalDecomposition.LiftHeckeOperators
-import Formalism.LocalToGlobal.IndefiniteReal.MajAtEqZeroOfMemQpOfNe
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0018
 
 open Module NumberField IsDedekindDomain
 open scoped InnerProductSpace

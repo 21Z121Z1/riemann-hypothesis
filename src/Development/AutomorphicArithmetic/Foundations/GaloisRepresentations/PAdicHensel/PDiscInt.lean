@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicHensel.DatExOf
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Coordinates
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicHensel.Bundle0005
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0089
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.PDiscInt
 
 noncomputable section

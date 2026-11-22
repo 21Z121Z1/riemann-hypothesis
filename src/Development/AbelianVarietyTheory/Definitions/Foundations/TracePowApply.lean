@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.GelfA
-import Formalism.RealPlaceAnalysis.StatementB
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0013
+import Formalism.RealPlaceAnalysis.Bundle0002
 
 noncomputable section
 

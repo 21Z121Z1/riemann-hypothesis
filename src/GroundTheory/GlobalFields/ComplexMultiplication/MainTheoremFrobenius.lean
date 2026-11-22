@@ -1,8 +1,7 @@
 import Mathlib
 import GroundTheory.GlobalFields.ComplexMultiplication.FrobeniusAtPrimes
-import GroundTheory.GlobalFields.ComplexMultiplication.DegreeOneAutomorphismPoints
-import GroundTheory.GlobalFields.ComplexMultiplication.DegreeOneAutomorphismLift
-import GroundTheory.GlobalFields.ComplexMultiplication.MainTheoremPointHom
+import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0016
+import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0017
 import GroundTheory.GlobalFields.ComplexMultiplication.MainTheoremReduction
 import GroundTheory.GlobalFields.ComplexMultiplication.TorsionReduction
 set_option maxSynthPendingDepth 1

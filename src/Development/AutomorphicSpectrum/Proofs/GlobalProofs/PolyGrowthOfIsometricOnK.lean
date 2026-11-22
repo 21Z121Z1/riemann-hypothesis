@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsSmoothVec
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PosDefConjTransposeMulSelfEqExpPolynomial
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0048
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0011
 
 noncomputable section
 

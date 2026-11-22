@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.GlobalFields.ComplexMultiplication.AnalyticAlgebraicGerm
-import GroundTheory.GlobalFields.ComplexMultiplication.UniformizationGroup
+import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0003
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.DualIsogeny
 
 open Filter Topology Set Polynomial WeierstrassCurve.Affine GroundTheory.Arith.Abelian

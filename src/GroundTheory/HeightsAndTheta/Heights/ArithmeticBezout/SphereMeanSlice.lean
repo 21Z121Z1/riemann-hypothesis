@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Statements
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.SphereMeanVol
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.SphereMeanDisc
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0005
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0009
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

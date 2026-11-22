@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.LocalDensities.StatementsIntegralPointAlgebraic
-import GroundTheory.HeightsAndTheta.Heights.LocalDensities.NormLeOneIffIsIntegralElemOfEquiv
+import GroundTheory.HeightsAndTheta.Heights.LocalDensities.Bundle0002
+import GroundTheory.HeightsAndTheta.Heights.LocalDensities.Bundle0004
 import GroundTheory.GlobalFields.LocalFieldAtPlace
 import GroundTheory.GlobalFields.CompletionAtPlace
 import GroundTheory.GlobalFields.CompletionAtPlace.Integers

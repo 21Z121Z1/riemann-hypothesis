@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.GrowthBounds.UnramifiedQuadraticSetting
-import Formalism.LocalRingCardinality.SpanPowerMembership.GatRing
+import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0001
 
 noncomputable section
 

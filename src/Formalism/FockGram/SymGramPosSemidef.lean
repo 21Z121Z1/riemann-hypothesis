@@ -1,12 +1,6 @@
-import Formalism.FockGram.FockGramProofs.FockHerm
-import Formalism.FockGram.FockGramProofs.FockSesq
-import Formalism.FockGram.FockGramProofs.FockPerm
-import Formalism.FockGram.FockGramProofs.DetSymPow
-import Formalism.FockGram.FockGramProofs.SubIndexNorm
+import Formalism.FockGram.FockGramProofs.Bundle0002
+import Formalism.FockGram.FockGramProofs.Bundle0001
 import Mathlib
-import Formalism.FockGram.FockGramProofs.CovolGram
-import Formalism.FockGram.FockGramProofs.HermDualOf
-import Formalism.FockGram.FockGramProofs.HermitianTensorMulHermitian
 import Formalism.FockGram.StatementSymPos
 import Mathlib.Analysis.Matrix.Order
 import Mathlib.Analysis.Matrix.PosDef

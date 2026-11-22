@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CartFrSgn
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SignedUnitaryGroupCompatStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0265
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0326
 
 noncomputable section
 

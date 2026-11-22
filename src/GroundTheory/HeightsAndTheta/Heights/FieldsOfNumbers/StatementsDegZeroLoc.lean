@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.StatementsDivPushForwardLocal
-import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PPFDegree
+import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0013
+import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0011
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.FieldNumbers

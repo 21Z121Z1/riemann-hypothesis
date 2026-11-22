@@ -1,7 +1,6 @@
 import Formalism.FormalGroupWitt.FormalGroupWittProofs.FunctionalEquationHomVector
-import Formalism.FormalGroupWitt.FormalGroupWittProofs.EqSingleOfDegreeEqOne
-import Formalism.FormalGroupWitt.FormalGroupWittProofs.ShiftFE
-import Formalism.FormalGroupWitt.FormalGroupWittProofs.FrobSqV
+import Formalism.FormalGroupWitt.FormalGroupWittProofs.Bundle0002
+import Formalism.FormalGroupWitt.FormalGroupWittProofs.Bundle0001
 import Formalism.FormalGroupWitt.FormalGroupWittProofs.CongrV
 
 noncomputable section

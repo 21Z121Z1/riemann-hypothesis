@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsFlagBundleRankOne
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.RegularAlteration
-import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GradedMetricPullbackIsometric
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIsometryPullIdComp
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFlagModelOfIsIsometry
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0077
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0025
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0072
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1570
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1549
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0442
 
 set_option autoImplicit false
 

@@ -1,12 +1,11 @@
 import Formalism.SharpRestriction.GlobalSchurBounds.LinkPk
 import Formalism.LocalToGlobal.UnitaryNorms.MemFIffReal
-import Formalism.LocalToGlobal.HermitianColumns.StarConj
+import Formalism.LocalToGlobal.HermitianColumns.Bundle0004
 import Formalism.LocalToGlobal.HermitianForms.FormsTied
-import Formalism.LocalToGlobal.BesselHermitianTheta.Lemmas
-import Formalism.LocalToGlobal.GlobalTheory.BaseLatticeConventionOfFlags
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
+import Formalism.LocalToGlobal.GlobalTheory.Bundle0001
 import Formalism.LocalToGlobal.GlobalTheory.LinkTiesOm
 import Formalism.LocalToGlobal.GlobalTheory.LinkTiesTh
-import Formalism.LocalToGlobal.GlobalTheory.NormSqLatticeFunctionEq
 import Formalism.LocalToGlobal.GlobalTheory.PowFourLtCeilThresholdPrime
 import Formalism.LocalToGlobal.GlobalTheory.PlacesP
 import Formalism.LocalToGlobal.GlobalTheory.BaseLatticeConventionOfHermitian

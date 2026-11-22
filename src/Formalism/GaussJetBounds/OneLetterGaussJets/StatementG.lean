@@ -1,6 +1,6 @@
 import Formalism.GaussJetBounds.OneLetterGaussJets.OddLevelGainSum
-import Formalism.GaussJetBounds.StatementX
-import Formalism.GaussJetBounds.StatementU
+import Formalism.GaussJetBounds.Bundle0007
+import Formalism.GaussJetBounds.Bundle0006
 
 noncomputable section
 open scoped BigOperators

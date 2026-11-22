@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.GlobalFields.HerbrandQuotients.Cyclic
-import GroundTheory.GlobalFields.HerbrandQuotients.Lattice
+import GroundTheory.GlobalFields.HerbrandQuotients.Bundle0001
 import GroundTheory.GlobalFields.HerbrandQuotients.Permutation
 import GroundTheory.GlobalFields.HerbrandQuotients.CycTate
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasNormGroups
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0283
 
 noncomputable section
 

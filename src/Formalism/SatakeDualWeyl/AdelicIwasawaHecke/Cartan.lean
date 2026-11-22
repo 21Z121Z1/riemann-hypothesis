@@ -1,5 +1,5 @@
-import Formalism.SatakeDualWeyl.StatementE
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.GlintPrincRelIndexNeZero
+import Formalism.SatakeDualWeyl.Bundle0001
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0002
 
 open Matrix
 

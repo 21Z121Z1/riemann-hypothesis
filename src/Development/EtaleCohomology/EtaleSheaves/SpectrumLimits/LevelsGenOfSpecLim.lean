@@ -1,5 +1,4 @@
-import Development.EtaleCohomology.EtaleSheaves.SpectrumLimits.QuotCop
-import Development.EtaleCohomology.EtaleSheaves.SpectrumLimits.TensCop
+import Development.EtaleCohomology.EtaleSheaves.SpectrumLimits.Bundle0001
 
 namespace LateralTheory.E.LevelsGenPf
 

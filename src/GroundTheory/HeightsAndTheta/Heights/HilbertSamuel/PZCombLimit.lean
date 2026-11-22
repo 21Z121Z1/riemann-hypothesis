@@ -1,10 +1,10 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsZCombLimit
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsHilbert
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0030
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0006
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PThmAExpand
-import GroundTheory.HeightsAndTheta.Heights.HeightComparison.IsMultiHomogIdealIff
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PGenericFibreDim
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.IntToRat
+import GroundTheory.HeightsAndTheta.Heights.HeightComparison.Bundle0003
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0046
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0006
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

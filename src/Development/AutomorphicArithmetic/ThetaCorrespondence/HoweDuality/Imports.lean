@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AutomorphicArithmetic.ThetaCorrespondence.HoweDuality.FactorApply
-import Development.AutomorphicArithmetic.ThetaCorrespondence.HoweDuality.PartStable
+import Development.AutomorphicArithmetic.ThetaCorrespondence.HoweDuality.Bundle0001
 import Development.AutomorphicArithmetic.ThetaCorrespondence.HoweDuality.NakAll
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TensorEqTopOrLeKerFiniteLengthModulesStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0063
 open scoped TensorProduct
 open UpperTheory.Lit.HoweDuality
 

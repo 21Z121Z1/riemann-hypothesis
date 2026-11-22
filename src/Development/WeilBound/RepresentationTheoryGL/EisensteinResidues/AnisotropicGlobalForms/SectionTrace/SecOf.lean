@@ -1,7 +1,7 @@
 import Development.WeilBound.RepresentationTheoryGL.EisensteinSeries.SiegelEisensteinContinuation.DictInf
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ContinuesConst
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HalfData
-import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelEisensteinContinuationOfDoublingMethod
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0021
+import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.Bundle0001
 
 noncomputable section
 

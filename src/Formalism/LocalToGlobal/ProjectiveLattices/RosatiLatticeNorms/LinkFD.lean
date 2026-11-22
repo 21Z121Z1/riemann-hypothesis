@@ -1,7 +1,7 @@
 import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.D6P4Statement
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.MaxBoundPf
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.MajorantConjugateTransfer
-import Formalism.LocalToGlobal.ProjectiveLattices.EquivariantFiniteGroup
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0015
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0022
 
 noncomputable section
 

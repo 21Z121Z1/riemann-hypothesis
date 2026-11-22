@@ -1,5 +1,5 @@
 import Development.WeilBound.ThetaLifts.SmallCones.ExpAlg
-import Development.WeilBound.ThetaLifts.SmallCones.ExpSum
+import Development.WeilBound.ThetaLifts.SmallCones.Bundle0002
 
 noncomputable section
 

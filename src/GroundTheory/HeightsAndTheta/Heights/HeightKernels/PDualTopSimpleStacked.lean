@@ -1,17 +1,16 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualTopSimpleStacked
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualStackedGraph
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsGrassFibreDegree
-import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsArith
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0039
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0041
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0020
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0009
 import GroundTheory.HeightsAndTheta.Heights.Intersections.TableDegreeThreeBase
-import GroundTheory.HeightsAndTheta.Heights.Intersections.PConsequences
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.ChangeOfModel
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualLineSemipositive
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualArithVar
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0038
+import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0038
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0051
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0029
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PCoordConeArithVar
-import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.PIntDomainDim
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PGrassArithVar
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PFsLineSmooth
+import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Bundle0018
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0019
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

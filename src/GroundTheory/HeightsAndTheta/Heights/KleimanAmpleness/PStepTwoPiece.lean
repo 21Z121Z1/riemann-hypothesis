@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.StepTwoPieceSt
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.TwistAlg
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0029
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0010
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Kleiman

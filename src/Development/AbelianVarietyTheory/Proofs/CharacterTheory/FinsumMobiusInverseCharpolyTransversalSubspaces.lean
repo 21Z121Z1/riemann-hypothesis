@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.InvariantSubspaceMobiusInverseRecEqOfFinrankLt
-import Development.AbelianVarietyTheory.Proofs.CharacterTheory.InvariantSubspaceMobiusInverseCharpolyLinearEquiStatement
-import Development.AbelianVarietyTheory.Proofs.CharacterTheory.CharpolyEqFinsumPsiStatement
+import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0014
+import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0017
 
 open Polynomial GlobalTheory.CuspGL
 

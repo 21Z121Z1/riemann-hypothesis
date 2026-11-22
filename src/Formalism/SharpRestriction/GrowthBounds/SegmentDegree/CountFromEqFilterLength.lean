@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.DplusLeBeA
-import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.TypicalPathOrdersSmall
+import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0009
+import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0008
 import Formalism.ThetaLogCoordinates.ResidueClassEstimates.FinalT
 
 noncomputable section

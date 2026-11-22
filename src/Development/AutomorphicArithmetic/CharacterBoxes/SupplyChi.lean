@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.CharacterBoxes.Supply
-import Development.AutomorphicArithmetic.CharacterBoxes.Imports
+import Development.AutomorphicArithmetic.CharacterBoxes.Bundle0002
 import Development.AutomorphicArithmetic.CharacterBoxes.HostOfField
 import Development.AutomorphicArithmetic.CoprimeRanks.AdmChi
 

@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.GlobalTheory.FamRows
-import Formalism.LocalToGlobal.GlobalTheory.ConclusionsOfPrimeNumberTheoremAP
+import Formalism.LocalToGlobal.GlobalTheory.Bundle0001
 
 open Module NumberField IsDedekindDomain Matrix
 

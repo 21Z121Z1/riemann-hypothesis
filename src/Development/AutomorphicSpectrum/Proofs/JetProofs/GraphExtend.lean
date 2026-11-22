@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.JetCones.SymCapRev
-import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
+import Development.AutomorphicSpectrum.Definitions.JetCones.Bundle0001
+import Formalism.RealPlaceAnalysis.Bundle0004
 import Formalism.RealPlaceAnalysis.FinalF
 import Development.AutomorphicSpectrum.Proofs.JetProofs.EvFirst
 

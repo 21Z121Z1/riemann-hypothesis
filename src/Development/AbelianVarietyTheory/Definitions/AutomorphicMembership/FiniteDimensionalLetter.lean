@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.EqOfPowEqOneOfNormSubLt
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFrobeniusSemisimplification
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsNilpotentZpowSubOne
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SpanMkQOneTmul
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0058
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0048
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0018
 
 noncomputable section
 

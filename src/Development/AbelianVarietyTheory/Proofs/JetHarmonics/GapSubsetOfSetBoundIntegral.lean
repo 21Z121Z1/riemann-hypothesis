@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.FlagUnipotentLattices.UnipotentStabiliserCharacterisation
-import Formalism.FormalDegreeBessel.FormalDegreeRatio.DSFdeg
-import Development.AbelianVarietyTheory.BlockTheory.JetGauges.DegreeProportionalWords
+import Formalism.FormalDegreeBessel.FormalDegreeRatio.Bundle0003
+import Development.AbelianVarietyTheory.BlockTheory.JetGauges.Bundle0005
 
 open Finset
 open scoped ENNReal

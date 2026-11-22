@@ -1,8 +1,8 @@
 import Mathlib
-import CompanionTheory.AutomorphicTheory.ProductFormulaTheory.CuspidalExhaustion.MidDefs
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductIrreducibleAppendEquivStatement
+import CompanionTheory.AutomorphicTheory.ProductFormulaTheory.CuspidalExhaustion.Bundle0001
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0512
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ParabolicInductionInStagesProductOfProducts
-import BuildAid.D1
+import BuildAid.Bundle0001
 
 noncomputable section
 

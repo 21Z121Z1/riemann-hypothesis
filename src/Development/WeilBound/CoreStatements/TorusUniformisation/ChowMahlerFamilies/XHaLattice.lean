@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LieLatticeData
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsUniformDenominator
-import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.XTestptExists
-import GroundTheory.ArithmeticGeometry.ToricVarieties.KrullDomain
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0002
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0006
+import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.Bundle0004
+import GroundTheory.ArithmeticGeometry.ToricVarieties.Bundle0001
 open GlobalTheory.CompanionTheory.Ar.Num
 
 namespace PositivityTheory.Xgn.A_ha_lattice

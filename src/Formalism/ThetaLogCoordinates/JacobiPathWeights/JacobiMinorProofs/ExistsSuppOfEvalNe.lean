@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.ThetaLogCoordinates.JacobiPathWeights.StatementE
+import Formalism.ThetaLogCoordinates.JacobiPathWeights.Bundle0001
 
 noncomputable section
 

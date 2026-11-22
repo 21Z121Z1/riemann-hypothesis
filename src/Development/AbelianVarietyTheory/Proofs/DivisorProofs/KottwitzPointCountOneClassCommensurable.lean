@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsRootSelectionUnitaryRankOne
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexNeZeroOpenCompact
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VolEqIdxRatio
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1390
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1366
 
 open Matrix NumberField GlobalTheory.LKTrip GlobalTheory.LKRes GlobalTheory.LKMid GlobalTheory.LKCount
 open scoped TensorProduct Classical

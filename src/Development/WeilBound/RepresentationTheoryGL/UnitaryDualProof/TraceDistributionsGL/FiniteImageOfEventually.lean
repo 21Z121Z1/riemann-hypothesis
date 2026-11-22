@@ -1,6 +1,6 @@
 import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.TraceDistributionsGL.PhiIndep
 import Development.WeilBound.CoreStatements.AutomorphicKernels.BernsteinUnitaryProducts.BernsteinTheoremA.LeviTransposeDistributions.BoundOneTwo
-import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.TraceDistributionsGL.DetUpdateRowOneLast
+import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.TraceDistributionsGL.Bundle0001
 
 noncomputable section
 

@@ -1,11 +1,10 @@
 import Formalism.LocalToGlobal.ClassS
-import Formalism.LocalToGlobal.ClassSK
-import Formalism.LocalToGlobal.ClassSLinks
+import Formalism.LocalToGlobal.Bundle0001
 import Formalism.LocalToGlobal.ClassSR
 import Formalism.LocalToGlobal.HilbertRowConditions.RowPinMin
 import Formalism.LocalToGlobal.RatioJoints.CharacterProductEqOne
 import Formalism.LocalToGlobal.UnitaryNorms.DatumS
-import Formalism.LocalToGlobal.BesselHermitianTheta.TiedWeilEq
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0004
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ValLast
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0023
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ValueDoubleExact
 
 set_option genSizeOfSpec false

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsPowSubMemSpanOfIsUnitModOfIsAlgClosed
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0003
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Proportional
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.RationalSections.ThmISt
 

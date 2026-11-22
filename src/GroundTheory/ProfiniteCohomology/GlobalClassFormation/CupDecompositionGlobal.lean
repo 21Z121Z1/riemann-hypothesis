@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.ProfiniteCohomology.GlobalClassFormation.CupDecomposition
+import GroundTheory.ProfiniteCohomology.GlobalClassFormation.Bundle0001
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.CupLocal
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.ResLocal
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.UnitsLevels

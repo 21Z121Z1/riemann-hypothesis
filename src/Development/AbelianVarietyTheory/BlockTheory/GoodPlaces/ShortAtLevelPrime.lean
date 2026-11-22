@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.FullExists
-import Formalism.LocalToGlobal.ProjectiveLattices.RecPJThAllNeBot
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.PlaceIntegralUnramified
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0042
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0038
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0007
 
 noncomputable section
 

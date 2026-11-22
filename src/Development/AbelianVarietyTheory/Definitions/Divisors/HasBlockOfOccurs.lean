@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.PieriBlockIdeals.LatticeInclusionRealSettingAlt
 import Formalism.LocalToGlobal.Divisibility.RowLat
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.GaloisRepOfPolarizedCuspidal
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0009
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.HeckeLAdicCharacterAboveIff
 
 set_option autoImplicit false

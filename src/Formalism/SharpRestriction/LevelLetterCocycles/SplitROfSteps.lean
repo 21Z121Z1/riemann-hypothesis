@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.LevelLetterCocycles.MixedPositionHypothesis
-import Formalism.SharpRestriction.LevelLetterCocycles.MapCompZero
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0021
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0020
 
 noncomputable section
 

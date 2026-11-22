@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TransferIndices.TauCentralScalar
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TransferIndices.GrpNorm
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TransferIndices.Bundle0001
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TransferIndices.DvTransferIdxOf
 
 noncomputable section

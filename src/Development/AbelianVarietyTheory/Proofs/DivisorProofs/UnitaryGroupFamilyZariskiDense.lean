@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetGNeZero
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0575
 open Classical MvPolynomial
 open scoped Matrix ComplexOrder
 

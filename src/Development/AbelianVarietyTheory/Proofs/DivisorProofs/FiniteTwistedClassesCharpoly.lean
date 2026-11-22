@@ -1,11 +1,11 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.GaloisRepOfPolarizedCuspidal
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsAevalEqOfSeparable
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0048
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0116
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsNormalisedThetaSub
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitsModSqFiniteOfFields
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteSqEqOneOfFiniteAlgebra
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0043
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0022
 import GroundTheory.GlobalFields.LocalFieldAtPlace
-import GroundTheory.LocalFields.FiniteExtension
+import GroundTheory.LocalFields.Bundle0002
 import GroundTheory.LocalFields.UnitsPowers
 open NumberField IsDedekindDomain Matrix Polynomial Filter GlobalTheory.CuspRep GlobalTheory.PRep Formalism.UG Formalism.BasicNotions GlobalTheory.UnitaryBC GlobalTheory.BCT
 open scoped Classical TensorProduct

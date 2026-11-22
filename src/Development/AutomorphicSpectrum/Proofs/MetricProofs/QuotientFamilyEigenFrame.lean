@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsEigFrames
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
-import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.IsPshLocallyIntegrableStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.RiemannLatticeEigenProjectionStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsotropicEigencomponentConjugateFormStatement
+import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0001
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0035
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0033
 
 noncomputable section
 

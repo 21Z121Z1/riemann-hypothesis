@@ -1,9 +1,9 @@
 import Mathlib
-import Formalism.PeriodIntegrals.MinorSpanCompl
+import Formalism.PeriodIntegrals.Bundle0007
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MinorSpanComplement.ExistsCoeffNeZeroOfMemSpan
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MinorSpanComplement.ShapeColumnDegreeColumnSizes
 import Formalism.GradedWeylDivisibility.FinalD
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.BideterminantMem
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0008
 
 open MvPolynomial Formalism.GradedWeylDivisibility
 

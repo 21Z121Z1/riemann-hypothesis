@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsFlagBundleRankOne
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.RegularAlteration
-import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPairBundle
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmpNaturality
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BcDensEqOfGram
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0077
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0025
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0072
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2633
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1622
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1536
 
 noncomputable section
 

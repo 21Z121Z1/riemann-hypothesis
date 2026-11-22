@@ -1,5 +1,5 @@
 import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.VerticalStrips.UnramifiedEulerProductIntegral
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OrdUniformizerEqOne
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0579
 
 noncomputable section
 

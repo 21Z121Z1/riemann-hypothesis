@@ -1,5 +1,5 @@
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CommuteAvrBvrOfCommuteSiteOps
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.LagrangeExtraction
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0015
 
 namespace Formalism.FourierDecayAlt.TL
 

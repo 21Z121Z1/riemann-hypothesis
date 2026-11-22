@@ -1,14 +1,14 @@
 import Formalism.LocalToGlobal.ClassRec
-import Formalism.LocalToGlobal.ThresholdSelection
-import Formalism.SharpRestriction.LevelLetterCocycles.TwAllF
+import Formalism.LocalToGlobal.Bundle0002
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0029
 import Formalism.LocalToGlobal.GroupLattices.AdmissibleAtGeneratorPlaces
-import Formalism.SharpRestriction.PageFix
+import Formalism.SharpRestriction.Bundle0002
 import Formalism.SharpRestriction.Divisibility.SmallFirstModulusBelowScale
 import Formalism.LocalToGlobal.GroupLattices.LinkGConcreteNoKer
 import Formalism.SharpRestriction.DesignExistsOfChoices
 import Formalism.SharpRestriction.SmoothDesignExistence.DesignExistsDes
 import Formalism.SharpRestriction.SmoothDesignExistence.AdmissibleTopsMertens
-import Formalism.SharpRestriction.GlobalSchurBounds.WeightVectorSmallSharesEight
+import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0003
 import Formalism.LocalToGlobal.Divisibility.RecBridge
 import Formalism.LocalToGlobal.Divisibility.DivisionCompatibleToSub2Indef2
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.SpectralTiesReal
@@ -16,13 +16,12 @@ import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.STiesR
 import Formalism.SharpRestriction.GlobalSchurBounds.LemmaBSecondBranchOfLength
 import Formalism.LocalToGlobal.GlobalTheory.ConcNP
 import Formalism.LocalToGlobal.HilbertRowConditions.AllJoinP
-import Formalism.LocalToGlobal.GroupLattices.AdmissibleOfInclusion
-import Formalism.LocalToGlobal.GroupLattices.ServiceOfTiedSelection
+import Formalism.LocalToGlobal.GroupLattices.Bundle0001
 import Formalism.LocalToGlobal.Divisibility.RowsOfTiedSubspacesEq
 import Formalism.LocalToGlobal.Divisibility.NumericScaleExponentEqExtended
 import Formalism.LocalToGlobal.Divisibility.RecBridgeTied
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.MinkowskiQ
-import Formalism.SharpRestriction.AdmissibleParameterJoins.DGamMink
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0015
+import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0004
 import Formalism.SharpRestriction.GlobalSchurBounds.LinkTied
 
 noncomputable section

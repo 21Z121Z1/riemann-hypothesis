@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.CharacterGerms.Interface
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0005
 
 open scoped BigOperators
 open Formalism.L2.FormalSeriesBounds

@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.CasselmanSuffTemp
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeckeSpectralOfStrictExponent
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatrixCoefficientHeckeDecay
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SquareIntegrableOfHeckeSpectral
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0675
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0402
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0437
 
 open Filter Topology MeasureTheory GlobalTheory GlobalTheory.PRep GlobalTheory.SplitWeil GlobalTheory.SmGL GlobalTheory.LocGL GlobalTheory.JHMult ValuativeRel GlobalTheory.CompanionTheory.CoeffBound
 

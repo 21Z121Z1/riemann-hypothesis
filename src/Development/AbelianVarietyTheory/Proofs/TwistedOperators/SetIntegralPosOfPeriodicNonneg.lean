@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsDescendPeriodicTrig
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FourierCoeffMulCharConvAndHasDerivAt
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0017
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0024
 open MeasureTheory
 
 namespace GlobalTheory

@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.GlobalFields.Artin.Conductor
-import GroundTheory.GlobalFields.Artin.InflationTower
+import GroundTheory.GlobalFields.Artin.Bundle0002
 import GroundTheory.LocalFields.LowerIndexQuotient
 import GroundTheory.LocalFields.IntermediateField
 

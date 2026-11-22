@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.SmulMemRatForms
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0030
 
 set_option autoImplicit false
 

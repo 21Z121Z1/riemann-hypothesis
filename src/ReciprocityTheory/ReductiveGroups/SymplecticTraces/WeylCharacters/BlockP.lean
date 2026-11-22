@@ -1,4 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.BlockCombStatement
+import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.Bundle0001
 
 noncomputable section
 

@@ -1,8 +1,8 @@
-import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.SplitDict
+import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Bundle0003
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.PairwiseDisjointCell
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EventuallyDeepSubset
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegrableZetaIntegrand
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocallyConstantExtensionByZero
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0044
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0053
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0042
 
 open MeasureTheory ValuativeRel Matrix Topology Filter
 open scoped NNReal ENNReal Pointwise

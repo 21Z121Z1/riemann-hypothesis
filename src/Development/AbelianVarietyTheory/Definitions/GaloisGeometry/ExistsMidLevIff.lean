@@ -2,14 +2,14 @@ import Mathlib
 import Formalism.LocalToGlobal.KernelLattices.TopPin
 import Formalism.LocalToGlobal.KernelLattices.KerMtPin
 import Formalism.LocalToGlobal.Columns.RecLevel
-import Formalism.LocalToGlobal.UnitaryNorms.CharTied
-import Formalism.LocalToGlobal.HermitianColumns.HermCols
+import Formalism.LocalToGlobal.UnitaryNorms.Bundle0006
+import Formalism.LocalToGlobal.HermitianColumns.Bundle0002
 import Formalism.SharpRestriction.GrowthBounds.ChartComparison.StepIn
 import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.ToLEInvApply
-import Formalism.LocalToGlobal.HermitianForms.TiedTwGen
+import Formalism.LocalToGlobal.HermitianForms.Bundle0005
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NatCastMemOfPlace
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFiniteAdeleBaseChangeEquiv
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.MemMoveLevUloc
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0013
 
 noncomputable section
 

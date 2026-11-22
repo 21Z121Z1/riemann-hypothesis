@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.KerIsTerm
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LevelChainSharpColumnValuationOfPointKernelLiftL
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0115
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemClosureIff
 
 noncomputable section

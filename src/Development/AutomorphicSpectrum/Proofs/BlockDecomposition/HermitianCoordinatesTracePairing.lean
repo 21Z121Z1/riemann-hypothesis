@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsBlockNFZeroOne
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableOfMulUnimodular
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsWeilFormulas
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousHermPart
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaSumInvariantUnipotentTranslate
-import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.GinfCSecondCountable
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0508
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0015
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0049
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0505
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0515
+import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0005
 
 noncomputable section
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct

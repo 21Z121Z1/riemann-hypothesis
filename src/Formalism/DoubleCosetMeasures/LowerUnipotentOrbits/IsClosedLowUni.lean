@@ -1,6 +1,6 @@
 import Formalism.DoubleCosetMeasures.Statement
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.GLRealOpen
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.GlR
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0069
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0025
 
 open MeasureTheory Measure Topology Matrix
 

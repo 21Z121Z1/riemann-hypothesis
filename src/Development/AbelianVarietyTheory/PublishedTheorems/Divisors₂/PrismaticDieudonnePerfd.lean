@@ -2,8 +2,8 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.XiMulNu
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.EpsilonPairingZeta
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToBaseChangePtsBijective
-import ReciprocityTheory.DualLattices.AinfFacts
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FontaineThetaEqZeroIffFontaineXiElementDvd
+import ReciprocityTheory.DualLattices.Bundle0024
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0061
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsLogAExtends
 
 set_option autoImplicit false

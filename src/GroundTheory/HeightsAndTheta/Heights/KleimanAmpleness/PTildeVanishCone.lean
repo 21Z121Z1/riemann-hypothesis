@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.AlgebraMapMemChartRingLine
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PTildeTailLoc
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0035
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Kleiman

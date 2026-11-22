@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJA
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0064
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SquareIntegrableGammaZetabarInv
 
 namespace Formalism.FourierDecayAlt.P.CutMP.JA.BStar

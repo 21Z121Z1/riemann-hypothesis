@@ -5,7 +5,7 @@ import Mathlib.RingTheory.Algebraic.LinearIndependent
 import Mathlib.FieldTheory.IsAlgClosed.Basic
 import Mathlib.Analysis.Complex.Polynomial.Basic
 import Mathlib.Analysis.Complex.Cardinality
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SpectrumNonemptyOfCountableRank
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0061
 
 noncomputable section
 

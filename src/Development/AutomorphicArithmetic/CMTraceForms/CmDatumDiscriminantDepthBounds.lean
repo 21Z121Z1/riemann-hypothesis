@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.HostFacts
 import Development.AutomorphicArithmetic.PrimeDiscriminants.SlopeTestRemainingChoices
-import Development.AutomorphicArithmetic.FrobeniusLocalisation.VdLe
-import Development.AutomorphicArithmetic.FrobeniusLocalisation.inertQ
-import Development.AutomorphicArithmetic.FrobeniusLocalisation.InertD
+import Development.AutomorphicArithmetic.FrobeniusLocalisation.Bundle0006
+import Development.AutomorphicArithmetic.FrobeniusLocalisation.Bundle0008
+import Development.AutomorphicArithmetic.FrobeniusLocalisation.Bundle0009
 
 open UpperTheory.HF
 

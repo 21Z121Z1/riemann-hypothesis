@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.CharacterGerms.RowTiePHaDefs
-import Formalism.LocalToGlobal.CharacterGerms.RowTiePDescSpanSt
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0002
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0018
 
 set_option autoImplicit false
 

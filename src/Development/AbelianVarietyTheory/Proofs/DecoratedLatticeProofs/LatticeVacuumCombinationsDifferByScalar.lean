@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.QLev
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0030
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ProdDat
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergCombinationDisjointPlacesCommuteVacua
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0287
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SelfDualLatticePairingDual
 
 set_option genSizeOfSpec false

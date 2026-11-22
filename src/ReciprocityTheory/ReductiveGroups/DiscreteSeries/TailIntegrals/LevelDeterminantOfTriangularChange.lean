@@ -1,4 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.InvSqrtTwoMulSelf
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.Bundle0010
 
 noncomputable section
 open Matrix MeasureTheory

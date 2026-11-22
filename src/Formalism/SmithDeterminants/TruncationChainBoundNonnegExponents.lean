@@ -1,4 +1,4 @@
-import Formalism.SmithDeterminants.DefsGram
+import Formalism.SmithDeterminants.Bundle0002
 import Formalism.SmithDeterminants.DivisibilityChains.SmithExists
 
 namespace Formalism.A

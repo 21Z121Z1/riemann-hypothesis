@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StPtsChartDenNotMem
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StPtsChartDim
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.ConeChartA
+import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0033
+import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0030
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0013
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.KleimanNefness.AlgDim
 import ReciprocityTheory.CommutativeAlgebra.PolynomialHeights.HeightAddRingKrullDimQuotientMvPolynomialField
 set_option maxSynthPendingDepth 1

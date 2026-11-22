@@ -1,12 +1,12 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrAtEmb
-import Development.AbelianVarietyTheory.Definitions.Divisors.MarkAd
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsSmoothVector
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormPeriodRelation
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EtaCharacterUnramified
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1036
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0040
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0288
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0435
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesThird
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaAtOfIsEtaConj
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AbsNormSqOfMulConjEqDifferentIdeal
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0989
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0001
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.L2.DIV Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.IndefR.FWT Formalism.L2.Pj
 open MeasureTheory IsDedekindDomain NumberField Matrix

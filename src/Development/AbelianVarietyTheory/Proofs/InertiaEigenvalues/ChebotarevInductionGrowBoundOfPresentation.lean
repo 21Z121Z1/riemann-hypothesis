@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RepresentsOfComputes
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DetMemSpanAdjugate
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqOneOfMemProKer
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CokEquivOfExact
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoeffMemOfPowMul
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoeffMemOfToLamMem
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0342
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0007
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0331
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0329
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0005
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0328
 
 noncomputable section
 

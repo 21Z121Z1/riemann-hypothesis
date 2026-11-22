@@ -5,7 +5,7 @@ import Formalism.SharpRestriction.LevelLetterCocycles.DecompositionData
 import Formalism.SharpRestriction.LevelLetterCocycles.TableLineDegreeTwo
 import Formalism.SharpRestriction.LevelLetterCocycles.CrystallineMapLemmas
 import Formalism.SharpRestriction.LevelLetterCocycles.RamificationTwoAndConjugationAtQAndD
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TateDualDeRhamAndFilZeroDimAll
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0519
 
 noncomputable section
 

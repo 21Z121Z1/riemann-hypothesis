@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Assembly
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PIntNumPoint
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PSpecialMultAt
-import GroundTheory.HeightsAndTheta.Heights.HeightComparison.IsMultiHomogIdealIff
+import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0013
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0015
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0009
+import GroundTheory.HeightsAndTheta.Heights.HeightComparison.Bundle0003
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Bridge

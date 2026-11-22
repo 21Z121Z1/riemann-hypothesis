@@ -1,9 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Jets.IsSelfOf
+import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0004
 import Development.AbelianVarietyTheory.Definitions.Jets.TwoPlaces
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.GapParts
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ProdDetMemHaO
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FlagOfLetterNumberingRowData
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0131
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0015
 
 set_option autoImplicit false
 

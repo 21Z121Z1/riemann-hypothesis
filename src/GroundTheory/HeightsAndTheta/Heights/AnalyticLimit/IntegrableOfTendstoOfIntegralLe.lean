@@ -1,9 +1,9 @@
 import Mathlib
-import ReciprocityTheory.AnalyticForms.PotentialTheory.HessCEqZeroOfEventuallyEqZero
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0003
 import ReciprocityTheory.AnalyticForms.PotentialTheory.MaMeasureB
-import ReciprocityTheory.AnalyticForms.PotentialTheory.PotentialContDiffAt
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0008
 import ReciprocityTheory.AnalyticForms.PotentialTheory.Stokes
-import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffAtOfIsPotential
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0002
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Objects
 set_option maxSynthPendingDepth 1
 

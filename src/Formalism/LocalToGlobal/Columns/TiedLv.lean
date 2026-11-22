@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.Columns.TiedAtT
+import Formalism.LocalToGlobal.Columns.Bundle0025
 import Formalism.LocalToGlobal.Columns.BtExistsSmulLeOfFg
 
 open NumberField IsDedekindDomain Module Matrix

@@ -1,5 +1,5 @@
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.DimClosureAddOneLe
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ChartResidueDegreeAlgClosedClosed
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0070
 
 set_option autoImplicit false
 set_option linter.style.haveILetI false

@@ -1,4 +1,4 @@
-import Development.EtaleCohomology.EtaleTrace.ChartGenOnPfCut
+import Development.EtaleCohomology.EtaleTrace.Bundle0010
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry MvPolynomial

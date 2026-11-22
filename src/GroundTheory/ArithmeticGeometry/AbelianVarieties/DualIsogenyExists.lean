@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.IsogenySeparable
-import GroundTheory.ArithmeticGeometry.AbelianVarieties.IsogenyFrobeniusSep
+import GroundTheory.ArithmeticGeometry.AbelianVarieties.Bundle0001
 
 namespace GroundTheory.Arith.Abelian
 

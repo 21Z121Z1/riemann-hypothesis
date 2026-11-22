@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsGaugeAll
-import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.ExistsUnitaryCommMulEqOfGram
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0007
+import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.Bundle0012
 
 open Matrix Finset
 

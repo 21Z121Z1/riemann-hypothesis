@@ -1,7 +1,7 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.EpsilonEtaMatrices.EpsilonEtaTensorDual
-import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.DegreeCountCohomology.FinAm
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.LemmaB
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.CardEqPowLength
+import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.DegreeCountCohomology.Bundle0003
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0008
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0002
 
 open Matrix Filter NumberField IsDedekindDomain Formalism.ConjugateSelfDual ReciprocityTheory.Gal UpperTheory.V.Alg UpperTheory.V.W UpperTheory.V.Pa
 

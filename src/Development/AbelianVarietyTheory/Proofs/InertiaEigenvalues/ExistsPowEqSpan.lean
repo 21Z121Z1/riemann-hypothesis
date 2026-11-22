@@ -1,12 +1,12 @@
 import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.CentralInvolutionRing
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ConjTupRefl
-import Development.AbelianVarietyTheory.Definitions.Divisors.GenReads
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0021
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0042
 import Development.AbelianVarietyTheory.Definitions.ThetaValues.ExistsRootNotMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMapOfOfExtends
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GaussGLZero
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteRamifiedPlacesHeckeCharacter
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0249
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0929
 
 open Formalism.BasicNotions Formalism.MainNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice IsDedekindDomain NumberField Matrix Formalism.L2.Theta Formalism.L2.DIV Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.IndefR.Datum Formalism.IndefR.FWT Formalism.L2.Pj
 open scoped TensorProduct

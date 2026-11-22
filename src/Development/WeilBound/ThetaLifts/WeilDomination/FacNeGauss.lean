@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GaussSumNeZeroOfRamified
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NonarchimedeanGroupOfIsCompactIsOpen
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0254
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0331
 
 noncomputable section
 

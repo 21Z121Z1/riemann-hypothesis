@@ -1,14 +1,14 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StalkStepMono
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvMulApplyEqZeroOfMinor
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchubertCellOpenImmersion
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagPointInSomeCell
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEqFlagPtOfIsLocalRing
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ColSec
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2669
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1117
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1207
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1186
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1260
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2572
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenImmersionCellFl
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsTorsionFreeOfForallExists
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TautologicalSubbundleRankStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClsDivPullEqVPull
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3093
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1255
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory GlobalTheory.FlagZ GlobalTheory.FlagZ.Univ
 open GlobalTheory.QCoh (freeModule)
 open GlobalTheory.Twist (resM)

@@ -1,7 +1,7 @@
-import Development.WeilBound.ThetaLifts.EigenvalueEndgame.OrthogonalDecomposition.RapidBound
-import Development.WeilBound.ThetaLifts.TowerModels.PlaneHerm
+import Development.WeilBound.ThetaLifts.EigenvalueEndgame.OrthogonalDecomposition.Bundle0001
+import Development.WeilBound.ThetaLifts.TowerModels.Bundle0002
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.OrthogonalDecomposition.ActsOfReads
-import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.ExistsFull
+import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0001
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfSurj
 
 noncomputable section

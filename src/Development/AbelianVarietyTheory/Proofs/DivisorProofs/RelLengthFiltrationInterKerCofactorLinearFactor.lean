@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.MultiplicationKernelIdentity
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PreEig
-import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.IsSaturatedSubmoduleIffExistsIsComplOfValuationR
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0180
+import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0005
 open GlobalTheory.IndefiniteRowSideFullHecke.MultiplicationKernelIdentity GlobalTheory.HermitianPreEigenvalues Polynomial Module
 
 noncomputable section

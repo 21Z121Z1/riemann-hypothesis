@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.GlobalFields.ComplexMultiplication.AnalyticAlgebraicIndependent
-import GroundTheory.GlobalFields.ComplexMultiplication.AnalyticAlgebraicUnivAdd
+import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0005
+import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0006
 import GroundTheory.GlobalFields.ComplexMultiplication.DifferentialConstant
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.DualWeil
 

@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CuspOnto
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsValuationSubringComplexPrimeMemNonunits
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsLevelGoodAtAllPrimesAndIdx
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0041
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsVanBdOfMemExtVanZ
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DenseInterior
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToroidalFlagNonempty
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3142
 open NumberField ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.FD Formalism.L2.Pj
 
 theorem DifferentiableLines.nonempty_toroidal_flag_bundle : GlobalTheory.Published.ToroidalCompactification → ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host E) (D : Datum H) (l : Level H) (Xo : Moduli D l) (c : Coeff l), 1 ≤ D.p + D.q → Nonempty (GlobalTheory.CompHS.TorFlag Xo c) := by

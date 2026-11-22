@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConvUAbsU
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemShellUIffDepth
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SwapLtSwapIffOfAddTwo
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsOpenIsCompactUnitaryIntegralPoints
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1217
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1275
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1314
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0214
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FIwasawa
 
 noncomputable section

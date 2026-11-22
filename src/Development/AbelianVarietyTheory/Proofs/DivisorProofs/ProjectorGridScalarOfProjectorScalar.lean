@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NablaSchur
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0605
 
 open GlobalTheory.LeviCut
 

@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.GlobalFields.TateThesis.IdeleMeasureNormOne
-import GroundTheory.GlobalFields.TateThesis.IdeleMeasureCosets
+import GroundTheory.GlobalFields.TateThesis.Bundle0007
 import GroundTheory.GlobalFields.IdeleGroups.NormOneCompact
 import GroundTheory.GlobalFields.Adele.Discrete
 

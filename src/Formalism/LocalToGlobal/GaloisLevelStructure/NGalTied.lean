@@ -1,8 +1,8 @@
 import Formalism.LocalToGlobal.GaloisLevelStructure.TiedGal
 import Formalism.LocalToGlobal.GaloisLevelStructure.TiedHecke
-import Formalism.LocalToGlobal.GaloisLevelStructure.TiedLevel
+import Formalism.LocalToGlobal.GaloisLevelStructure.Bundle0001
 import Formalism.LocalToGlobal.GaloisLevelStructure.DefsAutLoc
-import Formalism.LocalToGlobal.NormalizedHeckeFactors.NormalizedHeckeData
+import Formalism.LocalToGlobal.NormalizedHeckeFactors.Bundle0002
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Formalism.HermitianCurvature.StatementNF
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.LowerLevelsSameScalar
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0031
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LevelCoordinatesCommute
 
 noncomputable section

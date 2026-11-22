@@ -1,8 +1,8 @@
 import Development.WeilBound.CoreStatements.AutomorphicKernels.GrothendieckRingPolynomial.ProdList
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParabolicProductHasFiniteLengthGL
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0408
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivProdIrrTw
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentRepSplitIntertwiner
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.BernsteinZelevinskyFiniteness
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0609
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0044
 
 noncomputable section
 

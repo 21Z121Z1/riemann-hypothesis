@@ -1,13 +1,11 @@
 import Mathlib
-import Formalism.LocalRingCardinality.DataExtra
+import Formalism.LocalRingCardinality.Bundle0007
 import Formalism.LocalRingCardinality.DataRRMetric
-import Formalism.LocalToGlobal.LatticeGeometry.DegFlLApply
-import Formalism.LocalToGlobal.LatticeGeometry.CmTypeMeetsConjugatePair
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PointGlobalSectionsNeBot
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsProvisionalShimX
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NonemptyRingHomComplexOfLeContinuum
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SubRkOfPsiOfEqRkOfCEmb
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsFramesNormAtEqNorm
+import Formalism.LocalToGlobal.LatticeGeometry.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0215
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0213
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0216
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0212
 
 open Formalism.BasicNotions NumberField
 

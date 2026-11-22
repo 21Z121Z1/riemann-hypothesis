@@ -1,6 +1,6 @@
 import Mathlib
 import ReciprocityTheory.NeutralLocalFields.Duality
-import ReciprocityTheory.GroupCohomology.LengthKerEqCoker
+import ReciprocityTheory.GroupCohomology.Bundle0012
 
 namespace ReciprocityTheory.DiscreteGroups.LocalClassField.InflationOneCocycles
 

@@ -1,4 +1,4 @@
-import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.PairRowIffQdRows
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0002
 
 open Formalism.BasicNotions GlobalTheory.EX
 

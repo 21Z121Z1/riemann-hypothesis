@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RealMetaplecticRepresentation
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjMemAdelicSchwartzSpaceNumberFieldOfMem
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatrixCoeffContinuousRapidDecayStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1423
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0301
 open MeasureTheory GlobalTheory.RealWeil
 open scoped SchwartzMap
 

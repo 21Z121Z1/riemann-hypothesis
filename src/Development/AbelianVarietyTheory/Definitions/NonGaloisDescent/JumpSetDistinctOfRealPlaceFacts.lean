@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.SharpRestriction.LevelLetterCocycles.AdmissibleParameterJ
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0010
 import Formalism.SharpRestriction.LevelLetterCocycles.ExistsInertiaCharpolyFactorOfTameType
 
 noncomputable section

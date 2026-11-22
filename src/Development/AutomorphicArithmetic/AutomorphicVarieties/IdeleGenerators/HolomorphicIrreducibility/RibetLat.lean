@@ -1,5 +1,5 @@
-import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.ShapeFacts
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IrreducibleInvariant
+import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.Bundle0001
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0039
 
 open Formalism.ConjugateSelfDual Formalism.MainNotions.N Polynomial UpperTheory.V.Af
 open scoped Matrix

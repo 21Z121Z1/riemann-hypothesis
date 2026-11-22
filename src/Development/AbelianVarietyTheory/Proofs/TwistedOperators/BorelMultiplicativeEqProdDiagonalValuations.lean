@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsPairingSingleNe
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0149
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FSatakeC
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FIwasawaB
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0009
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InvMemDoubleCosetAndComm
 
 noncomputable section

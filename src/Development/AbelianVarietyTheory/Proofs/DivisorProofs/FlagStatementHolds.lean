@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InducesPl
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CoordinateSectionsOfWeight
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IoOfLeOneIff
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CartierLogHeightFormula
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NotIsBettiZero
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.WithZeroEqOfLeExpIff
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2627
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0592
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0582
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3287
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0039
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0018
 
 set_option autoImplicit false
 

@@ -1,7 +1,6 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.UnitaryRepresentations.IsInvariantIffCommuteStarProjection
-import GroundTheory.AutomorphicForms.UnitaryRepresentations.ExistsEqAlgebraMapOfIsSelfAdjoint
-import GroundTheory.AutomorphicForms.UnitaryRepresentations.DirectSum
+import GroundTheory.AutomorphicForms.UnitaryRepresentations.Bundle0001
 import GroundTheory.AutomorphicForms.UnitaryRepresentations.Integrated
 
 namespace GroundTheory.Automorphic

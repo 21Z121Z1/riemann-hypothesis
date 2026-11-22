@@ -1,6 +1,6 @@
 import Development.AbelianVarietyTheory.Definitions.Divisors.BadElt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankRangeMulLeftIdempotentGroupAlgebra
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitriSubOnePow
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0564
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0117
 import Formalism.LocalToGlobal.Divisibility.ProjLemmas
 open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.ArithmeticCylinders GlobalTheory.BadCount Module
 

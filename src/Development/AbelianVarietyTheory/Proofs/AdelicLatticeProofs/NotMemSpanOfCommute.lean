@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.RealIdemMulOfReal
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0072
 
 noncomputable section
 

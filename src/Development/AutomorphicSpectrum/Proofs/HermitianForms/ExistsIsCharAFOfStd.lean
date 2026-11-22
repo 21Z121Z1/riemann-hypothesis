@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.UnipotentAdelicQuotients.SiegelWeilUnitaryConvergent
-import Formalism.UnipotentAdelicQuotients.StdAdditiveCharExists
+import Formalism.UnipotentAdelicQuotients.Bundle0003
+import Formalism.UnipotentAdelicQuotients.Bundle0002
 import Formalism.PeriodIntegrals.ExplicitFormulaCounts.BridgeStdAddChar
 open NumberField IsDedekindDomain MeasureTheory HeckeCharacterZeroLocus.SiegelWeilU
 open scoped TensorProduct

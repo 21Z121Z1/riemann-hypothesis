@@ -1,8 +1,8 @@
 import Mathlib
-import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.StatementAB
+import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0002
 import Formalism.GaussJetBounds.GaussJetProofs.ConstantCoeffAevalLinP
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.BiHomSum
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DegLESum
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0003
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0012
 
 noncomputable section
 

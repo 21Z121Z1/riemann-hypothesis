@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.MixedUnlinkedExponents.ValsExtOf
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BijectiveOfSplit
-import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.WeakStable
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0386
+import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.Bundle0003
 
 noncomputable section
 

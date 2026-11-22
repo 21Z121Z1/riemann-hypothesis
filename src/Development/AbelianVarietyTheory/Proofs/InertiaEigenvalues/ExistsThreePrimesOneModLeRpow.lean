@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AutomorphicArithmetic.CyclotomicBounds.ZmodTwoQuadraticNeZero
+import Development.AutomorphicArithmetic.CyclotomicBounds.Bundle0002
 import Formalism.SharpRestriction.LevelLetterCocycles.TwGood
 import Formalism.FrobeniusOrbits.HostCorollaries
-import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.GoodPairSystems
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ValuationComapLtOne
-import Development.AbelianVarietyTheory.Counterexamples.NonGaloisSurvey.NotGoodOfNoData
+import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0013
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0205
+import Development.AbelianVarietyTheory.Counterexamples.NonGaloisSurvey.Bundle0002
 
 noncomputable section
 

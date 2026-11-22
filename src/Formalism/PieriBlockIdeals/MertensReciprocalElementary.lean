@@ -1,5 +1,5 @@
-import Formalism.PieriBlockIdeals.Statement
-import Formalism.PieriBlockIdeals.ContentDistanceBounds
+import Formalism.PieriBlockIdeals.Bundle0001
+import Formalism.PieriBlockIdeals.Bundle0002
 
 noncomputable section
 

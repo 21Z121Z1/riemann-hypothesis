@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CanonicalOfAbelianDeRham
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0008
 
 set_option autoImplicit false
 

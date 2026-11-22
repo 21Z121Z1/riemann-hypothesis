@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.GlobalFields.Artin.Brauer
-import GroundTheory.GlobalFields.Artin.OneDimExistence
-import GroundTheory.GlobalFields.TateThesis.FiniteOrderParams
+import GroundTheory.GlobalFields.Artin.Bundle0005
+import GroundTheory.GlobalFields.TateThesis.Bundle0006
 set_option maxSynthPendingDepth 1
 
 noncomputable section

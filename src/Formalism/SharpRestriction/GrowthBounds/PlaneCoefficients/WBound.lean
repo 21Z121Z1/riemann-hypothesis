@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.TwistedSubstitution.WordLossNonneg
+import Formalism.SharpRestriction.GrowthBounds.TwistedSubstitution.Bundle0004
 
 noncomputable section
 

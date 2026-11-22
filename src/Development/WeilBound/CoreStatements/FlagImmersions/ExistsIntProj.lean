@@ -1,6 +1,6 @@
-import Development.WeilBound.CoreStatements.FlagImmersions.FibSandwich
-import Development.WeilBound.CoreStatements.HodgeTatePoints.GhModel
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DifferentGeneratorDualIntegral
+import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0014
+import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0051
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0013
 
 set_option backward.isDefEq.respectTransparency false
 set_option linter.unusedSectionVars false

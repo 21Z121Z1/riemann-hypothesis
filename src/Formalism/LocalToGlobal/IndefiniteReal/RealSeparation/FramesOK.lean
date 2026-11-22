@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.NormalFrame0
+import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.Bundle0002
 import Formalism.LocalToGlobal.IndefiniteReal.ZeroPartEigenvalueConvention
 
 noncomputable section

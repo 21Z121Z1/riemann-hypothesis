@@ -1,4 +1,4 @@
-import Development.WeilBound.CoreStatements.LocalThetaKernels.LocpairRep
+import Development.WeilBound.CoreStatements.LocalThetaKernels.Bundle0003
 
 noncomputable section
 

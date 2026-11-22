@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QActMSubAlgebraMap
-import Development.AbelianVarietyTheory.Definitions.Divisors.KottwitzDimSignatureOneOne
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0096
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0059
 
 open Module GlobalTheory.HTRho
 

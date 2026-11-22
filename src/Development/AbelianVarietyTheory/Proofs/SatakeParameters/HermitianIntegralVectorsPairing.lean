@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SelfDualOne
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DvdPowZeroIff
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.EqZeroOfForallDvdPow
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MulSelfEqOneIffOfLinearOrderedCommGroupWithZero
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.WittFreeTuplesFin
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0149
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0132
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0152
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0127
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0023
 open Matrix
 
 noncomputable section

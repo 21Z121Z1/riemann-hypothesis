@@ -1,7 +1,6 @@
 import Formalism.LocalToGlobal.Divisibility.Numbers
 import Formalism.LocalRingCardinality.DataForced
-import Formalism.LocalRingCardinality.DataKap
-import Formalism.LocalRingCardinality.DataErr
+import Formalism.LocalRingCardinality.Bundle0004
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleWeightMiddleEntries
 import Formalism.LocalRingCardinality.HostCls

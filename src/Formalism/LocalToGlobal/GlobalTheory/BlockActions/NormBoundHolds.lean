@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.NormBoundOfInjectiveStable
-import Formalism.LocalToGlobal.GlobalTheory.BlockActions.SymmetricClausesOfFormsNorm
+import Formalism.LocalToGlobal.GlobalTheory.BlockActions.Bundle0013
 
 namespace Formalism.L2.GlobalTheoryTheory.Br
 

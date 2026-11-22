@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.PAdicHodge.ACrisLog
-import GroundTheory.PAdicHodge.LogPowSeries
+import GroundTheory.PAdicHodge.Bundle0001
 set_option maxSynthPendingDepth 1
 
 noncomputable section

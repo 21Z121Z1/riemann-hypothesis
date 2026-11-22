@@ -1,9 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexNeZeroOfIsOpen
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexProd
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EquivOfISupRange
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TrOnMapOfInjective
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0049
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1204
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0126
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1248
 
 noncomputable section
 

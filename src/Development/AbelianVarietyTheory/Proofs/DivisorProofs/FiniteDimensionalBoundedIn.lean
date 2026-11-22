@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormDegreeBoundPolynomialCombination
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraMapNormMemSpan
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLowDegreeCoordsModMul
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDegLtTwoCorrectionSimple
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0034
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0003
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0138
 
 open Polynomial
 

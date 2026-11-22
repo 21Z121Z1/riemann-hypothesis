@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.GradedWeylDivisibility.FinalC
 import Formalism.BranchSandwichDivisors.StatementW
-import Formalism.BranchSandwichDivisors.BranchIsometryProofs.MemBranchRangeOfDefectEq
+import Formalism.BranchSandwichDivisors.BranchIsometryProofs.Bundle0001
 
 open MvPolynomial Formalism.GradedWeylDivisibility
 

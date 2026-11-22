@@ -1,6 +1,6 @@
-import Formalism.LocalRingCardinality.SpanPowerMembership.NZLevB
+import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0009
 import Formalism.LocalToGlobal.GroupLattices.FockModels.Cartan
-import Formalism.LocalToGlobal.GroupLattices.FockModels.WeylDim
+import Formalism.LocalToGlobal.GroupLattices.FockModels.Bundle0002
 import Formalism.LocalToGlobal.GroupLattices.FockModels.SpanTopOf
 import Formalism.SharpRestriction.GrowthBounds.DataG
 

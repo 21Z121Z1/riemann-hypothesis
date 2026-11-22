@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.CmpOfMemX
+import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.Bundle0007
 import Formalism.SharpRestriction.LevelLetterCocycles.LatticeMembershipPolynomialGamma
 import Formalism.SharpRestriction.LevelLetterCocycles.KillerLevCoreOf
 

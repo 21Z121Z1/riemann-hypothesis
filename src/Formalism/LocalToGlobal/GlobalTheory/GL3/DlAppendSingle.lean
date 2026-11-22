@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.GlobalTheory.GL3.IntegralityIffAwayAtD
+import Formalism.LocalToGlobal.GlobalTheory.GL3.Bundle0001
 
 noncomputable section
 

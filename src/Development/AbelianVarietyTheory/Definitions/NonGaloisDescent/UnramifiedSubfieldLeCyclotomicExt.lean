@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NotFullBot
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0003
 
 noncomputable section
 

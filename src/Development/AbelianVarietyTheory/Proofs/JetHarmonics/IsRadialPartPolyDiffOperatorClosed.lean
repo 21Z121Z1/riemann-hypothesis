@@ -1,9 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Jets.BasicLiftAll
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.JdPolyOKPolynomialOperators
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PolyOpExistsComposition
+import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0003
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0072
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LiftClosedUnderOperations
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.LiftCapelliOperators
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0183
 
 namespace GlobalTheory.HatNF
 

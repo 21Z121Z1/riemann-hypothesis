@@ -1,9 +1,8 @@
 import Mathlib
 import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ConvZero
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.SandZero
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0004
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PeriodDiscExtensionTateElement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SeriesTransport
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0179
 
 noncomputable section
 

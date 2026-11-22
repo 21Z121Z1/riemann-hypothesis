@@ -1,5 +1,5 @@
 import Development.WeilBound.CoreStatements.HodgeTatePoints.GiResGeo
-import Development.WeilBound.CoreStatements.HodgeTatePoints.GiResAlg
+import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0023
 import Development.WeilBound.CoreStatements.HodgeTatePoints.Twpdiv
 
 open CategoryTheory AlgebraicGeometry MonoidalCategory CartesianMonoidalCategory MonObj TensorProduct NumberField GlobalTheory GlobalTheory.PDivGroup GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.BT GlobalTheory.CompanionTheory.Ar.HT ReciprocityTheory.ChartRestriction.G.Semi

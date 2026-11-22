@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HESmulRight
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0254
 
 noncomputable section
 

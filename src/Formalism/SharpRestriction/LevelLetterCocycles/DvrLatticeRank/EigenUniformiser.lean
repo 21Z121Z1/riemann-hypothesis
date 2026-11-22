@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.DvdOfCoeffSubstXPowNeZero
+import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.Bundle0001
 
 namespace DualFramesAlt.EigenUniformiser
 

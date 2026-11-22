@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.SplitStable
-import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.MatchProd
-import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.SplitLoc
-import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.MatchOne
-import Development.AutomorphicArithmetic.Foundations.Convolution.LocalGroupAnalysis.QuotLin
+import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0010
+import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0009
+import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Bundle0001
+import Development.AutomorphicArithmetic.Foundations.Convolution.LocalGroupAnalysis.Bundle0001
 
 noncomputable section
 

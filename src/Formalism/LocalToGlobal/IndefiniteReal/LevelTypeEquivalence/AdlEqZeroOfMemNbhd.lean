@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.LocalToGlobal.GlobalTheory.GL1.CompactFixesLattice.ExistsDenOfIsCompactAdele
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.IntAdCpctOpen
+import Formalism.LocalToGlobal.GlobalTheory.GL1.CompactFixesLattice.Bundle0001
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0003
 
 noncomputable section
 

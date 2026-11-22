@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.CharZeroFunctionField
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0043
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EqOfIsometricTrivShift
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernMatrixIsForm
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSemiPosFubiniStudyPowerAddSmoothFn
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2684
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3065
 
 set_option autoImplicit false
 

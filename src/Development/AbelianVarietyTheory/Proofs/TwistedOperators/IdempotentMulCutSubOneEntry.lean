@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.SplitSumStabLattice
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitPlaceWeilRepLatticeVacuumCharacter
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilRepSchrodingerModelHalfSubstitution
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOrEqOfPlaceIdem
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0010
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0178
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0181
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0216
 
 noncomputable section
 

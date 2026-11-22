@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.LinkSFinalP
-import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.LoopRowSF
-import Formalism.SharpRestriction.SmoothDesignExistence.FirstSectionHypothesesAtFamilyConstants
+import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.Bundle0068
+import Formalism.SharpRestriction.SmoothDesignExistence.Bundle0002
 
 noncomputable section
 

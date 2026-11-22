@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.BiextensionRelation
-import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.HomotheticLatticeIntegralS2
+import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0004
 import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.CurveJetsUnitBall
 import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.EisensteinRecursion
 

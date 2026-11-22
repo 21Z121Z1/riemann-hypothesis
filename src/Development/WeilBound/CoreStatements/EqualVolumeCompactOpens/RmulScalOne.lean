@@ -1,9 +1,7 @@
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.PowEqOneOfIsIntegralOfMulComplexConjEqOneAlt
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.RootOfUnityEqOneOfSubOneMemSpan
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.MemIdealSmulTopIffForallDual
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.IdealInfSmulTopOfProjective
-import Development.WeilBound.CoreStatements.EqualVolumeCompactOpens.DiagMulVecTmul
-import Development.WeilBound.CoreStatements.EqualVolumeCompactOpens.InfSpanNeBot
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0004
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0003
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0002
+import Development.WeilBound.CoreStatements.EqualVolumeCompactOpens.Bundle0002
 
 noncomputable section
 

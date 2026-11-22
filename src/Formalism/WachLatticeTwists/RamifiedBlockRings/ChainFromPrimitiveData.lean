@@ -1,5 +1,5 @@
-import Formalism.WachLatticeTwists.RamifiedBlockRings.LocalToDisplayFree
-import Formalism.CharacterColumnKernels.StatementBC
+import Formalism.WachLatticeTwists.RamifiedBlockRings.Bundle0001
+import Formalism.CharacterColumnKernels.Bundle0003
 
 open Finset Classical
 

@@ -1,9 +1,9 @@
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.TowerCodimensionTwo
 import Development.WeilBound.ThetaLifts.ConeHypotheses.PureEqPureA
 import Development.WeilBound.ThetaLifts.SmallCones.ThetaUniq
-import Development.WeilBound.ThetaLifts.CartanFactorisation.Unimod
-import Development.WeilBound.ThetaLifts.CartanFactorisation.IntegrableOnRight
-import Development.WeilBound.ThetaLifts.TowerModels.LeviAd
+import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0004
+import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0001
+import Development.WeilBound.ThetaLifts.TowerModels.Bundle0003
 
 noncomputable section
 

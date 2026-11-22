@@ -1,7 +1,7 @@
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.IntegralModuleBases.IntegralModuleBasisStatement
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.IntegralModuleBases.NormGsoSqLeTwoPowMulOfValEqAdd
 import ReciprocityTheory.ReducedBases.ExistsRedOf
-import ReciprocityTheory.ReducedBases.PrefixProdGeOne
+import ReciprocityTheory.ReducedBases.Bundle0003
 
 noncomputable section
 

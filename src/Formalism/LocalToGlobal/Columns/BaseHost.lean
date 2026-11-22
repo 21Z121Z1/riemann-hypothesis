@@ -1,7 +1,6 @@
 import Formalism.LocalToGlobal.Columns.AbelianHostFieldConditions
 import Formalism.LocalToGlobal.Divisibility.CoeffLemmas
-import Formalism.LocalToGlobal.UnitaryNorms.RealPl
-import Formalism.LocalToGlobal.UnitaryNorms.ExistsCycAct
+import Formalism.LocalToGlobal.UnitaryNorms.Bundle0004
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Inertia
 import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleLayerExistsGenerators
 

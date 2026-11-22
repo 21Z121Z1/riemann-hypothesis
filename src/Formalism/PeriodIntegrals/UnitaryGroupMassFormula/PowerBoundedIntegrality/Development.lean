@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.PowBddInt
+import Formalism.PeriodIntegrals.Bundle0008
 
 namespace PI.PowBddIntWork
 

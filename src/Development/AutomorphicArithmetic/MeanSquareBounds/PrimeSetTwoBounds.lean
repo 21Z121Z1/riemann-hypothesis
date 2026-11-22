@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.GL3MeanSquares.SecondEstimateOfIntervalHypothesis
-import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.MeanSquareHypWIff
-import Formalism.PeriodIntegrals.ExplicitFormula
+import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.Bundle0010
+import Formalism.PeriodIntegrals.Bundle0003
 
 open Finset
 open Formalism.HermitianLattices.ZeroFreeRegionGL2

@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.UnipotentAdelicQuotients.ThmBInSatake
+import Formalism.UnipotentAdelicQuotients.Bundle0002
 import GroundTheory.IdeleRoots.TorusPowers.SatakeBoundReps
 import GroundTheory.GlobalFields.LocalFieldAtPlace
 import GroundTheory.GlobalFields.KummerTheory.LocalIndexAtPlace

@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsComponentResFibreSum
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.AnResBridgeSheet
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0110
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0045
 import GroundTheory.HeightsAndTheta.Heights.Intersections.FourierIntegralBound
 set_option maxSynthPendingDepth 1
 

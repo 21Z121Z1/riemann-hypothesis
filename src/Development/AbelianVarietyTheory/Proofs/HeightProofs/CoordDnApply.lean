@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.StdCharIffInt
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0033
 
 noncomputable section
 

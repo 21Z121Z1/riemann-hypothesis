@@ -1,6 +1,6 @@
-import Formalism.HarderNarasimhan.StatementFrameF
-import Formalism.SizeWindowBrackets.TraceSquareAndDiagBounds
-import Formalism.SizeWindowBrackets.SlopeExcessBoundExponentZero
+import Formalism.HarderNarasimhan.Bundle0002
+import Formalism.SizeWindowBrackets.Bundle0001
+import Formalism.SizeWindowBrackets.Bundle0002
 import Formalism.SizeWindowBrackets.SlopesHypothesisFinitePlaces
 
 open Module NumberField Matrix

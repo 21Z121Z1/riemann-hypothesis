@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.WeightedPrimeSumBound
+import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0006
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.QCorePf
 
 namespace Formalism.L2.Pj.QAt

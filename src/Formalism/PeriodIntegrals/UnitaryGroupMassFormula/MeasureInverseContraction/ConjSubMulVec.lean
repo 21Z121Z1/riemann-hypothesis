@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.NMeasInv
+import Formalism.PeriodIntegrals.Bundle0027
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MeasureInverseContraction.AmatInvMul
 
 noncomputable section

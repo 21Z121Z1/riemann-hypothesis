@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConvUAbsU
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1217
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeylRepInvMulDiag
 open GlobalTheory.SplitWeil GlobalTheory.SmGL GlobalTheory.WeylCell Formalism.UG
 

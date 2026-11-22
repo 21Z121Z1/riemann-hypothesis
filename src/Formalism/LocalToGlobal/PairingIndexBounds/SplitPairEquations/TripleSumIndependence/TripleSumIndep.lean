@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.SelfDualCovolume
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.RepsProd
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0056
 
 noncomputable section
 open scoped BigOperators ComplexConjugate

@@ -1,12 +1,12 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.LabExt
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0081
 import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
-import Development.AbelianVarietyTheory.Definitions.Uniformization.SeriesFrame
+import Development.AbelianVarietyTheory.Definitions.Uniformization.Bundle0002
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsIsFibreIso
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IsExtensionPullOver
-import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsUniqueSecPull
+import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0028
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UnivIdentity
-import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.GlobalFnsHolds
+import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0011
 
 noncomputable section
 

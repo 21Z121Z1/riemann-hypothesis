@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FieldTies
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DsigEq
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0036
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0030
 import Development.AbelianVarietyTheory.Definitions.HeightFunctions.IntUnit
-import Formalism.LocalToGlobal.ProjectiveLattices.FullXi
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0044
 import Formalism.LocalToGlobal.IndefiniteReal.LinksDefs
-import Formalism.SharpRestriction.PageFix
+import Formalism.SharpRestriction.Bundle0002
 
 set_option autoImplicit false
 

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.PublishedTheorems.PoincareDeRhamDuality.DeRhamPerfectPairing.PoincareDeRhamDualityOfCube
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StructureSheafComparisonInjective
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechDeRhamComparisonBijectiveCupSmooth
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0529
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2371
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianHodgeDeRham
 
 set_option autoImplicit false

@@ -1,8 +1,8 @@
 import Development.WeilBound.CoreStatements.VolumeEquality.PiecesOf
-import Development.WeilBound.CoreStatements.VolumeEquality.HolNull
-import Development.WeilBound.CoreStatements.VolumeEquality.ChartMeets
+import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0004
+import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0003
 import Development.WeilBound.CoreStatements.VolumeEquality.CoverRoots
-import Development.WeilBound.CoreStatements.VolumeEquality.LocInj
+import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0005
 import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnif
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsSheetCover
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods

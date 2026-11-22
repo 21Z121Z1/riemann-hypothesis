@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.FormalGroupReduction
-import GroundTheory.PowerSubgroups.CountableNeighbourhoods.SlopeVcCountableNeighbourhoods
+import GroundTheory.PowerSubgroups.CountableNeighbourhoods.Bundle0002
 
 namespace GroundTheory.Arith.Abelian
 

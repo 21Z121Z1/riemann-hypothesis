@@ -1,9 +1,9 @@
 import Formalism.SharpRestriction.GlobalSchurBounds.ProductFirstZerothParts
 import Formalism.LogVandermondeBounds.HookGammaAmgmMultinomialBounds
-import Formalism.GL3MeanSquares.PrimeOrderRamificationResults
+import Formalism.GL3MeanSquares.Bundle0002
 import Formalism.BranchSandwichDivisors.BranchIsometryProofs.OrthSum
 import Formalism.LocalRingCardinality.Lemmas
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Pc
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0085
 
 noncomputable section
 

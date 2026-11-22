@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IntegralExtensionAlgClosed
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0037
 
 private theorem UpperTheory.exists_ringHom_extension_of_integral (R S K : Type) [CommRing R] [CommRing S] [Algebra R S]
     [Algebra.IsIntegral R S] [Field K] [IsAlgClosed K]

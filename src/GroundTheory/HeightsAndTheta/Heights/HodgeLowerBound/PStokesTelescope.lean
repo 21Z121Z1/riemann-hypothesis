@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsStokesStep
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.ATeleSt
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0026
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.Bundle0006
 set_option maxSynthPendingDepth 1
 
 noncomputable section

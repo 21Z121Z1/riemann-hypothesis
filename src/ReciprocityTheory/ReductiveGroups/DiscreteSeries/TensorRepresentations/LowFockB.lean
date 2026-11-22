@@ -1,5 +1,5 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.LowFockA
-import Formalism.RealPlaceAnalysis.StatementKT
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.Bundle0005
+import Formalism.RealPlaceAnalysis.Bundle0002
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import GroundTheory.LocalFields.PrincipalUnitsRank
-import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.FiniteZpModuleTorsionFreeSplitting
+import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0001
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.ExistsPrincipalUnitsRetractionLocalField
 
 open GroundTheory.LocalField ValuativeRel Module Topology

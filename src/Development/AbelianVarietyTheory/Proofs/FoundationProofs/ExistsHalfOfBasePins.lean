@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.OneMapT
 import Formalism.LocalToGlobal.ProjectiveLattices.LevelPb
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GSplit
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0011
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.TateCohomology.TateUnique
-import GroundTheory.TateCohomology.TateTransport
-import GroundTheory.TateCohomology.ResCoresZero
+import GroundTheory.TateCohomology.Bundle0009
+import GroundTheory.TateCohomology.Bundle0010
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.GroupCoh

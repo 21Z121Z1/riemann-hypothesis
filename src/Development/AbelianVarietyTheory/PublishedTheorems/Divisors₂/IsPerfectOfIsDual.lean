@@ -1,7 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.PoincareDeRhamDuality
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsCrystalPairing
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CommAlgFunctorCohomologyTwoEqZeroOfIsInitial
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0029
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0010
 
 set_option autoImplicit false
 

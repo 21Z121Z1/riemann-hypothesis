@@ -1,14 +1,14 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.RegConst
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaAtMove
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0064
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3095
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TupleMatch
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GridFramesDoublingPolynomialExistsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareTowerFrameCompat
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHaarSmul
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2505
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3601
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3496
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareStandingTripleThetaSecond
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.XiAwayIm
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowClose
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsRestRest
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2163
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2154
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2155
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GlResidueSurjective
 
 section

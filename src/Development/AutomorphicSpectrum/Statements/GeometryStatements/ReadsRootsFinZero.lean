@@ -1,9 +1,9 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.CrudeVal
-import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0017
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0003
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ConjEmbRtOfNe
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.OverLaUnique
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IntegralClosureHeightEqOneOfLiesOver
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0010
 
 noncomputable section
 

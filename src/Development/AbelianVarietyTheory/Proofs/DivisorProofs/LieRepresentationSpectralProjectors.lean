@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.Uniformised
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0034
 
 open NumberField Polynomial
 open scoped Matrix

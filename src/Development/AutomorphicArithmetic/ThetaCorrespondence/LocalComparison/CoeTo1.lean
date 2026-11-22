@@ -1,5 +1,4 @@
-import Development.AutomorphicArithmetic.ThetaCorrespondence.LocalComparison.LocTied6
-import Development.AutomorphicArithmetic.ThetaCorrespondence.LocalComparison.LocTiedOf6
+import Development.AutomorphicArithmetic.ThetaCorrespondence.LocalComparison.Bundle0001
 
 noncomputable section
 

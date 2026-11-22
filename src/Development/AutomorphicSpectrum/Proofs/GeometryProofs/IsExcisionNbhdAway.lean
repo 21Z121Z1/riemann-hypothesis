@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.InjectiveOfIsCptGen
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0003
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0002
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StdSmoothMvPolynomial
 
 set_option backward.isDefEq.respectTransparency false

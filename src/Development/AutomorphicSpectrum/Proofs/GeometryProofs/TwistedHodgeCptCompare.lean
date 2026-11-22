@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.TwTan
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0007
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GlueApplyOfNotInFibre
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterNamed
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackCorrespondence
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackMap
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0013
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0091
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0058
 
 noncomputable section
 

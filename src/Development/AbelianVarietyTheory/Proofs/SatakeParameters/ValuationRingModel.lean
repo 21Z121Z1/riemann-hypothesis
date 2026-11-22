@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.HeckeCharEqOfLAdicRealisation
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsAlgClosedResidueField
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0008
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0005
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ClosedBallValuationSubringToSubring
 open Formalism.BasicNotions Formalism.ConjugateSelfDual Formalism.MainNotions Formalism.MainNotions.N Polynomial NumberField IsDedekindDomain ReciprocityTheory.Gal GlobalTheory.StringRepresentationDecomposition
 

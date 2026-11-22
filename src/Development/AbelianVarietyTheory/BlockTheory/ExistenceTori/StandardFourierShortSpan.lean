@@ -1,8 +1,7 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.ThProps
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
 import Formalism.LocalToGlobal.ProjectiveLattices.ThGerm
-import Formalism.LocalToGlobal.ProjectiveLattices.CuspFree
-import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.ShortRuleRepresentationChange
+import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.Bundle0007
 
 set_option autoImplicit false
 

@@ -1,7 +1,7 @@
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BiholomorphicLiftSystem
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2371
 import Development.AutomorphicArithmetic.SpecialMaps.QuotObjDefs
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftSystemRealStructure
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorExistsTypeTjPIsogeny
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3682
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.UPel.HT GlobalTheory.UPel.HT.Hecke GlobalTheory.UPel.HT.ES GlobalTheory.IwLevel UpperTheory.QO
 

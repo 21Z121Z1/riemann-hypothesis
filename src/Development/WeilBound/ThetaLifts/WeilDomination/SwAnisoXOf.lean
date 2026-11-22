@@ -1,4 +1,4 @@
-import Development.WeilBound.ThetaLifts.LatticeBasics.SiegelWeilAnisoOf
+import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0029
 
 namespace PositivityTheory.ThKClose
 

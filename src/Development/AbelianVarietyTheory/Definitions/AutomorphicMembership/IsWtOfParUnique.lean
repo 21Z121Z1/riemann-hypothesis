@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.BrgStdR
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0021
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.EventuallyCongOne
 import Formalism.LocalToGlobal.Columns.BaseLemmas
 import Formalism.LocalToGlobal.Columns.RowFormsLemmas

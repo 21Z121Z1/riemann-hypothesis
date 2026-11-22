@@ -1,7 +1,7 @@
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlob
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.InclusionInjective
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0002
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.FiniteAdeleRingNontrivial
-import Formalism.LocalToGlobal.HermitianForms.TiedTwGen
+import Formalism.LocalToGlobal.HermitianForms.Bundle0005
 
 noncomputable section
 

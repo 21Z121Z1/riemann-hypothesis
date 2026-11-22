@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LtSeries
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPlaceEmb
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0194
 import GroundTheory.LocalFields.KroneckerWeber
 import GroundTheory.LocalFields.LubinTateLimitGalois
 import GroundTheory.LocalFields.MaximalUnramified

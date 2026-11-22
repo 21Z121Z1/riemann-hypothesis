@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableConv
+import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.Bundle0001
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableCartan
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableLaplacian
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableParabolic

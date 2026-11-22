@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Dchart
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnipotentRadicalBlockUnitriangularFlag
-import Formalism.FormalDegreeBessel.FinalG
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0133
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0183
+import Formalism.FormalDegreeBessel.Bundle0002
 
 open MeasureTheory Matrix Filter Topology Formalism.QuantumDeterminants Formalism.MainNotions.S GlobalTheory.SgInf GlobalTheory.Amp GlobalTheory.CellDens
 open scoped InnerProductSpace ENNReal Nat

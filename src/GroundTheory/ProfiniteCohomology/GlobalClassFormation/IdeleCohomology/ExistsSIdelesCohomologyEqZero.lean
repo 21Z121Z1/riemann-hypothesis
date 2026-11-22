@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.GlobalFields.IdeleGroups.SIdeleGroups.Galois
 import GroundTheory.GlobalFields.IdeleGroups.GaloisOnAdeles.Action
-import GroundTheory.ProfiniteCohomology.ColimitUnion
+import GroundTheory.ProfiniteCohomology.Bundle0004
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.ProfCoh

@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.OddDualWeyl
+import Formalism.PeriodIntegrals.Bundle0007
 
 open MvPolynomial Matrix
 

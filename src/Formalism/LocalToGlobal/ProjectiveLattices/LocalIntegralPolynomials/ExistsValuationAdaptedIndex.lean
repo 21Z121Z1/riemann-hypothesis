@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.ProjectiveLattices.LocalIntegralPolynomials.LocStructSt
-import ReciprocityTheory.SemistableReduction.AlgAll
+import ReciprocityTheory.SemistableReduction.Bundle0023
 
 noncomputable section
 

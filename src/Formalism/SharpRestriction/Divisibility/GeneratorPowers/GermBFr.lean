@@ -1,7 +1,7 @@
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermCut
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermDJet
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0005
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0008
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermBGen
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.LBLocalC
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0003
 
 set_option autoImplicit false
 

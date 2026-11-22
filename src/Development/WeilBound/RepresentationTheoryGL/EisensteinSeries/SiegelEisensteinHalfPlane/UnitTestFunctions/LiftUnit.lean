@@ -1,6 +1,6 @@
 import Development.WeilBound.RepresentationTheoryGL.EisensteinSeries.SiegelEisensteinContinuation.IsEpCont
-import GroundTheory.GlobalFields.TateThesis.EulerFactors
-import GroundTheory.GlobalFields.TateThesis.FiniteOrderParams
+import GroundTheory.GlobalFields.TateThesis.Bundle0010
+import GroundTheory.GlobalFields.TateThesis.Bundle0006
 
 noncomputable section
 

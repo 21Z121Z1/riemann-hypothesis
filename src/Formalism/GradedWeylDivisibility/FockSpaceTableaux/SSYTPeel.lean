@@ -1,5 +1,5 @@
-import Formalism.GradedWeylDivisibility.StatementC
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LCssytLemmas
+import Formalism.GradedWeylDivisibility.Bundle0001
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0005
 
 open MvPolynomial Finset
 

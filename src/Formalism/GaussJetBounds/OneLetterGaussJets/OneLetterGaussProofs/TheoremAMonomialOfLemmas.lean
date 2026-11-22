@@ -1,6 +1,6 @@
-import Formalism.GaussJetBounds.OneLetterGaussJets.StatementA
+import Formalism.GaussJetBounds.OneLetterGaussJets.Bundle0001
 import Formalism.GaussJetBounds.OneLetterGaussJets.StatementJ
-import Formalism.GaussJetBounds.GaussJetProofs.TheoremAOneMonomialLogLoss
+import Formalism.GaussJetBounds.GaussJetProofs.Bundle0006
 
 noncomputable section
 open scoped BigOperators

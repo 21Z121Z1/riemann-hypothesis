@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogDerivLFunctionStrip
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ImportsMore
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0016
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0015
 open Complex DirichletCharacter ArithmeticFunction MeasureTheory Filter Topology
 
 namespace GlobalTheory.GoodHeight

@@ -1,6 +1,6 @@
 import Formalism.GaussJetBounds.OneLetterGaussJets.StatementG
-import Formalism.GaussJetBounds.OneLetterGaussJets.StatementF
-import Formalism.GaussJetBounds.OneLetterGaussJets.StatementA
+import Formalism.GaussJetBounds.OneLetterGaussJets.Bundle0002
+import Formalism.GaussJetBounds.OneLetterGaussJets.Bundle0001
 import Formalism.GaussJetBounds.OneLetterGaussJets.OneLetterGaussProofs.CapLeOddShiftBound
 import Formalism.GaussJetBounds.ThmAEntryFull
 

@@ -1,8 +1,8 @@
-import Development.WeilBound.CoreStatements.ProjectiveValuations.IsIsoOfIntegral
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqSpMapEv
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowerUnitriangularMulUpperTriangularOfIsUnitLeadStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRowPermLeadingMinorsNotMemStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagCellPointImageAndFrameStatement
+import Development.WeilBound.CoreStatements.ProjectiveValuations.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2225
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0173
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0146
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2336
 
 noncomputable section
 

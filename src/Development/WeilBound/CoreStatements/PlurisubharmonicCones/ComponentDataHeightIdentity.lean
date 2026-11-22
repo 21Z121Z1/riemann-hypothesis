@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsUniqueLeftBasisCoordsAdicCompletion
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptMultihomogForm
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticePatchAtPrimesStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptAwayFromPrimesStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeGlueOverPrimesStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0289
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0054
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0118
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0025
 
 open AlgebraicGeometry CategoryTheory NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi

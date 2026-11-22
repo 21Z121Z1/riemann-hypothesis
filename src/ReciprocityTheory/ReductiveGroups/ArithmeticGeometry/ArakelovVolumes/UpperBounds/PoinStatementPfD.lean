@@ -1,5 +1,5 @@
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.PoinStatementPfC
-import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.MeasurableEmbeddingRotAbout
+import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.Bundle0003
 
 namespace ReciprocityTheory.ChartRestriction.G.AR.Up.PoinPf
 

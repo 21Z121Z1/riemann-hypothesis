@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualStackedExcChart
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualStackedExcResidueExists
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0045
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0050
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

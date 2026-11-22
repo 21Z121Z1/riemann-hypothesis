@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SesquilinearRowSplitting.CoordStep
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TorsionFreeGenerators.ProjectiveReduction
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TorsionFreeGenerators.Bundle0001
 
 open NumberField
 

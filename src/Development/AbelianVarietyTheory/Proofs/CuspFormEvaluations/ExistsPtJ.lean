@@ -1,8 +1,8 @@
 import Mathlib
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.IntChartCut
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsLieBasisBaseChange
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0005
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0010
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsIsUnivChartOfIsLieBasis
-import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.FormalEvSecondPointOfXZero
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0004
 
 noncomputable section
 

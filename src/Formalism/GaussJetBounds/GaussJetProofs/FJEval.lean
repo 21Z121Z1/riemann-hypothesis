@@ -1,4 +1,4 @@
-import Formalism.GaussJetBounds.FrameJetEval
+import Formalism.GaussJetBounds.Bundle0006
 import Formalism.GaussJetBounds.GaussJetProofs.ConstantCoeffAevalLinP
 
 noncomputable section

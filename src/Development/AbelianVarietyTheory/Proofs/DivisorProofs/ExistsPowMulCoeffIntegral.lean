@@ -1,16 +1,16 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.KerDatTuple
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0045
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0014
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMapOfOfExtends
-import Development.AbelianVarietyTheory.Definitions.Divisors.GenReads
-import Formalism.LocalToGlobal.IndefiniteReal.RhoGeo
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0042
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0028
 import Formalism.LocalToGlobal.IndefiniteReal.FWExist
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsDeltaDelAtOwnAt
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsMulAddEqOneOfNotMem
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0095
 import Formalism.LocalToGlobal.Columns.CoefficientsModP.BaseCh
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SplitOffBadOfSuppSplitOff
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.EqZeroOfFischSelf
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.FFVMap
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0002
 import Formalism.LocalToGlobal.Columns.StdLatUnimodular
 
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.DIV.Cons Formalism.L2.Pj Formalism.L2.Indef Formalism.L2.Indef.Tree

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsSumOfSelf
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0024
 
 noncomputable section
 

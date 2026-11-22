@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsHeckeMapLevRefl
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClassifyingMapSymplecticLevelEquivariant
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHarrisTaylorObjectPullbackBis
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2455
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0894
 
 set_option autoImplicit false
 

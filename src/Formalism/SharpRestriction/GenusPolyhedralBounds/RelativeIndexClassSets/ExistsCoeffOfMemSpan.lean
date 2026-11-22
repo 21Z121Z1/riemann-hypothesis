@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.IntegralFormsEqSpan
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.HasseJidPow
+import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0008
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0044
 
 noncomputable section
 

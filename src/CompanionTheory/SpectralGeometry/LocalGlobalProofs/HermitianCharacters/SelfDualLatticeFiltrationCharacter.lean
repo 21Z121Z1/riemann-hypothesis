@@ -1,8 +1,7 @@
 import Mathlib
-import Formalism.UnipotentAdelicQuotients.SiegelWeilUnitaryConvergent
-import Formalism.UnipotentAdelicQuotients.StdAdditiveCharExists
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FiniteAdeleStrongApproximationModNat
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsOpenNsmulAdelicCompletionOfVectorSet
+import Formalism.UnipotentAdelicQuotients.Bundle0003
+import Formalism.UnipotentAdelicQuotients.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0008
 
 open NumberField IsDedekindDomain MeasureTheory Topology HeckeCharacterZeroLocus.SiegelWeilU
 open scoped TensorProduct RestrictedProduct nonZeroDivisors

@@ -1,6 +1,6 @@
 import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.HermitianForms.TransversalSums.ContinuousBlkAtApply
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MatrixIntegralOfAddCharTraceDual
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0008
 
 noncomputable section
 

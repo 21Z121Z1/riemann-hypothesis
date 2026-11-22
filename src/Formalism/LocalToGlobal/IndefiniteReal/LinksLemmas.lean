@@ -1,9 +1,9 @@
-import Formalism.LocalToGlobal.IndefiniteReal.ConcretePkgSpec
-import Formalism.LocalToGlobal.IndefiniteReal.CxCore
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0023
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0018
 import Formalism.LocalToGlobal.IndefiniteReal.LiftGoodPartComplexEqRange
 import Formalism.LocalToGlobal.IndefiniteReal.BridgeLemmas
-import Formalism.LocalToGlobal.IndefiniteReal.ArithLemmas
-import Formalism.LocalRingCardinality.HeightBoundGeFourthPowerRank
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0011
+import Formalism.LocalRingCardinality.Bundle0005
 
 noncomputable section
 

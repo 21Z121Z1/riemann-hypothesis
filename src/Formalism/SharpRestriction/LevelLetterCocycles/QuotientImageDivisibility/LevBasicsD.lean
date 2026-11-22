@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.LevBasicsOf
+import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.Bundle0015
 import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.IsAdicCompleteOfLe
 
 noncomputable section

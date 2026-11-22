@@ -1,4 +1,4 @@
-import Development.AbelianVarietyTheory.Definitions.Foundations.NotZeroChi
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0020
 
 noncomputable section
 

@@ -1,6 +1,6 @@
-import Formalism.GradedWeylDivisibility.StatementB
+import Formalism.GradedWeylDivisibility.Bundle0001
 import Formalism.GradedWeylDivisibility.DualWeylDominanceOf
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LHwrowLemmas
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0001
 
 open MvPolynomial
 

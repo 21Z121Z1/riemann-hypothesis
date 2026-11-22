@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsOfLayers
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCrysLatOfTrivial
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0146
 
 noncomputable section
 

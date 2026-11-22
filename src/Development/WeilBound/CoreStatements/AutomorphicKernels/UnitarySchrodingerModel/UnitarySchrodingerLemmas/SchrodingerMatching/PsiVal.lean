@@ -1,7 +1,7 @@
 import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.UnitarySchrodingerLemmas.SchrodingerMatching.PsiPlaces
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VacOfMemSchwartzA
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmTypeFromConjugateComplement
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.RealAdelesCmFieldEquivComplexCmType
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1840
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2219
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0076
 
 noncomputable section
 

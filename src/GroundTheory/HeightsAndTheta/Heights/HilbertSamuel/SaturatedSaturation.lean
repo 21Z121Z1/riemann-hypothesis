@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsLattice
-import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.Assembly
+import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.Bundle0010
 import GroundTheory.HeightsAndTheta.Heights.Slopes.PRelSlopeQuot
 set_option maxSynthPendingDepth 1
 

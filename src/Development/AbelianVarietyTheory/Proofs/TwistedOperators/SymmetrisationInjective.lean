@@ -1,12 +1,11 @@
 import Mathlib
 import Formalism.SharpRestriction.Divisibility.SchurIrreducible
-import Formalism.LocalToGlobal.BesselHermitianTheta.DefsReal
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SymbolCongr
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0105
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DegreeSingleAdd
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ProdXEqMonomial
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UgMemSpanListProd
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ProdPLinIsHomogeneous
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SymmetrisationEquivariant
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0109
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0108
 
 open Formalism.BasicNotions.TH Formalism.MainNotions.SchurIrreducible MvPolynomial TensorProduct
 

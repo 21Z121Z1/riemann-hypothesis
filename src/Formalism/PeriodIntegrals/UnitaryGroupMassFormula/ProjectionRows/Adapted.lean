@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProjectionRows.AsmDual
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProjectionRows.Bundle0001
 
 noncomputable section
 

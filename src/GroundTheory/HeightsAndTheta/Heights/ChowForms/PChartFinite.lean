@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.StatementsSectionOrder
-import GroundTheory.HeightsAndTheta.Heights.ChowForms.PFGNullstellensatz
-import GroundTheory.HeightsAndTheta.Heights.ChowForms.PChowFormMultiHomog
+import GroundTheory.HeightsAndTheta.Heights.ChowForms.Bundle0003
+import GroundTheory.HeightsAndTheta.Heights.ChowForms.Bundle0007
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0009
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.HarishChandraFormulaStatement
 
 set_option backward.isDefEq.respectTransparency false

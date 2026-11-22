@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.KurComplete
-import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.StatementE
+import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0002
 import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.FlowDouble
 import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.FinalB
 

@@ -1,8 +1,8 @@
 import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TieAll
 import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.GTiedFOfIsRecCEv
-import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.CompanionOfBaseTied
-import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TieTrC
-import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TiePsiC
+import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0004
+import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0009
+import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0008
 
 noncomputable section
 

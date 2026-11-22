@@ -1,6 +1,6 @@
 import Formalism.GaussJetBounds.GaussJetProofs.OneGauss
-import Formalism.GaussJetBounds.GaussJetProofs.CoefficientBoundMembership
-import Formalism.GaussJetBounds.GaussJetProofs.TheoremAMatrixEntries
+import Formalism.GaussJetBounds.GaussJetProofs.Bundle0004
+import Formalism.GaussJetBounds.GaussJetProofs.Bundle0008
 
 namespace Formalism.DworkPowerSeriesWeights
 

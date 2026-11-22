@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LieLatticeData
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LocallyFreeFiniteProjectiveBaseChange
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0002
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0007
 open GlobalTheory.CompanionTheory.Ar.Num
 
 namespace PositivityTheory.Xgn.KernelLatticeBaseChange

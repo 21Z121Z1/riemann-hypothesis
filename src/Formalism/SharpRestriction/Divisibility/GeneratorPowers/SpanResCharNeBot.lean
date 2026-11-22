@@ -1,7 +1,7 @@
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.RStatement
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GCorSt
-import Formalism.LocalToGlobal.ProjectiveLattices.DepRun
-import Formalism.LocalToGlobal.ProjectiveLattices.CrudeVal
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0032
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0033
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0037
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0017
 
 set_option autoImplicit false
 

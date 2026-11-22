@@ -1,8 +1,8 @@
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.CuspidalAverages.KeyThree
-import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.PsiUnrOfNotLe
+import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.Bundle0003
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfDictAd
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.LmOfLinBar
-import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfDictSec
+import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0003
 
 noncomputable section
 

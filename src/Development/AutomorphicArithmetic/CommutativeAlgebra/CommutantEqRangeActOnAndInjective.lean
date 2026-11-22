@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.ComplexUniformizationSigOne
 import Development.AutomorphicArithmetic.RealSpanData.RealData
 import Development.AutomorphicArithmetic.RealSpanData.JSpan
-import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsSumBaseChangeOfCommuteBaseChange
+import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0057
 
 set_option autoImplicit false
 

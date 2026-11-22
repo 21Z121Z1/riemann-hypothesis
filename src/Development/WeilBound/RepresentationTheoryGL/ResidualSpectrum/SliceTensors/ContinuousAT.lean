@@ -1,5 +1,5 @@
 import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.PExpFin
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpehDataUnique
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0730
 
 noncomputable section
 

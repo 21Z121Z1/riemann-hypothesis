@@ -1,8 +1,8 @@
 import Mathlib
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.RationalSections.ThmISt
-import GroundTheory.HeightsAndTheta.Heights.KernelsLattice
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsGrassHeight
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsLineDegree
+import GroundTheory.HeightsAndTheta.Heights.Bundle0001
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0017
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0027
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

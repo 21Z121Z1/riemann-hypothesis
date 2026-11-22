@@ -3,7 +3,7 @@ import Formalism.SizeWindowBrackets.ChainSlopeWindows.RiemannHypothesisOfPowerBo
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.StronglyIrreducible
 import Formalism.ThickAverageLoss.ThickAverageProofs.Balance
 import Formalism.ThickAverageLoss.ThickAverageProofs.ThickAverage
-import Formalism.ZetaNonvanishing.GzLipschitz
+import Formalism.ZetaNonvanishing.Bundle0003
 import Mathlib.NumberTheory.Chebyshev
 
 open Finset ArithmeticFunction

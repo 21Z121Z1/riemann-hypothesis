@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.ExpTri
+import Formalism.PeriodIntegrals.Bundle0003
 
 open Matrix Finset
 

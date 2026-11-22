@@ -1,8 +1,8 @@
 import Formalism.SharpRestriction.InertJacobiLevels.ExtraKer
-import Formalism.SharpRestriction.InertJacobiLevels.ResCharConj
+import Formalism.SharpRestriction.InertJacobiLevels.Bundle0003
 import Formalism.LocalRingCardinality.DataKerI
-import Formalism.LocalRingCardinality.DataNChTie
-import Formalism.LocalRingCardinality.SpanPowerMembership.ExistsHomOfBasis
+import Formalism.LocalRingCardinality.Bundle0002
+import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0006
 
 noncomputable section
 

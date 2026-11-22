@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsResAboveCover
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsNonvanishingDense
+import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0041
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0026
 set_option maxSynthPendingDepth 1
 
 noncomputable section

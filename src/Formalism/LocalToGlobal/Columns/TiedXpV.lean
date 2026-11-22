@@ -1,9 +1,6 @@
-import Formalism.LocalToGlobal.Columns.TiedXp
-import Formalism.LocalToGlobal.Columns.TiedVal
-import Formalism.LocalToGlobal.Columns.TiedValRat
+import Formalism.LocalToGlobal.Columns.Bundle0026
+import Formalism.LocalToGlobal.Columns.Bundle0028
 import Formalism.LocalToGlobal.Columns.TiedValFi
-import Formalism.LocalToGlobal.Columns.TiedValLat
-import Formalism.LocalToGlobal.Columns.TiedValNorm
 import Formalism.LocalToGlobal.Columns.BaseLemmas
 
 open NumberField IsDedekindDomain Module Matrix

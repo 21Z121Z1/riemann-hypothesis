@@ -1,7 +1,7 @@
 import Formalism.CharacterColumnKernels.StatementPsi
-import Formalism.CharacterColumnKernels.StatBlockChiOneTriv
+import Formalism.CharacterColumnKernels.Bundle0005
 import Formalism.CharacterColumnKernels.StatementGC
-import Formalism.CharacterColumnKernels.StatementNG
+import Formalism.CharacterColumnKernels.Bundle0003
 
 open Finset Classical
 

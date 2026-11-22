@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.IsUnitDetOfProductMapNeZero
-import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.MvPowerSeriesSubstConstTermsLocalAlgHomSpec
-import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsTraceEqFormMulDiagonal
+import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0037
+import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0034
 
 open IsLocalRing MvPowerSeries
 open scoped TensorProduct

@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.LevelLetterCocycles.TypePrimeCongruences
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0010
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.InSpanAdd
 
 noncomputable section

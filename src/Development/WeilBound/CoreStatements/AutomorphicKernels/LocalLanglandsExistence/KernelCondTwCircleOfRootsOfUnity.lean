@@ -1,4 +1,4 @@
-import Development.WeilBound.CoreStatements.AutomorphicKernels.LocalLanglandsExistence.LaurentMonomialEqOneOfCircle
+import Development.WeilBound.CoreStatements.AutomorphicKernels.LocalLanglandsExistence.Bundle0002
 import Development.WeilBound.CoreStatements.AutomorphicKernels.LocalLanglandsExistence.KernelCondGlob
 
 noncomputable section

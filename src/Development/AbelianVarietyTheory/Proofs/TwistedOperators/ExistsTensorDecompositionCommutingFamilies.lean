@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PiTensorSubmoduleEqTopOfAbsolutelyIrreducibleSta
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0156
 
 open scoped TensorProduct
 

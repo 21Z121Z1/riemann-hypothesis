@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.AmbientBaseHeq
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0020
 
 noncomputable section
 

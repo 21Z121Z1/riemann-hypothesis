@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.DetCharacterMemPrincipalCongruenceFixedVectors
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemChainVecsDet
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0208
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LabelEqOfSuppAdds
 
 noncomputable section

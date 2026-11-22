@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.Statements
-import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.StatementsMean
-import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.PPeriodLatticeCM
+import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.Bundle0008
+import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.Bundle0010
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.ChowlaSelberg

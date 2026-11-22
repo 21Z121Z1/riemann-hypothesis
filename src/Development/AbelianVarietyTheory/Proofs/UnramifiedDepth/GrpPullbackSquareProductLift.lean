@@ -1,6 +1,6 @@
 import Mathlib
-import ReciprocityTheory.DualLattices.TowerZeroSurjective
-import ReciprocityTheory.DualLattices.LinPairStatement
+import ReciprocityTheory.DualLattices.Bundle0026
+import ReciprocityTheory.DualLattices.Bundle0015
 import ReciprocityTheory.DualLattices.SubMemOfCompat
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.UniversalCharts.LePreimageOfNil
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.RosVal

@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.AlmostSelfdual
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.SmithZeroOne
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0012
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0005
 
 open Polynomial Matrix IsLocalRing TensorProduct
 

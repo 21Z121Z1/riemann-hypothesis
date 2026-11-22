@@ -1,14 +1,14 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.RegXInst
-import Formalism.LocalToGlobal.ProjectiveLattices.CurveLocInst
-import Formalism.LocalToGlobal.ProjectiveLattices.LocRingPf
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0041
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0049
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0047
 import Formalism.LocalToGlobal.ProjectiveLattices.TieInst
-import Formalism.LocalToGlobal.ProjectiveLattices.RealPtPf
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0045
 import Formalism.LocalToGlobal.ProjectiveLattices.PtOfSPf
-import Formalism.LocalToGlobal.ProjectiveLattices.SecPtRed
-import Formalism.LocalToGlobal.ProjectiveLattices.CompFin
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0035
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.AlgebraMapOLInjective
-import Development.AbelianVarietyTheory.Proofs.GenericRegularity.FinrankHostDivTwo
+import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0014
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.CountQAtStGenericSectionPrimes
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.AlgebraMapMemMax
 

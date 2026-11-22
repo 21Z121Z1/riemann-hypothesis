@@ -1,5 +1,5 @@
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerPairs.IsUnitDetOfMemGV
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerPairs.UtSubOneLast
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerPairs.Bundle0001
 
 open Matrix
 

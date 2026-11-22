@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.LevelLetterCocycles.RingDataOfIdempotents
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0040
 import Formalism.WachLatticeTwists.RealDisplaySplitting.GaloisTheoremThirdForms
 
 variable [hT2Core : Fact ReciprocityTheory.ChartRestriction.T2.Core]

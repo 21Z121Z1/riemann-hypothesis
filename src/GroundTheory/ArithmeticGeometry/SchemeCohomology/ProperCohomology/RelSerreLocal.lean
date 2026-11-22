@@ -1,8 +1,8 @@
 import Mathlib
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.HasExtInstances
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ProjBaseChangeEmbed
-import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.RestrictTensor
-import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.PullbackCoherent
+import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.Bundle0003
+import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.Bundle0006
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.CohFinite
 set_option maxSynthPendingDepth 1
 

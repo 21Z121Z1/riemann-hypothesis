@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.TsumTruncatedShiftLe
+import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.Bundle0001
 
 noncomputable section
 

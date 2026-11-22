@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTransp
-import Development.AbelianVarietyTheory.Proofs.GenericRegularity.FrameBorelGroupoidProperties
-import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ContinuousRmulPair
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2116
+import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0021
+import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0019
 
 set_option autoImplicit false
 

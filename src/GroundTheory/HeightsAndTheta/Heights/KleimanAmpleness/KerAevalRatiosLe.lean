@@ -1,12 +1,11 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsFurtherFurther
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.IsMultiProjPrimeBaseComap
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.TrdegEqOfLeOfIsAlgebraic
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0052
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0059
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0051
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.CoeNeZeroOfNotMem
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.XMemMIdealOverIff
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.MemMIdealOverIff
-import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PMChartHomog
-import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PMChartLocDim
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0072
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0063
+import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0021
 set_option maxSynthPendingDepth 1
 
 noncomputable section

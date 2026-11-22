@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.RootOfUnityEightQMemCoeffGaloisSubfield
 import Formalism.LocalRingCardinality.SpanPowerMembership.FmZeroHLatEmpty
-import Development.AutomorphicArithmetic.WeightCongruences.ProdNegOneZpow
+import Development.AutomorphicArithmetic.WeightCongruences.Bundle0001
 
 noncomputable section
 

@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EvalMod
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0255
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ValuationLtOneOfEq
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LubinTateUnramifiedDegreeOne
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsUniformizerGaloisAction
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalBridgeLubinTateField
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0450
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0444
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0449
 import GroundTheory.LocalFields.LocalArtinBaseChange
 import GroundTheory.LocalFields.ExplicitQp
 noncomputable section

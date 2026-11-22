@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.AevalEqZeroOfMemConeIdeal
-import ReciprocityTheory.SemistableReduction.TorusL2CauchyInequality
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinSubstLinSubst
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussAbsProdLeOne
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogGaussAbsSupportFinite
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMultiHomogeneousProd
+import ReciprocityTheory.SemistableReduction.Bundle0025
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0949
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1330
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1335
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1356
 
 set_option autoImplicit false
 

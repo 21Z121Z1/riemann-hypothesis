@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsPlTieOfCore
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0078
 
 open NumberField IsDedekindDomain Formalism.MainNotions.G Formalism.L2.Col Formalism.BasicNotions
 

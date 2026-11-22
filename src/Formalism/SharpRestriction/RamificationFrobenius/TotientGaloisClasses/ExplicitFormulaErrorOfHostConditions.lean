@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.Analytic
-import Formalism.StatementOC
+import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.Bundle0001
+import Formalism.Bundle0001
 
 noncomputable section
 

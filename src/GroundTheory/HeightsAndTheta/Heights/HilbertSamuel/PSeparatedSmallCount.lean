@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSeparatedSmallCount
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSectionLatticeFinite
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PLocalRep
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPacking
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0028
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0043
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0035
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0016
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

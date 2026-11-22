@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsLieDataCircle
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0003
 import Development.AbelianVarietyTheory.PublishedTheorems.AdelicLattices₂.ExistsIntMulIsIntegralOfTrace
-import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.ExistsNeZeroMemFractionalIdealNormSqLe
+import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.Bundle0002
 
 open GlobalTheory.SmoothForms NumberField Matrix Module Submodule
 open scoped ContDiff Topology nonZeroDivisors

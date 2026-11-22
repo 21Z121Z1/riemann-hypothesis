@@ -2,8 +2,8 @@ import Mathlib
 import Development.AutomorphicArithmetic.CMTraceForms.CmDatumSmallPrimesLogBoundsOfParams
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.ONPage
 import Development.AbelianVarietyTheory.Definitions.Jets.NotRunTiesZeroSteps
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DegreeWeightKappaLePageBound
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.RunWeightsSum
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0139
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0159
 
 set_option autoImplicit false
 

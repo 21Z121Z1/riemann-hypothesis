@@ -1,6 +1,5 @@
-import Formalism.LocalToGlobal.IndefiniteReal.LocalNormSurjectivity.WittDiag
-import Formalism.LocalToGlobal.IndefiniteReal.LocalNormSurjectivity.FinNormSurj
-import Formalism.SatakeDualWeyl.StatementF
+import Formalism.LocalToGlobal.IndefiniteReal.LocalNormSurjectivity.Bundle0001
+import Formalism.SatakeDualWeyl.Bundle0001
 
 noncomputable section
 

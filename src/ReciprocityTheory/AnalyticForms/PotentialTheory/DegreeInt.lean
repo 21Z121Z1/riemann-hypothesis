@@ -1,6 +1,6 @@
-import ReciprocityTheory.AnalyticForms.PotentialTheory.Degree
-import ReciprocityTheory.AnalyticForms.PotentialTheory.PotentialContDiffAt
-import ReciprocityTheory.AnalyticForms.PotentialTheory.LocDens
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0009
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0008
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0005
 import ReciprocityTheory.AnalyticForms.PotentialTheory.DegreeIntB
 
 namespace ReciprocityTheory.AnForm.M

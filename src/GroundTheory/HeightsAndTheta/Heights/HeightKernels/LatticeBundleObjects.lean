@@ -1,10 +1,10 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.KernelsLattice
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StandardInnerSingleNe
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.ImportsRest
+import GroundTheory.HeightsAndTheta.Heights.Bundle0001
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0012
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0014
 import GroundTheory.HeightsAndTheta.Heights.ArithDegreeIdeal
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.AssemblyLines
-import GroundTheory.PowerSubgroups.CountableNeighbourhoods.CommonDenominator
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0028
+import GroundTheory.PowerSubgroups.CountableNeighbourhoods.Bundle0001
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.Kernels

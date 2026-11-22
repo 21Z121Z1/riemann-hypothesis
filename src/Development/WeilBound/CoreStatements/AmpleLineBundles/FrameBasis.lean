@@ -1,7 +1,7 @@
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeEvalAtLocalRing
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeFrameSpecializes
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0168
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0178
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SegreChartBundle
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordsAtSmul
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0112
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField TensorProduct Filter Topology Matrix
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CompanionTheory.Ar
 

@@ -1,7 +1,7 @@
-import Formalism.LocalToGlobal.InertKernelTheory.DefsMMInv
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0009
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.IntBasis
 import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.AdditionIdentityOfSigmaFormulaUnit
-import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.OkpDict
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.Bundle0011
 
 noncomputable section
 

@@ -1,9 +1,7 @@
 import Mathlib
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.IsBand
-import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.ConvEig
-import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.ConvAssoc
-import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.ExistsCompactTail
-import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.OpLeHalf
+import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Bundle0001
+import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Bundle0002
 
 open MeasureTheory Filter UpperTheory.Lit.Cusp
 open scoped Topology

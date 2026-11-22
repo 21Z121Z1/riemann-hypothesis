@@ -1,7 +1,7 @@
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.GoodCoverEigenspaces.CoverOf
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.GaloisActionWeightSpectralE1Apply
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HodgePullHodgePull
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.OmegaPullId
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0005
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0031
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0032
 
 set_option autoImplicit false
 

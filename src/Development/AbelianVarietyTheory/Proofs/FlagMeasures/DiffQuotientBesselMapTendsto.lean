@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SmoothVectorsDenseInvariantStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EquivariantSubspace
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdjointInverseTranslate.AnaHpartUnique
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0251
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0143
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdjointInverseTranslate.Bundle0001
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.GBasic
 
 noncomputable section

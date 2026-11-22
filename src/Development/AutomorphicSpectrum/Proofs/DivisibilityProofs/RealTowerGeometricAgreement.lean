@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.RefLinked
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsC2AtOfIsPotential
+import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Bundle0001
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0007
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0101
 
 noncomputable section
 

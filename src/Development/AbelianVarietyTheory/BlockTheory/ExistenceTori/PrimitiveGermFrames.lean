@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.SymmetricAdjointUnits
-import Formalism.LocalToGlobal.ProjectiveLattices.IsThRule
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
 
 set_option autoImplicit false
 

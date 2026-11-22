@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.CanExtOfCharts
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0089
 
 set_option autoImplicit false
 

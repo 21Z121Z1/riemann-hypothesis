@@ -1,5 +1,5 @@
 import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.HaarBumpFunctions.ExistsIsBump
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SmoothOnAdditive
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0059
 
 open Matrix Filter Topology Set
 open scoped ContDiff InnerProductSpace

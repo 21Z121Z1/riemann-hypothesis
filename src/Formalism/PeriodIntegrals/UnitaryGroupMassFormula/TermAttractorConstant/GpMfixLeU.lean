@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TermAttractorConstant.GpLocPSubE
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TermAttractorConstant.Bundle0002
 
 noncomputable section
 

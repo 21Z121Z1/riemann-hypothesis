@@ -1,8 +1,7 @@
-import Formalism.LocalToGlobal.ProjectiveLattices.PtOfSInst
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0043
 import Formalism.LocalToGlobal.ProjectiveLattices.CurveLoc
-import Formalism.LocalToGlobal.ProjectiveLattices.CurveInj
-import Formalism.LocalToGlobal.ProjectiveLattices.CurveUnit
-import Formalism.LocalToGlobal.ProjectiveLattices.PtOfSPfBC
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0046
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0044
 
 set_option autoImplicit false
 set_option synthInstance.maxHeartbeats 400000

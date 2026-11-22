@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.PeriodIntegrals.BeConjNorm
-import Formalism.PeriodIntegrals.PhNormUnits
+import Formalism.PeriodIntegrals.Bundle0001
+import Formalism.PeriodIntegrals.Bundle0008
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PowerSeriesNormUnits.NormUnitsOfCalculation
 
 noncomputable section

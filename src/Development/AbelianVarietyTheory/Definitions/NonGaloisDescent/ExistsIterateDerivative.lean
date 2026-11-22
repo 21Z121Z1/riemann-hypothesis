@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.RealisesUnitPow
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0012
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CrisToODToOCr
 
 set_option synthInstance.maxHeartbeats 400000

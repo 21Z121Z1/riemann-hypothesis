@@ -1,9 +1,9 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.ZelevinskyCosocles.LUnlinkedComm
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductIrreducibleAppendEquivStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0512
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivProdIrrTw
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsListPairwiseNotRel
-import BuildAid.D4
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0658
+import BuildAid.Bundle0001
 
 noncomputable section
 

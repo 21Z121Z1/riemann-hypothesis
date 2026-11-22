@@ -2,7 +2,7 @@ import Mathlib
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshBasic
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshMoll
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshExtB
-import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.StPshLocal
+import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.Bundle0002
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.NineStatements

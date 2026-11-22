@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.HilbertSchmidt
+import GroundTheory.AutomorphicForms.Bundle0003
 
 namespace GroundTheory.Automorphic
 

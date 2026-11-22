@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.ExponentGrids.ScaledCoordinatesValuationLemma
-import Formalism.TowerValuationBounds.TowerValuationBoundIndexed
+import Formalism.TowerValuationBounds.Bundle0001
 
 open Module NumberField IsDedekindDomain Finset
 open Formalism.DivisionValues (vw lw PlOver meanLog)

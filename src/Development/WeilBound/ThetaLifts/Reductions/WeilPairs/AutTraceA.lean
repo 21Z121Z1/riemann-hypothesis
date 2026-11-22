@@ -1,8 +1,8 @@
-import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutSer
+import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0013
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.HermitianFormRealCoordinateMatrixHermitianDetNeZ
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.StandardTraceAddCharIsStandardCharOfAdmissibleCM
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnfoldPoincareSeriesLatticeFourierStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SumOpTransversal
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0193
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0038
 
 noncomputable section
 

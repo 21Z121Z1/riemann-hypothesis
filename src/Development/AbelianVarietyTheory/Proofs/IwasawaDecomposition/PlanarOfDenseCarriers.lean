@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CompGvec
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PointsOfClosureInProjectiveSpace
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0610
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0603
 
 set_option autoImplicit false
 

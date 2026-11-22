@@ -1,8 +1,7 @@
-import ReciprocityTheory.DualLattices.EigenQuotientSmithStatement
+import ReciprocityTheory.DualLattices.Bundle0024
 import ReciprocityTheory.DualLattices.StdJForm4
-import ReciprocityTheory.DualLattices.ExistsMatOfEquiv
-import ReciprocityTheory.DualLattices.BlockOneMulMulBlockOne
-import ReciprocityTheory.DualLattices.MatEquivApply
+import ReciprocityTheory.DualLattices.Bundle0014
+import ReciprocityTheory.DualLattices.Bundle0027
 
 noncomputable section
 

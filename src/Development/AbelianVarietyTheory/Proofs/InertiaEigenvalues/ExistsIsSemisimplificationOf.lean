@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.QuotientHomNonvanishingBound
-import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.SemisimplificationConstituents
+import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0014
 
 open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.N
 

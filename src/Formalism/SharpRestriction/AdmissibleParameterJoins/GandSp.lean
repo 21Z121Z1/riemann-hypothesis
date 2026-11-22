@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.AdmissibleParameterJoins.GandSo
-import Formalism.SharpRestriction.GrowthBounds.KerTies
+import Formalism.SharpRestriction.GrowthBounds.Bundle0004
 
 noncomputable section
 

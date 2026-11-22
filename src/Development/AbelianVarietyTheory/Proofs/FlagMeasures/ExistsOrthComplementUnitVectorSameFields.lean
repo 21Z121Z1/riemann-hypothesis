@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsFinEmb
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaugeVolumeEqOfSemilinearIsometryGenusStatement
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GaussDensDefinite
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0327
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0011
 
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S GlobalTheory.Count GlobalTheory.FlagMeas GlobalTheory.GaussMean GlobalTheory.StabUnfold
 open scoped TensorProduct

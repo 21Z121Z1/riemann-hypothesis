@@ -1,5 +1,5 @@
-import Development.AbelianVarietyTheory.Definitions.Divisors.SpecializesGenericImage
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryClassSumsDeeperLevelGeometricCoreStatement
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0080
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3628
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsMonoFamNontrivial
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory IsLocalRing NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.AnForm.R

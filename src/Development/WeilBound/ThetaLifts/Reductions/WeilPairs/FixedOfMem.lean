@@ -1,8 +1,8 @@
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.MemSEOfFin
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEtaCmType
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankSmulMemAdelesFiniteMultipleOfTensorCongru
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenIntegralTensorAdeleMultiples
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegerOfAlgebraMapMemAdelesFiniteMultiple
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1567
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1148
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1154
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1142
 
 noncomputable section
 

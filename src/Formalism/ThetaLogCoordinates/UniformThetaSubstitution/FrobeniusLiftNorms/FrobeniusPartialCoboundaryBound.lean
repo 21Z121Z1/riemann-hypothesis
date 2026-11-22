@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.ThmSUniform
-import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FinalS
+import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0003
+import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0005
 
 noncomputable section
 

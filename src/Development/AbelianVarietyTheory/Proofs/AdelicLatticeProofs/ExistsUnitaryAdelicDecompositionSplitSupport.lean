@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.IsHermForm
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IdempotentAdelesAndSmallAdelicMatricesStatement
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsRationalUnitarySplitDenominatorStatement
+import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0050
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0057
 
 open NumberField IsDedekindDomain GlobalTheory.AdLat GlobalTheory.UnRep
 open scoped TensorProduct Matrix

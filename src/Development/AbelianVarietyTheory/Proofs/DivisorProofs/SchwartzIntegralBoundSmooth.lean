@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OnMatInfOfIsUnit
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SandCLMInfApply
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsArchimedeanRapidKernelOperatorFinsetSum
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumNormEntriesMulLe
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0904
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0931
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0924
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0111
 open NumberField GlobalTheory.CuspRep GlobalTheory.JSW GlobalTheory.JSW.MirCinf MeasureTheory
 open scoped FourierTransform ContDiff
 

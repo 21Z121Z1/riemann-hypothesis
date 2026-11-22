@@ -1,4 +1,4 @@
-import Formalism.PieriBlockIdeals.StatementLD
+import Formalism.PieriBlockIdeals.Bundle0004
 import Formalism.GradedWeylDivisibility.FinalD
 
 open MvPolynomial

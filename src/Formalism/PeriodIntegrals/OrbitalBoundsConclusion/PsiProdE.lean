@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.CoefPhase
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.ProdFormulaE
+import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.Bundle0051
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0017
 
 noncomputable section
 

@@ -4,7 +4,7 @@ import Development.WeilBound.CoreStatements.FlagImmersions.SamePotTransRsmul
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RootOriginHeightComparisonTwo
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RootOriginHeightComparisonThreeStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlagLabelBasesExist
-import GroundTheory.HeightsAndTheta.Heights.HeightComparison.IsMultiHomogIdealIff
+import GroundTheory.HeightsAndTheta.Heights.HeightComparison.Bundle0003
 
 noncomputable section
 

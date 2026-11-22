@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.IsClosedEmbeddingOfLocallyCompact
-import GroundTheory.AutomorphicForms.DixmierMalliavin
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0006
+import GroundTheory.AutomorphicForms.Bundle0014
 import GroundTheory.AutomorphicForms.HarishChandraRegularity.ExpHaar
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSmoothLogMemLieAlg
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0093
 set_option maxSynthPendingDepth 1
 open scoped Manifold ContDiff Topology
 open MeasureTheory Set GroundTheory.Automorphic

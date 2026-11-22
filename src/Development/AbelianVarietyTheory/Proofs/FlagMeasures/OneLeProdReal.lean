@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.CongruenceAtSplitFrobeniusHolds
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsPartnerLift
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IdxNOneMulAbsNorm
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CountTermsGramClassOverSublatticeStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0394
 
 open NumberField Module IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.S Formalism.MainNotions.S.Lat
 open scoped Classical

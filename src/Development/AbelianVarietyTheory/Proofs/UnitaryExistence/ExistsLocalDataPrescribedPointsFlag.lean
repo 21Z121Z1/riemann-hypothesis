@@ -1,11 +1,10 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.HasDataCondition
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0032
 import Formalism.LocalToGlobal.ProjectiveLattices.LatPAddRight
-import Formalism.LocalToGlobal.ProjectiveLattices.FamilyUniformisationBasePointOrthogonalBis
-import Formalism.LocalToGlobal.ProjectiveLattices.ParCanon
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0041
 import Formalism.LocalToGlobal.ProjectiveLattices.ExistsParameterConditions
-import Formalism.LocalToGlobal.ProjectiveLattices.DepLaws
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0031
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
 import Formalism.SharpRestriction.Divisibility.LocalNonemptiness.SubsingletonRankIndicatorIff
 
 noncomputable section

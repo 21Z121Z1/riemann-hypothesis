@@ -1,7 +1,5 @@
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SquarefreePrimeFactor.ClaimOf
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SquarefreePrimeFactor.Bundle0001
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SquarefreePrimeFactor.SquarefreeCountEstimate
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SquarefreePrimeFactor.IrreducibleCountLowerBound
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SquarefreePrimeFactor.Analytic
 
 namespace PI.SqfPrimeFactor.W
 

@@ -1,5 +1,5 @@
-import ReciprocityTheory.GroupCohomology.CupConnRightStatement
-import ReciprocityTheory.GroupCohomology.Section
+import ReciprocityTheory.GroupCohomology.Bundle0002
+import ReciprocityTheory.GroupCohomology.Bundle0005
 
 namespace ReciprocityTheory.Coh.InflationTransgression
 

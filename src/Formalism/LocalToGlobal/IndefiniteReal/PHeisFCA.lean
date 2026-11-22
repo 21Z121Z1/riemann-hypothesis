@@ -1,6 +1,6 @@
 import Formalism.LocalToGlobal.IndefiniteReal.IsWeilDatum
 import Formalism.LocalToGlobal.Columns.RecLevelTop
-import Formalism.LocalToGlobal.GlobalTheory.GL1.CompactFixesLattice.ExistsDenOfIsCompactAdele
+import Formalism.LocalToGlobal.GlobalTheory.GL1.CompactFixesLattice.Bundle0001
 
 noncomputable section
 

@@ -1,6 +1,6 @@
-import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.WhitNDgOfLocalOfSteps
+import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.Bundle0001
 import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.WhitGenOf
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhitKA
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0751
 
 noncomputable section
 

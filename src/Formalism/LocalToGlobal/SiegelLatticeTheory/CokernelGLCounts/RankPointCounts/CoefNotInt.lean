@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.CntNotInt
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0043
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.FiberCount
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.PartnerCount
 

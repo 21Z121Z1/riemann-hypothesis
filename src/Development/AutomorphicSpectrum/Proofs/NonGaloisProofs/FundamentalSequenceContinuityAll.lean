@@ -4,7 +4,7 @@ import Formalism.SharpRestriction.LevelLetterCocycles.LiftingTheory
 import Formalism.SharpRestriction.LevelLetterCocycles.DecompositionData
 import Formalism.SharpRestriction.LevelLetterCocycles.TableLineDegreeTwo
 import Formalism.SharpRestriction.LevelLetterCocycles.CrystallineMapLemmas
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FundamentalExactSequenceContinuityAllTheories
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0317
 
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.MainNotions Formalism.MainNotions.N Formalism.WeaklyAdmissibleFiltrations Module TensorProduct
 

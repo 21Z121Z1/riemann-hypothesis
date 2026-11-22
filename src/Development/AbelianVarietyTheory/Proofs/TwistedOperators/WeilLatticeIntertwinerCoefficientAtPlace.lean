@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConstMemBddAut
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0182
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsFinWeil
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InertPlaceStabilizersFixWeilLatticeVacuum
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaInnerProductHermitian
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0444
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0284
 
 noncomputable section
 

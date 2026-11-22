@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.ProfiniteCohomology.RealPlaces.GSDefs
-import GroundTheory.ProfiniteCohomology.RealPlaces.VanishingCriterion
+import GroundTheory.ProfiniteCohomology.RealPlaces.Bundle0002
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.EqZeroOfPowNsmulCohomologySUnitsOfOdd
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.Brauer
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.Dimension

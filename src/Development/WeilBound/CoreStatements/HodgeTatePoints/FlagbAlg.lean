@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GrIsGenAt
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0026
 
 noncomputable section
 

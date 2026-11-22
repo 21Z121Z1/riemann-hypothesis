@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.TraceDefinitePairsEqAutomorphicTrace
+import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0001
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelatedPairsOrbitalTermEq
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinsumOrbitFibreSwap
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0053
 
 open Matrix NumberField GlobalTheory.LKTrip GlobalTheory.LKRes GlobalTheory.LKMid GlobalTheory.LKCount
 open scoped TensorProduct Classical

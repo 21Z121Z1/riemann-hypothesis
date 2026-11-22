@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.TieTwRecOf
+import Formalism.LocalToGlobal.Bundle0003
 import Formalism.LocalToGlobal.Divisibility.RecBridgeWire
 import Formalism.LocalToGlobal.Divisibility.DivisibilityRemainder.RationalColumns.BuRationalOf
 

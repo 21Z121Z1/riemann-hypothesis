@@ -1,8 +1,8 @@
 import Formalism.PieriBlockIdeals.LatticeInclusionFormsInjective
 import Formalism.PieriBlockIdeals.FactorialValuationSum
-import Formalism.PieriBlockIdeals.StatementLA
-import Formalism.PieriBlockIdeals.StatementC
-import Formalism.PieriBlockIdeals.LemmaWAssembled
+import Formalism.PieriBlockIdeals.Bundle0004
+import Formalism.PieriBlockIdeals.Bundle0002
+import Formalism.PieriBlockIdeals.Bundle0003
 
 noncomputable section
 

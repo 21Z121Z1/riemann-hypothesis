@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.DegreeFormula.FlagDegFormula
 import Formalism.DegreeFormula.PointDegree.PowSum
-import Formalism.DegreeFormula.PointDegree.PermExpInj
-import Development.AbelianVarietyTheory.Definitions.Foundations.CurveCl
+import Formalism.DegreeFormula.PointDegree.Bundle0001
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0003
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.CompactGapsGE
 
 noncomputable section

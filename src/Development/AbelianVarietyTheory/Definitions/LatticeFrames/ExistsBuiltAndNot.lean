@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.BuiltGIntro
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0011
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsOkPins
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LevelNotMemRowSG
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0106
 
 noncomputable section
 

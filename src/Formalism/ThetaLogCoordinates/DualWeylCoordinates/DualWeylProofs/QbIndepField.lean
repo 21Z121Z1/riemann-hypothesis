@@ -1,5 +1,5 @@
-import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.BCoreT
-import Formalism.ThetaLogCoordinates.DualWeylCoordinates.StatementA
+import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.Bundle0003
+import Formalism.ThetaLogCoordinates.DualWeylCoordinates.Bundle0001
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.ProjectiveLattices.IsCombAt
-import Formalism.LocalToGlobal.ProjectiveLattices.EquivariantFiniteGroup
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0022
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
 
 noncomputable section

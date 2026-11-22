@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.TwoPlaces
+import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0002
 
 noncomputable section
 

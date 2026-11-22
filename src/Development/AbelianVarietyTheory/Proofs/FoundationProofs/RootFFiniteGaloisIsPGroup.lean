@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DiagMod
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLevelMulPowOfInvariantModPow
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0075
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0096
 
 open scoped MatrixGroups TensorProduct
 open Matrix GlobalTheory.KZ GlobalTheory.KZ.ES IntermediateField

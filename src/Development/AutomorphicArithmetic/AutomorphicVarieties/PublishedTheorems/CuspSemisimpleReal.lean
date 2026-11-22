@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.IsAlgChar
-import Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.CyclicBaseChangeC
-import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HarishChandraFinite
+import Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.Bundle0001
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0005
 
 noncomputable section
 

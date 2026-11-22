@@ -1,4 +1,4 @@
-import Formalism.EllipticTorsion.WSeriesUnique
+import Formalism.EllipticTorsion.Bundle0001
 
 open PowerSeries
 

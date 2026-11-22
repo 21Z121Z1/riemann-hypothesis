@@ -1,4 +1,4 @@
-import Formalism.GaussJetBounds.OneLetterGaussJets.StatementN
+import Formalism.GaussJetBounds.OneLetterGaussJets.Bundle0001
 import Formalism.IncomingBounds.WeightIdentities
 
 noncomputable section

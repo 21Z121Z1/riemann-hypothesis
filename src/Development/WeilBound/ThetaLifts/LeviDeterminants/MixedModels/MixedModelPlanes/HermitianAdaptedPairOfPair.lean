@@ -1,5 +1,4 @@
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianAdaptedPairOfPair
-import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1908
 import Mathlib
 import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.MixedModelPlanes.Imports
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone

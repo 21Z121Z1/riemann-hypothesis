@@ -1,5 +1,5 @@
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.StandardFunctorsFiniteLength
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.JacquetModuleFiniteLengthStatement
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0003
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0021
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ParabolicInductionFiniteLengthStatement
 
 namespace PositivityTheory.Tls2.BZGL

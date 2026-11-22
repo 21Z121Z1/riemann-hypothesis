@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.TermDef
-import Formalism.PeriodIntegrals.NormRepLift
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormRepresentationLift.IntLatOfUnimod
+import Formalism.PeriodIntegrals.Bundle0031
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormRepresentationLift.Bundle0002
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormRepresentationLift.PreRowvec
 
 noncomputable section

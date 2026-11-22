@@ -1,4 +1,4 @@
-import Formalism.MahlerMeasure.GamInt
+import Formalism.MahlerMeasure.Bundle0005
 import Mathlib
 
 namespace Formalism.GM.gammaIntegralityLemmas

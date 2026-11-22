@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.ProjectiveLattices.LiftCurveSt
-import Formalism.LocalToGlobal.ProjectiveLattices.SecPtRed
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0035
 
 noncomputable section
 

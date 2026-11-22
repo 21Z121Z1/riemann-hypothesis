@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsVolData
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FrameDualTupleIdealsCastAdd
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0233
 
 noncomputable section
 

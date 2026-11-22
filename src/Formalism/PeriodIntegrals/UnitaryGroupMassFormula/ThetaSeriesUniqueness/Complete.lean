@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.PeriodIntegrals.LatDefs
-import Formalism.PeriodIntegrals.SigmaStarUniq
-import Formalism.PeriodIntegrals.AreaLat
+import Formalism.PeriodIntegrals.Bundle0006
+import Formalism.PeriodIntegrals.Bundle0015
+import Formalism.PeriodIntegrals.Bundle0014
 
 noncomputable section
 

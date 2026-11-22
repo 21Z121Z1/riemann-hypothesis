@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.SheafHOver
-import GroundTheory.ArithmeticGeometry.SchemeCohomology.CechSeparated
+import GroundTheory.ArithmeticGeometry.SchemeCohomology.Bundle0005
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Arith.SchemeCoh

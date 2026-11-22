@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GeometricallyConnectedOfIsIsoRestrict
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0005
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsEmptyOfEffCartierBot
 
 noncomputable section

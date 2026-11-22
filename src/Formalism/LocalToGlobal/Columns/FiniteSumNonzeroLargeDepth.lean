@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.LocalToGlobal.Columns.ColForms
-import Formalism.LocalToGlobal.Columns.ColFormsLemmas
+import Formalism.LocalToGlobal.Columns.Bundle0005
 import Formalism.LocalToGlobal.Columns.ScaledRamifiedLattice
 import Formalism.LocalToGlobal.Columns.RowForms
-import Formalism.LocalToGlobal.Columns.RowFormsSym
+import Formalism.LocalToGlobal.Columns.Bundle0006
 import Formalism.LocalToGlobal.Columns.CoefModB
 import Formalism.SizeWindowBrackets.SlopesHypothesisFinitePlaces
 

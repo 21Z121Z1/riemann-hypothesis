@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.InertJacobiLevels.HostFam
-import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleClassGroupCardPos
+import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0007
 
 noncomputable section
 

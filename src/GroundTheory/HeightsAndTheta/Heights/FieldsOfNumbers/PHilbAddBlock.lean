@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.StatementsAddBlock
-import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PGradedFinite
+import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0004
+import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0003
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PIntNumBaseChange
 set_option maxSynthPendingDepth 1
 

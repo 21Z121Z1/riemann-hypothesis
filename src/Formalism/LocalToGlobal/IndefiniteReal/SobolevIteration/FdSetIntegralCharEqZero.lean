@@ -1,6 +1,6 @@
-import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.FuncSt
-import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.GinfCSecondCountable
-import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasWeil
+import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0003
+import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0005
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
 
 noncomputable section
 

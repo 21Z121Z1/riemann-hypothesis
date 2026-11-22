@@ -1,6 +1,6 @@
 import Mathlib
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Signature
-import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.InhabSt
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0001
+import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.Bundle0004
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IMemSiegel
 
 open Matrix Complex NumberField

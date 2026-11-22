@@ -1,6 +1,6 @@
 import Mathlib
-import Development.EtaleCohomology.CohomologicalPurity.LeafWEqvLPf
-import Development.EtaleCohomology.CohomologicalPurity.LeafWCechRec
+import Development.EtaleCohomology.CohomologicalPurity.Bundle0026
+import Development.EtaleCohomology.CohomologicalPurity.Bundle0029
 
 section
 noncomputable section

@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.OfParts
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0050
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.CoeNeZeroOfNotMem
 set_option maxSynthPendingDepth 1
 

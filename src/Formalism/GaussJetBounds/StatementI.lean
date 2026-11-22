@@ -1,4 +1,4 @@
-import Formalism.GaussJetBounds.StatementG
+import Formalism.GaussJetBounds.Bundle0003
 import Formalism.GaussJetBounds.StatementH
 
 noncomputable section

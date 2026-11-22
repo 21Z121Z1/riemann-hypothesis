@@ -1,5 +1,5 @@
 import Development.AbelianVarietyTheory.Definitions.Divisors.TwoClassFrameHasLevelSetting
-import Development.AbelianVarietyTheory.Definitions.Divisors.BlockPairCycPow
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0048
 
 set_option autoImplicit false
 

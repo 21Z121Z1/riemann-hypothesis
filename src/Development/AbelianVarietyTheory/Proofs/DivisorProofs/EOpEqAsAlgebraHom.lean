@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteReal.ConcretePkgSpec
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0023
 import Formalism.LocalToGlobal.Divisibility.ProjLemmas
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelTypeEigenfunctionOfLiftableElement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0925
 
 noncomputable section
 

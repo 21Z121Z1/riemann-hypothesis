@@ -1,5 +1,5 @@
-import Formalism.FlagUnipotentLattices.AlgebraicIdentityHigherDegree
-import Formalism.FlagUnipotentLattices.BlockMinorAbsoluteFromExplicit
+import Formalism.FlagUnipotentLattices.Bundle0006
+import Formalism.FlagUnipotentLattices.Bundle0009
 import Formalism.FormalDegreeBessel.FinalDS
 import Formalism.SharpRestriction.CuspSpanNormBounds.BesselShellMomentBounds
 import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusCoefficientMemLp.FramesPt

@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsSmoothVector
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsDerivedActionFiniteDimUnitaryRep
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WeightCompactDominanceOfMemHighestWeightSpan
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsHighestWeightIrreducibleUnitaryRepU
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0052
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0129
 
 open Matrix MeasureTheory Finset
 open scoped InnerProductSpace ContDiff Topology

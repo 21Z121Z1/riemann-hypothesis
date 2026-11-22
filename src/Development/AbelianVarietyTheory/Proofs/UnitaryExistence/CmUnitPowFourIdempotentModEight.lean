@@ -1,9 +1,8 @@
 import Mathlib
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Signature
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsIntegralDetSubOne
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsHermCoordOfDatum
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FinrankEqOfInjectiveOfSpan
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0016
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0015
 
 open NumberField Matrix
 open scoped nonZeroDivisors

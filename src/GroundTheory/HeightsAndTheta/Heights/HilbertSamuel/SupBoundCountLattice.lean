@@ -1,8 +1,8 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.SupBoundCountIntegrals
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PMinkowskiCount
-import GroundTheory.HeightsAndTheta.Heights.CovolumeGram
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.ABridgeStB
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0016
+import GroundTheory.HeightsAndTheta.Heights.Bundle0001
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.Bundle0005
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

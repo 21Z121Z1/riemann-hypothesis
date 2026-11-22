@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteReal.CxCutE
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0010
 import Formalism.LocalToGlobal.Divisibility.LiftLatLemmas
 import Formalism.LocalToGlobal.Divisibility.RowLatLemmas
 

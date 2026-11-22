@@ -1,11 +1,10 @@
-import Formalism.GaussJetBounds.StatementU
-import Formalism.GaussJetBounds.OneLetterRadius
+import Formalism.GaussJetBounds.Bundle0006
+import Formalism.GaussJetBounds.Bundle0007
 import Formalism.GaussJetBounds.MonoShapeTop
 import Formalism.GaussJetBounds.GaussJetProofs.GField
-import Formalism.GaussJetBounds.GaussJetProofs.Transfer
+import Formalism.GaussJetBounds.GaussJetProofs.Bundle0004
 import Formalism.GaussJetBounds.GaussJetProofs.FJEval
 import Formalism.GaussJetBounds.GaussJetProofs.ConstantCoeffAevalLinP
-import Formalism.GaussJetBounds.GaussJetProofs.Labels
 import Formalism.GaussJetBounds.GaussJetProofs.ThmAOp
 
 noncomputable section

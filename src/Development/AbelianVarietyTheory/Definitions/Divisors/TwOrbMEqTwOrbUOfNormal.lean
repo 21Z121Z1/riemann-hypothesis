@@ -1,6 +1,6 @@
 import Mathlib
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.ExistsDvdQKPowSubOne
-import Development.AbelianVarietyTheory.Definitions.Divisors.MaxWeightGL1EqOne
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0036
 
 noncomputable section
 

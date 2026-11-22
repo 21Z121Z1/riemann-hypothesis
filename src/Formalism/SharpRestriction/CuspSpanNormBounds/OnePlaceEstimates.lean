@@ -1,10 +1,9 @@
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 import Formalism.SharpRestriction.ParConsts
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
-import Formalism.SharpRestriction.CuspSpanNormBounds.LocalDataRealPlace
-import Formalism.SharpRestriction.CuspSpanNormBounds.RootMeasBig
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0004
 import Formalism.SharpRestriction.CuspSpanNormBounds.LeadMinorK
-import Formalism.SharpRestriction.CuspSpanNormBounds.RotatedWeightedBound
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0007
 import Formalism.SharpRestriction.CuspSpanNormBounds.FamilyBlockLiftEstimate
 import Formalism.SharpRestriction.CuspSpanNormBounds.DiagonalEntryIdentity
 

@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.UnipotentAdelicQuotients.ThmBInHecke
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFiniteAdeleBaseChangeEquiv
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsAdeleRingTensorEquivInfiniteProdFinite
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0005
 
 noncomputable section
 

@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.NonGenericAndKTwoTheorems
 import Formalism.SharpRestriction.CuspSpanNormBounds.OnePlaceEstimates
-import Formalism.SharpRestriction.CuspSpanNormBounds.SBridge
-import Formalism.LocalRingCardinality.DataTies
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsNormalFormStabilizerMeasure
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0008
+import Formalism.LocalRingCardinality.Bundle0003
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0009
 
 noncomputable section
 open MeasureTheory Formalism.BasicNotions Formalism.MainNotions.S GlobalTheory.Amp

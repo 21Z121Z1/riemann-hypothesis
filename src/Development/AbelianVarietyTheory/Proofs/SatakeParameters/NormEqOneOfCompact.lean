@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.BlockSplitAll
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsobaricDiscreteSelfDualStrongMultiplicityOne
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0015
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0006
 import Formalism.SharpRestriction.LevelLetterCocycles.SumRepresentations
-import Formalism.LocalToGlobal.UnitaryNorms.CharTied
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BlockCharIntegral
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPowLeSpan
+import Formalism.LocalToGlobal.UnitaryNorms.Bundle0006
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0131
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0382
 
 noncomputable section
 

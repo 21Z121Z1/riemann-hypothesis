@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.GL3MeanSquares.WeightedSumIntegralFormula
+import Formalism.GL3MeanSquares.Bundle0004
 import Formalism.FrobeniusOrbits.HostCorollaries
 import Formalism.ZetaNonvanishing.ZetaRealNonvanish
 

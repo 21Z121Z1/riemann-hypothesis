@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.GrowthBounds.PowerSeriesFrobeniusCongruence
-import Formalism.LocalToGlobal.CharacterGerms.SubstSubst
+import Formalism.SharpRestriction.GrowthBounds.Bundle0003
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0023
 
 noncomputable section
 

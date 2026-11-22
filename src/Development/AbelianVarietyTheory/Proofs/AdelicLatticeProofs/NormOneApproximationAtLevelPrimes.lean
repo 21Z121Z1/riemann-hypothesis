@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.IsHermForm
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ValuationEqOneOfNormOneOfNotMoved
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsDenominatorPrimesPrescribed
+import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0029
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0021
 
 open NumberField IsDedekindDomain GlobalTheory.AdLat GlobalTheory.UnRep
 open scoped TensorProduct Matrix

@@ -1,9 +1,9 @@
 import Formalism.HermitianCurvature.StatementJF
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LUFactorOrbitBounds
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselDomainMeasurable
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.SmoothWordsAll
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.SandwichRhoAction
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.WordIntegralScaling
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0060
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0040
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0041
 
 open Matrix MeasureTheory Filter Topology
 

@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.HermitianForms.TiedTwGen
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.RationalPointsLeHolds
+import Formalism.LocalToGlobal.HermitianForms.Bundle0005
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0003
 
 noncomputable section
 

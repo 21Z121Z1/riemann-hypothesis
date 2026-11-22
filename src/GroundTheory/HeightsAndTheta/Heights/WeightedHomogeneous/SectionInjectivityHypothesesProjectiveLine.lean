@@ -1,8 +1,8 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Points
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Slopes
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Objects
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ArithmeticHilbertSamuelLowerBound
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0001
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.Close

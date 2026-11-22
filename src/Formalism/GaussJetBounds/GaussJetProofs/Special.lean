@@ -1,5 +1,4 @@
-import Formalism.GaussJetBounds.GenLogInverse
-import Formalism.GaussJetBounds.StatementB
+import Formalism.GaussJetBounds.Bundle0001
 
 noncomputable section
 open scoped BigOperators

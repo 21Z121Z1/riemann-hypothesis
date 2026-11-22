@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsLiftGraphMetric
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsLiftGraphFactor
-import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
+import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0032
+import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0035
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0001
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Targets

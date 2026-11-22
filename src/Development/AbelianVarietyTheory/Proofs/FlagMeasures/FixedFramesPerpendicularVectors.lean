@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.RowMinor
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StandardBaseFlagComplementIntegralLatticeStatement
-import Formalism.FlagUnipotentLattices.CardSubgroupsOfIndexLe
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsExtra
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0011
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0344
+import Formalism.FlagUnipotentLattices.Bundle0006
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0008
 open NumberField Module Matrix Formalism.BasicNotions Formalism.MainNotions.S Formalism.MainNotions.S.Lat Formalism.MainNotions.S.Cnt GlobalTheory.LoopC
 open scoped ENNReal Classical
 attribute [local instance] Formalism.BasicNotions.Host.cmStar

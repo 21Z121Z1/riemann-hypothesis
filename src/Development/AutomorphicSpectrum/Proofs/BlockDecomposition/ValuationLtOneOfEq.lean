@@ -1,11 +1,11 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.HeckeLAdicCharacterDeRham
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0006
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.DeRhamJacobian.IsdRJ
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HasPeriods
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0244
 import GroundTheory.PAdicHodge.LocalBridge
 import GroundTheory.PAdicHodge.FieldOfNormsCyclBase
 import GroundTheory.LocalFields.LubinTateLimitGalois
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemFiniteExtPadicRingOfIntegersIffNormLeOne
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0149
 
 noncomputable section
 open Formalism.BasicNotions Formalism.BasicNotions.Loc ValuativeRel GroundTheory.LocalField GroundTheory.LocalField.FormalGroup GroundTheory.PAdicHodge

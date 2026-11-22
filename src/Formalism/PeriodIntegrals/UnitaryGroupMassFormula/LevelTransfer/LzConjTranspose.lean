@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.HermitianCurvature.StatementQ
-import Formalism.FormalDegreeBessel.FinalG
+import Formalism.FormalDegreeBessel.Bundle0002
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelTransfer.ExpLz
 
 open Matrix

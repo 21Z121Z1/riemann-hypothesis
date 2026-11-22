@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.RestrictedWeightFirstTwoEq
-import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.Imports
+import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.Bundle0003
+import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.Bundle0004
 
 noncomputable section
 

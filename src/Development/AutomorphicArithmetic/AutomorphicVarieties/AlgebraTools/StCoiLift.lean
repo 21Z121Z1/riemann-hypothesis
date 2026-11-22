@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.InvAlg
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.EqLagIff
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IdemLiftComplete
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0003
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0004
 
 open Polynomial Matrix IsLocalRing TensorProduct UpperTheory.V.AlgebraTools
 

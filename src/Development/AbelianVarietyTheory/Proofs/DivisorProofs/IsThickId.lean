@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.PrimitiveStructureSheafDegTwoVanish
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsAdditiveOfUniversal
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0024
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0010
 
 set_option autoImplicit false
 noncomputable section

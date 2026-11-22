@@ -2,9 +2,9 @@ import Mathlib
 import ReciprocityTheory.L2DbarEstimates.Imports
 import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.FourSignHolds
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.L2ExtensionLogCanonical
-import Development.AbelianVarietyTheory.Definitions.Divisors.EtaleEmpty
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralNsqCanonicalAddChartPartStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShellMass
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0703
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0683
 open MeasureTheory Filter Topology Metric ReciprocityTheory.L2DbarEstimates ReciprocityTheory.L2DbarEstimates.Y GlobalTheory.OTY GlobalTheory.Published.L2Extension
 open scoped ENNReal ContDiff
 

@@ -1,4 +1,4 @@
-import Development.EtaleCohomology.KummerTheory.BockCut
+import Development.EtaleCohomology.KummerTheory.Bundle0002
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry Opposite CochainComplex Pretriangulated GlobalTheory.EtC

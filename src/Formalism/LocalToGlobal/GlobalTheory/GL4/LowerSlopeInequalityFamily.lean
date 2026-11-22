@@ -1,6 +1,6 @@
 import Formalism.LocalToGlobal.GlobalTheory.GL4.ColumnLatticeExactSlope
-import Formalism.LocalToGlobal.GlobalTheory.GL4.BranchingIntegralNormalised
-import Formalism.LocalToGlobal.GlobalTheory.GL4.PShortFrame
+import Formalism.LocalToGlobal.GlobalTheory.GL4.Bundle0013
+import Formalism.LocalToGlobal.GlobalTheory.GL4.Bundle0016
 
 noncomputable section
 

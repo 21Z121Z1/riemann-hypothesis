@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.BesselHermitianTheta.TiedType
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
 
 noncomputable section
 

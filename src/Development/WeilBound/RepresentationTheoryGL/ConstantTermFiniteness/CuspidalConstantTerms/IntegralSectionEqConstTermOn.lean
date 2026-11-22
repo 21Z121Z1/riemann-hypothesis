@@ -1,8 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.ConstTermOnMulLeftOfNormalizer
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdHomeoSymmApplySnd
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CocompactNormalSubgroupFibration
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CocompactFibrationSectionMeasure
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0095
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0960
 
 open MeasureTheory Set GlobalTheory.AutomorphicL2Unitary
 open scoped ENNReal

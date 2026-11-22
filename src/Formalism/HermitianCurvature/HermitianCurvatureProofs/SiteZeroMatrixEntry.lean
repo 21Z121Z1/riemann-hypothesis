@@ -1,5 +1,5 @@
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RadialIdentityOfQuadratic
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.RuleInv
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0006
 
 open scoped Matrix
 

@@ -1,11 +1,7 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ZeroMemUnrHom
-import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ActEx
-import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ActFacts
-import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ActConj
+import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.Bundle0001
+import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.Bundle0003
 import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ZKill
-import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.AdjKill
-import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.DetVal
-import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.BdxLog
 
 open NumberField IsDedekindDomain Formalism.ConjugateSelfDual ReciprocityTheory.Gal Formalism.GaloisCohomology UpperTheory.V UpperTheory.V.LDataCardLeFinrank UpperTheory.V.Base UpperTheory.V.Kum UpperTheory.V.Bern UpperTheory.V.B4 UpperTheory.V.B5 UpperTheory.V.Odd
 

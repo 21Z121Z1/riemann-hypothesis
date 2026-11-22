@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.EpsMeasFamily
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GaussSumNeZeroOfRamified
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Mono0OfLpDimEqOne
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormVZpowDegEq
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0025
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0254
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0051
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0381
 
 noncomputable section
 

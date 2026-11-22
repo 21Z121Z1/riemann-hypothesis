@@ -1,6 +1,6 @@
 import Formalism.AdmissibleDesigns.MemImageOfTensorSum
 import Formalism.AdmissibleDesigns.CohomZeroEquivContinuous
-import Formalism.SharpRestriction.LevelLetterCocycles.IsobaricMultiplicityOne
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0010
 import Formalism.AdmissibleDesigns.EKSymmCont
 
 variable [hT2Core : Fact ReciprocityTheory.ChartRestriction.T2.Core]

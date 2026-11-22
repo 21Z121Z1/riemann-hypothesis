@@ -1,5 +1,5 @@
-import Formalism.CyclotomicNorms.DiscardKernel
-import Formalism.CyclotomicNorms.NonsquarefreeBounds.SubstitutionBound
+import Formalism.CyclotomicNorms.Bundle0001
+import Formalism.CyclotomicNorms.NonsquarefreeBounds.Bundle0002
 
 open Finset
 

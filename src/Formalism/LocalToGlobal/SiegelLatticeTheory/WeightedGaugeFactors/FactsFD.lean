@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.SzHypFD
+import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.Bundle0051
 import Formalism.LocalToGlobal.SiegelLatticeTheory.BesselDiscreteSeries.FdegUniqG
 import Formalism.SharpRestriction.CuspSpanNormBounds.DiscreteSeriesExistence.ExistsG
 import Formalism.LocalToGlobal.SiegelLatticeTheory.WeightedGaugeFactors.FactsDS

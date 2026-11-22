@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ConjTupRefl
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0021
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdmissibleEmptyOfGood
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ThetaWeightArithmeticAtPlaceProof
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsEqMulOfResSNeOne
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TameHeckeCharSplitSupportedEqProdResidue
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0213
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0138
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0166
 
 set_option autoImplicit false
 

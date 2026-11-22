@@ -1,4 +1,4 @@
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.DualWeylModuleStable
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0014
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Wlocal
 
 noncomputable section

@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.ThPinsR
-import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.RationalFormValues
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TensorMapDescent
+import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.Bundle0013
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0057
 
 noncomputable section
 

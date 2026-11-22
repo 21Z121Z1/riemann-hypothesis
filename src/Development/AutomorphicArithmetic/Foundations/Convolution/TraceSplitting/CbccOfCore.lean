@@ -1,12 +1,9 @@
 import Mathlib
-import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Places
-import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.CoreLift
+import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Bundle0002
+import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Bundle0006
 import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.CoreDesc
-import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.LiftStep
-import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.LiftAll
-import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.DescStep
-import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.SplitStrong
-import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Cbcc
+import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Bundle0007
+import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Bundle0008
 
 theorem UpperTheory.ConvolutionTheory.T.cbcc_of_core (hC : UpperTheory.ConvolutionTheory.CI) (hG : UpperTheory.ConvolutionTheory.GM.GM) : UpperTheory.V.Z.Bc.CBCc :=
   have a := liftStep (coreLift hC hG)

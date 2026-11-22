@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.PowerSeriesOneAddConstMulXMulInv
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SubIdBijOfContracting
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0091
 
 noncomputable section
 namespace GlobalTheory.PhiGam.TwistShift

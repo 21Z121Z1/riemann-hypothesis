@@ -3,17 +3,17 @@ import Formalism.LocalToGlobal.IndefiniteReal.BaseLiftsPackageOfPrimitiveLinks
 import Formalism.LocalToGlobal.IndefiniteReal.LinksLemmas
 import Formalism.LocalToGlobal.IndefiniteReal.LinksExistW
 import Formalism.LocalToGlobal.IndefiniteReal.RationalAdjoints.RatZOfTests
-import Formalism.LocalToGlobal.IndefiniteReal.OneMapEq
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0027
 import Formalism.LocalToGlobal.IndefiniteReal.FWExist
 import Formalism.LocalToGlobal.IndefiniteReal.DoubleCosetOperators.NHkRow
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.HeckePin
-import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.HeckeSupportLattices
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.OffRange
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.HeckeSplitOne
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SupLatticeLocalisationOfUnitBall
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsPlaceOfValuationRing
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0022
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0014
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0013
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0028
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0076
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ZeroDegreeOfPinFor
-import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.ExistsIsHeckeSetting
+import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.Bundle0001
 open Formalism.BasicNotions Formalism.MainNotions Formalism.BasicNotions.TH NumberField IsDedekindDomain Formalism.L2 Formalism.L2.Theta Formalism.L2.DIV Formalism.L2.Indef Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Lev Formalism.IndefR.Mult Formalism.IndefR.Cx Formalism.IndefR.FWT Formalism.IndefR.NX Formalism.L2.Pj
 open scoped TensorProduct
 attribute [local instance] Formalism.BasicNotions.Host.cmStar

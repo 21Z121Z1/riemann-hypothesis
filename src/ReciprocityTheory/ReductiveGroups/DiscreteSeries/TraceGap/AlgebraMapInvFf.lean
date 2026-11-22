@@ -1,4 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.AdPhysDiagSingle
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.Bundle0003
 
 noncomputable section
 

@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.TwistAtEach
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsStalkZeta
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumIOfSumFMul
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedMemberDividingThetaConstantNeZero
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsYy
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2811
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2956
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2969
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2916
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor
 open GlobalTheory.Toroidal GlobalTheory.LocM GlobalTheory.PolFan GlobalTheory.ZM GlobalTheory.SiegelTor GlobalTheory.TorRef GlobalTheory.PolDeg

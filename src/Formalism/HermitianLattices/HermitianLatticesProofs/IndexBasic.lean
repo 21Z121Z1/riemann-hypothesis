@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.HermitianLattices.StatementLat
 import Formalism.HermitianLattices.HermitianLatticesProofs.LocBasic
-import Formalism.HermitianLattices.HermitianLatticesProofs.DualBasic
+import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0001
 
 open Module
 

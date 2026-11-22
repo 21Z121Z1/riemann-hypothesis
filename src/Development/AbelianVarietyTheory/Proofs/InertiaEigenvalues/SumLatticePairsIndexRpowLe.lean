@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.LengthCommensurableSpanSpanOfDetNeZero
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsLengthEqAndCardEqPowOfIsFiniteLength
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SumSublatticeIndexRpowLeSolomonStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0016
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0067
 
 open MeasureTheory Filter Topology
 open scoped InnerProductSpace BigOperators

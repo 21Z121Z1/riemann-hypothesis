@@ -1,4 +1,4 @@
-import Development.AbelianVarietyTheory.Statements.CuspidalUnitaryTwists.SlopeE
+import Development.AbelianVarietyTheory.Statements.CuspidalUnitaryTwists.Bundle0001
 import Formalism.LocalToGlobal.Columns.CoefficientsModP.PairingNondegenerateHolds
 import Formalism.GradedWeylDivisibility.DualWeylDominanceOf
 import Formalism.HarderNarasimhan.ShiftInvariance

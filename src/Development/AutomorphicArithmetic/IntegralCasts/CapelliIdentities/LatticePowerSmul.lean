@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.WeaklyAdmissibleFiltrations.Statement
 import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
-import Formalism.SharpRestriction.LevelLetterCocycles.ElementDenominator
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsPotential
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsPowSmulMemAlt
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0007
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0017
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0020
 
 theorem UpperTheory.Reformulated.B.LatticePowerSmul.exists_pow_smul_mem_lattice_alt :
     ∀ {l : ℕ} [inst : Fact (Nat.Prime l)] (LL : Formalism.BasicNotions.Loc.FinExt l) (T : GlobalTheory.BKGal.QLat LL) (v : T.V),

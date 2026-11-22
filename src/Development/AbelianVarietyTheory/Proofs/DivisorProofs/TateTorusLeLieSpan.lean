@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpecialFibreNotInClosure
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1644
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.EpsilonPairingZeta
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HodgeTateKernel
-import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsIsPowGrpSplitTorus
+import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0011
 
 set_option autoImplicit false
 

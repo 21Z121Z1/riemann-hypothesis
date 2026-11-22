@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ResidueInjectivityAt
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0026
 
 noncomputable section
 

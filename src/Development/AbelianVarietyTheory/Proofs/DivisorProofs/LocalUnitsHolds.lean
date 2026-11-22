@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpecialFibreNotInClosure
-import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.LePreimageOfClosedPoint
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsAdicCompleteOfFiniteBasis
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsAdicCompleteOfPowLeOfPowLe
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1644
+import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0024
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0028
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0029
 
 open MvPowerSeries
 

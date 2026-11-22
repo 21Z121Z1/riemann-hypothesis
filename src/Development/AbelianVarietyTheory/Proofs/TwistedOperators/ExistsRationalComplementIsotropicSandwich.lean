@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MeanXMulStarRat
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RationalSymplecticPointsSelfAnnihilator
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0277
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0332
 
 noncomputable section
 

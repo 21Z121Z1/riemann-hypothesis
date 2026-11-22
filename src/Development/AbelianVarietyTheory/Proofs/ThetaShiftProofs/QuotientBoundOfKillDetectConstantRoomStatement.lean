@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.QuotientBoundOfKillDetectConstantRoom
-import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.CarchAt
+import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0072
+import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.Bundle0001
 import Development.AbelianVarietyTheory.Definitions.ThetaValues.GamAt
 import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.QatOfBridgeAlt
 open NumberField IsDedekindDomain ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.FD ReciprocityTheory.ChartRestriction.G.FreeQuotientRank

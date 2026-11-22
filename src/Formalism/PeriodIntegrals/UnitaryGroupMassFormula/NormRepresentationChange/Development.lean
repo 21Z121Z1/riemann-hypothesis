@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.PeriodIntegrals.PairValDefs
-import Formalism.PeriodIntegrals.NormRepChange
+import Formalism.PeriodIntegrals.Bundle0032
+import Formalism.PeriodIntegrals.Bundle0033
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormRepresentationChange.IsLoUniConjTranspose
 
 noncomputable section

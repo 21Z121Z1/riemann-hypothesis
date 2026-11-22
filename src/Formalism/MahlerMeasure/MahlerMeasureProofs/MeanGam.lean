@@ -1,6 +1,6 @@
-import Formalism.MahlerMeasure.StatementTM
-import Formalism.MahlerMeasure.GamInt
-import Formalism.MahlerMeasure.LegendreDigits
+import Formalism.MahlerMeasure.Bundle0007
+import Formalism.MahlerMeasure.Bundle0005
+import Formalism.MahlerMeasure.Bundle0004
 
 namespace Formalism.GM.MeanGammaLemmas
 open Polynomial Finset

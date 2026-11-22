@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.LocalFields.UpperNumbering
+import GroundTheory.LocalFields.Bundle0010
 import GroundTheory.LocalFields.LubinTateTowerMaps
 import GroundTheory.LocalFields.SeparableClosure
 

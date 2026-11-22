@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.KudlaSplittingSplitUnitary
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.SumSquaresNeThreeThreeAdic
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilObjectsInhabited
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0284
 
 noncomputable section
 

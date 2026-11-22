@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.TwistedProofs.IsOrthogonalSlopeTestFamily
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaRestrictIsotropicQuotientWittTowerPropertie
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFundamentalDomainMassOneCocompactLattice
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0346
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0600
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum Formalism.IndefR.Eqv Formalism.IndefR.Mi Formalism.IndefR.Mult MeasureTheory Matrix GlobalTheory.CompanionTheory.IndefiniteRowSideFullHecke.BesselPeriodFreeData GlobalTheory.CompanionTheory.SepInhab
 open scoped TensorProduct

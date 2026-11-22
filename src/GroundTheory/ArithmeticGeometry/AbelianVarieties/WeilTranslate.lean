@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.ArithmeticGeometry.AbelianVarieties.DivisorsPullback
+import GroundTheory.ArithmeticGeometry.AbelianVarieties.Bundle0002
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.KernelCard
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.DivisionPoints
 

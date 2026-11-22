@@ -1,5 +1,5 @@
-import Development.WeilBound.ThetaLifts.LatticeBasics.CuspLift
-import Development.WeilBound.ThetaLifts.LatticeBasics.ConvOfCpt
+import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0017
+import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0024
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.OrthogonalDecomposition.SigThConst
 
 noncomputable section

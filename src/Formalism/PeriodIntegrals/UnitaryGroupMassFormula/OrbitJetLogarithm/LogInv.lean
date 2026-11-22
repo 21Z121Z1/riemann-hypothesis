@@ -1,5 +1,5 @@
 import Formalism.PeriodIntegrals.OrbJetBase
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.OrbitPowerSeriesCoefficients.ExpSum
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.OrbitPowerSeriesCoefficients.Bundle0001
 
 noncomputable section
 

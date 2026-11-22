@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteReal.ConcretePkgSpec
-import Formalism.LocalToGlobal.IndefiniteReal.FWTie
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0023
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0026
 
 noncomputable section
 

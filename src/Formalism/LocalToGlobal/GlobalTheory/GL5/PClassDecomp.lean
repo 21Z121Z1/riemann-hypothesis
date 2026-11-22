@@ -1,7 +1,7 @@
 import Formalism.LocalToGlobal.GlobalTheory.GL5.FamilyMassVolumeIdentityOfClassDecomp
 import Formalism.LocalToGlobal.GlobalTheory.GL1.CompactFixesLattice.ExistsDenOfIsCompact
-import Formalism.LocalRingCardinality.PosOfIsomEmb
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.EmbeddingTypeJumps
+import Formalism.LocalRingCardinality.Bundle0005
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0077
 
 noncomputable section
 

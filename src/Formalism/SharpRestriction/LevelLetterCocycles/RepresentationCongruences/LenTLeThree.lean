@@ -1,6 +1,6 @@
-import Formalism.SharpRestriction.LevelLetterCocycles.AdmBoundsBOfAdm
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0012
 import Formalism.SharpRestriction.LevelLetterCocycles.BaseChangePreservesUnitaryOf
-import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.InvSubOneSqLeInv
+import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.Bundle0002
 
 noncomputable section
 

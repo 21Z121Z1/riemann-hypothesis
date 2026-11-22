@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.FunctionField.DivisorDegree
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Birational
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ToFirst
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0014
 
 noncomputable section
 

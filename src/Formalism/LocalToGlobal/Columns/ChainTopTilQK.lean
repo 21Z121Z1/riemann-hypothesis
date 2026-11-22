@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.Columns.ChainTopTilQ
-import Formalism.LocalToGlobal.Columns.ChainLawXi
+import Formalism.LocalToGlobal.Columns.Bundle0064
+import Formalism.LocalToGlobal.Columns.Bundle0048
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.TopLawQ
 import Formalism.LocalToGlobal.Columns.BaseLemmas
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GEquivIntL
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0340
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FSatakeC
 
 noncomputable section

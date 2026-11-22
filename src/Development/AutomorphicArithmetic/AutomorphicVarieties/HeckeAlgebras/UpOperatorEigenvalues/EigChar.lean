@@ -1,7 +1,7 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.HeckeCommRing
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.HidaCompleteRings.HeckeRestr
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.HidaCompleteRings.HeckeModel
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.NormLtOne
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.HidaCompleteRings.Bundle0004
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.HidaCompleteRings.Bundle0003
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0051
 open IsLocalRing UpperTheory.V.Hi Matrix
 
 namespace UpperTheory.V.Hi.Up

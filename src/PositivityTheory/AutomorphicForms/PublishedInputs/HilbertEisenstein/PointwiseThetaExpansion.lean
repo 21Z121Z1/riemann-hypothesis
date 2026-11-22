@@ -1,6 +1,6 @@
-import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.SExpDefs
-import GroundTheory.GlobalFields.TateThesis.EulerFactorsInfinite
-import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.HasTemperateGrowthArchPoly
+import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Bundle0004
+import GroundTheory.GlobalFields.TateThesis.Bundle0008
+import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Bundle0006
 
 noncomputable section
 

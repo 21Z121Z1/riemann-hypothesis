@@ -1,8 +1,8 @@
 import Development.WeilBound.CoreStatements.AutomorphicKernels.MoriwakiBigness.MoriwakiBigTheorem.HSChain
 import Development.WeilBound.CoreStatements.AutomorphicKernels.MoriwakiBigness.MoriwakiSymmetry.EqMapSymm
-import Development.WeilBound.CoreStatements.ResolutionCharZero.PlugResK
+import Development.WeilBound.CoreStatements.ResolutionCharZero.Bundle0002
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.PoincareLelong.PoincareLelongInv
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.ArithIntersectionSystemOfPoincareLelongStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0179
 
 namespace PositivityTheory.Pf1.HilbertSamuelMoriwaki
 

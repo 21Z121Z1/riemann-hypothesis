@@ -1,4 +1,4 @@
-import Development.WeilBound.ThetaLifts.EigenvalueEndgame.CuspidalAverages.LeSuccIff
+import Development.WeilBound.ThetaLifts.EigenvalueEndgame.CuspidalAverages.Bundle0001
 
 noncomputable section
 

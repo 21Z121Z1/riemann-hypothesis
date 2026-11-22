@@ -3,7 +3,7 @@ import Formalism.SharpRestriction.AdmissibleParameterJoins.DIVfromGLo
 import Formalism.SharpRestriction.GrowthBounds.TopChoiceBounds
 import Formalism.LogFactorialBounds.LogFactorialProofs.PrimeSum
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.ExistsNsmulMem
-import Formalism.SizeWindowBrackets.ChainSlopeWindows.WeightedSlopeExcessDecomposition
+import Formalism.SizeWindowBrackets.ChainSlopeWindows.Bundle0001
 
 open Module NumberField IsDedekindDomain
 

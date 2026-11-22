@@ -1,6 +1,6 @@
 import Formalism.LocalToGlobal.Columns.PolyFnLemmas
 import Formalism.LocalToGlobal.Columns.LocWLemmas
-import Formalism.LocalToGlobal.Columns.CoefficientsModP
+import Formalism.LocalToGlobal.Columns.Bundle0014
 import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLocGen
 
 open NumberField IsDedekindDomain Module Matrix

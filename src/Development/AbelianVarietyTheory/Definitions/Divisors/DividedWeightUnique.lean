@@ -2,8 +2,8 @@ import Mathlib
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.SlopeBoundOfConditionsWithErrorForFrames
 import Formalism.SharpRestriction.Divisibility.WeightThresholdDefs
 import Formalism.LocalRingCardinality.DataParams₂
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsLimDeg
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ComponentMean
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0024
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0019
 
 open Formalism.BasicNotions Formalism.BasicNotions.DV Formalism.MainNotions Formalism.L2.Indef.Tree NumberField
 

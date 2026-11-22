@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.PositionPot
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterNamed
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.MixedIntegralModelFormulaStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularChartDataPropertiesStatement
-import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PNbarLeviChartReg
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0100
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0013
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0138
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0055
+import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.Bundle0030
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField Matrix Filter Topology
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi
 open GroundTheory.Heights₂.Heights.LowerBoundFree GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Cusp

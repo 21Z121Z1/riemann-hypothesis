@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.ExistsIsotypicDecomposition
+import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.Bundle0006
 
 noncomputable section
 

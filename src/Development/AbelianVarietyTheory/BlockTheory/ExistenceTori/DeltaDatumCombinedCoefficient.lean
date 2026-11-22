@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.LevelIndexFourierCharacter
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.NsmulMemSmulTop
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0029
 
 set_option autoImplicit false
 

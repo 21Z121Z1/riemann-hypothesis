@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.PeriodIntegrals.LocDualGen
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalDualGenerator.FpDualUnram
+import Formalism.PeriodIntegrals.Bundle0020
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalDualGenerator.Bundle0001
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalDualGenerator.DualAtLMulUnit
 
 noncomputable section

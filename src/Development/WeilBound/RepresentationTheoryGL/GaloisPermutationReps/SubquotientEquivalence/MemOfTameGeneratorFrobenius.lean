@@ -1,8 +1,8 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.GaloisPermutationReps.SubquotientEquivalence.IsTypeMap
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.TeichmullerInertiaLabelCondition
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTameGenAt
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValuationApplyOfWild
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0105
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0084
 
 noncomputable section
 

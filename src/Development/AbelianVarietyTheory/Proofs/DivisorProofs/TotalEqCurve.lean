@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsFlagBundleRankOne
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TotalEqOfNonneg
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BcDensEqOfGram
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0077
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1583
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1536
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NontrivialIsomClassInt
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsBlockOrderedSumEquivTrueIndex
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0565
 
 set_option autoImplicit false
 

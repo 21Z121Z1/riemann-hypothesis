@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsVertRIndexSteps
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0037
 import GroundTheory.HeightsAndTheta.Heights.Intersections.NotIsUnitOfNumMem
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals.MemMCoordIdealOfAevalEqZero
-import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.PCurveDivVertical
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals.Bundle0001
+import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0004
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TotalDegreeSubstFLe
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.EqZeroOfLintegralEqZero
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.HeisenbergDerivativeCommutatorRelation
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0030
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0078
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0031
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.EmbeddingXiZeroNeZero
-import ReciprocityTheory.SemistableReduction.AlgebraicIndependentOfDerivations
+import ReciprocityTheory.SemistableReduction.Bundle0001
 
 noncomputable section
 

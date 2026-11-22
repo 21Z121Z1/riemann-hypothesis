@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsGeneratedNonzeroSection
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0063
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGenOnFibres
 set_option maxSynthPendingDepth 1
 

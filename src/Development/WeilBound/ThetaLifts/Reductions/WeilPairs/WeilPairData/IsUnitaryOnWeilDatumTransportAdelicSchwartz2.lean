@@ -1,1 +1,1 @@
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitaryOnWeilDatumTransportAdelicSchwartzStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1977

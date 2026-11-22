@@ -1,7 +1,6 @@
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.UJClassFin
-import Formalism.PeriodIntegrals.UJClassMassAlt
-import Formalism.PeriodIntegrals.MassRankOne
-import Formalism.GL3MeanSquares.GenusMeanAsymptotics.UnimodularClassRepresentatives.FiniteDimensionalOfOrtho
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0030
+import Formalism.PeriodIntegrals.Bundle0025
+import Formalism.GL3MeanSquares.GenusMeanAsymptotics.UnimodularClassRepresentatives.Bundle0012
 import Formalism.LocalToGlobal.GlobalTheory.GL5.PClassZero
 import Formalism.LocalToGlobal.GlobalTheory.GL5.PClassSteps
 

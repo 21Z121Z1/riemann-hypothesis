@@ -1,11 +1,11 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteReal.ConcretePkgSpec
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0023
 import Formalism.LocalToGlobal.IndefiniteReal.FWExist
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.ONLeaves
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LiftWeightComplexPointEqTwist
 import Development.AbelianVarietyTheory.Definitions.Foundations.ThetaSeriesTies
-import Development.AbelianVarietyTheory.Counterexamples.RotationExamples.ExistsCharNotOnto
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ClassPresBasic
+import Development.AbelianVarietyTheory.Counterexamples.RotationExamples.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0074
 
 set_option autoImplicit false
 

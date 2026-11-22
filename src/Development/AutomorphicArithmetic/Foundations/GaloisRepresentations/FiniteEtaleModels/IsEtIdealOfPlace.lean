@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsEtPlace
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsHeckeMap
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0019
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0020
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsTjCorrDiagModel
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsEtLevOver
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0640
 
 noncomputable section
 

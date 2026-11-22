@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KerInfMemLocSpan
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0901
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StrongMultiplicityOne
-import GroundTheory.AutomorphicForms.MultiplicityOne.Injective
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfMemCell
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompactOpenSubgroupSubsetNhdsOne
+import GroundTheory.AutomorphicForms.MultiplicityOne.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0928
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1425
 open NumberField IsDedekindDomain GlobalTheory.CuspRep Formalism.UG GlobalTheory.LFun Matrix MeasureTheory
 
 noncomputable section

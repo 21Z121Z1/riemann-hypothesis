@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.NonvanishingBesselPeriod
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.Bundle0004
 import Formalism.SharpRestriction.CuspSpanNormBounds.DiscreteSeriesWeylDimension
 import Formalism.SharpRestriction.AdmissibleParameterJoins.SfromGLe
 

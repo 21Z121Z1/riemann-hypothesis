@@ -1,6 +1,6 @@
 import Development.WeilBound.CoreStatements.ProjectiveValuations.FrequentlyNeZero
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSecReadingDecreasingIntegerExponents
-import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsEvenSecEvRNeZero
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2176
+import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0041
 
 open CategoryTheory AlgebraicGeometry NumberField ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.FD Formalism.L2.Pj GlobalTheory.CompanionTheory.Ar.OntoDef GlobalTheory.CompHS
 open GlobalTheory.CompanionTheory.Ar.HolExt DifferentiableLines

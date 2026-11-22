@@ -1,5 +1,5 @@
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleRanksRankComplement
+import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0004
 
 noncomputable section
 

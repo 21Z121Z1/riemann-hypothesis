@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StReducedNormalisationPlace
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0133
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PMinimalPrimePlace
 set_option maxSynthPendingDepth 1
 

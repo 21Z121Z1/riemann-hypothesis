@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.GL3MeanSquares.CongruenceTorsion
-import Formalism.GL3MeanSquares.HookFormulaTorsion.DifferenceStableUnderAction
+import Formalism.GL3MeanSquares.Bundle0002
+import Formalism.GL3MeanSquares.HookFormulaTorsion.Bundle0007
 import Formalism.GL3MeanSquares.HookFormulaTorsion.DifferentIdealConditions
 import Formalism.FrobeniusOrbits.HostCorollaries
 import Formalism.TameInertiaTowers.TowerFieldFoundations

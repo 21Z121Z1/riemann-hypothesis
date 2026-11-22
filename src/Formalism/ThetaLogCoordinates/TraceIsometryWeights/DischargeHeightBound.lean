@@ -1,7 +1,6 @@
 import Formalism.ThetaLogCoordinates.TraceIsometryWeights.FinalP
-import Formalism.ThetaLogCoordinates.TraceIsometryWeights.SchurTraceProofs.WeylInt
-import Formalism.ThetaLogCoordinates.TraceIsometryWeights.SchurTraceProofs.ZpClosedToAddSubgroup
-import Formalism.ThetaLogCoordinates.TraceIsometryWeights.SchurTraceProofs.CompEqZeroOfNotDle
+import Formalism.ThetaLogCoordinates.TraceIsometryWeights.SchurTraceProofs.Bundle0003
+import Formalism.ThetaLogCoordinates.TraceIsometryWeights.SchurTraceProofs.Bundle0004
 
 namespace Formalism.InvariantFactorPaths.PW.Top
 

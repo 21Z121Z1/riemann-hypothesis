@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.DegreeTopEqArithDegree
-import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.FiniteSupportHeight
+import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0004
+import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0002
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.StatementsBundles
 set_option maxSynthPendingDepth 1
 

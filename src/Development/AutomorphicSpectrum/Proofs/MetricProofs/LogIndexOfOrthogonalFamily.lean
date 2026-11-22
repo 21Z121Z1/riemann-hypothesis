@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsAdapted
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.RelatedPairsOrbitalTermEq
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ProjSumSumEmbeddingsEqTrace
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0006
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0016
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0015
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.PDifferentLatIndex
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.EigenLatticesDifferentStatementHoldsStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0050
 
 noncomputable section
 

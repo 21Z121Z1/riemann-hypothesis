@@ -1,9 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.ToricGeometry.FourierCoeffUnitCubeTranslateOfEntirePeriodic
-import Development.AbelianVarietyTheory.Proofs.ToricGeometry.EntirePeriodicEqZeroOfFourierCoeffEqZero
-import Development.AbelianVarietyTheory.Proofs.ToricGeometry.CardLePowOfLinearIndependent
+import Development.AbelianVarietyTheory.Proofs.ToricGeometry.Bundle0005
+import Development.AbelianVarietyTheory.Proofs.ToricGeometry.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.ToricGeometry.Bundle0001
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.IsUnitOfLagrangian
-import Development.AbelianVarietyTheory.Proofs.ToricGeometry.CardLePowOfLinearIndependentThetaPrincipal
 
 open Matrix
 open scoped ComplexOrder

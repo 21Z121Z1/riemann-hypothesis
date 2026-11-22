@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.GelfandTransference.EnergyIdentity
+import Formalism.GelfandTransference.Bundle0001
 
 namespace Formalism.SA.D
 

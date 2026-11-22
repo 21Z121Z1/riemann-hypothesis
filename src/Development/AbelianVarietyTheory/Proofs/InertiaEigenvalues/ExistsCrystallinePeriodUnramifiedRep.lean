@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TwistStep
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0011
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormSubLtOneOfFix
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsLiftsOfNormLeOne
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0279
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowMulMemLatIff
 import Formalism.SharpRestriction.LevelLetterCocycles.ProdOneSubPrimitiveRoots
 

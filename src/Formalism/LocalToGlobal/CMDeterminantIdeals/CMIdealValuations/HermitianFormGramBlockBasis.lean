@@ -1,5 +1,4 @@
-import Formalism.LocalToGlobal.CMDeterminantIdeals.StatementS
-import Formalism.LocalToGlobal.CMDeterminantIdeals.CmNumbersLink
+import Formalism.LocalToGlobal.CMDeterminantIdeals.Bundle0002
 import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.FiniteDetAddSmulOneEqZero
 import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.LargeResidueExtensionLemma
 

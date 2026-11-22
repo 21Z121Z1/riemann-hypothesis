@@ -1,4 +1,4 @@
-import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.DefsObj
+import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0001
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.FoundBridge
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RTwist
 

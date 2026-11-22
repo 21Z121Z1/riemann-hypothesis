@@ -1,6 +1,6 @@
-import Formalism.LocalToGlobal.ProjectiveLattices.TieReadingOf
-import Formalism.LocalToGlobal.ProjectiveLattices.CuspMulOf
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.OntoStatementPfS
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0049
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0025
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0019
 
 noncomputable section
 

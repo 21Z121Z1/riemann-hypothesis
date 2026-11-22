@@ -1,8 +1,8 @@
-import Development.WeilBound.CoreStatements.VolumeEquality.DegPushDefs
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PDivCycleMul
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Cartier
+import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0006
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0011
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0002
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PGenericProjClosureDivisor
-import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Assembly
+import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0013
 
 noncomputable section
 

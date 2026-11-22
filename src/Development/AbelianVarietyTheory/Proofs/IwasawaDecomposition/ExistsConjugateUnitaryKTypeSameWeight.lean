@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
-import ReciprocityTheory.DualLattices.FischerSelfNeZero
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TotalDegreeSubstFLe
+import ReciprocityTheory.DualLattices.Bundle0018
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0030
 
 open Formalism.MainNotions.S Matrix GlobalTheory.CompactHowe
 open scoped TensorProduct

@@ -1,6 +1,6 @@
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ScaleGenIsGen
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermBPrim
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermFunPf
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0021
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
 
 set_option autoImplicit false
 

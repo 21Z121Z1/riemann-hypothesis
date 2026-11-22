@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.SpanRatSmulMem
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0008
 
 open NumberField ReciprocityTheory.ChartRestriction.G.FD Formalism.L2.Pj.FJ
 open scoped ComplexConjugate

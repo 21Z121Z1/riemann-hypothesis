@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.SimpleTwistedTraceFormulaStable
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedOrbitalIntegralEqSumSmallerLevelStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1316
 
 open GlobalTheory.BCT
 open scoped Classical

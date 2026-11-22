@@ -3,13 +3,13 @@ import Development.WeilBound.ThetaLifts.LeviDeterminants.ThetaEvaluationZeroCone
 import Development.WeilBound.ThetaLifts.WeilDomination.ExistsUnitChrWNe
 import Development.WeilBound.ThetaLifts.CartanFactorisation.InjPure
 import Mathlib
-import Development.WeilBound.ThetaLifts.CartanFactorisation.PolCountFinal
-import Development.WeilBound.ThetaLifts.LatticeBasics.HgtInt
+import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0004
+import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0022
 import Development.WeilBound.ThetaLifts.WeilDomination.SwAnisoXOf
-import Development.WeilBound.ThetaLifts.LatticeBasics.BadFin
+import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0029
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.SoCoinvariantsOfBernstein
 import Development.WeilBound.ThetaLifts.SmallCones.SplitInv
-import Development.WeilBound.ThetaLifts.LocalTheory.HypOf
+import Development.WeilBound.ThetaLifts.LocalTheory.Bundle0002
 import Development.WeilBound.ThetaLifts.LocalTheory.UnramifiedCohomology.FLocBOf
 import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.BumpAFin
 import Development.WeilBound.ThetaLifts.LocalTheory.ToralCohomology.DarbouxExt
@@ -17,12 +17,11 @@ import Development.WeilBound.ThetaLifts.LocalTheory.UnramifiedCohomology.Unramif
 import Development.WeilBound.ThetaLifts.LocalTheory.DixmierCommutants.RamifiedMultiplicityOneOfBernstein
 import Development.WeilBound.ThetaLifts.LocalTheory.ToralCohomology.ArchimedeanMultiplicityOneOfLie
 import Development.WeilBound.ThetaLifts.LocalTheory.StandardValuations.ExistsVol
-import Development.WeilBound.ThetaLifts.LocalTheory.LocAOf
 import Development.WeilBound.ThetaLifts.LocalTheory.LocBOf
 import Development.WeilBound.ThetaLifts.Reductions.TopPolarZero.PolZero
 import Development.WeilBound.ThetaLifts.Reductions.JoinTriOf
 import Development.WeilBound.ThetaLifts.SphericalLattices.SphericalClosure.EndCore
-import Development.WeilBound.ThetaLifts.SphericalLattices.ThetaKillsCuspFormsSpherical
+import Development.WeilBound.ThetaLifts.SphericalLattices.Bundle0013
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.HoweMaximalTori.MaxFinTOfPublished
 
 theorem PositivityTheory.Sph.Tr.closeSph

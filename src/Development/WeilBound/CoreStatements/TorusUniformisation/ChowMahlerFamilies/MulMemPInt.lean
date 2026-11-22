@@ -1,9 +1,9 @@
 import Mathlib
-import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.IsDerAt0
-import Development.WeilBound.CoreStatements.HodgeTatePoints.CntCoord
-import Development.WeilBound.CoreStatements.HodgeTatePoints.RaChar
-import Development.WeilBound.CoreStatements.HodgeTatePoints.DetUpdateRowDiagonal
-import ReciprocityTheory.DualLattices.HasLenCokerDet
+import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.Bundle0020
+import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0021
+import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0007
+import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0009
+import ReciprocityTheory.DualLattices.Bundle0022
 
 open ReciprocityTheory.PGsh.L2 ReciprocityTheory.PGsh.Up GlobalTheory.CompanionTheory.Ar.GR PositivityTheory.HtPt.Ra
 open scoped Matrix

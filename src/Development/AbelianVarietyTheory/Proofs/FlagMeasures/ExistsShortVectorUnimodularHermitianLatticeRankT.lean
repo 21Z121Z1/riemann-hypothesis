@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsGaugeAll
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0007
 import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.CountSt
-import ReciprocityTheory.SemistableReduction.SemiDegC
+import ReciprocityTheory.SemistableReduction.Bundle0025
 
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S GlobalTheory.Count GlobalTheory.FlagMeas
 open scoped ComplexOrder MatrixOrder

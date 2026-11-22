@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-import Formalism.LocalToGlobal.UnitaryNorms.CharTied
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnderEqIffConjPl
+import Formalism.LocalToGlobal.UnitaryNorms.Bundle0006
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0104
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EtaEqJacobiSym
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsUnitNormOfIsCoprime
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0064
 
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.FrobeniusOrbits Neutral.B1 ReciprocityTheory.Neutral.Bridge.HCFR Formalism.L2.Host
 

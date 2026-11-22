@@ -1,4 +1,4 @@
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FSatake
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0012
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FIwasawa
 
 namespace Formalism.UG.P

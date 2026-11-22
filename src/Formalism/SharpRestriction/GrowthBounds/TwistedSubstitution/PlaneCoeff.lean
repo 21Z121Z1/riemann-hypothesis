@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.RestXiPOfNS
+import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.Bundle0014
 
 noncomputable section
 

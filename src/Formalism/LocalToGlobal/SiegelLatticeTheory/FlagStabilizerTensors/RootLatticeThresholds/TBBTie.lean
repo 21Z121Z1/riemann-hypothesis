@@ -1,6 +1,6 @@
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.UniformTheoremBOfLocalFrame
-import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.TopLevelBesselOfHypothesis
-import Formalism.HermitianCurvature.StatementTBB
+import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.Bundle0009
+import Formalism.HermitianCurvature.Bundle0007
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RestrictedTensorBasePointNormSq
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsIntOv
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfOrthogonalTranslates
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0142
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0103
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1259
 
 noncomputable section
 

@@ -1,5 +1,5 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.ExistsHaarStabilizer
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.ZhatSectionExists
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0104
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0079
 
 namespace Formalism.FourierDecayAlt.P.StabilizerDisintegration.A
 

@@ -1,4 +1,4 @@
-import Formalism.FilteredPoleLength.ReducedBasisBounds.BetaSesquilinearity
+import Formalism.FilteredPoleLength.ReducedBasisBounds.Bundle0002
 import Formalism.LogFactorialIndices.LogProductFormula
 import Formalism.LogFactorialIndices.SignedSubspaceIndex.SubspaceLatticeIndexSigned
 

@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.LocalToGlobal.Columns.CmUnramifiedOfFieldConditions
-import Formalism.LocalToGlobal.Columns.InputsLemmas
+import Formalism.LocalToGlobal.Columns.Bundle0016
 import Formalism.LocalToGlobal.Columns.FiniteSumNonzeroLargeDepth
-import Formalism.LocalRingCardinality.MinkMEqMinkowskiNumber
+import Formalism.LocalRingCardinality.Bundle0006
 
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.L2.DIV Formalism.HermitianLatticesTheory
 

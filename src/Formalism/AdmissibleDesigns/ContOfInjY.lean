@@ -1,4 +1,4 @@
-import Formalism.AdmissibleDesigns.YtTarget
+import Formalism.AdmissibleDesigns.Bundle0005
 import Formalism.AdmissibleDesigns.TensSubsingleton
 
 variable [hT2Core : Fact ReciprocityTheory.ChartRestriction.T2.Core]

@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion
 import Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.lemmaL
-import Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.WindowHypOfRpow
+import Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.Bundle0002
 
 open Complex MeasureTheory Set Filter Topology
 

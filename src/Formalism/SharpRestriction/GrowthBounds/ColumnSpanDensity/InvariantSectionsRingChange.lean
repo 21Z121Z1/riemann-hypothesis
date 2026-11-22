@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.IsLatticeMapSubIff
+import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.Bundle0009
 
 noncomputable section
 

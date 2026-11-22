@@ -1,8 +1,7 @@
-import Development.WeilBound.CoreStatements.VolumeEquality.DegPushDefs
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RealTowerProportionalStatement
+import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0006
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0032
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.GoodTowerRealAgreementStatement
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.TestPolynomialShiftTotalStatement
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CmHostRankBoundsStatement
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0040
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-import Formalism.LocalRingCardinality.DataBu
-import Formalism.LocalRingCardinality.DataAmbForm
+import Formalism.LocalRingCardinality.Bundle0001
+import Formalism.LocalRingCardinality.Bundle0002
 import Formalism.LocalRingCardinality.DataDIV
 import Formalism.LocalRingCardinality.DataTheta
 import Formalism.SharpRestriction.ParConsts

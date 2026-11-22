@@ -1,7 +1,7 @@
 import Mathlib
-import ReciprocityTheory.ClassFieldTheory.LocalClassField.TransportDefs
+import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0006
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.TransportA
-import ReciprocityTheory.ClassFieldTheory.LocalClassField.TransportB
+import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0016
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecArtin
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.Existence
 

@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreCut
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0064
 
 open Formalism.REAL Formalism.QuantumDeterminants Formalism.FourierDecayAlt Filter Topology
 

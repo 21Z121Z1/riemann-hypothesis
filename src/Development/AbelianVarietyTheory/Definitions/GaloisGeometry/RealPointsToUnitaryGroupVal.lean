@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.FinrankPartTrivialMulRel
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FinrankGroupCohomologyFunRep
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianCongrOfPositiveIndexEq
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BijectiveRealTensorToProdMatrixAlgebrasInfPlaces
-import Development.AbelianVarietyTheory.Definitions.Divisors.JmMulJm
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0015
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0999
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0982
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0009
 
 noncomputable section
 

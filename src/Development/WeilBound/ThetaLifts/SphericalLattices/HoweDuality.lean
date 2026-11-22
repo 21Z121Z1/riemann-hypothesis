@@ -2,7 +2,7 @@ import Development.WeilBound.ThetaLifts.SphericalLattices.HoweInert
 import Development.WeilBound.ThetaLifts.SphericalLattices.UnrAtDiv
 import Development.WeilBound.ThetaLifts.SphericalLattices.LocDataV
 import Development.WeilBound.ThetaLifts.SphericalLattices.LocDataVAlt
-import Development.WeilBound.ThetaLifts.SphericalLattices.GenOf
+import Development.WeilBound.ThetaLifts.SphericalLattices.Bundle0009
 
 noncomputable section
 

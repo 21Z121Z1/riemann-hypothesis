@@ -1,5 +1,5 @@
-import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.RepSmul
-import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.RepUniq
+import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.Bundle0006
+import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.Bundle0010
 
 noncomputable section
 

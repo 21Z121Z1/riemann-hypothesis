@@ -1,8 +1,8 @@
 import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialPullbackStatement
-import ReciprocityTheory.AnalyticForms.PotentialTheory.AnalyticSubsetChartLocal
-import ReciprocityTheory.AnalyticForms.PotentialTheory.LocDens
-import ReciprocityTheory.AnalyticForms.PotentialTheory.Partition
-import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.LintegralImageEqLintegralNormSqDetMul
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0002
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0005
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0004
+import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0004
 
 namespace ReciprocityTheory.AnForm.M
 

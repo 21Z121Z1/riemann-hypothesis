@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.MaxWeightGL1EqOne
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockParOpp
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocPartMul
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemInterConjIff
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0036
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0934
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0975
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0948
 open MeasureTheory Matrix
 open scoped Classical
 

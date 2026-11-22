@@ -1,11 +1,11 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.T2SpaceAdeleRing
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConstMemBddAut
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0182
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ThetaSourceAction
-import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.TameAtOne
+import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0006
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.HalfLinearCocycle
-import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.TrivialParameterBound
-import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.UpNonzero
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0021
+import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Bundle0002
 
 noncomputable section
 

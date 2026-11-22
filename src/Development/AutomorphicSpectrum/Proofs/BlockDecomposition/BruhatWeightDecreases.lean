@@ -1,9 +1,9 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.StrictDominance.UnitaryExtremality.SatPowNonvan
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsStrictDom
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsPermWOne
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemIwUIff
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IwahoriEntryBound
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0222
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0224
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0231
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0043
 open GlobalTheory.PRep Formalism.UG GlobalTheory.LFun PositivityTheory.SphericalProduct GlobalTheory.CompanionTheory.SatPow
 
 noncomputable section

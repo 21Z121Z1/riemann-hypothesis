@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.SplitDecomp
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.Bundle0005
 
 noncomputable section
 

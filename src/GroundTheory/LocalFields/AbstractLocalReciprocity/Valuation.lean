@@ -2,7 +2,7 @@ import Mathlib
 import GroundTheory.LocalFields.AbstractLocalReciprocity.ExistsOpenSubgroupMemFixedModule
 import GroundTheory.LocalFields.AbstractLocalReciprocity.ExistsEqNsmulOfProjEqZero
 import GroundTheory.LocalFields.AbstractLocalReciprocity.UniqueQuotientSubgroupOfSelf
-import GroundTheory.PowerSubgroups.CountableNeighbourhoods.RelIndexSup
+import GroundTheory.PowerSubgroups.CountableNeighbourhoods.Bundle0001
 
 namespace GroundTheory.LocalField.Abstract
 

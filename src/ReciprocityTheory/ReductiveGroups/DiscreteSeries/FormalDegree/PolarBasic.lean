@@ -1,6 +1,6 @@
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.TraceMulSelfEqSumEigenvaluesSq
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.PolarBasicA
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.ExpInPPosDef
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0004
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.Bundle0003
 
 noncomputable section
 

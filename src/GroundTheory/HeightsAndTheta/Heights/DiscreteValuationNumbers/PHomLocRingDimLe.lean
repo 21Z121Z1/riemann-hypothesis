@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsHomLocRingLocal
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PHomLocRingLocal
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PMultiHomogPrimeCriterion
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0045
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0050
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0008
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.NumbersDVR

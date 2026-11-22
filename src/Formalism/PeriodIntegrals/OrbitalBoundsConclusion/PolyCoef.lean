@@ -1,3 +1,0 @@
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CompactGroupIntegrability.IsPositiveDefiniteMatrixCoefficientOfMemAlgA
-
-theorem polynomial_coefficients : PI.PolyCoef := PI.UnitaryGroupMassFormula.PolyCoef.polyCoef

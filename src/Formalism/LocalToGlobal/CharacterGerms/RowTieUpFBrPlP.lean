@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.CharacterGerms.NatCastMulTmul
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0004
 
 set_option autoImplicit false
 

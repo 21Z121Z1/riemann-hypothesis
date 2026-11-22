@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.LocalToGlobal.IndefiniteForms.IndefSide
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ConjugateWeightLatticeOfGeneral
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.KappaNormalise
-import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.RamBasic
+import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.Bundle0003
 
 open Module NumberField IsDedekindDomain
 open scoped Matrix ComplexOrder InnerProductSpace

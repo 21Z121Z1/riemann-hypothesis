@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.LatticeGeometry.ViewsC
-import Formalism.SharpRestriction.Divisibility.PrinLevClass
+import Formalism.SharpRestriction.Divisibility.Bundle0001
 import Formalism.SharpRestriction.Divisibility.LatticeTransfer
 import Formalism.SharpRestriction.Divisibility.PlaceRankTwoOne
 import Formalism.SharpRestriction.Divisibility.SchurIrreducible
@@ -13,9 +13,9 @@ import Formalism.SharpRestriction.Divisibility.LocalNonemptiness.SubsingletonRan
 import Formalism.SharpRestriction.Divisibility.LocalNonemptiness.WeightAlgebra
 import Formalism.SharpRestriction.Divisibility.LocalNonemptiness.LiftErrorLocal
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.ExampleSatisfiesConditionsAtFive
-import Formalism.LocalRingCardinality.DataExtra
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsProvisionalShimX
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SubRkOfPsiOfEqRkOfCEmb
+import Formalism.LocalRingCardinality.Bundle0007
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0213
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0216
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsProvisionalDivX
 
 noncomputable section

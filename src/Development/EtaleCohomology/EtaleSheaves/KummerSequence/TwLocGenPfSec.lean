@@ -1,4 +1,4 @@
-import Development.EtaleCohomology.EtaleSheaves.KummerSequence.LeafKumMuInjPf
+import Development.EtaleCohomology.EtaleSheaves.KummerSequence.Bundle0002
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry Opposite TensorProduct GlobalTheory.EtC

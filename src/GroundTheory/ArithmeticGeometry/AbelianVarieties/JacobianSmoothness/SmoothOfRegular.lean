@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.ArithmeticGeometry.SchemeCohomology.RegularLocalDomain
+import GroundTheory.ArithmeticGeometry.SchemeCohomology.Bundle0001
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Arith.Jacobian

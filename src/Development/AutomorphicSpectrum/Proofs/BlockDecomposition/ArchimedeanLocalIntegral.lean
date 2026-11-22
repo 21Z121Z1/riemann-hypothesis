@@ -1,8 +1,8 @@
 import Mathlib
 import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.VerticalStrips.UnramifiedEulerProductIntegral
-import GroundTheory.GlobalFields.TateThesis.EulerFactorsInfinite
+import GroundTheory.GlobalFields.TateThesis.Bundle0008
 import GroundTheory.AutomorphicForms.GL2Classical.KFinite
-import GroundTheory.GlobalFields.TateThesis.FiniteOrderParams
+import GroundTheory.GlobalFields.TateThesis.Bundle0006
 
 noncomputable section
 

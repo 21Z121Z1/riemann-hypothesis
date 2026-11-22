@@ -1,5 +1,5 @@
 import Development.WeilBound.CoreStatements.BetaInfinityCoefficients.MatrixCoefficientRankOneSchur
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutNormDegGCut
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0305
 
 namespace MainStatements.BetaInf
 

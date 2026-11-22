@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.ValUniqOf
+import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0002
 import Formalism.SharpRestriction.GrowthBounds.DataGChain
 
 noncomputable section

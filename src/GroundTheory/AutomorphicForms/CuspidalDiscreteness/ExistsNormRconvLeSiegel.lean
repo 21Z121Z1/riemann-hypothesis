@@ -2,7 +2,7 @@ import Mathlib
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.RconvDiff
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SiegelConj
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SiegelCount
-import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SiegelFinite
+import GroundTheory.AutomorphicForms.CuspidalDiscreteness.Bundle0001
 
 open MeasureTheory Set Filter Topology Function
 open NumberField IsDedekindDomain

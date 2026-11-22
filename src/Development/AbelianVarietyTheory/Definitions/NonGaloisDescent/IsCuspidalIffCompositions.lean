@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.Divisibility.DefGroup
 import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.BlockTriangularOfSubOne
-import Development.AbelianVarietyTheory.Definitions.Foundations.SmoothPartStable
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0002
 import Development.AbelianVarietyTheory.Definitions.Divisors.SplitDoublingNBlock
 
 noncomputable section

@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalRingCardinality.Params
 import Formalism.HermitianLattices.StatementLat
-import Formalism.HermitianLattices.StatementMass
+import Formalism.HermitianLattices.Bundle0003
 import Formalism.SatakeDualWeyl.Statement
 
 noncomputable section

@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.MeasuresModulus
-import GroundTheory.AutomorphicForms.LocallyProfinite
+import GroundTheory.AutomorphicForms.Bundle0002
 
 namespace GroundTheory.Automorphic
 

@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsKSValueOneOfRetraction
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DpExpEqSumRangeOfVanish
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0656
 
 set_option autoImplicit false
 

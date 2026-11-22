@@ -1,9 +1,9 @@
 import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialPullbackStatement
 import ReciprocityTheory.AnalyticForms.PotentialTheory.Stokes
-import ReciprocityTheory.AnalyticForms.PotentialTheory.LogInt
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0007
 import ReciprocityTheory.AnalyticForms.PotentialTheory.SNCAtlas
-import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.GreenOfPoincareLelongHyperplane
-import ReciprocityTheory.AnalyticForms.PotentialTheory.IsCompatChartRestrOpen
+import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0001
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0011
 
 namespace ReciprocityTheory.AnForm.M
 

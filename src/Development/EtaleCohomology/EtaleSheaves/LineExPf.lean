@@ -1,4 +1,4 @@
-import Development.EtaleCohomology.EtaleSheaves.ChowLCut
+import Development.EtaleCohomology.EtaleSheaves.Bundle0017
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry LateralTheory.E.t_E2Cut

@@ -1,6 +1,6 @@
 import ReciprocityTheory.DualLattices.NsmulTensorEqZero
-import ReciprocityTheory.DualLattices.SmKerSurj
-import ReciprocityTheory.DualLattices.TangentPairingStatement
+import ReciprocityTheory.DualLattices.Bundle0019
+import ReciprocityTheory.DualLattices.Bundle0016
 
 noncomputable section
 

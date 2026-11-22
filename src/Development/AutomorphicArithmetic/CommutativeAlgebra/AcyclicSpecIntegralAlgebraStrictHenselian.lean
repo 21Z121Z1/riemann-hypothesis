@@ -1,5 +1,5 @@
-import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
-import Development.AutomorphicArithmetic.CommutativeAlgebra.AcyclicSpecFiniteAlgebraStrictHenselian
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0009
+import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0041
 import Development.AutomorphicArithmetic.CommutativeAlgebra.TwistCohomologyCommutesWithFilteredColimits
 
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC

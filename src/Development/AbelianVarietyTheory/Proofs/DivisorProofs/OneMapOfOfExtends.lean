@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PinsMerge
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1670
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsOmegaField
 
 set_option autoImplicit false

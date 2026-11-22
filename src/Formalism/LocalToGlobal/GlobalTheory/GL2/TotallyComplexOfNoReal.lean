@@ -3,7 +3,7 @@ import Formalism.SharpRestriction.GlobalSchurBounds.FirstClaimLemmaTwoFourOfLemm
 import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleLayerExistsGenerators
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Principal
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.SplitK
-import Formalism.UnipotentAdelicQuotients.ClassNumberQuad
+import Formalism.UnipotentAdelicQuotients.Bundle0001
 
 noncomputable section
 

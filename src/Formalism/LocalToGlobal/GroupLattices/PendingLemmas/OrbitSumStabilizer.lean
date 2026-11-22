@@ -1,6 +1,6 @@
 import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.WeightUpdateAtPlace
 import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.TminusLinApply
-import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.NatCastInvMemRp
+import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.Bundle0006
 
 noncomputable section
 

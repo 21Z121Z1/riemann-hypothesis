@@ -1,3 +1,3 @@
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselNormSqEqConstMulArchPairingStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0152
 import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Imports
 import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr

@@ -1,6 +1,6 @@
-import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.ActsLinOfSplitLin
-import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.IdemUniq
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.TendstoCut
+import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0004
+import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0010
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0065
 
 noncomputable section
 

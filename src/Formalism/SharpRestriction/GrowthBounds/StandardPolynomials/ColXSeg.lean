@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.ColDef
-import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.OtherStart
+import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.Bundle0008
+import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0003
 
 noncomputable section
 

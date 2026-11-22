@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CompGvec
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CarrierIndependentSpanIff
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GrassmannCellSpanPreserved
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0610
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0661
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0633
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GrassmannCellCoordinatesExist
 
 set_option autoImplicit false

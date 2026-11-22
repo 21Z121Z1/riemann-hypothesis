@@ -1,6 +1,6 @@
 import Formalism.HarderNarasimhan.ShiftInvariance
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.PolygonSlopeSum
-import Formalism.HarderNarasimhan.StatementCor
+import Formalism.HarderNarasimhan.Bundle0001
 
 open Module Submodule
 

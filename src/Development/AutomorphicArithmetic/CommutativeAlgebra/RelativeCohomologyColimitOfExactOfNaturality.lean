@@ -1,6 +1,6 @@
 import Mathlib
-import Development.EtaleCohomology.EtaleSheaves.BridgeYfiPf
-import Development.EtaleCohomology.EtaleSheaves.GlueRelPfCone
+import Development.EtaleCohomology.EtaleSheaves.Bundle0079
+import Development.EtaleCohomology.EtaleSheaves.Bundle0075
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC

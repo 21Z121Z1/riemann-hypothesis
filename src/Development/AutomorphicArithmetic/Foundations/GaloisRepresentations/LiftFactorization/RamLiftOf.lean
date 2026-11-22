@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LiftFactorization.PolFalseIff
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.ArthurClozelStrongTC
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0010
 
 noncomputable section
 

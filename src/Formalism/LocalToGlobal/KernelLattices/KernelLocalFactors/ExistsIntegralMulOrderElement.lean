@@ -6,8 +6,8 @@ import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.SelfDualLattice
 import Formalism.LocalToGlobal.GlobalTheory.GL3.PLinkThU
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.DiscriminantRealSubfield
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.DiscrB
-import Formalism.LocalToGlobal.Columns.RowFormsSel
-import Formalism.LocalToGlobal.Columns.RecLevelLocP
+import Formalism.LocalToGlobal.Columns.Bundle0006
+import Formalism.LocalToGlobal.Columns.Bundle0016
 import Formalism.LocalToGlobal.Columns.RecLevelHost
 
 open NumberField IsDedekindDomain

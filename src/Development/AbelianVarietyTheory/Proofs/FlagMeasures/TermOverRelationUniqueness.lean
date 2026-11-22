@@ -1,11 +1,11 @@
 import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.IsTermOver
-import Development.AbelianVarietyTheory.Definitions.Foundations.IsHermND
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementReferenceCompactSubgroup
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GgNone
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0001
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0002
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SpanToLePerp
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FramesCommonStabiliserEqPairingMatrixStabiliser
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NotField
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0044
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SpanToZero
 
 open ValuativeRel Formalism.MainNotions.S Formalism.MainNotions.S.Loc GlobalTheory.HL

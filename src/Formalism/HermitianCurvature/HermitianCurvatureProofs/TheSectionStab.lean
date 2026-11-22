@@ -1,7 +1,7 @@
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.TheSection
 import Formalism.HermitianCurvature.StatementNF
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.TwoByOneBlock
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreCut
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0064
 
 open Matrix
 

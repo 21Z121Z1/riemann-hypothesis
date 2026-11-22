@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.TorMatch
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0080
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsToricRankOne
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsToricTorsionSectionsUniformisation
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClassifiedTorusTorsionPointEqUniformisationTorus
-import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.PtEqOfProportional
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0570
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0559
+import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0081
 
 noncomputable section
 

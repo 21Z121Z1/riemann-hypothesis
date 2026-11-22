@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.TwistedFlags.DownChainSucc
-import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
+import Development.AutomorphicSpectrum.Definitions.TwistedFlags.Bundle0001
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0054
 import Formalism.SharpRestriction.CuspSpanNormBounds.GlobAut
 
 noncomputable section

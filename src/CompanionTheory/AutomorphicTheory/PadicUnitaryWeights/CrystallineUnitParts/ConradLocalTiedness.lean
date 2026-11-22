@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.AlgebraicCharacterWD
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0009
 
 noncomputable section
 

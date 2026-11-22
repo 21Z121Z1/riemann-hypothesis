@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSliceTubeBandAbsEnergy
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0086
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSliceBandEnergy
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PConeLogBound
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0008
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

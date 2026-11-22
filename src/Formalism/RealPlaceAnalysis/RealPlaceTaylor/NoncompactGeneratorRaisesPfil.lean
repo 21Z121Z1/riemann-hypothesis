@@ -1,5 +1,5 @@
 import Formalism.RealPlaceAnalysis.StatementU
-import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
+import Formalism.RealPlaceAnalysis.Bundle0004
 
 open scoped InnerProductSpace
 open Finset

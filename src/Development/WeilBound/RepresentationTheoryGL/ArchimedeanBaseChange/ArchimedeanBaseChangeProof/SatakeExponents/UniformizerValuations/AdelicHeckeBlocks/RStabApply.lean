@@ -1,5 +1,5 @@
-import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.AdelRep
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinsumOutOfLe
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.Bundle0005
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0467
 
 noncomputable section
 

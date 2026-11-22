@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteReal.ConjSubConjSub
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0023
 import Formalism.LocalToGlobal.GaloisLevelStructure.TiedHecke
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdicIntegersCompact.IsCompactAdicCompletionIntegers
 

@@ -1,7 +1,6 @@
 import Mathlib
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.GCauchyStatement
-import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.FockTranslationLaws
-import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.IntegrableOnFundamentalDomainOfContinuous
+import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0003
 
 namespace GlobalTheory
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.GroupLattices.PerfectRings.IsLocalRingOfComplete
+import Formalism.LocalToGlobal.GroupLattices.PerfectRings.Bundle0001
 import Lemmata.FirstBlockLemmaF.Imports
 import Lemmata.GeneralBFactThird.Imports
 

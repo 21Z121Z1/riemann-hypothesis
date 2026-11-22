@@ -1,6 +1,6 @@
 import PositivityTheory.AutomorphicForms.PublishedInputs.CyclicBaseChange.SConjSpaceC
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharacterUnramifiedAeAndExistsLevel
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SatakeParametersOfTwist
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0101
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0954
 
 noncomputable section
 

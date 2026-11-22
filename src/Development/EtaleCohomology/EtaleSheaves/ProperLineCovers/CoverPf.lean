@@ -1,5 +1,5 @@
-import Development.EtaleCohomology.EtaleSheaves.LeafCurveCut
-import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsDomainAndIsIntegrallyClosedAtPrimeOfSmoothOfCo
+import Development.EtaleCohomology.EtaleSheaves.Bundle0010
+import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0003
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsNeZeroIsStandardSmoothOfRelativeDimension
 
 noncomputable section

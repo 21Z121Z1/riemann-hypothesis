@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSemiampleNef
-import GroundTheory.HeightsAndTheta.Heights.Intersections.PGeoNumCut
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PDivCycleMul
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PVocabDivCycle
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0076
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0015
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0011
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0016
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRed
 set_option maxSynthPendingDepth 1
 

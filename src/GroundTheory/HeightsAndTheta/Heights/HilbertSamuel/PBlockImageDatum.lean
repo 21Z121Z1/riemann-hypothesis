@@ -1,9 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBlockImageArith
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsAnResNullForm
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBlockImageInverse
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBlockImageMetrics
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBlockImageChi
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0040
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

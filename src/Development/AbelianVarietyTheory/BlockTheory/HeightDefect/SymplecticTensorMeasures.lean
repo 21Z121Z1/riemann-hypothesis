@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.BesselHermitianTheta.TiedKfin
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0004
 import Formalism.SharpRestriction.Divisibility.KudlaSiegelWeil
 
 noncomputable section

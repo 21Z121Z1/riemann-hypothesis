@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.FiniteDimensionalOfSlices
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0066
 
 open Matrix
 open Formalism.UG (cT)

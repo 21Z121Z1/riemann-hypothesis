@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsMuIsRamified
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0027
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.WindowLower
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DsPPosAndLower
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CardDvdCardGL
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0383
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0143
 
 noncomputable section
 

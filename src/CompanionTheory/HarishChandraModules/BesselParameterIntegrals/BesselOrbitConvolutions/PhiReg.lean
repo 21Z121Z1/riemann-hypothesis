@@ -1,5 +1,5 @@
 import CompanionTheory.HarishChandraModules.BesselParameterIntegrals.BesselOrbitConvolutions.BesselNonvanishingReduction
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.PhiRegOf
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0112
 
 noncomputable section
 open MeasureTheory Matrix

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsHilbRep
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0066
 
 set_option autoImplicit false
 

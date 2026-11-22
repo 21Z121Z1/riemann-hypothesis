@@ -1,0 +1,15 @@
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0185
+import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Imports
+import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
+import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Bundle0003
+
+-- bundled from CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.AemeasurableBesselNormIntegrandBigCellImports
+section
+
+end
+
+-- bundled from CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.BesselNormSqEqBigCellNormSqAltImports
+section
+
+end
+

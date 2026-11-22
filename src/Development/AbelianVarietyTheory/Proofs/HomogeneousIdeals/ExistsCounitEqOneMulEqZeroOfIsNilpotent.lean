@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.NatCardAlgHomEqFinrankOfIsReducedOfIsFractionRin
-import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.IsCounitDerivationCounitComp
+import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0002
 
 open Coalgebra Bialgebra HopfAlgebra WithConv
 open scoped TensorProduct

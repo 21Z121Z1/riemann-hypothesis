@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.LevelSubgroupCharacterUnitary
-import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.NormStepsLeviOntoS
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SignActionMapComm
+import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.Bundle0010
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0078
 
 noncomputable section
 

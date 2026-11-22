@@ -1,12 +1,11 @@
 import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.ThetaAutomorphy.ThetaSumSRat
 import Development.WeilBound.ThetaLifts.LatticeBasics.FdEqZero
-import Development.WeilBound.ThetaLifts.FrameEstimates.GrpTop
-import Development.WeilBound.ThetaLifts.FrameEstimates.BlockForm
+import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0003
+import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0002
 import Development.WeilBound.ThetaLifts.FrameEstimates.SiegelAll
-import Development.WeilBound.ThetaLifts.FrameEstimates.FundamentalDomainFiniteVolume
-import Development.WeilBound.ThetaLifts.CartanFactorisation.Unimod
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdmittedFormEqAdelicThetaDistributionStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzMapBarrelledSpaceStatement
+import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1847
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1865
 
 noncomputable section
 

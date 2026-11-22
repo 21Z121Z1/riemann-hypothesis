@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.PosCompatOfBase
-import Formalism.LocalToGlobal.HermitianColumns.StarConj
+import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.Bundle0004
+import Formalism.LocalToGlobal.HermitianColumns.Bundle0004
 
 noncomputable section
 

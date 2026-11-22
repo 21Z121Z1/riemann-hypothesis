@@ -1,7 +1,7 @@
 import Formalism.SharpRestriction.GrowthBounds.ValuationLowestDegreeRename
-import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.IndexOffRange
+import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.Bundle0002
 import Formalism.ThetaLogCoordinates.JacobiPathWeights.FinalP
-import Formalism.LocalToGlobal.GroupLattices.FockModels.WeylDim
+import Formalism.LocalToGlobal.GroupLattices.FockModels.Bundle0002
 import Formalism.SharpRestriction.GrowthBounds.LatticeSystems
 import Formalism.LocalRingCardinality.Lemmas
 import Formalism.SharpRestriction.GrowthBounds.CornerGLContinuity

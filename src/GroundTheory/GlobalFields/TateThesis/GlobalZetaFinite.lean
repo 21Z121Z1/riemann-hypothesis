@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.GlobalFields.TateThesis.IdeleMeasureCosets
+import GroundTheory.GlobalFields.TateThesis.Bundle0007
 import GroundTheory.GlobalFields.TateThesis.HeckeLFunction
 import GroundTheory.GlobalFields.TateThesis.SchwartzBruhatFinite
 

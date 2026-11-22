@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.UnitRatio
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CxTiesOf
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TopFormula
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0007
 
 set_option genSizeOfSpec false
 set_option genInjectivity false

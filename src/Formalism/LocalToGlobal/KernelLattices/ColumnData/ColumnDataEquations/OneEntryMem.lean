@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.ZeroInjectionMemFourthPower
+import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.Bundle0003
 
 noncomputable section
 open scoped BigOperators ComplexConjugate

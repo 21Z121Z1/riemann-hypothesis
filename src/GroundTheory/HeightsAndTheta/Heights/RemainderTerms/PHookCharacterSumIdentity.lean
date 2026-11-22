@@ -1,7 +1,6 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Statements
-import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.StatementsTop
-import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.PowerSums
+import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Bundle0002
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Expand
 set_option maxSynthPendingDepth 1
 

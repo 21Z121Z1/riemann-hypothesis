@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.UnitaryNorms.MemFIffReal
-import Formalism.LocalToGlobal.UnitaryNorms.CharTied
+import Formalism.LocalToGlobal.UnitaryNorms.Bundle0006
 import Formalism.LocalToGlobal.Divisibility.LiftLat
 import Formalism.LocalToGlobal.Divisibility.GoodPartHermitianSpec
 

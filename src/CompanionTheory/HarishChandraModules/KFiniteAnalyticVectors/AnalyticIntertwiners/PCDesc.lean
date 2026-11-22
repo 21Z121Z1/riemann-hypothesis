@@ -1,6 +1,6 @@
 import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AnalyticIntertwiners.Clause1
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnipotentCorrectionU1.DjCurveA
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.ExpFromBlocks
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnipotentCorrectionU1.Bundle0002
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0265
 
 open Matrix
 

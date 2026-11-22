@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.NilToPhiAlt
-import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.AdmissibleSequenceExact
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsModelOfMem
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.Bundle0026
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0965
 
 noncomputable section
 

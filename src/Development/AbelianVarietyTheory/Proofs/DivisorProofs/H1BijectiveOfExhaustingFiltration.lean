@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.PullbackBijectiveDegreesOneTwo
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TowerComplexLiftAndExtensionLemmasStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0476
 
 set_option autoImplicit false
 

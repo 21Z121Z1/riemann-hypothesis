@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsHeisTrivial
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SumEqZeroAddUnits
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0009
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0037
 
 open Classical GlobalTheory.FinWeil
 open scoped BigOperators

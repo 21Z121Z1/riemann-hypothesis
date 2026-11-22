@@ -1,5 +1,5 @@
 import Formalism.UnipotentAdelicQuotients.ThmBInHecke
-import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.NotRootUnity
+import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.Bundle0002
 import Formalism.LocalToGlobal.IndefiniteReal.HeckeNonvanishing.Imports
 
 noncomputable section

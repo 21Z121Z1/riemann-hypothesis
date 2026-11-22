@@ -1,9 +1,8 @@
-import Development.WeilBound.ThetaLifts.LeviDeterminants.EvChange
-import Development.WeilBound.ThetaLifts.LeviDeterminants.EvStmt
-import Development.WeilBound.ThetaLifts.LeviDeterminants.ExistsAdaptedModelTwoPlanes
-import Development.WeilBound.ThetaLifts.LeviDeterminants.EigenIntertwinerTwoPlanes
+import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0005
+import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0002
+import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0010
 import Development.WeilBound.ThetaLifts.LeviDeterminants.EigenIntertwinerSkewPlaneUnique
-import Development.WeilBound.ThetaLifts.TowerModels.PlaneHerm
+import Development.WeilBound.ThetaLifts.TowerModels.Bundle0002
 
 noncomputable section
 

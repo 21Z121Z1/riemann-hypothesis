@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjTwistAway
-import GroundTheory.ArithmeticGeometry.SchemeCohomology.CechSeparated
-import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjCechModel
+import GroundTheory.ArithmeticGeometry.SchemeCohomology.Bundle0005
+import GroundTheory.ArithmeticGeometry.SchemeCohomology.Bundle0006
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Arith.SchemeCoh

@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.PointShiftSt
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicEmbeddingValuationNorm
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0370
 
 set_option autoImplicit false
 

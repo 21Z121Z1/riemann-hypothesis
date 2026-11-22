@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.CoarseLabelFactorisation
-import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.FrobeniusReductionProduct
+import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0006
 
 noncomputable section
 

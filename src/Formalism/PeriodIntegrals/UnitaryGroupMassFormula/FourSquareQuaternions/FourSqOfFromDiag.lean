@@ -1,5 +1,4 @@
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FourSquareQuaternions.OrthogonalDiagonal
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FourSquareQuaternions.QmapInjective
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FourSquareQuaternions.Bundle0001
 
 namespace PI.KerIso.FourSqW
 

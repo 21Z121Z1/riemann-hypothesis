@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.ProfiniteCohomology.RealPlaces.CupSequence
+import GroundTheory.ProfiniteCohomology.RealPlaces.Bundle0003
 import GroundTheory.ProfiniteCohomology.PoincarePairs.Devissage
 set_option maxSynthPendingDepth 1
 

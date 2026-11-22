@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.ShortLatticeUnitarize.Unitarize
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwJqEmbed
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.CyclicStrongAtCusp
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0026
 
 noncomputable section
 

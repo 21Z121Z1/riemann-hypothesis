@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.CharacterGerms.RestNonneg
-import Formalism.LocalToGlobal.CharacterGerms.BlockMembershipSelfConjugate
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0007
 
 noncomputable section
 

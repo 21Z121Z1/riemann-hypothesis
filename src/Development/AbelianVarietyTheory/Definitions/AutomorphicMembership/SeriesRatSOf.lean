@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsRatConstMul
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0808
 
 set_option autoImplicit false
 noncomputable section

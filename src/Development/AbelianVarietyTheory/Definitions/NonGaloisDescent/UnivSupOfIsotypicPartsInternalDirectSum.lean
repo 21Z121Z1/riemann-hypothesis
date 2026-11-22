@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.OffRange
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TypePreservedOfAdmissibleIntegral
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0014
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0015
 
 noncomputable section
 

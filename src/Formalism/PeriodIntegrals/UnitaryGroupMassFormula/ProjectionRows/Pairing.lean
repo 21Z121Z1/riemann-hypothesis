@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProjectionRows.LatticeFinitelyGenerated
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProjectionRows.LocFree
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProjectionRows.Bundle0001
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProjectionRows.Adapted
 
 noncomputable section

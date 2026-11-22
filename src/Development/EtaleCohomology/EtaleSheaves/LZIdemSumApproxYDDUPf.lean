@@ -1,4 +1,4 @@
-import Development.EtaleCohomology.EtaleSheaves.LZIdemSumApprox
+import Development.EtaleCohomology.EtaleSheaves.Bundle0045
 
 noncomputable section
 open LateralTheory.E.StandardEtaleChartsIdempotentGluing Polynomial

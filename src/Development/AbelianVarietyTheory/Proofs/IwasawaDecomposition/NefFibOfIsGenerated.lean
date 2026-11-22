@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RingKrullDimIntegers
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TopologicalKrullDimEqSucc
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValAtAlgebraMap
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.JGenSpecializes
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0318
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0311
 
 set_option autoImplicit false
 

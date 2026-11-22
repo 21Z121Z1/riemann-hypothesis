@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.FrameExists2
+import Formalism.HermitianCurvature.Bundle0006
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LeftDerivativeCurves
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.FrameEntries
 

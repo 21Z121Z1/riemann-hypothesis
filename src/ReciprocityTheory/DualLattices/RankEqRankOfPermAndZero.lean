@@ -1,7 +1,7 @@
-import ReciprocityTheory.DualLattices.EmbeddingSeparatingGroupStatement
+import ReciprocityTheory.DualLattices.Bundle0022
 import ReciprocityTheory.DualLattices.UnramifiedCokernelLengthOfLengthEigenLengthProduct
-import ReciprocityTheory.DualLattices.IsLocalOfIntegers
-import ReciprocityTheory.DualLattices.RankMapLeRank
+import ReciprocityTheory.DualLattices.Bundle0011
+import ReciprocityTheory.DualLattices.Bundle0003
 
 noncomputable section
 

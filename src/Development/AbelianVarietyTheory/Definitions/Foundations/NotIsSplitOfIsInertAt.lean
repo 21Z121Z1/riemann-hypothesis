@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.SatakeDualWeyl.StatementG
-import Formalism.LocalToGlobal.BesselHermitianTheta.TiedLocW
+import Formalism.SatakeDualWeyl.Bundle0002
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0005
 import Development.AbelianVarietyTheory.Definitions.Foundations.HermitianSpaceBaseLatticeEqFrameLattice
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFiniteAdeleBaseChangeEquiv
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsSatVecUOfIsSphericalU

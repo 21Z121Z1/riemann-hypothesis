@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.RadicalReductionUnitary
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0106
 
 open Matrix
 open scoped ContDiff

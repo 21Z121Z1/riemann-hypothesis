@@ -1,9 +1,8 @@
 import Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.TensorIrr
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.FockHarmSplit
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.FockJointMult
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.FockOneDeg
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.FockWtDeg
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.FockRaiseLow
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0011
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0024
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0017
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0007
 
 noncomputable section
 

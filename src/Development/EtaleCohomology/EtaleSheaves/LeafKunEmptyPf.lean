@@ -1,4 +1,4 @@
-import Development.EtaleCohomology.EtaleSheaves.LeafKunGlobalCut
+import Development.EtaleCohomology.EtaleSheaves.Bundle0024
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry Opposite

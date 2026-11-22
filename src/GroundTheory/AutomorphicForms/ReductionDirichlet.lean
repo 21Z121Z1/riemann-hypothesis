@@ -1,10 +1,10 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.ReductionHeight
-import GroundTheory.AutomorphicForms.ReductionIdele
+import GroundTheory.AutomorphicForms.Bundle0016
 import GroundTheory.GlobalFields.Adele.Approximation
 import GroundTheory.GlobalFields.Adele.Discrete
-import GroundTheory.GlobalFields.Adele.IntegersLattice
-import GroundTheory.GlobalFields.IdeleGroups.LocalConditionIndex
+import GroundTheory.GlobalFields.Adele.Bundle0001
+import GroundTheory.GlobalFields.IdeleGroups.Bundle0001
 
 open NumberField IsDedekindDomain Topology Filter Set Matrix
 open GroundTheory.Global GroundTheory.Global.IdeleGroup

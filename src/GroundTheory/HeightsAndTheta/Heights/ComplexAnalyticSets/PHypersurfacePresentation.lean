@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StHypersurfacePresentation
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StGenericPrimitive
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PGenericPrimitive
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0006
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0005
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0016
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.SharpRestriction.Divisibility.SchurIrreducible
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
-import Formalism.LocalToGlobal.BesselHermitianTheta.TiedType
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContDiffSetIntegralNat
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0178
 
 noncomputable section
 

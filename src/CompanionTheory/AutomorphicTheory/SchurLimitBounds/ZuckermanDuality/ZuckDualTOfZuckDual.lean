@@ -1,7 +1,7 @@
 import Formalism.PeriodIntegrals.ZuckTensor
-import Formalism.PeriodIntegrals.KFinSmooth
-import Formalism.PeriodIntegrals.DSInfCharCap
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CapelliEigenvalues.CoreDefs
+import Formalism.PeriodIntegrals.Bundle0015
+import Formalism.PeriodIntegrals.Bundle0022
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CapelliEigenvalues.Bundle0001
 import Formalism.HermitianCurvature.BesselNonvanishingReduction
 import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
 import Formalism.HermitianCurvature.StatementQ

@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.DoubleCosetMeasures.LatticeCoset
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.LocalIntegralGL
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FromBlocksMulInv
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0007
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasCompactSupportPhiU
 
 noncomputable section

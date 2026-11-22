@@ -1,7 +1,7 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.EisensteinSeries.SiegelEisensteinContinuation.EisensteinChartSplitting.TChartSplit
 import Development.WeilBound.ThetaLifts.LatticeBasics.FrameConj
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousRxSymm
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0816
 
 noncomputable section
 

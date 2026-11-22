@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.FamilyUniformisationBasePointOrthogonalBis
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0032
 import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.NormConst
 
 noncomputable section

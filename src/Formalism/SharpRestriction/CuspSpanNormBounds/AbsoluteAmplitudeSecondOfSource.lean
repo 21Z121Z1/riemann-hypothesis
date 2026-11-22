@@ -7,7 +7,7 @@ import Formalism.SharpRestriction.CuspSpanNormBounds.BranchingAndRankConstants
 import Formalism.SharpRestriction.CuspSpanNormBounds.AmplitudeAndVolumeBounds
 import Formalism.SharpRestriction.CuspSpanNormBounds.GluingLemmasAndTheorems
 import Formalism.SharpRestriction.CuspSpanNormBounds.OnePlaceEstimates
-import Formalism.SharpRestriction.CuspSpanNormBounds.SBridge
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0008
 
 noncomputable section
 

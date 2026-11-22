@@ -1,15 +1,15 @@
 import Mathlib
-import Formalism.LocalToGlobal.UnitaryNorms.CharTied
-import Formalism.LocalToGlobal.HermitianColumns.SymAll
+import Formalism.LocalToGlobal.UnitaryNorms.Bundle0006
+import Formalism.LocalToGlobal.HermitianColumns.Bundle0004
 import Formalism.LocalToGlobal.KernelLattices.LateralTheory
 import Formalism.LocalToGlobal.BesselHermitianTheta.AllTied
 import Formalism.LocalToGlobal.GlobalTheory.GL5.Statement
 import Formalism.SharpRestriction.GlobalSchurBounds.TaylorLogMetric
 import Formalism.SharpRestriction.GlobalSchurBounds.ProductFirstZerothParts
-import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.DisjointExceptional
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0003
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsRationalUnitaryDeterminantMapRationalUnitaryTo
-import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.GoodPairSystems
+import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0013
 
 noncomputable section
 

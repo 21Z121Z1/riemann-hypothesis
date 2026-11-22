@@ -1,8 +1,8 @@
 import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifDefsB
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FibreLatticeBaseChangeConj
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackEquivalence
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.VerticalDerivativeInCoordinates
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TorsionEqAndWeilIsOfIsHolTo
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0175
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0027
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0032
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0059
 
 noncomputable section
 

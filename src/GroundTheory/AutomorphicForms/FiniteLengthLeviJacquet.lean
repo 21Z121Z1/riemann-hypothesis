@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.GeometricLemma
+import GroundTheory.AutomorphicForms.Bundle0020
 import GroundTheory.AutomorphicForms.LeviStagesInduction
 import GroundTheory.AutomorphicForms.LeviStagesExact
 set_option maxSynthPendingDepth 1

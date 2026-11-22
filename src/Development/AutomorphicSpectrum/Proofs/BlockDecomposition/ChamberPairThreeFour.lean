@@ -1,6 +1,6 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.EisensteinSeries.SiegelEisensteinContinuation.StripEntire
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DifferentiableAffLine
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0031
 
 noncomputable section
 

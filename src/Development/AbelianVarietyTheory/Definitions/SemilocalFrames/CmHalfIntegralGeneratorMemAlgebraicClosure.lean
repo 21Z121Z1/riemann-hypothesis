@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.UpperOff
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0006
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HeisenbergLeviConjugationMeasure
 
 noncomputable section

@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdmSt
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0010
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResEqIff
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicCharacterPadicBasicProperties
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0129
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLocalPrimeAinf
 
 noncomputable section

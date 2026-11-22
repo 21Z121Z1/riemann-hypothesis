@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SqMap
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GeneratorRatioUnitExistsStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0096
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0103
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FrRatio
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermBPrim
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0021
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBIdSy
 
 noncomputable section

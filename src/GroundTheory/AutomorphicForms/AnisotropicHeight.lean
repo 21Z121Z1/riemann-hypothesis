@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.AnisotropicOrbit
+import GroundTheory.AutomorphicForms.Bundle0018
 import GroundTheory.AutomorphicForms.AdelicUnitaryGroups
 set_option maxSynthPendingDepth 1
 

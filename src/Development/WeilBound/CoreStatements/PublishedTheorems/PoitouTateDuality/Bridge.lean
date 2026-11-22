@@ -1,8 +1,8 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.PtConclOfIsoOf
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.GelfandSpectralNormalisation.NormalisedInvariants.PoitouTateExactSecond
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsInvFamNormalised
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSubfieldModel
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0536
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0139
 
 noncomputable section
 

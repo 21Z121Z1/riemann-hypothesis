@@ -1,7 +1,7 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.LevelChainValuations.LatDefs
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.SplittingFieldLattices.GrSplit
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemLatticeSubIffSum
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0161
 
 set_option autoImplicit false
 

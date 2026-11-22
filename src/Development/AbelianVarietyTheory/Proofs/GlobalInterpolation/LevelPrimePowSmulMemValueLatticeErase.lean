@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.FormsStable
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LClosedeqLemmas
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.NablaLTwist
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0010
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0012
 
 noncomputable section
 

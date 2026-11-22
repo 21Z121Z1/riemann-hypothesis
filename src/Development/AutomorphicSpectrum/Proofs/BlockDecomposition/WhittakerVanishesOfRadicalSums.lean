@@ -1,6 +1,6 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.FiniteTypeHarishChandra.SupportExistsAll
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ColGeR
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0100
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PatternGroupStatement
 
 open ReciprocityTheory.Ty.Fin GlobalTheory.CompanionTheory.TyFin.ColStep

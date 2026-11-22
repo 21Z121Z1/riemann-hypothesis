@@ -1,6 +1,6 @@
-import Formalism.LocalToGlobal.IndefiniteReal.RealRec
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0035
 import Formalism.LocalRingCardinality.Lemmas
-import Formalism.LocalToGlobal.Divisibility.TupUsed
+import Formalism.LocalToGlobal.Divisibility.Bundle0005
 
 noncomputable section
 

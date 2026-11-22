@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EnvRepAllEnvIncl
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.RightDerivativeAlongLieSmoothAndLinear
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1293
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0007
 
 noncomputable section
 

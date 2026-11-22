@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.SecondBranchCoordinatesOfSurjectivity
+import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.Bundle0002
 import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.LocalGlobalOfBasisIndependence
 import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.GroupActionMulSingleEqDilation
 

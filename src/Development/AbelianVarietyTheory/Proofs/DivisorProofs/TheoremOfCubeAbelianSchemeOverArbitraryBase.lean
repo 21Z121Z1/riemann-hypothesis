@@ -1,5 +1,0 @@
-import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CubeTheorem
-import CompanionTheory.AutomorphicTheory.TemperedLocalSpectra.CubicForms.ImportsBis
-
-theorem GlobalTheory.CubeTop.cubeTheorem : GlobalTheory.Published.CubeTheorem := GlobalTheory.SpreadingModels.cubeTheorem_holds

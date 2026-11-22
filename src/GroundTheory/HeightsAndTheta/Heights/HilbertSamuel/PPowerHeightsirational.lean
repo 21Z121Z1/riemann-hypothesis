@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsPowerHeightsirational
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsKodairaGeneric
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsChartDenominator
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsGeneratedNefGeneric
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0073
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0025
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0041
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0078
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

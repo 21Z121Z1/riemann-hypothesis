@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.JSmul
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0007
 import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemOfAssembleMem
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIsPrimitiveRootSubIsUnitOfDvdSubOne
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0015
 
 noncomputable section
 namespace GlobalTheory.CycRing

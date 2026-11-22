@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ArthurClozelLocalSC
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0015
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LbcOfCharOne
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NcardPrimesOverThreeZ
 import GroundTheory.GlobalFields.CompletionAtPlace.Galois
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdicCompletionTraceNormContinuous
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsSmallStable
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0297
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0023
 
 noncomputable section
 

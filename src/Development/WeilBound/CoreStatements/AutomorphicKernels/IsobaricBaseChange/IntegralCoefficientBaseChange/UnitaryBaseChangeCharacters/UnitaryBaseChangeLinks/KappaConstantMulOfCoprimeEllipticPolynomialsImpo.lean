@@ -1,1 +1,1 @@
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KappaConstantMulOfCoprimeEllipticPolynomialsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1273

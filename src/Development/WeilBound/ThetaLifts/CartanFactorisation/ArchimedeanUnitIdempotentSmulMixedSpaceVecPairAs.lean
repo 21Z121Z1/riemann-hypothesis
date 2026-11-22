@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LcscAdelicUnitaryGroup
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntegrableOfRapidDecay
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0067
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0226
 
 open Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes
 open IsDedekindDomain NumberField MeasureTheory

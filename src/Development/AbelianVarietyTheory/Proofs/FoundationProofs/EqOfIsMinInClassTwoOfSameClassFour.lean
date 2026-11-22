@@ -1,5 +1,5 @@
 import Mathlib
-import ReciprocityTheory.ReducedBases.LatDefs
+import ReciprocityTheory.ReducedBases.Bundle0001
 import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.ExistsEventuallyNormRiemannThetaTermLe
 
 noncomputable section

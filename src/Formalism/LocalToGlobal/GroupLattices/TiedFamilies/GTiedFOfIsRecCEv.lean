@@ -1,11 +1,11 @@
-import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.FullTiedCBase
+import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0007
 import Formalism.LocalToGlobal.GroupLattices.LinkGConcreteNoKer
 import Formalism.SharpRestriction.SmoothDesignExistence.DGamSmooth
-import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.IntSplitOf
+import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0001
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.RecThm
-import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TieIwLevTieOf
-import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.CmpHyp0P
-import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.SelfDualAtColLevel
+import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0008
+import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0004
+import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0002
 
 noncomputable section
 

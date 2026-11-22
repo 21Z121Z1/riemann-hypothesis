@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrystallineClassMemHodgeFiltrationOfCechRepZero
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogChernCocycleContractionInvariantFieldTriviali
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsAdditiveOfUniversal
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2689
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2526
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0010
 
 set_option autoImplicit false
 

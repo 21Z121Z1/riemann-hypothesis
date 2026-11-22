@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.SqfRootsInj
+import Formalism.PeriodIntegrals.Bundle0016
 
 open Polynomial
 

@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.CuspSpanNormBounds.PExtra
-import Formalism.FormalDegreeBessel.FinalG
+import Formalism.FormalDegreeBessel.Bundle0002
 
 noncomputable section
 

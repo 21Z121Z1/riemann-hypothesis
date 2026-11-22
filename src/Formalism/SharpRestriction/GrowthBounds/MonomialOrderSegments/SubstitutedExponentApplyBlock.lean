@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.DigitPartMonomial
-import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.ProjKeepsLetter
+import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.Bundle0002
 import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.AddMemSupportOfMemSupportCoefOut
 
 noncomputable section

@@ -1,5 +1,5 @@
-import Development.WeilBound.ThetaLifts.LeviDeterminants.CartanPos
-import Development.WeilBound.ThetaLifts.LeviDeterminants.ExistsGaussBox
+import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0007
+import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0008
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsPotential
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCrysLatOfTrivial
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneNotMemFilOne
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0017
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0146
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0594
 
 noncomputable section
 

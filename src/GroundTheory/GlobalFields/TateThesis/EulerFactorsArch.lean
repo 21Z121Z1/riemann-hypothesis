@@ -1,9 +1,9 @@
 import Mathlib
 import GroundTheory.GlobalFields.TateThesis.HeckeChar
 import GroundTheory.GlobalFields.TateThesis.IdeleMeasure
-import GroundTheory.GlobalFields.TateThesis.ArchCharsUnitary
-import GroundTheory.GlobalFields.TateThesis.Gaussian
-import GroundTheory.GlobalFields.TateThesis.GaussianComplex
+import GroundTheory.GlobalFields.TateThesis.Bundle0004
+import GroundTheory.GlobalFields.TateThesis.Bundle0001
+import GroundTheory.GlobalFields.TateThesis.Bundle0003
 
 open NumberField InfinitePlace InfinitePlace.Completion MeasureTheory Complex ComplexConjugate
 open scoped Real

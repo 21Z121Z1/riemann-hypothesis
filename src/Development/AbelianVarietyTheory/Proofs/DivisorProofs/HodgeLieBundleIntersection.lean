@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemStabilizerIff
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinsumOrbitsInvStabilizerCardMass
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0153
 open scoped Classical
 
 namespace GlobalTheory.PtFib

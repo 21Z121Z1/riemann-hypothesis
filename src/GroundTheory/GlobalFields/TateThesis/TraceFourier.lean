@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.GlobalFields.TateThesis.TracePairing
+import GroundTheory.GlobalFields.TateThesis.Bundle0003
 
 namespace GroundTheory.Global
 

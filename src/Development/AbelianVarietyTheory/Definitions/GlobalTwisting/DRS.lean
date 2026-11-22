@@ -1,6 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.APerTw
-import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.DivRows3GIff
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0006
 import Formalism.LocalToGlobal.FiniteTOf
 
 noncomputable section

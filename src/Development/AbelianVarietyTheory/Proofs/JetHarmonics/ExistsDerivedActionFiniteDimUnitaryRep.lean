@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
 import Formalism.RealPlaceAnalysis.QuotientSettingHolds
 import Formalism.RealPlaceAnalysis.FinalF
 import Formalism.PeriodIntegrals.UpqRep
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContDiffSetIntegralNat
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0178
 
 open Matrix MeasureTheory Finset
 open scoped InnerProductSpace ContDiff Topology

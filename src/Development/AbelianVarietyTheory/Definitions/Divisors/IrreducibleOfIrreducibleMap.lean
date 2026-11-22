@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.PointHeight
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0003
 import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.AevalEqZeroOfHomogeneousComponent
 
 set_option autoImplicit false

@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Statements.TowerExistence.GoodTowerExistsX
 import Development.AutomorphicSpectrum.Statements.MetricStatements.ExistsFlagModelBaseMetric
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.RootOnFund
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.SplitComps
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0010
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0011
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.CmpSt
-import Development.AutomorphicSpectrum.Statements.GeometryStatements.AgreementPos
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0005
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
 
 noncomputable section

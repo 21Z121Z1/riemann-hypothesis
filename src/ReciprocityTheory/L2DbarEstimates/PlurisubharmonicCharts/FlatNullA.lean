@@ -1,5 +1,5 @@
 import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.ContinuousOnSec
-import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.ImportsAlt
+import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.Bundle0001
 import ReciprocityTheory.L2DbarEstimates.ChartDerivatives.HoloSmooth
 
 namespace ReciprocityTheory.L2DbarEstimates.Y

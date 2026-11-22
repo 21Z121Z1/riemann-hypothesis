@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.RegConst
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FstIsFinFFrames
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFinFSndFrames
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockPolynomialVectorMaximalCompactMovedBases
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0064
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2338
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2346
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0216
 
 noncomputable section
 

@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.PieriBlockIdeals.ExponentBoundCounterexample
-import Formalism.PieriBlockIdeals.JointTheoremALoc
+import Formalism.PieriBlockIdeals.Bundle0003
 import Formalism.SatakeDualWeyl.DualWeylRepApply
 
 open MvPolynomial TensorProduct

@@ -1,4 +1,4 @@
-import Formalism.TowerValuationBounds.HermitianSumValuationBound
+import Formalism.TowerValuationBounds.Bundle0001
 
 noncomputable section
 namespace Formalism.ValuationGridEstimates

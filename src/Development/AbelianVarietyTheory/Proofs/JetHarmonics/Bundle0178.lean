@@ -1,0 +1,185 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0177
+import Development.AbelianVarietyTheory.Definitions.Jets.EmbShortThLeThetaPlain
+import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.ThetaLeMsupOfSetC
+import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0006
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0003
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
+import Development.AbelianVarietyTheory.Definitions.Jets.JetsOnCopiesCompatibleFrames
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBCPf
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0121
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ShortMulThetaMemSpan
+import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0004
+import Development.AbelianVarietyTheory.Definitions.Jets.TwoPlaces
+import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.DepthTieSat
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsIntegralChartIntegralFramedPoint
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0042
+import Development.AbelianVarietyTheory.Definitions.Jets.ExistsSecTieFOfTies
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartF
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0033
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0027
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GramSpace
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0026
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0037
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0041
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0039
+import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.TheoremZeroSplitOfLocalAndSum
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.SaturationChartsHolds
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0123
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0146
+
+-- bundled from Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsLevelChangeActionOnCuspForms
+section
+open NumberField IsDedekindDomain AlgebraicGeometry CategoryTheory Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.DIV.Cons Formalism.L2.Pj Formalism.L2.Indef Formalism.L2.Indef.Tree Formalism.DivisionValues Formalism.EigenvalueLevelCeiling
+open ReciprocityTheory.ChartRestriction.G.Geo.Tor (Datum Level Moduli Coeff SABMap)
+open GlobalTheory.FormTies
+open scoped TensorProduct
+
+namespace GlobalTheory.FormTies
+
+theorem exists_isLevAct : ∀ (D : D7) (T : Top D) (h : LawsP T) (j : ℕ) (hj : InR D j) (w : WeightFamilies.Wt D j) (P : Type) (ℓ : P → (LaMod (T.Q.Dw j) T.Q.l ≃ₗ[𝓞 D.host.E] LaMod (T.Q.Dw j) T.Q.l)), ∃ act, IsLevAct T h j w ℓ act := by
+  intro D T h j hj w P ℓ
+  have e : cutR T.C j w = T.cuspA j (wtA w) w.n := cutR_eq T.C hj w
+  refine ⟨fun g F => (⟨actLev (Xo := T.Q.Xo j) T.Q.c (levFull (T.Q.Dw j) T.Q.l) (ℓ g) F.1, ?_⟩ : cutR T.C j w), fun g F => rfl⟩
+  exact e.ge (GlobalTheory.T.levelAction_mem_cuspForms D T h j hj w (ℓ g) F.1 (e.le F.2))
+
+end GlobalTheory.FormTies
+end
+
+-- bundled from Development.AbelianVarietyTheory.Proofs.JetHarmonics.PointStatementsOnCopiesHoldStatement
+section
+open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField IsLocalRing
+open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor Formalism.L2.Pj
+open ReciprocityTheory.ChartRestriction.G.DVR ReciprocityTheory.ChartRestriction.G.DVR.QForm Formalism.MainNotions.ModuliIntegralCharts.H1 Formalism.MainNotions.ModuliIntegralCharts.H1.ExpBijectiveUniformisation Formalism.MainNotions.ModuliIntegralCharts.H1.GSt
+open ReciprocityTheory.ChartRestriction.G.Geo.Tor.Germ
+attribute [local instance] Over.cartesianMonoidalCategory
+open Formalism.MainNotions.ModuliIntegralCharts.H1.BoxTuple Formalism.MainNotions.ModuliIntegralCharts.H1.BidegreeTwoJet GlobalTheory GlobalTheory.PowGerm
+open ReciprocityTheory.ChartRestriction.G.TB (colM dAct)
+open IsDedekindDomain
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.pointStatements_on_copies_hold : RPointT ∧ GenPointT ∧ JetsOnCopiesCompatibleFrames ∧ GermOfFamT ∧ ThetaFrameF ∧ PowPELF := by
+  first | exact @GlobalTheory.PowGerm.pointStatements_on_copies | exact GlobalTheory.PowGerm.pointStatements_on_copies | (intros; apply GlobalTheory.PowGerm.pointStatements_on_copies <;> assumption)
+end
+
+-- bundled from Development.AbelianVarietyTheory.Proofs.JetHarmonics.ProductsShortRec
+section
+open NumberField IsDedekindDomain AlgebraicGeometry CategoryTheory Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.DIV.Cons Formalism.L2.Pj Formalism.L2.Indef Formalism.L2.Indef.Tree Formalism.DivisionValues Formalism.EigenvalueLevelCeiling
+open ReciprocityTheory.ChartRestriction.G.Geo.Tor (Datum Level Moduli Coeff SABMap)
+open GlobalTheory.FormTies
+open scoped TensorProduct
+
+namespace GlobalTheory.FormTies
+
+theorem productsShort_rec : Formalism.MainNotions.ModuliIntegralCharts.H1.ChartIndepSt2 → ∀ (D : D7) (T : Top D) (h : LawsP T) (j : ℕ) (hj : InR D j), LawsSh T → OneCover T j → (T.dδ j 0).l₂.A = 1 → ∀ (ka wL wF : WeightFamilies.Wt D j) (Tn : ℕ), WeightAlgebra.IsF' ka wL wF Tn wF.n → ka.n = wF.n + Tn * wL.n → WeightFamilies.dimY D j ≤ Tn → D.R.r ≤ wF.n → ka.n = D.R.nV → ProductsShort (recPJ h j hj) ka wL wF Tn :=
+  productsShort_of_oneFactor GlobalTheory.ShortTimesTheta.short_mul_theta_mem_span
+
+end GlobalTheory.FormTies
+end
+
+-- bundled from Development.AbelianVarietyTheory.Proofs.JetHarmonics.RunDepthDataLawsAndFiniteLocalDepth
+section
+open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.DIV.Cons Formalism.L2.DIV Formalism.L2.Pj Formalism.L2.Indef Formalism.L2.Indef.Tree Formalism.L2.Indef.Tree.DepthCond Formalism.DivisionValues Formalism.EigenvalueLevelCeiling
+open ReciprocityTheory.ChartRestriction.G.Geo.Tor (Datum Level Moduli Coeff)
+open ReciprocityTheory.ChartRestriction.G.Pdiv.ChartF (AvFSt HTFSt UpFSt)
+open GlobalTheory.RunDepth GlobalTheory.CharDepth
+
+namespace GlobalTheory.RunDepth
+
+theorem laws_and_nuFinAt : ∀ (D : D7) (L : SizeData₂ D) (Pm : ParameterChoice' D L) (Tp : ParamsT D L Pm) (hK : DV.KapDef D) (T : Core D) (EX : ErrX D) [StarRing (𝓞 D.host.E)], LawsM T → (∀ a : 𝓞 D.host.E, star a = T.Q.H.bar a) → LawsPi T (depOf T EX Tp hK) ∧ LawsDep T ∧ NuFinAt T (depOf T EX Tp hK) := by
+  intro D L Pm Tp hK T EX _ h hs
+  have hr1 : 1 ≤ D.R.r := by
+    have h1 := D.R.two_le_m
+    have h2 := D.R.m_add_three_le_k
+    unfold Ranks.r; omega
+  have hn : 2 * D.R.f * D.R.r ≤ Tp.nWn := by
+    refine le_trans ?_ Tp.nW_lo.1
+    calc 2 * D.R.f * D.R.r = D.R.f * D.R.r * 2 := by ring
+      _ ≤ _ := Nat.mul_le_mul_left _ (by omega)
+  have hP : LawsPi T (depOf T EX Tp hK) := lawsPi_depRun h EX _ _ _ _ _ fun j _ => hn
+  have hD : LawsDep T :=
+    ⟨hs, fun j _ => (GlobalTheory.IntChartExists.intChart_exists _ _ _ _ (T.Q.Xo j) T.Q.c).2.1 hs,
+      fun j _ => GlobalTheory.ChartCmp.chartIndep_holds _ _ _ _ (T.Q.Xo j) T.Q.c hs⟩
+  exact ⟨hP, hD, nuFinAt_of T h.pins _ hP.wts hD.chartEx
+    fun j _ => Formalism.L2.Pj.SaturatedCharts.saturation_charts_holds (T.Q.Xo j) T.Q.c⟩
+
+end GlobalTheory.RunDepth
+end
+
+-- bundled from Development.AbelianVarietyTheory.Proofs.JetHarmonics.UnscaledWeightDepthFiniteBoundedAboveCharts
+section
+open AlgebraicGeometry CategoryTheory NumberField IsLocalRing IsDedekindDomain
+open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.DVR ReciprocityTheory.ChartRestriction.G.DVR.QForm Formalism.L2.Pj Formalism.MainNotions.ModuliIntegralCharts.H1
+open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.DIV.Cons Formalism.MainNotions.Gaps.EtaleWeightGaps
+open GlobalTheory.PtTie
+
+namespace GlobalTheory.DepthBd
+
+section Gen
+variable {E : Type} [Field E] [NumberField E] [IsCMField E] {H : ReciprocityTheory.ChartRestriction.G.Geo.Tor.Host E} {Dw : Datum H}
+  {l : Level H} {Xo : Moduli Dw l} {c : Coeff l} [StarRing (𝓞 E)]
+
+theorem nuW_eq_zero (hE : IntChartEx Xo c) (hS : ChartSaturated Xo c) (la : HeightOneSpectrum (𝓞 c.F)) (k : ℕ)
+    (a : (E →+* ℂ) × ℕ → ℕ) (n : ℕ) (ha : DomW Dw a) (hn : Fintype.card (Lt1 Dw) ≤ n)
+    (hl : Formalism.L2.Pj.DF Dw a < resCharOf la) : nuW Xo c la k a n = 0 := by
+  refine max_eq_left ?_
+  refine iSup_le fun T => iSup_le fun io => iSup_le fun e => iSup_le fun ho => iSup_le fun y => iSup_le fun hy => ?_
+  obtain ⟨C⟩ := hE T io y hy
+  letI := io.toAlgebra
+  exact (iInf_le _ C).trans ((crude_inf C.ch.B C.ch.h C.ch.gauge H.w0 k C.ch.uvec (satDir_of hS C) a n ha hn ho).2 hl)
+
+theorem nuLocC_le_nuW (hI : ChartIndep Xo c) (la : HeightOneSpectrum (𝓞 c.F)) (k : ℕ)
+    (a : (E →+* ℂ) × ℕ → ℕ) (n : ℕ) (T : CDVR) (io : c.F →+* T.Fr) (e : ℕ) (ho : OverLa la T.V io e)
+    (z : IntFr Xo c T io) (hz : z.IsAlg) (C : IntegralChartA3 Xo c T io z) :
+    nuLocC C e k a n ≤ nuW Xo c la k a n := by
+  have h1 : nuLocC C e k a n ≤ nuLoc z e k a n := le_iInf fun C' => (hI T io z C C' e k a n).le
+  refine h1.trans (le_trans ?_ (le_max_right _ _))
+  unfold nuSup
+  exact le_iSup_of_le T (le_iSup_of_le io (le_iSup_of_le e (le_iSup_of_le ho (le_iSup_of_le z
+    (le_iSup_of_le hz le_rfl)))))
+end Gen
+
+theorem ereal_unit {x : EReal} {r d q : ℝ} (hr : 0 < r) (hd : 0 ≤ d) (hq : 0 < q) (h0 : 0 ≤ x)
+    (h1 : x ≤ max 0 ((r * d / q : ℝ) : EReal)) :
+    x = ((r * (x.toReal / r) : ℝ) : EReal) ∧ 0 ≤ x.toReal / r ∧ x.toReal / r ≤ d / q := by
+  have hb : (0 : ℝ) ≤ r * d / q := by positivity
+  rw [max_eq_right (by exact_mod_cast hb)] at h1
+  have ht : x ≠ ⊤ := ne_top_of_le_ne_top (EReal.coe_ne_top _) h1
+  have hb' : x ≠ ⊥ := ne_bot_of_le_ne_bot (by simp) h0
+  lift x to ℝ using ⟨ht, hb'⟩
+  have h0' : 0 ≤ x := by exact_mod_cast h0
+  have h1' : x ≤ r * d / q := by exact_mod_cast h1
+  rw [EReal.toReal_coe]
+  refine ⟨by rw [mul_div_cancel₀ _ hr.ne'], by positivity, ?_⟩
+  rw [div_le_iff₀ hr]
+  calc x ≤ r * d / q := h1'
+    _ = d / q * r := by ring
+
+theorem nuWt_bounds : ∀ (D : D7) (T : Top D) (h : LawsP T) (j : ℕ) (hj : InR D j) (w : WeightFamilies.Wt D j), 2 * D.R.f * D.R.r ≤ w.n → ∀ (la : HeightOneSpectrum (𝓞 T.Q.c.F)), letI := T.Q.H.starRing; nuW (T.Q.Xo j) T.Q.c la T.Q.l.M (wtA w) w.n = (((ramOverZ la : ℝ) * nuWt T w la : ℝ) : EReal) ∧ 0 ≤ nuWt T w la ∧ nuWt T w la ≤ (WeightAlgebra.DF w : ℝ) / ((resCharOf la : ℝ) - 1) ∧ (WeightAlgebra.DF w < resCharOf la → nuWt T w la = 0) ∧ ∀ (T' : CDVR) (io : T.Q.c.F →+* T'.Fr) (e : ℕ), OverLa la T'.V io e → ∀ z : IntFr (T.Q.Xo j) T.Q.c T' io, z.IsAlg → ∀ C : IntegralChartA3 (T.Q.Xo j) T.Q.c T' io z, nuLocC C e T.Q.l.M (wtA w) w.n ≤ (((ramOverZ la : ℝ) * nuWt T w la : ℝ) : EReal) := by
+  intro D T h j hj w hn la
+  letI := T.Q.H.starRing
+  have hst : ∀ a : 𝓞 D.host.E, star a = T.Q.H.bar a := fun _ => rfl
+  obtain ⟨hDF, hdom, -, -, hcard, -⟩ := GlobalTheory.WeightOnDatum.weight_on_datum D T.toCore h.pins j hj w
+  have hE : IntChartEx (T.Q.Xo j) T.Q.c :=
+    (GlobalTheory.IntChartExists.intChart_exists _ _ _ _ (T.Q.Xo j) T.Q.c).2.1 hst
+  have hI : ChartIndep (T.Q.Xo j) T.Q.c := GlobalTheory.ChartCmp.chartIndep_holds _ _ _ _ (T.Q.Xo j) T.Q.c hst
+  have hS : ChartSaturated (T.Q.Xo j) T.Q.c := SaturatedCharts.saturation_charts_holds _ _
+  have hn' := hcard.trans hn
+  have hr : (0 : ℝ) < (ramOverZ la : ℝ) := by
+    exact_mod_cast Nat.pos_of_ne_zero (GlobalTheory.GoodDepth.ramOverZ_ne_zero' la)
+  have hq : (0 : ℝ) < (resCharOf la : ℝ) - 1 := by
+    have : (1 : ℝ) < resCharOf la := by exact_mod_cast (Crude.resCharOf_prime la).one_lt
+    linarith
+  have hle := nuW_le_crude hE hS la T.Q.l.M (wtA w) w.n hdom hn'
+  rw [hDF] at hle
+  obtain ⟨a1, a2, a3⟩ := ereal_unit hr (Nat.cast_nonneg (WeightAlgebra.DF w)) hq (le_max_left _ _) hle
+  refine ⟨a1, a2, a3, fun hl => ?_, fun T' io e ho z hz C => ?_⟩
+  · unfold nuWt
+    rw [nuW_eq_zero hE hS la T.Q.l.M (wtA w) w.n hdom hn' (hDF ▸ hl)]
+    simp
+  · exact (nuLocC_le_nuW hI la T.Q.l.M (wtA w) w.n T' io e ho z hz C).trans a1.le
+
+end GlobalTheory.DepthBd
+end
+

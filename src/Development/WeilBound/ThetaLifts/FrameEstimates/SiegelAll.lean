@@ -1,5 +1,5 @@
-import Development.WeilBound.ThetaLifts.FrameEstimates.LintegralLeOfCover
-import Development.WeilBound.ThetaLifts.FrameEstimates.LeHeightOfIsTorusElt
+import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0011
+import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0009
 
 noncomputable section
 

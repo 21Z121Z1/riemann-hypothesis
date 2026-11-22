@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.DplusLeBeS
+import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0015
 
 noncomputable section
 

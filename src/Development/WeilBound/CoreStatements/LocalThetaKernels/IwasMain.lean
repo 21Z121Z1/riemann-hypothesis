@@ -1,7 +1,6 @@
 import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.InertDef
 import Development.WeilBound.CoreStatements.LocalThetaKernels.IwasLoc
-import Development.WeilBound.CoreStatements.LocalThetaKernels.IwasFrame
-import Development.WeilBound.CoreStatements.LocalThetaKernels.IwasAd
+import Development.WeilBound.CoreStatements.LocalThetaKernels.Bundle0001
 
 noncomputable section
 

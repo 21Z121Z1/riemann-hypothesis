@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.WOnLatG
+import Formalism.PeriodIntegrals.Bundle0020
 
 namespace PI.UnitaryGroupMassFormula.WOnLatG
 

@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.InertKernelTheory.StatementAlgT
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0005
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.AlgKleinPf
 
 noncomputable section

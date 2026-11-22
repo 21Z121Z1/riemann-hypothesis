@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsConstMul
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.PeriodHermitianTypeCompatibilityStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PeriodEigenFrameStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HermitianPeriodLinearAlgebraStatement
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0010
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0115
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0145
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0143
 open AlgebraicGeometry CategoryTheory Limits NumberField ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Fl
 
 namespace GlobalTheory.CompanionTheory.Ar.Flat.Ratio

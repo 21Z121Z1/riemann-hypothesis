@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.SpecialFibreUnits
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0003
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsEqnIffGeneratesAtInv
 
 open CategoryTheory Limits AlgebraicGeometry TopologicalSpace Opposite

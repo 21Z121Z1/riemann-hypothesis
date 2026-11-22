@@ -1,5 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.TransferenceA
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.TransferenceB
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Bundle0003
 
 namespace ReciprocityTheory.ChartRestriction.G.T0
 

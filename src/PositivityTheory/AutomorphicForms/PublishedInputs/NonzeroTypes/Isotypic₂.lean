@@ -1,5 +1,5 @@
 import Mathlib
-import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.ScalarOnInertiaProp
+import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.Bundle0004
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ZAEqAlgebraMapPt
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilKisinXiExtMemRigidTensorIff
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilKisinSectionTrivialisesInvertPrimeTensor
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0488
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0192
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0205
 
 noncomputable section
 

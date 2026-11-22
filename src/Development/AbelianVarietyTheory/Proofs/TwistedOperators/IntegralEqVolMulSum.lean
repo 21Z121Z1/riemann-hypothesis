@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ClassSumIntegral
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GamOrdNeZero
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryGroupAdelicClassesViaFiniteAdelicPart
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0169
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1690
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0181
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice MeasureTheory Formalism.L2.Theta
 open Formalism.IndefR

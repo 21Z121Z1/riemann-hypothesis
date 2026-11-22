@@ -1,5 +1,5 @@
-import Formalism.RealPlaceAnalysis.StatementC
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.GeneratorPowUpperVanishHolds
+import Formalism.RealPlaceAnalysis.Bundle0003
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0002
 
 open Finset Polynomial
 

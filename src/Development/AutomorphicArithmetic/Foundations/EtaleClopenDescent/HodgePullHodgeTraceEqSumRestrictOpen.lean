@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsGaloisCover
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0031
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.OmegaPullOmegaTraceOfSecTraceOne
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HodgePullHodgePull
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0031
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FormResFormPullFormPull
-import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.HodgeTraceEqSumClopenDecomposition
+import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.Bundle0010
 open CategoryTheory AlgebraicGeometry ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory GlobalTheory.HodgeCoh GlobalTheory.CechDR KaehlerDifferential GlobalTheory.W1
 
 namespace UpperTheory.Cb.TraceBlocks

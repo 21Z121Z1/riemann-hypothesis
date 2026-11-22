@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.QuotientRightRegular
-import GroundTheory.AutomorphicForms.HilbertSchmidtKernel
-import GroundTheory.AutomorphicForms.HilbertSchmidtCompact
+import GroundTheory.AutomorphicForms.Bundle0008
+import GroundTheory.AutomorphicForms.Bundle0006
+import GroundTheory.AutomorphicForms.Bundle0005
 import GroundTheory.AutomorphicForms.DiscreteSpectrumAbstract
 
 open MeasureTheory Topology Filter Set Function

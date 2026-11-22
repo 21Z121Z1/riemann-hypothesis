@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.HasCohomology
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ProjectionCompact
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0004
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0055
 
 noncomputable section
 

@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.CuspSpanNormBounds.CayleyDegreeNondegeneracy.RowsDef
-import Formalism.SharpRestriction.CuspSpanNormBounds.AutLzFiniteOfLoop
+import Formalism.SharpRestriction.CuspSpanNormBounds.CayleyDegreeNondegeneracy.Bundle0003
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0008
 import Formalism.SharpRestriction.CuspSpanNormBounds.LatticeGluingRadicals
 import Formalism.SharpRestriction.CuspSpanNormBounds.AbsoluteAmplitudeSecondOfSource
 

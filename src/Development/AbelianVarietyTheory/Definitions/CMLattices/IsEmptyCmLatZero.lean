@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.CMLattices.ExistsIsThetaDegO
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.PrincipalRootReZeroImSq
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.ExistsEquivOfSumEq
 import Development.AbelianVarietyTheory.Statements.PrincipalLattices.EqZeroOfOppositeSign
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TwoMulEqOfIsTypeFn
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0032
 
 noncomputable section
 

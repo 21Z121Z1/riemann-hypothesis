@@ -1,5 +1,5 @@
 import Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.FlipDecomposition.FlipDecAlt
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlipUSymmCont
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0467
 
 noncomputable section
 

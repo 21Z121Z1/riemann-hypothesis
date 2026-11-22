@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.SecMapApply
-import Development.AbelianVarietyTheory.Definitions.Divisors.NotCoinvQuotEmpty
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsLocallyConstantSplitOm
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LagCoIsotropic
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StoneVonNeumannSchwartzBruhatAnyCharacter
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0004
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0047
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0007
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1120
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1971
 
 noncomputable section
 

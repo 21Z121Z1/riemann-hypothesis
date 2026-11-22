@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.PetEqRelIndexMulPetProd
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsMulOfDetZero
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0004
 open UpperHalfPlane ModularForm CongruenceSubgroup MeasureTheory
 open scoped MatrixGroups ModularForm Manifold
 

@@ -1,7 +1,7 @@
 import Development.AutomorphicArithmetic.CommutativeAlgebra.BconeDefs
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCochainEvalOnSimplexBasicPropertiesStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCochainEvEqOfNaturalStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCochainEvalOnSimplexDifferentialValuesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0371
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0374
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0372
 open CategoryTheory Limits AlgebraicGeometry Opposite CochainComplex CochainComplex.HomComplex GlobalTheory.EtC UpperTheory.Bc
 
 namespace UpperTheory.Adj

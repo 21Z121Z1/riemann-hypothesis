@@ -1,5 +1,5 @@
 import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.ThetaFixOfOfMult
-import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.IsDiscreteOfNorm
+import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.Bundle0005
 import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.UnitOf
 import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.CuspidalMultiplicityOne
 

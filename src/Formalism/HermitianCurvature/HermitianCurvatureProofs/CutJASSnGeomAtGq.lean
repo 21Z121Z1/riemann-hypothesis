@@ -1,6 +1,6 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJASSnGeomCut
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.BigCellHermitian
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.BigCellDecomposition
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0235
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0047
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0056
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LongWeylElement
 
 open Formalism.FourierDecayAlt

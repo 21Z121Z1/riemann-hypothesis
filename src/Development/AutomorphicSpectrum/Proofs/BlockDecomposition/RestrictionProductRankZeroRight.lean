@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubsingletonOfGiso
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MultiProductSingleFactorEquiv
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EGPgTrueEqLastIff
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0498
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0701
 
 noncomputable section
 

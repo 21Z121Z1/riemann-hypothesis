@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsGaugeAll
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicFlagLeviMaxCompactClosedSubgroups
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DetConjOnMatricesKillingIntoSubspaceStatement
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0007
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0142
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0171
 
 open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S GlobalTheory.Count GlobalTheory.FlagMeas
 

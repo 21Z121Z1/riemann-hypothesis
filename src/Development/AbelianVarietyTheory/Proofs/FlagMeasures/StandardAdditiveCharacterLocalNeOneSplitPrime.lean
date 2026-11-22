@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.SelfDualAt
-import Formalism.LocalToGlobal.HermitianForms.TiedStep
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegralExtensionFiniteAdelesBasicProperties
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsNormSubEqOne
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0006
+import Formalism.LocalToGlobal.HermitianForms.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0308
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0002
 
 noncomputable section
 

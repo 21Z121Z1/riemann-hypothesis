@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.ObjBridge
+import Formalism.SharpRestriction.GrowthBounds.Bundle0001
 import Formalism.LocalToGlobal.GroupLattices.PerfectRings.JOInjective
 
 noncomputable section

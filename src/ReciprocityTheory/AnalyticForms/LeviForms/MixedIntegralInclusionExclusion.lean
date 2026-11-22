@@ -1,7 +1,7 @@
 import ReciprocityTheory.AnalyticForms.LeviForms.IsRegFamilyInhabitStatement
-import ReciprocityTheory.AnalyticForms.PotentialTheory.PotentialContDiffAt
-import ReciprocityTheory.AnalyticForms.PotentialTheory.IntegrableOnTargetOfTsupport
-import ReciprocityTheory.AnalyticForms.PotentialTheory.LocDens
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0008
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0006
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0005
 
 namespace ReciprocityTheory.AnForm.P
 

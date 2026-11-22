@@ -1,5 +1,5 @@
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.IsInfUnitary
-import Formalism.RealPlaceAnalysis.StatementKT
+import Formalism.RealPlaceAnalysis.Bundle0002
 
 noncomputable section
 

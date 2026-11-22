@@ -1,7 +1,6 @@
 import Formalism.YangianSpanCharacter.StatementB
-import Formalism.YangianSpanCharacter.YangianRTTProofs.TransposeJReversed
-import Formalism.YangianSpanCharacter.YangianRTTProofs.TransposeSymplecticShift
-import Formalism.YangianSpanCharacter.YangianRTTProofs.RttRelation
+import Formalism.YangianSpanCharacter.YangianRTTProofs.Bundle0002
+import Formalism.YangianSpanCharacter.YangianRTTProofs.Bundle0001
 
 namespace Formalism.YangianSpanCharacter.P
 

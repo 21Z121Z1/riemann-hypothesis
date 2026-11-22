@@ -1,5 +1,5 @@
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.MultForOfCapCls
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CapelliClassificationOfActionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0736
 
 namespace PositivityTheory.RgBcC.RealD
 

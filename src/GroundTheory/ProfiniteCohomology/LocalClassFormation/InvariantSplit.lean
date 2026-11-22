@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.InvariantLevels
-import GroundTheory.ProfiniteCohomology.CohomologyTwoIntAddEquivQZSymmApply
+import GroundTheory.ProfiniteCohomology.Bundle0006
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.ProfCoh

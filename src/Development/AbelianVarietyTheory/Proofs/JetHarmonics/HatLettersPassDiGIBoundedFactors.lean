@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Jets.SameFns
+import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0002
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RuleGD
 
 namespace GlobalTheory.HatNF.Den

@@ -1,6 +1,6 @@
 import Mathlib
 import CompanionTheory.AutomorphicTheory.SegmentRepresentations.IrreducibleSegments.SegmentRepresentationLit
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.JacquetMultiplicityPosOfSocle
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0070
 
 noncomputable section
 

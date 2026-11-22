@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.TwoClassFrameHasLevelSetting
-import Development.AbelianVarietyTheory.Definitions.Divisors.BlockPairCycPow
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockDataOfCongruentHeckeSystem
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0048
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1134
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLocalPrimeAinf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DenseRangeOfIsAlgClosed
 

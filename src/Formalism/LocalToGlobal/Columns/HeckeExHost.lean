@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.Columns.HeckeEx
+import Formalism.LocalToGlobal.Columns.Bundle0012
 import Formalism.LocalToGlobal.Columns.CyclotomicIsCyclotomicExtension
 
 open NumberField IsDedekindDomain

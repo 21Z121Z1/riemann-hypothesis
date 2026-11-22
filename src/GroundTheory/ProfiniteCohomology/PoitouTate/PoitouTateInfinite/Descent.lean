@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.ProfiniteCohomology.InflationRestriction.CohomologyResMemCohomologyConjInvariants
-import GroundTheory.ProfiniteCohomology.Factor
+import GroundTheory.ProfiniteCohomology.Bundle0002
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.ProfCoh

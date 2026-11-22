@@ -1,10 +1,9 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.DataN
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.GlintPrincRelIndexNeZero
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0002
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteIndexUnitIdlSup
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdeleCharacterTrivialOnLocalUnits
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsProdInfMulFinPart
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0101
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0108
 
 noncomputable section
 

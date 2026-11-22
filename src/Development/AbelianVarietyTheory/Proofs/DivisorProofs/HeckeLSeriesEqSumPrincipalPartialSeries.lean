@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.CompletedLStripBounds
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormWt
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.TsumIdealEqSumClassGroup
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ClassGroupCoprimeRepresentative
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0009
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0493
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0005
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0001
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RayLSeriesEulerProduct
 
 noncomputable section

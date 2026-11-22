@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.SumPosOfPer
+import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0019
 
 noncomputable section
 

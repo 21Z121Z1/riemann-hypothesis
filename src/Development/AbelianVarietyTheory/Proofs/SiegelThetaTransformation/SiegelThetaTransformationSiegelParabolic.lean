@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IMemSiegel
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RationalSchwartzBruhatAlgebraIntegralLinearStatement
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SchwartzBruhatInvariantIntegralMatrixMulStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0008
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0005
 
 open Matrix Complex GlobalTheory.SW
 open scoped ComplexConjugate Real

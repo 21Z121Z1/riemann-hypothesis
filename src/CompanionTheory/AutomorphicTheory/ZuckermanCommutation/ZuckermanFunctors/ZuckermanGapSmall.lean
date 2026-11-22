@@ -1,5 +1,5 @@
 import CompanionTheory.AutomorphicTheory.ZuckermanCommutation.ZuckermanFunctors.ZuckermanIngredients
-import CompanionTheory.AutomorphicTheory.ZuckermanCommutation.ZuckermanFunctors.ZuckermanLibraryBounds
+import CompanionTheory.AutomorphicTheory.ZuckermanCommutation.ZuckermanFunctors.Bundle0001
 import CompanionTheory.AutomorphicTheory.ZuckermanCommutation.ZuckermanFunctors.Bridge
 
 namespace CompanionTheory.Zuck

@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.NonemptyCuspFrame
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsConjFsBasisOfUnitary
-import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ProdSplitConjugateEmbeddings
-import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.NormBcharMulNfacRmul
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0946
+import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0038
+import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.Bundle0019
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.BoundedSectionAlgebra
 
 set_option autoImplicit false

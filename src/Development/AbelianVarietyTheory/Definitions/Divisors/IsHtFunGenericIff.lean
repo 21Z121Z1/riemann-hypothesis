@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CurveV
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ProjectiveRepresentationPullbackCoordinates
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2574
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0056
 
 set_option autoImplicit false
 

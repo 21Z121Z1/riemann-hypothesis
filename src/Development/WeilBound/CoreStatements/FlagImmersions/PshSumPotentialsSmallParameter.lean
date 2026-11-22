@@ -1,5 +1,5 @@
 import Mathlib
-import Development.WeilBound.CoreStatements.FlagImmersions.IsPotentialSumPot
+import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0003
 
 noncomputable section
 

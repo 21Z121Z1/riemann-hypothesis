@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PhiCMinB
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0023
 import Mathlib
 
 set_option autoImplicit false

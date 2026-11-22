@@ -1,9 +1,7 @@
 import Mathlib
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0007
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StatementsCurrent
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StPtsBilinear
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StSegrePartition
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StSegreChart
+import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0016
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

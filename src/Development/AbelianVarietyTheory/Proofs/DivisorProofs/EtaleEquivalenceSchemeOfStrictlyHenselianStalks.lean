@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IndEtOfForallFinset
-import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0009
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPullbackSchBc
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCohomologyEquivalenceBasicProperties
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EquivOfStalkwiseBaseChangeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0466
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0913
 open CategoryTheory Limits AlgebraicGeometry Opposite CochainComplex CochainComplex.HomComplex TensorProduct GlobalTheory.EtC
 
 noncomputable section

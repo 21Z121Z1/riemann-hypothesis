@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.COnePropertyFiniteExtensionStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNonzeroZeroFormPolynomialIsAlgClosed
-import Development.AbelianVarietyTheory.Definitions.Foundations.IsFirstChernClassOfLineBundle
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0248
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0506
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0001
 open Polynomial
 
 namespace GlobalTheory

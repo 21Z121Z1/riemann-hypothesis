@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TranslateMomentsAll
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DetIdNormOneMul
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsPrimeUnder
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0086
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0088
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0103
 
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.HermitianLatticesTheory Formalism.MainNotions Formalism.L2.DIV Formalism.L2.Col Formalism.L2.Ker Formalism.L2.Th1.H GlobalTheory.IndefiniteRowSideFullHecke.JetSumTable GlobalTheory.MomT
 

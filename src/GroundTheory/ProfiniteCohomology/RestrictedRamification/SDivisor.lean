@@ -1,7 +1,6 @@
 import Mathlib
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.SUnits
-import GroundTheory.ProfiniteCohomology.RestrictedRamification.SPicDefs
-import GroundTheory.ProfiniteCohomology.RestrictedRamification.ValuationTransport
+import GroundTheory.ProfiniteCohomology.RestrictedRamification.Bundle0001
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.ProfCoh

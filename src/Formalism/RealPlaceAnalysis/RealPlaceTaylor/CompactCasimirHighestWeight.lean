@@ -1,4 +1,4 @@
-import Formalism.RealPlaceAnalysis.StatementKT
+import Formalism.RealPlaceAnalysis.Bundle0002
 
 open scoped InnerProductSpace
 open Finset

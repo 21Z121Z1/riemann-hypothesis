@@ -1,7 +1,6 @@
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SchurOrthogonality.InstMeasurableSpaceMat
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SchurOrthogonality.CzDiagUnitary
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SchurOrthogonality.Bundle0001
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SchurOrthogonality.CiEvalMSmul
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SchurOrthogonality.CfEqSumOfSubset
 import Formalism.GradedWeylDivisibility.FinalD
 
 noncomputable section

@@ -1,11 +1,11 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EmbLLMem
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairIntAt
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1816
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1833
 import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.SumFinsuppAntidiagProdPowDivMultiFactorial
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsMulOfApprox
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FockNormExtremalVectorEqBoundedNat
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MonomialDerivCauchyBoundGaussianGrowth
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.SumIcoTsubTelescope
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0238
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0244
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0009
 
 open MvPolynomial Formalism.BasicNotions Formalism.L2.DIV Formalism.L2.Ker GlobalTheory.MvPoly
 open GlobalTheory.IndefiniteRowSideFullHecke.SubstitutionAdjoint (sharp)

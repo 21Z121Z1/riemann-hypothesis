@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LieModel
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0001
 
 set_option backward.isDefEq.respectTransparency false
 

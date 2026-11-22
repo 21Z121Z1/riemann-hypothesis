@@ -1,5 +1,5 @@
 import Formalism.HermitianCurvature.StatementWd
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.PositionInsertionDiagonalCompat
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0021
 import Formalism.YangianSpanCharacter.YangianRelationFirst
 
 namespace Formalism.FourierDecayAlt.P.Wd11

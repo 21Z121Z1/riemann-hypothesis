@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InvariantSchwartzMemSpanLatticeIndicators
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0060
 
 namespace GlobalTheory.DownLift.SplitGen
 

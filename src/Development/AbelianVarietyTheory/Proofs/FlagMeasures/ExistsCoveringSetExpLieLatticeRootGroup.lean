@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.OfRoots
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0004
 open NumberField Module Matrix Formalism.MainNotions.S GlobalTheory.LoopV
 open scoped ENNReal Classical
 open MeasureTheory Set

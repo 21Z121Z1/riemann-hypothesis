@@ -1,7 +1,7 @@
-import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
-import Formalism.PeriodIntegrals.DSInfCharCap
+import Formalism.RealPlaceAnalysis.Bundle0004
+import Formalism.PeriodIntegrals.Bundle0022
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.DiscreteSpectrumKFiniteDecomposition
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CapelliOperatorOnUnitaryCoefficientEqDerived
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0132
 open scoped InnerProductSpace
 
 noncomputable section

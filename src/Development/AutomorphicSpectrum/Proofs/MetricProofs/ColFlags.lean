@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Statements.MetricStatements.ExistsFlagModelBaseMetric
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordTieCompEquiv
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0024
 
 noncomputable section
 

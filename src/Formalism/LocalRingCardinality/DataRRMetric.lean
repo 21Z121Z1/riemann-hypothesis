@@ -1,4 +1,4 @@
-import Formalism.LocalRingCardinality.DataAmbForm
+import Formalism.LocalRingCardinality.Bundle0002
 import Formalism.LocalRingCardinality.DataDIV
 import Formalism.LocalRingCardinality.DataParams₂
 

@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.ProjectiveLattices.ThShort
-import Formalism.LocalToGlobal.ProjectiveLattices.IsThRule
-import Formalism.LocalToGlobal.ProjectiveLattices.RowDeg
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0002
 import Formalism.LocalToGlobal.ProjectiveLattices.IsCombAt
 
 set_option autoImplicit false

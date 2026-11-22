@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AutomorphicArithmetic.OrbitLabellings.RowDefs
-import Formalism.LocalToGlobal.CharacterGerms.RowTieMemCFin
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0035
 import Formalism.LocalToGlobal.CharacterGerms.RowTieFlagS
-import Formalism.LocalToGlobal.CharacterGerms.RowTieUpFBrFin
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsRestBis
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsRestTer
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0046
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1883
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0973
 
 open scoped BigOperators
 open Classical

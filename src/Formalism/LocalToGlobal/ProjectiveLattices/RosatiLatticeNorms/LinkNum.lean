@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.WeightedPrimeSumBound
-import Formalism.LocalToGlobal.CMDeterminantIdeals.CmNumbersLink
+import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0006
+import Formalism.LocalToGlobal.CMDeterminantIdeals.Bundle0002
 
 noncomputable section
 

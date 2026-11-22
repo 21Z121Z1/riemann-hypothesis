@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.ShapiroDefs
+import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.Bundle0001
 import GroundTheory.ProfiniteCohomology.EulerChar
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseChangeModules
 set_option maxSynthPendingDepth 1

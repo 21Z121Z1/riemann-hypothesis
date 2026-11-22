@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.DefiniteUnitaryAction
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteGroupActsUnitarily
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0017
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0230
 
 noncomputable section
 

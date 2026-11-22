@@ -1,7 +1,7 @@
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.AevalDiagMonomial
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CIndFrFix
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThetaSwapFirstTwo
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.GaugeBilinearTermEqNegDoubleSum
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.Bundle0002
 
 set_option autoImplicit false
 

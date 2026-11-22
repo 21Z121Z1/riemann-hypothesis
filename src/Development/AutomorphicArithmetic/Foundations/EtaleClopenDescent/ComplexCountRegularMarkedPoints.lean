@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.MarkWeightedFixedPointEqDefinitePairOdd
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClassSummandEqTermOfAOne
+import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3343
 
 noncomputable section
 

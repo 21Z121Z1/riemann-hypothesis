@@ -1,11 +1,11 @@
 import Mathlib
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-import Formalism.LocalRingCardinality.ConjSqrtMinusD
-import Formalism.HermitianLattices.HermitianLatticesProofs.LocDual
+import Formalism.LocalRingCardinality.Bundle0001
+import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0003
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Stdform
-import Formalism.LocalToGlobal.ProjectiveLattices.UnramBridgeHolds
-import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.BaseChangeInertUnramified
-import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.DefiniteFormInstances
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0004
+import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0011
+import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0012
 
 noncomputable section
 

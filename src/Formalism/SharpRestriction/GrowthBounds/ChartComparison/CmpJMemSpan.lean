@@ -1,7 +1,7 @@
 import Formalism.SharpRestriction.GrowthBounds.ChartComparison.StepIn
-import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TieWeak
+import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0007
 import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TieDim
-import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.MRatSpanOfRatInv
+import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0008
 
 noncomputable section
 

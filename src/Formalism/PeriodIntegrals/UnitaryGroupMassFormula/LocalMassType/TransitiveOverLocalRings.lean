@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.WCoreDef
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.Bundle0001
 
 noncomputable section
 

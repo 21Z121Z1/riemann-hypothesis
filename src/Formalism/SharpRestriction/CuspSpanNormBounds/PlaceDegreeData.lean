@@ -1,11 +1,11 @@
 import Mathlib
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-import Formalism.HermitianLattices.StatementMass
+import Formalism.HermitianLattices.Bundle0003
 import Formalism.FormalDegreeBessel.StatementDS
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
 import Formalism.SharpRestriction.CuspSpanNormBounds.GlobAut
-import Formalism.SharpRestriction.CuspSpanNormBounds.SArith
-import Formalism.SharpRestriction.CuspSpanNormBounds.DstarEq
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0001
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0004
 import Formalism.SharpRestriction.ParConsts
 
 noncomputable section

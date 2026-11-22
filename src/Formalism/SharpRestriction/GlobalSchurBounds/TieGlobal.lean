@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.ParConsts
-import Formalism.SharpRestriction.GlobalSchurBounds.Chosen
+import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0001
 import Formalism.SizeWindowBrackets.SChain
 import Formalism.SizeWindowBrackets.GaloisToProductIsIso
 

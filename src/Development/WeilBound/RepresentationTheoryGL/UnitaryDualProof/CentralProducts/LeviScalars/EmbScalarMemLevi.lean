@@ -1,7 +1,7 @@
 import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.CentralProducts.TopProdD
-import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.WhittakerCuspidal.UnipBEqUnipotent
+import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.WhittakerCuspidal.Bundle0001
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerCharEqOneOfMemUnipRad
-import GroundTheory.AutomorphicForms.AdmissibleFiniteLength
+import GroundTheory.AutomorphicForms.Bundle0018
 
 noncomputable section
 

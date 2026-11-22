@@ -2,9 +2,8 @@ import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.PieriRule
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.ContinuousRepresentations.DerivExistsAllPosStatement
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Finrank
 import Formalism.RealPlaceAnalysis.QuotientSettingHolds
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.PieriRules.TensRepB
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.PieriRules.TensHW
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.PieriRules.WeylPos
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.PieriRules.Bundle0003
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.PieriRules.Bundle0002
 
 noncomputable section
 

@@ -1,9 +1,9 @@
 import Mathlib
-import Formalism.LocalToGlobal.BesselHermitianTheta.TiedWeilUnr
-import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasWeil
-import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.ShiftMapsUpDown
-import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.SymplHAddRight
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsResolution
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0004
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
+import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.Bundle0007
+import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0030
 
 noncomputable section
 

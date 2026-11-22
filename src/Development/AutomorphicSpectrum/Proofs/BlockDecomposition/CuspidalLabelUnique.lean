@@ -1,8 +1,8 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.FiniteTypeHarishChandra.SupportExistsAll
-import Development.AbelianVarietyTheory.Proofs.CharacterTheory.OrthogonalIntVectorsNotAgreeOnRegular
-import Development.AbelianVarietyTheory.Proofs.CharacterTheory.RegularIffNatDegreeAndExistsEllipticGL
-import Development.AbelianVarietyTheory.Proofs.CharacterTheory.InnerProductRootPowerSumEqOfFrobeniusModEq
+import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0018
+import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0010
+import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0023
 
 open ReciprocityTheory.Ty.Fin
 open Formalism.IrreducibleCountingLemmas.TYPES hiding zIdem IsCuspidal

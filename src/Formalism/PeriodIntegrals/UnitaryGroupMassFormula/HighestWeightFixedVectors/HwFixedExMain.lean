@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.HwFixedLine
+import Formalism.PeriodIntegrals.Bundle0029
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HighestWeightFixedVectors.MonomialMemGe
 
 noncomputable section

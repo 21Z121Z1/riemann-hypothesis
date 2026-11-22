@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.GlobalFields.ComplexMultiplication.ReductionEval
+import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0006
 import GroundTheory.GlobalFields.ComplexMultiplication.FrobeniusAtPrimes
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.KodairaNeron
 set_option maxSynthPendingDepth 1

@@ -1,5 +1,5 @@
-import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.BaseChangeIsobaricNOf
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivOfIsSubquotient
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0678
 import Development.AutomorphicArithmetic.ThetaCorrespondence.FockModels.TwoAtCharZero
 
 noncomputable section

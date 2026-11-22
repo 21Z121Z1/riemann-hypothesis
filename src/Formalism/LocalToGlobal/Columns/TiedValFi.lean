@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.Columns.TiedVal
+import Formalism.LocalToGlobal.Columns.Bundle0026
 
 open NumberField IsDedekindDomain Module Matrix
 open scoped TensorProduct

@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.NumberFieldFamilies.NPartCNdStd
+import Formalism.LocalToGlobal.NumberFieldFamilies.Bundle0001
 import Formalism.LocalToGlobal.NumberFieldFamilies.GamCSpec
 
 noncomputable section

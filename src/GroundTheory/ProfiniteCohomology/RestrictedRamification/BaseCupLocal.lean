@@ -3,7 +3,7 @@ import GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseKummerDefs
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.ClassFieldGSLocal
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BrauerLocalVal
 import GroundTheory.ProfiniteCohomology.LocalTateDuality.Bockstein
-import GroundTheory.ProfiniteCohomology.CyclicCupProf
+import GroundTheory.ProfiniteCohomology.Bundle0007
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.ProfCoh

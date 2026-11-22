@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.NumberFieldFamilies.ThetaCF
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SignatureConjugationInvariant
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0003
 
 noncomputable section
 

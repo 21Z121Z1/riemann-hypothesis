@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutBPEqDecay
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0307
 
 namespace Formalism.FourierDecayAlt.P.CutBPEq
 

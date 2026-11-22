@@ -1,5 +1,5 @@
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TranslationInvariantLattice.TransInvLatOfPhase
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.AreaLat
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0007
 
 open Classical Complex
 

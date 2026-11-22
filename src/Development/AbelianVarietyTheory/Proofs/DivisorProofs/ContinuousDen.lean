@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.RangeShape
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PBConjTranspose
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1202
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.HaarMirror
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.PolarInv
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0008
 
 noncomputable section
 

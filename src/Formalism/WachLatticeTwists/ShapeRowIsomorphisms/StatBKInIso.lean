@@ -1,5 +1,5 @@
 import Formalism.WachLatticeTwists.CharacterSplitJumps.WachTwistTheoremFromTorsionBound
-import Formalism.WachLatticeTwists.CupProductVanishing.Statement
+import Formalism.WachLatticeTwists.CupProductVanishing.Bundle0001
 
 open Formalism.NG
 open ReciprocityTheory.Gal Formalism.RepresentationBoundsCohomology.LOC Formalism.RepresentationBoundsCohomology.JT Formalism.RepresentationBoundsCohomology.T2

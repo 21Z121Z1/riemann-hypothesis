@@ -1,6 +1,6 @@
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.ExistsBasicOpenCover
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.Monomial
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.WMultB
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0003
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0011
 
 namespace ReciprocityTheory.AnForm.R
 

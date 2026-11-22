@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.DepthZeroCuspidalLL
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0010
 
 noncomputable section
 

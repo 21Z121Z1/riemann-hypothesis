@@ -1,6 +1,6 @@
-import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.ReadMod
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsNormalisedOfDualIsConj
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasSatGLOfInvT
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.Bundle0005
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0791
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1190
 
 noncomputable section
 

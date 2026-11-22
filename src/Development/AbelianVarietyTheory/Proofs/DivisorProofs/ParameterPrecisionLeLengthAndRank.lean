@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.LogQdLeRd
-import Development.AbelianVarietyTheory.Definitions.Divisors.QuoIff
-import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
-import Development.AbelianVarietyTheory.Definitions.Divisors.HtValOnSubset
-import Development.AbelianVarietyTheory.Definitions.Divisors.UnifOfSpaceEq
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToNatFloorCast
+import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.Bundle0005
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0068
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0072
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0062
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0056
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2214
 
 noncomputable section
 

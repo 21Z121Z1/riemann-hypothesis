@@ -1,8 +1,8 @@
 import Mathlib
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.FundamentalDomainPointBound
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0003
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Transference
-import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.EmbeddingHermSelf
-import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.IsLocalizedModuleSubtype
+import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0006
+import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0007
 
 open NumberField ReciprocityTheory.ChartRestriction.G.FD Module Submodule
 

@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SplitPart
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FixedVectorEqOfStandardData
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0030
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0014
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.OnFramesRdApply
 
 set_option genSizeOfSpec false

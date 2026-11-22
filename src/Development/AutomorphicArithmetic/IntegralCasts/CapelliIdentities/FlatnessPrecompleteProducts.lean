@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IsCplAtSelf
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0003
 
 open IsLocalRing TensorProduct
 

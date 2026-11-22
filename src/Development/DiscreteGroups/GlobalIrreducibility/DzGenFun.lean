@@ -1,7 +1,7 @@
 import Mathlib
 import Development.DiscreteGroups.GlobalIrreducibility.CellVecFixed
-import Development.DiscreteGroups.GlobalIrreducibility.DzGenCpt
-import Development.DiscreteGroups.GlobalIrreducibility.DzGenLin
+import Development.DiscreteGroups.GlobalIrreducibility.Bundle0007
+import Development.DiscreteGroups.GlobalIrreducibility.Bundle0002
 
 noncomputable section
 

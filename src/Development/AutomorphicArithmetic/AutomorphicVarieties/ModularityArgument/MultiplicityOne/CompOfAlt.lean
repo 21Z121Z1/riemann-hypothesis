@@ -1,5 +1,5 @@
-import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.MultiplicityOne.CompOf
-import Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.DefiniteNHolds
+import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.MultiplicityOne.Bundle0002
+import Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.Bundle0001
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.SatakeRigidity.FullThetaHolds
 
 open PositivityTheory.Rg.BcB PositivityTheory.Rg.BcB.F

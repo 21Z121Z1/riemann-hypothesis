@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateModuleGramRelationsBlocksOrthogonal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdealNormEquationFromLocalAssociatesStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateLinearTensorModuleDecompositionStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExponentialLatticeEndomorphismLiftStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2443
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0161
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0131
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2336
 
 set_option autoImplicit false
 

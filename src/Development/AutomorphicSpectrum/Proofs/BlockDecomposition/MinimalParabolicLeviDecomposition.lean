@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnipMinSubsetMinParOne
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0529
 
 noncomputable section
 

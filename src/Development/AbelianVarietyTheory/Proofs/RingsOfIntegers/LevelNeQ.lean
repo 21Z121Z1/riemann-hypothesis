@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.LocalRingCardinality.DataParams
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.ShortPlace
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0012
 import Development.AbelianVarietyTheory.BlockTheory.GoodPlaces.ShortAtLevelPrime
-import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.OwnPrimeIntegralOfBqd
+import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.Bundle0007
 
 noncomputable section
 

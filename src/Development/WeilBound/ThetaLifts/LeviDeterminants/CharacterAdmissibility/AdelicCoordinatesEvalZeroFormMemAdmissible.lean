@@ -1,9 +1,9 @@
 import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.ResAdm
-import Development.WeilBound.ThetaLifts.LeviDeterminants.ExistsNeOfSurjOn
+import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0010
 import Development.WeilBound.ThetaLifts.LeviDeterminants.LagrangianUniqueness.RealTest
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtendByZeroMemSchA
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductFunctionOnSumCoordsMemAdelicSchwartzSpace
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdelicSchwartzNeZeroAtOrigin
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1109
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1049
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1026
 
 open scoped TensorProduct NNReal Matrix Classical
 open NumberField IsDedekindDomain MeasureTheory Filter Topology Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes

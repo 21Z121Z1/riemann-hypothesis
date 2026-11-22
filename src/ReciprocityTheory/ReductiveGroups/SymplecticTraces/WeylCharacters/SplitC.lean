@@ -1,4 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Weight
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Bundle0003
 import Mathlib.Analysis.InnerProductSpace.TensorProduct
 import Mathlib.LinearAlgebra.TensorProduct.Basis
 

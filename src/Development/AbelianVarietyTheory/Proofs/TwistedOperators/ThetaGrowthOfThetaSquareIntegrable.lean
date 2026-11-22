@@ -1,9 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ThetaKernelGrowth
-import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.HermitianSymplecticScalars
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0025
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LintegralCompactLe
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsModGrowthExpLeNormInfPow
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModerateGrowthOfHasCompactSupport
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0134
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0322
 
 noncomputable section
 

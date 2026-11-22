@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.LocalEnd
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0013
 import Formalism.LocalToGlobal.GlobalTheory.GL5.LevelsProGOfSplitAlgebra
 
 namespace Formalism.L2.GlobalTheoryTheory.GenusMassVolumes

@@ -1,10 +1,10 @@
 import Mathlib
 import Formalism.MeanHeightDescent.MuMaxMinkowski
-import Formalism.MeanHeightDescent.AverageDegreeBounds.DescentSlope
+import Formalism.MeanHeightDescent.AverageDegreeBounds.Bundle0002
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DualPl
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DegSupermodZ
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DiscreteSpanOfLinIndep
-import Formalism.HarderNarasimhan.HarderNarasimhanProofs.ShiftInvariance
+import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0003
 import Formalism.LatticeSlopes.ExistsSaturatedSlopeEqMuMax
 
 open Module NumberField

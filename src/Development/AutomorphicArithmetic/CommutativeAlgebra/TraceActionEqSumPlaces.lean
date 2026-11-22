@@ -2,8 +2,8 @@ import Mathlib
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.ComplexUniformizationSigOne
 import Development.AutomorphicArithmetic.RealSpanData.RealData
 import Development.AutomorphicArithmetic.RealSpanData.JSpan
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceRestrictScalarsField
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BijectiveRealTensorToProdMatrixAlgebrasInfPlaces
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0243
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0982
 
 set_option autoImplicit false
 

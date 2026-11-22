@@ -1,8 +1,8 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteReal.ConcretePkgSpec
-import Formalism.LocalRingCardinality.DataExtra
-import Formalism.LocalRingCardinality.DataTies
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsHolRepOfIsTau
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0023
+import Formalism.LocalRingCardinality.Bundle0007
+import Formalism.LocalRingCardinality.Bundle0003
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0203
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FsubMinorMinus
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FockPolynomialActionOneMulAdjoint
 

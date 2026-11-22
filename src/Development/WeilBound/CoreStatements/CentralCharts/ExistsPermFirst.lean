@@ -1,8 +1,8 @@
 import Development.WeilBound.CoreStatements.CentralCharts.PshAt0
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsSncAdaptedChartAtPointStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncAdaptedChartSectionFormStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogResolutionFubiniStudyPositive
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.SameOrbitRefl
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0041
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0046
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0107
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0036
 
 noncomputable section
 

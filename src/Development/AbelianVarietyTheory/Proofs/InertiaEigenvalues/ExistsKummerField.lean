@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.LocalToGlobal.UnitaryNorms.IsUnitaryNormOf
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChevalleyUnits
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPowDescentCyclotomic
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsFrobFixesRootOfOneModPlace
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SUnitsNumberFieldFg
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0327
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0018
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0104
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0016
 
 noncomputable section
 

@@ -1,6 +1,6 @@
 import Formalism.LocalToGlobal.IndefiniteReal.LeafObjects.OnObjOf3XEq
 import Formalism.LocalToGlobal.ProjectiveLattices.IsGenFrGenFr
-import Formalism.LocalToGlobal.ProjectiveLattices.FamilyUniformisationBasePointOrthogonalBis
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0032
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.RealCubicMeans.LeafBounds.LeafMeans.LeastMultipleEightGeBound
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.TheoremA
 import Development.WeilBound.SupplementaryPages.FaceFrameMatrix

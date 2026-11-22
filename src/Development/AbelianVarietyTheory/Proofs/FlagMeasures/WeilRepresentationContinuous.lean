@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsBesPosOfBesselTied
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LintegralCompactLe
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InfPartOneSubEInfSmul
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsOrientedWeilDatumOfAdelicWeilRepTheta
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsWeilOnSwap
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0126
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0228
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0219
 
 noncomputable section
 

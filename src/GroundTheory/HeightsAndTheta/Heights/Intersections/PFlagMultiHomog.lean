@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.Intersections.StFlagMultiHomog
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.IsVerticalDivOfIsVerticalDivisorAlt
-import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.PCurveComplexPoint
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0029
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0014
+import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0004
 set_option maxSynthPendingDepth 1
 
 noncomputable section

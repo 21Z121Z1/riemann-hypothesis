@@ -1,6 +1,6 @@
-import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.ExistsDensity
+import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.Bundle0001
 import Development.WeilBound.ThetaLifts.SchwartzMoments.DenseC
-import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaDistributionNonzeroAdmissible
+import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0007
 
 noncomputable section
 

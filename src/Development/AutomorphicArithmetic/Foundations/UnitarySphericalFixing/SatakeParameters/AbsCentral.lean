@@ -1,7 +1,7 @@
 import Development.AutomorphicArithmetic.Foundations.UnitarySphericalFixing.SatakeParameters.AbsCentralAlt
-import Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.RecTUnique
+import Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.Bundle0007
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIrreducibleFixed
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalLanglandsOfHyp
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0824
 
 noncomputable section
 

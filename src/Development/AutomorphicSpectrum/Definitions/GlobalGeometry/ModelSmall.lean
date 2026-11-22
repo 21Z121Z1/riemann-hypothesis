@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CInfGood
-import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
-import Development.AbelianVarietyTheory.Definitions.Divisors.SemiposAtOfPositive
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0003
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0076
 
 noncomputable section
 

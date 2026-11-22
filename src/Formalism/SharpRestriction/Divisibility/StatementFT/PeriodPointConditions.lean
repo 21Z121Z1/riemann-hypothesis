@@ -2,7 +2,7 @@ import Formalism.SharpRestriction.Divisibility.LiftErrorLocal
 import Formalism.SharpRestriction.Divisibility.WeightDegreeSizes
 import Formalism.SharpRestriction.Divisibility.ClosedSizeLink.AdmissibleFamilyOfThreshold
 import Formalism.LocalToGlobal.HermitianForms.TiedSym
-import Formalism.LocalToGlobal.HermitianForms.BothSym
+import Formalism.LocalToGlobal.HermitianForms.Bundle0006
 
 noncomputable section
 

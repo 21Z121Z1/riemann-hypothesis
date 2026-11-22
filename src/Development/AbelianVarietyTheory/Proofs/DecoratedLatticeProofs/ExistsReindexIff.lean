@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.OnesRepresent
-import Development.AbelianVarietyTheory.BlockTheory.SiegelEisenstein.SymmetricPatternGroup
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0001
+import Development.AbelianVarietyTheory.BlockTheory.SiegelEisenstein.Bundle0001
 
 open MeasureTheory ValuativeRel Matrix
 

@@ -1,9 +1,9 @@
 import Mathlib
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.DegreeBoundOfHolomorphicContinuation
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0302
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BesselSquareIntegrable.SchurHpk
-import Formalism.PeriodIntegrals.HCFdeg
+import Formalism.PeriodIntegrals.Bundle0014
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalDegreeScaling.FdegScaleOf
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ModularCharacterEqOneOnExpHermitian
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0006
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.MultiplicityOne.Injective
+import GroundTheory.AutomorphicForms.MultiplicityOne.Bundle0001
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness
 
 open MeasureTheory Set Filter Topology Function

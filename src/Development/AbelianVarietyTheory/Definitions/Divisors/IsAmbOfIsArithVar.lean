@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NontrivialIsomClassInt
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ArFormExists
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolEqMultiDiff
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalSectionDivisorPullbackGeneric
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0019
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1084
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2950
 
 set_option autoImplicit false
 

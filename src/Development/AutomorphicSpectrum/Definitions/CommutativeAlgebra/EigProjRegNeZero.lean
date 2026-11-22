@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LatNormGrLatNeZeroOfSpan
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsDiffGenerator
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.EigSubEqDifferentSmulEigQuot
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0013
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0019
 
 noncomputable section
 

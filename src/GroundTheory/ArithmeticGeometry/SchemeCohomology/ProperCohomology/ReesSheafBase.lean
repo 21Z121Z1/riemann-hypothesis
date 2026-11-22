@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ReesRing
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.CokernelCoherent
-import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.PullbackCoherent
+import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.Bundle0006
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Arith.SchemeCoh

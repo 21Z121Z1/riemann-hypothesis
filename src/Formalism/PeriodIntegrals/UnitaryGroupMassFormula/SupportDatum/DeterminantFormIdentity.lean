@@ -1,8 +1,7 @@
 import Mathlib
-import Formalism.PeriodIntegrals.SupportParts
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SupportDatum.Blocks
+import Formalism.PeriodIntegrals.Bundle0031
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SupportDatum.Bundle0001
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SupportDatum.PowModTwoOfSq
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SupportDatum.ModKUnitMul
 
 noncomputable section
 

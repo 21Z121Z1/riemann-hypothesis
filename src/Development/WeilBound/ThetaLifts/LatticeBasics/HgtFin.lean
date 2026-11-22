@@ -1,10 +1,9 @@
 import Mathlib
-import Development.WeilBound.ThetaLifts.LatticeBasics.HgtWitt
-import Development.WeilBound.CoreStatements.LocalThetaKernels.IwasFrame
-import Development.AutomorphicSpectrum.Proofs.AdelicProofs.MemKFinOfFrameIntegral
-import Development.AutomorphicSpectrum.Proofs.AdelicProofs.HasSatOfFamily
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceSplitOrInert
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntAddConjEqOneOfBaseGood
+import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0006
+import Development.WeilBound.CoreStatements.LocalThetaKernels.Bundle0001
+import Development.AutomorphicSpectrum.Proofs.AdelicProofs.Bundle0010
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1388
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1714
 
 noncomputable section
 

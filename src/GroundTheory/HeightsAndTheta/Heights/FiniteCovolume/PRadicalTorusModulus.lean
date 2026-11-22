@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PRadicalTorusModulusDet
-import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PUnipotentModulusHaar
-import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsRadicalTorusModulus
+import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0002
+import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0020
 
 namespace GroundTheory.Heights₂.Heights.FiniteCovolume
 

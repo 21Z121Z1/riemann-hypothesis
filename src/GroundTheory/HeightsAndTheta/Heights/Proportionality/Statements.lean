@@ -1,5 +1,5 @@
 import Mathlib
-import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.IsPshLocallyIntegrableStatement
+import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0001
 import GroundTheory.HeightsAndTheta.Heights.FubiniStudyChern
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Statements
 set_option maxSynthPendingDepth 1

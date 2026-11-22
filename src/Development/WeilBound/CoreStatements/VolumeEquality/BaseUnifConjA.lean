@@ -1,8 +1,8 @@
-import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifDefs
+import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0003
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsValLineLogNormAtIffEmbedding
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DifferentiableOnOfTendstoLocallyUniformlyOn
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolomorphicFamilyConjugateStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0104
 
 noncomputable section
 

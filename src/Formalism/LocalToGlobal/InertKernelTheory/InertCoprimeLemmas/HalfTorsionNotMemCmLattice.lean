@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.InertKernelTheory.StatementCurve
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0007
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.BaseEx
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.QuadraticDedekindZeta.LocOdd
 

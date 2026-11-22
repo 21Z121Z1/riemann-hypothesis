@@ -1,9 +1,7 @@
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.GermIntegrals.StepSt
-import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.GermIntegrals.DetNeZeroOfNearOne
-import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.GermIntegrals.Imports
+import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.GermIntegrals.Bundle0001
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.GermIntegrals.RealPowerProductEqOne
-import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.GermIntegrals.LFrob
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaCorrespondenceLargeRank
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0035
 
 namespace PositivityTheory.Rg.Ming
 

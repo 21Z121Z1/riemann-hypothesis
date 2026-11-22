@@ -1,7 +1,7 @@
 import Development.WeilBound.CoreStatements.FlagImmersions.Transport
-import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifRiem
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsometryPreservesHermitianAndAction
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FamilyPeriodRiemannLattice
+import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0002
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0043
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0240
 
 namespace RootFieldNumerics
 

@@ -2,9 +2,9 @@ import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
 import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.MkMemAdmissibleAtIffCocycle
-import Development.AbelianVarietyTheory.Counterexamples.NonGaloisSurvey.ReindexedFiltrationComparison
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyThetaOnBdRPlusPeriodData
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DvrComplete
+import Development.AbelianVarietyTheory.Counterexamples.NonGaloisSurvey.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0239
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0244
 
 noncomputable section
 

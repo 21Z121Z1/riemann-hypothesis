@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BisimplicialActionSecondFactor
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CechNerveFaceOneZero
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PullbackZeroCochainsAlgebraMap
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0135
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0142
 
 set_option autoImplicit false
 

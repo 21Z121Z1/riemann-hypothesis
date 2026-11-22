@@ -6,10 +6,10 @@ import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
 import Formalism.SharpRestriction.CuspSpanNormBounds.StandingNumericalData
 import Formalism.SharpRestriction.CuspSpanNormBounds.IsPrimitiveSub
 import Formalism.SharpRestriction.CuspSpanNormBounds.FlagEEqHyperbolic
-import Formalism.SharpRestriction.CuspSpanNormBounds.CntPartners
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0007
 import Formalism.SharpRestriction.CuspSpanNormBounds.NormalizedLocalScale
 import Formalism.SharpRestriction.CuspSpanNormBounds.IsTermOver
-import Formalism.HermitianLattices.StatementMass
+import Formalism.HermitianLattices.Bundle0003
 
 noncomputable section
 

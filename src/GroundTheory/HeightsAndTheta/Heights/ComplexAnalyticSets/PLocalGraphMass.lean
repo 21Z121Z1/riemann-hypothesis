@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StLocalGraphMass
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0034
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

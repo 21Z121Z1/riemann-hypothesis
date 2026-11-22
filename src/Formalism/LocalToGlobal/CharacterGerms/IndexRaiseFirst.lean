@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.CharacterGerms.ConstantZeroRestrictPoints
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0034
 
 set_option autoImplicit false
 

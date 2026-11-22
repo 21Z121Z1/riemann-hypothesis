@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.SimpleSum
-import Formalism.LocalToGlobal.ProjectiveLattices.ExistsOfValILeOne
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0006
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0003
 
 open MeasureTheory ValuativeRel Matrix GlobalTheory.SplitWeil GlobalTheory.RootEx
 

@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.LinksLemmas
-import Formalism.LocalToGlobal.IndefiniteReal.WeilFull
-import Formalism.LocalToGlobal.UnitaryNorms.CharTied
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0020
+import Formalism.LocalToGlobal.UnitaryNorms.Bundle0006
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0014
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.MemHalfCosetSelf
 
 noncomputable section

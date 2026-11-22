@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.IsHermForm
+import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.Bundle0002
 import Development.AbelianVarietyTheory.BlockTheory.AdelicCMFields.SupportedAtSplit
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsLatticeRationalVectorsInAdelicTranslate
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0020
 
 noncomputable section
 

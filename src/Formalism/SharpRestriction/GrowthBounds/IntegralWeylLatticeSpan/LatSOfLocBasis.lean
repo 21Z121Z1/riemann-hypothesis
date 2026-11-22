@@ -1,6 +1,6 @@
 import Formalism.LocalToGlobal.GlobalTheory.GL6.PRLocV
-import Formalism.LocalToGlobal.GroupLattices.LevelCharts.SelfDualPI
-import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.IntSplitOf
+import Formalism.LocalToGlobal.GroupLattices.LevelCharts.Bundle0001
+import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0001
 import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.LocIdFr
 
 noncomputable section

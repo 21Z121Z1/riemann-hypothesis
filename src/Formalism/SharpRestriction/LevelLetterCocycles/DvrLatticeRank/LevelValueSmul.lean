@@ -1,6 +1,6 @@
 import Formalism.SharpRestriction.LevelLetterCocycles.DownSlotProposition
-import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.FramePfLoc
-import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.FramePfPt
+import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.Bundle0004
+import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.Bundle0006
 
 noncomputable section
 

@@ -1,6 +1,5 @@
 import Mathlib
-import Formalism.ThetaSupremumBounds.GaussianShiftBounds.BlockIntegralOf
-import Formalism.ThetaSupremumBounds.GaussianShiftBounds.HeightsoundOf
+import Formalism.ThetaSupremumBounds.GaussianShiftBounds.Bundle0001
 
 open Finset MeasureTheory
 open scoped ComplexConjugate Real

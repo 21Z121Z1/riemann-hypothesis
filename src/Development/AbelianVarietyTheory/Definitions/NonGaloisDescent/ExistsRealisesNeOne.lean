@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Statements.WeilDeligneCrystalline.EpsilonConsistencyFiniteOrder
 import GroundTheory.GlobalFields.TateThesis.RootNumberLocalFinite
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsLocExtProper
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0807
 
 noncomputable section
 

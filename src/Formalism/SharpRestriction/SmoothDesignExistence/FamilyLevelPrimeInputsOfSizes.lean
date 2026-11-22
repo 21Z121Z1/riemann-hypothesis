@@ -1,9 +1,9 @@
-import Formalism.SharpRestriction.AdmissibleParameterJoins.DIVfromGLl
+import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0009
 import Formalism.LocalRingCardinality.Lemmas
 import Formalism.SharpRestriction.Divisibility.ClosedSizeLink.AdmissibleFamilyOfThreshold
-import Formalism.SharpRestriction.SmoothDesignExistence.LatticeIndexTer
+import Formalism.SharpRestriction.SmoothDesignExistence.Bundle0002
 import Formalism.SharpRestriction.SmoothDesignExistence.WithSmOfWithCh
-import Formalism.SharpRestriction.AdmissibleParameterJoins.DIVfromGLw
+import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0005
 
 noncomputable section
 

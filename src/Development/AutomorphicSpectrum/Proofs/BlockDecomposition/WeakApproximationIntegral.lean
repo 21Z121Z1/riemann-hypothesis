@@ -3,7 +3,7 @@ import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.PlaneSu
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianPlaneStrongApprox
 import GroundTheory.GlobalFields.Adele.Compact
 import GroundTheory.AutomorphicForms.StrongApproximationSLDense
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsSupported
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0021
 
 noncomputable section
 

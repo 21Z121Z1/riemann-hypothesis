@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.IsSemiChar
-import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.IntegrableOnFundamentalDomainOfContinuous
+import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0003
 
 noncomputable section
 

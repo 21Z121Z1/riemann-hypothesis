@@ -1,6 +1,6 @@
 import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.Proposition5OfThreeParts
-import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.GramExponentArithmetic
-import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.LeOfOneLeMul
+import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.Bundle0010
+import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.Bundle0002
 import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.MembFinal
 import Formalism.SharpRestriction.GrowthBounds.TwistedSubstitution
 

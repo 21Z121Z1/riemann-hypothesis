@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.BadPrimesPeriodBound
-import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.InterlacingEquivariance
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsMulAddEqOneOfNotMem
+import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.Bundle0007
+import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0010
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0095
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TransportedWeylLatticeHermitianDuality
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ActPMemLocPDelStdOfIsBasisAt
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0225
 
 noncomputable section
 

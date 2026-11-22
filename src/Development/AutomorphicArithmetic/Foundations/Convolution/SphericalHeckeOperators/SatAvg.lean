@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.SymSum
-import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.Mac
-import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.HlEval
+import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.Bundle0004
+import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.Bundle0002
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.ThPMul
 
 open MeasureTheory GroundTheory.Automorphic GroundTheory.Automorphic.Spherical GroundTheory.Automorphic.GLnLocal GroundTheory.Automorphic.Iwasawa UpperTheory.ConvolutionTheory.H

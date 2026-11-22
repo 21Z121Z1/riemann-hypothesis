@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPrAlt
-import Formalism.HermitianCurvature.StatementTBB
+import Formalism.HermitianCurvature.Bundle0007
 import Formalism.SharpRestriction.CuspSpanNormBounds.LeadMinorK
 
 noncomputable section

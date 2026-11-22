@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsMirClass
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PatternGroupSubgroupOrderCharacterStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotypicTraceEqOfOneDoubleCosetStatement
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0005
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0144
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0140
 
 open Polynomial Formalism.MainNotions.ArithmeticCylinders GlobalTheory.GLq GlobalTheory.GLm
 open scoped Classical

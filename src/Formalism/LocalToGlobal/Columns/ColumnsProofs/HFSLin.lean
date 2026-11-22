@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.Columns.HeckeInert
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.HfsAevalRestrict
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0027
 
 open Module NumberField IsDedekindDomain Polynomial
 

@@ -1,4 +1,4 @@
-import Formalism.ThetaLogCoordinates.TraceIsometryWeights.StatementD
+import Formalism.ThetaLogCoordinates.TraceIsometryWeights.Bundle0001
 
 namespace Formalism.InvariantFactorPaths.PW
 

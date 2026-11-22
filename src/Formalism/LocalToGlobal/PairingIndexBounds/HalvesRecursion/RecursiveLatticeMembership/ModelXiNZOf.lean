@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.RecursiveLatticeMembership.Bridge
+import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.RecursiveLatticeMembership.Bundle0001
 import Formalism.LocalToGlobal.PairingIndexBounds.ModelLatticeMoves.MovesComposeU
 
 noncomputable section

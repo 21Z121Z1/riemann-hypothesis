@@ -1,4 +1,4 @@
-import Formalism.LocalRingCardinality.SpanPowerMembership.NDLocC
+import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0003
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CovariantDegrees
 
 noncomputable section

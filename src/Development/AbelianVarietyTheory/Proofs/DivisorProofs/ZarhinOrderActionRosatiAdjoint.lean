@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KappaOK
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.AbelianSchemeIdPowFiniteEtaleSurjective
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3462
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0016
 
 noncomputable section
 

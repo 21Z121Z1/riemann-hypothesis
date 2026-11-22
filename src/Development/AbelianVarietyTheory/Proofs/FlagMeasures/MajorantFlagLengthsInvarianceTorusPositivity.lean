@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.BlockAnti
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsHCParamOfSetup
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0007
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0336
 
 open MeasureTheory Matrix Formalism.QuantumDeterminants Formalism.MainNotions.S GlobalTheory.SgInf GlobalTheory.Amp
 open scoped InnerProductSpace ENNReal

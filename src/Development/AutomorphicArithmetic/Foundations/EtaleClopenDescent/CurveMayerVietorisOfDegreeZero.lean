@@ -1,6 +1,6 @@
 import Mathlib
-import Development.EtaleCohomology.EtaleSheaves.LeafCurveCut
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMayerVietorisConnectingExact
+import Development.EtaleCohomology.EtaleSheaves.Bundle0010
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0430
 import Development.EtaleCohomology.EtaleTrace.LocalSplitting.Cover2
 
 open CategoryTheory Limits AlgebraicGeometry GlobalTheory.EtC

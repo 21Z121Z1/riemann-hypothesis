@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.NotZeroChi
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoefficientCongruenceOfTwistedValues
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SeriesEqZeroOfValsTendstoZero
-import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.CoefSup
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsIntegralIffNormLeOne
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0020
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0397
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0408
+import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0400
 open GlobalTheory.KZ GlobalTheory.Ord2 UpperTheory.V.HV Formalism.ConjugateSelfDual PowerSeries
 
 namespace GlobalTheory.KZ.AutoPin

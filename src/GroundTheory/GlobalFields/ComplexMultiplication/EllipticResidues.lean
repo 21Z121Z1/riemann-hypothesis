@@ -2,7 +2,7 @@ import Mathlib
 import GroundTheory.GlobalFields.ComplexMultiplication.EllipticFunctions
 import GroundTheory.GlobalFields.ComplexMultiplication.Residue
 import GroundTheory.GlobalFields.ComplexMultiplication.RectangleIntegral
-import GroundTheory.GlobalFields.ComplexMultiplication.ResidueTheorem
+import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0002
 
 open Complex Filter Topology Set
 open scoped Interval Real

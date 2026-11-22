@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCocCocOf
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTangentVectorContractionTwoCochainProduct
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2511
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2494
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.PreimageEqTopOfSurjective
 
 set_option autoImplicit false

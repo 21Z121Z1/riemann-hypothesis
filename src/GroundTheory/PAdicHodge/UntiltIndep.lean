@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.PAdicHodge.TiltAlgebra
-import GroundTheory.PAdicHodge.OrthoBasis
+import GroundTheory.PAdicHodge.Bundle0002
 set_option maxSynthPendingDepth 1
 
 noncomputable section

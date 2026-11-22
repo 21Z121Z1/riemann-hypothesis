@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ISupEigenspaceEqTop
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SumRowDegreeEqOfHarmonicHighestCasimirStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0094
 
 noncomputable section
 

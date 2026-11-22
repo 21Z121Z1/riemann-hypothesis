@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DiscreteSeriesCoefficientExpansionBoundBall
-import Development.AbelianVarietyTheory.Definitions.Jets.SupWOfSup
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0204
+import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0003
 import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.NormSqUnitNormalizationLe
 open BranchingSupport BpJoin Formalism.FourierDecayAlt Formalism.FourierDecayAlt.ThreeDimData Matrix MeasureTheory Finset

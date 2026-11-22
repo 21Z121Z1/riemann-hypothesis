@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicHensel.DatExOf
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DiscriminantMulIntegralMem
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicHensel.Bundle0005
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0014
 
 theorem UpperTheory.Reformulated.B.Qk39.pDiscInt :
     UpperTheory.Gal.G1.DiscInt := by

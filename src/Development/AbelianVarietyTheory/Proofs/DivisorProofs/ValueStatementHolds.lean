@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapPairDetCovec
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PluckerMinorsProportionalStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitMinorOfIntegralMatrixStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0179
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0149
 
 set_option autoImplicit false
 

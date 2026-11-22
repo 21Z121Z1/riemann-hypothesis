@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.CMDeterminantIdeals.StatementP
-import Formalism.LocalToGlobal.CMDeterminantIdeals.CmNumbersLink
+import Formalism.LocalToGlobal.CMDeterminantIdeals.Bundle0001
+import Formalism.LocalToGlobal.CMDeterminantIdeals.Bundle0002
 
 noncomputable section
 

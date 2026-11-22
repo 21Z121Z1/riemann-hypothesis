@@ -1,12 +1,12 @@
 import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.GlobAut
-import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GapAtLeast
+import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.Bundle0001
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ExistsReduction
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnramifiedDegreeOneOfNcardPlacesOver
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsReductionActionChosenPlaces
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.VolRatioProd
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsChoiceOfIdem
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0103
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0233
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0361
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0211
 
 open Formalism.MainNotions.S GlobalTheory.RowLev GlobalTheory.RowLev.Inhab NumberField IsDedekindDomain Matrix Formalism.UG MeasureTheory
 open scoped TensorProduct Classical

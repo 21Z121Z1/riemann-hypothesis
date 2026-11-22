@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.BlockSumMultiplicities
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsLetterOfLocalEmbedding
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SecondTwistSmallIffExactlyAtAndFinClause
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BdRPlusIsDomainBdRIsField
+import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.Bundle0003
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0046
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0053
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0074
 
 noncomputable section
 

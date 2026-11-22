@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.LocalFields.UnitsBasic
-import GroundTheory.LocalFields.FilteredSurj
+import GroundTheory.LocalFields.Bundle0001
 
 namespace GroundTheory.Global
 

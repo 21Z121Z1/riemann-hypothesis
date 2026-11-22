@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.LevelLetterCocycles.BlochKatoDuality
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0004
 import Formalism.WachLatticeTwists.LatticeDualFibres.PropLocContOfLattices
 import Formalism.WeaklyAdmissibleFiltrations.PhtGalois
 

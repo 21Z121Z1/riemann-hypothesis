@@ -1,4 +1,4 @@
-import Formalism.FrobeniusBaseCase.StatementFix
+import Formalism.FrobeniusBaseCase.Bundle0001
 import Formalism.FrobeniusBaseCase.FrobeniusBaseCaseProofs.BaseCaseFalseGeneralHolds
 
 open MvPowerSeries

@@ -1,9 +1,9 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.IsChartIff
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CmHostRootComplexEqPmSqrt
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MemRiemannRochSpaceIffRegularAtEverywhere
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsProbabilityMeasureMuPart
-import Development.AbelianVarietyTheory.Definitions.ThetaValues.LeCovCoeff
+import Development.AbelianVarietyTheory.Definitions.ThetaValues.Bundle0002
 
 noncomputable section
 

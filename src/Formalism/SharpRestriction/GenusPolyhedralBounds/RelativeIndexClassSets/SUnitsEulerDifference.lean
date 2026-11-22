@@ -1,6 +1,6 @@
 import Formalism.SharpRestriction.Divisibility.WeightAlgebra
 import Formalism.FilteredPoleLength.ReducedBasisBounds.GradedFreeLengthFiltered
-import Formalism.FilteredPoleLength.ReducedBasisBounds.BetaSesquilinearity
+import Formalism.FilteredPoleLength.ReducedBasisBounds.Bundle0002
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ArakelovSingularities.ArMixIff
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ChowSegre
-import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ArakelovSingularities.TopologicalKrullDimOfPolyCovered
+import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ArakelovSingularities.Bundle0003
 
 set_option autoImplicit false
 

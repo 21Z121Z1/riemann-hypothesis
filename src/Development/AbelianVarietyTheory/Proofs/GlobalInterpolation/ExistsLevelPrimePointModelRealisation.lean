@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.KerIsTerm
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LevelChainSharpColumnValuationOfPointKernelLiftL
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0115
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.InvSmulMemOfRedL
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TilLatticesOfLevel
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClassSumPosHerm
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0133
 
 noncomputable section
 

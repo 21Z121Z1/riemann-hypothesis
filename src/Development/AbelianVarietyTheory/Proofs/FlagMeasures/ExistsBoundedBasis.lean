@@ -1,8 +1,8 @@
 import Mathlib
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.TransferenceMinima
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0020
 import Formalism.HermitianLattices.HermitianLatticesProofs.MassTelescope
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianMassUpperBound
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsPositiveAdd
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0770
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0008
 
 open NumberField Module Submodule
 open ReciprocityTheory.ChartRestriction.G.FD (herm cc fdeg rdE)

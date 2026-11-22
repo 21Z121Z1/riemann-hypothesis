@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.OneMapT
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsDeltaDatumHigherLevel
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsModuliSchemePolarizedAbelianLevelStatement
-import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.AdmissibleSmulIffOfCoprime
-import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.FullIffBijective
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0238
+import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.Bundle0003
+import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.Bundle0002
 
 set_option autoImplicit false
 

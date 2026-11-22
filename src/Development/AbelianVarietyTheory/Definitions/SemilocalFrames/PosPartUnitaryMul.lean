@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
 import Formalism.RealPlaceAnalysis.SmoothOnGVIff
-import Formalism.RealPlaceAnalysis.StatementB
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CartanInvolutionConjTransposeMul
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LayerProd
+import Formalism.RealPlaceAnalysis.Bundle0002
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0002
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0004
 
 open MeasureTheory Matrix Finset Formalism.MainNotions.S
 open scoped InnerProductSpace ComplexOrder

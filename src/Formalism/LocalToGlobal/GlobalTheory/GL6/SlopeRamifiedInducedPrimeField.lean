@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.Columns.SliceIntegralDeltaNeBot
-import Formalism.LocalToGlobal.GlobalTheory.GL6.RamifiedLatticePropsOfModel
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0005
 import Formalism.LocalToGlobal.GlobalTheory.GL6.RamifiedLatticeOfRankSlopeLength
 
 noncomputable section

@@ -1,5 +1,5 @@
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.ModelInner
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.ModelGen
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Bundle0004
 
 noncomputable section
 

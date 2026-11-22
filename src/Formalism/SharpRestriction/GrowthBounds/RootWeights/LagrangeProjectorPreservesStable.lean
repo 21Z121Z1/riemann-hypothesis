@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.GrowthBounds.RootWeights.IsotypicProjectorFixedMem
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IsotypicStableUnderOperators
+import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0003
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0043
 
 noncomputable section
 

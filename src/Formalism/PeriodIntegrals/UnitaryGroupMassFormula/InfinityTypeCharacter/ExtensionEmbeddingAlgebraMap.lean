@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.InfTypeChar
+import Formalism.PeriodIntegrals.Bundle0023
 
 noncomputable section
 

@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.SharpRestriction.ValuationFrobeniusEpsilon.ScaledValuations.ValuationApplyLtOneIff
-import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.CocyclesCyclotomicFinrankThree
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0001
 
 noncomputable section
 

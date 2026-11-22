@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.StatementsTopDensityChart
+import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.Bundle0006
 import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.PExtension
 set_option maxSynthPendingDepth 1
 

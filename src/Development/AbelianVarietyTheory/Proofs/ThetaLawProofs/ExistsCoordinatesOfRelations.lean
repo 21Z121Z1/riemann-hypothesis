@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.EqOfFiniteOfClosedFibres
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0008
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.IsUnitOfLagrangian
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaUnifAV
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 
 open Filter Set
 open scoped Topology

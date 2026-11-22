@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CommOfBezout
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormDetLeOneOfEntriesNormLeOne
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsUnitAndIntegInvOfNormDetEqOne
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UltrametricNormDetOneAddSmulStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0191
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0202
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0201
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0208
 
 open GlobalTheory.UnitDiscAlg
 

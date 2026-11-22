@@ -1,8 +1,7 @@
 import Mathlib
-import Formalism.PolynomialDimension.StatementNum
-import Formalism.PolynomialDimension.WeylDim
-import Formalism.PolynomialDimension.FrameSum
-import Formalism.SubspaceCounting.Statement
+import Formalism.PolynomialDimension.Bundle0002
+import Formalism.PolynomialDimension.Bundle0001
+import Formalism.SubspaceCounting.Bundle0001
 
 noncomputable section
 

@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.DifferentiableAtOfPuncturedSmooth
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0248
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.BlockRelationTwistedHeight
 
 open Matrix MeasureTheory Filter Topology

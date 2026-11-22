@@ -2,8 +2,8 @@ import Mathlib
 import Formalism.SharpRestriction.GlobalSchurBounds.StandardLattice
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousAtPlace
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LcscAdelicUnitaryGroup
-import Development.WeilBound.ThetaLifts.TowerModels.TwistedSums.IsLocallyConstantHeisenbergLatticeVacuumFunction
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0067
+import Development.WeilBound.ThetaLifts.TowerModels.TwistedSums.Bundle0002
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSplittingSplitOm
 
 open Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice

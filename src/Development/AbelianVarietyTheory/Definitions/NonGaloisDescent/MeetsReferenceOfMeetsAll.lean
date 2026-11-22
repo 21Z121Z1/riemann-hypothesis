@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NoFormsOff
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0028
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnivSupOfIsotypicPartsInternalDirectSum
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsTripleForOfOff
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0643
 
 noncomputable section
 

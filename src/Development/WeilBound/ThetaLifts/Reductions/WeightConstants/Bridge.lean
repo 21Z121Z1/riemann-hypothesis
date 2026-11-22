@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsFinSetSplitPlacesCoprimeConductor
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0014
 import GroundTheory.GlobalFields.TateThesis.Nonvanishing
 import GroundTheory.GlobalFields.TateThesis.HeckeTheorem
 

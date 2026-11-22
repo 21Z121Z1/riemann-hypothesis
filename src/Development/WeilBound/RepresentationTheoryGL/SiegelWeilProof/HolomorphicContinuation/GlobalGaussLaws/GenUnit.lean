@@ -1,6 +1,6 @@
-import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.GlobalGaussLaws.GenFinSt
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntCoordsEv
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FinPartIdemMulMemIff
+import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.GlobalGaussLaws.Bundle0024
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0504
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0327
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.AtTauExUniqueHolds
 
 noncomputable section

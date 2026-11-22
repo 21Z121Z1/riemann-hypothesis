@@ -1,6 +1,6 @@
 import Formalism.LocalRingCardinality.SpanPowerMembership.ExistsDensity
 import Formalism.LocalRingCardinality.SpanPowerMembership.ExistsOmegaLeb
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.NormLeSum
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0051
 
 noncomputable section
 

@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Degenerations.OfDerivationFnOn
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Imports
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0005
 open TensorProduct MvPolynomial
 noncomputable section
 namespace GlobalTheory.SS.Dil

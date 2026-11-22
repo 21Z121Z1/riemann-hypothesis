@@ -1,7 +1,6 @@
 import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.DiscreteSeriesCharacters.CapelliDeterminantBlockProduct
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QnCovDet
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QnCovLin
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.LemmaDDeterminantIdentity
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0027
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0059
 
 open Matrix Finset
 open scoped InnerProductSpace

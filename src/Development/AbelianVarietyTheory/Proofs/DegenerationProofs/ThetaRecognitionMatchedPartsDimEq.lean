@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Degenerations.NotAllMatchRankZero
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationDataTorsionStructureAlgClosedStatement
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TxCosetCriterionStatement
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0041
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0058
 
 open ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.Ex
 open scoped BigOperators

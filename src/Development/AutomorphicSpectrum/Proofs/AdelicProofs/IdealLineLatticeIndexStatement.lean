@@ -1,7 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.IdealLineLatticeIndex
-import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.KernelsLattice
+import GroundTheory.HeightsAndTheta.Heights.Bundle0001
 open NumberField GroundTheory.Heights₂.Heights
 open scoped nonZeroDivisors
 set_option maxHeartbeats 1000000 in

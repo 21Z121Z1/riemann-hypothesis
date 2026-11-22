@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.MemMCoordIdealIffOfIsWeightedHomogeneous
-import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Imports
+import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0003
 set_option maxSynthPendingDepth 1
 
 noncomputable section

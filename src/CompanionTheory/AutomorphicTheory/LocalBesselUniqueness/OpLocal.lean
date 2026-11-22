@@ -1,8 +1,8 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatOpA
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGaugeCut
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0070
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0056
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.BetaSesquilinearity
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.UsCompose
-import Formalism.FormalDegreeBessel.FinalG
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0029
+import Formalism.FormalDegreeBessel.Bundle0002
 
 open Matrix Set
 open scoped ContDiff Topology

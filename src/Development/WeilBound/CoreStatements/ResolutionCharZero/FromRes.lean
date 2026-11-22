@@ -3,7 +3,7 @@ import Development.ResolutionOfSingularities.Statements
 import Development.WeilBound.CoreStatements.ResolutionCharZero.WeakPair
 import Development.WeilBound.CoreStatements.ResolutionCharZero.FromResIso
 import Development.WeilBound.CoreStatements.ResolutionCharZero.FromResSnc
-import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.StrictNormalCrossingsNil
+import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.Bundle0003
 
 noncomputable section
 

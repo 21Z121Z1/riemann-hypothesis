@@ -1,5 +1,5 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.IntegralNormLeDecay
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.FormWaveMDiff
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0254
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0249
 
 open Matrix MeasureTheory Filter Topology
 open scoped ComplexConjugate

@@ -1,6 +1,6 @@
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ChainRecursionFromSingleDescent
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.LemmaDDeterminantIdentity
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.OperatorPreservesFusionForms
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0059
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0073
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.WRWeyl
 
 noncomputable section

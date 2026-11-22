@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SumChar
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0061
 
 open Finset ComplexConjugate
 

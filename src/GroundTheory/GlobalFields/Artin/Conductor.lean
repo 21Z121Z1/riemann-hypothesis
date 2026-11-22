@@ -3,7 +3,7 @@ import GroundTheory.GlobalFields.SemilocalAlgebras.Galois
 import GroundTheory.GlobalFields.CompletionAtPlace.Inertia
 import GroundTheory.GlobalFields.Artin.MemInvariantsCompSubtypeIff
 import GroundTheory.GlobalFields.TateThesis.ChebotarevAbelian
-import GroundTheory.GlobalFields.TateThesis.ConductorIdeal
+import GroundTheory.GlobalFields.TateThesis.Bundle0005
 import GroundTheory.LocalFields.ArtinConductorBrauer
 import GroundTheory.LocalFields.ConductorTransport
 

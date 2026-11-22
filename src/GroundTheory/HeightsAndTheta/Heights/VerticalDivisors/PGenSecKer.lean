@@ -1,9 +1,9 @@
 import Mathlib
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.JacobianSmoothness.RingKrullDimLeRingKrullDimQuotientAddOne
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PDimStrictDrop
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0005
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.Statements
-import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.ComapMaximalIdealParDVR
-import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.StatementsGenSecKer
+import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Bundle0005
+import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Bundle0011
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Vertical

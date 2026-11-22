@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PSnapperHyperplane
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PSnapperDevissage
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0034
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0033
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Kleiman

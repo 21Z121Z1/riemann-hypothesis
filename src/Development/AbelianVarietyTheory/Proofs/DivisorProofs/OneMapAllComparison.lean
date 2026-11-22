@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteReal.OneMapEq
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.IotaEmbeddingColumns
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0027
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0030
 
 set_option autoImplicit false
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormIdeal
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0086
 
 open MvPolynomial
 

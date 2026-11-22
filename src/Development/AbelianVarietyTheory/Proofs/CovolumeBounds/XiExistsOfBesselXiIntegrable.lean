@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.BesselIntegrals.BesselXiIntegrable
-import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.SphericalFunctionFunctionalEq
+import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.Bundle0015
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.SphericalFunctionLeOne
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.SettingExistence
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0059
 
 namespace GlobalTheory.HCXi
 

@@ -1,10 +1,8 @@
 import Mathlib
-import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.LeibnizOrders.PhiPG0
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicPsiMinusExactStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicPhiMinusExactStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothPhiMinusStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothPsiMinusStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSmoothSmInd
+import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.LeibnizOrders.Bundle0001
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0448
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0418
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0400
 
 noncomputable section
 

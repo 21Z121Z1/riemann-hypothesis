@@ -1,6 +1,6 @@
-import Formalism.SharpRestriction.GrowthBounds.ProofRowTieValsDef
-import Formalism.LocalToGlobal.CharacterGerms.RowTiePProjLieSelf
-import Formalism.LocalToGlobal.CharacterGerms.RowTiePKeyEig2
+import Formalism.SharpRestriction.GrowthBounds.Bundle0006
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0039
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0037
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.LabExt
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0081
 import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
-import Development.AbelianVarietyTheory.Definitions.Uniformization.SeriesFrame
+import Development.AbelianVarietyTheory.Definitions.Uniformization.Bundle0002
 
 noncomputable section
 

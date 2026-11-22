@@ -1,7 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.AdicFrames.SwmConeStatements
+import GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.AdicFrames.Bundle0002
 import GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.AdicFrames.InstSecondCountableTopologyFrameSp
-import GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.AdicFrames.FramePairAddRight
 import GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.AdicFrames.ContinuousFramePairLeft
 import GroundTheory.HeightsAndTheta.Theta.SchroedingerTranslates.WmSysEquivDet
 import GroundTheory.HeightsAndTheta.Theta.LocallyCompactField.Countability

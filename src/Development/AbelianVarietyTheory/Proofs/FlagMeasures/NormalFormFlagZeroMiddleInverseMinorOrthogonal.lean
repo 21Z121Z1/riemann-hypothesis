@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsNormalFormStabilizerMeasure
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0009
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.GBasic
 
 noncomputable section

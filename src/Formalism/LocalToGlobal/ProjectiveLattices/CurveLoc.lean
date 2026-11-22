@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.ProjectiveLattices.CurveComp
-import Formalism.LocalToGlobal.ProjectiveLattices.CurveCountA
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0042
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0002
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.GreenRegularCharacters
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0003
 
 open Polynomial GlobalTheory.GLq GlobalTheory.Published
 

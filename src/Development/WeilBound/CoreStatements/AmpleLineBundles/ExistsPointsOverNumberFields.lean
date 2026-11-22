@@ -1,6 +1,6 @@
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0012
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.JoinModelPointsProject
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroForallComplexPointExtend
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0430
 
 noncomputable section
 

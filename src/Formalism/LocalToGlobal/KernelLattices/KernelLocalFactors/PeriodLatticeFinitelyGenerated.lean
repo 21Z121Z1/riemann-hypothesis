@@ -4,7 +4,7 @@ import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.AlternatingForm
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThDistC
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 import Formalism.LocalToGlobal.GlobalTheory.GL3.LinkThetaStatementFamily
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.DualWeylPoint
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0003
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.TensorBasis
 import Formalism.LocalRingCardinality.CoeNeZeroOfNotMem
 

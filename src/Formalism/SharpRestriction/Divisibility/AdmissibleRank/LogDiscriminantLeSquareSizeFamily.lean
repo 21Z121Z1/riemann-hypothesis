@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.SharpRestriction.Divisibility.FlipOneTwo
-import Formalism.DegreeFormula.PointDegree.FlagDeg
+import Formalism.DegreeFormula.PointDegree.Bundle0001
 import Formalism.SharpRestriction.LevelLetterCocycles.StatementFamilies.ArithmeticCylinders
 import Formalism.SharpRestriction.Divisibility.ModuliIntegralCharts
-import Formalism.SharpRestriction.Divisibility.IntegralModelsLocalData
+import Formalism.SharpRestriction.Divisibility.Bundle0001
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 import Formalism.SharpRestriction.Divisibility.BoundaryLocalData
 import Formalism.GelfandTransference.HadamardGelfand.Transference

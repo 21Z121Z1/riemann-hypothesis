@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDualPullback
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFrameOfProjective
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1068
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1069
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.FinrankOfIsStandardSmoothOfRelativeDimension
 
 set_option autoImplicit false

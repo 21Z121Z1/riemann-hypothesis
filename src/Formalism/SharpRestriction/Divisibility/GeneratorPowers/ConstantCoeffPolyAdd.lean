@@ -1,6 +1,6 @@
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CIndEncPf
-import Formalism.LocalToGlobal.ProjectiveLattices.IsExpChart
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.KillAdd
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0004
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0012
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.Bundle0003
 
 set_option autoImplicit false
 

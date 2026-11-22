@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.SmoothRepContragredient
-import GroundTheory.AutomorphicForms.SmoothRepSchur
+import GroundTheory.AutomorphicForms.Bundle0009
+import GroundTheory.AutomorphicForms.Bundle0010
 import GroundTheory.AutomorphicForms.HeckeAlgebra
-import GroundTheory.AutomorphicForms.LocallyProfinite
+import GroundTheory.AutomorphicForms.Bundle0002
 
 noncomputable section
 

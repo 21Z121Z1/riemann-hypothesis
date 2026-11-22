@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsorsTrivial
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OriginIdeal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosureFiniteEtale
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PointAtZero
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FittingDatumBaseChangeLocalEnlargementStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalRingModTEmbedsStrictHenselianStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0192
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0235
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0249
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0304
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0578
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0593
 open IsLocalRing Polynomial
 
 namespace GlobalTheory.KeyOriginRetract

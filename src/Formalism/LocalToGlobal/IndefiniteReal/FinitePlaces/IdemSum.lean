@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.FinPartPhiE
-import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.TwoSplit
+import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0005
 
 noncomputable section
 

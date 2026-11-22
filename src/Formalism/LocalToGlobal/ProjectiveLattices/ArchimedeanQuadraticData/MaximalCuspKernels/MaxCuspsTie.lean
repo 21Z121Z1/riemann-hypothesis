@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.ProjectiveLattices.SpanRatSmulMem
-import Formalism.LocalToGlobal.ProjectiveLattices.XcLat
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0008
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0035
 
 set_option autoImplicit false
 

@@ -1,5 +1,5 @@
 import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.DiscreteSeriesExhaustion.HeckeAlgebraActions.BackStable
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.InfinitesimalCharacterStatementStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0038
 
 noncomputable section
 

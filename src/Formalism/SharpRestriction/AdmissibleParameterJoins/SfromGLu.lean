@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.SharpRestriction.AdmissibleParameterJoins.SfromGLq
+import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0006
 import Formalism.SharpRestriction.AdmissibleParameterJoins.SfromGLt
-import Formalism.SharpRestriction.ElevenLe
+import Formalism.SharpRestriction.Bundle0001
 
 noncomputable section
 

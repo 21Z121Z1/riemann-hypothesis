@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.AlgebraicTheory.StatementD
+import Formalism.LocalToGlobal.AlgebraicTheory.Bundle0002
 import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.SelfDualCovolume
 
 noncomputable section

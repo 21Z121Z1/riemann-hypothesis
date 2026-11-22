@@ -1,5 +1,5 @@
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchrodingerTensorEqLocalOfSupportedAt
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1705
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsAlgClosedBaseChange
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NefNumericsOfRiemannRoch
-import Development.WeilBound.CoreStatements.PublishedTheorems.NefNumerics.NefRiemannRoch.NefProductNonnegStatement
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0016
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1200
+import Development.WeilBound.CoreStatements.PublishedTheorems.NefNumerics.NefRiemannRoch.Bundle0005
 import Development.WeilBound.CoreStatements.PublishedTheorems.NefNumerics.NefRiemannRoch.NefRiemannRochStatement
 
 set_option autoImplicit false

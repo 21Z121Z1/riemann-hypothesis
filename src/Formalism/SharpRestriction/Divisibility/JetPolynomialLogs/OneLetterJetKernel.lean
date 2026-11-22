@@ -1,6 +1,6 @@
 import Formalism.SharpRestriction.Divisibility.JetPolynomialLogs.DworkPowerSeriesWeights
 import Formalism.GaussJetBounds.GaussJetProofs.LogarithmWeightComparison
-import Formalism.GaussJetBounds.GaussJetProofs.OrbMul
+import Formalism.GaussJetBounds.GaussJetProofs.Bundle0008
 import Formalism.GaussJetBounds.GaussJetProofs.OneGauss
 import Formalism.GaussJetBounds.GaussJetProofs.ConstantCoeffAevalLinP
 

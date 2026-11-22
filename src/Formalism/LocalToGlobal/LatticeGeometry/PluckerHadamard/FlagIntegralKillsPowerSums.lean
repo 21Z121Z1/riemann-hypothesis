@@ -1,7 +1,7 @@
 import Formalism.WeightedDeltaMeans.LowerBoundLinearPower
 import Formalism.WeightedDeltaMeans.LogBaseHeightBound
 import Formalism.LocalToGlobal.LatticeGeometry.PluckerHadamard.StThmB
-import Formalism.LocalRingCardinality.HeightBoundGeFourthPowerRank
+import Formalism.LocalRingCardinality.Bundle0005
 
 noncomputable section
 

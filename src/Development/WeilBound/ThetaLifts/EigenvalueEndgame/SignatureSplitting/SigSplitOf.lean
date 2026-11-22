@@ -1,7 +1,7 @@
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.SignatureSplitting.SigSplit
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.TowerCodimensionTwo
 import Development.WeilBound.ThetaLifts.ConeHypotheses.PureEqPureA
-import Development.WeilBound.ThetaLifts.TowerModels.PlaneHerm
+import Development.WeilBound.ThetaLifts.TowerModels.Bundle0002
 
 noncomputable section
 

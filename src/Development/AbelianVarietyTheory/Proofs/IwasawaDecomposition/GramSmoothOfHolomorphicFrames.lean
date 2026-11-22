@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ToroidalCompactificationData
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsDerivAt0OfCart
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFrameBaseChangeRingHom
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0618
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0572
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsAffineLieBasisBaseChange
-import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsDifferentiableOnTorsSq
+import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0005
 
 set_option autoImplicit false
 noncomputable section

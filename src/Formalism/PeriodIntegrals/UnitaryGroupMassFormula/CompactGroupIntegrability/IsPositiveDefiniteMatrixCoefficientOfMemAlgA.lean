@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.WeylForU
+import Formalism.PeriodIntegrals.Bundle0026
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CompactGroupIntegrability.InstCompactUG
 
 noncomputable section

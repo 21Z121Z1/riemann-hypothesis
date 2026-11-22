@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.FlatSpaceComponents
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0011
 open Formalism.BasicNotions Formalism.BasicNotions.TH NumberField IsDedekindDomain
 open scoped nonZeroDivisors
 attribute [local instance] Formalism.BasicNotions.Host.cmStar

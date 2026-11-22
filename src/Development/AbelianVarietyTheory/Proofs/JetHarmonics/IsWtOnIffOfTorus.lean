@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.PeriodIntegrals.UpqRep
-import Development.AbelianVarietyTheory.BlockTheory.JetGauges.HarishChandraParameters
+import Development.AbelianVarietyTheory.BlockTheory.JetGauges.Bundle0001
 
 open Matrix Finset
 

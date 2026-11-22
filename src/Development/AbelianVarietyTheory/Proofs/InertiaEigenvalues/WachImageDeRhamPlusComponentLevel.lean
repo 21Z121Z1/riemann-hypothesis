@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NotFullBot
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MapMulLeft
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0003
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0512
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachInclusionXQFrobenius
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemRangeOfIsIntegral
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0269
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoeAlgebraMapOC
 
 noncomputable section

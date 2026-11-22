@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.LevBMemFil
-import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.KerEqOfSpan
+import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.Bundle0012
+import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.Bundle0002
 
 noncomputable section
 

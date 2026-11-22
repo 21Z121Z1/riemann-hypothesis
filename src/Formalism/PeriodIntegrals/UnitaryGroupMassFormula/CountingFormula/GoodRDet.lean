@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.GzNeOfTotPos
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.Bundle0007
 
 noncomputable section
 

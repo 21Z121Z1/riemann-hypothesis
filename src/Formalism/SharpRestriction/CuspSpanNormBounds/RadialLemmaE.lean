@@ -1,6 +1,6 @@
 import Formalism.SharpRestriction.CuspSpanNormBounds.DiagonalEntryIdentity
 import Formalism.SharpRestriction.CuspSpanNormBounds.FamilyBlockLiftEstimate
-import Formalism.SharpRestriction.CuspSpanNormBounds.LeSCSCl
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0010
 
 open Matrix MeasureTheory Filter Topology Polynomial
 open scoped ContDiff

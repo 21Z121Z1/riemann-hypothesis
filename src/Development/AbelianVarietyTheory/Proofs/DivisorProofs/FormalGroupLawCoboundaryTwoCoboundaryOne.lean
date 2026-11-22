@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.WittOnFalse
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0020
 import Development.AbelianVarietyTheory.Definitions.Divisors.FormalCoboundarySmul
 
 set_option autoImplicit false

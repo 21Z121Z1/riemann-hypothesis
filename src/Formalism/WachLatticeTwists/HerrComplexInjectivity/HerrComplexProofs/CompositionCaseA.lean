@@ -1,4 +1,4 @@
-import Formalism.WachLatticeTwists.HerrComplexInjectivity.ExtInputNA
+import Formalism.WachLatticeTwists.HerrComplexInjectivity.Bundle0002
 import Formalism.WachLatticeTwists.HerrComplexInjectivity.HerrComplexProofs.RegulatorQuotientCaseA
 
 noncomputable section

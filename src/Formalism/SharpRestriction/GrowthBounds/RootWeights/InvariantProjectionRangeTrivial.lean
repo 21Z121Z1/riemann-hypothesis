@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.RootWeights.HomLatticeDividedPowerStable
+import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0020
 
 noncomputable section
 

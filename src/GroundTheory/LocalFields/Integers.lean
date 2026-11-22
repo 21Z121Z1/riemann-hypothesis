@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.LocalFields.Interface
-import GroundTheory.LocalFields.FiniteExtension
+import GroundTheory.LocalFields.Bundle0002
 
 noncomputable section
 

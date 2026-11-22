@@ -1,4 +1,4 @@
-import Formalism.MahlerMeasure.StatementTM
+import Formalism.MahlerMeasure.Bundle0007
 import Formalism.PolynomialDimension.DigitSumValuationBound
 
 namespace Formalism.CountingSumsFrames

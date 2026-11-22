@@ -1,11 +1,11 @@
 import Mathlib
-import Formalism.PeriodIntegrals.GoodTwo
-import Formalism.EllipticTorsion.EllipticTorsionProofs.Deuring
+import Formalism.PeriodIntegrals.Bundle0024
+import Formalism.EllipticTorsion.EllipticTorsionProofs.Bundle0003
 import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.MulStableIntegral
-import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.StatementH
+import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.Bundle0005
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DyadicStableLattices.ChainPC
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DyadicStableLattices.ExistsNormEqTwoPow
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsGoodReductionAlgebraicWeierstrassModel
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0033
 
 noncomputable section
 open scoped ComplexConjugate

@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.FixedFrameProperty
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0064
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HermitianFormBasics
 
 open Matrix Formalism.FourierDecayAlt Formalism.QuantumDeterminants

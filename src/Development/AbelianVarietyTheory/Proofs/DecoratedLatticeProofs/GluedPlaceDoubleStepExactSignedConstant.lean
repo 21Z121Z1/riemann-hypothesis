@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ValueDoubleUnif
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0016
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoubleUnfoldingStepAtGluedFinitePlace
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.GluedPlaceSourceConstantProofStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0549
 
 noncomputable section
 

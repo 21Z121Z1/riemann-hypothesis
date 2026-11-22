@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.Divisibility.JetPolynomialLogs.DworkPowerSeriesWeights
-import Formalism.GaussJetBounds.GaussJetProofs.ConstantCoeffEvenDerivativeEqZero
+import Formalism.GaussJetBounds.GaussJetProofs.Bundle0003
 
 noncomputable section
 

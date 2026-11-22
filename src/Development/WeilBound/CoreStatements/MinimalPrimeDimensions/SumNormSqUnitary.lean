@@ -1,6 +1,6 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.GenIdeal
-import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.VuSelfKnownTheorem
+import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.Bundle0016
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EqOfIsometricTrivShift
 
 set_option autoImplicit false

@@ -1,5 +1,5 @@
 import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.WhittakerVanishingImpliesZero
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspRapidDecaySiegelGL
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0616
 
 noncomputable section
 

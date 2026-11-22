@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.DedekindZetaSeries.HeightGeSecondCubicBound
+import GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.DedekindZetaSeries.Bundle0001
 import GroundTheory.HeightsAndTheta.Theta.Signature
 import GroundTheory.HeightsAndTheta.Theta.Parabolic
-import GroundTheory.AutomorphicForms.HermitianDisc
+import GroundTheory.AutomorphicForms.Bundle0012
 import GroundTheory.HeightsAndTheta.Theta.GaussianExample
 set_option maxSynthPendingDepth 1
 

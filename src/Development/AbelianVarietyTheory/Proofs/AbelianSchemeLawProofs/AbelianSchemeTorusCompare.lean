@@ -1,6 +1,6 @@
 import Mathlib
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SemiabelianSchemes.GenericFiberGluing.SemistableCompleteSplit
-import Development.AbelianVarietyTheory.BlockTheory.AbelianSchemeLaw.SemiAbelianModels
+import Development.AbelianVarietyTheory.BlockTheory.AbelianSchemeLaw.Bundle0002
 
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry
 open scoped CategoryTheory.Obj

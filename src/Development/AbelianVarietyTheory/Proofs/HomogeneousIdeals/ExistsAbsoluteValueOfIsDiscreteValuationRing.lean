@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.PowLeComapMapPow
+import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0003
 
 open Polynomial
 

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.EntireEqOfHalfPlane
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsFinSetSplitPlacesCoprimeConductor
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.AddCharTrivialIntegralFiniteAdeleMul
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0014
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0070
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousOfVal
 
 noncomputable section

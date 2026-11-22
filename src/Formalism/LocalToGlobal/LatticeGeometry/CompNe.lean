@@ -1,5 +1,4 @@
-import Formalism.LocalToGlobal.LatticeGeometry.NormDetInf
-import Formalism.LocalToGlobal.LatticeGeometry.ArVolEqOfNef
+import Formalism.LocalToGlobal.LatticeGeometry.Bundle0002
 import Formalism.LocalToGlobal.LatticeGeometry.AmpleOnAbelianBase
 
 noncomputable section

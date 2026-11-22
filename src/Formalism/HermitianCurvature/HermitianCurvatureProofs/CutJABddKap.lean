@@ -1,7 +1,7 @@
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJABddSSn
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.BigCellHermitian
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0047
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.TheoremPIntegralOfPlaces
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAFFStableAdjCont
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0219
 
 open Formalism.FourierDecayAlt
 

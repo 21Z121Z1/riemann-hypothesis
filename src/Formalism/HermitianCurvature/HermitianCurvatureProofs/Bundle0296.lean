@@ -1,0 +1,28 @@
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0293
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0289
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0292
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0290
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0294
+
+-- bundled from Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSERDSOpRGrpFinal
+section
+namespace Formalism.FourierDecayAlt.P.CutSE
+
+theorem spectral_right_group_action : RDSOpRGrp := rDSOpRGrp_of_nice spectral_nice_polynomial
+
+theorem spectral_adjoint_right_group : RDSOpRvGrp := rDSOpRvGrp_of_nice spectral_nice_polynomial
+
+end Formalism.FourierDecayAlt.P.CutSE
+end
+
+-- bundled from Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSERDSPairDone
+section
+namespace Formalism.FourierDecayAlt.P.CutSE
+
+theorem spectral_pairing_identity : RDSPair :=
+  rDSPair_of_cut spectral_pairing_inner_swap spectral_pairing_big_cell spectral_pairing_zero_right spectral_pairing_exhaustion spectral_pairing_orbital_membership spectral_pairing_operator
+    spectral_pairing_locality
+
+end Formalism.FourierDecayAlt.P.CutSE
+end
+

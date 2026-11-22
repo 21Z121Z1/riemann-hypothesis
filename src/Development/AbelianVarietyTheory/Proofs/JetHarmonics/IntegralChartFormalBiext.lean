@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Jets.JetsOnCopiesCompatibleF
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBCPf
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsFormalBiextMap
-import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.CanonGaugeNabValBaseChange
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0009
 
 set_option autoImplicit false
 

@@ -1,5 +1,5 @@
-import Development.AutomorphicSpectrum.Definitions.TwistedFlags.BlockDoubleCosetFunctionsExist
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SatakeDeterminesSphericalHeckeCharacterGL
+import Development.AutomorphicSpectrum.Definitions.TwistedFlags.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0128
 
 namespace CompanionTheory.D.Upq.DoubleCosetLemmas
 

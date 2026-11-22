@@ -1,4 +1,4 @@
-import Development.AbelianVarietyTheory.Definitions.Divisors.FormalEnd
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0077
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.MumfordConstruction
 import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField

@@ -5,7 +5,7 @@ import GroundTheory.GlobalFields.ClassFieldConsequences.Conductor
 import GroundTheory.GlobalFields.ClassFieldConsequences.RayClassField
 import GroundTheory.GlobalFields.KummerTheory.LocalIndexAtPlace
 import GroundTheory.GlobalFields.KummerTheory.Splitting
-import GroundTheory.GlobalFields.IdeleGroups.LocalConditionIndex
+import GroundTheory.GlobalFields.IdeleGroups.Bundle0001
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.ProfCoh

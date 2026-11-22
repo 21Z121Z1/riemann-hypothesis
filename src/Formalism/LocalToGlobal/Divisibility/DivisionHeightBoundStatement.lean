@@ -12,7 +12,7 @@ import Formalism.DivisorInequality.BaseLevelBoundsWithCovolume
 import Formalism.DivisorInequality.DivisorInequalityProofs.EvenDegreeWeightBounds
 import Formalism.BranchSandwichDivisors.ChainDenominatorCoupled
 import Formalism.LocalToGlobal.Columns.FiniteSumNonzeroLargeDepth
-import Formalism.LocalToGlobal.Columns.ToHLat
+import Formalism.LocalToGlobal.Columns.Bundle0010
 import Formalism.ThetaSupremumBounds.GaussianShiftBounds.PerEmbeddingCoupledBound
 import Formalism.LocalToGlobal.KernelLattices.ThDistC
 

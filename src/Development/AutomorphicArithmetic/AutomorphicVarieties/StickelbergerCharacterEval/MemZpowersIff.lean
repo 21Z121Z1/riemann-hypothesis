@@ -1,4 +1,4 @@
-import Development.AutomorphicArithmetic.AutomorphicVarieties.StickelbergerElements.CoefMapSingle
+import Development.AutomorphicArithmetic.AutomorphicVarieties.StickelbergerElements.Bundle0001
 
 noncomputable section
 

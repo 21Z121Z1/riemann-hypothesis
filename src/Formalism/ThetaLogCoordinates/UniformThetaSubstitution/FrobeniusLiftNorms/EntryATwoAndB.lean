@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.StatementE
-import Formalism.GrowthSums.StatementG
+import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0003
+import Formalism.GrowthSums.Bundle0001
 
 noncomputable section
 

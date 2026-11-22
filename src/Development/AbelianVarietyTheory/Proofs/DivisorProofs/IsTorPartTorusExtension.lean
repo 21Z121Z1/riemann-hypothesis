@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.TorMatch
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0080
 import Development.AbelianVarietyTheory.Definitions.Divisors.LabRange
 import Development.AbelianVarietyTheory.Statements.SemistableTorsion.ImmersedBy
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UniformisationTorusMonoAndFactor
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCommonFieldOfFieldPointsSamePoint
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0562
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2700
 
 noncomputable section
 

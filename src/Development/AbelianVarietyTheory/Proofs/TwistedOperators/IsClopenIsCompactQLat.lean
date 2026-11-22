@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.DualLiftInvariance
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PairOperatorStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsClopenIsCompactMapsPair
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0040
 
 open MeasureTheory ValuativeRel Matrix IsLocalRing
 open scoped Pointwise

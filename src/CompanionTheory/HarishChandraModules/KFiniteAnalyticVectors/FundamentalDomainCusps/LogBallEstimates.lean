@@ -1,5 +1,5 @@
 import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.FundamentalDomainCusps.HeightBoundSetup
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.TransferenceCoveringDivisor
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0022
 
 open Matrix NumberField Topology
 open scoped ComplexConjugate InnerProductSpace

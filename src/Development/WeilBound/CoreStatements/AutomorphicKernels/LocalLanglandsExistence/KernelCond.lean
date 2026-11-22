@@ -1,5 +1,5 @@
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.DeligneLocalConstants
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.PowFamIsDeligneMeas
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0011
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0013
 import GroundTheory.GlobalFields.TateThesis.HeckeChar
 import GroundTheory.LocalFields.LocalZetaEpsilon
 

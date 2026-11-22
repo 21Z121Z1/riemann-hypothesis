@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.ProfiniteCohomology.Colimit
-import GroundTheory.ProfiniteCohomology.AdditiveHilbert
+import GroundTheory.ProfiniteCohomology.Bundle0005
+import GroundTheory.ProfiniteCohomology.Bundle0001
 import GroundTheory.ProfiniteCohomology.GaloisCohomology.UnitsInflationCochainsFHomApply
 set_option maxSynthPendingDepth 1
 

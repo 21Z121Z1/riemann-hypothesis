@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteSupport
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DerivedAdjoint
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0271
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0104
 
 noncomputable section
 

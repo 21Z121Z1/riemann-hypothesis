@@ -1,7 +1,7 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.SmulNeZeroLat
-import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.FiniteSubfamilySpansDual
+import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Bundle0004
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Nearvec
-import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Cardsub
+import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Bundle0001
 
 open NumberField Matrix UpperTheory.V UpperTheory.V.KT
 open scoped ComplexOrder

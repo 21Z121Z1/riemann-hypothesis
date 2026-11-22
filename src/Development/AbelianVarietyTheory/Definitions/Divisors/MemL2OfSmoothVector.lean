@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.CuspDiscreteDecompositionGL
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieDerivativeL2InnerProduct
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0009
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1307
 
 noncomputable section
 

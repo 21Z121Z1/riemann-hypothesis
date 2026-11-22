@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.TateCohomology.ModuleHomologyData
+import GroundTheory.TateCohomology.Bundle0001
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.GroupCoh

@@ -3,8 +3,8 @@ import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtL
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MemPrinCongOfSm
 import Formalism.LocalToGlobal.Columns.RecLevelLoc
 import Formalism.LocalToGlobal.GroupLattices.LevelCharts.SplitStab
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SplitIntLoc
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemIdSOfResSEqZero
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0008
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0122
 
 noncomputable section
 

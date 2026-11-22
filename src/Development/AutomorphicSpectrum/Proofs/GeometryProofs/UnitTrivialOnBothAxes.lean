@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SqMap
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProperHasPowerFns
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0096
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0095
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsNormalisedGen
-import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsAppTopEqOfEffectiveEpi
+import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0001
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SABBaseChangeSt
 
 noncomputable section

@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FormalGroupOnCopies
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0010
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PartialDerivativeExponent
 
 set_option autoImplicit false

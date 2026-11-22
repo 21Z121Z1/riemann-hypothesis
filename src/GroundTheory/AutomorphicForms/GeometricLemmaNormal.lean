@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.GeometricLemmaUnnormalized
+import GroundTheory.AutomorphicForms.Bundle0018
 import GroundTheory.AutomorphicForms.GeometricLemmaCharacters
 import GroundTheory.AutomorphicForms.GeometricLemmaModular
 import GroundTheory.AutomorphicForms.GeometricLemmaCellChar

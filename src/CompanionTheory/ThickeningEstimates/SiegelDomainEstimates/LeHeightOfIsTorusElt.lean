@@ -1,6 +1,6 @@
 import CompanionTheory.ThickeningEstimates.SiegelDomainEstimates.SquareIntegrableWeilRange
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsSmoothModerateOfIsAutFunSm
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModerateGrowthOfHasCompactSupport
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0322
 
 noncomputable section
 

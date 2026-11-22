@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.AllCoreOf
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DenseSplitFrobInvAway
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0383
 
 noncomputable section
 

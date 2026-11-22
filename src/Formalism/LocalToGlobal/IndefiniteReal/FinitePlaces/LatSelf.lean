@@ -1,7 +1,6 @@
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.LatOAnnIffOf
-import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.GlobalDual
+import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0018
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.LatSDa
-import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.PlaceDual
 
 noncomputable section
 

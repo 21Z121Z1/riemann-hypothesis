@@ -1,5 +1,5 @@
 import Formalism.LocalRingCardinality.DataKerI
-import Formalism.LocalRingCardinality.DataParamsT
+import Formalism.LocalRingCardinality.Bundle0003
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 import Formalism.LocalToGlobal.Columns.LocWLemmas
 

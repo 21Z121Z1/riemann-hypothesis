@@ -1,5 +1,5 @@
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.UnipotentGroups.IsFrPlane
-import Development.WeilBound.ThetaLifts.CartanFactorisation.IntegrableOnRight
+import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0001
 
 noncomputable section
 

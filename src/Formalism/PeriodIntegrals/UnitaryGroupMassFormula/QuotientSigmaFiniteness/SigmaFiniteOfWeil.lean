@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.QuotNuSigma
+import Formalism.PeriodIntegrals.Bundle0008
 
 noncomputable section
 

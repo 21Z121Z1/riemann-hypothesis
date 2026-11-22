@@ -1,12 +1,12 @@
 import Mathlib
-import Formalism.LocalToGlobal.Columns.ToHLat
+import Formalism.LocalToGlobal.Columns.Bundle0010
 import Formalism.LocalToGlobal.Divisibility.FramesLemmas
 import Formalism.LocalToGlobal.Divisibility.ProjLemmas
 import Formalism.LocalToGlobal.GlobalTheory.HLatOpsP
-import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ClassSumDualGeOfFamily
+import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0006
 import Formalism.LocalToGlobal.Columns.AtTRank
 import Formalism.LocalToGlobal.Columns.RowFormsGood
-import Formalism.LocalToGlobal.Columns.ColFormsInst
+import Formalism.LocalToGlobal.Columns.Bundle0006
 
 open NumberField IsDedekindDomain Module
 open scoped Matrix ComplexOrder

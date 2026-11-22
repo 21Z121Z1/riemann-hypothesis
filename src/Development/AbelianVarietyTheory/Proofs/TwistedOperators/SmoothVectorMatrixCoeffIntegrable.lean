@@ -1,11 +1,11 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.DepthPays
-import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ProjExists
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Adapted
+import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0287
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesModelOfDualParameter
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EmbLEqEmbOptL
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0085
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryStabiliserEmbeddingNormLaws
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DKerHasCompactSupport
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0113
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.L2.DIV
 open IsDedekindDomain NumberField MeasureTheory GlobalTheory.ChiGrid GlobalTheory.FunObj GlobalTheory.Grow

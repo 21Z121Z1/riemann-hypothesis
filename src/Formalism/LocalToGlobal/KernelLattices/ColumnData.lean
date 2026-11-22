@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.KernelLattices.ThDistC
-import Formalism.LocalToGlobal.KernelLattices.BaseEx
+import Formalism.LocalToGlobal.KernelLattices.Bundle0001
 import Formalism.LocalToGlobal.Columns.WordFin
 import Formalism.LocalToGlobal.GlobalTheory.JetPositivity.DeltaPowTwelveEqDiscr
 import Formalism.LocalToGlobal.GlobalTheory.GL3.Statement

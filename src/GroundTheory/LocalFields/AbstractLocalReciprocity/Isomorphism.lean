@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.LocalFields.AbstractLocalReciprocity.IsoPGroup
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.TransferOfCompSubtype
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0066
 
 namespace GroundTheory.LocalField.Abstract
 

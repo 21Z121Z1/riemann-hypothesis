@@ -1,15 +1,14 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.BudgetAt
-import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
-import Development.AbelianVarietyTheory.Definitions.Divisors.EightDvdNCol
-import Development.AbelianVarietyTheory.Definitions.Divisors.QuoIff
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumLogDivPredLeReal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightDivisionL1Bound
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PosDividedSlopeWeightsBaseHeight
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpreadLeAt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumPadicValNatMulLogLeLog
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogDivPredMemOfPrime
-import Development.AutomorphicArithmetic.PrimeDiscriminants.BadCount
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0077
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0072
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0068
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0190
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0844
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0864
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0853
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0815
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0830
+import Development.AutomorphicArithmetic.PrimeDiscriminants.Bundle0002
 
 set_option synthInstance.maxHeartbeats 400000
 

@@ -1,5 +1,5 @@
-import Development.EtaleCohomology.WeilConjectures.PushPf
-import Development.EtaleCohomology.KummerTheory.InjSlice
+import Development.EtaleCohomology.WeilConjectures.Bundle0003
+import Development.EtaleCohomology.KummerTheory.Bundle0001
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC

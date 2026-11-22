@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsPairingSingleNe
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SumOpTransversal
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisenbergQuotientOpSumVacuumCommensurableSelfDuStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsHeisenbergInvariantLinearFormIsotropicVacuStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0149
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0038
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0200
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0170
 open Matrix Formalism.UG GlobalTheory.Hk3 GlobalTheory.FinWeil GlobalTheory.SphTheta ValuativeRel Classical
 open GlobalTheory.LFun (HasSatU IsSatVecU heckeVec)
 open GlobalTheory.LGrp (bcParam extProd)

@@ -1,6 +1,6 @@
 import Mathlib
 import Development.WeilBound.ThetaLifts.LatticeBasics.ExistsRealStructure
-import Development.WeilBound.ThetaLifts.SchwartzMoments.SchwartzDqTendsto
+import Development.WeilBound.ThetaLifts.SchwartzMoments.Bundle0002
 
 noncomputable section
 

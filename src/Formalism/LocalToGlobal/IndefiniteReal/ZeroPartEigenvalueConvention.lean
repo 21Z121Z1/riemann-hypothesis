@@ -1,8 +1,8 @@
 import Formalism.LocalToGlobal.IndefiniteReal.LinksLemmas
-import Formalism.LocalToGlobal.IndefiniteReal.LinksW
-import Formalism.LocalToGlobal.IndefiniteReal.WeilFull
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0024
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0020
 import Formalism.LocalToGlobal.IndefiniteReal.PrimitiveStatementsWithPassage
-import Formalism.LocalToGlobal.IndefiniteReal.HeckeIndexRange
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0009
 import Formalism.LocalToGlobal.Columns.HeckeInertComm
 
 noncomputable section

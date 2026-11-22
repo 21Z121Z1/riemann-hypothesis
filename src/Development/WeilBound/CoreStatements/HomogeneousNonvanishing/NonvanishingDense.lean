@@ -1,15 +1,11 @@
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsSncModel
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0008
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Proportional
-import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.ContinuousAtOfClosedRel
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PNonvanishingDense
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PRatPrimeDense
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PFiniteSeparatingModel
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PRootsNear
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PNoetherProjection
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PRootsLiftToZeros
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PRootsBounded
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPolyNonvanishDense
+import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.Bundle0005
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0036
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0004
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0003
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0005
 
 open MvPolynomial ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.AI.I2 ReciprocityTheory.ChartRestriction.G.AI.I4 ReciprocityTheory.AnForm.M ReciprocityTheory.AnForm.P GlobalTheory.CompanionTheory.Ar.Cmp GlobalTheory.CompanionTheory.Ar.PB Filter Topology
 open ReciprocityTheory.ChartRestriction.G.AI.I1 (IsBlockMap pullDeg)

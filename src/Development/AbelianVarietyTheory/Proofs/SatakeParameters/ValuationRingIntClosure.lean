@@ -1,8 +1,7 @@
 import Mathlib
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.ShapeDegreeParity
-import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.TeichmullerFactorisation
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TauPlBijective
+import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.Bundle0006
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0084
 set_option synthInstance.maxHeartbeats 400000
 
 noncomputable section

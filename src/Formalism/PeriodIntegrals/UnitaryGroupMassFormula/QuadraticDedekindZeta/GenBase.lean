@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.ClassNumImQ
+import Formalism.PeriodIntegrals.Bundle0002
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.QuadraticDedekindZeta.Development
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.QuadraticDedekindZeta.SpanNatCastSupEqTop
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.GaugeGap
+import Formalism.PeriodIntegrals.Bundle0020
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicLocalCompactness.AdeleLC
 
 noncomputable section

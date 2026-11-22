@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteAlgebrasOverHenselianAndComplete
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsGrpObjOfFlatClosed
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0046
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0013
 
 noncomputable section
 

@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteReal.CxPassSk
-import Formalism.LocalToGlobal.IndefiniteReal.EqZeroOfMemRangeAdjoint
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0013
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0007
 import Formalism.LocalToGlobal.GlobalTheory.PassageBaseSymmetricLevels
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.SecondStepGluing
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.AuxStatement14

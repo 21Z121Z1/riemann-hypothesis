@@ -1,6 +1,6 @@
 import Mathlib
 import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.AnalyticAtEntry
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0001
 
 open Set Filter Metric Topology
 open scoped ContDiff

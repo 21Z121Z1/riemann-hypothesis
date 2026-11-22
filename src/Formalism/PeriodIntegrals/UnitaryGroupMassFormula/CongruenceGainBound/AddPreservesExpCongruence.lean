@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CongruenceGainBound.SubstitutionBound
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CongruenceGainBound.Bundle0002
 
 noncomputable section
 

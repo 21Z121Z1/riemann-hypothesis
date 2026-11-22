@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.LamLevel
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.NormEmbeddingHostFormConstantEq
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AlgebraicLawsModuliSchemeGoodLevel
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0017
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0123
 import Formalism.LocalToGlobal.Divisibility.FramesLemmas
 
 noncomputable section

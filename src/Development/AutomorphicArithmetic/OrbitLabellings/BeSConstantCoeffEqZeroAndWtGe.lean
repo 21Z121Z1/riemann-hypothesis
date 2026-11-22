@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicArithmetic.OrbitLabellings.ColDefs
-import Formalism.GaussJetBounds.OneLetterRadius
+import Development.AutomorphicArithmetic.OrbitLabellings.Bundle0001
+import Formalism.GaussJetBounds.Bundle0007
 
 open scoped BigOperators
 open Formalism.DworkPowerSeriesWeights Formalism.IncomingBounds UpperTheory.G2

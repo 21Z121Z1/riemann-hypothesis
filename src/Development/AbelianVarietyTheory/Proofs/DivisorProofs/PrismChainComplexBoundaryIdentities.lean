@@ -1,6 +1,6 @@
-import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
-import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.AlternatingSumZero
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0009
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0008
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0002
 open CategoryTheory Limits AlgebraicGeometry Opposite CochainComplex CochainComplex.HomComplex GlobalTheory.EtC
 
 noncomputable section

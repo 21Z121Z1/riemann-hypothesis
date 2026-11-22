@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GaloisSideTwistedSelmerAuxiliaryPrimes
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ToNatAddValMul
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0009
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0197
 
 noncomputable section
 

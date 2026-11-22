@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.HCMult
+import Formalism.PeriodIntegrals.Bundle0014
 import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AdmissibleSmoothVectors.FinalAll
 
 open scoped InnerProductSpace

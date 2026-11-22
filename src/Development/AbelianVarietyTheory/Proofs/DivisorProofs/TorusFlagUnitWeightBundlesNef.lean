@@ -1,12 +1,12 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqLastAddGaps
-import Development.AbelianVarietyTheory.Definitions.Divisors.CuspIso
-import Development.AbelianVarietyTheory.Definitions.Divisors.WellChosen
-import Development.AbelianVarietyTheory.Definitions.Divisors.P22
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetLineTrivialOfToroidal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigFrameMatch
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagChartFramesEigenFramesLocalRing
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagSpaceComponentSmoothProjectiveConnected
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2045
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0066
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0051
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0071
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3276
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2319
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2501
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3005
 
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.GeometryOfNumbersTheory Formalism.L2.Pj Formalism.BasicNotions

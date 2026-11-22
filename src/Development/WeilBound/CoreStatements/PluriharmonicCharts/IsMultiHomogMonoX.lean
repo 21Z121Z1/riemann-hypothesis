@@ -1,8 +1,8 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.IsBlockMapInitialVertex
-import GroundTheory.HeightsAndTheta.Heights.Intersections.PDiagDiv
-import GroundTheory.HeightsAndTheta.Heights.Intersections.PDiagOrd
-import GroundTheory.HeightsAndTheta.Heights.Intersections.PDiagOrdOne
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0023
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0024
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0049
 open MvPolynomial Matrix ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.AI.I1 ReciprocityTheory.ChartRestriction.G.AI.I4 GlobalTheory.CompanionTheory.Ar.PB GroundTheory.Heights₂.Heights GroundTheory.Heights₂.Heights.LowerBoundFree
 open scoped Classical
 

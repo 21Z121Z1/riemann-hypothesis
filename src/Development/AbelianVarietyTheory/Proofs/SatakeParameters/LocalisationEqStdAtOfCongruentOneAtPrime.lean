@@ -1,11 +1,11 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.UnderTie
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocalizedLatticeEqOfAdelicMatricesAgreeAtPlace
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicMatrixCongruenceMoveRationalFrame
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0025
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0290
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0475
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TypePrimeFramesRightTranslateDifferIntegralGL
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AdelicLatticeSpec
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0170
 import Formalism.LocalToGlobal.Columns.AdelicLemmas
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DatumJetsTranslate
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0298
 open NumberField IsDedekindDomain Matrix Formalism.BasicNotions Formalism.UG Formalism.L2.Col Formalism.L2.PairingIndexBounds.F Formalism.MainNotions.G.KAat Formalism.L2.Forms Formalism.L2.Ker Formalism.MainNotions Formalism.L2.DIV Formalism.MainNotions.G GlobalTheory.TwU GlobalTheory.TwV
 open scoped TensorProduct
 

@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.SharpRestriction.Divisibility.SchurIrreducible
-import Formalism.LocalToGlobal.BesselHermitianTheta.DefsReal
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.HighestWeightGeneratedWeightsBelow
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjectorOfIntegrableDiscreteSeriesCoefficientStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarJacLeExpStatement
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0026
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0863
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0580
 
 open Formalism.BasicNotions.TH Formalism.MainNotions.SchurIrreducible Matrix MeasureTheory
 

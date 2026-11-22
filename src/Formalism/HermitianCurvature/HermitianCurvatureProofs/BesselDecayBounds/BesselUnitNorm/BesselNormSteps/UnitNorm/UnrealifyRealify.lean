@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
-import Formalism.FormalDegreeBessel.FinalG
+import Formalism.FormalDegreeBessel.Bundle0002
 
 open MeasureTheory Matrix Finset
 open scoped InnerProductSpace ContDiff

@@ -1,5 +1,5 @@
-import Development.WeilBound.CoreStatements.PublishedTheorems.GlobalFiniteness.FiniteH2TorsionModule
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.FiniteH1UnramifiedOutside
+import Development.WeilBound.CoreStatements.PublishedTheorems.GlobalFiniteness.Bundle0001
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0014
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.InvariantAlgebraComparison.BridgeHomFormula
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.InvariantAlgebraComparison.Bundle0001
 
 noncomputable section
 

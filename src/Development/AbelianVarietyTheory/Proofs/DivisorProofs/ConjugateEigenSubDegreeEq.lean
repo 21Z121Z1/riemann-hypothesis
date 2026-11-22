@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.MaxWeightGL1EqOne
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0036
 
 noncomputable section
 

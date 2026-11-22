@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.RegPFree
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0012
 
 noncomputable section
 

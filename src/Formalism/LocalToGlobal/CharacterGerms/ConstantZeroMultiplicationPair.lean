@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.CharacterGerms.FirstVanishingCore
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0034
 import Formalism.LocalToGlobal.CharacterGerms.PderivDoubleMultiplicationJacobian
 
 set_option autoImplicit false

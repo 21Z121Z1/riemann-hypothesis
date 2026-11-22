@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TrPairApply
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchActionReadingsCompatible
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueArchimedeanMatrixAdeleExtensionOfComStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealScalarArchimedeanAdeleSmulMatrixRealPlaceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1392
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1368
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1500
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1415
 
 noncomputable section
 

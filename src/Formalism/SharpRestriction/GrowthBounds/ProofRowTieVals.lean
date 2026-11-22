@@ -1,6 +1,6 @@
 import Formalism.SharpRestriction.GrowthBounds.ProofRowTieValsU
 import Formalism.SharpRestriction.GrowthBounds.ProofRowTieValsPack
-import Formalism.LocalToGlobal.CharacterGerms.RowTieP_TCoord
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0042
 
 namespace Formalism.L2.FormalSeriesBounds
 

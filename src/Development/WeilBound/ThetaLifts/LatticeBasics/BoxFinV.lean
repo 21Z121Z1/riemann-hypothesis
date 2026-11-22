@@ -1,5 +1,5 @@
 import Mathlib
-import Development.WeilBound.ThetaLifts.LatticeBasics.BoxFinB
+import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0016
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.FourTermExpansion
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CvRhoOfParts
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.JfCVUnderIntOfParts
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.BigCellOrbitSet
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0051
 
 open Matrix MeasureTheory Filter Topology
 open scoped ContDiff

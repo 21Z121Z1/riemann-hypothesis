@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.QuotInv
+import Formalism.PeriodIntegrals.Bundle0008
 
 open MeasureTheory Matrix
 open scoped ENNReal

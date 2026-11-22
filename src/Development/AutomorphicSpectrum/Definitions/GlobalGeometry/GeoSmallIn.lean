@@ -1,6 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.TowerPin
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ShortIn
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0016
 import Formalism.LocalToGlobal.IndefiniteReal.LeafObjects.LiftDataTimeEqWeightTime
 
 noncomputable section

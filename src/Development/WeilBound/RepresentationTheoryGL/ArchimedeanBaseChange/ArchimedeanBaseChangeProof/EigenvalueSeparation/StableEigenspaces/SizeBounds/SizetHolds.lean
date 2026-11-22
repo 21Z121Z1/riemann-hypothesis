@@ -1,5 +1,5 @@
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.EigenvalueSeparation.StableEigenspaces.InterpolationL2Bound
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SizeTor
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0792
 
 noncomputable section
 

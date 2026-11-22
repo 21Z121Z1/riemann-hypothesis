@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.IndefiniteReal.LinksExist
-import Formalism.LocalToGlobal.IndefiniteReal.LinksW
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0024
 
 noncomputable section
 

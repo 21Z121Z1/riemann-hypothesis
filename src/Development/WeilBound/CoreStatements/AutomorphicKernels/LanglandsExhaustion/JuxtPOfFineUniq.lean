@@ -1,8 +1,5 @@
-import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsExhaustion.JuxtWords
+import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsExhaustion.Bundle0002
 import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsExhaustion.JuxtShl
-import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsExhaustion.JuxtSwap
-import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsExhaustion.JuxtUniq
-import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsExhaustion.JuxtDec
 
 noncomputable section
 

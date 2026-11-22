@@ -1,5 +1,5 @@
 import Mathlib
-import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.GaugeTopology.FComb
+import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.GaugeTopology.Bundle0001
 
 open MeasureTheory Matrix GroundTheory.LocalField GroundTheory.Automorphic Filter Topology
 open scoped ValuativeRel

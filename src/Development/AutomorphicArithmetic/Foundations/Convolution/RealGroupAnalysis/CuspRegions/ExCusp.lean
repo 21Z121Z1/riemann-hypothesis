@@ -1,4 +1,4 @@
-import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.FormsIrr
+import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0002
 import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.CuspRegions.CarrierEq
 
 open MeasureTheory NumberField IsDedekindDomain

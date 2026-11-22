@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.InertKernelTheory.FrameInt
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0013
 import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.FinalFree
 import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.ExistsCoprimePowEqOne
 import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.FrobeniusSqIterateTeichmuller

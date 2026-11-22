@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.CollapseExponent
+import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.Bundle0001
 
 noncomputable section
 

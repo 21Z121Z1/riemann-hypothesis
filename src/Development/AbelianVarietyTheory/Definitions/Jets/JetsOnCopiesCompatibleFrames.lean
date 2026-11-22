@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Jets.ColValMonomial
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermCut
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.BidegreeTwoJet
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FramedFamilyStatement
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.BoxTuple
+import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0002
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0005
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0016
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0020
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0018
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.BoxLeOfComp
 
 set_option autoImplicit false

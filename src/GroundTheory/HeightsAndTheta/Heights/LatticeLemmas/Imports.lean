@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.Assembly
-import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.PSphereLawBasic
+import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.Bundle0010
+import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.Bundle0003
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.PSphereLawFirstCoord
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.PFibreMahlerForms
 set_option maxSynthPendingDepth 1

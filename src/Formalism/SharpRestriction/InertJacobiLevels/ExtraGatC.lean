@@ -1,4 +1,4 @@
-import Formalism.LocalRingCardinality.SpanPowerMembership.GatAdd
+import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0008
 import Formalism.SharpRestriction.InertJacobiLevels.ExtraGat
 
 noncomputable section

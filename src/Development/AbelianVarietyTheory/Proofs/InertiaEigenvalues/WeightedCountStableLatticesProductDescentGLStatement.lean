@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WeightedCountStableLatticesProductDescentGL
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0190
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnitLemmaGroup
 open GlobalTheory.UnitLemma Polynomial
 set_option maxHeartbeats 1000000 in

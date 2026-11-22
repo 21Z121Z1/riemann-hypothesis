@@ -1,4 +1,4 @@
-import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.GoodLat
+import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0002
 import GroundTheory.GlobalFields.Adele.Compact
 import GroundTheory.GlobalFields.Adele.Approximation
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.PlaceDualB

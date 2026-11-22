@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.LocalFields.LubinTateReciprocity.Descent
-import GroundTheory.LocalFields.LocalAxiom
+import GroundTheory.LocalFields.Bundle0009
 import GroundTheory.LocalFields.AbstractLocalReciprocity.ReciprocityMap
 import GroundTheory.LocalFields.AbstractLocalReciprocity.NormFormula
 

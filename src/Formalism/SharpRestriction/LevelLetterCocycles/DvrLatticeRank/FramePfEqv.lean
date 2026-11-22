@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.FramePfNat
-import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.GradNPfB
+import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.Bundle0006
 
 noncomputable section
 

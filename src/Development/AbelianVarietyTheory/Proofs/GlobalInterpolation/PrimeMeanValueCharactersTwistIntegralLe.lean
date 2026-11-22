@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ZerosDisc
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IntegralNormSqLp
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.BrunTitchmarshExistsConstStatement
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0005
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0054
 open Complex DirichletCharacter ArithmeticFunction MeasureTheory Filter Topology GlobalTheory.Lin
 open scoped Classical
 

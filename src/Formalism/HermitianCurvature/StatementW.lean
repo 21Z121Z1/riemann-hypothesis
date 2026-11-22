@@ -1,4 +1,4 @@
-import Formalism.YangianSpanCharacter.ExchangeGen
+import Formalism.YangianSpanCharacter.Bundle0002
 
 namespace Formalism.FourierDecayAlt.W
 

@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ValLastX
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.BrEqv
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0005
 
 set_option genSizeOfSpec false
 set_option genInjectivity false

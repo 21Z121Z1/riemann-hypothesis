@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThDistC
-import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.BlockShape
+import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.Bundle0001
 
 open NumberField IsDedekindDomain MvPolynomial
 

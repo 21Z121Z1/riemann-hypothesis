@@ -1,12 +1,10 @@
 import Development.AbelianVarietyTheory.Definitions.Divisors.RangeShape
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PBConjTranspose
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StR
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1202
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1208
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousDen
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjDiagReNonneg
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StExpDeriv
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1174
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjTransposeSignFormDiagEqSignedSumCol
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IteratedDerivScale
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StConstHolds
 import Mathlib
 
 section

@@ -1,8 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExpSeriesContDiffAndHasDerivAt
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.CharSeriesExistsNeZero
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SummableGaussianCoset
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsPosMulNormSqLe
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0003
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0005
 open scoped ContDiff
 
 namespace GlobalTheory.HeisenbergGaussianSeries

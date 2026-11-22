@@ -1,4 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.HasDerivAtMexpCommAddBracket
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0004
 import Mathlib.Analysis.Matrix.PosDef
 import Mathlib.LinearAlgebra.Matrix.SesquilinearForm
 

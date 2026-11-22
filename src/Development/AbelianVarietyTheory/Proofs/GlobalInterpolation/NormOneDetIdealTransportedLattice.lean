@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.ScalarCharacterTwist
-import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.CharacterValuation
+import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0015
+import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0014
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.StandardRankOneLatticeOfLocal
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LiesOverSpanOfNatCastMemHeightOne
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExpNegOneLtOne
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0051
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0072
 
 open NumberField IsDedekindDomain nonZeroDivisors
 

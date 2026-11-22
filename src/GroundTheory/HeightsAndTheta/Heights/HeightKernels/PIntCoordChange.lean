@@ -1,10 +1,10 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsIntCoordChange
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsIntCoordGeoNum
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsIntCoordArInt
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PSpecialMultAt
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0056
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0009
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.RationalSections.ThmISt
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterDivSupp
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0018
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

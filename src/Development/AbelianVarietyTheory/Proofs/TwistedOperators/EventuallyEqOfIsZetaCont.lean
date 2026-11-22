@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.SimplePoleTwistedLift
-import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HeckeLPartialContinuationHolds
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0021
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0005
 
 noncomputable section
 

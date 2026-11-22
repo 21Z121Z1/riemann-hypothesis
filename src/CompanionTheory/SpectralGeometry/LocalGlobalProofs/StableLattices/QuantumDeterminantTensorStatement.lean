@@ -1,5 +1,5 @@
 import Mathlib
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.QuantumDeterminantTensor
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0026
 import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.DiscreteSeriesExhaustion.HeckeAlgebraActions.BackStable
 
 set_option maxHeartbeats 1000000 in

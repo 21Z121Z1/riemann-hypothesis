@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLagrModelOfIsLin
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasCompactSupportFinprodSchwartzBruhatFiniteAdel
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyConstantFinprodSchwartzBruhatFiniteAdel
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFactorPureTensorComponentAtPlace
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1759
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1721
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1726
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1714
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.LUnH
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.ProdEqNorm
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.EvalSmulCong
-import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.CauchyFar
+import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.Bundle0002
 open GlobalTheory.KZ GlobalTheory.K4 UpperTheory.Kd.K4 Polynomial
 open scoped Matrix MatrixGroups
 

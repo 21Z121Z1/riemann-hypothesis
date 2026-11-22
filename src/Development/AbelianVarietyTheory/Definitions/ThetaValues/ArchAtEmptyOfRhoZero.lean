@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.ThetaValues.Generic
-import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.NotJInjRdOfConst
-import Formalism.LocalToGlobal.ProjectiveLattices.CuspMulOf
+import Development.AbelianVarietyTheory.Definitions.ThetaValues.Bundle0003
+import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.Bundle0009
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0025
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsFormDegreeLeHilbertDegreeEvalNeZero
 import Development.AbelianVarietyTheory.Counterexamples.UpperHalfSurvey.SumPnormMonAll
 

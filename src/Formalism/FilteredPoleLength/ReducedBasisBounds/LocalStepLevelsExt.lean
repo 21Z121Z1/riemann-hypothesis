@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.FilteredPoleLength.ReducedBasisBounds.LengthBaseChangeLocal
-import Formalism.FilteredPoleLength.ReducedBasisBounds.FilteredPoleLength
+import Formalism.FilteredPoleLength.ReducedBasisBounds.Bundle0002
 
 noncomputable section
 

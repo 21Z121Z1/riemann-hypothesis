@@ -1,5 +1,5 @@
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsGenericOfIsLocComp
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ColumnWhittakerTransformKeepsLaterLaw
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0737
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0597
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.SignatureSplitting.RightOfFd
 
 noncomputable section

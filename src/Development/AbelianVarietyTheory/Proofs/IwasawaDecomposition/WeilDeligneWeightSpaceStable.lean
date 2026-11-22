@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RestrictHomApply
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0052
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.LocalLanglandsGL
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EigenspaceLeEigenspacePow
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0056
 open NumberField IsDedekindDomain Formalism.ConjugateSelfDual ReciprocityTheory.Gal GlobalTheory.WeilDeligne GlobalTheory.WeilDeligne.PrimDecomp GlobalTheory.LocLanglands
 
 namespace GlobalTheory.WeilDeligne.PrimDecomp

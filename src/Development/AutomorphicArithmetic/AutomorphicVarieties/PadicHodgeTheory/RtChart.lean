@@ -1,12 +1,9 @@
-import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.IsInertiaInfiniteCyclotomic
+import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0008
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.KisinCrTrivial
-import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.RtCompl
-import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.TorAut
-import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.ChartCount
-import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.ChartChange
-import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.ChartGraded
-import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.ChartSpan
-import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.CoSqz
+import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0037
+import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0040
+import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0010
+import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.Bundle0005
 open Formalism.BasicNotions Formalism.BasicNotions.Loc ReciprocityTheory.Gal Module UpperTheory.V.Loc UpperTheory.V.U3 UpperTheory.V.Alg UpperTheory.V.Published IsLocalRing Polynomial
 
 private theorem count_weights_eq_local_dims (w : Fin 12 → ℤ) (h : ∀ j, Nat.card {i // w i = j} ≤ locDims j) (j : ℤ) :

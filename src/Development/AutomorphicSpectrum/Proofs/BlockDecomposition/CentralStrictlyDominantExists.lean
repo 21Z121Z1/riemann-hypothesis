@@ -1,6 +1,6 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.LocalBaseChange.StrictDominanceCasselman.IsStrictlyDominant
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformizerPowTendstoZero
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0395
 
 open GlobalTheory.PRep GlobalTheory.SmGL ValuativeRel PositivityTheory.Lbc Matrix
 

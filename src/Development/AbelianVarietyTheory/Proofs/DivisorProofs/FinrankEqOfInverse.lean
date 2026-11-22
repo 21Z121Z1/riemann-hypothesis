@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsBasisOfBot
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SandwichDatumScalarAction
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0007
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0459
 
 open GlobalTheory.Sandwich GlobalTheory.IndefiniteRowSideFullHecke.SandwichMaps GlobalTheory.DetInv Matrix TensorProduct
 

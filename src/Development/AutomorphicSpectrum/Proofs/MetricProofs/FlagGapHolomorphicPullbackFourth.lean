@@ -1,9 +1,8 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.HasStepCharts
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.SelM
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsClosedSectionBoundary
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.LinearIndependentMulSelM
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.GramMatrixSubScalarPosSemidefStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0035
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0042
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0044
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0052
 open MvPolynomial MeasureTheory Filter Topology Matrix ReciprocityTheory.AnForm ReciprocityTheory.AnForm.M ReciprocityTheory.AnForm.P ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.AI.I1 ReciprocityTheory.ChartRestriction.G.AI.I2 ReciprocityTheory.ChartRestriction.G.AI.I4 GlobalTheory.CompanionTheory.Ar.PB GlobalTheory.CompanionTheory.Ar.PB.StepW GroundTheory.Heights₂.Heights GroundTheory.Heights₂.Heights.LowerBoundFree
 open scoped ComplexOrder Classical
 open scoped ContDiff

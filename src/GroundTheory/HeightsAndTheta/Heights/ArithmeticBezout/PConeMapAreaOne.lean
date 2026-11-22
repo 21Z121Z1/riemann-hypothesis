@@ -1,10 +1,10 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsConeMapAreaOne
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsAreaFormulaInj
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PConeIntegralMass
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PFrameJacobianSum
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0009
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0005
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0012
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0041
 import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.VolumePreservingUncurry
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0068
 set_option maxSynthPendingDepth 1
 
 noncomputable section

@@ -1,7 +1,6 @@
-import Formalism.LocalToGlobal.GlobalTheory.GL6.AdelicFunctionRightTranslateDiamond
-import Formalism.LocalToGlobal.HermitianForms.FramesLemmas
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0002
+import Formalism.LocalToGlobal.HermitianForms.Bundle0003
 import Formalism.LocalToGlobal.Columns.PolyFnLemmas
-import Formalism.LocalToGlobal.GlobalTheory.GL6.FrobeniusIdentitiesNoKernelOfClauses
 
 noncomputable section
 

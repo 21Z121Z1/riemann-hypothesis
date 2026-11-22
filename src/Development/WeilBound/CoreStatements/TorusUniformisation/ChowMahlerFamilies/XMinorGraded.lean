@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.FlagMinor
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsUniformDenominator
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0006
 
 open GlobalTheory.CompanionTheory.Ar.Num
 

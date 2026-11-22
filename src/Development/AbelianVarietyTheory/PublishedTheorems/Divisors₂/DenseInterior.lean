@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.IsChartIff
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HasArcDataIff
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0001
 
 noncomputable section
 

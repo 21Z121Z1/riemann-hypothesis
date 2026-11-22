@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.ArithmeticGeometry.SchemeCohomology.LocalizingCech
+import GroundTheory.ArithmeticGeometry.SchemeCohomology.Bundle0004
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.CechToDerived
 set_option maxSynthPendingDepth 1
 

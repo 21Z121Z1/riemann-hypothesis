@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CentralIdemCoeff
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0006
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FontaineFormalismOfRegular
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AlgClosureTensorBcrisToBdRInjective
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BcrisRegularOfTensorInj
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0347
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0574
 
 noncomputable section
 

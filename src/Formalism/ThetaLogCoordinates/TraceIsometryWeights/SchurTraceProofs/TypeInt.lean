@@ -1,6 +1,5 @@
-import Formalism.ThetaLogCoordinates.TraceIsometryWeights.StatementB
-import Formalism.ThetaLogCoordinates.TraceIsometryWeights.SchurTraceProofs.HomRelationHolds
-import Formalism.ThetaLogCoordinates.TraceIsometryWeights.SchurTraceProofs.InvInt
+import Formalism.ThetaLogCoordinates.TraceIsometryWeights.Bundle0001
+import Formalism.ThetaLogCoordinates.TraceIsometryWeights.SchurTraceProofs.Bundle0001
 
 namespace Formalism.InvariantFactorPaths.PW
 

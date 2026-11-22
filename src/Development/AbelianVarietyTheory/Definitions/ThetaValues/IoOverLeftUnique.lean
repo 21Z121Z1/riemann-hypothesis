@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.ProjectiveLattices.SpMapAlgHomId
-import Development.AbelianVarietyTheory.Definitions.ThetaValues.LeCovCoeff
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.SecBCIffSecBCTest
+import Development.AbelianVarietyTheory.Definitions.ThetaValues.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0098
 
 set_option autoImplicit false
 set_option synthInstance.maxHeartbeats 200000

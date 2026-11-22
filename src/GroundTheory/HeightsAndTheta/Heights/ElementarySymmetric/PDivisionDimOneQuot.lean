@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.DivisionDimOneQuot
+import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.Bundle0008
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.EffectiveHS

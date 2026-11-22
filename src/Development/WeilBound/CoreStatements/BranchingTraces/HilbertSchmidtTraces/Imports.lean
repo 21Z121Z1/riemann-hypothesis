@@ -1,6 +1,5 @@
-import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.IsFdAbs
-import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.HsTrace
-import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.ReflEx
+import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.Bundle0002
+import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.Bundle0001
 
 open MeasureTheory Matrix Formalism.MainNotions.S Formalism.REAL Formalism.QuantumDeterminants Formalism.L2.Theta GlobalTheory.SmVec GlobalTheory.CompanionTheory.UnitaryFramesMetricPeriods
 open scoped InnerProductSpace

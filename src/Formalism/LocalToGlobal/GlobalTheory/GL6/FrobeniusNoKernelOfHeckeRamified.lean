@@ -1,8 +1,7 @@
 import Formalism.LocalToGlobal.GlobalTheory.GL6.PSplitT
-import Formalism.LocalToGlobal.GlobalTheory.GL6.DiamondPreservesForms
-import Formalism.LocalToGlobal.GlobalTheory.GL6.DiamondCommDistinctPlaces
-import Formalism.LocalToGlobal.GlobalTheory.GL6.FrobeniusIdentitiesNoKernelOfClauses
-import Formalism.LocalToGlobal.GlobalTheory.GL6.FrameTranslate
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0003
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0004
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0002
 import Formalism.LocalToGlobal.GlobalTheory.GL6.EqOneOfCoprimeTorsionTwoPrimes
 
 noncomputable section

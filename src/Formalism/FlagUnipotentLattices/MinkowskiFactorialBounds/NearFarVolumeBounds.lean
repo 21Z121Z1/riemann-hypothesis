@@ -1,5 +1,5 @@
-import Formalism.FlagUnipotentLattices.CoveringRadius2
-import Formalism.LogSumExpBounds.CharacterSumPhase.NuclearNormBoundHolds
+import Formalism.FlagUnipotentLattices.Bundle0006
+import Formalism.LogSumExpBounds.CharacterSumPhase.Bundle0002
 
 open Finset MeasureTheory NumberField Matrix
 open scoped ComplexOrder

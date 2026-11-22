@@ -1,7 +1,7 @@
 import Development.WeilBound.CoreStatements.MultihomogeneousSquares.AntisymmetryFibreSquares
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptMultihomogForm
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptInteriorGenericStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NormalSchemeCoordsInjectiveStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0289
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0104
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0128
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalRingPointsExistsUnique
 
 noncomputable section

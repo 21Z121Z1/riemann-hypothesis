@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.GhostFrobenius
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAinfSandwichDatumBlockSumStatement
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0015
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0519
 
 set_option autoImplicit false
 

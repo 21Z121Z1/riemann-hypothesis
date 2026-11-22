@@ -1,8 +1,8 @@
 import Mathlib
-import Formalism.PeriodIntegrals.LatDefs
-import Formalism.PeriodIntegrals.SigmaStarEx
-import Formalism.PeriodIntegrals.AreaLat
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.AreaLat
+import Formalism.PeriodIntegrals.Bundle0006
+import Formalism.PeriodIntegrals.Bundle0015
+import Formalism.PeriodIntegrals.Bundle0014
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0007
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaSeriesExistence.ThetaDerivNe
 
 noncomputable section

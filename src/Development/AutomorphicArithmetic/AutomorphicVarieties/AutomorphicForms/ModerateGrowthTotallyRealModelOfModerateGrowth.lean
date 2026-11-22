@@ -1,7 +1,7 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SiegelHeights.SiegelHeight
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.AdelicHeightGeArchOpNorm
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0002
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SiegelSetInterTranslateFinite
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SiegelSetHeightBound
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0003
 open NumberField Matrix GlobalTheory.CuspRep GroundTheory.Automorphic GroundTheory.Automorphic.AutomorphicForm UpperTheory.V UpperTheory.V.Fb
 
 private theorem one_le_ht {E : Type} [Field E] [NumberField E] {a : ℕ} (y : GL (Fin a) (TR.Rinf E)) :

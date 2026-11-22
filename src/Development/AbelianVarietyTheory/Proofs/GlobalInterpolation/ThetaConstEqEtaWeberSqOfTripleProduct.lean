@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.ThetaConstantWeber
-import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.ThetaLine
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DifferentiableOddTheta
+import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0014
 open Complex
 open UpperHalfPlane hiding I
 open scoped Real

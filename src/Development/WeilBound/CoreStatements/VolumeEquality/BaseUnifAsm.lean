@@ -1,7 +1,7 @@
 import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifGood
-import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifEx2
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RingOfIntegersHomInjective
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.InducedModelMorphismCompStructureMap
+import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0005
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0129
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0113
 import Development.AbelianVarietyTheory.Statements.HyperbolicHypotheses.HypothesesInhabitedHyperbolic
 
 noncomputable section

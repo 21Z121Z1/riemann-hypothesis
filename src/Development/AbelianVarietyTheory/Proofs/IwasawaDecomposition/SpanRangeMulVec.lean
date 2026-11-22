@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PlaceCharacterEqReferenceIff
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClassPresExtMemExtBijIsom
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0119
 import Formalism.LocalRingCardinality.DataIdx
 
 noncomputable section

@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.ZetaPair
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.CountableIdealSummableAbsNormRpow
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0020
 open NumberField IsDedekindDomain Polynomial GlobalTheory.HenQ
 
 noncomputable section

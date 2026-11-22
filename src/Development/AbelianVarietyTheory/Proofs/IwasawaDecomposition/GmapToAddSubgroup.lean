@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThDistC
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinAlgOfFinite
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0127
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ThetaMovedCosetIndicatorVacuumShape
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsLiftHalfLatticeRational
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0117
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.HermitianLatticesTheory Formalism.MainNotions Formalism.L2.DIV Formalism.L2.Col Formalism.L2.Ker Formalism.L2.Th1.H GlobalTheory.IndefiniteRowSideFullHecke.JetSumTable GlobalTheory.MomT GlobalTheory.Mem.Col2.JetEx GlobalTheory.MomT.ThShape
 
 noncomputable section

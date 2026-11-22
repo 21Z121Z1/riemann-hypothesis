@@ -1,6 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.WwInjective
-import Formalism.PeriodIntegrals.WwCauchyBinet
+import Formalism.PeriodIntegrals.Bundle0013
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GramInjectivity.GramVanish
 
 noncomputable section

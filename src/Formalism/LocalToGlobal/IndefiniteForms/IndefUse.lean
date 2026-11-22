@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.LocalToGlobal.IndefiniteForms.IndefSide
 import Formalism.JacquetSubsetSums.SeparationTR
 import Formalism.DivisorInequality.StatementObj
-import Formalism.QuotientMetricDivisors.DivIntoDualShift
+import Formalism.QuotientMetricDivisors.Bundle0002
 
 open Module NumberField IsDedekindDomain
 open scoped Matrix ComplexOrder InnerProductSpace

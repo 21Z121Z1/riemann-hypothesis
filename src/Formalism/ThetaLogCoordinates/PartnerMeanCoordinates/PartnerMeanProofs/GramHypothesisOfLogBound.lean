@@ -1,8 +1,7 @@
 import Formalism.PolynomialDimension.ChainOrderLetters
-import Formalism.ThetaLogCoordinates.PartnerMeanCoordinates.PartnerMeanProofs.TheoremMCKap7
+import Formalism.ThetaLogCoordinates.PartnerMeanCoordinates.PartnerMeanProofs.Bundle0001
 import Formalism.ThetaLogCoordinates.PartnerMeanCoordinates.PartnerMeanProofs.NatLogLeOfLe
 import Formalism.ThetaLogCoordinates.PartnerMeanCoordinates.PartnerMeanProofs.GammaZeroIntegral
-import Formalism.ThetaLogCoordinates.PartnerMeanCoordinates.PartnerMeanProofs.TheoremMXBOfPoint
 
 namespace Formalism.InvariantFactorPaths.MC
 

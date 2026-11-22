@@ -1,5 +1,5 @@
-import Formalism.GaussJetBounds.StatementQ
-import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.JetExpShape
+import Formalism.GaussJetBounds.Bundle0005
+import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.Bundle0002
 import Formalism.FormalGroupLog.Statement
 
 noncomputable section

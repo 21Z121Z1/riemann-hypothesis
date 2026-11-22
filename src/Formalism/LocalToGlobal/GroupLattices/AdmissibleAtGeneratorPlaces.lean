@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.GroupLattices.AdmissibleOfInclusion
-import Formalism.SharpRestriction.AdmissibleParameterJoins.GandSaj
+import Formalism.LocalToGlobal.GroupLattices.Bundle0001
+import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0010
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.SharpRestriction.Divisibility.SchurIrreducible
-import Development.AbelianVarietyTheory.Definitions.Foundations.IsFockIPOfFockData
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumLineMatrixKroneckerRightFactor
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0012
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0746
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueJointTop
 
 open Formalism.BasicNotions.TH Formalism.MainNotions.SchurIrreducible GlobalTheory.FockAlg MvPolynomial GlobalTheory.Capelli GlobalTheory.Harm

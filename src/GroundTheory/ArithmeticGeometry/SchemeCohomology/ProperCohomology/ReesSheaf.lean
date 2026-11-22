@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ReesSections
+import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.Bundle0008
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Arith.SchemeCoh

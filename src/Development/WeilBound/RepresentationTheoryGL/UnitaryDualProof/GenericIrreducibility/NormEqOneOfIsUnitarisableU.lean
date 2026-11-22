@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StandardCosocleGL
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0007
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivProdIrrTw
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsIrreducibleSubquotient
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitarisableSegmentTwistPrecedesAddOneLe
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0171
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0675
 
 noncomputable section
 

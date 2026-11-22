@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.IsInvDer
+import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.Bundle0001
 import Development.AbelianVarietyTheory.Definitions.Divisors.ComparisonMemCechHodgeFiltration
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LeISupInfPreimage
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechPullOneBijectiveLatticeCover
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0044
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0609
 
 set_option autoImplicit false
 

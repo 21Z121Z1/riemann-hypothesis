@@ -1,8 +1,8 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.PlaneSupports.PlaneSupp
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianPlaneStrongApprox
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AnisotropicQuaternionNormOneCompactStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinitePlaceNormOneCompactSupportStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0302
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0284
 
 noncomputable section
 

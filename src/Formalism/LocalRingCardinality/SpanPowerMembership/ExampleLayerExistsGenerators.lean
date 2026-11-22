@@ -1,7 +1,7 @@
 import Formalism.LocalRingCardinality.DataHost
 import Formalism.LocalRingCardinality.SpanPowerMembership.Primes
 import Formalism.LocalRingCardinality.DataSpaces
-import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleRanksRankComplement
+import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0004
 import Formalism.FrobeniusOrbits.HostCorollaries
 import Formalism.TameInertiaTowers.TowerFieldFoundations
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.FrameFacts

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.DiscreteGroups.GlobalIrreducibility.DzGalOne
+import Development.DiscreteGroups.GlobalIrreducibility.Bundle0040
 
 noncomputable section
 

@@ -1,6 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.LevelOneQExpansion
-import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.JQExpansion
+import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.Bundle0007
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.ChowlaSelberg

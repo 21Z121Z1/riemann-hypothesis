@@ -1,5 +1,4 @@
-import Formalism.LocalToGlobal.IndefiniteReal.ModelConjugation
-import Formalism.LocalToGlobal.IndefiniteReal.DiscreteSeriesParameterPos
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0034
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.InfFam
 
 noncomputable section

@@ -1,6 +1,6 @@
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.HeckePairTop
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TameParahoricRepSplitsAsProduct
-import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwJqInj
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0018
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0201
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0035
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwJqTheta
 open ValuativeRel Matrix GlobalTheory.SmGL GlobalTheory.SplitWeil UpperTheory.V.Hi UpperTheory.V.AlgebraTools GlobalTheory.PRep
 

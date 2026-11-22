@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.GlobalFields.IdeleGroups.ClassGroup
-import GroundTheory.GlobalFields.TateThesis.ConductorIdeal
+import GroundTheory.GlobalFields.TateThesis.Bundle0005
 
 open Topology Filter NumberField IsDedekindDomain IsDedekindDomain.HeightOneSpectrum WithZero
   FractionalIdeal Function

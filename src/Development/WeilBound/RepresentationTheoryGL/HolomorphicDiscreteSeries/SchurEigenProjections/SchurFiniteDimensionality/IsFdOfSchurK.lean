@@ -1,8 +1,7 @@
 import Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.SchurEigenProjections.BigProjP
 import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.IntegralGermIndependentOfSystem
-import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.UnitaryMatrixCoefficientDecay
+import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.Bundle0003
 import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.Imports
-import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.ColSq
 
 noncomputable section
 

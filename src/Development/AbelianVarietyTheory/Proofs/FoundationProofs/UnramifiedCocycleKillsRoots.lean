@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.FinalTheorems
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemIneSmulIff
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormSmulLeSelf
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0111
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0378
 
 noncomputable section
 

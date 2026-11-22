@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.ResMapBijective
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CoboundaryCriterion
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0007
 
 @[reducible] noncomputable def UpperTheory.Reformulated.B.RootEquality.G.{u_1, u_2} :
     (F : Type u_1) →

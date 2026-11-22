@@ -1,6 +1,6 @@
-import Development.AutomorphicArithmetic.CharacterBoxes.Imports
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsRanksRankValFrame
-import Development.AutomorphicArithmetic.FrobeniusLocalisation.SizeDefs
+import Development.AutomorphicArithmetic.CharacterBoxes.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0071
+import Development.AutomorphicArithmetic.FrobeniusLocalisation.Bundle0001
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.RealPlaceAnalysis.StatementKT
+import Formalism.RealPlaceAnalysis.Bundle0002
 import Formalism.FormalDegreeBessel.StatementDS
 
 open Finset

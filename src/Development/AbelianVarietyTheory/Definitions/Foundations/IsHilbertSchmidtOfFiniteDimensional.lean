@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.SmoothPartStable
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0002
 
 open MeasureTheory ContinuousLinearMap
 open scoped InnerProductSpace Pointwise

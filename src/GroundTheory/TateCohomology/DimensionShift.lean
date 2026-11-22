@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.TateCohomology.Induced
-import GroundTheory.TateCohomology.InducedNorm
+import GroundTheory.TateCohomology.Bundle0001
+import GroundTheory.TateCohomology.Bundle0003
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.GroupCoh

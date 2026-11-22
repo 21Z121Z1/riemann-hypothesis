@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ThetaChr
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.HasPartAnd
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LinkRStdTie
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BuiltCHasPart
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BundleBothPartsOfStandardKernelOfGlobalArtinReciStatement
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0043
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0027
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0373
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0288
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0409
 open Formalism.BasicNotions Formalism.MainNotions GlobalTheory.EX GlobalTheory.EX.OB GlobalTheory.Mem GlobalTheory.Mem.Col2 GlobalTheory.Mem.Top GlobalTheory.Mem.Top.Bl GlobalTheory.Fc GlobalTheory.Svd
 
 namespace GlobalTheory.Svd

@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ChainParSucc
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeVecMemFixed
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0017
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0210
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUniqueIsConjAt
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnitarySatakeTransformEqOfBaseChangeSatakeParameStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0087
 
 noncomputable section
 

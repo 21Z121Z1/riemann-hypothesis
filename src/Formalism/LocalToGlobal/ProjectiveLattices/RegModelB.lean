@@ -1,6 +1,6 @@
 import Formalism.LocalToGlobal.ProjectiveLattices.RegModelA
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.RegHor
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.RegKrull
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Bundle0012
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Bundle0003
 
 namespace Formalism.L2.Pj.RegB
 

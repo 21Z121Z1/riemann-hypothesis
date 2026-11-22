@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsFrameVec
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsSandwichOfHodgeTateFreeStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SandwichPointOverFieldExtStatement
-import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.PRootsOfUnityValuation
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0213
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0302
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0161
+import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.Bundle0002
 open NumberField IsDedekindDomain MeasureTheory Filter Topology
 open Formalism.L2.Pj ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.FD ReciprocityTheory.ChartRestriction.G.AR.Up ReciprocityTheory.ChartRestriction.G.AR.Inst Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.L2.Theta
 open GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Rec

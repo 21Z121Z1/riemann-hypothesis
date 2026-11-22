@@ -1,10 +1,10 @@
 import Mathlib
-import Formalism.DistinguishedUnitIdeals.FrobeniusCoboundedArc
+import Formalism.DistinguishedUnitIdeals.Bundle0004
 import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.GoodOf
 import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.ThmEFull
 import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.LemmaCFull
 import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.LemmaC
-import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.Descent
+import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.Bundle0001
 
 namespace Formalism.ExponentWindows.E.Prim
 

@@ -1,5 +1,5 @@
 import Formalism.WachLatticeTwists.CoprimeLiftBounds.WachTwistTheorem
-import Formalism.WachLatticeTwists.CoprimeLiftBounds.SelmerInjColumnPlace
+import Formalism.WachLatticeTwists.CoprimeLiftBounds.Bundle0001
 
 open Finset Classical
 

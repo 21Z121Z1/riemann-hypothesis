@@ -1,0 +1,69 @@
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0053
+import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Imports
+import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
+import Formalism.RealPlaceAnalysis.Bundle0003
+import Formalism.RealPlaceAnalysis.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0054
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0055
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0056
+
+-- bundled from CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.BesselCharacterUnipotentRadicalPropertiesImports
+section
+
+end
+
+-- bundled from CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.BesselFunctionLocalityInvariantFactorFiniteSumIm
+section
+
+end
+
+-- bundled from CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.CasimirScalarOfCapelliDeterminantEigenvalueImpor
+section
+
+end
+
+-- bundled from CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.DecayThresholdsOfSpectralGapConditionImports
+section
+
+end
+
+-- bundled from CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.FactorizationOfConjHomogeneousAndHomogeneous
+section
+
+end
+
+-- bundled from CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.FrameWConjMatrixUnitsImports
+section
+
+end
+
+-- bundled from CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.IsHaarOnIffGroupsUnitaryUnipotentImports
+section
+
+end
+
+-- bundled from CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.NormSqIntegralInnerWeightLeImports
+section
+
+end
+
+-- bundled from CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.NumericalFamilyProductBoundConstantLeImports
+section
+
+end
+
+-- bundled from CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.ProductMomentBoundDensityMassOneImports
+section
+
+end
+
+-- bundled from CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.SumNormSqHermTranslatesOrthonormalImports
+section
+
+end
+
+-- bundled from CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.WeilFormulaIntegrableComplexImports
+section
+
+end
+

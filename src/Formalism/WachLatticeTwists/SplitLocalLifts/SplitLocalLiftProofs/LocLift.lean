@@ -1,6 +1,6 @@
 import Formalism.WachLatticeTwists.SplitLocalLifts.Cocycles1MapOfEquivariant
-import Formalism.WachLatticeTwists.CoprimeLiftBounds.CoprimeLiftProofs.SelmerInjColumnPlace
-import Formalism.WachLatticeTwists.TorsionLengthCounts.RowCol
+import Formalism.WachLatticeTwists.CoprimeLiftBounds.CoprimeLiftProofs.Bundle0003
+import Formalism.WachLatticeTwists.TorsionLengthCounts.Bundle0001
 
 open Finset Classical
 

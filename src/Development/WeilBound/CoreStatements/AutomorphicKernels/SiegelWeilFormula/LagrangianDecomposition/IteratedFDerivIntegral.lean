@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzVanishingDecomposition
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0105
 
 noncomputable section
 

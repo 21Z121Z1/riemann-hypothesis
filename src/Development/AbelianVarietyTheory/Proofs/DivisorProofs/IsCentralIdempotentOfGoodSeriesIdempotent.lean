@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.CuspLatticeAnyLevel
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0021
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.UnipotentLatticeMembership
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CompletelySplitPrimeHostPlaceProperties
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0106
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTypesIdempotentCoefficients
 
 noncomputable section

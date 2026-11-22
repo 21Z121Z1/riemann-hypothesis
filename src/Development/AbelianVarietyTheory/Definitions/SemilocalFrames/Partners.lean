@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.FractionFieldToGenericStalkAlgebraMapEq
-import Development.AbelianVarietyTheory.Definitions.Foundations.RowRawRange
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0008
 
 noncomputable section
 

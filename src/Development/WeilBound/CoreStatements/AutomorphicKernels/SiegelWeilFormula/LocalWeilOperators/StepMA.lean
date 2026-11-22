@@ -1,5 +1,5 @@
 import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.LocalWeilOperators.StepNC
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SchwartzLinearChangeStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0048
 
 noncomputable section
 

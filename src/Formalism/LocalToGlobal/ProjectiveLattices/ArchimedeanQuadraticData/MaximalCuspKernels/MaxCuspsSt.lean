@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.ProjectiveLattices.IntegrableOnIntegrand
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.ModerateCoefficientPositivity
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0002
 
 noncomputable section
 

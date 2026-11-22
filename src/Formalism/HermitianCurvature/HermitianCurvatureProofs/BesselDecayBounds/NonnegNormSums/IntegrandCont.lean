@@ -1,6 +1,6 @@
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselDecayBounds.NonnegNormSums.SumNonnegNorms
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselDecayBounds.BesselUnitNorm.BesselNormSteps.BesselLine.ConvMeas
-import Formalism.SharpRestriction.CuspSpanNormBounds.KfinOfMemLowKSub
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselDecayBounds.BesselUnitNorm.BesselNormSteps.BesselLine.Bundle0002
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0014
 
 open MeasureTheory Matrix Finset Filter Topology
 open scoped InnerProductSpace

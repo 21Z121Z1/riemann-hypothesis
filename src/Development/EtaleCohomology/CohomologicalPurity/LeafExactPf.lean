@@ -1,4 +1,4 @@
-import Development.EtaleCohomology.CohomologicalPurity.LeafBdCut
+import Development.EtaleCohomology.CohomologicalPurity.Bundle0003
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC CochainComplex.HomComplex

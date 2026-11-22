@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IwahoriTypeSupport.TorusScalar
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BlockIndexMonotone
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0385
 
 open GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.SplitWeil GlobalTheory.LocGL ValuativeRel Matrix UpperTheory.Gal.TypesAndIwahori
 

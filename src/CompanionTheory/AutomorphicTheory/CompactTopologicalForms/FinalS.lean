@@ -1,5 +1,5 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CptCopy2
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSETopFinal
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0323
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0317
 import CompanionTheory.AutomorphicTheory.CompactTopologicalForms.JacobiFieldSquareIntegrable
 import CompanionTheory.AutomorphicTheory.DiscreteGroupWaves.NFTopFormCpt
 

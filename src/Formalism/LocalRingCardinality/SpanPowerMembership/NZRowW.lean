@@ -1,6 +1,5 @@
 import Formalism.LocalRingCardinality.SpanPowerMembership.NZRowU
-import Formalism.LocalRingCardinality.SpanPowerMembership.NZRowV
-import Formalism.LocalRingCardinality.SpanPowerMembership.EntPlNonempty
+import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0010
 import Formalism.LocalRingCardinality.Lemmas
 
 noncomputable section

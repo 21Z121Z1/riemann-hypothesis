@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SqMap
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianQuotientLineBundleGauge
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AdjointRelationGeneratorCorrStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FormalGermJetLiftStatement
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermFunPf
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0096
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0106
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0155
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0189
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
 
 noncomputable section
 

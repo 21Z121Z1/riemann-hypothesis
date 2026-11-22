@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.DistinguishedUnitIdeals.AprimeCuts
+import Formalism.DistinguishedUnitIdeals.Bundle0002
 import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.CutPlace
 import Formalism.TruncatedSeriesCounting.TruncatedSeriesProofs.AprimeArith
 

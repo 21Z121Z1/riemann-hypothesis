@@ -1,8 +1,7 @@
-import Formalism.SharpRestriction.GlobalTheoremInputs
-import Formalism.SharpRestriction.LevelLetterCocycles.LocsCoverTw
-import Formalism.SharpRestriction.LevelLetterCocycles.StatementFamilies.ExportFamilies
+import Formalism.SharpRestriction.Bundle0002
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0004
+import Formalism.SharpRestriction.LevelLetterCocycles.StatementFamilies.Bundle0001
 import Formalism.SharpRestriction.LevelLetterCocycles.StatementFamilies.ArithmeticCylinders
-import Formalism.SharpRestriction.LevelLetterCocycles.StatementFamilies.SumRepresentations
 import Formalism.SharpRestriction.Divisibility.CanonicalTranslateJets
 
 noncomputable section

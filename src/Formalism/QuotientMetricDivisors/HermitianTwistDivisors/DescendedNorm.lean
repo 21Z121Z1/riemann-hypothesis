@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.QuotientMetricDivisors.HeightBoundExactNorms
-import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ReductionThirdStepMean
+import Formalism.QuotientMetricDivisors.Bundle0003
+import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0002
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SlopeIneqMean
 
 open Module NumberField

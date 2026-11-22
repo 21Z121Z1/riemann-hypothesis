@@ -4,7 +4,7 @@ import Formalism.LocalToGlobal.KernelLattices.ColumnData.IsAdmissibleFlagPairOfU
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.StdOKP
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.SelfDual
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.BaseExP
-import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.RecursiveLatticeMembership.MemLamOfIff
+import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.RecursiveLatticeMembership.Bundle0001
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleLayerExistsGenerators
 

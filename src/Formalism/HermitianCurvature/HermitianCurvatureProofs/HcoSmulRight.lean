@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.SupportPhiZeroSubset
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0101
 
 namespace Formalism.FourierDecayAlt.P.PBI
 

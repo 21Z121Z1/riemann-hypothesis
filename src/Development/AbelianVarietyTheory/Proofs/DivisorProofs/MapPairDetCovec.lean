@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
-import Development.AbelianVarietyTheory.Definitions.Divisors.HtValOnSubset
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.SpecialFibreUnits
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0072
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0062
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0003
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HodgeTateKernel
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFlagFrame
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0601
 
 set_option autoImplicit false
 

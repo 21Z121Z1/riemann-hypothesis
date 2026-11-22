@@ -1,9 +1,9 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.BergmanObjects
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0007
 import GroundTheory.HeightsAndTheta.Heights.FubiniStudy
 import GroundTheory.HeightsAndTheta.Heights.FubiniStudyTransition
-import ReciprocityTheory.AnalyticForms.PotentialTheory.LocDens
-import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.LintegralImageEqLintegralNormSqDetMul
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0005
+import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0004
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.TateCohomology.CupConnecting
+import GroundTheory.TateCohomology.Bundle0004
 set_option maxSynthPendingDepth 1
 
 open CategoryTheory groupCohomology

@@ -1,8 +1,8 @@
 import Mathlib
-import Formalism.PeriodIntegrals.IdealLattice
-import Formalism.PeriodIntegrals.AreaLat
+import Formalism.PeriodIntegrals.Bundle0015
+import Formalism.PeriodIntegrals.Bundle0014
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IdealLatticeBasis.IdealBasisAlt
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.AreaLat
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0007
 
 open NumberField
 

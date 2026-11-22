@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.RootWeights.StableSubspaceCompleteReducibility
+import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0004
 
 noncomputable section
 

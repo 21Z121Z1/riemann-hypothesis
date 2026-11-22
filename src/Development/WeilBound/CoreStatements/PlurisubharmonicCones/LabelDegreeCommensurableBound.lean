@@ -1,4 +1,4 @@
-import Development.WeilBound.CoreStatements.PlurisubharmonicCones.ExistsSmulMemEig
+import Development.WeilBound.CoreStatements.PlurisubharmonicCones.Bundle0004
 
 open NumberField GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Cusp GroundTheory.Heights₂.Heights
 

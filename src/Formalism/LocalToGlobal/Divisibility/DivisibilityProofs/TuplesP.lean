@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.Divisibility.TuplesLemmas
+import Formalism.LocalToGlobal.Divisibility.Bundle0001
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Afsplit
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlob
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsSpan

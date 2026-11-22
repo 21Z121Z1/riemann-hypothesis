@@ -1,7 +1,6 @@
-import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.IoBlockEqSum
-import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.BFCoarse
-import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.SymbolFormOfOrthogonality
-import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.BlockForm
+import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.Bundle0014
+import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.Bundle0010
+import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.Bundle0016
 
 noncomputable section
 

@@ -1,5 +1,4 @@
-import Development.WeilBound.ThetaLifts.EigenvalueEndgame.SignatureSplitting.Emb2DiaMulVecIncVY
-import Development.WeilBound.ThetaLifts.EigenvalueEndgame.SignatureSplitting.AeFacts
+import Development.WeilBound.ThetaLifts.EigenvalueEndgame.SignatureSplitting.Bundle0001
 
 noncomputable section
 

@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ClassFunctionSumIntegral
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PlacesToAdeles
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0011
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0014
 
 noncomputable section
 

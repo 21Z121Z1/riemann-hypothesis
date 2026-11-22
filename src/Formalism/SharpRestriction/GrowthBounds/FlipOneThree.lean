@@ -1,9 +1,9 @@
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 import Formalism.SharpRestriction.ParConsts
 import Formalism.SharpRestriction.GrowthBounds.ObjSeg
-import Formalism.SharpRestriction.GrowthBounds.ObjBridge
+import Formalism.SharpRestriction.GrowthBounds.Bundle0001
 import Formalism.SharpRestriction.GrowthBounds.ColumnSystems
-import Formalism.MahlerMeasure.WithMargin
+import Formalism.MahlerMeasure.Bundle0008
 
 noncomputable section
 

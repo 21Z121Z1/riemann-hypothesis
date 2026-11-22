@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsQuasiFam
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ContrFactor
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PlacesToAdeles
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0012
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0002
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0014
 
 noncomputable section
 

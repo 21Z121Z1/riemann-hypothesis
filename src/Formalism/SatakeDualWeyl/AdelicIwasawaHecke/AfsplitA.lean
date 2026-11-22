@@ -1,4 +1,4 @@
-import Formalism.SatakeDualWeyl.StatementC
+import Formalism.SatakeDualWeyl.Bundle0001
 
 noncomputable section
 open Matrix TensorProduct NumberField IsDedekindDomain

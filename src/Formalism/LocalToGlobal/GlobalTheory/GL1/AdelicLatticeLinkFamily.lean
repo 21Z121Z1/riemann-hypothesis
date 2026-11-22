@@ -1,10 +1,9 @@
 import Mathlib
 import Formalism.LocalToGlobal.GlobalTheory.GL1.Statement
-import Formalism.LocalToGlobal.GlobalTheory.GL1.CompactFixesLattice.SingleMemLam
-import Formalism.LocalToGlobal.GlobalTheory.GL1.CompactFixesLattice.SingleMemOrb
-import Formalism.GL3MeanSquares.HookFormulaTorsion.DifferenceStableUnderAction
+import Formalism.LocalToGlobal.GlobalTheory.GL1.CompactFixesLattice.Bundle0002
+import Formalism.GL3MeanSquares.HookFormulaTorsion.Bundle0007
 import Formalism.GL3MeanSquares.HookFormulaTorsion.DifferentIdealConditions
-import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.CMFieldLemmas
+import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.Bundle0007
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 import Formalism.FrobeniusOrbits.RealSubfieldLeCompositum
 

@@ -1,6 +1,6 @@
 import Formalism.LocalToGlobal.Columns.PolyFn
 import Formalism.GradedWeylDivisibility.FinalD
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LDlatLemmas
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0012
 
 noncomputable section
 

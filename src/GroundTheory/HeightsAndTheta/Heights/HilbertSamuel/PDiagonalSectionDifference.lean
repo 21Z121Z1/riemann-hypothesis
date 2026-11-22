@@ -1,12 +1,12 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsDiagonalSectionDifference
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSectionsDimZero
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0041
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0082
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSerreGraded
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PMultigradedHilbertPolynomial
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PEventualPolynomial
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PShiftDegreePolynomial
-import GroundTheory.HeightsAndTheta.Heights.Intersections.AvoidRing
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.GradedSpanProducts
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0013
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0011
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0081
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0006
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0026
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

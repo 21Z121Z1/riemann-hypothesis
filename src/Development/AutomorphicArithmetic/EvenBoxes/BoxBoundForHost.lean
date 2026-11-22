@@ -1,7 +1,7 @@
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound
-import Development.AutomorphicArithmetic.CharacterBoxes.RealSplit
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KroneckerTwoNegEqJacobiSymTwo
-import Development.AutomorphicArithmetic.MeanSquareBounds.IndUnique
+import Development.AutomorphicArithmetic.CharacterBoxes.Bundle0003
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0122
+import Development.AutomorphicArithmetic.MeanSquareBounds.Bundle0001
 open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.Inhab Formalism.HC GlobalTheory.EX UpperTheory.Top
 
 private theorem boxH_dvd (C N : ℕ) [NeZero N] (hC : C ≠ 0) (χ : DirichletCharacter ℂ N) (hp : χ.IsPrimitive)

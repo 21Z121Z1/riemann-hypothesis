@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.UnderTie
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0025
 import Formalism.LocalToGlobal.Columns.XtPhiTopGCongr
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.TwistEmptyOfChartsEx
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IntAtFormOfMemStdAt
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0124
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LastStepDatumLawK1DepthTwiceM
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DatumPeriodicMulLatticeFinal
 import Formalism.LocalToGlobal.Columns.ChainTwAn

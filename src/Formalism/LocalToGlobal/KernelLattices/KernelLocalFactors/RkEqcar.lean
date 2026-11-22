@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThetaLocalEquivalence.ThEquivPAmbOfTiesD
-import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.RkConj
+import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.Bundle0004
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.RkThindEq
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ColInst
-import Formalism.LocalToGlobal.Columns.ChainOneOkF
+import Formalism.LocalToGlobal.Columns.Bundle0051
 
 open NumberField IsDedekindDomain
 

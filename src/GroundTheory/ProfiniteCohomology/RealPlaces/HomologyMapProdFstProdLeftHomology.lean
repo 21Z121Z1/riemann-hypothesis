@@ -1,7 +1,6 @@
 import Mathlib
 import GroundTheory.ProfiniteCohomology.RealPlaces.ConeMap
-import GroundTheory.ProfiniteCohomology.RealPlaces.NormHomotopy
-import GroundTheory.ProfiniteCohomology.RealPlaces.ConeHomotopy
+import GroundTheory.ProfiniteCohomology.RealPlaces.Bundle0001
 import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.CompactCupEqCompactCupRight
 set_option maxSynthPendingDepth 1
 

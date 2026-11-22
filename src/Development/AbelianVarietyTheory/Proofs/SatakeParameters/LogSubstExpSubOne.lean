@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.FormalGroupWitt.FormalGroupWittProofs.EqSingleOfDegreeEqOne
+import Formalism.FormalGroupWitt.FormalGroupWittProofs.Bundle0002
 
 noncomputable section
 

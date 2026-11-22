@@ -1,4 +1,4 @@
-import ReciprocityTheory.DualLattices.FischerAdjointStatement
+import ReciprocityTheory.DualLattices.Bundle0001
 
 noncomputable section
 

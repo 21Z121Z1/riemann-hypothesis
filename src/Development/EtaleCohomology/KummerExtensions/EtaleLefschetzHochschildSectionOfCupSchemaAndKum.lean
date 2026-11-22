@@ -1,5 +1,5 @@
 import Mathlib
-import Development.EtaleCohomology.KummerTheory.LHCutGlue
+import Development.EtaleCohomology.KummerTheory.Bundle0006
 
 section
 noncomputable section

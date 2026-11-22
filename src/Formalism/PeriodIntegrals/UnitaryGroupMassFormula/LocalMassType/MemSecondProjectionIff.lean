@@ -1,5 +1,5 @@
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.WProof
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.LatBasis
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.Bundle0001
 
 noncomputable section
 

@@ -1,8 +1,8 @@
 import Development.WeilBound.ThetaLifts.LocalTheory.UnramifiedCohomology.Lint
 import Development.WeilBound.ThetaLifts.SmallCones.FcCols
 import Development.WeilBound.ThetaLifts.SmallCones.ThetaUniq
-import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.EvFinIdemSelf
-import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Kcompact
+import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.Bundle0001
+import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Bundle0002
 
 noncomputable section
 

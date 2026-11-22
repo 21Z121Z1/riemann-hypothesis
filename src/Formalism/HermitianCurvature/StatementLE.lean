@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.HermitianCurvature.StatementE
+import Formalism.HermitianCurvature.Bundle0001
 import Formalism.HermitianCurvature.StatementTB
 
 namespace Formalism.FourierDecayAlt.LE

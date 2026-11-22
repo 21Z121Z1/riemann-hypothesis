@@ -1,8 +1,8 @@
 import Mathlib
-import Formalism.HermitianLattices.NeighbourConstruct
+import Formalism.HermitianLattices.Bundle0001
 import Formalism.HermitianLattices.HermitianLatticesProofs.LocBasic
-import Formalism.HermitianLattices.HermitianLatticesProofs.DualBasic
-import Formalism.HermitianLattices.HermitianLatticesProofs.NeighbourBasic
+import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0001
+import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0003
 
 noncomputable section
 

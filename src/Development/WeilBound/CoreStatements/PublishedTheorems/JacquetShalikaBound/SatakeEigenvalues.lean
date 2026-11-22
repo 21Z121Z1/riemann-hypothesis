@@ -1,6 +1,6 @@
 import Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaBound.lift_levelP_alt₂
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormSatakeLeOfUnitarySphericalGL
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SymmetricFunctionAbsoluteValues
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0256
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0242
 import GroundTheory.IdeleRoots.TorusPowers.SatakeBoundAdic
 
 noncomputable section

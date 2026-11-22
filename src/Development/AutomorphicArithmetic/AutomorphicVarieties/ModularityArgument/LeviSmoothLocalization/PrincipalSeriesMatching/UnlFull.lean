@@ -1,7 +1,7 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LeviSmoothLocalization.WinUpDown
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalDoubleCosets.OfSupportHolds
-import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.UnlSph
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalFieldTwoVocabulariesDictionaryStatement
+import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0833
 
 noncomputable section
 

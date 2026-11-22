@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.CuspSpanNormBounds.SBridge
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0008
 import Formalism.HermitianCurvature.FiniteOrderIntersectionInSmooth
 
 open MeasureTheory

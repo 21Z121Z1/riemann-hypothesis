@@ -1,7 +1,7 @@
-import ReciprocityTheory.DualLattices.PrimeHopfOrderStatement
-import ReciprocityTheory.DualLattices.ImportsAlt
-import ReciprocityTheory.DualLattices.VdetLeOfSpanLe
-import ReciprocityTheory.DualLattices.FourierMapSmulLambdaWeight
+import ReciprocityTheory.DualLattices.Bundle0012
+import ReciprocityTheory.DualLattices.Bundle0018
+import ReciprocityTheory.DualLattices.Bundle0013
+import ReciprocityTheory.DualLattices.Bundle0011
 
 noncomputable section
 

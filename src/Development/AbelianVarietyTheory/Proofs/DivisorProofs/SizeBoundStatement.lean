@@ -1,11 +1,11 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.QuoIff
-import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0068
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0072
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AnchoredWeightIndefiniteLiftGaps
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DividedWeightGapsBlockAndBar
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StrictAntiOfStep
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HostBoundHolds
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightBoundHolds
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0799
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0833
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2204
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2365
 
 set_option synthInstance.maxHeartbeats 400000
 

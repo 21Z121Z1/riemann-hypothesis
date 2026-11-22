@@ -1,8 +1,8 @@
 import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.BernsteinExponentBounds.IsInvForm
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerHeredityStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0738
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NontrivialTwJacquetOfSurjective
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivProdIrrTw
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CentralExponentBoundOver
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0037
 
 noncomputable section
 

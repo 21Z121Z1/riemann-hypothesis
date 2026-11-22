@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StGenericNoetherNormalisation
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SumRMulNe
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ProofSimp
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0005
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0063
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0071
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

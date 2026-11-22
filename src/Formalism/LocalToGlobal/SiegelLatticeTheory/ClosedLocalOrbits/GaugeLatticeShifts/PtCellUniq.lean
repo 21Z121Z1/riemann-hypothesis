@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.SharpRestriction.CuspSpanNormBounds.Point
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0001
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.UpUMul
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0068
 
 namespace Formalism.L2.SG.PtCell
 

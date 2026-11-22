@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ParabolicAtStandardWeylElement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GapHypOfNodes
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0392
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.DiscreteSeriesUniqueLargeGap
 
 noncomputable section

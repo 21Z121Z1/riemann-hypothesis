@@ -9,7 +9,7 @@ import Formalism.SizeWindowBrackets.ChainSlopeWindows.ProjectiveLines
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SlopeIneqMean
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.HtGram
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.PolygonSlopeSum
-import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SizeMu
+import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0005
 
 open Module NumberField Matrix
 open Formalism.HN

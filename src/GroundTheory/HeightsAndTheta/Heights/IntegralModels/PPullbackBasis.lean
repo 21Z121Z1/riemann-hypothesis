@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.IntegralModels.PullbackBasis
+import GroundTheory.HeightsAndTheta.Heights.IntegralModels.Bundle0006
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjectiveCohomology.ImmersionPullback
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.HasFiniteBiproductsModules
 set_option maxSynthPendingDepth 1

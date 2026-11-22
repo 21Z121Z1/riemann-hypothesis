@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsTranslSum
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0428
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.DivCalc
 
 set_option autoImplicit false

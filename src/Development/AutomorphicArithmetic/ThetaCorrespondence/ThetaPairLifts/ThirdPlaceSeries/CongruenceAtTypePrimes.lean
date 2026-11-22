@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.LevelLetterCocycles.CongruenceSingleEndomorphism
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0012
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.CohomologicalCsdTempered
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.TrivialLocalCondition
 

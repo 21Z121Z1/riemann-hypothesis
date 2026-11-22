@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.JacobianTransvectionSplitting.FactorOneOfDiscrete
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.JacobianTransvectionSplitting.Bundle0001
 
 noncomputable section
 

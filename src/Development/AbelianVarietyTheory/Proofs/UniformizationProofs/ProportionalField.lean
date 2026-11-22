@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.LinearIndependentOfCommSmul
+import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0007
 
 namespace GlobalTheory.UU.SchurComp
 

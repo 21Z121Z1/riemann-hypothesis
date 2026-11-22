@@ -1,5 +1,5 @@
 import Development.WeilBound.CoreStatements.RegularisedThetaMirabolic.CuspidalMirabolic.CuspidalRestrictsToInduced
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsIrreducibleTransportRep
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0026
 
 namespace PositivityTheory.Mirab
 

@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.MeanHeightDescent.StatementA
-import Formalism.MeanHeightDescent.CombinedAverageDegreeBound
+import Formalism.MeanHeightDescent.Bundle0002
+import Formalism.MeanHeightDescent.Bundle0001
 
 open Finset Module NumberField
 

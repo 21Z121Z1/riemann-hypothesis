@@ -1,10 +1,7 @@
 import Mathlib
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.MoriwakiSt
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PNefOnGenericOfSemipos
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.SmallSectionCountMonoLattice
-import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.StNmSmallIntoFS
-import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.StFSSmallFinite
-import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.StFSSmallCountBound
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.Bundle0003
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0022
+import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.Bundle0002
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.ForSecondHalf

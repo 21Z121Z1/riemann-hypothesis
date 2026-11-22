@@ -1,10 +1,7 @@
 import Mathlib
-import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.QiCoreDefs
-import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.CompLmulMapId
-import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.QiIdem
-import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.QiStab
-import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.QiCharP
-import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.QiCartier
+import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.Bundle0001
+import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.Bundle0002
+import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.Bundle0003
 
 set_option autoImplicit false
 

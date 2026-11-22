@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.CharacterGerms.RowTiePProjFBTop
-import Formalism.LocalToGlobal.CharacterGerms.RowTiePSplitDef
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0023
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0001
 
 noncomputable section
 

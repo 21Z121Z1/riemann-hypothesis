@@ -1,8 +1,7 @@
 import Mathlib
-import Formalism.PairingDivisors.StatementA
-import Formalism.PairingDivisors.StatementX
-import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ValBasic
-import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ProdFormula
+import Formalism.PairingDivisors.Bundle0001
+import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0003
+import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0002
 
 open Module NumberField IsDedekindDomain Finset
 open Formalism.DivisionValues (vw lw conjPl)

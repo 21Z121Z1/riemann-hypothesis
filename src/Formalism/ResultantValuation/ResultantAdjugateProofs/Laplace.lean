@@ -1,4 +1,4 @@
-import Formalism.ResultantValuation.ResultantConjugate
+import Formalism.ResultantValuation.Bundle0001
 
 open Finset Equiv
 

@@ -1,9 +1,9 @@
 import Mathlib
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.RStatement
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.RPfVal
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.WeightFloorInequalities
-import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.FormAtOfClause
-import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.NuAlgLeOfCharts
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0032
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0033
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.Bundle0018
+import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.Bundle0006
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0042
 
 set_option autoImplicit false
 

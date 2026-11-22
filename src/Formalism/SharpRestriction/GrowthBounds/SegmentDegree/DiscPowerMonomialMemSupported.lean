@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.DiscPowerTimesMonomial
+import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0022
 
 noncomputable section
 

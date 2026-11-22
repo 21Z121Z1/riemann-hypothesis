@@ -1,5 +1,5 @@
 import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.CompactOrbits.NilpotentOrbits.OrbitIntegrals.CentralizerRepresentatives.CbExistsChainOfGen
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsChainsOfRange
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0007
 
 noncomputable section
 

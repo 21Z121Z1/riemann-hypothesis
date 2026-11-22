@@ -1,8 +1,8 @@
 import Mathlib
-import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.StatementG
+import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0005
 import Formalism.GaussJetBounds.GaussJetProofs.GField
 import Formalism.GaussJetBounds.GaussJetProofs.FJEval
-import Formalism.GaussJetBounds.GaussJetProofs.Labels
+import Formalism.GaussJetBounds.GaussJetProofs.Bundle0004
 import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.KOneConsequence
 
 noncomputable section

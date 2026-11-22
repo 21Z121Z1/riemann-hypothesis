@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.PeriodIntegrals.Transference
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.TransferenceCover
+import Formalism.PeriodIntegrals.Bundle0010
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0020
 
 noncomputable section
 

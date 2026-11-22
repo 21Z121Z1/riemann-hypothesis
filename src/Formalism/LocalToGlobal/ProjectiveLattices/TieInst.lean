@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.ProjectiveLattices.NormalizedValuationMul
-import Formalism.LocalToGlobal.ProjectiveLattices.CurveInstSt
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0029
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0040
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.IsBlockMapInitialVertex
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.ElementaryFactorCommutation
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockDiagonalMinorVanishing
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0040
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0032
 open MvPolynomial Matrix ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.AI.I1 ReciprocityTheory.ChartRestriction.G.AI.I4 GlobalTheory.CompanionTheory.Ar.PB GroundTheory.Heights₂.Heights GroundTheory.Heights₂.Heights.LowerBoundFree
 open scoped Classical
 

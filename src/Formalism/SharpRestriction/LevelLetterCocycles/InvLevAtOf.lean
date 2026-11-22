@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.LevelLetterCocycles.KillWinFromCut
-import Formalism.SharpRestriction.LevelLetterCocycles.GenOfKiller
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0032
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0002
 
 noncomputable section
 

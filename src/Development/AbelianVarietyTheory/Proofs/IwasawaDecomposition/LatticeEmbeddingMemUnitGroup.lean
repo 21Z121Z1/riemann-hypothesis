@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NuInRange
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoordMapBasisFun
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0003
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0212
 
 noncomputable section
 

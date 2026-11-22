@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsCrystalPairing
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.BiadditiveOfTrivAxes
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0029
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0165
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsWithoutCohomology
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsProjOverOfIsProjOverBase
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0653
 
 noncomputable section
 

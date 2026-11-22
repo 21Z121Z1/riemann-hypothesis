@@ -1,15 +1,14 @@
-import Formalism.LocalToGlobal.CharacterGerms.RowTieMemCFin
-import Formalism.LocalToGlobal.CharacterGerms.ValuationEqSelfOfUnitGerm
-import Formalism.LocalToGlobal.CharacterGerms.RowTieSelfCuts
-import Formalism.LocalToGlobal.CharacterGerms.RowTiePHStabSelf
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0035
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0040
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0019
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0023
 import Formalism.LocalToGlobal.CharacterGerms.UncurryLogConstantCoeff
 import Formalism.SharpRestriction.GrowthBounds.ExponentialPartialDerivatives
-import Formalism.LocalToGlobal.CharacterGerms.RowTiePAxesSelfSt
-import Formalism.LocalToGlobal.CharacterGerms.RowTiePAddCvSelf
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0012
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0027
 import Formalism.LocalToGlobal.CharacterGerms.RowTieMain
-import Formalism.LocalToGlobal.CharacterGerms.CoefficientIdentitySelfConjugate
 import Formalism.SharpRestriction.GrowthBounds.ProofRowTieVals
-import Formalism.LocalToGlobal.CharacterGerms.RowTieSelfU
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0041
 import Formalism.SharpRestriction.GrowthBounds.CoeffIdentitySelfConjHolds
 
 set_option autoImplicit false

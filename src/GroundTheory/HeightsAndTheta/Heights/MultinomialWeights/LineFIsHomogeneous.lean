@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.MultinomialWeights.StatementsEnd
-import GroundTheory.HeightsAndTheta.Heights.MultinomialWeights.StatementsHomDecomp
+import GroundTheory.HeightsAndTheta.Heights.MultinomialWeights.Bundle0003
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.RecordEigenInputs
 set_option maxSynthPendingDepth 1
 

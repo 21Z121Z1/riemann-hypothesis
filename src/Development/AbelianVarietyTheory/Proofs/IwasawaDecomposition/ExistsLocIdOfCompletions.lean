@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LamV
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCompletionEquiv
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0092
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0146
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FrobOrderSpec
-import Formalism.LocalRingCardinality.ConjSqrtMinusD
+import Formalism.LocalRingCardinality.Bundle0001
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 import Formalism.LocalToGlobal.GroupLattices.PerfectRings.ICIntCp
 import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.WittFractionToCpAlgebraMap

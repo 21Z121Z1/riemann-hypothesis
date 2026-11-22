@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.QuotProdK
+import Formalism.PeriodIntegrals.Bundle0023
 
 noncomputable section
 

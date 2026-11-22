@@ -1,4 +1,4 @@
-import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.DegStB
+import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.Bundle0003
 
 namespace ReciprocityTheory.GeometryOfNumbersTheory
 

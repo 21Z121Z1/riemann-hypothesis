@@ -2,9 +2,9 @@ import Mathlib
 import Formalism.LocalToGlobal.Columns.KOneCharacterTrivialNearOne
 import Formalism.LocalToGlobal.Columns.ChainInstY
 import Formalism.LocalToGlobal.Columns.XtSumSingle
-import Formalism.LocalToGlobal.Columns.LastRowColLevSym
+import Formalism.LocalToGlobal.Columns.Bundle0054
 import Formalism.LocalToGlobal.Columns.ChainTopLawB
-import Formalism.LocalToGlobal.Columns.ChainLawPhiTop
+import Formalism.LocalToGlobal.Columns.Bundle0057
 import Formalism.LocalToGlobal.Columns.ChainTopLawTw
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.TopLawQ
 

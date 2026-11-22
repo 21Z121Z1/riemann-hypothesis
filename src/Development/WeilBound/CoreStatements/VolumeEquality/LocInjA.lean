@@ -1,6 +1,6 @@
-import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsFundSet
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.ContinuousHermitianMatrixFamily
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsometryPreservesHermitianAndAction
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0005
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0025
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0043
 
 noncomputable section
 

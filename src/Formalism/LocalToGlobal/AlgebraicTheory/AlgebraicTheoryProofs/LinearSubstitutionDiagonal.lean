@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.AlgebraicTheory.DefsKer
+import Formalism.LocalToGlobal.AlgebraicTheory.Bundle0003
 import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.ScalarConst
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.AlternatingFormStandardHermitian
 

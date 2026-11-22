@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.PeriodIntegrals.NormPullG
-import Formalism.PeriodIntegrals.HeisPull
-import Formalism.PeriodIntegrals.HeisNorm
+import Formalism.PeriodIntegrals.Bundle0019
+import Formalism.PeriodIntegrals.Bundle0015
+import Formalism.PeriodIntegrals.Bundle0014
 
 open MeasureTheory
 

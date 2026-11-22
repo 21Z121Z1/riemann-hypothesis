@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.GlobalFields.TateThesis.DegreeOnePrimes
+import GroundTheory.GlobalFields.TateThesis.Bundle0001
 
 namespace GroundTheory.Global
 

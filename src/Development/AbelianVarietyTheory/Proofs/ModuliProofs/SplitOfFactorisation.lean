@@ -1,7 +1,7 @@
 import Mathlib
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.TwoWeightEqOneAddRoot
-import Development.AbelianVarietyTheory.BlockTheory.CMModuli.HostConjugateIdeal
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.IntegersOfCmFieldConjStructure
+import Development.AbelianVarietyTheory.BlockTheory.CMModuli.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0024
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.ExistsEquivOfSumEq
 
 open NumberField

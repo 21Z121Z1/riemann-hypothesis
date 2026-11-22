@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.RingAFacts
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.NormRingALe
+import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0002
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0051
 
 noncomputable section
 open scoped BigOperators

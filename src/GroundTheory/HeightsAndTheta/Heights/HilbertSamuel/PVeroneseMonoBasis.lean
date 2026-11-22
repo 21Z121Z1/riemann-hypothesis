@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsVeroneseChiParts
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PVeroneseGenDeg
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0114
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0058
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.CSandwichStE
 set_option maxSynthPendingDepth 1
 

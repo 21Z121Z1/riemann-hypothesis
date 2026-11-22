@@ -1,7 +1,7 @@
 import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelWeilUnitarySchrodinger
-import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelEisensteinPolesStd
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.WeilThetaConvergence
-import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.WeilSiegelTheta.PoissonAbs
+import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.Bundle0001
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0020
+import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.WeilSiegelTheta.Bundle0002
 
 noncomputable section
 

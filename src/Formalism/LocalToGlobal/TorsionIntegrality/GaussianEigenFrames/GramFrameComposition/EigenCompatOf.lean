@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.GaussianEigenFrames.StatementF
+import Formalism.LocalToGlobal.TorsionIntegrality.GaussianEigenFrames.Bundle0001
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussianEigenFrames.GramFrameComposition.MatrixFormDiagBlocksBlockEmbed
 
 noncomputable section

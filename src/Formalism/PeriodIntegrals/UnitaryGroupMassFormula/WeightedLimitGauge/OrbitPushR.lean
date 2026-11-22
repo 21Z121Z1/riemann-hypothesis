@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.PeriodIntegrals.RhsWLim
+import Formalism.PeriodIntegrals.Bundle0009
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeightedLimitGauge.VolumeLieE
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeightedLimitGauge.OrbitPushV
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeightedLimitGauge.Bundle0009
 
 set_option linter.unusedVariables false
 

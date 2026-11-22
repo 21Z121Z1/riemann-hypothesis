@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.Foundations.Convolution.TensFun
-import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.HopBasic
+import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.Bundle0004
 import GroundTheory.AutomorphicForms.SphericalCommutative
 
 open MeasureTheory NumberField IsDedekindDomain MvPolynomial

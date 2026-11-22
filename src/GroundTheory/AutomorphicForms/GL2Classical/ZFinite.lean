@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.GL2Classical.Complexify
-import GroundTheory.AutomorphicForms.GL2Classical
+import GroundTheory.AutomorphicForms.Bundle0023
 
 open NumberField Matrix CongruenceSubgroup
 open UpperHalfPlane hiding I I_re I_im

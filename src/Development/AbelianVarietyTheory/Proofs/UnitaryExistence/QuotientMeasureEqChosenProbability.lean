@@ -1,9 +1,9 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.VolProofs
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0023
 import Formalism.LocalToGlobal.GlobalTheory.GL5.FamilyMassVolumeIdentityOfClassDecomp
 import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.AdelicQuotientMeasure
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsAdeleRingTensorEquivInfiniteProdFinite
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.InfAdeleTensorBijective
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0005
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0006
 
 noncomputable section
 

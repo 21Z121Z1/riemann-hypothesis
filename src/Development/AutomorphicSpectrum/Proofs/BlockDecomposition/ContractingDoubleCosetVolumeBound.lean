@@ -1,9 +1,8 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.SquareIntegrableTempered.CasselmanCriterion.Zj
 import GroundTheory.AutomorphicForms.SupercuspidalCoefficients
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeasureImageDoubleCoset
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeasureImagePrincipalPosLtTop
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BlockIndexMonotone
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0368
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0385
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicIsNonarchimedeanLocalField
 
 open GlobalTheory.PRep GlobalTheory.SplitWeil GlobalTheory.SmGL GlobalTheory.LocGL GlobalTheory.JHMult

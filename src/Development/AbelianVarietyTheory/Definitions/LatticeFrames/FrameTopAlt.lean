@@ -3,10 +3,10 @@ import Development.AbelianVarietyTheory.Definitions.LatticeFrames.NotBadPrimeBas
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HzUnit
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.VacOfShape
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CosInj
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PairForm
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0028
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.StabOrd
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsTwIffCanonEq
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0027
 
 set_option genSizeOfSpec false
 set_option genInjectivity false

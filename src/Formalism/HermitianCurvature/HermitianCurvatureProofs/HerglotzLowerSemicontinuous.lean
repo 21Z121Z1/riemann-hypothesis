@@ -1,5 +1,5 @@
-import Formalism.HermitianCurvature.StatementE
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.Herglotz
+import Formalism.HermitianCurvature.Bundle0001
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0004
 
 namespace Formalism.FourierDecayAlt.P.HLsc
 

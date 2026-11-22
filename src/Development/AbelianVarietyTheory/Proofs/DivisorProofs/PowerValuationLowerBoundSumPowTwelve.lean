@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.TorsTransport
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowerIntegralValuationLowerBoundIffForallEmbeddiStatement
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0017
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0604
 
 open NumberField IsDedekindDomain GlobalTheory.CMVal GlobalTheory.LatVal
 

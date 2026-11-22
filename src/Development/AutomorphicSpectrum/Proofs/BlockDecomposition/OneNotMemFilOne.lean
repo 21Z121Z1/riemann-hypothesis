@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.HeckeLAdicCharacterDeRham
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0006
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.DeRhamJacobian.IsdRJ
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EventuallyClosedOfDictClosed
 import Development.WeilBound.CoreStatements.CrystallinePeriodRings.LocTied6
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsUnitDetEmbMat
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0247
 
 noncomputable section
 

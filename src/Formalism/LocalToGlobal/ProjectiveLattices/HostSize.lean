@@ -1,11 +1,11 @@
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.GCauchyStatement
-import Formalism.SharpRestriction.ElevenLe
+import Formalism.SharpRestriction.Bundle0001
 import Formalism.SharpRestriction.Divisibility.WeightAlgebra
 import Formalism.LocalRingCardinality.DataParams
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 import Formalism.FrobeniusOrbits.RealSubfieldLeCompositum
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.TorusAtExC
-import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.LogQdLeRd
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.Bundle0019
+import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.Bundle0005
 
 noncomputable section
 

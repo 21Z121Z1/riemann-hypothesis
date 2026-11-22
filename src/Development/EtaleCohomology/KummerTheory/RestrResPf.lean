@@ -1,4 +1,4 @@
-import Development.EtaleCohomology.KummerTheory.BockCut
+import Development.EtaleCohomology.KummerTheory.Bundle0002
 
 open CategoryTheory Limits AlgebraicGeometry Opposite CochainComplex CochainComplex.HomComplex GlobalTheory.EtC
 

@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.FactorBounds
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0026
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeightedNormSquareRows
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.OrthogonalNormSquareSum
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosetRefinement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightsInterlaceSameShift
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0014
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0777
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0817
 open Module NumberField IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions Formalism.L2.DIV Formalism.L2.Indef Formalism.L2.Col Formalism.L2.Ker GlobalTheory.IndefiniteRowSideFullHecke.PlaceLogThetaBounds GlobalTheory.ColRows
 
 namespace GlobalTheory.ColRows.LastSideProof

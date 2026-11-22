@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocRatio
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GrGenOfIsFlagVBOn
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0109
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0026
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.FieldChange
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.DenseHeight
 

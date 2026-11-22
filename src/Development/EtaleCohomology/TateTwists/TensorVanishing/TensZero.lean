@@ -1,4 +1,4 @@
-import Development.EtaleCohomology.TateTwists.acycPf
+import Development.EtaleCohomology.TateTwists.Bundle0021
 
 open CategoryTheory Limits AlgebraicGeometry Opposite CochainComplex GlobalTheory.EtC
 open scoped TensorProduct DirectSum

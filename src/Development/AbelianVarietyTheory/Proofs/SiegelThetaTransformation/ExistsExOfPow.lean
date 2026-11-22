@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IMemSiegel
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SchwartzBruhatInnerProductSelfNonnegBoundsStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0008
 open Matrix Complex GlobalTheory.SW
 open scoped ComplexConjugate Real
 

@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.ContDiffOnInvConjDet
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0269
 
 open Matrix Filter Topology
 open scoped ComplexConjugate ContDiff

@@ -1,9 +1,9 @@
-import Development.WeilBound.RepresentationTheoryGL.TubeMeasures.DisjointTubes.LowSt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelMeasureFinitePartPreimage
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsContinuousRealComponentHomUnitaryAdelic
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfNormLtOne
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsCompactParahoricLevelAndContainsLifts
-import Formalism.LocalToGlobal.LatticeGeometry.DegFlLApply
+import Development.WeilBound.RepresentationTheoryGL.TubeMeasures.DisjointTubes.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2348
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2270
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0766
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0151
+import Formalism.LocalToGlobal.LatticeGeometry.Bundle0001
 
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions Formalism.L2 Formalism.L2.DIV Formalism.L2.Indef Formalism.L2.Pj Formalism.IndefR.Links Formalism.IndefR.FWT
 open ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.FD GlobalTheory.AllWt GlobalTheory.CompHt GlobalTheory.BigTop GlobalTheory.CovTop GlobalTheory.CovTop.MeasRd

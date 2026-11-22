@@ -1,5 +1,5 @@
 import Mathlib
-import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.IdealOrder
+import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.Bundle0001
 import Development.ResolutionOfSingularities.Foundations.Schemes.AffineOpens
 namespace FunctorialResolution.EmbeddedResolution
 

@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalRingCardinality.DataKerI
-import Formalism.LocalRingCardinality.DataErr
-import Formalism.SharpRestriction.ElevenLe
+import Formalism.LocalRingCardinality.Bundle0004
+import Formalism.SharpRestriction.Bundle0001
 import Formalism.SharpRestriction.GlobalSchurBounds.StandardLattice
 import Formalism.LocalToGlobal.Columns.DecorationStabilizerTrivialUnipotent
 

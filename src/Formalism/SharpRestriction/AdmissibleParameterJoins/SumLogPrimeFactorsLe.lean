@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GlobalTheoremInputs
+import Formalism.SharpRestriction.Bundle0002
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DualPl
 
 open Module NumberField IsDedekindDomain Pointwise

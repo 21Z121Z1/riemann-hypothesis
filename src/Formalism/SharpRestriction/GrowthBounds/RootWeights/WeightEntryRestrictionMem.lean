@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.RootWeights.LaurentDegreesSubstitutionSubset
+import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0024
 
 noncomputable section
 

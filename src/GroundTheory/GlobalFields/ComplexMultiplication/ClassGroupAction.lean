@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.GlobalFields.ComplexMultiplication.ClassGroupActionLattice
-import GroundTheory.GlobalFields.ComplexMultiplication.JInvariantHomothety
+import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0004
 
 open NumberField Module WeierstrassCurve GroundTheory.Arith.Abelian
 open scoped nonZeroDivisors

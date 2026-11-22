@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SimultaneousEigenvectors
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0072
 
 theorem UpperTheory.V.LinAlg.simEig :
     ∀ {K M : Type} [Field K] [IsAlgClosed K] [AddCommGroup M] [Module K M] [FiniteDimensional K M]

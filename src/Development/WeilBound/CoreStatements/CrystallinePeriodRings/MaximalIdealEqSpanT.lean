@@ -1,7 +1,7 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.CrystallinePeriodRings.LocTied6
 import Development.WeilBound.CoreStatements.CrystallinePeriodRings.AinfMapSurjective
-import Development.WeilBound.CoreStatements.CrystallinePeriodRings.PhiGalCris
+import Development.WeilBound.CoreStatements.CrystallinePeriodRings.Bundle0001
 import Development.WeilBound.CoreStatements.CrystallinePeriodRings.InstCommRingBcris
 
 noncomputable section

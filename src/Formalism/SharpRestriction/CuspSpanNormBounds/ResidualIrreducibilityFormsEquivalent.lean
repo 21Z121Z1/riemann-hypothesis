@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.CuspSpanNormBounds.ChoiceOfModulusAndDiscriminant
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0009
 import Formalism.SharpRestriction.CuspSpanNormBounds.RadialRules
 import Formalism.SharpRestriction.CuspSpanNormBounds.RadialChainStatements
 import Formalism.SharpRestriction.CuspSpanNormBounds.BlockEstimateTheorem

@@ -1,8 +1,8 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.EisensteinSeries.SiegelEisensteinContinuation.StripEntire
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DifferentiableAffLine
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0031
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChamberPairThreeFour
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StripEntireOfFac
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0088
 
 noncomputable section
 

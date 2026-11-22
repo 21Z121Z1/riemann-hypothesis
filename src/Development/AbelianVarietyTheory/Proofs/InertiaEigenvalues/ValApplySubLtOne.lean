@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsHeckeLOfHasInf
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsValuationSubringIntegralClosureCompleteDVR
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinPartEqOneOfLevel
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.LatticeNormTransport
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0112
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0469
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0010
 
 noncomputable section
 

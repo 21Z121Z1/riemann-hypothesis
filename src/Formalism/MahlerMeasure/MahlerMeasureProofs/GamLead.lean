@@ -1,5 +1,5 @@
-import Formalism.MahlerMeasure.HasOrder
-import Formalism.MahlerMeasure.FinalM
+import Formalism.MahlerMeasure.Bundle0004
+import Formalism.MahlerMeasure.Bundle0006
 
 namespace Formalism.GM.leadingTermLemmas
 

@@ -1,10 +1,10 @@
 import Mathlib
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.GCauchyStatement
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsTranslateJetNeZero
-import Development.AbelianVarietyTheory.Proofs.TorusSplitting.CoeffEqZeroOfOrthonormal
+import Development.AbelianVarietyTheory.Proofs.TorusSplitting.Bundle0004
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsImEqLattice
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.DifferentiableFderivApply
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ImFormApply
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0019
 
 open Matrix ReciprocityTheory.ChartRestriction.G.I2
 open scoped ComplexOrder

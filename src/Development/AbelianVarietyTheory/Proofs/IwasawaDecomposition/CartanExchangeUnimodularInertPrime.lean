@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.LocalToGlobal.Columns.HeckeInertComm
 import Formalism.LocalToGlobal.Columns.CoefficientsModP.LatticeBasisExistsHolds
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PatchAtSelf
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0129
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InvMemDoubleCosetAndComm
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SameAtOfLocalizationEq
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0140
 import Formalism.LocalRingCardinality.SpanPowerMembership.Places
 import Formalism.LocalToGlobal.Columns.TwQCmp
 import Formalism.LocalToGlobal.Columns.ReferenceActionRationalLevels

@@ -1,8 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StIrreducibleGermPrimitiveForm
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StFiniteFibreGermIntegral
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StZariskiAnalyticNormality
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StDiscrAdjoin
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0033
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0021
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0025
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.ComplexSets

@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThPr
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PureAdelicFunctionFormula
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0835
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0839
 
 open HeckeCharacterZeroLocus.SiegelWeilU GlobalTheory.CompanionTheory.SW NumberField IsDedekindDomain MeasureTheory Topology Filter GroundTheory.Global PositivityTheory.Rg.Base1 GlobalTheory.CompanionTheory.BasePsi
 open scoped ENNReal NNReal Classical

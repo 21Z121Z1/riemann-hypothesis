@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsTypeIsRealConst
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedFormsMulClosed
-import ReciprocityTheory.SemistableReduction.ShareDetA
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1589
+import ReciprocityTheory.SemistableReduction.Bundle0012
 open Set Filter Topology
 open ReciprocityTheory.L2DbarEstimates (V)
 open GlobalTheory.GoodMetric (coordVec)

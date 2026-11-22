@@ -1,5 +1,5 @@
 import CompanionTheory.HarishChandraModules.BesselParameterIntegrals.BesselOrbitConvolutions.BesselNonvanishingReduction
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.L2NormScaling
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0054
 
 open MeasureTheory Matrix Finset
 open scoped InnerProductSpace ENNReal NNReal ComplexConjugate

@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsHeckeQuotientTriple
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LineBundleIsoLinCombSymmBiadditiveSubstitution
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaLinComb
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0110
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0115
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0112
 
 noncomputable section
 

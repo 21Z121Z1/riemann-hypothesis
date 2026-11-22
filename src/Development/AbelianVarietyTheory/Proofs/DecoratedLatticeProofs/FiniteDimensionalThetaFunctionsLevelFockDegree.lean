@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IntegrandSZero
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0017
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOfPderivStable
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsFockVacAtOfIsThetaAt
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ContinuousIsotropicSandwichMeanTranslation
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0140
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0289
 
 namespace GlobalTheory.FockLevelDim
 

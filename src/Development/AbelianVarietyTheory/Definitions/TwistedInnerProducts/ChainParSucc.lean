@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ChainParSucc
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CartFrSgn
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0017
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0265
 
 noncomputable section
 

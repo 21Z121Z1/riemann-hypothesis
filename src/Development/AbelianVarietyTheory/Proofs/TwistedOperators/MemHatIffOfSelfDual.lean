@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.FlatSpaceComponents
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0011
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatSelfDualOfUnimod
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralChangeBaseFrameOrthonormal
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HalfPrincipalAndSplit
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0124
 import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.LevGapSplit
 import Formalism.LocalToGlobal.Divisibility.DefGroupLemmas
 

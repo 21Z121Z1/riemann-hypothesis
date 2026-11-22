@@ -1,6 +1,5 @@
-import Formalism.PeriodIntegrals.WeylForU
-import Formalism.PeriodIntegrals.UnitaryDense
-import Formalism.PeriodIntegrals.HwIrred
+import Formalism.PeriodIntegrals.Bundle0026
+import Formalism.PeriodIntegrals.Bundle0012
 import Formalism.GradedWeylDivisibility.DualWeylDominanceOf
 import Formalism.GradedWeylDivisibility.FinalC
 

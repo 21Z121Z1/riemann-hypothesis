@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.Columns.ToHLat
+import Formalism.LocalToGlobal.Columns.Bundle0010
 import Formalism.GL3MeanSquares.TraceIntegralityResults
 
 open NumberField IsDedekindDomain Module

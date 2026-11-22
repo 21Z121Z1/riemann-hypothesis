@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSliceRegVarBound
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PFormIntPos
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSheetLogNormDens
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0109
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0125
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0129
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

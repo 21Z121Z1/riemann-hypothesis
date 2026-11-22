@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsSubqu
 import Development.AbelianVarietyTheory.Definitions.Foundations.MemSiegelOfIffRightAct
 import Development.AbelianVarietyTheory.Definitions.Divisors.T2SpaceGeneralLinearGroup
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IwasawaBlockTriangular
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormalizedAbsCharacterization
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0026
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Cartan
 
 noncomputable section

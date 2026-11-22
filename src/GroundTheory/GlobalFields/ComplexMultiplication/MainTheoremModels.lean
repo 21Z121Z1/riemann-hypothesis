@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.GlobalFields.ComplexMultiplication.HilbertClassFieldModels
+import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0018
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Global

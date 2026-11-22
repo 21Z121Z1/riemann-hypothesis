@@ -2,8 +2,8 @@ import Mathlib
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.NonemptyEquivOfCardHom
 import Development.AutomorphicSpectrum.ParallelStatements.ParallelGeometry.TensorOrderReduction
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CharacterSectionMultiplicative
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BtOrderValueEval
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorusPointOverFractionField
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0030
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0015
 
 noncomputable section
 

@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.PeriodIntegrals.MinkowskiQ
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Minkowski
+import Formalism.PeriodIntegrals.Bundle0015
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0012
 
 namespace PI.MkQ
 

@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.AdmissibleParameterJoins.GandSq
+import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0005
 import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.WittFractionToCpAlgebraMap
 
 noncomputable section

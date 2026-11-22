@@ -1,11 +1,11 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsSmoothHermTrivLine
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0012
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0114
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValuationCoordsComplexPoint
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LogResolutionPotentialPullback
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0129
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LogResolutionReindexed
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsHermLineOfLocalSmooth
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.FubiniStudyMetricSmooth
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0033
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0041
 
 noncomputable section
 

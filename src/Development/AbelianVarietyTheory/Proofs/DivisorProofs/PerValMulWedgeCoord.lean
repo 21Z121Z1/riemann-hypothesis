@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSectionOfChg
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHomologyWedgeCoordinateNonzero
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2291
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2327
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PeriodLinearAlgebraHodgeSequenceExact
 
 set_option autoImplicit false

@@ -1,4 +1,4 @@
-import Development.WeilBound.ThetaLifts.FrameEstimates.HodgeTateFromSandwich
+import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0003
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatMulIntegralOfIsCompact
 
 noncomputable section

@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsFlagModelHermSum
-import Development.AbelianVarietyTheory.Definitions.Divisors.NefFibOfIsNef
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsTorsionFormWithPoint
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CharChPartZero
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0042
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0004
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0027
 
 set_option autoImplicit false
 

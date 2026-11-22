@@ -1,10 +1,10 @@
 import Mathlib
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GPowPf
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BoxRosati
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PowOActOfGlobalFns
-import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.PsiInOfComponent
-import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.GlobalFnsHolds
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.PowerSeriesDvrAdmissibleXIdeal
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0021
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0091
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0101
+import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0031
+import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0011
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0211
 
 set_option autoImplicit false
 

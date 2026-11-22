@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmulMemOfIsIntegral
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0529
 open NumberField Matrix GlobalTheory.UCls GlobalTheory.SUVol ReciprocityTheory.ChartRestriction.G.FD GlobalTheory.LieDisc
 
 noncomputable section

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.MemCentIffTwConj
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0002
 
 open Matrix
 

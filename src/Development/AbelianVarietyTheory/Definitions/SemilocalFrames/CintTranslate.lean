@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Cint
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SumRefine
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0019
 
 noncomputable section
 open scoped Classical

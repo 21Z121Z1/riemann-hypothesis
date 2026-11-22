@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsZeroChains
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0008
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0323
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry Opposite CochainComplex CochainComplex.HomComplex

@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ArBirational
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EqOfIsometricTrivShift
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResidueDegreeOfIsOpenImmersion
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1127
 
 noncomputable section
 

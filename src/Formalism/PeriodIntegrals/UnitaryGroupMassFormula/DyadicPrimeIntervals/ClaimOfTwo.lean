@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.PeriodIntegrals.PrimesDyadicRS
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DyadicPrimeIntervals.ThetaDiff
+import Formalism.PeriodIntegrals.Bundle0008
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DyadicPrimeIntervals.Bundle0001
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DyadicPrimeIntervals.FloorHalf
 
 namespace PI.PrimesDyadicRS.W

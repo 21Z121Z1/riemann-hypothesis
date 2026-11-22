@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsConeFibreAverage
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PConeIntegralMass
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0014
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0012
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.LogIntPoly
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PPointLine
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0019
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

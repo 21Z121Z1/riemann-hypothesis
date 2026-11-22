@@ -1,12 +1,12 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.AdjKltOfLtDisc
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DOnEqZeroOfEqOne
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormOrdDFormNonneg
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DvrPlaceTopFormOrdersApi
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MinOrdLeOrdAdd
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0048
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0820
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1187
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1176
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1199
 import ReciprocityTheory.CommutativeAlgebra.PolynomialHeights.HeightAddRingKrullDimQuotientMvPolynomialField
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumOrdSubOneLeOrdWedgeDifferentials
-import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsPlacePlane
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2212
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0050
 
 set_option autoImplicit false
 

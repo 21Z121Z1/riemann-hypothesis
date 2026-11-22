@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjRelEquiv
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1174
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LeftMulMatrixTransfer
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ReducedFreeAlgebraTraceFormPerfect
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0068
 
 noncomputable section
 

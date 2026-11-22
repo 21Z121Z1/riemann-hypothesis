@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.SharpRestriction.LevelLetterCocycles.InvariantsIsoOfGenerators
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0018
 
 noncomputable section
 

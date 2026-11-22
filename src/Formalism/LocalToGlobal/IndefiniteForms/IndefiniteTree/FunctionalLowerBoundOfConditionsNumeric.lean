@@ -1,9 +1,9 @@
 import Formalism.LocalToGlobal.IndefiniteForms.IndefSide
 import Formalism.LocalToGlobal.ExponentGrids.ExponentGridsProofs.GridSquaresIndexEstimate
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.LocGlobIncl
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0029
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalGlobalInclusion.SmulMemIdealSmul
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SlopeIneqMean
-import Formalism.HarderNarasimhan.HarderNarasimhanProofs.TwistFinrankEq
+import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0004
 import Formalism.LocalToGlobal.LatticeGeometry.OperatorNormFibers.PDescentCutA
 
 open Module NumberField IsDedekindDomain Finset

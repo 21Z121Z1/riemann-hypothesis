@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.AdelicPair
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsEnergyMin
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SumHermitianLogGramEqZeroOfEnergyMinimum
+import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0031
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0038
 open Matrix GlobalTheory.ClassFin
 open scoped Kronecker ComplexOrder TensorProduct
 

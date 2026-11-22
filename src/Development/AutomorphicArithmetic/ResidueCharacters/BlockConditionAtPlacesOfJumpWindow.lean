@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AutomorphicArithmetic.ResidueCharacters.ExistsUnion
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.JumpWindow
+import Development.AutomorphicArithmetic.ResidueCharacters.Bundle0004
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0007
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FinrankMaxUnramifiedSubfieldPadicFinExtPos
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ValuationLtOneIffNorm
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FinrankLeOfSubsetClosureRange
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0367
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0263
 
 noncomputable section
 

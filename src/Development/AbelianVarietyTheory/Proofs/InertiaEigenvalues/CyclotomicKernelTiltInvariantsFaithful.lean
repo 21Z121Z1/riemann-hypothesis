@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ConvZero
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0004
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormRootSubOneLt
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicCharacterPadicBasicProperties
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicTowerTraceAlmostSurjective
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0129
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0205
 
 open Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.WeaklyAdmissibleFiltrations TensorProduct GlobalTheory.HWL GlobalTheory.Cyc GlobalTheory.Cyc.TraceTilt
 

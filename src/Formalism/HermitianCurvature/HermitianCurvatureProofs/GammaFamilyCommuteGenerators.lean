@@ -1,6 +1,6 @@
 import Formalism.HermitianCurvature.StatementM
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.FirstEmbeddingOne
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.MultiplicationOpHom
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0014
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0026
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LevelNablaStarRelations
 import Formalism.YangianSpanCharacter.YangianRelationFirst
 

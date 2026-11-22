@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GlueApplyOfNotInFibre
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapStalkMap
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProjectiveModelNonempty
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0022
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0037
 import Development.WeilBound.CoreStatements.VolumeEquality.RegularFunctionChartAdjoin
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueDominatingMapStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsNormalisationStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0057
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0080
 open AlgebraicGeometry CategoryTheory GlobalTheory.CompanionTheory.Ar
 
 noncomputable section

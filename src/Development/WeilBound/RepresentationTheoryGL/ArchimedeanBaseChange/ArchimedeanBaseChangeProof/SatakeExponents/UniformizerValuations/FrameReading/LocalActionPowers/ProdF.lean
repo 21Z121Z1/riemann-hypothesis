@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevOpParabEqLevOpCt
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1357
 
 noncomputable section
 

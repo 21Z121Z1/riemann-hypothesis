@@ -1,4 +1,4 @@
-import Formalism.LocalRingCardinality.SpanPowerMembership.ThetaFullColIsom
+import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0007
 import Formalism.SharpRestriction.CuspSpanNormBounds.CayleySignature
 import Formalism.SharpRestriction.Divisibility.InnerProductFormulaField
 

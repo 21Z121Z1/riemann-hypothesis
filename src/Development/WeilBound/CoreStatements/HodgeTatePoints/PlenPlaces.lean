@@ -1,5 +1,5 @@
-import Development.WeilBound.CoreStatements.HodgeTatePoints.IsMaximalOfNeBot
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PFiniteBirationalLength
+import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0011
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0045
 
 namespace PositivityTheory.HtPt.Plen
 

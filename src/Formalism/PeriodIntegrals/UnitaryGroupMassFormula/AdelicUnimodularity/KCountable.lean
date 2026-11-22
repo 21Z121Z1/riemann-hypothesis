@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.PeriodIntegrals.AdUnimod
-import Formalism.PeriodIntegrals.UnimodIdx
+import Formalism.PeriodIntegrals.Bundle0027
+import Formalism.PeriodIntegrals.Bundle0011
 
 noncomputable section
 

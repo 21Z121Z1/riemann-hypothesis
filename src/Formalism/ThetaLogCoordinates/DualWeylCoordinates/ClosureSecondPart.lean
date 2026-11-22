@@ -1,9 +1,6 @@
-import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.StripDataTensorColumnFamilies
-import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.CntSym
-import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.CntLam
-import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.SymStrip
-import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.SymDStrip
-import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.LamStrip
+import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.Bundle0009
+import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.Bundle0011
+import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.Bundle0010
 
 namespace Formalism.InvariantFactorPaths.ColumnFamilies.Top
 

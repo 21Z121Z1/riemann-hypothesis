@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.NotMemOfMulExp
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0049
 import Formalism.RealPlaceAnalysis.FinalF
 
 open MeasureTheory Matrix Formalism.REAL Formalism.MainNotions.S Formalism.L2.Theta GlobalTheory.SmoothGlob GlobalTheory.LowTypeDetermined GlobalTheory.TypeSum

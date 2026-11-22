@@ -1,7 +1,7 @@
 import Formalism.LocalToGlobal.CharacterGerms.RowTieFB
-import Formalism.LocalToGlobal.CharacterGerms.WipDworkInvG
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0002
 import Formalism.FormalGroupWitt.FormalGroupWittProofs.SolveV
-import Formalism.FormalGroupWitt.FormalGroupWittProofs.EqSingleOfDegreeEqOne
+import Formalism.FormalGroupWitt.FormalGroupWittProofs.Bundle0002
 
 noncomputable section
 open Classical

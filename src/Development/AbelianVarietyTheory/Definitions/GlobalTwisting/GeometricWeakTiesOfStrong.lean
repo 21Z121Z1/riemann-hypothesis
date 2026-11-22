@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.GoodReductionCondition
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MultW
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0047
 import Formalism.SharpRestriction.DesignExistsOfChoices
 
 noncomputable section

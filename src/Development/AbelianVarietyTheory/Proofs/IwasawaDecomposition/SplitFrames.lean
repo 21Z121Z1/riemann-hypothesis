@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.LocalToGlobal.BesselHermitianTheta.AllTied
-import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
 import Formalism.LocalToGlobal.JointCharacters.LocEMulLocE
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.AdelicDataRowMeasureScaleTrivialTuple
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.IntegralTransport
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0031
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.WeilIdempotents
 
 noncomputable section

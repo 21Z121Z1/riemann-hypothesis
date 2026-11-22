@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.Columns.ChainOneOkL
-import Formalism.LocalToGlobal.Columns.RecLevelSym
+import Formalism.LocalToGlobal.Columns.Bundle0046
+import Formalism.LocalToGlobal.Columns.Bundle0013
 
 open NumberField IsDedekindDomain Module
 

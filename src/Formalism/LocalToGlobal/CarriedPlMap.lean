@@ -1,6 +1,6 @@
-import Formalism.LocalToGlobal.SelSide
+import Formalism.LocalToGlobal.Bundle0002
 import Formalism.LocalToGlobal.IndefiniteReal.TrISepWith
-import Formalism.LocalToGlobal.IndefiniteReal.RealRec
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0035
 import Formalism.LocalToGlobal.UnitaryNorms.DatumS
 
 noncomputable section

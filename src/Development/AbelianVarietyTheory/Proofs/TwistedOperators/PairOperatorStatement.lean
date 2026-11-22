@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.AdjointOperatorIdentities
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0006
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsFFNeZeroThree
 
 open ValuativeRel Matrix IsLocalRing

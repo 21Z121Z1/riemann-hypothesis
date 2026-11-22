@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.EllipticTorsion.EllipticTorsionWeights
+import Formalism.EllipticTorsion.Bundle0004
 
 universe u
 

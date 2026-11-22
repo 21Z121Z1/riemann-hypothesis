@@ -1,8 +1,8 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.WaveSt
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsMultOfFintype
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GelfandOperatorAdjointStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveCptBoundedTime
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0204
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0229
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0218
 
 noncomputable section
 

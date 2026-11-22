@@ -1,4 +1,4 @@
-import Development.EtaleCohomology.KummerTheory.InjSlice
+import Development.EtaleCohomology.KummerTheory.Bundle0001
 import Mathlib.RingTheory.Etale.StandardEtale
 import Mathlib.Algebra.Category.CommAlgCat.FiniteType
 import Mathlib.CategoryTheory.Limits.MorphismProperty

@@ -1,8 +1,7 @@
-import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.GEqBase
-import Formalism.LocalToGlobal.IndefiniteReal.MultLemmas
-import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.IoUniq
-import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.GEqMain
-import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.RightInv
+import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0006
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0020
+import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0008
+import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0011
 import Formalism.LocalToGlobal.Divisibility.DefGroupLemmas
 
 noncomputable section

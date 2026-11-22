@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsSegreFlagConeAlg
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0046
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PPairConeAlg
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PSegreFlagClosureModel
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0056
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.NumbersDVR

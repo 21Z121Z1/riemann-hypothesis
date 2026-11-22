@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FourierMatch
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjTransposeVecMulVecSelf
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCompactIntMatrix
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0050
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0060
 
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology
 

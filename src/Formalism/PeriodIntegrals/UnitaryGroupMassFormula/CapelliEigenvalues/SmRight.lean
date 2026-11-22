@@ -1,6 +1,6 @@
-import Formalism.PeriodIntegrals.CapelliEig
-import Formalism.PeriodIntegrals.KFinSmooth
-import Formalism.PeriodIntegrals.DSInfCharCap
+import Formalism.PeriodIntegrals.Bundle0028
+import Formalism.PeriodIntegrals.Bundle0015
+import Formalism.PeriodIntegrals.Bundle0022
 
 open Matrix PI.UpqRep
 

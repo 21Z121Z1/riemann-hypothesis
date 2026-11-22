@@ -1,6 +1,6 @@
 import CompanionTheory.AutomorphicTheory.LocalBesselUniqueness.HatProd
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatOpRFinal
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatBdd
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0277
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0064
 
 open Formalism.REAL Formalism.QuantumDeterminants Formalism.FourierDecayAlt
 

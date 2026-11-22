@@ -1,9 +1,9 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.FriedrichsKernels.Friedrichs
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContDiffOnUncurryOfFrame
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WordSmooth
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousOnFderivApply
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivativeAsRightWords
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0210
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0227
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0333
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0211
 
 noncomputable section
 

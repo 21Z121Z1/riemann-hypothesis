@@ -4,7 +4,7 @@ import Formalism.SharpRestriction.LevelLetterCocycles.RelayGeneralCaseOfAdmissib
 import Formalism.SharpRestriction.LevelLetterCocycles.CrystallineMapLemmas
 import Formalism.SharpRestriction.LevelLetterCocycles.LatticeMembershipPolynomialGamma
 import Formalism.SharpRestriction.LevelLetterCocycles.ArcCoordinatesOfMembership
-import Formalism.SharpRestriction.LevelLetterCocycles.IsobaricMultiplicityOne
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0010
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PrimitiveCharDoubleSumPrimePowEvalStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0053
 
 open GlobalTheory.KummerEisensteinGalois Finset
 open scoped Classical

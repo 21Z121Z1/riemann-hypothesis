@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.JEvExists
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0013
 import Formalism.LocalToGlobal.IndefiniteReal.ZeroPartEigenvalueConvention
 import Formalism.LocalToGlobal.IndefiniteReal.HeckeNonvanishing.Imports
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.HaarUpqEqOfOmegaDensity
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0026
 
 noncomputable section
 

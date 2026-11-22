@@ -1,11 +1,11 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.BlockAnti
-import Formalism.PeriodIntegrals.QuotInv
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0007
+import Formalism.PeriodIntegrals.Bundle0008
 import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
 import Formalism.LocalRingCardinality.DataCD
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ClosedMatrixSubgroupTheorem
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniqueHaarDensityAtIdentityStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsDensityOriginOfAlmostHomogeneous
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0133
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0190
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0063
 open MeasureTheory Matrix Filter Topology Formalism.QuantumDeterminants Formalism.MainNotions.S GlobalTheory.SgInf GlobalTheory.Amp
 open scoped InnerProductSpace ENNReal
 

@@ -1,5 +1,5 @@
-import Development.WeilBound.ThetaLifts.LeviDeterminants.GrowDef
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModerateGrowthOfHasCompactSupport
+import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0322
 
 noncomputable section
 

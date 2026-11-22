@@ -1,12 +1,12 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.TsgPolyVolPolyCoeffEven
-import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsFibreLocal
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.Bundle0004
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0005
 import Development.AutomorphicSpectrum.Statements.MetricStatements.AgreementIffGuarded
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.IntersectionVerticalPerturbationBoundStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0092
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.XSqDiag
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PRFormula
-import GroundTheory.HeightsAndTheta.Heights.Intersections.PZeroSetNull
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0039
 open MvPolynomial MeasureTheory Filter Topology ReciprocityTheory.AnForm ReciprocityTheory.AnForm.M ReciprocityTheory.AnForm.P ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.AI ReciprocityTheory.ChartRestriction.G.AI.I1 ReciprocityTheory.ChartRestriction.G.AI.I2 ReciprocityTheory.ChartRestriction.G.AI.I4 GlobalTheory.CompanionTheory.Ar.PB GroundTheory.Heights₂.Heights GroundTheory.Heights₂.Heights.LowerBoundFree
 
 namespace PositivityTheory.Xgp.sq_R

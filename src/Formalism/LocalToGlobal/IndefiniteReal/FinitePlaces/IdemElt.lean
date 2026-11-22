@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.IdemLoc
+import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0004
 
 noncomputable section
 

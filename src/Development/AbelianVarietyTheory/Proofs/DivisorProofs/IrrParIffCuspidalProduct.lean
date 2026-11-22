@@ -1,6 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.BlockProductIsomorphism
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.BlockEmbeddingFactors
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0012
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsConstMul
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0010
 import Development.AbelianVarietyTheory.Statements.PrincipalLattices.FiniteDimensionalBase
 
 noncomputable section

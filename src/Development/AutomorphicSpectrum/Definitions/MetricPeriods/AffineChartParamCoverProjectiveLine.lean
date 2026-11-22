@@ -1,6 +1,6 @@
 import Mathlib
-import ReciprocityTheory.AnalyticForms.LeviForms.ProjectiveLineLogLogRegularized
-import ReciprocityTheory.AnalyticForms.PotentialTheory.ProjectiveLinePartitionContinuousCoe
+import ReciprocityTheory.AnalyticForms.LeviForms.Bundle0003
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0005
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.IsOpenKappaOpenNeighbourhood
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsTwiceDifferentiableAt
 

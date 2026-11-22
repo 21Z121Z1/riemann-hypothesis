@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.HermitianLattices.StatementMass
+import Formalism.HermitianLattices.Bundle0003
 
 open NumberField Module
 

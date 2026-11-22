@@ -1,10 +1,9 @@
 import Formalism.LatticeSlopes.Statement
 import Formalism.LatticeSlopes.CovolAntiSameRank
-import Formalism.LatticeSlopes.LatticeSlopesProofs.DiscreteTopologyOfLe
-import Formalism.LatticeSlopes.LatticeSlopesProofs.CovolPos
+import Formalism.LatticeSlopes.LatticeSlopesProofs.Bundle0001
+import Formalism.LatticeSlopes.LatticeSlopesProofs.Bundle0002
 import Formalism.LatticeSlopes.LatticeSlopesProofs.DegQuot
-import Formalism.LatticeSlopes.LatticeSlopesProofs.SaturationProperties
-import Formalism.LatticeSlopes.LatticeSlopesProofs.MuMaxAttained
+import Formalism.LatticeSlopes.LatticeSlopesProofs.Bundle0003
 
 open Module Submodule
 

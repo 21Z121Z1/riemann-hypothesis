@@ -1,5 +1,5 @@
 import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.InertDef
-import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.BernsteinUnitaryProductIrreducible
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0001
 
 noncomputable section
 

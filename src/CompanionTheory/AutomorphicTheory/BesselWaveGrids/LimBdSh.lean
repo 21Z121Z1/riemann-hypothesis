@@ -1,6 +1,6 @@
 import CompanionTheory.AutomorphicTheory.SchurLimitBounds.ZuckermanDuality.Assemble
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.Cut_BPEq
-import CompanionTheory.AutomorphicTheory.BesselWaveGrids.LettersPoly
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0306
+import CompanionTheory.AutomorphicTheory.BesselWaveGrids.Bundle0002
 
 noncomputable section
 

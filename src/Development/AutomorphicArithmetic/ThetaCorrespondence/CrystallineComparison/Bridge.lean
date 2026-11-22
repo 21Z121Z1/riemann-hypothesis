@@ -1,4 +1,4 @@
-import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.ContinuousToBdRPlus
+import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.Bundle0001
 import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.IsCrisDRAToBdRPlusIff
 
 noncomputable section

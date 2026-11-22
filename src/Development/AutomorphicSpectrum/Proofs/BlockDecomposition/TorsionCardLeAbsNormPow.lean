@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsLatIntVec
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0572
 
 noncomputable section
 

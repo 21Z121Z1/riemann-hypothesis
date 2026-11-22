@@ -1,10 +1,10 @@
 import Mathlib
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 import Formalism.SharpRestriction.ParConsts
-import Formalism.SharpRestriction.GrowthBounds.Imports
+import Formalism.SharpRestriction.GrowthBounds.Bundle0001
 import Formalism.SharpRestriction.GrowthBounds.DataG
 import Formalism.SharpRestriction.GrowthBounds.DataGChain
-import Formalism.SharpRestriction.GrowthBounds.SelectionLemmas
+import Formalism.SharpRestriction.GrowthBounds.Bundle0002
 import Formalism.SharpRestriction.GrowthBounds.IsResidueClassZero
 
 noncomputable section

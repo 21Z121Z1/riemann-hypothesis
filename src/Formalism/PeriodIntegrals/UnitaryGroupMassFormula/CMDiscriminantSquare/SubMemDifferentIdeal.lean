@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CMDiscriminantSquare.AdjoinEqTopOfStarNe
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CMDiscriminantSquare.Bundle0001
 
 open NumberField Polynomial
 

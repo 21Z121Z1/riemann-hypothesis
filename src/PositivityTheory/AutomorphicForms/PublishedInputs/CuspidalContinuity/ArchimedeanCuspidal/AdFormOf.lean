@@ -3,7 +3,7 @@ import GroundTheory.AutomorphicForms.FourierWhittaker
 import GroundTheory.AutomorphicForms.MacdonaldWhittakerHecke
 import GroundTheory.LocalFields.LocalZeta
 import GroundTheory.GlobalFields.TateThesis.RootNumberLocalFinite
-import Formalism.RealPlaceAnalysis.StatementE
+import Formalism.RealPlaceAnalysis.Bundle0003
 
 noncomputable section
 

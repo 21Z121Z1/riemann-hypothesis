@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ScalarCommutation.TypeSlice
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DisintegrationDensityExists
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIrrRepQuotientOfFiniteGen
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0989
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0713
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCuspidalOfIsSupercuspidal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalCompactCharacterVanishing
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0936
 
 set_option autoImplicit false
 

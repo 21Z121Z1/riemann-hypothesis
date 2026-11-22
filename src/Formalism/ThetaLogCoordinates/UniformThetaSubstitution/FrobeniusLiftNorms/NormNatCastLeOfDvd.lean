@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.StatementE
+import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0003
 import Formalism.GaussJetBounds.GaussJetProofs.ConstantCoeffAevalLinP
 
 noncomputable section

@@ -1,6 +1,6 @@
-import Development.WeilBound.CoreStatements.FlagImmersions.ContAtOfHoloOn
-import Development.WeilBound.CoreStatements.FlagImmersions.CoordsOrbit
-import Development.WeilBound.CoreStatements.FlagImmersions.IsHolToOfLocal
+import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0012
+import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0013
+import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0021
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EmbedsGeneric
 
 noncomputable section

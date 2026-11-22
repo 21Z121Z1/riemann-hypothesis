@@ -1,6 +1,6 @@
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PartsAlg
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.MdiscSt
-import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.LintegralImageEqLintegralNormSqDetMul
+import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0004
 
 namespace ReciprocityTheory.AnForm.A
 

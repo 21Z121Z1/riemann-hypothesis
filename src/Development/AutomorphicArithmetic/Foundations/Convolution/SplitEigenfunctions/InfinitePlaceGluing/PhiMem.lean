@@ -1,7 +1,7 @@
-import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.Entire
+import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.Bundle0001
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.AdelicCharacterRationalDual
 import GroundTheory.AutomorphicForms.GL2.GJMatrixAdelic
-import GroundTheory.GlobalFields.TateThesis.GaussianSchwartz
+import GroundTheory.GlobalFields.TateThesis.Bundle0002
 
 noncomputable section
 

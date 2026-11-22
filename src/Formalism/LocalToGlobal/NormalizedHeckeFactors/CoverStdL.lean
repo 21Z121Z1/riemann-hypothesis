@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverFP
+import Formalism.LocalToGlobal.NormalizedHeckeFactors.Bundle0004
 import CompanionTheory.AutomorphicTheory.HeckeStandardModules.HeckeStdStatement
 
 noncomputable section

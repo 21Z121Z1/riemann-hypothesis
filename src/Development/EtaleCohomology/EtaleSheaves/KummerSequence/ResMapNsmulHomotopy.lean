@@ -1,10 +1,7 @@
-import Development.EtaleCohomology.EtaleSheaves.LeafKumDeltaPf
+import Development.EtaleCohomology.EtaleSheaves.Bundle0023
 import Development.EtaleCohomology.EtaleSheaves.KummerSequence.LeafKumMuMapPf
-import Development.EtaleCohomology.EtaleSheaves.KummerSequence.LeafKumMuInjPfGlue
+import Development.EtaleCohomology.EtaleSheaves.KummerSequence.Bundle0003
 import Development.EtaleCohomology.EtaleSheaves.KummerSequence.TwLocGenPf
-import Development.EtaleCohomology.EtaleSheaves.KummerSequence.GmSepPf
-import Development.EtaleCohomology.EtaleSheaves.KummerSequence.LeafKumMuSurjPowPf
-import Development.EtaleCohomology.EtaleSheaves.KummerSequence.LeafKumMuSurjPrimPf
 import Development.EtaleCohomology.EtaleSheaves.KummerSequence.LeafUnitRootPf
 
 noncomputable section

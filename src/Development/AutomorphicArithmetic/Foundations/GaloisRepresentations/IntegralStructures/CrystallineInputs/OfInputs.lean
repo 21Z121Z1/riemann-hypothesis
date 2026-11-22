@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.CyclicStrongAtCusp
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0026
 
 namespace UpperTheory.Gal.Int.Inp
 

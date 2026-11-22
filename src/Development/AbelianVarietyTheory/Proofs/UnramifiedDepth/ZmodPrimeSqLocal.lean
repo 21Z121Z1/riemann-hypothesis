@@ -1,6 +1,6 @@
 import Mathlib
-import ReciprocityTheory.DualLattices.WFrobStatement
-import ReciprocityTheory.DualLattices.ATowerInh
+import ReciprocityTheory.DualLattices.Bundle0029
+import ReciprocityTheory.DualLattices.Bundle0022
 
 noncomputable section
 open IsLocalRing ReciprocityTheory.PGsh ReciprocityTheory.PGsh.Be2 TrivSqZeroExt

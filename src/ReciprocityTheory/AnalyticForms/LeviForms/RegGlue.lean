@@ -1,8 +1,8 @@
-import ReciprocityTheory.AnalyticForms.LeviForms.RegChart
+import ReciprocityTheory.AnalyticForms.LeviForms.Bundle0003
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshRegMax
 import ReciprocityTheory.AnalyticForms.PotentialTheory.AtlasIndep
-import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShift
-import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffAtOfIsPotential
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0006
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0002
 
 namespace ReciprocityTheory.AnForm.P
 

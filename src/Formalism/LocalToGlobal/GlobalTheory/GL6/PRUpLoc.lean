@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.GlobalTheory.GL6.RndLinkAdmTOf
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0006
 
 noncomputable section
 

@@ -1,6 +1,6 @@
 import Mathlib
 import Development.ResolutionOfSingularities.EmbeddedResolution.ResolutionDescent.GraphAlgebra
-import Development.ResolutionOfSingularities.EmbeddedResolution.ResolutionDescent.GraphAlgebraStandardSmooth
+import Development.ResolutionOfSingularities.EmbeddedResolution.ResolutionDescent.Bundle0001
 
 universe u
 

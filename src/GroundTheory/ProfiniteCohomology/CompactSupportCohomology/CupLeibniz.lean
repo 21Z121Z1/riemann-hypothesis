@@ -1,6 +1,5 @@
 import Mathlib
-import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.Pairing
-import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.HomologyMapPiLiftPiHomologyIsoHom
+import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.Bundle0001
 import GroundTheory.ProfiniteCohomology.CupProducts.Pairing
 import GroundTheory.ProfiniteCohomology.CupProducts.Functoriality
 set_option maxSynthPendingDepth 1

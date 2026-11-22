@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Jets.Imports
+import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0001
 
 open Finset
 

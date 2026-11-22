@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.GelfandKazhdanReal
-import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.BasicForm
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsEquivariantProjOfLeSumIrreducible
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0011
 open NumberField GlobalTheory.BorelCoh UpperTheory.V.TR
 open scoped TensorProduct Matrix
 

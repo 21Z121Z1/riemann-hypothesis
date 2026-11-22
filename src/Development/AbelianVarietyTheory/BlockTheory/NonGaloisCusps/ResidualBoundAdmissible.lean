@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTameInertiaElementAtTwistPrime
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0008
 
 noncomputable section
 

@@ -1,6 +1,4 @@
-import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.ZeroEquiv
-import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.Zt2
-import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.Zt3
+import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.Bundle0004
 
 noncomputable section
 

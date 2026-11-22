@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PredMemGamRanks
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemParahoricOfTrivialReduction
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IntAtNatCast
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0066
 
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.HermitianLatticesTheory Formalism.L2.Col Formalism.L2.DIV GlobalTheory.CongLevel GlobalTheory.GO.ChRoot
 

@@ -1,9 +1,9 @@
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.ExistsClosedOfChartIdeal
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.StalkIdEqMonomial
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.Surj
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.DivSheaf
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0017
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0003
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.ExistsClosedOffOfIsOpen
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.WGermB
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0018
 
 namespace ReciprocityTheory.AnForm.R
 

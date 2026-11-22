@@ -1,11 +1,11 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteChart
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0279
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsMemberStepCharts
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevOkTwists
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0158
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevQFiniteIndexAndRoot
-import Formalism.LocalToGlobal.Columns.TwQBOpen
-import Formalism.LocalToGlobal.Columns.TwQExact
-import Formalism.LocalToGlobal.Columns.TwQLat
+import Formalism.LocalToGlobal.Columns.Bundle0039
+import Formalism.LocalToGlobal.Columns.Bundle0050
+import Formalism.LocalToGlobal.Columns.Bundle0048
 import Formalism.LocalToGlobal.Columns.TwQLev
 
 noncomputable section

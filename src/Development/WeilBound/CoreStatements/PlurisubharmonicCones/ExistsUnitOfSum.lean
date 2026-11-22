@@ -1,5 +1,5 @@
 import Mathlib
-import Development.WeilBound.CoreStatements.PlurisubharmonicCones.DeterminantLatticeGradedTensor
+import Development.WeilBound.CoreStatements.PlurisubharmonicCones.Bundle0010
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SpecializesOfUnits
 
 open AlgebraicGeometry CategoryTheory Matrix MvPolynomial

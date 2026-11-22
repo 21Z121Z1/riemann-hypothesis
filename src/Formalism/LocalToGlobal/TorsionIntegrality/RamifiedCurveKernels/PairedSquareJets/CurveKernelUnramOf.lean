@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.StatementU
+import Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.Bundle0002
 import Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.FinalA
 import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.CurveSecondLogDerivative
 

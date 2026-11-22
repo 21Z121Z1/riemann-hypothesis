@@ -1,5 +1,5 @@
 import Mathlib
-import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.NineAddOfFound2Fun
+import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.Bundle0006
 
 noncomputable section
 

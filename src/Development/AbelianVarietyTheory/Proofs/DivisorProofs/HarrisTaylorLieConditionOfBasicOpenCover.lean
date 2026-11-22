@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieRankAt
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0415
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.LieBridgeA
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualNumberMorphismEqOfLocal
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2887
 
 noncomputable section
 

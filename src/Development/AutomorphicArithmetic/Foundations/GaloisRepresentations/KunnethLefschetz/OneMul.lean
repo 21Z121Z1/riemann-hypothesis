@@ -1,6 +1,6 @@
 import Development.EtaleCohomology.EtaleTrace.LadicH0LocallyConstant
 import Development.EtaleCohomology.CohomologicalPurity.LeafIndExc
-import Development.EtaleCohomology.KummerTheory.InjSlice
+import Development.EtaleCohomology.KummerTheory.Bundle0001
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TranscendenceTraces.WtDegConst
 
 noncomputable section

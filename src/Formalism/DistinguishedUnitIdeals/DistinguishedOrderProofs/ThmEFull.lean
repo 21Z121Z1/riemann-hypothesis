@@ -1,6 +1,5 @@
 import Mathlib
-import Formalism.DistinguishedUnitIdeals.WordConsts
-import Formalism.DistinguishedUnitIdeals.FinalE
+import Formalism.DistinguishedUnitIdeals.Bundle0003
 import Formalism.DistinguishedUnitIdeals.DescentLemmasAllHold
 import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.ArcLiftOfLocalizationData
 

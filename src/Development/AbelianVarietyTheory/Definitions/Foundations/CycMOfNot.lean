@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.AdmissibleTwistIffAdmissibleUntwisted
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0020
 
 noncomputable section
 

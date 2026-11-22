@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GaloisSideTwistedSelmerAuxiliaryPrimes
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LengthKerMatActKmodEqAddValDet
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RestrictionH1MemBlochKato
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsIntegralOfNormLeOne
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0009
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0238
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0198
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0196
 
 noncomputable section
 

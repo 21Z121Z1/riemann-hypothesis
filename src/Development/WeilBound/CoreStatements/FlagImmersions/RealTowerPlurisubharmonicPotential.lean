@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.RefLinked
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
-import ReciprocityTheory.AnalyticForms.PotentialTheory.Pullback
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.AnalyticSystemRegularityProperties
-import Development.WeilBound.CoreStatements.FlagImmersions.DifferentiableAtAffCoord
+import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Bundle0001
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0007
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0005
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0023
+import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0013
 
 noncomputable section
 

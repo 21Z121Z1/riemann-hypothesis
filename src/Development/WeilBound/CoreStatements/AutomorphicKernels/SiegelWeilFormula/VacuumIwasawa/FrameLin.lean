@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryFramesPreserveNormSqSumStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0053
 
 noncomputable section
 

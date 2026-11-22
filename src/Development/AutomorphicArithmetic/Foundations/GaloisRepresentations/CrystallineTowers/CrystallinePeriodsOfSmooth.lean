@@ -1,6 +1,6 @@
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.SemistableModelSemistable
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsAdmDOne
-import Development.AutomorphicArithmetic.ThetaCorrespondence.FockModels.TiltedDrinfeld.Bridge
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0012
+import Development.AutomorphicArithmetic.ThetaCorrespondence.FockModels.TiltedDrinfeld.Bundle0002
 import Development.WeilBound.CoreStatements.CrystallinePeriodRings.AinfMapSurjective
 
 set_option backward.isDefEq.respectTransparency false

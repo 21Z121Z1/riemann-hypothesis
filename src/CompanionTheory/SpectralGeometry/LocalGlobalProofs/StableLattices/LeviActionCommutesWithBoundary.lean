@@ -1,7 +1,7 @@
 import Mathlib
 import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.DiscreteSeriesExhaustion.FarRegularity.LKTExists
 import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.EigenspaceCyclicDensity.CreationOperators.DifferentialBoundedSupport
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CanonicalAnticommutationRelationsConsequenceStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0046
 
 open Finset CompanionTheory.RgExh CompanionTheory.RgExh.U
 open CompanionTheory.D.LK (Pos Cn ann cre lift bd om cpt allT LocFin)

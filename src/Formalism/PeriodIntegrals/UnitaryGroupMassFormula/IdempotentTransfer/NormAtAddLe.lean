@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.PeriodIntegrals.DivisionRowsRationalLattice
 import Formalism.HarderNarasimhan.FinalCor
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IdempotentTransfer.TraceFormulaOfRankDegree
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IdempotentTransfer.CharacteristicPolynomialCompatibility
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IdempotentTransfer.Bundle0001
 
 noncomputable section
 

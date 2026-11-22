@@ -1,4 +1,4 @@
-import Formalism.ThetaLogCoordinates.BihomogeneousPairs.LetterChainEmbeddings.LatticeEqualHolds
+import Formalism.ThetaLogCoordinates.BihomogeneousPairs.LetterChainEmbeddings.Bundle0001
 
 namespace Formalism.InvariantFactorPaths.KP.LL
 

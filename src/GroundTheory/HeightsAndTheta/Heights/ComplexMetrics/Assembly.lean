@@ -1,10 +1,6 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.ComplexPointsBase
-import GroundTheory.HeightsAndTheta.Heights.ComplexMetrics.PProjPointContinuous
-import GroundTheory.HeightsAndTheta.Heights.ComplexMetrics.PFractionContinuous
-import GroundTheory.HeightsAndTheta.Heights.ComplexMetrics.PGermFraction
-import GroundTheory.HeightsAndTheta.Heights.ComplexMetrics.PLocalLift
-import GroundTheory.HeightsAndTheta.Heights.ComplexMetrics.PRegularContinuous
+import GroundTheory.HeightsAndTheta.Heights.ComplexMetrics.Bundle0001
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

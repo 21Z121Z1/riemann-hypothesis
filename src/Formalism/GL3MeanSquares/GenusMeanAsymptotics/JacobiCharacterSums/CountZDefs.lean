@@ -1,5 +1,5 @@
-import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.CountSt
-import Formalism.LFunctionBounds.LFunctionBoundsProofs.LPartialSum
+import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.Bundle0001
+import Formalism.LFunctionBounds.LFunctionBoundsProofs.Bundle0002
 import Formalism.LandauZeroFreeBounds.ExceptionalZeroBounds.LGrowth
 
 open Complex Finset ArithmeticFunction

@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.LevImgCoeffBigM
+import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.Bundle0004
 
 noncomputable section
 

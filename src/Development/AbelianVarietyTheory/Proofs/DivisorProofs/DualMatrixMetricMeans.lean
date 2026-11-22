@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.FunctionalLowerBoundOfConditionsNumeric
 import Formalism.LocalToGlobal.IndefiniteForms.IndefExample
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.InfinitePlaceDepthSums
-import Development.AbelianVarietyTheory.Counterexamples.RotationExamples.FreeLiftMetric
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0008
+import Development.AbelianVarietyTheory.Counterexamples.RotationExamples.Bundle0001
 
 open Module NumberField IsDedekindDomain
 open scoped Matrix MatrixOrder ComplexOrder

@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.Intersections.StSemilocResidueFrac
-import GroundTheory.HeightsAndTheta.Heights.Intersections.PSemilocRankAdjoin
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0060
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0058
 set_option maxSynthPendingDepth 1
 
 noncomputable section

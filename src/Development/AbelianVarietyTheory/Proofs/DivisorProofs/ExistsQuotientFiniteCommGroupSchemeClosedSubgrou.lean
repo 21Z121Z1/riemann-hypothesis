@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.RedSurjective
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KerEqRangeOfRangeEqKer
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobKerIdealLeAugIdeal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankHopfAlgebraEqRangeMulKernelStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdditiveFrobeniusPullbackCotangentModVersc
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0021
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3315
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3070
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3336
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3258
 open CategoryTheory TensorProduct Coalgebra Bialgebra GlobalTheory GlobalTheory.PDiv GlobalTheory.PDivGroup GlobalTheory.Dieu
 
 noncomputable section

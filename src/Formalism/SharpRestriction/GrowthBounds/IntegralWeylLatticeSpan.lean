@@ -1,9 +1,7 @@
-import Formalism.SharpRestriction.GrowthBounds.IntegralWeylLatticeSpan.WeylLatticeDescentHolds
-import Formalism.SharpRestriction.GrowthBounds.IntegralWeylLatticeSpan.ColSpanMulUnit
-import Formalism.SharpRestriction.GrowthBounds.IntegralWeylLatticeSpan.SelfDualCongr
+import Formalism.SharpRestriction.GrowthBounds.IntegralWeylLatticeSpan.Bundle0002
 import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TieFin
 import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.BlockRationalityField
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.BlockRatReal
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0019
 
 noncomputable section
 

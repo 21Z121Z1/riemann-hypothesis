@@ -1,5 +1,4 @@
-import Formalism.FormalDegreeBessel.FormalDegreeRatio.DSLowK
-import Formalism.FormalDegreeBessel.FormalDegreeRatio.DSFdeg
+import Formalism.FormalDegreeBessel.FormalDegreeRatio.Bundle0003
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.DSRatio
 
 namespace Formalism.QuantumDeterminants

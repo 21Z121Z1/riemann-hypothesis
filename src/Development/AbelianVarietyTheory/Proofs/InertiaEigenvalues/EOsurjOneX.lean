@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpanLStable
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0518
 import Formalism.LocalRingCardinality.SpanPowerMembership.NDLocE
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitOfClosure
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PotentiallyCrystallineModuleEqCrystallineRestricStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0252
 open Formalism Formalism.MainNotions Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.MainNotions.N Formalism.WeaklyAdmissibleFiltrations NumberField IsDedekindDomain Formalism.ConjugateSelfDual ReciprocityTheory.Gal Module GlobalTheory.Pass Formalism.MainNotions.PairedCharacterCondition GlobalTheory.Pass.LocDual GlobalTheory.Pass.LocDual.OneX
 
 set_option maxHeartbeats 1000000

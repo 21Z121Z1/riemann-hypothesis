@@ -1,10 +1,9 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsArith
-import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsWellDefined
-import GroundTheory.HeightsAndTheta.Heights.Intersections.ThmIExistsFamily
-import GroundTheory.HeightsAndTheta.Heights.Intersections.PChoice
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0009
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0011
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0052
 import GroundTheory.HeightsAndTheta.Heights.Intersections.NotLtLtOfMemMinimalPrimes
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterDivSupp
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0018
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Inter

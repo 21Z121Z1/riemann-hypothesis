@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.ProfiniteCohomology.RestrictedRamification.SPicDefs
+import GroundTheory.ProfiniteCohomology.RestrictedRamification.Bundle0001
 import GroundTheory.GlobalFields.SUnits
 set_option maxSynthPendingDepth 1
 

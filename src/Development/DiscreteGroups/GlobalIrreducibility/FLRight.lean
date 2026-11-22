@@ -1,6 +1,6 @@
 import Mathlib
 import Development.DiscreteGroups.GlobalIrreducibility.DzRedF
-import Development.DiscreteGroups.GlobalIrreducibility.DzIsoKO
+import Development.DiscreteGroups.GlobalIrreducibility.Bundle0030
 
 noncomputable section
 

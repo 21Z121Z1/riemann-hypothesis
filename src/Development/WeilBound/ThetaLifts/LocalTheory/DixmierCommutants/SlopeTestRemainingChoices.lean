@@ -1,4 +1,4 @@
-import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.FullOfSoLoc
+import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0005
 
 noncomputable section
 

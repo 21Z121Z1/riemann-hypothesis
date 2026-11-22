@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.PsiEDef
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ExistsHaarSplit
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HostCmData
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NcardPrimesOverOfStabilizer
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0088
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0089
 
 noncomputable section
 open ValuativeRel IsDedekindDomain NumberField ComplexConjugate Formalism.MainNotions.S.Loc

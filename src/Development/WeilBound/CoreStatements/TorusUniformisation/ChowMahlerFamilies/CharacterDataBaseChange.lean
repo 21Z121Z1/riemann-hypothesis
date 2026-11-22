@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LieLatticeData
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LocallyFreeFiniteProjectiveBaseChange
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Imports
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.MemSpanOverOfMem
-import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.XDotdualBc
-import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.XGraphRestrictBc
+import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0002
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0007
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0020
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0008
+import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.Bundle0005
+import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.Bundle0003
 open GlobalTheory.CompanionTheory.Ar.Num
 
 namespace PositivityTheory.Xgn.LocallyFreeLatticeSpans

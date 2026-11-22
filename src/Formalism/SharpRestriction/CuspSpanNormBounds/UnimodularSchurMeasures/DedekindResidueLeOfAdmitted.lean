@@ -1,6 +1,6 @@
 import Formalism.SharpRestriction.CuspSpanNormBounds.PlaceDegreeData
 import Formalism.FlagUnipotentLattices.HalfDifferenceL1Bound
-import Formalism.FlagUnipotentLattices.CoveringRadius2
+import Formalism.FlagUnipotentLattices.Bundle0006
 
 noncomputable section
 

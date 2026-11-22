@@ -1,5 +1,5 @@
 import Formalism.LocalRingCardinality.DataParams
-import Formalism.LocalRingCardinality.DataGatTies
+import Formalism.LocalRingCardinality.Bundle0001
 import Formalism.SharpRestriction.GrowthBounds.ObjPol
 
 open Formalism.MainNotions.G Formalism.FrobeniusOrbits

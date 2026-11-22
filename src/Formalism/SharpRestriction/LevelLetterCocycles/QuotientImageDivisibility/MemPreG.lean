@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.LevNOsmul
-import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.FrobeniusSqComparisonLetter
+import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.Bundle0013
+import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.Bundle0011
 
 noncomputable section
 open Classical

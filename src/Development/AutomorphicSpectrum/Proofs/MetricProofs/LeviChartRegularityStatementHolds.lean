@@ -1,14 +1,13 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.StNbarLeviChartReg
-import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PNbarLeviChartReg
-import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PRefChartDisc
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PProjHoloLocal
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PProjSmoothAlong
+import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.Bundle0028
+import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.Bundle0030
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0036
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0032
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PHermExtend
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PHoloInjDerivInj
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PChartVelLift
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PInjectiveHolomorphicInverse
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.LocalOrbitChart
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0007
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0037
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0051
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0120
 
 set_option maxSynthPendingDepth 1
 

@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsAvoidFormFinite
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PFibreRepresentatives
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0023
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0097
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

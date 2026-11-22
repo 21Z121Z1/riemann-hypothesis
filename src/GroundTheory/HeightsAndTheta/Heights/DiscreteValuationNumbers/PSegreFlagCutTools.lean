@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsSegreFlagCut
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0043
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PGenericProjClosureDivisor
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PPairCocycle
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PPairNumSectionCut
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0061
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.NumbersDVR

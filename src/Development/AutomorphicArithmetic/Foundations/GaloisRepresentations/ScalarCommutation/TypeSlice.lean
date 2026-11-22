@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LefschetzSigmaSums.HeckeTraceSemi
-import Development.AbelianVarietyTheory.Definitions.Divisors.IwahoriRegularSeparable
-import Development.AbelianVarietyTheory.Definitions.Divisors.GenOf
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0047
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0055
 
 set_option autoImplicit false
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComapBcComp
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0009
 
 noncomputable section
 

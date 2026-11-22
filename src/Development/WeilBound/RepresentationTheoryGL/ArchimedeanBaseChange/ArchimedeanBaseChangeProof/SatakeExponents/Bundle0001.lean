@@ -1,0 +1,52 @@
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.SatakeRigidity.FullThetaHolds
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.FiniteDiscreteFamilies.FinCut
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.Bundle0007
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.FrameBoundSpaces.FrameBound
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.FrameReading.GelfandValueContinuity.ReadLimitOfEfinal
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.AdelicHeckeBlocks.PFrameOk
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.EFinalNEHolds
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.FrameEx0Plug
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.SatakeRigidity.Bundle0002
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.SatakeRigidity.LPermSub
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.FiniteDiscreteFamilies.PLevelFactorB
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.FiniteDiscreteFamilies.PFinFamOf
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0462
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0794
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.EFinalNEHoldsAlt
+
+-- bundled from Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.BciOf
+section
+noncomputable section
+
+namespace PositivityTheory.Rg.BcB.Plug2
+
+open PositivityTheory.Rg.BcB.One PositivityTheory.Rg.BcB.F PositivityTheory.Rg.BcB.F.F5
+
+theorem bci_of (h1 : FrameEx) (h3 : FrameBound)
+    (h4 : FrameRead) : PositivityTheory.Rg.BcN.BaseChangeIsobaricN :=
+  PositivityTheory.Rg.BcB.F.Rig.fieldN_of_run
+    (runFin_chain (finFamOf_holds levelFactor GlobalTheory.T.finite_discrete_spectrum) PositivityTheory.Rg.BcB.F.Rig.weightEx PositivityTheory.Rg.BcB.F.Rig.permSat
+      GlobalTheory.T.diagonal_algebra_holds (genEx_of (PositivityTheory.Rg.BcB.F.Rd.P.readLimit_of_efinal PositivityTheory.Rg.BcB.SpectralAccumulation.eFinal_holds) GlobalTheory.T.diagonal_algebra_holds PositivityTheory.Rg.BcB.F.Ex0.frameEx0 h1 frameOk₀ h3 h4))
+
+end PositivityTheory.Rg.BcB.Plug2
+end
+end
+
+-- bundled from Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.BciOfAlt
+section
+noncomputable section
+
+namespace PositivityTheory.Rg.BcB.Plug2B
+
+open PositivityTheory.Rg.BcB.One PositivityTheory.Rg.BcB.F PositivityTheory.Rg.BcB.F.F5
+
+theorem bci_of (h1 : FrameEx) (h3 : FrameBound)
+    (h4 : FrameRead) : PositivityTheory.Rg.BcN.BaseChangeIsobaricN :=
+  PositivityTheory.Rg.BcB.F.Rig.fieldN_of_run
+    (runFin_chain (finFamOf_holds levelFactor GlobalTheory.T.finite_discrete_spectrum) PositivityTheory.Rg.BcB.F.Rig.weightEx PositivityTheory.Rg.BcB.F.Rig.permSat
+      GlobalTheory.T.diagonal_algebra_holds (genEx_of (PositivityTheory.Rg.BcB.F.Rd.P.readLimit_of_efinal PositivityTheory.Rg.BcB.SpectralAccumulation.eFinal_holds') GlobalTheory.T.diagonal_algebra_holds PositivityTheory.Rg.BcB.F.Ex0.frameEx0 h1 frameOk₀ h3 h4))
+
+end PositivityTheory.Rg.BcB.Plug2B
+end
+end
+

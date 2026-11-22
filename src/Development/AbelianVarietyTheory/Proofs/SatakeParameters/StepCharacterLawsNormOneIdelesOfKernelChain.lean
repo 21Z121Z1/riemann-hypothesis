@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.UnderTie
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.KernelChainCharactersAlgebraicUnitaryPointsStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.KernelStepCharacterEqOneIntegralUnitaryStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.KernelChainCharacterNormOneEqInfinityTypeStatement
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0025
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0284
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0300
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0282
 
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions Formalism.L2.Col Formalism.L2.Ker Formalism.L2.DIV GlobalTheory.TwU GlobalTheory.TwV Formalism.UG Formalism.L2.Forms
 

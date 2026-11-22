@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.PlaceAdaptation.AdaptStd
-import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.MvPowerSeriesSubstConstTermsLocalAlgHomSpec
+import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0037
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.UniversalStatement
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsUniversalJetCoordinatesPullback
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0119
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsUniqueFactorCompletedStalkOfMap
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ChartDataPf
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0020
 
 set_option autoImplicit false
 noncomputable section

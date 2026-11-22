@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.PeriodIntegrals.NormTransG
-import Formalism.PeriodIntegrals.HeisNorm
+import Formalism.PeriodIntegrals.Bundle0019
+import Formalism.PeriodIntegrals.Bundle0014
 
 open MeasureTheory
 

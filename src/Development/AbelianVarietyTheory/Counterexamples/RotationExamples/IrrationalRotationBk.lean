@@ -1,8 +1,7 @@
 import Mathlib
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-import Formalism.LocalRingCardinality.DataBu
-import Formalism.LocalRingCardinality.DataTies
-import Formalism.LocalRingCardinality.DataDIVDefs
+import Formalism.LocalRingCardinality.Bundle0001
+import Formalism.LocalRingCardinality.Bundle0003
 
 noncomputable section
 

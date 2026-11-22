@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.FormZeroEqSlotPairingOfLe
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.MemLevelZeroOfMemGroup
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0204
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ExistsNormBoundThreeFamilies
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.RadialModuleFormOfXiExists
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0153
 
 namespace GlobalTheory.ListDuality
 

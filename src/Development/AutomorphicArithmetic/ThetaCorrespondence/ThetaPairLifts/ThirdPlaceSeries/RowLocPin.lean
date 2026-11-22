@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.IndefiniteReal.TensCastR
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0025
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.CohomologicalCsdTempered
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.NGalTiedRowLoc
 

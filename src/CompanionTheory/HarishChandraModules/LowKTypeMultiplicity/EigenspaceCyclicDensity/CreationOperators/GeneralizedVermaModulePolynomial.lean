@@ -1,5 +1,5 @@
 import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.EigenspaceCyclicDensity.LowKMultOneP
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.KummerLiftedCocycleImageEqPicardClass
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0019
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.WordMonomial
 
 open Finset MvPolynomial

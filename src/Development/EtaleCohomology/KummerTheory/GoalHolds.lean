@@ -1,10 +1,8 @@
-import Development.EtaleCohomology.KummerTheory.InvOfField
-import Development.EtaleCohomology.KummerTheory.LocalHomotopyEtaleCohomology
-import Development.EtaleCohomology.KummerTheory.FinSHInv
-import Development.EtaleCohomology.KummerTheory.FinStalk
+import Development.EtaleCohomology.KummerTheory.Bundle0003
+import Development.EtaleCohomology.KummerTheory.Bundle0016
+import Development.EtaleCohomology.KummerTheory.Bundle0017
 import Development.EtaleCohomology.KummerTheory.FinBock
-import Development.EtaleCohomology.KummerTheory.FinAdicDeg
-import Development.EtaleCohomology.KummerTheory.FinLimit
+import Development.EtaleCohomology.KummerTheory.Bundle0013
 
 namespace LateralTheory.KummerTheory
 

@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.IntegralWeylLatticeSpan.IntSpanGSmul
+import Formalism.SharpRestriction.GrowthBounds.IntegralWeylLatticeSpan.Bundle0001
 
 open MvPolynomial Matrix Formalism.GradedWeylDivisibility Formalism.MainNotions.G Formalism.BasicNotions Formalism.L2.Forms Formalism.UG NumberField IsDedekindDomain
 open scoped TensorProduct

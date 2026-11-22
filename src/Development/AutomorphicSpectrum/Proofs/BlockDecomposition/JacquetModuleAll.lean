@@ -1,7 +1,7 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.FiniteTypeHarishChandra.SupportExistsAll
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductSimpleAllStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SimpleIffIrreducibleStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0118
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0114
 
 open CategoryTheory
 open Formalism.IrreducibleCountingLemmas.TYPES hiding zIdem IsCuspidal

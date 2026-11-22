@@ -4,8 +4,8 @@ import Formalism.PairingDivisors.StatementH
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsDual
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsSpan
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlob
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsEasy
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.LevelSubgroupFiniteAdelicStandard
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0010
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0005
 
 noncomputable section
 

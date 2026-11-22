@@ -2,8 +2,8 @@ import Mathlib
 import ReciprocityTheory.ThetaQuasiPeriods.ThetaQuasiPeriodStatement
 import ReciprocityTheory.ThetaQuasiPeriods.Transl
 import ReciprocityTheory.ThetaQuasiPeriods.Change
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.PolyGrowthStatementPf
-import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.EntireApplyEqOfPeriodicOfSpanReal
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0005
+import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.Bundle0001
 
 open Filter Topology Asymptotics
 

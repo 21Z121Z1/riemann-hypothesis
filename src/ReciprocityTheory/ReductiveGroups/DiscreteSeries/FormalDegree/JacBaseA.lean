@@ -1,5 +1,5 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.PolarAct
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.ProdShcSqEqJacPow
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0006
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0007
 
 noncomputable section
 

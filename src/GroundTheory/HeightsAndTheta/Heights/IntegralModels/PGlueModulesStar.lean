@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.IntegralModels.StatementsGlue
+import GroundTheory.HeightsAndTheta.Heights.IntegralModels.Bundle0006
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Model

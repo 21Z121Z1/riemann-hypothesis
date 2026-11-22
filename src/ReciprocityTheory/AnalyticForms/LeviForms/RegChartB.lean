@@ -1,4 +1,4 @@
-import ReciprocityTheory.AnalyticForms.LeviForms.RegChartA
+import ReciprocityTheory.AnalyticForms.LeviForms.Bundle0003
 
 namespace ReciprocityTheory.AnForm.P.RegularChartScaling
 

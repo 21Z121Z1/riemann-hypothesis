@@ -1,8 +1,8 @@
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.CartanIdeles.SpacesExOf
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ExistsIsCharAF
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsStdMulShift
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0013
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3156
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsAuxiliaryPlaceNotMemFinset
-import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.PsiUnrOfNotLe
+import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.Bundle0003
 
 noncomputable section
 

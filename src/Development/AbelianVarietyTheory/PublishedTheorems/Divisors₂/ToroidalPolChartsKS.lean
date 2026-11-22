@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.HasPolChartOf
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0075
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ToroidalCompactificationBis
 
 noncomputable section

@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ClassCounting.LemmaKOfSteps
-import Development.EtaleCohomology.CyclotomicDiscriminants.SZcTPf
-import Development.EtaleCohomology.CyclotomicDiscriminants.SChainPf
+import Development.EtaleCohomology.CyclotomicDiscriminants.Bundle0002
+import Development.EtaleCohomology.CyclotomicDiscriminants.Bundle0001
 
 noncomputable section
 namespace LateralTheory.Q.SRelT

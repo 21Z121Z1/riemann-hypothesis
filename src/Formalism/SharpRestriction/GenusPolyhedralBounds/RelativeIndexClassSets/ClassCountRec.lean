@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.ClassCount
-import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.ParOfEqBase
+import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0005
+import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0004
 import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.FibreRankGat
 import Formalism.SharpRestriction.GlobalSchurBounds.MainSup
 

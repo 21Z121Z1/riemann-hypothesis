@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.BesselHermitianTheta.TiedWeil
-import Formalism.LocalRingCardinality.ConjSqrtMinusD
+import Formalism.LocalRingCardinality.Bundle0001
 
 noncomputable section
 

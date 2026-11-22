@@ -1,6 +1,6 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.PublishedTheorems.CuspidalMultiplicityOne.CuspidalMultiplicityOneLit
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OfUnitary
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0750
 
 noncomputable section
 

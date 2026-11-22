@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsTransition
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.IdealPadicGeneratorLogNormStatement
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsCoordinate
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0080
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0076
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor

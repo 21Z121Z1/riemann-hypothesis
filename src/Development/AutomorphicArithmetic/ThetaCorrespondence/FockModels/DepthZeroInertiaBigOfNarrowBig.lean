@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DepthZeroInertiaOfLanglands
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0812
 import Development.DiscreteGroups.GlobalIrreducibility.DzMatchCut
-import Development.DiscreteGroups.GlobalIrreducibility.DzBigDef
+import Development.DiscreteGroups.GlobalIrreducibility.Bundle0027
 
 noncomputable section
 

@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.GlobalFields.TateThesis.HeckeTheoremScaling
-import GroundTheory.GlobalFields.TateThesis.EulerFactorsInverse
+import GroundTheory.GlobalFields.TateThesis.Bundle0013
+import GroundTheory.GlobalFields.TateThesis.Bundle0009
 
 open NumberField InfinitePlace IsDedekindDomain MeasureTheory Complex Topology Filter Set
 open scoped NumberField.AdeleRing ComplexConjugate Real

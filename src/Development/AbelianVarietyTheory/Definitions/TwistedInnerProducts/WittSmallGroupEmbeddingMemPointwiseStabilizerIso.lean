@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.WittDec
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsHeightLeTwoMulQuotHeight
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsBesPosOfBesselTied
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BesselCharacterGenericCharacterLaws
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsUnitriGlEquiv
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0045
 
 noncomputable section
 

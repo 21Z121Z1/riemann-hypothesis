@@ -1,1 +1,1 @@
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumTransportCmPreservesAdmissibleFormsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2025

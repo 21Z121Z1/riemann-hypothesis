@@ -1,8 +1,7 @@
 import Formalism.PieriBlockIdeals.MertensReciprocalElementary
-import Formalism.PieriBlockIdeals.PieriColumnMinors.SharperSizeNeedsMleKFalse
-import Formalism.PieriBlockIdeals.PieriColumnMinors.LocalComponentGL
-import Formalism.PieriBlockIdeals.PieriColumnMinors.LogarithmEquivalence
-import Formalism.RankGapBounds.RankGapProofs.CardLargePrimeFactorsLeOneHolds
+import Formalism.PieriBlockIdeals.PieriColumnMinors.Bundle0002
+import Formalism.PieriBlockIdeals.PieriColumnMinors.Bundle0003
+import Formalism.RankGapBounds.RankGapProofs.Bundle0001
 
 noncomputable section
 

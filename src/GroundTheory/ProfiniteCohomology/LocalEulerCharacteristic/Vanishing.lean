@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.VanishingCore
+import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Bundle0004
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.VanishingUnits
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Cohomology
 import GroundTheory.LocalFields.SeparableClosure

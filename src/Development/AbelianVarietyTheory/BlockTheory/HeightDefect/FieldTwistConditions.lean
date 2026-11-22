@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.ProjectiveLattices.ExistsParameterConditions
-import Formalism.LocalToGlobal.ProjectiveLattices.RecCond
-import Formalism.LocalToGlobal.BesselHermitianTheta.DefsReal
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0036
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0001
 import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.PermutesRefl
 
 noncomputable section

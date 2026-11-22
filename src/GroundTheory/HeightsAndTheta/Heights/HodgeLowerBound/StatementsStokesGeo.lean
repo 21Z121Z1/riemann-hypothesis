@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FlagIndices
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.JointExample
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PProjLineAmple
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.AssemblyLaplacianLogGrowth
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0014
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0019
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0024
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0005
 set_option maxSynthPendingDepth 1
 
 noncomputable section

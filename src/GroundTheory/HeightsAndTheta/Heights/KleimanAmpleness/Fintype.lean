@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsTerAlt
+import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0054
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ExistsSumEqOneOfMulEqOne
 set_option maxSynthPendingDepth 1
 

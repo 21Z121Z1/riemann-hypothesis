@@ -1,8 +1,8 @@
 import Mathlib
-import Formalism.PeriodIntegrals.LocJacTyp
+import Formalism.PeriodIntegrals.Bundle0019
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.JacobianTransvectionSplitting.DiscreteHaar
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicLocalCompactness.AdeleLC
-import ReciprocityTheory.ClassFieldTheory.GlobalClassField.LocPowB
+import ReciprocityTheory.ClassFieldTheory.GlobalClassField.Bundle0002
 
 noncomputable section
 

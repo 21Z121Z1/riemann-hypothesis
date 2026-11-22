@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.LocHeckeInert
 import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.SummandFactor
-import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.TensSmooth
-import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.TrDefs
+import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0004
+import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0001
 
 noncomputable section
 

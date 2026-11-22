@@ -1,6 +1,6 @@
-import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.LocEuler
-import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.DecZhat
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ChoiceFunction
+import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.Bundle0002
+import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.Bundle0001
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0006
 
 open NumberField IsDedekindDomain Formalism.ConjugateSelfDual ReciprocityTheory.Gal Module UpperTheory.V UpperTheory.V.Fr UpperTheory.V.GC
 

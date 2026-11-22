@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WignerStepRaisingUnitaryComplement
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.DifferentialOperatorBracket
-import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
-import Development.AbelianVarietyTheory.Definitions.Jets.Imports
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0093
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0088
+import Formalism.RealPlaceAnalysis.Bundle0004
+import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0001
 import Development.AbelianVarietyTheory.Definitions.Jets.WigMap
 open Matrix Formalism.QuantumDeterminants Formalism.FourierDecayAlt.Q Formalism.FourierDecayAlt.Qr
 open Formalism.REAL (qdet GlRel IsHW)

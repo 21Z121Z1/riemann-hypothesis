@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.LinearCoefficientData
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0023
 
 noncomputable section
 

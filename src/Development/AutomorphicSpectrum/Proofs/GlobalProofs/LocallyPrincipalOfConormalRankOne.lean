@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GeometricallyConnectedOfIsIsoRestrict
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.EffCartierIffForallCartAt
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LocPrincipalSpan
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0005
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0014
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0001
 open AlgebraicGeometry CategoryTheory Limits TopologicalSpace
 open ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.AnForm.R GlobalTheory.CompanionTheory.Hypotheses₂.CentreOver
 

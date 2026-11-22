@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.InertiaQuadraticRamification.ThreeApartOf
-import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.RamDefs
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.CyclicStrongAtCusp
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.InertiaQuadraticRamification.Bundle0005
+import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.Bundle0001
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0026
 
 noncomputable section
 

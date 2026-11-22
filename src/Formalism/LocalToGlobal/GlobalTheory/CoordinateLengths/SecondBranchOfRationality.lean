@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.MixedChange
-import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.DuCount
+import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.Bundle0003
+import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.Bundle0002
 
 noncomputable section
 

@@ -1,6 +1,6 @@
 import Development.WeilBound.HeckeVectors.HeckeDoubleCosets.DoubleCosetLemmas.MatchB
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SatakeDeterminesSphericalHeckeCharacterGL
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SatakeVectorIffInverseDoubleCosetsStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0128
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0211
 
 noncomputable section
 

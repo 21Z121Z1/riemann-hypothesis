@@ -1,5 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.FiniteDimensionalBaseSpan
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.FinDetPf
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.Bundle0002
 
 namespace ReciprocityTheory.ChartRestriction.G.FreeQuotientRank
 

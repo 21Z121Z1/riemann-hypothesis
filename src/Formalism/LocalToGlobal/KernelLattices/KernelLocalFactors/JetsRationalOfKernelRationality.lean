@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.KernelLattices.JetFieldLeKR
+import Formalism.LocalToGlobal.KernelLattices.Bundle0003
 import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.ComplexMultiplication.ExtEmbEquivComp
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.PeriodLatticeFinitelyGenerated
 

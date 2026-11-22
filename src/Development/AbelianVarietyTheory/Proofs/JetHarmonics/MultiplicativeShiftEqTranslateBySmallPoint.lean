@@ -1,8 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Jets.CmLatticeCommutatorPairingPowEqOneOfGoodLift
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ConstantCoeffShiftS
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CpTransportedTaylorSeriesInChartRingHomLaws
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DvdAevalSubAevalTwo
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0011
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0012
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.UwEllipticFlow
 open PowerSeries GlobalTheory.MomOne
 open scoped ComplexConjugate BigOperators Topology

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitPrimePlaceCmTypeConjugate
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0429
 
 noncomputable section
 

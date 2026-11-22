@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.MainGalois
-import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.MainCount
+import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Bundle0003
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.MainCoind
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Coprime
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Vanishing

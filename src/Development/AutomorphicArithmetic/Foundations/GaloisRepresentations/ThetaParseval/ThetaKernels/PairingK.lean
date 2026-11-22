@@ -1,6 +1,6 @@
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.ProjFacts
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.HalfIndexLattices.SplitStab
-import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.HalfIndexLattices.IsLatRepL
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.HalfIndexLattices.Bundle0001
 
 set_option synthInstance.maxHeartbeats 200000
 

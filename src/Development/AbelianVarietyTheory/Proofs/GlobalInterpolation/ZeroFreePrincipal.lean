@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogDerivativeBound
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogDerivRiemannZetaLocalZeroSumStatement
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0006
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0021
 open Complex DirichletCharacter ArithmeticFunction MeasureTheory
 open Filter Topology
 

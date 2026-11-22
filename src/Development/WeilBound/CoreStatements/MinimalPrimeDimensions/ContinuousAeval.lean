@@ -1,11 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PRatPrimeDense
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PFiniteSeparatingModel
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PRootsNear
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PRootsBounded
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPolyNonvanishDense
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PNoetherProjection
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PRootsLiftToZeros
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0004
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0003
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0005
 
 open MvPolynomial Filter Topology NumberField
 

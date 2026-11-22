@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.SurjectiveOfLocallySurjective
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSecImageNonzeroLocus
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.OmegaPullId
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0032
 
 set_option autoImplicit false
 

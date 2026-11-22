@@ -1,5 +1,5 @@
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.ActsFormula
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.IsUnitDetOfCartan
+import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0047
 
 set_option linter.unusedSectionVars false
 

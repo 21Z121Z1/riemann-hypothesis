@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RwAppend
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0226
 
 noncomputable section
 

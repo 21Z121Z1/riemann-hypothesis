@@ -1,10 +1,10 @@
 import Mathlib
 import Formalism.LocalRingCardinality.DataTheta
-import Development.AbelianVarietyTheory.Definitions.Foundations.IsFockIPOfFockData
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0012
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousOfDense
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.NotTrivialAndTwist
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsGrpDataMapHaar
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCoverTensorHom
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0283
 
 noncomputable section
 

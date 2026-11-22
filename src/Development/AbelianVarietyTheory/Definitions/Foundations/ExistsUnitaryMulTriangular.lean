@@ -2,8 +2,8 @@ import Mathlib
 import Formalism.SatakeDualWeyl.DualWeylRepApply
 import Formalism.HarderNarasimhan.StatementPl
 import Formalism.LocalRingCardinality.DataArith
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LatticeHasBasisAtEveryFinitePlace
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ActPMemLocPNabStdOfIsBasisAt
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0203
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0225
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IntegralConjInnerMulInnerOfIsEmptyEquiv
 
 open MvPolynomial NumberField IsDedekindDomain MeasureTheory

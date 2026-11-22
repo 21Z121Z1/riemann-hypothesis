@@ -1,8 +1,8 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.IsBlockProd
-import Formalism.LocalToGlobal.ProjectiveLattices.EtArchPf
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.ThetaValCAlpha
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.TorusPin
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0045
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0043
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0009
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0005
 
 noncomputable section
 

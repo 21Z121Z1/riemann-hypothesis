@@ -1,5 +1,4 @@
-import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.GramSt
-import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.HadZStA
+import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.Bundle0001
 
 namespace ReciprocityTheory.GeometryOfNumbersTheory
 

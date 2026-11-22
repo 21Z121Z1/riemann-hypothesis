@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.AxHSup
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0016
 import Formalism.LocalToGlobal.ProjectiveLattices.FrameCharts
-import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.ChosenEqOfAllRules
+import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.Bundle0001
 
 noncomputable section
 

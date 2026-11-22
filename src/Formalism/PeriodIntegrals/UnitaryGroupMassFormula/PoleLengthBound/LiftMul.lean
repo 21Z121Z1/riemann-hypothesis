@@ -1,5 +1,5 @@
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PoleLengthBound.LeOrdASmulOsK
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HasseOrderBound.CompositionalInverseSymm
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HasseOrderBound.Bundle0001
 
 noncomputable section
 

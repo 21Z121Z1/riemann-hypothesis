@@ -1,5 +1,5 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselDecayBounds.SchurDecayBounds.NormIdDec
-import Formalism.SharpRestriction.CuspSpanNormBounds.KfinOfMemLowKSub
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselDecayBounds.SchurDecayBounds.Bundle0001
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0014
 
 open MeasureTheory Matrix
 open scoped InnerProductSpace ENNReal

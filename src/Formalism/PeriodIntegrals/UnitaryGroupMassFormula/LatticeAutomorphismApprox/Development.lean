@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.ScXuExists
+import Formalism.PeriodIntegrals.Bundle0028
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicIndexEquality.Commensurated
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FiniteAdelicComparison.MemLocFrom
 

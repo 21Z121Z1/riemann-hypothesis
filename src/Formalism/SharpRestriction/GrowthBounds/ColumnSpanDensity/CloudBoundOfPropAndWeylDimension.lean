@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.FinrankLetter
-import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.DensityNumericalFacts
+import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.Bundle0008
+import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.Bundle0003
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.Columns.CoefModB
-import Formalism.LocalToGlobal.Columns.CoefModX
+import Formalism.LocalToGlobal.Columns.Bundle0004
 import Formalism.LocalToGlobal.Columns.CoefficientsModP.NablaIndependenceHolds
 import Formalism.LocalToGlobal.Columns.CoefficientsModP.TauLatticeLatticeHolds
 import Formalism.LocalToGlobal.Columns.CoefficientsModP.BaseCh

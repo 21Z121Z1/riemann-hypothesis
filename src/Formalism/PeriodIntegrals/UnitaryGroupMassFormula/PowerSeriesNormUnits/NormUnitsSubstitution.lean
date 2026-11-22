@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.PeriodIntegrals.PhNormUnits
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PowerSeriesNormUnits.Development
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsTerBis
+import Formalism.PeriodIntegrals.Bundle0008
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PowerSeriesNormUnits.Bundle0001
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0035
 
 noncomputable section
 

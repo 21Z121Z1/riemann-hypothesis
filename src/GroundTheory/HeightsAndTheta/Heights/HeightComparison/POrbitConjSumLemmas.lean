@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightOrbitConjSum
+import GroundTheory.HeightsAndTheta.Heights.HeightComparison.Bundle0009
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.FieldChange
 set_option maxSynthPendingDepth 1
 

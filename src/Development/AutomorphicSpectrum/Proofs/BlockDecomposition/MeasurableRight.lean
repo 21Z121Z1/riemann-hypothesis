@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeasurableSetBox
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TensorIdeleAbsDetUnitaryAdelicEqOne
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AddHaarCharLeftRightMatrixMulAdeleTensor
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0813
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0311
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2005
 
 noncomputable section
 

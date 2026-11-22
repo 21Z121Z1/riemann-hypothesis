@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.UnitsPower
+import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Bundle0002
 import GroundTheory.LocalFields.UnitsBasic
 set_option maxSynthPendingDepth 1
 

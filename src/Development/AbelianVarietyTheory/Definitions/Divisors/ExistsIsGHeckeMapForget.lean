@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGDatumOneOneOne
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsHeckeMap
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompEqOneOfTransl
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenModelHomUnique
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0020
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0597
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2339
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsPrimitiveNormalisation
 
 noncomputable section

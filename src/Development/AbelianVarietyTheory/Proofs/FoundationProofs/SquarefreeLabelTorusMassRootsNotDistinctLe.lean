@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.SamePartIffOfNeZero
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SquarefreeLabelTorusMassSamePartOneFactorLe
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SquarefreeLabelTorusMassTwoFactorsLe
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0158
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0153
 
 open Polynomial Classical GlobalTheory.BadShare
 

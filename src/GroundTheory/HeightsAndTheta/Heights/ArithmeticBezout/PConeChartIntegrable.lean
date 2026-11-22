@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsConeChartIntegrable
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PConeIntegralComponents
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0029
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0048
 set_option maxSynthPendingDepth 1
 
 noncomputable section

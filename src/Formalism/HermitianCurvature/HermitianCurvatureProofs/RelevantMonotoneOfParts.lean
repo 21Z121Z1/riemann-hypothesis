@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.StabilizerAntidiagonalExact
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0041
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.StabilizerFourthCondition
 
 open Matrix Formalism.FourierDecayAlt Formalism.QuantumDeterminants

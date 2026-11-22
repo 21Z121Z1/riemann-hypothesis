@@ -1,6 +1,6 @@
-import ReciprocityTheory.DualLattices.EigenLengthFrobeniusStatement
-import ReciprocityTheory.DualLattices.FrobEqOfLe
-import ReciprocityTheory.DualLattices.StdJForm
+import ReciprocityTheory.DualLattices.Bundle0018
+import ReciprocityTheory.DualLattices.Bundle0001
+import ReciprocityTheory.DualLattices.Bundle0028
 import ReciprocityTheory.DualLattices.UnramifiedCokernelLowerBoundOf
 
 noncomputable section

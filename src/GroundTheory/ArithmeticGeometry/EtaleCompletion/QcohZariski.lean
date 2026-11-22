@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.ArithmeticGeometry.EtaleCompletion.QcohPresheaf
+import GroundTheory.ArithmeticGeometry.EtaleCompletion.Bundle0002
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Arith.Etale

@@ -2,11 +2,11 @@ import Mathlib
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 import Formalism.LocalRingCardinality.DataParams₂
 import Formalism.LocalRingCardinality.DataDIV
-import Formalism.LocalRingCardinality.DataParamsT
-import Formalism.LocalRingCardinality.ConjSqrtMinusD
+import Formalism.LocalRingCardinality.Bundle0003
+import Formalism.LocalRingCardinality.Bundle0001
 import Formalism.SharpRestriction.ParamsHeightRankConstant
 import Formalism.SharpRestriction.Divisibility.ModuliIntegralCharts
-import Formalism.GelfandTransference.EnergyIdentity
+import Formalism.GelfandTransference.Bundle0001
 
 noncomputable section
 

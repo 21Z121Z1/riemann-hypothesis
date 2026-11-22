@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsChartHessCompare
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsHermFormCompare
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PChartDensityIntegrable
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.ChartGramHess
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0012
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0001
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0018
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0002
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

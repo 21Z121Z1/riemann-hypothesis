@@ -1,5 +1,5 @@
 import Formalism.MahlerMeasure.MahlerMeasureProofs.RemoveS
-import Formalism.MahlerMeasure.MahlerMeasureProofs.LevelDecomp
+import Formalism.MahlerMeasure.MahlerMeasureProofs.Bundle0003
 import Formalism.ThetaLogCoordinates.BihomogeneousPairs.LetterChainEmbeddings.ScalSum
 
 namespace Formalism.InvariantFactorPaths.KP.LL

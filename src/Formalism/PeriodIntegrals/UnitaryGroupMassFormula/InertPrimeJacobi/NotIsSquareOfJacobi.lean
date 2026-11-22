@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.InertPrime
+import Formalism.PeriodIntegrals.Bundle0004
 
 open NumberField
 

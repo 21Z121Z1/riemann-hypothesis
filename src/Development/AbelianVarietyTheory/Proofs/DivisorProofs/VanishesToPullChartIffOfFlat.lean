@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.QuasiRegularAlongOfEtale
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAffineOpenPreimageOfIsPullback
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0827
 
 set_option autoImplicit false
 

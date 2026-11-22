@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.HalfIndexLattices.SplitStab
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutEtaC
-import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.LatRepBS
+import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0004
 
 noncomputable section
 

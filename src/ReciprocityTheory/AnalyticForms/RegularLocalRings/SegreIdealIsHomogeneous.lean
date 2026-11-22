@@ -1,4 +1,4 @@
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.MemConePtsIffChartIdeal
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0007
 
 namespace ReciprocityTheory.AnForm.R
 

@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.HalfIndexLattices.SplitStab
-import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.LatRepB_A
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferentCoprimeAtGoodPlaces
+import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0003
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1781
 
 noncomputable section
 

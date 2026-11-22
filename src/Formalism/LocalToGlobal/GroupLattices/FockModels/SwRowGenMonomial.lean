@@ -1,6 +1,6 @@
 import Formalism.LocalToGlobal.GroupLattices.FockModels.SwRowDivZero
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LEhwLemmas
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LGradedLemmas
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0014
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0006
 
 open MvPolynomial
 

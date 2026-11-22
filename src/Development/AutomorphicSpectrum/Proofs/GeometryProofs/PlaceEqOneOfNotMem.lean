@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.HermitianLattices.StatementLat
 import Development.AutomorphicSpectrum.Definitions.SemilocalProjection.HidaSetting
-import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ExistsIntSmulIsAdicIntegralInTensorBasis
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0002
 
 open NumberField Matrix IsDedekindDomain
 

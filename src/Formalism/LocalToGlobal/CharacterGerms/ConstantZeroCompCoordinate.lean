@@ -1,6 +1,6 @@
-import Formalism.LocalToGlobal.CharacterGerms.FirstVanishingAt
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0026
 import Formalism.LocalToGlobal.CharacterGerms.PderivDoubleMultiplicationJacobian
-import Formalism.LocalToGlobal.CharacterGerms.RowTieCartAdd
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0019
 
 set_option autoImplicit false
 

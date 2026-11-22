@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.AevalEqZeroOfMemConeIdeal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsImageHeightUnique
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMultiHomogeneousRenameCastLE
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussianFirstCoordsMeasurePreserving
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0414
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0349
 
 set_option autoImplicit false
 

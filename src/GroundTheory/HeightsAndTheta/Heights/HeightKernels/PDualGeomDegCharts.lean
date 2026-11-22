@@ -1,9 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualGeomDegCharts
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsChartDensityIntegrable
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualPtsOfPlane
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualPtsOnPlane
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualStdMassAt
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0034
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0012
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0033
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

@@ -1,6 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TermCarrierStability.AdmissibleStableUnderFrameChange
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TermCarrierStability.MemSpanImageEquiv
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TermCarrierStability.Bundle0001
 
 noncomputable section
 

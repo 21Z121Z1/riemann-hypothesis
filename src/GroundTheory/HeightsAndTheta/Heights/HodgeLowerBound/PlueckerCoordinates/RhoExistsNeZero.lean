@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0005
 set_option maxSynthPendingDepth 1
 
 noncomputable section

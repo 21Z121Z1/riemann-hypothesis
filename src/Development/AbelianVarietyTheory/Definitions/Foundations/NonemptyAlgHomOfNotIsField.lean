@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.HermitianSpaceBaseLatticeEqFrameLattice
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemStabLocStdLatticeIffHtFinEqOne
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NotIsFieldAdicCompletionTensorOfSplit
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0318
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0040
 import ReciprocityTheory.Automorphisms.SplitCoeAlgebraMap
 
 noncomputable section

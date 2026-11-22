@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.ProfiniteCohomology.InflationRestriction
-import GroundTheory.ProfiniteCohomology.Factor
+import GroundTheory.ProfiniteCohomology.Bundle0002
 import GroundTheory.ProfiniteCohomology.CupProducts.Cocycles
 import GroundTheory.ProfiniteCohomology.ClassFormations.IsIsoCohomologyMapAlongResSubgroupOfHom
 set_option maxSynthPendingDepth 1

@@ -1,6 +1,5 @@
 import Mathlib
-import Formalism.HyperbolicPlaceProducts.Statement
-import Formalism.HyperbolicPlaceProducts.DetIndexProductHyperbolicInequality
+import Formalism.HyperbolicPlaceProducts.Bundle0001
 
 open Module Matrix
 open scoped BigOperators ComplexConjugate

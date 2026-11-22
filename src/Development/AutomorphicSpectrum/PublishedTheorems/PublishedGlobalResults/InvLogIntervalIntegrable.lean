@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.PublishedTheorems.PublishedGlobalResults.PrimesInProgressionsRelative
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.PrimesInProgressionsRelativeOfTzRat
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0012
 
 noncomputable section
 

@@ -1,8 +1,8 @@
 import Mathlib
 import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.DiscreteSeriesExhaustion.MatrixCoefficientDecay.InfinitesimalCharacterPaths.TensDecomp
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.PolynomialNilpotentPath
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.HasCharSub
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsEvalAtOfMem
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0071
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0255
 
 noncomputable section
 

@@ -1,6 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.SchurFock
-import Formalism.PeriodIntegrals.HwIrred
+import Formalism.PeriodIntegrals.Bundle0026
 
 noncomputable section
 

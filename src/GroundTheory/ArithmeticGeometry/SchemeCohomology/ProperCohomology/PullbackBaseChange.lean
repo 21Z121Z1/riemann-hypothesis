@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.ArithmeticGeometry.EtaleCompletion.PullbackAffine
+import GroundTheory.ArithmeticGeometry.EtaleCompletion.Bundle0002
 import GroundTheory.ArithmeticGeometry.EtaleCompletion.QcohZariski
 set_option maxSynthPendingDepth 1
 

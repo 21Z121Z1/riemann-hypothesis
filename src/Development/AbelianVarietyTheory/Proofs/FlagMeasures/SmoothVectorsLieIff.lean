@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LinMulti
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.GBasic
-import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ISmulOneMemUnitaryLie
+import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0001
 
 noncomputable section
 

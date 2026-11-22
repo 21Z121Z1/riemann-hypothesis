@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.SplitLineAlt
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsUnitAtOfValuation
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0796
 
 open NumberField IsDedekindDomain Formalism.L2.Host
 

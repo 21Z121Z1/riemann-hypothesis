@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.ProjectiveLattices.ThShort
-import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.ReflexNormIndexIdeal
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsMulMemOfMemSpan
+import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.Bundle0006
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0024
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsCoeEqSpanDetOfIntVecLe
 
 set_option autoImplicit false

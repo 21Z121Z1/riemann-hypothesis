@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.CovolumeCount
+import GroundTheory.HeightsAndTheta.Heights.Bundle0002
 
 namespace GroundTheory.Heights₂.Theta
 

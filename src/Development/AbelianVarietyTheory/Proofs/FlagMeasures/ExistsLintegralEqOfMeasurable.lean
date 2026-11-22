@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMapMulRightEqSmul
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0004
 
 open MeasureTheory
 open scoped Pointwise

@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteReal.WeilFull
-import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.RaisingLoweringOperators
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0020
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0018
 
 noncomputable section
 

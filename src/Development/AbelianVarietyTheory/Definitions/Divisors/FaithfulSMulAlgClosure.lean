@@ -1,11 +1,11 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.GlobalHeightBoundIffAtGoodPrimes
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0081
 import Development.AbelianVarietyTheory.Definitions.Divisors.PrismaticDieudonnePerfdIff
 import Development.AbelianVarietyTheory.Definitions.Divisors.TorsionTowersOfDivisibleGroup
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsUniqueIsWeilChar
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LevelLabelExtendsOfOrthogonalToExtended
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCycPerfd
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasChainW
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0193
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0599
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2822
 
 set_option autoImplicit false
 

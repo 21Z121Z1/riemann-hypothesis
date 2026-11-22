@@ -1,5 +1,5 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.LayerWeight
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.SchPhiOneApply
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.Bundle0004
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.Bundle0005
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.BochIneq
 
 noncomputable section

@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.UniformGaussModelConditionEquivalent
+import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.Bundle0005
 
 noncomputable section
 open scoped BigOperators

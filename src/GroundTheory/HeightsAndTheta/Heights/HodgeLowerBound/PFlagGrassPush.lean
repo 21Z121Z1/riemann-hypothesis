@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsFlagGrassSteps
-import GroundTheory.HeightsAndTheta.Heights.Intersections.PfAtZero
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0010
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0028
 set_option maxSynthPendingDepth 1
 
 noncomputable section

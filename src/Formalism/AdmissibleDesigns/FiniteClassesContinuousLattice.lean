@@ -1,5 +1,5 @@
 import Formalism.AdmissibleDesigns.NonemptyPl
-import Formalism.WeaklyAdmissibleFiltrations.CrystallineStableLifts.Galois
+import Formalism.WeaklyAdmissibleFiltrations.CrystallineStableLifts.Bundle0001
 
 variable [hT2Core : Fact ReciprocityTheory.ChartRestriction.T2.Core]
 

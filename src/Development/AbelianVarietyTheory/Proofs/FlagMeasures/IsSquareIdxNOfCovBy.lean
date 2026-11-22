@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.IsPrimitiveSub
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianLatticeDiscriminantOrderNeZeroUnimodula
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsLatticeLatIn
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0066
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0215
 
 open NumberField Module IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions.S.Lat GlobalTheory.Mass GlobalTheory.Mass.DiscOrder Formalism.HermitianLatticesTheory
 open scoped Classical

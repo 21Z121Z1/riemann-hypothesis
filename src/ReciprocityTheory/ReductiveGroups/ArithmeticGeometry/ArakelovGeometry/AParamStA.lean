@@ -1,7 +1,7 @@
 import Mathlib
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.JacChart
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.BaseChangeC
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.IntToRat
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0005
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0006
 import ReciprocityTheory.CommutativeAlgebra.PolynomialHeights.HeightAddRingKrullDimQuotientMvPolynomialField
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.IsSemipositiveOn
 

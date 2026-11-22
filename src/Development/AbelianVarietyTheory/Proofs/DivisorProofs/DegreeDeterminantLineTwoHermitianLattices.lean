@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameCoord
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1719
 import Formalism.LocalRingCardinality.CoeNeZeroOfNotMem
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.LcvBasis
 import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.IdxRules

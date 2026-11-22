@@ -1,4 +1,4 @@
-import Development.EtaleCohomology.KummerTheory.AdicLimPf
+import Development.EtaleCohomology.KummerTheory.Bundle0005
 
 noncomputable section
 open CategoryTheory GlobalTheory.EtC

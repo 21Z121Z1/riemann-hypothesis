@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.OfFreeParAlgIndep
-import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PFreeParAlgIndep
+import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Bundle0014
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Vertical

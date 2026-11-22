@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsHkIsogEtaleUnique
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FramedPointBaseChangeUniqueReflIff
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0445
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0025
 
 set_option autoImplicit false
 

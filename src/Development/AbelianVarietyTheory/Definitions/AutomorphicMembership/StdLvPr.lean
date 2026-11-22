@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice
-import Formalism.LocalToGlobal.HermitianForms.TiedTwSym
+import Formalism.LocalToGlobal.HermitianForms.Bundle0007
 import Formalism.LocalToGlobal.KernelLattices.FirstKernelLawReading
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FunKilled
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0075
 
 noncomputable section
 

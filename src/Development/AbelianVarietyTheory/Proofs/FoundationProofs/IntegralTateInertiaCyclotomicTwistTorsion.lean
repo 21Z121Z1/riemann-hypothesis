@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.EeProd
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0009
 import ReciprocityTheory.GaloisValuations.Global
 import ReciprocityTheory.NeutralLocalFields.LocalFieldComparison.LocalFieldAutomorphisms.Inertia
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.ExistsDvdQKPowSubOne
 import GroundTheory.PAdicHodge.AxLemma
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormSubOnePowTotient
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0062
 
 open NumberField IsDedekindDomain Formalism.ConjugateSelfDual ReciprocityTheory.Gal GlobalTheory.KZ GlobalTheory.Glue
 

@@ -1,9 +1,6 @@
 import Formalism.BehrendSets.BehrendVariance.TwoPowDvdPowTwoPowSubOne
-import Formalism.BehrendSets.BehrendVariance.TwoLeCastOfTwoLe
+import Formalism.BehrendSets.BehrendVariance.Bundle0001
 import Mathlib
-import Formalism.BehrendSets.BehrendVariance.MulAbsSubLt
-import Formalism.BehrendSets.BehrendVariance.ProbEqSumIte
-import Formalism.BehrendSets.BehrendVariance.Select
 
 namespace Formalism.BehrendSets.Final
 open Formalism.BehrendSets

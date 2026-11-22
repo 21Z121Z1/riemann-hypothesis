@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlagLevelCharacterEqPsiDivN
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0052
 
 noncomputable section
 

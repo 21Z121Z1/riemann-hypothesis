@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.GL3MeanSquares.RankMulPowThreeHalvesLeFourthPower
 import Formalism.LogVandermondeBounds.LogVandermondeProofs.CardStabilizerVector
-import Formalism.LogVandermondeBounds.LogVandermondeProofs.BlockDimensionIdentities
+import Formalism.LogVandermondeBounds.LogVandermondeProofs.Bundle0001
 
 namespace Formalism.HermitianLattices.GenusMassVolumes
 

@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.DiscreteSpectrumKFiniteDecomposition
 import Formalism.RealPlaceAnalysis.QuotientSettingHolds
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PhiCentreEigenfunctionDiscreteSeriesStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PsiRestrictionHolomorphicNearOneStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PsiEntriesRealAnalyticStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0180
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0235
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0227
 
 open MeasureTheory Matrix Filter Topology Formalism.MainNotions.S Formalism.REAL Formalism.QuantumDeterminants GlobalTheory.Count GlobalTheory.Dec
 open scoped InnerProductSpace ContDiff

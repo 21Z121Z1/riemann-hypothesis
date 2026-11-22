@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.CgeZeroIffIntegral
-import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.ProjKeepsLetter
+import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.Bundle0002
 import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.AddMemSupportOfMemSupportCoefOut
 import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.DigitPartMonomial
 

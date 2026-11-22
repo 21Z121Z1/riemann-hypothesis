@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.PolynomialIntegralityJets
+import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.Bundle0005
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpTieAlg
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsNormSubEqOne
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0002
 
 open NumberField MvPowerSeries
 

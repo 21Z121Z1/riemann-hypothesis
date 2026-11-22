@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.LatticeIntegralCoordinates
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPeriodPairIdealCurveLattice
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsFixedOfContract
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0237
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0236
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DatumCurveIntegralUnitDiscModel
 
 noncomputable section

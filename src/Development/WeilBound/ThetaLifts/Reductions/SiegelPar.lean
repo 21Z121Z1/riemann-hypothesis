@@ -2,8 +2,8 @@ import Development.WeilBound.ThetaLifts.Reductions.SiegelCore
 import Development.WeilBound.ThetaLifts.Reductions.SiegelAbs
 import Development.WeilBound.ThetaLifts.Reductions.SiegelParMod
 import Development.WeilBound.ThetaLifts.Reductions.SiegelGood
-import Development.WeilBound.ThetaLifts.FrameEstimates.LintegralLeOfCover
-import Development.WeilBound.ThetaLifts.FrameEstimates.LeHeightOfIsTorusElt
+import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0011
+import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0009
 
 set_option linter.unusedSectionVars false
 

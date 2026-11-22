@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClosureOperatorFacts
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0208
 
 noncomputable section
 

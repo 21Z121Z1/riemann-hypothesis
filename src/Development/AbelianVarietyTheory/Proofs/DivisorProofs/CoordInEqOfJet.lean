@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.JetAnalytic
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ZetaValueIdeals
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0003
 
 set_option autoImplicit false
 

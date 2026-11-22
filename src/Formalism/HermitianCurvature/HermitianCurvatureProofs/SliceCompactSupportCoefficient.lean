@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.OpApplyZeroNear
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0183
 
 open Matrix MeasureTheory Filter Topology
 open scoped ContDiff

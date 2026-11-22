@@ -1,7 +1,7 @@
-import Development.AutomorphicArithmetic.FrobeniusLocalisation.DiffDefs
-import Development.AutomorphicArithmetic.FrobeniusLocalisation.DiffMult
-import Development.AutomorphicArithmetic.FrobeniusLocalisation.MemRam
-import Development.AutomorphicArithmetic.FrobeniusLocalisation.DiscrK
+import Development.AutomorphicArithmetic.FrobeniusLocalisation.Bundle0001
+import Development.AutomorphicArithmetic.FrobeniusLocalisation.Bundle0008
+import Development.AutomorphicArithmetic.FrobeniusLocalisation.Bundle0006
+import Development.AutomorphicArithmetic.FrobeniusLocalisation.Bundle0002
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.InertiaGaloisSymmetry.KcDiff
 
 open UpperTheory.HF

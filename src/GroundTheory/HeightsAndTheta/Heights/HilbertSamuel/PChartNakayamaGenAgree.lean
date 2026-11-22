@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGenTwistGenerated
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGenSESStep
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0087
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

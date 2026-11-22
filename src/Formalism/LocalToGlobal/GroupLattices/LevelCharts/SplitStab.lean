@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.GroupLattices.LevelCharts.JoinForms
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bridge
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0009
 
 noncomputable section
 

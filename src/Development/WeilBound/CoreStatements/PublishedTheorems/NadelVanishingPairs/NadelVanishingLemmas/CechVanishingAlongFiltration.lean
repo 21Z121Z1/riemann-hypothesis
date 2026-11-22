@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsFlatLift
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechAndTotalDifferentialAdditiveSquareZeroStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTotalCochainOfDegreeSuccOfDifferentialsStatement
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0003
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0248
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0269
 
 set_option autoImplicit false
 

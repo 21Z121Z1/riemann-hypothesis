@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFockMap
-import Development.WeilBound.ThetaLifts.SchwartzMoments.SchwartzDqTendsto
-import Development.WeilBound.ThetaLifts.SchwartzMoments.NormIterComp
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1041
+import Development.WeilBound.ThetaLifts.SchwartzMoments.Bundle0002
+import Development.WeilBound.ThetaLifts.SchwartzMoments.Bundle0001
 
 noncomputable section
 

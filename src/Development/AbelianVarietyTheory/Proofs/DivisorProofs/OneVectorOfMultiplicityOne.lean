@@ -1,8 +1,8 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteReal.ConcretePkgSpec
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0023
 import Formalism.SharpRestriction.Divisibility.PrimeDegreeVariant
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.CuspidalInducedCharacter
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalIdempotentCharacters
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0015
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0691
 
 noncomputable section
 

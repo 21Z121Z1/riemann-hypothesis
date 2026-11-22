@@ -1,9 +1,9 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.FamilyUniformisationBasePointOrthogonalBis
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0032
 import Formalism.LocalToGlobal.ProjectiveLattices.ThShort
-import Formalism.LocalToGlobal.ProjectiveLattices.ThClassPins
-import Formalism.LocalToGlobal.ProjectiveLattices.CuspFormsFiniteDimensionalOf
-import Formalism.LocalToGlobal.ProjectiveLattices.NonnegIffOfLiesTotal
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0038
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0027
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0024
 
 set_option autoImplicit false
 

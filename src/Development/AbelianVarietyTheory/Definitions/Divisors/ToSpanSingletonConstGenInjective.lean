@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.FibreRankCompOfSurjective
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0006
 
 noncomputable section
 

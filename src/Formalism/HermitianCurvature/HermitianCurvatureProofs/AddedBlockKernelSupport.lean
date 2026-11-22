@@ -1,7 +1,7 @@
 import Formalism.HermitianCurvature.BlockKernelPropertiesOfSteps
-import Formalism.DoubleCosetMeasures.LowerUnipotentOrbits.IsIntOfLatOfLe
+import Formalism.DoubleCosetMeasures.LowerUnipotentOrbits.Bundle0001
 import Formalism.DoubleCosetMeasures.LowerUnipotentOrbits.LowUniMulVecELast
-import Formalism.DoubleCosetMeasures.LowerUnipotentOrbits.IsOpenIsIntSet
+import Formalism.DoubleCosetMeasures.LowerUnipotentOrbits.Bundle0002
 import Formalism.DoubleCosetMeasures.LowerUnipotentOrbits.MulInvBlockDiagApplySameBlock
 
 open Formalism.DoubleCosetMeasures Formalism.FourierDecayAlt.A5 Matrix

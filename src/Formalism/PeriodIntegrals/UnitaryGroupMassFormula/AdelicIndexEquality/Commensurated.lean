@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.AdIndexEq
+import Formalism.PeriodIntegrals.Bundle0027
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FiniteAdelicComparison.MemLocFrom
 
 noncomputable section

@@ -1,5 +1,5 @@
-import ReciprocityTheory.DualLattices.StThmAFull
-import ReciprocityTheory.DualLattices.VDetEqOneOfIntegral
+import ReciprocityTheory.DualLattices.Bundle0023
+import ReciprocityTheory.DualLattices.Bundle0008
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMaxLocLConjBound
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0782
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StrongMultiplicityOne
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RankinSelbergPartialLPoleAtOneConjStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0980
 
 noncomputable section
 

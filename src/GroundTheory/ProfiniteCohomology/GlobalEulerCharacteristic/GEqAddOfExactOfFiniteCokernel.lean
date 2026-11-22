@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.UnitsDefs
+import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.Bundle0002
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.ModNEquivOfSurjectiveApplyModNRep
 import GroundTheory.GlobalFields.HerbrandQuotients.SUnits
 set_option maxSynthPendingDepth 1

@@ -1,8 +1,7 @@
 import Formalism.LocalToGlobal.BesselHermitianTheta.AllTied
 import Formalism.LocalToGlobal.GlobalTheory.GL5.PClassDecomp
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SignatureExists
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SignatureConjugationInvariant
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IsInfEmbUnique
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0003
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0041
 
 noncomputable section
 

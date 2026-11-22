@@ -1,9 +1,8 @@
 import Mathlib
-import GroundTheory.LocalFields.ExtensionsOfDegree
-import GroundTheory.LocalFields.RamificationTameStructure
+import GroundTheory.LocalFields.Bundle0009
 import GroundTheory.LocalFields.MaximalUnramified
 import GroundTheory.LocalFields.SeparableClosure
-import GroundTheory.LocalFields.UnramifiedExistence
+import GroundTheory.LocalFields.Bundle0007
 import GroundTheory.LocalFields.Unramified
 
 noncomputable section

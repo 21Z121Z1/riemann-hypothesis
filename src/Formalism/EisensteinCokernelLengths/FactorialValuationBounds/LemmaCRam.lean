@@ -1,5 +1,5 @@
 import Formalism.EisensteinCokernelLengths.RationalTailBound
-import Formalism.EisensteinCokernelLengths.FactorialValuationBounds.GaussRam
+import Formalism.EisensteinCokernelLengths.FactorialValuationBounds.Bundle0001
 import Formalism.GaussValuationBounds.NokLemmaCVal
 
 namespace Formalism.ZetaNonvanishing.EisensteinGaussValuationBounds

@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.JacquetSubsetSums.JacquetSubsetSum
-import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.IwahoriSubgroup
-import Development.AbelianVarietyTheory.Counterexamples.DegenerateExamples.PremisesModel
+import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.Bundle0001
+import Development.AbelianVarietyTheory.Counterexamples.DegenerateExamples.Bundle0001
 
 noncomputable section
 

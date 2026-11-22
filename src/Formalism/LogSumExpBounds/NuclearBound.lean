@@ -1,4 +1,4 @@
-import Formalism.LogSumExpBounds.StatementD
+import Formalism.LogSumExpBounds.Bundle0001
 
 namespace Formalism.NuclearRankWeightBounds.D
 

@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjectiveCohomology.TwistingSheaf
-import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjectiveCohomology
+import GroundTheory.ArithmeticGeometry.SchemeCohomology.Bundle0007
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.CechNaturality.NaturalLeray
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.CechNaturality.Ordered
 set_option maxSynthPendingDepth 1

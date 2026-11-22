@@ -1,7 +1,6 @@
-import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.JArith
+import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.Bundle0003
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.OneEntryMem
-import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.SecondConstantOfTrianglesData
-import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.EqPOf
+import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.Bundle0001
 
 noncomputable section
 open NumberField Formalism.BasicNotions Classical

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteIndexOfGammaLe
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLevelOneSimpleZeroFormAtPoint
-import Development.AbelianVarietyTheory.Definitions.Foundations.EtaSixProductDifferentiable
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0169
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0003
 
 open UpperHalfPlane Filter GlobalTheory.OddFrame
 open ModularForm (E₄ E₆)

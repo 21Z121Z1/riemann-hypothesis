@@ -1,5 +1,5 @@
 import Development.WeilBound.RepresentationTheoryGL.EisensteinSeries.SiegelEisensteinContinuation.ConvGrOf
-import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.MulConjTransposeEqOneOfOrthonormal
+import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.Bundle0004
 
 noncomputable section
 

@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsArithVarOfBlockAlgebraic
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0012
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0095
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValuationCoordsComplexPoint
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsValuationSubringExtension
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPullFormsGeneric
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0003
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0099
 
 noncomputable section
 

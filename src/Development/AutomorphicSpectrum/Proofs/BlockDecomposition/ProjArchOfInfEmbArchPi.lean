@@ -1,8 +1,7 @@
 import Mathlib
 import Development.WeilBound.ThetaLifts.Reductions.SiegelCore
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsAdaptedMajorant
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0006
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsUnitaryCommuting
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EqDiagonalOfUpperTriangularOfUnitary
 
 set_option linter.unusedSectionVars false
 

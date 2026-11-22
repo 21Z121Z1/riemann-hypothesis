@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.PowerMatchingTraces.MatchCut
-import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.NormCharSplitAlt
+import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Bundle0007
 
 noncomputable section
 

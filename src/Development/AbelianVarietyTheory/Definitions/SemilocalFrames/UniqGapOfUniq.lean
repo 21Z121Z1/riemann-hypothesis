@@ -1,9 +1,9 @@
 import Mathlib
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.IsDSOfIsDG
 import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeLitG
-import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.SzHypFD
-import Formalism.PeriodIntegrals.BesselMapUniq
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.OnePlaceKF
+import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.Bundle0051
+import Formalism.PeriodIntegrals.Bundle0022
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0009
 
 open MeasureTheory Matrix
 open scoped InnerProductSpace ENNReal

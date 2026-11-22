@@ -1,8 +1,8 @@
 import Mathlib
-import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.FamilyFunctionalSpanDual
+import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.Bundle0020
 import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Imports
 import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
-import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.ImportsBisTer
+import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Bundle0003
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.IsDSOfIsDG
 
 namespace GlobalTheory

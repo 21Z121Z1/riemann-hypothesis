@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.GlobalFields.TateThesis.DegreeOnePrimes
+import GroundTheory.GlobalFields.TateThesis.Bundle0001
 import GroundTheory.GlobalFields.TateThesis.PrimeZetaPole
 import GroundTheory.GlobalFields.KummerTheory.Splitting
 

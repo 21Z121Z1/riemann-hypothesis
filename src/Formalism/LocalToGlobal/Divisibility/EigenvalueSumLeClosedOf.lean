@@ -1,17 +1,17 @@
 import Mathlib
 import Formalism.LocalToGlobal.Divisibility.NumericScaleExponentEqExtended
 import Formalism.LocalToGlobal.Divisibility.TwistedPlaceEtaSumLeExtended
-import Formalism.LocalToGlobal.Divisibility.ConstantGeTwentyEightAlt
-import Formalism.LocalToGlobal.Divisibility.SmallTies
-import Formalism.LocalToGlobal.GroupLattices.JointServices.VwResChar
+import Formalism.LocalToGlobal.Divisibility.Bundle0004
+import Formalism.LocalToGlobal.Divisibility.Bundle0003
+import Formalism.LocalToGlobal.GroupLattices.JointServices.Bundle0002
 import Formalism.LocalToGlobal.Divisibility.NumbersLemmas
 import Formalism.LocalToGlobal.Divisibility.NumbersLink
 import Formalism.LocalToGlobal.Divisibility.ZscOfNum
-import Formalism.SharpRestriction.ElevenLe
+import Formalism.SharpRestriction.Bundle0001
 import Formalism.LocalRingCardinality.DataParams
 import Formalism.SharpRestriction.Divisibility.SlopeExcess.ConstRankBaseLePolyFourth
 import Formalism.SharpRestriction.Divisibility.HookProducts.LwPNonneg
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.GZeroLogBound
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0032
 import Formalism.LocalToGlobal.Divisibility.DivisibilityConstruction.RBLam
 
 open Module NumberField IsDedekindDomain

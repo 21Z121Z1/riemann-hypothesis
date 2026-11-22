@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullRk
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IwasawaStdMaxParab
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0054
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0296
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0174
 
 open MeasureTheory ValuativeRel Matrix GlobalTheory.SplitFlip GlobalTheory.SplitWeil
 open scoped Matrix Topology

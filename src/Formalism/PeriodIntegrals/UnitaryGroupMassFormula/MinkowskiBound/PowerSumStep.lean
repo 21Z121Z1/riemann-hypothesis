@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.Minkowski
+import Formalism.PeriodIntegrals.Bundle0006
 
 namespace PI.Mk
 

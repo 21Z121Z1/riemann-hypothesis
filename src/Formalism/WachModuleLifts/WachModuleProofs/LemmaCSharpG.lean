@@ -1,4 +1,4 @@
-import Formalism.WachModuleLifts.Statement
+import Formalism.WachModuleLifts.Bundle0001
 
 open Finset PowerSeries
 

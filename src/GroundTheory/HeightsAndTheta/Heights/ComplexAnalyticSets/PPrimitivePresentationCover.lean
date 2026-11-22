@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StPrimitivePresentationCover
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSeparateWeierstrassDivision
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PevEqZeroOfPresentation
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0058
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0009
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0071
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.ComplexSets

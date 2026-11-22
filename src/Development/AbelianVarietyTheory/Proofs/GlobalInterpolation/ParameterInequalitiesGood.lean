@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LFunctionPositiveConductorFourEight
-import Formalism.GL3MeanSquares.PrimeCountAsymptoticInProgressions
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0002
+import Formalism.GL3MeanSquares.Bundle0001
 import Formalism.FrobeniusOrbits.HostCorollaries
-import Formalism.SharpRestriction.GlobalSchurBounds.MainIn
+import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0003
 import Formalism.SharpRestriction.GlobalSchurBounds.ZetaZeroFreeRegion
 open GlobalTheory.NT Formalism.MainNotions Formalism.MainNotions.GlobalTheoryTheory Formalism.BasicNotions NumberField IsDedekindDomain
 

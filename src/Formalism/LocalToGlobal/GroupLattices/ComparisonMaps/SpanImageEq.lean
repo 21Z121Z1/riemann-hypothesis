@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.ChainFirstChainKMem
+import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0002
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.MRatSpanRec
 
 noncomputable section

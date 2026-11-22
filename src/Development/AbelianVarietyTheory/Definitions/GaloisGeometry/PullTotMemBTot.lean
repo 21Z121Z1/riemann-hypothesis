@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.OfNatTrans
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FaceFaceApply
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0010
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.CoeEqAlgebraMapZeroEquiv
 
 set_option autoImplicit false

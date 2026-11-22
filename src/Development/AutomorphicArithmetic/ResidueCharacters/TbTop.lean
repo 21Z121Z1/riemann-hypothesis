@@ -1,10 +1,10 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.EmbeddingTypeJumps
-import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.CrysOnCond
+import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.Bundle0005
 import Formalism.LocalRingCardinality.SpanPowerMembership.NDLocE
-import Development.AutomorphicArithmetic.ResidueCharacters.LocNum
-import Development.AutomorphicArithmetic.ResidueCharacters.LocRes
-import Development.AutomorphicArithmetic.ResidueCharacters.LenLeTorsion
+import Development.AutomorphicArithmetic.ResidueCharacters.Bundle0002
+import Development.AutomorphicArithmetic.ResidueCharacters.Bundle0004
+import Development.AutomorphicArithmetic.ResidueCharacters.Bundle0005
 
 noncomputable section
 

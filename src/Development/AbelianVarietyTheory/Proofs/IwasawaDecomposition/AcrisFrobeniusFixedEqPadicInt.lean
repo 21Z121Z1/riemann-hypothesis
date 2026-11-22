@@ -2,11 +2,10 @@ import Mathlib
 import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 import Development.AbelianVarietyTheory.CrystallinePeriods.RingIface
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsCrisP
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Acris0TorsionFree
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsBdRPlusSectionOfTheta
-import Development.AbelianVarietyTheory.CrystallinePeriods.CrisMaps
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0059
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0061
+import Development.AbelianVarietyTheory.CrystallinePeriods.Bundle0001
 import Development.AbelianVarietyTheory.CrystallinePeriods.CrisMapsLoc
-import Development.AbelianVarietyTheory.CrystallinePeriods.RingBasics
 
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc GlobalTheory.MemLoc
 open scoped Formalism.Per

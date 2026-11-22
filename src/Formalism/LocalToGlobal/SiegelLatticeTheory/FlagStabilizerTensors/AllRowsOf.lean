@@ -1,11 +1,11 @@
 import Mathlib
-import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RowDict
+import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.Bundle0004
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.RowDictPf
 import Formalism.SharpRestriction.LevelLetterCocycles.StatementFamilies.ArithmeticCylinders
 import Formalism.SharpRestriction.LevelLetterCocycles.CylinderCountFamily
 import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.JCountP
 import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.BunExists
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsUniUpMul
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0757
 
 noncomputable section
 

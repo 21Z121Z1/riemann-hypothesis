@@ -1,5 +1,5 @@
-import Formalism.EllipticTorsion.FormalGroupPointsParametrisation
-import Formalism.EllipticTorsion.EllipticTorsionProofs.WSeries
+import Formalism.EllipticTorsion.Bundle0004
+import Formalism.EllipticTorsion.EllipticTorsionProofs.Bundle0001
 
 open PowerSeries
 

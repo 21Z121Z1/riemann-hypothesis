@@ -1,9 +1,9 @@
 import Mathlib
-import Formalism.QuotientMetricDivisors.ClassSumDualLe
+import Formalism.QuotientMetricDivisors.Bundle0001
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.RatHerm
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.IdxChange
-import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.LocBasis
-import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ReductionLemmaFirst
+import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0001
+import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0002
 import Lemmata.HermitianVanishing.KeyZero
 
 open Module NumberField IsDedekindDomain

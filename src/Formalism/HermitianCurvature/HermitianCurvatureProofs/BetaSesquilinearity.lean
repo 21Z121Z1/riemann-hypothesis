@@ -1,7 +1,6 @@
 import Formalism.HermitianCurvature.StatementB
-import Formalism.FormalDegreeBessel.FinalG
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CartanInvolutionConjTransposeMul
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ComplexifiedDerivativeCommutator
+import Formalism.FormalDegreeBessel.Bundle0002
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0002
 
 open Matrix MeasureTheory Filter Topology
 open scoped ComplexConjugate ENNReal

@@ -1,8 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverAct
 import ReciprocityTheory.Automorphisms.SplitCoeAlgebraMap
-import ReciprocityTheory.Automorphisms.PlaceA
-import ReciprocityTheory.Automorphisms.InstMainA
+import ReciprocityTheory.Automorphisms.Bundle0001
 import Formalism.LocalRingCardinality.SpanPowerMembership.Adelic
 import Formalism.FrobeniusOrbits.RealSubfieldLeCompositum
 

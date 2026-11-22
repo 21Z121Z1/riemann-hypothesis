@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.GTDefs
+import Formalism.PeriodIntegrals.Bundle0027
 import Formalism.GradedWeylDivisibility.DualWeylDominanceOf
 
 noncomputable section

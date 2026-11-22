@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IsometryDeterminant.AlgebraMapMemCI
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IsometryDeterminant.Bundle0001
 
 noncomputable section
 

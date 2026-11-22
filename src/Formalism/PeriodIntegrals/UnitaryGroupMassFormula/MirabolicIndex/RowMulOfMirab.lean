@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.MirabIndex
+import Formalism.PeriodIntegrals.Bundle0007
 
 namespace PI.MirabolicIndex₂
 

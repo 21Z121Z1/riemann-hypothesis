@@ -1,0 +1,27 @@
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0057
+import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Imports
+import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
+import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Bundle0001
+import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0002
+import Formalism.HermitianCurvature.Bundle0007
+
+-- bundled from CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.BesselSubgroupParameterMeasurePreservingImports
+section
+
+end
+
+-- bundled from CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.BetaInfEqIntegralOfIntegrableCoefficientImports
+section
+
+end
+
+-- bundled from CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.ExistsLieUnitaryElementSimpleRootImports
+section
+
+end
+
+-- bundled from CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.ImportsBisTer
+section
+
+end
+

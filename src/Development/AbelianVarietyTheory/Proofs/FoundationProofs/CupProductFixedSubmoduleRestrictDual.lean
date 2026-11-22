@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.FinalTheorems
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UnramifiedH1CardInvariantsStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistedDualEvalBidualApply
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardKerMulCardEq
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0386
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0275
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0072
 
 noncomputable section
 

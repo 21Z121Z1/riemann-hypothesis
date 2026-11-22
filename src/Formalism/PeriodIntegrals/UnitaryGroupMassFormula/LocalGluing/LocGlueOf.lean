@@ -1,6 +1,4 @@
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalGluing.MemOfProjEqZero
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalGluing.RieszRepresentationHolds
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalGluing.ExistsIntegralMultiple
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalGluing.Bundle0001
 
 namespace PI.LocHerm.Glue
 

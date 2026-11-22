@@ -1,4 +1,4 @@
-import Formalism.HarderNarasimhan.DegSupermodZ
+import Formalism.HarderNarasimhan.Bundle0001
 import Formalism.LatticeSlopes.ExistsSaturatedSlopeEqMuMax
 
 open Module Submodule

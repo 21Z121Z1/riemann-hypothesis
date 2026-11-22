@@ -1,4 +1,4 @@
-import Development.EtaleCohomology.TateTwists.EtaleKInjectiveExtensionAlongQuasiIsoFromSingle
+import Development.EtaleCohomology.TateTwists.Bundle0008
 
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC
 

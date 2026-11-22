@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.InertKernelTheory.StatementBe
-import Formalism.LocalToGlobal.InertKernelTheory.DefsSigma
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0005
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0002
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.FWExist
-import Formalism.LocalToGlobal.ProjectiveLattices.HeckeJ
-import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.RealPoints
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0025
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0029
 
 set_option autoImplicit false
 

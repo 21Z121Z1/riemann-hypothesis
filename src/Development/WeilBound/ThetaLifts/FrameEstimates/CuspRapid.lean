@@ -1,15 +1,11 @@
 import Development.WeilBound.ThetaLifts.FrameEstimates.WeilConv
-import Development.WeilBound.ThetaLifts.FrameEstimates.OneMemLines
-import Development.WeilBound.ThetaLifts.FrameEstimates.DomContinuous
-import Development.WeilBound.ThetaLifts.FrameEstimates.IInvOfParts
-import Development.WeilBound.ThetaLifts.FrameEstimates.SchrAddPt
-import Development.WeilBound.ThetaLifts.FrameEstimates.UMGLin
-import Development.WeilBound.ThetaLifts.FrameEstimates.UMGSmooth
-import Development.WeilBound.ThetaLifts.FrameEstimates.LinDer
-import Development.WeilBound.ThetaLifts.FrameEstimates.LineGen
-import Development.WeilBound.ThetaLifts.FrameEstimates.LineEx
+import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0008
+import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0013
+import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0012
+import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0009
+import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0010
+import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0011
 import Development.WeilBound.ThetaLifts.FrameEstimates.CuspRapidOf
-import Development.WeilBound.ThetaLifts.FrameEstimates.SigRapid
 
 noncomputable section
 

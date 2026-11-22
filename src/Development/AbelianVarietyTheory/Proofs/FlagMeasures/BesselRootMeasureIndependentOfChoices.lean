@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.SharpRestriction.CuspSpanNormBounds.NormalizedLocalScale
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RootMeasureTransportDoubleCoset
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0146
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0004
 
 noncomputable section
 

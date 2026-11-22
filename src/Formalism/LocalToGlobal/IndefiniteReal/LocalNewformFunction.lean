@@ -1,5 +1,4 @@
-import Formalism.LocalToGlobal.BesselHermitianTheta.TiedKfin
-import Formalism.LocalToGlobal.BesselHermitianTheta.TiedWeilUnr
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0004
 
 noncomputable section
 

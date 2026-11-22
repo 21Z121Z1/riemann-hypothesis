@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CartanAntitone
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SubsingletonJacquetOfPerm
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CentralExponentBoundOver
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0016
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0036
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0037
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.UnitaryAdmissibleMatrixCoefficient
 
 open GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.SplitWeil ValuativeRel Filter Topology

@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsPairConeAlg
-import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PGenericProjClosureDim
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0041
+import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0046
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.NumbersDVR

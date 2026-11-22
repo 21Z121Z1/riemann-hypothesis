@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.PAdicHodge.SlopeDescentBounded
-import GroundTheory.PAdicHodge.ExtRobbaFixedBridge
-import GroundTheory.PAdicHodge.ExtRobbaFixedUnif
+import GroundTheory.PAdicHodge.Bundle0008
+import GroundTheory.PAdicHodge.Bundle0009
+import GroundTheory.PAdicHodge.Bundle0005
 set_option maxSynthPendingDepth 1
 
 noncomputable section

@@ -1,10 +1,9 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.Assembly
-import GroundTheory.HeightsAndTheta.Heights.ChowForms.PIncIdealBelow
-import GroundTheory.HeightsAndTheta.Heights.ChowForms.PChartLocDomain
+import GroundTheory.HeightsAndTheta.Heights.ChowForms.Bundle0006
+import GroundTheory.HeightsAndTheta.Heights.ChowForms.Bundle0007
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.PChartKernel
-import GroundTheory.HeightsAndTheta.Heights.ChowForms.PChartIncDomain
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsChartNormSep
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0021
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

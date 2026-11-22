@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemIntMat
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LatticeModelVacuumTranslateClassesIndependentStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0125
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0148
 
 noncomputable section
 

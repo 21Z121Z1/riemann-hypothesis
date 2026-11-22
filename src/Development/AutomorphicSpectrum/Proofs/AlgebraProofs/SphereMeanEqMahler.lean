@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.RealCubicMeans.LogMeanShares.LogMeanStatements.HSClaim
+import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.RealCubicMeans.LogMeanShares.LogMeanStatements.Bundle0001
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.OnbMat
 import Development.AutomorphicSpectrum.Statements.MetricStatements.RankBound
 

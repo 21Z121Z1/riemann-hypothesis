@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.LocalToGlobal.Columns.FiniteSumNonzeroLargeDepth
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PredMemGamRanks
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.RationalFractionsRepresentPrimeNormQuotient
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExpNegOneLtOne
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IntegralDivUniformizerOfRedZero
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0063
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0072
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0066
 
 noncomputable section
 

@@ -1,4 +1,4 @@
-import Formalism.TranslateCocycles.StatementHC
+import Formalism.TranslateCocycles.Bundle0001
 
 namespace Formalism.CG
 

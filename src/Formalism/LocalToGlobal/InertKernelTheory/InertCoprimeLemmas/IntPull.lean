@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.InertKernelTheory.DefsInt
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0007
 
 noncomputable section
 

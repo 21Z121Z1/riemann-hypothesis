@@ -1,8 +1,8 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.UnfDefs
-import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.BesPerSt
+import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.Bundle0003
+import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.Bundle0002
 import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
-import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
 
 noncomputable section
 

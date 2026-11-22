@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.SplitPairOfGen
-import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.RecursiveLatticeMembership.MemLamOfIff
+import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.RecursiveLatticeMembership.Bundle0001
 
 namespace Formalism.L2.PairingIndexBounds.Eq.SqG
 

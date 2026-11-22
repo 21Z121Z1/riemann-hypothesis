@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GlobalUnitaryForms.HodgeTateFromSandwich
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.UJClassFin
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0030
 
 noncomputable section
 

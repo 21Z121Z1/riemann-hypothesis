@@ -1,5 +1,5 @@
-import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.DiscreteGL2
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SubsingletonRankZero
+import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.Bundle0002
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0011
 
 noncomputable section
 

@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMixModelB
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAwayUnitOfPowEqOne
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1965
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2138
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiagonalBlockDetBlockTriangular
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DefiniteThetaLiftLocalVector
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DependenceFixed

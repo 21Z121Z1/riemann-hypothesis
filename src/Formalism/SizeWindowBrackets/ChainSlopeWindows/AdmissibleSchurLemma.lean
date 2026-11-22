@@ -1,8 +1,8 @@
 import Formalism.SizeWindowBrackets.SecondKindBucket
 import Formalism.LogFactorialBounds.LogFactorialProofs.PrimeSum
-import Formalism.RankGapBounds.RankGapProofs.RankGapDecayHypothesis
+import Formalism.RankGapBounds.RankGapProofs.Bundle0002
 import Formalism.RankGapBounds.RankGapProofs.PmModulusFacts
-import Formalism.RankGapBounds.RankGapProofs.FourNotDvdOddSqAddOne
+import Formalism.RankGapBounds.RankGapProofs.Bundle0001
 
 namespace Formalism.LFunctionChainParameters.DeficitSplitLemmas
 

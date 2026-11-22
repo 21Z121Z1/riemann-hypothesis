@@ -1,4 +1,4 @@
-import Formalism.CyclotomicNorms.StatementI
+import Formalism.CyclotomicNorms.Bundle0001
 import Formalism.GaloisIrreducibility.NoSolvableTransitive
 
 open Finset

@@ -1,7 +1,7 @@
-import ReciprocityTheory.DualLattices.EigenQuotientSmithStatement
+import ReciprocityTheory.DualLattices.Bundle0024
 import ReciprocityTheory.DualLattices.PowMemCarrier
-import ReciprocityTheory.DualLattices.SumValCoord
-import ReciprocityTheory.DualLattices.VDetEqOneOfIntegral
+import ReciprocityTheory.DualLattices.Bundle0017
+import ReciprocityTheory.DualLattices.Bundle0008
 
 noncomputable section
 

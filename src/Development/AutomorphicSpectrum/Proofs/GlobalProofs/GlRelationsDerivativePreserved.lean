@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DiscreteSpectrumOfResidual
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CapelliPolynomialCoefficientsIdeal
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuantumDeterminantPolynomialCoefficients
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CapelliOperatorsCommute
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CapelliLeviFactorizationSum
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0056
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0380
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0385
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0424
 
 open Polynomial
 

@@ -1,4 +1,4 @@
-import Development.EtaleCohomology.EtaleSheaves.EtaleBaseChangeFractionFieldIndEtaleOverPolynomi
+import Development.EtaleCohomology.EtaleSheaves.Bundle0004
 import Mathlib.Algebra.Category.Ring.FilteredColimits
 
 noncomputable section

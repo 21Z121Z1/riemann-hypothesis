@@ -1,4 +1,4 @@
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BaseChangeSpehOfDiscreteSeries
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0732
 
 noncomputable section
 

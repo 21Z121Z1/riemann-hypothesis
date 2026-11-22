@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.NotIsCompactUnivFv
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitNormOne
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.HermitianFormFiniteZerosOnLineCmExt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquaringOpenAtOneOfCompleteTwoNeZero
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0787
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0014
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0307
 
 noncomputable section
 

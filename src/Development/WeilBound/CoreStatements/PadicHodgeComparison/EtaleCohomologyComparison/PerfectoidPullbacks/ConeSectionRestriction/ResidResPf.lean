@@ -1,6 +1,6 @@
 import Mathlib
-import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.SeamDefs
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LaurentPartialDerivationUnique
+import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.Bundle0001
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0017
 
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false

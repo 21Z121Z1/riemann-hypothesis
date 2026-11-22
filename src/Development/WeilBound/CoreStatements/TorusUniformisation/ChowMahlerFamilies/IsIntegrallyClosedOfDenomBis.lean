@@ -1,12 +1,12 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsLatFamilyCongr
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PointHTOfFarguesHodgeTateStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionPointsDefinedGenericStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeTateFreeIntegralModelsStatement
-import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatPar
-import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatLat
-import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatPol
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ArithVarietyCoordIdealStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0236
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0191
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0177
+import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0063
+import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0028
+import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0058
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0072
 open AlgebraicGeometry CategoryTheory NumberField MvPolynomial ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Num GlobalTheory.CompanionTheory.Ar.Top
 open GroundTheory.Heights₂.Heights.NumbersDVR (pointIdeal segreVec IsFlagFrame IsFlagPair SameGenericFibre IsModelOver divCycle)
 open GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.NumbersDVR.Bundles (mseg fnField)

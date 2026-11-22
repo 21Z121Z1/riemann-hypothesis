@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsProbabilityMeasureMuPart
 import Formalism.MeanHeightDescent.DivisionInequalityWithCovolume
 import Formalism.MeanHeightDescent.CovolumeFullAssemblyWeighted
-import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.DeterminantCauchySchwarz
+import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0001
 import Formalism.MeanHeightDescent.AverageDegreeBounds.GoodBadCut
 
 open NumberField GlobalTheory.AllWt Module TensorProduct Matrix

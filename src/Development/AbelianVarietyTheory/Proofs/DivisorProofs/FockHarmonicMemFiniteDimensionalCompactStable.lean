@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockHarmonicsGradedCompactStable
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0638
 
 noncomputable section
 

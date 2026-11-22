@@ -1,4 +1,4 @@
-import Formalism.EllipticTorsion.JetsCube
+import Formalism.EllipticTorsion.Bundle0003
 import Formalism.FormalGroupLog.FormalGroupLogProofs.ConstantCoeffSubstOfZero
 
 universe u

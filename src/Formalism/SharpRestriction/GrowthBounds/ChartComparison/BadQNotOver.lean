@@ -1,6 +1,6 @@
 import Formalism.SharpRestriction.GrowthBounds.ChartComparison.StepIn
-import Formalism.LocalToGlobal.HermitianForms.TiedTwSym
-import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TiePtOneRec
+import Formalism.LocalToGlobal.HermitianForms.Bundle0007
+import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0004
 
 noncomputable section
 

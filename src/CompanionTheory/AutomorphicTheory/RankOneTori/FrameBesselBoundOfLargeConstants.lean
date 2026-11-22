@@ -2,8 +2,8 @@ import CompanionTheory.AutomorphicTheory.RankOneTori.Factor
 import CompanionTheory.AutomorphicTheory.RankOneTori.BeRankScale
 import CompanionTheory.AutomorphicTheory.RankOneTori.NzTranslate
 import CompanionTheory.AutomorphicTheory.RankOneTori.KDense
-import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.OneBesselTor
-import Formalism.SharpRestriction.CuspSpanNormBounds.KFinOfLowUnitH
+import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.Bundle0014
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0020
 
 open MeasureTheory Matrix Formalism.QuantumDeterminants Formalism.MainNotions.S Formalism.MainNotions.S.Pv.AmpDDPf Formalism.FourierDecayAlt Formalism.MainNotions.FrameBoundFromBesselTorus Formalism.L2.SG.Pf.OBT Formalism.BasicNotions
 open scoped ENNReal InnerProductSpace

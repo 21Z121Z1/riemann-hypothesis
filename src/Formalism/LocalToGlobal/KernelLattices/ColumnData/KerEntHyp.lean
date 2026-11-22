@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.SharpRestriction.GlobalSchurBounds.GL3Columns
 import Formalism.LocalToGlobal.KernelLattices.FirstKernelLawReading
-import Formalism.LocalRingCardinality.SpanPowerMembership.EntPlNonempty
+import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0010
 
 open NumberField Formalism.BasicNotions Classical
 

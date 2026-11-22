@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeCountingBound.SepDefs
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeSizeContinuity.GramLowOf
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeCountingBound.Bundle0001
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeSizeContinuity.Bundle0001
 
 noncomputable section
 

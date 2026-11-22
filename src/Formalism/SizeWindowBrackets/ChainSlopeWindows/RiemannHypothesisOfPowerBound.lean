@@ -1,6 +1,6 @@
 import Formalism.SizeWindowBrackets.PowerBoundGivesRiemannHypothesis
 import Formalism.ZetaNonvanishing.ZetaLandau
-import Formalism.ZetaNonvanishing.RHofHalfPlane
+import Formalism.ZetaNonvanishing.Bundle0002
 
 namespace Formalism.LFunctionChainParameters.ConditionalMainTheorem
 

@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.Columns.ChainLawPhiA
-import Formalism.LocalToGlobal.Columns.OcbTIntOfStab
+import Formalism.LocalToGlobal.Columns.Bundle0047
 import Formalism.LocalToGlobal.Columns.FirstUnfoldingEqZeroOfNotIntegral
 
 open NumberField IsDedekindDomain Module

@@ -1,8 +1,8 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.LocalSystemQuotients.Functor
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompareQuotientBijectiveStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0347
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.LocalSystemQuotients.BijCov
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PullEqOfNatTransStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0340
 
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false

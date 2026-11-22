@@ -1,4 +1,4 @@
-import Formalism.PeriodIntegrals.AmpRoot
+import Formalism.PeriodIntegrals.Bundle0029
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RootSubgroupJacobian.SUpPowEqZero
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RootSubgroupJacobian.BlkLt
 

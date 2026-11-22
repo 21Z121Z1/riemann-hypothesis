@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.StandardFourie
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.MultAddMultConjugate
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsPowLeHalfPart
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.GeometricLiftsOfFrames
-import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.HarmAMemSpanShort
+import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0015
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.NoCommonZeroIffOfSec
 
 set_option autoImplicit false

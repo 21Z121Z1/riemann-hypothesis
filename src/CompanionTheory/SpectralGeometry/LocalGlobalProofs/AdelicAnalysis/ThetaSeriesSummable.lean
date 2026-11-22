@@ -1,8 +1,8 @@
 import Mathlib
 import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.CountData
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.FiniteAdeleTopologyStatement
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SummableGaussianCoset
-import ReciprocityTheory.ThetaSummability.TailSumEstimates.LatSumPi
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0058
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0005
+import ReciprocityTheory.ThetaSummability.TailSumEstimates.Bundle0001
 open NumberField IsDedekindDomain MeasureTheory Matrix Topology GlobalTheory.CompanionTheory.SW.Core
 open scoped ENNReal NNReal MatrixGroups
 

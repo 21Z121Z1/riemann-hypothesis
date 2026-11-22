@@ -1,12 +1,12 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReindexDblIncM
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LagrInt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfPartFPlaceIdem
-import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Periodic
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1613
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1637
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1117
+import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0010
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.InvHerm
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.LeviGLInvVal
-import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.OneAddPow
-import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.MfacInvMul
+import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0009
+import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0016
 open scoped TensorProduct Matrix
 open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes MeasureTheory
 open GlobalTheory.WeilM GlobalTheory.LFun GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels

@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.ExistsOrthonormalOfLinearIndependent
-import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.LinearIndependentRealOfIntOfDiscrete
+import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.Bundle0003
 
 open scoped InnerProductSpace
 open Module Submodule Matrix

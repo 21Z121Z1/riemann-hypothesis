@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HermitianFormalDegree.VUnitInvVal
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJmuDegG
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0304
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.FdCons
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.TransportInt
 import Development.WeilBound.HeckeVectors.HeckeDoubleCosets.HeckeCoefficientDegrees.NormDeg

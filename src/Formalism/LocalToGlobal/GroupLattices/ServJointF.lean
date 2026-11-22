@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.GroupLattices.JointServices.ValIntNonneg
+import Formalism.LocalToGlobal.GroupLattices.JointServices.Bundle0001
 
 open Module NumberField IsDedekindDomain
 open Formalism.BasicNotions Formalism.BasicNotions.DV Formalism.MainNotions.G Formalism.MainNotions.WeilJacquetShalikaLaw Formalism.L2.DIV Formalism.L2.Indef

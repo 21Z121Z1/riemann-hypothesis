@@ -1,6 +1,6 @@
 import Mathlib
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SemiabelianSchemes.Biextensions.CubicalExtendsSt
-import Development.AbelianVarietyTheory.BlockTheory.AbelianSchemeLaw.TrivialBiextension
+import Development.AbelianVarietyTheory.BlockTheory.AbelianSchemeLaw.Bundle0001
 
 noncomputable section
 

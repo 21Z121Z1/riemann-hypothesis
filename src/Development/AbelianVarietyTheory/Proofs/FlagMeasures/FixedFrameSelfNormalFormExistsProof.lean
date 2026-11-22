@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.RowsMeanC
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryHostFieldArithmeticConditionsProofStatement
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0013
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0323
 
 noncomputable section
 open scoped Classical

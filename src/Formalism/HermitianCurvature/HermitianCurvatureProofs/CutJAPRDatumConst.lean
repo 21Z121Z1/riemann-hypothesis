@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAPolyRadialCut
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0109
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.TheSectionStab
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJASSnGeomAtGq
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAPRhoFrameLoc

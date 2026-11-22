@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.LatticeGeometry.LevPrPrime
+import Formalism.LocalToGlobal.LatticeGeometry.Bundle0003
 import Formalism.LocalToGlobal.LatticeGeometry.OperatorNormFibers.FormData
 
 noncomputable section

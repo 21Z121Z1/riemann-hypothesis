@@ -1,9 +1,8 @@
 import Formalism.LocalToGlobal.CharacterGerms.CharacteristicFromRanks
-import ReciprocityTheory.DualLattices.LengthDegreeAbelianVariety
-import ReciprocityTheory.DualLattices.U10
-import ReciprocityTheory.DualLattices.KilledGen
-import ReciprocityTheory.DualLattices.IdemGen
-import ReciprocityTheory.DualLattices.LenEx
+import ReciprocityTheory.DualLattices.Bundle0033
+import ReciprocityTheory.DualLattices.Bundle0034
+import ReciprocityTheory.DualLattices.Bundle0020
+import ReciprocityTheory.DualLattices.Bundle0021
 import Formalism.SharpRestriction.GrowthBounds.FittingIdeal.DetMulMemFitt0
 
 noncomputable section

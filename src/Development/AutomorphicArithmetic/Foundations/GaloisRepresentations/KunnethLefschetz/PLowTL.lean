@@ -1,16 +1,14 @@
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.KunnethLefschetz.BasisOne
-import Development.EtaleCohomology.EtaleTrace.TorsionH0PointOfTwistCoverCocycle
-import Development.EtaleCohomology.EtaleTrace.PtCoverPf
-import Development.EtaleCohomology.EtaleTrace.TwZeroPfSplit
-import Development.EtaleCohomology.EtaleTrace.PrimSplitPf
-import Development.EtaleCohomology.EtaleTrace.CocEqPf
-import Development.EtaleCohomology.EtaleTrace.EtaleTateTwistSectionConstantOnPointsOfConnected
-import Development.EtaleCohomology.EtaleTrace.PtCovPf
+import Development.EtaleCohomology.EtaleTrace.Bundle0007
+import Development.EtaleCohomology.EtaleTrace.Bundle0008
+import Development.EtaleCohomology.EtaleTrace.Bundle0009
+import Development.EtaleCohomology.EtaleTrace.Bundle0010
+import Development.EtaleCohomology.EtaleTrace.Bundle0005
 import Development.EtaleCohomology.EtaleTrace.TateTwistSectionConstantOnPointsOfTwLocPtCov
-import Development.EtaleCohomology.TateTwists.TwLocPfR
-import Development.EtaleCohomology.TateTwists.TwSecLocPfZarR
-import Development.EtaleCohomology.TateTwists.AlgPowPfR
-import Development.EtaleCohomology.TateTwists.TwTorsPfR
+import Development.EtaleCohomology.TateTwists.Bundle0020
+import Development.EtaleCohomology.TateTwists.Bundle0030
+import Development.EtaleCohomology.TateTwists.Bundle0031
+import Development.EtaleCohomology.TateTwists.Bundle0028
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry GlobalTheory.EtC LateralTheory.EtaleTrace CochainComplex.HomComplex

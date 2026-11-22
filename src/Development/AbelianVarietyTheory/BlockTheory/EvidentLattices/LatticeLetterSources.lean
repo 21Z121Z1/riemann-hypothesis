@@ -2,9 +2,9 @@ import Mathlib
 import Formalism.LocalToGlobal.ProjectiveLattices.RosatiLatticeNorms.LamObj
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 import Formalism.LocalToGlobal.ProjectiveLattices.RosatiLatticeNorms.LinkFD
-import Formalism.LocalToGlobal.ProjectiveLattices.XcLat
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0035
 import Formalism.LocalToGlobal.ProjectiveLattices.IsCombAt
-import Formalism.LocalToGlobal.ProjectiveLattices.VAtVNeBot
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
 import Formalism.LocalToGlobal.ProjectiveLattices.PetersonNormSubspace
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.PullCub
 

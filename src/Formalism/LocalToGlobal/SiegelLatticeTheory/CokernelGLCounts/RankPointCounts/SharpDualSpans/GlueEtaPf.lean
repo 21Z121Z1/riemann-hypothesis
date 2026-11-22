@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.LsDatumAGlueCut
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.LocGlue
+import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.Bundle0017
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0017
 
 noncomputable section
 

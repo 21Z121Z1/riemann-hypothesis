@@ -1,8 +1,8 @@
 import Formalism.LocalToGlobal.InertKernelTheory.DefsRepLt
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepFrame
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepTwLat
-import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepAsm
-import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepScal
+import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.Bundle0005
+import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.Bundle0004
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepDataRec
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepTrace
 

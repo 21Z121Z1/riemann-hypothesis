@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.UnipotentAdelicQuotients.ThmBInSatake
+import Formalism.UnipotentAdelicQuotients.Bundle0002
 import GroundTheory.IdeleRoots.TorusPowers.SatakeBoundGroup
 set_option maxSynthPendingDepth 1
 

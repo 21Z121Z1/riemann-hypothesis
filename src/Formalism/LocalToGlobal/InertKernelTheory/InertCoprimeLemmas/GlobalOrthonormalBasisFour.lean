@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.InertKernelTheory.DefsMMOnb
-import Formalism.LocalToGlobal.GlobalTheory.GL3.IsometryLinkageTrivialLevel
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0009
+import Formalism.LocalToGlobal.GlobalTheory.GL3.Bundle0002
 
 noncomputable section
 open scoped BigOperators

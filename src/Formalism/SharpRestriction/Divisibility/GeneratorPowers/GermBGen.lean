@@ -1,6 +1,6 @@
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ValCalc
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.LBLocal
-import Formalism.LocalToGlobal.ProjectiveLattices.SubConstMemOrig
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0002
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0004
 
 set_option autoImplicit false
 

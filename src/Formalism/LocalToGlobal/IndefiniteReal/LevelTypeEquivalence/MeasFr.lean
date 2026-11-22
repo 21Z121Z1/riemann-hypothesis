@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.LevelA
+import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0014
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.MeasUpq
 
 noncomputable section

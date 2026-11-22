@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianAmpleAcyclic
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AmpleLineBundleRelativelyAcyclic
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0028
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1679
 import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.ExistsUniqueEqConstMulEllTheta
 
 noncomputable section

@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseMatApply
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0310
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicIsNonarchimedeanLocalField
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsFinsetEqSumIndicatorOfPeriodic
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0011
 import Development.AbelianVarietyTheory.Definitions.Divisors.T2SpaceGeneralLinearGroup
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MeasurePreservingPiCurry
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0543
 
 open MeasureTheory GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.SplitWeil GlobalTheory.TypeTwo GlobalTheory.TypeTwo.FullRank ValuativeRel Matrix
 open scoped Topology

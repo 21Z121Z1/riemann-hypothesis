@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.ReductionFinite
 import GroundTheory.AutomorphicForms.ReductionIwasawa
-import GroundTheory.AutomorphicForms.ReductionBlock
+import GroundTheory.AutomorphicForms.Bundle0004
 import GroundTheory.AutomorphicForms.ReductionDirichlet
 
 open NumberField IsDedekindDomain Topology Filter Set Matrix

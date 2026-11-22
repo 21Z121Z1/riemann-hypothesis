@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsFibreNormDehomRoots
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsPullFormsGeneric
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsPullSectionIntegral
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsCharpolyRootLift
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0096
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0092
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0093
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0090
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

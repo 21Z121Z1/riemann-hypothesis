@@ -1,11 +1,11 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.BlochKatoPhases
-import Formalism.LocalRingCardinality.DataNChTie
-import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.LatticeConditions
-import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.BlockComplementLattice
-import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.TwistedTriples
+import Formalism.LocalRingCardinality.Bundle0002
+import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.Bundle0009
+import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0011
+import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.Bundle0010
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIsJumpMultiset
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.T2SpaceCoefficientRing
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0399
 
 noncomputable section
 

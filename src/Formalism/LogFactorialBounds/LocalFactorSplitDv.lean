@@ -1,4 +1,4 @@
-import Formalism.LogFactorialBounds.LocalFactorSplit
+import Formalism.LogFactorialBounds.Bundle0001
 
 noncomputable section
 

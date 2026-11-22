@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.RootWeights.DegreeZeroWeightsBounded
+import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0015
 
 noncomputable section
 

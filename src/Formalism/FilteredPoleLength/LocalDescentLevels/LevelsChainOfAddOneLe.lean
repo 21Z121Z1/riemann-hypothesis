@@ -1,6 +1,6 @@
 import Formalism.FilteredPoleLength.ReducedBasisBounds.LocalStepLevelsExt
-import Formalism.FilteredPoleLength.LocalDescentLevels.LevelsChain
-import Formalism.FilteredPoleLength.LocalDescentLevels.LocalStepExtOf
+import Formalism.FilteredPoleLength.LocalDescentLevels.Bundle0005
+import Formalism.FilteredPoleLength.LocalDescentLevels.Bundle0006
 
 namespace Formalism.LatticeBaseChangeAlt
 

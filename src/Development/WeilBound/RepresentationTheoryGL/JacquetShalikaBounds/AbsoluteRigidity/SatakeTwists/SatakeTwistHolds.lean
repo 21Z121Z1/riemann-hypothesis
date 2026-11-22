@@ -1,5 +1,5 @@
 import Development.WeilBound.RepresentationTheoryGL.JacquetShalikaBounds.AbsoluteRigidity.CauchyLoc
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SatakeParametersOfTwist
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0954
 
 namespace PositivityTheory.RgJS
 

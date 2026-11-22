@@ -1,6 +1,5 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.OneLetterGaussEvery
-import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.KummerThetaLogarithms.OneLetterGaussFinalOf
-import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.KummerThetaLogarithms.NRCMOf
+import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0004
+import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.KummerThetaLogarithms.Bundle0005
 
 namespace Formalism.L2.Th1.D
 

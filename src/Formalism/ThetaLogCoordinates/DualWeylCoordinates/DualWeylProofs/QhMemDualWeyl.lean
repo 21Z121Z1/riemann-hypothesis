@@ -1,4 +1,4 @@
-import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.QhDetZpowMem
+import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.Bundle0001
 import Formalism.GradedWeylDivisibility.FinalC
 
 noncomputable section

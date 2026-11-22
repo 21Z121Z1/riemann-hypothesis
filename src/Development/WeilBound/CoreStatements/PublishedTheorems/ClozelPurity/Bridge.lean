@@ -1,5 +1,5 @@
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ClozelPurity.ClozelPurityOfBounded
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspRapidDecaySiegelGL
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0616
 
 namespace PositivityTheory.Lit1.ClozelPurity
 

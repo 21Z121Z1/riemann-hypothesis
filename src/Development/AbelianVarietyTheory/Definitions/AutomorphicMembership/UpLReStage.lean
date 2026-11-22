@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RelabelledWeight
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsIsBIffCoreB
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0032
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0029
 
 noncomputable section
 

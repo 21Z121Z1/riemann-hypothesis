@@ -1,8 +1,8 @@
 import Mathlib
-import Formalism.SharpRestriction.InertJacobiLevels.AsmIface
-import Formalism.CyclotomicNorms.StatementI
-import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.PairRowIffQdRows
-import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.DisjointExceptional
+import Formalism.SharpRestriction.InertJacobiLevels.Bundle0007
+import Formalism.CyclotomicNorms.Bundle0001
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0002
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0003
 
 noncomputable section
 

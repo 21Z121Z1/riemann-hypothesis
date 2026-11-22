@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBergmanIntegrable
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.BergmanSectionPairing
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0050
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0062
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

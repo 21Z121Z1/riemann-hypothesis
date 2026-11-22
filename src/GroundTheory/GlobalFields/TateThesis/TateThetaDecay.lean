@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.GlobalFields.TateThesis.TateTheta
+import GroundTheory.GlobalFields.TateThesis.Bundle0011
 
 open NumberField NumberField.mixedEmbedding IsDedekindDomain IsDedekindDomain.HeightOneSpectrum
   MeasureTheory Filter Topology

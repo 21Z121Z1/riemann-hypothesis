@@ -2,7 +2,7 @@ import Mathlib
 import GroundTheory.AutomorphicForms.UnitaryAdmissible.CuspCentral
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SummandsMeasure
-import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableConv
+import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.Bundle0001
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableLaplacian
 
 noncomputable section

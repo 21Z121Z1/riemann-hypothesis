@@ -1,5 +1,5 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.ChartEqsOfParts
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.HermSumRight
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0209
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0230
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.StabilizerFixesTailCoords
 
 open Matrix Formalism.REAL Formalism.QuantumDeterminants Formalism.FourierDecayAlt

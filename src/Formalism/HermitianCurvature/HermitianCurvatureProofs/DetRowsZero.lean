@@ -1,4 +1,4 @@
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ShiftedGeneratorEqIteSmulAdd
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0005
 import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
 
 open Finset

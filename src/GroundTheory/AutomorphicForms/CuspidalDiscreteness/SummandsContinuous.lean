@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.ExistsIsOpenForallCuspRepTFinOneEq
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SummandsMeasure
-import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SummandsArchConv
+import GroundTheory.AutomorphicForms.CuspidalDiscreteness.Bundle0002
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.DecayUniform
 import GroundTheory.AutomorphicForms.GKModules.VectorKernel
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStable

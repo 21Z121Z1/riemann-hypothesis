@@ -1,4 +1,4 @@
-import Formalism.HarderNarasimhan.DegSupermodZ
+import Formalism.HarderNarasimhan.Bundle0001
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SatBasic
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.HNSlopes
 import Formalism.LatticeSlopes.ExistsSaturatedSlopeEqMuMax

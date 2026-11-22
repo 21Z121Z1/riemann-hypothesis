@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.PrStarFst
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0073
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LevelsOfBuiltSetting
 
 namespace Formalism.FourierDecayAlt.P.PBF

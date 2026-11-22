@@ -1,6 +1,5 @@
-import ReciprocityTheory.DualLattices.SubgroupQuotientStatement
-import ReciprocityTheory.DualLattices.ExistsSmulMemOfMemSpan
-import ReciprocityTheory.DualLattices.MapTensorSpan
+import ReciprocityTheory.DualLattices.Bundle0006
+import ReciprocityTheory.DualLattices.Bundle0007
 
 noncomputable section
 

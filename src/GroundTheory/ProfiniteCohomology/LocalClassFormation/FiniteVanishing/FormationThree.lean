@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.ProfiniteCohomology.ClassFormations
-import GroundTheory.ProfiniteCohomology.Colimit
+import GroundTheory.ProfiniteCohomology.Bundle0007
+import GroundTheory.ProfiniteCohomology.Bundle0005
 import GroundTheory.ProfiniteCohomology.ShapiroDefs
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.FiniteVanishing.TateThree
 set_option maxSynthPendingDepth 1

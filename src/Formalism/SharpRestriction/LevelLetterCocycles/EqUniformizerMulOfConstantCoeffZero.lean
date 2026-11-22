@@ -1,7 +1,7 @@
 import Formalism.SharpRestriction.LevelLetterCocycles.HermFlagUnipotentAnisotropicVectorSubMem
 import Formalism.SharpRestriction.LevelLetterCocycles.AnnihilatorLevelsUnramifiedStatement
 import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.ResiduePi0EqNegPrime
-import Formalism.SharpRestriction.LevelLetterCocycles.CompleteOfPow
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0018
 
 noncomputable section
 

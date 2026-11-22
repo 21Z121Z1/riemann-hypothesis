@@ -1,14 +1,14 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReindexDblIncM
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LagrInt
-import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Mfac
-import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.DCdE
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoMulInvOf
-import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.DecayZero
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzMemL2
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousOfMemSchA
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerPreservesSchwartz
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LcscAdelicUnitaryGroup
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1613
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1637
+import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0002
+import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0003
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0887
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1647
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0202
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1968
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0067
 open scoped TensorProduct Matrix
 open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes MeasureTheory
 open GlobalTheory.WeilM GlobalTheory.LFun GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels

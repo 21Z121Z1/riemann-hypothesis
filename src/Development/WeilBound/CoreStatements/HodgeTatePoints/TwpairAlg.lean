@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.IsPolLatticePlane
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.HopfOrderContainsCharacters
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0007
 
 open GlobalTheory.CompanionTheory.Ar.BT GlobalTheory.CompanionTheory.Ar.HT
 

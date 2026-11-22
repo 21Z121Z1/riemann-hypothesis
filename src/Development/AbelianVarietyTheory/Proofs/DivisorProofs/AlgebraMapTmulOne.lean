@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComapMaximalIdealEqOrigin
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodIffEtaleAt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RingHomExtTensor
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0318
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0094
 
 open scoped TensorProduct
 

@@ -1,4 +1,4 @@
-import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.LogAbsEqLogIdeleNorm
+import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.Bundle0002
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.T2SpaceAdelicGeneralLinearGroupNumberField
 
 set_option linter.all false

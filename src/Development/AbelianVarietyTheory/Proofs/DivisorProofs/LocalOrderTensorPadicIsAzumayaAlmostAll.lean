@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentreCompat
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsScalarTowerCenAlgebra
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CycleListPermInvariant
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BijectiveIffIsUnitDet
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0007
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0228
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0132
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0005
 import GroundTheory.Brauer.IsBrauerEquivalentIffNonemptyAlgEquiv
 
 noncomputable section

@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.LatticeNormTransport
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOfTameLoc
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatHeckeCharacterTrivialCongruentUnits
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitOpenAndCongrOpen
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeCharFiniteOrderUnitIdele
-import Formalism.LocalToGlobal.UnitaryNorms.CharExGen
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0010
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0106
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1686
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0104
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0116
+import Formalism.LocalToGlobal.UnitaryNorms.Bundle0001
 
 noncomputable section
 

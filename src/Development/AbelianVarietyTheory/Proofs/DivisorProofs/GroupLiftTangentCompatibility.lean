@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsUniqueIsTanFrameOfIsEmpty
-import Development.AbelianVarietyTheory.Definitions.Divisors.P22
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GrothendieckDeformation
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0071
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0009
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KodairaSpencerMatrixUnique
 
 set_option autoImplicit false

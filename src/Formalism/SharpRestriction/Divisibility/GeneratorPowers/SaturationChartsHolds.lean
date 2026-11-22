@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.ProjectiveLattices.ChartDirectionsIntegral
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExistsBasisOfSaturated
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0001
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.LieEig
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.UniversalCharts.ChartLaw
 

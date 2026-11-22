@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.LocalDensities.StatementsCoverInt
-import ReciprocityTheory.AnalyticForms.PotentialTheory.Degree
+import GroundTheory.HeightsAndTheta.Heights.LocalDensities.Bundle0006
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0009
 import ReciprocityTheory.AnalyticForms.PotentialTheory.PLCurveA
 set_option maxSynthPendingDepth 1
 

@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.GeoTiedPGraft
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0009
 import Formalism.LocalToGlobal.HilbertRowConditions.KaTiedIffKapDef
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValuationLtOneOfInvNotMem
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CoeffZeroEqZeroIff
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0574
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0568
 
 noncomputable section
 

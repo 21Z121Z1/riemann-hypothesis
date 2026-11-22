@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.ExistsGaloisExtendingAlgHom
-import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.ExistsSumPadicValIntWindowEq
+import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.Bundle0011
+import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.Bundle0002
 
 noncomputable section
 

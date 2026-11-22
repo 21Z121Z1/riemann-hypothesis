@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.GeometricLemmaFiltration
-import GroundTheory.AutomorphicForms.GeometricLemma
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0004
+import GroundTheory.AutomorphicForms.Bundle0020
 set_option maxSynthPendingDepth 1
 
 noncomputable section

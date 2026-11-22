@@ -1,9 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.IrreducibleConnected.StatementsUnbranched
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.IrreducibleConnected.StClopenPieceSheetCount
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.IrreducibleConnected.StPrimeCoverPieceSheets
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.IrreducibleConnected.Bundle0002
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.IrreducibleConnected.Bundle0001
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Assembly
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PManifoldZerosComplementConnected
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0044
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

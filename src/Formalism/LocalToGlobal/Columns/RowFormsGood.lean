@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.Columns.RowFormsLemmas
-import Formalism.LocalToGlobal.Columns.CoefficientsModP
+import Formalism.LocalToGlobal.Columns.Bundle0014
 
 open NumberField IsDedekindDomain Module
 open scoped Matrix ComplexOrder

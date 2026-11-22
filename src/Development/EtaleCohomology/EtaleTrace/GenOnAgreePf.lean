@@ -1,4 +1,4 @@
-import Development.EtaleCohomology.EtaleTrace.GenOutGluePf
+import Development.EtaleCohomology.EtaleTrace.Bundle0006
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry MvPolynomial

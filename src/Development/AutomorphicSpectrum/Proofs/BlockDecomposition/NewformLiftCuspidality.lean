@@ -2,7 +2,7 @@ import Mathlib
 import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.VerticalStrips.UnramifiedEulerProductIntegral
 import GroundTheory.AutomorphicForms.CompactAbelianCharacters
 import GroundTheory.GlobalFields.TateThesis.AdelicCharDual
-import GroundTheory.GlobalFields.TateThesis.AdeleScaling
+import GroundTheory.GlobalFields.TateThesis.Bundle0006
 
 noncomputable section
 

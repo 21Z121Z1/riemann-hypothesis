@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InjectiveWedgeHighestCoefficient
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0413
 
 open Finset
 open scoped InnerProductSpace

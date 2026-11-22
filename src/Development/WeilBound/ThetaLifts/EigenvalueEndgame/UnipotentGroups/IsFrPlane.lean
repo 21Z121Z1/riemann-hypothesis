@@ -1,5 +1,5 @@
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.UnipotentGroups.ContinuousExpG
-import Development.WeilBound.ThetaLifts.TowerModels.LeviAd
+import Development.WeilBound.ThetaLifts.TowerModels.Bundle0003
 
 noncomputable section
 

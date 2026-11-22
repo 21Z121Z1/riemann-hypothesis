@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.GeometricLemmaFiltration
-import GroundTheory.AutomorphicForms.GeometricLemmaOrbit
-import GroundTheory.AutomorphicForms.AdmissibleInduction
+import GroundTheory.AutomorphicForms.Bundle0002
+import GroundTheory.AutomorphicForms.Bundle0016
 set_option maxSynthPendingDepth 1
 
 noncomputable section

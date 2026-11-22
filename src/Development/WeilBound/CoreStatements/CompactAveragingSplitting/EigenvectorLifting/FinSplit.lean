@@ -1,4 +1,4 @@
-import Development.AbelianVarietyTheory.Definitions.Divisors.MatchingOfParts
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0044
 
 noncomputable section
 

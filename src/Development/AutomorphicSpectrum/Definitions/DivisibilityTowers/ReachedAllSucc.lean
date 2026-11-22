@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
-import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.LabelSettingScalars
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0014
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0020
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil
 
 noncomputable section

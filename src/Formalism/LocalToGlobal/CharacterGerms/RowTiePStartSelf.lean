@@ -1,9 +1,8 @@
-import Formalism.LocalToGlobal.CharacterGerms.RowTiePPTSelfEx
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0036
 import Formalism.LocalToGlobal.CharacterGerms.RowTiePProjFB
-import Formalism.LocalToGlobal.CharacterGerms.RowTiePLSmallMain
-import Formalism.LocalToGlobal.CharacterGerms.RowTiePOActLog
-import Formalism.LocalToGlobal.CharacterGerms.RowTiePCartSelfSt
-import Formalism.LocalToGlobal.CharacterGerms.RowTiePAllStart
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0020
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0021
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0032
 
 noncomputable section
 

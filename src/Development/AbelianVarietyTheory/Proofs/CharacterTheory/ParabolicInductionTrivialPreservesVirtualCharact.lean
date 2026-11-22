@@ -1,7 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.AbByPOfComm
-import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.InvariantSubspaceMobiusInverseRecEqOfFinrankLt
-import Development.AbelianVarietyTheory.Proofs.CharacterTheory.VirtualCharactersMulComapConjIndLinearStatement
+import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0023
 open Polynomial GlobalTheory.CuspGL GlobalTheory.BI
 noncomputable section
 namespace GlobalTheory.ParabVirt

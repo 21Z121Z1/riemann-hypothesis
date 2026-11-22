@@ -1,8 +1,8 @@
-import Formalism.SharpRestriction.InertJacobiLevels.ExtraF
+import Formalism.SharpRestriction.InertJacobiLevels.Bundle0009
 import Formalism.SharpRestriction.InertJacobiLevels.AsmExtra
-import Formalism.SharpRestriction.InertJacobiLevels.ExtraH
-import Formalism.SharpRestriction.InertJacobiLevels.ExistsLatInst
-import Formalism.LocalRingCardinality.MinkMEqMinkowskiNumber
+import Formalism.SharpRestriction.InertJacobiLevels.Bundle0004
+import Formalism.SharpRestriction.InertJacobiLevels.Bundle0007
+import Formalism.LocalRingCardinality.Bundle0006
 
 noncomputable section
 

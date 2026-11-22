@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.Induction
+import GroundTheory.AutomorphicForms.Bundle0009
 import GroundTheory.AutomorphicForms.InductionJacquet
-import GroundTheory.AutomorphicForms.InductionParabolicLocal
+import GroundTheory.AutomorphicForms.Bundle0015
 
 noncomputable section
 

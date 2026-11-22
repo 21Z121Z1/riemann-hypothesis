@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.FrameMinor
+import Formalism.HermitianCurvature.Bundle0005
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.OperatorRepresentations
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RestrictionIrrelevantDoubleLevelOperator
 

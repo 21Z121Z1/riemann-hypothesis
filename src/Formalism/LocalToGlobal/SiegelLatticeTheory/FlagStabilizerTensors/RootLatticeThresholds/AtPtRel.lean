@@ -1,9 +1,9 @@
 import Mathlib
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.TermDef
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.PtCellUniq
-import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.CellInv
+import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.Bundle0001
 import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.CellGeo
-import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.CellFin
+import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.Bundle0005
 import Formalism.SharpRestriction.CuspSpanNormBounds.FlagEEqHyperbolic
 
 noncomputable section

@@ -1,5 +1,5 @@
-import Formalism.IncomingBounds.ValuationWindowImpliesOriginal
-import Formalism.IncomingBounds.LevelTail
+import Formalism.IncomingBounds.Bundle0003
+import Formalism.IncomingBounds.Bundle0002
 
 noncomputable section
 open scoped BigOperators

@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.IndefiniteReal.FockTheta.SquareNormIntegralNonneg
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.HookBound
+import Formalism.LocalToGlobal.IndefiniteReal.FockTheta.Bundle0002
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0029
 
 noncomputable section
 

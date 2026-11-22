@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.GlobalFields.Artin.LogCharpoly
+import GroundTheory.GlobalFields.Artin.Bundle0001
 
 noncomputable section
 

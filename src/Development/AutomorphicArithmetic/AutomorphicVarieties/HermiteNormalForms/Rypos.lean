@@ -1,7 +1,6 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.SmulNeZeroLat
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Grampd
-import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.RealVec
-import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Realsurj
+import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Bundle0003
 
 open NumberField Matrix UpperTheory.V UpperTheory.V.KT
 open scoped ComplexOrder

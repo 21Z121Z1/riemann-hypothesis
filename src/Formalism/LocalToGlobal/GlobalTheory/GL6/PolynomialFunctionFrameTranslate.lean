@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.GlobalTheory.GL6.MetricDisjointSupportOrthogonal
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0008
 import Formalism.LocalToGlobal.GlobalTheory.GL6.PSplitT
 import Formalism.LocalToGlobal.GlobalTheory.GL6.LatticeInclusionFamilyOf
 import Formalism.LocalToGlobal.GlobalTheory.GL6.BwAValIntegralNonneg

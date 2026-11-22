@@ -1,9 +1,8 @@
-import Formalism.LocalToGlobal.ProjectiveLattices.RatRgOfSecRat
-import Formalism.LocalToGlobal.ProjectiveLattices.GenSpecDesc
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.ExpBCChart
-import Formalism.LocalToGlobal.ProjectiveLattices.CoreProofs
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.FrMapComp
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.BcField
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0051
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0007
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0008
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0006
 
 noncomputable section
 

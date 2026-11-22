@@ -1,6 +1,6 @@
 import Formalism.GaussJetBounds.GaussJetProofs.SubstitutionWeightBound
 import Formalism.FormalGroupWitt.FormalGroupWittProofs.SolveV
-import Formalism.FormalGroupWitt.FormalGroupWittProofs.EqSingleOfDegreeEqOne
+import Formalism.FormalGroupWitt.FormalGroupWittProofs.Bundle0002
 import Formalism.IncomingBounds.FlowDegreeBounds.PadicValFactorialRatioProd
 
 noncomputable section

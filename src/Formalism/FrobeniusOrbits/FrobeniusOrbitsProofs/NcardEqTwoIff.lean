@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.FrobeniusOrbits.HostThickExists
+import Formalism.FrobeniusOrbits.Bundle0002
 import Formalism.FrobeniusOrbits.RealSubfieldLeCompositum
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Inertia
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Decomp

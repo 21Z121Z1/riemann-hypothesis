@@ -1,6 +1,6 @@
-import Formalism.LocalToGlobal.Columns.LevelZeroComparisonBijective
-import Formalism.LocalToGlobal.Columns.WithTopLevGTop
-import Formalism.LocalToGlobal.Columns.StabMapRLInjective
+import Formalism.LocalToGlobal.Columns.Bundle0047
+import Formalism.LocalToGlobal.Columns.Bundle0042
+import Formalism.LocalToGlobal.Columns.Bundle0041
 
 open NumberField IsDedekindDomain Module
 

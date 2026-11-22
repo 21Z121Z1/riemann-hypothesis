@@ -1,4 +1,4 @@
-import Formalism.PadicSubsetSums.CentralIdempotents.ArchimedeanComponents
+import Formalism.PadicSubsetSums.CentralIdempotents.Bundle0001
 
 noncomputable section
 

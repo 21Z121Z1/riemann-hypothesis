@@ -1,6 +1,6 @@
 import Formalism.FilteredPoleLength.ReducedBasisBounds.GradedFreeLengthFiltered
 import Formalism.FilteredPoleLength.LocalDescentLevels.LevelsChainOfAddOneLe
-import Formalism.FilteredPoleLength.LocalDescentLevels.LevelsLengthSum
+import Formalism.FilteredPoleLength.LocalDescentLevels.Bundle0006
 
 open Module
 

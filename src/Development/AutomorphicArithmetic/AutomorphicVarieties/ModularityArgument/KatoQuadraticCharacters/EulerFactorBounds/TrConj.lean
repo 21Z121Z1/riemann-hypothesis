@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.SymmetricPowerSymbols.WkTopEq
-import Development.AbelianVarietyTheory.Definitions.Foundations.LiftSL
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0018
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsSymplecticBasisToMatrixOffDiagDvd
 
 open scoped MatrixGroups Matrix Classical

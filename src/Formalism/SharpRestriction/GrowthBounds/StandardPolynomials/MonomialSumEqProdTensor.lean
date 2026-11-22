@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.PreSys
-import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.DivDerZero
+import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.Bundle0003
+import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.Bundle0008
 
 noncomputable section
 

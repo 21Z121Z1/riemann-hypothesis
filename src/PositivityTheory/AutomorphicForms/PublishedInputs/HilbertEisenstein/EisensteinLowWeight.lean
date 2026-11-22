@@ -1,6 +1,6 @@
 import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.SSmooth
-import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.CentralCharacterHolds
-import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.LibFresh
+import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Bundle0001
+import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Bundle0003
 import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.ChartEisIntDifferentiableAt
 
 noncomputable section

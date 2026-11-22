@@ -1,8 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightAssemblyFull
-import GroundTheory.HeightsAndTheta.Heights.HeightComparison.POrbitDegreeRatio
-import GroundTheory.HeightsAndTheta.Heights.HeightComparison.POrbitLocalSum
-import GroundTheory.HeightsAndTheta.Heights.HeightComparison.POrbitCenterZero
+import GroundTheory.HeightsAndTheta.Heights.HeightComparison.Bundle0014
+import GroundTheory.HeightsAndTheta.Heights.HeightComparison.Bundle0010
+import GroundTheory.HeightsAndTheta.Heights.HeightComparison.Bundle0007
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.POrbitConjSum
 set_option maxSynthPendingDepth 1
 

@@ -1,8 +1,8 @@
-import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.RealAdelicFockSpace.Spf
+import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.RealAdelicFockSpace.Bundle0001
 import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.ThetaParabolic.LRhoOm
-import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.THeis
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzMemL2
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchroedingerPreservesAdelicSchwartz
+import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1647
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1912
 
 noncomputable section
 

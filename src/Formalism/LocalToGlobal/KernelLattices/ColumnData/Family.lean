@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.KernelLattices.ColumnData
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.IsAdmissibleFlagPairOfUnitriangularLeftAutomorph
-import Formalism.LocalToGlobal.KernelLattices.ColumnData.LinkChi
+import Formalism.LocalToGlobal.KernelLattices.ColumnData.Bundle0001
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.LinkThU
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.ThIndep
 

@@ -1,5 +1,5 @@
 import Formalism.CharacterColumnKernels.CharacterColumnKernelEqualityForm
-import Formalism.WachLatticeTwists.StatementDual
+import Formalism.WachLatticeTwists.Bundle0001
 
 open Finset Classical
 

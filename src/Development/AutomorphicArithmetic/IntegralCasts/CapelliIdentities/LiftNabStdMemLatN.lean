@@ -4,12 +4,12 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.HasBlockOfOccurs
 import Formalism.LocalToGlobal.Divisibility.CoefMod
 import Formalism.PieriBlockIdeals.BlockIdealBound5Derived
 import Formalism.GradedWeylDivisibility.StatementA
-import Formalism.PieriBlockIdeals.BranchingBoundLastGradedOneRow
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LamGApply
+import Formalism.PieriBlockIdeals.Bundle0005
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2117
 import Formalism.HermitianLattices.StatementLat
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.NormIntegersLeOne
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.WeightedHomogeneousMap
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SemilinearLatticeMem
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0050
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0067
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0057
 
 open MvPolynomial in
 private theorem mem_dw_iff {R : Type} [CommRing R] (r n : ℕ) (ν : Fin n → ℕ) (f : MvPolynomial (Fin r × Fin n) R) :

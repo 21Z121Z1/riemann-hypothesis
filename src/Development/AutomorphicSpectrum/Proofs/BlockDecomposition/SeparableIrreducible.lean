@@ -1,6 +1,6 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.FiniteTypeHarishChandra.SupportExistsAll
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SimpleIffIrreducibleStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0114
 
 open CategoryTheory ReciprocityTheory.Ty.Fin
 

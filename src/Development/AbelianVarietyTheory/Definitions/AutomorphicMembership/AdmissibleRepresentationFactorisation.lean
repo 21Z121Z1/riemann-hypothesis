@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsChartOfMaximal
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LetterConjugation
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NatCastMemNonunitsOfInduces
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TangentFamilyOfUniqueLiftPrime
-import Formalism.LocalToGlobal.LatticeGeometry.CmTypeMeetsConjugatePair
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0584
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0602
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0605
+import Formalism.LocalToGlobal.LatticeGeometry.Bundle0001
 
 set_option autoImplicit false
 

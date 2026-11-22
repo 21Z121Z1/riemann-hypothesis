@@ -1,10 +1,10 @@
-import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.CloudADef
-import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.CloudIso
-import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.MemInvariantSectionsTwoWeightIff
+import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.Bundle0001
+import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.Bundle0002
+import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.Bundle0003
 import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.CcDualWtAnti
 import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.Tensor
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LDrowLemmas
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LClosedeqLemmas
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0012
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0010
 
 noncomputable section
 

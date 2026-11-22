@@ -1,6 +1,6 @@
-import Formalism.PieriBlockIdeals.TailInequalityEventually
-import Formalism.QuotientMetricDivisors.ClassSumDualLe
-import Formalism.MirabolicMackeyTheory.StatementT
+import Formalism.PieriBlockIdeals.Bundle0007
+import Formalism.QuotientMetricDivisors.Bundle0001
+import Formalism.MirabolicMackeyTheory.Bundle0001
 
 open Module NumberField IsDedekindDomain
 open scoped Matrix ComplexOrder

@@ -1,9 +1,7 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.HermitianDisc
-import GroundTheory.AutomorphicForms.HermitianWittExtension
-import GroundTheory.AutomorphicForms.HermitianSplit
-import GroundTheory.LocalFields.HerbrandLocal
-import GroundTheory.LocalFields.FiniteExtension
+import GroundTheory.AutomorphicForms.Bundle0012
+import GroundTheory.LocalFields.Bundle0007
+import GroundTheory.LocalFields.Bundle0002
 import GroundTheory.LocalFields.UnramifiedHensel
 
 noncomputable section

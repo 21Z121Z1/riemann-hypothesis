@@ -1,6 +1,6 @@
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedVolumeStatements.LevelSubgroupProperties
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.InHHClassFin
-import Formalism.PeriodIntegrals.InHHClassFin
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0027
+import Formalism.PeriodIntegrals.Bundle0028
 import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.InHHAlg
 import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.InHHDef
 import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.SCompact

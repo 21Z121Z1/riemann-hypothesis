@@ -1,7 +1,7 @@
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.EigenvalueSeparation.StableEigenspaces.InterpolationL2Bound
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieCentralElementTrace
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TraceOperatorEigenvalueSum
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CentralEigenExponential
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0575
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0586
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0558
 
 noncomputable section
 

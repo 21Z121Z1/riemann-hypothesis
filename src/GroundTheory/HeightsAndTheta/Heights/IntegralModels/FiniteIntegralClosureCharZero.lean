@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.IntegralModels.FiniteIntegralClosureLocal
+import GroundTheory.HeightsAndTheta.Heights.IntegralModels.Bundle0001
 set_option maxSynthPendingDepth 1
 
 open scoped nonZeroDivisors

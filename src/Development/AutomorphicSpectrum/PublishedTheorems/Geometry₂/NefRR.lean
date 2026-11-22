@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsKodairaGeneric
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0025
 
 namespace GlobalTheory.CompanionTheory.Ar.Pub
 

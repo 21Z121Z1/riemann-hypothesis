@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.PeriodRelations.LeadingConstantNeZero
-import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.PeriodRelations.BrLamConjEq
+import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.PeriodRelations.Bundle0001
+import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.PeriodRelations.Bundle0002
 
 noncomputable section
 

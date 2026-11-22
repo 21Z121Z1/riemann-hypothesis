@@ -1,10 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.CMModuli.ThetaTowerRecognition
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.CubNSucc
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationWeilPairingProperties
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NormRepGeneratorsAndThetaSeriesTerm
+import Development.AbelianVarietyTheory.BlockTheory.CMModuli.Bundle0008
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0033
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0035
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.HomTransport
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SummableVtQT
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0037
 
 open ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.Ex GlobalTheory.IndefiniteRowSideFullHecke.ThetaTowerRecognition
 open scoped BigOperators

@@ -1,6 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsCharpolyRootLift
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsRingHomExtendOfIsIntegral
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0090
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0020
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

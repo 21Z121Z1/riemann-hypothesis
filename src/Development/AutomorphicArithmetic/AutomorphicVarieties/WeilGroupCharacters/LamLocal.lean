@@ -1,8 +1,8 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.WeilGroupCharacters.Inertia
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.FiniteCohomology
-import GroundTheory.LocalFields.LocalArtinCompletion
+import GroundTheory.LocalFields.Bundle0014
 import GroundTheory.LocalFields.PrincipalUnitsRank
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FixingSubgroupEquivBicontinuous
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0235
 
 open Topology Filter
 

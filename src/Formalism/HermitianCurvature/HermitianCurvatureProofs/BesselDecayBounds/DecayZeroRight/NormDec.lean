@@ -1,7 +1,7 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.MajorantEstimate
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0048
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.NormDiagonalEntryDilationGeneratorLeOne
 import Formalism.SharpRestriction.CuspSpanNormBounds.ExpansionFromLemmaB
-import Formalism.SharpRestriction.CuspSpanNormBounds.BesselBoundFamilyOfDoubleCoset
+import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0010
 
 open Matrix
 open scoped InnerProductSpace

@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.GlobalTheory.ActAllCancelInv
-import Formalism.LocalToGlobal.GlobalTheory.GramNDetNe
+import Formalism.LocalToGlobal.GlobalTheory.Bundle0008
+import Formalism.LocalToGlobal.GlobalTheory.Bundle0007
 
 noncomputable section
 

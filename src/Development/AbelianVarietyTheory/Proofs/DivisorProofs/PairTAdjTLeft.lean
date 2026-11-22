@@ -2,8 +2,8 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.HodgeTateLatticePointFinrankTateModule
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsLatBasisHtLatIffSpanEq
 import Development.AbelianVarietyTheory.Definitions.CMLattices.IsDiffOf
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.RosatiAdjIffLamEq
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumBLieMemHtLatIffOfPointOver
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0034
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1734
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTorusLeLieSpan
 
 set_option autoImplicit false

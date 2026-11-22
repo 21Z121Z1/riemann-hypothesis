@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.FiniteSupportHeight
+import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0002
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.IsSaturatedFirstCoordinateLine
-import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.CurveComplexPoint
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRedA
+import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0003
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0011
 set_option maxSynthPendingDepth 1
 
 noncomputable section

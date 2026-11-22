@@ -1,4 +1,4 @@
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsRegularRepBesselBigCellVectorEqBesselStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0110
 import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Imports
 import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
-import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.ImportsBisTer
+import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Bundle0003

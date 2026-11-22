@@ -1,9 +1,8 @@
-import Formalism.RealPlaceAnalysis.SmoothVectorGrowthBound
+import Formalism.RealPlaceAnalysis.Bundle0004
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.MemUnitaryGroupIffMulConjTranspose
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ComplexificationHolds
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ModularCharacterEqOneOnExpHermitian
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CartanInvolutionConjTransposeMul
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ComplexifiedDerivativeCommutator
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0001
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0006
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0002
 
 open MeasureTheory Matrix Filter Topology
 open scoped ContDiff

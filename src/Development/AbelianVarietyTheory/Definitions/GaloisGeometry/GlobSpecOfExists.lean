@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.SharpRestriction.GrowthBounds.DataGChain
 import Formalism.LocalToGlobal.Columns.HeckeSp
-import Formalism.LocalToGlobal.Columns.ColFormsLemmas
+import Formalism.LocalToGlobal.Columns.Bundle0005
 
 noncomputable section
 

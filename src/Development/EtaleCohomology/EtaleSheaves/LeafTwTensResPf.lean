@@ -1,5 +1,5 @@
-import Development.EtaleCohomology.EtaleSheaves.LeafTwPairExistsPf
-import Development.EtaleCohomology.TateTwists.EtaleTensorPairTwistResolutionMul
+import Development.EtaleCohomology.EtaleSheaves.Bundle0026
+import Development.EtaleCohomology.TateTwists.Bundle0004
 import Mathlib.CategoryTheory.Abelian.Injective.Extend
 
 noncomputable section

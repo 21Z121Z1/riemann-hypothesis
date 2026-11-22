@@ -1,10 +1,10 @@
-import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.LatMod
-import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.VacExApp
+import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0014
+import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0008
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.IdemElt
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.VacExA
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.FactPrincipalDatum
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.PlaceDualB
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.LatticeVariant
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0082
 
 noncomputable section
 

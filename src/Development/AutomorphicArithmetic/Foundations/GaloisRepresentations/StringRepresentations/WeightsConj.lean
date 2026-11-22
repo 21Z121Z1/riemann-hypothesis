@@ -1,4 +1,4 @@
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.GaloisRepOfPolarizedPair
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0005
 import Development.AutomorphicArithmetic.ThetaCorrespondence.CuspidalSupport.CuspOfCq
 
 noncomputable section

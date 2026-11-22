@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.NormAlmostAll
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsIsRealEmbeddingEqHom
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsRingHomAdicCompletionUnder
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0009
 import Development.AutomorphicArithmetic.Splittings.ExistsCyclicGaloisTensorAlgEquivPi
 
 open Matrix Polynomial NumberField IsDedekindDomain

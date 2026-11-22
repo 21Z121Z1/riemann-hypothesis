@@ -1,5 +1,5 @@
 import Formalism.PieriBlockIdeals.IntegralQuotient
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.InnerProductFormulaField
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0036
 
 open Polynomial
 

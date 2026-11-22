@@ -1,4 +1,4 @@
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoLeFinrankLa
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2306
 
 noncomputable section
 

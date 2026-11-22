@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.GradedWeylDivisibility.StatementB
+import Formalism.GradedWeylDivisibility.Bundle0001
 
 open MvPolynomial
 

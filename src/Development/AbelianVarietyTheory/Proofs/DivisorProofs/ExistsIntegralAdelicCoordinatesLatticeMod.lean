@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FactorResIEqResS
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicElementLatticeFullAndCompletion
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicCompletionRationalPointsAndApproximation
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0874
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0078
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0017
 
 set_option autoImplicit false
 

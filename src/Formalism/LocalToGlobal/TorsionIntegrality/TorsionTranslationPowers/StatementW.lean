@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.StatementA
-import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.StatementS
+import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.Bundle0001
+import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.Bundle0002
 
 open PowerSeries
 

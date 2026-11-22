@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.LocalRingCardinality.DataAmbForm
-import Formalism.LocalRingCardinality.DataKerP
+import Formalism.LocalRingCardinality.Bundle0002
+import Formalism.LocalRingCardinality.Bundle0005
 
 noncomputable section
 

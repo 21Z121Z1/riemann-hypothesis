@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
-import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.GradedSeries
+import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0002
 
 noncomputable section
 

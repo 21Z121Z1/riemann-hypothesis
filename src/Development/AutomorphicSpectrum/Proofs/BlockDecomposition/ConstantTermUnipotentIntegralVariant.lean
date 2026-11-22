@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OneMemGoodCT
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCuspidalLieActionOfIsCuspForm
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartUnipotentFderivContinuousOn
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0363
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0786
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0750
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsNormalisedThetaSub
 
 noncomputable section

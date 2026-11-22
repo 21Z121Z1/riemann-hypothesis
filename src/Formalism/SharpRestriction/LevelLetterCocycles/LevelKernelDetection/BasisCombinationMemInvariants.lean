@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.IdempotentMemInvariants
-import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.ExistsBasisOfSurjective
+import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.Bundle0001
 
 noncomputable section
 

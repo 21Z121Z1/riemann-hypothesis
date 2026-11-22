@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.GrowthBounds.CountingStatementReduction
-import Formalism.MahlerMeasure.LevelLattice
+import Formalism.MahlerMeasure.Bundle0009
 
 noncomputable section
 

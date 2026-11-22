@@ -1,5 +1,5 @@
 import Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.KugaCoordinates.ArchimedeanWhittakerDerivatives.ContinuousInfGL
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WhittakerLawUpperTriangularUnipotentAdelic
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0607
 
 noncomputable section
 

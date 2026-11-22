@@ -3,8 +3,8 @@ import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
 import Formalism.LocalToGlobal.Divisibility.DefGroupLemmas
 import Development.AbelianVarietyTheory.Definitions.Divisors.BasePlaceNotMemChiGridBadPlaces
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LevelHyperspecialTrivialCharacterSplitsOffPlaces
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsMeasLevW
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsMeasDef
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0247
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0246
 
 noncomputable section
 

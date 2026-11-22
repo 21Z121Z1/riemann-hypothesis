@@ -1,10 +1,9 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ZeroMemUnrHom
-import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.LenOfCard
+import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.Bundle0002
 import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.UnrInj
-import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.UnrSel
+import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.Bundle0003
 import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.SelCard
-import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.FnOne
-import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.LogH
+import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.Bundle0002
 
 open NumberField IsDedekindDomain Formalism.ConjugateSelfDual ReciprocityTheory.Gal Formalism.GaloisCohomology UpperTheory.V UpperTheory.V.LDataCardLeFinrank UpperTheory.V.Base UpperTheory.V.Kum UpperTheory.V.Bern UpperTheory.V.B4 UpperTheory.V.B5 UpperTheory.V.Odd
 

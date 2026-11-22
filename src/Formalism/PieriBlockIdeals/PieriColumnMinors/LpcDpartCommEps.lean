@@ -1,4 +1,4 @@
-import Formalism.PieriBlockIdeals.StatementLP
+import Formalism.PieriBlockIdeals.Bundle0006
 import Formalism.PieriBlockIdeals.PieriColumnMinors.BinaryFormsExample
 
 namespace Formalism.CohomologicalDescent.LP

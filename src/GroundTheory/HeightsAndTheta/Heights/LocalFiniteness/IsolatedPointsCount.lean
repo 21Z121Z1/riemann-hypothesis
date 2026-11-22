@@ -1,5 +1,5 @@
 import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.IsolatedPointsCountPrime
-import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PIsolatedPointsCount
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0043
 set_option maxSynthPendingDepth 1
 
 theorem GroundTheory.Heights₂.Heights.AutoClose.IsolatedPointsCount : GroundTheory.Heights₂.Heights.IsolatedPointsCount.Statement :=

@@ -1,9 +1,7 @@
 import Mathlib
-import Formalism.PeriodIntegrals.LocDualGen
+import Formalism.PeriodIntegrals.Bundle0020
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalDualGenerator.PsiTower
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalDualGenerator.AddCharKernel
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalDualGenerator.FpDual
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalDualGenerator.EpSelfDual
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalDualGenerator.Bundle0002
 
 namespace PI.LocDualGen.Of
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.EllipticTorsion.ChangeIntegral
+import Formalism.EllipticTorsion.Bundle0003
 
 open Formalism.ELL Formalism.G
 

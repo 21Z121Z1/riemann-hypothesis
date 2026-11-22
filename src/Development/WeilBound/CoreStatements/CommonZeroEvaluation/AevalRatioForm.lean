@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FormOffSpecializationRing
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0213
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginGenericFrameBound
 open NumberField IsDedekindDomain
 open Formalism.L2.Pj ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo

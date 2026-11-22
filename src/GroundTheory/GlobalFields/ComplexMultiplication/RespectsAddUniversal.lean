@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.DualIsogeny
-import GroundTheory.ArithmeticGeometry.AbelianVarieties.ReductionTorsion
+import GroundTheory.ArithmeticGeometry.AbelianVarieties.Bundle0003
 
 namespace GroundTheory.Global
 

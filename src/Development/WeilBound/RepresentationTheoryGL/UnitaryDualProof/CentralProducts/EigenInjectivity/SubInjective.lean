@@ -1,7 +1,7 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.CentralProducts.TopProdD
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CentralCharacterEqProdSupercuspidalSupport
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParabolicProductTwoRepsEquivTwoBlockInduction
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0677
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0177
 
 noncomputable section
 

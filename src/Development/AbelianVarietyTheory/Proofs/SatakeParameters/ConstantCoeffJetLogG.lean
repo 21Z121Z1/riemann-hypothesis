@@ -2,9 +2,8 @@ import Mathlib
 import Formalism.SharpRestriction.Divisibility.OrbitPlaces
 import Formalism.SharpRestriction.ParConsts
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsPlaceCofactorValuationLowerBound
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ModelsOK
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Cobdry
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.DualOm
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0010
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0009
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormPowDivFactorialLe
 open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.G Formalism.MainNotions.FormalGroupSystem Formalism.FrobeniusOrbits GlobalTheory.TwU Classical
 

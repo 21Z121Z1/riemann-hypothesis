@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.NegDminusLeMu
+import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0007
 
 noncomputable section
 

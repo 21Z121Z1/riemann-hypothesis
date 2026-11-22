@@ -1,7 +1,7 @@
-import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.DatDatum
-import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.UmgOps
-import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.HkApply
-import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.TsphVec
+import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.Bundle0001
+import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.Bundle0002
+import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.Bundle0001
+import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0004
 
 open private kgl_eq tj_eq hop_apply mem_fixL from Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.TsphVec
 

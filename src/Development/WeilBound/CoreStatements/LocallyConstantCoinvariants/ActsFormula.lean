@@ -1,7 +1,7 @@
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.EqZeroOfLocW
-import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaSumTensorProduct
-import Development.AutomorphicSpectrum.Proofs.MembershipProofs.DblCoordUnique
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductFunctionOnSumCoordsMemAdelicSchwartzSpace
+import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0013
+import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0007
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1049
 
 set_option linter.unusedSectionVars false
 

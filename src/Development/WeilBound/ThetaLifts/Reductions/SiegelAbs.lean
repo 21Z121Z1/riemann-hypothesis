@@ -1,5 +1,5 @@
 import Development.WeilBound.ThetaLifts.Reductions.SiegelCore
-import Development.WeilBound.ThetaLifts.FrameEstimates.LeHeightOfIsTorusElt
+import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0009
 
 set_option linter.unusedSectionVars false
 

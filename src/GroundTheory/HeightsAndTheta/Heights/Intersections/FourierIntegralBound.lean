@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.Intersections.AnalyticResolutionHypothesesProjectiveLine
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterBridgeN
-import ReciprocityTheory.AnalyticForms.PotentialTheory.LocDens
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0010
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0005
 set_option maxSynthPendingDepth 1
 
 noncomputable section

@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.SatakeDualWeyl.Statement
-import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.SatGramLoc
+import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.Bundle0002
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.MetricsProjectionFormulaNef
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.UnitRatioDivisorSupportEq
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChartLatticeNormMembership
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0051
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0021
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.MemDivSuppOfDivCycleNeZero
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PVertFactorSmooth
 

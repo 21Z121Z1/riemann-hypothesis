@@ -1,8 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.FoldBound
 import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.PoincareSeriesSquareIntegrable
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.FoldUnfold
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.FoldMult
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0011
 
 noncomputable section
 

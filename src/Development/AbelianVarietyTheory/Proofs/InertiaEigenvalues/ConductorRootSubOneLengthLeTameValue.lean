@@ -1,10 +1,10 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.CommutingEndomorphismCondition
-import Formalism.LocalRingCardinality.DataNChTie
+import Formalism.LocalRingCardinality.Bundle0002
 import Formalism.SharpRestriction.LevelLetterCocycles.VKEqOfFrac
-import Formalism.CharacterColumnKernels.IdempotentNormalForms.LengthKerOfDetEqZero
+import Formalism.CharacterColumnKernels.IdempotentNormalForms.Bundle0001
 import Formalism.SharpRestriction.LevelLetterCocycles.EndomorphismIndexBound
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemZpowersOfTameGen
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0448
 
 noncomputable section
 

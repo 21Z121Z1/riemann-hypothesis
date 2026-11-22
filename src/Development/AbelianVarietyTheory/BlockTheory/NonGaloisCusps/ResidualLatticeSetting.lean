@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.BlochKatoPhases
 import Formalism.SharpRestriction.LevelLetterCocycles.IntegralHeckeForms
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTameInertiaElementAtTwistPrime
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0008
 
 noncomputable section
 

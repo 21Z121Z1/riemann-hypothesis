@@ -1,7 +1,7 @@
-import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsLogMult
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsEtCoord
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumOrdSubOneLeOrdWedgeDifferentials
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntersectionNumberPullbackProportionalOfProporti
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0075
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0006
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2212
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2243
 open CategoryTheory Limits AlgebraicGeometry TopologicalSpace Filter
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.AnForm.R
 open ReciprocityTheory.ChartRestriction.G.Out (nonzeroLocus)

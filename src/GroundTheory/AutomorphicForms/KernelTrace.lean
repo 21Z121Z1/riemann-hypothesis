@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.TraceStrongLimit
+import GroundTheory.AutomorphicForms.Bundle0011
 import GroundTheory.AutomorphicForms.FinePartition
-import GroundTheory.AutomorphicForms.HilbertSchmidtKernel
+import GroundTheory.AutomorphicForms.Bundle0006
 
 namespace GroundTheory.Automorphic
 

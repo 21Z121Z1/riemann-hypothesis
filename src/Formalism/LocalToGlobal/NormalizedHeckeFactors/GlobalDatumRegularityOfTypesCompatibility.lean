@@ -1,5 +1,5 @@
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.IrreducibilityOfTheoremThree
+import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.Bundle0003
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.TypesDefs
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoeffZeroNeOfMonicIrr
 import Formalism.LocalToGlobal.GaloisLevelStructure.DefsLabWD

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SemisimpleLevels.AbW
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.CaraianiLocalGlobalDual
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Langlands
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0006
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0024
 
 noncomputable section
 

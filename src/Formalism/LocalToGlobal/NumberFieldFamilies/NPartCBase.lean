@@ -1,7 +1,7 @@
 import Formalism.LocalToGlobal.NumberFieldFamilies.NPartCNd
 import Formalism.LocalToGlobal.GaloisLevelStructure.TiedHecke
 import Formalism.LocalRingCardinality.SpanPowerMembership.NDLocI
-import Formalism.LocalToGlobal.GroupLattices.PerfectRings.IsLocalRingOfComplete
+import Formalism.LocalToGlobal.GroupLattices.PerfectRings.Bundle0001
 
 noncomputable section
 

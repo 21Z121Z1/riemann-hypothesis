@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.GaloisLevelStructure.DefsFinTyp
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FiniteAdeleStrongApproximationModNat
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0008
 
 open NumberField IsDedekindDomain ReciprocityTheory.Aut Formalism.AUTREP Formalism.L2.NG
 open scoped TensorProduct

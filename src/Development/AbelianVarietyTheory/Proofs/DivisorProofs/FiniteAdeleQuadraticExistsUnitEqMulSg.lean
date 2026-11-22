@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.DefiniteBound
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIdempotentIsUnitOneAddOrSubAdele
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Hilbert90AdeleRingTensorQuadratic
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MemRangeOfOneTmulMem
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0006
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0010
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0069
 
 namespace GlobalTheory.UCls.NormOne
 

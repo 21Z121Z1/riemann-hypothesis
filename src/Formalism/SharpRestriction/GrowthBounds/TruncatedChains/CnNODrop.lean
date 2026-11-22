@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.TruncatedChains.IdxOfAppendSecond
+import Formalism.SharpRestriction.GrowthBounds.TruncatedChains.Bundle0005
 
 namespace Formalism.MainNotions.G.ExtremalProjector
 

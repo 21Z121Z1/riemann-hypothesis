@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.DecayZero
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TotallyRealSelfAnnihilatorAdeleCharacterStatement
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.RationalVectorsAdelesFundamentalDomainMassOneStatement
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0142
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0130
 
 noncomputable section
 

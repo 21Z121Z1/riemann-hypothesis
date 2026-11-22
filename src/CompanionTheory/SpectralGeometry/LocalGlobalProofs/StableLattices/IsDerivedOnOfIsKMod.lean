@@ -1,7 +1,7 @@
 import Mathlib
 import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.EigenspaceCyclicDensity.LowKMultOnePOf
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.Closure
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.RigidityTheorems.SopNegComm
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.RigidityTheorems.Bundle0001
 
 open Matrix Finset WithLp
 open scoped InnerProductSpace

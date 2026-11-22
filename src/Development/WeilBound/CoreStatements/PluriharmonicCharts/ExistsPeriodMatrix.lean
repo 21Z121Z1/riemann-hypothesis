@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.OmHeightslockG
-import Development.WeilBound.CoreStatements.PluriharmonicCharts.PeriodGramConj
-import Development.WeilBound.CoreStatements.PluriharmonicCharts.IsOpenDet
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0108
+import Development.WeilBound.CoreStatements.PluriharmonicCharts.Bundle0019
+import Development.WeilBound.CoreStatements.PluriharmonicCharts.Bundle0018
 
 open AlgebraicGeometry CategoryTheory NumberField Matrix ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Top GlobalTheory.CompanionTheory.Ar.PB GlobalTheory.CompanionTheory.Ar.PB.BMx ReciprocityTheory.AnForm.M ReciprocityTheory.AnForm.P
 open ReciprocityTheory.ChartRestriction.G.Semi

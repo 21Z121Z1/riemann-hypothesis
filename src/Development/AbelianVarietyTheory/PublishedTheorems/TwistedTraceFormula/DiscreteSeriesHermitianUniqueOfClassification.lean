@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
-import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DiscreteSeriesUpqUniqueOfClassification
-import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.BlattnerShiftsSignedParameters
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0002
+import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.Bundle0002
 import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.LowKAddStrictAnti
 
 open Matrix Finset Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.S Formalism.L2.Theta Formalism.IndefR.Mult

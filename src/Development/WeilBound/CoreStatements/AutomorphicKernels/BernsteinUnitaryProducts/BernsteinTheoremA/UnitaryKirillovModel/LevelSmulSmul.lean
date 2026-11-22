@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.ContragredientTranspose.Character
-import GroundTheory.AutomorphicForms.LocallyProfinite
+import GroundTheory.AutomorphicForms.Bundle0002
 
 noncomputable section
 

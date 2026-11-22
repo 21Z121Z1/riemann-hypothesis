@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsGenNear
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0083
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PChartNakayamaGenAgree
 set_option maxSynthPendingDepth 1
 

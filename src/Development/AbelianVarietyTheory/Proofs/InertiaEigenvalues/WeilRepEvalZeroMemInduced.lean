@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousEtaleHermitianPairNormAndMapZeroStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleHermitianPairEventuallyIsUnitContinuousAtInStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0097
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0098
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology
 
 noncomputable section

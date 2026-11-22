@@ -1,4 +1,4 @@
-import Development.EtaleCohomology.TateTwists.TwpairTensUnivPf
+import Development.EtaleCohomology.TateTwists.Bundle0028
 
 open CategoryTheory Limits AlgebraicGeometry Opposite CochainComplex CochainComplex.HomComplex GlobalTheory.EtC
 

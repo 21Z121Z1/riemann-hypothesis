@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.TateCohomology.InfRes
-import GroundTheory.ProfiniteCohomology.Colimit
+import GroundTheory.ProfiniteCohomology.Bundle0005
 import GroundTheory.ProfiniteCohomology.GaloisCohomology.Brauer
 import GroundTheory.ProfiniteCohomology.GaloisCohomology.IsZeroGroupCohomologyQuotientToInvariantsGalAdd
 import GroundTheory.ProfiniteCohomology.GaloisCohomology.BrauerInflationDefs

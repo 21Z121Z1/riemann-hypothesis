@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.LevelLetterCocycles.KillWinFromCut
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0032
 import Formalism.SharpRestriction.LevelLetterCocycles.PsCoprimeOf
 import Formalism.SharpRestriction.LevelLetterCocycles.SaturationUnramifiedOfRingCondition
 import Formalism.SharpRestriction.LevelLetterCocycles.SaturationPullbackOfRingCondition

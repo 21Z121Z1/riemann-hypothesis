@@ -1,11 +1,9 @@
-import Formalism.StatementU
+import Formalism.Bundle0002
 import Formalism.ZetaNonvanishing.OfRealNeOfRealOfLt
-import Formalism.ZetaNonvanishing.LandauEq
+import Formalism.ZetaNonvanishing.Bundle0003
 import Formalism.ZetaNonvanishing.MellinSgen
-import Formalism.ZetaNonvanishing.MellinElem
+import Formalism.ZetaNonvanishing.Bundle0001
 import Formalism.ZetaNonvanishing.ZetaRealNonvanish
-import Formalism.ZetaNonvanishing.LogDerivZeroFree
-import Formalism.ZetaNonvanishing.MellinDeriv
 
 open Complex MeasureTheory Set Filter Topology
 

@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.HasDefect
-import Development.AbelianVarietyTheory.Definitions.Divisors.HasRigidChart
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0073
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0089
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ToroidalCompactificationBis
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsSmulPtSmulPt
-import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ValPsiZero
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0079
+import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0015
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry NumberField IsLocalRing
 open scoped CategoryTheory.Obj Matrix TensorProduct
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor Formalism.L2.Pj

@@ -1,8 +1,6 @@
 import Mathlib
 import Development.WeilBound.ThetaLifts.LatticeBasics.IsCompactIntV
-import Development.AutomorphicSpectrum.Proofs.TwistedProofs.ExtensionEmbeddingEvInfRealAd
-import Development.AutomorphicSpectrum.Proofs.TwistedProofs.EqZeroOfPiInf
-import Development.AutomorphicSpectrum.Proofs.TwistedProofs.ExistsAdelePiInf
+import Development.AutomorphicSpectrum.Proofs.TwistedProofs.Bundle0008
 
 noncomputable section
 

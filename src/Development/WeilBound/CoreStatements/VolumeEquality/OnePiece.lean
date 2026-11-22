@@ -1,9 +1,9 @@
-import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifEx2
+import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0005
 import Development.WeilBound.CoreStatements.VolumeEquality.OnePieceB
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointGenericFibreStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericOfSmoothSurjectiveStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StalkSurjectiveOpenImmersionStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsResolutionGenericFibreStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0081
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0106
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0044
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0184
 
 noncomputable section
 

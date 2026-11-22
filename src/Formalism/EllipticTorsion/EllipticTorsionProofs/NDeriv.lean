@@ -1,4 +1,4 @@
-import Formalism.EllipticTorsion.Statement
+import Formalism.EllipticTorsion.Bundle0002
 
 noncomputable section
 

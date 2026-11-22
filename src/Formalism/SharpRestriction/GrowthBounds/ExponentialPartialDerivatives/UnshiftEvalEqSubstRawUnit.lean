@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.CharacterGerms.RowTiePCEq2
-import Formalism.LocalToGlobal.CharacterGerms.RowTiePAddCvSelf
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0036
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0027
 import Formalism.SharpRestriction.GrowthBounds.ExponentialPartialDerivatives.SumAtOf
 
 noncomputable section

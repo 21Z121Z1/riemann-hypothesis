@@ -1,9 +1,9 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.IsChartIff
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
 import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.JetChartLaws
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.GlobalBasisAlgebra
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUniqueCoord
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0040
 
 set_option autoImplicit false
 

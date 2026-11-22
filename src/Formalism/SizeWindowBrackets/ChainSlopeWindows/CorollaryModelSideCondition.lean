@@ -1,5 +1,5 @@
-import Formalism.SizeWindowBrackets.SlopeExcessBoundExponentZero
-import Formalism.SizeWindowBrackets.ChainSlopeWindows.WeightedMeanLemmaNeedsDegree
+import Formalism.SizeWindowBrackets.Bundle0002
+import Formalism.SizeWindowBrackets.ChainSlopeWindows.Bundle0001
 import Formalism.RankGapBounds.RankGapProofs.WeightedMeanData
 
 open Real Filter

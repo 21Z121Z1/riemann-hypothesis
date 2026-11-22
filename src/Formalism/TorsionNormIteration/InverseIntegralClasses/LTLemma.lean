@@ -1,6 +1,6 @@
 import Formalism.TorsionNormIteration.LTLemma
 import Formalism.TorsionNormIteration.InverseIntegralClasses.InvInt
-import Formalism.TorsionNormIteration.InverseIntegralClasses.MemSpanOfNormLe
+import Formalism.TorsionNormIteration.InverseIntegralClasses.Bundle0001
 
 noncomputable section
 

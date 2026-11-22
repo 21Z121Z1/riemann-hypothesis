@@ -1,10 +1,10 @@
 import Mathlib
-import ReciprocityTheory.DualLattices.TowerZeroSurjective
-import ReciprocityTheory.DualLattices.LinPairStatement
+import ReciprocityTheory.DualLattices.Bundle0026
+import ReciprocityTheory.DualLattices.Bundle0015
 import ReciprocityTheory.DualLattices.SubMemOfCompat
-import ReciprocityTheory.DualLattices.CharR
+import ReciprocityTheory.DualLattices.Bundle0031
 import ReciprocityTheory.DualLattices.SubMemSpan
-import ReciprocityTheory.DualLattices.ThmAAll
+import ReciprocityTheory.DualLattices.Bundle0029
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.UniversalCharts.LePreimageOfNil
 
 open TensorProduct Matrix ReciprocityTheory.PGsh ReciprocityTheory.PGsh.Up ReciprocityTheory.PGsh.Be2

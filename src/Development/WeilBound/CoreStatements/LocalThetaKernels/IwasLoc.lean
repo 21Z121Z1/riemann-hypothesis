@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FIwasawaE
-import Development.AutomorphicSpectrum.Proofs.MembershipProofs.BigCellLocal
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0014
+import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0005
 
 noncomputable section
 

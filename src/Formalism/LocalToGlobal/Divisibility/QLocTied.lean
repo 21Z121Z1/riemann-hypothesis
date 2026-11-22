@@ -1,7 +1,7 @@
-import Formalism.LocalToGlobal.UnitaryNorms.CharDiv
-import Formalism.LocalToGlobal.UnitaryNorms.DefsDatum
+import Formalism.LocalToGlobal.UnitaryNorms.Bundle0007
+import Formalism.LocalToGlobal.UnitaryNorms.Bundle0005
 import Formalism.SharpRestriction.Divisibility.ZetaProductPairs
-import Formalism.LocalRingCardinality.SpanPowerMembership.NZRowD
+import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0010
 
 noncomputable section
 

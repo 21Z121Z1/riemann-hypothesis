@@ -3,7 +3,7 @@ import CompanionTheory.HarishChandraModules.BesselParameterIntegrals.SmoothCycli
 import CompanionTheory.AutomorphicTheory.SchurLimitBounds.SchurOrthogonality.SchurH
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalDegreeSquareIntegrable.Unimod
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HighestWeightUniqueness.HpkMulMulHpkApply
-import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeries₂.Poulsen
+import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeries₂.Bundle0001
 
 open Matrix Filter Topology Set MeasureTheory MeasureTheory.Measure
 open scoped InnerProductSpace

@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StSegreChartDim
-import GroundTheory.HeightsAndTheta.Heights.Intersections.IsSmoothMetricOfIsSmoothHerm
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.ConeChart
-import ReciprocityTheory.AnalyticForms.RegularLocalRings.BaseChangeC
+import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0018
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0045
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0015
+import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0005
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.KleimanNefness.AlgDim
 set_option maxSynthPendingDepth 1
 

@@ -1,10 +1,9 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.UnitaryElementPrescribedBlocks
-import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsAdaptedEmpty
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LanglandsDecompositionUnipotentLevi
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.AdelicUnitaryRealPointsStructureRealPlaces
-import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.RealPtExHolds
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0072
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0067
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0070
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0045
+import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.Bundle0003
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousKapSymm
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Matrix
 open scoped TensorProduct

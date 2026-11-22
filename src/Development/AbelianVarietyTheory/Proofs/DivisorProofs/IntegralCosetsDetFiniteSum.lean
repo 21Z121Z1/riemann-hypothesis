@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IwasawaExponentHnfGL
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0510
 import GroundTheory.AutomorphicForms.SphericalIntegral
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HermiteReductionUnipotent
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardHermiteDataPowerQStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0008
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0534
 import Formalism.ArtinHasse.ArtinHasseProofs.SymmSeries
 
 open GroundTheory.Automorphic GLnLocal Iwasawa

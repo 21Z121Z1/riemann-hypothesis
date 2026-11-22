@@ -1,7 +1,7 @@
 import Formalism.LocalToGlobal.ProjectiveLattices.ChartDirectionsIntegral
 import Formalism.LocalToGlobal.ProjectiveLattices.IntAllProof
-import Formalism.LocalToGlobal.ProjectiveLattices.UnifGen
-import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0035
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
 
 set_option autoImplicit false
 

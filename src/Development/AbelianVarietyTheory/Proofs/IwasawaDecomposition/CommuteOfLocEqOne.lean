@@ -1,7 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.GaloisLevelStructure.DefsAut
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOfCompAtEqZero
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsRealAdd
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0042
 
 open NumberField IsDedekindDomain ReciprocityTheory.Aut Formalism.AUTREP Formalism.L2
 

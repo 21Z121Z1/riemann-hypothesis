@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ConvZero
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachInclusionInjectiveSaturatedInterStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FixedByCyclotomicKernelEtalePhiSolutionMemWachStatement
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0004
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0344
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0358
 
 noncomputable section
 

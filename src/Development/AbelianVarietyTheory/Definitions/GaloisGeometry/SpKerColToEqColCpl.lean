@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.TrueWtAddSSNonneg
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SumFibreEqSumOrbits
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0088
 import Formalism.LocalToGlobal.KernelLattices.ThDistC
 
 noncomputable section

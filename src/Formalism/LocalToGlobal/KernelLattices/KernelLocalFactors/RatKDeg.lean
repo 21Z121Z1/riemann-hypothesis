@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.KernelLattices.RatKDeg
+import Formalism.LocalToGlobal.KernelLattices.Bundle0004
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.JetsRationalOfKernelRationality
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ColInst
 

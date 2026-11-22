@@ -1,6 +1,5 @@
 import Mathlib
-import Formalism.PolynomialDimension.StatementNum
-import Formalism.PolynomialDimension.DigitClassSize
+import Formalism.PolynomialDimension.Bundle0002
 
 noncomputable section
 

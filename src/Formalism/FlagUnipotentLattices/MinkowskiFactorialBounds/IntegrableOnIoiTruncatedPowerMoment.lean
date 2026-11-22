@@ -1,5 +1,5 @@
 import Formalism.FlagUnipotentLattices.UnipotentStabiliserCharacterisation
-import Formalism.FormalDegreeBessel.FinalG
+import Formalism.FormalDegreeBessel.Bundle0002
 
 namespace Formalism.HermitianLatticeCounting.P
 section GrpL

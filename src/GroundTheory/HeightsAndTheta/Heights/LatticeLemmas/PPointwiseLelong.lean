@@ -1,8 +1,8 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.IsProbabilityMeasureSphereLaw
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.ContinuousHermNormGroup
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.MahlerMul
-import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.SphereMean
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0007
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0015
+import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0021
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

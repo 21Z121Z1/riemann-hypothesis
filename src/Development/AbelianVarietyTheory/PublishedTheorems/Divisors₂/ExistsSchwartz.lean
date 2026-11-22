@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.WeilThetaConvergence
-import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.FirstClauseRankZero
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemSchwartzAOfIsSchwartzBruhat
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsArchEquivEq
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0020
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0014
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0209
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0316
 
 noncomputable section
 

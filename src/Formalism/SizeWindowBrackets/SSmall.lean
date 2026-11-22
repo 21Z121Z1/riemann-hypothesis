@@ -1,5 +1,5 @@
 import Formalism.SizeWindowBrackets.GrowthBoundGivesRiemannHypothesis
-import Formalism.SizeWindowBrackets.TraceSquareAndDiagBounds
+import Formalism.SizeWindowBrackets.Bundle0001
 import Formalism.SizeWindowBrackets.GaloisToProductIsIso
 
 open Finset

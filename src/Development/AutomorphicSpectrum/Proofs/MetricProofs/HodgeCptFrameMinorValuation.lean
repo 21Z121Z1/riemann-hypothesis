@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ColFlags
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrameChangeByUnitMatrix
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0032
 
 noncomputable section
 

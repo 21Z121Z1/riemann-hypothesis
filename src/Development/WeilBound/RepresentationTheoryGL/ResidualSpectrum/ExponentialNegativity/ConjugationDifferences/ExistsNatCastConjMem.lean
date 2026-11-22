@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SiegelFinite
+import GroundTheory.AutomorphicForms.CuspidalDiscreteness.Bundle0001
 
 open Set Filter Topology
 open NumberField IsDedekindDomain

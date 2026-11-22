@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LocalToGlobal.LatticeGeometry.DegFlLApply
+import Formalism.LocalToGlobal.LatticeGeometry.Bundle0001
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.HPInvEqForm
 
 noncomputable section

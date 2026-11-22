@@ -1,8 +1,6 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsCurveIndexLinear
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsCurveRingFinite
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsCurveClosedPointChart
-import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsInvertibleIndexMul
+import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0044
+import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0003
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.Targets

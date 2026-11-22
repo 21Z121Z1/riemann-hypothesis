@@ -1,5 +1,5 @@
 import ReciprocityTheory.L2DbarEstimates.IsLocalHomeomorph
-import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.HoloContDiffAtComplex
+import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.Bundle0006
 
 namespace ReciprocityTheory.L2DbarEstimates
 

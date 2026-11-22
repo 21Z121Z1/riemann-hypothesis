@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnitMkOfFormallyUnramified
-import Development.AbelianVarietyTheory.Definitions.Divisors.ChartMeasApplyOfSubset
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0012
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.ExistsIsClosedEmbeddingOfAffine
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsHolomorphicSections
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0021
 
 set_option autoImplicit false
 

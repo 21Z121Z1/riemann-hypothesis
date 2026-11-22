@@ -1,5 +1,4 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.OneLetterGaussFinal
-import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.OneLetterGaussEvery
+import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0004
 
 noncomputable section
 open scoped BigOperators

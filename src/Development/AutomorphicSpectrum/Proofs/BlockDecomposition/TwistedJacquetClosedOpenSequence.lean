@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AvgVanish
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProjectionToTwistedEigenfunctionSupport
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFiniteSupport
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SurjectiveIntertwinerQuotientEquiv
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BijectiveIntertwinerSubrepEquiv
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0423
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0417
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0033
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0720
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0708
 
 noncomputable section
 

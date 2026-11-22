@@ -1,6 +1,6 @@
 import Formalism.AdmissibleDesigns.FiniteClassesContinuousLattice
-import Formalism.AdmissibleDesigns.SelfGood
-import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.LiftingConditionOfWindows
+import Formalism.AdmissibleDesigns.Bundle0002
+import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.Bundle0006
 import Formalism.AdmissibleDesigns.RankReductionIdempotentOne
 
 variable [hT2Core : Fact ReciprocityTheory.ChartRestriction.T2.Core]

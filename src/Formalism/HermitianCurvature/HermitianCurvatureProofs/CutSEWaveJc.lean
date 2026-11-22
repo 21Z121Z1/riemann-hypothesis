@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSEJSliceCut
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0283
 
 open MeasureTheory Filter Topology
 open scoped Matrix ComplexConjugate

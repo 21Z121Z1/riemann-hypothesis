@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalLimits.LiesOver
-import GroundTheory.LocalFields.ExtensionsOfDegree
+import GroundTheory.LocalFields.Bundle0009
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.ProfCoh

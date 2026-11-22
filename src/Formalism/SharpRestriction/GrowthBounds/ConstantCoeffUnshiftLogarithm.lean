@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.MixedCoefficientClosed
+import Formalism.SharpRestriction.GrowthBounds.Bundle0002
 import Formalism.LocalToGlobal.CharacterGerms.FirstPartialLawAtPoints
 
 noncomputable section

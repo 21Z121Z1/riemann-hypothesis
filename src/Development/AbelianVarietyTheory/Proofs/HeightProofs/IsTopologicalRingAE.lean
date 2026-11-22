@@ -1,8 +1,8 @@
 import Mathlib
-import Formalism.LocalToGlobal.BesselHermitianTheta.TiedKfin
-import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasWeil
-import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasSign
-import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.FockOrthogonalDecomposition
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0004
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0001
+import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.Bundle0007
 
 noncomputable section
 

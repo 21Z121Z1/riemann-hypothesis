@@ -1,5 +1,5 @@
-import Development.EtaleCohomology.CohomologicalPurity.LeafFlqPf
-import Development.EtaleCohomology.KummerTheory.GluePf
+import Development.EtaleCohomology.CohomologicalPurity.Bundle0006
+import Development.EtaleCohomology.KummerTheory.Bundle0007
 import Development.EtaleCohomology.KummerTheory.FlasquePf
 
 noncomputable section

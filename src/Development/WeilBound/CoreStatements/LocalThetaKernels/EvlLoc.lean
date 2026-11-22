@@ -1,10 +1,9 @@
 import Development.AbelianVarietyTheory.Definitions.Divisors.HilbertNinetyQuotientHomEqIff
-import Development.AutomorphicSpectrum.Proofs.MembershipProofs.GoodCharIsLocallyConstant
-import Development.AutomorphicSpectrum.Proofs.MembershipProofs.IntegrablePair
+import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0003
+import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0006
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.CyclicAndLine
-import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ExistsEqMulApplyZero
-import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ExistsInvariantForm
-import Development.AutomorphicSpectrum.Proofs.MembershipProofs.DualNumberGraphFiltrationIsotropicOfSkew
+import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0002
+import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0005
 
 noncomputable section
 

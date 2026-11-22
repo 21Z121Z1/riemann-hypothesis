@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ArchimedeanSchwartz.ShiftOf
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SumPermOfNotInjective
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0180
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.TowerBaseChange
 
 noncomputable section

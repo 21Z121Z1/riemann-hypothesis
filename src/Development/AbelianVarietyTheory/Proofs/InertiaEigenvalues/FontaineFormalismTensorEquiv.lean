@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.TensorMultiplication
+import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0004
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.CrystallineSubrepresentation
 
 noncomputable section

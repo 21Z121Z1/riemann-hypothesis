@@ -1,10 +1,10 @@
 import Mathlib
-import Formalism.LocalToGlobal.Columns.ColFormsLemmas
+import Formalism.LocalToGlobal.Columns.Bundle0005
 import Formalism.LocalToGlobal.Columns.LevGCount
 import Formalism.LocalToGlobal.Columns.AlgebraMapMemMaximalIdealPowIff
-import Formalism.LocalToGlobal.Columns.Inputs
+import Formalism.LocalToGlobal.Columns.Bundle0011
 import Formalism.GL3MeanSquares.HookFormulaTorsion.DimensionMassJointBound
-import Formalism.GL3MeanSquares.HookFormulaTorsion.OneAddInvPowLeExpOne
+import Formalism.GL3MeanSquares.HookFormulaTorsion.Bundle0005
 import Formalism.GL3MeanSquares.HookFormulaTorsion.FactorialProductRearrangement
 import Formalism.GL3MeanSquares.HookFormulaTorsion.SumWeightsOverPrimeLeHalfDegree
 import Formalism.HermitianLattices.FinalNeighbourConstruct

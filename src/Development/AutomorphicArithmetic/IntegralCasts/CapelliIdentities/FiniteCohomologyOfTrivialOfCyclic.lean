@@ -4,9 +4,9 @@ import GroundTheory.ProfiniteCohomology.RestrictedRamification.FiniteRoots
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.FiniteOpen
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseChange
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.FiniteVanishing.Devissage
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CyclicTrivialInductionRing
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.HomologyFiniteShortExact
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CochainInjectiveExact
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0011
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0028
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0007
 
 private theorem isDiscreteRep_of_forall_eq {k G : Type} [CommRing k] [Group G]
     [TopologicalSpace G] (A : Rep.{0, 0, 0} k G) (h : ∀ (g : G) (a : A.V), A.ρ g a = a) :

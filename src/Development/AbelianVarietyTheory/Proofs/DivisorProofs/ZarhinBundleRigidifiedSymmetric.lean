@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KappaOK
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMonHomOfClassifying
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeHomEqOfPowEqStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3462
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2346
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3489
 
 noncomputable section
 

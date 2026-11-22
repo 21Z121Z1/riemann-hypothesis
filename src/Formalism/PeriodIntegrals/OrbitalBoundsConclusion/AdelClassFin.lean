@@ -1,6 +1,0 @@
-import Formalism.PeriodIntegrals.AdelClassFin
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicClassFiniteness.AdelClassFinOfSvReal
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicClassFiniteness.SuccessiveVectorReal
-
-theorem adelic_class_set_finite : PI.AdelClassFin.AdelClassFin :=
-  PIW.AdelClassFin.adelClassFin_of_svReal PIW.AdelClassFin.successive_vector_real

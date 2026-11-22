@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteReal.WeilFull
-import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsVacFOfIsVacVec
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0020
+import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0004
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MulNonsingInvCancelRightGram
 
 noncomputable section

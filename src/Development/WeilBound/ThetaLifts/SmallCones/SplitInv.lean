@@ -1,9 +1,9 @@
-import Development.WeilBound.ThetaLifts.SmallCones.HodgeTateFromSandwich
-import Development.WeilBound.ThetaLifts.SmallCones.ThetaKernelGeneralIdentity
-import Development.WeilBound.ThetaLifts.LocalTheory.SplitInv2
-import Development.WeilBound.ThetaLifts.CartanFactorisation.IntegrableOnRight
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyConstantFinprodSchwartzBruhatFiniteAdel
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasCompactSupportFinprodSchwartzBruhatFiniteAdel
+import Development.WeilBound.ThetaLifts.SmallCones.Bundle0002
+import Development.WeilBound.ThetaLifts.SmallCones.Bundle0003
+import Development.WeilBound.ThetaLifts.LocalTheory.Bundle0001
+import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1726
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1721
 
 set_option linter.unusedSectionVars false
 

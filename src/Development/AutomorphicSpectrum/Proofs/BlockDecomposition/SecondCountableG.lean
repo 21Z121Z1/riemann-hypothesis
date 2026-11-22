@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AverageDerivativeL1Bound
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0202
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveSolutionExistence
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveKernelExistence
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DifferentiableAtOfSmooth
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsMultOfFintype
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0206
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0203
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0204
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.KTypeLemma.RightHolRightHolEq
 
 noncomputable section

@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.LocalDensities.StatementsFSDensity
+import GroundTheory.HeightsAndTheta.Heights.LocalDensities.Bundle0002
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.BergmanProjective
-import ReciprocityTheory.AnalyticForms.PotentialTheory.HessCIsHermitian
+import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0003
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.FourB

@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.GrowthBounds.ChartRank.HypInvLe
-import Formalism.LocalToGlobal.GlobalTheory.GL6.ValuationClassTranslateMem
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0005
 
 noncomputable section
 

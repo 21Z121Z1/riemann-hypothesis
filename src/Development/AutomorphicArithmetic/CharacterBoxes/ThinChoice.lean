@@ -2,9 +2,8 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LogCondLeThree
 import Development.AutomorphicArithmetic.MeanSquareBounds.Thin
-import Development.AutomorphicArithmetic.MeanSquareBounds.SmallZeros
-import Development.AutomorphicArithmetic.ConductorsKronecker.realClass
-import Development.AutomorphicArithmetic.ConductorsKronecker.OddQSLe
+import Development.AutomorphicArithmetic.MeanSquareBounds.Bundle0001
+import Development.AutomorphicArithmetic.ConductorsKronecker.Bundle0002
 
 section
 

@@ -1,8 +1,8 @@
 import Mathlib
-import Formalism.LocalToGlobal.ProjectiveLattices.FullExists
-import Formalism.LocalToGlobal.ProjectiveLattices.RecCond
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0042
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0036
 import Formalism.LocalToGlobal.ProjectiveLattices.ExistsParameterConditions
-import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.CoeSelfDualLatticeInFrameCoordinatesEq
+import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Bundle0001
 import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.PermutesRefl
 
 set_option autoImplicit false

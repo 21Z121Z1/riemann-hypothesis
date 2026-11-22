@@ -1,4 +1,4 @@
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.FdDefs
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0002
 
 noncomputable section
 

@@ -1,9 +1,9 @@
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SchurStep
-import Development.WeilBound.ThetaLifts.LeviDeterminants.ActsEx
-import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfDict
+import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0007
+import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0004
 import Development.AutomorphicArithmetic.LocalEmbeddings.OppLagr
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SingleLocalAdele
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MultiplicationPackage
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0049
 
 noncomputable section
 

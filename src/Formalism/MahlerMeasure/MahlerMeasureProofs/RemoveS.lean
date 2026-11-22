@@ -1,4 +1,4 @@
-import Formalism.MahlerMeasure.TieVars
+import Formalism.MahlerMeasure.Bundle0003
 import Formalism.MahlerMeasure.MahlerMeasureProofs.LevelAct
 
 namespace Formalism.GM.ProjS

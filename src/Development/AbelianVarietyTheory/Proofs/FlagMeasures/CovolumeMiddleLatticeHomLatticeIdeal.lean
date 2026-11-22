@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsVolData
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurePreservingOfBall
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FrameDualTupleIdealsCastAdd
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0233
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegralUnipotentMiddleRowMemHomLattice
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CovolumeInverseDifferentPowMulLattice
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0239
 
 noncomputable section
 

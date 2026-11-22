@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.GalTorsConj
+import Formalism.PeriodIntegrals.Bundle0004
 
 noncomputable section
 

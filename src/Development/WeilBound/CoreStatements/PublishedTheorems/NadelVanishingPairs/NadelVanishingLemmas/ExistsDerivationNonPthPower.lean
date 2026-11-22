@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.IsEulerContraction
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0040
 
 open GlobalTheory GlobalTheory.LogDR
 

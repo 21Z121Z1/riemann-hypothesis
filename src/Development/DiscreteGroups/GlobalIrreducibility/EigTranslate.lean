@@ -1,5 +1,5 @@
 import Mathlib
-import Development.DiscreteGroups.GlobalIrreducibility.DzCliff
+import Development.DiscreteGroups.GlobalIrreducibility.Bundle0001
 
 open Module Polynomial
 

@@ -1,8 +1,7 @@
-import Formalism.LocalToGlobal.GlobalTheory.GL6.ValuationClassTranslateMem
-import Formalism.LocalToGlobal.GlobalTheory.BlockActions.ClassMapEstimateOfPartial
-import Formalism.LocalToGlobal.GlobalTheory.BlockActions.ExistsOnOfPosDef
-import Formalism.LocalToGlobal.GlobalTheory.BlockActions.TilEqLevel
-import Formalism.LocalToGlobal.GlobalTheory.BlockActions.DefNOfFact
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0005
+import Formalism.LocalToGlobal.GlobalTheory.BlockActions.Bundle0004
+import Formalism.LocalToGlobal.GlobalTheory.BlockActions.Bundle0003
+import Formalism.LocalToGlobal.GlobalTheory.BlockActions.Bundle0002
 
 noncomputable section
 

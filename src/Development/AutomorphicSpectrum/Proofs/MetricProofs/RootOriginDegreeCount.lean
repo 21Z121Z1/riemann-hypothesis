@@ -1,11 +1,11 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.VolumeInputs
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.TowerOrigin
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.SumFundCoMulSumIic
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexPointsIffCentres
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtIffChartLocalizationStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginCoordField
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AlgebraicElementHomogRelation
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0036
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0052
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0023
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0129
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0021
 open MvPolynomial NumberField ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Top GlobalTheory.CompanionTheory.Ar.Small
 open ReciprocityTheory.AnForm.M ReciprocityTheory.AnForm.P GlobalTheory.CompanionTheory.Ar.Small.Fund
 

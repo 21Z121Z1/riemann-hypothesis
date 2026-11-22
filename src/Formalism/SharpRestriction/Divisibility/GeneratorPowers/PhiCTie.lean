@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PhiCSt
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0023
 
 set_option autoImplicit false
 

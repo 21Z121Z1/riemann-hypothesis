@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.IsNormalisedOfIsDiscrete
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CapCommuteRtInfGL
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0007
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0125
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsCsdOfCharOfRes
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.GlRelNegTAndQdet
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0031
 
 noncomputable section
 

@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
-import Formalism.LocalToGlobal.IndefiniteReal.EqZeroOfVec
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0031
 
 noncomputable section
 

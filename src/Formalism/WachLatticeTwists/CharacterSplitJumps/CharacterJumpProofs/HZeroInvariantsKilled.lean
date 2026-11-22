@@ -1,7 +1,6 @@
 import Formalism.WachLatticeTwists.CharacterSplitJumps.WachTwistTheoremFromTorsionBound
 import Formalism.WachLatticeTwists.CharacterSplitJumps.CharacterJumpProofs.InChiSplit
-import Formalism.WachLatticeTwists.CharacterSplitJumps.CharacterJumpProofs.HZeroSplitAllPlaces
-import Formalism.WachLatticeTwists.CharacterSplitJumps.CharacterJumpProofs.PropLocBK
+import Formalism.WachLatticeTwists.CharacterSplitJumps.CharacterJumpProofs.Bundle0001
 
 open Finset Classical
 

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.QuasicoherentCohomology.MemSaturatedOrderIsoSubspaceSpanSymmApply
-import ReciprocityTheory.SemistableReduction.TorsionNonvanishStatement
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Signature
+import ReciprocityTheory.SemistableReduction.Bundle0003
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0001
 
 open IsDedekindDomain IsDedekindDomain.HeightOneSpectrum Matrix
 open scoped nonZeroDivisors

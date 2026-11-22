@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.DigitsOKOfCompat
+import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0006
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.TensorProductTheorem.Operators
+import GroundTheory.AutomorphicForms.TensorProductTheorem.Bundle0001
 
 noncomputable section
 

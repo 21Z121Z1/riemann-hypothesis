@@ -1,5 +1,5 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAPRCoreCut
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAPRAsmPS
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0115
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0189
 
 open Formalism.REAL Formalism.QuantumDeterminants Formalism.FourierDecayAlt Formalism.FourierDecayAlt.Q NumberField
 open scoped ComplexConjugate Matrix

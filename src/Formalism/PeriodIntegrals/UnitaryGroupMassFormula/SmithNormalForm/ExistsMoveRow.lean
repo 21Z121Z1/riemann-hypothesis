@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.SmithMat
+import Formalism.PeriodIntegrals.Bundle0010
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SmithNormalForm.IsUnitOneAddVecMulVec
 
 namespace PI.SmithWork

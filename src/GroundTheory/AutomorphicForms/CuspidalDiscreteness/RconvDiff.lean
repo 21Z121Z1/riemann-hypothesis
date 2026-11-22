@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.AutomorphicForms.CuspidalDiscreteness.DiffBound
+import GroundTheory.AutomorphicForms.CuspidalDiscreteness.Bundle0001
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.TorusReduction
 
 open MeasureTheory Set Filter Topology Function

@@ -1,5 +1,5 @@
 import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.SqChar
-import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.UCharOf
+import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.Bundle0002
 import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.SpBlkSurj
 import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.BlockP
 

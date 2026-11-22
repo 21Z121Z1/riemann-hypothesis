@@ -1,8 +1,7 @@
 import Mathlib
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.ExistsIntEKMulVbar
-import ReciprocityTheory.ClassFieldTheory.LocalClassField.Kummer
-import ReciprocityTheory.ClassFieldTheory.LocalClassField.FinCoh
-import ReciprocityTheory.ClassFieldTheory.LocalClassField.EqZeroOfResEqZeroOfCoprime
+import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0009
+import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0003
 
 namespace ReciprocityTheory.DiscreteGroups.LocalClassField
 

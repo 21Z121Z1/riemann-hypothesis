@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.SharpRestriction.Divisibility.ThetaNormsAndLinks
 import Formalism.LocalRingCardinality.DataParams
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-import Formalism.SharpRestriction.Divisibility.RankTruncation.RkLemma
+import Formalism.SharpRestriction.Divisibility.RankTruncation.Bundle0001
 
 namespace ConditionalKappaBounds.Rk
 

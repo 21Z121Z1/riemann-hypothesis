@@ -1,10 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.Imports
-import Development.AbelianVarietyTheory.Definitions.Divisors.HasQIff
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasQExpansionOfLevelLinearOperations
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasQExpansionOfLevelMulOfPosLevel
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasQExpansionOfLevelCoeffAndFunctionUnique
-import Development.AbelianVarietyTheory.Definitions.Foundations.MultipliableAndSgNeZero
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0003
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0002
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0158
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0005
 
 noncomputable section
 

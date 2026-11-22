@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.EllipticTorsion.EllipticTorsionWeights
-import Formalism.EllipticTorsion.EllipticTorsionProofs.CompExp
+import Formalism.EllipticTorsion.Bundle0004
+import Formalism.EllipticTorsion.EllipticTorsionProofs.Bundle0003
 import Formalism.FormalGroupLog.LogDeterminesLaw
 
 open PowerSeries

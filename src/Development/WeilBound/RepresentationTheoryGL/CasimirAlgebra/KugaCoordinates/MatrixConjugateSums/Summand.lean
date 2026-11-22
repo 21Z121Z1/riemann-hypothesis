@@ -1,5 +1,5 @@
 import Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.KugaCoordinates.IsStarRep
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OneParameterSubgroupExists
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0526
 
 noncomputable section
 

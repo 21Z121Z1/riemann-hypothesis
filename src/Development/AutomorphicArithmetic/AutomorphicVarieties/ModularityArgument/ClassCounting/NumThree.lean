@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ClassCounting.LemmaKOfSteps
-import Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.NumGens
+import Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.Bundle0002
 
 open NumberField IsDedekindDomain UpperTheory.V UpperTheory.V.KL UpperTheory.V.ZK
 

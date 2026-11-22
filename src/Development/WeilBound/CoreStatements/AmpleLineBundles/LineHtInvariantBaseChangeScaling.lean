@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0012
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HeightLowerBoundChartNorm
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.FieldChange
 

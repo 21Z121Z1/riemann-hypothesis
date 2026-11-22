@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsIntOv
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ConjMemCompletedLatticeIffDualSplitPlace
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SmulMemLatO
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MemRangeOfOneTmulMem
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.RealIdemMulOfReal
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0103
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0122
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0068
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0069
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0072
 
 noncomputable section
 

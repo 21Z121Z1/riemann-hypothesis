@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.WeilIsGrpPullbackOfCommute
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PushEquivSymmLeft
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.FixTorsionOfForallGeometric
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0085
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0108
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LevelMapFibreSimplyTransitive
 
 noncomputable section

@@ -1,6 +1,5 @@
 import Mathlib
-import CompanionTheory.AutomorphicTheory.BesselWaveGrids.InterlacingGrids.PairOKOfInterlace
-import CompanionTheory.AutomorphicTheory.BesselWaveGrids.InterlacingGrids.CloudProd
+import CompanionTheory.AutomorphicTheory.BesselWaveGrids.InterlacingGrids.Bundle0001
 import CompanionTheory.AutomorphicTheory.BesselWaveGrids.InterlacingGrids.CloudPair
 
 namespace GroundTheory.BlockD.FourierDecayAlt.WaveGridLiftGrid

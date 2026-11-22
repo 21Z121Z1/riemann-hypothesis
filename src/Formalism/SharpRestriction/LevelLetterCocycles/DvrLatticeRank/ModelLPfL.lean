@@ -1,6 +1,6 @@
 import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.ModelLPfJ
-import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.ModelFPfG
-import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.FramePfHyp
+import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.Bundle0021
+import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.Bundle0012
 import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.ConstantCoeffQZeroEqP
 import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.GeneratorBoundOfHypotheses
 

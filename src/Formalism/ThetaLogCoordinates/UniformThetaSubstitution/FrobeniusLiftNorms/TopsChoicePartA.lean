@@ -1,6 +1,6 @@
 import Mathlib
-import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.OddLogRelation
-import Formalism.GaussJetBounds.GaussJetProofs.NormNatCastEqPowPadicValNat
+import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0001
+import Formalism.GaussJetBounds.GaussJetProofs.Bundle0002
 
 noncomputable section
 

@@ -1,9 +1,6 @@
-import Formalism.PeriodIntegrals.QmBorderFull
-import Formalism.PeriodIntegrals.QmBorderES
-import Formalism.PeriodIntegrals.QmColExp
-import Formalism.PeriodIntegrals.QmRowExp
-import Formalism.PeriodIntegrals.QmSkip
-import Formalism.RealPlaceAnalysis.RealPlaceTaylor.QuantumDetHighestWeightHolds
+import Formalism.PeriodIntegrals.Bundle0023
+import Formalism.PeriodIntegrals.Bundle0022
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0005
 
 open Finset Formalism.REAL
 

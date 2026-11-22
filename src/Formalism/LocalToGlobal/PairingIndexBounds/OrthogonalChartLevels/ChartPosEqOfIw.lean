@@ -1,7 +1,7 @@
 import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.FrecAt
-import Formalism.LocalToGlobal.InertKernelTheory.FrameInt
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0013
 import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.PosBridge
-import Formalism.LocalRingCardinality.DataKerP
+import Formalism.LocalRingCardinality.Bundle0005
 
 noncomputable section
 

@@ -1,9 +1,9 @@
 import Mathlib
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsArith
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsEmbeddingWeight
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsTwistIntersectionInt
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsUnitApprox
-import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsConstantsRegular
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0024
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0061
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0002
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0023
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.HilbertSamuel

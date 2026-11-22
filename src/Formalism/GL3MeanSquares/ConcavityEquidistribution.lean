@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.LogVandermondeBounds.MultinomialPowerBound
+import Formalism.LogVandermondeBounds.Bundle0001
 
 namespace Formalism.HermitianLattices.TraceIntegrality
 

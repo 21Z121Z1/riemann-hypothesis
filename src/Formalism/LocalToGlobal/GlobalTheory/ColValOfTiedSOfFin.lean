@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.GlobalTheory.WeightLevelZeroEqOne
-import Formalism.LocalToGlobal.GlobalTheory.ColValOfTiedSOfRest
+import Formalism.LocalToGlobal.GlobalTheory.Bundle0007
 
 noncomputable section
 

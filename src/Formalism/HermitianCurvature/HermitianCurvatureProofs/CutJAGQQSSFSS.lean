@@ -1,7 +1,7 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAGQQSSFCut
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0122
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.NormalFormOrderZeroOfParts
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CoordinateCommuteRaisingConstant
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCRadSpSmooth
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0108
 
 open Formalism.REAL Formalism.QuantumDeterminants Formalism.FourierDecayAlt
 

@@ -1,7 +1,7 @@
-import ReciprocityTheory.GroupCohomology.CupConnRightStatement
-import ReciprocityTheory.GroupCohomology.DEqZeroOfMemB
+import ReciprocityTheory.GroupCohomology.Bundle0002
+import ReciprocityTheory.GroupCohomology.Bundle0003
 import ReciprocityTheory.GroupCohomology.ConnNatHolds
-import ReciprocityTheory.GroupCohomology.IsSuccSubset
+import ReciprocityTheory.GroupCohomology.Bundle0005
 
 namespace ReciprocityTheory.Coh
 

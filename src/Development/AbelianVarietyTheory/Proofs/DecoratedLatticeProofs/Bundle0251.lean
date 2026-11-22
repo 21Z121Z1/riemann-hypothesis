@@ -1,0 +1,143 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0023
+import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.Bundle0002
+import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.Bundle0003
+import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.Bundle0001
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0020
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0216
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0230
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0012
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0015
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0008
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0024
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.TransvectionAction
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0009
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisenbergWordsWeilOperatorSupNormPolynomialGrow
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0147
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0234
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0194
+
+-- bundled from Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilChartSiegelParabolicAction
+section
+open scoped Matrix NNReal TensorProduct Classical
+open MeasureTheory NumberField IsDedekindDomain Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.L2.Theta Formalism.L2.Pj Formalism.IndefR.Datum
+open GlobalTheory.AutomorphicL2Unitary GlobalTheory.AdelicU GlobalTheory.Doubling GlobalTheory.Cont GlobalTheory.Eis GlobalTheory.MixModel GlobalTheory.RegSW GlobalTheory.RegSch
+open GlobalTheory.IndefiniteRowSideFullHecke.ModerateGrowthSchwartz (schwartzA)
+open GlobalTheory.IndefiniteRowSideFullHecke.SphericalZero (swSec sZero IsKFinVec)
+open GlobalTheory.Core.Rk.SW (sch)
+open GlobalTheory.Mem.AutSpace (SmFun)
+attribute [local instance] Formalism.BasicNotions.Host.cmStar
+
+namespace GlobalTheory.RegSch
+
+theorem kfin_of_conj : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (θ : InfFam D) (A T : HSp D) (χ : (AE D)ˣ →* Circle) (om : GA D (dblSp A) × GA D T →* Module.End ℂ (WO (dblSp A) T → ℂ)) (ν : Measure (WO A T)) (𝓨 : Set (WO A T)) (μ : D.host.E) (κ : GA D (dblSp A) ≃* GlobalTheory.StdUnn.G D A.rank) (omS : GlobalTheory.StdUnn.G D A.rank →* Module.End ℂ (schwartzA θ T.rank A.rank)), Pass ψ θ A T χ om ν 𝓨 μ κ omS → ∀ (a : GL (Fin A.rank) (AE D)) (p : siegel A), GlobalTheory.StdUnn.IsConj A a κ p → ∀ f, IsThetaFunO ψ (dblSp A) T f → IsKFinVec om (Khat A a) f → ∀ (h : GA D T) (Φ : schwartzA θ T.rank A.rank), Φ.1 = sch ψ A T ν 𝓨 (om ((p : GA D (dblSp A))⁻¹, h) f) → KFin omS Φ := by
+  intro D ψ θ A T χ om ν 𝓨 μ κ omS hP a p hC f hf hK h Φ hΦ
+  have lin := fun (g g' : WO (dblSp A) T → ℂ) (hg : IsThetaFunO ψ (dblSp A) T g)
+      (hg' : IsThetaFunO ψ (dblSp A) T g') (c : ℂ) =>
+    GlobalTheory.StdUnn.sch_linear D ψ hP.weil.std A T ν 𝓨 hP.cov g g' hg hg' c
+  set S := Submodule.span ℂ {v : WO (dblSp A) T → ℂ | ∃ k ∈ Khat A a, v = om (k, 1) f} with hSdef
+  have hSth : ∀ v ∈ S, IsThetaFunO ψ (dblSp A) T v := by
+    intro v hv
+    induction hv using Submodule.span_induction with
+    | mem x hx => obtain ⟨k, -, rfl⟩ := hx; exact hP.weil.om_pres _ _ hf
+    | zero => simpa using (lin f f hf hf 0).2.1
+    | add x y _ _ hx hy => exact (lin x y hx hy 1).1
+    | smul c x _ hx => exact (lin x x hx hx c).2.1
+  let q : GA D (dblSp A) × GA D T := ((p : GA D (dblSp A))⁻¹, h)
+  let L : S →ₗ[ℂ] (Mx D T.rank A.rank → ℂ) :=
+    { toFun := fun v => sch ψ A T ν 𝓨 (om q v.1)
+      map_add' := fun v w => by
+        have hv := hP.weil.om_pres q _ (hSth v.1 v.2)
+        have hw := hP.weil.om_pres q _ (hSth w.1 w.2)
+        simp only [Submodule.coe_add, map_add]
+        exact (lin _ _ hv hw 1).2.2.1
+      map_smul' := fun c v => by
+        have hv := hP.weil.om_pres q _ (hSth v.1 v.2)
+        simp only [Submodule.coe_smul, map_smul, RingHom.id_apply]
+        exact (lin _ _ hv hv c).2.2.2 }
+  haveI : FiniteDimensional ℂ S := hK
+  have hle : Submodule.map (schwartzA θ T.rank A.rank).subtype
+      (Submodule.span ℂ {Ψ : schwartzA θ T.rank A.rank | ∃ k ∈ StdUnn.K D A.rank, Ψ = omS k Φ}) ≤
+      LinearMap.range L := by
+    rw [Submodule.map_span, Submodule.span_le]
+    rintro _ ⟨Ψ, ⟨k, hk, rfl⟩, rfl⟩
+    have hk' : (p : GA D (dblSp A)) * κ.symm k * (p : GA D (dblSp A))⁻¹ ∈ Khat A a := by
+      rw [hC]; simpa [mul_assoc] using hk
+    refine ⟨⟨om ((p : GA D (dblSp A)) * κ.symm k * (p : GA D (dblSp A))⁻¹, 1) f,
+      Submodule.subset_span ⟨_, hk', rfl⟩⟩, ?_⟩
+    have htr := hP.trans (κ.symm k) (om q f) (hP.weil.om_pres q f hf) Φ hΦ
+    rw [MulEquiv.apply_symm_apply] at htr
+    show sch ψ A T ν 𝓨 (om q (om ((p : GA D (dblSp A)) * κ.symm k * (p : GA D (dblSp A))⁻¹, 1) f)) = (omS k Φ).1
+    rw [htr, ← Module.End.mul_apply, ← map_mul, ← Module.End.mul_apply, ← map_mul]
+    congr 3
+    ext <;> simp [q, mul_assoc]
+  haveI : FiniteDimensional ℂ (Submodule.map (schwartzA θ T.rank A.rank).subtype
+      (Submodule.span ℂ {Ψ : schwartzA θ T.rank A.rank | ∃ k ∈ StdUnn.K D A.rank, Ψ = omS k Φ})) :=
+    Submodule.finiteDimensional_of_le hle
+  exact LinearEquiv.finiteDimensional
+    (Submodule.equivMapOfInjective _ (Submodule.injective_subtype _) _).symm
+
+end GlobalTheory.RegSch
+end
+
+-- bundled from Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilOperatorThetaFunSupModerateGrowth
+section
+noncomputable section
+
+open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum MeasureTheory IsDedekindDomain NumberField Matrix
+open GlobalTheory.MixModel GlobalTheory.MixPer GlobalTheory.Grow
+open scoped TensorProduct
+attribute [local instance] Formalism.BasicNotions.Host.cmStar
+open GlobalTheory.Unf
+open scoped ComplexOrder ENNReal NNReal ContDiff
+
+namespace GlobalTheory.SupThetaGrowth
+
+theorem om_sup_growth : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (S T : HSp D) (χS χT : (AE D)ˣ →* Circle) (om : Om S T), IsWeilDatumO ψ S T χS χT om → ∀ f, IsThetaFunO ψ S T f → ∃ (C : ℝ) (A : ℕ), ∀ g h w, ‖om (g, h) f w‖ ≤ C * (height S g * height T h) ^ A := by
+  intro D ψ S T χS χT om hom f hf
+  obtain ⟨θ, hθ⟩ := GlobalTheory.Member.exists_isInfFam_family D
+  obtain ⟨N, hN⟩ := GlobalTheory.WeilWordGrowth.om_pointwise D ψ S T χS χT om hom θ hθ
+  obtain ⟨c, -, hc⟩ := hN f hf
+  exact ⟨c, N, hc⟩
+
+end GlobalTheory.SupThetaGrowth
+end
+end
+
+-- bundled from Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilRepSourceLineEqOppositeTargetLine
+section
+open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum MeasureTheory IsDedekindDomain NumberField Matrix
+open GlobalTheory.MixModel GlobalTheory.MixPer GlobalTheory.Grow
+open scoped TensorProduct
+attribute [local instance] Formalism.BasicNotions.Host.cmStar
+open GlobalTheory.Unf
+
+namespace GlobalTheory.ConjLine
+
+theorem weil_source_line_opposite : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (L L' S : HSp D) (τ : Matrix (Fin L.rank) (Fin L'.rank) D.host.E), L.rank = L'.rank → τᴴ ⬝ (L.gram ⬝ τ) = (((-1 : ℤ) : D.host.E) * (D.host.xi0 * star D.host.xi0)) • L'.gram → ∀ (χz χ χ' : ((AE D)ˣ →* Circle)) (om : Om L S) (om' : Om S L'), IsWeilDatumO ψ L S χz χ om → IsWeilDatumO ψ S L' χ' χz⁻¹ om' → ∀ f, IsThetaFunO ψ L S f → IsThetaFunO ψ S L' (fun w => f (GlobalTheory.IndefiniteRowSideFullHecke.SkewGramHalfModule.ofAdj L S ((rat τ : Mx D L.rank L'.rank) ⬝ w))) ∧ ∀ h, om' (h, 1) (fun w => f (GlobalTheory.IndefiniteRowSideFullHecke.SkewGramHalfModule.ofAdj L S ((rat τ : Mx D L.rank L'.rank) ⬝ w))) = fun w => om (1, h) f (GlobalTheory.IndefiniteRowSideFullHecke.SkewGramHalfModule.ofAdj L S ((rat τ : Mx D L.rank L'.rank) ⬝ w)) := by
+  intro D ψ L L' S τ hrk hg χz χ χ' om om' hom hom' f hf
+  have hstd : IsStdChar D ψ (-1) := hom.std
+  have CA := GlobalTheory.T.weilConjugationAdjointRule_standard_char D ψ hstd S L'
+  have h1 := (CA.conj_target χ' χz⁻¹ om' hom').1
+  rw [inv_inv] at h1
+  have hg' : τᴴ ⬝ (L.gram ⬝ τ) = (((1 : ℤ) : D.host.E) * (D.host.xi0 * star D.host.xi0)) • (GlobalTheory.ChiGrid.negSp L').gram := by
+    rw [hg, GlobalTheory.ChiGrid.negSp_gram]; simp
+  have H := GlobalTheory.T.weilRep_conj_sourceLine_eq_targetLine D ψ L (GlobalTheory.ChiGrid.negSp L') S τ hrk hg' χz χ χ'⁻¹ om (GlobalTheory.IndefiniteRowSideFullHecke.ConjugateAdjointDagger.conjTarget om') hom h1 f hf
+  refine ⟨?_, ?_⟩
+  · have := H.1
+    exact (CA.theta_neg _).1.mp this
+  · intro h
+    have key : ∀ F : WO S L' → ℂ, GlobalTheory.IndefiniteRowSideFullHecke.ConjugateAdjointDagger.conjTarget om' (h, 1) (GlobalTheory.IndefiniteRowSideFullHecke.ConjugateAdjointDagger.cj id F) = GlobalTheory.IndefiniteRowSideFullHecke.ConjugateAdjointDagger.cj id (om' (h, 1) F) := by
+      intro F
+      have e := GlobalTheory.IndefiniteRowSideFullHecke.ConjugateAdjointDagger.cjEnd_cj (Equiv.refl (WO S L')) (om' (h, (GlobalTheory.ChiGrid.negGA L').symm 1)) F
+      simpa [GlobalTheory.IndefiniteRowSideFullHecke.ConjugateAdjointDagger.conjTarget] using e
+    have H2 := H.2 h
+    have K : GlobalTheory.IndefiniteRowSideFullHecke.ConjugateAdjointDagger.conjTarget om' (h, 1) (fun w => star (f (GlobalTheory.IndefiniteRowSideFullHecke.SkewGramHalfModule.ofAdj L S ((rat τ : Mx D L.rank L'.rank) ⬝ w)))) = GlobalTheory.IndefiniteRowSideFullHecke.ConjugateAdjointDagger.cj id (om' (h, 1) (fun w => f (GlobalTheory.IndefiniteRowSideFullHecke.SkewGramHalfModule.ofAdj L S ((rat τ : Mx D L.rank L'.rank) ⬝ w)))) := key (fun w => f (GlobalTheory.IndefiniteRowSideFullHecke.SkewGramHalfModule.ofAdj L S ((rat τ : Mx D L.rank L'.rank) ⬝ w)))
+    rw [K] at H2
+    funext w
+    have := congrArg star (congrFun H2 w)
+    simpa [GlobalTheory.IndefiniteRowSideFullHecke.ConjugateAdjointDagger.cj] using this
+
+end GlobalTheory.ConjLine
+end
+

@@ -2,7 +2,7 @@ import Development.WeilBound.CoreStatements.CompactAveragingSplitting.Eigenvecto
 import Development.WeilBound.CoreStatements.LocalThetaKernels.LocrepAd
 import Development.WeilBound.CoreStatements.LocalThetaKernels.LinearIndependentOfNotMem
 import Development.WeilBound.CoreStatements.LocalThetaKernels.ExistsSmallSubgroups
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardTraceAdelicAddCharLocalComponentNeOne
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1803
 
 noncomputable section
 

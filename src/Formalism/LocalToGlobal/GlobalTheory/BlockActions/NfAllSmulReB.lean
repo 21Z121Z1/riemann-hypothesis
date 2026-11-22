@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.GlobalTheory.BlockActions.ExistsOnOfPosDef
-import Formalism.LocalToGlobal.GlobalTheory.NfAllSmulSelfRe
+import Formalism.LocalToGlobal.GlobalTheory.BlockActions.Bundle0003
+import Formalism.LocalToGlobal.GlobalTheory.Bundle0005
 
 noncomputable section
 

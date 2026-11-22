@@ -1,4 +1,4 @@
-import Development.WeilBound.ThetaLifts.Reductions.IsoOfIntegral
+import Development.WeilBound.ThetaLifts.Reductions.Bundle0002
 
 noncomputable section
 

@@ -1,5 +1,5 @@
-import Formalism.SharpRestriction.GlobalSchurBounds.MainIn
-import Formalism.SharpRestriction.GlobalTheoremInputs
+import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0003
+import Formalism.SharpRestriction.Bundle0002
 import Formalism.SharpRestriction.GlobalSchurBounds.FirstClaimLemmaTwoFourOfLemmaTwoThree
 import Formalism.SharpRestriction.GlobalSchurBounds.ThickPlacesCorollaryOfAnyTranslate
 import Formalism.SharpRestriction.GlobalSchurBounds.TopDensityNGeSixteen

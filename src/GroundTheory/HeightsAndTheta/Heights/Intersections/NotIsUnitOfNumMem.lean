@@ -1,8 +1,8 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.Intersections.ImportsTerRest
-import GroundTheory.HeightsAndTheta.Heights.Intersections.AvoidRing
-import GroundTheory.HeightsAndTheta.Heights.Intersections.ArithVarZero
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterDivSupp
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0017
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0006
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0033
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0018
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.CurvePt
 set_option maxSynthPendingDepth 1
 

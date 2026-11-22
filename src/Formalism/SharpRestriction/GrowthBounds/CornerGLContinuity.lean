@@ -1,14 +1,14 @@
 import Formalism.LocalRingCardinality.DataParams₂
 import Formalism.SharpRestriction.ParConsts
-import Formalism.SharpRestriction.ElevenLe
+import Formalism.SharpRestriction.Bundle0001
 import Formalism.SharpRestriction.GrowthBounds.UnramifiedQuadraticSetting
 import Formalism.SharpRestriction.GrowthBounds.IsResidueClassZero
 import Formalism.SharpRestriction.GrowthBounds.SegRing
-import Formalism.SharpRestriction.GrowthBounds.SelectionLemmas
+import Formalism.SharpRestriction.GrowthBounds.Bundle0002
 import Formalism.SharpRestriction.GrowthBounds.FormalGroupSystem
 import Formalism.SharpRestriction.GrowthBounds.SmallOrderPrimes
 import Formalism.SharpRestriction.GlobalSchurBounds.CMFieldLemmas
-import Formalism.SharpRestriction.AdmissibleParameterJoins.GandSa
+import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0002
 
 noncomputable section
 

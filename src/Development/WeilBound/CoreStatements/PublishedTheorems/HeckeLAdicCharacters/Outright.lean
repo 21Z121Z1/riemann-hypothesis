@@ -1,6 +1,6 @@
 import Development.WeilBound.CoreStatements.HeckeCharacterDeRham.DeRhamHeckeResults.LAdicHeckeDeRham.LAdicHeckeFields.FieldOfLeaves
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FrobPowRead
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LubinTatePeriodNotFilteredStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0522
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0305
 
 namespace HodgeLocalDeRhamField.HLdR
 

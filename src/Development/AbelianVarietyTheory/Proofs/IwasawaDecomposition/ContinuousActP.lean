@@ -2,7 +2,7 @@ import Mathlib
 import Formalism.LocalToGlobal.Divisibility.CoefModLemmas
 import Formalism.LocalToGlobal.Columns.CoefModB
 import Formalism.LocalToGlobal.Columns.PolyFnLemmas
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TensorMapDescent
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0057
 
 noncomputable section
 

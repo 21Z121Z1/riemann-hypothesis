@@ -1,9 +1,6 @@
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BaseLengthBound.TaylorSpanGeneratorsAlt
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BaseLengthBound.LenPiU
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BaseLengthBound.FkFilt
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BaseLengthBound.TaylorSpanGenerators
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BaseLengthBound.TaylorSpanLeBound
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.HassePresH
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BaseLengthBound.Bundle0001
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BaseLengthBound.Bundle0002
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0043
 
 noncomputable section
 

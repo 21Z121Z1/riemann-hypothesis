@@ -1,4 +1,4 @@
-import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsCompleteDvrFiniteSubalgebra
+import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0011
 import Mathlib
 import ReciprocityTheory.CommutativeAlgebra.ChainConnInDim
 import ReciprocityTheory.CommutativeAlgebra.SaturatedChains.IsSaturatedChain

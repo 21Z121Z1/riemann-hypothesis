@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.PAdicHodge.FontaineLemmaAInf
 import GroundTheory.PAdicHodge.ACrisFrobFixed
-import GroundTheory.PowerSubgroups.CountableNeighbourhoods.FontainePhiPowerSubgroups
+import GroundTheory.PowerSubgroups.CountableNeighbourhoods.Bundle0001
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.PAdicHodge

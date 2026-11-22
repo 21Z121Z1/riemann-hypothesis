@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.GlobalFields.ComplexMultiplication.VariableChangePoints
+import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0001
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Global

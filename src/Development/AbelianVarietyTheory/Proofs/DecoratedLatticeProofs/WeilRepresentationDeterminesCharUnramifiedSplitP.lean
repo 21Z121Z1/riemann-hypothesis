@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SmallPair
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSplitPlaceHalfHeisenbergInvariantForm
-import Formalism.LocalToGlobal.IndefiniteReal.ExistsGADet
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OmSplitHalves
-import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasWeil
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsNeZeroAtZero
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0026
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1072
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0013
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0599
+import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0269
 
 noncomputable section
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum MeasureTheory Matrix ValuativeRel IsLocalRing GlobalTheory.MixModel GlobalTheory.MixPer GlobalTheory.Unf GlobalTheory.LatPair GlobalTheory.SplitWeil GlobalTheory.SeeSaw GlobalTheory.FinPl

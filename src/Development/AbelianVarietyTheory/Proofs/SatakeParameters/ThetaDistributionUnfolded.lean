@@ -2,10 +2,10 @@ import Mathlib
 import Formalism.LocalToGlobal.KernelLattices.FirstKernelLawReading
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThDistC
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-import Formalism.GradedWeylDivisibility.FockSpaceTableaux.DualWeylPoint
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0003
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.TensorBasis
 import Formalism.LocalRingCardinality.CoeNeZeroOfNotMem
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ProdFinEqProdCastLE
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0007
 
 open NumberField IsDedekindDomain
 

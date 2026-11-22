@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGenLab
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsFrameTwoLevels
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2737
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2552
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.UtestGeomNonempty
-import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorsionValuesCoordsOperatorPermute
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0081
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.SymmetricLiftOddOrderExistsUnique
-import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsUnconditional
+import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0029
 
 set_option autoImplicit false
 

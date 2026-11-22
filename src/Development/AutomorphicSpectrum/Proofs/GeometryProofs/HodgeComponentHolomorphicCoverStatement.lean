@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeComponentHolomorphicCover
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbBound
-import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0271
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0106
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0005
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField TensorProduct Filter Topology Matrix
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.QuotUnif Metric
 set_option maxHeartbeats 1000000 in

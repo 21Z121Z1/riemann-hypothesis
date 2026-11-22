@@ -1,6 +1,6 @@
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsPrimitiveRootTopZeta
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KmapSubMemOfASet
-import Development.AutomorphicArithmetic.AutomorphicVarieties.EisensteinModularTowers.NormalModularTowerTopAlgebraModel
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0083
+import Development.AutomorphicArithmetic.AutomorphicVarieties.EisensteinModularTowers.Bundle0002
 open scoped MatrixGroups Matrix
 open GlobalTheory.KZ GlobalTheory.K4 Polynomial
 attribute [local instance] algMdl algPoly algRat

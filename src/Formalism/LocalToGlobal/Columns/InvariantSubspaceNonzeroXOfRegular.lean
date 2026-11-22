@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.LocalToGlobal.Columns.InvariantSubspaceCoordsX
+import Formalism.LocalToGlobal.Columns.Bundle0008
 import Formalism.LocalToGlobal.Columns.RowFormsNZ
-import Formalism.LocalToGlobal.GlobalTheory.GL4.PDetAll
+import Formalism.LocalToGlobal.GlobalTheory.GL4.Bundle0008
 
 open NumberField IsDedekindDomain Module
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSplitting
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0082
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology
 
 noncomputable section

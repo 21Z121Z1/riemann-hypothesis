@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.ClosedOfSplittingMatrix
-import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.OrthSplitOfMin
+import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0018
 
 noncomputable section
 

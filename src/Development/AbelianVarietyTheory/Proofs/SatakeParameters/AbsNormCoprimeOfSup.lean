@@ -1,18 +1,17 @@
 import Mathlib
 import Formalism.LocalToGlobal.Divisibility.DefGroup
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.LevelSubgroupFiniteAdelicStandard
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Stabstd
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0005
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0004
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsSpan
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsApprox
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsEasy
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsEquiv
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0010
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0011
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Stdform
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsScale
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsDual
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlob
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Afsplit
-import Formalism.LocalRingCardinality.MinkMEqMinkowskiNumber
+import Formalism.LocalRingCardinality.Bundle0006
 
 noncomputable section
 

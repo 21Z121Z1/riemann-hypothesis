@@ -1,6 +1,6 @@
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.SplitC
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.SplitOA
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.TransferenceMinima
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.Bundle0014
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.Bundle0017
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0020
 
 namespace ReciprocityTheory.ChartRestriction.G.I2
 

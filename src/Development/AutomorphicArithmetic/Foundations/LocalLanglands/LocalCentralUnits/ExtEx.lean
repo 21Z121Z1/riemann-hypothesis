@@ -1,6 +1,6 @@
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.RecTTransport
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExtensionUnramifiedAtOnePlaceStatement
-import Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.ArtEx
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0807
+import Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.Bundle0001
 
 open NumberField IsDedekindDomain
 

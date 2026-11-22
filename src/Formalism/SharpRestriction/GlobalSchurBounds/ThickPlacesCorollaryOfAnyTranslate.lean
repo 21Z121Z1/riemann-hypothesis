@@ -1,11 +1,11 @@
 import Formalism.SharpRestriction.GlobalSchurBounds.StandardLattice
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 import Formalism.LogVandermondeBounds.HookGammaAmgmMultinomialBounds
-import Formalism.GL3MeanSquares.GenusMassVolumeResults
+import Formalism.GL3MeanSquares.Bundle0003
 import Formalism.GL3MeanSquares.GlobalBoundRefinementResults
 import Formalism.HermitianLattices.FinalMass
 import Formalism.GL3MeanSquares.FinalB
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.InclusionInjective
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0002
 import Formalism.LocalRingCardinality.SpanPowerMembership.Spaces
 
 noncomputable section

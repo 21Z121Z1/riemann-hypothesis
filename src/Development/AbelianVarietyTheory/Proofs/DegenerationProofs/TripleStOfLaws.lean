@@ -1,12 +1,12 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ReframeSt
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TwoMulEqOfIsTypeFn
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0032
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.WeilIsOfDouble
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.DetCondOfEigenbasis
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUniqueSumSingle
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsLieBasisOfHolUnif
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LambdaBundleAdjointOfWeilPairingAdjoint
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsPointOfIsPeriod
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0081
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0049
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0021
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0183
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0191
 
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry NumberField
 open scoped CategoryTheory.Obj BigOperators

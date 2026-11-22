@@ -1,6 +1,6 @@
 import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.FirstLevelFromUniversal
 import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.BinomialSeriesCoefficients.Points
-import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.SecondCoeffConsistency
+import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.Bundle0003
 
 noncomputable section
 open scoped BigOperators

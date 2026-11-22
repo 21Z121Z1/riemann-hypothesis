@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DefPerEqGenPer
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0570
 
 noncomputable section
 

@@ -1,6 +1,6 @@
 import Mathlib
-import Development.EtaleCohomology.EtaleSheaves.H0TwistOverClosedField
-import Development.EtaleCohomology.KummerTheory.FinSHInv
+import Development.EtaleCohomology.EtaleSheaves.Bundle0005
+import Development.EtaleCohomology.KummerTheory.Bundle0016
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC LateralTheory.E.E4

@@ -1,4 +1,4 @@
-import Development.EtaleCohomology.EtaleSheaves.FibreIdem
+import Development.EtaleCohomology.EtaleSheaves.Bundle0044
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry LateralTheory.E.t_E2Cut LateralTheory.E.StandardEtaleChartsIdempotentGluing LateralTheory.E.StdChartsProof

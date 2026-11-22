@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.FderivFnCongr
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0001
 import Development.AbelianVarietyTheory.Definitions.Divisors.CommAlgFunctorCoboundaryZeroMemCocyclesOne
 
 set_option autoImplicit false

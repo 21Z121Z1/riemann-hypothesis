@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.GlobalTheory.BlockActions.StabFunGen
+import Formalism.LocalToGlobal.GlobalTheory.BlockActions.Bundle0006
 
 noncomputable section
 

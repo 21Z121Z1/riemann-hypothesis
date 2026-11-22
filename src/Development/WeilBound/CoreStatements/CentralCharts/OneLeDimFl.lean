@@ -1,9 +1,9 @@
 import Development.WeilBound.CoreStatements.CentralCharts.PshAt0LogNorm
 import Development.WeilBound.CoreStatements.CentralCharts.CommonMembers
 import Development.WeilBound.CoreStatements.CentralCharts.IsPosPotBlock
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsArithVarOfSncModelStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.LowerBoundHeightOnBoundaryStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BoundaryPointsClosedStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0123
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0142
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0260
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFinsetOfMemNhds
 
 noncomputable section

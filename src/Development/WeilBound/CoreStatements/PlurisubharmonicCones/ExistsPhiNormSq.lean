@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PeriodDecompositionNearBoundary
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsotropicSublatticeCovolumePositiveStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.FirstMinimumAndCuspWeightBoundsStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsExtendLinearIndependentOfSpanStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0041
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0088
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0027
 
 noncomputable section
 namespace LevelTowerAlt

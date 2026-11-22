@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
-import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.DiagonalQuotientEigen
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CompletionLines
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsRescaleEigenSeriesZero
+import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0008
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0192
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0019
 
 noncomputable section
 

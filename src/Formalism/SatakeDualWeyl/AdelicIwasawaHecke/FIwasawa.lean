@@ -1,5 +1,5 @@
-import Formalism.SatakeDualWeyl.StatementF
-import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FIwasawaE
+import Formalism.SatakeDualWeyl.Bundle0001
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0014
 
 open Formalism.UG Matrix
 

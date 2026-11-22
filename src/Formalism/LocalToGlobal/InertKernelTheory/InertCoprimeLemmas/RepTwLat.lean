@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.InertKernelTheory.FrameLatMap
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0014
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepFrob
 import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.FdOfCharts
 

@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.StatementV
+import Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.Bundle0001
 import Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.FinalC
 
 noncomputable section

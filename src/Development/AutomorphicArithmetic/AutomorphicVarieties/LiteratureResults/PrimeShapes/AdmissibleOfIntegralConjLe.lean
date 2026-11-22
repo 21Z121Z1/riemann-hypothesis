@@ -1,5 +1,5 @@
-import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.TyDefs
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Brauer
+import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.Bundle0002
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0047
 open NumberField IsDedekindDomain Formalism.ConjugateSelfDual ReciprocityTheory.Gal Polynomial GlobalTheory.CuspRep GlobalTheory.WeilDeligne GlobalTheory.LocLanglands GlobalTheory.LocGL GlobalTheory.GalOfCusp UpperTheory.V UpperTheory.V.Lit.Ty
 attribute [local instance] GlobalTheory.LocalData.complRel GlobalTheory.LocalData.isLocalField
 

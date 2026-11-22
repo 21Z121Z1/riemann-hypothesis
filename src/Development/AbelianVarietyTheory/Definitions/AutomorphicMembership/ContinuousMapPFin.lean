@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.LocalToGlobal.Divisibility.CoefModLemmas
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSplitAtOfIsSplitPl
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyEquivLocProdTriv
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasSatAtConstOne
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0651
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0603
 
 noncomputable section
 

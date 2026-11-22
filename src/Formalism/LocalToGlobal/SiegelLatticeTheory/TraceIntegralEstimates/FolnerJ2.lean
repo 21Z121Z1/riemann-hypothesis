@@ -1,8 +1,8 @@
 import Mathlib
 import Formalism.LocalToGlobal.SiegelLatticeTheory.TraceIntegralEstimates.FolnerG2
-import Formalism.LocalToGlobal.SiegelLatticeTheory.TraceIntegralEstimates.IsFolnerOfEquiv
+import Formalism.LocalToGlobal.SiegelLatticeTheory.TraceIntegralEstimates.Bundle0009
 import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.BesselLevi
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.BesselLevi
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0010
 
 noncomputable section
 

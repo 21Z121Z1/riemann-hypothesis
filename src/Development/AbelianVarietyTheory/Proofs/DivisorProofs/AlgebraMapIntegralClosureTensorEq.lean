@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocHomAlgebraMap
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0075
 open IsLocalRing
 set_option synthInstance.maxHeartbeats 400000
 set_option maxHeartbeats 1000000

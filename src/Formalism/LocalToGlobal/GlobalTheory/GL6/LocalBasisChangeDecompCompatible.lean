@@ -1,9 +1,9 @@
 import Formalism.LocalToGlobal.GlobalTheory.GL6.WeylLengthDiagonalUnitUniformiser
 import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwDecomp
-import Formalism.LocalToGlobal.GlobalTheory.GL6.ValuationDetBasisChange
-import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLcInt
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0009
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0007
 import Formalism.SharpRestriction.GlobalSchurBounds.FiniteModelOfAdmissibleTransports
-import Formalism.LocalToGlobal.GlobalTheory.GL6.LinearIndependentProdRenameOfCard
+import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0001
 
 noncomputable section
 

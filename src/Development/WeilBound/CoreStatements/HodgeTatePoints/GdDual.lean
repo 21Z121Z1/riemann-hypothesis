@@ -1,5 +1,5 @@
-import Development.WeilBound.CoreStatements.HodgeTatePoints.TorusExtensionPairCorrectionEqValueQuotient
-import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.RelatedPairsOrbitalTermEq
+import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0019
+import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0016
 
 open Module NumberField GlobalTheory.CompanionTheory.Ar.HT
 

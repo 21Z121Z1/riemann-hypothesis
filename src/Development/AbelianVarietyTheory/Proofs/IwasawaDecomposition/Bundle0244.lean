@@ -1,0 +1,56 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0014
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0125
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0208
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0228
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0182
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0230
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0081
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
+import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
+import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
+import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0001
+import Formalism.LocalToGlobal.IndefiniteReal.HeckeTupleStatement
+import Formalism.LocalRingCardinality.Bundle0007
+
+-- bundled from Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryAdelicQuotientVolumeIsVolume
+section
+open Formalism.BasicNotions Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix GlobalTheory.Mem.Vol
+open scoped TensorProduct
+
+namespace GlobalTheory.Mem.Vol
+
+theorem volIs_trueVol : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberField E] [StarRing E] [Algebra F E] (cm : CMData F E) (I : Type) [Fintype I] (τ : I → (E →+* ℂ)) (cd : CDHaar) (W : HSpace E), IsCMFam τ → W.SigOK → VolIs cm τ cd W (trueVol cm τ cd W) := by
+  intro F E _ _ _ _ _ _ cm I _ τ cd W hτ hW
+  apply trueVol_spec
+  obtain ⟨μ, hμ⟩ := GlobalTheory.T.exists_isUnitaryAdelicVolumeMeasure F E cm I τ cd W hτ hW
+  obtain ⟨⟨𝓕, h𝓕⟩, hall⟩ := GlobalTheory.T.fundamentalDomain_unitaryAdelic_exists_measure_eq F E cm.sig W.rank W.gram μ hμ.1
+  have hcm := cmData_isCMExt_and_gram_isHermND F E cm
+  have hfin : μ 𝓕 < ⊤ := GlobalTheory.T.finiteVolume_adelicUnitaryQuotient F E cm.sig hcm.1 W.rank W.gram (hcm.2 W) μ hμ.1 𝓕 h𝓕
+  have hne : μ 𝓕 ≠ 0 := (hall 𝓕 𝓕 h𝓕 h𝓕).2
+  refine ⟨(μ 𝓕).toReal, ENNReal.toReal_pos hne hfin.ne, ⟨μ, hμ⟩, ?_⟩
+  intro μ' hμ'
+  have e : μ = μ' := GlobalTheory.Mem.VolUnique.volMeas_unique F E cm I τ cd W hτ hW μ μ' hμ hμ'
+  subst e
+  refine ⟨⟨𝓕, h𝓕⟩, fun 𝓕' h' => ?_⟩
+  rw [ENNReal.ofReal_toReal hfin.ne]
+  exact (hall 𝓕' 𝓕 h' h𝓕).1
+
+end GlobalTheory.Mem.Vol
+end
+
+-- bundled from Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.VacuumUniqueAll
+section
+open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Mult Formalism.IndefR.Datum
+open scoped TensorProduct
+attribute [local instance] Formalism.BasicNotions.Host.cmStar
+
+namespace GlobalTheory
+
+theorem vacuum_unique_all : ∀ D : D7, VacUniqueO D :=
+  fun D => GlobalTheory.VacUnique.vacUniqueO D
+
+end GlobalTheory
+end
+

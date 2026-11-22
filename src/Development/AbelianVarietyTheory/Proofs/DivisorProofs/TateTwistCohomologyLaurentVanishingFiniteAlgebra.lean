@@ -1,8 +1,8 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LaurentVarUnit
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LaurentMapIsIntegral
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCohomologyProdRingProjectionsBijective
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteAlgebraStrictlyHenselianInductionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0356
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0388
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0426
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0431
 open CategoryTheory Limits AlgebraicGeometry Opposite Simplicial GlobalTheory.EtC GlobalTheory.EtC.GmStep
 
 namespace GlobalTheory.EtC.LaurentFinite

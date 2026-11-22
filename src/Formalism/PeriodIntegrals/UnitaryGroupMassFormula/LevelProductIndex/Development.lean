@@ -1,5 +1,5 @@
 import Mathlib
-import Formalism.PeriodIntegrals.LevelProdIdx
+import Formalism.PeriodIntegrals.Bundle0018
 
 open Matrix NumberField IsDedekindDomain
 open scoped TensorProduct

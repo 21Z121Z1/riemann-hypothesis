@@ -1,10 +1,10 @@
 import Mathlib
-import Formalism.LocalToGlobal.IndefiniteReal.ConcretePkgSpec
+import Formalism.LocalToGlobal.IndefiniteReal.Bundle0023
 import Formalism.LocalRingCardinality.DataRRMetric
 import Formalism.LocalRingCardinality.Lemmas
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PlaceCharacterEqReferenceIff
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClassPresExtMemExtBijIsom
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FunIffRowSlopeBound
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0119
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0639
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Foundations.SmoothPartStable
+import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0002
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsIrreducibleIff
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubleCosetOperatorsCommOfAntiInvolution
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0016
 
 noncomputable section
 

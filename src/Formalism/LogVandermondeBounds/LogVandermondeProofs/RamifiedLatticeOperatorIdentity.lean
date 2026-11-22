@@ -1,4 +1,4 @@
-import Formalism.LogVandermondeBounds.FinrankFiberSumZero
+import Formalism.LogVandermondeBounds.Bundle0001
 
 namespace Formalism.LogVandermondeBounds.product_first_zeroth_parts
 

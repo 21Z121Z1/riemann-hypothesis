@@ -1,4 +1,4 @@
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.SizeAtMinusW
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0216
 
 namespace Formalism.FourierDecayAlt.P.PBL
 

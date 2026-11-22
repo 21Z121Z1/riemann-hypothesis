@@ -1,7 +1,7 @@
 import Mathlib
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirReductionTheory.OneParameterDerivatives.WeilIndicatorMeasures.MeasurableUnitMulIndicator
-import Formalism.PeriodIntegrals.QuotInv
-import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QuotSetU
+import Formalism.PeriodIntegrals.Bundle0008
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0021
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
 
 open MeasureTheory Topology

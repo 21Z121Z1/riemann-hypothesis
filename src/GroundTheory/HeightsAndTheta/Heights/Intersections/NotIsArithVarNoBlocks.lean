@@ -1,5 +1,5 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.Intersections.IsSmoothMetricOfIsSmoothHerm
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0045
 set_option maxSynthPendingDepth 1
 
 noncomputable section

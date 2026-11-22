@@ -1,4 +1,4 @@
-import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NStageTrivialCharacterCoeffEqAlt
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0005
 import Formalism.SharpRestriction.ParConsts
 import Formalism.SharpRestriction.LevelLetterCocycles.TwGood
 

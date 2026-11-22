@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.MZmix
-import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.TcoMem
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0016
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0005
 
 set_option autoImplicit false
 

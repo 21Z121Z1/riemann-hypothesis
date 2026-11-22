@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.InertKernelTheory.DefsRepRec
+import Formalism.LocalToGlobal.InertKernelTheory.Bundle0013
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepComb
 
 noncomputable section

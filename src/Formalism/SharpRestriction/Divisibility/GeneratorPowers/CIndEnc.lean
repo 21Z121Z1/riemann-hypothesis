@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.ProjectiveLattices.IsThRule
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.ChartChg
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.Bundle0003
 
 set_option autoImplicit false
 

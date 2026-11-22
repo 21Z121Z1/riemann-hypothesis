@@ -1,4 +1,4 @@
-import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.Adelise
+import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.Bundle0002
 import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.UopSum
 import GroundTheory.GlobalFields.LocalAtPlace
 

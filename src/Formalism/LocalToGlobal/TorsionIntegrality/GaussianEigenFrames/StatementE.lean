@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.StatementK
+import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0001
 
 noncomputable section
 open NumberField

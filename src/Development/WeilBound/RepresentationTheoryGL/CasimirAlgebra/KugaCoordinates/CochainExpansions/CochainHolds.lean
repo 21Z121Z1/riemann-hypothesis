@@ -1,5 +1,5 @@
 import Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.KugaCoordinates.CochainExpansions.EtaExpand
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharExponentOfInfinityType
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0129
 
 noncomputable section
 

@@ -1,9 +1,9 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.RowMinor
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0011
 import Formalism.HermitianLattices.HermitianLatticesProofs.DualLattice
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StandardBaseFlagComplementIntegralLatticeStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DefiniteLatticeDiscriminantModuleCardDetSq
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SpanInfEq
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0344
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0223
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0014
 
 open NumberField Module Matrix Formalism.BasicNotions Formalism.MainNotions.S Formalism.MainNotions.S.Lat Formalism.MainNotions.S.Cnt GlobalTheory.LoopC
 open scoped ENNReal Classical

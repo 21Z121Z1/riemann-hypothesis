@@ -1,7 +1,5 @@
 import Mathlib
-import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.WhittakerCuspidal.WhitLeOneOfDict
-import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.WhittakerCuspidal.UnipBEqUnipotent
-import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.WhittakerCuspidal.RankDual
+import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.WhittakerCuspidal.Bundle0001
 
 noncomputable section
 

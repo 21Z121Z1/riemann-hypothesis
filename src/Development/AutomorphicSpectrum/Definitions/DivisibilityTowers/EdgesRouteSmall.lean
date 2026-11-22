@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.MemHalfCosetSelf
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareTriple
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RatInOfUnit
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CartFrSgn
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HaarOrderData
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1674
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0142
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0265
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0032
 import Formalism.LocalToGlobal.IndefiniteReal.LinksLemmas
 import Development.WeilBound.CoreStatements.TorusUniformisation.RepresentationHypotheses.HostNumDef
 

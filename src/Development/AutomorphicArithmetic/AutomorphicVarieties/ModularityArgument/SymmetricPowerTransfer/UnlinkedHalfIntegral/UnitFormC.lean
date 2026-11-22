@@ -1,6 +1,6 @@
-import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.Adelise
+import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.Bundle0002
 import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.ConstSmall
-import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AdmissibleResidues.RW
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AdmissibleResidues.Bundle0007
 
 noncomputable section
 

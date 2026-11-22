@@ -1,5 +1,5 @@
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.IsRecTOfIsRec
-import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CuspLaws
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0026
 
 noncomputable section
 

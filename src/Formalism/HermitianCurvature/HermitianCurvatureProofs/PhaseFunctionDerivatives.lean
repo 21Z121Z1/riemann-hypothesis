@@ -1,8 +1,8 @@
 import Formalism.HermitianCurvature.StatementG
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PhaseFunctionCriticalPoints
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.OrbitalIntegralConvergesAbs
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.FourierUniquenessMirabolic
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.CuspidalIrreducibleSubrep
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0009
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0012
 
 section PartA
 

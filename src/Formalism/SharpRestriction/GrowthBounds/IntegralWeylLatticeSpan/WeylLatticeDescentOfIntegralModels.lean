@@ -1,6 +1,6 @@
 import Formalism.SharpRestriction.GrowthBounds.IntegralWeylLatticeSpan.RowActWeylMemDescentLattice
-import Formalism.SharpRestriction.GrowthBounds.IntegralWeylLatticeSpan.CoreDesc
-import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.IsUnitDetBlockPreimage
+import Formalism.SharpRestriction.GrowthBounds.IntegralWeylLatticeSpan.Bundle0001
+import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0005
 
 open MvPolynomial Matrix Formalism.GradedWeylDivisibility Formalism.MainNotions.G Formalism.BasicNotions Formalism.L2.Forms
 

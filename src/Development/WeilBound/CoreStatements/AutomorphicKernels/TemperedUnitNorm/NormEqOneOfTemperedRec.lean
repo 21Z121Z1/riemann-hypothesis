@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmGaloisRepresentationCrystalline
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalLanglandsGaloisCompat
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1370
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1237
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIrreducibleFixed
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Mono0OfLpDimEqOne
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSubquotSmIndCongr
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RankOneUnitary
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0051
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0323
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0315
 import ReciprocityTheory.GaloisValuations.Global
 import GroundTheory.PAdicHodge.AInfGalois
 

@@ -1,7 +1,7 @@
 import Mathlib
-import Formalism.PeriodIntegrals.GalTorsConj
+import Formalism.PeriodIntegrals.Bundle0004
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GaloisTorsionConjugacy.WpBridge
-import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.EllipticOnePole
+import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.Bundle0003
 
 noncomputable section
 

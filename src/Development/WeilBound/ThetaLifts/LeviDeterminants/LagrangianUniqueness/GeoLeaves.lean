@@ -1,7 +1,7 @@
 import Development.WeilBound.ThetaLifts.LeviDeterminants.LagrangianUniqueness.LagLine
 import Development.WeilBound.ThetaLifts.LeviDeterminants.LagrangianUniqueness.GeoCore
 import Development.WeilBound.ThetaLifts.LeviDeterminants.LagrangianUniqueness.GeoAdm
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerTransitive
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1904
 
 open scoped TensorProduct NNReal Matrix
 open NumberField IsDedekindDomain MeasureTheory Filter Topology Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes

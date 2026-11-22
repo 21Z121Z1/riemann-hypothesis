@@ -1,9 +1,9 @@
 import Formalism.HermitianCurvature.StatementTL
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.DiagonalTransferAction
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.FrameCompletion
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.Sq2UnitOfEqOneOfSq2EqDiv
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0061
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.TheoremPIntegralOfPlaces
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.HomogeneityNaturalDegree
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0037
 
 open Matrix Finset
 open scoped ComplexConjugate ContDiff

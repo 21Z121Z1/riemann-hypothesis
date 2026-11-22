@@ -1,5 +1,5 @@
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.HeckeStdTwOfStd
-import Formalism.SharpRestriction.LevelLetterCocycles.LocsCoverTw
+import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0004
 
 noncomputable section
 

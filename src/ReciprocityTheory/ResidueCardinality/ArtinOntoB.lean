@@ -1,5 +1,5 @@
 import Mathlib
-import ReciprocityTheory.Automorphisms.InstMainA
+import ReciprocityTheory.Automorphisms.Bundle0001
 
 noncomputable section
 

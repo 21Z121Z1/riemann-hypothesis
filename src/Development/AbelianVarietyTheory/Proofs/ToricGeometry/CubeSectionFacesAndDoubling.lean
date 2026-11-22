@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.EntireApplyEqOfPeriodicOfSpanReal
+import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.Bundle0001
 
 open Complex Matrix Filter Topology
 open scoped BigOperators Real

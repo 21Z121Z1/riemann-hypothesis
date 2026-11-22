@@ -1,5 +1,4 @@
-import Formalism.WachLatticeTwists.Statement
-import Formalism.WachLatticeTwists.StatementDual
+import Formalism.WachLatticeTwists.Bundle0001
 import Formalism.CharacterColumnKernels.StatementRho
 
 universe u

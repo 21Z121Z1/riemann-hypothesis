@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnipotentBlockColumnIndex
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuotientAverageAddOfPeriodic
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AvgSubOfPer
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AvgIntervalIntegralSwap
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0624
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0331
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0308
 
 namespace PositivityTheory.Rg.Cz
 

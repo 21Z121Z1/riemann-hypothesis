@@ -1,4 +1,4 @@
-import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.FactorLeProductSeven
+import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.Bundle0006
 
 noncomputable section
 

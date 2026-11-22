@@ -1,8 +1,7 @@
 import Development.AutomorphicArithmetic.ThickFrames.MarkedLow
 import Formalism.SharpRestriction.GrowthBounds.UnramifiedQuadraticSetting
 import Development.AutomorphicArithmetic.ThickFrames.select
-import Development.AutomorphicArithmetic.ThickFrames.orbitSum
-import Development.AutomorphicArithmetic.ThickFrames.SharesOfCounts
+import Development.AutomorphicArithmetic.ThickFrames.Bundle0001
 import Development.AutomorphicArithmetic.ThickFrames.orbitTerms
 import Development.AutomorphicArithmetic.ThickFrames.NotGoodLe
 

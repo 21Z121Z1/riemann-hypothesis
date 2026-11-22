@@ -1,11 +1,10 @@
 import Mathlib
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.MassDataInst
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.DualFamilyCounting.NcWeil
-import Formalism.PeriodIntegrals.VolFromSW
+import Formalism.PeriodIntegrals.Bundle0025
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeilStabilizerVolume.Assembly
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CovolumeFrames.StepSize
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CovolumeFrames.StepFrameStd
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelStructures.FrameStd
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CovolumeFrames.Bundle0001
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelStructures.Bundle0002
 
 noncomputable section
 

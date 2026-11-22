@@ -1,6 +1,6 @@
-import Formalism.LocalToGlobal.ProjectiveLattices.RdOrbIntOfLatZ
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0008
 import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.MaximalCuspKernels.MaxCuspsPfB
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.FlowMeanContinuity
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0012
 
 set_option autoImplicit false
 

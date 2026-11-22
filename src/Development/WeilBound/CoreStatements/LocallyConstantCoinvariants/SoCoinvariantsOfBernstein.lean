@@ -1,6 +1,5 @@
-import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.KCoinvOfDict
-import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfDict
-import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.FullOfSoLoc
+import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0005
+import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0004
 
 namespace PositivityTheory.KCo
 

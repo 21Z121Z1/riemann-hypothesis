@@ -1,11 +1,11 @@
 import Mathlib
 import Formalism.SharpRestriction.Divisibility.LocalQuadraticParts
 import Formalism.SharpRestriction.GrowthBounds.WeilJacquetShalikaLaw
-import Formalism.SharpRestriction.GlobalSchurBounds.MainIn
+import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0003
 import Formalism.QuotientMetricDivisors.FinalW
 import Formalism.QuotientMetricDivisors.SixthReductionExplicit
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.OneLeLetterBlockLength
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0068
 
 open Formalism.BasicNotions Formalism.BasicNotions.DV Formalism.MainNotions NumberField Classical
 

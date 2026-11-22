@@ -1,7 +1,7 @@
 import Mathlib
 import GroundTheory.AutomorphicForms.SatakeTriangular
-import GroundTheory.AutomorphicForms.Spherical
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsSideLast
+import GroundTheory.AutomorphicForms.Bundle0019
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0034
 
 noncomputable section
 

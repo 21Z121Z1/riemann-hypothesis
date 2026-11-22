@@ -1,5 +1,5 @@
-import Formalism.AdmissibleDesigns.YtTargetOf
-import Formalism.WachLatticeTwists.CoprimeLiftBounds.CoprimeLiftProofs.FirstSummandActionMem
+import Formalism.AdmissibleDesigns.Bundle0009
+import Formalism.WachLatticeTwists.CoprimeLiftBounds.CoprimeLiftProofs.Bundle0001
 
 variable [hT2Core : Fact ReciprocityTheory.ChartRestriction.T2.Core]
 

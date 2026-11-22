@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.TranscendenceDegreeRatiosCuspFormsComponents
-import Formalism.LocalToGlobal.ProjectiveLattices.CurveAsm
-import Formalism.LocalToGlobal.ProjectiveLattices.TieUpC
-import Formalism.LocalToGlobal.ProjectiveLattices.SupNDataOfNonneg
-import Formalism.LocalToGlobal.ProjectiveLattices.AxHInst
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0046
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0048
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0043
+import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0040
 import Development.AbelianVarietyTheory.Definitions.UpperBounds.PhRec
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.WeightAlgebra Formalism.MainNotions.Gaps.EtaleWeightGaps Formalism.L2.Pj ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.BigRec
 set_option maxHeartbeats 1000000 in

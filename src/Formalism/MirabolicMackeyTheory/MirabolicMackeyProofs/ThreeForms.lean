@@ -1,10 +1,10 @@
-import Formalism.MirabolicMackeyTheory.StatementL
+import Formalism.MirabolicMackeyTheory.Bundle0001
 import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.IdxRules
 import Formalism.HermitianLattices.HermitianLatticesProofs.LocBasic
 import Formalism.HermitianLattices.HermitianLatticesProofs.IndexBasic
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ImageLcv
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.IdxChange
-import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ValBasic
+import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0003
 
 open Module NumberField IsDedekindDomain Formalism.HermitianLatticesTheory
 

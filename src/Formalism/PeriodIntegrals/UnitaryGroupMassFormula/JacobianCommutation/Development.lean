@@ -1,7 +1,7 @@
 import Formalism.HermitianCurvature.BigCellVanishingOfCommute
 import Formalism.HermitianCurvature.StatementJF
 import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
-import Formalism.FormalDegreeBessel.FinalBF
+import Formalism.FormalDegreeBessel.Bundle0002
 
 open MeasureTheory Formalism.REAL Formalism.QuantumDeterminants Formalism.FourierDecayAlt Formalism.FourierDecayAlt.C6
 

@@ -1,6 +1,6 @@
 import Mathlib
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.TwoWeightEqOneAddRoot
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ConjEmbeddingRt
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0076
 
 noncomputable section
 

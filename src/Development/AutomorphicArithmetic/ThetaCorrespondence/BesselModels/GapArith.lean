@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LevelModelsOfFunctoriality
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0359
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HighestWeightBelow
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CartFrSgn
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0265
 
 noncomputable section
 

@@ -1,9 +1,8 @@
 import Mathlib
-import Mathlib
-import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsConstMul
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenFrameFieldExtension
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenFrameIffEigenspaceBasis
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelFiniteBaseChange
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0010
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0171
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0093
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0144
 open AlgebraicGeometry CategoryTheory Limits NumberField ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Fl
 
 namespace PositivityTheory.Xgn.FramedPointSpecialization

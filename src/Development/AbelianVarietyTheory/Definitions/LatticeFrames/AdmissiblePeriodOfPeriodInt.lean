@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PerIntOnAmb
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0003
 import Formalism.SharpRestriction.Divisibility.WeightDegreeSizes
 import Formalism.SharpRestriction.Divisibility.LocalQuadraticParts
 import Formalism.LocalRingCardinality.SpanPowerMembership.NZRowF
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalGapNonemptyAndRecordNonempty
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNumeratorIdealOfAntiInvariantDivisor
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0570
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0824
 
 noncomputable section
 

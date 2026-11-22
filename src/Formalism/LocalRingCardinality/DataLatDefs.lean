@@ -1,5 +1,5 @@
 import Formalism.LocalRingCardinality.DataParams₂
-import Formalism.LocalRingCardinality.DataGatTies
+import Formalism.LocalRingCardinality.Bundle0001
 import Formalism.SharpRestriction.GrowthBounds.IsResidueClassZero
 
 noncomputable section

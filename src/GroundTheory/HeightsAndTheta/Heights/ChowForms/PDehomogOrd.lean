@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.ChowForms.StatementsDehomogOrd
-import GroundTheory.HeightsAndTheta.Heights.ChowForms.PChartLocalOrder
-import GroundTheory.HeightsAndTheta.Heights.ChowForms.PChartLocDomain
+import GroundTheory.HeightsAndTheta.Heights.ChowForms.Bundle0008
+import GroundTheory.HeightsAndTheta.Heights.ChowForms.Bundle0009
+import GroundTheory.HeightsAndTheta.Heights.ChowForms.Bundle0007
 set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights

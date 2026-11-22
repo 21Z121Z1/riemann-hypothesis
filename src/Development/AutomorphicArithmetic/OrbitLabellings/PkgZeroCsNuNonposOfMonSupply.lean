@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AutomorphicArithmetic.OrbitLabellings.RowDefs
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsCutIntoBoundedGroupsFinset
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0001
 
 open Formalism.L2.FormalSeriesBounds UpperTheory.G2
 

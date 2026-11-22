@@ -1,8 +1,8 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.HodgeSurjectivity.NLeA
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AlgebraMapConeRing
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MonLNegMul
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExceptionalIdealLeSpanPosDegree
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0132
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0130
 
 set_option autoImplicit false
 noncomputable section

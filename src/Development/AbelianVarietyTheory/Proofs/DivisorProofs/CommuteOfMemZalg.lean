@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Divisors.CoreFinite
-import Development.AbelianVarietyTheory.Definitions.Divisors.CentralNilGL
-import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.LanglandsSquareIntegrable
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0052
+import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0024
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0022
 
 noncomputable section
 

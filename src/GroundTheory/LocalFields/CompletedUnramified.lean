@@ -1,6 +1,6 @@
 import Mathlib
 import GroundTheory.LocalFields.MaximalUnramifiedIntegers
-import GroundTheory.PowerSubgroups.CountableNeighbourhoods.UnitMulPowAdic
+import GroundTheory.PowerSubgroups.CountableNeighbourhoods.Bundle0002
 
 noncomputable section
 

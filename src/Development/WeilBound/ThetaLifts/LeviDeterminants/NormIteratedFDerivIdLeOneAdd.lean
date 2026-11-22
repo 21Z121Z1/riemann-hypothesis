@@ -1,6 +1,6 @@
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.FiniteAdeleTopology
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsBoundPolyMulExpAlt
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0055
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0016
 
 noncomputable section
 

@@ -1,10 +1,10 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.Jets.BasicLiftAll
+import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0003
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutDec
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WordBoundCompactSupportCoefficientsStatement
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.VecOpApplyCutFEq
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IteratedDerivBddOfEventuallyConst
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ContinuousOfIsPolyDeg
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0189
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0157
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0188
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0156
 
 open Formalism.FourierDecayAlt Formalism.FourierDecayAlt.R Formalism.FourierDecayAlt.Wd Formalism.FourierDecayAlt.Fr Formalism.REAL Formalism.QuantumDeterminants MeasureTheory GlobalTheory.HatNF Filter Topology
 

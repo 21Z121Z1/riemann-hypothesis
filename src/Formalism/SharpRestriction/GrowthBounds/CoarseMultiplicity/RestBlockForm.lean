@@ -1,6 +1,6 @@
-import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.SymInt
-import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.WittPNe
-import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.DualFlatOf
+import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0010
+import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0011
+import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0006
 
 noncomputable section
 

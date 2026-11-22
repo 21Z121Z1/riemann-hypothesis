@@ -1,9 +1,6 @@
 import Mathlib
-import Formalism.SobolevGaussianKernels.StatementEI
-import Formalism.SobolevGaussianKernels.StatementCS
-import Formalism.SobolevGaussianKernels.StatementNC
-import Formalism.SobolevGaussianKernels.StatementMV
-import Formalism.YangianSpanCharacter.StatementE
+import Formalism.SobolevGaussianKernels.Bundle0001
+import Formalism.YangianSpanCharacter.Bundle0001
 
 namespace Formalism.HermitianLatticeCounting.S4
 

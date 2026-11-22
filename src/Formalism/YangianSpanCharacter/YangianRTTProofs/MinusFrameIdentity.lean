@@ -1,5 +1,5 @@
-import Formalism.YangianSpanCharacter.StatementF
-import Formalism.YangianSpanCharacter.YangianRTTProofs.SymplecticTransposeEntryZeroOne
+import Formalism.YangianSpanCharacter.Bundle0003
+import Formalism.YangianSpanCharacter.YangianRTTProofs.Bundle0002
 import Formalism.YangianSpanCharacter.YangianRTTProofs.DiagonalEntryEqOfModularRelation
 
 namespace Formalism.YangianSpanCharacter.P

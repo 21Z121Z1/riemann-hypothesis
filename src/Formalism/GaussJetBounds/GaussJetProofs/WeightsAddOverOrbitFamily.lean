@@ -1,5 +1,5 @@
-import Formalism.GaussJetBounds.StatementR
-import Formalism.GaussJetBounds.GaussJetProofs.WeightsAddOverOrbitsLogLoss
+import Formalism.GaussJetBounds.Bundle0003
+import Formalism.GaussJetBounds.GaussJetProofs.Bundle0006
 
 noncomputable section
 open scoped BigOperators

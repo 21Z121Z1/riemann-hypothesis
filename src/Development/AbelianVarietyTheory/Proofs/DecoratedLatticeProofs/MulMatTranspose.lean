@@ -1,5 +1,5 @@
-import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsRealCoord
-import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.AdelicPair
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0009
+import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.Bundle0001
 open NumberField Matrix Formalism.MainNotions.S GlobalTheory.CuspGeo GlobalTheory.ClassFin
 open scoped Topology
 

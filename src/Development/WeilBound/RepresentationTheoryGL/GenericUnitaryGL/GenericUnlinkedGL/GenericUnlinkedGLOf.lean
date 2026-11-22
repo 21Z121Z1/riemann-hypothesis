@@ -1,8 +1,8 @@
 import Mathlib
 import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.GenericUnlinkedGL.UnlinkedRealize
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.HasSupportOfIsSubquotientProdIrr
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.BernsteinZelevinskyFinitenessStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GeometricLemmaOfFiltrationStatement
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0048
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0045
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0443
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.GeometricSplitting.Imports
 
 noncomputable section

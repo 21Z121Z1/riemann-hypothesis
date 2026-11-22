@@ -1,6 +1,6 @@
 import Mathlib
 import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EvalVAlgebraMapMem
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0307
 import Development.AbelianVarietyTheory.Definitions.Foundations.NonemptyAlgHomOfNotIsField
 
 noncomputable section

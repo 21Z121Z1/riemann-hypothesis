@@ -1,4 +1,4 @@
-import Formalism.LocalToGlobal.CharacterGerms.Interface
+import Formalism.LocalToGlobal.CharacterGerms.Bundle0005
 import Formalism.LocalToGlobal.CharacterGerms.ExistsStrictMonoMinor
 
 noncomputable section

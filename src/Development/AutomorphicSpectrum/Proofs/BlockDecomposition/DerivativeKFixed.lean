@@ -1,6 +1,6 @@
 import Mathlib
 import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.KFiniteVectors.LocallyConstantMajorants.TemperedDerivatives.StepsD
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SchwartzStable
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0609
 
 noncomputable section
 

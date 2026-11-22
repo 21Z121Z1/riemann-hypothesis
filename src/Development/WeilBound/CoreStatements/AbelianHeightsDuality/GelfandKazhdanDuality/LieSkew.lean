@@ -1,6 +1,6 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.GelfandKazhdanDuality.PairingL2
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.HasDerivAtLpOfDominated
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0008
 
 noncomputable section
 

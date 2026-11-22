@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.IsChart
-import Development.AutomorphicArithmetic.CommutativeAlgebra.SpecializationTensorRingHomProperties
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsPsi
+import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.Bundle0004
+import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0019
+import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0020
 open GroundTheory.FunctionField UpperTheory.Et.Sel
 open scoped TensorProduct
 

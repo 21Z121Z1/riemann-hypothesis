@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsOfLayers
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCrysLatOfTrivial
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0146
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InclWFrobIter
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneAddXMulDerivativeBinomial
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TeichPow
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicPowerSeriesAlgHomActionLaws
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0343
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0259
 
 noncomputable section
 

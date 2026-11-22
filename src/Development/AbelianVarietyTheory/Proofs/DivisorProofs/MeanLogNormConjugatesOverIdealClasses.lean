@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.LatticeNormTransport
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0010
 open NumberField
 open scoped nonZeroDivisors
 

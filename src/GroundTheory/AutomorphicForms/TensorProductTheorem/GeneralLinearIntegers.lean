@@ -2,7 +2,7 @@ import Mathlib
 import GroundTheory.AutomorphicForms.AdelicGLn
 import GroundTheory.AutomorphicForms.Satake
 import GroundTheory.AutomorphicForms.TensorProductTheorem.Existence
-import GroundTheory.AutomorphicForms.TensorProductTheorem.Uniqueness
+import GroundTheory.AutomorphicForms.TensorProductTheorem.Bundle0005
 
 noncomputable section
 

@@ -1,5 +1,5 @@
-import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.IsHypPair
-import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.OneLetterGaussEvery
+import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.Bundle0001
+import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0004
 
 noncomputable section
 open scoped BigOperators

@@ -1,5 +1,5 @@
 import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.GcohTop
-import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.GcohEuler
+import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.Bundle0001
 
 namespace PositivityTheory.LocalTateOrthogonality.Gcoh
 

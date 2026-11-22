@@ -1,6 +1,6 @@
 import Mathlib
 import CompanionTheory.ThickeningEstimates.LieGroupReduction.SiegelPar
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.PlaneStrongApproxGeneratorImports
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0042
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.BlockTriangularMemMinimalParabolic
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.SiegelSetUnitary
 

@@ -1,6 +1,6 @@
 import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.TracePiReal
 import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.DictIrr
-import Development.WeilBound.ThetaLifts.CartanFactorisation.TensOfEval
+import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0006
 
 noncomputable section
 

@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsIntegralModelOfForms
+import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0006
 
 namespace GlobalTheory
 

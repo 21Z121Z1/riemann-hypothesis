@@ -1,5 +1,5 @@
 import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.EaRestSExpVOf
-import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.EaNuTwoLeOne
+import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.Bundle0003
 import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FrobeniusLiftNorms.EGaussK
 
 noncomputable section

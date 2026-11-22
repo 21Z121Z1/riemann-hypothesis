@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsUnifOfIsMumfordOf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTauLattice
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HasTrivialKernelIff
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0132
 import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.ExistsUniqueEqConstMulEllTheta
 
 noncomputable section

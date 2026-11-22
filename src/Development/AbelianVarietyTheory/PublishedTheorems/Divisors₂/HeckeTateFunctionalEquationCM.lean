@@ -1,7 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.CompletedLStripBounds
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsUniqueIsStandardAdeleCharUnramifiedCMBase
-import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DualLatticeDifferentIndex
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0009
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0134
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0123
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsHeckeLOfHasInf
 
 noncomputable section

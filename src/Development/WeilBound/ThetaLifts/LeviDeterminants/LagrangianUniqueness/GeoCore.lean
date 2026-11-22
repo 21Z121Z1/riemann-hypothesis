@@ -1,6 +1,6 @@
 import Development.WeilBound.ThetaLifts.LeviDeterminants.LagrangianUniqueness.RealTest
 import Development.WeilBound.ThetaLifts.LeviDeterminants.LagrangianUniqueness.GeoAlg
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationPreservesSchwartz
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1897
 
 noncomputable section
 

@@ -1,7 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.WittSmallGroupEmbeddingMemPointwiseStabilizerIso
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SemiMeasIsMulLeftInvariant
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SemiMeasFiniteOnCompactsAndOpenPos
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0191
 
 open MeasureTheory Function GlobalTheory.MixPer
 open scoped Pointwise NNReal ENNReal

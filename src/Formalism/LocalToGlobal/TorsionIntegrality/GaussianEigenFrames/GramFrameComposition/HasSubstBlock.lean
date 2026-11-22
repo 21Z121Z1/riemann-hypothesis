@@ -1,6 +1,6 @@
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussianEigenFrames.StatementA
 import Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.PairedSquareJets.Several
-import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.FacShapeZero
+import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.Bundle0003
 
 noncomputable section
 open scoped BigOperators

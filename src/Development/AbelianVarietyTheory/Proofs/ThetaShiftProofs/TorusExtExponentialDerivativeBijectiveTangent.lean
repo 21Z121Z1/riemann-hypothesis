@@ -2,8 +2,8 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IsThetaL2NormSquared
 import Development.AbelianVarietyTheory.Definitions.RegularCharts.ModelAt
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsRepresents
-import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsIsDerivAtOfSurjective
+import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0037
+import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0007
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TangentBijectionOfValues
 
 noncomputable section

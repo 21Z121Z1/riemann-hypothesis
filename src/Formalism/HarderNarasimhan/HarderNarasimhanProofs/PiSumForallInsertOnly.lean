@@ -1,11 +1,11 @@
-import Formalism.HarderNarasimhan.DegSupermodZ
+import Formalism.HarderNarasimhan.Bundle0001
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SatBasic
-import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DegSupermod
-import Formalism.HarderNarasimhan.HarderNarasimhanProofs.MuChar
+import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0002
+import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0004
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.PolygonSlopeSum
 import Formalism.LatticeSlopes.ExistsSaturatedSlopeEqMuMax
-import Formalism.LatticeSlopes.LatticeSlopesProofs.DiscreteTopologyOfLe
-import Formalism.LatticeSlopes.LatticeSlopesProofs.ShortVector
+import Formalism.LatticeSlopes.LatticeSlopesProofs.Bundle0001
+import Formalism.LatticeSlopes.LatticeSlopesProofs.Bundle0002
 
 open Module Submodule
 

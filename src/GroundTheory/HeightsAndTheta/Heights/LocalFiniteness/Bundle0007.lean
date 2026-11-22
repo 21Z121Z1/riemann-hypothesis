@@ -1,0 +1,37 @@
+import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.CentredDiscCoverCurveHolds
+import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.Bundle0006
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0128
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0115
+import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0020
+import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0018
+import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0017
+import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0022
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.AssemblyBase
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0015
+import GroundTheory.HeightsAndTheta.Heights.IntegralModels.GlueBundlesSecondOfFirst
+import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.Bundle0005
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0105
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0106
+
+-- bundled from GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.FieldNumbersSemilocalMaxIdeals
+section
+set_option maxSynthPendingDepth 1
+
+theorem GroundTheory.Heights₂.Heights.AutoClose.FieldNumbers_SemilocalMaxIdeals.{u} : GroundTheory.Heights₂.Heights.FieldNumbers.SemilocalMaxIdeals.Statement.{u} :=
+  @GroundTheory.Heights₂.Heights.FieldNumbers.SemilocalMaxIdeals.proof.{u} GroundTheory.Heights₂.Heights.FieldNumbers.FibreFinite.proof GroundTheory.Heights₂.Heights.FieldNumbers.FibreRelDim.proof GroundTheory.Heights₂.Heights.AutoClose.FieldNumbers_FibreNonempty GroundTheory.Heights₂.Heights.FieldNumbers.DegZeroLocUnits.proof GroundTheory.Heights₂.Heights.FieldNumbers.DegZeroLocSeparate.proof GroundTheory.Heights₂.Heights.FieldNumbers.DegZeroLocLocalize.proof GroundTheory.Heights₂.Heights.AutoClose.FieldNumbers_SemilocalResidueLength
+
+theorem GroundTheory.Heights₂.Heights.AutoClose.glue_vector_bundles_holds : GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.Model.GlueBundles.Statement :=
+  @GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.Model.GlueBundles.glueBundles_second_of_first GroundTheory.Heights₂.Heights.AutoClose.Model_GlueBundles
+
+theorem GroundTheory.Heights₂.Heights.AutoClose.RegFixedBallMass : GroundTheory.Heights₂.Heights.RegFixedBallMass.Statement :=
+  @GroundTheory.Heights₂.Heights.RegFixedBallMass.proof GroundTheory.Heights₂.Heights.RegDensNonneg.proof GroundTheory.Heights₂.Heights.AutoClose.StokesOnChart GroundTheory.Heights₂.Heights.AutoClose.LogIntegrable GroundTheory.Heights₂.Heights.HilbertSamuel.Closed.ChartMassCompact
+end
+
+-- bundled from GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.PuncturedBranchSameOrder
+section
+set_option maxSynthPendingDepth 1
+
+theorem GroundTheory.Heights₂.Heights.AutoClose.PuncturedBranchSameOrder : GroundTheory.Heights₂.Heights.PuncturedBranchSameOrder.Statement :=
+  @GroundTheory.Heights₂.Heights.PuncturedBranchSameOrder.proof GroundTheory.Heights₂.Heights.AutoClose.PuncturedCurveDiscInverse
+end
+

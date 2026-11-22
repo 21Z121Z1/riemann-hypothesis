@@ -1,6 +1,6 @@
 import Mathlib
-import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.RedKerPoly
-import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.HasCMByStable
+import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0027
+import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.Bundle0005
 
 noncomputable section
 open scoped BigOperators Classical

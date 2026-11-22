@@ -1,8 +1,6 @@
-import Formalism.LocalToGlobal.GlobalTheory.GL4.ThirdPropositionOfClass
-import Formalism.LocalToGlobal.GlobalTheory.GL4.FockNExtCNu
-import Formalism.LocalToGlobal.GlobalTheory.GL4.MuMaxLeMon
-import Formalism.LocalToGlobal.GlobalTheory.GL4.ShortAtMeanLog
-import Formalism.LocalToGlobal.Columns.MaxSlopeSummandOfFock
+import Formalism.LocalToGlobal.GlobalTheory.GL4.Bundle0017
+import Formalism.LocalToGlobal.GlobalTheory.GL4.Bundle0011
+import Formalism.LocalToGlobal.Columns.Bundle0027
 
 open Module NumberField IsDedekindDomain
 

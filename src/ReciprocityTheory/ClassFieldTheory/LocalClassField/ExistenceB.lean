@@ -2,7 +2,7 @@ import Mathlib
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecPairDefs
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.PairKEqZeroOfMemNormGrp
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.NormLimit
-import ReciprocityTheory.ClassFieldTheory.LocalClassField.NormOpen
+import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0014
 
 namespace ReciprocityTheory.DiscreteGroups.LocalClassField
 

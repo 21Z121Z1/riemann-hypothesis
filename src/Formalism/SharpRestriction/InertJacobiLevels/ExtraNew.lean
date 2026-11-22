@@ -1,7 +1,7 @@
-import Formalism.LocalRingCardinality.DataExtra
-import Formalism.SharpRestriction.InertJacobiLevels.ExtraZero
+import Formalism.LocalRingCardinality.Bundle0007
+import Formalism.SharpRestriction.InertJacobiLevels.Bundle0003
 import Formalism.SharpRestriction.InertJacobiLevels.ExtraKer
-import Formalism.SharpRestriction.InertJacobiLevels.ExtraNch
+import Formalism.SharpRestriction.InertJacobiLevels.Bundle0001
 
 noncomputable section
 

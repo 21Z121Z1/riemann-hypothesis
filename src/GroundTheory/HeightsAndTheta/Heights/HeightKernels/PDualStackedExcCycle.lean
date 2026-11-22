@@ -1,7 +1,7 @@
 import Mathlib
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualStackedExcReduced
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualStackedGraphHorizontal
-import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualArithVar
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0043
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0055
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0029
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.MemDivSuppOfDivCycleNeZero
 set_option maxSynthPendingDepth 1
 

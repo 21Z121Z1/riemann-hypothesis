@@ -1,6 +1,6 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.CoeffEqZeroOfMemSpanPow
-import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.DiscrMulDetEqNormOfAnnihilator
+import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0001
+import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0002
 
 namespace GlobalTheory.DiscrJacobian
 

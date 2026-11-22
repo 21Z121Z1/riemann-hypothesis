@@ -1,6 +1,6 @@
 import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.TwiceValuationFactorialProduct
-import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.ValLeOfVK
-import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.FockRLinDual
+import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.Bundle0013
+import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.Bundle0007
 import Formalism.SharpRestriction.GrowthBounds.GLWeightTheory
 
 noncomputable section

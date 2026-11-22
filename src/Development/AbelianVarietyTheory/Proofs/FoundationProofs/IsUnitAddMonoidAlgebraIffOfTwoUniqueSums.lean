@@ -1,6 +1,6 @@
 import Mathlib
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SemiabelianSchemes.PrecompleteBases.Torus2GammaBijective
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TupleDifferentialTupleDifferential
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0017
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TensorCoeffOfMemTorusWeightSpace
 
 open TensorProduct Coalgebra AddMonoidAlgebra

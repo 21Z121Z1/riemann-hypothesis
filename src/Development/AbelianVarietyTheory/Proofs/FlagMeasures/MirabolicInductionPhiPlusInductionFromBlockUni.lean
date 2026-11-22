@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsMirClass
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0005
 
 noncomputable section
 
