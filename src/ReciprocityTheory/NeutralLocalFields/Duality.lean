@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Formalism.ConjugateSelfDual.Galois
 public import ReciprocityTheory.NeutralLocalFields.Bundle0001
 
 @[expose] public section
@@ -397,19 +397,23 @@ def LocalInvariantIsomorphism : Prop := ∀ (p : ℕ) [Fact p.Prime] (K : Interm
 
 section Global
 
-abbrev G (F Ω : Type*) [Field F] [Field Ω] [Algebra F Ω] := Ω ≃ₐ[F] Ω
+protected abbrev G (F Ω : Type*) [Field F] [Field Ω] [Algebra F Ω] := Ω ≃ₐ[F] Ω
+
+open _root_.Neutral.B1 (G)
 
 variable {F Ω : Type} [Field F] [NumberField F] [Field Ω] [Algebra F Ω]
 
-def IsPlaceOver (A : ValuationSubring Ω) (v : HeightOneSpectrum (𝓞 F)) : Prop :=
+protected def IsPlaceOver (A : ValuationSubring Ω) (v : HeightOneSpectrum (𝓞 F)) : Prop :=
   ∀ x : 𝓞 F, A.valuation (algebraMap F Ω (x : F)) < 1 ↔ x ∈ v.asIdeal
 
 
 variable (F) in
 abbrev Dec (A : ValuationSubring Ω) : Subgroup (G F Ω) := A.decompositionSubgroup F
 
-def Inertia (A : ValuationSubring Ω) : Set (G F Ω) :=
+protected def Inertia (A : ValuationSubring Ω) : Set (G F Ω) :=
   {σ | σ ∈ Dec F A ∧ ∀ x, A.valuation x ≤ 1 → A.valuation (σ x - x) < 1}
+
+open _root_.Neutral.B1 (IsPlaceOver Inertia)
 
 
 variable (F) in
@@ -644,5 +648,8 @@ theorem contAction_trivial {R G M : Type*} [CommRing R] [Group G] [TopologicalSp
     [AddCommGroup M] [Module R M] [TopologicalSpace M] :
     ContAction (Representation.trivial R G M) :=
   continuous_snd
+
+-- Both namespaces use the same names in the scope of an ordinary open command.
+export _root_.Formalism.ConjugateSelfDual (G IsPlaceOver Inertia)
 
 end Neutral.B1
