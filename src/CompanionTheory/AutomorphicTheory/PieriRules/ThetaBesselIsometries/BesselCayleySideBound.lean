@@ -71,7 +71,7 @@ theorem pointwise : PI.KFinSmooth → ∀ (k r : ℕ) (ε : Fin (2 * r + k + 1) 
   obtain ⟨hz, hT, ⟨u₀, hπ⟩, -⟩ := hS
   have hπ1 : π 1 = 1 := (Formalism.FourierDecayAlt.P.MatrixMultiplicationContinuity.piW_facts hT hπ).1
   obtain ⟨hmul, -, -, hsm, -⟩ := _root_.Gp91.GlobalTheory.rep_basic_of_isDS hK k r ε mu R hR
-  obtain ⟨hact, -, -, hcomp⟩ := GlobalTheory.T.smooth_maps_closure hK k r ε mu mu mu R R R hR hR hR
+  obtain ⟨hact, -, -, hcomp⟩ := _root_.GlobalTheory.SmMapAct.smMap_act hK k r ε mu mu mu R R R hR hR hR
   obtain ⟨X, hX, hXn, hXt⟩ := _root_.GlobalTheory.UnipotentElement.exists_element k r z hz hT g hg a
   obtain ⟨-, -, hexp⟩ := GlobalTheory.T.derivedAction_expand_matrixUnits hK k r ε mu R hR Q E hQ.1.1 hE
   obtain ⟨ladd, lsmul, leq, lcont⟩ := hl

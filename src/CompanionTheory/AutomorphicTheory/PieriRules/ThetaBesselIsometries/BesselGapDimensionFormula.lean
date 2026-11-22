@@ -159,7 +159,7 @@ theorem norm_integral (hy : HypsG) (k r : ℕ) (ε : Fin (2 * r + k + 1) → Boo
   obtain ⟨hmul, hone, hun, hsm, hTK, -, -, -, hcont⟩ := GlobalTheory.rep_basic_of_isDS hy.1.2.2.1 k r ε mu R hR
   have hfub := _root_.Gp91.GlobalTheory.BesselFubini.integrable_GS hy k r ε mu h R Wp z π u μW μN μG νq hR hgap hok hS v hv w hw
   have hpt := _root_.Gp91.GlobalTheory.bessel_norm_sq_double_integral hy k r ε mu h R Wp z π u μW μN μG νq hR hgap hok hS v hv
-  have hconv := (GlobalTheory.T.besselIntegral_integrable_and_cwContinuous_of_gap hy k r ε mu h R Wp z π u μW μN μG νq hR hgap hok hS v hv).1 v (hTK v hv)
+  have hconv := (_root_.GlobalTheory.BesselConv.be_conv hy k r ε mu h R Wp z π u μW μN μG νq hR hgap hok hS v hv).1 v (hTK v hv)
   obtain ⟨hz, hT, ⟨u₀, hπ⟩, -, hWh, hNh, hGh, hq⟩ := hS
   have := hWh.1; have := hNh.1; have := hGh.1
   have hGae : ∀ᵐ y ∂μG, Matrix.of y ∈ GG k r := ae_iff.mpr hGh.2.2.1
