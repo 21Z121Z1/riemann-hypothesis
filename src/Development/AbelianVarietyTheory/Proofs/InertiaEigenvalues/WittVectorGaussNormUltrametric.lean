@@ -6,7 +6,7 @@ public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0
 @[expose] public section
 
 namespace GlobalTheory.WittGauss
-open WittVector
+open _root_.WittVector
 
 def scaleCoeff (p : ℕ) {S : Type} [CommRing S] (t : S) (x : WittVector p S) : WittVector p S :=
   WittVector.mk p fun n => t ^ p ^ n * x.coeff n

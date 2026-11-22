@@ -13,7 +13,7 @@ public import GroundTheory.GlobalFields.TateThesis.LocalConductor
 section
 namespace GroundTheory.Global
 
-open Complex
+open _root_.Complex
 
 theorem re_eq_zero_of_norm_exp_one_cpow {s : ℂ}
     (h : ‖((Real.exp 1 : ℝ) : ℂ) ^ s‖ = 1) : s.re = 0 := by
@@ -323,7 +323,7 @@ end
 section
 namespace GroundTheory.Global
 
-open Complex MeasureTheory Set Real ComplexConjugate
+open _root_.Complex MeasureTheory Set Real ComplexConjugate
 open scoped FourierTransform
 
 noncomputable section
