@@ -189,7 +189,7 @@ theorem isEnd_block_raw [CharZero C] (V : VF C) (hlg : ∀ x, Z.lg x = inCol x.1
       MvPowerSeries (Fin 2 × (Fin 2 × Fin dd)) C) = 0 := fun _ => constantCoeff_X _
   have hB := hasSubst_of_constantCoeff_zero hb
   have h1 := intS_subst hb (fun _ => intS_X _) H.2.2
-  rw [subst_mvExp hb (by
+  rw [GlobalTheory.RowVal.subst_mvExp hb (by
       rw [map_sub, cc_hAt X (hax 0) (cc_endP X hlg0 hex0 M (hg _ 0)) (hg _ 1),
         cc_hAt X (hax 0) (hg _ 0) (cc_endP X hlg0 hex0 M' (hg _ 1)), sub_zero]),
     subst_sub hB, subst_hAt X (cc_endP X hlg0 hex0 M (hg _ 0)) (hg _ 1) hb,

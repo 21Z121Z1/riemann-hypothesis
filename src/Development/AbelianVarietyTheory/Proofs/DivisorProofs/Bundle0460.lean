@@ -361,11 +361,11 @@ theorem cech_level_eqv_of_integral_pullback :
     ∀ (R : Type) [CommRing R] (F : Shv R) (Y X Y' X' : Scheme.{0}) (a : Y' ⟶ Y) (f' : Y' ⟶ X') (f : Y ⟶ X) (b : X' ⟶ X),
     IsPullback a f' f b → IsIntegralHom f →
     (∀ (Z Z' : Scheme.{0}) (h : Z ⟶ X) (h' : Z' ⟶ X') (φ : Z' ⟶ Z), IsIntegralHom h → IsPullback φ h' h b → Eqv R (sch.map φ) F) →
-    ∀ (m : GlobalTheory.EtC.cech f' ⟶ GlobalTheory.EtC.cech f), IsPullback m (cechAug f') (cechAug f) (sch.map b) → ∀ n, Eqv R (disc.map (m.app n)) F := by
+    ∀ (m : GlobalTheory.EtC.cech f' ⟶ GlobalTheory.EtC.cech f), IsPullback m (GlobalTheory.EtC.cechAug f') (GlobalTheory.EtC.cechAug f) (sch.map b) → ∀ n, Eqv R (disc.map (m.app n)) F := by
   intro R _ F Y X Y' X' a f' f b hab hf H m hm n
   have hf' : IsIntegralHom f' := MorphismProperty.of_isPullback (P := @IsIntegralHom) hab hf
 
-  have hn : IsPullback (m.app n) ((cechAug f').app n) ((cechAug f).app n) (yoneda.map b) :=
+  have hn : IsPullback (m.app n) ((GlobalTheory.EtC.cechAug f').app n) ((GlobalTheory.EtC.cechAug f).app n) (yoneda.map b) :=
     hm.map ((evaluation SimplexCategoryᵒᵖ PSh).obj n)
   obtain ⟨Z, π, e, hπ, he⟩ := GlobalTheory.T.exists_representable_cech_level_of_stable (@IsIntegralHom) Y X f hf n
   obtain ⟨Z', π', e', hπ', he'⟩ := GlobalTheory.T.exists_representable_cech_level_of_stable (@IsIntegralHom) Y' X' f' hf' n

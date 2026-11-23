@@ -348,6 +348,7 @@ theorem evLaw_integers {l : ℕ} [Fact l.Prime] (P : LocPrime l) (LL : FinExt l)
   rw [dist_comm, dist_eq_norm] at this
   exact this
 
+set_option synthInstance.maxHeartbeats 200000 in
 theorem nonempty_wSer : ∀ (l : ℕ) [Fact l.Prime] (P : LocPrime l) (K : FinExt l) (s : ℕ) (LL : FinExt l), Good K s LL → ∀ Γ : GamS P K s LL, Nonempty (WSer Γ) := by
   intro l _ P K s LL _ Γ
   obtain ⟨_, hcomp, -, hu, -⟩ := GlobalTheory.Per.integers_completeDVR l LL

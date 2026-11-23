@@ -151,6 +151,7 @@ theorem exists_residueField_factor_of_apply_eq {k : Type} [Field k] {X : Scheme.
   subst hz
   exact ⟨_, Scheme.descResidueField_stalkClosedPointTo_fromSpecResidueField k X x⟩
 
+set_option synthInstance.maxHeartbeats 200000 in
 theorem exists_integral_point_lifting_residue_point :
     ∀ (X : Scheme.{0}) [IsIntegral X] (π : X ⟶ Sp ℤ) [Flat π] [LocallyOfFiniteType π] (U : X.Opens),
       (U : Set X).Nonempty → ∀ (p : ℕ) [Fact p.Prime],

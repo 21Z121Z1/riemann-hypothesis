@@ -285,7 +285,7 @@ theorem skoda_open (hU : IsOpen U) (S : EtaleStein n U) (hz : S.z = Subtype.val)
     intro g₁ g₂ y h ξ
     unfold leviV
     refine Finset.sum_congr rfl fun j _ => Finset.sum_congr rfl fun k _ => ?_
-    rw [wd_congr (h := h.eventually_nhds.mono fun y' h' => wdb_congr _ _ _ _ _ h')]
+    rw [wd_congr (h := h.eventually_nhds.mono fun y' h' => wdb_congr (j := _) (h := h'))]
   have hsm : SmoothR n S.z (fun x : U => ph0 x.1) := by
     rw [hz]
     intro e he

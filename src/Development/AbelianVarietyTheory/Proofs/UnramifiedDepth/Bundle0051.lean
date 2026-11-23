@@ -230,7 +230,7 @@ theorem subst_ex_DofN : ∀ (C : Type) [Field C] [CharZero C] (V : VF C) (O : Ty
   have eE : (fun s : Fin n × Fin dd => subst (fun j : Fin dd => Z (s.1, j)) (un1 (Y.ex s.2))) =
       fun s => E s.1 s.2 := by
     funext s
-    rw [subst_singlePointUncurry (hz s.1)]
+    rw [GlobalTheory.RowLawSquare.subst_singlePointUncurry (hz s.1)]
     show _ = sb _ _
     unfold sb
     congr 1
