@@ -66,7 +66,7 @@ theorem first_derivative_shift_integral {B : FB R d O} {h : PS k 2 d} (hc : B.Is
     rw [dd, ReciprocityTheory.ChartRestriction.G.TB.LogPf.ev_ev cz0z cz12]
     congr 1
     funext j c
-    fin_cases j <;> simp [pt_apply, ev_X cz0z]
+    fin_cases j <;> simp [pt_apply, ReciprocityTheory.ChartRestriction.G.TB.LogPf.ev_X cz0z]
   have z2 : ∀ c, pderiv (R := k) ((1 : Fin 3), b) (pt k (n := 3) d 2 c) = 0 := fun c => by simp [pderiv_pt]
   have dA : ∀ c, pderiv (R := k) ((1 : Fin 3), b) (addOf (B.FK k) (pt k (n := 3) d 0) (pt k d 1) c) =
       ev (n := 3) ![pt k d 0, pt k d 1] (pderiv (R := k) ((1 : Fin 2), b) (B.FK k c)) := by
@@ -80,7 +80,7 @@ theorem first_derivative_shift_integral {B : FB R d O} {h : PS k 2 d} (hc : B.Is
     rw [ReciprocityTheory.ChartRestriction.G.TB.LogPf.ev_ev cz0z cz01]
     congr 1
     funext j c
-    fin_cases j <;> simp [pt_apply, ev_X cz0z]
+    fin_cases j <;> simp [pt_apply, ReciprocityTheory.ChartRestriction.G.TB.LogPf.ev_X cz0z]
   have eA : ∀ g : PS k 2 d, ev (n := 2) ![pt k d 0, 0, pt k d 1]
       (ev (n := 3) ![addOf (B.FK k) (pt k (n := 3) d 0) (pt k d 1), pt k d 2] g) = g := by
     intro g
@@ -94,7 +94,7 @@ theorem first_derivative_shift_integral {B : FB R d O} {h : PS k 2 d} (hc : B.Is
       refine eval_first_axis_of_identity _ c ?_
       have := formalGroupLaw_ev_x_zero (lawK k B) c
       rwa [lawK_F] at this
-    · simp [pt_apply, ev_X cz0z]
+    · simp [pt_apply, ReciprocityTheory.ChartRestriction.G.TB.LogPf.ev_X cz0z]
   have t3 : ev (n := 2) ![pt k d 0, 0, pt k d 1] (pderiv (R := k) ((1 : Fin 3), b)
       (ev (n := 3) ![addOf (B.FK k) (pt k (n := 3) d 0) (pt k d 1), pt k d 2] h)) =
       ∑ c, pderiv (R := k) ((0 : Fin 2), c) h * ev (n := 2) ![pt k d 0] (Jac (lawK k B) c b) := by
@@ -129,7 +129,7 @@ theorem rel_sy {B : FB R d O} {h : PS k 2 d} (hc : B.IsCanonGauge k h) (b : Fin 
     rw [ReciprocityTheory.ChartRestriction.G.TB.LogPf.ev_ev zero_constant_zero_second czSw]
     congr 1
     funext j c
-    fin_cases j <;> simp [pt_apply, ev_X zero_constant_zero_second]
+    fin_cases j <;> simp [pt_apply, ReciprocityTheory.ChartRestriction.G.TB.LogPf.ev_X zero_constant_zero_second]
   rw [map_sub, ev_sub zero_constant_zero_second, dd, es2, ← formal_ev_second_point_of_x_zero] at h2
   have e : ev (n := 2) ![pt k d 1] (sgOf k h b) =
       -ev (n := 2) ![pt k d 1] (ev (n := 1) ![pt k d 0, 0] (pderiv (R := k) ((1 : Fin 2), b) h)) := by
@@ -168,16 +168,16 @@ theorem rel_ad {B : FB R d O} {h : PS k 2 d} (hc : B.IsCanonGauge k h) (a : O) (
       rw [ReciprocityTheory.ChartRestriction.G.TB.LogPf.ev_ev cz1 zero_constant_first_point]
       have : (fun j c => ev (n := 1) ![pt k d 0, 0] ((![pt k (n := 2) d 0] : Fin 1 → Pt k 2 d) j c)) =
           (![pt k (n := 1) d 0] : Fin 1 → Pt k 1 d) := by
-        funext j c; fin_cases j; simp [pt_apply, ev_X cz1]
+        funext j c; fin_cases j; simp [pt_apply, ReciprocityTheory.ChartRestriction.G.TB.LogPf.ev_X cz1]
       rw [this, gt_ev_pt_self]
-    · simp [pt_apply, ev_X cz1]
+    · simp [pt_apply, ReciprocityTheory.ChartRestriction.G.TB.LogPf.ev_X cz1]
   have e2 : ∀ g : PS k 2 d, ev (n := 1) ![B.actK k a] (ev (n := 1) ![pt k d 0, 0] g) =
       ev (n := 1) ![B.actK k a, 0] g := by
     intro g
     rw [ReciprocityTheory.ChartRestriction.G.TB.LogPf.ev_ev cAk cz1]
     congr 1
     funext j c
-    fin_cases j <;> simp [pt_apply, ev_X cAk, ev_zero' cAk]
+    fin_cases j <;> simp [pt_apply, ReciprocityTheory.ChartRestriction.G.TB.LogPf.ev_X cAk, ev_zero' cAk]
   have z1 : ∀ c, pderiv (R := k) ((1 : Fin 2), b) (pt k (n := 2) d 0 c) = 0 := fun c => by simp [pderiv_pt]
   have zA : ∀ c, pderiv (R := k) ((1 : Fin 2), b) (comp1 (B.actK k (star a)) (pt k (n := 2) d 1) c) =
       ev (n := 2) ![pt k d 1] (pderiv (R := k) ((0 : Fin 1), b) (B.actK k (star a) c)) := fun c => d_y _ b
@@ -188,7 +188,7 @@ theorem rel_ad {B : FB R d O} {h : PS k 2 d} (hc : B.IsCanonGauge k h) (a : O) (
     congr 1
     funext j c
     fin_cases j
-    · simp [pt_apply, ev_X cz1]
+    · simp [pt_apply, ReciprocityTheory.ChartRestriction.G.TB.LogPf.ev_X cz1]
     · show ev (n := 1) ![pt k d 0, 0] (ev (n := 2) ![pt k d 1] (B.actK k (star a) c)) = 0
       rw [ez_y, const_actK', map_zero]
   have e4 : ∀ c, ev (n := 1) ![pt k d 0, 0] (ev (n := 2) ![pt k d 1] (pderiv (R := k) ((0 : Fin 1), b)
