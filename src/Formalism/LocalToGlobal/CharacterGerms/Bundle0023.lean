@@ -93,7 +93,7 @@ theorem add_zero_of (G : FGLaw C d) (Q : PS C 1 d)
     have D := congrArg (fun g => ev (n := 1) ![pt C d 0, 0] (pderiv (R := C) ((1 : Fin 2), k) g)) hQ
     rw [map_add (f := _), h0, h1, zero_add, hchain G.F G.const] at D
     rw [ev_sum constant_zero_first_zero] at D
-    simp only [ev_mul constant_zero_first_zero, eval_group_law_at_zero G] at D
+    simp only [Formalism.L2.FormalSeriesBounds.PartialDerivEval.ev_mul constant_zero_first_zero, eval_group_law_at_zero G] at D
     rw [eval_eval_single (z0_1 (pt C d 1) (coordinate_point_constantCoeff 1)) constant_zero_first_zero (a' := (0 : Pt C 1 d)) (fun j => ev_X constant_zero_first_zero 1 j), ev_zero_pt,
       show u k = pderiv ((0 : Fin 1), k) Q from rfl, cc_pderiv, hlin k, map_zero] at D
     change (∑ b, A k b * u b) = 0
@@ -168,7 +168,7 @@ theorem log_endo (G : FGLaw C d) (lg : Pt C 1 d) (hlin : LinN lg)
     rw [e1, e2, e3, e4, hlgAB]
   have hQ := add_zero_of G (comp1 lg φ i - ∑ j, MvPowerSeries.C (linM φ i j) * lg j) (by
       rw [ev_sub hFz, ev_sub hP0, ev_sub hP1, ev_sum hFz, ev_sum hP0, ev_sum hP1, hcomp]
-      simp only [ev_mul hFz, ev_mul hP0, ev_mul hP1, ev_C, hF, mul_add, Finset.sum_add_distrib]
+      simp only [Formalism.L2.FormalSeriesBounds.PartialDerivEval.ev_mul hFz, Formalism.L2.FormalSeriesBounds.PartialDerivEval.ev_mul hP0, Formalism.L2.FormalSeriesBounds.PartialDerivEval.ev_mul hP1, ev_C, hF, mul_add, Finset.sum_add_distrib]
       ring)
     (by
       intro k

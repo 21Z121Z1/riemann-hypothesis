@@ -124,7 +124,7 @@ section Simplices
 variable (hC : CechPt) {Y X : Scheme.{0}} (f : Y ⟶ X) {V V' : Scheme.{0}}
 include hC
 
-theorem cechPoint_augmentation (b : V ⟶ Y) : Sx.map (cechAug f) (pt0 f b) = b ≫ f :=
+theorem cechPoint_augmentation (b : V ⟶ Y) : Sx.map (GlobalTheory.EtC.cechAug f) (pt0 f b) = b ≫ f :=
   (((hC Y X f 0 V).2.2 _ _ _).1)
 
 theorem cechPoint_restrict (g : V' ⟶ V) (b : V ⟶ Y) : Sx.res g (pt0 f b) = pt0 f (g ≫ b) := by
@@ -199,20 +199,20 @@ theorem main : CrystallineSemistableComparison.E.EvExt → CrystallineSemistable
   obtain ⟨γ, hγ, hγ0, hγ1, hγ2⟩ := hC1 q (cech D.f) L hInv
   obtain ⟨a, ha⟩ := (hBasic (ZMod q) (res _ (tw q 1)) X 2).1 x
   obtain ⟨α, hαc, hαx⟩ := (hConc (ZMod q) (res _ (tw q 1)) X 2 a).2.1 x ha
-  have hmk : CohomologyClass.mk (γ - zcomp (Cocycle.ofHom ((chains (ZMod q)).map (cechAug D.f))) α (zero_add 2)) = 0 := by
+  have hmk : CohomologyClass.mk (γ - zcomp (Cocycle.ofHom ((chains (ZMod q)).map (GlobalTheory.EtC.cechAug D.f))) α (zero_add 2)) = 0 := by
     rw [CohomologyClass.mk_sub, hγ, ← hx, ← hαx]
     exact sub_self _
   rw [CohomologyClass.mk_eq_zero_iff, mem_coboundaries_iff _ 1 (by norm_num)] at hmk
   obtain ⟨β, hβ⟩ := hmk
   have hv : ∀ (p : ℕ) (s : ℤ) (h : -(p : ℤ) + 2 = s) (U : Scheme.{0}) (z : Sx (cech D.f) p U),
-      ev (δ 1 2 β) p s h U z = ev γ.1 p s h U z - ev α.1 p s h U (Sx.map (cechAug D.f) z) := by
+      ev (δ 1 2 β) p s h U z = ev γ.1 p s h U z - ev α.1 p s h U (Sx.map (GlobalTheory.EtC.cechAug D.f) z) := by
     intro p s h U z
-    have e : δ 1 2 β = γ.1 - (Cochain.ofHom ((chains (ZMod q)).map (cechAug D.f))).comp α.1 (zero_add 2) := hβ
+    have e : δ 1 2 β = γ.1 - (Cochain.ofHom ((chains (ZMod q)).map (GlobalTheory.EtC.cechAug D.f))).comp α.1 (zero_add 2) := hβ
     rw [e, ((hExt _ _ _ _ _ _).2 p s h U z).2.1, ((hNat _ _ _ _ α.1 p s h U).2 _ _ z)]
   have hv1 : ∀ (p : ℕ) (s : ℤ) (h : -((p + 1 : ℕ) : ℤ) + 2 = s) (U : Scheme.{0}) (z : Sx (cech D.f) (p + 1) U),
       ev (δ 1 2 β) (p + 1) s h U z = ev γ.1 (p + 1) s h U z := by
     intro p s h U z
-    rw [hv, show ev α.1 (p + 1) s h U (Sx.map (cechAug D.f) z) = 0 from hαc.2 p s h U (Sx.map (cechAug D.f) z), sub_zero]
+    rw [hv, show ev α.1 (p + 1) s h U (Sx.map (GlobalTheory.EtC.cechAug D.f) z) = 0 from hαc.2 p s h U (Sx.map (GlobalTheory.EtC.cechAug D.f) z), sub_zero]
   refine ⟨a, fun V b => - ev β 0 1 (by simp) V (pt0 D.f b), fun V b c h => ev β 1 0 (by simp) V (pt1 D.f b c h),
     ha, ?_, ?_, ?_, ?_, ?_⟩
   · intro V V' g b

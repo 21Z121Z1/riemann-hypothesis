@@ -78,7 +78,7 @@ theorem cmp_one (P : Pt C 1 dd) : cmp P (1 : Matrix (Fin dd) (Fin dd) (PS C 1 dd
   simp only [cmp, Matrix.one_apply]
   split_ifs
   · exact ev_one _
-  · rw [show (0 : PS C 1 dd) = MvPowerSeries.C 0 from (map_zero _).symm, ev_C]
+  · rw [show (0 : PS C 1 dd) = MvPowerSeries.C 0 from (map_zero _).symm, Formalism.L2.FormalSeriesBounds.PartialDerivEval.ev_C]
 
 theorem JL_JF {V : VF C} {O : Type} [CommRing O] [StarRing O] (Y : FBChart C V O dd) :
     Jac Y.lg * JF Y.B.G = 1 := by

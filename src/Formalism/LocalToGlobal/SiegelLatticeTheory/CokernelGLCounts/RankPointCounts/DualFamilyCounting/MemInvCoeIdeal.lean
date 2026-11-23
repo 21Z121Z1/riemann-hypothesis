@@ -104,12 +104,12 @@ theorem ddI_ne : ddI D ^ 0 ≠ ⊥ ∧ ∀ k : ℕ, ddI D ^ k ≠ ⊥ := by
     exact Nd_ne D (by exact_mod_cast this)
   exact ⟨by simp, fun k => pow_ne_zero k h1⟩
 
-theorem g_ne : ((gS D : ℕ) : D.host.E) ≠ 0 := by
-  rw [gS, Nat.cast_mul]
+theorem g_ne : ((Formalism.MainNotions.S.Lat.gS D : ℕ) : D.host.E) ≠ 0 := by
+  rw [Formalism.MainNotions.S.Lat.gS, Nat.cast_mul]
   exact mul_ne_zero (Nat.cast_ne_zero.2 (D.host.g_prime 0).ne_zero)
     (Nat.cast_ne_zero.2 (D.host.g_prime 1).ne_zero)
 
-theorem Nd_not_mem {P : Ideal (𝓞 D.host.E)} [hP : P.IsPrime] (hg : ((gS D : ℕ) : 𝓞 D.host.E) ∈ P) (k : ℕ) :
+theorem Nd_not_mem {P : Ideal (𝓞 D.host.E)} [hP : P.IsPrime] (hg : ((Formalism.MainNotions.S.Lat.gS D : ℕ) : 𝓞 D.host.E) ∈ P) (k : ℕ) :
     ((Nd D ^ k : ℕ) : 𝓞 D.host.E) ∉ P := by
   intro hN
   have key : ∀ i : Fin 2, ((D.host.g i : ℕ) : 𝓞 D.host.E) ∉ P := by
@@ -124,7 +124,7 @@ theorem Nd_not_mem {P : Ideal (𝓞 D.host.E)} [hP : P.IsPrime] (hg : ((gS D : �
     rw [Ideal.eq_top_iff_one, hb']
     exact P.add_mem (P.mul_mem_right _ (by exact_mod_cast hN)) (P.mul_mem_right _ hi)
   have hg' : ((D.host.g 0 : ℕ) : 𝓞 D.host.E) * ((D.host.g 1 : ℕ) : 𝓞 D.host.E) ∈ P := by
-    simpa [gS, Nat.cast_mul] using hg
+    simpa [Formalism.MainNotions.S.Lat.gS, Nat.cast_mul] using hg
   rcases hP.mem_or_mem hg' with h | h
   · exact key 0 h
   · exact key 1 h
@@ -172,7 +172,7 @@ theorem XS_le_X : XS D F ≤ F.X.restrictScalars (𝓞 D.host.E) := by
   refine xs_gen D F hy _ fun a x _ => ?_
   exact F.X.smul_mem x (Submodule.subset_span ⟨a, rfl⟩)
 
-theorem XS_le_locP_e (P : Ideal (𝓞 D.host.E)) [P.IsPrime] (hg : ((gS D : ℕ) : 𝓞 D.host.E) ∈ P) :
+theorem XS_le_locP_e (P : Ideal (𝓞 D.host.E)) [P.IsPrime] (hg : ((Formalism.MainNotions.S.Lat.gS D : ℕ) : 𝓞 D.host.E) ∈ P) :
     XS D F ≤ Formalism.HermitianLatticesTheory.localization₂ P (Submodule.span (𝓞 D.host.E) (Set.range F.e)) := by
   intro y hy
   refine xs_gen D F hy _ fun a x hx => ?_
@@ -183,11 +183,11 @@ theorem XS_le_locP_e (P : Ideal (𝓞 D.host.E)) [P.IsPrime] (hg : ((gS D : ℕ)
 
 theorem xs_locGen (P : HeightOneSpectrum (𝓞 D.host.E)) :
     ∃ c : Fin D.R.rS → D.host.E, (∀ a, c a ≠ 0) ∧
-      (((gS D : ℕ) : 𝓞 D.host.E) ∈ P.asIdeal → ∀ a, c a = 1) ∧
+      (((Formalism.MainNotions.S.Lat.gS D : ℕ) : 𝓞 D.host.E) ∈ P.asIdeal → ∀ a, c a = 1) ∧
       (haveI := P.isPrime; Formalism.HermitianLatticesTheory.localization₂ P.asIdeal (XS D F) =
         Formalism.HermitianLatticesTheory.localization₂ P.asIdeal (Submodule.span (𝓞 D.host.E) (Set.range fun a => c a • F.e a))) := by
   have := P.isPrime
-  by_cases hg : ((gS D : ℕ) : 𝓞 D.host.E) ∈ P.asIdeal
+  by_cases hg : ((Formalism.MainNotions.S.Lat.gS D : ℕ) : 𝓞 D.host.E) ∈ P.asIdeal
   · refine ⟨fun _ => 1, fun _ => one_ne_zero, fun _ _ => rfl, ?_⟩
     simp only [one_smul]
     refine le_antisymm (Formalism.L2.SG.Pf.locP_le_locP' (XS_le_locP_e D F P.asIdeal hg)) ?_

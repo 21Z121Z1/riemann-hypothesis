@@ -48,7 +48,7 @@ def e1Q : (letI := H.cmStar; unitary H.E) →* DtQ H SQ := if h : ∃ f, IsUnita
 
 def relDetQ (N : ℕ) (M M' : Submodule (𝓞 H.E) (Fin N → H.E)) : DtQ H SQ ⧸ UOQ H SQ :=
   QuotientGroup.mk (QuotientGroup.mk (∏ᶠ w : HeightOneSpectrum (𝓞 H.E),
-    localIdele H.E w (atFin w (unif w)) ^ (ordSub w (detSub M') - ordSub w (detSub M)).toNat))
+    Neutral.B1.localIdele H.E w (atFin w (unif w)) ^ (ordSub w (detSub M') - ordSub w (detSub M)).toNat))
 
 theorem congQ_subset_congG : congQ H SQ ⊆ congG H := fun _ h => ⟨h.1, h.2.1⟩
 
@@ -136,7 +136,7 @@ def compAt (w : HeightOneSpectrum (𝓞 L)) : Neutral.B1.Ideles L →* w.adicCom
   map_mul' _ _ := rfl
 
 theorem compAt_localIdele_self (v : HeightOneSpectrum (𝓞 L)) (x : (v.adicCompletion L)ˣ) :
-    compAt v (localIdele L v x) = x := by
+    compAt v (Neutral.B1.localIdele L v x) = x := by
   classical
   have := Function.update_self (β := fun w : HeightOneSpectrum (𝓞 L) => w.adicCompletion L) v
     (x : v.adicCompletion L) (fun _ => 1)
@@ -144,7 +144,7 @@ theorem compAt_localIdele_self (v : HeightOneSpectrum (𝓞 L)) (x : (v.adicComp
   rfl
 
 theorem compAt_localIdele_ne {v w : HeightOneSpectrum (𝓞 L)} (hw : w ≠ v) (x : (v.adicCompletion L)ˣ) :
-    compAt w (localIdele L v x) = 1 := by
+    compAt w (Neutral.B1.localIdele L v x) = 1 := by
   classical
   have := Function.update_of_ne (β := fun w : HeightOneSpectrum (𝓞 L) => w.adicCompletion L) hw
     (x : v.adicCompletion L) (fun _ => 1)

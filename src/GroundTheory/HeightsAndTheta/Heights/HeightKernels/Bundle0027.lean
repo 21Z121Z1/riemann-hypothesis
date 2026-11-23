@@ -95,7 +95,7 @@ theorem sheetDensity_eq (hOn : DualPtsOnPlane.Statement) {D : ℕ} {F : HermLatt
 theorem fibre_eq (hOn : DualPtsOnPlane.Statement) (hOf : DualPtsOfPlane.Statement) {D : ℕ}
     {F : HermLattice K (D + 1)} (b : Module.Basis T ℤ (dualLattice F))
     (hb : Function.Bijective (Matrix.mulVecLin (dualEmbMatrix b))) (y : Fin D → ℂ) :
-    fibre (dualIdeal b) (dualProj b hb) y =
+    ReciprocityTheory.ChartRestriction.G.Geo.fibre (dualIdeal b) (dualProj b hb) y =
       Set.range fun σ : K →+* ℂ => segre (ι := dualBlocks T) (dualPlanePt b σ (Fin.cons 1 y)) := by
   ext w
   constructor

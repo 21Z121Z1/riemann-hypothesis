@@ -286,7 +286,7 @@ theorem inCoset_weightX {j : ℕ} : InCoset (1 / 2) ((Γ).weightX j) := by
 theorem rankX_even (j : ℕ) : Even (rankX D j) := even_rankX D j
 
 theorem isHC_top {j n : ℕ} (hj : j ≤ D.R.m) (hn : n = rankX D j) : IsHC n (Node.par D C (.top j) τ) := by
-  have he : entries (Node.par D C (.top j) τ) = (Γ).weightX j := entries_plus _
+  have he : entries (Node.par D C (.top j) τ) = (Γ).weightX j := GlobalTheory.SignedHC.entries_plus _
   have hr : IsRegular (Node.par D C (.top j) τ) := isRegular_plus _
   refine ⟨hr, ?_, ?_⟩
   · rw [← hr.card_entries, he, card_weightX D C τ hj, hn]
@@ -625,8 +625,8 @@ theorem step_top {j : ℕ} (hj : j + 1 ≤ D.R.m) (τ : D.what₂.Tau) (r : Fin 
   have h1 := isHC_top D sc.cGap τ hj r1
   have hE := h0.1.card_entries.trans h0.2.1
   have hF := h1.1.card_entries.trans h1.2.1
-  have e0 : entries (Node.par D sc.cGap (.top j) τ) = (num D sc.cGap τ).weightX j := entries_plus _
-  have e1 : entries (Node.par D sc.cGap (.top (j + 1)) τ) = (num D sc.cGap τ).weightX (j + 1) := entries_plus _
+  have e0 : entries (Node.par D sc.cGap (.top j) τ) = (num D sc.cGap τ).weightX j := GlobalTheory.SignedHC.entries_plus _
+  have e1 : entries (Node.par D sc.cGap (.top (j + 1)) τ) = (num D sc.cGap τ).weightX (j + 1) := GlobalTheory.SignedHC.entries_plus _
   refine natW_step (t := D.R.t + 1) ?_ (r0 ▸ rankX_pos D j) 0 (-((num D sc.cGap τ).e (j + 1) : ℚ)) hE ?_ ?_ hF _ _
     (fun r => wtOf_cast hE h0.2.2 r) (fun r => wtOf_cast hF h1.2.2 r) r
   · rw [r0, r1]

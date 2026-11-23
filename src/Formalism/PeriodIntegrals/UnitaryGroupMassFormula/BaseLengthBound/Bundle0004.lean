@@ -193,7 +193,7 @@ theorem taylorHasse_of (hY : YmDeriv) : TaylorHasse := by
     rw [hγk, size_eq_degree] at hA
     have hA' : hs G la q.1 (ym G la γ : Lw X la G.w) ∈ Jid X la G.w • HK X la G.w (wt0 D j) :=
       Submodule.smul_mono_left (Ideal.pow_le_self (by omega)) hA
-    exact mul_mem_J_smul_HK G la hA' (hasse_mem_HK G la wF q.2 (cf γ).2)
+    exact mul_mem_J_smul_HK G la hA' (PoleLengthBounds.THs.hasse_mem_HK G la wF q.2 (cf γ).2)
   change hs G la (bcol jj α) (x : Lw X la G.w) - _ ∈ _
   rw [hxe, hs_add, hs_sum]
   have hsum : ∑ γ ∈ mon D j k, (if γ = α then ((wfr G la jj ^ k : ↥(Frac0 X la G.w)) : Lw X la G.w) *

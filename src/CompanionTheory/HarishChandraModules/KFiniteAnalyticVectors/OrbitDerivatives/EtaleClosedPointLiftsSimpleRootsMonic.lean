@@ -63,7 +63,7 @@ theorem hGG (k r : ℕ) : IsMatGroup (GG k r) := PI.QuotSetU.UnitaryGroupMassFor
 theorem URep.dense (U : URep k r) : Dense {v | IsSm (GG k r) U.R.σ v} :=
   dense_sm' (hGG k r) (theta k r) theta_eq U.repOn U.rep.2.2
 
-theorem hLie : ∀ X, InLieHpk k r X → ∀ t, ex X t ∈ GG k r := fun _ hX t => ex_mem_of_lie hX t
+theorem hLie : ∀ X, PI.UpqRep.InLieHpk k r X → ∀ t, ex X t ∈ GG k r := fun _ hX t => ex_mem_of_lie hX t
 
 theorem act_coe (X : Obj k r) {g : Mx k r} (hg : g ∈ GG k r) (x : M X) (c : X.1.ι) :
     ((act X g x c : X.2.R.smSub) : X.2.R.H) = ∑ d, X.1.ρ g c d • X.2.R.σ g (x d) := by
@@ -84,7 +84,7 @@ theorem sum_sn (X : Obj k r) (Ws : List (List (Mx k r))) (x : M X) :
 
 theorem exists_common {ι : Type} [Fintype ι] {H E : Type} [NormedAddCommGroup H] [InnerProductSpace ℂ H]
     [NormedAddCommGroup E] {σ : Mx k r → (H →L[ℂ] H)} {T : ι → H → E}
-    (h : ∀ c, Bdd (GG k r) (InLieHpk k r) σ (T c)) :
+    (h : ∀ c, Bdd (GG k r) (PI.UpqRep.InLieHpk k r) σ (T c)) :
     ∃ (C : ℝ) (Ws : List (List (Mx k r))), 0 ≤ C ∧ (∀ W ∈ Ws, LieWd k r W) ∧
       ∀ c v, IsSm (GG k r) σ v → ‖T c v‖ ≤ C * nu σ Ws v := by
   obtain ⟨C, Ws, hW, hb⟩ := Bdd.sum (T := fun c v => ‖T c v‖) Finset.univ fun c _ => by
@@ -101,7 +101,7 @@ theorem etaleClosed_point_lifts_simple_roots_monic : Lift := by
   let t : X.1.ι → X.2.R.H → T.R.H := fun c v =>
     if hv : IsSm (GG k r) X.2.R.σ v then f (Pi.single c ⟨v, hv⟩) else 0
   have ht : ∀ c (v : X.2.R.smSub), t c v = f (Pi.single c v) := fun c v => dif_pos v.2
-  have htw : TwInt (GG k r) (InLieHpk k r) X.2.R.σ T.R.σ (fun g c d => X.1.ρ g d c) t :=
+  have htw : TwInt (GG k r) (PI.UpqRep.InLieHpk k r) X.2.R.σ T.R.σ (fun g c d => X.1.ρ g d c) t :=
     { lin := fun c => ⟨fun v w hv hw => by
           rw [ht c ⟨v, hv⟩, ht c ⟨w, hw⟩, ← map_add (f := _), ← Pi.single_add]
           exact ht c (⟨v, hv⟩ + ⟨w, hw⟩), fun a v hv => by

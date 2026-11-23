@@ -34,7 +34,7 @@ theorem theta_exists (p n' : ℕ) [Fact p.Prime] (W Qq O Kf : Type) [CommRing W]
       IsFlatIdent ι σ w φ r d lam0 vec h Θ ∧ IsTrueTheta hS d lam0 vec h Θ := by
   open Formalism.L2.G.Model in
   letI : Algebra (WF p n') O := algOfIdent j φ
-  have hw := w_ne hS
+  have hw := Formalism.L2.G.Model.w_ne hS
   have hm : 1 ≤ m := by omega
   have hlam := flat_lam vec d lam0 hfl
   have hV : VS Kf m vec d = Vsp Kf lam0 := by

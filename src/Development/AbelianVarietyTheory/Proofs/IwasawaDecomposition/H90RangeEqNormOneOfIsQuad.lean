@@ -158,7 +158,7 @@ theorem compAt_ne_zero (P : HeightOneSpectrum (𝓞 L)) (a : Neutral.B1.Ideles L
 
 open Classical in
 theorem compAt_localIdele (P Q : HeightOneSpectrum (𝓞 L)) (k : Lˣ) :
-    compAt P (localIdele L Q (atFin Q k)) = if Q = P then algebraMap L _ (k : L) else 1 := by
+    compAt P (Neutral.B1.localIdele L Q (atFin Q k)) = if Q = P then algebraMap L _ (k : L) else 1 := by
   change Function.update (fun w : HeightOneSpectrum (𝓞 L) => (1 : w.adicCompletion L)) Q
     (algebraMap L _ (k : L)) P = _
   split_ifs with h

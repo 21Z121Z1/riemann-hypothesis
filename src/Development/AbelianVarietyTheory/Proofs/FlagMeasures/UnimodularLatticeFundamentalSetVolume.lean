@@ -123,7 +123,7 @@ theorem exists_coordLat (K : Type) [Field K] [NumberField K] (hK : IsTotallyComp
     rw [hz v, mulVec_mulVec, nonsing_inv_mul _ (hA v).isUnit, one_mulVec]
 
 theorem unimod_coords {K W : Type} [Field K] [NumberField K] [StarRing K] [AddCommGroup W] [Module K W]
-    [Module (𝓞 K) W] [IsScalarTower (𝓞 K) K W] (HW : HermSpace K W) {m : ℕ} (L : Submodule (𝓞 K) W)
+    [Module (𝓞 K) W] [IsScalarTower (𝓞 K) K W] (HW : Formalism.HermitianLatticeCounting.S6.HermSpace K W) {m : ℕ} (L : Submodule (𝓞 K) W)
     (hU : IsUnimod HW L) (e : Module.Basis (Fin m) K W)
     (c : Fin m → FractionalIdeal (𝓞 K)⁰ K) (hc : ∀ i, c i ≠ 0) (hL : ∀ x, x ∈ L ↔ ∀ i, e.repr x i ∈ c i)
     (y : Fin m → K) :
@@ -168,7 +168,7 @@ theorem unimod_coords {K W : Type} [Field K] [NumberField K] [StarRing K] [AddCo
     exact (FractionalIdeal.mem_inv_iff (hc i)).1 (hx i) _ ((hL x').1 hx' i)
 
 theorem det_gram_ne_zero {K W : Type} [Field K] [StarRing K] [AddCommGroup W] [Module K W]
-    (HW : HermSpace K W) {m : ℕ} (e : Module.Basis (Fin m) K W) :
+    (HW : Formalism.HermitianLatticeCounting.S6.HermSpace K W) {m : ℕ} (e : Module.Basis (Fin m) K W) :
     (Matrix.of fun i j => HW.B (e i) (e j)).det ≠ 0 := by
   intro h
   obtain ⟨w, hw, hw0⟩ := Matrix.exists_vecMul_eq_zero_iff.2 h
@@ -186,7 +186,7 @@ theorem det_gram_ne_zero {K W : Type} [Field K] [StarRing K] [AddCommGroup W] [M
   rw [this, hx0, map_zero]
 
 theorem norm_det_sq {K W : Type} [Field K] [StarRing K] [AddCommGroup W] [Module K W]
-    (HW : HermSpace K W) {k : ℕ} (e : Module.Basis (Fin (k + 1)) K W) (σ : K →+* ℂ) (Ψ : W → Fin (k + 1) → ℂ)
+    (HW : Formalism.HermitianLatticeCounting.S6.HermSpace K W) {k : ℕ} (e : Module.Basis (Fin (k + 1)) K W) (σ : K →+* ℂ) (Ψ : W → Fin (k + 1) → ℂ)
     (hherm : ∀ x y, herm (Hb k) (Ψ x) (Ψ y) = σ (HW.B x y)) :
     ‖(Matrix.of fun j i => Ψ (e i) j).det‖ ^ 2 = ‖σ (Matrix.of fun i j => HW.B (e i) (e j)).det‖ := by
   set M : Matrix (Fin (k + 1)) (Fin (k + 1)) ℂ := Matrix.of fun j i => Ψ (e i) j with hM
@@ -208,7 +208,7 @@ theorem mul_eq_one_of_covolume_identity (P D X : ℝ) (hP : 0 < P) (hD : 0 < D) 
   have h2 : (P * D) ^ 2 = 1 := mul_right_cancel₀ hX.ne' h1
   exact (pow_eq_one_iff_of_nonneg (mul_pos hP hD).le two_ne_zero).1 h2
 
-theorem unimod_fund : ∀ (K W : Type) [Field K] [NumberField K] [StarRing K] [AddCommGroup W] [Module K W] [FiniteDimensional K W] [Module (𝓞 K) W] [IsScalarTower (𝓞 K) K W] (HW : HermSpace K W), Formalism.HermitianLatticesTheory.IsCMUnram K → ∀ (k : ℕ) (ι : Type) [Fintype ι] (σ : ι → (K →+* ℂ)) (Ψ : ι → W → Fin (k + 1) → ℂ), IsPlaces σ → Module.finrank K W = k + 1 → (∀ v x y, Ψ v (x + y) = Ψ v x + Ψ v y) → (∀ v (c : K) x, Ψ v (c • x) = σ v c • Ψ v x) → (∀ v x y, herm (Hb k) (Ψ v x) (Ψ v y) = σ v (HW.B x y)) → ∀ (L : Submodule (𝓞 K) W) (𝔡 : Ideal (𝓞 K)) (n : ℤ) (ρ : ℝ), IsUnimod HW L → 𝔡 ≠ ⊥ → 0 < ρ → ∃ F : Set (ι → Fin (k + 1) → ℂ), MeasurableSet F ∧ (∀ a : ι → Fin (k + 1) → ℂ, ∃! x : W, x ∈ ipow 𝔡 n • L ∧ ((fun v => (ρ : ℂ) • Ψ v x) + a) ∈ F) ∧ volume F = ENNReal.ofReal ((Formalism.HermitianLatticesTheory.vInv K ^ Fintype.card ι * (Ideal.absNorm 𝔡 : ℝ) ^ n * ρ ^ (2 * Fintype.card ι)) ^ (k + 1)) := by
+theorem unimod_fund : ∀ (K W : Type) [Field K] [NumberField K] [StarRing K] [AddCommGroup W] [Module K W] [FiniteDimensional K W] [Module (𝓞 K) W] [IsScalarTower (𝓞 K) K W] (HW : Formalism.HermitianLatticeCounting.S6.HermSpace K W), Formalism.HermitianLatticesTheory.IsCMUnram K → ∀ (k : ℕ) (ι : Type) [Fintype ι] (σ : ι → (K →+* ℂ)) (Ψ : ι → W → Fin (k + 1) → ℂ), IsPlaces σ → Module.finrank K W = k + 1 → (∀ v x y, Ψ v (x + y) = Ψ v x + Ψ v y) → (∀ v (c : K) x, Ψ v (c • x) = σ v c • Ψ v x) → (∀ v x y, herm (Hb k) (Ψ v x) (Ψ v y) = σ v (HW.B x y)) → ∀ (L : Submodule (𝓞 K) W) (𝔡 : Ideal (𝓞 K)) (n : ℤ) (ρ : ℝ), IsUnimod HW L → 𝔡 ≠ ⊥ → 0 < ρ → ∃ F : Set (ι → Fin (k + 1) → ℂ), MeasurableSet F ∧ (∀ a : ι → Fin (k + 1) → ℂ, ∃! x : W, x ∈ ipow 𝔡 n • L ∧ ((fun v => (ρ : ℂ) • Ψ v x) + a) ∈ F) ∧ volume F = ENNReal.ofReal ((Formalism.HermitianLatticesTheory.vInv K ^ Fintype.card ι * (Ideal.absNorm 𝔡 : ℝ) ^ n * ρ ^ (2 * Fintype.card ι)) ^ (k + 1)) := by
   intro K W _ _ _ _ _ _ _ _ HW hK k ι _ σ Ψ hσ hdim hadd hsmul hherm L 𝔡 n ρ hU h𝔡 hρ
   obtain ⟨hLat, -⟩ := (isUnimod_iff HW L).1 hU
   obtain ⟨e, c, hc, hLc⟩ := exists_pseudo K W (k + 1) hdim L hLat

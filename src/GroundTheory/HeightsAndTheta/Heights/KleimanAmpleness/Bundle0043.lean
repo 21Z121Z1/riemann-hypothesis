@@ -142,8 +142,8 @@ theorem face_subset (I : ∀ k, Finset (ι k)) (k : K) (i : ι k) (l : K) :
     exact Finset.erase_subset _ _
   · rw [Function.update_of_ne hl]
 
-theorem constD_congr {V : Type} [AddCommGroup V] (G : ∀ k, Finset (ι k)) (n : ℕ) {f f' : Cell K ι n → V}
-    (h : ∀ J : Cell K ι n, (∀ k, J.1 k ⊆ G k) → f J = f' J) (I : Cell K ι (n + 1)) (hI : ∀ k, I.1 k ⊆ G k) :
+theorem constD_congr {V : Type} [AddCommGroup V] (G : ∀ k, Finset (ι k)) (n : ℕ) {f f' : ReciprocityTheory.ChartRestriction.G.ArakelovGeometry.KH.Cell K ι n → V}
+    (h : ∀ J : ReciprocityTheory.ChartRestriction.G.ArakelovGeometry.KH.Cell K ι n, (∀ k, J.1 k ⊆ G k) → f J = f' J) (I : ReciprocityTheory.ChartRestriction.G.ArakelovGeometry.KH.Cell K ι (n + 1)) (hI : ∀ k, I.1 k ⊆ G k) :
     constD K ι V n f I = constD K ι V n f' I := by
   unfold constD
   refine Finset.sum_congr rfl fun k _ => Finset.sum_congr rfl fun i _ => ?_
@@ -167,7 +167,7 @@ theorem cellRes_mk {M : Type} [AddCommGroup M] [Module (MRingOver S ι) M] {J I 
 
 open Classical in
 theorem cechD_apply {M : Type} [AddCommGroup M] [Module (MRingOver S ι) M] (n : ℕ) (f : CechC S ι M n)
-    (I : Cell K ι (n + 1)) :
+    (I : ReciprocityTheory.ChartRestriction.G.ArakelovGeometry.KH.Cell K ι (n + 1)) :
     cechD S ι M n f I = ∑ k, ∑ i ∈ I.1 k,
       if h : (∀ l, (Function.update I.1 k ((I.1 k).erase i) l).Nonempty) ∧
           ∑ l, ((Function.update I.1 k ((I.1 k).erase i) l).card - 1) = n then

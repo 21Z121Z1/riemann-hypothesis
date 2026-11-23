@@ -49,7 +49,7 @@ theorem characters_of_nearestPlane_of_short_integers (hNP : Ext.NearestPlane)
     rw [hρ', dstar, mul_assoc, mul_assoc]; exact Nat.mul_le_mul_left _ (Nat.mul_le_mul_left _ hρ'm)
   obtain ⟨xb, ub, hxub, hspan, hbnd⟩ := exists_short_real_span hI
   have hex : ∀ W : Submodule ℂ (Vsp X.dim), Module.finrank ℂ W < ρ →
-      ∃ y ∈ Xg X.L I, prj σ y ∉ W ∧
+      ∃ y ∈ Xg X.L I, ReciprocityTheory.ChartRestriction.G.I2.ChA.prj σ y ∉ W ∧
         ‖y‖ ^ 2 ≤ PT.rd E ^ 2 * (dstar (E := E) P.m : ℝ) ^ 4 * P.ph / (2 * PT.f E) := by
     intro W hW
     obtain ⟨j, hj⟩ := exists_out (by exact hρ) ub hspan W hW

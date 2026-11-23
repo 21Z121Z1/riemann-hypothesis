@@ -188,16 +188,16 @@ theorem ae_ext' {x y : AE D} (h1 : ∀ τ, cmpAt D τ x = cmpAt D τ y) (h2 : fi
   rw [RingHom.map_sub, sub_eq_zero]
   exact h1 τ
 
-def mkAE (z : D.what₂.Tau → ℂ) (b : Af D.host.F ⊗[D.host.F] D.host.E) : AE D := pairE (inf_surj z).choose b
+def mkAE (z : D.what₂.Tau → ℂ) (b : Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes.Af D.host.F ⊗[D.host.F] D.host.E) : AE D := pairE (inf_surj z).choose b
 
-theorem cmpAt_mkAE (z : D.what₂.Tau → ℂ) (b : Af D.host.F ⊗[D.host.F] D.host.E) (τ : D.what₂.Tau) :
+theorem cmpAt_mkAE (z : D.what₂.Tau → ℂ) (b : Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes.Af D.host.F ⊗[D.host.F] D.host.E) (τ : D.what₂.Tau) :
     cmpAt D τ (mkAE z b) = z τ := by
   have e : infPart D (mkAE z b) = (inf_surj z).choose := fst_pairE _ _
   show th0 D τ (infPart D (mkAE z b)) = _
   rw [e]
   exact (inf_surj z).choose_spec τ
 
-theorem finPart_mkAE (z : D.what₂.Tau → ℂ) (b : Af D.host.F ⊗[D.host.F] D.host.E) : finPart D (mkAE z b) = b :=
+theorem finPart_mkAE (z : D.what₂.Tau → ℂ) (b : Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes.Af D.host.F ⊗[D.host.F] D.host.E) : finPart D (mkAE z b) = b :=
   snd_pairE _ _
 
 def mkU (z : D.what₂.Tau → ℂ) (hz : ∀ τ, z τ ≠ 0) : (AE D)ˣ :=

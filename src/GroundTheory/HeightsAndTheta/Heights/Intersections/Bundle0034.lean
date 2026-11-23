@@ -453,7 +453,7 @@ def GenericPointsCount.Statement : Prop :=
     (Ψ : (((k : K) → ι k) → ℂ) →ₗ[ℂ] (Fin (n + 1) → ℂ)),
     IsBlockMap κ v → IsArithVar P' (n + 1) → IsArithVar (imageZ v P') (n + 1) →
     IsGoodProj (imageZ v P') Ψ → (∀ k : FibreBlock κ, G.x' ⟨k.1, i k⟩ ≠ 0) →
-    ∀ᵐ y : Fin n → ℂ, ∀ w ∈ fibre (imageZ v P') Ψ y,
+    ∀ᵐ y : Fin n → ℂ, ∀ w ∈ ReciprocityTheory.ChartRestriction.G.Geo.fibre (imageZ v P') Ψ y,
       (ptsOver P' v Ψ w).ncard = Module.finrank G.Φ (IntermediateField.adjoin G.Φ
         (Set.range fun q : Σ k : FibreBlock κ, ι' k.1 => G.x' ⟨q.1.1, q.2⟩ / G.x' ⟨q.1.1, i q.1⟩))
 

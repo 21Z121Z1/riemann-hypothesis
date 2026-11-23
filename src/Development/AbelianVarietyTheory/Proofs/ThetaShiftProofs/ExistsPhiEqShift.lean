@@ -37,7 +37,7 @@ theorem sval_eq (s : LB.Sec (LB.LinComb L φ ε)) {y : Sp ℂ ⟶ Y} {z : K → 
 theorem val_eq {t : LB.Gen (LB.LinComb L φ ε)} (ht : t.IsGen) {y : Sp ℂ ⟶ Y} {z : K → Fin g → ℂ}
     (hz : IsLift u φ y z) :
     (val t y pt (chartAt hL)).val = toStalk (genVal u hL t y z * ∏ k, frAt u hL (z k) ^ ε k) :=
-  (sval_genSec t ht y pt (good_chartAt hL)).symm.trans (sval_eq hL (genSec t ht) hz)
+  (sval_genSec t ht y pt (good_chartAt hL)).symm.trans (sval_eq hL (ReciprocityTheory.ChartRestriction.G.Geo.Tor.genSec t ht) hz)
 
 end Frames
 

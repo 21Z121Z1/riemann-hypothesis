@@ -181,7 +181,7 @@ theorem latDetH_pseudo [DecidableEq ι] (hK : IsCMUnram K) (h : V →ₗ⋆[K] V
       · intro H
         obtain ⟨y, rfl⟩ := ((Matrix.toLin' G).equivOfDetNeZero hd).surjective x
         exact ⟨y, (hm y).2 H, rfl⟩
-    have hl := (dualLattice (𝓞 K) K _ h' hs' hn' star_algebraMap_ringOfIntegers_mem_range P₀ hP₀l).1
+    have hl := (Formalism.HermitianLatticesTheory.dualLattice (𝓞 K) K _ h' hs' hn' star_algebraMap_ringOfIntegers_mem_range P₀ hP₀l).1
     have := GlobalTheory.DegCnt.FixDisc.idx_gmap hl hl _ le_rfl (hg.le.trans fun x a =>
       (dualBasic_mem_dual _ _ _).2 fun y b => hP₀i.2 y b x a)
     rw [hg, idxN_eq_one.2 le_rfl] at this

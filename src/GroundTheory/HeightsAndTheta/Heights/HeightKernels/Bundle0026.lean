@@ -77,15 +77,15 @@ theorem DualGeomDegPos.proof (hDeg : DegreeStatement) (hInd : PtsIndepStatement)
   obtain ⟨D, rfl⟩ : ∃ D, i = D + 1 := ⟨i - 1, by omega⟩
   rw [Nat.add_sub_cancel]
   have hV : IsArithVar (dualIdeal b) (D + 1) := hArith K (D + 1) F T b hi
-  have hS1 : IsSmoothHerm (dualLine (stdLattice F) b hb) := (hSemi K (D + 1) (stdLattice F) T b hb).1
+  have hS1 : IsSmoothHerm (dualLine (GroundTheory.Heights₂.Heights.DualGeometricDegreePositive.stdLattice F) b hb) := (hSemi K (D + 1) (GroundTheory.Heights₂.Heights.DualGeometricDegreePositive.stdLattice F) T b hb).1
   have e0 := hDeg Unit (dualBlocks T) (dualIdeal b) D (fun _ => dualLine F b hb) 2 hV
     (fun _ => (hSemi K (D + 1) F T b hb).1) Nat.prime_two
-  have e1 := hDeg Unit (dualBlocks T) (dualIdeal b) D (fun _ => dualLine (stdLattice F) b hb) 2 hV
+  have e1 := hDeg Unit (dualBlocks T) (dualIdeal b) D (fun _ => dualLine (GroundTheory.Heights₂.Heights.DualGeometricDegreePositive.stdLattice F) b hb) 2 hV
     (fun _ => hS1) Nat.prime_two
   have hswap : geomDeg (dualIdeal b) (dualLine F b hb) D =
-      geomDeg (dualIdeal b) (dualLine (stdLattice F) b hb) D := by
+      geomDeg (dualIdeal b) (dualLine (GroundTheory.Heights₂.Heights.DualGeometricDegreePositive.stdLattice F) b hb) D := by
     change ptsIntegral (dualIdeal b) (pot fun _ => dualLine F b hb) (fun _ => 1) =
-      ptsIntegral (dualIdeal b) (pot fun _ => dualLine (stdLattice F) b hb) (fun _ => 1)
+      ptsIntegral (dualIdeal b) (pot fun _ => dualLine (GroundTheory.Heights₂.Heights.DualGeometricDegreePositive.stdLattice F) b hb) (fun _ => 1)
     rw [e0, e1]
     rfl
   have hgood := isGoodProj hOn b hb
@@ -99,11 +99,11 @@ theorem DualGeomDegPos.proof (hDeg : DegreeStatement) (hInd : PtsIndepStatement)
       simp [hd]
     · exact (Ideal.ne_top_iff_one _).1 hV.2.1.1.ne_top
   have h := hInd Unit (dualBlocks T) (dualIdeal b) D hΨ.choose (dualProj b hb)
-    (fun _ => dualLine (stdLattice F) b hb) oneLine 1 hV hΨ.choose_spec hgood (fun _ => hS1)
+    (fun _ => dualLine (GroundTheory.Heights₂.Heights.DualGeometricDegreePositive.stdLattice F) b hb) oneLine 1 hV hΨ.choose_spec hgood (fun _ => hS1)
     contDiffOn_const hsec
   rw [logNorm_oneLine] at h
-  have hm := hMass K D (stdLattice F) T b hb fun _ => rfl
-  have hval : geomDeg (dualIdeal b) (dualLine (stdLattice F) b hb) D = Fintype.card (K →+* ℂ) := by
+  have hm := hMass K D (GroundTheory.Heights₂.Heights.DualGeometricDegreePositive.stdLattice F) T b hb fun _ => rfl
+  have hval : geomDeg (dualIdeal b) (dualLine (GroundTheory.Heights₂.Heights.DualGeometricDegreePositive.stdLattice F) b hb) D = Fintype.card (K →+* ℂ) := by
     unfold geomDeg ptsIntegral
     rw [dite_eq_left hΨ]
     exact h.trans hm
