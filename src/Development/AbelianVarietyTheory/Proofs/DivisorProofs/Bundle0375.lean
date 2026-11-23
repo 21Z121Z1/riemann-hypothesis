@@ -58,7 +58,7 @@ noncomputable section
 
 namespace GlobalTheory.CechOne
 
-def GlobalTheory.CechOne.cechDiag {Y X : Scheme.{0}} (f : Y ⟶ X) : sch.obj Y ⟶ cech f where
+def cechDiag {Y X : Scheme.{0}} (f : Y ⟶ X) : sch.obj Y ⟶ cech f where
   app n := WidePullback.lift (arrows := fun _ : Fin (n.unop.len + 1) => yoneda.map f) (yoneda.map f)
     (fun _ => 𝟙 (yoneda.obj Y)) (fun _ => Category.id_comp _)
   naturality m n g := by
