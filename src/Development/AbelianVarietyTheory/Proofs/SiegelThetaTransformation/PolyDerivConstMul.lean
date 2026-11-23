@@ -121,7 +121,7 @@ theorem exists_majorant {ι : Type} (A : ι → ℂ) (B : ι → W →ₗ[ℂ] W
 variable {σ : Type}
 
 noncomputable def bd (P Q : MvPolynomial σ ℂ) (u : σ → W) (F : W × W → ℂ) : ℂ :=
-  polyDeriv P u (fun z => polyDeriv Q u (fun w => F (z, w)) 0) 0
+  ReciprocityTheory.ChartRestriction.G.I2.polyDeriv P u (fun z => ReciprocityTheory.ChartRestriction.G.I2.polyDeriv Q u (fun w => F (z, w)) 0) 0
 
 theorem bd_hasSum (P Q : MvPolynomial σ ℂ) (u : σ → W) {ι : Type} {F : ι → W × W → ℂ}
     {S : W × W → ℂ} (hF : ∀ i p, AnalyticAt ℂ (F i) p) (hS : ∀ p, HasSum (fun i => F i p) (S p))
@@ -186,7 +186,7 @@ theorem bd_const_mul (P Q : MvPolynomial σ ℂ) (u : σ → W) (c : ℂ) {F : W
 
 omit [FiniteDimensional ℂ W] in
 theorem polyDeriv_const_mul (P : MvPolynomial σ ℂ) (u : σ → W) (c : ℂ) {F : W → ℂ}
-    (hF : AnalyticAt ℂ F 0) : polyDeriv P u (fun p => c * F p) 0 = c * polyDeriv P u F 0 := by
+    (hF : AnalyticAt ℂ F 0) : ReciprocityTheory.ChartRestriction.G.I2.polyDeriv P u (fun p => c * F p) 0 = c * ReciprocityTheory.ChartRestriction.G.I2.polyDeriv P u F 0 := by
   rw [KernSym.polyDeriv_eq_sum_list _ _ hF,
     KernSym.polyDeriv_eq_sum_list _ _ (F := fun p => c * F p) (analyticAt_const.mul hF),
     Finset.mul_sum]
@@ -205,8 +205,8 @@ theorem analyticAt_conj {h : W → ℂ} (hh : ∀ p, AnalyticAt ℂ h p) (p : W)
 theorem bd_prod (P Q : MvPolynomial σ ℂ) (u : σ → W) (hu : ∀ s, star (u s) = u s) {f h : W → ℂ}
     (hf : ∀ p, AnalyticAt ℂ f p) (hh : ∀ p, AnalyticAt ℂ h p) :
     bd P (barP Q) u (fun p => f p.1 * conj (h (star p.2))) =
-      polyDeriv P u f 0 * conj (polyDeriv Q u h 0) := by
-  have h1 : polyDeriv (barP Q) u (fun w => conj (h (star w))) 0 = conj (polyDeriv Q u h 0) := by
+      ReciprocityTheory.ChartRestriction.G.I2.polyDeriv P u f 0 * conj (ReciprocityTheory.ChartRestriction.G.I2.polyDeriv Q u h 0) := by
+  have h1 : ReciprocityTheory.ChartRestriction.G.I2.polyDeriv (barP Q) u (fun w => conj (h (star w))) 0 = conj (ReciprocityTheory.ChartRestriction.G.I2.polyDeriv Q u h 0) := by
     set_option synthInstance.maxHeartbeats 100000 in
       rw [KernSym.polyDeriv_eq_sum_list _ _ (analyticAt_conj hh 0),
       KernSym.polyDeriv_eq_sum_list _ _ (hh 0), map_sum, barP,

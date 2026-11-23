@@ -32,14 +32,14 @@ theorem ChartDimBound.proof : ChartDimBound.Statement.{u, v, w} := by
   let t : Set (MRingOver F ι ⧸ V) := Set.range (Ideal.Quotient.mk V ∘ f)
   have hspan : Ideal.span t = (Ideal.span (Set.range f)).map (Ideal.Quotient.mk V) := by
     rw [Ideal.map_span, ← Set.range_comp]
-  let e : (MRingOver F ι ⧸ V) ⧸ Ideal.span t ≃+* MRingOver F ι ⧸ chartIdeal V i :=
+  let e : (MRingOver F ι ⧸ V) ⧸ Ideal.span t ≃+* MRingOver F ι ⧸ ReciprocityTheory.ChartRestriction.G.AI.I1.chartIdeal V i :=
     (Ideal.quotEquivOfEq hspan).trans (DoubleQuot.quotQuotEquivQuotSup V _)
   have : IsDomain (MRingOver F ι ⧸ V) := Ideal.Quotient.isDomain V
   have : Algebra.FiniteType F (MRingOver F ι ⧸ V) :=
     Algebra.FiniteType.of_surjective (Ideal.Quotient.mkₐ F V) (Ideal.Quotient.mkₐ_surjective F V)
   have : IsNoetherianRing (MRingOver F ι ⧸ V) := Algebra.FiniteType.isNoetherianRing F _
   have hne : Ideal.span t ≠ ⊤ := by
-    have : Nontrivial (MRingOver F ι ⧸ chartIdeal V i) :=
+    have : Nontrivial (MRingOver F ι ⧸ ReciprocityTheory.ChartRestriction.G.AI.I1.chartIdeal V i) :=
       Ideal.Quotient.nontrivial_iff.mpr (chartIdeal_ne_top hVh hi)
     have : Nontrivial ((MRingOver F ι ⧸ V) ⧸ Ideal.span t) := e.toEquiv.nontrivial
     exact Ideal.Quotient.nontrivial_iff.mp this

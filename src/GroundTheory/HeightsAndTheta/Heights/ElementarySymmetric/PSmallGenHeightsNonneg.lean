@@ -43,7 +43,7 @@ theorem killBlocksBelow_monomial (j : ℕ) (m : (Σ k, ι k) →₀ ℕ) (c : �
     rw [Finsupp.prod, Finset.prod_eq_zero hp, mul_zero]
     rw [if_pos hlt, zero_pow (Finsupp.mem_support_iff.mp hp)]
 
-theorem killBlocksBelow_of_isMultiHomog (j : ℕ) {f : MRing ι} {a : K → ℕ} (hf : IsMultiHomog f a) :
+theorem killBlocksBelow_of_isMultiHomog (j : ℕ) {f : MRing ι} {a : K → ℕ} (hf : ReciprocityTheory.ChartRestriction.G.Geo.IsMultiHomog f a) :
     killBlocksBelow j f = f ∨ killBlocksBelow j f = 0 := by
   by_cases h : ∀ k, ((Fintype.equivFin K k : Fin _) : ℕ) < j → a k = 0
   · left

@@ -69,10 +69,10 @@ theorem refNorm_mul {a b : K → ℤ} {z : (Σ k, ι k) → ℂ} (hz : ∀ k, �
   simp only [Pi.add_apply, Int.cast_add]
   ring
 
-variable {I : Ideal (MRing ι) → (n : ℕ) → (Fin n → HermLine ι) → ℝ} {P : Ideal (MRing ι)} {n : ℕ}
+variable {I : Ideal (MRing ι) → (n : ℕ) → (Fin n → ReciprocityTheory.ChartRestriction.G.Geo.HermLine ι) → ℝ} {P : Ideal (MRing ι)} {n : ℕ}
 
-theorem I_snoc_congr (hI : IsIntersectionFamily I) (hP : IsArithVar P (n + 1)) (L : Fin n → HermLine ι)
-    (hL : ∀ j, IsSmoothHerm (L j)) {A B : HermLine ι} (hA : IsSmoothHerm A) (hB : IsSmoothHerm B)
+theorem I_snoc_congr (hI : IsIntersectionFamily I) (hP : IsArithVar P (n + 1)) (L : Fin n → ReciprocityTheory.ChartRestriction.G.Geo.HermLine ι)
+    (hL : ∀ j, IsSmoothHerm (L j)) {A B : ReciprocityTheory.ChartRestriction.G.Geo.HermLine ι} (hA : IsSmoothHerm A) (hB : IsSmoothHerm B)
     (ha : A.a = B.a) (hh : ∀ z ∈ mcPts P, A.h z = B.h z) :
     I P (n + 1) (Fin.snoc L A) = I P (n + 1) (Fin.snoc L B) := by
   have hBi := Inter.isSmoothHerm_hermZpow hB (-1)
@@ -89,7 +89,7 @@ theorem I_snoc_congr (hI : IsIntersectionFamily I) (hP : IsArithVar P (n + 1)) (
   push_cast at h1
   linarith
 
-theorem I_snoc_fsHerm_add (hI : IsIntersectionFamily I) (hP : IsArithVar P (n + 1)) (L : Fin n → HermLine ι)
+theorem I_snoc_fsHerm_add (hI : IsIntersectionFamily I) (hP : IsArithVar P (n + 1)) (L : Fin n → ReciprocityTheory.ChartRestriction.G.Geo.HermLine ι)
     (hL : ∀ j, IsSmoothHerm (L j)) (a b : K → ℤ) :
     I P (n + 1) (Fin.snoc L (fsHerm ι (a + b))) =
       I P (n + 1) (Fin.snoc L (fsHerm ι a)) + I P (n + 1) (Fin.snoc L (fsHerm ι b)) := by
