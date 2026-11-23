@@ -63,7 +63,7 @@ theorem first_derivative_shift_integral {B : FB R d O} {h : PS k 2 d} (hc : B.Is
     rw [d2 cz12]; simp [pderiv_pt]
   have t2 : ev (n := 2) ![pt k d 0, 0, pt k d 1] (pderiv (R := k) ((1 : Fin 3), b) (ev (n := 3) ![pt k d 1, pt k d 2] h)) =
       ev (n := 2) ![0, pt k d 1] (pderiv (R := k) ((0 : Fin 2), b) h) := by
-    rw [dd, ev_ev cz0z cz12]
+    rw [dd, ReciprocityTheory.ChartRestriction.G.TB.LogPf.ev_ev cz0z cz12]
     congr 1
     funext j c
     fin_cases j <;> simp [pt_apply, ev_X cz0z]
@@ -77,14 +77,14 @@ theorem first_derivative_shift_integral {B : FB R d O} {h : PS k 2 d} (hc : B.Is
   have eB : ∀ g : PS k 2 d, ev (n := 2) ![pt k d 0, 0, pt k d 1] (ev (n := 3) ![pt k d 0, pt k d 1] g) =
       ev (n := 2) ![pt k d 0, 0] g := by
     intro g
-    rw [ev_ev cz0z cz01]
+    rw [ReciprocityTheory.ChartRestriction.G.TB.LogPf.ev_ev cz0z cz01]
     congr 1
     funext j c
     fin_cases j <;> simp [pt_apply, ev_X cz0z]
   have eA : ∀ g : PS k 2 d, ev (n := 2) ![pt k d 0, 0, pt k d 1]
       (ev (n := 3) ![addOf (B.FK k) (pt k (n := 3) d 0) (pt k d 1), pt k d 2] g) = g := by
     intro g
-    rw [ev_ev cz0z cA]
+    rw [ReciprocityTheory.ChartRestriction.G.TB.LogPf.ev_ev cz0z cA]
     conv_rhs => rw [← ev_pt g]
     congr 1
     funext j c
@@ -126,7 +126,7 @@ theorem rel_sy {B : FB R d O} {h : PS k 2 d} (hc : B.IsCanonGauge k h) (b : Fin 
   have es2 : ∀ g : PS k 2 d, ev (n := 2) ![0, pt k d 1] (ev (n := 2) ![pt k d 1, pt k d 0] g) =
       ev (n := 2) ![pt k d 1, 0] g := by
     intro g
-    rw [ev_ev zero_constant_zero_second czSw]
+    rw [ReciprocityTheory.ChartRestriction.G.TB.LogPf.ev_ev zero_constant_zero_second czSw]
     congr 1
     funext j c
     fin_cases j <;> simp [pt_apply, ev_X zero_constant_zero_second]
@@ -160,12 +160,12 @@ theorem rel_ad {B : FB R d O} {h : PS k 2 d} (hc : B.IsCanonGauge k h) (a : O) (
   have e1 : ∀ g : PS k 2 d, ev (n := 1) ![pt k d 0, 0]
       (ev (n := 2) ![comp1 (B.actK k a) (pt k (n := 2) d 0), pt k d 1] g) = ev (n := 1) ![B.actK k a, 0] g := by
     intro g
-    rw [ev_ev cz1 cA0]
+    rw [ReciprocityTheory.ChartRestriction.G.TB.LogPf.ev_ev cz1 cA0]
     congr 1
     funext j c
     fin_cases j
     · show ev (n := 1) ![pt k d 0, 0] (ev (n := 2) ![pt k d 0] (B.actK k a c)) = B.actK k a c
-      rw [ev_ev cz1 zero_constant_first_point]
+      rw [ReciprocityTheory.ChartRestriction.G.TB.LogPf.ev_ev cz1 zero_constant_first_point]
       have : (fun j c => ev (n := 1) ![pt k d 0, 0] ((![pt k (n := 2) d 0] : Fin 1 → Pt k 2 d) j c)) =
           (![pt k (n := 1) d 0] : Fin 1 → Pt k 1 d) := by
         funext j c; fin_cases j; simp [pt_apply, ev_X cz1]
@@ -174,7 +174,7 @@ theorem rel_ad {B : FB R d O} {h : PS k 2 d} (hc : B.IsCanonGauge k h) (a : O) (
   have e2 : ∀ g : PS k 2 d, ev (n := 1) ![B.actK k a] (ev (n := 1) ![pt k d 0, 0] g) =
       ev (n := 1) ![B.actK k a, 0] g := by
     intro g
-    rw [ev_ev cAk cz1]
+    rw [ReciprocityTheory.ChartRestriction.G.TB.LogPf.ev_ev cAk cz1]
     congr 1
     funext j c
     fin_cases j <;> simp [pt_apply, ev_X cAk, ev_zero' cAk]
@@ -184,7 +184,7 @@ theorem rel_ad {B : FB R d O} {h : PS k 2 d} (hc : B.IsCanonGauge k h) (a : O) (
   have e3 : ∀ g : PS k 2 d, ev (n := 1) ![pt k d 0, 0]
       (ev (n := 2) ![pt k d 0, comp1 (B.actK k (star a)) (pt k (n := 2) d 1)] g) = ev (n := 1) ![pt k d 0, 0] g := by
     intro g
-    rw [ev_ev cz1 cA1]
+    rw [ReciprocityTheory.ChartRestriction.G.TB.LogPf.ev_ev cz1 cA1]
     congr 1
     funext j c
     fin_cases j
