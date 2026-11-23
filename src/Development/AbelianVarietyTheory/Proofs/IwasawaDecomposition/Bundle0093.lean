@@ -343,7 +343,7 @@ theorem continuous_finSingle (v : HeightOneSpectrum (𝓞 L)) : Continuous (Neut
   have := (RestrictedProduct.continuous_inclusion hle).comp hf
   exact this
 
-theorem continuous_localIdele (v : HeightOneSpectrum (𝓞 L)) : Continuous (localIdele L v) := by
+theorem continuous_localIdele (v : HeightOneSpectrum (𝓞 L)) : Continuous (Neutral.B1.localIdele L v) := by
   apply Continuous.units_map
   exact Continuous.prodMk continuous_const (continuous_finSingle v)
 
@@ -370,15 +370,15 @@ theorem tendsto_finSingle (y : ∀ v : HeightOneSpectrum (𝓞 L), v.adicComplet
   · simp [g, o, Function.update_of_ne hw]
 
 theorem tendsto_localIdele (x : ∀ v : HeightOneSpectrum (𝓞 L), (v.adicCompletion L)ˣ) (hx : ∀ v, IsUnitAt v (x v)) :
-    Tendsto (fun v => localIdele L v (x v)) cofinite (𝓝 1) := by
+    Tendsto (fun v => Neutral.B1.localIdele L v (x v)) cofinite (𝓝 1) := by
   rw [Units.isEmbedding_embedProduct.tendsto_nhds_iff]
   have h1 := tendsto_finSingle (fun v => (x v : v.adicCompletion L)) fun v => (hx v).le
   have h2 := tendsto_finSingle (fun v => (((x v)⁻¹ : (v.adicCompletion L)ˣ) : v.adicCompletion L)) fun v => by
     have h : Valued.v (x v : v.adicCompletion L) = 1 := hx v
     rw [Units.val_inv_eq_inv_val, map_inv₀, h, inv_one]
-  have h3 : Tendsto (fun v => ((localIdele L v (x v) : Ideles L) : AdeleRing (𝓞 L) L)) cofinite (𝓝 1) :=
+  have h3 : Tendsto (fun v => ((Neutral.B1.localIdele L v (x v) : Ideles L) : AdeleRing (𝓞 L) L)) cofinite (𝓝 1) :=
     (tendsto_const_nhds (x := (1 : InfiniteAdeleRing L))).prodMk_nhds h1
-  have h4 : Tendsto (fun v => (((localIdele L v (x v))⁻¹ : Ideles L) : AdeleRing (𝓞 L) L)) cofinite (𝓝 1) :=
+  have h4 : Tendsto (fun v => (((Neutral.B1.localIdele L v (x v))⁻¹ : Ideles L) : AdeleRing (𝓞 L) L)) cofinite (𝓝 1) :=
     (tendsto_const_nhds (x := (1 : InfiniteAdeleRing L))).prodMk_nhds h2
   exact h3.prodMk_nhds ((MulOpposite.continuous_op.tendsto _).comp h4)
 

@@ -40,7 +40,7 @@ def UOQ : Subgroup (DtQ H SQ) := (unitIdl H.E).map (QuotientGroup.mk' (KDq H SQ)
 
 def IsUnitaryPointsMapFinerDeterminants (f : (letI := H.cmStar; unitary H.E) →* DtQ H SQ) : Prop :=
   letI := H.cmStar
-  ∀ (k : H.Eˣ) (z : unitary H.E), (z : H.E) * H.conj (k : H.E) = k → QuotientGroup.mk (diagUnits H.E k) = f z
+  ∀ (k : H.Eˣ) (z : unitary H.E), (z : H.E) * H.conj (k : H.E) = k → QuotientGroup.mk (Neutral.B1.diagUnits H.E k) = f z
 
 
 open Classical in
@@ -156,7 +156,7 @@ variable (F : Type) [Field F] [NumberField F] [Algebra F L]
 
 open Classical in
 theorem compAt_locF (w : HeightOneSpectrum (𝓞 L)) (v : HeightOneSpectrum (𝓞 F)) (k : Fˣ) :
-    compAt w (locF F v k) = if w.under (𝓞 F) = v then compAt w (diagUnits L (upF F k)) else 1 := by
+    compAt w (locF F v k) = if w.under (𝓞 F) = v then compAt w (Neutral.B1.diagUnits L (upF F k)) else 1 := by
   unfold locF
   rw [map_prod]
   split_ifs with h
@@ -169,9 +169,9 @@ theorem compAt_locF (w : HeightOneSpectrum (𝓞 L)) (v : HeightOneSpectrum (�
 
 theorem exists_diag_upF_eq (k : Fˣ) {T : Set (HeightOneSpectrum (𝓞 L))} (hT : T.Finite) :
     ∃ (S : Finset (HeightOneSpectrum (𝓞 F))) (u : Neutral.B1.Ideles L), u ∈ unitIdl L ∧ (∀ w ∈ T, compAt w u = 1) ∧
-      diagUnits L (upF F k) = (∏ v ∈ S, locF F v k) * u := by
+      Neutral.B1.diagUnits L (upF F k) = (∏ v ∈ S, locF F v k) * u := by
   classical
-  set d := diagUnits L (upF F k) with hd
+  set d := Neutral.B1.diagUnits L (upF F k) with hd
   have hfin := hT.union (IdlFact.finite_valAt_ne_one d)
   set S := hfin.toFinset.image fun w => w.under (𝓞 F) with hS
   set P := ∏ v ∈ S, locF (L := L) F v k with hP
@@ -195,7 +195,7 @@ theorem exists_diag_upF_eq (k : Fˣ) {T : Set (HeightOneSpectrum (𝓞 L))} (hT 
 
 end Components
 
-theorem diag_upF_mem_KDq (k : (H.F)ˣ) : diagUnits H.E (upF H.F k) ∈ KDq H SQ := by
+theorem diag_upF_mem_KDq (k : (H.F)ˣ) : Neutral.B1.diagUnits H.E (upF H.F k) ∈ KDq H SQ := by
   obtain ⟨S, u, hu, h1, e⟩ := exists_diag_upF_eq (L := H.E) H.F k (finite_level H SQ)
   rw [e]
   exact mul_mem (prod_mem fun v _ => locF_mem_KDq H SQ v k) (mem_KDq_of_congQ H SQ (mem_congQ_of_eq_one H SQ hu h1))
@@ -312,7 +312,7 @@ theorem exists_eq_div_conj : letI := H.cmStar
     linear_combination hz
 
 theorem mk_diag_eq {z : H.E} {k k' : (H.E)ˣ} (h : z * H.conj (k : H.E) = k) (h' : z * H.conj (k' : H.E) = k') :
-    (QuotientGroup.mk (diagUnits H.E k) : DtQ H SQ) = QuotientGroup.mk (diagUnits H.E k') := by
+    (QuotientGroup.mk (Neutral.B1.diagUnits H.E k) : DtQ H SQ) = QuotientGroup.mk (Neutral.B1.diagUnits H.E k') := by
   have hcm : IsCMField H.E := H.isCMField_hostE
   have hc : ∀ x, IsCMField.complexConj H.E x = H.conj x := fun x => bridge_star_holds R H x
   have hk : H.conj (k : H.E) ≠ 0 := (map_ne_zero _).2 k.ne_zero
@@ -330,7 +330,7 @@ theorem mk_diag_eq {z : H.E} {k k' : (H.E)ˣ} (h : z * H.conj (k : H.E) = k) (h'
 theorem exists_isUnitaryPointsMapFinerDeterminants : ∃ f, IsUnitaryPointsMapFinerDeterminants H SQ f := by
   letI := H.cmStar
   choose κ hκ using exists_eq_div_conj H
-  refine ⟨MonoidHom.mk' (fun z => QuotientGroup.mk (diagUnits H.E (κ z))) fun z z' => ?_,
+  refine ⟨MonoidHom.mk' (fun z => QuotientGroup.mk (Neutral.B1.diagUnits H.E (κ z))) fun z z' => ?_,
     fun k z hk => mk_diag_eq H SQ hk (hκ z)⟩
   rw [← QuotientGroup.mk_mul, ← map_mul]
   refine mk_diag_eq H SQ (hκ (z * z')) ?_

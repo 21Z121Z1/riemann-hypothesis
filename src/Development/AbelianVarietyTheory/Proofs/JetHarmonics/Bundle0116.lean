@@ -130,7 +130,7 @@ theorem isEigBasis_uvecT : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E
   letI := io.toAlgebra
   have hu : ∀ ℓ i, Ch.ch.uvec ℓ i = algebraMap T.V T.Fr (Ch.uvecT ℓ i) := Ch.gen.1.2.2.2.2.2.2
   have hA : ∀ a j, Ch.ch.B.A.act a j = MvPowerSeries.map (algebraMap T.V T.Fr) (Ch.actT a j) := Ch.gen.1.2.1
-  refine eigBasis_of_generic (K := T.Fr) (m := Dw.mult) (fun a => linPart (Ch.actT a))
+  refine eigBasis_of_generic (K := T.Fr) (m := Dw.mult) (fun a => ReciprocityTheory.ChartRestriction.G.Pdiv.ChartF.linPart (Ch.actT a))
     (fun τ a => io (embK c τ a)) ?_ Ch.uvecT ?_ ?_ τ τT hτ (SaturatedCharts.saturation_charts_holds Xo c T io y Ch τ).2
   · intro j j' h
     obtain ⟨a, ha⟩ := GlobalTheory.EigDir.embK_sep c j j' h

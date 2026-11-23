@@ -164,23 +164,23 @@ variable {E : Type} [Field E] [NumberField E] [IsCMField E] {H : Host E} {Dw : D
 
 theorem tan_eq (y : FrPt Xo c S) (x : ∀ m, jO y (dL Dw) m 1 ⟶ Xo.univ.t.G) (hx : IsExpChart y x)
     (j : Fin (dL Dw)) :
-    (homAt y.x (jetTan ((0 : Fin 1), j) : Jet S (Fin 1 × Fin (dL Dw)) (0 + 1) →ₐ[S] DualNumber S) ≫ x 1).left =
+    (Formalism.L2.Pj.homAt y.x (jetTan ((0 : Fin 1), j) : Jet S (Fin 1 × Fin (dL Dw)) (0 + 1) →ₐ[S] DualNumber S) ≫ x 1).left =
       y.u ((ltIdx Dw).symm j).1 ((ltIdx Dw).symm j).2 := by
   obtain ⟨u, hu, hprod⟩ := hx.tan ((ltIdx Dw).symm j)
   have hj : ltIdx Dw ((ltIdx Dw).symm j) = j := Equiv.apply_symm_apply _ _
   have hone : ∀ i, i ≠ j → u i = 1 := by
     intro i hi
-    have e : u i = homAt y.x (Algebra.ofId S (DualNumber S)) ≫
-        (homAt y.x (jetAug : Jet S (Fin 1 × Fin (dL Dw)) (0 + 1) →ₐ[S] S) ≫ x 1) := by
+    have e : u i = Formalism.L2.Pj.homAt y.x (Algebra.ofId S (DualNumber S)) ≫
+        (Formalism.L2.Pj.homAt y.x (jetAug : Jet S (Fin 1 × Fin (dL Dw)) (0 + 1) →ₐ[S] S) ≫ x 1) := by
       apply Over.OverMorphism.ext
       simp only [hu i, hj, if_neg hi, epsMul_zero, ← fst_comp_tan (dL Dw) i]
-      simp only [Over.comp_left, homAt, Over.homMk_left]
+      simp only [Over.comp_left, Formalism.L2.Pj.homAt, Over.homMk_left]
       simp only [spMap, ← Category.assoc]
       congr 1
       simp only [← Spec.map_comp, ← CommRingCat.ofHom_comp]
       rfl
     rw [e, hx.zero 1, comp_one_gen]
-  have huj : (u j).left = (homAt y.x (jetTan ((0 : Fin 1), j) :
+  have huj : (u j).left = (Formalism.L2.Pj.homAt y.x (jetTan ((0 : Fin 1), j) :
       Jet S (Fin 1 × Fin (dL Dw)) (0 + 1) →ₐ[S] DualNumber S) ≫ x 1).left := by
     simp [hu j, hj, epsMul_one, spMap, CommRingCat.ofHom_id, Spec.map_id]
   rw [← hprod, ← huj]

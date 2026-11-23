@@ -191,25 +191,25 @@ def coordL (B : Subalgebra O K⟦X⟧) : P.ext B →ₗ[O] (ι → ZMod a → B)
 omit hl [NeZero a] [NeZero e] [Algebra ℤ_[l] O] [Module.Free ℤ_[l] O] [Module.Finite ℤ_[l] O]
   [NormedAlgebra ℚ_[l] K] in
 theorem mx_mulVec_coordL (B : Subalgebra O K⟦X⟧) (v : P.ext B) (τ : ZMod a) :
-    (P.mx τ *ᵥ fun i => (coordL P B v i τ : K⟦X⟧)) = v.1 τ := by
+    (P.mx τ *ᵥ fun i => (GlobalTheory.BKReal.coordL P B v i τ : K⟦X⟧)) = v.1 τ := by
   change P.mx τ *ᵥ (P.mxInv τ *ᵥ v.1 τ) = _
   rw [Matrix.mulVec_mulVec, P.mx_mul_mxInv, Matrix.one_mulVec]
 
-def toCris : P.MM →ₗ[O] (ι → OCr l O) := ((ϖ.iC t K).toLinearMap.compLeft ι).comp (coordL P (S O K e))
+def toCris : P.MM →ₗ[O] (ι → OCr l O) := ((ϖ.iC t K).toLinearMap.compLeft ι).comp (GlobalTheory.BKReal.coordL P (S O K e))
 
 def toBcris : P.MMl →ₗ[O] (ι → OB l O) :=
-  ((ϖ.iB t K).toLinearMap.compLeft ι).comp (coordL P (invL l (S O K e)))
+  ((ϖ.iB t K).toLinearMap.compLeft ι).comp (GlobalTheory.BKReal.coordL P (invL l (S O K e)))
 
-theorem toCris_apply (m : P.MM) (i : ι) : toCris t ϖ P m i = ϖ.iC t K (coordL P (S O K e) m i) := rfl
+theorem toCris_apply (m : P.MM) (i : ι) : toCris t ϖ P m i = ϖ.iC t K (GlobalTheory.BKReal.coordL P (S O K e) m i) := rfl
 
 theorem toBcris_apply (m : P.MMl) (i : ι) :
-    toBcris t ϖ P m i = ϖ.iB t K (coordL P (invL l (S O K e)) m i) := rfl
+    toBcris t ϖ P m i = ϖ.iB t K (GlobalTheory.BKReal.coordL P (invL l (S O K e)) m i) := rfl
 
 theorem toW_toCris_of_mem_L {v : Vec K a ι} (hv : v ∈ P.L) (hv' : v ∈ P.MM) :
-    toW t ϖ P ⟨v, mem_ME_of_mem_L hv⟩ = inclL t ϖ P (fun i => ϖ.iTot t K (coordL P _ ⟨v, hv⟩ i)) ∧
-      toCris t ϖ P ⟨v, hv'⟩ = fun i => toOCr l O (ϖ.iTot t K (coordL P _ ⟨v, hv⟩ i)) :=
+    toW t ϖ P ⟨v, mem_ME_of_mem_L hv⟩ = inclL t ϖ P (fun i => ϖ.iTot t K (GlobalTheory.BKReal.coordL P _ ⟨v, hv⟩ i)) ∧
+      toCris t ϖ P ⟨v, hv'⟩ = fun i => toOCr l O (ϖ.iTot t K (GlobalTheory.BKReal.coordL P _ ⟨v, hv⟩ i)) :=
   ⟨toW_of_mx t ϖ P _ _ fun τ => (mx_mulVec_coordL P _ ⟨v, hv⟩ τ).symm,
-    funext fun i => ϖ.iC_of_mem t K (coordL P _ ⟨v, hv⟩ i)⟩
+    funext fun i => ϖ.iC_of_mem t K (GlobalTheory.BKReal.coordL P _ ⟨v, hv⟩ i)⟩
 
 end Real
 
