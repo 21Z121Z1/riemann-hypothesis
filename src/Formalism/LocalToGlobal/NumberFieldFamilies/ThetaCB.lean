@@ -63,15 +63,15 @@ theorem projAt_isInfEmb [IsTotallyReal F] (τ : E →+* ℂ) : IsInfEmb τ (proj
 
 def inlA : Ainf F →ₗ[F] AF F where
   toFun a := pairA F a 0
-  map_add' a b := Prod.ext rfl (add_zero (0 : Af F)).symm
-  map_smul' c a := Prod.ext rfl (smul_zero (A := Af F) c).symm
+  map_add' a b := Prod.ext rfl (add_zero (0 : Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes.Af F)).symm
+  map_smul' c a := Prod.ext rfl (smul_zero (A := Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes.Af F) c).symm
 
-def inrA : Af F →ₗ[F] AF F where
+def inrA : Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes.Af F →ₗ[F] AF F where
   toFun b := pairA F 0 b
   map_add' a b := Prod.ext (add_zero (0 : Ainf F)).symm rfl
   map_smul' c a := Prod.ext (smul_zero (A := Ainf F) c).symm rfl
 
-def pairE (a : Ainf F ⊗[F] E) (b : Af F ⊗[F] E) : AF F ⊗[F] E :=
+def pairE (a : Ainf F ⊗[F] E) (b : Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes.Af F ⊗[F] E) : AF F ⊗[F] E :=
   TensorProduct.map (inlA (F := F)) LinearMap.id a + TensorProduct.map (inrA (F := F)) LinearMap.id b
 
 theorem pairE_eta (z : AF F ⊗[F] E) :
@@ -86,7 +86,7 @@ theorem pairE_eta (z : AF F ⊗[F] E) :
     exact Prod.ext (add_zero (fstA F a)) (zero_add (sndA F a))
   | add a b ha hb => rw [map_add (f := _), map_add (f := _), map_add (f := _), map_add (f := _), add_add_add_comm, ha, hb]
 
-theorem fst_pairE (a : Ainf F ⊗[F] E) (b : Af F ⊗[F] E) :
+theorem fst_pairE (a : Ainf F ⊗[F] E) (b : Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes.Af F ⊗[F] E) :
     Algebra.TensorProduct.map (fstA F) (AlgHom.id F E) (pairE a b) = a := by
   unfold pairE
   have h1 : Algebra.TensorProduct.map (fstA F) (AlgHom.id F E) (TensorProduct.map (inlA (F := F)) LinearMap.id a) = a := by
@@ -103,7 +103,7 @@ theorem fst_pairE (a : Ainf F ⊗[F] E) (b : Af F ⊗[F] E) :
     | add x y hx hy => rw [map_add (f := _), map_add (f := _), hx, hy, add_zero]
   rw [map_add (f := _), h1, h2, add_zero]
 
-theorem snd_pairE (a : Ainf F ⊗[F] E) (b : Af F ⊗[F] E) :
+theorem snd_pairE (a : Ainf F ⊗[F] E) (b : Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes.Af F ⊗[F] E) :
     Algebra.TensorProduct.map (sndA F) (AlgHom.id F E) (pairE a b) = b := by
   unfold pairE
   have h1 : Algebra.TensorProduct.map (sndA F) (AlgHom.id F E) (TensorProduct.map (inlA (F := F)) LinearMap.id a) = 0 := by

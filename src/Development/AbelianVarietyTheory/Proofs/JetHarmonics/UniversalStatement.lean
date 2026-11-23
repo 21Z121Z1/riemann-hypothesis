@@ -139,10 +139,10 @@ theorem spMap_id' (A : Type) [CommRing A] [Algebra V A] : Chart.spMap (AlgHom.id
 
 theorem toFirst_zR (κ : Type) (m : ℕ) (j : κ) : toFirst (V := V) κ m (ReciprocityTheory.ChartRestriction.G.Chart.zR (m + 1) j) = ReciprocityTheory.ChartRestriction.G.Chart.zR 1 j := rfl
 
-theorem trunc_zR (κ : Type) (m : ℕ) (j : κ) : jetTruncR V κ m (ReciprocityTheory.ChartRestriction.G.Chart.zR (m + 1) j) = ReciprocityTheory.ChartRestriction.G.Chart.zR m j := rfl
+theorem trunc_zR (κ : Type) (m : ℕ) (j : κ) : ReciprocityTheory.ChartRestriction.G.Chart.jetTruncR V κ m (ReciprocityTheory.ChartRestriction.G.Chart.zR (m + 1) j) = ReciprocityTheory.ChartRestriction.G.Chart.zR m j := rfl
 
 theorem toFirst_succ (κ : Type) (m : ℕ) :
-    toFirst (V := V) κ (m + 1) = (toFirst κ m).comp (jetTruncR V κ (m + 1)) :=
+    toFirst (V := V) κ (m + 1) = (toFirst κ m).comp (ReciprocityTheory.ChartRestriction.G.Chart.jetTruncR V κ (m + 1)) :=
   jet_ext fun j => by rw [AlgHom.comp_apply, trunc_zR, toFirst_zR, toFirst_zR]
 
 theorem toFirst_zero (κ : Type) : toFirst (V := V) κ 0 = AlgHom.id V (ReciprocityTheory.ChartRestriction.G.Chart.JetR V κ 1) :=
@@ -150,7 +150,7 @@ theorem toFirst_zero (κ : Type) : toFirst (V := V) κ 0 = AlgHom.id V (Reciproc
 
 omit [GrpObj G] in
 theorem toFirst_comp {κ : Type} (z : ∀ m, Chart.sp (R₀ := V) (ReciprocityTheory.ChartRestriction.G.Chart.JetR V κ m) ⟶ G)
-    (htr : ∀ m, Chart.spMap (jetTruncR V κ m) ≫ z (m + 1) = z m) (m : ℕ) :
+    (htr : ∀ m, Chart.spMap (ReciprocityTheory.ChartRestriction.G.Chart.jetTruncR V κ m) ≫ z (m + 1) = z m) (m : ℕ) :
     Chart.spMap (toFirst κ m) ≫ z (m + 1) = z 1 := by
   induction m with
   | zero =>
@@ -161,7 +161,7 @@ theorem toFirst_comp {κ : Type} (z : ∀ m, Chart.sp (R₀ := V) (ReciprocityTh
 theorem univ_of_dirs {d : ℕ} {κ : Type} [Fintype κ] (β : Fin d ≃ κ)
     {x : ∀ m, Chart.sp (R₀ := V) (ReciprocityTheory.ChartRestriction.G.Chart.JetR V (Fin d) m) ⟶ G} (hx : Chart.IsUnivChart G d x)
     (z : ∀ m, Chart.sp (R₀ := V) (ReciprocityTheory.ChartRestriction.G.Chart.JetR V κ m) ⟶ G)
-    (htr : ∀ m, Chart.spMap (jetTruncR V κ m) ≫ z (m + 1) = z m)
+    (htr : ∀ m, Chart.spMap (ReciprocityTheory.ChartRestriction.G.Chart.jetTruncR V κ m) ≫ z (m + 1) = z m)
     (haug : ∀ m, Chart.spMap (Chart.jetAug V κ m) ≫ z m = 1)
     (t : Fin d → (ReciprocityTheory.ChartRestriction.G.Chart.JetR V κ 1 →ₐ[V] DualNumber V))
     (ht : ∀ j k, t j (ReciprocityTheory.ChartRestriction.G.Chart.zR 1 (β k)) = if k = j then DualNumber.eps else 0)

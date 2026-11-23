@@ -459,7 +459,7 @@ theorem isProjBy_smooth_isProper_geometricallyIntegral :
       (MorphismProperty.of_isPullback (P := @GeometricallyConnected) h hB.geomConnected)⟩
   obtain ⟨N, -, m, s, hN, hv⟩ := veryAmpleBy_of_relAmple (A := Over.mk f) (pull_isLB hM π)
     (relAmple_of_isPullback hM hA h) (𝟙 X) (Category.id_comp f) (pull_isLB hM π)
-    (LBIso.chartPull (chartPullId _) (chartPullPull (M.pull π) (𝟙 X) (𝟙 X) rfl)
+    (LBIso.chartPull (chartPullId _) (ReciprocityTheory.ChartRestriction.G.Geo.Tor.chartPullPull (M.pull π) (𝟙 X) (𝟙 X) rfl)
       (PolBaseChange.lbIso_refl (pull_isLB hM π)))
   exact ⟨_, hN, m, s, hv⟩
 

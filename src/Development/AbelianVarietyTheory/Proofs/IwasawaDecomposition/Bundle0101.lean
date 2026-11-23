@@ -380,7 +380,7 @@ def cmp (P : HeightOneSpectrum (𝓞 L)) : FI L →* (P.adicCompletion L)ˣ :=
 
 
 variable (L) in
-def finP : Ideles L →* FI L := Units.map (MonoidHom.snd (InfiniteAdeleRing L) (FiniteAdeleRing (𝓞 L) L))
+def finP : Neutral.B1.Ideles L →* FI L := Units.map (MonoidHom.snd (InfiniteAdeleRing L) (FiniteAdeleRing (𝓞 L) L))
 
 theorem cmp_val (P : HeightOneSpectrum (𝓞 L)) (u : FI L) :
     (cmp P u : P.adicCompletion L) = (u : FiniteAdeleRing (𝓞 L) L) P := rfl
@@ -444,11 +444,11 @@ theorem continuous_finP {N : ℕ} (hN : 0 < N) (ψ : FI L →* ℂˣ) (hψ : ∀
   choose n hn using fun P : HeightOneSpectrum (𝓞 L) =>
     GlobalTheory.Idele.exists_exp_neg_lt (GlobalTheory.AdLat.valued_natCast_ne_zero P hN)
   have ho := (GlobalTheory.Mem.UnitOpen.unit_open_and_congr_open L).2 T (T.sup n)
-  have h1 := ho.mem_nhds (x := (1 : Ideles L)) ⟨one_mem _, fun v _ => by
-    have : ((1 : Ideles L) : AdeleRing (𝓞 L) L).2 v = 1 := rfl
+  have h1 := ho.mem_nhds (x := (1 : Neutral.B1.Ideles L)) ⟨one_mem _, fun v _ => by
+    have : ((1 : Neutral.B1.Ideles L) : AdeleRing (𝓞 L) L).2 v = 1 := rfl
     rw [this, sub_self, map_zero]
     exact zero_le⟩
-  have h2 : (fun _ => (1 : ℂˣ)) =ᶠ[nhds (1 : Ideles L)] (ψ.comp (finP L)) := by
+  have h2 : (fun _ => (1 : ℂˣ)) =ᶠ[nhds (1 : Neutral.B1.Ideles L)] (ψ.comp (finP L)) := by
     filter_upwards [h1] with a ha
     have hu : ∀ P, IsUnitAt P (cmp P (finP L a)) := ha.1
     refine (hψ (finP L a) fun P => ⟨hu P, ?_⟩).symm

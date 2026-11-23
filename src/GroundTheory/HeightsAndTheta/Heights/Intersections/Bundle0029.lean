@@ -440,7 +440,7 @@ theorem PtsMonoSemiPos.proof (hInt : PtsIntegrableStatement) (hHess : SheetHessP
     unfold sheetDensity
     split_ifs <;> simp [logNorm, Real.log_inv]
   have h1 := hInt K ι Q e Ψ M E t hQ hΨg hMs hE ht
-  have h2 : Integrable (fun y => ∑ᶠ w ∈ fibre Q Ψ y,
+  have h2 : Integrable (fun y => ∑ᶠ w ∈ ReciprocityTheory.ChartRestriction.G.Geo.fibre Q Ψ y,
       sheetDensity Q Ψ (pot M) (fun z => Real.log (D.h z)) y w) := by
     simp only [key, finsum_neg_distrib]
     exact (hInt K ι Q e Ψ M D 1 hQ hΨg hMs hD hD1).neg

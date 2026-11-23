@@ -391,7 +391,7 @@ open Formalism.HermitianLatticeCounting.P
 
 variable {K V : Type} [Field K] [NumberField K] [StarRing K] [AddCommGroup V] [Module K V]
   [FiniteDimensional K V] [Module (𝓞 K) V] [IsScalarTower (𝓞 K) K V]
-  {H : HermSpace K V} {r : ℕ} (N : NF H r)
+  {H : Formalism.HermitianLatticeCounting.S6.HermSpace K V} {r : ℕ} (N : NF H r)
 
 theorem unimod (L : Submodule (𝓞 K) V) (hL : IsUnimodMod H L (uPerp N.F N.F') (II N.F N.F')) :
     GlobalTheory.HermLat.IsUnimod (hW N) (L.comap (N.Wn.subtype.restrictScalars (𝓞 K))) := by

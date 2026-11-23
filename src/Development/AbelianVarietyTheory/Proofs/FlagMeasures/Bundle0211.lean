@@ -180,7 +180,7 @@ open Formalism.HermitianLatticeCounting.S6 Formalism.QuantumDeterminants GlobalT
 namespace GlobalTheory.DegVol.FrameUnip
 
 variable {K V : Type} [Field K] [StarRing K] [AddCommGroup V] [Module K V]
-  {H : HermSpace K V} {k r : ℕ} {σ : K →+* ℂ} {Φ : V → Fin (2 * r + k + 1) → ℂ}
+  {H : Formalism.HermitianLatticeCounting.S6.HermSpace K V} {k r : ℕ} {σ : K →+* ℂ} {Φ : V → Fin (2 * r + k + 1) → ℂ}
 
 theorem phi_zero' (h : GlobalTheory.DegVol.IsReal H k r σ Φ) : Φ 0 = 0 := by
   have := h.2.1 0 0

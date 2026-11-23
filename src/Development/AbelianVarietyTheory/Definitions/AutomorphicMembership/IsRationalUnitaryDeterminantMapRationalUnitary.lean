@@ -19,14 +19,14 @@ variable {R : Ranks} (H : Formalism.BasicNotions.Host R) (SQ : Finset (HeightOne
 
 def AtQ (v : HeightOneSpectrum (𝓞 H.E)) : Prop := v ∈ SQ ∨ ∃ w ∈ SQ, IsConjPl H w v
 
-def congQ : Set (Ideles H.E) :=
+def congQ : Set (Neutral.B1.Ideles H.E) :=
   {a | a ∈ unitIdl H.E ∧ (∀ k v, OverP H (H.g k) v → Valued.v ((a : AdeleRing (𝓞 H.E) H.E).2 v - 1) < 1) ∧
     ∀ v, AtQ H SQ v → Valued.v ((a : AdeleRing (𝓞 H.E) H.E).2 v - 1) < 1}
 
-def KDq : Subgroup (Ideles H.E) :=
+def KDq : Subgroup (Neutral.B1.Ideles H.E) :=
   Subgroup.closure (congQ H SQ ∪ {a | ∃ v k, a = locF H.F v k})
 
-abbrev DtQ : Type := Ideles H.E ⧸ KDq H SQ
+abbrev DtQ : Type := Neutral.B1.Ideles H.E ⧸ KDq H SQ
 
 
 open Classical in
@@ -52,13 +52,13 @@ def relDetQ (N : ℕ) (M M' : Submodule (𝓞 H.E) (Fin N → H.E)) : DtQ H SQ �
 
 theorem congQ_subset_congG : congQ H SQ ⊆ congG H := fun _ h => ⟨h.1, h.2.1⟩
 
-theorem mem_KDq_of_congQ {a : Ideles H.E} (h : a ∈ congQ H SQ) : a ∈ KDq H SQ :=
+theorem mem_KDq_of_congQ {a : Neutral.B1.Ideles H.E} (h : a ∈ congQ H SQ) : a ∈ KDq H SQ :=
   Subgroup.subset_closure (Or.inl h)
 
 theorem locF_mem_KDq (v : HeightOneSpectrum (𝓞 H.F)) (k : (H.F)ˣ) : locF H.F v k ∈ KDq H SQ :=
   Subgroup.subset_closure (Or.inr ⟨v, k, rfl⟩)
 
-theorem KDq_le_iff {B : Subgroup (Ideles H.E)} :
+theorem KDq_le_iff {B : Subgroup (Neutral.B1.Ideles H.E)} :
     KDq H SQ ≤ B ↔ (∀ a ∈ congQ H SQ, a ∈ B) ∧ ∀ v k, locF H.F v k ∈ B := by
   refine ⟨fun h => ⟨fun a ha => h (mem_KDq_of_congQ H SQ ha), fun v k => h (locF_mem_KDq H SQ v k)⟩, fun h => ?_⟩
   refine (Subgroup.closure_le _).2 ?_
@@ -104,7 +104,7 @@ theorem finite_level : {v : HeightOneSpectrum (𝓞 H.E) | (∃ k, OverP H (H.g 
   · exact Or.inl (Or.inr hv)
   · exact Or.inr (Set.mem_biUnion hw hc)
 
-theorem mem_congQ_of_eq_one {a : Ideles H.E} (hu : a ∈ unitIdl H.E)
+theorem mem_congQ_of_eq_one {a : Neutral.B1.Ideles H.E} (hu : a ∈ unitIdl H.E)
     (h : ∀ v, (∃ k, OverP H (H.g k) v) ∨ AtQ H SQ v → (a : AdeleRing (𝓞 H.E) H.E).2 v = 1) : a ∈ congQ H SQ :=
   ⟨hu, fun k v hv => by rw [h v (Or.inl ⟨k, hv⟩), sub_self, map_zero]; exact zero_lt_one,
     fun v hv => by rw [h v (Or.inr hv), sub_self, map_zero]; exact zero_lt_one⟩
@@ -113,7 +113,7 @@ theorem infIdele_mem_KDq (w : InfinitePlace H.E) (y : (w.Completion)ˣ) : infIde
   mem_KDq_of_congQ H SQ (mem_congQ_of_eq_one H SQ (fun v => show Valued.v (1 : v.adicCompletion H.E) = 1 from map_one _)
     fun _ _ => rfl)
 
-theorem isOpen_KDq : IsOpen (KDq H SQ : Set (Ideles H.E)) := by
+theorem isOpen_KDq : IsOpen (KDq H SQ : Set (Neutral.B1.Ideles H.E)) := by
   have ho := (GlobalTheory.Mem.UnitOpen.unit_open_and_congr_open H.E).2 (finite_level H SQ).toFinset 1
   have hlt : WithZero.exp (-((1 : ℕ) : ℤ)) < (1 : WithZero (Multiplicative ℤ)) := by
     rw [← WithZero.exp_zero, WithZero.exp_lt_exp]; norm_num
@@ -130,7 +130,7 @@ section Components
 
 variable {L : Type} [Field L] [NumberField L]
 
-def compAt (w : HeightOneSpectrum (𝓞 L)) : Ideles L →* w.adicCompletion L where
+def compAt (w : HeightOneSpectrum (𝓞 L)) : Neutral.B1.Ideles L →* w.adicCompletion L where
   toFun a := (a : AdeleRing (𝓞 L) L).2 w
   map_one' := rfl
   map_mul' _ _ := rfl
@@ -168,7 +168,7 @@ theorem compAt_locF (w : HeightOneSpectrum (𝓞 L)) (v : HeightOneSpectrum (�
     exact h ((finite_aboveF F v).mem_toFinset.1 hQ)
 
 theorem exists_diag_upF_eq (k : Fˣ) {T : Set (HeightOneSpectrum (𝓞 L))} (hT : T.Finite) :
-    ∃ (S : Finset (HeightOneSpectrum (𝓞 F))) (u : Ideles L), u ∈ unitIdl L ∧ (∀ w ∈ T, compAt w u = 1) ∧
+    ∃ (S : Finset (HeightOneSpectrum (𝓞 F))) (u : Neutral.B1.Ideles L), u ∈ unitIdl L ∧ (∀ w ∈ T, compAt w u = 1) ∧
       diagUnits L (upF F k) = (∏ v ∈ S, locF F v k) * u := by
   classical
   set d := diagUnits L (upF F k) with hd
@@ -203,13 +203,13 @@ theorem diag_upF_mem_KDq (k : (H.F)ˣ) : diagUnits H.E (upF H.F k) ∈ KDq H SQ 
 def toDtT : DtQ H SQ →* DtT H :=
   QuotientGroup.map (KDq H SQ) (KD H) (MonoidHom.id _) (KDq_le_KD H SQ)
 
-@[simp] theorem toDtT_mk (a : Ideles H.E) : toDtT H SQ (QuotientGroup.mk a) = QuotientGroup.mk a := rfl
+@[simp] theorem toDtT_mk (a : Neutral.B1.Ideles H.E) : toDtT H SQ (QuotientGroup.mk a) = QuotientGroup.mk a := rfl
 
 theorem toDtT_surjective : Function.Surjective (toDtT H SQ) := fun x => by
   obtain ⟨a, rfl⟩ := QuotientGroup.mk_surjective x
   exact ⟨QuotientGroup.mk a, rfl⟩
 
-theorem mk_mem_UOQ {a : Ideles H.E} : (QuotientGroup.mk a : DtQ H SQ) ∈ UOQ H SQ ↔ a ∈ KDq H SQ ⊔ unitIdl H.E := by
+theorem mk_mem_UOQ {a : Neutral.B1.Ideles H.E} : (QuotientGroup.mk a : DtQ H SQ) ∈ UOQ H SQ ↔ a ∈ KDq H SQ ⊔ unitIdl H.E := by
   rw [← QuotientGroup.comap_map_mk']
   rfl
 
@@ -242,7 +242,7 @@ theorem toDtTMod_relDetQ (N : ℕ) (M M' : Submodule (𝓞 H.E) (Fin N → H.E))
 theorem relDetQ_self (N : ℕ) (M : Submodule (𝓞 H.E) (Fin N → H.E)) : relDetQ H SQ N M M = 1 :=
   (toDtTMod_bijective H SQ).1 (by rw [toDtTMod_relDetQ, relDetT_self, map_one])
 
-theorem tildeQ_mk {χ : HChar H.E} (h : KDq H SQ ≤ (χ.1.comp (finPartI H.E)).ker) (a : Ideles H.E) :
+theorem tildeQ_mk {χ : HChar H.E} (h : KDq H SQ ≤ (χ.1.comp (finPartI H.E)).ker) (a : Neutral.B1.Ideles H.E) :
     tildeQ H SQ χ (QuotientGroup.mk a) = χ.1 (finPartI H.E a) := by
   unfold tildeQ
   rw [dite_eq_left h]
