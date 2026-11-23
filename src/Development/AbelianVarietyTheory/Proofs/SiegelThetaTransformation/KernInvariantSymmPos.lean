@@ -204,8 +204,8 @@ theorem kZero_eq (x₁ x₂ : Frame X.Ψ r) (z w : Fin n → Fin g → ℂ) :
     rw [ptZ, sgnM, diagonal_neg]
     rfl
   rw [h, kM, expM]
-  change ((τ.1 X.κ0 / 2) • ((_ *ᵥ mixV X idx τ (w k) (z k)) ᵥ* _)) ⬝ᵥ _ *ᵥ
-    ((-(τ.1 X.κ0 / 2)) • (_ *ᵥ _ *ᵥ mixV X idx τ (z k) (w k))) = _
+  change ((τ.1 X.κ0 / 2) • ((_ *ᵥ mixV X idx τ (w k) (z k)) ᵥ* (_ : Matrix (Fin r) (Fin r) ℂ))) ⬝ᵥ _ *ᵥ
+    ((-(τ.1 X.κ0 / 2)) • ((_ : Matrix (Fin r) (Fin r) ℂ) *ᵥ _ *ᵥ mixV X idx τ (z k) (w k))) = _
   rw [smul_dotProduct, mulVec_smul, dotProduct_smul, smul_mulVec, dotProduct_smul, smul_smul,
     mul_comm, ← vecMul_transpose, ← dotProduct_mulVec, ← dotProduct_mulVec]
   simp only [mulVec_mulVec, Matrix.mul_assoc]
