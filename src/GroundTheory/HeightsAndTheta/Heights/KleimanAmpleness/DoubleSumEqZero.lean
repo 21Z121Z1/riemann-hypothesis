@@ -11,7 +11,7 @@ namespace GroundTheory.Heights₂.Heights.Kleiman.SectionsOverLocalization
 
 noncomputable section
 
-open ReciprocityTheory.ChartRestriction.G.ArakelovGeometry.KH
+open ReciprocityTheory.ChartRestriction.G.ArakelovGeometry.KH hiding Cell
 
 namespace CellDSq
 

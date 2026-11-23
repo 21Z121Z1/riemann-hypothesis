@@ -13,7 +13,7 @@ namespace GroundTheory.Heights₂.Heights.Kleiman.SectionsOverLocalization
 
 open ReciprocityTheory.ChartRestriction.G.ArakelovGeometry.KH (chartRingOver secOver GeneratesOver)
 open GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.Kleiman2 (joinVec joinChart oneBlock pullDeg locIn modelPts)
-open GroundTheory.Heights₂.Heights.NumbersDVR (segreVec)
+-- open GroundTheory.Heights₂.Heights.NumbersDVR (segreVec)
 
 section Local
 

@@ -8,7 +8,8 @@ public import ReciprocityTheory.SemistableReduction.Bundle0002
 
 namespace GlobalTheory
 
-open NumberField ReciprocityTheory.ChartRestriction.G.FD ReciprocityTheory.ChartRestriction.G.FD.HermitianTraceFormVanishing
+open NumberField ReciprocityTheory.ChartRestriction.G.FD.HermitianTraceFormVanishing
+open ReciprocityTheory.ChartRestriction.G.FD hiding cc_cc cc_mul
 open scoped nonZeroDivisors
 
 noncomputable section

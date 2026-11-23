@@ -341,7 +341,7 @@ theorem twoTorsionTranslation : FlowTwoTorsion.{u} := by
   obtain ⟨ha1, ha2, ha3, ha4, ha6⟩ := hC
   rw [WeierstrassCurve.Affine.equation_iff] at hE hT
   have hDt : D t = -t ^ 2 * (2 * y + W.a₁ * x + W.a₃) := by
-    rw [der_inv hD ht, der_sub hD, hDxT, sub_zero, hDx]
+    rw [QuadraticFlow.der_inv hD ht, der_sub hD, hDxT, sub_zero, hDx]
   refine ⟨?_, ?_, ?_⟩
   · simp only [WeierstrassCurve.Affine.addX]
     linear_combination t ^ 2 * hE - t ^ 2 * hT - t ^ 2 * (y - yT) * h2 +

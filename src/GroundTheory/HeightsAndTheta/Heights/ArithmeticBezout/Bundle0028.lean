@@ -97,7 +97,7 @@ theorem ChowDegreeClosedPoint.proof (hField : ClosedPointChartField.Statement)
     exact Prod.ext (Subsingleton.elim _ _) rfl
   set f₀ := rename Prod.snd f with hf₀
   set N : MvPolynomial (Fin n) F := normForm (R := F) L ξ with hN
-  have hprod : N.map (algebraMap F K) = ∏ σ : L →ₐ[F] K, embForm σ ξ := normForm_map_eq_prod ξ
+  have hprod : N.map (algebraMap F K) = ∏ σ : L →ₐ[F] K, embForm σ ξ := normForm_map_eq_prod (R := F) ξ
 
   have hdvd1 : f ∣ rename ι N := by
     refine (hf.2 _).1 fun u hu => ?_

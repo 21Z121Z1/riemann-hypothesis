@@ -82,7 +82,7 @@ noncomputable section
 
 namespace GroundTheory.PAdicHodge
 
-open PowerSeries
+open _root_.PowerSeries
 
 section Formal
 

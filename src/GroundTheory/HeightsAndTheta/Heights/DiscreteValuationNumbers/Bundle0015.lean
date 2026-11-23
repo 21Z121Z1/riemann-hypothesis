@@ -123,7 +123,7 @@ namespace GroundTheory.Heights₂.Heights.NumbersDVR
 open MvPolynomial
 open ReciprocityTheory.ChartRestriction.G.Geo (ChartBundle)
 open ReciprocityTheory.ChartRestriction.G.AI.I1 (IFamily IsFieldIntersection)
-open IndefiniteRowSideFullHecke.NumbersDVR.Bundles
+open GroundTheory.Heights₂.Heights.NumbersDVR.Bundles
   (IsModelOver mcIdeal joinCoord fnField mseg SameGeneric FlagModel FlagPair IsPull IsVertDiv pairNum pullDeg liftVar)
 
 def FlagModelJoinLeftAlt.Statement : Prop :=
@@ -171,7 +171,7 @@ namespace GroundTheory.Heights₂.Heights.NumbersDVR
 open MvPolynomial
 open ReciprocityTheory.ChartRestriction.G.Geo (ChartBundle)
 open ReciprocityTheory.ChartRestriction.G.AI.I1 (IFamily IsFieldIntersection)
-open IndefiniteRowSideFullHecke.NumbersDVR.Bundles
+open GroundTheory.Heights₂.Heights.NumbersDVR.Bundles
   (IsModelOver mcIdeal joinCoord fnField mseg SameGeneric FlagModel FlagPair IsPull IsVertDiv pairNum pullDeg liftVar)
 
 def FlagModelJoinRightAlt.Statement : Prop :=
@@ -336,7 +336,7 @@ set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights.NumbersDVR
 
-open IndefiniteRowSideFullHecke.NumbersDVR.Bundles (IsModelOver mcIdeal joinCoord fnField)
+open GroundTheory.Heights₂.Heights.NumbersDVR.Bundles (IsModelOver mcIdeal joinCoord fnField)
 
 def JoinTwoModels.Statement : Prop :=
   ∀ (O : Type) [CommRing O] [IsDomain O] [IsDiscreteValuationRing O] (Ω : Type) [Field Ω]
@@ -415,7 +415,7 @@ set_option maxSynthPendingDepth 1
 namespace GroundTheory.Heights₂.Heights.NumbersDVR
 
 open MvPolynomial
-open IndefiniteRowSideFullHecke.NumbersDVR.Bundles (joinCoord fnField)
+open GroundTheory.Heights₂.Heights.NumbersDVR.Bundles (joinCoord fnField)
 
 def BirationalJoin.Statement : Prop :=
   ∀ (O : Type) [CommRing O] [IsDomain O] [IsDiscreteValuationRing O] (Ω : Type) [Field Ω]

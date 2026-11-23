@@ -72,7 +72,7 @@ private theorem cc_ev_lemma {m n : ℕ} {a : Fin m → Pt k n d} (ha : CZ a) (f 
   have h0 : CZ (fun _ _ => (0 : PS k n d) : Fin n → Pt k n d) := by
     intro j i
     simp
-  have h1 := ev_ev (a := (fun _ _ => (0 : PS k n d) : Fin n → Pt k n d)) h0 ha f
+  have h1 := Nab.ev_ev (a := (fun _ _ => (0 : PS k n d) : Fin n → Pt k n d)) h0 ha f
   rw [ev_zeroFam] at h1
   have h2 : (fun j i => ev (fun _ _ => (0 : PS k n d)) (a j i)) = fun _ _ => (0 : PS k n d) := by
     funext j i

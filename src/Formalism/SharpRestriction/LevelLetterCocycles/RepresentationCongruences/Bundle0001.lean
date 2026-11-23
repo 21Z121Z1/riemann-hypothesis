@@ -49,7 +49,7 @@ def T (O : Type*) [CommRing O] [IsLocalRing O] (N : ℕ) : Ideal O⟦X⟧ where
   smul_mem' c x hx m := by
     rw [smul_eq_mul, coeff_mul]
     refine Submodule.sum_mem _ fun p hp => Ideal.mul_mem_left _ _ ?_
-    have h2 : p.2 ≤ m := by have := Finset.mem_antidiagonal.mp hp; omega
+    have h2 : p.2 ≤ m := by have := Finset.Nat.mem_antidiagonal.mp hp; omega
     exact Ideal.pow_le_pow_right (by omega) (hx p.2)
 
 theorem mem_T {N : ℕ} {x : O⟦X⟧} :
@@ -65,7 +65,7 @@ theorem T_mul {a b : ℕ} {x y : O⟦X⟧} (hx : x ∈ T O a) (hy : y ∈ T O b)
   intro m
   rw [coeff_mul]
   refine Submodule.sum_mem _ fun p hp => ?_
-  have h := Finset.mem_antidiagonal.mp hp
+  have h := Finset.Nat.mem_antidiagonal.mp hp
   have h2 := Ideal.mul_mem_mul (hx p.1) (hy p.2)
   rw [← pow_add] at h2
   exact Ideal.pow_le_pow_right (by omega) h2

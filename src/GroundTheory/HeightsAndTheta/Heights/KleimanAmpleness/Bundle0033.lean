@@ -49,7 +49,7 @@ set_option maxSynthPendingDepth 1
 namespace GroundTheory.Heights₂.Heights.Kleiman.SectionsOverLocalization
 
 open MvPolynomial ReciprocityTheory.ChartRestriction.G.Geo
-open ReciprocityTheory.ChartRestriction.G.ArakelovGeometry.KH (Cell cellMon CechC cellRes faceSign cechD locPart cechCc cechZc cechBc cechHc
+open ReciprocityTheory.ChartRestriction.G.ArakelovGeometry.KH (cellMon CechC cellRes faceSign cechD locPart cechCc cechZc cechBc cechHc
   mIdealOver quotPart)
 
 noncomputable section
