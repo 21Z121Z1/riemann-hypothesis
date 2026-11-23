@@ -124,13 +124,13 @@ def PTaylor : Prop :=
     ∀ (D : Type) [CommRing D] [Algebra ℂ D] (π : D →+* ℂ) (κ : DividedPowers (RingHom.ker π)), IsNilDP κ →
       (∀ a : ℂ, π (algebraMap ℂ D a) = a) →
       ∀ (N : ℕ) (t : I → D), (∀ i, π (t i) = 0) → (∀ s : Fin (N + 1) → I, ∏ a, t (s a) = 0) →
-      ∀ (j : B →ₐ[ℂ] D), (∀ b, j b = taylor N t (σ b).fn) →
+      ∀ (j : B →ₐ[ℂ] D), (∀ b, j b = GlobalTheory.PeriodFamily.taylor N t (σ b).fn) →
       ∀ (A' : Over (Sp D)) [GrpObj A'] (φ' : A'.left ⟶ 𝒜.left), IsGrpPullback A' 𝒜 (spMap (j : B →+* D)) φ' →
       ∀ (m' : GrpMor (dp0 B) (𝟙 _) 𝒜 (dp0 D) (𝟙 _) A' (j : B →+* D) (spMap (j : B →+* D)) φ')
         (i : A₀.left ⟶ A'.left) (h : IsGrpPullback A₀ A' (spMap π) i), i ≫ φ' = φ₀ →
       ∀ (k : GrpMor (dp0 ℂ) (𝟙 _) A₀ κ (spMap π) A₀ (algebraMap ℂ D) (𝟙 _) (Over.Hom.left (𝟙 A₀)))
         (x : u₀.Λ) (d : Crys κ (spMap π) A₀), k.Corr (P₀ x) d → ∀ (c : primDR 𝒜) (per : u₀.Λ →+ Hol F.V),
-        IsPeriod e c.1 per → crysToDR κ h d (m'.pull c) = taylor N t (per x).fn
+        IsPeriod e c.1 per → crysToDR κ h d (m'.pull c) = GlobalTheory.PeriodFamily.taylor N t (per x).fn
 
 end GlobalTheory.AnPer
 end

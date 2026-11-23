@@ -70,8 +70,8 @@ theorem gram_pair {T T' : D.host.E} (F0 : FlagG (VS D) D.R.rS T) (F' : LFlag (D.
 
 def flagDifferenceMatrix (D : Formalism.BasicNotions.D7) :
     Matrix (Fin (D.R.rS + 1) ⊕ Fin (D.R.rS + 1)) (Fin (D.R.rS + 1) ⊕ Fin (D.R.rS + 1)) D.host.E :=
-  Matrix.fromBlocks 1 (-(((gS D : D.host.E))⁻¹ • (1 : Matrix (Fin (D.R.rS + 1)) (Fin (D.R.rS + 1)) D.host.E))) 0
-    (((gS D : D.host.E))⁻¹ • (1 : Matrix (Fin (D.R.rS + 1)) (Fin (D.R.rS + 1)) D.host.E))
+  Matrix.fromBlocks 1 (-(((Formalism.MainNotions.S.Lat.gS D : D.host.E))⁻¹ • (1 : Matrix (Fin (D.R.rS + 1)) (Fin (D.R.rS + 1)) D.host.E))) 0
+    (((Formalism.MainNotions.S.Lat.gS D : D.host.E))⁻¹ • (1 : Matrix (Fin (D.R.rS + 1)) (Fin (D.R.rS + 1)) D.host.E))
 
 theorem flagDifference_comb {T T' : D.host.E} (F0 : FlagG (VS D) D.R.rS T) (F' : LFlag (D.sp.Y 0) D.R.rS T') :
     ∀ j, flagDifferenceVectors D F0 F' j = ∑ i, flagDifferenceMatrix D i j • Sum.elim F0.fvec F'.fl.fvec i := by
@@ -80,26 +80,26 @@ theorem flagDifference_comb {T T' : D.host.E} (F0 : FlagG (VS D) D.R.rS T) (F' :
   · simp [flagDifferenceVectors, flagDifferenceMatrix, Fintype.sum_sum_type, Matrix.one_apply]
   · simp [flagDifferenceVectors, flagDifferenceMatrix, Fintype.sum_sum_type, Matrix.one_apply, sub_eq_add_neg, add_comm]
 
-theorem det_flagDifference_matrix (D : Formalism.BasicNotions.D7) : (flagDifferenceMatrix D).det = ((gS D : D.host.E))⁻¹ ^ (D.R.rS + 1) := by
+theorem det_flagDifference_matrix (D : Formalism.BasicNotions.D7) : (flagDifferenceMatrix D).det = ((Formalism.MainNotions.S.Lat.gS D : D.host.E))⁻¹ ^ (D.R.rS + 1) := by
   rw [flagDifferenceMatrix, Matrix.det_fromBlocks_zero₂₁, Matrix.det_one, one_mul, Matrix.det_smul, Matrix.det_one,
     mul_one, Fintype.card_fin]
 
-theorem star_gS (D : Formalism.BasicNotions.D7) : star ((gS D : D.host.E))⁻¹ = ((gS D : D.host.E))⁻¹ := by
+theorem star_gS (D : Formalism.BasicNotions.D7) : star ((Formalism.MainNotions.S.Lat.gS D : D.host.E))⁻¹ = ((Formalism.MainNotions.S.Lat.gS D : D.host.E))⁻¹ := by
   rw [star_inv₀, star_natCast]
 
 theorem det_gram_flagDifference {T T' : D.host.E} (F0 : FlagG (VS D) D.R.rS T) (F' : LFlag (D.sp.Y 0) D.R.rS T')
     (Z : MatZ D) (hZ : ZhatL (lf D F0) F' = Z) :
-    (gram (VS D).hT (flagDifferenceVectors D F0 F')).det = ((gS D : D.host.E))⁻¹ ^ (2 * (D.R.rS + 1)) * (Ga T T' Z).det := by
+    (gram (VS D).hT (flagDifferenceVectors D F0 F')).det = ((Formalism.MainNotions.S.Lat.gS D : D.host.E))⁻¹ ^ (2 * (D.R.rS + 1)) * (Ga T T' Z).det := by
   rw [gram_comb (VS D).hT _ (flagDifferenceMatrix D) _ (flagDifference_comb F0 F'), gram_pair F0 F' Z hZ, Matrix.det_mul,
     Matrix.det_mul, Matrix.det_conjTranspose, det_flagDifference_matrix, star_pow, star_gS]
   ring
 
 theorem span_flagDifferenceBasis {T T' : D.host.E} (F0 : FlagG (VS D) D.R.rS T) (F' : LFlag (D.sp.Y 0) D.R.rS T') :
     Submodule.span D.host.E (Set.range (flagDifferenceVectors D F0 F')) = UPair D F0 F' := by
-  have hg : ((gS D : D.host.E)) ≠ 0 := by
+  have hg : ((Formalism.MainNotions.S.Lat.gS D : D.host.E)) ≠ 0 := by
     have h0 := (D.host.g_prime 0).ne_zero
     have h1 := (D.host.g_prime 1).ne_zero
-    rw [gS]
+    rw [Formalism.MainNotions.S.Lat.gS]
     exact_mod_cast mul_ne_zero h0 h1
   unfold UPair
   apply le_antisymm
@@ -113,7 +113,7 @@ theorem span_flagDifferenceBasis {T T' : D.host.E} (F0 : FlagG (VS D) D.R.rS T) 
   · rw [Submodule.span_le]
     rintro _ (⟨b, rfl⟩ | ⟨b, rfl⟩)
     · exact Submodule.subset_span ⟨Sum.inl b, rfl⟩
-    · have h1 : F'.fl.fvec b = (gS D : D.host.E) • flagDifferenceVectors D F0 F' (Sum.inr b) +
+    · have h1 : F'.fl.fvec b = (Formalism.MainNotions.S.Lat.gS D : D.host.E) • flagDifferenceVectors D F0 F' (Sum.inr b) +
           flagDifferenceVectors D F0 F' (Sum.inl b) := by
         simp only [flagDifferenceVectors, Sum.elim_inr, Sum.elim_inl, smul_smul, mul_inv_cancel₀ hg, one_smul,
           sub_add_cancel]

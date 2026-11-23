@@ -68,7 +68,7 @@ def JdS (D : Formalism.BasicNotions.D7) : Ideal (𝓞 D.host.E) :=
   Ideal.map (algebraMap (𝓞 D.host.F) (𝓞 D.host.E)) (differentIdeal ℤ (𝓞 D.host.F))
 
 def GDiffPrime : Prop :=
-  ∀ (D : Formalism.BasicNotions.D7) (P : HeightOneSpectrum (𝓞 D.host.E)), ((gS D : ℕ) : 𝓞 D.host.E) ∈ P.asIdeal →
+  ∀ (D : Formalism.BasicNotions.D7) (P : HeightOneSpectrum (𝓞 D.host.E)), ((Formalism.MainNotions.S.Lat.gS D : ℕ) : 𝓞 D.host.E) ∈ P.asIdeal →
     ∃ s ∈ JdS D, s ∉ P.asIdeal
 
 theorem differentIdealPowers_eq_inv (D : Formalism.BasicNotions.D7) (i : Fin (D.R.rS + 1)) :
@@ -144,8 +144,8 @@ theorem loc_g (D : Formalism.BasicNotions.D7) {T T' : D.host.E} (F0 : FlagG (VS 
     · exact Or.inl ⟨a, rfl⟩
     · exact Or.inr ⟨b, rfl⟩
 
-theorem gS_ne_zero' (D : Formalism.BasicNotions.D7) : ((gS D : D.host.E)) ≠ 0 := by
-  have h : gS D ≠ 0 := mul_ne_zero (D.host.g_prime 0).ne_zero (D.host.g_prime 1).ne_zero
+theorem gS_ne_zero' (D : Formalism.BasicNotions.D7) : ((Formalism.MainNotions.S.Lat.gS D : D.host.E)) ≠ 0 := by
+  have h : Formalism.MainNotions.S.Lat.gS D ≠ 0 := mul_ne_zero (D.host.g_prime 0).ne_zero (D.host.g_prime 1).ne_zero
   exact_mod_cast h
 
 theorem aa_castSucc (D : Formalism.BasicNotions.D7) (a : Fin D.R.rS) :
@@ -184,12 +184,12 @@ theorem UUS_le_pb (D : Formalism.BasicNotions.D7) {T T' : D.host.E} (F0 : FlagG 
       c • F'.fl.fvec a ∈ pbLat (flagDifferenceVectors D F0 F') (Sum.elim (differentIdealPowers D) (differentIdealPowers D)) := by
     intro a c hc
     refine ⟨mem_pb F0 F' (Sum.inl a) c hc, ?_⟩
-    have hgc : ((gS D : D.host.E)) * c ∈ differentIdealPowers D a := by
-      have := Submodule.smul_mem (differentIdealPowers D a : Submodule (𝓞 D.host.E) D.host.E) ((gS D : ℕ) : 𝓞 D.host.E) hc
+    have hgc : ((Formalism.MainNotions.S.Lat.gS D : D.host.E)) * c ∈ differentIdealPowers D a := by
+      have := Submodule.smul_mem (differentIdealPowers D a : Submodule (𝓞 D.host.E) D.host.E) ((Formalism.MainNotions.S.Lat.gS D : ℕ) : 𝓞 D.host.E) hc
       rwa [Algebra.smul_def, map_natCast] at this
-    have e : c • F'.fl.fvec a = (((gS D : D.host.E)) * c) • flagDifferenceVectors D F0 F' (Sum.inr a) + c • flagDifferenceVectors D F0 F' (Sum.inl a) := by
+    have e : c • F'.fl.fvec a = (((Formalism.MainNotions.S.Lat.gS D : D.host.E)) * c) • flagDifferenceVectors D F0 F' (Sum.inr a) + c • flagDifferenceVectors D F0 F' (Sum.inl a) := by
       simp only [flagDifferenceVectors, Sum.elim_inr, Sum.elim_inl]
-      have hgc' : (((gS D : D.host.E)) * c) • (((gS D : D.host.E))⁻¹ • (F'.fl.fvec a - F0.fvec a)) =
+      have hgc' : (((Formalism.MainNotions.S.Lat.gS D : D.host.E)) * c) • (((Formalism.MainNotions.S.Lat.gS D : D.host.E))⁻¹ • (F'.fl.fvec a - F0.fvec a)) =
           c • (F'.fl.fvec a - F0.fvec a) := by
         rw [smul_smul]
         congr 1
@@ -215,7 +215,7 @@ theorem UUS_le_pb (D : Formalism.BasicNotions.D7) {T T' : D.host.E} (F0 : FlagG 
     simpa [FlagG.fvec] using this
 
 theorem loc_ng (D : Formalism.BasicNotions.D7) {T T' : D.host.E} (F0 : FlagG (VS D) D.R.rS T) (F' : LFlag (D.sp.Y 0) D.R.rS T')
-    (P : HeightOneSpectrum (𝓞 D.host.E)) (hP : ((gS D : ℕ) : 𝓞 D.host.E) ∉ P.asIdeal) :
+    (P : HeightOneSpectrum (𝓞 D.host.E)) (hP : ((Formalism.MainNotions.S.Lat.gS D : ℕ) : 𝓞 D.host.E) ∉ P.asIdeal) :
     haveI := P.isPrime
     Formalism.HermitianLatticesTheory.localization₂ P.asIdeal (UUS D F0 F') =
       Formalism.HermitianLatticesTheory.localization₂ P.asIdeal (pbLat (flagDifferenceVectors D F0 F') (Sum.elim (differentIdealPowers D) (differentIdealPowers D))) := by
@@ -227,8 +227,8 @@ theorem loc_ng (D : Formalism.BasicNotions.D7) {T T' : D.host.E} (F0 : FlagG (VS
     rintro v ⟨i, c, hc, rfl⟩
     rcases i with a | b
     · exact le_locS _ _ (mem_UUS_fvec D F0 F' a c hc).1
-    · refine ⟨((gS D : ℕ) : 𝓞 D.host.E), hP, ?_⟩
-      have e : ((gS D : ℕ) : 𝓞 D.host.E) • (c • flagDifferenceVectors D F0 F' (Sum.inr b)) = c • F'.fl.fvec b - c • F0.fvec b := by
+    · refine ⟨((Formalism.MainNotions.S.Lat.gS D : ℕ) : 𝓞 D.host.E), hP, ?_⟩
+      have e : ((Formalism.MainNotions.S.Lat.gS D : ℕ) : 𝓞 D.host.E) • (c • flagDifferenceVectors D F0 F' (Sum.inr b)) = c • F'.fl.fvec b - c • F0.fvec b := by
         rw [smul_O_E]
         simp only [flagDifferenceVectors, Sum.elim_inr, smul_smul]
         push_cast
@@ -243,7 +243,7 @@ theorem mmPseudo_of (hg : GDiffPrime) : MMPseudo := by
   intro D u u' _ F0 what₂ _ Z F' _ _ _ _
   have hP : ∀ P : HeightOneSpectrum (𝓞 D.host.E),
       (haveI := P.isPrime
-       if ((gS D : ℕ) : 𝓞 D.host.E) ∈ P.asIdeal then Formalism.HermitianLatticesTheory.localization₂ P.asIdeal (MMg D F0 F')
+       if ((Formalism.MainNotions.S.Lat.gS D : ℕ) : 𝓞 D.host.E) ∈ P.asIdeal then Formalism.HermitianLatticesTheory.localization₂ P.asIdeal (MMg D F0 F')
        else Formalism.HermitianLatticesTheory.localization₂ P.asIdeal (UUS D F0 F')) =
       (haveI := P.isPrime
        Formalism.HermitianLatticesTheory.localization₂ P.asIdeal (pbLat (flagDifferenceVectors D F0 F') (Sum.elim (differentIdealPowers D) (differentIdealPowers D)))) := by
@@ -261,7 +261,7 @@ theorem congruence_prime_different : GDiffPrime := by
   haveI := P.isPrime
   have hg : ((D.host.g 0 : ℕ) : 𝓞 D.host.E) ∈ P.asIdeal ∨ ((D.host.g 1 : ℕ) : 𝓞 D.host.E) ∈ P.asIdeal := by
     apply P.isPrime.mem_or_mem
-    unfold gS at hP
+    unfold Formalism.MainNotions.S.Lat.gS at hP
     exact_mod_cast hP
   have key : ∀ i : Fin 2, ((D.host.g i : ℕ) : 𝓞 D.host.E) ∈ P.asIdeal → ∃ s ∈ JdS D, s ∉ P.asIdeal := by
     intro i hi

@@ -282,10 +282,10 @@ section Stmt
 
 variable {D : D7} {X : HidaSetting D} (Y : Formalism.L2.SG.Full.Full X)
 
-abbrev amp {u u' : D.what₂.Word} (s : TT Y u u') : X.Vpi u' →L[ℂ] X.Vpi u :=
+abbrev amp {u u' : D.what₂.Word} (s : Formalism.L2.SG.PackageTie2.TT Y u u') : X.Vpi u' →L[ℂ] X.Vpi u :=
   ampN (Y.cs u) (Y.cs u') (Y.FN u) (Y.FN u') s
 
-abbrev row {u u' : D.what₂.Word} (s : TT Y u u') :=
+abbrev row {u u' : D.what₂.Word} (s : Formalism.L2.SG.PackageTie2.TT Y u u') :=
   rowOf Y.TR (Y.cs u) (Y.cs u') s
 
 def AmpCov : Prop :=
@@ -317,13 +317,13 @@ theorem wRow_nonneg {T : D.host.E} (F0 : Formalism.MainNotions.S.FlagG (Formalis
     0 ≤ Formalism.MainNotions.S.wRow D F0 Λ := by
   unfold Formalism.MainNotions.S.wRow; exact inv_nonneg.2 (Nat.cast_nonneg _)
 
-theorem lam_eq_of_row {u u' : D.what₂.Word} {s₁ s₂ : TT Y u u'} (h : row Y s₁ = row Y s₂) :
+theorem lam_eq_of_row {u u' : D.what₂.Word} {s₁ s₂ : Formalism.L2.SG.PackageTie2.TT Y u u'} (h : row Y s₁ = row Y s₂) :
     s₁.lam = s₂.lam ∧ s₁.lam' = s₂.lam' := by
   unfold row rowOf at h
   simp only [Prod.mk.injEq, Subtype.mk.injEq] at h
   exact ⟨h.1, h.2.1⟩
 
-theorem inner_vT {u u' : D.what₂.Word} (s₁ s₂ : TT Y u u') (h : row Y s₁ = row Y s₂) :
+theorem inner_vT {u u' : D.what₂.Word} (s₁ s₂ : Formalism.L2.SG.PackageTie2.TT Y u u') (h : row Y s₁ = row Y s₂) :
     inner ℂ (vT Y u u' s₂) (vT Y u u' s₁) =
       ((Formalism.MainNotions.S.wRow D (X.Fu u) s₁.lam * Formalism.MainNotions.S.wRow D (X.Fu u') s₁.lam' : ℝ) : ℂ) *
         Formalism.MainNotions.S.hsInner (amp Y s₁) (amp Y s₂) := by

@@ -377,16 +377,16 @@ variable {D : D7} {X : HidaSetting D} {Y : Full X} {u u' : D.what₂.Word}
 theorem frame_lf {T : D.host.E} (F0 : FlagG (VS D) D.R.rS T) (a : Fin (D.R.rS + 1)) :
     frame (lf D F0) a = F0.fvec a := rfl
 
-theorem lin_isom (s : TT Y u u') : s.lin ∈ Formalism.HermitianLatticesTheory.isom (VS D).hT := s.rep.2.2.1
+theorem lin_isom (s : Formalism.L2.SG.PackageTie2.TT Y u u') : s.lin ∈ Formalism.HermitianLatticesTheory.isom (VS D).hT := s.rep.2.2.1
 
-theorem lin_gmap (s : TT Y u u') : Formalism.HermitianLatticesTheory.gmap s.lin s.lam' = s.lam := s.rep.2.2.2.1
+theorem lin_gmap (s : Formalism.L2.SG.PackageTie2.TT Y u u') : Formalism.HermitianLatticesTheory.gmap s.lin s.lam' = s.lam := s.rep.2.2.2.1
 
-theorem frame_eq (s : TT Y u u') : s.frame = Formalism.L2.SG.Saturated.mapL s.lin (lin_isom s) (lf D (X.Fu u')) := by
+theorem frame_eq (s : Formalism.L2.SG.PackageTie2.TT Y u u') : s.frame = Formalism.L2.SG.Saturated.mapL s.lin (lin_isom s) (lf D (X.Fu u')) := by
   unfold Formalism.L2.SG.TermOp.GTerm.frame Formalism.L2.SG.TermOp.mapLF
   rw [dite_eq_left (lin_isom s)]
   rfl
 
-theorem frame_apply (s : TT Y u u') (a : Fin (D.R.rS + 1)) : frame s.frame a = s.lin ((X.Fu u').fvec a) := by
+theorem frame_apply (s : Formalism.L2.SG.PackageTie2.TT Y u u') (a : Fin (D.R.rS + 1)) : frame s.frame a = s.lin ((X.Fu u').fvec a) := by
   rw [frame_eq]
   show (Formalism.L2.SG.Saturated.mapFlag s.lin (lin_isom s) (lf D (X.Fu u')).fl).fvec a =
     s.lin ((lf D (X.Fu u')).fl.fvec a)
@@ -407,7 +407,7 @@ theorem stabF_of_fix {T : D.host.E} (F0 : FlagG (VS D) D.R.rS T) {c : (VS D).V �
   · have h1 := hfix (Fin.last _)
     simpa only [Formalism.MainNotions.S.FlagG.fvec, Fin.snoc_last] using h1
 
-theorem fib_dec {s s' : TT Y u u'} (h : s.toTerm = s'.toTerm) :
+theorem fib_dec {s s' : Formalism.L2.SG.PackageTie2.TT Y u u'} (h : s.toTerm = s'.toTerm) :
     s.lam = s'.lam ∧ ∃ n ∈ NLam s.lam (lf D (X.Fu u)), ∃ ν ∈ NLam s.lam' (lf D (X.Fu u')),
       ∃ c : (VS D).V ≃ₗ[D.host.E] (VS D).V, c ∈ Formalism.HermitianLatticesTheory.isom (VS D).hT ∧
         Formalism.HermitianLatticesTheory.gmap c s'.lam' = s.lam' ∧ (∀ a, c ((X.Fu u').fvec a) = (X.Fu u').fvec a) ∧
@@ -463,7 +463,7 @@ theorem fib_dec {s s' : TT Y u u'} (h : s.toTerm = s'.toTerm) :
       simp only [hmul, hinv']
     rw [e2, hinv]
 
-theorem lam'_eq {s s' : TT Y u u'} (h : s.toTerm = s'.toTerm) : s.lam' = s'.lam' := by
+theorem lam'_eq {s s' : Formalism.L2.SG.PackageTie2.TT Y u u'} (h : s.toTerm = s'.toTerm) : s.lam' = s'.lam' := by
   obtain ⟨-, n, -, ν, -, c, hc, hgc, hfix, -⟩ := fib_dec h
   have hstab : c ∈ stabF D (X.Fu u') := stabF_of_fix (X.Fu u') hc hfix
   have hone : (1 : (VS D).V ≃ₗ[D.host.E] (VS D).V) ∈ stabF D (X.Fu u') :=
@@ -477,7 +477,7 @@ theorem lam'_eq {s s' : TT Y u u'} (h : s.toTerm = s'.toTerm) : s.lam' = s'.lam'
   have e2 := huniq s'.lam' ⟨s'.mem', c, hstab, hgc⟩
   exact e1.trans e2.symm
 
-theorem gterm_eq {s s' : TT Y u u'} (hl : s.lam = s'.lam) (hl' : s.lam' = s'.lam')
+theorem gterm_eq {s s' : Formalism.L2.SG.PackageTie2.TT Y u u'} (hl : s.lam = s'.lam) (hl' : s.lam' = s'.lam')
     (h : ∃ n ∈ NLam s.lam (lf D (X.Fu u)), ∃ n' ∈ NLam s.lam' (lf D (X.Fu u')), s'.lin = n * s.lin * n') : s = s' := by
   obtain ⟨n, hn, n', hn', hq⟩ := h
   rcases s with ⟨l, hm, l', hm', c⟩
