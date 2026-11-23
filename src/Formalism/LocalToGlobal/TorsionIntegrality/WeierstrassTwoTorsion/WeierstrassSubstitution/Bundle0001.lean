@@ -351,7 +351,7 @@ theorem twoTorsionTranslation : FlowTwoTorsion.{u} := by
     linear_combination 4 * t ^ 4 * hE - 4 * t ^ 4 * hT + t ^ 4 * ((2 * yT + W.a₁ * xT + W.a₃) + 2 * W.a₁ * (x - xT)) * h2 +
       (4 * (3 * xT ^ 2 + 2 * W.a₂ * xT + W.a₄ - W.a₁ * yT) * t ^ 3 + (12 * xT + (W.a₁ ^ 2 + 4 * W.a₂)) * t ^ 2 * (2 + (t * (x - xT) - 1)) + 4 * t * (3 + 3 * (t * (x - xT) - 1) + (t * (x - xT) - 1) ^ 2)) * ht
   · rw [hDt]
-    simp only [der_neg hD, der_mul hD, der_add hD, der_sq hD, der_ofNat hD, hDx, hDy, hDt, ha1, ha3,
+    simp only [der_neg hD, QuadraticFlow.der_mul hD, der_add hD, QuadraticFlow.der_sq hD, der_ofNat hD, hDx, hDy, hDt, ha1, ha3,
       WeierstrassCurve.b₂]
     linear_combination 8 * t ^ 3 * hE - 8 * t ^ 3 * hT +
       (2 * t ^ 3 * ((2 * yT + W.a₁ * xT + W.a₃) + 2 * W.a₁ * (x - xT)) - W.a₁ * t ^ 2) * h2 +

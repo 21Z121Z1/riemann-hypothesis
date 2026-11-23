@@ -22,28 +22,28 @@ section Dense
 
 variable {n : ℕ} {ε : Fin n → Bool} {H : Type} [NormedAddCommGroup H] [InnerProductSpace ℂ H]
 
-lemma umat_mem_UJset (h : UJ ε) : umat h ∈ UJset ε := h.2
+lemma umat_mem_UJset (h : UpqRep.UJ ε) : umat h ∈ UJset ε := h.2
 
 lemma one_mem_UJset : (1 : Matrix (Fin n) (Fin n) ℂ) ∈ UJset ε := by
-  exact (UJ ε).one_mem
+  exact (UpqRep.UJ ε).one_mem
 
 lemma cont_orbit {τ : Matrix (Fin n) (Fin n) ℂ → (H →L[ℂ] H)} (hτ : IsURepOn (UJset ε) τ) (u : H) :
-    Continuous (fun h : UJ ε => τ (umat h) u) := (hτ.2.2 u).comp_continuous (Units.continuous_val.comp continuous_subtype_val) (fun h => h.2)
+    Continuous (fun h : UpqRep.UJ ε => τ (umat h) u) := (hτ.2.2 u).comp_continuous (Units.continuous_val.comp continuous_subtype_val) (fun h => h.2)
 
 lemma gv_sub_norm_le [CompleteSpace H] {τ : Matrix (Fin n) (Fin n) ℂ → (H →L[ℂ] H)}
     (hτ : IsURepOn (UJset ε) τ)
     (Φr : Matrix (Fin n) (Fin n) ℂ → ℝ) (hΦc : Continuous Φr) (hΦ0 : ∀ x, 0 ≤ Φr x)
-    (hint : Integrable (fun h : UJ ε => Φr (umat h)) (muG ε))
+    (hint : Integrable (fun h : UpqRep.UJ ε => Φr (umat h)) (muG ε))
     (h1 : ∫ h, Φr (umat h) ∂(muG ε) = 1) (u : H) (δ : ℝ)
-    (hsupp : ∀ h : UJ ε, Φr (umat h) ≠ 0 → ‖τ (umat h) u - u‖ ≤ δ) :
+    (hsupp : ∀ h : UpqRep.UJ ε, Φr (umat h) ≠ 0 → ‖τ (umat h) u - u‖ ≤ δ) :
     ‖gv ε τ (fun x => (Φr x : ℂ)) u - u‖ ≤ δ := by
   have hc := cont_orbit hτ u
-  have hI1 : Integrable (fun h : UJ ε => Φr (umat h) • τ (umat h) u) (muG ε) := by
+  have hI1 : Integrable (fun h : UpqRep.UJ ε => Φr (umat h) • τ (umat h) u) (muG ε) := by
     refine Integrable.mono' (hint.mul_const ‖u‖) ?_ ?_
     · exact ((hΦc.comp (continuous_coeMatrix ε)).smul hc).aestronglyMeasurable
     · filter_upwards with h
       rw [norm_smul, hτ.2.1 _ (umat_mem_UJset h), Real.norm_eq_abs, abs_of_nonneg (hΦ0 _)]
-  have hI2 : Integrable (fun h : UJ ε => Φr (umat h) • u) (muG ε) := hint.smul_const u
+  have hI2 : Integrable (fun h : UpqRep.UJ ε => Φr (umat h) • u) (muG ε) := hint.smul_const u
   have hgv : gv ε τ (fun x => (Φr x : ℂ)) u = ∫ h, Φr (umat h) • τ (umat h) u ∂(muG ε) := by
     unfold gv
     congr 1
@@ -147,16 +147,16 @@ theorem dense_weak_vectors : StepDenseW := by
     intro x hx
     by_contra hne
     exact hx (Metric.mem_closedBall.2 (hsupp0 x hne).le)
-  have hcomp : Continuous (fun h : UJ ε => Φ0 (umat h)) := hΦ0c.comp (continuous_coeMatrix ε)
-  have hint : Integrable (fun h : UJ ε => Φ0 (umat h)) (muG ε) :=
+  have hcomp : Continuous (fun h : UpqRep.UJ ε => Φ0 (umat h)) := hΦ0c.comp (continuous_coeMatrix ε)
+  have hint : Integrable (fun h : UpqRep.UJ ε => Φ0 (umat h)) (muG ε) :=
     hcomp.integrable_of_hasCompactSupport (hcs.comp_isClosedEmbedding (isClosedEmbeddingMatrix n ε).1)
   have hpos : 0 < ∫ h, Φ0 (umat h) ∂(muG ε) := by
     rw [integral_pos_iff_support_of_nonneg (fun h => ψ.nonneg) hint]
     apply IsOpen.measure_pos
     · exact isOpen_ne_fun hcomp continuous_const
     · refine ⟨1, ?_⟩
-      show ψ (qd (umat (1 : UJ ε))) ≠ 0
-      have h1 : umat (1 : UJ ε) = 1 := rfl
+      show ψ (qd (umat (1 : UpqRep.UJ ε))) ≠ 0
+      have h1 : umat (1 : UpqRep.UJ ε) = 1 := rfl
       rw [h1, qd_one, ψ.one_of_mem_closedBall (Metric.mem_closedBall_self ψ.rIn_pos.le)]
       exact one_ne_zero
   set c := ∫ h, Φ0 (umat h) ∂(muG ε) with hc
@@ -252,34 +252,34 @@ variable {n : ℕ} {ε : Fin n → Bool} {H : Type} [NormedAddCommGroup H] [Inne
   [CompleteSpace H]
 
 lemma umat_closedEmb (ε : Fin n → Bool) :
-    IsClosedEmbedding (umat : UJ ε → Matrix (Fin n) (Fin n) ℂ) := by
+    IsClosedEmbedding (umat : UpqRep.UJ ε → Matrix (Fin n) (Fin n) ℂ) := by
   exact ⟨⟨isInducing_coeMatrix ε, injective_coeMatrix ε⟩, (range_coeMatrix ε) ▸ isClosed_pseudoUnitary ε⟩
 
 lemma umat_measEmb (ε : Fin n → Bool) :
-    MeasurableEmbedding (umat : UJ ε → Matrix (Fin n) (Fin n) ℂ) := by
+    MeasurableEmbedding (umat : UpqRep.UJ ε → Matrix (Fin n) (Fin n) ℂ) := by
   exact (umat_closedEmb ε).measurableEmbedding
 
-lemma umat_mem (h : UJ ε) : umat h ∈ UJset ε := by
+lemma umat_mem (h : UpqRep.UJ ε) : umat h ∈ UJset ε := by
   exact h.2
 
-lemma umat_inv (γ : UJ ε) : umat γ⁻¹ = Jm ε * (umat γ)ᴴ * Jm ε := by
+lemma umat_inv (γ : UpqRep.UJ ε) : umat γ⁻¹ = Jm ε * (umat γ)ᴴ * Jm ε := by
   exact coeMatrix_inv_eq ε γ
 
-lemma umat_mul_inv (γ : UJ ε) : umat γ * umat γ⁻¹ = 1 := by
+lemma umat_mul_inv (γ : UpqRep.UJ ε) : umat γ * umat γ⁻¹ = 1 := by
   exact Units.mul_inv (γ : (Matrix (Fin n) (Fin n) ℂ)ˣ)
 
 lemma cont_orbit {τ : Matrix (Fin n) (Fin n) ℂ → (H →L[ℂ] H)} (hτ : IsURepOn (UJset ε) τ) (x : H) :
-    Continuous (fun h : UJ ε => τ (umat h) x) := by
+    Continuous (fun h : UpqRep.UJ ε => τ (umat h) x) := by
   exact (hτ.2.2 x).comp_continuous (continuous_coeMatrix ε) (fun h => umat_mem h)
 
 lemma integrable_orbit {τ : Matrix (Fin n) (Fin n) ℂ → (H →L[ℂ] H)} (hτ : IsURepOn (UJset ε) τ)
-    (Ψ : UJ ε → ℂ) (hΨ : Continuous Ψ) (hΨc : HasCompactSupport Ψ) (x : H) :
+    (Ψ : UpqRep.UJ ε → ℂ) (hΨ : Continuous Ψ) (hΨc : HasCompactSupport Ψ) (x : H) :
     Integrable (fun h => Ψ h • τ (umat h) x) (muG ε) := by
   exact (hΨ.smul (cont_orbit hτ x)).integrable_of_hasCompactSupport hΨc.smul_right
 
 lemma tau_gv {τ : Matrix (Fin n) (Fin n) ℂ → (H →L[ℂ] H)} (hτ : IsURepOn (UJset ε) τ)
     (Φ : Matrix (Fin n) (Fin n) ℂ → ℂ) (hΦ : Continuous Φ) (hΦc : HasCompactSupport Φ) (x : H)
-    (γ : UJ ε) :
+    (γ : UpqRep.UJ ε) :
     τ (umat γ) (gv ε τ Φ x) =
       ∫ h, Φ (Jm ε * (umat γ)ᴴ * Jm ε * umat h) • τ (umat h) x ∂(muG ε) := by
   have hint := integrable_orbit hτ (fun h => Φ (umat h)) (hΦ.comp (continuous_coeMatrix ε))
@@ -395,7 +395,7 @@ theorem stepGarding_main : StepGarding := by
     have hgl : (Jm ε * gᴴ * Jm ε) * g = 1 := coeMatrix_left_inv ε g hg
     have hgr : g * (Jm ε * gᴴ * Jm ε) = 1 := (Matrix.mul_eq_one_comm_of_equiv (Equiv.refl _)).mp hgl
     let u : (Matrix (Fin n) (Fin n) ℂ)ˣ := ⟨g, Jm ε * gᴴ * Jm ε, hgr, hgl⟩
-    let γ : UJ ε := ⟨u, hg⟩
+    let γ : UpqRep.UJ ε := ⟨u, hg⟩
     have hγ : umat γ = g := rfl
     beta_reduce
     rw [← hγ, tau_gv hτ Φ hΦ.continuous hΦc x γ, hγ, MeasureTheory.convolution_def,

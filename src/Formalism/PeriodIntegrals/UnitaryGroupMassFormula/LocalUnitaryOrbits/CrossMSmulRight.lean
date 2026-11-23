@@ -91,10 +91,10 @@ end Alg
 
 section Rem
 
-theorem sigR_sc (r : Fv F v) : sigR (Fv F v) σ (sc (E := E) v r) = sc (E := E) v r := by
+theorem sigR_sc (r : Fv F v) : Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes.sigR (Fv F v) σ (sc (E := E) v r) = sc (E := E) v r := by
   first
-  | (simp [sigR, sc]; done)
-  | (unfold sigR sc; done)
+  | (simp [Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes.sigR, sc]; done)
+  | (unfold Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes.sigR sc; done)
 
 theorem hR_smul_smul (r t : Fv F v) (x y : Fin n → Fv F v ⊗[F] E) :
     hR (Fv F v) σ J (r • x) (t • y) = sc (E := E) v (r * t) * hR (Fv F v) σ J x y := by
