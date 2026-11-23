@@ -370,7 +370,7 @@ theorem compOf_along {p k : ℕ} {U : Scheme.{0}} (z : Sx (cech f) k U)
   exact congrArg (fun t => t.app (op U) z) e
 
 theorem map_aug {k : ℕ} {U : Scheme.{0}} (z : Sx (cech f) k U) :
-    Sx.map (cechAug f) z = baseOf f z := rfl
+    Sx.map (GlobalTheory.EtC.cechAug f) z = baseOf f z := rfl
 
 theorem cechPt_spec : CrystallineSemistableComparison.E.CechPt := by
   intro Y X f k U

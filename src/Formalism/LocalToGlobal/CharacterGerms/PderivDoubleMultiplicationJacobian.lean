@@ -70,7 +70,7 @@ theorem jacobian_mul_log_jacobian {V : VF C} {O : Type} [CommRing O] [StarRing O
   rw [Matrix.mul_apply, Matrix.one_apply] at h
   have h2 := congrArg (ev ![(P0 : Pt C 2 dd)]) h
   rw [ev_sum (z0_1 _ z0P0)] at h2
-  simp only [ev_mul (z0_1 _ z0P0)] at h2
+  simp only [Formalism.L2.FormalSeriesBounds.PartialDerivEval.ev_mul (z0_1 _ z0P0)] at h2
   unfold J2 logJacobianTwoPoints
   rw [h2]
   split_ifs
@@ -208,11 +208,11 @@ theorem dh_eq (Y : FBChart C V O dd) (m : Fin dd) : Dh Y m = Az Y m - Pm Y m := 
     exact PartialDerivEval.eval_points_two f
   have hPm : Pm Y m = ev (n := 2) ![0, P1] (gk Y m) - ∑ k, gk Y k * J2 Y.B.G k m := by
     unfold Pm
-    rw [hph, pderiv_expS hE0, ← hph, ev_mul hS, Y.B.cocycleLeft_zero_snd, one_mul, map_sub, map_add (f := _), dA, dB, dC, zero_add,
+    rw [hph, pderiv_expS hE0, ← hph, Formalism.L2.FormalSeriesBounds.PartialDerivEval.ev_mul hS, Y.B.cocycleLeft_zero_snd, one_mul, map_sub, map_add (f := _), dA, dB, dC, zero_add,
       ev_sub hS, sB, ev_sum hS]
     congr 1
     refine Finset.sum_congr rfl fun k _ => ?_
-    rw [ev_mul hS, sC, sP, group_law_jacobian_eq]
+    rw [Formalism.L2.FormalSeriesBounds.PartialDerivEval.ev_mul hS, sC, sP, group_law_jacobian_eq]
   rw [hPm]
   unfold Dh Az
   ring
@@ -267,7 +267,7 @@ theorem pderiv_double_multiplication (Y : FBChart C V O dd) (n : ℕ) (k i : Fin
     ← ev_eq_alg (z0_1 _ z0P0), ev_sum (z0_1 _ z0P0), nsmul_eq_mul]
   congr 1
   refine Finset.sum_congr rfl fun m _ => ?_
-  rw [ev_mul (z0_1 _ z0P0), eval_multiplication_jacobian]
+  rw [Formalism.L2.FormalSeriesBounds.PartialDerivEval.ev_mul (z0_1 _ z0P0), eval_multiplication_jacobian]
   unfold MulLFrob.cmp logJacobianTwoPoints
   rw [lift_eval_multiplication]
 
@@ -306,7 +306,7 @@ theorem dE (Y : FBChart C V O dd) (i : Fin dd) :
     unfold Dh evl
     rw [ev_sum (constant_zero_double_multiplication Y V.l), Finset.sum_mul]
     refine Finset.sum_congr rfl fun k _ => ?_
-    rw [ev_mul (constant_zero_double_multiplication Y V.l)]
+    rw [Formalism.L2.FormalSeriesBounds.PartialDerivEval.ev_mul (constant_zero_double_multiplication Y V.l)]
   have h2 : pderiv (R := C) ((0 : Fin 2), i) ((V.l : C) • Y.h) = (V.l : PS C 2 dd) * ∑ m, Dh Y m * logJacobianTwoPoints Y m i := by
     rw [Nat.cast_smul_eq_nsmul, map_nsmul, nsmul_eq_mul, ← gk_eq]
     rfl

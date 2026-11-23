@@ -192,7 +192,7 @@ theorem continuous_archSlice {φ : AdelicGLn.AdelicGL K n → ℂ} (hφ : IsArch
 
 theorem finiteDimensional_span_archCompactRepKZ (v : smoothKZ K n) :
     FiniteDimensional ℂ (Submodule.span ℂ (range fun k : archCompact K n => archCompactRepKZ K n k v)) := by
-  set Wf := Submodule.span ℂ (range fun k : (maxCompact : Subgroup (AdelicGLn.AdelicGL K n)) =>
+  set Wf := Submodule.span ℂ (range fun k : (GroundTheory.Automorphic.Reduction.maxCompact : Subgroup (AdelicGLn.AdelicGL K n)) =>
     rightTranslate (k : AdelicGLn.AdelicGL K n) (v : AdelicGLn.AdelicGL K n → ℂ))
   have : FiniteDimensional ℂ Wf := v.2.isKFinite
   set W := Submodule.span ℂ (range fun k : archCompact K n => archCompactRepKZ K n k v)

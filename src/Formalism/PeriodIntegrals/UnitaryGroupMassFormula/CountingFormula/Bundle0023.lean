@@ -266,7 +266,7 @@ abbrev ddI (D : D7) : Ideal (𝓞 D.host.E) :=
   Ideal.map (algebraMap (𝓞 D.host.F) (𝓞 D.host.E)) (differentIdeal ℤ (𝓞 D.host.F))
 
 def DdOffG : Prop :=
-  ∀ (D : D7) (P : HeightOneSpectrum (𝓞 D.host.E)), ((gS D : ℕ) : 𝓞 D.host.E) ∈ P.asIdeal → ¬ ddI D ≤ P.asIdeal
+  ∀ (D : D7) (P : HeightOneSpectrum (𝓞 D.host.E)), ((Formalism.MainNotions.S.Lat.gS D : ℕ) : 𝓞 D.host.E) ∈ P.asIdeal → ¬ ddI D ≤ P.asIdeal
 
 section LocLemmas
 
@@ -392,7 +392,7 @@ theorem locGenXS_of (hD : DdOffG) : LocGenXS := by
   haveI := P.isPrime
   have hJ : ∀ a : Fin D.R.rS, (ddI D ^ (D.R.rS - (a : ℕ))) ≠ ⊥ := fun a => pow_ne_zero _ (ddI_ne_bot D)
   have h1P : (1 : 𝓞 D.host.E) ∉ P.asIdeal := (Ideal.ne_top_iff_one _).mp P.isPrime.ne_top
-  by_cases hg : ((gS D : ℕ) : 𝓞 D.host.E) ∈ P.asIdeal
+  by_cases hg : ((Formalism.MainNotions.S.Lat.gS D : ℕ) : 𝓞 D.host.E) ∈ P.asIdeal
   · obtain ⟨t, htd, htP⟩ := SetLike.not_le_iff_exists.mp (hD D P hg)
     refine ⟨fun _ => 1, fun _ => one_ne_zero, fun _ _ => rfl, localization_eq_localization_span D F0 P.asIdeal _ ?_ ?_⟩
     · intro a x hx
@@ -434,8 +434,8 @@ theorem locGenXS_of (hD : DdOffG) : LocGenXS := by
 theorem different_coprime_split : DdOffG := by
   intro D P hg hle
   have hg' : ∃ i, ((D.host.g i : ℕ) : 𝓞 D.host.E) ∈ P.asIdeal := by
-    have e : ((gS D : ℕ) : 𝓞 D.host.E) = ((D.host.g 0 : ℕ) : 𝓞 D.host.E) * ((D.host.g 1 : ℕ) : 𝓞 D.host.E) := by
-      simp [gS, Nat.cast_mul]
+    have e : ((Formalism.MainNotions.S.Lat.gS D : ℕ) : 𝓞 D.host.E) = ((D.host.g 0 : ℕ) : 𝓞 D.host.E) * ((D.host.g 1 : ℕ) : 𝓞 D.host.E) := by
+      simp [Formalism.MainNotions.S.Lat.gS, Nat.cast_mul]
     rw [e] at hg
     rcases P.isPrime.mem_or_mem hg with h | h
     · exact ⟨0, h⟩

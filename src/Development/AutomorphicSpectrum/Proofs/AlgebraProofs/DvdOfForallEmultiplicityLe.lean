@@ -251,7 +251,7 @@ theorem chowFormSectionPerfect_of (hA : ChowFormSectionAlgClosed.Statement)
     Finset.prod_ne_zero_iff.mpr fun W hW => pow_ne_zero _ (hg W hW).1
   have hmapeq : map σ (specFirst f u) =
       C c' * map σ (∏ W ∈ (divCycle I u).support, g W ^ divCycle I u W) := by
-    rw [map_specFirst, hc'eq, map_prod]
+    rw [GlobalTheory.CompanionTheory.Ar.Short.ChowClosing.SectionPerfect.map_specFirst, hc'eq, map_prod]
     simp only [map_pow]
   obtain ⟨c₀, hc₀, heq⟩ := eq_C_mul_of_map_eq σ hprod0 hc' hmapeq
   exact ⟨c₀, hc₀, g, hg, heq⟩

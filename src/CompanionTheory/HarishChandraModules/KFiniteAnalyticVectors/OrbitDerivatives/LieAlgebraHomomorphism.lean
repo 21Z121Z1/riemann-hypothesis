@@ -35,7 +35,7 @@ theorem ent_lin {X Y : Obj k r} (f : M X →ₗ[ℂ] M Y) (e : Y.1.ι) (c : X.1.
     rw [ent_coe f e c ⟨v, hv⟩, ← Submodule.coe_smul, ← Pi.smul_apply, ← map_smul, ← Pi.single_smul]
     exact ent_coe f e c (a • ⟨v, hv⟩)⟩
 
-theorem nu_zero (U : URep k r) {Ws : List (List (Mx k r))} (hW : ∀ W ∈ Ws, LieWd k r W) : nu U.R.σ Ws 0 = 0 := by
+theorem nu_zero (U : URep k r) {Ws : List (List (Formalism.FourierDecayAlt.ThreeDimData.Mx k r))} (hW : ∀ W ∈ Ws, LieWd k r W) : nu U.R.σ Ws 0 = 0 := by
   refine List.sum_eq_zero fun a ha => ?_
   obtain ⟨W, hW0, rfl⟩ := List.mem_map.1 ha
   have := dsW_smul U.repOn (IsSm.zero (G := GG k r) (σ := U.R.σ)) 0 fun Y hY => hLie Y (hW W hW0 Y hY)
@@ -60,15 +60,15 @@ theorem apply_eq_ent {X Y : Obj k r} (f : M X →ₗ[ℂ] M Y) (x : M X) (e : Y.
     conv_lhs => rw [← Finset.univ_sum_single x, map_sum, Finset.sum_apply, Submodule.coe_sum]
   exact Finset.sum_congr rfl fun c _ => (ent_coe f e c (x c)).symm
 
-theorem hasDerivAt_rho {F : FRep k r} (hF : F.OK) {Z : Mx k r} (hZ : InLieHpk k r Z) (c d : F.ι) :
+theorem hasDerivAt_rho {F : FRep k r} (hF : F.OK) {Z : Formalism.FourierDecayAlt.ThreeDimData.Mx k r} (hZ : InLieHpk k r Z) (c d : F.ι) :
     HasDerivAt (fun t => F.ρ (ex Z t) c d) (F.dR Z c d) 0 := by
   obtain ⟨U, Φ, hU, h1U, hΦ, hf⟩ := (show SmOn (GG k r) fun g => F.ρ g c d from hF.smooth c d) 1 (hGG k r).2.1
   exact (hasDerivAt_local (f := fun g => F.ρ g c d) (hLie Z hZ) (ex_zero Z) (hasDerivAt_matrix_exp_zero Z)
     hU h1U hΦ hf).differentiableAt.hasDerivAt
 
-def LR (X : Obj k r) (Z : Mx k r) : Module.End ℂ (M X) := dOp X.1.ι (X.2.dsig Z) + mAct (X.1.dR Z)
+def LR (X : Obj k r) (Z : Formalism.FourierDecayAlt.ThreeDimData.Mx k r) : Module.End ℂ (M X) := dOp X.1.ι (X.2.dsig Z) + mAct (X.1.dR Z)
 
-theorem LR_coe (X : Obj k r) {Z : Mx k r} (hZ : InLieHpk k r Z) (x : M X) (c : X.1.ι) :
+theorem LR_coe (X : Obj k r) {Z : Formalism.FourierDecayAlt.ThreeDimData.Mx k r} (hZ : InLieHpk k r Z) (x : M X) (c : X.1.ι) :
     (LR X Z x c : X.2.R.H) = ds X.2.R.σ Z (x c) + ∑ d, X.1.dR Z c d • (x d : X.2.R.H) := by
   simp only [LR, mAct, dOp, LinearMap.add_apply, Pi.add_apply, LinearMap.pi_apply, LinearMap.sum_apply,
     LinearMap.smul_apply, LinearMap.proj_apply, LinearMap.compLeft_apply, Function.comp_apply, Submodule.coe_add,
@@ -77,7 +77,7 @@ theorem LR_coe (X : Obj k r) {Z : Mx k r} (hZ : InLieHpk k r Z) (x : M X) (c : X
 
 theorem hasDerivAt_lin {X : Obj k r} (hX : X.1.OK) {H' : Type} [NormedAddCommGroup H'] [InnerProductSpace ℂ H']
     [CompleteSpace H'] {T : X.2.R.H → H'} (hl : Lin (GG k r) X.2.R.σ T) (hb : Bdd (GG k r) (InLieHpk k r) X.2.R.σ T)
-    {Z : Mx k r} (hZ : InLieHpk k r Z) (x : M X) (c : X.1.ι) :
+    {Z : Formalism.FourierDecayAlt.ThreeDimData.Mx k r} (hZ : InLieHpk k r Z) (x : M X) (c : X.1.ι) :
     HasDerivAt (fun t => T (act X (ex Z t) x c)) (T (LR X Z x c)) 0 := by
   let Tl : X.2.R.smSub →ₗ[ℂ] H' :=
     { toFun := fun v => T v
@@ -112,7 +112,7 @@ theorem hasDerivAt_lin {X : Obj k r} (hX : X.1.OK) {H' : Type} [NormedAddCommGro
   rw [URep.dsig_coe _ hZ]
   rfl
 
-theorem comm_LR {X Y : Obj k r} {f : M X →ₗ[ℂ] M Y} (hX : X.1.OK) (hY : Y.1.OK) (hf : IsHom X Y f) {Z : Mx k r}
+theorem comm_LR {X Y : Obj k r} {f : M X →ₗ[ℂ] M Y} (hX : X.1.OK) (hY : Y.1.OK) (hf : IsHom X Y f) {Z : Formalism.FourierDecayAlt.ThreeDimData.Mx k r}
     (hZ : InLieHpk k r Z) : f ∘ₗ LR X Z = LR Y Z ∘ₗ f := by
   refine LinearMap.ext fun x => funext fun e => Subtype.ext ?_
   have h1 := HasDerivAt.fun_sum (u := Finset.univ) fun c _ =>
@@ -125,7 +125,7 @@ theorem comm_LR {X Y : Obj k r} {f : M X →ₗ[ℂ] M Y} (hX : X.1.OK) (hY : Y.
   rw [e1] at h1
   exact h1.unique h2
 
-theorem inLie_reH (Y : Mx k r) : InLieHpk k r (reH k r Y) := by
+theorem inLie_reH (Y : Formalism.FourierDecayAlt.ThreeDimData.Mx k r) : InLieHpk k r (reH k r Y) := by
   have h1 : Formalism.QuantumDeterminants.Hpk k r * Formalism.QuantumDeterminants.Hpk k r = 1 := PI.HwUniqW.Hpk_mul_self
   have h2 : (Formalism.QuantumDeterminants.Hpk k r)ᴴ = Formalism.QuantumDeterminants.Hpk k r := PI.HwUniqW.Hpk_conjTranspose
   show (reH k r Y)ᴴ * Formalism.QuantumDeterminants.Hpk k r + Formalism.QuantumDeterminants.Hpk k r * reH k r Y = 0
@@ -140,7 +140,7 @@ theorem inLie_reH (Y : Mx k r) : InLieHpk k r (reH k r Y) := by
     Matrix.add_mul, Matrix.mul_add, Matrix.neg_mul, Matrix.mul_neg, e1, e2, ← smul_add]
   simp
 
-theorem inLie_imH (Y : Mx k r) : InLieHpk k r (imH k r Y) := by
+theorem inLie_imH (Y : Formalism.FourierDecayAlt.ThreeDimData.Mx k r) : InLieHpk k r (imH k r Y) := by
   have h1 : Formalism.QuantumDeterminants.Hpk k r * Formalism.QuantumDeterminants.Hpk k r = 1 := PI.HwUniqW.Hpk_mul_self
   have h2 : (Formalism.QuantumDeterminants.Hpk k r)ᴴ = Formalism.QuantumDeterminants.Hpk k r := PI.HwUniqW.Hpk_conjTranspose
   show (imH k r Y)ᴴ * Formalism.QuantumDeterminants.Hpk k r + Formalism.QuantumDeterminants.Hpk k r * imH k r Y = 0
@@ -154,7 +154,7 @@ theorem inLie_imH (Y : Mx k r) : InLieHpk k r (imH k r Y) := by
   rw [sub_neg_eq_add, conjTranspose_smul, conjTranspose_add, e3, e4, Matrix.smul_mul, Matrix.mul_smul,
     Matrix.add_mul, Matrix.mul_add, e1, e2, neg_smul, add_comm (Hm * Y), neg_add_cancel]
 
-theorem L_eq (X : Obj k r) (Z : Mx k r) : L X Z = LR X (reH k r Z) + Complex.I • LR X (imH k r Z) := by
+theorem L_eq (X : Obj k r) (Z : Formalism.FourierDecayAlt.ThreeDimData.Mx k r) : L X Z = LR X (reH k r Z) + Complex.I • LR X (imH k r Z) := by
   refine LinearMap.ext fun x => funext fun c => ?_
   simp only [L, LR, URep.dC, FRep.dC, mAct, dOp, LinearMap.add_apply, Pi.add_apply, LinearMap.pi_apply,
     LinearMap.sum_apply, LinearMap.smul_apply, LinearMap.proj_apply, LinearMap.compLeft_apply, Function.comp_apply,
@@ -178,7 +178,7 @@ theorem dense_orb {U : URep k r} (hU : U.DS) {w : U.R.H} (hw : w ≠ 0) : Dense 
     have := Submodule.le_topologicalClosure _ hm
     rwa [h0, Submodule.mem_bot] at this
 
-theorem act_one_coe (T : URep k r) {g : Mx k r} (hg : g ∈ GG k r) (y : M (one T)) :
+theorem act_one_coe (T : URep k r) {g : Formalism.FourierDecayAlt.ThreeDimData.Mx k r} (hg : g ∈ GG k r) (y : M (one T)) :
     (act (one T) g y () : T.R.H) = T.R.σ g (y ()) := by
   rw [act_coe (one T) hg]
   show ∑ d : Unit, (1 : Matrix Unit Unit ℂ) () d • T.R.σ g (y d) = _

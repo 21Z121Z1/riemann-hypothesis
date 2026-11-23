@@ -231,7 +231,7 @@ theorem cobd_eq_zero_iff (R : Type) [CommRing R] (F : Shv R) (s : (free R).obj (
 def Rel (R : Type) [CommRing R] (F : Shv R) (u : Z1 F A B) (x : H R (sp A) F 1) : Prop :=
   ∃ s : (free R).obj ((GlobalTheory.EtC.cech (fB A B)).obj (op ⦋1⦌)) ⟶ F,
     val s (Spec (CommRingCat.of (B ⊗[A] B))) (P1 A B) = (u : (onRings F).obj (CommRingCat.of (B ⊗[A] B))) ∧
-      IsCls s (pull R (cechAug (fB A B)) F ((1 : ℕ) : ℤ) x)
+      IsCls s (pull R (GlobalTheory.EtC.cechAug (fB A B)) F ((1 : ℕ) : ℤ) x)
 
 theorem rel_unique [Algebra.Etale A B] [Module.FaithfullyFlat A B] (R : Type) [CommRing R] (F : Shv R) (u : Z1 F A B)
     (x x' : H R (sp A) F 1) (h : Rel A B R F u x) (h' : Rel A B R F u x') : x = x' := by

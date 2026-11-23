@@ -279,10 +279,10 @@ theorem ArithmeticIntersectionCycle.proof (hHor : ArithmeticIntersectionHorizont
     exact ⟨G', J', hJ'⟩
   let E : Ideal (MRing ι') → ℤ := fun W' =>
     if h : ∃ (G' : GenFibre v W') (J' : IFamily G'.Φ (fibreIdx ι' κ)), IsFieldIntersection J' then
-      h.choose_spec.choose (fibreIdeal κ h.choose) 0 Fin.elim0 else 0
+      h.choose_spec.choose (ReciprocityTheory.ChartRestriction.G.AI.I4.fibreIdeal κ h.choose) 0 Fin.elim0 else 0
   have hE : ∀ W' : Ideal (MRing ι'), W'.IsPrime →
       ∃ (G' : GenFibre v W') (J' : IFamily G'.Φ (fibreIdx ι' κ)),
-        IsFieldIntersection J' ∧ E W' = J' (fibreIdeal κ G') 0 Fin.elim0 := by
+        IsFieldIntersection J' ∧ E W' = J' (ReciprocityTheory.ChartRestriction.G.AI.I4.fibreIdeal κ G') 0 Fin.elim0 := by
     intro W' hW'
     have h := hex W' hW'
     exact ⟨h.choose, h.choose_spec.choose, h.choose_spec.choose_spec, by simp only [E, dif_pos h]⟩
@@ -317,7 +317,7 @@ theorem ArithmeticIntersectionCycle.proof (hHor : ArithmeticIntersectionHorizont
   have key : ∀ W ∈ hfin.toFinset,
       ∑ W' ∈ hfin'.toFinset.filter (fun W' => imageZ v W' = W),
         (multAt (P' ⊔ Ideal.span {rename v s}) W' : ℤ) * E W' =
-        J (fibreIdeal κ G) 0 Fin.elim0 * multAt (imageZ v P' ⊔ Ideal.span {s}) W := by
+        J (ReciprocityTheory.ChartRestriction.G.AI.I4.fibreIdeal κ G) 0 Fin.elim0 * multAt (imageZ v P' ⊔ Ideal.span {s}) W := by
     intro W hW
     have h := hPush K ι K' ι' κ v P' n G J s α W E hv hP' hP hJ hs hsP (hfin.mem_toFinset.1 hW)
       (fun W' hW' _ => hE W' hW'.1.isPrime)
@@ -330,7 +330,7 @@ theorem ArithmeticIntersectionCycle.proof (hHor : ArithmeticIntersectionHorizont
     simp [Set.Finite.mem_toFinset]
 
   show (∑ᶠ W' ∈ divSupp P' (rename v s), (multAt (P' ⊔ Ideal.span {rename v s}) W' : ℝ) * T' W') =
-    (J (fibreIdeal κ G) 0 Fin.elim0 : ℝ) * ∑ᶠ W ∈ divSupp (imageZ v P') s, (multAt (imageZ v P' ⊔ Ideal.span {s}) W : ℝ) * T W
+    (J (ReciprocityTheory.ChartRestriction.G.AI.I4.fibreIdeal κ G) 0 Fin.elim0 : ℝ) * ∑ᶠ W ∈ divSupp (imageZ v P') s, (multAt (imageZ v P' ⊔ Ideal.span {s}) W : ℝ) * T W
   rw [finsum_mem_eq_finite_toFinset_sum _ hfin', finsum_mem_eq_finite_toFinset_sum _ hfin]
   calc ∑ W' ∈ hfin'.toFinset, (multAt (P' ⊔ Ideal.span {rename v s}) W' : ℝ) * T' W'
       = ∑ W' ∈ hfin'.toFinset, if imageZ v W' ∈ hfin.toFinset then
@@ -352,7 +352,7 @@ theorem ArithmeticIntersectionCycle.proof (hHor : ArithmeticIntersectionHorizont
         rw [Finset.sum_mul]
         refine Finset.sum_congr rfl fun W' hW' => ?_
         rw [(Finset.mem_filter.1 hW').2]
-    _ = (J (fibreIdeal κ G) 0 Fin.elim0 : ℝ) *
+    _ = (J (ReciprocityTheory.ChartRestriction.G.AI.I4.fibreIdeal κ G) 0 Fin.elim0 : ℝ) *
           ∑ W ∈ hfin.toFinset, (multAt (imageZ v P' ⊔ Ideal.span {s}) W : ℝ) * T W := by
         rw [Finset.mul_sum]
         refine Finset.sum_congr rfl fun W hW => ?_
