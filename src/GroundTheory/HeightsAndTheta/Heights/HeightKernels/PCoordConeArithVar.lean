@@ -12,8 +12,7 @@ set_option maxSynthPendingDepth 1
 
 namespace GroundTheory.Heights₂.Heights
 
-open MvPolynomial
-open ReciprocityTheory.ChartRestriction.G.Geo hiding IsRelevant
+open MvPolynomial ReciprocityTheory.ChartRestriction.G.Geo
 
 noncomputable section
 
@@ -86,7 +85,7 @@ theorem isMultiHomogIdeal (y : (Σ k, ι k) → Ω) : IsMultiHomogIdeal (mCoordI
 
 omit [Fintype K] [∀ k, Fintype (ι k)] in
 theorem relevant (y : (Σ k, ι k) → Ω) (c : ∀ k, ι k) (hc : ∀ k, y ⟨k, c k⟩ ≠ 0) :
-    IsRelevant (mCoordIdeal y) := by
+    ReciprocityTheory.ChartRestriction.G.Geo.IsRelevant (mCoordIdeal y) := by
   intro k
   refine ⟨c k, fun h ↦ ?_⟩
   rw [mCoordIdeal, RingHom.mem_ker, mConeMap, aeval_X] at h
@@ -190,7 +189,7 @@ theorem mCoordIdeal_ratioPtL [CharZero Ω] (y : (Σ k, ι k) → Ω) (c : ∀ k,
 omit [Fintype K] in
 theorem rep_of_mem [CharZero Ω] (y : (Σ k, ι k) → Ω) (c : ∀ k, ι k) (hc : ∀ k, y ⟨k, c k⟩ ≠ 0)
     {x : Ω} (hx : x ∈ ratioField y c) :
-    ∃ (d : K → ℕ) (g h : MRing ι), IsMultiHomog g d ∧ IsMultiHomog h d ∧
+    ∃ (d : K → ℕ) (g h : MRing ι), ReciprocityTheory.ChartRestriction.G.Geo.IsMultiHomog g d ∧ ReciprocityTheory.ChartRestriction.G.Geo.IsMultiHomog h d ∧
       aeval (ratioPt y c) h ≠ 0 ∧ aeval (ratioPt y c) g = x * aeval (ratioPt y c) h := by
   classical
   suffices H : ∃ (d : K → ℕ) (g h : MRing ι),
