@@ -140,7 +140,7 @@ theorem IsSmoothKZ.isKFinite_uAction {φ : AdelicGLn.AdelicGL K n → ℂ} (hφ 
     (u : UEnv K n) : IsKFinite (uAction u ⟨φ, hφ.isSmooth.1⟩ : AdelicGLn.AdelicGL K n → ℂ) := by
   classical
   set φs : archSmooth K n := ⟨φ, hφ.isSmooth.1⟩
-  set Wf := Submodule.span ℂ (range fun k : (maxCompact : Subgroup (AdelicGLn.AdelicGL K n)) =>
+  set Wf := Submodule.span ℂ (range fun k : (GroundTheory.Automorphic.Reduction.maxCompact : Subgroup (AdelicGLn.AdelicGL K n)) =>
     rightTranslate (k : AdelicGLn.AdelicGL K n) φ)
   have : FiniteDimensional ℂ Wf := hφ.isKFinite
   set W' : Submodule ℂ (archSmooth K n) := Wf.comap (archSmooth K n).subtype
@@ -155,7 +155,7 @@ theorem IsSmoothKZ.isKFinite_uAction {φ : AdelicGLn.AdelicGL K n → ℂ} (hφ 
   let M : Submodule ℂ (archSmooth K n) := ⨆ b : t, W'.map (uAction (b : UEnv K n))
   unfold IsKFinite
   have hle : Submodule.span ℂ
-      (range fun k : (maxCompact : Subgroup (AdelicGLn.AdelicGL K n)) =>
+      (range fun k : (GroundTheory.Automorphic.Reduction.maxCompact : Subgroup (AdelicGLn.AdelicGL K n)) =>
         rightTranslate (k : AdelicGLn.AdelicGL K n) (uAction u φs : AdelicGLn.AdelicGL K n → ℂ)) ≤
       M.map (archSmooth K n).subtype := by
     refine Submodule.span_le.2 ?_

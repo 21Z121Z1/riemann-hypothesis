@@ -109,7 +109,7 @@ theorem mem_congQ_of_eq_one {a : Neutral.B1.Ideles H.E} (hu : a ∈ unitIdl H.E)
   ⟨hu, fun k v hv => by rw [h v (Or.inl ⟨k, hv⟩), sub_self, map_zero]; exact zero_lt_one,
     fun v hv => by rw [h v (Or.inr hv), sub_self, map_zero]; exact zero_lt_one⟩
 
-theorem infIdele_mem_KDq (w : InfinitePlace H.E) (y : (w.Completion)ˣ) : infIdele H.E w y ∈ KDq H SQ :=
+theorem infIdele_mem_KDq (w : InfinitePlace H.E) (y : (w.Completion)ˣ) : ReciprocityTheory.Neutral.Bridge.HCFR.infIdele H.E w y ∈ KDq H SQ :=
   mem_KDq_of_congQ H SQ (mem_congQ_of_eq_one H SQ (fun v => show Valued.v (1 : v.adicCompletion H.E) = 1 from map_one _)
     fun _ _ => rfl)
 

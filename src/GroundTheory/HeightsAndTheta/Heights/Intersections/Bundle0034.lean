@@ -484,7 +484,7 @@ def PFFibreBij.Statement : Prop :=
     (G : GenFibre v P') (s : MRing ι'),
     IsBlockMap κ v → IsArithVar P' e → IsArithVar (imageZ v P') d →
     Set.BijOn (fibreOf κ G) {W | W ∈ divSupp P' s ∧ IsHorizontal W ∧ imageZ v W = imageZ v P'}
-      (divSupp (fibreIdeal κ G) (baseSubst κ G s))
+      (divSupp (ReciprocityTheory.ChartRestriction.G.AI.I4.fibreIdeal κ G) (baseSubst κ G s))
 
 end
 

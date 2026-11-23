@@ -157,7 +157,7 @@ open StandardDualMassAtPoint in
 theorem DualStdMassAt.proof (hOn : DualPtsOnPlane.Statement) (hOf : DualPtsOfPlane.Statement) :
     DualStdMassAt.Statement := by
   intro K _ _ D F T _ _ b hb hF
-  have hint : ∀ y : Fin D → ℂ, ∑ᶠ w ∈ fibre (dualIdeal b) (dualProj b hb) y,
+  have hint : ∀ y : Fin D → ℂ, ∑ᶠ w ∈ ReciprocityTheory.ChartRestriction.G.Geo.fibre (dualIdeal b) (dualProj b hb) y,
       sheetDensity (dualIdeal b) (dualProj b hb) (fun _ z => Real.log ((dualLine F b hb).h z))
         (fun _ => 1) y w = (Fintype.card (K →+* ℂ) : ℝ) * maDensity (fun _ : Fin D => gbPot) y := by
     intro y

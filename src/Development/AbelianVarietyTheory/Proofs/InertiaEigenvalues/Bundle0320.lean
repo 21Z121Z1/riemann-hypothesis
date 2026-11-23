@@ -90,7 +90,7 @@ theorem exists_near_perfI (h : Good K s LL) (I : IoS AI R) (hI : IoW I) (x : RW 
   rintro y (⟨j, rfl⟩ | ⟨z, hz, k, hk, hl, hzk, hy⟩)
   · refine mem_perfI_of_iterate I l j (l ^ s) _ ?_
     refine (GlobalTheory.TorsionBoundCompare.tmul_iter LL j _).trans ?_
-    rw [frob_iter_teich, εroot_pow]
+    rw [frob_iter_teich, GlobalTheory.FrobDescent.εroot_pow]
     exact piR_add_one_pow AI LL s
   · have hint : ∀ i, Γ.emb i ⟨z, hz⟩ ∈ OL LL := fun i => by
       refine IsIntegral.of_pow hk ?_

@@ -141,7 +141,7 @@ theorem polarisedAF : PolarisedAFStatement := by
   have hdeg := u4 p C v R hv hp1 (Nb p g) hkill H.AA cN cO hN hO
   obtain ⟨hcnt, hgen⟩ := GlobalTheory.T.augmentation_length_colength_bound p C v R hv hp1 (Nb p g) hkill H.AA cA cN hA hN
   obtain ⟨eq⟩ := GlobalTheory.T.augmentation_quotient_equiv_lattice p C v R hv hp1 (Ix g) H.AA
-  have hAF : HasLen v R ((Ix g → R) ⧸ AF) cA := hasLen_of_equiv eq.symm hA
+  have hAF : HasLen v R ((Ix g → R) ⧸ AF) cA := PositivityTheory.HtPt.Rc.hasLen_of_equiv eq.symm hA
   obtain ⟨hle, hLeq⟩ :=
     _root_.GlobalTheory.CompanionTheory.Ar.GR.submodule_eq_of_hasLen_eq C v R hv (Ix g) L AF hLle _ _ (pow_ne_zero _ hvcp) hLlen hAF
   have hn : Fintype.card (Nb p g) * (p - 1) ≠ 0 :=
@@ -277,7 +277,7 @@ theorem _root_.GlobalTheory.CompanionTheory.Relay.stable_hopf_order_fundamental_
         rw [Submodule.Quotient.mk_eq_zero] at h1
         exact h1
     rw [prod_Icc_fin]
-    exact hasLen_of_equiv ((Submodule.quotEquivOfEq _ _ hker).trans
+    exact PositivityTheory.HtPt.Rc.hasLen_of_equiv ((Submodule.quotEquivOfEq _ _ hker).trans
       (Ψ.quotKerEquivOfSurjective hsurj)) (Tot.hasLen_pi _ _ fun i =>
         hr _ (Finset.mem_Icc.2 ⟨by omega, i.2⟩))
 end

@@ -65,16 +65,16 @@ theorem URep.dense (U : URep k r) : Dense {v | IsSm (GG k r) U.R.σ v} :=
 
 theorem hLie : ∀ X, PI.UpqRep.InLieHpk k r X → ∀ t, ex X t ∈ GG k r := fun _ hX t => ex_mem_of_lie hX t
 
-theorem act_coe (X : Obj k r) {g : Mx k r} (hg : g ∈ GG k r) (x : M X) (c : X.1.ι) :
+theorem act_coe (X : Obj k r) {g : Formalism.FourierDecayAlt.ThreeDimData.Mx k r} (hg : g ∈ GG k r) (x : M X) (c : X.1.ι) :
     ((act X g x c : X.2.R.smSub) : X.2.R.H) = ∑ d, X.1.ρ g c d • X.2.R.σ g (x d) := by
   simp only [Zuck.act, mAct, dOp, LinearMap.comp_apply, LinearMap.pi_apply, LinearMap.sum_apply, LinearMap.smul_apply,
     LinearMap.proj_apply, LinearMap.compLeft_apply, Function.comp_apply, Submodule.coe_sum, Submodule.coe_smul,
     URep.sig_coe _ hg]
 
-theorem sn_eq (X : Obj k r) (W : List (Mx k r)) (x : M X) : sn X W x = ∑ c, ‖dsW X.2.R.σ W (x c : X.2.R.H)‖ := by
+theorem sn_eq (X : Obj k r) (W : List (Formalism.FourierDecayAlt.ThreeDimData.Mx k r)) (x : M X) : sn X W x = ∑ c, ‖dsW X.2.R.σ W (x c : X.2.R.H)‖ := by
   simp only [sn, dsigW_eq']
 
-theorem sum_sn (X : Obj k r) (Ws : List (List (Mx k r))) (x : M X) :
+theorem sum_sn (X : Obj k r) (Ws : List (List (Formalism.FourierDecayAlt.ThreeDimData.Mx k r))) (x : M X) :
     (Ws.map fun W => sn X W x).sum = ∑ c, nu X.2.R.σ Ws (x c : X.2.R.H) := by
   induction Ws with
   | nil => simp [nu]
@@ -83,9 +83,9 @@ theorem sum_sn (X : Obj k r) (Ws : List (List (Mx k r))) (x : M X) :
     simp only [sn_eq, nu, List.map_cons, List.sum_cons, Finset.sum_add_distrib]
 
 theorem exists_common {ι : Type} [Fintype ι] {H E : Type} [NormedAddCommGroup H] [InnerProductSpace ℂ H]
-    [NormedAddCommGroup E] {σ : Mx k r → (H →L[ℂ] H)} {T : ι → H → E}
+    [NormedAddCommGroup E] {σ : Formalism.FourierDecayAlt.ThreeDimData.Mx k r → (H →L[ℂ] H)} {T : ι → H → E}
     (h : ∀ c, Bdd (GG k r) (PI.UpqRep.InLieHpk k r) σ (T c)) :
-    ∃ (C : ℝ) (Ws : List (List (Mx k r))), 0 ≤ C ∧ (∀ W ∈ Ws, LieWd k r W) ∧
+    ∃ (C : ℝ) (Ws : List (List (Formalism.FourierDecayAlt.ThreeDimData.Mx k r))), 0 ≤ C ∧ (∀ W ∈ Ws, LieWd k r W) ∧
       ∀ c v, IsSm (GG k r) σ v → ‖T c v‖ ≤ C * nu σ Ws v := by
   obtain ⟨C, Ws, hW, hb⟩ := Bdd.sum (T := fun c v => ‖T c v‖) Finset.univ fun c _ => by
     obtain ⟨C, Ws, hW, hb⟩ := h c
@@ -136,7 +136,7 @@ theorem etaleClosed_point_lifts_simple_roots_monic : Lift := by
     set_option synthInstance.maxHeartbeats 100000 in
       conv_lhs => rw [← Finset.univ_sum_single x, _root_.map_sum]
     exact Finset.sum_congr rfl fun c _ => (ht c (x c)).symm
-  have hsum : ∀ (x : M X) (W : List (Mx k r)), LieWd k r W → ∀ s : Finset X.1.ι,
+  have hsum : ∀ (x : M X) (W : List (Formalism.FourierDecayAlt.ThreeDimData.Mx k r)), LieWd k r W → ∀ s : Finset X.1.ι,
       IsSm (GG k r) T.R.σ (∑ c ∈ s, t c (x c)) ∧
         dsW T.R.σ W (∑ c ∈ s, t c (x c)) = ∑ c ∈ s, dsW T.R.σ W (t c (x c)) := by
     intro x W hW0 s
@@ -257,7 +257,7 @@ theorem continuous_cf {X : Obj k r} (hX : X.1.OK) (c : X.1.ι) (w : X.2.R.H) (x 
 
 theorem cf_bound {X : Obj k r} (hX : X.1.OK) {m : ℕ} (hD : Decay X.2 m) (hm : X.1.deg + (2 * r + k + 1) ^ 2 + 1 ≤ m)
     (c : X.1.ι) {w : X.2.R.H} (hw : w ∈ X.2.R.sm) :
-    ∃ (C : ℝ) (Ws : List (List (Mx k r))), (∀ W ∈ Ws, LieWd k r W) ∧ ∀ (x : M X) (g : GM k r),
+    ∃ (C : ℝ) (Ws : List (List (Formalism.FourierDecayAlt.ThreeDimData.Mx k r))), (∀ W ∈ Ws, LieWd k r W) ∧ ∀ (x : M X) (g : GM k r),
       ‖cf X c w x g‖ ≤ C * (Ws.map fun W => sn X W x).sum * B.gN g.mat ^ (-(((2 * r + k + 1) ^ 2 + 1 : ℕ) : ℝ)) := by
   obtain ⟨C, Ws, hW, hb⟩ := hD
   obtain ⟨C', hC'⟩ := hX.growth
@@ -292,7 +292,7 @@ theorem cf_bound {X : Obj k r} (hX : X.1.OK) {m : ℕ} (hD : Decay X.2 m) (hm : 
     _ ≤ |C'| * (|C| * nu X.2.R.σ Ws w * nu X.2.R.σ Ws (x d)) := by gcongr
     _ = _ := by ring
 
-theorem act_mul {X : Obj k r} (hX : X.1.OK) {g h : Mx k r} (hg : g ∈ GG k r) (hh : h ∈ GG k r) (x : M X) :
+theorem act_mul {X : Obj k r} (hX : X.1.OK) {g h : Formalism.FourierDecayAlt.ThreeDimData.Mx k r} (hg : g ∈ GG k r) (hh : h ∈ GG k r) (x : M X) :
     act X (g * h) x = act X g (act X h x) := by
   funext c
   refine Subtype.ext ?_

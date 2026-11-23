@@ -195,7 +195,7 @@ def PullbackVanishingOfNullCycle.Statement : Prop :=
     IsBlockMap κ v → IsArithVar P' (n + 1) → IsArithVar (imageZ v P') (n + 1) →
     IsGoodProj (imageZ v P') Ψ → IsMultiHomogIdeal J' → ¬ J' ≤ P' →
     volume {y : Fin n → ℂ | ∃ z' ∈ mcPts P', z' ∈ mcPts J' ∧
-      (Ψ (segre fun p => z' (v p)) 0)⁻¹ • segre (fun p => z' (v p)) ∈ fibre (imageZ v P') Ψ y} = 0
+      (Ψ (segre fun p => z' (v p)) 0)⁻¹ • segre (fun p => z' (v p)) ∈ ReciprocityTheory.ChartRestriction.G.Geo.fibre (imageZ v P') Ψ y} = 0
 
 section Inhabitants
 

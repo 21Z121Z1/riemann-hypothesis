@@ -409,7 +409,7 @@ theorem exists_selfDual_prescribed (E : Type) [Field E] [NumberField E] [StarRin
   have hsymm : (hStd E n).IsSymm := ⟨fun x y => by
     simp only [hStd, LinearMap.mk₂'ₛₗ_apply, map_sum, map_mul, starRingEnd_apply, star_star]
     exact Finset.sum_congr rfl fun i _ => mul_comm _ _⟩
-  have hdual := dualLattice (𝓞 E) E (Sp E n) (hStd E n) hsymm hStd_nondeg star_range M hM
+  have hdual := Formalism.HermitianLatticesTheory.dualLattice (𝓞 E) E (Sp E n) (hStd E n) hsymm hStd_nondeg star_range M hM
   obtain ⟨L, hL, hLQ, hLo⟩ := exists_glue hN hM Q
   obtain ⟨N', hN', hc, ho⟩ := exists_glue hL hdual.1 (conjPrime₂ Q)
   have h1 : SameAt Q M N' := sameAt_trans hLQ (ho Q hQ.symm)

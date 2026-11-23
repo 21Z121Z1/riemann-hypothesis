@@ -79,7 +79,7 @@ theorem acris_disc_ext : ∀ (l : ℕ) [Fact l.Prime] (K : FinExt l) (bk : BK K)
   ext x
   have hb : ∀ r : ℕ, ‖γ x - γ' x‖ ≤ 2 * (l : ℝ)⁻¹ ^ r := by
     intro r
-    obtain ⟨s, z, rfl⟩ := (acris_basic l).2.2.1 x r
+    obtain ⟨s, z, rfl⟩ := (GlobalTheory.MemLoc.acris_basic l).2.2.1 x r
     have hs := h0 s
     rw [map_add (f := _), map_add (f := _), map_mul, map_mul, map_pow, map_pow, map_natCast, map_natCast, hs, add_sub_add_left_eq_sub,
       ← mul_sub]

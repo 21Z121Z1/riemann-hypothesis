@@ -71,7 +71,7 @@ theorem cmp_mul {P : Pt C 1 dd} (hP : ∀ j, constantCoeff (P j) = 0) (A B : Mat
   funext k i
   simp only [cmp, Matrix.mul_apply]
   rw [ev_sum (z0_1 P hP)]
-  exact Finset.sum_congr rfl fun j _ => ev_mul (z0_1 P hP) _ _
+  exact Finset.sum_congr rfl fun j _ => Formalism.L2.FormalSeriesBounds.PartialDerivEval.ev_mul (z0_1 P hP) _ _
 
 theorem cmp_one (P : Pt C 1 dd) : cmp P (1 : Matrix (Fin dd) (Fin dd) (PS C 1 dd)) = 1 := by
   funext k i
@@ -120,7 +120,7 @@ theorem JL_JF {V : VF C} {O : Type} [CommRing O] [StarRing O] (Y : FBChart C V O
         ((![pt C (n := 2) dd 1] : Fin 1 → Pt C 2 dd) k' j')) = ![(0 : Pt C 1 dd)] := by
       funext k' j'; fin_cases k'; exact ev_X constant_zero_first_then_zero 1 j'
     rw [e, ev_zero_pt]
-  simp only [ev_mul constant_zero_first_then_zero, hL] at h3
+  simp only [Formalism.L2.FormalSeriesBounds.PartialDerivEval.ev_mul constant_zero_first_then_zero, hL] at h3
   rw [hR] at h3
   rw [Matrix.mul_apply, Matrix.one_apply]
   simp only [Jac, JF]

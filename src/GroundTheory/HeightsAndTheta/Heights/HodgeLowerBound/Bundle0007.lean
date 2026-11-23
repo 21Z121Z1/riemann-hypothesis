@@ -248,7 +248,7 @@ namespace FsInvPow
 variable {K : Type} [Fintype K] {ι : K → Type} [∀ k, Fintype (ι k)]
 
 theorem fsHerm_h_eq (a : K → ℤ) (z : (Σ k, ι k) → ℂ) :
-    (fsHerm ι a).h z = (HermLine.ofMetrics (fun k => fsMetric (ι := ι k)) a).h z := by
+    (fsHerm ι a).h z = (ReciprocityTheory.ChartRestriction.G.Geo.HermLine.ofMetrics (fun k => fsMetric (ι := ι k)) a).h z := by
   rw [fsHerm_h, Inter.ofMetrics_fs_h]
   unfold refNorm
   refine Finset.prod_congr rfl fun k _ => ?_
@@ -256,7 +256,7 @@ theorem fsHerm_h_eq (a : K → ℤ) (z : (Σ k, ι k) → ℂ) :
     Real.sq_sqrt (Finset.sum_nonneg fun _ _ => sq_nonneg _)]
 
 theorem isSmoothHerm_fsHerm (a : K → ℤ) : IsSmoothHerm (fsHerm ι a) := by
-  have h : (fsHerm ι a).h = (HermLine.ofMetrics (fun k => fsMetric (ι := ι k)) a).h :=
+  have h : (fsHerm ι a).h = (ReciprocityTheory.ChartRestriction.G.Geo.HermLine.ofMetrics (fun k => fsMetric (ι := ι k)) a).h :=
     funext (fsHerm_h_eq a)
   unfold IsSmoothHerm
   rw [h]
@@ -266,7 +266,7 @@ theorem isSmoothHerm_fsMulti : IsSmoothHerm (GroundTheory.Heights₂.Heights.fsM
   unfold GroundTheory.Heights₂.Heights.fsMulti
   exact Inter.isSmoothHerm_ofMetrics_fs _
 
-abbrev invTensor (ι : K → Type) [∀ k, Fintype (ι k)] : HermLine ι :=
+abbrev invTensor (ι : K → Type) [∀ k, Fintype (ι k)] : ReciprocityTheory.ChartRestriction.G.Geo.HermLine ι :=
   (fsHerm ι (fun _ => -1)).tensor (GroundTheory.Heights₂.Heights.fsMulti ι)
 
 theorem isSmoothHerm_invTensor : IsSmoothHerm (invTensor ι) := by
@@ -308,7 +308,7 @@ theorem ptsIntegral_eq_zero {e : ℕ} (P : Ideal (MRing ι)) (φ : Fin e → ((�
   · rfl
 
 theorem snoc_invTensor (II : IntersectionSystem) (hII : IsIntersectionSystem II) (P : Ideal (MRing ι)) (n : ℕ)
-    (L : Fin n → HermLine ι) (hP : IsArithVar P (n + 1)) (hL : ∀ j, IsSmoothHerm (L j)) :
+    (L : Fin n → ReciprocityTheory.ChartRestriction.G.Geo.HermLine ι) (hP : IsArithVar P (n + 1)) (hL : ∀ j, IsSmoothHerm (L j)) :
     II K ι P (n + 1) (Fin.snoc L (invTensor ι)) = 0 := by
   have h1 : IsMultiHomog (1 : MRing ι) (0 : K → ℕ) := by
     classical
@@ -332,12 +332,12 @@ theorem snoc_invTensor (II : IntersectionSystem) (hII : IsIntersectionSystem II)
   simp [hsupp, hint]
 
 theorem intersection_update_fsHerm_neg_one (II : IntersectionSystem) (hII : IsIntersectionSystem II) (P : Ideal (MRing ι)) (n : ℕ)
-    (M : Fin (n + 1) → HermLine ι) (hP : IsArithVar P (n + 1)) (hM : ∀ i, IsSmoothHerm (M i))
+    (M : Fin (n + 1) → ReciprocityTheory.ChartRestriction.G.Geo.HermLine ι) (hP : IsArithVar P (n + 1)) (hM : ∀ i, IsSmoothHerm (M i))
     (j : Fin (n + 1)) :
     II K ι P (n + 1) (Function.update M j (fsHerm ι fun _ => -1)) =
       -II K ι P (n + 1) (Function.update M j (GroundTheory.Heights₂.Heights.fsMulti ι)) := by
   let σ := Equiv.swap j (Fin.last n)
-  let L : Fin n → HermLine ι := fun i => M (σ (Fin.castSucc i))
+  let L : Fin n → ReciprocityTheory.ChartRestriction.G.Geo.HermLine ι := fun i => M (σ (Fin.castSucc i))
   have hL : ∀ i, IsSmoothHerm (L i) := fun i => hM _
   have key : ∀ C, Function.update M j C ∘ σ = Fin.snoc L C := by
     intro C
@@ -376,7 +376,7 @@ theorem proof : FsInvPow.Statement := by
     funext i
     exact i.elim0
   | succ n =>
-    let M : ℕ → Fin (n + 1) → HermLine ι := fun k i =>
+    let M : ℕ → Fin (n + 1) → ReciprocityTheory.ChartRestriction.G.Geo.HermLine ι := fun k i =>
       if (i : ℕ) < k then GroundTheory.Heights₂.Heights.fsMulti ι else fsHerm ι fun _ => -1
     have hM : ∀ k i, IsSmoothHerm (M k i) := by
       intro k i

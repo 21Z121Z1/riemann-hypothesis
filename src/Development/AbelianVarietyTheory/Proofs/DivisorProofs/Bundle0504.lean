@@ -208,7 +208,7 @@ theorem mem_Z1_iff_cocycle (R : Type) [CommRing R] (F : Shv R) (w : (onRings F).
       ((onRings F).map (CommRingCat.ofHom
         (Algebra.TensorProduct.includeRight : B ⊗[A] B →ₐ[A] B ⊗[A] (B ⊗[A] B)).toRingHom)).hom w := Iff.rfl
 
-theorem cobd_eq_zero_iff (R : Type) [CommRing R] (F : Shv R) (s : (free R).obj ((cech (fB A B)).obj (op ⦋1⦌)) ⟶ F) :
+theorem cobd_eq_zero_iff (R : Type) [CommRing R] (F : Shv R) (s : (free R).obj ((GlobalTheory.EtC.cech (fB A B)).obj (op ⦋1⦌)) ⟶ F) :
     cobd s = 0 ↔
       ((onRings F).map (CommRingCat.ofHom (Algebra.TensorProduct.map (AlgHom.id A B)
         (Algebra.TensorProduct.includeRight : B →ₐ[A] B ⊗[A] B)).toRingHom)).hom (val s (Spec (CommRingCat.of (B ⊗[A] B))) (P1 A B)) =
@@ -229,7 +229,7 @@ theorem cobd_eq_zero_iff (R : Type) [CommRing R] (F : Shv R) (s : (free R).obj (
     exact (val_coboundary_second_level A B R F s).trans (sub_add_eq_zero_of_eq_add h)
 
 def Rel (R : Type) [CommRing R] (F : Shv R) (u : Z1 F A B) (x : H R (sp A) F 1) : Prop :=
-  ∃ s : (free R).obj ((cech (fB A B)).obj (op ⦋1⦌)) ⟶ F,
+  ∃ s : (free R).obj ((GlobalTheory.EtC.cech (fB A B)).obj (op ⦋1⦌)) ⟶ F,
     val s (Spec (CommRingCat.of (B ⊗[A] B))) (P1 A B) = (u : (onRings F).obj (CommRingCat.of (B ⊗[A] B))) ∧
       IsCls s (pull R (cechAug (fB A B)) F ((1 : ℕ) : ℤ) x)
 
@@ -240,7 +240,7 @@ theorem rel_unique [Algebra.Etale A B] [Module.FaithfullyFlat A B] (R : Type) [C
   have hss : s = s' :=
     (GlobalTheory.T.freeSheafHomValueAt_cechNerveSimplex_bijective R F _ _ (fB A B) 1 _ _ (y1 A B) (hy1 A B) (GlobalTheory.T.isLimit_widePullbackCone_spec_tensorSquare A B).some).1 (hs.trans hs'.symm)
   subst hss
-  have := (GlobalTheory.T.simplicialCochain_classes_basic_properties R F (cech (fB A B)) 1).2.2.1 s _ _ hx hx'
+  have := (GlobalTheory.T.simplicialCochain_classes_basic_properties R F (GlobalTheory.EtC.cech (fB A B)) 1).2.2.1 s _ _ hx hx'
   obtain ⟨h1, h2⟩ := smooth_surj A B
   exact (_root_.GlobalTheory.EtC.smooth_surjective_cech_descent_cohomology R (fB A B) F ((1 : ℕ) : ℤ)).1 this
 
@@ -250,7 +250,7 @@ theorem rel_exists [Algebra.Etale A B] [Module.FaithfullyFlat A B] (R : Type) [C
     (u : (onRings F).obj (CommRingCat.of (B ⊗[A] B)))
   have hs' : val s (Spec (CommRingCat.of (B ⊗[A] B))) (P1 A B) = (u : (onRings F).obj (CommRingCat.of (B ⊗[A] B))) := hs
   have hc : cobd s = 0 := (cobd_eq_zero_iff A B R F s).2 (by rw [hs']; exact (mem_Z1_iff_cocycle A B R F _).1 u.2)
-  obtain ⟨y, hy⟩ := (GlobalTheory.T.simplicialCochain_classes_basic_properties R F (cech (fB A B)) 1).1 s hc
+  obtain ⟨y, hy⟩ := (GlobalTheory.T.simplicialCochain_classes_basic_properties R F (GlobalTheory.EtC.cech (fB A B)) 1).1 s hc
   obtain ⟨h1, h2⟩ := smooth_surj A B
   obtain ⟨x, hx⟩ := (_root_.GlobalTheory.EtC.smooth_surjective_cech_descent_cohomology R (fB A B) F ((1 : ℕ) : ℤ)).2 y
   exact ⟨x, s, hs', hx ▸ hy⟩
