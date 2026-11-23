@@ -21,7 +21,7 @@ open Formalism.FourierDecayAlt.B Formalism.QuantumDeterminants Formalism.MainNot
 
 variable {k r : ℕ}
 
-theorem lim_sf {U : Set (Mat k r)} {μ : Measure (Mt k r)} (h : IsHaarOn U μ) : SigmaFinite μ := by
+theorem lim_sf {U : Set (Mat k r)} {μ : Measure (Mt k r)} (h : Formalism.FourierDecayAlt.B.IsHaarOn U μ) : SigmaFinite μ := by
   have : IsFiniteMeasureOnCompacts μ := ⟨fun K hK => h.finite_compact K hK⟩
   infer_instance
 
