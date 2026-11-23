@@ -421,7 +421,7 @@ theorem cellRes_mem_locPart {J I : ∀ k, Finset (ι k)} (h : cellMon S J ≤ ce
   | smul s x _ h' => rw [cellRes_smul]; exact Submodule.smul_mem _ s h'
 
 theorem cechD_mem_locPart (β : K → ℤ) (n : ℕ) {f : CechC S ι (MRingOver S ι ⧸ mIdealOver S y) n}
-    (hf : f ∈ cechCc ι (quotPart S (mIdealOver S y)) β n) (I : Cell K ι (n + 1)) :
+    (hf : f ∈ cechCc ι (quotPart S (mIdealOver S y)) β n) (I : ReciprocityTheory.ChartRestriction.G.ArakelovGeometry.KH.Cell K ι (n + 1)) :
     cechD S ι _ n f I ∈ locPart ι (quotPart S (mIdealOver S y)) (cellMon S I.1) β := by
   rw [cechD_apply]
   refine Submodule.sum_mem _ fun k _ => Submodule.sum_mem _ fun i _ => ?_
