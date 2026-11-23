@@ -140,7 +140,7 @@ theorem hermA_single_left (i : Fin M) (p : Af F ⊗[F] E) (Y : Fin M → Af F �
   · simp
 
 theorem hermA_unitary (g : Matrix (Fin M) (Fin M) (Af F ⊗[F] E))
-    (hg : cT (PI.UJClassFin.sigR (Af F) σ) g * JR (Af F) J * g = JR (Af F) J) (X Y : Fin M → Af F ⊗[F] E) :
+    (hg : PI.UJClassFin.cT (PI.UJClassFin.sigR (Af F) σ) g * JR (Af F) J * g = JR (Af F) J) (X Y : Fin M → Af F ⊗[F] E) :
     hermA σ J (g.mulVec X) (g.mulVec Y) = hermA σ J X Y := by
   have h1 : (fun i => PI.UJClassFin.sigR (Af F) σ ((g.mulVec X) i)) =
       (g.map (PI.UJClassFin.sigR (Af F) σ)).mulVec (fun i => PI.UJClassFin.sigR (Af F) σ (X i)) := by
@@ -153,8 +153,8 @@ theorem hermA_unitary (g : Matrix (Fin M) (Fin M) (Af F ⊗[F] E))
   simp only [Matrix.mulVec_mulVec, Matrix.mul_assoc, e]
 
 theorem finMat_unitary (h : HA (AF F) σ J) :
-    cT (PI.UJClassFin.sigR (Af F) σ) (finMat σ J h) * JR (Af F) J * finMat σ J h = JR (Af F) J := by
-  have hm : cT (PI.UJClassFin.sigR (AF F) σ) ((HA.mat (AF F) σ J h : GL (Fin M) (AF F ⊗[F] E)) : Matrix (Fin M) (Fin M) (AF F ⊗[F] E)) *
+    PI.UJClassFin.cT (PI.UJClassFin.sigR (Af F) σ) (finMat σ J h) * JR (Af F) J * finMat σ J h = JR (Af F) J := by
+  have hm : PI.UJClassFin.cT (PI.UJClassFin.sigR (AF F) σ) ((HA.mat (AF F) σ J h : GL (Fin M) (AF F ⊗[F] E)) : Matrix (Fin M) (Fin M) (AF F ⊗[F] E)) *
       JR (AF F) J * ((HA.mat (AF F) σ J h : GL (Fin M) (AF F ⊗[F] E)) : Matrix (Fin M) (Fin M) (AF F ⊗[F] E)) =
       JR (AF F) J := (show HR (AF F) σ J from h).2
   let φ := Algebra.TensorProduct.map (sndA F) (AlgHom.id F E)
@@ -168,10 +168,10 @@ theorem finMat_unitary (h : HA (AF F) σ J) :
     ext i j
     simp [φ, JR, inclR, Algebra.TensorProduct.map_tmul]
   have hcT : ∀ X : Matrix (Fin M) (Fin M) (AF F ⊗[F] E),
-      (cT (PI.UJClassFin.sigR (AF F) σ) X).map φ = cT (PI.UJClassFin.sigR (Af F) σ) (X.map φ) := by
+      (PI.UJClassFin.cT (PI.UJClassFin.sigR (AF F) σ) X).map φ = PI.UJClassFin.cT (PI.UJClassFin.sigR (Af F) σ) (X.map φ) := by
     intro X
     ext i j
-    simp [cT, hφs]
+    simp [PI.UJClassFin.cT, hφs]
   have := congrArg (fun X => X.map φ) hm
   simp only [mapAlg_mul, hcT, hφJ] at this
   exact this
