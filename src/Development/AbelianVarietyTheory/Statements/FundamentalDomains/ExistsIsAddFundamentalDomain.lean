@@ -30,7 +30,7 @@ theorem algChart_of_etale {R : Type} [CommRing R] {B : Type} [CommRing B] [Algeb
     (g : MvPolynomial (Fin n) R →ₐ[R] B) (hg : g.toRingHom.Etale) (ε' : B →ₐ[R] R) :
     ∃ π : ∀ m : ℕ, B →ₐ[R] ReciprocityTheory.ChartRestriction.G.Chart.JetR R (Fin n) m,
       (∀ m, (ReciprocityTheory.ChartRestriction.G.Chart.jetTruncR R (Fin n) m).comp (π (m + 1)) = π m) ∧
-      (∀ m, (jetZeroR R (Fin n) m).comp (π m) = (Algebra.ofId R _).comp ε') ∧
+      (∀ m, (ReciprocityTheory.ChartRestriction.G.Chart.jetZeroR R (Fin n) m).comp (π m) = (Algebra.ofId R _).comp ε') ∧
       ∀ (A : Type) [CommRing A] [Algebra R A] (aug : A →ₐ[R] R) (m : ℕ), (RingHom.ker aug) ^ (m + 1) = ⊥ →
         ∀ φ : B →ₐ[R] A, aug.comp φ = ε' →
           ∃! ψ : ReciprocityTheory.ChartRestriction.G.Chart.JetR R (Fin n) m →ₐ[R] A, aug.comp ψ = jetAug R (Fin n) m ∧ ψ.comp (π m) = φ := by
@@ -38,7 +38,7 @@ theorem algChart_of_etale {R : Type} [CommRing R] {B : Type} [CommRing B] [Algeb
   haveI : IsScalarTower R (MvPolynomial (Fin n) R) B := IsScalarTower.of_algebraMap_eq fun r => (g.commutes r).symm
   haveI : Algebra.Etale (MvPolynomial (Fin n) R) B := hg
   have hπ : ∀ m : ℕ, ∃ π : B →ₐ[R] ReciprocityTheory.ChartRestriction.G.Chart.JetR R (Fin n) m, (jetAug R (Fin n) m).comp π = ε' ∧
-      ∀ j, π (sX R j) = algebraMap R _ (ε' (sX R j)) + zR m j := fun m =>
+      ∀ j, π (sX R j) = algebraMap R _ (ε' (sX R j)) + ReciprocityTheory.ChartRestriction.G.Chart.zR m j := fun m =>
     etale_exists (n := n) ε' (jetAug R (Fin n) m) (ker_jetAug_nil (Fin n) m) _ (fun j => by
       rw [map_add (f := _), AlgHom.commutes, Algebra.algebraMap_self, RingHom.id_apply, jetAug_zR, add_zero])
   choose π hπaug hπX using hπ
