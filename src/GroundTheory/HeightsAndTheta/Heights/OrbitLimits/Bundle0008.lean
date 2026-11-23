@@ -313,14 +313,14 @@ theorem SegreComponent.proof (h₁ : ChartDimBound.Statement.{u, v, w})
     (h₂ : ChartFiniteIrrel.Statement.{u, v, w}) : SegreComponent.Statement.{u, v, w} := by
   intro K _ ι _ F _ V n f hV hf
   by_contra hne
-  have hirr : ∀ W ∈ (V ⊔ Ideal.span {f}).minimalPrimes, ¬ IsRelevant W :=
+  have hirr : ∀ W ∈ (V ⊔ Ideal.span {f}).minimalPrimes, ¬ ReciprocityTheory.ChartRestriction.G.Geo.IsRelevant W :=
     fun W hW hrel => hne ⟨W, hW, hrel⟩
   obtain ⟨i, hi⟩ : ∃ i, IsChart V i :=
     ⟨fun k => (hV.1.2.2 k).choose, fun k => (hV.1.2.2 k).choose_spec⟩
   have := h₂ K ι F V f i hV.1.2.1 hf hirr
-  have : IsArtinianRing (MRingOver F ι ⧸ chartIdeal V i) :=
-    IsArtinianRing.of_finite F (MRingOver F ι ⧸ chartIdeal V i)
-  have hA : ringKrullDim (MRingOver F ι ⧸ chartIdeal V i) ≤ ((0 : ℕ) : WithBot ℕ∞) :=
+  have : IsArtinianRing (MRingOver F ι ⧸ ReciprocityTheory.ChartRestriction.G.AI.I1.chartIdeal V i) :=
+    IsArtinianRing.of_finite F (MRingOver F ι ⧸ ReciprocityTheory.ChartRestriction.G.AI.I1.chartIdeal V i)
+  have hA : ringKrullDim (MRingOver F ι ⧸ ReciprocityTheory.ChartRestriction.G.AI.I1.chartIdeal V i) ≤ ((0 : ℕ) : WithBot ℕ∞) :=
     Ring.krullDimLE_iff.mp inferInstance
   have hdim := h₁ K ι F V i hV.1 hi
   rw [hV.2] at hdim

@@ -152,7 +152,7 @@ theorem measurable_maDensity {D : ℕ} (φ : Fin D → (Fin D → ℂ) → ℝ) 
 variable {K : Type*} [Fintype K] {ι : K → Type*} [∀ k, Fintype (ι k)] {e : ℕ}
 
 theorem exists_lift_family {P : Ideal (MRing ι)}
-    {Ψ : (((k : K) → ι k) → ℂ) →ₗ[ℂ] (Fin (e + 1) → ℂ)} (hfin : ∀ y, (fibre P Ψ y).Finite) :
+    {Ψ : (((k : K) → ι k) → ℂ) →ₗ[ℂ] (Fin (e + 1) → ℂ)} (hfin : ∀ y, (ReciprocityTheory.ChartRestriction.G.Geo.fibre P Ψ y).Finite) :
     ∃ (B : ℕ → Set (Fin e → ℂ)) (γ : ℕ → (Fin e → ℂ) → (Σ k, ι k) → ℂ),
       (∀ m, IsOpen (B m)) ∧
       (∀ m, ∀ y ∈ B m, DifferentiableAt ℂ (γ m) y ∧ γ m y ∈ mcPts P ∧
@@ -251,7 +251,7 @@ variable {K : Type*} [Fintype K] {ι : K → Type*} [∀ k, Fintype (ι k)] {e :
 theorem PtsSumMeasurableWeight.aestronglyMeasurable_fibreSum_of_lifts
     {P : Ideal (MRing ι)} {Ψ : (((k : K) → ι k) → ℂ) →ₗ[ℂ] (Fin (e + 1) → ℂ)}
     (φ : Fin e → ((Σ k, ι k) → ℂ) → ℝ) (g : ((Σ k, ι k) → ℂ) → ℝ) (F : ℝ → ℝ)
-    (hF : Measurable F) (hF0 : F 0 = 0) (hfin : ∀ y, (fibre P Ψ y).Finite)
+    (hF : Measurable F) (hF0 : F 0 = 0) (hfin : ∀ y, (ReciprocityTheory.ChartRestriction.G.Geo.fibre P Ψ y).Finite)
     (B : ℕ → Set (Fin e → ℂ)) (γ : ℕ → (Fin e → ℂ) → (Σ k, ι k) → ℂ) (hBo : ∀ m, IsOpen (B m))
     (hlift : ∀ m, ∀ y ∈ B m, DifferentiableAt ℂ (γ m) y ∧ γ m y ∈ mcPts P ∧
       Ψ (segre (γ m y)) = Fin.cons 1 y)
@@ -261,7 +261,7 @@ theorem PtsSumMeasurableWeight.aestronglyMeasurable_fibreSum_of_lifts
     (hind : ∀ᵐ y, ∀ w γ₁ γ₂, IsSheet P Ψ y w γ₁ → IsSheet P Ψ y w γ₂ →
       g (γ₁ y) * maDensity (fun j y' => φ j (γ₁ y')) y =
         g (γ₂ y) * maDensity (fun j y' => φ j (γ₂ y')) y) :
-    AEStronglyMeasurable (fun y => ∑ᶠ w ∈ fibre P Ψ y, F (sheetDensity P Ψ φ g y w)) volume := by
+    AEStronglyMeasurable (fun y => ∑ᶠ w ∈ ReciprocityTheory.ChartRestriction.G.Geo.fibre P Ψ y, F (sheetDensity P Ψ φ g y w)) volume := by
   classical
   have hsheet : ∀ m, ∀ y ∈ B m, IsSheet P Ψ y (segre (γ m y)) (γ m) := fun m y hy =>
     ⟨rfl, Filter.eventually_of_mem ((hBo m).mem_nhds hy) fun y' hy' => hlift m y' hy'⟩
@@ -355,7 +355,7 @@ theorem PtsSumMeasurableWeight.aestronglyMeasurable_fibreSum_of_lifts
           exact absurd ⟨_, hsh⟩ hex
         · exact hf0 m y hmS
       · rfl
-  have hsum : ∑ᶠ w ∈ fibre P Ψ y, F (sheetDensity P Ψ φ g y w) =
+  have hsum : ∑ᶠ w ∈ ReciprocityTheory.ChartRestriction.G.Geo.fibre P Ψ y, F (sheetDensity P Ψ φ g y w) =
       ∑ w ∈ (hfin y).toFinset, F (sheetDensity P Ψ φ g y w) :=
     finsum_mem_eq_finite_toFinset_sum _ (hfin y)
   refine tendsto_const_nhds.congr' ?_
