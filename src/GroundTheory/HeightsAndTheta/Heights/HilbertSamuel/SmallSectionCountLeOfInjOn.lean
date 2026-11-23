@@ -31,7 +31,7 @@ theorem isOpen_relevant : IsOpen {z : (Σ k, ι k) → ℂ | ∀ k, ∃ i, z ⟨
   exact isOpen_iInter_of_finite fun k => isOpen_iUnion fun i =>
     isOpen_ne_fun (continuous_apply _) continuous_const
 
-theorem continuousAt_h {A : HermLine ι} (hA : IsSmoothHerm A) {z : (Σ k, ι k) → ℂ}
+theorem continuousAt_h {A : HermLine ι} (hA : ReciprocityTheory.ChartRestriction.G.Geo.IsSmoothHerm A) {z : (Σ k, ι k) → ℂ}
     (hz : ∀ k, ∃ i, z ⟨k, i⟩ ≠ 0) : ContinuousAt A.h z :=
   hA.continuousOn.continuousAt (isOpen_relevant.mem_nhds hz)
 
@@ -53,7 +53,7 @@ theorem eval_eq_of_aeval_eq {y : (Σ k, ι k) → Ω} {d : K → ℕ} {g g' : MR
 
 theorem bound_of_ptBoundOn (hLR : LocalRep.Statement) {y : (Σ k, ι k) → Ω} {M L : HermLine ι} {n : ℕ}
     {U : Set ((Σ k, ι k) → ℂ)} {c : ℝ} {f f' : Ω}
-    (hL : IsSmoothHerm L) (hf : f ∈ chartLat y M.a n) (hf' : f' ∈ chartLat y L.a n)
+    (hL : ReciprocityTheory.ChartRestriction.G.Geo.IsSmoothHerm L) (hf : f ∈ chartLat y M.a n) (hf' : f' ∈ chartLat y L.a n)
     (hsm : IsSmallH (mCoordIdeal y) y M n f)
     (hU : mcPts (mCoordIdeal y) ⊆ closure (U ∩ mcPts (mCoordIdeal y)))
     (hb : PtBoundOn y M L n (U ∩ mcPts (mCoordIdeal y)) c f f') (hc : 0 ≤ c) :
@@ -222,11 +222,11 @@ theorem conj_hermZpow {M : HermLine ι} (h : IsConjInvariantH M) (a : ℕ) :
   rw [h z]
 
 theorem fam_hermZpow {I : Ideal (MRing ι) → (m : ℕ) → (Fin m → HermLine ι) → ℝ} (hI : IsIntersectionFamily I)
-    {P : Ideal (MRing ι)} {D : ℕ} (hP : IsArithVar P (D + 1)) {M : HermLine ι} (hM : IsSmoothHerm M) (a : ℕ) :
+    {P : Ideal (MRing ι)} {D : ℕ} (hP : IsArithVar P (D + 1)) {M : HermLine ι} (hM : ReciprocityTheory.ChartRestriction.G.Geo.IsSmoothHerm M) (a : ℕ) :
     I P (D + 1) (fun _ => Inter.hermZpow M a) = (a : ℝ) ^ (D + 1) * I P (D + 1) (fun _ => M) := by
   have hZ := Inter.isSmoothHerm_hermZpow hM (a : ℤ)
   let Lj : ℕ → Fin (D + 1) → HermLine ι := fun j i => if (i : ℕ) < j then Inter.hermZpow M a else M
-  have hs : ∀ j i, IsSmoothHerm (Lj j i) := fun j i => by
+  have hs : ∀ j i, ReciprocityTheory.ChartRestriction.G.Geo.IsSmoothHerm (Lj j i) := fun j i => by
     simp only [Lj]
     split_ifs
     exacts [hZ, hM]
@@ -283,7 +283,7 @@ theorem semipos_constShift {P0 P : Ideal (MRing ι)} {A : HermLine ι} (h : IsSe
     IsSemipositiveRel P0 P (HermLine.constShift A t) := by
   have hh : (HermLine.constShift A t).h = fun z => Real.exp (-t) * A.h z := funext (constShift_h A t)
   refine ⟨?_, fun z hz w hw => ?_⟩
-  · unfold IsSmoothHerm
+  · unfold ReciprocityTheory.ChartRestriction.G.Geo.IsSmoothHerm
     rw [hh]
     exact contDiffOn_const.mul h.1
   · have hev : (fun z => Real.log ((HermLine.constShift A t).h z)) =ᶠ[𝓝 z]
